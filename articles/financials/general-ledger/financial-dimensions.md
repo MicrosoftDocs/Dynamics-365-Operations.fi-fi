@@ -3,7 +3,7 @@ title: Taloushallinnon dimensiot
 description: "Tässä ohjeaiheessa kerrotaan erityyppisistä taloushallinnon dimensioista ja niiden määrittämisestä."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 10/26/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: 9973d03de031ad2fa5647bb167c12b9231633a22
+ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
+ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -51,9 +51,9 @@ Seuraavassa on joitakin rajoituksia:
 
 ## <a name="custom-dimensions"></a>Mukautetut dimensiot
 
-Jos haluat luoda käyttäjän määrittämän taloushallinnon dimension **Käytä arvoja kohteesta** -kentässä, valitse **&lt;&nbsp;Mukautettu dimensio&nbsp;&gt;**.
+Voit luoda käyttäjän määrittämän taloushallinnon dimension valitsemalla **Käytä arvoja kohteesta** -kentässä **Mukautettu dimensio**.
 
-Voit määrittää myös tilipeitteen rajoittamaan dimensioarvoille annettavaa summaa ja tietojen tyyppiä. Voit antaa jokaisessa dimensioarvossa samana pysyviä arvoja, kuten kirjaimia tai yhdysviivan (-). Voit myös antaa numeromerkkejä (\#) ja et-merkkejä (&) kirjasinten paikkamerkkeinä, jotka muuttuvat aina dimensioarvon luonnin yhteydessä. Käytä numeromerkkiä (\#) numeron paikkamerkkinä ja et-merkkiä (&) kirjaimen paikkamerkkinä. Muotoilupeitteen kenttä on käytettävissä vain, kun valitset **&lt;&nbsp;Mukauta dimensio&nbsp;&gt;** **Käytä arvoja kohteesta** -kentästä.
+Voit määrittää myös tilipeitteen rajoittamaan dimensioarvoille annettavaa summaa ja tietojen tyyppiä. Voit antaa jokaisessa dimensioarvossa samana pysyviä arvoja, kuten kirjaimia tai yhdysviivan (-). Voit myös antaa numeromerkkejä (\#) ja et-merkkejä (&) kirjasinten paikkamerkkeinä, jotka muuttuvat aina dimensioarvon luonnin yhteydessä. Käytä numeromerkkiä (\#) numeron paikkamerkkinä ja et-merkkiä (&) kirjaimen paikkamerkkinä. Muotoilupeitteen kenttä on käytettävissä vain, kun valitset **Mukautettu dimensio** **Käytä arvoja kohteesta** -kentässä.
 
 **Esimerkki**
 
@@ -108,7 +108,23 @@ Voit määrittää johdetut arvot dimensioiden sivulla.
 
 Syötä dimensioyhdistelmät, jotka on johdettava dimensiosta ensimmäisessä sarakkeessa. Jos esimerkiksi haluat käyttää kustannuspaikkaa dimensiona, josta osasto ja sijainti johdetaan, syötä kustannuspaikka 10, osasto 20 ja sijainti 30. Kun sitten syötät kustannuspaikan 10 päätietueessa tai tapahtuman sivulla, osasto 20 ja sijainti 30 sijainti syötetään oletusarvoisesti.
 
-Johdettu dimensioprosessi ei korvaa johdettujen dimensioiden nykyisiä arvoja. Esimerkiksi jos syötät kustannuspaikan 10, etkä syötä mitään muuta dimensiota, osasto 20 ja sijainti 30 syötetään oletusarvoisesti. Jos kuitenkin muutat kustannuspaikkaa, jo määritettyjä arvoja ei muuteta. Voit siten määrittää oletusdimensiot päätietueisiin, eivätkä johdetut dimensiot muuta näitä dimensioita.
+### <a name="overriding-existing-values-with-derived-dimensions"></a>Nykyisten arvojen korvaaminen johdetuilla dimensioilla
+ 
+Johdettu dimensioprosessi ei oletusarvoisesti korvaa johdettujen dimensioiden nykyisiä arvoja. Esimerkiksi jos syötät kustannuspaikan 10, etkä syötä mitään muuta dimensiota, osasto 20 ja sijainti 30 syötetään oletusarvoisesti. Jos kuitenkin muutat kustannuspaikkaa, jo määritettyjä arvoja ei muuteta. Voit siten määrittää oletusdimensiot päätietueisiin, eivätkä johdetut dimensiot muuta näitä dimensioita.
+
+Voit muuttaa johdettujen dimensioiden toimintaa korvaamalla aiemmat arvot valitsemalla **Korvaa nykyiset dimension arvot johdetuilla arvoilla** -valintaruutu **Johdetut dimensiot** -sivulla. Jos tämä kenttä on valittu, voit antaa dimension, jossa on johdetun dimension arvot, ja nämä johdetun dimension arvot korvaavat kaikki aiemmat arvot. Jos edellisessä esimerkissä annat kustannuspaikan 10 etkä mitään muuta dimensiota, osasto 20 ja sijainti 30 annetaan oletusarvoisesti. Jos arvoina on kuitenkin jo osasto 50 ja sijainti 60, arvot ovat nyt muuttuneet ja osastona on nyt 20 ja sijaintina 30.
+ 
+Tällä asetuksella johdetut dimensiot eivät automaattisesti korvaa aiempia dimension oletusarvoja, kun dimension arvot ovat oletusarvoja. Dimension arvot korvataan vain, kun annat sivulla uuden dimension arvon ja sivulla on kyseisen dimension aiemmin johdettuja arvoja.
+
+### <a name="preventing-changes-with-derived-dimensions"></a>Muutosten estäminen johdettujen dimensioiden avulla
+ 
+Kun lisäät segmenttejä johdettuna dimensiona valitsemalla **Lisää segmentti** **Johdetut dimensiot** -sivulla, **Lisää segmentti** -sivun alaosassa on asetus, jolla voit estää kyseisen dimension muutokset, kun se johdettuna sivulla. Oletusarvoisesti asetus ei ole käytössä, joten se ei estä johdetun dimension arvojen muuttamista. Vaihda asetukseksi **Kyllä**, jos haluat estää dimension muuttamisen sen jälkeen, kun se on johdettu. Esimerkki: Jos osastodimension arvo on johdettu kustannuspaikkadimension arvosta, osaston arvoa ei voi muuttaa, jos **Estä muutokset** -asetus on **Kyllä**. 
+ 
+Asetus ei estä muutoksia, jos dimension arvo on kelvollinen mutta sitä ei ole mainittu johdettujen dimensioiden luettelossa. Esimerkki: Jos osasto 20 on johdettu kustannuspaikasta 10 ja annat kustannuspaikan 10, et voi muokata osastoa 20. Jos kuitenkin annat kustannuspaikan 20 eikä sitä ole kustannuspaikan johdettujen dimensioiden luettelossa, voit muokata osaston arvoa. 
+ 
+Tilin arvo ja kaikki dimensioiden arvot voidaan kaikissa tapauksissa tarkistaa tilirakenteiden perusteella, kun johdettujen dimensioiden arvoja on käytetty. Jos käytät johdettuja dimensioita eivätkä ne läpäise tarkistusta, kun niitä käytetään sivulla, johdettujen dimensioiden arvot on muutettava johdettujen dimensioiden sivulla, ennen kuin voit käyttää niitä tapahtumissa. 
+ 
+Kun muutat dimensioita **Taloushallinnon dimensiot** -pikavälilehdessä, muutokset estämään merkittyä dimensiota ei voi muokata. Jos olet antamassa sivulla tilin ja dimensiot segmentoituun merkinnän ohjausobjektiin, dimensioita voi muokata. Kun kuitenkin siirrät korostuksen pois segmentoidusta merkinnän ohjausobjektista ja siirryt toiseen kenttään tai teet toiminnon, tili ja dimensiot tarkistetaan johdettujen dimensioiden luettelon ja tilirakenteiden perusteella. Näin varmistetaan, että olet antanut asianmukaiset arvot. 
 
 ### <a name="derived-dimensions-and-entities"></a>Johdetut dimensiot ja yksiköt
 

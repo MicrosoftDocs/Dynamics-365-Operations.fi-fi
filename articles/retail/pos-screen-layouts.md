@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
-ms.openlocfilehash: 34e744884b4bae890d7990103ecc7157c6883869
+ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
+ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/03/2018
+ms.lasthandoff: 11/13/2018
 
 ---
 
@@ -71,7 +71,7 @@ Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien t
 
 ### <a name="assignment"></a>Liitos
 
-Näytön asettelut voidaan määrittää myymälän tai käyttäjän tasolla. Käyttäjän määritys korvaa kassakoneen ja myymälän määritykset, ja kassakoneen määritys korvaa myymälän määrityksen. Yksinkertaisessa tilanteessa, jossa kaikki käyttäjät käyttävät samaa asettelua riippumatta kassakoneesta tai roolista, näytön asettelu voidaan määrittää vain myymälätasolla. Skenaarioissa, jossa tietyt kassakoneet tai käyttäjät vaativat erityisiä asetteluita, nuo asettelut voidaan määritellä asianmukaisesti.
+Näytön asettelut voidaan määrittää myymälän, kassakoneen tai käyttäjän tasolla. Käyttäjän määritys korvaa kassakoneen ja myymälän määritykset, ja kassakoneen määritys korvaa myymälän määrityksen. Yksinkertaisessa tilanteessa, jossa kaikki käyttäjät käyttävät samaa asettelua riippumatta kassakoneesta tai roolista, näytön asettelu voidaan määrittää vain myymälätasolla. Skenaarioissa, jossa tietyt kassakoneet tai käyttäjät vaativat erityisiä asetteluita, nuo asettelut voidaan määritellä asianmukaisesti.
 
 ### <a name="layout-sizes"></a>Asettelukoot
 

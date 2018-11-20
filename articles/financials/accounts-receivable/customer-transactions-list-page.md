@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 79479f6949c52830918598583ee91dd85d2d7ac3
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 1b359939c867ba0a0c14859c83f0560afe6ba5be
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/01/2018
 
 ## <a name="view-settlements"></a>Näytä tilitykset
 
-Toimintoruudun **Näytä tilitykset** -painikkeen avulla voit käyttää nopeasti tilityshistoriaa ja muita koko tilitystapahtumaa koskevia tietoja. Voit näyttää myös lisätapahtumat, jotka liittyvät valittuihin tapahtumiin joko siksi, että ne sisältyvät samaan tilitykseen, tai siksi, että ne ovat samassa maksukirjauskansiossa luotuja maksuja.
+Toimintoruudun **Näytä tilitykset** -painikkeen avulla voit käyttää nopeasti tilityshistoriaa ja muita tilitystapahtumaa koskevia tietoja. Voit näyttää myös lisätapahtumat, jotka liittyvät valittuihin tapahtumiin joko siksi, että ne sisältyvät samaan tilitykseen, tai siksi, että ne ovat samassa maksukirjauskansiossa luotuja maksuja.
 
 1. Valitse **Myyntireskontra \> Kaikki asiakkaat**.
 2. Valitse asiakas, johon liittyy tapahtumia, ja valitse sitten toimintoruudussa **Asiakas**-välilehden **Tapahtumat**.
@@ -49,7 +49,7 @@ Toimintoruudun **Näytä tilitykset** -painikkeen avulla voit käyttää nopeast
 
 ## <a name="global-transactions"></a>Yleiset tapahtumat
 
-**Yleiset tapahtumat** -painike on lisätty asiakassivulle. Tämän painikkeen avulla voit tarkastella asiakkaan kaikkia tapahtumia kaikissa yrityksissä. **Asiakastapahtumat**-luettelosivulla näytetään vain niiden yritysten tapahtumat, joihin käyttäjillä on pääsy suojausasetustensa mukaan.
+**Yleiset tapahtumat** -painike näkyy myös **Asiakastapahtumat**-luettelosivulla. Tämän painikkeen avulla voit tarkastella asiakkaan kaikkia tapahtumia kaikissa yrityksissä. **Asiakastapahtumat**-luettelosivulla näytetään vain niiden yritysten tapahtumat, joihin käyttäjillä on pääsy suojausasetustensa mukaan.
 
 Luettelosivulla näytetään kaikkien niiden asiakkaiden tapahtumat, joilla on sama osapuolen tunnus kuin ensin valitsemallasi asiakkaalla. Esimerkiksi jos yhden yrityksen asiakkaalla US-001 on sama osapuolen tunnus kuin toisen yrityksen asiakkaalla DE-001, näytetään kummankin asiakkaan tunnuksen kaikki tapahtumat.
 
@@ -67,13 +67,13 @@ Avoimet tapahtumat näyttävä suodatin on korvattu uudella suodattimella, joka 
 - **Kaikki** – Näytä valittujen asiakkaiden kaikki tapahtumat (avoimet ja suljetut).
 - **Suljettu** – Näytä vain tapahtumat, jotka on kokonaan tilitetty ja suljettu.
 - **Avoin** – Näytä vain tapahtumat, joita ei ole kokonaan tilitetty.
-- **Avaa alkaen** – Näytä vain tapahtumat, joita ei ole kokonaantilitetty määrittämänäsi päivämääränä. Kun valitset tämän vaihtoehdon, voit muuttaa suodattimen vieressä näkyvää päivämäärää. Tapahtumat, joilla on **Viimeisin tilityspäivämäärä** -arvo määrittämäsi päivämäärän jälkeen, näkyvät luettelossa, vaikka nämä tapahtumat on kokonaan tilitetty nykyisenä päivämääränä. Saldo edustaa kuitenkin nykyisen päivämäärän saldoja, ei valitun päivämäärän saldoja.
+- **Avoimet sisältäen tällä päivämäärällä tai sen jälkeen suljetut** – Näytä vain tapahtumat, joita ei ole kokonaan tilitetty tai jotka on tilitetty määritetyn päivämäärän jälkeen. Kun valitset tämän vaihtoehdon, voit muuttaa suodattimen vieressä näkyvää päivämäärää. Tapahtumat, joilla on **Viimeisin tilityspäivämäärä** -arvo määritettynä päivänä tai sen jälkeen, näkyvät luettelossa, vaikka nämä tapahtumat on kokonaan tilitetty nykyisenä päivämääränä. Saldo edustaa kuitenkin nykyisen päivämäärän saldoja, ei valitun päivämäärän saldoja.
 
-Mukaan on myös lisätty suodatin, jonkaavulla voit piilottaa valuutan muuntamisen tapahtumat. Valitse vain **Piilota valuutan uudelleenarvostukset** -valintaruutu.
+Piilota valuutan muuntotapahtumat valitsemalla **Piilota valuuttojen revalvaatiot** -valintaruutu.
 
-## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Muokkaa helpommin eräpäiviä ja alennuksen päivämääriä
+## <a name="modify-due-dates-and-discount-dates"></a>Eräpäivien ja alennuspäivämäärien muokkaaminen
 
-Voit päivittää avointen asiakastapahtumien eräpäivät ja alennuksen päivämäärät. Kokemusta on parannettu versiossa 8.1. Voit nyt lisätä eräpäivät **Asiakastapahtumat**-luettelosivulle. Napsauttamalla eräpäivää **Asiakastapahtumat**-luettelosivulla, voit myös muuttaa eräpäiviä, alennuksen päivämääriä, maksuehtoja ja käteisalennuksen ehtoja **Päivitä eräpäivää ja käteisalennuksen päivämääriä** -valintaikkunassa.
+Voit päivittää avointen asiakastapahtumien eräpäivät ja alennuksen päivämäärät. Voit lisätä versiossa 8.1. eräpäivät **Asiakastapahtumat**-luettelosivulle. Napsauttamalla eräpäivää **Asiakastapahtumat**-luettelosivulla, voit myös muuttaa eräpäiviä, alennuksen päivämääriä, maksuehtoja ja käteisalennuksen ehtoja **Päivitä eräpäivää ja käteisalennuksen päivämääriä** -valintaikkunassa.
 
 ### <a name="activate-the-feature"></a>Toiminnon aktivoiminen
 
@@ -83,7 +83,7 @@ Voit lisätä eräpäiviä **Asiakastapahtumat**-luettelosivulle ja muuttaa tapa
 2. Määritä **Tilitykset**-välilehdessä **Näytä eräpäivä ja salli muokkaus** -vaihtoehdon arvoksi **Kyllä**.
 3. Jotta toiminto voidaan ottaa käyttöön, asiakastapahtumiin on lisätty uusia kenttiä. Nämä kentät täytetään, kun uusi tapahtuma on valmis. Ne myös täytetään, kun avaat **Päivitä eräpäivää ja käteisalennuksen päivämääriä** -valintaikkunan. Kun määrität **Näytä eräpäivä ja salli muokkaus** -vaihtoehdoksi **Kyllä**, näyttöön tulee **Päivitä maksutiedot** -valintaikkuna.  Voit päivittää nykyiset tapahtumat heti valitsemalla **Päivitä kaikki nykyiset tapahtumat**. Vaihtoehtoisesti voit täyttää vain uusien tapahtumien kentätä valitsemalla **Jatka ilman päivitystä**.
 
-Eräpäivä lisätään nyt **Asiakastapahtumat**-luettelosivulle ja voit helpommin muokata tapahtumien eräpäivää ja käteisalennuksen päivämääriä.
+Eräpäivä lisätään nyt **Asiakastapahtumat**-luettelosivulle, joten tapahtumien eräpäivän ja käteisalennuksen päivämäärien muokkaus helpottuu.
 
 ### <a name="modify-the-payment-settings"></a>Maksuasetusten muuttaminen
 
@@ -91,11 +91,11 @@ Eräpäivä lisätään nyt **Asiakastapahtumat**-luettelosivulle ja voit helpom
 
 Kukin kenttä vaikuttaa eri tavalla tapahtumaan, kun muokkaat sitä:
 
-- **Muokkaa peruspäivämäärää:** Eräpäivää ja alennuspäivämääriä muutetaan siten, että peruspäivämäärä on asiakirjan päivämäärä.
-- **Muokkaa eräpäivää:** Vain eräpäivää muutetaan.
-- **Muokkaa alennuksen päivämääriä:** Vain alennuksen päivämääriä muutetaan.
-- **Muokkaa maksuehtoja:** Eräpäivää muutetaan peruspäivämäärän ja maksuehtojen perusteella.
-- **Muokkaa käteisalennuksen ehtoja:** Käteisalennuksia muutetaan peruspäivämäärän ja käteisalennuksen ehtojen perusteella.
+- **Muokkaa peruspäivämäärää** – Eräpäivää ja alennuspäivämääriä muutetaan siten, että peruspäivämäärä on asiakirjan päivämäärä.
+- **Muokkaa eräpäivää** – Vain eräpäivä muuttuu.
+- **Muokkaa alennuksen päivämääriä** – Vain alennuksen päivämääriä muutetaan.
+- **Muokkaa maksuehtoja** – Eräpäivää muutetaan peruspäivämäärän ja maksuehtojen perusteella.
+- **Muokkaa käteisalennuksen ehtoja** – Käteisalennuksia muutetaan peruspäivämäärän ja käteisalennuksen ehtojen perusteella.
 
 Kun olet muokannut maksuasetuksia, tallenna muutokset valitsemalla **Sulje**.
 

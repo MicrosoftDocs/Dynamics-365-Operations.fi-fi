@@ -257,6 +257,10 @@
               href: extensibility/extensibility-changes-804.md
             - name: Laajennettavuuden muutokset versiossa 8.1
               href: extensibility/extensibility-changes-81.md
+            - name: Laajennettavuuden muutokset versiossa 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Laajennettavuuden muutokset versiossa 8.1.2
+              href: extensibility/extensibility-changes-812.md
         - name: Perusteet
           items:
             - name: Tunkeutuvat mukautukset
@@ -303,8 +307,6 @@
               href: extensibility/change-caption-form.md
             - name: Lomakkeen ohjausobjektien ominaisuuksien muokkaaminen
               href: extensibility/modify-control-properties.md
-            - name: Otsikkojen muuttaminen otsikon tunnistetiedostojen avulla
-              href: extensibility/change-label.md
             - name: Numerosarja-alueen laajentaminen
               href: extensibility/extend-number-sequence-scope.md
             - name: Uusien varastodimensioiden lisääminen
@@ -317,9 +319,11 @@
               href: extensibility/maps-as-interfaces.md
             - name: Versionhallinnassa käytettävät laajennetut taulumääritykset
               href: extensibility/maps-with-versioning.md
+            - name: Valittujen tietotyyppien desimaalitarkkuuden laajentaminen
+              href: extensibility/decimal-point-precision.md
         - name: Laajennettavien ratkaisujen luominen
           items:
-            - name: Kirjaa laajennettavissa oleva koodi
+            - name: Laajennettavissa olevan koodin kirjoittaminen
               href: extensibility/writing-extensible-code.md
             - name: Luokat
               href: extensibility/extensible-classes.md
@@ -534,7 +538,7 @@
           href: user-interface/workspace-filter-group-subpattern.md
     - name: Ohjausobjektin laajennettavuus
       items:
-        - name: aextensible-ohjausobjektien muodostaminen
+        - name: Laajennettavien ohjausobjektien muodostaminen
           href: user-interface/build-extensible-control.md
         - name: Laajennettavien ohjausobjektien pikanäppäimet
           href: user-interface/keyboard-shortcuts-controls.md
@@ -764,148 +768,12 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
             - name: ValueMetadata-tyyppi
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
-- name: Tietojen integrointi
+- name: Yleinen tietosuoja-asetus (GDPR)
+  href: gdpr/gdpr-guide.md
   items:
-    - name: Tietojen integroinnin (tuonti/vienti) strategian valitseminen
-      href: data-entities/integration-overview.md
-    - name: Tietojen integroinnin ohjelmointirajapinnat
-      items:
-        - name: Tietojen hallintapaketin REST API
-          href: data-entities/data-management-api.md
-        - name: Palvelun päätepisteet
-          href: data-entities/services-home-page.md
-          items:
-            - name: Palvelun todennuksen vianmääritys
-              href: data-entities/troubleshoot-service-authentication.md
-        - name: OData
-          href: data-entities/odata.md
-        - name: Mukautettu palvelukehitys
-          href: data-entities/custom-services.md
-        - name: Toistuvat integroinnit
-          href: data-entities/recurring-integrations.md
-        - name: Palvelujen testaaminen kolmannen osapuolen apuohjelmien avulla
-          href: data-entities/third-party-service-test.md
-    - name: Integroinnin kehitys
-      items:
-        - name: Tietojen hallinta ja integrointi tietoyksiköitä käyttämällä
-          href: data-entities/data-management-integration-data-entity.md
-          items:
-            - name: Tietojen siirtoyksiköiden kehittäminen
-              href: data-entities/develop-entity-for-data-migration.md
-            - name: Yhdistelmätietoyksiköiden kehittäminen
-              href: data-entities/develop-composite-data-entities.md
-            - name: Yritysten välisen taloustietojen jakamisen määrittäminen
-              href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
-            - name: Tietuemallien luonti tietojen kirjaamista varten
-              href: data-entities/tasks/create-record-template-facilitate-data-entry.md
-            - name: Tietueiden luonti tietuemallien avulla
-              href: data-entities/tasks/use-record-template-new-record.md
-        - name: Tietojen integrointi Common Data Service -palvelun avulla
-          href: data-entities/data-integration-cds.md
-          items:
-            - name: Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen
-              href: ../supply-chain/sales-marketing/prospect-to-cash.md
-              items:
-                - name: Asiakkaiden synkronointi suoraan Salesista Finance and Operationsin asiakkaisiin
-                  href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                - name: Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
-                  href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
-                - name: Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin
-                  href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                - name: Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Finance and Operationsiin
-                  href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                - name: Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä
-                  href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                - name: Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
-                  href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-            - name: Integroinnin määrittäminen Field Servicen kanssa
-              href: ../supply-chain/sales-marketing/field-service.md
-              items:
-                - name: Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin
-                  href: ../supply-chain/sales-marketing/field-service-product.md
-                - name: Field Servicen työtilausten synkronointi Finance and Operationsin myyntitilauksiin
-                  href: ../supply-chain/sales-marketing/field-service-work-order.md
-                - name: Field Servicen sopimuslaskujen synkronointi Finance and Operationsin vapaatekstilaskuihin
-                  href: ../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Project Service Automation -integroinnin määrittäminen
-              href: ../financials/project-management/PSA-integration.md?toc=/dev-itpro/toc.json
-              items:
-                - name: Project Service Automation -integrointiparametrit
-                  href: ../financials/project-management/PSA-parameters.md?toc=/dev-itpro/toc.json
-                - name: Projektisopimusten ja projektien synkronointi
-                  href: ../financials/project-management/project-contracts-templates.md?toc=/dev-itpro/toc.json
-                - name: Projektitehtävien synkronointi
-                  href: ../financials/project-management/project-tasks-template.md?toc=/dev-itpro/toc.json
-                - name: Projektin kululuokkien synkronointi
-                  href: ../financials/project-management/project-categories-templates.md?toc=/dev-itpro/toc.json
-                - name: Projektin arvioiden synkronointi projektin ennusteisiin
-                  href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
-                - name: Projektin toteutuneiden tietojen synkronointi projektin integrointikirjauskansioon
-                  href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
-        - name: Ulkoisten verkkopalveluiden käyttö
-          href: data-entities/consume-external-web-service.md
-- name: Tietojen hallinta
-  href: data-entities/data-entities-data-packages.md
-  items:
-    - name: Tietoyksiköt
-      href: data-entities/data-entities.md
-      items:
-        - name: Konfigurointitietoprojektit
-          href: data-entities/configuration-data-projects.md
-        - name: Konfigurointitietopaketit
-          href: data-entities/configuration-data-packages.md
-        - name: Konfigurointitietojen kopiointi yritysten välillä
-          href: data-entities/copy-configuration.md
-        - name: Konfigurointitietomallit
-          href: data-entities/configuration-data-templates.md
-        - name: Useita laskentataulukoita sisältävät tietomallit
-          href: data-entities/excel-template-multiple.md
-        - name: Muutosten seurannan ottaminen käyttöön yksiköille
-          href: data-entities/entity-change-track.md
-        - name: Konfigurointiavaimet ja tietoyksiköt
-          href: data-entities/config-key-entities.md
-        - name: Tietojen etsiminen vakiotietoyksiköistä
-          href: data-entities/data-entities-report.md
-    - name: Tietojen tuonti- ja vientityöt
-      href: data-entities/data-import-export-job.md
-      items:
-        - name: Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
-          href: data-entities/tips-tricks-import-general-journal-entity.md
-    - name: Tietoyksiköiden kehittäminen
-      items:
-        - name: Tietoyksiköiden suunnittelun periaatteet ja parhaat käytännöt
-          href: dev-tools/design-best-practices.md
-        - name: Uusien tietoyksiköiden luominen
-          href: data-entities/build-consuming-data-entities.md
-        - name: Toimintaa koskevan tietoyksikön ominaisuudet
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: Laskettavien sarakkeiden ja virtuaalikenttien luominen
-          href: data-entities/data-entity-computed-columns-virtual-fields.md
-        - name: Yritystenvälinen toiminta
-          href: data-entities/cross-company-behavior.md
-        - name: Maa- ja aluekoodit sekä määritysavaimet
-          href: data-entities/countryregion-codes-configuration-keys.md
-        - name: Periytyvyysmallit
-          href: data-entities/support-super-type-sub-type.md
-        - name: Ohjatun tietoyksikkötoiminnon säännöt
-          href: data-entities/data-entity-wizard-rules.md
-        - name: Metatietojen ominaisuudet
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: 'Tarkistukset, oletusarvot ja yhdistämättömät kentät'
-          href: data-entities/validations-defaults-unmapped-fields.md
-        - name: Suojaus ja tietoyksiköt
-          href: data-entities/security-data-entities.md
-        - name: Taloushallinnon dimensiot näyttävien vain luku -tyyppisten yksiköiden luominen
-          href: financial/read-only-entity-financial.md
-    - name: Oman tietokannan tuominen
-      href: analytics/export-entities-to-your-own-database.md
-    - name: Tietotehtävän automatisointi
-      href: data-entities/data-task-automation.md
     - name: GDPR-tietopyyntöihin vastaamisen resurssit
       href: gdpr/gdpr-home-page.md
       items:
-        - name: Finance and Operationsin GDPR-opas
-          href: gdpr/gdpr-guide.md
         - name: Omaisuuserien luokittelut
           href: gdpr/gdpr-asset-classification-values.md
         - name: Henkilöhakuraportti
@@ -918,12 +786,8 @@
           href: gdpr/respond-dsr-request-talent.md
         - name: 'Henkilötietopyyntöihin vastaaminen AX 2012:ssa'
           href: gdpr/gdpr-ax2012.md
-        - name: 'GDPR-datapyynnöt LCS:lle'
+        - name: 'LCS:n GDPR-tietopyynnöt'
           href: gdpr/gdpr-lcs.md
-    - name: Tietojen tarkistuksen tarkistusluettelon työtila
-      href: user-interface/data-validation-workspace.md
-    - name: Tietojenhallintavirheiden kuvaukset
-      href: data-entities/dm-error-descriptions.md
 - name: Jatkuva toimitus
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1039,11 +903,13 @@
         - name: Paikallisten ympäristöjen asennus ja käyttöönotto
           href: deployment/setup-deploy-on-premises-environments.md
           items:
-            - name: Paikallisten ympäristöjen käyttöönotto Platform update 12 -päivityksellä
+            - name: Paikallisten ympäristöjen käyttöönotto (Platform update 12 ja uudemmat)
               href: deployment/setup-deploy-on-premises-pu12.md
-            - name: Paikallisten ympäristöjen käyttöönotto Platform update 8- ja Platform update 11 -päivityksillä
+            - name: Paikallisten ympäristöjen käyttöönotto (Platform update 8 ja 11)
               href: deployment/setup-deploy-on-premises-pu8-pu11.md
-        - name: Mukautettujen mallien kehittäminen ja käyttöönotto paikallisissa ympäristöissä
+            - name: Vähittäismyyntikanavan komponenttien asennusohjeet paikallisessa ympäristössä
+              href: deployment/deploy-retail-onprem.md
+        - name: Mukautettujen mallien kehitys ja käyttöönotto paikallisissa ympäristöissä
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: Käänteisten välityspalvelimien määrittäminen paikallisiin ympäristöihin
           href: deployment/onprem-reverseproxy.md
@@ -1161,6 +1027,8 @@
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Kehitystyökalujen päivittäminen
           href: dev-tools/update-development-tools.md
+        - name: Koodin kääntämisen suunnittelu viimeisimmän päivityksen perusteella ja kääntämiseen valmistautuminen
+          href: migration-upgrade/compile-considerations.md
     - name: Päivittäminen viimeisimpään päivitykseen (paikallinen)
       items:
         - name: Päivitysten käyttöönotto paikallisissa ympäristöissä
@@ -1226,6 +1094,12 @@
           href: sysadmin/batch-server-overview.md
         - name: Erätöiden luominen
           href: sysadmin/tasks/create-batch-job.md
+        - name: Erätyön kopiointi
+          href: sysadmin/copy-batch-job.md
+        - name: Aktiiviset eräjaksot
+          href: sysadmin/activeperiod.md
+        - name: Erien hallinnan käyttöoikeusrooli
+          href: sysadmin/runby.md
     - name: Optimointiavustaja
       href: sysadmin/optimization-advisor-overview.md
       items:

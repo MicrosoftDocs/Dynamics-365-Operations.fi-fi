@@ -3,14 +3,14 @@ title: "Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto"
 description: "Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 04/04/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
+ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
+ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -192,7 +192,7 @@ Kun **Järjestelmä**-tietolähde lisätään ER-yhdistämismääritykseen, joss
 Voit rajoittaa tapaa, jolla arvot siirretään tämän tyyppisen menetelmän parametreihin:
 
 - Vain vakioita voi siirtää tämän tyyppisiin menetelmiin. Vakioiden arvot määritetään suunnitteluvaiheessa.
-- Tämän tyypin parametrit tukevat alkeellisia (perus) tietotyyppejä. (Alkukantaisia tietotyyppejä ovat kokonaisluku, reaaliluku, totuusarvo, merkkijono jne.)
+- Tämän tyypin parametrit tukevat alkeellisia (perus) tietotyyppejä. (Alkukantaisia tietotyyppejä ovat esimerkiksi kokonaisluku, reaaliluku, totuusarvo ja merkkijono.)
 
 #### <a name="paths"></a>Polut
 
@@ -250,6 +250,12 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 <td>SPLIT (syöte, pituus)</td>
 <td>Jaa määritetty syötemerkkijono alimerkkijonoiksi, joilla on tietty pituus. Palauttaa tuloksen uutena luettelona.</td>
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> palauttaa uuden luettelon. Luettelo sisältää kaksi tietuetta, joilla on <strong>STRING</strong>-kenttä. Ensimmäisen tietueen kenttä sisältää tekstin <strong>&quot;abc&quot;</strong> ja toisen tietueen kenttä tekstin <strong>&quot;d&quot;</strong>.</td>
+</tr>
+<tr>
+<td>SPLIT (syöte, erotin)</td>
+<td>Jaa määritetty syötemerkkijono alimerkkijonoiksi määritetyn erottimen perusteella.</td>
+<td><strong>SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> palauttaa uuden luettelon. Luettelossa on kolme tietuetta, joissa on <strong>STRING</strong>-kenttä. Ensimmäisen tietueen kentässä on teksti <strong>&quot;X&quot;</strong>, toisen tietueen kentässä teksti &quot;&nbsp;&quot; ja kolmen tietueen kentässä teksti <strong>&quot;y&quot;</strong>. Jos erotin on tyhjä, palautettavassa uudessa luettelossa on yksi tietue, jonka <strong>STRING</strong>-kenttää sisältää syötteen tekstin. Jos syöte on tyhjä, palautettava uusi luettelo on tyhjä.
+Jos syöte tai erotin on määrittämättä (tyhjäarvo), sovellus antaa poikkeuksen.</td>
 </tr>
 <tr>
 <td>SPLITLIST (luettelo, numero)</td>
@@ -323,12 +329,12 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 <tr>
 <td>ORDERBY (luettelo [, lauseke 1, lauseke 2, …])</td>
 <td>Palauttaa määritetyn luettelon sen jälkeen, kun se lajiteltu määritettyjen argumenttien mukaan. Nämä argumentit voivaan määrittää lausekkeina.</td>
-<td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan nousevassa järjestyksessä.</td>
+<td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan nousevassa järjestyksessä.</td>
 </tr>
 <tr>
 <td>REVERSE (luettelo)</td>
 <td>Palauttaa määritetyn luettelon käänteisessä lajittelujärjestyksessä.</td>
-<td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan laskevassa järjestyksessä.</td>
+<td>Jos <strong>Toimittaja</strong> on määritetty ER-tietolähteeksi, joka viittaa VendTable-tauluun, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> palauttaa toimittajaluettelon, joka on lajiteltu nimen mukaan laskevassa järjestyksessä.</td>
 </tr>
 <tr>
 <td>WHERE (luettelo, ehto)</td>
@@ -399,12 +405,13 @@ SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUS
 </ul>
 <strong>Otsikko</strong>- ja <strong>Kuvaus</strong>-kentät palauttavat suorituksen aikana muodon kieliasetuksiin ja määritettyyn kieleen perustuvat arvot. <strong>Käännetty</strong>-kenttä ilmaisee, että <strong>Otsikko</strong>-kenttä on käännetty määritetylle kielelle.
 </td>
-<td>Voit esimerkiksi määrittää <strong>Laskettu kenttä</strong>-tietolähdetyypin määrittämään <strong>enumType_de</strong>- ja <strong>enumType_deCH</strong>-tietolähteet <strong>enumType</strong>-tietomallin luettelointia varten:
+<td>Voit esimerkiksi määrittää <strong>Laskettu kenttä</strong>-tietolähdetyypin määrittämään <strong>enumType_de</strong>- ja <strong>enumType_deCH</strong>-tietolähteet <strong>enumType</strong>-tietomallin luettelointia varten.
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos käännös on käytettävissä, käyttämällä seuraavaa lauseketta. Jos sveitsinsaksan käännös ei ole käytettävissä, otsikko saksankielinen: <strong>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</strong>.
+<p>Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos käännös on käytettävissä, käyttämällä seuraavaa lauseketta. Jos sveitsinsaksan käännös ei ole käytettävissä, otsikko on saksankielinen.</p>
+IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 </td>
 </tr>
 <tr>
@@ -432,7 +439,7 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 <tr>
 <td>FILTER (luettelo, ehto)</td>
 <td>Palauttaa määritetyn luettelon sen jälkeen, kun kysely on suodatettu määritetyn ehdon mukaan. Funktio eroaa <strong>WHERE</strong>-funktiosta, koska määritettyä ehtoa käytetään tietokannan tasolla kaikkiin <strong>Taulukkotietue</strong>-tyypin ER-tietolähteisiin. Luettelo ja ehto voidaan määrittää tauluja ja suhteita käyttämällä.</td>
-<td>Jos <strong>Toimittaja</strong> on määritetty VendTable-tauluun viittaavaksi ER-tietolähteeksi, <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40. Jos <strong>Toimittaja</strong> määritetään <strong>VendTable</strong>-tauluun viittaavaksi ER-tietolähteeksi ja ER-tietolähteeksi määritetty <strong>parmVendorBankGroup </strong> palauttaa <strong>String</strong>-tietotyypin arvon, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> palauttaa luettelon vain niistä toimittajatileistä, jotka kuuluvat tiettyyn pankkiryhmään.</td>
+<td>Jos <strong>Toimittaja</strong> on määritetty VendTable-tauluun viittaavaksi ER-tietolähteeksi, <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40. Jos <strong>Toimittaja</strong> määritetään VendTable-tauluun viittaavaksi ER-tietolähteeksi ja ER-tietolähteeksi määritetty <strong>parmVendorBankGroup</strong> palauttaa <strong>String</strong>-tietotyypin arvon, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> palauttaa luettelon vain niistä toimittajatileistä, jotka kuuluvat tiettyyn pankkiryhmään.</td>
 </tr>
 </tbody>
 </table>
@@ -446,10 +453,67 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 | NOT (ehto) | Palauttaa määritetyn ehdon käänteisen loogisen arvon. | **NOT (TOSI)** palauttaa arvon **EPÄTOSI**. |
 | AND (ehto 1\[, ehto 2, ...\]) | Palauttaa arvon **TOSI**, jos *kaikki* määritetyt ehdot ovat tosia. Muussa tapauksessa palauttaa **EPÄTOSI**-arvon. | **AND (1=1, "a"="a")** palauttaa arvon **TOSI**. **AND (1=2, "a"="a")** palauttaa arvon **EPÄTOSI**. |
 | OR (ehto 1\[, ehto 2, ...\]) | Palauttaa arvon **EPÄTOSI**, jos *kaikki* määritetyt ehdot ovat epätosia. Palauttaa arvon **TOSI**, jos *jokin* määritetyistä ehdoista on tosi. | **OR (1=2, "a"="a")** palauttaa arvon **TOSI**. |
+| VALUEIN (syöte, luettelo, luettelokohteen lauseke) | Määrittää, vastaako määritetty syöte määritetyn luettelokohteen jotakin arvoa. **TOSI** palautetaan, jos määritetty syöte vastaa ainakin yhden tietueen tulosta, joka saadaan suorittamalla määritetty lauseke. Muussa tapauksessa palauttaa **EPÄTOSI**-arvon. **Syöte**-parametri viittaa tietolähde-elementin polkuun. Tämän elementin arvon vastaavuus määritetään. **Luettelo**-parametri viittaa tietueluettelotyypin tietolähde-elementin polkuun lausekkeen sisältävänä tietueluettelona. Tämä elementin arvoa verrataan määritettyyn syötteeseen. **Luettelokohteen lauseke** -argumentti viittaa lausekkeeseen, joka joko osoittaa yhteen määritetyn luettelon kenttään tai sisältää sen. Vastaavuus määritetään tämän kentän perusteella. | Esimerkkejä on seuraavaksi tulevassa kohdassa [Esimerkkejä: VALUEIN (syöte, luettelo, luettelokohteen lauseke)](#examples-valuein-input-list-list-item-expression). |
+
+#### <a name="examples-valuein-input-list-list-item-expression"></a>Esimerkkejä: VALUEIN (syöte, luettelo, luettelokohteen lauseke)
+Yleensä **VALUEIN**-funktio muunnetaan **OR**-ehtojoukoksi:
+
+(input = list.item1.value) OR (input = list.item2.value) OR …
+
+##### <a name="example-1"></a>Esimerkki 1
+Mallin yhdistämismäärityksessä määritetään seuraava tietolähde: **Luettelo** (**Laskettu kenttä** -tyyppi). Tässä tietolähteessä on lauseke **SPLIT ("a,b,c", ",")**.
+
+Kun tietolähde, joka on määritetty **VALUEIN ("B", List, List.Value)** -lausekkeena, kutsutaan, se palauttaa arvon **TOSI**. Tässä tapauksessa **VALUEIN**-funktio muunnetaan seuraavaksi ehtojoukoksi:
+
+**(("B" = "a") tai ("B" = "b") tai ("B" = "c"))**, jossa **("B" = "b")** on yhtä kuin **TOSI**
+
+Kun tietolähde, joka on määritetty **VALUEIN ("B", List, LEFT(List.Value, 0))** -lausekkeena, kutsutaan, se palauttaa arvon **EPÄTOSI**. Tässä tapauksessa **VALUEIN**-funktio muunnetaan seuraavaksi ehdoksi:
+
+**(”B” = ””)**, joka ei ole sama kuin **TOSI**
+
+Huomaa, että kyseisen ehdon tekstin suurin merkkimäärä on 32 768 merkkiä. Älä tämän vuoksi luo tietolähteitä, jotka voivat ylittää suorituksen aikana tämän rajan. Jos raja ylitetään, sovellus pysähtyy ja annetaan poikkeus. Tämä tilanne voi esiintyä esimerkiksi silloin, jos tietolähteeksi on määritetty **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)** ja **List1**- ja **List2**-luetteloissa on suuria määriä tietueita.
+
+Joissakin tapauksissa **VALUEIN**-funktio muunnetaan tietokantalausekkeeksi **EXISTS JOIN** -operaattorin avulla. Näin tapahtuu, kun käytetään **FILTER**-funktiota ja seuraavat ehdot täyttyvät:
+
+- **KYSY KYSELYÄ** -asetus on poistettu käytöstä siinä **VALUEIN**-funktion tietolähteessä, joka viittaa tietueluetteloon. (Tässä tietolähteessä ei käytetä suorituksen aikana mitään lisäehtoja.)
+- Tietueluetteloon viittaavaan **VALUEIN**-funktion tietolähteeseen ei ole määritetty upotettuja lausekkeita.
+- **VALUEIN**-funktion luettelokohde viittaa määritetyn tietolähteen kenttään (eikä lausekkeeseen tai menetelmään).
+
+Harkitse tämän vaihtoehdon käyttöä **WHERE**-funktion sijaan aiemmin tässä esimerkissä kuvatulla tavalla.
+
+##### <a name="example-2"></a>Esimerkki 2
+
+Määritä seuraavat tietolähteet omassa mallimäärityksessäsi:
+
+- **In** (**Taulukkotietueet**-tyyppi), joka viittaa Intrastat-tauluun
+- **Port** (**Taulukkotietueet**-tyyppi), joka viittaa IntrastatPort-tauluun
+
+Kun **FILTER (In, VALUEIN(In.Port, Port, Port.PortId)** -lausekkeena määritetty tietolähde kutsutaan, luodaan seuraava SQL-lauseke palauttamaan Intrastat-taulun suodatetut tietueet:
+
+```
+select … from Intrastat
+exists join TableId from IntrastatPort
+where IntrastatPort.PortId = Intrastat.Port
+```
+
+**dataAreaId**-kenttien lopullinen SQL-lauseke luodaan käyttämällä **IN**-operaattoria.
+
+##### <a name="example-3"></a>Esimerkki 3
+
+Määritä seuraavat tietolähteet omassa mallimäärityksessäsi:
+
+- **Le** (**Laskettu kenttä** -tyyppi), joka sisältää lausekkeen **SPLIT ("DEMF,GBSI,USMF", ",")**
+- **In** (**Taulukkotietueet**-tyyppi), joka viittaa Intrastat-tauluun ja jonka **Yritysten välinen** -asetus on otettu käyttöön
+
+Kun **FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)** -lausekkeena määritetty tietolähde kutsutaan, lopullinen SQL-lauseke sisältää seuraavan ehdon:
+
+```
+Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
+```
 
 ### <a name="mathematical-functions"></a>Matemaattinen toiminto
 
-| Toiminto | Kuvaus | Esimerkki |
+| Toiminto | kuvaus | Esimerkki |
 |----------|-------------|---------|
 | ABS (numero) | Palauttaa määritetyn luvun itseisarvon. (Toisin sanoen palautettavalla luvulla ei ole etumerkkiä.) | **ABS (-1)** palauttaa arvon **1**. |
 | POWER (numero, potenssi) | Palauttaa tuloksen, joka on nostettu määritettyyn positiiviseen potenssiin. | **POWER (10, 2)** palauttaa arvon **100**. |
@@ -539,7 +603,7 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 </tr>
 <tr>
 <td>REPLACE (merkkijono, malli, korvaus, säännönmukaisen lausekkeen merkki)</td>
-<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun määritetty säännöllisen lausekkeen merkki on <strong>tosi</strong>. Merkkijonoa muokataan kohdistamalla säännöllinen lauseke, joka on määritetty tämän toiminnon malliargumentiksi. Tätä lauseketta käytetään etsittäessä korvattavia merkkejä. Määritetyn korvausargumentin merkkejä käytetään löydettyjen merkkien korvaamisessa. Kun määritetyn säännöllisen lausekkeen merkki on <strong>epätosi</strong>, tämä toiminto toimii kuten <strong>TRANSLATE</strong>.</td>
+<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun määritetty <strong>säännöllisen lausekkeen merkki</strong> on <strong>tosi</strong>. Merkkijonoa muokataan kohdistamalla säännöllinen lauseke, joka on määritetty tämän toiminnon <strong>malliargumentiksi</strong>. Tätä lauseketta käytetään etsittäessä korvattavia merkkejä. Määritetyn <strong>korvausargumentin</strong> merkkejä käytetään löydettyjen merkkien korvaamisessa. Kun määritetyn <strong>säännöllisen lausekkeen merkki</strong> on <strong>epätosi</strong>, tämä toiminto toimii kuten <strong>TRANSLATE</strong>.</td>
 <td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> on käytössä säännöllisessä lausekkeessa, joka poistaa kaikki muut kuin numeeriset merkit ja palauttaa arvon <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> korvaa mallin <strong>&quot;cd&quot;</strong> merkkijonolla <strong>&quot;GH&quot;</strong> ja palauttaa arvon <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
 <tr>
@@ -549,7 +613,7 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 </tr>
 <tr>
 <td>FORMAT (merkkijono 1, merkkijono 2[, merkkijono 3, …])</td>
-<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun se on muotoiltu korvaamalla kaikki <strong>%N</strong>-esiintymät <em>n</em>:llä argumentilla. Argumentit ovat merkkijonoja. Jos parametrille ei ole annettu argumenttia, parametri palautetaan merkkijonoon arvona <strong>%N</strong>. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
+<td>Palauttaa määritetyn merkkijonon sen jälkeen, kun se on muotoiltu korvaamalla kaikki <strong>%N</strong>-esiintymät <em>n</em>:llä argumentilla. Argumentit ovat merkkijonoja. Jos parametrille ei ole annettu argumenttia, parametri palautetaan merkkijonoon arvona <strong>&quot;%N&quot;</strong>. <strong>Reaali</strong>-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin.</td>
 <td>Seuraavassa kuvassa <strong>PaymentModel</strong>-tietolähde palauttaa asiakastietueluettelon <strong>Asiakas</strong>-komponentin kautta ja käsittelyn päivämäärän arvon <strong>ProcessingDate</strong>-kentän kautta.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>ER-muodossa, joka on suunniteltu sähköisen tiedoston luomiseen valituille asiakkaille, tietolähteeksi valitaan <strong>PaymentModel</strong>. Se ohjaa prosessin kulkua. Loppukäyttäjille annettu poikkeus ilmaisee, kun valittu asiakas pysäytetään raportin käsittelypäivämääränä. Tälle käsittelyn ohjausobjektin tyypille muotoiltua kaavaa käytetään seuraavissa resursseissa:</p>
@@ -562,19 +626,19 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 <li>Finance and Operationsin otsikko SYS18389, jossa on seuraava teksti:
 <ul>
 <li><strong>Kielelle EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>Kielelle FI:</strong> Asiakas %1 on pysäytetty %2.</li>
+<li><strong>Kielelle FI:</strong> &quot;Asiakas %1 on pysäytetty %2.&quot;</li>
 </ul></li>
 </ul>
 <p>Tässä on kaava, jota voi muotoilla:</p>
 <p>FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</p>
-<p>Jos raporttia käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina on <strong>EN-US</strong> ja kielenä on <strong>EN-US</strong>, tämä kaava palauttaa seuraavan tekstin, joka voidaan esittää poikkeussanomana loppukäyttäjälle:</p>
+<p>Jos raporttia käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina on <strong>EN-US</strong> ja kielenä on <strong>EN-US</strong>, tämä kaava palauttaa seuraavan tekstin, joka voidaan esittää poikkeussanomana käyttäjälle:</p>
 <p>&quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot;</p>
 <p>Jos sama raportti käsitellään asiakkaalle <strong>Litware Retail</strong> 17.12.2015 ja maa-asetuksina on <strong>FI</strong> ja kielenä on <strong>FI</strong>, tämä kaava palauttaa seuraavan tekstin, jossa on eri päivämäärämuoto:</p>
 <p>&quot;Ei tulostettavaa. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE] Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
 <ul>
-<li><strong>Finance and Operations -resurssien otsikot:</strong> <strong>@&quot;X&quot;</strong>, jossa X on sovellusobjektipuun (AOT) otsikon tunnus.</li>
-<li><strong>ER-määrityksissä sijaitsevat otsikot:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, jossa X on ER-määrityksen otsikon tunnus.</li>
+<li><strong>Finance and Operations -resurssien otsikot:</strong> <strong>@&quot;X&quot;</strong>, jos <strong>X</strong> on sovellusobjektipuun (AOT) otsikon tunnus.</li>
+<li><strong>ER-määrityksissä sijaitsevat otsikot:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, jossa <strong>X</strong> on ER-määrityksen otsikon tunnus.</li>
 </ul>
 </blockquote>
 </td>
@@ -616,7 +680,7 @@ Voit hakea tässä tapauksessa otsikon sveitsinsaksan luettelointiarvon, jos kä
 </tr>
 <tr>
 <td>GUIDVALUE (syöte)</td>
-<td>Muuntaa <strong>String</strong>-tietotyypin määritetyn syötteen <strong>GUID</strong>-tietotyypin tietokohteeksi.</td>
+<td>Muuntaa <strong>String</strong>-tietotyypin määritetyn syötteen <strong>GUID</strong>-tietotyypin tietokohteeksi.<blockquote>[!NOTE] Voit tehdä muunnon vastakkaiseen suuntaan käyttämällä <strong>TEXT()</strong>-funktiota. (<strong>GUID</strong>-tietotyypin määritetty syöte siis muunnetaan <strong>String</strong>-tietotyypin tietokohteeksi.)</blockquote></td>
 <td>Määritä seuraavat tietolähteet omassa mallimäärityksessäsi:
 <ul>
 <li><strong>myID</strong> (<strong>Laskettu kenttä</strong> -tyyppi), ,joka sisältää lausekkeen <strong>GUIDVALUE(&quot;AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0&quot;)</strong></li>
@@ -637,7 +701,7 @@ Kun nämä tietolähteet määritetään, voit käyttää lauseketta kuten <stro
 
 | Toiminto | kuvaus | Esimerkki |
 |----------|-------------|---------|
-| TEXT (syöte) | Palauttaa määritetyn syötteen sen jälkeen, kun se on muunnettu tekstimerkkijonoksi. Se puolestaan muotoillaan nykyisen Finance and Operations -esiintymän palvelimen aluekohtaisten asetusten perusteella. **Reaali**-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin. | Jos Finance and Operations -esiintymän palvelimen aluekohtaisiksi asetuksiksi on määritetty **FI-FI**, **TEXT (NOW ())** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 17.12.2015 tekstimerkkijonona **17.12.2015 07.59.23**. **TEXT (1/3)** palauttaa arvon **"0.33"**. |
+| TEXT (syöte) | Palauttaa määritetyn syötteen sen jälkeen, kun se on muunnettu tekstimerkkijonoksi. Se puolestaan muotoillaan nykyisen Finance and Operations -esiintymän palvelimen aluekohtaisten asetusten perusteella. **Reaali**-tyyppisten arvojen merkkijonon muunnos on rajoitettu kahteen desimaaliin. | Jos Finance and Operations -esiintymän palvelimen aluekohtaisiksi asetuksiksi on määritetty **FI-FI**, **TEXT (NOW ())** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 17.12.2015 tekstimerkkijonona **"17.12.2015 07.59.23"**. **TEXT (1/3)** palauttaa arvon **"0.33"**. |
 | QRCODE (merkkijono) | Palauttaa määritetyn merkkijonon Quick Response Code (QR) -koodin kuvan base64-binaarimuodossa. | **QRCODE ("Sample text")** palauttaa arvon **U2FtcGxlIHRleHQ=**. |
 
 ### <a name="data-collection-functions"></a>Tietojen keruutoiminnot
@@ -646,10 +710,10 @@ Kun nämä tietolähteet määritetään, voit käyttää lauseketta kuten <stro
 |----------|-------------|---------|
 | FORMATELEMENTNAME () | Palauttaa nykyisen muodon elementin nimen. Palauttaa tyhjän merkkijonon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | Lisätietoja tämän toiminnon käytöstä on tehtäväoppaassa **ER Käytä tulostusmuotoa laskennassa ja summauksessa**, joka on osa **IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen** -liiketoimintaprosessia. |
 | SUMIFS (summauksen avainmerkkijono, ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen arvojen summan (jossa nimi on määritetty avaimeksi), joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyt ehdot (alue- ja arvoparit). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
-| SUMIF (summauksen avainmerkkijono, ehtoalueen merkkijono, ehdon arvon merkkijono) | Palauttaa XML-solmujen arvojen summan (jossa nimi on määritetty avaimeksi), joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyn ehdon (alue ja arvo). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
+| SUMIF (summauksen avainmerkkijono, ehtoalueen merkkijono, ehdon arvon merkkijono) | Palauttaa XML-solmujen arvojen summan (jossa nimi on määritetty avaimeksi), joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyt ehdon (alue ja arvo). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
 | COUNTIFS (ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen määrän, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyt ehdot (alue- ja arvoparit). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
-| COUNTIF (ehtoalueen merkkijono,ehdon arvon merkkijono) | Palauttaa XML-solmujen määrän, joka on kerätty muodon suorittamisen aikana ja joka täyttää määritetyn ehdon (alue ja arvo). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
-| COLLECTEDLIST (ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen arvoluettelon, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyt ehdot (alue ja arvo). Palauttaa tyhjän luettelon, jos nykyisten tiedostojen **Kerää tulostiedot**-merkintä on poistettu käytöstä. | |
+| COUNTIF (ehtoalueen merkkijono,ehdon arvon merkkijono) | Palauttaa XML-solmujen määrän, joka on kerätty tämän muodon suorittamisen aikana ja joka täyttää määritetyn ehdon (alue ja arvopari). Palauttaa **0** (nolla) -arvon, jos nykyisten tiedostojen **Kerää tulostiedot** -merkintä on poistettu käytöstä. | |
+| COLLECTEDLIST (ehtoalueen1 merkkijono,ehdon arvon1 merkkijono \[, ehtoalueen2 merkkijono,ehdon arvon2 merkkijono, …\]) | Palauttaa XML-solmujen arvoluettelon, joka kerättiin tämän muodon suorittamisen aikana ja joka täyttää määritetyn ehdon (alue ja arvopari). Palauttaa tyhjän luettelon, jos nykyisten tiedostojen **Kerää tulostiedot**-merkintä on poistettu käytöstä. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Muut (liiketoiminnan toimialuekohtaiset) toiminnot
 
@@ -667,6 +731,9 @@ Kun nämä tietolähteet määritetään, voit käyttää lauseketta kuten <stro
 | FA\_BALANCE (käyttöomaisuuden koodi, arvomallin koodi, raportointivuosi, raportointipäivä) | Palauttaa käyttöomaisuuden saldon valmistellun tietosäilön. Raportointivuosi on määritettävä Finance and Operationsin luettelointiarvona **AssetYear**. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** palauttaa käyttöomaisuuden **COMP-000001** saldojen valmistellun tietosäilön, jonka arvomalli on **Current** kyseisenä Finance and Operations -istunnon päivämääränä. |
 | TABLENAME2ID (merkkijono) | Palauttaa määritetyn taulun nimen taulukkotunnuksen kokonaislukumuodon. | **TABLENAME2ID ("Intrastat")** palauttaa arvon **1510**. |
 | ISVALIDCHARACTERISO7064 (merkkijono) | Palauttaa totuusarvon **TOSI**, kun määritetty merkkijono vastaa kelvollista kansainvälistä tilinumeroa (IBAN). Muussa tapauksessa palautetaan totuusarvo **EPÄTOSI**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** palauttaa arvon **TOSI**. **ISVALIDCHARACTERISO7064 ("AT61")** palauttaa arvon **EPÄTOSI**. |
+| NUMSEQVALUE (numerosarjan koodi, vaikutusalue, vaikutusalueen tunnus) | Palauttaa numerosarjan juuri luodun arvon määritetyn numerosarjan koodin, vaikutusalueen ja vaikutusalueen tunnuksen perusteella. Vaikutusalue on määritettävä **ERExpressionNumberSequenceScopeType**-luetteloinnin arvona (**Jaettu**, **Yritys** tai **Yhtiö**). Määritä **Jaettu**-vaikutusalueelle tyhjä merkkijonoa vaikutusalueen tunnuksena. Määritä **Yhtiö**- ja **Yritys**-vaikutusalueille yhtiön koodi vaikutusalueen tunnuksena. Jos määrität **Yhtiö**- ja **Yritys**-vaikutusalueille tyhjän merkkijono vaikutusalueen tunnuksena, käytetään nykyistä yhtiön koodia. | Määritä seuraavat tietolähteet omassa mallimäärityksessäsi:<ul><li>**enumScope** (**Dynamics 365 for Operationsin luettelointi** -tyyppi), joka viittaa **ERExpressionNumberSequenceScopeType**-luettelointiin.</li><li>**NumSeq** (**Laskettu kenttä** -tyyppi), joka sisältää lausekkeen **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</li></ul>Kun **NumSeq**-tietolähde kutsutaan, se palauttaa juuri luodun **Gene\_1**-numerosarjan arvon. Tämä arvo määritettiin yritykselle, ja se antaa kontekstin, jossa ER-muoto suoritetaan. |
+| NUMSEQVALUE (numerosarjan koodi) | Palauttaa juuri luodun numerosarjan arvon. Tämä arvo perustuu määritettyyn numerosarjaan, **Yhtiö**-vaikutusalueeseen ja (vaikutusalueen tunnuksena) sen yrityksen koodiin, joka antaa kontekstin, jossa ER-muoto suoritetaan. | Mallin yhdistämismäärityksessä määritetään seuraava tietolähde: **NumSeq** (**Laskettu kenttä** -tyyppi). Tässä tietolähteessä on lauseke **NUMSEQVALUE ("Gene\_1")**. Kun **NumSeq**-tietolähde kutsutaan, se palauttaa juuri luodun **Gene\_1**-numerosarjan arvon. Tämä arvo määritettiin yritykselle, ja se antaa kontekstin, jossa ER-muoto suoritetaan. |
+| NUMSEQVALUE (numerosarjan tietuetunnus) | Palauttaa numerosarjan juuri luodun arvon määritetyn numerosarjan tietuetunnuksen perusteella. | Määritä seuraavat tietolähteet omassa mallimäärityksessäsi:<ul><li>**LedgerParms** (**Taulu**-tyyppi), joka viittaa LedgerParameters-tauluun</li><li>**NumSeq** (**Laskettu kenttä** -tyyppi), joka sisältää lausekkeen **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</li></ul>Kun **NumSeq**-tietolähde kutsutaan, se palauttaa juuri luodun numerosarjan arvon. Tämä arvo määritettiin sen yrityksen kirjanpitoparametreissa, ja se antaa kontekstin, jossa ER-muoto suoritetaan. Tämä numerosarja yksilöi kirjauskansiot ja toimii tapahtumat yhteen liittävänä eränumerona. |
 
 ### <a name="functions-list-extension"></a>Toimintojen luettelon laajennus
 
@@ -674,7 +741,6 @@ ER:n avulla on mahdollista laajentaa luetteloa toiminnoista, joita käytetään 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
-
-[Sähköisen raportoinnin (ER) toimintojen luettelon laajentaminen](general-electronic-reporting-formulas-list-extension.md)
+- [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+- [Sähköisen raportoinnin (ER) toimintojen luettelon laajentaminen](general-electronic-reporting-formulas-list-extension.md)
 

@@ -3,7 +3,7 @@ title: "Määritä arvonlisäveron tilityskaudet"
 description: "Arvonlisäveron tilityskaudet sisältävät tietoja kausiväleistä, joilta arvonlisävero on raportoitava ja maksettava."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/15/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ab7d3a00a327f42a9f70c954d9b64a360a7f9163
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Määritä arvonlisäveron tilityskaudet
@@ -50,13 +50,15 @@ Tässä tehtävässä käytetään esittely-yritystä USMF.
 12. Syötä kausivälien yksiköiden määrä kautta kohti. Esimerkiksi neljännesvuosi sisältää 3 kuukautta.
 13. Valitse Käytä arvonlisäveron tilitykseen eräprosessia -valintaruutu tai poista sen valinta.
     * Tilityskauden tilitysprosessi voidaan käsitellä taustalla erätyönä. Tätä suositellaan, jos kausiväli sisältää paljon verotapahtumia.  
-14. Laajenna Kausivälit-välilehti.
-15. ValitseLisää.
-16. Merkitse valittu rivi luettelossa.
-17. Syötä päivämäärä Päivämäärästä-kenttään.
-18. Kirjoita päivämäärä Päivämäärään-kenttään.
-19. Valitse Uusi kausiväli.
+14. Valitse Estä verotapahtumien vastakirjauksien luonti -valintaruutu tai poista sen valinta.
+    * Järjestelmä luo oletusarvoisesti verotapahtumien vastakirjauksia selvitysprosessin aikana, mikä voi heikentää suorituskykyä, jos kausiväliin sisältyy suuri määrä verotapahtumia. Estä verotapahtumien vastakirjauksien luonti valitsemalla tämä valintaruutu.
+15. Laajenna Kausivälit-välilehti.
+16. ValitseLisää.
+17. Merkitse valittu rivi luettelossa.
+18. Syötä päivämäärä Päivämäärästä-kenttään.
+19. Kirjoita päivämäärä Päivämäärään-kenttään.
+20. Valitse Uusi kausiväli.
     * Kun ensimmäinen kausiväli on syötetty, uudet kaudet voidaan luoda automaattisesti. Voit siirtyä takaisin ja lisätä tarvittaessa uusia kausivälejä.  
-20. Sulje sivu.
+21. Sulje sivu.
 
 

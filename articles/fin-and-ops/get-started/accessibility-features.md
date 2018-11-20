@@ -3,7 +3,7 @@ title: "Helppokäyttötoiminnot"
 description: "Tässä ohjeaiheessa käsitellään toimintoja, jotka on suunniteltu auttamaan Dynamics 365 for Finance and Operationsin, Dynamics 365 for Retailin ja Dynamics 365 for Talentin toimintarajoitteisia käyttäjiä."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 834146c1a57cca0c02598290352c3ab8e1e4b7f5
+ms.sourcegitcommit: a67b51ced4bea11be258aed359a758d88294beb1
+ms.openlocfilehash: bc48aa5ccf50705ef0c5087608798875953fe888
 ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -41,7 +41,7 @@ Useimmat käyttäjät syöttävät päivittäin paljon tietoja ja käyttävät p
 
 Jos sivulle siirrytään Siirtymisruutu-valikon avulla, sinne pääsee myös sivun vasemmassa ruudussa olevan **hakukentän** avulla. Paina näppäinyhdistelmää Alt+G ja siirrä kohdistus **hakukenttään**. Kirjoita sitten sivun nimi tai kuvaus.
 
-![Hakukenttään on syötetty pankkitili-sana](media/6d08b0be32808221023e2aa92d69fd70.png)
+![Hakuruutuun kirjoitettiin Pankkitilit](media/6d08b0be32808221023e2aa92d69fd70.png  "Hakuruutuun kirjoitettiin Pankkitilit")
 
 Lisätietoja on kohdassa [Siirtymishaku](navigation-search.md).
 
@@ -56,17 +56,21 @@ Jokaista sivun toimintoa voi käyttää näppäimistön sarkainjärjestyksen avu
 
 Haluat suorittaa **Sähköposti-ilmoitusloki**-toiminnon, joka on toimintoruudun **Myyntitilaus**-välilehden **Sähköposti-ilmoitus**-ryhmässä.
 
-![Toimintoruudun Sähköposti-ilmoitusloki-toiminto](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg)
+![Toimintoruudun Sähköposti-ilmoituslokitoiminto](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg  "Toimintoruudun Sähköposti-ilmoituslokitoiminto")
 
 Näppäimistön käyttäminen on eräs vaihtoehto. Paina näppäinyhdistelmää Ctrl+F6 ja siirrä kohdistus toimintoruutuun. Paina sitten sarkainnäppäintä toistuvasti ja siirry kaikkien välilehtien ja toimintojen kautta **Sähköposti-ilmoitusloki** -toimintoon.
 
 Voit suorittaa toiminnon myös suoremmin. Paina missä tahansa sivun kohdassa näppäinyhdistelmää Ctrl+heittomerkki ('), jolloin näkyviin tulee toimintojen hakukenttä.
 
-![Toimintojen hakukenttä](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg)
+![Toimintojen hakuruutu](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg  "Toimintojen hakuruutu")
 
 Kirjoita hakukenttään toimintoa kuvaavia sanoja. Toiminto on käytettävissä ja voit suorittaa sen suoraan. Kirjoita esimerkiksi **sähköposti**, **ilmoit** (osa sanasta) tai **loki**. Tämän jälkeen voit hypätä Sähköposti-ilmoitusloki-toimintoon.
 
-![Hakukenttään on syötetty sähköposti-sana](media/image4.png) ![Hakukenttään on syötetty teksti "ilmoit"](media/image5.png) ![Hakukenttään on syötetty loki-sana](media/image6.png)
+![Hakuruutuun kirjoitettiin Sähköposti](media/image4.png "Hakuruutuun kirjoitettiin Sähköposti") 
+
+![Hakuruutuun kirjoitettiin Ilmoitu](media/image5.png "Hakuruutuun kirjoitettiin Ilmoitu")
+
+![Hakuruutuun kirjoitettiin loki](media/image6.png "Hakuruutuun kirjoitettiin loki")
 
 Kun olet valmis, voit painaa uudelleen näppäinyhdistelmää Ctrl+heittomerkki ja palaa kenttään, jossa olit ennen toimintohaun suorittamista.
 
@@ -78,7 +82,7 @@ Jokaista kenttää ei tarvita päivittäin, kun suoritetaan järjestelmän tyypi
 
 Tehtävien suorituksessa usein käyttämäsi kenttä ei ehkä kuitenkaan ole mukana sarkainten oletusjärjestyksessä. Jos käytössä on Windows Narrator, voit ottaa kentät käyttöön Windows Narrator -ohjelman näppäimistötoimintojen avulla ja tarkastella kenttien sisältöä. Vaihtoehtoisesti voit ottaa käyttöön **Asetukset**-sivun **Parannettu sarkainjärjestys** -vaihtoehdon. Tämä vaihtoehto lisää kaikki muokattavat kentät ja vain luku -kentät sarkainjärjestykseen. Tämän jälkeen voit luoda mukautetun sarkainjärjestyksen sivun mukautuksen avulla ja jättää pois kentät, joita et haluat sarkainjärjestykseen. Lisätietoja mukauttamisesta on kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md).
 
-![Parannettu sarkainjärjestys -vaihtoehto](media/8c0f12bbb3f26032997ef0ba95d89b6a.png)
+![Parannettu välilehtien järjestys -asetus](media/8c0f12bbb3f26032997ef0ba95d89b6a.png  "Parannettu välilehtien järjestys -asetus")
 
 ## <a name="form-patterns"></a>Lomakemallit
 

@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 # <a name="provision-talent"></a>Talentin valmistelu
@@ -47,7 +47,7 @@ Lisätietoja Talent-sovelluksen aloittamisesta on uudelle projektille luomassasi
 Kun LCS-projekti on luotu, voit valmistella Talent-sovelluksen ympäristöä varten.
 
 1. Valitse LCS-projektin **Talent-sovelluksen hallinta** -ruutu.
-2. Talent valmistellaan aina Microsoft PowerApps -ympäristössä, jotta PowerApps-integrointi ja laajennus saadaan käyttöön. Lue tämän ohjeaiheen PowerApps-ympäristön valitseminen -osa, ennen kuin jatkat. 
+2. Talent valmistellaan aina Microsoft PowerApps -ympäristössä, jotta PowerApps-integrointi ja laajennettavuus voidaan ottaa käyttöön. Lue tämän ohjeaiheen PowerApps-ympäristön valitseminen -osa, ennen kuin jatkat. Jos sinulla ei vielä ole PowerApps-ympäristöä, valitse Hallitse ympäristöjä LCS:ssä tai siirry PowerAppsin hallintakeskukseen. Noudata kohdan [PowerApps-ympäristön luominen](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment) ohjeita.
 
     > [!NOTE]
     > Voit tarkastella aiemmin luotuja ympäristöja tai luoda uusia ympäristöjä, kun Talent-sovelluksen valmistelevalle vuokraajan järjestelmänvalvojalle on määritetty PowerApps P2 -käyttöoikeus. Jos organisaatiolla ei ole PowerApps P2 -käyttöoikeutta, voit hankkia sen pilvipalveluratkaisujen toimittajalta tai [PowerApps-hinnoittelusivulta](https://powerapps.microsoft.com/en-us/pricing/).
@@ -73,7 +73,7 @@ Talent- ja PowerApps-ympäristöjen välinen integrointi sallii Talent-tietojen 
 Määritä seuraavien ohjeiden avulla, missä PowerApps-ympäristössä Talent otetaan käyttöön: 
 1. Valitse LCS-sovelluksessa Ympäristöjen hallinta tai siirry suoraan PowerApps-hallintakeskukseen, jossa voit tarkastella aiemmin luotuja ympäristöjä ja luoda uusia ympäristöjä.
 2. Yksittäinen Talent-ympäristö yhdistetään yksittäiseen PowerApps-ympäristöön.
-3. PowerApps-ympäristö sisältää Talent-sovelluksen sekä vastaavat PowerApps-, Flow- ja CDS-sovellukset. Jos PowerApps-ympäristö poistetaan, myös sen sovellukset poistetaan.
+3. PowerApps-ympäristö sisältää Talent-sovelluksen sekä vastaavat PowerApps-, Flow- ja CDS-sovellukset. Jos PowerApps-ympäristö poistetaan, myös sen sovellukset poistetaan. Talent-ympäristöä valmisteltaessa voidaan valmistella joko kokeilu- tai tuotantoympäristö. Valitse ympäristön tyyppi ympäristön käyttötavan perusteella. 
 4. Tietojen integrointi- ja testausstrategiat kannattaa ottaa huomioon. Esimerkit: Sandbox, hyväksyntätestaus, tuotanto. Tämän vuoksi on pohdittava, mitä vaikutuksia käyttöönotolla on, koska myöhemmin on hankala muuttaa PowerApps-ympäristöön yhdistettyä Talent-ympäristöä.
 5. Seuraavia PowerApps-ympäristöjä ei voi käyttää Talentissa, ja ne suodatetaan valintaluetteloista LCS:ssä:
  

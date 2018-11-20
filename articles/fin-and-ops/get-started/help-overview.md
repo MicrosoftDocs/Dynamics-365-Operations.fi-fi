@@ -3,7 +3,7 @@ title: "Finance and Operations -ohjejärjestelmä"
 description: "Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen."
 author: margoc
 manager: AnnBe
-ms.date: 07/12/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
+ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
+ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/17/2018
 
 ---
 
@@ -45,14 +45,14 @@ Finance and Operationsissa on uudistettu ohjejärjestelmä, joka perustuu kahtee
 -   Dokumentaatiosivusto
 -   Tehtäväoppaat
 
-Voit käyttää ohjeaiheita ja tehtäväoppaita ohjeruudusta riippumatta siitä, mitä tuotetta käytät. Seuraavassa näyttökuvassa on Dynamics 365 for Finance and Operations
+Voit käyttää ohjetta käyttämäsi tuotteen Ohje-ruudusta. Seuraavassa näyttökuvassa on Finance and Operations.
 
 ![Ohje-ruutu](./media/help-pane-ops-task-guides.png)
 
 Tässä ohjeaiheessa käsitellään ohjejärjestelmää ja kerrotaan, miten voit luoda organisaatiolle oman mukautetun ohjeistuksen ja koulutusresurssit.
 
 > [!IMPORTANT]
-> **Tehtäväoppaat**-välilehti ei ole tällä hetkellä käytettävissä Microsoft Dynamics 365 for Talentissa ja Microsoft Dynamics 365 for Retailissa. Tämän toiminnon käyttöönottamista myöhemmissä versiossa ollaan toteuttamassa. Perustoimintoja koskevat Talentin aloituskokemuksen tehtäväoppaat ovat edelleen käytettävissä. Retailin ja Talentin menettelyohje on saatavana myös docs.microsoft.com-sivustossa ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)).
+> **Tehtäväoppaat** eivät ole tällä hetkellä käytössä Retailissa tai Talentiin Ohje-ruudussa (Talentin Aloitusopas-ruudussa on muutamia tehtäväoppaita). Retailin ja Talentin menettelyohje on saatavana docs.microsoft.com-sivustossa ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)).
 
 ## <a name="help-on-docsmicrosoftcom"></a>Ohje osoitteessa docs.microsoft.com
 
@@ -64,17 +64,16 @@ Docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/unified-operations](
 -   **Liiketoimintaprosesseja tukeva sisältö**– sivustossa on liiketoimintaprosesseihin keskittyvää sisältöä, joka hyödyntää Microsoft Dynamics Lifecycle Services (LCS) -palvelujen liiketoimintaprosessin mallintajaa.
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Haku sivustosta docs.microsoft.com
-Sisältöä koskevista hauista esitetään paljon kysymyksiä. Jos aloitat sivuston käytön sivulta, jolla on tietoja Finance and Operationsista, hakusi koskee vain Finance and Operationsin sisältöä. Voit poistaa laajuuden määrityksen valitsemalla hakuruudun Operations-kohdan vieressä olevaa X-kohtaa. 
+Sisältöä koskevista hauista esitetään paljon kysymyksiä. Jos aloitat sivuston käytön sivulta, jolla on tietoja Finance and Operationsista, hakusi koskee vain Finance and Operationsin sisältöä. Voit poistaa laajuuden määrityksen valitsemalla hakuruudun Unified Operations -kohdan vieressä olevaa X-kohtaa. 
 
 ![Hae](./media/search-scope-2.png)
 
 Voit etsiä sisältöä myös millä tahansa hakukoneella. Haku tuottaa parhaat tulokset, jos käytössä on sivustohaku, esimerkiksi site:docs.microsoft.com dynamics 365 "hakuehto"  
 
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com-sisällysluettelo
-Finance and Operations-, Retail- ja Talent-sovelluksella on sama sisällysluettelo, jonka avulla asiakkaat näkevät käyttämänsä ohjeaiheen kontekstin. Voit etsiä ohjeaiheita myös sisällysluettelon yläpuolella olevan suodatustoiminnon avulla.
+Finance and Operationsilla ja Retaililla on sama sisällysluettelo, jonka avulla asiakkaat näkevät käyttämänsä ohjeaiheen kontekstin. Voit etsiä ohjeaiheita myös sisällysluettelon yläpuolella olevan suodatustoiminnon avulla. 
 
-### <a name="follow-a-topic"></a>Noudata ohjeaihetta
-Voit seurata ohjeaihetta valitsemalla kommenttiruudun alla olevan +Seuraa-painikkeen. Käyttäjän on kirjauduttava, jotta ohjeaiheen seuraaminen onnistuu. Lisätietoja on kohdassa [Jätä palautetta](#leave-us-feedback).  
+Voit hakea muiden Dynamics 365 -tuotteiden ohjeita. Vaihtoehtoisesti voit siirtyä keskussivulla valitsemalla Dynamics 365 sivuston siirtymispalkissa. 
 
 ### <a name="use-an-rss-feed"></a>Käytä RSS-syötettä
 Jos haluat tilata RSS-syötteen kaikista Unified Operations -sisällön päivityksistä, käytä seuraavaa linkkiä RSS-syötteitä tukevassa selaimessa, kuten Internet Explorer, tai RSS-syötehallintaa: 
@@ -106,17 +105,18 @@ Lisätietoja on osallistujan oppaassa: https://github.com/MicrosoftDocs/dynamics
 
 
 > [!NOTE]
-> Tällä hetkellä otamme mukaan osallistujia vain englanninkielisiin tietosäilöihin.  
+> Tällä hetkellä otamme mukaan osallistujia vain englanninkieliseen sisältöjoukkoon.  
 
 
 ## <a name="task-guides"></a>Tehtäväoppaat
 Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti tehtävän tai liiketoimintaprosessin eri vaiheet. Voit avata (toistaa) tehtäväoppaan Ohje-ruudusta. Kun napsautat tehtäväopasta ensimmäisen kerran, Ohje-ruutuun tulee näkyviin tehtävän vaiheittaiset ohjeet. Lokalisoidut tehtäväoppaat ovat nyt saatavana. 
 
-Esimerkiksi seuraavilla tuotteilla on omat tehtäväoppaat: Dynamics 365 for Retail, Dynamics 365 for Finance and Operations tai Dynamics 365 for Talent. Kohdassa Tehtäväoppaiden käyttö ohjeruudusta käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä. 
+Microsoft toimitti tehtäväopaskirjastot, jotka kattavat Finance and Operationsin versioon joulukuuhun 2017 kanssa. Kohdassa [Tehtäväoppaiden käyttö ohjeruudusta](help-overview.md#accessing-task-guides-from-the-help-pane) käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä. 
 
 ![Tehtäväoppaan lukunäkymä](./media/task-guide-ops.png)
 
 Aloita opastettu vuorovaikutteinen toiminta valitsemalla **Käynnistä tehtävän ohjaus** Ohje-ruudun alareunassa. Musta osoitin avautuu ja ilmaisee suoritettavan toiminnon. Noudata käyttöliittymän ohjeita ja anna tiedot ohjeiden mukaisesti. 
+
 ![Tehtäväoppaan vaiheen ohje](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT] 
@@ -126,7 +126,11 @@ Aloita opastettu vuorovaikutteinen toiminta valitsemalla **Käynnistä tehtävä
 
 Tehtävän ohjaukset luodaan tehtävän tallennustoiminnolla. Kun käytät tehtävätallennetta, kaikki Finance and Operations -käyttöliittymässä tekemäsi toimet (kuten valikoiden napsauttaminen, asetusten muuttaminen ja tietojen antaminen) tallennetaan. Kaikkia tallennettuja vaiheita kutsutaan tehtävätallenteeksi. Kuten edellisessä osassa selitettiin, tehtävätallenteet voidaan näyttää Ohje-ruudussa ja ne voidaan toistaa tehtävän opastuksena. Tehtävätallenteita voi kuitenkin käyttää myös muilla tavoin:
 
--   **Tallenna tehtävätallenteet BPM:hen** – Voit tallentaa tehtävätallenteen BPM-kirjaston rivihierarkiaan LCS-palveluissa. Kun tallennat tehtävätallenteen BPM:hen, muodostettava vuokaavio voidaan näyttää yhdessä tallennevaiheiden kanssa. **Huomautus:** Jos haluat näyttää tehtävätallenteen Finance and Operationsin ohjeruudussa ja toistaa sen tehtävän ohjauksena, tallenne on tallennettava BPM-kirjastoon.
+-   **Tallenna tehtävätallenteet BPM:hen** – Voit tallentaa tehtävätallenteen BPM-kirjaston rivihierarkiaan LCS-palveluissa. Kun tallennat tehtävätallenteen BPM:hen, muodostettava vuokaavio voidaan näyttää yhdessä tallennevaiheiden kanssa. 
+
+    > [!Note]
+    > Jos haluat näyttää tehtävätallenteen Finance and Operationsin ohjeruudussa ja toistaa sen tehtävän ohjauksena, tallenne on tallennettava BPM-kirjastoon.
+    
 -   **Tallenne tehtävätallenteet Word-asiakirjoina** – kun tallennat tehtävätallenteen Microsoft Word -asiakirjana, voit luoda helposti tulostettavia koulutusoppaita organisaation käyttöön;
 
 Lisätietoja tehtävän tallennustoiminnosta on ohjeaiheessa [Finance and Operationsin tehtävien tallennustoiminto](../../dev-itpro/user-interface/task-recorder.md).
@@ -142,7 +146,7 @@ Voit käyttää Finance and Operationsin ohjesisältöä joko napsauttamalla **O
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Ohjeaiheiden käyttö ohjeruudusta
 
-Voit avata Finance and Operations -asiakasohjelmaa koskevia artikkeleita ohjeruudussa. Kun avaat ohjeruudun ja valitset **Wiki**-välilehden, näkyvissä on avointa Finance and Operations -sivua käsitteleviä artikkeleita. Jos artikkeleita ei löydy, tarkenna hakua avainsanoilla. Kun napsautat artikkelia Ohje-ruudussa, selaimeen avautuu uusi välilehti, jossa artikkeli näkyy. 
+Voit avata Finance and Operations -asiakasohjelmaa koskevia artikkeleita ohjeruudussa. Kun avaat ohjeruudun ja valitset **Ohje**-välilehden, näkyvissä on avointa Finance and Operations -sivua käsitteleviä artikkeleita. Jos artikkeleita ei löydy, tarkenna hakua avainsanoilla. Kun napsautat artikkelia Ohje-ruudussa, selaimeen avautuu uusi välilehti, jossa artikkeli näkyy. 
 
 > [!IMPORTANT]
 > Tämä osa ei koske Dynamics 365 for Talentia. Talentin ohjejärjestelmä yhdistetään automaattisesti tuotteen tehtäväoppaisiin. Talentissa ei voi myöskään luoda mukautettuja tehtäväoppaita. 
@@ -160,7 +164,9 @@ Tehtäväoppaita ei voi käyttää ohjeruudusta, ennen kuin järjestelmänvalvoj
 Toimi seuraavasti **Järjestelmän parametrit** -sivulla:
 
 1.  **Tärkeää:** Kun avaat Ohje-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Servicesiin. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja nouda parametrilomake valitsemalla **OK**.
+
 ![Muodosta yhteys LCS:ään](./media/connect-to-lcs-crop-1024x365.png)
+
 2.  Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
 3.  Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
     - Valitse Finance and Operationsissa Microsoft-sisältöä varten helmikuun 2017 QPC Unified Library for Microsoft Dynamics 365 for Finance and Operations. 
@@ -173,38 +179,29 @@ Kun järjestelmänvalvoja on suorittanut nämä vaiheet, voit avata ohjeruudun j
 
 ![Tehtäväoppaan lukunäkymä](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides"></a>Missä käännetyt tehtäväoppaat sijaitsevat?
+### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Missä Microsoft-kirjastojen käännetyt tehtäväoppaat sijaitsevat?
 
 Käännetyt tehtävän ohjaukset julkaistaan kirjastoissa, joiden otsikossa lukee "kaikki kielet". Jos haluat avata lokalisoidun tehtäväoppaan ohjeen Finance and Operationsissa, varmista, että olet muodostanut sopivaan kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**. 
 -   Jos tehtäväopas on käännetty, tehtäväopas avautuu valitsemallasi kielellä.
 -   Jos tehtäväopasta ei ole vielä käännetty, vain osa tekstistä (ohjausobjektien teksti) näkyy valitun kielisenä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-Seuraavassa taulussa on sivustoluettelo. Sisältösivustomme on järjestetty tukemaan asiakkaan elinkaarta. Kullakin vaiheella on omat tukisivustot. Jos sivuston nimen vieressä on tähti (\*), sivustoon on kirjauduttava palvelusopimukseen liitetyllä tilillä.
+
+- [Finance and Operationsin ohjejärjestelmä (ladattava tietolomake)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+- [Tehtävien tallennustoiminto](../../dev-itpro/user-interface/task-recorder.md)
+- [Dokumentaation tai koulutuksen luominen tehtävätallenteiden avulla](../../dev-itpro/user-interface/task-recorder.md)
+
+Seuraavassa taulussa on sivustoluettelo. Jos sivuston nimen vieressä on tähti (\*), sivustoon on kirjauduttava palvelusopimukseen liitetyllä tilillä.
 
 | Sivusto                                                                     | kuvaus                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Docs.microsoft.com](/dynamics365/) | Kaiken Dynamics 365:n tuoteohjeistuksen ylläpito tai linkitys.                                                                                                                                                               |
-| [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Pilvipalveluihin perustuva yhteinen työtila, jota asiakkaat ja heidän kumppaninsa voivat käyttää Dynamics 365 for Finance and Operations -projektien hallintaa ennen myyntiä, täytäntöönpanon aikana ja sen työvaiheissa. Sivustossa on apua käyttöönoton kaikissa vaiheissa. |
-| [CustomerSource](http://www.customersource.com/)\*                       | Ylläpitää kattavia koulutusresursseja ja on Dynamics 365 for Finance and Operationsin ensisijainen tukisivusto. Sivuston tiettyjen resurssien käyttö voi edellyttää kirjautumista.                                                                      |
+| [Microsoft Learn](https://docs.microsoft.com/learn/) | Microsoftin maksuton eLearning-sivusto.                                                                                                                                                               |
+| [Käyttöikäpalvelut](https://lcs.dynamics.com/en/)\*                      | Pilvipalveluihin perustuva yhteinen työtila, jota asiakkaat ja heidän kumppaninsa voivat käyttää Dynamics 365 for Finance and Operations -projektien hallintaa ennen myyntiä, täytäntöönpanon aikana ja sen työvaiheissa. Sivustossa on apua käyttöönoton kaikissa vaiheissa. |
 | [Tuen blogi](http://aka.ms/AXSupportBlog)                              | Sisältää Dynamics 365 for Finance and Operationsin tukiryhmän julkaisemia vinkkejä.                                                                                                                                                  |
-| [MSDN](http://aka.ms/AXMSDN)                                             | Ylläpitää aiempien versioiden kehittäjille kirjoitettua sisältöä.                                                                                                                                                                       |
-| [TechNet](http://aka.ms/TechNet)                                         | Ylläpitää aiempien versioiden sisältöä, joka on kirjoitettu IT-asiantuntijoille ja sovelluksen käyttäjille.                                                                                                                                           |
-| [Dynamics-yhteisö](http://community.dynamics.com/)                  | Ylläpitää blogeja, keskustelupalstoja ja videoita.                                                                                                                                                                                                           |
+| [Docs.microsoft.com/previous versions](https://docs.microsoft.com/en-us/previous-versions/dynamics/)                                             | Sisältää edellisten versioiden sisällön.                                                                                                                                                                       |
+| [Dynamics-yhteisö](https://community.dynamics.com/)                  | Ylläpitää blogeja, keskustelupalstoja ja videoita.                                                                                                                                                                                                           |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/en-us/dynamics365/home)                 | Sisältää arviointi- ja myyntitietoja.                                                                                                                                                                                                 |
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\*                      | Sisältää Finance and Operationsin koulutusresursseja ja ladattavia raportteja. Lisäksi se on palvelupakettien omistajien ensisijainen tukisivusto. Joidenkin sivuston resurssien käyttö saattaa edellyttää palvelupakettia.     |
 
-
-
-<a name="additional-resources"></a>Lisäresurssit
---------
-[Finance and Operationsin ohjejärjestelmä (ladattava tietolomake)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
-
-[Tehtävien tallennustoiminto](../../dev-itpro/user-interface/task-recorder.md)
-
-[Dokumentaation tai koulutuksen luominen tehtävätallenteiden avulla](../../dev-itpro/user-interface/task-recorder.md)
-
-[Uudet tai päivitetyt tehtävän ohjaukset (marraskuu 2016)](new-task-guides-november-2016.md)
-[*Uudet tai päivitetyt tehtävän ohjaukset (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
-[Uudet tai päivitetyt tehtävän ohjaukset (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
-[Uudet tehtävän ohjaukset (helmikuu 2016)](new-task-guides-available-february-2016.md)
 

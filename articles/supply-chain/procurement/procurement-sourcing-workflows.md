@@ -50,11 +50,12 @@ Hankinnoissa voi käyttää seuraavia työnkulkutyyppejä.
 | Toimittajan sovelluksen lisäystyönkulku  | Luo toimittajapyyntöjen kautta lisättävien uusien toimittajien tarkistus- ja hyväksyntätyönkulkuja. |
 
 ## <a name="creating-a-workflow"></a>Työnkulun luominen
+
 Jos haluat luoda työnkulun, valitse Hankinta &gt; Asetukset &gt; Hankinnan työnkulut ja luo uusi työnkulku valitsemalla haluamasi työnkulkutyyppi.  
 
 Voit vetää työnkulkualustassa työnkulun elementit suunnitteluun ja linkittää ne työnkulkuun. Työnkulun elementtien asetukset täytyy määrittää. Hyväksynnän ja tehtävän työnkulun elementeille voit määrittää, kenen osallistujan tulee tehdä niille toimia.
-Osallistujien tyypit
-----------------------
+
+## <a name="types-of-participants"></a>Osallistujien tyypit
 
 Voit määrittää hyväksyntävaiheen seuraaville osallistujaryhmille.
 
@@ -68,13 +69,12 @@ Voit määrittää hyväksyntävaiheen seuraaville osallistujaryhmille.
 
 
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
-[Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (raportti)
+- [Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (raportti)
 
-[Ostoehdotuksen työnkulku](purchase-requisitions-workflow.md)
+- [Ostoehdotuksen työnkulku](purchase-requisitions-workflow.md)
 
-[Toimittajien aktivointi](vendor-onboarding.md)
+- [Toimittajien aktivointi](vendor-onboarding.md)
 
 

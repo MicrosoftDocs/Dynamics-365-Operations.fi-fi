@@ -3,7 +3,7 @@ title: Projektisopimusten ja projektien synkronointi Project Service Automationi
 description: "Tässä ohjeaiheessa käsitellään mallia ja tehtäviä, joilla projektisopimukset ja projektit synkronoidaan suoraan Microsoft Dynamics 365 for Project Service Automationista Microsoft Dynamics 365 for Finance and Operationsiin."
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: 65a274323a2d95c9c76727c9e40aa7e649e6350a
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -95,8 +95,8 @@ Kun Project Service Automationin ja Finance and Operationsin välistä integroin
 ## <a name="prerequisites-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
 - Tilit on synkronoitava, ennen kuin projektit ja projektisopimukset voidaan synkronoida.
-- Lisää yhteysjoukossa kohteen **msdyn\_organizationalunits** integraatioavainkentään määritykseksi **msdyn\_name \[Name\]**. Projekti on ehkä lisättävä ensin yhteysjoukkoon. Lisätietoja integrointiavaimesta on kohdassa [Dynamics 365:n tietojen integrointi](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).
-- Lisää yhteysjoukossa kohteen **msdyn\_projects** integraatioavainkentään määritykseksi **msdynce\_projectnumber \[Project Number\]**. Projekti on ehkä lisättävä ensin yhteysjoukkoon. Lisätietoja integrointiavaimesta on kohdassa [Dynamics 365:n tietojen integrointi](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).
+- Lisää yhteysjoukossa kohteen **msdyn\_organizationalunits** integraatioavainkentään määritykseksi **msdyn\_name \[Name\]**. Projekti on ehkä lisättävä ensin yhteysjoukkoon. Lisätietoja on kohdassa [Tietojen integrointi Common Data Service sovelluksille -ratkaisuun](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+- Lisää yhteysjoukossa kohteen **msdyn\_projects** integraatioavainkentään määritykseksi **msdynce\_projectnumber \[Project Number\]**. Projekti on ehkä lisättävä ensin yhteysjoukkoon. Lisätietoja on kohdassa [Tietojen integrointi Common Data Service sovelluksille -ratkaisuun](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 - Projektisopimusten ja projektien **SourceDataID**-arvoksi voidaan määrittää jokin muu arvo. Se voidaan myös poistaa yhdistämismäärityksestä. Mallin oletusarvo on **Project Service Automation**.
 - **PaymentTerms**-määritys on päivitettävä vastaamaan kelvollisia Finance and Operationsin maksuehtoja. Voit myös poistaa projektitehtävän yhdistämismäärityksestä. Oletusarvon määritys sisältää esittelytietojen oletusarvot. Seuraava taulukko sisältää Project Service Automationin arvot.
 
