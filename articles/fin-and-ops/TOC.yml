@@ -48,6 +48,10 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: 'Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa ympäristöissä'
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations -versio 8.1.3 (joulukuu 2018)
+              href: get-started/whats-new-changed-8-1-3.md
+            - name: Platform update 23 (joulukuu 2018)
+              href: get-started/whats-new-platform-update-23.md
             - name: Platform update 22 (marraskuu 2018)
               href: get-started/whats-new-platform-update-22.md
             - name: Finance and Operations -versio 8.1.2 (marraskuu 2018)
@@ -152,6 +156,8 @@
               href: get-started/help-overview.md
             - name: Yhdistäminen ohjejärjestelmään
               href: get-started/help-connect.md
+            - name: Yhdistäminen mukautettuun ohjesivustoon
+              href: get-started/help-custom.md
             - name: Kenttäkuvausten näyttäminen ja vienti
               href: get-started/view-export-field-descriptions.md
             - name: Tehtäväoppaat ja tehtävien tallennustoiminto
@@ -1243,6 +1249,8 @@
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
             - name: Talousraportoinnin tietovaraston osajoukon palauttaminen
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        - name: Sähköiset sanomat
+          href: ../financials/general-ledger/electronic-messaging.md
     - name: Lokalisointi- ja säädösominaisuudet
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
@@ -2222,6 +2230,10 @@
               href: ../financials/localizations/rus-transactions-settlement-date.md
             - name: Maksettavat laskut
               href: ../financials/localizations/rus-invoice-payment.md
+            - name: Taloushallinnon raportointi
+              href: ../financials/localizations/rus-financial-reports.md
+            - name: Luo ostokirja
+              href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Saudi-Arabia
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2741,6 +2753,8 @@
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
                 - name: Konfiguraatioiden tuonti Lifecycle Services -palvelusta
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+                - name: Sähköisen raportoinnin konfiguraatioiden tuonti sääntöjen konfigurointipalvelusta
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md
                 - name: Konfiguraatioiden lataaminen Lifecycle Services -palvelusta
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
                 - name: Konfiguraatioiden tuonti
@@ -4149,6 +4163,8 @@
               href: ../supply-chain/warehousing/display-older-batches-within-warehouses.md
             - name: Mobiililaitteen vanhimman erän kerääminen
               href: ../supply-chain/warehousing/pick-oldest-batch.md
+            - name: Prosessioppaan kehys
+              href: ../supply-chain/warehousing/process-guide-framework.md
         - name: Päivitys ja siirto
           items:
             - name: 'Varastonhallintaprosessien päivittäminen Microsoft Dynamics AX 2012:sta Finance and Operationsiin'
