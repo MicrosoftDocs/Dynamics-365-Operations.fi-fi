@@ -1,0 +1,294 @@
+- name: Dynamics 365 for Talent
+  href: index.md
+  items:
+    - name: Aloittaminen
+      href: talent-get-started.md
+      items:
+        - name: Uudet ja muuttuneet ominaisuudet
+          href: whats-new.md
+          items:
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (27.11.2018)'
+              href: whats-new-talent-november-27.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (15.11.2018)'
+              href: whats-new-talent-november-15.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (31.10.2018)'
+              href: whats-new-talent-october-31.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (19.10.2018)'
+              href: whats-new-talent-october-19.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (15.10.2018)'
+              href: whats-new-talent-october-11.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (8.10.2018)'
+              href: whats-new-talent-october-8.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (1.10.2018)'
+              href: whats-new-talent-october-01.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (24.9.2018)'
+              href: whats-new-talent-september-24.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (17.9.2018)'
+              href: whats-new-talent-september-17-2018.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (10.9.2018)'
+              href: whats-new-talent-september-10.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (elokuu 2018)'
+              href: whats-new-talent-august2018.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (heinäkuu 2018)'
+              href: whats-new-talent-july2018.md
+        - name: Järjestelmävaatimukset ja päivityskäytäntö
+          href: talent-versions-update-policy.md
+        - name: Talentin valmistelu
+          href: provisioning-talent.md
+        - name: Talent-ympäristöjen poistaminen
+          href: remove-talent-environment.md
+        - name: Modulaaristen Talent-sovellusten valmistelu
+          href: modular-app-tech-faq.md
+        - name: PowerApps-sovellusten upottaminen
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: "Core HR\_ja Common Data Service sovelluksia varten"
+          href: CoreHREntities.md
+        - name: Integroinnit
+          href: talent-financeandoperations-integration.md
+        - name: Esiversion ominaisuuksien käyttäminen
+          href: access-preview-feature.md
+        - name: Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen
+          href: configure-payroll-integration.md
+        - name: Talent-tuen saaminen
+          href: talent-support.md
+    - name: 'Työvoiman järjestäminen osastojen, töiden ja toimien avulla'
+      href: departments-jobs-positions.md
+      items:
+        - name: Työn komponenttien määrittäminen
+          href: create-job.md
+        - name: Osastojen luominen ja sisällyttäminen osastohierarkiaan
+          href: create-department-add-department-hierarchy.md
+        - name: Yritysten välisten henkilöstöhallinnon parametrien määrittäminen
+          href: set-up-hr-parameters-across-legal-entities.md
+        - name: Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen
+          href: set-up-company-specific-hr-parameters.md
+        - name: Henkilöstötoiminnot – usein kysytyt kysymykset
+          href: personnel-actions-faq.md
+        - name: Liiketoimintaprosessien virallistaminen
+          href: formalize-business-processes.md
+        - name: Työntekijätietojen hallinta työnkulkujen avulla
+          href: workflow-manage-employee-information.md
+    - name: Virkavapaan ja poissaolojen hallinta
+      href: leave-absence-overview.md
+      items:
+        - name: Jaksottaminen tehtyjen työtuntien perustella
+          href: leave-accrue-hours-worked.md
+        - name: Työaikakalenterit
+          href: working-time-calendars.md
+    - name: Henkilöstön palkkaaminen organisaatioon
+      items:
+        - name: Attractin toiminnot ja ominaisuudet
+          href: attract-overview.md
+        - name: Prosessimallin luominen Attractissa
+          href: Process-templates-Attract.md
+        - name: 'Töiden luominen, hyväksyminen ja julkaiseminen Attractissa'
+          href: Creating-jobs-Attract.md
+        - name: Hankinta kykypoolien avulla
+          href: attract-talent-pools.md
+        - name: Hankinta LinkedIn-rekrytointiratkaisu
+          href: attract-linked-in-recruiter.md
+        - name: Työhönottoprosessin tehtävät Attractissa
+          href: activities-attract.md
+        - name: Laajennettavuus
+          href: extensibility-attract.md
+        - name: Urasivusto ja hakijakokemukset
+          href: career-site.md
+        - name: Tarjoustenhallinnan määrittäminen
+          href: offer-setup.md
+        - name: 'Tarjousten luominen, hyväksyminen ja allekirjoittaminen'
+          href: creating-offers.md
+        - name: Sähköpostimallien luominen ja hallinta
+          href: email-templates.md
+        - name: Käyttöoikeuksien ja roolien hallinta Attractissa
+          href: security-attract.md
+        - name: Järjestelmänvalvojan asetukset Attractissa
+          href: Admin-Settings-Attract.md
+        - name: Älykkäät suositukset
+          href: Intelligent-Recommendations.md
+        - name: Osallistavan perehdyttämiskokemuksen luominen
+          href: create-onboarding-experience.md
+    - name: Työntekijöiden motivointi
+      items:
+        - name: Kompensaatiosuunnitelmat
+          href: compensation-plans.md
+        - name: Kiinteiden kompensaatiosuunnitelmien luominen
+          href: create-fixed-compensation-plans.md
+        - name: Muuttuvien kompensaatiosuunnitelmien luominen
+          href: create-variable-compensation-plans.md
+        - name: Kompensaation käsittely
+          href: process-compensation.md
+        - name: Työn komponenttien määrittäminen
+          href: create-job.md
+    - name: Työntekijöiden kehittäminen ja kouluttaminen
+      items:
+        - name: Työsuoritusten hallinta
+          href: performance-management-overview.md
+        - name: Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen
+          href: skills.md
+        - name: Koulutuskurssien määrittäminen
+          href: courses.md
+    - name: Etuohjelman määrittäminen ja hallinta
+      href: manage-benefit-program.md
+    - name: Etuuskelpoisuuden käytännöt
+      href: benefit-eligibility-policies.md
+      items:
+        - name: Työntekijöille lainattujen nimikkeiden hallinta
+          href: loan-items.md
+    - name: Tietojen kerääminen kyselylomakkeilla
+      href: questionnaires.md
+      items:
+        - name: Kyselylomakkeiden suunnitteleminen
+          href: design-questionnaires.md
+        - name: Kyselylomakkeiden jakelu ja aikataulutus
+          href: distribute-questionnaires.md
+        - name: Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen
+          href: evaluate-questionnaire-results.md
+    - name: Työturvallisuus ja vaatimustenmukaisuus (Yhdysvallat)
+      items:
+        - name: Henkilötietopyyntöön vastaaminen Talentilla
+          href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: I-9-lomakkeen työsuhdetarkistukset
+          href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: ADA-lain noudattaminen
+          href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Tiedot
+      items:
+        - name: Embedded Power BI työtiloissa
+          href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Mobiilisovellus
+      items:
+        - name: Mobiilityötilat
+          items:
+            - name: Yrityksen hakemisto
+              href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Oma ryhmä
+              href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Mobiilityötilan julkaiseminen
+          href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Office-integrointi
+      items:
+        - name: Office-integroinnin opetusohjelma
+          href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Excel-lisäosan käyttö
+          href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Avaa Excelissä -kokemusten luominen
+          href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Office-integroinnin vianmääritys
+          href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Organisaation hallinto
+      items:
+        - name: Numerosarjat
+          href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: Yksittäisten numerosarjojen määrittäminen
+              href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Numerosarjojen määrittäminen ohjatulla toiminnolla
+              href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Organisaatiot ja organisaatiohierarkiat
+          href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: Organisaatiohierarkian suunnitteleminen
+              href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Organisaation hierarkian luominen
+              href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Luo oikeushenkilö
+              href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Luo toimintayksikkö
+              href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Yleinen osoitekirja
+          href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: Yleisen osoitekirjan määritysten suunnittelu
+              href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Yleisen osoitekirjan määrittäminen
+              href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Osoitekirjat – usein kysytyt kysymykset
+              href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Työnkulku
+          href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: Työnkulun elementit
+              href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Työnkulkutehtävät
+              href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Työnkulun luominen
+              href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+              items:
+                - name: Työnkulkuominaisuuksien määrittäminen
+                  href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Manuaalisen tehtävän asetusten määrittäminen
+                  href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Automaattisen tehtävän asetusten määrittäminen
+                  href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Hyväksyntäprosessin asetusten määrittäminen
+                  href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Hyväksyntävaiheen asetusten määrittäminen
+                  href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Manuaalisen päätöksen asetusten määrittäminen
+                  href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Ehdollisen päätöksen asetusten määrittäminen
+                  href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Rinnakkaisen tehtävän asetusten määrittäminen
+                  href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Rinnakkaishaaran asetusten määrittäminen
+                  href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+                - name: Rivinimikkeen työnkulun asetusten määrittäminen
+                  href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Sanoman käsittelyn erätyön asetusten määrittäminen
+              href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Työnkulun työnimikkeiden delegointi
+              href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Työnkulkuhistorian tarkasteleminen
+              href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Työnkulkuun liittyvien sähköpostiviestien vastaanoton salliminen käyttäjille
+              href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Hälytykset
+          href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: Hälytysten luominen
+              href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
+            - name: Hälytysten eräkäsittely
+              href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Palvelupyyntöjen hallinta
+          href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
+          items:
+            - name: 'Palvelupyynnön käyttöoikeuksien, prosessien ja luokkien määrittäminen'
+              href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Asiakirjanhallinnan määrittäminen
+          href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Sähköpostiviestin määrittäminen ja lähettäminen
+          href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Päivämäärä- ja aikatiedot sekä aikavyöhykkeet
+          href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Henkilöstöhallinnon tehtävät
+      items:
+        - name: Merkintöjen lisääminen työsuorituksen kirjauskansioon ja kehujen lähettäminen
+          href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Tavoitteen luominen
+          href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Luo suorituskykyarvio
+          href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Talentin vianmääritys
+      items:
+        - name: Analyysiraportteja ei päivitetä.
+          href: analytic-reports-not-updated.md
+        - name: PowerApps-hallintakeskuksessa ei voi luoda ympäristöä
+          href: create-envi-powerapps-admin-ctr.md
+        - name: Talent-asiakasohjelma katkaisee yhteyden
+          href: client-disconnects.md
+        - name: Tietokannan varmuuskopioiden käsittely
+          href: database-backups.md
+        - name: Tekstin katkaisun välttäminen toimihierarkiassa ja Visio-viennissä
+          href: avoid-text-truncation-position-hierarchy-visio.md
+        - name: Kompensaatioprosessin suorittaminen
+          href: run-compensation-process.md
+        - name: 'Tehtäväoppaiden tallentaminen LCS:ään sekä niiden toistaminen'
+          href: save-play-task-guides-LCS.md
+        - name: Yksityisten osoitteiden käyttöoikeudet käyttöoikeusroolin mukaan
+          href: security-roles-addresses.md
+        - name: Talent ei näy Microsoft Dynamics 365 -sovellusten yhteydessä (CDS1.0)
+          href: talent-not-in-home-CDS.md
+        - name: 'Käyttäjä voi käyttää Core HR -sovellusta, mutta ei Onboard- tai Attract-sovellusta'
+          href: user-access-core-hr.md
+        - name: Talentin raportointiasetukset
+          href: talent-reporting-options.md

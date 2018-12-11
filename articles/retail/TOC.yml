@@ -1,0 +1,628 @@
+- name: Tervetuloa Dynamics 365 for Retailiin
+  href: index.md
+- name: Aloittaminen
+  items:
+    - name: Uudet ja muuttuneet ominaisuudet
+      href: get-started/whats-new.md
+    - name: Ennen Retail-ratkaisun ostamista
+      href: get-started/before-you-buy.md
+    - name: Kokeiluversion tilaaminen
+      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
+    - name: Esittely-ympäristön käyttöönotto
+      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
+    - name: Käyttöönoton asetukset
+      href: dev-itpro/choose-deployment.md
+    - name: Retail-tuen saaminen
+      href: retail-support.md
+    - name: Yhden version palvelupäivitysten usein kysytyt kysymykset
+      href: ../fin-and-ops/get-started/one-version.md
+- name: Tietoja järjestelmän elinkaaresta
+  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+  items:
+    - name: Microsoft FastTrack for Dynamics 365
+      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
+    - name: Perehdytys
+      href: ../fin-and-ops/imp-lifecycle/onboard.md
+    - name: Käyttöönoton valmistelu
+      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
+    - name: Käyttöönoton usein kysytyt kysymykset
+      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
+    - name: Palvelupyynnön lähettäminen
+      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
+    - name: 'Tilausten, LCS-projektien ja Azure Active Directory -vuokraajien usein kysytyt kysymykset'
+      href: ../fin-and-ops/get-started/subscription-overview.md
+    - name: Ympäristöjen siirtäminen palvelinkeskusten välillä
+      href: ../fin-and-ops/get-started/move-environments-data-center.md
+    - name: Lisenssien siirtäminen sopimustyyppien välillä
+      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md
+    - name: LCS-käyttöönottoprojektin siirtäminen toiseen Azure Active Directory -vuokraajaan
+      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
+    - name: Useiden LCS-projektien ja tuotantoympäristöjen ottaminen käyttöön samassa Azure Active Directory -vuokraajassa
+      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
+    - name: Finance and Operations Retail -projektien käyttöönotto
+      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+    - name: 'Uusien ympäristöjen, Azure DevOpsin ja haarojen määrittäminen Retail-projekteille'
+      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+    - name: Retail-projektien koodin ja ympäristöjen päivittäminen
+      href: dev-itpro/updating-environments.md
+    - name: Testaus ja suorituskykyongelmat
+      href: dev-itpro/retail-implementation-testing-performance.md
+- name: Jaettu tilausten hallinta (JTH)
+  href: dom.md
+- name: Maksut
+  items:
+    - name: Maksutavat
+      href: payment-methods.md
+    - name: 'Luottokorttien määritys, varmennus ja tietojen tarkistus'
+      href: ../financials/accounts-receivable/credit-card-authorizations.md
+    - name: Myyntipisteen käteisvarojen arvojen määritys
+      href: cash-denominations.md
+    - name: Laskun maksutapojen määrittäminen
+      href: payinvoice.md
+    - name: Maksut – usein kysytyt kysymykset
+      href: dev-itpro/payments-retail.md
+- name: Ostotilaukset
+  items:
+    - name: Ostotilausten yleiskatsaus
+      href: ../supply-chain/procurement/purchase-order-overview.md
+    - name: Ostotilausten luominen
+      href: ../supply-chain/procurement/purchase-order-creation.md
+    - name: Tuotteen vastaanotto ostotilausten perusteella
+      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
+    - name: Ostotilausten hyväksyminen ja vahvistaminen
+      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
+    - name: Ostotilauksen hyväksymisen mobiilityötila
+      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
+- name: Laskelmat
+  items:
+    - name: Vähittäismyyntilaskelmat
+      href: retail-statements.md
+    - name: 'Laskelmien luonti, laskenta ja kirjaaminen vähittäismyymälälle'
+      href: tasks/create-calculate-post-statement-retail-store.md
+    - name: Laskelmien kirjaustoimintojen parannukset
+      href: statement-posting-EOD.md
+    - name: Vähittäismyyntilaskelmiin vaikuttavien Retail-parametrien määrittäminen
+      href: tasks/parameter-configurations-retail-statements.md
+    - name: Vähittäismyyntilaskelmiin vaikuttavien maksutapa-asetusten määrittäminen
+      href: tasks/payment-configurations-retail-statements.md
+    - name: Laskentatyön määrittäminen ja suorittaminen
+      href: tasks/run-job-calculate-statements.md
+    - name: Laskelmien kirjaustyön määrittäminen ja suorittamien
+      href: tasks/run-job-post-statements.md
+    - name: Vähittäismyyntilaskelmiin vaikuttavien myymäläasetusten määrittäminen
+      href: tasks/store-configurations-retail-statements.md
+- name: Arvonlisävero
+  items:
+    - name: Arvonlisäveron yleiskatsaus
+      href: ../financials/general-ledger/indirect-taxes-overview.md
+    - name: Arvonlisäveron laskentatavat Alkuperä-kentässä
+      href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+    - name: Arvonlisäveron määrittäminen ja ohitukset
+      href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
+    - name: Arvolisäverokoodien koko summan ja välin laskentavaihtoehdot
+      href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Puhelinpalvelukeskus
+  items:
+    - name: Puhelupalvelukeskuksen myyntitoiminnot
+      href: call-center-functionality.md
+    - name: Puhelinpalvelukeskuksen luettelot
+      href: call-center-catalogs.md
+    - name: Toimitustapojen ja -kulujen määrittäminen
+      href: configure-call-center-delivery.md
+    - name: Petoshälytysten määrittäminen ja käyttäminen
+      href: set-up-fraud-alerts.md
+    - name: Puhelinkeskuskanavien määrittäminen
+      href: set-up-order-processing-options.md
+    - name: Jatkuvuusohjelmien määrittäminen puhelinkeskuksille
+      href: set-up-continuity-program.md
+    - name: Puhelinkeskustilauksen pidon määrittäminen ja käyttäminen
+      href: work-with-order-holds.md
+    - name: Maksutavat
+      href: work-with-payments.md
+- name: Kanavan määrittäminen ja hallinta
+  items:
+    - name: Alkutietojen alustaminen uusissa Retail-ympäristöissä
+      href: enable-configure-retail-functionality.md
+    - name: Vähittäismyyntikanavien määrittäminen ja ylläpitäminen
+      href: define-maintain-retail-channels.md
+    - name: Valikoiman hallinta
+      href: assortments.md
+    - name: Verkkokauppojen määrittäminen
+      href: online-stores.md
+    - name: Retail hardware stationin määrittäminen ja asentaminen
+      href: retail-hardware-station-configuration-installation.md
+    - name: Työajan seuranta Retail-sovelluksessa
+      href: retail-time-attendance.md
+- name: Modern Point of Sale (MPOS) ja pilvimyyntipiste
+  items:
+    - name: 'MPS:n tai pilvimyyntipisteen valitseminen'
+      href: MPOS-or-CPOS.md
+    - name: Myyntipistetoiminnot verkossa ja paikallisesti
+      href: pos-operations.md
+    - name: 'Retail Modern POS:n laiteaktivointi'
+      href: dev-itpro/retail-POS-activation-changes.md
+    - name: 'MPOS:n ja Cloud POS:n demotietojen näyttöasettelut'
+      href: demo-data.md
+    - name: 'Tuote- ja asiakashaku POS:ssä'
+      href: POS-search-improvements.md
+    - name: Varastohaku myyntipisteessä
+      href: product-variants-POS.md
+    - name: Laitteiston oheislaitteet
+      items:
+        - name: Vähittäismyynnin oheislaitteet
+          href: retail-peripherals-overview.md
+        - name: Vähittäismyynnin oheislaitesimulaattori
+          href: dev-itpro/retail-peripheral-simulator.md
+        - name: Oheislaitteiden yhdistäminen myyntipisteeseen
+          href: define-maintain-channel-clients-registers-hw-stations.md
+    - name: Näytön asettelut
+      items:
+        - name: POS-näyttöasettelut
+          href: pos-screen-layouts.md
+        - name: 'Retail POS:n asettelun suunnittelutoiminnon asentaminen'
+          href: install-pos-layout-designer.md
+        - name: Ilmoitusasetusten valitseminen
+          href: Notifications-POS.md
+        - name: POS-sovellus ja käyttäjän kielialueasetukset
+          href: pos-application-user-language-settings.md
+        - name: 'MPOS:n kuvien määrittäminen ja hallinta'
+          href: set-up-manage-images-retail-mpos.md
+    - name: Tietokoodit ja tietokoodiryhmät
+      href: info-codes-retail.md
+    - name: Sarjoitettujen tuotteiden parannukset myyntipisteessä
+      href: serialized-inventory.md
+    - name: Tuotesuositukset
+      items:
+        - name: Kohdennetut tuotesuositukset
+          href: personalized-product-recommendations.md
+        - name: Suositusten ohjausobjektin lisääminen myyntipistelaitteisiin
+          href: add-recommendations-control-pos-screen.md
+    - name: Myyntipisteen offline-toiminnot
+      href: pos-offline-functionality.md
+    - name: Vuoron- ja kassanhallinta
+      href: shift-drawer-management.md
+    - name: Asiakastilaukset
+      items:
+        - name: 'MPOS:n asiakastilaukset'
+          href: customer-orders-overview.md
+        - name: Asiakkaiden yhdistelmätilaukset
+          href: hybrid-customer-orders.md
+    - name: Myyjät
+      items:
+        - name: 'Provisioiden seuranta POS:ssä myyntiryhmien avulla'
+          href: pos-sales-groups-track-commissions.md
+    - name: Tilausten lähettäminen toisesta myymälästä
+      href: charge-send.md
+    - name: Laitteen aktivointi
+      items:
+        - name: 'MPOS:n määrittäminen, asettaminen ja aktivoiminen'
+          href: retail-modern-pos-device-activation.md
+        - name: Laajennetun MPOS- ja pilvimyyntipistekirjautumisen määrittäminen
+          href: extended-logon.md
+        - name: Retail-aktivointitilien hallinta ja laitteiden vahvistaminen
+          href: set-up-activation-accounts-validate-devices-hq.md
+    - name: Kuitit
+      items:
+        - name: Kuittimuotojen määrittäminen ja suunnitteleminen
+          href: receipt-templates-printing.md
+        - name: 'Sähköpostikuittien lähettäminen MPOS:stä'
+          href: email-receipts.md
+    - name: 'MPOS:n ja pilvimyyntipisteen tehtävien tallennustoiminto sekä ohje'
+      href: task-recorder-retail-pos.md
+- name: Tilauksen täyttäminen
+  items:
+    - name: Myymälätilauksen täyttäminen
+      href: Order-fulfillment-overview.md
+    - name: Tilauksen täyttämisen määrittäminen myymälöille
+      href: Order-fulfillment-POS-setup.md
+    - name: 'Tilausilmoitusten näyttäminen POS:ssä'
+      href: Notifications-POS.md
+- name: Palautustilauksen vaihdon määritys ja käsittely
+  href: orderexchanges.md
+- name: Seuranta ja analyysi
+  items:
+    - name: Myynnin ja katteen kehittymisen seuranta
+      href: monitor-sales-margin-performance.md
+    - name: Myyntitrendien ja -mallien analysointi
+      href: analyze-sales-trends-patterns.md
+    - name: Myynnin suorituksen tuotekohtainen arviointi
+      href: sales-performance-products.md
+    - name: Asiakkaiden ja tuotteiden kannattavuuden arviointi
+      href: assess-customer-product-profitability.md
+    - name: Myymälän tuoton analysointi
+      href: store-performance-information.md
+    - name: 'RFM-analyysin (äskettäisyys, toistuvuus ja rahallinen arvo) määrittäminen'
+      href: set-up-rfm-analysis.md
+- name: Alennukset ja hinnanoikaisut
+  items:
+    - name: Vähittäismyynnin alennukset
+      href: retail-discounts-overview.md
+    - name: Vähittäismyyntihintojen hallinta
+      href: price-management.md
+    - name: Hinnanoikaisut ja alennukset
+      href: price-adjustments-discounts.md
+    - name: Useiden vähittäismyyntialennusten käyttäminen tuotteeseen
+      href: Apply-multiple-retail-discounts.md
+    - name: Optimaalisen päällekkäisten alennusten yhdistelmän määrittäminen
+      href: optimal-combination-overlapping-discounts.md
+    - name: Kanavakohtaisten alennusten määrittäminen
+      href: define-channel-specific-discounts.md
+    - name: Vähittäismyyntituotteiden alennusten estämisasetukset
+      href: prevent-discounts.md
+    - name: Vähittäismyynnin kuponkien määrittäminen
+      href: retail-coupons.md
+- name: Tuotteet ja esillepano
+  items:
+    - name: Tuotetietojen yleiskatsaus
+      href: ../supply-chain/pim/product-information.md
+    - name: Retail-hierarkiat
+      href: retail-hierarchies.md
+    - name: Määritteet ja määriteryhmät
+      href: attribute-attributegroups-lifecycle.md
+    - name: Määritteiden luonti ja hallinta
+      href: create-manage-attributes.md
+    - name: Vähittäismyyntituotteiden määrittäminen
+      href: set-up-retail-products.md
+    - name: Retail-tuoteluokkien ja tuotteiden hallinta
+      href: category-management-product-creation.md
+    - name: Tuotedimensiot
+      href: ../supply-chain/pim/product-dimensions.md
+    - name: Viivakoodien määrittäminen
+      href: set-up-bar-codes.md
+    - name: Viivakoodin muotojen määrittäminen
+      href: set-up-bar-code-masks.md
+    - name: Valikoimien määrittäminen
+      href: set-up-assortments.md
+    - name: Myymälän valikoimaan sisältymättömien tuotteiden myynti ja palauttaminen
+      href: sell-return-outside-assortments.md
+    - name: Dimensioiden ja tuotevarianttien oletustilausasetukset
+      href: ../supply-chain/production-control/default-order-settings.md
+    - name: Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana
+      href: ../supply-chain/pim/search-products-product-variants.md
+- name: Kanta-asiakkuus
+  items:
+    - name: Kanta-asiakkuuden yleiskatsaus
+      href: set-up-customer-loyalty-program.md
+- name: Varasto
+  items:
+    - name: Myymälän varastonhallinta
+      href: work-with-store-inventory.md
+    - name: Sarjanumeroiden rekisteröinti myyntiprosessissa
+      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
+    - name: Varastokirjauskansiot
+      href: ../supply-chain/inventory/inventory-journals.md
+    - name: Varaston tunnisteiden inventointi
+      href: ../supply-chain/inventory/inventory-tag-counting.md
+    - name: FIFO sekä fyysinen arvo ja merkintä
+      href: ../supply-chain/cost-management/fifo-physical-value-marking.md
+    - name: LIFO-päivämäärä sekä fyysinen arvo ja merkintä
+      href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md
+    - name: LIFO sekä fyysinen arvo ja merkintä
+      href: ../supply-chain/cost-management/lifo-physical-value-marking.md
+    - name: Painotetun keskiarvon päivämäärä
+      href: ../supply-chain/cost-management/weighted-average-date.md
+    - name: Painotettu keskiarvo sekä fyysinen arvo ja merkintä
+      href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md
+    - name: Karanteenitilaukset
+      href: ../supply-chain/inventory/quarantine-orders.md
+    - name: Juokseva keskimääräinen kustannushinta
+      href: ../supply-chain/cost-management/running-average-cost-price.md
+    - name: Varastodimensiokohtaisen juoksevan keskimääräisen kustannuksen seuranta
+      href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+- name: Henkilöstöhallinto
+  items:
+    - name: 'Työvoiman järjestäminen osastojen, töiden ja toimien avulla'
+      href: ../talent/departments-jobs-positions.md
+    - name: Työn komponenttien määrittäminen
+      href: ../talent/create-job.md
+- name: Lokalisointi- ja säädösominaisuudet
+  items:
+    - name: Vähittäismyyntikanavan kirjanpidon integrointi
+      href: localizations/fiscal-integration-for-retail-channel.md
+    - name: Itä-Eurooppa
+      items:
+        - name: Retail-ennakkolaskut Itä-Eurooppaa varten
+          href: localizations/emea-eeu-advance-invoices-for-retail.md
+        - name: Retail-käteisvarojen hallinta Itä-Eurooppaa varten
+          href: localizations/emea-eeu-petty-cash-for-retail.md
+        - name: Retail-myyntilaskut ja palautuksen myyntitilaukset Itä-Euroopan maissa
+          href: localizations/emea-eeu-retail-invoices.md
+        - name: 'Kassakoneiden käyttöönotto-ohjeet Tšekin tasavallassa, Unkarissa ja Puolassa'
+          href: localizations/emea-eeu-deployment.md
+    - name: Ranska
+      items:
+        - name: Kassakonetoiminnot
+          href: localizations/emea-fra-cash-registers.md
+        - name: Käyttöönotto-ohjeet kassakoneille
+          href: localizations/emea-fra-deployment.md
+    - name: Intia
+      items:
+        - name: Arvonlisäveron (GST) integrointi kassakoneisiin
+          href: localizations/apac-ind-cash-registers.md
+        - name: Käyttöönotto-ohjeet kassakoneille
+          href: localizations/apac-ind-loc-deployment-guidelines.md
+        - name: "Päivitys- ja\_N-1-tuki Intiaa varten"
+          href: localizations/apac-ind-n-1-for-india.md
+    - name: Italia
+      items:
+        - name: Kuittitulostimen integrointi
+          href: localizations/emea-ita-fpi-sample.md
+    - name: Norja
+      items:
+        - name: Kassakonetoiminnot
+          href: localizations/emea-nor-cash-registers.md
+        - name: Käyttöönotto-ohjeet kassakoneille
+          href: localizations/emea-nor-loc-deployment-guidelines.md
+    - name: Ruotsi
+      items:
+        - name: Kassakonetoiminnot
+          href: localizations/emea-swe-cash-registers.md
+        - name: 'Retail POS -integrointimalli, jossa on tarkistusyksiköt'
+          href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+- name: Retail-tehtävät
+  items:
+    - name: Luo tuote
+      href: ../supply-chain/pim/tasks/create-product.md
+    - name: Linkitettyjen tuotteiden määrittäminen
+      href: ../supply-chain/pim/tasks/configure-linked-products.md
+    - name: Tuotteen/päätuotteen vapauttaminen yrityksille
+      href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
+    - name: Kanavakohtaisten kauppasopimusten luominen
+      href: tasks/base-price-trade-agreements.md
+    - name: Kauppasopimusten luominen luokan hinnoittelusääntöjen avulla
+      href: tasks/category-pricing-rules-trade-agreements.md
+    - name: Luottokorttien käsittelyn määrittäminen
+      href: tasks/configure-credit-card-processing.md
+    - name: Myyntiedustajien toimintoprofiilien määrittäminen
+      href: tasks/configure-functionality-profile-sales-representative.md
+    - name: Automaattisten tuotesuositusten määrittäminen
+      href: tasks/configure-machine-learning-product-recommendations.md
+    - name: Laitteiden luominen ja liittäminen kassakoneisiin
+      href: tasks/create-associate-device.md
+    - name: Hardware Station -asemien luominen
+      href: tasks/create-associate-hardware-station.md
+    - name: Myyntipisteen kassapäätteiden luominen
+      href: tasks/create-associate-registers.md
+    - name: Puhelinkeskustilausten luominen
+      href: tasks/create-call-center-orders.md
+    - name: Taloushallinnon dimensioiden luominen myyntipisteen kassapäätteille ja dimensioarvojen määrittäminen kassapäätteillä
+      href: tasks/create-financial-dimensions-pos.md
+    - name: Taloushallinnon dimensioiden luominen vähittäismyyntikanaville ja dimensioarvojen määrittäminen myymälöille
+      href: tasks/create-financial-dimensions-retail-channels.md
+    - name: Online-kanavien luominen ja kanavamääritteiden määrittäminen
+      href: tasks/create-online-channel-define-channel-attributes.md
+    - name: Myyntipisteen käyttöoikeusryhmien luominen
+      href: tasks/create-pos-permission-groups.md
+    - name: Myyntipisteen visuaalisten profiilien luominen
+      href: tasks/create-pos-visual-profile-2016-02.md
+    - name: Tuotepakkausten luominen ostotilauksille
+      href: tasks/create-product-packages-purchase-orders.md
+    - name: Puhelinkeskuskanavien luominen ja kanavamääritteiden määrittäminen
+      href: tasks/define-call-center-channel-channel-attributes.md
+    - name: Kanavamääritteiden määrittäminen
+      href: tasks/define-channel-attributes.md
+    - name: Jatkuvuusaikataulujen määrittäminen
+      href: tasks/define-continuity-schedules.md
+    - name: Määritä kanta-asiakasohjelmat
+      href: tasks/define-loyalty-programs.md
+    - name: Määritä kanta-asiakkaan palkkiopisteet
+      href: tasks/define-loyalty-reward-points.md
+    - name: Määritä kanta-asiakasmallit
+      href: tasks/define-loyalty-schemes.md
+    - name: Organisaatioyksiköiden välisten suhteiden suunnittelu
+      href: tasks/design-relationships-between-organizational-units.md
+    - name: Valikoimien hallinta
+      href: tasks/manage-assortments-2016-11.md
+    - name: Hardware Station -asemien lataaminen itsepalvelutoiminnon avulla
+      href: tasks/perform-self-service-download-hardware-station.md
+    - name: Online-myyntien ja maksujen kirjaaminen
+      href: tasks/posting-online-sales-payments.md
+    - name: Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely
+      href: tasks/process-loyalty-reward-point-adjustments.md
+    - name: Tuotteiden siirtäminen jakelukeskuksista myymälään ostotarjonnan avulla
+      href: tasks/push-products-distribution-center-store-buyers-push.md
+    - name: Vähittäismyynnin hinnanoikaisujen luominen
+      href: tasks/retail-price-adjustments.md
+    - name: Valmiiden raporttien luominen ja suorittaminen
+      href: tasks/run-out-box-reports.md
+    - name: Sääntöjen ja parametrien määrittäminen cross-dockingille ja ostotarjonnalle
+      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+    - name: Jatkuvuusohjelmien myyminen ja myyntitilausten käsitteleminen
+      href: tasks/use-continuity-program.md
+    - name: Vähittäismyynnin työntekijöiden määrittäminen
+      href: tasks/worker.md
+- name: Retail-kehitys ja hallinta
+  href: dev-itpro/dev-retail-home-page.md
+  items:
+    - name: Arkkitehtuuri
+      items:
+        - name: Retail-komponentit
+          href: retail-components.md
+        - name: Retail Server -arkkitehtuuri
+          href: dev-itpro/retail-server-architecture.md
+        - name: Commerce Data Exchange ja vähittäismyyntikanavan viestintä
+          href: dev-itpro/define-retail-channel-communications-cdx.md
+        - name: Retail Modern POS -arkkitehtuuri
+          href: dev-itpro/retail-modern-pos-architecture.md
+        - name: Vähittäismyynnin verkkokaupan julkaisuarkkitehtuuri
+          href: dev-itpro/retail-online-store-publishing-architecture.md
+        - name: Retail Channel Performance Power BI -sisältö
+          href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
+        - name: PA-DSS-sertifikaatti (maksusovelluksen tietoturvastandardi)
+          href: dev-itpro/PA-DSS-Certification.md
+        - name: Paikallisten ympäristöjen Retail-ominaisuudet
+          href: retail-onprem.md
+    - name: Käyttöönotto ja hotfix-korjaukset
+      items:
+        - name: Retail Store Scale Unit
+          href: dev-itpro/retail-store-system-begin.md
+        - name: Retail Store Scale Unitin määrittäminen ja asentaminen
+          href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: 'Retail Modern POS:n määrittäminen ja asentaminen'
+          href: retail-modern-pos-device-activation.md
+        - name: Retail-tilien ja -laitteiden hallinta pääkonttorista
+          href: set-up-activation-accounts-validate-devices-hq.md
+        - name: Retail POS -laitteen aktivointi
+          href: dev-itpro/retail-device-activation.md
+        - name: Pilvimyyntipisteen suojaaminen jaetuissa ympäristöissä
+          href: dev-itpro/secure-retail-cloud-pos.md
+        - name: Retail Hardware Stationin määrittäminen ja asentaminen
+          href: retail-hardware-station-configuration-installation.md
+        - name: Retail-itsepalvelukomponenttien joukkokäyttöönotto
+          href: dev-itpro/retail-mass-deployment.md
+        - name: Retail-komponenttien diagnostiikka- ja vianmääritystapahtumat
+          href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
+        - name: Käyttöönotettavan paketin käyttäminen
+          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
+    - name: Päivitys ja N-1-tuki
+      items:
+        - name: Retailin päivitys ja N-1 tuki
+          href: dev-itpro/overview-upgrade-n-minus1.md
+        - name: 'Vaiheittain tapahtuvan käyttöönoton (N-1) asentaminen, määrittäminen ja käyttöön siirtyminen'
+          href: dev-itpro/n-1-installation-configuration.md
+    - name: Käyttöönotto-ohje
+      items:
+        - name: Laitehallinnan käyttöönotto-ohje
+          href: implementation-considerations-devices.md
+    - name: Ympäristön konfiguraatio
+      items:
+        - name: Linkkien lisääminen organisaation juridisiin ehtoihin ja tietosuojatietoihin
+          href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
+        - name: Bing Mapsin hallinta
+          href: dev-itpro/manage-bing-maps.md
+    - name: Lokalisoi Retail-laajennuksen resurssit ja etikettitiedostot
+      href: dev-itpro/extension-resource-localization.md
+    - name: Myyntipisteen laajennettavuus
+      items:
+        - name: 'Retail POS:n näyttöasettelut'
+          href: pos-screen-layouts.md
+        - name: 'URL-osoitteen avaaminen POS:ssä'
+          href: Open-URL-in-POS.md
+        - name: 'POS:n asettelun suunnittelutoiminnon asentaminen'
+          href: install-pos-layout-designer.md
+        - name: Retail Modern POS offline-tilassa
+          href: dev-itpro/retail-modern-pos-offline.md
+        - name: POS Dual -näytön näkymän laajentaminen
+          href: dev-itpro/pos-dual-display-extension.md
+        - name: 'Retail Modern POS:n ja pilvimyyntipisteen käynnistyksen laajennettavuus'
+          href: dev-itpro/modern-pos-trigger-extensibility.md
+        - name: Mukautettujen ohjausobjektien lisääminen myyntipistenäkymiin
+          href: dev-itpro/pos-custom-control.md
+        - name: Myyntipistetoimintojen lisääminen myyntipisteasetteluihin käyttämällä painikeruudukon suunnittelutoimintoa
+          href: dev-itpro/add-POS-operations.md
+        - name: Retail POS -ohjelmointirajapinnat
+          href: dev-itpro/POS-APIs.md
+        - name: Myyntipisteen maksulaajennus
+          href: dev-itpro/pos-payment-extension.md
+        - name: Ulkoisten lahjakorttien tuki
+          href: dev-itpro/gift-card.md
+        - name: Brändäyksen luominen ja käyttäminen Retail Experience -sovelluksessa
+          href: dev-itpro/create-retail-experience-app.md
+        - name: 'POS Hybrid -sovelluksen määrittäminen Androidissa ja iOS:ssa'
+          href: dev-itpro/hybridApp.md
+        - name: Ohita POS-pyynnön käsittely
+          href: dev-itpro/pos-handler.md
+    - name: Hardware Station ja laajennettavuus
+      href: dev-itpro/hardware-station-extensibility.md
+    - name: Retail Serverin laajennettavuus
+      items:
+        - name: Retail Server OData -ohjaimen laajentaminen
+          href: dev-itpro/extend-retail-server-odata-controller.md
+        - name: Retail Serverin WWW-ohjelmointirajapinnan ohjaimen luominen
+          href: dev-itpro/odata-controllers-api.md
+        - name: Retail Serverin asiakkaan ja kuluttajan ohjelmointirajapinnat
+          href: dev-itpro/retail-server-customer-consumer-api.md
+        - name: Oletusarvoisen Retail Server -metatietojen ohjaimen laajentaminen
+          href: dev-itpro/extend-metadata.md
+        - name: CRT-palveluun soittaminen offline-tilassa
+          href: dev-itpro/call-crt-service-offline.md
+    - name: Commerce runtime (CRT) -laajennettavuus
+      items:
+        - name: 'CRT:n arkkitehtuuri ja määrittäminen'
+          href: dev-itpro/commerce-runtime-overview.md
+        - name: CRT-palvelut
+          href: dev-itpro/crt-services.md
+        - name: 'CRT:n ja Retail Serverin laajennettavuus'
+          href: dev-itpro/commerce-runtime-extensibility.md
+        - name: Asiakkaan valintatietojen lisääminen kanavatietokantaan
+          href: dev-itpro/add-customer-preference-channel.md
+        - name: Ominaisuuksien lisääminen myyntitilauksiin
+          href: dev-itpro/add-properties-sales-order.md
+        - name: 'CRT:n laajennettavuus ja käynnistimet'
+          href: dev-itpro/commerce-runtime-extensibility-trigger.md
+        - name: Tapahtumien estäminen käynnistimien avulla
+          href: dev-itpro/trigger-example-blocking-transaction.md
+        - name: Palautuskäytännön toteuttaminen käynnistimien avulla
+          href: dev-itpro/trigger-example-return-policy.md
+    - name: Sähköisen kaupankäynnin laajennettavuus
+      items:
+        - name: Verkkokauppojen määrittäminen
+          href: dev-itpro/configure-online-store.md
+        - name: Todennuspalvelujen määrittäminen
+          href: dev-itpro/configure-authentication-providers.md
+        - name: Sähköinen kaupankäyntiympäristö
+          href: dev-itpro/ecommerce-platform.md
+        - name: Sähköisen kaupankäyntiympäristön SDK
+          href: dev-itpro/ecommerce-platform-sdk.md
+    - name: Maksuyhdistimen laajennettavuus
+      items:
+        - name: Maksun integroinnin luominen maksupäätteelle
+          href: dev-itpro/end-to-end-payment-extension.md
+        - name: Maksuyhdistimen ja maksulaitteen käyttöönotto (tulostettava ohje)
+          href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
+        - name: Maksuyhdistimien käyttöönotto
+          href: dev-itpro/deploy-payment-connector.md
+        - name: Mukautettujen lokalisoitujen virhesanomien luominen maksupäätteiden laajennuksille
+          href: dev-itpro/payment-custom-error-messages.md
+        - name: Windows-asennusohjelmien luominen maksuyhdistimille
+          href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Maksutietojen käyttö
+          href: payment-connector-data-fields.md
+    - name: Retail SDK
+      href: dev-itpro/retail-sdk/retail-sdk-overview.md
+      items:
+        - name: 'Retail SDK:n tulevat muutokset'
+          href: dev-itpro/UpcomingSDKChanges.md
+        - name: Retail- ja Finance and Operations -koontiversiojärjestelmien yhdistäminen
+          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+        - name: 'Retail SDK:n laajennettavuusmallit'
+          href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+        - name: Käyttöönotettavien Retail-pakettien luominen
+          href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+        - name: Retail SDK -mallit
+          href: dev-itpro/retail-sdk/retail-sdk-samples.md
+          items:
+            - name: Pakkausluetteloiden laajennuspisteet
+              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Kanavatietokannan laajennukset
+          href: dev-itpro/channel-db-extensions.md
+        - name: Mukautetun CDX-synkronoinnin käyttöönotto laajennuksen kautta
+          href: dev-itpro/cdx-extensibility.md
+        - name: 'Mukautettujen kenttien lisääminen POS:n Summat-ruutuun'
+          href: dev-itpro/custom-field-pos-totals.md
+        - name: Tilausmääritteiden määrittäminen ja asettaminen
+          href: dev-itpro/order-attributes.md
+        - name: Asiakkaan määritteet
+          href: dev-itpro/customer-attributes.md
+        - name: 'Retail Typescript ja C# proxy'
+          href: dev-itpro/typescript-proxy-retail-pos.md
+        - name: Retail POS -mallien suorittaminen
+          href: dev-itpro/pos-run-samples.md
+        - name: Myyntipistenäkymien laajentaminen lisäämällä mukautettuja sarakkeita ja sovelluspalkin painikkeita
+          href: dev-itpro/pos-view-extension.md
+        - name: Mukautettujen ohjausobjektien lisääminen Retail Modern POS -tapahtumasivuille
+          href: dev-itpro/pos-custom-transaction.md
+        - name: Mukautettujen sarakkeiden lisääminen myyntipisteen tapahtumaruudukkoon
+          href: dev-itpro/pos-custom-transaction-column.md
+        - name: POS-ohjelmointirajapintojen tai -toimintojen kutsuminen POS-laajennuksista
+          href: dev-itpro/pos-api-extension.md
+        - name: 'Retail Modern POS:n käynnistimet ja tulostaminen'
+          href: dev-itpro/pos-trigger-printing.md
+        - name: Mukautettujen ohjausobjektien lisääminen muihin kuin näytön suunnitteluohjelmiin perustuviin myyntipistenäkymiin
+          href: dev-itpro/pos-control-non-screen.md
+        - name: Kehittäminen pilvi-isännöidyissä kehitysympäristöissä ilman järjestelmänvalvojan oikeuksia
+          href: dev-itpro/cloud-dev-box.md
+    - name: Commerce runtime
+      items:
+        - name: Kanta-asiakaslaajennus
+          href: dev-itpro/retail-sdk/loyalty-extension-sample.md
