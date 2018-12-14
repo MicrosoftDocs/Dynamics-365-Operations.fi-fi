@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -164,13 +164,23 @@ Lisätietoja uuden sähköisen raportointipalvelun rekisteröimisestä on tehtä
 
 #### <a name="repository"></a>Säilö
 
-Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säilöön. Tällä hetkellä tuetaan kahta sähköisen raportointisäilön tyyppiä: **Operatiiviset resurssit** ja **LCS-projekti**.
+Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säilöön. Tällä hetkellä tuetaan neljää ER-säilöä: **Operatiiviset resurssit**, **LCS-projektit (LCS)**, **Tiedostojärjestelmä** ja **Sääntöjen konfigurointipalvelu (RCS)**.
 
 **Operatiivisten resurssien** säilö antaa mahdollisuuden käyttää määritysluetteloa, jonka Microsoft sähköisen raportoinnin määrityspalveluna julkaisee Finance and Operations -ratkaisun osana. Nämä määritykset voidaan tuoda nykyiseen Finance and Operationsin esiintymään ja niitä voidaan käyttää sähköisessä raportoinnissa. Niitä voidaan käyttää myös muissa lisälokalisoinneissa ja -mukautuksissa.
 
 **LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin säilön rekisteröintivaiheessa. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä Finance and Operationsin esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen Finance and Operationsin esiintymään.
 
-Vaaditut **LCS-projektin** säilöt voidaan rekisteröidä erikseen kullekin nykyisen Finance and Operationsin esiintymän määrityspalvelulle. Kukin säilö voidaan osoittaa tiettyyn määrityspalveluun.
+**Tiedostojärjestelmä**-säilössä on luettelo määrityksistä, jotka sijaitsevat xml-tiedostoina tietyssä sellaisen paikallisen laitteen tietojärjestelmän kansiossa, joka isännöi AOS-palvelua. Tarvittava kansio valitaan säilön rekisteröintivaiheessa. Voit tuoda määrityksiä **Tiedostojärjestelmä**-säilöstä nykyiseen Finance and Operationsin esiintymään. Huomaa, että tätä säilötyyppiä voi käyttää seuraavista Dynamics 365 for Finance and Operations -ympäristöistä:
+- kehitystyötä varten käyttöönotetut pilvipalveluympäristöt (jotka sisältävät liitettyjen pakettien testimalleja)
+- paikallisesti käyttöönotetut ympäristöt (paikallinen yritystietojen käyttöönotto (LBD))
+
+Sivulla [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti](/electronic-reporting-import-ger-configurations.md) on lisätietoja.
+
+**LCS-esiintymän** säilössä on tietyn RCS-esiintymän määritysluettelo, joka valittiin säilön rekisteröintivaiheessa. Sähköisen raportoinnin ansiosta voit tuoda valmiita tai jaettuja määrityksiä valitusta RCS-esiintymästä nykyiseen Finance and Operations -esiintymään sähköistä raportointia varten.
+
+Sivulla [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti sääntöjen konfigurointipalvelusta (RCS)](/rcs-download-configurations.md) on lisätietoja.
+
+Tarvittavat **LCS-projekti**-, **Tiedostojärjestelmä**- ja **Sääntöjen konfigurointipalvelu (RCS)** -säilöt voidaan rekisteröidä erikseen kullekin nykyisen Finance and Operations -esiintymän määrityspalvelulle. Kukin säilö voidaan osoittaa tiettyyn määrityspalveluun.
 
 ## <a name="supported-scenarios"></a>Tuetut skenaariot
 ### <a name="building-a-data-model"></a>Tietomallin rakentaminen

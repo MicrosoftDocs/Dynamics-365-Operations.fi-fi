@@ -3,7 +3,7 @@ title: "Pääsuunnittelun aloitussivu"
 description: "Pääsuunnittelun avulla yritykset voivat määrittää tulevan raaka-aineiden ja kapasiteetin tarpeen ja tasapainottaa ne yrityksen tavoitteita vastaaviksi."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -58,13 +58,13 @@ Seuraavassa oppimiskartassa on esillä tärkeitä käsitteitä ja tehtäviä, jo
 
 ## <a name="quick-links"></a>Pikalinkit
 
-|      |   |
-|------|---|
-|        [Pääsuunnitelmat](master-plans.md)       |     [Rajoitetun suunnitelman luominen](./tasks/constrained-plan.md)  |
-| [Oheistuotteiden materiaalisuunnitelman luominen](./tasks/create-material-plan-co-products.md)   |  [Pääsuunnittelu ja multisite-toiminnot](master-plan-multisite-functionality.md)  |
-| [Konsernin sisäisen suunnitelman luominen](./tasks/create-intercompany-plan.md) | [Kysynnän ennustepalveluiden yleiskatsaus](introduction-demand-forecasting.md)  | 
-|[Vähennysavaimet](reduction-keys.md)| [Pääsuunnittelua koskevat tärkeät seikat](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (eLearning) (vaatii CustomerSource-tilin)     |
-|  [Prosessivalmistuksen pääsuunnittelu](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (eLearning) (vaatii CustomerSource-tilin) | [Konsernin sisäinen pääsuunnittelu](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (vaatii CustomerSource-tilin)|
+- [Pääsuunnitelmat](master-plans.md)  
+- [Rajoitetun suunnitelman luominen](./tasks/constrained-plan.md)
+- [Oheistuotteiden materiaalisuunnitelman luominen](./tasks/create-material-plan-co-products.md)
+- [Pääsuunnittelu ja multisite-toiminnot](master-plan-multisite-functionality.md)
+- [Konsernin sisäisen suunnitelman luominen](./tasks/create-intercompany-plan.md)
+- [Kysynnän ennustepalveluiden yleiskatsaus](introduction-demand-forecasting.md)
+- [Vähennysavaimet](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Lisäresurssit
 
