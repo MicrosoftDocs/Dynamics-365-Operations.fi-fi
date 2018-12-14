@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
-ms.openlocfilehash: 70a7a1f7d7a8221a72addfbee1d21f813df4eb46
+ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
+ms.openlocfilehash: 946076d682a10becdc2c4a8baff7f52de7893119
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 # <a name="audit-invoices-and-key-data-in-ap-system"></a>Laskujen ja avaintietojen tarkistaminen ostoreskontrajärjestelmässä
@@ -35,34 +35,31 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF. Nämä vaiheet s
 
 
 ## <a name="create-a-purchase-order"></a>Luo ostotilaus
-1. Siirry Kaikki ostotilaukset -kohtaan.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Toimittajan tili -kentässä avattavan valikon painike.
-4. Kirjoita arvo Toimittajan tili -kenttään.
-5. Valitse OK.
-6. Valitse Lisää rivi.
-7. Kirjoita arvo Nimiketunnus-kenttään.
-8. Valitse toimintoruudussa Osta.
-9. Valitse Vahvista.
+1. Valitse **Kaikki ostotilaukset**.
+2. Valitse **Uusi**.
+3. Kirjoita arvo **Toimittajan tili** -kenttään.
+4. Napsauta **OK**.
+5. Valitse **Lisää rivi**.
+6. Kirjoita arvo **Nimiketunnus**-kenttään.
+7. Valitse toimintoruudussa **Osto**.
+8. Valitse **Vahvista**.
 
 ## <a name="post-a-product-receipt"></a>Tuotteen vastaanoton kirjaaminen
-1. Valitse toimintoruudussa Vastaanota.
-2. Valitse Tuotteen vastaanotto.
-3. Merkitse valittu rivi luettelossa.
-4. Kirjoita arvo Tuotteen vastaanotto -kenttään.
-5. Valitse OK.
+1. Valitse toimintoruudussa **Vastaanota**.
+2. Valitse **Tuotteen vastaanotto**.
+3. Kirjoita arvo **Tuotteen vastaanotto** -kenttään.
+4. Napsauta **OK**.
 
 ## <a name="record-and-match-a-vendor-invoice-to-a-product-receipt"></a>Toimittajan laskun tallentaminen ja täsmäyttäminen tuotteen vastaanoton kanssa
-1. Valitse toimintoruudussa Lasku.
-2. Valitse Lasku.
-3. Kirjoita arvo Numero-kenttään.
-4. Valitse Oletusarvo kohteesta: Tilattu määrä, kun haluat avata valintaikkunan.
-5. Valitse vaihtoehto Rivien oletusmäärä -kentässä.
-6. Valitse OK.
-7. Valitse Kyllä.
-8. Valitse Täsmäytä tuotteiden vastaanotot.
-9. Valitse OK.
-10. Valitse toimintoruudussa Tarkista.
-11. Valitse Täsmäytyksen tiedot.
+1. Valitse toimintoruudussa **Lasku > Lasku**.
+2. Kirjoita arvo **Numero**-kenttään.
+3. Avaa valintaikkuna valitsemalla **Oletusarvo kohteesta: Tilattu määrä**.
+4. Valitse vaihtoehto **Rivien oletusmäärä** -kentässä.
+5. Napsauta **OK**.
+6. Valitse **Kyllä**.
+7. Valitse **Täsmäytä tuotteiden vastaanotot**.
+8. Napsauta **OK**.
+9. Valitse toimintoruudussa **Tarkista**.
+10. Valitse **Täsmäytyksen tiedot**.
 
 

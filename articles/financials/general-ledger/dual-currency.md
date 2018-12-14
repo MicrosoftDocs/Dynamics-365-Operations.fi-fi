@@ -17,14 +17,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c026a540fb7d30644d485b6a057c2c46bd7c091d
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
 # <a name="dual-currency"></a>Kaksoisvaluutta
+
+[!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operationsin versiossa 8.1 (lokakuu 2018) käyttöönotetulla toiminnolla raportointivaluutan käyttötarkoitusta voidaan muuttaa ja sitä voidaan käyttää toisena kirjanpitovaluuttana. Tätä toimintoa kutsutaan *kaksoisvaluutaksi*. Kaksoisvaluuttamuutoksia ei voi poistaa käytöstä määritysavaimella tai parametrilla. Koska raportointivaluuttaa käytetään toisena kirjanpitovaluuttana, raportointivaluutan laskentatapa kirjauslogiikassa on muuttunut.
 
@@ -67,8 +69,8 @@ Seuraavat moduulit käyttävät raportointivaluuttaa toisena kirjanpitovaluuttan
 
 - [Kirjanpito](#general-ledger)
 - [Talousraportointi](#financial-reporting)
-- [Ostoreskontra](#accounts-payable/accounts-receivable)
-- [Myyntireskontra](#accounts-payable/accounts-receivable)
+- [Ostoreskontra](#accounts-payable-and-accounts-receivable)
+- [Myyntireskontra](#accounts-payable-and-accounts-receivable)
 - [Maksuliikenteen hallinta](#cash-and-bank-management)
 - [Käyttöomaisuuserät](#fixed-assets)
 
@@ -90,7 +92,7 @@ Jos raportointivaluutta määritettiin kirjanpidossa, kirjanpito seurasi jo joka
 
 Muutoksen voi ottaa käyttöön sarakemäärityksen **Valuutan näyttö** -asetuksella. Jos valitset **Raportointivaluutta kirjanpidosta**, sarakkeen summia ei muunneta. Sen sijaan ne raportoidaan suoraan kirjanpidosta. Jos haluat, että muunnetut summat näkyvät sarakkeessa. valitse **Muunna valuutaksi** -asetus, jossa *XXXX* sarakkeessa näkyvä raportointivaluutta. Tässä tapauksessa kirjanpitovaluutan summat muunnetaan valittuun valuuttaan nykyisellä muuntotoiminnolla.
 
-### <a name="accounts-payableaccounts-receivable"></a>Ostoreskontra ja myyntireskontra
+### <a name="accounts-payable-and-accounts-receivable"></a>Ostoreskontra ja myyntireskontra
 
 **Ostoreskontra**- ja **Myyntireskontra**-moduulit seurasivat jo raportointivaluuttasummia. Summia ei kuitenkaan näytetty tai niitä ei käytetty eri prosesseissa. Seuraavat muutokset on tehty:
 

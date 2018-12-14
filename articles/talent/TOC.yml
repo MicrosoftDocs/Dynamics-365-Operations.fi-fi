@@ -7,6 +7,10 @@
         - name: Uudet ja muuttuneet ominaisuudet
           href: whats-new.md
           items:
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (27.11.2018)'
+              href: whats-new-talent-november-27.md
+            - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (15.11.2018)'
+              href: whats-new-talent-november-15.md
             - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (31.10.2018)'
               href: whats-new-talent-october-31.md
             - name: 'Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (19.10.2018)'
@@ -95,8 +99,6 @@
           href: creating-offers.md
         - name: Sähköpostimallien luominen ja hallinta
           href: email-templates.md
-        - name: Raportointi ja analysointi
-          href: Reporting-Analytics-Attract.md
         - name: Käyttöoikeuksien ja roolien hallinta Attractissa
           href: security-attract.md
         - name: Järjestelmänvalvojan asetukset Attractissa
@@ -264,5 +266,29 @@
           href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Tavoitteen luominen
           href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Työsuorituksen arvioinnin luominen
+        - name: Luo suorituskykyarvio
           href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
+    - name: Talentin vianmääritys
+      items:
+        - name: Analyysiraportteja ei päivitetä.
+          href: analytic-reports-not-updated.md
+        - name: PowerApps-hallintakeskuksessa ei voi luoda ympäristöä
+          href: create-envi-powerapps-admin-ctr.md
+        - name: Talent-asiakasohjelma katkaisee yhteyden
+          href: client-disconnects.md
+        - name: Tietokannan varmuuskopioiden käsittely
+          href: database-backups.md
+        - name: Tekstin katkaisun välttäminen toimihierarkiassa ja Visio-viennissä
+          href: avoid-text-truncation-position-hierarchy-visio.md
+        - name: Kompensaatioprosessin suorittaminen
+          href: run-compensation-process.md
+        - name: 'Tehtäväoppaiden tallentaminen LCS:ään sekä niiden toistaminen'
+          href: save-play-task-guides-LCS.md
+        - name: Yksityisten osoitteiden käyttöoikeudet käyttöoikeusroolin mukaan
+          href: security-roles-addresses.md
+        - name: Talent ei näy Microsoft Dynamics 365 -sovellusten yhteydessä (CDS1.0)
+          href: talent-not-in-home-CDS.md
+        - name: 'Käyttäjä voi käyttää Core HR -sovellusta, mutta ei Onboard- tai Attract-sovellusta'
+          href: user-access-core-hr.md
+        - name: Talentin raportointiasetukset
+          href: talent-reporting-options.md

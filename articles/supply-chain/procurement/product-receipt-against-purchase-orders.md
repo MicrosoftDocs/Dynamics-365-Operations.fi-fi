@@ -1,9 +1,9 @@
 ---
 title: Tuotteen vastaanotto ostotilausten perusteella
-description: "Tässä artikkelissa käsitellään tuotteiden vastaanotetuiksi rekisteröinnin asetuksia."
+description: "Tässä ohjeaiheessa käsitellään tuotteiden vastaanotetuiksi rekisteröinnin asetuksia."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
+ms.sourcegitcommit: 09432d278c51301f8b01fef8cbd3353af75a88f3
+ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
 ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/08/2018
 
 [!include [retail name](../includes/retail-name.md)]
 
-Tässä artikkelissa käsitellään tuotteiden vastaanotetuiksi rekisteröinnin asetuksia.
+Tässä ohjeaiheessa käsitellään tuotteiden vastaanotetuiksi rekisteröinnin asetuksia.
 
 Tuotteen vastaanotto on prosessi, joka tallentaa tilatut vastaanotetut tuotteet, jotta ostotilauksen rivit voidaan sitten käsitellä laskutuksessa. Joissakin tapauksissa tuotteet ennakkorekisteröidään, jolloin toimittajan lisätiedot tallennetaan ennen tuotteiden vastaanottoa. Saapuvien tuotteiden tilaksi merkitään ensin **Rekisteröity**. Tuotteiden on sitten ehkä läpäistävä lisäprosesseja, kuten laadun hallintaa, ennen kuin niiden tilaksi merkitään lopuksi **Vastaanotettu**.
 
@@ -46,8 +46,6 @@ Varastoon vastaanotettujen tuotteiden on ehkä läpäistävä laatutarkastus enn
 
 ## <a name="product-receipt"></a>Tuotteen vastaanotto
 Useimmiten ostotilauksen tuotteet merkitään **Vastaanotettu**-tilaan käyttämällä **Ostotilaukset**-sivun **Tuotteen vastaanotto** -toimintoa. **Tuotteen vastaanoton kirjaus** -sivulla on useita asetuksia määrän kirjaamiseen vastaanotetuksi. Voit esimerkiksi määrittää **Määrä**-kentän arvoksi **Tilattu määrä** tai **Vastaanottomäärä nyt**. Jos käytössä on varastoon saapumisprosessi, voit vaihtoehtoisesti määrittää tämän kentän arvoksi **Rekisteröity määrä**. Voit muokata kunkin **Vastaanotettu**-tilaan merkittävän tilausrivien määriä mahdollisia poikkeavuuksia vastaaviksi. Kyse voi olla esimerkiksi liian pienestä tai suuresta toimituksesta. Tuotteen vastaanoton yhteydessä on määritettävä tuotteen vastaanoton tunniste, joka viittaa yleensä toimittajan pakkausluetteloon. Tätä tunnistetta tarvitaan kirjanpidossa, sillä sen avulla voidaan tarkistaa vastaanotot toimittajan pakkausluetteloiden perusteella sekä varaston tai kulun laskennan.  
-
-Jos työntekijä tilasi hyödykkeet ostoehdotuksella, kyseistä työntekijää voidaan pyytää vahvistamaan tuotteen vastaanotto. Tämä toiminto määritetään työnkulun avulla. Voit määrittää työnkulun ehdot vastaamaan liiketoimintaprosesseja.  
 
 Ostotilauksia voidaan luoda tuotteille, joita ei ole tarkoitettu varastoksi mutta joita pidetään kuluna. Tämä luokka sisältää tilausrivit, jossa varastomalliryhmä on merkinnyt tuotteiden tilaksi **Ei varastoita**, ja hankintaluokkia käyttävät rivit. Tässä tapauksessa nimikkeille ei tehdä varastossa saapumisrekisteröintiä ja vastaanottoa. Sen sijaan **Tuotteen vastaanoton** -toiminto kirjaa vastaanoton suoraan ostotilaukseen ja vastaanotto perustuu tilattuun eikä rekisteröityyn määrään.  
 

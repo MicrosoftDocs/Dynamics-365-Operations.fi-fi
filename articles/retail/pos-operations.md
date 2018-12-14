@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
+ms.sourcegitcommit: c9f9368dc3e0fb4ed63250889016d6abe7d15a8c
+ms.openlocfilehash: 557e43c05f7015b04380f45fbd69f58a7250829a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -152,6 +152,7 @@ Huomautus: Alla mainitut toiminnot koskevat Dynamics 365 for Retail -sovelluksen
 | 644 | Poista kuponkikoodi | Käyttäjää pyydetään poistamaan kupongit valitsemalla ne tapahtumaan tällä hetkellä liitetystä kuponkiluettelosta. | Kyllä | Kyllä | En | Kyllä | En |
 | 1 057 | Tulosta Z uudelleen | Tulosta edellisen vuoron tai valitun vuoron Z-raportti. | Kyllä | Kyllä | Kyllä | En | En |
 | 1 216 | Nollaa salasana | Tämän toiminnon avulla salasanan palautuksen käyttöoikeuden omaava käyttäjä voi palauttaa toisen työntekijän salasanan tilapäisen salasanan avulla. | Kyllä | Kyllä | Kyllä | En | En |
+| 1219 | URL-linkin avaaminen POS-sovelluksessa | Käyttäjä voi avata tämän toiminnon avulla järjestelmänvalvojan määrittämän URL-osoitteen POS:ssa. | Kyllä | Kyllä | Kyllä | Kyllä | En | 
 | 109 | Palauta tuote | Suorita yksittäisten tuotteiden palautus. Seuraava skannattu tuote näytetään palautettuna tuotteena, jolla on negatiivinen määrä ja hinta. | Kyllä | Kyllä | En | Kyllä | En |
 | 114 | Palautustapahtuma | Jatka edellistä tapahtumaa sen vastaanottonumeron avulla ja palauta jotkin sen tuotteista. | Kyllä | Kyllä | Kyllä | Kyllä§ | En |
 | 1 211 | Toimitus kassakaappiin | Suorita toimitus kassakaappiin, jossa rahat siirretään kassakoneesta kassakaappiin. | Kyllä | Kyllä | Kyllä | Kyllä | En |

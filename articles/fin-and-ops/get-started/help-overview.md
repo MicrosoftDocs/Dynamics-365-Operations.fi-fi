@@ -1,9 +1,9 @@
 ---
 title: "Finance and Operations -ohjejärjestelmä"
-description: "Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen."
+description: "Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen."
 author: margoc
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
-ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: dc057faf3cd08ea1c939d0cc35ae404bde59e514
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/17/2018
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. Artikkelissa kerrotaan myös, miten voit luoda organisaatiosi mukautetun ohjeistuksen ja koulutuksen. 
+Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen. 
 
 > [!NOTE] 
 > Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
@@ -48,8 +48,6 @@ Finance and Operationsissa on uudistettu ohjejärjestelmä, joka perustuu kahtee
 Voit käyttää ohjetta käyttämäsi tuotteen Ohje-ruudusta. Seuraavassa näyttökuvassa on Finance and Operations.
 
 ![Ohje-ruutu](./media/help-pane-ops-task-guides.png)
-
-Tässä ohjeaiheessa käsitellään ohjejärjestelmää ja kerrotaan, miten voit luoda organisaatiolle oman mukautetun ohjeistuksen ja koulutusresurssit.
 
 > [!IMPORTANT]
 > **Tehtäväoppaat** eivät ole tällä hetkellä käytössä Retailissa tai Talentiin Ohje-ruudussa (Talentin Aloitusopas-ruudussa on muutamia tehtäväoppaita). Retailin ja Talentin menettelyohje on saatavana docs.microsoft.com-sivustossa ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)).
@@ -83,7 +81,7 @@ Jos haluat tilata RSS-syötteen kaikista Unified Operations -sisällön päivity
 ### <a name="give-feedback"></a>Palautteen antaminen 
 Toivomme saavamme asiakaspalautetta. GitHubin avulla voit lähettää kommentteja tai ehdottaa muutoksia sisältöön. Saat lisätietoja palautejärjestelmästä [tästä blogipostauksesta](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-feedback"></a>Jätä meille palautetta 
+#### <a name="leave-us-feedback"></a>Jätä meille palautetta 
 Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.  
 
 1. Napsauta **Palaute** nähdäksesi sivun alalaidan kommentit ja napsauta sitten joko **Tuotepalaute** tai **Kirjaudu sisään antaaksesi dokumentatiopalautetta**.
@@ -93,8 +91,6 @@ Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.
 2. Kirjoita kommentit ja valitse sitten **Julkaise palaute**.
 
 ![Julkaise kommentti](./media/feedback.png)
-
-
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Sisällön muutoksen tai lisäyksen ehdottaminen GitHubin kautta
 Voit ehdottaa muutosta, jos sinulla on GitHub-tili ja jos allekirjoitat osallistujan käyttöoikeussopimuksen.  Tarkistamme ehdottamasi muutokset pull-pyynnön lähettämisen jälkeen. Tarvittaessa käsittelemme ehdotuksiasi sisäisesti ja otamme sinuun yhteyttä.  
@@ -122,22 +118,7 @@ Aloita opastettu vuorovaikutteinen toiminta valitsemalla **Käynnistä tehtävä
 > [!IMPORTANT] 
 > Tehtäväoppaan toiston aikana annettavat tiedot ovat todellisia. Jos olet tuotantoympäristössä, tiedot annetaan käytössä olevassa yrityksessä.
 
-### <a name="it-all-begins-with-task-recorder"></a>Tehtävän tallennustoiminto
-
-Tehtävän ohjaukset luodaan tehtävän tallennustoiminnolla. Kun käytät tehtävätallennetta, kaikki Finance and Operations -käyttöliittymässä tekemäsi toimet (kuten valikoiden napsauttaminen, asetusten muuttaminen ja tietojen antaminen) tallennetaan. Kaikkia tallennettuja vaiheita kutsutaan tehtävätallenteeksi. Kuten edellisessä osassa selitettiin, tehtävätallenteet voidaan näyttää Ohje-ruudussa ja ne voidaan toistaa tehtävän opastuksena. Tehtävätallenteita voi kuitenkin käyttää myös muilla tavoin:
-
--   **Tallenna tehtävätallenteet BPM:hen** – Voit tallentaa tehtävätallenteen BPM-kirjaston rivihierarkiaan LCS-palveluissa. Kun tallennat tehtävätallenteen BPM:hen, muodostettava vuokaavio voidaan näyttää yhdessä tallennevaiheiden kanssa. 
-
-    > [!Note]
-    > Jos haluat näyttää tehtävätallenteen Finance and Operationsin ohjeruudussa ja toistaa sen tehtävän ohjauksena, tallenne on tallennettava BPM-kirjastoon.
-    
--   **Tallenne tehtävätallenteet Word-asiakirjoina** – kun tallennat tehtävätallenteen Microsoft Word -asiakirjana, voit luoda helposti tulostettavia koulutusoppaita organisaation käyttöön;
-
-Lisätietoja tehtävän tallennustoiminnosta on ohjeaiheessa [Finance and Operationsin tehtävien tallennustoiminto](../../dev-itpro/user-interface/task-recorder.md).
-
-### <a name="creating-customized-task-recordings"></a>Mukautettujen tehtävätallenteiden luominen
-
-Voit luoda omia tehtävätallenteita tai ladata ja mukauttaa Microsoftin toimittamia tehtävätallenteita. Voitkin luoda organisaatiolle mukautetun ohjeen, joka vastaa juuri kyseistä Finance and Operations -käyttöönottoa. Jos haluat näyttää tehtävätallenteen Finance and Operationsin ohjeruudussa ja toistaa sen tehtäväoppaana, tallenne on tallennettava LCS:n BPM-kirjastoon. Kumppanit voivat puolestaan siirtää kirjaston yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Täydelliset ohjeet ovat artikkelissa [Ohjeistuksen tai koulutuksen luonti tehtävätallenteiden avulla](../../dev-itpro/user-interface/task-recorder.md).
+Voit omia mukautettuja tehtäväoppaita tehtävien tallennustoiminnon avulla. Lisätietoja on kohdassa [Ohjeistuksen tai koulutuksen luominen tehtävien tallennustoiminnon avulla](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Tuotteen sisäinen ohje
 Voit käyttää Finance and Operationsin ohjesisältöä joko napsauttamalla **Ohje** (**?**) -kuvaketta tai näppäinyhdistelmällä Ctrl+Vaihto+?. Kumpikin menetelmä avaa Ohje-ruudun. Voit käyttää Ohje-ruudusta kaikkia artikkeleita tai tehtävän ohjauksia. 
@@ -184,6 +165,11 @@ Kun järjestelmänvalvoja on suorittanut nämä vaiheet, voit avata ohjeruudun j
 Käännetyt tehtävän ohjaukset julkaistaan kirjastoissa, joiden otsikossa lukee "kaikki kielet". Jos haluat avata lokalisoidun tehtäväoppaan ohjeen Finance and Operationsissa, varmista, että olet muodostanut sopivaan kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**. 
 -   Jos tehtäväopas on käännetty, tehtäväopas avautuu valitsemallasi kielellä.
 -   Jos tehtäväopasta ei ole vielä käännetty, vain osa tekstistä (ohjausobjektien teksti) näkyy valitun kielisenä.
+
+## <a name="creating-custom-help"></a>Mukautetun ohjeen luominen
+Voit luoda käyttäjille ohjeen luomalla mukautettuja tehtäväoppaita tai yhdistämällä oman sivuston Ohje-ruutuun. Lisätietoja: 
+- [Ohjeistuksen tai koulutuksen luominen tehtävien tallennustoiminnon avulla](../../dev-itpro/user-interface/task-recorder.md).
+- [Finance and Operationsin mukautetun ohjeen luominen (raportti)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

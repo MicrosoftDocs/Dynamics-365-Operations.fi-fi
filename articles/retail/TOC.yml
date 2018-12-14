@@ -47,14 +47,18 @@
       href: dev-itpro/updating-environments.md
     - name: Testaus ja suorituskykyongelmat
       href: dev-itpro/retail-implementation-testing-performance.md
+- name: Jaettu tilausten hallinta (JTH)
+  href: dom.md
 - name: Maksut
   items:
     - name: Maksutavat
       href: payment-methods.md
     - name: 'Luottokorttien määritys, varmennus ja tietojen tarkistus'
       href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: 'Käteisvarojen arvojen määritys POS:lle'
+    - name: Myyntipisteen käteisvarojen arvojen määritys
       href: cash-denominations.md
+    - name: Laskun maksutapojen määrittäminen
+      href: payinvoice.md
     - name: Maksut – usein kysytyt kysymykset
       href: dev-itpro/payments-retail.md
 - name: Ostotilaukset
@@ -213,6 +217,8 @@
       href: Order-fulfillment-POS-setup.md
     - name: 'Tilausilmoitusten näyttäminen POS:ssä'
       href: Notifications-POS.md
+- name: Palautustilauksen vaihdon määritys ja käsittely
+  href: orderexchanges.md
 - name: Seuranta ja analyysi
   items:
     - name: Myynnin ja katteen kehittymisen seuranta
@@ -235,6 +241,8 @@
       href: price-management.md
     - name: Hinnanoikaisut ja alennukset
       href: price-adjustments-discounts.md
+    - name: Useiden vähittäismyyntialennusten käyttäminen tuotteeseen
+      href: Apply-multiple-retail-discounts.md
     - name: Optimaalisen päällekkäisten alennusten yhdistelmän määrittäminen
       href: optimal-combination-overlapping-discounts.md
     - name: Kanavakohtaisten alennusten määrittäminen
@@ -371,7 +379,7 @@
       href: tasks/configure-machine-learning-product-recommendations.md
     - name: Laitteiden luominen ja liittäminen kassakoneisiin
       href: tasks/create-associate-device.md
-    - name: Laiteasemien luominen
+    - name: Hardware Station -asemien luominen
       href: tasks/create-associate-hardware-station.md
     - name: Myyntipisteen kassapäätteiden luominen
       href: tasks/create-associate-registers.md
@@ -405,7 +413,7 @@
       href: tasks/design-relationships-between-organizational-units.md
     - name: Valikoimien hallinta
       href: tasks/manage-assortments-2016-11.md
-    - name: Laiteasemien lataaminen itsepalvelutoiminnon avulla
+    - name: Hardware Station -asemien lataaminen itsepalvelutoiminnon avulla
       href: tasks/perform-self-service-download-hardware-station.md
     - name: Online-myyntien ja maksujen kirjaaminen
       href: tasks/posting-online-sales-payments.md
@@ -488,6 +496,8 @@
       items:
         - name: 'Retail POS:n näyttöasettelut'
           href: pos-screen-layouts.md
+        - name: 'URL-osoitteen avaaminen POS:ssä'
+          href: Open-URL-in-POS.md
         - name: 'POS:n asettelun suunnittelutoiminnon asentaminen'
           href: install-pos-layout-designer.md
         - name: Retail Modern POS offline-tilassa
@@ -508,7 +518,11 @@
           href: dev-itpro/gift-card.md
         - name: Brändäyksen luominen ja käyttäminen Retail Experience -sovelluksessa
           href: dev-itpro/create-retail-experience-app.md
-    - name: Laiteasema ja laajennettavuus
+        - name: 'POS Hybrid -sovelluksen määrittäminen Androidissa ja iOS:ssa'
+          href: dev-itpro/hybridApp.md
+        - name: Ohita POS-pyynnön käsittely
+          href: dev-itpro/pos-handler.md
+    - name: Hardware Station ja laajennettavuus
       href: dev-itpro/hardware-station-extensibility.md
     - name: Retail Serverin laajennettavuus
       items:
@@ -562,9 +576,13 @@
           href: dev-itpro/payment-custom-error-messages.md
         - name: Windows-asennusohjelmien luominen maksuyhdistimille
           href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Maksutietojen käyttö
+          href: payment-connector-data-fields.md
     - name: Retail SDK
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: 'Retail SDK:n tulevat muutokset'
+          href: dev-itpro/UpcomingSDKChanges.md
         - name: Retail- ja Finance and Operations -koontiversiojärjestelmien yhdistäminen
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: 'Retail SDK:n laajennettavuusmallit'

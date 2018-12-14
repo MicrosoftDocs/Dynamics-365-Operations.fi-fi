@@ -3,7 +3,7 @@ title: Vanhentuneet tai poistetut ominaisuudet
 description: "Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan."
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -87,6 +87,19 @@ Ilmoitusten luotujen sähköisten tiedostojen vienti kansioon, josta ne lähetet
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili, vero |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Poistettu Dynamics 365 for Finance and Operationsin versiosta 8.1 alkaen ympäristöpäivityksellä 20. |
+
+
+### <a name="profit-tax-register-wizard"></a>Voittojen verorekisterin ohjattu toiminto
+Omaisuus, jolla luodaan uusia voittojen verorekisterimalleja. Tämä ominaisuudella luodaan uusien rekisteröiden X++-objekteja, jotka sitten luodaan soveltuvan laskentalogiikan sisältävinä malleina.
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Ominaisuus ei ole yhteensopiva Dynamics 365 for Finance and Operationsin laajennettavuusmallin kanssa. |
+| **Onko toinen ominaisuus korvannut?**   | En |
+| **Tuotealueet, joihin vaikutetaan**         | Vero |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Poistettu Dynamics 365 for Finance and Operationsin versiosta 8.1 alkaen ympäristöpäivityksellä 20. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 ja ympäristöpäivitys 15
 Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version ominaisuus ei ole vanhentunut. Ympäristöpäivitys 15 on kumulatiivinen, ja siinä on uusia tai ympäristöpäivityksistä 13, 14 ja 15 muuttuneita ominaisuuksia.
@@ -993,6 +1006,17 @@ Tuotekonfiguraattoria käytettiin määrittämään dynaamisesti nimikkeitä myy
 | **Onko toinen ominaisuus korvannut?**   | Kyllä. Poissulkeva konfiguraatio otettiin käyttöön Dynamics AX 2012:ssä, jossa tuotekonfiguraattorin vanhentuminen tulevissa versioissa oli jo ilmoitettu. Poissulkeva konfiguraatiomenetelmä valitaan päätuotteessa ottamaan konfiguraatio käyttöön. Lisätietoja on kohdassa [Tuotemääritysmallin luominen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta, myynti ja markkinointi  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.      |
+
+### <a name="production-floor-app"></a>Tuotantosovellus
+Tämä sovellus on tarkoitettu tabletteihin, joissa on käytössä Windows 8.1 RT ja Windows 8.1 Pro.
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Verkkoasiakasohjelmaan tehdyllä muutoksella voidaan toimittaa samanlaiset toiminnot alkuperäisenDynamics AX 7.0 -asiakasohjelman kautta. Työkorttilaitteessa on tuotannossa käytettävä käyttöliittymä, joka on optimoitu kosketus- ja tablettikäyttöä varten. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Työkorttilaite, joka sisältyy Dynamics AX 7.0:aan.                                                                           |
+| **Tuotealueet, joihin vaikutetaan**         | Tuotannonhallinta                                                |
+| **Tila**                         | Vanhentuminen: Tälle ominaisuudelle ei ole vielä määritetty poistopäivää Microsoft Storesta.                                                |
+
 
 ### <a name="rename-product-dimension"></a>Nimeä tuotedimensio uudelleen
 
