@@ -34,42 +34,46 @@ Tässä ohjeaiheessa kuvataan eri osia, jotka muodostavat työnkulun.
 Työnkulku koostuu elementeistä. Seuraavissa osissa kuvataan kutakin elementtityyppiä.
 
 ## <a name="tasks"></a>Tehtävät
+
 *Tehtävä* on työyksikkö, joka on suoritettava. Työnkulkuun voidaan lisätä kahdentyyppisiä tehtäviä: manuaalisia ja automaattisia.
 
 ### <a name="manual-task"></a>Manuaalinen tehtävä
 
 *Manuaalinen tehtävä* on työyksikkö, joka käyttäjän on suoritettava. Esimerkiksi kuluraporttityönkulussa voi olla manuaalisia tehtäviä, joille määritettyjen käyttäjien on tehtävä seuraavia toimenpiteitä:
 
--   Tarkistaa vastaanotot, jotka lähetetään kuluraportin kanssa.
--   Ottaa yhteyttä esimieheen.
+- Tarkistaa vastaanotot, jotka lähetetään kuluraportin kanssa.
+- Ottaa yhteyttä esimieheen.
 
 ### <a name="automated-task"></a>Automaattinen tehtävä
 
 *Automaattinen tehtävä* on työyksikkö, jonka järjestelmä suorittaa. Käyttäjän toimia ei tarvita. Esimerkiksi myyntitilaustyönkulussa voi olla automaattisia tehtäviä, joille järjestelmän on tehtävä seuraavia toimenpiteitä:
 
--   Suorittaa luottorajan tarkistus.
--   Luoda asiakastietue asiakkaalle, jos tietuetta ei vielä ole.
+- Suorittaa luottorajan tarkistus.
+- Luoda asiakastietue asiakkaalle, jos tietuetta ei vielä ole.
 
 ## <a name="approval-processes"></a>Hyväksyntäprosessit
+
 *Hyväksyntäprosessi* koostuu erilaisista vaiheista. Hyväksyntäprosessin eri vaiheissa käyttäjä voi tehdä seuraavat toimet:
 
--   Tiedoston hyväksyminen.
--   Tiedoston hylkääminen.
--   Muutospyyntö.
--   Tiedoston siirtäminen toisen käyttäjän hyväksyttäväksi.
+- Tiedoston hyväksyminen.
+- Tiedoston hylkääminen.
+- Muutospyyntö.
+- Tiedoston siirtäminen toisen käyttäjän hyväksyttäväksi.
 
 ## <a name="line-item-workflow-elements"></a>Rivinimikkeen työnkulun elementit:
+
 Työnkulku voidaan luoda käsittelemään tiedostoja tai sen rivinimikkeitä. Oletetaan esimerkiksi, että olet luonut aikaraporttien hyväksymistyönkulun. (Siihen viitataan *asiakirjan työnkulkuna*.) Voit lisätä *rivinimikkeen työnkulun* elementin kyseiseen asiakirjan työnkulkuun. Rivinimikkeen elementtiä suoritettaessa kukin asiakirjan rivinimike lähetetään käsiteltäväksi. Voit määrittää, käsitteleekö sama rivinimikkeiden työnkulku kaikki rivinimikkeet, tai määrittää rivinimikkeille omat rivinimikkeen työnkulut. Oletetaan, että työntekijä on lähettänyt aikaraportin, joka muistuttaa seuraavaa kuvaa.
 
-![Työnkulut rivinimikkeillä](./media/workflow_lineitemworkflow.gif) 
+![Työnkulut rivinimikkeillä](./media/workflow_lineitemworkflow.gif)
 
 Tässä skenaariossa voit luoda seuraavat rivinimikkeen työnkulut:
 
--   **Rivinimikkeen työnkulku 1** – Työnkulkua käytetään projektitunnuksella 1111 varustettujen rivinimikkeiden käsittelemiseen.
--   **Rivinimikkeen työnkulku 2** – Työnkulkua käytetään projektitunnuksella 2222 varustettujen rivinimikkeiden käsittelemiseen.
--   **Rivinimikkeen työnkulku 3** – Työnkulkua käytetään projektitunnuksella 3333 varustettujen rivinimikkeiden käsittelemiseen.
+- **Rivinimikkeen työnkulku 1** – Työnkulkua käytetään projektitunnuksella 1111 varustettujen rivinimikkeiden käsittelemiseen.
+- **Rivinimikkeen työnkulku 2** – Työnkulkua käytetään projektitunnuksella 2222 varustettujen rivinimikkeiden käsittelemiseen.
+- **Rivinimikkeen työnkulku 3** – Työnkulkua käytetään projektitunnuksella 3333 varustettujen rivinimikkeiden käsittelemiseen.
 
 ## <a name="flow-control-elements"></a>Työnkulun ohjauksen elementit
+
 Seuraavien elementtien avulla voit suunnitella työnkulkuja, joissa on vaihtoehtoisia tai samanaikaisesti suoritettavia haaroja.
 
 ### <a name="manual-decision"></a>Manuaalinen päätös
@@ -87,7 +91,4 @@ Myös *ehdollinen päätös* on piste, jossa työnkulku jakautuu kahteen haaraan
 ### <a name="subworkflow"></a>Alityönkulku
 
 *Alityönkulku* suoritetaan toisen työnkulun yhteydessä.
-
-
-
 
