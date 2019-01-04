@@ -35,15 +35,13 @@ Voit tutkia myynnin trendejä ja kuvioita reaaliajassa Microsoft Dynamics 365 fo
 
 Dynamics 365 for Retailin käyttäjät voivat tarkastella myyntitrendejä ja -malleja reaaliaikaisesti organisaatiohierarkian eri tasoilla valitun ajanjakson aikana avaamalla valmiin **vuosikohtaisen kanavamyynnin** raportin. Tämän raportin voi avata seuraavista sijainneista:
 
--   **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**
--   **Vähittäismyymälän myyntitiedot** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän myyntitiedot** &gt; **Raportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**
--   **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**
+- **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**
+- **Vähittäismyymälän myyntitiedot** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän myyntitiedot** &gt; **Raportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**
+- **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**
 
 Käyttäjät voivat tarkastella myyntitrendejä ja -malleja myös tuntiperusteisesti organisaatiohierarkian eri tasoilla valitun ajanjakson aikana avaamalla valmiin **tuntikohtaisen kanavamyynnin raportin**. Tämän raportin voi avata seuraavista sijainneista:
 
--   **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**
--   **Vähittäismyymälän myyntitiedot** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän myyntitiedot** &gt; **Raportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**
--   **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**
-
-
+- **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**
+- **Vähittäismyymälän myyntitiedot** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän myyntitiedot** &gt; **Raportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**
+- **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Tuntikohtaisen kanavamyynnin raportti**
 

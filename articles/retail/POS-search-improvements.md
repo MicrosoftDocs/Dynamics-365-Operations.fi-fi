@@ -66,7 +66,7 @@ Paikallisista tuotehaut ovat nyt käyttäjäystävällisempiä. Niihin on tehty 
 - Vähittäismyyjät voivat nyt määrittää tuotehaun näyttämään hakuehdotuksia käyttäjien kirjoittaessa tuotenimiä. Tämän toiminnon uusi asetus on myyntipisteen toimintoprofiilin uudessa **Tuotehaku**-ryhmässä. Asetuksen nimi on **Näytä hakuehdotukset kirjoittamisen aikana**. Työntekijät voivat käyttää tätä toimintoa löytämään etsimänsä tuotteet nopeasti, koska koko tuotenimeä ei tarvitse kirjoittaa.
 - Tuotehaun algoritmi etsii hakusanoja nyt myös tuotteen **Hakunimi**-ominaisuudesta.
 
-![Tuote-ehdotukset](./media/Productsuggestions.png "Tuote-ehdotukset")
+    ![Tuote-ehdotukset](./media/Productsuggestions.png "Tuote-ehdotukset")
 
 ## <a name="customer-search"></a>Asiakashaku
 
