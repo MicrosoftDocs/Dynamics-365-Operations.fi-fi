@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 08e939f87bc4a1769533b205bc5706648e1d1dce
+ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
+ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -62,7 +62,7 @@ Kun asiakas kopioidaan, järjestelmä yrittää tallentaa uuden asiakkaan tiedot
 
 ## <a name="copy-a-customer-by-using-tax-exempt-number-search-feature"></a>Asiakkaan kopioiminen käyttämällä verovapausnumeron hakua
 
-Toimittajat voi kopioida myös hakemalla verovapausnumeron perusteella **Kaikki asiakkaat**-sivun **Asiakas**-välilehden **Rekisteröinti**-ryhmän toimintoruudussa. Näkyviin tulevassa **Verovapausnumeron haku** -valintaikkunassa näkyvät verovapausnumerot, asiakastunnus, asiakkaan nimi ja yritys, jossa verovapaustunnusta käytetään. Asiakas voidaan kopioida vain, jos se on muu yritys kuin nykyinen yritys. Kun olet valinnut nämä ehdot täyttävän asiakkaan, toimi seuraavasti.
+Asiakkaat voi kopioida myös hakemalla verovapausnumeron perusteella **Kaikki asiakkaat**-sivun **Asiakas**-välilehden **Rekisteröinti**-ryhmän toimintoruudussa. Näkyviin tulevassa **Verovapausnumeron haku** -valintaikkunassa näkyvät verovapausnumerot, asiakastunnus, asiakkaan nimi ja yritys, jossa verovapaustunnusta käytetään. Asiakas voidaan kopioida vain, jos se on muu yritys kuin nykyinen yritys. Kun olet valinnut nämä ehdot täyttävän asiakkaan, toimi seuraavasti.
 
 1. Näkyviin tulee **Kopioi asiakas** -vaihtoehto. Tämä vaihtoehto on oletusarvoisesti **Ei**. Voit kopioida asiakkaan nykyiseen yritykseen valitsemalla **Kyllä**. 
 2. Valitse **Valitse**. Uusi asiakas luodaan.
