@@ -25,11 +25,11 @@
                   href: get-started/system-requirements-on-prem.md
                 - name: Varastoinnin määrittäminen paikallisiin ympäristöihin
                   href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
-            - name: Ympäristön vakioversiot ja kohdistetut versiot
+            - name: Palvelun vakiopäivitykset ja ensimmäisen julkaisun päivitykset
               href: get-started/public-preview-releases.md
-            - name: Finance and Operations -sovelluksen ostaminen
+            - name: Finance and Operationsin ostaminen
               items:
-                - name: Finance and Operationsin (paikallinen) ostaminen
+                - name: Finance and Operationsin (on-premises) ostaminen
                   href: get-started/purchase-on-premises.md
         - name: Uudet ja muuttuneet ominaisuudet
           href: get-started/whats-new-changed.md
@@ -48,13 +48,13 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: 'Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa ympäristöissä'
               href: get-started/features-not-implemented-on-prem.md
-            - name: Finance and Operations -versio 8.1.3 (joulukuu 2018)
+            - name: Finance and Operations -versio 8.1.3 (tammikuu 2019)
               href: get-started/whats-new-changed-8-1-3.md
-            - name: Platform update 23 (joulukuu 2018)
+            - name: Platform update 23 (tammikuu 2019)
               href: get-started/whats-new-platform-update-23.md
-            - name: Platform update 22 (marraskuu 2018)
+            - name: Platform update 22 (joulukuu 2018)
               href: get-started/whats-new-platform-update-22.md
-            - name: Finance and Operations -versio 8.1.2 (marraskuu 2018)
+            - name: Finance and Operations -versio 8.1.2 (joulukuu 2018)
               href: get-started/whats-new-changed-8-1-2.md
             - name: Finance and Operations -versio 8.1.1 (lokakuu 2018)
               href: get-started/whats-new-changed-8-1-1.md
@@ -373,6 +373,18 @@
                       href: ../supply-chain/sales-marketing/field-service-work-order.md
                     - name: Field Servicen sopimuslaskujen synkronointi Finance and Operationsin vapaatekstilaskuihin
                       href: ../supply-chain/sales-marketing/field-service-invoice.md
+                    - name: Field Servicen varastosiirtojen ja oikaisujen synkronointi Finance and Operationsiin
+                      href: ../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                    - name: Finance and Operationsin varastotasotietojen synkronointi Field Serviceen
+                      href: ../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                    - name: Finance and Operationsin tuotteiden ja varastoyksiköiden synkronointi Field Serviceen
+                      href: ../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                    - name: Finance and Operationsin projektiluetteloiden synkronointi Field Serviceen
+                      href: ../supply-chain/sales-marketing/synchronize-project-list.md
+                    - name: Finance and Operationsin fyysisten varastojen synkronointi Field Serviceen
+                      href: ../supply-chain/sales-marketing/synchronize-warehouse.md
+                    - name: Finance and Operationsin työtilausten synkronointi Field Serviceen
+                      href: ../supply-chain/sales-marketing/synchronize-work-orders.md
                 - name: Project Service Automation -integroinnin määrittäminen
                   href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
                   items:
@@ -388,8 +400,8 @@
                       href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
                     - name: Projektin toteutuneiden tietojen synkronointi projektin integrointikirjauskansioon
                       href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
-                - name: Ulkoisten verkkopalveluiden käyttö
-                  href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+        - name: Ulkoisten verkkopalveluiden käyttö
+          href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
     - name: Tietojen hallinta
       href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
@@ -405,6 +417,8 @@
                   href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Konfigurointitietopaketit (vain heinäkuun 2017 versio)
                   href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
+                - name: Määritä yksikkösäilö saataville Data Lake -säilönä
+                  href: ../dev-itpro/data-entities/entity-store-data-lake.md?toc=/fin-and-ops/toc.json
             - name: Konfigurointitietomallit
               href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/fin-and-ops/toc.json
             - name: Muutosten seuranta yksikköön
@@ -529,6 +543,8 @@
                   href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
                 - name: Tilityksen määrittäminen
                   href: ../financials/cash-bank-management/configure-settlement.md
+                - name: Selvitä jäljellä olevan summa
+                  href: ../financials/cash-bank-management/settle-remainder.md
                 - name: Toimittajan maksun yleiskatsaus
                   href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
                 - name: Toimittajan maksujen työtila
@@ -2103,8 +2119,6 @@
               href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
             - name: Kirjaa vapaatekstilasku
               href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-            - name: Tuota Meksikon sähköisen kirjanpidon raportin versio 1.1
-              href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
             - name: Määritä sähköisen laskun parametrit
               href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
             - name: Määritä arvonlisäverokoodit – Meksiko
