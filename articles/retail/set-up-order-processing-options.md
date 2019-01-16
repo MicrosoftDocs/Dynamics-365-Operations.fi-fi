@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: d849279a642363d9cb591cd7a3b20c2883bb4a3b
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -41,7 +41,7 @@ Käyttäjät on linkitettävä puhelinkeskuskanavaan, jotta he voivat käyttää
 
 Puhelinkeskuskanavassa voi määrittää myös sähköposti-ilmoitusprofiilin. Profiilin määrittää joukon sähköpostimalleja, joita käytetään, kun puhelinkeskuskanavan kautta tilauksen tekeville asiakkaille lähetetään sähköpostiviesti. Sähköpostin käynnistimet voidaan määrittää järjestelmän tapahtumien perusteella esimerkiksi tilauksen lähettämisen tai tilauksen toimittamisen yhteyteen.
 
-Ennen kuin myynti voidaan käsitellä asianmukaisesti puhelinkeskuskanavassa, kanavalle on määritettävä oikeat [maksutavat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments) ja toimitustavat.
+Ennen kuin myynti voidaan käsitellä asianmukaisesti puhelinkeskuskanavassa, kanavalle on määritettävä oikeat [maksutavat](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-payments) ja toimitustavat.
 
 Voit määrittää puhelinkeskuskanavan tasolla muita taloushallinnon dimensioon liittyviä oletusarvoja, jotka linkitetään kyseisen kanavan luomiin tilauksiin.
 
@@ -51,13 +51,13 @@ Puhelinkeskusta määritettäessä kolmella asetuksella on merkittävä vaikutus
 
 ### <a name="enable-order-completion"></a>Ota käyttöön tilausten viimeistely
 
-Puhelinkeskuskanavan **Ota käyttöön tilauksen viimeistely** -asetus vaikuttaa merkittävästi kanavaan vietyjen myyntitilausten käsittelyyn. Kun tämä asetus on otettu käyttöön, kaikkien myyntitilausten on läpäistävä tietyt kelpoisuussäännöt, ennen kuin ne voidaan vahvistaa. Voit suorittaa nämä säännöt valitsemalla myyntitilaussivun toimintoruutuun lisätyn **Viimeistele**-painikkeen. Kaikkien tilausten, joita luotaessa **Ota käyttöön tilausten viimeistely** -asetus on ollut käytössä, on läpäistävä tilauksen viimeistelyprosessi. Tämä prosessi pakottaa tarkistamaan maksun ja maksun tarkistuslogiikan. Maksun pakottamisen lisäksi tilauksen lähetysprosessi voi käynnistää järjestelmään määritetyt [petostarkistukset](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts). Tilaukset, joiden maksu tai petostarkistukset epäonnistuvat asetetaan pitoon eikä niitä voi vapauttaa käsittelyn jatkamista varten (kuten poimittavaksi tai lähetettäväksi), ennen kuin pidon aiheuttanut ongelma on ratkaistu.
+Puhelinkeskuskanavan **Ota käyttöön tilauksen viimeistely** -asetus vaikuttaa merkittävästi kanavaan vietyjen myyntitilausten käsittelyyn. Kun tämä asetus on otettu käyttöön, kaikkien myyntitilausten on läpäistävä tietyt kelpoisuussäännöt, ennen kuin ne voidaan vahvistaa. Voit suorittaa nämä säännöt valitsemalla myyntitilaussivun toimintoruutuun lisätyn **Viimeistele**-painikkeen. Kaikkien tilausten, joita luotaessa **Ota käyttöön tilausten viimeistely** -asetus on ollut käytössä, on läpäistävä tilauksen viimeistelyprosessi. Tämä prosessi pakottaa tarkistamaan maksun ja maksun tarkistuslogiikan. Maksun pakottamisen lisäksi tilauksen lähetysprosessi voi käynnistää järjestelmään määritetyt [petostarkistukset](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts). Tilaukset, joiden maksu tai petostarkistukset epäonnistuvat asetetaan pitoon eikä niitä voi vapauttaa käsittelyn jatkamista varten (kuten poimittavaksi tai lähetettäväksi), ennen kuin pidon aiheuttanut ongelma on ratkaistu.
 
-Kun **Ota käyttöön tilausten viimeistely** on otettu puhelinkeskuskanavassa käyttöön, järjestelmä pakottaa tilauksen viimeistelyprosessin, jos myyntilaukseen annetaan rivinimikeitä tai kanavan käyttäjä yrittää siirtyä pois myyntitilauslomakkeesta valitsematta ensin **Viimeistele**. Tämä tapahtuu avaamalla myyntitilauksen kertaussivun ja pyytämällä käyttäjää lähettämään tilaus oikein. Jos tilausta ei voi lähettää oikein maksun kanssa, käyttäjä voi asettaa tilauksen pitoon [tilausten pidon](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) toiminnoilla. Jos käyttäjä yrittää peruuttaa tilauksen, hänen on peruutettava se oikein käyttämällä joko peruutus- tai poistotoimintoa sen mukaan, minkä toiminnon käytön käyttäjän käyttöoikeuden sallivat.
+Kun **Ota käyttöön tilausten viimeistely** on otettu puhelinkeskuskanavassa käyttöön, järjestelmä pakottaa tilauksen viimeistelyprosessin, jos myyntilaukseen annetaan rivinimikeitä tai kanavan käyttäjä yrittää siirtyä pois myyntitilauslomakkeesta valitsematta ensin **Viimeistele**. Tämä tapahtuu avaamalla myyntitilauksen kertaussivun ja pyytämällä käyttäjää lähettämään tilaus oikein. Jos tilausta ei voi lähettää oikein maksun kanssa, käyttäjä voi asettaa tilauksen pitoon [tilausten pidon](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) toiminnoilla. Jos käyttäjä yrittää peruuttaa tilauksen, hänen on peruutettava se oikein käyttämällä joko peruutus- tai poistotoimintoa sen mukaan, minkä toiminnon käytön käyttäjän käyttöoikeuden sallivat.
 
 Jos **Ota käyttöön tilausten viimeistely** on otettu käyttöön puhelinkeskuskanavassa, tilauksen **Maksun tila** -kenttää seurataan. Järjestelmä laskee **Maksun tilan**, kun myyntitilaus on lähetetty. Vain tilaukset, joiden maksun tila on hyväksytty, saavat siirtyä järjestelmässä tilauksen muihin käsittelyvaiheisiin, kuten poimintaan ja lähetykseen. Jos maksut hylätään, **älä käsittele** -merkintä otetaan käyttöön tilauksen eritellyssä tilassa, jolloin tilaus asetetaan pitoon maksuongelman ratkaisemiseen saakka.
 
-Jos **Ota käyttöön tilausten viimeistely** -asetus on otettu käyttöön, kun käyttäjät luovat myyntitilauksia ja ovat rivinimikkeen merkintätilassa, myös **Lähde**-kenttä on käytössä päämyyntitilauksen otsikossa. **Lähde**-kenttään tallennetaan [luettelon lähdekoodi](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs) suoramarkkinoinnin myyntiskenaariossa. Tämä koodi voi sitten ohjata erikoishintoja ja kampanja-alennuksia.
+Jos **Ota käyttöön tilausten viimeistely** -asetus on otettu käyttöön, kun käyttäjät luovat myyntitilauksia ja ovat rivinimikkeen merkintätilassa, myös **Lähde**-kenttä on käytössä päämyyntitilauksen otsikossa. **Lähde**-kenttään tallennetaan [luettelon lähdekoodi](https://docs.microsoft.com/dynamics365/unified-operations/retail/call-center-catalogs) suoramarkkinoinnin myyntiskenaariossa. Tämä koodi voi sitten ohjata erikoishintoja ja kampanja-alennuksia.
 
 Vaikka **Ota käyttöön tilausten viimeistely** -asetus olisi poistettu käytöstä, käyttäjät voivat silti käyttää lähdekoodia myyntitilauksessa. Heidän on kuitenkin ensin avattava myyntitilauksen otsikon tiedot, jotta he pääsevät käyttämään **Lähde**-kenttää. Toisin sanoen heidän on tehtävä muutama ylimääräinen toimi. Sama menettely koskee myös sellaisia ominaisuuksia, kuten Valmis lähetettäväksi ja Nopeutetut tilaukset. Näitä ominaisuuksia voi käyttää kaikissa puhelinkeskuksessa luoduissa tilauksissa. Kun **Ota käyttöön tilausten viimeistely** -asetus on otettu käyttöön, käyttäjät voivat kuitenkin nähdä näiden ominaisuuksien määritykset myynnin otsikossa, kun he ovat rivimerkintänäkymässä. Heidän ei tarvitse porautua etsimään asetuksia ja kenttiä myyntitilauksen otsikon tietoihin.
 

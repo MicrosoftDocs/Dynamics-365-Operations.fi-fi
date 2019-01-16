@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 80fa443fc235496a111a8a866d2e703202721268
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -33,35 +33,41 @@ ms.lasthandoff: 08/08/2018
 
 Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Microsoft Dynamics 365 for Retailin alustusprosessia.
 
-Kun Retail-sovellus on otettu käyttöön Microsoft Dynamics Lifecycle Servicesin (LCS) kautta, sinun on alustettava vähittäismyyntikonfiguraatio luodaksesi peruskonfiguraation tiedot. **Tärkeää:** Ennen kuin alustat vähittäismyyntikonfiguraation, varmista, että olet määrittänyt kielen ja postiosoitteen kullekin yritykselle, jolle määrität vähittäismyyntiliikkeitä. Tämä vaihe on suoritettava kullekin yritykselle, jota käytät vähittäismyyntiin. Alusta vähittäismyyntikonfiguraatio noudattamalla seuraavia vaiheita:
+Kun Retail-sovellus on otettu käyttöön Microsoft Dynamics Lifecycle Servicesin (LCS) kautta, sinun on alustettava vähittäismyyntikonfiguraatio luodaksesi peruskonfiguraation tiedot.
 
-1.  Käynnistä Dynamics 365 for Retail -asiakasohjelma
-2.  Valitse **Vähittäismyynti** &gt; **Pääkonttorin asetukset** &gt; **Parametrit** &gt; **Vähittäismyyntiparametrit**.
-3.  Napsauta **Alusta**.
+> [!IMPORTANT]
+> Ennen kuin alustat vähittäismyyntikonfiguraation, varmista, että olet määrittänyt kielen ja postiosoitteen kullekin yritykselle, jolle määrität vähittäismyyntiliikkeitä. Tämä vaihe on suoritettava kullekin yritykselle, jota käytät vähittäismyyntiin.
+
+Alusta vähittäismyyntikonfiguraatio noudattamalla seuraavia vaiheita:
+
+1. Käynnistä Dynamics 365 for Retail -asiakasohjelma
+2. Valitse **Vähittäismyynti** &gt; **Pääkonttorin asetukset** &gt; **Parametrit** &gt; **Vähittäismyyntiparametrit**.
+3. Napsauta **Alusta**.
 
 Alustaminen luo seuraavat oletusmääritystiedot:
 
--   Retail-ajastuksen työt ja alityöt
--   Vähittäismyyntikanavan skeema
--   Vähittäismyyntijakelun aikataulut
--   Oletusmuotoiset näyttöasettelut, mukaan lukien painikeruudukot, kuvat ja teemat
--   Aikavyöhyketiedot
--   Myyntipisteen (POS) toiminnot:
--   Myyntipisteen käyttöoikeudet
--   Kanavaraportit
--   Määritteen metatiedot
--   Yksikön tarkistusmallit
--   Komentojonotyö Commerce Data Exchange -palvelun historiatietojen tyhjentämiseen
+- Retail-ajastuksen työt ja alityöt
+- Vähittäismyyntikanavan skeema
+- Vähittäismyyntijakelun aikataulut
+- Oletusmuotoiset näyttöasettelut, mukaan lukien painikeruudukot, kuvat ja teemat
+- Aikavyöhyketiedot
+- Myyntipisteen (POS) toiminnot:
+- Myyntipisteen käyttöoikeudet
+- Kanavaraportit
+- Määritteen metatiedot
+- Yksikön tarkistusmallit
+- Komentojonotyö Commerce Data Exchange -palvelun historiatietojen tyhjentämiseen
 
-Lisäksi maksukorttiyrityksiin (PCI) liittyvät lokiinkirjaukset ovat käytössä Dynamics 365 for Retailin tietokannassa. **Huomautus:** Retail-ajastus voidaan määrittää erikseen. Tämä vaihtoehto mahdollistaa Retail-ajastuksen määrityksen sen oletusasetuksille. Kun alustus on valmis, sinun määritettävä vähittäismyynnin lisätiedot. Seuraavassa on muutamia esimerkkejä:
+Lisäksi maksukorttiyrityksiin (PCI) liittyvät lokiinkirjaukset ovat käytössä Dynamics 365 for Retailin tietokannassa.
 
--   Vähittäismyynnin parametrit
--   Retail-ajastuksen parametrit
--   Vähittäismyyntikanavat
--   Kassakoneet ja laitteet
--   Valikoimat
+> [!NOTE]
+> Retail-ajastus voidaan määrittää erikseen. Tämä vaihtoehto mahdollistaa Retail-ajastuksen määrityksen sen oletusasetuksille.
 
+Kun alustus on valmis, sinun määritettävä vähittäismyynnin lisätiedot. Seuraavassa on muutamia esimerkkejä:
 
-
-
+- Vähittäismyynnin parametrit
+- Retail-ajastuksen parametrit
+- Vähittäismyyntikanavat
+- Kassakoneet ja laitteet
+- Valikoimat
 

@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
+ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
+ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -174,11 +174,11 @@ Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säil
 - kehitystyötä varten käyttöönotetut pilvipalveluympäristöt (jotka sisältävät liitettyjen pakettien testimalleja)
 - paikallisesti käyttöönotetut ympäristöt (paikallinen yritystietojen käyttöönotto (LBD))
 
-Sivulla [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti](/electronic-reporting-import-ger-configurations.md) on lisätietoja.
+Sivulla [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti](./electronic-reporting-import-ger-configurations.md) on lisätietoja.
 
 **LCS-esiintymän** säilössä on tietyn RCS-esiintymän määritysluettelo, joka valittiin säilön rekisteröintivaiheessa. Sähköisen raportoinnin ansiosta voit tuoda valmiita tai jaettuja määrityksiä valitusta RCS-esiintymästä nykyiseen Finance and Operations -esiintymään sähköistä raportointia varten.
 
-Sivulla [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti sääntöjen konfigurointipalvelusta (RCS)](/rcs-download-configurations.md) on lisätietoja.
+Sivulla [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti sääntöjen konfigurointipalvelusta (RCS)](./rcs-download-configurations.md) on lisätietoja.
 
 Tarvittavat **LCS-projekti**-, **Tiedostojärjestelmä**- ja **Sääntöjen konfigurointipalvelu (RCS)** -säilöt voidaan rekisteröidä erikseen kullekin nykyisen Finance and Operations -esiintymän määrityspalvelulle. Kukin säilö voidaan osoittaa tiettyyn määrityspalveluun.
 

@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 918f8555bc3d2e4a79262b428d5c7ba278fa7409
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/08/2018
 [!include [banner](includes/banner.md)]
 
 *Määritteiden* avulla voidaan täydentää tuotteen ja sen ominaisuuksien kuvausta käyttäjän määrittämien kenttien avulla. (Näitä kenttiä ovat esimerkiksi **Muistin koko**, **Kiintolevyn kapasiteetti** ja **Energy Star -merkinnän mukainen**). Microsoft Dynamics 365 for Finance and Operations -sovelluksessa määritteitä voidaan liittää erilaisiin vähittäismyynnin yksiköihin, kuten tuoteluokkiin ja vähittäismyyntikanaviin, ja niille voidaan määrittää oletusarvoja. Tuotteet perivät sitten määritteet ja oletusarvot, kun ne liitetään tuoteluokkiin tai vähittäismyyntikanaviin. Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, vähittäismyyntikanavan tasolla tai vähittäismyyntiluettelossa.
- 
+
 Tavallisella televisiotuotteella voi olla esimerkiksi seuraavat määritteet.
 
 | Luokka   | Ominaisuus                | Sallitut arvot          | Oletusarvo |
@@ -50,7 +50,7 @@ Tavallisella televisiotuotteella voi olla esimerkiksi seuraavat määritteet.
 | Plasma     | Toimintalämpötila vähintään      | 0–43 astetta              | 32            |
 |            | Toimintalämpötila korkeintaan        | 0–43 astetta              | 100           |
 | Projektio | Projektiokuvaputken takuu | 6, 12, tai 18 kuukautta         | 12            |
-|            | Projektiokuvaputkien lukumäärä    | 1–5                         | 3             |
+|            | \# projektiokuvaputkea   | 1–5                         | 3             |
 
 ## <a name="attributes-and-attribute-types"></a>Määritteet ja määritetyypit
 
@@ -90,7 +90,7 @@ Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkäla
 
 Vähittäismyyntituotteiden määritteiden metatietoasetukset voidaan korvata kanavatasolla. Tätä ominaisuutta käsitellään myöhemmin tässä ohjeaiheessa.
 
-Olet ehkä huomannutkin, että **Määritteet**-sivulla on määritteen metatietoihin liittyviä vaihtoehtoja. **POS:n määritteen metatiedot** -kohdan **Voidaan tarkentaa** -asetus vaikuttaa määritearvojen toimintaan vähittäismyyntipisteessä tai tapaan, jolla järjestelmä käsittelee kyseisiä määritearvoja. Vain määritteet, joiden **Voidaan tarkentaa** -asetukseksi voi valita **Kyllä**, näkyvät vähittäismyynnin myyntipisteessä tuotteiden tarkennusta tai suodatusta varten.
+Olet ehkä huomannutkin, että **Määritteet**-sivulla on määritteen metatietoihin liittyviä vaihtoehtoja. **POS:n määritteen metatiedot** -kohdan **Voidaan tarkentaa** -asetus vaikuttaa määritearvojen toimintaan vähittäismyyntipisteessä tai tapaan, jolla järjestelmä käsittelee kyseisiä määritearvoja. Vain määritteet, joiden **Voidaan tarkentaa** -asetukseksi voi valita **Kyllä**, näkyvät Retail POS:ssa tuotteiden tarkennusta tai suodatusta varten.
 
 Muut **Määritteet**-sivun määritteen metatietoasetukset:
 
@@ -104,7 +104,7 @@ Muut **Määritteet**-sivun määritteen metatietoasetukset:
 
 Nämä asetukset oli tarkoitettu alun perin verkkokaupan hakutoimintojen parantamista varten. Vaikka verkkokauppa ei ole heti käytettävissä Finance and Operationsissa, se sisältää eCommerce Publishing Software Development Kitin (SDK). Asiakkaat voivat viedä tuotteita tämän SDK:n avulla valitsemaansa hakuindeksiin. Vaikka tuotetiedot tuodaan, asiakkaiden on silti voitava erottaa toisistaan haettavissa olevat tiedot, tiedot, joissa voidaan tehdä hakuja ja niin edelleen. Tällä tavoin voidaan luoda optimaalinen indeksi, jolla voi varmistaa, että vain *heidän mielestään* indeksoitavat määritteet indeksoidaan.
 
-Lisätietoja edellä mainittujen asetusten tarkoituksesta on kohdassa [SharePoint Server 2013 -hakumallin yleiskatsaus](https://technet.microsoft.com/en-us/library/jj219669.aspx).
+Lisätietoja edellä mainittujen asetusten tarkoituksesta on kohdassa [SharePoint Server 2013 -hakumallin yleiskatsaus](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Määritteiden suodatusasetukset
 
@@ -121,7 +121,7 @@ Voit määrittää määritteiden suodatusasetuksissa, miten määritteiden suod
 - **Näytön ohjaus** – Seuraavat asetukset ovat käytettävissä:
 
     - **Luettelo** – Tämä vaihtoehto on kaikkien määritetyyppien käytettävissä.
-    - **Alue** – Tämä asetus on seuraavien määritetyyppien valittavissa: **Valuutta**, **Desimaali** ja **Kokonaisluku**. 
+    - **Alue** – Tämä asetus on seuraavien määritetyyppien valittavissa: **Valuutta**, **Desimaali** ja **Kokonaisluku**.
     - **Liukusäädin** – Tämä asetus on seuraavien määritetyyppien valittavissa: **Valuutta**, **Desimaali** ja **Kokonaisluku**.
     - **Liukusäädin palkeilla** – Tämä asetus on seuraavien määritetyyppien valittavissa: **Valuutta**, **Desimaali** ja **Kokonaisluku**.
 
@@ -228,13 +228,13 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
 5. Valitse **Tuotteet**-pikavälilehdessä tarvittava tuote ja valitse sitten **Määritteet** tuoteruudukon yläpuolella.
 6. Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:
 
-   - Jaettu tuotemedia
-   - Yhteiset tuotemääritteet
-   - Kanavamedia
-   - Kanavan tuotemääritteet
+    - Jaettu tuotemedia
+    - Yhteiset tuotemääritteet
+    - Kanavamedia
+    - Kanavan tuotemääritteet
 
-     > [!NOTE]
-     > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
+    > [!NOTE]
+    > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
 
 ![Luettelon tuotemääriteryhmät](media/CatalogProdAttrValues.png)
 
@@ -250,11 +250,11 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
 
 5. Päivitä tarvittavien määritteiden arvot seuraavissa pikavälilehdissä:
 
-   - Jaettu tuotemedia
-   - Yhteiset tuotemääritteet
-   - Kanavamedia
-   - Kanavan tuotemääritteet
+    - Jaettu tuotemedia
+    - Yhteiset tuotemääritteet
+    - Kanavamedia
+    - Kanavan tuotemääritteet
 
-     > [!NOTE]
-     > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
+    > [!NOTE]
+    > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
 

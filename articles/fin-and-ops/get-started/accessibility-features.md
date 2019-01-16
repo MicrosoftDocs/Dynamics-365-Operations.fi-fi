@@ -16,10 +16,10 @@ ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a67b51ced4bea11be258aed359a758d88294beb1
-ms.openlocfilehash: bc48aa5ccf50705ef0c5087608798875953fe888
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: f88b485b0bdbf66532adff530e399bdd9d5b0ed5
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -41,7 +41,7 @@ Useimmat käyttäjät syöttävät päivittäin paljon tietoja ja käyttävät p
 
 Jos sivulle siirrytään Siirtymisruutu-valikon avulla, sinne pääsee myös sivun vasemmassa ruudussa olevan **hakukentän** avulla. Paina näppäinyhdistelmää Alt+G ja siirrä kohdistus **hakukenttään**. Kirjoita sitten sivun nimi tai kuvaus.
 
-![Hakuruutuun kirjoitettiin Pankkitilit](media/6d08b0be32808221023e2aa92d69fd70.png  "Hakuruutuun kirjoitettiin Pankkitilit")
+![Hakuruutuun kirjoitettiin Pankkitilit](media/6d08b0be32808221023e2aa92d69fd70.png "Hakuruutuun kirjoitettiin Pankkitilit")
 
 Lisätietoja on kohdassa [Siirtymishaku](navigation-search.md).
 
@@ -56,17 +56,17 @@ Jokaista sivun toimintoa voi käyttää näppäimistön sarkainjärjestyksen avu
 
 Haluat suorittaa **Sähköposti-ilmoitusloki**-toiminnon, joka on toimintoruudun **Myyntitilaus**-välilehden **Sähköposti-ilmoitus**-ryhmässä.
 
-![Toimintoruudun Sähköposti-ilmoituslokitoiminto](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg  "Toimintoruudun Sähköposti-ilmoituslokitoiminto")
+![Toimintoruudun Sähköposti-ilmoituslokitoiminto](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Toimintoruudun Sähköposti-ilmoituslokitoiminto")
 
 Näppäimistön käyttäminen on eräs vaihtoehto. Paina näppäinyhdistelmää Ctrl+F6 ja siirrä kohdistus toimintoruutuun. Paina sitten sarkainnäppäintä toistuvasti ja siirry kaikkien välilehtien ja toimintojen kautta **Sähköposti-ilmoitusloki** -toimintoon.
 
 Voit suorittaa toiminnon myös suoremmin. Paina missä tahansa sivun kohdassa näppäinyhdistelmää Ctrl+heittomerkki ('), jolloin näkyviin tulee toimintojen hakukenttä.
 
-![Toimintojen hakuruutu](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg  "Toimintojen hakuruutu")
+![Toimintojen hakuruutu](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Toimintojen hakuruutu")
 
 Kirjoita hakukenttään toimintoa kuvaavia sanoja. Toiminto on käytettävissä ja voit suorittaa sen suoraan. Kirjoita esimerkiksi **sähköposti**, **ilmoit** (osa sanasta) tai **loki**. Tämän jälkeen voit hypätä Sähköposti-ilmoitusloki-toimintoon.
 
-![Hakuruutuun kirjoitettiin Sähköposti](media/image4.png "Hakuruutuun kirjoitettiin Sähköposti") 
+![Hakuruutuun kirjoitettiin Sähköposti](media/image4.png "Hakuruutuun kirjoitettiin Sähköposti")
 
 ![Hakuruutuun kirjoitettiin Ilmoitu](media/image5.png "Hakuruutuun kirjoitettiin Ilmoitu")
 
@@ -82,7 +82,7 @@ Jokaista kenttää ei tarvita päivittäin, kun suoritetaan järjestelmän tyypi
 
 Tehtävien suorituksessa usein käyttämäsi kenttä ei ehkä kuitenkaan ole mukana sarkainten oletusjärjestyksessä. Jos käytössä on Windows Narrator, voit ottaa kentät käyttöön Windows Narrator -ohjelman näppäimistötoimintojen avulla ja tarkastella kenttien sisältöä. Vaihtoehtoisesti voit ottaa käyttöön **Asetukset**-sivun **Parannettu sarkainjärjestys** -vaihtoehdon. Tämä vaihtoehto lisää kaikki muokattavat kentät ja vain luku -kentät sarkainjärjestykseen. Tämän jälkeen voit luoda mukautetun sarkainjärjestyksen sivun mukautuksen avulla ja jättää pois kentät, joita et haluat sarkainjärjestykseen. Lisätietoja mukauttamisesta on kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md).
 
-![Parannettu välilehtien järjestys -asetus](media/8c0f12bbb3f26032997ef0ba95d89b6a.png  "Parannettu välilehtien järjestys -asetus")
+![Parannettu välilehtien järjestys -asetus](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "Parannettu välilehtien järjestys -asetus")
 
 ## <a name="form-patterns"></a>Lomakemallit
 

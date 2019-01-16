@@ -19,10 +19,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: c718a71ca270c67118a90456bac0cf182032d3db
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,13 +32,13 @@ ms.lasthandoff: 08/08/2018
 
 ## <a name="overview-of-coupons"></a>Kuponkien yleiskatsaus
 
-Kupongit ovat koodeja ja viivakoodeja, joilla vähittäismyynnin alennukset lisätään tapahtumiin. Kussakin kupongissa voi olla useita koodeja, ja kullakin koodilla voi olla oma voimassaolopäivämäärä. 
+Kupongit ovat koodeja ja viivakoodeja, joilla vähittäismyynnin alennukset lisätään tapahtumiin. Kussakin kupongissa voi olla useita koodeja, ja kullakin koodilla voi olla oma voimassaolopäivämäärä.
 
-Kukin kuponki liittyy yhteen vähittäismyynnin alennukseen. Alennukseen liitetyt hintaryhmät määrittämät asiakkaat, jotka voivat käyttää kuponkia, tai kanavat, joissa kuponki on voimassa. 
+Kukin kuponki liittyy yhteen vähittäismyynnin alennukseen. Alennukseen liitetyt hintaryhmät määrittämät asiakkaat, jotka voivat käyttää kuponkia, tai kanavat, joissa kuponki on voimassa.
 
 Kupongit ovatkin siis eräänlainen ylimääräinen oikeellisuustarkistus muiden vähittäismyynnin alennusten lisäksi. Kuponki sisältää tarvittavat kuponkikoodit ja viivakoodit sekä kyseisteen koodien päivämääräalueet. Kupongissa voi olla myös valinnaisia käyttörajoituksia ja asiakkaalta edellytettäviä ominaisuuksia. Alennus ilmoittaa tuotejoukon, jota kuponki koskee. Alennusten hintaryhmät ilmoittavat asiakas-, kanava- tai luettelojoukon, jota kuponki koskee.
 
-Alennus ja kuponki luodaan kuponkia varten erikseen. Ne linkitetään sitten valitsemalla alennus Microsoft Dynamics 365 for Retailin kuponkisivulla. 
+Alennus ja kuponki luodaan kuponkia varten erikseen. Ne linkitetään sitten valitsemalla alennus Microsoft Dynamics 365 for Retailin kuponkisivulla.
 
 > [!NOTE]
 > Kun kuponki on linkitetty alennukseen, monet Microsoft Dynamics 365 for Retailin alennussivun kentät muuttuvat vain luku -muotoisiksi, sillä niitä hallitaan kupongin asetuksista. Niitä ovat esimerkiksi tilan ja vakiopäivämääräalueen kentät.
@@ -54,25 +54,25 @@ Rajaa noudatetaan kupongin kuponkikoodikohtaisesti. Esimerkiksi kaksi kuponkikoo
 
 ## <a name="managing-coupons"></a>Kuponkien hallinta
 
-Alennus ja kuponki on luotava erikseen. Ne linkitetään sitten valitsemalla alennus kuponkisivulla. Kun kuponki on linkitetty alennukseen, monet alennuskentät muuttuvat vain luku -muotoisiksi, sillä niitä hallitaan kupongin asetuksista. Niitä ovat esimerkiksi tilan ja vakiopäivämääräalueen kentät.  
+Alennus ja kuponki on luotava erikseen. Ne linkitetään sitten valitsemalla alennus kuponkisivulla. Kun kuponki on linkitetty alennukseen, monet alennuskentät muuttuvat vain luku -muotoisiksi, sillä niitä hallitaan kupongin asetuksista. Niitä ovat esimerkiksi tilan ja vakiopäivämääräalueen kentät.
 
 Kupongit ovatkin nyt eräänlainen ylimääräinen oikeellisuustarkistus muiden vähittäismyynnin alennusten lisäksi. Kuponki sisältää tarvittavat kuponkikoodit ja viivakoodit sekä kyseisteen koodien päivämääräalueet, käyttörajoitukset ja asiakkaalta edellytettävän ominaisuuden. Alennus ilmoittaa tuotejoukon, jota kuponki koskee. Alennusten hintaryhmät ilmoittavat asiakas-, kanava- tai luettelojoukon, jota kuponki koskee.
 
-## <a name="system-setup-for-coupons"></a>Kupongeissa tarvittavat järjestelmäasetukset 
+## <a name="system-setup-for-coupons"></a>Kupongeissa tarvittavat järjestelmäasetukset
 
-Ennen kuin kupongin määrittämistä on määritettävä kupongin viivakoodi ja kaksi kuponkinumerosarjaa. 
+Ennen kuin kupongin määrittämistä on määritettävä kupongin viivakoodi ja kaksi kuponkinumerosarjaa.
 
-1.  Luo **Muotomerkit**-sivulla kuponkikoodin muotomerkit. Voit valita minkä tahansa käyttämättömän merkin.
-2.  Luo **Viivakoodin muotoasetukset** -sivulla uusi viivakoodin muoto Valitse **Tyyppi**-kentässä **Kuponki**.
-3.  Luo **Viivakoodiasetukset**-sivulla uusi juuri luomaasi viivakoodin muotoa käyttävä viivakoodi.
-4.  Luo **Numerosarjat**-sivulla kaksi uutta numerosarjaa. Toinen numerosarja on tarkoitettu kuponkikooditunnukselle ja toinen kupongin numerolle. Kuponkikooditunnus on kunkin kupongin kuponkikoodin yksilöllinen tunnus. Kupongin numero on kupongin yksilöllinen tunnus. Kussakin kupongissa voi useita on kupongin käynnistäviä koodeja ja viivakoodeja.
+1. Luo **Muotomerkit**-sivulla kuponkikoodin muotomerkit. Voit valita minkä tahansa käyttämättömän merkin.
+2. Luo **Viivakoodin muotoasetukset** -sivulla uusi viivakoodin muoto Valitse **Tyyppi**-kentässä **Kuponki**.
+3. Luo **Viivakoodiasetukset**-sivulla uusi juuri luomaasi viivakoodin muotoa käyttävä viivakoodi.
+4. Luo **Numerosarjat**-sivulla kaksi uutta numerosarjaa. Toinen numerosarja on tarkoitettu kuponkikooditunnukselle ja toinen kupongin numerolle. Kuponkikooditunnus on kunkin kupongin kuponkikoodin yksilöllinen tunnus. Kupongin numero on kupongin yksilöllinen tunnus. Kussakin kupongissa voi useita on kupongin käynnistäviä koodeja ja viivakoodeja.
 
     > [!NOTE]
     > Numerosarjaksi on **Alue**-kentässä valittava **Yritys**. Useimmissa tapauksissa kumpikin numerosarja pitäisi luoda automaattisesti.
 
-5.  Valitse **Vähittäismyynnin parametrit** -sivun **Viivakoodit**-välilehdessä aiemmin luomasi viivakoodi.
-6.  Valitse **Vähittäismyynnin jaetut parametrit** -sivun **Numerosarjat**-välilehdessä kuponkinumerolle ja kuponkikooditunnukselle luomasi numerosarjat.
-7.  Voit nyt avata **Kupongit**-sivun ja luoda uusia kuponkeja.
+5. Valitse **Vähittäismyynnin parametrit** -sivun **Viivakoodit**-välilehdessä aiemmin luomasi viivakoodi.
+6. Valitse **Vähittäismyynnin jaetut parametrit** -sivun **Numerosarjat**-välilehdessä kuponkinumerolle ja kuponkikooditunnukselle luomasi numerosarjat.
+7. Voit nyt avata **Kupongit**-sivun ja luoda uusia kuponkeja.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Osittaisten päivitysten vaikutus kuponkeihin
 

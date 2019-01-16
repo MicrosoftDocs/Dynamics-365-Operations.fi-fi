@@ -3,7 +3,7 @@ title: Taloushallinnon dimensiot
 description: "Tässä ohjeaiheessa kerrotaan erityyppisistä taloushallinnon dimensioista ja niiden määrittämisestä."
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
-ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
+ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
 ms.contentlocale: fi-fi
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -93,6 +93,8 @@ Voit käyttää arvoja tietueiden, kuten asiakkaan ja toimittajan tietuiden, hal
 Tätä toimintoa ohjataan dimension asetuksella. Tämä asetus on nimeltään **Kopioi arvot tähän dimensioon kullekin uudelle luodulle dimension nimelle**, jossa **dimension nimi** on dimension nimi. Asetus on oletusarvoisesti poissa käytöstä. Se voidaan kuitenkin ottaa käyttöön milloin tahansa.
 
 Jos tietueet ovat jo olemassa dimensiossa, päätietueet päivitetään, kun otat toiminnon käyttöön. Nykyisiä asiakirjoja ja tapahtumia ei kuitenkaan päivitetä.
+
+Jos luot päätietueen mallin avulla, varmista, että mallin päädimension arvo on tyhjä. Jos luot esimerkiksi asiakkaita mallista, varmista, että mallin asiakasdimensio on tyhjä. Asiakasdimension arvo tulee oletusarvoisesti uudesta asiakasnumerosta, kun luot uuden asiakkaan.  
 
 ## <a name="derived-dimensions"></a>Johdetut dimensiot
 

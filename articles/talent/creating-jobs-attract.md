@@ -3,7 +3,7 @@ title: "Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa"
 description: "Tässä ohjeaiheessa käsitellään työn elementtejä Attractissa. Siinä käsitellään myös työn luomista."
 author: josaw
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 12/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: af945042c150fff1a95cdb046f2a712cb2c2c061
+ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
+ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/23/2018
 
 ---
 
@@ -75,7 +75,25 @@ Lisätietoja työhönottoprosessiin lisättävistä tehtävistä on kohdassa [Ty
 
 ## <a name="postings"></a>Kirjaukset
 
-Kun työ on aktivoitu, se voidaan julkaista. Vain työhönottajat ja järjestelmänvalvojat voivat julkaista töitä. Työ voidaan julkaista joko Talent Careers -sivustossa (Microsoft Dynamics 365 for Talentin urasivustossa) tai LinkedInissä. Attract-ryhmä pyrkii tekemään jatkuvasti yhteistyötä työpaikkailmoitussivujen kanssa. Tämä luettelo tuleekin tämän vuoksi laajenemaan ajan mittaan.
+Kun työ on aktivoitu, se voidaan julkaista. Vain työhönottajat ja järjestelmänvalvojat voivat julkaista töitä. Työ voidaan julkaista joko Talent Careers -sivustossa (Microsoft Dynamics 365 for Talentin urasivustossa) tai LinkedInissä. 
+
+> [!NOTE]
+> Työpaikan julkaisuprosessissa LinkedIniin on otettava huomioon kolme tärkeää seikkaa.
+> 1. LinkedIniin julkaistavat työpaikat julkaistaan rajoitetun luettelon työpaikkoina. Rajoitetun luettelon työpaikkoja ei voi markkinoida koko LinkedIn-sivustossa. Jos haluat markkinoida LinkedIniin Attractista julkaistua rajoitetun luettelon työpaikkaa, ota työpaikan paketointi käyttöön LinkedInissä. Lisätietoja on seuraavissa linkeissä. Voit pyytää lisätietoja myös LinkedInin tuesta.
+>
+>    [Rajoitettujen luetteloiden vertailu työpaikkojen paketoinnin Premium-työpaikkoihin](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
+>
+>    [Usein kysyttyjä kysymyksiä työpaikan paketoinnista](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
+>
+> 1. Kun Attract julkaisee työpaikkoja LinkedIniin, se välittää työpaikkaan liittyvän Microsoft 365 -organisaation nimen. LinkedIn linkittää työpaikat LinkedInin puoleiseen yritykseen välitetyn organisaation nimen perusteella. Jos työpaikka on väärän yrityksen luettelossa LinkedInissä, tarkista, että Microsoft 365 -organisaation nimi vastaa yrityksen nimeä LinkedInissä.  
+>
+>    [Osoitteen, yhteyshenkilöiden ja muiden tietojen muuttaminen](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
+>
+>    Jos tämän vaiheen jälkeen ilmenee ongelmia, ota yhteys LinkedInin tukeen. 
+> 
+> 1. Voi kestää jopa 24 tuntia, ennen kuin LinkedIniin julkaistut työpaikat näkyvät ehdokkaille LinkedInissä. Tämä johtuu LinkedInin erätyönä tapahtuvasta julkaisuprosessista.
+
+Attract-ryhmä tekee jatkuvasti yhteistyötä työpaikkailmoitussivujen kanssa. Tämä luettelo tulee laajenemaan ajan mittaan.
 
 Lisätietoja työpaikkailmoituksista on kohdassa [Attractin urasivuston toiminnot](./career-site.md).
 

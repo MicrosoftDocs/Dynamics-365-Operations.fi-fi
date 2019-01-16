@@ -3,7 +3,7 @@ title: Affordable Care Act (ACA) -raporttien luominen
 description: "Toiminnon tarkoituksena on auttaa niitä työnantajia, joiden on seurattava lomakkeissa 1095-B- ja 1095-C-ilmoitettavia tietoja. Näitä lomakkeita käytetään Affordable Care Act -lain työnantajan valtakirjaosassa. Huomaa, että toiminto on käytössä vain yhdysvaltalaisissa yrityksissä."
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
+ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
+ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/17/2018
 
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Affordable Care Act (ACA) -raporttien luominen
@@ -54,7 +54,7 @@ Voit ilmoittaa **Huollettavaa koskevien kattavuuspäivämäärien hallinta** -si
 ## <a name="generate-1095b-and-1095c-forms"></a>1095B- ja 1095C-lomakkeiden luominen
 Voit luoda 1095-B- ja 1095-C-lomakkeita myös tuotteesta ja jakaa ne työntekijöille. Järjestelmässä voidaan luoda myös sähköinen 1095-C- ja vastaava 1094-C-tiedosto, jotka voidaan lähettää IRS-virastoon.  
 
-Anna 1095-C-lomaketta luotaessa soveltuva kalenteri- tai verovuosi, jos haluat tulostaa kaksi- tai kolmisivuisen lomakkeen. Kolmisivuista lomaketta tarvitaan vain, jos työnantaja tarjoaa omakustanteisen vakuutuksen ja työntekijällä on yli kuusi katettua huollettavaa (työntekijä mukaan lukien). Kaksisivuista lomaketta luotaessa järjestelmä havaitsee automaattisesti, jos työntekijällä on yli 6 katettua huollettavaa, eikä kyseistä työntekijää sisällytetä lomaketta luotaessa. Lisäksi järjestelmä sisällyttää kolmisivuista lomaketta luotaessa vain ne työntekijät, joilla on yli kuusi katettua huollettavaa.
+Anna 1095-C-lomaketta luotaessa oikea verovuosi ja ilmaise, onko sosiaaliturvatunnukset peitettävä. Jos tulostat 1095-C-lomakkeet yli 500 työntekijälle, PDF-tiedostoja on useita. Lisäksi suositellaan, että **Tiedoston enimmäiskoko** -asetukseksi määritetään **Tiedostonhallintaparametrit**-ikkunassa 150 Mt.
 
 ## <a name="viewing-information"></a>Tietojen tarkastelu
 Voit tarkistaa **Työntekijän Affordable Care -kattavuus** -sivulla kuhunkin kattavuusryhmään määritetyt työntekijät, työntekijät, joita ei tarvitse sisällyttää raporttiin, ja määrittämättömät työntekijät.

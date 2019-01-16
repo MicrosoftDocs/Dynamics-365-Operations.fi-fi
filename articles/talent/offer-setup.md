@@ -3,7 +3,7 @@ title: "Tarjoustenhallinnan määrittäminen"
 description: "Tässä ohjeaiheessa käsitellään tarjousten määrittämistä Talentissa."
 author: josaw
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fa2f2f9f67562524961352a87a7db49992776e46
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="set-up-offer-management"></a>Tarjoustenhallinnan määrittäminen 
@@ -105,7 +105,7 @@ Lataa tarjouksen tietosääntötiedosto seuraavasti:
 
 1.  Voit poistaa palvelimeen ladatun aiemmin luodun sääntöjoukon, jos määritettävää paikkamerkkiä ei käytetä toisessa asiakirjamallissa.
 
->[!HUOMAUTUKSET]
+>[!NOTE]
 > - Kullakin paikkamerkillä voi olla vain yksi yksilöllinen sarakejoukko, josta se on riippuvainen. Jos esimerkki **vuosipalkka** on riippuvainen **työn sijainnista** ja **tasosta**, et voi ladata palvelimeen toista sääntöjoukkoa, jossa **vuosipalkka** on riippuvainen toisenlaisesta sarakejoukosta.
 
 > - Voit ladata tarjouksen tietojen näytesääntöjoukot **Tarjouksen tietojen säännöt** -sivun **Mallit**-välilehdessä.
@@ -136,7 +136,7 @@ Luo tarjouksen asiakirjamalli seuraavasti:
 
     - sijoittamalla tarjoustietojen paikkamerkin suoraan työpaikkaan tunnisteen avulla. Kirjoita ensin **\#** ja aloita sitten tarjoustietojen paikkamerkin nimen kirjoittaminen. Vaihtoehdot tulevaa näkyviin avattavana luettelon. Lisää tarjoustietojen paikkamerkki napsauttamalla sitä tai painamalla **Enter**-näppäintä.
 
-    >[!HUOMAUTUKSET]
+    >[!NOTE]
     > - Voit liittää paikkamerkin tarjouksen asiakirjamalliin ilman, että hakija näkee sen arvon, siirtämällä osoittimen tarjoustietojen paikkamerkin päälle ja napsauttamalla **Kiinnitä**-kuvaketta. Paikkamerkki siirretään nyt tarjouksen asiakirjamallin **Kiinnitetyn tarjouksen tiedot** -osaan. Voit poistaa kiinnityksen toimimalla samalla tavoin mutta valitsemalla **Poista kiinnity** tarjoustietojen paikkamerkkiluettelossa.
 
     > - Voit tarkastella aktiivisia tarjoustietojen paikkamerkkejä siirtymällä oikeassa ruudussa **Aktiiviset**-välilehteen.
@@ -175,7 +175,7 @@ Tarjouspaketit ovat hakijan kanssa jaettavia tarjouksen tietoja, ja ne koostuvat
 
 1.  Valitse **Lisää malli**.
 
-    >[!HUOMAUTUKSET]
+    >[!NOTE]
     > - Voit joko luoda uuden mallin tai valita aiemmin luodun mallin.
 
     > - Jos päätät lisätä aiemmin luodun mallin, sinun on varmistettava, että tarjousasiakirjamalli on tallennettu, viimeistelty ja merkitty aktiiviseksi.
@@ -198,8 +198,10 @@ Tarjouksen luontiprosessissa on useita osia, joita Attractin järjestelmänvalvo
 
 - **Hakijan tarjouskokemus** – Järjestelmänvalvojana voi määrittää, onko kaikille tarjouksilla vanhentumispäivä ja jos on, mikä on vanhentumispäivämäärän oletussiirtymä. Voit myös määrittää, voiko hakija hylätä tarjouksen.
 
-- **Sähköiset allekirjoitukset** – Tällä hetkellä hakijoiden ainoa sähköinen allekirjoitusvaihtoehto on nimen kirjoittaminen tarjouspaketissa tarjouksen hyväksymisen yhteydessä. Jatkossa tulemme ottamaan integroimaan kumppanien muita sähköisiä allekirjoituspalveluja.
+- **Sähköiset allekirjoitukset** – Voit järjestelmänvalvojana valita menetelmä, jolla ehdokkaat allekirjoittavat tarjoukset.
+    - Adobe Sign – Kaikki tarjouspaketit lähetetään ja allekirjoitetaan Adobe Signin kautta. Jokaisella tarjouksen julkaisevalla tekijällä on oltava oma Attractiin yhdistetty Adobe Sign -käyttöoikeus. 
 
+    - ESign – Tämä oletusasetus on heti käyttövalmis, ja käyttäjä voi allekirjoittaa tarjouksen kirjoittamalla nimensä ja nimikirjaimensa.
 
 Lisätietoja tarjouksen luontiprosessista on kohdassa [Tarjousten luominen, hyväksyminen ja allekirjoittaminen](./creating-offers.md).
 
