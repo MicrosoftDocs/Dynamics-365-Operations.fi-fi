@@ -3,7 +3,7 @@ title: "Prosessien tehtävät"
 description: "Tässä ohjeaiheessa on tietoja erityyppisistä tehtävistä, joita voidaan käyttää työhönottoprosessissa."
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: ccd9e2d0ff1f7fb6825c6823936b4013b3054f5d
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -62,6 +62,10 @@ Haastattelu-tehtävä on valinnainen. Tässä tehtävässä on kolme osaa: Ehdok
 - Jos haluat pyytää ehdokkaiden käytettävyystiedot sähköpostitse, valitse **Pyydä ehdokkaan käytettävyystietoja** -asetukseksi **Käytössä**. Jos valitset **Ei käytössä**, tätä vaihetta ei näytetä työn työhönottoprosessissa.
 - Jos haluat käyttää Skype for Businessin suoratoisto- tai neuvottelupuheluominaisuutta, valitse **Verkkokokous**-kentässä **Skype for Business**. **Liity Skype-kokoukseen** -linkki lisätään sitten haastattelun kokouspyyntöön.
 - Jos haluat pyytää ehdokkaita varmistamaan aikataulun, valitse **Lähetä viesti ehdokkaalle** -asetukseksi **Käytössä**. Jos valitset **Ei käytössä**, ehdokkaat saavat haastatteluaikataulun vasta, kun he kirjautuvat ehdokasportaaliin.
+
+>[!NOTE]
+> - Kaikkien yksilöhaastattelujen muistutukset lähetetään haastattelijoille 24 tunnin välein, jos haastattelija ei vastaa (hyväksyy tai hylkää) haastattelupyyntöön.
+> - Paneelihaastatteluilla ei ole automaattisia muistutuksia haastattelupyyntöön vastaamisesta. Voit käynnistää muistutuksen manuaalisesti muokkaamalla haastattelua ja lähettämällä pyynnön takaisin haastattelijoille **Päivitä ja lähetä** -asetuksella.
 
 Palauteosassa voidaan antaa hakijaa koskevia suosituksia. He voivat antaa halutessaan myös palautetta. Jos otat **Peri palautteeseen osallistujat työhönottoryhmältä** -asetuksen käyttöön, rekrytoija, rekrytointipäällikkö ja haastattelijat siirtyvät automaattisesti Palaute-osaan. Organisaatiot voit antaa haastattelijoille mahdollisuuden tarkastella muiden palautteet, ennen kuin he lähettävät oman palautteensa. Organisaatiot voivat lisäksi antaa haastattelijoille mahdollisuuden muokata jo lähetettyä palautetta.
 

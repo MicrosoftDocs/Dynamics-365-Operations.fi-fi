@@ -31,33 +31,30 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa kerrotaan, miten voit muistiin sisältyvän ja reaaliaikaisen analytiikan avulla käsitellä ja kerätä asiakkaisiin sekä tuotteiden kannattavuuteen liittyviä tietoja Microsoft Dynamics 365 for Retail -tiedoista. 
+Tässä artikkelissa kerrotaan, miten voit muistiin sisältyvän ja reaaliaikaisen analytiikan avulla käsitellä ja kerätä asiakkaisiin sekä tuotteiden kannattavuuteen liittyviä tietoja Microsoft Dynamics 365 for Retail -tiedoista.
 
 Osana Dynamics 365 for Retailia käyttäjät voivat tutkia parhaiden asiakkaiden (10 - 100) tuottavuutta organisaatiohierarkian eri tasoilla perustuen yhteen seuraavista ehdoista:
 
--   Myyntisumma
--   Määrä
--   Bruttovoittokate
--   Marginaalin prosenttiosuus
+- Myyntisumma
+- Määrä
+- Bruttovoittokate
+- Marginaalin prosenttiosuus
 
 Voit käyttää tässä arvioinnissa valmista **Parhaat asiakkaat** -raporttia, jonka voit avata mistä tahansa seuraavista sijainneista:
 
--   **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Suurimpien asiakkaiden raportti**
--   **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Suurimpien asiakkaiden raportti**
+- **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Suurimpien asiakkaiden raportti**
+- **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Suurimpien asiakkaiden raportti**
 
 Samalla tavoin, käyttäjät voivat tutkia parhaiden tuotteiden (10 - 100) tuottavuutta eri organisaatiohierarkian tasoilla perustuen yhteen seuraavista kriteereistä:
 
--   Myyntisumma
--   Määrä
--   Bruttovoittokate
--   Marginaalin prosenttiosuus
+- Myyntisumma
+- Määrä
+- Bruttovoittokate
+- Marginaalin prosenttiosuus
 
 Voit käyttää tässä arvioinnissa valmista **Parhaat tuotteet**-raporttia, jonka voit avata mistä tahansa seuraavista sijainneista:
 
--   **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Parhaat tuotteet -raportti**
--   **Luokka- ja tuotehallinta** -työtila &gt; **Retail** &gt; **Tuotteet ja luokat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportti** &gt; **Parhaat tuotteet -raportti**
--   **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Parhaat tuotteet -raportti**
-
-
-
+- **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Parhaat tuotteet -raportti**
+- **Luokka- ja tuotehallinta** -työtila &gt; **Retail** &gt; **Tuotteet ja luokat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportti** &gt; **Parhaat tuotteet -raportti**
+- **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Parhaat tuotteet -raportti**
 

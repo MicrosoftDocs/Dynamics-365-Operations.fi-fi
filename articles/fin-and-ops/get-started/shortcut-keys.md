@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
-ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
 ms.contentlocale: fi-fi
-ms.lasthandoff: 10/25/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,36 +29,35 @@ ms.lasthandoff: 10/25/2018
 
 [!include [banner](../includes/banner.md)]
 
-Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operationsissa. 
+Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operationsissa.
 
-**Huomautus:** Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
+> [!NOTE]
+> Kuvatut pikanäppäimet viittaavat amerikkalaiseen näppäimistöasetteluun. Muiden näppäimistöasettelujen pikanäppäimet eivät ehkä vastaa tarkalleen amerikkalaista näppäimistöä.
 
 ## <a name="finding-a-shortcut"></a>Pikanäppäimen löytäminen
-Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytettävissä olevat pikanäppäimet suoraan käyttöliittymästä. Napsauta ohjausobjektia hiiren kakkospainikkeella ja valitse **Näytä pikanäppäimet**. Näyttöön tulee valintaikkuna, jossa näkyvät pikanäppäimet, joita voit käyttää sivun eri osissa. 
 
+Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytettävissä olevat pikanäppäimet suoraan käyttöliittymästä. Napsauta ohjausobjektia hiiren kakkospainikkeella ja valitse **Näytä pikanäppäimet**. Näyttöön tulee valintaikkuna, jossa näkyvät pikanäppäimet, joita voit käyttää sivun eri osissa.
 
 ## <a name="action-shortcuts"></a>Toimintojen pikanäppäimet
 
-|                                                   |                                  |
-|---------------------------------------------------|----------------------------------|
-| **Toiminto**                                    | **Näppäinyhdistelmä**                        |
-| Avaa toiminnon haku                                | Ctrl+ tai Alt+Q                  |
-| Siirry vakiotoimintoruutuun                  | ALT + M,A tai Ctrl + F6               |
-| Avaa toimintoruudun tai valikon välilehti           | Enter tai Väli tai Alt+Alanuoli |
-| Siirry valikossa seuraavaan tai edelliseen vaihtoehtoon            | Ylänuoli/alanuoli            |
-| Sulje toimintoruudun tai valikon välilehti          | Esc                              |
-| Hiiren kakkospainikkeen napsautus                            | Vaihto+F10                        |
-| Avaa Finance and Operations -pikavalikko      | Ctrl+F10                         |
-| Suorita oletuspainike lomakkeessa/valintaikkunassa   | Alt+Enter                        |
-| Painikkeen tai ruudun napsautus                            | Enter tai Väli                   |
-| Näytä tai päivitä määräruudun tiedot         | Alt+Ylänuoli                     |
-| Tällä hetkellä käytettävissä olevien pikanäppäinten tarkasteleminen                | Alt+Vaihto+K                      |                              
+| Toiminto                                      | Näppäinyhdistelmä                            |
+|-------------------------------------------------|----------------------------------|
+| Avaa toiminnon haku                              | Ctrl+' tai Alt+Q                  |
+| Siirry vakiotoimintoruutuun                | ALT + M,A tai Ctrl + F6               |
+| Avaa toimintoruudun tai valikon välilehti         | Enter tai Väli tai Alt+Alanuoli |
+| Siirry valikossa seuraavaan tai edelliseen vaihtoehtoon          | Ylänuoli/alanuoli            |
+| Sulje toimintoruudun tai valikon välilehti        | Esc                              |
+| Hiiren kakkospainikkeen napsautus                          | Vaihto+F10                        |
+| Avaa Finance and Operations -pikavalikko    | Ctrl+F10                         |
+| Suorita oletuspainike lomakkeessa/valintaikkunassa | Alt+Enter                        |
+| Painikkeen tai ruudun napsautus                          | Enter tai Väli                   |
+| Näytä tai päivitä määräruudun tiedot       | Alt+Ylänuoli                     |
+| Tällä hetkellä käytettävissä olevien pikanäppäinten tarkasteleminen              | Alt+Vaihto+K                      |
 
 ## <a name="date-picker-shortcuts"></a>Päivämäärävalitsimen pikanäppäimet
 
-|                                       |                                           |
+| Toiminto                            | Näppäinyhdistelmä                                     |
 |---------------------------------------|-------------------------------------------|
-| **Toiminto**                        | **Näppäinyhdistelmä**                                 |
 | Avaa päivämäärävalitsin                  | Alt+Alanuoli                            |
 | Siirry päivämäärävalitsimessa päivämäärästä toiseen | Ctrl + nuolinäppäimet                           |
 | Siirry seuraavaan/edelliseen kuukauteen       | Page Up / Page Down                       |
@@ -70,9 +69,8 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 ## <a name="factbox-shortcuts"></a>Tietoruudun pikanäppäimet
 
-|                                                                                 |                                           |
+| Toiminto                                                                      | Näppäinyhdistelmä                                     |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| **Toiminto**                                                                  | **Näppäinyhdistelmä**                                 |
 | Avaa tietoruutu (tai siirrä kohdistus tietoruutuun, jos se on avoinna) | ALT + M,B tai Ctrl + F2                        |
 | Sulje tietoruutu (kun kohdistus on tietoruudussa)                         | Esc                                       |
 | Siirry seuraavaan/edelliseen tietoruutuun (kun kohdistus on tietoruudussa)              | Alt+Vaihto+Alanuoli / Alt+Vaihto+Ylänuoli |
@@ -82,42 +80,39 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 ## <a name="filtering-shortcuts"></a>Suodatuksen pikanäppäimet
 
-|                                    |                          |
-|------------------------------------|--------------------------|
-| **Toiminto**                     | **Paina**                |
-| Avaa nykyisen sarakkeen ruudukkosuodatus                        | Ctrl+G                   |
-| Sulje nykyisen sarakkeen ruudukkosuodatus                       | Esc                      |
+| Toiminto                                                                                                          | Näppäinyhdistelmä                    |
+|---------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Avaa nykyisen sarakkeen ruudukkosuodatus                                                                          | Ctrl+G                   |
+| Sulje nykyisen sarakkeen ruudukkosuodatus                                                                         | Esc                      |
 | Avaa suodatinruutu (tai siirrä kohdistus suodatinruudusta päälomakkeeseen ja takaisin, jos suodatinruutu on jo avoinna) | ALT + M,F tai Ctrl + F3       |
-| Sulje suodatinruutu (kun kohdistus on suodatinruudussa)             | Esc                      |
-| Avaa lisäasetusten suodatus/lajittelu                                      | Ctrl+Vaihto+F3            | 
+| Sulje suodatinruutu (kun kohdistus on suodatinruudussa)                                                               | Esc                      |
+| Avaa lisäasetusten suodatus/lajittelu                                                                                        | Ctrl+Vaihto+F3            |
 
 ## <a name="form-shortcuts"></a>Lomakkeen pikanäppäimet
 
-|                                                     |                   |
-|-----------------------------------------------------|-------------------|
-| **Toiminto**                                      | **Paina**         |
-| Luo uusi tietue                                 | Alt+N             |
-| Tietueen poistaminen                                     | Alt+Del tai Alt+F9 |
-| Tallenna tietue                                         | Alt+S tai Ctrl+S   |
-| Palauta                                    | Ctrl+Vaihto+F5     |
-| Päivitä tiedot                                        | Vaihto+F5          |
-| Siirry lomakkeessa ensimmäiseen näkyvään kenttään         | Alt+Vaihto+F       |
-| Ota muokkaustila käyttöön tai poista se käytöstä                                    | F2                |
-| Asiakirjan liittäminen                                   | Ctrl+Vaihto+A      |
-| Vie Exceliin                                     | Ctrl+Vaihto+E      |
-| Siirry edelliseen tietueeseen (ruudukon ulkopuolella)        | Ctrl+Ylänuoli     |
-| Siirry seuraavaan tietueeseen (ruudukon ulkopuolella)            | Ctrl+Alanuoli   |
-| Siirry ensimmäiseen tietueeseen (ruudukon ulkopuolella)           | Ctrl+Home         |
-| Siirry viimeiseen tietueeseen (ruudukon ulkopuolella)            | Ctrl+End          |
-| Sulje lomake (napsauta Takaisin)                         | Esc               |
-| Sulje ja tallenna lomake                   | Vaihto+Esc         |
-| Sulje lomake ja hylkää tallentamattomat muutokset       | Alt+Vaihto+Q       |
+| Toiminto                                    | Näppäinyhdistelmä             |
+|-----------------------------------------------|-------------------|
+| Luo uusi tietue                           | Alt+N             |
+| Tietueen poistaminen                               | Alt+Del tai Alt+F9 |
+| Tallenna tietue                                   | Alt+S tai Ctrl+S   |
+| Palauta                              | Ctrl+Vaihto+F5     |
+| Päivitä tiedot                                  | Vaihto+F5          |
+| Siirry lomakkeessa ensimmäiseen näkyvään kenttään   | Alt+Vaihto+F       |
+| Ota muokkaustila käyttöön tai poista se käytöstä                              | F2                |
+| Asiakirjan liittäminen                             | Ctrl+Vaihto+A      |
+| Vie Exceliin                               | Ctrl+Vaihto+E      |
+| Siirry edelliseen tietueeseen (ruudukon ulkopuolella)  | Ctrl+Ylänuoli     |
+| Siirry seuraavaan tietueeseen (ruudukon ulkopuolella)      | Ctrl+Alanuoli   |
+| Siirry ensimmäiseen tietueeseen (ruudukon ulkopuolella)     | Ctrl+Home         |
+| Siirry viimeiseen tietueeseen (ruudukon ulkopuolella)      | Ctrl+End          |
+| Sulje lomake (napsauta Takaisin)                   | Esc               |
+| Sulje ja tallenna lomake             | Vaihto+Esc         |
+| Sulje lomake ja hylkää tallentamattomat muutokset | Alt+Vaihto+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Lomakkeen siirtymispikanäppäimet
 
-|                                                     |                                              |
+| Toiminto                                          | Näppäinyhdistelmä                                        |
 |-----------------------------------------------------|----------------------------------------------|
-| **Toiminto**                                      | **Näppäinyhdistelmä**                                    |
 | Siirry seuraavaan/edelliseen kenttään                     | Sarkain / Vaihto+Sarkain                              |
 | Siirry seuraavaan/edelliseen välilehteen                       | Alt+Vaihto+Oikea nuoli / Alt+Vaihto+Vasen nuoli |
 | Siirry &lt;n&gt;. välilehteen                         | Alt+Vaihto+&lt;n&gt; (&lt;n&gt; = 1–9)        |
@@ -134,30 +129,28 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 ## <a name="grid-shortcuts"></a>Ruudukon pikanäppäimet
 
-|                                                                                                                        |                                 |
+| Toiminto                                                                                                             | Näppäinyhdistelmä                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Toiminto**                                                                                                         | **Näppäinyhdistelmä**                       |
 | Siirry seuraavaan/edelliseen sarakkeeseen                                                                                       | Sarkain / Vaihto+Sarkain                 |
 | Siirry seuraavalle/edelliselle riville                                                                                          | Ylänuoli/alanuoli           |
-| Siirry seuraavalle/edelliselle riville valitsematta<br><br>**Huomautus:** tämä oikotie koskee ainoastaan monivalintaskenaarioita. | Ctrl+Ylänuoli / Ctrl+Alanuoli |
-| Valitse/tyhjennä nykyinen rivi<br><br>**Huomautus:** tämä oikotie koskee ainoastaan monivalintaskenaarioita.                    | Ctrl+Väli / Ctrl+Napsautus         |
-| Lisää seuraava/edellinen rivi valittuun joukkoon<br><br>**Huomautus:** tämä oikotie koskee ainoastaan monivalintaskenaarioita.   | Shift+Space                     |
-| Lisää sarja rivejä valittuun joukkoon<br><br>**Huomautus:** tämä oikotie koskee ainoastaan monivalintaskenaarioita.         | Vaihto+Napsautus                     |
+| Siirry seuraavalle/edelliselle riville valitsematta<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote> | Ctrl+Ylänuoli / Ctrl+Alanuoli |
+| Valitse/tyhjennä nykyinen rivi<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote>                    | Ctrl+Väli / Ctrl+Napsautus         |
+| Lisää seuraava/edellinen rivi valittuun joukkoon<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote>   | Shift+Space                     |
+| Lisää sarja rivejä valittuun joukkoon<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote>         | Vaihto+Napsautus                     |
 | Siirry seuraavalle/edelliselle tietosivulle                                                                                   | Page Up / Page Down             |
 | Luo uusi rivi ruudukon alaosaan                                                                             | Alanuoli (edellisellä rivillä)  |
 | Valitse kaikki rivit tai poista ne                                                                                               | Ctrl+Vaihto+M                    |
 | Siirry ensimmäiseen tietueeseen                                                                                               | Ctrl+Home                       |
 | Siirry viimeiseen tietueeseen                                                                                                | Ctrl+End                        |
-| Suorita ruudukon oletustoiminto<br><br>**Huomautus:** tämä pikanäppäin on käytössä, kun kohdistus on solussa, joka sisältää hyperlinkin ja kaikki kyseisen sarakkeen solut sisältävät linkkejä.                 | Enter                           |
+| Suorita ruudukon oletustoiminto<blockquote>[!NOTE] Tämä pikanäppäin on käytössä, kun kohdistus on solussa, joka sisältää hyperlinkin ja kaikki kyseisen sarakkeen solut sisältävät linkkejä.</blockquote> | Enter                           |
 | Kohdistuksen siirtäminen valitun rivin ja otsikkorivin välillä                                                               | Alt+Vaihto+H                     |
 | Suurenna tai pienennä nykyistä saraketta (kohdistus otsikkorivillä)                                                  | Oikea nuoli, vasen nuoli        |
 | Avaa nykyisen sarakkeen ruudukkosuodatus (kohdistus otsikkorivillä)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Syötteiden ohjausobjektien pikanäppäimet
 
-|                                                                              |                               |
+| Toiminto                                                                   | Näppäinyhdistelmä                         |
 |------------------------------------------------------------------------------|-------------------------------|
-| **Toiminto**                                                               | **Näppäinyhdistelmä**                     |
 | Avaa hyperlinkki                                                           | Ctrl+Enter                    |
 | Lisää istuntopäivämäärä päivämääräkenttään                                       | D+Sarkain                         |
 | Lisää nykyinen päivämäärä päivämääräkenttään                                       | T+Sarkain                         |
@@ -171,17 +164,15 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 ## <a name="messaging-shortcuts"></a>Viestinnän pikanäppäimet
 
-|                          |               |
+| Toiminto               | Näppäinyhdistelmä         |
 |--------------------------|---------------|
-| **Toiminto**           | **Näppäinyhdistelmä**     |
 | Siirry viestikeskukseen | Ctrl+Vaihto+F7 |
 | Siirry sanomapalkkiin    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Siirtymisen pikanäppäimet
 
-|                                                                               |                            |
+| Toiminto                                                                    | Näppäinyhdistelmä                      |
 |-------------------------------------------------------------------------------|----------------------------|
-| **Toiminto**                                                                | **Näppäinyhdistelmä**                  |
 | Siirry koontinäyttöön                                                           | Alt+Vaihto+Home             |
 | Siirry siirtymispalkkiin                                                    | ALT + M,N tai Alt + Vaihto + F1    |
 | Siirry yrityksen valitsimeen                                                    | Ctrl+Vaihto+O               |
@@ -201,9 +192,8 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 ## <a name="personalization-shortcuts"></a>Mukauttamisen pikanäppäimet
 
-|                                                                                                                        |                                     |
+| Toiminto                                                                                                             | Näppäinyhdistelmä                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Toiminto**                                                                                                         | **Näppäinyhdistelmä**                           |
 | Ota sivun mukauttamistila käyttöön                                                                          | Ctrl+Vaihto+P                        |
 | Käytä valintatyökalua (mukauttamistilassa)                                                                     | P                                   |
 | Avaa valitun ohjausobjektin pikamukautusikkunan (kun valintatyökalu on käytössä)                              | Väli tai Enter                      |
@@ -230,19 +220,17 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 
 ## <a name="segmented-entry-shortcuts"></a>Segmentoidun kirjauksen pikanäppäimet
 
-|                                                                                                                         |                                  |
+| Toiminto                                                                                                              | Näppäinyhdistelmä                            |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Toiminto**                                                                                                          | **Näppäinyhdistelmä**                        |
 | Avaa avattava luettelo (kun se on suljettu)                                                             | Alt+Alanuoli                   |
 | Siirrä kohdistus avattavassa luettelossa nykyisen segmentin syötekenttään (kun avattava luettelo on avoinna) | Alt+Alanuoli                   |
 | Sulje avattava luettelo                                                                                                | Alt+Ylänuoli                     |
 | Sulje/avaa avattavan luettelon oikeanpuoleinen osa                                                                      | Alt+Vasen nuoli / Alt+Oikea nuoli |
-| Siirry "Näytä kelvolliset" -tilasta "Näytä kaikki" -tilaan ja päinvastoin                                                                        | Alt+W                            |
+| Siirry Näytä kelvolliset -tilasta Näytä kaikki -tilaan ja päinvastoin                                                                        | Alt+W                            |
 | Valitse avattavasta luettelosta arvo ja siirry seuraavaan segmenttiin                                                       | Anna                            |
 | Siirry sivulla seuraavaan/edelliseen ohjausobjektiin (kun kohdistus on syötteen ohjausobjektissa)                                          | Sarkain / Vaihto+Sarkain                  |
 | Siirry lisätietoikkunan seuraavaan/edelliseen syöttökenttään (kun kohdistus on avattavassa luettelossa)                               | Sarkain / Vaihto+Sarkain                  |
 | Siirrä hakutuloksissa riviä ylös/alas                                                                                        | Ylänuoli/alanuoli            |
 | Siirrä hakutuloksissa sivua ylös/alas                                                                                       | Page Up / Page Down              |
 | Siirry haun ylä-/alareunaan                                                                                    | Home / End                       |
-
 

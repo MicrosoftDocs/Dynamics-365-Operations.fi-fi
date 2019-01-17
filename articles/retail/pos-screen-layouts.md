@@ -40,6 +40,7 @@ Seuraava kuva esittää eri yksiköiden suhteita, jotka muodostavat määritelt�
 ![POS-näytön asettelun yksikkö](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Visuaalinen profiili
+
 Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään määrittämään visuaalisia elementtejä, jotka ovat kassakonekohtaisia ja kaikille työntekijöille jaettuja. Jokainen käyttäjä, joka kirjautuu kassakoneeseen, näkee samat teemat, värit ja kuvat.
 
 ![Myyntipisteen (POS) vaalea Tervetuloa-teema](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään mä�
 - **Sovelluksen tausta** – Käyttäjät voivat määrittää myös yhtenäisen taustakuvan käytettäväksi koko sovelluksessa yhtenäisen teemavärin sijaan. Sisäänkirjautumisen taustat tulisi pitää mahdollisimman pieninä.
 
 ## <a name="screen-layouts"></a>Näytön asettelut
+
 Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien toiminnot, sisällön ja sijoittelut myyntipisteen Tervetuloa-näytössä ja **tapahtuma**-näytössä.
 
 ![Myyntipisteen näytön asettelun näkymä](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ Käynnistettäessä POS-sovellus valitsee automaattisesti lähimmän laitteeseen
 ![Myyntipisteen asettelukoot](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Painikeruudukot
+
 Voit konfiguroida ja määrittää painikeruudukoiden POS-Tervetuloa-näytön ja **Tapahtuma**-näytön asettelun kullekin koolle näyttöasettelussa. Tervetuloa-näytön painikeruudukot on aseteltu automaattisesti vasemmalta oikealle, pienimmästä numerosta (Tervetuloa-näyttö 1) suurimpaan numeroon.
 
 Koko myyntipisteen asetteluissa painikeruudukoiden sijoittelu on määritetty näytön asettelun suunnittelutyökalussa.
@@ -104,6 +107,7 @@ Kompakteissa myyntipisteiden asetteluissa painikeruudukot on aseteltu automaatti
 ![Kompaktit asettelun painikeruudukot](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a>Kuvat
+
 Voit määrittää kutakin näyttöasettelun kokoa varten kuvat, jotka sisällytetään POS-käyttöliittymään. POS-sovelluksen koko asetteluissa Tervetuloa-näyttöön voidaan määrittää yksi kuva. Kuva näkyy käyttöliittymän ensimmäisenä elementtinä vasemmalla puolella. **Tapahtuma**-näytössä kuvia voidaan käyttää välilehden kuvina tai logoina. Kompaktit myyntipisteen asettelut eivät käytä näitä kuvia.
 
 ### <a name="screen-layout-designer"></a>Näytön asettelun suunnittelutoiminto
@@ -141,11 +145,13 @@ Koko asettelun suunnittelutoiminnon avulla käyttäjät voivat vetää POS-käyt
     - **Mukautettu ohjausobjekti** – Mukautettu ohjausobjekti toimii näytössä paikkamerkkinä varaamassa tilaa mukautetulle sisällölle. Mukautettu ohjausobjekti on käytettävissä vain täydellisissä asetteluissa.
 
 ### <a name="compact-layout-designer"></a>Kompakti näytön asettelun suunnittelutoiminto
+
 Kuten täyden asettelun suunnittelutoiminnonkin, kompaktin suunnittelutoiminnon avulla voit määrittää myyntipisteen näyttöasettelun puhelimille ja pienille tableteille. Tässä tapauksessa itse asettelu on korjattu. Voit määrittää useita asetteluohjausobjekteja ja napsauttamalla hiiren oikealla painikkeella ja käyttämällä pikavalikkoa. Et kuitenkaan voi käyttää vedä ja pudota -toimintoja ylimääräistä sisältöä varten.
 
 ![Kompakti näytön asettelun suunnittelutoiminto](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Painikeruudukon suunnittelutoiminto
+
 Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita, joita käytetään myyntipisteen Tervetuloa-näytössä ja **Tapahtuma**-näytön täydellisille sekä kompakteille asetteluille. Samaa painikeruudukkoa voidaan käyttää eri asetteluissa ja asettelutyypeissä. Näytön asettelun suunnittelutoiminto käyttää ClickOnce-käyttöönottoteknologiaa lataamaan, asentamaan ja käynnistämään sovelluksen uusimman version aina, kun se avataan. Muista tarkistaa ClickOnce-käyttöönottoteknologiaa koskevat selainvaatimukset. Jotkut selaimet, kuten Google Chrome, edellyttävät laajennuksia.
 
 ![Painikeruudukon suunnittelutoiminto](../retail/media/Button-Grid-Designer.png)

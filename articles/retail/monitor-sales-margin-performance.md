@@ -35,21 +35,19 @@ Voit valvoa myynnin ja katetuoton kehittymistä reaaliajassa käyttämällä Mic
 
 Microsoft Dynamics 365 for Retailissa käyttäjät voivat valvoa myynnin ja katetuoton kehittymistä reaaliaikaisesti organisaatiohierarkian eri tasoilla seuraavissa dimensioissa:
 
--   Tuotteet
--   Luokat
--   Alennukset
--   Vuodet aikajaksona
--   Rekisterit/päätteet
--   Henkilökunta/työntekijät
--   Asiakkaat
--   Käyttöyksiköt
+- Tuotteet
+- Luokat
+- Alennukset
+- Vuodet aikajaksona
+- Rekisterit/päätteet
+- Henkilökunta/työntekijät
+- Asiakkaat
+- Käyttöyksiköt
 
 Kahden hierarkkista ruudukkorakennetta hyödyntävän yksilöllisen raportin avulla käyttäjät voivat lisäksi valvoa myynnin ja katetuoton kehittymistä porautumalla päätason luokan solmusta luokan yksittäisiin lehtisolmuihin vähittäismyynnin oletusarvoisessa tuoteluokkahierarkiassa. Käyttäjät voivat myös porautua päätason toimintayksiköstä yksittäiseen kanavaan organisaatiohierarkiassa, joka on määritetty oletusorganisaatiohierarkiaksi vähittäismyynnin raportointihierarkiaa varten. Raportit voi avata seuraavista sijainneista:
 
--   **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit**
--   **Luokka- ja tuotehallinta** -työtila &gt; **Retail** &gt; **Tuotteet ja luokat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportti**
--   **Hinnoittelun ja alennusten hallinta** -työtila &gt; **Retail** &gt; **Hinnoittelu ja alennukset** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit**
--   **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit**
-
-
+- **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit**
+- **Luokka- ja tuotehallinta** -työtila &gt; **Retail** &gt; **Tuotteet ja luokat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportti**
+- **Hinnoittelun ja alennusten hallinta** -työtila &gt; **Retail** &gt; **Hinnoittelu ja alennukset** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit**
+- **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit**
 

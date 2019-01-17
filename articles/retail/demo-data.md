@@ -20,10 +20,10 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 41930e89a7cae5cdb84e728da47de3bc5de312ca
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -41,7 +41,7 @@ Retail-demotietoihin sisältyvissä mallinäyttöasetteluissa on sisältöä, jo
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Näyttöasettelun tunnuksen rakenne
 
-Retail-sovelluksen äyttöasettelut ovat kohdassa **Retail** > **Kanavan asetukset** > **Myyntipisteen asetukset** > **Myyntipiste** > **Näyttöasetukset**.
+Retail-sovelluksen näyttöasettelut ovat kohdassa **Retail** \> **Kanavan asetukset** \> **Myyntipisteen asetukset** \> **Myyntipiste** \> **Näyttöasetukset**.
 
 ![Retail-sovelluksen näyttöasettelut](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,10 +107,8 @@ Seuraavassa taulukossa ovat tavallisissa näyttöjen resoluutioissa käytettävi
 
 \* Nämä asettelujen lisäkoot ovat käytettävissä vain Adventure Works- ja Fabrikam-asetteluissa.
 
-
->[!TIP]
-> Myyntipiste valitsee automaattisesti asettelujen koot sen mukaan, mikä käytettävissä oleva koko on lähimpänä nykyisen sovellusikkunan näytön resoluutiota. Voit etsiä Retail Modern POS (MPOS)- tai Retail Cloud POS (CPOS) -sovelluksessa tällä hetkellä käytössä olevan näyttöasettelun tunnuksen ja näytön resoluution avaamalla **Asetukset**-sivun ja siirtymällä **Istunnon tiedot** -osaan. Voit tarkastella myös nykyisen sovelluksen tai selainkehyksen todellista ikkunan resoluutiota. Kun nämä tiedot ovat käytettävissä, löydät Retail-sovelluksen asettelun sisällön lähteen siirtymällä kohtaan **Kanavan asetukset** > **Myyntipisteen asetukset** > **Myyntipiste** > **Näyttöasettelut**.
-
+> [!TIP]
+> Myyntipiste valitsee automaattisesti asettelujen koot sen mukaan, mikä käytettävissä oleva koko on lähimpänä nykyisen sovellusikkunan näytön resoluutiota. Voit etsiä Retail Modern POS (MPOS)- tai Retail Cloud POS (CPOS) -sovelluksessa tällä hetkellä käytössä olevan näyttöasettelun tunnuksen ja näytön resoluution avaamalla **Asetukset**-sivun ja siirtymällä **Istunnon tiedot** -osaan. Voit tarkastella myös nykyisen sovelluksen tai selainkehyksen todellista ikkunan resoluutiota. Kun nämä tiedot ovat käytettävissä, löydät Retail-sovelluksen asettelun sisällön lähteen valitsemalla **Kanavan asetukset** \> **POS-asetukset** \> **Myyntipiste** \> **Näyttöasettelut**.
 
 ![Näyttöasettelut ja asettelun resoluutiot/koot Retail-ohjelmassa ja myyntipisteessä](../retail/media/demo-screen-layouts-fig-3-1.png)
 
@@ -126,10 +124,8 @@ Jokainen kuvitteellinen yritys on luotu eri vähittäismyyntisegmenttiä varten.
 | Fabrikam:        | Houston  | Muoti        | Vihreä  | Vaalea |
 | Contoso         | Boston   | Elektroniikka    | Punainen    | Tumma  |
 
-
->[!NOTE]
+> [!NOTE]
 > Adventure Works ja Fabrikam on tuotemerkkien kaksi lippulaivaa. Contoso on käytettävissä, mutta se ei sisällä kaikkia asetteluita.
-
 
 Seuraavissa kuvissa ovat kolmen kuvitteellisen yrityksen aloitussivut ja tapahtumasivut.
 
@@ -153,28 +149,26 @@ Seuraavissa kuvissa ovat kolmen kuvitteellisen yrityksen aloitussivut ja tapahtu
 
 Käyttäjien käytettävissä on erilaisia näyttöasetteluita. Näytöt voi ottaa käyttöön seuraavan taulukon avulla. Kirjaudu sisään soveltuvan operaattorin tunnuksen avulla.
 
-| Yritys          | Näyttöasettelun tunnus | Henkilötyyppi          | Operaattorin tunnukset           |
-|-----------------|------------------|---------------   |------------------------|
-| Adventure Works | A3MGR            | Myymäläpäällikkö    | 000154, 000137, 000073 |
-| Adventure Works | A3CSH            | Kassa          | 000150, 000175, 000165 |
-| Adventure Works | A3STK            | Varastonhoitaja      | 000155, 000181, 000152 |
-| Fabrikam:        | F3MGR            | Myymäläpäällikkö    | 000160, 000168, 000163 |
-| Fabrikam:        | F3CSH            | Kassa          | 000161, 000113, 000114 |
-| Fabrikam:        | F3STK            | Varastonhoitaja      | 000164, 000112, 000123 |
-| Contoso         | C3MGR            | Myymäläpäällikkö    | 000100, 000111         |
-| Contoso         | C3CSH            | Kassa          | 000110, 000120         |
-| Contoso         | Ei käytettävissä   | Varastonhoitaja      | Ei käytettävissä         |
+| Yritys          | Näyttöasettelun tunnus | Henkilötyyppi       | Operaattorin tunnukset           |
+|-----------------|------------------|---------------|------------------------|
+| Adventure Works | A3MGR            | Myymäläpäällikkö | 000154, 000137, 000073 |
+| Adventure Works | A3CSH            | Kassa       | 000150, 000175, 000165 |
+| Adventure Works | A3STK            | Varastonhoitaja   | 000155, 000181, 000152 |
+| Fabrikam:        | F3MGR            | Myymäläpäällikkö | 000160, 000168, 000163 |
+| Fabrikam:        | F3CSH            | Kassa       | 000161, 000113, 000114 |
+| Fabrikam:        | F3STK            | Varastonhoitaja   | 000164, 000112, 000123 |
+| Contoso         | C3MGR            | Myymäläpäällikkö | 000100, 000111         |
+| Contoso         | C3CSH            | Kassa       | 000110, 000120         |
+| Contoso         | Ei käytettävissä   | Varastonhoitaja   | Ei käytettävissä         |
 
-
->[!TIP]
+> [!TIP]
 > Saat parhaat tulokset, kun aktivoit vastaavan myymäläsijainnin kassakoneen ja määrität yritykseksi sen henkilötyypin yrityksen, jonka haluat kirjautuvan sisään. Näin voit varmistaa, että visuaalinen profiili ja brändäyskuvat ovat kaikkialla samanlaiset. Jos esimerkiksi haluat nähdä Fabrikamin kassanhoitajan asettelun, aktivoi Houstonin alueen kassakone.
-
 
 <!-- Hiding until the content page is available on CustomerSource -->
 
 <!-- ## Reference icons and images -->
 
-<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail > Channel setup > POS setup > POS > Images**. -->
+<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail \> Channel setup \> POS setup \> POS \> Images**. -->
 
 <!-- ![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png) -->
 

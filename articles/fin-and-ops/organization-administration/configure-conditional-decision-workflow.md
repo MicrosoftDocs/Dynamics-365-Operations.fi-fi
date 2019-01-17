@@ -34,24 +34,24 @@ Määritä seuraavan menettelyn avulla ehdollisten päätöksen ominaisuudet.
 Ehdollista valintaa voidaan edellyttää, kun työnkulku jakautuu kahteen haaraan. Ehdollinen päätös konfiguroidaan työnkulkueditorissa napsauttamalla ehdollista päätöstä hiiren kakkospainikkeella ja valitsemalla **Ominaisuudet**, joka avaa **Ominaisuudet**-sivun.
 
 ## <a name="name-a-decision"></a>Nimeä päätös
+
 Kirjoita näiden ohjeiden avulla nimi ehdolliselle päätökselle.
-1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
-2.  Kirjoita ehdollisen päätöksen yksilöivä nimi **Nimi**-kenttään.
+
+1. Napsauta vasemmassa ruudussa **Perusasetukset**.
+2. Kirjoita ehdollisen päätöksen yksilöivä nimi **Nimi**-kenttään.
 
 ## <a name="set-conditions"></a> Ehtojen asetus
+
 Järjestelmä päättää käytettävän haaran arvioimalla, täyttääkö lähetetty asiakirja erityisehdot.
-1.  Napsauta vasemmassa ruudussa **Perusasetukset**.
-2.  Valitse **Lisää ehto**.
-3.  Määritä ehto.
-4.  Kirjoita kaikki muut tarvittavat ehdot.
-5.  Voit tarkistaa, onko ehdot määritetty oikein käymällä läpi seuraavat ohjeet:
-    1.  Valitse **Testi**, jolloin **Testaa työnkulun ehto** -lomake tulee näyttöön.
-    2.  Valitse tietue lomakkeen **Tarkista ehto** -alueelta.
-    3.  Valitse **Testi**. Järjestelmä arvioi, täyttääkö tietue määrittämäsi ehdot.
-    4.  Palaa **Ominaisuudet**-lomakkeeseen valitsemalla **OK** tai **Peruuta**.
 
+1. Napsauta vasemmassa ruudussa **Perusasetukset**.
+2. Valitse **Lisää ehto**.
+3. Määritä ehto.
+4. Kirjoita kaikki muut tarvittavat ehdot.
+5. Voit tarkistaa, onko ehdot määritetty oikein käymällä läpi seuraavat ohjeet:
 
-
-
-
+    1. Valitse **Testi**, jolloin **Testaa työnkulun ehto** -lomake tulee näyttöön.
+    2. Valitse tietue lomakkeen **Tarkista ehto** -alueelta.
+    3. Valitse **Testi**. Järjestelmä arvioi, täyttääkö tietue määrittämäsi ehdot.
+    4. Palaa **Ominaisuudet**-lomakkeeseen valitsemalla **OK** tai **Peruuta**.
 

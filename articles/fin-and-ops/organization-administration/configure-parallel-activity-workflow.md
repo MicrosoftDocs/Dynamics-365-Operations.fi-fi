@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 64cd387f8a6ab693d159cd659fca51fa6568ee39
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 01c1fa876dd66ba6f0e1cdcecff56f424e117bd9
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,26 +34,25 @@ Rinnakkaisen tehtävän määrittämiseksi pitää suorittaa seuraavat toiminnot
 Rinnakkainen tehtävä sisältää työnkulun haarat, jotka suoritetaan samaan aikaan.
 
 ## <a name="name-a-parallel-activity"></a>Nimeä rinnakkainen tehtävä
+
 Kirjoita näiden ohjeiden avulla nimi rinnakkaiselle tehtävälle.
-1.  Napsauta rinnakkaista tehtävää hiiren kakkospainikkeella ja valitse sitten **Ominaisuudet**, joka avaa **Ominaisuudet** -lomakkeen.
-2.  Napsauta vasemmassa ruudussa **Perusasetukset**.
-3.  Kirjoita rinnakkaisen tehtävän yksilöivä nimi **Nimi**-kenttään.
-4.  Valitse **Sulje**.
+
+1. Napsauta rinnakkaista tehtävää hiiren kakkospainikkeella ja valitse sitten **Ominaisuudet**, joka avaa **Ominaisuudet** -lomakkeen.
+2. Napsauta vasemmassa ruudussa **Perusasetukset**.
+3. Kirjoita rinnakkaisen tehtävän yksilöivä nimi **Nimi**-kenttään.
+4. Valitse **Sulje**.
 
 ## <a name="configure-the-branches-of-a-parallel-activity"></a>Määritä rinnakkaisen tehtävän haarat
+
 Voit lisätä ja konfiguroida rinnakkaisen tehtävän haaroja seuraavasti.
+
 1. Kaksoisnapsauttamalla rinnakkaista tehtävää saat näkyviin sen haarat.
-2. Lisää haara vetämällä **haara**-elementti **Työnkulkuelementit** alueesta alustan lisäyspisteeseen. Lisäyspiste näkyy seuraavassa kuvassa. ![Lisäyspiste](./media/workflow_insertionpoint.gif)
+2. Lisää haara vetämällä **haara**-elementti **Työnkulkuelementit** alueesta alustan lisäyspisteeseen. Lisäyspiste näkyy seuraavassa kuvassa.
 
-   |                                              <strong>Huomautus</strong>                                               |
-   |------------------------------------------------------------------------------------------------------------------|
-   | Haarojen järjestyksellä ei ole merkitystä, koska rinnakkaisen tehtävän haarat suoritetaan samaan aikaan. |
+    ![Lisäyspiste](./media/workflow_insertionpoint.gif)
 
+    > [!NOTE]
+    > Haarojen järjestyksellä ei ole merkitystä, koska rinnakkaisen tehtävän haarat suoritetaan samaan aikaan.
 
 3. Lisätietoja haarojen määrittämisestä on kohdassa [Määritä rinnakkaishaara](configure-parallel-branch-workflow.md).
-
-
-
-
-
 

@@ -31,20 +31,18 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail -sovelluksella voit tutkia 10 parhaan tuotteen kannattavuutta. 
+Microsoft Dynamics 365 for Retail -sovelluksella voit tutkia 10 parhaan tuotteen kannattavuutta.
 
 Osana Dynamics 365 for Retailia käyttäjät voivat tutkia parhaiden tuotteiden (10 - 100) tuottavuutta eri organisaatiohierarkian tasoilla perustuen yhteen seuraavista kriteereistä:
 
--   Myyntisumma
--   Määrä
--   Bruttovoittokate
--   Marginaalin prosenttiosuus
+- Myyntisumma
+- Määrä
+- Bruttovoittokate
+- Marginaalin prosenttiosuus
 
 Voit käyttää tässä arvioinnissa valmista **Parhaat tuotteet**-raporttia, jonka voit avata mistä tahansa seuraavista sijainneista:
 
--   **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Parhaat tuotteet -raportti**
--   **Luokka- ja tuotehallinta** -työtila &gt; **Vähittäismyynti** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Parhaat tuotteet -raportti**
--   **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Parhaat tuotteet -raportti**
-
-
+- **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Parhaat tuotteet -raportti**
+- **Luokka- ja tuotehallinta** -työtila &gt; **Vähittäismyynti** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Parhaat tuotteet -raportti**
+- **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit** &gt; **Parhaat tuotteet -raportti**
 

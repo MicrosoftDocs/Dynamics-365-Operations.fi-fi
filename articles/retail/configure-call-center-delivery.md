@@ -36,6 +36,7 @@ Kun luot myyntitilauksen, voit valita toimitustavan myyntitilauksen otsikossa ja
 Retailissa on ominaisuuksia, joiden avulla käyttäjät voivat rajoittaa toimitustapoja, joita kanava tai tuote voi käyttää, ja toimitustapoja, jotka ovat voimassa tiettyihin kohteisiin toimitettaessa. Kulut voidaan määrittää myös siten, että lisämaksut lisätään asiakkaan tilaukseen toimitustapojen perusteella, jotka on valittu kyseiselle myyntitilaukselle ja tilauksen kokonaisarvolle.
 
 ## <a name="define-delivery-modes"></a>Toimitustapojen määrittäminen
+
 Ennen kuin määrität puhelinkeskuksen tilausten toimitustavat ja määrität liittyvät säännöt ja kulut, on määritettävä toimitustavat. Siirry kohtaan **Myynti ja markkinointi \> Asetukset \> Jakelu \> Toimitustavat**. Luo uusi toimitustila valitsemalla **Uusi**. Voit myös valita aiemmin luodun toimitustavan luettelosta ja valita sitten **Muokkaa** tehdäksesi muutoksia.
 
 **Toimitustapa**-kenttään voit syöttää minkä tahansa yhdistelmän aakkosnumeerisia merkkejä liiketoimintasi tarpeen mukaan. **Kuvaus**-kentässä voit antaa lisätietoja. **Kuluryhmä**- ja **Nopeuta**-kentät ovat valinnaisia ja ne selitetään tässä ohjeaiheessa tarkemmin myöhemmin.
@@ -47,11 +48,13 @@ Ennen kuin määrität puhelinkeskuksen tilausten toimitustavat ja määrität l
 **Osoitteet**-pikavälilehdessä voit määrittää, mille maille, alueille tai osavaltioille tätä toimitustapaa voi käyttää ja mille ei. Esimerkiksi tilaukset, jotka toimitetaan Havaijille tai Alaskaan, eivät ole käytettävissä maakuljetustoimitusta varten. Siksi nämä osavaltiot on suljettava pois kaikista maakuljetukseen liittyvistä toimitustavoisrta, mutta ne sisältyvät kaikkiin toimitustapoihin, joka liittyy käytettäessä lentorahtia.
 
 ## <a name="validate-delivery-modes-for-a-call-center-order"></a>Vahvista puhelinkeskuksen tilauksen toimitustavat
+
 Kun toimitustavat on määritetty, sinun on suoritettava **Käsittele toimitustilat** -erätyö. Tämä työ tekee toimitustavoista käytettäviä siten, että niitä voidaan käyttää myyntitilauksen prosesseissa vähittäismyynnin kanavien osalta. Voit suorittaa **Käsittele toimitustilat** -työn siirtymällä kohtaan **Vähittäismyynti \> Vähittäismyynnin IT \>Käsittele toimitustilat**. Tämä työn pitää suorittaa aina, kun vähittäismyynnin kanavaan lisätään uusia toimitustapoja tai kun tehdään muutoksia toimitustapojen ja kanavien suhteisiin.
 
 Kun olet suorittanut **Käsittele toimitustilat** -eräajon, voit siirtyä kohtaan **Vähittäismyynti \> Kanavat \> Puhelinkeskukset \> Kaikki puhelinkeskukset**. Valitse **Kaikki puhelinkeskukset** -sivun toimintoruudun **Asetukset** -välilehdessä **Toimitustavat**. **Toimitustavat**-sivulla näkyy luettelo kaikista valitun puhelinkeskuskanavan voimassa oelvista toimitustavoista. Voit muokata aiemmin luotuja toimitustapoja tai lisätä uusia toimitustapoja valitsemalla **Ylläpidä toimitustapoja**. Huomaa, että **Käsittele toimitustilat** -työ on suoritettava aina, kun muutoksia tehdään.
 
 ## <a name="define-charges-for-delivery-services"></a>Määritä toimituspalveluiden kulut
+
 Kun myyntitilauksia luodaan asiakkaille, yrityksen kannattaa lisätä kuluja, jotka lasketaan automaattisesti tilaukselle valittujen toimitustapojen perusteella. Nämä kulut voidaan määrittää niin, että ne ovat samat kaikille asiakkaille ja toimitustavoille. Vaihtoehtoisesti kulut voivat vaihdella asiakkaan ja/tai myyntitilaukselle valitun toimitustavan perusteella.
 
 Voit määrittää kulut kohdassa **Vähittäismyynti \> Kanavan asetukset \> Kulut \>Automaattiset kulut**. Valitse **Uusi**, jotta voit lisätä uusia kuluja. Voit myös valita aiemmin luodun kulun ja sitten **Muokkaa**.
@@ -73,6 +76,7 @@ Voit käyttää luokkien yhdistelmiä kuluille liiketoiminnan tarpeiden mukaan. 
 ![Esimerkki: kulutasojen yhdistelmä](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Käytä toimitustapoja puhelinpalvelukeskuksen tilausta syötettäessä
+
 Kun uusi myyntitilaus luodaan, arvo on määritettävä **Toimitustapa**-kenttään **Toimitus**-pikavälilehdessä myyntitilauksen otsikossa. Tämä kenttä voidaan täyttää automaattisesti asiakastietueen oletusarvojen mukaan.
 
 Toimitustapa, joka on määritetty tilauksen otsikkotiedoissa kopioidaan automaattisesti myyntitilauksen riveille niiden luonnin yhteydessä. Voit kuitenkin muuttaa tietyn rivinimikkeen toimitustapa-asetusta **Toimitus**-välilehden **Rivin erittely** -osassa myyntitilauksen syöttösivulla.
@@ -80,11 +84,13 @@ Toimitustapa, joka on määritetty tilauksen otsikkotiedoissa kopioidaan automaa
 Jos valittu toimitustapa ei ole kelvollinen tuotteelle tai toimitusosoitteelle, joka on määritetty tilaukseen tai tilausriville, saat virhesanoman. Sitten sinun on valittava toimitustapa, joka on määritetty tukemaan kyseisen osoitteen tai tuotteen kokoonpanoa.
 
 ## <a name="calculation-of-delivery-charges-during-entry-of-order"></a>Tilauksen toimituksen kulujen laskenta tilauksen syöttämisen aikana
+
 Jos **Ota käyttöön tilausten viimeistely** -asetus on otettu käyttöön puhelinkeskuskanavassasi, kuljetusmaksut lasketaan automaattisesti myyntitilauksille käyttäjien valitessa **Viimeistele**. Näyttöön tulee seuraava sanoma **Myyntitilauksen yhteenveto** -sivun yläosassa: ”Maksutasot laskettu”. Lasketut kulut lisätään **Myynti yhteensä** -kentän arvoon. **Summa**-pikavälilehden **Kulut**-kenttä näyttää kaikkien kulujen yhteissumman, jotka on laskettu tilaukselle ja riveille. Kulujen yksityiskohtaisen erittelyn näet valitsemalla **Tilaus** **Myyntitilauksen yhteenveto** -sivulla ja valitsemalla sitten **Kulut**-vaihtoehto, jolloin voit tarkastella, lisätä tai muokata kuluja. Huomaa, että toimituskulujen laskenta tilausotsikossa perustuu toimitustapaan, joka on linkitetty otsikkoon. Rivitason toimituskulut lasketaan perustuen toimitustapaan, joka on määritetty myyntiriville. Jos käytetään useita toimitustapoja eri riveillä, nämä monet kulut saatetaan kohdistaa ja laskea yhteen. Kokonaissumma näkyy **Kulut**-kentässä **Myyntitilauksen yhteenveto** -sivulla.
 
 Jos **Ota käyttöön tilausten viimeistely** -asetus ole käytössä, käyttäjien on manuaalisesti käynnistettävä kulujen laskenta. Valitse **Myyntitilaus**-sivun toimintoruudun **Myy**-välilehden **Laske**-ryhmässä **Maksutasot**. Näkyviin tulee sanoma ”Maksutasot laskettu”. Voit sitten valita **Kulut**-asetukse **Myynti**-välilehdessä, ja voit tarkastella, muokata tai poistaa laskettuja kuluja.
 
 ## <a name="use-expedited-delivery-modes-on-call-center-orders"></a>Käytä nopeutettuja toimitustapoja puhelinkeskuksen tilauksissa
+
 Halutessasi voit linkittää kaikkiin toimitustapoihin nopeutuskoodin. Tätä koodia käytetään priorisointilajittelun ja raportoinnin työkaluna. Se ei tällä hetkellä aiheuta tilaukseen kohdistettavia lisämaksuja. Voit määrittää nopeutuskoodeja siirtymällä kohtaan **Myynti ja markkinointi \> Asetukset \> Toimitukset \> Nopeutuskoodit**.
 
 Esimerkiksi tilauksille, jotka toimitetaan seuraavana päivänä lentorahtina, keräys on tehtävä varastossa kello 23 päivittäin. Tässä tapauksessa nopeutuskoodi voidaan luoda ja koodi voidaan linkittää kaikkiin seuraavan päivän toimitustapoihin, jotka on määritetty järjestelmässä. Kun varasto luo keräilyaallon, soveltuvaa nopeutuskoodia **Nopeuta**-kentässä voidaan käyttää suodattimena siten, että keräily suoritetaan vain tilauksille, joilla on toimitustapa, joka on linkitetty tähän koodiin.

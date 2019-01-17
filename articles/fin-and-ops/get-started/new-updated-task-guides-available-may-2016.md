@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,10 +31,12 @@ ms.lasthandoff: 08/08/2018
 
 Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n Microsoftin (toukokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (toukokuu 2016 - kaikki kielet)
-------------------------------------------------------------------------------------------------
+## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (toukokuu 2016 - kaikki kielet)
 
-(Toukokuu 2016) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n toukokuun 2016 päivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. (Helmikuun 2016) yhdistetyssä APQC-kirjastossa julkaistut tehtäväoppaiden lokalisoidut versiot ovat käytettävissä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md). <strong>Huomautus:</strong> liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (<strong>\</strong>*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics AX:n toukokuun 2016 päivityksessä eikä niitä tueta Microsoft Dynamics AX:n aiemmissa versioissa.
+(Toukokuu 2016) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n toukokuun 2016 päivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. (Helmikuun 2016) yhdistetyssä APQC-kirjastossa julkaistut tehtäväoppaiden lokalisoidut versiot ovat käytettävissä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
+
+> [!NOTE]
+> Liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (\*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics AX:n toukokuun 2016 päivityksessä eikä niitä tueta Microsoft Dynamics AX:n aiemmissa versioissa.
 
 ### <a name="countryregion-functionality"></a>Maa/alue-toiminto
 
@@ -62,15 +64,15 @@ Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, 
 
 ### <a name="electronic-reporting"></a>Sähköinen raportointi
 
-|                                  BPM-tunnistusrivi                                  | Maa/alue |
+| BPM-tunnistusrivi                                                                   | Maa/alue |
 |----------------------------------------------------------------------------|----------------|
-|                         ER Kohteiden määrittäminen                          |     Yleinen     |
-|     ER Suunnittele kokoonpano, jolla raportit voi luoda OPENXML-muodossa     |     Yleinen     |
-| ER Luo sähköisiä maksuasiakirjoja muotokokoonpanon avulla |     Yleinen     |
-|             ER Tuo kokoonpano Lifecycle Services -palvelusta              |     Yleinen     |
-|               <strong>\</strong>*ER Valitse palveluntarjoaja                |     Yleinen     |
-|   ER Päivitä muoto toteuttamalla sen uusi perusversio    |     Yleinen     |
-|             ER Lataa kokoonpano Lifecycle Services -palveluun              |     Yleinen     |
+| ER Kohteiden määrittäminen                                                  | Yleinen         |
+| ER Suunnittele kokoonpano, jolla raportit voi luoda OPENXML-muodossa         | Yleinen         |
+| ER Luo sähköisiä maksuasiakirjoja muotokokoonpanon avulla | Yleinen         |
+| ER Tuo kokoonpano Lifecycle Services -palvelusta                          | Yleinen         |
+| \*ER Valitse palveluntarjoaja                                               | Yleinen         |
+| ER Päivitä muoto toteuttamalla sen uusi perusversio      | Yleinen         |
+| ER Lataa kokoonpano Lifecycle Services -palveluun                          | Yleinen         |
 
 ### <a name="human-capital-management"></a>Henkisen pääoman hallinta
 
@@ -176,25 +178,21 @@ Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, 
 
 ### <a name="warehouse-and-transportation"></a>Varasto ja kuljetus
 
-|                                     BPM-tunnistusrivi                                     | Maa/alue |
-|----------------------------------------------------------------------------------|----------------|
-|                            Aallon käsittelyn kokoonpano                             |     Yleinen     |
-| <strong>\</strong>*Valmiiksi ilmoittaminen rekisterikilpiohjaamattomaan sijaintiin |     Yleinen     |
-|                      Määritä minimi-/maksimitäydennysprosessi                      |     Yleinen     |
-|                             Määritä konttiinpakkaus                              |     Yleinen     |
-|                              Määritä manuaalinen pakkaaminen                               |     Yleinen     |
-|                  Nimikkeen kuljetusrajoitteiden määrittäminen                   |     Yleinen     |
-|                <strong>\</strong>*Varaston työkäytäntöjen määrittäminen                 |     Yleinen     |
+|                                     BPM-tunnistusrivi                    | Maa/alue |
+|-----------------------------------------------------------------|----------------|
+| Aallon käsittelyn kokoonpano                                       | Yleinen         |
+| \*Valmiiksi ilmoittaminen ei-rekisterikilpiohjattuun sijaintiin | Yleinen         |
+| Määritä minimi-/maksimitäydennysprosessi                          | Yleinen         |
+| Määritä konttiinpakkaus                                         | Yleinen         |
+| Määritä manuaalinen pakkaaminen                                           | Yleinen         |
+| Nimikkeen kuljetusrajoitteiden määrittäminen                   | Yleinen         |
+| \*Määritä varaston työkäytännöt                                | Yleinen         |
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Uudet tehtäväoppaat (helmikuu 2016)](new-task-guides-available-february-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat saatavilla (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)
-
-
-
 

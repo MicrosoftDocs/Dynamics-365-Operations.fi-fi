@@ -42,25 +42,30 @@ Tilauksen luonnin tukemisen lisäksi puhelinkeskusmoduuli tarjoaa myös helppok�
 Tällä sivulla on linkit asianmukaisiin dokumentteihin, jotka liittyvät Dynamics 365 for Retailin puhelinkeskusominaisuuksien määritykseen ja käyttöön.
 
 ## <a name="configure-the-call-center"></a>Määritä puhelinkeskus
+
 [Tilaustenkäsittelyasetusten määrittäminen](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Määritä tilauksen käsittely
+
 [Petoshälytysten määrittäminen](set-up-fraud-alerts.md)
 
 [Manuaalisten tilausten pidot](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Määritä maksun käsittely
+
 [Puhelinkeskuksen maksutavat](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Määritä toimitustavat
+
 [Määritä puhelinkeskuksen toimitustavat ja kulut](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Määritä suoramarkkinointi
+
 [Puhelinkeskuksen luettelot](call-center-catalogs.md)
 
 [RFM-analyysin määrittäminen](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Määritä jatkuvuusohjelmat
-[Puhelinkeskuksen jatkuvuusohjelman määrittäminen](set-up-continuity-program.md)
 
+[Puhelinkeskuksen jatkuvuusohjelman määrittäminen](set-up-continuity-program.md)
 

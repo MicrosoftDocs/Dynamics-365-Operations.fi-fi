@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: e40c558e03ef230fee6726994bc94979d40493c2
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -52,8 +52,8 @@ Kullekin sijainnille näytetään myös **Varattu**- ja **Tilattu**-määrät.
 
 Sijaintiluettelossa on kahden tyyppisiä yksiköitä:
 
-- **Vähittäismyymälät** – luettelo sisältää myymälät, jotka on määritetty käyttämällä nykyisen myymälän myymälän paikanninryhmää Retail Headquartersissa. 
-- **Jakelukeskukset** – Microsoft Dynamics 365 for Retailissa voidaan määrittää erilaisia jakelukeskuksen (kuten varastoja). Luettelossa näkyy kuitenkin vain **Vakio**-oletustyyppisten jakelukeskusten varaston saatavuustiedot. 
+- **Vähittäismyymälät** – luettelo sisältää myymälät, jotka on määritetty käyttämällä nykyisen myymälän myymälän paikanninryhmää Retail Headquartersissa.
+- **Jakelukeskukset** – Microsoft Dynamics 365 for Retailissa voidaan määrittää erilaisia jakelukeskuksen (kuten varastoja). Luettelossa näkyy kuitenkin vain **Vakio**-oletustyyppisten jakelukeskusten varaston saatavuustiedot.
 
     > [!NOTE]
     > Varaston saatavuustietoja ei näytetä myyntipisteellä seuraaville varastotyypeille: **Kuljetus**, **Karanteeni** ja **Tavarat matkalla**.
@@ -86,7 +86,7 @@ Valitse **Näytä kaikki variantit** päätuotteen **Tuotteen tiedot** -sivulla 
 | **0** (nolla)                             | Variantti on vapautettu valittuun sijaintiin mutta nimike ei käytettävissä valitussa sijainnissa. Voit kuitenkin tehdä solussa muita toimia. (Näitä toimintoja käsitellään tarkemmin jäljempänä tässä ohjeaiheessa.) |
 | **–** tai passiivinen solu              | Varianttia ei ole vapautettu valittuun sijaintiin etkä voi tehdä solussa lisätoimintoja. |
 
-Voit myös muuttaa pivot-dimensiota valitsemalla uuden käytettävän dimension. 
+Voit myös muuttaa pivot-dimensiota valitsemalla uuden käytettävän dimension.
 
 ![Pivot-dimension muuttaminen](media/ChangePivot.png)
 
@@ -108,14 +108,12 @@ Voit myös muuttaa pivot-dimensiota valitsemalla uuden käytettävän dimension.
 
 Seuraavassa taulukossa on lisätietoja käytettävissä olevista toiminnoista.
 
-
-|        Toimenpide        |                                                                                                                    kuvaus                                                                                                                    |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       Myy nyt       |                               Lisää tapahtumaan valittu nimikevariantti ja ohjaa käyttäjä tapahtumanäyttöön. (Tämä toiminto ei ole käytettävissä, kun valittu sijainti on jakelukeskus.)                               |
-|   Nouto myymälästä   |      Luo tuotevariantille asiakastilaus, joka noudetaan valitusta sijainnista, ja ohjaa käyttäjä tapahtumanäyttöön. (Tämä toiminto ei ole käytettävissä, kun valittu sijainti on jakelukeskus.)       |
-|     Lähetä tuote     |                                                 Luo tuotevariantille asiakastilaus, joka lähetetään valitusta sijainnista, ja ohjaa käyttäjä tapahtumanäyttöön.                                                 |
-|     Käytettävyys     |                                                                             Näytä valitun sijainnin valitun varianttiyhdistelmän ATP-tiedot.                                                                              |
-|  Näytä kaikki sijainnit  | Vaihda varastohaun vakionäkymään ja korosta nimikevariantiin varaston saatavuustiedot kaikissa myymälän paikanninryhmän myymälöissä sekä <strong>vakio- tai oletustyypin</strong> jakelukeskuksissa. |
-| Näytä tuotteen tiedot |                                                                         Ohjaa käyttäjä liitetyn päätuotteen <strong>Tuotteen tiedot</strong> -sivulle.                                                                          |
-
+| Toimenpide               | kuvaus |
+|----------------------|-------------|
+| Myy nyt             | Lisää tapahtumaan valittu nimikevariantti ja ohjaa käyttäjä tapahtumanäyttöön. (Tämä toiminto ei ole käytettävissä, kun valittu sijainti on jakelukeskus.) |
+| Nouto myymälästä     | Luo tuotevariantille asiakastilaus, joka noudetaan valitusta sijainnista, ja ohjaa käyttäjä tapahtumanäyttöön. (Tämä toiminto ei ole käytettävissä, kun valittu sijainti on jakelukeskus.) |
+| Lähetä tuote         | Luo tuotevariantille asiakastilaus, joka lähetetään valitusta sijainnista, ja ohjaa käyttäjä tapahtumanäyttöön. |
+| Käytettävyys         | Näytä valitun sijainnin valitun varianttiyhdistelmän ATP-tiedot. |
+| Näytä kaikki sijainnit   | Vaihda varastohaun vakionäkymään ja korosta nimikevariantiin varaston saatavuustiedot kaikissa myymälän paikanninryhmän myymälöissä sekä **vakio- tai oletustyypin** jakelukeskuksissa. |
+| Näytä tuotteen tiedot | Ohjaa käyttäjä liitetyn päätuotteen **Tuotteen tiedot** -sivulle. |
 

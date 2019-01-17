@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c7fc274bb9d942e85012211b1a7a14873447e5f3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 4fac04d1ea028bae9323b7961e64f3e49b74e482
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 08/08/2018
 
 Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n Microsoftin (elokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (elokuu 2016 - kaikki kielet)
----------------------------------------------------------------------------------------------------
+## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (elokuu 2016 - kaikki kielet)
 
 (Elokuuu 2016 - kaikki kielet) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n ympäristöpäivityksen 2 (elokuu 2016), Dynamics AX:n toukokuun 2016 sovelluspäivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
 
@@ -95,17 +94,11 @@ Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotk
 |-----------------------------------------------------------------------------|----------------|
 | Määritä mobiililaitteen valikkokohde Ostotilaus-tyypin työn valmistumiselle | Yleinen         |
 
-
-
-<a name="additional-resources"></a>Lisäresurssit
---------
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Uudet tehtäväoppaat (helmikuu 2016)](new-task-guides-available-february-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)
-
-
-
 

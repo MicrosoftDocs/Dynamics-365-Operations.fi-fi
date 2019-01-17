@@ -31,77 +31,76 @@ ms.lasthandoff: 03/26/2018
 
 Tässä ohjeaiheessa on linkkejä sisältöön, joka auttaa tehokäyttäjiä ja järjestelmänvalvojia määrittämään Microsoft Dynamics 365 for Finance and Operationsin. Sisältö avustaa järjestelmän määrittämisessä niin, että se auttaa sujuvasti ja tehokkaasti organisaatiotasi ja sen liiketoimintaa.
 
-Suuri osa tässä luetellusta sisällöstä koskee **Organisaationhallinta**-moduulia. Jotkin tehtävistä, kuten tietuemallin luominen ja käyttäminen, voidaan suorittaa missä tahansa moduulissa, jotta organisaatiosi voisi toimia tehokkaammin. 
+Suuri osa tässä luetellusta sisällöstä koskee **Organisaationhallinta**-moduulia. Jotkin tehtävistä, kuten tietuemallin luominen ja käyttäminen, voidaan suorittaa missä tahansa moduulissa, jotta organisaatiosi voisi toimia tehokkaammin.
 
-<a name="number-sequences"></a>Numerosarjat
-----------------
+## <a name="number-sequences"></a>Numerosarjat
+
 Numerosarjoilla luodaan luettavia, yksilöllisiä tunnisteita niitä edellyttäville päätietojen tietueille ja tapahtumatietueille. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä *viite*. Ennen kuin voit luoda viitteelle uusia tietueita, määritä numerosarja ja kohdista se viitteeseen.
 
--   [Numerosarjan yleiskatsaus](number-sequence-overview.md)
--   [Numerosarjojen määrittäminen ohjatulla toiminnolla](tasks/set-up-number-sequences-wizard.md) (tehtäväopas)
--   [Yksittäisten numerosarjojen määrittäminen](tasks/set-up-number-sequences-individual-basis.md) (tehtäväopas)
+- [Numerosarjan yleiskatsaus](number-sequence-overview.md)
+- [Numerosarjojen määrittäminen ohjatulla toiminnolla](tasks/set-up-number-sequences-wizard.md) (tehtäväopas)
+- [Yksittäisten numerosarjojen määrittäminen](tasks/set-up-number-sequences-individual-basis.md) (tehtäväopas)
 
 ## <a name="organizations"></a>Organisaatiot
+
 Organisaatio on joukko ihmisiä, jotka työskentelevät yhdessä liiketoimintaprosessin suorittamiseksi tai tavoitteen saavuttamiseksi. Organisaatiohierarkiat edustavat liiketoimintasi muodostavien organisaatioiden välisiä suhteita.
 
 Ennen kuin määrität organisaation ja organisaatiohierarkiat Finance and Operationsissa, varmista, että suunnittelet miten liiketoimintasi mallinnetaan. Organisaatiomallilla on huomattava vaikutus Dynamics 365 for Finance and Operationsin käyttöönottoon ja liiketoimintaprosesseihin.
 
--   [Organisaatiot ja organisaatiohierarkiat](organizations-organizational-hierarchies.md)
--   [Organisaatiohierarkian suunnitteleminen](plan-organizational-hierarchy.md)
--   [Luo organisaatiohierarkia](tasks/create-organization-hierarchy.md) (tehtäväopas)
--   [Luo yritys](tasks/create-legal-entity.md) (tehtäväopas)
--   [Luo toimintayksikkö](tasks/create-operating-unit.md) (tehtäväopas)
+- [Organisaatiot ja organisaatiohierarkiat](organizations-organizational-hierarchies.md)
+- [Organisaatiohierarkian suunnitteleminen](plan-organizational-hierarchy.md)
+- [Luo organisaatiohierarkia](tasks/create-organization-hierarchy.md) (tehtäväopas)
+- [Luo yritys](tasks/create-legal-entity.md) (tehtäväopas)
+- [Luo toimintayksikkö](tasks/create-operating-unit.md) (tehtäväopas)
 
 ## <a name="address-books"></a>Osoitekirjat
-Yleisen osoitekirja on keskitetty perustietojen varasto, joka on tallennettava kaikille sisäisille ja ulkoisille henkilöille ja organisaatioille, joiden kanssa yritys toimii. Osapuolitietueisiin liittyvään tietoon kuuluu osapuolen nimi, osoite ja yhteystiedot. 
 
-Kun olet luonut yleisen osoitekirjan, voit luoda tarvittavia lisäosoitekirjoja, kuten oman osoitekirjan organisaation kullekin yritykselle tai toimialalle. 
+Yleisen osoitekirja on keskitetty perustietojen varasto, joka on tallennettava kaikille sisäisille ja ulkoisille henkilöille ja organisaatioille, joiden kanssa yritys toimii. Osapuolitietueisiin liittyvään tietoon kuuluu osapuolen nimi, osoite ja yhteystiedot.
 
--   [Yleinen osoitekirja](overview-global-address-book.md)
--   [Yleisen osoitekirjan ja lisäosoitekirjojen määrittämissuunnitelma](plan-configuration-global-address-book-additional-address-books.md)
+Kun olet luonut yleisen osoitekirjan, voit luoda tarvittavia lisäosoitekirjoja, kuten oman osoitekirjan organisaation kullekin yritykselle tai toimialalle.
+
+- [Yleinen osoitekirja](overview-global-address-book.md)
+- [Yleisen osoitekirjan ja lisäosoitekirjojen määrittämissuunnitelma](plan-configuration-global-address-book-additional-address-books.md)
 - [Yleisen osoitekirjan konfigurointi](tasks/configure-global-address-book.md)
--   [Osoitekirjat – usein kysytyt kysymykset](qa-address-books.md)
-
+- [Osoitekirjat – usein kysytyt kysymykset](qa-address-books.md)
 
 ## <a name="workflow"></a>Työnkulku
-Työnkulku on Finance and Operationsiin asennettu järjestelmä, jolla luodaan yksittäisiä työnkulkuja tai liiketoimintaprosesseja. Kun luot työnkulun, määrität, kuinka asiakirja kulkee tai siirtyy järjestelmässä kuvaamalla kenen on suoritettava tehtävä loppuun, tehtävä päätös tai hyväksyttävä asiakirja. 
 
--   [Työnkulun yleiskatsaus](overview-workflow-system.md)
--   [Työnkulun elementit](workflow-elements.md)
--   [Työnkulkutehtävät](workflow-actions.md)
--   [Työnkulun luominen](create-workflow.md)
+Työnkulku on Finance and Operationsiin asennettu järjestelmä, jolla luodaan yksittäisiä työnkulkuja tai liiketoimintaprosesseja. Kun luot työnkulun, määrität, kuinka asiakirja kulkee tai siirtyy järjestelmässä kuvaamalla kenen on suoritettava tehtävä loppuun, tehtävä päätös tai hyväksyttävä asiakirja.
+
+- [Työnkulun yleiskatsaus](overview-workflow-system.md)
+- [Työnkulun elementit](workflow-elements.md)
+- [Työnkulkutehtävät](workflow-actions.md)
+- [Työnkulun luominen](create-workflow.md)
 
 ## <a name="electronic-signatures"></a>Sähköiset allekirjoitukset
+
 Sähköisellä allekirjoituksella vahvistetaan uuden tietojenkäsittelyprosessin aloittavan tai prosessin hyväksynnän aloittavan henkilön henkilöllisyys. Joillakin aloilla sähköinen allekirjoitus on juridisesti yhtä sitova kuin käsin kirjoitettu. Sähköiset allekirjoitukset ovat pakollisia useilla säännöin ja määräyksin säädellyillä aloilla, kuten lääketeollisuudessa, elintarviketeollisuudessa sekä ilmailu- ja maanpuolustusteollisuudessa.
 
 Voit käyttää Finance and Operationsissa sähköisiä allekirjoituksia tärkeissä liiketoimintaprosesseissa. Joissakin prosesseissa on sisäinen sähköisten allekirjoitusten toiminto. Voit myös luoda mukautettuja allekirjoitusvaatimuksia mille tahansa tietokannan taululle ja kentälle.
 
--   [Sähköisten allekirjoitusten yleiskatsaus](electronic-signature-overview.md)
--   [Sähköisten allekirjoitusten määrittäminen](tasks/set-up-electronic-signatures.md) (tehtäväopas)
+- [Sähköisten allekirjoitusten yleiskatsaus](electronic-signature-overview.md)
+- [Sähköisten allekirjoitusten määrittäminen](tasks/set-up-electronic-signatures.md) (tehtäväopas)
 
 ## <a name="case-management"></a>Palvelupyynnön hallinta
-Suunnittelemalla, seuraamalla ja analysoimalla tapauksia voit luoda tehokkaita ratkaisuja, joita voidaan käyttää vastaavissa tapauksissa. Esimerkiksi kun asiakaspalveluedustajat tai henkilöhallinnon työntekijät luovat tapauksia, he löytävät tietoartikkeleista tiedot tapausten kanssa toimimiseen ja niiden ratkaisemiseen. 
 
--   [Palvelupyynnön hallinnan yleiskatsaus](cases.md)
--   [Palvelupyynnön käyttöoikeuksien, prosessien ja luokkien määrittäminen](plan-case-management.md)
+Suunnittelemalla, seuraamalla ja analysoimalla tapauksia voit luoda tehokkaita ratkaisuja, joita voidaan käyttää vastaavissa tapauksissa. Esimerkiksi kun asiakaspalveluedustajat tai henkilöhallinnon työntekijät luovat tapauksia, he löytävät tietoartikkeleista tiedot tapausten kanssa toimimiseen ja niiden ratkaisemiseen.
+
+- [Palvelupyynnön hallinnan yleiskatsaus](cases.md)
+- [Palvelupyynnön käyttöoikeuksien, prosessien ja luokkien määrittäminen](plan-case-management.md)
 
 ## <a name="record-templates"></a>Tietuemallit
-Tietuemallien avulla voit luoda tietueita nopeammin. Voit luoda tietuemallin, jolloin usein käytettyjen kenttien arvoja ei tarvitse lisätä erikseen kussakin uudessa tietueessa. 
 
--   [Tietuemallit](record-templates.md)
+Tietuemallien avulla voit luoda tietueita nopeammin. Voit luoda tietuemallin, jolloin usein käytettyjen kenttien arvoja ei tarvitse lisätä erikseen kussakin uudessa tietueessa.
+
+- [Tietuemallit](record-templates.md)
 - [Tietuemallin luonti helpottamaan tietojen kirjaamista](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (Tehtäväopas)
 - [Uuden tietueen luonti tietuemallin avulla](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Tehtäväopas)
 
 ## <a name="general-organization-administration"></a>Yleinen organisaation hallinta
--   [Bannerin ja logon vaihtaminen](../get-started/tasks/change-banner-or-logo.md) (tehtäväopas)
+
+- [Bannerin ja logon vaihtaminen](../get-started/tasks/change-banner-or-logo.md) (tehtäväopas)
 - [Asiakirjanhallinnan määrittäminen](configure-document-management.md)
 - [Sähköpostiviestin määrittäminen ja lähettäminen](configure-email.md)
--   [Päivämäärä- ja aikatiedot sekä aikavyöhykkeet](date-time-zones.md)
-
-
-
-
-
-
-
+- [Päivämäärä- ja aikatiedot sekä aikavyöhykkeet](date-time-zones.md)
 

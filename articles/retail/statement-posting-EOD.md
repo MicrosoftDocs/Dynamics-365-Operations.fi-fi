@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: d428da2a6fb8ce5d63c3373def879c9b32cfd492
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -59,11 +59,12 @@ Laskelman kirjaamistoiminnon parantamisen myötä on otettu käyttöön kolme uu
 
 Lisäksi **Rinnakkaisten laskelmien kirjaamisen enimmäismäärä** -kenttä on lisätty **Eräkäsittely**-pikavälilehteen. Tämä kenttä määrittää samaan aikaan suoritettavien erätöiden määrän. Tällä hetkellä sinun täytyy määrittää manuaalisesti tämän kentän arvo.
 
-Uuden kirjausprosessin aikana pitää määrittää **Lahjakortin tuote** **Lahjakortti**-pikavälilehteen, **Kirjauksen** välilehdelle **Vähittäiskaupan parametrit** -sivulla. Tämä pätee myös silloin, kun organisaatio ei käytä lahjakortteja. 
+Uuden kirjausprosessin aikana on määritettävä **Lahjakortin tuote** **Lahjakortti**-pikavälilehdessä **Vähittäiskaupan parametrit** -sivun **Kirjaus**-välilehdessä. Tämä pätee myös silloin, kun organisaatio ei käytä lahjakortteja.
 
 Huomaa, että kaikki asetukset ja parametrit, jotka liittyvät laskelman kirjauksiin ja jotka on määritetty vähittäismyymälöissä ja **Vähittäismyynnin parametrit** -sivulla, liittyvät parannettuun laskelman kirjaustoimintoon.
 
 ## <a name="processing"></a>Käsittely
+
 Laskelmat voidaan laskea ja kirjata eränä valikkovaihtoehtojen **Laskelmien laskenta eräajona** ja **Laskelmien kirjaaminen eräajona** avulla. Vaihtoehtoisesti laskelmat voidaan laskea manuaalisesti ja kirjata käyttämällä parannetun laskelman kirjaustoiminnon **Vähittäismyyntilaskelmat**-valikkokohteella.
 
 Prosessi ja vaiheet ja laskelmien eräkirjaamista varten ovat samat kuin vanhassa laskelman kirjaustoiminnossa. Laskelmien käsittelyn taustajärjestelmään on tehty kuitenkin merkittäviä parannuksia. Nämä parannukset tekevät prosessista luotettavamman ja ne parantavat tilojen ja virhetietojen näkyvyyttä. Käyttäjät voivat siten korjaa virheiden ensisijaiset syyt ja jatkaa kirjausprosessia ilman tietojen turmeltumista ja tietojen korjailua.
@@ -71,6 +72,7 @@ Prosessi ja vaiheet ja laskelmien eräkirjaamista varten ovat samat kuin vanhass
 Seuraavissa osissa kuvataan laskelmien kirjaustoiminnon tärkeimmät parannukset, jotka näkyvät vähittäismyyntilaskelmien ja kirjattujen laskelmien käyttöliittymässä.
 
 ### <a name="status-details"></a>Tilan tiedot
+
 Uusi tilamalli on otettu käyttöön laskelman kirjausmenettelyn laskenta- ja kirjausprosesseissa.
 
 Seuraavassa taulukossa kuvataan eri tilat ja niiden järjestys laskennan aikana.
@@ -109,9 +111,11 @@ Jokainen edeltävien taulujen tila on luonteeltaan riippumaton, ja vaiheiden vä
 Lisäksi toisen ja kolmannen osan otsikko näyttää asianmukaisen prosessin kokonaistilan.
 
 ### <a name="event-logs"></a>Tapahtumalokit
+
 Laskelma käy läpi eri työvaiheet (esimerkiksi Luo, Laske, Tyhjennä ja Kirjaa) ja laskelman elinkaaren aikana voidaan kutsua samaa toimintoa useita kertoja. Esimerkiksi, kun laskelma luodaan ja lasketaan, käyttäjä voi tyhjentää laskelman ja laskea sen uudelleen. **Tapahtumalokit**-painike laskelman **Suorituksen tiedot** -ryhmässä tarjoaa täydellisen kirjausketjun eri toiminnoille, joita on kutsuttu laskelmassa, sekä tiedot toimintojen kutsujen ajankohdasta.
 
 ### <a name="aggregated-transactions"></a>Kootut tapahtumat
+
 Kirjausprosessin aikana myyntitapahtumat kootaan konfiguraation mukaan. Nämä kootut transaktiot tallennetaan järjestelmässä ja niitä käytetään myyntitilausten luomiseen. Jokainen koottu transaktio luo vastaavan myyntitilauksen järjestelmässä. Voit tarkastella koottuja transaktioita käyttämällä **Kootut tapahtumat** -painiketta laskelman **Suorituksen tiedot** -ryhmässä.
 
 Kootun transaktion **Myyntitilauksen tiedot** -välilehdessä näkyvät seuraavat tiedot:
@@ -136,11 +140,13 @@ Kootun tapahtuman näkymä tarjoaa seuraavat edut:
 - Koottu XML-tiedosto helpottaa ongelmien tunnistamista myyntitilauksen luonnin ja laskutuksen yhteydessä.
 
 ### <a name="journal-vouchers"></a>Kirjaustositteet
+
 **Kirjaustositteet**-painike laskelman **Suorituksen tiedot** -ryhmässä näyttää kaikki eri tositetapahtumat, jotka on luotu laskelmaa varten ja jotka liittyvät alennuksiin, tuotto- ja kulutileihin, lahjakortteihin ja niin edelleen.
 
 Tällä hetkellä ohjelma näyttää nämä tiedot vain kirjattuja laskelmia varten.
 
 ### <a name="payment-journals"></a>Maksukirjauskansiot
+
 **Maksukirjauskansiot**-painike laskelman **Suorituksen tiedot** -ryhmässä näyttää kaikki eri maksukirjauskansiot, jotka on luotu laskelmaa varten.
 
 Tällä hetkellä ohjelma näyttää nämä tiedot vain kirjattuja laskelmia varten.

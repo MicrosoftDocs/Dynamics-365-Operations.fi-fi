@@ -19,14 +19,16 @@ ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
 ms.translationtype: HT
-ms.sourcegitcommit: f7df0a91948a494465fbd55af99757e3890357ce
-ms.openlocfilehash: 4b8a0291855460b79f3a241eccb4b55b009804bf
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: d2b692ac86244eca31780a558112167391fc6d77
 ms.contentlocale: fi-fi
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
 # <a name="open-url-in-pos"></a>URL-linkin avaaminen POS-sovelluksessa
+
+[!include [banner](includes/banner.md)]
 
 Tässä aiheessa kerrotaan, miten Retail POS:ssä voi määrittää painikkeen avaaman URL-osoitteen. Tätä ominaisuutta varten ei tarvitse muokata koodia ja sen voi määrittää myös henkilö, jolla ei ole kehittäjän roolia.
 
@@ -34,48 +36,52 @@ Tällä ominaisuudella voi määrittää POS:n painikkeen avaamaan URL-osoitteen
 
 - Avaa uudessa ikkunassa.
 - Avaa POS-sovelluksessa.
-- Avaa alkuperäinen sovellus. 
+- Avaa alkuperäinen sovellus.
 
 ## <a name="open-in-new-window"></a>Avaa uudessa ikkunassa
 
 Tämä määritys määrittää, avataanko URL-osoite uudessa ikkunassa tai sovelluksessa. Jos URL-osoite on määritetty avautumaan sovelluksessa, reunan siirtymispaneeli ja POS-yläpalkki ovat näkyvissä ja käyttäjän käytettävissä. Jos URL-osoite on määritetty avautumaan uudessa ikkunassa, URL avautuu uudessa sovellusikkunassa tai Modern POS for Windowsissa ja uudessa selainvälilehdessä kaikissa muissa POS-asiakasohjelmissa. Voit ottaa ominaisuuden käyttöön määrittämällä URL-osoitteen siten, että **Avaa uudessa ikkunassa** -asetus on valittu.
 
 ## <a name="open-within-pos"></a>Avaaminen POS-sovelluksessa
+
 URL-osoitteen avaamista POS-sovelluksessa tuetaan tällä hetkellä vai Modern POS for Windowsissa. Tätä toimintoa kehitetään vielä muissa asiakasohjelmissa, ja sen julkaisu on suunniteltu tuleviin päivityksiin. Voit ottaa ominaisuuden käyttöön määrittämällä URL-osoitteen siten, että **Avaa uudessa ikkunassa** -asetusta ei ole valittu.
 
 ## <a name="open-a-native-app"></a>Alkuperäisen sovelluksen avaaminen
-Tällä ominaisuudella voi määrittää myös verkon ulkopuoliset URL-osoitteet avaa alkuperäisen sovelluksen. Voit esimerkiksi määrittää URL-protokollat, kuten MailTo, SIP, IM tai MSTEAMS, joita voidaan käsitellä kunkin protokollan alkuperäisellä sovelluksella isäntälaitteessa. Voit ottaa ominaisuuden käyttöön määrittämällä URL-osoitteen siten, että **Avaa uudessa ikkunassa** -asetus on valittu. 
 
-- Lisätietoja Windows-tietokoneita koskevista oletusprotokollaliitoksista, jos tietokone määritetään DISM:n (Deployment Image Servicing and Management) avulla, on kohdassa [Sovelluksen oletusliitosten vienti tai tuonti](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations). 
-- Jos Windows-tietokoneiden hallintaan käytetään MDM:ää, kuten Intunea, lisätietoja on kohdassa [CSP-käytäntö – ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults). 
-- Jos olet mukautettua sivustoa rakentava kehittäjä, katso [URI:n oletussovelluksen käynnistäminen](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app). 
+Tällä ominaisuudella voi määrittää myös verkon ulkopuoliset URL-osoitteet avaa alkuperäisen sovelluksen. Voit esimerkiksi määrittää URL-protokollat, kuten MailTo, SIP, IM tai MSTEAMS, joita voidaan käsitellä kunkin protokollan alkuperäisellä sovelluksella isäntälaitteessa. Voit ottaa ominaisuuden käyttöön määrittämällä URL-osoitteen siten, että **Avaa uudessa ikkunassa** -asetus on valittu.
+
+- Lisätietoja Windows-tietokoneita koskevista oletusprotokollaliitoksista, jos tietokone määritetään DISM:n (Deployment Image Servicing and Management) avulla, on kohdassa [Sovelluksen oletusliitosten vienti tai tuonti](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations).
+- Jos Windows-tietokoneiden hallintaan käytetään MDM:ää, kuten Intunea, lisätietoja on kohdassa [CSP-käytäntö – ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults).
+- Jos olet mukautettua sivustoa rakentava kehittäjä, katso [URI:n oletussovelluksen käynnistäminen](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app).
 
 ## <a name="open-a-native-app-seamlessly"></a>Alkuperäisen sovelluksen sujuva avaaminen
+
 Windows, iOS ja Android sallivat lisäksi sovellusten entistä sujuvamman avaamisen sovelluksen protokollaliitoksen perusteella. Jos sovellusta ei ole vielä määritetty käsittelemään avaamista selaimesta, kehittäjän on ehkä määritettävä tämä.
 
 - Windows: katso [Sovellusten käyttöönotto sivustoja varten sovelluksen URI-käsittelijöiden avulla](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking).
 - iOS: katso [Kehittäjien yleiset linkit](https://developer.apple.com/ios/universal-links/).
-- Android: katso [Android-sovelluksen linkkien käsitteleminen](https://developer.android.com/training/app-links/).  
+- Android: katso [Android-sovelluksen linkkien käsitteleminen](https://developer.android.com/training/app-links/).
 
-
-|   Asiakas                |Avaa uudessa ikkunassa |Alkuperäisen sovelluksen avaaminen | Avaaminen POS-sovelluksessa            | Yksityiskohdat                           |
-|-------------------------|-------------------|----------------|--------------------------|-----------------------------------|
-| Windowsin Modern POS   | ✓*                |    ✓          |       ✓                  | *Avautuu uudessa Modern POS -ikkunassa   |
-| Cloud POS               | ✓*                |    ✓          |       X                   |  *Avautuu uudessa selainvälilehdessä       |
-| iOS:n Modern POS       | ✓*                |    ✓          |       X                  |  *Avautuu uudessa selainvälilehdessä        |
-| Androidin Modern POS   | ✓*                |    ✓          |       X                  |  *Avautuu uudessa selainvälilehdessä        |
+| Asiakas                | Avaa uudessa ikkunassa | Alkuperäisen sovelluksen avaaminen | Avaaminen POS-sovelluksessa | Yksityiskohdat                           |
+|-----------------------|--------------------|-----------------|-----------------|-----------------------------------|
+| Windowsin Modern POS | ✓\*                | ✓               | ✓              | \* Avautuu uudessa Modern POS -ikkunassa |
+| Cloud POS             | ✓\*                | ✓               | X              | \* Avautuu uudessa selainvälilehdessä        |
+| iOS:n Modern POS     | ✓\*                | ✓               | X              | \* Avautuu uudessa selainvälilehdessä        |
+| Androidin Modern POS | ✓\*                | ✓               | X              | \* Avautuu uudessa selainvälilehdessä        |
 
 ## <a name="before-you-begin"></a>Ennen aloittamista
+
 Tarkista ennen aloittamista, miten [myyntipisteen (POS) näytön asettelut](pos-screen-layouts.md) määritetään.
 
 ## <a name="open-url-in-pos"></a>URL-linkin avaaminen POS-sovelluksessa
+
 Määritä URL-osoite avautumaan POS:ssä seuraavien ohjeiden mukaan.
 
-1.  Valitse pääkonttorissa **Vähittäismyynti > Kanavan asetukset > POS-asetukset > Myyntipiste > Näytön asettelut**.
-2.  Valitse **Painikeruudukot > Suunnittelutoiminto**.
-3.  Luo uusi painike.
-4.  Valitse **Painikeominaisuudet**.
-5.  Valitse **Avaa URL** toimintona.
-6.  Anna käytettävä URL-osoite.
-7.  Määritä, avataanko URL-osoite uudessa ikkunassa.
+1. Valitse pääkonttorissa **Vähittäismyynti \> Kanavan asetukset \> POS-asetukset \> Myyntipiste \> Näytön asettelut**.
+2. Valitse **Painikeruudukot \> Suunnittelutoiminto**.
+3. Luo uusi painike.
+4. Valitse **Painikeominaisuudet**.
+5. Valitse **Avaa URL** toimintona.
+6. Anna käytettävä URL-osoite.
+7. Määritä, avataanko URL-osoite uudessa ikkunassa.
 

@@ -51,7 +51,7 @@ Suuri osa sisällöstä koskee myös seuraavia liittyviä tuotteita: Microsoft D
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Projektin käyttöönotto</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Julkaisun valmistelu</a></p>
-  
+
 <h3><a href="../financials/index.md">Taloushallinto</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Ostoreskontra</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Myyntireskontra</a></p>
@@ -65,7 +65,7 @@ Suuri osa sisällöstä koskee myös seuraavia liittyviä tuotteita: Microsoft D
 <p><a href="../financials/public-sector/public-sector-functionality.md">Julkinen sektori</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Aluekohtaiset pakolliset ominaisuudet</a></p>
 
-<H3><a href="hr/hr-landing-page.md">Henkilöstö</a></h3>
+<h3><a href="hr/hr-landing-page.md">Henkilöstö</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Edut</a></p>
 <p><a href="../talent/performance-management-overview.md">Työntekijän kehitys ja koulutus</a></p>
 <p><a href="../talent/questionnaires.md">Kyselylomake</a></p>

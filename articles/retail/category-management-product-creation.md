@@ -59,4 +59,3 @@ Voit käyttää uutta tuoteominaisuuksien parannettua rakennetta, kun valitset, 
 
 ![Päivitä tuotteet -valintaikkuna.](media/NewUpdateProductsEnhancedView.PNG)
 
-

@@ -3,13 +3,13 @@ title: "Määritä tietojen tuonti SharePointista"
 description: "Tässä ohjeaiheessa käsitellään tietojen tuominen Microsoft SharePointista."
 author: NickSelin
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 11/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 9f23f73e9a98fc50c622255bf6ed027c41ec8010
+ms.sourcegitcommit: 060c3dec71e2b953d9341c5b5c89e60925fda34d
+ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
 ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/08/2018
 
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Määritä tietojen tuonti SharePointista
@@ -39,66 +39,71 @@ Tämän aiheen esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksi
     - Sähköisen raportoinnin toiminnallinen konsultti
     - Järjestelmänvalvoja
 
-- Finance and Operations -käyttöön määritetyn Microsoft SharePoint Server -ilmentymän käyttöoikeudet
-- Sähköisen raportoinnin (ER) muoto ja mallin määritykset 1099-maksuille
+- Finance and Operations -käyttöön määritetyn Microsoft SharePoint Server -ilmentymän käyttöoikeudet.
+- Sähköisen raportoinnin (ER) muoto ja mallin määritykset 1099-maksuille.
 
 ### <a name="create-required-er-configurations"></a>Luo tarvittavat ER-konfiguraatiot
-Toista **ER -tuo tiedot Microsoft Excel -tiedostosta** -tehtävoppaat, jotka ovat osa, **7.5.4.3 Acquire/Develop IT service/solution components (10677)** -liiketoimintaprosessia. Näissä tehtäväoppaissa selitetään ER-konfiguraatioiden suunnittelu ja käyttö, jotta voit vuorovaikutteisesti tuoda  toimittajatapahtumia ulkoisista Microsoft Excel -tiedostoista. Lisätietoja on kohdassa [Saapuvien asiakirjojen jäsennys Microsoft Excelissä](parse-incoming-documents-excel.md). Lopulta sinulla on:
+Toista **ER -tuo tiedot Microsoft Excel -tiedostosta** -tehtävoppaat, jotka ovat osa, **7.5.4.3 Acquire/Develop IT service/solution components (10677)** -liiketoimintaprosessia. Näissä tehtäväoppaissa selitetään ER-konfiguraatioiden suunnittelu ja käyttö, jotta voit vuorovaikutteisesti tuoda toimittajatapahtumia Microsoft Excel -tiedostoista. Lisätietoja on kohdassa [Saapuvien asiakirjojen jäsennys Microsoft Excelissä](parse-incoming-documents-excel.md). Kun tehtävän ohjaukset ovat valmiit, määritä seuraavat.
 
-- ER-konfiguroinnit:
+#### <a name="er-configurations"></a>ER-määritykset
 
-    - ER-mallikonfiguraatio, **1099-maksumalli**
-    - ER-muotokonfiguraatio **Muoto toimittajatapahtumien tuomiseksi Excelistä**
+- ER-mallikonfiguraatio, **1099-maksumalli**
+- ER-muotokonfiguraatio **Muoto toimittajatapahtumien tuomiseksi Excelistä**
 
-    [![ER-määritykset tietojen tuomiseksi SharePointista](./media/GERImportFromSharePoint-01-Configurations.PNG)](./media/GERImportFromSharePoint-01-Configurations.PNG)
+![ER-määritykset tietojen tuomiseksi SharePointista](./media/GERImportFromSharePoint-01-Configurations.PNG)
 
-- Näyte saapuvasta tiedostosta tietojen tuontia varten:
+#### <a name="sample-of-the-incoming-file-for-data-import"></a>Näyte saapuvasta tiedostosta tietojen tuontia varten
 
-    - Excel-tiedosto **1099import-data.xlsx**, joka sisältää toimittajatapahtumat, ja joka pitäisi tuoda Finance and Operationsiin
+- Excel-tiedosto **1099import-data.xlsx**, joka sisältää toimittajatapahtumat ja joka pitäisi tuoda Finance and Operationsiin.
 
-    [![Microsoft Excel -mallitiedosto SharePointista tuontia varten](./media/GERImportFromSharePoint-02-Excel.PNG)](./media/GERImportFromSharePoint-02-Excel.PNG)
-
+![Microsoft Excel -mallitiedosto SharePointista tuontia varten](./media/GERImportFromSharePoint-02-Excel.PNG)
+    
 > [!NOTE]
 > Toimittajatapahtumien tuonnin muoto valitaan oletusmallimääritykseksi. Siksi, jos suoritat **1099-maksumallin** mallin määrityksen ja tämä mallin määritys on **Kohteeseen**-tyyppiä, mallin määritys suorittaa tätä muotoa, tuodakseen tietoja ulkoisista tiedostoista. Sitten se käyttää näitä tietoja sovellustaulujen päivittämiseen.
 
-## <a name="configure-document-management-parameters"></a>Tiedostonhallintaparametrien konfigurointi
-1. Konfiguroi **Tiedostonhallintaparametrit**-sivulla SharePoint Server -ilmentymän käyttöoikeudet, joita käytetään yrityksessä, johon olet tällä hetkellä kirjautunut. Tässä esimerkissä yritys on USMF.
-2. Testaa yhteys varmistaaksesi, että sinulle myönnetty SharePoint Server -ilmentymän käyttöoikeudet.
+## <a name="configure-access-to-sharepoint-for-file-storage"></a>SharePoint-käytön määrittäminen tiedostojen tallennusta varten
+Jos haluat tallentaa sähköisesti raporttitiedostot SharePoint-sijaintiin, sinun on määritettävä käyttöoikeus nykyisen yrityksen käyttämään SharePoint Server -esiintymään. Tässä esimerkissä yritys on USMF. Lisätietoja on kohdassa [SharePoint-tallennustilan määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-    [![Tiedostonhallinnan asetukset – SharePoint Server](./media/GERImportFromSharePoint-03-SharePointSetup.png)](./media/GERImportFromSharePoint-03-SharePointSetup.png)
+1. Suorita kohdan [SharePoint-tallennustilan määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) vaiheet.
+2. Avaa määritetty SharePoint-sivusto.
+3. Luo seuraavat kansiota, joihin saapuvat ER-tiedostot voidaan tallentaa:
 
-3. Avaa määritetty SharePoint-sivusto ja luo seuraavat kansiot, joihin saapuvat tiedostot voidaan tallentaa:
+     - Tiedostojen tuontilähde (tärkein) (alla olevassa näyttökuvassa on esimerkki)
+     - Tiedostojen tuonnin lähde (vaihtoehtoinen)
 
-    - Tiedostojen tuonnin lähde (ensisijainen)
-    - Tiedostojen tuonnin lähde (vaihtoehtoinen)
+    ![Tiedostojen tuonnin lähde (ensisijainen)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
 
-    [![Tiedostonhallinnan asetukset – SharePoint Server](./media/GERImportFromSharePoint-04-SharePointFolder1.png)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
+4. (Valinnainen) Luo seuraavat kansiota, joihin tiedostot voidaan tallentaa tuonnin jälkeen. 
 
-    [![Tiedostonhallinnan asetukset – SharePoint Server](./media/GERImportFromSharePoint-05-SharePointFolder2.png)](./media/GERImportFromSharePoint-05-SharePointFolder2.png)
+    - Tiedostojen arkistokansio – tämä kansio on tarkoitettu tiedostoille, joiden tuonti onnistui.
+    - Tiedostojen varoituskansio – tämä kansio on tiedostoille, joiden tuontiin liittyi varoitus.
+    - Tiedostojen virhekansio – tämä kansio on tarkoitettu tiedostoille, joiden tuonti epäonnistui.
 
-4. Voit luoda Finance and Operationsin **Tiedostotyypit**-sivulla seuraavat tiedostotyypit, joita käytetään juuri luomiisi SharePoint-kansioihin kirjauduttaessa.
+4. Valitse Finance and Operationsissa **Organisaation hallinto > Tiedoston hallinta > Tiedostotyypit**.
+5. Luo seuraavat tiedostotyypit, joilla voi käyttää juuri luotuja SharePoint-kansioita. Lisätietoja on kohdassa [Tiedostotyyppien määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
 
-    - SP – ensisijainen
-    - SP – vaihtoehtoinen
+|Tiedostotyyppi       | Ryhmä              | Paikka      | SharePoint-kansio      |
+|--------------------|--------------------|---------------|------------------------|
+|SP – ensisijainen             |Tiedosto                |SharePoint     |Tiedostojen tuonnin lähde (ensisijainen)|
+|SP – vaihtoehtoinen             |Tiedosto                |SharePoint     |Tiedostojen tuonnin lähde (vaihtoehtoinen)|
+|SP-arkisto             |Tiedosto                |SharePoint     |Tiedostojen arkistokansio|
+|SP-varoitus             |Tiedosto                |SharePoint     |Tietojen varoituskansio|
+|SP-virhe             |Tiedosto                |SharePoint     |Tiedostojen virhekansio|
 
-5. Luotuja asiakirjatyyppejä varten, **Ryhmä**-kenttään valitse **Tiedosto** ja **Sijainti**-kenttään valitse **SharePoint**. Kirjoita sitten SharePoint-kansion osoite:
-
-    - **SP – ensisijainen** -tiedostotyypille: tiedostojen tuonnin lähde (ensisijainen)
-    - **SP – vaihtoehtoinen** -tiedostotyypille: tiedostojen tuonnin lähde (vaihtoehtoinen)
-
-    [![SharePoint-asetus – uusi asiakirjatyyppi](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![SharePoint-asetus – uusi tiedostotyyppi](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## <a name="configure-er-sources-for-the-er-format"></a>Määritä ER-muodon ER-lähteet
 1. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Sähköisen raportoinnin lähde**.
 2. Määritä **Sähköisen raportoinnin lähde** -sivulla tietojen tuonin lähdetiedostot käyttämällä määritettyä ER-muotoa.
 3. Määritä tiedostonimen peite, jotta tuotaisiin vain tiedostot, joiden pääte on .xlsx. Tiedostonimen peite on valinnainen, ja sitä käytetään vain, jos se on määritetty. Kullekin ER-muodolle voi määrittää vain yhden peitteen.
-4. Valitse molemmat aiemmin luomistasi SharePoint-kansioista.
+4. **Lajittele tiedostot ennen tuontia** -asetuksen vaihtaminen **Älä lajittele** -asetukseksi, jos tuotavia tiedostoja on paljon eikä tuontijärjestyksellä ole väliä
+5. Valitse kaikki aiemmin luodut SharePoint-kansiot.
 
     [![ER-tiedostojen lähdeasetukset](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
 
 > [!NOTE]
 > - Sähköisen raportoinnin *lähde* määritetään kullekin sovelluksen yritykselle erikseen. Sen sijaan sähköisen raportoinnin *konfiguraatiot* ovat yhteisiä kaikille yrityksille.
-> - Kun poistat sähköisen raportoinnin muodon ER-lähdeasetukset, kaikki liittyvät tiedostotilat (ks. alla) poistetaan myös.
+> - Kun poistat sähköisen raportoinnin muodon ER-lähdeasetukset, kaikki liittyvät tiedostotilat (katso alla) poistetaan myös vahvistuksen perusteella.
 
 ## <a name="review-the-files-states-for-the-er-format"></a>Tarkista ER-muodon tiedostotilat
 1. Valitse **Sähköisen raportoinnin lähde** -sivulla **Tiedostojen tilat lähteitä varten** tarkistaaksesi määritettyjen tiedostolähteiden sisällön nykyiselle ER-muodolle.
@@ -114,13 +119,13 @@ Voit myös avata **Tiedostojen tilat lähteitä varten** -sivun valitsemalla **O
 
     [![SharePoint-sisältö – Microsoft Excel -tiedosto tuontia varten](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
-2. Valitse Finance and Operationsin **Tiedostojen tilat lähteitä varten** -sivulla **Päivitä** päivittäksesi sivun. Huomaa, että Excel-tiedosto, joka on ladattu SharePointiin, oli tässä muodossa tilassa **Valmis**. Tällä hetkellä tuetaan seuraavia tiloja:
+2. Valitse Finance and Operationsin **Tiedostojen tilat lähteitä varten** -sivulla **Päivitä** päivittäksesi sivun. Huomaa, että SharePointiin ladatun Excel-tiedoston tila oli tällä sivulla **Valmis**. Tällä hetkellä tuetaan seuraavia tiloja:
 
     - **Valmis** – Määritetty automaattisesti kullekin uudelle tiedostolle SharePoint-kansiossa. Tämä tila tarkoittaa, että tiedosto on tuontivalmis.
     - **Tuodaan** – ER-raportin automaattisesti määrittämä, kun tuontiprosessi on lukinnut tiedoston estääkseen muita prosesseja käyttämästä sitä (jos useita on käynnissä yhtä aikaa).
     - **Tuotu** – ER-raportin automaattisesti määrittämä, kun tiedoston tuominen on onnistunut ja valmis. Tämä tila tarkoittaa, että tuotu tiedosto on poistettu määritetystä tiedostolähteestä (SharePoint-kansiosta).
     - **Epäonnistui** – ER-raportin automaattisesti määrittämä, kun tiedoston tuominen on valmis, mutta tapahtui virheitä tai poikkeuksia.
-    - **Pidossa** – Käyttäjä määrittää manuaalisesti tässä lomakkeessa. Tämä tila tarkoittaa, että tiedostoa ei tuoda nyt. Tätä tilaa voidaan käyttää lykkäämään joidenkin tiedostojen tuontia.
+    - **Pidossa** – Käyttäjä määritetään manuaalisesti tällä sivulla. Tämä tila tarkoittaa, että tiedostoa ei tuoda nyt. Tätä tilaa voidaan käyttää lykkäämään joidenkin tiedostojen tuontia.
 
     [![ER – tiedostotilojen sivu valituille lähteille](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
@@ -130,19 +135,15 @@ Voit myös avata **Tiedostojen tilat lähteitä varten** -sivun valitsemalla **O
 
     [![ER – tiedostotilojen sivu valituille lähteille](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
 
-3. Valitse **Suorita** suorittaaksesi valitun mallimäärityksen. Koska määritit ER-muodon tiedostolähteet, voit muuttaa asetusta **Tiedoston lähde** tarpeen mukaan. Jos pidät tämän asetuksen arvon, .xslx-tiedostot tuodaan määritetyistä lähteistä (SharePoint-kansiot tässä esimerkissä).
+3. Valitse **Suorita** suorittaaksesi valitun mallimäärityksen. Koska määritit ER-muodon tiedostolähteet, voit muuttaa **Tiedoston lähde** -asetusta tarvittaessa. Jos pidät tämän asetuksen arvon, .xslx-tiedostot tuodaan määritetyistä lähteistä (SharePoint-kansiot tässä esimerkissä).
 
     Tässä esimerkissä tuodaan vain yksi tiedosto. Jos tiedostoja on useita, ne valitaan tuontiin siinä järjestyksessä, jossa ne lisättiin SharePoint-kansioon. Kukin ER-muodon suoritus tuo yhden valitun tiedoston.
 
     [![Suorita ER-mallimääritys](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
-4. Mallin määritys voidaan suorittaa automaattisesti erätilassa. Tässä tapauksessa aina, kun eräkäsittely suorittaa tämän ER-muodon, tuodaan yksi tiedosto määritetyistä tiedostolähteistä. Seuraavan koodin avulla voit toteuttaa tämän eräajon suorittamisen.
+4. Mallin määritys voidaan suorittaa automaattisesti erätilassa. Tässä tapauksessa aina, kun eräkäsittely suorittaa tämän ER-muodon, tuodaan yksi tiedosto määritetyistä tiedostolähteistä.
 
-    ```
-    ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId().run()
-    ```
-
-    Kun tiedosto on onnistuneesti tuotu SharePoint-kansiosta, se poistetaan kyseisestä kansiosta.
+    Kun tiedoston tuonti SharePoint-kansiosta onnistuu, se poistetaan kyseisestä kansiosta ja siirretään onnistuneiden tiedostotuontien tai varoituksia sisältävien tiedostojen kansioon. Muussa tapauksessa se siirretään epäonnistuneiden tietojen kansioon tai se pysyy tässä kansiossa, jos epäonnistuneiden tiedostojen kansiota ei ole määritetty. 
 
 5. Syötä tositteen tunnus, kuten **V-00001**, ja valitse sitten **OK**.
 
@@ -178,7 +179,7 @@ Voit myös avata **Tiedostojen tilat lähteitä varten** -sivun valitsemalla **O
 8. Valitse **Suorita** suorittaaksesi muutetun ER-mallimäärityksen.
 9. Syötä tositteen tunnus, kuten **V-00002**, ja valitse sitten **OK**.
 
-    Huomaa, että tietoloki sisältää ilmoituksen siitä, että SharePoint-kansion tiedosto sisältää virheellisen toimittajatilin, eikä sitä voi tuoda.
+    Huomaa, että tietoloki sisältää ilmoituksen SharePoint-kansiossa olevasta tiedostosta, joka sisältää virheellisen toimittajatilin jota ei voi tuoda.
 
     [![Suorita ER-mallimääritys](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
@@ -186,10 +187,9 @@ Voit myös avata **Tiedostojen tilat lähteitä varten** -sivun valitsemalla **O
 
     [![ER – tiedostotilojen sivu valituille lähteille](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
-    **Tuontimuodon lähteiden lokit** -osa ilmaisee, että tuonti epäonnistui ja että tiedosto on yhä SharePoint-kansiossa (**On poistettu** -valintaruutua ei ole valittu). Jos korjaat tämän tiedoton SharePointissa lisäämällä asianmukaisen toimittajan koodin ja sitten muutat tiedoston tilasta **Epäonnistui** tilaan **Valmis** **Tuontimuodon lähteiden lokit** -osassa, voit tuoda tiedoston uudelleen.
+   **Tuontimuodon lähteiden lokit** -osa ilmaisee, että tuonti epäonnistui ja että tiedosto on yhä SharePointin tiedostojen virheet kansiossa (**On poistettu** -valintaruutua ei ole valittu). Jos korjaat tämän tiedoston SharePointissa lisäämällä oikean toimittajakoodin ja siirtämällä sen sitten SharePointin Tiedostojen tuonnin lähde (ensisijainen) -kansioon, voit tuoda tiedoston uudelleen.
 
-11. Tarkista SharePoint-kansio **Tiedostojen tuonnin lähde (ensisijainen)**. Huomaa, että Excel-tiedosto, jota ei tuotu, on edelleen tässä kansiossa.
-12. Valitse Finance and Operationsin kohdassa **Ostoreskontra** \> **Kausittaiset tehtävät** \> **Valmistevero (1099)** \> **Toimittajien tilitykset valmisteveroja (1099) varten** asianmukaiset arvot **Päivämäärästä**- ja **Päivämäärään**-kenttiin ja valitse sitten **Manuaaliset 1099-tapahtumat**.
+11. Valitse Finance and Operationsin kohdassa **Ostoreskontra** \> **Kausittaiset tehtävät** \> **Valmistevero (1099)** \> **Toimittajien tilitykset valmisteveroja (1099) varten** asianmukaiset arvot **Päivämäärästä**- ja **Päivämäärään**-kenttiin ja valitse sitten **Manuaaliset 1099-tapahtumat**.
 
     Vain tositteen V-00001 tapahtumat ovat käytettävissä. Tositteen V-00002 tapahtumat eivät ole käytettävissä vaikka viimeisen tuodun tapahtuman virhe havaittiin Excel-tiedostossa.
 

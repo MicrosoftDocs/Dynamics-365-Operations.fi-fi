@@ -69,6 +69,3 @@ Kirjautumispalvelua voidaan laajentaa niin, että ne tukevat laajennettuja kirja
 
 Kun jatkettu sisäänkirjautuminen on määritetty ja työntekijälle on määritetty viivakoodi tai magneettinauha, työntekijän tarvitsee vain lukea tai skannata korttinsa myyntipisteen kirjautumissivulla. Jos tarvitaan myös salasana ennen kuin kirjautuminen voi jatkua, työntekijää kehotetaan syöttämään salasanansa.
 
-
-
-
