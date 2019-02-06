@@ -35,8 +35,10 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
 2. Valitse **Raportointikonfiguraatiot**.
 3. Valitse puussa **Maksut (yksinkertaistettu malli)**.
 4. Avaa valintaikkuna valitsemalla **Luo konfigurointi**.
+
  > [!NOTE]
  > Jos **Luo konfigurointi** ei ole näkyvissä, suunnittelutila on otettava käyttöön **Sähköisen raportoinnin parametrit** -sivulla. 
+ 
 5. Anna **Uusi**-kentässä **Muoto perustuu tietomalliin PaymentModel**.
 6. Anna **Nimi**-kentässä **BACS (Iso-Britannia, kuvitteellinen)**.
 7. Anna **Kuvaus**-kenttään **BACS - toimittajan maksumuoto (Iso-Britannia, kuvitteellinen)**.
@@ -44,6 +46,7 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
     * Voit määrittää sähköiselle asiakirjalle tietyn muodon. Jätä kenttä tyhjäksi, jos haluat valita muodon suorituksen aikana.  
 8. Anna tai valitse **Tietomallin määritelmä** -kentän arvo.
 9. Valitse **Luo konfiguraatio**. Uusi konfiguraatio on luotu. Rakenteen muodon voi tallentaa luonnoksena sähköisten asiakirjojen hallintaa varten.  
+
  > [!NOTE]
  > Jos **Luo konfigurointi** ei ole näkyvissä, suunnittelutila on otettava käyttöön **Sähköisen raportoinnin parametrit** -sivulla.
 
