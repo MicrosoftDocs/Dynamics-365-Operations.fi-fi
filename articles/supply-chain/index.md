@@ -1,120 +1,118 @@
 ---
 title: Toimitusketjun hallinnan kotisivu
-description: "Tällä sivulla on luettelo Microsoft Dynamics 365 for Finance and Operationsin toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista."
+description: Tällä sivulla on luettelo Microsoft Dynamics 365 for Finance and Operations -ohjelman toimitusketjun hallintaa koskevista ohjeaiheista ja muista resursseista.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302235"
 ---
-
-# <a name="supply-chain-management-home-page"></a><span data-ttu-id="0e05e-103">Toimitusketjun hallinnan kotisivu</span><span class="sxs-lookup"><span data-stu-id="0e05e-103">Supply chain management home page</span></span>
+# <a name="supply-chain-management-home-page"></a><span data-ttu-id="a4b19-103">Toimitusketjun hallinnan kotisivu</span><span class="sxs-lookup"><span data-stu-id="a4b19-103">Supply chain management home page</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="0e05e-104">Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operationsin toimitusketjun hallinnon toimintoja koskevista ohjeaiheista ja muista resursseista.</span><span class="sxs-lookup"><span data-stu-id="0e05e-104">This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
+<span data-ttu-id="a4b19-104">Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations -ohjelman toimitusketjun hallintaa koskevista ohjeaiheista ja muista resursseista.</span><span class="sxs-lookup"><span data-stu-id="a4b19-104">This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 
-## <a name="whats-new-and-in-development"></a><span data-ttu-id="0e05e-105">Uudet ja kehitteillä olevat toiminnot</span><span class="sxs-lookup"><span data-stu-id="0e05e-105">What's new and in development</span></span>
-<span data-ttu-id="0e05e-106"><a href="https://roadmap.dynamics.com/">Dynamics 365 -ohjesivustolla</a> on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.</span><span class="sxs-lookup"><span data-stu-id="0e05e-106">Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development.</span></span> 
+## <a name="whats-new-and-in-development"></a><span data-ttu-id="a4b19-105">Uudet ja kehitteillä olevat toiminnot</span><span class="sxs-lookup"><span data-stu-id="a4b19-105">What's new and in development</span></span>
+<span data-ttu-id="a4b19-106"><a href="https://roadmap.dynamics.com/">Dynamics 365 Tiekartta -sivustolla</a> on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.</span><span class="sxs-lookup"><span data-stu-id="a4b19-106">Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development.</span></span> 
 
-## <a name="core-concepts-and-tasks"></a><span data-ttu-id="0e05e-107">Keskeiset käsitteet ja tehtävät</span><span class="sxs-lookup"><span data-stu-id="0e05e-107">Core concepts and tasks</span></span>
+## <a name="core-concepts-and-tasks"></a><span data-ttu-id="a4b19-107">Keskeiset käsitteet ja tehtävät</span><span class="sxs-lookup"><span data-stu-id="a4b19-107">Core concepts and tasks</span></span>
 
-<span data-ttu-id="0e05e-108">Saat lisätietoja valitsemalla ominaisuusalueen.</span><span class="sxs-lookup"><span data-stu-id="0e05e-108">Select a feature area to learn more about it.</span></span>
+<span data-ttu-id="a4b19-108">Saat lisätietoja valitsemalla ominaisuusalueen.</span><span class="sxs-lookup"><span data-stu-id="a4b19-108">Select a feature area to learn more about it.</span></span>
 
-- [<span data-ttu-id="0e05e-109">Kustannuslaskenta</span><span class="sxs-lookup"><span data-stu-id="0e05e-109">Cost accounting</span></span>](../financials/cost-accounting/cost-accounting-home-page.md)
-- [<span data-ttu-id="0e05e-110">Kustannusten hallinta</span><span class="sxs-lookup"><span data-stu-id="0e05e-110">Cost management</span></span>](cost-management/cost-management-home-page.md)  
-- [<span data-ttu-id="0e05e-111">Varastoinninhallinta</span><span class="sxs-lookup"><span data-stu-id="0e05e-111">Inventory management</span></span>](inventory/inventory-home-page.md)
-- [<span data-ttu-id="0e05e-112">Pääsuunnittelu</span><span class="sxs-lookup"><span data-stu-id="0e05e-112">Master planning</span></span>](master-planning/master-planning-home-page.md)
-- [<span data-ttu-id="0e05e-113">Hankinta</span><span class="sxs-lookup"><span data-stu-id="0e05e-113">Procurement and sourcing</span></span>](procurement/procurement-sourcing-overview.md)
-- [<span data-ttu-id="0e05e-114">Tuotetietojen hallinta</span><span class="sxs-lookup"><span data-stu-id="0e05e-114">Product information management</span></span>](pim/product-information.md)
-- [<span data-ttu-id="0e05e-115">Tuotannonhallinta</span><span class="sxs-lookup"><span data-stu-id="0e05e-115">Production control</span></span>](production-control/production-process-overview.md)
-- [<span data-ttu-id="0e05e-116">Myynti ja markkinointi</span><span class="sxs-lookup"><span data-stu-id="0e05e-116">Sales and marketing</span></span>](sales-marketing/overview-sales-marketing.md)
-- [<span data-ttu-id="0e05e-117">Huollon hallinta</span><span class="sxs-lookup"><span data-stu-id="0e05e-117">Service management</span></span>](service-management/service-management-home-page.md)
-- [<span data-ttu-id="0e05e-118">Kuljetustenhallinta</span><span class="sxs-lookup"><span data-stu-id="0e05e-118">Transportation management</span></span>](transportation/transportation-management-overview.md)
-- [<span data-ttu-id="0e05e-119">Varastonhallinta</span><span class="sxs-lookup"><span data-stu-id="0e05e-119">Warehouse management</span></span>](warehousing/warehouse-configuration.md)
+- [<span data-ttu-id="a4b19-109">Kustannuslaskenta</span><span class="sxs-lookup"><span data-stu-id="a4b19-109">Cost accounting</span></span>](../financials/cost-accounting/cost-accounting-home-page.md)
+- [<span data-ttu-id="a4b19-110">Kustannusten hallinta</span><span class="sxs-lookup"><span data-stu-id="a4b19-110">Cost management</span></span>](cost-management/cost-management-home-page.md)  
+- [<span data-ttu-id="a4b19-111">Varastoinninhallinta</span><span class="sxs-lookup"><span data-stu-id="a4b19-111">Inventory management</span></span>](inventory/inventory-home-page.md)
+- [<span data-ttu-id="a4b19-112">Pääsuunnittelu</span><span class="sxs-lookup"><span data-stu-id="a4b19-112">Master planning</span></span>](master-planning/master-planning-home-page.md)
+- [<span data-ttu-id="a4b19-113">Hankinta</span><span class="sxs-lookup"><span data-stu-id="a4b19-113">Procurement and sourcing</span></span>](procurement/procurement-sourcing-overview.md)
+- [<span data-ttu-id="a4b19-114">Tuotetietojen hallinta</span><span class="sxs-lookup"><span data-stu-id="a4b19-114">Product information management</span></span>](pim/product-information.md)
+- [<span data-ttu-id="a4b19-115">Tuotannonhallinta</span><span class="sxs-lookup"><span data-stu-id="a4b19-115">Production control</span></span>](production-control/production-process-overview.md)
+- [<span data-ttu-id="a4b19-116">Myynti ja markkinointi</span><span class="sxs-lookup"><span data-stu-id="a4b19-116">Sales and marketing</span></span>](sales-marketing/overview-sales-marketing.md)
+- [<span data-ttu-id="a4b19-117">Huollon hallinta</span><span class="sxs-lookup"><span data-stu-id="a4b19-117">Service management</span></span>](service-management/service-management-home-page.md)
+- [<span data-ttu-id="a4b19-118">Kuljetustenhallinta</span><span class="sxs-lookup"><span data-stu-id="a4b19-118">Transportation management</span></span>](transportation/transportation-management-overview.md)
+- [<span data-ttu-id="a4b19-119">Varastonhallinta</span><span class="sxs-lookup"><span data-stu-id="a4b19-119">Warehouse management</span></span>](warehousing/warehouse-configuration.md)
 
-## <a name="videos"></a><span data-ttu-id="0e05e-120">Videot</span><span class="sxs-lookup"><span data-stu-id="0e05e-120">Videos</span></span>
+## <a name="videos"></a><span data-ttu-id="a4b19-120">Videot</span><span class="sxs-lookup"><span data-stu-id="a4b19-120">Videos</span></span>
 
-<span data-ttu-id="0e05e-121">Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finance and Operations -version 8.0 (huhtikuu 2018) uusista ominaisuuksista.</span><span class="sxs-lookup"><span data-stu-id="0e05e-121">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).</span></span>
+<span data-ttu-id="a4b19-121">Nämä lyhyet videot antavat tietoja Microsoft Dynamics 365 for Finance and Operations -ohjelman version 8.0 (huhtikuu 2018) uusista ominaisuuksista.</span><span class="sxs-lookup"><span data-stu-id="a4b19-121">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).</span></span>
 
-- [<span data-ttu-id="0e05e-122">Työtilauksen synkronointi Field Servicen ja Finance and Operationsin välillä</span><span class="sxs-lookup"><span data-stu-id="0e05e-122">Synchronize a work order between Field Service and Finance and Operations</span></span>](https://youtu.be/hAB4TDVMjxU)
+- [<span data-ttu-id="a4b19-122">Työtilauksen synkronointi Field Servicen ja Finance and Operationsin välillä</span><span class="sxs-lookup"><span data-stu-id="a4b19-122">Synchronize a work order between Field Service and Finance and Operations</span></span>](https://youtu.be/hAB4TDVMjxU)
 
-<span data-ttu-id="0e05e-123">Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 -version (joulukuu 2017) uusista ominaisuuksista.</span><span class="sxs-lookup"><span data-stu-id="0e05e-123">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).</span></span>
+<span data-ttu-id="a4b19-123">Nämä lyhyet videot antavat tietoja Microsoft Dynamics 365 for Finance and Operations -ohjelman Enterprise edition 7.3 (joulukuu 2017) -version uusista ominaisuuksista.</span><span class="sxs-lookup"><span data-stu-id="a4b19-123">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).</span></span>
 
--  [<span data-ttu-id="0e05e-124">Prospektista käteiseksi -integrointi</span><span class="sxs-lookup"><span data-stu-id="0e05e-124">Prospect to cash integration</span></span>](https://youtu.be/AVV9x5x-XCg) 
--  [<span data-ttu-id="0e05e-125">Optimointityökalu</span><span class="sxs-lookup"><span data-stu-id="0e05e-125">Optimization advisor</span></span>](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
--  [<span data-ttu-id="0e05e-126">Konfiguroinnin kopioiminen varaston hallintamallista</span><span class="sxs-lookup"><span data-stu-id="0e05e-126">Use warehouse template to copy configuration</span></span>](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
+-  [<span data-ttu-id="a4b19-124">Prospektista käteiseksi -integrointi</span><span class="sxs-lookup"><span data-stu-id="a4b19-124">Prospect to cash integration</span></span>](https://youtu.be/AVV9x5x-XCg) 
+-  [<span data-ttu-id="a4b19-125">Optimointityökalu</span><span class="sxs-lookup"><span data-stu-id="a4b19-125">Optimization advisor</span></span>](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [<span data-ttu-id="a4b19-126">Konfiguroinnin kopioiminen varaston hallintamallista</span><span class="sxs-lookup"><span data-stu-id="a4b19-126">Use warehouse template to copy configuration</span></span>](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-<span data-ttu-id="0e05e-127">Nämä lyhyet videot sisältävät lisätietoja Microsoft Dynamics 365 for Finance and Operations, Enterprise edition -version (heinäkuu 2017) uusista ominaisuuksista.</span><span class="sxs-lookup"><span data-stu-id="0e05e-127">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).</span></span>
+<span data-ttu-id="a4b19-127">Nämä lyhyet videot antavat tietoja Microsoft Dynamics 365 for Finance and Operations -ohjelman Enterprise edition 7.3 (heinäkuu 2017) -version uusista ominaisuuksista.</span><span class="sxs-lookup"><span data-stu-id="a4b19-127">These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).</span></span>
 
--  [<span data-ttu-id="0e05e-128">Kustannuslaskennan käytön aloittaminen</span><span class="sxs-lookup"><span data-stu-id="0e05e-128">Get started with Cost accounting</span></span>](https://youtu.be/1pUDtJQZ8FU)
--  [<span data-ttu-id="0e05e-129">Kustannusseurannan mobiilityötila</span><span class="sxs-lookup"><span data-stu-id="0e05e-129">Cost control mobile workspace</span></span>](https://youtu.be/imsuTg8rUVk)
--  [<span data-ttu-id="0e05e-130">Excelin käyttäminen kustannusanalyysissa</span><span class="sxs-lookup"><span data-stu-id="0e05e-130">Use Excel for cost analysis</span></span>](https://youtu.be/-HKHYdClvx8)
--  [<span data-ttu-id="0e05e-131">Ostotilausten hyväksyminen mobiililaitteella</span><span class="sxs-lookup"><span data-stu-id="0e05e-131">Approve purchase orders on a mobile device</span></span>](https://youtu.be/gZ-gOlJe7H8)
--  [<span data-ttu-id="0e05e-132">Visuaalinen ajoitus tuotanto- ja erätilausten Gantt-kaavion avulla</span><span class="sxs-lookup"><span data-stu-id="0e05e-132">Visual scheduling with Gantt chart for production and batch orders</span></span>](https://youtu.be/BtbuShkGj4I)
+-  [<span data-ttu-id="a4b19-128">Kustannuslaskennan käytön aloittaminen</span><span class="sxs-lookup"><span data-stu-id="a4b19-128">Get started with Cost accounting</span></span>](https://youtu.be/1pUDtJQZ8FU)
+-  [<span data-ttu-id="a4b19-129">Kustannusseurannan mobiilityötila</span><span class="sxs-lookup"><span data-stu-id="a4b19-129">Cost control mobile workspace</span></span>](https://youtu.be/imsuTg8rUVk)
+-  [<span data-ttu-id="a4b19-130">Excelin käyttäminen kustannusanalyysissa</span><span class="sxs-lookup"><span data-stu-id="a4b19-130">Use Excel for cost analysis</span></span>](https://youtu.be/-HKHYdClvx8)
+-  [<span data-ttu-id="a4b19-131">Ostotilausten hyväksyminen mobiililaitteella</span><span class="sxs-lookup"><span data-stu-id="a4b19-131">Approve purchase orders on a mobile device</span></span>](https://youtu.be/gZ-gOlJe7H8)
+-  [<span data-ttu-id="a4b19-132">Visuaalinen ajoitus tuotanto- ja erätilausten Gantt-kaavion avulla</span><span class="sxs-lookup"><span data-stu-id="a4b19-132">Visual scheduling with Gantt chart for production and batch orders</span></span>](https://youtu.be/BtbuShkGj4I)
 
-<span data-ttu-id="0e05e-133">Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -sovelluksen edellisen version ominaisuuksia, mutta samoja käsitteitä käytetään yhä. Myös menettelyt ovat samanlaisia nykyisessä versiossa.</span><span class="sxs-lookup"><span data-stu-id="0e05e-133">These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</span></span> 
+<span data-ttu-id="a4b19-133">Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -sovelluksen edellisen version ominaisuuksia, mutta samoja käsitteitä käytetään yhä. Myös menettelyt ovat samanlaisia nykyisessä versiossa.</span><span class="sxs-lookup"><span data-stu-id="a4b19-133">These tech conference recordings discuss product functionality in the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</span></span> 
 
-<span data-ttu-id="0e05e-134">**Kustannusten hallinta**</span><span class="sxs-lookup"><span data-stu-id="0e05e-134">**Cost management**</span></span>
+<span data-ttu-id="a4b19-134">**Kustannusten hallinta**</span><span class="sxs-lookup"><span data-stu-id="a4b19-134">**Cost management**</span></span>
 
--  [<span data-ttu-id="0e05e-135">Kustannushintojen hallinnan yhteenveto</span><span class="sxs-lookup"><span data-stu-id="0e05e-135">Overview of Cost management</span></span>](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+-  [<span data-ttu-id="a4b19-135">Kustannushintojen hallinnan yhteenveto</span><span class="sxs-lookup"><span data-stu-id="a4b19-135">Overview of Cost management</span></span>](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
 
-<span data-ttu-id="0e05e-136">**Pääsuunnittelu**</span><span class="sxs-lookup"><span data-stu-id="0e05e-136">**Master planning**</span></span>
+<span data-ttu-id="a4b19-136">**Pääsuunnittelu**</span><span class="sxs-lookup"><span data-stu-id="a4b19-136">**Master planning**</span></span>
 
--  [<span data-ttu-id="0e05e-137">Laajenna kysynnän ennustetoimintoa</span><span class="sxs-lookup"><span data-stu-id="0e05e-137">Extend the demand forecasting functionality</span></span>](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
--  [<span data-ttu-id="0e05e-138">Pääsuunnittelu – vihjeitä suorituskyvyn vianmääritykseen</span><span class="sxs-lookup"><span data-stu-id="0e05e-138">Master planning - tips and tricks for troubleshooting performance</span></span>](https://youtu.be/7v8BPmEs9Dg)
--  [<span data-ttu-id="0e05e-139">Apua! Tarvesuunnittelu toimii hitaasti.</span><span class="sxs-lookup"><span data-stu-id="0e05e-139">Help! MRP is slow!</span></span>](https://youtu.be/RLXybx20B5o)
+-  [<span data-ttu-id="a4b19-137">Laajenna kysynnän ennustetoimintoa</span><span class="sxs-lookup"><span data-stu-id="a4b19-137">Extend the demand forecasting functionality</span></span>](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [<span data-ttu-id="a4b19-138">Pääsuunnittelu – vihjeitä suorituskyvyn vianmääritykseen</span><span class="sxs-lookup"><span data-stu-id="a4b19-138">Master planning - tips and tricks for troubleshooting performance</span></span>](https://youtu.be/7v8BPmEs9Dg)
+-  [<span data-ttu-id="a4b19-139">Apua! Tarvesuunnittelu toimii hitaasti.</span><span class="sxs-lookup"><span data-stu-id="a4b19-139">Help! MRP is slow!</span></span>](https://youtu.be/RLXybx20B5o)
 
-<span data-ttu-id="0e05e-140">**Tuotetietojen hallinta**</span><span class="sxs-lookup"><span data-stu-id="0e05e-140">**Product information management**</span></span>
+<span data-ttu-id="a4b19-140">**Tuotetietojen hallinta**</span><span class="sxs-lookup"><span data-stu-id="a4b19-140">**Product information management**</span></span>
 
--  [<span data-ttu-id="0e05e-141">Microsoft Dynamics AX:n tuotekonfiguraattori</span><span class="sxs-lookup"><span data-stu-id="0e05e-141">Product configurator in Microsoft Dynamics AX</span></span>](https://youtu.be/zotrj3SbCl4)
+-  [<span data-ttu-id="a4b19-141">Tuotekonfigurointi Microsoft Dynamics AX-ohjelmassa</span><span class="sxs-lookup"><span data-stu-id="a4b19-141">Product configurator in Microsoft Dynamics AX</span></span>](https://youtu.be/zotrj3SbCl4)
 
-<span data-ttu-id="0e05e-142">**Varastonhallinta**</span><span class="sxs-lookup"><span data-stu-id="0e05e-142">**Warehouse management**</span></span> 
+<span data-ttu-id="a4b19-142">**Varastonhallinta**</span><span class="sxs-lookup"><span data-stu-id="a4b19-142">**Warehouse management**</span></span> 
 
 <!---  [Process inbound ASNs in Warehouse management](https://mix.office.com/watch/wpf78tr7rjuh)-->  
--  [<span data-ttu-id="0e05e-143">Hyödynnä varastonhallintajärjestelmää täysimääräisesti</span><span class="sxs-lookup"><span data-stu-id="0e05e-143">Get the best out of your warehouse management system</span></span>](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
--  [<span data-ttu-id="0e05e-144">Edistynyt R3-varastonhallinta – saapuvien käsittely ja min/max-täydennys</span><span class="sxs-lookup"><span data-stu-id="0e05e-144">Advanced R3 Warehouse management - Inbound processing and min/max replenishment</span></span>](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
--  [<span data-ttu-id="0e05e-145">Edistynyt R3-varastonhallinta – lähtevien käsittely sekä täydennys kysynnän mukaan</span><span class="sxs-lookup"><span data-stu-id="0e05e-145">Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment</span></span>](https://youtu.be/Og0gLlVp7jA)
--  [<span data-ttu-id="0e05e-146">Uuden Microsoft Dynamics AX 2012 R3 -varastonhallinnan etiketit</span><span class="sxs-lookup"><span data-stu-id="0e05e-146">Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management</span></span>](https://youtu.be/5w1MngVchBA)
--  [<span data-ttu-id="0e05e-147">Dynamics AX 2012 R3: edistynyt varastonhallinta – prosessituotanto</span><span class="sxs-lookup"><span data-stu-id="0e05e-147">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing</span></span>](https://www.youtube.com/embed/QUxXUrN-7n4)
+-  [<span data-ttu-id="a4b19-143">Hyödynnä varastonhallintajärjestelmää täysimääräisesti</span><span class="sxs-lookup"><span data-stu-id="a4b19-143">Get the best out of your warehouse management system</span></span>](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [<span data-ttu-id="a4b19-144">Edistynyt R3-varastonhallinta – saapuvien käsittely ja min/max-täydennys</span><span class="sxs-lookup"><span data-stu-id="a4b19-144">Advanced R3 Warehouse management - Inbound processing and min/max replenishment</span></span>](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [<span data-ttu-id="a4b19-145">Edistynyt R3-varastonhallinta – lähtevien käsittely sekä täydennys kysynnän mukaan</span><span class="sxs-lookup"><span data-stu-id="a4b19-145">Advanced R3 Warehouse management - A day in the life, outbound processing and demand Replenishment</span></span>](https://youtu.be/Og0gLlVp7jA)
+-  [<span data-ttu-id="a4b19-146">Merkinnät uudessa Microsoft Dynamics AX 2012 R3 Varastonhallinta -ohjelmassa</span><span class="sxs-lookup"><span data-stu-id="a4b19-146">Labels in the new Microsoft Dynamics AX 2012 R3 Warehouse management</span></span>](https://youtu.be/5w1MngVchBA)
+-  [<span data-ttu-id="a4b19-147">Dynamics AX 2012 R3: Edistynyt varastonhallinta - Prosessituotanto</span><span class="sxs-lookup"><span data-stu-id="a4b19-147">Dynamics AX 2012 R3: Advanced warehouse management - A day in the life of process manufacturing</span></span>](https://www.youtube.com/embed/QUxXUrN-7n4)
 
-<span data-ttu-id="0e05e-148">**Tuotannonhallinta**</span><span class="sxs-lookup"><span data-stu-id="0e05e-148">**Production control**</span></span>
+<span data-ttu-id="a4b19-148">**Tuotannonhallinta**</span><span class="sxs-lookup"><span data-stu-id="a4b19-148">**Production control**</span></span>
 
--  [<span data-ttu-id="0e05e-149">Työvaiheiden ja tehtävien alihankinta tuotannossa</span><span class="sxs-lookup"><span data-stu-id="0e05e-149">Subcontracting operations and activities in manufacturing</span></span>](https://youtu.be/y1jrd3A_k70)
+-  [<span data-ttu-id="a4b19-149">Työvaiheiden ja tehtävien alihankinta tuotannossa</span><span class="sxs-lookup"><span data-stu-id="a4b19-149">Subcontracting operations and activities in manufacturing</span></span>](https://youtu.be/y1jrd3A_k70)
 
-<span data-ttu-id="0e05e-150">**Kuljetustenhallinta**</span><span class="sxs-lookup"><span data-stu-id="0e05e-150">**Transportation management**</span></span>
+<span data-ttu-id="a4b19-150">**Kuljetustenhallinta**</span><span class="sxs-lookup"><span data-stu-id="a4b19-150">**Transportation management**</span></span>
 
--  [<span data-ttu-id="0e05e-151">Kuljetustenhallinta (TMS) uudessa Microsoft Dynamics AX:ssä</span><span class="sxs-lookup"><span data-stu-id="0e05e-151">Transportation management (TMS) in the new Microsoft Dynamics AX</span></span>](https://youtu.be/jgmTgJIgEFQ)
+-  [<span data-ttu-id="a4b19-151">Kuljetustenhallinta uudessa Microsoft Dynamics AX -ohjelmassa</span><span class="sxs-lookup"><span data-stu-id="a4b19-151">Transportation management (TMS) in the new Microsoft Dynamics AX</span></span>](https://youtu.be/jgmTgJIgEFQ)
 
-## <a name="blogs"></a><span data-ttu-id="0e05e-152">Blogit</span><span class="sxs-lookup"><span data-stu-id="0e05e-152">Blogs</span></span>
-<span data-ttu-id="0e05e-153"><a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX:n tuotannon tutkimus- ja kehitysryhmän blogissa</a> ja <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa </a>on useita valmistusta ja toimitusketjun hallintaa käsitteleviä aiheita.</span><span class="sxs-lookup"><span data-stu-id="0e05e-153">There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>.</span></span> <span data-ttu-id="0e05e-154">Useimmat kirjoitukset koskevat Finance and Operations -sovelluksen aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa.</span><span class="sxs-lookup"><span data-stu-id="0e05e-154">Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</span></span> 
+## <a name="blogs"></a><span data-ttu-id="a4b19-152">Blogit</span><span class="sxs-lookup"><span data-stu-id="a4b19-152">Blogs</span></span>
+<span data-ttu-id="a4b19-153"><a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX:n tuotannon tutkimus- ja kehitysryhmän blogissa </a> ja <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa </a> on useita valmistusta ja toimitusketjun hallintaa käsitteleviä aiheita.</span><span class="sxs-lookup"><span data-stu-id="a4b19-153">There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>.</span></span> <span data-ttu-id="a4b19-154">Useimmat kirjoitukset koskevat Finance and Operations -sovelluksen aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa.</span><span class="sxs-lookup"><span data-stu-id="a4b19-154">Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version.</span></span> 
 
-## <a name="white-papers"></a><span data-ttu-id="0e05e-155">Tulostettavat ohjeet</span><span class="sxs-lookup"><span data-stu-id="0e05e-155">White papers</span></span>
--  <span data-ttu-id="0e05e-156"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Kustannuslaskennan käytännön harjoituksia</a></span><span class="sxs-lookup"><span data-stu-id="0e05e-156"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a></span></span> 
--  <span data-ttu-id="0e05e-157"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean-valmistus: saatavuus (CTP) ja kanban-töiden ajoitus</a></span><span class="sxs-lookup"><span data-stu-id="0e05e-157"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling</a></span></span> 
--  <span data-ttu-id="0e05e-158"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Tuoterakenteen laskenta kustannuslaskelmaa käyttäen</a></span><span class="sxs-lookup"><span data-stu-id="0e05e-158"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet</a></span></span>
--  <span data-ttu-id="0e05e-159"><a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Microsoft Dynamics 365 for Finance and Operationsin tukemat varastonhallinnan mobiilitoiminnot</a></span><span class="sxs-lookup"><span data-stu-id="0e05e-159"><a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations</a></span></span>
+## <a name="white-papers"></a><span data-ttu-id="a4b19-155">Tulostettavat ohjeet</span><span class="sxs-lookup"><span data-stu-id="a4b19-155">White papers</span></span>
+-  <span data-ttu-id="a4b19-156"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Kustannuslaskennan käytännön harjoituksia</a></span><span class="sxs-lookup"><span data-stu-id="a4b19-156"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a></span></span> 
+-  <span data-ttu-id="a4b19-157"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean-valmistus: saatavuus (CTP) ja kanban-töiden ajoitus</a></span><span class="sxs-lookup"><span data-stu-id="a4b19-157"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling</a></span></span> 
+-  <span data-ttu-id="a4b19-158"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Tuoterakenteen laskenta kustannuslaskelmaa käyttäen</a></span><span class="sxs-lookup"><span data-stu-id="a4b19-158"><a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet</a></span></span>
+-  <span data-ttu-id="a4b19-159"><a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Varaston liikkuvuus helpottuu Microsoft Dynamics 365 for Finance and Operations -ohjelman avulla</a></span><span class="sxs-lookup"><span data-stu-id="a4b19-159"><a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations</a></span></span>
 
-## <a name="elearning-courses"></a><span data-ttu-id="0e05e-160">eLearning-kurssit</span><span class="sxs-lookup"><span data-stu-id="0e05e-160">eLearning courses</span></span>
-<span data-ttu-id="0e05e-161">Lisätietoja Microsoft Dynamics 365 for Finance and Operations -koulutuksesta on <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamicsin oppimisportaalissa</a>.</span><span class="sxs-lookup"><span data-stu-id="0e05e-161">For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>.</span></span> <span data-ttu-id="0e05e-162">(tarvitaan CustomerSource-tili)</span><span class="sxs-lookup"><span data-stu-id="0e05e-162">(requires CustomerSource account)</span></span> 
-
+## <a name="elearning-courses"></a><span data-ttu-id="a4b19-160">eLearning-kurssit</span><span class="sxs-lookup"><span data-stu-id="a4b19-160">eLearning courses</span></span>
+<span data-ttu-id="a4b19-161">Tietoja Microsoft Dynamics 365 for Finance and Operations -koulutuksesta on <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics -oppimisportaalissa</a>.</span><span class="sxs-lookup"><span data-stu-id="a4b19-161">For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>.</span></span> <span data-ttu-id="a4b19-162">(CustomerSource -käyttäjätili tarvitaan)</span><span class="sxs-lookup"><span data-stu-id="a4b19-162">(requires CustomerSource account)</span></span> 
 
 
