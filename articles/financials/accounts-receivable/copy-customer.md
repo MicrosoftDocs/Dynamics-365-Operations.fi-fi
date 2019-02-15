@@ -1,13 +1,13 @@
 ---
-title: "Kopioi asiakkaat käyttämällä jaettuja numerosarjoja"
-description: "Tässä ohjeaiheessa kerrotaan, miten jaettujen numerosarjojen avulla asiakas kopioidaan toiseen yritykseen pitäen asiakastunnus ennallaan."
+title: Kopioi asiakkaat käyttämällä jaettuja numerosarjoja
+description: Tässä ohjeaiheessa kerrotaan, miten jaettujen numerosarjojen avulla asiakas kopioidaan toiseen yritykseen pitäen asiakastunnus ennallaan.
 author: mikefalkner
 manager: aolson
 ms.date: 08/31/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302199"
 ---
-
 # <a name="copy-customers-by-using-shared-number-sequences"></a>Kopioi asiakkaat käyttämällä jaettuja numerosarjoja
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Asiakkaita voidaan kopioida yritysten välillä myös käytettäessä manuaalisi
 
 ## <a name="copy-a-customer"></a>Asiakkaan kopioiminen
 
-Asiakas kopioidaan valitsemalla**Kaikki asiakkaat** -luettelosivulla **Uusi**. **Luo asiakas** -valintaikkuna avautuu. Uutta asiakastunnusta ei määritetä heti. Tämä toiminto eroaa aiemmista Microsoft Dynamics 365 for Finance and Operations -versioista. Asiakasryhmää ei ole vielä valittu, joten järjestelmä ei voi määrittää oikeaa käytettävää numerosarjaa. Se ei voi myöskään määrittää, halutaanko luoda uusi asiakas vai kopioida asiakas. Siksi asiakastunnus määritetään vasta kun valitset **Tallenna**-vaihtoehdon valintaikkunan alareunassa.
+Asiakas kopioidaan valitsemalla**Kaikki asiakkaat** -luettelosivulla **Uusi**. **Luo asiakas** -valintaikkuna avautuu. Uutta asiakastunnusta ei määritetä heti. Tämä toiminnallisuus eroaa Microsoft Dynamics 365 for Finance and Operations -ohjelman edellisten versioiden toiminnasta. Asiakasryhmää ei ole vielä valittu, joten järjestelmä ei voi määrittää oikeaa käytettävää numerosarjaa. Se ei voi myöskään määrittää, halutaanko luoda uusi asiakas vai kopioida asiakas. Siksi asiakastunnus määritetään vasta kun valitset **Tallenna**-vaihtoehdon valintaikkunan alareunassa.
 
 Jos luot uutta asiakasta, voit jatkaa täyttämään kaikki kentät tavalliseen tapaan. Kun olet valmis ja valitset **Tallenna**, huomaat, että asiakastunnus määritettiin automaattisesti. Jos käytetään manuaalisia numerosarjoja, huomaat, että käytettiin manuaalista asiakastunnusta.
 
@@ -66,4 +65,3 @@ Asiakkaat voi kopioida myös hakemalla verovapausnumeron perusteella **Kaikki
 
 1. Näkyviin tulee **Kopioi asiakas** -vaihtoehto. Tämä vaihtoehto on oletusarvoisesti **Ei**. Voit kopioida asiakkaan nykyiseen yritykseen valitsemalla **Kyllä**. 
 2. Valitse **Valitse**. Uusi asiakas luodaan.
-

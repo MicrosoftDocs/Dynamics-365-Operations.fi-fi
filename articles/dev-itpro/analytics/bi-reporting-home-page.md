@@ -1,13 +1,13 @@
 ---
 title: Yritystietojen ja raportoinnin aloitussivu
-description: "Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations -sovellukseen sisältyvistä yritystieto- ja raportointityökaluista."
+description: Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations -sovellukseen sisältyvistä yritystieto- ja raportointityökaluista.
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302207"
 ---
-
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Yritystietojen ja raportoinnin aloitussivu
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dy
 - [Finance and Operations: Business intelligence](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blogi)
 
 ## <a name="analytical-workspaces"></a>Analyysityötilat
-Finance and Operationsissa on vuorovaikutteisia raportteja, jotka integroituvat saumattomasti sovellusten työtiloihin. Työtiloissa voidaan käyttää monipuolisesti Microsoft Power BI:n tukemia infograafeja ja visuaalisia elementtejä. Näissä infograafeissa ja visuaalisissa elementeissä käytetään monenlaisia kolmansien osapuolien toimittamia ohjausobjekteja. Työtiloista voikin tämän vuoksi muodostaa käyttäjille erittäin visuaalisen ja vuorovaikutteisen kokemuksen.
+Finance and Operationsissa on vuorovaikutteisia raportteja, jotka integroituvat saumattomasti sovellusten työtiloihin. Työtiloissa voidaan käyttää monipuolisesti Microsoft Power BII:n tukemia infograafeja ja visuaalisia elementtejä. Näissä infograafeissa ja visuaalisissa elementeissä käytetään monenlaisia kolmansien osapuolien toimittamia ohjausobjekteja. Työtiloista voikin tämän vuoksi muodostaa käyttäjille erittäin visuaalisen ja vuorovaikutteisen kokemuksen.
 
 Käyttäjät voivat käsitellä tietoja napsauttamalla tai koskettamalla sivun visuaalisia elementtejä. He pääsevät näkemään syy- ja seuraussuhteen sekä voivat tehdä yksinkertaisia entä jos -toimintoja työtilasta poistumatta. Upeiden ja vuorovaikutteisten visuaalisten elementtien ansioista käyttäjät jaksavat perehtyä tietoihin ja löytävät tällä tavoin piiloon jääviä trendejä.
 
@@ -45,11 +44,11 @@ Käyttäjät voivat käsitellä tietoja napsauttamalla tai koskettamalla sivun v
 
 Lisätietoja on seuraavissa ohjeaiheissa:
 
-- [Embedded Power BI:n käyttö työtiloissa](embed-power-bi-workspaces.md)
+- [Sisällytetty Power BI työtiloissa](embed-power-bi-workspaces.md)
 - [Power BI Embedded -integrointi](power-bi-embedded-integration.md)
-- [Analytiikan lisääminen työtiloihin Power BI Embedded -ratkaisun avulla](add-analytics-tab-workspaces.md)
-- [Analyysityötilojen ja raporttien suojaaminen Power BI Embedded -ratkaisun avulla](secure-analytical-workspaces.md)
-- [Finance and Operationsin Power BI -sisältö](power-bi-home-page.md)
+- [Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla](add-analytics-tab-workspaces.md)
+- [Analyysityötilojen ja raporttien suojaaminen Power BI Embeddedin avulla](secure-analytical-workspaces.md)
+- [Power BI -sisältö Finance and Operationsille](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Liitetoiminta-asiakirjat ja tulostaminen
 Liiketoimintatapahtumien tiedot tallennetaan ja välitetään usein raportointiratkaisujen avulla. Raportointiratkaisun onkin tämän vuoksi voitava tuottaa liiketoimintatiedot konkreettisessa muodossa käytössä olevilla laitteilla, kuten verkkotulostimilla. Liiketoiminta-asiakirjoja ovat esimerkiksi myyntilaskut ja sekit.
@@ -91,4 +90,3 @@ Seuraavissa raporteissa on viitetietoja Finance and Operationsin objekteista:
 - [Käyttöoikeuskoodien ja määritysavainten raportti](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services -raportit](SSRS-report.md)
 - [Työnkulkutyyppien raportti](../../fin-and-ops/organization-administration/workflow-types-report.md)
-

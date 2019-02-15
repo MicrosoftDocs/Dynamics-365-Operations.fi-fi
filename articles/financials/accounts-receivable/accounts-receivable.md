@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302237"
 ---
-
 # <a name="accounts-receivable-home-page"></a>Myyntireskontran aloitussivu
 
 [!include [banner](../includes/banner.md)]
@@ -45,16 +44,16 @@ Myyntireskontran avulla voit seurata myyntilaskuja ja asiakkailta vastaanottamia
 
 :::row:::
     :::column:::
-        - [Kirjanpidolliset jaot ja alareskontran kirjauskansioviennit vapaatekstilaskuille](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+        - [Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [Asiakkaan kirjausprofiilit](customer-posting-profiles.md)
-        - [Luottokorttien määritys, vahvistus ja tietojen tarkistus](credit-card-authorizations.md)
+        - [Luottokorttien asetukset, varmennus ja tietojen tarkistus](credit-card-authorizations.md)
         - [Myyntilaskun luominen](configure-customer-invoices.md)
-        - [Toistuvien laskujen määrittäminen ja käsittely](set-up-process-recurring-invoices.md)
-        - [Vapaatekstilaskun korjaaminen](correct-free-text-invoice.md)
+        - [Toistuvien laskujen asetukset ja käsittely](set-up-process-recurring-invoices.md)
+        - [Tekstimuotoisen laskun korjaus](correct-free-text-invoice.md)
     :::column-end:::
     :::column:::
-        - [Vekseleiden määrittäminen](set-up-bills-exchange.md)
-        - [Korkoryhmän korkoprosenttien määrittäminen](set-up-interest-rates-interest-code.md)
+        - [Vekseleiden asetukset](set-up-bills-exchange.md)
+        - [Korkoryhmän korkoprosenttien asetukset](set-up-interest-rates-interest-code.md)
         - [Korkokulujen peruuttaminen, palauttaminen tai käänteinen veloitus](waive-reinstate-reverse-interest-fees.md)
         - [SEPA (Single Euro Payments Area) -suoraveloituksen yleiskatsaus](sepa-direct-debit-overview.md)
         - [SEPA (Single Euro Payments Area) -suoraveloitusvaltakirjan asetukset](sepa-direct-debit-mandate.md)
@@ -81,8 +80,8 @@ Voit hyväksyä asiakkaiden erilaisia maksuvälineitä, kuten vekseleitä, käte
     :::column:::
         - [Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
         - [Myyntireskontran keskitetyt maksut](centralized-payments-accounts-receivable.md)
-        - [Asiakkaan osamaksun ja loppumaksun tilittäminen kokonaan ennen alennuspäivämäärää](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun loppumaksu suoritetaan alennuspäivämäärän jälkeen](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+        - [Asiakkaan osamaksun ja viimeisen maksun tilittäminen kokonaan ennen alennuspäivämäärää](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+        - [Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
     :::column-end:::
     :::column:::
         - [Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen](settle-partial-customer-payment-discounts-credit-notes.md)
@@ -97,13 +96,13 @@ Voit hyväksyä asiakkaiden erilaisia maksuvälineitä, kuten vekseleitä, käte
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-[Microsoft Dynamics 365 -ohjesivustolla](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
+[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustolla on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
 
 #### <a name="blogs"></a>Blogit
 
 [Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) on myyntireskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
-[Microsoft Dynamics AX -tuoteryhmän blogissa](https://blogs.msdn.microsoft.com/dax/) on useita myyntireskontraa käsitteleviä kirjoituksia. Vaikka jotkin näistä viesteistä on kirjoitettu edellistä myyntireskontran versiota varten, samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa.
+[Microsoft Dynamics AX -tuoteryhmän blogissa](https://blogs.msdn.microsoft.com/dax/) on useita myyntireskontraa käsitteleviä kirjoituksia. Vaikka jotkin näistä viesteistä on kirjoitettu edellistä myyntireskontran versiota varten, samoja käsitteitä käytetään edelleen. ja menettelyt ovat samanlaisia nykyisessä versiossa.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
 
@@ -112,8 +111,7 @@ Finance and Operationsin tehtäväoppaissa on lisäohjeita. Voit avata tehtävä
 
 #### <a name="videos"></a>Videot
 
-Tutustu [Microsoft Dynamics 365:n YouTube-kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
-
+Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
 
 
 

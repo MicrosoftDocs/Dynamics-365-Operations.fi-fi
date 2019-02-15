@@ -1,13 +1,13 @@
 ---
-title: "Lokalisointi- ja säädösominaisuudet"
-description: "Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista toiminnoista."
+title: Lokalisointi- ja säädösominaisuudet
+description: Tässä aiheessa on luettelo resursseista, joista saa lisätietoja maa- tai aluekohtaisista toiminnoista.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a8207af4dc9d5059d487bda97959eff559b7ca06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: e74ad4442e1b6851812f889e79f2fb09060fb87a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/01/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302239"
 ---
-
 # <a name="localization-and-regulatory-features"></a>Lokalisointi- ja säädösominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operationsissa on toimintoja, jotka ovat käytössä [tuotteen lokalisoinnin ja käännösten saatavuusoppaassa](https://aka.ms/ax-availabilityguide) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
+Microsoft Dynamics 365 for Finance and Operations -ohjelmassa on toimintoja, jotka ovat käytössä [tuotteen saatavuusoppaassa ](https://aka.ms/dynamics_365_international_availability_deck) mainituissa maissa ja mainituilla alueilla. Toiminto otetaan käyttöön aktiivisen yrityksen ensisijaisen osoitteen perusteella. 
 
 Tämä ohjeen aihe sisältää luettelon resursseista, joiden avulla voit tehdä seuraavaa: 
 - saada lisätietoja kehitysmaiden maa-/aluekohtaisista ratkaisuista
@@ -45,10 +44,11 @@ Seuraavissa resursseissa on ohjeita ja tietoja, jotka auttavat kehittäjiä ja I
 -   [Lokalisointiominaisuuksien luokittelu](classify-localization-features.md)
 -   [Maakoodit – ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates-and-communication"></a>Lokalisointipäivitykset ja viestintä
+## <a name="regulatory-updates-and-communication"></a>Pakolliset päivitykset ja viestintä
 Seuraavissa resursseissa on tietoja lokalisoinnin suunnitelluista ja uusista ominaisuuksista. 
 
-### <a name="localization-updates"></a>Lokalisointipäivitykset
+### <a name="regulatory-updates"></a>Pakolliset päivitykset
+-   [Pakolliset päivitykset](../../financials/localizations/regulatory-updates.md)
 -   [Lokalisointiportaali](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (päivitetään joka viikko)
 -   [LCS-ongelmahaku](../lifecycle-services/issue-search-lcs.md) (päivitetään joka päivä)
 
@@ -74,7 +74,7 @@ Sähköisellä raportointityökalulla (ER-työkalulla) voi määrittää sähkö
 ## <a name="task-guides"></a>Tehtäväoppaat
 Tehtäväoppaita pääsee käyttämään tuotteen ohjeruudusta, ja niissä esitellään keskeiset liiketoimintaprosessit. Voit lukea liiketoimintaprosessin vaiheet avaamalla tehtäväoppaan tai voit toistaa tehtäväoppaan liiketoimintaprosessin esittelynä ja antaa tietoja.
 
-Pääset tehtäväoppaisiin siirtymällä Microsoft Dynamics 365 for Finance and Operations -ohjelman sivulle ja valitsemalla Ohje. Sivua käyttävien tehtäväoppaiden luettelo on ohjeruudussa. Voit myös hakea tehtäväoppaita nimen perusteella ohjeruudussa.
+Pääset tehtäväoppaisiin siirtymällä Microsoft Dynamics 365 for Finance and Operations -sivulle ja valitsemalla Ohjeen. Sivua käyttävien tehtäväoppaiden luettelo on ohjeruudussa. Voit myös hakea tehtäväoppaita nimen perusteella ohjeruudussa.
 
 Lisätietoja löydät kohdasta [Tehtäväoppaat](../../fin-and-ops/get-started/help-overview.md#task-guides).
 
@@ -118,7 +118,6 @@ Lisätietoja löydät kohdasta [Tehtäväoppaat](../../fin-and-ops/get-started/h
         - [Yhdysvallat](../../financials/localizations/united-states.md)
     :::column-end:::
 :::row-end:::
-
 
 
 

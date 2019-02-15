@@ -1,13 +1,13 @@
 ---
-title: "Asiakkaan työnkulku"
-description: "Tässä ohjeaiheessa on tietoja asiakkaan työnkulusta. Muutat tietyt kentät asiakkaalle ja lähetät muutokset sen jälkeen lähetät hyväksyttäviksi työnkulkua käyttämällä ennen kuin ne lisätään asiakkaan nimiin."
+title: Asiakkaan työnkulku
+description: Tässä ohjeaiheessa on tietoja asiakkaan työnkulusta. Muutat tietyt kentät asiakkaalle ja lähetät muutokset sen jälkeen hyväksyttäviksi työnkulkua käyttämällä ennen kuin ne lisätään asiakkaan nimiin.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: shylaw
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 1b0e1621b256e6bbb42f97134b87dd65fa146193
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302225"
 ---
-
 # <a name="customer-workflow"></a>Asiakkaan työnkulku
 
 [!include [banner](../includes/banner.md)]
 
-Asiakkaan työnkulku on lisätty Microsoft Dynamics 365 for Finance and Operations -versioon 8.0.4. Voit muuttaa tietyt kentät asiakkaalle ja lähettää muutokset sen jälkeen hyväksyttäviksi työnkulkua käyttämällä ennen kuin ne lisätään asiakkaan nimiin.
+Asiakkaan työnkulku on lisätty Microsoft Dynamics 365 for Finance and Operations -ohjelman versioon 8.0.4. Voit muuttaa tietyt kentät asiakkaalle ja lähettää muutokset sen jälkeen hyväksyttäviksi työnkulkua käyttämällä ennen kuin ne lisätään asiakkaan nimiin.
 
 ## <a name="set-up-the-customer-workflow"></a>Määritä asiakkaan työnkulku
 
@@ -62,4 +61,3 @@ Kun sinulla on vähintään yksi ehdotettu muutos, kaksi uutta valikkoa tulee n�
     Sivun tilaksi muutetaan **Hyväksymistä odottavat muutokset**.
 
 Työnkulku noudattaa Finance and Operations -palvelun vakiotyönkulkuprosessia. Hyväksyjä ohjataan **Asiakas**-sivulle, jossa hän voi tarkastella muutoksia **Ehdotetut muutokset** -sivulla ja valita sitten **Työnkulku \> Hyväksy** hyväksyäkseen työnkulun. Kun kaikki hyväksynnät on käyty läpi, kentät päivitetään ehdottamillasi arvoilla.
-

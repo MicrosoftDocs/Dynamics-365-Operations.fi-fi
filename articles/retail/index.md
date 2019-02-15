@@ -1,31 +1,30 @@
 ---
-title: Tervetuloa Dynamics 365 for Retailiin
-description: Dynamics 365 for Retail -ohjelman kotisivu
+title: Tervetuloa Dynamics 365 for Retail -ohjelmaan
+description: Dynamics 365 for Retail kotisivu
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: fbdcfc747186e2d8f55ff294a477226a83fbe1b2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302227"
 ---
-
 # <a name="welcome-to-dynamics-365-for-retail"></a>Tervetuloa Dynamics 365 for Retail -ohjelmaan
 
 [!include [banner](includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 08/08/2018
 Microsoft Dynamics 365 for Retail on kattava vähittäismyyntiratkaisu, jonka avulla kaupankäynti on yhtenäistä kaikissa kanavissa. Se käsittää myynnin, mobiilikäytön, tiedot ja tuottavuuden. Näiden avulla vähittäismyyjät ja työntekijät voivat saada enemmän aikaan pilvipalvelun ja mobiilikäytön avulla. Retail sisältää useiden eri liiketoimintaprosessien kattavan tuen. Prosesseihin kuuluvat esimerkiksi myynninedistämistapahtuman, varaston ja kanavien hallinnan ominaisuudet. Se mahdollistaa myös kokonaisvaltaiset asiakaskokemukset kaikilla kosketuspisteillä.
 
 > [!NOTE]
-> Dynamics 365 for Retail liittyy läheisesti Dynamics 365 for Finance and Operations- ja Dynamics 365 for Talent -sovelluksiin. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteessa. Siksi ohjeaiheissa, jotka liittyvät ensisijaisesti Retail-sovellukseen, tuotenimi on Microsoft Dynamics 365 for Retail, ensisijaisesti ydintuotteeseen (Finance and Operations) liittyvissä ohjeaiheissa tuotenimi on Microsoft Dynamics 365 for Finance and Operations ja ensisijaisesti henkilöstöhallintoon liittyvissä ohjeaiheissa tuotenimi on Dynamics 365 for Talent.
+> Dynamics 365 for Retail -ohjelma liittyy läheisesti Dynamics 365 for Finance and Operations- ja Dynamics 365 for Talent -ohjelmaan. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteessa. Tällöin aiheissa, jotka liittyvät ensisijaisesti Retail, tuotteen nimi on Microsoft Dynamics 365 for Retail; aiheissa, jotka liittyvät ensisijaisesti ydintuotteeseen (Finance and Operations), tuotteen nimi on Microsoft Dynamics 365 for Finance and Operations; aiheissa, jotka liittyvät ensisijaisesti henkilöstöresursseihin, tuotteen nimi on Dynamics 365 for Talent.
 
 Saat lisätietoja valitsemalla ominaisuusalueen vasemmassa ruudussa.
 
@@ -79,20 +78,19 @@ Voit määrittää useita osia, joiden avulla määritetään myymälän, myymä
 
 Jos sinua on pyydetty mukauttamaan ympäristöä tai jos järjestelmän käyttöönotto ja ylläpito on vastuullasi, tutustu Retail-sovellusta koskevaan kehittäjien ja järjestelmänvalvojan sisältöön sekä yleiseen sisältöön.
 
-- [Dynamics 365 for Retail IT-ammattilaisille ja kehittäjille](dev-itpro/dev-retail-home-page.md)
-- [Dynamics 365 for Finance and Operationsin kehittäminen ja hallinta](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 for Retail IT-asiantuntijoille ja kehittäjille](dev-itpro/dev-retail-home-page.md)
+- [Dynamics 365 for Finance and Operations -ohjelman kehittäminen ja ylläpito](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 ### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-[Microsoft Dynamics 365 -ohjesivustolla](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
+[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustolla on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
 
 ### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog) on Retail- ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog) on Retail-sovellusta ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
-[Microsoft Dynamics AX -tuoteryhmän blogissa](https://blogs.msdn.microsoft.com/dax/) on useita Retail-sovellusta käsitteleviä viestejä. Vaikka jotkin näistä viesteistä on kirjoitettu edellistä Retail-versiota varten, samoja käsitteitä käytetään edelleen. ja menettelyt ovat samanlaisia nykyisessä versiossa.
+[Microsoft Dynamics AX -tuoteryhmän blogissa](https://blogs.msdn.microsoft.com/dax/) on useita Retail-sovellusta käsitteleviä kirjoituksia. Vaikka jotkin näistä viesteistä on kirjoitettu edellistä Retail-versiota varten, samoja käsitteitä käytetään edelleen. ja menettelyt ovat samanlaisia nykyisessä versiossa.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
-
