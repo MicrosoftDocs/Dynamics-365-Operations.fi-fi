@@ -1,13 +1,13 @@
---- 
-title: "ER Muotomääritysten luominen (marraskuu 2016)"
-description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda muotokonfiguraation sähköiselle raportoinnille (ER)."
+---
+title: ER Muotomääritysten luominen (marraskuu 2016)
+description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda muotokonfiguraation sähköiselle raportoinnille (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
+ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377546"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Muotomääritysten luominen (marraskuu 2016)
 
@@ -35,8 +35,10 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
 2. Valitse **Raportointikonfiguraatiot**.
 3. Valitse puussa **Maksut (yksinkertaistettu malli)**.
 4. Avaa valintaikkuna valitsemalla **Luo konfigurointi**.
+
  > [!NOTE]
  > Jos **Luo konfigurointi** ei ole näkyvissä, suunnittelutila on otettava käyttöön **Sähköisen raportoinnin parametrit** -sivulla. 
+ 
 5. Anna **Uusi**-kentässä **Muoto perustuu tietomalliin PaymentModel**.
 6. Anna **Nimi**-kentässä **BACS (Iso-Britannia, kuvitteellinen)**.
 7. Anna **Kuvaus**-kenttään **BACS - toimittajan maksumuoto (Iso-Britannia, kuvitteellinen)**.
@@ -44,9 +46,6 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
     * Voit määrittää sähköiselle asiakirjalle tietyn muodon. Jätä kenttä tyhjäksi, jos haluat valita muodon suorituksen aikana.  
 8. Anna tai valitse **Tietomallin määritelmä** -kentän arvo.
 9. Valitse **Luo konfiguraatio**. Uusi konfiguraatio on luotu. Rakenteen muodon voi tallentaa luonnoksena sähköisten asiakirjojen hallintaa varten.  
- > [!NOTE]
- > Jos **Luo konfigurointi** ei ole näkyvissä, suunnittelutila on otettava käyttöön **Sähköisen raportoinnin parametrit** -sivulla.
-
 
 ## <a name="design-the-format-of-an-electronic-document"></a>Sähköisen asiakirjan muodon suunnitteleminen
 1. Valitse **Suunnittelutoiminto**.
@@ -159,5 +158,4 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
 41. Napsauta **OK**.
 42. Valitse **Tallenna**.
 43. Sulje sivu.
-
 
