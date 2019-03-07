@@ -1,32 +1,31 @@
 ---
-title: "LinkedIn Recruiterin käyttö hankinnassa"
-description: "Tässä ohjeaiheessa käsitellään koneoppimisen käyttöä työpaikkojen ja niiden ehdokassuositusten hankkimisessa."
+title: LinkedIn Recruiterin käyttö hankinnassa
+description: Tässä ohjeaiheessa käsitellään koneoppimisen käyttöä työpaikkojen ja niiden ehdokassuositusten hankkimisessa.
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304159"
 ---
-
 # <a name="sourcing-with-linkedin-recruiter"></a>LinkedIn Recruiterin käyttö hankinnassa
 [!include[banner](../includes/banner.md)]
 
@@ -125,11 +124,11 @@ Voit seurata LinkedIn Recruiterin avulla, onko ehdokas hakenut organisaatiossa m
 > [!NOTE]
 > Ehdokkaan ja hakemuksen tietoja ei synkronoida LinkedIn Recruiteriin, jos ehdokas ei ole siirtynyt prospektivaiheesta eteenpäin.
 
-### <a name="inmail-history"></a>InMail-historiatiedot
+### <a name="inmail-history"></a>InMailin historiatiedot
 
-LinkedIn InMailin historiatiedot ovat käytettävissä, kun LinkedIn Recruiterissa on sopimustason käyttöoikeudet. Kun vaihtoehto on otettu käyttöön, voit tarkastella koko ehdokkaaseen liittyvää InMail-historiaa. Voit tarkastella myös, kenellä muulla organisaatiossa on InMail-viestintää ehdokkaan kanssa. Et kuitenkaan voi tarkastella itse viestejä.
+LinkedInin InMailin historiatiedot ovat käytettävissä, kun LinkedIn Recruiterissa on sopimustason käyttöoikeudet. Kun vaihtoehto on otettu käyttöön, voit tarkastella koko ehdokkaaseen liittyviä InMailin historiatietoja. Voit tarkastella myös, kenellä muulla organisaatiossa on InMail-viestintää ehdokkaan kanssa. Et kuitenkaan voi tarkastella itse viestejä.
 
-Voit tarkastella InMail-historiatietoja valitsemalla ehdokkaan profiilissa **LinkedIn**-välilehden ja selaamalla sivun alareunaan tarkastelemaan historiatietoja. Voit tarkastella InMail-historiaa, jos olet käynyt keskustelun ehdokkaan kanssa. InMail-viestit synkronoidaan Attractin kanssa parin tunnin välein.
+Voit tarkastella InMail-historiatietoja valitsemalla ehdokkaan profiilissa **LinkedIn**-välilehden ja selaamalla sivun alareunaan tarkastelemaan historiatietoja. Voit tarkastella InMail-historiatietoja, jos olet käynyt keskustelun ehdokkaan kanssa. InMail-viestit synkronoidaan Attractin kanssa parin tunnin välein.
 
 ### <a name="notes-history"></a>Huomautusten historiatiedot 
 
@@ -142,4 +141,3 @@ Voit tarkastella huomautusten historiatietoja valitsemalla ehdokkaan profiilissa
 InMailin tynkäprofiili on käytettävissä, kun LinkedIn Recruiterissa on sopimustason käyttöoikeudet. Jos ehdokkaat suostuvat jakamaan LinkedIn-profiilin kaikkien organisaation käyttäjien kanssa, voit seurata ehdokkaita Attractissa ja kullekin ehdokkaalle luodaan uusi ehdokastietue. Voit tarkastella ehdokkaan sähköpostiosoitetta, jos ehdokkaalla on jo järjestelmässä sähköpostiosoite tai jos hän on jakanut osoitteensa työhönottajan kanssa.
 
 Voit tarkastella ehdokasluetteloa valitsemalla **Kykypoolit**. Näkyvissä on nyt järjestelmän luoma LinkedIn-kykypooli. Kykypoolissa on luettelo ehdokkaista ja heidän LinkedInista vastaanotetut tynkäprofiilit, joissa näkyy ehdokkaan etu- ja sukunimi. Ehdokkaan sähköpostitunnus on näkyvissä, jos ehdokas on valinnat sähköpostiosoitteen jakamisen.
-

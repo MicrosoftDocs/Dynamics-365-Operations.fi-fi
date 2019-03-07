@@ -1,13 +1,13 @@
 ---
 title: Pakkausmateriaalit ja maksut
-description: "Pakkausmateriaalimaksuja maksetaan kierrätysyritykselle säännöllisin väliajoin. Maksuna peritään tietty summa kunkin pakkausyksikköön kuuluvan materiaalin painoyksikköä kohden. Pakkausmateriaalimaksut lasketaan ja raportoidaan, mutta niistä ei kirjata kirjanpitotapahtumia, koska niitä ei käsitellä viranomaiselle maksettavana verona."
+description: Pakkausmateriaalimaksuja maksetaan kierrätysyritykselle säännöllisin väliajoin. Maksuna peritään tietty summa kunkin pakkausyksikköön kuuluvan materiaalin painoyksikköä kohden. Pakkausmateriaalimaksut lasketaan ja raportoidaan, mutta niistä ei kirjata kirjanpitotapahtumia, koska niitä ei käsitellä viranomaiselle maksettavana verona.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c188651fe8ba3fe3f9678f36ab11ae886ef6f1cf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312298"
 ---
-
 # <a name="packing-materials-and-fees"></a>Pakkausmateriaalit ja maksut
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,6 @@ Jos työnantajasi maksaa pakkausmateriaalimaksut, älä määritä asiakkaiden l
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Pakkausmateriaalien painon tulostaminen laskuihin
 Voit tulostaa pakkausmateriaalien painon laskuun ja ilmaista, kuka maksaa pakkausmateriaalimaksun. Painojen yhteenlaskeminen tapahtuu pakkauskoodeittain.
-
 
 
 

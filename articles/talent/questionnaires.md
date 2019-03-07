@@ -1,13 +1,13 @@
 ---
 title: Kyselylomakkeet
-description: "Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia."
+description: Tässä aiheessa on kyselylomakkeita koskevia yleisiä tietoja ja linkit yksityiskohtaisempiin tietoihin. Kyselylomake on joukko kysymyksiä, joiden avulla kerätään tietoja erilaisia tarkoituksia varten. Voit suunnitella, luoda, jakaa ja täyttää kyselylomakkeita sekä analysoida tuloksia.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: d5c3e02bf5bc17db7232ccbb56e4dfbc062795b4
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304171"
 ---
-
 # <a name="questionnaires"></a>Kyselylomakkeet
 
 [!include [banner](includes/banner.md)]
@@ -58,5 +57,4 @@ Seuraavassa taulukossa on linkkejä kyselylomakkeen ydintehtävien lisätietoihi
 [Kyselylomakkeiden jakelu ja täyttäminen](distribute-questionnaires.md)
 
 [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
-
 

@@ -1,30 +1,29 @@
 ---
 title: Pilvipalvelun ja paikallisten ominaisuuksien vertailu
-description: "Tässä aiheessa kerrotaan, mitkä ominaisuudet ovat tuettuja pilvipalvelussa ja paikallisessa asennuksessa."
+description: Tässä aiheessa kerrotaan, mitkä ominaisuudet ovat tuettuja pilvipalvelussa ja paikallisessa asennuksessa.
 author: robinarh
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
+ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 596cfa056c6f2e64f554b643bb5a61d09c7bf20c
-ms.openlocfilehash: 58bba3dead4d2a8ed3ae424694377e410df16f4c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313977"
 ---
-
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 
 [!include [banner](../includes/banner.md)]
@@ -41,12 +40,12 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 | Alue | Ominaisuus | Pilvi | Paikallinen |
 |---|---|---|---|
 | Yhteensopivuus ja sertifiointi | | Kyllä | Kyllä |
-| | SOC 1 Type 1 -sertifikaatti | Kyllä | En |
+| | SOC 1 Type 1 -sertifikaatti | Kyllä | Nro |
 | Kustannuslaskenta | | Kyllä | Kyllä |
-| | Kustannuslaskennan Power BI -sisältöpaketti | Kyllä | En |
-| | Kustannuslaskennan mobiilityötila | Kyllä | En |
+| | Kustannuslaskennan Power BI -sisältöpaketti | Kyllä | Nro |
+| | Kustannuslaskennan mobiilityötila | Kyllä | Nro |
 | Kustannushintojen hallinta | | Kyllä | Kyllä |
-| | Kustannushintojen hallinnan Power BI -sisältöpaketti | Kyllä | En |
+| | Kustannushallinnan Power BI -sisältöpaketti | Kyllä | Nro |
 | Tietojen hallinta ja integraatio | | Kyllä | Kyllä |
 | | Määritysperustainen laajennus | Kyllä | En |
 | | Tietojen vienti omaan tietovarastoon | Kyllä | Kyllä |
@@ -57,12 +56,12 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 | Ohje | | Kyllä | En |
 | Henkilöstöhallinto | | Kyllä | Kyllä |
 | Tiedot | | Kyllä | Kyllä |
-| | Sähköinen raportointi (ER) - LCS-integrointi | Kyllä | En |
-| | Sähköinen raportointi (ER) - SharePoint-integrointi | Kyllä | En |
-| | PowerBI.com-integrointi | Kyllä | En |
+| | Sähköinen raportointi (ER) - LCS-integrointi | Kyllä | Nro |
+| | Sähköinen raportointi (ER) - SharePoint-integrointi | Kyllä | Nro |
+| | PowerBI.com-integrointi | Kyllä | Nro |
 | | Analyysityötilat | Kyllä | En |
-| | Älykkäät liiketoimintaprosessit: Suositukset | Kyllä | En |
-| | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla | Kyllä | En |
+| | Älykkäät liiketoimintaprosessit: Suositukset | Kyllä | Nro |
+| | Power BI -raporttien sisällön tuottaminen ODatalla Power BI -työpöydän tai Excel PowerQuery -työkalujen avulla | Kyllä | Nro |
 | | SQL Server Reporting Services (SSRS) tukee skaalautumista | Kyllä | En |
 | | Telemetria siirretään pilveen | Kyllä | En |
 | Varastoinninhallinta | | Kyllä | Kyllä |
@@ -77,15 +76,15 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 | Payroll | | Kyllä | Kyllä |
 | | Suoratalletus | Kyllä | En |
 | Osto ja hankinta | | Kyllä | Kyllä |
-| | Siirto ulkoiseen luetteloon ostoehdotuksesta | Kyllä | En |
-| | Ostojen ja kulutuksen analyysi - Power BI -raportit | Kyllä | En |
+| | Siirto ulkoiseen luetteloon ostoehdotuksesta | Kyllä | Nro |
+| | Osto- ja kulutusanalyysin Power BI -raportit | Kyllä | Nro |
 | Tuotetietojen hallinta | | Kyllä | Kyllä |
 | Päätuotetiedot | | Kyllä | Kyllä |
 | Tuotanto | | Kyllä | Kyllä |
-| | Tuotannon suorituskyvyn Power BI -raportit | Kyllä | En |
+| | Tuotannon suorituskyvyn Power BI -raportit | Kyllä | Nro |
 | Projektinhallinta ja kirjanpito | | Kyllä | Kyllä |
 | Myynti | | Kyllä | Kyllä |
-| | Myynnin ja kannattavuuden suorituskyvyn Power BI -raportit | Kyllä | En |
+| | Myynnin ja tuottavuuden suorituskyvyn Power BI -raportit | Kyllä | Nro |
 | Suojaus | | Kyllä | Kyllä |
 | Huoltohallinta | | Kyllä | Kyllä |
 | Toimitusketjun hallinta | | Kyllä | Kyllä |
@@ -93,7 +92,7 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 | Toimittajayhteistyö | | Kyllä | En |
 | Varastonhallinta   | | Kyllä | Kyllä |
 | | Varaston mobiilisovellus | Kyllä | Kyllä |
-| | Varastoinnin Power BI -raportit | Kyllä | En |
+| | Varastoinnin Power BI -raportit | Kyllä | Nro |
 | WWW-asiakasohjelma | | Kyllä | Kyllä |
 | | Tehtävien tallennustoiminto - tallenna tai lataa tehtävätallenteita BPM-kirjastosta | Kyllä | En |
 | Tuki | | Kyllä | Kyllä |
@@ -111,9 +110,9 @@ Seuraavissa taulukoissa luetellaan tuotealueet. Pilvipalvelun ja paikallisen ase
 | | Päivitysympäristöt | Kyllä | En |
 | Jäljityksen jäsennin ja PerfTimer | | Kyllä | En |
 | Päivitä | | Kyllä | Kyllä |
-| | Päivitä | Kyllä | En |
-| | Aiempien versioiden päivittäminen ja tuki | Kyllä | En |
-| Visual Studio -kehitystyö | | Kyllä | Kyllä |
+| | Päivitä | Kyllä | Nro |
+| | Aiempien versioiden päivittäminen ja tuki | Kyllä | Nro |
+| Visual Studion kehitys | | Kyllä | Kyllä |
 
 ### <a name="retail"></a>Retail 
 Lisätietoja paikallisissa ympäristöissä käytettävissä olevista Retail-ominaisuuksista on kohdassa [Paikallisten ympäristöjen Retail-ominaisuudet](../../retail/retail-onprem.md).
@@ -127,4 +126,3 @@ Lisätietoja paikallisissa ympäristöissä käytettävissä olevista Retail-omi
 ## <a name="additional-resources"></a>Lisäresurssit
 
 - [Ominaisuudet, joita ei ole vielä otettu käyttöön paikallisissa käyttöönotoissa](features-not-implemented-on-prem.md)
-

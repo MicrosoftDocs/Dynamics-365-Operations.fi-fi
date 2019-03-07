@@ -1,13 +1,13 @@
 ---
 title: Tuoterakenteet ja kaavat
-description: "Tässä ohjeaiheessa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää."
+description: Tässä ohjeaiheessa on tietoja tuoterakenteista ja kaavoista, jotka ovat keskeinen osa tuotteiden ja tuotevarianttien määritelmää.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0833143722df5402a17e4f8f456a923792c478a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 430e2ab0c4438222ceb9102c011940af803acfbc
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317105"
 ---
-
 # <a name="bills-of-materials-and-formulas"></a>Tuoterakenteet ja kaavat
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Valitse **tarvekohdistettu toimitus** -rivityyppi, kun haluat luoda osatuotannon
 Valitse **Toimittaja**-rivityyppi, jos tuotantoprosessi käyttää alihankkijaa ja haluat luoda alihankkijalle osatuotannon tai ostotilauksen automaattisesti.  
 
 **Huomautus alihankintatoimenpiteistä tuoterakenteessa:** alihankkijan suorittama huolto tai työ on luotava huoltonimikkeenä, jota seurataan varaston seurannassa. Sinun on liitettävä huoltonimike yläkansioon tuoterakennerivinä. Reititykseen on sisällyttävä työvaihe, joka on liitetty alihankkijan operatiivisiin resursseihin.
-
 
 
 

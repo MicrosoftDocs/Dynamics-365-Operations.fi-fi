@@ -1,13 +1,13 @@
 ---
-title: "Uuden valmistetun nimikkeen standardikustannusten päivittäminen"
-description: "Tämä artikkeli sisältää ohjeita uuden valmistetun tuotteen standardikustannusten päivittämiseen."
+title: Uuden valmistetun nimikkeen standardikustannusten päivittäminen
+description: Tämä artikkeli sisältää ohjeita uuden valmistetun tuotteen standardikustannusten päivittämiseen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc8725bcab61fa20a4c35a83473b00e54cf0bf28
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1cfb04a98f7d01f7766bea97157ca3c44c51e326
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325500"
 ---
-
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Uuden valmistetun nimikkeen standardikustannusten päivittäminen
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Jos haluat lisätä uusia valmistettavia nimikkeitä lukitun kauden eri kohtiin,
 5.  Muuta estomerkkiä **Kustannuslaskentaversion määritys** -sivulla siten, että toiseen kustannuslaskelmaversioon lisätyt odottavat kustannustietueet voidaan aktivoida.
 6.  Ota käyttöön kaikki toiseen kustannuslaskelmaversioon lisätyt odottavat kustannustietueet **Aktivoi hinnat** -sivulla (avataan **Kustannuslaskentaversion ylläpito** -sivulta). Yksittäisten nimikkeiden odottavia kustannustietueita voi myös ottaa käyttöön napsauttamalla **Aktivoi**-painiketta **Nimikkeen hinta** -sivulla.
 7.  Voit estää muiden tietojen ylläpidon muuttamalla toiseen kustannuslaskentaversioon lisättyjä estomerkintöjä **Kustannuslaskentaversion määritys** -sivulla. Estomenettelyt estävät uusien odottavien kustannusten syötön ja odottavien kustannusten aktivoinnin.
-
 
 
 

@@ -1,32 +1,31 @@
 ---
-title: Dynamics 365 for Talent Core HR -ohjelman uudet tai muuttuneet ominaisuudet (1. lokakuuta 2018)
-description: "Tässä aiheessa käsitellään Microsoft Dynamics 365 for Talent Core HR -ohjelman uusia tai muuttuneita ominaisuuksia."
+title: Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (1. lokakuuta 2018)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent Core HR:n uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
 ms.openlocfilehash: 97820cd25ece48dc0b8045d9ba509d0971ca5aad
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304185"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-1-2018"></a>Dynamics 365 for Talent Core HR -ohjelman uudet tai muuttuneet ominaisuudet (1. lokakuuta 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-1-2018"></a>Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (1. lokakuuta 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -59,4 +58,3 @@ Organisaatiot myöntävät poissaoloja eri tavalla sen mukaan, milloin työnteki
 ## <a name="known-issue"></a>Tunnettu ongelma
 
 -   **Ongelma:** Lisättäessä uuden liitteen työntekijään, **Uusi**- ja **Muokkaa**-painikkeet näkyvät harmaina. **Ratkaisuehdotus:** Varmista ennen liitesivun avaamista, että olet sulkenut **Työntekijä**-sivulla olevat tietoruudut. Kun tietoruudut on suljettu ladattaessa **Työntekijä**-sivua, **Liitteet**-painikkeet otetaan käyttöön. (Tämä ongelma korjataan seuraavassa ympäristöpäivityksessä.)
-

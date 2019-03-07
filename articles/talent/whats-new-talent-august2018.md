@@ -1,38 +1,37 @@
 ---
 title: Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (elokuu 2018)
-description: "Tässä aiheessa käsitellään Microsoft Dynamics 365 for Talent Core HR -ohjelman uusia tai muuttuneita ominaisuuksia."
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent Core HR:n uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: cdf0893835c1ee9edd89c43b3c5c842d89e6d526
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304257"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-august-2018"></a>Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (elokuu 2018)
 
 [!include [banner](includes/banner.md)]
 
 **Koontiversio 8.1.104**
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 for Talent Core HR -ohjelman uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Dynamics 365 for Talent Core HR:n uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="view-expiring-records-in-manager-self-service"></a>Vanhentuvien tietueiden näyttäminen esimiehen itsepalvelussa
 
@@ -88,4 +87,3 @@ Lisätietoja tästä ominaisuudesta on [Office-integraation opetusohjelma](https
 ## <a name="other-fixes"></a>Muut korjaukset
 
 Tämä versio sisältää uusien yksiköiden lisäksi myös useita aiempien yksiköiden ohjelmavirhekorjauksia ja lokalisoituja otsikkomuutoksia.
-

@@ -1,13 +1,13 @@
 ---
-title: "Varaston työkäytännöt"
-description: "Varaston työkäytännöt määrittävät, onko varastotyö luotu varastoprosessia varten valmistuksessa työtilaustyypin, varaston sijainnin ja tuotteen perusteella."
+title: Varaston työkäytännöt
+description: Varaston työkäytännöt määrittävät, onko varastotyö luotu varastoprosessia varten valmistuksessa työtilaustyypin, varaston sijainnin ja tuotteen perusteella.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 0710eac8daba7f51f6b5d1522476b812a130960d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325592"
 ---
-
 # <a name="warehouse-work-policies"></a>Varaston työkäytännöt
 
 [!include [banner](../includes/banner.md)]
 
-Varaston työkäytännöt Microsoft Dynamics 365 for Finance and Operationsissa määrittävät, onko varastotyö luotu valmistuksen varastoprosessia varten työtilaustyypin, varaston sijainnin ja tuotteen perusteella.
+Microsoft Dynamics 365 for Finance and Operationsin varaston työkäytännöt määrittävät, onko varastotyö luotu varastoprosessia varten valmistuksessa työtilaustyypin, varaston sijainnin ja tuotteen perusteella.
 
 Tämä työkäytäntö määrittää, onko varastotyö luotu varastoprosessia varten valmistuksessa. Voit määrittää työkäytännön käyttämällä yhdistelmää **työtilaustyypit**, **varastosijainti** ja **tuote**. Esimerkiksi tuote L0101 ilmoitetaan valmiiksi tuotossijaintiin 001. Valmis tuote käytetään myöhemmin toisessa tuotantotilauksessa tuotossijainnissa 001. Tässä tapauksessa voit määrittää työkäytännön, joka estää luomasta työtä, jossa käytetään valmiita sivuun siirrettyjä tuotteita, kun raportoit tuotteen L0101 valmiiksi tuotossijaintiin 001. Työkäytäntö on yksittäinen yksikkö, jota voidaan kuvata seuraavien tietojen avulla:
 
@@ -248,7 +247,6 @@ STEPS (25)
 </tr>
 </tbody>
 </table>
-
 
 
 

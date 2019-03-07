@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen asentaminen ja määrittäminen"
-description: "Tässä ohjeaiheessa kerrotaan, miten asennat ja määrität Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen."
+title: Microsoft Dynamics 365 for Finance and Operationsin asentaminen ja määrittäminen &#8211; varastointi
+description: Tässä ohjeaiheessa kerrotaan, miten asennat ja määrität Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: f5e99351d79cb5898c6d5565d3d3197a8fe860df
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0967b10c2037c24c044f38c49b1b998f6771c66b
-ms.openlocfilehash: a1f3cb65e370154e8f3f94780ffb5cab223c85f8
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316116"
 ---
-
-# <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen asentaminen ja määrittäminen
+# <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Microsoft Dynamics 365 for Finance and Operationsin asentaminen ja määrittäminen &#8211; varastointi
 
 [!include [banner](../includes/banner.md)]
 
@@ -47,17 +46,19 @@ Sovellus on saatavilla Android- ja Windows-käyttöjärjestelmille. Jos haluat k
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (kaikki versiot)                                                                                                                                                   |
-| Finance and Operations | Microsoft Dynamics 365 for Operationsin versio 1611 <br>-tai- <br>Microsoft Dynamics AX:n versio 7.0/7.0.1 ja Microsoft Dynamics AX -ympäristöpäivitys 2 ja hotfix-korjaus KB 3210014 |
+| Finance and Operations | Microsoft Dynamics 365 for Operations, versio 1611 <br>-tai- <br>Microsoft Dynamics AX:n versio 7.0/7.0.1 ja Microsoft Dynamics AX platform update 2 ja hotfix-korjaus KB 3210014 |
 
 ## <a name="get-the-app"></a>Hanki sovellus
 -   Windows (UWP)
      - [Finance and Operationsin varastointisovellus Windows-kaupassa](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 -   Android
     - [Finance and Operationsin varastointisovellus Google Play Storessa](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
-    - [Finance and Operationsin varastointisovellus Zebra App Galleryssa](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
+
+> [!NOTE]
+> Zebra App Gallery on poistettu, joten Finance and Operationsin varastointisovellusta ei voi enää ladata kyseisestä sijainnista.
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a>Verkkosovelluksen luominen Azure Active Directoryssa
-Jotta sovellus toimisi tietyn Finance and Operations -palvelimen kanssa, sinun täytyy rekisteröidä verkkopalvelusovellus Azure Active Directoryssä Finance and Operationsin vuokralaisessa. Tietoturvasyistä on suositeltavaa luoda verkkopalvelusovellus jokaiselle laitteelle, jota käytät. Luo WWW-palvelusovellus Azure Active Directoryssa (Azure AD) seuraavasti:
+Jotta sovellus toimisi tietyn Finance and Operations -palvelimen kanssa, sinun täytyy rekisteröidä verkkopalvelusovellus Azure Active Directoryssä Finance and Operationsin vuokraajassa. Tietoturvasyistä on suositeltavaa luoda verkkopalvelusovellus jokaiselle laitteelle, jota käytät. Luo verkkopalvelusovellus Azure Active Directoryssä (Azure AD) seuraavasti:
 
 1.  Siirry selaimessa osoitteeseen <https://portal.azure.com>.
 2.  Kirjoita nimi ja salasana käyttäjälle, jolla on Azure‑tilauksen käyttöoikeus.
@@ -80,7 +81,7 @@ Jotta Finance and Operations voisi käyttää Azure AD -sovellustasi, sinun on s
     3.  Määritä Warehouse-mobiililaitteen käyttäjä, kuten seuraavassa kuvakaappauksessa. [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
 2.  Liitä Azure Active Directory -sovelluksesi Warehousing-sovelluksen käyttäjään.
-    1.  Finance and Operationsissa kohtaan **Järjestelmän hallinta** &gt; **Asetukset** &gt; **Azure Active Directory -sovellukset**.
+    1.  Valitse Finance and Operationsissa **Järjestelmän hallinta** &gt; **Asetukset** &gt; **Azure Active Directory -sovellukset**.
     2.  Luo uusi rivi.
     3.  Anna **Asiakastunnus** (saatu edellisessä osassa), anna sille nimi ja valitse aiemmin luotu käyttäjä. Suosittelemme kaikkien laitteiden merkitsemistä niin, että voit helposti poistaa niiden Finance and Operationsin käyttöoikeuden tällä sivulla siltä varalta, että ne ovat kadonneet. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
@@ -93,17 +94,17 @@ Sinun on määritettävä sovellus laitteessa muodostaaksesi yhteyden Finance an
     + **Azure Active Directory -asiakkaan tunnus** – asiakkaan tunnus saadaan vaiheessa 9 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
     + **Azure Active Directory -asiakkaan salasana** – Asiakkaan salasana saadaan vaiheessa 11 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
     + **Azure Active Directory -resurssi** – Azure AD -resurssi esittää Finance and Operationsin pääkansion URL-osoitetta. **Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
-    + **Azure Active Directory -vuokralainen** – Azure AD -vuokralaista käytetään Finance and Operations -palvelimen kanssa: `https://login.windows.net/your-AD-tenant-ID` Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
+    + **Azure Active Directory -vuokraaja** – Azure AD -vuokraajaa käytetään Finance and Operations -palvelimen kanssa: `https://login.windows.net/your-AD-tenant-ID`. Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
     + **Yritys** – Anna Finance and Operationsin yritys, johon haluat muodostaa sovelluksella yhteyden. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Valitse **Takaisin** -painike sovelluksen vasemmassa yläkulmassa. Sovellus muodostaa nyt yhteyden Finance and Operations -palvelimeen ja fyysisen varaston työntekijän kirjautumisnäyttö avautuu. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
 
-Lisätietoja Dynamics 365 for Finance and Operations – Warehousingin määrittämisestä lukemaan viivakoodeja mobiililaitteen kameralla on kohdassa [Viivakoodien lukeminen kameran avulla Dynamics 365 for Finance and Operations – Warehousingissa](scan-bar-codes-using-a-camera.md)
+Lisätietoja Dynamics 365 for Finance and Operations – varastoinnin määrittämisestä lukemaan viivakoodeja mobiililaitteen kameralla on kohdassa [Viivakoodien lukeminen kameran avulla Dynamics 365 for Finance and Operations – varastoinnissa](scan-bar-codes-using-a-camera.md)
 
 ## <a name="remove-access-for-a-device"></a>Poista laitteen käyttöoikeudet
 Jos laite katoaa tai vaarantuu, laitteen Finance and Operationsin käyttöoikeuden on poistettava. Seuraavat vaiheet kuvaavat suositeltavaa prosessia käyttöoikeuksien poistamiseksi.
 
-1.  Finance and Operationsissa kohtaan **Järjestelmän hallinta** &gt; **Asetukset** &gt; **Azure Active Directory -sovellukset**.
+1.  Valitse Finance and Operationsissa **Järjestelmän hallinta** &gt; **Asetukset** &gt; **Azure Active Directory -sovellukset**.
 2.  Poista rivi, joka vastaa laitetta, jonka haluat poistaa. Muista irrotetun laitteen **asiakastunnus**, sillä tarvitset sitä myöhemmin.
 3.  Kirjaudu Azure-portaalin osoitteessa <https://portal.azure.com>.
 4.  Valitse vasemmassa valikossa **Active Directory** ja varmista, että olet oikeassa hakemistossa.
@@ -111,4 +112,3 @@ Jos laite katoaa tai vaarantuu, laitteen Finance and Operationsin käyttöoikeud
 6.  Varmista, että sovelluksen **asiakastunnus** on sama kuin tämän osan vaiheessa 2.
 7.  Valitse yläruudussa **Poista**.
 8.  Valitse vahvistussanomassa **Kyllä**.
-

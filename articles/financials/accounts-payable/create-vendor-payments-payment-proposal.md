@@ -1,13 +1,13 @@
 ---
 title: Toimittajamaksujen luominen maksuehdotuksen avulla
-description: "Tässä aiheessa on yleiskatsaus maksuehdotusvaihtoehdoista. Artikkeli sisältää myös esimerkkejä maksuehdotusten toiminnasta."
+description: Tässä aiheessa on yleiskatsaus maksuehdotusvaihtoehdoista. Artikkeli sisältää myös esimerkkejä maksuehdotusten toiminnasta.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 332a18eb98811505b38c023c97c22b86a9367af1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327409"
 ---
-
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Toimittajamaksujen luominen maksuehdotuksen avulla
 
 [!include [banner](../includes/banner.md)]
@@ -70,7 +69,7 @@ April maksaa toimittajien laskut 1. heinäkuuta. Hän käyttää maksuehdotusta 
 
 ### <a name="option-1-by-cash-discount"></a>Vaihtoehto 1: Käteisalennuksen mukaan
 
-April valitsee **käteisalennuksen** ehdotustyypiksi. Hän määrittää päivämääräväliksi kesäkuun 26. päivästä heinäkuun 10. päivään. Seuraavat laskut sisältyvät ehdotukseen:
+April valitsee **käteisalennuksen** ehdotustyypiksi. Hän määrittää päivämääräväliksi kesäkuun 26. päivästä heinäkuun 10. päivään. Seuraavat laskut sisältyvät ehdotukseen:
 
 -   1002, koska alennuspäivämäärä, 4.7., on maksupäivien välissä
 -   1004, koska alennuspäivämäärä, 1.7., on maksupäivien välissä
@@ -120,8 +119,7 @@ Dimension ohjauksen avulla voit hallita maksuehdotuksen luotujen rivien ryhmitte
 
 #### <a name="bank-account-selection"></a>Pankkitilin valitseminen
 
-Voit määrittää vakioveloitusten maksutilin jokaiselle laskentayksikölle riippumatta maakontekstista. Tämä määritetään ehdotuksen luomille maksuriveille. Pankkitili-toiminnolla voit määrittää useita veloitettavia pankkitilejä, joita hallitaan dimension ja valuutan tai näiden yhdistelmien mukaan käyttämään eri veloitettavia pankkitilejä yhdistelmästä riippuen.. Voit määrittää näiden yhdistelmät **Maksutavat** -sivun **Pankkitilit**-painikkeella, joka on saatavana kullekin maksutavalle, kun **Kirjaustilin tyyppi**  =  **Pankki**.
-
+Voit määrittää vakioveloitusten maksutilin jokaiselle laskentayksikölle riippumatta maakontekstista. Tämä määritetään ehdotuksen luomille maksuriveille. Pankkitili-toiminnolla voit määrittää useita veloitettavia pankkitilejä, joita hallitaan dimension ja valuutan tai näiden yhdistelmien mukaan käyttämään eri veloitettavia pankkitilejä yhdistelmästä riippuen.. Voit määrittää näiden yhdistelmät **Maksutavat**-sivun **Pankkitilit**-painikkeella, joka on saatavana kullekin maksutavalle, kun **kirjaustilin tyyppi** = **pankki**.
 
 
 

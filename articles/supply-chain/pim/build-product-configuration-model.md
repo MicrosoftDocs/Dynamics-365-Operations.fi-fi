@@ -1,13 +1,13 @@
 ---
-title: "Tuotemääritysmallin rakentaminen"
-description: "Tarve määrittää tuotteita vastaamaan erityisvaatimuksiin on muuttumassa säännöksi poikkeuksen sijaan sekä yritys- että kuluttajasuhteissa."
+title: Tuotemääritysmallin rakentaminen
+description: Tarve määrittää tuotteita vastaamaan erityisvaatimuksiin on muuttumassa säännöksi poikkeuksen sijaan sekä yritys- että kuluttajasuhteissa.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60a901ce9e87571b2d199a49af2cddbd72fc5808
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfaf16cde329909c167d1ad402e08619bdcd5a2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327455"
 ---
-
 # <a name="build-a-product-configuration-model"></a>Tuotemääritysmallin rakentaminen
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ Taulukon rajoitukset voivat olla joko käyttäjän tai järjestelmän määritt�
 
 Käyttäjän määrittämän taulurajoituksen rakentaa käyttäjä. Käyttäjä valitsee määritetyyppien yhdistelmän kuvaamaan taulukon sarakkeita ja syöttää sitten arvot valittujen määritetyyppien toimialueilta muodostamaan taulurajoituksen rivit.  
 
-Järjestelmän määrittämä taulurajoitus määritetään valitsemalla viitteenä käytettävä Microsoft Dynamics 365 for Finance and Operations -taulukko ja valitsemalla sitten tästä taulukiosta kentät, jotka muodostavat rajoituksen sarakkeet. Taulurajoituksen rivit ovat Finance and Operations -taulukossa määrityshetkellä olevat rivit.  
+Järjestelmän määrittämä taulurajoitus määritetään valitsemalla viitteenä käytettävä Microsoft Dynamics 365 for Finance and Operations -taulukko ja valitsemalla sitten tästä taulukosta kentät, jotka muodostavat rajoituksen sarakkeet. Taulurajoituksen rivit ovat Finance and Operations -taulukossa määrityshetkellä olevat rivit.  
 
 Taulurajoitus sisällytetään tuotemääritysmalliin viittaamalla taulurajoituksen määritykseen ja yhdistämällä mallin asiaankuuluvat määritteet taulurajoituksen sarakkeisiin.
 
@@ -158,7 +157,6 @@ Konfiguraation tarkoitus on luoda erilinen tuotevariantti, joka vastaa asiakkaan
 ### <a name="multiple-sites-and-intercompany"></a>Useita toimipaikkoja ja yrityksen sisäinen
 
 Jos konfiguraatio tullaan tekemään toimipaikassa tai jopa yrityksessä, joka eroaa toimipaikasta tai yrityksestä, jossa tuotanto tulee tapahtumaan, tuoterakenne ja reititys luodaan toimittajan toimipaikkaa varten toimittavassa yrityksessä ja laitetaan sinne. Tuotevariantti julkaistaan kaikissa toimitusketjuun osallistuvissa yrityksissä.
-
 
 
 

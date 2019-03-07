@@ -1,14 +1,14 @@
 ---
 title: Yksi tosite
-description: "Talouskirjauskansioiden (kuten yleinen kirjauskansio, käyttöomaisuuden kirjauskansio tai toimittajan maksukirjauskansio) yksi tosite sallii useiden alareskontratapahtumien antamisen yhden tositteen kontekstissa."
+description: Talouskirjauskansioiden (kuten yleinen kirjauskansio, käyttöomaisuuden kirjauskansio tai toimittajan maksukirjauskansio) yksi tosite sallii useiden alareskontratapahtumien antamisen yhden tositteen kontekstissa.
 author: kweekley
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
+ms.openlocfilehash: ada04948c4775091091cc30664dd7d9405b4f9da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 26ae31efe55eeaf6d09ef14112811ea8977bfb0a
-ms.openlocfilehash: 62c30ea748c49b0a3cfe544c7ba10eb52389c50a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/05/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308549"
 ---
-
 # <a name="one-voucher"></a>Yksi tosite
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,7 @@ Aiemmin mainituista ongelmista johtuen yhden tositteen toiminnallisuus on vanhen
 - **Kevään 2018 versio** – Oletusarvoisesti toiminto poistetaan käytöstä **Kirjanpitoparametrit**-sivun **Yleiset**-välilehden **Salli useita tapahtumia yhdessä tositteessa** -parametrilla. Voit ottaa toiminnon käyttöön, jos organisaatiossa on skenaario, joka toteuttaa myöhemmin tässä ohjeaiheessa käsitellyn toiminnallisen aukon.
 
     - Jos asiakkailla on liiketoimintaskenaario, jossa ei tarvita yhden tositteen toiminnallisuutta, toimintoa ei kannata ottaa käyttöön. Microsoft ei korjaa myöhemmin tässä ohjeaiheessa mainituilla alueilla esiintyviä virheitä, jos tätä toimintoa käytetään vaikka käytettävissä on myös toinen ratkaisu.
-    - Lopeta yhden tositteen käyttö Microsoft Dynamics 365 for Finance and Operations -integrointien yhteydessä, ellei toiminnalliset aukot edellytä toiminnon käyttöä.
+    - Lopeta yhden tositteen käyttö Microsoft Dynamics 365 for Finance and Operationsin integrointien yhteydessä, ellei toiminnallisista aukoista edellytä toiminnon käyttöä.
 
 - **Myöhemmät versiot** – Kaikki toiminnalliset aukot täytetään. **Kun toiminnalliset aukot on täytetty ja uudet ominaisuudet on toimitettu, kestää ainakin vuoden, ennen kuin yhden tositteen toiminto poistetaan pysyvästi käytöstä**, sillä asiakkailla ja riippumattomilla ohjelmistotoimittajilla on oltava riittävästi aikaa reagoida uuteen toimintoon. Heidän on ehkä esimerkiksi päivitettävä liiketoimintaprosessit, yksiköt ja integroinnit.
 
@@ -153,7 +152,7 @@ Organisaatiot haluavat usein kirjata kirjanpitoon yhteenvetomuodossa, jolloin ti
 
 Tämä skenaariossa esiintyy yleensä vähittäismyyntiorganisaatioissa, joissa asiakkaat käyttävät ostojen maksamiseen useita maksutapoja. Tässä skenaariossa organisaation on voitava tallentaa useita kirjaamattomia maksuja ja tilittää ne myyntilaskua vastaan.
 
-Uusi toiminto, joka lisättiin Microsoft Dynamics 365 for Operations -versioon 1611 (marraskuu 2016), mahdollistaa useiden kirjaamatomien maksujen tilityksen yhteen laskuun. Useita asiakasmaksuja ei enää tarvitse syöttää yhteen tositteeseen.
+Uusi toiminto, joka lisättiin Microsoft Dynamics 365 for Operationsin versioon 1611 (marraskuu 2016), mahdollistaa useiden kirjaamatomien maksujen tilityksen yhteen laskuun. Useita asiakasmaksuja ei enää tarvitse syöttää yhteen tositteeseen.
 
 ### <a name="import-bank-statement-transactions"></a>Tuo tiliotteen tapahtumat
 

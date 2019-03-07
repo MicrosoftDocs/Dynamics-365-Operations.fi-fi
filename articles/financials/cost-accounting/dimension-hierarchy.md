@@ -1,32 +1,31 @@
 ---
 title: Dimensiohierarkia
-description: "Tässä ohjeaiheessa on tietoja dimensiohierarkioista. Dimensiohierarkian avulla voi määrittää kustannuslaskennan raportoinnin rakenteen, kustannuskäytännöt ja suojausasetukset."
+description: Tässä ohjeaiheessa on tietoja dimensiohierarkioista. Dimensiohierarkian avulla voi määrittää kustannuslaskennan raportoinnin rakenteen, kustannuskäytännöt ja suojausasetukset.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 55d567eb3b4ad6746f39118b575457bb00fe0a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 40a4a1d7549876b72186f30a9c0089f0d27cf3b6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320210"
 ---
-
 # <a name="dimension-hierarchy"></a>Dimensiohierarkia
 
 [!include [banner](../includes/banner.md)]
@@ -172,7 +171,7 @@ Voit siirtää solmu hierarkiassa uuteen sijaintiin valitsemalla kohdesolmun. So
 - **Siirrä jälkeen** – siirrä valittu solmu nykyisestä sijainnista hierarkiassa ja lisää se valitun kohdesolmun **jälkeen** hierarkiatasolla.
 
 > [!NOTE] 
-> Solmujen järjestystä ei säilytetä, kun tiedot viedään Exceliin tai Power BI:iin, koska niistä käytetään oletusarvoisesti aakkosnumeerista lajittelua. Järjestys on palautettava manuaalisesti.
+> Solmujen järjestystä ei säilytetä, kun tiedot viedään Exceliin tai Power BI:hin, koska niistä käytetään oletusarvoisesti aakkosnumeerista lajittelua. Järjestys on palautettava manuaalisesti.
 
 ## <a name="define-dimension-hierarchies-for-reporting"></a>Raportoinnin dimensiohierarkioiden määrittäminen
 
@@ -200,7 +199,7 @@ Dimensiohierarkiat ovat käytettävissä seuraavissa raportointityökaluissa. T�
 
     - Kaikki dimensiohierarkiat ovat käytettävissä.
     
-Jos luot raportteja Excelissä tai Power BI:ssa, vain 15 ensimmäistä dimensiohierarkian tasoa viedään. Tämä rajoitus on käytössä, Excelissä ja Power BI:ssa on käytettävä kiinteää rakennetta. Jos hierarkiassa on yli 15 tasoa, lisätasoja ei viedä. Normalisoidussa taulussa on tietue kullekin hierarkian dimension jäsenelle. Niinpä kooste tehdään automaattisesti. Tämä auttaa varmistamaan, että minkä tahansa hierarkian 15 käytettävissä olevan tason saldot ovat edelleen oikeat.
+Jos luot raportteja Excelissä tai Power BI:ssä, vain 15 ensimmäistä dimensiohierarkian tasoa viedään. Tämä rajoitus on käytössä, Excelissä ja Power BI:ssä on käytettävä kiinteää rakennetta. Jos hierarkiassa on yli 15 tasoa, lisätasoja ei viedä. Normalisoidussa taulussa on tietue kullekin hierarkian dimension jäsenelle. Niinpä kooste tehdään automaattisesti. Tämä auttaa varmistamaan, että minkä tahansa hierarkian 15 käytettävissä olevan tason saldot ovat edelleen oikeat.
 
 Seuraavassa on esimerkki raportointirakenteen dimensiohierarkiasta.
 
@@ -329,9 +328,8 @@ Käyttöoikeusluettelon hierarkian asetuksilla hallitaan seuraavilla alueilla n�
 - Power BI:
 
     - Power BI -visualisoinneissa näytettävät tiedot
-    - Microsoft Dynamics 365 for Finance and Operations -asiakasohjelmaan upotetut tietojen Power BI -visualisoinnit
+    - Tietojen Power BI -visualisoinnit, jotka on upotettu Microsoft Dynamics 365 for Finance and Operationsin asiakasohjelmassa
 
 > [!NOTE] 
 > - Käyttöoikeusluettelon hierarkia ei ole vaikuta Power BI -tietoihin, ennen kuin käyttöoikeusluettelon hierarkia ja Power BI:n rivitason suojaus ovat muodostaneet parin. Lisätietoja on ohjeaiheessa [Kustannuslaskennan sisältöpaketin suojauksen määrittäminen](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Käyttöoikeusluettelon hierarkia ei suojaa Exceliin vietyjä tietoja. Niinpä vain niiden kustannuslaskijoiden ja esimiesten, joilla on tietojen täydet katseluoikeudet, pitäisi käyttää raportointityökalua.
-

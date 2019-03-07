@@ -1,13 +1,13 @@
---- 
-title: "Kompensaatioprosessin määrittäminen ja tulosten laskeminen"
-description: "Kompensaatioprosesseja käytetään määrittämään kiinteisiin ja muuttuviin kompensaatiosuunnitelmiin rekisteröityjen työntekijöiden uudet kompensaatiosummat ja palkkiot."
+---
+title: Kompensaatioprosessin määrittäminen ja tulosten laskeminen
+description: Kompensaatioprosesseja käytetään määrittämään kiinteisiin ja muuttuviin kompensaatiosuunnitelmiin rekisteröityjen työntekijöiden uudet kompensaatiosummat ja palkkiot.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMCompProcess, HRMCompProcessLine, HRMCompEvent, HRMCompEventEmpl
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5e5b0bb5558a8b71d02b5988c6f82f53f4f42646
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: ba28cf1fa6a8e9a4497d3bac1a2161098ec53db1
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325730"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Kompensaatioprosessin määrittäminen ja tulosten laskeminen
 
@@ -101,5 +101,4 @@ Kompensaatioprosesseja käytetään määrittämään kiinteisiin ja muuttuviin 
 9. Voit muuttaa tilaa valitsemalla Muuta.
 10. Valitse Hyväksytty.
     * Kun tietue on hyväksytty, se voidaan ladata työntekijän viralliseen kompensaatiotietueeseen. Uusi kompensaatio astuu voimaan kompensaatioprosessissa määritettynä tapahtumapäivämääränä.  
-
 

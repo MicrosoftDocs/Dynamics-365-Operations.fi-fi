@@ -1,13 +1,13 @@
 ---
-title: "Henkilöstötoiminnot – usein kysytyt kysymykset"
-description: "Tässä ohjeaiheessa on vastauksia kysymyksiin, joita sinulla saattaa olla, jos organisaatiosi käyttää henkilöstötoimintoja. Henkilökunnan toiminnot ovat lisävaiheita, jotka on suoritettava, kun suoritat tiettyjä henkilökuntaan liittyviä tehtäviä."
+title: Henkilöstötoiminnot – usein kysytyt kysymykset
+description: Tässä ohjeaiheessa on vastauksia kysymyksiin, joita sinulla saattaa olla, jos organisaatiosi käyttää henkilöstötoimintoja. Henkilökunnan toiminnot ovat lisävaiheita, jotka on suoritettava, kun suoritat tiettyjä henkilökuntaan liittyviä tehtäviä.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: 0e68154ec70fdf26d1d783de29a386a336fff92f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304208"
 ---
-
 # <a name="personnel-actions-faq"></a>Henkilöstötoiminnot – usein kysytyt kysymykset
 
 [!include [banner](includes/banner.md)]
@@ -94,5 +93,4 @@ Esimerkiksi:
 - **Irtisano työntekijä** -toiminnon otsikon voimassaolopäivä on **Työsuhteen loppumispäivämäärä** -kentässä annettu päivämäärä.
 - **Palkkaa työntekijä** -toiminnon otsikon voimassaolopäivä on **Työsuhteen alkamispäivämäärä** -kentässä annettu päivämäärä.
 - **Siirrä työntekijä** -toiminnon otsikon voimassaolopäivä on **Määrityksen alkamispäivä** -kentässä työntekijälle annettu päivämäärä.
-
 

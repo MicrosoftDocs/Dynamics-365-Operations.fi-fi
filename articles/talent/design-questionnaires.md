@@ -1,13 +1,13 @@
 ---
 title: Suunnittele kyselylomakkeita
-description: "Tässä aiheessa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen."
+description: Tässä aiheessa kuvataan kyselylomakkeen luontiprosessia. Ensimmäinen vaihe kyselylomakkeen suunnittelu. Kyselylomakkeen suunnittelu sisältää kysymysten ja vastausten kirjoittamisen lisäksi myös vastausten tallentamisen ja vastausten välillä sarkaimella siirtymisen mahdollistavan rakenteen luomisen.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: cd13fa1c424d1769b356d90012b187a77473473d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304218"
 ---
-
 # <a name="design-questionnaires"></a>Suunnittele kyselylomakkeita
 
 [!include [banner](includes/banner.md)]
@@ -94,7 +93,7 @@ Numerosarjan koodeja käytetään kysymysten ja vastausten järjestämisessä. A
 Kaikki parametrit tulee määritettävä, ennen kuin tietoja aletaan luoda. Voit muokata kyselylomakeparametrien asetuksia milloin tahansa.
 
 ## <a name="questionnaire-components"></a>Kyselylomakkeen osat
-Kyselylomake muodostuu kolmesta pääelementistä: vastausryhmistä, jotka sisältävät monivalintakysymysten vastaukset, kysymyksistä ja itse kyselylomakkeesta. Voit halutessasi ryhmitellä kyselylomakkeen kysymykset tulosryhmiin. Tulosryhmien avulla voit luokitella kysymykset ja tehdä kyselylomakkeesta lisäanalyysin. 
+Kyselylomake muodostuu kolmesta pääelementistä: vastausryhmistä, jotka sisältävät monivalintakysymysten vastaukset, kysymyksistä ja itse kyselylomakkeesta. Voit halutessasi ryhmitellä kyselylomakkeen kysymykset tulosryhmiin. Tulosryhmien avulla voit luokitella kysymykset ja tehdä kyselylomakkeesta lisäanalyysin. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -238,5 +237,4 @@ Vaihtoehtoisesti kyselylomakkeen voi määrittää niin, että jos vastaaja vali
 [Kyselylomakkeiden jakelu ja täyttäminen](distribute-questionnaires.md)
 
 [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
-
 

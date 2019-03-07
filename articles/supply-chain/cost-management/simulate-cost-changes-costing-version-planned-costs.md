@@ -1,13 +1,13 @@
 ---
-title: "Kustannusmuutosten simuloiminen suunniteltujen kustannusten kustannuslaskelmaversiota käyttäen"
-description: "Tässä artikkelissa kerrotaan, miten valmistettavan nimikkeen laskettujen kustannusten muuttuvien kustannusten vaikutuksen voi simuloida käyttämällä erillistä suunniteltujen kustannusten kustannuslaskelmaversiota."
+title: Kustannusmuutosten simuloiminen suunniteltujen kustannusten kustannuslaskelmaversiota käyttäen
+description: Tässä artikkelissa kerrotaan, miten valmistettavan nimikkeen laskettujen kustannusten muuttuvien kustannusten vaikutuksen voi simuloida käyttämällä erillistä suunniteltujen kustannusten kustannuslaskelmaversiota.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ef3cdb2ede2c30609db4addfc10b819629cdc64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8d5b6354ee8c627014a6da675bb2a7b52db97348
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318876"
 ---
-
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Kustannusmuutosten simuloiminen suunniteltujen kustannusten kustannuslaskelmaversiota käyttäen
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ Seuraavissa tilanteissa havainnollistetaan, kuinka kustannusten muutosten vaikut
 -   Simuloi kustannusten muutos epäsuoraan kustannuslaskentakaavaan. Kustannusten muutokset voivat esimerkiksi olla merkki valmistuksen yleiskustannusten odotetusta suurenemisesta tai pienenemisestä. Voit määrittää muutoksen epäsuoraan kustannuslaskentakaavaan lisäämällä odottavan kustannustietueen **Kustannuslaskennan määritys** -sivun avulla simuloidussa kustannuslaskelmaversiossa sekä vahvistamalla ja tallentamalla muutoksen.
 
 Kun olet syöttänyt simuloidut kustannusmuutokset, laske niiden valmistettujen nimikkeiden kustannukset, joihin kustannuksen muutokset vaikuttavat. Käytä **Laskelma**-sivua simuloidussa kustannuslaskelmaversiossa ja määritä valitut valmistetut nimikkeet, joihin kustannusten muutokset vaikuttavat. Tuoterakennelaskelmat koskevat kaikkia valmistettuja nimikkeitä, jos valittuja nimikkeitä ei erikseen valita. Voit käyttää tuoterakennelaskelmaa myös käyttökohteen päivityksissä. Tarkastele nimikkeen kustannustietueita simuloidussa kustannusversiossa, kun haluat analysoida simuloitujen kustannusmuutosten vaikutuksen valittujen, valmistettujen nimikkeiden kustannuksiin. Käytä **Nimikkeen hinta**- ja **Lasken nimikekustannus** -sivua kustannusten tarkastelemiseen ja analysointiin.
-
 
 
 

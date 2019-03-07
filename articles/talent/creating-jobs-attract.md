@@ -1,32 +1,31 @@
 ---
-title: "Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa"
-description: "Tässä ohjeaiheessa käsitellään työn elementtejä Attractissa. Siinä käsitellään myös työn luomista."
+title: Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa
+description: Tässä ohjeaiheessa käsitellään työn elementtejä Attractissa. Siinä käsitellään myös työn luomista.
 author: josaw
 manager: AnnBe
 ms.date: 12/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
 ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304233"
 ---
-
 # <a name="create-approve-and-post-jobs-in-attract"></a>Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa
 
 [!include [banner](includes/banner.md)]
@@ -45,7 +44,7 @@ Attractin työ sisältää työn tiedot, työhönottoryhmä, työhönottoprosess
 
 **Avoimien paikkojen määrä** -kentän asetuksena on oletusarvoisesti **1**. Voit kuitenkin muuttaa arvon. Kun työpaikkaa varten on valmisteltu tarjous, **Avoimien paikkojen määrä** -kentän arvo pienenee.
 
-Jos toimien hallinta on otettu hallintakeskuksessa käyttöön, **Päivitä toimet** -haku on käytettävissä. Haku lukee sovellusten Common Data Servicen JobPosition-yksikön ja palauttaa luettelon toimista, jotka työpaikkaan voidaan valita. Jos valittujen toimien määrä ylittää avoimien paikkojen määrän, saat siitä varoituksen. Saat varoituksen myös silloin, kun toimea käytetään useissa töissä.
+Jos toimien hallinta on otettu hallintakeskuksessa käyttöön, **Päivitä toimet** -haku on käytettävissä. Haku lukee Common Data Service for Appsin JobPosition-yksikön ja palauttaa luettelon toimista, jotka työpaikkaan voidaan valita. Jos valittujen toimien määrä ylittää avoimien paikkojen määrän, saat siitä varoituksen. Saat varoituksen myös silloin, kun toimea käytetään useissa töissä.
 
 > [!NOTE]
 > Toimien hallinta sisältyy kattavaan työhönottolaajennukseen.
@@ -169,4 +168,3 @@ Luo työ seuraavien ohjeiden avulla.
 
 13. Aktivoi työ valitsemalla **Aktivoi**.
 14. Julkaise työ valitsemalla ensin **Ilmoitukset** ja sitten **Julkaise nyt** Talent Careers -sivustossa tai LinkedInissä.
-

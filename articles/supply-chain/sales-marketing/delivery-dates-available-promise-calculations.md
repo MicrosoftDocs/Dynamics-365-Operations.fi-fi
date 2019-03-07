@@ -1,13 +1,13 @@
 ---
 title: Luvatut tilaukset
-description: "Tässä artikkelissa on tietoja tilaustenkäsittelyn lupauksista. Tilauksen lupausten avulla voit luvata toimituspäivämäärät asiakkaillesi luotettavasti ja antaa sinulle joustavuuden, jonka avulla voit toteuttaa lupauksesi."
+description: Tässä artikkelissa on tietoja tilaustenkäsittelyn lupauksista. Tilauksen lupausten avulla voit luvata toimituspäivämäärät asiakkaillesi luotettavasti ja antaa sinulle joustavuuden, jonka avulla voit toteuttaa lupauksesi.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ad70e94521fdb8c6d3f9a76a84aa9da5759fcf89
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 039bc5c572d204d9fa3e10a9f33cb4f4eb00b31c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312344"
 ---
-
 # <a name="order-promising"></a>Luvatut tilaukset
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,6 @@ Luot myyntitilausrivin tuotteelle ja ilmoitat määräksi **150**.
 Koska toimituspäivän valvontamenetelmä on ATP, aikaisin mahdollinen lähetyspäivä etsitään laskemalla ATP-tiedot. Asetusten mukaisesti viivästyneet osto- ja myyntitilaukset otetaan huomioon, jolloin kuluvan päivän ATP-määräksi saadaan 0 Seuraavana päivänä, jolloin oletetaan, että viivästynyt ostotilaus vastaanotetaan, ATP-määrä lasketaan suuremmaksi kuin 0 (tässä tapauksessa arvoksi lasketaan 125) Kuitenkin tästä päivästä 10 päivän kuluttua, jolloin odotetaan 100 kappaleen lisäostotilauksen vastaanottoa, ATP-määrä on yli 150.  
 
 Tämän vuoksi ATP-laskennan perusteella lähetyspäivä määritetään 10 päivän päähän tästä päivästä. Voitkin siis ilmoittaa asiakkaalle, että pyydetty määrä voidaan toimittaa 10 päivän kuluttua tästä päivästä.
-
 
 
 

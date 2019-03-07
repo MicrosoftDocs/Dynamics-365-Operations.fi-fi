@@ -1,13 +1,13 @@
 ---
-title: "Kustannusten hallinnan Power BI -sisältö"
-description: "Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön."
+title: Kustannushallinnan Power BI -sisältöpaketti
+description: Tässä aiheessa kuvataan, mitä kuuluu kustannushallinnan Power BI -sisältöön.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -19,15 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f67b1c901267bdf79c94e4f4c698c8731c515bb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327800"
 ---
-
-# <a name="cost-management-power-bi-content"></a>Kustannusten hallinnan Power BI -sisältö
+# <a name="cost-management-power-bi-content"></a>Kustannushallinnan Power BI -sisältöpaketti
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,9 +35,9 @@ ms.lasthandoff: 08/13/2018
 **Kustannushintojen hallinnan** Microsoft Power BI -sisältö on tarkoitettu varaston kirjanpitäjille tai organisaation henkilöille, jotka ovat vastuussa tai kiinnostuneita varaston tilasta tai keskeneräisistä töistä tai jotka ovat vastuussa tai kiinnostuneita standardikustannusvarianssien analysoinnista.
 
 > [!NOTE]
-> Tässä ohjeaiheessa käsitelty **Kustannushintojen hallinnan** Power BI -sisältö koskee versiota Dynamics 365 for Finance and Operations 8.0.
+> Tässä ohjeaiheessa käsitelty **kustannushintojen hallinnan** Power BI -sisältö koskee versiota Dynamics 365 for Finance and Operations 8.0.
 > 
-> AppSource-sivustoon julkaistu **Kustannushintojen hallinnan** Power BI -sisältöpaketti on vanhentunut. Lisätietoja tästä vanhentumisesta on kohdassa [AppSource-sivustoon julkaistut Power BI -sisältöpaketit](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> AppSource-sivustoon julkaistu **kustannushintojen hallinnan** Power BI -sisältöpaketti on vanhentunut. Lisätietoja tästä vanhentumisesta on kohdassa [AppSource-sivustoon julkaistut Power BI -sisältöpaketit](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Tämä Power BI -sisältö antaa luokitellun muodon, joka auttaa seuraamaan varastojen toimintaa ja visualisoimaan niiden kautta kulkevat kustannusvirrat. Saat johdon tarvitsemia tietoja esimerkiksi kiertonopeudesta, ajasta päivinä, jonka varasto on käytettävissä, tarkkuudesta ja ABC-luokittelusta valitsemallasi koostetasolla (yritys, nimike, nimikeryhmä tai toimipaikka). Näitä tietoja voidaan käyttää myös raportin eriteltynä täydennyksenä.
 
@@ -46,28 +45,28 @@ Power BI -sisältö perustuu **CostObjectStatementCacheMonthly**-koostemittaan, 
 
 **CostObjectStatementCacheMonthly**-koostemitta on päivitettävä jokaisen **CostObjectStatementCache**-taulun päivityksen jälkeen ennen Power BI -visualisointien tietojen päivitystä.
 
-## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
 
 **Kustannushintojen hallinnan** Power BI -sisältö näkyy **Kustannuslaskenta**- ja **Kustannusanalyysi**-työtiloissa.
 
 **Kustannuslaskenta**-työtilassa on seuraavat välilehdet:
 
 - **Yhteenveto** – välilehti sisältää sovelluksen tiedot.
-- **Varaston kirjanpidon tila** – välilehdessä on Power BI -sisältöä.
-- **Valmistuksen kirjanpidon tila** – välilehdessä on Power BI -sisältöä.
+- **Varaston kirjanpidon tila** – tässä välilehdessä on Power BI -sisältöä.
+- **Valmistuksen kirjanpidon tila** – tässä välilehdessä on Power BI -sisältöä.
 
 **Kustannusanalyysi**-työtilassa on seuraavat välilehdet:
 
 - **Yhteenveto** – välilehti sisältää sovelluksen tiedot.
-- **Varaston kirjanpidon analyysi** – välilehdessä on Power BI -sisältöä.
-- **Valmistuksen kirjanpidon analyysi** – välilehdessä on Power BI -sisältöä.
-- **Standardikustannusten varianssianalyysi** – välilehdessä on Power BI -sisältöä.
+- **Varaston kirjanpidon analyysi** – tässä välilehdessä on Power BI -sisältöä.
+- **Valmistuksen kirjanpidon analyysi** – tässä välilehdessä on Power BI -sisältöä.
+- **Standardikustannusten varianssianalyysi** – tässä välilehdessä on Power BI -sisältöä.
 
 ## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Power BI -sisältöön sisältyvät raporttisivut
 
 **Kustannushintojen hallinnan** Power BI -sisältö sisältää mittarijoukosta koostuvan joukon raporttisivuja. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. 
 
-Seuraavassa taulukossa on yleiskatsaus **Kustannushintojen hallinnan** Power BI -sisällön visualisoinneista.
+Seuraavassa taulukossa on yleiskatsaus **kustannushintojen hallinnan** Power BI -sisällön visualisoinneista.
 
 ### <a name="inventory-accounting-status"></a>Varaston kirjanpidon tila
 
@@ -173,7 +172,7 @@ Seuraavassa taulukossa on yleiskatsaus **Kustannushintojen hallinnan** Power BI 
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
-**Kustannushintojen hallinnan** Power BI -sisällön raporttisivujen täyttämiseen käytetään Microsoft Dynamics 365 for Finance and Operationsin tietoja. Nämä tiedot esitetään koostemittoina. Ne vaiheistetaan yksikkösäilössä, joka on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on kohdassa [Power BI:n ja yksikkösäilön integraatio](power-bi-integration-entity-store.md).
+**Kustannushintojen hallinnan** Power BI -sisällön raporttisivujen täyttämiseen käytetään Microsoft Dynamics 365 for Finance and Operationsin tietoja. Nämä tiedot esitetään koottuina mittauksina, jotka vaiheistetaan yksikkösäilössä, joka on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on kohdassa [Power BI:n ja yksikkösäilön integraatio](power-bi-integration-entity-store.md).
 
 Seuraavien objektien tärkeitä koostemittoja käytetään Power BI -sisällön perustana.
 
@@ -209,4 +208,3 @@ Seuraavia avaindimensioita käytetään suodattimina koostemittojen osittamisess
 | Oikeushenkilöt                                          | Yritysten nimet                              |
 | Kirjanpidon kalenterit                                        | Kirjanpidon vuosikalenteri, vuosi, vuosineljännes, kausi, kuukausi   |
 | Sivusto                                                    | Tunnus, nimi, osoite, osavaltio, maa               |
-

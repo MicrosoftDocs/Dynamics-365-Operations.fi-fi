@@ -1,14 +1,14 @@
 ---
-title: "Käyttöoikeuksien ja roolien hallinta Attractissa"
-description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent - Attractin käyttöoikeusrooleja."
+title: Käyttöoikeuksien ja roolien hallinta Attractissa
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent - Attractin käyttöoikeusrooleja.
 author: josaw1
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9eb12bd6b9fc1aa66002908e5989b3ac504ab673
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374777"
 ---
-
 # <a name="security-and-role-management-in-attract"></a>Käyttöoikeuksien ja roolien hallinta Attractissa
 
 [!include[banner](../includes/banner.md)]
@@ -53,7 +52,7 @@ Seuraavissa osissa kutakin roolia käsitellään yleistasolla. Ohjeaiheessa jäl
 
 ## <a name="administrator"></a>Järjestelmänvalvoja
 
-Käyttäjät, joille on määritetty järjestelmänvalvojan rooli, voivat käyttää ja muuttaa kaikkia Attractin tietoja. Järjestelmänvalvojat voit luoda, lukea, päivittää ja poistaa tietoja. Heillä on myös hallintakeskuksen käyttöoikeus, ja he voivat määrittää sillä Attract-sovelluksen asetukset ja määrittää käyttäjätietoja. On suositeltavaa, että ainakin yhdelle henkilölle määritettään järjestelmänvalvojan rooli. Microsoft PowerApps -ympäristön järjestelmänvalvoja määritetään oletusarvoisesti Attractin järjestelmänvalvojaksi. Jos rekisteröidyit Attractin kokeiluversioon, sinulle on määritetty järjestelmänvalvojan rooli automaattisesti. Tällä hetkellä töiden luontia varten järjestelmänvalvojan roolin lisäksi käyttäjällä on oltava joko työhönottajan tai työhön ottavan esimiehen rooli.
+Käyttäjät, joille on määritetty järjestelmänvalvojan rooli, voivat käyttää ja muuttaa kaikkia Attractin tietoja. Järjestelmänvalvojat voit luoda, lukea, päivittää ja poistaa tietoja. Heillä on myös hallintakeskuksen käyttöoikeus, ja he voivat määrittää sillä Attract-sovelluksen asetukset ja määrittää käyttäjätietoja. On suositeltavaa, että ainakin yhdelle henkilölle määritettään järjestelmänvalvojan rooli. Microsoft PowerAppsin ympäristön järjestelmänvalvoja määritetään oletusarvoisesti Attractin järjestelmänvalvojaksi. Jos rekisteröidyit Attractin kokeiluversioon, sinulle on määritetty järjestelmänvalvojan rooli automaattisesti. Tällä hetkellä töiden luontia varten järjestelmänvalvojan roolin lisäksi käyttäjällä on oltava joko työhönottajan tai työhön ottavan esimiehen rooli.
 
 ## <a name="hiring-manager"></a>Työhön ottava esimies
 
@@ -108,7 +107,7 @@ Seuraavat käyttöoikeudet koskevat hakijoiden työkohtaisia tietoja ja toiminto
 | Siirrä seuraavaan vaiheeseen           | Hakemuksen hylkääminen, jos käyttäjä on työhönottoryhmässä | Hakemuksen siirtäminen, jos käyttäjä on työhönottoryhmässä | Ei sallittu |
 | Käynnistä tarjousten hallinta | Tarjousten hallinnan käynnistäminen | Tarjoustehtävässä on määritysvaihtoehto | Ei sallittu |
 
-\*\* [Palautetehtävän asetusten](./activities-attract.md#feedback-activity) määritysvaihtoehto määrittää, näkevätkö haastattelijat toistensa antaman palautteen.
+\*\* [Palautetehtävän asetusten](activities-attract.md#feedback-activity) määritysvaihtoehto määrittää, näkevätkö haastattelijat toistensa antaman palautteen.
 
 ## <a name="process-templates"></a>Prosessimallit
 
@@ -146,4 +145,3 @@ Ehdokkaat ovat kykypooliin lisättyjä henkilöitä, joita ei ole liitetty työh
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profiili – ehdokkaan tiedot | Luonti, luku, päivitys ja poisto | Luonti, luku, päivitys ja poisto | Ei pääsyä   |
 | Tiedostot                   | Luonti, luku, päivitys ja poisto | Luonti, luku, päivitys ja poisto | Ei pääsyä   |
-

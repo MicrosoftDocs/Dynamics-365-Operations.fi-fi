@@ -1,13 +1,13 @@
---- 
+---
 title: Ostotilauksen luominen myyntitilauksesta
-description: "Tässä menettelyssä käsitellään, miten myyntitilaukseen perustuva ostotilaus luodaan."
+description: Tässä menettelyssä käsitellään, miten myyntitilaukseen perustuva ostotilaus luodaan.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 7991476b86ace92cda513ae8906c62ba7fbbe915
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 412a8c7acca06fc1be073019f91144e2a3f1c94b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325753"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Ostotilauksen luominen myyntitilauksesta
 
@@ -74,5 +74,4 @@ Tässä menettelyssä käsitellään, miten myyntitilaukseen perustuva ostotilau
 5. Valitse Tuote-välilehti.
     * Viite-erä varmistaa, että oston kustannukset veloitetaan siihen liitetyssä myyntitilauksessa.  
     * Voit siirtyä alkuperäiseen myyntitilaukseen avaamalla linkin Viitenumero-kentässä.  
-
 

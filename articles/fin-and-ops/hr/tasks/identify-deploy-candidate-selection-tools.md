@@ -1,13 +1,13 @@
---- 
-title: "Ehdokkaiden valintatyökalujen määrittäminen ja käyttöönotto"
-description: "Hyväksyttyjen ehdokkaiden joukon löytäminen avointen toimien täyttämistä varten voi olla vaikeaa erityisesti silloin, kun paikka vaatii eritystä osaamisaluejoukkoa."
+---
+title: Ehdokkaiden valintatyökalujen määrittäminen ja käyttöönotto
+description: Hyväksyttyjen ehdokkaiden joukon löytäminen avointen toimien täyttämistä varten voi olla vaikeaa erityisesti silloin, kun paikka vaatii eritystä osaamisaluejoukkoa.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: df7956cfdc3c470b5e652b62e659060120cdd770
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eb6e6121d39f9fc089afe38354b96eb88e5501d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332722"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Ehdokkaiden valintatyökalujen määrittäminen ja käyttöönotto
 
@@ -57,5 +57,4 @@ Hyväksyttyjen ehdokkaiden joukon löytäminen avointen toimien täyttämistä v
     * Parhaat vastaavuudet ovat raportin alkuosassa.  Näet olevan luetellun osaamisalueaukkojen-osan.  Tämä on osaamisaluekartoituksessa mainitun tason ja henkilölle määritetyn tason välinen ero.  
 24. Sulje sivu.
 25. Valitse Tallenna.
-
 

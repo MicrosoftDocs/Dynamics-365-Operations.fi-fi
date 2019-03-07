@@ -1,13 +1,13 @@
 ---
-title: "Hälytyssääntöjen luominen"
-description: "Tässä ohjeaiheessa on tietoja hälytyksistä. Siinä myös selitetään, miten luodaan sellainen hälytyssääntö, joka ilmoittaa tapahtumista, kuten saapuvasta päivämäärästä tai tapahtuvasta muutoksesta."
+title: Hälytyssääntöjen luominen
+description: Tässä ohjeaiheessa on tietoja hälytyksistä. Siinä myös selitetään, miten luodaan sellainen hälytyssääntö, joka ilmoittaa tapahtumista, kuten saapuvasta päivämäärästä tai tapahtuvasta muutoksesta.
 author: tjvass
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,21 +16,20 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: cbf4917424e72a70a6d513b5daf45f6bf9cd57c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 78e1e6f7be04e1d4fecae080cbd4a285358590fb
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329410"
 ---
-
 # <a name="create-alert-rules"></a>Hälytyssääntöjen luominen
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="getting-started"></a>Aloittaminen
 
-Ennen hälytyssäännön luomista on päätettävä, milloin ja missä tilanteissa haluat vastaanottaa hälytyksiä. Kun tiedät, mistä tapahtumasta haluat ilmoituksen, voit etsiä Microsoft Dynamics 365 for Finance and Operationsissa sivun, jossa kyseisen tapahtuman aikaansaavat tiedot näkyvät. Tapahtuma voi olla tietty päivämäärä tai tapahtuva muutos. Sinun onkin etsittävä sivu, jossa päivämäärä on määritetty tai jossa muuttuva kenttä tai luotu uusi tietue tulee näkyviin. Kun nämä tiedot ovat valmiina, voit luoda hälytyssäännön.
+Ennen hälytyssäännön luomista on päätettävä, milloin ja missä tilanteissa haluat vastaanottaa hälytyksiä. Kun tiedät, mistä tapahtumasta haluat ilmoituksen, voit etsiä Microsoft Dynamics 365 for Finance and Operationsissa sivun, jossa kyseisen tapahtuman aiheuttavat tiedot näkyvät. Tapahtuma voi olla tietty päivämäärä tai tapahtuva muutos. Sinun onkin etsittävä sivu, jossa päivämäärä on määritetty tai jossa muuttuva kenttä tai luotu uusi tietue tulee näkyviin. Kun nämä tiedot ovat valmiina, voit luoda hälytyssäännön.
 
 Hälytyssääntöä luotaessa määritetään ehdot, joiden on toteuduttava ennen hälytyksen antamista. Tämä tarkoittaa, että tietty tapahtuma esiintyy ja tietyt ehdot täyttyvät samanaikaisesti. Tapahtuman esiintyessä järjestelmä aloittaa tarkistuksen Finance and Operationsissa määritettyjen ehtojen mukaisesti.
 
@@ -84,4 +83,3 @@ Määritä **Luo hälytyssääntö** -valintaikkunan **Hälytystapa**-pikavälil
 7. Hyväksy **Hälytystapa**-pikavälilehden **Aihe**-kentässä sähköpostiviestin aiheen oletusotsikko tai kirjoita uusi aihe. Tekstiä käytetään otsikkona sähköpostiviestissä jonka saat, kun hälytys laukaistaan.
 8. Valitse **Sanoma**-kentässä valinnainen sanoma. Tämä teksti on sanoma, jonka saat, kun hälytys laukaistaan.
 9. Tallenna asetukset ja luo hälytyssääntö valitsemalla **OK**.
-

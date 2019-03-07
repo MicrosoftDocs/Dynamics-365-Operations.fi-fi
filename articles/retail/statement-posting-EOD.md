@@ -1,13 +1,13 @@
 ---
 title: Laskelman kirjaamisen toiminnallisuuden parannukset
-description: "Tässä aiheessa kuvataan parannuksia, jotka on tehty laskelman kirjaamistoimintoon."
+description: Tässä aiheessa kuvataan parannuksia, jotka on tehty laskelman kirjaamistoimintoon.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,19 +16,18 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321429"
 ---
-
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
 [!include[banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan ensimmäinen joukko parannuksia, jotka on tehty laskelman kirjaamistoimintoon. Nämä parannukset ovat käytettävissä Microsoft Dynamics 365 for Finance and Operations -versiossa 7.3.2.
+Tässä aiheessa kuvataan ensimmäinen joukko parannuksia, jotka on tehty laskelman kirjaamistoimintoon. Nämä parannukset ovat käytettävissä Microsoft Dynamics 365 for Finance and Operations7.3.2 -versiossa.
 
 ## <a name="activation"></a>Aktivointi
 
@@ -171,4 +170,3 @@ Laskelman kirjaamistoimintoon on tehty muita taustajärjestelmän parannuksia, j
 
     - Valitse **Vähittäismyynti** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Vähittäismyyntiparametrit**. Valitse sitten **Kirjaus**-välilehdellä **Varastopäivitys**-pikavälilehden **Erittelytaso**-kentässä **Yhteenveto**.
     - Valitse **Vähittäismyynti** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Vähittäismyyntiparametrit**. Aseta sitten **Kirjaus**-välilehden **Koostaminen**-pikavälilehdessä **Tositetapahtumat**-asetukseksi **Kyllä**.
-

@@ -1,13 +1,13 @@
 ---
-title: "Sähköiset allekirjoitukset"
-description: "Tässä artikkelissa on yleiskatsaus sähköisistä allekirjoituksista ja niiden käyttämisestä Microsoft Dynamics 365 for Finance and Operationsissa."
+title: Sähköiset allekirjoitukset
+description: Tässä artikkelissa on yleiskatsaus sähköisistä allekirjoituksista ja siitä, miten niitä käytetään Microsoft Dynamics 365 for Finance and Operationsissa.
 author: maertenm
 manager: AnnBe
 ms.date: 08/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 676510ef503d51d914ba762e7ac15e2c4811c6ba
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325661"
 ---
-
 # <a name="electronic-signatures"></a>Sähköiset allekirjoitukset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on yleiskatsaus sähköisistä allekirjoituksista ja niiden käyttämisestä Microsoft Dynamics 365 for Finance and Operationsissa.
+Tässä artikkelissa on yleiskatsaus sähköisistä allekirjoituksista ja siitä, miten niitä käytetään Microsoft Dynamics 365 for Finance and Operationsissa.
 
 ## <a name="what-is-an-electronic-signature"></a>Mikä on sähköinen allekirjoitus?
 
@@ -39,9 +38,9 @@ Sähköisellä allekirjoituksella vahvistetaan uuden tietojenkäsittelyprosessin
 Sähköiset allekirjoitukset ovat pakollisia useilla säännöin ja määräyksin säädellyillä aloilla, kuten lääketeollisuudessa, elintarviketeollisuudessa sekä ilmailu- ja maanpuolustusteollisuudessa. Niiden käyttämistä edellyttää myös Yhdysvaltain elintarvike- ja lääkeviranomaisen (FDA) määräys 21 CFR Part 11.
 
 > [!NOTE]
-> Sähköinen allekirjoitus ei ole sama kuin digitaalinen allekirjoitus. Sähköinen allekirjoitus on yksinkertaisesti käsin kirjoitetun allekirjoituksen korvike, kun taas digitaalinen allekirjoitus sisältää lisäsuojaustoimenpiteitä. Digitaalisen allekirjoituksen avulla voi tunnistaa, onko toinen käyttäjä tai prosessi peukaloinut tietoja. Digitaalisen allekirjoituksen voi myös vahvistaa, eikä tietojen allekirjoittamiseen käytetyn sertifikaatin omistaja voi kumota tätä vahvistusta. Kuten alla on kuvattu, Microsoft Dynamics 365 for Finance and Operationsin sähköisissä allekirjoituksissa on sisäinen digitaalisten allekirjoitusten toiminto.
+> Sähköinen allekirjoitus ei ole sama kuin digitaalinen allekirjoitus. Sähköinen allekirjoitus on yksinkertaisesti käsin kirjoitetun allekirjoituksen korvike, kun taas digitaalinen allekirjoitus sisältää lisäsuojaustoimenpiteitä. Digitaalisen allekirjoituksen avulla voi tunnistaa, onko toinen käyttäjä tai prosessi peukaloinut tietoja. Digitaalisen allekirjoituksen voi myös vahvistaa, eikä tietojen allekirjoittamiseen käytetyn sertifikaatin omistaja voi kumota tätä vahvistusta. Alla kuvatuissa Microsoft Dynamics 365 for Finance and Operations-järjestelmän sähköisissä allekirjoituksissa on sisäinen digitaalisten allekirjoitusten toiminto.
 
-## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Microsoft 365 for Finance and Operationsin sähköiset allekirjoitukset
+## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Dynamics 365 for Finance and Operationsin sähköiset allekirjoitukset
 
 Voit käyttää Finance and Operationsissa sähköisiä allekirjoituksia tärkeissä liiketoimintaprosesseissa. Joissakin prosesseissa on sisäinen sähköisten allekirjoitusten toiminto. Voit myös luoda mukautettuja allekirjoitusvaatimuksia mille tahansa tietokannan taululle ja kentälle.
 
@@ -111,4 +110,3 @@ Määritä hyväksyjät seuraavasti.
 1. Valitse **Asetukset**-sivun **Tilit**-välilehdessä **Määritä hyväksyjä**.
 2. Valitse sen käyttäjän tunnus, jonka on allekirjoitettava toisen käyttäjän muutokset **Hyväksyjän käyttäjätunnus** -kentässä.
 3. Valitse sen käyttäjän tunnus, jonka muutokset on allekirjoitettava **Käyttäjätunnus, jonka puolesta allekirjoitetaan** -kentässä.
-

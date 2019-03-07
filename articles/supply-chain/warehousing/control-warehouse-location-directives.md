@@ -1,13 +1,13 @@
 ---
-title: "Varastotyön valvonta työmallien ja sijaintidirektiivien avulla"
-description: "Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ suoritetaan varastossa."
+title: Varastotyön valvonta työmallien ja sijaintidirektiivien avulla
+description: Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ suoritetaan varastossa.
 author: perlynne
 manager: AnnBe
 ms.date: 09/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 74e7c36fb912f35252d6e40d17477ac2962cbc23
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325408"
 ---
-
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Varastotyön valvonta työmallien ja sijaintidirektiivien avulla
 
 [!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ suoritetaan varastossa.
 
-Ohjeet, jotka varastotyöntekijät saavat mobiililaitteessa, määräytyvät Microsoft Dynamics 365 for Finance and Operations -järjestelmässä määrittämiesi työmallien mukaisesti. Työmallit määrittävät, miten kunkin varastoprosessin työt suoritetaan. Linkittämällä sijaintidirektiivin työmalleihin, voit varmistaa, että työ tapahtuu tietyillä fyysisillä varastojen alueilla.
+Ohjeet, jotka varastotyöntekijät saavat mobiililaitteessa, määräytyvät Microsoft Dynamics 365 for Finance and Operationsissa määrittämiesi työmallien mukaisesti. Työmallit määrittävät, miten kunkin varastoprosessin työt suoritetaan. Linkittämällä sijaintidirektiivin työmalleihin, voit varmistaa, että työ tapahtuu tietyillä fyysisillä varastojen alueilla.
 
 ## <a name="work-templates"></a>Työmallit
 **Työmallit**-sivun avulla voit määrittää työtoiminnot, jotka on suoritettava varastossa. Yleensä varastotyötoiminnot kostuvat toimintopareista: varaston työntekijä keräilee käsillä olevan varaston yhdessä sijainnissa ja asettaa sitten keräillyt varastotuotteet toiseen paikkaan. 
@@ -163,4 +162,3 @@ Valitse tämä vaihtoehto, jos haluat käyttää erästrategioita nimikkeille, j
 Tarkastele tätä esimerkkiä varten ostotilausprosessia, jossa sijaintidirektiivin on löydettävä varastosta vapaata kapasiteettia varastonimikkeille, jotka on juuri rekisteröity vastaanottolaiturilla. Sinun on ensin löydettävä varastosta vapaata kapasiteettia konsolidoimalla nykyiseen käsillä olevaan varastoon. Jos konsolidointi ei ole mahdollista, sinun on löydettävä tyhjä sijainti. 
 
 Tätä skenaariota varten sinun on määritettävä kaksi sijaintidirektiivitoimintoa. Sarjan ensimmäisen toiminnon on käytettävä **Konsolidointi**-strategiaa, ja toisen tulisi käyttää **Tyhjä sijainti ilman saapuvia töitä** -strategiaa. Jollet määritä kolmatta toimintoa käsittelemään ylivuotoskenaariota, on mahdollista saada kaksi lopputulosta, kun varastossa ei ole enää kapasiteettia: työ voidaan luoda, vaikka sijainteja ei ole määritetty, tai työn luontiprosessi saattaa epäonnistua. Tulos määrittyy sivun **Sijaintidirektiivivirheet** määrityksistä, joissa voit päättää, valitaanko **Pysäytä työ sijaintidirektiivivirheeseen** -asetus kullekin työtilaustyypille.
-

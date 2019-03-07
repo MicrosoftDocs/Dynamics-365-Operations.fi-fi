@@ -1,13 +1,13 @@
 ---
 title: Attractin toiminnot ja ominaisuudet
-description: "Tässä ohjeaiheessa käsitellään Attractin ominaisuuksia, joilla hallitaan uuden työvoiman työhönottoprosessia."
+description: Tässä ohjeaiheessa käsitellään Attractin ominaisuuksia, joilla hallitaan uuden työvoiman työhönottoprosessia.
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: dd65def0006445da1a8d07577cf5ef05178c19bd
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304212"
 ---
 # <a name="attract-features-and-capabilities"></a>Attractin toiminnot ja ominaisuudet
 
@@ -33,7 +33,7 @@ Attract sisältää uuden työvoiman palkkaamiseen tarkoitettuja toimintoja. Ty�
 Tässä ohjeaiheessa käsitellään Attractin ominaisuuksia.
 
 ## <a name="attract-dashboard"></a>Attract-koontinäyttö
-Työhönottoryhmän jäsenet näkevät koontinäytössä niiden työpaikkojen tilan, joihin he osallistuvat. Työhönottopäällikkö tai rekrytoija voi myös lisätä koontinäytössä uusia töitä Attractiin joko luomalla ne erikseen tai tuomalla useita töitä samanaikaisesti Microsoft Excel -laskentataulukosta.
+Työhönottoryhmän jäsenet näkevät koontinäytössä niiden työpaikkojen tilan, joihin he osallistuvat. Työhönottopäällikkö tai rekrytoija voi myös lisätä koontinäytössä uusia töitä Attractiin joko luomalla ne erikseen tai tuomalla useita töitä samanaikaisesti Microsoft Excelin laskentataulukosta.
 
 ## <a name="jobs"></a>Työt
 **Työ**-sivulla voi muokata ja tarkastella erilaisia tietoja, kuten työnkuvausta ja työn toimipaikkaa. **Työ**-sivulla luodaan myös työhönottoryhmä sekä lisätään tai muutetaan ryhmän rekrytoijia ja haastattelijoita. Uudet työnhakijat voidaan myös lisätä **Työ**-sivulla.
@@ -46,4 +46,3 @@ Attractiin sisältyy valmiiksi määritetty työhönottoprosessi, jossa on nelj�
 
 ## <a name="candidate-app"></a>Hakijasovellus
 Heti kun hakija on hyväksynyt työpaikan, hänelle lähetetään sähköpostiviesti, jossa on verkkosovelluksen latauslinkki. Hakija saa sovelluksen kautta tiedot työpaikasta ja voi käyttää sitä yhteydenpitoon työhönottoryhmän kanssa. Hakija voi myös ilmoittaa sen kautta, milloin hän käytettävissä haastatteluja varten.
-

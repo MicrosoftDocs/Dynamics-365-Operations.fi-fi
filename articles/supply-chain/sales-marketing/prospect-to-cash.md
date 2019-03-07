@@ -1,32 +1,31 @@
 ---
-title: "Prospektista käteiseksi"
-description: "Tässä ohjeaiheessa on yleiskuvaus Microsoft Dynamics 365 for Finance and Operationsin ja Microsoft Dynamics 365 for Salesin välisestä prospektista käteiseksi -ratkaisusta."
+title: Prospektista käteiseksi
+description: Tässä ohjeaiheessa on yleiskuvaus Microsoft Dynamics 365 for Finance and Operationsin ja Microsoft Dynamics 365 for Salesin välisestä prospektista käteiseksi -ratkaisusta.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309492"
 ---
-
 # <a name="prospect-to-cash"></a>Prospektista käteiseksi
 
 [!include [banner](../includes/banner.md)]
@@ -49,11 +48,11 @@ Prospektista käteiseksi -integraatio tuetaan seuraavissa versioissa:
 
 ### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (joulukuu 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (joulukuu 2017) – sovellusversio 7.3.11971.56116 ja ympäristöversio 12 (7.0.4709.41129)
+- Dynamics 365 for Finance and Operations, Enterprise edition (joulukuu 2017) – sovelluksen koontiversio 7.3.11971.56116 ja Platform Update 12 (7.0.4709.41129)
 
 ### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (heinäkuu 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (heinäkuu 2017) – sekä ympäristöpäivitys 8 (sovellusversio 7.2.11792.56024 ja ympäristöversio 7.0.4565.16212).
+- Dynamics 365 for Finance and Operations, Enterprise edition (heinäkuu 2017) – platform update 8 (sovelluksen 7.2.11792.56024 ja ympäristön koontiversio 7.0.4565.16212).
 - Seuraavat hotfix-korjaukset ovat pakollisia:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – tämän korjaus mahdollistaa myyntitilauksen synkronoinnin Salesista Finance and Operationsiin tietojen integrointitoiminnolla. Se sisältää myös useita parannuksia.
@@ -63,9 +62,9 @@ Prospektista käteiseksi -integraatio tuetaan seuraavissa versioissa:
     > [!NOTE]
     > Ainoastaan KB4045570 on asennettava, sillä sen asennus sisältää muiden hotfix-korjausten muutokset. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations -versio 1611 (marraskuu 2016)
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operationsin versio 1611 (marraskuu 2016)
 
-- Dynamics 365 for Finance and Operations -versio 1611 (marraskuu 2016) ja vähintään ympäristöpäivitys 8
+- Dynamics 365 for Finance and Operationsin versio 1611 (marraskuu 2016) ja platform update 8 tai uudempi
 
 - Seuraavat hotfix-korjaukset ovat pakollisia:
 
@@ -81,6 +80,5 @@ Prospektista käteiseksi -integraatio tuetaan seuraavissa versioissa:
 
 Seuraavat komponentit on asennettava, jotta prospektista käteiseksi -ratkaisua voi käyttää:
 
-- Dynamics 365 for Sales -versio 1612 (8.2.1.207) (DB 8.2.1.207) online tai uudempi versio
+- Dynamics 365 for Salesin versio 1612 (8.2.1.207) (DB 8.2.1.207) online tai uudempi versio
 - Dynamics 365 for Salesin prospektista käteiseksi -ratkaisu, versio 1.15.0.0 tai uudempi versio. Ratkaisun voi ladata AppSourcesta. [Lataa Dynamics 365, Prospektista käteiseksi](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-

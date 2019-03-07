@@ -1,13 +1,13 @@
 ---
 title: Kirjanpidon ulkomaanvaluutan uudelleenarvostus
-description: "Tämä aihe sisältää yhteenvedon kirjanpidon ulkomaan valuutan uudelleenarvostusprosessista seuraavasti: asetukset, prosessin suorittaminen, prosessin laskeminen ja uudelleenarvostustapahtumien palauttaminen tarvittaessa."
+description: 'Tämä aihe sisältää yhteenvedon kirjanpidon ulkomaan valuutan uudelleenarvostusprosessista seuraavasti: asetukset, prosessin suorittaminen, prosessin laskeminen ja uudelleenarvostustapahtumien palauttaminen tarvittaessa.'
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb04c5a9e7db1a6c6a8d8c7126bfa80208d1fd53
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f967854e9a39c7b2d76559744bbc1e16a53d7f6a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315541"
 ---
-
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Kirjanpidon ulkomaanvaluutan uudelleenarvostus
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,7 @@ Uudelleenarvostusprosessi voidaan suorittaa vähintään yhdelle oikeushenkilöl
 
 Uudelleenarvostus voidaan tehdä yhden tai useiden valuuttojen suhteen. Hakuun sisällytetään kaikki valuutat, jotka on kirjattu päivämäärävälillä ja jotka koskevat päätiliä (tase- tai tulostili) ja uudelleenarvostettaviksi valittuja oikeushenkilöitä. Luetteloon sisältyy kirjanpitovaluutta, mutta mitään ei uudelleenarvosteta, jos kirjanpitovaluutta on valittuna. 
 
-Määritä **Esikatsele ennen kirjausta** arvoksi **Kyllä**, jos haluat tarkastella kirjanpidon uudelleenarvostuksen tulosta. Kirjanpidon esikatselu eroaa ostoreskontran ja myyntireskontran ulkomaanvaluutan uudelleenarvostuksen simuloinnista. Ostoreskontran ja myyntireskontran simulointi on raportti, mutta kirjanpidon esikatselu voidaan kirjata suorittamatta uudelleenarvostusprosessia uudelleen. Esikatselun tulokset voidaan viedä Microsoft Exceliin säilyttämään historiatiedot, kuinka määrät on laskettu. Et voi käyttää eräkäsittelyä, jos haluat esikatsella uudelleenarvostuksen tuloksia. Esikatselussa käyttäjä voi kirjata kaikkien oikeushenkilöiden tulokset **Kirjaa** -painikkeella. Jos yhden oikeushenkilön tuloksissa on ongelma, käyttäjällä voi kirjata oikeushenkilöiden osajoukon **Valitse kirjattavat yritykset** -painikkeella. 
+Määritä **Esikatsele ennen kirjausta** arvoksi **Kyllä**, jos haluat tarkastella kirjanpidon uudelleenarvostuksen tulosta. Kirjanpidon esikatselu eroaa ostoreskontran ja myyntireskontran ulkomaanvaluutan uudelleenarvostuksen simuloinnista. Ostoreskontran ja myyntireskontran simulointi on raportti, mutta kirjanpidon esikatselu voidaan kirjata suorittamatta uudelleenarvostusprosessia uudelleen. Esikatselun tulokset voidaan viedä Microsoft Exceliin säilyttämään historiatiedot määrien laskemisesta. Et voi käyttää eräkäsittelyä, jos haluat esikatsella uudelleenarvostuksen tuloksia. Esikatselussa käyttäjä voi kirjata kaikkien oikeushenkilöiden tulokset **Kirjaa** -painikkeella. Jos yhden oikeushenkilön tuloksissa on ongelma, käyttäjällä voi kirjata oikeushenkilöiden osajoukon **Valitse kirjattavat yritykset** -painikkeella. 
 
 Kun ulkomaanvaluutan uudelleenarvostusprosessi on valmis, luodaan tietue jolla jäljitetään jokaisen ajon historia.  Kullekin juridiselle henkilölle ja kirjanpitotasolle luodaan erillinen tietue.
 
@@ -116,7 +115,6 @@ Seuraava kirjanpitomerkintä luodaan.
 Jos uudelleenarvostustapahtuma pitää palauttaa, valitse **Palautustapahtuma** -painike **Ulkomaanvaluutan uudelleenarvostus**-sivulla. Uusi ulkomaanvaluutan uudelleenarvostus -historiatietue luodaan ylläpitämään historian kirjausketjua ulkomaanvaluutan uudelleenarvioinnin ajankohdasta tai palautuksesta. 
 
 Ulkomaanvaluutan uudelleenarvostuksen tuloksia ei tarvitse palauttaa päivämääräjärjestyksessä, mutta tarvittaessa sinun täytyy peruuttaa myös uudempi uudelleenarvostus, jotta voidaan varmistaa että kunkin uudelleenarvostetun päätilin saldot täsmäävät. Peruutukset voidaan tehdä muussa kuin päivämääräjärjestyksessä, koska ei voida määrittää, mitkä päätilit on uudelleenarvostettu ja kuinka usein tämä on tapahtunut. Organisaatio saattaa esimerkiksi määrittää käteisennakoiden päätilien uudelleenarvostuksen tapahtuvaksi neljännesvuosittain mutta kaikkien muiden päätilien uudelleenarvostuksen kerran kuukaudessa.
-
 
 
 

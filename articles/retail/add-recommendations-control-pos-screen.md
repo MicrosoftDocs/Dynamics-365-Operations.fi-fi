@@ -1,13 +1,13 @@
 ---
-title: "Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle"
-description: "Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 for Retailin näytön asettelun suunnittelutoimintoa."
+title: Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle
+description: Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 for Retailin näytön asettelun suunnittelutoimintoa.
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320440"
 ---
-
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle
 
 [!include [banner](includes/banner.md)]
@@ -67,7 +66,7 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
     [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 3. Valitse **X**, jotta tallennat ja poistut asettelun suunnittelutoiminnosta.
-4. Siirry Dynamics 365 for Retailissa kohtaan **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulut**.
+4. Valitse Dynamics 365 for Retailissa **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulut**.
 5. Valitse luettelossa  **1090, kassakoneet**.
 6. Valitse **Suorita nyt**.
 
@@ -88,11 +87,10 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
 7. Valitse **Kuva**-kentässä välilehdessä näytettävä kuva.
 8. Valitse **OK**. Painikeruudukkoon tulee uusi välilehti.
 9. Valitse **X**, jotta tallennat ja poistut asettelun suunnittelutoiminnosta.
-10. Siirry Dynamics 365 for Retailissa kohtaan **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulut**.
+10. Valitse Dynamics 365 for Retailissa **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulut**.
 11. Valitse luettelossa  **1090, kassakoneet**.
 12. Valitse **Suorita nyt**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Mukautettujen tuotesuositusten yleiskatsaus](personalized-product-recommendations.md)
-

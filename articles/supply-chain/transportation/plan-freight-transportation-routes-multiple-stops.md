@@ -1,13 +1,13 @@
 ---
-title: "Useita pysähdyksiä sisältävän rahdinkuljetusreitin suunnittelu"
-description: "Tässä artikkelissa käsitellään elementtejä, joilla kuljetusreittejä suunnitellaan Dynamics 365 for Finance and Operationsissa."
+title: Useita pysähdyksiä sisältävän rahdinkuljetusreitin suunnittelu
+description: Tässä artikkelissa käsitellään elementtejä, joilla kuljetusreittejä suunnitellaan Dynamics 365 for Finance and Operationsissa.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 36cb454477c0d296246c061d2573954a81c9efd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 16255e812773ed35c0e34ec26a8a689ea09632bd
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328306"
 ---
-
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Useita pysähdyksiä sisältävän rahdinkuljetusreitin suunnittelu
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Ajoitettu reitti on esimääritetty reitti, jossa on lähetyspäivämäärien ai
 
 ## <a name="load-building-workbench"></a>Kuormituksen luonnin työtila
 Kuormituksen luonnin työtila -sivu ehdottaa kuormaa hakemalla asiakkaiden osoitteet ja toimituspäivät myyntitilauksista sekä käytettävissä olevat ajoitetut reitit. Oletusarvoisesti työtilassa annetaan reitin arvot. Voit kuitenkin valita aloituspäiväksi reitin aloituspäivää edeltävän päivämäärän. Kun kuormaa on ehdotettu, kaikkien avoimien myyntitilausten toimitusosoite ja toimituspäivä tarkistetaan. Toimitusosoitteen postinumero vastaa reittisuunnitelmassa olevan keskuksen postinumeroa ja jos toimituspäivä on ehdoissa valitulla alueella, myyntitilausta ehdotetaan kuormaan. Myös kuormamallin kapasiteetti otetaan huomioon. Kerrallaan ehdotetaan vain yhtä kuormaa. Jos sinulla on myyntitilaus, joka ei sisälly ehdotukseen, sinun on ehkä käytettävä eri kuormamallia (esimerkiksi suuremman kuorma-auton tai kontin kuormamallia) tai suunniteltava lisätoimitus.
-
 
 
 

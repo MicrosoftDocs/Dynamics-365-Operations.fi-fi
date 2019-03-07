@@ -1,13 +1,13 @@
 ---
 title: Hintasimulointi
-description: "Tässä artikkelissa on tietoja tarjousten hintasimuloinneista. Hintasimulointien avulla voidaan arvioida vähennysten vaikutusta tuleviin myyntihintoihin tarjousprosessin aikana, ennen kuin tietty hinta otetaan käyttöön."
+description: Tässä artikkelissa on tietoja tarjousten hintasimuloinneista. Hintasimulointien avulla voidaan arvioida vähennysten vaikutusta tuleviin myyntihintoihin tarjousprosessin aikana, ennen kuin tietty hinta otetaan käyttöön.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316530"
 ---
-
 # <a name="price-simulation"></a>Hintasimulointi
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ Jotta alennukset ja hinnat varmasti lasketaan oikein, alennuksia sisältävien t
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Kauppasopimusten alennustyypit
 
-Microsoft Dynamics 365 for Finance and Operationsin kauppasopimuksissa voi olla neljäntyyppisiä hinnanalennuksia. Nämä alennukset voidaan määrittää eri nimikkeille, asiakkaille tai hintaryhmille ja niitä voidaan rajoittaa päivämäärän mukaan. Laskuvirheiden välttämiseksi kauppasopimukset on otettava huomioon hintasimulointeja suoritettaessa. Kauppasopimusten neljä alennustyyppiä:
+Microsoft Dynamics 365 for Finance and Operationsin kauppasopimuksissa voi olla neljänlaisia hinnanalennuksia. Nämä alennukset voidaan määrittää eri nimikkeille, asiakkaille tai hintaryhmille ja niitä voidaan rajoittaa päivämäärän mukaan. Laskuvirheiden välttämiseksi kauppasopimukset on otettava huomioon hintasimulointeja suoritettaessa. Kauppasopimusten neljä alennustyyppiä:
 
 -   **Myyntihinta** – Nimikkeille voidaan määrittää eri myyntihinta. Kun tarjousrivit luodaan, ohjelma hakee nimikkeelle oikean hinnan ja siirtää sen tarjousriveille. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, ei vaikuta hintasimulointiin. Tarjousrivillä käytettävä myyntihinta vastaa kauppasopimusta.
 -   **Rivialennus** – Nimikkeille määritetään erikoisalennukset tilatun määrän mukaan. Rivialennus vähennetään tavallisesti rivisummista ennen hintasimuloinnin suorittamista. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, vaikuttaa hintasimulointiin.
@@ -143,7 +142,6 @@ Suoritat hintasimuloinnin ja sovellat 10 prosentin kokonaisalennusta BR-12-yksik
 | Uusi kokonaiskateprosentti                      | \[(302.88 - 184.96) ÷ 302.88\] × 100    | 38,93 %   |
 
 Hintasimulointi vaikuttaa vain siihen riviin, johon sitä käytetään, vähentämällä rivin kokonaissummaa.
-
 
 
 

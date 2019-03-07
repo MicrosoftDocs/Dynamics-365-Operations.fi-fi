@@ -1,13 +1,13 @@
 ---
-title: "Rivin määrityksen solujen muokkaaminen"
-description: "Tässä artikkelissa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan."
+title: Rivin määrityksen solujen muokkaaminen
+description: Tässä artikkelissa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323637"
 ---
-
 # <a name="modify-row-definition-cells"></a>Rivin määrityksen solujen muokkaaminen
 
 [!include [banner](../includes/banner.md)]
@@ -387,10 +386,10 @@ Voit rajoittaa rivin aiemmin luotua kirjakoodia varten. Sarakkeen määrityksess
 Joissakin kirjanpitojärjestelmissä tuetaan taloushallinnon tietojen tili- ja tapahtumamääritteitä. Nämä määritteet toimivat kuten virtuaaliset tilisegmentit. Ne voivat sisältää tiliä tai tapahtumaa koskevia lisätietoja. Lisätiedot voivat olla tilien tunnuksia, erien tunnuksia, postinumeroita tai muita määritteitä. Jos käytössä oleva kirjanpitojärjestelmä tukee määritteitä, voit käyttää tili- tai tapahtumamääritteitä rivin määrityksen rivimääreinä. Lisätietoja rivin tietojen ohituksesta on Sarakkeen määrityksen ohitus -osassa, joka löytyy tämän artikkelin alkuosasta.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Linkin määrittäminen Taloushallinnon dimensiot -soluun
-**Linkki taloushallinnon dimensioihin** -solu sisältää linkin raportin jokaiselle riville sisällytettäviin taloushallinnon tietoihin. Tämä solu sisältää dimensioarvot, mutta voit määrittää Microsoft Excel -laskentataulukon solut segmenttiarvojen tai dimensioarvojen sijaan tai lisäksi. Voit avata **Dimensiont**-valintaikkunan kaksoisnapsauttamalla **Linkki taloushallinnon dimensioihin** -solua.
+**Linkki taloushallinnon dimensioihin** -solu sisältää linkin raportin jokaiselle riville sisällytettäviin taloushallinnon tietoihin. Solussa on dimensioarvot, mutta voit määrittää myös Microsoft Excel -laskentataulukon soluja segmenttiarvojen tai dimensioarvojen asemesta tai lisäksi. Voit avata **Dimensiont**-valintaikkunan kaksoisnapsauttamalla **Linkki taloushallinnon dimensioihin** -solua.
 
 > [!NOTE]
-> Report Designer ei voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. Voit määrittää riville tiedot, jotka ovat jo rivin määrityksessä, lisäämällä ne **Linkki taloushallinnon dimensioihin** -soluun. Voit lisätä taloushallinnon tietoihin linkittyviä uusia rivejä **Lisää rivit kohteesta** -valintaikkunassa luomalla uusia rivejä raportin määrityksessä. Sarakkeen otsikko muuttuu sen mukaan, miten sarake on konfiguroitu, seuraavassa taulukossa esitetyllä tavalla.
+> Raporttien suunnitteluohjelma ei voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. Voit määrittää rivimääritykseen jo lisätyn rivin tiedot lisäämällä tiedot **Linkki taloushallinnon dimensioihin** -soluun. Voit lisätä taloushallinnon tietoihin linkittyviä uusia rivejä **Lisää rivit kohteesta** -valintaikkunassa luomalla uusia rivejä raportin määrityksessä. Sarakkeen otsikko muuttuu sen mukaan, miten sarake on konfiguroitu, seuraavassa taulukossa esitetyllä tavalla.
 
 | Valitun linkin tyyppi       | Kuvaus, jollaiseksi Linkki-sarakkeen kuvaus muuttuu |
 |----------------------------------|----------------------------------------------------|
@@ -429,14 +428,14 @@ Jos haluat syöttää luonnollisen segmentin arvon **Dimensiot**-valintaikkunaan
 Voit määrittää segmentti- tai dimensioarvoille alueen. Jos alue määritetään, rivin määritystä ei tarvitse päivittää aina, kun taloushallinnon tietoihin lisätään uusi segmentti- tai dimensioarvo. Esimerkiksi alue **+tili=\[6100:6900\]** noutaa rivin summaan arvot tileiltä 6100–6900. Kun alue sisältää yleismerkin (?), Report Designer ei arvioi aluetta merkkiperusteisesti. Sen sijaan määritetään alueen alku ja loppu, jonka jälkeen loppuarvot ja kaikki niiden väliset arvot sisällytetään arviointiin.
 
 > [!NOTE]
-> Report Designer ei voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. Voit lisätä et-merkin (&) vain silloin, kun rivin määritykset muodostetaan automaattisesti **Lisää rivejä dimensioista** -valintaikkunan avulla.
+> Raporttien suunnitteluohjelma ei voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. Voit lisätä et-merkin (&) vain silloin, kun rivin määritykset muodostetaan automaattisesti **Lisää rivejä dimensioista** -valintaikkunan avulla.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Useiden segmenttien tai useiden dimensioiden alueita
 
 Kun alue syötetään useiden dimensioarvojen yhdistelmien avulla, alueen vertailu tehdään dimensioperusteisesti (..\\financial-dimensions\\dimension-by-dimension). Alueen vertailua ei voi tehdä merkkiperusteisesti tai osittaisen segmentin perusteella. Esimerkiksi alue **+tili=\[5000:6000\], osasto=\[1000:2000\], kustannuspaikka=\[00\]** sisältää vain kutakin segmenttiä vastaavat rivit. Tässä skenaariossa ensimmäisen dimension alueen on oltava 5000–6000, toisen dimension alueen 1000–2000 ja viimeisen dimension alueen 00. Esimerkiksi **+tili=\[5100\], osasto=\[1100\], kustannuspaikka=\[01\]** ei oteta mukaan raporttiin, koska viimeinen segmentti ei kuulu määritettyyn alueeseen. Jos segmentin arvo sisältää välilyöntejä, käytä arvossa hakasulkeita (\[ \]). Seuraavat arvot ovat sallittuja neljä merkkiä sisältävälle segmentille: **\[ 234\], \[123 \], \[1 34\]**. Dimensioarvoissa on käytettävä hakasulkeita (\[ \]). Report Designer lisää sulkeet puolestasi. Kun useita segmenttejä tai useita dimensioita sisältävä alue sisältää yleismerkkejä (? tai \*), koko useita segmenttejä tai dimensioita sisältävän alueen alin ja ylin arvo määritetään. Tämän jälkeen sisällytetään loppuarvot ja kaikki niiden väliset arvot. Jos alue on suuri, kuten tilit väliltä 40 000–99 999, kelvollinen aloittava ja lopettava tili on määritettävä aina, kun se on mahdollista.
 
 > [!NOTE] 
-> Report Designer ei voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. Voit lisätä et-merkin (&) vain silloin, kun rivin määritykset muodostetaan automaattisesti **Lisää rivejä dimensioista** -valintaikkunan avulla.
+> Raporttien suunnitteluohjelma ei voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. Voit lisätä et-merkin (&) vain silloin, kun rivin määritykset muodostetaan automaattisesti **Lisää rivejä dimensioista** -valintaikkunan avulla.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Lisääminen tai vähentäminen muista tileistä rivin määrityksessä
 Voit lisätä tai vähentää rahamääräisiä summia tilien välillä käyttämällä plus (+)- ja miinusmerkkiä (-) **Linkki taloushallinnon dimensioihin** -solussa. Seuraavassa taulukossa näkyvät taloushallinnon tietojen linkkien lisäämisen ja vähentämisen hyväksyttävät muodot.
@@ -456,10 +455,10 @@ Voit lisätä tai vähentää rahamääräisiä summia tilien välillä käyttä
 | Vähennä segmenttiarvojen alue.                                                     | -Tili=\[1200:1205\]                                                                                       |
 | Vähennä yleismerkkejä sisältävien segmenttiarvojen alue.                    | -Tili=\[120?:130?\]                                                                                       |
 
-Vaikka voit muokata tilejä suoraan, voit ottaa taloushallinnon tietojen linkeissä oikean muotoilun käyttöön myös **Dimensiot**-valintaikkunan avulla. Mitkä tahansa arvot voivat sisältää yleismerkkejä (? tai \*). Report Designer ei kuitenkaan voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }.
+Vaikka voit muokata tilejä suoraan, voit ottaa taloushallinnon tietojen linkeissä oikean muotoilun käyttöön myös **Dimensiot**-valintaikkunan avulla. Mitkä tahansa arvot voivat sisältää yleismerkkejä (? tai \*). Raporttien suunnitteluohjelma ei kuitenkaan voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }.
 
 > [!NOTE]
-> Voit vähentää arvoja lisäämällä arvojen ympärille sulkeet. Jos annat esimerkiksi arvon **450?-(4509)**, se näkyy arvona **+tili=\[4509\]-tili=\[450?\]**. Tällöin Report Designer vähentää tilisegmentin 4509 summan minkä tahansa arvolla 450 alkavan tilisegmentin summasta.
+> Jos haluat vähentää arvoja, kirjoita ne sulkeisiin. Jos annat esimerkiksi arvon **450?-(4509)**, se näkyy arvona **+tili=\[4509\]-tili=\[450?\]**. Tällöin Report Designer vähentää tilisegmentin 4509 summan minkä tahansa arvolla 450 alkavan tilisegmentin summasta.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Tilien lisääminen muihin tileihin tai niiden vähentäminen muista tileistä
 
@@ -533,4 +532,3 @@ Dimensioarvoyhdistelmä on dimensioarvojen nimetty ryhmä. Dimensioarvoyhdistelm
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
-

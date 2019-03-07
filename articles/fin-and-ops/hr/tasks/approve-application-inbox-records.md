@@ -1,13 +1,13 @@
---- 
-title: "Hyväksy hakemuskorin tietueet"
-description: "Tässä menettelyssä kerrotaan, miten Työntekijän itsepalvelu -sivun kautta vastaanotettuja hakemuksia tarkastellaan."
+---
+title: Hyväksy hakemuskorin tietueet
+description: Tässä menettelyssä kerrotaan, miten Työntekijän itsepalvelu -sivun kautta vastaanotettuja hakemuksia tarkastellaan.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMApplicationBasket, HRMApplicationBasketApprove, HRMApplication
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 87a08b33e0dc004fd836142121dca9da6d6e1a6d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1f614b507d28429922902d6c3676483b689ac3d2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310090"
 ---
 # <a name="approve-application-inbox-records"></a>Hyväksy hakemuskorin tietueet
 
@@ -48,5 +48,4 @@ Tässä menettelyssä kerrotaan, miten Työntekijän itsepalvelu -sivun kautta v
 1. Siirry kohtaan Henkilöstöhallinto > Työhönotto > Hakemukset > Hakemukset.
 2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 3. Laajenna Liitteet-osa.
-
 

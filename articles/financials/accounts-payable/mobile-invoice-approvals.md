@@ -1,13 +1,13 @@
 ---
-title: "Mobiililaskujen hyväksynnät"
-description: "Tämä ohjeaihe on tarkoitettu antamaan käytännön lähestymistavan Dynamics 365 for Finance and Operationsin mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi."
+title: Mobiililaskujen hyväksynnät
+description: Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan Dynamics 365 for Finance and Operationsin mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314391"
 ---
-
 # <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations -sovelluksen mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen. Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita. Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi. Tämä ohjeaihe auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin.
+Microsoft Dynamics 365 for Finance and Operationsin mobiiliominaisuuksien avulla liiketoimintakäyttäjät voivat suunnitella mobiilin käyttökokemuksen. Vaativimmissa skenaarioissa ympäristö sallii myös, että kehittäjät laajentavat ominaisuuksia kuin haluavat. Tehokkain keino oppia joitakin uusia käsitteitä mobiiliympäristössä on käydä läpi joitakin suunnittelutilanteita. Tämä aihe on tarkoitettu antamaan käytännön lähestymistavan mobiiliskenaarioiden suunnitteluun ottamalla toimittajan laskujen mobiilihyväksynnän esimerkkitapaukseksi. Tämä ohjeaihe auttaa sinua suunnittelemaan tilanteen muita variaatioita ja sitä voidaan soveltaa myös muihin tilanteisiin, jotka eivät liity toimittajan laskuihin.
 
 <a name="prerequisites"></a>Edellytykset
 -------------
@@ -37,10 +36,10 @@ Microsoft Dynamics 365 for Finance and Operations -sovelluksen mobiiliominaisuuk
 | Edellytys                                                                                            | kuvaus                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Mobiilikäsikirja esitiedoiksi                                                                                |[Mobiiliympäristö](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | Ympäristö, johon on asennettu Microsoft Dynamics 365 for Operations -versio 1611 sekä Microsoft Dynamics for Operations ympäristöpäivitys 3 (Marraskuu 2016)                   |
+| Dynamics 365 for Finance and Operations                                                                             | Ympäristö, johon on asennettu Microsoft Dynamics 365 for Operationsin versio 1611 ja Microsoft Dynamics for Operations platform update 3 (marraskuu 2016)                   |
 | Asenna hotfix-korjaus KB 3204341.                                                                              | Tehtävän tallennus voit virheellisesti tallentaa kaksi avattavan luettelon Sulje-komentoa. Tämä sisältyy Dynamics 365 for Operationsin ympäristöpäivitykseen 3 (marraskuun 2016 päivitys) |
 | Asenna hotfix-korjaus KB 3207800.                                                                              | Tämän päivityksen avulla liitteitä voi tarkastella mobiiliasiakkaassa. Tämä sisältyy Dynamics 365 for Operationsin ympäristöpäivitykseen 3 (marraskuun 2016 päivitys)           |
-| Asenna hotfix-korjaus KB 3208224.                                                                              | Sovelluskoodi toimittajan laskujen hyväksynnän mobiilisovellukselle. Tämä sisältyy Microsoft Dynamics AX -sovellukseen 7.0.1 (May 2016).                          |
+| Asenna hotfix-korjaus KB 3208224.                                                                              | Sovelluskoodi toimittajan laskujen hyväksynnän mobiilisovellukselle. Tämä sisältyy Microsoft Microsoft Dynamics AX -sovellukseen 7.0.1 (toukokuu 2016).                          |
 | Android-, iOS- tai Windows-laite, jossa on asennettuna Finance and Operationsin mobiilisovellus | Etsi sovellus omasta sovelluskaupastasi.                                                                                                                     |
 
 ## <a name="introduction"></a>Johdanto
@@ -139,7 +138,7 @@ Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanss
 
 Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka on määritetty käyttäjälle tarkistettavaksi. Voit suunnitella tämän mobiilisivun Finance and Operationsin **VendMobileInvoiceAssignedToMeListPage**-sivulla. Ennen kuin suoritat nämä toimet, varmista, että vähintään yksi toimittajalasku on määritetty itsellesi tarkistettavaksi, ja että laskurivillä on kaksi jakoa. Tämä määritys täyttää tämän skenaarion vaatimukset.
 
-1.  Korvaa Finance and Operationsin URL-osoitteessa valikkovaihtoehdon nimi merkkijonolla **VendMobileInvoiceAssignedToMeListPage**, jos haluat avata **Minulle määritetyt odottavat toimittajan laskut** -luettelosivun mobiiliversion **Ostoreskontra**-moduulissa. Tässä sivussa näkyvät ne laskut, jotka on järjestelmässä liitetty sinulle. Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tarvitset vain jonkin sinulle määritetyn laskun, jonka avulla voit suunnitella mobiilisivun. Käytettävissä olevat uudet sivut on suunniteltu erityisesti kehittämään mobiiliskenaarioita toimittajalaskuille. Siksi sinun on käytettävä näitä sivuja. URL-osoitteen pitäisi olla samantyyppinen seuraavan osoitteen kanssa, ja siihen siirryttyäsi sinun pitäisi nähdä oheisen kuvan mukainen sivu: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  Korvaa Finance and Operationsin URL-osoitteessa valikkovaihtoehdon nimi merkkijonolla **VendMobileInvoiceAssignedToMeListPage**, jos haluat avata **Minulle määritetyt odottavat toimittajan laskut** -luettelosivun mobiiliversion **Ostoreskontra**-moduulissa. Tässä sivussa näkyvät ne laskut, jotka on järjestelmässä liitetty sinulle. Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tarvitset vain jonkin sinulle määritetyn laskun, jonka avulla voit suunnitella mobiilisivun. Käytettävissä olevat uudet sivut on suunniteltu erityisesti kehittämään mobiiliskenaarioita toimittajalaskuille. Siksi sinun on käytettävä näitä sivuja. URL-osoitteen pitäisi olla samantyyppinen seuraavan osoitteen kanssa, ja siihen siirryttyäsi sinun pitäisi nähdä oheisen kuvan mukainen sivu: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Minulle määritettyjen odottavien toimittajalaskujen luettelosivu](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
 2.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
 3.  Valitse työtila ja sitten **Muokkaa**
 4.  Valitse **Lisää sivu** luodaksesi ensimmäisen mobiilisivun.
@@ -488,7 +487,6 @@ Skenaariolle 1 voidaan tehdä seuraavat muunnelmat perustuen skenaarion 2 vaatim
     3.  Parhaassa tapauksessa tässä skenaariossa jaot pitäisi näyttää laskurivin yhteydessä. Varmista siksi, että käyttäjä voi porautua riviin nähdäkseen jakosivun. Sivulinkkiominaisuuden avulla voit määrittää porautumisen samalla tavalla kuin otsikko- ja tietosivuille skenaariossa 1.
 
 2.  Koska skenaariossa 2 on odotettavissa useita summatyyppejä (arvonlisävero, kulut jne.), on hyödyllistä näyttää summatyypin kuvaus. (Nämä tiedot jätettiin pois skenaariossa 1).
-
 
 
 

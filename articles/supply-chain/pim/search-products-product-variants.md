@@ -1,13 +1,13 @@
 ---
-title: "Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana"
-description: "Käytä **Nimiketunnus** kenttää tuote- ja tuotevarianttihakuun luodessasi manuaalisesti ostotilausrivin tai myyntitilausrivin. Näin löydät nopeasti tuotevariantit, kun käytettävissä on vain konfiguraation merkkijono tai jokin tuotedimensioista."
+title: Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana
+description: Käytä **Nimiketunnus** kenttää tuote- ja tuotevarianttihakuun luodessasi manuaalisesti ostotilausrivin tai myyntitilausrivin. Näin löydät nopeasti tuotevariantit, kun käytettävissä on vain konfiguraation merkkijono tai jokin tuotedimensioista.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bf90dc4823599ed6ff8e81986fc35f2210b66b0c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d6a45d89ba20994c06a77c646fa5099fa34b3b2e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323108"
 ---
-
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana
 
 [!include [banner](../includes/banner.md)]
@@ -35,9 +34,9 @@ ms.lasthandoff: 05/08/2018
 
 Käytä **Nimiketunnus** kenttää tuote- ja tuotevarianttihakuun luodessasi manuaalisesti ostotilausrivin tai myyntitilausrivin.  Näin löydät nopeasti tuotevariantit, kun käytettävissä on vain konfiguraation merkkijono tai jokin tuotedimensioista.
 
-Joskus liian suuri määrä jotain tuotetta saattaa aiheuttaa päänvaivaa, varsinkin jos myyt suuren määrän samankaltaisia tuotteita ja yrität muistaa niiden nimiketunnukset tai tuotteen hakunimet, kun yrität löytää oikean tuotteen lisätäksesi sen myyntitilaukseen. Voit käyttää **Nimiketunnus**-kenttää hakukenttänä ostotilausrivillä tai myyntitilausrivillä. Voit syöttää osan tuotenimeä, numeroa tai dimensiota, jolloin hakutoiminto tuo näyttöön kaikki nimikkeet, jotka vastaavat hakusanaa.
+Joskus liian suuri määrä jotain tuotetta saattaa aiheuttaa päänvaivaa, varsinkin jos myyt suuren määrän samankaltaisia tuotteita ja yrität muistaa niiden nimiketunnukset tai tuotteen hakunimet, kun yrität löytää oikean tuotteen lisätäksesi sen myyntitilaukseen. Voit käyttää **Nimiketunnus**-kenttää hakukenttänä ostotilausrivillä tai myyntitilausrivillä. Voit syöttää osan tuotenimeä, numeroa tai dimensiota, jolloin hakutoiminto tuo näyttöön kaikki nimikkeet, jotka vastaavat hakusanaa.
 
-## <a name="how-search-works"></a>Haun toiminta
+## <a name="how-searchworks"></a>Haun toiminta
 Kun etsit tuotteita tai tuotevariantteja, on tärkeää tietää, miten hakutoiminto löytää tuotteet, jotka vastaavat kirjoittamaasi tekstiä. Keskeiset hakusäännöt ovat seuraavat:
 
 -   Hakutulokset palauttavat kaikki vastaavat tietueet riippumatta hakukentästä, johon hakuteksti kirjoitettiin.
@@ -47,11 +46,11 @@ Kun etsit tuotteita tai tuotevariantteja, on tärkeää tietää, miten hakutoim
 
 ### <a name="examples"></a>Esimerkkejä
 
-Seuraavissa esimerkeissä käytetään tuotteita ja tuotevariantteja havainnollistamaan, kuinka haku toteutetaan eri skenaarioissa. **Edellytys:** kohdassa **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuparametrit &gt; Hakutyyppi** valitse **Täydellinen vastaavuus** -vaihtoehto.
+Seuraavissa esimerkeissä käytetään tuotteita ja tuotevariantteja havainnollistamaan, kuinka haku toteutetaan eri skenaarioissa. **Edellytys:** valitse ensin **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuparametrit &gt; Hakutyyppi** ja sitten  **Täydellinen vastaavuus** -asetus.
 
 | Tuotetyyppi     | Tuotteen nimi    | Näytä tuotenumero | Nimiketunnus | Konfiguraatio |
 |------------------|-----------------|------------------------|-------------|---------------|
-| Erillinen tuote | KaiutinMidRange | D0001                  | D0001       | Ei saatavana            |
+| Erillinen tuote | KaiutinMidRange | D0001                  | D0001       | Ei sovellu            |
 | Tuotevariantti  | Aktiivinen kaiutin  | D0010:::Musta:         | D0010       | 000005        |
 | Tuotevariantti  | Aktiivinen kaiutin  | D0010:::Valkoinen:         | D0010       | Valkoinen         |
 
@@ -61,14 +60,14 @@ Jos kirjoitat "05", hakutulokseksi saadaan vain toinen tuotevariantti koska sill
 
 Jos kirjoitat "kaiu 05", haku ei löydä yhtään tulosta. Tämä johtuu siitä. että hakutoiminto etsii koko tekstiä. Hakutoiminto yrittää löytää "kaiu" -vastaavuudet ja rajoittaa tulokset niihin, jotka sisältävät merkkijonon "05".  
 
-Voit rajoittaa hakutulosten lukumäärää käyttämällä **Tulosten määrä**-kenttää **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuparametrit** -sivulla. Jos tämän kentän arvoksi määritetään 0, kaikki hakutulokset palautetaan. Jos esimerkiksi määrität arvoksi 10, toiminto palauttaa enintään 10 hakutulosta.
+Voit rajoittaa hakutulosten lukumäärää käyttämällä **Tulosten määrä**-kenttää **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuparametrit** -sivulla. Jos tämän kentän arvoksi määritetään 0, kaikki hakutulokset palautetaan. Jos esimerkiksi määrität arvoksi 10, toiminto palauttaa enintään 10 hakutulosta.
 
-## <a name="configure-the-product-search"></a>Tuotehaun määrittäminen
+## <a name="configure-the-productsearch"></a>Tuotehaun määrittäminen
 Ennen kuin voit käyttää tuote- ja tuotevarianttihakua, määritä tuotehakutoiminto seuraavasti. [![tuotehaun määrittämisen 3 vaihetta\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
-### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Vaihe 1: Sisällytä kaikki tarvittavat tuotteen ja tuotevariantin tunnukset ja dimensiot hakuehtoihin
+### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Vaihe 1: Sisällytä kaikki tarvittavat tuotteen ja tuotevariantin tunnukset ja dimensiot hakuehtoihin
 
-Esimerkkejä tuotteen ja tuotevariantin tunnuksista ja dimensioista, joiden perusteella tuotetta voidaan hakea, ovat: **tuotenimi, nimiketunnus**, **Näytä tuotenumero, väri, koko, malli, hakunimi jne.**.  
+Esimerkkejä tuotteen ja tuotevariantin tunnuksista ja dimensioista, joiden perusteella tuotetta voidaan hakea: **tuotenimi, nimiketunnus**, **Näytä tuotenumero, väri, koko, malli, hakunimi jne.**.  
 
 Siirry **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuehdot** -sivulle. **Hakuehdot**-sivulla voit määrittää asiakkaan, prospektin ja tuotehaun ehdot. Varmista, että käytät tuotehakuehtoja sivun suodatuksessa. Voit tehdä tämän siirtymällä kohtaan **Tuote** sivun valikossa.  
 
@@ -76,7 +75,7 @@ Voit lisätä näytön tuotenumeron hakuehtoihin napsauttamalla **Uusi** sivun v
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Vaihe 2: Täytä tietokantataulu, jota käytetään tuotehaussa
 
-Valitse **Hakuehdot** -sivulla **Päivitä hakutiedot** -painike. Varmista **Päivitä hakutiedot** -valintaikkunassa, että **Lähde** arvoksi on määritettu **Tuote** ja valitse sitten **OK**. Järjestelmä kerää kaikki hakuehdot yhteen taulukkoon vaiheessa 1 määritettyjen hakuehtojen mukaisesti. Jos sinulla on suuri määrä tuotteita ja tuotevariantteja, tämä toiminto voi kestää melko pitkään ja näyttöön voi tulla varoitus. On suositeltavaa, että ajoitat hakutaulun täytön eräpalvelimessa aikaan, jolloin palvelin ei ole varattu.  
+Valitse **Hakuehdot** -sivulla **Päivitä hakutiedot** -painike. Varmista **Päivitä hakutiedot** -valintaikkunassa, että **Lähde**-arvoksi on määritetty **Tuote** ja valitse sitten **OK**. Järjestelmä kerää kaikki hakuehdot yhteen taulukkoon vaiheessa 1 määritettyjen hakuehtojen mukaisesti. Jos sinulla on suuri määrä tuotteita ja tuotevariantteja, tämä toiminto voi kestää melko pitkään ja näyttöön voi tulla varoitus. On suositeltavaa, että ajoitat hakutaulun täytön eräpalvelimessa aikaan, jolloin palvelin ei ole varattu.  
 
 Tuotehaku ei tuota oikeita tuloksia ennen kuin taulukko täytetään. Jos haku ei tuota tuloksia, varmista, että taulukko on täytetty.  
 
@@ -84,10 +83,9 @@ Taulukossa on täytettävä vain kun hakuehdot muutetaan. Äskettäin julkaistut
 
 ### <a name="step-3-enable-the-lookup-for-product-search-on-sales-and-purchase-order-lines"></a>Vaihe 3: Ota tuotehaku käyttöön myynti- ja ostotilausriveillä
 
-Voit ottaa tämän toiminnon käyttöön siirtymällä kohtaan **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuparametrit** ja määrittämällä **Ota tuotteiden haku käyttöön** arvoksi **Kyllä** **Yleistä**-välilehdessä.  
+Voit ottaa tämän toiminnon käyttöön siirtymällä kohtaan **Myynti ja markkinointi &gt; Asetukset &gt; Haku &gt; Hakuparametrit** ja määrittämällä **Ota tuotteiden haku käyttöön** -arvoksi **Kyllä** **Yleistä**-välilehdessä.  
 
-Myyntitilausrivin syötön oletusasetuksena on avata **Tuotehaku** -sivu, kun alat kirjoittaa **Nimiketunnus** kenttään ja painat **Välilehti**-näppäintä. **Tuotehaku**-sivu vaihtaa kontekstia tilausrivin luonnin yhteydessä ja voi vaikuttaa tarpeettoman rajoittavalta. Jos haluat saada hakutulokset hakukentän avulla etkä halua vaihtaa kontekstia tilausrivin luonnin yhteydessä, voit käyttää sen sijaan varsinaista hakutoimintoa. Jos haet tuotetta tai tuotevarianttia valitsematta mitään hakukentässä ja painat **Välilehti**-näppäintä, **Tuotehaku**-sivu tulee näyttöön.
-
+Myyntitilausrivin syötön oletusasetuksena on avata **Tuotehaku** -sivu, kun alat kirjoittaa **Nimiketunnus**-kenttään ja painat **Sarkain**-näppäintä. **Tuotehaku**-sivu vaihtaa kontekstia tilausrivin luonnin yhteydessä ja voi vaikuttaa tarpeettoman rajoittavalta. Jos haluat saada hakutulokset hakukentän avulla etkä halua vaihtaa kontekstia tilausrivin luonnin yhteydessä, voit käyttää sen sijaan varsinaista hakutoimintoa. Jos haet tuotetta tai tuotevarianttia valitsematta mitään hakukentässä ja painat **Välilehti**-näppäintä, **Tuotehaku**-sivu tulee näyttöön.
 
 
 

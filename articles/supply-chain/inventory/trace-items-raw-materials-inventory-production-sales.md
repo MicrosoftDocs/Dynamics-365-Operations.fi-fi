@@ -1,13 +1,13 @@
 ---
-title: "Nimikkeiden ja raaka-aineiden seuranta varastossa, tuotannossa ja myynnissä"
-description: "Tässä ohjeaiheessa kuvataan, kuinka voit määrittää nimikkeen seurannan avulla nimikkeiden ja raaka-aineiden aiemman, nykyisen ja tulevan käyttöpaikan tuotanto- ja myyntiprosesseissa."
+title: Nimikkeiden ja raaka-aineiden seuranta varastossa, tuotannossa ja myynnissä
+description: Tässä ohjeaiheessa kuvataan, kuinka voit määrittää nimikkeen seurannan avulla nimikkeiden ja raaka-aineiden aiemman, nykyisen ja tulevan käyttöpaikan tuotanto- ja myyntiprosesseissa.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310067"
 ---
-
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Nimikkeiden ja raaka-aineiden seuranta varastossa, tuotannossa ja myynnissä
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,7 @@ Jos haluat käyttää **Uusi taaksepäin**- tai **Uusi eteenpäin** -vaihtoehtoa
 Voit tallentaa <strong>Tiedot</strong>-välilehden tiedot XML-tiedostoksi valitsemalla <strong>Vie</strong> toimintoruudun *<strong><em>Seuranta</em></strong>*-toiminnon alla. Seurantatietojen lisäksi XML-tiedosto sisältää seurantaehdot, ylätason solmun ja käytettävissä olevan määrän. Seurannan tietojen tallentamisesta on hyötyä esimerkiksi siinä tapauksessa, että haluat liittää tiedot laatutilaukseen tai muihin yhteensopivuusasiakirjoihin. Voit määrittää tiedoston tallennussijainnin. Voit tarkastella tiedostoa saman tien valitsemalla <strong>Näytä tiedosto</strong> -vaihtoehdon. <strong>Huomautus:</strong> Tiedosto tallennetaan aina, vaikka haluat vain tarkastella sitä. Oletusarvon mukaan XML-tiedosto avataan selaimen ikkunaan. Voit kuitenkin napsauttaa tiedostoa hiiren kakkospainikkeella, valitsemalla <strong>Avaa sovelluksessa</strong> ja valitsemalla sitten sisällön näyttämiseen käytettävän ohjelman.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Voinko laskea tietyn nimikkeen tai ainesosan saldon?
-Voit viedä yhteenvetosivujen tiedot Microsoft Exceliin. Avaa haluamasi sivu napsauttamalla **Avaa Microsoft Officessa** -kuvaketta ja valitsemalla sitten **Vie Exceliin**. Tämä toiminto on erityisen hyödyllinen silloin, jos haluat laskea laajamittainen saldon nimikkeelle tai ainesosalle **Tapahtumien yhteenveto** -sivulla. **Tapahtumien yhteenveto** -sivulla voit suodattaa tiedot nimikkeen tai ainesosan ja halutessasi erän perusteella ja viedä tiedot sitten Exceliin. Excelissä voit esimerkiksi erotella käytettävissä olevan määrän, myydyn määrän ja tuotannossa käytetyn summan.
+Voit viedä tietoja yhteenvedon lomakkeista Microsoft Exceliin. Avaa haluamasi sivu napsauttamalla **Avaa Microsoft Officessa** -kuvaketta ja valitsemalla sitten **Vie Microsoft Exceliin**. Tämä toiminto on erityisen hyödyllinen silloin, jos haluat laskea laajamittainen saldon nimikkeelle tai ainesosalle **Tapahtumien yhteenveto** -sivulla. **Tapahtumien yhteenveto** -sivulla voit suodattaa tiedot nimikkeen tai ainesosan ja halutessasi erän perusteella ja viedä tiedot sitten Exceliin. Excelissä voit esimerkiksi erotella käytettävissä olevan määrän, myydyn määrän ja tuotannossa käytetyn summan.
 
 ## <a name="can-i-investigate-whether-there-is-a-history-of-issues-with-items-or-raw-materials"></a>Voinko tutkia, onko nimikkeissä tai raaka-aineissa ollut aiemmin ongelmia?
 Seurantatiedot sisältävät tietoja laatutilauksista ja määrityksistä poikkeamisista, jotka liittyvät nimikkeeseen tai raaka-aineeseen. Voit tarkastella yhteenvetoa laatutilauksista ja määrityksistä poikkeamisista valitsemalla toimintoruudussa **Laatutilaukset** tai **Määrityksistä poikkeamiset**. **Huomautus:** Destruktiivisia laatutilauksia voi esiintyä useammin kuin kerran seurantatiedoissa. Kun asiakirjalle luodaan destruktiivinen laatutilaus, kuten ostotilaus, se näkyy kullekin kyseisen asiakirjan tapahtumalle.
@@ -141,4 +140,3 @@ Voit luoda **Lähetetty asiakkaille** -raportin, jossa määritetään lähetett
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Voinko jäljittää oheistuotteita ja sivutuotteita?
 Voit seurata rinnakkaistuotteita, mutta et voi seurata sivutuotteita, koska niihin ei ole tavallisesti liitetty seurantadimensioita. Kun seuraat nimikettä, seurantatietoihin sisältyvät kaikki liittyvät oheistuotteet. Solmun, joka sisältää rinnakkaistuotteen lisätiedoissa on sana "rinnakkaistuote". Voit tarkastella tietoja oheistuotteesta myös valitsemalla seurantatietojen solmun ja napsauttamalla sitten **Tuotanto**-pikavälilehteä.
-

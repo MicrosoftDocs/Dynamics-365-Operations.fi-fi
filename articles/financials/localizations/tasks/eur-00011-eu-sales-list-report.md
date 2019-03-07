@@ -1,13 +1,13 @@
---- 
+---
 title: EUR-00011 EU:n myyntiluetteloraportin luominen
-description: "Tässä menettelyssä käsitellään EU-myyntiluettelon raportin muodostamista."
+description: Tässä menettelyssä käsitellään EU-myyntiluettelon raportin muodostamista.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  EUSalesList, EUSalesListSelection, SysQueryForm, SysLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 9fcafa2beca5d998b2556ba73e9f3cc2bdd314ba
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370630"
 ---
 # <a name="eur-00011-generate-the-eu-sales-list-report"></a>EUR-00011 EU:n myyntiluetteloraportin luominen
 
@@ -100,5 +100,4 @@ Menettely on tarkoitettu kirjanpitäjille.
     * Voit myös määrittää lisäsuodattimia suljetuiksi merkittäville yhteisön sisäisen kaupan tapahtumille.  
 7. Valitse OK.
 8. Valitse Valinta-kentässä Suljettu.
-
 

@@ -1,13 +1,13 @@
 ---
 title: Toimittajien aktivointi
-description: "Tässä aiheessa käsitellään uusien toimittajien aktivointiprosessia. Siinä selitetään toiminnot, joita eri rooleilta edellytetään tämän prosessin aikana."
+description: Tässä aiheessa käsitellään uusien toimittajien aktivointiprosessia. Siinä selitetään toiminnot, joita eri rooleilta edellytetään tämän prosessin aikana.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
 ms.reviewer: josaw
@@ -15,21 +15,20 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f831d986d7b534bf030bee0fa0c5dcb97af03289
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322142"
 ---
-
 # <a name="onboard-vendors"></a>Toimittajien aktivointi
 [!include [banner](../includes/banner.md)]
 
 ---
 
-Uudet toimittajat voidaan aktivoida ja rekisteröidä toimittajiksi Microsoft Dynamics 365 for Finance and Operations -sovelluksessa toimittajaa edustavalta henkilöltä kerättävien tietojen perusteella.
+Uudet toimittajat voidaan aktivoida ja rekisteröidä toimittajiksi Microsoft Dynamics 365 for Finance and Operationsissa toimittajaa edustavalta henkilöltä kerättävien tietojen perusteella.
 
 Prosessissa on seuraavat vaiheet, joissa eri roolit suorittavat järjestelmän tehtäviä.
 
@@ -49,7 +48,7 @@ Seuraavassa taulukossa on prosessiin liittyvät vaiheet ja roolit.
 | Järjestelmänvalvoja            | | | Luo käyttäjä Finance and Operationsissa ja Microsoft Azuressa. | | | |
 | Toimittajan yhteyshenkilö    | | | Lähetä sähköposti yhteyshenkilölle. | Rekisteröi toimittajan tiedot. | | |
 
-Toimittajan aktivointiprosessi esitellään nopeasti tässä lyhyessä YouTube-videossa: [Uuden toimittajan aktivointi Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+Toimittajan aktivointiprosessi esitellään nopeasti tässä lyhyessä YouTube-videossa: [Uuden toimittajan perehdytys Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Mahdollisen toimittajan rekisteröintipyynnön tuominen
 
@@ -174,5 +173,4 @@ Mahdollisen toimittajan rekisteröintipyynnön eri tilat luovat yleiskuvan pyynn
 |  Toimittajapyyntö luotu  |                                                                     Ohjattu toimittajan rekisteröintitoiminto on suoritettu.                                                                      | Käyttäjän käytöstäpoistopyyntö luodaan sekä mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan.<blockquote>[!NOTE]<br><strong>Poista</strong>-toimintoa ei voi käyttää, kun toimittajapyyntö on työnkulun tarkistusvaiheessa.</blockquote> |
 |         Hyväksytty         |                                                                               Toimittajapyyntö hyväksytään.                                                                               |                                                                                                   Mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan.                                                                                                    |
 |         Hylätty         |                                                                               Toimittajapyyntö hylätään.                                                                               |                                                                                                   Mahdollisen toimittajan rekisteröintipyyntö, ohjatussa toimittajan rekisteröintitoiminnossa annetut tiedot ja toimittajapyyntö poistetaan.                                                                                                    |
-
 

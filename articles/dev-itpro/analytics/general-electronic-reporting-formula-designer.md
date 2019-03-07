@@ -1,13 +1,13 @@
 ---
-title: "Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto"
-description: "Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER)."
+title: Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
+description: Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
 ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331273"
 ---
-
 # <a name="formula-designer-in-electronic-reporting-er"></a>Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sä
 
 Sähköinen raportointi tukee kaavojen suunnittelutoimintoa. Tämän vuoksi voit määrittää suunnittelun yhteydessä lausekkeita, joita voidaan käyttää suorituksen aikana seuraavissa tehtävissä:
 
-- Microsoft Dynamics 365 for Finance and Operationsin tietokannasta vastaanotettujen tietojen muuntaminen. Tiedot täytetään ER-tietomalliin, joka on suunniteltu ER-muotojen (kuten suodatus, ryhmittely ja tietotyypin muunnos) tietolähteeksi (Näitä muunnoksia ovat esimerkiksi suodatus, ryhmitys ja tietotyypin muunto.)
+- Microsoft Dynamics 365 for Finance and Operationsin tietokannasta vastaanotettujen tietojen muuntaminen. Tiedot täytetään ER-tietomalliin, joka on suunniteltu ER-muotojen (kuten suodatus, ryhmittely ja tietotyypin muunnos) tietolähteeksi. (Näitä muunnoksia ovat esimerkiksi suodatus, ryhmitys ja tietotyypin muunto.)
 - Muodostettavaan sähköiseen asiakirjaan lähetettävien tietojen muotoilu tietyn ER-muodon asettelun ja ehtojen mukaisesti. (Muotoilu voidaan tehdä esimerkiksi pyydetyn kielen tai kulttuurin tai koodauksen mukaisesti.)
 - Sähköisten asiakirjojen luontiprosessin hallinta. (Lausekkeet voivat esimerkiksi ottaa käyttöön muodon tiettyjen elementtien tuottamisen tai poistaa sen käytöstä käsiteltävien tietojen mukaan. Ne voivat myös keskeyttää asiakirjan luontiprosessin tai näyttää sanomia käyttäjille.)
 
@@ -625,8 +624,8 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </ul></li>
 <li>Finance and Operationsin otsikko SYS18389, jossa on seuraava teksti:
 <ul>
-<li><strong>Kielelle EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>Kielelle FI:</strong> &quot;Asiakas %1 on pysäytetty %2.&quot;</li>
+<li><strong>Kielelle EN-US:</strong> Customer %1 is stopped for %2.</li>
+<li><strong>Kielelle FI:</strong> Asiakas %1 on pysäytetty %2.</li>
 </ul></li>
 </ul>
 <p>Tässä on kaava, jota voi muotoilla:</p>
@@ -743,4 +742,3 @@ ER:n avulla on mahdollista laajentaa luetteloa toiminnoista, joita käytetään 
 
 - [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
 - [Sähköisen raportoinnin (ER) toimintojen luettelon laajentaminen](general-electronic-reporting-formulas-list-extension.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "Luo raportteja lisäämällä sisältöä XML-raakatiedostona"
-description: "Voit suunnitella sähköisen raportoinnin (ER) muotoja, jotka luovat lähteviä tiedostoja XML-muodossa."
+title: Luo raportteja lisäämällä sisältöä XML-raakatiedostona
+description: Voit suunnitella sähköisen raportoinnin (ER) muotoja, jotka luovat lähteviä tiedostoja XML-muodossa.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 39503d051e3b4686bbaa0130fe5be7cb980fbcb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312183"
 ---
-
 # <a name="generate-reports-by-adding-content-as-raw-xml"></a>Luo raportteja lisäämällä sisältöä XML-raakatiedostona
 
 [!include[banner](../includes/banner.md)]
@@ -39,4 +38,3 @@ Voit käyttää uutta **RAW XML** -muotoelementtiä suunnitellaksesi sähköisen
 > Huomaa, että kehys ei hallinnoi sitä, onko **RAW XML** -muotoelementin avulla luotuun asiakirjaan lisätty elementin muoto on oikein muotoiltu.
 
 Lisätietoja tästä toiminnosta saat toistamalla tehtäväoppaat **ER XML-raakadatan käyttäminen XML-raporttien luomiseen (osa 1: suunnittele tietomalli)** ja **ER XML-raakadatan käyttäminen XML-raporttien luomiseen (osa 2: raportin suunnittelu ja suorittaminen)**, jotka kuuluvat **7.5.4.3 Hanki/Kehitä IT-palvelu/ratkaisukomponentit (10677)** -liiketoimintaprosessiin, joka voidaan ladata [Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=874684). Nämä tehtäväoppaat selittävät prosessin, jossa määritetään ER-muoto lisäämään XML-raakadataa luotuihin asiakirjoihin.
-

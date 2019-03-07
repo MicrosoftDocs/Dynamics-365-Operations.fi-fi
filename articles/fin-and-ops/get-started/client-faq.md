@@ -1,13 +1,13 @@
 ---
 title: Finance and Operations -asiakasohjelman usein kysytyt kysymykset
-description: "Tässä artikkelissa on vastauksia Microsoft Dynamics 365 for Finance and Operations -asiakasohjelmaa koskeviin usein kysyttyihin kysymyksiin."
+description: Tässä artikkelissa on vastauksia Microsoft Dynamics 365 for Finance and Operations -asiakasohjelmaa koskeviin usein kysyttyihin kysymyksiin.
 author: jasongre
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 74f85f7a1c390d1f21d0423a794ff16c7250d9fa
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316714"
 ---
-
 # <a name="finance-and-operations-client-faq"></a>Finance and Operations -asiakasohjelman usein kysytyt kysymykset
 
 [!include [banner](../includes/banner.md)]
@@ -35,10 +34,10 @@ Tässä artikkelissa on vastauksia Microsoft Dynamics 365 for Finance and Operat
 
 Selaimesi suojausasetukset voivat estää symbolien oikein lataamisen. Voit ratkaista tämän ongelman yrittämällä seuraavaa:
 
-- Jos ongelma ilmenee Internet Exploreria käytettäessä, klikkaa **Työkalut**, ja sitten **Internet-asetukset**. Valitse Internet-asetukset-valintaikkunassa **Tietosuoja**-välilehdessä **Mukautettu taso**, ja varmista, että **Fonttien lataaminen** -vaihtoehto on valittuna.
+- Jos ongelma ilmenee Internet Exploreria käytettäessä, valitse ensin **Työkalut** ja sitten **Internet-asetukset**. Valitse Internet-asetukset-valintaikkunassa **Tietosuoja**-välilehdessä **Mukautettu taso**, ja varmista, että **Fonttien lataaminen** -vaihtoehto on valittuna.
 - Muussa tapauksessa sinun on lisättävä Finance and Operations -sivusto luotettujen sivustojen luetteloon.
 
-## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Valintanauhaa ei ole Dynamics AX 2012:ssa. Voinko pitää toimintoruudun välilehdet aina auki?
+## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Dynamics AX 2012:ssä ei ole valintanauhaa Voinko pitää toimintoruudun välilehdet aina auki?
 
 Olemme aikeissa toteuttaa tämän ominaisuuden pian. Käyttäjät voivat sitten halutessaan pitää välilehtien toimintoruudut aina avattuina. Muussa tapauksessa välilehdet painuvat kokoon, kun niitä ei käytetä, jotta sivun näyttötilaa voidaan lisätä.
 
@@ -56,4 +55,3 @@ Helpottaaksemme näppäimistöön pääsyä, suunnittelemme sellaisen pikanäpp�
 
 - Jos ohjausobjektissa on **Näytä tiedot**-valmius ja ohjausobjektilla on arvo, kyseinen arvo näytetään hyperlinkkinä. Napsauttamalla hyperlinkkiä voit avata sivun, jossa on lisätietoja.
 - **Näytä tiedot** on vaihtoehtona myös Finance and Operationsin pikavalikoissa. Lisätietoja siitä, milloin Finance and Operations -pikavalikko tulee näkyviin hiiren kakkospainiketta napsautettaessa, on edellisessä osassa.
-

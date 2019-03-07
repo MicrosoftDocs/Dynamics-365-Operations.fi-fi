@@ -1,13 +1,13 @@
 ---
 title: Liiketoimintaprosessien virallistaminen
-description: "Tässä osassa kerrotaan miten voit käyttää liiketoimintaprosessiominaisuutta luodaksesi organisaatiossa suoritettavien prosessien liiketoimintaprosessimallin."
+description: Tässä osassa kerrotaan miten voit käyttää liiketoimintaprosessiominaisuutta luodaksesi organisaatiossa suoritettavien prosessien liiketoimintaprosessimallin.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGenericTemplateListpage, BusinessProcessGenericMyTemplates, BusinessProcessGroupAssignment
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
 ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304269"
 ---
 # <a name="formalize-business-processes"></a>Liiketoimintaprosessien virallistaminen
 
@@ -43,7 +43,7 @@ Jokaiselle prosessille voidaan määrittää prosessin omistaja. Prosessin omist
 Prosessin omistaja ei voi luoda uusia liiketoimintaprosesseja tai liiketoimintaprosessin malleja tai poistaa aktiivista liiketoimintaprosessia tai liiketoimintaprosessin malleja.
 
 ## <a name="tasks"></a>Tehtävät
-Liiketoimintaprosessi koostuu tavallisesti useista tehtävistä. Jotkin tehtävät voidaan tehdä valmiiksi Microsoft Dynamics 365 for Talentissa[?]. Tällainen tehtävä on esimerkiksi sisäisen kurssivalikoiman arviointi. Tässä tapauksessa vaihtoehto on valittuna **Tehtävälinkki** -kentässä. Muut tehtävät saattavat sisältää verkkosivuston sivujen tarkastelun tai täyttämisen. Tässä tapauksessa **URL** on valittu **Tehtävälinkki** -kentässä ja Internet-osoite voidaan syöttää. Voit antaa sekä ulkoisten että sisäisten sivustojen URL-osoitteita. Voit luoda tehtäviä myös manuaalisesti suoritettaville tehtäville, kuten kaikkien rakenteiden helppokäyttöisyyden arviointi. Tässä tapauksessa tehtävän linkki ei ole pakollinen. Tämän joustavuuden ansiosta voit seurata useita erilaisia tehtäviä kattavana prosessina.
+Liiketoimintaprosessi koostuu tavallisesti useista tehtävistä. Jotkin tehtävät voidaan tehdä valmiiksi Dynamics 365 for Talentissa[?]. Tällainen tehtävä on esimerkiksi sisäisen kurssivalikoiman arviointi. Tässä tapauksessa vaihtoehto on valittuna **Tehtävälinkki** -kentässä. Muut tehtävät saattavat sisältää verkkosivuston sivujen tarkastelun tai täyttämisen. Tässä tapauksessa **URL** on valittu **Tehtävälinkki** -kentässä ja Internet-osoite voidaan syöttää. Voit antaa sekä ulkoisten että sisäisten sivustojen URL-osoitteita. Voit luoda tehtäviä myös manuaalisesti suoritettaville tehtäville, kuten kaikkien rakenteiden helppokäyttöisyyden arviointi. Tässä tapauksessa tehtävän linkki ei ole pakollinen. Tämän joustavuuden ansiosta voit seurata useita erilaisia tehtäviä kattavana prosessina.
 
 Tehtävät voidaan määrittää joko toimelle tai tietylle työntekijälle. Esimerkiksi etupäällikkö suorittaa aina vakuutusmaksujen tarkistukset. Tämän takia kun luot tätä tehtävää, valitse ensin **Toimi** **Toimeksiantotyyppi** -kentästä ja sitten **Etuuspäällikkö** **toimiluettelosta**. Kun prosessi alkaa, tehtävä määritetään **etuuspäällikkönä** toimivalle työntekijälle. Voidaksesi määrittää tehtävän tietylle työntekijälle valitse **Työntekijä** **Määrityksen tyyppi** -kentässä ja valitse sitten henkilö.
 
@@ -74,5 +74,4 @@ Luodaksesi uuden tai kopioidaksesi prosessin liiketoimintamallin tai käynnistä
 - Valitse **Aloita prosessi** aloittaaksesi valitun liiketoimintaprosessin, määrätäksesi tehtäviä ja laskeaksesi eräpäiviä.
 
 Tarkastellaksesi aktiivisia prosesseja ja liittyviä tehtäviä, avaa **Liiketoimintaprosessit**-työtila.
-
 

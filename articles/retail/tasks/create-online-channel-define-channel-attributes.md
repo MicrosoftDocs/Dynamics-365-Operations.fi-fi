@@ -1,13 +1,13 @@
---- 
-title: "Luo online-kanava ja määritä kanavamääritteet"
-description: "Tässä menettelyssä kerrotaan, miten uusi online-kanava luodaan ja lisätään organisaatiohierarkiaan."
+---
+title: Luo online-kanava ja määritä kanavamääritteet
+description: Tässä menettelyssä kerrotaan, miten uusi online-kanava luodaan ja lisätään organisaatiohierarkiaan.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailSPOnlineStoreDetailPage, SysLookupMultiSelectGrid, DimensionLookup, OMHierarchyManager, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e066e9901a97bd5b72815a7af472247ef519ecb9
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312367"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>Luo online-kanava ja määritä kanavamääritteet
 
@@ -60,5 +60,4 @@ Tässä menettelyssä kerrotaan, miten uusi online-kanava luodaan ja lisätään
 9. Valitse Julkaise, jolloin valintaikkuna avautuu.
 10. Syötä päivämäärä ja kellonaika Voimaantulopäivä-kenttään.
 11. Valitse Julkaise.
-
 

@@ -1,33 +1,32 @@
 ---
-title: "Palkanlaskennan Talent and Dayforce -integroinnin määrittäminen"
-description: "Tässä ohjeaiheessa kerrotaan, että kuinka konfiguroida integrointeja Microsoft Dynamics 365 for Talentin ja Ceridian Dayforcen välillä voidaksesi käsitellä palkka-ajoa."
+title: Palkanlaskennan Talent and Dayforce -integroinnin määrittäminen
+description: Tässä ohjeaiheessa kerrotaan, että kuinka konfiguroida integrointeja Microsoft Dynamics 365 for Talentin ja Ceridian Dayforcen välillä voidaksesi käsitellä palkka-ajoa.
 author: jcart1106
 manager: AnnBe
 ms.date: 07/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.search.validFrom: ''
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: fcddf82cffb9f0ba94b83eb21809b810585ebc9e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304183"
 ---
-
-# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Palkanlaskennan Talent and Dayforce -integroinnin määrittäminen
+# <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365:n ja Ceridian Dayforcen välinen integrointi käyttää useita konfiguraation vaiheita, jotka on kuvattu tässä ohjeaiheessa. Sekä Talentin että Dayforcen integrointi on määritettävä ennen kuin voit käsitellä palkka-ajoa.
+Microsoft Dynamics 365 for Talentin ja Ceridian Dayforcen välinen integrointi käyttää useita konfiguraation vaiheita, jotka on kuvattu tässä ohjeaiheessa. Sekä Talentin että Dayforcen integrointi on määritettävä ennen kuin voit käsitellä palkka-ajoa.
 
 Käytettäessä jotakin palvelua, kuten Dayforcea palkka-ajojen suorittamiseen, on otettava käyttöön integrointi Talentissa. Integrointi edellyttää tiettyjä tietoja Talentista. Sinun on varmistettava, että Dayforceen yhdistetyt tiedot on konfiguroitu Talentissa siten, että ne tukevat integrointia. Integraatio käyttää seuraavanlaisia laajoja tietoryhmiä:
 
@@ -662,4 +661,3 @@ Työntekijät voivat ilmoittaa passin tiedot. Tämä tietoa on **Passi**-tunnust
 - Vanhentumispäivä
 
 Työntekijät voi määrittää useita tunnistenumeroita **Passi**-tunnuksesta. Vain nykyiset aktiiviset passitapahtumat integroidaan Dayforceen. Mikäli kaikki passitapahtumat ovat vanhentuneet, passi, joka on viimeksi myönnetty on integroitu Dayforceen.
-

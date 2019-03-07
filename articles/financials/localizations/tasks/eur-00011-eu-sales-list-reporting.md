@@ -1,13 +1,13 @@
---- 
-title: "EUR-00011 EU-myyntiluetteloraportoinnin määrittäminen"
-description: "Tässä tehtävässä käsitellään yleisesti EU-myyntiluettelon raportoinnin edellytyksiä."
+---
+title: EUR-00011 EU-myyntiluetteloraportoinnin määrittäminen
+description: Tässä tehtävässä käsitellään yleisesti EU-myyntiluettelon raportoinnin edellytyksiä.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, SysQueryForm, SysQueryFieldLookUp,  TaxTable, TaxGroup, TaxItemGroup, TaxCountryRegionParameters, TaxVATNumTable, IntrastatParameters, CustTable, DirPartyQuickCreateForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: aef1d19aabb7937fcd961a9657b8ca65c064b0b1
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370598"
 ---
 # <a name="eur-00011-set-up-eu-sales-list-reporting"></a>EUR-00011 EU-myyntiluetteloraportoinnin määrittäminen
 
@@ -128,5 +128,4 @@ Nämä tehtävät on tarkoitettu järjestelmänvalvojille.
 7. Valitse ALV-tunnus-kentässä PT12345.
 8. Kirjoita Maa/alue-kenttään PRT.
 9. Valitse Tallenna.
-
 

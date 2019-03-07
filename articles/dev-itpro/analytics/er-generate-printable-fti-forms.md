@@ -1,13 +1,13 @@
 ---
 title: Luo tulostettavia FTI-lomakkeita
-description: "Tässä ohjeaiheessa käsitellään miten käyttää sähköisen raportoinnin (ER) runkoa luodakseen tulostettavan vapaatekstilaskun (FTI) lomakkeita Microsoft Office-asiakirjoina."
+description: Tässä ohjeaiheessa käsitellään, miten sähköisen raportoinnin (ER) runkoa käsitellään siten, että tulostettavan vapaatekstilaskun (FTI) lomakkeita luodaan Microsoft Office -asiakirjoina.
 author: NickSelin
 manager: AnnBe
 ms.date: 07/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: d27a11a0d925b0f1164578f9c04e6abd4736b2b2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325523"
 ---
-
-# <a name="generate-printable-fti-forms"></a>Luo tulostettavia FTI-lomakkeita
+# <a name="generate-printable-fti-forms"></a>Tulostettavien FTI-lomakkeiden luominen
 
 [!include[banner](../includes/banner.md)]
 
-Sähköisen raportoinnin (ER) runko sallii sinun luoda tulostettavan vapaatekstilaskun (FTI) lomakkeita Microsoft Office-asiakirjoina. Tässä aiheessa on tietoja siitä, miten voit luoda omia konfiguraatioita sekä tietoja käytettävissä olevien kokoonpanomallien yksityiskohdista.
+Sähköisen raportoinnin (ER) runko sallii sinun luoda tulostettavan vapaatekstilaskun (FTI) lomakkeita Microsoft Office -asiakirjoina. Tässä aiheessa on tietoja siitä, miten voit luoda omia konfiguraatioita sekä tietoja käytettävissä olevien kokoonpanomallien yksityiskohdista.
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -211,19 +210,18 @@ Jos organisaation sähköpostimalli on ennalta määritetty **ERFTITMP** ID-tunn
 
 ![Lataa sähköpostimalli](media/FTIbyGER-EmailTemplateBody.png)
 
-**Emailing.TxtToUse.Subject** -näytteen ER-muotoinen ER-lauseke on määritetty korvaamaan paikkamerkin% 1 mahdolliset esiintymät käsittelylaskun tunnuksella.
+**Emailing.TxtToUse.Subject**-näytteen ER-muotoinen ER-lauseke on määritetty korvaamaan paikkamerkin %1 mahdolliset esiintymät käsittelylaskun tunnuksella.
 
 **Emailing.TxtToUse.Body** näyteformaatin lauseke on määritetty paikanvaraajille seuraaville korvauksille:
 
-- ”%1” korvataan asiakkaan yhteyshenkilön nimellä.
-- ”%2” korvataan yrityksen nimellä.
-- ”%3” korvataan asiakkaan nimellä.
-- ”%4” korvataan yrityksen yhteyshenkilön nimellä.
-- ”%5” korvataan yrityksen yhteyshenkilön tittelillä.
-- ”%6” korvataan yrityksen yhteyshenkilön sähköpostiosoitteella.
+- %1 korvataan asiakkaan yhteyshenkilön nimellä.
+- %2 korvataan yrityksen nimellä.
+- %3 korvataan asiakkaan nimellä.
+- %4 korvataan yrityksen yhteyshenkilön nimellä.
+- %5 korvataan yrityksen yhteyshenkilön tittelillä.
+- %6 korvataan yrityksen yhteyshenkilön sähköpostiosoitteella.
 
 ![Sähköposti](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
-

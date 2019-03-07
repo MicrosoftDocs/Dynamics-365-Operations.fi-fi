@@ -1,32 +1,30 @@
 ---
-title: "Ylläpitosopimuksen myyntihintojen päivittäminen ja indeksoiminen"
-description: "Ylläpitosopimuksen myyntihintojen päivittäminen ja indeksoiminen"
+title: Ylläpitosopimuksen myyntihintojen päivittäminen ja indeksoiminen
+description: Ylläpitosopimuksen myyntihintojen päivittäminen ja indeksoiminen
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMASubscriptionTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7e89f59a68181a1bfe7a3c698191677d079eb31e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3bc8c4a95e27d2eb54f8e28d76d02140ecaca8f7
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312160"
 ---
-
-
 # <a name="update-and-index-subscription-sales-prices"></a>Ylläpitosopimuksen myyntihintojen päivittäminen ja indeksoiminen 
 
 [!include [banner](../includes/banner.md)]
@@ -55,6 +53,5 @@ Ylläpitosopimuksen perushinta tai indeksi päivitetään halutulla arvolla.
 [Ylläpitosopimuksen indeksoiminen (luokkalomake)](https://technet.microsoft.com/en-us/library/aa558579\(v=ax.60\))
 
   
-
 
 

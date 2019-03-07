@@ -1,14 +1,14 @@
 ---
-title: "Sähköpostimallit"
-description: "Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 for Talent - Attractissa luotavista ja käytettävistä sähköpostimalleista."
+title: Sähköpostimallit
+description: Tässä ohjeaiheessa on tietoja Dynamics 365 for Talent - Attractissa luotavista ja käytettävistä sähköpostimalleista.
 author: josaw
 manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304253"
 ---
-
 # <a name="email-templates"></a>Sähköpostimallit
 [!include[banner](../includes/banner.md)]
 
@@ -36,7 +35,7 @@ Järjestelmänvalvojat voivat luoda sähköpostimallikirjaston avulla kaikille y
 
 ## <a name="global-template-configurations"></a>Yleiset mallimääritykset
 
-Jos järjestelmänvalvoja haluaa luoda yhtenäisen brändin kaikelle sähköpostiviestinnälle, hänen on ensin määritettävä yleinen ylä- ja alatunniste kaikille sähköpostimalleille. Järjestelmänvalvoja voi ladata hallintakeskuksen **Sähköpostimallin asetukset** -välilehden **Ylätunniste**-osassa kuvan, jota käytetään kaikkien sähköpostiviestin ylätunnisteena tai bannerina. Kuva voi olla yrityksen logo, lomakelogo tai muu soveltuva kuva. Kuvan suositeltu leveys on 25–800 kuvapistettä ja korkeus 25–150 kuvapistettä, koska nämä mitat soveltuvat parhaiten useimpiin sähköpostiohjelmiin, kuten Microsoft Outlookiin. Kuvan on oltava JPEG-, JPG-, PNG- tai SVG-tiedosto ja tiedoston koon on oltava alle 1 Mt. Kun kuva ladattu, ylätunnisteesta muodostuva esikatselu näytetään. Jos ylätunnisteen kuva poistettava tai vaihdettava, järjestelmänvalvoja voi tehdä sen esikatselun yläpuolella olevalla **Poista**-asetuksella.
+Jos järjestelmänvalvoja haluaa luoda yhtenäisen brändin kaikelle sähköpostiviestinnälle, hänen on ensin määritettävä yleinen ylä- ja alatunniste kaikille sähköpostimalleille. Järjestelmänvalvoja voi ladata hallintakeskuksen **Sähköpostimallin asetukset** -välilehden **Ylätunniste**-osassa kuvan, jota käytetään kaikkien sähköpostiviestin ylätunnisteena tai bannerina. Kuva voi olla yrityksen logo, lomakelogo tai muu soveltuva kuva. Kuvan suositeltu leveys on 25–800 kuvapistettä ja korkeus 25–150 kuvapistettä, koska nämä mitat soveltuvat parhaiten useimpiin sähköpostiohjelmiin, kuten Microsoft Microsoft Outlookiin. Kuvan on oltava JPEG-, JPG-, PNG- tai SVG-tiedosto ja tiedoston koon on oltava alle 1 Mt. Kun kuva ladattu, ylätunnisteesta muodostuva esikatselu näytetään. Jos ylätunnisteen kuva poistettava tai vaihdettava, järjestelmänvalvoja voi tehdä sen esikatselun yläpuolella olevalla **Poista**-asetuksella.
 
 Järjestelmänvalvoja voi lisätä **Alatunniste**-osaan linkit yrityksen viestinnässä käyttämään tietosuojakäytäntöön ja käyttöehtoihin. Nämä linkit sisältyvät automaattisesti muodostettavaan alatunnisteeseen. Alatunnisteen esikatselu avautuu.
 
@@ -81,4 +80,3 @@ Kun työhönottoryhmä lähettää sähköpostiviestin, se voi käyttää järje
 
 > [!NOTE] 
 > Automaattisesti lähetettäville sähköpostiviesteille voidaan luoda useita malleja. Kuitenkin vain yksi malli voidaan määrittää aktiiviseksi malliksi. Koska tapahtumat käynnistävät tämän prosessin, vain järjestelmänvalvoja voi määrittää käytettävän mallin mallikirjaston **Oletus**- ja **Automaattilähetys**-merkintäyhdistelmän perusteella.
-

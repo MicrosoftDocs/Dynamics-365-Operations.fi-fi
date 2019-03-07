@@ -1,13 +1,13 @@
 ---
-title: "Jatketun sisäänkirjautumisen määrittäminen Retail Modern POS:ille (MPOS) ja Cloud POS:ille"
-description: "Tässä aiheessa käsitellään Cloud POS:n ja Retail Modern POS:n (MPOS) laajennetun kirjautumisen määrittämistä."
+title: Jatketun sisäänkirjautumisen määrittäminen Retail Modern POS:ille (MPOS) ja Cloud POS:ille
+description: Tässä aiheessa käsitellään Cloud POS:n ja Retail Modern POS:n (MPOS) laajennetun kirjautumisen määrittämistä.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: c5771146723b791eb0b3eb5f571ef012cfaadcb9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 4e3f8042871e5e423b559bb0e0dae0006af00194
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317910"
 ---
-
-# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Jatketun sisäänkirjautumisen määrittäminen Retail Modern POS:ille (MPOS) ja Cloud POS:ille
+# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Laajennetun MPOS- ja pilvimyyntipistekirjautumisen määrittäminen
 
 [!include [banner](includes/banner.md)]
 
@@ -68,4 +67,3 @@ Kirjautumispalvelua voidaan laajentaa niin, että ne tukevat laajennettuja kirja
 ## <a name="using-extended-logon"></a>Jatketun sisäänkirjautumisen käyttäminen
 
 Kun jatkettu sisäänkirjautuminen on määritetty ja työntekijälle on määritetty viivakoodi tai magneettinauha, työntekijän tarvitsee vain lukea tai skannata korttinsa myyntipisteen kirjautumissivulla. Jos tarvitaan myös salasana ennen kuin kirjautuminen voi jatkua, työntekijää kehotetaan syöttämään salasanansa.
-

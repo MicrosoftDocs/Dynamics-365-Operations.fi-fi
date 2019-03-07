@@ -1,13 +1,13 @@
 ---
-title: "Luottokorttitapahtumien tuonti ja ylläpito"
-description: "Tässä ohjeaiheessa kerrotaan, miten kuluihin liittyviä luottokorttitapahtumia tuodaan ja ylläpidetään. Nämä tapahtumat voidaan määrittää niin, että ne tuodaan automaattisesti aikataulun mukaan, tai ne voidaan tuoda manuaalisesti tarvittaessa."
+title: Luottokorttitapahtumien tuonti ja ylläpito
+description: Tässä ohjeaiheessa kerrotaan, miten kuluihin liittyviä luottokorttitapahtumia tuodaan ja ylläpidetään. Nämä tapahtumat voidaan määrittää niin, että ne tuodaan automaattisesti aikataulun mukaan, tai ne voidaan tuoda manuaalisesti tarvittaessa.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPbsMainDataLines
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 9674cf495b7fdd40d8672580b9d10e9ebe626bb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e640c9e44add5599be4a2e381b4ffd81f212889c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322648"
 ---
-
 # <a name="import-and-maintain-credit-card-transactions"></a>Luottokorttitapahtumien tuonti ja ylläpito
 
 [!include [banner](../includes/banner.md)]
@@ -53,4 +52,3 @@ Lisätietoja tietoyksiköistä on kohdassa [Tietoyksiköt](../../dev-itpro/data-
 Kun työntekijän tietue poistetaan, kyseisen työntekijän Active Directory -hakemistopalvelun (AD DS) tilin käyttö estetään. Työntekijällä voi kuitenkin olla aktiivisia luottokorttitapahtumia, joiden kulut on kirjattava ja korvattava. Voit käyttää **Luottokorttitapahtumat**-sivua ja määrittää työntekijälle minkä tahansa luottokorttitapahtuman, vaikka työntekijä on poistettu.
 
 Valitse vähintään yksi luottokorttitapahtuma ja valitse sitten **Määritä tapahtumat uudelleen**. Valitse sitten toinen työntekijä, jolle luottokorttitapahtuma määritetään. Kun olet siirtänyt luottokorttitapahtuman, ne voidaan valita kuluraporttiin ja maksaa kuluraportin hyväksynnän normaalimenettelyn kautta.
-

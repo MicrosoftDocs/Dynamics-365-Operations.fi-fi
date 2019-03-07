@@ -1,13 +1,13 @@
 ---
-title: "Oppimisen Power BI -sisältö"
-description: "Tässä ohjeaiheessa käsitellään oppimisen Power BI -sisältöä."
+title: Oppimisen Power BI -sisältö
+description: Tässä ohjeaiheessa käsitellään oppimisen Power BI -sisältöä.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a4ea4606f9987bc08565d43a1f05243acf88883c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ee0cc2e22609d1a87e7d2b6dcd031606191f879
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321452"
 ---
-
 # <a name="learning-power-bi-content"></a>Oppimisen Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Power BI -sisällön **oppimista**.
+Tässä ohjeaiheessa käsitellään **oppimisen** Microsoft Power BI -sisältöä.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raportit, jotka sisältyvät Power BI -sisältöön
 
@@ -36,14 +35,14 @@ Tässä ohjeaiheessa käsitellään Microsoft Power BI -sisällön **oppimista**
 | Raportti                | Sisältö |
 |-----------------------|----------|
 | Oppimisen yleiskuvaus     | Muiden raporttien yhteenveto |
-| Kurssien analysointi       | Rekisteröinti sijainnin mukaan, osallistuja tilan mukaan, kurssit yrityksittäin tyypin mukaan ja kurssin osallistuminen työn mukaan |
+| Kurssien analysointi       | Rekisteröinti sijainnin mukaan, osallistuja tilan mukaan, kurssit yrityksittäin tyypin mukaan ja kurssin osallistuminen työn mukaan |
 | Rekisteröinnin analyysi | Rekisteröintiluettelo |
 | Kurssityypit          | Kurssityypit osaamisalueittain |
 | Opettaja-analyysi   | Kurssien ja ohjaajien suhde, opettajien määrä, kurssit opettajan mukaan, opettajakohtaiset kurssit ja kurssin työjärjestys opettajan mukaan |
 | Tarjotut kurssit       | Kurssiluettelo |
 | Kurssien rakenne        | Kurssin työjärjestys |
 
-Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI:ssä on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
@@ -64,4 +63,3 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 | Sijainti         | Toimi, nimike ja kokopäiväistä vastaavat (FTE)                  | Kurssin työjärjestys, kurssin osallistujat |
 | Työntekijän nimi    | Etunimi , sukunimi ja koko nimi                             | Kurssin osallistujat |
 | Työntekijän nimike   | Nimike ja virkaikä                                         | Kurssin osallistujat |
-

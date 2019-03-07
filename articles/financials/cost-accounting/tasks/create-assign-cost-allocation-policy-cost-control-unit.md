@@ -1,13 +1,13 @@
---- 
-title: "Luo ja määritä kustannusten kohdistuksen käytäntö kustannusten hallinnan yksikköön"
-description: "Tämän menettelyn avulla luodaan ja delegoidaan kustannusten kohdistuskäytäntö ja kustannusseurantayksikön vastaavat säännöt."
+---
+title: Luo ja määritä kustannusten kohdistuksen käytäntö kustannusten hallinnan yksikköön
+description: Tämän menettelyn avulla luodaan ja delegoidaan kustannusten kohdistuskäytäntö ja kustannusseurantayksikön vastaavat säännöt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/28/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 92f41eb99b84bbc596e79b413971f9d92f2555b6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 491d8292b7c951be930d2858362c8107caaa76ff
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324396"
 ---
 # <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a>Luo ja määritä kustannusten kohdistuksen käytäntö kustannusten hallinnan yksikköön
 
@@ -65,5 +65,4 @@ Tämän menettelyn avulla luodaan ja delegoidaan kustannusten kohdistuskäytänt
     * Säännöillä on voimaantulopäivämäärä. Käyttäjä tai järjestelmä voi määrittää säännöt vanhentuneeksi, jos säännöistä luodaan uusi versio.  
 5. Anna tai valitse arvo Kustannusseurantayksikkö-kenttään.
 6. Valitse Tallenna.
-
 

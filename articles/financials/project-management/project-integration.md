@@ -1,13 +1,13 @@
 ---
 title: Microsoft Project -asiakasintegrointi
-description: "Projektin aikataulun suunnittelu ja ylläpito voi olla monimutkaista, joten projektipäälliköt tarvitsevat työkaluja tämän tehtävän hallitsemiseen. Integrointi Microsoft Project -asiakkaan kanssa tukee projektityörakenteen avaamista ja hallintaa."
+description: Projektin aikataulun suunnittelu ja ylläpito voi olla monimutkaista, joten projektipäälliköt tarvitsevat työkaluja tämän tehtävän hallitsemiseen. Integrointi Microsoft Project -asiakkaan kanssa tukee projektityörakenteen avaamista ja hallintaa.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWbsTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,15 +17,14 @@ ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-04
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 48feb0182c623714b2acffafc42016c0471ba6c1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a3445417d5ae88e2ff3676962a82921a7ab475d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317473"
 ---
-
 # <a name="microsoft-project-client-integration"></a>Microsoft Project -asiakasintegrointi
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 03/26/2018
 Projektin aikataulun suunnittelu ja ylläpito voi olla monimutkaista, joten projektipäälliköt tarvitsevat työkaluja tämän tehtävän hallitsemiseen. Integrointi Microsoft Project -asiakkaan kanssa tukee projektityörakenteen avaamista ja hallintaa. Projektipäällikkö voi julkaista muutokset takaisin Finance and Operationsin projektityörakenteeseen.
 
 > [!NOTE]
-> Jos käytössä on Microsoft Dynamics 365 for Finance and Operations -sovelluksen heinäkuun 2017 päivitys, KB 4054797 ja 4055884 on asennettava.
+> Jos käytössä on Microsoft Dynamics 365 for Finance and Operationsin heinäkuun päivitys, KB 4054797 ja 4055884 on asennettava.
 
 ## <a name="configure-the-microsoft-project-client-add-in"></a>Microsoft Project -asiakkaan lisäosan määrittäminen
 Microsoft Project -asiakkaan integrointi edellyttää Microsoft Dynamics 365 -lisäosan asentamista käyttäjän Microsoft Project -asiakassovellukseen. Asennus tehdään avaamalla **Projektinhallinta-työtila**.
@@ -128,4 +127,3 @@ Voit luoda uuden työrakenteen käyttämällä Microsoft Project -asiakasta ja k
 8.  Valitse resursoinnissa käytettävä **kalenteri**.
 
 11. Napsauta **OK**.
-

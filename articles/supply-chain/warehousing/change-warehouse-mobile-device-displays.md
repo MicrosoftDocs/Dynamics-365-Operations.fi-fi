@@ -1,13 +1,13 @@
 ---
-title: "Varaston mobiililaitteen näyttöasetukset"
-description: "Tässä artikkelissa kuvataan mobiililaitteen näytön ulkoasun määrittämistä ja kuinka pikanäppäimet yhdistetään ohjaimiin, kuten painikkeisiin."
+title: Varaston mobiililaitteen näyttöasetukset
+description: Tässä artikkelissa kuvataan mobiililaitteen näytön ulkoasun määrittämistä ja kuinka pikanäppäimet yhdistetään ohjaimiin, kuten painikkeisiin.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16f332da00d2230ecb4cebc526b6456314564e55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328030"
 ---
-
 # <a name="warehouse-mobile-device-display-settings"></a>Varaston mobiililaitteen näyttöasetukset
 
 [!include [banner](../includes/banner.md)]
@@ -101,7 +100,6 @@ Voit määrittää useampia kuin yhden lausekkeen samassa tiedostossa. Jokaisen 
 --------
 
 [Varastotyön mobiililaitteiden konfigurointi](configure-mobile-devices-warehouse.md)
-
 
 
 

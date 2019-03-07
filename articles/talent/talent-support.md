@@ -1,13 +1,13 @@
 ---
-title: Talent-tuen saanti
-description: "Tässä ohjeaiheessa selitetään, miten saat apua Dynamics 365 for Talentin käyttöön."
+title: Talent-tuen saaminen
+description: Tässä ohjeaiheessa kerrotaan, miten saat Dynamics 365 for Talentia koskevaa apua.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 1bf37d65cd8ce6a98fc2d2fb11ae9587cf6958a3
 ms.openlocfilehash: 9b2d7159b458b6f3b2cbb3271210c10ab486f496
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304285"
 ---
-
-# <a name="get-support-for-talent"></a>Talent-tuen saanti
+# <a name="get-support-for-talent"></a>Talent-tuen saaminen
 
 [!include [banner](includes/banner.md)]
 
@@ -55,4 +54,3 @@ Voit saada Attract- ja Onboard-tukea käyttämällä seuraavan taulukon resursse
 | Ilmoita ongelmasta                                                        | Valitse **?** -kuvake valikossa ja valitse vaihtoehdot ongelmasta ilmoittamiseksi. Kirjoita ongelma kuvaukseen ja sisällytä sähköpostiosoite, jos haluat seurata ilmoitettua ongelmaa.                                                                                           |
 | Vastauksia kysymyksiin Talent-lisensoinnista                         | Ota yhteyttä kumppaniin tai Microsoftin myyntiedustajan.                                                                                                                                                                                                                                        |
 | Uusien ominaisuuksien ja toimintojen pyytäminen Attractissa ja Onboardissa | Napsauta **?** -kuvaketta ja valitse **Ideat** tai käytä seuraavia linkkejä uusien ideoiden tarkastelemiseen, hakemiseen, äänestämiseen tai lisäämiseen: [Attract](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract) tai [Onboard](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard). |
-

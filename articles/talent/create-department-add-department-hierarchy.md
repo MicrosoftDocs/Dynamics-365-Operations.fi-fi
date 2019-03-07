@@ -1,13 +1,13 @@
 ---
-title: "Osastojen luominen ja sisällyttäminen osastohierarkiaan"
-description: "Osasto on toimintayksikkö, joka vastaa organisaation luokkaa tai liiketoiminta-aluetta. Osasto on vastuussa määrätystä organisaation alueesta, kuten myynnistä, kirjanpidosta tai henkilöstöhallinnosta. Voit käyttää osastoja toiminnallisia alueita koskevaan raportointiin. Osastot voivat olla tulosvastuullisia."
+title: Osastojen luominen ja sisällyttäminen osastohierarkiaan
+description: Osasto on toimintayksikkö, joka vastaa organisaation luokkaa tai liiketoiminta-aluetta. Osasto on vastuussa määrätystä organisaation alueesta, kuten myynnistä, kirjanpidosta tai henkilöstöhallinnosta. Voit käyttää osastoja toiminnallisia alueita koskevaan raportointiin. Osastot voivat olla tulosvastuullisia.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HierarchyDesigner, OMOperatingUnit
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: 14e0acb2ea16641eecb81bcf23c8b7d778b2b208
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304194"
 ---
-
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Osastojen luominen ja sisällyttäminen osastohierarkiaan
 
 [!include [banner](includes/banner.md)]
@@ -57,4 +56,3 @@ Voit lisätä osaston osastohierarkiaan seuraavasti:
 
 ## <a name="steps-for-creating-a-department"></a>Osaston luontiohjeet
 Uuden osaston luomisen vaiheittaiset ohjeet löytyvät [Uusien osastojen määrittäminen](../fin-and-ops/hr/tasks/define-new-departments.md) -ohjeaiheessa 
-

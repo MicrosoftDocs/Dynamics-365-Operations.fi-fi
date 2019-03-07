@@ -1,13 +1,13 @@
---- 
-title: "EUR-00002 Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle"
-description: "Tässä toimintaohjeessa kuvataan, miten määrität kuormausosoitteen yhteisönsisäiselle kauppatapahtumalle."
+---
+title: EUR-00002 Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle
+description: Tässä toimintaohjeessa kuvataan, miten määrität kuormausosoitteen yhteisönsisäiselle kauppatapahtumalle.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, TransportationDocument, LogisticsPostalAddress, SysLookupMultiSelectGrid,  VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,19 +16,19 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4db22444bee1590770a47ca5946941b530ae85ce
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370605"
 ---
 # <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a>EUR-00002 Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Tässä toimintaohjeessa kuvataan, miten määrität kuormausosoitteen yhteisönsisäiselle kauppatapahtumalle. Esimerkkinä saksalainen yritys tilaa nimikkeitä toimittajalta, jolla on saksalainen osoite. Toimittajalla on varasto Italiassa ja toimittaa nimikkeet sieltä. Tämä toimitus on raportoitava Intrastatiin. Sama menettely koskee asiakaspalautuksia.
-Tämä menettely koskee kaikkia Euroopan maita/alueita. Tämä tehtävä luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Saksassa. Intrastat-raportointi on määritettävä ennen tämän menettelyn suorittamista. Menettely on tarkoitettu kirjanpitäjille. Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.
+Tämä menettely koskee kaikkia Euroopan maita/alueita. Tämä tehtävä luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Saksassa. Intrastat-raportointi on määritettävä ennen tämän menettelyn suorittamista. Menettely on tarkoitettu kirjanpitäjille. Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.
 
 1. Valitse Ostoreskontra > Ostotilaukset > Kaikki ostotilaukset.
 2. Valitse Uusi.
@@ -72,5 +72,4 @@ Tämä menettely koskee kaikkia Euroopan maita/alueita. Tämä tehtävä luotiin
 36. Valitse OK.
 37. Valitse Yleiset-välilehti.
     * Etsi juuri luotu rivi ja varmista, että lähettäjä toimitti tavarat Italiasta.  
-
 

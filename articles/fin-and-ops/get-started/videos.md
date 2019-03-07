@@ -1,31 +1,30 @@
 ---
 title: Videoita Finance and Operations -palveluille
-description: "Tällä sivulla on lueteltu Microsoftin luomat toimintaohjeita ja teknisiä keskusteluja sisältävät Dynamics 365 for Finance and Operations -videot, jotka ovat saatavilla YouTubessa ja muissa sivustoissa."
+description: Tällä sivulla on lueteltu Microsoftin luomat toimintaohjeita ja teknisiä keskusteluja sisältävät Dynamics 365 for Finance and Operations -videot, jotka ovat saatavilla YouTubessa ja muissa sivustoissa.
 author: josaw1
 manager: AnnBe
 ms.date: 05/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
+ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 7f1fb4d2094076de62873148212c76ae6812d6a2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/17/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317818"
 ---
-
-# <a name="videos-for-finance-and-operations"></a>Videoita Finance and Operations -palveluille
+# <a name="videos-for-finance-and-operations"></a>Finance and Operations -videot
 
 [!include [banner](../includes/banner.md)]
 
@@ -85,18 +84,18 @@ Videot on listattu ominaisuuksien mukaan, joten selaa alaspäin nähdäksesi kai
 - [Lifecycle Servicesin metodologiat](https://www.youtube.com/watch?v=YRMJ15DvgZ8)
 - [Dynamics 365 for Finance and Operations -tuotantoympäristön pyytäminen](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
 - [Tietojen päivittäminen tuotantoympäristössä](https://www.youtube.com/watch?v=VCd5SgkYPTw)
-- [Uuden Dynamics 365 for Finance and Operations -alustan käyttö alustapäivityksen 3 julkaisun jälkeen](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
+- [Uuden Dynamics 365 for Finance and Operations -ympäristön käyttö Platform update 3:n jälkeen](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Telemetrian käyttö suorituskykymittarien seuraamiseksi Dynamics Lifecycle Servicesissä](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
 
 #### <a name="office-integration"></a>Office-integraatio
 
-- [Excel-mallin luonti otsikko- ja rivimalleja varten Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+- [Excel-mallin luominen otsikko- ja rivimalleja varten Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 
 #### <a name="organization-administration"></a>Organisaation hallinto
 
 - [Tiedoston hallinta](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
 
-#### <a name="procurement-and-sourcing"></a>Osto ja hankinta
+#### <a name="procurement-and-sourcing"></a>Hankinta
 
 - [Ostotilausten hyväksyminen mobiililaitteella](https://youtu.be/gZ-gOlJe7H8)
 - [Uuden toimittajan perehdytys](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
@@ -134,7 +133,7 @@ Videot on listattu ominaisuuksien mukaan, joten selaa alaspäin nähdäksesi kai
 
 - [Paikallinen käyttöönotto (DYN382PAL2)](https://infopedia.eventbuilder.com/event?eventid=m9i7a2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
-#### <a name="develop-and-customize"></a>Kehitys ja muokkaus
+#### <a name="develop-and-customize"></a>Kehitä ja mukauta
 
 - [Azure-integrointityökalut Dynamics 365 for Finance and Operationsia varten (DYN386PAL)](https://infopedia.eventbuilder.com/event?eventid=l7f2i9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Laajennettavuus (DYN384PAL2)](https://infopedia.eventbuilder.com/event?eventid=e0x4q5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
@@ -142,16 +141,16 @@ Videot on listattu ominaisuuksien mukaan, joten selaa alaspäin nähdäksesi kai
 - [Suorituskyvyn testaaminen (DYN449PAL2)](https://infopedia.eventbuilder.com/event?eventid=k6c6g9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Suorituskyvyn testaaminen (DYN449PAL)](https://infopedia.eventbuilder.com/event?eventid=i1u5m9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
-#### <a name="financial-reporting"></a>Taloushallinnon raportointi
+#### <a name="financial-reporting"></a>Taloushallinnan raportointi
 
 - [Talousraportointi (DYN305PAL)](https://infopedia.eventbuilder.com/event?eventid=s0d0n3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) 
-- [Raportointivaihtoehdot Dynamics 365 for Finance and Operationsissa (VIR810PAL)](https://infopedia.eventbuilder.com/event?eventid=p8x0s5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Dynamics 365 for Finance and Operationsin raportointivaihtoehdot (VIR810PAL)](https://infopedia.eventbuilder.com/event?eventid=p8x0s5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="integration"></a>Integrointi
 
 - [CDS-tietojen integrointi (DYN451PAL2)](https://infopedia.eventbuilder.com/event?eventid=i8v2n3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integrointi (VIR806PAL)](https://infopedia.eventbuilder.com/event?eventid=y0w0k9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Dynamics 365 for Salesin ja Dynamics 365 for Finance & Operations integrointi CDS:n kautta (DYN340PAL)](https://infopedia.eventbuilder.com/event?eventid=d8s3b6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Dynamics 365 for Salesin ja Dynamics 365 for Finance & Operationsin integrointi CDS:n kautta (DYN340PAL)](https://infopedia.eventbuilder.com/event?eventid=d8s3b6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integroinnin viitekehys Dynamics 365 for Finance & Operationsissa (DYN385PAL)](https://infopedia.eventbuilder.com/event?eventid=y4y2v9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Tehtävän automaation viitekehys Tietojen hallintaa varten (DYN447PAL2)](https://youtu.be/KqnXjNpR4AY)
 
@@ -173,8 +172,8 @@ Videot on listattu ominaisuuksien mukaan, joten selaa alaspäin nähdäksesi kai
 #### <a name="retail"></a>Retail
 
 - [Dynamics 365 for Retail POS -laajennettavuus: syväluotaava katsaus (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Retail-arkkitehtuuri ja vähittäismyymälän vähittäismyyntilaite (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Dynamics 365 for Retail POS -laajennettavuuden uudet ominaisuudet (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Retail-arkkitehtuuri ja Retail Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Dynamics 365 for Retail POS -laajennettavuus: syväluotaava katsaus (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="support"></a>Tuki
 
@@ -196,4 +195,3 @@ Videot on listattu ominaisuuksien mukaan, joten selaa alaspäin nähdäksesi kai
 - [Keräysprosessi kappaleittain (DYN330PAL2)](https://infopedia.eventbuilder.com/event?eventid=u6e0z6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Tuotantotilausten ja kanbanien visuaalinen ajoitus (DYN328PAL)](https://infopedia.eventbuilder.com/event?eventid=h0o0n0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Varaston integrointi tuotannon kanssa (DYN344PAL)](https://infopedia.eventbuilder.com/event?eventid=y8p6o1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) - [Varastoinnin mobiilisovellus (VIR816PAL)](https://infopedia.eventbuilder.com/event?eventid=t8t7l8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-

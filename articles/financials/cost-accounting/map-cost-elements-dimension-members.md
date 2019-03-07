@@ -1,13 +1,13 @@
 ---
-title: "Kustannustasodimension jäsenten yhdistäminen yhteiseen dimension jäsenten joukkoon"
-description: "Yhdistämällä eri kustannustason dimension jäsenet joukoksi kustannustason dimensiojäsenet yhdistät tiedot yleiseen muotoon analyysitarkoituksiin."
+title: Kustannustasodimension jäsenten yhdistäminen yhteiseen dimension jäsenten joukkoon
+description: Yhdistämällä eri kustannustason dimension jäsenet joukoksi kustannustason dimensiojäsenet yhdistät tiedot yleiseen muotoon analyysitarkoituksiin.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e5c9387d74443ec6ca5dc70ad923b67f962181dc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6f2384155a07d17004c640160aee90b1e8bdb9f8
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318140"
 ---
-
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Kustannustasodimension jäsenten yhdistäminen yhteiseen dimension jäsenten joukkoon
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Eri tilikartat,, joita käytetään, voivat määrittää eri valuuttoja. Täss�
 
 ## <a name="update-mappings-at-any-time"></a>Päivitä yhdistämiset koska tahansa
 Voit päivittää yhdistetyt kustannustason dimension määritykset milloin tahansa. Määritykset eivät ole päivämääräpohjaisia, koska muutokset vaikuttavat seuraavan kerran, kun käsittelet kustannustapahtumat tai suorittaa kustannuslaskelman.
-
 
 
 

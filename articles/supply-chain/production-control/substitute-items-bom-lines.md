@@ -1,13 +1,13 @@
 ---
 title: Materiaalien korvaaminen tuotannossa
-description: "Tässä aiheessa kuvataan, miten materiaaleja voi korvata tuotantoprosessin aikana."
+description: Tässä aiheessa kuvataan, miten materiaaleja voi korvata tuotantoprosessin aikana.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdBOM
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461b717acafb5ccf37acae23a1564069cea6828a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3e70a6ad074911438ef45b6aac2523a4a9fccf8
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327616"
 ---
-
 # <a name="material-substitution-in-manufacturing"></a>Materiaalien korvaaminen tuotannossa
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,6 @@ Materiaaleja voi korvata suunnittelun aikana vain käytettäessä kaavoja, ei tu
 
 ## <a name="substituting-material-during-production"></a>Materiaalin korvaaminen tuotannon aikana
 Skenaario: hitsaustyössä tarvitaan metallilevyn palasta. Varastotyöntekijä ilmoittaa työn aikana koneenkäyttäjälle, että levyä ei ole varastossa. Tällöin päätetään, että levy voidaan korvata hieman paksummalla levyllä. Näin työ saadaan valmiiksi. Materiaali voidaan lisätä avoimen tuotantotilauksen tuoterakenteeseen. Jos tuotantotilauksen tila on **Aloitettu**, käyttäjiä pyydetään arvioimaan tilaus uudelleen, kun he lisäävät tuotannon tuoterakenteeseen uuden nimikkeen. Materiaalin lisäämisen jälkeen uudelle nimikkeelle voidaan luoda uusi keräysluettelo. Uutta materiaalia ei tarvitse lisätä tuotannon tuoterakenteeseen. Sen voi sen sijaan lisätä suoraan tuotannon keräysluetteloon. Kun keräysluettelo sitten kirjataan, järjestelmä lisää materiaalin tuotannon tuoterakenteeseen.
-
 
 
 

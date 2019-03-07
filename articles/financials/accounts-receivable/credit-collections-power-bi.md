@@ -1,13 +1,13 @@
 ---
-title: "Luotonvalvonnan hallinta – Power BI -sisältö"
-description: "Tässä ohjeaiheessa kerrotaan, mitä luotonvalvonnan hallinnan Power BI -sisältö sisältää. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
+title: Luotonvalvonnan hallinnan Power BI-sisältö
+description: Tässä ohjeaiheessa kerrotaan, mitä luotonvalvonnan hallinnan Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytettävistä tietomallista ja yksiköistä.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,23 +16,22 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
-ms.openlocfilehash: 3832cabb11d67eda7afd7f3d5322c005b36dc1f5
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325178"
 ---
-
-# <a name="credit-and-collections-management-power-bi-content"></a>Luotonvalvonnan hallinta – Power BI -sisältö
+# <a name="credit-and-collections-management-power-bi-content"></a>Luotonvalvonnan hallinnan Power BI-sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, mitä **Luotonvalvonnan hallinta** – Power BI -sisältö sisältää. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
+Tässä ohjeaiheessa kerrotaan, mitä **luotonvalvonnan hallinnan** Microsoft Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
 ## <a name="overview"></a>Yleiskuvaus
 
-**Luotonvalvonnan hallinta** – Power BI -sisältö luotiin luotonvalvonnan esimiehille ja perimisasiamiehille. Se sisältää keskeiset luotonvalvonnan mittarit, kuten selvittämätön päivämyynti, erääntynyt saldo, luottoriski ja luottorajan ylittävät asiakkaat. Se käyttää tapahtumatietoja ja siinä on kaikkien yritysten luotonvalvonnan koostenäkymät. Siinä on myös yritys-, asiakasryhmä- ja asiakaskohtainen erittely.
+**Luotonvalvonnan hallinnan** Power BI -sisältö luotiin luotonvalvonnan esimiehille ja perimisasiamiehille. Se sisältää keskeiset luotonvalvonnan mittarit, kuten selvittämätön päivämyynti, erääntynyt saldo, luottoriski ja luottorajan ylittävät asiakkaat. Se käyttää tapahtumatietoja ja siinä on kaikkien yritysten luotonvalvonnan koostenäkymät. Siinä on myös yritys-, asiakasryhmä- ja asiakaskohtainen erittely.
 
 Tässä Power BI -sisällössä on 10 raporttisivua:
 
@@ -43,12 +42,12 @@ Kaikki summat näytetään järjestelmän valuuttana. Järjestelmän valuutta m�
 
 Oletusarvoisesti näytetään nykyisen yrityksen luotonvalvonnan tiedot. Voit tarkastella kaikkien yritysten tietoja määrittämällä roolille **CustCollectionsBICrossCompany**-tehtävän.
 
-## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
 **Luotonvalvonnan hallinnan** Power BI -sisältö näkyy **Asiakkaan luotonvalvonta** -työtilassa.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raportit, jotka sisältyvät Power BI -sisältöön
 
-Power BI -sisältö **CustCollectionsBICrossCompany** sisältää raportin, jossa on mittarijoukko. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. Seuraavassa taulukossa on yleiskatsaus visualisoinneista Power BI -sisällössä **CustCollectionsBICrossCompany**.
+Power BI -sisältö **CustCollectionsBICrossCompany** sisältää raportin, jossa on mittarijoukko. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. Seuraavassa taulukossa on yleiskatsaus visualisoinneista **CustCollectionsBICrossCompany** Power BI -sisällössä.
 
 | Raporttisivu                 | Visualisointi |
 |-----------------------------|---------------|
@@ -63,11 +62,11 @@ Power BI -sisältö **CustCollectionsBICrossCompany** sisältää raportin, joss
 | Koron ja maksukehotuksen tila          | <ul><li>Riidanalainen</li><li>Maksulupaus rikottu</li><li>Maksulupaus</li><li>Perinnän tilatiedot</li><li>Perintätilan summat</li><li>Avoimet tapaukset</li><li>Avoimet tehtävät</li></ul> |
 | Maksukehotukset         | <ul><li>Perintäkoodin summat</li><li>Perintäkoodin summan tiedot</li><li>Maksukehotuksen summa yrityksen mukaan</li><li>Maksukehotuksen summa asiakasryhmän mukaan</li><li>Maksukehotuksen summa alueen mukaan</li></ul> |
 
-Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Voit viedä visualisoinnin kokoamat pohjana olevat tiedot pohjana olevien tietojen vientitoiminnolla.
+Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI:ssä on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Voit viedä visualisoinnin kokoamat pohjana olevat tiedot pohjana olevien tietojen vientitoiminnolla.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
-**Luotonvalvonnan hallinta** – Power BI -sisällön raportissa käytetään seuraavia tietoja. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
+**Luotonvalvonnan hallinnan** Power BI -sisällön raportissa käytetään seuraavia tietoja. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on kohdassa [Power BI:n ja yksikkösäilön integroinnin yleiskatsaus](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
 
 
 |                   Kokonaisuus                    |      Tärkeät koostemitat      |             Tietolähde              |                           Kenttä                            |                                    kuvaus                                     |
@@ -88,5 +87,4 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 |        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Luotujen korkolaskujen määrä.                |
 |        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Pidossa olevien myyntitilausten kokonaismäärä.                 |
 |          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Poistettujen tapahtumien summa.                 |
-
 

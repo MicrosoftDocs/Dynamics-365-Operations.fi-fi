@@ -1,13 +1,13 @@
---- 
-title: "Sähköpostimallien hallinta"
-description: "Voit siirtää tietoja organisaation tietokannasta uuden asiakirjan kirjanmerkkeihin ja käyttää sitä malleissa. Tämä tehostaa viestintää hakijoiden ja ehdokkaiden kanssa."
+---
+title: Sähköpostimallien hallinta
+description: Voit siirtää tietoja organisaation tietokannasta uuden asiakirjan kirjanmerkkeihin ja käyttää sitä malleissa. Tämä tehostaa viestintää hakijoiden ja ehdokkaiden kanssa.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMApplicationWordBookmark, HRMApplicationEmailTemplate
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f8eface8fd47378e25c7baeca9a84fa41097dfbe
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eeaf1675b6653ab2c8c04d05ec1bff3cd0bb18d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309607"
 ---
 # <a name="manage-email-templates"></a>Sähköpostimallien hallinta
 
@@ -50,5 +50,4 @@ Voit siirtää tietoja organisaation tietokannasta uuden asiakirjan kirjanmerkke
 8. Jatka sähköpostiviestin kirjoittamista. Lisää kirjanmerkkikenttiä tarvittaessa.
     * Jatka sähköpostiviestin kirjoittamista. Lisää kirjanmerkkikenttiä tarvittaessa.  
 9. Valitse Tallenna.
-
 

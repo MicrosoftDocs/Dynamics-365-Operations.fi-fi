@@ -1,13 +1,13 @@
 ---
 title: Kustannuslaskentalomakkeet
-description: "Kustannuslaskentalomakkeen määrittämiseen liittyy kaksi tavoitetta. Ensimmäinen tavoite on valmistettua tuotetta tai tuotantotilausta koskevien myytyjen tuotteiden kustannustietojen esitysmuodon määrittäminen. Tätä esitysmuotoa kutsutaan kustannuslaskentalomakkeeksi. Toinen tavoite on epäsuorien kustannusten laskemisen perustan määrittäminen. Kustannuslaskennan määritys perustuu kustannusryhmän toimintoon, jota käytetään tietojen esittämisessä ja epäsuorien kustannusten laskentakaavoissa. Tässä artikkelissa kuvataan kustannuslaskentalomakkeen määrityksen kaksi tavoitetta."
+description: Kustannuslaskentalomakkeen määrittämiseen liittyy kaksi tavoitetta. Ensimmäinen tavoite on valmistettua tuotetta tai tuotantotilausta koskevien myytyjen tuotteiden kustannustietojen esitysmuodon määrittäminen. Tätä esitysmuotoa kutsutaan kustannuslaskentalomakkeeksi. Toinen tavoite on epäsuorien kustannusten laskemisen perustan määrittäminen. Kustannuslaskennan määritys perustuu kustannusryhmän toimintoon, jota käytetään tietojen esittämisessä ja epäsuorien kustannusten laskentakaavoissa. Tässä artikkelissa kuvataan kustannuslaskentalomakkeen määrityksen kaksi tavoitetta.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostSheetDesigner
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1421049adb86916202ad6f7ee748c8525fd55fa8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3988bd478cfad791b5d4c73d28a86c9cfb68288f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312758"
 ---
-
 # <a name="costing-sheets"></a>Kustannuslaskentalomakkeet
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Kaksi kustannuslaskelmaversion estokäytäntöä määrittää, voidaanko odotta
 Kun olet määrittänyt kustannuslaskentalomakkeen muodon ja välillisten kustannusten laskelmat, suorita erillinen vaihe tietojen vahvistamiseksi ja tallentamiseksi. Kustannuslaskentalomake on koko yhtiötä koskeva muoto, jossa myytyjen tuotteiden kustannustiedot näkyvät yhtenäisesti. 
 
 Kustannuslaskentalomake näkyy **Laske nimikekustannus** -sivun osana. Kustannuslaskentalomake voidaan näyttää valmistetun nimikkeen laskettujen kustannusten tietueelle **Nimikkeen hinta** -sivulla tai tilauskohtaiselle laskentatietueelle **Tuoterakenteen laskemisen tulokset** -sivulla. Se voidaan näyttää myös tuotantotilauksen **Hinnan laskenta** -sivun osana.
-
 
 
 

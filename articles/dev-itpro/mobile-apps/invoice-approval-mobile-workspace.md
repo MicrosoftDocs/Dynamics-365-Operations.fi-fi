@@ -1,13 +1,13 @@
 ---
-title: "Laskujen hyväksyntöjen mobiilityötila"
-description: "Tässä ohjeaiheessa on tietoja laskujen hyväksyntöjen mobiilityötilasta. Tässä työtilassa on luettelo laskuista, jotka on määritetty sinulle toimittajan laskun otsikon työnkulussa."
+title: Laskujen hyväksyntöjen mobiilityötila
+description: Tässä ohjeaiheessa on tietoja laskujen hyväksyntöjen mobiilityötilasta. Tässä työtilassa on luettelo laskuista, jotka on määritetty sinulle toimittajan laskun otsikon työnkulussa.
 author: abruer
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: ff726670e0fd7566a74e6def73555a7c53b86f97
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6c95c2779d996f489679c8dda4cda462ba0a05ac
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326995"
 ---
-
 # <a name="invoice-approvals-mobile-workspace"></a>Laskujen hyväksyntöjen mobiilityötila
 
 [!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja **laskujen hyväksyntöjen** mobiilityötilasta. Tässä työtilassa on luettelo laskuista, jotka on määritetty sinulle toimittajan laskun otsikon työnkulussa. 
 
-Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
+Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations Mobile -sovelluksella.
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -72,7 +71,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 ## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
 
 1.  Käynnistä sovellus mobiililaitteessa.
-2.  Anna oman Microsoft Dynamics 365:n URL-osoite.
+2.  Anna Microsoft Dynamics 365:n URL-osoite.
 3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
 4.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
 
@@ -88,4 +87,3 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 7.  Voit tarkastella laskuun liitettyjä huomautuksia tai tiedostoja valitsemalla **Liitteet**.
 8.  Viimeistele tarkasteluprosessi valitsemalla **Laskun tiedot** -sivulla soveltuva työkulkutoiminto.
 9.  Valitse **Valmis**.
-

@@ -1,13 +1,13 @@
 ---
-title: "Yrityskohtaisten henkilöstöhallinnon (HR) parametrien määrittäminen"
-description: "Jotkin henkilöstöhallinnon (HR) parametrien asetukset ovat yhteisiä eri yrityksissä, toiset taas yrityskohtaisia. Tässä artikkelissa on selostettu, miten määritetään yrityskohtaisia henkilöstöhallinnon parametreja."
+title: Yrityskohtaisten henkilöstöhallinnon (HR) parametrien määrittäminen
+description: Jotkin henkilöstöhallinnon (HR) parametrien asetukset ovat yhteisiä eri yrityksissä, toiset taas yrityskohtaisia. Tässä artikkelissa on selostettu, miten määritetään yrityskohtaisia henkilöstöhallinnon parametreja.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMParameters
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: f7ecd72a2a6ba4ba15e412e40508462f6ef0d218
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304274"
 ---
-
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Yrityskohtaisten henkilöstöhallinnon (HR) parametrien määrittäminen
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ Jotkin henkilöstöhallinnon (HR) parametrien asetukset ovat yhteisiä eri yrity
 Henkilöstöhallinto (HR)-parametrien määrittämiseen käytetään kahta sivua. Käytä yhtiöiden kesken jaettujen parametrien määrittämiseen **Henkilöstöhallinnon jaetut parametrit** -sivua. Käytä yhtiökohtaisten (ts. asetukset koskevat yhtä yhtiötä) parametrien määrittämiseen **Henkilöstöparametrit**-sivua. **Henkilöstöparametrit**-sivulla asetukset jaetaan kuudelle välilehdelle:
 
 -   Yleiset
--   Rekrytointi - ei sisälly Dynamics 365 for Talentiin
+-   Työhönotto – ei sisälly Dynamics 365 for Talentiin
 -   Kompensaatio
 -   Numerosarjat
 -   Perhe ja sairauspoissaolon säädös (FMLA)
@@ -61,7 +60,6 @@ Kukin välilehti sisältää yksittäistä yhtiötä koskevia tietoja. **Yleinen
 --------
 
 [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](set-up-hr-parameters-across-legal-entities.md)
-
 
 
 

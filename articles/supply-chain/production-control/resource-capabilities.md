@@ -1,13 +1,13 @@
 ---
 title: Resurssin ominaisuudet
-description: "Tässä artikkelissa on tietoja resurssin ominaisuuksista. Toiminto on operatiivisen resurssin kyky suorittaa tietty aktiviteetti. Artikkelissa kerrotaan miten ominaisuuksia ja siihen liittyviä käsitteitä, kuten pätevyystasoa ja prioriteettia, käytetään valittaessa sopivia resursseja tehtävään."
+description: Tässä artikkelissa on tietoja resurssin ominaisuuksista. Toiminto on operatiivisen resurssin kyky suorittaa tietty aktiviteetti. Artikkelissa kerrotaan miten ominaisuuksia ja siihen liittyviä käsitteitä, kuten pätevyystasoa ja prioriteettia, käytetään valittaessa sopivia resursseja tehtävään.
 author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 567b4c5544f2a58801fefb1aa9d4c72815913910
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 533faf78e4cc9a091d64f7c6a0f82d14158710c8
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319290"
 ---
-
 # <a name="resource-capabilities"></a>Resurssin ominaisuudet
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Tässä esimerkissä ajoitusmoduuli voi valita molemmat koneet, koska molemmat t
 
 ## <a name="competencies-for-human-resources"></a>Henkilöresurssien ominaisuudet
 Kun sinulla on **Henkilöresurssi**-tyyppisiä operatiivisia resursseja, jotka on linkitetty työntekijöihin Henkilöstöhallinnossa, voit myös hyödyntää työntekijöiden ominaisuuksia määrittäessäsi tuotantoreitin resurssivaatimuksia. Voit toisin sanoen määrittää tiettyjä osaamisalueita, kursseja, todistuksia tai ammattinimikkeitä koskevia vaatimuksia. Ajoitusmoduuli voi sitten valita työntekijöihin linkitetyt resurssit, ja valinta tapahtuu näiden työntekijöiden ominaisuuksien perusteella. Ominaisuudet määritetään Henkilöstöhallinto-sivulla eikä **Resurssin ominaisuudet** -sivulla. Kun määrität osaamisalueita, kursseja, todistuksia tai ammattinimikkeitä resurssivaatimuksiksi sinun on käytettävä Henkilöstöhallinto-toimintoa ja linkitettävä kukin **Henkilöresurssin** tyyppi vastaavalle työntekijälle. Jos et käytä Henkilöstöhallinto-toimintoa, voit määrittää ominaisuudet **Resurssin ominaisuudet** -sivulla, joka muistuttaa Henkilöstöhallinto-kohdan ominaisuuksia tai kopioi ne. **Resurssin ominaisuudet** -sivu ei kuitenkaan sisällä toimintoa, joka tarvitaan ylläpitämään osaamisalueita, kursseja, todistuksia tai ammattinimikkeitä.
-
 
 
 

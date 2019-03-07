@@ -1,13 +1,13 @@
 ---
-title: "Määritä tietojen tuonti SharePointista"
-description: "Tässä ohjeaiheessa käsitellään tietojen tuominen Microsoft SharePointista."
+title: Tietojen SharePointista tuonnin määrittäminen
+description: Tässä ohjeaiheessa käsitellään tietojen tuominen Microsoft SharePointista.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 060c3dec71e2b953d9341c5b5c89e60925fda34d
 ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331089"
 ---
-# <a name="configure-data-import-from-sharepoint"></a>Määritä tietojen tuonti SharePointista
+# <a name="configure-data-import-from-sharepoint"></a>Tietojen SharePointista tuonnin määrittäminen
 
 [!include[banner](../includes/banner.md)]
 
-Tietojen tuominen saapuvasta tiedostosta käyttämällä sähköisen raportoinnin (ER) kehystä: on määritettävä ER-muoto, joka tukee tuontia, ja sitten suorittaa mallin määritys **Kohteeseen**-tyypille, joka käyttää kyseistä muotoa tietolähteenä. Tietojen tuomiseksi siirry tiedostoon, jonka haluat tuoda. Käyttäjä voi valita manuaalisesti saapuvan tiedoston. Uuden sähköisen raportoinnin ominaisuuden kanssa, joka tukee tietojen tuomista Microsoft SharePointista, tämä prosessi voidaan määrittää automaattiseksi. Voit käyttää ER-määrityksiä suorittaaksesi tietojen tuonnin tiedostoista, jotka on tallennettu Microsoft SharePoint -kansioihin. Tässä ohjeaiheessa kerrotaan, miten voit siimeistellä tuonnin SharePointista Microsoft Dynamics 365 for Finance and Operationsiin. Esimerkissä käytetään toimittajatapahtumia liiketoimintatietoina.
+Tietojen tuominen saapuvasta tiedostosta käyttämällä sähköisen raportoinnin (ER) kehystä: on määritettävä ER-muoto, joka tukee tuontia, ja sitten suorittaa mallin määritys **Kohteeseen**-tyypille, joka käyttää kyseistä muotoa tietolähteenä. Tietojen tuomiseksi siirry tiedostoon, jonka haluat tuoda. Käyttäjä voi valita manuaalisesti saapuvan tiedoston. Uuden sähköisen raportoinnin ominaisuuden kanssa, joka tukee tietojen tuomista Microsoft SharePointista, tämä prosessi voidaan määrittää automaattiseksi. Voit käyttää ER-määrityksiä suorittaaksesi tietojen tuonnin tiedostoista, jotka on tallennettu Microsoft SharePoint -kansioihin. Tässä ohjeaiheessa kerrotaan, miten voit viimeistellä tuonnin SharePointista Microsoft Dynamics 365 for Finance and Operationsiin. Esimerkissä käytetään toimittajatapahtumia liiketoimintatietoina.
 
 ## <a name="prerequisites"></a>Edellytykset
 Tämän aiheen esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksia:
@@ -39,11 +39,11 @@ Tämän aiheen esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksi
     - Sähköisen raportoinnin toiminnallinen konsultti
     - Järjestelmänvalvoja
 
-- Finance and Operations -käyttöön määritetyn Microsoft SharePoint Server -ilmentymän käyttöoikeudet.
+- Finance and Operations -käyttöön määritetyn Microsoft SharePoint Server -esiintymän käyttöoikeudet.
 - Sähköisen raportoinnin (ER) muoto ja mallin määritykset 1099-maksuille.
 
 ### <a name="create-required-er-configurations"></a>Luo tarvittavat ER-konfiguraatiot
-Toista **ER -tuo tiedot Microsoft Excel -tiedostosta** -tehtävoppaat, jotka ovat osa, **7.5.4.3 Acquire/Develop IT service/solution components (10677)** -liiketoimintaprosessia. Näissä tehtäväoppaissa selitetään ER-konfiguraatioiden suunnittelu ja käyttö, jotta voit vuorovaikutteisesti tuoda toimittajatapahtumia Microsoft Excel -tiedostoista. Lisätietoja on kohdassa [Saapuvien asiakirjojen jäsennys Microsoft Excelissä](parse-incoming-documents-excel.md). Kun tehtävän ohjaukset ovat valmiit, määritä seuraavat.
+Toista **ER -tuo tiedot Microsoft Excel -tiedostosta** -tehtäväoppaat, jotka ovat osa, **7.5.4.3 Acquire/Develop IT service/solution components (10677)** -liiketoimintaprosessia. Näissä tehtäväoppaissa selitetään ER-konfiguraatioiden suunnittelu ja käyttö, jotta voit vuorovaikutteisesti tuoda toimittajatapahtumia Microsoft Excel -tiedostoista. Lisätietoja on kohdassa [Saapuvien asiakirjojen jäsennys Microsoft Excelissä](parse-incoming-documents-excel.md). Kun tehtävän ohjaukset ovat valmiit, määritä seuraavat.
 
 #### <a name="er-configurations"></a>ER-määritykset
 
@@ -62,7 +62,7 @@ Toista **ER -tuo tiedot Microsoft Excel -tiedostosta** -tehtävoppaat, jotka ova
 > Toimittajatapahtumien tuonnin muoto valitaan oletusmallimääritykseksi. Siksi, jos suoritat **1099-maksumallin** mallin määrityksen ja tämä mallin määritys on **Kohteeseen**-tyyppiä, mallin määritys suorittaa tätä muotoa, tuodakseen tietoja ulkoisista tiedostoista. Sitten se käyttää näitä tietoja sovellustaulujen päivittämiseen.
 
 ## <a name="configure-access-to-sharepoint-for-file-storage"></a>SharePoint-käytön määrittäminen tiedostojen tallennusta varten
-Jos haluat tallentaa sähköisesti raporttitiedostot SharePoint-sijaintiin, sinun on määritettävä käyttöoikeus nykyisen yrityksen käyttämään SharePoint Server -esiintymään. Tässä esimerkissä yritys on USMF. Lisätietoja on kohdassa [SharePoint-tallennustilan määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+Jos haluat tallentaa sähköiset raporttitiedostot SharePoint-sijaintiin, sinun on määritettävä käyttöoikeus nykyisen yrityksen käyttämään SharePoint Server -esiintymään. Tässä esimerkissä yritys on USMF. Lisätietoja on kohdassa [SharePoint-tallennustilan määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
 1. Suorita kohdan [SharePoint-tallennustilan määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) vaiheet.
 2. Avaa määritetty SharePoint-sivusto.
@@ -158,7 +158,7 @@ Voit myös avata **Tiedostojen tilat lähteitä varten** -sivun valitsemalla **O
 9. Valitse Finance and Operationsissa **Ostoreskontra** \> **Kausittaiset tehtävät** \> **Valmistevero (1099)** \> **Toimittajien tilitykset valmisteveroja (1099) varten**.
 10. Valitse **Päivämäärästä**- ja **Päivämäärään**-kenttiin asianmukaiset arvot. Valitse sitten **Manuaaliset 1099-tapahtumat**.
 
-    Toimittajatapahtumat, jotka tuotiin SharePointin Excel-tiedostoista tositteelle **V-00001**, näytetään sivulla.
+    Sivulla näytetään toimittajatapahtumat, jotka tuotiin SharePointin Excel-tiedostoista tositteelle **V-00001**.
 
     [![Toimittajan 1099-tapahtumat -sivu](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)
 
@@ -192,4 +192,3 @@ Voit myös avata **Tiedostojen tilat lähteitä varten** -sivun valitsemalla **O
 11. Valitse Finance and Operationsin kohdassa **Ostoreskontra** \> **Kausittaiset tehtävät** \> **Valmistevero (1099)** \> **Toimittajien tilitykset valmisteveroja (1099) varten** asianmukaiset arvot **Päivämäärästä**- ja **Päivämäärään**-kenttiin ja valitse sitten **Manuaaliset 1099-tapahtumat**.
 
     Vain tositteen V-00001 tapahtumat ovat käytettävissä. Tositteen V-00002 tapahtumat eivät ole käytettävissä vaikka viimeisen tuodun tapahtuman virhe havaittiin Excel-tiedostossa.
-

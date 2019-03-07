@@ -1,13 +1,13 @@
 ---
-title: "Varastonhallintaprosessien päivittäminen Microsoft Dynamics AX 2012:sta Finance and Operationsiin"
-description: "Tämä aihe on yleiskatsaus tuote- ja varastonhallinnan siirtovaihtoehdoista."
+title: Päivitä varastonhallinnan prosessit Microsoft Dynamics AX 2012:sta Finance and Operationsiin
+description: Tämä aihe on yleiskatsaus tuote- ja varastonhallinnan siirtovaihtoehdoista.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,22 +18,21 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e0ff3a22b89ce22096198d2e1dd1ea9ed10239a9
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324465"
 ---
-
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Varastonhallintaprosessien päivittäminen Microsoft Dynamics AX 2012:sta Finance and Operationsiin
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Päivitä varastonhallinnan prosessit Microsoft Dynamics AX 2012:sta Finance and Operationsiin
 
 
 [!include [banner](../includes/banner.md)]
 
 Tämä ohjeaihe sisältää yhteenvedon Microsoft Dynamics AX 2012 R3:n (jossa WMSII-moduuli) päivittämisestä Microsoft Dynamics 365 for Finance and Operationsiin.
 
-Finance and Operations ei enää tue vanhaa **WMSII** -moduulia, joka on peräisin Microsoft Dynamics AX 2012:sta. Sen sijaan voit käyttää **Varastonhallinta**-moduulia. WMSII-moduulissa Sijainti- ja Kuormalavan tunnus -varastodimensiot voidaan valita kirjanpitovarastoa varten, mutta Kuormalavan tunnus -varastodimensiota ei voida käyttää kirjanpitovarastoon Finance and Operationsissa.
+Finance and Operations ei enää tue vanhaa **WMSII**-moduulia, joka on peräisin Microsoft Dynamics AX 2012:sta. Sen sijaan voit käyttää **Varastonhallinta**-moduulia. WMSII-moduulissa Sijainti- ja Kuormalavan tunnus -varastodimensiot voidaan valita kirjanpitovarastoa varten, mutta Kuormalavan tunnus -varastodimensiota ei voida käyttää kirjanpitovarastoon Finance and Operationsissa.
 
 Päivityksen aikana kaikki Kuormalavatunnus-varastodimensiota käyttävään varastodimensioryhmään liittyvät tuotteet tunnistetaan ja merkitään lukituksi eikä niitä käsitellä päivitystä varten.
 
@@ -81,7 +80,6 @@ Ennen kuin voit käyttää vapautettuja tuotteita **Varastonhallinta**-moduuliss
 3.  Määritä **Varaushierarkia**-sivulla uusi varaushierakia nimikkeen varasto- ja seurantadimensioryhmien mukaan.
 4.  Luo vähintään yksi sarjaryhmä, joka sisältää vähintään samat yksiköt, joita käytetään nimikkeiden varastoyksiköissä.
 5.  Valitse **Varastonhallinta** &gt; **Asetukset** &gt; **Ota varastonhallintaprosessit käyttöön** &gt;**Vaihda nimikkeen varastodimensioryhmä**.
-6.  Lisää **Vaihda nimikkeen varastodimensioryhmä** -sivulla nimikenumerot, varastodimensioryhmät ja yksikön sarjaryhmät. Voit tehdä tämän vaiheen helposti käyttämällä Microsoft Office -integrointia tai tietoyksikköprosessin avulla [Tietojen hallinta](../../dev-itpro/data-entities/data-entities.md).
+6.  Lisää **Vaihda nimikkeen varastodimensioryhmä** -sivulla nimikenumerot, varastodimensioryhmät ja yksikön sarjaryhmät. Voit tehdä tämän vaiheen helposti käyttämällä Microsoft Office -integrointia tai tietoyksikköprosessin avulla [tietojen hallinnassa](../../dev-itpro/data-entities/data-entities.md).
 7.  Vahvista muutokset. Vahvistusprosessin osana suoritetaan erilaisia tietojen eheyden vahvistusprosesseja. Suuremman päivitysprosessin yhteydessä ilmeneviä ongelmia saatetaan joutua säätämään lähteen käyttöönoton yhteydessä. Tässä tapauksessa tarvitaan lisätietopäivitystä.
 8.  Muutosten käsittely. Kaikkien varastodimensioiden päivitys voi kestää jonkin aikaa. Voit valvoa edistymistä erätehtävätöillä.
-

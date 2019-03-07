@@ -1,13 +1,13 @@
 ---
 title: Kirjanpidolliset jaot
-description: "Tässä artikkelissa on tietoja kirjanpidollisista jaoista ja niiden käsittelyvaihtoehdoista. Kirjanpidollisia jakoja käytetään kohdistettaessa lähdeasiakirjan rahasummat tietyille kirjanpitotileille."
+description: Tässä artikkelissa on tietoja kirjanpidollisista jaoista ja niiden käsittelyvaihtoehdoista. Kirjanpidollisia jakoja käytetään kohdistettaessa lähdeasiakirjan rahasummat tietyille kirjanpitotileille.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AccountingDistribution
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ba6a581efe8353ccb9e02606db58d18550d71af
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 52cb689723584c862d85fa51a643b42096372a29
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320463"
 ---
-
 # <a name="accounting-distributions"></a>Kirjanpidolliset jaot
 
 [!include [banner](../includes/banner.md)]
@@ -57,6 +56,5 @@ Yleiset kirjanpidolliset jako-ominaisuudet tarjoavat seuraavia vaihtoehtoja kirj
 
 
 Lisätietoja: [Vapaatekstilaskujen kirjanpidolliset jaot ja alatason kirjauskansion merkinnät](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
-
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Sähköisen raportoinnin (ER) kohteet"
-description: "Voit määrittää kohteen jokaiselle sähköisen raportoinnin (ER) muotokokoonpanolle ja sen tuloskomponentille (kansio tai tiedosto). Käyttäjät, joille on myönnetty tarvittavat käyttöoikeudet, voivat myös muokata kohdeasetuksia suorituksen aikana. Tässä artikkelissa käsitellään ER-kohteiden hallintaa, tuettuja kohdetyyppejä ja suojausta."
+title: Sähköisen raportoinnin (ER) kohteet
+description: Voit määrittää kohteen jokaiselle sähköisen raportoinnin (ER) muotokokoonpanolle ja sen tuloskomponentille (kansio tai tiedosto). Käyttäjät, joille on myönnetty tarvittavat käyttöoikeudet, voivat myös muokata kohdeasetuksia suorituksen aikana. Tässä artikkelissa käsitellään ER-kohteiden hallintaa, tuettuja kohdetyyppejä ja suojausta.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314920"
 ---
-
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
 [!include [banner](../includes/banner.md)]
@@ -35,9 +34,9 @@ Voit määrittää kohteen jokaiselle sähköisen raportoinnin (ER) muotokokoonp
 Sähköisen raportoinnin (ER) muotomäärityksissä on yleensä vähintään yksi tulosteosa: tiedosto. Yleensä määrityksissä on useita eri tyyppisiä tiedostotulosteosia (kuten XML, TXT tai XLSX), jotka on ryhmitelty joko yhteen kansioon tai moneen kansioon. Voit määrittää ER-kohteen hallinnassa valmiiksi, mitä tapahtuu, kun kukin osa suoritetaan. Kun määritys suoritetaan, käyttäjälle näytetään valintaikkuna, jolla tiedoston voi tallentaa tai avata. Samaa toimintaa voi käyttää myös ER-määrityksiä tuotaessa, joten sitä varten ei tarvitse määrittää tiettyä kohdetta. Kun päätulosteosalle on luotu kohde, kyseisen kohde ohittaa oletustoiminnallisuuden ja kansio tai tiedosto lähetetään kohdeasetusten mukaisesti.
 
 ## <a name="availability-and-general-prerequisites"></a>Saatavuus ja yleiset edellytykset
-ER-kohdetoiminto ei ole käytössä Microsoft Dynamics AX 7.0:ssa (helmikuu 2016). Sinun on asennettava Microsoft Dynamics 365 for Operationsin versio 1611 (marraskuu 2016), jotta voit käyttää kaikkia toimintoja, jotka on kuvattu tässä ohjeaiheessa. Vaihtoehtoisesti voit asentaa jonkin seuraavista edellytyksistä: Huomaa kuitenkin, että nämä vaihtoehdot tarjoavat rajoitetumman ER-käyttökokemuksen.
+ER-kohdetoiminto ei ole käytössä Microsoft Dynamics AX 7.0:ssa (helmikuu 2016). Siksi sinun on asennettava Microsoft Dynamics 365 for Operationsin versio 1611 (marraskuu 2016), jotta voit käyttää kaikkia toimintoja, jotka on kuvattu tässä ohjeaiheessa. Vaihtoehtoisesti voit asentaa jonkin seuraavista edellytyksistä: Huomaa kuitenkin, että nämä vaihtoehdot tarjoavat rajoitetumman ER-käyttökokemuksen.
 
-- Microsoft Dynamics AX -sovellusversio 7.0.1 (toukokuu 2016)
+- Microsoft Dynamics AX -sovelluksen versio 7.0.1 (toukokuu 2016)
 - ER-kohteen hallinnan [sovelluksen hotfix-korjaus](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
 Voit määrittää kohteet vain tuoduissa ER-määrityksissä ja voit käyttää vain **Sähköisen raportoinnin konfiguraatiot** -sivulla olevia muotoja.
@@ -94,7 +93,7 @@ Käytä tätä sähköpostityyppiä, jos käyttämässäsi määrityksessä tiet
 
 ### <a name="archive-destination"></a>Arkistokohde
 
-Voit lähettää tällä asetuksella tulosteen joko Microsoft SharePoint -kansion tai Microsoftin Azuren tallennustilaan. Lähetä tuloste valitun asiakirjatyypin mukaan määritettyyn kohteeseen valitsemalla **Käytössä**-asetukseksi **Kyllä**. Valittavana on vain asiakirjatyyppejä, joiden ryhmäksi on valittu **Tiedosto**. Asiakirjatyypit määritetään valitsemalla **Organisaation hallinta** &gt; **Tiedoston hallinta** &gt; **Tiedostotyypit**. ER-kohteiden määritys on sama kuin tiedostonhallintajärjestelmän määritys.
+Voit lähettää tällä asetuksella tulosteen joko Microsoft SharePoint -kansion tai Microsoft Azuren tallennustilaan. Lähetä tuloste valitun asiakirjatyypin mukaan määritettyyn kohteeseen valitsemalla **Käytössä**-asetukseksi **Kyllä**. Valittavana on vain asiakirjatyyppejä, joiden ryhmäksi on valittu **Tiedosto**. Asiakirjatyypit määritetään valitsemalla **Organisaation hallinta** &gt; **Tiedoston hallinta** &gt; **Tiedostotyypit**. ER-kohteiden määritys on sama kuin tiedostonhallintajärjestelmän määritys.
 
 [![Tiedostotyypit-sivu](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg)
 
@@ -123,7 +122,7 @@ Jos määrität **Käytössä**-kentän arvoksi **Kyllä**, tulosteen esikatselu
 
 ### <a name="power-bi-destination"></a>Power BI -kohde
 
-Kun määrität **Käytössä**-kentän arvoksi **Kyllä**, voit käyttää omaa sähköisen raportoinnin ER-konfiguraatiota tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Microsoft Power BI -palveluihin. Siirretyt tiedostot tallennetaan Microsoft SharePoint Server -esiintymään, joka on konfiguroitu tähän tarkoitukseen. Lisätietoja on ohjeaiheessa [Finance and Operations -tietojen lähettäminen Power BI:hin sähköisen raportoinnin määritysten avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+Kun määrität **Käytössä**-kentän arvoksi **Kyllä**, voit käyttää omaa sähköisen raportoinnin ER-konfiguraatiota tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Microsoft Power BI -palveluihin. Siirretyt tiedostot tallennetaan Microsoft SharePoint Server -esiintymään, joka on konfiguroitu tähän tarkoitukseen. Lisätietoja on ohjeaiheessa [Finance and Operations -tietojen lähettäminen Power BI:hin sähköisen raportoinnin määritysten avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > Voit ohittaa oletustoiminnan (eli määrityksen valintaikkunan) luomalla päätulostekohteelle kohdeviittauksen ja tiedostokohteen sekä poistamalla sitten kaikki kohteet käytöstä.
@@ -165,4 +164,3 @@ Edellytyksenä on, että muotoa voi käyttää ER-määrityksissä. Jos sinulla 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
-

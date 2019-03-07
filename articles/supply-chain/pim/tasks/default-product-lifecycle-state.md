@@ -1,13 +1,13 @@
---- 
+---
 title: Tuotteen elinkaaren oletustilan luominen
-description: "Tässä menettelyssä kerrotaan, miten tuotteen elinkaaren oletustila luodaan sekä miten oletustila liitetään julkaistuihin tuotteisiin."
+description: Tässä menettelyssä kerrotaan, miten tuotteen elinkaaren oletustila luodaan sekä miten oletustila liitetään julkaistuihin tuotteisiin.
 author: cvocph
 manager: AnnBe
 ms.date: 12/05/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6e7e637157ee06a3d07a1a9c5da71295eb75b424
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d445ea2f2362f146a1e3e7bcf747898dc2cc89ba
-ms.openlocfilehash: 06a6c7c8fa767edf6fdf50c3c971b6d767f8755f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310826"
 ---
 # <a name="create-a-default-product-lifecycle-state"></a>Tuotteen elinkaaren oletustilan luominen
 
@@ -61,5 +61,4 @@ Tässä menettelyssä kerrotaan, miten tuotteen elinkaaren oletustila luodaan se
 
 > [!NOTE]
 > Oletetaan, että olet määrittänyt aktiivisen tilan. Voit nyt valita aktiivisen tilan ja sallia tuotteen käyttämisen pääsuunnittelussa ja tuoterakennetason laskennassa. Luonnollisesti tämä kannattaa tehdä vain, jos kaikki yhdenmukaisen suunnittelun vaatimat tuotetiedot on määritetty.  
-
 

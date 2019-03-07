@@ -1,13 +1,13 @@
---- 
-title: "Määritä kirjanpitotilin alias"
-description: "Tässä menettelyssä käsitellään, miten luodaan tilin tilinumeron antamisen pikavalintana toimiva tilin alias."
+---
+title: Määritä kirjanpitotilin alias
+description: Tässä menettelyssä käsitellään, miten luodaan tilin tilinumeron antamisen pikavalintana toimiva tilin alias.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAccountAlias
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1ae075d7678ab15157a500c6ee5bd77e8211254a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 134d7249abe7c97ee0e9604a86de4f1c98c0e9e1
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315012"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Määritä kirjanpitotilin alias
 
@@ -40,5 +40,4 @@ Tässä menettelyssä käsitellään, miten luodaan tilin tilinumeron antamisen 
     * Tilien ja dimensioiden tiedot täytetään pikavalintaa käytettäessä.  
 9. Valitse Alkuperäinen kohdistus -kentässä dimensio, joka on kohdistettuna aliasta käytettäessä.
     * Kun olet kirjoittanut pikavalinnan ja kun tilin ja dimensioiden tiedot on täytetty, alkuperäinen kohdistuskenttä on osoittimen kohdalla ja siirtyy siihen.  
-
 
