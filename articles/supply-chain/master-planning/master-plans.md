@@ -1,13 +1,13 @@
 ---
-title: "Pääsuunnitelmat"
-description: "Voit käyttää useita pääsuunnitelmia. Pääsuunnitelmilla voidaan tukea yrityksen päivittäistä toimintaa, simuloida eri suunnittelustrategioita, joita halutaan seurata, sekä ottaa käyttöön esimerkiksi yrityksen sisäistä suorituskykyä tai asiakastyytyväisyyttä koskevia käytäntöjä."
+title: Pääsuunnitelmat
+description: Voit käyttää useita pääsuunnitelmia. Pääsuunnitelmilla voidaan tukea yrityksen päivittäistä toimintaa, simuloida eri suunnittelustrategioita, joita halutaan seurata, sekä ottaa käyttöön esimerkiksi yrityksen sisäistä suorituskykyä tai asiakastyytyväisyyttä koskevia käytäntöjä.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqParameters, ReqPlanSched
 audience: Application User
 ms.reviewer: josaw
@@ -19,43 +19,41 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: df9585cfe2bc7ccc60dc69741994785869ba71b1
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325040"
 ---
-
-# <a name="master-plans"></a><span data-ttu-id="cb142-103">Pääsuunnitelmat</span><span class="sxs-lookup"><span data-stu-id="cb142-103">Master plans</span></span>
+# <a name="master-plans"></a><span data-ttu-id="986f3-103">Pääsuunnitelmat</span><span class="sxs-lookup"><span data-stu-id="986f3-103">Master plans</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cb142-104">Voit käyttää useita pääsuunnitelmia. Pääsuunnitelmilla voidaan tukea yrityksen päivittäistä toimintaa, simuloida eri suunnittelustrategioita, joita halutaan seurata, sekä ottaa käyttöön esimerkiksi yrityksen sisäistä suorituskykyä tai asiakastyytyväisyyttä koskevia käytäntöjä.</span><span class="sxs-lookup"><span data-stu-id="cb142-104">Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction.</span></span> 
+<span data-ttu-id="986f3-104">Voit käyttää useita pääsuunnitelmia. Pääsuunnitelmilla voidaan tukea yrityksen päivittäistä toimintaa, simuloida eri suunnittelustrategioita, joita halutaan seurata, sekä ottaa käyttöön esimerkiksi yrityksen sisäistä suorituskykyä tai asiakastyytyväisyyttä koskevia käytäntöjä.</span><span class="sxs-lookup"><span data-stu-id="986f3-104">Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction.</span></span> 
 
-<span data-ttu-id="cb142-105">Voit määrittää pääsuunnitelmia **Pääsuunnitelmat**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="cb142-105">You can configure master plans on the **Master plans** page.</span></span>
+<span data-ttu-id="986f3-105">Voit määrittää pääsuunnitelmia **Pääsuunnitelmat**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="986f3-105">You can configure master plans on the **Master plans** page.</span></span>
 
-<span data-ttu-id="cb142-106">Suunnitelmia on kahdentyyppisiä:</span><span class="sxs-lookup"><span data-stu-id="cb142-106">There are two types of plans:</span></span>
--   <span data-ttu-id="cb142-107">**Staattinen suunnitelma** - Pääsuunnittelua laskettaessa luodaan nettotarvesuunnitelma käyttämällä tämänhetkisiä tietoja.</span><span class="sxs-lookup"><span data-stu-id="cb142-107">**Static plan** – The master planning calculation uses the current data to generate a net requirements plan.</span></span> <span data-ttu-id="cb142-108">Tämä suunnitelma ei muutu, ennen kuin pääsuunnittelu suoritetaan seuraavan kerran.</span><span class="sxs-lookup"><span data-stu-id="cb142-108">This plan remains unchanged until the next time that you run master planning.</span></span> <span data-ttu-id="cb142-109">Tämä on toimintasuunnitelma, jota yrityksen henkilöstö, kuten ostojen ja tuotannon suunnittelija, voi käyttää päätöstensä pohjana ja päivittäisten tehtäviensä tukena.</span><span class="sxs-lookup"><span data-stu-id="cb142-109">It is an operating plan that various company personnel, such as a purchaser or production planner, can use to base their decisions on and perform their daily tasks and activities.</span></span>
--   <span data-ttu-id="cb142-110">**Dynaaminen suunnitelma** – Tämä suunnitelma lähtee samasta nettotarvesuunnitelmasta, joka luotiin pääsuunnittelussa.</span><span class="sxs-lookup"><span data-stu-id="cb142-110">**Dynamic plan** – This plan starts with the same net requirements plan that was generated by master planning.</span></span> <span data-ttu-id="cb142-111">Voit kuitenkin päivittää dynaamisen suunnitelman aina, kun perustiedot muuttuvat.</span><span class="sxs-lookup"><span data-stu-id="cb142-111">However, you can update the dynamic plan every time that the master data changes.</span></span> <span data-ttu-id="cb142-112">Voit tehdä päivityksen esimerkiksi luodessasi uutta myyntitilausta.</span><span class="sxs-lookup"><span data-stu-id="cb142-112">This could be when you create a new sales order, for example.</span></span> <span data-ttu-id="cb142-113">Näin voit seurata muuttuvaa tilauksen verkostoa ja nimikkeiden saatavuutta sen vaikuttamatta staattiseen suunnitelmaan, jota muut käyttävät työprosesseissaan.</span><span class="sxs-lookup"><span data-stu-id="cb142-113">This enables you to monitor the changing order network and item availability without disturbing the static plan that others are using for their work processes.</span></span>
+<span data-ttu-id="986f3-106">Suunnitelmia on kahdentyyppisiä:</span><span class="sxs-lookup"><span data-stu-id="986f3-106">There are two types of plans:</span></span>
+-   <span data-ttu-id="986f3-107">**Staattinen suunnitelma** - Pääsuunnittelua laskettaessa luodaan nettotarvesuunnitelma käyttämällä tämänhetkisiä tietoja.</span><span class="sxs-lookup"><span data-stu-id="986f3-107">**Static plan** – The master planning calculation uses the current data to generate a net requirements plan.</span></span> <span data-ttu-id="986f3-108">Tämä suunnitelma ei muutu, ennen kuin pääsuunnittelu suoritetaan seuraavan kerran.</span><span class="sxs-lookup"><span data-stu-id="986f3-108">This plan remains unchanged until the next time that you run master planning.</span></span> <span data-ttu-id="986f3-109">Tämä on toimintasuunnitelma, jota yrityksen henkilöstö, kuten ostojen ja tuotannon suunnittelija, voi käyttää päätöstensä pohjana ja päivittäisten tehtäviensä tukena.</span><span class="sxs-lookup"><span data-stu-id="986f3-109">It is an operating plan that various company personnel, such as a purchaser or production planner, can use to base their decisions on and perform their daily tasks and activities.</span></span>
+-   <span data-ttu-id="986f3-110">**Dynaaminen suunnitelma** – Tämä suunnitelma lähtee samasta nettotarvesuunnitelmasta, joka luotiin pääsuunnittelussa.</span><span class="sxs-lookup"><span data-stu-id="986f3-110">**Dynamic plan** – This plan starts with the same net requirements plan that was generated by master planning.</span></span> <span data-ttu-id="986f3-111">Voit kuitenkin päivittää dynaamisen suunnitelman aina, kun perustiedot muuttuvat.</span><span class="sxs-lookup"><span data-stu-id="986f3-111">However, you can update the dynamic plan every time that the master data changes.</span></span> <span data-ttu-id="986f3-112">Voit tehdä päivityksen esimerkiksi luodessasi uutta myyntitilausta.</span><span class="sxs-lookup"><span data-stu-id="986f3-112">This could be when you create a new sales order, for example.</span></span> <span data-ttu-id="986f3-113">Näin voit seurata muuttuvaa tilauksen verkostoa ja nimikkeiden saatavuutta sen vaikuttamatta staattiseen suunnitelmaan, jota muut käyttävät työprosesseissaan.</span><span class="sxs-lookup"><span data-stu-id="986f3-113">This enables you to monitor the changing order network and item availability without disturbing the static plan that others are using for their work processes.</span></span>
 
-<span data-ttu-id="cb142-114">Yritys voi halutessaan käyttää pelkkää dynaamista suunnitelmaa tai sekä staattisia että dynaamisia suunnitelmia.</span><span class="sxs-lookup"><span data-stu-id="cb142-114">A company may choose to work with just a dynamic plan or it may use both static and dynamic plans.</span></span> <span data-ttu-id="cb142-115">Lisäksi mikä tahansa pääsuunnitelma voidaan konfiguroida heijastamaan tiettyä strategiaa tai ongelmakohtaa.</span><span class="sxs-lookup"><span data-stu-id="cb142-115">In addition, you can configure any master plan to reflect a particular strategy or address an issue.</span></span> <span data-ttu-id="cb142-116">Esimerkkejä ovat seuraavat:</span><span class="sxs-lookup"><span data-stu-id="cb142-116">Examples are as follows:</span></span>
--   <span data-ttu-id="cb142-117">Varastotasot asetetaan suuremmiksi varaston loppumisen välttämiseksi.</span><span class="sxs-lookup"><span data-stu-id="cb142-117">Set higher inventory levels to guarantee against stockouts.</span></span>
--   <span data-ttu-id="cb142-118">Varmuusmarginaalit asetetaan pidemmiksi epäluotettavien toimittajien varalta.</span><span class="sxs-lookup"><span data-stu-id="cb142-118">Set longer safety margins to protect against unreliable vendors.</span></span>
+<span data-ttu-id="986f3-114">Yritys voi halutessaan käyttää pelkkää dynaamista suunnitelmaa tai sekä staattisia että dynaamisia suunnitelmia.</span><span class="sxs-lookup"><span data-stu-id="986f3-114">A company may choose to work with just a dynamic plan or it may use both static and dynamic plans.</span></span> <span data-ttu-id="986f3-115">Lisäksi mikä tahansa pääsuunnitelma voidaan konfiguroida heijastamaan tiettyä strategiaa tai ongelmakohtaa.</span><span class="sxs-lookup"><span data-stu-id="986f3-115">In addition, you can configure any master plan to reflect a particular strategy or address an issue.</span></span> <span data-ttu-id="986f3-116">Esimerkkejä ovat seuraavat:</span><span class="sxs-lookup"><span data-stu-id="986f3-116">Examples are as follows:</span></span>
+-   <span data-ttu-id="986f3-117">Varastotasot asetetaan suuremmiksi varaston loppumisen välttämiseksi.</span><span class="sxs-lookup"><span data-stu-id="986f3-117">Set higher inventory levels to guarantee against stockouts.</span></span>
+-   <span data-ttu-id="986f3-118">Varmuusmarginaalit asetetaan pidemmiksi epäluotettavien toimittajien varalta.</span><span class="sxs-lookup"><span data-stu-id="986f3-118">Set longer safety margins to protect against unreliable vendors.</span></span>
 
-<span data-ttu-id="cb142-119">Alkuperäinen dynaaminen suunnitelma voidaan myös asettaa päivittymään uuden tarvesuunnitelman mukaisesti aina, kun pääsuunnittelu suoritetaan.</span><span class="sxs-lookup"><span data-stu-id="cb142-119">You can also set up the starting dynamic plan so that it is updated with the new requirements plan every time that you run master planning.</span></span> <span data-ttu-id="cb142-120">Voit määrittää asetukset **Pääsuunnittelun parametrit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="cb142-120">You can specify these settings on the **Master planning parameters** page.</span></span>
+<span data-ttu-id="986f3-119">Alkuperäinen dynaaminen suunnitelma voidaan myös asettaa päivittymään uuden tarvesuunnitelman mukaisesti aina, kun pääsuunnittelu suoritetaan.</span><span class="sxs-lookup"><span data-stu-id="986f3-119">You can also set up the starting dynamic plan so that it is updated with the new requirements plan every time that you run master planning.</span></span> <span data-ttu-id="986f3-120">Voit määrittää asetukset **Pääsuunnittelun parametrit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="986f3-120">You can specify these settings on the **Master planning parameters** page.</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="cb142-121">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="cb142-121">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="986f3-121">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="986f3-121">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="cb142-122">Kattavuusasetukset</span><span class="sxs-lookup"><span data-stu-id="cb142-122">Coverage settings</span></span>](coverage-settings.md)
+[<span data-ttu-id="986f3-122">Kattavuusasetukset</span><span class="sxs-lookup"><span data-stu-id="986f3-122">Coverage settings</span></span>](coverage-settings.md)
 
-[<span data-ttu-id="cb142-123">Pääajoituksen taktisen ja operatiivisen suunnittelun erottaminen</span><span class="sxs-lookup"><span data-stu-id="cb142-123">Separating tactical and operative planning for master scheduling</span></span>](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[<span data-ttu-id="986f3-123">Pääajoituksen taktisen ja operatiivisen suunnittelun erottaminen</span><span class="sxs-lookup"><span data-stu-id="986f3-123">Separating tactical and operative planning for master scheduling</span></span>](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
-[<span data-ttu-id="cb142-124">Pääsuunnittelu: käytetäänkö staattista ja dynaamista pääsuunnittelua vai yhtä suunnitelmaa?</span><span class="sxs-lookup"><span data-stu-id="cb142-124">Master Planning: Use a static and dynamic Master Plan or use one plan?</span></span>](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
-
+[<span data-ttu-id="986f3-124">Pääsuunnittelu: käytetäänkö staattista ja dynaamista pääsuunnittelua vai yhtä suunnitelmaa?</span><span class="sxs-lookup"><span data-stu-id="986f3-124">Master Planning: Use a static and dynamic Master Plan or use one plan?</span></span>](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
 
 
 

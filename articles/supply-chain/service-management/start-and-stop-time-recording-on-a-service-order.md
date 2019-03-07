@@ -1,69 +1,67 @@
 ---
-title: "Huoltotilauksen ajanseurannan aloittaminen ja pysäyttäminen"
-description: "Huoltotilauksen ajanseurannan aloittaminen ja pysäyttäminen."
+title: Huoltotilauksen ajanseurannan aloittaminen ja pysäyttäminen
+description: Huoltotilauksen ajanseurannan aloittaminen ja pysäyttäminen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 16d9f48ed38a5033fab94d45821f0ed6f7f1f011
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321544"
 ---
-
-# <a name="start-and-stop-time-recording-on-a-service-order"></a><span data-ttu-id="6cb6e-103">Huoltotilauksen ajanseurannan aloittaminen ja pysäyttäminen</span><span class="sxs-lookup"><span data-stu-id="6cb6e-103">Start and stop time recording on a service order</span></span> 
+# <a name="start-and-stop-time-recording-on-a-service-order"></a><span data-ttu-id="63779-103">Huoltotilauksen ajanseurannan aloittaminen ja pysäyttäminen</span><span class="sxs-lookup"><span data-stu-id="63779-103">Start and stop time recording on a service order</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="6cb6e-104">Tämän menettelyn avulla voit käynnistää ja pysäyttää huoltotilauksen ajanseurannan jolle palvelutasosopimus on määritetty.</span><span class="sxs-lookup"><span data-stu-id="6cb6e-104">Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.</span></span>
+<span data-ttu-id="63779-104">Tämän menettelyn avulla voit käynnistää ja pysäyttää huoltotilauksen ajanseurannan jolle palvelutasosopimus on määritetty.</span><span class="sxs-lookup"><span data-stu-id="63779-104">Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.</span></span>
 
-## <a name="start-time-recording"></a><span data-ttu-id="6cb6e-105">Ajanseurannan aloittaminen</span><span class="sxs-lookup"><span data-stu-id="6cb6e-105">Start time recording</span></span>
+## <a name="start-time-recording"></a><span data-ttu-id="63779-105">Ajanseurannan aloittaminen</span><span class="sxs-lookup"><span data-stu-id="63779-105">Start time recording</span></span>
 
-1.  <span data-ttu-id="6cb6e-106">Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.</span><span class="sxs-lookup"><span data-stu-id="6cb6e-106">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="63779-106">Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.</span><span class="sxs-lookup"><span data-stu-id="63779-106">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="6cb6e-107">Valitse **Huoltotilaus**-välilehti. Napsauta **toimintoruudun** **Palvelutasosopimus**-ryhmässä **Aloitus**.</span><span class="sxs-lookup"><span data-stu-id="6cb6e-107">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Start**.</span></span>
+2.  <span data-ttu-id="63779-107">Valitse **Huoltotilaus**-välilehti. Napsauta **toimintoruudun** **Palvelutasosopimus**-ryhmässä **Aloitus**.</span><span class="sxs-lookup"><span data-stu-id="63779-107">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Start**.</span></span>
 
-3.  <span data-ttu-id="6cb6e-108">Kirjoita päivämäärä ja aika, jolloin ajanseuranta tulisi aloittaa.</span><span class="sxs-lookup"><span data-stu-id="6cb6e-108">Enter the date and time that the time recording should be started.</span></span>
+3.  <span data-ttu-id="63779-108">Kirjoita päivämäärä ja aika, jolloin ajanseuranta tulisi aloittaa.</span><span class="sxs-lookup"><span data-stu-id="63779-108">Enter the date and time that the time recording should be started.</span></span>
 
-## <a name="stop-time-recording"></a><span data-ttu-id="6cb6e-109">Pysäytä ajanseuranta</span><span class="sxs-lookup"><span data-stu-id="6cb6e-109">Stop time recording</span></span>
+## <a name="stop-time-recording"></a><span data-ttu-id="63779-109">Pysäytä ajanseuranta</span><span class="sxs-lookup"><span data-stu-id="63779-109">Stop time recording</span></span>
 
-1.  <span data-ttu-id="6cb6e-110">Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.</span><span class="sxs-lookup"><span data-stu-id="6cb6e-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="63779-110">Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.</span><span class="sxs-lookup"><span data-stu-id="63779-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="6cb6e-111">Valitse **Huoltotilaus**-välilehti. Napsauta **toimintoruudun** **Palvelutasosopimus**-ryhmässä **Lopetus**.</span><span class="sxs-lookup"><span data-stu-id="6cb6e-111">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Stop**.</span></span>
+2.  <span data-ttu-id="63779-111">Valitse **Huoltotilaus**-välilehti. Napsauta **toimintoruudun** **Palvelutasosopimus**-ryhmässä **Lopetus**.</span><span class="sxs-lookup"><span data-stu-id="63779-111">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Stop**.</span></span>
 
-3.  <span data-ttu-id="6cb6e-112">Kirjoita päivämäärä ja aika, jolloin ajanseuranta tulisi lopettaa.</span><span class="sxs-lookup"><span data-stu-id="6cb6e-112">Enter the date and time that the time recording should be stopped.</span></span>
+3.  <span data-ttu-id="63779-112">Kirjoita päivämäärä ja aika, jolloin ajanseuranta tulisi lopettaa.</span><span class="sxs-lookup"><span data-stu-id="63779-112">Enter the date and time that the time recording should be stopped.</span></span>
 
-4.  <span data-ttu-id="6cb6e-113">Valitse **Lisää peruutuksen syy** ja valitse syykoodi **Vaiheen syykoodi** -luettelosta syyn asettamiseksi ajanseurannan lopettamiselle.</span><span class="sxs-lookup"><span data-stu-id="6cb6e-113">Select **Add a revocation reason**, and select a reason code in the **Stage reason code** list to provide a reason for stopping the time recording.</span></span>
+4.  <span data-ttu-id="63779-113">Valitse **Lisää peruutuksen syy** ja valitse syykoodi **Vaiheen syykoodi** -luettelosta syyn asettamiseksi ajanseurannan lopettamiselle.</span><span class="sxs-lookup"><span data-stu-id="63779-113">Select **Add a revocation reason**, and select a reason code in the **Stage reason code** list to provide a reason for stopping the time recording.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="6cb6e-114">Jos <STRONG>Syykoodi ajan ylittyessä</STRONG> on valittuna <STRONG>Huoltohallinnan parametrit</STRONG> -lomakkeessa, sinun on määritettävä syykoodi, ennen kuin voit lopettaa ajanseurannan.</span><span class="sxs-lookup"><span data-stu-id="6cb6e-114">If <STRONG>Reason code on exceeding time</STRONG> is selected in the <STRONG>Service management parameters</STRONG> form, you must provide a reason code before you can stop the time recording.</span></span></P>
+> <P><span data-ttu-id="63779-114">Jos <STRONG>Syykoodi ajan ylittyessä</STRONG> on valittuna <STRONG>Huoltohallinnan parametrit</STRONG> -lomakkeessa, sinun on määritettävä syykoodi, ennen kuin voit lopettaa ajanseurannan.</span><span class="sxs-lookup"><span data-stu-id="63779-114">If <STRONG>Reason code on exceeding time</STRONG> is selected in the <STRONG>Service management parameters</STRONG> form, you must provide a reason code before you can stop the time recording.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="6cb6e-115">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="6cb6e-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="63779-115">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="63779-115">See also</span></span>
 
-<span data-ttu-id="6cb6e-116">[Aloita palvelutasosopimuksen ajanseuranta (lomake)](https://technet.microsoft.com/en-us/library/hh242297\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="6cb6e-116">[Start SLA time recording (form)](https://technet.microsoft.com/en-us/library/hh242297\(v=ax.60\))</span></span>
+<span data-ttu-id="63779-116">[Aloita palvelutasosopimuksen ajanseuranta (lomake)](https://technet.microsoft.com/en-us/library/hh242297\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="63779-116">[Start SLA time recording (form)](https://technet.microsoft.com/en-us/library/hh242297\(v=ax.60\))</span></span>
 
-<span data-ttu-id="6cb6e-117">[Pysäytä palvelutasosopimuksen ajanseuranta (lomake)](https://technet.microsoft.com/en-us/library/hh242241\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="6cb6e-117">[Stop SLA time recording (form)](https://technet.microsoft.com/en-us/library/hh242241\(v=ax.60\))</span></span>
+<span data-ttu-id="63779-117">[Pysäytä palvelutasosopimuksen ajanseuranta (lomake)](https://technet.microsoft.com/en-us/library/hh242241\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="63779-117">[Stop SLA time recording (form)](https://technet.microsoft.com/en-us/library/hh242241\(v=ax.60\))</span></span>
 
   
-
 
 

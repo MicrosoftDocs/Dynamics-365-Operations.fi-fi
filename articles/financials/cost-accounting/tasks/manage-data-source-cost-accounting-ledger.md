@@ -1,13 +1,13 @@
---- 
-title: "Kustannuslaskennan kirjanpidon tietolähteen hallinta"
-description: "Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskennan kirjanpidossa."
+---
+title: Kustannuslaskennan kirjanpidon tietolähteen hallinta
+description: Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskennan kirjanpidossa.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,36 +15,35 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: f53101d73bc69199fafb00de0fa1759d59ea4ce8
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319313"
 ---
-# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="e9e27-103">Kustannuslaskennan kirjanpidon tietolähteen hallinta</span><span class="sxs-lookup"><span data-stu-id="e9e27-103">Manage a data source for the cost accounting ledger</span></span>
+# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="87f81-103">Kustannuslaskennan kirjanpidon tietolähteen hallinta</span><span class="sxs-lookup"><span data-stu-id="87f81-103">Manage a data source for the cost accounting ledger</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="e9e27-104">Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskennan kirjanpidossa.</span><span class="sxs-lookup"><span data-stu-id="e9e27-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="e9e27-105">Ennen tämän tehtävän suorittamista tulee toistaa Kustannuslaskennan kirjanpidon luominen- ja Kustannusseurantayksiköiden määrittäminen -tehtäväoppaat.</span><span class="sxs-lookup"><span data-stu-id="e9e27-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="e9e27-106">Tämä tallenne käyttää esittelytietojen USP2-yritystä.</span><span class="sxs-lookup"><span data-stu-id="e9e27-106">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="87f81-104">Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskennan kirjanpidossa.</span><span class="sxs-lookup"><span data-stu-id="87f81-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="87f81-105">Ennen tämän tehtävän suorittamista tulee toistaa Kustannuslaskennan kirjanpidon luominen- ja Kustannusseurantayksiköiden määrittäminen -tehtäväoppaat.</span><span class="sxs-lookup"><span data-stu-id="87f81-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="87f81-106">Tämä tallenne käyttää esittelytietojen USP2-yritystä.</span><span class="sxs-lookup"><span data-stu-id="87f81-106">This recording uses the USP2 demo data company.</span></span>
 
-1. <span data-ttu-id="e9e27-107">Valitse Kustannuslaskenta > Kirjanpidon asetukset > Kustannuslaskennan kirjanpidot.</span><span class="sxs-lookup"><span data-stu-id="e9e27-107">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
-2. <span data-ttu-id="e9e27-108">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="e9e27-108">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="e9e27-109">Valitse Toteutuneet versiot.</span><span class="sxs-lookup"><span data-stu-id="e9e27-109">Click Actual versions.</span></span>
-4. <span data-ttu-id="e9e27-110">Valitse toimintoruudussa Hallitse.</span><span class="sxs-lookup"><span data-stu-id="e9e27-110">On the Action Pane, click Manage.</span></span>
-5. <span data-ttu-id="e9e27-111">Valitse Kirjanpito.</span><span class="sxs-lookup"><span data-stu-id="e9e27-111">Click General ledger.</span></span>
-6. <span data-ttu-id="e9e27-112">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="e9e27-112">Click New.</span></span>
-7. <span data-ttu-id="e9e27-113">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e9e27-113">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="e9e27-114">Anna tai valitse arvo Tietopalvelu-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e9e27-114">In the Data provider field, enter or select a value.</span></span>
-    * <span data-ttu-id="e9e27-115">Valitse tässä esimerkissä Dynamics 365 for Finance and Operations – kirjanpitomerkinnät.</span><span class="sxs-lookup"><span data-stu-id="e9e27-115">For this example, select Dynamics 365 for Finance and Operations - General ledger entries.</span></span>  
-9. <span data-ttu-id="e9e27-116">Syötä tai valitse arvo Kustannustason dimensio -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e9e27-116">In the Cost element dimension field, enter or select a value.</span></span>
-    * <span data-ttu-id="e9e27-117">Valitse tässä esimerkissä Kustannustasot.</span><span class="sxs-lookup"><span data-stu-id="e9e27-117">For this example, select Cost elements.</span></span>  
-10. <span data-ttu-id="e9e27-118">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="e9e27-118">Click Save.</span></span>
-11. <span data-ttu-id="e9e27-119">Valitse Määritä tietopalvelu.</span><span class="sxs-lookup"><span data-stu-id="e9e27-119">Click Configure data provider.</span></span>
-12. <span data-ttu-id="e9e27-120">Anna tai valitse arvo Yritys-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e9e27-120">In the Legal entity field, enter or select a value.</span></span>
-    * <span data-ttu-id="e9e27-121">Valitse tässä esimerkissä USP2.</span><span class="sxs-lookup"><span data-stu-id="e9e27-121">For this example, select USP2.</span></span>  
-13. <span data-ttu-id="e9e27-122">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="e9e27-122">Click New.</span></span>
-14. <span data-ttu-id="e9e27-123">Valitse Kirjanpitotaso-kentässä Nykyinen.</span><span class="sxs-lookup"><span data-stu-id="e9e27-123">In the Posting layer field, select Current.</span></span>
-15. <span data-ttu-id="e9e27-124">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="e9e27-124">Click OK.</span></span>
-
+1. <span data-ttu-id="87f81-107">Valitse Kustannuslaskenta > Kirjanpidon asetukset > Kustannuslaskennan kirjanpidot.</span><span class="sxs-lookup"><span data-stu-id="87f81-107">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="87f81-108">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="87f81-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="87f81-109">Valitse Toteutuneet versiot.</span><span class="sxs-lookup"><span data-stu-id="87f81-109">Click Actual versions.</span></span>
+4. <span data-ttu-id="87f81-110">Valitse toimintoruudussa Hallitse.</span><span class="sxs-lookup"><span data-stu-id="87f81-110">On the Action Pane, click Manage.</span></span>
+5. <span data-ttu-id="87f81-111">Valitse Kirjanpito.</span><span class="sxs-lookup"><span data-stu-id="87f81-111">Click General ledger.</span></span>
+6. <span data-ttu-id="87f81-112">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="87f81-112">Click New.</span></span>
+7. <span data-ttu-id="87f81-113">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="87f81-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="87f81-114">Anna tai valitse arvo Tietopalvelu-kenttään.</span><span class="sxs-lookup"><span data-stu-id="87f81-114">In the Data provider field, enter or select a value.</span></span>
+    * <span data-ttu-id="87f81-115">Valitse tässä esimerkissä Dynamics 365 for Finance and Operations -Kirjanpitomerkinnät.</span><span class="sxs-lookup"><span data-stu-id="87f81-115">For this example, select Dynamics 365 for Finance and Operations - General ledger entries.</span></span>  
+9. <span data-ttu-id="87f81-116">Syötä tai valitse arvo Kustannustason dimensio -kenttään.</span><span class="sxs-lookup"><span data-stu-id="87f81-116">In the Cost element dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="87f81-117">Valitse tässä esimerkissä Kustannustasot.</span><span class="sxs-lookup"><span data-stu-id="87f81-117">For this example, select Cost elements.</span></span>  
+10. <span data-ttu-id="87f81-118">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="87f81-118">Click Save.</span></span>
+11. <span data-ttu-id="87f81-119">Valitse Määritä tietopalvelu.</span><span class="sxs-lookup"><span data-stu-id="87f81-119">Click Configure data provider.</span></span>
+12. <span data-ttu-id="87f81-120">Anna tai valitse arvo Yritys-kenttään.</span><span class="sxs-lookup"><span data-stu-id="87f81-120">In the Legal entity field, enter or select a value.</span></span>
+    * <span data-ttu-id="87f81-121">Valitse tässä esimerkissä USP2.</span><span class="sxs-lookup"><span data-stu-id="87f81-121">For this example, select USP2.</span></span>  
+13. <span data-ttu-id="87f81-122">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="87f81-122">Click New.</span></span>
+14. <span data-ttu-id="87f81-123">Valitse Kirjanpitotaso-kentässä Nykyinen.</span><span class="sxs-lookup"><span data-stu-id="87f81-123">In the Posting layer field, select Current.</span></span>
+15. <span data-ttu-id="87f81-124">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="87f81-124">Click OK.</span></span>
 
