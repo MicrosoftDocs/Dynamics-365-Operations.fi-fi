@@ -1,13 +1,13 @@
 ---
 title: Finance and Operations- tai Lifecycle Services (LCS) -tuki
-description: "Tässä artikkelissa kerrotaan Microsoft Dynamics 365 for Finance and Operationsin ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta."
+description: Tässä artikkelissa kerrotaan Microsoft Dynamics 365 for Finance and Operationsin ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta.
 author: kfend
 manager: AnnBe
 ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro, Developer, Application user
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
 ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/21/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334769"
 ---
-
 # <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Finance and Operations- tai Lifecycle Services (LCS) -tuki
 
 [!include [banner](../includes/banner.md)]
@@ -53,7 +52,7 @@ Finance and Operationsin ja LCS:n tukiresurssit ovat seuraavassa taulukossa. Nä
 <tbody>
 <tr class="odd">
 <td>Kysy yhteisöltä.</td>
-<td>Siirry <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Dynamics 365 for Finance and Operations -yhteisö</span></a> -sivulle, jossa Dynamics-yhteisö auttaa löytämään vastauksia kysymyksiisi.</td>
+<td>Siirry <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Dynamics 365 for Finance and Operations -yhteisön</span></a> sivulle, jossa Dynamics-yhteisö auttaa löytämään vastauksia kysymyksiisi.</td>
 </tr>
 <tr class="even">
 <td>Käytä Ongelmahaku-työkalua.</td>
@@ -70,7 +69,7 @@ Huomautus: Myös Microsoft Premier -asiakkaat ja -kumppanit voivat lähettää P
 </tr>
 <tr class="even">
 <td>Avaa palvelupyyntö Finance and Operations -tukiryhmässä.</td>
-<td>Jos palvelupyynnön lähettämisessä Microsoftille LCS:n <strong>Tuki</strong>-ruudusta on ongelmia, ohjeaiheessa <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Yhteyden ottaminen Microsoft Business Solutions -tukeen</span></a> on lisätietoja yhteyden ottamisesta Microsoft Dynamics Regional Operations Centeriin. Tukiryhmä auttaa ratkaisemaan seuraavanlaisia teknisiä ongelmia:
+<td>Jos palvelupyynnön lähettämisessä Microsoftille LCS:n <strong>Tuki</strong>-ruudusta on ongelmia, kohdassa <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Yhteyden ottaminen Microsoft Business Solutions -tukeen</span></a> on lisätietoja yhteyden ottamisesta Microsoft Dynamicsin alueellisiin toimintokeskuksiin. Tukiryhmä auttaa ratkaisemaan seuraavanlaisia teknisiä ongelmia:
 <ul>
 <li>LCS:n käyttöön liittyvät virheet ja LCS:n käyttöoikeuksiin liittyvät virheet.</li>
 <li>Finance and Operationsin käyttöön liittyvät virheet.</li>
@@ -90,8 +89,7 @@ Jos tekniset kysymykset liittyvät CustomerSourceen kirjautumiseen tai sen käyt
 
 
 ## <a name="additional-resources"></a>Lisäresurssit
-- [Dynamics 365 for Retail -tuen saanti](../../retail/retail-support.md)
-- [Dynamics 365 for Talent -tuen saanti](../../talent/talent-support.md)
-- Lisätietoja Microsoft Dynamicsin tukivalikoimasta on ohjeaiheessa [Microsoft Dynamics Online -tuki](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
-
+- [Dynamics 365 for Retail -tuen saaminen](../../retail/retail-support.md)
+- [Dynamics 365 for Talent -tuen saaminen](../../talent/talent-support.md)
+- Lisätietoja Microsoft Dynamics tukivalikoimasta on kohdassa [Microsoft Dynamics Online -tuki](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 

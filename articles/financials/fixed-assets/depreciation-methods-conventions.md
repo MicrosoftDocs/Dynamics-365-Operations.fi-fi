@@ -1,13 +1,13 @@
 ---
-title: "Poistomenetelmät ja -käytännöt"
-description: "Tässä artikkelissa on yleiskuvaus Microsoft Dynamics 365 for Finance and Operationsin tukemista poistomenetelmistä."
+title: Poistomenetelmät ja -käytännöt
+description: Tämä artikkeli sisältää yleiskuvauksen Microsoft Dynamics 365 for Finance and Operationsin tukemista poistokäytännöistä ja poistomenetelmistä.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: be8e05a386178b9172a906109e015269dc72b32e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f545b0a9abbd7c797afead67917cf80f4cbe0dae
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331112"
 ---
-
 # <a name="depreciation-methods-and-conventions"></a>Poistomenetelmät ja -käytännöt
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on yleiskuvaus Microsoft Dynamics 365 for Finance and Operationsin tukemista poistomenetelmistä.
+Tämä artikkeli sisältää yleiskuvauksen Microsoft Dynamics 365 for Finance and Operationsin tukemista poistokäytännöistä ja poistomenetelmistä.
 
 Voit valita useita poistomenetelmiä. Menetelmien tarkoituksena on kohdistaa käyttöomaisuuserän poistokelpoinen arvo tilikausille. Käyttöomaisuuserän poistokelpoinen arvo on hankintahinta vähennettynä mahdollisella jäännösarvolla. 
 
@@ -89,7 +88,6 @@ Voit valita seuraavista poistomenetelmistä.
 [Jäännöspoisto 175 prosenttia](175-percent-reducing-balance-depreciation.md)
 
 [Jäännöspoisto 200 prosenttia](200-percent-reducing-balance-depreciation.md)
-
 
 
 

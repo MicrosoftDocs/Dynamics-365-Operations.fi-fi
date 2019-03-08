@@ -1,13 +1,13 @@
---- 
-title: "Työntekijän vahvistus i9-lomakkeen tarkistaminen"
-description: "Yhdysvaltojen IRCA (Immigration Reform and Control Act) -laki edellyttää, että työnantajat varmistavat uusien työntekijöiden oikeuden työskennellä."
+---
+title: Työntekijän vahvistus i9-lomakkeen tarkistaminen
+description: Yhdysvaltojen IRCA (Immigration Reform and Control Act) -laki edellyttää, että työnantajat varmistavat uusien työntekijöiden oikeuden työskennellä.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 audience: Application User
 ms.reviewer: josaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4d7346507179d237f60459978b9b7c6351f48611
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333320"
 ---
 # <a name="employment-verification-i9-verification"></a>Työntekijän vahvistus i9-lomakkeen tarkistaminen
 
@@ -54,5 +54,4 @@ Yhdysvaltojen IRCA (Immigration Reform and Control Act) -laki edellyttää, ett�
 21. Valitse I-9-asiakirjan tyyppi -kentässä työntekijän toimittaman asiakirjan tyyppi.
 22. Anna tai valitse arvo Asiakirjan numero -kenttään.
 23. Valitse Tallenna.
-
 

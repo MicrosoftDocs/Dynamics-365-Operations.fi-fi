@@ -1,32 +1,31 @@
 ---
 title: Kustannushintojen hallinnan aloitussivu
-description: "Kustannushintojen hallinnan avulla voit käsitellä raaka-aineiden, puolivalmiiden tuotteiden, valmiiden tuotteiden ja keskeneräisten resurssien arvostusta ja kirjanpitoa."
+description: Kustannushintojen hallinnan avulla voit käsitellä raaka-aineiden, puolivalmiiden tuotteiden, valmiiden tuotteiden ja keskeneräisten resurssien arvostusta ja kirjanpitoa.
 author: AndersGirke
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: b1513e5a7cb3a19fd3743a5aac8efd211aa02ce8
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333941"
 ---
-
 # <a name="cost-management-home-page"></a>Kustannushintojen hallinnan aloitussivu
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ Valmistuksen kirjanpidossa voit käsitellä [työtilausten kustannuslaskentaa](p
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-[Microsoft Dynamics 365 -ohjesivustolla](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
+[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustossa on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
 
 #### <a name="white-paper"></a>Tekninen raportti
 [Tuoterakenteen laskenta kustannuslaskentalomakkeen avulla](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) on ohje, jossa selvitetään, miten materiaalin ja valmistuksen sisältävät kustannuslaskentalomakkeet määritetään ja miten määritys vaikuttaa tuorerakennelaskennan tuloksiin. Näitä ohjeaiheita selventämässä on konkreettisia skenaarioita ja tietoja, jotka osoittavat, mitä vaikutuksia eri asetuksilla ja määrityksillä on. Ei ole todennäköistä, että käytät näitä kaikkia skenaarioita, koska tässä asiakirjassa ei ole riittävästi ohjeita, niiden määrittämiseen. Jos sinulla kuitenkin on perustiedot, voit kokeilla alla olevien tehtäväoppaiden toistamista niiden esiintymisjärjestyksessä. Voit analysoida tuoterakennelaskennan tämän asiakirjan tietojen perusteella. 
@@ -71,5 +70,4 @@ Kustannushintojen hallintaa koskevia mielipiteitä, uutisia ja muita tietoja on 
 
 #### <a name="task-guides"></a>Tehtäväoppaat
 Finance and Operationsin tehtäväoppaissa on lisäohjeita. Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.
-
 

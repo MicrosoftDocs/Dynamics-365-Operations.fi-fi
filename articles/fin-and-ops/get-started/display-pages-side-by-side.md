@@ -1,13 +1,13 @@
 ---
-title: "Rinnakkaisten sivujen näyttäminen Avaa uudessa ikkunassa -toiminnon avulla"
-description: "Tässä artikkelissa kerrotaan, miten sivut näytetään rinnakkain Microsoft Dynamics 365 for Finance and Operationsissa."
+title: Rinnakkaisten sivujen näyttäminen Avaa uudessa ikkunassa -toiminnon avulla
+description: Tässä artikkelissa kerrotaan, miten sivut voidaan näyttää rinnakkain Microsoft Dynamics 365 for Finance and Operationsissa.
 author: aneesmsft
 manager: AnnBe
 ms.date: 09/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df9b091735a4971446c5b5d0e054076260040683
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 8e3ef29618f11b0f247999e3a24e54bff44bf51a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330169"
 ---
-
-# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Rinnakkaisten sivujen näyttäminen Avaa uudessa ikkunassa -toiminnon avulla
+# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Sivujen näyttäminen rinnakkain Avaa uudessa ikkunassa -toiminnon avulla
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kerrotaan, miten sivut näytetään rinnakkain Microsoft Dynamics 365 for Finance and Operationsissa.
+Tässä artikkelissa kerrotaan, miten sivut voidaan näyttää rinnakkain Microsoft Dynamics 365 for Finance and Operationsissa.
 
-Microsoft Dynamics 365 for Finance and Operationsin avulla voit suorittaa tehtäviä tehokkaasti. Joskus haluat ehkä suorittaa tehtäviä nopeasti ja tarkastella useita sivuja rinnakkain. Voit esimerkiksi haluta tarkistaa usean kirjauskansion rivejä tai syöttää niitä useaan kirjauskansioon. Yleensä tämä vaatii palaamisen kirjauskansioluettelon sisältävälle sivulle ja takaisin tietyn kirjauskansion sisältävälle sivulle. **Avaa uudessa ikkunassa** -toiminnon avulla voit kuitenkin näyttää nämä sivut rinnakkain, jolloin tehtävien suorittaminen nopeutuu.
+Microsoft Dynamics 365 for Finance and Operations auttaa suorittamaan tehtävät tehokkaasti. Joskus haluat ehkä suorittaa tehtäviä nopeasti ja tarkastella useita sivuja rinnakkain. Voit esimerkiksi haluta tarkistaa usean kirjauskansion rivejä tai syöttää niitä useaan kirjauskansioon. Yleensä tämä vaatii palaamisen kirjauskansioluettelon sisältävälle sivulle ja takaisin tietyn kirjauskansion sisältävälle sivulle. **Avaa uudessa ikkunassa** -toiminnon avulla voit kuitenkin näyttää nämä sivut rinnakkain, jolloin tehtävien suorittaminen nopeutuu.
 
 Kun haluat tarkastella rivejä, voit valita **Avaa uudessa ikkunassa** -kuvakkeen.
 
@@ -50,4 +49,3 @@ Määritä selaimen ponnahdusikkunoiden estotoiminto sallimaan ponnahdusikkunat 
 **Avaa uudessa ikkunassa** -toiminto on käytettävissä vain, kun ikkunassa on avoinna useita sivuja. Ponnahdusikkunan suljetaan automaattisesti, kun sivuja ei ole enää avoinna (eli sitten, kun ikkunan viimeinen sivu suljetaan). Finance and Operations sulkee sivut myös silloin, kun siirryt sovelluksen toiselle alueelle. Jos ponnahdusikkunoita siis on avoinna silloin, kun siirryt sovelluksen toiselle alueelle, ponnahdusikkunat suljetaan automaattisesti, koska järjestelmä sulkee ikkunoissa olevat sivut.
 
 Ponnahdusikkunoiden yläpalkeissa on tietoja yrityksestä, jolle sivu on avattu. Tiedot ovat vain luku -muodossa. Ponnahdusikkunat ovat riippuvaisia myös Finance and Operations -selainikkunasta. Jos pääikkuna suljetaan tai päivitetään, kaikki avoimet ponnahdusikkunat siirtyvät vain luku -tilaan. Tällöin voit yhä tarkastella ikkunoiden tietoja, mutta et voi käsitellä niitä.
-

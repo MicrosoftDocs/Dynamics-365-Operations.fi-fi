@@ -1,13 +1,13 @@
 ---
 title: Kustannuslaskentaversiot
-description: "Tässä artikkelissa on tietoja kustannuslaskennan versioista, niiden ylläpitämisestä ja niihin sisällytettävien tietojen tyypeistä. Kustannuslaskelmaversion on ensisijaisesti tarkoitus sisältää nimikkeitä, kustannusluokkia ja välillisten kustannusten laskentakaavoja koskevia kustannustietueita."
+description: Tässä artikkelissa on tietoja kustannuslaskennan versioista, niiden ylläpitämisestä ja niihin sisällytettävien tietojen tyypeistä. Kustannuslaskelmaversion on ensisijaisesti tarkoitus sisältää nimikkeitä, kustannusluokkia ja välillisten kustannusten laskentakaavoja koskevia kustannustietueita.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a73be45d183f3cbdc19efbb9ee29fa621a113c66
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cb8e8193b3312a63042a44cb082a33a196cbc1be
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330146"
 ---
-
 # <a name="costing-versions"></a>Kustannuslaskentaversiot
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Tärkein syy ostohintatietojen käyttöönotolle on komponenttinimikkeiden ostoh
 Ostohintasisältö otetaan käyttöön määrittämällä ensin nimikkeen ostohinnan kustannushintamallin sisältävä tuoterakenteen laskentaryhmä ja määrittämällä sitten tämä laskentaryhmä ostettuihin nimikkeisiin. Voit sitten käyttää tuoterakenteen laskentaryhmän kustannushintaryhmää, kun suoritat tuoterakennelaskelmia, joissa lasketaan suunniteltujen kustannusten avulla valmistettujen nimikkeiden myyntihinta. 
 
 Nimikkeiden ostohintatietueiden käytetään myös viitetietoina. Kun nimikkeen ostohintatietueen tila vaihdetaan tilasta **Odottaa** tilaan **Aktiivinen**, voit päivittää nimikkeen perusostohinnan. Perusostohinta ei ole kuitenkaan ole toimipaikkakohtainen, ja se voidaan ohittaa manuaalisesti. Nimikkeen perusostohintaa käytetään ostotilausten oletusostohintana.
-
 
 
 

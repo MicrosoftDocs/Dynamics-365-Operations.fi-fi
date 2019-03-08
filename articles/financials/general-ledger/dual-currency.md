@@ -1,29 +1,28 @@
 ---
 title: Kaksoisvaluutta
-description: "Tässä ohjeaiheessa käsitellään kaksoisvaluuttaa eli tilannetta, jossa raportointivaluuttaa käytetään Microsoft Dynamics 365 for Finance and Operationsin toisena kirjanpitovaluuttana."
+description: Tässä ohjeaiheessa käsitellään kaksoisvaluuttaa eli tilannetta, jossa raportointivaluuttaa käytetään Microsoft Dynamics 365 for Finance and Operationsin toisena kirjanpitovaluuttana.
 author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330307"
 ---
-
 # <a name="dual-currency"></a>Kaksoisvaluutta
 
 [!include [banner](../includes/banner.md)]
@@ -184,4 +183,3 @@ Myös poistoprosessiin on tehty merkittäviä muutoksia. Nämä muutokset edelly
     - Jos poistotapahtuman tyyppi on kirjattu käyttöomaisuuserän kirjauskansioon, raportointivaluuttasummat näkyvät uusissa sarakkeissa. Näitä summia voi muuttaa.
     - Jos kirjanpidon kirjanpito- ja raportointivaluutta ovat samat, summat pysyvät synkronoituina. Jos muutat **Kredit**-summaa, **Kredit raportointivaluutassa** -summa muutetaan automaattisesti sitä vastaavaksi.
     - Jos käyttöomaisuuserän kirjauskansioon on kirjattu jokin muu tapahtuman tyyppi, **Debet raportointivaluutassa**- ja **Kredit raportointivaluutassa** -summia ei näytetä koskaan ennen kirjausta eikä myöskään kirjauksen jälkeen. Kirjanpito- ja raportointivaluuttasummat on edelleen käytettävissä kirjanpitoon kirjattavassa tositteessa.
-

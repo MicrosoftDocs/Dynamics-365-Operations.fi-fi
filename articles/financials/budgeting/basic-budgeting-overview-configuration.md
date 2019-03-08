@@ -1,13 +1,13 @@
 ---
 title: Budjetoinnin yhteenveto
-description: "Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 for Finance and Operations -sovelluksen toimintoja, pitää voida luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta."
+description: Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 for Finance and Operationsin Myyntitiedot-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 01b7970119b9abb26570c19162e159dd05496168
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1d768ee6d2244a237972f7183f27a60b93eea819
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332308"
 ---
-
 # <a name="budgeting-overview"></a>Budjetoinnin yleiskatsaus 
 
 [!include [banner](../includes/banner.md)]
 
-Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 for Finance and Operations -sovelluksen toimintoja, pitää voida luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
+Lähes kaikkien yritysten, jotka käyttävät Microsoft Dynamics 365 for Finance and Operationsin Myyntitiedot-toiminnallisuutta, on voitava luoda raportteja, joissa budjetoituja arvoja verrataan toteutuneisiin. Tässä artikkelissa kerrotaan pienin vaadittava kokoonpano budjettien luomiseen Finance and Operationsissa tai niiden lataamiseen kolmannen osapuolen ohjelmasta.
 
 <a name="overview"></a>Yleiskuvaus
 --------
@@ -40,7 +39,7 @@ Yrityksen hyväksyttyä budjettia ylläpidetään tiedostossa, joka tunnetaan ni
 Finance and Operationsissa on useita tapoja luoda budjettitapahtumia:
 
 -   Syötä tiedoston tiedot manuaalisesti **Budjettitapahtumat**-sivulla.
--   Käytä Microsoft Excel-mallia, jonka voit avata napsauttamalla **Avaa Excelissä** -painiketta **Budjettitapahtumat**-sivulla.
+-   Käytä Microsoft Excel -mallia, jonka voit avata napsauttamalla **Avaa Excelissä** -painiketta **Budjettitapahtumat**-sivulla.
 -   Tuo budjettitapahtumat Tietojen hallinnan **Budjettitiliviennit** -tietoyksikön kautta. Sinun tulisi harkita tämän menetelmän käyttämistä ja **Joukkoon perustuva** -**käsittelyn** parametrin käyttöön ottamista, kun joudut tuomaan useita budjettitilin merkintöjä järjestelmään.
 -   Jos yritys käyttää Budjettisuunnittelu-toimintoa budjettitietojen valmisteluun, voit käyttää **Luo budjettitapahtuma** -kausittaista prosessia.
 
@@ -80,7 +79,6 @@ Budjettipäällikkö voi tarkastella budjetin senhetkistä tilaa **Kirjanpitobud
 **Toteutunut vs. budjetti** -kyselysivun kautta voit porautua budjetti vs. toteutunut -summien yksityiskohtaisiin tietoihin. Valitse kyselysivun rivi ja napsauta **Kauden saldot** nähdäksesi budjetoidut ja toteutuneet summat tilikausille jaettuna. **Budjettitiliviennit**-sivu porautuu budjettitapahtumien budjettisummien yksityiskohtaisiin tietoihin. **Yleisen kirjauskansion merkinnät**-sivu avaa kirjanpitotapahtumat, jotka sisältyvät laskettuun **Toteutuneet**-summaan. 
 
 Budjettisuunnittelutoimintoa käyttävä yritys voi luoda ja käyttää *budjettiennusteita* **Kirjanpitobudjetit ja ennusteet** -työtilassa.
-
 
 
 

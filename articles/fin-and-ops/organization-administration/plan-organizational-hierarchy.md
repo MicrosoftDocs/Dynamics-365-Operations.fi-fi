@@ -1,13 +1,13 @@
 ---
 title: Organisaatiohierarkian suunnitteleminen
-description: "Ennen kuin määrität organisaation ja organisaatiohierarkiat, varmista, että suunnittelet miten liiketoimintasi mallinnetaan."
+description: Ennen kuin määrität organisaation ja organisaatiohierarkiat, varmista, että suunnittelet miten liiketoimintasi mallinnetaan.
 author: sericks007
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
@@ -18,23 +18,22 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 633d85333a510cec9cee2721e6e2330a47b6c78c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331986"
 ---
-
 # <a name="plan-your-organizational-hierarchy"></a>Organisaatiohierarkian suunnitteleminen
 
 [!include [banner](../includes/banner.md)]
 
-Ennen kuin määrität organisaation ja organisaatiohierarkiat Microsoft Dynamics 365 for Finance and Operationsissa, varmista, että suunnittelet miten liiketoimintasi mallinnetaan. Organisaatiomallilla on huomattava vaikutus Dynamics 365 for Finance and Operationsin käyttöönottoon ja liiketoimintaprosesseihin.
+Ennen kuin määrität organisaation ja organisaatiohierarkiat Microsoft Dynamics 365 for Finance and Operationsissa, varmista, että suunnittelet liiketoimintasi mallinnuksen. Organisaatiomallilla on huomattava vaikutus Dynamics 365 for Finance and Operationsin käyttöönottoon ja liiketoimintaprosesseihin.
 
 Organisaatiohierarkiat edustavat liiketoiminnan muodostavien organisaatioiden välisiä suhteita. Tämän vuoksi tärkein harkittava asia organisaatioita mallinnettaessa on liiketoiminnan rakenne. Suosittelemme, että määrittelet organisaatiorakenteet toiminnallisten alueiden, kuten taloushallinto ja kirjanpito, henkilöstöhallinto, operatiiviset toiminnot, ostotoiminnot, sekä myynti ja markkinointi, johtajilta ja päälliköiltä saamasi palautteen perusteella.
 
-Kun suunnittelet hierarkiat, on myös tärkeää ottaa huomioon suhde organisaatiohierarkian että taloushallinnon dimensioiden välillä. Voit määrittää useita organisaation hierarkioita edustamaan yrityksesi eri näkymiä. Taloushallinnon dimensioiden avulla voit luoda raportteja näistä näkymistä. Luo yhteistyössä Microsoft Dynamics 365 for Finance and Operations -kumppanisi kanssa hierarkiat, jotka kohdistuvat sekä organisaation että lakisääteisen raportoinnin tarpeisiin.
+Kun suunnittelet hierarkiat, on myös tärkeää ottaa huomioon suhde organisaatiohierarkian että taloushallinnon dimensioiden välillä. Voit määrittää useita organisaation hierarkioita edustamaan yrityksesi eri näkymiä. Taloushallinnon dimensioiden avulla voit luoda raportteja näistä näkymistä. Microsoft Dynamics 365 for Finance and Operations -kumppanisi käyttäminen luomaan hierarkiat, jotka kohdistuvat sekä organisaation että lakisääteisen raportoinnin tarpeisiin.
 
 > [!NOTE]
 > Voit käyttää taloushallinnon dimensioita edustamaan yrityksiä ilman, että luot yrityksiä Finance and Operationsissa. Taloushallinnon dimensioita ei ole kuitenkaan suunniteltu vastaamaan yritysten toiminnallisiin tai liiketaloudellisiin tarpeisiin. Finance and Operationsin yksiköiden välisen kirjanpidon toiminnallisuus on suunniteltu käsittelemään vain jokaisen tapahtuman luomat kirjanpitomerkinnät.
@@ -168,7 +167,7 @@ Toimintayksiköt käyttävät pääyrityksen maakontekstia. Samassa yrityksessä
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Jos organisaatio perustuu yrityksenä
 
-Niiden maiden tai alueiden kohdalla, joita Finance and Operations tukee, voidaan luoda useimmat lakisääteiset raportit. Lisätietoja kullekin maalle tai alueelle saatavilla olevista raporteista on Finance and Operationsin [Microsoft Dynamics Localization Portalissa](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (CustomerSource-kirjautuminen on pakollinen.)
+Niiden maiden tai alueiden kohdalla, joita Finance and Operations tukee, voidaan luoda useimmat lakisääteiset raportit. Lisätietoja kullekin maalle tai alueelle saatavilla olevista raporteista on Finance and Operationsin [Microsoft Dynamicsin lokalisointiportaalissa](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (CustomerSource-kirjautuminen on pakollista.)
 
 > [!NOTE]
 > Finance and Operationsin kirjanpidon kirjanpitotason avulla voit tehdä oikaisevat kirjaukset emoyhtiölle, joka käyttää eri kirjanpidon vakiota kuin tytäryhtiö. Esimerkiksi yrityksessä, joka käyttää yleisesti Isossa-Britanniassa (UK GAAP) hyväksyttyjä kirjanpitokäytäntöjä, voit tehdä oikaisevat kirjaukset kirjanpitotasolla. Nämä tapahtumat voidaan konsolidoida emoyhtiöksi, joka käyttää Yhdysvalloissa yleisesti hyväksyttyjä kirjanpitoperiaatteita (GAAP). Oikaisumerkinnät eivät vaikuta UK GAAP -raportointiin.
@@ -243,4 +242,3 @@ Ota huomioon seuraavat suositeltavat menetelmät organisaatiohierarkian käyttö
 - Ennen kuin mallinnat tärkeimpiä uudelleenjärjestelyn tilanteita, käytä hierarkian voimassaolopäivämääriä vaikutusanalyysiin ja oikeellisuustarkistukseen.
 - Käytä luonnostilaa hierarkian muuttamiseen ennen, kuin julkaiset uuden version tuotantoympäristössä.
 - Rajoita niiden käyttäjien määrää, joilla on oikeudet lisätä organisaatioita hierarkiaan tai poistaa niitä tuotantoympäristössä. Pienempi numero laskee kalliiden virheiden mahdollisuutta ja tarvetta korjata virheitä.
-

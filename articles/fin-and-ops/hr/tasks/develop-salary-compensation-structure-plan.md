@@ -1,13 +1,13 @@
---- 
-title: "Palkka- ja kompensaatiorakenteen ja -suunnitelman kehittäminen"
-description: "Tässä tehtävän ohjauksessa kerrotaan kiinteän kompensaatiosuunnitelman luontiprosessista ja siitä, miten työntekijöille annetaan mahdollisuus rekisteröityä suunnitelmaan oikeutussääntöjen avulla."
+---
+title: Palkka- ja kompensaatiorakenteen ja -suunnitelman kehittäminen
+description: Tässä tehtävän ohjauksessa kerrotaan kiinteän kompensaatiosuunnitelman luontiprosessista ja siitä, miten työntekijöille annetaan mahdollisuus rekisteröityä suunnitelmaan oikeutussääntöjen avulla.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 28d044cedbcc9f483a4deb7739aef0f8e3abf9ec
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332768"
 ---
 # <a name="develop-salarycompensation-structure-and-plan"></a>Palkka- ja kompensaatiorakenteen ja -suunnitelman kehittäminen
 
@@ -74,5 +74,4 @@ Tässä tehtävän ohjauksessa kerrotaan kiinteän kompensaatiosuunnitelman luon
     * Valitse ehdot, jotka työntekijän on täytettävä, ennen kuin hän on oikeutettu kompensaatiosuunnitelmaan. Ehdot voivat koskea osastoa, ammattijärjestöä, sijaintia (kompensaatioalue), työtä, toimintoa, työn tyyppiä tai kompensaatiotasoa. Työntekijän on täytettävä kaikki määritetyt ehdot, jotta hän on oikeutettu kompensaatiosuunnitelmaan. Jos ehtoja ei ole määritetty, kaikki työntekijät ovat oikeutettuja kompensaatiosuunnitelmaan. Jos työntekijä ei täytä oikeutussäännön määrittämiä ehtoja tai jos kompensaatiosuunnitelmalle ei ole määritetty oikeutussääntöä, kompensaatiosuunnitelma ei ole valittavissa, kun työntekijälle luodaan kiinteää kompensaatiotietuetta.  
 7. Sulje sivu.
 8. Sulje sivu.
-
 
