@@ -1,13 +1,13 @@
---- 
+---
 title: Luo ostosopimus
-description: "Tämä menettely opastaa luomaan ostosopimuksen."
+description: Tämä menettely opastaa luomaan ostosopimuksen.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchAgreement, PurchAgreementCreate, InventItemIdLookupSimple, AgreementConfirmRunForm, PurchAgreementHistory
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b317f0a0fc8f198bad9501f325557ac2a4796989
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0d0cc6508071bea3f622bc21f06aa55d2b757b6f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338610"
 ---
 # <a name="create-a-purchase-agreement"></a>Luo ostosopimus
 
@@ -84,5 +84,4 @@ Tämä menettely opastaa luomaan ostosopimuksen. Se on yleensä ostopäällikön
 5. Valitse Ostosopimuksen vahvistukset.
     * Esikatselu/tulostus-vaihtoehdolla voi luoda ostosopimusasiakirjan, jonka voi tulostaa tai lähettää asiakkaalle. Jos päivität sopimusta myöhemmin ja vahvistat sen uudelleen, molemmat versiot näkyvät tässä.  
 6. Sulje sivu.
-
 

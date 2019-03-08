@@ -1,13 +1,13 @@
 ---
 title: Ulkomaanvaluutan uudelleenarvostus osto- ja myyntireskontrassa
-description: "Valuuttakurssien vaihdellessa avoimien tapahtumien teoreettinen arvo (kirjanpitoarvo) ulkomaan valuuttana vaihtelee ajan myötä. Tässä artikkelissa on tietoja ulkomaanvaluutan uudelleenarvostusprosessista, jonka avulla voidaan päivittää osto- ja myyntireskontran avoimien tapahtumien arvo."
+description: Valuuttakurssien vaihdellessa avoimien tapahtumien teoreettinen arvo (kirjanpitoarvo) ulkomaan valuuttana vaihtelee ajan myötä. Tässä artikkelissa on tietoja ulkomaanvaluutan uudelleenarvostusprosessista, jonka avulla voidaan päivittää osto- ja myyntireskontran avoimien tapahtumien arvo.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: da1aee4c678cb4786d52abc81b787edceaa5aa38
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 259b487b0f11b19af9609d63f12114dcaa61be52
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341324"
 ---
-
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Ulkomaanvaluutan uudelleenarvostus osto- ja myyntireskontrassa
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ Ulkomaanvaluutan uudelleenarvostusprosessin ajosta säilytetään aina tietue. V
     -   **Ei mitään** – Kirjanpitodimensioita ei kirjata. Jos tilirakenteessasi on pakollinen taloushallinnon dimensio, uudelleenarvostusprosessi ajetaan siitä huolimatta ja prosessi luo kirjanpitomerkinnät, joissa ei ole taloushallinnon dimensioita. Näyttöön tulee ensin varoitussanoma voidaksesi peruuttaa uudelleenarvostuksen.
     -   **Taulu** – Ulkomaanvaluutan uudelleenarvostustapahtumiin kirjataan asiakas- tai toimittajan tilin taloushallinnon dimensioita.
     -   **Kirjaus** – Ulkomaanvaluutan uudelleenarvostustapahtumiin kirjataan uudelleenarvostettavana olevan tapahtuman taloushallinnon dimensioita. Oletusarvoisesti uudelleenarvostustapahtuman osto-/myyntireskontran päätilissä käytetään alkuperäisen tapahtuman osto-/myyntireskontran kirjanpitotilin taloushallinnon dimensioita, ja alkuperäisen tapahtuman kulu/vara/voitto-kirjanpitotilin taloushallinnon dimensioita käytetään uudelleenarvostustapahtuman toteutumaton voitto/tappio -päätilillä.
-
 
 
 

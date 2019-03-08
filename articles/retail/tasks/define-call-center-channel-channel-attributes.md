@@ -1,13 +1,13 @@
---- 
-title: "Luo puhelinkeskuksen kanavat ja määritä kanavamääritteet"
-description: "Tässä menettelyssä kerrotaan, miten uusi vähittäismyyntikanava luodaan ja miten kanavamääritteet määritetään."
+---
+title: Luo puhelinkeskuksen kanavat ja määritä kanavamääritteet
+description: Tässä menettelyssä kerrotaan, miten uusi vähittäismyyntikanava luodaan ja miten kanavamääritteet määritetään.
 author: mugunthanm
 manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 7ef094535214ecf4c65f95c36a93455446d7e388
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346752"
 ---
 # <a name="create-call-center-channels-and-define-channel-attributes"></a>Luo puhelinkeskuksen kanavat ja määritä kanavamääritteet
 
@@ -99,5 +99,4 @@ Tässä menettelyssä kerrotaan, miten uusi vähittäismyyntikanava luodaan ja m
 64. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 65. Valitse Tallenna.
 66. Sulje sivu.
-
 

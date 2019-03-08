@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSParameters
 audience: Application User
 ms.reviewer: josaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7c9613070e077bced4b272b136985de5f4ddbdd0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fc039b3c35c9ff8f40bf671e523104031c598171
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335252"
 ---
 # <a name="warehouse-management"></a>Varastonhallinta  
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 for Finance and Operationsin varastonhallintamoduulin avulla voit hallita varastonhallinnanprosesseja tuotanto-, jakelu- ja vähittäismyyntiyrityksissä. Moduulissa on useita ominaisuuksia varastolaitoksen optimaaliseksi tueksi milloin tahansa. Varastonhallinta on täysin integroitu muihin Finance and Operationsin liiketoiminnan prosesseihin, kuten kuljetus, tuotanto, laadunvalvonta, hankinta, siirto, myynti ja palautus.
+Dynamics 365 for Finance and Operationsin varastonhallintamoduulin avulla voit hallita tuotanto-, jakelu- ja vähittäismyyntiyritysten varastoprosesseja. Moduulissa on useita ominaisuuksia varastolaitoksen optimaaliseksi tueksi milloin tahansa. Varastonhallinta on täysin integroitu muihin Finance and Operationsin liiketoiminnan prosesseihin, kuten kuljetus, tuotanto, laadunvalvonta, hankinta, siirto, myynti ja palautus.
 
 ## <a name="get-started"></a>Aloittaminen
 Varastonhallinnan käyttämiseksi sinun on määritettävä yleiset varastoparametrit tukemaan yrityksesi liiketoimintaprosesseja.
@@ -66,12 +66,11 @@ Määritä lähtevän ja saapuvan varastointiprosessien komponentit liiketoiminn
 
 ## <a name="additional-resources"></a>Lisäresurssit
 ### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
-Sivustossa [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
+[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustossa on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
 
 ### <a name="blogs"></a>Blogit
 [Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog) on varastonhallintaa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
 
  
-
 

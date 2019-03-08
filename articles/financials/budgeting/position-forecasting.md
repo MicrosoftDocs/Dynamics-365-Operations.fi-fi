@@ -1,13 +1,13 @@
 ---
 title: Toimien ennustus
-description: "Työntekijöihin liittyvät kulut usein muodostavat suuren osa organisaation kuluista. Toimien ennusteiden avulla voit luoda suunnitelmia näille kustannuksille ja sisällyttää ne budjettisuunnitteluun."
+description: Työntekijöihin liittyvät kulut usein muodostavat suuren osa organisaation kuluista. Toimien ennusteiden avulla voit luoda suunnitelmia näille kustannuksille ja sisällyttää ne budjettisuunnitteluun.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bcd7363ba50f1c3a20d9823333df65eab9868d67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356159"
 ---
-
 # <a name="position-forecasting"></a>Toimien ennustus
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,7 @@ Kompensaatioryhmässä valittua ansion kustannustasoa käytetään, kun luot ans
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Ennusteen toimien luominen aiemmin luoduille toimille
 
-Tarkinta budjettisuunnittelua varten voit luoda ennusteen toimia käyttämällä Microsoft Dynamics 365 for Finance and Operations -sovelluksen aiemmin luotujen toimien tietoja riippumatta siitä, ovatko toimet kyseisellä hetkellä täytettyjä vai ei. 
+Tarkinta budjettisuunnittelua varten voit luoda ennusteen toimia käyttämällä Microsoft Dynamics 365 for Finance and Operationsissa aiemmin luotujen toimien tietoja riippumatta siitä, ovatko toimet kyseisellä hetkellä täytettyjä vai ei. 
 
 **Lisää aiemmin luotuja toimia** -toiminto näyttää kaikki organisaation toimet. Asettamalla **Alkaen**-päivämäärän voit muuttaa toimien luetteloa niin, että se sisältää toimet, jotka olivat olemassa tiettynä menneisyyden päivänä tai yleisemmin, tulevaisuudessa (esimerkiksi seuraavan budjettijakson alussa). Valitse budjettisuunnitteluprosessi ja budjettisuunnitelman skenaario, valitse toimet luettelosta ja valitse sitten **OK** luodaksesi ennusteen toimet valituille toimille. Huomaa, että voit luoda vain yhden ennusteen toimen kullekin aiemmin luodulle toimelle budjettisuunnitteluprosessissa ja -skenaariossa. Voit kuitenkin luoda lisäversioita määrittämällä eri budjettiskenaarioita. 
 
@@ -216,7 +215,6 @@ Sekä luontiprosessissa että valintaprosessissa budjetin kustannustason alkamis
 Budjettisuunnitelman rivit näyttävät budjettisummien lähteen (ennusteen toimen numero), mutta niitä ei ole linkitetty. Näin ollen ennusteen toimeen tehdyt muutokset eivät näy budjettisuunnitelman rivillä, ja budjettisuunnitelman rivin muutokset näkyvät ennusteen toimessa. Jos muutat ennusteen toimea ja haluat, että päivitykset sisällytetään budjettisuunnitelmaan, sinun on tuotava ennusteen toimi uudelleen suunnitelmaan. Muista kuitenkin, että tämä prosessi poistaa kaikki rivit, joihin ennusteen toimi on määritetty. Näin ollen kaikki näille riveille tekemäsi muutokset poistetaan. 
 
 Jos halut nähdä, mihin budjettisuunnitelmiin ennusteen toimi on sisällytetty, voit muodostaa **Ennusteen toimet budjettisuunnitelman mukaan** -raportin. Vaihtoehtoisesti voit avata ennusteen toimella **Liittyvät budjettisuunnitelmat** -tietoruudun tarkastellaksesi suunnitelmia.
-
 
 
 

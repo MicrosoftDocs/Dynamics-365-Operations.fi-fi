@@ -1,13 +1,13 @@
 ---
-title: "Tuotannon suorituskyvyn Power BI -sisältö"
-description: "Tässä ohjeaiheessa kerrotaan, mitä tuotannon suorituskyvyn Power BI -sisältö sisältää. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
+title: Tuotannon suorituskyvyn Power BI -sisältö
+description: Tässä ohjeaiheessa kerrotaan, mitä tuotannon suorituskyvyn Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365957"
 ---
-
 # <a name="production-performance-power-bi-content"></a>Tuotannon suorituskyvyn Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, mitä **tuotannon suorituskyvyn** Microsoft Power BI -sisältö sisältää. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
+Tässä ohjeaiheessa kerrotaan, mitä **tuotannon suorituskyvyn** Microsoft Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -42,10 +41,10 @@ Voit myös analysoida tuotannon variansseja Power BI -sisällön avulla. Tuotann
 
 **Tuotannon suorituskyvyn** Power BI -sisältö sisältää tuotanto- ja erätilauksista peräisin olevia tietoja. Raporteissa ei ole kanban-tuotantoihin liittyviä tietoja.
 
-## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
 **Tuotannon suorituskyvyn** Power BI -sisältö näkyy **Tuotannon suorituskyky** -sivulla (**Tuotannonhallinta** \> **Kyselyt ja raportit** \> **Tuotannon suorituskyvyn analyysi** \> **Tuotannon suorituskyky**). 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittarit, jotka sisältyvät Power BI -sisältöön
 
 **Tuotannon suorituskyvyn** Power BI -sisältö sisältää raporttisivujoukon. Jokainen sivu koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa.
 
@@ -63,7 +62,7 @@ Seuraavassa taulukossa on sisältyvien visualisointien yhteenveto.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
-Seuraavia tietoja käytetään **Tuotannon suorituskyvyn** Power BI -sisällön raporteissa. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja yksikkösäilöstä on ohjeaiheessa [Power BI:n ja yksikkösäilön integrointi](power-bi-integration-entity-store.md).
+Seuraavia tietoja käytetään **tuotannon suorituskyvyn** Power BI -sisällön raporteissa. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja yksikkösäilöstä on kohdassa [Power BI:n ja yksikkösäilön integrointi](power-bi-integration-entity-store.md).
 
 Seuraavassa taulukossa on tärkeät koostemitat, joita käytetään Power BI -sisällön perustana.
 
@@ -130,4 +129,3 @@ Seuraavassa taulukossa on tärkeimmät koostemittojen osittamisen suodattimina k
 | Yksiköt                  | Tunnus ja nimi                                                   |
 | Resurssit                 | Resurssin tunnus, resurssin nimi, resurssin tyyppi ja resurssiryhmä |
 | Tuotteet                  | Tuotenumero, tuotteen nimi, nimiketunnus ja nimikeryhmä         |
-

@@ -1,13 +1,13 @@
---- 
-title: "Luo, laske ja kirjaa laskelma vähittäismyymälälle"
-description: "Tässä menettelyssä kerrotaan myymälän laskelman luomisen, laskemisen ja kirjaamisen manuaaliset vaiheet."
+---
+title: Luo, laske ja kirjaa laskelma vähittäismyymälälle
+description: Tässä menettelyssä kerrotaan myymälän laskelman luomisen, laskemisen ja kirjaamisen manuaaliset vaiheet.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 33ebb28196baa9ae944dbd124274b05cb587fea4
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354388"
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a>Luo, laske ja kirjaa laskelma vähittäismyymälälle
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kerrotaan myymälän laskelman luomisen, laskemisen ja kirjaamisen manuaaliset vaiheet. Samalle tehtävälle voidaan määrittää myös erätöitä. Erätöiden määrittämisen ja suorittamisen vaiheet löytyvät myös muista aiheista. Tämän menettelyn suorittaminen edellyttää myyntipisteellä tehtyjä ja Dynamics AX:ään siirrettyjä tapahtumia. Tämä tallenne käyttää esittelytietojen USRT-yritystä. Tämä ohje voi viitata Microsoft Dynamics AX -nimeen. Huomaa, että Dynamics AX on nyt nimeltään Microsoft Dynamics 365 for Operations.
+Tässä menettelyssä kerrotaan myymälän laskelman luomisen, laskemisen ja kirjaamisen manuaaliset vaiheet. Samalle tehtävälle voidaan määrittää myös erätöitä. Erätöiden määrittämisen ja suorittamisen vaiheet löytyvät myös muista aiheista. Tämän menettelyn suorittaminen edellyttää myyntipisteellä tehtyjä ja Dynamics AX:ään siirrettyjä tapahtumia. Tämä tallenne käyttää esittelytietojen USRT-yritystä. Tämä ohje voi viitata Microsoft Dynamics AX:ään. Huomaa, että Dynamics AX:n nimi on nyt Microsoft Dynamics 365 for Operations.
 
 1. Valitse Kaikki työtilat > .. > Vähittäismyymälän myyntitiedot.
 2. Valitse Uusi laskelma.
@@ -47,5 +47,4 @@ Tässä menettelyssä kerrotaan myymälän laskelman luomisen, laskemisen ja kir
 10. Valitse Sulje.
 11. Siirry kohtaan Vähittäismyynti ja kauppa > Kanavat > Vähittäismyymälän myyntitiedot.
 12. Valitse Kirjatut laskelmat -välilehti.
-
 

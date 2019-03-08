@@ -1,13 +1,13 @@
 ---
-title: "Kulujenhallinnan mobiilityötila"
-description: "Tässä ohjeaiheessa on tietoja kulujen hallinnan mobiilityötilasta. Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Käyttäjät voivat myös luoda nopeasti kulurivin liitteenä olevan kuitin avulla sekä luoda ja hallita omia kuluraporttejaan."
+title: Kulujenhallinnan mobiilityötila
+description: Tässä ohjeaiheessa on tietoja kulujen hallinnan mobiilityötilasta. Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Käyttäjät voivat myös luoda nopeasti kulurivin liitteenä olevan kuitin avulla sekä luoda ja hallita omia kuluraporttejaan.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 6ec9966826830e9ceaa3ed7e1b06e2cb89e8a780
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344337"
 ---
-
 # <a name="expense-management-mobile-workspace"></a>Kulujen hallinnan mobiilityötila
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 03/26/2018
 Tässä ohjeaiheessa on tietoja **Kulujen hallinta** -mobiilityötilasta. Työtilan avulla käyttäjät voivat siepata ja ladata kuitteja, jotka voi liittää myöhemmin kuluraportteihin. Käyttäjät voivat myös luoda nopeasti kulurivin liitteenä olevan kuitin avulla sekä luoda ja hallita omia kuluraporttejaan. Hyväksyjät voivat myös tarkastella heille määritettyjä kuluraportteja **Kulujen hallinta** -mobiilityötilassa sekä joko hyväksyä tai hylätä nämä kuluraportit.
 
 
-Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
+Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations Mobile -sovelluksella.
 
 
 ## <a name="overview"></a>Yleiskuvaus
@@ -42,7 +41,7 @@ Moni organisaatio edellyttää, että työntekijän hyvitettäväksi lähetettä
 
 Käyttäjät voivat tehdä **Kulujen hallinta** -mobiilityötilassa seuraavat tehtävät:
 
-- ottaa kuvan kuitista ja ladata sen Microsoft Dynamics for Finance and Operationsiin. Voit sitten liittää kuvan kuluraporttiin myöhemmin.
+- ottaa kuvan kuitista ja ladata sen Microsoft Dynamics 365 for Finance and Operationsiin. Voit sitten liittää kuvan kuluraporttiin myöhemmin.
 - Ladata tiedoston siepattuna kuittina. Voit sitten liittää tiedostoon kuluraporttiin myöhemmin.
 - Luoda uuden kulurivin liitetystä kuitista. Voit sitten lisätä rivinimikkeen kuluraporttiin myöhemmin, ja lähettää sen hyväksyntää ja hyvitystä varten.
 
@@ -61,10 +60,10 @@ Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, voit käyt
 Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations 
-Jos Microsoft Dynamics 365 for Finance and Operations on otettu käyttöön organisaatiossa, järjestelmänvalvojan on julkaistava **Kulujen hallinta** -mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Jos Microsoft Dynamics 365 for Finance and Operations on otettu käyttöön organisaatiossa, järjestelmänvalvojan on julkaistava **Kulujenhallinta**-mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operations -versio 1611, johon on asennettu vähintään ympäristöpäivitys 3.
-Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations -versio 1611, jossa on vähintään ympäristöpäivitys 3, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611 ja platform update 3 tai uudempi
+Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsin versio 1611 ja platform update 3 tai uudempi, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
 
 <table>
 <thead>
@@ -80,7 +79,7 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations 
 <td>Järjestelmänvalvoja</td>
 <td>KB 4019015 on X++-päivitys tai metatietojen korjaus, joka sisältää <strong>Kulujen hallinta</strong> -mobiilityötilan. Järjestelmänvalvojan on toimittava seuraavasti asentaakseen KB 4019015 -päivityksen.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Lataa metatietojen hotfix-korjaus Microsoft Dynamics Lifecycle Servicesistä (LCS)</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Metatietojen hotfix-korjauksen lataaminen Microsoft Dynamics Lifecycle Servicesistä (LCS)</a>.</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Asenna metatietojen korjaustiedosto</a>.</li>
 <li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Luo käyttöön otettava paketti</a>, joka sisältää <strong>ApplicationSuite</strong>- ja <strong>ExpenseMobile</strong>-mallit ja lataa sitten käyttöön otettava paketti LCS:ään.</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Ota käyttöönotettava paketti käyttöön</a>.</li>
@@ -94,7 +93,7 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operations 
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Lataa ja asenna Dynamics 365 for Operations -mobiilisovellus
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Lataa ja asenna Dynamics 365 for Operations mobile -sovellus.
 Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 - [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
@@ -243,4 +242,3 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 22. Valitse **Lähetä**.
 23. Kirjoita tarvittaessa kommentit hyväksyjälle.
 24. Valitse **Valmis**.
-

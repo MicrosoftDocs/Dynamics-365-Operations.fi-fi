@@ -1,14 +1,14 @@
 ---
 title: Taloushallinnon konsolidoinnit ja valuutan muunto
-description: "Tässä ohjeaiheessa käsitellään kirjanpidon taloushallinnon konsolidointeja ja valuutan muuntoja."
+description: Tässä ohjeaiheessa käsitellään kirjanpidon taloushallinnon konsolidointeja ja valuutan muuntoja.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: 8427d53bac3216d362b2bf8983a847f069351b3b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353997"
 ---
-
 # <a name="financial-consolidations-and-currency-translation"></a>Taloushallinnon konsolidoinnit ja valuutan muunto
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään tapaa, jolla sekä Microsoft Dynamics 365 for Finance and Operations että taloushallinnon raportointi käyttävät konsolidointeja. Siinä käsitellään skenaarioita, joihin sisältyy monen yrityksen raportointi, koonti, eliminointi ja vähimmäisosuus. Siinä selitään myös, miten käsitellään erikoistilanteita, kuten skenaarioita, joissa yrityksillä on erilaiset tilikaudet tai tilikartat.
+Tässä ohjeaiheessa käsitellään tapaa, jolla sekä Microsoft Dynamics 365 for Finance and Operations että talousraportointi tekevät konsolidointeja. Siinä käsitellään skenaarioita, joihin sisältyy monen yrityksen raportointi, koonti, eliminointi ja vähimmäisosuus. Siinä selitään myös, miten käsitellään erikoistilanteita, kuten skenaarioita, joissa yrityksillä on erilaiset tilikaudet tai tilikartat.
 
 Tämä ohjeaihe on kirjoitettu käyttäjille ja toiminnallisille konsulteille. Siinä oletetaan, että lukijoilla on yleistason tietämys Finance and Operationsista ja taloushallinnon raportoinnista. Perusasetuksia ei käsitellä.
 
@@ -181,4 +180,3 @@ Taloushallinnan raportointi tukee esimerkiksi seuraavia konsolidointiskenaarioit
 
 ## <a name="generating-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 Lisätietoja skenaarioista, joissa voidaan laatia konsolidoituja raportteja, on kohdassa [Konsolidoitujen raporttien laatiminen](./generating-consolidated-financial-statements.md).
-

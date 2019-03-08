@@ -1,13 +1,13 @@
---- 
+---
 title: Ostopalautustilauksen luonti
-description: "Seuraavassa menettelyssä kuvataan, miten luot ostopalautustilauksen kopioimalla toimittajan laskuasiakirjan rivit uuteen ostotilaukseen käyttämällä Hyvityslasku-toimintoa."
+description: Seuraavassa menettelyssä kuvataan, miten luot ostopalautustilauksen kopioimalla toimittajan laskuasiakirjan rivit uuteen ostotilaukseen käyttämällä Hyvityslasku-toimintoa.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e080252006d889e2f27db2bccb7b541f3ee4cf9e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9124100f84afb13acc2ac9dda7b9483afb01754
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354135"
 ---
 # <a name="create-a-purchase-return-order"></a>Ostopalautustilauksen luonti
 
@@ -77,5 +77,4 @@ Seuraavassa menettelyssä kuvataan, miten luot ostopalautustilauksen kopioimalla
     * Tätä kenttää käytetään syöttämään viite, jota käytetään tositteena tuotteen vastaanoton kirjauskansiossa.  
 5. Valitse OK.
     * Tavarat on nyt tallennettu lähetetyiksi ostopalautustilauksella, ja sitä vastaava tuotteen vastaanoton kirjauskansio on luotu. Voit käyttää Tuotteen vastaanotto -toimintoa ostotilauksesta luotujen kirjauskansioiden tarkasteluun selvittääksesi mitä on vastaanotettu tai palautettu ja milloin.  
-
 

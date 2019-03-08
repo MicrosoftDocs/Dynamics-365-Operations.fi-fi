@@ -1,13 +1,13 @@
 ---
 title: Hankinnan aloitussivu
-description: "Tässä aiheessa on luettelo hankinnan ohjeaiheista ja muista resursseista."
+description: Tässä aiheessa on luettelo hankinnan ohjeaiheista ja muista resursseista.
 author: mkirknel
 manager: AnnBe
 ms.date: 09/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 091b50c26cf596fc03e42f60fc662b8d1f25f06b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338587"
 ---
-
 # <a name="procurement-and-sourcing-home-page"></a>Hankinnan aloitussivu
 
 [!include [banner](../includes/banner.md)]
@@ -55,12 +54,12 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 -   [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md)
 -   [Toimittajayhteistyö asiakkaiden kanssa](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md)
--   [Määritä ja ylläpidä toimittajayhteistyötä](set-up-maintain-vendor-collaboration.md)
--   [Microsoft Dynamics 365 Finance and Operationsin saapuvan tavaralähetyksen esittelykäsikirjoitus](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(tiedote)
+-   [Toimittajayhteistyön määrittäminen ja hallinta](set-up-maintain-vendor-collaboration.md)
+-   [Microsoft Dynamics 365 for Finance and Operationsin saapuvan tavaralähetyksen esittelykomentosarja](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(tiedote)
 -   [Tavaralähetysvaraston valvonta toimittajayhteistyön avulla](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
--   [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md) (vain Dynamics AX:n helmikuun 2016 ja toukokuun 2016 versiot)
+-   [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md) (vain helmikuun ja toukokuun 2016 Dynamics AX -versiot)
 -   [Käyttöoikeuksien määrittäminen toimittajaportaalin käyttäjille](configure-security-vendor-portal-users.md) (vain Finance and Operationsin toukokuun 2016 versiot)
--   [Toimittajayhteistyön mobiilityötila Microsoft Dynamics 365 for Finance and Operations -sovellusta varten](vendor-collaboration-mobile-workspace.md)
+-   [Microsoft Dynamics 365 for Finance and Operations -sovelluksen toimittajayhteistyön mobiilityötila](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Tuoteluokan hallinta
 -   [Tuotteiden hankintaluettelot](procurement-catalogs.md)
@@ -102,7 +101,6 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 -   [Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (raportti)
 -   [Ostokäytännöt](purchase-policies.md)
 -   [Luo ostokäytännöt](tasks/create-purchasing-policies.md)
-
 
 
 

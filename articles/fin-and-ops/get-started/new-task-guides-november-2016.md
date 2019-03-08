@@ -1,13 +1,13 @@
 ---
-title: "Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)"
-description: "Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics 365 for Operationsin Microsoftin (marraskuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu."
+title: Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)
+description: Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics 365 for Operationsin Microsoftin (marraskuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9cba30560762b5f647621aafb8db19241523f904
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348914"
 ---
-
 # <a name="new-or-updated-task-guides-november-2016"></a>Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics 365 for Operationsin Microsoftin (marraskuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
 
-Yhdistetty APQC-kirjasto (marraskuu 2016, kaikki kielet) sisältää tehtäväoppaat, jotka on tarkoitettu käytettäväksi ohjeeksi Microsoft Dynamics 365 for Operationsille, Microsoft Dynamics 365 for Operations -ympäristöpäivitykselle 3, Microsoft Dynamics AX -ympäristöpäivitykselle 2, Dynamics AX:n toukokuun 2016 päivitykselle ja Microsoft Dynamics AX:n helmikuun 2016 versiolle. Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
+(Marraskuu 2016, kaikki kielet) yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics 365 for Operationsin, Microsoft Dynamics 365 for Operationsin platform update 3:n, Microsoft Dynamics AX Platform update 2:n, Dynamics AX toukokuun 2016 päivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
 
 > [!NOTE]
-> Liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (\*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics 365 for Operationsin marraskuun 2016 päivityksessä eikä niitä tueta Microsoft Dynamics AX:n aiemmissa versioissa.
+> Liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (\*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics 365 for Operationsin marraskuun 2016 päivityksessä ja ettei sitä tueta Microsoft Microsoft Dynamics AX:n aiemmissa versioissa.
 
 ### <a name="accounts-payable"></a>Ostoreskontra
 
@@ -549,4 +548,3 @@ Yhdistetty APQC-kirjasto (marraskuu 2016, kaikki kielet) sisältää tehtäväop
 [Uudet tai päivitetyt tehtäväoppaat saatavilla (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat saatavilla (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
-

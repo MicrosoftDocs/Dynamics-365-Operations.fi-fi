@@ -1,13 +1,13 @@
 ---
 title: Projektin aikaraportit mobiililaitteessa
-description: "Työntekijät voivat luoda ja lähettää mobiililaitteen Omat aikaraportit (optimoitu mobiililaitteelle) -toiminnolla projektin aikaraportteja, joilla he voivat kirjata tiettyyn projektiin käytetyt tunnit."
+description: Työntekijät voivat luoda ja lähettää mobiililaitteen Omat aikaraportit (optimoitu mobiililaitteelle) -toiminnolla projektin aikaraportteja, joilla he voivat kirjata tiettyyn projektiin käytetyt tunnit.
 author: abruer
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
+ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3e09433a9bb819cf24ee74443dd7e2d80a2b6b2e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360943"
 ---
-
 # <a name="project-timesheets-on-a-mobile-device"></a>Projektin aikaraportit mobiililaitteessa
 
 [!include [banner](../includes/banner.md)]
@@ -33,8 +32,8 @@ Työntekijät voivat luoda ja lähettää mobiililaitteen **Omat aikaraportit (o
 
 Projektipäälliköt, joilla on aikaraportin hyväksymisoikeudet, voivat tarkastella ja hyväksyä projektin aikaraportteja mobiililaitteessa **Tarkistettavat aikaraportit (optimoitu mobiililaitteelle)** -sovelluksella. Mobiilisovellus ei tue taloushallinnon dimension tietojen muokkaamista tai näyttämistä. **Tarkistettavat aikaraportit (optimoitu mobiililaitteelle)** -sovellusta voi käyttää mobiililaitteen selaimessa.
 
-Tämä mobiilisovellus on yhteensopiva iPhonen ja Dynamics 365 for Finance and Operationsin ympäristöpäivityksen 15 kanssa.
-Android-käyttö tulee mahdolliseksi ympäristöpäivityksen 16 kanssa, kun se julkaistaan.
+Tämä mobiilisovelluksen iPhone-käyttö on mahdollista Dynamics 365 for Finance and Operations platform update 15:n myötä.
+Android-käyttö tulee mahdolliseksi Platform update 16:n myötä, kun se julkaistaan.
 
 <a name="create-a-project-timesheet-on-your-mobile-device"></a>Projektin aikaraportin luominen mobiililaitteessa
 ------------------------------------------------
@@ -66,4 +65,3 @@ Android-käyttö tulee mahdolliseksi ympäristöpäivityksen 16 kanssa, kun se j
 13. Valinnainen: Kirjaa lisää aikaraporttirivejä.
 
 14. Kun olet kirjannut kaikki aikaraportin rivit, lähetä aikaraportti työnkulun hyväksyntäprosessiin valitsemalla **Työnkulku** \> **Lähetä**.
-

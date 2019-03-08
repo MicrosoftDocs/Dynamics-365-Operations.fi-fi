@@ -1,13 +1,13 @@
---- 
-title: "Seuraajasuunnitelman kehittäminen"
-description: "Kun organisaatio kasvaa ja liiketoiminnan jatkamisen suunnittelu tulee ajankohtaiseksi, haluta ehkä löytää henkilön, jonka osaamisalue vastaa toisen henkilön osaamisaluetta."
+---
+title: Seuraajasuunnitelman kehittäminen
+description: Kun organisaatio kasvaa ja liiketoiminnan jatkamisen suunnittelu tulee ajankohtaiseksi, haluta ehkä löytää henkilön, jonka osaamisalue vastaa toisen henkilön osaamisaluetta.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 63999252fa00ba474d1e40f696029973f746ba2c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339185"
 ---
 # <a name="develop-succession-plan"></a>Seuraajasuunnitelman kehittäminen
 
@@ -59,5 +59,4 @@ Kun organisaatio kasvaa ja liiketoiminnan jatkamisen suunnittelu tulee ajankohta
 27. Valitse Tulos.
 28. Valitse Raportti.
     * Parhaat vastaavuudet ovat raportin alkuosassa.  Näet olevan luetellun osaamisalueaukkojen-osan.  Tämä on osaamisaluekartoituksessa mainitun tason ja henkilölle määritetyn tason välinen ero.  
-
 

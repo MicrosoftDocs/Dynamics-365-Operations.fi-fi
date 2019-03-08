@@ -1,13 +1,13 @@
 ---
-title: "Tietojen tuonti- ja vientityöt"
-description: "Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä."
+title: Tietojen tuonti- ja vientityöt
+description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360207"
 ---
-
 # <a name="data-import-and-export-jobs"></a>Tietojen tuonti- ja vientityöt
 
 [!include [banner](../includes/banner.md)]
 
-Voit luoda ja hallita tietojen tuonti- ja vientitehtäviä Microsoft Dynamics 365 for Finance and Operationsin **Tietojenhallinta**-työtilassa. Oletusarvon mukaan tietojen tuonti- ja vientiprosessi luo väliaikaisen taulun kullekin yksikölle kohdetietokantaan. Väliaikaisten taulujen avulla voit tarkistaa, puhdistaa tai muuntaa tiedot ennen niiden siirtämistä.
+Voit luoda ja hallita tietojen tuonti- ja vientitehtäviä Microsoft Dynamics 365 for Finance and Operationsissa käyttämällä **Tietojen hallinta** -työtilaa. Oletusarvon mukaan tietojen tuonti- ja vientiprosessi luo väliaikaisen taulun kullekin yksikölle kohdetietokantaan. Väliaikaisten taulujen avulla voit tarkistaa, puhdistaa tai muuntaa tiedot ennen niiden siirtämistä.
 
 > [!NOTE]
 > Tässä ohjeaiheessa oletetaan, että tunnet [tietoyksiköt](data-entities.md).
@@ -158,4 +157,3 @@ Väliaikaiset taulut voi tyhjentää **Tietojenhallinta**-työtilan **Tyhjennä 
 - **Tietoprojektit** – jos valittuna on vain tietoprojekti, kaikki valitun projektin kaikkien töiden yksiköihin kuuluvat kaikki tietueet poistetaan.
 
 Poistettavaa tietojoukkoa voi myös rajoittaa yhdistämällä asetuksia.
-

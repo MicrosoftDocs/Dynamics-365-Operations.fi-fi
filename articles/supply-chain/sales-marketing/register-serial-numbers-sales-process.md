@@ -1,13 +1,13 @@
 ---
-title: "Sarjanumeroiden rekisteröinti myyntiprosessissa"
-description: "Tässä ohjeaiheessa kerrotaan, kuinka voit rekisteröidä sarjanumeroita pakkausluetteloihin tai laskuihin myyntiprosessin aikana. Toiminto on hyödyllinen yrityksille, jotka haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille."
+title: Sarjanumeroiden rekisteröinti myyntiprosessissa
+description: Tässä ohjeaiheessa kerrotaan, kuinka voit rekisteröidä sarjanumeroita pakkausluetteloihin tai laskuihin myyntiprosessin aikana. Toiminto on hyödyllinen yrityksille, jotka haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350409"
 ---
-
 # <a name="register-serial-numbers-in-the-sales-process"></a>Sarjanumeroiden rekisteröinti myyntiprosessissa
 
 [!include [banner](../includes/banner.md)]
@@ -35,9 +34,9 @@ ms.lasthandoff: 05/08/2018
 
 Tässä ohjeaiheessa kerrotaan, kuinka voit rekisteröidä sarjanumeroita pakkausluetteloihin tai laskuihin myyntiprosessin aikana. Toiminto on hyödyllinen yrityksille, jotka haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille.
 
-Monet yritykset haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille. Näissä tilanteissa Microsoft Dynamics 365 for Finance and Operationsissa on mahdollista rekisteröidä sarjanumerot pakkausluetteloiden tai laskujen perusteella tuotteita myytäessä. Jos tuotteet myöhemmin palautettaisiinkin, voit jäljittää kunkin tuotteen laskuun ja määrittää, oletko myynyt tuotteen, ja ovatko huolto- ja takuuvelvoitteet voimassa.
+Monet yritykset haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille. Näissä tilanteissa Microsoft Dynamics 365 for Finance and Operationsin avulla on sarja numerot on mahdollista rekisteröidä pakkausluetteloiden tai laskujen perusteella tuotteita myytäessä. Jos tuotteet myöhemmin palautettaisiinkin, voit jäljittää kunkin tuotteen laskuun ja määrittää, oletko myynyt tuotteen, ja ovatko huolto- ja takuuvelvoitteet voimassa.
 
-Sinun on otettava käyttöön sarjanumerot myyntiprosessille **Seurantadimensioryhmät**-sivulla valitsemalla **Aktiivinen myyntiprosessissa** -valintaruutu. Seuraavat tapahtumat tapahtuvat sitten Microsoft Dynamics 365 for Finance and Operationsissa:
+Sinun on otettava käyttöön sarjanumerot myyntiprosessille **Seurantadimensioryhmät**-sivulla valitsemalla **Aktiivinen myyntiprosessissa** -valintaruutu. Tämän jälkeen ovat vuorossa seuraavat Microsoft Dynamics 365 for Finance and Operationsin tapahtumat:
 -   **Sarjanumerot**-pikavälilehden **Sarjanumeroiden hallinta** -asetus valitaan. Kun tämä asetus on valittuna, sinun on rekisteröitävä pakkausluettelon tai laskun kunkin nimikkeen sarjanumero.
 -   Kaikki sarjanumeroiden seurantadimensioryhmän valinnat poistetaan lukuun ottamatta **Tyhjä varasto-otto sallitaan** -asetusta. Voit valita **Tyhjä varasto-otto sallitaan** -asetuksen, jos haluat ohittaa sarjanumeroiden hallinta, jotta tuotteet voi pakata ja laskuttaa ilman sarjanumeroiden rekisteröintiä.
 
@@ -58,8 +57,8 @@ Jos järjestysnumeroa ei voi lukea tai skannata, voit luoda tyhjän rivin nimikk
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Voinko korjata tai muuttaa myyntitilaukselle kirjatut sarjanumerot?
 Kyllä, voit korjata sarjanumerot, kun seuraavat ehdot täyttyvät:
--   **Laskut** – Voit muuttaa laskuttamattomien nimikkeiden sarjanumeroita. Samalla päivitetään myös pakkausluettelo. Jos kuitenkin myyntitilausrivi on korjattu rekisteröimällä negatiivinen määrä, et voi muuttaa myyntitilausrivin sarjanumeroja.
--   **Pakkausluettelo** – Et voi korjata sarjoitettuja nimikkeitä sisältävää pakkausluetteloriviä osittain. Sinun on palautettava rivin koko määrä. Jos pakkausluettelo on peruutettu tai korjattu, sinun ei tarvitse rekisteröidä palautettuja sarjanumeroja uudelleen, kun luot uuden pakkausluettelon samoille sarjoitetuille nimikkeille. Rekisteröityjä numeroita käytetään.
+-   **Laskut** – Voit muuttaa laskuttamattomien nimikkeiden sarjanumeroita. Samalla päivitetään myös pakkausluettelo. Jos kuitenkin myyntitilausrivi on korjattu rekisteröimällä negatiivinen määrä, et voi muuttaa myyntitilausrivin sarjanumeroja.
+-   **Pakkausluettelot** – Et voi korjata sarjoitettuja nimikkeitä sisältävää pakkausluetteloriviä osittain. Sinun on palautettava rivin koko määrä. Jos pakkausluettelo on peruutettu tai korjattu, sinun ei tarvitse rekisteröidä palautettuja sarjanumeroja uudelleen, kun luot uuden pakkausluettelon samoille sarjoitetuille nimikkeille. Rekisteröityjä numeroita käytetään.
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>Voinko tarkastella sarjanumeroita, jotka toimitettiin tietyllä pakkausluettelolla tai sisältyivät tiettyyn laskuun?
 Kyllä, voit suorittaa kyselyn pakkausluettelon kirjauskansioriviltä tai laskun kirjauskansioriviltä tarkastellaksesi kaikkia sarjanumeroita, jotka on sisällytetty asiakirjaan.
@@ -78,7 +77,6 @@ Kyllä, vähittäismyyntipiste kehottaa käyttäjää lisäämään sarjanumeron
 Tämä toiminnallisuus on käytettävissä kaikille rooleille, jotka voivat ylläpitää myynnin pakkausluetteloita ja laskuja. Seuraavat velvollisuudet antavat työntekijöille mahdollisuuden korjata sarjanumeroita ja rekisteröidä tyhjiä merkintöjä sellaisille sarjanumeroille, joita ei voida lukea tai skannata:
 -   Ylläpidä sarjanumeroiden korjausta
 -   Ylläpidä lukukelvottomien sarjanumeroiden rekisteröintiä
-
 
 
 

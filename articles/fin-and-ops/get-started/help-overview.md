@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations -ohjejärjestelmä"
-description: "Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen."
+title: Finance and Operations -ohjejärjestelmä
+description: Tässä ohjeaiheessa on Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen.
 author: margoc
 manager: AnnBe
 ms.date: 11/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,22 +18,21 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350731"
 ---
-
 # <a name="finance-and-operations-help-system"></a>Finance and Operations -ohjejärjestelmä
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe sisältää Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen.
+Tässä ohjeaiheessa on Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen.
 
 > [!NOTE]
-> Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
+> Seuraavat kolme tuotetta liittyvät toisiinsa läheisesti: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tällöin aiheissa, jotka liittyvät ensisijaisesti Retail, tuotteen nimi on Dynamics 365 for Retail. Aiheissa, jotka liittyvät ensisijaisesti Talentiin, tuotteen nimi on Dynamics 365 for Talent. Ja aiheissa, jotka liittyvät ensisijaisesti ydintuotteeseen, tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
 Kaikkien seuraavien tuotteiden jakama ohjejärjestelmä:
 
@@ -60,7 +59,7 @@ Docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/unified-operations](
 - **Uusin sisältö**– sivusto on nopea ja joustava tapa luoda, toimittaa ja päivittää tuoteohjeistusta. Niinpä saatkin aina käyttöösi uusimmat tekniset tiedot.
 - **Asiantuntijoiden kirjoittama sisältö**– sivusto sisältää monipuolisesti tuoteohjeistusta, jota yhteisön jäsenet (sekä Microsoftin sisällä että ulkopuolella) voidaan täydentää.
 - **Erityyppisen sisällön käyttö** – saat sivustossa nopeasti käyttöösi erilaista Dynamics 365 for Finance and Operationsia koskevaa sisältöä, kuten tehtäväoppaita, videoita ja ohjeaiheita.
-- **Liiketoimintaprosesseja tukeva sisältö**– sivustossa on liiketoimintaprosesseihin keskittyvää sisältöä, joka hyödyntää Microsoft Dynamics Lifecycle Services (LCS) -palvelujen liiketoimintaprosessin mallintajaa.
+- **Liiketoimintaprosesseja tukeva sisältö** – sivustossa on liiketoimintaprosesseihin keskittyvää sisältöä, joka hyödyntää Microsoft Dynamics Lifecycle Services (LCS) -palvelujen liiketoimintaprosessin mallintajaa.
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Haku sivustosta docs.microsoft.com
 
@@ -158,7 +157,7 @@ Toimi seuraavasti **Järjestelmän parametrit** -sivulla:
 2. Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
 3. Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
 
-    - Valitse Finance and Operationsissa Microsoft-sisältöä varten helmikuun 2017 QPC Unified Library for Microsoft Dynamics 365 for Finance and Operations.
+    - Valitse Finance and Operationsissa Microsoft-sisältöä varten Microsoft Dynamics 365 for Finance and Operationsin helmikuun 2017 yhdistetyn QPC-kirjaston.
     - Retail-kirjasto julkaistaan heinäkuussa.
     - Talent-kirjastoa ei tarvitse valita, sillä järjestelmä muodostaa yhteyden oikeaan kirjastoon puolestasi.
 
@@ -194,10 +193,9 @@ Seuraavassa taulussa on sivustoluettelo. Jos sivuston nimen vieressä on tähti 
 |------------------------------------------------------------------------------------------------|-------------|
 | [Docs.microsoft.com](/dynamics365/)                                                            | Kaiken Dynamics 365:n tuoteohjeistuksen ylläpito tai linkitys. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsoftin maksuton eLearning-sivusto. |
-| [Käyttöikäpalvelut](https://lcs.dynamics.com/)\*                                              | Pilvipalveluihin perustuva yhteinen työtila, jota asiakkaat ja heidän kumppaninsa voivat käyttää Dynamics 365 for Finance and Operations -projektien hallintaa ennen myyntiä, täytäntöönpanon aikana ja sen työvaiheissa. Sivustossa on apua käyttöönoton kaikissa vaiheissa. |
+| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Sisältää pilvipohjaista yhteistä työtilaa, jota asiakkaat ja heidän kumppaninsa voivat käyttää hallitakseen Dynamics 365 for Finance and Operations -projekteja ennen myyntiä, täytäntöönpanossa ja operaatioissa. Sivustossa on apua käyttöönoton kaikissa vaiheissa. |
 | [Tuen blogi](http://aka.ms/AXSupportBlog)                                                    | Sisältää Dynamics 365 for Finance and Operationsin tukiryhmän julkaisemia vinkkejä. |
 | [Docs.microsoft.com/previous versions](https://docs.microsoft.com/previous-versions/dynamics/) | Sisältää edellisten versioiden sisällön. |
 | [Dynamics-yhteisö](https://community.dynamics.com/)                                          | Ylläpitää blogeja, keskustelupalstoja ja videoita. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Sisältää arviointi- ja myyntitietoja. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Sisältää Finance and Operationsin koulutusresursseja ja ladattavia raportteja. Lisäksi se on palvelupakettien omistajien ensisijainen tukisivusto. Joidenkin sivuston resurssien käyttö saattaa edellyttää palvelupakettia. |
-

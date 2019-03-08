@@ -1,13 +1,13 @@
---- 
-title: "Määritä uudet osastot"
-description: "Osastot ovat toimintayksiköitä, jotka vastaavat liiketoiminta-alueita, kuten myyntiä tai kirjanpitoa."
+---
+title: Määritä uudet osastot
+description: Osastot ovat toimintayksiköitä, jotka vastaavat liiketoiminta-alueita, kuten myyntiä tai kirjanpitoa.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6dedddf305e303de5b284b34420cd0eda5170ed1
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342842"
 ---
 # <a name="define-new-departments"></a>Määritä uudet osastot
 
@@ -51,5 +51,4 @@ Osastot ovat toimintayksiköitä, jotka vastaavat liiketoiminta-alueita, kuten m
     * Voit valita osastohierarkiaa julkaistaessa, milloin muutokset tulevat voimaan. Muutokset voidaan päivätä tulevaisuuteen. Voit esimerkiksi tietää, että tilivuoden alussa lisätään osasto. Voit määrittää voimaantulopäivän tilivuoden alkuun ja hierarkian muutokset tulevat voimaan kyseisenä päivänä.  
 16. Kirjoita arvo Kuvaa muutokset -kenttään.
 17. Valitse Julkaise.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Selvitä jäljellä olevan summa"
-description: "Voit selvittää jäljellä olevan summan tilitystehtävästä kohdistamalla summan kirjanpitotilille."
+title: Selvitä jäljellä olevan summa
+description: Voit selvittää jäljellä olevan summan tilitystehtävästä kohdistamalla summan kirjanpitotilille.
 author: mikefalkner
 manager: aolson
 ms.date: 10/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
+ms.openlocfilehash: 408a36a7cf221463b38260bd8830b422e58ccb64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
-ms.openlocfilehash: e67bd36adc92bffea48087d0322ab14e9c066a4e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/06/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367199"
 ---
-
 # <a name="settle-remainder"></a>Selvitä jäljellä olevan summa
 
 [!include [banner](../includes/banner.md)]
@@ -71,4 +70,3 @@ Jäljellä olevan summan voi selvittää seuraavasti:
 7)  Voit luoda halutessasi myös maksukirjauskansion, jossa tilityksen jäljellä oleva summa on, tai vain kirjata sen ilman kirjauskansiota. Luo maksukirjauskansio valitsemalla **Kyllä** **Muokkaa kirjauskansiossa** -kohdassa Voi muokata luomaasi maksukirjauskansiota.
 8)  Valitse **Selvitä jäljellä olevan summa**. Jos valitsit maksukirjauskansion luomisen, painikkeen tekstinä on **Luo kirjauskansio**. Valitse sen sijaan **Luo kirjauskansio**.
 9)  Jos loit maksukirjauskansion, kirjauskansion sivu avautuu, kun valitsit **Selvitä jäljellä olevan summa**. Kirjauskansioon lisätään kirjauskansion rivi, jossa summana on selvitettävä jäljellä oleva summa ja vastatilinä jäljellä olevan summan selvitystili. Jos olet lisännyt asiakkaan tai toimittajan siksi, että voi siirtää tilityssumman toiselle asiakkaalle tai toimittajalle, kirjauskansioon lisätään rivi, jolla tilityssumma siirretään kyseiselle asiakkaalle tai toimittajalle.
-

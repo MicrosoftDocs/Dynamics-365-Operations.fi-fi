@@ -1,13 +1,13 @@
 ---
-title: "Työvoiman mittarit - Power BI -sisältö"
-description: "Tässä ohjeaiheessa käsitellään työvoiman mittareiden Power BI -sisältöä Siinä selitetään, miten sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä."
+title: Työvoiman mittarien Power BI -sisältö
+description: Tässä ohjeaiheessa käsitellään työvoiman mittarien Power BI -sisältöä. Siinä selitetään, miten sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,27 +18,26 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345786"
 ---
-
-# <a name="workforce-metrics-power-bi-content"></a>Työvoiman mittarit - Power BI -sisältö
+# <a name="workforce-metrics-power-bi-content"></a>Työvoiman mittarien Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään **työvoiman mittareiden** Power BI -sisältöä Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
+Tässä ohjeaiheessa käsitellään **työvoiman mittarien** Microsoft Power BI -sisältöä Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 
-## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttö
-**Työvoimamittarien** Power BI -sisältö näkyy **Henkilöstön hallinta** työtilassa, jos käytät jotain näistä tuotteista:
+## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
+**Työvoiman mittarien** Power BI -sisältö näkyy **Henkilöstön hallinta** -työtilassa, jos käytät jotain näistä tuotteista:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittarit, jotka sisältyvät Power BI -sisältöön
 Seuraavassa taulukossa ovat jokaisessa raportissa näkyvät mittarit.
 
 | Raportti                                           | Mittarit |
@@ -57,9 +56,9 @@ Seuraavassa taulukossa ovat jokaisessa raportissa näkyvät mittarit.
 | Työntekijöiden syntymäpäivät                               | Syntymäpäivät tässä kuussa, syntymäpäivät ensi kuussa, työntekijöiden syntymäpäivät ja syntymäpäivät kuukauden ja osaston mukaan |
 | Joukkotyöhönottoprojektit                               | Joukkotyöhönottoprojekteja yhteensä, joukkotyöhönottoprojektit tilan mukaan, joukkotyöhönottoprojektit osaston ja omistajan mukaan, joukkotyöhönottoprojektit työn mukaan ja joukkotyöhönottoprojektit |
 
-Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI:ssä on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-Muista ladata käyttämääsi Microsoft Dynamics 365 -versiota vastaava **Työvoiman mittarit** – Power BI -sisältö.
+Muista ladata käyttämääsi Microsoft Dynamics 365 -versiota vastaava **työvoiman mittarien** Power BI -sisältö.
 
 > [!NOTE]
 > Lifecycle Servicesin .pbix-tiedostot koskevat vain Finance and Operationsia.
@@ -88,4 +87,3 @@ Seuraavassa taulukossa on esitetty yksiköt, joihin sisältö perustuu.
 | Työntekijätrendi           | Työntekijät ajan kuluessa, henkilöstömäärä, yritys ja toimi                                 | Yritys, maantieteellinen sijainti, työntekijän nimi, raportoinnin kohde, kalenterin vastakirjaus, päivämäärä, työntekijän nimike, demografia, työsuhde, työ |
 | Joukkotyöhönottoprojekti        | Joukkotyöhönottoprojektien lukumäärä, projektin omistaja ja projektin tila                     | Yritys, joukkotyöhönottorivi |
 | Joukkotyöhönottorivi           | Osasto, työsuhdetyyppi ja toimi                                           | Päivämäärä, työ, joukkotyöhönottoprojekti |
-

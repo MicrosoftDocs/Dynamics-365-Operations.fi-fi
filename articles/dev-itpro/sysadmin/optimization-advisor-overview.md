@@ -1,33 +1,32 @@
 ---
-title: "Optimointityökalu"
-description: "Tässä ohjeaiheessa käsitellään optimaalisen Microsoft Dynamics 365 Finance and Operations -konfiguraation varmistamista optimointityökalun avulla."
+title: Optimointityökalu
+description: Tässä ohjeaiheessa käsitellään optimaalisen Microsoft Dynamics 365 Finance and Operations -konfiguraation varmistamista optimointityökalun avulla.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 206b8a23a52d412d1810b8a355b09ecc461f00b3
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335620"
 ---
-
-# <a name="optimization-advisor"></a>Optimointityökalu
+# <a name="optimization-advisor"></a>Optimointineuvoja
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +48,7 @@ Normaalit suojauskäytännöt koskevat optimointimahdollisuuksia. Esimerkiksi **
 
 Kun käytät joitain optimointimahdollisuuksia, järjestelmä laskee mahdollisuuden vaikutuksen liiketoimintaprosessien suorittamiseen kuluvan ajan vähennyksenä. Tämä ominaisuus ei ole valitettavasti käytettävissä kaikissa optimointimahdollisuuksissa.
 
-Lisätietoja optimointityökalusta on lyhyessä videossa [Dynamics 365 for Finance and Operationsin optimointityökalu](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
+Lisätietoja optimointineuvojasta on lyhyessä videossa [Dynamics 365 for Finance and Operationsin optimointineuvoja](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
 
 ## <a name="optimization-rules"></a>Optimointisäännöt
 
@@ -95,5 +94,4 @@ Voit poistaa tiettyjen sääntöjen aktivoinnin valitsemalla ensin säännön mu
 
 [Uusien sääntöjen luominen](./create-rules-optimization-advisor.md)
 
-[Dynamics 365 for Finance and Operations -sovelluksen optimointityökalu (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
-
+[Dynamics 365 for Finance and Operationsin optimointineuvoja (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

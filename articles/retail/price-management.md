@@ -1,14 +1,14 @@
 ---
-title: "Vähittäismyynnin hintojen hallinta"
-description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Retailin myyntihintojen luontiin ja hallintaan liittyviä käsitteitä."
+title: Vähittäismyynnin hintojen hallinta
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Retailin myyntihintojen luontiin ja hallintaan liittyviä käsitteitä.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -17,15 +17,14 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362139"
 ---
-
-# <a name="retail-sales-price-management"></a>Vähittäismyynnin hintojen hallinta
+# <a name="retail-sales-price-management"></a>Vähittäismyyntihintojen hallinta
 
 [!include [banner](includes/banner.md)]
 
@@ -232,4 +231,3 @@ Lisäksi **vain** vähittäismyynnin hinnoittelumoduuli tukee seuraavia hinnoitt
 
 - Hinta perustuu tuotedimensioihin seuraavassa järjestyksessä: tarkin varianttihinta, vähiten tarkin varianttihinta ja päätuotteen hinta. Kahta tuotedimensiota (kuten väriä ja kokoa) käyttämällä määritettyä hintaa käytetään ennen hintaa, joka on määritetty käyttämällä vain yhtä tuotedimensiota (kuten kokoa).
 - Hinnoittelua ja alennuksia voidaan ohjata samalla hintaryhmällä.
-

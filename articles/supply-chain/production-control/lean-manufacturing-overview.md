@@ -1,13 +1,13 @@
 ---
 title: Lean-valmistuksen yleiskatsaus
-description: "Tässä artikkelissa on yleiskatsaus ja kuvaus Microsoft 365 for Finance and Operationsin Lean-valmistuksen toiminnoista."
+description: Tässä artikkelissa on yleiskatsaus ja kuvaus Dynamics 365 for Finance and Operationsin Lean-valmistuksen toiminnoista.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c6db940548018c9d6bbb31891c21f7c334ba8956
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 99030966587a2784f61cecbfc7f9985f75f6d779
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359885"
 ---
-
 # <a name="lean-manufacturing-overview"></a>Lean-valmistuksen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on yleiskatsaus ja kuvaus Microsoft 365 for Finance and Operationsin Lean-valmistuksen toiminnoista.
+Tässä artikkelissa on yleiskatsaus ja kuvaus Microsoft Dynamics 365 for Finance and Operationsin Lean-valmistuksen toiminnoista.
 
 Lean-valmistus sisältää työkaluja lean-työvaiheiden mallintamiseen. Nämä työkalut tukevat seuraavia käsitteitä ja liiketoiminnan tehtäviä sekä edistävät niitä:
 -   Lean-valmistuksen perustan luonti mallintamalla tuotanto- ja logistiikkaprosessit tuotantovirroiksi.
@@ -52,7 +51,7 @@ Voit luoda perustan lean-valmistukselle mallintamalla tuotanto- ja logistiikkapr
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Kysynnän vaatimusten ilmaiseminen kanbanien avulla
 Imujärjestelmä tuottaa tavaroita silloin, kun tavaroita tarvitaan. Tämä käytäntö lyhentää toimitusten läpimenoaikoja ja pienentää ylimääräistä varastoa. Voit käyttää kanbaneja tuotantovirtoihin perustuvien vaatimusten suunnitteluun, seurantaan ja käsittelyyn. Kanban-kehikko luodaan luomalla kanban-säännöt määrittämään, milloin kanbanit luodaan ja miten vaatimukset täytetään. Luotavia kanban-sääntöjä on kahta tyyppiä: valmistusäännöillä luodaan prosessin kanban-töitä ja kanban-ottosäännöillä luodaan siirron kanban-töitä. Voit määrittää seuraavat täydennysstrategiat:
--   **Vakiomäärän** kanban-säännöt liittyvät vakiomääräisiin käsittely-yksiköihin, ja aktiivisten kanbanien määrä pysyy vakiona. Aina kun kaikki kanbanin tuotteet on kulutettu ja käsittely-yksiköt tyhjennetään manuaalisesti, uusi saman tyypin kanban luodaan. Kun luot vakiomäärän kanban-sääntöjä, voit laskea optimaaliset käytettävät kanban-määrät ja tuotemäärät. Laskelma ottaa huomioon ennusteet, avoimien tilausten todellisen kysynnän, nimikkeiden täydennyksen läpimenoajan ja historiallisen kysynnän.
+-   **Vakiomäärän** kanban-säännöt liittyvät vakiomääräisiin käsittely-yksiköihin, ja aktiivisten kanbanien määrä pysyy vakiona. Aina kun kaikki kanbanin tuotteet on kulutettu ja käsittely-yksiköt tyhjennetään manuaalisesti, uusi saman tyypin kanban luodaan. Kun luot vakiomäärän kanban-sääntöjä, voit laskea optimaaliset käytettävät kanban-määrät ja tuotemäärät. Laskelma ottaa huomioon ennusteet, avoimien tilausten todellisen kysynnän, nimikkeiden täydennyksen läpimenoajan ja historiallisen kysynnän.
 -   **Ajoitetut** kanban-säännöt täydentävät pääsuunnittelun laskemat vaatimukset. Pääsuunnittelu luo suunniteltuja kanbanien, jotka voidaan vahvistaa kanbaneiksi.
 -   **Tapahtuman** kanban-säännöt täydentävät myyntitilausriveiltä, tuotannon tuoterakenneriveiltä, kanban-rivien tai varaston vähimmäisasetuksista peräisin olevia vaatimuksia. Kun tapahtuman kanbaneja luodaan, ne tarvekohdistetaan lähteen tarpeisiin.
 
@@ -79,7 +78,6 @@ Kanban-työt on integroitu täysin Finance and Operationsin varastotapahtumien n
 Lean-valmistus tukee myös niiden palvelujen osto- ja laskutusprosesseja, joihin alihankintana suoritettavat tehtävät viittaavat.
 -   Voit määrittää ostosopimuksen rivejä ja palveluja alihankintana suoritettaviin tehtäviin.
 -   Voit luoda hankinnan ja palvelujen laskuttamisen tueksi kausittaisia ostotilauksia ja vastaanottoilmoituksia.
-
 
 
 

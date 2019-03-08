@@ -1,13 +1,13 @@
 ---
 title: Excelin budjettisuunnittelumallit
-description: "Tässä aiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa."
+description: Tässä ohjeaiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanSetLayout
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 079aa6bb4be020fc050b81c400050ed23d48f6ca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 156688b705337331e083ebc19fded57b028acb67
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337046"
 ---
-
 # <a name="budget-planning-templates-for-excel"></a>Excelin budjettisuunnittelumallit
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa.
+Tässä ohjeaiheessa kuvataan, miten luodaan Microsoft Excel -malleja, joita voidaan käyttää budjettisuunnitelmissa.
 
 Tässä ohjeaiheessa kuvataan, miten luodaan Excel-malleja, joita käytetään budjettisuunnitelmissa käyttämällä vakionäytetietoja ja Järjestelmänvalvoja-käyttäjätunnusta. Saat lisätietoja budjettisuunnittelusta artikkelista [Budjetin suunnittelun yhteenveto.](budget-planning-overview-configuration.md) Voit myös seurata [Budjettisuunnittelun perusteet](budget-plan.md) -opetusohjelma oppiaksesi perustiedot moduulin määrityksestä sekä käytön periaatteet.
 
@@ -61,7 +60,7 @@ Excel-malli sisältää budjettisuunnitelman asiakirja-asettelun kaikki osat, jo
 [![Esimerkki](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> Voit välttää mahdollisia ongelmia budjettisuunnitelman tietojen tarkastelemisessa ja muokkaamisessa Excelissä, kun sama käyttäjä on kirjautunut sekä Microsoft Dynamics 365 for Finance and Operationsiin että Microsoft Dynamics Office -apuohjelman Data Connectoriin.
+> Voit välttää mahdollisia ongelmia budjettisuunnitelman tietojen tarkastelemisessa ja muokkaamisessa Excelissä, jos sama käyttäjä on kirjautunut sekä Microsoft Dynamics 365 for Finance and Operationsiin että Microsoft Dynamics Office -apuohjelman tietoyhdistimeen.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Otsikon lisääminen budjettisuunnitelman asiakirjamalliin
 Jos haluat lisätä otsikkotietoja, valitse ylin rivi Excel-tiedostossa ja lisää tyhjiä rivejä. Lisää otsikkokentät Excel-tiedostoon valitsemalla **Rakenne** **Data Connector** -sovelluksessa.
@@ -136,7 +135,6 @@ Kyllä, useimmat Excelin perusominaisuudet toimivat budjettisuunnitelmamalleissa
 Voit myös luoda ja käyttää pivot-taulukoita ja kaavioita budjetin tietojen ylimääräisiin ryhmittelyihin ja visualisointeihin. Valitse **Tiedot**-välilehden **Yhteydet**-ryhmässä **Päivitä kaikki** ja sitten **Yhteyden ominaisuudet**. Valitse **Käyttö**-välilehti ja valitse kohdassa **Päivitä** **Päivitä tiedot, kun tiedosto avataan** -valintaruutu. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
-
 
 
 

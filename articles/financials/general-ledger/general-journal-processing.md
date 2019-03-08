@@ -1,13 +1,13 @@
 ---
-title: "Yleisen kirjauskansion käsittely"
-description: "Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 for Finance and Operationsin ominaisuuksia, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja joiden avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia."
+title: Kirjanpidon kirjauskansion käsittely
+description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Finance and Operationsin ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja jonka avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf744bc41ffcca6d029da5dd2031ada607a0109b
 ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358436"
 ---
-
-# <a name="general-journal-processing"></a>Yleisen kirjauskansion käsittely
+# <a name="general-journal-processing"></a>Kirjanpidon kirjauskansion käsittely
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 for Finance and Operationsin ominaisuuksia, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja joiden avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.  
+Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Finance and Operationsin ominaisuuksista, joiden avulla yleisen kirjauskansion käsittely on helpompaa ja jonka avulla voidaan myös varmistaa, että kerättävät tiedot ovat oikeita eikä sisäisessä tarkistuksessa ole ongelmia.  
 
 ## <a name="journal-names"></a>Kirjauskansioiden nimet
 
@@ -97,4 +96,3 @@ Lisätietoja on seuraavissa aiheissa:
 Löydät **Kirjauksen simulointi** -kohdan useimpien kirjauskansioiden **Vahvista**-valikosta. Kun vahvistat kirjauskansion **Vahvista**-toiminnon avulla, järjestelmä testaa kirjauskansiota tiettyjen virhetilanteiden varalta. Jos käytät **Kirjauksen simulointi** -toimintoa, järjestelmä suorittaa kaikki samat prosessit, jotka suoritetaan kirjauksen aikana kirjauskansiota kirjaamatta. Voit siten tarkastella näytettyjä kirjausviestejä, korjata mahdollisesti löytämäsi virheet ja kirjata sitten kirjauskansion napsauttamalla **Kirjaa**. 
 
 **Kirjauksen simulointi** ei ole käytettävissä eräkäsittelyä varten. Käytettävissä on kuitenkin koodi, jonka avulla voidaan simuloida eräkirjausta, ja kehittäjät voivat ulottaa koodin lisäämään tämän toiminnon.  
-

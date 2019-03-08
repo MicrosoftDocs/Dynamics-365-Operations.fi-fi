@@ -1,14 +1,14 @@
 ---
-title: "Lisää sijainnin ja osapuolen suhteen tyypit"
-description: "Tässä ohjeaiheessa kerrotaan, miten voit lisätä uuden sijainnin ja osapuolen suhteen tyypin."
+title: Lisää sijainnin ja osapuolen suhteen tyypit
+description: Tässä ohjeaiheessa kerrotaan, miten voit lisätä uuden sijainnin ja osapuolen suhteen tyypin.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: 543784e8072f88c10f63e1b44921b9f2d37308c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e0ab9c9894fdd5fba224c166941abbf52172ae46
-ms.openlocfilehash: 27819c922832a30eb0b20db6bffdbd4504e6d5e6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 06/12/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357493"
 ---
-
 # <a name="add-location-roles-and-party-relationship-types"></a>Lisää toimipaikkaroolit ja osapuolten suhteen tyypit 
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ On kaksi tapaa lisätä uusia sijaintirooleja osoitteelle ja yhteystiedoille:
 
         ![Tietojen täyttö](media/Dirdata.PNG)
 
-    4.  Voit testata uuden sijaintiroolin täyttöä luomalla runnable-luokan ja kutsumalla DirDataPopulation::insertLogisticsLocationRoles()-metodia Main()-metodissa. Kun tämä prosessi on valmis, sinun pitäisi nähdä, että uusi rooli täytetään **LogisticsLocationRole**-tauluun määritteellä type \> 0. Uusi rooli tulee näkyviin **Osoitteen ja yhteystietojen tarkoitus** -sivulle.
+    4.  Voit testata uuden sijaintiroolin täyttöä luomalla runnable-luokan ja kutsumalla DirDataPopulation:::insertLogisticsLocationRoles()-menetelmää Main()-menetelmässä. Kun tämä prosessi on valmis, sinun pitäisi nähdä, että uusi rooli täytetään **LogisticsLocationRole**-tauluun määritteellä type \> 0. Uusi rooli tulee näkyviin **Osoitteen ja yhteystietojen tarkoitus** -sivulle.
 
         ![Lisää uusi sijainti](media/InsertNewLocation.PNG)
 
@@ -72,7 +71,6 @@ Voit lisätä uusia suhteen tyyppejä kahdella tavalla:
     
     ![DirRelationshipChild](media/DirRelationship.PNG)
 
-    3.  Voit testata uuden suhdetyypin täyttöä luomalla runnable-luokan ja kutsumalla DirDataPopulation::insertDirRelationshipTypes()-metodia Main()-metodissa. Näkyviin tulee uusi suhteen laji **DirRelationshipTypeTable**-taulussa ja uusi suhdetyyppi on käytettävissä **Suhdetyypit**-sivulla.
+    3.  Voit testata uuden suhdetyypin täyttöä luomalla runnable-luokan ja kutsumalla DirDataPopulation::insertDirRelationshipTypes()-menetelmää Main()-menetelmässä. Näkyviin tulee uusi suhteen laji **DirRelationshipTypeTable**-taulussa ja uusi suhdetyyppi on käytettävissä **Suhdetyypit**-sivulla.
 
         ![Runnable-luokka](media/Runnable.PNG)
-

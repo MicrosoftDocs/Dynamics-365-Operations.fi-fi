@@ -1,13 +1,13 @@
 ---
 title: Dynamics AX 7.0:n uudet ja muuttuneet ominaisuudet (helmikuu 2016)
-description: "Tässä artikkelissa käsitellään Microsoft Dynamics AX 7.0:n uusia tai muuttuneita ominaisuuksia. Tässä versiossa on sekä ympäristö- että sovellusominaisuuksia, ja se julkaistiin helmikuussa 2016."
+description: Tässä artikkelissa käsitellään Microsoft Dynamics AX 7.0:n uusia tai muuttuneita ominaisuuksia. Tässä versiossa on sekä ympäristö- että sovellusominaisuuksia, ja se julkaistiin helmikuussa 2016.
 author: sericks007
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334884"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0:n uudet ja muuttuneet ominaisuudet (helmikuu 2016)
 
 [!include [banner](../includes/banner.md)]
@@ -111,7 +110,7 @@ Tämä toiminto toimii erillään tuotettuun nimikkeeseen määritetyistä kusta
 </tbody>
 </table>
 
-## <a name="developer"></a>Sovelluskehittäjä
+## <a name="developer"></a>Kehittäjä
 
 | Mitä voit tehdä? | Dynamics AX 2012 | Dynamics AX 7.0 | Miksi tämä on tärkeää? |
 |------------------|------------------|-----------------|------------------------|
@@ -119,7 +118,7 @@ Tämä toiminto toimii erillään tuotettuun nimikkeeseen määritetyistä kusta
 | Kehitä ratkaisuja Microsoft Visual Studion avulla. | Microsoft MorphX on tärkein kehitysympäristö, mutta osa kehitystyöstä tehdään Visual Studiossa. | Visual Studio on vain kehitysympäristö. | Tutut Dynamics AX 2012 -käsitteet ovat tallella, ja ne mukautuvat saumattomasti Visual Studion kehykseen ja paradigmoihin. Sen avulla yhteiskäyttö muiden .NET-kielten ja -projektien kanssa onnistuu tavalliseen tapaan. |
 | Muodosta CIL (Common Intermediate Language) -kieli kaikille ominaisuuksille. | X++ käännetään pseudokoodiksi. | Uusi X++-kääntäjä muodostaa CIL-kielen kaikille ominaisuuksille. CIL on sama välikieli, jota muut .NET-pohjaiset kielet käyttävät. | CIL-kielen käyttö nopeuttaa toimintaa, sillä voi viitata tehokkaasti hallittujen dynaamisten linkkikirjastojen (DLL) luokkiin ja sitä voidaan käyttää monissa .NET-apuohjelmien työkaluissa. |
 | Upota liiketoimintatietoja koskevia raportteja ja visualisointia Microsoft Dynamics AX -asiakasohjelmaan. | Ei käytettävissä | Luo erittäin intuitiivisia ja mukautuvia visualisointeja. | Saat käyttöösi liiketoimintatietoihin perustuvia yksityiskohtaisia, päätöksentekoa tukevia tietoja. |
-| Microsoft Officen integrointi. | Ei käytettävissä | Uusia ominaisuuksia ovat esimerkiksi Excel Data Connector -sovellus, **Työkirjan suunnittelu** -sivu, ohjelmointirajapinnan vienti ja tiedostonhallinta. | Voit luoda tuottavuusratkaisuja käyttäjille. |
+| Integroi Microsoft Officen kanssa. | Ei käytettävissä | Uusia ominaisuuksia ovat esimerkiksi Excel Data Connector -sovellus, **Työkirjan suunnittelu** -sivu, ohjelmointirajapinnan vienti ja tiedostonhallinta. | Voit luoda tuottavuusratkaisuja käyttäjille. |
 | Automatisoi muodostus, testaus ja käyttöönotto. | Osittain käytettävissä | Ota kehittäjätopologia käyttöön kehittäjän ja muodostuksen virtuaalikoneen avulla. Määritä muodostuksen virtuaalikone havaitsemaan ja muodostamaan moduuleja Visual Studio Onlinesta (VSO) ja suorittamaan testit. C\#- ja X++-moduulikäännöstä ja -viittauksia tuetaan. | Tämä tehostaa kehittäjän toimintaa, sillä testaus ja tarkistukset maksavat vähemmän ja vievät vähemmän aikaa. |
 | Mukauta lisäyksillä ja laajennuksilla. | Laajennuksia ei ole käytettävissä. | Dynamics AX:n nykyisessä versiossa on uusi mukautusmalli. | Voit mukauttaa Microsoftin tai Microsoftin ulkopuolisten kumppanien lähettämien mallielementtien lähdekoodia ja metatietoja. |
 | Voit luoda uusia ohjausobjekteja ja käyttöliittymäelementtejä X++:n ja modernin verkkokehyksen avulla. | Mukautettujen ohjausobjektien käyttö edellyttää ulkoisia kehyksiä, kuten Microsoft ActiveX:ää ja Windows Presentation Foundationia (WPF). | Ohjausobjektien luontia on helpotettu nykyisessä versiossa. X++-kehystä voidaan käyttää sovelluksen toiminnoissa ja liiketoimintalogiikassa. HTML- ja JavaScript-pohjainen asiakasohjelma puolestaan sallii modernin visualisoinnin. | Ohjausobjektien ulkoasu ja toiminta voidaan suunnitella vastaamaan Dynamics AX:n valmiita ohjausobjekteja. |
@@ -213,7 +212,7 @@ Tämä toiminto toimii erillään tuotettuun nimikkeeseen määritetyistä kusta
 <td>Voit nyt tarkastella taloushallinnon raporttia ilman toisen asiakasohjelman tai sovelluksen avaamista.</td>
 </tr>
 <tr>
-<td>Voit tulostaa raportteja (Management Reporter) Microsoft Dynamics AX -asiakasohjelmasta.</td>
+<td>Tulosta raportit (Management Reporter) Microsoft Dynamics AX -asiakasohjelmasta.</td>
 <td>Raportti tulostamiseen käytetään selaimen tulostusasetuksia ja vain näkyvissä oleva osa tulostetaan.</td>
 <td>Käyttäjä voi valita, kuinka tarkasti raportti näytetään ja sivun asetukset käyttämällä Dynamics AX -asiakasohjelman raportin tulostusasetusta.</td>
 <td>Raportit tulostuvat käyttäjän odottamalla tavalla verkkosivun tulostamisen sijaan.</td>
@@ -328,7 +327,7 @@ Tämä toiminto toimii erillään tuotettuun nimikkeeseen määritetyistä kusta
 </tbody>
 </table>
 
-## <a name="human-capital-management"></a>Henkisen pääoman hallinta
+## <a name="human-capital-management"></a>Henkilöstöresurssien hallinta
 
 <table>
 <thead>
@@ -559,7 +558,7 @@ Uusia ominaisuuksia ei ole lisätty.
 |------------------|------------------|-----------------|------------------------|
 | Saat **Ostotilauksen valmistelu** -työtilassa nopeasti tiedot valmisteltavien ostotilausten tilasta. | Ei tueta | **Ostotilauksen valmistelu** -työtilassa on yhteenveto tilauksista niiden luontihetkestä luonnoksina työnkulun hyväksyntävaiheiden kautta vahvistukseen. | Osto-osaston ei enää tarvitse etsiä tietoja useilta sivuilta, vaan osasto voi käyttää työtilan yhteenvetoa. |
 | Saat **Ostotilauksen vastaanotto ja seuranta** -työtilasta nopeasti tietoa vastaanottoa odottavista ostotilauksista, mikä helpottaa seurantaa. | Ei tueta | **Ostotilauksen vastaanotto ja seuranta** -työtilassa on yhteenveto vastaanottoja tai lähetyksiä odottavista vahvistetuista ostotilauksista. Työtilassa on myös luettelo eräpäivän jälkeisistä ja odottavista vastaanotoista, mikä auttaa ennakoimaan toimittajan tarkistusta ja seurantaa. Lisäksi työtilassa on luettelot ostotilauksista, joiden saapuminen varastoon on rekisteröity, mikä auttaa varmistamaan, että vastaanotto kirjataan. Tarkistettavana on myös ostotilauksen palautukset, joita ei ole vielä lähetetty. | Osto-osasto voi hyödyntää työtilan yhteenvetoa. sillä olennaiset tiedot auttavat ohjaamaan seurantaa ja tehostamaan toimintaa. |
-| Voit lähettää ostotilaukset vahvistettaviksi Dynamics AX -asiakasohjelman ylläpitämään toimittajaportaalin. Toimittaja voi sitten hyväksyä tai hylätä ostotilaukset. | Ei tueta | Toimittajat voivat vastaanottaa hyväksyttävät tai hylättävät ostotilaukset toimittajaportaalissa. Lisäksi toimittajat näkevät portaalissa yhteenvedon kaikista tilin hyväksytyistä ostotilauksista. Ostoedustaja voi lähettää toimittajalle pyynnön ostotilauksen vahvistuksesta. Toimittajan on oltava Dynamics AX:n rekisteröity Microsoft Azure Active Directory (Azure AD) -käyttäjä ja toimittajan yhteyshenkilö. Hänellä on myös oltava tarkoituksenmukainen käyttöoikeusrooli. | Osto-osaston kannalta etuna on paperitöiden ja ostotilausten vastausten manuaalisen seurannan väheneminen, koska tämä tapahtuu nyt suoraan järjestelmässä. Koska asiakas ja toimittaja käyttävät samaa lähdettä, väärinymmärryksiä on vähemmän. |
+| Voit lähettää ostotilaukset vahvistettaviksi Dynamics AX -asiakasohjelman ylläpitämään toimittajaportaalin. Toimittaja voi sitten hyväksyä tai hylätä ostotilaukset. | Ei tueta | Toimittajat voivat vastaanottaa hyväksyttävät tai hylättävät ostotilaukset toimittajaportaalissa. Lisäksi toimittajat näkevät portaalissa yhteenvedon kaikista tilin hyväksytyistä ostotilauksista. Ostoedustaja voi lähettää toimittajalle pyynnön ostotilauksen vahvistuksesta. Toimittajan on oltava Dynamics AX:n Microsoft Azure Active Directory (Azure AD) -käyttäjä ja toimittajan yhteyshenkilö. Hänellä on myös oltava tarkoituksenmukainen käyttöoikeusrooli. | Osto-osaston kannalta etuna on paperitöiden ja ostotilausten vastausten manuaalisen seurannan väheneminen, koska tämä tapahtuu nyt suoraan järjestelmässä. Koska asiakas ja toimittaja käyttävät samaa lähdettä, väärinymmärryksiä on vähemmän. |
 
 ## <a name="projects"></a>Projektit
 
@@ -624,7 +623,7 @@ Microsoft Azuren ylläpitämä Retail HQ:n verkkoasiakasohjelma mahdollistaa kai
 <ul>
 <li>Uusien kanavien ja liittyvien yksiköiden luonti ja määrittäminen.</li>
 <li>Myymälän päivittäisten tehtävien hallinta.</li>
-<li>Vähittäismyyntitapahtumien käsittely Microsoft Dynamics AX:ssa, vähittäismyynnin laskelmien muodostaminen sekä Microsoft Dynamics AX:n varaston ja myyntitiedot päivittäminen.</li>
+<li>Vähittäismyyntitapahtumien käsittely Microsoft Dynamics AX:ssa, vähittäismyynnin laskelmien muodostaminen sekä Microsoft Dynamics AX:n varaston ja myyntitietojen päivittäminen.</li>
 </ul>
 </td>
 <td>Voit suorittaa seuraavat tehtävät <strong>Kanavan käyttöönotto</strong> -työtilassa:
@@ -679,7 +678,7 @@ Microsoft Azuren ylläpitämä Retail HQ:n verkkoasiakasohjelma mahdollistaa kai
 <tr>
 <td>Voit analysoida vähittäismyyntikanavan myyntitietoja Power BI:n Retail Channel Performance -sisällön avulla.</td>
 <td>Ei käytettävissä</td>
-<td>Valitse PowerBI.comissa ensin <strong>tietojen hakeminen</strong> ja sitten <strong>Dynamics AX:n vähittäismyyntikanavan suorituskyvyn</strong> sisältöpaketti. Kun kirjoitat Dynamics AX -päätepisteesi URL-osoitteen, tietosi tulevat näkyviin koontinäyttöön.</td>
+<td>Valitse PowerBI.comissa ensin <strong>tietojen hakeminen</strong> ja sitten <strong>Dynamics AX:n Retail Channel Performance</strong> -sisältöpaketti. Kun kirjoitat Dynamics AX -päätepisteesi URL-osoitteen, tietosi tulevat näkyviin koontinäyttöön.</td>
 <td>Organisaatiot voivat ottaa kolmella tai neljällä napsautuksella käyttöön tärkeitä taloushallinnon tietoja sisältävän Power BI:n koontinäytön. Sisältöä voidaan mukauttaa organisaation mukaan. Käyttäjät voivat myös upottaa Power BI -koontinäyttöruudut omaan mukautettuun Dynamics AX:n työtilaan, jolloin analyysitiedot ovat käytettävissä yhdellä silmäyksellä.</td>
 </tr>
 <tr>
@@ -735,15 +734,15 @@ Retail Serverin ja tietojen hallinnan avulla kuluttajat ja yritykset voivat luod
 </tr>
 <tr>
 <td>Voit siirtää tietoja Microsoft Dynamics AX:n taustatoimintojen ja kanavien välillä Commerce Data Exchangen avulla.</td>
-<td>Commerce Data Exchange -järjestelmä siirtää tietoja Microsoft Dynamics AX:n ja jälleenmyyntikanavien, kuten verkkokauppojen tai perinteisten myymälöiden, välillä. Lisätietoja on artikkelissa <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Commerce Data Exchange -järjestelmä siirtää tietoja Microsoft Dynamics AX:n ja jälleenmyyntikanavien, kuten verkkokauppojen tai perinteisten myymälöiden, välillä. Lisätietoja on kohdassa <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Vaikka Microsoft Dynamics AX 2012 CU8:n kanssa on toiminnallinen pariteetti, ota seuraavat seikat huomioon:
 <ul>
-<li>Commerce Data Exchangea on uudistettu toimimaan pilviympäristössä.</li>
+<li>Commerce Data Exchange on uudistettu toimimaan pilviympäristössä.</li>
 <li>Asynkroninen palvelu käyttää kanavan tietokantaa tietokannan suoralla käyttöoikeudella.</li>
 <li>Commerce Data Exchange: Real-time Service -palvelua ylläpidetään mukautettuna Microsoft Dynamics AX -palveluna.</li>
 <li>MPOS hallitsee paikallisten tietokantojen ja Retail Serverin välistä synkronointia.</li>
 </ul></td>
-<td>Commerce Data Exchangea on uudistettu toimimaan pilviympäristössä. Se hallitsee edelleen Microsoft Dynamics AX:n ja jälleenmyyntikanavien, kuten verkkokauppojen tai perinteisten myymälöiden, välistä tiedonsiirtoa.</td>
+<td>Commerce Data Exchange on uudistettu toimimaan pilviympäristössä. Se hallitsee edelleen Microsoft Dynamics AX:n ja jälleenmyyntikanavien, kuten verkkokauppojen tai perinteisten myymälöiden, välistä tiedonsiirtoa.</td>
 </tr>
 <tr>
 <td>Tukee käyttövalmista, osittain integroitua kanavien välistä maksujen käsittelyä maksujen SDK:n avulla.</td>
@@ -758,7 +757,7 @@ Retail Serverin ja tietojen hallinnan avulla kuluttajat ja yritykset voivat luod
 <td>Asiakas voi nyt käsitellä maksujen luotto- tai maksukorttitapahtumat.</td>
 </tr>
 <tr>
-<td>Voit aktivoida laitteita Microsoft-tilillä (Microsoft Azure Active Directory [Azure AD]).</td>
+<td>Voit aktivoida laitteita Microsoft-tilillä (Microsoft Azure Active Directory (Azure AD)).</td>
 <td>Ei käytettävissä</td>
 <td>Sisältää seuraavat toiminnot:
 <ul>
@@ -786,7 +785,7 @@ Retail Serverin ja tietojen hallinnan avulla kuluttajat ja yritykset voivat luod
 <li>Kuvan latauksen ja avauksen tukeminen yksikkösivuilta (esimerkiksi <strong>Tuotteet</strong> ja <strong>Luettelot</strong>) linkittämällä kuva valikoimasta tai lataamalla se työpöydältä.</li>
 <li>Kuvien optimoitu pikkukuvaa varten, mukautettu koko ja alkuperäinen.</li>
 <li>Yksiköiden joukkolinkitys käyttämällä joukkoliitännän mallia ja taustatöitä.</li>
-<li>Microsoft Excel -integrointi korvaa nimeämiskäytäntöjen ja ennalta määritettyjen polkujen määriteryhmärajoituksen.</li>
+<li>Microsoft Excelin integrointi korvaa nimeämiskäytäntöjen ja ennalta määritettyjen polkujen määriteryhmärajoituksen.</li>
 <li>Paikallisten kuvien tuki ja kuvien henkilötietosisällön, kuten Retail-ylläpidettyjen työntekijä- ja asiakaskuvien, suojaaminen.</li>
 </ul></td>
 <td><ul>
@@ -1023,7 +1022,7 @@ Uusia ominaisuuksia ei ole lisätty.
 
 Uusia ominaisuuksia ei ole lisätty.
 
-## <a name="warehouse-management"></a>Varastonhallinta
+## <a name="warehouse-management"></a>Varastonhallinta  
 
 | Mitä voit tehdä? | Dynamics AX 2012 | Dynamics AX 7.0 | Miksi tämä on tärkeää? |
 |------------------|------------------|-----------------|------------------------|
@@ -1034,4 +1033,3 @@ Uusia ominaisuuksia ei ole lisätty.
 [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md)
 
 [Uudet tehtäväoppaat saatavilla (helmikuu 2016)](new-task-guides-available-february-2016.md)
-

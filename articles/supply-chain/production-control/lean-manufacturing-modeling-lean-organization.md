@@ -1,13 +1,13 @@
 ---
 title: Lean-organisaation mallinnus
-description: "Artikkelissa on tietoja Lean-organisaation mallintamisen tärkeimmistä käsitteistä."
+description: Artikkelissa on tietoja Lean-organisaation mallintamisen tärkeimmistä käsitteistä.
 author: cvocph
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 254616174d3f3c449e2a55dfc5f080d6276105b0
 ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350984"
 ---
-
 # <a name="modeling-a-lean-organization"></a>Lean-organisaation mallinnus
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Tuotantotilauksiin perustuvissa tuotantoskenaarioissa materiaali määritetään
 
 Jotta toimituksen läpimenoajat lyhenevät ja ylimääräinen, erätuotannosta johtuva varastointi kuormituspaikkojen välillä pienenee, Lean-valmistus käyttää kanban-täydennystä ja supermarketteja valmistuksen ja varastoinnin täydennyksessä. Tämä nämä toiminnot keskeyttävät osittain itsenäisten kanban-syklien tuotannon. Kanbanin täydennystä puolivalmiille tuotteelle ei enää käynnistä valmista tuotetta koskeva tilaus. 
 
-Jotta tuotannon ja kulujen konteksti voidaan luoda uudelleen eri Microsoft Dynamics 365 for Finance and Operationsin ehdottamille kanban-skenaarioille, tehtäväpohjaiset tuotantovirrat on luotu Lean-valmistuksen rungoksi. Kaikki kanban-säännöt viittaavat tähän ennalta määritettyyn rakenteeseen. Tehtäväperusteinen malli tukee monien erilaisten skenaarioiden määrittämistä. Tämä malli ei kuitenkaan tee ohjelmaa monimutkaisemmaksi työntekijöille, koska kaikissa skenaarioissa käytetään samaa tehtäväpohjaista käyttöliittymää.
+Jotta tuotannon ja kulujen konteksti voidaan luoda uudelleen eri Microsoft Dynamics 365 for Finance and Operationsin ehdottamille kanban-skenaarioille, tehtäväpohjaiset tuotantovirrat on luotu Lean-valmisuksen selkärangaksi. Kaikki kanban-säännöt viittaavat tähän ennalta määritettyyn rakenteeseen. Tehtäväperusteinen malli tukee monien erilaisten skenaarioiden määrittämistä. Tämä malli ei kuitenkaan tee ohjelmaa monimutkaisemmaksi työntekijöille, koska kaikissa skenaarioissa käytetään samaa tehtäväpohjaista käyttöliittymää.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Puolivalmiit tuotteet (ei-tuoterakennetasot)
 Lean-valmistus integroi kanbanit inventoiduiksi tuotteiksi ja puolivalmiiksi tuotteiksi yhdessä kehyksessä tarjoten siten yhdenmukaisen käyttökokemuksen kaikissa tapauksissa. Tämän arkkitehtuurin vuoksi puolivalmiissa tuotteissa käytettävien kanbaneiden käytössä tarvittavia lisätuoterakenteiden tasoja ei enää ole lisätty. Tämä arkkitehtuuri auttaa myös varastotapahtumien vähentämisessä pienimmälle mahdolliselle tasolle.
@@ -65,7 +64,6 @@ Jotta ne tukisivat paremmin jatkuvaa parantamista, tuotantovirrat on toteutettu 
 
 ## <a name="simplicity"></a>Yksinkertaisuus
 Valitsimme Lean-valmistuksen toteuttamiseen tuotantovirta- ja toimintomenettelyn, joka mahdollistaa yksinkertaisten ja monimutkaisten tuotantoskenaarioiden mallintamisen yhdessä skaalautuvassa arkkitehtuurissa. Tarkempi toimintokonseptin tarkastelu paljastaa uuden yksinkertaisen elementin sitä todella tarvitseville: tuotannon ja logistiikan työntekijöille. Kun raportoidaan toimintoperusteisia tehtäviä varastotapahtumien sijaan, yhtenäinen, kaikkia Lean-valmistuksen variantteja koskeva käyttöliittymä siirtää liiketoiminnan monimutkaisuuden käyttöliittymästä sinne, mihin se kuuluu: tuotantovirtaan Lean-valmistuksen selkärankana.
-
 
 
 

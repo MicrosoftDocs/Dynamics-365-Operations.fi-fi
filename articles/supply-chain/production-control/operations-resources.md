@@ -1,13 +1,13 @@
 ---
 title: Operations-resurssit
-description: "Operatiiviset resurssit suorittaa projektin tai tuotantoprosessin aktiviteetit. Ne voivat olla erityyppisiä, ja niillä voi olla eri ominaisuuksia."
+description: Operatiiviset resurssit suorittaa projektin tai tuotantoprosessin aktiviteetit. Ne voivat olla erityyppisiä, ja niillä voi olla eri ominaisuuksia.
 author: sorenva
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e11d64ec37775f4fe2fc113af238a6294b459454
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366601"
 ---
-
 # <a name="operations-resources"></a>Operations-resurssit
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,6 @@ Kun resurssiryhmää käytetään lean-työsoluna, työsolun kapasiteetti määr
 
 ## <a name="costing-resources"></a>Kustannuslaskentaresurssit
 Kun määrität tehtävän, kuten reitityksen työvaiheen tai projektituntiennusteen, voit määrittää vaatimuksen tietystä operatiivisesta resurssista tai resurssiryhmästä. Voit kuitenkin määrittää vaatimuksen myös tietyntyyppisestä operatiivisesta resurssista tai operatiivisesta resurssista, jolla on tietty pätevyys tai osaamisalue. Tästä syystä todellinen resurssimääritys tehdään vasta, kun tehtävä on ajoitettu ja kapasiteetti varattu. Näin voit reititystyövaiheessa määrittää, että arvioinnin ja tuoterakennelaskelman on perustuttava tiettyyn operatiiviseen resurssiin. Operatiivista resurssia kutsutaan kustannuslaskentaresurssiksi. Voit myös siirtää kustannusluokkia ja työvaiheaikoja kustannuslaskentaresurssista tehtävään. Kun työvaihe ajoitetaan, arviointi ja tuoterakenteen laskenta tehdään käyttämällä operatiivista resurssia, joka on todellisuudessa ajoitettu.
-
 
 
 

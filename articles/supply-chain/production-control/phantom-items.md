@@ -1,13 +1,13 @@
 ---
 title: Haamunimikkeet
-description: "Tässä ohjeaiheessa kuvataan yksityiskohtaisesti, miten haamurivityyppiä voidaan käyttää tuoterakenteen (BOM) riveillä ja Microsoft Dynamics 365 for Finance and Operationsin lomakkeessa."
+description: Tässä ohjeaiheessa kuvataan yksityiskohtaisesti, miten haamurivityyppiä voidaan käyttää tuoterakenteen riveillä ja Microsoft Dynamics 365 for Finance and Operationsin kaavassa.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: shylaw
@@ -15,16 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validfrom: 
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.search.validfrom: ''
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: a92dd82f309867586f047e0dfc36e452a44a0f9c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341807"
 ---
-
 # <a name="phantom-items"></a>Haamunimikkeet
 
 [!include [banner](../includes/banner.md)]
@@ -74,4 +73,3 @@ Haamutuoterakenteita voidaan käyttää myös tuoterakenteelle, jossa on reitity
 Seuraavassa kuvassa (a) on tuotteen G ja osan F tuoterakenne ja (b) on tuotteen G ja osan F reititystaulukko.
 
 ![Tuote G ja osa F reititystaulukoiden kanssa](media/product-G-part-F-with-route-sheet.png)
-

@@ -1,13 +1,13 @@
---- 
-title: "Hallitse ER-mallien kartoitusta erillisissä ER-konfiguraatioissa"
-description: "Seuraavissa vaiheissa kerrotaan, miten käyttäjä, jolla on järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi hallita sähköisen raportoinnin (ER) mallin yhdistämismäärityksiä erillisissä ER-konfiguraatioissa."
+---
+title: Hallitse ER-mallien kartoitusta erillisissä ER-konfiguraatioissa
+description: Seuraavissa vaiheissa kerrotaan, miten käyttäjä, jolla on järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi hallita sähköisen raportoinnin (ER) mallin yhdistämismäärityksiä erillisissä ER-konfiguraatioissa.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349144"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Hallitse ER-mallien kartoitusta erillisissä ER-konfiguraatioissa
 
@@ -161,5 +161,4 @@ Voit suorittaa tämän tehtäväoppaan valitsemasi yrityksen tietojoukon avulla,
 6. Valitse Suorita.
 7. Valitse OK.
     * Ota huomioon, että tämä muotokonfiguraatio käyttää mallin yhdistämismäärityksen oletuskonfiguraatiota sähköisen asiakirjan (luotu tuloste sisältää yrityskoodin) luomiseen.  
-
 

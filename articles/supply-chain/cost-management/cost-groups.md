@@ -1,13 +1,13 @@
 ---
-title: "Kustannusryhmät"
-description: "Kustannusryhmät muodostavat pohjan valmistetun nimikkeen laskettujen kustannusten kustannusosuuksien, kuten materiaali- ja työkustannusten osuuksien sekä yleiskustannusten osuuden, segmentoinnille ja analysoinnille. Kustannusryhmän segmentoinnilla on valmistusympäristöissä useita synonyymejä, kuten kustannuserittely, kustannusten hajottaminen ja kustannusluokittelu."
+title: Kustannusryhmät
+description: Kustannusryhmät muodostavat pohjan valmistetun nimikkeen laskettujen kustannusten kustannusosuuksien, kuten materiaali- ja työkustannusten osuuksien sekä yleiskustannusten osuuden, segmentoinnille ja analysoinnille. Kustannusryhmän segmentoinnilla on valmistusympäristöissä useita synonyymejä, kuten kustannuserittely, kustannusten hajottaminen ja kustannusluokittelu.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCostGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1f1f97981c33c72c71e055848e874002dad73813
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f44099c2ce30d917838733af072721dd79148d27
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337414"
 ---
-
 # <a name="cost-groups"></a>Kustannusryhmät
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Kustannusryhmälle voi määrittää kustannusryhmän tyypin sekä käyttäytymi
 
 -   **Kustannusryhmän tyyppi** − Kullekin kustannusryhmälle täytyy määrittää kustannusryhmätyyppi, joka osoittaa, että se koskee suoraa materiaalia, suoraa valmistusta tai suoraa ulkoistusta, tai se täytyy määrittää epäsuoraksi tai määrittämättömäksi. Suoraksi materiaaliksi määritetyn kustannusryhmän voi liittää nimikkeisiin. Suoran tuotannon kustannusryhmän voi liittää kustannusluokkiin. Suoran ulkoistuksen kustannusryhmän voi määrittää palvelun tuotetyypille niin, että voit luokitella palvelun ostamiseen liittyvät kulut alihankinnaksi. Välillisten kustannusten ryhmän voi määrittää lisämaksujen tai osuuksien välillisille kustannuksille. Määrittelemättömäksi osoitetun kustannusryhmän voi määrittää nimikkeille, kustannusluokille tai välillisille kustannuksille. Kustannusryhmätyypin määrittäminen palvelee useita tarkoituksia. Se rajoittaa ensinnäkin kustannusryhmän määrittämistä ja sovellettavien kustannusryhmien luettelon tarkastelemista. Toinen sisältää lisäsegmentointia raportointia varten. Kolmanneksi sitä voidaan käyttää kirjanpitotilien määrittämiseksi variansseille.
 -   **Toiminta** − Kullekin kustannusryhmälle voi tarvittaessa määrittää toiminnan. Se määrittää, että kustannusryhmä koskee kiinteitä tai muuttuvia kustannuksia. Kustannusryhmää, jolla ei ole käyttäytymisarvoa, käsitellään muuttuvana kustannuksena. Toiminnan määritystä käytetään vain raportoinnissa. Kustannukset voidaan esittää esimerkiksi kustannuslaskentalomakkeella segmentoituina kiinteiksi ja muuttuviksi kustannuksiksi sekä **Kustannusten koonti kustannusryhmien mukaan** -sivulla. Jos määrität kullekin kustannusryhmälle tuottovaatimusprosentin, tuoterakennelaskenta tarjoaa ehdotetun myyntihinnan hinta+hinnankorotus-mallin perusteella.
-
 
 
 

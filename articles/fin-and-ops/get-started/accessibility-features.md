@@ -1,33 +1,32 @@
 ---
-title: "Helppokäyttötoiminnot"
-description: "Tässä ohjeaiheessa käsitellään toimintoja, jotka on suunniteltu auttamaan Dynamics 365 for Finance and Operationsin, Dynamics 365 for Retailin ja Dynamics 365 for Talentin toimintarajoitteisia käyttäjiä."
+title: Helppokäyttötoiminnot
+description: Tässä ohjeaiheessa esitellään toiminnot, jotka on suunniteltu auttamaan toimintarajoitteisia käyttäjiä käyttämään Dynamics 365 for Finance and Operationsia, Dynamics 365 for Retailia ja Dynamics 365 for Talentia.
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: f88b485b0bdbf66532adff530e399bdd9d5b0ed5
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363404"
 ---
-
 # <a name="accessibility-features"></a>Helppokäyttötoiminnot
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään toimintoja, jotka on suunniteltu auttamaan Dynamics 365 for Finance and Operationsin, Dynamics 365 for Retailin ja Dynamics 365 for Talentin toimintarajoitteisia käyttäjiä. Käytettävissä on esimerkiksi toimintoja henkilöille, joilla on käytössä näkövammaisille tarkoitettua teknologiaa, kuten Microsoft Windows Narrator.
+Tässä ohjeaiheessa esitellään toiminnot, jotka on suunniteltu auttamaan toimintarajoitteisia käyttäjiä käyttämään Dynamics 365 for Finance and Operationsia, Dynamics 365 for Retailia ja Dynamics 365 for Talentia. Käytettävissä on esimerkiksi toimintoja henkilöille, joilla on käytössä näkövammaisille tarkoitettua teknologiaa, kuten Microsoft Windows Narrator.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows Narrator ja vain näppäimistökäyttö
 
@@ -97,4 +96,3 @@ Tuote on suunniteltu toimimaan erilaisissa laitteissa ja laitemuodoissa sekä pi
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Ohjeita, joiden avulla kehittäjät ja asiakkaat voivat ottaa helppokäyttöisyyden huomioon mukautuksissa
 
 Lisätietoja Microsoftin helppokäyttötoimintojen käyttöönoton parhaista käytännöistä on kohdassa [Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttötoiminnot](../../dev-itpro/user-interface/enable-accessibility.md).
-

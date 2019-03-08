@@ -1,13 +1,13 @@
 ---
-title: "Vähittäismyynnin oheislaitteet"
-description: "Tässä aiheessa esitellään vähittäismyynnin oheislaitteisiin liittyvät käsitteet."
+title: Vähittäismyynnin oheislaitteet
+description: Tässä aiheessa esitellään vähittäismyynnin oheislaitteisiin liittyvät käsitteet.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/16/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: c2539af8a29b580a10002bc8648505d42c7b8456
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347856"
 ---
-
 # <a name="retail-peripherals"></a>Vähittäismyynnin oheislaitteet
 
 [!include [banner](includes/banner.md)]
@@ -203,7 +202,7 @@ Lisätietoja on kohdassa [Retail Hardware Station -sovelluksen määrittäminen 
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Moderni POS Windowsille -sovelluksen asetus ja määritys
 
-Lisätietoja on kohdassa [Retail Modern POS -sovelluksen määrittäminen ja asentaminen](retail-modern-pos-device-activation.md).
+Lisätietoja on kohdassa [Retail Modern POS:n määrittäminen ja asentaminen](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-laitteen asetukset ja määrittäminen
 
@@ -296,7 +295,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille -sovellukseen
 <ul>
 <li>OPOS</li>
 <li>Verkko
-<blockquote>[!NOTE] Vain yksi kassa voidaan määrittää, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</blockquote>
+<blockquote>HUOMAUTUS: vain yksi kassa voidaan määrittää, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</blockquote>
 </li>
 </ul>
 </td>
@@ -307,7 +306,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille -sovellukseen
 <ul>
 <li>OPOS</li>
 <li>Verkko
-<blockquote>[!NOTE] Vain yksi kassa voidaan määrittää, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</blockquote>
+<blockquote>HUOMAUTUS: vain yksi kassa voidaan määrittää, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</blockquote>
 </li>
 </ul>
 </td>
@@ -375,7 +374,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille -sovellukseen
 <ul>
 <li>OPOS</li>
 <li>Windows-ohjain
-<blockquote>[!NOTE] Verkossa oleville Windows-tulostimien käyttäminen vaatii, että laiteaseman käyttäjälle on annettava tulostimen käyttöoikeus.</blockquote>
+<blockquote>HUOMAUTUS: verkossa oleville Windows-tulostimien käyttäminen vaatii, että laiteaseman käyttäjälle on annettava tulostimen käyttöoikeus.</blockquote>
 </li>
 <li>Verkko</li>
 </ul>
@@ -405,7 +404,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille -sovellukseen
 <ul>
 <li>OPOS</li>
 <li>Verkko
-<blockquote>[!NOTE] Laiteprofiilille voidaan määrittää vain yksi kassa, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</blockquote>
+<blockquote>HUOMAUTUS: laiteprofiilille voidaan määrittää vain yksi kassa, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</blockquote>
 </li>
 </ul>
 </td>
@@ -470,7 +469,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille -sovellukseen
 <ul>
 <li>OPOS</li>
 <li>Windows-ohjain
-<blockquote>[!NOTE] Verkossa oleville Windows-tulostimien käyttäminen vaatii, että laiteaseman käyttäjälle on annettava tulostimen käyttöoikeus.</blockquote>
+<blockquote>HUOMAUTUS: verkossa oleville Windows-tulostimien käyttäminen vaatii, että laiteaseman käyttäjälle on annettava tulostimen käyttöoikeus.</blockquote>
 </li>
 <li>Verkko</li>
 </ul>
@@ -492,7 +491,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille -sovellukseen
 <ul>
 <li>OPOS</li>
 <li>Verkko
-<blockquote>[!NOTE] Laiteprofiilille voidaan määrittää vain yksi kassa, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</blockquote>
+<blockquote>HUOMAUTUS: laiteprofiilille voidaan määrittää vain yksi kassa, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</blockquote>
 </li>
 </ul>
 </td>
@@ -523,7 +522,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille -sovellukseen
 Lisätietoja laiteprofiilien luomisesta on kohdassa [Kanava-asiakasohjelmien, kuten kassakoneiden ja laiteasemien, määrittäminen ja ylläpitäminen](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> Laiteaseman profiilia ei käytetä enää Microsoft Dynamics 365 for Retail -ohjelman versiossa 1611. Laiteaseman profiilia varten määrittämäsi määritteet ovat nyt osa laiteasemaa.
+> Laiteaseman profiilia ei käytetä enää Microsoft Dynamics 365 for Retailin versiossa 1611. Laiteaseman profiilia varten määrittämäsi määritteet ovat nyt osa laiteasemaa.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS Windowsille ja IPC-laiteasema (sisäänrakennettu)
 
@@ -564,7 +563,7 @@ Tätä määritystä voidaan käyttää kaikissa Modern POS -asiakasohjelmissa, 
 5. Valitse **1090**-jakeluaikataulu, kun haluat synkronoida uuden laiteprofiilin myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 6. Valitse **1040**-jakeluaikataulu, kun haluat synkronoida uuden laiteaseman myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 7. Asenna laiteasema. Lisätietoja laiteaseman asentamisesta on kohdassa [Retail Hardware Station -sovelluksen määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
-8. Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS -sovelluksen määrittäminen ja asentaminen](retail-modern-pos-device-activation.md).
+8. Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS:n määrittäminen ja asentaminen](retail-modern-pos-device-activation.md).
 9. Kirjaudu Modern POS -sovellukseen ja valitse **Suorita muita kuin kassatoimintoja**.
 10. Käynnistä **laiteasemien hallintatoiminto**.
 11. Valitse **Hallitse**.
@@ -593,7 +592,7 @@ Tätä määritystä voidaan käyttää kaikissa Modern POS -asiakasohjelmissa, 
 6. Valitse **1090**-jakeluaikataulu, kun haluat synkronoida uuden laiteprofiilin myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 7. Valitse **1040**-jakeluaikataulu, kun haluat synkronoida uuden laiteaseman myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 8. Asenna laiteasema jokaiselle vaiheissa 2 ja 3 määritetylle isäntäkoneelle. Lisätietoja laiteaseman asentamisesta on kohdassa [Retail Hardware Station -sovelluksen määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
-9. Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS -sovelluksen määrittäminen ja asentaminen](retail-modern-pos-device-activation.md).
+9. Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS:n määrittäminen ja asentaminen](retail-modern-pos-device-activation.md).
 10. Kirjaudu Modern POS -sovellukseen ja valitse **Suorita muita kuin kassatoimintoja**.
 11. Käynnistä **laiteasemien hallintatoiminto**.
 12. Valitse **Hallitse**.
@@ -743,7 +742,6 @@ Seuraavat oheislaitteet on testattu käyttämällä varattua (ei jaettua) IIS-la
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Mukautettu    | Yhdistetty verkon välityksellä     |
-| Star         | TSP100   | OPOS      | Vaatii TSP650II-ohjaimet |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
 
 #### <a name="bar-code-scanner"></a>Viivakoodin lukulaite
@@ -818,7 +816,6 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
 | Epson        | TM-T88V  | OPOS      |                           |
 | Star         | TSP650II | OPOS      |                           |
 | Star         | TSP650II | Mukautettu    | Yhdistetty verkon välityksellä     |
-| Star         | TSP100   | OPOS      | Vaatii TSP650II-ohjaimet |
 | HP           | F7M67AA  | OPOS      | Powered USB               |
 
 #### <a name="payment-terminal"></a>Maksupääte
@@ -894,4 +891,3 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Retail-oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
-

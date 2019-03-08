@@ -1,13 +1,13 @@
 ---
 title: Varastoesto
-description: "Tässä artikkelissa on yleiskatsaus varastoestosta, joka on osa Microsoft Dynamics 365 for Finance and Operationsin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen."
+description: Tässä artikkelissa on yleiskatsaus varastoestosta, joka on osa Microsoft Dynamics 365 for Finance and Operationsin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: eb6291e2f012f148b247b747f84155b96cf09677
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b7c788f4b054c7d20df69459c31bb16994d8a9ec
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352042"
 ---
-
 # <a name="inventory-blocking"></a>Varastoesto
 
 [!include [banner](../includes/banner.md)]
@@ -68,4 +67,3 @@ Voit määrittää, mitkä varaston tilat saavat aikaan eston käyttämällä **
 [Laadunhallintaprosessit](quality-management-processes.md)
 
 [Tavaroiden laadun tarkistaminen (tehtäväopas)](tasks/inspect-quality-goods.md)
-

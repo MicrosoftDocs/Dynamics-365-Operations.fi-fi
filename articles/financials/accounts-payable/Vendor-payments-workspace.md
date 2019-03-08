@@ -1,30 +1,29 @@
 ---
-title: "Toimittajan maksujen työtila"
-description: "Tässä ohjeaiheessa on tietoja toimittajamaksujen työtilasta. Toimittajamaksujen työtilassa näkyy toimittajan maksujen käsittelyyn liittyviä tietoja."
+title: Toimittajan maksujen työtila
+description: Tässä ohjeaiheessa on tietoja toimittajamaksujen työtilasta. Toimittajamaksujen työtilassa näkyy toimittajan maksujen käsittelyyn liittyviä tietoja.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymentWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 03fd290f8ad780e740a8fe6552c7a64c44b65a67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: fa8ddf52d34c3662e120509156ab0b343bb4cc16
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346108"
 ---
-
 # <a name="vendor-payments-workspace"></a>Toimittajan maksujen työtila
 
 [!include [banner](../includes/banner.md)]
@@ -69,5 +68,4 @@ Seuraavassa taulukossa on näkyvissä kullakin raporttisivulla käytettävissä 
 |         Maksun työnkulku          |                                                                                <ul><li>Toimittajamaksujen työnkulkuesiintymät</li><li>Toimittajamaksujen työnkulkuesiintymät / hyväksyjä</li><li>Toimittajamaksujen työnkulkuesiintymät / yritys</li><li>Työnkulun keskimääräinen pituus (päiviä) / hyväksyjä</li></ul>                                                                                |
 |    Toimittaja-/asiakassaldo     |                                                                                                                   <ul><li>Toimittaja-/asiakassaldo</li><li>Toimittaja-/asiakassaldo yrityksittäin</li><li>Toimittaja-/asiakassaldon tiedot</li></ul>                                                                                                                    |
 |    Laskun pidossa oleva maksu     |                                                                                         <ul><li>Laskun pidossa oleva maksu</li><li>Laskun pidossa oleva maksu -yksityiskohdat</li><li>Laskun pidossa oleva maksu yrityksittäin</li><li>Laskun pidossa oleva maksu toimittajaryhmittäin</li></ul>                                                                                          |
-
 

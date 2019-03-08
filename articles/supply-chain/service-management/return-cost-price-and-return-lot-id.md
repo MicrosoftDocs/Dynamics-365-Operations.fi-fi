@@ -1,31 +1,30 @@
 ---
-title: "Palautuksen kustannushinta ja erätunnus"
-description: "Saatat haluta, että palautettujen tuotteiden kustannus vastaa tuotteiden kustannusta sinä hetkenä, kun myit tuotteet asiakkaalle. Voit tehdä tämän käyttämällä **Palauta erätunnus** -kenttää."
+title: Palautuksen kustannushinta ja erätunnus
+description: Saatat haluta, että palautettujen tuotteiden kustannus vastaa tuotteiden kustannusta sinä hetkenä, kun myit tuotteet asiakkaalle. Voit tehdä tämän käyttämällä **Palauta erätunnus** -kenttää.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33cd3d50fe342ba12a17419f4e759c243a60b3e0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: aeba56128ab6c9ab7d244bdf153faba8e96069d6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335137"
 ---
-
 # <a name="return-cost-price-and-return-lot-id"></a>Palautuksen kustannushinta ja erätunnus        
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +63,7 @@ Tämä on ensisijainen menetelmä palautusrivien luomiseen. Käyttääksesi tuot
 
 3.  Valitse **Luo palautustilaus** -lomakkeessa asiakastili ja valitse sitten **OK**.
 
-4.  Napsauta **Palautustilaus - palautusnumero: %1, %2** -lomakkeen **toimintoruudussa** kohtaa **Etsi myyntitilaus**.
+4.  Valitse **Palautustilaus - palautusnumero: %1, %2** -lomakkeen **toimintoruudussa** **Etsi myyntitilaus**.
 
 5.  Valitse **Etsi myyntitilaus** -lomakkeessa palautettava laskurivi ja napsauta sitten **OK**.
     
@@ -109,7 +108,6 @@ Kun käytät **Palauta erätunnus** -kenttää palautustilausrivillä palautukse
 10. Käyt Varastonhallinta-moduulin **Päätös ja oikaisu** -lomaketta **Sulje**-menettelyn suorittamiseksi.
     
     Tämä toiminto oikaisee alkuperäisen myyntirivin kustannuksen -35,00 (5 kappaletta \* 7,00) muotoon -30,00 (5 kappaletta \* 6,00). Tämä johtuu siitä, varastomalliryhmä käyttää First in, First out (FIFO) -mallia ja kappalehinta 6,00 on FIFO-kustannus ensimmäisestä ostotilauksesta. Lisäksi toiminto oikaisee palautuksen myyntirivin kustannuksen vastaamaan alkuperäisen myyntitilausrivin kappalehintaa. Palautusrivin kustannus oikaistaan siten 35,00 > 30,00.
-
 
 
 

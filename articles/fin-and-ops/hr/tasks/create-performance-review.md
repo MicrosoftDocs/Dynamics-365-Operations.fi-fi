@@ -1,13 +1,13 @@
---- 
+---
 title: Luo suorituskykyarvio
-description: "Tässä toimintaohjeessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus."
+description: Tässä toimintaohjeessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: 437a63159f0333434175acce081fa4ff417c334b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338472"
 ---
 # <a name="create-a-performance-review"></a>Luo suorituskykyarvio
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä toimintaohjeessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus. Tämä menettelyn luomisessa käytettiin USMF-yrityksen demotietoja. Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.
+Tässä toimintaohjeessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus. Tämä menettelyn luomisessa käytettiin USMF-yrityksen demotietoja. Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.
 
 1. Valitse Työntekijän itsepalvelu.
 2. Luo arviointi napsauttamalla Uusi arviointi.
@@ -79,5 +79,4 @@ Tässä toimintaohjeessa opastetaan suorituskykyarvioinnin luonti sekä kuvailla
     * Arvioinnin tilan vaihtuessa työntekijä ja esimies voivat lisätä kommentteja kullekin tavoitteelle tai osaamisalueelle.  
 42. Valitse Hyväksynnät-välilehti.
     * Työntekijä ja esimies voivat hyväksyä arvioinnin. Kun kaikki tarvittavat hyväksynnät on tehty, tilaksi muutetaan Valmis, eikä muutoksia voi enää tehdä.  
-
 

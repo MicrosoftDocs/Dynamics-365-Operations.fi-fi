@@ -1,13 +1,13 @@
 ---
-title: "Varastotyön mobiililaitteiden määrittäminen"
-description: "Tässä aiheessa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille."
+title: Varastotyön mobiililaitteiden määrittäminen
+description: Tässä aiheessa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
 ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/03/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347948"
 ---
-
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Varastotyön mobiililaitteiden määrittäminen
 
 [!include [banner](../includes/banner.md)]
@@ -208,12 +207,12 @@ Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkov
 </thead>
 <tbody>
 <tr class="odd">
-<td>None</td>
+<td>Ei mitään</td>
 <td>Tämä oletusarvo ei käsittele työtä.</td>
 </tr>
 <tr class="even">
 <td>Järjestelmäohjattu</td>
-<td>Microsoft Dynamics 365 for Finance and Operations ohjaa työn tyyppiä, joka on määritetty työntekijälle, ja järjestystä, jossa työntekijä suorittaa työn. Kun valitset tämän vaihtoehdon, voit valita toimintoruudussa <strong>Järjestelmäohjattu työ</strong> avataksesi <strong>Järjestelmäohjattu lajittelujärjestys</strong> -sivun, jossa voit määrittää työn lajittelukriteerit. Lajitteluehto hallitsee järjestystä, jossa työntekijä suorittaa työn. Voit luoda tarvitsemasi määrän kriteereitä.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations ohjaa työn tyyppiä, joka on määritetty työntekijälle ja järjestystä, jossa työntekijä suorittaa työn. Kun valitset tämän vaihtoehdon, voit valita toimintoruudussa <strong>Järjestelmäohjattu työ</strong> avataksesi <strong>Järjestelmäohjattu lajittelujärjestys</strong> -sivun, jossa voit määrittää työn lajittelukriteerit. Lajitteluehto hallitsee järjestystä, jossa työntekijä suorittaa työn. Voit luoda tarvitsemasi määrän kriteereitä.</td>
 </tr>
 <tr class="odd">
 <td>Käyttäjäohjattu</td>
@@ -334,7 +333,7 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="odd">
 <td>Ryhmä pantu pois</td>
-<td>Valitse tämä vaihtoehto, jos haluat ryhmitellä hyllytystyöt. Tämä vaihtoehto on käytettävissä, kun joko työntekijä tai Microsoft Dynamics 365 for Finance and Operations on ryhmitellyt työn. Kun työntekijä on saanut ryhmän kaikki keräilytyöt valmiiksi, samaan ryhmään luodaan hyllytystyö.</td>
+<td>Valitse tämä vaihtoehto, jos haluat ryhmitellä hyllytystyöt. Tämä vaihtoehto on käytettävissä, kun joko työntekijä tai Microsoft Dynamics 365 for Finance and Operations ryhmitteli työn. Kun työntekijä on saanut ryhmän kaikki keräilytyöt valmiiksi, samaan ryhmään luodaan hyllytystyö.</td>
 </tr>
 <tr class="even">
 <td>Varasto-oikaisutyypit</td>
@@ -367,7 +366,7 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="even">
 <td>Järjestelmän ryhmittelykenttä</td>
-<td>Valitse kenttä, joka määrittää, miten Microsoft Dynamics 365 for Finance and Operations ryhmittelee keräilytyön työntekijälle. Esimerkiksi jos valitset <strong>ShipmentId</strong>-kentän, työntekijä skannaa lähetystunnuksen keräilytyön ryhmittelemiseksi. Tämän jälkeen kaikki lähetyksen työt on määritetty työntekijälle. Tämä kenttä edellyttää, että luot valikkovaihtoehdon, jolla voi käyttää aiemmin luotua järjestelmän ryhmittelemää työtä. Kirjoita teksti myös <strong>Järjestelmän ryhmittelyotsikko</strong> -kenttään, jotta työntekijä tietää, mitä pitää skannata.</td>
+<td>Valitse kenttä, joka määrittää, miten Microsoft Dynamics 365 for Finance and Operations ryhmittelee keräilytyön työntekijöille. Esimerkiksi jos valitset <strong>ShipmentId</strong>-kentän, työntekijä skannaa lähetystunnuksen keräilytyön ryhmittelemiseksi. Tämän jälkeen kaikki lähetyksen työt on määritetty työntekijälle. Tämä kenttä edellyttää, että luot valikkovaihtoehdon, jolla voi käyttää aiemmin luotua järjestelmän ryhmittelemää työtä. Kirjoita teksti myös <strong>Järjestelmän ryhmittelyotsikko</strong> -kenttään, jotta työntekijä tietää, mitä pitää skannata.</td>
 </tr>
 <tr class="odd">
 <td>Järjestelmän ryhmittelyotsikko</td>
@@ -387,13 +386,13 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="odd">
 <td>Työmallin koodi</td>
-<td>Valitse työmalli, joka synnyttää prosessin työn. Esimerkiksi jos vastaanotat nimikkeen ostotilaukselle, hyllytystyö luodaan työmallin perusteella. Jos et valitse työmallia, Microsoft Dynamics 365 for Finance and Operations määrittää mallin kyselyn ehtojen perusteella. Katso lisätietoja työmalleista artikkelista <a href="control-warehouse-location-directives.md">Varastotyön hallinta työmalleilla ja sijaintidirektiiveillä</a>.</td>
+<td>Valitse työmalli, joka synnyttää prosessin työn. Esimerkiksi jos vastaanotat nimikkeen ostotilaukselle, hyllytystyö luodaan työmallin perusteella. Jos et valitse työmallia, Microsoft Dynamics 365 for Finance and Operations määrittää kyselyehtoperustaiset mallit. Katso lisätietoja työmalleista artikkelista <a href="control-warehouse-location-directives.md">Varastotyön hallinta työmalleilla ja sijaintidirektiiveillä</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Edellytä, että työntekijät vahvistavat tuotteen, sijainnin tai määrän nimikkeitä keräillessään.
-Voit määrittää työn vahvistukset, jotka edellyttävät, että työntekijän käyttää mobiililaitetta sijainnin tai määrän rekisteröintiin suorittaessaan työtä varastossa. Työn vahvistusten avulla voidaan varmistaa, että työntekijä on oikeassa sijainnissa tai käsittelee oikeaa nimikkeiden määrää. Voit myös antaa Microsoft Dynamics 365 for Finance and Operationsin vahvistaa automaattisesti työntekijän rekisteröinnin. Jos otat käyttöön automaattisen vahvistuksen, et voi edellyttää vahvistuksia sijainnille tai määrälle. Työn vahvistukset sisältävät myös tuotteita ja tuotevariantteja. Voit myös rekisteröidä vahvistuksia lukemalla viivakoodin. Vahvistaaksesi tuotteita ja tuotevariantteja, sinun on syötettävä tuotteen tai tuotevariantin tunnus. Tunnus voi olla tuotetunnus, tuotehaun tunnus, ulkoinen tunnus, GTIN-koodi tai viivakoodi. Kun olet kirjoittanut tunnuksen tai skannannut viivakoodin, tuotevariantin dimensiot näkyvät mobiililaitteessa. 
+Voit määrittää työn vahvistukset, jotka edellyttävät, että työntekijän käyttää mobiililaitetta sijainnin tai määrän rekisteröintiin suorittaessaan työtä varastossa. Työn vahvistusten avulla voidaan varmistaa, että työntekijä on oikeassa sijainnissa tai käsittelee oikeaa nimikkeiden määrää. Voit myös antaa Microsoft Dynamics 365 for Finance and Operationsin automaattisesti vahvistaa työntekijän rekisteröinnin. Jos otat käyttöön automaattisen vahvistuksen, et voi edellyttää vahvistuksia sijainnille tai määrälle. Työn vahvistukset sisältävät myös tuotteita ja tuotevariantteja. Voit myös rekisteröidä vahvistuksia lukemalla viivakoodin. Vahvistaaksesi tuotteita ja tuotevariantteja, sinun on syötettävä tuotteen tai tuotevariantin tunnus. Tunnus voi olla tuotetunnus, tuotehaun tunnus, ulkoinen tunnus, GTIN-koodi tai viivakoodi. Kun olet kirjoittanut tunnuksen tai skannannut viivakoodin, tuotevariantin dimensiot näkyvät mobiililaitteessa. 
 
 Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuksia voi käyttää.
 
@@ -420,6 +419,5 @@ Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuks
 
 [Määritä mobiililaitteen valikkovaihtoehto vastaanotettujen nimikkeiden rekisteröinnille (tehtäväopas)](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 [Varastotilojen käytön hyödyt](../inventory/inventory-statuses.md)
-
 
 

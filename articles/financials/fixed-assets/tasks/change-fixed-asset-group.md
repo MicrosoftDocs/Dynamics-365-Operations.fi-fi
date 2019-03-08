@@ -1,13 +1,13 @@
---- 
-title: "Muuta käyttöomaisuusryhmä"
-description: "Käyttöomaisuus tulee liittää oikeaan käyttöomaisuusryhmään."
+---
+title: Muuta käyttöomaisuusryhmä
+description: Käyttöomaisuus tulee liittää oikeaan käyttöomaisuusryhmään.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, AssetChangeGroup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 32f1daa6de6034d123b1f2cf732059759f6c10ae
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 91dcefe92370733f6558292b195881993f1b71be
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358252"
 ---
 # <a name="change-a-fixed-asset-group"></a>Muuta käyttöomaisuusryhmä
 
@@ -45,5 +45,4 @@ Opastuksessa käytetään USMF-demoyritystä.
     * Kenttä on käytettävissä, jos valitsit Uusi käyttöomaisuuserän numero -vaihtoehdon.   Jos käyttöomaisuudet numeroidaan automaattisesti, tässä kentässä näkyy seuraava käytettävissä oleva käyttöomaisuusnumero. Voit muuttaa numeroa.   Jos käyttöomaisuuserät numeroidaan manuaalisesti, kenttä on tyhjä ja sinun on kirjoitettava uusi käyttöomaisuuserän numero.     
 6. Valitse OK.
 7. Valitse Kyllä.
-
 

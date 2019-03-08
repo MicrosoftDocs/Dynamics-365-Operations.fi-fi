@@ -1,13 +1,13 @@
 ---
-title: "Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin"
-description: "Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Power BI-palveluihin."
+title: Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin
+description: Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Power BI -palveluihin.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e2d3c03a75fd03dfd3a96a181eff20f934546ec4
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335781"
 ---
-
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Power BI-palveluihin. Tässä aiheessa käytetään esimerkkinä Intrastat-tapahtumia siirrettävinä liiketoimintatietoina. Power BI -karttavisualisointi käyttää tätä Intrastat-tapahtumatietoa näkymän esittämiseen yrityksen tuonti-/vientitoimintojen analyysia varten Power BI-raportissa.
+Tässä ohjeaiheessa kerrotaan, miten omaa sähköisen raportoinnin konfiguraatiota voidaan käyttää tietojen siirron järjestämiseen omasta Finance and Operations -esiintymästä Power BI -palveluihin. Tässä aiheessa käytetään esimerkkinä Intrastat-tapahtumia siirrettävinä liiketoimintatietoina. Power BI -karttavisualisointi käyttää tätä Intrastat-tapahtumatietoa näkymän esittämiseen yrityksen tuonti-/vientitoimintojen analyysia varten Power BI -raportissa.
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Microsoft Power BI on kokoelma ohjelmistopalveluita, sovelluksia ja yhdistimiä, jotka yhdessä muuttavat ulkoiset tietolähteet yhdenmukaiseksi, visuaalisesti mukaansatempaavaksi ja interaktiiviseksi tiedoksi. Sähköisen raportoinnin (ER) avulla Microsoft Dynamics 365 for Finance and Operations -käyttäjät voivat helposti määrittää tietolähteet ja järjestää Finance and Operations -tietojen siirron Power BI -palveluun. Tiedot siirretään tiedostoina OpenXML-laskentataulukko (Microsoft Excel -työkirjatiedosto) -muodossa. Siirretyt tiedostot tallennetaan Microsoft SharePoint Serveriin, joka on konfiguroitu tähän tarkoitukseen. Tallennettuja tiedostoja Power BI:ssa laadittaessa raportteja, jotka sisältävät visualisointeja (taulukot, kaaviot, kartat ja niin edelleen). Power BI -raportit jaetaan Power BI -käyttäjille, ja ne saadaan käyttöön Power BI -koontinäytöissä ja Finance and Operations -sivuilla. Tässä aiheessa esitellään seuraavat tehtävät:
+Microsoft Power BI on kokoelma ohjelmistopalveluita, sovelluksia ja yhdistimiä, jotka yhdessä muuttavat ulkoiset tietolähteet yhdenmukaiseksi, visuaalisesti mukaansatempaavaksi ja interaktiiviseksi tiedoksi. Sähköisen raportoinnin (ER) avulla Microsoft Dynamics 365 for Finance and Operationsin käyttäjät voivat helposti määrittää tietolähteet ja järjestää Finance and Operations -tietojen siirron Power BI -palveluun. Tiedot siirretään tiedostoina OpenXML-laskentataulukkomuodossa (Microsoft Excel -työkirjatiedostona). Siirretyt tiedostot tallennetaan Microsoft SharePoint Serveriin, joka on konfiguroitu tähän tarkoitukseen. Tallennettuja tiedostoja Power BI:ssa laadittaessa raportteja, jotka sisältävät visualisointeja (taulukot, kaaviot, kartat ja niin edelleen). Power BI -raportit jaetaan Power BI -käyttäjille, ja ne saadaan käyttöön Power BI -koontinäytöissä ja Finance and Operations -sivuilla. Tässä aiheessa esitellään seuraavat tehtävät:
 
 - Määritä Finance and Operations.
 - Sähköisen raportoinnin konfiguraation valmistelu Finance and Operations -tietojen noutoa varten.
@@ -51,7 +50,7 @@ Tämän aiheen esimerkin suorittaminen edellyttää seuraavia käyttöoikeuksia:
     - Järjestelmänvalvoja
 
 - Finance and Operations -käyttöön määritetyn SharePoint Serverin käyttöoikeudet
-- Power BI-kehikon käyttöoikeudet
+- Power BI -kehikon käyttöoikeudet
 
 ## <a name="configure-document-management-parameters"></a>Tiedostonhallintaparametrien konfigurointi
 1. Konfiguroi **Tiedostonhallintaparametrit**-sivulla SharePoint Serve -käyttöoikeudet, joita käytetään yrityksessä, johon olet kirjautunut (DEMF tässä esimerkissä).
@@ -59,7 +58,7 @@ Tämän aiheen esimerkin suorittaminen edellyttää seuraavia käyttöoikeuksia:
 
     [![Asiakirjahallinnan parametrisivu](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
-3. Avaa määritetty SharePoint-sivusto. Luo uusi kansio, johon ER tallentaa Excel-tiedostot, jotka sisältävä liiketoimintatietoja, joita Power BI -raportit tarvitsevat Power BI-tietojoukkojen lähteenä.
+3. Avaa määritetty SharePoint-sivusto. Luo uusi kansio, johon ER tallentaa Excel-tiedostot, jotka sisältävä liiketoimintatietoja, joita Power BI -raportit tarvitsevat Power BI -tietojoukkojen lähteenä.
 4. Voit luoda Finance and Operationsin **Tiedostotyypit**-sivulla uuden tiedostotyypin, jota käytetään juuri luomasi SharePoint-kansioon kirjauduttaessa. Kirjoita **Tiedosto** **Ryhmä**-kenttään ja **SharePoint** **Sijainti**-kenttään ja kirjoita SharePoint-kansion osoite.
 
     [![Tiedostotyypit-sivu](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
@@ -123,8 +122,8 @@ Sinun on määritettävä ER-kehys uuden ER-muotokonfiguraation tulosteen lähet
 
 Valitse **Asetukset**-painike uudelle kohdetietueelle. Noudata seuraavia ohjeita **Kohdeasetukset**-valintaikkunassa.
 
-1. **Power BI** -välilehdessä määritä **Käytössä**-asetukseksi **Kyllä**.
-2. **SharePoint**-kentässä valitse **Jaettu**-tiedostotyyppi jonka loit aiemmin.
+1. Määritä **Power BI** -välilehdessä **Käytössä**-asetukseksi **Kyllä**.
+2. Valitse **SharePoint**-kentässä **Jaettu**-tiedostotyyppi, jonka loit aiemmin.
 
 ## <a name="schedule-execution-of-the-configured-er-format"></a>Konfiguroidun ER-muodon suorituksen ajoittaminen
 1. **Konfiguroinnit**-sivulla (**Organisaation hallinto** &gt; **Sähköinen raportointi** &gt; **Konfiguroinnit**) konfiguraatioiden puurakenteessa, valitse **Tuonti-/vientitoiminnot**-konfiguraatio, jonka loit aiemmin.
@@ -152,7 +151,7 @@ Valitse **Asetukset**-painike uudelle kohdetietueelle. Noudata seuraavia ohjeita
     [![Tietojoukon luonti](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
 
 2. Valitse **SharePoint - ryhmäsivustot** -vaihtoehto ja kirjoita polku, jota käytät SharePoint Serverissä (esimerkissä `https://ax7partner.litware.com`).
-3. Selaa **/Shared Documents/GER data/PowerBI**-kansioon ja valitse Excel-tiedosto, jonka olet luonut uuden Power BI -tietojoukon tietojen lähteeksi.
+3. Siirry **/Shared Documents/GER data/PowerBI**-kansioon ja valitse Excel-tiedosto, jonka olet luonut uuden Power BI -tietojoukon tietojen lähteeksi.
 
     [![Excel-tiedoston valitseminen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
 
@@ -184,10 +183,10 @@ Valitse **Asetukset**-painike uudelle kohdetietueelle. Noudata seuraavia ohjeita
 
     [![Päivitetty määritys](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
-## <a name="access-power-bi-report-in-finance-and-operations"></a>Power BI -raportin valmistelu Finance and Operations -käyttöä varten
+## <a name="access-power-bi-report-in-finance-and-operations"></a>Power BI -raportin käyttö Finance and Operationsissa
 Määritä Finance and Operationsin ja Power BI:n integrointi. Lisätietoja on kohdassa [Power BI -integroinnin konfiguroiminen työtiloille](configure-power-bi-integration.md).
 
-1. **Sähköinen raportointi**-työtilan sivulla, joka tukee Power BI-integrointia (**Organisaation hallinto** &gt; **Työtilat** &gt; **Sähköisen raportoinnin työtila**), valitse **Asetukset** &gt; **Avaa raporttiluettelo**.
+1. Valitse **Sähköinen raportointi** -työtilan sivulla, joka tukee Power BI -integrointia (**Organisaation hallinto** &gt; **Työtilat** &gt; **Sähköisen raportoinnin työtila**), **Asetukset** &gt; **Avaa raporttiluettelo**.
 2. Valitse **Tuodut ja viedyt tiedot** Power BI -raportti, jonka olet luonut, jotta raportti näytetään valitun sivun toimintonimikkeenä.
 3. Valitse toimintonimike, joka avaa Finance and Operations -sivun, jossa näkyy Power BI:ssa suunniteltu raportti.
 
@@ -198,4 +197,3 @@ Määritä Finance and Operationsin ja Power BI:n integrointi. Lisätietoja on k
 [Sähköisen raportoinnin kohteet](electronic-reporting-destinations.md)
 
 [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
-

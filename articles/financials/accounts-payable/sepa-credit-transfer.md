@@ -1,13 +1,13 @@
 ---
 title: SEPA-tilisiirron yleiskatsaus
-description: "Tässä artikkelissa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisältävät yhtenäisen euromaksualueen (Single Euro Payments Area, SEPA) tilisiirrot ja muut toimittajille suoritettavat sähköiset maksut. SEPA-tilisiirto on tietyntyyppinen toisen yrityksen tai henkilön toiselle yritykselle tai henkilölle suorittama euromääräinen maksu. Aiheessa selitetään myös tilisiirron maksutiedoston määrittäminen ja siirtäminen."
+description: Tässä artikkelissa on yleisiä tietoja ISO 20022 -tilisiirroista, jotka sisältävät yhtenäisen euromaksualueen (Single Euro Payments Area, SEPA) tilisiirrot ja muut toimittajille suoritettavat sähköiset maksut. SEPA-tilisiirto on tietyntyyppinen toisen yrityksen tai henkilön toiselle yritykselle tai henkilölle suorittama euromääräinen maksu. Aiheessa selitetään myös tilisiirron maksutiedoston määrittäminen ja siirtäminen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d6081c12ea65812a15b50c627330b4566ab4c679
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1aa70dea3b0e7056afbdba96f4475c3e7e71f57c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363772"
 ---
-
 # <a name="sepa-credit-transfer-overview"></a>SEPA-tilisiirron yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
@@ -52,10 +51,10 @@ Eurooppalaisista pankeista muodostuva EPC kehittää SEPA-maksuvälineiden kaupa
 SEPA-tilisiirto on toisen yrityksen tai henkilön toiselle yritykselle tai henkilölle suorittama maksu. Maksujen on oltava euromääräisiä ja niissä on oltava kummankin osapuolen kansainvälinen tilinumero (IBAN) ja BIC (Bank Identifier Code) -koodi. (BIC-koodi tunnetaan myös nimellä \[SWIFT\] (Society for Worldwide Interbank Financial Telecommunication) -koodi. Lisäksi osapuolien on jaettava tapahtumakustannukset. Osapuolten välisissä tilisiirroissa on käytettävä EPC:n määritysten mukaisia XML-tiedostoja, jotka vastaavat ISO 20022 -maksukäsittelystandardeja ja XML-muotoa.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Miten tilisiirto tehdään?
-SEPA-tilisiirron maksumuoto toteutetaan Euroopan maissa käyttämällä Microsoft Dynamics 365 Finance and Operationsin sähköistä raportointia (ER) ja maksutapatoimintoa. Muilla alueilla käytetään edelleen joitakin tilisiirron muotoja, jotka käyttävät vanhaa maksukehystä. Muiden muotojen lisäksi saatavilla on kaksitoista ISO 20022 -tilisiirron tiedostomuotoa. Nämä vientimuodot ovat SEPA ISO 20022 XML -standardin mukaisia. Niiden avulla muodostetaan ei-euromääräiset maksun siirrot maille/alueille, joissa niitä käytetään sekä euromääräiset maksut sen mukaisesti, mitä EPC:n SEPA-tilisiirtojen sääntökirjan versiossa 8.2 määritetään. Ennen tilisiirtojen käyttöönottoa omasta pankista on pyydettävä ohjelmisto, joka tarvitaan sähköisten pankkitiedostojen lataamiseen. Maksutoimeksiannot sisältävät XML-tiedostot siirretään tällä ohjelmistolla pankkiin.
+SEPA-tilisiirron maksumuoto toteutetaan Euroopan maissa käyttämällä Microsoft Dynamics 365 for Finance and Operationsin sähköistä raportointia (ER) ja maksutapatoimintoa. Muilla alueilla käytetään edelleen joitakin tilisiirron muotoja, jotka käyttävät vanhaa maksukehystä. Muiden muotojen lisäksi saatavilla on kaksitoista ISO 20022 -tilisiirron tiedostomuotoa. Nämä vientimuodot ovat SEPA ISO 20022 XML -standardin mukaisia. Niiden avulla muodostetaan ei-euromääräiset maksun siirrot maille/alueille, joissa niitä käytetään sekä euromääräiset maksut sen mukaisesti, mitä EPC:n SEPA-tilisiirtojen sääntökirjan versiossa 8.2 määritetään. Ennen tilisiirtojen käyttöönottoa omasta pankista on pyydettävä ohjelmisto, joka tarvitaan sähköisten pankkitiedostojen lataamiseen. Maksutoimeksiannot sisältävät XML-tiedostot siirretään tällä ohjelmistolla pankkiin.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Mitkä tilisiirron muodot ovat tällä hetkellä tuettuja Finance and Operationsissa?
-Tarkista Microsoft Dynamics Lifecycle Services (LCS) -palvelun jaetusta omaisuuskirjastosta luettelo uusimmista käytettävissä olevista tiedostoista, joiden tyyppi on **GER configuration**. Seuraavassa osassa, "Mitä asetuksia on määritettävä?", on linkki ohjeaiheeseen, jossa kerrotaan, miten luot LCS-säilön, josta voit tarkastaa käytettävissä olevat konfiguraatiotiedostot ja tuoda haluamasi tiedostot.
+Tarkista Microsoft Dynamics Lifecycle Services (LCS) -palvelun jaetusta omaisuuskirjastosta luettelo uusimmista käytettävissä olevista tiedostoista, joiden tyyppi on **GER-konfigurointi**. Seuraavassa osassa, "Mitä asetuksia on määritettävä?", on linkki ohjeaiheeseen, jossa kerrotaan, miten luot LCS-säilön, josta voit tarkastaa käytettävissä olevat konfiguraatiotiedostot ja tuoda haluamasi tiedostot.
 
 ## <a name="what-do-i-have-to-set-up"></a>Mitä asetuksia on määritettävä?
 -   Ennen tilisiirtotiedostojen luontia vähintään yksi aktiivinen tilisiirtomääritys on tuotava sähköisen raportoinnin määrityksiin. Ohjeet löydät artikkelista [Lataa sähköisen raportoinnin konfiguraatiot Lifecycle Servicesistä](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
@@ -124,7 +123,6 @@ International Bank Account Number (IBAN)-numeroa ja Bank Identifier Code (BIC) -
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Miten maksutiedosto siirretään pankkiin?
 Maksuja muodostettaessa muodostetaan maksutiedosto, ja sinua pyydetään tallentamaan se selaimesta sopivaan sijaintiin. Tämä XML-tiedosto lähetetään seuraavaksi pankkiin. Tämä prosessi vaihtelee pankeittain. Lähetä tiedostot pankkiin käsiteltäviksi pankin ohjeiden mukaisesti.
-
 
 
 

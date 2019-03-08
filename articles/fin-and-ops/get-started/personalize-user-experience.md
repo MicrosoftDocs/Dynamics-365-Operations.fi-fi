@@ -1,13 +1,13 @@
 ---
-title: "Käyttäjäkokemuksen mukauttaminen"
-description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Finance and Operationsin mukauttamista."
+title: Käyttäjäkokemuksen mukauttaminen
+description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa Microsoft Dynamics 365 for Finance and Operationsissa.
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
-ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/28/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363473"
 ---
-
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Finance and Operationsin mukauttamista.
+Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa Microsoft Dynamics 365 for Finance and Operationsissa.
 
 Finance and Operationsissa on kolme mukauttamisen perusluokkaa.
 
@@ -115,7 +114,7 @@ Mahdollisuus siirtyä sivulla, kun **Mukauttaminen-työkalurivi** on avoinna, ri
 - Saat **Lisää**-painikkeella näkyviin luettelon sivulle lisättävistä elementeistä.
 
     - Lisää kenttä sivulle valitsemalla **Kenttä**-työkalu **Lisää**-kohdassa. Voit lisätä **Kenttä**-työkalulla vain kenttiä, jotka sisältyvät sivumääritykseen mutta joita ei tällä hetkellä näytetä sivulla. Lisätietoja nykyisen sivumääritelmän ulkopuolisten uusien kenttien luomisesta on kohdassa [Mukautetut kentät](user-defined-fields.md). Sinun on valittava **Kenttä**-työkalun valinnan jälkeen ensin ryhmä tai alue, johon haluat lisätä kentän. Valintaikkunassa on luettelo valittuun ryhmään tai alueeseen liittyvistä kentistä. Valitse valintaluettelossa ensin vähintään yksi lisättävä kenttä ja sitten **Lisää**. Voit poistaa aiemmin lisätyn kentän toistamalla edellä mainitut vaiheet mutta poistamalla valintaikkunassa kentän valinnan.
-    - Valitse **PowerApp**-työkalu **Lisää**-kohdassa, jos haluat upottaa sivulla Microsoft PowerAppsilla luodun sovelluksen. Lisätietoja PowerApps-sovelluksen upottamisesta sivulle on kohdassa [PowerApps-sovellusten upottaminen](embed-power-apps.md).
+    - Valitse **PowerApp**-työkalu **Lisää**-kohdassa, jos haluat upottaa sivulle Microsoft PowerAppsilla luodun sovelluksen. Lisätietoja PowerApps-sovelluksen upottamisesta sivulle on kohdassa [PowerApps-sovellusten upottaminen](embed-power-apps.md).
 
 - Valitsemalla **Hallinta**-painikkeen näet luettelon hallintavaihtoehdoista, jotka liittyvät kaikkiin nykyisen sivun mukautuksiin.
 
@@ -171,4 +170,3 @@ Kun mukautat varastodimension asetuksia sivulla, pidä mielessä **Näytä dimen
 **Dimension näyttöasetuksia**käytetään kaikilla sivulla, ja ne korvaavat kaikki yksittäisten sivujen mukautetut varastodimension kenttien asetukset.
 
 Jos et siis halua edellisessä esimerkissä, että varastodimension eränumero näkyy, kyseisen dimension valinta on poistettava taulukon **Näytä dimensiot** -vaihtoehdon osana. Tämän jälkeen tätä muutosta käytetään tietyn sivun lisäksi kaikilla sivuilla.
-

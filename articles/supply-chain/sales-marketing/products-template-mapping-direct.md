@@ -1,40 +1,39 @@
 ---
 title: Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
-description: "Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla tuotteet synkronoidaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Salesiin."
+description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Salesiin.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348247"
 ---
-
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Tutustu [sovellusten Common Data Servicen tietojen integrointiin](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
+> Tutustu [Common Data Service for Appsin tietojen integrointiin](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
 
-Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla tuotteet synkronoidaan suoraan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Salesiin.
+Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan suoraan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Salesiin.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
 
@@ -79,7 +78,7 @@ Ulkoisesti ylläpidetyt tuotteet lisätään automaattisesti ensimmäiseen samaa
 
 > [!NOTE]
 > - Tuotteen synkronointi ei onnistu, jos hinnastossa ei ole vastaavaa valuuttaa.
-> - Voit määrittää integroinnissa käytettävän hinnaston yhdistämällä pricelevelid.name [oletus hinnasto (nimi)] tietojen integrointiprojektiin. Syötteen on oltava pienillä kirjaimilla. Esimerkiksi oletusarvoinen myynnin hinnasto nimeltään ”Vakio” voi olla: kohdekenttä: pricelevelid.name [Oletusarvoinen hinnasto (Nimi)] ja karttatyyppi: [ { ”transformType”: ”Default", "defaultValue": "standard”} ].
+> - Voit määrittää integroinnissa käytettävän hinnaston yhdistämällä pricelevelid.name [oletus hinnasto (nimi)] tietojen integrointiprojektiin. Syötteen on oltava pienillä kirjaimilla. Esimerkiksi oletusarvoinen myynnin Vakio-niminen hinnasto voisi olla kohdekenttä: pricelevelid.name [Oletusarvoinen hinnasto (Nimi)] ja karttatyyppi: [ { ”transformType”: ”Default", "defaultValue": "standard} ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
@@ -120,7 +119,6 @@ Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 [Myyntitilauksien otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](sales-order-template-mapping-direct-two-ways.md)
 
 [Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](sales-invoice-template-mapping-direct.md)
-
 
 
 

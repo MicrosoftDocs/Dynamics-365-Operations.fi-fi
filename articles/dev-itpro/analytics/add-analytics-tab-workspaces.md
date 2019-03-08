@@ -1,13 +1,13 @@
 ---
-title: "Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla"
-description: "Tässä ohjeaiheessa kerrotaan, miten Power BI -raportti upotetaan työtilan Analytiikka-välilehteen."
+title: Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
+description: Tässä ohjeaiheessa kerrotaan, miten Power BI -raportti upotetaan työtilan Analytiikka-välilehteen.
 author: tjvass
 manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a190e15dc304f60739c80d75222830ee737c5a32
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355216"
 ---
-
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
 
 [!include [banner](../includes/banner.md)]
@@ -46,12 +45,12 @@ Riippumatta siitä laajennatko aiemmin luodun sovellustyötilan vai otatko käyt
 4. Valinnainen: Lisää laajennuksia näkymää mukauttamalla.
 
 > [!NOTE]
-> Lisätietoja analyysiraporttien luomisesta on ohjeaiheessa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Tällä sivulla on tietoja tavoista, joilla voit luoda vaikuttavia analyysiraporttiratkaisuja.
+> Lisätietoja analyysiraporttien luomisesta on kohdassa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Tällä sivulla on tietoja tavoista, joilla voit luoda vaikuttavia analyysiraporttiratkaisuja.
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>.pbix-tiedoston lisääminen resurssina
-Ennen aloittamista on luotava tai haettava työtilaan upotettava Power BI -raportti. Lisätietoja analyysiraporttien luomisesta on ohjeaiheessa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
+Ennen aloittamista on luotava tai haettava työtilaan upotettava Power BI -raportti. Lisätietoja analyysiraporttien luomisesta on kohdassa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
 
-Lisää .pbix-tiedosto Visual Studio -projektin artefakti.
+Lisää .pbix-tiedosto Visual Studio -projektin artefaktina.
 
 1. Luo uusi projekti sopivassa mallissa-
 2. Valitse ratkaisunhallinnassa projekti, napsauta hiiren kakkospainikkeella ja valitse sitten **Lisää** \> **Uusi nimike**.
@@ -177,4 +176,3 @@ public static void initializeReportControl(
 | showFilterPane   | Totuusarvo, joka ilmaisee, näytetäänkö suodatinruutu (**tosi**) vai piilotetaanko se (**epätosi**).     |
 | showNavPane      | Totuusarvo, joka ilmaisee, näytetäänkö siirtymisruutu (**tosi**) vai piilotetaanko se (**epätosi**). |
 | defaultFilters   | Power BI -raportin oletussuodattimet.                                                                 |
-

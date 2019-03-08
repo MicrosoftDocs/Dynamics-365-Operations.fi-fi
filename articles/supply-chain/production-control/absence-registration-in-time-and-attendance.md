@@ -1,13 +1,13 @@
 ---
-title: "Työajan seurannan poissaolojen rekisteröinti"
-description: "Tässä ohjeaiheessa kerrotaan, miten poissaolojen rekisteröintejä käsitellään työajan seurannassa."
+title: Työajan seurannan poissaolojen rekisteröinti
+description: Tässä ohjeaiheessa kerrotaan, miten poissaolojen rekisteröintejä käsitellään työajan seurannassa.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ef244d5abf762bcaab426cf1cefb232383a8109
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 477724e6211a084638e8a0b7133f60edef07b3ad
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363036"
 ---
-
 # <a name="absence-registration-in-time-and-attendance"></a>Työajan seurannan poissaolojen rekisteröinti
 
 [!include [banner](../includes/banner.md)]
@@ -110,4 +109,3 @@ Tässä esimerkissä työntekijä leimaa itsensä sisään kello 10.00 ja valits
 ### <a name="calculate-and-approve-absence"></a>Poissaolon laskeminen ja hyväksyminen
 
 - Valitse **Työajan seuranta** &gt; **Tarkista ja hyväksy** &gt; **Hyväksy tai laske**.
-

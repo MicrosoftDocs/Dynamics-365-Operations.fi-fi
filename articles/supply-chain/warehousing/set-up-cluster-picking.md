@@ -1,13 +1,13 @@
 ---
-title: "Määritä klusterikeräily"
-description: "Tässä ohjeaiheessa käsitellään klusterikeräilyn määrittämistä ja nimikevahvistuksen käyttämistä klusterikeräilyssä."
+title: Määritä klusterikeräily
+description: Tässä ohjeaiheessa käsitellään klusterikeräilyn määrittämistä ja nimikevahvistuksen käyttämistä klusterikeräilyssä.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSClusterProfile, WHSRFAutoConfirm
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2ec0890963b2b01407acac8003453faf370894b4
-ms.openlocfilehash: 1c23421ddfda8c5f6fa27a31831a00ead6094db9
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/11/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364094"
 ---
-
 [!include[banner](../includes/banner.md)]
 
 # <a name="set-up-cluster-picking"></a>Määritä klusterikeräily
@@ -35,7 +34,7 @@ Tässä ohjeaiheessa kuvataan, kuinka työntekijät voivat käyttää mobiililai
 
 Kun työtilaukset on vapautettu varastoon, työntekijä voi määrittää tilaukset klusteriin mobiililaitteen avulla. Klusteri järjestää keräilytyön työntekijälle. Kun työtilaus liitetään klusteriin, työntekijän on käytettävä klusterikeräilyä kyseisen tilauksen keräilytyöhön. Työntekijä ei voi käyttää muita keräilymenetelmiä. Jos työjärjestys määritetään klusteriin vahingossa, työntekijän on pidettävä tauko rikkoakseen klusterin ja luodakseen sen sitten uudelleen.
 
-Tarvittaessa työntekijä voi siirtää klusterin toiselle työntekijälle. Tämä muuttaa klusterin tilaksi Hyväksytty. Kun työntekijä käyttää mobiililaitetta ja ilmoittaa, että keräily ja hyllytys on valmis, lähetys tai kuorma on vahvistettava Dynamics 365 for Finance and Operations -asiakasohjelmassa.
+Tarvittaessa työntekijä voi siirtää klusterin toiselle työntekijälle. Tämä muuttaa klusterin tilaksi Hyväksytty. Kun hän käyttää kannettavaa laitetta ja ilmoittaa, että keräily ja hyllytys on valmis, lähetys tai kuorma on vahvistettava Dynamics 365 for Finance and Operationsin asiakasohjelmassa.
 
 ## <a name="set-up-cluster-picking"></a>Määritä klusterikeräily
 
@@ -81,4 +80,3 @@ Kun klusterikeräily on käytössä, nimikkeen vahvistaminen on ehdottoman tärk
 1.  Avaa mobiililaitteen valikossa työn vahvistuksen määrityslomake: **Varastonhallinta** \> **Varastonhallinta** \> **Asetukset** \> **Mobiililaite** \> **Mobiililaitteen valikkovaihtoehdot**.
 
 2.  Avaa mobiililaitteen valikossa **Työn vahvistusasetukset**. **Tuotteen vahvistus** -asetuksella voi tarkistaa kunkin varastokappaleen mobiililaitteessa skannauksen yhteydessä.
-

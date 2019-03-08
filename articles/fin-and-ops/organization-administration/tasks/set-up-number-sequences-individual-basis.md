@@ -1,13 +1,13 @@
---- 
-title: "Yksittäisten numerosarjojen määrittäminen"
-description: "Numerosarjoja käytetään muodostamaan päätietotietueille ja niitä tarvitsevilla tapahtumatietueille luettavia, yksilöllisiä tunnisteita."
+---
+title: Yksittäisten numerosarjojen määrittäminen
+description: Numerosarjoja käytetään muodostamaan päätietotietueille ja niitä tarvitsevilla tapahtumatietueille luettavia, yksilöllisiä tunnisteita.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6734d66a06f8a8dc90a48bd68b7b4e22177b4672
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e2808e57dc8d137fac892d48e99d7687ff1bf81
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362208"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Yksittäisten numerosarjojen määrittäminen
 
@@ -43,5 +43,4 @@ Numerosarjoja käytetään muodostamaan päätietotietueille ja niitä tarvitsev
 8. Laajenna Yleiset-osa.
     * Määritä Yleinen-pikavälilehdellä, onko numerosarja manuaalinen, jatkuva tai ei-jatkuva. Kirjoita lisäksi pienimmät ja suurimmat numerosarjassa käytettävät numerot.     Emme suosittele ei-jatkuvan numerosarjan muuttamista jatkuvaksi numerosarjaksi. Numerosarja ei ole todellisuudessa jatkuva. Tämä muutos saattaa myös aiheuttaa tietokannassa päällekkäisten avainten virheitä. Lisäksi jatkuvilla numerosarjoilla on suurempi vaikutus suorituskykyyn.   
 9. Valitse Tallenna.
-
 

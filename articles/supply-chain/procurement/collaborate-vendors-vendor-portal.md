@@ -1,13 +1,13 @@
 ---
-title: "Yhteistyö toimittajien kanssa Toimittajaportaalissa"
-description: "Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä Toimittajaportaalissa yhteistyötä ulkoisten toimittajien kanssa ostotilauksen vahvistusprosessin aikana. Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita."
+title: Yhteistyö toimittajien kanssa Toimittajaportaalissa
+description: Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä Toimittajaportaalissa yhteistyötä ulkoisten toimittajien kanssa ostotilauksen vahvistusprosessin aikana. Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 07fbc5fea1fd44769a29bcc40297ffd02812a1e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339875"
 ---
-
-# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Yhteistyö toimittajien kanssa Toimittajaportaalissa
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Yhteistyö toimittajien kanssa toimittajaportaalissa
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä Toimittajaportaalissa yhteistyötä ulkoisten toimittajien kanssa ostotilauksen vahvistusprosessin aikana. Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita.
 
-Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita. Toimittajaportaalin toiminnot on korvattu laajennetulla toimittajayhteistyötoiminnallisuudella Dynamics 365 for Operations -versiossa 1611. Lisätietoja siitä uudesta toimittajayhteistyötoiminnosta on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).  
+Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita. Toimittajaportaalin toiminnot on korvattu laajennetulla toimittajayhteistyötoiminnallisuudella Dynamics 365 for Operationsin versiossa 1611. Lisätietoja siitä uudesta toimittajayhteistyötoiminnosta on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).  
 
 Toimittajaportaali on tarkoitettu toimittajille, joilla ei ole sähköisten tietojen vaihdon (EDI) Microsoft Dynamics AX -integrointia ostotilausten tietojen vaihtoa varten. Portaalissa ostoedustajat voivat lähettää ostotilauksen toimittajalle ja vastaanottaa Vahvistettu- tai Hylätty-vastauksen suoraan Dynamics AX:ään.  
 
@@ -102,7 +101,6 @@ Seuraavassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotilaus
 [Käyttöoikeuksien määrittäminen toimittajayhteistyön käyttäjille](configure-security-vendor-portal-users.md)
 
 [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Muotoilun lisäasetukset taloushallinnon raporteissa"
-description: "Luodessasi raportin taloushallinnon raportoinnissa, sen muotoiluun on käytettävissä lisätoimintoja, kuten dimensiosuodattimia, rajoituksia sarakkeille ja raportoinnin yksiköille, ei-tulostettavia rivejä IF/THEN/ELSE -lausekkeita laskutoimituksissa."
+title: Muotoilun lisäasetukset taloushallinnon raporteissa
+description: Luodessasi raportin taloushallinnon raportoinnissa, sen muotoiluun on käytettävissä lisätoimintoja, kuten dimensiosuodattimia, rajoituksia sarakkeille ja raportoinnin yksiköille, ei-tulostettavia rivejä IF/THEN/ELSE -lausekkeita laskutoimituksissa.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335574"
 ---
-
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Muotoilun lisäasetukset taloushallinnon raporteissa
 
 [!include [banner](../includes/banner.md)]
@@ -195,7 +194,7 @@ Rivin määrityksessä käytettävä laskentakaava voi sisältää **+**, **-**,
 Laskentakaavassa on mahdollista käyttää monimutkaisempia operaattoreita kuin rivin summakaavassa. Et kuitenkaan voi käyttää **\*** ja **/** -operaattoreita muiden operaattoreiden kanssa toteuttaaksesi kerto- (\*) ja jakolaskuja (/). Jos haluat käyttää aluetta tai summaa laskentakaavassa, sinun on käytettävä ät-merkkiä (@) jokaisen rivikoodin edessä, ellet käytä saraketta rivin määrityksessä. Jos esimerkiksi haluat lisätä rivin 100 summan rivin 330 summaan, voit käyttää rivin summakaavaa **100+330** tai laskentakaavaa **@100+@330**.
 
 > [!NOTE]
-> Ät-merkkiä (@) on käytettävä ennen jokaista rivikoodia, jota käytetään laskukaavassa. Muutoin luku luetaan absoluuttisena summana. Esimerkiksi kaava **@100**+330 lisää riville 100 330 dollarin summan. Ät-merkki (@) ei ole pakollinen viitattaessa laskentakaavan sarakkeeseen.
+> Ät-merkkiä (@) on käytettävä ennen jokaista rivikoodia, jota käytetään laskukaavassa. Muutoin luku luetaan absoluuttisena summana. Esimerkiksi kaava **@100+330** lisää riville 100 330 dollarin summan. Ät-merkki (@) ei ole pakollinen viitattaessa laskentakaavan sarakkeeseen.
 
 ### <a name="create-a-calculation-formula"></a>Laskentakaavan luominen
 
@@ -209,9 +208,9 @@ Tässä esimerkissä laskentakaava **@100+@330** tarkoittaa, että rivin 100 sum
 
 | Rivin koodi | Kuvaus                 | Muotoilukoodi | Liittyvät kaavat/rivit/yksiköt | Tulostusohjaus | Rivimääre | Linkki taloushallinnon dimensioihin |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Kassa kauden alussa |             |                            | NP            | BB           | +Tili=\[1100:1110\]       |
-| 370      | Kassa vuoden alussa   | CAL         | @100+@330                  | NP            |              |                              |
-| 400      | Kassa kauden alussa | TOT         | 340+370                    |               |              |                              |
+| 340      | Käteinen kauden alussa |             |                            | ET            | BB           | +Tili=\[1100:1110\]       |
+| 370      | Käteinen vuoden alussa   | LASK         | @100+@330                  | ET            |              |                              |
+| 400      | Käteinen kauden alussa | TOT         | 340+370                    |               |              |                              |
 
 Kun rivimäärityksen rivillä on muotoilukoodi **CAL** ja kirjoitat matemaattisen laskentakaavan **Liittyvät kaavat/rivit/yksiköt** -soluun, sinun on syötettävä myös liittyvän sarakkeen kirjain ja raportin rivi. Anna esimerkiksi **A.120** edustamaan sarakkeen A riviä 120. Voit myös käyttää ät-merkkiä (@) osoittamaan kaikki sarakkeet. Anna esimerkiksi **@120** edustamaan rivin 120 kaikkia sarakkeita. Kaikki matemaattiset laskutoimitukset, joissa ei ole sarakkeen kirjainta tai at-merkkiä (@) oletetaan olevan reaaliluku.
 
@@ -280,8 +279,8 @@ Jos haluat rajoittaa laskutoimituksen yksittäiseen raportointiyksikköön siten
 Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus kirjataan rivimäärityksen **Liittyvät kaavat/rivit/yksiköt** -soluun sekä taloushallinnon tietotyypin rajoitukseen. Laskennassa on käytettävä ehdollista laskelmaa, joka alkaa **IF @Unit** -rakenteella. Esimerkki: IF @Unit(SALES) THEN @100 ELSE 0 Tähän laskutoimitukseen sisältyy raportin jokaisen sarakkeen rivin 100 arvo, mutta rajoitettuna ainoastaan SALES-yksikköön. Jos järjestelmässä on useita SALES-yksiköitä, määrä näytetään kaikissa yksiköissä. Lisäksi rivi 100 voi olla taloushallinnon tietorivi, ja se voidaan määrittää piilotetuksi. Tässä tapauksessa summan näyttäminen estetään kaikissa puun yksiköissä. Voit myös rajoittaa summan yhteen raportin sarakkeeseen, kuten sarake H, käyttämällä sarakerajoitusta tulostamaan arvon ainoastaan kyseiseen raportin sarakkeeseen. Voit sisällyttää **OR**-yhdistelmiä **IF**-lausekkeisiin. Esimerkki: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Voit määrittää yksikön laskentatyypin rajoituksessa seuraavilla tavoilla:
 
 - Kirjoita yksikön nimen kohdalle kelpaava yksikkö. Esimerkiksi **IF @Unit(SALES)** mahdollistaa laskutoimitukset mille tahansa yksikölle, jonka nimi on SALES siitä huolimatta, onko raportointipuussa useita SALES-yksiköitä.
-- Kirjoita yrityksen ja yksikön nimi rajoittaaksesi laskutoimitus tietyn yrityksen tiettyihin yksikköihin. Kirjoita esimerkiksi **IF @Unit(ACME:SALES)** rajoittaaksesi laskutoimituksen ACME-yrityksen SALES-yksikköihin.
-- Anna raporttipuun täysi hierarkiakoodi, jolla voit rajoittaa laskelman tiettyyn yksikköön. Kirjoita esimerkiksi **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
+- Kirjoita yrityksen ja yksikön nimi rajoittaaksesi laskutoimitus tietyn yrityksen tiettyihin yksikköihin. Kirjoita esimerkiksi **IF @Unit(ACME:SALES**) rajoittaaksesi laskutoimituksen ACME-yrityksen SALES-yksikköihin.
+- Kirjoita koko hierarkiakoodi raportointipuusta rajoittaaksesi laskutoimituksen tiettyyn yksikköön. Kirjoita esimerkiksi **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
 > Voit etsiä täyden hierarkiakoodin napsauttamalla hiiren kakkospainiketta raporttipuumäärityksessä ja valitsemalla sitten **Kopioi raporttiyksikön tunnus (H-koodi)**.
@@ -298,4 +297,3 @@ Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus 
 
 > [!NOTE]
 > Et voi sijoittaa laskutoimituksen tuloksia mihinkään muuhun sarakkeeseen. Tulosten on oltava sarakkeessa, joka sisältää kaavan.
-

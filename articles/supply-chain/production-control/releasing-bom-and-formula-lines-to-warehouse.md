@@ -1,13 +1,13 @@
 ---
 title: Tuotantorakenne- ja reseptirivien vapauttaminen varastoon
-description: "Tässä ohjeaiheessa käsitellään tuoterakennerivien ja reseptirivien raaka-aineiden varastoon vapauttamisprosessia."
+description: Tässä ohjeaiheessa käsitellään tuoterakennerivien ja reseptirivien raaka-aineiden varastoon vapauttamisprosessia.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 8ccdb71f49652d6cca6ced2e9e9764d9ad0fffd8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343141"
 ---
-
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Tuotantorakenne- ja reseptirivien vapauttaminen varastoon
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Tuotantorakenne- ja reseptirivien vapautustapaa hallitaan **Tuotantorivin vapaut
 - **Vapauta tuoterakenne- ja reseptirivit osana tuotanto- tai erätilauksen vapautusta** – Tässä menetelmässä tuotanto- tai erätilauksen tuoterakenne- tai reseptirivit vapautetaan osan tilauksen vapautusprosessia. Tuotantotyöt vapautetaan yleensä tuotanto- tai erätilauksen vapautuksen yhteydessä tuotantotyöntekijöille. Lisäksi tuotantoasiakirjat tulostetaan. Tilauksen tilaksi tulee tämän prosessin aikana **Vapautettu**.
 - **Vapauta tuoterakenne- ja reseptirivit erätyön avulla tai manuaalisesti** – Tässä tavassa tuoterakenne- ja reseptirivit vapautetaan vain **Tuoterakenteen ja reseptirivien automaattinen vapautus** -erätyön avulla tai manuaalisesti. Voit vapauttaa tuoterakenne- ja reseptirivejä manuaalisesti valitsemalla tuotantotilauksen luettelosivulla tai tuotantotilauksen tietosivulla toimintoruudussa **Vapauta varastoon**.
 
-Seuraavassa lyhyessä YouTube-videossa näytetään, miten tuorerakenne- ja reseptirivit vapautetaan tuotantoon erätyön avulla: [Tuotannon keräilyn vapautus eränä varastoon](https://www.youtube.com/watch?v=8urAJn50dQ8)
+Seuraavassa lyhyessä YouTube-videossa näytetään, miten tuorerakenne- ja reseptirivit vapautetaan tuotantoon erätyön avulla: [Tuotannon keräilyn vapautus eränä varastoon](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Tuoterakenne- ja reseptirivien vapauttaminen erätyön avulla
 
@@ -99,4 +98,3 @@ Voit vapauttaa raaka-aineen osittaista valmiiden tavaroiden määrää varten ta
     Käytettävissä olevat yksiköt määritetään valmiin tuotteen yksikön sarjaryhmässä.
 
     Esimerkki: valmiin tavaran yksikön muunto kilogrammojen (kg) ja kuormalavojen (KL) välillä on 1 KL = 100 kg. Jos haluat luoda tuotantotilauksen 10 000 kg:lle valmista tavaraa, voit vapauttaa raaka-aineet sille kuormalavamäärälle, jonka aiot tuottaa. Valitse ensin yksiköksi **KL** ja sitten vastaava luku **Määrä**-kentässä.
-

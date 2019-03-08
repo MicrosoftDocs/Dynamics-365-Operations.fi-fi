@@ -1,13 +1,13 @@
 ---
 title: Luo raportit
-description: "Tässä aiheessa on tietoja talousraporttien luonnista."
+description: Tässä aiheessa on tietoja talousraporttien luonnista.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340887"
 ---
-
 # <a name="generate-financial-reports"></a>Luo raportit
 
 [!include [banner](../includes/banner.md)]
@@ -41,9 +40,9 @@ Seuraavat raporttien luontivaihtoehdot ovat saatavilla:
 
 Raportteja luotaessa käytetään Raportin määritys -välilehdissä määritettyjä asetuksia.
 
-## <a name="generate-a-financial-report"></a>Raportin luominen
+## <a name="generate-a-financial-report"></a>Luo raportti
 
-Voit luoda talousraportin Microsoft Dynamics 365 for Finance and Operations -sovelluksen avulla valitsemalla **Kirjanpito** \> **Kyselyt ja raportit** \> **Talousraportit**.
+Voit luoda talousraportin Microsoft Dynamics 365 for Finance and Operationsissa valitsemalla **Kirjanpito** \> **Kyselyt ja raportit** \> **Talousraportit**.
 
 - Valitse luotava raportti ja valitse sitten **Luo**.
 - Täytä **Raportin päivämäärä** -kenttä ja valitse **OK**.
@@ -115,7 +114,7 @@ Puuttuvat tilit määritetään käyttämällä rivin tai raportointipuun määr
 > [!TIP]
 > Tämä menettely kannattaa tehdä tarkistusta varten ennen kuukausiraporttien luomista sekä luotaessa uusia rakenneosia.
 
-On epätodennäköisempää, että arvovälejä sisältävissä raporteissa on puuttuvia tilejä. Käytä mahdollisuuksien mukaan rakenneosissa alueita, jotta voit sisällyttää uusia tilejä, kun niitä luodaan. Jos raportin määritys on asetettu arvoksi @ANY yritys, voit kirjautua määrättyyn yritykseen ja ajaa puuttuvien tilien analyysin kyseiselle yhtiölle.
+On epätodennäköisempää, että arvovälejä sisältävissä raporteissa on puuttuvia tilejä. Käytä mahdollisuuksien mukaan rakenneosissa alueita, jotta voit sisällyttää uusia tilejä, kun niitä luodaan. Jos raporttimäärityksessä yritykseksi on määritetty @ANY, voit kirjautua sisään tiettyyn yritykseen ja suorittaa puuttuvien tilien analyysin kyseiselle yritykselle.
 
 > [!NOTE]
 > Jos uusi yritys on lisätty, sinun on lisättävä tämä uusi yritys kaikkien aiemmin luotujen raporttien raportointipuihin. Muuten yritystä ei sisällytetä puuttuvien tilien analyysiin.
@@ -158,4 +157,3 @@ Kun suoritat puuttuvien tilien analyysin, käytettävissä on seuraavat pikanäp
 [Talousraportointi](financial-reporting-intro.md)
 
 [Raporttien suunnitteluohjelman käyttöliittymä](report-designer-interface.md)
-

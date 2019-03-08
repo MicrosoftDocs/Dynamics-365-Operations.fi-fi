@@ -1,13 +1,13 @@
---- 
-title: "Määritä varastotyön käytännöt (Sovellus, Toukokuu 2016)"
-description: "Varastointiprosessit eivät aina sisällä varastotyötä."
+---
+title: Määritä varastotyön käytännöt (Sovellus, Toukokuu 2016)
+description: Varastointiprosessit eivät aina sisällä varastotyötä.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkPolicy, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 34b4255c85bb53f7e238b60559890571070953a6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335321"
 ---
 # <a name="set-up-warehouse-work-policies-application-may-2016"></a>Määritä varastotyön käytännöt (Sovellus, Toukokuu 2016)
 
@@ -51,5 +51,4 @@ Varastointiprosessit eivät aina sisällä varastotyötä. Voit määrittää ty
 19. Merkitse valittu rivi luettelossa.
 20. Syötä tai valitse Nimiketunnus-kentän arvoksi L0101.
 21. Valitse Tallenna.
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Arvonlisäveron määrittäminen ja ohitukset"
-description: "Tässä menettelyssä kerrotaan miten arvonlisäveroryhmät määritetään vähittäismyynnin kanaville."
+---
+title: Arvonlisäveron määrittäminen ja ohitukset
+description: Tässä menettelyssä kerrotaan miten arvonlisäveroryhmät määritetään vähittäismyynnin kanaville.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTaxOverrideCode, RetailTaxOverrideGroup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a1907b0d0266eaa405ac2b92b40d6a2d310cf07b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 816e00e4238cb0d90a2aea9b2bc070d31504c2ce
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342819"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>Arvonlisäveron määrittäminen ja ohitukset
 
@@ -58,5 +58,4 @@ käytetään esittelytietojen USRT-yritystä.
 20. Valitse luettelosta aiemmin luotu arvonlisäveron ohitus.
 21. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 22. Valitse Tallenna.
-
 

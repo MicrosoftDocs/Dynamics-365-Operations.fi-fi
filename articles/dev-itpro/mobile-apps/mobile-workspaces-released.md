@@ -1,13 +1,13 @@
 ---
-title: "Käytettävissä olevat mobiilityötilat"
-description: "Tässä ohjeaiheessa on luettelo käytettävistä mobiilityötiloista."
+title: Käytettävissä olevat mobiilityötilat
+description: Tässä ohjeaiheessa on luettelo käytettävistä mobiilityötiloista.
 author: sericks007
 manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 75f7df4ca3b675d720eb46395118529d09f2f9d4
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354963"
 ---
-
 # <a name="available-mobile-workspaces"></a>Käytettävissä olevat mobiilityötilat
 
 [!include [banner](../includes/banner.md)]
@@ -44,5 +43,4 @@ Tässä ohjeaiheessa on luettelo Dynamics 365 for Unified Operations -mobiilisov
 | [Käytettävissä oleva varasto](../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Saat tarkan kuvan varatusta ja käytettävissä olevasta varastosta.                                                                                                    |   2017. tammikuuta       |
 | [Myyntitilaukset](../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Pysyt ajan tasalla myyntitilauksista.                                                                                                                          |  2017. tammikuuta                  |
 | [Toimittajayhteistyö](../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja. |2017. tammikuuta    |
-
 

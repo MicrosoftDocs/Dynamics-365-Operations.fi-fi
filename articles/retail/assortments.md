@@ -1,13 +1,13 @@
 ---
 title: Toimintojen hallinta
-description: "Tässä ohjeaiheessa selitetään Microsoft Dynamics 365 for Retailin valikoimien hallinnan peruskäsitteitä ja pohditaan projektin käyttöönottovaihtoehtoja."
+description: Tässä ohjeaiheessa selitetään Microsoft Dynamics 365 for Retailin valikoimien hallinnan peruskäsitteitä ja pohditaan projektin käyttöönottovaihtoehtoja.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
+ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365037"
 ---
-
-# <a name="assortment-management"></a>Toimintojen hallinta
+# <a name="assortment-management"></a>Valikoiman hallinta
 
 [!include [banner](../includes/banner.md)]
 
@@ -108,4 +107,3 @@ Seuraavat käyttöönottovaatimukset kannattaa ottaa huomioon, kun suunnittelet 
 - **Valikoimien ulkopuolinen myynti ja palautukset** – Tämä toiminto auttaa jälleenmyyjiä hallitsemaan valikoimiaan tehokkaasti, sillä he voivat rajoittaa saatavana olevien tuotteiden määrän tuotteisiin, jotka sisältyvät myymälän ydintuoteyhdistelmään. Tämä toiminto auttaa jälleenmyyjiä käsittelemään myös tilanteita, joissa tuote jätettiin vahingossa pois valikoimasta tai joissa tuote palautettiin valikoiman voimassaoloajankohdan ulkopuolella.
 
 Jos tuotetiedot eivät ole kanavatietokannassa, myyntipiste soittaa reaaliaikaisesti pääkonttoriin ja noutaa tarvittavat tiedot, jotta tuote voidaan myydä, palauttaa tai siirtää asiakastilaukseen. Tällä tavoin noudetut tuotetiedot ovat käytettävissä vain kyseisen tapahtuman aikana. Tuotetta ei lisätä valikoiman määritykseen. Niinpä jatkossa tehdään tarpeen mukaan reaaliaikaisia soittoja.
-

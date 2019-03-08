@@ -1,13 +1,13 @@
 ---
-title: Luo asiakastilauksia Retail Modern POS -sovelluksessa
-description: "Tässä ohjeaiheessa on tietoja asiakkaiden tilauksista Retail Modern POS (MPOS) -laitteissa. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista."
+title: Retail Modern POS:n (MPOS) asiakastilaukset
+description: Tässä ohjeaiheessa on tietoja asiakkaan työnkulusta Retail Modern POS:ssa (MPOS). Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: b54f39cc7896871d77f9371e6197bf6dbaac51de
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336609"
 ---
-
-# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Luo asiakastilauksia Retail Modern POS -sovelluksessa
+# <a name="customer-orders-in-retail-modern-pos-mpos"></a>Retail Modern POS:n (MPOS) asiakastilaukset
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja asiakkaiden tilauksista Retail Modern POS (MPOS) -laitteissa. Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
+Tässä ohjeaiheessa on tietoja asiakkaan työnkulusta Retail Modern POS:ssa (MPOS). Asiakastilauksia kutsutaan myös erikoistilauksiksi. Aihe sisältää keskustelun liittyvistä parametreista ja tapahtumatyönkuluista.
 
 Monikanavaisessa vähittäismyyntimaailmassa monet vähittäiskauppiaat tarjoavat asiakastilausten eli erikoistilausten mahdollisuuden täyttääkseen erilaisia eri tuote- ja palveluvaatimuksia. Seuraavassa on joitakin tyypillisiä skenaarioita:
 
@@ -57,7 +56,7 @@ Seuraavassa on joitakin parametreja, jotka voidaan asettaa **Vähittäismyynnin 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Asiakastilausten tapahtumien työnkulku
 
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Luo asiakastilaus Retail Modern POS -sovelluksessa
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Asiakastilauksen luonti Retail Modern POS:ssa
 
 1. Lisää asiakas tapahtumaan.
 2. Lisää tuotteet ostoskoriin.
@@ -102,4 +101,3 @@ Kun **Luo asiakastilaus asynkronisessa tilassa** -asetuksen arvo on **Kyllä**, 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Asiakkaiden yhdistelmätilaukset](hybrid-customer-orders.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Projektin todellisten tietojen synkronointi Project Service Automationista suoraan projektin integroinnin kirjauskansioon Finance and Operationsiin kirjaamista varten
-description: "Tässä ohjeaiheessa käsitellään malleja ja tehtäviä, joilla projektin todelliset tiedot synkronoidaan suoraan Microsoft Dynamics 365 for Project Service Automationista Microsoft Dynamics 365 for Finance and Operationsiin."
+description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla projektin todelliset tiedot synkronoidaan suoraan Microsoft Dynamics 365 for Project Service Automationista Microsoft Dynamics 365 for Finance and Operationsiin.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 0a965e8de596decf39a15977e6df8a6aa9dd35b0
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343348"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Projektin todellisten tietojen synkronointi Project Service Automationista suoraan projektin integroinnin kirjauskansioon Finance and Operationsiin kirjaamista varten
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään malleja ja tehtäviä, joilla projektin todelliset tiedot synkronoidaan suoraan Microsoft Dynamics 365 for Project Service Automationista Microsoft Dynamics 365 for Finance and Operationsiin.
+Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla projektin todelliset tiedot synkronoidaan suoraan Microsoft Dynamics 365 for Project Service Automationista Microsoft Dynamics 365 for Finance and Operationsiin.
 
 Malli synkronoi tapahtumat Project Service Automationista Finance and Operationsin valmistelutaulukkoon. Synkronoinnin jälkeen tiedot **täytyy** viedä valmistelutaulukosta integroinnin kirjauskansioon.
 
 > [!NOTE]
-> - Projektin todellisten tietojen integrointi on käytettävissä Microsoft Dynamics 365 for Finance and Operationsin versiossa 8.01 tai myöhempi.
+> - Projektin todellisten tietojen integrointi on mahdollista Microsoft Dynamics 365 for Finance and Operationsin versiossa 8.0.1 tai sitä uudemmassa versiossa.
 > - Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 ja KB 4132657 ja KB 4132660 on asennettu, voit integroida projektitehtäviä, kulutapahtumaluokkia, tuntiarvioita, kuluarvioita ja todellisia tietoja sekä määrittää toimintojen lukituksen. Jos kirjanpidollinen jako on palautettava alkuperäisasetuksiin, myös KB 4131710 kannattaa asentaa.
 > - Jos käytät Finance and Operations 7.3.0:aa ja tuot maksutapahtumia Project Service Automationista, sinun on asennettava KB 4345320, jotta maksut sisällytetään projektin laskuun.
 > - Jos kirjaat arvolisäverosummia aika- tai kulutapahtumia Project Service Automationissa, sinun on asennettava Project Service Automationin päivitys 7. Muussa tapauksessa todellisia verotietoja ei linkitetä liitettyihin todellisiin aika- tai kuluarvoihin eikä niitä synkronoida Finance and Operationsiin. Pyydä lisätietoja tuesta.
@@ -50,7 +50,7 @@ Seuraava kuva ilmaisee, miten tiedot synkronoidaan Project Service Automationin 
 
 ### <a name="template-and-tasks"></a>Malli ja tehtävät
 
-Saat käytettävissä olevat mallit käyttöösi valitsemalla Microsoft PowerAppsin hallintakeskuksessa **Projektit**. Valitse sitten julkaiset mallit valitsemalla oikeassa yläkulmassa **Uusi projekti**.
+Saat käytettävissä olevat mallit käyttöösi valitsemalla Microsoft PowerAppsin hallintakeskuksessa **Projektit**. Valitse sitten julkiset mallit valitsemalla oikeassa yläkulmassa **Uusi projekti**.
 
 Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoimaan projektin todelliset tiedot Project Service Automationista Finance and Operationsiin:
 
@@ -140,4 +140,3 @@ Seuraavissa kuvissa on esimerkkejä mallitehtävän yhdistämisistä tietojen in
 [![Mallin yhdistäminen](./media/ActualsUpdateMapping.jpg)](./media/ActualsUpdateMapping.jpg)
 
 [![Mallin yhdistäminen](./media/TransactionConnectionsUpdate.jpg)](./media/TransactionConnectionsUpdate.jpg)
-

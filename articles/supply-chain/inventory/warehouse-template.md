@@ -1,32 +1,31 @@
 ---
-title: "Varaston määrittäminen varaston konfigurointimallin avulla"
-description: "Tässä aiheessa käsitellään varaston määrittämistä varaston konfigurointimallin avulla."
+title: Varaston määrittäminen varaston konfigurointimallin avulla
+description: Tässä aiheessa käsitellään varaston määrittämistä varaston konfigurointimallin avulla.
 author: perlynne
 manager: AnnBe
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 17016d015925cd31117231799b8741ffddb793f7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: e952a2f988645ccff7617817262cbf0e90bfd8ab
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338058"
 ---
-
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Varaston määrittäminen varaston konfigurointimallin avulla
 
 [!include [banner](../includes/banner.md)]
@@ -94,9 +93,8 @@ Voit ladata tietopaketin zip-tiedoston. Tämä tiedosto sisältää kaikki tiedo
 
 **Näytä suoritusloki** sisältää tarkkoja tietoja jokaisesta tuotavasta tietoyksiköstä. Pääset nopeasti kohdetietoihin väliaikaisen tallennuksen tiedoista. Näet tällä tavoin, miltä tuodut tiedot näyttävät sovelluksen sivuilla. Oletustietomalleja käytettäessä kunkin tietoyksikön tuontijakso toimii ennalta määritetyllä tavalla. Tämä auttaa varmistamaan, että kaikki riippuvat tiedot tuodaan ensimmäiseksi. Jos projektissa on mukautettuja tietoyksiköitä, varmista, että oikea järjestys on määritetty. Lisätietoja on kohdassa [Konfigurointitietomallit](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Kolme minuuttia kestävässä YouTube-videossa on lisätietoja tavasta, jolla varastomääritys voidaan kopioida varastomallin avulla yhdestä yrityksestä uuteen yritykseen samassa esiintymässä. [Määrityksen kopiointi varastomallin avulla Microsoft Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Kolme minuuttia kestävässä YouTube-videossa on lisätietoja tavasta, jolla varastomääritys voidaan kopioida varastomallin avulla yhdestä yrityksestä uuteen yritykseen samassa esiintymässä: [Määrityksen kopiointi varastomallin avulla Microsoft Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=K2WIfFlqJYs)
 
 ## <a name="related-topic"></a>Liittyvä aihe
 
 [Konfigurointitietomallit](../../dev-itpro/data-entities/configuration-data-templates.md)
-

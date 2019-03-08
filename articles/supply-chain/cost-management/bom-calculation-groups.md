@@ -1,13 +1,13 @@
 ---
-title: "Tuoterakenteen laskentaryhmät"
-description: "Tässä artikkelissa on tietoja tuoterakenteen laskentaryhmistä ja niiden määrittämisestä. Tuoterakenteen laskennan suorittamista varten yksittäisille nimikkeille laskentaryhmiä on määritettävä laskentaryhmiä. Vaihtoehtoisesti on määritettävä oletuslaskentaryhmä. Laskentaryhmän laskenta-asetuksia käytetään sitten Tuoterakenteen laskenta -sivun oletusarvoina tuoterakennetta laskettaessa."
+title: Tuoterakenteen laskentaryhmät
+description: Tässä artikkelissa on tietoja tuoterakenteen laskentaryhmistä ja niiden määrittämisestä. Tuoterakenteen laskennan suorittamista varten yksittäisille nimikkeille laskentaryhmiä on määritettävä laskentaryhmiä. Vaihtoehtoisesti on määritettävä oletuslaskentaryhmä. Laskentaryhmän laskenta-asetuksia käytetään sitten Tuoterakenteen laskenta -sivun oletusarvoina tuoterakennetta laskettaessa.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 55bca29016e06b6ed71c0f1a4aa412401976ebdd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48d1bc67038c6080bb96d524a549deddbc8d4e0b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362875"
 ---
-
 # <a name="bom-calculations-groups"></a>Tuoterakenteen laskentaryhmät
 
 [!include [banner](../includes/banner.md)]
@@ -96,7 +95,6 @@ Tuoterakenteen laskenta luo varoitussanomia. Voit tarkastella valittua nimikett�
 -   Tilanne tunnistetaan, kun tuoterakenteen rivin nimikkeen kannattavuusprosentti on haluttua prosenttiosuutta pienempi.
 
 Voit määrittää useita tuoterakenteen laskentaryhmiä sen mukaan, miten paljon varoitussanomissa on oltava vaihtelua. Yhdessä tuoterakennelaskelmaryhmässä voi esimerkiksi riittää varoitusehdoksi, että tuoterakenne on aktiivinen, osien määrä on 0 (nolla) ja osakustannus on niin ikään 0 (nolla). Kun käynnistät tuoterakenteen laskennan, voit ohittaa tuoterakenteen laskentaryhmään liittyvät soveltuvat varoitusehdot. Voit myös lisätä tai poistaa varoitusehtoja. Jos esimerkiksi nykyinen tilanne ei koske reititystietoja, voi poistaa aktiivista reittiä koskevat varoitusehdot. **Huomautus:** Työajan seurannassa on **Laskentaryhmät**-sivu, mutta sivu ei liity tuoterakenteen laskentaryhmiin. Työajan seurannassa työtekijät voidaan määrittää niihin laskentaryhmiin, jotka vastaavat samaan työnjohtajaan tai esimieheen liitettyjä työntekijäryhmityksiä Työntekijän rekisteröintien laskenta voidaan tehdä automaattisesti tai manuaalisesti työnjohtaja- tai esimieskohtaisesti.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Nykyisten työntekijöiden työhönotto rekrytoinnin kautta"
-description: "Joskus avoimiin toimiin palkataan ehdokkaita, jotka ovat jo organisaatiossa töissä."
+---
+title: Nykyisten työntekijöiden työhönotto rekrytoinnin kautta
+description: Joskus avoimiin toimiin palkataan ehdokkaita, jotka ovat jo organisaatiossa töissä.
 author: rschloma
 manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
 ms.openlocfilehash: 71793ce48142b19b288e2315dcd44a07d8e39f90
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365382"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Nykyisten työntekijöiden työhönotto rekrytoinnin kautta
 
@@ -40,5 +40,4 @@ Joskus avoimiin toimiin palkataan ehdokkaita, jotka ovat jo organisaatiossa töi
 8. Vaihtoehtoisesti voit valita syykoodin. Esimerkki: Uudelleenorganisointi
 9. Valitse Muuta toimea.
     * Voit myös muuttaa kompensaatiota täksi ajaksi. Jos et määritä kompensaatiota nyt, voit muuttaa sitä siirtymällä työntekijän lomakkeeseen, valitsemalla Kompensaatio-välilehden ja valitsemalla Kiinteä suunnitelma. Kun valitset Muuta toimea, hakemuksen tilaksi tulee Toimessa.  
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Määritä säännöt ja parametrit cross dockingille ja ostotarjonnalle"
-description: "Tässä menettelyssä esitellään täydennyssääntöjen luontivaiheet."
+---
+title: Määritä säännöt ja parametrit cross dockingille ja ostotarjonnalle
+description: Tässä menettelyssä esitellään täydennyssääntöjen luontivaiheet.
 author: josaw1
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailReplenishmentRuleTable, RetailReplenishmentTreeLookup
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a22756279ba316a7efd4d09c48c55e8cc98ba29d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: f3a20b7bf476cae854c7f7c86d89d73e44b6749b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366325"
 ---
 # <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a>Määritä säännöt ja parametrit cross dockingille ja ostotarjonnalle
 
@@ -47,5 +47,4 @@ Tässä menettelyssä esitellään täydennyssääntöjen luontivaiheet. Täyden
 13. Syötä tai valitse arvo Nimi-kenttään.
 14. Syötä numero Paino-kenttään.
 15. Valitse Tallenna.
-
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Maksujen luominen asiakkaalle, jolla on suoraveloitusvaltakirjoja
-description: "Näiden ohjeiden avulla voit luoda ISO20022-suoraveloituksen maksutiedoston asiakkaalle, jolle on määritetty suoraveloitus ja jolla on maksettava lasku."
+description: Näiden ohjeiden avulla voit luoda ISO20022-suoraveloituksen maksutiedoston asiakkaalle, jolle on määritetty suoraveloitus ja jolla on maksettava lasku.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, SysQueryForm, CustPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6781ac38fff6344bfc9546c3ffd2253fb3ef712c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: acd6a8076288d8d1d1aa05af33e306c6a29780f7
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342129"
 ---
 # <a name="create-payments-for-a-customer-who-have-direct-debit-mandates"></a>Maksujen luominen asiakkaalle, jolla on suoraveloitusvaltakirjoja
 
@@ -70,5 +70,4 @@ Tämä on viimeinen viidestä tehtävästä, joilla esitellään asiakasmaksujen
 13. Valitse Luo maksut.
 
 ## <a name="generate-a-payment-file"></a>Muodosta maksutiedosto
-
 

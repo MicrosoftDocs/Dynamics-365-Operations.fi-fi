@@ -1,13 +1,13 @@
 ---
-title: "Vähittäismyynnin laskelmat"
-description: "Tässä ohjeaiheessa kerrotaan, miten laskelmat luodaan ja kirjataan."
+title: Vähittäismyynnin laskelmat
+description: Tässä ohjeaiheessa kerrotaan, miten laskelmat luodaan ja kirjataan.
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347695"
 ---
-
-# <a name="retail-statements"></a>Vähittäismyynnin laskelmat
+# <a name="retail-statements"></a>Vähittäismyyntilaskelmat
 
 [!include [banner](includes/banner.md)]
 
@@ -86,7 +85,6 @@ Jos sama myymälä on määritetty, kun **Kirjaa työpäivänä** -valintaruutua
 Kun kirjaat laskelman, myyntitilaukset ja laskut luodaan laskelman vähittäismyyntiin.
 
 - Itsepalvelutukkumyynti yhdistetään yhdeksi myyntitilaukseksi ja laskutetaan oletusasiakkaalta, joka on määritetty myymälälle.
-- Vähittäismyynti, johon asiakas on lisätty tapahtumaan Microsoft Dynamics 365 for Retail POS:ssa luo erillisiä myyntitilauksia ja laskuja, yksi kutakin asiakaskohtaisesti.
+- Vähittäismyynti, johon asiakas on lisätty tapahtumaan Microsoft Dynamics 365 for RetailPOS:ssa luo erillisiä myyntitilauksia ja laskuja, yksi kutakin asiakaskohtaisesti.
 
 Maksukirjauskansioita luodaan automaattisesti lausunnon maksuille, ja varasto päivitetään myyntipistemyymälälle.
-

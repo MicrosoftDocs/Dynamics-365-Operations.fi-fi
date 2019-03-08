@@ -1,13 +1,13 @@
 ---
-title: "Määritä online-myymälät"
-description: "Tässä artikkelissa on linkkejä ohjeaiheisiin, joiden avulla voit keskitetysti määrittää ja hallita verkkokauppaa."
+title: Määritä online-myymälät
+description: Tässä artikkelissa on linkkejä ohjeaiheisiin, joiden avulla voit keskitetysti määrittää ja hallita verkkokauppaa.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations, Retail
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: d353baf67540b64168f29be3506d73e721e73523
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354365"
 ---
-
 # <a name="configure-online-stores"></a>Määritä online-myymälät
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,7 @@ Seuraavassa taulukossa on luettelo ohjeaiheista, jotka auttavat määrittämää
 
 ## <a name="configure-online-store-products"></a>Verkkokauppatuotteiden konfigurointi
 
-| Tehtävä                                 | Erittely                                                                                                                                           | Aiheet                                                                                                                                                                                                                                                                            |
+| Tehtävä                                 | Yksityiskohdat                                                                                                                                           | Aiheet                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Lisää valikoimia verkkokauppaan. | Lisää tuotevalikoimat, joihin kuuluvat verkkokaupassa saatavilla olevat tuotteet.                                                                  | [Verkkokaupan määrittäminen](https://technet.microsoft.com/en-us/library/jj682095.aspx) (AX 2012:n TechNet-sisältö)                                                                                                                                              |
 | Luetteloiden hallinta.                     | Voit käyttää tuote-esitteitä tunnistaaksesi tuotteet, joita haluat tarjota kaupoissasi.                                                              | [Päätehtävät: Vähittäismyynnin tuoteluetteloiden luominen](https://technet.microsoft.com/en-us/library/jj728712.aspx) (AX 2012:n TechNet-sisältö)                                                                                                                           |
@@ -54,12 +53,11 @@ Seuraavassa taulukossa on luettelo ohjeaiheista, jotka auttavat määrittämää
 | Hallitse toimitusmaksuja.             | Määritä ja hallitse kuljetusmaksut, jotka liittyvät verkkokauppaan.                                                                     | [Verkkokaupan kuljetusmaksujen määrittäminen](https://technet.microsoft.com/en-us/library/jj728714.aspx) (AX 2012:n TechNet-sisältö)                                                                                                                           |
 | Hallitse toimitustapoja.            | Hallitse verkkokaupan tarjoamia toimitustapoja.                                                                                        | [Toimitustapojen määrittäminen](https://technet.microsoft.com/en-us/library/jj728719.aspx) (AX 2012:n TechNet-sisältö)                                                                                                                                            |
 
-## <a name="set-up-data-exchange-between-microsoft-dynamics-365-for-retail-and-the-online-store"></a>Microsoft Dynamics 365 for Retailin ja verkkokaupan välisen tiedonsiirron määrittäminen
+## <a name="set-up-data-exchange-between-microsoft-dynamics-365-for-retail-and-the-online-store"></a>Määritä Microsoft Dynamics 365 for Retailin ja verkkokaupan välinen tiedonsiirto
 
-| Tehtävä                                 | Erittely                                                                                                                               | Aiheet                                                                                                                                                                                                                                                                                  |
+| Tehtävä                                 | Yksityiskohdat                                                                                                                               | Aiheet                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Määritä kanavan integrointiprofiilit. | Profiilien avulla Retail-komponentit voivat kommunikoida toistensa kanssa. Määritä profiilit ennen tietojen vaihdon asetusten määrittämistä. | [Real-time Service -profiilin määrittäminen](https://technet.microsoft.com/en-us/library/hh580631.aspx) (AX 2012:n TechNet-sisältö) [Kanavaprofiilin määrittäminen](https://technet.microsoft.com/en-us/library/jj677402.aspx) (AX 2012:n TechNet-sisältö) |
-
 
 
 

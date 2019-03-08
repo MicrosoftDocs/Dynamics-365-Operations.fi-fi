@@ -1,13 +1,13 @@
---- 
-title: "Manuaalisen pakkaamisen määrittäminen (helmikuu 2016 ja toukokuu 2016)"
+---
+title: Manuaalisen pakkaamisen määrittäminen (helmikuu 2016 ja toukokuu 2016)
 description: Pakkaamisprosessin avulla voit vahvistaa ja pakata tuotteita kontteihin.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b90b4a71e2447e942dbb4a9645ef93064da630d3
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347718"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>Manuaalisen pakkaamisen määrittäminen (helmikuu 2016 ja toukokuu 2016)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Pakkaamisprosessin avulla voit vahvistaa ja pakata tuotteita kontteihin. Tässä prosessissa varastotyöntekijät poimivat tuotteita varastopaikoista ja siirtävät ne pakkausasemalle, jossa nimikemäärät ja -tyypit tarkistetaan ja tuotteet liitetään asianmukaisiin kontteihin. Kun kontti on täysin pakattu, sen voi sulkea ja siirtää lähtevien tuotteiden laiturille – tuotteet ovat valmiina toimitettavaksi. Näissä toimintaohjeissa käytetään esittely-yritystä USMF. Tämä ohje koskee vain Dynamics 365 for Operations -järjestelmän helmikuu 2016- ja toukokuu 2016 -versioita.
+Pakkaamisprosessin avulla voit vahvistaa ja pakata tuotteita kontteihin. Tässä prosessissa varastotyöntekijät poimivat tuotteita varastopaikoista ja siirtävät ne pakkausasemalle, jossa nimikemäärät ja -tyypit tarkistetaan ja tuotteet liitetään asianmukaisiin kontteihin. Kun kontti on täysin pakattu, sen voi sulkea ja siirtää lähtevien tuotteiden laiturille – tuotteet ovat valmiina toimitettavaksi. Näissä toimintaohjeissa käytetään esittely-yritystä USMF. Tämä ohje koskee vain helmikuun 2016 ja toukokuun 2016 Dynamics 365 for Operationsin versioita.
 
 
 ## <a name="set-up-location-profiles"></a>Määritä sijaintiprofiilit
@@ -94,5 +94,4 @@ Pakkaamisprosessin avulla voit vahvistaa ja pakata tuotteita kontteihin. Tässä
     * Tämä on toimipaikka, johon tuotteet siirretään konttien sulkemisen jälkeen. Toimipaikalle on määritettävä sijaintiprofiili varaston parametreissa.  
 8. Syötä tai valitse arvo kentässä Painoyksikkö.
 9. Valitse Tallenna.
-
 

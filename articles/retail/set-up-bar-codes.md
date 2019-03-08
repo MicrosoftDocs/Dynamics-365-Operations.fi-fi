@@ -1,13 +1,13 @@
 ---
-title: "Määritä viivakoodit"
-description: "Tässä artikkelissa kuvataan viivakoodien käyttö Microsoft Dynamics 365 for Retailissa."
+title: Viivakoodien määrittäminen
+description: Tässä artikkelissa käsitellään viivakoodien käyttöä Microsoft Dynamics 365 for Retailissa.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 15d12abe32d3f5a47348016c67a4fb02d0a5d8e3
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347350"
 ---
-
 # <a name="set-up-bar-codes"></a>Viivakoodien määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa kuvataan viivakoodien käyttö Microsoft Dynamics 365 for Retailissa.
+Tässä artikkelissa käsitellään viivakoodien käyttöä Microsoft Dynamics 365 for Retailissa.
 
 Voit käyttää viivakoodeja tuotteiden ostamisessa ja myynnissä, tuotevarianttien seurannassa sekä asiakkaiden ja työntekijöiden määrittämisessä. Voit lisäksi käyttää viivakoodeja kuponkien, lahjakorttien ja hyvityslaskujen antamiseen ja käyttöön. Vähittäismyynnin tuotteet voi määrittää niin, että niillä on joko vakioviivakoodit tai itse kehitetyt viivakoodit. Tuotteilla voi olla useampi viivakoodi. Tuotteella voi esimerkiksi olla useita viivakoodeja, jos se on peräisin usealta valmistajalta tai jos sillä on kokoon, tyyliin tai väriin perustuvia variantteja. Viivakoodit voivat sisältää tuotteen painon tai hinnan. Viivakoodin muodot ovat malleja, joita käytetään viivakoodien luomiseen.
 
@@ -48,4 +47,3 @@ Viivakoodeja voi luoda manuaalisesti tai automaattisesti. Viivakoodien luonti ta
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Viivakoodin muotojen määrittäminen](set-up-bar-code-masks.md)
-

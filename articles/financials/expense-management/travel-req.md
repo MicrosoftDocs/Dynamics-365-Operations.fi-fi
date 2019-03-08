@@ -1,13 +1,13 @@
 ---
 title: Matkahankinnat
-description: "Tässä ohjeaiheessa on tietoja matkustusehdotuksista. Matkaehdotus kirjaa matkasta aiheutuvat kulut."
+description: Tässä ohjeaiheessa on tietoja matkustusehdotuksista. Matkaehdotus kirjaa matkasta aiheutuvat kulut.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvRequisitionList
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e69cf1112dcb4fd31c79592bf0d7a2ecd4a21adf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 135d787d03fe6d3ec3ca8d2324ac3055b72f2962
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339714"
 ---
-
 # <a name="travel-requisitions"></a>Matkahankinnat
 
 [!include [banner](../includes/banner.md)]
@@ -35,4 +34,3 @@ Organisaatio voi edellyttää, että matkustusehdotus on lähettävä ennen kuin
 Matkustusehdotuksia ja -käytäntöjä voidaan käyttää budjetin hallinnan apuna. Jos organisaatiossa esimerkiksi tehdään töitä kiinteähintaisessa projektissa, johon sisältyy matkustusta, projektiryhmän matkakulujen on sovittava projektibudjettiin. Kun matkakulut on hyväksyttävä etukäteen, organisaatio pystyy varmistamaan, että projektin budjetti ei ylity.
 
 Voit määrittää matkustusehdotuskäytännöt **Matkustusehdotus**-sivulla.
-

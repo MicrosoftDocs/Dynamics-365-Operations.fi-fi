@@ -1,13 +1,13 @@
 ---
 title: Kuljetustenhallinnan yleiskatsaus
-description: "Tämä aihe sisältää yleiskuvauksen Microsoft Dynamics 365 for Finance and Operations -ohjelman kuljetustenhallintatoiminnoista."
+description: Tässä ohjeaiheessa on Microsoft Dynamics 365 for Finance and Operationsin kuljetustenhallinnan toimintojen yleiskatsaus.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 918167a3ab72b3d3665cf710d8e509417b94a056
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4dc2c15d35d93d1563c866b20ad7f2bbb5c8457
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355607"
 ---
-
 # <a name="transportation-management-overview"></a>Kuljetustenhallinnan yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tämä aihe sisältää yleiskuvauksen Microsoft Dynamics 365 for Finance and Operations -ohjelman kuljetustenhallintatoiminnoista.
+Tässä ohjeaiheessa on Microsoft Dynamics 365 for Finance and Operationsin kuljetustenhallinnan toimintojen yleiskatsaus.
 
-Kuljetustenhallinnan avulla voit hallita yrityksen kuljetuksia sekä määrittää toimittajan ja reititysratkaisut lähteville ja saapuville tilauksille. Voit esimerkiksi tunnistaa nopeimman reitin tai edullisimman hinnan lähetykselle. Seuraavassa taulukossa kuvataan Microsoft Dynamics 365 for Finance and Operations -ohjelman kuljetustenhallinnan tärkeimmät käyttöskenaariot.
+Kuljetustenhallinnan avulla voit hallita yrityksen kuljetuksia sekä määrittää toimittajan ja reititysratkaisut lähteville ja saapuville tilauksille. Voit esimerkiksi tunnistaa nopeimman reitin tai edullisimman hinnan lähetykselle. Seuraavassa taulukossa kuvataan Microsoft Dynamics 365 for Finance and Operationsin kuljetustenhallinnan tärkeimmät käyttöskenaariot.
 
 <table>
 <colgroup>
@@ -85,7 +84,6 @@ Voit suunnitella ja käsitellä lähtevän kuorman tiettyjen nimikkeiden toimitt
 
 ## <a name="load-building"></a>Kuormituksen luonti
 Finance and Operations sisältää Tilavuuteen perustuva kuormituksen luontistrategia -nimisen kuorman luontistrategian. Sen avulla voit käyttää kuormamallissa määritettyjä suurimpia korkeus- ja painoarvoja tai korvata asetukset syöttämällä uudet arvot. Jos haluat käyttää tätä strategiaa, valitse se **Kuormituksen luontistrategia** -kentässä **Asetukset**-pikavälilehdessä **Kuormituksen luonnin työtila** -sivulla. Voit lisätä myös oman kuormituksen rakennuksen strategioita luomalla uuden luokan sovellusobjektipuussa (AOT).
-
 
 
 

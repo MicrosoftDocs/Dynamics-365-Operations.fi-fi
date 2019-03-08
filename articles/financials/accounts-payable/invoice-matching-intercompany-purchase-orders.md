@@ -1,13 +1,13 @@
 ---
-title: "Laskujen täsmäytys ja konsernin sisäiset ostotilaukset"
-description: "Konsernin sisäisen kauppatapahtuman ostavan yrityksen asetukset on voitu määritettää siten, että käytössä on ostoreskontran laskujen täsmäytys. Tässä tapauksessa sekä konsernin sisäisen välisen kaupan että ostoreskontran laskujen täsmäytyksen kirjausvaatimusten on täytyttävä, ennen kuin konsernin sisäiset ostolaskut voidaan kirjata."
+title: Laskujen täsmäytys ja konsernin sisäiset ostotilaukset
+description: Konsernin sisäisen kauppatapahtuman ostavan yrityksen asetukset on voitu määritettää siten, että käytössä on ostoreskontran laskujen täsmäytys. Tässä tapauksessa sekä konsernin sisäisen välisen kaupan että ostoreskontran laskujen täsmäytyksen kirjausvaatimusten on täytyttävä, ennen kuin konsernin sisäiset ostolaskut voidaan kirjata.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 68b586f8afe7557bf6edee3eca0261d1e9cac0f2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357562"
 ---
-
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Laskujen täsmäytys ja konsernin sisäiset ostotilaukset
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Esimerkiksi seuraavia ohjeita noudatetaan.
 2.  Päivitä tilauksen ICSO999 lasku Fabrikam Salesissa. Kirjaus ei onnistu, koska nimike on loppunut varastosta eikä sitä ole vielä vastaanotettu. Niinpä taloushallinnon tietoja ei voi päivittää.
 3.  Rekisteröi nimikkeet Fabrikam Salesissa vastaanotetuiksi ja kirjaa tilauksen ICSO999 pakkausluettelo. Tilauksen ICPO333 tuotteen vastaanotto kirjataan automaattisesti Fabrikam Purchasessa. Nimikkeen B-R14 vastaanotettu määrä muuttuu Fabrikam Purchasessa arvoksi 100.
 4.  Päivitä tilauksen ICSO999 lasku Fabrikam Salesissa. Kirjaus onnistuu molemmissa yrityksissä. Nimikkeen B-R14 ostettu määrä muuttuu Fabrikam Purchasessa arvoksi 100. 
-
 
 
 

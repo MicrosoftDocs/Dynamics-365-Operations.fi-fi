@@ -1,13 +1,13 @@
 ---
-title: "Kuvien määrittäminen ja hallinta Retail Modern POS (MPOS) -moduulissa"
-description: "Tässä artikkelissa on selostettu vaiheita, joilla määritetään ja hallitaan Retail Modern POS -sovelluksessa (MPOS) näkyvien eri entiteettien kuvia."
+title: Retail Modern POS:n (MPOS) kuvien määrittäminen ja hallinta
+description: Tässä artikkelissa on selostettu vaiheita, joilla määritetään ja hallitaan Retail Modern POS (MPOS) -sovelluksessa näkyvien eri yksiköiden kuvia.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
@@ -19,26 +19,25 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d2f4cc99ec239c4c35c44a226235d01e18d4185f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356734"
 ---
-
-# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Kuvien määrittäminen ja hallinta Retail Modern POS (MPOS) -moduulissa
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Retail Modern POS:n (MPOS) kuvien määrittäminen ja hallinta
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa on selostettu vaiheita, joilla määritetään ja hallitaan Retail Modern POS -sovelluksessa (MPOS) näkyvien eri entiteettien kuvia.
+Tässä artikkelissa on selostettu vaiheita, joilla määritetään ja hallitaan Retail Modern POS (MPOS) -sovelluksessa näkyvien eri yksiköiden kuvia.
 
 ## <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Median URL-perusosoitteen ja mediamallien määrittäminen kuvien URL-osoitteiden konfiguraatiota varten
 
-Retail Modern POS (MPOS):ssa näkyviä kuvia on isännöitävä ulkoisesti, Microsoft Dynamics 365 for Retailin ulkopuolella. Niitä isännöi yleensä sisällönhallintajärjestelmä, sisältöverkko (CDN) tai mediapalvelin. MPOS noutaa ja näyttää kuvat soveltuville yksiköille kuten tuotteille ja luetteloille, käyttämällä kohde-URL-osoitetta. Näiden ulkoisesti isännöityjen kuvien noutamista varten MPOS tarvitsee oikean URL-muodon kuville. Voit määrittää kuville vaaditun URL-muodon määrittämällä **Median URL-perusosoite**-arvon kanavaprofiilissa ja käyttämällä **Määritä mediamallit**-toimintoa kullekin yksikölle. Voit myös korvata perusmuotoisen URL:n yksikköjen osajoukolla käyttämällä **Muokkaa Excelissä** -toimintoa.
+Retail Modern POS:ssa (MPOS) näkyviä kuvia on isännöitävä ulkoisesti Microsoft Dynamics 365 for Retailin ulkopuolella. Niitä isännöi yleensä sisällönhallintajärjestelmä, sisältöverkko (CDN) tai mediapalvelin. MPOS noutaa ja näyttää kuvat soveltuville yksiköille kuten tuotteille ja luetteloille, käyttämällä kohde-URL-osoitetta. Näiden ulkoisesti isännöityjen kuvien noutamista varten MPOS tarvitsee oikean URL-muodon kuville. Voit määrittää kuville vaaditun URL-muodon määrittämällä **Median URL-perusosoite**-arvon kanavaprofiilissa ja käyttämällä **Määritä mediamallit**-toimintoa kullekin yksikölle. Voit myös korvata perusmuotoisen URL:n yksikköjen osajoukolla käyttämällä **Muokkaa Excelissä** -toimintoa.
 
 > [!IMPORTANT]
-> Nykyisessä Dynamics 365 for Retail -versiossa et voi enää määrittää URL-muotoa käyttämällä MPOS:n **Kuva**-määrite-XML:ää yksiköiden **Oletus**-määriteryhmässä. Jos Microsoft Dynamics AX 2012 R3 on sinulle tuttu ja käytät nyt Dynamics 365 for Retailin nykyistä versiota, varmista, että käytät aina uutta **Määritä mediamallit** -toimintoa kuvia määrittäessäsi. Älä käytä tai muokkaa **Kuva**-määritettä **Oletus** määriteryhmässä millekään yksikölle, mukaan lukien tuotteet. Suoraan **Oletus** kuvien määritysjoukossa tekemiäsi muutoksia ei oteta huomioon. Tämä vaihtoehto poistetaan käytöstä tulevissa versioissa.
+> Nykyisessä Dynamics 365 for Retailissa ei voi enää määrittää URL-muotoa käyttämällä MPOS:n **Kuva**-määrite-XML:ää yksiköiden **Oletus**-määriteryhmässä. Jos Microsoft Dynamics AX 2012 R3 on sinulle tuttu ja käytät nyt Dynamics 365 for Retailin nykyistä versiota, varmista, että käytät aina uutta **Määritä mediamallit** -toimintoa kuvia määrittäessäsi. Älä käytä tai muokkaa **Kuva**-määritettä **Oletus** määriteryhmässä millekään yksikölle, mukaan lukien tuotteet. Suoraan **Oletus** kuvien määritysjoukossa tekemiäsi muutoksia ei oteta huomioon. Tämä vaihtoehto poistetaan käytöstä tulevissa versioissa.
 
 Seuraavissa menettelyissä on esimerkki kuvien määrittämisestä luetteloyksikölle. Näiden menettelyjen avulla voit taata, että oikea kuvan kohdepolku on implisiittisesti määritetty kaikille yhteistä polkua käyttäville luettelokuville. Jos olet esimerkiksi tehnyt mediapalvelimen tai CDN:n asetukset ulkoisesti ja haluat, että kuvat näkyvät tietyn myymälän MPOS:ssa, **Määritä mediamallit** -toiminto auttaa sinua määrittämään polun, josta MPOS voi etsiä ja noutaa kuvat.
 
@@ -47,7 +46,7 @@ Seuraavissa menettelyissä on esimerkki kuvien määrittämisestä luetteloyksik
 
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>Median URL-perusosoitteen määrittäminen kanavalle
 
-1. Avaa Dynamics 365 for Retailin HQ-portaali.
+1. Avaa Dynamics 365 for Retail HQ -portaali.
 2. Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **Kanavaprofiilit**.
 
     [![channel-profile1](./media/channel-profile1.png)](./media/channel-profile1.png)
@@ -63,7 +62,7 @@ Seuraavissa menettelyissä on esimerkki kuvien määrittämisestä luetteloyksik
 3. Syötä **Mediapolku**-pikavälilehdessä kuvan sijainnin polun loppuosa. Mediapolku tukee **LanguageID:tä** muuttujana. Voit esimerkiksi luoda demotiedoille **Luettelot**-kansion kaikille mediapalvelimesi median URL-perusosoitteessa sijaitseville luettelokuville (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`). Sinulla voi sitten olla kansio kullekin kielelle, kuten en-US tai fi-FI, ja kopioida kuhunkin kansioon asiaankuuluvat kuvat. Jos sinulla ei ole eri kuvia eri kielille, voit ohittaa **LanguageID**-muuttujan kansiorakenteestasi ja osoittaa suoraan luettelokuvat sisältävää Luettelot-kansioon.
 
     > [!NOTE]
-    > Nykyinen Dynamics 365 for Retail tukee **{LanguageId}**-tunnusta Luettelo-, Tuote- ja Luokka-yksiköihin. **{LanguageID}**-tunnusta ei tueta Asiakas- ja Työntekijä-yksiköille nykyisen, Microsoft Dynamics AX 6.x.:stä lähtien voimassa olleen standardin mukaisesti.
+    > Nykyinen Dynamics 365 for Retail tukee **{LanguageId}**-tunnusta Luettelo-, Tuote- ja Luokka-yksiköihin. (**{LanguageID}**-tunnusta ei tueta Asiakas- ja Työntekijä-yksiköille nykyisen, Microsoft Dynamics AX 6.x.:stä lähtien voimassa olleen standardin mukaisesti.)
 
 4. Kuvien tiedostonimen muoto on pysyväiskoodattu luettelon nimeen eikä sitä voi muuttaa. Nimeä siksi kuvasi uudelleen niin, että niillä on soveltuvat luettelon nimet sen varmistamiseksi, että MPOS käsittelee niitä oikein.
 5. Valitse **Tiedostotunniste**-kentässä odotettu tiedostonimen tunniste riippuen sinulla olevista kuvatyypeistä. Esimerkiksi demotiedoissa luettelokuvien asetukseksi on määritetty .jpg-tunniste. (Kuvatiedot nimetään myös uudelleen niin, että niillä on luetteloiden nimet.)
@@ -122,7 +121,7 @@ Kuten opit edellisessä kohdassa, tietyn yksikön mediamalli tukee vain yhtä yh
     > Exceliin luodut URL-osoitteet käyttävät määritetyn mediamallin polkua ja käytäntöjä. Näihin käytäntöihin sisältyy tiedostonimiä koskevat käytännöt. Odotus on, että olet määrittänyt fyysiset kuvat Dynamics 365 for Retailin ulkopuolella ja kuvat voidaan noutaa URL-osoitteista, jotka on johdettu aiemmin määrittämästäsi mediamallista. Voit korvata nämä johdetut URL-osoitteet Muokkaa Excelissä -toiminnon avulla.
 
 5. Valitse **Muokkaa Excelissä**.
-6. Kun Microsoft Excel -laskentataulukko avautuu, napsauta **Ota muokkaus käyttöön**, kun saat kehotuksen.
+6. Kun Microsoft Excel -laskentataulukko avautuu, valitse pyydettäessä **Ota muokkaus käyttöön**.
 7. Kun saat tätä koskevan kehotuksen, napsauta **Luota tähän lisäosaan** oikeanpuoleisessa ruudussa ja odota lisäosan latautumisen valmistumista.
 
     [![Luota tähän lisäosaan](./media/excel4.jpg)](./media/excel4.jpg)
@@ -214,4 +213,3 @@ Luettelo-, luokka-, työntekijä- ja asiakaskuvat, joita on käytettävä offlin
 5. Noudata samaa prosessia muille yksiköille, kuten Luokka, Työntekijä ja Asiakas.
 
     [![offline2](./media/offline2.png)](./media/offline2.png)
-

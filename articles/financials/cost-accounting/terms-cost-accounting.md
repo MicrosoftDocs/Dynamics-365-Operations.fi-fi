@@ -1,13 +1,13 @@
 ---
 title: Kustannuslaskennan sanasto
-description: "Tässä aiheessa määritetään kustannuslaskennassa käytettyjä keskeisiä termejä."
+description: Tässä aiheessa määritetään kustannuslaskennassa käytettyjä keskeisiä termejä.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 702fa3cb4219aecd95a74d3c225e104be5f281fc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365934"
 ---
-
 # <a name="cost-accounting-terminology"></a>Kustannuslaskennan sanasto
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Kohdistusperustetta käytetään tehtävien mittaamiseen esimerkiksi koneen käy
 
 **Kustannuslaskenta**
 
-Kustannuslaskentaan voidaan kerätä tietoja useista eri lähteistä, kuten kirjanpidosta, alareskontrista, budjeteista ja tilastotiedoista. Kustannustietoja voidaan analysoida, arvioida ja tehdä yhteenvetoja, jotta yritysjohto voi tehdä tarvittavat päätökset esimerkiksi hinnanpäivityksistä, budjeteista ja kustannusseurannasta. Lähdetietoja, joita käytetään kustannusten analysoimisessa, käsitellään itsenäisesti kustannuslaskennassa. Kustannuslaskennan päivitykset eivät tämän vuoksi vaikuta lähdetietoihin. Kun keräät kustannustietoja eri paikoista ja erityisesti tuotaessa päätilit kirjanpidosta kustannustasoina Microsoft Dynamics 365 for Finance and Operations -ratkaisuun, sillä on päällekkäisiä tietoja koska samat tiedot ovat sekä kirjanpidossa että kustannuslaskennassa. Toistoa tarvitaan, koska taloushallintoa käytetään ulkoiseen raportointiin ja kustannuslaskentaa sisäistä raportointia varten.
+Kustannuslaskentaan voidaan kerätä tietoja useista eri lähteistä, kuten kirjanpidosta, alareskontrista, budjeteista ja tilastotiedoista. Kustannustietoja voidaan analysoida, arvioida ja tehdä yhteenvetoja, jotta yritysjohto voi tehdä tarvittavat päätökset esimerkiksi hinnanpäivityksistä, budjeteista ja kustannusseurannasta. Lähdetietoja, joita käytetään kustannusten analysoimisessa, käsitellään itsenäisesti kustannuslaskennassa. Kustannuslaskennan päivitykset eivät tämän vuoksi vaikuta lähdetietoihin. Kun keräät kustannustietoja eri paikoista ja erityisesti tuotaessa päätilit kirjanpidosta kustannustasoina Microsoft Dynamics 365 for Finance and Operationsiin, sillä on päällekkäisiä tietoja koska samat tiedot ovat sekä kirjanpidossa että kustannuslaskennassa. Toistoa tarvitaan, koska taloushallintoa käytetään ulkoiseen raportointiin ja kustannuslaskentaa sisäistä raportointia varten.
 
 **Kustannuslaskennan kirjanpito**
 
@@ -128,7 +127,7 @@ Kustannuslaskenta tukee tietojen integrointia lähdejärjestelmistä tietoyhdist
 
 Useimmat lähdejärjestelmät voivat välittää tietoa, joka vastaa vähintään yhtä kustannuslaskennan tietolähdettä. Lähdejärjestelmien tiedot voidaan kohdistaa kustannuslaskennan tietolähteisiin määrittämällä tietopalvelu. Seuraavassa taulukossa luetellaan yhdistin- ja tietolähdekohtaisesti saatavilla olevat tietopalvelut.
 
-|  **Tietolähteet** |  **Tuodut tapahtumat -tietopalvelu** | **Dynamics 365 for Finance and Operationsin tietoyhdistin**  | **Dynamics AX -yhdistin**  |
+|  **Tietolähteet** |  **Tuodut tapahtumat -tietopalvelu** | **Dynamics 365 for Finance and Operationsin tietoyhdistin**  | **Dynamics AX -tietoyhdistin**  |
 |---|---|---|---|
 | Kustannustason dimension jäsenet  |  Kyllä | Kyllä  | Kyllä  |
 |  Kustannusobjektin dimension jäsenet |  Kyllä | Kyllä  | Kyllä  |
@@ -204,6 +203,5 @@ Laskelmat näkyvät esimiehille, jotka ovat vastuussa kustannusten hallinnasta. 
 **Versio**
 
 Versioita käytetään eri tulosten simulointiin, tarkasteluun ja vertailuun. Oletusarvoisesti kaikkia toteutuneita kustannuksia tarkastellaan yhdessä perusversiossa, josta käytetään nimitystä *toteutunut*. Budjeteista ja laskelmista voit käsitellä niin monta versiota kuin tarvitset. Voit esimerkiksi tuoda budjetin tiedot alkuperäiseen versioon ja korjata budjettia uudessa versiossa. Voit luoda laskelmista useita versioita. Näihin eri versioihin voit luoda laskelmia käyttämällä erilaisia laskentasääntöjä, jota käytetään kustannusten kohdistamiseen.
-
 
 

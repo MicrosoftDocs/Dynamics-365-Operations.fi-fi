@@ -1,13 +1,13 @@
 ---
-title: "Myymälän varastonhallinta"
-description: "Tässä artikkelissa asiakirjatyypit, joiden avulla hallitaan varastoa."
+title: Myymälän varastonhallinta
+description: Tässä ohjeaiheessa käsitellään asiakirjatyyppejä, joiden avulla hallitaan varastoa.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/18/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -18,29 +18,50 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 02f8afbe3bb6f94c66a8b5aa02531c219adc3963
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 72f6f5e2645240ee3ddd31657176f27cb7db404f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339231"
 ---
-
 # <a name="store-inventory-management"></a>Myymälän varastonhallinta
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa asiakirjatyypit, joiden avulla hallitaan varastoa.
+Tässä ohjeaiheessa käsitellään asiakirjatyyppejä, joiden avulla hallitaan varastoa.
 
 Organisaation varastoa voi hallita seuraavien asiakirjatyyppien avulla.
 
+Kun varastoa käsitellään Dynamics 365 for Retailissa ja käytössä on myyntipistesovellus, on tärkeää muistaa, että myyntipiste tukee vain rajoitetusti varastodimensioita ja tiettyjä varastonimiketyyppejä.  
+
+Myyntipisteratkaisu ei tue seuraavia nimikemäärityksiä:
+- Tuoterakennenimikkeet (lukuun ottamatta myyntirakenteita, joissa käytetään joitakin tuoterakennekehikon osia)
+- Todellisen painon nimikkeet
+- Eräohjatut nimikkeet
+
+Myyntipistesovellus ei tue tällä hetkellä myyntipisteessä seuraavia seurantadimensioita:
+- Erän seurantadimensio
+- Omistajadimensio
+
+Myyntipisteratkaisu tukee rajoitetusti seuraavia dimensioita. Rajoitettu tuki ilmaisee, että myyntipiste voi palauttaa jotkin näistä dimensioista automaattisesti varastotapahtumiksi varaston tai kaupan asetusten määritysten perusteella. Myyntipiste ei tue dimensioita täysin sillä tavoin kuin niitä tuetaan, jos myyntitapahtuma viedään manuaalisesti ERP:hen. 
+
+- Paikka
+- Rekisterikilpi (käytössä vain, kun **Käytä varastonhallintaprosesseja** on otettu käyttöön nimikkeessä ja kaupan varastossa)
+- Sarjanumero
+- Varaston tila
+
+> [!NOTE]
+> Kaikkien organisaatioiden on testattava nimikemääritykset myyntipisteen kehitys- tai testiympäristössä, ennen kuin ne otetaan käyttöön tuotannossa. Testaa nimikkeet suorittamalla tavallinen itsepalvelutukun myyntitapahtuma ja luomalla (tarvittaessa) nimikkeille asiakastilauksia myyntipisteessä. Testauksen on sisällettävä täydelliset laskelmien kirjaamisprosessit testiympäristössä ja sen varmistaminen, että mitään ongelmia ei esiinny.
+> Jos nimikkeet määritetään tavalla, jota myyntipistesovellus ei tue ja ilman asianmukaista testausta, voi aiheuttaa laskelmien kirjaamisprosessin epäonnistumisen tuotantoympäristössä ilman, että ongelmat voitaisiin korjata kätevästi. Kumppanin tai asiakkaan sovellukseen tekemiä mukautuksia on mahdollista harkita, jotta nämä kirjausprosessit onnistuisivat. Jos mukautuksia ei tarvita, organisaation on varmistettava, että tuotteiden tuotemääritykset on tehty siten, että tavanomaista myyntipistesovellusta, tilausten luontia ja laskelmien kirjausprosessia tuetaan.
+
 ## <a name="purchase-orders"></a>Ostotilaukset
 
-Ostotilaukset luodaan pääkonttorilla. Jos vähittäismyynnin varasto sisältyy ostotilauksen otsikkoon, tilaus voidaan vastaanottaa myymälään Microsoft Dynamics 365 for Retailin Modern POS- tai Cloud POS -sovelluksen Vähittäismyynti ja kauppa -kohdan avulla. Kun myymälään vastaanotetut määrät on syötetty, ne voidaan tallentaa paikallisesti muokkausta varten. Vaihtoehtoisesti määrät voidaan vahvistaa ja lähettää pääkonttoriin. Pääkonttorissa myymälään vastaanotetut määrät näytetään Microsoft Dynamics 365 for Retailissa ostotilauksen **Ota vastaan nyt** -kentässä.
+Ostotilaukset luodaan pääkonttorilla. Jos vähittäismyynnin varasto sisältyy ostotilauksen otsikkoon, tilaus voidaan vastaanottaa myymälään Microsoft Dynamics 365 for Retailin Modern POS- tai Cloud POS -sovelluksen avulla. Kun myymälään vastaanotetut määrät on syötetty, ne voidaan tallentaa paikallisesti muokkausta varten. Vaihtoehtoisesti määrät voidaan vahvistaa ja lähettää pääkonttoriin. Pääkonttorissa myymälään vastaanotetut määrät näytetään Dynamics 365 for Retailissa ostotilauksen **Ota vastaan nyt** -kentässä.
 
 ## <a name="transfer-orders"></a>Siirtotilaukset
 
-Siirtotilaus voi määrittää, että nimikkeet lähetetään tietystä myymälästä. Tässä tapauksessa siirtotilaus näkyy myymälässä poimintapyyntönä Modern POS- tai Cloud POS -sovelluksessa. Kun pyydetyt määrät on kerätty, ne vahvistetaan ja lähetetään pääkonttoriin. Pääkonttorissa myymälässä kerätyt määrät näytetään Microsoft Dynamics 365 for Retailissa siirtotilauksen **Lähetä nyt** -kentässä. Siirtotilaus voi määrittää, että nimikkeet lähetetään tiettyyn myymälään. Tässä tapauksessa siirtotilaus näkyy myymälässä vastaanottopyyntönä Modern POS- tai Cloud POS -sovelluksessa. Kun myymälään vastaanotetut määrät on syötetty, ne voidaan tallentaa paikallisesti muokkausta varten. Vaihtoehtoisesti määrät voidaan vahvistaa ja lähettää pääkonttoriin. Pääkonttorissa myymälään vastaanotetut määrät näytetään Microsoft Dynamics 365 for Retailissa siirtotilauksen **Ota vastaan nyt** -kentässä.
+Siirtotilaus voi määrittää, että nimikkeet lähetetään tietystä myymälästä. Tässä tapauksessa siirtotilaus näkyy myymälässä poimintapyyntönä Modern POS- tai Cloud POS -sovelluksessa. Kun pyydetyt määrät on kerätty, ne vahvistetaan ja lähetetään pääkonttoriin. Pääkonttorissa myymälässä kerätyt määrät näytetään Dynamics 365 for Retailissa siirtotilauksen **Lähetä nyt** -kentässä. Siirtotilaus voi määrittää, että nimikkeet lähetetään tiettyyn myymälään. Tässä tapauksessa siirtotilaus näkyy myymälässä vastaanottopyyntönä Modern POS- tai Cloud POS -sovelluksessa. Kun myymälään vastaanotetut määrät on syötetty, ne voidaan tallentaa paikallisesti muokkausta varten. Vaihtoehtoisesti määrät voidaan vahvistaa ja lähettää pääkonttoriin. Pääkonttorissa myymälään vastaanotetut määrät näytetään Dynamics 365 for Retailissa siirtotilauksen **Ota vastaan nyt** -kentässä.
 
 ## <a name="stock-counts"></a>Varaston inventoinnit
 
@@ -49,4 +70,3 @@ Varaston inventoinnit voidaan ajoittaa tai niiden ajoitus voidaan peruuttaa. Aja
 ## <a name="inventory-lookup"></a>Varastohaku
 
 Nykyistä tuotteen määrää useissa myymälöissä ja varastoissa voi tarkastella varaston haku-sivulla. Nykyisen käytettävissä olevan määrän lisäksi luvattavissa oleva määrä (ATP) nähdään yksittäisistä myymälöistä. Voit tehdä tämän valitsemalla ensin myymälän, jonka ATP:tä haluat tarkastella, ja sitten **Näytä myymälän käytettävissä oleva määrä**.
-

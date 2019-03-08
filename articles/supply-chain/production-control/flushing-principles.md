@@ -1,13 +1,13 @@
 ---
-title: "Materiaaliottosäännöt"
-description: "Tässä ohjeaiheessa käsitellään neljää materiaalinottosääntöä, joita käytetään raaka-aineiden kulutuksessa."
+title: Materiaaliottosäännöt
+description: Tässä ohjeaiheessa käsitellään neljää materiaalinottosääntöä, joita käytetään raaka-aineiden kulutuksessa.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e4b9cd918bec9a094744b208821285c57f01798a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: f5fc4db479852ffac5f2b3401a0c1bd92c35a7cb
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358298"
 ---
-
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Raaka-aineiden kulutuksen hallinta materiaaliottosääntöjen avulla
 
 [!include [banner](../includes/banner.md)]
@@ -64,4 +63,3 @@ Loppu-materiaaliottosääntö ilmaisee, että materiaali kulutetaan automaattise
 
 ### <a name="available-at-location"></a>Käytettävissä sijainnissa
 Käytettävissä sijainnissa -materiaaliottosääntö ilmaisee, että materiaali kulutetaan automaattisesti, kun se on rekisteröity tuotantoon kerätyksi. Materiaali on rekisteröity sijainnista kerätyksi, kun raaka-aineen keräilytyö on valmis tai kun materiaali on käytettävissä tuotannon varastosijainnissa ja materiaalirivi on vapautettu varastoon. Prosessin aikana luotu keräystyö kirjataan erätyöhön. Tällä säännöllä on merkitystä, jos sinulla on esimerkiksi tuotantotilaus, jossa on useita keräystoimintoja. Tässä tapauksessa keräyslistaa ei tarvitse päivittää manuaalisesti ja saat KET-saldon ajantasaisen näkymän.
-

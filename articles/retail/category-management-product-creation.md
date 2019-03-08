@@ -1,37 +1,36 @@
 ---
-title: "Vähittäismyynnin tuoteluokkien ja tuotteiden hallinta"
-description: "Tässä ohjeaiheessa kerrotaan, miten myynninedistämispäälliköt voivat hallita vähittäismyynnin tuotehierarkian ja vapautetun tuotteen tietojen välisiä suhteita vähittäismyynnin tuoteluokkien avulla."
+title: Vähittäismyynnin tuoteluokkien ja tuotteiden hallinta
+description: Tässä ohjeaiheessa kerrotaan, miten myynninedistämispäälliköt voivat hallita vähittäismyynnin tuotehierarkian ja vapautetun tuotteen tietojen välisiä suhteita vähittäismyynnin tuoteluokkien avulla.
 author: ashishmsft
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 0bcc5989edd9913fce414c0c24068f111d8c1aeb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 19c972164474c972aab642c3cccc67cf396a6cb2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344682"
 ---
-
 # <a name="manage-retail-product-categories-and-products"></a>Vähittäismyynnin tuoteluokkien ja tuotteiden hallinta
 
 [!include [banner](./includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään parannettua tapaa hallita vähittäismyynnin tuoteluokkia ja tuotteita Microsoft Dynamics 365 for Retailissa. Myynninedistämispäälliköt näkevät näiden parannusten avulla tuoteominaisuuksien rakenteen, jonka vähittäismyynnin tuotehierarkia ja vapautetut tuotetiedot jakavat.
+Tässä ohjeaiheessa kerrotaan parannetusta tavasta hallita vähittäismyynnin tuoteluokkia ja tuotteita Microsoft Dynamics 365 for Retailissa. Myynninedistämispäälliköt näkevät näiden parannusten avulla tuoteominaisuuksien rakenteen, jonka vähittäismyynnin tuotehierarkia ja vapautetut tuotetiedot jakavat.
 
 Saat lisätietoja vähittäismyynnin tuoteluokkien hallinnasta valitsemalla **Luokka- ja tuotehallinta** -työtilassa **Vähittäismyynnin tuotehierarkia** -ruudun.
 
@@ -58,4 +57,3 @@ Parannetussa vähittäismyynnin tuoteluokkarakenteessa myynninedistämispäälli
 Voit käyttää uutta tuoteominaisuuksien parannettua rakennetta, kun valitset, mitkä päivitetyt tuoteominaisuudet on siirrettävä liitettyihin tuotteisiin. Valitse **Vähittäismyynnin tuotehierarkia** -sivun toimintoruudussa **Luokka** ja avaa sitten **Päivitä tuotteet** -valintaikkuna valitsemalla **Päivitä tuotteet**.
 
 ![Päivitä tuotteet -valintaikkuna.](media/NewUpdateProductsEnhancedView.PNG)
-

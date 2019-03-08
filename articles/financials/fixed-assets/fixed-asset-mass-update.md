@@ -1,13 +1,13 @@
 ---
-title: "Käyttöomaisuuden laajamittainen päivitys"
-description: "Jos käytät kirjoja, voit vaihtaa samaan kirjaan kuuluvien käyttöomaisuuserien muodostamien ryhmien poistomenetelmiä."
+title: Käyttöomaisuuden laajamittainen päivitys
+description: Jos käytät kirjoja, voit vaihtaa samaan kirjaan kuuluvien käyttöomaisuuserien muodostamien ryhmien poistomenetelmiä.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b740f1fe710c2278bd5ac5f8d615f0e305cd7df1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3fb55f1a51652299db8a31274b07f239fbaf28f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348799"
 ---
-
 # <a name="fixed-asset-mass-update"></a>Käyttöomaisuuden laajamittainen päivitys
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,6 @@ Kun päivität käyttöomaisuuserien poistomenetelmän, kaikki kyseisten käytt�
 Voidaksesi päivittää jo poistettujen käyttöomaisuuserien poistomenetelmän, sinun on ensin poistettava olemassa olevat poistotapahtumat. Sinun on poistettava myös kaikki tapahtumat, jotka on luotu poistoprosessia varten. 
 
 Päivitettyäsi käyttöomaisuuserien poistomenetelmän, voit käsitellä kunkin käyttöomaisuuserän poiston ja lisäpoiston. Voit myös tehdä poistoihin tarvittaessa manuaalisia oikaisuja.
-
 
 
 

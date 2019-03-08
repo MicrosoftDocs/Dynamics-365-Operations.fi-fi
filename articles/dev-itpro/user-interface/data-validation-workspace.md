@@ -1,28 +1,27 @@
 ---
-title: "Tietojen tarkistuksen tarkistusluettelon työtila"
-description: "Voit seurata tietojen tarkistuksen tarkistusluettelon työtilassa eri yritysten, alueiden ja henkilöiden tarkistusprosesseja. Tarkistusluettelon voidaan käyttää uudessa käyttöönotossa, päivityksen jälkeen tai siirron jälkeen."
+title: Tietojen tarkistuksen tarkistusluettelon työtila
+description: Voit seurata tietojen tarkistuksen tarkistusluettelon työtilassa eri yritysten, alueiden ja henkilöiden tarkistusprosesseja. Tarkistusluettelon voidaan käyttää uudessa käyttöönotossa, päivityksen jälkeen tai siirron jälkeen.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataValidationWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: dd758ac5698d84532c0b724485cc6f0da83bc8e0
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364186"
 ---
-
 # <a name="data-validation-checklist-workspace"></a>Tietojen tarkistuksen tarkistusluettelon työtila
 
 [!include [banner](../includes/banner.md)]
@@ -59,4 +58,3 @@ Ennen kuin **tietojen tarkistuksen tarkistusluettelon** työtilaa voi käyttää
 Tehtäväalueiden avulla voi ryhmitellä tietojen tarkistustehtäviä loogisiin omistusoikeuden alueisiin organisaatiossa. Tehtäväalueina voidaan käyttää esimerkiksi ostoreskontraa, myyntireskontraa tai kirjanpitoa.
 
 **Valikkovaihtoehdon nimi** liitetään tehtävän työhön. Sitä voidaan käyttää suoraan työtilan tehtävälinkin liittyvältä sivulta. Esimerkiksi tietojen tarkistustehtävä, jolla ostoreskontran **ostoreskontran erääntymisraportti** suoritetaan, voidaan linkittää **Ostoreskontran erääntymisraportti** -sivulle.
-

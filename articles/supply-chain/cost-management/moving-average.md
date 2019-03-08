@@ -1,13 +1,13 @@
 ---
 title: Liukuva keskiarvo
-description: "Liukuva keskiarvo on keskiarvon periaatteeseen perustuva pysyvä kustannuslaskentamenetelmä, jossa varasto-ottojen kustannukset eivät muutu, vaikka ostokustannus muuttuu. Ero aktivoidaan. Se perustuu suhteelliseen laskelmaan. Jäljelle jäävä summa siirretään kuluksi."
+description: Liukuva keskiarvo on keskiarvon periaatteeseen perustuva pysyvä kustannuslaskentamenetelmä, jossa varasto-ottojen kustannukset eivät muutu, vaikka ostokustannus muuttuu. Ero aktivoidaan. Se perustuu suhteelliseen laskelmaan. Jäljelle jäävä summa siirretään kuluksi.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0befa0e31347c9ee15ac0426fa3314b151a0200d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348063"
 ---
-
 # <a name="moving-average"></a>Liukuva keskiarvo
 
 [!include [banner](../includes/banner.md)]
@@ -113,8 +112,7 @@ Tässä liukuvaa keskiarvoa koskevassa esimerkissä varastoarvon raportti tulost
 | 8. lokakuuta        | 8. lokakuuta    | Liukuvan keskiarvon uudelleenarvostus |          | 4,00   | 16,00             |
 |                  | 31. lokakuuta   | Yhteensä                      | 2        | 32,00  | 16,00             |
 
- **Huomautus:** Kirjanpitoa ei voi täsmäyttää varaston kanssa **Lajittelu tapahtuman ajan mukaan** -vaihtoehtoa käyttämällä. Raportti täytyy tulostaa käyttämällä **Kirjauspäivämäärä**-vaihtoehtoa.
-
+ **Huomautus:** Kirjanpitoa ei voi täsmäyttää varaston kanssa **Lajittelu tapahtuman ajan mukaan** -vaihtoehtoa käyttämällä. Raportti täytyy tulostaa käyttämällä **Kirjauspäivämäärä**-vaihtoehtoa.
 
 
 
