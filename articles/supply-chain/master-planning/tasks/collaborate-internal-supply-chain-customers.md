@@ -1,13 +1,13 @@
---- 
-title: "Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa"
-description: "Näiden ohjeiden avulla voit tarkastella kaikkia suunniteltuja tilauksia, jotka täyttää konsernitoimittaja."
+---
+title: Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa
+description: Näiden ohjeiden avulla voit tarkastella kaikkia suunniteltuja tilauksia, jotka täyttää konsernitoimittaja.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqOutboundIntercompanyDemand
 audience: Application User
 ms.reviewer: shylaw
@@ -16,31 +16,30 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 44b9f516835acc792ec1edba0b5efdcbd2823422
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358045"
 ---
-# <a name="collaborate-with-internal-supply-chain-customers"></a><span data-ttu-id="8d4de-103">Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa</span><span class="sxs-lookup"><span data-stu-id="8d4de-103">Collaborate with internal supply chain customers</span></span>
+# <a name="collaborate-with-internal-supply-chain-customers"></a><span data-ttu-id="339bb-103">Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa</span><span class="sxs-lookup"><span data-stu-id="339bb-103">Collaborate with internal supply chain customers</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="8d4de-104">Näiden ohjeiden avulla voit tarkastella kaikkia suunniteltuja tilauksia, jotka täyttää konsernitoimittaja.</span><span class="sxs-lookup"><span data-stu-id="8d4de-104">This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor.</span></span> <span data-ttu-id="8d4de-105">Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF.</span><span class="sxs-lookup"><span data-stu-id="8d4de-105">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="339bb-104">Näiden ohjeiden avulla voit tarkastella kaikkia suunniteltuja tilauksia, jotka täyttää konsernitoimittaja.</span><span class="sxs-lookup"><span data-stu-id="339bb-104">This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor.</span></span> <span data-ttu-id="339bb-105">Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF.</span><span class="sxs-lookup"><span data-stu-id="339bb-105">The demo data company used to create this procedure is DEMF.</span></span>
 
-1. <span data-ttu-id="8d4de-106">Valitse Pääsuunnittelu.</span><span class="sxs-lookup"><span data-stu-id="8d4de-106">Click Master planning.</span></span>
-2. <span data-ttu-id="8d4de-107">Anna tai valitse Suunnitelma-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="8d4de-107">In the Plan field, enter or select a value.</span></span>
-    * <span data-ttu-id="8d4de-108">Valitse suunnitelma 10 Suunitelma-kenttään.</span><span class="sxs-lookup"><span data-stu-id="8d4de-108">In the Plan field, select plan 10.</span></span>  
-3. <span data-ttu-id="8d4de-109">Valitse Suorita.</span><span class="sxs-lookup"><span data-stu-id="8d4de-109">Click Run.</span></span>
-4. <span data-ttu-id="8d4de-110">Syötä Säikeiden määrä -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="8d4de-110">In the Number of threads field, enter a number.</span></span>
-    * <span data-ttu-id="8d4de-111">Tämä vastaa pääsuunnittelussa käytettävien rinnakkaisten säikeiden määrää.</span><span class="sxs-lookup"><span data-stu-id="8d4de-111">This represents the number of parallel threads to be used for master planning.</span></span>  
-5. <span data-ttu-id="8d4de-112">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="8d4de-112">Click OK.</span></span>
-    * <span data-ttu-id="8d4de-113">Tämä saattaa kestää jonkin aikaa.</span><span class="sxs-lookup"><span data-stu-id="8d4de-113">This may take a while.</span></span>  
-6. <span data-ttu-id="8d4de-114">Valitse Suunniteltu konsernin sisäinen kysyntä.</span><span class="sxs-lookup"><span data-stu-id="8d4de-114">Click Planned intercompany demand.</span></span>
-7. <span data-ttu-id="8d4de-115">Valitse Lähtevä suunniteltu konserniyritysten välinen kysyntä.</span><span class="sxs-lookup"><span data-stu-id="8d4de-115">Click Outbound planned intercompany demand.</span></span>
-    * <span data-ttu-id="8d4de-116">Tällä sivulla on yleiskuvaus suunnitellusta kysynnästä, jonka täyttää sisäisen toimitusketjun toimittaja.</span><span class="sxs-lookup"><span data-stu-id="8d4de-116">This page provides an overview of all the planned demand that will be fulfilled by an internal supply chain vendor.</span></span>  
-8. <span data-ttu-id="8d4de-117">Laajenna Ylöspäin suuntautuvan kysynnän tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="8d4de-117">Expand the Upstream demand details section.</span></span>
-    * <span data-ttu-id="8d4de-118">Tässä osassa näytetään tietoja kysynnän täyttämisestä.</span><span class="sxs-lookup"><span data-stu-id="8d4de-118">In this section, you can see the details about how the demand will be fulfilled.</span></span> <span data-ttu-id="8d4de-119">Voit joutua odottamaan pääsuunnittelun valmistumista toimittajayrityksessä, ennen kuin näet lisätietoja tässä.</span><span class="sxs-lookup"><span data-stu-id="8d4de-119">You may need to wait for master planning to be run in the supply company before you can see additional information here.</span></span>  
-
+1. <span data-ttu-id="339bb-106">Valitse Pääsuunnittelu.</span><span class="sxs-lookup"><span data-stu-id="339bb-106">Click Master planning.</span></span>
+2. <span data-ttu-id="339bb-107">Anna tai valitse Suunnitelma-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="339bb-107">In the Plan field, enter or select a value.</span></span>
+    * <span data-ttu-id="339bb-108">Valitse suunnitelma 10 Suunitelma-kenttään.</span><span class="sxs-lookup"><span data-stu-id="339bb-108">In the Plan field, select plan 10.</span></span>  
+3. <span data-ttu-id="339bb-109">Valitse Suorita.</span><span class="sxs-lookup"><span data-stu-id="339bb-109">Click Run.</span></span>
+4. <span data-ttu-id="339bb-110">Syötä Säikeiden määrä -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="339bb-110">In the Number of threads field, enter a number.</span></span>
+    * <span data-ttu-id="339bb-111">Tämä vastaa pääsuunnittelussa käytettävien rinnakkaisten säikeiden määrää.</span><span class="sxs-lookup"><span data-stu-id="339bb-111">This represents the number of parallel threads to be used for master planning.</span></span>  
+5. <span data-ttu-id="339bb-112">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="339bb-112">Click OK.</span></span>
+    * <span data-ttu-id="339bb-113">Tämä saattaa kestää jonkin aikaa.</span><span class="sxs-lookup"><span data-stu-id="339bb-113">This may take a while.</span></span>  
+6. <span data-ttu-id="339bb-114">Valitse Suunniteltu konsernin sisäinen kysyntä.</span><span class="sxs-lookup"><span data-stu-id="339bb-114">Click Planned intercompany demand.</span></span>
+7. <span data-ttu-id="339bb-115">Valitse Lähtevä suunniteltu konserniyritysten välinen kysyntä.</span><span class="sxs-lookup"><span data-stu-id="339bb-115">Click Outbound planned intercompany demand.</span></span>
+    * <span data-ttu-id="339bb-116">Tällä sivulla on yleiskuvaus suunnitellusta kysynnästä, jonka täyttää sisäisen toimitusketjun toimittaja.</span><span class="sxs-lookup"><span data-stu-id="339bb-116">This page provides an overview of all the planned demand that will be fulfilled by an internal supply chain vendor.</span></span>  
+8. <span data-ttu-id="339bb-117">Laajenna Ylöspäin suuntautuvan kysynnän tiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="339bb-117">Expand the Upstream demand details section.</span></span>
+    * <span data-ttu-id="339bb-118">Tässä osassa näytetään tietoja kysynnän täyttämisestä.</span><span class="sxs-lookup"><span data-stu-id="339bb-118">In this section, you can see the details about how the demand will be fulfilled.</span></span> <span data-ttu-id="339bb-119">Voit joutua odottamaan pääsuunnittelun valmistumista toimittajayrityksessä, ennen kuin näet lisätietoja tässä.</span><span class="sxs-lookup"><span data-stu-id="339bb-119">You may need to wait for master planning to be run in the supply company before you can see additional information here.</span></span>  
 

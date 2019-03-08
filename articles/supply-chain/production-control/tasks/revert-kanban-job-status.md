@@ -1,13 +1,13 @@
---- 
-title: "Palauta kanban-työn tila"
-description: "Tässä menettelyssä käsitellään virheellisen kanban-työtilan palauttamista."
+---
+title: Palauta kanban-työn tila
+description: Tässä menettelyssä käsitellään virheellisen kanban-työtilan palauttamista.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,42 +17,41 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 27874f89cede151b52b869fa0d58e320d548e6d3
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352088"
 ---
-# <a name="revert-kanban-job-status"></a><span data-ttu-id="842c7-103">Palauta kanban-työn tila</span><span class="sxs-lookup"><span data-stu-id="842c7-103">Revert kanban job status</span></span>
+# <a name="revert-kanban-job-status"></a><span data-ttu-id="a7d45-103">Palauta kanban-työn tila</span><span class="sxs-lookup"><span data-stu-id="a7d45-103">Revert kanban job status</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="842c7-104">Tässä menettelyssä käsitellään virheellisen kanban-työtilan palauttamista.</span><span class="sxs-lookup"><span data-stu-id="842c7-104">This procedure focuses on reverting an incorrect kanban job status.</span></span> <span data-ttu-id="842c7-105">Tämä on kätevää, jos koneenkäyttäjä päivittää väärän työn tai määrittää vahingossa väärän tilan.</span><span class="sxs-lookup"><span data-stu-id="842c7-105">This is useful in case the machine operator updates the wrong job, or sets the wrong status by mistake.</span></span> <span data-ttu-id="842c7-106">Tässä menettelyssä kanban-työ on rekisteröidään vahingossa valmistelluksi ja tila palautetaan.</span><span class="sxs-lookup"><span data-stu-id="842c7-106">In this procedure, a kanban job is registered as prepared by mistake, and the status is reverted.</span></span> <span data-ttu-id="842c7-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="842c7-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="842c7-108">Menettely on tarkoitettu Lean-tuotantoyrityksessä työskentelevälle tuotannon osastonvalvojalle tai koneenkäyttäjälle.</span><span class="sxs-lookup"><span data-stu-id="842c7-108">This procedure is intended for the shop supervisor or machine operator working in a lean manufacturing company.</span></span>
+<span data-ttu-id="a7d45-104">Tässä menettelyssä käsitellään virheellisen kanban-työtilan palauttamista.</span><span class="sxs-lookup"><span data-stu-id="a7d45-104">This procedure focuses on reverting an incorrect kanban job status.</span></span> <span data-ttu-id="a7d45-105">Tämä on kätevää, jos koneenkäyttäjä päivittää väärän työn tai määrittää vahingossa väärän tilan.</span><span class="sxs-lookup"><span data-stu-id="a7d45-105">This is useful in case the machine operator updates the wrong job, or sets the wrong status by mistake.</span></span> <span data-ttu-id="a7d45-106">Tässä menettelyssä kanban-työ on rekisteröidään vahingossa valmistelluksi ja tila palautetaan.</span><span class="sxs-lookup"><span data-stu-id="a7d45-106">In this procedure, a kanban job is registered as prepared by mistake, and the status is reverted.</span></span> <span data-ttu-id="a7d45-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="a7d45-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="a7d45-108">Menettely on tarkoitettu Lean-tuotantoyrityksessä työskentelevälle tuotannon osastonvalvojalle tai koneenkäyttäjälle.</span><span class="sxs-lookup"><span data-stu-id="a7d45-108">This procedure is intended for the shop supervisor or machine operator working in a lean manufacturing company.</span></span>
 
 
-## <a name="open-process-board-for-the-work-cell"></a><span data-ttu-id="842c7-109">Avaa työsolun prosessitaulu.</span><span class="sxs-lookup"><span data-stu-id="842c7-109">Open process board for the work cell</span></span>
-1. <span data-ttu-id="842c7-110">Siirry Prosessitöiden kanban-taulu -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="842c7-110">Go to Kanban board for process jobs.</span></span>
-2. <span data-ttu-id="842c7-111">Anna tai valitse Työsolu-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="842c7-111">In the Work cell field, enter or select a value.</span></span>
-    * <span data-ttu-id="842c7-112">Valitse työsolu 1260.</span><span class="sxs-lookup"><span data-stu-id="842c7-112">Select work cell 1260.</span></span>  
+## <a name="open-process-board-for-the-work-cell"></a><span data-ttu-id="a7d45-109">Avaa työsolun prosessitaulu.</span><span class="sxs-lookup"><span data-stu-id="a7d45-109">Open process board for the work cell</span></span>
+1. <span data-ttu-id="a7d45-110">Siirry Prosessitöiden kanban-taulu -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="a7d45-110">Go to Kanban board for process jobs.</span></span>
+2. <span data-ttu-id="a7d45-111">Anna tai valitse Työsolu-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="a7d45-111">In the Work cell field, enter or select a value.</span></span>
+    * <span data-ttu-id="a7d45-112">Valitse työsolu 1260.</span><span class="sxs-lookup"><span data-stu-id="a7d45-112">Select work cell 1260.</span></span>  
 
-## <a name="prepare-kanban-job"></a><span data-ttu-id="842c7-113">Valmistele kanban-työ</span><span class="sxs-lookup"><span data-stu-id="842c7-113">Prepare kanban job</span></span>
-1. <span data-ttu-id="842c7-114">Valitse Valmistele.</span><span class="sxs-lookup"><span data-stu-id="842c7-114">Click Prepare.</span></span>
-    * <span data-ttu-id="842c7-115">Jos voi valita Valmistele, koska se näkyy harmaana, valmista, että valitun kanban-työn tila Suunniteltu, minkä osoituksena on tyhjä kanban-kuvake.</span><span class="sxs-lookup"><span data-stu-id="842c7-115">If you can't click Prepare because it is grayed out, make sure that the selected kanban job has status Planned, which is indicated by the empty kanban icon.</span></span> <span data-ttu-id="842c7-116">Jos Valmistele epäonnistuu, varmista, että kaikki keräysluettelon materiaalit ovat käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="842c7-116">If Prepare fails, make sure that all materials in the Picking list are available.</span></span>  
-2. <span data-ttu-id="842c7-117">Valitse luettelossa valmisteltu työ.</span><span class="sxs-lookup"><span data-stu-id="842c7-117">In the list, select the prepared job.</span></span>
-    * <span data-ttu-id="842c7-118">Valitse ensimmäinen juuri valmisteltu työ.</span><span class="sxs-lookup"><span data-stu-id="842c7-118">Select the first job that you have just prepared.</span></span>  
-    * <span data-ttu-id="842c7-119">Huomaa, että työn tila on valmisteltu, minkä osoittaa kanban-kuvakkeen sisällä oleva kolmio.</span><span class="sxs-lookup"><span data-stu-id="842c7-119">Notice that the jobs status is prepared, which is indicated with a triangle inside the kanban icon.</span></span>  
+## <a name="prepare-kanban-job"></a><span data-ttu-id="a7d45-113">Valmistele kanban-työ</span><span class="sxs-lookup"><span data-stu-id="a7d45-113">Prepare kanban job</span></span>
+1. <span data-ttu-id="a7d45-114">Valitse Valmistele.</span><span class="sxs-lookup"><span data-stu-id="a7d45-114">Click Prepare.</span></span>
+    * <span data-ttu-id="a7d45-115">Jos voi valita Valmistele, koska se näkyy harmaana, valmista, että valitun kanban-työn tila Suunniteltu, minkä osoituksena on tyhjä kanban-kuvake.</span><span class="sxs-lookup"><span data-stu-id="a7d45-115">If you can't click Prepare because it is grayed out, make sure that the selected kanban job has status Planned, which is indicated by the empty kanban icon.</span></span> <span data-ttu-id="a7d45-116">Jos Valmistele epäonnistuu, varmista, että kaikki keräysluettelon materiaalit ovat käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="a7d45-116">If Prepare fails, make sure that all materials in the Picking list are available.</span></span>  
+2. <span data-ttu-id="a7d45-117">Valitse luettelossa valmisteltu työ.</span><span class="sxs-lookup"><span data-stu-id="a7d45-117">In the list, select the prepared job.</span></span>
+    * <span data-ttu-id="a7d45-118">Valitse ensimmäinen juuri valmisteltu työ.</span><span class="sxs-lookup"><span data-stu-id="a7d45-118">Select the first job that you have just prepared.</span></span>  
+    * <span data-ttu-id="a7d45-119">Huomaa, että työn tila on valmisteltu, minkä osoittaa kanban-kuvakkeen sisällä oleva kolmio.</span><span class="sxs-lookup"><span data-stu-id="a7d45-119">Notice that the jobs status is prepared, which is indicated with a triangle inside the kanban icon.</span></span>  
 
-## <a name="revert-the-status-of-the-prepared-kanban-job"></a><span data-ttu-id="842c7-120">Palauta valmistellun kanban-työn tila</span><span class="sxs-lookup"><span data-stu-id="842c7-120">Revert the status of the prepared kanban job</span></span>
-1. <span data-ttu-id="842c7-121">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="842c7-121">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="842c7-122">Valitse ensimmäinen juuri valmisteltu työ.</span><span class="sxs-lookup"><span data-stu-id="842c7-122">Select the first job that was prepared.</span></span>  
-2. <span data-ttu-id="842c7-123">Valitse toimintoruudussa Valmista.</span><span class="sxs-lookup"><span data-stu-id="842c7-123">On the Action Pane, click Manufacture.</span></span>
-3. <span data-ttu-id="842c7-124">Valitse Palauta tila.</span><span class="sxs-lookup"><span data-stu-id="842c7-124">Click Revert status.</span></span>
-    * <span data-ttu-id="842c7-125">Voit käyttää vaihtoehtoisia kanban-sääntöjä seuraavissa tilanteissa: – Säännöillä on sama täydennysstrategia.</span><span class="sxs-lookup"><span data-stu-id="842c7-125">You can use an alternative kanban rule when the following conditions are true:  - The replenishment strategy is the same for both rules.</span></span>  <span data-ttu-id="842c7-126">- Kummallakin säännöllä on sama tuotantovirran versio.</span><span class="sxs-lookup"><span data-stu-id="842c7-126">- The version of the production flow is the same for both rules.</span></span>  <span data-ttu-id="842c7-127">- Kummallekin säännölle annetaan sama tuote.</span><span class="sxs-lookup"><span data-stu-id="842c7-127">- The product that is supplied is the same for both rules.</span></span>  <span data-ttu-id="842c7-128">- Kummallekin säännölle on määritetty samat kanban-sääntöjen viimeistä tehtävää edeltävät tehtävät.</span><span class="sxs-lookup"><span data-stu-id="842c7-128">- Any downstream activities that are configured for the last activity of the kanban rules must be the same for both rules.</span></span>  <span data-ttu-id="842c7-129">- Kummallekin säännölle on oltava määritettynä samat varastodimensiot.</span><span class="sxs-lookup"><span data-stu-id="842c7-129">- The same supplied inventory dimensions must be configured for both rules.</span></span>  <span data-ttu-id="842c7-130">- Käsittely-yksikön tilan on oltava Ei määritetty.</span><span class="sxs-lookup"><span data-stu-id="842c7-130">- The status of the handling unit must be Not assigned.</span></span>  <span data-ttu-id="842c7-131">- Tapahtuma-kanbanin määrityksen on oltava sama.</span><span class="sxs-lookup"><span data-stu-id="842c7-131">- The configuration for event kanbans must be the same.</span></span>  
-    * <span data-ttu-id="842c7-132">Varmista, että uusi tila on Suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="842c7-132">Ensure that the new status is Planned.</span></span>  
-4. <span data-ttu-id="842c7-133">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="842c7-133">Click OK.</span></span>
-5. <span data-ttu-id="842c7-134">Poista valitun rivin merkintä luettelossa.</span><span class="sxs-lookup"><span data-stu-id="842c7-134">In the list, unmark the selected row.</span></span>
-    * <span data-ttu-id="842c7-135">Valitse sama työ.</span><span class="sxs-lookup"><span data-stu-id="842c7-135">Select the same job.</span></span>  
-    * <span data-ttu-id="842c7-136">Huomaa, että kanban-työn työtilaksi on palautettu Suunniteltu, minkä osoituksena on tyhjä kanban-kuvake.</span><span class="sxs-lookup"><span data-stu-id="842c7-136">Notice that the job status for the kanban job is reverted to Planned, which is indicated by an empty kanban icon.</span></span>  
-
+## <a name="revert-the-status-of-the-prepared-kanban-job"></a><span data-ttu-id="a7d45-120">Palauta valmistellun kanban-työn tila</span><span class="sxs-lookup"><span data-stu-id="a7d45-120">Revert the status of the prepared kanban job</span></span>
+1. <span data-ttu-id="a7d45-121">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="a7d45-121">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="a7d45-122">Valitse ensimmäinen juuri valmisteltu työ.</span><span class="sxs-lookup"><span data-stu-id="a7d45-122">Select the first job that was prepared.</span></span>  
+2. <span data-ttu-id="a7d45-123">Valitse toimintoruudussa Valmista.</span><span class="sxs-lookup"><span data-stu-id="a7d45-123">On the Action Pane, click Manufacture.</span></span>
+3. <span data-ttu-id="a7d45-124">Valitse Palauta tila.</span><span class="sxs-lookup"><span data-stu-id="a7d45-124">Click Revert status.</span></span>
+    * <span data-ttu-id="a7d45-125">Voit käyttää vaihtoehtoisia kanban-sääntöjä seuraavissa tilanteissa: – Säännöillä on sama täydennysstrategia.</span><span class="sxs-lookup"><span data-stu-id="a7d45-125">You can use an alternative kanban rule when the following conditions are true:  - The replenishment strategy is the same for both rules.</span></span>  <span data-ttu-id="a7d45-126">- Kummallakin säännöllä on sama tuotantovirran versio.</span><span class="sxs-lookup"><span data-stu-id="a7d45-126">- The version of the production flow is the same for both rules.</span></span>  <span data-ttu-id="a7d45-127">- Kummallekin säännölle annetaan sama tuote.</span><span class="sxs-lookup"><span data-stu-id="a7d45-127">- The product that is supplied is the same for both rules.</span></span>  <span data-ttu-id="a7d45-128">- Kummallekin säännölle on määritetty samat kanban-sääntöjen viimeistä tehtävää edeltävät tehtävät.</span><span class="sxs-lookup"><span data-stu-id="a7d45-128">- Any downstream activities that are configured for the last activity of the kanban rules must be the same for both rules.</span></span>  <span data-ttu-id="a7d45-129">- Kummallekin säännölle on oltava määritettynä samat varastodimensiot.</span><span class="sxs-lookup"><span data-stu-id="a7d45-129">- The same supplied inventory dimensions must be configured for both rules.</span></span>  <span data-ttu-id="a7d45-130">- Käsittely-yksikön tilan on oltava Ei määritetty.</span><span class="sxs-lookup"><span data-stu-id="a7d45-130">- The status of the handling unit must be Not assigned.</span></span>  <span data-ttu-id="a7d45-131">- Tapahtuma-kanbanin määrityksen on oltava sama.</span><span class="sxs-lookup"><span data-stu-id="a7d45-131">- The configuration for event kanbans must be the same.</span></span>  
+    * <span data-ttu-id="a7d45-132">Varmista, että uusi tila on Suunniteltu.</span><span class="sxs-lookup"><span data-stu-id="a7d45-132">Ensure that the new status is Planned.</span></span>  
+4. <span data-ttu-id="a7d45-133">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="a7d45-133">Click OK.</span></span>
+5. <span data-ttu-id="a7d45-134">Poista valitun rivin merkintä luettelossa.</span><span class="sxs-lookup"><span data-stu-id="a7d45-134">In the list, unmark the selected row.</span></span>
+    * <span data-ttu-id="a7d45-135">Valitse sama työ.</span><span class="sxs-lookup"><span data-stu-id="a7d45-135">Select the same job.</span></span>  
+    * <span data-ttu-id="a7d45-136">Huomaa, että kanban-työn työtilaksi on palautettu Suunniteltu, minkä osoituksena on tyhjä kanban-kuvake.</span><span class="sxs-lookup"><span data-stu-id="a7d45-136">Notice that the job status for the kanban job is reverted to Planned, which is indicated by an empty kanban icon.</span></span>  
 

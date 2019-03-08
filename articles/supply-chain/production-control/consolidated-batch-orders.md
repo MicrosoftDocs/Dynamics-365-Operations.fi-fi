@@ -1,13 +1,13 @@
 ---
-title: "Konsolidoidut erätilaukset"
-description: "Tässä artikkelissa kuvataan konsolidoitujen erätilausten käsite."
+title: Konsolidoidut erätilaukset
+description: Tässä artikkelissa kuvataan konsolidoitujen erätilausten käsite.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PmfAddToConsOrder, PmfBulkItemConv, PmfBulkPackOnHand, PmfConsOrderListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,31 +19,29 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 49c2df19168855e6e6ab9ff061bcdce698947b20
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358804"
 ---
-
-# <a name="consolidated-batch-orders"></a><span data-ttu-id="795ab-103">Konsolidoidut erätilaukset</span><span class="sxs-lookup"><span data-stu-id="795ab-103">Consolidated batch orders</span></span>
+# <a name="consolidated-batch-orders"></a><span data-ttu-id="7967b-103">Konsolidoidut erätilaukset</span><span class="sxs-lookup"><span data-stu-id="7967b-103">Consolidated batch orders</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="795ab-104">Tässä artikkelissa kuvataan konsolidoitujen erätilausten käsite.</span><span class="sxs-lookup"><span data-stu-id="795ab-104">This article describes the concept of consolidated batch orders.</span></span>
+<span data-ttu-id="7967b-104">Tässä artikkelissa kuvataan konsolidoitujen erätilausten käsite.</span><span class="sxs-lookup"><span data-stu-id="7967b-104">This article describes the concept of consolidated batch orders.</span></span>
 
-<span data-ttu-id="795ab-105">Tuotettua bulkkinimikettä käsitellään ylänimikkeenä, ja pakattua nimikettä on alanimikkeenä.</span><span class="sxs-lookup"><span data-stu-id="795ab-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="795ab-106">Bulkki- ja pakatun nimikkeen suhde esitetään bulkkinimikkeen muunnoksena.</span><span class="sxs-lookup"><span data-stu-id="795ab-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="795ab-107">Bulkkinimikkeen muunnos määritellään bulkkinimikkeessä itsessään.</span><span class="sxs-lookup"><span data-stu-id="795ab-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
+<span data-ttu-id="7967b-105">Tuotettua bulkkinimikettä käsitellään ylänimikkeenä, ja pakattua nimikettä on alanimikkeenä.</span><span class="sxs-lookup"><span data-stu-id="7967b-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="7967b-106">Bulkki- ja pakatun nimikkeen suhde esitetään bulkkinimikkeen muunnoksena.</span><span class="sxs-lookup"><span data-stu-id="7967b-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="7967b-107">Bulkkinimikkeen muunnos määritellään bulkkinimikkeessä itsessään.</span><span class="sxs-lookup"><span data-stu-id="7967b-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
 
-<span data-ttu-id="795ab-108">Pakatut nimikkeet voidaan pakata joko yksittäiseen koon konttiin tai usean koon kontteihin, joita käsitellään yhtenä yksikkönä.</span><span class="sxs-lookup"><span data-stu-id="795ab-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="795ab-109">Konsolidoimalla bulkkinimikkeiden tilauksia voit tarkastella kaikkia liittyviä erätilauksia yhdessä näkymässä, jonka avulla voit määrittää jäljellä olevat työt, jotka on suoritettava.</span><span class="sxs-lookup"><span data-stu-id="795ab-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
+<span data-ttu-id="7967b-108">Pakatut nimikkeet voidaan pakata joko yksittäiseen koon konttiin tai usean koon kontteihin, joita käsitellään yhtenä yksikkönä.</span><span class="sxs-lookup"><span data-stu-id="7967b-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="7967b-109">Konsolidoimalla bulkkinimikkeiden tilauksia voit tarkastella kaikkia liittyviä erätilauksia yhdessä näkymässä, jonka avulla voit määrittää jäljellä olevat työt, jotka on suoritettava.</span><span class="sxs-lookup"><span data-stu-id="7967b-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
 
-<span data-ttu-id="795ab-110">Konsolidoitu erätilaus voi sisältää yhdistelmän mitä tahansa seuraavia tilauksia:</span><span class="sxs-lookup"><span data-stu-id="795ab-110">A consolidated batch order can contain any combination of the following orders:</span></span>
+<span data-ttu-id="7967b-110">Konsolidoitu erätilaus voi sisältää yhdistelmän mitä tahansa seuraavia tilauksia:</span><span class="sxs-lookup"><span data-stu-id="7967b-110">A consolidated batch order can contain any combination of the following orders:</span></span>
 
--   <span data-ttu-id="795ab-111">Yksittäinen bulkkitilaus ja useita pakattuja tilauksia</span><span class="sxs-lookup"><span data-stu-id="795ab-111">A single bulk order and multiple packed orders</span></span>
--   <span data-ttu-id="795ab-112">Useita bulkki- sekä pakattuja tilauksia</span><span class="sxs-lookup"><span data-stu-id="795ab-112">Multiple bulk orders and multiple packed orders</span></span>
--   <span data-ttu-id="795ab-113">Useita bulkkitilauksia ja yksittäinen pakattu tilaus</span><span class="sxs-lookup"><span data-stu-id="795ab-113">Multiple bulk orders and a single packed order</span></span>
--   <span data-ttu-id="795ab-114">Vain pakatut tilaukset</span><span class="sxs-lookup"><span data-stu-id="795ab-114">Only packed orders</span></span>
-
+-   <span data-ttu-id="7967b-111">Yksittäinen bulkkitilaus ja useita pakattuja tilauksia</span><span class="sxs-lookup"><span data-stu-id="7967b-111">A single bulk order and multiple packed orders</span></span>
+-   <span data-ttu-id="7967b-112">Useita bulkki- sekä pakattuja tilauksia</span><span class="sxs-lookup"><span data-stu-id="7967b-112">Multiple bulk orders and multiple packed orders</span></span>
+-   <span data-ttu-id="7967b-113">Useita bulkkitilauksia ja yksittäinen pakattu tilaus</span><span class="sxs-lookup"><span data-stu-id="7967b-113">Multiple bulk orders and a single packed order</span></span>
+-   <span data-ttu-id="7967b-114">Vain pakatut tilaukset</span><span class="sxs-lookup"><span data-stu-id="7967b-114">Only packed orders</span></span>
 
 
 

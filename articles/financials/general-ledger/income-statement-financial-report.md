@@ -1,13 +1,13 @@
 ---
 title: Tuloslaskelman talousraportti
-description: "Tässä artikkelissa kuvataan tuloilmoituksen oletusraporttia. Siinä myös kuvataan rakenneosat, jotka liittyvät tähän raporttiin."
+description: Tässä artikkelissa kuvataan tuloilmoituksen oletusraporttia. Siinä myös kuvataan rakenneosat, jotka liittyvät tähän raporttiin.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,58 +18,56 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 9105e1de86ed2834b04f75c7d08c4021402bcfda
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364002"
 ---
-
-# <a name="income-statement-financial-report"></a><span data-ttu-id="c58cc-104">Tuloslaskelman talousraportti</span><span class="sxs-lookup"><span data-stu-id="c58cc-104">Income statement financial report</span></span>
+# <a name="income-statement-financial-report"></a><span data-ttu-id="70446-104">Tuloslaskelman talousraportti</span><span class="sxs-lookup"><span data-stu-id="70446-104">Income statement financial report</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="c58cc-105">Tässä artikkelissa kuvataan tuloilmoituksen oletusraporttia.</span><span class="sxs-lookup"><span data-stu-id="c58cc-105">This article describes the default report for income statements.</span></span> <span data-ttu-id="c58cc-106">Siinä myös kuvataan rakenneosat, jotka liittyvät tähän raporttiin.</span><span class="sxs-lookup"><span data-stu-id="c58cc-106">It also describes the building blocks that are associated with this report.</span></span> 
+<span data-ttu-id="70446-105">Tässä artikkelissa kuvataan tuloilmoituksen oletusraporttia.</span><span class="sxs-lookup"><span data-stu-id="70446-105">This article describes the default report for income statements.</span></span> <span data-ttu-id="70446-106">Siinä myös kuvataan rakenneosat, jotka liittyvät tähän raporttiin.</span><span class="sxs-lookup"><span data-stu-id="70446-106">It also describes the building blocks that are associated with this report.</span></span> 
 
-<a name="default-income-statement-report"></a><span data-ttu-id="c58cc-107">Tuloslaskelman oletusraportti</span><span class="sxs-lookup"><span data-stu-id="c58cc-107">Default income statement report</span></span>
+<a name="default-income-statement-report"></a><span data-ttu-id="70446-107">Tuloslaskelman oletusraportti</span><span class="sxs-lookup"><span data-stu-id="70446-107">Default income statement report</span></span>
 -------------------------------
 
-| <span data-ttu-id="c58cc-108">Oletusraportti</span><span class="sxs-lookup"><span data-stu-id="c58cc-108">Default report</span></span>             | <span data-ttu-id="c58cc-109">Toiminnot</span><span class="sxs-lookup"><span data-stu-id="c58cc-109">What it does</span></span>                                                                                              |
+| <span data-ttu-id="70446-108">Oletusraportti</span><span class="sxs-lookup"><span data-stu-id="70446-108">Default report</span></span>             | <span data-ttu-id="70446-109">Toiminnot</span><span class="sxs-lookup"><span data-stu-id="70446-109">What it does</span></span>                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="c58cc-110">Tuloslaskelma – oletus</span><span class="sxs-lookup"><span data-stu-id="c58cc-110">Income Statement – Default</span></span> | <span data-ttu-id="c58cc-111">Sisältää organisaation tuottavuusnäkymän sekä kuluvalle kaudelle että vuoden alusta tähän asti.</span><span class="sxs-lookup"><span data-stu-id="c58cc-111">Provides a view of the organization’s profitability for the current period and also for the year to date.</span></span> |
+| <span data-ttu-id="70446-110">Tuloslaskelma – oletus</span><span class="sxs-lookup"><span data-stu-id="70446-110">Income Statement – Default</span></span> | <span data-ttu-id="70446-111">Sisältää organisaation tuottavuusnäkymän sekä kuluvalle kaudelle että vuoden alusta tähän asti.</span><span class="sxs-lookup"><span data-stu-id="70446-111">Provides a view of the organization’s profitability for the current period and also for the year to date.</span></span> |
 
-## <a name="building-blocks"></a><span data-ttu-id="c58cc-112">Rakenneosat</span><span class="sxs-lookup"><span data-stu-id="c58cc-112">Building blocks</span></span>
-<span data-ttu-id="c58cc-113">Tuloslaskelman talousraportissa käytetään seuraavia rakenneosia.</span><span class="sxs-lookup"><span data-stu-id="c58cc-113">The income statement financial report uses the following building blocks.</span></span>
+## <a name="building-blocks"></a><span data-ttu-id="70446-112">Rakenneosat</span><span class="sxs-lookup"><span data-stu-id="70446-112">Building blocks</span></span>
+<span data-ttu-id="70446-113">Tuloslaskelman talousraportissa käytetään seuraavia rakenneosia.</span><span class="sxs-lookup"><span data-stu-id="70446-113">The income statement financial report uses the following building blocks.</span></span>
 
-| <span data-ttu-id="c58cc-114">Oletusraportti</span><span class="sxs-lookup"><span data-stu-id="c58cc-114">Default report</span></span>             | <span data-ttu-id="c58cc-115">Rivimääritys</span><span class="sxs-lookup"><span data-stu-id="c58cc-115">Row definition</span></span>                     | <span data-ttu-id="c58cc-116">Sarakemääritys</span><span class="sxs-lookup"><span data-stu-id="c58cc-116">Column definition</span></span>          |
+| <span data-ttu-id="70446-114">Oletusraportti</span><span class="sxs-lookup"><span data-stu-id="70446-114">Default report</span></span>             | <span data-ttu-id="70446-115">Rivimääritys</span><span class="sxs-lookup"><span data-stu-id="70446-115">Row definition</span></span>                     | <span data-ttu-id="70446-116">Sarakemääritys</span><span class="sxs-lookup"><span data-stu-id="70446-116">Column definition</span></span>          |
 |----------------------------|------------------------------------|----------------------------|
-| <span data-ttu-id="c58cc-117">Tuloslaskelma - oletus</span><span class="sxs-lookup"><span data-stu-id="c58cc-117">Income Statement - Default</span></span> | <span data-ttu-id="c58cc-118">Yhteenvetotuloslaskelma - oletus</span><span class="sxs-lookup"><span data-stu-id="c58cc-118">Summary Income Statement - Default</span></span> | <span data-ttu-id="c58cc-119">Kausittainen ja vuoden alusta - oletusarvo</span><span class="sxs-lookup"><span data-stu-id="c58cc-119">Periodic and YTD - Default</span></span> |
+| <span data-ttu-id="70446-117">Tuloslaskelma - oletus</span><span class="sxs-lookup"><span data-stu-id="70446-117">Income Statement - Default</span></span> | <span data-ttu-id="70446-118">Yhteenvetotuloslaskelma - oletus</span><span class="sxs-lookup"><span data-stu-id="70446-118">Summary Income Statement - Default</span></span> | <span data-ttu-id="70446-119">Kausittainen ja vuoden alusta - oletusarvo</span><span class="sxs-lookup"><span data-stu-id="70446-119">Periodic and YTD - Default</span></span> |
 
-### <a name="row-definition"></a><span data-ttu-id="c58cc-120">Rivimääritys</span><span class="sxs-lookup"><span data-stu-id="c58cc-120">Row definition</span></span>
+### <a name="row-definition"></a><span data-ttu-id="70446-120">Rivimääritys</span><span class="sxs-lookup"><span data-stu-id="70446-120">Row definition</span></span>
 
-<span data-ttu-id="c58cc-121">Rivimääritys, yhteenvetotuloslaskelma – oletusarvo, sisältää osan perinteisen tuloslaskelman jokaiselle osalle.</span><span class="sxs-lookup"><span data-stu-id="c58cc-121">The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement.</span></span> <span data-ttu-id="c58cc-122">Päätilin luokan dimensiota käytetään tämän rivimäärityksen muodostamisessa.</span><span class="sxs-lookup"><span data-stu-id="c58cc-122">The Main Account Category dimension is used to build this row definition.</span></span> <span data-ttu-id="c58cc-123">Tämän vuoksi kuka tahansa voi luoda raportin ilman muutosten tekemistä.</span><span class="sxs-lookup"><span data-stu-id="c58cc-123">Therefore, anyone can generate the report without having to make any modifications.</span></span>
+<span data-ttu-id="70446-121">Rivimääritys, yhteenvetotuloslaskelma – oletusarvo, sisältää osan perinteisen tuloslaskelman jokaiselle osalle.</span><span class="sxs-lookup"><span data-stu-id="70446-121">The row definition, Summary Income Statement – Default, contains a section for each part of a traditional income statement.</span></span> <span data-ttu-id="70446-122">Päätilin luokan dimensiota käytetään tämän rivimäärityksen muodostamisessa.</span><span class="sxs-lookup"><span data-stu-id="70446-122">The Main Account Category dimension is used to build this row definition.</span></span> <span data-ttu-id="70446-123">Tämän vuoksi kuka tahansa voi luoda raportin ilman muutosten tekemistä.</span><span class="sxs-lookup"><span data-stu-id="70446-123">Therefore, anyone can generate the report without having to make any modifications.</span></span>
 
-### <a name="column-definition"></a><span data-ttu-id="c58cc-124">Sarakemääritys</span><span class="sxs-lookup"><span data-stu-id="c58cc-124">Column Definition</span></span>
+### <a name="column-definition"></a><span data-ttu-id="70446-124">Sarakemääritys</span><span class="sxs-lookup"><span data-stu-id="70446-124">Column Definition</span></span>
 
-<span data-ttu-id="c58cc-125">Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksityiskohtaisia tasoja ja taloushallinnon tietoja.</span><span class="sxs-lookup"><span data-stu-id="c58cc-125">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
+<span data-ttu-id="70446-125">Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksityiskohtaisia tasoja ja taloushallinnon tietoja.</span><span class="sxs-lookup"><span data-stu-id="70446-125">The column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
 
--   <span data-ttu-id="c58cc-126">**Kausittainen ja vuoden alusta – oletussaraketyypit:**</span><span class="sxs-lookup"><span data-stu-id="c58cc-126">**Periodic and YTD – Default column types:**</span></span>
-    -   <span data-ttu-id="c58cc-127">**DESC** – rivimäärityksen kuvaus</span><span class="sxs-lookup"><span data-stu-id="c58cc-127">**DESC** – The description from the row definition</span></span>
-    -   <span data-ttu-id="c58cc-128">**FD** – nykyisen kauden taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="c58cc-128">**FD** – Financial data for the current period</span></span>
-    -   <span data-ttu-id="c58cc-129">**FD** – taloushallinnon tiedot vuoden alusta</span><span class="sxs-lookup"><span data-stu-id="c58cc-129">**FD** – Financial data for the year to date</span></span>
+-   <span data-ttu-id="70446-126">**Kausittainen ja vuoden alusta – oletussaraketyypit:**</span><span class="sxs-lookup"><span data-stu-id="70446-126">**Periodic and YTD – Default column types:**</span></span>
+    -   <span data-ttu-id="70446-127">**DESC** – rivimäärityksen kuvaus</span><span class="sxs-lookup"><span data-stu-id="70446-127">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="70446-128">**FD** – nykyisen kauden taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="70446-128">**FD** – Financial data for the current period</span></span>
+    -   <span data-ttu-id="70446-129">**FD** – taloushallinnon tiedot vuoden alusta</span><span class="sxs-lookup"><span data-stu-id="70446-129">**FD** – Financial data for the year to date</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="c58cc-130">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="c58cc-130">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="70446-130">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="70446-130">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="c58cc-131">Talousraportointi</span><span class="sxs-lookup"><span data-stu-id="c58cc-131">Financial reporting</span></span>](financial-reporting-getting-started.md)
+[<span data-ttu-id="70446-131">Talousraportointi</span><span class="sxs-lookup"><span data-stu-id="70446-131">Financial reporting</span></span>](financial-reporting-getting-started.md)
 
-[<span data-ttu-id="c58cc-132">Raporttien näyttäminen</span><span class="sxs-lookup"><span data-stu-id="c58cc-132">View financial reports</span></span>](view-financial-reports.md)
+[<span data-ttu-id="70446-132">Raporttien näyttäminen</span><span class="sxs-lookup"><span data-stu-id="70446-132">View financial reports</span></span>](view-financial-reports.md)
 
-[<span data-ttu-id="c58cc-133">Dynamicsin talousraportointi -blogi</span><span class="sxs-lookup"><span data-stu-id="c58cc-133">Dynamics Financial Reporting Blog</span></span>](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
+[<span data-ttu-id="70446-133">Dynamicsin talousraportointi -blogi</span><span class="sxs-lookup"><span data-stu-id="70446-133">Dynamics Financial Reporting Blog</span></span>](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

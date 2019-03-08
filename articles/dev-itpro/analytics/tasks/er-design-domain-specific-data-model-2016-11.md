@@ -1,13 +1,13 @@
---- 
+---
 title: ER Suunnittele toimialueen erityistietomalli
-description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköiselle raportoinnin (ER) konfiguraation lähteen, joka sisältää sähköisen maksun asiakirjojen tietomallin."
+description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköiselle raportoinnin (ER) konfiguraation lähteen, joka sisältää sähköisen maksun asiakirjojen tietomallin.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog, ERDataContainerDescriptorReferenceSwitchDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,200 +16,199 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0debb7276c4f3e41c2e85ce6bc63b8df5bc159f8
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348408"
 ---
-# <a name="er-design-domain-specific-data-model"></a><span data-ttu-id="af419-103">ER Suunnittele toimialueen erityistietomalli</span><span class="sxs-lookup"><span data-stu-id="af419-103">ER Design domain specific data model</span></span>
+# <a name="er-design-domain-specific-data-model"></a><span data-ttu-id="b0d10-103">ER Suunnittele toimialueen erityistietomalli</span><span class="sxs-lookup"><span data-stu-id="b0d10-103">ER Design domain specific data model</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="af419-104">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköiselle raportoinnin (ER) konfiguraation lähteen, joka sisältää sähköisen maksun asiakirjojen tietomallin.</span><span class="sxs-lookup"><span data-stu-id="af419-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents.</span></span> <span data-ttu-id="af419-105">Tietomallia käytetään myöhemmin tietolähteenä, kun maksuasiakirjojen muoto määritetään.</span><span class="sxs-lookup"><span data-stu-id="af419-105">This data model will later be used as a data source when you create the format of the payment documents.</span></span>
+<span data-ttu-id="b0d10-104">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköiselle raportoinnin (ER) konfiguraation lähteen, joka sisältää sähköisen maksun asiakirjojen tietomallin.</span><span class="sxs-lookup"><span data-stu-id="b0d10-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents.</span></span> <span data-ttu-id="b0d10-105">Tietomallia käytetään myöhemmin tietolähteenä, kun maksuasiakirjojen muoto määritetään.</span><span class="sxs-lookup"><span data-stu-id="b0d10-105">This data model will later be used as a data source when you create the format of the payment documents.</span></span>
 
 
 
-<span data-ttu-id="af419-106">Tässä esimerkissä luodaan konfiguraatio malliyritykselle Litware, Inc. Nämä vaiheet voidaan suorittaa mille tahansa yritykselle, koska kaikki yritykset jakavat ER-konfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="af419-106">In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies.</span></span> <span data-ttu-id="af419-107">Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista.</span><span class="sxs-lookup"><span data-stu-id="af419-107">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.</span></span>
+<span data-ttu-id="b0d10-106">Tässä esimerkissä luodaan konfiguraatio malliyritykselle Litware, Inc. Nämä vaiheet voidaan suorittaa mille tahansa yritykselle, koska kaikki yritykset jakavat ER-konfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="b0d10-106">In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies.</span></span> <span data-ttu-id="b0d10-107">Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista.</span><span class="sxs-lookup"><span data-stu-id="b0d10-107">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.</span></span>
 
-1. <span data-ttu-id="af419-108">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="af419-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-    * <span data-ttu-id="af419-109">Valitse malliyrityksen Litware, Inc:n konfiguraation lähde.</span><span class="sxs-lookup"><span data-stu-id="af419-109">Select the configuration provider for sample company, ‘Litware, Inc.’</span></span> <span data-ttu-id="af419-110">Jos lähde ei ole näkyvissä, suorita ensin Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet.</span><span class="sxs-lookup"><span data-stu-id="af419-110">If you don’t see this configuration provider, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.</span></span>  
-2. <span data-ttu-id="af419-111">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="af419-111">Click Reporting configurations.</span></span>
-    * <span data-ttu-id="af419-112">Luodaan konfiguraatio, joka sisältää tietomallin sähköisen maksun asiakirjoja varten.</span><span class="sxs-lookup"><span data-stu-id="af419-112">You will create a configuration that contains a data model for electronic payment documents.</span></span> <span data-ttu-id="af419-113">Tietomallia käytetään myöhemmin tietolähteenä, kun maksujen asiakirjojen muoto määritetään.</span><span class="sxs-lookup"><span data-stu-id="af419-113">This data model will be used later as a data source when you create the format for the payment documents.</span></span>  
+1. <span data-ttu-id="b0d10-108">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="b0d10-109">Valitse malliyrityksen Litware, Inc:n konfiguraation lähde.</span><span class="sxs-lookup"><span data-stu-id="b0d10-109">Select the configuration provider for sample company, ‘Litware, Inc.’</span></span> <span data-ttu-id="b0d10-110">Jos lähde ei ole näkyvissä, suorita ensin Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet.</span><span class="sxs-lookup"><span data-stu-id="b0d10-110">If you don’t see this configuration provider, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.</span></span>  
+2. <span data-ttu-id="b0d10-111">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="b0d10-111">Click Reporting configurations.</span></span>
+    * <span data-ttu-id="b0d10-112">Luodaan konfiguraatio, joka sisältää tietomallin sähköisen maksun asiakirjoja varten.</span><span class="sxs-lookup"><span data-stu-id="b0d10-112">You will create a configuration that contains a data model for electronic payment documents.</span></span> <span data-ttu-id="b0d10-113">Tietomallia käytetään myöhemmin tietolähteenä, kun maksujen asiakirjojen muoto määritetään.</span><span class="sxs-lookup"><span data-stu-id="b0d10-113">This data model will be used later as a data source when you create the format for the payment documents.</span></span>  
 
-## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="af419-114">Uuden tietomallin konfiguraation luominen</span><span class="sxs-lookup"><span data-stu-id="af419-114">Create a new data model configuration</span></span>
-1. <span data-ttu-id="af419-115">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="af419-115">Click Create configuration to open the drop dialog.</span></span>
-2. <span data-ttu-id="af419-116">Syötä Nimi-kenttään Maksut (yksinkertaistettu malli).</span><span class="sxs-lookup"><span data-stu-id="af419-116">In the Name field, type 'Payments (simplified model)'.</span></span>
-    * <span data-ttu-id="af419-117">Maksut (yksinkertaistettu malli)</span><span class="sxs-lookup"><span data-stu-id="af419-117">Payments (simplified model)</span></span>  
-3. <span data-ttu-id="af419-118">Syötä Kuvaus-kenttään Maksumallin konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="af419-118">In the Description field, type 'Payment model configuration'.</span></span>
-    * <span data-ttu-id="af419-119">Maksumallin konfiguraatio</span><span class="sxs-lookup"><span data-stu-id="af419-119">Payment model configuration</span></span>  
-    * <span data-ttu-id="af419-120">Aktiivinen konfiguraation lähde syötetään tässä automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="af419-120">The active configuration provider is automatically entered here.</span></span> <span data-ttu-id="af419-121">Tämä lähde voi ylläpitää tätä konfiguraatiota.</span><span class="sxs-lookup"><span data-stu-id="af419-121">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="af419-122">Muut lähteet voivat käyttää tätä konfiguraatiota, mutta eivät ylläpitää sitä.</span><span class="sxs-lookup"><span data-stu-id="af419-122">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
-4. <span data-ttu-id="af419-123">Suorita konfiguraation luontitehtävä valitsemalla Luo konfiguraatio</span><span class="sxs-lookup"><span data-stu-id="af419-123">Click ‘Create configuration’ button to complete the configuration creation task</span></span>
+## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="b0d10-114">Uuden tietomallin konfiguraation luominen</span><span class="sxs-lookup"><span data-stu-id="b0d10-114">Create a new data model configuration</span></span>
+1. <span data-ttu-id="b0d10-115">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-115">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="b0d10-116">Syötä Nimi-kenttään Maksut (yksinkertaistettu malli).</span><span class="sxs-lookup"><span data-stu-id="b0d10-116">In the Name field, type 'Payments (simplified model)'.</span></span>
+    * <span data-ttu-id="b0d10-117">Maksut (yksinkertaistettu malli)</span><span class="sxs-lookup"><span data-stu-id="b0d10-117">Payments (simplified model)</span></span>  
+3. <span data-ttu-id="b0d10-118">Syötä Kuvaus-kenttään Maksumallin konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="b0d10-118">In the Description field, type 'Payment model configuration'.</span></span>
+    * <span data-ttu-id="b0d10-119">Maksumallin konfiguraatio</span><span class="sxs-lookup"><span data-stu-id="b0d10-119">Payment model configuration</span></span>  
+    * <span data-ttu-id="b0d10-120">Aktiivinen konfiguraation lähde syötetään tässä automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="b0d10-120">The active configuration provider is automatically entered here.</span></span> <span data-ttu-id="b0d10-121">Tämä lähde voi ylläpitää tätä konfiguraatiota.</span><span class="sxs-lookup"><span data-stu-id="b0d10-121">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="b0d10-122">Muut lähteet voivat käyttää tätä konfiguraatiota, mutta eivät ylläpitää sitä.</span><span class="sxs-lookup"><span data-stu-id="b0d10-122">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
+4. <span data-ttu-id="b0d10-123">Suorita konfiguraation luontitehtävä valitsemalla Luo konfiguraatio</span><span class="sxs-lookup"><span data-stu-id="b0d10-123">Click ‘Create configuration’ button to complete the configuration creation task</span></span>
 
-## <a name="create-a-data-model"></a><span data-ttu-id="af419-124">Tietomallin luominen</span><span class="sxs-lookup"><span data-stu-id="af419-124">Create a data model</span></span>
-    * <span data-ttu-id="af419-125">Olet luomassa valitulle määritykselle uutta tietomallia.</span><span class="sxs-lookup"><span data-stu-id="af419-125">You're creating a new data model for the selected configuration.</span></span> <span data-ttu-id="af419-126">Konfiguraation version tilaksi tulee Luonnos.</span><span class="sxs-lookup"><span data-stu-id="af419-126">This configuration version will have a status of Draft.</span></span>  
-1. <span data-ttu-id="af419-127">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="af419-127">Click Designer.</span></span>
+## <a name="create-a-data-model"></a><span data-ttu-id="b0d10-124">Tietomallin luominen</span><span class="sxs-lookup"><span data-stu-id="b0d10-124">Create a data model</span></span>
+    * <span data-ttu-id="b0d10-125">Olet luomassa valitulle määritykselle uutta tietomallia.</span><span class="sxs-lookup"><span data-stu-id="b0d10-125">You're creating a new data model for the selected configuration.</span></span> <span data-ttu-id="b0d10-126">Konfiguraation version tilaksi tulee Luonnos.</span><span class="sxs-lookup"><span data-stu-id="b0d10-126">This configuration version will have a status of Draft.</span></span>  
+1. <span data-ttu-id="b0d10-127">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="b0d10-127">Click Designer.</span></span>
 
-## <a name="define-the-structure-of-a-party-participating-in-a-payment-process"></a><span data-ttu-id="af419-128">Maksuprosessiin osallistuvan osapuolen rakenteen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="af419-128">Define the structure of a party participating in a payment process</span></span>
-1. <span data-ttu-id="af419-129">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-129">Click New to open the drop dialog.</span></span>
-2. <span data-ttu-id="af419-130">Kirjoita Nimi-kenttään Osapuoli.</span><span class="sxs-lookup"><span data-stu-id="af419-130">In the Name field, type 'Party'.</span></span>
-    * <span data-ttu-id="af419-131">Osapuoli</span><span class="sxs-lookup"><span data-stu-id="af419-131">Party</span></span>  
-3. <span data-ttu-id="af419-132">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-132">Click Add.</span></span>
-4. <span data-ttu-id="af419-133">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-133">Click New to open the drop dialog.</span></span>
-5. <span data-ttu-id="af419-134">Syötä Nimi-kenttään Nimi.</span><span class="sxs-lookup"><span data-stu-id="af419-134">In the Name field, type 'Name'.</span></span>
-    * <span data-ttu-id="af419-135">Nimi</span><span class="sxs-lookup"><span data-stu-id="af419-135">Name</span></span>  
-6. <span data-ttu-id="af419-136">Valitse Nimiketyyppi-kentässä Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="af419-136">In the Item type field, select 'String'.</span></span>
-7. <span data-ttu-id="af419-137">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-137">Click Add.</span></span>
-8. <span data-ttu-id="af419-138">Kirjoita Etsi-kenttään "Osapuoli".</span><span class="sxs-lookup"><span data-stu-id="af419-138">In the Find field, type 'Party'.</span></span>
-    * <span data-ttu-id="af419-139">Osapuoli</span><span class="sxs-lookup"><span data-stu-id="af419-139">Party</span></span>  
-9. <span data-ttu-id="af419-140">Valitse Etsi edellinen.</span><span class="sxs-lookup"><span data-stu-id="af419-140">Click Find previous.</span></span>
+## <a name="define-the-structure-of-a-party-participating-in-a-payment-process"></a><span data-ttu-id="b0d10-128">Maksuprosessiin osallistuvan osapuolen rakenteen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="b0d10-128">Define the structure of a party participating in a payment process</span></span>
+1. <span data-ttu-id="b0d10-129">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-129">Click New to open the drop dialog.</span></span>
+2. <span data-ttu-id="b0d10-130">Kirjoita Nimi-kenttään Osapuoli.</span><span class="sxs-lookup"><span data-stu-id="b0d10-130">In the Name field, type 'Party'.</span></span>
+    * <span data-ttu-id="b0d10-131">Osapuoli</span><span class="sxs-lookup"><span data-stu-id="b0d10-131">Party</span></span>  
+3. <span data-ttu-id="b0d10-132">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-132">Click Add.</span></span>
+4. <span data-ttu-id="b0d10-133">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-133">Click New to open the drop dialog.</span></span>
+5. <span data-ttu-id="b0d10-134">Syötä Nimi-kenttään Nimi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-134">In the Name field, type 'Name'.</span></span>
+    * <span data-ttu-id="b0d10-135">Nimi</span><span class="sxs-lookup"><span data-stu-id="b0d10-135">Name</span></span>  
+6. <span data-ttu-id="b0d10-136">Valitse Nimiketyyppi-kentässä Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="b0d10-136">In the Item type field, select 'String'.</span></span>
+7. <span data-ttu-id="b0d10-137">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-137">Click Add.</span></span>
+8. <span data-ttu-id="b0d10-138">Kirjoita Etsi-kenttään "Osapuoli".</span><span class="sxs-lookup"><span data-stu-id="b0d10-138">In the Find field, type 'Party'.</span></span>
+    * <span data-ttu-id="b0d10-139">Osapuoli</span><span class="sxs-lookup"><span data-stu-id="b0d10-139">Party</span></span>  
+9. <span data-ttu-id="b0d10-140">Valitse Etsi edellinen.</span><span class="sxs-lookup"><span data-stu-id="b0d10-140">Click Find previous.</span></span>
 
-## <a name="define-the-bank-structure-for-this-model"></a><span data-ttu-id="af419-141">Pankkirakenteen määrittäminen tälle mallille</span><span class="sxs-lookup"><span data-stu-id="af419-141">Define the bank structure for this model</span></span>
-1. <span data-ttu-id="af419-142">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-142">Click New to open the drop dialog.</span></span>
-2. <span data-ttu-id="af419-143">Syötä Nimi-kenttään Agentti.</span><span class="sxs-lookup"><span data-stu-id="af419-143">In the Name field, type 'Agent'.</span></span>
-    * <span data-ttu-id="af419-144">Edustaja</span><span class="sxs-lookup"><span data-stu-id="af419-144">Agent</span></span>  
-3. <span data-ttu-id="af419-145">Valitse Nimiketyyppi-kentässä Tietue.</span><span class="sxs-lookup"><span data-stu-id="af419-145">In the Item type field, select 'Record'.</span></span>
-4. <span data-ttu-id="af419-146">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-146">Click Add.</span></span>
-5. <span data-ttu-id="af419-147">Kirjoita Kuvaus-kenttään "Rahoituslaitos (esimerkiksi pankki), joka hoitaa osapuolen (maksajan tai laskuttajan) tiliä".</span><span class="sxs-lookup"><span data-stu-id="af419-147">In the Description field, enter 'Financial institution (for instance, a bank) servicing an account for the party (debtor/creditor).'.</span></span>
-    * <span data-ttu-id="af419-148">Rahoituslaitos (esimerkiksi pankki), joka hoitaa osapuolen (maksajan tai laskuttajan) tiliä.</span><span class="sxs-lookup"><span data-stu-id="af419-148">Financial institution (for instance, a bank) servicing an account for the party (debtor/creditor).</span></span>  
-6. <span data-ttu-id="af419-149">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-149">Click New to open the drop dialog.</span></span>
-7. <span data-ttu-id="af419-150">Syötä Nimi-kenttään Nimi.</span><span class="sxs-lookup"><span data-stu-id="af419-150">In the Name field, type 'Name'.</span></span>
-    * <span data-ttu-id="af419-151">Nimi</span><span class="sxs-lookup"><span data-stu-id="af419-151">Name</span></span>  
-8. <span data-ttu-id="af419-152">Valitse Nimiketyyppi-kentässä Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="af419-152">In the Item type field, select 'String'.</span></span>
-9. <span data-ttu-id="af419-153">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-153">Click Add.</span></span>
-10. <span data-ttu-id="af419-154">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-154">Click New to open the drop dialog.</span></span>
-11. <span data-ttu-id="af419-155">Syötä Nimi-kenttään SWIFT.</span><span class="sxs-lookup"><span data-stu-id="af419-155">In the Name field, type 'SWIFT'.</span></span>
-    * <span data-ttu-id="af419-156">SWIFT-koodi</span><span class="sxs-lookup"><span data-stu-id="af419-156">SWIFT</span></span>  
-12. <span data-ttu-id="af419-157">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-157">Click Add.</span></span>
-13. <span data-ttu-id="af419-158">Kirjoita Kuvaus-kenttään "BIC-koodi".</span><span class="sxs-lookup"><span data-stu-id="af419-158">In the Description field, enter 'Bank identification code'.</span></span>
-    * <span data-ttu-id="af419-159">BIC-koodi</span><span class="sxs-lookup"><span data-stu-id="af419-159">Bank identification code</span></span>  
-14. <span data-ttu-id="af419-160">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-160">Click New to open the drop dialog.</span></span>
-15. <span data-ttu-id="af419-161">Syötä Nimi-kenttään RoutingNumber.</span><span class="sxs-lookup"><span data-stu-id="af419-161">In the Name field, type 'RoutingNumber'.</span></span>
-    * <span data-ttu-id="af419-162">RoutingNumber</span><span class="sxs-lookup"><span data-stu-id="af419-162">RoutingNumber</span></span>  
-16. <span data-ttu-id="af419-163">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-163">Click Add.</span></span>
-17. <span data-ttu-id="af419-164">Kirjoita Kuvaus-kenttään "Pankkikoodi".</span><span class="sxs-lookup"><span data-stu-id="af419-164">In the Description field, enter 'Routing number'.</span></span>
-    * <span data-ttu-id="af419-165">Pankkikoodi</span><span class="sxs-lookup"><span data-stu-id="af419-165">Routing number</span></span>  
-18. <span data-ttu-id="af419-166">Valitse Etsi edellinen.</span><span class="sxs-lookup"><span data-stu-id="af419-166">Click Find previous.</span></span>
+## <a name="define-the-bank-structure-for-this-model"></a><span data-ttu-id="b0d10-141">Pankkirakenteen määrittäminen tälle mallille</span><span class="sxs-lookup"><span data-stu-id="b0d10-141">Define the bank structure for this model</span></span>
+1. <span data-ttu-id="b0d10-142">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-142">Click New to open the drop dialog.</span></span>
+2. <span data-ttu-id="b0d10-143">Syötä Nimi-kenttään Agentti.</span><span class="sxs-lookup"><span data-stu-id="b0d10-143">In the Name field, type 'Agent'.</span></span>
+    * <span data-ttu-id="b0d10-144">Edustaja</span><span class="sxs-lookup"><span data-stu-id="b0d10-144">Agent</span></span>  
+3. <span data-ttu-id="b0d10-145">Valitse Nimiketyyppi-kentässä Tietue.</span><span class="sxs-lookup"><span data-stu-id="b0d10-145">In the Item type field, select 'Record'.</span></span>
+4. <span data-ttu-id="b0d10-146">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-146">Click Add.</span></span>
+5. <span data-ttu-id="b0d10-147">Kirjoita Kuvaus-kenttään "Rahoituslaitos (esimerkiksi pankki), joka hoitaa osapuolen (maksajan tai laskuttajan) tiliä".</span><span class="sxs-lookup"><span data-stu-id="b0d10-147">In the Description field, enter 'Financial institution (for instance, a bank) servicing an account for the party (debtor/creditor).'.</span></span>
+    * <span data-ttu-id="b0d10-148">Rahoituslaitos (esimerkiksi pankki), joka hoitaa osapuolen (maksajan tai laskuttajan) tiliä.</span><span class="sxs-lookup"><span data-stu-id="b0d10-148">Financial institution (for instance, a bank) servicing an account for the party (debtor/creditor).</span></span>  
+6. <span data-ttu-id="b0d10-149">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-149">Click New to open the drop dialog.</span></span>
+7. <span data-ttu-id="b0d10-150">Syötä Nimi-kenttään Nimi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-150">In the Name field, type 'Name'.</span></span>
+    * <span data-ttu-id="b0d10-151">Nimi</span><span class="sxs-lookup"><span data-stu-id="b0d10-151">Name</span></span>  
+8. <span data-ttu-id="b0d10-152">Valitse Nimiketyyppi-kentässä Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="b0d10-152">In the Item type field, select 'String'.</span></span>
+9. <span data-ttu-id="b0d10-153">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-153">Click Add.</span></span>
+10. <span data-ttu-id="b0d10-154">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-154">Click New to open the drop dialog.</span></span>
+11. <span data-ttu-id="b0d10-155">Syötä Nimi-kenttään SWIFT.</span><span class="sxs-lookup"><span data-stu-id="b0d10-155">In the Name field, type 'SWIFT'.</span></span>
+    * <span data-ttu-id="b0d10-156">SWIFT-koodi</span><span class="sxs-lookup"><span data-stu-id="b0d10-156">SWIFT</span></span>  
+12. <span data-ttu-id="b0d10-157">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-157">Click Add.</span></span>
+13. <span data-ttu-id="b0d10-158">Kirjoita Kuvaus-kenttään "BIC-koodi".</span><span class="sxs-lookup"><span data-stu-id="b0d10-158">In the Description field, enter 'Bank identification code'.</span></span>
+    * <span data-ttu-id="b0d10-159">BIC-koodi</span><span class="sxs-lookup"><span data-stu-id="b0d10-159">Bank identification code</span></span>  
+14. <span data-ttu-id="b0d10-160">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-160">Click New to open the drop dialog.</span></span>
+15. <span data-ttu-id="b0d10-161">Syötä Nimi-kenttään RoutingNumber.</span><span class="sxs-lookup"><span data-stu-id="b0d10-161">In the Name field, type 'RoutingNumber'.</span></span>
+    * <span data-ttu-id="b0d10-162">RoutingNumber</span><span class="sxs-lookup"><span data-stu-id="b0d10-162">RoutingNumber</span></span>  
+16. <span data-ttu-id="b0d10-163">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-163">Click Add.</span></span>
+17. <span data-ttu-id="b0d10-164">Kirjoita Kuvaus-kenttään "Pankkikoodi".</span><span class="sxs-lookup"><span data-stu-id="b0d10-164">In the Description field, enter 'Routing number'.</span></span>
+    * <span data-ttu-id="b0d10-165">Pankkikoodi</span><span class="sxs-lookup"><span data-stu-id="b0d10-165">Routing number</span></span>  
+18. <span data-ttu-id="b0d10-166">Valitse Etsi edellinen.</span><span class="sxs-lookup"><span data-stu-id="b0d10-166">Click Find previous.</span></span>
 
-## <a name="define-the-bank-account-structure-for-this-model"></a><span data-ttu-id="af419-167">Pankkitilirakenteen määrittäminen tälle mallille</span><span class="sxs-lookup"><span data-stu-id="af419-167">Define the bank account structure for this model</span></span>
-1. <span data-ttu-id="af419-168">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-168">Click New to open the drop dialog.</span></span>
-2. <span data-ttu-id="af419-169">Syötä Nimi-kenttään Tili.</span><span class="sxs-lookup"><span data-stu-id="af419-169">In the Name field, type 'Account'.</span></span>
-    * <span data-ttu-id="af419-170">Tili</span><span class="sxs-lookup"><span data-stu-id="af419-170">Account</span></span>  
-3. <span data-ttu-id="af419-171">Valitse Nimiketyyppi-kentässä Tietue.</span><span class="sxs-lookup"><span data-stu-id="af419-171">In the Item type field, select 'Record'.</span></span>
-4. <span data-ttu-id="af419-172">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-172">Click Add.</span></span>
-5. <span data-ttu-id="af419-173">Kirjoita Kuvaus-kenttään "Osapuolen tilin tunnus rahoituslaitoksessa (kuten pankissa)".</span><span class="sxs-lookup"><span data-stu-id="af419-173">In the Description field, enter 'Identification of an account of a party in a financial institution (for instance, a bank).'.</span></span>
-    * <span data-ttu-id="af419-174">Osapuolen tilin tunnus rahoituslaitoksessa (kuten pankissa).</span><span class="sxs-lookup"><span data-stu-id="af419-174">Identification of an account of a party in a financial institution (for instance, a bank).</span></span>  
-6. <span data-ttu-id="af419-175">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-175">Click New to open the drop dialog.</span></span>
-7. <span data-ttu-id="af419-176">Syötä Nimi-kenttään Valuutta.</span><span class="sxs-lookup"><span data-stu-id="af419-176">In the Name field, type 'Currency'.</span></span>
-    * <span data-ttu-id="af419-177">Valuutta</span><span class="sxs-lookup"><span data-stu-id="af419-177">Currency</span></span>  
-8. <span data-ttu-id="af419-178">Valitse Nimiketyyppi-kentässä Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="af419-178">In the Item type field, select 'String'.</span></span>
-9. <span data-ttu-id="af419-179">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-179">Click Add.</span></span>
-10. <span data-ttu-id="af419-180">Kirjoita Kuvaus-kenttään "Valuuttakoodi".</span><span class="sxs-lookup"><span data-stu-id="af419-180">In the Description field, enter 'Currency code'.</span></span>
-    * <span data-ttu-id="af419-181">Valuuttakoodi</span><span class="sxs-lookup"><span data-stu-id="af419-181">Currency code</span></span>  
-11. <span data-ttu-id="af419-182">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-182">Click New to open the drop dialog.</span></span>
-12. <span data-ttu-id="af419-183">Syötä Nimi-kenttään Numero.</span><span class="sxs-lookup"><span data-stu-id="af419-183">In the Name field, type 'Number'.</span></span>
-    * <span data-ttu-id="af419-184">Numero</span><span class="sxs-lookup"><span data-stu-id="af419-184">Number</span></span>  
-13. <span data-ttu-id="af419-185">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-185">Click Add.</span></span>
-14. <span data-ttu-id="af419-186">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-186">Click New to open the drop dialog.</span></span>
-15. <span data-ttu-id="af419-187">Syötä Nimi-kenttään IBAN.</span><span class="sxs-lookup"><span data-stu-id="af419-187">In the Name field, type 'IBAN'.</span></span>
-    * <span data-ttu-id="af419-188">IBAN-tilinumero</span><span class="sxs-lookup"><span data-stu-id="af419-188">IBAN</span></span>  
-16. <span data-ttu-id="af419-189">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-189">Click Add.</span></span>
-17. <span data-ttu-id="af419-190">Kirjoita Kuvaus-kenttään "Kansainvälinen tilinumero (IBAN)".</span><span class="sxs-lookup"><span data-stu-id="af419-190">In the Description field, enter 'International bank account number'.</span></span>
-    * <span data-ttu-id="af419-191">Kansainvälinen tilinumero (IBAN)</span><span class="sxs-lookup"><span data-stu-id="af419-191">International bank account number</span></span>  
+## <a name="define-the-bank-account-structure-for-this-model"></a><span data-ttu-id="b0d10-167">Pankkitilirakenteen määrittäminen tälle mallille</span><span class="sxs-lookup"><span data-stu-id="b0d10-167">Define the bank account structure for this model</span></span>
+1. <span data-ttu-id="b0d10-168">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-168">Click New to open the drop dialog.</span></span>
+2. <span data-ttu-id="b0d10-169">Syötä Nimi-kenttään Tili.</span><span class="sxs-lookup"><span data-stu-id="b0d10-169">In the Name field, type 'Account'.</span></span>
+    * <span data-ttu-id="b0d10-170">Tili</span><span class="sxs-lookup"><span data-stu-id="b0d10-170">Account</span></span>  
+3. <span data-ttu-id="b0d10-171">Valitse Nimiketyyppi-kentässä Tietue.</span><span class="sxs-lookup"><span data-stu-id="b0d10-171">In the Item type field, select 'Record'.</span></span>
+4. <span data-ttu-id="b0d10-172">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-172">Click Add.</span></span>
+5. <span data-ttu-id="b0d10-173">Kirjoita Kuvaus-kenttään "Osapuolen tilin tunnus rahoituslaitoksessa (kuten pankissa)".</span><span class="sxs-lookup"><span data-stu-id="b0d10-173">In the Description field, enter 'Identification of an account of a party in a financial institution (for instance, a bank).'.</span></span>
+    * <span data-ttu-id="b0d10-174">Osapuolen tilin tunnus rahoituslaitoksessa (kuten pankissa).</span><span class="sxs-lookup"><span data-stu-id="b0d10-174">Identification of an account of a party in a financial institution (for instance, a bank).</span></span>  
+6. <span data-ttu-id="b0d10-175">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-175">Click New to open the drop dialog.</span></span>
+7. <span data-ttu-id="b0d10-176">Syötä Nimi-kenttään Valuutta.</span><span class="sxs-lookup"><span data-stu-id="b0d10-176">In the Name field, type 'Currency'.</span></span>
+    * <span data-ttu-id="b0d10-177">Valuutta</span><span class="sxs-lookup"><span data-stu-id="b0d10-177">Currency</span></span>  
+8. <span data-ttu-id="b0d10-178">Valitse Nimiketyyppi-kentässä Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="b0d10-178">In the Item type field, select 'String'.</span></span>
+9. <span data-ttu-id="b0d10-179">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-179">Click Add.</span></span>
+10. <span data-ttu-id="b0d10-180">Kirjoita Kuvaus-kenttään "Valuuttakoodi".</span><span class="sxs-lookup"><span data-stu-id="b0d10-180">In the Description field, enter 'Currency code'.</span></span>
+    * <span data-ttu-id="b0d10-181">Valuuttakoodi</span><span class="sxs-lookup"><span data-stu-id="b0d10-181">Currency code</span></span>  
+11. <span data-ttu-id="b0d10-182">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-182">Click New to open the drop dialog.</span></span>
+12. <span data-ttu-id="b0d10-183">Syötä Nimi-kenttään Numero.</span><span class="sxs-lookup"><span data-stu-id="b0d10-183">In the Name field, type 'Number'.</span></span>
+    * <span data-ttu-id="b0d10-184">Numero</span><span class="sxs-lookup"><span data-stu-id="b0d10-184">Number</span></span>  
+13. <span data-ttu-id="b0d10-185">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-185">Click Add.</span></span>
+14. <span data-ttu-id="b0d10-186">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-186">Click New to open the drop dialog.</span></span>
+15. <span data-ttu-id="b0d10-187">Syötä Nimi-kenttään IBAN.</span><span class="sxs-lookup"><span data-stu-id="b0d10-187">In the Name field, type 'IBAN'.</span></span>
+    * <span data-ttu-id="b0d10-188">IBAN-tilinumero</span><span class="sxs-lookup"><span data-stu-id="b0d10-188">IBAN</span></span>  
+16. <span data-ttu-id="b0d10-189">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-189">Click Add.</span></span>
+17. <span data-ttu-id="b0d10-190">Kirjoita Kuvaus-kenttään "Kansainvälinen tilinumero (IBAN)".</span><span class="sxs-lookup"><span data-stu-id="b0d10-190">In the Description field, enter 'International bank account number'.</span></span>
+    * <span data-ttu-id="b0d10-191">Kansainvälinen tilinumero (IBAN)</span><span class="sxs-lookup"><span data-stu-id="b0d10-191">International bank account number</span></span>  
 
-## <a name="define-the-payment-message-structure-for-credit-transfer-payment-type"></a><span data-ttu-id="af419-192">Tilisiirtomaksun tyypin maksuviestirakenteen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="af419-192">Define the payment message structure for credit transfer payment type</span></span>
-1. <span data-ttu-id="af419-193">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-193">Click New to open the drop dialog.</span></span>
-2. <span data-ttu-id="af419-194">Kirjoita Uusi solmu muodossa -kenttään "Mallin juuri".</span><span class="sxs-lookup"><span data-stu-id="af419-194">In the New node as a field, enter 'Model root'.</span></span>
-3. <span data-ttu-id="af419-195">Syötä Nimi-kenttään CustomerCreditTransferInitiation.</span><span class="sxs-lookup"><span data-stu-id="af419-195">In the Name field, type 'CustomerCreditTransferInitiation'.</span></span>
-    * <span data-ttu-id="af419-196">CustomerCreditTransferInitiation</span><span class="sxs-lookup"><span data-stu-id="af419-196">CustomerCreditTransferInitiation</span></span>  
-4. <span data-ttu-id="af419-197">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-197">Click Add.</span></span>
-5. <span data-ttu-id="af419-198">Kirjoita Etsi--kenttään CustomerCreditTransferInitiation.</span><span class="sxs-lookup"><span data-stu-id="af419-198">In the Find field, type 'CustomerCreditTransferInitiation'.</span></span>
-    * <span data-ttu-id="af419-199">CustomerCreditTransferInitiation</span><span class="sxs-lookup"><span data-stu-id="af419-199">CustomerCreditTransferInitiation</span></span>  
-6. <span data-ttu-id="af419-200">Valitse Etsi edellinen.</span><span class="sxs-lookup"><span data-stu-id="af419-200">Click Find previous.</span></span>
-7. <span data-ttu-id="af419-201">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-201">Click New to open the drop dialog.</span></span>
-8. <span data-ttu-id="af419-202">Syötä Nimi-kenttään MessageIdentification.</span><span class="sxs-lookup"><span data-stu-id="af419-202">In the Name field, type 'MessageIdentification'.</span></span>
-    * <span data-ttu-id="af419-203">MessageIdentification</span><span class="sxs-lookup"><span data-stu-id="af419-203">MessageIdentification</span></span>  
-9. <span data-ttu-id="af419-204">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-204">Click Add.</span></span>
-10. <span data-ttu-id="af419-205">Kirjoita Kuvaus-kenttään "Osoitetaan pisteviitteeseen ohjaavan osapuolen määrityksen mukaisesti (ja lähetetään seuraavalle osapuolelle) viestin tunnistamista varten".</span><span class="sxs-lookup"><span data-stu-id="af419-205">In the Description field, enter 'The point-to-point reference assigned by the instructing party (and sent to the next party) to identify a message.'.</span></span>
-    * <span data-ttu-id="af419-206">Pisteestä pisteeseen -viite, jonka ohjaava osapuoli on määrittänyt (ja lähettänyt seuraavalle osapuolelle) viestin tunnistamista varten.</span><span class="sxs-lookup"><span data-stu-id="af419-206">The point-to-point reference assigned by the instructing party (and sent to the next party) to identify a message.</span></span>  
-11. <span data-ttu-id="af419-207">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-207">Click New to open the drop dialog.</span></span>
-12. <span data-ttu-id="af419-208">Syötä Nimi-kenttään ProcessingDateTime.</span><span class="sxs-lookup"><span data-stu-id="af419-208">In the Name field, type 'ProcessingDateTime'.</span></span>
-    * <span data-ttu-id="af419-209">ProcessingDateTime</span><span class="sxs-lookup"><span data-stu-id="af419-209">ProcessingDateTime</span></span>  
-13. <span data-ttu-id="af419-210">Valitse Nimiketyyppi-kentässä DateTime.</span><span class="sxs-lookup"><span data-stu-id="af419-210">In the Item type field, select 'DateTime'.</span></span>
-14. <span data-ttu-id="af419-211">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-211">Click Add.</span></span>
-15. <span data-ttu-id="af419-212">Kirjoita Kuvaus-kenttään "Päivämäärä ja kellonaika, jolloin maksun viesti luotiin".</span><span class="sxs-lookup"><span data-stu-id="af419-212">In the Description field, enter 'Date and time at which the payment message was created.'.</span></span>
-    * <span data-ttu-id="af419-213">Päivämäärä ja kellonaika, jolloin maksun viesti luotiin.</span><span class="sxs-lookup"><span data-stu-id="af419-213">Date and time at which the payment message was created.</span></span>  
-16. <span data-ttu-id="af419-214">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-214">Click New to open the drop dialog.</span></span>
-    * <span data-ttu-id="af419-215">Pankkitapahtumarakenteen määrittäminen tälle mallille.</span><span class="sxs-lookup"><span data-stu-id="af419-215">Define the payment transaction structure for this model.</span></span>  
-17. <span data-ttu-id="af419-216">Syötä Nimi-kenttään Maksut.</span><span class="sxs-lookup"><span data-stu-id="af419-216">In the Name field, type 'Payments'.</span></span>
-    * <span data-ttu-id="af419-217">Maksut</span><span class="sxs-lookup"><span data-stu-id="af419-217">Payments</span></span>  
-18. <span data-ttu-id="af419-218">Valitse Nimiketyyppi-kentässä Tietueluettelo.</span><span class="sxs-lookup"><span data-stu-id="af419-218">In the Item type field, select 'Record list'.</span></span>
-19. <span data-ttu-id="af419-219">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-219">Click Add.</span></span>
-20. <span data-ttu-id="af419-220">Syötä Kuvaus-kenttään Nykyisen viestin maksurivi.</span><span class="sxs-lookup"><span data-stu-id="af419-220">In the Description field, enter 'Payment lines of the current message'.</span></span>
-    * <span data-ttu-id="af419-221">Nykyisen viestin maksurivit</span><span class="sxs-lookup"><span data-stu-id="af419-221">Payment lines of the current message</span></span>  
-21. <span data-ttu-id="af419-222">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-222">Click New to open the drop dialog.</span></span>
-22. <span data-ttu-id="af419-223">Syötä Nimi-kenttään Laskuttaja.</span><span class="sxs-lookup"><span data-stu-id="af419-223">In the Name field, type 'Creditor'.</span></span>
-    * <span data-ttu-id="af419-224">Laskuttaja</span><span class="sxs-lookup"><span data-stu-id="af419-224">Creditor</span></span>  
-23. <span data-ttu-id="af419-225">Valitse Nimiketyyppi-kentässä Tietue.</span><span class="sxs-lookup"><span data-stu-id="af419-225">In the Item type field, select 'Record'.</span></span>
-24. <span data-ttu-id="af419-226">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-226">Click Add.</span></span>
-25. <span data-ttu-id="af419-227">Kirjoita Kuvaus-kenttään "Osapuoli, jolle rahasumma on maksettava".</span><span class="sxs-lookup"><span data-stu-id="af419-227">In the Description field, enter 'Party to which an amount of money is due.'.</span></span>
-    * <span data-ttu-id="af419-228">Osapuoli, jolle rahasumma on maksettava.</span><span class="sxs-lookup"><span data-stu-id="af419-228">Party to which an amount of money is due.</span></span>  
-26. <span data-ttu-id="af419-229">Valitse Muuta nimikkeen viitettä.</span><span class="sxs-lookup"><span data-stu-id="af419-229">Click Switch item reference.</span></span>
-27. <span data-ttu-id="af419-230">Kirjoita Etsi-kenttään "Osapuoli".</span><span class="sxs-lookup"><span data-stu-id="af419-230">In the Find field, type 'Party'.</span></span>
-    * <span data-ttu-id="af419-231">Osapuoli</span><span class="sxs-lookup"><span data-stu-id="af419-231">Party</span></span>  
-28. <span data-ttu-id="af419-232">Valitse Etsi seuraava.</span><span class="sxs-lookup"><span data-stu-id="af419-232">Click Find next.</span></span>
-29. <span data-ttu-id="af419-233">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="af419-233">Click OK.</span></span>
-30. <span data-ttu-id="af419-234">Kirjoita Etsi-kenttään "Maksut".</span><span class="sxs-lookup"><span data-stu-id="af419-234">In the Find field, type 'Payments'.</span></span>
-    * <span data-ttu-id="af419-235">Maksut</span><span class="sxs-lookup"><span data-stu-id="af419-235">Payments</span></span>  
-31. <span data-ttu-id="af419-236">Valitse Etsi seuraava.</span><span class="sxs-lookup"><span data-stu-id="af419-236">Click Find next.</span></span>
-32. <span data-ttu-id="af419-237">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-237">Click New to open the drop dialog.</span></span>
-33. <span data-ttu-id="af419-238">Syötä Nimi-kenttään Maksaja.</span><span class="sxs-lookup"><span data-stu-id="af419-238">In the Name field, type 'Debtor'.</span></span>
-    * <span data-ttu-id="af419-239">Maksaja</span><span class="sxs-lookup"><span data-stu-id="af419-239">Debtor</span></span>  
-34. <span data-ttu-id="af419-240">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-240">Click Add.</span></span>
-35. <span data-ttu-id="af419-241">Kirjoita Kuvaus-kenttään "Osapuoli, joka on rahasumman velkaa (lopulliselle) laskuttajalle".</span><span class="sxs-lookup"><span data-stu-id="af419-241">In the Description field, enter 'Party that owes an amount of money to the (ultimate) creditor.'.</span></span>
-    * <span data-ttu-id="af419-242">Osapuoli, joka on rahasumman velkaa (lopulliselle) laskuttajalle.</span><span class="sxs-lookup"><span data-stu-id="af419-242">Party that owes an amount of money to the (ultimate) creditor.</span></span>  
-36. <span data-ttu-id="af419-243">Valitse Muuta nimikkeen viitettä.</span><span class="sxs-lookup"><span data-stu-id="af419-243">Click Switch item reference.</span></span>
-37. <span data-ttu-id="af419-244">Kirjoita Etsi-kenttään "Osapuoli".</span><span class="sxs-lookup"><span data-stu-id="af419-244">In the Find field, type 'Party'.</span></span>
-    * <span data-ttu-id="af419-245">Osapuoli</span><span class="sxs-lookup"><span data-stu-id="af419-245">Party</span></span>  
-38. <span data-ttu-id="af419-246">Valitse Etsi seuraava.</span><span class="sxs-lookup"><span data-stu-id="af419-246">Click Find next.</span></span>
-39. <span data-ttu-id="af419-247">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="af419-247">Click OK.</span></span>
-40. <span data-ttu-id="af419-248">Valitse Etsi seuraava.</span><span class="sxs-lookup"><span data-stu-id="af419-248">Click Find next.</span></span>
-41. <span data-ttu-id="af419-249">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-249">Click New to open the drop dialog.</span></span>
-42. <span data-ttu-id="af419-250">Syötä Nimi-kenttään kuvaus.</span><span class="sxs-lookup"><span data-stu-id="af419-250">In the Name field, type 'Description'.</span></span>
-    * <span data-ttu-id="af419-251">kuvaus</span><span class="sxs-lookup"><span data-stu-id="af419-251">Description</span></span>  
-43. <span data-ttu-id="af419-252">Valitse Nimiketyyppi-kentässä Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="af419-252">In the Item type field, select 'String'.</span></span>
-44. <span data-ttu-id="af419-253">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-253">Click Add.</span></span>
-45. <span data-ttu-id="af419-254">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-254">Click New to open the drop dialog.</span></span>
-46. <span data-ttu-id="af419-255">Syötä Nimi-kenttään Valuutta.</span><span class="sxs-lookup"><span data-stu-id="af419-255">In the Name field, type 'Currency'.</span></span>
-    * <span data-ttu-id="af419-256">Valuutta</span><span class="sxs-lookup"><span data-stu-id="af419-256">Currency</span></span>  
-47. <span data-ttu-id="af419-257">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-257">Click Add.</span></span>
-48. <span data-ttu-id="af419-258">Kirjoita Kuvaus-kenttään "Valuuttakoodi".</span><span class="sxs-lookup"><span data-stu-id="af419-258">In the Description field, enter 'Currency code'.</span></span>
-    * <span data-ttu-id="af419-259">Valuuttakoodi</span><span class="sxs-lookup"><span data-stu-id="af419-259">Currency code</span></span>  
-49. <span data-ttu-id="af419-260">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-260">Click New to open the drop dialog.</span></span>
-50. <span data-ttu-id="af419-261">Syötä Nimi-kenttään TransactionDate.</span><span class="sxs-lookup"><span data-stu-id="af419-261">In the Name field, type 'TransactionDate'.</span></span>
-    * <span data-ttu-id="af419-262">TransactionDate</span><span class="sxs-lookup"><span data-stu-id="af419-262">TransactionDate</span></span>  
-51. <span data-ttu-id="af419-263">Valitse Nimiketyyppi-kentässä Päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="af419-263">In the Item type field, select 'Date'.</span></span>
-52. <span data-ttu-id="af419-264">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-264">Click Add.</span></span>
-53. <span data-ttu-id="af419-265">Kirjoita Kuvaus-kenttään "Tapahtumapäivä".</span><span class="sxs-lookup"><span data-stu-id="af419-265">In the Description field, enter 'Transaction date'.</span></span>
-    * <span data-ttu-id="af419-266">Tapahtuman päivämäärä</span><span class="sxs-lookup"><span data-stu-id="af419-266">Transaction date</span></span>  
-54. <span data-ttu-id="af419-267">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-267">Click New to open the drop dialog.</span></span>
-55. <span data-ttu-id="af419-268">Syötä Nimi-kenttään InstructedAmount.</span><span class="sxs-lookup"><span data-stu-id="af419-268">In the Name field, type 'InstructedAmount'.</span></span>
-    * <span data-ttu-id="af419-269">InstructedAmount</span><span class="sxs-lookup"><span data-stu-id="af419-269">InstructedAmount</span></span>  
-56. <span data-ttu-id="af419-270">Valitse Nimiketyyppi-kentässä Reaaliluku.</span><span class="sxs-lookup"><span data-stu-id="af419-270">In the Item type field, select 'Real'.</span></span>
-57. <span data-ttu-id="af419-271">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-271">Click Add.</span></span>
-58. <span data-ttu-id="af419-272">Kirjoita Kuvaus-kenttään "Maksajan ja laskuttajan välillä siirrettävä rahasumma ennen maksupidätyksiä.</span><span class="sxs-lookup"><span data-stu-id="af419-272">In the Description field, enter 'The amount of money to be moved between the debtor and creditor, before deduction of charges.</span></span> <span data-ttu-id="af419-273">Summa ilmaistaan aloittavan osapuolen määrittämänä valuuttana.</span><span class="sxs-lookup"><span data-stu-id="af419-273">The amount should be expressed in the currency as ordered by the initiating party.'.</span></span>
-    * <span data-ttu-id="af419-274">Maksajan ja laskuttajan välillä siirrettävä rahasumma ennen maksupidätyksiä.</span><span class="sxs-lookup"><span data-stu-id="af419-274">The amount of money to be moved between the debtor and creditor, before deduction of charges.</span></span> <span data-ttu-id="af419-275">Summa ilmaistaan aloittavan osapuolen määrittämänä valuuttana.</span><span class="sxs-lookup"><span data-stu-id="af419-275">The amount should be expressed in the currency as ordered by the initiating party.</span></span>  
-59. <span data-ttu-id="af419-276">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="af419-276">Click New to open the drop dialog.</span></span>
-60. <span data-ttu-id="af419-277">Syötä Nimi-kenttään End2EndID.</span><span class="sxs-lookup"><span data-stu-id="af419-277">In the Name field, type 'End2EndID'.</span></span>
-    * <span data-ttu-id="af419-278">End2EndID</span><span class="sxs-lookup"><span data-stu-id="af419-278">End2EndID</span></span>  
-61. <span data-ttu-id="af419-279">Valitse Nimiketyyppi-kentässä Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="af419-279">In the Item type field, select 'String'.</span></span>
-62. <span data-ttu-id="af419-280">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="af419-280">Click Add.</span></span>
-63. <span data-ttu-id="af419-281">Kirjoita Kuvaus-kenttään "Aloittavan osapuolen määrittämä yksilöivä tunnus.</span><span class="sxs-lookup"><span data-stu-id="af419-281">In the Description field, enter 'The unique identification assigned by the initiating party.</span></span> <span data-ttu-id="af419-282">Tunnus välitetään muuttumattomana koko päästä päähän -ketjun läpi.</span><span class="sxs-lookup"><span data-stu-id="af419-282">This identification is passed on, unchanged, throughout the entire end-to-end chain.'.</span></span>
-    * <span data-ttu-id="af419-283">Aloittavan osapuolen määrittämä yksilöivä tunnus.</span><span class="sxs-lookup"><span data-stu-id="af419-283">The unique identification assigned by the initiating party.</span></span> <span data-ttu-id="af419-284">Tunnus välitetään muuttumattomana koko päästä päähän -ketjun läpi.</span><span class="sxs-lookup"><span data-stu-id="af419-284">This identification is passed on, unchanged, throughout the entire end-to-end chain.</span></span>  
-64. <span data-ttu-id="af419-285">Syötä Nimi-kenttään PaymentModel.</span><span class="sxs-lookup"><span data-stu-id="af419-285">In the Name field, type 'PaymentModel'.</span></span>
-    * <span data-ttu-id="af419-286">PaymentModel-nimi on linjassa maksulomakkeiden ennalta määritettyjen käyttöliittymien kanssa.</span><span class="sxs-lookup"><span data-stu-id="af419-286">The PaymentModel name aligns with predefined interfaces of payment forms.</span></span>  
-65. <span data-ttu-id="af419-287">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="af419-287">Click Save.</span></span>
-66. <span data-ttu-id="af419-288">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="af419-288">Close the page.</span></span>
-
+## <a name="define-the-payment-message-structure-for-credit-transfer-payment-type"></a><span data-ttu-id="b0d10-192">Tilisiirtomaksun tyypin maksuviestirakenteen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="b0d10-192">Define the payment message structure for credit transfer payment type</span></span>
+1. <span data-ttu-id="b0d10-193">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-193">Click New to open the drop dialog.</span></span>
+2. <span data-ttu-id="b0d10-194">Kirjoita Uusi solmu muodossa -kenttään "Mallin juuri".</span><span class="sxs-lookup"><span data-stu-id="b0d10-194">In the New node as a field, enter 'Model root'.</span></span>
+3. <span data-ttu-id="b0d10-195">Syötä Nimi-kenttään CustomerCreditTransferInitiation.</span><span class="sxs-lookup"><span data-stu-id="b0d10-195">In the Name field, type 'CustomerCreditTransferInitiation'.</span></span>
+    * <span data-ttu-id="b0d10-196">CustomerCreditTransferInitiation</span><span class="sxs-lookup"><span data-stu-id="b0d10-196">CustomerCreditTransferInitiation</span></span>  
+4. <span data-ttu-id="b0d10-197">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-197">Click Add.</span></span>
+5. <span data-ttu-id="b0d10-198">Kirjoita Etsi--kenttään CustomerCreditTransferInitiation.</span><span class="sxs-lookup"><span data-stu-id="b0d10-198">In the Find field, type 'CustomerCreditTransferInitiation'.</span></span>
+    * <span data-ttu-id="b0d10-199">CustomerCreditTransferInitiation</span><span class="sxs-lookup"><span data-stu-id="b0d10-199">CustomerCreditTransferInitiation</span></span>  
+6. <span data-ttu-id="b0d10-200">Valitse Etsi edellinen.</span><span class="sxs-lookup"><span data-stu-id="b0d10-200">Click Find previous.</span></span>
+7. <span data-ttu-id="b0d10-201">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-201">Click New to open the drop dialog.</span></span>
+8. <span data-ttu-id="b0d10-202">Syötä Nimi-kenttään MessageIdentification.</span><span class="sxs-lookup"><span data-stu-id="b0d10-202">In the Name field, type 'MessageIdentification'.</span></span>
+    * <span data-ttu-id="b0d10-203">MessageIdentification</span><span class="sxs-lookup"><span data-stu-id="b0d10-203">MessageIdentification</span></span>  
+9. <span data-ttu-id="b0d10-204">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-204">Click Add.</span></span>
+10. <span data-ttu-id="b0d10-205">Kirjoita Kuvaus-kenttään "Osoitetaan pisteviitteeseen ohjaavan osapuolen määrityksen mukaisesti (ja lähetetään seuraavalle osapuolelle) viestin tunnistamista varten".</span><span class="sxs-lookup"><span data-stu-id="b0d10-205">In the Description field, enter 'The point-to-point reference assigned by the instructing party (and sent to the next party) to identify a message.'.</span></span>
+    * <span data-ttu-id="b0d10-206">Pisteestä pisteeseen -viite, jonka ohjaava osapuoli on määrittänyt (ja lähettänyt seuraavalle osapuolelle) viestin tunnistamista varten.</span><span class="sxs-lookup"><span data-stu-id="b0d10-206">The point-to-point reference assigned by the instructing party (and sent to the next party) to identify a message.</span></span>  
+11. <span data-ttu-id="b0d10-207">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-207">Click New to open the drop dialog.</span></span>
+12. <span data-ttu-id="b0d10-208">Syötä Nimi-kenttään ProcessingDateTime.</span><span class="sxs-lookup"><span data-stu-id="b0d10-208">In the Name field, type 'ProcessingDateTime'.</span></span>
+    * <span data-ttu-id="b0d10-209">ProcessingDateTime</span><span class="sxs-lookup"><span data-stu-id="b0d10-209">ProcessingDateTime</span></span>  
+13. <span data-ttu-id="b0d10-210">Valitse Nimiketyyppi-kentässä DateTime.</span><span class="sxs-lookup"><span data-stu-id="b0d10-210">In the Item type field, select 'DateTime'.</span></span>
+14. <span data-ttu-id="b0d10-211">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-211">Click Add.</span></span>
+15. <span data-ttu-id="b0d10-212">Kirjoita Kuvaus-kenttään "Päivämäärä ja kellonaika, jolloin maksun viesti luotiin".</span><span class="sxs-lookup"><span data-stu-id="b0d10-212">In the Description field, enter 'Date and time at which the payment message was created.'.</span></span>
+    * <span data-ttu-id="b0d10-213">Päivämäärä ja kellonaika, jolloin maksun viesti luotiin.</span><span class="sxs-lookup"><span data-stu-id="b0d10-213">Date and time at which the payment message was created.</span></span>  
+16. <span data-ttu-id="b0d10-214">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-214">Click New to open the drop dialog.</span></span>
+    * <span data-ttu-id="b0d10-215">Pankkitapahtumarakenteen määrittäminen tälle mallille.</span><span class="sxs-lookup"><span data-stu-id="b0d10-215">Define the payment transaction structure for this model.</span></span>  
+17. <span data-ttu-id="b0d10-216">Syötä Nimi-kenttään Maksut.</span><span class="sxs-lookup"><span data-stu-id="b0d10-216">In the Name field, type 'Payments'.</span></span>
+    * <span data-ttu-id="b0d10-217">Maksut</span><span class="sxs-lookup"><span data-stu-id="b0d10-217">Payments</span></span>  
+18. <span data-ttu-id="b0d10-218">Valitse Nimiketyyppi-kentässä Tietueluettelo.</span><span class="sxs-lookup"><span data-stu-id="b0d10-218">In the Item type field, select 'Record list'.</span></span>
+19. <span data-ttu-id="b0d10-219">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-219">Click Add.</span></span>
+20. <span data-ttu-id="b0d10-220">Syötä Kuvaus-kenttään Nykyisen viestin maksurivi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-220">In the Description field, enter 'Payment lines of the current message'.</span></span>
+    * <span data-ttu-id="b0d10-221">Nykyisen viestin maksurivit</span><span class="sxs-lookup"><span data-stu-id="b0d10-221">Payment lines of the current message</span></span>  
+21. <span data-ttu-id="b0d10-222">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-222">Click New to open the drop dialog.</span></span>
+22. <span data-ttu-id="b0d10-223">Syötä Nimi-kenttään Laskuttaja.</span><span class="sxs-lookup"><span data-stu-id="b0d10-223">In the Name field, type 'Creditor'.</span></span>
+    * <span data-ttu-id="b0d10-224">Laskuttaja</span><span class="sxs-lookup"><span data-stu-id="b0d10-224">Creditor</span></span>  
+23. <span data-ttu-id="b0d10-225">Valitse Nimiketyyppi-kentässä Tietue.</span><span class="sxs-lookup"><span data-stu-id="b0d10-225">In the Item type field, select 'Record'.</span></span>
+24. <span data-ttu-id="b0d10-226">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-226">Click Add.</span></span>
+25. <span data-ttu-id="b0d10-227">Kirjoita Kuvaus-kenttään "Osapuoli, jolle rahasumma on maksettava".</span><span class="sxs-lookup"><span data-stu-id="b0d10-227">In the Description field, enter 'Party to which an amount of money is due.'.</span></span>
+    * <span data-ttu-id="b0d10-228">Osapuoli, jolle rahasumma on maksettava.</span><span class="sxs-lookup"><span data-stu-id="b0d10-228">Party to which an amount of money is due.</span></span>  
+26. <span data-ttu-id="b0d10-229">Valitse Muuta nimikkeen viitettä.</span><span class="sxs-lookup"><span data-stu-id="b0d10-229">Click Switch item reference.</span></span>
+27. <span data-ttu-id="b0d10-230">Kirjoita Etsi-kenttään "Osapuoli".</span><span class="sxs-lookup"><span data-stu-id="b0d10-230">In the Find field, type 'Party'.</span></span>
+    * <span data-ttu-id="b0d10-231">Osapuoli</span><span class="sxs-lookup"><span data-stu-id="b0d10-231">Party</span></span>  
+28. <span data-ttu-id="b0d10-232">Valitse Etsi seuraava.</span><span class="sxs-lookup"><span data-stu-id="b0d10-232">Click Find next.</span></span>
+29. <span data-ttu-id="b0d10-233">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="b0d10-233">Click OK.</span></span>
+30. <span data-ttu-id="b0d10-234">Kirjoita Etsi-kenttään "Maksut".</span><span class="sxs-lookup"><span data-stu-id="b0d10-234">In the Find field, type 'Payments'.</span></span>
+    * <span data-ttu-id="b0d10-235">Maksut</span><span class="sxs-lookup"><span data-stu-id="b0d10-235">Payments</span></span>  
+31. <span data-ttu-id="b0d10-236">Valitse Etsi seuraava.</span><span class="sxs-lookup"><span data-stu-id="b0d10-236">Click Find next.</span></span>
+32. <span data-ttu-id="b0d10-237">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-237">Click New to open the drop dialog.</span></span>
+33. <span data-ttu-id="b0d10-238">Syötä Nimi-kenttään Maksaja.</span><span class="sxs-lookup"><span data-stu-id="b0d10-238">In the Name field, type 'Debtor'.</span></span>
+    * <span data-ttu-id="b0d10-239">Maksaja</span><span class="sxs-lookup"><span data-stu-id="b0d10-239">Debtor</span></span>  
+34. <span data-ttu-id="b0d10-240">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-240">Click Add.</span></span>
+35. <span data-ttu-id="b0d10-241">Kirjoita Kuvaus-kenttään "Osapuoli, joka on rahasumman velkaa (lopulliselle) laskuttajalle".</span><span class="sxs-lookup"><span data-stu-id="b0d10-241">In the Description field, enter 'Party that owes an amount of money to the (ultimate) creditor.'.</span></span>
+    * <span data-ttu-id="b0d10-242">Osapuoli, joka on rahasumman velkaa (lopulliselle) laskuttajalle.</span><span class="sxs-lookup"><span data-stu-id="b0d10-242">Party that owes an amount of money to the (ultimate) creditor.</span></span>  
+36. <span data-ttu-id="b0d10-243">Valitse Muuta nimikkeen viitettä.</span><span class="sxs-lookup"><span data-stu-id="b0d10-243">Click Switch item reference.</span></span>
+37. <span data-ttu-id="b0d10-244">Kirjoita Etsi-kenttään "Osapuoli".</span><span class="sxs-lookup"><span data-stu-id="b0d10-244">In the Find field, type 'Party'.</span></span>
+    * <span data-ttu-id="b0d10-245">Osapuoli</span><span class="sxs-lookup"><span data-stu-id="b0d10-245">Party</span></span>  
+38. <span data-ttu-id="b0d10-246">Valitse Etsi seuraava.</span><span class="sxs-lookup"><span data-stu-id="b0d10-246">Click Find next.</span></span>
+39. <span data-ttu-id="b0d10-247">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="b0d10-247">Click OK.</span></span>
+40. <span data-ttu-id="b0d10-248">Valitse Etsi seuraava.</span><span class="sxs-lookup"><span data-stu-id="b0d10-248">Click Find next.</span></span>
+41. <span data-ttu-id="b0d10-249">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-249">Click New to open the drop dialog.</span></span>
+42. <span data-ttu-id="b0d10-250">Syötä Nimi-kenttään kuvaus.</span><span class="sxs-lookup"><span data-stu-id="b0d10-250">In the Name field, type 'Description'.</span></span>
+    * <span data-ttu-id="b0d10-251">kuvaus</span><span class="sxs-lookup"><span data-stu-id="b0d10-251">Description</span></span>  
+43. <span data-ttu-id="b0d10-252">Valitse Nimiketyyppi-kentässä Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="b0d10-252">In the Item type field, select 'String'.</span></span>
+44. <span data-ttu-id="b0d10-253">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-253">Click Add.</span></span>
+45. <span data-ttu-id="b0d10-254">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-254">Click New to open the drop dialog.</span></span>
+46. <span data-ttu-id="b0d10-255">Syötä Nimi-kenttään Valuutta.</span><span class="sxs-lookup"><span data-stu-id="b0d10-255">In the Name field, type 'Currency'.</span></span>
+    * <span data-ttu-id="b0d10-256">Valuutta</span><span class="sxs-lookup"><span data-stu-id="b0d10-256">Currency</span></span>  
+47. <span data-ttu-id="b0d10-257">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-257">Click Add.</span></span>
+48. <span data-ttu-id="b0d10-258">Kirjoita Kuvaus-kenttään "Valuuttakoodi".</span><span class="sxs-lookup"><span data-stu-id="b0d10-258">In the Description field, enter 'Currency code'.</span></span>
+    * <span data-ttu-id="b0d10-259">Valuuttakoodi</span><span class="sxs-lookup"><span data-stu-id="b0d10-259">Currency code</span></span>  
+49. <span data-ttu-id="b0d10-260">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-260">Click New to open the drop dialog.</span></span>
+50. <span data-ttu-id="b0d10-261">Syötä Nimi-kenttään TransactionDate.</span><span class="sxs-lookup"><span data-stu-id="b0d10-261">In the Name field, type 'TransactionDate'.</span></span>
+    * <span data-ttu-id="b0d10-262">TransactionDate</span><span class="sxs-lookup"><span data-stu-id="b0d10-262">TransactionDate</span></span>  
+51. <span data-ttu-id="b0d10-263">Valitse Nimiketyyppi-kentässä Päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="b0d10-263">In the Item type field, select 'Date'.</span></span>
+52. <span data-ttu-id="b0d10-264">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-264">Click Add.</span></span>
+53. <span data-ttu-id="b0d10-265">Kirjoita Kuvaus-kenttään "Tapahtumapäivä".</span><span class="sxs-lookup"><span data-stu-id="b0d10-265">In the Description field, enter 'Transaction date'.</span></span>
+    * <span data-ttu-id="b0d10-266">Tapahtuman päivämäärä</span><span class="sxs-lookup"><span data-stu-id="b0d10-266">Transaction date</span></span>  
+54. <span data-ttu-id="b0d10-267">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-267">Click New to open the drop dialog.</span></span>
+55. <span data-ttu-id="b0d10-268">Syötä Nimi-kenttään InstructedAmount.</span><span class="sxs-lookup"><span data-stu-id="b0d10-268">In the Name field, type 'InstructedAmount'.</span></span>
+    * <span data-ttu-id="b0d10-269">InstructedAmount</span><span class="sxs-lookup"><span data-stu-id="b0d10-269">InstructedAmount</span></span>  
+56. <span data-ttu-id="b0d10-270">Valitse Nimiketyyppi-kentässä Reaaliluku.</span><span class="sxs-lookup"><span data-stu-id="b0d10-270">In the Item type field, select 'Real'.</span></span>
+57. <span data-ttu-id="b0d10-271">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-271">Click Add.</span></span>
+58. <span data-ttu-id="b0d10-272">Kirjoita Kuvaus-kenttään "Maksajan ja laskuttajan välillä siirrettävä rahasumma ennen maksupidätyksiä.</span><span class="sxs-lookup"><span data-stu-id="b0d10-272">In the Description field, enter 'The amount of money to be moved between the debtor and creditor, before deduction of charges.</span></span> <span data-ttu-id="b0d10-273">Summa ilmaistaan aloittavan osapuolen määrittämänä valuuttana.</span><span class="sxs-lookup"><span data-stu-id="b0d10-273">The amount should be expressed in the currency as ordered by the initiating party.'.</span></span>
+    * <span data-ttu-id="b0d10-274">Maksajan ja laskuttajan välillä siirrettävä rahasumma ennen maksupidätyksiä.</span><span class="sxs-lookup"><span data-stu-id="b0d10-274">The amount of money to be moved between the debtor and creditor, before deduction of charges.</span></span> <span data-ttu-id="b0d10-275">Summa ilmaistaan aloittavan osapuolen määrittämänä valuuttana.</span><span class="sxs-lookup"><span data-stu-id="b0d10-275">The amount should be expressed in the currency as ordered by the initiating party.</span></span>  
+59. <span data-ttu-id="b0d10-276">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-276">Click New to open the drop dialog.</span></span>
+60. <span data-ttu-id="b0d10-277">Syötä Nimi-kenttään End2EndID.</span><span class="sxs-lookup"><span data-stu-id="b0d10-277">In the Name field, type 'End2EndID'.</span></span>
+    * <span data-ttu-id="b0d10-278">End2EndID</span><span class="sxs-lookup"><span data-stu-id="b0d10-278">End2EndID</span></span>  
+61. <span data-ttu-id="b0d10-279">Valitse Nimiketyyppi-kentässä Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="b0d10-279">In the Item type field, select 'String'.</span></span>
+62. <span data-ttu-id="b0d10-280">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b0d10-280">Click Add.</span></span>
+63. <span data-ttu-id="b0d10-281">Kirjoita Kuvaus-kenttään "Aloittavan osapuolen määrittämä yksilöivä tunnus.</span><span class="sxs-lookup"><span data-stu-id="b0d10-281">In the Description field, enter 'The unique identification assigned by the initiating party.</span></span> <span data-ttu-id="b0d10-282">Tunnus välitetään muuttumattomana koko päästä päähän -ketjun läpi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-282">This identification is passed on, unchanged, throughout the entire end-to-end chain.'.</span></span>
+    * <span data-ttu-id="b0d10-283">Aloittavan osapuolen määrittämä yksilöivä tunnus.</span><span class="sxs-lookup"><span data-stu-id="b0d10-283">The unique identification assigned by the initiating party.</span></span> <span data-ttu-id="b0d10-284">Tunnus välitetään muuttumattomana koko päästä päähän -ketjun läpi.</span><span class="sxs-lookup"><span data-stu-id="b0d10-284">This identification is passed on, unchanged, throughout the entire end-to-end chain.</span></span>  
+64. <span data-ttu-id="b0d10-285">Syötä Nimi-kenttään PaymentModel.</span><span class="sxs-lookup"><span data-stu-id="b0d10-285">In the Name field, type 'PaymentModel'.</span></span>
+    * <span data-ttu-id="b0d10-286">PaymentModel-nimi on linjassa maksulomakkeiden ennalta määritettyjen käyttöliittymien kanssa.</span><span class="sxs-lookup"><span data-stu-id="b0d10-286">The PaymentModel name aligns with predefined interfaces of payment forms.</span></span>  
+65. <span data-ttu-id="b0d10-287">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="b0d10-287">Click Save.</span></span>
+66. <span data-ttu-id="b0d10-288">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="b0d10-288">Close the page.</span></span>
 
