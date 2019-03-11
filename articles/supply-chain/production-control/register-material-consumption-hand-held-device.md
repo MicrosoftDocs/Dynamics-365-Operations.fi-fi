@@ -1,13 +1,13 @@
 ---
-title: "Materiaalikulutuksen rekisteröinti mobiililaitteella"
-description: "Tässä ohjeaiheessa käsitellään työnkulkua, jolla tuotannossa kulutettavat raaka-aineet voidaan rekisteröidä kämmenlaitteella."
+title: Materiaalikulutuksen rekisteröinti mobiililaitteella
+description: Tässä ohjeaiheessa käsitellään työnkulkua, jolla tuotannossa kulutettavat raaka-aineet voidaan rekisteröidä kämmenlaitteella.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5b9c73cf9b23eb8ad9ed872b76b92b395609e9a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b84b63ec519ae686b55905170c956fcb2b08334a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336126"
 ---
-
 # <a name="register-material-consumption-using-a-mobile-device"></a>Materiaalikulutuksen rekisteröinti mobiililaitteella
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ Tämä työnkulku on hyödyllinen, jos materiaalin tarkka seuranta on välttäm�
 
 Jatkuva tuotantoprosessi (5) kuluttaa eräohjattua raaka-ainetta RM-100. Materiaali on käytettävissä varaston sijainnissa Bulk-001 (1), rekisterikilpi on PL-1 ja siinä on kaksi erää B1 ja B2, joiden kummankin määrä 100 lbs. RM-100:n varastotyö (2) vapautetaan ja käsitellään. Materiaali kerätään sijainnista Bulk-001 tuotannon varastoinnin sijaintiin PIL-01 (3), joka on määritetty rekisterikilpiohjatuksi sijainniksi. Koneenkäyttäjä punnitsee materiaalin tuotannon varastointisijainnissa (3) ja rekisteröi painon. Eränumero on kulutettu (4). Osa materiaalista lisätään tuotannon varastoinnin sijainnista tuotantoprosessiin määritetyin aikavälein. Kun koneenkäyttäjä lisää materiaalia, se punnitaan vaa'alla ja eränumero rekisteröidään.
 
-## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Työnkulun määrittäminen rekisteröimään kulutus kämmenlaitteella
+## <a name="set-up-theworkflow-to-register-consumption-using-a-handheld-device"></a>Työnkulun määrittäminen rekisteröimään kulutus kämmenlaitteella
 Luo valmis tuote, FG 100, tuoterakenteella, jossa on eräohjattua raaka-ainetta RM-100. Lisää RM-100:n kaksi erää, B1 ja B2, joissa on määrä 100, sijaintiin Bulk-001, jossa on rekisterikilpi PL-1. RM-100:n tuoterakennerivin materiaaliottosäännöksi on valittu **Manuaalinen**. Määritä tuotannon varastoinnin sijainniksi PIL-01. Voit tehdä sen valitsemalla tämän sijainnin tuotannon varastoinnin oletussijainniksi varastossa 51.
 
 1.  Luo uusi mobiililaitteen valikkovaihtoehto: 
@@ -69,7 +68,7 @@ Työnkulku siirtää materiaalin bulkkisijainnista tuotannon varastoinnin sijain
 
 Kun tuotantotilaus on käynnistetty, voit rekisteröidä materiaalikulutuksen kämmenlaitteen työnkulussa. Aloitetaan rekisteröimällä 25 lbs:n kulutus erässä B1.
 
-6.  Valitse kämmenlaitteen valikossa **Rekisteröi** **materiaalikulutus** ja anna seuraavat tiedot: 
+6.  Valitse kämmenlaitteen valikossa  **Rekisteröi** **materiaalikulutus** ja anna seuraavat tiedot: 
 
 -    Tuotantotilauksen numero. 
 -    Sijainti, jossa materiaali aiotaan kuluttaa eli tässä tapauksessa PIL-01. 
@@ -91,6 +90,5 @@ Kun rekisteröinti on valmis, kirjaa kirjauskansio ja lopeta työnkulku valitsem
 -   Uusi työnkulku tukee myös sarjanumeroiden rekisteröintiä.
 -   Nimiketunnus voidaan rekisteröidä vain, jos se on määritetty valitun tuotanto- tai erätilauksen tuoterakenteessa tai kaavassa.
 -   Materiaali voidaan ylikuluttaa. Jos esimerkiksi materiaalin kulutusmääräksi arvioidaan 100 lbs, se voidaan sitten ylikuluttaa esimerkiksi määrällä 105 lbs.
-
 
 

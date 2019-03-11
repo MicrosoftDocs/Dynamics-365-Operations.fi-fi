@@ -1,13 +1,13 @@
---- 
-title: "Määritä työntekijän vamma- ja sairaustiedot"
-description: "Tapaturmien ja sairauksien asetukset -tehtävän opastus kannattaa suorittaa ensin, sillä joitakin asetustietoja käytetään tässä tehtävässä."
+---
+title: Määritä työntekijän vamma- ja sairaustiedot
+description: Tapaturmien ja sairauksien asetukset -tehtävän opastus kannattaa suorittaa ensin, sillä joitakin asetustietoja käytetään tässä tehtävässä.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 03d1e7f7b648e65cbe628aa4ff8b39dfa03ce96b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332607"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Määritä työntekijän vamma- ja sairaustiedot
 
@@ -92,5 +92,4 @@ Tämän tehtävän tallenteessa käsitellään tapaturma- tai sairaustapauksen p
     * Esimerkki: röntgenkuva vahvista murtuman, käytettävä lastaa  
 36. Valitse Tallenna.
     * Tapaustilan voi päivittää milloin tahansa.  Määritä tapauksen tilaksi keskeneräinen, jos tapaturmaa tai sairautta käsitellään edelleen.  Kun tapaus on suljettu, siihen voi vain lisätä tapaukseen liittyviä kustannuksia, hoitoja tai ilmoituksia tai poistaa niitä.  Muiden tietojen muokkaaminen edellyttää tapauksen avaamista uudelleen.  
-
 

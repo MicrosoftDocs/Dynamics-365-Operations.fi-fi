@@ -1,13 +1,13 @@
 ---
-title: "Varastomäärien varaaminen"
-description: "Tässä aiheessa kuvataan varastomäärien varaamisen eri vaihtoehtoja."
+title: Varastomäärien varaaminen
+description: Tässä aiheessa kuvataan varastomäärien varaamisen eri vaihtoehtoja.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 89441ee4c799e2d1215fbd82e0490d7168e2aa1b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7c351618f4d710062dd8f369c5319cdce79f7339
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365451"
 ---
-
 # <a name="reserve-inventory-quantities"></a>Varastomäärien varaaminen
 
 [!include [banner](../includes/banner.md)]
@@ -84,4 +83,3 @@ Varauksiin liittyy kaksi vaihtoehtoa **Varasto ja varastonhallinnan parametrit**
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Varastovarauskäytännöt Tuotantoparametrit -sivulla
 
 **Varaus**-kentän arvo **Yleistä**-välilehdessä **Tuotantoparametrit** sivulla määrittää tuotantoprosessin oletuskohdan, jossa varasto pitää varata. Esimerkiksi varasto voidaan varata, kun työ on ajoitettu tai kun työ alkaa.
-

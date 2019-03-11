@@ -1,13 +1,13 @@
 ---
 title: Automaattinen tilitys ja priorisointi
-description: "Tässä ohjeaiheessa kuvataan tapahtumien tilitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa."
+description: Tässä ohjeaiheessa kuvataan tapahtumien tilitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 775ce10cdba5e38fbb5fc058c6df297143229f79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318968"
 ---
-
 # <a name="automatic-settlement-and-prioritization"></a>Automaattinen tilitys ja priorisointi
 
 [!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan tapahtumien tilitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
 
-Sinulla on kaksi vaihtoehtoa, kun täsmäytät maksuja laskujen ja muiden tapahtumien kanssa. Voit valita täsmäytettävät tapahtumat manuaalisesti, tai Microsoft Dynamics 365 for Finance and Operations voi valita tapahtumat automaattisesti automaattisen tilityksen toimintoa käyttämällä. Voit myös mukauttaa automaattisten tilitysten käsittelyä **Priorisoi selvitys** -vaihtoehdon avulla. Nämä asetukset ovat osa tilityksen parametreja, joka on määritetty **Myyntireskontran parametrit** -sivulla. Tapahtumien automaattinen täsmäytystapa voi poiketa automaattiseen täsmäytykseen käyttämästäsi menetelmästä riippuen. Käytettävissä ovat seuraavat menetelmät:
+Sinulla on kaksi vaihtoehtoa, kun täsmäytät maksuja laskujen ja muiden tapahtumien kanssa. Voit manuaalisesti valita täsmäytettävät tapahtumat, tai Microsoft Dynamics 365 for Finance and Operations voi valita tapahtumat automaattisesti automaattisen tilityksen toimintoa käyttämällä. Voit myös mukauttaa automaattisten tilitysten käsittelyä **Priorisoi selvitys** -vaihtoehdon avulla. Nämä asetukset ovat osa tilityksen parametreja, joka on määritetty **Myyntireskontran parametrit** -sivulla. Tapahtumien automaattinen täsmäytystapa voi poiketa automaattiseen täsmäytykseen käyttämästäsi menetelmästä riippuen. Käytettävissä ovat seuraavat menetelmät:
 
 -   Käyttäjän määrittämä tilitysprioriteetti
 -   Oletusarvoinen automaattinen tilitys
@@ -42,10 +41,10 @@ Seuraavissa osissa kuvataan, kuinka tapahtumat täsmäytetään jokaiselle menet
 ## <a name="example-transactions"></a>Esimerkkitapahtumat
 Myöhemmin tässä artikkelissa kuvatut tilitysesimerkit perustuvat seuraaviin tapahtumiin. Kaikki tapahtumat koskevat asiakasta 2050.
 
-| Tapahtuma   | Päivämäärä        | Summa | Käteisalennuksen ehdot | Käteisalennuksen päivämäärä | Kommentit                                                                                                                                                                                      |
+| Tapahtuma   | Päivämäärä        | Summa | Käteisalennuksen ehdot | Käteisalennuksen päivämäärä | Huomautukset                                                                                                                                                                                      |
 |---------------|-------------|--------|---------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lasku 1     | 15. elokuuta   | 100,00 | 2 % 14, netto 30        | 29. elokuuta          |                                                                                                                                                                                               |
-| Lasku 2     | 1. syyskuuta | 250,00 | 2 % 14, netto 30        | 15. syyskuuta       |                                                                                                                                                                                               |
+| Lasku 1     | 15. elokuuta   | 100,00 | 2%14, netto 30        | 29. elokuuta          |                                                                                                                                                                                               |
+| Lasku 2     | 1. syyskuuta | 250,00 | 2%14, netto 30        | 15. syyskuuta       |                                                                                                                                                                                               |
 | Lasku 3     | 15. lokakuuta  | 500,00 | 2 % 14/netto 30        | 29. lokakuuta         |                                                                                                                                                                                               |
 | Korkolasku | 15. lokakuuta  | 7:00   |                     |                    | Tämä korkolasku on laskulle 1 ja laskulle 2. Summa lasketaan 2 prosentin korkona summista, jotka ovat vähintään 30 päivää myöhässä. Esimerkki: 0,02 × (100,00 + 250,00) = 7,00. |
 
@@ -79,7 +78,6 @@ Jos käyttäjäkohtaista tilitysprioriteettia ei ole, tapahtumat valitaan tility
 | Lasku 2     | 1.9.2015   | 10 002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Lasku 3     | 15.10.2015 |         | 500,00                         | 350,00           | 150,00  | USD      |
 | Korkolasku | 15.10.2015 |         | 7:00                           | 0,00             | 0,00    | USD      |
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Kopioi toimittajat käyttämällä jaettuja numerosarjoja"
-description: "Tässä ohjeaiheessa kerrotaan, miten jaettujen numerosarjojen avulla toimittaja kopioidaan toiseen yritykseen pitäen toimittajatunnus ennallaan."
+title: Kopioi toimittajat käyttämällä jaettuja numerosarjoja
+description: Tässä ohjeaiheessa kerrotaan, miten jaettujen numerosarjojen avulla toimittaja kopioidaan toiseen yritykseen pitäen toimittajatunnus ennallaan.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302243"
 ---
-
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopioi toimittajat käyttämällä jaettuja numerosarjoja
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Toimittajia voidaan kopioida yritysten välillä myös käytettäessä manuaali
 
 ## <a name="copy-a-vendor"></a>Kopioi toimittaja
 
-Toimittaja kopioidaan valitsemalla **Kaikki toimittajat** -luettelosivulla **Uusi**. **Kaikki toimittajat, uusi tietue** -sivu avautuu. Uutta toimittajatunnusta ei määritetä heti. Tämä toiminto eroaa aiemmista Microsoft Dynamics 365 for Finance and Operations -versioista. Toimittajaryhmää ei ole vielä valittu, joten järjestelmä ei voi määrittää oikeaa käytettävää numerosarjaa. Se ei voi myöskään määrittää, halutaanko luoda uusi toimittaja vai kopioida toimittaja. Siksi toimittajatunnus määritetään vasta kun valitset **Tallenna**-vaihtoehdon sivun alareunassa.
+Toimittaja kopioidaan valitsemalla **Kaikki toimittajat** -luettelosivulla **Uusi**. **Kaikki toimittajat, uusi tietue** -sivu avautuu. Uutta toimittajatunnusta ei määritetä heti. Tämä toiminnallisuus eroaa Microsoft Dynamics 365 for Finance and Operations -ohjelman edellisten versioiden toiminnasta. Toimittajaryhmää ei ole vielä valittu, joten järjestelmä ei voi määrittää oikeaa käytettävää numerosarjaa. Se ei voi myöskään määrittää, halutaanko luoda uusi toimittaja vai kopioida toimittaja. Siksi toimittajatunnus määritetään vasta kun valitset **Tallenna**-vaihtoehdon sivun alareunassa.
 
 Jos luot uutta toimittajaa, voit jatkaa täyttämään kaikki kentät tavalliseen tapaan. Kun olet valmis ja valitset **Tallenna**, huomaat, että toimittajatunnus määritettiin automaattisesti. Jos käytetään manuaalisia numerosarjoja, huomaat, että käytettiin manuaalista toimittajatunnusta.
 
@@ -66,4 +65,3 @@ Toimittajat voi kopioida myös hakemalla verovapausnumeron perusteella **Kaik
 
 1. Näkyviin tulee **Kopioi toimittaja** -vaihtoehto. Tämä vaihtoehto on oletusarvoisesti **Ei**. Voit kopioida toimittajan nykyiseen yritykseen valitsemalla **Kyllä**.
 2. Valitse **Valitse**. Uusi toimittaja luodaan.
-

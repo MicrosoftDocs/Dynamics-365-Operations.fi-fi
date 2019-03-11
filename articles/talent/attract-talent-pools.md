@@ -1,31 +1,30 @@
 ---
 title: Hakijoiden resursointi kykypoolien avulla
-description: "Tässä ohjeaiheessa käsitellään Attractin kykypoolien luomista ja määrittämistä."
-author: 
+description: Tässä ohjeaiheessa käsitellään Attractin kykypoolien luomista ja määrittämistä.
+author: ''
 manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 2eb46f436305a4c81ea99553e4dc07288ee74008
 ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304201"
 ---
-
 # <a name="source-candidates-by-using-talent-pools"></a>Hakijoiden resursointi kykypoolien avulla
 
 [!include[banner](../includes/banner.md)]
@@ -139,4 +138,3 @@ Jos yhteen työpaikkaan liittyy useita hyviä hakijoita, joita ei valita mutta j
 1. Valitse hakemussivulla **Lisää kykypooliin**. Näkyviin tulee luettelo kykypooleista, joiden käyttöoikeus sinulla on.
 
 1. Valitse tai hae kykypooli ja lisää sitten hakija kyseiseen pooliin valitsemalla **Lisää**.
-

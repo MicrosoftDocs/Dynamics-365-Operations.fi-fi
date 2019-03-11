@@ -1,13 +1,13 @@
 ---
-title: "Varaston suorituskyvyn Power BI -sisältö"
-description: "Tässä aiheessa kuvataan, mitä kuuluu varaston suorituskyvyn Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä."
+title: Varaston suorituskyvyn Power BI -sisältö
+description: Tässä aiheessa kuvataan, mitä kuuluu varaston suorituskyvyn Power BI -sisältöön. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytettävistä tietomallista ja yksiköistä.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,35 +18,34 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 99966a67fa1fd91fc54e7100f8e2e41b87f6a406
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365359"
 ---
-
 # <a name="warehouse-performance-power-bi-content"></a>Varaston suorituskyvyn Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, mitä kuuluu **Varaston suorituskyvyn** Microsoft Power BI -sisältöön. Siinä kuvataan, miten avaat Power BI -raportit. Lisäksi siinä kerrotaan sisältöpaketin rakentamisessa käytetystä tietomallista ja entiteeteistä.
+Tässä aiheessa kuvataan, mitä kuuluu **varaston suorituskyvyn** Microsoft Power BI -sisältöön. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytettävistä tietomallista ja yksiköistä.
 
 ## <a name="overview"></a>Yleiskuvaus
 
 **Varaston suorituskyvyn** Power BI -sisältöpaketti on luotu varaston ja toiminnoista vastaavien johtajien tärkeiden saapuvien, lähtevien ja varaston mittareiden seurantaan. Se käyttää varastonhallinta-, tuote- ja muita järjestelmäsi tapahtumatietoja tarjotakseen kootun näkymän varaston suorituskyvystä sekä erittelyn toimittajista, tuoteryhmistä ja tuotteista sekä sijainneista ja varastoista.
 
-Varaston esimiehet voivat käyttää **Varaston suorituskyvyn** Power BI -sisältöpakettia seuraavien kolmen alueen mittaamiseen:
+Varaston esimiehet voivat käyttää **varaston suorituskyvyn** Power BI -sisältöpakettia seuraavien kolmen alueen mittaamiseen:
 
 - **Saapuvien suorituskyky** – Mittaa toimittajan suoritusta verrattuna asiakkaan vaatimuksiin (toisin sanoen toimitusten suorituskykyä) sekä poispanojen suorituskykyä, jotta voit tunnistaa työntekijöihin tai nimikkeisiin liittyviä tietyllä aikavälillä. On tärkeää, että tiedät toimittavatko toimittajat tuotteet ajallaan, etuajassa vai myöhässä, jotta voit määrittää, miten toimittajan suorituskyky vaikuttaa poispanojen suorituskykyyn. Toimittaja, joka toimittaa tuotteet sovittujen päivämäärien ulkopuolella, voi aiheuttaa varastolle ylimääräistä painetta odottamattoman työn vuoksi ja siten nostaa keskimääräistä hyllytysaikaa.
 - **Lähetysten suorituskyky** – Mittaa, lähetetäänkö tuotteet varastostasi täydellisinä ja ajallaan asiakkaille (toisin sanoen lähtevien lähetysten ja toimitusten suorituskykyä), jotta voit tunnistaa tuotteisiin, sijainteihin, varastoihin tai kohdistettuihin asiakkaisiin liittyvät ongelmat. Jos huomaat, että lähetyksesi tietyille alueille tai tiettyihin kaupunkeihin ovat myöhässä, voi olla tarpeen kiinnittää tarkempaa huomiota kuljetusten tai tilien hallintaan.
 - **Toimipaikkojen varastotarkkuus** – Varastotarkkuus on tärkeä sisäinen varaston liiketoimintatieto (BI). Laskennan yleisen tarkkuuden selvittäminen on hyvin tärkeää. Tärkeää on myös määrittää, kuinka tarkasti varastoit nimikkeitä oikeissa toimipaikoissa, ja jotta voit korostaa ristiriitatietoja löytääksesi nimikkeille paremmat paikat tai aloittaaksesi tietyille nimikkeille kokonaislaskennan. (Nimikepohjainen laskentatoiminta toimitetaan tällä hetkellä korjaustiedostona.) Jos käytät tätä Power BI -sisältöpakettia käytettävissä olevan varaston oikeellisuuden selvittämiseen toimipaikkakohtaisesti, voit myös tunnistaa varkaustapaukset liikkeissäsi. Voit myös määrittää, onko yhdessäkään toimipaikassasi käytettävissä olevia määriä, jotka poikkeavat yrityksen resurssien suunnittelutiedoista (ERP). Toimipaikat voivat olla liian suuria tai niiden laskenta voi olla mahdotonta. Fyysinen sijoittelu voi vaihtoehtoisesti olla huonoa, jonka vuoksi yksittäisen nimiketyypin synkronointi käytettävissä olevaan tietoon on vaikeaa.
 
-## <a name="accessing-the-power-bi-content-pack"></a>Power BI -sisätöpaketin käyttö
+## <a name="accessing-the-power-bi-content-pack"></a>Power BI -sisältöpaketin avaaminen
 **Varaston suorituskyvyn** Power BI -sisältö näkyy **Varaston suorituskyky** -sivulla (**Varastonhallinta** \> **Kyselyt ja raportit** \> **Varaston suorituskykyanalyysi** \> **Varaston suorituskyky**).
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittareita, jotka sisältyvät Power BI -sisältöön
-**Varastoinnin suorituskyvyn** Power BI -sisältöpaketti sisältää raportin. Tämä raportti koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa. Seuraavassa taulukossa on yleiskatsaus visualisoinneista **varastoinnin suorituskyvyn** Power BI -sisällössä.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittarit, jotka sisältyvät Power BI -sisältöön
+**Varaston suorituskyvyn** Power BI -sisältö sisältää raportin. Tämä raportti koostuu joukosta mittareita, jotka ovat visualisoitu kaavioiden, ruutujen ja taulukoiden muodossa. Seuraavassa taulukossa on yleiskatsaus visualisoinneista **varaston suorituskyvyn** Power BI -sisällössä.
 
 | Raporttisivu                 | Kaaviot                                   | kuvaus |
 |-----------------------------|------------------------------------------|-------------|
@@ -79,7 +78,7 @@ Varaston esimiehet voivat käyttää **Varaston suorituskyvyn** Power BI -sisäl
 | Lähetysten suorituskyky        | Lähetetyt sijainnin/varaston mukaan              | Etuajassa, ajallaan tai myöhässä lähetettyjen tuotteiden osuus sijainnin tai varaston mukaan. |
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Tietomallin ja laskelmien tiedot
-Seuraavia tietoja käytetään **Varaston suorituskyvyn** Power BI -sisällön raporttisivujen täyttämiseen. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on ohjeaiheessa [yleiskatsaus Power BI:n integraatiosta yksikkökaupan kanssa](power-bi-integration-entity-store.md).
+Seuraavia tietoja käytetään **varaston suorituskyvyn** Power BI -sisällön raporttisivujen täyttämiseen. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on kohdassa [Power BI:n ja yksikkösäilön integroinnin yleiskatsaus](power-bi-integration-entity-store.md).
 
 Seuraavia tärkeitä koostettuja mittoja käytetään sisällön perustana.
 
@@ -113,4 +112,3 @@ Seuraavia tärkeitä koostettuja mittoja käytetään sisällön perustana.
 | Lähetysten suorituskyky        | Lähetetyt tuotteen mukaan                       | CustPackingSlipOnTimeStatus           | Etuajassa, Ajoissa ja Myöhässä (kuvaukset aiempana tässä taulukossa). |
 | Lähetysten suorituskyky        | Lähetetyt asiakkaan mukaan                      | CustPackingSlipOnTimeStatus           | Etuajassa, Ajoissa ja Myöhässä (kuvaukset aiempana tässä taulukossa). |
 | Lähetysten suorituskyky        | Lähetetyt sijainnin/varaston mukaan              | CustPackingSlipOnTimeStatus           | Etuajassa, Ajoissa ja Myöhässä (kuvaukset aiempana tässä taulukossa). |
-

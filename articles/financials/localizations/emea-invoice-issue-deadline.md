@@ -1,13 +1,13 @@
 ---
 title: Laskun kirjoittamisen takaraja
-description: "Tässä artikkelissa kerrotaan, kuinka voit määrittää parametrit, joiden avulla lasketaan eräpäivät lähetettäville myynti- ja toimittajalaskuille Euroopan Unionissa (EU)."
+description: Tässä artikkelissa kerrotaan, kuinka voit määrittää parametrit, joiden avulla lasketaan eräpäivät lähetettäville myynti- ja toimittajalaskuille Euroopan Unionissa (EU).
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 942b48170d7c164e16d2b8f5544b8777668adab3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 34dac634e09a8daa8a22b9f1efbc18ca44444e21
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370622"
 ---
-
 # <a name="invoice-issue-deadline"></a>Laskun kirjoittamisen takaraja
 
 [!include [banner](../includes/banner.md)]
@@ -53,7 +52,7 @@ Käytä **Määritä laskusääntö laskun kirjoituspäivälle**-sivua määritt
 Voit asettaa päivämäärän hallintaparametrit varmistamaan, että asiakkaiden laskut ja asiakastapahtumien hyvityslaskut luodaan määritellyn ajanjakson kuluttua siitä, kun toimitus on tapahtunut. Löydät nämä parametrit **laskun päivämäärän tarkistus** -alueelta **myyntireskontran parametrit** -sivulla.
 
 ## <a name="example"></a>Esimerkki
-Voit määrittää Microsoft Dynamics 365 for Finance and Operationsin laskemaan laskun kirjoittamisen eräpäivät EU:n sisäisiin toimituksiin toimitusta seuraavan kuun 15. päiväksi luomalla päivämäärävälin koodin ja laskemissäännön seuraavilla asetuksilla:
+Määritä Microsoft Dynamics 365 for Finance and Operations laskemaan laskun kirjoittamisen eräpäivät EU:n sisäisiin toimituksiin, toimitusta seuraavan kuun 15. päivänä, luomalla päivämäärävälin koodi ja laskemissääntö seuraavilla asetuksilla:
 
 ### <a name="date-interval-code"></a>Päivämäärävälin koodi
 
@@ -118,7 +117,6 @@ Jos sinulla ei ole pääsyä niiden sivujen käyttöön, joita käytetään täs
 </tr>
 </tbody>
 </table>
-
 
 
 

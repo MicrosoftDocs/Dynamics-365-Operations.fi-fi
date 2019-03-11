@@ -1,37 +1,36 @@
 ---
-title: "Määritteet ja määriteryhmät"
-description: "Näiden ohjeiden avulla voit kuvata tuotteen ja sen ominaisuudet käyttäjän kenttämääritteiden avulla."
+title: Määritteet ja määriteryhmät
+description: Näiden ohjeiden avulla voit kuvata tuotteen ja sen ominaisuudet käyttäjän kenttämääritteiden avulla.
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326236"
 ---
-
 # <a name="attributes-and-attribute-groups"></a>Määritteet ja määriteryhmät
 
 [!include [banner](includes/banner.md)]
 
-*Määritteiden* avulla voidaan täydentää tuotteen ja sen ominaisuuksien kuvausta käyttäjän määrittämien kenttien avulla. (Näitä kenttiä ovat esimerkiksi **Muistin koko**, **Kiintolevyn kapasiteetti** ja **Energy Star -merkinnän mukainen**). Microsoft Dynamics 365 for Finance and Operations -sovelluksessa määritteitä voidaan liittää erilaisiin vähittäismyynnin yksiköihin, kuten tuoteluokkiin ja vähittäismyyntikanaviin, ja niille voidaan määrittää oletusarvoja. Tuotteet perivät sitten määritteet ja oletusarvot, kun ne liitetään tuoteluokkiin tai vähittäismyyntikanaviin. Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, vähittäismyyntikanavan tasolla tai vähittäismyyntiluettelossa.
+*Määritteiden* avulla voidaan täydentää tuotteen ja sen ominaisuuksien kuvausta käyttäjän määrittämien kenttien avulla. (Näitä kenttiä ovat esimerkiksi **Muistin koko**, **Kiintolevyn kapasiteetti** ja **Energy Star -merkinnän mukainen**). Microsoft Dynamics 365 for Finance and Operationsissa määritteitä voidaan liittää erilaisiin vähittäismyynnin yksiköihin, kuten tuotekategorioihin ja vähittäismyyntikanaviin, ja niille voidaan asettaa oletusarvoja. Tuotteet perivät sitten määritteet ja oletusarvot, kun ne liitetään tuoteluokkiin tai vähittäismyyntikanaviin. Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, vähittäismyyntikanavan tasolla tai vähittäismyyntiluettelossa.
 
 Tavallisella televisiotuotteella voi olla esimerkiksi seuraavat määritteet.
 
@@ -257,4 +256,3 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
 
     > [!NOTE]
     > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
-

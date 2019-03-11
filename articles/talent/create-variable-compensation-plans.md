@@ -1,13 +1,13 @@
 ---
 title: Luo muuttuvia kompensaatiosuunnitelmia
-description: "Muuttuva kompensaatio muodostaa työntekijän epäsäännölliset maksut, kuten bonukset ja osakepalkkiot. Tässä aiheessa esitellään komponentit, jotka on määritettävä ennen muuttuvan kompensaation käyttämistä ja työntekijöiden määrittämistä muuttuvaan kompensaatiosuunnitelmaan."
+description: Muuttuva kompensaatio muodostaa työntekijän epäsäännölliset maksut, kuten bonukset ja osakepalkkiot. Tässä aiheessa esitellään komponentit, jotka on määritettävä ennen muuttuvan kompensaation käyttämistä ja työntekijöiden määrittämistä muuttuvaan kompensaatiosuunnitelmaan.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 338e58522f9b9fba3ce22b22488affbab24b1315
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304283"
 ---
-
 # <a name="create-variable-compensation-plans"></a>Luo muuttuvia kompensaatiosuunnitelmia
 
 [!include [banner](includes/banner.md)]
@@ -104,7 +103,6 @@ Voit käyttää **Ohitukset**-välilehteä, jos haluat ohittaa työntekijän tie
 --------
 
 [Kompensaatiosuunnitelmat](compensation-plans.md)
-
 
 
 

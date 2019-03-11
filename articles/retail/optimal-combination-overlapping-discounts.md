@@ -1,13 +1,13 @@
 ---
-title: "Määritä optimaalinen yhdistelmä päällekkäisiä alennuksia"
-description: "Kun alennukset menevät päällekkäin, sinun on määritettävä alennuksien yhdistelmä, joka tuottaa pienimmän tapahtumasumman tai suurimman kokonaisalennuksen. Kun alennuksen määrä vaihtelee ostettujen tuotteiden hinnan mukaan (kuten yleisessä vähittäismyynnin \"osta 1, saat toisen X prosentin alennuksella\" -alennuksessa), tästä prosessista tulee yhdistelmäoptimoinnin ongelma."
+title: Määritä optimaalinen yhdistelmä päällekkäisiä alennuksia
+description: Kun alennukset menevät päällekkäin, sinun on määritettävä alennuksien yhdistelmä, joka tuottaa pienimmän tapahtumasumman tai suurimman kokonaisalennuksen. Kun alennuksen määrä vaihtelee ostettujen tuotteiden hinnan mukaan (kuten yleisessä vähittäismyynnin "osta 1, saat toisen X prosentin alennuksella" -alennuksessa), tästä prosessista tulee yhdistelmäoptimoinnin ongelma.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: eebb532071e7c6bae7cfae93bfe795e79bb16c63
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360690"
 ---
-
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Määritä optimaalinen yhdistelmä päällekkäisiä alennuksia
 
 [!include [banner](includes/banner.md)]
 
 Kun alennukset menevät päällekkäin, sinun on määritettävä alennuksien yhdistelmä, joka tuottaa pienimmän tapahtumasumman tai suurimman kokonaisalennuksen. Kun alennuksen määrä vaihtelee ostettujen tuotteiden hinnan mukaan (kuten yleisessä vähittäismyynnin Osta 1, saat toisen X prosentin alennuksella -alennuksessa), tästä prosessista tulee yhdistelmäoptimoinnin ongelma.
 
-Tämä artikkeli koskee Microsoft Dynamics AX 2012 R3 KB 3105973 (julkaistu 2.11.2015) tai uudempaa versiota sekä Microsoft Dynamics 365 for Retailia. Päällekkäisten alennusten käyttöä varten on otettu menetelmä, jolla voidaan määrittää päällekkäisten alennusten yhdistelmän käyttö mahdollisimman nopeasti. Kutsumme tätä uutta menetelmää **rajan-arvojen luokitteluksi**. Raja-arvojen luokittelua käytetään silloin kun aika, joka vaaditaan mahdollisten päällekkäisten alennusten yhdistelmien arvioimiseen, ylittää raja-arvon, joka määritetään **Vähittäismyynnin parametrit** -sivulla. Raja-arvon luokittelumenetelmässä arvo lasketaan kullekin päällekkäiselle alennukselle käyttämällä jaettujen tuotteiden alennuksen arvoa. Sitten päällekkäisiä alennuksia käytetään suurimmasta suhteellisesta arvosta pienimpään suhteelliseen arvoon. Lisätietoja tästä uudesta menetelmästä on jäljempänä tässä artikkelissa olevassa Raja-arvo-osassa. Raja-arvon luokittelua ei käytetä, kun tuotteen alennussummat eivät vaikuta tapahtuman toisiin tuotteisiin. Tätä menetelmää ei käytetä esimerkiksi kahden yksinkertaisen alennuksen tapauksessa tai yksinkertaisen määräalennuksen yhteydessä.
+Tämä artikkeli koskee Microsoft Dynamics AX 2012 R3 -versiota, jossa KB 3105973 (julkaistu 2. marraskuuta 2015) tai uudempaa, Microsoft Dynamics 365 for Retailia. Päällekkäisten alennusten käyttöä varten on otettu menetelmä, jolla voidaan määrittää päällekkäisten alennusten yhdistelmän käyttö mahdollisimman nopeasti. Kutsumme tätä uutta menetelmää **rajan-arvojen luokitteluksi**. Raja-arvojen luokittelua käytetään silloin kun aika, joka vaaditaan mahdollisten päällekkäisten alennusten yhdistelmien arvioimiseen, ylittää raja-arvon, joka määritetään **Vähittäismyynnin parametrit** -sivulla. Raja-arvon luokittelumenetelmässä arvo lasketaan kullekin päällekkäiselle alennukselle käyttämällä jaettujen tuotteiden alennuksen arvoa. Sitten päällekkäisiä alennuksia käytetään suurimmasta suhteellisesta arvosta pienimpään suhteelliseen arvoon. Lisätietoja tästä uudesta menetelmästä on jäljempänä tässä artikkelissa olevassa Raja-arvo-osassa. Raja-arvon luokittelua ei käytetä, kun tuotteen alennussummat eivät vaikuta tapahtuman toisiin tuotteisiin. Tätä menetelmää ei käytetä esimerkiksi kahden yksinkertaisen alennuksen tapauksessa tai yksinkertaisen määräalennuksen yhteydessä.
 
 ## <a name="discount-examples"></a>Esimerkkejä alennuksista
 
@@ -85,4 +84,3 @@ Eksponentiaalisesti kasvavan arvioitavien yhdistelmien määrän ongelman ratkai
 ![Päällekkäisten alennusten yhdistelmä 06](./media/overlapping-discount-combo-06.jpg)
 
 Kun jaetun tuotejoukon kunkin alennuksen raja-arvo on laskettu, alennukset käytetään jaettuihin tuotteisiin järjestyksessä, läpi kaikkien tapausten, korkeimmasta raja-arvosta pienimpään raja-arvoon. Tässä menetelmässä kaikkia jäljellä olevia alennusmahdollisuuksia ei verrata aina, kun yhtä alennuksen ilmentymää käytetään. Sen sijaan päällekkäisiä alennuksia verrataan yhden kerran ja käytetään sitten järjestyksessä. Muita vertailuja ei tehdä. Voit määrittää ylärajan, joka ylitettäessä siirrytään käyttämään raja-arvomenetelmää, **Alennus**-välilehdessä **Vähittäismyynnin parametrit** -sivulla. Hyväksyttävä aika kokonaisalennuksen laskentaan vaihtelee vähittäiskaupan toimialasta riippuen. Tämä aika on yleensä kuitenkin kymmenistä millisekunneista yhteen sekuntiin.
-

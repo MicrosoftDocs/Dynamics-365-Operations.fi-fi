@@ -1,13 +1,13 @@
 ---
 title: Kenttien kuvausten tarkasteleminen ja vieminen
-description: "Tässä artikkelissa käsitellään kenttien kuvauksien näyttämistä ja kuvauksien tuomista Kenttien kuvaus -sivun avulla."
+description: Tässä artikkelissa käsitellään kenttien kuvauksien näyttämistä ja kuvauksien tuomista Kenttien kuvaus -sivun avulla.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
 ms.reviewer: rschloma
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7be1495fc42b5f19884a7d9df747f6bec9b64680
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359333"
 ---
-
 # <a name="view-and-export-field-descriptions"></a>Kenttien kuvausten tarkasteleminen ja vieminen
 
 [!include [banner](../includes/banner.md)]
 
 Tässä artikkelissa käsitellään kenttien kuvauksien näyttämistä ja kuvauksien tuomista Kenttien kuvaus -sivun avulla.
 
-Microsoft Dynamics 365 for Finance and Operations -järjestelmässä on kuvaukset joillekin monimutkaisille kentille. Nämä kuvaukset tulevat näkyviin, kun pidät hiiren osoitinta kentän päällä. Voit myös tarkastella ja viedä kuvauksia **Kentän kuvaukset** -sivulla.
+Microsoft Dynamics 365 for Finance and Operationsissa on kuvaukset joillekin monimutkaisille kentille. Nämä kuvaukset tulevat näkyviin, kun pidät hiiren osoitinta kentän päällä. Voit myös tarkastella ja viedä kuvauksia **Kentän kuvaukset** -sivulla.
 
 Kaikilla sivuilla ei ole kentän kuvauksia. Vain monimutkaisilla kentillä on kuvaukset; kuvauksia ei ole kentillä, joiden käyttö on selkeää. Tämän vuoksi joillakin sivuilla ei ole lainkaan kenttäkuvauksia, joillakin sivuilla on muutamia kuvauksia ja joillakin monimutkaisilla sivuilla, kuten monilla parametrisivulla, on useita kuvauksia.
 
@@ -109,4 +108,3 @@ Lisätietoja erilaisista sivujen etsimistavoista on aiemmin tässä artikkelissa
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Mukauta kenttää -ohje](../../dev-itpro/user-interface/customize-field-help.md)
-

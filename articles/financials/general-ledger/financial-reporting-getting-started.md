@@ -1,13 +1,13 @@
 ---
 title: Taloushallinnan raportointi
-description: "Tässä ohjeaiheessa kerrotaan, miten pääset käyttämään taloushallinnon raportointia Microsoft Dynamics 365 for Finance and Operationsissa ja miten taloushallinnon raportointiominaisuuksia käytetään. Se sisältää kuvauksen oletusraporteista, jotka toimitetaan."
+description: Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin Microsoft Dynamics 365 for Finance and Operationsissa ja miten käytät taloudellisen raportoinnin ominaisuuksia. Se sisältää kuvauksen oletusraporteista, jotka toimitetaan.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316967"
 ---
-
 # <a name="financial-reporting"></a>Taloushallinnan raportointi
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten pääset käyttämään taloushallinnon raportointia Microsoft Dynamics 365 for Finance and Operationsissa ja miten taloushallinnon raportointiominaisuuksia käytetään. Se sisältää kuvauksen oletusraporteista, jotka toimitetaan.
+Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin Microsoft Dynamics 365 for Finance and Operationsissa ja miten käytät taloudellisen raportoinnin ominaisuuksia. Se sisältää kuvauksen oletusraporteista, jotka toimitetaan.
 
 <a name="accessing-financial-reporting"></a>Taloushallinnon raportoinnin käyttäminen
 -----------------------------
@@ -118,11 +117,10 @@ Kun napsautat **Talousraportointi**-valikon, näkyviin tulee luettelo yrityksen 
 Voit luoda raporttiluettelosta uuden raportin tai muokata aiemmin luotua raporttia. Jos sinulla on tarvittavat käyttöoikeudet, voit luoda uuden taloudellisen raportin valitsemalla **Uusi** toimintoruudussa. Raportin suunnitteluohjelma ladataan laitteeseen. Kun raportin suunnitteluohjelma käynnistyy, voit luoda sitten uuden raportin. Kun uusi raportti on tallennettu, se tukee näkyviin talousraporttiluetteloon. Luettelossa näkyvät vain raportit, jotka on luotu Finance and Operationsissa käytössä olevalle yritykselle. 
 
 > [!NOTE] 
-> Tietokoneelle, jolle ladataan raportin suunnitteluohjelman asiakasohjelma, on oltava asennettuna Microsoft .NET Frameworkin versio 4.6.2. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [Microsoftin latauskeskuksesta](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Jos käytössäsi on Chrome, sinun on asennettava ClickOnce-laajennus ladataksesi raportin suunnittelun asiakasohjelman. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Voit myös muokata talousraporttiluettelossa näkyvää raporttia. Raporttia ympäröivä alue on valittu, valitse toimintoruudussa **Muokkaa**. Raportin suunnitteluohjelma käynnistyy.
+> Tietokoneelle, jolle ladataan raportin suunnitteluohjelman asiakasohjelma, on oltava asennettuna Microsoft .NET Frameworkin versio 4.6.2. Tämä Microsoft .NET Framework -versio voidaan ladata ja asentaa [Microsoft Download Centeristä](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Jos käytössäsi on Chrome, sinun on asennettava ClickOnce-laajennus ladataksesi raportin suunnittelun asiakasohjelman. Jos käytät incognito-tilaa, varmista, että ClickOnce-laajennus on käytössä incognito-tilassa. Voit myös muokata talousraporttiluettelossa näkyvää raporttia. Raporttia ympäröivä alue on valittu, valitse toimintoruudussa **Muokkaa**. Raportin suunnitteluohjelma käynnistyy.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Raporttien näyttäminen](view-financial-reports.md)
-
 
 
 

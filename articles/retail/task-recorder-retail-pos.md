@@ -1,13 +1,13 @@
 ---
-title: "Tehtävän tallennus ja Help for Retail Modern POS (MPOS) ja Cloud POS"
-description: "Tässä ohjeaiheessa kuvataan, miten tehtävien tallennustoimintoa käytetään Retail Modern POS -sovelluksessa ja pilvimyyntipisteessä."
+title: Retail Modern POS:n (MPOS) ja pilvimyyntipisteen tehtävien tallennustoiminto sekä ohje
+description: Tässä ohjeaiheessa kuvataan, miten tehtävien tallennustoimintoa käytetään Retail Modern POS:ssa ja pilvimyyntipisteessä.
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,23 +19,22 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: a74a1275f08e3dba60a1002a102e143eb37fcd9a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345993"
 ---
-
-# <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Tehtävän tallennus ja Help for Retail Modern POS (MPOS) ja Cloud POS
+# <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS:n (MPOS) ja pilvimyyntipisteen tehtävien tallennustoiminto sekä ohje
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, miten tehtävien tallennustoimintoa käytetään Retail Modern POS -sovelluksessa ja pilvimyyntipisteessä.
+Tässä ohjeaiheessa kuvataan, miten tehtävien tallennustoimintoa käytetään Retail Modern POS:ssa ja pilvimyyntipisteessä.
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Tehtävien tallennustoiminto Retail Modern POS -sovelluksessa on uusi ratkaisu, jonka reagointikyky on suuri. Se sisältää joustavan ohjelmointirajapinnan (API:n), joka mahdollistaa laajennettavuuden ja jonka avulla integrointi liiketoimintaprosessien tallenteiden kuluttajien kanssa on saumatonta. Lisäksi tehtävän tallennus Microsoft Dynamics Lifecycle Servicesin Liiketoimintaprosessin mallintajan (BPM) avulla on ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) on nostettu eteenpäin. Tämän vuoksi käyttäjät voivat jatkaa monipuolisten liiketoimintaprosessien kaavioiden tekemistä tallenteista ja analysoida ja suunnitella sovelluksia.
+Tehtävien tallennustoiminto Retail Modern POS -sovelluksessa on uusi ratkaisu, jonka reagointikyky on suuri. Se sisältää joustavan ohjelmointirajapinnan (API:n), joka mahdollistaa laajennettavuuden ja jonka avulla integrointi liiketoimintaprosessien tallenteiden kuluttajien kanssa on saumatonta. Lisäksi tehtävän tallennus Microsoft Dynamics Lifecycle Servicesin liiketoimintaprosessin mallintajan (BPM) ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) avulla on nostettu eteenpäin. Tämän vuoksi käyttäjät voivat jatkaa monipuolisten liiketoimintaprosessien kaavioiden tekemistä tallenteista ja analysoida ja suunnitella sovelluksia.
 
 ## <a name="architecture"></a>Arkkitehtuuri
 
@@ -69,7 +68,7 @@ Näiden ohjeiden avulla voit luoda uuden tallenteen tehtävien tallennustoiminno
     > [![Kysymysmerkki](./media/help.jpg)](./media/help.jpg)
 
 4. Kun valitset **Aloita**, tehtävien tallennustoiminto siirtyy tallennustilaan. **Tehtävien tallennustoiminto** -ruutu näyttää tallennusprosessiin liittyvät tiedot ja ohjausobjektit.
-5. Suorita toimintoja, joita haluat suorittaa Retail Modern POS -sovelluksen tai pilvimyyntipisteen käyttöliittymässä.
+5. Suorita toimintoja, joita haluat suorittaa Retail Modern POS:n tai pilvimyyntipisteen käyttöliittymässä.
 6. Kun lopetat tallennusistunnon, valitse **Lopeta**.
 
 ## <a name="download-options"></a>Latausvalinnat
@@ -80,7 +79,7 @@ Tallennusistunnon loputtua näkyvissä on useita vaihtoehtoja, joiden avulla tal
 
 ### <a name="save-to-this-pc"></a>Tallenna tälle tietokoneelle
 
-Tallennepaketin avulla voi toistaa tehtäväoppaan, ylläpitää tallennetta ja muokata tallenteen huomautuksia. (Tätä toimintoa ei ole vielä otettu käyttöön Retail Modern POS -sovelluksessa ja pilvimyyntipisteessä.)
+Tallennepaketin avulla voi toistaa tehtäväoppaan, ylläpitää tallennetta ja muokata tallenteen huomautuksia. (Tätä toimintoa ei ole vielä otettu käyttöön Retail Modern POS:ssa ja pilvimyyntipisteessä.)
 
 ### <a name="export-as-word-document"></a>Vie Word-tiedostona
 
@@ -137,14 +136,13 @@ Huomautus on lisäteksti, joka lisätään vaiheeseen tallennuksen aikana. Huoma
 
 **Muistiinpanot**-kenttään syötetty kenttä näkyy tehtäväoppaan vaiheen tekstin *alapuolella*. Käyttäjän on laajennettava vaiheen teksti ponnahdusikkunassa, jotta sen voi lukea. Tämä sijainti on sopiva valinnaisesti luettavalle materiaalille tai muille tiedoille, jotka voivat olla hyödyllisiä, mutta joita ei vaadita toiminnon suorittamista varten.
 
-## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Retail Modern POS -sovelluksen ja pilvimyyntipisteen ohje
+## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Retail Modern POS:n ja pilvimyyntipisteen ohje
 
-Voit näyttää omat mukautetut tehtävätallenteet Retail Modern POS -sovelluksen ja pilvimyyntipisteen ohjeruudussa niin, että niitä voidaan tarkastella tekstinä, kun tallennat tehtävätallenteet ensin omaan BPM-kirjastoon ja päivität sitten ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään.](../fin-and-ops/get-started/help-connect.md). Retail Modern POS -sovelluksen ja pilvimyyntipisteen ohje tekee haut LCS-palvelusta reaaliaikaisesti. Se tekee haun kaikista BPM-kirjastoista, jotka on valittu Microsoft Dynamics 365 for Retailin ohjejärjestelmän parametreissa, ja näyttää hakua vastaavat tulokset. Voit käyttää **Ohje**-valikkoa valitsemalla näytön yläosassa olevan **Ohje**-painikkeen (kysymysmerkki) kirjoittamalla hakuruutuun prosessin nimen ja painamalla hakupainiketta.
+Voit näyttää omat mukautetut tehtävätallenteet Retail Modern POS:n ja pilvimyyntipisteen ohjeruudussa niin, että niitä voidaan tarkastella tekstinä, kun tallennat tehtävätallenteet ensin omaan BPM-kirjastoon ja päivität sitten ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään.](../fin-and-ops/get-started/help-connect.md). Retail Modern POS:n ja pilvimyyntipisteen ohje tekee haut LCS-palvelusta reaaliaikaisesti. Se tekee haun kaikista BPM-kirjastoista, jotka on valittu Microsoft Dynamics 365 for Retailin ohjejärjestelmän parametreissa, ja näyttää hakua vastaavat tulokset. Voit käyttää **Ohje**-valikkoa valitsemalla näytön yläosassa olevan **Ohje**-painikkeen (kysymysmerkki) kirjoittamalla hakuruutuun prosessin nimen ja painamalla hakupainiketta.
 
 [![Ohje-painike](./media/help.jpg)](./media/help.jpg)
 
 Kun valitset hakutuloksista tehtäväoppaan, voit tarkastella vaiheita ohjeaiheena tai viedä ne Word-asiakirjaan.
 
 > [!NOTE]
-> Retail Modern POS -sovelluksen ja pilvimyyntipisteen ohje ei anna tehtäväohjeita sen mukaan, mikä lomake tai tehtävä on käsiteltävänä. Kirjoita hakukenttään prosessin nimi ja valitse sitten on **Haku**.
-
+> Retail Modern POS:n ja pilvimyyntipisteen ohje ei anna tehtäväohjeita sen mukaan, mikä lomake tai tehtävä on käsiteltävänä. Kirjoita hakukenttään prosessin nimi ja valitse sitten on **Haku**.

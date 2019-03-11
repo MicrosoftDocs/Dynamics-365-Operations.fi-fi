@@ -1,13 +1,13 @@
---- 
-title: "Käyttäjien liittäminen käyttöoikeusrooleihin"
-description: "Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin käyttö edellyttää, että käyttäjille on määritetty käyttöoikeusroolit."
+---
+title: Käyttäjien liittäminen käyttöoikeusrooleihin
+description: Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin käyttämistä varten käyttäjille on määritettävä käyttöoikeusrooleja.
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
 ms.reviewer: margoc
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 55cb085bb5170aa4894a2240a12f6ca451b922fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 551048af26f46d334c562d1968963aed262a5e03
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349949"
 ---
 # <a name="assign-users-to-security-roles"></a>Käyttäjien liittäminen käyttöoikeusrooleihin
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin käyttö edellyttää, että käyttäjille on määritetty käyttöoikeusroolit. Tässä menettelyssä kerrotaan, kuinka järjestelmänvalvojat voivat määrittää rooleja käyttäjille automaattisesti liiketoimintatietojen perusteella. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
+Microsoft Dynamics 365 for Finance and Operations, Enterprise Editionin käyttämistä varten käyttäjille on määritettävä käyttöoikeusrooleja. Tässä menettelyssä kerrotaan, kuinka järjestelmänvalvojat voivat määrittää rooleja käyttäjille automaattisesti liiketoimintatietojen perusteella. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 
 
 ## <a name="automatically-assign-users-to-roles"></a>Liitä käyttäjät rooleihin automaattisesti
@@ -52,5 +52,4 @@ Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin käyttö
     * Valitse käyttäjä.  
 6. Napsauta Sulje pois roolista -kohtaa.
     * Napsauta Sulje pois roolista -painiketta sulkeaksesi valitut käyttäjät pois roolista. Ohitukset voit poistaa valitsemalla käyttäjät, joiden ohituksen haluat poistaa ja napsauttamalla Palauta tila -painiketta. Kun poistat ohituksen palauttamalla käyttäjän tilan, käyttäjän rooli määritetään uudelleen automaattisesti. Käyttäjää ei kuitenkaan määritetä välittömästi rooliin tai suljeta siitä pois kun palautat tilan. Sen sijaan käyttäjä määritetään rooliin tai poistetaan siitä seuraavalla kerralla, kun automaattisen roolinmäärityksen säännöt ajetaan.  
-
 

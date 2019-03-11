@@ -1,13 +1,13 @@
 ---
-title: "Töiden ajoitus"
-description: "Tässä artikkelissa on tietoja töiden ajoituksessa, joka on tarkempi kuin työvaiheiden ajoitus. Töiden ajoitusta voi käyttää on valmistusympäristön hallintaan sekä yksittäisten töiden (tai työtilauksien) ajoittamiseen."
+title: Töiden ajoitus
+description: Tässä artikkelissa on tietoja töiden ajoituksessa, joka on tarkempi kuin työvaiheiden ajoitus. Töiden ajoitusta voi käyttää on valmistusympäristön hallintaan sekä yksittäisten töiden (tai työtilauksien) ajoittamiseen.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d506a6fbeb7e88dc6b1709203bc0822b1f4dc0f8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8162797256e221192dc3e1a12aa145e28d5bc0f5
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339530"
 ---
-
 # <a name="job-scheduling"></a>Töiden ajoitus
 
 [!include [banner](../includes/banner.md)]
@@ -75,7 +74,6 @@ Resurssit kohdistetaan töihin ajoitusprosessin välityksellä. Voit määrittä
 
 ## <a name="resource-efficiency"></a>Resurssin tehokkuus
 Töiden ajoitus ottaa resursseille määritetyt tehokkuusprosentit huomioon. Tehokkuusprosentit vähentävät tai lisäävät resurssille varattua aikaa. Sen seurauksena siis myös läpimenoaika lisääntyy tai vähenee. Laskutoimituksessa käytetään seuraavaa kaavaa: Ajoitusaika = Aika x 100 ÷ Tehokkuusprosentti Tässä kaavassa *Aika* sisältää sekä asetus- että ajoajan.
-
 
 
 

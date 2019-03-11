@@ -1,13 +1,13 @@
 ---
 title: Myyntipalautukset
-description: "Tässä aiheessa on tietoja palautustilausten prosessista. Se sisältää tietoja asiakaspalautuksista ja niiden vaikutuksesta kustannuslaskentaan ja käytettävissä olevan varaston määriin."
+description: Tässä aiheessa on tietoja palautustilausten prosessista. Se sisältää tietoja asiakaspalautuksista ja niiden vaikutuksesta kustannuslaskentaan ja käytettävissä olevan varaston määriin.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d4da2ed8d61ffae3a4a4dc24793d82de22e86e59
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362691"
 ---
-
 # <a name="sales-returns"></a>Myyntipalautukset
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa on tietoja palautustilausten prosessista. Se sisältää tietoja asiakaspalautuksista ja niiden vaikutuksesta kustannuslaskentaan ja käytettävissä olevan varaston määriin.
 
-Asiakas voi palauttaa nimikkeitä useista syistä. Nimike saattaa olla viallinen tai se ei ehkä täytä asiakkaan odotuksia. Palautusprosessi alkaa, kun asiakas lähettää nimikkeen palautuspyynnön. Kun asiakkaan pyyntö on vastaanotettu, palautustilaus luodaan Microsoft Dynamics 365 for Finance and Operations -järjestelmässä.
+Asiakas voi palauttaa nimikkeitä useista syistä. Nimike saattaa olla viallinen tai se ei ehkä täytä asiakkaan odotuksia. Palautusprosessi alkaa, kun asiakas lähettää nimikkeen palautuspyynnön. Kun asiakkaan pyyntö on vastaanotettu, palautustilaus luodaan Microsoft Dynamics 365 for Finance and Operationsissa.
 
 ## <a name="return-order-process"></a>Palautustilausten prosessi
 Seuraavassa kuvassa on yhteenveto palautustilausten prosessista.  
@@ -133,11 +132,11 @@ Palautettujen tavaroiden poistamistavan määrittämisen lisäksi käsittelykood
 <ul>
 <li>Osapuolten välillä on riittävä luottamus.</li>
 <li>Viallisen nimikkeen palautuskustannus on kohtuuton.</li>
-<li>Nimikkeitä ei saa päästää takaisin varastoon. Fyysistä palautusta ei tarvita muiden olosuhteiden vuoksi.</li>
+<li>Nimikkeitä ei voi päästää takaisin varastoon. Fyysistä palautusta ei tarvita muiden olosuhteiden vuoksi.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Kredit</td>
+<td>Hyvitys</td>
 <td><ul>
 <li>Asiakkaalle hyvitetään myyntihinta vähennettynä maksuilla ja kuluilla.</li>
 <li>Varaston arvo nousee palautetun nimikkeen kustannuksen mukaisesti.</li>
@@ -329,7 +328,6 @@ Tässä esimerkissä palautustilauksen rivi on luotu **Etsi myyntitilaus** -toim
 ![Palautustilauksen rivi on luotu Etsi myyntitilaus -toiminnolla ](./media/SalesReturn11.png)  
 
 >[Huomautus!] **Alennus** ja **Palautuksen kustannushinta** on määritetty oikein. Tämän vuoksi myyntilasku ilmenee käännettynä.
-
 
 
 

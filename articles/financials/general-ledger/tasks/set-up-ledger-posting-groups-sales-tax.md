@@ -1,13 +1,13 @@
---- 
-title: "Arvonlisäveron kirjanpidon kirjausryhmien määrittäminen"
-description: "Arvonlisävero lasketaan ja kirjataan kirjanpidon kirjausryhmien päätileille."
+---
+title: Arvonlisäveron kirjanpidon kirjausryhmien määrittäminen
+description: Arvonlisävero lasketaan ja kirjataan kirjanpidon kirjausryhmien päätileille.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAccountGroup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 15421da6f325dfee22a303e9fe83a0e72895fa08
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308342"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Arvonlisäveron kirjanpidon kirjausryhmien määrittäminen
 
@@ -48,5 +48,4 @@ Arvonlisävero lasketaan ja kirjataan kirjanpidon kirjausryhmien päätileille. 
 11. Valitse Asiakastapauksen alennus -kentässä päätili, jonne tähän kirjanpidon kirjausryhmän liitetyn arvonlisäverokoodin käteisalennukset kirjataan.
     * Tämä kenttä on valinnainen. Jos tiliä ei ole syötetty, käytetään käteisalennuksen koodien päätiliä. Kirjanpidon kirjausryhmässä saattaa kannattaa käyttää eri tilejä, jos käytössä on arvonlisäveroryhmien Mitätöi käteisalennuksen arvonlisävero -kohta.  
 12. Valitse Tallenna.
-
 

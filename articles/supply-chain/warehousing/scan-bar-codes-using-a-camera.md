@@ -1,13 +1,13 @@
 ---
-title: "Viivakoodien lukeminen kameralla Dynamics 365 for Finance and Operations – Warehousingissa"
-description: "Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operations – Warehousingin määrittämistä mobiililaitteella tapahtuvaa viivakoodien lukemista varten."
+title: Viivakoodien lukeminen kameran avulla Dynamics 365 for Finance and Operationsin varastointisovelluksessa
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operationsin varastointisovelluksen määrittämistä mobiililaitteella tapahtuvaa viivakoodien lukemista varten.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSMobileAppField
 audience: Application User
 ms.reviewer: josaw
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: e78d0a82d3ca66a6912ea1a9517296ca241edf1c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: f7fe3ab07578b09822fbfeaa4b07331b79f13610
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/09/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319428"
 ---
-
-# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Viivakoodien lukeminen kameralla Dynamics 365 for Finance and Operations – Warehousingissa
+# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Viivakoodien lukeminen kameran avulla Dynamics 365 for Finance and Operationsin varastointisovelluksessa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operations – Warehousingin määrittämistä mobiililaitteella tapahtuvaa viivakoodien lukemista varten. 
+Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operationsin varastointisovelluksen määrittämistä mobiililaitteella tapahtuvaa viivakoodien lukemista varten. 
 
 ## <a name="prerequisites"></a>Edellytykset
-Tämän toiminnon käyttämiseen tarvitaan Warehousing 1.2.0.0, ja laitteessa on oltava kamera. Kun avaat sovelluksen päivityksen jälkeen, sinua pyydetään sallimaan kameran käyttö Dynamics 365 for Finance and Operations – Warehousing -sovelluksessa. Jos laiteessa ei ole kameraa, lupaa ei kysytä etkä voi käyttää kameraa skannerina. 
+Tämän toiminnon käyttämiseen tarvitaan Warehousing 1.2.0.0, ja laitteessa on oltava kamera. Kun avaat sovelluksen päivityksen jälkeen, sinua pyydetään sallimaan kameran käyttö Dynamics 365 for Finance and Operationsin varastointisovelluksessa. Jos laiteessa ei ole kameraa, lupaa ei kysytä etkä voi käyttää kameraa skannerina. 
 
 ## <a name="setup"></a>Määritys
 Voit valita Warehousing-sovelluksen näyttöasetuksissa, käytetäänkö kameraa viivakoodin lukemiseen. Jos otat **kameran käytön skannerina** käyttöön, voit käyttää kameraa jokaisessa syöttömenetelmäksi, jonka ensisijaiseksi syötetilaksi on määritetty **Luetaan**. 
@@ -55,5 +54,4 @@ Kamerasivu käynnistetään jokaisella sivulla, jonka syötekentän ensisijaisek
 Kun napsautat Kamera-sivulla kamerapainiketta, se näkyy himmeänä viivakoodin tunnistusyrityksen ajan. Jos viivakoodia ei tunnisteta 5 sekunnin kuluessa, prosessi aikakatkaistaan ja kamerapainiketta voi taas käyttää. Voit sitten yrittää lukea viivakoodin uudelleen.
 
 Kun osoitat viivakoodia kameralla, saat parhaan tuloksen, kun viivakoodi on kohdistettu viivojen sisälle. Kun viivakoodi on luettu, tulos käsitellään ja siirryt seuraavaan vaiheeseen. Jos seuraavassa vaiheessa on toinen syötekenttä, jonka ensisijaiseksi syöttömenetelmäksi on valittu Luetaan, kamerasivu käynnistyy uudelleen. Jos seuraava vaihe ei ole luettava kenttä, kamerasivu ei käynnisty.
-
 

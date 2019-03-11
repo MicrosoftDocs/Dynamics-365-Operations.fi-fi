@@ -1,13 +1,13 @@
 ---
-title: "Toimittajan työnkulku"
-description: "Muokkaa toimittajatietojen ja hyväksy ne työnkulun avulla."
+title: Toimittajan työnkulku
+description: Muokkaa toimittajatietojen ja hyväksy ne työnkulun avulla.
 author: mikefalkner
 manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 950a1852acf9f3e4747ce2d55738c0eb3a646897
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329686"
 ---
-
 # <a name="vendor-workflow"></a>Toimittajan työnkulku
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,7 @@ Ennen kuin voit käyttää työnkulkuominaisuutta, se on otettava käyttöön.
 
 ## <a name="change-vendor-information-and-submit-the-changes-to-the-workflow"></a>Toimittajatietojen muuttaminen ja muutosten lähettäminen työnkulkuun
 
-Kun muutat kenttää, joka on käytössä työnkulussa, **Ehdotetut muutokset** -sivu avautuu. Tämä sivu näyttää sekä kentän alkuperäisen arvon että antamasi uuden arvon. Alkuperäinen arvo on palautettu kenttään, johon olet tehnyt muutoksia. Tilailmoitus ilmaisee myös, että tekemiäsi muutoksia ei ole lähetetty. 
+Kun muutat kenttää, joka on käytössä työnkulussa, **Ehdotetut muutokset** -sivu avautuu. Tämä sivu näyttää sekä alkuperäisen kentän arvon että uuden kirjoittamasi kentän arvon. Alkuperäinen arvo on palautettu kenttään, johon olet tehnyt muutoksia. Tilailmoitus ilmaisee myös, että tekemiäsi muutoksia ei ole lähetetty. 
 
 Aina kun muutat kenttää, joka on käytössä työnkulussa, kyseinen kenttä lisätään **Ehdotetut muutokset** -sivulla olevaan luetteloon. Hylkää ehdotetun kentän arvo kentän vieressä olevalla **Hylkää**-painikkeella. Hylkää kaikki muutokset sivun alareunassa olevalla **Hylkää kaikki muutokset** -painikkeella. Sulje sivu valitsemalla **OK**.
 
@@ -61,5 +60,4 @@ Kun sinulla on vähintään yksi ehdotettu muutos, kaksi uutta välilehteä tuke
 
     Sivun tilaksi muutetaan **Hyväksymistä odottavat muutokset**.
 
-Työnkulku noudattaa Microsoft Dynamics 365 for Finance and Operationsin vakiotyönkulkuprosessia. Hyväksyjä ohjataan **Toimittaja**-sivulle, jossa hän voi tarkastella muutoksia **Ehdotetut muutokset** -sivulla ja hyväksyä sitten työnkulun valitsemalla **Työnkulku \> Hyväksy**. Kun kaikki hyväksynnät ovat valmiita, kentät päivitetään ehdotetuilla arvoilla.
-
+Työnkulku noudattaa Microsoft Dynamics 365 for Finance and Operationsin vakiotyönkulkua. Hyväksyjä ohjataan **Toimittaja**-sivulle, jossa hän voi tarkastella muutoksia **Ehdotetut muutokset** -sivulla ja hyväksyä sitten työnkulun valitsemalla **Työnkulku \> Hyväksy**. Kun kaikki hyväksynnät on käyty läpi, kentät päivitetään ehdottamillasi arvoilla.

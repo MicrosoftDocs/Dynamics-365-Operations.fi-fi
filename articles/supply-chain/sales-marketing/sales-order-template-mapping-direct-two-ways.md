@@ -1,37 +1,36 @@
 ---
-title: "Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä"
-description: "Tässä ohjeaiheessa esitellään mallit ja niiden taustalla olevat tehtävät, joita käytetään synkronoitaessa myyntitilaukset suoraan Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operationsin välillä."
+title: Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä
+description: Ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään myyntitilausten synkronointiin Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operationsin välillä.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
 ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339116"
 ---
-
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa esitellään mallit ja niiden taustalla olevat tehtävät, joita käytetään synkronoitaessa myyntitilaukset suoraan Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operationsin välillä.
+Ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään myyntitilausten synkronointiin Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operationsin välillä.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
 
@@ -198,4 +197,3 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 ## <a name="related-topics"></a>Liittyvät aiheet
 
 [Prospektista käteiseksi](prospect-to-cash.md)
-

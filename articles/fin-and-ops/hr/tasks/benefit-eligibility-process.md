@@ -1,13 +1,13 @@
---- 
+---
 title: Etukelpoisuusprosessi
-description: "Tässä menettelyssä kerrotaan, miten edun kelpoisuuskäsittely toimii."
+description: Tässä menettelyssä kerrotaan, miten edun kelpoisuuskäsittely toimii.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: 859bf2ef369173ce4b6bc380820ea157ae86e13a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325546"
 ---
 # <a name="benefit-eligibility-process"></a>Etukelpoisuusprosessi
 
@@ -55,5 +55,4 @@ Tässä menettelyssä kerrotaan, miten edun kelpoisuuskäsittely toimii. Voit k�
 24. Valitse Näytä tulokset.
 25. Avaa Tila-sarakkeen suodatin.
 26. Lajittele A–Z
-
 

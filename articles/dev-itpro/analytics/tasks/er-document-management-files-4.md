@@ -1,13 +1,13 @@
---- 
-title: "Aja muotoja tiedostonhallinnan tiedostojen käyttämiseksi ER-tuotoksissa"
-description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa."
+---
+title: Aja muotoja tiedostonhallinnan tiedostojen käyttämiseksi ER-tuotoksissa
+description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenInvoicesListPage, CustInvoiceJournal, SalesTable, ERSolutionTable
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: e87dbb0fa890f4d554c3e2ff09566fb2b1f3206b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364784"
 ---
 # <a name="run-formats-to-use-document-management-files-in-er-output"></a>Aja muotoja tiedostonhallinnan tiedostojen käyttämiseksi ER-tuotoksissa
 
@@ -31,7 +31,7 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
 
 Jotta voit suorittaa nämä vaiheet, suorita ensin "ER Tiedostojenhallinnan tiedostojen käyttö muodon tuloksissa (osa 3: muodon luominen)" -ohjeen vaiheet.
 
-Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.
+Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.
 
 
 ## <a name="add-necessary-attachments-for-sales-order-of-a-single-invoice"></a>Lisää tarpeelliset liitteet yhden laskun myyntitilaukseen.
@@ -69,5 +69,4 @@ Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operation
 10. Valitse OK.
 11. Valitse OK.
     * Tarkista aikaansaatu tuotos. Huomaa, että kullekin liitetiedostolle on luotu yksi XML-solmu. Liitteen sisältö lisätään XML-tuotteeseen MIME (base64) -tekstimuodossa.  
-
 

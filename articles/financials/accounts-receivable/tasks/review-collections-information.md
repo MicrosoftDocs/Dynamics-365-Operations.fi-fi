@@ -1,13 +1,13 @@
---- 
+---
 title: Perimistietojen tarkistaminen
-description: "Tässä menettelyssä käsitellään perintätietojen tarkastelemista sekä erilaisia asetusvaihtoehtoja ja perintätapahtumia."
+description: Tässä menettelyssä käsitellään perintätietojen tarkastelemista sekä erilaisia asetusvaihtoehtoja ja perintätapahtumia.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 44d89d2bacc8f301a19bfd09d229809d492a55fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: eb0866505702ec5d047b6c8f3f0657aae787bedc
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349098"
 ---
 # <a name="review-collections-information"></a>Perimistietojen tarkistaminen
 
@@ -131,5 +131,4 @@ Tässä menettelyssä käsitellään perintätietojen tarkastelemista sekä eril
     * Valitse asiakkaalle määritetty perintätapaus tai jätä kenttä tyhjäksi. Jos tapaus on valittu, vain kyseiseen tapaukseen liittyvät tapahtumat ja tehtävät näkyvät tässä lomakkeessa.  
 8. Valitse Näytä luettelo.
     * Valitse asiakas tai hyväksy oletusarvo. Oletusarvoisesti tämä asiakastili on valittu luettelosivulta tai lomakkeesta, josta avasit tämän lomakkeen. Jos avasit lomakkeen luettelosivulta, luettelon asiakkaat ovat asiakkaille, jotka on sisällytetty luettelosivulla käytettävään perintäpooliin.  
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Tuotannon alihankintatyön hallinta"
-description: "Tässä ohjeaiheessa kerrotaan, miten alihankintatoimintoja hallitaan Microsoft Dynamics 365 for Finance and Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin."
+title: Tuotannon alihankintatyön hallinta
+description: Tässä ohjeaiheessa kerrotaan, miten alihankkijatoimintoja hallitaan Microsoft Dynamics 365 for Finance and Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326581"
 ---
-
 # <a name="manage-subcontracting-work-in-production"></a>Tuotannon alihankintatyön hallinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten alihankintatoimintoja hallitaan Microsoft Dynamics 365 for Finance and Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
+Tässä ohjeaiheessa kerrotaan, miten alihankkijatoimintoja hallitaan Microsoft Dynamics 365 for Finance and Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
 
 [Tuotantoprosessin](production-process-overview.md) töitä voivat tehdä resurssit, joita omistaa tai hallinnoi toimittajat. Yleensä toimittajan resursseja käytetään tasaamaan jaksoittaista suurempaa kysyntää, joka ylittää yhtiön omien resurssien kapasiteetin. Toimittaja voi myös pystyä tarjoamaan erityisiä [resurssin ominaisuuksia](resource-capabilities.md) tai resursseja alempaan hintaan.  
 
@@ -41,7 +40,7 @@ Alihankintatoimintoja tai -toimenpiteitä käytettäessä ne vaikuttavat kaikkii
 
 Sisäisten resurssien kiinteä kustannushinta kohdistetaan yleensä ajanjaksolle. Sitä vastoin alihankintaresurssien kustannukset perustuvat liittyvän palvelun ostohintaan. Palvelu on määritetty toisena tuotteena ja sitä käytetään suorittamaan tietyn alihankintaoperaation hankinta- ja ostoprosesseihin.  
 
-Tällä hetkellä Microsoft Dynamics 365 for Finance and Operationsissa ei ole eksplisiittistä puolivalmisteiden käsitettä. Tuotantotilaukselle, joka edellyttää useita toimintoja muuntaakseen raaka-aineet valmiiksi tuotteeksi, valmis tuote kirjataan takaisin varastoon vain viimeisessä operaatiossa. Puolivalmiita tuotteita, jotka aiemmat toimet tuottavat, käsitellään keskeneräisenä työnä (KET), mutta niitä ei kirjata tai seurata varastossa. Vaikka voit jakaa reitit ja tuoterakenteet useisiin pienempiin yksiköihin, tämä lähestymistapa kasvattaa hallittavien tuotteiden, tuoterakenteiden ja reittien määrää.  
+Tällä hetkellä Microsoft Dynamics 365 for Finance and Operationsissa ei ole selkeää puolivalmisteiden käsitettä. Tuotantotilaukselle, joka edellyttää useita toimintoja muuntaakseen raaka-aineet valmiiksi tuotteeksi, valmis tuote kirjataan takaisin varastoon vain viimeisessä operaatiossa. Puolivalmiita tuotteita, jotka aiemmat toimet tuottavat, käsitellään keskeneräisenä työnä (KET), mutta niitä ei kirjata tai seurata varastossa. Vaikka voit jakaa reitit ja tuoterakenteet useisiin pienempiin yksiköihin, tämä lähestymistapa kasvattaa hallittavien tuotteiden, tuoterakenteiden ja reittien määrää.  
 
 Tuotannon alihankintatyön mallintamiseen on kaksi tapaa. Nämä menetelmät eroavat siinä, miten alihankinnan prosessi voidaan mallintaa, miten puolivalmisteet esitetään prosessissa ja miten kustannusseuranta on hallittu.
 
@@ -101,7 +100,6 @@ Puolivalmisteet ovat poikkeus tähän sääntöön. Puolivalmisteiden siirrossa 
 **Huomautus:** Yhden tuotantotilauksen tuotantoreititys ei voi koskea useita toimipaikkoja. Tämä sääntö pätee myös alihankkijalle annettuun työhön. Siksi varastot, jotka edustavat toimittajan hallinnoimia materiaalien sijainteja, pitää määrittää samaan toimipaikkaan kuin sisäiset resurssit, joita käytetään kyseisessä reitityksessä. Vaikka tuotantovirrat voivat kulkea useiden toimipaikkojen kautta, ne eivät voi kuljettaa puolivalmisteita toimipaikasta toiseen, koska kyseinen toiminta edellyttää kustannusten kontekstin muutoksen.  
 
 Yleensä tulosvarasto ja alihankinnan resurssiryhmän sijainti on suoraan kohdistettu tuotantovirran tai reitityksen seuraavan vaiheen varastoon ja sijaintiin. Tämä määritys auttaa vähentämään työn raportointia tai mallinnettavien ylimääräisten siirtotehtävien määrää.
-
 
 
 

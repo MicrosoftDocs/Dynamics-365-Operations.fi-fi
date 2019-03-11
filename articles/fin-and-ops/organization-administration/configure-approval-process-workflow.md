@@ -1,13 +1,13 @@
 ---
-title: "Hyväksyntäprosessien lisääminen työnkulkuun"
-description: "Määritä hyväksyntäprosessin ominaisuudet seuraavan menettelyn avulla."
+title: Hyväksyntäprosessien lisääminen työnkulkuun
+description: Määritä hyväksyntäprosessin ominaisuudet seuraavan menettelyn avulla.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 08641eaac31813a8bee3231118f8e2bf802ea3e1
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325638"
 ---
-
 # <a name="configure-approval-processes-in-a-workflow"></a>Hyväksyntäprosessien lisääminen työnkulkuun
 
 [!include [banner](../includes/banner.md)]
@@ -124,11 +123,11 @@ Voit lähettää käyttäjille ilmoituksia, kun asiakirja on hyväksytty, hylät
     </tr>
     <tr>
     <td><strong>Käyttäjä</strong></td>
-    <td>Tietyt Microsoft Dynamics 365 for Finance and Operations -käyttäjät</td>
+    <td>Tietyt Microsoft Dynamics 365 for Finance and Operationsin käyttäjät</td>
     <td>
     <ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
-    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Microsoft Dynamics 365 for Finance and Operations -käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään, ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
+    <li><strong>Käytettävissä olevat käyttäjät</strong>: luettelo sisältää kaikki Microsoft Dynamics 365 for Finance and Operationsin käyttäjät. Valitse käyttäjät, joille ilmoituksia lähetetään, ja siirrä nämä käyttäjät <strong>Valitut käyttäjät</strong> -luetteloon.</li>
     </ol>
     </td>
     </tr>
@@ -184,4 +183,3 @@ Hyväksyntäprosessi koostuu hyväksymisvaiheista. Lisää hyväksyntäprosessii
 1. Kaksoisnapsauta hyväksyntäprosessia työnkulun editorissa. Työnkulun editori näyttää hyväksyntäprosessin vaiheet.
 2. Hyväksyntävaihe lisätään vetämällä vaihe **Työnkulun elementit** -alueelta alustalle.
 3. Lisätietoja hyväksyntävaiheen konfiguroimisesta on kohdassa [Hyväksyntävaiheen konfiguroiminen](configure-approval-step-workflow.md).
-

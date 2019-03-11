@@ -1,13 +1,13 @@
 ---
-title: "Käyttöomaisuuden poisto"
-description: "Tämä ohjeaihe sisältää käyttöomaisuuden poiston yleiskatsauksen."
+title: Käyttöomaisuuden poisto
+description: Tämä ohjeaihe sisältää käyttöomaisuuden poiston yleiskatsauksen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBonus, AssetBookTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a82e14e12cbde29e5619518481d0c22f6fa1a37a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e362d80f5c4a33ad604c717333777e7c5fdef489
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332791"
 ---
-
 # <a name="fixed-asset-depreciation"></a>Käyttöomaisuuden poisto
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,6 @@ Jokaisessa kirjassa on kalenteri, jota käytetään käyttöomaisuuden poistoiss
 Voit luoda yhteisiä kalentereita **Kirjanpidon kalenterit** -sivulla Kirjanpito-osiossa.
 
 Lisätietoja on kohdassa [Poistomenetelmät ja -käytännöt](depreciation-methods-conventions.md).
-
 
 
 

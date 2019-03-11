@@ -1,13 +1,13 @@
 ---
-title: "Yrityksen hakemiston mobiilityötila"
-description: "Tässä ohjeaiheessa on tietoja yrityshakemiston mobiilityötilasta, jossa käyttäjät voivat tarkastella organisaation muita työntekijöitä ja ottaa heihin yhteyttä."
+title: Yrityksen hakemiston mobiilityötila
+description: Tässä ohjeaiheessa on tietoja yrityshakemiston mobiilityötilasta, jossa käyttäjät voivat tarkastella organisaation muita työntekijöitä ja ottaa heihin yhteyttä.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308618"
 ---
-
 # <a name="company-directory-mobile-workspace"></a>Yrityksen hakemiston mobiilityötila
 
 [!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja **Yrityksen hakemisto** -mobiilityötilasta. Käyttäjät voivat tarkastella tässä työtilassa organisaation muita työntekijöitä ja ottaa heihin yhteyttä.
 
-Tätä mobiilityötilaa voi käyttää Microsoft Dynamics 365 for Unified Operations -mobiilisovelluksella.
+Tätä mobiilityötilaa voi käyttää Microsoft Dynamics 365 for Unified Operations Mobile -sovelluksella.
 
 ## <a name="overview"></a>Yleiskuvaus
 Käyttäjät voivat tehdä seuraavia tehtäviä **Yrityksen hakemisto** -mobiilityötilassa:
@@ -58,7 +57,7 @@ Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunno
 </ul>
 </td>
 <td>Järjestelmänvalvoja</td>
-<td>Jos Finance and Operationsia ei ole vielä otettu organisaatiossa käyttöön, lisätietoja on ohjeaiheessa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön ottaminen käyttöön</a>. Jos Talentia ei ole vielä otettu organisaatiossa käyttöön, järjestelmänvalvoja voi hakea kokeiluversion <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent-sivustosta</a>.
+<td>Jos Finance and Operationsia ei ole vielä otettu organisaatiossa käyttöön, lisätietoja on kohdassa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön ottaminen käyttöön</a>. Jos Talentia ei ole vielä otettu organisaatiossa käyttöön, järjestelmänvalvoja voi hakea kokeiluversion <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent-sivulta</a>.
 </td>
 </tr>
 <tr class="even">
@@ -77,7 +76,7 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Kirjautuminen mobiilisovellukseen
 1.  Käynnistä sovellus mobiililaitteessa.
-2.  Anna oman Microsoft Dynamics 365:n URL-osoite.
+2.  Anna Microsoft Dynamics 365:n URL-osoite.
 3.  Käyttäjänimi ja salasana kysytään, kun kirjaudut sovellukseen ensimmäisen kerran. Kirjota tunnistetiedot.
 4.  Kun olet kirjautunut sisään, yrityksen käytettävissä olevat työtilat ovat näkyvissä. Huomaa, että jos järjestelmänvalvoja julkaisee uuden työtilan myöhemmin, mobiilityötilojen luettelo on päivitettävä.
 
@@ -91,4 +90,3 @@ Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
 1.  Valitse mobiilisovelluksessa **Yrityksen hakemisto** -työtila.
 2.  Aloita haku kirjoittamalla **Haku**-kenttään työntekijän etunimi, sukunimi, nimike tai osasto.
 3.  Valitse työntekijä. **Työntekijän profiili** -sivu avautuu. Tällä sivulla on näkyvissä muun muassa työntekijän etunimi, sukunimi, nimike ja osasto.
-

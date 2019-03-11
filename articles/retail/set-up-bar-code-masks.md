@@ -1,13 +1,13 @@
 ---
-title: "Viivakoodin muotojen määrittäminen"
-description: "Tässä aiheessa kuvataan, miten määrität viivakoodin muodon merkit, viivakoodin muodot, ja miten viivakoodin muodot liitetään viivakoodeihin."
+title: Viivakoodin muotojen määrittäminen
+description: Tässä aiheessa kuvataan, miten määrität viivakoodin muodon merkit, viivakoodin muodot, ja miten viivakoodin muodot liitetään viivakoodeihin.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d3527807650061804212abf67e536c17078aabf9
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340611"
 ---
-
 # <a name="set-up-bar-code-masks"></a>Viivakoodin muotojen määrittäminen
 
 [!include [banner](includes/banner.md)]
@@ -51,7 +50,7 @@ Viivakoodin muotoja käytetään viivakoodien luomiseen ja tunnistamaan myyntipi
 | Työntekijä          | Ilmaisee viivakoodin osan työntekijän tunnusnumerolle, jota käytetään myyntipisteeseen kirjautumisessa viivakoodilla. |
 | Asiakas         | Ilmaisee asiakastunnuksen osan. |
 | Tietomerkintä       | *Ei vielä toteutettu.* |
-| Alennuskoodi    | *Poistettu* Dynamics 365 for Retail kevään 2017 versiosta alkaen. Aiemmin: ilmaisee viivakoodissa alennuskoodin, jota voi käyttää alennuksen lisäämiseen myyntipisteellä. |
+| Alennuskoodi    | *Poistettu* Dynamics 365 for Retailin kevään 2017 julkaisusta alkaen. Aiemmin: ilmaisee viivakoodissa alennuskoodin, jota voi käyttää alennuksen lisäämiseen myyntipisteellä. |
 | Kuponkikoodi      | Ilmaisee kuponkikoodin viivakoodille, joka lisää alennuksen vähittäismyyntitilaukseen. Tämä korvaa alennuskoodin. |
 | Lahjakortti        | Ilmaisee lahjakortin numeron, kun lahjakortti myönnetään tai sillä tehdään maksu. |
 | Kanta-asiakaskortti     | Lisää kanta-asiakkaan tapahtumaan; voidaan käyttää kanta-asiakaskortilla maksettaessa. |
@@ -84,4 +83,3 @@ Viivakoodien muodot on määritettävä viivakoodeille ennen, kuin niitä voi k�
 5. Valitse **Tallenna**.
 
 Viivakoodin muotoa voi nyt käyttää viivakoodien luomiseen tuotteille. Yllä olevat vaiheet ovat esimerkkejä siitä, kuinka tuotteille voi luoda viivakoodin muotoja, mutta ne kuvaavat myös, viivakoodin muotoja voi luoda mille tahansa muulle viivakoodin tyypille, joka on tuettu. Viivakoodin muodot, tyypit ja pituudet tulisi mukauttaa omaa käyttötarkoitusta ja -ympäristöäsi varten.
-

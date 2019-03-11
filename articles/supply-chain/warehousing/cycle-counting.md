@@ -1,13 +1,13 @@
 ---
 title: Inventointi
-description: "Tässä artikkelissa kuvataan, miten inventointia voi käyttää Varastonhallinnassa käytettävissä olevassa varastoratkaisussa. Artikkeli ei koske Inventoinnin- ja varastonhallinnassa käytettävissä olevaa varastoratkaisua."
+description: Tässä artikkelissa kuvataan, miten inventointia voi käyttää Varastonhallinnassa käytettävissä olevassa varastoratkaisussa. Artikkeli ei koske Inventoinnin- ja varastonhallinnassa käytettävissä olevaa varastoratkaisua.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9da40e90982d9d4aca38890ed121782f4236712d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323223"
 ---
-
 # <a name="cycle-counting"></a>Inventointi
 
 [!include [banner](../includes/banner.md)]
@@ -138,7 +137,6 @@ Voit oikaista inventointiarvojen eroja ja hyväksyä lasketun arvon **Inventoint
 
 ## <a name="additional-resources"></a>Lisäresurssit
 [Konfiguroi varastotyön mobiililaitteet](configure-mobile-devices-warehouse.md)
-
 
 
 

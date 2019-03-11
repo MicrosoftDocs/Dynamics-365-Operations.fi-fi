@@ -1,13 +1,13 @@
 ---
-title: "Ajan ja läsnäolon hallinta Retailissa"
-description: "Tässä aiheessa on kuvaus vähittäismyynnin ajan ja työajan hallinnassa tuettavista skenaarioista Microsoft Dynamics 365 for Retailissa."
+title: Ajan ja läsnäolon hallinta Retailissa
+description: Tässä aiheessa on kuvaus Microsoft Dynamics 365 for Retailin ajan ja työajan hallinnassa tuettavista skenaarioista.
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 4c54909a02376a62a72a986e634649fa0ae54284
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321268"
 ---
-
 # <a name="time-and-attendance-management-in-retail"></a>Ajan ja läsnäolon hallinta Retailissa
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on kuvaus vähittäismyynnin ajan ja työajan hallinnassa tuettavista skenaarioista Microsoft Dynamics 365 for Retailissa.
+Tässä aiheessa on kuvaus Microsoft Dynamics 365 for Retailin ajan ja työajan hallinnassa tuettavista skenaarioista.
 
 ## <a name="manage-worker-setup-and-scheduling"></a>Työntekijän asetusten ja ajoituksen hallinta
 
@@ -126,7 +125,7 @@ Myyntipisteellä:
 
 ## <a name="process-and-manage-time-registrations"></a>Aikarekisteröintien käsitteleminen ja hallinta
 
-A Dynamics 365 for Retail -käyttäjä noudattaa työnkulkua aikakirjausten laskemiseen, hyväksymiseen ja palkanlaskentaan siirtämiseen.
+Dynamics 365 for Retailin käyttäjä noudattaa työnkulkua aikakirjausten laskemiseen, hyväksymiseen ja palkanlaskentaan siirtämiseen.
 
 ### <a name="primary-operations"></a>Tärkeimmät työvaiheet
 
@@ -140,4 +139,3 @@ A Dynamics 365 for Retail -käyttäjä noudattaa työnkulkua aikakirjausten lask
 - Poissaolon kirjaaminen
 
 Lisätietoja työajan seurannan rekisteröintien käsittelystä on kohdassa [Työajan seurannan rekisteröintien käsittely](https://technet.microsoft.com/library/aa573180.aspx).
-

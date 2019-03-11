@@ -1,13 +1,13 @@
 ---
 title: Retail point of salen (POS) asettelun suunnittelutoiminnon asentaminen
-description: "Voit käyttää yhden napsautuksen suunnittelutoimintoa Cloud POS:n ja Retail Modern POS:n (MPOS) asettelusta, vaakasuunnassa tai pystytilassa, kaupat, kassakoneet, kassat ja esimiehet suunnittelussa."
+description: Voit suunnitella myymälöihin, kassakoneisiin, kassoille ja esimiehille erilaisia pysty- tai vaakasuuntaisia Retail Modern POS (MPOS)- ja Cloud POS -asetteluja yhden napsautuksen suunnitteluohjelmalla.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,25 +19,24 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 4c647f49101dcbbe7dd1feac2dd9aad5c6dd5bcc
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327639"
 ---
-
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Retail point of salen (POS) asettelun suunnittelutoiminnon asentaminen
 
 [!include [banner](includes/banner.md)]
 
-Voit käyttää yhden napsautuksen suunnittelutoimintoa Cloud POS:n ja Retail Modern POS:n (MPOS) asettelusta, vaakasuunnassa tai pystytilassa, kaupat, kassakoneet, kassat ja esimiehet suunnittelussa.
+Voit suunnitella myymälöihin, kassakoneisiin, kassoille ja esimiehille erilaisia pysty- tai vaakasuuntaisia Retail Modern POS (MPOS)- ja Cloud POS -asetteluja yhden napsautuksen suunnitteluohjelmalla.
 
 MPOS tai Cloud POS  -käyttöliittymän graafinen rakenne määräytyy kassan asettelun mukaan. Rakenne määrää eri objektien sijainnin. Esimerkiksi kokonaisarvon asettelun, nimikeruudukon asettelun, asiakkaan asettelun, maksun asettelua ja eri valikkopainikkeiden asettelua. Asettelut sisältävät myös myynnin liittymän ulkoasun, joka näkyy työntekijöille .
 
 ## <a name="install-the-one-click-designer"></a>Asenna yhden napsautuksen suunnittelutoiminto
 
-1. Voit siirtyä Microsoft Dynamics 365 for Retailin vasemman yläkulman valikon avulla kohtaan **Vähittäismyynti** **ja kauppa** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Myyntipiste** &gt; **Näytön asettelut**.
+1. Valitse Microsoft Dynamics 365 for Retailin vasemmassa yläkulmassa olevasta valikosta **Vähittäismyynti** **ja kauppa** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **Myyntipiste** &gt; **Näytön asettelut**.
 2. Valitse asettelu, jonka sovellustyyppi on **Modern POS Windowsille** tai **Vähittäismyynnin pilvimyyntipiste**, ja valitse sitten **asettelun suunnittelutoiminto**.
 3. Napsauta Internet Explorer -ikkunan alaosassa näkyvällä ilmoitusrivillä **Avaa** aloittaaksesi yhden napsautuksen suunnittelutoiminnon asennuksen. (Ilmoitusrivi saattaa näkyä eri kohdassa muissa selaimissa.)
 4. **Sovellus suoritetaan - suojauksen varoitus** viesti tulee näkyviin, valitse **suorita** joka asentaa vähittäismyynnin suunnittelutyökalun isännän. Edistymisen ilmaisin näyttää asennusprosessin edistymisen tilanteen.
@@ -52,8 +51,8 @@ MPOS tai Cloud POS  -käyttöliittymän graafinen rakenne määräytyy kassan as
 
     **Ratkaisut:**
 
-    -  Internet Explorerissa tarkista, että ponnahdussanoman esto on poistettu käytöstä tälle sivustolle. Valitse **Asetukset** &gt; **Vaihtoehdot** &gt; **Tietosuoja** &gt; **Etsi ponnahdussanoman esto** ja muuta asetusta, jos se on pakollinen.
-    - Lisää Internet Explorerissa Dynamics 365 for Retailissa URL-osoite luotettuihin sivustoihin. Valitse **Asetukset** &gt; **vaihtoehdot** &gt; **suojaus** &gt; **Luotettavat sivustot** &gt; **sivustot** &gt; **Lisää**.
+    - Tarkista Internet Explorerissa, että ponnahdussanoman esto on poistettu käytöstä tälle sivustolle. Valitse **Asetukset** &gt; **Vaihtoehdot** &gt; **Tietosuoja** &gt; **Etsi ponnahdussanoman esto** ja muuta asetusta, jos se on pakollinen.
+    - Lisää Internet Explorerissa Dynamics 365 for Retailin URL-osoite luotettuihin sivustoihin. Valitse **Asetukset** &gt; **vaihtoehdot** &gt; **suojaus** &gt; **Luotettavat sivustot** &gt; **sivustot** &gt; **Lisää**.
 
 - Ohjelma ei käynnisty ja ohjeiden mukaisesti voit ottaa yhteyttä toimittajaan.
 
@@ -63,5 +62,4 @@ MPOS tai Cloud POS  -käyttöliittymän graafinen rakenne määräytyy kassan as
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Määritä, Lataa, asentaa ja ottaa käyttöön Retail Modern POS](retail-modern-pos-device-activation.md)
-
+[Retail Modern POS:n määrittäminen, lataaminen, asentaminen ja aktivoiminen](retail-modern-pos-device-activation.md)

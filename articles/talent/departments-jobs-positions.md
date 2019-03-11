@@ -1,13 +1,13 @@
 ---
-title: "Työvoiman järjestäminen osastojen, töiden ja toimien avulla"
-description: "Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä ohjeaiheessa kuvataan elementtien käsitteellisiä tietoja."
+title: Työvoiman järjestäminen osastojen, töiden ja toimien avulla
+description: Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä ohjeaiheessa kuvataan elementtien käsitteellisiä tietoja.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit
 audience: Application User
 ms.reviewer: rschloma
@@ -18,19 +18,17 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: 8b74542b85810409e062a42e323c0527711d562f
+ms.sourcegitcommit: 49a642cd5e0519e381ff558f59c993ee77f55108
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b2a79c42b67621272af8107661202ea2ce092193
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "374394"
 ---
-
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Työvoiman järjestäminen osastojen, töiden ja toimien avulla
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 Osastot, työt ja toimet ovat organisaatioelementtejä, joita ylläpidetään henkilöstöhallinnossa. Tässä ohjeaiheessa kuvataan elementtien käsitteellisiä tietoja. 
 
@@ -165,7 +163,6 @@ Joissakin tietueissa voit määrittää tietueeseen tehtävät tulevat muutokset
 </table>
 
 Voit muokata edellä olevassa taulukossa mainittuja toimen tai työn tietoja ja määrittää päivämäärän, jona toimen tai työn muutokset tulevat voimaan. Esimerkki: Toimi voidaan määrittää vain yhdelle työntekijälle, mutta Sanjay Patel, joka on nimitetty kirjanpitäjä A:n toimeen, on lähdössä yrityksestä kahden viikon kuluttua. Joe Healy tulee hänen tilalleen. Vaikka Sanjay on edelleen toimessaan, voit määrittää Joe Healyn samaan toimeen siten, että määritys tulee voimaan vasta Sanjayn viimeisen työpäivän jälkeen.
-
 
 
 

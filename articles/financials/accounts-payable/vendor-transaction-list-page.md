@@ -1,13 +1,13 @@
 ---
-title: "Näytä avoimien toimittajatapahtumien listaussivu"
-description: "Tässä aiheessa on tietoja Microsoft Dynamics 365 for Finance and Operationsin toimittajatapahtumien luettelosivusta."
+title: Näytä avoimien toimittajatapahtumien listaussivu
+description: Tässä aiheessa on tietoja Microsoft Dynamics 365 for Finance and Operationsin toimittajatapahtumien luettelosivusta.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 99a169bd51e14f15c085f7547ec240b2787258cc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: 45033b8b015d468b7ee0f6c3fba5e6fb6201433e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341738"
 ---
-
 # <a name="vendor-transactions-list-page"></a>Näytä avoimien toimittajatapahtumien listaussivu
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Toimintoruudun **Näytä tilitykset** -painikkeen avulla voit käyttää nopeast
 
 4. Voit valintaikkunassa tehdä erilaisia tehtäviä. Valitse vähintään yksi tosite ja sitten jokin seuraavista painikkeista:
 
-    - **Näytä liittyvät** – Näytä kaikki maksukirjauskansion tapahtumat, jotka luotiin valittuun asiakirjaan liittyvässä maksukirjauskansiossa. Lisäksi näytetään kaikki kyseisiin maksuihin liittyvät tilitykset. Kun tarkastelet liittyviä maksuja, tämän painikkeen otsikko muuttuu muotoon **Näytä tilitykset**. Valitse **Näytä tilitykset**, jos haluat näyttää vain tapahtumat, jotka näytettiin, kun avasit **Näytä tilitykset** -valintaikkunan ensimmäisen kerran.
+    - **Näytä asiaan liittyvät** – Näytä kaikki toimittajan maksukirjauskansion ja yleisen kirjauskansion tapahtumat, jotka luotiin niissä kirjauskansioissa, joissa luettelossa näkyvät asiakirjat luotiin. Jos esimerkiksi maksu näytetään, silloin näytetään myös kaikki sen maksukirjauskansion maksut, jossa se luotiin. Jos lasku tai maksu näytetään ja jos se oli luotu yleisessä kirjauskansiossa, sitten kaikki sen yleisen kirjauskansion asiakirjat näytetään, jos se luotiin. Lisäksi näytetään kaikki kyseiseen asiakirjaluetteloon liittyvät tilitykset. Kun tarkastelet liittyviä maksuja, tämän painikkeen otsikko muuttuu muotoon **Näytä tilitykset**. Valitse **Näytä tilitykset**, jos haluat näyttää vain tapahtumat, jotka näytettiin, kun avasit **Näytä tilitykset** -valintaikkunan ensimmäisen kerran.
     - **Näytä historia** – Näytä tositteiden tilityshistoria. Sulje valintaikkuna valitsemalla **Sulje**.
     - **Näytä kirjanpito** – Näytä valittuihin asiakirjoihin liittyvät kaikki tositteet. Sulje valintaikkuna valitsemalla **Sulje**.
     - **Vie** – vie valitus tositteet Microsoft Exceliin.
@@ -98,4 +97,3 @@ Kukin kenttä vaikuttaa eri tavalla tapahtumaan, kun muokkaat sitä:
 - **Muokkaa käteisalennuksen ehtoja** – Käteisalennuksia muutetaan peruspäivämäärän ja käteisalennuksen ehtojen perusteella.
 
 Kun olet muokannut maksuasetuksia, tallenna muutokset valitsemalla **Sulje**.
-

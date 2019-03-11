@@ -1,13 +1,13 @@
 ---
-title: "Tilausilmoitusten näyttäminen myyntipisteessä (POS)"
-description: "Tässä ohjeaiheessa käsitellään tilausilmoitusten ottamista käyttöön myyntipisteessä ja ilmoituskehikkoa. Kehittäjät voivat jatkossa laajentaa nämä ilmoitukset tilausten täyttämistoimintojen lisäksi muihin toimintoihin."
+title: Tilausilmoitusten näyttäminen myyntipisteessä (POS)
+description: Tässä ohjeaiheessa käsitellään tilausilmoitusten ottamista käyttöön myyntipisteessä ja ilmoituskehikkoa. Kehittäjät voivat jatkossa laajentaa nämä ilmoitukset tilausten täyttämistoimintojen lisäksi muihin toimintoihin.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 03/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailOperations, RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361334"
 ---
-
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Tilausilmoitusten näyttäminen myyntipisteessä (POS)
 
 [!include [banner](includes/banner.md)]
 
-Nykyaikaisessa vähittäismyyntiympäristössä myyjillä on monenlaisissa tehtäviä, kuten asiakaspalvelua, tapahtumien kirjaamista, inventointia ja tilausten vastaanottamista myymälässä. Myyntipisteen asiakasohjelma auttaa myyjiä tekemään nämä tehtävät ja paljon muuta yhdessä sovelluksessa. Koska myyjien on tehtävä päivän aikana monenlaisia tehtäviä, heille on ehkä erikseen ilmoitettava, jos heidän on hoidettava jokin tehtävä. Myyntipisteen ilmoituskehikko ratkaisee tämän ongelman niin, että jälleenmyyjät voivat määrittää roolipohjaisia ilmoituksia. Microsoft Dynamics 365 for Retailin sovelluspäivityksessä 5 nämä ilmoitukset voidaan määrittää vain myyntipistetoiminnoille.
+Nykyaikaisessa vähittäismyyntiympäristössä myyjillä on monenlaisissa tehtäviä, kuten asiakaspalvelua, tapahtumien kirjaamista, inventointia ja tilausten vastaanottamista myymälässä. Myyntipisteen asiakasohjelma auttaa myyjiä tekemään nämä tehtävät ja paljon muuta yhdessä sovelluksessa. Koska myyjien on tehtävä päivän aikana monenlaisia tehtäviä, heille on ehkä erikseen ilmoitettava, jos heidän on hoidettava jokin tehtävä. Myyntipisteen ilmoituskehikko ratkaisee tämän ongelman niin, että jälleenmyyjät voivat määrittää roolipohjaisia ilmoituksia. Nämä ilmoitukset voidaan määrittää vain myyntipistetoimintoihin Microsoft Dynamics 365 for Retailin sovelluspäivityksellä 5.
 
 Tällä hetkellä järjestelmä näyttää vain tilausten täyttämistoimintojen ilmoitukset. Koska kehikko on kuitenkin suunniteltu laajennettavaksi, kehittäjät voivat jatkossa kirjoittaa ilmoituskäsittelijän mille tahansa toiminnolle ja näyttää kyseisen toiminnon ilmoitukset myyntipisteessä.
 
@@ -72,4 +71,3 @@ Seuraavassa kuvassa on live-sisällön asetukset painikeruudukon suunnittelutoim
 Seuraavassa kuvassa näytetään, miten **Sisällön tasaus** -kentän **Ylös oikealle**- tai **Keskelle**-vaihtoehdon valinta vaikuttaa eri kokoisiin painikkeisiin.
 
 ![POS-painikkeiden live-sisältö](./media/ButtonsWithLiveContent.png "POS-painikkeiden live-sisältö")
-

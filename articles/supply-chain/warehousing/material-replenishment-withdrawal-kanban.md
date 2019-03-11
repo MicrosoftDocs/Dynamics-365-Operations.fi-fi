@@ -1,32 +1,31 @@
 ---
-title: "Täydennys ja otto-kanbanit"
-description: "Tässä ohjeaiheessa käsitellään, miten otto-kanbaneja käytetään valmistustehtävien materiaalitäydennykseen."
+title: Täydennys ja otto-kanbanit
+description: Tässä ohjeaiheessa käsitellään, miten otto-kanbaneja käytetään valmistustehtävien materiaalitäydennykseen.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7fe3ebe3c27c380d95cbc12b864264e9538d433f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 011da8cd894cc044b6af8b740e49ed8d7c3c0c67
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320923"
 ---
-
 # <a name="replenishment-with-withdrawal-kanbans"></a>Täydennys ja otto-kanbanit
 
 [!include [banner](../includes/banner.md)]
@@ -87,5 +86,4 @@ Seuraavassa skenaariossa otto-kanbanin siirtotehtävä on määritetty siirtymä
 6.  Valmistusprosessi
 
 Kun kanban on kulutettu tuotannon varastointisijainnissa, kanban ilmoitetaan tyhjäksi ja uusi kanban lisätään työnkulkuun. Kanbania luotaessa kanban-aaltoon lisätään aaltorivi. Kun kanban-aalto käsitellään, kanban-keräilylle luodaan varastotyö. Varastotyöntekijä käsittelee kanban-keräilyn työn, ja työ ohjaa hänet keräämään kanbanin materiaalin varastosijainnissa. Kun tämä varastotyöntekijä vahvistaa keräilyn, kanban valmistuu automaattisesti ja varastotyöntekijä ohjataan sijoittamaan materiaali tuotannon varastoinnin sijaintiin.
-
 

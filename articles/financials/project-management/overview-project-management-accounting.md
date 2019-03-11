@@ -1,13 +1,13 @@
 ---
 title: Projektinhallinta ja kirjanpito
-description: "Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla palvelu tarjoamiseksi, tuotteen tuottamiseksi tai tuloksen saavuttamiseksi."
+description: Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla palvelu tarjoamiseksi, tuotteen tuottamiseksi tai tuloksen saavuttamiseksi.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311332"
 ---
-
 # <a name="project-management-and-accounting"></a>Projektinhallinta ja kirjanpito
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Projektinhallinnan ja kirjanpidon toimintoja voidaan käyttää useilla aloilla 
 
 [![Projektit eri aloilla](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-Puhelinpalvelukeskuksessa, lipun avulla voidaan kuvata joukko toimenpiteitä, joita puhelun ratkaiseminen edellyttää. Konsulttiyritykset, kuten hallinnolliset tai tekniset konsulttiorganisaatiot tai mainostoimistot, viittaavat toimintoihinsa projekteina. Markkinoinnissa kampanja edustaa työtehtäviä, jotka pitää toimittaa. Projektiin perustuvassa valmistuksessa, tuotantotilaus liittyy eri töihin, jotka on tehtävä valmiiden tuotteiden tuottamiseksi. Mitä nimiä niistä käytetäänkään, näihin projekteihin sisältyy resursseja, aikatauluja ja kustannuksia. Microsoft Dynamics 365 for Finance and Operationsin projektinhallinta- ja kirjanpito-toiminnot voivat auttaa suunnittelussa, suorituksessa ja projektianalyysissa.
+Puhelinpalvelukeskuksessa, lipun avulla voidaan kuvata joukko toimenpiteitä, joita puhelun ratkaiseminen edellyttää. Konsulttiyritykset, kuten hallinnolliset tai tekniset konsulttiorganisaatiot tai mainostoimistot, viittaavat toimintoihinsa projekteina. Markkinoinnissa kampanja edustaa työtehtäviä, jotka pitää toimittaa. Projektiin perustuvassa valmistuksessa, tuotantotilaus liittyy eri töihin, jotka on tehtävä valmiiden tuotteiden tuottamiseksi. Mitä nimiä niistä käytetäänkään, näihin projekteihin sisältyy resurssit, aikataulut sekä kustannukset. Projektinhallinta- ja kirjanpito-toiminnot Microsoft Dynamics 365 for Finance and Operationsissa voivat auttaa suunnittelussa, suorituksessa ja projektianalyysissä.
 
 ## <a name="project-phases"></a>Projektin vaiheet
 Vaikka seuraava prosessinkulku on suunnattu ulkoisiin projekteihin tai projektiin, jotka ovat valmiita yhdelle tai useammalle asiakkaalle, toiminto koskee myös sisäisiä kustannus vain -projekteja. 
@@ -206,7 +205,7 @@ Voit tilata projektissa käytettäviä nimikkeitä yrityksen varastosta. Vaihtoe
 
 Nimikkeiden tilaustapa riippuu siitä, mistä niitä tilataan:
 
--   Jos haluat tilata nimikkeitä yrityksen varastosta, sinun on syötettävä tilaus nimiketarpeena. Jos käytät **Nimiketarpeet**-sivua, voit määrittää tarpeen niin, että vastaanotat nimikkeet osatoimituksina. Tällöin voit siirtää nimikemäärän kulutusta siihen asti kun nimikettä tarvitaan.
+-   Jos haluat tilata nimikkeitä yrityksen varastosta, sinun on syötettävä tilaus nimiketarpeena. Jos käytät **Nimiketarpeet**-sivua, voit määrittää tarpeen niin, että vastaanotat nimikkeet osatoimituksina. Tällöin voit siirtää nimikemäärän kulutusta siihen asti kun nimikettä tarvitaan.
 -   Tilataksesi nimikkeitä ulkoiselta toimittajalta, sinun on luotava tilaus ostotilauksena **Ostotilaus**-sivulla.
 
 > [!NOTE] 
@@ -301,7 +300,7 @@ Voit ennustaakassavirtaukset valitulle projektille asetustesi mukaisesti. Esimer
 -   **Projektin päivämäärä:** 5. maaliskuuta 2012.
 -   **Laskutuspäivämäärä** 31. maaliskuuta 2012. Tämä päivämäärä määräytyy laskutusvälin mukaan. Tässä esimerkissä määrität laskutusvälin nykyiselle kuukaudelle. Joten kaikki maaliskuun aikana kirjatut tapahtumat laskutetaan kuukauden viimeisenä päivänä.
 -   **Eräpäivä:** 14.4.2012. Tämä päivämäärä määritetään maksuehdoissa, jotka on määritetty projektin mukaan. Tässä esimerkissä olet valinnut maksuehdoiksi 14 vuorokautta. Joten 14 päivää lisätään laskutuspäivämäärään, jotka lisätään eräpäivänä 14. huhtikuuta 2012.
--   **Odotettu myynnin maksupäivä:** 27.4.2012. Tämä päivämäärä lasketaan lisäämällä päivien lukumäärä **Yleiset puskuripäivät** -kentässä **Projektin hallinnan ja kirjanpidon parametrit** -sivulla päivien lukumäärään **Yksittäiset puskuripäivät** -kentässä **Projektisopimukset**-sivulla ja lisäämällä sitten kokonaissumma päivien lukumäärään **Määräpäivä**-kentässä. Tässä esimerkissä syötit numeron **3** **yleiset puskuripäivät** -kenttään ja **10** **yksittäiset puskuripäivät** -kenttään. Joten 13 päivää lisätään eräpäivään, jotka lisätään odotettuna myynnin maksupäivänä 27. huhtikuuta 2012.
+-   **Odotettu myynnin maksupäivä:** 27.4.2012. Tämä päivämäärä lasketaan lisäämällä päivien lukumäärä **Yleiset puskuripäivät** -kentässä **Projektin hallinnan ja kirjanpidon parametrit** -sivulla päivien lukumäärään **Yksittäiset puskuripäivät** -kentässä **Projektisopimukset**-sivulla ja lisäämällä sitten kokonaissumma päivien lukumäärään **Määräpäivä**-kentässä. Tässä esimerkissä syötit numeron **3** **yleiset puskuripäivät** -kenttään ja **10** **yksittäiset puskuripäivät** -kenttään. Joten 13 päivää lisätään eräpäivään, jotka lisätään odotettuna myynnin maksupäivänä 27. huhtikuuta 2012.
 
 Yleiset puskuripäivät voivat korvata joko yksittäiset puskuripäivät tai ne voidaan lisätä yksittäisiin puskuripäiviin:
 
@@ -441,4 +440,3 @@ Kun laskelma lasketaan, voit tarkastella eri välilehdissä seuraavat tiedot **p
 -   **Kulutus** tietoa tuntien käytöstä, nimikkeistä, kuluista ja palkanlaskentatapahtumista.
 -   **Lasku** – tietoja laskuista ja ennakkolaskutuksesta.
 -   **Tuntihinta** – tuotto- ja kustannustileille kirjattujen tuntien tuntihinnat.
-

@@ -1,13 +1,13 @@
 ---
-title: "Tavaralähetyksen määrittäminen"
-description: "Tässä aiheessa kerrotaan, miten käytetään saapuvan tavaralähetyksen varastoprosesseja."
+title: Tavaralähetyksen määrittäminen
+description: Tässä aiheessa kerrotaan, miten käytetään saapuvan tavaralähetyksen varastoprosesseja.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 578aa96de28758a4dfff9f8c5f7782705ddd5f70
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: df5862a75646976d315fa77531d7c4fe9b1ec499
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330537"
 ---
-
 # <a name="set-up-consignment"></a>Tavaralähetyksen määrittäminen
 
 [!include [banner](../includes/banner.md)]
@@ -99,7 +98,6 @@ Nimikkeet, jotka on tarkoitus käyttää lähetysprosesseissa, on yhdistettävä
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Toimittajayhteistyö tavaralähetysprosessissa
 Jos toimittajat käyttävät toimittajayhteistyöliittymää, he voivat valvoa sen avulla toimipaikan varaston kulutusta. Saat lisätietoja toimittajien määrittämisestä käyttämään toimittajayhteistyötä [Käyttöoikeuksien määrittäminen toimittajayhteistyöliittymän käyttäjille](../procurement/configure-security-vendor-portal-users.md).
-
 
 
 

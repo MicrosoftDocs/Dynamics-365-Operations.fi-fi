@@ -1,13 +1,13 @@
 ---
-title: "Henkilöstöhallinto"
-description: "Henkilöstöhallinto yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita. Näitä alueita ovat työntekijän työhönotto ja sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta."
+title: Henkilöstöhallinto
+description: Henkilöstöhallinto yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita. Näitä alueita ovat työntekijän työhönotto ja sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta.
 author: rschloma
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341761"
 ---
-
 # <a name="human-resources"></a>Henkilöstöhallinto
 
 [!include [banner](../includes/banner.md)]
@@ -95,4 +94,3 @@ Voit suunnitella ja hallita kyselylomakkeita, joilla voit kerätä tietoja eri t
 - [Kyselylomakkeen suunnitteleminen](../../talent/design-questionnaires.md)
 - [Kyselylomakkeen jakaminen ja täyttäminen](../../talent/distribute-questionnaires.md)
 - [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](../../talent/evaluate-questionnaire-results.md)
-

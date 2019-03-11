@@ -1,13 +1,13 @@
 ---
 title: Tarkastele ja suunnittele talousraportteja
-description: "Tässä artikkelissa on harjoituksia, joissa selitetään, miten tarkastellaan ja luodaan raportteja Microsoft Dynamics 365 for Finance and Operationsissa."
+description: Tässä artikkelissa on harjoituksia, joissa selitetään, miten raportteja tarkastellaan ja luodaan Microsoft Dynamics 365 for Finance and Operationsissa.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReportingSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 9d2d9bef0b70d5f645e358a970750aefef890ec1
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343877"
 ---
-
 # <a name="view-and-design-financial-reports"></a>Tarkastele ja suunnittele talousraportteja
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on harjoituksia, joissa selitetään, miten tarkastellaan ja luodaan raportteja Microsoft Dynamics 365 for Finance and Operationsissa. Talousraportointi koostuu Finance and Operationsissa tapahtuvasta tarkastelusta ja yhden napsautuksen raporttisuunnitteluohjelmasta, jolla voit luoda ja muokata raportteja.
+Tässä artikkelissa on harjoituksia, joissa selitetään, miten raportteja tarkastellaan ja luodaan Microsoft Dynamics 365 for Finance and Operationsissa. Talousraportointi koostuu Finance and Operationsissa tapahtuvasta tarkastelusta ja yhden napsautuksen raporttisuunnitteluohjelmasta, jolla voit luoda ja muokata raportteja.
 
 ## <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Tehtävä 1: Luo ja tutki taloushallinnon oletusraportteja
 
@@ -199,4 +198,3 @@ Luot tässä harjoituksessa uuden raportin. Raportti on rinnakkainen osastojen t
 [Raporttien näyttäminen](../../financials/general-ledger/view-financial-reports.md)
 
 [Dynamicsin talousraportointi -blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-

@@ -1,14 +1,14 @@
 ---
-title: "Älykkäät suositukset"
-description: "Tässä ohjeaiheessa käsitellään tapaa, jolla koneopetuksen avulla voidaan antaa töihin ja työnhakijoihin liittyviä suosituksia."
+title: Älykkäät suositukset
+description: Tässä ohjeaiheessa käsitellään tapaa, jolla koneopetuksen avulla voidaan antaa töihin ja työnhakijoihin liittyviä suosituksia.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fea36661c65739ef09261c82ec44e16c29fad0e7
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304217"
 ---
-
 # <a name="intelligent-recommendations"></a>Älykkäät suositukset
 
 [!include[banner](../includes/banner.md)]
@@ -45,4 +44,3 @@ Jos valitset suositellun hakijan **Näytä ehdokas** -vaihtoehdon hakijan kortis
 ## <a name="job-recommendations"></a>Työn suositukset 
 
 Kun mahdollinen työntekijä hakee töitä urasivuston kautta, hänelle suositellaan organisaation muita avoimia työpaikkoja. Nämä suositukset perustuvat potentiaalisen hakijan aiempiin hakemuksiin sekä hänen ansioluetteloonsa tai hakijaprofiiliin. Tällä tavoin työn suositukset auttavat potentiaalisia hakijoita tunnistamaan nopeasti heille parhaiten sopiva työpaikat. Työpaikkoja suositellaan potentiaalisille hakijoille, jos urasivustossa on julkaista vähintään 10 työpaikkaa. Potentiaaliset hakijat voivat avata työpaikkailmoituksen tiedot suosituskortista. He voivat antaa myös suositusta koskevaa palautetta, mikä auttaa parantamaan tulevia suosituksia.
-

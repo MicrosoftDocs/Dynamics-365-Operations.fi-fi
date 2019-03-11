@@ -1,13 +1,13 @@
 ---
 title: Vuoron- ja kassanhallinta
-description: "Tässä ohjeaiheessa käsitellään miten määritetään ja käytetään vuoroja vähittäiskaupan myyntipisteessä (POS)."
+description: Tässä ohjeaiheessa käsitellään miten määritetään ja käytetään vuoroja vähittäiskaupan myyntipisteessä (POS).
 author: jblucher
 manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313011"
 ---
-
 # <a name="shift-and-cash-drawer-management"></a>Vuoron- ja kassanhallinta
 
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään miten määritetään ja käytetään vuoroja vähittäiskaupan myyntipisteessä (POS).
 
-Microsoft Dynamics 365 for Retailissa termi *vuoro* kuvaa myyntipisteen tapahtumatietojen keräämistä kahden päivämäärän välillä. Kunkin vuoron tavoitteeksi asetettua rahasummaa verrataan summaan, joka on laskettu ja ilmoitettu.
+Microsoft Dynamics 365 for Retailissa *vuoro* tarkoittaa myyntipisteen tapahtumatietojen keräämistä kahden päivämäärän välillä. Kunkin vuoron tavoitteeksi asetettua rahasummaa verrataan summaan, joka on laskettu ja ilmoitettu.
 
 Yleensä vuorot avataan työpäivän alussa. Tässä vaiheessa käyttäjä ilmoittaa alkusumman, joka sisältää pohjakassan määrän. Myyntitapahtumia suoritetaan läpi päivän. Päivän lopussa kassa lasketaan ja sulkemisajan summat ilmoitetaan. Vuoro suljetaan ja Z-raportti luodaan. Z-raportti osoittaa yli- tai alijäämät.
 
@@ -70,7 +69,7 @@ Voidakseen käyttää jaettuja vuoroja myymälässä, kassa on määritettävä 
 
 ## <a name="shift-and-drawer-operations"></a>Vuoro- ja kassatoiminnot
 
-Vuoron tilaa voidaan muuttaa tai kassassa olevaa rahasummaa voidaan suurentaa tai pienentää eri toiminnoilla. Seuraavassa osassa käsitellään näitä Microsoft Dynamics 365 for Retail Modern POS:n ja Cloud POS:n vuorotoimintoja.
+Vuoron tilaa voidaan muuttaa tai kassassa olevaa rahasummaa voidaan suurentaa tai pienentää eri toiminnoilla. Tässä osassa käsitellään näitä Microsoft Dynamics 365 for Retail Modern POS:n ja Cloud POS:n vuorotoimintoja.
 
 ### <a name="open-shift"></a>Avoin vuoro
 
@@ -159,4 +158,3 @@ Siirry **Retail \> Kanavat \> Vähittäiskauppa \> kaikki vähittäiskaupat \> l
 Tämän asetuksen avulla varmistat, että taustalaskelmat sisältävät samat tapahtumat kuin vuorot myyntipisteessä ja tiedoista tehdään yhteenveto kyseisen vuoron mukaan.
 
 Lisätietoja lausunnoista ja sulkemismenetelmistä kohdassa [Vähittäismyynnin konfiguraatiot Retail-lausunnoissa](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-

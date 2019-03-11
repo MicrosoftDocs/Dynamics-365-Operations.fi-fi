@@ -1,13 +1,13 @@
---- 
-title: "Kustannuslaskennan kirjanpidon tietolähteen hallinta"
-description: "Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskennan kirjanpidossa."
+---
+title: Kustannuslaskennan kirjanpidon tietolähteen hallinta
+description: Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskennan kirjanpidossa.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f53101d73bc69199fafb00de0fa1759d59ea4ce8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5735cabd5a1eab23fbe2b92cf1395110cb33a93c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319313"
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Kustannuslaskennan kirjanpidon tietolähteen hallinta
 
@@ -36,7 +36,7 @@ Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskenn
 6. Valitse Uusi.
 7. Kirjoita arvo Nimi-kenttään.
 8. Anna tai valitse arvo Tietopalvelu-kenttään.
-    * Valitse tässä esimerkissä Dynamics 365 for Finance and Operations – kirjanpitomerkinnät.  
+    * Valitse tässä esimerkissä Dynamics 365 for Finance and Operations -Kirjanpitomerkinnät.  
 9. Syötä tai valitse arvo Kustannustason dimensio -kenttään.
     * Valitse tässä esimerkissä Kustannustasot.  
 10. Valitse Tallenna.
@@ -46,5 +46,4 @@ Tämän menettelyn avulla hallitaan kirjanpidon tietolähdettä kustannuslaskenn
 13. Valitse Uusi.
 14. Valitse Kirjanpitotaso-kentässä Nykyinen.
 15. Valitse OK.
-
 

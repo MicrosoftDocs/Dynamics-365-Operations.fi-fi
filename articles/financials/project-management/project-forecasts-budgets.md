@@ -1,13 +1,13 @@
 ---
 title: Projektiennusteet ja -budjetit
-description: Microsoft Dynamics 365 for Finance and Operationsissa projekteja voidaan hallita ja ohjata projektiennusteiden ja projektibudjettien avulla.
+description: Microsoft Dynamics 365 for Finance and Operationsissa on projektiennusteita ja projektibudjetteja, joilla projekteja voidaan hallita ja valvoa.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 530a2717427c540d80509c4862e6fb8ea7c5694a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e31a013d6bf33b92b02bd9645a19380ba07f4a05
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310389"
 ---
-
 # <a name="project-forecasts-and-budgets"></a>Projektiennusteet ja -budjetit
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations tarjoaa kaksi tapaa projektien hallintaa ja ohjausta varten: projektiennusteet ja projektibudjetit. 
+Microsoft Dynamics 365 for Finance and Operationsissa on kaksi tapaa hallita ja valvoa projekteja: projektiennusteet ja projektibudjetit. 
 
 Käytä projektiennusteita, jos organisaatiossasi on operatiivinen perspektiivi ja jos se keskittyy tuottoihin ja kustannuksiin, jotka ovat peräisin tietyistä tapahtumista. Käytä projektibudjetointia, jos organisaatiosi keskittyy enemmän taloushallinnon summiin. 
 
@@ -80,7 +79,6 @@ Projektibudjetit liitetään automaattisesti kahteen ennustemalliin, joista toin
 Ennustemalleissa on yksitasoinen hierarkia. Tämä tarkoittaa, että jokaiseen projektiennusteeseen on liitettävä yksi ennustemalli.
 
 Jos käytät projektin ennusteita, voit määrittää mallit alimalleiksi. Voit sitten luoda ennusteita osaston, ajanjakson tai alueen mukaan. Voit esimerkiksi luoda vuodelle ennustemallin ja sitten alimallit alueelliset ennusteet (etelä, pohjoinen, länsi ja itä), jotka aluepäälliköt lähettävät. Valitsemalla eri asetuksia voit tarkastella käytettävissä olevien raporttien tietoja koko ennusten tai alimallin mukaan.
-
 
 
 

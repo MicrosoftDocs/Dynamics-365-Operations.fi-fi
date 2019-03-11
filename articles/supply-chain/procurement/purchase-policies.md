@@ -1,13 +1,13 @@
 ---
-title: "Ostokäytännöt"
-description: "Tässä artikkelissa on tietoja ostokäytännöistä. Ostokäytäntö on kokoelma sääntöjä, jolla hallitaan ostoehdotusprosessia. Ostokäytännöt auttavat ostotapahtumien hallinnoijia toteuttamaan hankintastrategiaa luomalla käytäntörakenteen, joka on linjassa organisaation strategisten ostotarpeiden kanssa."
+title: Ostokäytännöt
+description: Tässä artikkelissa on tietoja ostokäytännöistä. Ostokäytäntö on kokoelma sääntöjä, jolla hallitaan ostoehdotusprosessia. Ostokäytännöt auttavat ostotapahtumien hallinnoijia toteuttamaan hankintastrategiaa luomalla käytäntörakenteen, joka on linjassa organisaation strategisten ostotarpeiden kanssa.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a16f365fa5a8b39dddac2886c36a8231de745a37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 675a7a8b0da228e789ee37ca8fe1d0c0ea01c283
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358758"
 ---
-
 # <a name="purchasing-policies"></a>Ostokäytännöt
 
 [!include [banner](../includes/banner.md)]
@@ -148,7 +147,6 @@ Ostotilauksen luonnin ja kysynnän konsolidoinnin sääntö määrittää käyt�
     -   **Älä salli tarpeiden yhdistämistä** – Mitään hyväksyttyjä ostoehdotusrivien tarpeita ei yhdistetä. Tämä asetus on oletusarvon mukaan valittuna ja koskee vain niitä ostoehdotusrivejä, jotka edellyttävät manuaalista ostotilauksen luontia.
     -   **Salli aina tarpeiden yhdistäminen** – Kaikki hyväksyttyjen ostoehdotusrivien tarpeet voidaan yhdistää. **Huomautus:** Jos valitset **Salli aina tarpeiden yhdistäminen** -asetuksen **Kysynnän konsolidointi** -välilehdeltä, mutta valitset **Luo ostotilaukset automaattisesti** -asetuksen **Manuaalinen ostotilausten luonti** -välilehdellä, järjestelmä asettaa kaikki ostoehdotukset manuaaliseen käsittelyyn.
     -   **Salli tarpeiden yhdistäminen näiden ehtojen täyttyessä** – Määritä ehdot, joiden perusteella hyväksyttyjen ostoehdotusrivien tarpeet voidaan yhdistää. Voit määrittää kullekin ostoehdotusrivin tyypille ehdot hankintaluokan ja toimittajan mukaan. Jos valitset **Salli tarpeiden yhdistäminen näiden ehtojen täyttyessä**, voit määrittää kullekin ostoehdotusrivin tyypille ehdon hankintaluokan ja toimittajan mukaan. Kun valitset hankintaluokan, myös kaikki tämän hankintaluokan alaluokat valitaan. Jos valitset **Kaikki**-vaihtoehdon tietylle rivityypille, kaikki tämän rivityypin ostoehdotusrivit ovat oikeutettuja kysynnän konsolidointiin.
-
 
 
 

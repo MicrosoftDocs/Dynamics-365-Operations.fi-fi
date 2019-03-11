@@ -1,13 +1,13 @@
 ---
 title: Varaston sulkeminen
-description: "Voit myös valita, että kirjanpitoon päivitetään ottotapahtumien vastaanottotapahtumiin täsmäytysprosessissa tehdyt muutokset."
+description: Voit myös valita, että kirjanpitoon päivitetään ottotapahtumien vastaanottotapahtumiin täsmäytysprosessissa tehdyt muutokset.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a705853ea27d117c99a00893b862348bbac0b9b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dfb6b9c2f4bad95c165a8d8a1e888e7a67e66c69
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326489"
 ---
-
 # <a name="inventory-close"></a>Varaston sulkeminen
 
 [!include [banner](../includes/banner.md)]
@@ -87,7 +86,6 @@ Joissakin tapauksissa et voi ehkä tehdä mitään varoitusten suhteen. Kun esim
 Saatat joskus joutua peruuttamaan valmiin varaston sulkemisen ja palauttamaan täsmäytykset tilaan, jossa ne olivat ennen oikaisujen tekemistä. Kun valmis varaston sulkeminen peruutetaan, varasto myös avataan uudelleen, ja kirjaukset kyseisellä kaudella ovat taas mahdollisia. Kirjanpitoon voidaan tehdä myös liittyvät muutokset. Kun olet tehnyt haluamasi muutokset, voit suorittaa varaston sulkemisen uudelleen kaudelle, jota käsittelet. 
 
 **Huomautus:** Vain viimeinen suljettu varastojakso voidaan avata uudelleen. Jos haluat peruuttaa aiemman varaston sulkemisen, jokainen seuraava varaston sulkeminen on peruutettava yksi kerrallaan uusimmasta sulkemisesta alkaen.
-
 
 
 

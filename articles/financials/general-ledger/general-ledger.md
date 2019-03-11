@@ -1,13 +1,13 @@
 ---
 title: Kirjanpidon ja talousraportoinnin aloitussivu
-description: "Kirjanpidon avulla voit määrittää ja hallinnoida yrityksen kirjanpitotietueita."
+description: Kirjanpidon avulla voit määrittää ja hallinnoida yrityksen kirjanpitotietueita.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 85afebcc88ad1c087d5f1dabaac56f694534cf98
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
-ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
-ms.contentlocale: fi-fi
-ms.lasthandoff: 06/25/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363358"
 ---
-
 # <a name="general-ledger"></a>Kirjanpito 
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,7 @@ Siirry kohtaan [julkaisutiedot](https://docs.microsoft.com/en-us/business-applic
 
 ### <a name="videos"></a>Videot
 
-Tutustu [Microsoft Dynamics 365:n YouTube-kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
+Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
 
 ### <a name="blogs"></a>Blogit
 
@@ -72,6 +71,5 @@ Tutustu [Microsoft Dynamics 365:n YouTube-kanavan](https://www.youtube.com/chann
 
 #### <a name="community-blogs"></a>Yhteisöblogit
 
-- [Tärkeitä tietoja Dynamics 365 for Finance and Operations -sovelluksesta](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
-
+- [Tärkeitä tietoja Dynamics 365 for Finance and Operationsin kirjanpidosta](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 

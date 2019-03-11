@@ -1,13 +1,13 @@
 ---
-title: "Talousraporttien sarakemääritykset"
-description: "Tässä artikkelissa on tietoja sarakemäärityksistä. Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön. Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla."
+title: Talousraporttien sarakemääritykset
+description: Tässä artikkelissa on tietoja sarakemäärityksistä. Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön. Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356343"
 ---
-
 # <a name="column-definitions-in-financial-reports"></a>Talousraporttien sarakemääritykset
 
 [!include [banner](../includes/banner.md)]
@@ -121,11 +120,11 @@ Seuraavassa taulukossa esitellään sarakkeen rajoituksen koodit.
 | ADJ                     | Rajoita sarakkeen summat kauden oikaisusummiin, jos summia ovat käytettävissä. |
 | XAD                     | Rajoita sarakkeen summat niin, että kauden oikaisusummat suljetaan pois. |
 | SS                      | Rajoita sarakkeen summat niin, että vain kirjatut tapahtumat sisällytetään, jos tapahtumia on käytettävissä. |
-| UPT                     | Rajoita sarakkeen summat niin, että vain kirjaamattomat tapahtumat sisällytetään, jos tapahtumia on käytettävissä.<blockquote>[!NOTE] Kaikki tietopalveluntarjoajat eivät tue kirjaamattomia tapahtumia. Lisätietoja Microsoft Dynamics ERP -järjestelmän <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>tietojen integrointioppaassa</a>.</blockquote> |
+| UPT                     | Rajoita sarakkeen summat niin, että vain kirjaamattomat tapahtumat sisällytetään, jos tapahtumia on käytettävissä.<blockquote>[!NOTE] Kaikki tietopalveluntarjoajat eivät tue kirjaamattomia tapahtumia. Lisätietoja on Microsoft Dynamics ERP -järjestelmän <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>tietojen integrointioppaassa</a>.</blockquote> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Sarakkeen rajoittaminen raportoinnin yksikköön
 
-1. Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
+1. Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.
 2. Kaksoisnapsauta rajoitettavan sarakkeen **Raportoinnin yksikkö** -solua.
 3. Valitse **Raportoinnin yksikön valinta** -valintaikkunan **Raportointipuu**-luettelosta puu.
 4. Laajenna tai tiivistä yksikköluettelo, valitse raportoinnin yksikkö ja valitse sitten **OK**.
@@ -171,22 +170,22 @@ Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä ot
 
 ### <a name="create-an-automatically-generated-header"></a>Automaattisesti luodun otsikon luominen
 
-Raportin suunnittelija voi luoda sarakeotsikoita automaattisesti automaattisen tekstin koodien perusteella. Automaattisen tekstin koodit ovat muuttujia, jotka päivitetään aina raportin luomisen yhteydessä. Mikä tahansa sarakeotsikko voi sisältää näitä koodeja. Ne määrittävät raportin muuttuvia tietoja, kuten päivämääriä ja jaksojen numeroita. Tämän vuoksi useissa raportin määrityksissä, ajanjaksoissa ja raportointipuissa voidaan käyttää yhtä sarakkeen määritystä. Koska automaattisen tekstin koodeissa käytetään sarakkeen määrityksen tietorivien kalenterin tietoja, niitä tuetaan vain **CALC**-, **FD**- ja **WKS**-sarakkeissa. Tapa, jolla automaattisen tekstin koodi näkyy sarakeotsikon solussa, vaikuttaa siihen, miten tiedot näkyvät raportissa. Automaattisen tekstin koodeissa käytetään isoja ja pieniä kirjaimia **Sarakeotsikko**-valintaikkunassa. Tämän vuoksi teksti näkyy näin myös raportissa. Esimerkiksi vakiokalenterivuosi **@CalMonthLong** muuntaa kuukauden **7** **heinäkuuksi**. Jos kuukauden nimi tulee kirjoittaa isoilla kirjaimilla (esimerkiksi **HEINÄKUU**), syötä automaattisen tekstin koodi isoilla kirjaimilla **Sarakeotsikon teksti** -kenttään. Kirjoita esimerkiksi **@CALMONTHLONG**. Tekstissä voi käyttää sekä isoja ja pieniä kirjaimia. Syötät esimerkiksi seuraavan otsikkotekstin: **Kausi @FiscalPeriod-@FiscalYear - @StartDate,@EndDate**. Luotu raportin otsikko muistuttaa seuraavaa tekstiä: **Jakso 1–02 01/01/02–01/31/02**.
+Raportin suunnittelija voi luoda sarakeotsikoita automaattisesti automaattisen tekstin koodien perusteella. Automaattisen tekstin koodit ovat muuttujia, jotka päivitetään aina raportin luomisen yhteydessä. Mikä tahansa sarakeotsikko voi sisältää näitä koodeja. Ne määrittävät raportin muuttuvia tietoja, kuten päivämääriä ja jaksojen numeroita. Tämän vuoksi useissa raportin määrityksissä, ajanjaksoissa ja raportointipuissa voidaan käyttää yhtä sarakkeen määritystä. Koska automaattisen tekstin koodeissa käytetään sarakkeen määrityksen tietorivien kalenterin tietoja, niitä tuetaan vain **CALC**-, **FD**- ja **WKS**-sarakkeissa. Tapa, jolla automaattisen tekstin koodi näkyy sarakeotsikon solussa, vaikuttaa siihen, miten tiedot näkyvät raportissa. Automaattisen tekstin koodeissa käytetään isoja ja pieniä kirjaimia **Sarakeotsikko**-valintaikkunassa. Tämän vuoksi teksti näkyy näin myös raportissa. Esimerkiksi vakiokalenterivuosi **@CalMonthLong** muuntaa kuukauden **7** **heinäkuuksi**. Jos raportin tekstin pitää olla isoilla kirjaimilla (esimerkiksi **HEINÄKUU**), kirjoita myös koodi isoin kirjaimin **Sarakeotsikon teksti** -ruutuun). Kirjoita esimerkiksi **@CALMONTHLONG**. Tekstissä voi käyttää sekä isoja ja pieniä kirjaimia. Voit syöttää otsikon tekstin esimerkiksi tällaisena: **Jakso @FiscalPeriod–@FiscalYear @StartDate–@EndDate**. Luotu raportin otsikko muistuttaa seuraavaa tekstiä: **Jakso 1–02 01/01/02–01/31/02**.
 
 > [!NOTE]
 > Joidenkin tekstien muoto, kuten pitkä päivämäärä, määräytyy Finance and Operations -palvelimen alueellisten asetusten mukaan. Voit muuttaa näitä asetuksia valitsemalla **Käynnistä**-painikkeen, **Ohjauspaneeli**-kohdan ja valitsemalla sitten **Alue ja kieli** -kohdan. Seuraavassa taulukossa luetellaan sarakeotsikoiden käytettävissä olevat automaattisen tekstin asetukset.
 
 
-| Automaattinen teksti -asetus ja koodi                | kuvaus |
+| Automaattinen teksti -asetus ja koodi                | Kuvaus |
 |-----------------------------------------|-------------|
 | Kuukauden nimi (@CalMonthLong)              | Tulosta kuluvan kuukauden nimi sarakeotsikkoon. Jos haluat pyöristää raportin summat tuhansiksi, miljooniksi tai miljardeiksi tai määrittää raportin sarakkeiden leveyden pienemmäksi kuin 9 merkkiä, kuukauden nimi lyhennetään nimen kolmeksi ensimmäiseksi merkiksi. |
 | Kuukauden nimen lyhenne (@CalMonthShort) | Tulosta valitun tilikauden kuukauden nimen lyhenne. |
-| Kauden numero (@FiscalPeriod)           | Tulosta tilikauden numeerinen muoto, joka sarakkeelle on määritetty. Jos sarake levitetään useille jaksoille, tulostetaan välin viimeinen jakso. |
-| Kauden kuvaus (@FiscalPeriodName)  | Tulosta taloushallinnon tiedoissa määritetty tilikauden kuvaus. |
+| Jakson numero (@FiscalPeriod)           | Tulosta tilikauden numeerinen muoto, joka sarakkeelle on määritetty. Jos sarake levitetään useille jaksoille, tulostetaan välin viimeinen jakso. |
+| Jakson kuvaus (@FiscalPeriodName)  | Tulosta taloushallinnon tiedoissa määritetty tilikauden kuvaus. |
 | Tilikausi (@FiscalYear)               | Tulosta sarakkeen tilikausi numeerisessa muodossa. |
 | Kalenterivuosi (@CalYear)                | Tulosta sarakkeen kalenterivuosi numeerisessa muodossa. |
-| Aloituspäivä (@StartDate)                 | Tulosta sarakkeen alkamispäivämäärä. |
-| Päättymispäivä (@EndDate)                     | Tulosta sarakkeen päättymispäivämäärä. |
+| Alkamispäivämäärä (@StartDate)                 | Tulosta sarakkeen alkamispäivämäärä. |
+| Päättymispäivämäärä (@EndDate)                     | Tulosta sarakkeen päättymispäivämäärä. |
 | Yksikön nimi puusta (@UnitName)         | Jos sarake rajoitetaan tietylle raportointipuun yksikölle, tulosta sarakeotsikon yksikön nimi. |
 | Yksikön kuvaus (@UnitDesc)            | Jos sarake rajoitetaan tietylle raportointipuun yksikölle, tulosta sarakeotsikon yksikön kuvaus. |
 | Kirjakoodi (@BookCode)                   | Tulosta sarakkeelle määritetty kirjakoodi. |
@@ -216,12 +215,12 @@ Ehdollisen koonnin otsikot voivat olla useiden tietyn jakson tietoihin perustuvi
 Paula on luomassa dynaamista kuuden kuukauden ennusteen raporttia. Hän haluaa tulostaa toteutuneita tietoja sisältäviin sarakkeisiin sanan Toteutunut ja budjettiennusteita sisältäviin sarakkeisiin sanan Budjetti. Raportti suoritetaan joka kuukausi, joten kuukausi kuukaudelta toteutuneita sarakkeita on yksi enemmän ja budjettisarakkeita yksi vähemmän. Vaikka Paula voi muokata sarakkeen määritystä otsikoiden oikaisua varten manuaalisesti aina, kun raportti luodaan, hän päättää luoda ehdollisen koonnin otsikot ja säästää aikaa ja työtä. Näin otsikot luodaan automaattisesti oikeisiin sarakkeisiin aina, kun raportti suoritetaan. Paula avaa Report Designerin, valitsee siirtymisruudussa **Sarakkeen määritys** -kohdan ja avaa raportin sarakkeen määrityksen. Sitten hän syöttää seuraava tiedot: Raportin määrityksen perusjakso on 4.
 
 
-|                     |  A   | B             | K             | D             | E             | P             | G             | H             | I             | J             | K             | L             | M             |
+|                     |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| Ylätunniste 1            |      | Toteutunut        | Budjetti        |               |               |               |               |               |               |               |               |               |               |
-| Ylätunniste 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
-| Ylätunniste 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
-| Sarakelaji         | KUVAUS | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
+| Otsikko 1            |      | Todellinen        | Budjetti        |               |               |               |               |               |               |               |               |               |               |
+| Otsikko 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
+| Otsikko 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
+| Saraketyyppi         | KUV | TD            | TD            | TD            | TD            | TD            | TD            | TD            | TD            | TD            | TD            | FD            | FD            |
 | Kirjakoodi/määrite |      | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    | TOTEUTUNUT        | BUDJETTI2012    |
 | Tilikausi         |      | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          |
 | Kausi              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
@@ -612,4 +611,3 @@ Voit jakaa sarakkeen summan määritetyllä jaksojen määrällä. Esimerkiksi *
 [Talousraporttien rivimääritykset](row-definitions-financial-reporting.md)
 
 [Muotoilun lisäasetukset taloushallinnon raporteissa](advanced-formatting-options-financial-reporting.md)
-

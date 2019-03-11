@@ -1,13 +1,13 @@
 ---
-title: "Tuotannon reitityksissä käytettävät kustannusluokat"
-description: "Tässä artikkelissa on tietoja kustannusluokista, joita käytetään reititystä käyttävissä valmistusympäristöissä."
+title: Tuotannon reitityksissä käytettävät kustannusluokat
+description: Tässä artikkelissa on tietoja kustannusluokista, joita käytetään reititystä käyttävissä valmistusympäristöissä.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory, RouteCostCategoryPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 90177a6b8dd277ba1180073c9cf416f857c5d730
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 53e038183a10b8732a9a5e0f25aac440c224400e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315794"
 ---
-
 # <a name="cost-categories-used-in-production-routing"></a>Tuotannon reitityksissä käytettävät kustannusluokat
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,6 @@ Kustannusluokan kustannustietue voi olla toimipaikkakohtainen tai yrityksenlaaju
 Reitityksen työvaihe perii tavallisesti operatiiviseen resurssiin tai päätyövaiheeseen liitetyt kustannusluokat. Kun luot tuotantotilauksen, tuotantoreitin reititystyövaiheet ovat valitun reittiversion mukaiset. Voit korvata tuotantoreitin työvaiheille määritetyt kustannusluokat. 
 
 Joitakin tuotantotyön tyyppejä voidaan käyttää projektin aika-arvioinneissa ja raportoinnissa. Tässä tapauksessa kustannusluokka tarvitaan tuotantoa ja projektia varten. Kun kustannusluokka on merkitty käytettäväksi projekteissa, projektista on määritettävä lisätietoja.
-
 
 
 

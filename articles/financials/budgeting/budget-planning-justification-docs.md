@@ -1,13 +1,13 @@
 ---
 title: Budjettisuunnitelman perusteluasiakirjat
-description: "Perusteluasiakirjat tarjoavat budjettia pyytäville henkilöille kertomuksen siitä, miksi tietty budjetti on tarpeellinen."
+description: Perusteluasiakirjat tarjoavat budjettia pyytäville henkilöille kertomuksen siitä, miksi tietty budjetti on tarpeellinen.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanJustificationTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cae6334cd39a91eaf3a2a79f30edc705f484bc8c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333573"
 ---
-
 # <a name="budget-planning-justification-documents"></a>Budjettisuunnitelman perusteluasiakirjat
 
 [!include [banner](../includes/banner.md)]
@@ -36,17 +35,17 @@ Budjettisuunnitelman mallin luo budjettipäällikkö Microsoft Wordissa ja malli
 
 ##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Microsoft Dynamics Office -apuohjelman määritys Microsoft Wordissa
 
-1.  Avaa uusi Microsoft Word -tiedosto
+1.  Avaa uusi Microsoft Word -tiedosto.
 2.  Valitse valintanauhassa **Lisää** ja **Kauppa**.
-3.  Etsi Dynamics Microsoft Office -apuohjelma ja valitse **Lisää**.
+3.  Etsi Microsoft Dynamics Office -apuohjelma ja valitse **Lisää**.
 4.  Oikeanpuoleisessa ruudussa, valitse Wordissa **Lisää palvelimen tiedot**.
 5.  Kirjoita tai liitä palvelimen URL-osoite ja valitse **OK**.
 
-##### <a name="define-the-justification-template-in-microsoft-word"></a>Määritä perustelumalli Microsoft Wordissa
+##### <a name="define-the-justification-template-in-microsoft-word"></a>Perustelumallin määrittäminen Microsoft Wordissa
 
 1.  Valitse **Rakenne** Microsoft Dynamics Office -apuohjelmassa, kun olet kirjautunut.
 2.  Käytä **Lisää kenttiä** -painiketta otsikkotietoihin.
-3.  Valitse kohteen BudgetPlanJustification yksikkötietolähde ja valitse **Seuraava**. **Huomautus:** Tämä yksikkö on pakollinen kaikissa perusteluasiakirjoissa. Voidaan käyttää muita yksiköitä, mutta lataaminen Microsoft Dynamics 365 for Finance and Operations -sovellukseen epäonnistuu, jos tämä yksikkö ei ole mukana.
+3.  Valitse kohteen BudgetPlanJustification yksikkötietolähde ja valitse **Seuraava**. **Huomautus:** Tämä yksikkö on pakollinen kaikissa perusteluasiakirjoissa. Voidaan käyttää muita yksiköitä, mutta lataaminen Microsoft Dynamics 365 for Finance and Operationsiin epäonnistuu, jos tämä yksikkö ei ole mukana.
 4.  Lisää Word-asiakirjaan seuraavat otsikot ja arvot: BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter ja DocumentNumber. **Huomautus:** voit tarvittaessa käyttää omia mukautettuja otsikoita vakio-otsikoiden sijaan.
 5.  Valitse **Valmis** viimeistelläksesi otsikko-osan.
 6.  Voit lisätä budjettisuunnitelman summat rivitasolle klikkaamalla **Lisää taulu**.
@@ -58,7 +57,7 @@ Budjettisuunnitelman mallin luo budjettipäällikkö Microsoft Wordissa ja malli
 ##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>Määritä budjettisuunnitteluprosessi käyttämään perustelumallia
 
 1.  Siirry Finance and Operationsissa kohtaan **Budjetointi** &gt; **Asetukset** &gt; **Budjettisuunnittelu** &gt; **Perusteluasiakirjan mallit**.
-2.  Valitse **Uusi** ja selaa juuri luotuun Microsoft Word -asiakirjaan.
+2.  Valitse **Uusi** ja siirry juuri luotuun Microsoft Word -asiakirjaan.
 3.  Syötä mallin näyttönimi ja kuvaus. Valitse **OK**.
 4.  Siirry kohtaan **Budjetointi** &gt; **Asetukset** &gt; **Budjetti** **suunnittelu** &gt; **Budjettisuunnitteluprosessi**.
 5.  Valitse prosessi, jossa perustelumallia tulee käyttää ja valitse **Muokkaa**.
@@ -69,7 +68,6 @@ Budjettisuunnitelman mallin luo budjettipäällikkö Microsoft Wordissa ja malli
 1.  Luo Finance and Operationsissa uusi budjettisuunnitelma tai avaa olemassa oleva budjettisuunnitelma.
 2.  Valitse avattavasta **Perustelut** -valikosta **Luo uusi perustelu**.
 3.  Kun olet täyttänyt tiedot, valitse mukautetun asiakirjan lataaminen avattavasta **Perustelut**-valikosta.
-
 
 
 

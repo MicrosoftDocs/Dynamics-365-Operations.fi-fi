@@ -1,13 +1,13 @@
---- 
+---
 title: Luo vapaatekstilaskut
-description: "Tässä ohjeaiheessa käsitellään vapaatekstilaskuja."
+description: Tässä ohjeaiheessa käsitellään vapaatekstilaskuja.
 author: mikefalkner
 manager: AnnBe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
 ms.openlocfilehash: f6ee6fda0b52b8af7c253b7d22e470345a8a421f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/05/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332239"
 ---
-
 # <a name="create-free-text-invoices"></a>Luo vapaatekstilaskut
 
 [!include [banner](../includes/banner.md)]
@@ -86,4 +85,3 @@ Kun olet kopioinut rivit, voit muokata tietoja tarpeen mukaan.
 Voit luoda vapaatekstilaskun mallin mukaan. Kun valitset **Uusi mallista** **Lasku**-välilehdessä, voit valita mallin nimen ja uuden tekstimuotoisen laskun asiakastilin. Oletusarvot, kuten maksuehdot ja maksutapa, voidaan automaattisesti täyttää asiakkaan tiedoista, tai voit käyttää arvoja, jotka on tallennettu malliin.
 
 Uusi vapaatekstilasku luodaan ja voit muokata sen arvoja tarpeen mukaan.
-

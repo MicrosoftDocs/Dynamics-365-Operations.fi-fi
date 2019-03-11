@@ -1,13 +1,13 @@
 ---
-title: "Sähköinen raportointi (ER)"
-description: "Tämä aihe esittelee sähköisen raportointityökalun. Artikkelissa on tietoja keskeisistä käsitteistä ja sähköisen raportoinnin tukemista skenaarioista. Lisäksi siinä on luettelo muodoista, jotka on suunniteltu osana tätä ratkaisua ja jotka julkaistaan sen osana."
+title: Sähköinen raportointi (ER)
+description: Tämä aihe esittelee sähköisen raportointityökalun. Artikkelissa on tietoja keskeisistä käsitteistä ja sähköisen raportoinnin tukemista skenaarioista. Lisäksi siinä on luettelo muodoista, jotka on suunniteltu osana tätä ratkaisua ja jotka julkaistaan sen osana.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
 ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310803"
 ---
-
 # <a name="electronic-reporting-er"></a>Sähköinen raportointi (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -36,16 +35,16 @@ ER on työkalu, jolla voit määrittää saapuvien ja lähtevien sähköisten as
 
 Sähköinen raportointimoduuli on suunnattu yrityskäyttäjille eikä kehittäjille. Koska määritykset koskevat muotoja koodin sijaan, sähköisten asiakirjojen muotojen käsittely- ja muokkausprosessi on nopeaa ja helppoa.
 
-Sähköinen raportointi tukee tällä hetkellä TXT- ja XML-tiedostoja, Microsoft Word -asiakirjoja ja OPENXML-muotoisia laskentataulukkoja. Laajennettu liittymä tukee kuitenkin myös muita muotoja.
+Sähköinen raportointi tukee tällä hetkellä TXT-, XML- ja Microsoft Word -tietoja sekä OPENXML-muotoisia laskentataulukkoja. Laajennettu liittymä tukee kuitenkin myös muita muotoja.
 
 ## <a name="capabilities"></a>Toiminnot
 Sähköisessä raportointimoduulissa on seuraavat toiminnot:
 
-- Se on yksi jaettu, eri toimialueilla toimiva sähköisen raportoinnin työkalu, joka korvaa yli 20 erilaista Microsoft Dynamics 365 for Finance and Operationsin sähköisen raportoinnin moduulia.
+- Se on yksi yhteinen, eri toimialueilla toimiva sähköisen raportoinnin työkalu, joka korvaa yli 20 erilaista Microsoft Dynamics 365 for Finance and Operationsin sähköisen raportoinnin moduulia.
 - Se eristää raportin muodon tällä hetkellä käyttöönotetusta Finance and Operationsista. Toisin sanoen muotoa voi käyttää Finance and Operationsin eri versioissa.
 - Se tukee alkuperäiseen muotoon perustuvan mukautetun muodon luontia. Sen toiminnoilla voi myös päivittää automaattisesti mukautetut muodot, kun alkuperäiseen muotoon on tehty muutoksia. Tämä onnistuu lokalisointi- ja mukautusvaatimusten avulla.
 - Siitä tulee ensisijainen vakiotyökalu lokalisointivaatimusten tukemiseen sähköisessä raportoinnissa – sekä Microsoftille että sen kumppaneille.
-- Se tukee mahdollisuutta jakaa muotoja kumppaneille ja asiakkaille Microsoft Dynamics Lifecycle Services (LCS) -palveluissa.
+- Se tukee mahdollisuutta jakaa muotoja kumppaneille ja asiakkaille Microsoft Dynamics Lifecycle Servicesissä (LCS).
 
 ## <a name="key-concepts"></a>Avainkäsitteet
 ### <a name="components"></a>Komponentit
@@ -100,7 +99,7 @@ Muoto-osa tukee seuraavia toimintoja:
 Muotokomponentin avulla tietyt raporttitulostuksessa käytettäviä tiedostoja voidaan liittää.
 
 - OPENXML-laskentataulukkomuodossa tulostusmallina käytettävän laskentataulukon sisältävät Excel-laskentataulukot.
-- Microsoft Word -asiakirjamuodossa tulostusmallina käytettävän asiakirjan sisältävät Word-tiedostot.
+- Microsoft Word -asiakirjamuodossa tulostusmallina käytettävän asiakirjan sisältävät Microsoft Word -tiedostot.
 - Muut tiedostot, jotka voidaan sisällyttää muodon tulostukseen etukäteen määritettyinä tiedostoina.
 
 Seuraavassa kuvassa osoitetaan tiedonkulku näissä muodoissa.
@@ -381,4 +380,3 @@ Voit ottaa sähköisessä raportoinnissa automaattisesti käyttöön viimeisimp�
 [Lokalisointivaatimukset – Luo sähköisen raportoinnin määritykset](electronic-reporting-configuration.md)
 
 [Sähköisen raportoinnin konfiguraatioiden elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
-

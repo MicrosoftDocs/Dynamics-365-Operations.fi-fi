@@ -1,13 +1,13 @@
 ---
-title: "Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Microsoft Excel -malleja uudelleen"
-description: "Tässä ohjeaiheessa on tietoja sähköisestä raportoinnin (ER) muodosta. Sitä käytetään liiketoiminta-asiakirjojen luomisessa muutetun Excel-mallin avulla."
+title: Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Microsoft Excel -malleja uudelleen
+description: Tässä ohjeaiheessa on tietoja sähköisestä raportoinnin (ER) muodosta. Sitä käytetään liiketoiminta-asiakirjojen luomisessa muutetun Excel-mallin avulla.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Developer, IT Pro, Application user
 ms.reviewer: kfend
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 8707f7b184bb66648edd0e48672c5514a0a5caf1
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313655"
 ---
 # <a name="modify-electronic-reporting-formats-by-reapplying-excel-templates"></a>Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Microsoft Excel -malleja uudelleen
 
@@ -34,4 +34,3 @@ Sähköistä raportointityökalua (ER) käytetään luotaessa liiketoiminta-asia
 ER-työkalun avulla voi luoda liiketoiminta-asiakirjoja, kuten Microsoft Excel -tiedostoja. Voit käyttää Excel-asiakirjaa näiden asiakirjojen mallina. Voit määrittää asiakirjan asettelun ER-suunnitteluohjelmassa tuomalla sen Excel-asiakirjan sisällön, jota haluat käyttää mallina määritetyssä ER-muodossa. Voit toistaa tämän tehtäväoppaan **OPENXML-muotoisten raporttimääritysten suunnittelu -tehtäväopas** (7.5.4.3 IT-palvelu- ja -ratkaisuosien hankinta ja kehittäminen (10677) -liiketoimintaprosessin osa), kun haluat lisätietoja tai harjoitella toimintoja.
 
 Jos muokkaat liiketoiminta-asiakirjan mallina käytettävää Excel-asiakirjaa, uusi ER-toiminto auttaa päivitetyn mallin kohdistamisessa uudelleen ER-muotoon. Tämän jälkeen ER-muoto päivitetään, jotta se on päivitetyn mallin mukainen. Saat lisätietoja toiminnoista toistamalla tehtäväoppaan **ER-muodon muokkaaminen käyttämällä Excel-mallia uudelleen** (7.5.5.3 IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen (10683) -liiketoimintaprosessin osa). Käytä mallina tehtäväoppaan päivitetyn mallin tuontivaiheen maksuraportin Excel-tiedoston muokattua mallia SampleVendPaymWsReport2.
-

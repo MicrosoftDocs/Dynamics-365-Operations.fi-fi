@@ -1,13 +1,13 @@
 ---
-title: "Eliminointisäännöt"
-description: "Tässä artikkelissa on tietoja eliminointisäännöistä ja eliminointien eri vaihtoehdoista."
+title: Eliminointisäännöt
+description: Tässä artikkelissa on tietoja eliminointisäännöistä ja eliminointien eri vaihtoehdoista.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0736d63c9a582948d197dc267f9941cbbd3e3c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 882b8f21be94b8cbb0c162c965ffc129b47d7edf
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333090"
 ---
-
 # <a name="elimination-rules"></a>Eliminointisäännöt
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,7 @@ Yrityksesi nimeltä yritys A myy pienoisohjelmia toiselle organisaatiosi yrityks
 Kaikki nämä tapahtumat luovat konsernin sisäisiä tapahtumia, jotka kirjataan erääntymiskohteen ja -lähteen tileihin. Näissä tapahtumissa voi olla myös summien korotuksia ja alennuksia tilanteissa, joissa konserniyritysten välisen myynnin ja myytyjen tuotteiden kustannusten summat eivät täsmää.
 
 ## <a name="set-up-elimination-rules"></a>Määritä eliminointisääntöjä
-Kun Microsoft Dynamics 365 for Finance and Operationsin eliminointisääntöjä määritetään, eliminointia varten kannattaa luoda oma taloushallinnon dimensio. Useimmat asiakkaat nimeävät sen Kaupankäynnin kumppaniksi tai jotain vastaavaa. Jos et halua käyttää taloushallinnon dimensiota, muista varmistaa, että sinulla on päätilit, jotka koskevat vain konserniyritysten välisiä tapahtumia. 
+Kun Microsoft Dynamics 365 for Finance and Operationsissa määritetään eliminointisääntöjä, on suositeltavaa luoda taloushallinnon dimensio erityisesti eliminointitarkoituksia varten. Useimmat asiakkaat nimeävät sen Kaupankäynnin kumppaniksi tai jotain vastaavaa. Jos et halua käyttää taloushallinnon dimensiota, muista varmistaa, että sinulla on päätilit, jotka koskevat vain konserniyritysten välisiä tapahtumia. 
 
 Konsolidoinnit-moduulin Asetukset-alueelta löytyy eliminoinnin asetukset. Kun kirjoitat säännön kuvauksen, sinun on valittava yritys, johon eliminoinnin kirjauskansio kirjaa. Tämän tulisi olla yritys, jonka asetuksissa on valittu **Käytetään taloushallinnon eliminointiprosessissa**. 
 
@@ -153,7 +152,6 @@ On kaksi tapaa käsitellä eliminoinnin tapahtumia kokoa: konsolidoinnin online-
 Valitse eliminointiyritykseksi määritellyssä yrityksessä **Eliminoinnin kirjauskansio** Konsolidoinnit-moduulissa. Kun olet valinnut kirjauskansion nimen, valitse **Rivit**. Valitsemalla voit suorittaa ehdotuksen valitsemalla **Ehdotukset**-valikon ja sitten **Eliminointiehdotus**.
 
 Valitse yritys, joka on koottujen tietojen lähde ja valitse sääntö, jota haluat käsitellä. Anna aloituspäivämäärä käynnistääksesi eliminoinnin summien haun ja päättymispäivä eliminoinnin summien haun päivämäärävälin loppuun. **Kirjanpidon kirjauspäivä** -kenttä on päivämäärä, jolloin eliminointikirjauskansio kirjataan kirjanpitoon. Kun olet valinnut **OK**, voit tarkistaa määrät ja kirjata kirjauskansion.
-
 
 
 

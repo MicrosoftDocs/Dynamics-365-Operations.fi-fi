@@ -1,13 +1,13 @@
 ---
-title: "Sarjoitettujen tuotteiden parannukset myyntipisteessä (POS)"
-description: "Tässä aiheessa on luettelo parannuksista, jotka on tehty sarjoitettuihin tuotteisiin ajan säästämiseksi ja tehokkuuden parantamiseksi."
+title: Sarjoitettujen tuotteiden parannukset myyntipisteessä (POS)
+description: Tässä aiheessa on luettelo parannuksista, jotka on tehty sarjoitettuihin tuotteisiin ajan säästämiseksi ja tehokkuuden parantamiseksi.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,14 +16,13 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346200"
 ---
-
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Sarjoitettujen tuotteiden parannukset myyntipisteessä (POS)
 
 [!include [banner](includes/banner.md)]
@@ -43,4 +42,3 @@ Retail Headquarters -sovelluksen asetusten perusteella tuotteita voi luokitella 
 - **Asiakastilausten tekeminen ei edellytä sarjanumeroita** – asiakastilauksen voi tehdä yhdessä myymälässä ja täyttää toisessa. Asiakastilauksia tekevän kassanhoitajan ei tarvitse syöttää sarjanumeroa. Sarjanumero lisätään keräily- tai noutovaiheessa. Sarjanumero on kuitenkin annettava kaikille rivinimikkeille, joille on valittu **Nouto liikkeestä** -toimitustyyppi. Muussa tapauksessa tapahtuma ei onnistu.
 - **Sarjoitettuja tuotteita ei koosteta tapahtumanäytöllä** – **Koosta tuotteet** -asetus **Toimintoprofiili**-sivun **Pääte**-kenttäryhmässä mahdollistaa saman, ei-sarjoitetun tuotteen koostamisen tapahtumanäytöllä. Kun tuotteet koostetaan, ne on helpompi nähdä tapahtumaruudukossa. Koska sarjanumerot ovat tavallisesti yksilöiviä ja myyntiedustajien ei tarvitse kirjoittaa sarjanumeroita ennen uloskuittausta, **Koosta tuotteet** -asetus ei koske sarjoitettuja tuotteita. Sarjoitettuja tuotteita ei yhdistetä tapahtumanäytöllä, jos **Koosta tuotteet** -asetus on valittuna.
 - **Mahdollisuus etsiä kirjauskansioita sarjanumeron mukaan** – Kirjauskansioissa voi nyt tehdä hakuja myös sarjanumeroiden mukaan. Se tehdään avaamalla kirjauskansiotoiminto ja painamalla sovelluspalkissa Tarkennettu haku -painiketta. Lisää suodatin -painikkeella voi lisätä suodattimen myös sarjanumerohakuun.
-

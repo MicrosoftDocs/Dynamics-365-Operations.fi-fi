@@ -1,13 +1,13 @@
---- 
-title: "Suunnittele konfiguraatioita jäsentääksesi saapuvia asiakirjoja"
-description: "Tässä menettelyssä näytetään, miten sähköisen raportoinnin (ER) konfiguraatiot suunnitellaan saapuvan sähköisen asiakirjan jäsentämistä varten."
+---
+title: Suunnittele konfiguraatioita jäsentääksesi saapuvia asiakirjoja
+description: Tässä menettelyssä näytetään, miten sähköisen raportoinnin (ER) konfiguraatiot suunnitellaan saapuvan sähköisen asiakirjan jäsentämistä varten.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326098"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Suunnittele konfiguraatioita jäsentääksesi saapuvia asiakirjoja
 
@@ -35,7 +35,7 @@ Nämä vaiheet voidaan suorittaa minkä tahansa tietojoukon avulla. Ennenkuin al
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
     * Varmista, onko Litware, Inc. -malliyrityksen konfiguraation lähde käytettävissä ja merkitty aktiiviseksi. Jos konfiguraation lähde ei ole näkyvissä, suorita Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet.  
 2. Valitse Raportointikonfiguraatiot.
-    * Aloita, lataa ja Tallenna ohjeaiheessa luetelluista tiedostoista ”jäsentää saapuvat asiakirjat Päivitä sovellustiedot” Seuraavaa skenaariota käytetään näytettäessä ominaisuudet, joiden avulla jäsennetään saapuvia sähköisiä asiakirjoja, jotka ovat XML-muodossa: ERP-sovellus (Dynamics 365 for Finance and Operations) pyytää tietoja verkkopalvelulta (kuten http://efsta.org/ EFSTA-tilipalvelu) ja jäsentää saapuvat vastaukset sekä päivittää sovellustiedot vastaavasti. Jotta jäsentäminen tapahtuu tehokkaasti, käytössä on yksi ER-muoto odotettujen XML-muotoisten saapuvien asiakirjojen eri rakenteesta huolimatta.   
+    * Seuraavaa skenaariota käytetään näytettäessä ominaisuudet, joiden avulla jäsennetään saapuvia sähköisiä asiakirjoja, jotka ovat XML-muodossa: ERP-sovellus (Dynamics 365 for Finance and Operations) pyytää tietoja verkkopalvelusta (kuten http://efsta.org/ EFSTA-tilipalvelu) ja jäsentää saapuvat vastaukset sekä päivittää sovellustiedot vastaavasti. Jotta jäsentäminen tapahtuu tehokkaasti, käytössä on yksi ER-muoto odotettujen XML-muotoisten saapuvien asiakirjojen eri rakenteesta huolimatta.   
 
 ## <a name="import-and-review-er-configurations"></a>ER-konfiguraatioiden tuominen ja tarkistaminen
 Tuo se ER-mallikonfiguraatio, joka sisältää saapuvan tiedoston tiedot tallentavan tietomalliesimerkin.  
@@ -110,5 +110,4 @@ Suorita luotu mallin yhdistämismääritys testausta varten. Tällöin näet, mi
     * Valitse Selaa ja valitse sitten Response4.xml-tiedosto.  
 16. Valitse OK.
     * Tarkista aikaansaatu tuotos. Huomaa, että vastaustyyppi on nyt tunnistettu oikein samanlaiseksi kuin Response1.xml-tiedostolla.  
-
 

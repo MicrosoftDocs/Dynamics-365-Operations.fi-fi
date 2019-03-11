@@ -1,13 +1,13 @@
 ---
 title: Taloushallinnon tiedot
-description: "Taloushallinnon tiedot kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätöksiä."
+description: Taloushallinnon tiedot kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätöksiä.
 author: kweekley
 manager: AnnBe
 ms.date: 08/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,20 +16,19 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308848"
 ---
-
 # <a name="financial-insights"></a>Taloushallinnon tiedot
 
 [!include [banner](../includes/banner.md)]
 
-**Taloushallinnon tiedot** kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätökset. Power BI on upotettu Microsoft Dynamics 365 Finance and Operations -sovellukseen. **Taloushallinnon tiedoissa** keskitytään on analyyttiseen raportointiin. Organisaation työntekijät voivat tarkastella tietoja, tutkia niitä, tiedostaa ne ja toimia. 
+**Taloushallinnon tiedot** kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätöksiä. Power BI on upotettu Microsoft Dynamics 365 Finance and Operationsiin. **Taloushallinnon tiedoissa** keskitytään on analyyttiseen raportointiin. Organisaation työntekijät voivat tarkastella tietoja, tutkia niitä, tiedostaa ne ja toimia. 
 
 **Taloushallinnon tiedot** yhdistää kirjanpidon ja alareskontran tiedot ja tuottaa niiden avulla kattavan kuvan organisaation taloudellisesta tilasta.
 
@@ -250,4 +249,3 @@ Seuraavissa resursseissa olevat tiedot eivät ole välttämättömiä otettaessa
 - <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
 - <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
-

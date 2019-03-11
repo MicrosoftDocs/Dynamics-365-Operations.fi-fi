@@ -1,13 +1,13 @@
 ---
 title: Microsoft Dynamics 365 for Finance and Operations -dokumentaatio
-description: Microsoft Dynamics 365 for Finance and Operations -dokumentaatio.
+description: Dokumentaatio Microsoft Dynamics 365 for Finance and Operations -ohjelmalle.
 author: margoc
 manager: AnnBe
 ms.date: 08/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: edacf76866cf3e078e08dd6e5a69132d0eb15176
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302209"
 ---
-
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations -dokumentaatio
 
 [!include [banner](includes/banner.md)]
 
-Seuraavissa resursseissa on lisätietoja tavoista, joilla voit käyttää Microsoft Dynamics 365 for Finance and Operationsia yrityksessäsi. Resursseissa on käyttäjille, kehittäjille ja IT-ammattilaisille sopivaa sisältöä. 
+Seuraavissa resursseissa on lisätietoja tavoista, joilla voit käyttää Microsoft Dynamics 365 for Finance and Operations -ohjelmaa yrityksessäsi. Resursseissa on käyttäjille, kehittäjille ja IT-ammattilaisille sopivaa sisältöä. 
 
-Suuri osa sisällöstä koskee myös seuraavia liittyviä tuotteita: Microsoft Dynamics 365 for Retail ja Microsoft Dynamics 365 for Talent. 
+Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Microsoft Dynamics 365 for Retail ja Microsoft Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -131,4 +130,3 @@ Suuri osa sisällöstä koskee myös seuraavia liittyviä tuotteita: Microsoft D
 
 </tbody>
 </table>
-

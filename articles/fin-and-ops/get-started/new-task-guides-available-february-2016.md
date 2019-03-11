@@ -1,13 +1,13 @@
 ---
-title: "Uudet tehtäväoppaat (helmikuu 2016)"
-description: "Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM -kirjastoissa helmikuuhun 2016 mennessä.  Julkaistut kirjastot sisältävät (helmikuu 2016) Microsoft Dynamics 365 for Operationsin yhdistetyn APQC-kirjaston sekä (helmikuu 2016) aloitusoppaan."
+title: Uudet tehtäväoppaat (helmikuu 2016)
+description: Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM -kirjastoissa helmikuuhun 2016 mennessä.  Julkaistut kirjastot sisältävät (helmikuu 2016) Microsoft Dynamics 365 for Operationsin yhdistetyn APQC-kirjaston sekä (helmikuu 2016) aloitusoppaan.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 87384bae08e3fa78ef3deb3830583b16b9d9d6ac
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366440"
 ---
-
 # <a name="new-task-guides-february-2016"></a>Uudet tehtäväoppaat (helmikuu 2016)
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016)
 
-(Helmikuu 2016) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Dynamics AX 7.0.0 -version ohjeeksi. Jos tarvitset näiden tehtäväoppaiden lokalisoituja versioita, ne ovat saatavilla (toukokuu 2016) Microsoft Dynamics AX:n yhdistetyssä APQC-kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
+(Helmikuun 2016) yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Dynamics AX 7.0.0 -version ohjeeksi. Jos tarvitset näiden tehtäväoppaiden lokalisoituja versioita, ne ovat saatavilla (toukokuu 2016) Microsoft Dynamics AX:n yhdistetyssä APQC-kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
 
 ### <a name="accounts-payable"></a>Ostoreskontra
 
@@ -647,4 +646,3 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 [Uudet tai päivitetyt tehtäväoppaat saatavilla (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)
-

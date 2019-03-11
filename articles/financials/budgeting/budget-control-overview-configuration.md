@@ -1,13 +1,13 @@
 ---
 title: Yleiskatsaus budjetin seurantaan
-description: "Tässä artikkelissa esitellään budjetin hallinta. Artikkeli sisältää tietoja, joiden avulla budjetin hallinta voidaan määrittää Microsoft Dynamics 365 for Finance and Operationsissa niin, että taloushallinnon resurssien hallinta onnistuu."
+description: Tässä artikkelissa esitellään budjetin hallinta. Artikkeli sisältää tietoja, joiden avulla budjetin hallinta voidaan määrittää Microsoft Dynamics 365 for Finance and Operationsissa niin, että taloushallinnon resurssien hallinta onnistuu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4dbbbdf403c3e3f7c1bfa391cc32f80505098db9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e77760d6729b8faf3099590c60ea7673cfcb18ec
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308526"
 ---
-
-# <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus 
+# <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
@@ -128,4 +127,3 @@ Kun budjetin hallinta on otettu käyttöön, käyttäjät vastaanottavat niiden 
 Tältä sivulta käyttäjät voivat porautua **Budjetin hallinnan tilasto kausittain** -sivulle ja tarkastella budjetin käytettävyystietoja ja varauksia tietyn budjetin ohjausdimensioyhdistelmän osalta. Käyttäjät voivat porautua myös **Budjetin hallinnan tilastot**-sivulle ja tarkastella budjetin käytettävyyttä kaikkien budjetin hallinnassa käytettävien taloushallinnon dimensioiden yhdistelmien osalta. 
 
 Jos budjetin hallinta on otettu käyttöön ostotilauksille, budjettipäällikkö voi tarkastella **Kirjanpitobudjetit ja ennusteet** -työtilan avulla kaikkien niiden vahvistamattomien ostotilausten jonoa, joilla on budjetin tarkistuksen varoituksia ja virheitä. Jos budjettipäällikölle on konfiguroitu budjetin ylitysoikeudet, hän voi vahvistaa ostotilaukset suoraan työtilassa.    
-

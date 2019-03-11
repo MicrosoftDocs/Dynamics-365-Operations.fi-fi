@@ -1,13 +1,13 @@
 ---
 title: Tuotantotilauksen tilan palauttaminen
-description: "Tässä aiheessa on kuvattu tuotantotilauksen tilan palauttamista."
+description: Tässä aiheessa on kuvattu tuotantotilauksen tilan palauttamista.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParmStatusDecrease
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ca5a62b4509f0c7e49da94128e72eae5f35829e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4761e44b6bbc93ebf4a395948f42c2a73013ecb9
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367314"
 ---
-
 # <a name="reverse-the-production-order-status"></a>Tuotantotilauksen tilan palauttaminen
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Kun tuotantotilaus palautetaan **Vapautettu**-tilasta **Ajoitettu**-tilaan, vain
 
 ## <a name="from-started-to-released"></a>Aloitettu-tilasta Vapautettu-tilaan
 Kun tuotantotilaus palautetaan **Aloitettu**-tilasta **Vapautettu**-tilaan, kaikki valmiiksi ilmoitetut nimikkeet palautetaan. Jos materiaalia on kerätty tai tuotantoon liittyy saapuvia tai lähteviä toimituksia, myös nämä asetukset palautetaan. Tuotantotilauksen tuoterakennerivien **Jäljellä oleva tila** -kentän arvo muuttuu **Päättynyt**-tilasta **Materiaalikulutus**-tilaan. Jos aika on rekisteröity tai määrät on raportoitu valmiiksi tuotantoreitityksen työvaiheille, nämä asetukset palautetaan. **Jäljellä oleva tila** -kentän arvo muuttuu tuotantoreitityksessä **Päättynyt**-tilasta **Reitityksen kulutus** -tilaan. Kaikkien käsittelyssä oleviksi kirjattujen nimikkeiden tai keskeneräisten töiden asetukset palautetaan. **Tuotantotilauksen tiedot** -sivulla olevat kentät, joissa näkyy aloitettu tai valmiiksi ilmoitettu määrä, palautetaan. Myös kyseisten tapahtumien päivämäärät palautetaan.
-
 
 
 

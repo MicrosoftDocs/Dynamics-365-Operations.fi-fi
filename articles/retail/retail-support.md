@@ -1,35 +1,34 @@
 ---
-title: Dynamics 365 for Retail -tuen saanti
-description: "Tässä artikkelissa selitetään, miten saat apua Microsoft Dynamics 365 for Retailin käyttöön."
+title: Dynamics 365 for Retail -tuen saaminen
+description: Tässä artikkelissa kerrotaan, miten saat Microsoft Dynamics 365 for Retailia koskevia ohjeita.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
+ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 2e74554338e4b12991756f63257f67ee3e2e6dc4
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364048"
 ---
-
-# <a name="get-support-for-dynamics-365-for-retail"></a>Dynamics 365 for Retail -tuen saanti
+# <a name="get-support-for-dynamics-365-for-retail"></a>Dynamics 365 for Retail -tuen saaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa selitetään, miten saat apua Dynamics 365 for Retailin käyttöön.
+Tässä artikkelissa kerrotaan, miten saat Dynamics 365 for Retailia koskevia ohjeita.
 
 ## <a name="contact-support"></a>Ota yhteyttä tukeen
 
@@ -67,7 +66,7 @@ Voit saada Retail-tukea käyttämällä seuraavan taulukon resursseja. Nämä re
 </tr>
 <tr>
 <td>Avaa palvelupyyntö tukitiimissä.</td>
-<td>Jos palvelupyynnön lähettämisessä Microsoftille LCS:n <strong>Tuki</strong>-ruudusta on ongelmia, kohdassa <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng">Yhteyden ottaminen Microsoft Business Solutions -tukeen</a> on lisätietoja yhteyden ottamisesta Microsoft Dynamics Regional Operations Centeriin. Tukiryhmä auttaa ratkaisemaan seuraavanlaisia teknisiä ongelmia:
+<td>Jos palvelupyynnön lähettämisessä Microsoftille LCS:n <strong>Tuki</strong>-ruudusta on ongelmia, kohdassa <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng">Yhteyden ottaminen Microsoft Business Solutions -tukeen</a> on lisätietoja yhteyden ottamisesta Microsoft Dynamicsin alueellisiin toimintokeskuksiin. Tukiryhmä auttaa ratkaisemaan seuraavanlaisia teknisiä ongelmia:
 <ul>
 <li>LCS:n käyttöön liittyvät virheet ja LCS:n käyttöoikeuksiin liittyvät virheet.</li>
 <li>Virheet, joita tapahtuu Retailin käytön aikana.</li>
@@ -85,5 +84,4 @@ Jos tekniset kysymykset liittyvät CustomerSourceen kirjautumiseen tai sen käyt
 </tbody>
 </table>
 
-Lisätietoja Microsoft Dynamicsin tukivalikoimasta on ohjeaiheessa [Microsoft Dynamics Online -tuki](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
-
+Lisätietoja Microsoft Dynamicsin tukivalikoimasta on kohdassa [Microsoft Dynamics Online -tuki](https://dynamics.microsoft.com/en-us/support/).

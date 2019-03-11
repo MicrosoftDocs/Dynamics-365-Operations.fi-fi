@@ -1,13 +1,13 @@
 ---
-title: "Puhelinkeskuksen kanavien määrittäminen"
-description: "Tässä ohjeaiheessa on tietoja puhelinkeskusten tilausten käsittelystä Dynamics 365 for Retailin avulla."
+title: Puhelinkeskuksen kanavien määrittäminen
+description: Tässä ohjeaiheessa on tietoja siitä, kuinka voit käsitellä puhelinkeskusten tilauksia käyttämällä Microsoft Dynamics 365 for Retailissa.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334838"
 ---
-
-# <a name="set-up-call-center-channels"></a>Puhelinkeskuksen kanavien määrittäminen
+# <a name="set-up-call-center-channels"></a>Puhelinkeskuskanavien määrittäminen
 
 [!include [banner](includes/banner.md)]
 
@@ -80,4 +79,3 @@ Oletusarvoisesti myyntilauksen otsikon **Vähittäismyynti**-merkintä on käyt�
 Käyttäjät, joita ei ole linkitetty puhelinkeskuskanavaan, käyttävät Microsoft Dynamics 365 for Finance and Operationsin tilaustenkäsittelyn perusominaisuuksia. Myyntitilauksen käsittelylomakkeen kautta annettavia tilauksia ei tunnisteta järjestelmällisesti vähittäismyyntitilauksiksi. Lisäksi mitkään tilauksen viimeistelyn käsittelysäännöt, vähittäismyynnin hinnoittelulogiikka tai muut tilauksen tarkistukset, jotka voidaan määrittää puhelinkeskuskanavan määrityksissä tai puhelinkeskuksen järjestelmäparametreissa, eivät koske tällaisten käyttäjien antamia tällaisia tilauksia.
 
 Kun puhelinkeskuskanavan määritykset on tehty ja kanavan käyttäjät määritetty, varmista järjestelmä toimiminen odotetulla tavalla tarkistamalla, että kaikki pakolliset puhelinkeskuksen parametrit on määritetty kohdassa **Retail** \> **Kanavan asetukset** \> **Puhelinkeskuksen asetukset** \> **Puhelinkeskuksen parametrit**. Muista määrittää myös liittyvät numerosarjat.
-

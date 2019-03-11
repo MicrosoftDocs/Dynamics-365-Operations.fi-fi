@@ -1,13 +1,13 @@
 ---
 title: Toimintoperusteinen alihankinta
-description: "Tässä aiheessa kuvataan yksityiskohtaisesti, miten alihankintatoimintoja voi käyttää lean-valmistuksen tuotantovirrassa."
+description: Tässä aiheessa kuvataan yksityiskohtaisesti, miten alihankintatoimintoja voi käyttää lean-valmistuksen tuotantovirrassa.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 59b41b31931a128898ee70a583bfb9c515f90abc
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350041"
 ---
-
 # <a name="activity-based-subcontracting"></a>Toimintoperusteinen alihankinta
 
 [!include [banner](../includes/banner.md)]
@@ -104,7 +103,6 @@ Usein kuljetusta pidetään tuottamattomana ja ajatellaan, että se ei tuo lisä
 Lean-valmistuksen toimintoperusteisen alihankinnan avulla voit integroida rahdinkuljettajat ja kuljetuspalveluiden tarjoajat, jotka siirtävät materiaaleja ja tuotteita tuotantovirran sijaintien välillä. Mallintamalla siirtotehtävän voit määrittää rahdinkuljettajan tai toimittajan. Siirtotehtävä/-työ perustuu palveluun ja ostosopimukseen, ja voit luoda ostotilauksia ja vastaanoton ohjeita töiden varsinaisen siirron perusteella. Tämä toiminto on sama kuin alihankintaprosessin tehtävien toiminnallisuus.  
 
 Siksi Dynamics 365 for Finance and Operations tukee nyt tuoterakennelaskentaa, joka sisällyttää kuljetuspalvelut, liittyvien ostotilausten luonnin, integroidun vastaanoton rekisteröinnin ja kuljetuspalveluiden kustannusten integroinnin tuotantovirran kustannuslaskentaan.
-
 
 
 

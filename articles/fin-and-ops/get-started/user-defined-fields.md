@@ -1,13 +1,13 @@
 ---
-title: "Luo ja muokkaa mukautettuja kenttiä"
-description: "Tässä ohjeaiheessa käsitellään, miten Microsoft Dynamics 365 for Finance and Operations antaa joillekin käyttäjille mahdollisuuden luoda mukautettuja kenttiä ja muokata sovellusta niiden avulla yrityksen tarpeita vastaavaksi."
+title: Mukautettujen kenttien luominen ja käsitteleminen
+description: Tässä ohjeaiheessa käsitellään, miten Microsoft Dynamics 365 for Finance and Operations antaa joillekin käyttäjille mahdollisuuden luoda mukautettuja kenttiä ja muokata sovellusta niiden avulla yrityksen tarpeita vastaavaksi.
 author: jasongre
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
 ms.reviewer: sericks
@@ -16,15 +16,14 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 18402579789c17de7b46dd7a013b3b6327ea5d4f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348017"
 ---
-
-# <a name="create-and-work-with-custom-fields"></a>Luo ja muokkaa mukautettuja kenttiä
+# <a name="create-and-work-with-custom-fields"></a>Mukautettujen kenttien luominen ja käsitteleminen
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,7 +31,7 @@ Vaikka Microsoft Dynamics 365 for Finance and Operationsissa on kattava valikoim
 
 Mukautettujen kenttien lisääminen on mahdollista päivityksestä 13 eteenpäin.
 
-Tässä videossa näytetään, miten helposti mukautettu kenttä voidaan lisätä sivulle: [Mukautettujen kenttien lisääminen Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
+Tässä videossa näytetään, miten helposti mukautettu kenttä voidaan lisätä sivulle: [Mukautettujen kenttien lisääminen Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 
 ## <a name="creating-custom-fields"></a>Mukautettujen kenttien luominen
 
@@ -160,4 +159,3 @@ Suorituskyvyn ja teknisten syiden vuoksi vain seuraavat ehdot täyttävät taulu
 - Taulu ei voi laajentaa toista taulua.
 - Taulua ei voi merkitä järjestelmätauluksi.
 - Taulu ei voi olla väliaikainen taulu.
-

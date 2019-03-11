@@ -1,14 +1,14 @@
 ---
-title: "Prosessien tehtävät"
-description: "Tässä ohjeaiheessa on tietoja erityyppisistä tehtävistä, joita voidaan käyttää työhönottoprosessissa."
-author: 
+title: Prosessien tehtävät
+description: Tässä ohjeaiheessa on tietoja erityyppisistä tehtävistä, joita voidaan käyttää työhönottoprosessissa.
+author: ''
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c32db1f563466f05b9fef1a03578392888c0b7e6
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374754"
 ---
-
 # <a name="activities-in-the-hiring-processes"></a>Työhönottoprosessien tehtävät
 
 [!include[banner](../includes/banner.md)]
@@ -43,31 +42,9 @@ Potentiaalinen ehdokas -tehtävä määrittää, voidaanko potentiaaliset ehdokk
 
 Työhönottoprosessimallissa on oltava Hakemus-tehtävä. Jos haluat lähettää sähköpostia ehdokkaille, kun lähettävät hakemuksen tai kun heidät lisätään Hakemus-vaiheeseen, valitse **Lähetä viesti ehdokkaalle** -asetukseksi **Käytössä**.
 
-## <a name="scheduler-activity"></a>Ajastus-tehtävä
+## <a name="interview-schedule-and-feedback-activity"></a>Haastattelujen aikataulu- ja palautetehtävä
 
-Ajastus-tehtävä on valinnainen. Tässä tehtävässä on kaksi osaa: Ehdokkaan käytettävyystiedot ja Aikataulu. Ehdokkaan käytettävyystiedot -osassa voit pyytää ehdokkaan käytettävyystietoja sähköpostitse. Aikataulu-osassa voi sopia haastattelun ajankohdan ehdokkaan ja työhönottoryhmän kesken. Ajastus-tehtävässä voi määrittää seuraavat vaihtoehdot: **Pyydä ehdokkaan käytettävyystietoja**, **Verkkokokous** ja **Lähetä viesti ehdokkaalle**.
-
-- Jos haluat pyytää ehdokkaiden käytettävyystiedot sähköpostitse, valitse **Pyydä ehdokkaan käytettävyystietoja** -asetukseksi **Käytössä**. Jos valitset **Ei käytössä**, tätä vaihetta ei näytetä työn työhönottoprosessissa.
-- Jos haluat käyttää Skype for Businessin suoratoisto- tai neuvottelupuheluominaisuutta, valitse **Verkkokokous**-kentässä **Skype for Business**. **Liity Skype-kokoukseen** -linkki lisätään sitten haastattelijoille lähetettävään haastattelun kokouspyyntöön.
-- Jos haluat pyytää ehdokkaita varmistamaan aikataulun, valitse **Lähetä viesti ehdokkaalle** -asetukseksi **Käytössä**. Jos valitset **Ei käytössä**, ehdokkaat saavat haastatteluaikataulun vasta, kun he kirjautuvat ehdokasportaaliin.
-
-## <a name="feedback-activity"></a>Palaute-tehtävä
-
-Palaute-tehtävä on valinnainen. Tämän tehtävän avulla haastatteluun osallistuvat voivat antaa hakijaa koskevia suosituksia. He voivat antaa halutessaan myös palautetta. Jos otat **Peri palautteeseen osallistujat työhönottoryhmältä** -asetuksen käyttöön, rekrytoija, rekrytointipäällikkö ja haastattelijat siirtyvät automaattisesti Palaute-tehtävään. Organisaatiot voit antaa haastattelijoille mahdollisuuden tarkastella muiden palautteet, ennen kuin he lähettävät oman palautteensa. Organisaatiot voivat lisäksi antaa haastattelijoille mahdollisuuden muokata jo lähetettyä palautetta.
-
-## <a name="interview-activity"></a>Haastattelu-tehtävä
-
-Haastattelu-tehtävä on valinnainen. Tässä tehtävässä on kolme osaa: Ehdokkaan käytettävyystiedot, Aikataulu ja Palaute. Ehdokkaan käytettävyystiedot -osassa voit pyytää ehdokkaan käytettävyystietoja sähköpostitse. Aikataulu-osassa voi sopia haastattelun ajankohdan ehdokkaan ja työhönottoryhmän kesken. Ajastus-tehtävässä voi määrittää seuraavat vaihtoehdot: **Pyydä ehdokkaan käytettävyystietoja**, **Verkkokokous** ja **Lähetä viesti ehdokkaalle**.
-
-- Jos haluat pyytää ehdokkaiden käytettävyystiedot sähköpostitse, valitse **Pyydä ehdokkaan käytettävyystietoja** -asetukseksi **Käytössä**. Jos valitset **Ei käytössä**, tätä vaihetta ei näytetä työn työhönottoprosessissa.
-- Jos haluat käyttää Skype for Businessin suoratoisto- tai neuvottelupuheluominaisuutta, valitse **Verkkokokous**-kentässä **Skype for Business**. **Liity Skype-kokoukseen** -linkki lisätään sitten haastattelun kokouspyyntöön.
-- Jos haluat pyytää ehdokkaita varmistamaan aikataulun, valitse **Lähetä viesti ehdokkaalle** -asetukseksi **Käytössä**. Jos valitset **Ei käytössä**, ehdokkaat saavat haastatteluaikataulun vasta, kun he kirjautuvat ehdokasportaaliin.
-
->[!NOTE]
-> - Kaikkien yksilöhaastattelujen muistutukset lähetetään haastattelijoille 24 tunnin välein, jos haastattelija ei vastaa (hyväksyy tai hylkää) haastattelupyyntöön.
-> - Paneelihaastatteluilla ei ole automaattisia muistutuksia haastattelupyyntöön vastaamisesta. Voit käynnistää muistutuksen manuaalisesti muokkaamalla haastattelua ja lähettämällä pyynnön takaisin haastattelijoille **Päivitä ja lähetä** -asetuksella.
-
-Palauteosassa voidaan antaa hakijaa koskevia suosituksia. He voivat antaa halutessaan myös palautetta. Jos otat **Peri palautteeseen osallistujat työhönottoryhmältä** -asetuksen käyttöön, rekrytoija, rekrytointipäällikkö ja haastattelijat siirtyvät automaattisesti Palaute-osaan. Organisaatiot voit antaa haastattelijoille mahdollisuuden tarkastella muiden palautteet, ennen kuin he lähettävät oman palautteensa. Organisaatiot voivat lisäksi antaa haastattelijoille mahdollisuuden muokata jo lähetettyä palautetta.
+Tässä tehtävässä on kolme osaa: Ehdokkaan käytettävyystietojen pyytäminen, Aikataulu ja Palaute. Käytä työmallin haastattelutehtävää, jos haluat sisällyttää ehdokkaan käytettävyystietojen pyytämisen, aikataulun ja palautteen prosessin osaksi sen sijaan, että käyttäisit niitä työhönottoprosessin erillisinä osina. Lisätietoja on kohdassa [Haastattelujen aikataulutus ja palaute](interview-scheduling-feedback.md).
 
 ## <a name="powerapps-activity"></a>PowerApps-tehtävä
 
@@ -102,4 +79,3 @@ Tekijät voivat muuttaa Microsoft Formsissa asetuksia siten, että organisaation
 
 > [!NOTE]
 > Microsoft Forms -tehtävää voi käyttää vain kattavan työhönottolaajennuksen kanssa.
-

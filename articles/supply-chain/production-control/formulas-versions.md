@@ -1,32 +1,31 @@
 ---
 title: Kaavat ja kaavaversiot
-description: "Tässä aiheessa on tietoja resepteistä ja reseptiversioista. Resepti määrittää prosessituotannon prosessiin kuuluvat materiaalit, valmistusaineet ja tulokset. Reseptejä käytetään tuotteiden suunnitteluun ja valmistamiseen prosessituotannossa."
+description: Tässä aiheessa on tietoja resepteistä ja reseptiversioista. Resepti määrittää prosessituotannon prosessiin kuuluvat materiaalit, valmistusaineet ja tulokset. Reseptejä käytetään tuotteiden suunnitteluun ja valmistamiseen prosessituotannossa.
 author: cvocph
 manager: AnnBe
 ms.date: 09/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bbffc298ff5d2442092f8f0c987b7e79a7934a84
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4475695b1a00213ab7e3b5060fd38cc71883d2bd
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350110"
 ---
-
 # <a name="formulas-and-formula-versions"></a>Kaavat ja kaavaversiot
 
 [!include [banner](../includes/banner.md)]
@@ -72,4 +71,3 @@ Skaalattava ominaisuus on käytettävissä vain, jos kaikki reseptin nimikekompo
 
 ## <a name="use-step-consumption"></a>Vaihekulutuksen käyttö
 Vaihekulutus poistaa tarpeen syöttää ainesosan määrä **Reseptirivi**-välilehdellä. Sen sijaan vaihekulutus määritetään siten, että sillä on **Sarjasta**-arvo ja **Määrä**-arvo. Erätilauksen määrän perusteella valitaan sen sarjakohtaisen vaihekulutuksen tiedot, joka vastaa kyseistä määrää. Vaihekulutuksen käyttö on hyödyllistä, kun kulutus ei ole eräkoon kannalta lineaarista, sillä se nostaa vaatimusta vain, kun tietty määräraja ylittyy. Toiminnon voi ottaa käyttöön uudessa reseptissä vaihtamalla **Kulutuksen laskenta** -ryhmässä reseptin ainesosa-asetuksen arvosta **Vakio** arvoon **Vaihe**. Voit määrittää tämän kulutusmenetelmään **Reseptirivi**-sivun **Asetukset**-välilehdellä.
-

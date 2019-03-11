@@ -1,13 +1,13 @@
 ---
-title: "Talousraporttien suunnittelutoiminnon rivimääritykset"
-description: "Rivin määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin rivin sisällön. Rivin määritys voidaan yhdistää sarakemääritykseen, raportointipuun määrityksiin ja raportin määrityksiin. Näin luodaan rakenneosaryhmä, jota voidaan käyttää useissa yrityksissä."
+title: Talousraporttien suunnittelutoiminnon rivimääritykset
+description: Rivin määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin rivin sisällön. Rivin määritys voidaan yhdistää sarakemääritykseen, raportointipuun määrityksiin ja raportin määrityksiin. Näin luodaan rakenneosaryhmä, jota voidaan käyttää useissa yrityksissä.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "350432"
 ---
-
 # <a name="row-definitions-in-financial-report-designer"></a>Talousraporttien suunnittelutoiminnon rivimääritykset
 
 [!include [banner](../includes/banner.md)]
@@ -160,7 +159,7 @@ Voit luoda ja muokata raportin fonttityylejä. Voit sitten käyttää näitä ty
 
 Rivin määrityksessä määritetty muotoilu korvaa sarakkeen ja raportin määrityksessä määritetyn muotoilun. Voit muokata tekstimuotoa muotoilun työkalurivin ohjausobjekteilla. Nämä ohjausobjektit ovat Microsoft Windowsin vakio-ohjausobjekteja.
 
-1. Avaa Report Designer -ohjelmassa muokattava rivin määritys.
+1. Avaa raporttien suunnitteluohjelmassa rivimääritys, jota haluat muokata.
 2. Valitse muokattavat solut. Voit valita useita soluja pitämällä Ctrl-näppäintä alhaalla valinnan aikana.
 3. Ota muoto käyttöön valitsemalla muodon työkalurivipainike. Jos haluat esimerkiksi sisentää rivin, valitse ensin rivi ja sitten työkalurivin **Kasvata sisennystä** ![Kasvata sisennystä](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Kasvata sisennystä").
 
@@ -189,4 +188,3 @@ Rivin määrityksen käsiteltävien sarakkeiden tarkasteleminen helpottuu oikais
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Organisaatiot ja organisaatiohierarkiat
-description: "Organisaatio on joukko ihmisiä, jotka työskentelevät yhdessä liiketoimintaprosessin suorittamiseksi tai tavoitteen saavuttamiseksi. Organisaatiohierarkiat edustavat liiketoimintasi muodostavien organisaatioiden välisiä suhteita."
+description: Organisaatio on joukko ihmisiä, jotka työskentelevät yhdessä liiketoimintaprosessin suorittamiseksi tai tavoitteen saavuttamiseksi. Organisaatiohierarkiat edustavat liiketoimintasi muodostavien organisaatioiden välisiä suhteita.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 72834769e393382ac511ad3af21544efddb049d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f8afc37e8d69b06622176d4f6cfb3ff06a0ab54
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322234"
 ---
-
 # <a name="organizations-and-organizational-hierarchies"></a>Organisaatiot ja organisaatiohierarkiat
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Organisaatio on joukko ihmisiä, jotka työskentelevät yhdessä liiketoimintapr
 
 ## <a name="organizations"></a>Organisaatiot
 
-Microsoft Dynamics 365 for Finance and Operationsissa voi määrittää seuraavantyyppisiä sisäisiä organisaatioita: yrityksiä, toimintayksiköitä ja ryhmiä.
+Voit määrittää Microsoft Dynamics 365 for Finance and Operationsissa seuraavan tyyppisiä sisäisiä organisaatioita: yritysten toimintayksiköt ja ryhmiä.
 
 Kaikki sisäiset organisaatiot ovat **Osapuoli**-tyyppisiä yksiköitä. Tämän vuoksi nämä organisaatiot käyttävät osoitekirjaa osoitteen ja yhteystietojen tallentamiseen. Osapuoli, joka voi olla joko henkilö tai organisaatio voi kuulua yhteen tai useampaan osoitekirjaan.
 
@@ -42,13 +41,13 @@ Kaikki sisäiset organisaatiot ovat **Osapuoli**-tyyppisiä yksiköitä. Tämän
 
 Yritys on organisaatio, jolla on rekisteröity tai lain vaatima rakenne. Yritys voi solmia oikeudellisia sopimuksia ja yritykseltä edellytetään suorituskykyä kuvaavien lausuntojen valmistelemista.
 
-Yritys on tietyntyyppinen oikeushenkilö Tässä Microsoft Dynamics 365 for Finance and Operationsin versiossa yritykset ovat ainoita luotavia oikeushenkilöitä ja jokaisella oikeushenkilöllä on yritystunnus. Tämä liitos on olemassa, koska ohjelman eräät toiminnalliset alueet käyttävät yritystunnusta tai DataAreaId-tunnusta tietomalleissaan. Näillä toiminnallisilla alueilla yrityksiä käytetään tietoturvan rajana. Käyttäjillä on pääsy vain sen yrityksen tietoihin, jonka järjestelmään he ovat sillä hetkellä kirjautuneena.
+Yritys on tietyntyyppinen oikeushenkilö Tässä Microsoft Dynamics 365 for Finance and Operationsin versiossa yritykset ovat ainoita luotavia oikeushenkilöitä ja jokainen oikeushenkilö on liitetty yritystunnukseen. Tämä liitos on olemassa, koska ohjelman eräät toiminnalliset alueet käyttävät yritystunnusta tai DataAreaId-tunnusta tietomalleissaan. Näillä toiminnallisilla alueilla yrityksiä käytetään tietoturvan rajana. Käyttäjillä on pääsy vain sen yrityksen tietoihin, jonka järjestelmään he ovat sillä hetkellä kirjautuneena.
 
 ### <a name="operating-units"></a>Käyttöyksiköt
 
 Toimintayksikkö on organisaatio, jota käytetään jakamaan liiketoiminnan taloudellisten resurssien hallinta ja operationaaliset prosessit. Toimintayksikön henkilöiden vastuulla on rajattujen resurssien maksimointi, prosessien tehostaminen ja suorituskyvyn raportointi.
 
-Microsoft Dynamics 365 for Finance and Operationsin toimintayksikkötyyppejä ovat kustannuspaikat, liiketoimintayksiköt, arvovirrat, osastot ja vähittäismyyntikanavat. Seuraavassa taulukossa on lisätietoja jokaisesta toimintayksikön tyypistä:
+Microsoft Dynamics 365 for Finance and Operationsissa toimintayksiköihin kuuluvat kustannuspaikat, liiketoimintayksiköt, arvovirrat, osastot ja vähittäismyyntikanavat. Seuraavassa taulukossa on lisätietoja jokaisesta toimintayksikön tyypistä:
 
 | Toimintayksikön tyyppi | Kuvaus | Tarkoitus |
 |---------------------|-------------|---------|
@@ -66,7 +65,6 @@ Ryhmä on organisaatio, jonka jäsenet jakavat yhteisen vastuun, intressin tai t
 
 Määritä organisaatiohierarkioita liiketoiminnan tarkastelemiseen ja raportointiin eri näkökulmista. Voit esimerkiksi määrittää yritysten hierarkian verotuksellista, oikeudellista tai lakisääteistä raportointia varten. Aseta hierarkia, joka perustuu toimintayksiköihin, raportoimaan sellaiset taloustiedot, joiden raportointia lainsäädäntö ei edellytä mutta joita käytetään sisäisessä valvonnassa. Voit esimerkiksi luoda ostohierarkian ostokäytäntöjen, sääntöjen ja liiketoimintaprosessien hallintaan.
 
-Microsoft Dynamics 365 for Finance and Operationsissa jokaiseen hierarkiaan liitetään tarkoitus. Hierarkian tarkoitus määrittää hierarkiaan sisällytettävät organisaatiotyypit. Tarkoitus määrittää myös käyttötilanteet, joissa hierarkiaa voidaan käyttää.
+Jokaiseen hierarkiaan liitetään tarkoitus Microsoft Dynamics 365 for Finance and Operationsissa. Hierarkian tarkoitus määrittää hierarkiaan sisällytettävät organisaatiotyypit. Tarkoitus määrittää myös käyttötilanteet, joissa hierarkiaa voidaan käyttää.
 
 Hierarkian organisaatiot voivat jakaa parametrejä, käytäntöjä ja tapahtumia. Organisaatio voi periä tai ohittaa ylätason organisaation parametrit. Jaetut perustiedot, kuten tuotteet ja osoitekirja, koskevat koko organisaatiota, mutta niitä ei voi ohittaa yksittäisissä organisaatioissa. Organisaatioiden ja hierarkioiden luominen edellyttää huolellista suunnittelua. Lisätietoja on aiheessa [Suunnittele organisaatiohierarkia](plan-organizational-hierarchy.md).
-

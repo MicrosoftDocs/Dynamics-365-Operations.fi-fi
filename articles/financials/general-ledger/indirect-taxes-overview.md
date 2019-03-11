@@ -1,13 +1,13 @@
 ---
-title: "Arvonlisäveron yleiskatsaus"
-description: "Tämä ohjeaihe sisältää arvonlisäverojärjestelmän yleiskatsauksen. Artikkelissa esitellään arvonlisäveroasetusten elementit ja se, miten ne toimivat yhdessä."
+title: Arvonlisäveron yleiskatsaus
+description: Tämä ohjeaihe sisältää arvonlisäverojärjestelmän yleiskatsauksen. Artikkelissa esitellään arvonlisäveroasetusten elementit ja se, miten ne toimivat yhdessä.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 11fe694af6180419460ba5dbf4c55f760a38f987
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311355"
 ---
-
 # <a name="sales-tax-overview"></a>Arvonlisäveron yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ Jokaiselle tapahtumalle (kuten myynti- ja ostoasiakirjan riveille ja kirjauskans
 Voit hakea lasketun arvonlisäveron jokaisessa tapahtumassa avaamalla **Arvonlisäverotapahtuma**-sivun. Voit etsiä arvolisäveron joko asiakirjan riville tai koko asiakirjalle. Voit oikaista tiettyjen asiakirjojen (kuten toimittajan laskun ja kirjauskansioiden) lasketun arvonlisäveron, jos alkuperäisessä asiakirjassa on poikkeavia summia.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Arvonlisäveron tilitys ja ilmoittaminen
-Arvonlisävero on ilmoitettava ja maksettava veroviranomaisille säännöllisin väliajoin (esimerkiksi kuukausittain tai neljännesvuosittain). Microsoft Dynamics 365 for Finance and Operations -sovelluksessa on toimintoja, joilla voit tilittää kauden verotilit ja vastakirjat saldot verotilitystilille kirjanpidon kirjausryhmien määritysten mukaisesti. Voit käyttää tätä toimintoa **Tilitä ja kirjaa arvonlisävero** -sivulla. Arvonlisäveron tilityskausi, jonka ajalta arvonlisäverot on tilitettävä, on määritettävä. 
+Arvonlisävero on ilmoitettava ja maksettava veroviranomaisille säännöllisin väliajoin (esimerkiksi kuukausittain tai neljännesvuosittain). Microsoft Dynamics 365 for Finance and Operationsissa on toimintoja, joilla voit tilittää kauden verotilit ja vastakirjat saldot verotilitystilille kirjanpidon kirjausryhmien määritysten mukaisesti. Voit käyttää tätä toimintoa **Tilitä ja kirjaa arvonlisävero** -sivulla. Arvonlisäveron tilityskausi, jonka ajalta arvonlisäverot on tilitettävä, on määritettävä. 
 
 Kun arvonlisävero on maksettu, arvolisäveron tilitystilin saldo on täsmäytettävä pankkitiliin. Jos arvonlisäveron tilityskaudessa määritetty arvonlisäveroviranomainen liittyy toimittajatiliin, arvolisäveron saldo kirjataan avoimena toimittajan laskuja, joka voidaan sisällyttää säännölliseen maksuehdotukseen.
 
@@ -97,4 +96,3 @@ Jos kuitenkin käytät suoritusperusteista arvonlisäveroa, täsmäytät veron v
 
 
 Lisätietoja on ohjeaiheessa [Ennakonpidätyksen määrittäminen](tasks/set-up-withholding-tax.md).
-

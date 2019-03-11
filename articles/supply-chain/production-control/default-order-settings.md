@@ -1,13 +1,13 @@
 ---
 title: Tilauksen oletusasetukset dimensioille ja tuotevarianteille
-description: "Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä."
+description: Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventItemOrderSetup
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: b7c36553c9ad5bf4b061285d617be85ce77d0fcd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: d0e8d1ac8b775f9c728d6bfa6ba219dd889bf8a2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326374"
 ---
-
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimensioiden ja tuotevarianttien oletustilausasetukset
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-Tilauksen Microsoft Dynamics 365 for Finance and Operations -sovelluksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai jossa niitä säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä. Tilauksen oletusasetuksia käytetään luotaessa ostotilauksia, myyntitilauksia, siirtotilauksia, varaston kirjauskansioita ja suunniteltujen tilausten luonnin pääsuunnittelussa. Tilauksen oletusasetukset voivat olla nimikekohtaisia, toimipaikkakohtaisia, tuotevarianttikohtaisia tai tuotedimensiokohtaisia.
+Tilauksen oletusasetukset Microsoft Dynamics 365 for Finance and Operationsissa määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä. Tilauksen oletusasetuksia käytetään luotaessa ostotilauksia, myyntitilauksia, siirtotilauksia, varaston kirjauskansioita ja suunniteltujen tilausten luonnin pääsuunnittelussa. Tilauksen oletusasetukset voivat olla nimikekohtaisia, toimipaikkakohtaisia, tuotevarianttikohtaisia tai tuotedimensiokohtaisia.
 
 Voit määrittää nimiketilausten oletusasetukset **Tilauksen oletusasetukset** -sivulla. Voit avata sivun kohdassa **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Vapautetut tuotteet** &gt; **Valitse vapautettu tuote** &gt; **Suunnitelma**- tai **Varastonhallinta** -toimintoruutu &gt; **Tilausasetukset** &gt; **Tilauksen oletusasetukset**.
 
@@ -170,7 +169,6 @@ Jos tilauksen oletusasetusten sääntöjärjestelmä on liian hankala, on mahdol
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 Luokituksella ei tällöin ole todellista merkitystä, joten voit piilottaa sen. Ratkaisu aiheuttaa mahdollisesti ylläpito-ongelmia. Haluat ehkä kuitenkin käyttää näitä asetuksia, jos olet harkinnut integrointia tuotteen elinkaaren hallintajärjestelmään (PLM).
-
 
 
 

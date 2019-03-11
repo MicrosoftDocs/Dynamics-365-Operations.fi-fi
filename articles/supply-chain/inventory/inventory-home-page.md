@@ -1,13 +1,13 @@
 ---
 title: Varastonhallinnan aloitussivu
-description: "Tässä ohjeaiheessa on varastonhallinnan yhteenveto."
+description: Tässä ohjeaiheessa on varastonhallinnan yhteenveto.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5376c6c18c2d7d48d3ee253e8818e0c868a52145
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 01b51b3442ca2a924cec2e894c3840c90989791c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364922"
 ---
-
 # <a name="inventory-management"></a>Varastoinninhallinta 
 
 [!include [banner](../includes/banner.md)]
@@ -49,16 +48,15 @@ Seuraavassa oppimiskartassa on esillä tärkeitä käsitteitä ja tehtäviä, jo
 ## <a name="additional-resources"></a>Lisäresurssit
 
 ### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
-Sivustossa [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
+[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustossa on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
 
 ### <a name="inventory-accounting"></a>Varastokirjanpito 
 Lisätietoja on kohdassa [Kustannushintojen hallinnan varastokirjanpito](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Valmistuksen ja toimitusketjun hallinnan blogit
-Mielipiteitä, uutisia ja muita varastonhallintaa ja muita ratkaisuja koskevat tiedot löytyvät kohdista [Dynamics AX:n valmistuksen tutkimus- ja kehitysryhmän blogi](https://blogs.msdn.microsoft.com/axmfg) ja [Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogis](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+Mielipiteitä, uutisia ja muita varastonhallintaa ja muita ratkaisuja koskevat tiedot ovat kohdista [Dynamics AX:n valmistuksen tutkimus- ja kehitysryhmän blogi](https://blogs.msdn.microsoft.com/axmfg) ja [Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogi](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Tehtäväoppaat
 Finance and Operationsin tehtäväoppaissa on lisäohjeita. Voit avata tehtäväoppaan napsauttamalla **Ohje**-painiketta millä tahansa sivulla.
-
 
 

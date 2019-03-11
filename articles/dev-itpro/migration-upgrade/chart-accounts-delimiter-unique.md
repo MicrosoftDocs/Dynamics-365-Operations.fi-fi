@@ -1,13 +1,13 @@
 ---
-title: "Tee tilikartan erottimista yksilöiviä"
-description: "Tilikartan ja dimension arvoilla ei voi olla Dynamics 365 for Finance and Operationsissa sama erotin. Erotinarvot on muutettava päivityksen jälkeen."
+title: Tilikartan erottimen muuttaminen yksilöiväksi
+description: Tilikartan ja dimension arvoilla ei voi olla Dynamics 365 for Finance and Operationsissa sama erotin. Erotinarvot on muutettava päivityksen jälkeen.
 author: ryansandness
 manager: AnnBe
 ms.date: 03/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: e197a1b44e038a97b8bf6db692dcc2eef2bc5f7b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335850"
 ---
-
-# <a name="make-the-chart-of-accounts-delimiter-unique"></a>Tee tilikartan erottimista yksilöiviä
+# <a name="make-the-chart-of-accounts-delimiter-unique"></a>Tilikartan erottimen muuttaminen yksilöiväksi
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,8 +32,8 @@ Microsoft Dynamics AX 2012:ssä tilikartan ja dimension arvoissa olisi mahdollis
 
 Ominaisuuden käytettävyys:
 - Dynamics 365 for Finance and Operations versio 8.0
-- Dynamics 365 for Finance and Operations versio 7.1, KB 4094701 Taloushallinnon dimensioita ei voi kirjata, kun dimension arvot sisältävät tilikartan erottimen
-- Dynamics 365 for Finance and Operations version 7.2, KB 4092967 Aliprojekti ei voi valita dimensiona, kun aliprojektin muoto sisältää dimension erottimen
+- Dynamics 365 for Finance and Operationsin versio 7.1, KB 4094701 Taloushallinnon dimensioita ei voi kirjata, kun dimension arvot sisältävät tilikartan erottimen
+- Dynamics 365 for Finance and Operations versio 7.2, KB 4092967 Aliprojekti ei voi valita dimensiona, kun aliprojektin muoto sisältää dimension erottimen
 
 ## <a name="update-delimiter"></a>Erottimen päivitys
 Jos tilikartan kanssa on ristiriita, tilikartan erotin ja projektin tai aliprojektin tunnuksen muoto voidaan muuttaa. Muita dimension erottimia ei voi muuttaa. 
@@ -43,4 +42,3 @@ Jos tilikartan kanssa on ristiriita, tilikartan erotin ja projektin tai aliproje
 
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>Erottimen päivitystarpeen määrittäminen ympäristössä 
 Jos päivitetyn ympäristön erottimissa on ristiriita, arvojen kirjaamisessa voi esiintyä epävakautta segmentoidussa kirjauksen hallinnassa tai dimensiomerkinnän ohjauksessa. Tämä tarkoittaa sitä, sinun on aina käytettävä hakuja tai lisätietoikkunaa, kun kirjaat tili- ja dimensioyhdistelmiä.
-

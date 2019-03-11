@@ -1,13 +1,13 @@
 ---
-title: "Konfigurointiavaimet ja tietoyksiköt"
-description: "Tässä ohjeaiheessa käsitellään konfigurointiavainten ja tietoyksiköiden välistä suhdetta Microsoft Dynamics 365 for Finance and Operationsissa."
+title: Konfigurointiavaimet ja tietoyksiköt
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Finance and Operationsin konfigurointiavainten ja tietoyksiköiden välistä suhdetta.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8d07a0572e56e97d42c0e1b841905f828edc6f51
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336471"
 ---
-
 # <a name="configuration-keys-and-data-entities"></a>Konfigurointiavaimet ja tietoyksiköt
 
 [!include [banner](../includes/banner.md)]
@@ -96,4 +95,3 @@ Suoritustenaikaiset oikeellisuustarkistukset suoritetaan seuraavissa käyttötil
 Aina kun päivität konfigurointiavaimet yksikkö-, taulu- tai kenttätasolla, tietojen hallintakehyksen yksikköluettelo on päivitettävä. Tämä prosessi varmistaa, että kehys poimii kaikki uusimmat konfigurointiavainasetukset. Seuraava sanoma näkyy yksikköluettelosivulla siihen saakka, että yksikköluettelo päivitetään. Päivitetyt konfigurointiavainmuutokset tulevat voimaan heti, kun yksikköluettelo on päivitetty. Aiemmin luodut tietoprojektit ja työt kannattaa tarkistaa ja varmistaa, että ne toimivat odotetusti sen jälkeen, kun konfigurointiavainmuutokset on otettu käyttöön.
 
 ![Kohdekentät](./media/Target_fields_3.png)
-

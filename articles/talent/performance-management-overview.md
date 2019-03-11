@@ -1,13 +1,13 @@
 ---
 title: Suorituksen hallinta
-description: "Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa. Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille."
+description: Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa. Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.
 author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 67da25514edc6b27f8478a7b317f6690720ab592
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: e7621b4c1358d1ecd6ff1c9ce2f1de08766a4bf6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304154"
 ---
-
 # <a name="performance-management"></a>Suorituksen hallinta
 
 [!include [banner](includes/banner.md)]
@@ -56,9 +55,9 @@ Kun **Suoritustason kirjauskansio** -sivua käytetään **Työntekijän itsepalv
 
 Voit myös linkittää suoritustason kirjauskansion ulkoiseen verkkosivustoon tallentamalla sivuston URL-osoitteen. Jos kirjauskansio liittyy tavoitteisiin tai suoritustasoarviointeihin, voit linkittää kirjauskansion myös niihin halutessasi. Kun suoritustason kirjauskansiota käytetään **Esimiehen itsepalvelu** -sivun kautta, voit syöttää samat tiedot kuin työntekijän kirjauskansioon. Lisäksi voit määrittää työntekijät, joille kirjauskansio luodaan. Voit määrittää, jaetaanko esimiehen kirjauskansio työntekijöiden kanssa.
 
-### <a name="praise"></a>Kehu
+### <a name="send-feedback"></a>Lähetä palaute
 
-Suoritustason kirjauskansio sisältää lisätoiminnon, jonka nimi on Kehu. Kun valitset **Lähetä kehu** -kohdan, voit valita työntekijän ja antaa tälle palautetta sähköpostitse. Viesti lähetetään kehuttavalle työntekijälle, työntekijän esimiehelle, kehun lähettävälle työntekijälle ja tämän työntekijän esimiehelle. Suoritustason kirjauskansiovienti luodaan jokaiselle kehuviestin vastaanottavalle henkilölle.
+Suoritustason kirjauskansio sisältää lisätoiminnon, jonka nimi on Palaute. Kun valitset **Lähetä palaute**, voit valita työntekijän ja antaa tälle palautetta sähköpostitse. Viesti lähetetään palautteen saavalle työntekijälle, työntekijän esimiehelle, palautteen lähettävälle työntekijälle ja tämän työntekijän esimiehelle. Suoritustason kirjauskansiovienti luodaan jokaiselle palauteviestin vastaanottavalle henkilölle.
 
 ## <a name="goals"></a>Tavoitteet
 **Suoritustasotavoitteet**-sivu auttaa sinun ja esimiehesi luomien tavoitteiden seuraamisessa. Voit luoda haluamasi määrän tavoitteita. Tavoitteiden ei tarvitse olla samalla kaudella tai samoissa suoritustasoarvioinneissa. Voit luoda myös yksinkertaisia tai monitasoisia tavoitteita sen mukaan, miten paljon tavoitetta koskevia tietoja haluat syöttää. Suoritustasoarvioinnit eivät edellytä tavoitteiden asettamista. 
@@ -151,7 +150,6 @@ Suoritustason kirjauskansion lähdetyypit kuvaavat suoritustason kirjauskansioid
 ### <a name="review-types"></a>Arviointityypit
 
 Suoritustason arviointityyppien avulla voit hallita arvioinnin toimintaa. Voit ottaa käyttöön arvioinnin työnkulun tai poistaa sen käytöstä. Jos arvioinnissa ei käytetä työnkulkua, voit määrittää arvioinnin luomisen yhteydessä käytettävän oletustilan. Voit myös määrittää, vaaditaanko arvioinnissa työntekijän, esimiehen vai molempien kuittaus.
-
 
 
 

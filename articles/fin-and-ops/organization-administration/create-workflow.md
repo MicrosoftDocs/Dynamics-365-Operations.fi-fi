@@ -1,13 +1,13 @@
 ---
-title: "Luo työnkulkuja"
-description: "Tässä ohjeaiheessa kerrotaan, miten voit luoda työnkulun."
+title: Luo työnkulkuja
+description: Tässä ohjeaiheessa kerrotaan, miten voit luoda työnkulun.
 author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: 7d4a3c5e12b226a7d801d8db9abcbd15738c1ce0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 0edf6f1a97b3bbd074168a3cb8bb5c2375492b71
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353353"
 ---
-
 # <a name="create-workflows"></a>Luo työnkulkuja
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Tässä ohjeaiheessa kerrotaan, miten voit luoda työnkulun.
 
 ## <a name="open-the-workflow-editor"></a>Avaa työnkulkueditori
 
-Käyttämäsi Microsoft Dynamics 365 for Finance and Operationsin moduuli määrittää, mitä työnkulun tyyppejä voi luoda. Valitse näiden ohjeiden avulla työnkulkutyyppi työnkulkueditorin luomiseksi ja avaamiseksi.
+Microsoft Dynamics 365 for Finance and Operations -moduuli, jossa työskentelet, määrittää työnkulun tyypit, jotka voit luoda. Valitse näiden ohjeiden avulla työnkulkutyyppi työnkulkueditorin luomiseksi ja avaamiseksi.
 
 1. Avaa moduuli, jolle haluat luoda uuden työnkulun. Esimerkiksi luoda työnkulun ostoehdotukselle valitsemalla **hankinta**.
 2. Valitse **Asetukset** &gt; **\[moduulin nimi\] työnkulut**.
@@ -85,4 +84,3 @@ Kun olet valmis tallentamaan ja aktivoimaan työnkulun, noudata seuraavia ohjeit
 
     - Voit aktivoida tämän työnkulun version valitsemalla **Ota uusi versio käyttöön**. Kun työnkulku on aktiivinen, käyttäjät voivat lähettää siihen asiakirjoja käsittelyä varten.
     - Jos et halua aktivoida versiota napsauta **Älä ota uutta versiota käyttöön**. Voit ottaa työnkulun käyttöön myöhemmin.
-

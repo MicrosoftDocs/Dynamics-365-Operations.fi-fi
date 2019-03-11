@@ -1,29 +1,29 @@
 ---
 title: Jaettu tilausten hallinta (JTH)
-description: "Tässä aiheessa kuvataan Microsoft Dynamics 365 for Retailin jaetun tilausten hallinnan (JTH) toimintoja."
+description: Tässä aiheessa kuvataan Microsoft Dynamics 365 for Retail -ohjelman jaetun tilausten hallinnan (JTH) toimintoja.
 author: josaw1
 manager: AnnBe
 ms.date: 11/15/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 3331b984693c58c6ee8c49b98ed7d3a8df5b79ff
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302229"
 ---
 # <a name="distributed-order-management-dom"></a>Jaettu tilausten hallinta (JTH)
 
@@ -61,7 +61,7 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
     - **Paikallisen myymälän alueen säde** – Kirjoita arvo. Tämän kentän avulla määritetään, miten sijainnit ryhmitellään ja määritetään tasaveroisiksi etäisyyden osalta. Jos esimerkiksi annat arvon **100**, jokaista myymälää ja jakelukeskusta 100 mailin säteellä täyttämistilauksen osoitteesta pidetään tasaveroisena etäisyyden osalta.
     - **Selvityksen tyyppi** – Valitse arvo. Retailissa vapautetaan kaksi selvityksen tyyppiä: **Tuotannon selvitys** ja **Yksinkertaistettu selvitys**. Kaikille koneille, jotka suorittavat JTH:n (siis kaikki palvelimet, jotka kuuluvat DOMBatch-ryhmään), on valittava **Tuotannon selvitys**. Tuotannon selvitys edellyttää erityisen lisenssiavaimen, joka oletusarvoisesti lisensoidaan ja otetaan käyttöön tuotantoympäristöissä. Muille kuin tuotantoympäristöille tämä lisenssiavain on otettava käyttöön manuaalisesti. Voit ottaa lisenssiavaimen käyttöön manuaalisesti toimimalla seuraavasti:
 
-        1. Avaa Microsoft Dynamics Lifecycle Servicesissa jaettu omaisuuskirjasto, valitse omaisuustyypiksi **Malli** ja lataa **JTH-lisenssi**-tiedosto.
+        1. Avaa Microsoft Dynamics Lifecycle Servicesissa jaettu omaisuuskirjasto, valitse omaisuustyypiksi **Malli**, ja lataa **JTH-license**-tiedosto.
         2. Käynnistä Microsoft IIS -palveluiden hallinta, napsauta hiiren kakkospainikkeella **AOSService-verkkosivusto**, ja valitse sitten **Selaa**. Windowsin resurssienhallintaikkuna avautuu kansiossa **\<AOS-palvelun pääkansio\>\\webroot**. Merkitse muistiin polku \<AOS-palvelun pääkansio\>, sillä sitä käytetään seuraavassa vaiheessa.
         3. Kopioi konfiguraatiotiedosto kansioon **\<AOS-palvelun pääkansio\>\\PackagesLocalDirectory\\DOM\\bin**.
         4. Siirry Retail-pääkonttorin asiakasohjelmaan ja avaa **JTH-parametrit**-sivu. Valitse **Selvitys**-välilehden **Selvityksen tyyppi** -kentässä **Tuotannon selvitys** ja varmista, ettei virhesanomia ole näkyvissä.
@@ -229,4 +229,3 @@ Seuraavat asiat on hyvä huomioida JTH-ominaisuutta käytettäessä:
 - Tällä hetkellä JTH tarkastelee vain vähittäismyynnin kanavissa luotuja tilauksia. Myyntilaukset tunnistetaan vähittäismyynnin myyntitilauksiksi, kun **Vähittäismyynti** -asetukseksi on määritetty **Kyllä**.
 - Microsoft ei ole testannut JTH-ominaisuutta edistyneen varastonhallinnan ominaisuuksien kanssa. Asiakkaiden ja kumppanien on huolellisesti selvitettävä, onko JTH yhteensopiva heille tärkeiden edistyneen varastonhallinnan ominaisuuksien ja prosessien kanssa.
 - JTH on saatavissa vain Retail-ratkaisun pilvipalveluversioon. Sitä ei tueta paikallisissa käyttöönotoissa.
-

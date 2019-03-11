@@ -1,13 +1,13 @@
 ---
-title: "Näytön asettelut myyntipisteeseen (POS)"
-description: "Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS (myyntipiste) -käyttöliittymistä."
+title: Näytön asettelut myyntipisteeseen (POS)
+description: Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS -käyttöliittymistä.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321889"
 ---
-
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Näytön asettelut myyntipisteeseen (POS)
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS (myyntipiste) -käyttöliittymistä.
+Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS -käyttöliittymistä.
 
 Retail POS:n käyttöliittymät (UI) voidaan määrittää käyttäen visuaalisten profiilien ja näyttöasettelujen yhdistelmää, jotka on määritetty myymälöille, kassakoneille ja/tai käyttäjille.
 
@@ -51,7 +50,7 @@ Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään mä�
 - **Kuvaus** – kuvauksen avulla voit määrittää kuvaavan nimen, joka auttaa tunnistamaan oikean profiilin tilanteen mukaan.
 - **Teema** – käyttäjät voivat valita vaalean tai tumman sovellusteeman. Teema vaikuttaa koko sovelluksen fontin ja taustan väreihin.
 - **Korostuksen väri** – korostuksen värejä käytetään koko myyntipisteessä erottamaan tai korostamaan tiettyjä visuaalisia elementtejä, kuten ruutuja, painikkeita tai hyperlinkkejä. Nämä elementit ovat yleensä toimintoja.
-- **Otsikon väri** – voit määrittää sivun ylätunnisteen värin jälleenmyyjän brändivaatimusten täyttämiseksi. Tämä ominaisuus on käytössä vain Microsoft Dynamics 365 for Retailin versiossa 1611.
+- **Otsikon väri** – voit määrittää sivun ylätunnisteen värin jälleenmyyjän brändivaatimusten täyttämiseksi. Tämä ominaisuus on saatavana vain Microsoft Dynamics 365 for Retailin versiossa 1611.
 - **Kirjautumisen tausta** – käyttäjät voivat määrittää kirjautumisnäytön taustakuvan. Taustakuvan tiedostokoko on pidettävä mahdollisimman pienenä, koska suurien tiedostojen tallentaminen ja lataaminen voivat vaikuttaa sovelluksen toimintaan ja suorituskykyyn.
 - **Sovelluksen tausta** – Käyttäjät voivat määrittää myös yhtenäisen taustakuvan käytettäväksi koko sovelluksessa yhtenäisen teemavärin sijaan. Sisäänkirjautumisen taustat tulisi pitää mahdollisimman pieninä.
 
@@ -165,7 +164,7 @@ Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita
 - **Painikkeen ominaisuudet** – Voit määrittää painikeominaisuudet painamalla hiiren kakkospainiketta ja käyttämällä pikavalikkoa.
 
     > [!IMPORTANT]
-    > Jotkin painikeruudukon asetukset vaikuttavat vain yritysportaalin POS-sovellukseen, eivätkä myyntipisteen Retail Modern POS-sovellukseen tai Cloud POS-sovellukseen.
+    > Jotkin painikeruudukon asetukset vaikuttavat vain yrityksen myyntipisteeseen eivätkä myyntipisteen Retail Modern POS- tai Cloud POS -sovellukseen.
 
     ![Painikeruudukon painikeominaisuudet](../retail/media/Button-grid-button-properties.png)
 
@@ -185,7 +184,7 @@ Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita
     - **Mukautettu teema** – Oletusarvoisesti myyntipisteen painikkeissa käytetään visuaalisen profiilin korostusväriä. Kun valitset **Käytä mukautettua teemaa** -valintaruudun, voit määrittää muita värejä.
 
         > [!NOTE]
-        > Retail Modern POS-sovellus ja Cloud POS käyttävät vain **Taustan väri** ja **fontin väri** -arvoja.
+        > Retail Modern POS ja Cloud POS käyttävät vain **Taustaväri**- ja **Fontin väri** -arvoja.
 
     - **Painikkeen kuva** – painikkeet voivat sisältää kuvia tai kuvakkeita. Valitse käytettävissä olevista kuvista, jotka on määritetty kohdassa **Retail \>Kanavan asetukset \> Myyntipisteen asetukset \> Myyntipisteen \> kuvia**.
 
@@ -194,4 +193,3 @@ Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Retail POS:n asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
-

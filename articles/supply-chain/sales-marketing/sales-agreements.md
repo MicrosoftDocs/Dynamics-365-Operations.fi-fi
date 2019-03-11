@@ -1,13 +1,13 @@
 ---
 title: Myyntisopimukset
-description: "Tässä aiheessa on tietoja myyntisopimuksista. Myyntisopimus on sopimus, jolla asiakas vahvistaa ostavansa tuotetta tietyn määrän tai tietyn summan tietyssä ajassa saadakseen erikoishinnan ja alennuksia."
+description: Tässä aiheessa on tietoja myyntisopimuksista. Myyntisopimus on sopimus, jolla asiakas vahvistaa ostavansa tuotetta tietyn määrän tai tietyn summan tietyssä ajassa saadakseen erikoishinnan ja alennuksia.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4ab396d06383e3d6fc7bfab2e01f1afe4aa8fc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309515"
 ---
-
 # <a name="sales-agreements"></a>Myyntisopimukset
 
 [!include [banner](../includes/banner.md)]
@@ -100,7 +99,7 @@ Jos olet luonut (vapautetun) myyntitilauksen myyntisopimuksesta, joitakin myynti
 | Määrä                                                          | Jos määrittämäsi määrä ylittää sellaisella myyntisopimuksen rivillä määritetyn määrän, jossa **Maksimi pakotetaan** -valintaruutu on valittuna, näyttöön tulee sanomaruutu, joka kysyy, haluatko tallentaa muutetun määrän. Valitsemalla **Kyllä** voit poistaa linkin myyntisopimuksen riviin ja laskea hinnan uudelleen. Valitsemalla **Ei** voit poistaa linkin myyntisopimuksen riviin laskematta hintaa uudelleen.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Myyntisopimuksesta tilatun nimikkeen palauttaminen
-Kun asiakas palauttaa tuotteen, joka on tilattu myyntisopimuksen kautta, Microsoft Dynamics 365 for Finance and Operations voi etsiä liittyvän myyntisopimuksen sitoumuksen ja päivittää sen automaattisesti vastaamaan muuttunutta määrää tai summaa. Luomalla myyntisopimukseen linkitettyyn alkuperäiseen myyntitilaukseen perustuvan palautustilauksen muodostat suhteen myyntisopimuksen sitoumuksen, myyntitilausrivin ja palautustilauslaskun välille.  
+Kun asiakas palauttaa tuotteen, joka oli tilattu myyntisopimuksen kautta, Microsoft Dynamics 365 for Finance and Operations voi löytää liittyvän myyntisopimuksen ja päivittää sen automaattisesti vastaamaan muuttunutta määrää tai summaa. Luomalla myyntisopimukseen linkitettyyn alkuperäiseen myyntitilaukseen perustuvan palautustilauksen muodostat suhteen myyntisopimuksen sitoumuksen, myyntitilausrivin ja palautustilauslaskun välille.  
 
 Jos et halua vähentää palautettua nimikemäärää myyntisopimuksen sitoumuksesta, **Palautustilaus**-sivun **Poista linkki** -ohjausobjektilla voit poistaa palautustilauksen ja myyntisopimuksen sitoumuksen välisen linkin. Jos haluat muodostaa linkin uudelleen myöhemmin, valitse **Luo linkki**.  
 
@@ -111,7 +110,6 @@ Joissakin tilanteissa, joissa myyntitilauksia luodaan epäsuorasti, esimerkiksi 
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Taloushallinnon dimensiot myyntisopimuksissa
 Voit kopioida taloushallinnon dimensiot joko asiakirjojen ylätunnisteisiin tai myyntisopimusten yksittäisille riveille. Sopimuksen otsikon tai sopimusrivin dimensioita voi muuttaa milloin tahansa. Tässä tapauksessa dimensiot kopioidaan automaattisesti vapautustilausten otsikkoon tai vapautusriville.
-
 
 
 

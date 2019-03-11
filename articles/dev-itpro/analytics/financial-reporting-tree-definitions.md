@@ -1,13 +1,13 @@
 ---
-title: "Talousraporttien raportointipuiden määritykset"
-description: "Tässä artikkelissa on tietoja raporttipuun määrityksistä. Raportointipuun määritys on raporttiosa tai rakenneosa, joka auttaa määrittämään organisaation rakenteen ja organisaation."
+title: Talousraporttien raportointipuiden määritykset
+description: Tässä artikkelissa on tietoja raporttipuun määrityksistä. Raportointipuun määritys on raporttiosa tai rakenneosa, joka auttaa määrittämään organisaation rakenteen ja organisaation.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 00219f21076af60f8e2f16ca365b1138bb279400
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316944"
 ---
-
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Talousraporttien raportointipuiden määritykset
 
 [!include [banner](../includes/banner.md)]
@@ -49,9 +48,9 @@ Luotavien raportointipuiden määrälle ei ole asetettu ylärajaa. Eri puiden av
 ## <a name="create-a-reporting-tree-definition"></a> Raportointipuun määrityksen luominen
 Raportointipuun määritys sisältää sarakkeet, joita käsitellään seuraavassa taulukossa.
 
-| Raportointipuu-sarake | kuvaus |
+| Raportointipuu-sarake | Kuvaus |
 |-----------------------|-------------|
-| Yritys                | Raportointiyksikön yrityksen nimi. **@ANY**-arvo, joka liitetään yleensä vain yhteenvetotasolla. Sen ansiosta raportointipuuta voidaan käyttää kaikissa yrityksessä. Kaikille alielementeille on määritetty yritys. |
+| Yritys               | Raportointiyksikön yrityksen nimi. Arvo **@ANY**, joka määritetään tavallisesti vain yhteenvetotasolle, mahdollistaa raporttipuun käyttämisen kaikille yrityksille. Kaikille alielementeille on määritetty yritys. |
 | Yksikön nimi             | Koodi, joka määrittää tämän raportointiyksikön graafisessa raportointipuussa. Varmista, että muodostettava yksilöllinen koodausjärjestelmä on yhdenmukainen ja että käyttäjien on helppo ymmärtää sitä. |
 | Yksikön kuvaus      | Raportointiyksikön otsikko näkyy raportin ylä- tai alatunnisteessa, jos raportin määrityksen **Ylä- ja alatunnisteet** -välilehteen syötetään **UnitDesc**-koodi. Otsikko näkyy raportin rivin kuvauksessa, jos syötät rivin määrityksen **Kuvaus**-soluun **UnitDesc**. |
 | Dimensiot            | Raportointiyksikkö, joka esittää tiedot suoraan taloushallinnon tiedoista. Se määrittää tilin ja liittyvien segmenttien loogisen asettelun ja pituudet. Kullakin raportointiyksikön rivillä on oltava dimensio tässä sarakkeessa. Voit sijoittaa dimension myös yhteenvetotietojen yksikköriville (esimerkiksi kuluille, jotka liittyvät suoraan kyseiseen yksikköön). Jos annat dimension yhteenvetotietojen yksikköriville, pääyksiköissä käytettäviä tilejä ei saa käyttää aliyksiköissä. Muussa tapauksessa summista voi tulla päällekkäisiä. |
@@ -166,9 +165,9 @@ Voit estää tiettyjen käyttäjien ja ryhmien käyttämästä raportointiyksikk
 3. Valitse **Yksikön suojaus** -valintaikkunassa nimi ja valitse sitten **Poista**.
 4. Napsauta **OK**.
 
-### <a name="link-to-reports"></a>Raporttien linkki
+### <a name="link-toreports"></a>Raporttien linkki
 
-Kun rivin määrityksen **raportti**-sarake on luotu ja raporttiin sisällytettävä raportti on määritetty, raportointipuu on päivitettävä linkitetyn sarakkeen ja raportin tiedoilla. Raportti voidaan tuoda mihin tahansa raportointipuun yksikköön.
+Kun rivin määrityksen  **raportti**-sarake on luotu ja raporttiin sisällytettävä raportti on määritetty, raportointipuu on päivitettävä linkitetyn sarakkeen ja raportin tiedoilla. Raportti voidaan tuoda mihin tahansa raportointipuun yksikköön.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Raportin tunnistaminen raportointipuussa
 
@@ -222,4 +221,3 @@ Seuraavassa esimerkissä on koottujen tietojen raportointipuun määrityksessä 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Talousraportointi](financial-reporting-intro.md)
-

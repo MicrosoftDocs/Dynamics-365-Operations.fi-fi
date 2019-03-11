@@ -1,13 +1,13 @@
---- 
+---
 title: Toimittajien maksujen luominen ja tuonti ISO20022-maksumuodossa
-description: "Näiden ohjeiden avulla voit luoda maksurivit toimittajan maksukirjauskansioon sekä luoda toimittajan maksutiedostot ISO2022-pankkisiirtoesimerkin avulla."
+description: Näiden ohjeiden avulla voit luoda maksurivit toimittajan maksukirjauskansioon sekä luoda toimittajan maksutiedostot ISO2022-pankkisiirtoesimerkin avulla.
 author: mrolecki
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 01/17/2019
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,41 +16,37 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b589d64a4446420164175b41f435cf48daac01a9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7cc90bc86cd489b124a806c480632dd53ba47f3f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340542"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Toimittajien maksujen luominen ja tuonti ISO20022-maksumuodossa
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Näiden ohjeiden avulla voit luoda maksurivit toimittajan maksukirjauskansioon sekä luoda toimittajan maksutiedostot ISO2022-pankkisiirtoesimerkin avulla. 
+Tässä ohjeaiheessa käsitellään, miten voit luoda maksurivit toimittajan maksukirjauskansioon sekä luoda toimittajan maksutiedostot ISO2022-pankkisiirtoesimerkin avulla.
 
-Tämän menettelyn luomisessa käytetty esittely-yritys on DEMF.
+Tämä on viides viidestä tehtävästä, joilla esitellään toimittajamaksujen prosessi, jossa käytetään sähköisen raportoinnin määrityksiä. Käytä tämän esimerkin täyttämiseen DEMF-demotietoja.
 
-Tämä on viides viidestä tehtävästä, joilla esitellään toimittajamaksujen prosessi, jossa käytetään sähköisen raportoinnin määrityksiä. Tätä toimintaohje koskee toimintoa, joka lisättiin Dynamics 365 for Operations -ohjelmiston versiossa 1611.
+## <a name="example"></a>Esimerkki
 
-
-## <a name="create-payment-lines"></a>Maksurivien luominen
-1. Siirry kohtaan Ostoreskontra > Maksut > Maksukirjauskansio.
-2. Valitse Uusi.
-3. Merkitse valittu rivi luettelossa.
-4. Syötä tai valitse arvo Nimi-kenttään.
-5. Valitse Rivit.
-6. Valitse Maksuehdotus.
-7. Valitse Luo maksuehdotus.
-8. Laajenna Tietueet-kohta ja sisällytä osaan.
-9. Valitse Suodatin.
-10. Valitse luettelosta Toimittajat-taulukon ja Toimittajan tili -kentän rivi.
-11. Syötä tai valitse arvo Ehdot-kenttään.
-    * Voit käyttää kaikkia maksettavien toimittajatapahtumien valintaehtoja, tässä esimerkissä toimittajan tilinä käytetään arvoa DE-001.  
-12. Valitse OK.
-13. Valitse OK.
-14. Valitse Luo maksut.
-
-## <a name="generate-an-iso20022-payment-file"></a>ISO20022-maksutiedoston luominen
-
+1.  Valitse **Ostoreskontra > Maksut > Maksukirjauskansio**.
+2.  Valitse **Uusi**.
+3.  Anna tai valitse arvo **Nimi**-kentässä.
+4.  Valitse**Rivit > Maksuehdotus -> Luo maksuehdotus**.
+5.  Laajenna **Sisällytettävät tietueet** -osa.
+6.  Valitse **Suodatin**.
+7.  Valitse luettelossa **Toimittajat-taulukon** ja **Toimittajan tili -kentän** rivi.
+8.  Anna tai valitse arvo **Ehdot**-kentässä. Voit käyttää kaikkia maksettavien toimittajatapahtumien valintaehtoja, tässä esimerkissä toimittajan tilinä käytetään arvoa DE-001.
+12. Napsauta **OK**.
+13. Napsauta **OK**.
+14. Valitse **Luo maksut**.
+15. Luo ISO20022-maksutiedosto.
+    1.  Valitse **Muodosta maksut**.
+    2.  Anna tai valitse arvo **Maksutapa**-kentässä.
+    3.  Kirjoita arvo **Tiedostonimi**-kenttään. Koska tässä merkissä käytetään EUR-maksua, muodostettu tiedosto on SEPA-yhteensopiva. Maksuja voidaan luoda muilla valuutoilla myös ISO20022-tilisiirtona ja muina toimittaja maksumuotoina.
+    4.  Anna tai valitse arvo **Pankkitili**-kentässä.
 

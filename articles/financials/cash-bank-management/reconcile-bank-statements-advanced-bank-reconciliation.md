@@ -1,13 +1,13 @@
 ---
-title: "Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla"
-description: "Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 for Finance and Operationsissa. Tässä aiheessa käsitellään täsmäytysprosessia."
+title: Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
+description: Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 for Finance and Operationsissa. Tässä aiheessa käsitellään täsmäytysprosessia.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 93b311d541ab588be82e6704dbe9ae3e43deabba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ed3a1fae6ca30b9411fde47e7ef8a08150d7d748
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364968"
 ---
-
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,6 @@ Kun täsmäytys on valmis, merkitse pankkitilin täsmäytyksen laskentataulukko 
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Kirjaa uudet täsmäytykseen liitetyt tapahtumat
 Täsmäytyksen laskentataulukossa **uusiksi** merkityt tiliotteen tapahtumat kirjataan **Tiliote**-sivulla. Voit tarkastella tiliotteen tietoja valitsemalla **Tiliote**-sivulla tiliotteen tunnuksen. Voit tarkastella uusien tapahtumien ja niihin liitettyjen kirjanpidon merkintöjen tietoja valitsemalla **Kirjanpito**-sivulla **Näytä jakaumat**- ja **Tarkastele kirjanpitoa** -vaihtoehdot. Kirjaa **uusiksi** merkityt tiliotteen rivit kirjanpitoon valitsemalla **Kirjaa**. Huomaa, että tiliote voidaan kirjata vain kerran.
-
 
 
 

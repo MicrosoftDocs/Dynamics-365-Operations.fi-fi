@@ -1,13 +1,13 @@
---- 
-title: "Työntekijän rekisteröiminen muuttuvan kompensaation suunnitelmaan"
-description: "Etuuspäällikkö voi rekisteröidä työntekijät muuttuvan kompensaation suunnitelmiin, kun työntekijöille lasketaan käteis- ja muut kuin käteispalkkiot."
+---
+title: Työntekijän rekisteröiminen muuttuvan kompensaation suunnitelmaan
+description: Etuuspäällikkö voi rekisteröidä työntekijät muuttuvan kompensaation suunnitelmiin, kun työntekijöille lasketaan käteis- ja muut kuin käteispalkkiot.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMCompVarEnrollEmpl
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
 ms.openlocfilehash: 6ab2533293b5c8cb37953427893b75a98ddf3976
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329571"
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Työntekijän rekisteröiminen muuttuvan kompensaation suunnitelmaan
 
@@ -42,5 +42,4 @@ Etuuspäällikkö voi rekisteröidä työntekijät muuttuvan kompensaation suunn
     * Jos työntekijälle tulee antaa kiinteä palkkiosumma, summa voidaan määrittää tässä.  
 8. Ota käyttöön Organisaation ohitukset -osan laajennus.
     * Jos työntekijän suoritustaso on otettava huomioon, eri osastojen tai muun kuin työntekijän toimelle liitetyn osaston suoritustaso voidaan ohittaa. Prosentti-sarakkeen summan on oltava 100.  
-
 

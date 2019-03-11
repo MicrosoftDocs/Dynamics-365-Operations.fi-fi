@@ -1,13 +1,13 @@
 ---
-title: "Materiaalipoikkeusten näkyvyys"
-description: "Tässä aiheessa käsitellään tuotantotilausten ja erätilausten materiaalipoikkeusten näkyvyyden parantamista."
+title: Materiaalipoikkeusten näkyvyys
+description: Tässä aiheessa käsitellään tuotantotilausten ja erätilausten materiaalipoikkeusten näkyvyyden parantamista.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -16,13 +16,13 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: c7a5cc4f6c6f430a2ceb9125edb3916fe7b71ab8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: eca3141fc48aea24411524e5fc84686d9e4bfaa7
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344751"
 ---
 # <a name="visibility-into-material-exceptions"></a>Materiaalipoikkeusten näkyvyys
 
@@ -67,4 +67,3 @@ Kun ruutu on valittu, kun **Kaikki tuotantoaallot** -sivu avautuu. Tämä sivu s
 **Avoin varastotyö, joka vaatii huomiota** -ruudussa on näkyvissä tuoterakenne- ja reseptirivit, jotka on vapautettu varastoon käsittelemättömänä työnä ja joiden raaka-aineen päivämäärä on sama tai aiempi kuin työtilan päivämäärä. Lisäksi sen toimintoresurssin on kulutettava rivit, joka käyttää työtilan suodatinta.
 
 Kun ruutu on valittu, kun **Kaikki työ** -sivu avautuu. Tämä sivu suodatetaan niiden avoimien työn otsikoiden määrällä, joissa on ruudun ehdot täyttäviä vapautettujen tuoterakenne- ja kaavarivien työrivejä. Voit käsitellä työn manuaalisesti **Kaikki työ** -sivulla.
-

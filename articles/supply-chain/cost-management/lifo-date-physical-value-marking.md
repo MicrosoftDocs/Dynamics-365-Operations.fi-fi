@@ -1,13 +1,13 @@
 ---
-title: "LIFO-päivämäärä, fyysinen arvo ja merkintä"
-description: "LIFO-päivämäärä on varastomalli, joka perustuu LIFO-periaatteeseen. Varasto-otot täsmäytetään viimeisiä varastovastaanottoja vasten varastotapahtuman päivämäärän perusteella. Jos LIFO-päivämäärä on määritetty eikä ennen ottoa ei ole vastaanottoa, otto täsmäytetään oton päivämäärän jälkeen tapahtuneiden vastaanottojen mukaan. Jos samana päivänä on useita ottoja, ne täsmäytetään järjestyksessä viimeinen otto, viimeinen vastaanotto."
+title: LIFO-päivämäärä, fyysinen arvo ja merkintä
+description: LIFO-päivämäärä on varastomalli, joka perustuu LIFO-periaatteeseen. Varasto-otot täsmäytetään viimeisiä varastovastaanottoja vasten varastotapahtuman päivämäärän perusteella. Jos LIFO-päivämäärä on määritetty eikä ennen ottoa ei ole vastaanottoa, otto täsmäytetään oton päivämäärän jälkeen tapahtuneiden vastaanottojen mukaan. Jos samana päivänä on useita ottoja, ne täsmäytetään järjestyksessä viimeinen otto, viimeinen vastaanotto.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3913801eb35faec858ef4b8e1e5056b755054218
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0b94d3f23c929c45a67894bd08706144c9226491
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311723"
 ---
-
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-päivämäärä, fyysinen arvo ja merkintä
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,7 @@ Seuraavassa on kuvattu LIFO-päivämäärään perustuvan varastomallin vaikutus
 - Pystysuorat nuolet kuvaavat varastotapahtumia.
 - Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 - Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
-- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa määrä@yksikköhinta.
 - Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
 - Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
 - Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
@@ -103,7 +102,7 @@ Seuraavassa on kuvattu LIFO-päivämäärään perustuvan varastomallin vaikutus
 - Pystysuorat nuolet kuvaavat varastotapahtumia.
 - Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 - Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
-- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa määrä@yksikköhinta.
 - Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
 - Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
 - Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
@@ -149,14 +148,13 @@ Seuraavassa on kuvattu LIFO-varastomallin vaikutusta, kun käytetään varastost
 - Pystysuorat nuolet kuvaavat varastotapahtumia.
 - Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 - Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
-- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa määrä@yksikköhinta.
 - Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
 - Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
 - Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
 - Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
 - Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
 - Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
-
 
 
 

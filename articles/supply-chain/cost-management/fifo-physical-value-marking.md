@@ -1,13 +1,13 @@
 ---
-title: "FIFO-merkintä ja fyysinen arvo"
-description: "FIFO (First In, First Out) on varastomalli, jossa ensimmäiset vastaanotot otetaan varastosta ensin. Rahoituksellisesti päivitetyt varasto-otot täsmäytetään ensimmäisiä rahoituksellisesti päivitettyjä varastovastaanottoja vasten varastotapahtuman rahoituspäivämäärän perusteella."
+title: FIFO-merkintä ja fyysinen arvo
+description: FIFO (First In, First Out) on varastomalli, jossa ensimmäiset vastaanotot otetaan varastosta ensin. Rahoituksellisesti päivitetyt varasto-otot täsmäytetään ensimmäisiä rahoituksellisesti päivitettyjä varastovastaanottoja vasten varastotapahtuman rahoituspäivämäärän perusteella.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c24ce4dab179f439521c22e196b0b190821bc60f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2d3a6c412e497952c0c7f5b113990bbe693b0f22
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348822"
 ---
-
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO-merkintä ja fyysinen arvo
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ Uusi keskimääräinen kustannushinta vastaa rahoituksellisesti päivitettyjen t
 - Pystysuorat nuolet kuvaavat varastotapahtumia.
 - Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 - Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
-- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa määrä@yksikköhinta.
 - Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
 - Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
 - Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
@@ -92,7 +91,7 @@ Tapahtuma 5b täsmäytetään vastaanottotapahtuman 1b kanssa. Tälle varasto-ot
 - Pystysuorat nuolet kuvaavat varastotapahtumia.
 - Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 - Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
-- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa määrä@yksikköhinta.
 - Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
 - Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
 - Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
@@ -122,14 +121,13 @@ Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja 
 - Pystysuorat nuolet kuvaavat varastotapahtumia.
 - Aikajanan yläpuolella olevat pystysuorat nuolet kuvaavat vastaanottoja varastoon.
 - Aikajanan alapuolella olevat pystysuorat nuolet kuvaavat varastostaottoja.
-- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa Quantity@Unitprice.
+- Kunkin pystysuoran nuolen ylä- tai alapuolella näkyy varastotapahtuman arvo muodossa määrä@yksikköhinta.
 - Sulkeissa oleva varastotapahtuman arvo tarkoittaa, että varastotapahtuma on kirjattu varastoon fyysisesti.
 - Varastotapahtuman arvo, joka ei ole sulkeissa, tarkoittaa, että varastotapahtuma on kirjattu varastoon kirjanpidollisesti.
 - Kukin uusi vastaanotto- tai varastostaottotapahtuma on merkitty uudella otsikolla.
 - Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
 - Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
 - Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
-
 
 
 

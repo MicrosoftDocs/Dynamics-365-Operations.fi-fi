@@ -1,13 +1,13 @@
 ---
-title: "Käyttöomaisuuden poistomenetelmät"
-description: "Tässä ohjeaiheessa on käyttöomaisuuden poistomenetelmien yleiskatsaus."
+title: Käyttöomaisuuden poistomenetelmät
+description: Tässä ohjeaiheessa on käyttöomaisuuden poistomenetelmien yleiskatsaus.
 author: saraschi2
 manager: AnnBe
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ff8575749a33321450ea61fe1f01105c005e9092
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c69fd798c2e978935a63b079fb11c68d8555594c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337437"
 ---
-
 # <a name="fixed-asset-depreciation-conventions"></a>Käyttöomaisuuden poistomenetelmät
 
 [!include [banner](../includes/banner.md)]
@@ -45,5 +44,4 @@ Poistomenetelmät voidaan määrittää käyttöomaisuusryhmän kirjan asetuksii
 | Kuukauden puoliväli (kuukauden 15. päivä) |                                                                                                                                                        Voit laskea omaisuuden käyttöönottovuoden poistovähennyksen kertomalla koko vuoden poiston murtoluvulla. Tämän murtoluvun osoittaja (ylempi numero) on niiden kuukausien määrä vuodessa, jolloin omaisuutta on käytetty ja johon on lisätty 1/2 tai (0,5). Nimittäjä on (alempi numero) on 12. Voit poistaa ominaisuuden käytöstä ennen palautuskauden päättymistä, laske samalla menetelmällä poistovuoden poistovähennys.                                                                                                                                                        |
 | Puolivuosi (vuoden alku) |                                                                                                                                                                                                                                                          Käyttöomaisuuden, jonka <strong>Käyttöönotto</strong>-päivämäärä on vuoden ensimmäisellä puoliskolla, arvonalennus alkaa vuoden (koko vuosi) ensimmäisenä päivänä. Käyttöomaisuuden, jonka <strong>Käyttöönotto</strong>-päivämäärä on vuoden jälkimmäisellä puoliskolla, arvonalennus alkaa vuoden puolivälissä.                                                                                                                                                                                                                                                          |
 |   Puolivuosi (seuraava vuosi)   |                                                            Käyttöomaisuuden, jonka <strong>Käyttöönotto</strong>-päivämäärä on vuoden ensimmäisellä puoliskolla, arvonalennus alkaa vuoden (koko vuosi) ensimmäisenä päivänä. Käyttöomaisuuden, jonka <strong>Käyttöönotto</strong>-päivämäärä on vuoden jälkimmäisellä puoliskolla, arvonalennus alkaa seuraavan vuoden ensimmäisenä päivänä. Vuoden ensimmäisellä puoliskolla käytöstä poistettu käyttöomaisuus katsotaan poiston kannalta käytöstä poistetuksi edellisen vuoden viimeisenä päivänä. Kuluvalle vuodelle kirjatut poistot on palautettava tai oikaistava ulos. Vuoden jälkimmäisellä puoliskolla käytöstä poistettu käyttöomaisuus katsotaan poiston kannalta käytöstä poistetuksi käytöstäpoistovuoden viimeisenä päivänä.                                                            |
-
 

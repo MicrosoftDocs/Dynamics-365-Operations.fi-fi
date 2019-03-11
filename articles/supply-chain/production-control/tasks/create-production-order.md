@@ -1,13 +1,13 @@
---- 
+---
 title: Luo tuotantotilaus
-description: "Tässä menettelyssä näytetään, miten tuotantotilaus luodaan."
+description: Tässä menettelyssä näytetään, miten tuotantotilaus luodaan.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, ProdTable, ProdBOM, ProdRoute
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 468465e3e82ff608d7d290b71f058cd790a0f013
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
-ms.openlocfilehash: 4db56f76c7f8ce0cccf85ab04024d9a1e88a8822
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/06/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363841"
 ---
 # <a name="create-a-production-order"></a>Luo tuotantotilaus
 
@@ -70,5 +70,4 @@ Tässä menettelyssä näytetään, miten tuotantotilaus luodaan. Tämän menett
     * Prosessin muuttaminen vaikuttaa reitin arvioituun kulutukseen ja tuotantotilauksen kustannuksiin.  
 6. Valitse Tallenna.
 7. Sulje sivu.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Työntekijöiden osaamistieto- ja kehitys - Power BI -sisältö"
-description: "Tässä ohjeaiheessa käsitellään Finance and Operationsin työntekijän osaamisalueiden ja kehittymisen Power BI -sisältöä."
+title: Työntekijän osaamisalueiden ja kehittämisen Power BI -sisältö
+description: Tässä ohjeaiheessa käsitellään Finance and Operationsin työntekijän osaamisalueiden ja kehittymisen Power BI -sisältöä.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0442e795eadf28a07132c160d69ad44e9fb05eed
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352916"
 ---
-
-# <a name="employee-competencies-and-development-power-bi-content"></a>Työntekijöiden osaamistieto- ja kehitys - Power BI -sisältö
+# <a name="employee-competencies-and-development-power-bi-content"></a>Työntekijän osaamisalueiden ja kehittämisen Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään Finance and Operationsin työntekijän osaamisalueiden ja kehittymisen Power BI -sisältöä. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Raportit, jotka sisältyvät sisältöpakettiin
-Kun olet liittänyt sisältöpaketin Finance and Operationsin tietoihin, organisaatiosi tiedot näkyvät raporteissa. Jos et ole käyttänyt Microsoft Power BI:tä aiemmin, lisätietoja on artikkelissa [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporteissa, jotka sisältyvät sisältöpakettiin, on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
+Kun olet liittänyt sisältöpaketin Finance and Operationsin tietoihin, organisaatiosi tiedot näkyvät raporteissa. Jos et ole käyttänyt Microsoft Power BI:tä aiemmin, lisätietoja on kohdassa [Power BI:n ohjattu oppiminen](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporteissa, jotka sisältyvät sisältöpakettiin, on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
 
 | Raportti                            | Sisältö                                               |
 |-----------------------------------|--------------------------------------------------------|
@@ -40,7 +39,7 @@ Kun olet liittänyt sisältöpaketin Finance and Operationsin tietoihin, organis
 | Osaamisalueprofiili                     | Valitun työntekijän osaamisprofiili.                |
 | Osaamisanalyysi                    | Osaamisalue tyypin ja luokituksen mukaan                              |
 
-Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI:ssä on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 Finance and Operationsin tietoja käytetään työntekijän osaamisalueiden ja kehittymisen sisältöpaketin raporttien täyttämiseen. Seuraavassa taulukossa on esitetty yksiköt, joihin sisältöpaketti on perustunut.
@@ -71,4 +70,3 @@ Finance and Operationsin tietoja käytetään työntekijän osaamisalueiden ja k
 | Workforce\_WorkerName             | Etunimi , sukunimi ja koko nimi                                                                       | |
 | Workforce\_WorkerTitle            | Nimike ja virkaikä                                                                                   | |
 | Workorce\_WorkerTrend             | Työntekijät ajan kuluessa, henkilöstömäärä, yritys ja toimi                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job |
-

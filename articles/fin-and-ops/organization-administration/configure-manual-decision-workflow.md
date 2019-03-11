@@ -1,13 +1,13 @@
 ---
-title: "Manuaalisten päätösten konfiguroiminen työnkulkuun"
-description: "Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet määritetään."
+title: Manuaalisten päätösten konfiguroiminen työnkulkuun
+description: Tässä ohjeaiheessa kerrotaan, miten manuaalisen päätöksen eri ominaisuudet määritetään.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d09e99a5bf99593a8fa7682f9d4f29eaa4e7c836
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341393"
 ---
-
 # <a name="configure-manual-decisions-in-a-workflow"></a>Manuaalisten päätösten konfiguroiminen työnkulkuun
 
 [!include [banner](../includes/banner.md)]
@@ -164,7 +163,7 @@ Voit lähettää käyttäjille ilmoituksia, kun päätös on tehty, delegoitu ta
     </tr>
     <tr>
     <td>Käyttäjä</td>
-    <td>Tietyt Microsoft Dynamics 365 for Finance and Operations -käyttäjät</td>
+    <td>Tietyt Microsoft Dynamics 365 for Finance and Operationsin käyttäjät</td>
     <td>
     <ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
@@ -372,4 +371,3 @@ Noudata seuraavia ohjeita, jos päätös on tehtävä tietyn ajan kuluessa.
     - **Vuodet** – Valitse päivä, viikko ja kuukausi, johon mennessä päätös on tehtävä. Voit esimerkiksi määrittää, että päätös on tehtävä joulukuun kolmannen viikon perjantaihin mennessä.
 
 4. Jos aikaraja ylittyy, järjestelmä tekee päätöksen automaattisesti. Valitse **Toiminto**-luettelosta vaihtoehto, jonka haluat järjestelmän valitsevan.
-

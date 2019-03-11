@@ -1,13 +1,13 @@
 ---
-title: "Hälytysten eräkäsittely"
-description: "Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 for Finance and Operationsin hälytysten eräkäsittelystä."
+title: Hälytysten eräkäsittely
+description: Tämä ohjeaihe sisältää tietoja Microsoft Dynamics 365 for Finance and Operationsin hälytysten eräkäsittelystä.
 author: tjvass
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 482cf30b4f82e8801ebc12e3925c1efb09f7eb1e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 74db212b2086bd7c94825d8a52d9a8b86ea7b739
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341922"
 ---
-
 # <a name="batch-processing-of-alerts"></a>Hälytysten eräkäsittely
 
 [!include [banner](../includes/banner.md)]
 
-Eräkäsittelytoiminto käsittelee hälytykset Microsoft Dynamics 365 for Finance and Operations -sovelluksessa. Sinun on määritettävä eräkäsittely, ennen kuin hälytyksiä voidaan toimittaa.
+Hälytykset käsitellään Microsoft Dynamics 365 for Finance and Operationsin eräkäsittelytoiminnolla. Sinun on määritettävä eräkäsittely, ennen kuin hälytyksiä voidaan toimittaa.
 
 Finance and Operations tukee seuraavaa kahta tapahtumatyyppiä:
 
@@ -84,4 +83,3 @@ Jos määrität eräkäsittelyn ikkunan, hälytys lähetetään hälytyssäänn�
 
 1. Siirry kohtaan **Järjestelmän hallinta** &gt; **Kausittaiset tehtävät** &gt; **Hälytykset** &gt; **Eräpäivän hälytykset**.
 2. Syötä **Eräpäivän hälytykset** -valintaikkunaan soveltuvat tiedot.
-

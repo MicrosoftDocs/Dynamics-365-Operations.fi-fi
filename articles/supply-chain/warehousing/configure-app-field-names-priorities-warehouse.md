@@ -1,13 +1,13 @@
 ---
-title: "Warehousing-sovelluksen kenttien nimien määrittäminen"
-description: "Tässä ohjeaiheessa kerrotaan, miten varastosovelluksen kenttien nimet ja prioriteetit määritetään Finance and Operationsissa."
+title: Warehousing-sovelluksen kenttien nimien määrittäminen
+description: Tässä ohjeaiheessa kerrotaan, miten varastosovelluksen kenttien nimet ja prioriteetit määritetään Finance and Operationsissa.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 0162014189ed6bffb17e6718a67eecfd55c334a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d029481d31a0064a193e2cb9eeaf79df28bfa159
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351329"
 ---
-
 # <a name="configure-app-field-names-in-warehousing-app"></a>Warehousing-sovelluksen kenttien nimien määrittäminen
 
 [!include [banner](../includes/banner.md)]
@@ -143,8 +142,7 @@ Jäljellä olevat metatiedot, esimerkiksi sijainti, ei näy tehtäväsivulla, mu
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen asentaminen ja määrittäminen](install-configure-warehousing-app.md)
-
+[Microsoft Dynamics 365 for Finance and Operationsin asentaminen ja määrittäminen – varastointi](install-configure-warehousing-app.md)
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Määritä tilirakenteet"
-description: "Tässä aiheessa on tietoja tilirakenteista ja taloushallinnon dimensioista."
+title: Määritä tilirakenteet
+description: Tässä aiheessa on tietoja tilirakenteista ja taloushallinnon dimensioista.
 author: aprilolson
 manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 8435389a523d8393e9d4daa0cb1244203c0dbb12
 ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351720"
 ---
-
 # <a name="configure-account-structures"></a>Määritä tilirakenteet
 
 [!include[banner](../includes/banner.md)]
@@ -100,4 +99,3 @@ Määrittäessäsi tilirakenteita on suositeltavia parhaita käytäntöjä. Kuit
 Kun olet tyytyväinen uusiin asetuksiin tai tilirakenteen muutokseen, se on aktivoitava. Jos tilirakenne on määritty kirjanpitoon, tämä aktivointi voi kestää pitkään, koska järjestelmän kaikki kirjaamattomat tapahtumat on synkronoitava uuteen rakenteeseen. Tilirakenteen muutokset eivät vaikuta kirjattuihin tapahtumiin.
 
 Lisätietoja on kohdassa [Tilikartan suunnittelu](plan-chart-of-accounts.md), [Taloushallinnon dimensiot](financial-dimensions.md) ja [Kirjoita tilien ja dimensioiden yhdistelmät (komponentin segmentoidun tarkistus)](enter-account-dimension-combinations-segmented-entry-control.md).
-

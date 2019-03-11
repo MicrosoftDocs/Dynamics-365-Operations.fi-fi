@@ -1,32 +1,31 @@
 ---
-title: "Nimikkeiden varmuusvaraston täyttäminen"
-description: "Tässä aiheessa käsitellään varmuusvaraston täyttämistä ja nimikkeiden varmuusvarastomäärien määrittämistä."
+title: Nimikkeiden varmuusvaraston täyttäminen
+description: Tässä aiheessa käsitellään varmuusvaraston täyttämistä ja nimikkeiden varmuusvarastomäärien määrittämistä.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 147cc3984e6dc641209beefdb3545615b42767a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: d6ecb346f7bfa54a4e16307f623c82acb3a86892
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341531"
 ---
-
 # <a name="safety-stock-fulfillment-for-items"></a>Nimikkeiden varmuusvaraston täyttäminen
 
 [!include [banner](../includes/banner.md)]
@@ -117,4 +116,3 @@ Varmuusvaraston tarvetapahtuman täyttämisen priorisointi poistetaan, jos järj
 Pääsuunnittelun kattavuusvaiheen aikana varmuusvaraston täydennyksen priorisointia ei enää poisteta. Käytettävissä olevaa varastoa käytetään ennen muista kysyntätyyppejä. Viiveen laskennan aikana uusi logiikka lisätään käsittelemään viivästyneet myyntirivit, tuoterakennerivin tarpeet ja kaikki muut kysyntätyypit. Tällä tavoin selvitetään, voidaanko ne toimittaa ajallaan varmuusvarastoa käyttämällä. Jos järjestelmä havaitsee, että se voi minimoida viiveet varmuusvarastoa käyttämällä, myyntirivit tai tuoterakennerivit korvaavat sitten alkuperäisen kattavuuden varmuusvarastolla ja järjestelmä käynnistää sen sijaan varmuusvaraston täydennyksen.
 
 Jos suunnitelmalle tai nimikkeelle ei ole määritetty viivästyksen laskentaa, varmuusvarastorajoituksella on sama prioriteetti kuin muilla kysyntätyypeillä. Tämä tarkoittaa, että käytössä on käytettävissä olevan varaston ja muun varastosaatavuuden varaus ennen muita kysyntätyyppejä.
-

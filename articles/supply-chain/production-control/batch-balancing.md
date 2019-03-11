@@ -1,13 +1,13 @@
 ---
-title: "Erän tasaus"
-description: "Tässä ohjeaiheessa käsitellään erän tasausprosessia."
+title: Erän tasaus
+description: Tässä ohjeaiheessa käsitellään erän tasausprosessia.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: 63b986f9f3a1505dba4c2f64f872b9472e1aca87
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7d00df6263530ba9fff4c246cb3593cd607f6719
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358620"
 ---
-
 # <a name="batch-balancing"></a>Erän tasaus
 
 [!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään erän tasausprosessin tukea. 
 
-Katso [video, joka käsittelee erän tasausta Microsoft Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
+Katso [video erän tasauksesta Microsoft Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 Erän tasausprosessissa tuotantoerässä käytettyjen ainesosien määrä lasketaan valittujen tuote-erien vaikuttavien ainesosien pitoisuuden perusteella.
 
@@ -194,4 +193,3 @@ On olemassa yksi poikkeus sääntöön, jonka mukaan erätilauksissa voi käytt�
 Jos reseptissä on vaikuttava ainesosa tuotteelle, jossa varastonhallintaprosessit on otettu käyttöön mutta jonka eränumero on varaushierarkian Sijainti-kohdassa, erätilauksessa ei voi käyttää erän tasausta.
 
 Jos erätilauksessa ei voi käyttää erän tasausta, se käsitellään erätilausten tavallisen prosessisyklin mukaisesti.
-

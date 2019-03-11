@@ -1,13 +1,13 @@
 ---
 title: Taloushallinnon dimensiot ja kirjaaminen
-description: "Tilikarttaa suunniteltaessa ja määritettäessä on mietittävä, miten eri komponentit toimivat yhdessä, kun kirjaat asiakirjan tai kirjauskansion. Näitä komponentteja ovat tilirakenteet, lisäsäännöt sekä täsmäyttävä ja kiinteä dimensio. Tässä ohjeaiheessa kerrotaan, mitä kukin komponentti tarkoittaa ja miten komponentit toimivat yhdessä."
+description: Tilikarttaa suunniteltaessa ja määritettäessä on mietittävä, miten eri komponentit toimivat yhdessä, kun kirjaat asiakirjan tai kirjauskansion. Näitä komponentteja ovat tilirakenteet, lisäsäännöt sekä täsmäyttävä ja kiinteä dimensio. Tässä ohjeaiheessa kerrotaan, mitä kukin komponentti tarkoittaa ja miten komponentit toimivat yhdessä.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 89bc6f1f01f77dac4c24419705737783b07e4ac7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0530a569978bafffcdcc63c8d502b9bfa645bc5
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327938"
 ---
-
 # <a name="financial-dimensions-and-posting"></a>Taloushallinnon dimensiot ja kirjaaminen 
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Tilikarttaa suunniteltaessa ja määritettäessä on mietittävä, miten eri kom
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Tilikartan ja taloushallinnon dimension komponentit
 
-Microsoft Dynamics 365 for Finance and Operations -sovelluksessa on monipuolinen sääntöihin perustuva järjestelmä kelvollisten päätilien ja taloushallinnon dimensioarvojen yhdistelmien määrittämiseen. Tässä osassa esitellään lyhyesti kunkin komponentin toiminnot ja selitetään, missä komponentti sijaitsee.
+Microsoft Dynamics 365 for Finance and Operationsissa on monipuolinen sääntöihin perustuva järjestelmä kelvollisten päätilien ja taloushallinnon dimensioarvojen yhdistelmien määrittämiseen. Tässä osassa esitellään lyhyesti kunkin komponentin toiminnot ja selitetään, missä komponentti sijaitsee.
 
 ### <a name="account-structures"></a>Tilirakenteet
 
@@ -128,4 +127,3 @@ Osa seuraavista resursseita viittaa Finance and Operationsin aiempiin versioihin
 [Dimension oletusarvot kirjanpidollisissa jaoissa](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Dimension oletusarvot dimensiokehyksessä](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2014/09/)
-

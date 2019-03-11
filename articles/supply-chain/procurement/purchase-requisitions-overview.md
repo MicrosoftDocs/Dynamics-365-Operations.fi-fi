@@ -1,13 +1,13 @@
 ---
 title: Ostoehdotusten yleiskatsaus
-description: "Tässä aiheessa kuvataan ostoehdotusten työnkulkua ja eri tiloja."
+description: Tässä aiheessa kuvataan ostoehdotusten työnkulkua ja eri tiloja.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 942693ed3d2d54c6e973e5d3f86454b195f0fdee
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309837"
 ---
-
 # <a name="purchase-requisition-overview"></a>Ostoehdotusten yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,7 @@ Ostoehdotuksen yleinen tila määritetään ostoehdotusrivien tilan mukaan. Siis
 <tr class="odd">
 <td>Luonnos</td>
 <td>Luonnos</td>
-<td>Ostoehdotus ja ostoehdotusrivi on luotu, mutta niitä ei ole lähetetty tarkastettavaksi. Ostoehdotuksia ja ostoehdotusrivejä, joiden tila on <strong>Luonnos</strong>, voi muokata. Ostoehdotuksen tai ostoehdotusrivin tila voi olla <strong>Luonnos</strong> myös silloin, kun se on peruutettu mutta sitä ei ole lähetetty tarkistettavaksi. <strong>Huomautus:</strong> Voit lähettää tai peruuttaa ostoehdotuksen asiakirjatasolla. Ei voi kuitenkaan lähettää tai peruuttaa yksittäistä ostoehdotusriviä.</td>
+<td>Ostoehdotus ja ostoehdotusrivi on luotu, mutta niitä ei ole lähetetty tarkastettavaksi. Ostoehdotuksia ja ostoehdotusrivejä, joiden tila on <strong>Luonnos</strong>, voi muokata. Ostoehdotuksen tai ostoehdotusrivin tila voi olla <strong>Luonnos</strong> myös silloin, kun se on peruutettu mutta sitä ei ole lähetetty tarkistettavaksi. <strong>Huomautus:</strong> Voit lähettää tai peruuttaa ostoehdotuksen asiakirjatasolla. Et voi kuitenkaan lähettää tai peruuttaa yksittäistä ostoehdotusriviä.</td>
 </tr>
 <tr class="even">
 <td>Tarkistuksessa</td>
@@ -142,7 +141,7 @@ Hankintakäytännöissä voit hallita ostoehdotusten tarkoituksia, jotka ovat k�
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Ehdotukset, joiden tarkoituksena on kulutus
 
-Ehdotus, jonka tarkoitus on kulutus esittää tarpeen nimikkeille tai palveluille, joita organisaatiosi käyttää sisäisesti. Tämän tyyppisellä ehdotuksella luotu kysyntä täytetään aina ostotilauksella. Jos Microsoft Dynamics 365 for Finance and Operations on määritetty luomaan ostotilaukset automaattisesti, tilaukset luodaan, kun ostoehdotus on hyväksytty.
+Ehdotus, jonka tarkoitus on kulutus esittää tarpeen nimikkeille tai palveluille, joita organisaatiosi käyttää sisäisesti. Tämän tyyppisellä ehdotuksella luotu kysyntä täytetään aina ostotilauksella. Jos Microsoft Dynamics 365 for Finance and Operations on määritetty luomaan ostotilaukset automaattisesti, ostotilaukset luodaan, kun ostoehdotus on hyväksytty.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Ehdotukset, joiden tarkoitus täydennys
 
@@ -198,7 +197,6 @@ Noudata seuraavia vaiheita, jos haluat konsolidoida ostoehdotusrivit.
 [Kulutusehdotuksen luominen (tehtäväopas)](tasks/create-requisition-consumption.md)
 
 [Ostoehdotuksen työnkulku](purchase-requisitions-workflow.md)
-
 
 
 

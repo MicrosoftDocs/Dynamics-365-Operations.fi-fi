@@ -1,32 +1,31 @@
 ---
-title: "Kustannusten koontikäytäntö ja yleiskustannuslaskenta"
-description: "Tässä ohjeaiheessa kerrotaan, miten määritetään oikea taso toissijaisille kustannustasoille ja luodaan organisaation raportoinnin ja kustannusten jäljitettävyyden mukaiset kustannusten koontisäännöt."
+title: Kustannusten koontikäytäntö ja yleiskustannuslaskenta
+description: Tässä ohjeaiheessa kerrotaan, miten määritetään oikea taso toissijaisille kustannustasoille ja luodaan organisaation raportoinnin ja kustannusten jäljitettävyyden mukaiset kustannusten koontisäännöt.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e809cb2cadadc623134805e028de7f2e64dd662f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356136"
 ---
-
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kustannusten koontikäytäntö ja yleiskustannuslaskenta 
 
 [!include [banner](../includes/banner.md)]
@@ -251,13 +250,13 @@ Kirjauskansiovienneistä avattavalla **Kustannusobjektin kustannussaldon kirjaus
 | CC003       | Kokoonpano     | SC-CC002 | Myyntitiedot         | 11.527,75   | 31.1.2017 |
 | CC004       | Pakkaus    | SC-CC002 | Myyntitiedot         | 6.207,25    | 31.1.2017 |
 
-Kun **yleiskustannuslaskenta** on valmis, voit raportoida tulokset esimerkiksi seuraavilla työkaluilla: Microsoft SharePoint Workspace, Excel tai Power BI.
+Kun **yleiskustannuslaskenta** on valmis, voit raportoida tulokset esimerkiksi seuraavilla työkaluilla: Microsoft SharePoint -työtila, Excel tai Power BI.
 
 ## <a name="view-reporting-in-excel"></a>Raporttien näyttäminen Excelissä 
 
 Voit tarkastella tietoja dimensiohierarkioiden ansiosta eri koostetasoilla.
 
-Tässä on esimerkki Excelin PowerPivot-raportoinnista.
+Tässä on esimerkki Excelin Power Pivot -raportoinnista.
 
 | **Tuloslaskelma** | **Kustannusobjekti** |                |               |               |  **Yhteensä**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
@@ -302,4 +301,3 @@ Selkeä **kohdistusten kohdistuksen** ja **kustannuksen koontikäytäntöjen** v
 -  [Kustannustason dimensiot](cost-elements.md)
 -  [Dimensiohierarkiat](dimension-hierarchy.md)
 -  [Yleiskustannuslaskenta](overhead-calculation.md)
-

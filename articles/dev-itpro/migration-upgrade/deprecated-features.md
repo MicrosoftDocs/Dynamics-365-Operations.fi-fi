@@ -1,13 +1,13 @@
 ---
 title: Vanhentuneet tai poistetut ominaisuudet
-description: "Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan."
+description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.
 author: sericks007
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
-ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329249"
 ---
-
 # <a name="removed-or-deprecated-features"></a>Poistetut tai vanhentuneet ominaisuudet
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu Microsoft Dynamics 365 for Finance and Operationsissa tai jotka ovat vanhentuneet.
+Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operationsin ominaisuuksia, jotka on poistettu tai jotka ovat vanhentuneita.
 
 - *Poistettu* ominaisuus ei ole enää käytettävissä tuotteessa.
 - *Vanhentunutta* ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.
@@ -42,7 +41,7 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 > [!Note]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: [Tekniset viitetiedot](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.
 
-## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 ja ympäristöpäivitys 20
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 ja platform update 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Alareskontran kirjauskansion kirjanpitovientien eräsiirtosäännöt
 Synkrononinen siirtotila on vanhentunut kirjanpitotilin parametreissä.  Tämä tila korvataan vain asynkronisella ja ajoitetulla erällä, joka on jo olemassa siirtovaihtoehtona. 
@@ -64,7 +63,7 @@ Toiminto ilmoitusten .txt- ja .xml-tiedostomuotojen määrittämiseen.
 | **Onko toinen ominaisuus korvannut?**   | Kyllä. |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Dynamics 365 for Finance and Operationsin versiosta 8.1 alkaen ympäristöpäivityksellä 20. |
+| **Tila**                         | Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Rahoitusraporttien luonti Venäjää varten
 Tiedonkeruun määritystyökalu kirjanpitoa ja veroraportteja varten sekä tietojen viemiseksi XLS- ja DOC-raporttimalleihin. Toiminnalliset osat: tietojen vienti XLS- ja DOC-raporttimalleihin, kyselyt, kiinteät edellytykset poistetaan. 
@@ -75,7 +74,7 @@ Tiedonkeruun määritystyökalu kirjanpitoa ja veroraportteja varten sekä tieto
 | **Onko toinen ominaisuus korvannut?**   | Kyllä. Tilinpäätösten määrityksen käyttöliittymää olisi käytettävä tiedonkeruusääntöjen määrittämiseen kirjanpitotilien tai verorekistereiden mukaan. Sähköisessä raportoinnissa olisi määritettävä äännöt, jotka koskevat tietojen vientiä erilaisiin tiedostotyyppeihin, kiinteitä edellytyksiä ja kyselyjen kaltaisten tietojen keruuta. |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili. |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Dynamics 365 for Finance and Operationsin versiosta 8.1 alkaen ympäristöpäivityksellä 20. |
+| **Tila**                         | Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integrointi ulkoisten toimittajien kanssa sähköisen raportoinnin lähettämiseksi viestintäkanavien kautta Venäjää varten
 Ilmoitusten luotujen sähköisten tiedostojen vienti kansioon, josta ne lähetetään edelleen sähköisen raportoinnin virallisille palveluntarjoajille, sekä tilan tuonti takaisin.
@@ -86,7 +85,7 @@ Ilmoitusten luotujen sähköisten tiedostojen vienti kansioon, josta ne lähetet
 | **Onko toinen ominaisuus korvannut?**   | Kyllä.  |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili, vero |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Dynamics 365 for Finance and Operationsin versiosta 8.1 alkaen ympäristöpäivityksellä 20. |
+| **Tila**                         | Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Voittojen verorekisterin ohjattu toiminto
@@ -94,19 +93,19 @@ Omaisuus, jolla luodaan uusia voittojen verorekisterimalleja. Tämä ominaisuude
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Ominaisuus ei ole yhteensopiva Dynamics 365 for Finance and Operationsin laajennettavuusmallin kanssa. |
-| **Onko toinen ominaisuus korvannut?**   | En |
+| **Poiston tai vanhentumisen syy** | Toiminto ei ole yhteensopiva Dynamics 365 for Finance and Operationsin laajennettavuusmallin kanssa. |
+| **Onko toinen ominaisuus korvannut?**   | Nro |
 | **Tuotealueet, joihin vaikutetaan**         | Vero |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Poistettu Dynamics 365 for Finance and Operationsin versiosta 8.1 alkaen ympäristöpäivityksellä 20. |
+| **Tila**                         | Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 ja ympäristöpäivitys 15
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 ja platform update 15
 Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version ominaisuus ei ole vanhentunut. Ympäristöpäivitys 15 on kumulatiivinen, ja siinä on uusia tai ympäristöpäivityksistä 13, 14 ja 15 muuttuneita ominaisuuksia.
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 ja ympäristöpäivitys 12
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 ja platform update 12
 
-### <a name="personalized-product-recommendations"></a>Mukautetut tuotesuositukset 
+### <a name="personalized-product-recommendations"></a>Kohdennetut tuotesuositukset 
 15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja on kohdassa [Mukautetut tuotesuositukset](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
 
 |   |  |
@@ -115,7 +114,7 @@ Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version o
 | **Onko toinen ominaisuus korvannut?**   | Nro Tämä ominaisuus on kuitenkin tarkoitus palauttaa kevään 2018 jälkeen uutta suosituspalvelua varten.   |
 | **Tuotealueet, joihin vaikutetaan**         | Mukautetut tuotesuositukset myyntipisteessä.                                                    |
 | **Käytön asetukset**              | Kaikki                                                                                      |
-| **Tila**                         |Poistettu 15.2.2018. Tämä vaikuttaa asiakkaisiin, joiden käytössä Dynamics 365 for Operations 1611 tai sitä uudempi versio.  |
+| **Tila**                         |Poistettu 15.2.2018. Tämä koskee asiakkaita, joiden käytössä on Dynamics 365 for Operations 1611 ja sitä uudempi versio.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Sähköisen raportoinnin (ER) toimintoluettelon laajennus
 Mahdollisuutta käyttää mukautettuja toimintoja ER-lausekkeenmuodostimessa ei tueta enää. (Lisätietoja on kohdassa [Sähköisen raportoinnin toimintoluettelon laajentaminen](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)). Sähköisen raportoinnin ohjelmointirajapintojen muutosten vuoksi, ohjelmointirajapinnan sisäisten toimintojen kutsuminen ER-lausekkeenmuodostimesta muuttui sisäiseksi eikä sitä voi enää laajentaa.
@@ -126,7 +125,7 @@ Mahdollisuutta käyttää mukautettuja toimintoja ER-lausekkeenmuodostimessa ei 
 | **Onko toinen ominaisuus korvannut?**   | Ei mitään. Aina kun uutta sisäistä tarvitaan, uusi laajennuspyyntö on osoitettava ER-kehikkotiimille.<br><br>ER-tiimi kehittää pyydettyä toimintoa, mutta ongelman voi väliaikaisesti välttää ohjelmoimalla tarvittavan logiikan mukautetun sovellusluokan menetelmänä. Tätä menetelmää voi käyttää ER-lausekkeessa mukautettuun sovellusluokkaan viittaavan **Sovellus\luokka**-tyypin lisätyn ER-tietolähteen ominaisuutena.  |
 | **Tuotealueet, joihin vaikutetaan**         | Sähköisen raportoinnin kehikko                                                      |
 | **Käytön asetukset**              | Kaikki                                                                                      |
-| **Tila**                         | Poistettu versiosta Dynamics 365 for Finance and Operations, Enterprise edition 7.3 alkaen    |
+| **Tila**                         | Poistettu versiosta Dynamics 365 for Finance and Operations, Enterprise edition 7.3 alkaen.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Erääntymisraportti varastoryhmittäin ja Erääntymisraportti varastodimensioittain
 
@@ -140,13 +139,13 @@ Finance and Operations ei enää tue raporttia. Asiakaskokemusta voi sen sijaan 
 | **Käytön asetukset**        | Kaikki|
 | **Tila**                       | Vanhentunut: kahden raportin valikkovaihtoehdot on poistettu versiossa 7.3. Raporttien koodi on kuitenkin edelleen tuotteessa. Koodi on tarkoitus poistaa tulevissa versioissa. |
 
-### <a name="power-bi-content-packs-available-on-appsource"></a>AppSourcessa saatavilla olevat Power BI -sisältöpaketit
-**Kustannushintojen hallinta**-, **Taloudellinen suorituskyky**- ja **Vähittäismyyntikanavan suorituskyky** -sisältöpaketit, jotka ovat saatavilla [Microsoft AppSource](https://appsource.microsoft.com) -sivustolla, ovat vanhentuneet Microsoft Power BI:n tuotepäivitysten vuoksi. Myös järjestelmän hallintalomakkeet, joilla nämä sisältöpaketit otetaan käyttöön Pack PowerBI.comissa, ovat vanhentumassa Finance and Operationsissa.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI -sisältöpaketit ovat saatavilla AppSourcessa
+**Kustannushintojen hallinta**-, **Taloudellinen suorituskyky**- ja **Retail Channel Performance** -sisältöpaketit, jotka ovat saatavilla [Microsoft AppSource](https://appsource.microsoft.com) -sivustossa, ovat vanhentuneet Microsoft Power BI:n tuotepäivitysten vuoksi. Myös järjestelmän hallintalomakkeet, joilla nämä sisältöpaketit otetaan käyttöön Pack PowerBI.comissa, ovat vanhentumassa Finance and Operationsissa.
 
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Microsoft Power BI:n tuotepäivitykset. |
-| **Onko toinen ominaisuus korvannut?**   | **Kustannushintojen hallinta**-, **Taloudellinen suorituskyky**- ja **Vähittäismyyntikanavan suorituskyky** -sisältöpaketit, jotka ovat saatavilla [AppSource](https://appsource.microsoft.com)-sivustolla, korvataan analyysisovelluksilla, jotka mahdollistavat ratkaisujen integraation tietokantatasolla. Lisätietoja analyysisovelluksista on kohdassa [Embedded Power BI työtiloissa](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Onko toinen ominaisuus korvannut?**   | **Kustannushintojen hallinta**-, **Taloudellinen suorituskyky**- ja **Retail Channel Performance** -sisältöpaketit, jotka ovat saatavilla [AppSource](https://appsource.microsoft.com)-sivustossa, korvataan analyysisovelluksilla, jotka mahdollistavat ratkaisujen integraation tietokantatasolla. Lisätietoja analyysisovelluksista on kohdassa [Embedded Power BI työtiloissa](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Tuotealueet, joihin vaikutetaan**         | Kustannushintojen hallinta, myyntitiedot ja vähittäismyynti                                                                                               |
 | **Käytön asetukset**              | Vain pilvipalvelut (PowerBI.com-integraatiota ei tueta paikallisissa käyttöönotoissa).                                                                                                            |
 | **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2018 2. vuosineljännes.    |
@@ -211,7 +210,7 @@ Käyttäjät voivat ladata tämän julkishallinnon portaalista.
 
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
-### <a name="personalized-product-recommendations"></a>Mukautetut tuotesuositukset 
+### <a name="personalized-product-recommendations"></a>Kohdennetut tuotesuositukset 
 15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja on kohdassa [Mukautetut tuotesuositukset](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
 
 |   |  |
@@ -220,10 +219,10 @@ Käyttäjät voivat ladata tämän julkishallinnon portaalista.
 | **Onko toinen ominaisuus korvannut?**   | Nro Tämä ominaisuus on kuitenkin tarkoitus palauttaa kevään 2018 jälkeen uutta suosituspalvelua varten.   |
 | **Tuotealueet, joihin vaikutetaan**         | Mukautetut tuotesuositukset myyntipisteessä.                                                    |
 | **Käytön asetukset**              | Kaikki                                                                                      |
-| **Tila**                         |Poistettu 15.2.2018. Tämä vaikuttaa asiakkaisiin, joiden käytössä Dynamics 365 for Retail 7.2 tai sitä uudempi versio. |
+| **Tila**                         |Poistettu 15.2.2018. Tämä koskee asiakkaita, joiden käytössä on Dynamics 365 for Retail 7.2 ja sitä uudempi versio. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition heinäkuu 2017 ja ympäristöpäivitys 8
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition heinäkuu 2017 ja platform update 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Valuuttamuunnos kirjanpito- ja raportointivaluutoille
 
@@ -244,7 +243,7 @@ Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu pai
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Sama toiminto.       |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asennuksesta ja ennakkoedellytyksistä on ohjeaiheessa [Microsoft Dynamics 365 for Finance and Operationsin varastointisovelluksen asentaminen ja määrittäminen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asetuksista ja edellytyksistä on kohdassa [Microsoft Dynamics 365 for Finance and Operationsin asennus ja määritys – varastointi](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Tuotealueet, joihin vaikutetaan**         | Varaston hallinta, kuljetusten hallinta     |
 | **Käytön asetukset**              | Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon.               |
 | **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2019 4. vuosineljännes.   |
@@ -261,7 +260,7 @@ Täsmäytyssäännöllä valittiin ja merkittiin pankkitosite, kun asiakirjat t�
 | **Käytön asetukset**              | Kaikki                                                                                    |
 | **Tila**                         | Poistettu heinäkuusta 2017 alkaen.                                                               |
 
-## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 ja ympäristöpäivitys 3
+## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 ja platform update 3
 
 ### <a name="aeb-payment-formats-for-spain"></a>Espanjan AEB-maksumuodot
 
@@ -353,7 +352,7 @@ EDIVAT on Belgian vanhentunut standardi sähköiselle ilmoitukselle suojatun sä
 
 ### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>Norjan eGiro EDIFACT CREMUL- maksun tuontimuoto
 
-eGiro perustuu YK:n kansainväliseen EDIFACT CREMUL (Multiple Credit Advice Message) -standardiin, jota käytetään asiakasmaksujen automaattisessa kirjauksessa. eGiro on Microsoft Dynamics AX:ssä toteutettu asiakkaan maksun tuontimuoto.
+eGiro perustuu YK:n kansainväliseen EDIFACT CREMUL (Multiple Credit Advice Message) -standardiin, jota käytetään asiakasmaksujen automaattisessa kirjauksessa. Microsoft Dynamics AX:ssä eGiro toteutetaan asiakkaan maksun tuontimuotona.
 
 |   |  |
 |------------|--------------------|
@@ -513,7 +512,7 @@ Radiotaajuinen etätunnistus (RFID) on tiedonkeräysmenetelmä, jossa käytetä�
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Vähäinen käyttö ja rajoitetut toiminnot.   |
 | **Onko toinen ominaisuus korvannut?**   | En                                              |
-| **Tuotealueet, joihin vaikutetaan**         | Varastoinninhallinta                            |
+| **Tuotealueet, joihin vaikutetaan**         | Inventoinnin- ja varastonhallinta                            |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen. |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Latvian valtion määrittämän laskujen numeroinnin raportti
@@ -573,8 +572,8 @@ Kaksi eri muotoa maksujen vientiä varten käytettävissä Suomessa. LM02 (FI) k
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | **Inventoinnin- ja varastonhallintamoduuliin** sisältynyt Varastonhallinta II -ratkaisu (WMS II) oli Microsoft Dynamics AX 2012 R3:ssa julkaistun **varastonhallintamoduulin** toiminnon kaksoiskappale.                                                                         |
-| **Onko toinen ominaisuus korvannut?**   | AX 2012 R3:ssa, Microsoft Dynamics AX 2012 R3 CU8:ssa ja Microsoft Dynamics AX 2012 R3 CU9:ssa julkaistu **varastonhallintamoduuli** korvaa Varastonhallinta II:n ominaisuudet. Uudessa moduulissa on kehittyneemmät ominaisuudet ja joustavammat varaston hallintaprosessit kuin Varastonhallinta II:ssa. |
+| **Poiston tai vanhentumisen syy** | **Inventoinnin- ja varastonhallinta** -moduuliin sisältynyt Varastonhallinta II -ratkaisu (WMS II) oli Microsoft Dynamics AX 2012 R3:ssa julkaistun **Varastonhallinta**-moduulin toiminnon kaksoiskappale.                                                                         |
+| **Onko toinen ominaisuus korvannut?**   | AX 2012 R3:ssa, Microsoft Dynamics AX 2012 R3 CU8:ssa ja Dynamics AX 2012 R3 CU9:ssa julkaistu **Varastonhallinta**-moduuli korvaa Varastonhallinta II:n ominaisuudet. Uudessa moduulissa on kehittyneemmät ominaisuudet ja joustavammat varaston hallintaprosessit kuin Varastonhallinta II:ssa. |
 | **Tuotealueet, joihin vaikutetaan**         | Varaston hallinta, myynti ja markkinointi, hankinta   |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.    |
 
@@ -595,7 +594,7 @@ Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista,
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Suorituskyvyn hallinta on suunniteltu kokonaan uudelleen Microsoft Dynamics 365 for Finance and Operationsissa.     |
+| **Poiston tai vanhentumisen syy** | Suorituksen hallinta on suunniteltu kokonaan uudelleen Microsoft Dynamics 365 for Finance and Operationsissa.     |
 | **Onko toinen ominaisuus korvannut?**   | Uudelleen suunnitellulla suorituskyvyn hallintatoiminnolla voidaan seurata tarkemmin tavoitteiden sisältöä ja mittauksia, joiden avulla voidaan seurata etenemistä, sekä tukidokumentaation liittämistä. Tavoitteet voidaan tallentaa malleina ja käyttää uudelleen. Tämän toiminnon avulla voit määrittää lisätavoitteita työntekijöille entistä nopeammin. |
 | **Tuotealueet, joihin vaikutetaan**         | Henkilöstöresurssien hallinta                 |
 | **Tila**                         | Poistettu versiosta Dynamics 365 for Operations 1611 alkaen. |
@@ -674,7 +673,7 @@ Käyttäjät voivat tarkastella tällä mobiilisovelluksella tärkeitä liiketoi
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toinen ominaisuus on korvannut tämän toiminnon.   |
-| **Onko toinen ominaisuus korvannut?**   | Microsoft PowerBI:n taloudellisen suorituskyvyn seurannan sisältöpaketti sisältää tärkeät taloudelliset mittarit, jotka sisältyivät aiemmin Business Analyzeriin. |
+| **Onko toinen ominaisuus korvannut?**   | Microsoft Power BI:n taloudellisen suorituskyvyn seurannan sisältöpaketti sisältää tärkeät taloudelliset mittarit, jotka sisältyivät aiemmin Business Analyzeriin. |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpito      |
 | **Tila**                         | Vanhentunut: Business Analyzerin käyttö on vanhentunut.    |
 
@@ -734,7 +733,7 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Mic
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Sama toiminto |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä. AX2012:n jälkeen tämä toiminto on korvattu konsolidoidulla erätilaustoiminnoilla. Tämä ominaisuusjoukko sisältää konsolidoidun varastonäkymän. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. AX 2012:n jälkeen tämä toiminto on korvattu konsolidoidulla erätilaustoiminnoilla. Tämä ominaisuusjoukko sisältää konsolidoidun varastonäkymän. |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta, tuotannonhallinta, varastonhallinta, myynti ja markkinointi  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen. |
 
@@ -808,13 +807,13 @@ Microsoft Dynamics AX 2012:ssa liitteet voitiin tallentaa tietokantaan ja jaettu
 
 ### <a name="direct-database-connection"></a>Suora tietokantayhteys
 
-Dynamics AX 2012 R3 -versiossa Retail Modern POS -sovellus voi muodostaa suoran yhteyden kanavatietokantaan samalla tavalla, kuin Enterprise POS. Tämä oli lisänä Retail Modern POS -sovelluksen normaalille tietoliikenneyhteydelle, joka kulki vähittäismyynnin palvelimen välityksellä.
+Dynamics AX 2012 R3 -versiossa Retail Modern POS voi muodostaa suoran yhteyden kanavatietokantaan samalla tavalla kuin Enterprise POS. Tämä oli lisänä Retail Modern POS -sovelluksen normaalille tietoliikenneyhteydelle, joka kulki vähittäismyynnin palvelimen välityksellä.
 
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Suora tietokantayhteys edellytti matalamman suojauksen, ja sitä käytettiin pääasiassa korkeamman suorituskyvyn saavuttamiseen. Finance and Operationsissa tehtyjen suorituskyky- ja tietoturvaparannusten vuoksi tämä toiminnallisuus aiheuttaa enemmän ongelmia kuin mitä se ratkaisee. |
 | **Onko toinen ominaisuus korvannut?**   | Nro Vain vakiomuotoinen vähittäismyynnin palvelinyhteys on enää tuettu.  |
-| **Tuotealueet, joihin vaikutetaan**         | Kanavatietokanta/Retail Modern POS   |
+| **Tuotealueet, joihin vaikutetaan**         | Kanavatietokanta / Retail Modern POS   |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.  |
 
 ### <a name="dutch-swift-mt940"></a>Alankomaiden SWIFT MT940
@@ -873,7 +872,7 @@ Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edellee
 | **Poiston tai vanhentumisen syy** | Erätoiminnolla luodulle laskulle ei ole lomaketta, jossa luotu esilaskutiedosto voitaisiin säilyttää ja näyttää. |
 | **Onko toinen ominaisuus korvannut?**   | Esilaskuja voidaan luoda edelleen ja käyttäjä päättää sijainnin, johon tiedosto tallennetaan.   |
 | **Tuotealueet, joihin vaikutetaan**         | Ostoreskontra, myyntireskontra, maksuliikenteen hallinta  |
-| **Tila**                         | Poistettu versiosta AX 7.0 alkaen    |
+| **Tila**                         | Poistettu versiosta AX 7.0 alkaen.    |
 
 ### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Saksan DTAUS-maksun vienti ja tiliotteen tuonti (kokonaissummat ja tapahtumat)
 
@@ -980,7 +979,7 @@ Microsoft Dynamics AX 2012:lla hallittiin toteutumatonta arvonlisäveroa (ALV:t�
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Tämä ominaisuus on korvattu Microsoft Exchange Server -integroinnilla. |
+| **Poiston tai vanhentumisen syy** | Microsoft Exchange Server -integrointi on korvannut tämän toiminnon. |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä                                                                            |
 | **Tuotealueet, joihin vaikutetaan**         | Myynti ja markkinointi                                                            |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.                                                 |
@@ -993,7 +992,7 @@ Varastokirjauskansiot eivät enää tue kirjauskansion merkitsemistä yksityisek
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toiminnolle ei ollut käyttöä. |
 | **Onko toinen ominaisuus korvannut?**   | En                                     |
-| **Tuotealueet, joihin vaikutetaan**         | Varastoinninhallinta                   |
+| **Tuotealueet, joihin vaikutetaan**         | Inventoinnin- ja varastonhallinta                   |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.         |
 
 ### <a name="product-builder"></a>Tuotekonfiguraattori
@@ -1012,7 +1011,7 @@ Tämä sovellus on tarkoitettu tabletteihin, joissa on käytössä Windows 8.1 R
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Verkkoasiakasohjelmaan tehdyllä muutoksella voidaan toimittaa samanlaiset toiminnot alkuperäisenDynamics AX 7.0 -asiakasohjelman kautta. Työkorttilaitteessa on tuotannossa käytettävä käyttöliittymä, joka on optimoitu kosketus- ja tablettikäyttöä varten. |
+| **Poiston tai vanhentumisen syy** | Verkkoasiakasohjelmaan tehdyllä muutoksella voidaan toimittaa samanlaiset toiminnot alkuperäisen Dynamics AX 7.0 -asiakasohjelman kautta. Työkorttilaitteessa on tuotannossa käytettävä käyttöliittymä, joka on optimoitu kosketus- ja tablettikäyttöä varten. |
 | **Onko toinen ominaisuus korvannut?**   | Kyllä. Työkorttilaite, joka sisältyy Dynamics AX 7.0:aan.                                                                           |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotannonhallinta                                                |
 | **Tila**                         | Vanhentuminen: Tälle ominaisuudelle ei ole vielä määritetty poistopäivää Microsoft Storesta.                                                |
@@ -1037,7 +1036,7 @@ Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdolli
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Uusien suojausvaatimusten vuoksi tietoliikenneyhteys on sallittua ainoastaan TLS 1.2 -suojausta (tai uudempaa) käyttäen. Omatoiminen asennusohjelma määrittää yhteystavan tietokoneelle automaattisesti. |
 | **Onko toinen ominaisuus korvannut?**   | Nro Vain vakiomuotoinen HTTPS-yhteys on enää tuettu. |
-| **Tuotealueet, joihin vaikutetaan**         | Retail Server  |
+| **Tuotealueet, joihin vaikutetaan**         | Vähittäismyynnin palvelin  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen. |
 
 ### <a name="role-center-pages"></a>Roolikeskus-sivut
@@ -1127,5 +1126,4 @@ Windows 8 -tablettisovelluksessa oli kulujen vienti- ja hyväksymistoiminnot.
 |  <strong>Onko toinen ominaisuus korvannut?</strong>  | Management Reporter (Dynamics AX:n nykyisessä versiossa sen nimi on <strong>Talousraportointi</strong>) |
 |     <strong>Tuotealueet, joihin vaikutetaan</strong>     |                                              Kirjanpito                                              |
 |             <strong>Tila</strong>             |                                      Poistettu versiosta Dynamics AX 2012 alkaen                                      |
-
 

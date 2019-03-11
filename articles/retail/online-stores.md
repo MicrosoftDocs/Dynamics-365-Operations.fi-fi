@@ -1,13 +1,13 @@
 ---
-title: "Määritä verkkokaupat"
-description: "Tässä artikkelissa on tietoja vähittäismyynnin verkkokaupoista ja niiden määrittämisestä Microsoft Dynamics 365 for Retailista"
+title: Määritä verkkokaupat
+description: Tässä artikkelissa on tietoja verkkokaupoista ja niiden määrittämisestä Microsoft Dynamics 365 for Retailissa.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelManagementWorkspace, RetailOnlineStoreList
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 2b736b5e5ce5b5b384181a73c72bbb89b072a284
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324925"
 ---
-
-# <a name="set-up-online-stores"></a>Määritä verkkokaupat
+# <a name="set-up-online-stores"></a>Verkkokauppojen määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa on tietoja vähittäismyynnin verkkokaupoista ja niiden määrittämisestä Microsoft Dynamics 365 for Retailista
+Tässä artikkelissa on tietoja verkkokaupoista ja niiden määrittämisestä Microsoft Dynamics 365 for Retailissa.
 
-Dynamics 365 for Retail tukee useita vähittäismyyntikanavia. Vähittäismyyntikanavia ovat verkkokaupat, puhelinkeskukset ja vähittäismyymälät (eli kivijalkakaupat). Verkkokaupassa vähittäismyyjät saavat näkyvyyttä Internetissä, ja asiakkaat voivat ostaa tuotteita sekä verkkokaupasta että vähittäismyymälästä. Verkkokaupasta tuotteita ostavat asiakkaat voivat saada tuotteet kotiin toimitettuina tai noutaa ne paikallisesta myymälästä. Luot verkkokaupan Dynamics 365 for Retailin asiakasohjelmassa. Verkkokauppa julkaistaan kolmannen osapuolen verkkokaupassa, joka on yhdistetty Dynamics 365 for Retailiin. Kolmannen osapuolen verkkokauppa toimii verkkokauppasi edustana (käyttöliittymänä), ja voit valita haluamasi asiakkuudenhallintajärjestelmän ja käyttöliittymäominaisuudet. Dynamics 365 for Retailissa on käytettävissä useita tämäntyyppisiä integrointivaihtoehtoja. Verkkokaupalle määritetyt ominaisuudet ohjaavat verkkokaupan toimintoja. Esimerkki: Määrittelet siirtymisluokan hierarkian Dynamics 365 for Retailissa ja määrität sen verkkokaupalle. Kun julkaiset verkkokaupan kolmannen osapuolen verkkokaupassa, siirtymisluokan hierarkia näkyy kaupan verkkoversiossa. Ostajat voivat selata verkkokauppaa ja hakea tuotteita siirtymisluokan hierarkian avulla. Jos haluat luoda verkkokaupan, sinun on määritettävä kaupalle komponentit, jotka mahdollistavat tapahtumien käsittelyn. Sinun täytyy lisätä esimerkiksi valikoimat, määritteet, maksutavat ja toimitustavat. Voit määrittää hinnat, kampanjat, alennukset, alennukset, kauppasopimukset ja lähetyksen ehtoja, jotka liittyvät Internet-kauppa. Kun olet julkaissut verkkokauppasi kolmannen osapuolen verkkokaupassa, voit luoda sille vähittäismyynnin tuoteluetteloita. Luettelon tuotteista tulee verkkokaupassa tuoteluetteloita. Kun asiakas ostaa tuotteita verkkokaupasta, saatavilla oleva varasto päivittyy ja synkronoituu asiakasohjelmassa. Lisäksi ostoille luodaan myyntitilaukset ja ne lähetetään asiakasohjelmaan tilauksen toimitusta ja käsittelyä varten.
+Dynamics 365 for Retail tukee useita vähittäismyynnin kanavia. Vähittäismyyntikanavia ovat verkkokaupat, puhelinkeskukset ja vähittäismyymälät (eli kivijalkakaupat). Verkkokaupassa vähittäismyyjät saavat näkyvyyttä Internetissä, ja asiakkaat voivat ostaa tuotteita sekä verkkokaupasta että vähittäismyymälästä. Verkkokaupasta tuotteita ostavat asiakkaat voivat saada tuotteet kotiin toimitettuina tai noutaa ne paikallisesta myymälästä. Luot verkkokaupan Dynamics 365 for Retail -asiakasohjelmassa. Verkkokauppa julkaistaan kolmannen osapuolen verkkokaupassa, joka on yhdistetty Dynamics 365 for Retailiin. Kolmannen osapuolen verkkokauppa toimii verkkokauppasi edustana (käyttöliittymänä), ja voit valita haluamasi asiakkuudenhallintajärjestelmän ja käyttöliittymäominaisuudet. Dynamics 365 for Retailissa on käytettävissä useita tämäntyyppisiä integrointivaihtoehtoja. Verkkokaupalle määritetyt ominaisuudet ohjaavat verkkokaupan toimintoja. Esimerkki: Määrittelet siirtymisluokan hierarkian Dynamics 365 for Retailissa ja määrität sen verkkokaupalle. Kun julkaiset verkkokaupan kolmannen osapuolen verkkokaupassa, siirtymisluokan hierarkia näkyy kaupan verkkoversiossa. Ostajat voivat selata verkkokauppaa ja hakea tuotteita siirtymisluokan hierarkian avulla. Jos haluat luoda verkkokaupan, sinun on määritettävä kaupalle komponentit, jotka mahdollistavat tapahtumien käsittelyn. Sinun täytyy lisätä esimerkiksi valikoimat, määritteet, maksutavat ja toimitustavat. Voit määrittää hinnat, kampanjat, alennukset, alennukset, kauppasopimukset ja lähetyksen ehtoja, jotka liittyvät Internet-kauppa. Kun olet julkaissut verkkokauppasi kolmannen osapuolen verkkokaupassa, voit luoda sille vähittäismyynnin tuoteluetteloita. Luettelon tuotteista tulee verkkokaupassa tuoteluetteloita. Kun asiakas ostaa tuotteita verkkokaupasta, saatavilla oleva varasto päivittyy ja synkronoituu asiakasohjelmassa. Lisäksi ostoille luodaan myyntitilaukset ja ne lähetetään asiakasohjelmaan tilauksen toimitusta ja käsittelyä varten.
 
 ## <a name="set-up-an-online-store"></a>Perusta online-kauppa
 
@@ -60,4 +59,3 @@ Määritä ennen verkkokaupan luomista siinä käytettävä vähittäismyyntikan
 ## <a name="organization-hierarchies"></a>Organisaatiohierarkiat
 
 Organisaatiohierarkioita käytetään vähittäismyyntikanavien rakenteiden määrittelyssä. Organisaatiohierarkiat edustavat liiketoimintasi muodostavien organisaatioiden välisiä suhteita. Kun perustat Internet-kauppoja, voit lisätä ne organisaatiohierarkiaan. Myymälät jakavat sitten valikoimissa, täydennyksissä ja raportoinnissa käytettävät tiedot. Luodessaan organisaatiohierarkian sinun on määritettävä sen tarkoitus. Tarkoitus kuvaa, kuinka hierarkiaa käytetään liiketoimintarakenteessa. Voit luoda yhden organisaatiohierarkian myymälän toimintoihin ja käyttää tätä hierarkiaa valikoimiin, täydennykseen ja raportointia varten. Vaihtoehtoisesti voit luoda erillisen organisaatiohierarkian jokaista käyttötarkoitusta varten. Voit myös luoda useita hierarkioita samaan tarkoitukseen ja määrittää jokaiselle erillisen kanavan. Jos aiot julkaista vähittäismyynnin tuoteluetteloita verkkokaupassa, sinun on vähintään lisättävä verkkokauppa organisaatiohierarkiaan valikoimia varten. Luettelon tuotteet valitaan tuotevalikoimista, jotka on määritetty verkkokauppaan. Kun luettelo on julkaistu, julkaisuprosessi vertaa verkkokauppaan liitetyn valikoiman voimassaolopäiviä luettelossa oleviin tuotteisiin selvittääkseen, mitkä tuotteet tulisi antaa saataville verkkokaupassa.
-

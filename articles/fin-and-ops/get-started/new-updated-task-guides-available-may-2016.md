@@ -1,13 +1,13 @@
 ---
-title: "Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)"
-description: "Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n Microsoftin (toukokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu."
+title: Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)
+description: Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n (toukokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,26 +17,25 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341347"
 ---
-
 # <a name="new-or-updated-task-guides-may-2016"></a>Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n Microsoftin (toukokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu. 
+Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics AX:n (toukokuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu. 
 
-## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (toukokuu 2016 - kaikki kielet)
+## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (toukokuu 2016, kaikki kielet)
 
-(Toukokuu 2016) Yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics AX:n toukokuun 2016 päivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. (Helmikuun 2016) yhdistetyssä APQC-kirjastossa julkaistut tehtäväoppaiden lokalisoidut versiot ovat käytettävissä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
+(Toukokuun 2016) yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Microsoft Dynamics AX toukokuun 2016 päivityksen ja Microsoft Dynamics AX helmikuun 2016 version ohjeeksi. (Helmikuun 2016) yhdistetyssä APQC-kirjastossa julkaistut tehtäväoppaiden lokalisoidut versiot ovat käytettävissä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
 
 > [!NOTE]
-> Liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (\*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics AX:n toukokuun 2016 päivityksessä eikä niitä tueta Microsoft Dynamics AX:n aiemmissa versioissa.
+> Liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (\*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics AX:n toukokuun 2016 päivityksessä ja ettei sitä tueta Microsoft Dynamics AX:n aiemmissa versioissa.
 
 ### <a name="countryregion-functionality"></a>Maa/alue-toiminto
 
@@ -195,4 +194,3 @@ Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, 
 [Uudet tai päivitetyt tehtäväoppaat saatavilla (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)
-

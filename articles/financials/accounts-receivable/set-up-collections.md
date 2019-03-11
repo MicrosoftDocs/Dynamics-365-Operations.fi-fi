@@ -1,13 +1,13 @@
 ---
-title: "Luotonvalvonnan määrittäminen"
-description: "Tässä artikkelissa kerrotaan, miten kokoelmatoiminnot määritetään."
+title: Luotonvalvonnan määrittäminen
+description: Tässä artikkelissa kerrotaan, miten kokoelmatoiminnot määritetään.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6b1dcd6ad0ca05a94409d5d23039ccefe53392e3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f35981396c782b530737adac8ad62d0ff4b0f77e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351835"
 ---
-
 # <a name="set-up-credit-and-collections"></a>Luotonvalvonnan määrittäminen
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ Määritä kirjauskansioiden nimet, joita käytetään tapahtumien käsittelyyn 
 Määritä oletussyykoodi, jota käytetään, kun tapahtumia kirjataan poistona **Perintä**-sivulla. Voit vaihtaa koodin poistoprosessin aikana.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Sähköpostiliitteiden kansion määrittäminen ja sähköpostimallien luominen
-Jos lähetät **Perintä**-sivulta sähköpostiviestejä, joiden liitteenä Microsoft Excel -tiedostoja, voit luoda kyseisille viesteille valinnaisia sähköpostimalleja.
+Jos lähetät **Perintä**-sivulta sähköpostiviestejä, joiden liitteenä on Microsoft Excel -tiedostoja, voit luoda kyseisille viesteille valinnaisia sähköpostimalleja.
 
 ## <a name="set-up-accounts-receivable-parameters-for-collections"></a>Myyntireskontran parametrien määrittäminen perintää varten
 Määritä **Perintä**-välilehdessä näkyvät myyntireskontran parametrit.
@@ -100,5 +99,4 @@ Lisätietoja on seuraavissa aiheissa:
  - [Käsittele maksukehotuksia](tasks/process-collection-letters.md)
 
  - [Perimistietojen tarkistaminen](tasks/review-collections-information.md)
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Myyntipistesovellus (POS) ja käyttäjän kielialueasetukset"
-description: "Tässä ohjeaiheessa kuvataan, miten kieliasetukset muutetaan Retail Modern -myyntipisteessä (MPOS) ja pilvimyyntipisteessä."
+title: Myyntipistesovellus (POS) ja käyttäjän kielialueasetukset
+description: Tässä ohjeaiheessa kuvataan, miten kieliasetukset muutetaan Retail Modern POS:ssä (MPOS) ja Cloud POS:ssä.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,23 +19,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: faf8cdcee70b55842072298b51789f6cd7a577af
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336747"
 ---
-
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Myyntipistesovellus (POS) ja käyttäjän kielialueasetukset
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, miten kieliasetukset muutetaan Retail Modern -myyntipisteessä (MPOS) ja pilvimyyntipisteessä.
+Tässä ohjeaiheessa kuvataan, miten kieliasetukset muutetaan Retail Modern POS:ssä (MPOS) ja Cloud POS:ssä.
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Retail Modern -myyntipiste (MPOS) ja pilvimyyntipiste tukevat ympäristöjä, joissa kielisetukset ja käännökset voivat vaihdella myymälän ja käyttäjäasetusten mukaan. Esimerkiksi myymälä saattaa sijaita alueella, jossa englannin kieli on asiakkaiden yleisimmin käyttämä, mutta jotkut työntekijät käyttävät mieluummin sovellusta ranskankielisillä käännöksillä.
+Retail Modern POS (MPOS) ja Cloud POS tukevat ympäristöjä, joissa kielisetukset ja käännökset voivat vaihdella myymälän ja käyttäjäasetusten mukaan. Esimerkiksi myymälä saattaa sijaita alueella, jossa englannin kieli on asiakkaiden yleisimmin käyttämä, mutta jotkut työntekijät käyttävät mieluummin sovellusta ranskankielisillä käännöksillä.
 
 ## <a name="data-language"></a>Tietojen kieli
 
@@ -67,4 +66,3 @@ Myyntipisteen kieliasetukset määritetään kohdassa **Työntekijä**-sivun **K
 | **Yritys** | Oletusarvo                    | Oletusarvo                                                       |
 | **Myymälä**   | Ohittaa yrityksen          | Ohittaa yrityksen                                             |
 | **Käyttäjä**    | Ohittaa myymälän tai yrityksen | En koskaan                                                         |
-

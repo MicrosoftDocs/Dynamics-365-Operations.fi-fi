@@ -1,13 +1,13 @@
 ---
 title: Organisaation hallinnon aloitussivu
-description: "Tässä aiheessa on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Finance and Operationsia organisaatiossa."
+description: Tässä ohjeaiheessa on linkkejä resursseihin, jotka auttavat käyttämään Microsoft Dynamics 365 for Finance and Operationsia organisaatiossa.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a693529b55b66eb940f8215a336d5c4ae0acedd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332814"
 ---
-
 # <a name="organization-administration-home-page"></a>Organisaation hallinnon aloitussivu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on linkkejä sisältöön, joka auttaa tehokäyttäjiä ja järjestelmänvalvojia määrittämään Microsoft Dynamics 365 for Finance and Operationsin. Sisältö avustaa järjestelmän määrittämisessä niin, että se auttaa sujuvasti ja tehokkaasti organisaatiotasi ja sen liiketoimintaa.
+Tässä ohjeaiheessa on linkkejä sisältöön, jonka avulla tehokäyttäjät ja järjestelmänvalvojat voivat määrittää Microsoft Dynamics 365 for Finance and Operationsin. Sisältö avustaa järjestelmän määrittämisessä niin, että se auttaa sujuvasti ja tehokkaasti organisaatiotasi ja sen liiketoimintaa.
 
 Suuri osa tässä luetellusta sisällöstä koskee **Organisaationhallinta**-moduulia. Jotkin tehtävistä, kuten tietuemallin luominen ja käyttäminen, voidaan suorittaa missä tahansa moduulissa, jotta organisaatiosi voisi toimia tehokkaammin.
 
@@ -103,4 +102,3 @@ Tietuemallien avulla voit luoda tietueita nopeammin. Voit luoda tietuemallin, jo
 - [Asiakirjanhallinnan määrittäminen](configure-document-management.md)
 - [Sähköpostiviestin määrittäminen ja lähettäminen](configure-email.md)
 - [Päivämäärä- ja aikatiedot sekä aikavyöhykkeet](date-time-zones.md)
-

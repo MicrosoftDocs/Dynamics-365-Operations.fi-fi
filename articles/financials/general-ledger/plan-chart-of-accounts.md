@@ -1,13 +1,13 @@
 ---
 title: Tilikartan suunnittelu
-description: "Tässä ohjeaiheessa on tietoja, joiden avulla voit suunnitella organisaation tilikartan."
+description: Tässä ohjeaiheessa on tietoja, joiden avulla voit suunnitella organisaation tilikartan.
 author: aprilolson
 manager: AnnBe
 ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 93d5ef19a4b1cb2885c611c8675ac06fd841ac56
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3f8d97fc42cde9053b0552fc1dfe8e6de0f5e03b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337575"
 ---
-
 # <a name="plan-your-chart-of-accounts"></a>Tilikartan suunnittelu
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,7 @@ Tilikartan rakennetta suunniteltaessa täytyy kiinnittää huomiota esimerkiksi 
 Voit luoda tilikarttoja **Tilikartat**-sivulla. Voit luoda päätilejä **Tilikartat**- tai **Päätilit**-sivulla. Päätileillä ei tule käyttää erikoismerkkejä, joita käytetään tilikartoissa erottimina. Muussa tapauksena seurauksena voi olla toiminnan epävakautta tai tilien ja dimensioiden yhdistelmien kirjaamiseen on ehkä aina käytettävä hakua ja valintaikkunaa. Lisätietoja on ohjeaiheessa [Päätilin luominen](tasks/create-main-account.md).
 
 > [!NOTE]
-> Voit muokata tilikartan erotinta Microsoft Dynamics for Finance and Operationsin version 8.0 (huhtikuu 2018) **Kirjanpitoparametrit** -sivulla.
+> Voit muokata tilikartan erotinta Microsoft Dynamics for Finance and Operationsin version 8.0 (huhtikuu 2018) **Kirjanpitoparametrit**-sivulla.
 
 Päätilit kannattaa linkittää päätililuokkiin, jolloin oletusraportteja voidaan käyttää ilman muutoksia. Tällöin voit suunnitella ja ylläpitää raportteja nopeasti ja helposti.
 
@@ -61,4 +60,3 @@ Lisätietoja on seuraavissa aiheissa:
 
 - [Taloushallinnon dimensiot](financial-dimensions.md)
 - [Luo ja määritä lisäsääntörakenteet](tasks/create-assign-advanced-rule-structures.md)
-

@@ -1,13 +1,13 @@
 ---
-title: "Lausekerajoitukset ja taulurajoitukset tuotemääritysmalleissa"
-description: "Tässä ohjeaiheessa kuvataan lauseke- ja taulurajoitusten käyttö. Rajoittaa sellaisten määritearvojen hallitsemista, joita käytät tuotteiden määrittämiseen myyntitilaukselle, myyntitarjoukselle, ostotilaukselle tai tuotantotilaukselle. Voit käyttää lausekerajoituksia tai taulurajoituksia, riippuen siitä, kuinka haluat luoda rajoitukset."
+title: Lausekerajoitukset ja taulurajoitukset tuotemääritysmalleissa
+description: Tässä ohjeaiheessa kuvataan lauseke- ja taulurajoitusten käyttö. Rajoittaa sellaisten määritearvojen hallitsemista, joita käytät tuotteiden määrittämiseen myyntitilaukselle, myyntitarjoukselle, ostotilaukselle tai tuotantotilaukselle. Voit käyttää lausekerajoituksia tai taulurajoituksia, riippuen siitä, kuinka haluat luoda rajoitukset.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 88d52031f4c916f5ec3e970f38864977e69a9d9a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b6b5b7e7894cb74e33e08893934b3eaede957556
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356642"
 ---
-
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Lausekerajoitukset ja taulurajoitukset tuotemääritysmalleissa
 
 [!include [banner](../includes/banner.md)]
@@ -170,7 +169,7 @@ Seuraavissa taulukoissa on kuvattu operaattorit ja infix-merkinnät, joita voida
 </tr>
 <tr class="even">
 <td>Teho</td>
-<td>Tämä vaatii eksponentiaalin. Tämä koskee potenssiinkorotusta oikealta vasemmalle. (Se on toisin sanoen oikea-assosiatiivinen.) Siksi <strong>Power[a, b, c]</strong> on sama kuin <strong>[a, Power[b, c]]</strong>. <strong>Power</strong>-operaattoria voidaan käyttää vain, jos eksponentti on positiivinen vakio.</td>
+<td>Tämä vaatii eksponentiaalin. Tämä koskee potenssiinkorotusta oikealta vasemmalle. (Tämä tarkoittaa, että se on oikea-assosiatiivinen.) Siksi <strong>Power[a, b, c]</strong> on sama kuin <strong>[a, Power[b, c]]</strong>. <strong>Power</strong>-operaattoria voidaan käyttää vain, jos eksponentti on positiivinen vakio.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operaattori:</strong> Power[x, 2] == y</li>
@@ -223,7 +222,7 @@ Seuraavan taulukon esimerkit kuvaavat, kuinka infix-merkintä kirjoitetaan.
 |        (x)        |                           Sulkeet ohittavat oletusarvoisen tärkeysjärjestyksen.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Miksi lausekerajoitusteni vahvistaminen ei onnistu?
-Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komponenteille tai alikomponenteille tuotemääritysmallissa. Seuraavassa luettelossa on varatut sanat, jotka eivät ole käytettävissä:
+Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komponenteille tai alikomponenteille tuotemääritysmallissa. Seuraavassa luettelossa on varatut sanat, jotka eivät ole käytettävissä:
 
 -   Katto
 -   Elementti
@@ -252,7 +251,6 @@ Et voi käyttää varattuja avainsanoja ratkaisimen niminä määritteille, komp
 [Rajoituslausekkeen luominen (tehtäväopas)](tasks/add-expression-constraint-product-configuration-model.md)
 
 [Laskelman lisääminen tuotekonfiguraatiomalliin (tehtäväopas)](tasks/add-calculation-product-configuration-model.md)
-
 
 
 

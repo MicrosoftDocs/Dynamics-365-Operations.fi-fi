@@ -1,13 +1,13 @@
 ---
 title: Konfiguroi kulujen hallinta
-description: "Tässä artikkelissa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin Microsoft Dynamics 365 for Finance and Operationsin kulujenhallinta määritetään."
+description: Tässä artikkelissa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin Microsoft Dynamics 365 for Finance and Operationsin matkalaskut määritetään.
 author: KimANelson
 manager: AnnBe
 ms.date: 08/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: GlobalCategory, ProjCategory, TrvLocations, TrvParameters, TrvPaymethod, TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5ac9959a4ee66e52ead5050897403602e407ca10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c87909d9eb3a4d717e0c40289353da0267a51f60
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322027"
 ---
-
 # <a name="configure-expense-management"></a>Konfiguroi kulujen hallinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin Microsoft Dynamics 365 for Finance and Operationsin kulujenhallinta määritetään. Matkalaskujen alueelle voit tallentaa esimerkiksi maksutapojen, matkustusehdotusten, kuluraporttien ja -käytäntöjen tiedot.
+Tässä ohjeaiheessa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin Microsoft Dynamics 365 for Finance and Operationsin matkalaskut määritetään. Matkalaskujen alueelle voit tallentaa esimerkiksi maksutapojen, matkustusehdotusten, kuluraporttien ja -käytäntöjen tiedot.
 
 Koska monet päätökset, jotka teet kulujen hallinnan määrityksiä suunniteltaessa, perustuvat organisaatiohierarkiaan ja taloushallinnan rakenteeseen, sinun on tutustuttava kyseisten alueiden ohjeistukseen.
 
@@ -163,4 +162,3 @@ Voit luoda kuluraporttikäytäntöjä, joilla organisaatio voi säästää aikaa
 - Milloin käytäntö vanhentuu?
 - Mikä on käytäntösääntö?
 - Mikä on käytäntösäännön tulos?
-

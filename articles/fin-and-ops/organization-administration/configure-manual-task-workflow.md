@@ -1,13 +1,13 @@
 ---
-title: "Manuaalisten tehtävien konfiguroiminen työnkulkuun"
-description: "Tässä ohjeaiheessa kerrotaan, miten manuaalisen tehtävän ominaisuudet määritetään."
+title: Manuaalisten tehtävien konfiguroiminen työnkulkuun
+description: Tässä ohjeaiheessa kerrotaan, miten manuaalisen tehtävän ominaisuudet määritetään.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 669fce3ddade4d6e0a130da2420ab33ca4ff4671
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309745"
 ---
-
 # <a name="configure-manual-tasks-in-a-workflow"></a>Manuaalisten tehtävien konfiguroiminen työnkulkuun
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,7 @@ Seuraavia ohjeita noudattamalla voit määrittää käyttäjät, joille manuaali
     </tr>
     <tr>
     <td>Käyttäjä</td>
-    <td>Tietyt Microsoft Dynamics 365 for Finance and Operations -käyttäjät</td>
+    <td>Tietyt Microsoft Dynamics 365 for Finance and Operationsin käyttäjät</td>
     <td>
     <ol>
     <li>Valittuasi <strong>käyttäjän</strong>, napsauta <strong>Käyttäjä</strong>-välilehteä.</li>
@@ -383,4 +382,3 @@ Kun manuaalinen tehtävä on määritetty käyttäjälle, käyttäjän pitää s
 5. Valitse **Delegoi**-valintaruutu, jos haluat, että käyttäjä voi määrittää tehtävän toiselle käyttäjälle.
 6. Valitse **Määritä uudelleen**-valintaruutu, jos haluat, että käyttäjä voi määrittää tehtävän uudelleen toiselle käyttäjälle työnimikejonossa.
 7. Valitse **Vapauta**-valintaruutu, jos haluat, että käyttäjä voi vapauttaa tehtävän työnimikejonoon. Toinen käyttäjä voi sitten suorittaa tehtävän.
-

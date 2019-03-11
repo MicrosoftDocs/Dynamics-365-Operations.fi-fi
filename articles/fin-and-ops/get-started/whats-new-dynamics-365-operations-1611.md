@@ -1,13 +1,13 @@
 ---
-title: Dynamics 365 for Operations-version 1611 uudet ja muuttuneet ominaisuudet (marraskuu 2016)
-description: "Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjestelmän version 1611 uusia tai muuttuneita ominaisuuksia."
+title: Dynamics 365 for Operationsin version 1611 uudet tai muuttuneet ominaisuudet (marraskuu 2016)
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 for Operationsin version 1611 uusia tai muuttuneita ominaisuuksia.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339070"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operations-version 1611 uudet ja muuttuneet ominaisuudet (marraskuu 2016)
+# <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operationsin version 1611 uudet tai muuttuneet ominaisuudet (marraskuu 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjestelmän version 1611 uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Dynamics 365 for Operationsin version 1611 uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="cost-accounting"></a>Kustannuslaskenta
 
@@ -43,7 +42,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjeste
 <tbody>
 <tr>
 <td>Kustannustason dimensioiden määrittäminen ja kustannustason dimension jäsenten tuominen.</td>
-<td>Kustannustasoja käytetään kustannuslaskennassa kustannusten luokitteluun ja kustannusvirtojen dokumentointiin. Ensisijaiset kustannustasot tuodaan joko Microsoft Dynamics 365 for Operations -tietoyhdistimellä, jolla päätilit saadaan suoraan Operations-alustasta, tai käyttämällä yleistä tietoyhdistintä, jossa päätilit saadaan Microsoft Excelin kautta muuntyyppisistä lähdejärjestelmistä. Kun päätilit on tuotu kustannuslaskentaan, niitä käytetään kustannustason dimension jäseninä. Toissijaiset kustannustasot ovat käyttäjäkohtaisia ja niitä käytetään kohdistuksissa dokumentoimaan kustannusvirtoja.</td>
+<td>Kustannustasoja käytetään kustannuslaskennassa kustannusten luokitteluun ja kustannusvirtojen dokumentointiin. Ensisijaiset kustannustasot tuodaan joko Microsoft Dynamics 365 for Operationsin tietoyhdistimellä, jolla päätilit saadaan suoraan Operations-alustasta, tai käyttämällä yleistä tietoyhdistintä, jossa päätilit saadaan Microsoft Excelin kautta muuntyyppisistä lähdejärjestelmistä. Kun päätilit on tuotu kustannuslaskentaan, niitä käytetään kustannustason dimension jäseninä. Toissijaiset kustannustasot ovat käyttäjäkohtaisia ja niitä käytetään kohdistuksissa dokumentoimaan kustannusvirtoja.</td>
 </tr>
 <tr>
 <td>Kustannustason dimensioiden määrittäminen</td>
@@ -51,7 +50,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjeste
 </tr>
 <tr>
 <td>Kustannusobjektin dimensioiden määrittäminen ja kustannusobjektin dimension jäsenten tuominen</td>
-<td>Kustannusobjektit ovat mitä tahansa objektityyppejä, joille määritetään kustannuksia. Tyypillisiä kustannusobjekteja ovat tuotteet, projektit, resurssit, osastot, kustannuspaikat ja maantieteelliset alueet. Voit käyttää Microsoft Dynamics 365 for Operations -tietoyhdistintä saadaksesi taloushallinnon dimensiot ja arvot Operations-alustalta, tai yleistä tietoyhdistintä, jossa dimensiot ja arvot saadaan Excelin kautta muuntyyppisistä lähdejärjestelmistä. Esimerkiksi käytettäessä kustannuspaikan taloushallinnon dimensiota objektin dimensiona kaikki tuodut kustannuspaikat ovat kustannusobjektin dimensiojäseniä.</td>
+<td>Kustannusobjektit ovat mitä tahansa objektityyppejä, joille määritetään kustannuksia. Tyypillisiä kustannusobjekteja ovat tuotteet, projektit, resurssit, osastot, kustannuspaikat ja maantieteelliset alueet. Voit käyttää Microsoft Dynamics 365 for Operationsin tietoyhdistintä saadaksesi taloushallinnon dimensiot ja arvot Operations-alustalta, tai yleistä tietoyhdistintä, jossa dimensiot ja arvot saadaan Excelin kautta muuntyyppisistä lähdejärjestelmistä. Esimerkiksi käytettäessä kustannuspaikan taloushallinnon dimensiota objektin dimensiona kaikki tuodut kustannuspaikat ovat kustannusobjektin dimensiojäseniä.</td>
 </tr>
 <tr>
 <td>Tilastodimensioiden määrittäminen tai tuominen</td>
@@ -59,7 +58,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjeste
 </tr>
 <tr>
 <td>Tilastomittauksen lähdemallien luominen</td>
-<td>Tilastomittauksen lähdemallia käytetään voi muunnettaessa Dynamics 365 for Operations -tietoja tilastomittauksiksi. Malli liitetään tiettyyn tilastodimension jäseneen. Mallit on esisuodatettu siten, että ne näyttävät vain taloushallinnon dimensioihin liittyvät taulukot.</td>
+<td>Tilastomittauksen lähdemallia käytetään voi muunnettaessa Dynamics 365 for Operationsin tietoja tilastomittauksiksi. Malli liitetään tiettyyn tilastodimension jäseneen. Mallit on esisuodatettu siten, että ne näyttävät vain taloushallinnon dimensioihin liittyvät taulukot.</td>
 </tr>
 <tr>
 <td>Kustannuslaskennan kirjanpidon luominen</td>
@@ -101,7 +100,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjeste
 </tr>
 <tr>
 <td>Luo raportteja Excelissä.
-<blockquote>[!NOTE] Sinun on käytettävä Microsoft Excel 2016:tta.</blockquote>
+<blockquote>[!NOTE] Käytössä on oltava Microsoft Excel 2016.</blockquote>
 </td>
 <td>Voit viedä kustannuslaskennan tietoja suoraan Exceliin tietoyksiköiden kautta ja käyttää Microsoft PivotTablea raporttien luomiseen.</td>
 </tr>
@@ -624,7 +623,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjeste
 | Sähköisen raportoinnin ER-raporttien konfigurointi sähköisten asiakirjojen luomiseksi Excel-, Microsoft Word- tai PDF-muodossa. | Yhdellä konfiguroinnilla sähköisen raportoinnin ER-raportit luovat sähköisiä asiakirjoja kolmessa eri tiedostomuodossa: OPENXML-laskentataulukko- (Excel), Word- ja XML-muodoissa (XFDF) (PDF). Käyttäjät voivat valita tiedostomuodon lisäämällä muotomallin ER-raporttiin Excel-, Word- tai PDF-tiedostona. |
 | Sähköisen raportoinnin ER-raporttien konfigurointi tietojen lisäämiseksi OPENXML-laskentataulukkomuodossa luotujen sähköisten asiakirjojen ylä- ja alatunnisteisiin ja sivunvaihtojen määrittämiseksi. | ER-raportit voivat lisätä liiketoimintatietoja ylä-ja alatunnisteisiin ja määrittää, missä sivunvaihdot suoritetaan. Näin raportit voivat tukea luotujen asiakirjojen sivujen staattisia ylä- ja alaosia. Ne voivat myös tukevat asiakirjojen lakisääteisten vaatimusten mukaista sivutusta. |
 | Sähköisen raportoinnin ER-raporttien konfigurointi siten, että tuloste lähetetään sähköpostiviestinä ja liiketoimintatietoja ja ER-logiikkaa (lausekkeet) käytetään suoritushetkellä sähköpostiosoitteen määrittämiseen. | Aiemmin ER-kohteen konfiguroinnissa voitiin määrittää tulosteen vastaanottajan sähköpostiosoite suunnittelun aikana. Voit nyt määrittää lausekkeen ER-muodossa. Lauseke voidaan valita kohteeseen sähköpostiosoitteen lähteeksi kuhunkin muotokonfiguraatioon ja kuhunkin tulosteen komponenttiin (kansioon tai tiedostoon) erikseen. Siksi suoritettaessa ER-raporttia kukin luotava tiedosto voidaan lähettää eri vastaanottajalle ja sähköpostiosoite voidaan määrittää ER-logiikan ja liiketoimintatietojen perusteella. |
-| ER-raporttien kohteen määrittäminen siten, että tuloste lähetetään Microsoft SharePoint-kansioon joko uudelleennimettynä tiedostona tai nykyisen tiedoston uutena versiona ja siten, että liiketoimintatietoja voidaan käyttää Microsoft Power BI -kehikossa raporttina tai tietojoukkona. | Määrittäessäsi ER-raportteja voi nyt helposti (ilman koodausta) valmistella pyydetyt liiketoimintatiedot siten, että niitä voidaan käyttää Power BI -kehikosta. Suoritettaessa näitä ER-raportteja voi antaa Power BI -kehikon jossa on tarvittavat liiketoimintatiedot ja/tai Excel-raportit, jotka ovat käytettävissä. Jos ajoitat raportin toimimaan toistuvassa tilassa, voit määrittää ajoitetun liiketoimintatietojen lähetyksen Dynamics 365 for Operationsista Power BI:hin tukemaan Power BI -pohjaisten raporttien päivitettyä lähetysaikataulua. |
+| ER-raporttien kohteen määrittäminen siten, että tuloste lähetetään Microsoft SharePoint -kansioon joko uudelleennimettynä tiedostona tai nykyisen tiedoston uutena versiona ja siten, että liiketoimintatietoja voidaan käyttää Microsoft Power BI -kehikossa raporttina tai tietojoukkona. | Määrittäessäsi ER-raportteja voi nyt helposti (ilman koodausta) valmistella pyydetyt liiketoimintatiedot siten, että niitä voidaan käyttää Power BI -kehikosta. Suoritettaessa näitä ER-raportteja voit antaa Power BI -kehikon, jossa on tarvittavat liiketoimintatiedot ja/tai Excel-raportit, jotka ovat jo käytettävissä. Jos ajoitat raportin toimimaan toistuvassa tilassa, voit määrittää ajoitetun liiketoimintatietojen lähetyksen Dynamics 365 for Operationsista Power BI:hin tukemaan Power BI -pohjaisten raporttien päivitettyä lähetysaikataulua. |
 | ER-raporttien määrittäminen käytettäviksi osana sähköistä tiedostoa, joka on luotu aiemmin tietolähteeksi asiakirjan luomista varten. | Voit määrittää ER-raportteja, jotka luovat tulosteen tekstimuodossa asiakirjan rivien inventointia varten. Näitä tietoja voidaan sitten käyttää asiakirjan muissa osissa ja luoda uusia rivejä, jotka sisältävät yhteenvetotietoja. Yhteenvetotiedot (summat ja numerot) voidaan laskea ja tulostaa sähköisiksi tiedostoiksi, jotka luodaan ilman muita tietojen muuntamista. Toiminto parantaa raportin suorituksen suorituskykyä ja helpottaa määritetyn ER-muodon tulevaa ylläpitoa. |
 | ER-raporttien määrittäminen tiedostotunnisteen määrittämiseksi sähköisiin asiakirjoihin, jotka on luotu tekstimuodossa. | Voit määrittää ER-raportteja luomaan tulosteet tekstimuodossa, jotta ne voidaan tallentaa tiedostona, jolla on tietty tunniste. Voit määrittää .txt-oletustunnisteen lisäksi esimerkiksi .csv- ja .prn-tiedostotunnisteet tiedostomuodon määrityksen mukaisesti. |
 | ER-mallin erikoisversioon perustuvien uusien ER-raporttien luominen | Kun aiemmin luotiin uutta ER-muotoa, ainoastaan valitun ER-malliin uusinta versiota voitiin käyttää tiedostomuodon tietolähteenä. Voit valita minkä tahansa käytettävissä olevan valitun ER-mallin version. Tämän ominaisuuden avulla voit ylläpitää kuluvan vuoden ER-raportteja ja suunnitella uuden ER-mallin version samanaikaisesti seuraavaa vuotta varten. |
@@ -643,7 +642,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjeste
 <tbody>
 <tr>
 <td>Maksutietueiden ja palkanlaskennan prosessien konfigurointi toiminnolla, joka vastaa Microsoft Dynamics AX 2012 R3:n <strong>Palkanlaskenta</strong>-moduulin toimintoa</td>
-<td>Voit määrittää ja käsitellä Yhdysvaltojen palkanlaskennan käyttämällä ominaisuusjoukkoa, joka vastaa AX 2012 R3: n ominaisuusjoukko-toimintoa.
+<td>Voit määrittää ja käsitellä Yhdysvaltojen palkanlaskennan käyttämällä ominaisuusjoukkoa, joka vastaa AX 2012 R3:n ominaisuusjoukkoa.
 <ul>
 <li>Voi määrittää maksujaksot ja maksukaudet, työjaksot ja työkaudet, ansiokoodit ja ansiokoodiryhmät, aikataulut, lomatyypit ja jaksotussuunnitelmat.</li>
 <li>Voit myös määrittää toimien ja työntekijöidenetujen ja verojen pakolliset vähennykset ja palkanlaskentatiedot raportointia ja analysointia varten.</li>
@@ -657,7 +656,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjeste
 </tr>
 <tr>
 <td>Palkanlaskennan Positive pay -tiedoston luominen</td>
-<td>Maksuliikenteen hallinnan Positive Pay -toiminnoille on uusi tunniste palkanlaskennan maksua varten. Erilliset valikkovaihtoehdot on lisätty ydinprosessiin, jotta palkanlaskentakohtainen konfigurointi on mahdollinen. Toiminto on samanlainen kuin Positive pay -ydintoiminto, joka julkaistiin Microsoft Dynamics AX-sovellusversion 7.0.1 kanssa (toukokuu 2016). Tunnisteen ansiosta palkanlaskentatiedot on kokonaan eristetty muista Positive pay -tapahtumista. Eristämisen ansiosta voidaan taata, että ainoastaan Palkanlaskenta-käyttäjät voivat käyttää ja näkevät palkanlaskentaan liittyvät tiedot.</td>
+<td>Maksuliikenteen hallinnan Positive Pay -toiminnoille on uusi tunniste palkanlaskennan maksua varten. Erilliset valikkovaihtoehdot on lisätty ydinprosessiin, jotta palkanlaskentakohtainen konfigurointi on mahdollinen. Toiminto on samanlainen kuin Positive pay -ydintoiminto, joka julkaistiin Microsoft Dynamics AX -sovellusversion 7.0.1 kanssa (toukokuu 2016). Tunnisteen ansiosta palkanlaskentatiedot on kokonaan eristetty muista Positive pay -tapahtumista. Eristämisen ansiosta voidaan taata, että ainoastaan Palkanlaskenta-käyttäjät voivat käyttää ja näkevät palkanlaskentaan liittyvät tiedot.</td>
 </tr>
 <tr>
 <td>Tulojen laskelmarivien tuominen ulkoisesta lähteestä käyttämällä uutta ansioilmoitusrivi- tietoyksikköä</td>
@@ -717,7 +716,7 @@ Tässä aiheessa käsitellään Microsoft Dynamics 365 for Operations -järjeste
 | Mitä voit tehdä | Miksi tämä on tärkeää |
 |-----------------|-----------------------|
 | Myöhäinen-valinnan käyttö kirjattaessa erän laskuehdotukset eränä | Projektin kirjanpitäjä voi määrittää erätyön poimimaan automaattisesti laskuehdotukset kirjaukseen, jos, ehdotukset täyttävät erätyölle määritetyt ehdot. Tämä toiminto parantaa automaattista laskun kirjaamista, koska erätyö voidaan suorittaa jatkuvasti ja noutaa ehdotukset kirjausta varten automaattisesti. |
-| Power BI -työpöydän analyysin luominen | Liiketoimintatietojen (BI) sisällön projektikohtaiset ja resurssiin liittyvät tiedot voidaan luoda helposti Power BI -työpöydällä. |
+| Luo analyysi Power BI Desktopissa. | Liiketoimintatietojen (BI) sisällön projektikohtaiset ja resurssiin liittyvät tiedot voidaan luoda helposti Power BI Desktopissa. |
 | Ostotilauksen ennakkomaksujen käyttö ja sisällyttäminen oikein projektien arviointiprosessiin | Projektin ostotilausten ennakkomaksut on käsiteltävä ennen maksujen lähettämistä toimittajille. Näiden ennakkomaksulaskut näkyvät projektin arvio/kirjausprosessissa **kiinteähintainen**-projektityypissä. |
 | Kustannusten ja tuoton arvioiden ja nimiketarpeiden käyttö ja hallinta suoraan työrakenteesta | Voit hallita määritetyn WBS-tehtävän kustannusarvioita, tuottoarvioita ja nimiketarpeita tehtävän tiedot-valintaikkunassa WBS-suunnittelunäkymässä. |
 | Rahoituslähteen valinta maksukirjauskansioissa | Jos projektisopimuksella on useita rahoituslähteitä, voit valita tietyn rahoituslähteen, kun maksut kirjataan. Jos et valitse tiettyä rahoituslähdettä, rahoitussääntöjä, jotka on määritetty sopimuksessa, käytetään maksun kohdistukseen. |
@@ -764,7 +763,7 @@ Yhtenäinen monikanavainen kauppa viittaa tilausten käsittelemiseen ja hallinta
 
 | Mitä voit tehdä | Miksi tämä on tärkeää |
 |-----------------|-----------------------|
-| Tarkastele mukautettuja tuotesuosituksia usealla myyntipisteen kosketuspisteellä määrittääksesi, mistä asiakas haluaa ostohistorian, toiveluettelon ja muiden asiakkaiden verkko- ja kivijalkakauppaostosten perusteella. | Mukautetut tuotesuositukset auttavat kauppiaita, joilla on suuri tuotevalikoima, auttamaan asiakkaitaan tuotteiden löytämisessä ja antavat myyntiedustajille mahdolliset älykkäämpään myyntityöhön. Esittämällä tuotesuosituksia, jotka on kohdistettu asiakkaan kiinnostuksen kohteisiin, kauppiaat parantaa myyntiään ja tehostaa asiakaspidätystä. Microsoft Dynamics 365 for Retailin tuotesuositukset toimivat kognitiivisten palveluiden ja Microsoft Azuren koneoppimisen avulla. |
+| Tarkastele mukautettuja tuotesuosituksia usealla myyntipisteen kosketuspisteellä määrittääksesi, mistä asiakas haluaa ostohistorian, toiveluettelon ja muiden asiakkaiden verkko- ja kivijalkakauppaostosten perusteella. | Mukautetut tuotesuositukset auttavat kauppiaita, joilla on suuri tuotevalikoima, auttamaan asiakkaitaan tuotteiden löytämisessä ja antavat myyntiedustajille mahdolliset älykkäämpään myyntityöhön. Esittämällä tuotesuosituksia, jotka on kohdistettu asiakkaan kiinnostuksen kohteisiin, kauppiaat parantaa myyntiään ja tehostaa asiakaspidätystä. Microsoft Dynamics 365 for Retaillin tuotesuositukset toimivat kognitiivisten palveluiden ja Microsoft Azuren koneoppimisen avulla. |
 
 ### <a name="pos-task-recorder"></a>Myyntipistetehtävän tallennus
 
@@ -784,8 +783,8 @@ Myymäläjärjestelmä on käyttöönoton valinta jälleenmyyjille. Sen avulla v
 - Myymälän Retail Serverillä on suora yhteys pääkonttorin Application Object Serveriin (AOS) myymäläjärjestelmää varten.
 - Tukee päätteiden välistä yhteysskenaarioita, jos yhteyttä pääkonttoriin ei ole.
 - Retail Modern POS- ja Cloud POS-sovelluksella on jatkuva yhteys myymälän Retail Serveriin.
-- Tukee Retail Modern POS- ja Cloud POS -sovellusta, jos yhteyttä pääkonttoriin ei ole.
-- Tukee Retail Modern POS -sovelluksen omaa offline-tietokantaa (joka on eristetty jokaisesta Retail Modern POS -instanssista), jos yhteyttä pääkonttoriin ei ole.
+- Tukee Retail Modern POS- ja Cloud POS -sovellusta, jos HQ-yhteyttä ei ole.
+- Tukee Retail Modern POS -sovelluksen omaa offline-tietokantaa (joka on eristetty jokaisesta Retail Modern POS -esiintymästä), jos HQ-yhteyttä ei ole.
 - Todennus perustuu palvelulta palvelulle -todennukseen ainoastaan myymäläjärjestelmässä.
 - Reaaliaikaisia huoltokutsuja ei tueta, jos Internet-yhteyttä ei ole.
 - Retail Modern POS -sovelluksen suoraa tietokantayhteyttä kanavatietokantaan ei tueta.
@@ -793,15 +792,15 @@ Myymäläjärjestelmä on käyttöönoton valinta jälleenmyyjille. Sen avulla v
 
 | Mitä voit tehdä | Miksi tämä on tärkeää |
 |-----------------|-----------------------|
-| Jälleenmyyjä lataa myymäläjärjestelmän omatoimisen asennusohjelman kanavatietokantasivulta Dynamics AX -pääkonttorista ja lataa määritystiedoston. | Jälleenmyyjä voi ladata omatoimisen ohjelmistopaketin sujuvasti. |
+| Jälleenmyyjä lataa myymäläjärjestelmän omatoimisen asennusohjelman kanavatietokantasivulta Dynamics AX HQ:sta ja lataa määritystiedoston. | Jälleenmyyjä voi ladata omatoimisen ohjelmistopaketin sujuvasti. |
 | Jälleenmyyjä asentaa myymäläjärjestelmän omatoimisen asennusohjelman avulla. | Jälleenmyyjä voi asentaa myymäläjärjestelmän omatoimisen ohjelmistopaketin avulla. |
-| IT-päällikkö määrittää myymäläjärjestelmän Dynamics 365 for Operations -järjestelmään (kanavatietokanta, kanavaprofiili, myymälä ja käyttöönotettava paketti). | IT-päällikkö voi määrittää myymäläjärjestelmän helposti ja tehokkaasti. |
+| IT-päällikkö määrittää myymäläjärjestelmän Dynamics 365 for Operationsissa (kanavatietokanta, kanavaprofiili, myymälä ja käyttöönotettava paketti). | IT-päällikkö voi määrittää myymäläjärjestelmän helposti ja tehokkaasti. |
 | Jälleenmyyjä käyttää Retail Modern POS -sovellusta paikallisessa myymälässä ja voi tehdä reaaliaikaista toimintoja, kuten kirjoittaa lahjakortteja, kun yhteys on käytettävissä. | Jälleenmyyjä voi suorittaa reaaliaikaisia toimenpiteitä myymäläjärjestelmästä, kun yhteys on käytettävissä. |
 | Jälleenmyyjä voi synkronoida tietoja paikallisesta myymäläjärjestelmästä pääkonttoriin, kun yhteys on käytettävissä. | Jälleenmyyjä voi synkronoida toimenpiteitä myymäläjärjestelmästä/-järjestelmään, kun yhteys on käytettävissä. |
 | Jälleenmyyjällä voi olla suojattu yhteys paikallisen myymäläjärjestelmän ja pääkonttorin välillä. | Jälleenmyyjä voi muodostaa suojatun yhteyden myymäläjärjestelmästä, kun yhteys on käytettävissä. |
 | IT-päällikkö ja Microsoft Operations voivat valvoa ja raportoida paikalliseen myymäläjärjestelmään (diagnostiikan ja raportoinnin muutoksia). | IT-päällikkö ja Microsoft Operations voi valvoa myymäläjärjestelmää turvallisesti ja määrittää viat tehokkaasti. |
 
-### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Universaalin Windows -ympäristön sovellukset Retail Modern POS -sovellukselle
+### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Retail Modern POS:n universaalin Windows-ympäristön sovellus
 
 Tällä hetkellä Retail Modern POS on käytettävissä vain Windows 8.1 -sovelluksena pöytätietokoneille ja tableteille sekä Cloud POS -pilvimyyntipisteversiona pöytätietokoneen tai tabletin selaimeen. Retail Moderns POS muunnetaan tässä tuotejulkaisussa Universal Windows Platform (UWP) -sovellukseksi. Muutoksen ansiosta Retail Modern POS toimii kaikissa Windows 10 -laitteissa (pöytätietokoneessa, tabletissa tai puhelimessa) ja voi vaihtaa näkymää Continuumia tukevien laitteiden kanssa.
 
@@ -819,7 +818,7 @@ Tällä hetkellä Retail Modern POS on käytettävissä vain Windows 8.1 -sovell
 | Toimittaja saa tiedon luovutetun varaston määrästä, joka siirretään asiakkaalle | Voidakseen laskuttaa asiakasta toimittaja tarvitsee tiedot raaka-aineista, jotka on ostettu luovutetusta varastosta, ja ostopäivämäärän. Toimittaja voi myös valvoa asiakkaan toimipaikalla käytettävissä olevaa varastoa toimittajayhteistyöliittymällä. |
 | Toimittajan omistaman varaston siirtäminen siirtokirjauskansion avulla | Jotta toimittajan omistamaa varastoa voidaan seurata, fyysinen sijainti järjestelmässä pitää pystyä kirjaamaan. Käyttämällä siirtokirjauskansiota voit tallentaa varaston fyysisen siirtämisen, kuten siirto varastopaikasta toiseen varastopaikkaan. |
 | Toimittajan omistaman varaston oikaisu siirtokirjauskansion avulla | On tärkeää pitää järjestelmän käytettävissä oleva varasto synkronoituna todellinen fyysisen varaston kanssa. Toimittajan omistama varasto voidaan oikaista käyttämällä inventointiprosesseja, kuten määrän muutos ja inventoinnin kirjauskansio. |
-| Lisätietoja Dynamics 365 for Operations -järjestelmän tavaralähetyksen tuesta | Lisätietoja tavaralähetysprosessien tuesta on kohdassa [Tavaralähetys](../../supply-chain/inventory/consignment.md), [Tavaralähetyksen määrittäminen](../../supply-chain/inventory/set-up-consignment.md), [Luo tavaralähetyksen täydennystilaus (tehtäväopas)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) ja [Tavaralähetysvaraston omistajuuden muuttaminen tuotannon kysynnän perusteella (tehtäväopas)](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Lisätietoja Dynamics 365 for Operationsin tavaralähetyksen tuesta | Lisätietoja tavaralähetysprosessien tuesta on kohdassa [Tavaralähetys](../../supply-chain/inventory/consignment.md), [Tavaralähetyksen määrittäminen](../../supply-chain/inventory/set-up-consignment.md), [Luo tavaralähetyksen täydennystilaus (tehtäväopas)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) ja [Tavaralähetysvaraston omistajuuden muuttaminen tuotannon kysynnän perusteella (tehtäväopas)](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Toimittajayhteistyö (aiemmin Toimittajaportaali)
 
@@ -828,8 +827,8 @@ Tällä hetkellä Retail Modern POS on käytettävissä vain Windows 8.1 -sovell
 | Toimittajat voivat vastata kullekin ostotilausriville ja ehdottaa muutoksia. | Joissakin tapauksissa toimittajat haluavat hyväksyä joitakin ostotilausrivejä mutta hylätä joitakin niistä. Toimittajat voivat nyt hallita ostotilausrivejä yksitellen. Kunkin rivi voi olla hylätty, hyväksytty tai hyväksytty muutosten kera. Esimerkiksi toimittaja voi muuttaa toimituspäivämäärä, jakaa toimituksen ja määrän tai ehdottaa vaihtoehtoista nimikettä. |
 | Toimittajat voivat ylläpitää yhteyshenkilöiden tietoja. | Toimittajat voivat ylläpitää oman yrityksen yhteystietoja. Näitä tietoja ovat nimet, sähköpostiosoitteet ja puhelinnumerot. Tämän toiminnon käyttöoikeus myönnetään tarkoituksenmukaisen käyttöoikeusroolin kautta. |
 | Voit jakaa toimittajien kanssa asiakirjat, jotka liittyvät ostotilauksiin. | Kun asiakirja on jaettava toimittajan kanssa, kuten vaatimuksia koskeva asiakirja, on kätevää linkittää asiakirja ostotilaukseen. Toimittajan voi jakaa huomautukset ja liitteet asiakkaan kanssa linkittämällä asiakirjan hänen ostotilaukseen tekemään vastaukseen. Tiedostonhallinta on pohjana oleva tukirakenne, ja toimittajien kanssa voidaan jakaa vain ulkoisiksi luokitellut huomautukset ja liitteet. |
-| Käyttöoikeuksien antaminen uusille toimittajakäyttäjille | Jos toimittaja käyttää toimittajayhteistyöliittymää, heillä on käytössään yhtenäinen uusien käyttäjätilien pyyntötapa, kun uudet yhteyshenkilöt edellyttävät toimittajayhteistyön käyttöoikeuksia. Hankintojen asiantuntijat voivat lähettää yhteyshenkilön käyttäjätilipyynnön toimittajan organisaatiolle. Toimittajan yhteyshenkilö, joka on jo toimittajayhteistyön käyttäjä, voi myös lähettää tämäntyyppisen pyynnön. Pyyntö luo lopulta Dynamics 365 for Operations -järjestelmään uuden käyttäjän, jolla on toimittajakohtaiset käyttöoikeusroolit. Se mahdollistaa myös pyynnön Microsoft Azure B2B -yritysportaalille valmistella käyttäjälle uusi Azure Active Directory (Azure AD) -käyttäjätili. Toimittajat voivat myös pyytää tiettyä toimittajan käyttäjätilien poistoa käytöstä tai suojausroolien muokkaamista. |
-| Lisätietoja Dynamics 365 for Operations -järjestelmän toimittajayhteistyön tuesta | Lisätietoja toimittajayhteistyöstä on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md), [Toimittajayhteistyö asiakkaiden kanssa](../../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md), [Toimittajayhteistyön käyttäjien hallinta](../../supply-chain/procurement/manage-vendor-collaboration-users.md), [Määritä ja ylläpidä toimittajayhteistyötä](../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) ja [ Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). |
+| Käyttöoikeuksien antaminen uusille toimittajakäyttäjille | Jos toimittaja käyttää toimittajayhteistyöliittymää, heillä on käytössään yhtenäinen uusien käyttäjätilien pyyntötapa, kun uudet yhteyshenkilöt edellyttävät toimittajayhteistyön käyttöoikeuksia. Hankintojen asiantuntijat voivat lähettää yhteyshenkilön käyttäjätilipyynnön toimittajan organisaatiolle. Toimittajan yhteyshenkilö, joka on jo toimittajayhteistyön käyttäjä, voi myös lähettää tämäntyyppisen pyynnön. Pyyntö luo lopulta Dynamics 365 for Operationsiin uuden käyttäjän, jolla on toimittajakohtaiset käyttöoikeusroolit. Se mahdollistaa myös pyynnön Microsoft Azure B2B -yritysportaalille valmistella käyttäjälle uusi Azure Active Directory (Azure AD) -käyttäjätili. Toimittajat voivat myös pyytää tiettyä toimittajan käyttäjätilien poistoa käytöstä tai suojausroolien muokkaamista. |
+| Lisätietoja Dynamics 365 for Operationsin toimittajayhteistyön tuesta. | Lisätietoja toimittajayhteistyöstä on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md), [Toimittajayhteistyö asiakkaiden kanssa](../../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md), [Toimittajayhteistyön käyttäjien hallinta](../../supply-chain/procurement/manage-vendor-collaboration-users.md), [Määritä ja ylläpidä toimittajayhteistyötä](../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) ja [ Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). |
 
 ### <a name="intercompany-order-processing"></a>Konsernin sisäisten tilausten käsittely
 
@@ -884,9 +883,9 @@ Tällä hetkellä Retail Modern POS on käytettävissä vain Windows 8.1 -sovell
 
 | Mitä voit tehdä | Miksi tämä on tärkeää |
 |-----------------|-----------------------|
-| Eri konttityyppien mallit | Voit haluta käyttää eri konttityyppejä varaston optimointiin ja muihin tarkoituksiin. Uudella konttityyppillä on kontin tyyppien fyysiset ominaisuudet. Voit liittää varstorekisterinumeroihin tietyn konttityyppin ja käyttää sijainnin varastointirajaa. Esimerkiksi tämän toiminnon avulla voit määrittää sallitun kuormalavojen määrän (tai muun konttityyppin) tietyssä sijainnissa. Kontin tyypit on myös lisätty yksikön sarjaryhmiin, jotta kontin oletustyypit voidaan lisätä vastaanottoprosessiin. Konttityyppiä voidaan käyttää saapuvien ja lähtevien sijaintidirektiivien yhteydessä. Niitä voidaan myös käytää käytettävissä olevan varaston näkymässä, jotta voit määrittää, kuinka monta konttityyppiä on tällä hetkellä tallenettuna. Lisätietoja on blogikirjoituksessa [Varastonhallintaprosessien edistäminen käyttämällä konttityyppiin liitettyjä varastorekisterinumeroita](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/20/use-of-license-plates-associated-with-a-container-type-to-drive-warehouse-management-processes/). Blogikirjoituksessa kuvataan Microsoft Dynamics AX 2012:en päivitystä, mutta sama tuki on nyt lisätty Dynamics 365 for Operations -järjestelmään. |
-| Käännettävät lähetykset | Varastossa pitää ollaa valmius käsitellä muutoksia myöhässä. Esimerkiksi jotkut tuotteet voivat olla vahingoittuneet eikä niitä voi toimittaa. Asiakas voi myös esittää myöhäisen tilauksen peruutus- tai muutospyynnön. Dynamics 365 for Operations -järjestelmän avulla voit nyt palauttaa lähetyksen. Tämän vuoksi voit peruuttaa pakkausluettelon, niin että voit päivittää siihen oikeat määrät myöhemmin. Vastaavasti saapuvasta tuotevirrasta voit peruuttaa tuotteen vastaanotot siten, että voidaan luoda päivitetyt versiot. |
-| Yhdistetyillä nimikkeillä täytettyjen kuormalavojen käyttö | Voit nyt vastaanottaa ja rekisteröidä yhdistettyjen nimikkeiden kuormalavan. Yhdistetyllä kuormalavalla on eri nimikkeitä, joka on koottu yhdestä tai useasta ostotilauksesta tai -riveiltä samalle kuormalavalle. Kaikki rekisteröinnit voidaan koota samaan kohdevarastorekisterinumeroon. Tämä prosessi on käytössä kaikkialla varaston mobiililaitteissa. Esimerkiksi yhdistetty kuormalava saapuu varastoon, vastaanottoassistentti tunnistaa nimikkeet ja määrät ennen kuormalavalla ennen sen siirtoa määrättyyn sijaintiin. Sijoitussijainnit tunnistetaan työmalleista tai sijaintidirektiiveistä. Jos sijoitussijainnit jakautuvat useille nimikkeille, joilla on kiinteät sijainnit, tämä toiminto luo yhtä monta työriviä kuin yhdistetyssä kuormalavassa on on eri nimikkeitä. Tämän ominaisuuden avulla rekisteröinti ja vastaanotettujen yhdistettyjen kuormalavojen sijoittaminen on nopeampaa ja joustavampaa. Lisätietoja on blogikirjoituksessa [Vastaanota ja rekisteröi kuormalava, jossa on yhdistettyjä lähdeasiakirjarivejä, käyttämällä yhtä varastorekisterinumeroa](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/13/receive-and-register-a-pallet-with-mixed-source-document-lines-using-1-license-plate-purchase-order-matching/) ja yhdistetyn kuormalavan tuen tietoja kohdassa [Uusimpien kumulatiivisen päivitysten ilmoittaminen](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/30/whats-new-in-cu11-for-wms-and-tms/). Blogikirjoituksessa kuvataan Microsoft Dynamics AX 2012:en päivitystä, mutta sama tuki on nyt lisätty Dynamics 365 for Operations -järjestelmään. |
+| Eri konttityyppien mallit | Voit haluta käyttää eri konttityyppejä varaston optimointiin ja muihin tarkoituksiin. Uudella konttityyppillä on kontin tyyppien fyysiset ominaisuudet. Voit liittää varstorekisterinumeroihin tietyn konttityyppin ja käyttää sijainnin varastointirajaa. Esimerkiksi tämän toiminnon avulla voit määrittää sallitun kuormalavojen määrän (tai muun konttityyppin) tietyssä sijainnissa. Kontin tyypit on myös lisätty yksikön sarjaryhmiin, jotta kontin oletustyypit voidaan lisätä vastaanottoprosessiin. Konttityyppiä voidaan käyttää saapuvien ja lähtevien sijaintidirektiivien yhteydessä. Niitä voidaan myös käytää käytettävissä olevan varaston näkymässä, jotta voit määrittää, kuinka monta konttityyppiä on tällä hetkellä tallenettuna. Lisätietoja on blogikirjoituksessa [Varastonhallintaprosessien edistäminen käyttämällä konttityyppiin liitettyjä varastorekisterinumeroita](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/20/use-of-license-plates-associated-with-a-container-type-to-drive-warehouse-management-processes/). Blogikirjoituksessa kuvataan päivitystä Microsoft Dynamics AX 2012:een, mutta sama tuki on nyt lisätty Dynamics 365 for Operationsiin. |
+| Käännettävät lähetykset | Varastossa pitää ollaa valmius käsitellä muutoksia myöhässä. Esimerkiksi jotkut tuotteet voivat olla vahingoittuneet eikä niitä voi toimittaa. Asiakas voi myös esittää myöhäisen tilauksen peruutus- tai muutospyynnön. Voit nyt palauttaa lähetyksen Dynamics 365 for Operationsin avulla. Tämän vuoksi voit peruuttaa pakkausluettelon, niin että voit päivittää siihen oikeat määrät myöhemmin. Vastaavasti saapuvasta tuotevirrasta voit peruuttaa tuotteen vastaanotot siten, että voidaan luoda päivitetyt versiot. |
+| Yhdistetyillä nimikkeillä täytettyjen kuormalavojen käyttö | Voit nyt vastaanottaa ja rekisteröidä yhdistettyjen nimikkeiden kuormalavan. Yhdistetyllä kuormalavalla on eri nimikkeitä, joka on koottu yhdestä tai useasta ostotilauksesta tai -riveiltä samalle kuormalavalle. Kaikki rekisteröinnit voidaan koota samaan kohdevarastorekisterinumeroon. Tämä prosessi on käytössä kaikkialla varaston mobiililaitteissa. Esimerkiksi yhdistetty kuormalava saapuu varastoon, vastaanottoassistentti tunnistaa nimikkeet ja määrät ennen kuormalavalla ennen sen siirtoa määrättyyn sijaintiin. Sijoitussijainnit tunnistetaan työmalleista tai sijaintidirektiiveistä. Jos sijoitussijainnit jakautuvat useille nimikkeille, joilla on kiinteät sijainnit, tämä toiminto luo yhtä monta työriviä kuin yhdistetyssä kuormalavassa on on eri nimikkeitä. Tämän ominaisuuden avulla rekisteröinti ja vastaanotettujen yhdistettyjen kuormalavojen sijoittaminen on nopeampaa ja joustavampaa. Lisätietoja on blogikirjoituksessa [Vastaanota ja rekisteröi kuormalava, jossa on yhdistettyjä lähdeasiakirjarivejä, käyttämällä yhtä varastorekisterinumeroa](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/13/receive-and-register-a-pallet-with-mixed-source-document-lines-using-1-license-plate-purchase-order-matching/) ja yhdistetyn kuormalavan tuen tietoja kohdassa [Uusimpien kumulatiivisen päivitysten ilmoittaminen](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/30/whats-new-in-cu11-for-wms-and-tms/). Blogikirjoituksessa kuvataan päivitystä AX 2012:een, mutta sama tuki on nyt lisätty Dynamics 365 for Operationsiin. |
 
 ### <a name="minor-feature-enhancements-in-supply-chain-management"></a>Pienemmät toimintojen parannukset toimitusketjun hallinnassa
 
@@ -946,4 +945,3 @@ Tällä hetkellä Retail Modern POS on käytettävissä vain Windows 8.1 -sovell
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md)
-

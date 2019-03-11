@@ -1,13 +1,13 @@
---- 
+---
 title: Luo tuotantovirran versio
-description: "Tässä menettelyssä selvitetään uuden tuotantovirtaversion luomista."
+description: Tässä menettelyssä selvitetään uuden tuotantovirtaversion luomista.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9a76e5bb6f63f793e4644c2ccf70cef21785ff10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8903e618a35e66742b5c2ebcb5b6f0da3853fcaf
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320670"
 ---
 # <a name="create-a-production-flow-version"></a>Luo tuotantovirran versio
 
@@ -63,5 +63,4 @@ Tässä menettelyssä selvitetään uuden tuotantovirtaversion luomista. Tässä
 12. Lisää Toteutunut syklin kesto (päivinä) -kenttään luku.
     * Anna toteutuneen syklin keston päivien määrä. Toteutunut syklin kesto on se määrä päiviä, jolloin töitä koostetaan toteutuneesta ajasta taaksepäin, jotta toteutunut syklin kesto voidaan laskea. Arvoa voidaan muuttaa koska tahansa ja sitä käytetään vain toteutuneiden syklien keston laskentaan.  
 13. Valitse Tallenna.
-
 

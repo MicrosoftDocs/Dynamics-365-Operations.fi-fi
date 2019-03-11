@@ -1,13 +1,13 @@
---- 
-title: "Aallon käsittelyn kokoonpano"
-description: "Tässä ohjeessa kuvataan ehdot, jotka määrittävät kuinka aallon käsittelyn yhteydessä varastolle luotu työ käsitellään, ja käsitelläänkö aallot manuaalisesti vai automaattisesti."
+---
+title: Aallon käsittelyn kokoonpano
+description: Tässä ohjeessa kuvataan ehdot, jotka määrittävät kuinka aallon käsittelyn yhteydessä varastolle luotu työ käsitellään, ja käsitelläänkö aallot manuaalisesti vai automaattisesti.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 399146d35388a0151abb23e57bc36ec0173be928
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f7a6db585468c235e07c4a0117a83995ec93f4b0
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337506"
 ---
 # <a name="configure-wave-processing"></a>Aallon käsittelyn kokoonpano
 
@@ -68,5 +68,4 @@ Tässä ohjeessa kuvataan ehdot, jotka määrittävät kuinka aallon käsittelyn
 24. Valitse vaihtoehto Vapauta varastoon -kentässä.
     * Myynti- ja kanbantilauksille inventaario tulee varata ennen kuin tilaus viedään varastolle. Muussa tapauksessa tietyn kohdistuksen rivejä ei voi käsitellä aallossa. Tuotantotilauksille on myös mahdollista valita osittaisen varaamisen salliminen. Tämä on hyödyllistä esimerkiksi silloin, kun sinulla on tuotannon käynnistämiseen tarvittavat materiaalit ja voit odottaa, kunnes muut materiaalit ovat käytettävissä saattaaksesi prosessin loppuun. Jos valitset tämän vaihtoehdon, pitää vapautus varastoprosessiin toistaa manuaalisesti, kun muut materiaalit tulevat käyttöön.  
 25. Sulje sivu.
-
 

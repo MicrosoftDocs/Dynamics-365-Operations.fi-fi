@@ -1,13 +1,13 @@
 ---
 title: Maksuliikenteen kotisivu
-description: "Voit käyttää maksuliikenteen hallintaa yrityksen pankkitilien ja kyseisiin pankkitileihin liittyvien rahoitusinstrumenttien ylläpitoon."
+description: Voit käyttää maksuliikenteen hallintaa yrityksen pankkitilien ja kyseisiin pankkitileihin liittyvien rahoitusinstrumenttien ylläpitoon.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 944030859c26a1aadeb98a070d071e30f8b86dc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 46eeb9cb19eed71256d38db78738c09761060c66
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302241"
 ---
-
 # <a name="cash-and-bank-management-home-page"></a>Maksuliikenteen kotisivu
 
 [!include [banner](../includes/banner.md)]
@@ -87,11 +86,11 @@ Näitä instrumentteja ovat esimerkiksi talletuskuitit, sekit, vekselit ja velka
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-[Microsoft Dynamics 365 -ohjesivustolla](https://roadmap.dynamics.com/) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
+[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustolla on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) on maksuliikenteen hallintaa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
+[Microsoft Dynamics 365 -blogissa] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) on maksuliikenteen hallintaa sekä muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics AX -tuoteryhmän blogissa](https://blogs.msdn.microsoft.com/dax/) on useita maksuliikenteen hallintaa käsitteleviä kirjoituksia. Vaikka monet kirjoitukset koskevat maksuliikenteen hallinnan edellistä versiota, samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia myös nykyisessä versiossa.
 
@@ -102,5 +101,4 @@ Finance and Operationsin tehtäväoppaissa on lisäohjeita. Voit avata tehtävä
 
 #### <a name="videos"></a>Videot
 
-Tutustu [Microsoft Dynamics 365:n YouTube-kanavan] (https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
-
+Tutustu [Microsoft Dynamics 365 YouTube -kanavan] (https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.

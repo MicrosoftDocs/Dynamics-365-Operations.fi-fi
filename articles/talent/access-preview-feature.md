@@ -1,14 +1,14 @@
 ---
-title: "Esiversio-ominaisuuksien käyttö Talentissa"
-description: "Tässä aiheessa kuvataan, kuinka järjestelmänvalvoja voi ottaa käyttöön esiversio-ominaisuudet. Siinä listataan myös ominaisuudet, jotka ovat tällä hetkellä käytössä esikatselua varten."
+title: Esiversio-ominaisuuksien käyttö Talentissa
+description: Tässä aiheessa kuvataan, kuinka järjestelmänvalvoja voi ottaa käyttöön esiversio-ominaisuudet. Siinä listataan myös ominaisuudet, jotka ovat tällä hetkellä käytössä esikatselua varten.
 author: rschloma
 manager: AnnBe
 ms.date: 04/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304193"
 ---
-
 # <a name="access-preview-features-in-talent"></a>Esiversio-ominaisuuksien käyttö Talentissa
 
 [!include[banner](../includes/banner.md)]
@@ -43,9 +42,9 @@ Voit käyttää Microsoft Dynamics 365 for Talentin hallintakeskuksen **Esiversi
 
 ### <a name="enable-or-disable-preview-features-for-your-organization"></a>Esiversio-ominaisuuksien ottaminen käyttöön tai poistaminen käytöstä organisaatiossasi
 
-#### <a name="attract"></a>Attract
+#### <a name="attract"></a>Kerätä
 
-1. Kirjaudu sisään Microsoft Dynamics 365 for Talent: Attract -ohjelmaan.
+1. Kirjaudu Microsoft Dynamics 365 for Talent: Attractiin.
 2. Valitse **Asetukset**-valikossa (hammasrataskuvake) oikeassa alakulmassa **Järjestelmänvalvojan asetukset**.
 3. Valitse **Ominaisuuksien hallinta** -välilehdestä kohdan **Esiversio-ominaisuudet** vieressä oleva vaihtoehto siten, että muuttuu siniseksi.
 4. Vaihtoehtoisesti voit hallita yksittäisiä ominaisuuksia ottamalla kyseiset ominaisuudet käyttöön tai poistamalla ne käytöstä tällä sivulla.
@@ -92,4 +91,3 @@ Riippumatta siitä, onko palaute positiivinen vai negatiivinen, haluamme kuulla 
 
 > [!TIP]
 > Lisää kirjanmerkki tähän aiheeseen ja käy säännöllisesti katsomassa tietoa uusista julkaistuista esiversio-ominaisuuksista.
-

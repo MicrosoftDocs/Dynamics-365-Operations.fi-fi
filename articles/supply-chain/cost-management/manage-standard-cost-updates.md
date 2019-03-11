@@ -1,13 +1,13 @@
 ---
-title: "Vakiokustannuspäivitysten hallinta"
-description: "Vakiokustannustietojen päivityksiä voi hallita kahdella eri tavalla, joita ovat yhden tai kahden version menetelmä."
+title: Vakiokustannuspäivitysten hallinta
+description: Vakiokustannustietojen päivityksiä voi hallita kahdella eri tavalla, joita ovat yhden tai kahden version menetelmä.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e72d4e90ac83787ed7c58d91c2102696acfac68
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b64d9e53736fd3b81ee997ed28ccfa62ed7e9ce6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367544"
 ---
-
 # <a name="manage-standard-cost-updates"></a>Vakiokustannuspäivitysten hallinta
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,6 @@ Seuraavassa esimerkissä kuvataan, miten yhden version ja kahden version menette
 -   **Kahden version malli kustannustietojen päivityksessä** − Kahden version mallissa edellytetään toista kustannuslaskelmaversiota, joka sisältää ainoastaan kustannuspäivitykset. Tämän version tunnus on 2016-STD-CHANGES. Kustannuspäivitykset kirjataan 2016-STD-CHANGES-versioon ja niiden tilaksi määritetään Odottaa. Kun käytössä on kaksi versiota, valmistettujen nimikkeiden odottavien kustannusten tuoterakennelaskelmat vaativat varmistustietojen lähteen. Tämä johtuu siitä, että kustannuslaskelmien lisäversio 2016-STD-CHANGES sisältää vain osan kustannustiedoista. Varmistuksen voi esittää aktiivisna kustannuksina tai kustannuslaskennan versiona 2016-STD, koska molemmissa tunnistetaan kustannustietojen lähde silloin, kun se ei sisälly 2016-STD-CHANGES -versioon. Kun odottavat kustannukset ovat käytössä, kustannuslaskennan versio 2016-STD-CHANGES sisältää nykyiset aktiiviset kustannukset, jotka vastaavat päivityksiä; alkuperäinen kustannuslaskelmaversio 2016-STD pysyy koskemattomana. Kun käytössä on kahden version malli, alkuperäisen kustannuslaskelmaversion estomenettelyt on määritettävä estämään päivitykset. Samat estomenettelyt tulisi määrittää toiselle kustannuslaskelmaversiolle, lukuun ottamatta valikoitua alkamispäivämäärää ja valikoitua estokäytäntöjä, joilla määritellään sallitut päivitykset. Määritetty alkamispäivämäärä tulisi päivittää jokaisen muutoserän yhteydessä vastaamaan ajoitettua aktivointipäivämäärää.
 
 Tässä esimerkissä käytettiin vielä yhtä kustannuslaskelmaversiota koko vuoden 2016 päivitysten hallintaan. Lisäkustannuslaskelmaversioita voi käyttää useita; esimerkiksi jokaisella päivityserällä voi olla oma, erillinen versionsa. Kun käytössä on useampia kustannuslaskentoja, varmistus on ilmaistava aktiivisina kustannuksina, koska ne jakautuvat useille kustannuslaskentaversioille.
-
 
 
 

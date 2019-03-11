@@ -1,32 +1,31 @@
 ---
 title: Tuotetunnukset
-description: "Tässä ohjeaiheessa on tietoja erityyppisistä tuotetunnisteista ja selitetään tuotetunnisteiden lisäämiseen tuotetietoihin."
+description: Tässä ohjeaiheessa on tietoja erityyppisistä tuotetunnisteista ja selitetään tuotetunnisteiden lisäämiseen tuotetietoihin.
 author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: afd542a652abdf6e45c83a6097dc8f0d36efa905
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/23/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335413"
 ---
-
 # <a name="product-identifiers"></a>Tuotetunnukset 
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Kun käsittelet tuotteita Microsoft Dynamics ERP:n tai Microsoft Dynamics CRM:n 
 
 ## <a name="unique-product-numberproduct-id"></a>Yksilöivä tuotenumero tai tuotetunnus
 
-Microsoft Dynamics 365 for Finance and Operations -sovelluksessa tuotteen ensisijainen tunniste on tuotenumero (joka on sama kuin yksilöivä tuotetunnus). Numerosarja voi muodostaa numeron automaattisesti tai se voidaan liittää tuotteeseen manuaalisesti. Tuotevarianttien numerot voidaan määrittää tuotenimikkeistömallin kautta.
+Microsoft Dynamics 365 for Finance and Operationsissa tuotteen ensisijainen tunniste on tuotenumero (joka on sama kuin yksilöivä tuotetunnus). Numerosarja voi muodostaa numeron automaattisesti tai se voidaan liittää tuotteeseen manuaalisesti. Tuotevarianttien numerot voidaan määrittää tuotenimikkeistömallin kautta.
 
 Tuotenumeroa ei usein ole luotu alun perin Finance and Operations -sovelluksessa. Sen sijaan se liitetään tuotteen elinkaaren hallinta (PLM)- tai tuotteen tiedonhallinta (PDM) -järjestelmään. Tässä tapauksessa tietoyksiköitä käytetään tuotteiden ja tuotevarianttien tuonnissa. Finance and Operations käyttää tämän jälkeen numeroita kaikissa toiminnoissa.
 
@@ -186,4 +185,3 @@ Voit nyt käyttää **Tuoteyksikön Common Data Service -tunnisteen yksikkö**-,
 ## <a name="related-topic"></a>Liittyvä aihe
 
 [Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana](search-products-product-variants.md)
-

@@ -1,39 +1,38 @@
 ---
-title: "Tehtäväoppaiden tallentaminen LCS-palveluun ja niiden toistaminen"
-description: "Tässä ohjeaiheessa kerrotaan, miten tehtäväoppaat tallennetaan Microsoft Dynamics Lifecycle Servicesin (LCS) ja miten niitä toistetaan."
+title: Tehtäväoppaiden tallentaminen LCS:ään sekä niiden toistaminen
+description: Tässä ohjeaiheessa kerrotaan, miten tehtäväoppaat tallennetaan Microsoft Dynamics Lifecycle Servicesiin (LCS) ja miten niitä toistetaan.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 40b4c3154a04a557b8a670e1f1ae3722c71122fe
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304228"
 ---
-
-# <a name="save-task-guides-to-lcs-and-replay-them"></a>Tehtäväoppaiden tallentaminen LCS-palveluun ja niiden toistaminen
+# <a name="save-task-guides-to-lcs-and-replay-them"></a>Tehtäväoppaiden tallentaminen LCS:ään sekä niiden toistaminen
 
 [!include [banner](includes/banner.md)]
 
 **Ympäristön tiedot** 
 
-Microsoft Dynamics 365 for Talent, joka on otettu käyttöön Microsoft Dynamics Lifecycle Servicesin kautta (LCS)
+Microsoft Dynamics 365 for Talent, joka oli otettu käyttöön Microsoft Dynamics Lifecycle Servicesin kanssa (LCS)
 
-**Ongelma**
+**Varasto-otto**
 
 Asiakas haluaa tallentaa uudet tehtävätallenteet LCS-projektiin ja sitten toistaa tallennettuja tehtäväoppaita.
 
@@ -66,4 +65,3 @@ Toista tehtäväopas LCS-palvelusta seuraavien ohjeiden mukaisesti.
 2. Valitse **Avaa LCS-palvelusta**.
 3. Valitse kirjasto ja BPM-solmu, jossa tallennettu tehtäväopas on.
 4. Avaa tehtäväopas.
-

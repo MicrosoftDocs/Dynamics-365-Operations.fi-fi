@@ -1,13 +1,13 @@
---- 
-title: "Sovellustietoja sisältävien asiakirjojen luominen muokkaamalla muotoa"
-description: "Voit suorittaa tämän menettelyn vaiheet sen jälkeen, kun ER Asiakirjojen luominen sovellustietojen päivityksen kanssa (Osa 3 – mallin ja yhdistämismäärityksen muokkaaminen) -menettely on suoritettu."
+---
+title: Sovellustietoja sisältävien asiakirjojen luominen muokkaamalla muotoa
+description: Voit suorittaa tämän menettelyn vaiheet sen jälkeen, kun ER Asiakirjojen luominen sovellustietojen päivityksen kanssa (Osa 3 – mallin ja yhdistämismäärityksen muokkaaminen) -menettely on suoritettu.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a095d0326835b0ae7322d5d58307216ee828649e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359517"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Sovellustietoja sisältävien asiakirjojen luominen muokkaamalla muotoa
 
@@ -149,5 +149,4 @@ Tämän menettelyn vaiheissa opastetaan, miten sähköisen raportoinnin (ER) kon
 46. Sulje sivu.
 47. Sulje sivu.
 48. Sulje sivu.
-
 

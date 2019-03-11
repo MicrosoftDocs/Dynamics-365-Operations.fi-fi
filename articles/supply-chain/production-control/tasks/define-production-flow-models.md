@@ -1,13 +1,13 @@
---- 
-title: "Määritä tuotantovirtamallit"
-description: "Tuotantovirran malleissa käsitellään, miten Lean-valmistuksen työsolujen kapasiteetti lasketaan ja miten sitä ylläpidetään."
+---
+title: Määritä tuotantovirtamallit
+description: Tuotantovirran malleissa käsitellään, miten Lean-valmistuksen työsolujen kapasiteetti lasketaan ja miten sitä ylläpidetään.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e410928bc850e1f3427c9536e9943d1196be7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7850a121ca06f25f6c532e49e18c0b6811bd7455
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336724"
 ---
 # <a name="define-production-flow-models"></a>Määritä tuotantovirtamallit
 
@@ -45,5 +45,4 @@ Tuotantovirran malleissa käsitellään, miten Lean-valmistuksen työsolujen kap
     * Suunnittelun aikaraja määrittää, kuinka monen päivän kapasiteetin varauksia liittyvissä työsoluissa voidaan tehdä. Anna Suunnittelun aikarajat -kohdassa päivien määrä.   Tämän kauden ulkopuolisia kanban-prosessitöitä ei suunnitella automaattisella suunnitelulla. Suunnittelun aikaraja on yleensä kaksinkertainen tuotantovirrassa tai työsolussa tuotettujen töiden keskimääräiseen varaston läpimenoaikaan verrattuna. EPE-sykli saa olla enintään puolet suunnittelun aikarajasta.     
 8. Valitse Kapasiteetin puutteen aiheuttama reaktio -kentässä vaihtoehto.
     * Vaihtoehdot: Lykkää – koko ajoitustapahtuman kysyntä lykätään seuraavaan käytettävissä olevaan päivään, jossa on tuotantokapasiteettia. Peruuta – ajoitustapahtuman automaattinen suunnittelu lopetetaan eikä liittyviä töitä suunnitella.   Lisää pyydettyyn päivämäärään – Pyydetyn kauden pyydetyt työt suunnitellaan. Kyseisen päivän solu ylikuormittuu ja edellyttää, että suunnittelija tarkistaa ja tee manuaalisia toimintoja.   Jaa käytettävissä oleville kausille – Ajoitustapahtuman eri työt jaetaan kaikille käytettävissä oleville tuotantopäiville alkaen ensimmäisestä käytettävissä olevasta päivästä. Kanban-työn määrä on pienin jaettava määrä. Jakelu määrittää vähimmäissuunnittelumäärän (kanban-määrän) jokaiselle päivälle, jossa on riittävästi vapaata tuotantokapasiteettia.  
-
 

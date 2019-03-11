@@ -1,13 +1,13 @@
 ---
-title: "Reititykset ja työvaiheet"
-description: "Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista."
+title: Reititykset ja työvaiheet
+description: Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista.
 author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable
 ms.author: sorenand
 audience: Application User
@@ -19,14 +19,13 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 417fd960a43ad3fd023ea0c4a17be735b69743de
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 95e7f5179ac88c0cd6b2336a914c2c527d37d57f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333343"
 ---
-
 # <a name="routes-and-operations"></a>Reitit ja työvaiheet
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista. Reitit
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaiheiden järjestyksen. Reititys määrittää myös jokaisen työvaiheen vaaditut operatiiviset resurssit, työvaiheen asetukseen ja ajoon kuluvan ajan ja kustannusten laskentatavan. Samaa reititystä voi käyttää useiden tuotteiden tuotannossa. Kullekin tuotteelle tai tuotevariantille voi kuitenkin luoda myös yksilöllisen reitityksen. Tietyllä tuotteella voi myös olla useita reitityksiä. Tällöin käytettävä reititys vaihtelee usein sen mukaan, miten paljon tuotetta valmistetaan. Microsoft Dynamics 365 for Finance and Operations -ohjelman reitityksen määritys sisältää neljä seuraavaa erillistä elementtiä, jotka yhdessä muodostavat tuotantoprosessin:
+Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaiheiden järjestyksen. Reititys määrittää myös jokaisen työvaiheen vaaditut operatiiviset resurssit, työvaiheen asetukseen ja ajoon kuluvan ajan ja kustannusten laskentatavan. Samaa reititystä voi käyttää useiden tuotteiden tuotannossa. Kullekin tuotteelle tai tuotevariantille voi kuitenkin luoda myös yksilöllisen reitityksen. Tietyllä tuotteella voi myös olla useita reitityksiä. Tällöin käytettävä reititys vaihtelee usein sen mukaan, miten paljon tuotetta valmistetaan. Microsoft Dynamics 365 for Finance and Operationsin reitityksen määritys sisältää neljä seuraavaa erillistä elementtiä, jotka yhdessä muodostavat tuotantoprosessin:
 
 -   **Reititys** – Reititys määrittää tuotantoprosessin rakenteen. Toisin sanoen se määrittää työvaiheiden järjestyksen.
 -   **Työvaihe** – Työvaihe tunnistaa reitissä nimetyn vaiheen, kuten **kokoonpanon**. Sama työvaihe voi esiintyä useissa reitityksissä ja sillä voi olla useita työvaihenumeroita.
@@ -240,7 +239,6 @@ Jos et määritä operatiivista resurssia tai resurssiryhmää osaksi työvaihee
 [Resurssin ominaisuudet](resource-capabilities.md)
 
 [Sähköisten allekirjoitusten yleiskatsaus](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
-
 
 
 

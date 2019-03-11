@@ -1,13 +1,13 @@
 ---
-title: "Työntekijän kehityksen Power BI -sisältö"
-description: "Tässä ohjeaiheessa käsitellään työntekijän kehityksen Power BI -sisältöä"
+title: Työntekijöiden kehityksen Power BI -sisältö
+description: Tässä ohjeaiheessa käsitellään työntekijän kehityksen Power BI -sisältöä
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347166"
 ---
-
-# <a name="employee-development-power-bi-content"></a>Työntekijän kehityksen Power BI -sisältö
+# <a name="employee-development-power-bi-content"></a>Työntekijöiden kehityksen Power BI -sisältö
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään **työntekijän kehityksen** Microsoft Power BI -sisältöä
+Tässä ohjeaiheessa käsitellään **työntekijän kehityksen** Microsoft Power BI -sisältöä.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raportit, jotka sisältyvät Power BI -sisältöön
 **Työntekijän kehityksen** Power BI -sisältöön sisältyvissä raporteissa on sekä kaavioita että taulukoita, jotka sisältävät lisätietoja. Seuraavassa taulukossa kuvataan raportit.
@@ -42,7 +41,7 @@ Tässä ohjeaiheessa käsitellään **työntekijän kehityksen** Microsoft Power
 | Suorituskykyluokituksen analyysi   | Työntekijät alhaisimman ja korkeimman työkohtaisen luokituksen mukaan, työntekijäluokitukset osaston mukaan, työntekijät luokitus- ja toimityypin mukaan sekä korkein ja alhaisin luokitus toimen mukaan |
 | Työntekijän suorituskykyanalyysi | Valitun luokituksen työntekijäluokitukset esimiehen mukaan |
 
-Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI -ohjelmassa löydät artikkelista [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI:ssä on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
@@ -70,4 +69,3 @@ Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koonti
 | Työntekijän osaamisanalyysi  | Sertifioitu, taso, tason päivämäärä ja taito                                                                    | Työntekijän nimi, osaamisalue |
 | Suoritus              | Pisteytys, kuvaus arviointimalli                                                                      | Nykyisen työntekijä, nykyinen toimi, työntekijätrendi, työn ensisijainen osaamisalue, aiemmin määritetty toimi, toimitrendi, poistettu työntekijä |
 | Osaamisalue                    | Taito, osaamisalueen tyyppi ja luokitus                                                                              | Työntekijän osaamisanalyysi, työn ensisijainen osaamisalue |
-

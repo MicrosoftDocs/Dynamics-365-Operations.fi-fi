@@ -1,13 +1,13 @@
 ---
-title: "EU:n arvonlisäveron yhteenvetoilmoitus"
-description: "Tässä artikkelissa on tietoja Euroopan unionin (EU) arvonlisäveron yhteenvetoilmoituksesta."
+title: EU:n arvonlisäveron yhteenvetoilmoitus
+description: Tässä artikkelissa on tietoja Euroopan unionin (EU) arvonlisäveron yhteenvetoilmoituksesta.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2c4fe1c93693cee9164f2c22ad71a29abd6473d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e1eff86902170401e593019ea555d9c2a4c11c04
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370626"
 ---
-
 # <a name="eu-sales-list-reporting"></a>EU-myyntiluettelon raportointi
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,7 @@ Käyttämällä ESL:ää kunkin EU-jäsenvaltion veroviranomaiset voivat tarkist
 Voit suorittaa seuraavat tehtävät EU:n arvonlisäveron yhteenvetoilmoituksen antamisessa:
 
 -   Kerää tietoja EU:n sisäisistä myyntitapahtumista. EU:n sisäinen myyntitapahtuma voi olla myyntilasku, vapaatekstilasku, projektilasku tai toimittajan lasku. Tapahtuma tunnistetaan vastapuolen maan/alueen perusteella. Erilaiset EU:n sisäiset myyntitapahtumat kootaan EU:n arvonlisäveron yhteenvetoilmoitustaulukkoon, missä ne näkyvät yhteneväisessä muodossa. Jokainen tämän taulukon tietue edustaa yksittäistä tapahtumaa ja koostuu vastapuolen ALV-tunnisteesta ja toimitettujen tavaroiden ja palveluiden kokonaisarvosta.
--   (Valinnainen) Esikatsele **EU:n arvonlisäveron yhteenvetoilmoitus**. Voit esikatsella ja tarkastaa **EU:n arvonlisäveron yhteenvetoilmoituksen** annetulle kaudelle Microsoft Excel -työkirjan muodossa.
+-   (Valinnainen) Esikatsele **EU:n arvonlisäveron yhteenvetoilmoitus**. Voit esikatsella ja tarkastaa **EU:n arvonlisäveron yhteenvetoilmoituksen** annetulle kaudelle Microsoft Excelin työkirjana.
 -   Luo **EU:n arvonlisäveron yhteenvetoilmoitus**. **EU:n arvonlisäveron yhteenvetoilmoitus** luodaan tietyssä muodossa olevana sähköisenä tiedostona. Kullakin EU:n jäsenmaalla on oma raporttimuotonsa. Yleensä **EU:n arvonlisäveron yhteenvetoilmoitus** sisältää perustiedot ilmoittavasta osapuolesta sekä toimitettujen tavaroiden ja palveluiden arvot. Tämä tieto ryhmitellään maan ja vastapuolen ALV-tunnisteen perusteella.
 -   Sulje EU:n arvonlisäveron yhteenvetoilmoituskausi. Kun **EU:n arvonlisäveron yhteenvetoilmoitus** on luotu ja toimitettu viranomaisille, voit merkitä tietueet ESL-taulukossa merkinnällä **Suljettu**. Näitä tapahtumia ei enää oteta mukaan muihin raportteihin.
 
@@ -158,7 +157,6 @@ Voit luoda **EU:n arvonlisäveron yhteenvetoilmoituksen** käyttämällä **Rapo
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>EU:n arvonlisäveron yhteenvetoilmoituskauden sulkeminen
 
 Saatettuasi tietyn kauden raportointiprosessin päätökseen (esimerkiksi, kun veroviranomaiset ovat hyväksyneet **EU:n arvonlisäveron yhteenvetoilmoituksen**), voit merkitä raporttiin sisältyneet kauden ESL-tietueet asettamalla **Raportoinnin tila** -arvoksi **Suljettu**. Aseta tämä tila käyttämällä **Merkitse suljetuksi**-toimintoa **EU-myyntiluettelo**-sivulla. Jos palautat kauden sulkemisen, voit merkitä ESL-tietueet asettamalla **Raportoinnin tilan** arvoksi **Sisällytetty**. Nämä tietueet voidaan sitten sisällyttää uudelleen **EU:n arvonlisäveron yhteenvetoilmoituksella**. Aseta tämä tila käyttämällä **Merkitse** **sisällytetyksi**-toimintoa **EU-myyntiluettelo**-sivulla.
-
 
 
 

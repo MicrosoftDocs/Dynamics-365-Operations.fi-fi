@@ -1,13 +1,13 @@
 ---
-title: "Käyttöikään perustuva tasapoisto"
-description: "Tässä artikkelissa on yleiskuvaus käyttöikään perustuvasta tasapoistomenetelmästä."
+title: Käyttöikään perustuva tasapoisto
+description: Tässä artikkelissa on yleiskuvaus käyttöikään perustuvasta tasapoistomenetelmästä.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b48cf3970379f8dd2ea529cd8a434c0bdc196a1e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bb5715855c7e240cddf4fd264a4b26ca09a2f6c4
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365681"
 ---
-
 # <a name="straight-line-service-life-depreciation"></a>Käyttöikään perustuva tasapoisto
 
 [!include [banner](../includes/banner.md)]
@@ -104,7 +103,6 @@ Hankintaoikaisun käyttöaika on sama kuin käyttöomaisuuserän käyttöaika ja
 | Vuosi 6 | Jäljellä oleva arvo 800\*                           | 1 800 – 800 = 1 000                   |
 
 \*Koska jäännösarvo on pienempi kuin poistosumma, kirjataan vain jäännösarvolla vähennetty jäljellä oleva summa.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta"
-description: "Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) määrityksiä tuomaan tietoja Dynamics 365 for Finance and Operations, Enterprise edition -sovellukseen ulkoisesta tiedostosta."
+---
+title: ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta
+description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) konfiguraatioita tuomaan tietoja Dynamics 365 for Finance and Operations, Enterprise edition -sovellukseen ulkoisesta tiedostosta.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6675f35c9ec163a620e63af32ecdbff02197d3c3
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "337368"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) määrityksiä tuomaan tietoja Dynamics 365 for Finance and Operations, Enterprise edition -sovellukseen ulkoisesta tiedostosta. Tässä esimerkissä luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Näitä vaiheita varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -tehtäväoppaan vaiheet. Nämä vaiheet voidaan suorittaa USMF-tietojoukon avulla. Sinun on myös ladattava ja tallennettava paikallisesti seuraavat tiedostot Sähköisen raportoinnin yleiskatsaus -ohjeaiheen linkkien avulla (https://go.microsoft.com/fwlink/?linkid=852550):: 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella sähköisen raportoinnin (ER) konfiguraatioita tuomaan tietoja Dynamics 365 for Finance and Operations, Enterprise edition -sovellukseen ulkoisesta tiedostosta. Tässä esimerkissä luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Näitä vaiheita varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -tehtäväoppaan vaiheet. Nämä vaiheet voidaan suorittaa USMF-tietojoukon avulla. Sinun on myös ladattava ja tallennettava paikallisesti seuraavat tiedostot Sähköisen raportoinnin yleiskatsaus -ohjeaiheen linkkien avulla (https://go.microsoft.com/fwlink/?linkid=852550):: 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
     * Sähköisen raportoinnin (ER) ansiosta yrityskäyttäjät voivat määrittää prosessin, jolla ulkoiset datatiedostot tuodaan Dynamics 365 for Finance and Operations, Enterprise Editionin tauluihin .XML- tai .TXT-muodossa. Ensimmäiseksi on suunniteltava tuotavia tietoja vastaava abstraktin tietomallin ja ER-tietomallin määritys. Seuraavaksi on määritettävä tuotavan tiedoston rakenne ja menetelmä, jolla tiedot siirretään tiedostosta abstraktiin tietomalliin. Kyseiselle abstraktille tietomallille on luotava suunniteltuun tietomalliin yhdistävä ER-muotomääritys. Tietomallin konfiguraatiota on sitten laajennettava yhdistämismäärityksellä, joka ilmaisee, miten tuodut tiedot säilytetään abstraktina tietomallin tietoina ja miten taulut päivitetään sen avulla Dynamics 365 for Finance and Operations, Enterprise Editionissa.  ER-tietomallimääritykseen on liitettävä uusi malliyhdistämismääritys, joka ilmaisee, miten tietomalli sidotaan sovelluksen kohteisiin.  
     * Seuraavassa skenaariossa esitellään ER-tietojen tuontiominaisuuksia. Niitä ovat esimerkiksi toimittajatapahtumat, joita seurataan ulkoisesti ja jotka sitten tuodaan Dynamics 365 for Finance and Operations, Enterprise Editioniin, jotta ne voidaan myöhemmin raportoida toimittajan valmisteveron tilityksenä.   
@@ -177,17 +177,16 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
 18. Sulje sivu.
 19. Sulje sivu.
 20. Valitse Muokkaa.
-    * Jos olet asentanut hotfix-korjauksen KB 4012871, GER-mallien yhdistämismääritysten tuki, erillisinä määrityksinä ja valmiudella määrittää erilaiset ennakkoedellytykset niiden käyttöönottamiseksi Dynamics 365 for Finance and Operations Enterprise Editionin eri versioissa (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), suorita annetulle muotomääritykselle seuraava vaihe Mallin määrityksen oletusarvo -merkinnän ottaminen käyttöön. Ohita seuraava vaihe muussa tapauksessa.  
+    * Jos olet asentanut hotfix-korjauksen KB 4012871 GER-mallien yhdistämismääritysten tuki erillisinä määrityksenä sekä mahdollisuus määrittää erilaiset ennakkoedellytykset niiden käyttöönottamiseksi Dynamics 365 for Finance and Operations, Enterprise editionin eri versioissa (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), suorita annetulle muotomääritykselle seuraava vaihe Mallin määrityksen oletusarvo -merkinnän ottaminen käyttöön. Ohita seuraava vaihe muussa tapauksessa.  
 21. Valitse Mallin määrityksen oletusarvo -kentässä Kyllä.
 22. Valitse puussa 1099-maksumalli.
 23. Valitse Suunnittelutoiminto.
 24. Valitse Yhdistä malli tietolähteeseen.
 25. Valitse Suorita.
-    * Jos olet asentanut hotfix-korjauksen KB 4012871, GER-mallien yhdistämismääritysten tuki, erillisinä määrityksinä ja valmiudella määrittää erilaiset ennakkoedellytykset niiden käyttöönottamiseksi Dynamics 365 for Finance and Operations Enterprise Editionin eri versioissa (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), valitse hakukentästä ensisijainen mallin yhdistämismääritys. Jos et ole vielä asentanut hotfix-korjausta, ohita seuraava vaihe, sillä oletusmuotomäärityksen määritelmä on jo valinnut yhdistämismäärityksen.  
+    * Jos olet asentanut hotfix-korjauksen KB 4012871, GER-mallien yhdistämismääritysten tuki, erillisinä määrityksinä ja valmiudella määrittää erilaiset ennakkoedellytykset niiden käyttöönottamiseksi Dynamics 365 for Finance and Operations, Enterprise editionin eri versioissa (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), valitse hakukentästä ensisijainen mallin yhdistämismääritys. Jos et ole vielä asentanut hotfix-korjausta, ohita seuraava vaihe, sillä oletusmuotomäärityksen määritelmä on jo valinnut yhdistämismäärityksen.  
     * Jos et ole vielä asentanut hotfix-korjausta KB 4012871, huomaa, että valintaikkunassa mallin yhdistämismääritystä koskeva lisäkysymys, jonka avulla tuotava tiedosto jäsennetään. Tiedot siirretään sitten valintaikkunasta tietomalliin. Käytettävä muodon yhdistämismääritys voidaan tällä hetkellä valita sen mukaan, minkä tyyppinen tiedosto aiotaan tuoda.  
     * Jos aiot kutsua tämän mallin yhdistämismäärityksen toimintoa varten suunnitellusta Dynamics 365 for Finance and Operations, Enterprise Editionin pisteestä, ER-kohde ja muodon yhdistämismääritys on merkittävä integraation osaksi.  
 26. Valitse Peruuta.
 27. Sulje sivu.
 28. Sulje sivu.
-
 

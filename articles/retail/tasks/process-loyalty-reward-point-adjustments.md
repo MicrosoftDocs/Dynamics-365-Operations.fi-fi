@@ -1,13 +1,13 @@
---- 
-title: "Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely"
-description: "Tässä menettelyssä käsitellään, miten kanta-asiakaskortin tietoa voi etsiä ja miten kanta-asiakkaan palkkiopisteitä säädetään."
+---
+title: Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely
+description: Tässä menettelyssä käsitellään, miten kanta-asiakaskortin tietoa voi etsiä ja miten kanta-asiakkaan palkkiopisteitä säädetään.
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailLoyaltyCards, RetailLoyaltyCardRewardPointTrans, RetailLoyaltyCardRewardPointAdjustment, RetailAffiliationLookup
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 85aaa82bf56d55c69f39bab49682c79f51247251
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfb5095c1db2a5ab9fb528d08d979ec850543fc
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346154"
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a>Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely
 
@@ -49,5 +49,4 @@ Tässä menettelyssä käsitellään, miten kanta-asiakaskortin tietoa voi etsi�
     * Sivu yleensä päivitetään tässä vaiheessa, jotta voit katsoa palkkiopisteiden oikaisun tuloksen Palkkiopisteyhteenveto-välilehdessä. Mutta jos käytät tätä tehtäväopastuksena, älä tee päivitystä nyt, sillä se pysäyttää tehtäväopastuksen.  
 15. Valitse Korttitapahtumat.
 16. Sulje sivu.
-
 

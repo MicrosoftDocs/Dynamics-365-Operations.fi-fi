@@ -1,13 +1,13 @@
---- 
-title: "Varmuusvaraston kirjauskansion käyttäminen minimikattavuuden päivittämiseen"
-description: "Seuraavassa menettelyssä kuvataan, miten voit laskea vähimmäiskattavuuden ehdotukset historiatapahtumiin perustuen ja päivittää nimikekattavuuden ehdotusten mukaiseksi."
+---
+title: Varmuusvaraston kirjauskansion käyttäminen minimikattavuuden päivittämiseen
+description: Seuraavassa menettelyssä kuvataan, miten voit laskea vähimmäiskattavuuden ehdotukset historiatapahtumiin perustuen ja päivittää nimikekattavuuden ehdotusten mukaiseksi.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 7a6e217d476cedc0318c382e12b7dc2036e557c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d278b20724006ec3b3aa557738e8b130ca2bba15
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341094"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Varmuusvaraston kirjauskansion käyttäminen minimikattavuuden päivittämiseen
 
@@ -75,5 +75,4 @@ Seuraavassa menettelyssä kuvataan, miten voit laskea vähimmäiskattavuuden ehd
 5. Valitse toimintoruudussa Suunnitelma.
 6. Valitse Nimikekattavuus.
     * Huomaa, että vähimmäismääräksi on päivitetty uusi vähimmäismäärä varmuusvaraston kirjauskansiosta.  
-
 

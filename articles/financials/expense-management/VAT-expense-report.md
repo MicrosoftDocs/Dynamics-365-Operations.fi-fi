@@ -1,13 +1,13 @@
 ---
 title: ALV:n palautus matkalaskuissa
-description: "Tässä ohjeaiheessa kerrotaan, miten kelvollisten arvonlisävero- eli ALV-tapahtumien palautukset saadaan."
+description: Tässä ohjeaiheessa kerrotaan, miten kelvollisten arvonlisävero- eli ALV-tapahtumien palautukset saadaan.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8bc9e533de40aa8fe8ddfe422cfe0f4078a360c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: d1c9357f8f51e1a87aebeb8f802dbe3b5fdd5aa0
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359563"
 ---
-
 # <a name="vat-recovery-in-expense-management"></a>ALV:n palautus matkalaskuissa
 
 [!include [banner](../includes/banner.md)]
@@ -75,4 +74,3 @@ Kun Arnie on valmis lähettämään kuluraportin tiedot ALV-palautukset kirjaava
 Arnien on varmistettava, että kuluraportin tapahtuvat ovat ALV-palautuskelpoisia ja että digitaaliset kuitit ovat raporttien liitteenä. Arnie aloittaa kotimaisten palautukseen oikeutettujen kulujen käsittelyn avaamalla **Kulujen veronpalautus** -sivun ja valitsemalla varmistettavan kuluraportin. Hän varmistaa, että kuitit ovat yrityksen eikä työntekijän nimissä. Kuittien on oltava ALV-palautuksia varten yrityksen nimissä. Arnie vahvistaa sitten, että käytetyt ALV-ryhmän ja nimikkeen alv-koodit ovat oikeita.
 
 Kun Arnie saa paperikuitit, hän muuttaa kuluraportin tilaksi **Valmis palautukseen**. Hän voi sitten kirjata palautuksen soveltuvalle veroviranomaiselle. Tässä tapauksessa soveltuva yhdysvaltalainen veronviranomainen IRS (Internal Revenue Service).
-

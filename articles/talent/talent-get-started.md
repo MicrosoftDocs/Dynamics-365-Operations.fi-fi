@@ -1,13 +1,13 @@
 ---
-title: "Talentin käytön aloittaminen"
-description: "Tässä ohjeaiheessa on tietoja käyttöliittymän mukauttamisesta haluamiesi asetusten mukaisiksi ja tuotteen mukana toimitettavien ja sivustossa docs.microsoft.com olevien ohjeresurssien käyttämisestä."
+title: Talentin käytön aloittaminen
+description: Tässä ohjeaiheessa on tietoja käyttöliittymän mukauttamisesta haluamiesi asetusten mukaisiksi ja tuotteen mukana toimitettavien ja sivustossa docs.microsoft.com olevien ohjeresurssien käyttämisestä.
 author: rschloma
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: ddd7d9315b61cb3aa5e23f86666752ca8280acbf
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304279"
 ---
 # <a name="get-started-with-talent"></a>Talentin käytön aloittaminen
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent -sovelluksen käyttöliittymän muokkaaminen ja asetusten määrittäminen on helppoa. Näin saat ohjelmiston vastaamaan paremmin yrityksen tarpeita. Tämä ohjeaihe sisältää linkkejä ohjeaiheisiin, jotka sisältävät tietoja käyttöliittymän mukauttamisesta haluamiesi asetusten perusteella. Ohjeaihe sisältää myös linkkejä tietoihin, joiden avulla voit etsiä tietoja järjestelmästä tehokkaasti ja tarkasti. 
+Microsoft Dynamics 365 for Talentin käyttöliittymän muokkaaminen ja asetusten määrittäminen on helppoa. Näin saat ohjelmiston vastaamaan paremmin yrityksen tarpeita. Tämä ohjeaihe sisältää linkkejä ohjeaiheisiin, jotka sisältävät tietoja käyttöliittymän mukauttamisesta haluamiesi asetusten perusteella. Ohjeaihe sisältää myös linkkejä tietoihin, joiden avulla voit etsiä tietoja järjestelmästä tehokkaasti ja tarkasti. 
 
 > [!NOTE] 
-> Seuraavat tuotteet liittyvät läheisesti toisiinsa: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tämän vuoksi ensisijassa Retailiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Retail, ensisijassa Talentiin liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Talent ja perustuotteeseen liittyvissä ohjeaiheissa tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
+> Seuraavat kolme tuotetta liittyvät toisiinsa läheisesti: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tällöin aiheissa, jotka liittyvät ensisijaisesti Retail, tuotteen nimi on Dynamics 365 for Retail. Aiheissa, jotka liittyvät ensisijaisesti Talentiin, tuotteen nimi on Dynamics 365 for Talent. Ja aiheissa, jotka liittyvät ensisijaisesti ydintuotteeseen, tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
 ## <a name="personalizing-talent"></a>Talentin mukauttaminen 
-Seuraavissa ohjeaiheissa näytetään, miten Dynamics 365 for Talent -sovelluksen useat toiminnot määritetään niin, että työt saadaan tehtyä helpommin ja ajoissa. 
+Seuraavissa ohjeaiheissa näytetään, miten Dynamics 365 for Talentin useat toiminnot määritetään niin, että työt saadaan tehtyä helpommin ja ajoissa. 
 
 -   [Käyttäjäkokemuksen mukauttaminen](../fin-and-ops/get-started/personalize-user-experience.md) - Tässä ohjeaiheessa kerrotaan, miten Talentin voi mukauttaa ja miten tuotteen osat otetaan käyttöön haluttujen asetusten mukaisesti.
 
@@ -58,12 +58,11 @@ Seuraavissa ohjeaiheissa kerrotaan, miten tietoja etsitään nopeasti hakujen ja
 ## <a name="additional-resources"></a>Lisäresurssit
 
 ### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
-Sivustossa [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
+[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) -sivustossa on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
 
 ### <a name="blogs"></a>Blogit
-Mielipiteitä, uutisia ja muita tietoja ostoreskontrasta ja muista ratkaisuista on kohdassa [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
+Ratkaisuja koskevia mielipiteitä, uutisia ja muita ostoreskontraa koskevia tietoja on kohdassa [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
 
 ### <a name="videos"></a>Videot
-Tutustu [Microsoft Dynamics 365:n YouTube-kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
-
+Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.
 

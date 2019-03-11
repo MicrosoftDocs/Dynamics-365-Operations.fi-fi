@@ -1,13 +1,13 @@
 ---
 title: Puhelinkeskuksen luettelot
-description: "Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Retailin luetteloiden puhelinkeskusta koskevat toiminnot."
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Retailin luetteloiden puhelinkeskusta koskevia toimintoja.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322740"
 ---
-
-# <a name="call-center-catalogs"></a>Puhelinkeskuksen luettelot
+# <a name="call-center-catalogs"></a>Puhelinpalvelukeskuksen luettelot
 
 [!include [banner](includes/banner.md)]
 
@@ -102,4 +101,3 @@ Kun luettelot määritetään ja julkaistaan Dynamics 365 for Retailissa, **Läh
 ## <a name="additional-notes"></a>Lisähuomautukset
 
 Tällä hetkellä, kun lähdekoodin tunnusta käytetään puhelinkeskuksen myyntitilaukseen, sitä käytetään luettelokohtaisten hintojen, alennusten, komentosarjojen ja ylös- ja ristiinmyynnin edistämiseen. Järjestelmä ei kiellä tai estä tilaamasta myyntitilauksella tuotetta, joka ei ole luettelossa. Jos on tilattu luetteloon kuulumaton nimike, järjestelmä käyttää ensin **Hintaryhmä**-määritystä, joka määritetään puhelinkeskuksen kanavassa (**Vähittäismyynti** \> **Kanavat** \> **Puhelinkeskukset** \> **Kaikki puhelinkeskukset**) nimikkeen hinnalle tai tarjouksille. Jos tiettyä kanavan hintaa ei löydy, käytetään nimikkeen perusmyyntihintaa.
-

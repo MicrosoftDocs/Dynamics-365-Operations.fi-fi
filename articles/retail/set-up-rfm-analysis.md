@@ -1,13 +1,13 @@
 ---
-title: "Määritä Recency, Frequency, and Monetary (RFM) -analyysi"
-description: "Tässä ohjeaiheessa kerrotaan, kuinka asiakkaidesi Recency, Frequency, and Monetary (RFM) -analyysi määritetään."
+title: Määritä Recency, Frequency, and Monetary (RFM) -analyysi
+description: Tässä ohjeaiheessa kerrotaan, kuinka asiakkaidesi Recency, Frequency, and Monetary (RFM) -analyysi määritetään.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRRFMDefinition
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336632"
 ---
-
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Määritä Recency, Frequency, and Monetary (RFM) -analyysi
 
 [!include [banner](includes/banner.md)]
@@ -98,4 +97,3 @@ Tämän toiminnon avulla voit tarkastella tai poistaa RFM-analyysitietueen histo
 2. Valitse **RFM-analyysi**-sivulla tarkasteltava tietue.
 3. Voit tarkastella tietueen historiatiedot valitsemalla **Historia**-pikavälilehden.
 4. Voit tyhjentää tietueen historiatiedot valitsemalla **Tyhjennä historia**.
-

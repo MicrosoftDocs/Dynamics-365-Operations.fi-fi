@@ -1,13 +1,13 @@
 ---
 title: Projektin resursointi
-description: "Tässä aiheessa on tietoja projektien resursoinnista."
+description: Tässä aiheessa on tietoja projektien resursoinnista.
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectsListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 34f80d283bb710d7db3137a439dbe8dc67d22682
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351651"
 ---
-
 # <a name="project-resourcing"></a>Projektin resursointi
 
 [!include [banner](../includes/banner.md)]
 
 Tässä aiheessa on tietoja projektien resursoinnista.
 
-Yksi projekti- ja resurssipäälliköiden haasteista projektin suunnitteluvaiheessa on resurssien kohdistaminen. Tällöin on määritettävä ja varattava oikea resurssi projektityöhön. Microsoft Dynamics 365 for Finance and Operations -sovelluksessa voi projektien resursointitoiminnoilla määrittää roolit, joita käsitellään väliaikaisina resursseina, joita voidaan varata tiettyyn sitoumukseen tai sitoumuksen osaksi. Tämäntyyppisen resursoinnin avulla projekti- ja resurssipäälliköt voivat suorittaa seuraavia tehtäviä:
+Yksi projekti- ja resurssipäälliköiden haasteista projektin suunnitteluvaiheessa on resurssien kohdistaminen. Tällöin on määritettävä ja varattava oikea resurssi projektityöhön. Microsoft Dynamics 365 for Finance and Operationsissa voi määrittää projektien resursointitoiminnoilla roolit, joita käsitellään väliaikaisina resursseina, joita voidaan varata tiettyyn sitoumukseen tai sitoumuksen osaksi. Tämäntyyppisen resursoinnin avulla projekti- ja resurssipäälliköt voivat suorittaa seuraavia tehtäviä:
 
 - Määrittää roolin, jolla on resurssien kohdistamista helpottavat tarvittavat osaamisalueet.
 - Määrittää roolien avulla varattuihin resursseihin perustuvan alustavan sitoumusaikataulun.
@@ -351,4 +350,3 @@ Kun edeltävät tehtävät on suoritettu, voit suorittaa seuraavat tehtävät ta
 ## <a name="monitor-project-teams"></a>Projektiryhmien seuranta
 1. Valitse **Kaikki projektit** -sivulla **XYZ-päivitysvaihe 2** -projektin **Projektitunnus**-linkki.
 2. Tarkista **Projektiryhmä ja ajoitus** -pikavälilehdessä, että luettelossa näkyvät projektiresurssit ovat oikein.
-

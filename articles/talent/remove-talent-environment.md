@@ -1,13 +1,13 @@
 ---
-title: "Poista Talent-ympäristöt"
-description: "Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin testi- tai tuotantoympäristön poistoprosessista."
+title: Poista Talent-ympäristöt
+description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin testi- tai tuotantoympäristön poistoprosessista.
 author: rschloma
 manager: AnnBe
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
+ms.openlocfilehash: e0422a5b7ac227ad03ccafb4e34e614dc770a363
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 5080f1ec182b8cbdf281967185a1afeb9887f682
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304291"
 ---
-# <a name="remove-talent-environments"></a>Poista Talent-ympäristöt
+# <a name="remove-talent-environments"></a>Talent-ympäristöjen poistaminen
 
 [!include [banner](includes/banner.md)]
 
@@ -36,7 +36,7 @@ Talentin testauksen valmistelussa on 60 päivän vanhentumiskäytäntö. Testiym
 
 1. Siirry [PowerApps-hallintakeskukseen](https://admin.businessplatform.microsoft.com/).
 2. Valitse **Ympäristö**.
-3. Valitse testiympäristö, jonka nimeämiskäytäntö on seuraavanlainen: TestDrive - alias@domain
+3. Valitse testiympäristö, jonka nimeämiskäytäntö on seuraavanlainen: TestDrive – alias@toimialue
 4. Valitse **Poista** ja vahvista valinta. 
 
 Aiemmin luotu testausympäristö poistetaan. Kun se on poistettu, voit tilata uuden testiympäristön 
@@ -73,5 +73,4 @@ Voit poistaa Talent-ympäristön aiemmin luodusta PowerApps-ympäristöstä suor
 6. Valitse LCS-projektin **Talent-sovelluksen hallinta** -ruutu. 
 7. Valitse poistettava esiintymä, jonka käyttöottotilan merkintänä on oltava **Epäonnistui**.
 8. Valitse **Poista esiintymä** ja vahvista valinta. 
-
 

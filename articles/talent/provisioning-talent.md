@@ -1,13 +1,13 @@
 ---
 title: Talentin valmistelu
-description: "Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin uuden ympäristön valmisteluprosessista."
+description: Tässä ohjeaiheessa kerrotaan Dynamics 365 for Talentin uuden ympäristön valmisteluprosessista.
 author: rschloma
 manager: AnnBe
 ms.date: 09/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304258"
 ---
 # <a name="provision-talent"></a>Talentin valmistelu
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin tuotantouuden ympäristön valmisteluprosessista. Ohjeaiheessa oletetaan, että olet ostanut Talent-sovelluksen pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. Jos sinulla on Microsoft Dynamics 365 -käyttöoikeus, joka sisältää Talent-palvelusopimuksen, etkä pysty suorittamaan tämän ohjeaiheen vaiheita, ota yhteys tukeen.
+Tässä ohjeaiheessa kerrotaan Dynamics 365 for Talentin uuden tuotantoympäristön valmisteluprosessista. Ohjeaiheessa oletetaan, että olet ostanut Talent-sovelluksen pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. Jos sinulla on Microsoft Dynamics 365 -käyttöoikeus, joka sisältää Talent-palvelusopimuksen, etkä pysty suorittamaan tämän ohjeaiheen vaiheita, ota yhteys tukeen.
 
-Aluksi yleisen järjestelmänvalvojan tulee kirjautua [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) -palveluun ja luoda uusi Talent-projekti. Jos Talentin käyttämistä estävä ongelma ei liity käyttöoikeuteen, tuen tai Dynamics-palvelun kehityspalvelun edustajien apua ei tarvita.
+Aluksi yleisen järjestelmänvalvojan tulee kirjautua [Microsoft Dynamics Lifecycle Servicesiin](https://lcs.dynamics.com) (LCS) ja luoda uusi Talent-projekti. Jos Talentin käyttämistä estävä ongelma ei liity käyttöoikeuteen, tuen tai Dynamics-palvelun kehityspalvelun edustajien apua ei tarvita.
 
 ## <a name="create-an-lcs-project"></a>LCS-projektin luominen
 Luo ensin LCS-projekti, jotta voit hallinnoida Talent-ympäristöjä LCS:n avulla.
@@ -38,7 +38,7 @@ Luo ensin LCS-projekti, jotta voit hallinnoida Talent-ympäristöjä LCS:n avull
 1. Kirjaudu sisään [LCS:ään](https://lcs.dynamics.com/Logon/Index) samalla tilillä, jota käytit tilatessasi Talent-sovelluksen.
 2. Luo projekti valitsemalla plusmerkki (**+**).
 3. Valitse tuotteen nimeksi ja versioksi **Microsoft Dynamics 365 for Talent**.
-4. Valitse **Dynamics 365 for Talent** -metodologia.
+4. Valitse **Dynamics 365 for Talent** -menetelmä.
 5. Valitse **Luo**.
 
 Lisätietoja Talent-sovelluksen aloittamisesta on uudelle projektille luomassasi **Talent**-metodologiassa. Kun projekti on valmis, noudata seuraavia ohjeita ja valmistele Talent-ympäristö.
@@ -79,7 +79,7 @@ Määritä seuraavien ohjeiden avulla, missä PowerApps-ympäristössä Talent o
  
    **PowerApps-oletusympäristöt** Vaikka jokainen vuokraaja valmistellaan automaattisesti PowerApps-oletusympäristössä, se ei välttämättä ole paras ympäristö Talent-sovelluksen käyttöönottoa varten, koska kaikilla vuokraajakäyttäjillä on PowerApps-ympäristön käyttöoikeus. Tuotantoympäristön tietoja voi vioittua epähuomiossa PowerApps- tai Flow-integrointien testaamisen ja tutkimisen yhteydessä.
    
-   <strong>Testaa ympäristöt</strong> Ympäristöillä, joilla on TestDrive – alias@domain -tyyppinen nimi, on 60 päivän pituinen voimassaolon päättymiskausi. Tämän jälkeen ympäristö vanhenee ja se poistetaan automaattisesti.
+   <strong>Testiympäristöt</strong> Ympäristöillä, joilla on nimi, kuten TestDrive – alias@toimialue, on 60 päivän pituinen voimassaolon päättymiskausi. Tämän jälkeen ympäristö vanhenee ja se poistetaan automaattisesti.
    
    **Alueet, joita ei tueta** Tällä hetkellä Talent-sovelluksella on tuki vain seuraavilla alueilla: Yhdysvallat, Eurooppa ja Australia.
   
@@ -87,5 +87,4 @@ Määritä seuraavien ohjeiden avulla, missä PowerApps-ympäristössä Talent o
  
 ## <a name="grant-access-to-the-environment"></a>Ympäristön käyttöoikeuksien myöntäminen
 Oletusarvoisesti vain ympäristön luonut yleinen järjestelmänvalvoja voi käyttää sitä. Sovelluksen muille käyttäjille käyttöoikeus on myönnettävä erikseen. Voit myöntää käyttöoikeuden [lisäämällä käyttäjiä](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) ja [määrittämällä heille sopivat roolit](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) henkilöstöhallinnon perusympäristössä.. Talentin käyttöönoton tehneen yleisen järjestelmänvalvojan on käynnistettävä sekä Attract- että Onboard-sovellukset alustuksen suorittamiseksi ja muiden vuokraajakäyttäjien pääsyn sallimiseksi.  Kunnes näin tapahtuu, muut käyttäjät eivät voi käyttää Attract- ja Onboard-sovelluksia, vaan ne näyttävät käyttöoikeusvirheitä.
-
 

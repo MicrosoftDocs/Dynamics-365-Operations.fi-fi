@@ -1,13 +1,13 @@
 ---
 title: Siirtymishaku
-description: "Tässä ohjeaiheessa kerrotaan, miten hakutoimintoja käytetään Microsoft Dynamics 365 for Finance and Operationsin sivuilla siirtymisessä."
+description: Tässä ohjeaiheessa kerrotaan, miten sivujen välillä voi siirtyä Microsoft Dynamics 365 for Finance and Operationsissa hakutoiminnon avulla.
 author: aneesmsft
 manager: AnnBe
 ms.date: 04/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7c05098815c6b330cbb9c7f5ce886779927c6804
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353008"
 ---
-
 # <a name="navigation-search"></a>Siirtymishaku
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten hakutoimintoja käytetään Microsoft Dynamics 365 for Finance and Operationsin sivuilla siirtymisessä.
+Tässä ohjeaiheessa kerrotaan, miten sivujen välillä voi siirtyä Microsoft Dynamics 365 for Finance and Operationsissa hakutoiminnon avulla.
 
 Finance and Operations sisältää toiminnot erilaisia toimialoja ja vertikaaleja varten. Sovellus sisältää useita alueita ja sivuja erilaisten tehtävien suorittamista varten. Siirtymishakutoiminnon avulla tehtävien suorittamisessa tarvittavat sivut löytyvät helposti.
 
@@ -64,4 +63,3 @@ Hakutulosluettelo sisältää 10 kohdetta. Jos tuloksissa ei ole hakemaasi sivua
 ## <a name="development"></a>Kehitys
 
 Siirtymishakutoimintoa on helppo kehittää, sillä valikon vaihtoehtojen käyttöönoton ja niiden hakutuloksissa näkymisen välillä ei käytännössä ole viivettä. Valikon vaihtoehdot ovat automaattisesti haettavissa, jos ne on linkitetty siirtymisruudusta tai koontinäytöstä.
-

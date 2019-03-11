@@ -1,31 +1,30 @@
 ---
-title: "Vähittäismyynnin kuponkien määrittäminen"
-description: "Tässä ohjeaiheessa on yleiskatsaus vähittäismyynnin kupongeista ja kerrotaan niiden määrittämisestä."
+title: Vähittäismyynnin kuponkien määrittäminen
+description: Tässä ohjeaiheessa on yleiskatsaus vähittäismyynnin kupongeista ja kerrotaan niiden määrittämisestä.
 author: scott-tucker
 manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336586"
 ---
-
 # <a name="set-up-coupons-for-retail-sales"></a>Vähittäismyynnin kuponkien määrittäminen
 
 [!include [banner](includes/banner.md)]
@@ -81,4 +80,3 @@ Kuponkitoiminto koostuu useista erillisistä Dynamics 365 for Retailin ominaisuu
 - **HQ päivitetään osittain, mutta Retail-palvelinta ja POS:stä ei päivitetä.** HQ-päivityksessä kuponki- ja alennussivut päivitetään samoin kuin vähittäismyynnin hinnoitteluohjelma. Jos vain toinen kahdesta komponentista päivitetään, osa Retailin sivuista ei vastaa hinnan laskentatietoja. Niinpä alennuksia laskettaessa voi esiintyä odottamattomia laskettuja alennuksia tai virheitä.
 - **HQ päivitetään, mutta Retail-palvelinta ja POS:stä ei päivitetä (N-1).** Koska kaikkia vähittäismyymälöitä ei voi päivittää samalla kertaa, HQ kannattaa päivittää ennen myymälöiden päivitystä. N-1-skenaariossa kuponkeihin liittyvä uusi toiminto ei ole vielä päivittämättömien myymälöiden käytössä. Kuponkitoiminnossa otetaan esimerkiksi käyttöön poissulkemisrivit. Jos poissulkemisrivejä käytetään alennuksessa, aiempaa versiota käyttävät myymälät eivät voi käyttää niitä.
 - **HQ:ta ei päivitetä, mutta Retail-palvelin ja POS päivitetään (N+1).** Koska Retail-palvelimen päivitetty hinnoitteluohjelma voi käsitellä vanhoja alennuskoodeja hinnan laskennan aikana, päivityksellä ei pitäisi olla toiminnallisia vaikutuksia tässä skenaariossa.
-

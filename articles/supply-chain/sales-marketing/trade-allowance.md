@@ -1,13 +1,13 @@
 ---
-title: "Myynninedistämispalkkioiden hallinta"
-description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Finance and Operationsin myynninedistämispalkkioiden hallintaa."
+title: Myynninedistämispalkkioiden hallinta
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Finance and Operationsin myynninedistämispalkkioiden hallintaa.
 author: t-benebo
 manager: AnnBe
 ms.date: 08/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: c3794535cf9230389d7da3f9dbde010e5c48cf2f
 ms.openlocfilehash: 907d59f850d8d761e2dd4e04bd288a696f00964d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318807"
 ---
-
 # <a name="trade-allowance-management"></a>Myynninedistämispalkkioiden hallinta
 
 [!include [banner](../includes/banner.md)]
@@ -199,5 +198,4 @@ Saat yleiskatsauksen ohjelman avaintilastoista ja rahoituksen käytöstä käytt
 Jos haluat analysoidaan yleiskuvan kampanjan erilaisista suorituskykymittareista, voit käyttää analyysinäkymää. Siirry analyysinäkymään valitsemalla **Myynti ja markkinointi** \> **Myynninedistämispalkkiot** \> **Myynninedistämisen palkkiosopimukset**. Valitse toimintoruudussa **Analyysi**.  
 
 Jos haluat analysoidaan yleiskuvan kampanjan erilaisista suorituskykymittareista, voit käyttää analyysinäkymää. Siirry analyysinäkymään valitsemalla **Myynti ja markkinointi** \> **Myynninedistämispalkkiot** \> **Myynninedistämisen palkkiosopimukset**. Valitse toimintoruudussa **Analyysi**. 
-
 

@@ -1,28 +1,27 @@
 ---
 title: Asiakkaan maksutavat (esikatselu)
-description: "Tässä aiheessa kuvataan, miten voit asiakkaan maksutapojen avulla arvioida, milloin lasku maksetaan ja auttaa organisaatioita luomaan optimointistrategioita, jotka parantavat maksujen ajallaan maksamisen todennäköisyyttä."
+description: Tässä aiheessa kuvataan, miten voit asiakkaan maksutapojen avulla arvioida, milloin lasku maksetaan ja auttaa organisaatioita luomaan optimointistrategioita, jotka parantavat maksujen ajallaan maksamisen todennäköisyyttä.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 841ea53f754f61c2930e77fdafc85eac72f47d7a
 ms.openlocfilehash: 9e722db6302d7ef51c01601cde245d4f4a333eba
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344659"
 ---
-
 # <a name="customer-payment-insights-preview"></a>Asiakkaan maksutavat (esikatselu)
 
 [!include[banner](../includes/banner.md)]
@@ -77,5 +76,4 @@ Mikäli haluat kokeilla asiakkaanmaksutapoja (esikatselu), lähetä sähköposti
 
 ## <a name="privacy-statement"></a>Tietosuojatiedot
 
-Esikatselut tallentavat asiakkaan tiedot Yhdysvalloissa. Lisäksi esikatselu (1) voi käyttää vähemmän tietosuojaa ja suojaustoimenpiteet kuin Dynamics 365 for Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) ei pidä käyttää henkilötietojen tai muiden sellaisten tietojen prosessoimiseen, joita koskevat lait tai määräykset, ja (4) sillä on rajoitettu tuki.
-
+Esikatselut tallentavat asiakkaan tiedot Yhdysvalloissa. Lisäksi esikatselut (1) voivat käyttää vähemmän tietosuojaa ja suojaustoimenpiteitä kuin Dynamics 365 for Finance and Operations -palvelu, (2) eivät sisälly tämän huoltotilauksen palvelutasosopimukseen, (3) ei pidä käyttää henkilötietojen tai muiden sellaisten tietojen prosessoimiseen, joita koskevat lait tai määräykset, ja (4) sillä on rajoitettu tuki.

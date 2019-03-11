@@ -1,13 +1,13 @@
---- 
-title: "Luo ja käsittele asiakkaan ostohyvityksiä"
-description: "Tämä menettely ilmaisee, miten asiakkaan ostohyvityksen käsitellään vaatimuksen muodostamisesta niiden siirtämiseen jaksotuksina myyntireskontraan."
+---
+title: Luo ja käsittele asiakkaan ostohyvityksiä
+description: Tämä menettely ilmaisee, miten asiakkaan ostohyvityksen käsitellään vaatimuksen muodostamisesta niiden siirtämiseen jaksotuksina myyntireskontraan.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5afe2fa73e218aa9eb21aff866baa509860a83cb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 348793abc6d219f38bcdc2629b77343d93927005
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336448"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Luo ja käsittele asiakkaan ostohyvityksiä
 
@@ -83,5 +83,4 @@ Tämä menettely ilmaisee, miten asiakkaan ostohyvityksen käsitellään vaatimu
 9. Kirjoita Asiakas-kenttään arvo tai valitse se.
 10. Valitse OK.
     * Sanoma osoittaa, että ostohyvityksen käsittely onnistui, ja vaatimusten tilaksi on vaihtunut Merkitse. Tämä tarkoittaa, että ostohyvityksen jaksotuskirjauskansion kirjauksen seurauksena a) vaatimukset on nyt siirretty asiakkaan väliaikaiseen saldoon vähennyksinä, b) ostohyvityksen jaksotuskirjauskansiota on hyvitetty ilmaisemaan tulevaa velkaa asiakkaalle ja c) ostohyvityksen jaksotuskirjauskansiota on veloitettu osoituksena myyntiin liittyvistä kustannuksista.   
-
 

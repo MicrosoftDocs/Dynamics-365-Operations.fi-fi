@@ -1,13 +1,13 @@
 ---
 title: Dynamics 365 for Unified Operations -mobiilisovelluksen kotisivu
-description: "Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Unified Operationsin mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi."
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Unified Operations Mobile -sovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
 author: sericks007
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.translationtype: HT
-ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
 ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
-ms.contentlocale: fi-fi
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321383"
 ---
-
 # <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Dynamics 365 for Unified Operations -mobiilisovelluksen kotisivu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Unified Operationsin mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Unified Operations Mobile -sovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
 
 > [!NOTE]
 > Mobiilisovelluksen nimi oli aiemmin *Microsoft Dynamics 365 for Finance and Operations*.
@@ -90,7 +89,7 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 <tr class="even">
 <td>2</td>
 <td>Järjestelmänvalvoja</td>
-<td><strong>Jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611:</strong> Lataa ja asenna KB:t, joilla otetaan Microsoftin mobiilityötilat käyttöön.</td>
+<td><strong>Jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611:</strong> Lataa ja asenna paketit, jotka mahdollistavat Microsoftin tarjoamien mobiilityötilojen käytön.</td>
 <td>Lisätietoja on seuraavissa ohjeaiheissa:
 <ul>
 
@@ -120,7 +119,7 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 <td>5</td>
 <td>riippumaton ohjelmistotoimittaja</td>
 <td>Luo käyttöön otettava paketti, joka sisältää mukautettuja mobiilityötiloja ja lataa paketti Microsoft Dynamics Lifecycle Services (LCS) -palveluun.</td>
-<td><a href="../deployment/create-apply-deployable-package.md">Käyttöön otettavan paketin luominen</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Käyttöönotettavan paketin luominen</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
@@ -139,7 +138,7 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 <td>Käyttäjä</td>
 <td>Lataa ja asenna mobiilisovellus.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Androidin Unified Operations -sovellus</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Androidin Unified Operations sovellus</a><BR/>
 <a href="https://go.microsoft.com/fwlink/?linkid=850663">iOs:n Unified Operations -sovellus</a><BR/>
 (Windows Phonea ei tueta)
 </td>
@@ -153,4 +152,3 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 </tr>
 </tbody>
 </table>
-

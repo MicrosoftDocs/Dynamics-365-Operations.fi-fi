@@ -1,13 +1,13 @@
 ---
 title: Affordable Care Act (ACA) -raporttien luominen
-description: "Toiminnon tarkoituksena on auttaa niitä työnantajia, joiden on seurattava lomakkeissa 1095-B- ja 1095-C-ilmoitettavia tietoja. Näitä lomakkeita käytetään Affordable Care Act -lain työnantajan valtakirjaosassa. Huomaa, että toiminto on käytössä vain yhdysvaltalaisissa yrityksissä."
+description: Toiminnon tarkoituksena on auttaa niitä työnantajia, joiden on seurattava lomakkeissa 1095-B- ja 1095-C-ilmoitettavia tietoja. Näitä lomakkeita käytetään Affordable Care Act -lain työnantajan valtakirjaosassa. Huomaa, että toiminto on käytössä vain yhdysvaltalaisissa yrityksissä.
 author: kherr75
 manager: AnnBe
 ms.date: 12/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
 ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304204"
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Affordable Care Act (ACA) -raporttien luominen
 
@@ -70,4 +70,3 @@ Voit viedä erilaisilla suodatusvalinnoilla luodun työntekijäluettelon Excelii
 Jos katetut henkilöt on raportoitava, koska tarjoat työnantajana omakustanteisen vakuutuksen, voit tarkastella myös niiden etusuunnitelmien kattamia huollettavia, joissa on merkintä **ACA:lle ilmoitettavuudesta**, valitsemalla toimintoruuturivissä Näytä huollettavien kattaminen -toiminnon.
 
 **Huomautus:** kyselyikkunassa näkyvät vain ne suunnitelmat, joissa on merkintä **ACA:lle raportoitavuudesta**.
-

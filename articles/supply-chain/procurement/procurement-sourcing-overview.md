@@ -1,13 +1,13 @@
 ---
 title: Yleiskatsaus hankintaan
-description: "Tässä artikkelissa on yleiskuvaus Hankinta-moduulissa käytettävissä olevista toiminnoista."
+description: Tässä artikkelissa on yleiskuvaus Hankinta-moduulissa käytettävissä olevista toiminnoista.
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1fc824a308d17c75d9c16391778570272e160699
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351628"
 ---
-
 # <a name="procurement-and-sourcing-overview"></a>Yleiskatsaus hankintaan
 
 [!include [banner](../includes/banner.md)]
@@ -90,7 +89,6 @@ Laskutetut ostotilaukset tallentavat velan toimittajan tilille ostoreskontraan, 
 
 ## <a name="vendor-performance"></a>Toimittajan suoritustaso
 Ostotoimintojen suorituskykyä ja arviointia tuetaan *hankinnan ja ostoreskontran raporttien kautta,* mikä sisältää varojen käytön analyysin ja toimittajan suoritusten analyysin.
-
 
 
 

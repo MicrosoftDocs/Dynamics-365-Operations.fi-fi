@@ -1,13 +1,13 @@
 ---
-title: "Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla"
-description: "Tässä ohjeaiheessa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, kuinka käteisalennukset voivat vaihdella maksuajankohdan mukaan."
+title: Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla
+description: Tässä ohjeaiheessa näytetään, miten maksetaan useita laskuja, kun kukin lasku on oikeutettu käteisalennukseen. Tämän artikkelin skenaariot osoittavat sen, kuinka käteisalennukset voivat vaihdella maksuajankohdan mukaan.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a358af4878de0d02ce4dd3520e786d8779d7f030
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 92a981cbf9803e8adce1efc26a3fcfcb998540da
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319221"
 ---
-
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla
 
 [!include [banner](../includes/banner.md)]
@@ -97,7 +96,6 @@ Arnie tarkastelee tietoja **Asiakastapahtumat**-sivulla.
 | FTI-10042  | Lasku          | 25.6.2015 | 10042   | 1 000,00                             |                                       | 505,10   | USD      |
 | ARP-10040  | Maksu          | 29.6.2015 |         |                                      | 1 485,00                              | 0,00     | USD      |
 | ALE-10040 | Käteisalennus    | 29.6.2015 |         |                                      | 9,90                                  | 0,00     | USD      |
-
 
 
 

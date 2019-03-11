@@ -1,31 +1,30 @@
 ---
-title: "Jaksotettu poissaolo työtuntien mukaan"
-description: "Tässä ohjeaiheessa kuvataan, miten lomasuunnitelmat voidaan määrittää jaksotettuun poissaoloon työtuntien mukaan."
+title: Jaksotettu poissaolo työtuntien mukaan
+description: Tässä ohjeaiheessa kuvataan, miten lomasuunnitelmat voidaan määrittää jaksotettuun poissaoloon työtuntien mukaan.
 author: Jcart1106
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2018-09-17
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 1aae5797e37b846a38f957b02870e213da528a2d
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: f6489b84c71f2ac5a492b2d19cf087a05de8a599
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/21/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304173"
 ---
-
 # <a name="accrue-time-off-based-on-hours-worked"></a>Jaksotettu poissaolo työtuntien mukaan
 
 [!include [banner](includes/banner.md)]
@@ -106,4 +105,3 @@ Yhteen päivään voi liittyä vain yksi tyyppi kutakin.
 | 000337                | 8.8.2018             | Säännöllinen               | 8                    |
 | 000337                | 7.8.2018             | Säännöllinen               | 8                    |
 | 000337                | 9.8.2018             | Säännöllinen               | 8                    |
-

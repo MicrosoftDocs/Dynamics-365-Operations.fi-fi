@@ -1,13 +1,13 @@
 ---
 title: Maksuluetteloraportti Euroopassa
-description: "Tässä aiheessa on tietoja maksuluetteloraporteista Euroopassa."
+description: Tässä aiheessa on tietoja maksuluetteloraporteista Euroopassa.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntities, ProjFormletterParameters, CustFormletterParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 1e3e8ca7356001d113c676b25bd27f890ef1d650
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
-ms.openlocfilehash: 2afdc11b428ffe5d2ca0f65d040507e89e0b8c02
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/14/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370602"
 ---
-
 # <a name="payment-slip-report-for-europe"></a>Maksuluetteloraportti Euroopassa
 
 [!include [banner](../includes/banner.md)]
@@ -60,7 +59,6 @@ Kun olet määrittänyt maksutositeliitteen muodon myyntilaskuille, vapaatekstil
 2.  Luo uusi asiakas tai valitse aiemmin määritetty asiakas.
 3.  Valitse **Lasku ja toimitus** -pikavälilehden **Myyntilaskussa**-, **Vapaatekstilaskussa**-, **Korkolaskussa**-, **Maksukehotuksessa**-, **Projektilaskussa**- ja **Tiliotteessa**-kentissä muoto maksutositeliitteille, jotka liitetään valitulle asiakkaalle lähetettäviin eri tyyppisiin asiakirjoihin.
 4.  Tallenna muutokset sulkemalla lomake.
-
 
 
 

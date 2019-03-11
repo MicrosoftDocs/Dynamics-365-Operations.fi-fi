@@ -1,13 +1,13 @@
 ---
-title: "Määritä ja suunnittele vastaanottoluetteloiden muodot"
-description: "Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittää, miten kuitit, laskut ja muut asiakirjat tulostetaan. Microsoft Dynamics 365 for Retail sisältää lomakkeen asettelun suunnittelutoiminnon, jolla voit helposti luoda ja muokata erilaisia lomakkeen asetteluja."
+title: Määritä ja suunnittele vastaanottoluetteloiden muodot
+description: Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittää, miten kuitit, laskut ja muut asiakirjat tulostetaan. Microsoft Dynamics 365 for Retail sisältää lomakkeen asettelun suunnittelutoiminnon, jolla voit helposti luoda ja muokata erilaisia lomakkeen asetteluja.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357815"
 ---
-
 # <a name="set-up-and-design-receipt-formats"></a>Määritä ja suunnittele vastaanottoluetteloiden muodot
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittää, miten kuitit, laskut ja muut asiakirjat tulostetaan. Microsoft Dynamics 365 for Retail sisältää lomakkeen asettelun suunnittelutoiminnon, jolla voit helposti luoda ja muokata erilaisia lomakkeen asetteluja.
 
 > [!IMPORTANT]
-> Sinun on määritettävä lomakkeiden asettelut ja kuittiprofiilit kuittien ja muiden asiakirjojen tulostamiseksi Retail Modern POS- ja Cloud POS -sovelluksesta. Voit sisällyttää kuittiprofiiliin useita lomakeasetteluita. Voit sitten määrittää kuittiprofiilin tulostimeen laitteistoprofiilia muuttamalla.
+> Sinun on määritettävä lomakkeiden asettelut ja kuittiprofiilit kuittien ja muiden asiakirjojen tulostamiseksi Retail Modern POS:ssa ja Cloud POS:ssa. Voit sisällyttää kuittiprofiiliin useita lomakeasetteluita. Voit sitten määrittää kuittiprofiilin tulostimeen laitteistoprofiilia muuttamalla.
 
 ## <a name="set-up-a-receipt-format"></a>Kuittimuodon määrittäminen
 
@@ -83,4 +82,3 @@ Kuittiprofiilit määritetään suoraan tulostimeen laitteistoprofiilin kautta.
 
 > [!NOTE]
 > Jos käytössä on kaksi tulostinta, yhtä tulostinta voidaan käyttää standardimuotoisten 40-sarakkeisten lämpökuittien tulostamiseen. Toista tulostinta käytetään tyypillisesti suuremman tietomäärän vaativien koko sivun kuittityyppien tulostamiseen. Näihin kuittityyppeihin sisältyvät asiakastilausten kuitit ja myyntilaskut.
-

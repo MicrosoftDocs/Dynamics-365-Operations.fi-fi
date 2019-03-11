@@ -1,13 +1,13 @@
 ---
-title: "Hälytykset"
-description: "Tässä ohjeaiheessa on yleisiä tietoja Microsoft Dynamics 365 for Finance and Operationsin hälytyksistä. Saat hälytysten avulla tietoja tapahtumista, joita haluat seurata työpäivän aikana."
+title: Hälytykset
+description: Tämä ohjeaihe sisältää yleisiä tietoja Microsoft Dynamics 365 for Finance and Operationsin hälytyksistä. Saat hälytysten avulla tietoja tapahtumista, joita haluat seurata työpäivän aikana.
 author: tjvass
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 28ee34cd9133c634af98a50168e22efd0f74abce
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 38309e986c1d284ed63be760745b20a5415adb4c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367452"
 ---
-
 # <a name="alerts"></a>Hälytykset
 
 [!include [banner](../includes/banner.md)]
 
 ## <a name="about-alerts"></a>Tietoja hälytyksistä
-Hälytykset muodostavat tärkeiden tapahtumien ilmoitusjärjestelmän Microsoft Dynamics 365 for Finance and Operations -sovelluksessa. Saat hälytysten avulla tietoja tapahtumista, joita haluat seurata työpäivän aikana. Voit luoda kätevästi oman hälytyssääntöjoukon, joilla saat hälytyksen myöhässä olevista lähetyksistä, poistetuista tilauksista, hintojen muutoksista ja muista reagointia vaativista tapahtumista.
+Hälytykset muodostavat Microsoft Dynamics 365 for Finance and Operationsin kriittisten tapahtumien ilmoitusjärjestelmän. Saat hälytysten avulla tietoja tapahtumista, joita haluat seurata työpäivän aikana. Voit luoda kätevästi oman hälytyssääntöjoukon, joilla saat hälytyksen myöhässä olevista lähetyksistä, poistetuista tilauksista, hintojen muutoksista ja muista reagointia vaativista tapahtumista.
 
 Toiminnanohjausratkaisussa (ERP) on useita tyypillisiä skenaarioita, joissa Finance and Operations -sovelluksen hälytystoimintoa voi käyttää. Seuraavassa on muutamia esimerkkejä.
 
@@ -78,4 +77,3 @@ Hälytyssäännöllä on viisi osaa:
 ## <a name="email-notifications-from-alerts"></a>Sähköposti-ilmoitukset hälytyksistä
 
 Sähköposti-ilmoituksia hälytyksistä ei ole vielä otettu käyttöön. Se otetaan käyttöön myöhemmässä päivityksessä.
-

@@ -1,13 +1,13 @@
 ---
-title: "Rekisteröintitunnukset"
-description: "Tässä ohjeaiheessa on tietoja rekisteröintitunnuksien määrittämisestä ja käyttämisestä."
+title: Rekisteröintitunnukset
+description: Tässä ohjeaiheessa on tietoja rekisteröintitunnuksien määrittämisestä ja käyttämisestä.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7b663b9a72afdd3c2e2dcf503152f02e0b7861fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 978c6c6f2a3de803f252e93040d2d7eb2bc4a793
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350501"
 ---
-
 # <a name="registration-ids"></a>Rekisteröintitunnukset
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ Rekisteröintiluokka on maan/alueen rekisteröintitunnus, joka on hyväksytty ti
 |-----------------------|----------------|
 | Rekisteröintityyppi     | Rekisteröintityyppi tietyssä maassa/alueessa.|
 | Rajoitettu:         | Rajoitus, joka koskee verorekisteröinnin tyyppejä Ei mitään, Henkilö ja Organisaatio.|
-| Rekisteröintiluokka | Yksilöllinen rekisteröintitunnus, joka on hyväksytty käyttöön kyseisessä maassa. Täydellinen luettelo Microsoft Dynamics 365 for Finance and Operationsissa tuetuista luokista on jäljempänä. |
+| Rekisteröintiluokka | Yksilöllinen rekisteröintitunnus, joka on hyväksytty käyttöön kyseisessä maassa. Alla on täydellinen luettelo Microsoft Dynamics 365 for Finance and Operationsin luokista. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Kirjoita yleisen osoitekirjan tietueiden rekisteröintitunnukset
 
@@ -80,7 +79,7 @@ Microsoft Dynamics 365 for Finance and Operationsin yleinen osoitekirja sisält�
 Etsi osapuolen tietueita perustuen osapuolen, yrityksen, toimittajan, asiakkaan tai työntekijän lomakkeiden rekisteröintitunnukseen. Valitse **Rekisteröintitunnuksen haku** avataksesi **Rekisteröintitunnuksen hakuehdot** -sivun. Määritä hakuehdot ja valitse **Etsi**. Järjestelmä näyttää valitut tietueet yleisestä osoitekirjasta sekä osapuolitietueiden liittyvät tyypit.
 
 ## <a name="supported-registration-categories"></a>Tuetut rekisteröintiluokat
-Seuraavassa taulukossa on lueteltu Finance and Operationsissa tuetut rekisteröintityypit. Jos osaat käyttää Microsoft Dynamics AX 2012:n kenttiä rekisteröintitunnusten kenttiä, myös tässä taulukossa nämä kentät yhdistetään Dynamics 365 for Finance and Operationsin rekisteröintiluokkiin.
+Seuraavassa taulukossa on lueteltu Finance and Operationsissa tuetut rekisteröintityypit. Jos osaat käyttää Microsoft Dynamics AX 2012:n kenttiä rekisteröintitunnusten kenttiä, myös tässä taulukossa nämä kentät yhdistetään Finance and Operationsin rekisteröintiluokkiin.
 
 | Finance and Operationsin rekisteröintiluokka         |Maa/alue  | Dynamics AX 2012:n termi/kenttä|
 |---------------------------------------------------------------|---------------------|---------------------------------|
@@ -101,7 +100,7 @@ Seuraavassa taulukossa on lueteltu Finance and Operationsissa tuetut rekisteröi
 | Virallinen tunnistusasiakirja                              | Espanja             | Virallinen tunnistusasiakirja|
 | Asuinpaikkatodistus                                         | Espanja             | Asuinpaikkatodistus|
 | Muu tunnistusasiakirja                                 | Espanja             | Muu tunnistusasiakirja|
-| Väestönlaskentaa ei tehty                                                  | Espanja             | Ei käytettävissä AX 2012 R3 -versiossa|
+| Ei laskettu                                                  | Espanja             | Ei käytettävissä AX 2012 R3 -versiossa|
 
 
 Lisätietoja rekisteröintitunnusten käsittelystä mukaan lukien vaaditut edellytykset löydät seuraavista Lifecycle Services (LCS) -palvelusta ALV-tunnuksen tehtävätallenteista:
@@ -109,7 +108,6 @@ Lisätietoja rekisteröintitunnusten käsittelystä mukaan lukien vaaditut edell
 -   Aseta ALV-tunnus
 -   Toimittajan ALV-tunnuksen rekisteröinti
 -    Osaouolen haku ALV-tunnuksen avulla
-
 
 
 

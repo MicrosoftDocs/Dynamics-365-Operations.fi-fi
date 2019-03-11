@@ -1,13 +1,13 @@
 ---
 title: Standardikustannuksen muuntamisen yleiskuvaus
-description: "Tässä artikkelissa kuvataan prosessia, jonka avulla määritetään ja suoritetaan standardikustannusmuunto. Luetellut vaiheet suoritetaan sen jälkeen, kun standardikustannusmuunnon edellytykset ovat täyttyneet."
+description: Tässä artikkelissa kuvataan prosessia, jonka avulla määritetään ja suoritetaan standardikustannusmuunto. Luetellut vaiheet suoritetaan sen jälkeen, kun standardikustannusmuunnon edellytykset ovat täyttyneet.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5818bcf55cd7efc2d62f7b382a85653eb8bcbad6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2985e58bd308295e1f698c391f57fc3d116835bd
-ms.contentlocale: fi-fi
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313678"
 ---
-
 # <a name="standard-cost-conversion-overview"></a>Standardikustannuksen muuntamisen yleiskuvaus
 
 [!include [banner](../includes/banner.md)]
@@ -100,7 +99,6 @@ Muuntoprosessi vaatii, että varaston sulkeminen suoritetaan päivää ennen suu
 --------
 
 [Standardikustannuksen muuntamisen edellytykset](prerequisites-standard-cost-conversion.md)
-
 
 
 

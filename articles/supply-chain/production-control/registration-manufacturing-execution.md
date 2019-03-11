@@ -1,13 +1,13 @@
 ---
-title: "Tuotannon suorittamisen rekisteröinti"
-description: "Tässä aiheessa on tietoja käsitteistä ja termeistä, joita tarvitaan tuotannonohjausprosessin määrittämisessä ja käyttämisessä."
+title: Tuotannon suorittamisen rekisteröinti
+description: Tässä aiheessa on tietoja käsitteistä ja termeistä, joita tarvitaan tuotannonohjausprosessin määrittämisessä ja käyttämisessä.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1bbcd7ebea869f921c2eadd05e64509ff9246aa4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e5d4ee2fb1cd58107043939c3721fd857909f16b
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318163"
 ---
-
 # <a name="registration-for-manufacturing-execution"></a>Tuotannon suorittamisen rekisteröinti
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Työntekijät voivat tehdä erityyppisiä rekisteröintejä tuotannonohjauksessa
 -   **Rekisteröi tauot** (saatavilla työajan seurannassa) – Työntekijät voivat työaikana rekisteröidä lähtevänsä työpisteeltään tauolle. Useita vaihtotyyppejä voidaan määrittää. Kun työntekijä palaa ja kirjautuu sisään järjestelmään, järjestelmä rekisteröi työntekijän takaisin ja taukomerkinnän aika päättyy.
 -   **Rekisteröi epäsuorat toiminnot** (saatavilla työajan seurannassa) – Epäsuorat toiminnot eivät liity suoraan tuotantoon, mutta joihin työntekijät voivat osallistua työpäivän aikana, kuten osaston tai tiimin kokous, tai työnohjauksessa suoritettava huoltotyö. Työntekijät voivat tehdä määritettyjen epäsuorien tehtävien rekisteröintejä.
 -   **Rekisteröi ylityö** (saatavilla työajan seurannassa) – Ylitöihin pyydetyt työntekijät voivat merkitä ylityötuntinsa joustavaksi työajaksi tai ylitöiksi.
-
 
 
 

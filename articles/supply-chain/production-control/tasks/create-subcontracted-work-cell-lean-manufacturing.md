@@ -1,13 +1,13 @@
---- 
-title: "Lean-valmistuksen alihankintatyösolun luominen"
-description: "Kun haluat mallintaa alihankkijalle annetun lean-valmistuksen työn, luo työsolu, joka on liitetty työn tarjoavaan toimittajaan."
+---
+title: Lean-valmistuksen alihankintatyösolun luominen
+description: Kun haluat mallintaa alihankkijalle annetun lean-valmistuksen työn, luo työsolu, joka on liitetty työn tarjoavaan toimittajaan.
 author: cvocph
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 58b725af456f1a5c7f158f01ffe48a2d8cdf056b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fc8dc0bc29c6bdb662c46808491abf5395f0be5d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319152"
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Lean-valmistuksen alihankintatyösolun luominen
 
@@ -70,5 +70,4 @@ Kun haluat mallintaa alihankkijalle annetun lean-valmistuksen työn, luo työsol
 23. Lisää Tuotantokapasiteetin keskimääräinen määrä -kenttään numero.
 24. Avaa haku napsauttamalla Yksikkö -kentässä avattavan valikon painiketta.
 25. Ratkaise muutokset yksikössä.
-
 

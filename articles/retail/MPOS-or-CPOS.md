@@ -1,36 +1,35 @@
 ---
-title: "Retail Modern POS:n (MPOS) tai Cloud POS:n väliltä valitseminen"
-description: "Tässä ohjeaiheessa kerrotaan Retail Modern POS:n ja Cloud POS:n tärkeimmät erot. Ohjeaiheessa kerrotaan myös eri tekijöistä, jotka Microsoft Dynamics 365 for Retail -sovelluksen käyttöönottavien jälleenmyyjien tulee ottaa huomioon, kun he määrittävät vaatimuksiaan."
+title: Retail Modern POS:n (MPOS) tai pilvimyyntipisteen valitseminen
+description: Tässä ohjeaiheessa kerrotaan Retail Modern POS:n ja Cloud POS:n tärkeimmät erot. Ohjeaiheessa kerrotaan myös eri tekijöistä, jotka Microsoft Dynamics 365 for Retailin käyttöönottavien jälleenmyyjien tulee ottaa huomioon, kun he määrittävät vaatimuksiaan.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336241"
 ---
-
-# <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS:n (MPOS) tai Cloud POS:n väliltä valitseminen
+# <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS:n (MPOS) tai pilvimyyntipisteen valitseminen
 
 [!include [banner](includes/banner.md)]
 
-Tämä ohjeaihe sisältää käyttöönoton suorittajille tarkoitettuja lisätietoja taustasta sekä vihjeitä ja ohjeita seikoista, jotka tulee ottaa huomioon ennen Microsoft Dynamics 365 for Retail -sovelluksen käyttöönottoa. Käyttöönoton suorittajat voivat välttää käyttäjien tyytyväisyyteen tai suorituskykyyn liittyviä ongelmia tutustumalla ja seuraamalla näitä ohjeita käyttöönottoprosessin osana.
+Tämä ohjeaihe sisältää käyttöönoton suorittajille tarkoitettuja lisätietoja taustasta sekä vihjeitä ja ohjeita seikoista, jotka tulee ottaa huomioon ennen Microsoft Dynamics 365 for Retailin käyttöönottoa. Käyttöönoton suorittajat voivat välttää käyttäjien tyytyväisyyteen tai suorituskykyyn liittyviä ongelmia tutustumalla ja seuraamalla näitä ohjeita käyttöönottoprosessin osana.
 
 ## <a name="insights"></a>Tietoja
 
@@ -43,7 +42,7 @@ Retail tukee seuraavia myyntipisteen vaihtoehtoja:
 - Microsoft Windowsin Retail Modern POS (MPOS)
 - Microsoft Windows Phonen MPOS
 - Apple iPadin tai Google Android -tabletin MPOS
-- Cloud POS (CPOS), joka tukee Microsoft Edge-, Internet Explorer- ja Google Chrome -selaimia
+- Microsoft Edge-, Internet Explorer- ja Google Chrome -selaimia tukeva Cloud POS (CPOS)
 
 Kaikissa tapauksissa myyntipiste (MPOS ja CPOS) jakaa saman ydinsovelluksen koodin. Tämä on tärkeää seuraavista syistä:
 
@@ -61,7 +60,7 @@ Vaikka MPOS ja CPOS ovat pääosin samanlaisia, niissä on joitakin tärkeitä e
 Windows-, iOS- tai Android-laitteessa käytettävä MPOS on sovellus, joka on pakattu ja asennettu kyseiseen laitteeseen ja jota ylläpidetään laitteessa.
 
 - **Windows** – Windows-sovelluksen MPOS sisältää kaiken sovelluskoodin ja upotetun Commerce Runtime (CRT) -ympäristön. 
-- **iOS/Android** – Näissä ympäristöissä sovellus toimii CPOS-sovelluskoodin isäntänä. Toisin sanoen sovelluskoodi saadaan Microsoft Azuren CPOS-palvelimesta tai Retail Store Scale Unit (RSSU) -yksiköstä. Lisätietoja on kohdassa [Retail Store Scale Unit -yleiskatsaus](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – Näissä ympäristöissä sovellus toimii CPOS-sovelluskoodin isäntänä. Toisin sanoen sovelluskoodi saadaan Microsoft Azuren CPOS-palvelimesta Retail Store Scale Unit (RSSU) -yksiköstä. Lisätietoja on kohdassa [Retail Store Scale Unit -vähittäismyyntilaitteen yleiskatsaus](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### <a name="cpos"></a>CPOS
 
@@ -74,8 +73,8 @@ Ympäristön ja lomakekertoimen lisäksi jälleenmyyjien on valittava myymäläl
 | Myyntipisteen sovellus         | Retail Server | Käytettävissä offline-tilassa |
 |-------------------------|---------------|-------------------|
 | Windowsin MPOS        | Pilvi tai RSSU | Kyllä               |
-| iOS:n tai Androidin MPOS | Pilvi tai RSSU | En                |
-| Cloud POS               | Pilvi tai RSSU | En                |
+| iOS:n tai Androidin MPOS | Pilvi tai RSSU | Nro                |
+| Cloud POS               | Pilvi tai RSSU | Nro                |
 
 #### <a name="retail-server"></a>Retail Server
 
@@ -106,4 +105,3 @@ Ota seuraavat tiedot huomioon, kun suunnittelet myyntipisteen käyttöönottoa v
 - **Laitteiston laitteet/oheislaitteet** – Eräs tärkeä Retail POS -järjestelmän näkökulma on myyntipisteiden oheislaitteiden, kuten tulostimien, kassojen ja maksupäätteiden, käyttäminen. Vaikka kaikissa käytettävissä olevissa myyntipisteiden vaihtoehdoissa voidaan käyttää oheislaitteita, vain Windowsin MPOS tukee niitä suoraan. Kaikki muut sovellukset vaativat vähintään yhden laiteaseman. Vaikka tämä lähestymistapa lisää joustavuutta, lisäkomponentit on otettava käyttöön, määritettävä ja ylläpidettävä.
 - **Järjestelmävaatimukset** – Myyntipistesovellusten järjestelmävaatimukset vaihtelevat. Muista tarkistaa uusimmat tiedot, ennen kuin teet valinnan. Koska esimerkiksi CPOS suoritetaan selaimessa, se tukee useampia käyttöjärjestelmiä. Lisätietoja järjestelmävaatimuksista on kohdassa [Pilvikäyttöönottojen järjestelmävaatimukset](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Käyttöönotto ja ylläpito** – Käyttöönoton ja ylläpidon monimutkaisuus voi vaihdella sovelluksen ja käyttöönottovalintojen mukaan. Esimerkiksi pilvipalvelun CPOS-käyttöönotossa asennusta ja päivitystä ei tarvitse tehdä jokaiseen laitteeseen. Siksi tämä vaihtoehto on huomattavasti yksikertaisempi ja halvempi. Jos otat käyttöön MPOS:n jokaisessa kassakoneessa ja otat käyttöön offline-tilan sekä jaetut laiteasemat, hallinnoitavien päätepisteiden lukumäärä on huomattavasti isompi.
-

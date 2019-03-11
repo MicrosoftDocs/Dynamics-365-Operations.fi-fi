@@ -1,13 +1,13 @@
 ---
-title: "Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen"
-description: "Tässä ohjeaiheessa kuvataan ulkoisen luettelon tai siirtymisluettelon käyttöä tarjouspyynnön tietojen keräämisessä toimittajalta ja sen lisäämistä varasto-ottoehdotukseen."
+title: Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen
+description: Tässä ohjeaiheessa kuvataan ulkoisen luettelon tai siirtymisluettelon käyttöä tarjouspyynnön tietojen keräämisessä toimittajalta ja sen lisäämistä varasto-ottoehdotukseen.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368165"
 ---
-
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen
 
 [!include [banner](../includes/banner.md)]
 
-Ulkoisen luettelon avulla voit varmistaa, että Dynamics 365 for Finance and Operations -sovelluksen heinäkuun 2017 päivityksellä myöhemmin käsiteltävät tuote- ja hintatiedot ovat paikkansapitäviä ja ajan tasalla. Varasto-ottoehdotus voidaan hyväksyä ja muuttaa ostotilaukseksi ja tilaus voidaan lähettää toimittajalle.
+Ulkoisen luettelon avulla voit varmistaa, että Dynamics 365 for Finance and Operationsin heinäkuun 2017 päivityksellä myöhemmin käsiteltävät tuote- ja hintatiedot ovat paikkansapitäviä ja ajan tasalla. Varasto-ottoehdotus voidaan hyväksyä ja muuttaa ostotilaukseksi ja tilaus voidaan lähettää toimittajalle.
 
 Kun ulkoinen luettelo on määritetty ja työntekijä valmistelee varasto-ottoehdotusta, tapahtuma voidaan ohjata ulkoiselle sivustolle, ulkoiseen luetteloon ja palauttaa ostoskori, joka on luotu ulkoisessa sivustossa. Tämän viestintä perustuu cXML-protokollaan ja se pitää määrittää osto- ja myyntiorganisaation järjestelmien välille.
 
@@ -55,16 +54,17 @@ Ulkoisen luettelon avulla työntekijä, joka määrittää ostoehdotuksen, pitä
 Tämä osa sisältää lisätietoja vaiheesta 4 edellä olevassa osassa.
 
 1. Kirjoita toimittajan ulkoisen luettelon nimi ja kuvaus. Antamasi nimi näkyy ostokorissa, joka edustaa ulkoista luetteloa, joka näkyy työntekijöille, jotka luovat varasto-ottoehdotuksen. Työntekijät voivat avata toimittajan ulkoisen tuoteluettelosivuston napsauttamalla ostoskoria.
-2. Lisätä kuva **Ulkoisen luettelon kuva** -toiminnolla. Antamasi kuva näkyy ostokorissa, joka edustaa ulkoista luetteloa, joka näkyy työntekijöille, jotka luovat varasto-ottoehdotuksen. Huomaa, että kuvan leveys ja korkeus on oltava samat. Muussa tapauksessa kuva ei näy oikein.
+2. Lisätä kuva  **Ulkoisen luettelon kuva** -toiminnolla. Antamasi kuva näkyy ostokorissa, joka edustaa ulkoista luetteloa, joka näkyy työntekijöille, jotka luovat varasto-ottoehdotuksen. Huomaa, että kuvan leveys ja korkeus on oltava samat. Muussa tapauksessa kuva ei näy oikein.
 3. Valitse, näytetäänkö toimittajan tuoteluettelosivuston saman selaimen ikkunassa jossa työntekijän loi varasto-ottoehdotuksen, vai pitäisikö sen avautua uudessa ikkunassa.
 4. Valitse luettelon toimittaja. **Yritykset**-luettelossa on rivi jokaiselle yritykselle, johon toimittaja on määritetty. Jotta käyttäjät voivat pyytää suoraan joidenkin yritysten toimittajan luettelon tuotteita, voit määrittää luettelon käytettävyyden **Estä käyttö** tai **Salli käyttö** -painikkeilla.
 5. Kirjoita **Oletusarvoinen vanhentuminen (päivinä)** -kenttään, montako päivää ulkoisesta luettelosta vastaanotettu tarjous on voimassa ja kuinka kauan sitä voidaan käyttää ulkoiselta toimittajalta suoritettaviin ostoihin. Kun tarjous luodaan ja noudetaan toimittajan ulkoiselta luettelosivustolta, tarjous on voimassa nykyisestä järjestelmän päivämäärästä alkaen ja voimassa tähän kenttään kirjoittamasi päivien ajan.
-6. Käynnistä hankintaluokkien määritys ulkoiseen luetteloon napauttamalla **Lisää** -painiketta. Valitse sitten Luokka-nimiluettelosta luokka. Luokkaluettelo on hankintaluokkien ylijoukko, johon toimittaja on määritetty kaikissa yrityksissä, jotka on määritetty toimittajalle.
+6. Käynnistä hankintaluokkien määritys ulkoiseen luetteloon napauttamalla **Lisää** -painiketta. Valitse sitten Luokka-nimiluettelosta luokka. Luokkaluettelo on hankintaluokkien ylijoukko, johon toimittaja on määritetty kaikissa yrityksissä, jotka on määritetty toimittajalle.
 [!NOTE]
-Hankintakäytäntöjen avulla sallitaan tai rajoitetaan luokkien käyttöoikeuksia yrityksen ostoa tai toimintayksikön vastaanottoa varten. Siirtyminen ulkoiseen luetteloon edellyttää vähintään yhden luetteloon yhdistetyn hankintaluokan käyttöoikeuksia.
+Hankintakäytäntöjen avulla sallitaan tai rajoitetaan luokkien käyttöoikeuksia yrityksen ostoa tai toimintayksikön vastaanottoa varten. Siirtyminen ulkoiseen luetteloon edellyttää vähintään yhden luetteloon yhdistetyn hankintaluokan käyttöoikeuksia.
 7. Määritä cXML-asetuspyyntöviesti, joka lähetetään toimittajalle. Automaattisesti luotu sanomamuoto on vähimmäismalli, joka vaaditaan, jotta voidaan aloittaa istunto. Syötä arvot tunnisteita varten.
 
-Voit milloin tahansa ladata järjestelmän luoman viestin mallin valitsemalla **Palauta viestimuoto**. Huomaa, että jos palautat viestin muodon, nykyinen viesti korvataan automaattisesti luodulla viestimuodolla, jossa on tyhjiä tunnisteita.
+Voit milloin tahansa ladata järjestelmän luoman viestin mallin valitsemalla **Palauta viestimuoto**. 
+Huomaa, että jos palautat viestin muodon, nykyinen viesti korvataan automaattisesti luodulla viestimuodolla, jossa on tyhjiä tunnisteita.
 
 ### <a name="cxml-setup-message"></a>cXML-määritysviesti
 Ohessa on kuvaus tunnisteista, jotka sisältyvät malliin:
@@ -88,7 +88,7 @@ Toimittajalla voi olla vaatimus ulkoisen elementin vastaanottamisesta määritys
 Lisätietoja cXML-protokollasta on osoitteessa http://cxml.org/
 
 ## <a name="post-back-message"></a>Takaisinlähetysviesti
-Takaisinlähetysviesti on viesti, joka saadaan toimittajalta, kun käyttäjä kirjautuu pois ulkoisesta sivustosta ja palaa Finance and Operationsiin. Takaisinlähetysviestejä ei voi määrittää. Sanomat perustuvat cXML protocol määritys. Seuraavassa on tietoja, jotka voivat kuulua takaisinlähetysviestissä, joka vastaanotetaan ostoehdotuksen rivillä:
+Takaisinlähetysviesti on viesti, joka saadaan toimittajalta, kun käyttäjä kirjautuu pois ulkoisesta sivustosta ja palaa Finance and Operationsiin. Takaisinlähetysviestejä ei voi määrittää. Sanomat perustuvat cXM-protokollamääritykseen. Seuraavassa on tietoja, jotka voivat kuulua takaisinlähetysviestiin, joka vastaanotetaan ehdotusrivillä:
 
 | Toimittajalta vastaanotettu viesti | Kopioitu ostoehdotuksen riville Finance and Operationsissa|
 |------------------------------|----------------------------------------------------------|
@@ -106,5 +106,4 @@ Takaisinlähetysviesti on viesti, joka saadaan toimittajalta, kun käyttäjä ki
 Poista ulkoinen luettelo sivulla olevalla Poista-toiminnolla.
 
 Ulkoista toimittajan tuoteluetteloa ei voi poistaa, jos tuotetta on pyydetty ulkoisesta toimittajan tuoteluettelosta. Sen sijaan ulkoisen toimittajan tuoteluettelon tilaksi määritetään ei-aktiiviseksi. Jos haluat poistaa ulkoisten toimittajien luettelon sivuston käyttöoikeudet mutta et poistaa niitä, muuta ulkoisen tuoteluettelon tilaksi ei-aktiivinen.
-
 

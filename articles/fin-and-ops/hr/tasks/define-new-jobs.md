@@ -1,13 +1,13 @@
---- 
-title: "Määritä uudet työt"
-description: "Tässä tehtävässä keskitytään uuden työn luomiseen."
+---
+title: Määritä uudet työt
+description: Tässä tehtävässä keskitytään uuden työn luomiseen.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: abb85b1e8d9bc7386bf2d2f059b78faff9933f5c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347925"
 ---
 # <a name="define-new-jobs"></a>Määritä uudet työt
 
@@ -57,7 +57,7 @@ Tässä tehtävässä keskitytään uuden työn luomiseen. Se tehdään mallitoi
 21. Etsi haluamasi tietue luettelosta ja valitse se.
 22. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 23. Ota käyttöön Osaamisalueet-osan laajennus.
-    * Huomaa, että Osaamisalue-, Koulutus- ja Todistukset-pikavälilehden kentät ovat tyhjiä. Kun tiedot on kopioitu työmalliin, näiden kenttien tiedot syötetään yhdessä vaiheessa.   
+    * Huomaa, että Osaamisalue-, Koulutus- ja Todistukset-pikavälilehden kentät ovat tyhjiä. Kun tiedot on kopioitu työmalliin, näiden kenttien tiedot syötetään yhdessä vaiheessa.   
 24. Valitse Tallenna.
 25. Valitse Kopiointikohde.
 26. Valitse Kopioi mallista.
@@ -70,5 +70,4 @@ Tässä tehtävässä keskitytään uuden työn luomiseen. Se tehdään mallitoi
 32. Ota käyttöön Todistukset-osan laajennus.
 33. Ota käyttöön Koulutus-osan laajennus.
 34. Valitse Tallenna.
-
 

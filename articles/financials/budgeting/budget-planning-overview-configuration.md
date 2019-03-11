@@ -1,13 +1,13 @@
 ---
 title: Budjetin suunnittelun yleiskuvaus
-description: "Tämä artikkeli esittelee budjettisuunnittelun ja sisältää tietoja, joiden avulla voit määrittää budjettisuunnittelun ja budjettisuunnitteluprosessit."
+description: Tämä artikkeli esittelee budjettisuunnittelun ja sisältää tietoja, joiden avulla voit määrittää budjettisuunnittelun ja budjettisuunnitteluprosessit.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
-ms.contentlocale: fi-fi
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329916"
 ---
-
 # <a name="budget-planning-overview"></a>Budjetin suunnittelun yleiskuvaus
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,7 @@ Voit käyttää budjettisuunnittelua seuraaviin tehtäviin:
 -   Reititä automaattisesti budjettisuunnitelmia yhteen työlistojen, perusteluasiakirjojen ja muiden liitteiden kanssa, tarkastuksia ja hyväksymisiä varten.
 -   Konsolidoi useita budjettisuunnitelmia alemmalta tasolta organisaatiossa yhdeksi budjetin pääsuunnitelmaksi organisaation ylemmällä tasolla. Voit myös kehittää yksittäisen budjettisuunnitelman organisaation korkeammalla tasolla ja jakaa budjetin organisaation alemmille tasoille.
 
-Budjettisuunnittelu integroituu muiden Microsoft Dynamics 365 for Finance and Operations -moduulien kanssa. Tämän vuoksi voit tuoda aiempien budjettien tietoja, toteutuneita menoja, käyttöomaisuuden ja henkilöstöresurssit. Koska budjettisuunnittelu on integroitu myös Microsoft Excelin ja Microsoft Wordin kanssa, voit käsitellä budjettisuunnittelun tietoja näillä ohjelmilla. Budjettipäällikkö voi viedä osaston budjettipyynnön Excelin laskentataulukkoon budjettiskenaariosta. Tiedot voidaan analysoida, päivittää ja taulukoida laskentataulukolle, ja julkaista sitten takaisin budjettisuunnitelman riveille.
+Budjettisuunnittelu on integroitu toisten Microsoft Dynamics 365 for Finance and Operations -moduulien kanssa. Tämän vuoksi voit tuoda aiempien budjettien tietoja, toteutuneita menoja, käyttöomaisuuden ja henkilöstöresurssit. Koska budjettisuunnittelu on integroitu myös Microsoft Exceliin ja Microsoft Wordiin, budjettisuunnittelutietoja voidaan käsitellä näillä ohjelmilla. Budjettipäällikkö voi viedä osaston budjettipyynnön Excelin laskentataulukkoon budjettiskenaariosta. Tiedot voidaan analysoida, päivittää ja taulukoida laskentataulukolle, ja julkaista sitten takaisin budjettisuunnitelman riveille.
 
 ## <a name="configuring-budget-planning"></a>Määritä budjettisuunnittelu
 **Budjettisuunnittelun konfigurointi** -sivu sisältää useimmat budjettisuunnittelussa tarvittavat asetukset. Seuraavissa osissa kuvataan joitakin tärkeimpiä budjettisuunnittelun määrittämisessä huomioitavia tekijöitä. Konfiguroinnin valmistuttua määritetään budjettisuunnitteluprosessit.
@@ -188,7 +187,6 @@ Viimeinen vaihe on budjettisuunnitteluprosessin aktivoiminen **Toiminnot**-valik
 Toinen **Toiminnot**-valikon hyödyllinen komento on **Näytä budjettiprosessin tila**. Tämä komento näyttää graafisesti prosessin budjettisuunnitelmat ja niihin liittyvät tiedot, kuten suunnitelmien työnkulun tilan, yhteenvedot summan ja yksikön mukaan sekä budjettisuunnitelmiin siirtymisen yhdellä napsautuksella.
 
 [![Budjetin suunnitteluprosessin tila](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
 
 
 

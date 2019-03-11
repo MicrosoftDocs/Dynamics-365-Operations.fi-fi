@@ -1,13 +1,13 @@
 ---
-title: "Projektin kululuokkien synkronointi Finance and Operationsin ja Project Service Automationin välillä"
-description: "Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla projektin kululuokat synkronoidaan Microsoft Dynamics 365 for Finance and Operationsin ja Microsoft Dynamics 365 for Project Service Automationin välillä."
+title: Projektin kululuokkien synkronointi Finance and Operationsin ja Project Service Automationin välillä
+description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla projektin kululuokat synkronoidaan Microsoft Dynamics 365 for Finance and Operationsin ja Microsoft Dynamics 365 for Project Service Automationin välillä.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: c4d09fde2cf4335553243c136590f9f3135db97a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347833"
 ---
-
 # <a name="synchronize-project-expense-categories-between-finance-and-operations-and-project-service-automation"></a>Projektin kululuokkien synkronointi Finance and Operationsin ja Project Service Automationin välillä
 
 [!include[banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joil
 
 > [!NOTE]
 > - Projektitehtävän integrointi, kulutapahtumaluokat, tuntiarviot, kuluarviot ja toiminnon lukitseminen ovat käytössä Microsoft Dynamics 365 for Finance and Operationsin versiossa 8.0.
-> - Todellisten tietojen integrointi on käytettävissä Microsoft Dynamics 365 for Finance and Operationsin versiossa 8.01 tai myöhempi.
+> - Todellisten tietojen integrointi on mahdollista Microsoft Dynamics 365 for Finance and Operationsin versiossa 8.0.1 tai sitä uudemmassa versiossa.
 > - Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 ja KB 4132657 ja KB 4132660 on asennettu, voit integroida projektitehtäviä, kulutapahtumaluokkia, tuntiarvioita, kuluarvioita ja todellisia tietoja sekä määrittää toimintojen lukituksen. Jos kirjanpidollinen jako on palautettava alkuperäisasetuksiin, myös KB 4131710 kannattaa asentaa.
 
 ## <a name="data-flow-for-project-service-automation-and-finance-and-operations"></a>Project Service Automationin ja Finance and Operationsin tiedonkulku
@@ -125,4 +124,3 @@ Seuraavassa kuvassa on esimerkki mallitehtävän yhdistämisestä tietojen integ
 > Yhdistämismääritys näyttää Project Service Automationista Finance and Operationsiin synkronoitavan kentän tiedot.
 
 [![Mallin yhdistäminen](./media/ProjectExpenseCategoriesToFinOpsMapping.jpg)](./media/ProjectExpenseCategoriesToFinOpsMapping.jpg)
-

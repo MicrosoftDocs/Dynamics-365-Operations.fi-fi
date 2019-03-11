@@ -1,13 +1,13 @@
---- 
+---
 title: Luo tavoite
-description: "Voit luoda tavoitteita, lisätä niihin aktiviteettejä, kerätä mittauksia yhdistää tavoitteet arviointiin."
+description: Voit luoda tavoitteita, lisätä niihin aktiviteettejä, kerätä mittauksia yhdistää tavoitteet arviointiin.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: e3f3bc01113099c5b28f10e702ebf981e26c196a
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350708"
 ---
 # <a name="create-a-goal"></a>Luo tavoite
 
@@ -59,5 +59,4 @@ Voit luoda tavoitteita, lisätä niihin aktiviteettejä, kerätä mittauksia yhd
     * On tavoitteita, jotka ovat samoja tai samankaltaisia ryhmän jäsenille tai kaikille työntekijöille.     Henkilöstöhallinnon päällikkö tai esimies voi luoda tavoitemalleja näille tavoitteille. Voit lisätä tavoitteen mallista ja muokata sitä vastaamaan omia aikajanojasi.  
     * On useita tavoitteita, jotka ovat samoja tai samankaltaisia ryhmän jäsenille tai kaikille työntekijöille.     Henkilöstöhallinnon päällikkö tai esimies voi luoda tavoiteryhmiä, jotka sisältävät yhden tai useamman tavoitemallin. Voit lisätä tavoitteita tavoiteryhmästä ja muokata niitä vastaamaan omia aikajanojasi.  
     * Kun luot arvioinnin, voit lisätä siihen tavoitteita. Katso arviointeja koskevasta tehtäväoppaasta, miten tavoitteita lisätään.  
-
 

@@ -1,13 +1,13 @@
 ---
 title: Project Service Automationin integrointiparametrit
-description: "Tässä ohjeaiheessa kerrotaan, miten oletustiedot kirjataan, kun integroit Microsoft Dynamics 365 for Project Service Automationin Microsoft Dynamics 365 for Finance and Operationsin kanssa."
+description: Tässä ohjeaiheessa kerrotaan, miten oletustiedot kirjataan, kun integroit Microsoft Dynamics 365 for Project Service Automationin Microsoft Dynamics 365 for Finance and Operationsin kanssa.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
 ms.openlocfilehash: 33960a97f69d6bcc70a3035d4d68095ca6993a10
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347051"
 ---
-
-# <a name="project-service-automation-integration-parameters"></a>Project Service Automationin integrointiparametrit
+# <a name="project-service-automation-integration-parameters"></a>Project Service Automation -integrointiparametrit
 
 [!include[banner](../includes/banner.md)]
 
-**Project Service Automation -integrointiparametrit** -sivulla voit konfiguroida miten oletustiedot lisätään, kun integroit Microsoft Dynamics 365 for Project Service Automationin Microsoft Dynamics 365 for Finance and Operationsin kanssa. Seuraavat on kentät perustettava, jotta projektit voidaan synkronoida Project Service Automationista Finance and Operationsiin.
+Voit määrittää **Project Service Automation -integrointiparametrit** -sivulla, miten oletustiedot lisätään, kun integroit Microsoft Dynamics 365 for Project Service Automationin Microsoft Dynamics 365 for Finance and Operationsin kanssa. Seuraavat on kentät perustettava, jotta projektit voidaan synkronoida Project Service Automationista Finance and Operationsiin.
 
 > [!NOTE]
 > - Projektitehtävän integrointi, kulutapahtumaluokat, tuntiarviot, kuluarviot ja toiminnon lukitseminen ovat käytössä Microsoft Dynamics 365 for Finance and Operationsin versiossa 8.0.
-> - Todellisten tietojen integrointi on käytettävissä Microsoft Dynamics 365 for Finance and Operationsin versiossa 8.01 tai myöhempi.
+> - Todellisten tietojen integrointi on mahdollista Microsoft Dynamics 365 for Finance and Operationsin versiossa 8.0.1 tai sitä uudemmassa versiossa.
 > - Jos käytössä on Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 ja KB 4132657 ja KB 4132660 on asennettu, voit integroida projektitehtäviä, kulutapahtumaluokkia, tuntiarvioita, kuluarvioita ja todellisia tietoja sekä määrittää toimintojen lukituksen. Jos kirjanpidollinen jako on palautettava alkuperäisasetuksiin, myös KB 4131710 kannattaa asentaa.
 
 | Välilehti                    | Kenttä                | kuvaus |
@@ -46,4 +45,3 @@ ms.lasthandoff: 08/08/2018
 | Laskutustyypin oletusarvot  | Laskutustyyppi         | Lisää uusi rivi valitsemalla **Uusi**. Tällä tavoin lisätyllä rivillä voi valita laskutustyypin, johon oletusriviominaisuus määritetään. Tietyn laskutustyypin voi valita vain yhden kerran kussakin määrityksessä. |
 |                        | Rivin ominaisuus        | Valitse oletusriviominaisuus valitulle laskutustyypille. Kun uudet tuntiarviot, kuluarviot tai uudet todelliset tiedot synkronoidaan Project Service Automationista, **Riviominaisuus**-kenttä on laskutustyyppiin perustuva oletusarvo. |
 | Toimintojen lukitus  | Ei käytettävissä       | Valitse toiminto, jolla Finance and Operations poistetaan käytöstä Project Service Automationista peräisin olevissa projekteissa ja sopimuksissa. Voit esimerkiksi poistaa käytöstä mahdollisuuden muokata sopimuksia ja projekteja, luoda työrakenteita ja kirjata aikaraportteja Finance and Operationsissa. Kirjanpitoon liittyvät kentät ovat edelleen käytössä, vaikka parametriasetus on poistanut ne käytöstä. Kaikki toiminnot on oletusarvoisesti otettu käyttöön. |
-

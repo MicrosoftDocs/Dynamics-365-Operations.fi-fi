@@ -1,13 +1,13 @@
---- 
-title: "ER-konfiguraatioiden riippuvuuden määrittäminen muihin osiin"
-description: "Voit suorittaa nämä vaiheet, jos ER Mallin yhdistämismäärityksen konfiguraatioiden hallinta -tehtäväoppaan vaiheet on suoritettu ja sinulla on Microsoft Dynamics Lifecycle Services (LCS) -palvelun käyttöoikeus."
+---
+title: ER-konfiguraatioiden riippuvuuden määrittäminen muihin osiin
+description: Voit suorittaa nämä vaiheet, jos ER Mallin yhdistämismäärityksen konfiguraatioiden hallinta -tehtäväoppaan vaiheet on suoritettu ja sinulla on Microsoft Dynamics Lifecycle Services (LCS) -palvelun käyttöoikeus.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 18eb8de7c851e5477d93a00f744fe56929c43ca2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365083"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>ER-konfiguraatioiden riippuvuuden määrittäminen muihin osiin
 
@@ -139,6 +139,5 @@ Nämä ohjeet on tarkoitettu käyttäjille, joille on määritetty järjestelmä
 25. Valitse Organisaation hallinto > Sähköinen raportointi > Konfiguraatiot.
 26. Laajenna puussa Sample data model.
     * Huomaa, että Esimerkkiyhdistämismääritys-mallin yhdistämismäärityksen konfiguraatio on ladattu yhdessä valitun tietomallin konfiguraation kanssa. Nämä kaksi tiedostoa ladataan yhdessä, koska Esimerkkiyhdistämismääritys-konfiguraatio on määritetty valitun tietomallin toteutuksessa. Se on myös käytössä Finance and Operationsissa. Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatiota ei ladattu, koska pakollisen sovellusversion ehtoja ei täytetä.   
-    * Jos kirjaudut sisään Dynamics 365 for Finance and Operations, Enterprise Editioniin, rekisteröit saman lähteen, käytät samaa LCS-projektia ja lataat saman tietomallin konfiguraation. Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatio ladataan, kun taas Esimerkkiyhdistämismääritys-konfiguraatio ohitetaan.  
-
+    * Jos kirjaudut sisään Dynamics 365 for Finance and Operations, Enterprise Editioniin, rekisteröit saman tarjoajan, käytät samaa LCS-projektia ja lataat saman tietomallin konfiguraation, Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatio ladataan, kun taas Esimerkkiyhdistämismääritys-konfiguraatio ohitetaan.  
 

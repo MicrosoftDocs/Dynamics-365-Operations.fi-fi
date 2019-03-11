@@ -1,14 +1,14 @@
 ---
 title: Konsolidoitujen raporttien laatiminen
-description: "Tässä ohjeaiheessa käsitellään erilaisia skenaariota, joissa konsolidoituja raportteja voidaan laatia."
+description: Tässä ohjeaiheessa käsitellään erilaisia skenaariota, joissa konsolidoituja raportteja voidaan laatia.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 2a9ceb774a8f205e39abe6a12a0deb69dd4cb69b
 ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.contentlocale: fi-fi
-ms.lasthandoff: 08/20/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355193"
 ---
-
 # <a name="generate-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,7 @@ Yksinkertaisin raportteja hyödyntävä konsolidointimenetelmä on koota raportt
 
 Seuraava kuva näyttää, miten raporttien raporttipuun määrityksellä voi tunnistaa kunkin konsolidoitavan yrityksen.
 
-![Raporttipuun määritykset](./media/reporting-tree-definition.png "Raporttipuun määritys")
+![Raporttipuun määritykset](./media/reporting-tree-definition.png "Raporttipuun määritykset")
 
 Seuraavan kuvan konsolidoitu raportti näyttää, miten kutakin yritystä voi tarkastella erikseen, kun raporttipuuta ja raportin määritystä käytetään yhdessä. Konsolidoidut summat näytetään yhteenvetotasolla.
 
@@ -225,4 +224,3 @@ Jos valuuttoja käytettäessä saataisiin oikein muunnetut summat, taloushallinn
 Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän ohjeaiheen pääaiheessa [Taloushallinnon konsolidoinnit ja valuutan muunto](./financial-consolidations-currency-translation.md).
 
 Lisätietoja konsolidointitietojen antamisesta verkossa on kohdassa [Konsolidoi verkossa](./consolidate-online.md).
-

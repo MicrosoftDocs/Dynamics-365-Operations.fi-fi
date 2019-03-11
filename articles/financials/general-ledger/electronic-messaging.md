@@ -1,28 +1,27 @@
 ---
-title: "Sähköiset sanomat"
-description: "Tässä aiheessa on Microsoft Dynamics 365 for Finance and Operationsin sähköisten sanomien yleiskatsaus ja määritystiedot."
+title: Sähköiset sanomat
+description: Tässä aiheessa on Microsoft Dynamics 365 for Finance and Operationsin sähköisten sanomien yleiskatsaus ja määritystiedot.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 232398a6c4193d0074881e26fff361deb9784bf2
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357930"
 ---
-
 # <a name="electronic-messaging"></a>Sähköiset sanomat
 
 [!include [banner](../includes/banner.md)]
@@ -452,4 +451,3 @@ Voit nyt joko poistaa tai päivittää sanoman tilan. Päivitä sanoman tila val
 ![Päivitä sanoman tila](media/update-status.png)
 
 Sanoman tilaksi päivitetään **Valmisteltu**, ja voit nyt luoda raportin valitsemalla **Luo raportti**. Raportti luodaan sekä sanoman tila ja toimintoloki päivitetään. Voit tarkastella luotu raporttia valitsemalla toimintoruudussa **Liite**.
-

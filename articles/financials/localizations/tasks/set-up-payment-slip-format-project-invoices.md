@@ -1,13 +1,13 @@
---- 
-title: "Projektilaskujen maksukuitin muodon määrittäminen"
-description: "Yritykset liittävät usein asiakkaiden laskuihin tulostetun maksutositteen, jossa on maksuviite kirjaamista ja tilitystä varten."
+---
+title: Projektilaskujen maksukuitin muodon määrittäminen
+description: Yritykset liittävät usein asiakkaiden laskuihin tulostetun maksutositteen, jossa on maksuviite kirjaamista ja tilitystä varten.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b365585e884749bb73f8ba9054e446f210e10f37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 9700571110a1b488e250dd8ee7b8c5c8f15cbc01
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345602"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Projektilaskujen maksukuitin muodon määrittäminen
 
@@ -65,5 +65,4 @@ Toiminto on niiden yritysten käytettävissä, joiden ensisijainen osoite on Tan
     * Ei mitään – Älä tulosta maksutositetta. Valitse tämä vaihtoehto, jos maksun summan valuutta on muu kuin Tanskan kruunu (DKK).   FIK 751 – Tulosta FIK 751 -maksutosite, jos aiot kirjoittaa maksun summan ja eräpäivän manuaalisesti maksutositteeseen.   FIK 752 – Tulosta FIK 752 -maksutosite, jos aiot käyttää tietokoneen luomaa maksutositetta, jossa on esipainettu maksun summa ja eräpäivä.  
 16. Valitse Tallenna.
 17. Sulje sivu.
-
 

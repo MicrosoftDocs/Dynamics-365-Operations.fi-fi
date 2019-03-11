@@ -1,13 +1,13 @@
 ---
-title: "Varastotyöntekijöiden hallinta"
-description: "Tässä artikkelissa kuvataan, miten voit hyödyntää Dynamics 365 for Finance and Operationsia työntekijöiden varastoissa tekemän työn ohjaamiseen ja valvontaan."
+title: Varastotyöntekijöiden hallinta
+description: Tässä artikkelissa kuvataan, miten voit hyödyntää Dynamics 365 for Finance and Operationsia työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 211ced007e7729265621a05c2162a228eb0023c2
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310987"
 ---
-
 # <a name="manage-warehouse-workers"></a>Varastotyöntekijöiden hallinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan, miten voit hyödyntää Microsoft Dynamics 365 for Finance and Operationsia työntekijöiden varastoissa tekemän työn ohjaamiseen ja valvontaan.
+Tässä artikkelissa kuvataan, miten voit hyödyntää Microsoft Dynamics 365 for Finance and Operationsia työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
 
 Jos käytät tätä toimintoa varastonhallinnassa, kaikkiin varastotyöntekijöiden toimintoihin viitataan *työnä*. Työ, kuten käsillä olevan varaston keräily, siirtäminen ja laskeminen tallennetaan mobiililaitteiden avulla. Ennen kuin varastotyöntekijä voi suorittaa työn, hänen on oltava liitettynä työntekijään Henkilöstöhallinnossa. Jokaiseen **Työntekijä**-tiliin voi olla liitettynä useita varastotyökäyttäjiä. Nämä työn käyttäjät voivat työskennellä eri varastoissa ja heillä voi olla eritasoinen pääsy erilaisiin mobiililaitteen valikkoihin. Voit ajatella varastotyön käyttäjiä useina valitun työntekijän kirjautumisina. Kullakin työntekijällä on oletusvarasto, ja määrätyt työnkulut näkyvät kyseiselle työn käyttäjälle saatavilla olevien valikkovaihtoehtojen kautta. 
 
@@ -54,7 +53,6 @@ Analyysi työnimikkeiden viemästä ajasta voi auttaa edistämään parannuksia 
 
 -   **Käyttäjäkohtainen työ** – Tämä raportti näyttää työntekijöiden tuottavuuden perustuen toteutuneisiin aikoihin verrattuna odotettuihin aikoihin.
 -   **Työ tapahtumatyypin mukaan** – Voit käyttää tätä raporttia määrättyjen varastoprosessien tehottomuuden tutkimiseen. Huomaat esimerkiksi, että siirtotilausten keräily kestää pidempään tällä viikolla kuin aiempina viikkoina. Voit sitten käyttää näitä tietoja lisäselvityksiä varten.
-
 
 
 

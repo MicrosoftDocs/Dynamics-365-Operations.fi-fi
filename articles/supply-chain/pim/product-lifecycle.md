@@ -5,28 +5,27 @@ author: cvocph
 manager: AnnBe
 ms.date: 12/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: bf9e8fe828cae0f643bfb89c34f1d545e3993619
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
-ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
-ms.contentlocale: fi-fi
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364830"
 ---
-
 # <a name="product-lifecycle-state"></a>Tuotteen elinkaaren tila 
 
 [!include [banner](../includes/banner.md)]
@@ -110,8 +109,7 @@ Valitse ja päivitä vapautetut tuotteet ja tuotevariantit seuraavien ehtojen mu
 
 -  [Uuden tuotteen elinkaaren tilan luominen (tehtäväopas)](tasks/new-product-lifecycle-state.md)
 -  [Oletustuotteen elinkaaren tilan luominen (tehtäväopas)](tasks/default-product-lifecycle-state.md)
--  [Tuotteen elinkaaren tilan liittäminen vapautettuun päätuotteeseen (tehtäväopas)](tasks/product-lifecycle-state-released-product-master.md)
+-  [Tuotteen elinkaaren tilan määrittäminen vapautetulle päätuotteelle (tehtäväopas)](tasks/product-lifecycle-state-released-product-master.md)
 -  [Tuotteen elinkaaren tilan liittäminen vapautettuun tuotteeseen (tehtäväopas)](tasks/product-lifecycle-state-released-product.md)
 -  [Vanhentuneiden tuotevarianttien etsiminen ja tuotteen elinkaaren tilan liittäminen (tehtäväopas)](tasks/obsolete-product-variants.md)
 -  [Tuotteen elinkaaren tason luonti jättämään tuotteita pääsuunnittelun ulkopuolelle (tehtäväopas)](tasks/exclude-products-master-planning.md)
-

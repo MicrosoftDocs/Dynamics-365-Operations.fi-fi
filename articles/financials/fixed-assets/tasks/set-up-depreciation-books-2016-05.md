@@ -1,13 +1,13 @@
---- 
-title: "Käyttöomaisuuden poistokirjojen määrittäminen (Toukokuu 2016)"
-description: "Tässä tehtävän ohjauksessa luodaan uusi poistokirja ja liitetään se käyttöomaisuusryhmään."
+---
+title: Käyttöomaisuuden poistokirjojen määrittäminen (Toukokuu 2016)
+description: Tässä tehtävän ohjauksessa luodaan uusi poistokirja ja liitetään se käyttöomaisuusryhmään.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepBookTable, AssetGroupDepBookSetup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 1fd53ea1dff9b116d19c525c5d6967ece0993b6f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355561"
 ---
 # <a name="set-up-depreciation-books-may-2016"></a>Käyttöomaisuuden poistokirjojen määrittäminen (Toukokuu 2016)
 
@@ -55,5 +55,4 @@ Tässä tehtävän ohjauksessa luodaan uusi poistokirja ja liitetään se käytt
 5. Valitse vaihtoehto Poistomenetelmä-kentässä.
 6. Syötä Käyttöikä-kenttään numero.
     * Ota huomioon, että Poistokaudet-kentän arvo lasketaan käyttöiän määrittämisen jälkeen.  
-
 

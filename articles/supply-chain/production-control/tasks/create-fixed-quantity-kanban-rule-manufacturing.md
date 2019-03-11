@@ -1,13 +1,13 @@
---- 
-title: "Luo valmistuksen vakiomäärän kanban-sääntö"
-description: "Tässä menettelyssä käsitellään määrityksiä, joita tarvitaan luotaessa kiinteää valmistuksen kanban-sääntöä, jolla käynnistetään muuntotehtävät Lean-ympäristön työsolussa."
+---
+title: Luo valmistuksen vakiomäärän kanban-sääntö
+description: Tässä menettelyssä käsitellään määrityksiä, joita tarvitaan luotaessa kiinteää valmistuksen kanban-sääntöä, jolla käynnistetään muuntotehtävät Lean-ympäristön työsolussa.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9e0f58d1e265fb001474eb572b9bc325cf08790c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 8020a37bf0c725fc260574cfe87861aeb017519e
-ms.contentlocale: fi-fi
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338679"
 ---
 # <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a>Luo valmistuksen vakiomäärän kanban-sääntö
 
@@ -73,5 +73,4 @@ Tässä menettelyssä käsitellään määrityksiä, joita tarvitaan luotaessa k
 4. Valitse Luo.
     * Tämä luo 5 kanbania.  
     * Huomaa, että tälle valmistuksen kanban-säännölle luotiin 5 kanbania, joista kunkin arvo on 10. Tämä on tämän menettelyn viimeinen vaihe.  
-
 

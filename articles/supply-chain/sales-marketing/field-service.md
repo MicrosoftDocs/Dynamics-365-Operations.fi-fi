@@ -1,33 +1,32 @@
 ---
-title: Microsoft Dynamics 365 for Field Servicen integrointi
-description: "Tässä ohjeaiheessa on yleiskatsaus Microsoft Dynamics 365 for Field Servicen integroinnista."
+title: Integrointi Microsoft Dynamics 365 for Field Service:n kanssa
+description: Tässä ohjeaiheessa on yleiskatsaus Microsoft Dynamics 365 for Field Servicen integroinnista.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/25/2018
+ms.date: 02/05/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: d636e77888fff383849b3a91bf643475a6d516ac
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
-ms.openlocfilehash: 673ab2a101cee1a3dbbb1249f582d959cecc7f7f
-ms.contentlocale: fi-fi
-ms.lasthandoff: 12/23/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377875"
 ---
-
-# <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Microsoft Dynamics 365 for Field Servicen integrointi
+# <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integrointi Microsoft Dynamics 365 for Field Service:n kanssa
 
 [!include[banner](../includes/banner.md)]
 
@@ -48,23 +47,7 @@ Field Servicen ja Finance and Operationsin ensimmäisen vaiheen integrointi mahd
 
 Esimerkki työtilauksen synkronoimisesta Field Servicen ja Finance and Operationsin välillä on lyhyessä YouTube-videossa [Työtilauksen synkronointi Microsoft Dynamics 365:n integroinnilla](https://www.youtube.com/watch?v=46ylO7raZAo).
 
-## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations -sovelluksen järjestelmävaatimukset
-Field Servicen integrointi tukee seuraavia versioita:
-
-### <a name="dynamics-365-for-finance-and-operations-version-80-april-2018-or-later"></a>Dynamics 365 for Finance and Operations -versio 8.0 (huhtikuu 2018) tai uudempi
-
-- Dynamics 365 for Finance and Operations versio 8.0 (huhtikuu 2018) julkaistiin huhtikuussa 2018; sen koontiversionumero on 8.0.30.8020 ja ympäristöpäivitys 15 (7.0.4841.35234). 
-
-## <a name="system-requirements-for-field-service"></a>Field Servicen järjestelmävaatimukset
-Seuraavat komponentit on asennettava, jotta Field Service -integrointiratkaisua voi käyttää:
-
-### <a name="microsoft-dynamics-365-for-field-service-90-or-later"></a>Microsoft Dynamics 365 for Field Service 9.0 tai uudempi
-
-- Dynamics 365 for Field Servicen versio 1612 (9.0.1.733) (DB 9.0.1.733) online tai uudempi versio
-- Dynamics 365:N prospektista käteiseksi (P2C) -ratkaisu, versio 1.15.0.1 tai uudempi versio. Ratkaisun voi ladata [AppSourcesta](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-- Dynamics 365:n Field Service -integrointiratkaisu, versio 1.0.0.0 tai uudempi versio. Ratkaisun voi ladata [AppSourcesta](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegration).
-
-# <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integrointi Microsoft Dynamics 365 for Field Servicen kanssa varasto- ja projektitiedot mukaan lukien
+## <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integrointi Microsoft Dynamics 365 for Field Servicen kanssa varasto- ja projektitiedot mukaan lukien
 
 Tämä toisen vaiheen lisätoiminto keskittyi antamaan kenttätyöntekijöille käsityksen Finance and Operationsin varastotiedoista, jotta he voivat päivittää varastotasot ja tehdä materiaalisiirtoja. Lisäksi myytyjä hyödykkeitä asentavat tai huoltavat yritykset pystyvät hallitsemaan entistä paremmin koko myynti- ja huoltoprosessia sekä saavat paremman näkyvyyden tähän prosessiin projektien integroinnin ansiosta.
 
@@ -87,15 +70,16 @@ Tämä toisen vaiheen lisätoiminto keskittyi antamaan kenttätyöntekijöille k
 - Projektin työtilaukset (Field Servicestä Fin and Opsiin) – Field Servicen projektin työtilaukset Finance and Operationsin myyntilaukset ja projektituki [Lisäkysely] 
 - Field Servicen tuotteet, joissa varastoyksikkö (Fin and Opsista Salesiin) – Finance and Operationsin Myytävät vapautetut tuotteet Salesin Field Serviceen tuotteisiin, joissa varastoyksiköt 
 
-## <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations -sovelluksen järjestelmävaatimukset
+## <a name="system-requirements"></a>Järjestelmävaatimukset
+
+### <a name="system-requirements-for-finance-and-operations"></a>Finance and Operations -sovelluksen järjestelmävaatimukset
 Field Servicen integrointi tukee seuraavia versioita:
 
-- Dynamics 365 for Finance and Operations versio 8.1.2 (joulukuu 2019) julkaistiin joulukuussa 2019; sen koontiversionumero on 8.1.195 ja ympäristöpäivitys 22 (7.0.5095). 
+- Dynamics 365 for Finance and Operationsin versio 8.1.2 (joulukuu 2019) julkaistiin joulukuussa 2019; sen koontiversionumero on 8.1.195 ja Platform Update 22 (7.0.5095). 
 
-## <a name="system-requirements-for-field-service"></a>Field Servicen järjestelmävaatimukset
+### <a name="system-requirements-for-field-service"></a>Field Servicen järjestelmävaatimukset
 Seuraavat komponentit on asennettava, jotta Field Service -integrointiratkaisua voi käyttää:
 
 - Field Service for Dynamics 365 (versio 8.2.0.286) tai uusi versio Dynamics 365 9.1.x – julkaistiin marraskuussa 2018
 - Dynamics 365:N prospektista käteiseksi (P2C) -ratkaisu, versio 1.15.0.1 tai uudempi versio. Ratkaisun voi ladata [AppSourcesta](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Dynamics 365:n Field Servicen integrointi-, projekti- ja varastoratkaisu, versio 2.0.0.0 tai uudempi versio. Ratkaisun voi ladata [AppSourcesta](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
-

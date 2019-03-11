@@ -1,13 +1,13 @@
 ---
-title: "Tilikauden sulkemisen työtila"
-description: "Tässä artikkelissa on tilikauden sulkemisen työtilan ja liittyvän konfiguraation yleiskatsaus."
+title: Tilikauden sulkemisen työtila
+description: Tässä artikkelissa on tilikauden sulkemisen työtilan ja liittyvän konfiguraation yleiskatsaus.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e9c3c7f00d0a0e4379547edc5199f4a9a6727f3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
-ms.contentlocale: fi-fi
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326903"
 ---
-
 # <a name="financial-period-close-workspace"></a>Tilikauden sulkemisen työtila
 
 [!include [banner](../includes/banner.md)]
@@ -53,7 +52,7 @@ Tehtävissä käytetään kahta mittaria.
 -   Huutomerkkikuvake osoittaa, että tehtävä on erääntynyt. Erääntyneiden tehtävien eräpäivä näkyy punaisena.
 -   Lukkokuvake osoittaa, että tehtävä on riippuvainen muista tehtävistä, jotka eivät ole vielä valmiita. Tehtävää, joka on estetty riippuvuuksien vuoksi, ei voi merkitä valmiiksi. Voit määrittää tehtävän riippuvuudet **Määritä riippuvuus** -toiminnon avulla.
 
-Tehtävän nimi on Microsoft Dynamics 365 for Operations -sivun tai muun sellaisen verkkosivun hyperlinkki, jolla käyttäjä suorittaa työn valmiiksi. Voit määrittää hyperlinkin valitsemalla **Tehtävälinkki**-kentän tehtävän muokkauksen tai luomisen yhteydessä. 
+Tehtävän nimi on Microsoft Dynamics 365 for Operationsin sivun tai muun sellaisen verkkosivun hyperlinkki, jolla käyttäjä suorittaa työn valmiiksi. Voit määrittää hyperlinkin valitsemalla **Tehtävälinkki**-kentän tehtävän muokkauksen tai luomisen yhteydessä. 
 
 Voit liittää tehtäviin tiedostoja, huomautuksia, kuvia ja URL-osoitteita **Liitteet**-toiminnon avulla. Voit esimerkiksi osoittaa tehtävän osana käytettävien kirjauskansioiden määrän, lisätä tiettyä tehtävää koskevia kommentteja tai liittää tehtävälle tulostetun raporttitiedoston. Tehtävän **Liite**-sarakkeessa näkyy kuvake, jos liite on määritetty. 
 
@@ -63,7 +62,7 @@ Voit liittää tehtäviin tiedostoja, huomautuksia, kuvia ja URL-osoitteita **Li
 Voit tarkastella kuluvan ja edellisen kauden suljettuja tehtäviä **Kaikki tilikauden sulkemisen tehtävät** -luettelosivulla. Luettelosivua kannattaa käyttää erityisesti sulkemisprosessin historiallisessa analyysissä, koska luettelosivu sisältää ajoitetun eräpäivän, toteutuneen valmistumispäivän ja tehtävän suorittaneen henkilön tietoja. Voit viedä luettelosivun tiedot helposti Microsoft Exceliin raportointia ja tarkistusta varten.
 
 ## <a name="financial-period-close-configuration-page"></a>Tilikauden sulkemisalueen konfigurointi -sivu
-Ennen kuin **tilikauden sulkemisen** työtilaa voi käyttää, prosessi on määritettävä Microsoft Dynamics 365 for Finance and Operationsissa **Tilikauden sulkemisalueen konfigurointi** -sivulla. (Valitse **Kirjanpito** &gt; **Kauden sulkeminen** &gt; **Tilikauden sulkemisalueen konfigurointi**.)
+Ennen kuin **tilikauden sulkemisen** työtilaa voi käyttää, prosessi on konfiguroitava Microsoft Dynamics 365 for Finance and Operationsissa **Tilikauden sulkemisalueen konfigurointi** -sivulla. (Valitse **Kirjanpito** &gt; **Kauden sulkeminen** &gt; **Tilikauden sulkemisalueen konfigurointi**.)
 
 ### <a name="resources"></a>Resurssit
 
@@ -88,7 +87,7 @@ Tilikauden sulkemismallin avulla voi määrittää kaikki sulkemisprosessin osan
 
 Voit määrittää tehtävän mallissa yhdelle yritykselle tai useille yrityksille, joissa tehtävä on käytössä. Jos tehtävän suorittava henkilö on eri kussakin yrityksessä, samalle työlle kannattaa ehkä luoda useita tehtäviä. Luo kullekin yritykselle yksi tehtävä. 
 
-**Tehtävälinkki**-valikko liitetään tehtävän työhön. Sitä voidaan käyttää suoraan työtilan tehtävälinkin liittyvältä sivulta. Esimerkiksi ostoreskontran valuutan uudelleenarvostusprosessin suorittamisessa käytettävä sulkemistehtävä voidaan linkittää Microsoft Dynamics 365 for Finance and Operations -sovelluksen liittyvään **Ulkomaanvaluutan uudelleenarvostus** -sivulle. Myös ulkoisen URL-osoitteen voi linkittää. 
+**Tehtävälinkki**-valikko liitetään tehtävän työhön. Sitä voidaan käyttää suoraan työtilan tehtävälinkin liittyvältä sivulta. Esimerkiksi ostoreskontran valuutan uudelleenarvostusprosessin suorittamisessa käytettävä sulkemistehtävä voidaan linkittää Microsoft Dynamics 365 for Finance and Operationsissa liittyvään **Ulkomaanvaluutan uudelleenarvostus** -sivulle. Myös ulkoisen URL-osoitteen voi linkittää. 
 
 > [!TIP]
 > Voit linkittää tietyn Management Reporter -raportin tilikauden sulkemistehtävään raportin URL-osoitteen avulla. Voit käyttää raportin URL-osoitetta, kun avaat raportin Report Designer -ohjelmassa ja avaat raportin selaimeen valitsemalla **Tiedosto** &gt; **Näytä raportti**. Tämän jälkeen voit kopioida URL-osoitteen selaimen osoiteriviltä ja liittää sen **tehtävälinkin** **URL**-kenttään. 
@@ -106,7 +105,6 @@ Liitä sulkemisaikatauluun sopiva kalenteri tehtävän ajoituksessa käytettävi
 Määritä myös sulkemisaikatauluun liittyvät yritykset. Jos mallin tehtävät liitetään useisiin yrityksiin, jokaiselle sulkemisaikatauluun liittyvälle ja mallin tehtävään liitetylle yritykselle luodaan erilliset tehtävät. 
 
 Kun sulkemisaikataulu on valmis, valitse sille **Suljettu**-vaihtoehto. Tehtävän historia on yhä käytettävissä **Kaikki tilikauden sulkemisen tehtävät** -luettelosivulla, mutta sulkemisaikataulu poistetaan työtilasta. Kun sulkemisaikataulu on merkitty **suljetuksi**, aikatauluun ei voi lisätä tehtäviä, sen tehtäviä ei voi muokata eikä siitä voi poistaa tehtäviä.
-
 
 
 

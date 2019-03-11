@@ -1,13 +1,13 @@
 ---
-title: "Alusta Retail-ympäristöissä alkutiedot"
-description: "Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Microsoft Dynamics 365 for Retailin alustusprosessia."
+title: Alusta Retail-ympäristöissä alkutiedot
+description: Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Microsoft Dynamics 365 for Retailin alustusprosessia.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.contentlocale: fi-fi
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327892"
 ---
-
-# <a name="initialize-seed-data-in-new-retail-environments"></a>Alusta Retail-ympäristöissä alkutiedot
+# <a name="initialize-seed-data-in-new-retail-environments"></a>Alkutietojen alustaminen uusissa Retail-ympäristöissä
 
 [!include [banner](includes/banner.md)]
 
@@ -40,7 +39,7 @@ Kun Retail-sovellus on otettu käyttöön Microsoft Dynamics Lifecycle Servicesi
 
 Alusta vähittäismyyntikonfiguraatio noudattamalla seuraavia vaiheita:
 
-1. Käynnistä Dynamics 365 for Retail -asiakasohjelma
+1. Käynnistä Dynamics 365 for Retail-työasema.
 2. Valitse **Vähittäismyynti** &gt; **Pääkonttorin asetukset** &gt; **Parametrit** &gt; **Vähittäismyyntiparametrit**.
 3. Napsauta **Alusta**.
 
@@ -56,7 +55,7 @@ Alustaminen luo seuraavat oletusmääritystiedot:
 - Kanavaraportit
 - Määritteen metatiedot
 - Yksikön tarkistusmallit
-- Komentojonotyö Commerce Data Exchange -palvelun historiatietojen tyhjentämiseen
+- Erätyö Commerce Data Exchange -palvelun historiatietojen tyhjentämiseen
 
 Lisäksi maksukorttiyrityksiin (PCI) liittyvät lokiinkirjaukset ovat käytössä Dynamics 365 for Retailin tietokannassa.
 
@@ -70,4 +69,3 @@ Kun alustus on valmis, sinun määritettävä vähittäismyynnin lisätiedot. Se
 - Vähittäismyyntikanavat
 - Kassakoneet ja laitteet
 - Valikoimat
-

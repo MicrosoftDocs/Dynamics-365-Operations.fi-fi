@@ -1,13 +1,13 @@
 ---
 title: Myynti- ja marginaalisuoritusten valvonta
-description: "Voit valvoa myynnin ja katetuoton kehittymistä reaaliajassa käyttämällä Microsoft Dynamics 365 for Retailissa."
+description: Microsoft Dynamics 365 for Retailissa voi valvoa myynnin ja katetuoton kehitystä reaaliaikaisesti.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailSales
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e1d4f693fa9712585593b9d3de43c3603588531c
-ms.contentlocale: fi-fi
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: fi-FI
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357263"
 ---
-
-# <a name="monitor-sales-and-margin-performance"></a>Myynnin ja marginaalien seuranta
+# <a name="monitor-sales-and-margin-performance"></a>Myynnin ja katteen kehittymisen seuranta
 
 [!include [banner](includes/banner.md)]
 
-Voit valvoa myynnin ja katetuoton kehittymistä reaaliajassa käyttämällä Microsoft Dynamics 365 for Retailissa.
+Microsoft Dynamics 365 for Retailissa voi valvoa myynnin ja katetuoton kehitystä reaaliaikaisesti.
 
-Microsoft Dynamics 365 for Retailissa käyttäjät voivat valvoa myynnin ja katetuoton kehittymistä reaaliaikaisesti organisaatiohierarkian eri tasoilla seuraavissa dimensioissa:
+Dynamics 365 for Retailissa käyttäjät voivat valvoa myynnin ja katetuoton kehittymistä reaaliaikaisesti organisaatiohierarkian eri tasoilla seuraavissa dimensioissa:
 
 - Tuotteet
 - Luokat
@@ -50,4 +49,3 @@ Kahden hierarkkista ruudukkorakennetta hyödyntävän yksilöllisen raportin avu
 - **Luokka- ja tuotehallinta** -työtila &gt; **Retail** &gt; **Tuotteet ja luokat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportti**
 - **Hinnoittelun ja alennusten hallinta** -työtila &gt; **Retail** &gt; **Hinnoittelu ja alennukset** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit**
 - **Kyselyt ja raportit** -osio &gt; **Retail** &gt; **Kyselyt ja raportit** &gt; **Myyntiraportit**
-
