@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 944030859c26a1aadeb98a070d071e30f8b86dc4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d15ff8add8a77c27a9f0153c9e881ecae3d9da78
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302241"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403305"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Maksuliikenteen kotisivu
 
@@ -86,13 +86,11 @@ Näitä instrumentteja ovat esimerkiksi talletuskuitit, sekit, vekselit ja velka
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustolla on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
+Siirry [Microsoft Dynamics 365:n julkaisutietoihin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä, millaisia uusia toimintoja on suunniteltu. 
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) on maksuliikenteen hallintaa sekä muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
-
-[Microsoft Dynamics AX -tuoteryhmän blogissa](https://blogs.msdn.microsoft.com/dax/) on useita maksuliikenteen hallintaa käsitteleviä kirjoituksia. Vaikka monet kirjoitukset koskevat maksuliikenteen hallinnan edellistä versiota, samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia myös nykyisessä versiossa.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
 

@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Microsoft Dynamics 365 for Finance and Operations -dokumentaatio
 description: Dokumentaatio Microsoft Dynamics 365 for Finance and Operations -ohjelmalle.
 author: margoc
 manager: AnnBe
-ms.date: 08/30/2018
+ms.date: 03/08/2019
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-ax-applications
-ms.technology: ''
+ms.technology: null
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: 'Core, Operations'
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302209"
 ---
+
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations -dokumentaatio
 
 [!include [banner](includes/banner.md)]
@@ -44,12 +40,26 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Microsoft Dyna
 <h3><a href="get-started/before-you-buy.md">Ennen ostamista</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Kokeiluversion tilaaminen</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Valitse käyttövaihtoehto</a></p>
- <p><a href="get-started/purchase-on-premises.md">Finance and Operationsin (paikallinen) ostaminen</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Finance and Operations (on-premises) -ratkaisun ostaminen</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Toteutuksen elinkaari</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Projektin käyttöönotto</a></p>
-<p><a href="imp-lifecycle/prepare-go-live.md">Julkaisun valmistelu</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Valmistellaan käyttöönottoa</a></p>
+
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Yhden version palvelupäivitykset</a></h3>
+<p><a href="get-started/one-version.md">Yhden version palvelupäivitysten usein kysytyt kysymykset</a></p>
+<p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Ohjelmiston elinkaarikäytäntö: Pilvi</a></p>
+<p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Ohjelmiston elinkaarikäytäntö: Paikalliset versiot</a></p>
+<p><a href="get-started/public-preview-releases.md">Palvelun vakiopäivitykset ja ensimmäisen julkaisun päivitykset</a></p>
+<p><a href="get-started/whats-new-changed.md">Uudet ja muuttuneet ominaisuudet</a></p>
+<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Päivitysten käyttöönotto pilviympäristöissä</a></p>
+<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Määritä palvelupäivitykset</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Keskeytä palvelupäivitykset</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Saat ilmoituksia palvelupäivityksistä</a></p>
+<p><a href="../dev-itpro/data-entities/data-task-automation.md">Tietotehtävän automaatio</a></p>
+<p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
 
 <h3><a href="../financials/index.md">Taloushallinto</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Ostoreskontra</a></p>
@@ -71,6 +81,8 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Microsoft Dyna
 <p><a href="hr/manage-recruiting-process.md">Työhönotto</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Yhdysvaltojen palkanlaskenta</a></p>
 
+</td>
+<td>
 <h3><a href="../supply-chain/index.md">Toimitusketjun hallinta</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Kustannushintojen hallinta</a></p>
 <p><a href="../supply-chain/inventory/inventory-home-page.md">Varastonhallinta</a></p>
@@ -82,8 +94,7 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Microsoft Dyna
 <p><a href="../supply-chain/transportation/transportation-management-overview.md">Kuljetustenhallinta</a></p>
 <p><a href="../supply-chain/warehousing/warehouse-configuration.md">Varastonhallinta</a></p>
 
-</td>
-<td>
+
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Tiedot</a></h3>
 <p><a href="../dev-itpro/analytics/analytics.md">Analytiikka</a></p>
  <p><a href="../dev-itpro/analytics/document-reporting-services.md">Liiketoiminta-asiakirjat</a></p>
@@ -98,7 +109,7 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Microsoft Dyna
 <p><a href="../dev-itpro/data-entities/integration-overview.md">Tietojen integrointi</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Tietojen hallinta</a></p>
 
-<p><a href="../dev-itpro/office-integration/office-integration.md">Office-integraatio</a></p>
+<p><a href="../dev-itpro/office-integration/office-integration.md">Office-integrointi</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Jatkuva toimitus</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobiiliympäristö</a></p>
 <p><a href="get-started/demo-data.md">Esittelytiedot</a></p>

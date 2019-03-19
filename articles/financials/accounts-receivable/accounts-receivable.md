@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 98ec7d9a57cc39c22a31c025754c83dc1a95139e
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302237"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403375"
 ---
 # <a name="accounts-receivable-home-page"></a>Myyntireskontran aloitussivu
 
@@ -96,13 +96,11 @@ Voit hyväksyä asiakkaiden erilaisia maksuvälineitä, kuten vekseleitä, käte
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustolla on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
+Siirry [Microsoft Dynamics 365:n toteutussuunnitelmaan](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä uudet suunnitteilla olevat toiminnot. 
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) on myyntireskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
-
-[Microsoft Dynamics AX -tuoteryhmän blogissa](https://blogs.msdn.microsoft.com/dax/) on useita myyntireskontraa käsitteleviä kirjoituksia. Vaikka jotkin näistä viesteistä on kirjoitettu edellistä myyntireskontran versiota varten, samoja käsitteitä käytetään edelleen. ja menettelyt ovat samanlaisia nykyisessä versiossa.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on myyntireskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
 

@@ -3,7 +3,7 @@ title: Ostoreskontran aloitussivu
 description: Tässä aiheessa on yleiskuvaus ostoreskontrasta.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/18/2017
+ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f1acf2bade2bb279a35fdf4689bbbcc49e64101f
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302219"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403282"
 ---
 # <a name="accounts-payable-home-page"></a>Ostoreskontran aloitussivu
 
@@ -123,15 +123,17 @@ Seuraavissa ohjeaiheissa on tietoa tilityksistä. Tilitys tarkoittaa maksujen ti
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustolla on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
+Siirry [Microsoft Dynamics 365:n julkaisutietoihin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä uudet suunnitteilla olevat toiminnot. 
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) on ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
-
-[Microsoft Dynamics AX -tuoteryhmän blogissa](https://blogs.msdn.microsoft.com/dax/) on useita ostoreskontraa käsitteleviä kirjoituksia. Vaikka monet kirjoitukset koskevat ostoreskontran aiempaa versiota, samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia myös nykyisessä versiossa.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
+
+#### <a name="community-blogs"></a>Yhteisöblogit
+
+[Ostovelkojen hallinta Dynamics 365 for Finance and Operations -sovelluksessa](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Tehtäväoppaat
 Finance and Operationsin tehtäväoppaissa on lisäohjeita. Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.
