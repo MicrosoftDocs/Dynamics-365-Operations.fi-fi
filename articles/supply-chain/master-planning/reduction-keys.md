@@ -3,7 +3,7 @@ title: Vähennysavaimet
 description: Tämä artikkeli sisältää esimerkkejä, jotka kuvaavat vähennysavaimen määrittämistä. Artikkelissa kuvataan erilaisia vähennysavaimen asetuksia ja kunkin asetuksen tuloksia. Vähennysavaimen avulla voit määrittää, kuinka ennustevaatimuksia voidaan vähentää.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e62431a1fdbeb81dda68297f034ee00adece079
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364807"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770913"
 ---
 # <a name="reduction-keys"></a>Vähennysavaimet
 
@@ -98,6 +98,7 @@ Useimmiten järjestelmät on määritetty siten, että tapahtumat vähentävät 
 
    Tässä ennusteessa ennustepäivämäärien välillä ei ole selvää jaksoa. Ensimmäisen ja toisen päivämäärän välissä on neljä päivää ja toisen sekä kolmannen päivämäärän välissä seitsemän päivää. Nämä eri aikavälit ovat dynaamisia kausia.
 2. Luo myyntitilausrivit seuraavasti.
+
    | Päivämäärä                             | Myyntitilauksen määrä |
    |----------------------------------|----------------------|
    | 15. joulukuuta edellisenä vuonna | 500                  |

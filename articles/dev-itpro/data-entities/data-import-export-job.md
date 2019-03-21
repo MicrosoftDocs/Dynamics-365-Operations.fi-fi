@@ -3,7 +3,7 @@ title: Tietojen tuonti- ja vientityöt
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
+ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360207"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "834657"
 ---
 # <a name="data-import-and-export-jobs"></a>Tietojen tuonti- ja vientityöt
 
@@ -128,6 +128,9 @@ Työ voidaan suojata samaan aikaan rooli-, käyttäjä- ja yritysperusteisesti.
 
 ## <a name="run-the-import-or-export-job"></a>Suorita tuonti- tai vientityö
 Voit suorittaa työn kerran valitsemalla **Tuo**- tai **Vie**-painikkeen, kun olet määrittänyt työn. Voit määrittää toistuvan työn valitsemalla **Luo toistuva tietotyö**.
+
+[!NOTE]
+Tuonti- tai vientityö voidaan suorittaa asynkronisesti valitsemalla **Tuo**- tai **Vie**-painike. Asynkroninen suorittaminen käyttää Finance and Operationsin asynkronista kehystä, joka eroaa eräkehyksestä. Eräkehyksen tavoin asynkronisessa kehyksessä voi kuitenkin esiintyä rajoituksia, minkä vuoksi työtä ei ehkä suoriteta heti. Työt voidaan suorittaa myös synkronisesti valitsemalla **Tuo nyt** tai **Vie nyt**. Työ käynnistetään nyt automaattisesti, mikä on kätevää, jos asynkronointi tai erä ei käynnisty rajoittamisen vuoksi. Työt voidaan suorittaa myös eräajona valitsemalla **Suorita eräajona** -asetus. Rajoitus koskee eräresursseja, joten eräajo ei välttämättä käynnisty heti. Asynkroninen asetus on kätevä, kun käyttäjät käyttävät käyttöliittymää suoraan eivätkä ole eräaikataulutusta ymmärtäviä tehokäyttäjiä. Eräajon käyttäminen on toinen vaihtoehto, jos tuotava tai vietävä määrä on suuri. Eräajot voidaan aikatauluttaa suoritettavaksi tiettyinä eräryhminä, mikä parantaa kuormituksen hallintaa. Jos asynkronista käsittelyä ja eräajoa rajoitetaan järjestelmän suuren resurssien käyttöasteen vuoksi, ongelman voi ratkaista heti käyttämällä tuonnin tai vienti synkronista versiota. Synkroninen vaihtoehto käynnistyy heti, ja se estää käyttöliittymän käytön, sillä suoritus tapahtuu synkronisesti. Selainikkunan on pysyttävä avoimena synkronisen toiminnon ollessa kesken.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Vahvista, että työ suoritettiin odotetulla tavalla
 Työhistoria on käytettävissä tuonti- ja vientitöiden ongelmanratkaisuun ja tutkintaan. Historian työt on järjestetty aikajaksoille.

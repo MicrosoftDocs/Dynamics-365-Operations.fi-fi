@@ -3,7 +3,7 @@ title: Käyttöomaisuuden integrointi
 description: Käyttöomaisuus voidaan integroida kirjanpitoon, varastonhallintaan, myyntireskontraan ja ostoreskontraan. Käyttöomaisuuden voi integroida myös ostotilauksiin.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5d33de3af05668bc9aedc94894b12d16daf78e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2023d68a1455c6bb5ec569b6ae19fc3268f8769d
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336977"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778152"
 ---
 # <a name="fixed-assets-integration"></a>Käyttöomaisuuden integrointi
 
@@ -41,7 +41,7 @@ Kirjanpidossa käyttöomaisuus esitetään yleensä arvon yhteenvetona useilla p
 ## <a name="inventory-management"></a>Inventoinnin- ja varastonhallinta
 Käyttöomaisuuden varastokirjauskansiossa voit kirjoittaa käyttöomaisuuden hankinnan, jonka yritys on tuottanut tai valmistanut itselleen. Tämän jälkeen voit siirtää varastonimikkeet käyttöomaisuuteen joko hankintana tai osana hankintaa. 
 
-Käyttöomaisuuseriä voi hankkia myös ostotilauksia käyttäen. Kun ostotilauksissa on käyttöomaisuuseriksi määritettyjä varastonimikkeitä, **Salli käyttöomaisuuden hankinta ostosta** -vaihtoehdon asetus **Käyttöomaisuuden parametrit** -sivulla määrittää, kirjataanko hankinta käyttöomaisuuserälle laskun kirjaamisen yhteydessä. Käyttöomaisuuden hankinnan vaikutus varastoon riippuu yrityksen asetuksista. 
+Käyttöomaisuuseriä voi hankkia myös ostotilauksia käyttäen. Kun ostotilauksissa on käyttöomaisuuseriksi määritettyjä varastonimikkeitä, **Salli käyttöomaisuuden hankinta ostosta** -vaihtoehdon asetus **Käyttöomaisuuden parametrit** -sivulla määrittää, kirjataanko hankinta käyttöomaisuuserälle laskun kirjaamisen yhteydessä. Yksi ostorivi voi luoda yhden käyttöomaisuuden määrästä riippumatta. Käyttöomaisuuden hankinnan vaikutus varastoon riippuu yrityksen asetuksista. 
 
 Kun varastonimikkeestä tulee käyttöomaisuushankinta varastokirjauskansion, ostotilauksen tai hankintaehdotuksen kautta, käyttöomaisuuskirjan hankintatapahtuma muodostetaan. Jos kirjan hankinta sisältää johdetun kirjan, luodaan myös johdetun kirjan hankintatapahtuma. 
 

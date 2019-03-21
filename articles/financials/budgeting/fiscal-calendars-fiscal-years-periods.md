@@ -3,7 +3,7 @@ title: Kirjanpidon kalenterit, tilikaudet ja kaudet
 description: Tässä artikkelissa käsitellään kirjanpidon vuosikalentereita ja tilikausia sekä sitä, miten niitä käytetään yrityksissä, käyttöomaisuudessa ja budjetoinnissa.
 author: aprilolson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 01f8f939079d55d5a75d1a4b1fd718bf2a3f9700
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361656"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778198"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Kirjanpidon kalenterit, tilikaudet ja kaudet
 
@@ -43,7 +43,7 @@ Päätöskautta käytetään erottamaan pääkirjanpidon tapahtumat, jotka luoda
 Luodessasi lopetuskauden valitse kausi, jonka tila on Avoin ja jonka päivämääriä haluat käyttää. Uusi päätöskausi kopioi aloitus- ja lopetuspäivämäärät nykyisestä kaudesta. Alkuperäinen kausi on edelleen olemassa. Valitse esimerkiksi kausi 12, joka on tilikauden viimeisen kausi ja jonka päivämäärät ovat 1.-31.8. Voit nimetä sulkemiskauden esim. nimellä Sulje. Kun olet luonut uuden päätöskauden, sinulla on nyt alkuperäinen kausi ja päätöskausi. Molemmissa on päivämäärät, jotka alkavat 1.8. ja päättyvät 31.8.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Valitse kirjanpidon, käyttöomaisuuden ja budjettijaksojen tilikauden kalenterit
-Kirjanpidon kalentereita käytetään käyttöomaisuuden poistojen, kirjanpitotapahtumien ja budjettijaksojen kanssa. Kirjanpidon vuosikalenterin luodessasi voit käyttää sitä useita tarkoituksia varten. Voit valita kirjanpidon vuosikalenterin arvomallille tai poistokirjalle tehdäksesi riitä käyttöomaisuuskalenterin. Voit valita kirjanpidolle budjettijaksolle ja tehdä siitä budjettikalenterin. Voit valita budjettijaksolle kirjanpidon vuosikalenterin ja tehdä siitä budjettikalenterin. Voit käyttää samaa kirjanpidon vuosikalenteria näille kaikille.
+Kirjanpidon kalentereita käytetään käyttöomaisuuden poistojen, kirjanpitotapahtumien ja budjettijaksojen kanssa. Kirjanpidon vuosikalenterin luodessasi voit käyttää sitä useita tarkoituksia varten. Voit valita kirjanpidon vuosikalenterin käyttöomaisuuskirjalle tehdäksesi riitä käyttöomaisuuskalenterin. Voit valita kirjanpidolle budjettijaksolle ja tehdä siitä budjettikalenterin. Voit valita budjettijaksolle kirjanpidon vuosikalenterin ja tehdä siitä budjettikalenterin. Voit käyttää samaa kirjanpidon vuosikalenteria näille kaikille.
 
 ### <a name="select-a-fiscal-calendar-for-your-legal-entity"></a>Valitse oikeushenkilöllesi kirjanpidon vuosikalenteri
 
@@ -51,7 +51,7 @@ Valitse Kirjanpito-lomakkeessa kirjanpidon kalenteri, jota haluat käyttää yri
 
 ### <a name="select-a-fiscal-calendar-for-fixed-assets"></a>Valitse verovuosi käyttöomaisuudelle
 
-Voit valita kirjanpidon vuosikalenterin arvomallille tai poistokirjalle, ja tätä vuosikalenteria käytetään käyttöomaisuuteen, joka käyttää valittua arvomallia tai poistokirjaa. Voit valita kaikista kirjanpidon kalentereista, jotka on määritetty Kirjanpidon kalenterit -sivulla.
+Voit valita kirjanpidon vuosikalenterin käyttöomaisuuskirjalle, ja tätä vuosikalenteria käytetään käyttöomaisuuteen, joka käyttää valittua kirjaa. Voit valita kaikista kirjanpidon kalentereista, jotka on määritetty Kirjanpidon kalenterit -sivulla.
 
 ### <a name="define-budget-cycle-time-spans"></a>Määritä budjettijakson aikavälit
 

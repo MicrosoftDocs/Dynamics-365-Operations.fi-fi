@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cd637f1b74056db89520b762255d03afa3855ba
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 11445390acef5ddfd57a1a0017e8bc423cdb1914
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313402"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403211"
 ---
 # <a name="expense-management"></a>Kulujen hallinta
 
@@ -37,15 +37,13 @@ Kulujenhallinta-moduulin avulla voit luoda integroidun työnkulun, johon voit ta
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustossa on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
+Tutustu suunniteltuihin uusiin ominaisuuksiin siirtymällä [Microsoft Dynamics 365:n julkaisutietoihin](https://go.microsoft.com/fwlink/?linkid=2010158). 
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) on myyntireskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
+Mielipiteitä, uutisia ja muita tietoja on [Microsoft Dynamics 365:n blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operationsin taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-[Microsoft Dynamics AX -tuoteryhmän blogissa](https://blogs.msdn.microsoft.com/dax/) on useita myyntireskontraa käsitteleviä kirjoituksia. Vaikka jotkin näistä viesteistä on kirjoitettu edellistä myyntireskontran versiota varten, samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa.
-
-[Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
+[Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista. 
 
 #### <a name="task-guides"></a>Tehtäväoppaat
 Finance and Operationsin tehtäväoppaissa on lisäohjeita. Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.

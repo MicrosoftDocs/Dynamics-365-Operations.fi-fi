@@ -1,9 +1,9 @@
 ---
-title: Näytä raportit
-description: Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 for Finance and Operationsissa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
+title: Raporttien tarkasteleminen
+description: Tässä ohjeaiheessa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 for Finance and Operationsissa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
 author: kweekley
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
+ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312942"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791438"
 ---
-# <a name="view-financial-reports"></a>Näytä raportit
+# <a name="view-financial-reports"></a>Raporttien tarkasteleminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 for Finance and Operationsissa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
+Tässä ohjeaiheessa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 for Finance and Operationsissa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
 
 <a name="financial-reporting-overview"></a>Taloushallinnon raportoinnin yleiskatsaus
 ----------------------------
@@ -67,18 +67,15 @@ Talousraportti voidaan näyttää minä vain valuuttana milloin tahansa. Näytt�
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>Näytä talousraportti yhteenvetona
 Talousraportti voi sisältää erittelyrivejä ja yhteenveto-rivejä. Erittelyrivit ovat rivejä, joilla on päätilit tai dimensiot. Yhteenvetorivit ovat kuvaus-, summa- ja laskentarivejä. Näyttääksesi vain yhteenvetorivit raportissa, klikkaa **näytä** ja valitse sitten **vain yhteenvetorivit**. Raportti on tiivistetty ja näyttää vain yhteenvetorivit. Nähdäksesi yhteenvetorivit sekä erittelyrivit, klikkaa **näytä** ja valitse sitten **vain yhteenvetorivit** uudelleen.
 
-## <a name="open-a-financial-report-from-a-previous-month"></a>Avaa edellisen kuukauden taloudellinen raportti
-Voit tarkastella edellisten kuukauksien tai kuluvan kuukauden raportteja ilman raportin uudelleen tekemistä. Voit avata raportin edelliselle kuukaudelle valitsemalla **Näytä** ja valitsemalla sitten **Edelliset raportit**. Näkyviin tulee luettelo edellisistä kuukausista, joille raportti on luotu. Laajenna kuukausi lukeaksesi raportin, valitse päivämäärä ja valitse sitten **OK**. Edellisen kuukauden raportti tulee näkyviin. Voit palauttaa kuluvan kuukauden raportin valitsemalla **peruuta**.
-
 ## <a name="print-a-financial-report"></a>Tulosra talousraportti
-Tulostaaksesi talousraportin toimintoruudussa, valitse **tulosta** ja noudata sitten yhtä tai useampaa seuraavista askeista määrittääksesi tulostusasetukset:
+Taloushallinnon raportin tulostaminen luo PDF-tiedoston, joka voidaan sitten tulostaa manuaalisesti. Luo tulostettava talousraportti valitsemalla toimintoruudussa **Tulosta** ja määritä sitten tulostusasetukset seuraavien ohjeiden mukaan:
 
 -   Sisällyttääksesi yksityiskohtaisia tasoja tulostettavaan raporttiin, säädä liukusäätimellä **kyllä** tai **ei**. Jos raportissa käytetään raportointipuuta, voit valita kaikki raportointiyksiköt tai vain nykyisen raportointiyksikön.
 -   Määrittääksesi sivun koon, valitse luettelosta sivun koko.
 -   Määrittääksesi sivun asettelun, valitse sivun asettelu luettelosta. Jos haluat raportin sisällön mahtuvan leveyteen, jonka olet valinnut, aseta liukusäädin asentoon **kyllä**.
 -   Määrittääksesi sivun varmuusmarginaalit, kirjoita ylä- ja alamarginaalin sekä vasemman ja oikean marginaalin koko tuumina.
 
-Sen jälkeen, kun olet määritätänyt tulostusasetukset, valitse **tulosta** tulostaaksesi raportin. Jos päätät, että et halua tulostaa raporttia, klikkaa **peruuta** sen sijaan. Tulostettavan raportin esikatselu tulee näkyviin. Voit valita tulostimen, johon raportti lähetetään ja voit myös määrittää tulostusasetuksia.
+Kun tulostusasetukset on määritetty, jatka valitsemalla **Tulosta**, jolloin kysytään, haluatko ladata tiedoston, tai tallennan tiedosto OneDriveen tai SharePointiin. Jos päätät, ettet halua jatkaa, valitse siinä tapauksessa **Peruuta**. Kun jatkat, raportin hahmonnus palvelimessa alkaa ja sinua pyydetään lataamaan raportti PDF-muodossa. Voit nyt tarkastella raporttia PDF-katseluohjelmassa sekä valita tulostimen, johon raportti lähetetään, sekä tehdä muutoksia tulostusasetuksiin.
 
 ## <a name="export-a-financial-report"></a>Lähetä talousraportti
 Lähettääksesi talousraportin. toimintoruudussa, klikkaa **lähetä**. Raportti lähetetään Microsoft Exceliin ja selaimesi kysyy, haluatko avata tai tallentaa vientitiedostoon. Vientiasetuksia, jotka on määritetty raportin suunnittelussa, käytetään vietävään raporttiin.    
@@ -86,7 +83,7 @@ Lähettääksesi talousraportin. toimintoruudussa, klikkaa **lähetä**. Raportt
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Microsoft Dynamics AX:n taloushallinnon raportointi](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Talousraportointi](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

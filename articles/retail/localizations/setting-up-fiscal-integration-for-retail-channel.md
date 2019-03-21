@@ -3,7 +3,7 @@ title: Vähittäismyyntikanavien kirjanpidon integroinnin määrittäminen
 description: Tässä ohjeaiheessa on ohjeet vähittäismyyntikanavien kirjanpidon integrointitoiminnon määrittämiseen.
 author: josaw
 manager: annbe
-ms.date: 2/01/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3c2945c4310dc4c1ae74f215e9b28056e7d1ede9
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377303"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773324"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Vähittäismyyntikanavien kirjanpidon integroinnin määrittäminen
 
@@ -175,7 +175,7 @@ Alennusta käytettäessä verokuittiin on joissakin tapauksissa tulostettava eri
     3. Määritä **Verokuitin teksti** -kentässä verokuittiin tulostettava kirjanpitoteksti.
 
     > [!NOTE]
-    > Jos samalle tapahtumariville käytetään useita alennuksia, verokuitissa on kirjanpitotekstiä kaikista kyseiseen tapahtumariviin linkitetyistä alennuksista. 
+    > Jos samalle tapahtumariville käytetään useita alennuksia, verokuitissa on kirjanpitotekstiä kaikista kyseiseen tapahtumariviin linkitetyistä alennuksista.
 
 ## <a name="set-error-handling-settings"></a>Virheen käsittelyasetusten määrittäminen
 
@@ -210,3 +210,4 @@ Kirjanpidon X/Z-raporttien suorittaminen myyntipisteestä edellyttää, että my
     2. Lisää uusi painike, määritä **Tulosta kuitti X** -painikeominaisuus.
     3. Lisää uusi painike ja määritä **Tulosta kuitti Z** -painikeominaisuus.
     4. Siirrä muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.
+

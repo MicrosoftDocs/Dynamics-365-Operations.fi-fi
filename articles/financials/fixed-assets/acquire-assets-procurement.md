@@ -3,7 +3,7 @@ title: Käyttöomaisuuserien hankinta
 description: Tässä ohjeaiheessa kuvataan, kuinka tehdään käyttöomaisuuden ja ostoreskontran väliset integrointimääritykset, luodaan käyttöomaisuuserä automaattisesti ostotilauksesta tai laskusta tai kirjataan käyttöomaisuuserien hankinta- ja hankintaoikaisutapahtumat automaattisesti.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eef69de1c93de5c19b9f197838f1f2d3eb2e7645
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ba3484e62caa790a5b05ae0693f69926514f6425
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "355791"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778221"
 ---
 # <a name="acquire-assets-through-procurement"></a>Käyttöomaisuuserien hankinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan, kuinka tehdään käyttöomaisuuden ja ostoreskontran väliset integrointimääritykset, luodaan käyttöomaisuuserä automaattisesti ostotilauksesta tai laskusta tai kirjataan käyttöomaisuuserien hankinta- ja hankintaoikaisutapahtumat automaattisesti.
+Tässä ohjeaiheessa kuvataan, kuinka tehdään käyttöomaisuuden ja ostoreskontran väliset integrointimääritykset, luodaan käyttöomaisuuserä automaattisesti ostotilauksesta tai laskusta tai kirjataan käyttöomaisuuserien hankinta- ja hankintaoikaisutapahtumat automaattisesti. Yksi ostorivi voi luoda yhden käyttöomaisuuden ostorivin määrästä riippumatta. Jos käyttöomaisuuksia on luotava useita, myös ostorivejä on luotava useita.
 
  Järjestelmä sisältää seuraavat menetelmät, joilla käyttöomaisuuserät ja ostoreskontra voidaan integroida. Samaa menetelmää on käytettävä kaikille käyttöomaisuuserille:
 -   Luot käyttöomaisuuserän manuaalisesti, ennen kuin lisäät käyttöomaisuuserän numeron ostotilauksen tai toimittajan laskun riville. Käyttöomaisuuden hankintatapahtuma kirjataan automaattisesti, kun kirjaat toimittajan laskun. Tämä on oletusmenetelmä.

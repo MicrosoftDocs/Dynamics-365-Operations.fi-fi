@@ -3,7 +3,7 @@ title: Myyntireskontran keskitetyt maksut
 description: Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja tapahtumia ei tarvitse lisätä useisiin yrityksiin. Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9eb935d32e61b2cf0ec8710f6c2cfb18ecfe034
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f6b8b1548bf70363431ad58482ba82cf11017332
+ms.sourcegitcommit: ca1a472a670393f7aa208189dc8964c9691e2cdc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330744"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "390140"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Myyntireskontran keskitetyt maksut
 
@@ -33,7 +33,7 @@ Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja 
 
 Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja tapahtumia ei tarvitse lisätä useisiin yrityksiin. Organisaatio säästää myös aikaa, koska maksuehdotusten, tilitysten sekä avoimien ja suljettujen tapahtumien keskitetyt maksuprosessit ovat tehokkaita. 
 
-Maksujen keskittämiseen tarkoitetussa organisaatiossa on useita toimintaa harjoittavia yrityksiä, ja jokainen toimintaa harjoittava yritys hallitsee omien saatavien laskujen tietojaan. Maksut kaikille toimintaa harjoittaville yrityksille vastaanotetaan yhdestä yrityksestä, joka toimii maksun yrityksenä. Selvitysprosessin aikana sovellettavissa olevat erääntymiskohteen ja -lähteen tapahtumat muodostetaan. Voit määrittää, mikä organisaatioon kuuluva yritys vastaanottaa toteutuneet voitto- tai tappiotapahtumat ja kuinka keskitettyihin maksuihin liittyvät käteisalennustapahtumat käsitellään. 
+Maksujen keskittämiseen tarkoitetussa organisaatiossa on useita toimintaa harjoittavia yrityksiä, ja jokainen toimintaa harjoittava yritys hallitsee omien saatavien laskujen tietojaan. Maksut kaikille toimintaa harjoittaville yrityksille vastaanotetaan yhdestä yrityksestä, joka toimii maksun yrityksenä. Selvitysprosessin aikana sovellettavissa olevat erääntymiskohteen ja -lähteen tapahtumat muodostetaan. Voit määrittää, mikä organisaatioon kuuluva yritys vastaanottaa toteutuneet voitto- tai tappiotapahtumat ja kuinka keskitettyihin maksuihin liittyvät käteisalennustapahtumat käsitellään. Keskitetyn maksukirjauskansion rivin **tilityypiksi** on määritettävä asiakas. **Vastatilin tapahtumalajiksi** on määritettävä pankki tai kirjanpito. Pankkitilin on oltava nykyisessä yrityksessä. 
 
 Seuraavissa esimerkeissä näytetään, kuinka kirjaus toteutetaan eri tilanteissa. Lähtötilanne on kaikissa esimerkeissä sama:
 
@@ -296,8 +296,3 @@ Fabrikam vastaanottaa maksun, jonka summa on 75,00, asiakkaalta 4000, Northwind 
 | Myyntireskontra (Fabrikam West)    |              | 75,00         |
 | Maksaja Fabrikam East (Fabrikam West) | 25,00        |               |
 | Myyntireskontra (Fabrikam West)    |              | 25,00         |
-
-
-
-
-
