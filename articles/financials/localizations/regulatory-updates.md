@@ -3,7 +3,7 @@ title: Pakolliset päivitykset
 description: Tässä ohjeaiheessa on luettelo Microsoft Dynamics 365 for Finance and Operationsin suunnitelluista ja julkaistuista pakollisista päivityksistä.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/25/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 9dcf958165cffa3e3cd62b88a71295eefae9cf8f
-ms.sourcegitcommit: f004451a260b5be6c15c3975cd9e63ba9c1a7a2e
+ms.openlocfilehash: 3beeb77819661de3f6b55766a1f8a5bd1fe023ba
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "375987"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832098"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -40,6 +40,14 @@ Kun Päivämäärä-sarakkeessa käytetään kuukautta, pakollinen päivitys on 
 |      Maaliskuun 2019.          |   10,0,0      | Itävalta      |   Kammerumlage 2019:n muutokset (ostovero)    |
 |      Maaliskuun 2019.          |   10,0,0      |   Brasilia    |     SPED EFD -maksut – asettelu 004 ja 005  |
 |      Maaliskuun 2019.          |   10,0,0      |    Malesia     |Malesia korvaa GST-veron SST-myynti- ja palveluverolla        |
+|      Huhtikuun 2019.          |   10.0.1      |    Itävalta     |Retail – Kirjanpidon integrointi         |
+|      Huhtikuun 2019.          |   10.0.1      |    Eurooppa     |Sähköinen laskutus – asiakaslaskujen vienti PEPPOL BIS 3 -muodossa         |
+|      Huhtikuun 2019.          |   10.0.1      |    Eurooppa     |Sähköinen laskutus – toimittajalaskujen tuonti PEPPOL BIS 3 -muodosta         |
+|      Huhtikuun 2019.          |   10.0.1      |   Saksa     |Sähköinen laskutus – asiakaslaskujen vienti xRechnung 1.1 -muodossa         |
+|      Huhtikuun 2019.          |   10.0.1      |    Iso-Britannia     |[ALV-ilmoituksen lähetyksen muutokset (digitaalinen vero)](emea-gbr-mtd-vat-integration.md)    |    
+|      Huhtikuun 2019.          |   10.0.1      |    Brasilia     |NF-e uusi NT 2018.005         |
+|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |ALV-ilmoituksen muotoilumuutokset 2019 alkaen         |
+|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |ALV-ilmoituksen muotoilu muuttuu 2019 alkaen (osto- ja poistokirjojen muodot)  |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 - Etsi kaikki suunnitellut ja julkaistut pakolliset päivitykset [Lifecycle Service – ongelmahaussa](https://lcs.dynamics.com/Logon/Index) (pakollinen kirjautuminen).

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377132"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773274"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Vähittäismyyntikanavien kirjanpidon integroinnin yleiskatsaus
 
@@ -30,7 +30,7 @@ ms.locfileid: "377132"
 
 ## <a name="introduction"></a>Johdanto
 
-Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 for Retailin kirjanpidoin integrointitoiminnoista. Kirjanpidon integrointi sisältää sellaisten erilaisten kirjanpidon laitteiden ja palvelujen integroinnin, joilla kirjanpidon rekisteröinti voidaan ottaa vähittäismyynnissä käyttöön paikallisten, vähittäismyyntialan veropetoksia estävän kirjanpitolainsäädännön mukaisesti. Kirjanpidon integraatiota voidaan esimerkiksi seuraavissa tyypillisissä skenaarioissa: 
+Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 for Retailin kirjanpidoin integrointitoiminnoista. Kirjanpidon integrointi sisältää sellaisten erilaisten kirjanpidon laitteiden ja palvelujen integroinnin, joilla kirjanpidon rekisteröinti voidaan ottaa vähittäismyynnissä käyttöön paikallisten, vähittäismyyntialan veropetoksia estävän kirjanpitolainsäädännön mukaisesti. Kirjanpidon integraatiota voidaan esimerkiksi seuraavissa tyypillisissä skenaarioissa:
 
 - Myynnin rekisteröinti kirjanpidon laitteessa, joka on liitetty Retail POS:ään, kuten kuittitulostimeen, ja verokuitin tulostaminen asiakkaalle.
 - Retail POS:ssä suoritettuun myyntiin ja palautuksiin liittyvien tietojen lähettäminen turvallisesti ulkoiseen, veroviranomaisen ylläpitämään verkkopalveluun.
@@ -87,6 +87,7 @@ Kun transaktion tai tapahtuman kirjanpidon rekisteröinti onnistuu, kirjanpitota
 
 *P-työ* siirtää kirjanpitotapahtumat siirretään Retail Headquartersiin yhdessä vähittäismyynnin transaktioiden kanssa. Voit tarkastella **Vähittäismyymälän tapahtumat** -sivun **Tilikauden tapahtumat** -pikavälilehdellä vähittäismyyntitapahtumiin linkitettyjä kirjanpitotapahtumia.
 
+
 Kirjanpitotapahtumaan tallennetaan seuraavat tiedot:
 
 - Kirjanpidon rekisteröintiprosessin tiedot (kuten prosessi, yhdistinryhmä ja yhdistin). Siihen tallennetaan myös **Kassakoneen numero** -kentässä oleva kirjanpidon laitteen sarjanumero, jos tämä tieto sisältyy kirjanpidon vastaukseen.
@@ -115,4 +116,5 @@ Myös seuraava kirjanpidon integrointitoiminto on käytettävissä Retail SDK:ss
 
 - [Digitaalinen allekirjoitus Ranskassa](emea-fra-cash-registers.md)
 - [Digitaalinen allekirjoitus Norjassa](emea-nor-cash-registers.md)
-- [Tarkistusyksikön integrointimalli – Ruotsi](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+- [Tarkistusyksikön integrointimalli – Ruotsi](./retail-sdk-control-unit-sample.md)
+

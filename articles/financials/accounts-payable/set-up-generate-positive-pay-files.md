@@ -1,9 +1,9 @@
 ---
 title: Positive pay -tiedostojen määrittäminen ja luominen
-description: Tässä artikkelissa kuvataan Positive pay -toiminnon määrittämistä ja Positive pay -tiedostojen luomista.
+description: Tässä ohjeaiheessa käsitellään Positive pay -toiminnon määrittämistä ja Positive pay -tiedostojen luomista.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dbc512c6d214dc8cf2527ac23103529111896ec5
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346085"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778175"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Positive pay -tiedostojen määrittäminen ja luominen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan Positive pay -toiminnon määrittämistä ja Positive pay -tiedostojen luomista. 
+Tässä ohjeaiheessa käsitellään Positive pay -toiminnon määrittämistä ja Positive pay -tiedostojen luomista. 
 
 Määritä positiivinen maksu sähköisen luettelon luomiseksi pankille toimitettavista sekeistä. Kun sekki esitetään pankille, pankki vertaa sitä aiemmin lähetettyyn sekkiluetteloon. Jos sekki on sama kuin luettelossa, pankki selvittää sekin. Jos sekki ei vastaa luettelon sekkiä, pankki säilyttää sekin tarkistusta varten.
 
@@ -94,7 +94,7 @@ Positive pay -tiedostot luodaan käyttämällä tietoyksiköitä. Ennen Positive
           <xsl:value-of select="'
     '" />
           <!--Header End-->
-          <xsl:for-each select="Document/BankPositivePayExportEntity">
+          <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
             <!--Cheque Detail begin-->
             <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
             <xsl:value-of select="','" />

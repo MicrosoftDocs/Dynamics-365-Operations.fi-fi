@@ -3,7 +3,7 @@ title: Vanhentuneet tai poistetut ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.
 author: sericks007
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329249"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836345"
 ---
 # <a name="removed-or-deprecated-features"></a>Poistetut tai vanhentuneet ominaisuudet
 
@@ -35,11 +35,77 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operationsin om
 
 Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi. 
 
-> [!Note]
+> [!NOTE]
 > Dynamics 365 for Finance and Operationsin heinäkuun 2017 ympäristöpäivityksestä 8 alkaen kunkin poistetun tai vanhentuneen ominaisuuden käyttöottotyyppi ilmoitetaan. Kaikki tässä aiheessa mainitut aiemmat versiot tukivat vain pilvikäyttöönottoja.
 
-> [!Note]
+> [!NOTE]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: [Tekniset viitetiedot](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.
+
+## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 ja platform update 25
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.1 ja Platform update 25 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelun vakiopäivitykset ja ensimmäisen julkaisun päivitykset](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### <a name="deprecated-apis-and-potential-breaking-changes"></a>Vanhentuneet ohjelmointirajapinnat ja mahdolliset tärkeimmät muutokset
+
+#### <a name="deriving-from-internal-classes-is-deprecated"></a>Johtaminen sisäisistä luokista on vanhentunut
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Platform update 25 -versiota edeltävissä julkaisuissa oli mahdollista luoda toisessa paketissa tai moduulissa määritetystä sisäisestä luokasta tai taulusta johdettu luokka tai taulu. Tämä ei ole turvallinen koodauskäytäntö. Platform update 25 -päivityksestä alkaen kääntäjä näyttää varoituksen, jos yrität toimia tällä tavoin.|
+| **Onko toinen ominaisuus korvannut?**   | Kääntäjän varoitus korvataan tulevassa ympäristöpäivityksessä virheellä. Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten käytössä on Platform update 25 tai uudempi versio, tämä ominaisuus voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava. Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan. |
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studion kehitystyökalut. |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut – varoituksesta tulee käännösvirhe tulevassa ympäristöpäivityksessä. |
+
+#### <a name="overriding-internal-methods-is-deprecated"></a>Sisäisten menetelmien ohittaminen on vanhentunut
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Platform update 25 -versiota edeltävissä julkaisuissa oli mahdollista ohittaa johdetun luokan sellainen sisäinen menetelmä, joka oli määritetty toisessa paketissa tai moduulissa. Tämä ei ole turvallinen koodauskäytäntö. Platform update 25 -päivityksestä alkaen kääntäjä näyttää varoituksen, jos yrität toimia tällä tavoin.|
+| **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan käännösvirheellä tulevassa ympäristöpäivityksessä. Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten käytössä on Platform update 25 tai uudempi versio, tämä ominaisuus voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava. Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan. |
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studion kehitystyökalut. |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut – varoituksesta tulee käännösvirhe tulevassa ympäristöpäivityksessä. |
+
+## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 ja platform update 23
+
+### <a name="print-to-screen-functionality"></a>Tulosta näyttöön -toiminto
+Asiakkaat voivat ladata Finance and Operations -sovellusten tuottamia asiakirjoja Report Viewer -ohjausohjausobjektin **Tuo**-toiminnolla. Tämä HTML-pohjainen raportin esittäminen antaa käyttäjien käyttöön asiakirjan sivuttamattoman esikatselun.
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Koska HTML-pohjainen esikatselukokemus on sivuttamaton, Finance and Operationsin lopulta tuottamat fyysiset asiakirjat **eivät** ole samanlaisia kuin tässä esikatselussa. Koska PDF on otettu kattavasti liiketoimintojen standardimuodoksi, käyttäjän sovelluksen raporttia koskevia asetuksia on voitu yksinkertaistaa merkittävästi. Samalla asiakirjan hahmontamisprosessia on sujuvoitettu. |
+| **Onko toinen ominaisuus korvannut?**   | Jatkossa PDF-tiedostot tulevat olevaan Finance and Operationsin hahmontamien raporttien oletusmuoto.   |
+| **Tuotealueet, joihin vaikutetaan**         | Tämä muutos **ei** vaikuta asiakasskenaarioihin, joissa raportit jaetaan sähköisesti tai lähetetään suoraan tulostimiin.    |
+| **Käytön asetukset**              | Kaikki  |
+| **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. Toiminto, jolla sovelluksen raportit voidaan ladata automaattisesti selaimeen PDF-tiedostoina, on suunniteltu toukokuun 2019 ympäristöpäivitykseen. <br><br>**Tärkeää:** nykyisten asiakkaiden, jotka käyttävät Tulosta näyttöön -ominaisuutta, on syytä ottaa yhteyttä [tukee](../lifecycle-services/lcs-support.md) ennen Platform update 26:een päivittämistä. |
+
+### <a name="client-kpi-controls"></a>Asiakasohjelman tunnuslukujen ohjausobjektit
+Kehittäjä voi mallintaa upotetut tunnusluvut Visual Studiossa, ja loppukäyttäjät voivat sitten muokata niitä lisää.
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Tunnuslukujen määrittämiseen käytetyt alkuperäiset asiakasohjelman ohjausobjektit eivät olleet asiakkaan kannalta käteviä ja kehittäjien oli lisättävä seurattavat mittarit. |
+| **Onko toinen ominaisuus korvannut?**   | PowerBI.com-palvelu sisältää maailmanluokan työkaluja tunnuslukujen määrittämiseen ja hallitsemiseen ulkoisten lähteiden tietojen perusteella.  Tulevassa julkaisussa on käyttäjälle on tarkoitus antaa mahdollisuus upottaa PowerBI.comissa isännöityjä ratkaisuja sovelluksen työtiloihin.   |
+| **Tuotealueet, joihin vaikutetaan**         | Tämä päivitys estää kehittäjiä ottamasta käyttöön uusia tunnuslukujen ohjausobjekteja Visual Studion suunnitteluohjelmassa.    |
+| **Käytön asetukset**              | Kaikki  |
+| **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. |
+
+### <a name="deprecated-apis-and-future-breaking-changes"></a>Vanhentuneet ohjelmointirajapinnat ja tulevat tärkeimmät muutokset
+
+#### <a name="field-groups-containing-invalid-field-references"></a>Virheellisiä kenttäviitteitä sisältävät kenttäryhmät
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Taulun metatietomääritelmissä voi olla virheellisiä kenttäviittauksia sisältäviä kenttäryhmiä. Tämä ongelma on luokiteltu tällä hetkellä *kääntäjän varoitukseksi* eikä *virheeksi*, minkä vuoksi käyttöönotettavan paketin luonti ja käyttöönotto voi jatkua ongelmaa korjaamatta. Käyttöönotettuna tämä ongelma voi aiheuttaa suorituksenaikaisia virheitä talousraportoinnissa ja SQL Server Reporting Servicesissa (SSRS). Ongelman korjaaminen:<br><br>1. Poista virheellinen kenttäviite taulun kenttäryhmämääritelmästä.<br><br>2. Käännä uudelleen.<br><br>3. Varmista, että kaikki varoitukset tai virheet käsitellään. |
+| **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan jatkossa käännösvirheellä.  |
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studion kehitystyökalut. |
+| **Käytön asetukset**              | Kaikki. |
+| **Tila**                         | Vanhentunut – varoituksesta tulee jatkossa käännöksenaikainen virhe. Tällä hetkellä tavoitteena on Platform update 30. |
+
+#### <a name="complete-list"></a>Täydellinen luettelo
+Täydellinen vanhentumassa olevien ohjelmointirajapintojen luettelo on kohdassa [Menetelmien ja metatietojen elementtien poisto](deprecation-deletion-apis.md).
 
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 ja platform update 20
 
@@ -52,7 +118,7 @@ Synkrononinen siirtotila on vanhentunut kirjanpitotilin parametreissä.  Tämä 
 | **Onko toinen ominaisuus korvannut?**   | Synkrononisen vaihtoehdon sijasta käytetään asynkronista ja ajoitettua erää.   |
 | **Tuotealueet, joihin vaikutetaan**         | Kirjanpitotili, ostoreskontra, myyntireskontra, hankinta, kulut    |
 | **Käytön asetukset**              | Kaikki  |
-| **Tila**                         | Vanhentunut – Toiminnon poiston tavoiteajankohta on versio 10.0.|
+| **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on versio 10.0.|
 
 ### <a name="electronic-reporting-for-russia"></a>Sähköinen raportointi Venäjää varten
 Toiminto ilmoitusten .txt- ja .xml-tiedostomuotojen määrittämiseen. 
@@ -724,7 +790,7 @@ Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Mic
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Toinen ominaisuus on korvannut tämän toiminnon. |
-| **Onko toinen ominaisuus korvannut?**   | Common Data Service                                      |
+| **Onko toinen ominaisuus korvannut?**   | Common data service                                      |
 | **Tuotealueet, joihin vaikutetaan**         | Microsoft Dynamicsin yhdistin                         |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.                           |
 

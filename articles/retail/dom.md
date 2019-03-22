@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302229"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "380013"
 ---
 # <a name="distributed-order-management-dom"></a>Jaettu tilausten hallinta (JTH)
 
@@ -63,8 +63,8 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
 
         1. Avaa Microsoft Dynamics Lifecycle Servicesissa jaettu omaisuuskirjasto, valitse omaisuustyypiksi **Malli**, ja lataa **JTH-license**-tiedosto.
         2. Käynnistä Microsoft IIS -palveluiden hallinta, napsauta hiiren kakkospainikkeella **AOSService-verkkosivusto**, ja valitse sitten **Selaa**. Windowsin resurssienhallintaikkuna avautuu kansiossa **\<AOS-palvelun pääkansio\>\\webroot**. Merkitse muistiin polku \<AOS-palvelun pääkansio\>, sillä sitä käytetään seuraavassa vaiheessa.
-        3. Kopioi konfiguraatiotiedosto kansioon **\<AOS-palvelun pääkansio\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Siirry Retail-pääkonttorin asiakasohjelmaan ja avaa **JTH-parametrit**-sivu. Valitse **Selvitys**-välilehden **Selvityksen tyyppi** -kentässä **Tuotannon selvitys** ja varmista, ettei virhesanomia ole näkyvissä.
+        3. Kopioi konfiguraatiotiedosto hakemistoon **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        4. Siirry Retail Headquarters -asiakasohjelmaan ja avaa **DOM-parametrit**-sivu. Valitse **Selvitys**-välilehden **Selvityksen tyyppi** -kentässä **Tuotannon selvitys** ja varmista, ettei virhesanomia ole näkyvissä.
 
         > [!NOTE]
         > Yksinkertaistettu selvitys on vaihtoehto silloin, kun vähittäismyyjä haluaa kokeilla JTH-ominaisuutta ottamatta käyttöön erityistä lisenssiä. Organisaatioiden ei tulisi käyttää yksinkertaistettua selvitystä tuotantoympäristöissä.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356343"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832145"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Talousraporttien sarakemääritykset
 
@@ -62,7 +62,7 @@ Sarakkeen määritys voi sisältää 2–255 saraketta.
 Sarakkeen määritys sisältää seuraavat tiedot:
 
 - Kuvausten sarake rivin määrityksessä
-- Summasarakkeet, joissa on taloushallinnon tiedot, Microsoft Excel -laskentataulukko tai laskutoimitukset, jotka perustuvat sarakkeen määrityksen muihin tietoihin
+- Summasarakkeet, joissa on taloushallinnon tiedot, tai laskutoimitukset, jotka perustuvat sarakkeen määrityksen muihin tietoihin
 - Sarakkeiden muotoilu
 - Määritesarakkeet
 
@@ -170,7 +170,7 @@ Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä ot
 
 ### <a name="create-an-automatically-generated-header"></a>Automaattisesti luodun otsikon luominen
 
-Raportin suunnittelija voi luoda sarakeotsikoita automaattisesti automaattisen tekstin koodien perusteella. Automaattisen tekstin koodit ovat muuttujia, jotka päivitetään aina raportin luomisen yhteydessä. Mikä tahansa sarakeotsikko voi sisältää näitä koodeja. Ne määrittävät raportin muuttuvia tietoja, kuten päivämääriä ja jaksojen numeroita. Tämän vuoksi useissa raportin määrityksissä, ajanjaksoissa ja raportointipuissa voidaan käyttää yhtä sarakkeen määritystä. Koska automaattisen tekstin koodeissa käytetään sarakkeen määrityksen tietorivien kalenterin tietoja, niitä tuetaan vain **CALC**-, **FD**- ja **WKS**-sarakkeissa. Tapa, jolla automaattisen tekstin koodi näkyy sarakeotsikon solussa, vaikuttaa siihen, miten tiedot näkyvät raportissa. Automaattisen tekstin koodeissa käytetään isoja ja pieniä kirjaimia **Sarakeotsikko**-valintaikkunassa. Tämän vuoksi teksti näkyy näin myös raportissa. Esimerkiksi vakiokalenterivuosi **@CalMonthLong** muuntaa kuukauden **7** **heinäkuuksi**. Jos raportin tekstin pitää olla isoilla kirjaimilla (esimerkiksi **HEINÄKUU**), kirjoita myös koodi isoin kirjaimin **Sarakeotsikon teksti** -ruutuun). Kirjoita esimerkiksi **@CALMONTHLONG**. Tekstissä voi käyttää sekä isoja ja pieniä kirjaimia. Voit syöttää otsikon tekstin esimerkiksi tällaisena: **Jakso @FiscalPeriod–@FiscalYear @StartDate–@EndDate**. Luotu raportin otsikko muistuttaa seuraavaa tekstiä: **Jakso 1–02 01/01/02–01/31/02**.
+Raportin suunnittelija voi luoda sarakeotsikoita automaattisesti automaattisen tekstin koodien perusteella. Automaattisen tekstin koodit ovat muuttujia, jotka päivitetään aina raportin luomisen yhteydessä. Mikä tahansa sarakeotsikko voi sisältää näitä koodeja. Ne määrittävät raportin muuttuvia tietoja, kuten päivämääriä ja jaksojen numeroita. Tämän vuoksi useissa raportin määrityksissä, ajanjaksoissa ja raportointipuissa voidaan käyttää yhtä sarakkeen määritystä. Koska automaattisen tekstin koodeissa käytetään sarakkeen määrityksen tietorivien kalenterin tietoja, niitä tuetaan vain **CALC**- ja **FD**-sarakkeissa. Tapa, jolla automaattisen tekstin koodi näkyy sarakeotsikon solussa, vaikuttaa siihen, miten tiedot näkyvät raportissa. Automaattisen tekstin koodeissa käytetään isoja ja pieniä kirjaimia **Sarakeotsikko**-valintaikkunassa. Tämän vuoksi teksti näkyy näin myös raportissa. Esimerkiksi vakiokalenterivuosi **@CalMonthLong** muuntaa kuukauden **7** **heinäkuuksi**. Jos raportin tekstin pitää olla isoilla kirjaimilla (esimerkiksi **HEINÄKUU**), kirjoita myös koodi isoin kirjaimin **Sarakeotsikon teksti** -ruutuun). Kirjoita esimerkiksi **@CALMONTHLONG**. Tekstissä voi käyttää sekä isoja ja pieniä kirjaimia. Voit syöttää otsikon tekstin esimerkiksi tällaisena: **Jakso @FiscalPeriod–@FiscalYear @StartDate–@EndDate**. Luotu raportin otsikko muistuttaa seuraavaa tekstiä: **Jakso 1–02 01/01/02–01/31/02**.
 
 > [!NOTE]
 > Joidenkin tekstien muoto, kuten pitkä päivämäärä, määräytyy Finance and Operations -palvelimen alueellisten asetusten mukaan. Voit muuttaa näitä asetuksia valitsemalla **Käynnistä**-painikkeen, **Ohjauspaneeli**-kohdan ja valitsemalla sitten **Alue ja kieli** -kohdan. Seuraavassa taulukossa luetellaan sarakeotsikoiden käytettävissä olevat automaattisen tekstin asetukset.
@@ -291,7 +291,7 @@ Sarakkeen määrityksen muotoilusarakkeen tietorivien valituissa sarakkeissa kä
 1. Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
 2. Syötä **Lisävälilyönnit ennen saraketta** -soluun sarakkeiden väliin lisättävien välilyöntien määrä.
 
-### <a name="specify-a-currency"></a>Valuutan määrittäminen
+### <a name="specify-a-format-currency-override"></a>Valuutan muotoilun ohituksen määrittäminen
 
 **Muotoilun/valuutan ohitus** -solussa määritetään sarakkeen desimaalin, valuutan ja prosenttimäärien muotoilu. Tämä muotoilu korvaa sarakkeen ja raportin määrityksessä tai järjestelmän oletusarvoissa määritetyn muotoilun.
 
@@ -360,8 +360,8 @@ Raportin kunkin sarakkeen tietojen lajin määrittää sarakkeen määrityksen *
     </thead>
     <tbody>
     <tr>
-    <td>FD</td>
-    <td>Näytä taloustietoja tai tietoja Excel-laskentataulukosta, kun käytät rivimäärityksessä <strong>Linkki taloushallinnon dimensioihin</strong>- tai <strong>Linkki laskentataulukkoon</strong> -saraketta. Kun valitset <strong>TD</strong>-saraketyypin, seuraaville riveille määritetään automaattisesti oletusasetukset: <ul>
+    <td>TD</td>
+    <td>Näytä taloustiedot, kun käytät rivimääritelmän <strong>Linkki taloushallinnon dimensioihin</strong> -saraketta. Kun valitset <strong>TD</strong>-saraketyypin, seuraaville riveille määritetään automaattisesti oletusasetukset: <ul>
     <li><strong>Kirjauskoodi/määriteryhmä</strong> TOTEUTUNUT</li>
     <li><strong>Kirjauskoodi/määriteryhmä</strong> TOTEUTUNUT</li>
     <li><strong>Tilikausi:</strong> BASE</li>
@@ -394,14 +394,6 @@ Näitä oletusasetuksia voi muuttaa.</td>
     <tr>
     <td>PAGE</td>
     <td>Lisää raporttiin pystysuora sivunvaihto. <strong>SIVU</strong>-sarakkeen oikealla puolella olevat sarakkeet tulevat eri sivulle.</td>
-    </tr>
-    <tr>
-    <td>WKS</td>
-    <td>Näyttää Excel-laskentataulukosta noudetut tiedot. Kun valitset <strong>LTAUL</strong>-saraketyypin, seuraaville riveille määritetään automaattisesti oletusasetukset: <ul>
-    <li><strong>Tilikausi</strong> KAUSITTAINEN</li>
-    <li><strong>Kausi:</strong> BASE</li>
-    </ul>
-Näitä oletusasetuksia voi muuttaa.</td>
     </tr>
     <tr>
     <td>ATTR</td>
@@ -518,13 +510,13 @@ Voit käyttää myös mitä tahansa aakkosnumeerisen merkin yhdistelmää tarkas
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Usean valuutan raportin muotoileminen sarakkeen määrityksessä
 
-Usean valuutan raportti voi näyttää summat kansallisessa (paikallisessa) valuutassa, perusvaluutassa (oletus) tai raportointivaluutassa. Yrityksen perusvaluutta määritetään Microsoft Dynamics ERP -järjestelmässä. Älä sekoita tätä ERP-järjestelmään ja käyttöjärjestelmän järjestelmän alueelliset asetukset, joissa määritetään raporteissa käytettävät oletusvaluutan symbolit. Seuraavat valuuttaan liittyvät solut ovat käytettävissä sarakkeen määrityksessä.
+Usean valuutan raportti voi näyttää summat kirjanpidon kirjanpitovaluutassa, kirjanpidon raportointivaluutassa, alkuperäisen tapahtuman valuutassa tai muunnetussa raportointivaluutassa. Yrityksen kirjanpitovaluutta määritetään kirjanpidon asetuksissa. Älä sekoita tätä asetusta käyttöjärjestelmän järjestelmän alueellisiin asetuksiin, joissa määritetään raporteissa käytettävät oletusvaluutan symbolit. Seuraavat valuuttaan liittyvät solut ovat käytettävissä sarakkeen määrityksessä.
 
-- **Valuutan näyttö** – määrittää, minkä tyypin (luonnollisessa, toiminnallisessa tai raportoinnin) valuutassa tapahtumat näytetään. Tätä toimintoa kutsutaan joskus valuuttamuunnokseksi. Valuutan muunnon avulla kirjanpidon summat voidaan raportoida muussa kuin yrityksen perusvaluutassa tai valuutassa, jossa tapahtuma syötettiin.
+- **Valuutan näyttö** – määrittää, minkä tyypin valuutassa (kirjanpito, raportointi, tapahtuma tai muunnettu raportointi) tapahtumat näytetään. Raportointivaluuttaan muuntamistoimintoa kutsutaan joskus valuutan muuntamiseksi. Valuutan muunnon avulla kirjanpidon summat voidaan raportoida muussa kuin yrityksen perusvaluutassa tai raportointivaluutassa, jossa tapahtuma annettiin.
 - **Valuuttasuodatin** – Määritä valuuttasuodatin. Vain valitussa valuutassa syötetyt tapahtumat näytetään raportissa.
 
-> [!NOTE]
-> Voit luoda raportteja, joissa käytetään useita valuuttoja, kun valitset **Raportti**-välilehden **Sisällytä kaikki raportointivaluutat** -valintaruudun. Seuraavien vaiheiden avulla voit määrittää yrityksen perusvaluutan.
+> 
+Seuraavien vaiheiden avulla voit määrittää yrityksen kirjanpitovaluutan.
 
 1. Valitse raporttien suunnitteluohjelman **Yritys**-valikosta **Yritykset**.
 2. Valitse **Yritykset**-valintaikkunassa yritys. Valitse sitten **Näytä**.
@@ -533,20 +525,18 @@ Usean valuutan raportti voi näyttää summat kansallisessa (paikallisessa) valu
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Valuutan määrittäminen usean valuutan raportissa
 
 1. Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
-2. Kaksoisnapsauta soveltuvan **FD**-sarakkeen **Valuutan näyttö** -solua ja valitse valuutan tietojen näyttöasetukseksi **kansallinen/alkuperäinen valuutta**, **perusvaluutta yrityksen tiedoista** tai raportointivaluutta.
+2. Kaksoisnapsauta soveltuvan **FD**-sarakkeen **Valuutan näyttö** -solua ja valitse valuutan tietojen näyttöasetukseksi **Kirjanpitovaluutta**, **Kirjanpidon raportointi**, tapahtumavaluutta tai valitse muunto toiseksi raportointivaluutaksi.
 3. Kaksoisnapsauta soveltuvan **FD**-sarakkeen **Valuutan suodatin** -solua ja valitse luettelosta soveltuva valuuttakoodi. Vain tässä valuutassa syötetyt tapahtumat näytetään raportissa.
 
-> [!NOTE]
-> Edellä kuvatut vaihtoehdot voivat olla erilaisia käytössä olevasta ERP-järjestelmästä johtuen. Lisätietoja on [Microsoft ERP -järjestelmän dokumentaatiossa](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Valuutan näytön ja valuuttasuodattimen solujen esimerkkejä
 
 Paula on tehnyt sarakkeen määrityksessä seuraavat valuuttavalinnat:
 
 - **Valuuttasuodatin:** Jeni
-- **Valuutan näyttö:** Perusvaluutta (Yhdysvaltojen dollarit)
+- **Valuutan näyttö:** kirjanpitovaluutta kirjanpidosta (USA:n dollarit)
 
-Paulan valitsemasta valuuttasuodattimesta johtuen raportissa näkyvät vain tapahtumat, jotka on syötetty Japanin jeneinä (JPY). Valitusta valuutan näyttöasetuksesta johtuen tapahtumat näkyvät raportissa perusvaluutassa eli Yhdysvaltojen dollareina (USD).
+Paulan valitsemasta valuuttasuodattimesta johtuen raportissa näkyvät vain tapahtumat, jotka on syötetty Japanin jeneinä (JPY). Valitusta valuutan näyttöasetuksesta johtuen tapahtumat näkyvät raportissa kirjanpitovaluutassa eli Yhdysvaltojen dollareina (USD).
 
 #### <a name="currency-filter-and-currency-display-combinations"></a>Valuuttasuodattimen ja valuutan näytön yhdistelmät
 
@@ -555,10 +545,10 @@ Seuraavassa taulukossa näytetään tulokset, joita saadaan **Valuutan näyttö*
 
 | Valuutan näyttö -solu                        | Valuuttasuodatin-solu | Raportin tulos |
 |----------------------------------------------|----------------------|---------------|
-| Kansallinen/alkuperäinen valuutta                 | **JENI**              | **6 000 Y** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat. |
-| Perusvaluutta yrityksen tiedoista | **JENI**              |**60 $** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat, jotka näytetään Yhdysvaltojen dollareina.<blockquote>[!NOTE] Muuntokurssina käytetään noin 100 jeniä yhtä Yhdysvaltojen dollaria kohti.</blockquote> |
-| Perusvaluutta yrityksen tiedoista | Tyhjä                | **2 310 $** – Tuloksessa näytetään kaikki tiedot yrityksen tiedoissa määritetyssä perusvaluutassa.<blockquote>[!NOTE] Tämä summa on kaikkien tapahtumien summa perusvaluutassa.</blockquote> |
-| Kansallinen/alkuperäinen valuutta                 | Tyhjä                | **2 250 $** – Tuloksessa näytetään kaikki summat valuutassa, jossa tapahtuma suoritettiin. |
+| Tapahtumavaluutta                 | **JENI**              | **6 000 Y** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat. |
+| Kirjanpitovaluutta kirjanpidosta | **JENI**              |**60 $** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat, jotka näytetään Yhdysvaltojen dollareina.<blockquote>[!NOTE] Muuntokurssina käytetään noin 100 jeniä yhtä Yhdysvaltojen dollaria kohti.</blockquote> |
+| Kirjanpitovaluutta kirjanpidosta | Tyhjä                | **2 310 $** – Tuloksessa näytetään kaikki tiedot kirjanpidossa määritetyssä kirjanpitovaluutassa.<blockquote>[!NOTE] Tämä summa on kaikkien tapahtumien summa kirjanpitovaluutassa.</blockquote> |
+| Tapahtumavaluutta                 | Tyhjä                | **2 250 $** – Tuloksessa näytetään kaikki summat valuutassa, jossa tapahtuma suoritettiin. Tämä tarkoittaa sitä, että kokonaissummassa eri valuuttojen summat lasketaan yhteen. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Laskenta-sarake sarakkeen määrityksessä
 

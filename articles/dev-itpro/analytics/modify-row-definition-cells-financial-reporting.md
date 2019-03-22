@@ -1,9 +1,9 @@
 ---
 title: Rivin määrityksen solujen muokkaaminen
-description: Tässä artikkelissa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan.
+description: Tässä ohjeaiheessa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
+ms.sourcegitcommit: eb24b63b10c4d06f7550bba9fbd1910ba2719b0a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "323637"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379661"
 ---
 # <a name="modify-row-definition-cells"></a>Rivin määrityksen solujen muokkaaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan.
+Tässä ohjeaiheessa käsitellään tietoja, joita talousraportin rivimäärityksen kussakin solussa on oltava ja selitetään, miten nämä tiedot annetaan.
 
 ## <a name="specify-a-row-code-in-a-row-definition"></a>Rivin koodin määrittäminen rivin määrityksessä
 
@@ -386,7 +386,7 @@ Voit rajoittaa rivin aiemmin luotua kirjakoodia varten. Sarakkeen määrityksess
 Joissakin kirjanpitojärjestelmissä tuetaan taloushallinnon tietojen tili- ja tapahtumamääritteitä. Nämä määritteet toimivat kuten virtuaaliset tilisegmentit. Ne voivat sisältää tiliä tai tapahtumaa koskevia lisätietoja. Lisätiedot voivat olla tilien tunnuksia, erien tunnuksia, postinumeroita tai muita määritteitä. Jos käytössä oleva kirjanpitojärjestelmä tukee määritteitä, voit käyttää tili- tai tapahtumamääritteitä rivin määrityksen rivimääreinä. Lisätietoja rivin tietojen ohituksesta on Sarakkeen määrityksen ohitus -osassa, joka löytyy tämän artikkelin alkuosasta.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Linkin määrittäminen Taloushallinnon dimensiot -soluun
-**Linkki taloushallinnon dimensioihin** -solu sisältää linkin raportin jokaiselle riville sisällytettäviin taloushallinnon tietoihin. Solussa on dimensioarvot, mutta voit määrittää myös Microsoft Excel -laskentataulukon soluja segmenttiarvojen tai dimensioarvojen asemesta tai lisäksi. Voit avata **Dimensiont**-valintaikkunan kaksoisnapsauttamalla **Linkki taloushallinnon dimensioihin** -solua.
+**Linkki taloushallinnon dimensioihin** -solu sisältää linkin raportin jokaiselle riville sisällytettäviin taloushallinnon tietoihin. Tämä solu sisältää dimensioarvot. Voit avata **Dimensiont**-valintaikkunan kaksoisnapsauttamalla **Linkki taloushallinnon dimensioihin** -solua.
 
 > [!NOTE]
 > Raporttien suunnitteluohjelma ei voi valita Microsoft Dynamics ERP -järjestelmästä niitä tilejä, dimensioita tai kenttiä, jotka sisältävät seuraavat varatut merkit: &, \*, \[, \], {, tai }. Voit määrittää rivimääritykseen jo lisätyn rivin tiedot lisäämällä tiedot **Linkki taloushallinnon dimensioihin** -soluun. Voit lisätä taloushallinnon tietoihin linkittyviä uusia rivejä **Lisää rivit kohteesta** -valintaikkunassa luomalla uusia rivejä raportin määrityksessä. Sarakkeen otsikko muuttuu sen mukaan, miten sarake on konfiguroitu, seuraavassa taulukossa esitetyllä tavalla.
@@ -394,9 +394,7 @@ Joissakin kirjanpitojärjestelmissä tuetaan taloushallinnon tietojen tili- ja t
 | Valitun linkin tyyppi       | Kuvaus, jollaiseksi Linkki-sarakkeen kuvaus muuttuu |
 |----------------------------------|----------------------------------------------------|
 | Taloushallinnon dimensiot             | Linkki taloushallinnon dimensioihin                       |
-| Ulkoinen laskentataulukko               | Linkki laskentataulukkoon                                  |
-| Taloushallinnon dimensiot + laskentataulukko | Taloushallinnon dimensioiden linkki + laskentataulukko           |
-| Management Reporter -raportti       | Management Reporter -raportti                         |
+| Raportin laskentataulukko                 | Taloushallinnon raportti                         |
 
 ### <a name="specify-a-dimension-or-range"></a>Dimension tai alueen määrittäminen
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: db01a12b92574b41f1f4fe7281c23992e0d36027
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8b373ce3cfd1183a082e2b1ebaf8c907b16e581e
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302231"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379990"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistaja
 
@@ -43,7 +43,7 @@ Kun laskelmien kirjausprosessi havaitsee epäyhtenäisiä tapahtumia, luodaan yh
 
 Seuraavassa kaaviossa havainnollistetaan kirjausprosessi, jossa tapahtumien yhdenmukaisuuden tarkistaja on käytössä.
 
-![Laskelman kirjausprosessi, jossa tapahtumien yhdenmukaisuuden tarkistaja on käytössä](./media/validchecker.png "Laskelman kirjausprosessi, jossa tapahtumien yhdenmukaisuuden tarkistaja on käytössä")
+![Laskelman kirjausprosessi, jossa vähittäismyyntitapahtumien yhdenmukaisuuden tarkistaja on käytössä](./media/validchecker.png "Laskelman kirjausprosessi, jossa vähittäismyyntitapahtumien yhdenmukaisuuden tarkistaja on käytössä")
 
 **Vahvista myymälän tapahtumat** -eräajoprosessi tarkistaa seuraavien seikkojen yhdenmukaisuuden vähittäismyynnin transaktiotauluista.
 

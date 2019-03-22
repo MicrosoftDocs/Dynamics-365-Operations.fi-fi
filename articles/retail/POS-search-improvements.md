@@ -3,7 +3,7 @@ title: Ttuote- ja asiakashaku myyntipisteessä (POS)
 description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Microsoft Dynamics 365 for Retailin tuote- ja asiakashakuihin.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313586"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789866"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Ttuote- ja asiakashaku myyntipisteessä (POS)
 
@@ -69,7 +69,7 @@ Paikallisista tuotehaut ovat nyt käyttäjäystävällisempiä. Niihin on tehty 
 
 ## <a name="customer-search"></a>Asiakashaku
 
-Asiakashakua käytetään asiakkaiden etsimiseen erilaisissa tarkoituksissa. Kassat voivat esimerkiksi haluta nähdä asiakkaan toivelistan tai ostohistorian, tai lisätä asiakkaan tapahtumaan. Asiakashaun algoritmi palauttaa usean hakusanan hauissa kaikki asiakkaat, jotka vastaavat mitä tahansa hakusanoista. Useimpia hakusanoja vastaavat asiakkaat näkyvät kuitenkin ensimmäisenä tuloksissa. Tämä vastaa tapaa, jolla muut hakukoneet näyttävät tuloksia. Näiden tuloksissa näytetään ensin eniten hakusanoja vastaavat tulokset ja sitten osittaisia hakusanoja vastaavat tulokset. Tämä helpottaa kassoja tilanteissa, joissa käytetään useita hakusanoja, mutta yhdessä hakusanoista on kirjoitusvirhe.
+Asiakashakua käytetään asiakkaiden etsimiseen erilaisissa tarkoituksissa. Kassat voivat esimerkiksi haluta nähdä asiakkaan toivelistan tai ostohistorian, tai lisätä asiakkaan tapahtumaan. Hakualgoritmi vertaa hakusanoja seuraavissa asiakasominaisuuksissa oleviin arvoihin: nimi, sähköposti, puhelin, kanta-asiakaskortin numero, osoite ja tilinumero. Näistä nimiominaisuus on joustavin vaihtoehto, kun on kyse useiden hakusanojen hausta, sillä algoritmi palauttaa kaikki asiakkaat, jotka vastaavat jotakin haettua avainsanaa, ja asiakkaat, jotka vastaavat useimpia avainsanoja, näkyvät ensimmäisinä tuloksissa. Tämä auttaa kassoja tilanteissa, joissa he tekevät hakuja kirjoittamalla koko nimen, mutta etu- ja sulunimi vaihtuivat tietojen syöttövaiheessa. Suorituskyvyn säilyttämiseksi kaikki muut ominaisuudet säilyttävät haun avainsanojen järjestyksen, joten jos haetut avainsanat eivät ole siinä järjestyksessä, jossa tiedot tallennettiin, tuloksia ei palauteta.
 
 Asiakashaut tehdään oletusarvon mukaan myymälään liitettyihin osoitekirjoihin. Tällaista hakua kutsutaan *paikalliseksi asiakashauksi*. Työntekijät voivat myös hakea asiakkaita kaikkialta. Toisin sanoen, asiakkaita voidaan etsiä yrityksen kaikista myymälöistä sekä muista yrityksistä. Tällaista hakua kutsutaan *asiakkaan etähauksi*.
 

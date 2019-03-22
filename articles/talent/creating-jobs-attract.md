@@ -3,7 +3,7 @@ title: Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa
 description: Tässä ohjeaiheessa käsitellään työn elementtejä Attractissa. Siinä käsitellään myös työn luomista.
 author: josaw
 manager: AnnBe
-ms.date: 12/21/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
+ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304233"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "772808"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa
 
@@ -76,8 +76,23 @@ Lisätietoja työhönottoprosessiin lisättävistä tehtävistä on kohdassa [Ty
 
 Kun työ on aktivoitu, se voidaan julkaista. Vain työhönottajat ja järjestelmänvalvojat voivat julkaista töitä. Työ voidaan julkaista joko Talent Careers -sivustossa (Microsoft Dynamics 365 for Talentin urasivustossa) tai LinkedInissä. 
 
+Attract-ryhmä tekee jatkuvasti yhteistyötä työpaikkailmoitussivujen kanssa. Tämä luettelo tulee laajenemaan ajan mittaan.
+
+Lisätietoja työpaikkailmoituksista on kohdassa [Attractin urasivuston toiminnot](career-site.md).
+
 > [!NOTE]
-> Työpaikan julkaisuprosessissa LinkedIniin on otettava huomioon kolme tärkeää seikkaa.
+> Työpaikkailmoitustoiminto on käytettävissä vain Attractin kattavan työhönottolaajennusta käytettäessä.
+
+### <a name="posting-jobs-to-linkedin"></a>Työpaikkojen julkaisu LinkedInissä 
+
+Ennen työpaikan julkaisua Attractista LinkedIniin järjestelmänvalvojan on lisättävä LinkedIn-yritystunnus ja LinkedIn-yritysnimi **hallinta-asetuksissa**. LinkedIn-yritystunnus on pakollinen, sillä sen avulla voidaan varmistaa, että Attractista julkaistut työpaikat määritetään oikealle yrityssivulle.
+
+LinkedIn-yritystunnus on numerojono, jolla yritys tunnistetaan yksilöivästi LinkedInissä. Lisätietoja LinkedIn-yritystunnuksen löytämisestä on kohdassa [LinkedIn-sivusto](https://aka.ms/findID).
+
+Päivitä LinkedIn-yritys valitsemalla **Hallintakeskus** **Asetukset**-valikossa (hammasrataskuvake) ja valitse sitten **LinkedIn-integrointi**-välilehti. Anna **Muodosta yhteys LinkedIniin** -osassa LinkedIn-yritysnimi ja -yritystunnus. Tallenna sitten asetukset.
+
+> [!NOTE]
+> Työpaikan julkaisuprosessissa LinkedIniin on otettava huomioon neljä tärkeää seikkaa.
 > 1. LinkedIniin julkaistavat työpaikat julkaistaan rajoitetun luettelon työpaikkoina. Rajoitetun luettelon työpaikkoja ei voi markkinoida koko LinkedIn-sivustossa. Jos haluat markkinoida LinkedIniin Attractista julkaistua rajoitetun luettelon työpaikkaa, ota työpaikan paketointi käyttöön LinkedInissä. Lisätietoja on seuraavissa linkeissä. Voit pyytää lisätietoja myös LinkedInin tuesta.
 >
 >    [Rajoitettujen luetteloiden vertailu työpaikkojen paketoinnin Premium-työpaikkoihin](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
@@ -90,14 +105,10 @@ Kun työ on aktivoitu, se voidaan julkaista. Vain työhönottajat ja järjestelm
 >
 >    Jos tämän vaiheen jälkeen ilmenee ongelmia, ota yhteys LinkedInin tukeen. 
 > 
+> 1. LinkedIniin julkaistut työpaikat näkyvät julkaistuna LinkedIn-sivustossa. Työpaikkojen julkaisemiseen LinkedInissä ei ole testiympäristöä. 
+>
 > 1. Voi kestää jopa 24 tuntia, ennen kuin LinkedIniin julkaistut työpaikat näkyvät ehdokkaille LinkedInissä. Tämä johtuu LinkedInin erätyönä tapahtuvasta julkaisuprosessista.
 
-Attract-ryhmä tekee jatkuvasti yhteistyötä työpaikkailmoitussivujen kanssa. Tämä luettelo tulee laajenemaan ajan mittaan.
-
-Lisätietoja työpaikkailmoituksista on kohdassa [Attractin urasivuston toiminnot](./career-site.md).
-
-> [!NOTE]
-> Työpaikkailmoitustoiminto on käytettävissä vain Attractin kattavan työhönottolaajennusta käytettäessä.
 
 ## <a name="activate"></a>Aktivoi
 

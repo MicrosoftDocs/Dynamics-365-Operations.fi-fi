@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
-ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
+ms.openlocfilehash: 43cf13d96e345747e06541267d820e17de7c1763
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376504"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768879"
 ---
 # <a name="set-up-offer-management"></a>Tarjoustenhallinnan määrittäminen 
 
@@ -199,11 +199,11 @@ Tarjouksen luontiprosessissa on useita osia, joita Attractin järjestelmänvalvo
 - **Hakijan tarjouskokemus** – Järjestelmänvalvojana voi määrittää, onko kaikille tarjouksilla vanhentumispäivä ja jos on, mikä on vanhentumispäivämäärän oletussiirtymä. Voit myös määrittää, voiko hakija hylätä tarjouksen.
 
 - **Sähköiset allekirjoitukset** – Voit järjestelmänvalvojana valita menetelmä, jolla ehdokkaat allekirjoittavat tarjoukset.
-    - Adobe Sign – Kaikki tarjouspaketit lähetetään ja allekirjoitetaan Adobe Signin kautta. Jokaisella tarjouksen julkaisevalla tekijällä on oltava oma Attractiin yhdistetty Adobe Sign -käyttöoikeus. 
+    - Adobe Sign – Kaikki tarjouspaketit lähetetään ja allekirjoitetaan Adobe Signin kautta. Jokaisella tarjouksen julkaisevalla tekijällä on oltava oma Attractiin yhdistetty Adobe Sign -tili. Lisätietoja Adobe Sign -käyttöoikeuksista ja maksuttomasta kokeilusta on tässä [linkissä](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+    - DocuSign – Kaikki tarjouspaketit lähetetään ja allekirjoitetaan DocuSignin kautta. Jokaisella tarjouksen julkaisevalla tekijällä on oltava oma Attractiin yhdistetty DocuSign-tili. 
+    
     - ESign – Tämä oletusasetus on heti käyttövalmis, ja käyttäjä voi allekirjoittaa tarjouksen kirjoittamalla nimensä ja nimikirjaimensa.
 
->[!NOTE]
-> Lisätietoja Adobe Sign -käyttöoikeuksista ja maksuttomasta kokeilusta on tässä [linkissä](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
 Lisätietoja tarjouksen luontiprosessista on kohdassa [Tarjousten luominen, hyväksyminen ja allekirjoittaminen](./creating-offers.md).

@@ -3,7 +3,7 @@ title: Tarjousten luominen, hyväksyminen ja allekirjoittaminen
 description: Tässä ohjeaiheessa käsitellään hakijalle tehtävän tarjouksen luomista, hyväksymistä ja allekirjoittamista Dynamics 365 for Talentissa.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ad7ce1e089d2a8b5c52e7cd01bb3d89070004b1
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304255"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768902"
 ---
 # <a name="creating-approving-and-signing-offers"></a>Tarjousten luominen, hyväksyminen ja allekirjoittaminen
 
@@ -104,15 +104,20 @@ Voit tehdä useita toimintoja, ennen kuin lähetät tarjouksen hakijalle.
 
 -  Hyväksyntäprosessiin voi olla mahdollista sisällyttää myös muita asiakirjoja. Voit halutessasi ilmoittaa tarvittavan tiedostotyypin.
 
-- Sähköinen allekirjoitus -asetus: Jos Adobe Sign valittiin ensisijaiseksi sähköiseksi allekirjoitusmenetelmäksi, tarjouksen tekijöiden on yhdistettävä Adobe Sign -käyttöoikeutensa. Sen voi tehdä kahdella tavalla. Yhdistä **Adobe Sign** valitsemalla **Yhteydet**-kohdassa **Käyttäjäasetukset** **Tarjous**-kohdassa. Vaihtoehtoisesti sinua voidaan pyytää yhdistämään tarjouksen lähettäminen hakijanäyttöön, jos yhteyttä ei ole vielä muodostettu käyttäjäasetusten perusteella. 
+- Sähköinen allekirjoitus -asetus: Valitsemasi sähköinen allekirjoituspalvelu voidaan yhdistää kahdella tavalla. Yhdistä **Adobe Sign** tai **DocuSign** valitsemalla **Yhteydet**-kohdassa **Käyttäjäasetukset** **Tarjous**-kohdassa. Vaihtoehtoisesti sinua voidaan pyytää yhdistämään **Lähetä tarjous hakijalle** -sivulle, jos yhteyttä ei ole vielä muodostettu käyttäjäasetusten perusteella. Sähköinen allekirjoitustili tarvitsee yhdistää vain kerran. Samaa käyttäjän käyttöoikeutta käytetään kaikissa tulevissa saman käyttäjän lähettämissä tarjouspaketeissa. 
 
-> [!NOTE]
-> Käyttäjien tarvitsee yhdistää Adobe Sign -tili vain kerran. Samaa käyttäjän käyttöoikeutta käytetään kaikissa tulevissa saman käyttäjän lähettämissä tarjouspaketeissa. 
+### <a name="adobe-sign"></a>Adobe Sign
+Jos Adobe Sign valittiin ensisijaiseksi sähköiseksi allekirjoitusmenetelmäksi, tarjouksen tekijöiden on yhdistettävä Adobe Sign -käyttöoikeus tässä vaiheessa. 
+
+### <a name="docusign"></a>DocuSign
+Jos DocuSign valittiin ensisijaiseksi sähköiseksi allekirjoitusmenetelmäksi, tarjouksen tekijöiden on yhdistettävä DocuSign-käyttöoikeus. Kirjautumisen jälkeen käyttäjän DocuSign-profiiliin liitetyt oletustili ja -käyttöoikeudet on yhdistetty Talent Attractiin. 
 
 -  Voit tarkastella sähköpostimallia ja muokata sitä tarvittaessa.
 
 Kun tarjous on valmis ja valitset **Lähetä ehdokkaalle**, hakija saa sähköpostitse ilmoituksen, että tarjous odottaa arviointia.
 
+>[!NOTE]
+> Jos käytät Adobe Signia tai DocuSignia ja näkyviin tulee virhe, kun tarjousta lähetetään ehdokkaalle, yritä katkaista yhteys sähköisen allekirjoituksen käyttäjätiliin ja muodosta se uudelleen **käyttäjäasetuksissa**. Jos ongelma jatkuu, ota yhteys tukeen käyttämällä **Ilmoita ongelmasta** -linkkiä.
 
 ## <a name="candidates-actions-after-receiving-an-offer"></a>Hakijan toimet tarjouksen vastaanottamisen jälkeen
 

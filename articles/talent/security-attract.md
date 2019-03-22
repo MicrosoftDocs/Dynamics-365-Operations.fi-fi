@@ -3,7 +3,7 @@ title: Käyttöoikeuksien ja roolien hallinta Attractissa
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent - Attractin käyttöoikeusrooleja.
 author: josaw1
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374777"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789694"
 ---
 # <a name="security-and-role-management-in-attract"></a>Käyttöoikeuksien ja roolien hallinta Attractissa
 
@@ -100,14 +100,16 @@ Seuraavat käyttöoikeudet koskevat hakijoiden työkohtaisia tietoja ja toiminto
 | Tiedot tai toiminto          | Työhönottaja | Työhön ottava esimies | Haastattelija |
 |-------------------------|-----------|----------------|-------------|
 | Hakemusasiakirjat   | Niiden töiden luonti, lukeminen, päivitys ja poisto, joiden työhönottoryhmässä käyttäjä on | Niiden töiden luonti, lukeminen, päivitys ja poisto, joiden työhönottoryhmässä käyttäjä on | Vain luku |
-| Hakemuksen huomautukset       | Niiden töiden luonti, lukeminen, päivitys ja poisto, joiden työhönottoryhmässä käyttäjä on | Niiden töiden luonti, lukeminen, päivitys ja poisto, joiden työhönottoryhmässä käyttäjä on | Luo |
+| Hakemuksen huomautukset       | Niiden töiden luonti, lukeminen, päivitys ja poisto, joiden työhönottoryhmässä käyttäjä on | Niiden töiden luonti, lukeminen, päivitys ja poisto, joiden työhönottoryhmässä käyttäjä on | Vain luku|
 | Hakemus-tehtävä    | Tarkastelu, jos käyttäjä on työhönottoryhmässä | Tarkastelu, jos käyttäjä on työhönottoryhmässä | Vain luku |
 | Hakemuksen palaute    | Palautteen lisääminen tai kaiken palautteen katsominen, jos käyttäjä on työhönottoryhmässä | Palautteen lisääminen tai kaiken palautteen katsominen, jos käyttäjä on työhönottoryhmässä | Palautteen lisääminen\*\* |
 | Hylkää hakemus      | Hakemuksen hylkääminen, jos käyttäjä on työhönottoryhmässä | Ei sallittu | Ei sallittu |
 | Siirrä seuraavaan vaiheeseen           | Hakemuksen hylkääminen, jos käyttäjä on työhönottoryhmässä | Hakemuksen siirtäminen, jos käyttäjä on työhönottoryhmässä | Ei sallittu |
 | Käynnistä tarjousten hallinta | Tarjousten hallinnan käynnistäminen | Tarjoustehtävässä on määritysvaihtoehto | Ei sallittu |
 
-\*\* [Palautetehtävän asetusten](activities-attract.md#feedback-activity) määritysvaihtoehto määrittää, näkevätkö haastattelijat toistensa antaman palautteen.
+
+\*\* [Palautetehtävän asetusten](./activities-attract.md) määritysvaihtoehto määrittää, näkevätkö haastattelijat toistensa antaman palautteen.
+
 
 ## <a name="process-templates"></a>Prosessimallit
 

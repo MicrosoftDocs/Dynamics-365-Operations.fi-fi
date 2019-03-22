@@ -3,7 +3,7 @@ title: Attractin laajennettavuus
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 for Talent - Attract -sovelluksen laajentamista Microsoft Power -ympäristön avulla.
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,18 +18,41 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304187"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789648"
 ---
 # <a name="extensibility-in-attract"></a>Attractin laajennettavuus
 
 [!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Talentin pohjana on Common Data Service (CDS) for Apps -ympäristö, ja sitä voidaan laajentaa eri tavoin Microsoft Power -ympäristön ja Common Data Service for Apps -toimintojen avulla. Niinpä voit määrittää ja mukauttaa järjestelmää Microsoft PowerAppsin ja Microsoft Flow'n avulla. Saat lisää analyysitietoja henkilöistä Microsoft Power BI:n avulla. Lisäksi uudet mukautetut tehtävät, kuten PowerApps- ja verkkosisältö (iframe) -tehtävät, auttavat mukauttamaan työhönottoprosessia entisestään. Voit muokata työhönottoprosessia näiden tehtävien avulla liiketoiminnan tarpeita ja prosesseja vastaaviksi. Voit myös varmistaa, että sekä työhönottoryhmällä että hakijoilla on saumaton ja mukautettu kokemus.
+
+## <a name="extending-option-sets-in-attract"></a>Attractin asetusjoukkojen laajentaminen
+
+**Asetusjoukko** (valintaluettelo) on kenttätyyppi, joka voidaan sisällyttää yksikköön. Se määrittää joukon asetuksia. Kun asetusjoukko näytetään lomakkeessa, se käyttää avattavan luettelon ohjausobjektia.  Attractissa on useita kenttiä, jotka ovat asetusjoukkoja.  Asetusjoukkojen laajentamistoiminto otetaan käyttöön ensin Hylkäyssyy-, Työsuhteen tyyppi- ja Virkaikätyyppi-kentissä.   Voit lisäksi lisätä lisättyjen asetusten lokalisoidut selitteet.  Lisätietoja on seuraavassa linkissä: [Asetusjoukon selitteiden mukauttaminen](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+
+> [!NOTE]
+> Työpaikan LinkedIniin julkaisemistoiminto edellyttää **Työn tiedot** -sivun **Työsuhteen tyyppi**- ja **Virkaikätyyppi**-kenttien käyttöä. LinkedIn tukee näiden kenttien oletusarvoja, ja ne näkyvät, kun työpaikka julkaistaan. Niinpä jos julkaiset työpaikkoja LinkedIniin ja muokkaat näiden kenttien nykyisiä asetusjoukon arvoja, työpaikka kyllä julkaistaan mutta LinkedIn ei näytä mukautettuja **Työsuhteen tyyppi**- ja **Virkaikätyyppi**-arvoja.  
+
+**Hylkäyssyy**-kenttä päivitetään seuraavien ohjeiden mukaisesti yrityskohtaisilla arvoilla.  
+
+1. Laajenna **Hylkäyssyy**-asetusjoukkoa siirtymällä [PowerAppsin hallintasivustoon.](Https://admin.powerapps.microsoft.com)
+2. Sinua voidaan pyytää kirjautumaan tilillesi. Anna käyttäjätunnus ja salasana, jolla kirjaudut Dynamics365:een ja/tai Office365:een ja valitse sitten **Seuraava**.
+3. Valitse **Ympäristöt**-välilehdessä ympäristö, jota haluat hallita, ja siirry sitten kaksoisnapsauttamalla **Tiedot**-välilehteen.
+4. Valitse **Tiedot**-välilehdessä **Dynamics 365:n hallintakeskus**.
+5. Valitse ensin muokattava esiintymä ja sitten **Avaa**.
+6. Valitse ensin **Asetukset**, sitten **Mukautukset** ja lopuksi **Mukauta järjestelmää**.
+7. Etsi yksikkö, johon haluat laajentaa asetusjoukon, valitsemalla **Yksiköt** ja laajentamalla ryhmän. Tässä esimerkissä se on **Työhakemus-yksikkö**.
+8. Siirry kenttään, johon haluat laajentaa asetusjoukon, valitsemalla **Kentät**. Tässä esimerkissä se on **msdyn_rejectionreason**. Kaksoisnapsauta kenttää.
+9. Valitse **Asetusjoukko**-kentässä **Muokkaa**.
+10. Valitse **+**-kuvake.
+11. Anna **selite**.  (Tämä on yksilöivä arvo, joten kaksoiskappaleita ei sallita.)
+12. Valitse **Tallenna**.
+13. Valitse sivun yläosassa **Julkaise**.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Microsoft Power Platformin hyödyntäminen 
 

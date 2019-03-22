@@ -3,7 +3,7 @@ title: Tuotekonfiguraation Solver-strategia
 description: Tässä ohjeaiheessa käsitellään tuotekonfiguraation tehostamista Solver-strategian avulla.
 author: cvocph
 manager: AnnBe
-ms.date: 01/02/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0abb9313ec62cfdfe3bf7c810e2143dcf502bf9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
+ms.sourcegitcommit: 0ceee30a60468a01db6f5b3526dcb9c6abc9d4dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "351145"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "403913"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Tuotekonfiguraation Solver-strategia
 
@@ -62,8 +62,8 @@ Seuraavassa taulukossa on suosituksia eri tilanteissa käytettävistä Solver-st
 | Solver-strategia      | Strategian käyttöskenaario |
 |----------------------|-----------------------------------|
 | Oletusarvo              | **Oletus**-strategia on optimoitu selvittämään taulurajoitteisiin luottavia malleja. Asiakastoteutuksia koskevat tutkimukset ovat osoittaneet, että tämä strategia on tehokkain tilanteissa, joissa taulurajoitteita käytetään runsaasti. |
-| Minimitoimialueet ensin | **Minimitoimialueet ensin**- ja **Ylhäältä alas** -strategiat liittyvät läheisesti toisiinsa. Asiakastoteutustutkimukset ovat osoittaneet, että CU8:ssa esitelty **Ylhäältä alas** -strategia toimii paremmin kuin **Minimitoimialueet ensin** -strategia. **Minimitoimialueet ensin** -strategia on kuitenkin säilytetty tuotteessa, jotta yhteensopivuus aikaisempien versioiden kanssa säilyy. Kummankin Solver-strategian on osoitettu selvittävän tehokkaasti malleja, joissa on useita aritmeettisia lausekkeita eikä taulurajoituksia käytetä. Joissakin tilanteissa **Oletus**-strategia on näitä kahta strategiaa tehokkaampi. Muista tämän vuoksi kokeile jokaista strategiaa. |
-| Ylhäältä alas             | **Minimitoimialueet ensin**- ja **Ylhäältä alas** -strategiat liittyvät läheisesti toisiinsa. Asiakastoteutustutkimukset ovat osoittaneet, että CU8:ssa esitelty **Ylhäältä alas** -strategia toimii paremmin kuin **Minimitoimialueet ensin** -strategia. **Minimitoimialueet ensin** -strategia on kuitenkin säilytetty tuotteessa, jotta yhteensopivuus aikaisempien versioiden kanssa säilyy. Kummankin Solver-strategian on osoitettu selvittävän tehokkaasti malleja, joissa on useita aritmeettisia lausekkeita eikä taulurajoituksia käytetä. Joissakin tilanteissa **Oletus**-strategia on näitä kahta strategiaa tehokkaampi. Muista tämän vuoksi kokeile jokaista strategiaa. |
+| Minimitoimialueet ensin | **Minimitoimialueet ensin**- ja **Ylhäältä alas** -strategiat liittyvät läheisesti toisiinsa. Asiakastoteutustutkimukset ovat osoittaneet, että **Ylhäältä alas** -strategia toimii paremmin kuin **Minimitoimialueet ensin** -strategia. **Minimitoimialueet ensin** -strategia on kuitenkin säilytetty tuotteessa, jotta yhteensopivuus aikaisempien versioiden kanssa säilyy. Kummankin Solver-strategian on osoitettu selvittävän tehokkaasti malleja, joissa on useita aritmeettisia lausekkeita eikä taulurajoituksia käytetä. Joissakin tilanteissa **Oletus**-strategia on näitä kahta strategiaa tehokkaampi. Muista tämän vuoksi kokeile jokaista strategiaa. |
+| Ylhäältä alas             | **Minimitoimialueet ensin**- ja **Ylhäältä alas** -strategiat liittyvät läheisesti toisiinsa. Asiakastoteutustutkimukset ovat osoittaneet, että **Ylhäältä alas** -strategia toimii paremmin kuin **Minimitoimialueet ensin** -strategia. **Minimitoimialueet ensin** -strategia on kuitenkin säilytetty tuotteessa, jotta yhteensopivuus aikaisempien versioiden kanssa säilyy. Kummankin Solver-strategian on osoitettu selvittävän tehokkaasti malleja, joissa on useita aritmeettisia lausekkeita eikä taulurajoituksia käytetä. Joissakin tilanteissa **Oletus**-strategia on näitä kahta strategiaa tehokkaampi. Muista tämän vuoksi kokeile jokaista strategiaa. |
 | Z3                   | **Z3**-strategian käyttö Solver-oletusstrategiana on suositeltavaa. Jos olet huolestunut suorituskyvystä ja skaalautuvuudesta, voit arvioida muut strategiat. |
 
 ## <a name="additional-resources"></a>Lisäresurssit

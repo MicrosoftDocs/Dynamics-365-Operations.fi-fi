@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
+ms.sourcegitcommit: 21bbdac152e0cbb0576df9d5e6e90283175834ef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340726"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768411"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Laitteiston kokovaatimukset paikallisissa ympäristöissä
 
@@ -86,7 +86,7 @@ Sinun on tiedettävä suurin käsiteltävä tapahtumien määrä kokovaatimusten
     - Lisätietojen, kuten tietokantalokin ja hälytysten, käyttö. Suuri tietokantalokiin kirjaus pienentää entisestään tunti- ja ydinkohtaisen siirtomäärän alle 3 000 riviin.
     - Tietojen kokopanon monimutkaisuus – esimerkiksi yksinkertaisen tilikartan tai tarkan ja yksityiskohtaisen tilikartan valitsimen vaikuttaa siirtomäärään.
     - Tapahtuman kuvaus.
-    - 2–4 Gt muistia/ydin.
+    - 2–16 Gt muistia/ydin.
     - Tietokantapalvelimen lisätietokannat, kuten Management Reporter- ja SSRS-tietokannat.
     - Tilapäistietokanta = 15 prosenttia tietokannan koosta, ja tiedostoja on yhtä paljon kuin fyysisiä suorittimia.
     - SAN-koko ja -siirtomäärä yhtäaikaisten tapahtumien yhteismäärän ja -käytön perusteella.

@@ -3,7 +3,7 @@ title: Monikanavaiset edistyneet automaattiset kulut
 description: Tässä ohjeaiheessa käsitellään Retail-kanavan tilausten lisäkulujen hallintaa edistyneiden automaattisten kuluominaisuuksien avulla.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a980ae9571fb47522d3966dc172b2343641b827e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b63a1bb8791ab3f0c71a2fd03677e7d0bf71e62
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345556"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789768"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Monikanavaiset edistyneet automaattiset kulut
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja edistyneiden automaattisten kulujen määrittämisestä ja käyttöönottamisesta. Tämä ominaisuus on käytössä Dynamics 365 for Retailin versiossa 10.0.
@@ -67,6 +66,8 @@ Uudet työvaiheet:
 - **143 – Laske kulut uudelleen** – Tällä työvaiheella voi laskea myyntitapahtuman kulut kokonaisuudessaan uudelleen. Käyttäjän aiemmin mahdollisesti korvaavat automaattiset kulut lasketaan uudelleen nykyisen ostoskorimäärityksen perusteella.  
 
 Kuten muissakin myyntipisteen työvaiheissa suojausmääritysten avulla on mahdollista edellyttää esimiehen hyväksyntää ennen työvaiheen suorittamista.
+
+On tärkeää huomata, että edellä mainitut myyntipistetoiminnot voidaan lisätä myyntipisteasetteluun myös silloin, kun **Käytä edistyneitä automaattisia kuluja** -parametri on poistettu käytöstä. Tässä skenaariossa organisaatiot saavat lisäetua siitä, että ne voivat tarkastella manuaalisesti lisättyjä kuluja ja muokata niitä **Kulujen hallinta** -toiminnolla. Käyttäjät voivat käyttää myös myyntipistetapahtumien **Lisää otsikon kulut**- ja **Lisää rivin kulut** -toimintoja, kun **Käytä edistyneitä automaattisia kuluja** -parametri on poistettu käytöstä. **Laske kulut uudelleen** -toiminto ei ole yhtä hyödyllinen, jos sitä käytetään, kun **Käytä edistyneitä automaattisia kuluja** on poistettu käytöstä. Tässä skenaariossa mitään ei laskettaisi uudelleen ja tapahtumaan manuaalisesti lisättyjen kulujen arvoksi palautuisi 0,00 $.
 
 ## <a name="use-case-examples"></a>Esimerkkejä käyttötapauksista
 Tämän osan esimerkkitapaukset auttavat hahmottamaan automaattisten kulujen ja muiden kulujen määrityksiä ja käyttöä Retail-kanavatilausten yhteydessä. Nämä esimerkit näyttävät, miten sovellus toimii, kun **Käytä edistyneitä automaattisia kuluja** -parametri on otettu käyttöön.
@@ -207,3 +208,7 @@ Lisäksi organisaatiota suositellaan lisäämään vapaatekstikentät kuitin ala
 ### <a name="preventing-charges-from-being-calculated-until-the-pos-order-is-completed"></a>Kulujen laskennan estäminen ennen myyntipistetilauksen valmistumista
 
 Jotkin organisaatiot haluavat ehkä odottaa, että käyttäjä on lisännyt kaikki myyntirivit myyntipistetapahtumaan ennen kulujen laskemista. Jos haluat estää kulujen laskemisen, kun nimikkeitä lisätään myyntipistetapahtumaan, ota **Manuaalinen veloituksen laskenta** -parametri käyttöön myymälän käyttämässä **toimintoprofiilissa**. Tämän parametrin ottaminen käyttöön edellyttää, että myyntipistekäyttäjä käyttää **Laske loppusummat** -työvaihetta, kun tuotteiden lisääminen myyntipistetapahtumaan on päättynyt. **Laske loppusummat** -työvaihe käynnistää sitten tilauksen otsikon tai rivien mahdollisten automaattisten kulujen laskennan.
+
+### <a name="charges-override-reports"></a>Kulujen ohitusraportit
+
+Jos käyttäjät ohittavat lasketut kulut manuaalisesti tai lisäävät manuaalisen kulun tapahtumaan, nämä tiedot ovat käytettävissä tarkistusta varten **Kulujen ohituksen historia** -raportissa. Raporttia voi käyttää valitsemalla **Vähittäismyynti \> Kyselyt ja raportit \> Kulun ohituksen historia**.  On tärkeää huomata, että tähän raporttiin tarvittavat tiedot tuodaan kanavatietokannata HQ-sovellukseen P-jakeluaikataulutöinä. Tämän vuoksi tiedot juuri myyntipisteessä tehdyistä ohituksista eivät ehkä ole heti käytettävissä tässä raportissa, vaan tämän työn on ladattava myymälän tapahtumatiedot ensin HQ-sovellukseen. 

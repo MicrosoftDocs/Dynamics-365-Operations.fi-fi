@@ -3,7 +3,7 @@ title: Todellisen painon tuotteen käsittely varastonhallinnan avulla
 description: Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ tehdään varastossa.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5161860e3b1c5b0ae795d109159268be085ec5af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
+ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334056"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "777269"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
-[!include [preview banner](../../includes/preview-banner.md)]
+
 [!include [banner](../includes/banner.md)]
 
-**Ominaisuuden näyttäminen**
+## <a name="feature-exposure"></a>Ominaisuuden näyttäminen
 
 Jos haluat, että varastonhallinta käsittelee todellisen painon tuotteita, voit ottaa toiminnon käyttöön käyttöoikeuden määritysavaimen avulla. (Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**. Laajenna sitten **Konfigurointiavaimet**-välilehdessä **Kauppa \> Varaston ja kuljetusten hallinta** ja valitse **Todellinen paino varastoa varten** -valintaruutu).
 
 > [!NOTE]
-> Myös kohtien **Varaston ja kuljetusten hallinta** ja **Prosessijaon todellinen paino** käyttöoikeuksien määritysavaimien on oltava käytössä.
+> Myös kohtien **Varaston ja kuljetusten hallinta** ja **Prosessijako \> Todellinen paino** käyttöoikeuksien määritysavaimien on oltava käytössä.
 
 Kun käyttöoikeuden määritysavain on otettu käyttöön, voit valita vapautetun tuotteen luonnin yhteydessä **Todellinen paino**. Voit myös liittää vapautetun tuotteen siihen varastodimensioryhmään, jolle **Käytä varastonhallintaprosesseja** -parametri on valittu.
 
