@@ -5,7 +5,9 @@ items:
   items:
   - name: Uudet ja muuttuneet ominaisuudet
     href: get-started/whats-new.md
-  - name: Dynamics 365 for Retail -sovelluksen version 10.0.1 esiversio-ominaisuudet
+  - name: Dynamics 365 for Retail -sovelluksen version 10.0.2 esiversio-ominaisuudet
+    href: get-started/whats-new-10-0-2.md
+  - name: Dynamics 365 for Retail 10.0.1 -sovelluksen uudet ja muuttuneet ominaisuudet
     href: get-started/whats-new-10-0-1.md
   - name: Dynamics 365 for Retail -sovelluksen uudet ja muuttuneet ominaisuudet (huhtikuu 2019)
     href: get-started/april-whats-new.md
@@ -116,7 +118,7 @@ items:
   items:
   - name: Automaattisten etukäteisveloitusten määrittäminen ja käyttäminen
     href: omni-auto-charges.md
-  - name: Otsikon automaattisten kulujen suhteellinen jako ja ryhmittely
+  - name: Otsikon kulujen jakaminen suhteellisesti vastaaville myyntiriveille
     href: pro-rate-charges-matching-lines.md
 - name: Puhelinkeskus
   items:
@@ -274,7 +276,7 @@ items:
     href: price-management.md
   - name: Hintojen muutokset ja alennukset
     href: price-adjustments-discounts.md
-  - name: Useiden vähittäismyyntialennusten käyttäminen tuotteeseen
+  - name: Useiden alennusten käyttäminen tuotteeseen
     href: Apply-multiple-retail-discounts.md
   - name: Optimaalisen päällekkäisten alennusten yhdistelmän määrittäminen
     href: optimal-combination-overlapping-discounts.md
@@ -282,6 +284,8 @@ items:
     href: define-channel-specific-discounts.md
   - name: Vähittäismyyntituotteiden alennusten estämisasetukset
     href: prevent-discounts.md
+  - name: Yleiskatsaus lähetyskulujen alennuksesta
+    href: retail-shipping-discount.md
   - name: Vähittäismyynnin kuponkien määrittäminen
     href: retail-coupons.md
 - name: Tuotteet ja esillepano
@@ -354,6 +358,10 @@ items:
     href: localizations/fiscal-integration-for-retail-channel.md
   - name: Vähittäismyyntikanavan kirjanpidon integroinnin määrittäminen
     href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+  - name: Itävalta
+    items:
+    - name: Itävallan tilikausirekisteröintipalvelun integroinnin malli
+      href: localizations/emea-aut-fi-sample.md
   - name: Itä-Eurooppa
     items:
     - name: Retail-ennakkolaskut Itä-Eurooppaa varten
@@ -362,21 +370,23 @@ items:
       href: localizations/emea-eeu-petty-cash-for-retail.md
     - name: Retail-myyntilaskut ja palautuksen myyntitilaukset Itä-Euroopan maissa
       href: localizations/emea-eeu-retail-invoices.md
-    - name: Kassakoneiden käyttöönotto-ohjeet Tšekin tasavallassa, Unkarissa ja Puolassa
+    - name: Kassapäätteiden käyttöönotto-ohjeet Tšekin tasavallassa, Unkarissa ja Puolassa
       href: localizations/emea-eeu-deployment.md
     - name: Näyte verotusta varten olevan tulostimen integroinnista Puolassa
       href: localizations/emea-pol-fpi-sample.md
+    - name: Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli
+      href: localizations/emea-cze-fi-sample.md
   - name: Ranska
     items:
-    - name: Kassakonetoiminnot
+    - name: Kassapäätetoiminnot
       href: localizations/emea-fra-cash-registers.md
     - name: Kassapäätteiden käyttöönotto-ohjeet
       href: localizations/emea-fra-deployment.md
   - name: Intia
     items:
-    - name: Arvonlisäveron (GST) integrointi kassakoneisiin
+    - name: Arvonlisäveron (GST) integrointi kassapäätteisiin
       href: localizations/apac-ind-cash-registers.md
-    - name: Käyttöönotto-ohjeet kassakoneille
+    - name: Käyttöönotto-ohjeet kassapäätteille
       href: localizations/apac-ind-loc-deployment-guidelines.md
     - name: Päivitys- ja N-1-tuki Intiaa varten
       href: localizations/apac-ind-n-1-for-india.md
@@ -386,13 +396,13 @@ items:
       href: localizations/emea-ita-fpi-sample.md
   - name: Norja
     items:
-    - name: Kassakonetoiminnot
+    - name: Kassapäätetoiminnot
       href: localizations/emea-nor-cash-registers.md
     - name: Kassapäätteiden käyttöönotto-ohjeet
       href: localizations/emea-nor-loc-deployment-guidelines.md
   - name: Ruotsi
     items:
-    - name: Kassakonetoiminnot
+    - name: Kassapäätetoiminnot
       href: localizations/emea-swe-cash-registers.md
     - name: Retail POS -integrointimalli, jossa on tarkistusyksiköt
       href: localizations/retail-sdk-control-unit-sample.md
@@ -477,6 +487,8 @@ items:
       href: retail-components.md
     - name: Retail Server -arkkitehtuuri
       href: dev-itpro/retail-server-architecture.md
+    - name: Valitse myymälän topologia
+      href: dev-itpro/retail-in-store-topology.md
     - name: Commerce Data Exchangen ja vähittäismyyntikanavan tietoliikenne
       href: dev-itpro/define-retail-channel-communications-cdx.md
     - name: Retail Modern POS -arkkitehtuuri
@@ -562,7 +574,7 @@ items:
     - name: Myyntipisteen pyynnön käsittelijän ohittaminen
       href: dev-itpro/pos-handler.md
     - name: Myyntipisteen laajennuspaketin tietojen tarkasteleminen
-      href: view-pos-extension-package-details.md
+      href: dev-itpro/view-pos-extension-package-details.md
   - name: Hardware Station ja laajennettavuus
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Serverin laajennettavuus
@@ -669,9 +681,9 @@ items:
     items:
     - name: Kanta-asiakaslaajennus
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
-ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
+ms.openlocfilehash: 179295f4397120f46391885760c980b2c9baa028
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791635"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "975917"
