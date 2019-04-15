@@ -278,7 +278,7 @@ items:
         href: extensibility/class-extensions.md
       - name: Luokan laajennus menetelmän paketoinnin ja komentoketjun kautta
         href: extensibility/method-wrapping-coc.md
-      - name: Mallilaajennusten nimeämisohjeet
+      - name: Laajennusten nimeämisohjeet
         href: extensibility/naming-guidelines-extensions.md
       - name: Mallien rajoitusten höllentäminen, jotta lisääminen voidaan refaktoroida laajennuksiin
         href: extensibility/refactoring-over-layering.md
@@ -356,7 +356,7 @@ items:
     items:
     - name: Jäljittäminen Trace parser
       href: perf-test/trace-trace-tutorial.md
-    - name: Suorituskyvyn SDK ja usean käyttäjän testaus Visual Studio Onlinen kautta
+    - name: Suorituskyvyn SDK ja usean käyttäjän testaus Visual Studio Online -palvelun avulla
       href: perf-test/perfsdk-tutorial.md
     - name: Suorituskyvyn SDK ja usean käyttäjän testaus paikallisissa ympäristöissä
       href: perf-test/perfsdk-tutorial-lbd.md
@@ -374,6 +374,28 @@ items:
       href: perf-test/continuous-build-test-automation.md
     - name: SysTest-suodatus luokka- ja metodiattribuutteja käyttäen
       href: perf-test/systest-filtering.md
+    - name: Hyväksyntätestikirjasto
+      href: perf-test/acceptance-test-library.md
+    - name: Siirtymisruudun käsitteet
+      href: perf-test/concepts-navigation.md
+    - name: Tiedon testausmenetelmät
+      href: perf-test/test-data-methods.md
+    - name: Hyväksyntätestauskirjaston entiteetit
+      href: perf-test/concepts-entities.md
+    - name: Hyväksyntätestikirjaston komennot
+      href: perf-test/concepts-commands.md
+    - name: Hyväksyntätestikirjaston luojat
+      href: perf-test/concepts-creators.md
+    - name: Hyväksyntätestikirjaston kyselyt
+      href: perf-test/concepts-queries.md
+    - name: Määritysluokat
+      href: perf-test/concepts-specifications.md
+    - name: Hyväksymistestikirjastokoodin luomisen ohjattu toiminto
+      href: perf-test/code-generation-wizard.md
+    - name: Hyväksymistestikirjaston parhaat käytännöt
+      href: perf-test/atl-best-practices.md
+    - name: Usein kysytyt kysymykset
+      href: perf-test/atl-faq.md
   - name: Voimassaolopäivä
     href: dev-tools/date-effectivity.md
   - name: ISV-käyttöoikeudet
@@ -451,6 +473,8 @@ items:
       href: user-interface/control-checklist.md
   - name: Sanomat
     items:
+    - name: Kuvatekstitoiminto
+      href: user-interface/feature-callouts.md
     - name: Liukusäädin ja MessageBox-valintaikkunat
       href: user-interface/slider-messagebox.md
     - name: Viestikeskus, sanomapalkki ja sanoman tietojen ohjelmointirajapinta
@@ -920,7 +944,7 @@ items:
       href: deployment/apply-deployable-package-system.md
     - name: Päivitysten ja laajennusten kohdistaminen pilvessä ylläpidetyn Retail-kanavan osiin
       href: deployment/Update-retail-channel.md
-    - name: Pilvessä ylläpidetyn Retail-kanavan osien alustaminen
+    - name: Alusta Retail Cloud Scale Unit
       href: deployment/Initialize-Retail-Channels.md
   - name: Paikallinen käyttöönotto
     href: deployment/on-premises-deployment-landing-page.md
@@ -1044,7 +1068,7 @@ items:
     items:
     - name: Uusimpaan päivitykseen siirtyminen
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Ympäristöjen päivittäminen versiosta 8.0 versioon 8.1
+    - name: Ympäristöjen päivittäminen versiosta 8.0 versioon 8.1.X/10.X
       href: migration-upgrade/appupdate-80-81.md
     - name: Ohjelmiston elinkaarikäytäntö ja pilviversiot
       href: migration-upgrade/versions-update-policy.md
@@ -1133,6 +1157,12 @@ items:
       href: sysadmin/runby.md
     - name: Erätyö SQL-indeksin eheyttämisen käsittelemistä varten
       href: sysadmin/batch-job-SQL-defragmentation.md
+    - name: Määritä eräajon hälytyksiä
+      href: sysadmin/alerts.md
+    - name: Laajennetut erälomakkeet
+      href: sysadmin/enhanced-forms.md
+    - name: Tyhjennä erätöiden historia
+      href: sysadmin/batch-history-cleanup.md
   - name: Optimointiavustaja
     href: sysadmin/optimization-advisor-overview.md
     items:
@@ -1229,8 +1259,10 @@ items:
     items:
     - name: Koulutustarkoitusten päivittäminen
       href: database/dbmovement-scenario-general-refresh.md
-    - name: Vianmääritys ja diagnostiikka
+    - name: Virheenkorjaus tuotantotietokannan kopion perusteella
       href: database/dbmovement-scenario-debugdiag.md
+    - name: Vie kopio vakiokäyttäjän hyväksyntätestin (UAT) tietokannasta
+      href: database/dbmovement-scenario-exportuat.md
     - name: Golden-määrityksen kampanja
       href: database/dbmovement-scenario-goldenconfig.md
     - name: Destruktiivinen testaus
@@ -1251,9 +1283,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Finance and Operations -tukikokemusten hallinta
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: 93081e4ccc64b68ae8f5cb3aa0f0c499bc1a426b
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773799"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "976009"
