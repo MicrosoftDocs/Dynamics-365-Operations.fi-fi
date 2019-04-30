@@ -1,30 +1,30 @@
 ---
 title: Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa
 description: Tässä ohjeaiheessa käsitellään työn elementtejä Attractissa. Siinä käsitellään myös työn luomista.
-author: josaw
+author: hasrivas
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
-ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
+ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "772808"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "969346"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa
 
@@ -44,7 +44,7 @@ Attractin työ sisältää työn tiedot, työhönottoryhmä, työhönottoprosess
 
 **Avoimien paikkojen määrä** -kentän asetuksena on oletusarvoisesti **1**. Voit kuitenkin muuttaa arvon. Kun työpaikkaa varten on valmisteltu tarjous, **Avoimien paikkojen määrä** -kentän arvo pienenee.
 
-Jos toimien hallinta on otettu hallintakeskuksessa käyttöön, **Päivitä toimet** -haku on käytettävissä. Haku lukee Common Data Service for Appsin JobPosition-yksikön ja palauttaa luettelon toimista, jotka työpaikkaan voidaan valita. Jos valittujen toimien määrä ylittää avoimien paikkojen määrän, saat siitä varoituksen. Saat varoituksen myös silloin, kun toimea käytetään useissa töissä.
+Jos toimien hallinta on otettu hallintakeskuksessa käyttöön, **Päivitä toimet** -haku on käytettävissä. Haku lukee Common Data Servicein JobPosition-yksikön ja palauttaa luettelon toimista, jotka työtä varten voidaan valita. Jos valittujen toimien määrä ylittää avoimien paikkojen määrän, saat siitä varoituksen. Saat varoituksen myös silloin, kun toimea käytetään useissa töissä.
 
 > [!NOTE]
 > Toimien hallinta sisältyy kattavaan työhönottolaajennukseen.
@@ -74,9 +74,7 @@ Lisätietoja työhönottoprosessiin lisättävistä tehtävistä on kohdassa [Ty
 
 ## <a name="postings"></a>Kirjaukset
 
-Kun työ on aktivoitu, se voidaan julkaista. Vain työhönottajat ja järjestelmänvalvojat voivat julkaista töitä. Työ voidaan julkaista joko Talent Careers -sivustossa (Microsoft Dynamics 365 for Talentin urasivustossa) tai LinkedInissä. 
-
-Attract-ryhmä tekee jatkuvasti yhteistyötä työpaikkailmoitussivujen kanssa. Tämä luettelo tulee laajenemaan ajan mittaan.
+Kun työ on aktivoitu, se voidaan julkaista. Vain työhönottajat ja järjestelmänvalvojat voivat julkaista töitä. Työ voidaan julkaista joko Talent Careers -sivustossa (Microsoft Dynamics 365 for Talentin urasivustossa) tai LinkedInissä. Attract-ryhmä tekee jatkuvasti yhteistyötä työpaikkailmoitussivujen kanssa. Tämä luettelo tulee laajenemaan ajan mittaan. Kun työ on julkaistu vain sisäiseksi, ehdokkailla on oltava AAD-tili, jotta he voivat tarkastella työtä ja hakea sitä. Jos työ on julkinen, ehdokkaat voivat tarkastella ja hakea sitä minkä tahansa todennusvaihtoehdon avulla. 
 
 Lisätietoja työpaikkailmoituksista on kohdassa [Attractin urasivuston toiminnot](career-site.md).
 
@@ -137,9 +135,14 @@ Kun työ on tallennettu, se voidaan lähettää hyväksyttäväksi. Seuraavassa 
 
 Voit suodattaa työn tiloja työluettelossa.
 
-Hyväksynnät voidaan lähettää yrityksessä kenelle tahansa Microsoft Azure Active Directoryn (Azure AD) käyttäjälle. Hyväksynnät lähetetään samanaikaisesti kaikille hyväksyjiksi merkityille käyttäjille. Kun työ on hyväksytty, se voidaan aktivoida.
+Hyväksynnät voidaan lähettää yrityksessä kenelle tahansa Microsoft Azure Active Directoryn (Azure AD) käyttäjälle. Hyväksynnät lähetetään samanaikaisesti kaikille hyväksyjiksi merkityille käyttäjille. Kaikkien hyväksyjien on hyväksyttävä työ, ennen kuin se voidaan siirtää eteenpäin. Jos yksi hyväksyjä hylkää työn, sen tilaksi tulee **Hylätty**. Kun työ on hyväksytty, se voidaan aktivoida.
 
-Hyväksyjiksi merkityt henkilöt saavat Attractissa ilmoituksen, joka ilmoittaa, että heillä on hyväksyttävä kohde. Hyväksyntäkohde näkyy myös koontinäytön **Sinulle määritetyt** -osassa. Kun joko hyväksyy työn, työhönottoryhmä saa siitä ilmoituksen. Työhönottoryhmä saa lopuksi ilmoituksen siitä, että työ on hyväksytty.
+Jos käyttäjä muokkaa työtä sen jälkeen, kun se on hyväksytty mutta ei aktivoitu, työn tilaksi palautetaan **Luonnos**. Tämän jälkeen työ on lähetettävä uudelleen hyväksyttäväksi. Kun hyväksytty työ on aktivoitu, sitä ei voi enää muokata.
+
+Hyväksyjiksi merkityt henkilöt saavat Attractissa ilmoituksen ja sähköposti-ilmoituksen, jossa kerrotaan, että heillä on hyväksyttävä kohde.  Hyväksyjät voivat valita sähköpostiviestissä olevan linkin, jolloin työ avautuu. He voivat tarkastella tietoja ja joko hyväksyä tai hylätä sen. Kun työn tilaksi on määritetty **Hyväksytty** tai **Hylätty**, lähettäjälle lähetetään ilmoitus Attractissa sekä sähköpostitse. Hyväksyjät saavat myös muistutussähköpostiviestin, jos he eivät vastaa hyväksyntäpyyntöön 24 tunnin kuluessa.
+
+> [!NOTE]
+> Voit luoda mukautettuja sähköpostimalleja hyväksyntäsähköposteja varten. Lisätietoja on kohdassa [Sähköpostimallien luominen ja hallinta](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Työn luominen
 

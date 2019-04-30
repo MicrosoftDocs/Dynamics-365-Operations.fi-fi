@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e6b490a696dc0a00c47e56f57373f330d0e53dde
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782857"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949802"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (5. maaliskuuta 2019)
 
@@ -35,7 +35,7 @@ Tässä ohjeaiheessa käsitellään Talentin uusia tai muuttuneita ominaisuuksia
 
 ### <a name="extending-option-sets-in-attract"></a>Attractin asetusjoukkojen laajentaminen
 
-Attractissa on useita kenttiä, jotka ovat Common Data Servicen (CDS) asetusjoukkoja. Asetusjoukkojen laajentamiseen on käytössä uusia asetuksia, kuten **Hylkäyssyy**-kenttä, **Työsuhteen tyyppi** -kenttä ja **Virkaikätyyppi**-kenttä.
+Attractissa on useita kenttiä, jotka ovat Common Data Servicen asetusjoukkoja. Asetusjoukkojen laajentamiseen on käytössä uusia asetuksia, kuten **Hylkäyssyy**-kenttä, **Työsuhteen tyyppi** -kenttä ja **Virkaikätyyppi**-kenttä.
 
 > [!IMPORTANT]
 > Työpaikan LinkedIniin julkaisemistoiminto edellyttää **Työn tiedot** -sivun **Työsuhteen tyyppi**- ja **Virkaikätyyppi**-kenttien käyttöä. LinkedIn tukee näiden kenttien oletusarvoja, ja ne näkyvät, kun työpaikka julkaistaan. Jos julkaiset työpaikkoja LinkedIniin ja muokkaat näiden kenttien nykyisiä asetusjoukon arvoja, työpaikka kyllä julkaistaan mutta LinkedIn ei näytä mukautettuja **Työsuhteen tyyppi**- ja **Virkaikätyyppi**-arvoja.
@@ -70,8 +70,8 @@ Tämän muutoksen ansiosta palkanlaskentakenttien arvot palautuvat nyt nykyisiin
 ### <a name="other-miscellaneous-bug-fixes"></a>Muita ohjelmakorjauksia
 Tässä julkaisussa on muita vähäisiä ohjelmakorjauksia.
 
-### <a name="upgrade-to-cds-for-apps"></a>CDS for Appsin päivitys
-CDS for Apps -versioon tapahtuvan päivityksen määräajat lähestyvät nopeasti. Kirjaudu PowerApps-hallintakeskukseen ja tarkista, onko tietokanta päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service for Appsiin](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+### <a name="upgrade-to-common-data-service"></a>Päivitä versioon Common Data Service
+Common Data Service -versioon tapahtuvan päivityksen määräajat lähestyvät nopeasti. Kirjaudu PowerApps-hallintakeskukseen ja tarkista, onko tietokanta päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Tulossa pian
 

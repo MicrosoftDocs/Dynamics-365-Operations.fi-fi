@@ -1,7 +1,7 @@
 ---
 title: Toimittajayhteistyön laskutustyötila
 description: Tässä aiheessa kerrotaan, miten toimittajien laskuja voidaan tarkastella ja lähettää laskuja toimittajayhteistyön laskutustyötilasta.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5520012a00e918e8748b974773eeaf2450f0c55e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1f9e57e95a03b3e6f8bd940d38a426e9db559624
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340519"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896692"
 ---
 # <a name="vendor-collaboration-invoicing-workspace"></a>Toimittajayhteistyön laskutustyötila
 
@@ -41,7 +41,7 @@ Tässä aiheessa kerrotaan, miten toimittajien laskuja voidaan tarkastella ja l�
 
 **Yhteenveto**-ruuduissa näkyy yhteenveto valitun toimittajan laskuista. Voit tarkastella laskuja tilan mukaan.
 -   Luonnoslaskuja ei ole lähetetty työnkulkuun.
--   Lähetetty, ei hyväksytty -tilassa olevat laskut ovat laskuja, jotka on lähetetty toimittajalle, mutta niitä ei ole kirjattu Dynamics 365 for Finance and Operations -järjestelmään.
+-   Lähetetty, ei hyväksytty -tilassa olevat laskut ovat laskuja, jotka on lähetetty toimittajalle, mutta niitä ei ole kirjattu Finance and Operations -järjestelmään.
 -   Hyväksytty, ei maksettu -tilassa olevat laskut ovat laskuja, jotka on kirjattu Finance and Operations -järjestelmään mutta niitä ei ole maksettu kokonaan.
 -   Maksetut laskut on maksettu kokonaan Finance and Operations -järjestelmässä.
 

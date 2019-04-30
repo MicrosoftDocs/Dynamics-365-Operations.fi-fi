@@ -3,14 +3,14 @@ title: Sähköinen raportointi (ER)
 description: Tämä aihe esittelee sähköisen raportointityökalun. Artikkelissa on tietoja keskeisistä käsitteistä ja sähköisen raportoinnin tukemista skenaarioista. Lisäksi siinä on luettelo muodoista, jotka on suunniteltu osana tätä ratkaisua ja jotka julkaistaan sen osana.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bc544211891c19104b2b3cb704b55a074784d608
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310803"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902957"
 ---
 # <a name="electronic-reporting-er"></a>Sähköinen raportointi (ER)
 
@@ -99,7 +99,7 @@ Muoto-osa tukee seuraavia toimintoja:
 Muotokomponentin avulla tietyt raporttitulostuksessa käytettäviä tiedostoja voidaan liittää.
 
 - OPENXML-laskentataulukkomuodossa tulostusmallina käytettävän laskentataulukon sisältävät Excel-laskentataulukot.
-- Microsoft Word -asiakirjamuodossa tulostusmallina käytettävän asiakirjan sisältävät Microsoft Word -tiedostot.
+- Microsoft Word -asiakirjamuodossa tulostusmallina käytettävän asiakirjan sisältävät Microsoft Word-tiedostot
 - Muut tiedostot, jotka voidaan sisällyttää muodon tulostukseen etukäteen määritettyinä tiedostoina.
 
 Seuraavassa kuvassa osoitetaan tiedonkulku näissä muodoissa.
@@ -163,21 +163,33 @@ Lisätietoja uuden sähköisen raportointipalvelun rekisteröimisestä on tehtä
 
 #### <a name="repository"></a>Säilö
 
-Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säilöön. Tällä hetkellä tuetaan neljää ER-säilöä: **Operatiiviset resurssit**, **LCS-projektit (LCS)**, **Tiedostojärjestelmä** ja **Sääntöjen konfigurointipalvelu (RCS)**.
+Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säilöön. Tällä hetkellä tuetaan seuraavia ER-säilötyyppejä: 
 
-**Operatiivisten resurssien** säilö antaa mahdollisuuden käyttää määritysluetteloa, jonka Microsoft sähköisen raportoinnin määrityspalveluna julkaisee Finance and Operations -ratkaisun osana. Nämä määritykset voidaan tuoda nykyiseen Finance and Operationsin esiintymään ja niitä voidaan käyttää sähköisessä raportoinnissa. Niitä voidaan käyttää myös muissa lisälokalisoinneissa ja -mukautuksissa.
+- Jaettu LCS-kirjasto
+- LCS-projekti
+- Tiedostojärjestelmä
+- Regulatory Configuration Services (RCS)
+- Operatiiviset resurssit
+
+
+**Jaettu LCS-kirjasto** -säilön kautta voi käyttää Lifecycle Servicesin (LCS) jaetun omaisuuskirjaston määritysluetteloa. Tämä ER-rekisterityyppi voidaan rekisteröidä vain Microsoft-palvelulle. Voit tuoda jaetusta LCS-kirjastosta ER-määritysten uusimmat versiot nykyiseen Finance and Operations -esiintymään.
 
 **LCS-projektin** säilö tarjoaa mahdollisuuden käyttää tietyn LCS-projektin (LCS-projektiresurssikirjaston) määritysluetteloa, joka valittiin säilön rekisteröintivaiheessa. Sähköinen raportointi mahdollistaa jaettujen määritysten latauksen nykyisestä Finance and Operationsin esiintymästä tiettyyn **LCS-projektin** säilöön. Voit myös tuoda määrityksiä **LCS-projektin** säilöstä nykyiseen Finance and Operationsin esiintymään.
 
-**Tiedostojärjestelmä**-säilössä on luettelo määrityksistä, jotka sijaitsevat xml-tiedostoina tietyssä sellaisen paikallisen laitteen tietojärjestelmän kansiossa, joka isännöi AOS-palvelua. Tarvittava kansio valitaan säilön rekisteröintivaiheessa. Voit tuoda määrityksiä **Tiedostojärjestelmä**-säilöstä nykyiseen Finance and Operationsin esiintymään. Huomaa, että tätä säilötyyppiä voi käyttää seuraavista Dynamics 365 for Finance and Operations -ympäristöistä:
+**Tiedostojärjestelmä**-säilössä on luettelo määrityksistä, jotka sijaitsevat xml-tiedostoina tietyssä sellaisen paikallisen laitteen tietojärjestelmän kansiossa, joka isännöi AOS-palvelua. Tarvittava kansio valitaan säilön rekisteröintivaiheessa. Voit tuoda määrityksiä **Tiedostojärjestelmä**-säilöstä nykyiseen Finance and Operationsin esiintymään. 
+
+Huomaa, että tätä säilötyyppiä voi käyttää seuraavista Dynamics 365 for Finance and Operations -ympäristöistä:
+
 - kehitystyötä varten käyttöönotetut pilvipalveluympäristöt (jotka sisältävät liitettyjen pakettien testimalleja)
-- paikallisesti käyttöönotetut ympäristöt (paikallinen yritystietojen käyttöönotto (LBD))
+- paikallisesti käyttöön otetut ympäristöt
 
-Sivulla [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti](./electronic-reporting-import-ger-configurations.md) on lisätietoja.
+Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti](./electronic-reporting-import-ger-configurations.md)
 
-**LCS-esiintymän** säilössä on tietyn RCS-esiintymän määritysluettelo, joka valittiin säilön rekisteröintivaiheessa. Sähköisen raportoinnin ansiosta voit tuoda valmiita tai jaettuja määrityksiä valitusta RCS-esiintymästä nykyiseen Finance and Operations -esiintymään sähköistä raportointia varten.
+**LCS-esiintymän** säilössä on tietyn RCS-esiintymän määritysluettelo, joka valittiin säilön rekisteröintivaiheessa. Sähköisen raportoinnin ansiosta voit tuoda valmiita tai jaettuja määrityksiä valitusta RCS-esiintymästä nykyiseen Finance and Operations -esiintymään, joten voit käyttää niitä sähköisessä raportoinnissa.
 
-Sivulla [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti sääntöjen konfigurointipalvelusta (RCS)](./rcs-download-configurations.md) on lisätietoja.
+Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](./rcs-download-configurations.md).
+
+**Operatiivisten resurssien** säilö antaa mahdollisuuden käyttää määritysluetteloa, jonka Microsoft sähköisen raportoinnin määrityspalveluna julkaisee aluksi Finance and Operations -ratkaisun osana. Nämä määritykset voidaan tuoda nykyiseen Finance and Operations -esiintymään sähköistä raportointia tai näytetehtäväoppaisen toistamista varten. Niitä voidaan käyttää myös muissa lisälokalisoinneissa ja -mukautuksissa. Huomaa, että Microsoftin toimittamien sähköisten raportointimääritysten uusimmat versiot on tuotava LCS:n jaetun ominaisuuskirjastosta käyttämällä vastaavaa ER-säilöä.
 
 Tarvittavat **LCS-projekti**-, **Tiedostojärjestelmä**- ja **Sääntöjen konfigurointipalvelu (RCS)** -säilöt voidaan rekisteröidä erikseen kullekin nykyisen Finance and Operations -esiintymän määrityspalvelulle. Kukin säilö voidaan osoittaa tiettyyn määrityspalveluun.
 
@@ -377,6 +389,5 @@ Voit ottaa sähköisessä raportoinnissa automaattisesti käyttöön viimeisimp�
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Lokalisointivaatimukset – Luo sähköisen raportoinnin määritykset](electronic-reporting-configuration.md)
-
-[Sähköisen raportoinnin konfiguraatioiden elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Lokalisointivaatimukset – Luo sähköisen raportoinnin määritykset](electronic-reporting-configuration.md)
+- [Sähköisen raportoinnin konfiguraatioiden elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)

@@ -3,7 +3,7 @@ title: Field Servicen varastosiirtojen ja oikaisujen synkronointi Finance and Op
 description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Microsoft Dynamics 365 for Finance and Operationsin varaston oikaisut ja siirrot synkronoidaan Microsoft Dynamics 365 for Field Serviceen.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: aa54945cea5821da163e1f6ea1747ac29b31a3ce
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 75181661c41d238cdc06ffbb6969a2efd7d88d46
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308365"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842412"
 ---
 # <a name="synchronize-inventory-adjustments-from-field-service-to-finance-and-operations"></a>Field Servicen varasto-oikaisujen synkronointi Finance and Operationsiin
 
@@ -38,8 +38,8 @@ Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joil
 Seuraavalla mallilla ja taustalla olevilla tehtävillä synkronoidaan Microsoft Dynamics 365 for Field Servicen varaston oikaisut ja siirrot Microsoft Dynamics 365 for Finance and Operationsiin.
 
 **Tietojen integroinnin mallit**
-- Varasto-oikaisu (Field Servicestä Finance and Operationsiin)
-- Varastosiirrot (Field Servicestä Finance and Operationsiin)
+- Varaston oikaisu (Field Servicestä Fin and Opsiin)
+- Varastonsiirrot (Field Servicestä Fin and Opsiin)
 
 **Tietojen integrointiprojektien tehtävät**
 - Varasto-oikaisut
@@ -71,11 +71,11 @@ Integraation luomat integroinnin varastokirjauskansiot voidaan kirjata automaatt
 
 Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä.
 
-### <a name="inventory-adjustment-field-service-to-finance-and-operations-inventory-adjustment"></a>Varasto-oikaisu (Field Servicestä Finance and Operationsiin): varasto-oikaisu
+### <a name="inventory-adjustment-field-service-to-fin-and-ops-inventory-adjustment"></a>Varasto-oikaisu (Field Servicestä Fin and Opsiin): varasto-oikaisu
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
-### <a name="inventory-transfer-field-service-to-finance-and-operations-inventory-transfer"></a>Varastosiirto (Field Servicestä Finance and Operationsiin): varastosiirto
+### <a name="inventory-transfer-field-service-to-fin-and-ops-inventory-transfer"></a>Varastosiirto (Field Servicestä Fin and Opsiin): varastosiirto
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSTrans1.png)](./media/FSTrans1.png)

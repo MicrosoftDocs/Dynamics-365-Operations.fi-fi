@@ -3,7 +3,7 @@ title: Todellisen painon tuotteen käsittely varastonhallinnan avulla
 description: Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ tehdään varastossa.
 author: perlynne
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
-ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
+ms.openlocfilehash: d4082464dafebfcadd02425081f5f9b5716af01a
+ms.sourcegitcommit: 118cd383a327519a266dfe27720b12e9bbfbac14
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "777269"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "946430"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
 
@@ -97,7 +97,9 @@ Esimerkki: Todellisen painon yksikkö on **laatikko** ja vastaanotetulla kuormal
 
 Jos todellisen painon seurantaa ei käytetä, paino voidaan taltioida kullekin dimensioyhdistelmälle (kuten kullekin rekisterikilvelle ja seurantadimensiolle). Vaihtoehtoisesti paino voidaan taltioida koontitason perusteella, kuten viitenä rekisterikilpenä (kuormalavana).
 
-Lähtevän painon taltiointimenetelmäksi voidaan määrittää, punnitaanko jokainen todellisen painon yksikkö (eli laatikko) vai perustuuko taltioitava paino keräiltävään määrään (kuten kolmeen laatikkoon). Huomaa, että tuotantolinjan keräysprosessissa käytetään keskimääräistä painoa, jos **Ei taltioitu** -asetus on käytössä.
+Lähtevän painon taltiointimenetelmäksi voidaan määrittää, punnitaanko jokainen todellisen painon yksikkö (eli laatikko) vai perustuuko taltioitava paino keräiltävään määrään (kuten kolmeen laatikkoon). Huomaa, että tuotantolinjan keräysprosessissa ja sisäisissä siirtoprosesseissa käytetään keskimääräistä painoa, jos **Ei taltioitu** -asetus on käytössä.
+
+Voit rajoittaa varastonhallinnan keräysprosesseja niin, että todellisen painon voiton/tappion oikaisujen tuloksena saatavien painojen keräilyä ei tehdä. Käytössä voi olla lähtevän painon varianssin menetelmä.
 
 ## <a name="supported-scenarios"></a>Tuetut skenaariot
 
@@ -121,14 +123,12 @@ Todellisen painon tuotteen käsittely varastonhallinnan avulla ei tueta kaikissa
  
 ### <a name="order-processing"></a>Tilausta käsitellään
 
-- Konsernin sisäistä tilauksen käsittelyä ei tueta.
 - Lähetysilmoituksen (ASN/pakkausrakenteet) luonti ei tue painotietoja.
 - Tilausmäärä on ylläpidettävä todellisen painon yksikön perusteella.
  
 ### <a name="inbound-warehouse-processing"></a>Saapuvan varaston käsittely
 
 - Rekisterikilpien vastaanotto edellyttää, että painot määritetään rekisteröinnin aikana, sillä painotietoja ei tueta lähetysilmoituksen osana. Todellisen painon tunnisteprosesseja käytettäessä tunnistenumero on määritettävä manuaalisesti kullekin todellisen painon yksikölle.
-- Yhdistettyjen rekisterikilpien vastaanottamista ei tueta todellisen painon tuotteissa.
  
 ### <a name="inventory-and-warehouse-operations"></a>Varastotoiminnot
 
@@ -169,7 +169,6 @@ Todellisen painon tuotteen käsittely varastonhallinnan avulla ei tueta kaikissa
  
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Muita rajoituksia ja toimintoja, jotka liittyvät todellisen painon tuotteen käsittelyyn varastonhallinnan avulla
 
-- Jos todellisen painon tunnisteet taltioidaan varastosovelluksen käsittelyn osana, käyttäjä ei voi peruttaa työnkulkua.
 - Jos käyttäjää ei pyydetä määrittämään seurantadimensioita keräilyprosessien aikana, paino määritetään keskimääräisen painon perusteella. Näin tapahtuu esimerkiksi silloin, kun seurantadimensioiden yhdistelmää käytetään samassa sijainnissa ja sijainnissa on jäljellä vain yksi seurantadimension arvon sen jälkeen, kun käyttäjä on käsitellyt keräilyn.
 - Kun varasto on varattu tuotteelle, joka on määritetty varastonhallintaprosesseja varten, tehty varaus perustuu määritettyyn minimipainoon, vaikka tämä määrä on viimeksi käsitellyn määrän varastosaldo. Tämä toiminta poikkeaa niiden nimikkeiden toiminnasta, joita ei ole määritetty varastonhallintaprosesseja varten.
 - Varaston todellista painoa ei käytetä prosesseissa, joissa painoa käytetään kapasiteettilaskemien osana (kuten aallon raja-arvot, työn pisimmät tauot, suurin kontti ja sijainnin kuormakapasiteetti). Prosessit perustuvat sen sijaan tuotteelle määritettyyn fyysiseen käsittelypainoon.
@@ -193,3 +192,5 @@ Tällä hetkellä todellisen painon tunnistetoimintoa tuetaan vain seuraavien sk
 - Avattaessa kontteja uudelleen.
 - Ilmoitettaessa kaavatuotteet valmiiksi varastosovelluksen avulla.
 - Käsiteltäessä kuljetuksen kuormia varastosovelluksella.
+
+Todellisen painon tunnus voidaan luoda joko varastosovelluksen prosessissa, manuaalisesti lomakkeessa tai tietoyksikköprosessin avulla. Jos todellisen painon tunniste liitetään saapuvaan lähdeasiakirjan riviin, kuten ostotilausriviin, tunniste rekisteröidään. Jos riviä käytetään lähtevässä käsittelyssä. Tunniste päivitetään lähetyksen yhteydessä.

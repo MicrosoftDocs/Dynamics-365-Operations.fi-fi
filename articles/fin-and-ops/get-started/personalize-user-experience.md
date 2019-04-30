@@ -3,7 +3,7 @@ title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa Microsoft Dynamics 365 for Finance and Operationsissa.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363473"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975848"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa Microsoft Dynamics 365 for Finance and Operationsissa.
 
@@ -47,6 +48,8 @@ Kaikki käyttäjän Finance and Operationsissa tekemät mukautukset koskevat vai
 - **Valitse** – Valitse oletusarvot, joita käytetään aina, kun avaat Finance and Operationsissa. Näitä arvoja ovat esimerkiksi yritys, ensimmäinen sivu sekä näkymän tai muokkauksen oletustila. (Näkymä- tai muokkaustila määrittää, lukitaanko sivu näyttämistä varten vai avataanko se muokattavaksi aina, kun avaat sen.) Tässä välilehdessä on kieli- ja aikavyöhykeasetukset sekä päivämäärä-, kellonaika- ja numeromuotoilun asetukset. Tässä välilehdessä on lisäksi sekalaisia asetuksia,, jotka vaihtelevat julkaisuversiosta toiseen.
 - **Tili** – käyttäjänimen ja muiden tiliin liittyvien asetusten säätäminen.
 - **Työnkulku** – työnkulkuun liittyvien asetusten valitseminen.
+
+Asetuksien muokkaamisen lisäksi voit myös tarkastella ja poistaa käyttötiedot ja mukautukset valitsemalla **Käyttötiedot**-painikkeen. Kun käytät sovellusta, monet tehdyistä valinnoista tallennetaan helppokäyttöisyyden lisäämiseksi tulevaisuudessa. Erityisesti **Mukauttaminen** -välilehdessä voit tarkastella ja hallita henkilökohtaisia muutoksia, jotka olet tehnyt sivuihin järjestelmässä. Kuvatekstitoiminnot, ponnahdussanomaikkunat joissa esitellään tuotteen uudet ominaisuudet (saatavilla Platform update 26:ssa), voidaan myös nollata tästä välilehdestä, niin, että saat uudelleen ilmoituksen aiemmin käytetyistä ominaisuuksista.  
 
 ## <a name="implicit-personalizations"></a>Implisiittiset mukautukset
 
@@ -160,7 +163,7 @@ Jos käyttäjällä on järjestelmänvalvojan oikeudet, hän voi myös hallita m
 
 - **Käytä** – Voit tuoda tai valita yhden tai usean käyttäjän mukautuksen. Jos mukautus otetaan käyttöön yhdelle tai usealle käyttäjälle, ensiksi valitaan rooli ja käyttäjät, joilla tämä rooli on. Valitse sitten joko aiemmin luotu mukautus, jota haluat käyttää valituille käyttäjille, tai tuo mukautustiedosto. Mukautuksen oikeellisuus tarkistetaan ja sitä käytetään kaikille käyttäjille, kun he seuraavan kerran avaavat valitun sivun.
 - **Tyhjennä** – Voit tyhjentää yhden tai usean käyttäjän sivun tai työtilan kaikki mukautukset. Valitse ensin sivu tai työtila. Näet nyt luettelon käyttäjistä, jotka ovat mukauttaneet sitä. Valitse sitten käyttäjät, joiden sivun tai mukautukset on tyhjennettävä. Valitse lopuksi **Tyhjennä**. Kaikki mukautukset, joita valitut käyttäjät ovat käyttäneet valitulla sivulla tai valitussa työtilassa, poistetaan. Tätä toimintoa ei voi kumota. Jos sivulla tai työtilassa on kuitenkin tallennettuja mukautuksia, nämä mukautukset voidaan tuoda uudelleen.
-- **Käyttäjäkohtainen esimies** – Valitse käyttäjä, kun haluat tarkastella käyttäjän mukauttamien sivujen luetteloa. Voit sitten antaa käyttäjälle tietyn sivun tai koko järjestelmän mukautusten käyttöoikeuden tai poistaa mukautusten käyttöoikeuden käytöstä. Voit myös tuoda, viedä tai tyhjentää valitun käyttäjän mukautuksen.
+- **Käyttäjäkohtainen esimies** – Valitse käyttäjä, kun haluat tarkastella käyttäjän mukauttamien sivujen luetteloa. Voit sitten antaa käyttäjälle tietyn sivun tai koko järjestelmän mukautusten käyttöoikeuden tai poistaa mukautusten käyttöoikeuden käytöstä. Voit myös tuoda, viedä tai tyhjentää valitun käyttäjän mukautuksen. Lisäksi voit nollata kuvatekstitoiminnot valitulle käyttäjälle, mikä näyttää taas aiemmin poistetut uusia ominaisuuksia esittelevät ponnahdussanomaikkunat, kun käyttäjä kohtaa uusia ominaisuuksia.   
 - **Järjestelmä** – Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset tilapäisesti. Siinä tapauksessa mukautuksia ei kuitenkaan poisteta. Kaikkien käyttäjien kaikki sivut vain palautetaan alkuperäisiin asetuksiin. Jos otat mukautukset myöhemmin uudelleen käyttöön, kaikkia mukautuksia käytetään uudelleen. Voit poistaa tässä välilehdessä kaikkien järjestelmän käyttäjien mukautukset myös pysyvästi. Poistettuja mukautuksia ei voida palauttaa. Varmista tämän vuoksi ennen tämän tehtävän suorittamista, että olet vienyt kaikki ne mukautukset, jotka ehkä tarvitset myöhemmin.
 
 ## <a name="personalization-of-inventory-dimensions"></a>Varastodimensioiden mukauttaminen

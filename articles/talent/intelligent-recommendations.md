@@ -1,29 +1,29 @@
 ---
 title: Älykkäät suositukset
 description: Tässä ohjeaiheessa käsitellään tapaa, jolla koneopetuksen avulla voidaan antaa töihin ja työnhakijoihin liittyviä suosituksia.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304217"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896554"
 ---
 # <a name="intelligent-recommendations"></a>Älykkäät suositukset
 
@@ -32,8 +32,9 @@ ms.locfileid: "304217"
 Koneoppiminen voi auttaa työhönottajia ja työhön ottavia esimiehiä tunnistamaan toimeen parhaiten sopivat hakijat nopeasti. Lisäksi potentiaaliset ehdokkaat voivat löytää sen avulla heidän profiiliinsa ja kiinnostuksen kohteisiin parhaiten sopivan toimen. Kun ominaisuuksia käytetään ja niistä annetaan palautetta, suositukset paranevat.
 
 > [!NOTE] 
-> - Älykkäät suositustoimintoja voi käyttää vain kattavan työhönottolaajennuksen kanssa.
-> - Jos hakija- ja työsuosittelutoiminnot halutaan ottaa käyttöön, järjestelmänvalvojan on otettava niiden esiversioasetukset käyttöön. Varmista hallintakeskuksen **Ominaisuuksien hallinta** -välilehdessä, että **Esiversio-ominaisuudet**-asetukseksi on valittu **Käytössä**. Varmista sitten, että **Ehdokkaan suositus**- ja **Työn suositus** -asetuksiksi on valittu **Käytössä**.
+> - Älykkäät suositustoiminnot ovat käytettävissä vain [kattavan työhönottolaajennuksen kanssa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Tässä ohjeaiheessa mainitut toiminnot ovat saatavilla ennakkoversion osana. Sisältö ja toiminnot voivat muuttua. Voit käyttää tätä toimintoa pyytämällä järjestelmänvalvojaa ottamaan sen käyttöön Attractin **järjestelmänvalvojan asetuksissa**. Määritä asetusten **Ehdokkaan suositus**, **Työn suositus** ja **Prospektisuositukset** arvoksi  **Käytössä**. Lisätietoja on kohdassa [Talentin esiversiotoimintojen käyttö](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+
 
 ## <a name="candidate-recommendations"></a>Ehdokkaan suositukset
 
@@ -43,4 +44,15 @@ Jos valitset suositellun hakijan **Näytä ehdokas** -vaihtoehdon hakijan kortis
 
 ## <a name="job-recommendations"></a>Työn suositukset 
 
-Kun mahdollinen työntekijä hakee töitä urasivuston kautta, hänelle suositellaan organisaation muita avoimia työpaikkoja. Nämä suositukset perustuvat potentiaalisen hakijan aiempiin hakemuksiin sekä hänen ansioluetteloonsa tai hakijaprofiiliin. Tällä tavoin työn suositukset auttavat potentiaalisia hakijoita tunnistamaan nopeasti heille parhaiten sopiva työpaikat. Työpaikkoja suositellaan potentiaalisille hakijoille, jos urasivustossa on julkaista vähintään 10 työpaikkaa. Potentiaaliset hakijat voivat avata työpaikkailmoituksen tiedot suosituskortista. He voivat antaa myös suositusta koskevaa palautetta, mikä auttaa parantamaan tulevia suosituksia.
+Kun mahdollinen työntekijä hakee töitä urasivuston kautta, hänelle Attract suosittelee organisaation muita avoimia työpaikkoja. Nämä suositukset perustuvat potentiaalisen hakijan aiempiin hakemuksiin sekä hänen ansioluetteloonsa tai hakijaprofiiliin. Tällä tavoin työn suositukset auttavat potentiaalisia hakijoita tunnistamaan nopeasti heille parhaiten sopiva työpaikat. Työpaikkoja suositellaan potentiaalisille hakijoille, jos urasivustossa on julkaista vähintään 10 työpaikkaa. Potentiaaliset hakijat voivat avata työpaikkailmoituksen tiedot suosituskortista. He voivat antaa myös suositusta koskevaa palautetta, mikä auttaa parantamaan tulevia suosituksia.
+
+## <a name="prospect-recommendations"></a>Prospektisuositukset 
+
+Kun uusi toimi on saatavilla, kaikkien edellisten hakijoiden ja koko kykyverkoston läpikäynti voi kestää jonkin aikaa. Attract voi auttaa sinua tässä tehtävässä käyttämällä älykkäitä koneoppimisalgoritmeja. Tällöin heti työn luonnin jälkeen Attract tarkistaa kaikki hakijat ja ehdottaa siihen sopivat henkilöt. Voit tarkastella näitä suosituksia ottamalla käyttöön työlle **Prospekti**-vaiheen. Saattaa kestää minuutin, kun Attract tarkistaa koko ehdokastietokannan suositusten tekemiseksi.
+
+Suositukset näkyvät kortteina **Prospektit**-välilehdessä kaikissa töissä, joissa on otettu käyttöön **Prospekti**-vaihe. Korteissa on luettelo prospektin profiilista löytyneistä taidoista sekä mahdolliset koulutuksen pätevyyden tiedot. Jos löydät hyvän suosituksen, voit lisätä ehdokkaan kyseisen työn prospektiksi.
+
+> [!NOTE]
+> Jos olet juuri aloittanut Attractin käytön, sinun on odotettava kunnes on vähintään 10 hakijaa, joilla on koko profiilit tai ansioluettelot, ennen kuin voit käyttää tätä ominaisuutta.
+
+Mahdollisten ennakkokäsitysten välttämiseksi suosituksisssa Attract tutkii hakijaprofiileista vain osaamisalueet, pätevyydet ja muut avainsanat, jotka vastaavat työnkuvausta. Lisäksi Attract poistaa hakijan profiileista henkilötiedot ennen arviointia.

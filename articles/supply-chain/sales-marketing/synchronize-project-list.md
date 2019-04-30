@@ -3,7 +3,7 @@ title: Finance and Operationsin projektiluetteloiden synkronointi Field Servicee
 description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla projekteja synkronoidaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Field Serviceeen.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b5aeb4c3925994d7488e8e113e88b9d06ee6b350
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ea5c188891bb97ba73d2d022e86bbff50897381b
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312505"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842601"
 ---
 # <a name="synchronize-project-list-from-finance-and-operations-to-field-service"></a>Finance and Operationsin projektiluetteloiden synkronointi Field Serviceen
 
@@ -38,13 +38,13 @@ Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla projekte
 Seuraavalla mallilla ja taustalla olevilla tehtävillä synkronoidaan projekteja Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Field Serviceen.
 
 **Tietojen integroinnin malli**
-- Projektit (Finance and Operationsista Field Serviceen)
+- Projektit (Fin and Opsista Field Serviceen)
 
 **Tietojen integrointiprojektin tehtävä**
 - Projektit
 
 Seuraavat synkronointitehtävät tarvitaan, ennen kuin projektiluettelo voidaan synkronoida:
-- Tilit (Salesista Finance and Operationsiin) 
+- Tilit (Salesista Fin and Opsiin) 
 
 ## <a name="entity-set"></a>Yksikköjoukko
 | Field Service           | Finance and Operations  |
@@ -64,6 +64,6 @@ Ota muutosten seuranta käyttöön tietoyksikköprojekteissa.
 ## <a name="template-mapping-in-data-integration"></a>Mallin yhdistäminen tietojen integroinnin yhteydessä
 
 
-### <a name="projects-finance-and-operations-to-field-service-projects"></a>Projektit (Finance and Operationsista Field Serviceen): projektit
+### <a name="projects-fin-and-ops-to-field-service-projects"></a>Projektit (Fin and Opsista Field Serviceen): Projektit
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSProject1.png)](./media/FSProject1.png)

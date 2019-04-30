@@ -3,7 +3,7 @@ title: Raporttien tarkasteleminen
 description: Tässä ohjeaiheessa käsitellään talousraporttien tarkastelemista ja niihin perehtymistä Microsoft Dynamics 365 for Finance and Operationsissa. Artikkelissa on tietoja erilaisista vaihtoehdoista, joilla voit muuttaa talousraporttien ulkoasua ja niihin sisältyviä tietoja.
 author: kweekley
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
-ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
+ms.openlocfilehash: 0ba92ab4f751758c4adf26885ebb7b2c5290ecac
+ms.sourcegitcommit: 1e8dfa62989dbd7601bafdc933558f6bea1638ae
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791438"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894585"
 ---
 # <a name="view-financial-reports"></a>Raporttien tarkasteleminen
 
@@ -46,12 +46,11 @@ Taloudelliset raportit voivat sisältää useita yksityiskohtaisia tasoja. Talou
 Jos tiedot ovat budjettitietoja, voit avata budjettitilimerkinnöt. Sulkeaksesi raportin tasoja ja palataksesi sinne mistä aloitit, voit painaa Esc-näppäintä tai klikata **Sulje**-painiketta (**X**) oikeassa yläkulmassa.
 
 ## <a name="change-report-options"></a>Muuta raporttiasetuksia
-Voit muuttaa raportin päivämäärää, lisätä ominaisuus- ja dimensiosuodattimia tai vaihtaa budjettisuunnitelmaa **todellinen vs. budjetti** -raportissa. Valitse toimintoruudussa **Raportin asetukset** ja noudata sitten jotakin seuraavista askelista:
+Voit lisätä ominaisuus- ja dimensiosuodattimia tai vaihtaa budjettisuunnitelmaa **todellinen vs. budjetti** -raportissa. Valitse toimintoruudussa **Raportin asetukset** ja noudata sitten jotakin seuraavista askelista:
 
--   Muuttaaksesi raportin perustekautta ja perustevuotta, valitse perustekausi ja perustevuosi ja klikkaa sitten **OK**.
 -   Käyttääksesi raportissa ominaisuus suodattimia, valitse **lisää ominaisuus suodatin**. Valitse määrite, näppäile määritteen arvo ja klikkaa sitten **OK**. Esimerkiksi jos valitset **tililuokka**-määritteen, syötä **myynti** määritteen arvona. Poistaaksesi määritte-suodattimen, klikkaa **poista**.
 -   Käyttääksesi raportissa dimensioiden suodattimia, valitse **Lisää dimension suodatin**. Valitse dimensio ja kirjoittaa joko dimensiotunnus tai valitse dimensio luettelosta. Poistaaksesi dimensiosuodattimen, klikkaa **poista**.
--   Muuttaaksesi skenaariota **todellinen vs. budjetti** -raportissa, valitse uusi skenaario ja valitse sitten **OK**. Jos valittu skenaario on eri vuodelle, varmista päivittää perustevuosi. Esimerkiksi jos nykyinen skenaario on FY2015 ja valitset uuden skenaarion FY2016, sinun on muutettava perustevuosi vuodeksi **2016**.
+-   Muuttaaksesi skenaariota **todellinen vs. budjetti** -raportissa, valitse uusi skenaario ja valitse sitten **OK**. Jos valittu skenaario on eri tilikaudelle, tuloksia ei palauteta. Jos esimerkiksi raportti luodaan FY2015:lle ja nykyinen skenaario on FY2015 ja uusi valittu skenaario on FY2016, tuloksia ei palauteta. Jos tarvitaan uusi skenaario eri tilikaudelle, luo skenaarioon liittyvä uusi raportti tilikaudelle.
 
 Kun klikkaat **OK**, kaikki valitsemasi vaihtoehdot käytetään raporttiin. Jos päätät, että et halua käyttää valittuja asetuksia, klikkaa **peruuta**.
 

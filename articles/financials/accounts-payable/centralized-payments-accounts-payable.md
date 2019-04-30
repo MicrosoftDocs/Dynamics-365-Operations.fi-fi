@@ -1,7 +1,7 @@
 ---
 title: Ostoreskontran keskitetyt maksut
 description: Organisaatiot, joihin kuuluu useita yrityksiä, voivat luoda ja hallita maksuja käsittelemällä kaikki yhdessä yrityksessä. Näin samoja maksuja ei tarvitse lisätä useisiin yrityksiin. Tässä artikkelissa on esimerkkejä, jotka osoittavat, miten keskitettyjen maksujen kirjaus toteutetaan eri tilanteissa.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 02/12/2017
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b61320617dd85a880414b31ad6c88e611beca161
-ms.sourcegitcommit: ca1a472a670393f7aa208189dc8964c9691e2cdc
+ms.openlocfilehash: 41d94f4327268ef24388d97fc24804b650a84d57
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "390163"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "897152"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Ostoreskontran keskitetyt maksut
 

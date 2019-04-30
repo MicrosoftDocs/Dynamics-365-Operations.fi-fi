@@ -1,9 +1,9 @@
 ---
 title: Toimittajan laskujen yleiskatsaus
 description: Tässä artikkelissa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,24 @@ ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e563688b46c556ffbf46f9d20d9b9f248d26e02c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1d7cec48b1e01d308cfc67260ac82a50a8d76844
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329755"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975799"
 ---
 # <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Tässä artikkelissa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin. 
 
-<a name="vendor-invoices"></a>Toimittajan laskut
----------------
+## <a name="vendor-invoices"></a>Toimittajan laskut
 
 Ostotilauksesta peräisin oleva toimittajan lasku on lasku, joka luodaan, kun tuotteet tai palvelut on vastaanotettu toimittajalle tehdyn ostotilauksen mukaisesti. Toimittajan lasku sisältää otsikon ja yhden tai useamman rivin nimikkeille tai palveluille. Toimittajan lasku päättää ketjun, joka kulkee ostotilauksesta tuotteen vastaanoton kautta toimittajan laskuun. 
 
@@ -79,8 +79,15 @@ Lisätietoja on ohjeaiheessa [Toimittajan laskun kirjaaminen ja täsmäyttämine
 
 Voit käsitellä useita laskuja samaan aikaan ja kirjata ne kaikki samaan aikaan. Jos sinun on luotava useita laskuja, käytä **Odottavat toimittajan laskut** -sivua. Jos sinun on kirjattava ja tulostettava useita toimittaja laskuja, käytä laskujen hyväksymiskirjauskansion sivua. Jos käytät laskun hyväksynnän kirjauskansiota, ostotilaukselle on oltava kirjattuna ainakin yksi tuotteen vastaanotto ja että ostotilauksen laskun on oltava kirjattuna laskurekisteriin. Laskun kirjanpitotiedot ovat peräisin laskusta, joka on kirjattu rekisteriin.
 
+## <a name="recovering-vendor-invoices-that-are-in-use"></a>Palauta käytössä olevat toimittajalaskut
 
-Lisätietoja on kohdassa 
+Toimittajalaskua käytettäessä sitä ei voi muokata toiselle käyttäjälle. Laskun tila voi toisinaan tarkoittaa, että lasku on käytössä, vaikka sitä ei ole aktiivisesti muokattu. Sovellus on esimerkiksi saattanut lakata vastaamasta laskun muokkaamisen aikana, tai käyttäjä on saattanut jättää tahattomasti laskun auki sovelluksessa.
+
+Voit käyttää **Palauta toimittajalaskut** -sivua palauttaaksesi tai vapauttaaksesi toimittajalaskut, jotka ovat olleet käytössä yli 4 tuntia, jotta niitä voidaan muokata. Voit avata sivun **Kausittainen tehtävä** -valikosta tai -ruudusta **Laskun toimittajatapahtuma**-työtilassa. Kun lasku on palautettu, se on käytettävissä muokkaamista varten **Toimittajalasku**-sivulla.
+
+Saat käyttöösi **Palauttaa toimittajalaskut** -sivun vain, jos **Palauta käytössä olevat toimittajalaskut** -suojausvelvollisuudet ja oikeudet on määritetty itsellesi. Lisäksi **Salli toimittajalaskun palautus** -parametri **Ostoreskontran parametrit** -sivulla on otettu käyttöön.
+
+## <a name="additional-resources"></a>Lisäresurssit
 
  - [Määritä toimittajan laskutuskäytännöt](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 

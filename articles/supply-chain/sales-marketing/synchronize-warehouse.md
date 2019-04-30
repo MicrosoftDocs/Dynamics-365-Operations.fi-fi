@@ -3,7 +3,7 @@ title: Finance and Operationsin fyysisten varastojen synkronointi Field Servicee
 description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla varastoja synkronoidaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Field Serviceen.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 34cd18a18715d12d4002e6dbeee047467ed2a5ad
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7e6d7626c00b9d7d98ce872652653c36ce7bc975
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340312"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842530"
 ---
 # <a name="synchronize-warehouses-from-finance-and-operations-to-field-service"></a>Finance and Operationsin fyysisten varastojen synkronointi Field Serviceen
 
@@ -38,7 +38,7 @@ Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla varastoj
 Seuraavalla mallilla ja taustalla olevilla tehtävillä synkronoidaan Microsoft Dynamics 365 for Finance and Operationsin fyysiset varastot Microsoft Dynamics 365 for Field Serviceen.
 
 **Tietojen integroinnin malli**
-- Varastot (Finance and Operationsista Field Serviceen)
+- Varastot (Fin and Opsista Field Serviceen)
 
 **Tietojen integrointiprojektin tehtävä**
 - Varasto
@@ -76,6 +76,6 @@ Ennen varastojen synkronointia projektin kyselyn ja suodatuksen lisäasetukset o
 
 Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä.
 
-### <a name="warehouses-finance-and-operations-to-field-service-warehouse"></a>Varastot (Finance and Operationsista Field Serviceen): varasto
+### <a name="warehouses-fin-and-ops-to-field-service-warehouse"></a>Varastot (Fin and Opsista Field Serviceen): Varasto
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/Warehouse1.png)](./media/Warehouse1.png)

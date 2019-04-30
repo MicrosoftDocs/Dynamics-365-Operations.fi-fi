@@ -3,7 +3,7 @@ title: Reititykset ja työvaiheet
 description: Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista.
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 417fd960a43ad3fd023ea0c4a17be735b69743de
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
+ms.sourcegitcommit: dc90d56050d7353930d048476451542cce147e37
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333343"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "850665"
 ---
 # <a name="routes-and-operations"></a>Reitit ja työvaiheet
 
@@ -51,7 +51,7 @@ Yksinkertaiset reititykset ovat peräkkäisiä. Reitityksellä on vain yksi aloi
 
 [![Yksinkertainen reititys](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Jos tuotannonhallinnan parametreissa otetaan käyttöön vain yksinkertaiset reititykset, Dynamics 365 for Finance and Operations luo automaattisesti työvaihenumerot (10, 20, 30 jne.) reitityksen määrittämisen yhteydessä.
+Jos tuotannonhallinnan parametreissa otetaan käyttöön vain yksinkertaiset reititykset, Finance and Operations luo automaattisesti työvaihenumerot (10, 20, 30 jne.) reitityksen määrittämisen yhteydessä.
 
 ### <a name="route-networks"></a>Reittiverkostot
 
@@ -59,11 +59,10 @@ Jos tuotannonohjauksen parametreissa otetaan käyttöön monimutkaisempia reitti
 
 [![Reittiverkosto](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
-**Huomautuksia:**
-
--   Jokaisella työvaiheella voi olla vain yksi seuraava työvaihe. Koko reitityksen on loputtava yhteen työvaiheeseen.
--   Vaikka useilla työvaiheilla olisi sama seuraava työvaihe (esimerkiksi työvaiheet 30 ja 40 edellä olleessa kuvassa), niitä ei välttämättä suoriteta rinnakkain. Resurssien saatavuus ja kapasiteetti saattaa rajoittaa tapaa, joilla työvaiheet ajoitetaan.
--   Työvaihenumerona ei voi käyttää nollaa (0). Kyseinen numero on varattu. Sitä käytetään määritettäessä tilanne, jossa reitityksen viimeisellä työvaiheella ei ole seuraavaa työvaihetta.
+> [!NOTE]
+> -   Jokaisella työvaiheella voi olla vain yksi seuraava työvaihe. Koko reitityksen on loputtava yhteen työvaiheeseen.
+> -   Vaikka useilla työvaiheilla olisi sama seuraava työvaihe (esimerkiksi työvaiheet 30 ja 40 edellä olleessa kuvassa), niitä ei voida taata, että ne suoritettaisiin rinnakkain. Resurssien saatavuus ja kapasiteetti saattaa rajoittaa tapaa, joilla työvaiheet ajoitetaan.
+> -   Työvaihenumerona ei voi käyttää nollaa (0). Kyseinen numero on varattu. Sitä käytetään määritettäessä tilanne, jossa reitityksen viimeisellä työvaiheella ei ole seuraavaa työvaihetta.
 
 ### <a name="parallel-operations"></a>Rinnakkaiset työvaiheet
 
@@ -122,7 +121,8 @@ Voit määrittää myös toimipaikkakohtaisen työvaihesuhteen. Työvaiheen oper
 
 Työvaihesuhteiden avulla reititysten määrittäminen on joustavaa. Oletusominaisuuksien määritysmahdollisuuden avulla ylläpidettävien päätietojen määrä vähenee. Joustavuus tarkoittaa kuitenkin myös sitä, että työvaihesuhteen konteksti, jota muokataan, on otettava huomioon.  
 
-**Huomautus:** Koska operationaaliset ominaisuudet tallennetaan työvaihesuhteisiin reitityksen ja työvaiheen perusteella, kaikilla saman työvaiheen esiintymillä (esimerkiksi kokoonpanolla) on sama asetus- ja ajoaika, resurssivaatimukset jne. Jos siis työvaiheen kaksi esiintymää löytyvät samasta reitityksestä, mutta niillä on eri ajoajat, niille on luotava kaksi erilaista työvaihetta, kuten esimerkiksi Kokoonpano1 ja Kokoonpano2.
+> [!NOTE]
+> Koska operationaaliset ominaisuudet tallennetaan työvaihesuhteisiin reitityksen ja työvaiheen perusteella, kaikilla saman työvaiheen esiintymillä (esimerkiksi kokoonpanolla) on sama asetus- ja ajoaika ja resurssivaatimukset. Jos siis työvaiheen kaksi esiintymää löytyvät samasta reitityksestä, mutta niillä on eri ajoajat, niille on luotava kaksi erillistä työvaihetta, kuten esimerkiksi Kokoonpano1 ja Kokoonpano2.
 
 ### <a name="modifying-product-specific-routes"></a>Tuotekohtaisten reititysten muokkaaminen
 
@@ -132,7 +132,8 @@ Kun avaat **Reititys**-sivun **Vapautetun tuotteen tiedot** -sivulla, sivulla n�
 
 Voit myös luoda manuaalisesti työvaiheen, joka liittyy reititykseen ja vapautettuun tuotteeseen, käyttämällä **Kopioi suhde ja muokkaa sitä** -toimintoa.  
 
-**Huomautus:** Jos lisäät reititykseen uuden työvaiheen **Reititys**-sivulla, työvaihesuhde luodaan vain nykyiselle vapautetulle tuotteelle. Jos siis reititystä käytetään myös muiden vapautettujen tuotteiden valmistamisessa, näille vapautetuille tuotteille ei ole käytettävissä olevaa työvaihesuhdetta eikä reititystä enää käytetä näissä vapautetuissa tuotteissa.
+> [!NOTE]
+> Jos lisäät reititykseen uuden työvaiheen **Reititys**-sivulla, työvaihesuhde luodaan vain nykyiselle vapautetulle tuotteelle. Jos siis reititystä käytetään myös muiden vapautettujen tuotteiden valmistamisessa, näille vapautetuille tuotteille ei ole käytettävissä olevaa työvaihesuhdetta eikä reititystä enää käytetä näissä vapautetuissa tuotteissa.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Työvaihesuhteiden reitityskohtainen ylläpitäminen
 
@@ -148,7 +149,7 @@ Jos yrityksesi käyttää vakiotyövaiheita ja toimintaparametrit ovat samat kai
 
 ### <a name="applying-operation-relations"></a>Työvaihesuhteiden käyttäminen
 
-Joissakin tapauksissa Finance and Operationsin on löydettävä työvaiheen toiminnalliset ominaisuudet. Jos esimerkiksi luodaan ostotilaus, kunkin työvaiheen operationaaliset ominaisuudet on kopioitava työvaihesuhteista tuotantoreititykseen. Näissä tilanteissa Dynamics 365 for Finance and Operations hakee liittyviä työvaihesuhteita aina yksityiskohtaisimmista yhdistelmistä vähemmän yksityiskohtaisiin yhdistelmiin.  
+Joissakin tapauksissa Finance and Operationsin on löydettävä työvaiheen toiminnalliset ominaisuudet. Jos esimerkiksi luodaan ostotilaus, kunkin työvaiheen operationaaliset ominaisuudet on kopioitava työvaihesuhteista tuotantoreititykseen. Näissä tilanteissa Finance and Operations hakee liittyviä työvaihesuhteita aina yksityiskohtaisimmista yhdistelmistä vähemmän yksityiskohtaisiin yhdistelmiin.  
 
 Kun Finance and Operations hakee vapautetulle tuotteelle soveltuvinta työvaihesuhdetta, työvaihesuhdetta, joka vastaa vapautetun tuotteen nimikkeen tunnusta, pidetään ensisijaisena verrattuna työsuhteeseen, joka vastaa nimikeryhmän tunnusta. Vastaavasti työvaihesuhdetta, joka vastaa nimikeryhmän tunnusta, pidetään ensisijaisena verrattuna oletustyövaihesuhteeseen. Haku tehdään seuraavassa järjestyksessä:
 
@@ -228,17 +229,32 @@ Jos et määritä operatiivista resurssia tai resurssiryhmää osaksi työvaihee
 -   **Erä** – Erän kapasiteetti lasketaan työvaihesuhteen tietojen avulla. Erien määrä ja prosessiaika voidaan laskea tilausmäärän perusteella.
 -   **Resurssierä** – Tämä vaihtoehto on periaatteessa sama kuin **Erä**-vaihtoehto. Laskenta sisältää kuitenkin operatiivisen resurssin **Eräkapasiteetti**-kentän. Aika siis riippuu resurssista.
 
+### <a name="set-up-route-groups"></a>Määritä reititysryhmät
 
-<a name="additional-resources"></a>Lisäresurssit
---------
+Voit määrittää reittiryhmät ja sen reitin tai työtyyppien asetukset kohdasta **Tuotannonvalvonta > Asetukset > Reititykset > reitityksen ryhmät**. Voit valita tai tyhjentää seuraavat reititysryhmän reitti-/työtyypin kohdat:
 
-[Tuoterakenteet ja kaavat](bill-of-material-bom.md)
+- **Aktivointi** - Valitse tämä vaihtoehto, jos haluat ottaa työn ajoituksen yhteydessä käyttöön valitun työtyypin laskelmat ja ajoituksen sekä vastaanottaa palautetta työstä. Sinun on valittava tämä vaihtoehto, jos haluat ottaa työtyypin käyttöön, ja valitse sitten kyseisen työtyypin muut vaihtoehdot. Jos aktivointia ei ole valittu, kyseistä työtyyppiä ei oteta käyttöön muiden vaihtoehtojen valinnasta riippumatta. 
+- **Töiden hallinta** - Valitse tämä vaihtoehto, jos haluat sisällyttää työtyypin töiden hallintaan työtä ajoitettaessa. 
+- **Työaika** Valitse tämä vaihtoehto, jos haluat ajoittaa työtyypin operatiiviselle resurssille määritetyn työaikakalenterin mukaan. Muussa tapauksessa käytetään gregoriaanista kalenteria. Työaika voidaan ajoittaa gregoriaanisen kalenterin tai määritetyn työkalenterin mukaan. Jos valitset tämän vaihtoehdon, ajoitus perustuu määritettyyn työaikakalenteriin. Lisäksi työtyypin työ on ajoitettu sen päivämäärän keskiyöstä, joka on määritetty työn aloituspäiväksi.
+- **Kapasiteetti** - Valitse tämä vaihtoehto, jos haluat varata työtyypille kapasiteettia työtä ajoitettaessa. Jos valitset tämän vaihtoehdon, kapasiteetti varataan, kun valittu työtyyppi ajoitetaan. Saat tällä tavoin yhteenvedon siitä, mitkä kunkin reititysryhmän työtyypit käyttävät operatiivisia resursseja. Esimerkiksi tilanteessa, jossa kuivausresurssit, ovat pullonkaularesursseja, kyseiset resurssit on määritettävä pullonkauloiksi. Jonotusajan työtyyppeihin määritetyt kuivauksen työvaiheet varaavat kuivausresurssit. 
 
-[Tuotannon reitityksessä käytetyt kustannusluokat](../cost-management/cost-categories-used-production-routings.md)
+Jokaista työtyyppiä varten sinun on ensin aktivoitava se tai poistettava se käytöstä. Kun toiminto on poistettu käytöstä, mitään muuta asetusta (työnhallinta, työaika ja kapasiteetti) ei oteta huomioon, koska työn tyyppi ei ole aktiivinen. 
 
-[Resurssin ominaisuudet](resource-capabilities.md)
+Voit etsiä limityksiä työtyyppien väliltä. Limitysten avulla voit suorittaa eri töitä yhtä aikaa. Kun työt ovat päällekkäisiä, resursseja voidaan käyttää, mutta niitä ei voi varata tiettyihin töihin.
+Tästä syystä kun limityksen aktivointi on valittuna, muut asetukset (töiden hallinta, työaika ja kapasiteetti) eivät vaikuta reititysryhmään. 
 
-[Sähköisten allekirjoitusten yleiskatsaus](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+> [!NOTE]
+> Päivitettäessä versioita seuraava virhe saattaa esiintyä: **Kumottujen varmenteiden luettelovirhe ajoitusohjelmaa käytettäessä”**. Jos saat tämän virhesanoman, mene **Reitityksen ryhmät** -sivulle ja kaikissa reitityksissä, mistä olet aktivoinut valinnan **limitys**-vaihtoehdon, poista **töiden hallinta**, **työaika**- ja **kapasiteetti**-valinnat. 
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+- [Tuoterakenteet ja kaavat](bill-of-material-bom.md)
+
+- [Tuotannon reitityksessä käytetyt kustannusluokat](../cost-management/cost-categories-used-production-routings.md)
+
+- [Resurssin ominaisuudet](resource-capabilities.md)
+
+- [Sähköisten allekirjoitusten yleiskatsaus](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 
