@@ -3,7 +3,7 @@ title: Vanhentuneet tai poistetut ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.
 author: sericks007
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836345"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992880"
 ---
 # <a name="removed-or-deprecated-features"></a>Poistetut tai vanhentuneet ominaisuudet
 
@@ -41,45 +41,114 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 > [!NOTE]
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: [Tekniset viitetiedot](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.
 
+
+## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 ja Platform update 26
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.2 ja Platform update 26 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="legacy-default-action-behavior"></a>Vanha oletustoiminnon toiminto
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Ruudukoiden oletustoimintojen vanha toiminta saa aikaan tuloksia odottamattomaan sarakkeeseen, jolla on oletustoimintolinkki ruudukon sarakkeiden jälkeen. Ne on järjestetty uudelleen mukauttamisen avulla. Uusi lukitun oletustoiminnon ominaisuus korjaa tämän. Lisätietoja on kohdassa [Lukitut oletustoiminnot ruudukoissa](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Onko toinen ominaisuus korvannut?**   | Lukittujen oletustoimintojen ominaisuus oli ensimmäisen kerran mukana Platform update 21 -versiossa. Tämän ominaisuuden voi ottaa käyttöön **Työaseman suorituskykyasetukset** -sivulla. |
+| **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelman ruudukot |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Vuoden 2020 huhtikuusta alkaen lukitut oletustoiminnot kuuluvat oletustoimintaan. Vanhaan toimintaan ei voi tällöin enää palata. |
+
+### <a name="legacy-is-one-of-filtering-experience"></a>Vanha On yksi seuraavista: -suodattimen käyttö
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | On yksi seuraavista: -suodattimen käyttö suunniteltiin uudelleen Platform update 22 -versiota varten niin, että tämän piti olla ainoa On yksi seuraavista: -suodattimen käyttömahdollisuus. |
+| **Onko toinen ominaisuus korvannut?**   | Platform update 22 -versiosta alkaen parannettu On yksi seuraavista: -suodattimen käyttö on saatavissa **Työaseman suorituskykyasetukset** -sivulla. Lisätietoja on kohdassa [On yksi seuraavista: -suodattimen käytön optimointi](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Vuoden 2020 huhtikuusta alkaen parannettu On yksi seuraavista: -suodattimen käyttö kuuluu oletustoimintaan. Vanhaan toimintaan ei voi tällöin enää palata. |
+
+### <a name="deriving-from-internal-classes-is-deprecated"></a>Johtaminen sisäisistä luokista on vanhentunut
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Ennen Platform update 25 -versiota oli mahdollista luoda toisessa paketissa tai moduulissa määritetystä sisäisestä luokasta tai taulusta johdettu luokka tai taulu. Tämä ei ole turvallinen koodauskäytäntö. Platform update 25 -versiosta alkaen kääntäjä näyttää varoituksen. |
+| **Onko toinen ominaisuus korvannut?**   | Kääntäjän varoitus korvataan Platform update 26 -versiossa virheellä. Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten Platform update 25 tai uudempi versio voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava. Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan.|
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa. |
+
+### <a name="overriding-internal-methods-is-deprecated"></a>Sisäisten menetelmien ohittaminen on vanhentunut
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Ennen Platform update 25 -versiota oli mahdollista ohittaa johdetun luokan sellainen sisäinen menetelmä, joka oli määritetty toisessa paketissa tai moduulissa. Tämä ei ole turvallinen koodauskäytäntö. Platform update 25 -versiosta alkaen kääntäjä näyttää varoituksen. |
+| **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan Platform update 26 -versiossa käännösvirheellä. Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten Platform update 25 tai uudempi versio voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava. Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan. |
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa. |
+
+### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parametri, joka mahdollistaa useita projektisopimuksen rahoituslähteitä sisältävät myyntitilaukset
+Niiden projektiin perustuvien myyntitilausten tuki, joissa projektisopimuksella on useita rahoituslähteitä, otetaan käyttöön **Projektinhallinnan parametrit** -asetuksen **Salli myyntitilaukset projektille, jolla on useita rahoituslähteitä** -kohdan avulla. Tämä parametri ei ole oletusarvoisesti käytössä. 
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Toiminnot otetaan aina käyttöön parametrin poistamisen jälkeen. |
+| **Onko toinen ominaisuus korvannut?**   | Nro Niiden projektiin perustuvien myyntitilausten tuen toiminnot, joilla on useita rahoituslähteitä, ovat aina käytössä.   |
+| **Tuotealueet, joihin vaikutetaan**         |**Salli myyntitilaukset projekteissa, joissa on useita rahoituslähteitä** -parametri poistetaan. Seuraavia menetelmiä muokataan, kun parametri poistetaan: **ctrlSalesOrderTable**-menetelmä **ProjStatusType**-luokassa, **validate**-menetelmä **ProjId**-kentässä ja **run**-menetelmä **SalescreateOrder**-lomakkeessa. Seuraavat menetelmät vanhentuvat, kun parametri poistetaan: **IsSalesOrderAllowedForMultipleFundingSources** **ProjTable**-taulukkotiedostossa, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled**-menetelmä **ProjTable**-taulukkotiedostossa, **AllowSalesOrdersForMultipleFundingSources**-tietokenttä **ProjParameters**-lomakkeessa ja **ProjParameterEntity**-tiedostoissa sekä yksityinen **IsAssociatedToMultipleFundingSourcesContract**-menetelmä **ProjTable**-taulukkotiedostossa. |
+| **Käytön asetukset**              | Kaikki  |
+| **Tila**                         | Toiminnon suunniteltu vanhenemisajankohta on vuoden 2020 huhtikuun julkaisuaallon yhteydessä. |
+
+### <a name="legacy-workflow-reports-for-tracking-and-instance-status"></a>Vanhat työnkulkuraportit seurantaa ja ilmentymän tilaa varten
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Vanhat työnkulun raportit seurantaa ja ilmentymän tilaa varten vanhentuvat, koska niihin ei enää viitata siirtymisen yhteydessä. Raporttien nimet ovat WorkflowWorkflowInstanceByStatusReport ja WorkflowWorkflowTrackingReport. |
+| **Onko toinen ominaisuus korvannut?**   | Tämän sijaan käytössä on työnkulkuhistorian lomake. |
+| **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Toiminnon poiston tavoiteajankohta on vuoden 2020 huhtikuu. |
+
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 ja platform update 25
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 ja Platform update 25 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelun vakiopäivitykset ja ensimmäisen julkaisun päivitykset](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+> Dynamics 365 for Finance and Operations 10.0.1 ja Platform update 25 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Vanhentuneet ohjelmointirajapinnat ja mahdolliset tärkeimmät muutokset
+
 
 #### <a name="deriving-from-internal-classes-is-deprecated"></a>Johtaminen sisäisistä luokista on vanhentunut
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Platform update 25 -versiota edeltävissä julkaisuissa oli mahdollista luoda toisessa paketissa tai moduulissa määritetystä sisäisestä luokasta tai taulusta johdettu luokka tai taulu. Tämä ei ole turvallinen koodauskäytäntö. Platform update 25 -päivityksestä alkaen kääntäjä näyttää varoituksen, jos yrität toimia tällä tavoin.|
-| **Onko toinen ominaisuus korvannut?**   | Kääntäjän varoitus korvataan tulevassa ympäristöpäivityksessä virheellä. Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten käytössä on Platform update 25 tai uudempi versio, tämä ominaisuus voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava. Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan. |
-| **Tuotealueet, joihin vaikutetaan**         | Visual Studion kehitystyökalut. |
+| **Poiston tai vanhentumisen syy** | Ennen Platform update 25 -versiota oli mahdollista luoda toisessa paketissa tai moduulissa määritetystä sisäisestä luokasta tai taulusta johdettu luokka tai taulu. Tämä ei ole turvallinen koodauskäytäntö. Platform update 25 -versiosta alkaen kääntäjä näyttää varoituksen. |
+| **Onko toinen ominaisuus korvannut?**   | Kääntäjän varoitus korvataan Platform update 26 -versiossa virheellä. Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten Platform update 25 tai uudempi versio voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava. Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan.|
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut – varoituksesta tulee käännösvirhe tulevassa ympäristöpäivityksessä. |
+| **Tila**                         | Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa. |
 
 #### <a name="overriding-internal-methods-is-deprecated"></a>Sisäisten menetelmien ohittaminen on vanhentunut
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Platform update 25 -versiota edeltävissä julkaisuissa oli mahdollista ohittaa johdetun luokan sellainen sisäinen menetelmä, joka oli määritetty toisessa paketissa tai moduulissa. Tämä ei ole turvallinen koodauskäytäntö. Platform update 25 -päivityksestä alkaen kääntäjä näyttää varoituksen, jos yrität toimia tällä tavoin.|
-| **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan käännösvirheellä tulevassa ympäristöpäivityksessä. Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten käytössä on Platform update 25 tai uudempi versio, tämä ominaisuus voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava. Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan. |
-| **Tuotealueet, joihin vaikutetaan**         | Visual Studion kehitystyökalut. |
+| **Poiston tai vanhentumisen syy** | Ennen Platform update 25 -versiota oli mahdollista ohittaa johdetun luokan sellainen sisäinen menetelmä, joka oli määritetty toisessa paketissa tai moduulissa. Tämä ei ole turvallinen koodauskäytäntö. Platform update 25 -versiosta alkaen kääntäjä näyttää varoituksen. |
+| **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan Platform update 26 -versiossa käännösvirheellä. Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten Platform update 25 tai uudempi versio voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava. Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan. |
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut – varoituksesta tulee käännösvirhe tulevassa ympäristöpäivityksessä. |
+| **Tila**                         | Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 ja platform update 23
 
-### <a name="print-to-screen-functionality"></a>Tulosta näyttöön -toiminto
-Asiakkaat voivat ladata Finance and Operations -sovellusten tuottamia asiakirjoja Report Viewer -ohjausohjausobjektin **Tuo**-toiminnolla. Tämä HTML-pohjainen raportin esittäminen antaa käyttäjien käyttöön asiakirjan sivuttamattoman esikatselun.
+### <a name="sql-server-reporting-services-reportviewer-control"></a>SQL Server Reporting Services ReportViewer -ohjausobjekti
+Asiakkaat voivat käyttää upotetun SQL Server Reporting Services (SSRS) ReportViewer -ohjausobjektin **vientitoimintoa** Finance and Operations -sovellusten asiakirjojen lataamisessa. Tämä HTML-pohjainen raportin esittäminen antaa käyttäjien käyttöön asiakirjan sivuttamattoman esikatselun.
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Koska HTML-pohjainen esikatselukokemus on sivuttamaton, Finance and Operationsin lopulta tuottamat fyysiset asiakirjat **eivät** ole samanlaisia kuin tässä esikatselussa. Koska PDF on otettu kattavasti liiketoimintojen standardimuodoksi, käyttäjän sovelluksen raporttia koskevia asetuksia on voitu yksinkertaistaa merkittävästi. Samalla asiakirjan hahmontamisprosessia on sujuvoitettu. |
+| **Poiston tai vanhentumisen syy** | Koska HTML-pohjainen esikatselukokemus on sivuttamaton, Finance and Operationsin lopulta tuottamat fyysiset asiakirjat **eivät** ole samanlaisia kuin tässä esikatselussa. Koska PDF on otettu kattavasti liiketoiminta-asiakirjojen standardimuodoksi, käyttäjät voivat hyödyntää uutta katselukokemusta ja parannettua suorituskykyä sovelluksen raporttien luomisessa. |
 | **Onko toinen ominaisuus korvannut?**   | Jatkossa PDF-tiedostot tulevat olevaan Finance and Operationsin hahmontamien raporttien oletusmuoto.   |
 | **Tuotealueet, joihin vaikutetaan**         | Tämä muutos **ei** vaikuta asiakasskenaarioihin, joissa raportit jaetaan sähköisesti tai lähetetään suoraan tulostimiin.    |
 | **Käytön asetukset**              | Kaikki  |
-| **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. Toiminto, jolla sovelluksen raportit voidaan ladata automaattisesti selaimeen PDF-tiedostoina, on suunniteltu toukokuun 2019 ympäristöpäivitykseen. <br><br>**Tärkeää:** nykyisten asiakkaiden, jotka käyttävät Tulosta näyttöön -ominaisuutta, on syytä ottaa yhteyttä [tukee](../lifecycle-services/lcs-support.md) ennen Platform update 26:een päivittämistä. |
+| **Tila**                         | Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty. Toiminto, jolla sovelluksen raportit voidaan esikatsella automaattisesti upotetun PDF-katseluohjelman avulla, on tulossa vuoden 2019 toukokuun Platform update -versioon. |
 
 ### <a name="client-kpi-controls"></a>Asiakasohjelman tunnuslukujen ohjausobjektit
 Kehittäjä voi mallintaa upotetut tunnusluvut Visual Studiossa, ja loppukäyttäjät voivat sitten muokata niitä lisää.
@@ -102,7 +171,7 @@ Kehittäjä voi mallintaa upotetut tunnusluvut Visual Studiossa, ja loppukäytt�
 | **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan jatkossa käännösvirheellä.  |
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studion kehitystyökalut. |
 | **Käytön asetukset**              | Kaikki. |
-| **Tila**                         | Vanhentunut – varoituksesta tulee jatkossa käännöksenaikainen virhe. Tällä hetkellä tavoitteena on Platform update 30. |
+| **Tila**                         | Vanhentunut: Varoituksesta tulee jatkossa käännöksenaikainen virhe. Tällä hetkellä tavoitteena on Platform update 30. |
 
 #### <a name="complete-list"></a>Täydellinen luettelo
 Täydellinen vanhentumassa olevien ohjelmointirajapintojen luettelo on kohdassa [Menetelmien ja metatietojen elementtien poisto](deprecation-deletion-apis.md).
@@ -110,7 +179,7 @@ Täydellinen vanhentumassa olevien ohjelmointirajapintojen luettelo on kohdassa 
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 ja platform update 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Alareskontran kirjauskansion kirjanpitovientien eräsiirtosäännöt
-Synkrononinen siirtotila on vanhentunut kirjanpitotilin parametreissä.  Tämä tila korvataan vain asynkronisella ja ajoitetulla erällä, joka on jo olemassa siirtovaihtoehtona. 
+Synkrononinen siirtotila on vanhentunut kirjanpitotilin parametreissä.  Tämä tila korvataan vain asynkronisella ja ajoitetulla erällä, joka on jo olemassa siirtovaihtoehtona. Lisätietoja on [Kirjanpitoparametrit - eräsiirron säännöt](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules) -blogissa.
 
 |   |  |
 |------------|--------------------|
@@ -172,7 +241,7 @@ Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version o
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 ja platform update 12
 
 ### <a name="personalized-product-recommendations"></a>Kohdennetut tuotesuositukset 
-15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja on kohdassa [Mukautetut tuotesuositukset](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja on kohdassa [Mukautetut tuotesuositukset](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -277,7 +346,7 @@ Käyttäjät voivat ladata tämän julkishallinnon portaalista.
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>Kohdennetut tuotesuositukset 
-15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja on kohdassa [Mukautetut tuotesuositukset](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja on kohdassa [Mukautetut tuotesuositukset](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -309,7 +378,7 @@ Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu pai
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Sama toiminto.       |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asetuksista ja edellytyksistä on kohdassa [Microsoft Dynamics 365 for Finance and Operationsin asennus ja määritys – varastointi](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asetuksista ja edellytyksistä on kohdassa [Microsoft Dynamics 365 for Finance and Operationsin asennus ja määritys – varastointi](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Tuotealueet, joihin vaikutetaan**         | Varaston hallinta, kuljetusten hallinta     |
 | **Käytön asetukset**              | Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon.               |
 | **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2019 4. vuosineljännes.   |
@@ -687,6 +756,17 @@ Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten j
 | **Onko toinen ominaisuus korvannut?**   | Tämä ominaisuus on korvattu tietojen tuonti- ja vientiympäristöllä, joka tukee toistuvaa joukkotuontia ja -vientiä. AxBC:ssä on suositeltavaa käyttää varsinaisia tauluja. |
 | **Tuotealueet, joihin vaikutetaan**         | AxDs, AxBCs ja AIF   |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.   |
+
+### <a name="billing-code-rate-scripts"></a>Laskutuskoodin hinnan komentosarjat
+
+Laskutuksen komentosarjoja käytetään laskutuskoodin laskutushintojen laskemisessa. Nämä komentosarjat vaaditaan C Sharp- ja Visual Basic -ohjelmointikielen mukautetussa kehityksessä. Dynamics AX:n nykyisessä versiossa **laskutuskoodin hinnan komentosarjoja** ei tueta.
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Mukautettujen C Sharp- ja Visual Basic -komentosarjojen tukea ei lisätty Dynamics AX 7.0 -versioon. |
+| **Onko toinen ominaisuus korvannut?**   | Ei                                                                                      |
+| **Tuotealueet, joihin vaikutetaan**         | Julkinen sektori, myyntireskontra                                    |
+| **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.                                                          |
 
 ### <a name="boms-without-bom-versions"></a>Tuoterakenteet ilman tuoterakenneversioita
 
@@ -1068,7 +1148,7 @@ Tuotekonfiguraattoria käytettiin määrittämään dynaamisesti nimikkeitä myy
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tuotekonfiguraattori paljasti X ++-koodin loppukäyttäjille eikä sitä tueta Dynamics AX:n nykyisessä versiossa. Se on poistettu, jotta päällekkäisissä suurissa koodikannoissa ei tarvitsisi tehdä kaksinkertaista ylläpitoa.  |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä. Poissulkeva konfiguraatio otettiin käyttöön Dynamics AX 2012:ssä, jossa tuotekonfiguraattorin vanhentuminen tulevissa versioissa oli jo ilmoitettu. Poissulkeva konfiguraatiomenetelmä valitaan päätuotteessa ottamaan konfiguraatio käyttöön. Lisätietoja on kohdassa [Tuotemääritysmallin luominen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Poissulkeva konfiguraatio otettiin käyttöön Dynamics AX 2012:ssä, jossa tuotekonfiguraattorin vanhentuminen tulevissa versioissa oli jo ilmoitettu. Poissulkeva konfiguraatiomenetelmä valitaan päätuotteessa ottamaan konfiguraatio käyttöön. Lisätietoja on kohdassa [Tuotemääritysmallin luominen](../../supply-chain/pim/build-product-configuration-model.md). |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta, myynti ja markkinointi  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.      |
 

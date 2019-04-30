@@ -1,25 +1,25 @@
 ---
 title: Haastattelujen aikataulutus ja palaute
 description: Tässä ohjeaiheessa on tietoja haastattelujen aikataulutus- ja palautetehtävistä Attractissa.
-author: ''
+author: hasrivas
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
-ms.author: hasrivas
-ms.openlocfilehash: 7bc5a66bb221cb0ab2c69fcb1013ed48a7c664a6
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.author: shielas
+ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374891"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "989934"
 ---
 # <a name="interview-scheduling-and-feedback"></a>Haastattelujen aikataulutus ja palaute
 
@@ -28,6 +28,8 @@ ms.locfileid: "374891"
 ## <a name="scheduler-activity"></a>Ajastus-tehtävä
 
 Valinnaisessa ajastustehtävässä on kaksi osaa: ehdokkaan käytettävyystietojen pyytäminen ja aikataulu. Ehdokkaan käytettävyystiedot -osassa voit pyytää ehdokkaan käytettävyystietoja sähköpostitse. Aikataulu-osassa voi sopia haastattelun ajankohdan ehdokkaan ja työhönottoryhmän kesken.
+
+Määritä ajoitustehtävä sisältämään tai rajoittamaan ajoitettavia hakijoita valitsemalla arvo **Ketkä ajoitetaan** -kentässä. Käytettävissä ovat seuraavat vaihtoehdot: **Kaikki ehdokkaat**, **Ulkoiset ehdokkaat** ja **Sisäiset ehdokkaat**. Esimerkiksi, jos haluat ohittaa sisäiset ehdokkaat ajoituksen ensimmäisellä kierroksella, voit määrittää ajoitustoiminnon vain ulkoisille ehdokkaille määrittämällä **Ketkä ajoitetaan** -kentän arvoksi **Ulkoiset ehdokkaat**.
 
 ### <a name="candidate-availability-request"></a>Ehdokkaan käytettävyystietojen pyytäminen
 
@@ -54,7 +56,7 @@ Haastattelun ajastuksessa on useita määrityksiä, joiden avulla haastattelijoi
 
 2. Valitse kunkin haastattelutapahtuman kesto ja aloita sitten aikataulun luonti valitsemalla **OK**.
 
-    Jos **Suositukset** on valittu, näkyviin tulee ehdotuksia ja haastatteluruudukko on täytetty valmiiksi. Näkyviin tulee kalanteri, jossa näkyy kaikkien valittujen haastattelijoiden käytettävyystiedot. Voit tarkastella myös sisäisen ehdokkaan kalenteria.
+    Jos **Suositukset** on valittu, näkyviin tulee ehdotuksia ja haastatteluruudukko on täytetty valmiiksi. Näkyviin tulee kalenteri, jossa näkyy kaikkien valittujen haastattelijoiden käytettävyystiedot. Voit tarkastella myös sisäisen ehdokkaan kalenteria. Haastattelijoille ja sisäisille hakijoille voit tarkastella niiden varattuja ajankohtia, työaikoja, niiden poissaoloaikoja sekä määrittää myös, jos ne ovat merkinneet työskentelevänsä tietyn ajankohdan muualla. 
 
 3. Jos ehdotuksia ei ole, napsauta **Haastattelijat**-sarakkeessa ajankohtaa, lisää haastattelun otsikko ja tiedot sekä täytä tarvittaessa sijaintitiedot. Voit halutessasi sisällyttää haastattelun **Skype for Business** -linkin.
 
@@ -73,7 +75,7 @@ Haastattelun ajastuksessa on useita määrityksiä, joiden avulla haastattelijoi
 
     Haastattelijan vastaukset taltioidaan ja näytetään Attractissa. Jos haastattelija hylkää kutsun, sinua pyydetään tekemään muutos. Voit tarkastella vastausta **Ajoitus**-ruudukkonäkymässä puhekuplakuvaketta napsauttamalla.
 
-[![Attractin työhönottaja näkymä haastattelijan vastauksesta](./media/schedule-interviewer-response.png)](./media/schedule-interviewer-response.png)
+[![Attractin työhönottaja näkymä haastattelijan vastauksesta](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
 
 7. Kun haastatteluaikataulu on valmis ehdokkaan kanssa jaettavaksi, valitse **Lähetä ehdokkaalle**. Voit valita, piilotetaanko vai näytetäänkö haastattelijoiden nimet ja ajat ehdokkaalle.
 
@@ -82,10 +84,21 @@ Haastattelun ajastuksessa on useita määrityksiä, joiden avulla haastattelijoi
 >[!NOTE] 
 > Käytettävyystiedot näytetään ehdokkaan kalenterissa vain, jos kyse on sisäisestä ehdokkaasta. Samalla tavoin vain sisäisen ehdokkaan tietoja voidaan käyttää haastattelun aikataulusuosituksissa. Tällä hetkellä ehdokkaat (sisäiset tai ulkoiset) eivät saa kokouskutsua sähköpostitse, vaan ehdokas saa vain haastattelujen yhteenvedon.
 
-## <a name="feedback-activity"></a>Palaute-tehtävä
+Ehdokkaat saavat sähköpostiviestin, jossa on yhteenveto haastatteluryhmästä. Sähköpostiviestit sisältävät .ics-tiedoston, joka helpottaa käyttöä ja ilmoituksia haastattelun suhteen tallentamalla sen ehdokkaan omaan kalenteriin.
 
-Palautetehtävä on työmallissa valinnainen. Tämän tehtävän avulla haastatteluun osallistuvat voivat antaa hakijaa koskevia suosituksia tai palautekommentteja. Jos **Peri palautteeseen osallistujat työhönottoryhmältä** -kenttä valitaan, työnottaja, työhön ottava esimies ja haastattelijat siirtyvät automaattisesti palautetehtävään. Organisaatiot voit antaa haastattelijoille mahdollisuuden tarkastella muiden palautteet, ennen kuin he lähettävät oman palautteensa. Organisaatiot voivat lisäksi antaa haastattelijoille mahdollisuuden muokata jo lähetettyä palautetta. Haastattelijoita muistutetaan heidän äskettäin suorittamiensa haastattelujen palautteen lähettämisestä. Tämä muistutus perustuu työmallin osana tehtyihin valmiisiin määrityksiin. Työn työhön ottava esimies tai työhönottaja voivat halutessaan muistuttaa haastattelijaa palautteen lähettämisestä myös manuaalisesti.
+>[!TIP] 
+> Jos lähetät haastatteluaikataulun hakijalle uudelleen, he saavat toisen .ics-liitetiedoston. On suositeltavaa päivittää hakijan haastatteluyhteenvedon sähköpostimallit, jotta varmistetaan, että ehdokkaat poistavat aiemmin lisätyt haastattelutapahtumat eivätkä näe kalenteritapahtumien kaksoiskappaleita. 
+
+## <a name="feedback-activity"></a>Palautetehtävä
+
+Palautetehtävä on työmallissa valinnainen. Tämän tehtävän avulla haastatteluun osallistuvat voivat antaa hakijaa koskevia suosituksia tai palautekommentteja. 
+
+Voit sisällyttää tai rajoittaa hakijoita, joille voidaan antaa palautetta valitsemalla arvon **Kenelle haastattelijoiden tulisi antaa palautetta** -kentässä.  Käytettävissä ovat seuraavat vaihtoehdot: **Kaikki ehdokkaat**, **Ulkoiset ehdokkaat** ja **Sisäiset ehdokkaat**. Jos haluat esimerkiksi ohittaa sisäiset ehdokkaat ajoituksen ensimmäisellä kierroksella, määritä **Kenelle haastattelijoiden tulisi antaa palautetta** -kentän arvoksi **Ulkoiset ehdokkaat**.
+
+Jos **Peri palautteeseen osallistujat työhönottoryhmältä** -kenttä valitaan, työnottaja, työhön ottava esimies ja haastattelijat siirtyvät automaattisesti palautetehtävään. Organisaatiot voit antaa haastattelijoille mahdollisuuden tarkastella muiden palautteet, ennen kuin he lähettävät oman palautteensa. Organisaatiot voivat lisäksi antaa haastattelijoille mahdollisuuden muokata jo lähetettyä palautetta. Haastattelijoita muistutetaan heidän äskettäin suorittamiensa haastattelujen palautteen lähettämisestä. Tämä muistutus perustuu työmallin osana tehtyihin valmiisiin määrityksiin. Työn työhön ottava esimies tai työhönottaja voivat halutessaan muistuttaa haastattelijaa palautteen lähettämisestä myös manuaalisesti.
 
 ## <a name="interview-activity"></a>Haastattelu-tehtävä
 
-Valinnaisessa haastattelutehtävässä on kolme osaa: ehdokkaan käytettävyystietojen pyytäminen, aikataulu ja palaute. Käytä haastattelutehtävää työmallissa, jos haluat, että ehdokkaan käytettävyystietojen pyyntö, aikataulu ja palaute ovat kaikki prosessin osia sen sijaan, että niitä käytettäisiin erikseen työhönottoprosessin osina.
+Valinnaisessa haastattelutehtävässä on kolme osaa: **ehdokkaan käytettävyystietojen pyytäminen**, **aikataulu** ja **palaute**. Käytä työmallin haastattelutehtävää, jos haluat kaikki ehdokkaan käytettävyystietojen pyytämiset aikataulun ja palautteen prosessin osaksi sen sijaan, että käyttäisit niitä yksittäin.
+
+Voit sisällyttää tai rajoittaa haastateltavia ehdokkaita valitsemalla arvon **Ketä haastattelet** -kentässä. Käytettävissä ovat seuraavat vaihtoehdot: **Kaikki ehdokkaat**, **Ulkoiset ehdokkaat** ja **Sisäiset ehdokkaat**. Jos haluat esimerkiksi ohittaa sisäiset ehdokkaat haastatteluiden ensimmäisellä kierroksella, määritä **Ketä haastattelet** -kentän arvoksi **Ulkoiset ehdokkaat**.

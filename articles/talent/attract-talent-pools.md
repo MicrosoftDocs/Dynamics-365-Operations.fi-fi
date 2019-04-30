@@ -1,29 +1,29 @@
 ---
 title: Hakijoiden resursointi kykypoolien avulla
 description: Tässä ohjeaiheessa käsitellään Attractin kykypoolien luomista ja määrittämistä.
-author: ''
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304201"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949341"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Hakijoiden resursointi kykypoolien avulla
 
@@ -44,7 +44,7 @@ Luo ja jaa kykypooleja seuraavien ohjeiden mukaisesti.
 
     **Omat kykypoolit** -välilehdessä on näkyvissä kaikki kykypoolit, joiden käyttöoikeus sinulla on, sekä tietoja kustakin poolista. Näitä tietoja ovat esimerkiksi poolin omistaja ja siinä olevien hakijoiden määrä.
 
-1. Avaa **Luo kykypooli** -valintaruutu valitsemalla oikeassa yläkulmassa **+ Uusi**.
+1. Valitse sivun oikeassa yläkulmassa oleva **Uusi** ja avaa **Luo kykypooli** -valintaikkuna.
 1. Anna kykypoolille yksilöivä nimi.
 1. Voit lisätä osallistujia kykypooliin, etsimällä nimet henkilövalitsimella ja lisäämällä heidät sitten luetteloon. Voit jakaa kykypoolin käyttäjien kanssa, joiden rooli on työhönottaja, työhönottopäällikkö tai Attractin järjestelmänvalvoja.
 1. Luo uusi kykypooli valitsemalla **Lisää**.
@@ -78,26 +78,35 @@ Kykypoolin omistaja ja sen osallistujat voivat lisätä hakijoita pooliin, tarka
 
 ## <a name="search-and-view-candidate-profiles"></a>Hakijaprofiilien hakeminen ja tarkasteleminen
 
-Kykypoolin käyttäjät voivat tarkastella hakijan profiilia, hänen LinkedIn-tietojaan, liittyviä asiakirjoja tai hakijan koko hakemushistoriaa. Voit myös hakea hakijatietokannasta ketä tahansa hakijaa, joka on joskus hakenut työpaikkaa organisaatiossa tai joka on joskus lisätty johonkin kykypooliin.
+> [!NOTE] 
+> Tämä ominaisuus on tällä hetkellä vain esiversiossa. Voit halutessasi kokeilla sitä [ottamalla sen käyttöön Attractin järjestelmänvalvojan asetuksissa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
 
-1. Tee haku koko hakijatietokannassa käyttämällä **Omat kykypoolit** -välilehden hakuruutua.
-1. Käytä haussa erilaisia profiilimääritteitä. Valitse hakumääriteluokka, muodosta hakukysely ja suorita haku valitsemalla oikea nuolipainike (**-\>**).
+Kykypoolien avulla voit tarkastella ehdokkaan profiilia, LinkedIn-tietoja, liittyviä asiakirjoja ja sovellushistoriaa. Voit tehdä haun mihin tahansa kykypooliin lisätystä ehdokkaiden tietokannasta, mukaan lukien suljetut ja aktiiviset hakijat.
 
-    Voit hakea hakijoita nimen, työorganisaation, merkittyjen taitojen, koulutushistoria, nykyisen työnimikkeen tai tutkinnon perusteella, jos kyseinen tieto sisältyy profiiliin.
+>[!NOTE]
+> Kun lisäät uusia ehdokkaita, uusien lisäysten indeksoiminen hakua varten voi kestää 15 minuuttia.
 
-    Voit myös luoda hakukyselyn, jossa käytetään hakuehtoja vähintään kahta kyseistä määritettä. Yhdistä hakuehdot **ja**-operaattorilla.
+Parannetun hakukokemuksen avulla voit tehdä haun kaikista ehdokkaiden asiakirjoista ja suodattaa esimerkiksi hopeamitalistien, lähteiden, taitojen ja koulutuksen perusteella. Edellisissä versioissa sinun oli määritettävä koko entiteetti, josta haku tehtiin. Attract voi nyt hakea kaikista ehdokkaaseen liittyvistä kentistä ja lajitella tulokset.
 
-    Hakukyselyä vastaavat hakijat ilmoitetaan hakutuloksissa.
+1. Voit aloittaa uuden haun ehdokkaan tietokannassa kirjoittamalla haettavan tekstin **Kykypoolit**-välilehden hakuruutuun. 
 
-1. Voit tarkentaa tuloksia päivittämällä hakukyselyn yläosassa olevan hakukentän avulla.
+Voit kirjoittaa ehdokkaan nimen tai jonkin muun haettavan määritteen. Erottele määritteet välilyönnillä.
 
-    Voit käyttää myös oikealla olevia älykkäitä suodattimia. Nämä älykkäät suodattimet muodostetaan dynaamisesti hakutulosten perusteella.
+Voit tarkentaa hakutuloksia muuttamalla hakukyselyä tai käyttämällä sivun oikealla puolella olevia älykkäitä suodattimia.
 
-    Hakutuloksissa näytetään 20 sellaista parasta taitoa, oppilaitosta, organisaatio ja niin edelleen, jotka useimmin esiintyvät hakijaluettelossa. Voit lisätä näihin määritteisiin suodattamia ja tarkentaa tällä tavoin hakutuloksia entisestään.
+Hakutuloksissa näkyvät eri määritteiden tärkeimmät hakukyselyä vastaavat osumat. Valitse mikä tahansa ehdokas, jonka profiilin haluat nähdä.
 
-1. Kun olet päättänyt hakijan, tarkastele hänen profiiliaan valitsemalla kyseisen hakijan rivi.
+### <a name="syntax-highlights"></a>Syntaksin tärkeimmät kohdat 
 
-Kaikilla käyttäjillä on sama hakijaprofiilien näkymä. Valitse hakutuloksista tai kykypoolista sen hakijan rivi, jonka profiilin haluat nähdä. **Profiili**-välilehdessä on ne tiedot taidoista, työkokemuksesta ja koulutuksesta, jotka hakija on päivittänyt uraportaalista.
+| Käyttäjä | Käyttö                                                      | Esimerkki              |
+|----------|------------------------------------------------------------|----------------------|
+| \*       | Hakee alimerkkijonoja, tätä voi käyttää kaikkien tietueiden palauttamisessa | Syöte: Mi\* <br></br> Tulos: Kaikki tietueet, jotka sisältävät Mi-alkuisia kenttiä, esimerkiksi Microsoft, Micro systems, Midtown Enterprises ja Middleton <br></br>Syöttö: \* <br></br> Tulos: Kaikki tietokannan tietueet |
+| “”       | Hakee tarkan vastineen                                | Syöttö: ”Microsoft” <br></br> Tulos: Kaikki tietueet, joissa on Microsoft                    |
+
+>[!WARNING]
+> Älä poista käytöstä Common Data Service -ilmentymän osuvuushakua. Se estää haun käytön Attractissa.
+
+Kaikilla käyttäjillä on sama hakijaprofiilien näkymä. **Profiili**-välilehdessä on ne tiedot taidoista, työkokemuksesta ja koulutuksesta, jotka hakija on antanut uraportaalin avulla osana hakemuksia.
 
 - Voit tarkastella hakijan yhteystietoja. Voit myös muokata tai päivittää tietoja tarpeen mukaan **Muokkaa**-painikkeella.
 
@@ -109,7 +118,7 @@ Kaikilla käyttäjillä on sama hakijaprofiilien näkymä. Valitse hakutuloksist
 
     Valitse tarkastelevan asiakirjan nimi asiakirjaluettelossa. Voit tarkastella Microsoft Word -asiakirjoja sovelluksessa Microsoft Office 365:n avulla. Voit myös ladata asiakirjat paikalliseen tietokoneeseen käyttämällä kussakin asiakirjassa olevaa **Lataa**-asetusta.
 
-- Hakijan LinkedIn-tiedot ovat **LinkedIn**-välilehdessä. Jos haluat käyttää tätä välilehteä, sinun on muodostettava käyttäjän asetuksissa yhteys LinkedIn-tiliin. Lisäksi ympäristössä on oltava LinkedIn Recruiter -yhteys. Lisätietoja on kohdassa [LinkedIn Recruiterin käyttö hankinnassa](./attract-linked-in-recruiter.md).
+- Hakijan LinkedIn-tiedot ovat **LinkedIn**-välilehdessä. Jos haluat käyttää tätä välilehteä, sinun on muodostettava käyttäjän asetuksissa yhteys LinkedIn-tiliin. Lisäksi ympäristössä on oltava LinkedIn Recruiter-yhteys. Lisätietoja on kohdassa [LinkedIn Recruiterin käyttö hankinnassa](./attract-linked-in-recruiter.md).
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Hakijoiden lisääminen kykypoolista työpaikkaan
 
@@ -117,7 +126,7 @@ Voit siirtää hakijan hakutuloksista tai kykypoolista mihin tahansa aktiiviseen
 
 1. Etsi hakija käyttämällä hakuasetusta ja avaa sitten hänen profiilinsa. Voit myös avata kykypoolin **Omat kykypoolit** -välilehdessä, hakea hakijan kykypoolista ja avata sitten hänen profiilinsa.
 
-1. Valitse hakijan profiilisivun oikeassa yläkulmassa **+ Lisää työhön**. 
+1. Valitse hakijan profiilisivun oikeassa yläkulmassa **Lisää työhön**. 
      
      Näkyvissä on niiden työpaikkojen luettelo, joiden työhönottoryhmään kuulut joko työhönottajana tai työhönottopäällikkönä.
 

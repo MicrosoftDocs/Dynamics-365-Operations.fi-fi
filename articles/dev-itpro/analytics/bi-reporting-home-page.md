@@ -3,7 +3,7 @@ title: Yritystietojen ja raportoinnin aloitussivu
 description: Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dynamics 365 for Finance and Operations -sovellukseen sisältyvistä yritystieto- ja raportointityökaluista.
 author: sericks007
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 03/27/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: efd96759c5fb50e30d213e9e5d58a22fd77bc7a2
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302207"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902839"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Yritystietojen ja raportoinnin aloitussivu
 
@@ -33,7 +33,7 @@ Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja Microsoft Dy
 ## <a name="get-started"></a>Aloittaminen
 - [Tietojen käyttö ja raportointi](information-access-reporting.md)
 - [Teknisiä tietoja: Raportointivaihtoehdot](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Business intelligence](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blogi)
+- [Finance and Operations: Power BI Analysointi- ja raportointipalveluiden blogi](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogi)
 
 ## <a name="analytical-workspaces"></a>Analyysityötilat
 Finance and Operationsissa on vuorovaikutteisia raportteja, jotka integroituvat saumattomasti sovellusten työtiloihin. Työtiloissa voidaan käyttää monipuolisesti Microsoft Power BII:n tukemia infograafeja ja visuaalisia elementtejä. Näissä infograafeissa ja visuaalisissa elementeissä käytetään monenlaisia kolmansien osapuolien toimittamia ohjausobjekteja. Työtiloista voikin tämän vuoksi muodostaa käyttäjille erittäin visuaalisen ja vuorovaikutteisen kokemuksen.

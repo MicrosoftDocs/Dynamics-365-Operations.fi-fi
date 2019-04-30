@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773274"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950401"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Vähittäismyyntikanavien kirjanpidon integroinnin yleiskatsaus
 
@@ -81,12 +81,37 @@ Kirjanpidon integrointikehikossa on seuraavat asetukset, joilla voi käsitellä 
 
 **Ohita**- ja **Merkitse rekisteröidyksi** -asetuksella otetaan käyttöön tietokoodit taltioimaan tiettyjä virhettä koskevia tietoja, kuten virheen syy tai oikeutus kirjanpidon rekisteröinnin ohittamiselle tai tapahtuman merkitsemiselle rekisteröidyksi. Lisätietoja virheen käsittelyparametrien määrittämisestä on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
+### <a name="optional-fiscal-registration"></a>Valinnainen kirjanpidon rekisteröinti
+
+Kirjanpidon rekisteröinti voi olla pakollisista joillekin toiminnoille mutta valinnaista toisille. Tavallisen myynnin ja palautusten kirjanpidon rekisteröinti voi olla pakollista, kun taas asiakkaan talletuksiin liittyvien toimintojen kirjanpidon rekisteröinti voi olla valinnaista. Tässä tapauksessa myynnin kirjanpidon rekisteröinnin tekemättä jättäminen estää lisämyynnin, kun taas asiakkaan tallennuksen kirjanpidon rekisteröinnin tekemättä jättäminen ei estä lisämyyntiä. Pakollisten ja valinnaisten toimintojen erottamiseksi suositellaan, että ne käsitellään eri asiakirjatoimittajissa ja että kyseisille toimittajille määritetään erilliset kirjanpidon rekisteröintiprosessin vaiheet. **Jatka virheen ilmetessä** -parametri on otettava käyttöön kaikissa valinnaiseen kirjanpidon rekisteröintiin liittyvissä vaiheissa. Lisätietoja virheen käsittelyparametrien määrittämisestä on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
+### <a name="manually-running-fiscal-registration"></a>Kirjanpidon rekisteröinnin suorittaminen manuaalisesti
+
+Jos transaktion tai tapahtuman kirjanpidon rekisteröinti on lykätty virheen jälkeen (esimerkiksi silloin, kun toimittaja on valinnut **Peruuta** virheen käsittely valintaruudussa), voit suorittaa kirjanpidon rekisteröinnin manuaalisesti käynnistämällä vastaavan toiminnon. Lisätietoja on kohdassa [Lykätyn kirjanpidon rekisteröinnin manuaalisen suorittamisen ottaminen käyttöön](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### <a name="fiscal-registration-health-check"></a>Kirjanpidon rekisteröinnin kuntotarkastus
+
+Kirjanpidon rekisteröintien kuntotarkastusmenettely tarkistaa, että kirjanpidon laite tai palvelu on käytettävissä tietyn tapahtuman tapahtuessa. Jos kirjanpidon rekisteröintiä ei suorittaa tällä hetkellä loppuun, käyttäjälle ilmoitetaan siitä etukäteen.
+
+Myyntipiste suorittaa kuntotarkastuksen seuraavien tapahtumien yhteydessä:
+
+- Uusi tapahtuma avataan.
+- Keskeytettyä tapahtumaa jatketaan.
+- Myynti- tai palautustapahtuma viimeistellään.
+
+Jos kuntotarkastus epäonnistuu, kuntotarkastuksen valintaikkuna avautuu myyntipisteeseen. Valintaikkunassa on seuraavat painikkeet:
+
+- **OK** – Toimittaja voi ohittaa tällä painikkeella kuntotarkastuksen virheen ja jatkaa toiminnon käsittelyä. Käyttäjät voivat valita tämän painikkeen vain, jos **Salli kuntotarkistuksen virheen ohitus** -käyttöoikeus on otettu heille käyttöön.
+- **Peruuta** – Jos käyttäjä valitsee tämän painikkeen, myyntipiste peruuttaa viimeisimmän toiminnon. (Nimikettä ei esimerkiksi lisätä uuteen toimintoon.)
+
+> [!NOTE]
+> Kuntotarkastus suorittaan vain, jos nykyinen toiminto edellyttää kirjanpidon rekisteröintiä ja jos **Jatka virheen ilmetessä** -parametri on poistettu kirjanpidon rekisteröintiprosessin nykyisessä vaiheessa käytöstä. Lisätietoja on kohdassa [Virheen käsittelyasetusten määrittäminen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Kirjanpidon vastauksen tallentaminen kirjanpitotapahtumassa
 
 Kun transaktion tai tapahtuman kirjanpidon rekisteröinti onnistuu, kirjanpitotapahtuma luodaan kanavatietokannassa ja linkitetään alkuperäiseen transaktioon tai tapahtumaan. Vastaavasti jos epäonnistuneelle kirjanpidon rekisteröinnille valitaan **Ohita**- tai **Merkitse rekisteröidyksi** -asetus, tämä tieto tallennetaan kirjanpitotapahtumaan. Kirjanpitotapahtuma säilyttää kirjanpidon laitteen tai palvelun kirjanpidon vastauksen. Jos kirjanpidon rekisteröintiprosessissa on useita vaiheita, kirjanpitotapahtuma luodaan jokaiselle prosessin vaiheelle, jonka seurauksena oli onnistunut tai epäonnistunut rekisteröinti.
 
-*P-työ* siirtää kirjanpitotapahtumat siirretään Retail Headquartersiin yhdessä vähittäismyynnin transaktioiden kanssa. Voit tarkastella **Vähittäismyymälän tapahtumat** -sivun **Tilikauden tapahtumat** -pikavälilehdellä vähittäismyyntitapahtumiin linkitettyjä kirjanpitotapahtumia.
-
+*P-työ* siirtää kirjanpitotapahtumat Retail Headquartersiin yhdessä vähittäismyyntitapahtumien kanssa. Voit tarkastella **Vähittäismyymälän tapahtumat** -sivun **Tilikauden tapahtumat** -pikavälilehdellä vähittäismyyntitapahtumiin linkitettyjä kirjanpitotapahtumia.
 
 Kirjanpitotapahtumaan tallennetaan seuraavat tiedot:
 
@@ -109,12 +134,13 @@ Kirjanpidon integrointitoiminto tukee tiettyä integroidun kirjanpidon laitetta 
 
 Seuraavat kirjanpidon integrointimallit ovat käytettävissä Retailin kanssa julkaistavassa Retail SDK:ssa:
 
-- [Kuittitulostimen integrointimalli – Italia](emea-ita-fpi-sample.md)
-- [Kuittitulostimen integrointimalli – Puola](emea-pol-fpi-sample.md)
+- [Näyte verotusta varten olevan tulostimen integroinnista Italiassa](emea-ita-fpi-sample.md)
+- [Näyte verotusta varten olevan tulostimen integroinnista Puolassa](emea-pol-fpi-sample.md)
+- [Itävallan tilikausirekisteröintipalvelun integroinnin malli](emea-aut-fi-sample.md)
+- [Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli](emea-cze-fi-sample.md)
 
 Myös seuraava kirjanpidon integrointitoiminto on käytettävissä Retail SDK:ssa, mutta se ei tällä hetkellä käytä kirjanpidon integrointikehikkoa. Tämä toiminto on tarkoitus siirtää kirjanpidon integrointikehikkoon myöhemmissä päivityksissä.
 
 - [Digitaalinen allekirjoitus Ranskassa](emea-fra-cash-registers.md)
 - [Digitaalinen allekirjoitus Norjassa](emea-nor-cash-registers.md)
 - [Tarkistusyksikön integrointimalli – Ruotsi](./retail-sdk-control-unit-sample.md)
-

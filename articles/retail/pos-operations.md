@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353813"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842719"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -93,7 +93,7 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 614 | Muokkaa asiakastilausta | Jatka valittua tilausta niin, että sitä voidaan muokata myyntipisteessä. | En | En | En | En | En |
 | 615 | Muokkaa tarjousta | Jatka valittua tarjousta niin, että sitä voidaan muokata myyntipisteessä. | En | En | En | En | En |
 | 518 | Kulutilit | Kirjaa kassasta satunnaisia kuluja varten poistettavat rahat. | Kyllä | Kyllä | Kyllä | Kyllä | En |
-| 919 | Jatkettu kirjautuminen | Määritä tai poista sisäänkirjautumisoikeus lukemalla viivakoodi tai kortti. | Kyllä | Kyllä | Kyllä | En | En |
+| 919 | Jatkettu kirjautuminen | Määritä tai poista sisäänkirjautumisoikeus lukemalla viivakoodi tai kortti. | Kyllä | Kyllä | Kyllä | Kyllä | Ei |
 | 1201 | Liukuva merkintä | Tämän toiminnon avulla käyttäjä voi lisätä rahaa nykyiseen kassaan tai vuoroon. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 1218 | Pakota oheislaitteen lukituksen poisto | Järjestelmä käyttää tätä toimintoa sisäisesti myyntipisteen oheislaitteiden lukituksen poistamiseen. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | En |
 | 520 | Lahjakortin saldo | Näytä lahjakortin saldo. | Kyllä | Kyllä | En | En | En |

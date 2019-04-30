@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6fae56d2feeec8e5c26fc86bdf89b8ab4c282144
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 80d62492d58a436c15fac82df0d000ab9efa6ea5
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304280"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949940"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (6. joulukuuta 2018)
 
@@ -135,7 +135,7 @@ Työntekijät työhön -tehtävän seuraavat yhdistämismääritykset on päivit
 
 Myös Sukupuoli-kentän muutos on päivitettävä. Valitse sukupuolelle **fn** (toiminto) -määritystyyppi ja päivitä seuraavat arvon yhdistämismääritykset.
 
-| CDS-arvo   | Finance and Operations -arvo | | ------------|------------------ -----------| | 75440000    | Mies                         | | 75440001    | Nainen                       | | 75440002    | Ei mitään                        | | 75440003    | Yksilöimätön                  |
+| Common Data Service Arvo   | Finance and Operations -arvo | | ------------|------------------ -----------| | 75440000    | Mies                         | | 75440001    | Nainen                       | | 75440002    | Ei mitään                        | | 75440003    | Yksilöimätön                  |
 
 Päivitettyjen yhdistämismääritysten pitäisi olla seuraavanlaiset.
 

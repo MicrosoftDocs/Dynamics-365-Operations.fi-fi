@@ -1,7 +1,7 @@
 ---
-title: LinkedIn Recruiterin käyttö hankinnassa
+title: Hankinta LinkedIn Recruiterin avulla
 description: Tässä ohjeaiheessa käsitellään koneoppimisen käyttöä työpaikkojen ja niiden ehdokassuositusten hankkimisessa.
-author: josaw
+author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
@@ -10,31 +10,31 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4ac7a302e5bf589beb2b560b0ff5818e90c67139
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304159"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859571"
 ---
-# <a name="sourcing-with-linkedin-recruiter"></a>LinkedIn Recruiterin käyttö hankinnassa
+# <a name="sourcing-with-linkedin-recruiter"></a>Hankinta LinkedIn Recruiterin avulla
 [!include[banner](../includes/banner.md)]
 
-LinkedIn on maailman suurin kykytietokanta. Se on myös usein ensisijainen järjestelmä, jonka avulla työhönottajat etsivät ehdokkaita, viestivät heidän kanssaan ja hankkivat ehdokkaita työpaikkoihin, joihin työhönottajat etsivät työntekijää. LinkedIn Recruiterin ja Dynamics 365 for Talent: Attractin välinen integraatio helpottaa työhönottoa ja tietojen pitämistä synkronoituna kahden järjestelmän välillä.
+LinkedIn on maailman suurin kykytietokanta. Se on myös usein ensisijainen järjestelmä, jonka avulla työhönottajat etsivät ehdokkaita, viestivät heidän kanssaan ja hankkivat ehdokkaita työpaikkoihin, joihin työhönottajat etsivät työntekijää. LinkedIn Recruiterin ja Dynamics 365 for Talentin välinen integrointi: Attract helpottaa työhönottoa ja tietojen pitämistä synkronoituna kahden järjestelmän välillä.
 
 > [!NOTE]
 > LinkedIn Recruiterin ja Attractin väliseen integraatioon tarvitaan kattavan työhönottolaajennuksen ja LinkedIn Recruiterin käyttöoikeudet.
 
-## <a name="set-up-linkedin-recruiter-with-attract"></a>LinkedIn Recruiterin ja Attractin yhteiskäytön määrittäminen 
+## <a name="set-up-linkedin-recruiter-with-attract"></a>LinkedIn Recruiterin määrittäminen Attractin kanssa 
 
 LinkedIn Recruiter -toimintojen käyttö edellyttää, että Attract-esiintymään on määritetty sopimus- tai yritystasoiset käyttöoikeudet. Määritysprosessin suorittamista varten on tehtävät yhteistyötä sen käyttäjän kanssa, joka on LinkedIn Recruiter -sopimuksen järjestelmänvalvoja. Määritä LinkedIn Recruiterin ja Attractin yhteiskäyttö seuraavien ohjeiden mukaisesti.
 
@@ -50,7 +50,7 @@ LinkedIn Recruiter -toimintojen käyttö edellyttää, että Attract-esiintymä�
 
 5.  LinkedIn-pienoisohjelma latautuu nyt järjestelmänvalvojan asetuksiin, ja siinä on kuvassa näkyvät integraatiot. Valitse **Recruiter System Connect** -kohdassa **Pyyntö**.
 
-[![LinkedIn Recruiter -integrointipyyntö Attractin hallintanäkymässä](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
+[![LinkedIn Recruiter -integroinnin pyytäminen Attractin hallintanäkymässä](./media/RequestLinkedInRSC.png)](./media/RequestLinkedInRSC.png)
 
 6.  Kun integrointia on pyydetty Attractista, näkyviin tulee, että **kumppani on valmis** ja että integrointi voidaan ottaa käyttöön **Recruiterin järjestelmänvalvojan asetuksissa**. Jos sivulla näkyy ilmoitus, jossa pyydetään **ilmoittamaan kumppanille**, odota muutama sekunti, valitse sitten **kumppanille ilmoittaminen** ja päivitä sivu. Näkyvissä pitäisi nyt olla, että **kumppani on valmis**.
 
@@ -64,17 +64,17 @@ Seuraavaa vaihetta varten tarvitaan LinkedIn Recruiter -sopimuksen järjestelmä
 
 Attract-järjestelmä on näkyvissä muutaman muun käyttöönotettavan vaihtoehdon ohella.
 
-9. Jos haluat ottaa käyttöön vain yhden napsautuksen viennin **ATS:n ilmaisin**- tai **ATS:n profiilin pienoisohjelma** -kohdassa, valitse **Yritystason käyttöoikeus**. Jos haluat ottaa käyttöön kaikki yritystason käyttöoikeudet sekä InMail-historiatietojen, huomautusten historiatietojen ja InMailin tynkäprofiilin käyttöoikeudet, valitse **Sopimustason käyttöoikeus**.
+9. Jos haluat ottaa käyttöön vain yhden napsautuksen viennin **ATS:n ilmaisin**- tai **ATS:n profiilin pienoisohjelma** -kohdassa, valitse **Yritystason käyttöoikeus**. Jos haluat ottaa käyttöön kaikki yritystason käyttöoikeudet sekä InMail -historiatietojen, huomautusten historiatietojen ja InMail tynkäprofiilin käyttöoikeudet, valitse **Sopimustason käyttöoikeus**.
 
-10. Ota valittu käyttöoikeustaso käyttöön LinkedIn Recruiterin **Järjestelmänvalvoja-ATS**-setuksissa.
+10. Ota valittu käyttöoikeustaso käyttöön LinkedIn Recruiterin **Järjestelmänvalvoja-ATS**-asetuksissa.
 
 [![Attract-integroinnin käyttöönotto LinkedIn Recruiterin hallintanäkymässä](./media/EnableRSC.png)](./media/EnableRSC.png)
 
 12. Palaa Attractin järjestelmänvalvojan asetuksiin Attractin järjestelmänvalvojana ja valitse **LinkedIn-integrointi**-välilehti. LinkedIn-pienoisohjelmalataus pitäisi nyt näkyä siten, että **Käytössä**-tilassa on valittu käyttöoikeustaso käyttöönotettuna.
 
-[![Valmis LinkedIn Recruiter -integrointi](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
+[![LinkedIn Recruiterin integrointi valmis](./media/RSCSetupComplete.png)](./media/RSCSetupComplete.png)
 
-## <a name="using-linkedin-recruiter-capabilities"></a>LinkedIn Recruiterin toimintojen käyttäminen
+## <a name="using-linkedin-recruiter-capabilities"></a>Käytetään LinkedIn Recruiterin ominaisuuksia
 
 Kun Attractin järjestelmänvalvoja on ottanut LinkedIn Recruiterin toiminnot käyttöön, työhön ottavat esimiehet ja työhönottajat voivat käyttää sitä. Voit ottaa nämä toiminnot käyttöön, muodostamalla yhteyden LinkedIn-tiliin **käyttäjäasetuksissa**. Sen jälkeen kun sekä järjestelmänvalvojan että käyttäjän asetukset on yhdistetty, käytössä on useita toimintoja.
 
@@ -126,7 +126,7 @@ Voit seurata LinkedIn Recruiterin avulla, onko ehdokas hakenut organisaatiossa m
 
 ### <a name="inmail-history"></a>InMailin historiatiedot
 
-LinkedInin InMailin historiatiedot ovat käytettävissä, kun LinkedIn Recruiterissa on sopimustason käyttöoikeudet. Kun vaihtoehto on otettu käyttöön, voit tarkastella koko ehdokkaaseen liittyviä InMailin historiatietoja. Voit tarkastella myös, kenellä muulla organisaatiossa on InMail-viestintää ehdokkaan kanssa. Et kuitenkaan voi tarkastella itse viestejä.
+LinkedIn InMailin historiatiedot ovat käytettävissä, kun LinkedIn Recruiterissa on sopimustason käyttöoikeudet. Kun vaihtoehto on otettu käyttöön, voit tarkastella koko ehdokkaaseen liittyviä InMail-historiatietoja. Voit tarkastella myös, kenellä muulla organisaatiossa on InMail-viestintää ehdokkaan kanssa. Et kuitenkaan voi tarkastella itse viestejä.
 
 Voit tarkastella InMail-historiatietoja valitsemalla ehdokkaan profiilissa **LinkedIn**-välilehden ja selaamalla sivun alareunaan tarkastelemaan historiatietoja. Voit tarkastella InMail-historiatietoja, jos olet käynyt keskustelun ehdokkaan kanssa. InMail-viestit synkronoidaan Attractin kanssa parin tunnin välein.
 

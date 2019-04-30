@@ -1,29 +1,29 @@
 ---
 title: Attractin urasivuston toiminnot
 description: Tässä ohjeaineessa on Attractin ehdokkaalle tarkoitetun urasivustotoimintojen yleiskatsaus.
-author: josaw1
+author: hasrivas
 manager: AnnBe
-ms.date: 02/12/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 087ab4034a1e601e7f3514c77d56ef54b0c5c52d
-ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
+ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
+ms.sourcegitcommit: 063a9296e645e0da182241941869d8102954540a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "389960"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "898928"
 ---
 # <a name="career-site-functionality-in-attract"></a>Attractin urasivuston toiminnot
 
@@ -43,15 +43,15 @@ Voit määrittää seuraavat kohdat kirjautumalla järjestelmänvalvojana Attrac
 
 -   **Organisaation logo** – Organisaation logo näkyy urasivuston vasemmassa yläkulmassa. Valitsemalla organisaation logon hakijat voivat siirtyä sivulle, jossa on luettelo avoimista työpaikoista.
 
-    >   [!NOTE] 
-    >   Urasivustossa näkyvän logon korkeus on aina 20 kuvapistettä (px). Hallintakeskukseen lisätty kuva sovitetaan oikean kokoiseksi. Tämän vuoksi kuvan leveys voi muuttua.
+    > [!NOTE] 
+    > Urasivustossa näkyvän logon korkeus on aina 20 kuvapistettä (px). Hallintakeskukseen lisätty kuva sovitetaan oikean kokoiseksi. Tämän vuoksi kuvan leveys voi muuttua.
  
 Voit määrittää seuraavat kohdat kirjautumalla järjestelmänvalvojana Attractiin ja valitsemalla ensin **Asetukset**-valikossa **Hallintakeskus** ja sitten **Urasivuston hallinta** -välilehden.
 
 -   **Hakukoneoptimointi** – Kun otettu käyttöön, kaikkia Attractin urasivustossa julkaistuja julkisia työpaikkoja voi hakea hakukoneilla, kuten Bingillä ja Googlella.
 
-    >   [!NOTE] 
-    >   Tämän asetuksen käyttöönottamisessa ja hakutulosten näkymisessä voi olla viive, joka määräytyy käytetyn hakukoneen mukaan.
+    > [!NOTE] 
+    > Tämän asetuksen käyttöönottamisessa ja hakutulosten näkymisessä voi olla viive, joka määräytyy käytetyn hakukoneen mukaan.
          
 ## <a name="career-site-urls"></a>Urasivuston URL-osoitteet
 
@@ -81,15 +81,17 @@ Hakijat voivat kirjautua Attract-urasivustoon seuraavin tavoin:
 
     -   Microsoft Azure Active Directory (Azure AD)
 
-Azure AD -kirjautuminen on tarkoitettu vain sisäisille hakijoille. Tämän vuoksi vain yrityksen Azure AD -tunnistetietoja käyttävät sisäiset hakijat voivat käyttää tätä vaihtoehtoa. Esimerkiksi hakija, joka on tällä hetkellä Contoso Ltd:n työntekijä, halua hakea töitä Alpine Ski Housesta, joka on erillinen yritys. Kirjautuminen ei tässä tapauksessa onnistu, jos työntekijä yrittää käyttää Contoso Ltd:n Azure AD -tunnistetietoja.
+Azure AD -kirjautuminen on tarkoitettu vain sisäisille hakijoille. Tämän vuoksi vain yrityksen Azure AD -tunnistetietoja käyttävät sisäiset hakijat voivat käyttää tätä vaihtoehtoa. Esimerkiksi hakija, joka on tällä hetkellä Contoso Ltd:n työntekijä, halua hakea töitä Alpine Ski Housesta, joka on erillinen yritys. Kirjautuminen ei tässä tapauksessa onnistu, jos työntekijä yrittää käyttää Contoso Ltd:n Azure AD -tunnistetietoja. 
+
+Ehdokkaiden on kirjauduttava sisään käyttämällä Azure AD:ta, jos työ, jota he tarkastelevat tai johon he hakevat, on merkitty vain sisäiseksi.
 
 ## <a name="create-and-maintain-a-profile"></a>Profiilin luominen ja ylläpitäminen
 
 Kun hakijat ovat kirjautuneet urasivustoon, he voivat luoda profiilin ja ylläpitää sitä valitsemalla sivun yläosan siirtymispalkissa **Oma profiili**.
 Profiili sisältää henkilötiedot, tietoja työkokemuksesta ja koulutuksesta sekä asiakirjoja, linkkejä ja tietoja osaamisalueista. Kun profiili on luotu, sen avulla voi hakea työpaikkoja, joista hakija on kiinnostunut. Lisäksi Attract voi suositella profiilien avulla hakijoille sopivia työpaikkoja.
 
->   [!NOTE]
->   Jos hakija kirjautuu johonkin edellä mainittuun todennuspalveluun sähköpostitunnuksella, kyseinen sähköpostitunnus muuttuu oletusarvoisesti profiiliin liitetyksi yhteyshenkilön sähköpostitunnukseksi. Jälkimmäinen voidaan kuitenkin muuttaa ja on täysin erillinen edellisestä. Attract liittää aina profiilin kaikkeen sähköpostiviestintään yhteyshenkilön sähköpostitunnuksen avulla.
+> [!NOTE]
+> Jos hakija kirjautuu johonkin edellä mainittuun todennuspalveluun sähköpostitunnuksella, kyseinen sähköpostitunnus muuttuu oletusarvoisesti profiiliin liitetyksi yhteyshenkilön sähköpostitunnukseksi. Jälkimmäinen voidaan kuitenkin muuttaa ja on täysin erillinen edellisestä. Attract liittää aina profiilin kaikkeen sähköpostiviestintään yhteyshenkilön sähköpostitunnuksen avulla.
 
 ## <a name="find-the-right-job"></a>Oikean työpaikan etsiminen
 
@@ -97,13 +99,38 @@ Hakijat voivat hakea tiettyä työpaikkaa työluettelosivulla hakuehtojen avulla
 
 Hakijat voivat tarkastella urasivustossa myös suositeltuja työpaikkoja. Hakijalle suositellaan työpaikkoja hakijan aiempien hakemusten, profiilin ja ansioluetteloiden perusteella.
 
->   [!NOTE] 
->   Työpaikkasuositukset näytetään vain, jos urasivustossa on julkaista vähintään 10 työpaikkaa ja jos hakija on täyttänyt profiilitiedot.
+> [!NOTE] 
+> Työpaikkasuositukset näytetään vain, jos urasivustossa on julkaista vähintään 10 työpaikkaa ja jos hakija on täyttänyt profiilitiedot.
+
+Sisäiset ehdokkaat voivat myös tarkastella, kuka työhön ottava esimies ja/tai muu työhönottaja on, jos he haluavat ottaa yhteyttä työhönottoryhmän jäseniin. Ulkoisilla ehdokkailla ei kuitenkaan ole mahdollisuutta tarkastella minkään työn työhönottoryhmän jäsenten tietoja.
+
+## <a name="contact-the-hiring-team"></a>Ota yhteyttä työhönottoryhmään
+Vain sisäiset ehdokkaat voivat ottaa yhteyttä työhönottoryhmään. Tämä rajoitus koskee kaikkia töitä, niin sisäisiä kuin julkisiakin.
+
+Ehdokkaat voivat haluta ottaa yhteyden työhönottoryhmään ja ilmaista kiinnostuksensa ilmoitettua työtä kohtaan tai kysyä siitä lisätietoja. He voivat ottaa yhteyttä keneen tahansa luettelossa olevaan työhönottoryhmän jäseneen (työhön ottava esimies tai muut työhönottajat). Vaihtoehtoisesti he voivat myös liittää viestiin ansioluettelon tai valita olemassa olevan ansioluettelon, joka on ladattu aikaisemmin profiilin osana.
+
+Kun sisäinen hakija valitsee työhönottoryhmän jäseniä yhteydenottoa varten, Attract lähettää sähköpostiviestin näille henkilöille ehdokkaan puolesta. Samaan aikaan ehdokkaan profiili lisätään **Prospekti**-vaiheeseen, jos tämä vaihe on käytettävissä työhön liittyen. Valitse **Prospekti**-vaiheessa työhön ottavat esimiehet tai muut työhönottajat, jotka voivat tarkastella heihin yhteyttä ottaneiden ehdokkaiden tietoja. He voivat myös tarkastella ehdokkaiden profiileja ja kutsua mahdollisia ehdokkaita hakemaan työtä.
+
+Ehdokkaat voivat hakea töitä, joihin liittyen he ovat jo ottaneet yhteyttä työhön ottaviin esimiehiin. Kun he hakevat työtä, ehdokkaat eivät enää voi ottaa yhteyttä työhön ottavaan esimieheen urasivuston kautta.
 
 ## <a name="apply-for-jobs"></a>Työpaikkojen hakeminen
 
-Kun hakija löytää oikean työpaikan, sitä voi hakea **Työn tiedot** -sivun **Käytä**-painikkeella. Hakijat voivat tässä vaiheessa joko luoda uuden profiilin tai tarkistaa aiemmin luodun profiilin tiedot.
+Kun hakija löytää oikean työpaikan, sitä voi hakea **Työn tiedot** -sivun **Hae** painikkeella. Hakijat voivat tässä vaiheessa joko luoda uuden profiilin tai tarkistaa aiemmin luodun profiilin tiedot.
 Hakija voi myös tarvittaessa ladata ansioluettelon ja lähettää sitten työhakemuksen.
+
+### <a name="enable-applying-for-jobs-with-linkedin-profiles"></a>Otetaan käyttöön töiden hakeminen LinkedIn-profiilien avulla
+
+Voit auttaa ehdokkaita hakemaan toimia määrittämällä Attractin niin, että se sallii ehdokkaiden hakea töitä LinkedInin kautta.
+
+> [!NOTE] 
+> LinkedInissä on oltava vähintään yksi työhönottajan käyttöoikeus, ennen kuin ehdokkaiden voi antaa hakea töitä LinkedInin avulla.
+
+1. Kirjaudu Attractiin järjestelmänvalvojana.
+2. Valitse **Asetukset**-painike (rataskuvake) sivun oikeassa yläkulmassa ja valitse sitten **Hallintakeskus**.
+3. Valitse **LinkedIn-integrointi**-välilehti ja muodosta yhteys LinkedInin työhönottajan tiliin.
+4. Valitse **LinkedIn Recruiter System Connect -integrointi** -osassa **Käytössä** **Hae LinkedInin kautta** -asetusta varten.
+
+Kun olet ottanut asetuksen käyttöön, ehdokkaat voivat hakea käyttämällä olemassa olevan LinkedIn-profiilin tietojen avulla. Kun ehdokkaat hakevat töitä valitsemalla **Hae LinkedInin kautta** -painikkeen, heitä pyydetään tekemään todennus LinkedInin avulla, jos he eivät ole kirjautuneena sisään. Kun he ovat tehneet todennuksen, LinkedIn-profiili korvaa aiemmin määritetyt profiilin tiedot hakemuksen sivulla. Ehdokkaat voivat muokata tietoja tarvittaessa. Tämän jälkeen he voivat lähettää sovelluksen. Jos ehdokas siirtyy pois sivulta eikä hae työtä, heidän profiilinsa tietoja ei päivitetä Attractiin.
 
 ## <a name="check-application-status"></a>Hakemuksen tilan tarkistaminen
 

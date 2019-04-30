@@ -1,7 +1,7 @@
 ---
 title: Ennakkomaksulaskujen ja ennakkomaksujen vertailu
 description: Tässä ohjeaiheessa kuvaillaan ja vertaillaan kahta menetelmää, joita organisaatiot voivat käyttää ennakkomaksuihin. Ensimmäisessä menetelmässä on luotava ennakkomaksulasku, joka on liitetty ostotilaukseen. Toisessa menetelmässä ennakkomaksukirjauskansion tositteita voi luoda luomalla kirjauskansiovientejä ja merkitsemällä ne ennakkomaksukirjauskansion tositteiksi.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c81045b72d15f4474d82040d7725740cff5eba91
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0f97eba8831e96b43f7fe7d5ea58359cab47315c
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310136"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "897129"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Ennakkomaksulaskujen ja ennakkomaksujen vertailu
 

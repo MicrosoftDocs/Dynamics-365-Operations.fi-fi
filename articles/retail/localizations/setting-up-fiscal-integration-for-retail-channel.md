@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773324"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "898974"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Vähittäismyyntikanavien kirjanpidon integroinnin määrittäminen
 
@@ -60,7 +60,7 @@ Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämi
 2. Lataa kirjanpidon yhdistimien ja kirjanpitoasiakirjan toimittajien määritykset.
 
     Kirjanpitoasiakirjan toimittaja vastaa niiden kirjanpitoasiakirjojen luomisesta, jotka vastaavat myyntipisteessä rekisteröityjä vähittäismyyntitransaktioita ja -tapahtumia. Rekisteröinnissä käytetään samaa muotoa, jota käytetään myös kirjanpidon laitetta tai palvelua käytettäessä. Kirjanpitoasiakirjan toimittaja voi esimerkiksi luoda verokuitin XML-muodossa.
-    
+
     Kirjanpidon yhdistin vastaa kirjanpidon laitteen tai palvelun kanssa tapahtuvasta tietoliikenteestä. Kirjanpidon yhdistin voi esimerkiksi lähettää kirjanpitoasiakirjan toimittajan XML-muodossa luoman verokuitin kuittitulostimeen. Lisätietoja kirjanpidon integroinnin osista on kohdassa [Kirjanpidon rekisteröintiprosessi ja kirjanpidon laitteiden kirjanpidon integrointimallit](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. Lataa **Kirjanpidon yhdistimet** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistimet**) kunkin sellaisen laitteen tai palvelun XML-määritys, jota aiot käyttää kirjanpidon integroinnissa.
@@ -150,7 +150,7 @@ Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämi
     - Aiemmin luodussa kirjanpidon rekisteröintiprosessissa tehtyjen muutosten jälkeen, kun kyseiset muutokset voivat aiheuttaa toisen kirjanpidon yhdistimen valinnan suorituksen aikana. (Näin voi tapahtua esimerkiksi silloin, kun kirjanpidon rekisteröintiprosessivaiheen yhdistinryhmä vaihdetaan, yhdistimen toiminnallinen profiili otetaan käyttöön yhdistinryhmässä tai yhdistimen uusi toiminnallinen profiili lisätään yhdistinryhmään.)
     - Yhdistimen teknisten profiilien laiteprofiileihin määrittämisessä tehtyjen muutosten jälkeen.
 
-8. Siirrä tiedot kanavatietokantaan suorittamalla **Ajastuksen jakelu** -sivulla **1070**- ja **1090**-työt.
+8. Siirrä tiedot kanavatietokantaan suorittamalla **Jakeluaikataulu** -sivulla **1070**- ja **1090**-työt.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Alennusten kirjanpitotekstien määrittäminen
 
@@ -185,8 +185,12 @@ Kirjanpidon integroinnissa käytettävissä olevat virheen käsittelyasetukset m
 
     - **Salli ohitus** – tämä parametri ottaa **Ohita**-asetuksen käyttöön virheen käsittelyn valintaikkunassa.
     - **Salli rekisteröidyksi merkitseminen** – tämä parametri ottaa **Merkitse rekisteröidyksi** -asetuksen käyttöön virheen käsittelyn valintaikkunassa.
+    - **Jatka virheen ilmetessä** – Jos tämä parametri on käytössä, kirjanpidon rekisteröintiprosessi voi jatkua POS-rekisterissä, jos transaktion tai tapahtuman tilikausirekisteröinti epäonnistuu. Muussa tapauksessa operaattorin on suoritettava epäonnistunut tilikausirekisteröinti uudelleen, ohitettava se tai merkittävä transaktio tai tapahtuma rekisteröidyksi, jos haluaa suorittaa seuraavan transaktion tai tapahtuman tilikausirekisteröinnin. Lisätietoja on kohdassa [valinnainen tilikausirekisteröinti](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
-2. Virheen käsittelyn valintaikkunan **Ohita**- ja **Merkitse rekisteröidyksi** -asetukset edellyttävät **Salli ohitus tai rekisteröidyksi merkitseminen** -käyttöoikeuden. Ota tämän vuoksi **Salli ohitus tai rekisteröidyksi merkitseminen** -käyttöoikeus käyttöön **Käyttöoikeusryhmät** -sivulla (**Vähittäismyynti \> Työntekijät \> Käyttöoikeusryhmät**).
+    > [!NOTE]
+    > Jos **Jatka virheen ilmetessä** -parametri on käytössä, **Salli Ohita**- ja **Salli Merkitse rekisteröidyksi** -parametrit ovat automaattisesti poissa käytöstä.
+
+2. Virheen käsittelyn valintaikkunan **Ohita**- ja **Merkitse rekisteröidyksi** -asetukset edellyttävät **Salli rekisteröinnin ohitus tai rekisteröidyksi merkitseminen** -käyttöoikeuden. Ota tämän vuoksi **Salli ohita rekisteröinti tai rekisteröidyksi merkitseminen** -käyttöoikeus käyttöön **Käyttöoikeusryhmät** -sivulla (**Vähittäismyynti \> Työntekijät \> Käyttöoikeusryhmät**).
 3. Käyttäjät voivat antaa **Ohita**- ja **Merkitse rekisteröidyksi** -asetuksilla lisätietoja siitä, milloin kirjanpidon rekisteröinti epäonnistuu. Voit ottaa tämän toiminnon käyttöön määrittämällä **Ohita**- ja **Merkitse rekisteröidyksi** -tietokoodit kirjanpidon yhdistinryhmässä. Käyttäjien antamat tiedot tallennetaan sitten kirjanpitotapahtumaan linkitettyjä tietokooditapahtumana. Lisätietoja tietokoodeista on kohdassa [Tietokoodit ja tietokoodiryhmät](../info-codes-retail.md).
 
     > [!NOTE]
@@ -200,6 +204,8 @@ Kirjanpidon integroinnissa käytettävissä olevat virheen käsittelyasetukset m
     > - **Kirjanpitoasiakirja** – pakollinen asiakirja, jonka rekisteröitymisen on onnistuttava (esimerkiksi verokuitti).
     > - **Muu kuin kirjanpitoasiakirja** – transaktion tai tapahtuman täydentävä asiakirja (esimerkiksi lahjakortti).
 
+4. Jos operaattorin on voitava jatkaa nykyisen toiminnan käsittelyä (esimerkiksi tapahtuman luominen tai viimeistely) kuntotarkastuksen virheen jälkeen, sen on otettava käyttöön **Salli kuntotarkistuksen virheen ohitus** -käyttöoikeudet **Käyttöoikeusryhmät** -sivulla (**Retail \> työntekijät \> käyttöoikeusryhmät**). Saat lisätietoja kuntotarkastusmenettelystä kohdasta [Tilikausirekisteröinnin kuntotarkastus](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Kirjanpidon X/Z-raporttien määrittäminen myyntipisteessä
 
 Kirjanpidon X/Z-raporttien suorittaminen myyntipisteestä edellyttää, että myyntipisteen asetteluun lisätään uusia painikkeita.
@@ -211,3 +217,12 @@ Kirjanpidon X/Z-raporttien suorittaminen myyntipisteestä edellyttää, että my
     3. Lisää uusi painike ja määritä **Tulosta kuitti Z** -painikeominaisuus.
     4. Siirrä muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.
 
+## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Ota käyttöön lykätyn tilikausirekisteröinnin manuaalinen käyttö
+
+Jos haluat ottaa käyttöön lykätyn tilikausirekisteröinnin manuaalisen käytön, lisää uusi painike POS-asetteluun.
+
+- Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu **Painikeruudukot**-sivulla noudattamalla kohdan [Mukautetun toimintopainikkeen lisääminen myyntipisteen asetteluun Retail Headquarters -sovelluksessa](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) ohjeita.
+
+    1. Valitse päivitettävä asettelu.
+    2. Lisää uusi painike, määritä **Viimeistele tilikausirekisteröintiprosessi** -painikeominaisuus.
+    3. Siirrä tekemäsi muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.

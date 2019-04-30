@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5326642553c7efcebc6c6af953e2dafe9e62e9ec
-ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
+ms.openlocfilehash: 2753f2828b4890d9893a1538e905bd7061e1bc33
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "832192"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902887"
 ---
 # <a name="electronic-messaging"></a>Sähköiset sanomat
 
 [!include [banner](../includes/banner.md)]
+[!include [preview-banner](../includes/preview-banner.md)]
 
 Tässä aiheessa on Microsoft Dynamics 365 for Finance and Operationsin sähköisten sanomien yleiskatsaus ja määritystiedot.
 
@@ -32,13 +33,13 @@ Useiden eri maiden ja eri alueiden hallitukset ja viranomaiset eri puolilla maai
 
 Finance and Operationsin sähköiset sanomatoiminnot tukevat erilaisia sähköisiä prosesseja Finance and Operationsin sekä sellaisten julkishallinnon ja viranomaisten järjestelmien välillä, jotka mahdollistavat virallisten tietojen raportoinnin, lähettämisen ja vastaanottamisen.
 
-Sähköisen viestinnän toiminnot on integroitu **sähköisen raportoinnin** (ER) moduulin kanssa. Näin ollen onkin mahdollista määrittää ER-muotoja sähköisiä sanomia varten. Lisätietoja on kohdassa [Sähköinen raportointi (ER)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Sähköisen viestinnän toiminnot on integroitu **sähköisen raportoinnin** (ER) moduulin kanssa. Näin ollen onkin mahdollista määrittää ER-muotoja sähköisiä sanomia varten. Lisätietoja on kohdassa [Sähköinen raportointi (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Sähköiset sanomat perustuvat seuraaviin yksiköihin:
 
 - **Sähköinen sanoma** – Raportti tai ilmoitus, joka on raportoitava ja/tai lähetettävä sisäisesti. Sellainen on esimerkiksi verotoimistoon lähetettävä raportti.
 - **Sähköisen sanoman nimikkeet** – tietueet, joiden on sisällyttävä raportoitavaan sanomaan.
-- **Sähköisen sanoman käsittely** – Toimintoketju, jonka toiminnot voivat olla linkitettyjä tai linkittämättömiä. Sen avulla kerätään tarvittavat tiedot, luodaan raportit, tallennetaan tiedot Microsoft Azure Blob -säilöön, lähetetään raportit järjestelmän ulkopuolelle, saadaan vastaukset järjestelmän ulkopuolelta ja päivitetään tietokanta vastaanotettujen tietojen perusteella.
+- **Sähköisen sanoman käsittely** – Toimintoketju, jonka avulla kerätään tarvittavat tiedot, luodaan raportit, tallennetaan tiedot Microsoft Azure Blob -säilöön, lähetetään raportit järjestelmän ulkopuolelle, vastaanotetaan vastaukset järjestelmän ulkopuolelta ja päivitetään tietokanta vastaanotettujen tietojen perusteella. Toimintoketju voi olla linkitetty tai linkittämätön
 
 Seuraavassa kuvassa on tiedonkulku sähköisissä sanomissa.
 
@@ -47,12 +48,12 @@ Seuraavassa kuvassa on tiedonkulku sähköisissä sanomissa.
 Sähköinen sanomatoiminto tukee seuraavia skenaarioita:
 
 - Sellaisten sanomien luonti ja raporttien muodostaminen manuaalisesti, jotka perustuvat liitettyihin eri tyyppisiin ER-vientimuotoihin: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, tekstitiedosto ja Microsoft Word.
-- Sellaisten sanomien luonti ja käsittely automaattisesti, jotka perustuvat viranomaiselta liitetyn ER-tuontimuodon avulla pyydettyihin ja saatuihin tietoihin.
-- Tietojen kerääminen ja käsittely tietolähteestä (Finance and Operations -taulukosta) sanoman nimikkeinä.
+- Sellaisten sanomien luonti ja käsittely automaattisesti, jotka perustuvat viranomaiselta liitetyn ER-tuontimuodon avulla pyydettyihin ja vastaanotettuihin tietoihin.
+- Tietojen kerääminen ja käsittely tietolähteestä sanoman nimikkeinä. Tietolähde on Finance and Operations -taulu.
 - Lisätietojen tallentaminen ja eri arvojen arviointi kutsumalla erityisesti määritettyjä suorittavia luokkia suhteessa sanomiin tai sanoman nimikkeisiin.
 - Sanoman nimikkeissä kerättyjen tietojen koostaminen, kyseisten tietojen jakaminen sanoman mukaan ja liitetyissä ER-vientimuodoissa olevien raporttien luominen.
 - Luotujen raporttien lähettäminen verkkopalveluun käyttämällä Azure Key Vaultiin tallennettuja suojaustietoja.
-- Vastaukseen saaminen verkkopalvelusta, vastauksen tulkinta ja Finance and Operationsin tietojen päivittäminen tarvittaessa.
+- Vastaukseen vastaanottaminen verkkopalvelusta, vastauksen tulkinta ja Finance and Operationsin tietojen päivittäminen tarvittaessa.
 - Kaikkien luotujen raporttien tallentaminen ja tarkastelu.
 - Kaikkien niiden lokitietojen tallentaminen ja tarkasteleminen, jotka liittyvät sanoman tai sanoman nimikkeen yhteydessä suoritettuihin toimintoihin.
 - Käsittelyn hallinta sanoman ja sanoman nimikkeen erilaisten tilojen avulla.
@@ -61,7 +62,7 @@ Sähköinen sanomatoiminto tukee seuraavia skenaarioita:
 
 Sähköiset sanomat auttavat ylläpitämään erillisiä sähköisiä raportointiprosesseja eri asiakirjatyypeille. Joissakin monimutkaisissa skenaarioissa sähköisten sanomien määritys koostuu monien sanomatilojen, sanoman nimiketilojen, toimintojen, lisäkenttien ja suoritettavien luokkien yhdistelmästä. Näissä skenaarioissa käytettävissä on tuotavia tietoyksikköpaketteja. Jos käytät näitä tietoyksikköpaketteja, ne on tuotava yritykseen tietojen hallintatyökalulla. Lisätietoja tietojen hallintatyökalun käytöstä on kohdassa [Tiedonhallinta](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
-Jos et tuo tietoyksikköpakettia, voit määrittää sähköiset sanomatoiminnot manuaalisesti. Siinä tapauksessa seuraavat elementit on määritettävä: 
+Jos et tuo tietoyksikköpakettia, voit määrittää sähköiset sanomatoiminnot manuaalisesti. Siinä tapauksessa seuraavat elementit on määritettävä:
 
 - [Numerosarjat](#number-sequences)
 - [Sanoman nimikkeen tyypit ja tilat](#message-item-types-and-statuses)
@@ -78,7 +79,7 @@ Seuraavissa osissa on lisätietoja jokaisesta edellä mainitusta elementistä.
 
 ### <a name="number-sequences"></a>Numerosarjat
 
-Määritä sekä sanomien että sanoman nimikkeiden numerosarjat. Numerosarjoilla sanomat ja sanoman nimikkeet voidaan numeroida automaattisesti, ja määritetyt numerot ovat sanomien ja sanoman nimikkeiden yksilöiviä tunnisteita järjestelmässä. Voit määrittää sähköisen viestinnän numerosarjat **Kirjanpitoparametrit**-sivulla (**Pääkirjanpito** \> **Kirjanpidon asetukset** \> **Kirjanpitoparametrit**).
+Määritä sekä sanomien että sanoman nimikkeiden numerosarjat. Sanomat ja sanomien nimikkeet numeroidaan automaattisesti numerosarjojen avulla. Määritettyjä numeroita käytetään järjestelmässä sanomien ja sanomanimikkeiden yksilöivinä tunnisteina. Voit määrittää sähköisen viestinnän numerosarjat **Kirjanpitoparametrit**-sivulla (**Pääkirjanpito** \> **Kirjanpidon asetukset** \> **Kirjanpitoparametrit**).
 
 ### <a name="message-item-types-and-statuses"></a>Sanoman nimikkeen tyypit ja tilat
 
@@ -86,49 +87,49 @@ Sanoman nimiketyypit ilmaisevat sähköisissä sanomissa käytettävät tietuety
 
 Sanoman nimikkeen tiloilla ilmaistaan sanoman nimikkeissä käytettävät tilat käsittelyssä, jota olet määrittämässä. Voit määrittää sanoman nimikkeiden tilat **Sanoman nimikkeiden tilat** -sivulla (**Vero** \> **Määritys** \> **Sähköiset sanomat** \> **Sanoman nimikkeiden tilat**).
 
-Sanoman nimikkeen tilan **poiston sallimisen** parametri määrittää, saako käyttäjä poistaa sanoman nimikkeen, jolla on tämä tila, **Sähköiset sanomat**- tai **Sähköisen sanoman nimikkeet** -lomakkeessa. 
+Sanoman nimikkeen tilan **poiston sallimisen** parametri määrittää, saavatko käyttäjät poistaa sanoman nimikkeitä, jolla on tämä tila **Sähköiset sanomat**- tai **Sähköisen sanoman nimikkeet** -sivulla.
 
 ### <a name="message-statuses"></a>Sanomien tilat
 
 Määritä sanomien tilat, joiden on oltava käytettävissä sanomien käsittelyssä. Voit määrittää sanomien tilat **Sanomien tilat** -sivulla (**Vero** \> **Määritys** \> **Sähköiset sanomat** \> **Sanomien tilat**).
 
-Kentän kuvaus:
+Seuraavassa taulukossa käsitellään **Sanomien tilat**-sivun kenttiä.
 
-| Kentän nimi           | Kuvaus |
-|----------------------|-------------|
-|Sanoman tila        | Sähköisen sanoman tilan yksilöivä nimi, joka ilmaa sanoman tilan kullakin hetkellä. Tämä nimi näytetään Sähköiset sanomat -lomakkeessa ja sähköiseen sanomaan liittyvässä lokissa. |
-|Kuvaus           | Sähköisen sanoman tilaan liittyvä kuvaus      |
-|Vastaustyyppi         | Joiden käsiteltävien toimintojen tuloksena voi olla useita vastaustyyppejä. Esimerkiksi **Verkkopalvelu**-tyypin toiminnon seurauksena voi olla joko **Suoritettu onnistuneesti**- tai **Tekninen virhe** -vastaustyyppi sen mukaan, mikä suorituksen tulos. Tässä tapauksessa kummankin vastaustyypin sanoman tila on määritettävä. Lisätietoja toimintotyypeistä ja niihin liittyvistä vastaustyypistä on kohdassa [Sanoman käsittelytoimintojen tyypit](#message-processing-action-types). |
-|Sanoman nimikkeen tila   |Joissakin tapauksissa sähköisen sanoman tilan on vaikutettava liittyvien sanoman nimikkeiden tiloihin. Liitä kyseinen tässä kentässä oleva sanoman nimikkeen tila valitsemalla se hausta. |
-|Salli poistaminen          | Sähköisen sanoman tila **Salli poistaminen** -parametri määrittää, saako käyttäjä saa poistaa sähköisen sanoman, jolla on tämä tila, **Sähköiset sanomat** -lomakkeessa.            |
+| Kentän nimi          | Kuvaus |
+|---------------------|-------------|
+| Sanoman tila      | Anna sanoman tilan yksilöivä nimi. Sanomien tilojen avulla kuvaillaan sähköisen sanoman tilaa koko ajan. Annettu nimi näkyy **Sähköiset sanomat** -sivulla ja sähköisiin sanomiin liittyvässä lokissa. |
+| Kuvaus         | Anna sanoman tilan kuvaus. |
+| Vastaustyyppi       | Valitse sanoman tilan vastaustyyppi. Joiden käsiteltävien toimintojen tuloksena voi olla useita vastaustyyppejä. Esimerkiksi **Verkkopalvelu**-tyypin toimintojen seurauksena voi olla joko **Suoritettu onnistuneesti**- tai **Tekninen virhe** -tyyppi sen mukaan, mikä on suorituksen tulos. Tässä tapauksessa kummankin vastaustyypin sanoman tila on määritettävä. Lisätietoja toimintotyypeistä ja niihin liittyvistä vastaustyypistä on kohdassa [Sanoman käsittelytoimintojen tyypit](#message-processing-action-types). |
+| Sanoman nimikkeen tila | Joskus sähköisen sanoman tilan on vaikutettava liittyvien sanoman nimikkeiden tilaan. Valitse tässä kentässä sanoman nimikkeen tila, jonka haluat liittää sanoman tilaan. |
+| Salli poistaminen        | Valitse tämä valintaruutu, jos käyttävät saat poistaa sellaisia sähköisiä sanomia, joilla on tämä tila **Sähköiset sanomat** -sivulla. |
 
 ### <a name="additional-fields"></a>Lisäkentät
 
-Voit käyttää sähköisissä sanomatoiminnoissa tapahtumataulukon tietueita. Voit tällä tavoin valmistella tietueet raportointia varten ja sitten raportoida ne. Joskus tapahtumataulukon tiedot eivät ole raporttivaatimusten mukaan riittävät tietueen raportointiin. Voit täyttää kaikki tietueen raportoivat tiedot määrittämällä lisäkenttiä. Lisäkentät voidaan liittää sekä sanomiin että sanoman nimikkeisiin. Voit määrittää lisäkentät **Lisäkentät**-sivulla (**Vero** \> **Määritys** \> **Sähköiset sanomat** \> **Lisäkentät**).
+Voit täyttää sähköisissä sanomatoiminnoissa tapahtumataulukon tietueita. Voit tällä tavoin valmistella tietueet raportointia varten ja sitten raportoida ne. Tapahtumatauluissa ei kuitenkaan joskus ole riittävästi tietoja tietueiden täyttämiseen raportin edellyttämällä tavalla. Voit täyttää kaikki tietueen raportoitavat tiedot määrittämällä lisäkenttiä. Lisäkentät voidaan liittää sekä sanomiin että sanoman nimikkeisiin. Voit määrittää lisäkentät **Lisäkentät**-sivulla (**Vero** \> **Määritys** \> **Sähköiset sanomat** \> **Lisäkentät**).
 
-Seuraavassa taulukossa käsitellään **Lisäkentät**-sivun yleiset kentät:
+Seuraavassa taulukossa käsitellään **Lisäkentät**-sivun yleiset kenttiä.
+
+| Kenttä       | Kuvaus |
+|-------------|-------------|
+| Kentän nimi  | Anna prosessiin liittyvien sanoman nimikkeiden lisämääritteen nimi. Tämä nimi näkyy prosessia käytettäessä käyttöliittymässä. Sitä voidaan käyttää myös prosessiin liittyvissä ER-määrityksissä. |
+| Kuvaus | Anna lisäkentän kuvaus. |
+| Käyttäjän muokkaus   | Valitse asetukseksi **Kyllä**, jos käyttäjien on voitava muuttaa lisäkentän arvoa käyttöliittymässä. |
+| Inventoija     | Valitse asetukseksi **Kyllä**, jos lisäkentässä on oltava sähköisessä raportissa numerosarja. Lisäkentän arvo täytetään automaattisesti, kun **Sähköisen raportoinnin vienti** -toiminto suoritetaan. |
+| Piilotettu      | Valitse asetukseksi **Kyllä**, jos lisäkentän on oltava piilotettuna käyttöliittymässä. |
+
+Kullakin lisäkentällä voi olla erilaiset käsittelyarvot. Nämä arvot määritetään **Arvot**-pikavälilehdessä. Kentät käsitellään seuraavassa taulukossa.
 
 | Kenttä                | Kuvaus |
 |----------------------|-------------|
-| Kentän nimi           | Anna prosessiin liittyvien sanoman nimikkeiden lisämääritteen nimi. Tämä nimi näkyy prosessia käytettäessä käyttöliittymässä. Sitä voidaan käyttää myös prosessiin liittyvissä ER-määrityksissä. |
-| kuvaus          | Anna prosessiin liittyvien sanoman nimikkeiden lisämääritteen kuvaus. |
-| Käyttäjän muokkaus            | Jos käyttäjän on voitava muuttaa käyttöliittyvän lisäkentän arvo, valitse tämän valintaruudun arvoksi **Kyllä**. Valitse muussa tapauksessa **Ei**. |
-| Inventoija              | Jos lisäkentässä on oltava sähköisessä sanomassa järjestysnumero, valitse tämä valintaruutu. Lisäkentän arvot täytetään automaattisesti Sähköisen raportoinnin vienti -tyyppisen toiminnon suorittamisen aikana.  |
-| Piilotettu               | Valitse tämä valintaruutu, jos lisäkenttä on piilotettava käyttöliittymässä.  |
-
-Kullakin lisäkentällä voi olla erilaiset käsittelyarvot. Nämä arvot määritetään Arvot-pikavälilehdessä:
-
-| Kenttä                | Kuvaus |
-|----------------------|-------------|
-| Kentän arvo          | Anna kentän arvo, jota käytetään sanoman tai sanoman nimikkeen yhteydessä raportoinnin aikana. |
-| Kentän kuvaus    | Anna sen kentän arvon kuvaus, jota käytetään sanoman tai sanoman nimikkeen yhteydessä raportoinnin aikana. |
-| Tilityyppi         | Tietty lisäkenttien arvojen käyttö voi rajoittua tiettyihin tilityyppeihin. Valitse yksi seuraavista arvoista: **Kaikki**, **Asiakas** tai **Toimittaja**. |
-| Tilikoodi         | Jos valitse **Tilityyppi**-kentässä **Asiakas** tai **Toimittaja**, voit rajoittaa kentän arvojen käytön vain tiettyyn ryhmään tai taulukkoon. |
+| Kentän arvo          | Anna kentän arvo, jota käytetään sanomassa tai sanoman nimikkeessä raportoinnin aikana. |
+| Kuvaus          | Anna kentän arvon kuvaus. |
+| Tilityyppi         | Tiettyjen kenttien arvojen käyttö voi rajoittua tiettyihin tilityyppeihin. Valitse yksi seuraavista arvoista: **Kaikki**, **Asiakas** tai **Toimittaja**. |
+| Tilikoodi         | Jos valitse **Tilityyppi**-kentässä **Asiakas** tai **Toimittaja**, voit rajoittaa kentän arvon käytön vain tiettyyn ryhmään tai taulukkoon. |
 | Tilin/ryhmän numero | Jos valitse **Tilityyppi**-kentässä **Asiakas** tai **Toimittaja** ja jos annat ryhmän tai taulun **Tilikoodi**-kentässä, voit antaa tietyn ryhmän tai edustajan. |
 | Voimassa            | Määritä päivämäärä, jolloin arvon huomioonottaminen alkaa. |
 | Vanhentuminen           | Määritä päivämäärä, jolloin arvon huomioonottaminen loppuu. |
 
-Vaikka **Tilin/ryhmän numero**-, **Tilikoodi**-, **Voimassa**- ja **Vanhentuminen**-kentissä määritettyjen ehtojen yhdistelmät eivät oletusarvoisesti vaikuta lisäkentän arvon valintaan, niitä voidaan käyttää suoritettavassa luokassa toteuttamaan tiettyä lisäkentän arvon laskentalogiikkaa.
+Oletusarvoisesti **Tilin/ryhmän numero**-, **Tilikoodi**-, **Voimassa**- ja **Vanhentuminen**-kenttien määrittämät yhdistelmäehdot eivät vaikuta lisäkenttien arvojen valintaan. Näitä yhdistelmiä voi kuitenkin käyttää suoritettavassa luokassa toteuttamaan tietyn logiikan, joka laskee lisäkenttien arvot.
 
 ### <a name="executable-class-settings"></a>Suoritettavan luokan asetukset
 
@@ -144,16 +145,16 @@ Voit määrittää suoritettavan luokan manuaalisesti **Suoritettavan luokan ase
 | Suoritustaso       | Tämä kenttä määritetään automaattisesti, koska valitun suoritettavan luokan arvo on esimääritettävä. Tämä kenttä rajoittaa tasoa, jolla liittyvä arviointi suoritetaan. |
 | Luokan kuvaus     | Tämä kenttä määritetään automaattisesti, koska valitun suoritettavan luokan arvo on esimääritettävä. |
 
-Joissakin suoritettavissa luokissa voi olla pakollisia parametreja, jotka on määritettävä, ennen kuin suoritettava luokka suoritetaan ensimmäisen kerran. Nämä parametrit määritetään napsauttamalla **Parametrit**-painiketta toimintoruudussa, määrittämällä kyseiset arvot ja kentät valintaikkunassa ja napsauttamalla lopuksi **OK**-painiketta. **OK**-painiketta on ehdottomasti napsautettava, sillä muuten parametreja ei tallenneta kantaan eikä suoritettava luokkaa voida kutsua oikein.
+Joissakin suoritettavissa luokissa voi olla pakollisia parametreja, jotka on määritettävä, ennen kuin suoritettava luokka suoritetaan ensimmäisen kerran. Voit määrittää nämä parametrit valitsemalla toimintoruudussa **Parametrit**, määrittävällä avautuvan valintaikkuna kentät ja valitsemalla lopuksi **OK**. On tärkeää, että valitset **OK**. Muussa tapauksessa parametreja ei tallenneta tietokantaan eikä suoritettavaa luokaa kutsuta oikein.
 
 ### <a name="populate-records-actions"></a>Tietueiden täyttötoiminnot
 
-Voit määrittää tietueen täyttötoiminnoilla toimintoja, joilla lisätään tietueita sanoman nimiketaulukkoon, jotta ne voidaan sitten lisätä sähköiseen sanomaan. Jos sähköisen sanoman on esimerkiksi raportoitava asiakkaan laskut, sinun on määritettävä **tietueiden täyttötoiminto**, joka on linkitetty **Asiakkaan laskupäiväkirja** -taulukkoon (**Tietolähde**-kentässä). Voit määrittää tietueen täyttötoiminnot **Tietueiden täyttötoiminto** -sivulla (**Vero** \> **Määritys** \> **Sähköiset sanomat** \> **Tietueiden täyttötoiminnot**). Luo jokaiselle sellaiselle toiminnolle uusi tietue, jonka on lisättävä tietueita taulukkoon, ja määritä seuraavat kentät.
+Voit määrittää tietueen täyttötoiminnoilla toimintoja, joilla lisätään tietueita sanoman nimiketaulukkoon, jotta ne voidaan sitten lisätä sähköiseen sanomaan. Jos sähköisen sanoman on esimerkiksi raportoitava asiakkaan laskut, sinun on määritettävä tietueiden täyttötoiminto, joka on linkitetty Asiakkaan laskupäiväkirja -taulukon **Tietolähde**-kenttään. Voit määrittää tietueen täyttötoiminnot **Tietueiden täyttötoiminto** -sivulla (**Vero** \> **Määritys** \> **Sähköiset sanomat** \> **Tietueiden täyttötoiminnot**). Luo jokaiselle sellaiselle toiminnolle uusi tietue, jonka on lisättävä tietueita taulukkoon, ja määritä seuraavat kentät.
 
-| Kenttä       | kuvaus                                                               |
-|-------------|---------------------------------------------------------------------------|
-| Nimi        | Anna nimi prosessin toiminnolle, joka täyttää tietueet.       |
-| kuvaus | Anna kuvaus prosessin toiminnolle, joka täyttää tietueet. |
+| Kenttä       | Kuvaus |
+|-------------|-------------|
+| Nimi        | Anna nimi prosessin toiminnolle, joka täyttää tietueet. |
+| Kuvaus | Anna tietueiden täyttötoiminnon kuvaus. |
 
 Lisää **Tietolähteiden määritys** -pikavälilehdessä rivi jokaiselle prosessissa käytettävälle tietolähteelle ja määritä seuraavat kentät.
 
@@ -166,38 +167,39 @@ Lisää **Tietolähteiden määritys** -pikavälilehdessä rivi jokaiselle prose
 | Asiakirjan numerokenttä  | Valitse kenttä, jonka asiakirjanumero on otettava valitusta taulusta. |
 | Asiakirjan päivämääräkenttä    | Valitse kenttä, jonka asiakirjan päivämäärä on otettava valitusta taulusta. |
 | Asiakirjan tilikenttä | Valitse kenttä, jonka asiakirjan tili on otettava valitusta taulusta. |
-| Käyttäjän kysely             | Jos tämä valintaruutu on valittu, voit määrittää kyselyn valitsemalla **Muokkaa kyselyä** edellä olevassa ruudukossa. Muussa tapauksessa kaikki tietueet täytetään tietolähteestä. |
+| Käyttäjän kysely             | Jos tämä valintaruutu on valittu, voit määrittää kyselyn valitsemalla **Muokkaa kyselyä** edellä olevassa ruudukossa. Muussa tapauksessa kaikki tietueet täytetään valitusta tietolähteestä. |
 
 ### <a name="web-applications"></a>Verkkosovellukset
 
-Verkkosovelluksen parametrit määritetään verkkosovellussivulla tukevaan avointa OAuth 2.0 -standardia, jolla käyttäjät voivat myöntää omasta puolestaan sovelluksen suojatun delegoidun käyttöoikeuden tunnistetietojaan jakamatta. Tällä sivulla voi myös käsitellä valtuutusprosessiin hakemalla valtuutuskoodin ja käyttöoikeustunnuksen. Voit määrittää verkkosovelluksen asetukset **Verkkosovellukset**-sivulla (**Vero** \> **Määritys** \> **Sähköiset sanomat** \> **Verkkosovellukset**).
+Voit käyttää verkkosovelluksen asetuksia määrittämään verkkosovelluksen tukemaan Open Authorization (OAuth) 2.0:aa. OAuth on avoin standardi, jonka avulla käyttäjät voivat muodostaa suojatun delegoidun käyttöoikeuden sovellukseen käyttäjätunnuksia jakamatta. Voit käyttää myös valtuutusprosessia hakemalla valtuutuskoodin ja käyttöoikeustunnuksen. Voit määrittää verkkosovelluksen asetukset **Verkkosovellukset**-sivulla (**Vero** \> **Määritys** \> **Sähköiset sanomat** \> **Verkkosovellukset**).
 
 Seuraavassa taulukossa käsitellään **Verkkosovellukset**-sivun kenttiä.
 
-| Kenttä                         | Kuvaus |
-|-------------------------------|-------------|
-| Sovelluksen nimi              | Anna verkkosovelluksen nimi. |
-| Kuvaus                   | Anna verkkosovelluksen kuvaus. |
-| URL-perusosoite                      | Anna verkkosovelluksen perusverkko-osoite. |
-| Varmennuksen URL-osoite        | Määritä polku, jolla valtuutuksen URL-osoite muodostetaan.  |
-| Tunnuksen URL-osoite                | Määritä polku, jolla tunnuksen URL-osoite muodostetaan.  |
-| Uudelleenohjauksen URL-osoite                  | Anna uudelleenohjauksen URL-osoite.  |
-| Asiakastunnus                     | Anna verkkosovelluksen asiakasohjelman tunnus.  |
-| Asiakkaan salausavain                 | Anna verkkosovelluksen asiakasohjelman salauskoodi.  |
-| Palvelimen tunnus                  | Anna verkkosovelluksen palvelimen tunnus.  |
-| Varmennuksen muodon yhdistäminen  | Valitse sähköinen raportointimuoto, jolla varmennuspyyntö muodostetaan.   |
-| Tuo tunnuksen mallin yhdistäminen    | Valitse sähköisen raportoinnin tuontimallin yhdistäminen, jolla käyttöoikeustunnus tallennetaan.  |
-| Myönnetyn alueen käyttöoikeustunnus vanhenee  | Tämä kenttä päivitetään automaattisesti. Sen arvo näyttää verkkosovellukseen myönnettyjen pyyntöjen alueen.  |
-| Hyväksyntä                        | Määritä verkkopyynnön hyväksyntäominaisuus. Esimerkki: application/vnd.hmrc.1.0+json.  |
-| Sisältötyyppi           | Määritä sisältötyyppi. Esimerkki: application/json.  |
+| Kenttä                        | Kuvaus |
+|------------------------------|-------------|
+| Sovelluksen nimi             | Anna verkkosovelluksen nimi. |
+| Kuvaus                  | Anna verkkosovelluksen kuvaus. |
+| URL-perusosoite                     | Anna verkkosovelluksen perusverkko-osoite. |
+| Varmennuksen URL-osoite       | Määritä polku, jolla valtuutuksen URL-osoite muodostetaan. |
+| Tunnuksen URL-osoite               | Määritä polku, jolla tunnuksen URL-osoite muodostetaan. |
+| Uudelleenohjauksen URL-osoite                 | Anna uudelleenohjauksen URL-osoite. |
+| Asiakastunnus                    | Anna verkkosovelluksen asiakasohjelman tunnus. |
+| Asiakkaan salausavain                | Anna verkkosovelluksen asiakasohjelman salauskoodi. |
+| Palvelimen tunnus                 | Anna verkkosovelluksen palvelimen tunnus. |
+| Varmennuksen muodon yhdistäminen | Valitse sähköisen raportin muoto, jolla muodostetaan valtuutuspyyntö. |
+| Tuo tunnuksen mallin yhdistäminen   | Valitse sähköisen raportoinnin tuontimallin yhdistäminen, jolla käyttöoikeustunnus tallennetaan. |
+| Myönnetty alue                | Sovelluksen käyttöpyynnöille myönnetty vaikutusalue. Kenttä päivitetään automaattisesti. |
+| Käyttöoikeustietue päättyy  | Jäljellä oleva aika ennen käyttöoikeustunnuksen vanhentumista. | 
+| Hyväksyntä                       | Määritä verkkopyynnön **Hyväksy**-ominaisuus. Anna esimerkiksi **application/vnd.hmrc.1.0+json**. |
+| Sisältötyyppi                 | Määritä sisältötyyppi. Anna esimerkiksi **application/json**. |
 
-Seuraavia varmennusprosessia tukevia toimintoja voi käyttää **Verkkosovellukset**-sivulla:
--   **Hae varmennuskoodi** – verkkosovelluksen varmennuksen käynnistäminen.
--   **Hanki käyttöoikeustunnus** – käyttöoikeustunnuksen hakemisen käynnistäminen.
--   **Päivitä käyttöoikeustunnus** – päivittää käyttöoikeustunnuksen.
+Myös seuraavat **Verkkosovellukset**-sivun toimintoruudun painikkeet tukevat valtuutusprosessia:
 
-Kun verkkosovelluksen käyttöoikeustunnus on tallennettu järjestelmän tietokantaan salattuna, sitä voidaan käyttää verkkopalvelupyyntöihin. Tietoturvan vuoksi käyttöoikeustunnuksen käyttöoikeus on rajoitettava vain niille käyttöoikeusrooleille, jota kyseisten pyyntöjen käsittely edellyttää. Kun käyttöoikeusryhmän ulkopuolinen käyttäjä yrittää käsitellä pyyntöä, poikkeus ilmoittaa käyttäjälle, että hänellä ei ole oikeutta toimia valitun verkkosovelluksen kautta.
-Määritä käyttöoikeustunnuksen käyttöön edellytettävä rooli Vero > Asetukset > Sähköiset sanomat > Verkkosovellukset -sivun **Käyttöoikeusroolit**-pikavälilehdessä. Jos verkkosovellukselle ei ole määritetty käyttöoikeusrooleja, vain järjestelmänvalvoja voi toimia tämän verkkosovelluksen kautta.
+- **Hae varmennuskoodi** – verkkosovelluksen varmennuksen käynnistäminen.
+- **Hanki käyttöoikeustunnus** – käyttöoikeustunnuksen hakuprosessin käynnistäminen.
+- **Päivitä käyttöoikeustunnus** – käyttöoikeustunnuksen päivittäminen.
+
+Kun verkkosovelluksen käyttöoikeustunnus on tallennettu järjestelmän tietokantaan salattuna, sitä voidaan käyttää verkkopalvelupyyntöihin. Tietoturvan vuoksi käyttöoikeustunnuksen käyttöoikeus on rajoitettava vain niille käyttöoikeusrooleille, jota kyseisten pyyntöjen käsittely edellyttää. Jos käyttöoikeusryhmää kuulumattomat yrittävät käsitellä pyyntöä, he saavat virheen, joka ilmoittaa, etteivät he saa käyttää valittua verkkosovellusta toisen sovelluksen kautta. Määritä käyttöoikeustunnuksen käyttöoikeuden omaavat käyttöoikeusroolit **Verkkosovellukset**-sivun **Käyttöoikeusroolit**-pikavälilehdessä. Jos verkkosovellukselle ei ole määritetty käyttöoikeusrooleja, vain järjestelmänvalvoja voi toimia tämän verkkosovelluksen kautta.
 
 ### <a name="web-service-settings"></a>Verkkopalvelun asetukset
 
@@ -205,21 +207,21 @@ Voit määrittää verkkopalvelun asetuksissa tietojen suoran siirron verkkopalv
 
 Seuraavassa taulukossa käsitellään **Verkkopalvelun asetukset** -sivun kenttiä.
 
-| Kenttä                   | kuvaus |
-|-------------------------|-------------|
-| Internet-palvelu             | Anna verkkopalvelun nimi. |
-| kuvaus             | Anna verkkopalvelun kuvaus. |
-| Internet-osoite        | Anna verkkopalvelun verkko-osoite. Jos verkkopalvelulle määritetään verkkosovellus ja käytettävä verkko-osoite on sama kuin valitulle verkkosovellukselle määritetty osoite, kopioi verkkosovelluksen **URL-perusosoite** verkkopalvelun **Internet-osoite**-kenttään valitsemalla **Kopioi URL-perusosoite** -painike.  |
-| Todistus             | Valitse aiemmin määritetty Key Vault -varmenne. |
-| Verkkosovellus         | Valitse aiemmin määritetty Key Vault -varmenne. |
-| Pyynnön tyyppi – XML | Valitse asetukseksi **Kyllä**, jos vastaustyyppi on XML. |
-| Pyyntömenetelmä          | Määritä pyyntömenetelmä. HTTP määrittää pyyntömenetelmäjoukon, joka ilmaisee tietylle resurssille suoritettavan toiminnon. Menetelmä voi olla **GET**, **POST** tai jokin muu HTTP-menetelmä. |
-| Pyynnön otsikot         | Määritä pyynnön otsikot. Pyynnön otsikko on HTTP-otsikko, jota voidaan käyttää HTTP-pyynnössä mutta joka ei liity sanoman sisältöön. |
-| Hyväksyntä                  | Määritä verkkopyynnön hyväksyntäominaisuus. |
-| Hyväksy koodaus         | Määritä koodauksen hyväksyminen. Koodauksen hyväksymispyynnön HTTP-otsikko ilmaisee sisällön koodauksen asiakasohjelman ymmärtämällä tavalla. Tämä sisältökoodaus on yleensä pakkausalgoritmi. |
-| Sisältötyyppi            | Määritä sisältötyyppi. Sisältötyyppiobjektin otsikko ilmaisee resurssin mediatyypin. |
-| Onnistuneet vastauskoodit   | Määritä HTTP-tilakoodi, joka ilmaisee pyynnön onnistumisen. |
-| Otsikoiden muodon yhdistämispyyntö  | Valitse verkkopyynnön otsikoiden muodostamisen ER-muoto. |
+| Kenttä                          | kuvaus |
+|--------------------------------|-------------|
+| Internet-palvelu                    | Anna verkkopalvelun nimi. |
+| kuvaus                    | Anna verkkopalvelun kuvaus. |
+| Internet-osoite               | Anna verkkopalvelun verkko-osoite. Jos verkkopalvelulle määritetään verkkosovellus ja käytettävä verkko-osoite on sama kuin valitulle verkkosovellukselle määritetty osoite, kopioi verkkosovelluksen URL-perusosoite tähän kenttään valitsemalla **Kopioi URL-perusosoite**. |
+| Todistus                    | Valitse aiemmin määritetty Key Vault -varmenne. |
+| Verkkosovellus                | Valitse aiemmin määritetty Key Vault -varmenne. |
+| Pyynnön tyyppi – XML        | Valitse asetukseksi **Kyllä**, jos vastaustyyppi on XML. |
+| Pyyntömenetelmä                 | Määritä pyyntömenetelmä. HTTP määrittää pyyntömenetelmäjoukon, joka ilmaisee tietylle resurssille suoritettavan toiminnon. Pyyntömenetelmä voi olla **GET**, **POST** tai jokin muu HTTP-menetelmä. |
+| Pyynnön otsikot                | Määritä pyynnön otsikot. Pyynnön otsikko on HTTP-otsikko, jota voidaan käyttää HTTP-pyynnössä mutta joka ei liity sanoman sisältöön. |
+| Hyväksyntä                         | Määritä verkkopyynnön **Hyväksy**-ominaisuus. |
+| Hyväksy koodaus                | Määritä **koodauksen hyväksymisen** arvo. Koodauksen hyväksymispyynnön HTTP-otsikko ilmaisee sisällön koodauksen asiakasohjelman ymmärtämällä tavalla. Tämä sisältökoodaus on yleensä pakkausalgoritmi. |
+| Sisältötyyppi                   | Määritä sisältötyyppi. Sisältötyyppiyksikön HTTP-otsikko ilmaisee resurssin mediatyypin. |
+| Onnistuneet vastauskoodit       | Määritä HTTP-tilakoodi, joka ilmaisee pyynnön onnistumisen. |
+| Otsikoiden muodon yhdistämispyyntö | Valitse sähköisen raportin muoto, jolla muodostetaan verkkopyynnön otsikot. |
 
 ### <a name="message-processing-actions"></a>Sanoman käsittelytoiminnot
 
@@ -229,76 +231,76 @@ Seuraavissa taulukoissa käsitellään **Sanoman käsittelytoiminnot** -sivun ke
 
 #### <a name="general-fasttab"></a>Yleinen-pikavälilehti
 
-| Kenttä                   | kuvaus |
-|-------------------------|-------------|
-| Toimenpidetyyppi             | Valitse toiminnon tyyppi. Lisätietoja käytettävissä olevista asetuksista on kohdassa [Sanoman käsittelytoimintojen tyypit](#message-processing-action-types). |
-| Muodon määritys          | Valitse toiminnolle kutsuttava ER-muoto. Kenttä on käytettävissä vain **Sähköisen raportoinnin vienti**-, **Sähköisen raportoinnin tuonti**- ja **Sähköisen raportoinnin vientiviesti** -tyyppien toiminnoille. |
-| Muodon yhdistämisen URL-osoite | Valitse toiminnolle kutsuttava ER-muoto. Tämä kenttä on vain **Verkkopalvelu**-tyypin toimintojen käytettävissä. Sen avulla muodostetaan URL-osoitteen polku, joka lisätään valitulle verkkopalvelulle määritettyyn perusverkko-osoitteeseen. |
-| Sanoman nimiketyyppi       | Valitse toiminnon arvioitavien tietueiden tyyppi. Kenttä on käytettävissä **Sanoman nimikkeen suoritustaso**-, **Sähköisen raportoinnin vienti**- ja **Sähköisen raportoinnin tuonti** -tyyppien, **verkkopalvelun** sekä joiden muiden tyyppien toiminnoille. Jos tämä kenttä jätetään tyhjäksi, kaikki sanoman käsittelyä varten määritetyt sanoman nimiketyypit arvioidaan. |
-| Suoritettava luokka        | Valitse aiemmin luodut suoritettavan luokan asetukset. Tämä kenttä on käytettävissä vain **Sanoman nimikkeen suoritustaso**- ja **Sanoman suoritustaso** -tyyppien toiminnoissa. |
-| Tietueiden täyttötoiminto | Valitse aiemmin määritetty tietueiden täyttötoiminto. Tämä kenttä on käytettävissä vain **Täytä tietueet** -tyypin toiminnoilla. |
-| Internet-palvelu  | Valitse aiemmin määritetty verkkopalvelu. Tämä kenttä on käytettävissä vain **Verkkopalvelu** -tyypin toiminnoilla.  |
-| Tiedostonimi  | Määritä sen tiedoston nimi, jonka tuloksena on toiminto verkkopalvelun vastauksena tai raportin muodostamisena. Tämä kenttä on vain **Verkkopalvelu**- ja **Sähköisen raportoinnin vientiviesti** -tyypin toimintojen käytettävissä.   |
-| Näytä valintaikkuna  | Valitse tämä valintaruutu, jos valintaikkuna on näytettävä käyttäjälle ennen raportin muodostamista. Tämä kenttä on vain **Sähköisen raportoinnin vientiviesti** -tyypin toimintojen käytettävissä.   |
+| Kenttä                       | kuvaus |
+|-----------------------------|-------------|
+| Toimenpidetyyppi                 | Valitse toiminnon tyyppi. Lisätietoja käytettävissä olevista asetuksista on kohdassa [Sanoman käsittelytoimintojen tyypit](#message-processing-action-types). |
+| Muodon määritys              | Valitse toiminnolle kutsuttava ER-muoto. Kenttä on käytettävissä vain **Sähköisen raportoinnin vienti**-, **Sähköisen raportoinnin tuonti**- ja **Sähköisen raportoinnin vientiviesti** -tyyppien toiminnoille. |
+| Muodon yhdistämisen URL-osoite | Valitse toiminnolle kutsuttava ER-muoto. Tämä kenttä on käytettävissä vain **Verkkopalvelu** -tyypin toiminnoilla. Sen avulla muodostetaan URL-osoitteen polku, joka lisätään valitulle verkkopalvelimelle määritettyyn perusverkko-osoitteeseen. |
+| Sanoman nimiketyyppi           | Valitse toiminnon arvioitavien tietueiden tyyppi. Kenttä on käytettävissä **Sanoman nimikkeen suoritustaso**-, **Sähköisen raportoinnin vienti**-, **Sähköisen raportoinnin tuonti**- ja **Verkkopalvelu**-tyyppien sekä joiden muiden tyyppien toiminnoille. Jos tämä kenttä jätetään tyhjäksi, kaikki sanoman käsittelyä varten määritetyt sanoman nimiketyypit arvioidaan. |
+| Suoritettava luokka            | Valitse aiemmin luodut suoritettavan luokan asetukset. Tämä kenttä on käytettävissä vain **Sanoman nimikkeen suoritustaso**- ja **Sanoman suoritustaso** -tyyppien toiminnoissa. |
+| Tietueiden täyttötoiminto     | Valitse aiemmin määritetty tietueiden täyttötoiminto. Tämä kenttä on käytettävissä vain **Täytä tietueet** -tyypin toiminnoilla. |
+| Internet-palvelu                 | Valitse aiemmin määritetty verkkopalvelu. Tämä kenttä on käytettävissä vain **Verkkopalvelu** -tyypin toiminnoilla. |
+| Tiedostonimi                   | Määritä toiminnon tuloksena olevan tiedoston nimi. Tämä tiedosto voi olla verkkopalvelimen tai muodostetun raportin vastaus. Tämä kenttä on vain **Verkkopalvelu**- ja **Sähköisen raportoinnin vientiviesti** -tyypin toimintojen käytettävissä. |
+| Näytä valintaikkuna                 | Valitse asetukseksi **Kyllä**, jos valintaikkuna on näytettävä käyttäjille ennen raportin muodostamista. Tämä kenttä on vain **Sähköisen raportoinnin vientiviesti** -tyypin toimintojen käytettävissä. |
 
 ##### <a name="message-processing-action-types"></a>Sanoman käsittelytoimintotyypit
 
 Seuraavat vaihtoehdot ovat käytettävissä **Toimintotyyppi**-kentässä:
 
-- **Luo viesti** – Tämän tyypin avulla käyttäjille voidaan antaa mahdollisuus luoda sanomia manuaalisesti **Sähköinen sanoma** -sivulla. Tämän tyypin toiminnolle ei voi määrittää alkuperäistä tilaa.
-- **Täytä tietueet** – **Täytä tietueet** -toiminto on pitänyt määrittää aiemmin. Kun liität sen **Täytä tietueet** -tyypin toimintoon, se voidaan sisällyttää käsittelyyn. Oletuksena on tätä toimintotyyppiä käytetään joko sanoman käsittelyn ensimmäisenä toimintona (kuten yhtään sähköistä sanomaa ei ole luotu etukäteen) tai toimintoja, jolla sanoman nimikkeitä lisätään aiemmin luotu sanomaan (**Luo viesti** -tyypin toiminnolla). Tämän vuoksi tämän tyypin toiminnolle voidaan määrittää vain sanoman nimikkeiden tulostila. Alkuperäinen tila voidaan määrittää vain sanomalle.
-- **Sanoman suoritustaso** – tämän tyypin avulla voi määrittää suoritettavan luokan, joka on arvioitava sanomatasolla.
-- **Sanoman nimikkeen suoritustaso** – tämän tyypin avulla voi määrittää suoritettavan luokan, joka on arvioitava sanoman nimiketasolla.
-- **Sähköisen raportoinnin vienti** – tämän tyypin toiminnoilla voi luoda raportin, joka perustuu vietävään ER-määritykseen sanoman nimiketasolla.
-- **Sähköisen raportoinnin vientiviesti** – tämän tyypin toiminnoilla voi luoda raportin, joka perustuu vietävään ER-määritykseen sanomatasolla (jos sanomalla ei esimerkiksi ole yhtään sanoman nimikettä).
-- **Sähköisen raportoinnin tuonti** – tämän tyypin toiminnoilla voi luoda raportin, joka perustuu tuovaan ER-määritykseen.
-- **Viestitason käyttäjän käsittely** – Tämän tyypin toiminnoissa oletetaan, että käyttäjä tekee manuaalisia toimintoja. Käyttäjä voi esimerkiksi päivittää sanomien tilan.
-- **Käyttäjän käsittely** – Tämän tyypin toiminnoissa oletetaan, että käyttäjä tekee manuaalisen toiminnon. Käyttäjä voi esimerkiksi päivittää sanoman nimikkeiden tilan.
-- **Verkkopalvelu** – Tämän tyypin toiminnoilla muodostettu raportti lähetetään verkkopalveluun. Tätä toimintotyyppiä ei käytetä italialaisessa myynti- ja ostolaskujen tietoliikenteen raportoinnissa. **Verkkopalvelu**-tyypin toiminnoille voi määrittää **vahvistustekstin** **Sanoman käsittelytoiminnot** -sivun **Muut tiedot** -pikavälilehdessä. Tämä vahvistusteksti näytetään käyttäjälle ennen valitun verkkopalvelupyynnön käsittelemistä.
-- **Pyynnön vahvistus** – tällä tyypillä pyydetään vahvistus palvelimesta.
+- **Luo viesti** – Tämän toimintotyypin avulla käyttäjille voidaan antaa mahdollisuus luoda sanomia manuaalisesti **Sähköinen sanoma** -sivulla. Tämän tyypin toiminnolle ei voi määrittää alkuperäistä tilaa.
+- **Täytä tietueet** – **Täytä tietueet** -tyypin toiminto on pitänyt määrittää aiemmin. Kun liität tämän toimintotyypin tietueiden täyttötoimintoon, kyseinen toiminto voidaan sisällyttää käsittelyyn. Oletuksena on tätä toimintotyyppiä käytetään joko sanoman käsittelyn ensimmäisenä toimintona (kuten yhtään sähköistä sanomaa ei luotu etukäteen) tai toimintoa, joka lisää sanoman nimikkeitä aiemmin luotuun sanomaan (**Luo viesti** -tyypin toiminnolla). Tämän vuoksi tämän tyypin toiminnoille voidaan määrittää vain sanoman nimikkeiden tulostila. Alkuperäinen tila voidaan määrittää vain sanomille.
+- **Sanoman suoritustaso** – tämän toimintotyypin avulla voi määrittää suoritettavan luokan, joka on arvioitava sanomatasolla.
+- **Sanoman nimikkeen suoritustaso** – tämän toimintotyypin avulla voi määrittää suoritettavan luokan, joka on arvioitava sanoman nimiketasolla.
+- **Sähköisen raportoinnin vienti** – tämän toimintotyypin toiminnoilla voi luoda raportin, joka perustuu vietävään ER-määritykseen sanoman nimiketasolla.
+- **Sähköisen raportoinnin vientiviesti** – tämän toimintotyypin toiminnoilla voi luoda raportin, joka perustuu vietävään ER-määritykseen sanomatasolla (jos sanomalla ei esimerkiksi ole yhtään sanoman nimikettä).
+- **Sähköisen raportoinnin tuonti** – tämän toimintotyypin toiminnoilla voi luoda raportin, joka perustuu tuovaan ER-määritykseen.
+- **Viestitason käyttäjän käsittely** – Tämän toimintotyypin toiminnoissa oletetaan, että käyttäjä tekee manuaalisia toimintoja sanomatasolla. Käyttäjä voi esimerkiksi päivittää sanomien tilan.
+- **Käyttäjän käsittely** – Tämän toimintotyypin toiminnoissa oletetaan, että käyttäjä tekee manuaalisia toimintoja sanoman nimiketasolla. Käyttäjä voi esimerkiksi päivittää sanoman nimikkeiden tilan.
+- **Verkkopalvelu** – Tämän toimintotyypin toiminnoilla muodostettu raportti lähetetään verkkopalveluun. Tätä toimintotyyppiä ei käytetä italialaisessa myynti- ja ostolaskujen tietoliikenteen raportoinnissa. **Verkkopalvelu**-tyypin toiminnoille voi määrittää vahvistustekstin **Sanoman käsittelytoiminnot** -sivun **Muut tiedot** -pikavälilehdessä. Tämä vahvistusteksti näytetään käyttäjille ennen valittujen verkkopalvelupyyntöjen käsittelemistä.
+- **Pyynnön vahvistus** – tällä toimintotyypillä pyydetään vahvistus palvelimesta.
 
 #### <a name="initial-statuses-fasttab"></a>Alkuperäiset tilat -pikavälilehti
 
 > [!NOTE]
-> **Alkuperäiset tilat** -pikavälilehti ei ole käytettävissä toiminnoissa, joiden alkuperäinen tyyppi on **Luo viesti**.
+> **Alkuperäiset tilat** -pikavälilehti ei ole käytettävissä toiminnoissa, joiden alkuperäinen toimintotyyppi on **Luo viesti**.
 
-| Kenttä               | Kuvaus                                                                                         |
-|---------------------|-----------------------------------------------------------------------------------------------------|
+| Kenttä               | Kuvaus |
+|---------------------|-------------|
 | Sanoman nimikkeen tila | Valitse se sanoma nimikkeen tila, jonka perusteella valittu sanoman käsittelytoiminto on arvioitava. |
-| kuvaus         | Valitun sanoman nimikkeen tilan kuvaus.                                                  |
+| kuvaus         | Valitun sanoman nimikkeen tilan kuvaus. |
 
 #### <a name="result-statuses-fasttab"></a>Tulostilat-pikavälilehti
 
 | Kenttä               | kuvaus |
 |---------------------|-------------|
-| Sanoman tila      | Valitse ne sanoman tilat, joiden perusteella valittu sanoman käsittelytoiminto on arvioitava. Tämä kenttä on käytettävissä vain sanomatasolla arvioitavissa sanoman käsittelytoiminnoissa. Se on esimerkiksi käytettävissä **Sähköisen raportoinnin vienti**- ja **Sähköisen raportoinnin tuonti** -tyyppien toiminnoissa. Se ei ole käytettävissä **Käyttäjän käsittely**- ja **Sanoman nimikkeen suoritustaso** -tyyppien toiminnoissa. |
+| Sanoman tila      | Valitse ne sanoman tilat, joiden perusteella valittu sanoman käsittelytoiminto on arvioitava. Tämä kenttä on käytettävissä vain sanomatasolla arvioitavissa sanoman käsittelytoiminnoissa. Se on esimerkiksi käytettävissä **Sähköisen raportoinnin vienti**- ja **Sähköisen raportoinnin tuonti** -tyyppien toiminnoissa muttei **Käyttäjän käsittely**- ja **Sanoman nimikkeen suoritustaso** -tyyppien toiminnoissa. |
 | kuvaus         | Valitun sanoman tilan kuvaus. |
 | Vastaustyyppi       | Valitun sanoman tilan vastaustyyppi. |
 | Sanoman nimikkeen tila | Valitse tulostilat, joka on oltava käytettävissä, kun valittu sanoman käsittelytoiminto on arvioitu. Tämä kenttä on käytettävissä vain sanoman nimiketasolla arvioitavissa sanoman käsittelytoiminnoissa. Se on esimerkiksi käytettävissä **Käyttäjän käsittely**- ja **Sanoman nimikkeen suoritustaso** -tyyppien toiminnoissa. Sanomatasolla arvioitavissa sanoman käsittelytoiminnoissa tässä kentässä on se sanoman nimikkeen tila, joka määritettiin valitulle sanoman tilalle. |
 
-Seuraava taulukko ilmaisee, mitkä tilat on määritettävä kullekin toimintotyypille:
+Seuraavassa taulukossa on tulostilat, jotka on määritettävä erilaisille toiminto- ja vastaustyypeille.
 
-| Sähköisen sanoman toiminnon tyyppi tai vastaustyyppi  | Suoritettu onnistuneesti  | Liiketoiminnan virhe  | Tekninen virhe  | Käyttäjän määrittämä  | Peruuta   |
-|-------------------------------------------------|--------------|---------|-------|-----|-----------------|
-| Luo viesti                                  | X            |         |       |     |                 |
-| Sähköisen raportoinnin vienti                     | X            |         |       |     |                 |
-| Sähköisen raportoinnin tuonti                     |              |         |       |     |                 |
-| Internet-palvelu                                     | X            |         | X     |     |                 |
-| Käyttäjän käsittely                                 |              |         |       |     |                 |
-| Sanoman suoritustaso                         |              |         |       |     |                 |
-| Täytä tietueet                                |              |         |       |     |                 |
-| Sanoman nimikkeen suoritustaso                    |              |         |       |     |                 |
-| Pyynnön vahvistus                            | X            |  X      | X     |     |                 |
-| Sähköisen raportoinnin vientiviesti             | X            |         |       |     |                 |
-| Viestitason käyttäjän käsittely                   |              |         |       |     |                 |
+| Sähköisen sanoman toiminnon tyyppi tai vastaustyyppi | Suoritettu onnistuneesti | Liiketoiminnan virhe | Tekninen virhe | Käyttäjän määrittämä | Peruuta  |
+|----------------------------------------------|-----------------------|----------------|-----------------|--------------|--------|
+| Luo viesti                               | X                     |                |                 |              |        |
+| Sähköisen raportoinnin vienti                  | X                     |                |                 |              |        |
+| Sähköisen raportoinnin tuonti                  |                       |                |                 |              |        |
+| Internet-palvelu                                  | X                     |                | X               |              |        |
+| Käyttäjän käsittely                              |                       |                |                 |              |        |
+| Sanoman suoritustaso                      |                       |                |                 |              |        |
+| Täytä tietueet                             |                       |                |                 |              |        |
+| Sanoman nimikkeen suoritustaso                 |                       |                |                 |              |        |
+| Pyynnön vahvistus                         | X                     | X              | X               |              |        |
+| Sähköisen raportoinnin vientiviesti          | X                     |                |                 |              |        |
+| Viestitason käyttäjän käsittely                |                       |                |                 |              |        |
 
 ### <a name="electronic-message-processing"></a>Sähköisen sanoman käsittely
 
 Sähköinen sanoman käsittely on sähköisten sanomatoimintojen peruskäsite. Se koostaa sähköisen sanoman arvioitavat toiminnot. Toiminnot voidaan linkittää alkuperäinen tilan ja tulostilan kautta. **Käyttäjän käsittely** -tyypin toiminnot puolestaan voidaan aloittaa itsenäisesti. Voit valita **Sähköisen sanoman käsittely** -sivulla (**Vero** \> **Asetukset** \> **Sähköiset sanomat** \> **Sähköisen sanoman käsittely**) myös sanoma- tai sanomanimiketasolla tuettavia käsittelyn lisäkenttiä.
 
-**Toiminto**-pikavälilehdessä käsittelyyn voi lisätä esimääritettyjä toimintoja. Voit määrittää, suoritetaanko toiminto itsenäisesti vai onko käsittelyn aloitettava se. Voit määrittää, että vain käyttäjä voi käynnistää toiminnon, valitsemalla käsiteltävän toiminnon **Suorita erikseen** -valintaruudun. Poista **Suorita erikseen** -parametrin valinta, jos haluat, että käsittely käynnistää toiminnon, kun sanoman tai sanoman nimikkeiden tämän toiminnon tilaksi on määritetty alkuperäinen tila. **Käyttäjätoiminto**-tyypin toiminnon voi suorittaa vain erikseen. 
+**Toiminto**-pikavälilehdessä käsittelyyn voi lisätä esimääritettyjä toimintoja. Voit määrittää, suoritetaanko toiminto itsenäisesti vai onko käsittelyn aloitettava se. Voit määrittää toiminnon, jonka vain käyttäjä voi aloittaa käsittelyssä, valitsemalla kyseisen toiminnon **Suorita erikseen** -kentässä **Kyllä**. Jos toiminto on käynnistettävä käsittelemällä sanomat tai sanoman nimikkeet, joiden tilana on toiminnon alkuperäiseksi tilaksi määritetty tila, valitse **Suorita erikseen** -kentässä **Ei**. **Käyttäjätoiminto**-tyypin toiminnot on aina suoritettava erikseen.
 
-Joskus voi olla välttämätöntä koota useita toimintoja peräkkäin suoritettavaksi, vaikka niistä ensimmäinen on määritetty erikseen suoritettavaksi. Jos esimerkiksi edellytetään, että käyttäjän on käynnistettävä raportin muodostaminen, muodostettu raportti on kuitenkin lähetettävä heti verkkopalveluun ja verkkopalvelun vastauksen on heijastuttava järjestelmään. Voit käyttää tällaisessa tilanteessa **erottamaton järjestystä**. Valitse tätä varten toimintoruudun **Sähköisen sanoman käsittely** -sivun **Toiminto**-pikavälilehdessä **erottamattoman järjestyksen** painike, luo järjestys ja valitse se sitten niiden toimintojen **erottamattoman järjestyksen** sarakkeessa, jotka on aina suoritettava yhdessä. Tässä tapauksessa ensimmäinen toiminto voi määrittää **erilleen suoritettavaksi**, mutta muiden se ei ole mahdollista.
+Joskus useita toimintoja on koottava sarjaksi, vaikka ensimmäinen toiminto on määritetty erikseen suoritettavaksi. Esimerkiksi käyttäjän on käynnistettävä raportin muodostaminen, mutta muodostettu raportti on kuitenkin lähetettävä heti verkkopalveluun ja verkkopalvelun vastauksen on heijastuttava järjestelmään. Voit luoda tässä tapauksessa erottamattoman järjestyksen toiminnoille, jotka on aina suoritettava yhdessä. Valitse **Toiminto**-pikavälilehdessä ruudukon yläpuolella **Erottamattomat järjestykset** ja luo järjestys. Valitse sitten kaikkien yhdessä suoritettavien toimien kohdalla järjestys **Erottamattoman järjestys** -kentässä. Tässä tapauksessa **Suorita erikseen** -kentässä valitaan **Kyllä** järjestyksen ensimmäiselle toiminnolle, mutta kaikille muille toiminnoille valitaan **Ei**.
 
 **Sanoman nimikkeen lisäkentät** -pikavälilehdessä voi lisätä sanoman nimikkeisiin liittyviä esimääritettyjä lisäkenttiä. Lisäkenttiä on lisättävä jokaiselle sanoman nimiketyypille, johon kentät liittyvät.
 
@@ -308,7 +310,7 @@ Joskus voi olla välttämätöntä koota useita toimintoja peräkkäin suoritett
 
 **Erä**-pikavälilehdessä voi määrittää käsittelyn erähallinnassa tehtäväksi.
 
-## <a name="work-with-electronic-messages-functionality"></a>Sähköisten sanomatoimintojen käyttäminen
+## <a name="work-with-the-electronic-messages-functionality"></a>Sähköisten sanomatoimintojen käyttäminen
 
 Jos työskentelet sanomatasolla, kannattaa käyttää **Sähköiset sanomat** -sivua (**Vero** \> **Kyselyt ja raportit** \> **Sähköiset sanomat** \> **Sähköiset sanomat**). Jos työskentelet tietojen keräyksen (sanoman nimikkeen) tasolla, kannattaa käyttää **Sähköiset sanoman nimikkeet** -sivua (**Vero** \> **Kyselyt ja raportit** \> **Sähköiset sanomat** \> **Sähköiset sanoman nimikkeet**).
 
@@ -316,36 +318,36 @@ Jos työskentelet sanomatasolla, kannattaa käyttää **Sähköiset sanomat** -s
 
 **Sähköiset sanomat** -sivulla on näkyvissä roolisi perusteella käytettävissä oleva käsittely. Käyttöoikeusroolit liitetään käsittelyyn kyseisen käsittelyn määrityksissä. Sivulla näytetään kunkin käytettävissä olevan käsittelyn sähköiset sanomat ja niihin liittyvät tiedot.
 
-**Sanomat**-pikavälilehdessä näkyvät valitun käsittelyn sanomat. Valitun sanoman tilan ja esimääritetyn käsittelyn perusteella voit suorittaa joitakin toimintoja valitsemalla ruudukon yläpuolella olevia painikkeita:
+**Sanomat**-pikavälilehdessä näkyvät valitun käsittelyn sanomat. Valitun sanoman tilan ja esimääritetyn käsittelyn perusteella voit suorittaa joitakin toimintoja käyttämällä ruudukon yläpuolella olevia painikkeita:
 
 - **Uusi** – tämä painike on liitetty **Luo viesti** -tyypin toimintoihin.
 - **Poista** – tämä painike on käytettävissä, jos valitun sanoman nykyiseksi tilaksi on valittu **Salli poistaminen** -valintaruutu.
-- **Kerää tietoja** – tämä painike on liitetty **Täytä tietueet** -tyypin toimintoon.
+- **Kerää tietoja** – tämä painike on liitetty **Täytä tietueet** -tyypin toimintoihin.
 - **Luo raportti** – tämä painike on liitetty **Sähköisen raportoinnin vientiviesti** -tyypin toimintoihin.
 - **Lähetä raportti** – tämä painike on liitetty **Verkkopalvelu**-tyypin toimintoihin.
 - **Tuo vastaus** – tämä painike on liitetty **Sähköisen raportoinnin tuonti** -tyypin toimintoihin.
 - **Päivitä tila** – tämä painike on liitetty **Viestitason käyttäjän käsittely** -tyypin toimintoihin.
 - **Sanoman nimikkeet** – avaa **Sähköisen sanoman nimikkeet** -sivun.
 
-**Toimintoloki**-pikavälilehdessä on tietoja kaikista valitulle sanomalle suoritetuista toiminnoista. Jos toiminnon tuloksena on virhe, virheen tiedot on liitetty liittyvän toimintolokin riville. Valitse rivi ja napsauta sitten sivun oikeassa yläkulmassa **paperiliitinpainiketta**. Voit nyt tarkastella virheitä koskevia tietoja.
+**Toimintoloki**-pikavälilehdessä on tietoja kaikista valitulle sanomalle suoritetuista toiminnoista. Jos toiminto aiheutti virheen, virheen tiedot liitetään liittyvälle ruudukon riville. Voit tarkastella virheen tietoja valitsemalla ensin ruudukossa rivin ja sitten sivun oikeassa yläkulmassa **Liite**-painikkeen (paperiliitinsymboli).
 
 **Sanoman lisäkentät** -pikavälilehdessä on kaikki lisäkentät, jotka on määritetty sanomille käsittelyn määrityksissä. Myös kyseisten lisäkenttien arvot näkyvät tässä välilehdessä.
 
-**Sanoman nimikkeet** -pikavälilehdessä on kaikki valittuun sanomaan liittyvät sanoman nimikkeet. Seuraavaa toimintoa voi käyttää kussakin sanoman nimikkeessä kyseisen nimikkeen tilan mukaan:
+**Sanoman nimikkeet** -pikavälilehdessä on kaikki valittuun sanomaan liittyvät sanoman nimikkeet. Valitun sanoman nimikkeen tilan perusteella voit suorittaa joitakin toimintoja käyttämällä ruudukon yläpuolella olevia painikkeita:
 
 - **Poista** – tämä painike on käytettävissä, jos valitun sanoman nimikkeen nykyiseksi tilaksi on valittu **Salli poistaminen** -valintaruutu.
 - **Päivitä tila** – tämä painike on liitetty **Käyttäjän käsittely** -tyypin toimintoihin.
-- **Alkuperäinen tiedosto** – käyttäjä voi avata tällä painikkeella valitun sanoman alkuperäisen tiedoston.
+- **Alkuperäinen tiedosto** – Avaa sivun, jossa näkyy valitun sanoman nimikkeen alkuperäinen tiedosto.
 
-Voit tarkastella kaikkia valitun viestin liitteitä. Nämä liitteet ovat jo luotuja ja vastaanotettuja raportteja. Valitse sanoma, jonka liitteitä haluat tarkastella. Valitse sitten **Liite**-painike toimintoruudussa.
+Kaikki sanomaan liittyvät muodostetut ja vastaanotetut raportit on liitettynä kyseiseen sanomaan. Voit tarkastella sanomaan liittyviä liitteitä valitsemalla ensin sanoman ja sitten sivun oikeassa yläkulmassa **Liite**-painikkeen (paperiliitinsymboli).
 
 ![Liitepainike](media/attachment-icon.png)
 
-**Liitteet**-sivulla on kaikki sanomaan liittyvät liitteet. Voit tarkastella tiedostoa valitsemalla sen vasemmalla olevasta luettelosta ja valitsemalla sitten **Avaa** toimintoruudussa.
+**Liitteet**-sivulla on kaikki valittuun sanomaan liittyvät liitteet. Voit tarkastella tiedostoa valitsemalla sen vasemmalla olevasta luettelosta ja valitsemalla sitten **Avaa** toimintoruudussa.
 
 ![Avaa-painike](media/open-button.png)
 
-Voit tarkastella tiettyyn sanomassa aiemmin suoritettuun toimintoon liittyviä liitteitä valitsemalla ensin sanoman **Sähköiset sanomat** -sivulla ja sitten toiminnon **Toimintoloki**-pikavälilehdessä. Valitse sitten **Liite**-painike toimintoruudussa.
+Voit tarkastella myös tiettyyn sanomassa aiemmin suoritettuun toimintoon liittyvät liitteet. Valitse sanoma **Sähköiset sanomat** -sivun **Sanomat**-pikavälilehdessä. Valitse sitten toiminto **Toimintoloki**-pikavälilehdessä ja lopuksi **Liite**-painike sivun oikeassa yläkulmassa.
 
 Voit lisäksi suorittaa koko käsittelyn tai vain tietyn toiminnon valitsemalla **Suorita käsittely** toimintoruudussa.
 
@@ -400,7 +402,7 @@ Seuraavassa taulukossa käsitellään **Sanoman nimikkeet** -välilehden kentti�
 </tr>
 <tr>
 <td>Tilinumero</td>
-<td>Asiakkaan tai toimittajan tilinumero (tai muu kentän arvo sen kentän perusteella, joka määritettiin <strong>Täytä tietueet</strong> -toiminnossa). Tämä kenttä voidaan täyttää automaattisesti vain, kun lasku on lisätty Sanoman nimikkeet -taulukkoon.</td>
+<td>Asiakkaan tai toimittajan tilinumero (tai muu kentän arvo sen kentän perusteella, joka määritettiin tietueiden täyttötoiminnossa). Tämä kenttä voidaan täyttää automaattisesti vain, kun lasku on lisätty Sanoman nimikkeet -taulukkoon.</td>
 </tr>
 <tr>
 <td>Viesti</td>
@@ -421,7 +423,7 @@ Seuraavassa taulukossa käsitellään **Sanoman nimikkeet** -välilehden kentti�
 
 #### <a name="run-processing"></a>Suorita käsittely
 
-Suorita sanoman nimikkeiden käsittely valitsemalla toimintaruudussa **Suorita käsittely**. Voit suorittaa tietyn toiminnon valitsemalla **Suorita käsittely** -valintaikkunan **Valitse toiminto** -asetukseksi **Kyllä** ja valitsemalla sitten toiminnon. Voit suorittaa koko käsittelyn jättämällä **Suorita toiminto** -asetukseksi **Ei**.
+Suorita sanoman nimikkeiden käsittely valitsemalla toimintaruudussa **Suorita käsittely**. Voit suorittaa tietyn toiminnon valitsemalla **Suorita käsittely** -valintaikkunan **Valitse toiminto** -asetukseksi **Kyllä** ja valitsemalla sitten toiminnon. Voit suorittaa koko käsittelyn jättämällä **Valitse toiminto** -asetukseksi **Ei**.
 
 #### <a name="generate-report"></a>Luo raportti
 
@@ -429,13 +431,13 @@ Luo raportti valitsemalla toimintoruudussa **Luo raportti**. Tämä painike on l
 
 #### <a name="update-status"></a>Päivitä tila
 
-Päivät sanoman nimikkeiden tila valitsemalla toimintoruudussa **Päivitä tila**. Valitse päivitettävät sanoman nimikkeet **Päivitä tila** -valintaikkunan **Sisällytettävät tietueet** -pikavälilehdessä. Varmista, että määrität valintaehdot oikein, koska sanoman nimikkeiden tilat päivitetään näiden ehtojen, valitun toiminnon alkuperäisen tilan ja määritetyn **Uusi tila** -arvon mukaisesti. Kun tilan päivitys on valmis, juuri päivitettyjä nimikkeitä on vaikea selvittää. Tämän vuoksi tilapäivitysten peruuttaminen on hankalaa.
+Päivät sanoman nimikkeiden tila valitsemalla toimintoruudussa **Päivitä tila**. Valitse päivitettävät sanoman nimikkeet **Päivitä tila** -valintaikkunan **Sisällytettävät tietueet** -pikavälilehdessä. Varmista, että määrität valintaehdot oikein, koska sanoman nimikkeiden tilat päivitetään näiden ehtojen, valitun toiminnon alkuperäisen tilan ja määritetyn **Uusi tila** -arvon mukaisesti. Kun tilan päivitys on valmis, päivitettyjä nimikkeitä on vaikea selvittää. Tämän vuoksi tilapäivityksen peruuttaminen on hankalaa.
 
 #### <a name="electronic-messages"></a>Sähköiset sanomat
 
-Voit tarkastella valittuun sanoman nimikkeeseen liittyvä sähköistä sanomaa valitsemalla toimintoruudussa **Sähköinen sanoma**.
+Voit tarkastella valittuun sanoman nimikkeeseen liittyvä sähköistä sanomaa valitsemalla toimintoruudussa **Sähköiset sanomat**.
 
-Voit tarkastella myös kaikkia sanoman nimikkeen tiedostoja. Valitse sanoman **Sanoma**-kenttä tai valitse toimintoruudussa **Sähköinen sanoma**. Valitse **Sähköinen sanoma** -sivulla tarkasteltavan sanoman raportti ja valitse sitten toimintoruudussa **Liite**-painike.
+Voit myös tarkastella kaikkia tiettyyn sanoman nimikkeeseen liittyviä tiedostoja. Valitse sanoman nimikkeen **Sanoma**-kenttä tai valitse toimintoruudussa **Sähköiset sanomat**. Valitse sitten **Sähköiset sanomat** -sivulla sanoma, jonka tiedostoja tarkastellaan, valitsemalla ensin sanoma ja sitten sivun oikeassa yläkulmassa **Liite**-painike (paperiliitinsymboli).
 
 ![Liitepainike](media/attachment-icon.png)
 
@@ -447,21 +449,17 @@ Voit tarkastella myös kaikkia sanoman nimikkeen tiedostoja. Valitse sanoman **S
 
 Avaa valitun sanoman nimikkeen alkuperäinen tiedosto valitsemalla toimintoruudussa **Alkuperäinen tiedosto**.
 
-## <a name="example"></a>Esimerkki
+## <a name="example-set-up-and-run-processing-to-call-a-simple-er-exporting-format-to-generate-an-excel-report"></a>Esimerkki: Excel-raportin luovan yksinkertaisen ER-vientimuodon kutsuvan käsittelyn määrittäminen ja suorittaminen
 
-Kun olet luonut ER-muodon, yhdistänyt sen tietolähteisiin ja viimeistellyt sen, voit suorittaa sen **Sähköinen raportointi** -työtilassa. Voit tallentaa luotavan raportin paikallisesti.
+Kun olet luonut ER-muodon, yhdistänyt sen tietolähteisiin ja viimeistellyt sen, voit suorittaa sen **Sähköinen raportointi** -työtilassa. Raportti luodaan, ja voit tallentaa sen paikallisesti.
 
 Seuraavien raportointiprosessin ominaisuuksia hallintaa varten on määritettävä sähköinen sanomakäsittely:
 
 - Raportin luonutta henkilöä koskevien tietojen kirjaaminen.
-- Raportin luontiajankohdan kirjaaminen.
+- Raportin luontiajankohtaa koskevien tietojen kirjaaminen.
 - Edellisinä kausina luotujen raporttien tallentaminen.
 
-Tämä osan esimerkki näyttää, miten sähköiset sanomatoiminnot voidaan määrittää muodostamaan raportointiprosessi.
-
-### <a name="set-up-and-run-processing-to-call-a-simple-er-exporting-format-to-generate-an-excel-report"></a>Excel-raportin luovan yksinkertaisen ER-vientimuodon kutsuvan käsittelyn määrittäminen ja suorittaminen
-
-Tässä osassa on esimerkki tavasta, jolla sähköiset sanomat voidaan määrittää luomaan Exceliin vievään ER-muotoon perustuva raportti. Tässä esimerkissä Exceliin vievä ER-muoto on oltava luotuna, tietolähteisiin yhdistettynä ja viimeisteltynä. Numerosarja on oltava määritetty sähköisille sanomille.
+Tässä osassa on esimerkki tavasta, jolla sähköiset sanomat voidaan määrittää luomaan Exceliin vievään ER-muotoon perustuva raportti. Jos haluat toimia tämän esimerkin mukaisesti, Exceliin vievän ER-muodon on oltava luotuna, tietolähteisiin yhdistettynä ja viimeisteltynä. Lisäksi numerosarja on oltava jo määritetty sähköisille sanomille.
 
 Kun muodostat käsittelyn, määritettävät käsittelyn toiminnot ja tilat kannattaa määrittää ensin. Seuraava kuva osoittaa, miltä käsittely näyttää tässä esimerkissä.
 
@@ -518,11 +516,11 @@ Tässä esimerkissä luodaan seuraavat toiminnot:
 
     - Valitse **Yleinen**-pikavälilehden **Toimintotyyppi**-kentässä **Viestitason käyttäjän käsittely**.
     - Valitse **Alkuperäiset tilat**-pikavälilehden **Sanoman tila** -kentässä **Luotu**.
-    - Valitse **Tulostilat**-pikavälilehden **Sanoman tila** -kentässä **Valmisteltu** tai (ja) **Uusi**. Anna **Vastaustyyppi**-kentässä **Suoritettu onnistuneesti**.
+    - Lisää **Tulostilat**-pikavälilehdessä erillinen rivi kummallekin sanoman tilalle (**Valmisteltu** ja **Uusi**). Valitse kummankin rivin **Vastaustyyppi**-kentässä **Suoritettu onnistuneesti**.
 
 #### <a name="electronic-message-processing"></a>Sähköisen sanoman käsittely
 
-Tässä esimerkissä kaikki toiminnot on määritettävä erikseen suoritettaviksi. Oletuksena on, että käyttäjän on käynnistettävä jokainen toiminto.
+Tässä esimerkissä kaikki toiminnot on määritettävä erikseen suoritettaviksi. Oletuksena on, että käyttäjä käynnistää jokaisen toiminnon.
 
 1. Valitse **Vero \> Asetukset \> Sähköiset sanomat \> Sähköisen sanoman käsittely**.
 2. Lisää käsittelyn tietue sekä kaikki aiemmin määritetyt toiminnot ja lisäkenttä.
@@ -534,8 +532,8 @@ Tässä esimerkissä kaikki toiminnot on määritettävä erikseen suoritettavik
 
 **Toimintoloki**-pikavälilehden ruudukko täytetään automaattisesti kaikkien sanomassa suoritettujen toimintojen lokilla.
 
-Voit nyt joko poistaa tai päivittää sanoman tilan. Päivitä sanoman tila valitsemalla **Päivitä tila** ja sitten **Uusi tila** -kentässä **Valmisteltu**. Valitse sitten **OK**.
+Voit nyt joko poistaa tai päivittää sanoman tilan. Päivitä sanoman tila valitsemalla **Päivitä tila**. Valitse **Uusi tila** -kentässä ensin **Valmisteltu** ja sitten **OK**.
 
 ![Päivitä sanoman tila](media/update-status.png)
 
-Sanoman tilaksi päivitetään **Valmisteltu**, ja voit nyt luoda raportin valitsemalla **Luo raportti**. Raportti luodaan sekä sanoman tila ja toimintoloki päivitetään. Voit tarkastella luotu raporttia valitsemalla toimintoruudussa **Liite**.
+Sanoman tilaksi päivitetään **Valmisteltu**, ja voit nyt luoda raportin valitsemalla **Luo raportti**. Raportti luodaan sekä sanoman tila ja toimintoloki päivitetään. Voit tarkastella muodostettu raporttia valitsemalla sivun oikeassa yläkulmassa **Liite**-painikkeen (paperiliitinsymboli).
