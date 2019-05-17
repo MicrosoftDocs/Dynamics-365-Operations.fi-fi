@@ -18,129 +18,129 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f1acf2bade2bb279a35fdf4689bbbcc49e64101f
-ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
+ms.openlocfilehash: 39187cf900624c5fbc7e811f0ee9632355688ba4
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403282"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1507470"
 ---
-# <a name="accounts-payable-home-page"></a><span data-ttu-id="f3c3b-103">Ostoreskontran aloitussivu</span><span class="sxs-lookup"><span data-stu-id="f3c3b-103">Accounts payable home page</span></span>
+# <a name="accounts-payable-home-page"></a><span data-ttu-id="6d58b-103">Ostoreskontran aloitussivu</span><span class="sxs-lookup"><span data-stu-id="6d58b-103">Accounts payable home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f3c3b-104">Tässä aiheessa on yleiskuvaus ostoreskontrasta.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-104">This topic provides an overview of Accounts payable.</span></span> 
+<span data-ttu-id="6d58b-104">Tässä aiheessa on yleiskuvaus ostoreskontrasta.</span><span class="sxs-lookup"><span data-stu-id="6d58b-104">This topic provides an overview of Accounts payable.</span></span> 
 
-<span data-ttu-id="f3c3b-105">Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-105">You can enter vendor invoices manually or receive them electronically through a data entity.</span></span> <span data-ttu-id="f3c3b-106">Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-106">After the invoices are entered or received, you can review and approve the invoices by using an invoice approval journal or the **Vendor invoice** page.</span></span> <span data-ttu-id="f3c3b-107">Voit automatisoida tarkistusprosessin laskun täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla, jolloin tietyt ehdot täyttävät laskut hyväksytään automaattisesti ja muut laskut merkitään valtuutetun käyttäjän tarkistettavaksi.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-107">You can use invoice matching, vendor invoice policies, and workflow to automate the review process so that invoices that meet certain criteria are automatically approved, and the remaining invoices are flagged for review by an authorized user.</span></span>
+<span data-ttu-id="6d58b-105">Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta.</span><span class="sxs-lookup"><span data-stu-id="6d58b-105">You can enter vendor invoices manually or receive them electronically through a data entity.</span></span> <span data-ttu-id="6d58b-106">Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="6d58b-106">After the invoices are entered or received, you can review and approve the invoices by using an invoice approval journal or the **Vendor invoice** page.</span></span> <span data-ttu-id="6d58b-107">Voit automatisoida tarkistusprosessin laskun täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla, jolloin tietyt ehdot täyttävät laskut hyväksytään automaattisesti ja muut laskut merkitään valtuutetun käyttäjän tarkistettavaksi.</span><span class="sxs-lookup"><span data-stu-id="6d58b-107">You can use invoice matching, vendor invoice policies, and workflow to automate the review process so that invoices that meet certain criteria are automatically approved, and the remaining invoices are flagged for review by an authorized user.</span></span>
 
-<span data-ttu-id="f3c3b-108">**Liiketoimintaprosessit**</span><span class="sxs-lookup"><span data-stu-id="f3c3b-108">**Business processes**</span></span>
+<span data-ttu-id="6d58b-108">**Liiketoimintaprosessit**</span><span class="sxs-lookup"><span data-stu-id="6d58b-108">**Business processes**</span></span>
 
-<span data-ttu-id="f3c3b-109">[![Liiketoimintaprosessi](./media/AP-process.PNG)](./media/AP-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="f3c3b-109">[![Business process](./media/AP-process.PNG)](./media/AP-process.PNG)</span></span>
+<span data-ttu-id="6d58b-109">[![Liiketoimintaprosessi](./media/AP-process.PNG)](./media/AP-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="6d58b-109">[![Business process](./media/AP-process.PNG)](./media/AP-process.PNG)</span></span>
 
-## <a name="set-up-accounts-payable"></a><span data-ttu-id="f3c3b-110">Ostoreskontran asetukset</span><span class="sxs-lookup"><span data-stu-id="f3c3b-110">Set up Accounts payable</span></span>
+## <a name="set-up-accounts-payable"></a><span data-ttu-id="6d58b-110">Ostoreskontran asetukset</span><span class="sxs-lookup"><span data-stu-id="6d58b-110">Set up Accounts payable</span></span>
 
-<span data-ttu-id="f3c3b-111">Määritä toimittajaryhmiä, toimittajia, kirjausprofiileja, erilaisia maksuvaihtoehtoja sekä toimittajia koskevia parametreja, hintoja, toimituksia ja kohteita, velkakirjoja ja muun tyyppisiä ostoreskontran tietoja.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-111">Set up vendor groups, vendors, posting profiles, various payment options, and parameters regarding vendors, charges, deliveries and destinations, promissory notes, and other types of Accounts payable information.</span></span> 
+<span data-ttu-id="6d58b-111">Määritä toimittajaryhmiä, toimittajia, kirjausprofiileja, erilaisia maksuvaihtoehtoja sekä toimittajia koskevia parametreja, hintoja, toimituksia ja kohteita, velkakirjoja ja muun tyyppisiä ostoreskontran tietoja.</span><span class="sxs-lookup"><span data-stu-id="6d58b-111">Set up vendor groups, vendors, posting profiles, various payment options, and parameters regarding vendors, charges, deliveries and destinations, promissory notes, and other types of Accounts payable information.</span></span> 
 
-[<span data-ttu-id="f3c3b-112">Ostoreskontran määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f3c3b-112">Configure Accounts payable</span></span>](accounts-payable-overview.md)
+[<span data-ttu-id="6d58b-112">Ostoreskontran määrittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-112">Configure Accounts payable</span></span>](accounts-payable-overview.md)
 
-[<span data-ttu-id="f3c3b-113">Toimittajan laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit</span><span class="sxs-lookup"><span data-stu-id="f3c3b-113">Accounting distributions and subledger journal entries for vendor invoices</span></span>](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
+[<span data-ttu-id="6d58b-113">Toimittajan laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit</span><span class="sxs-lookup"><span data-stu-id="6d58b-113">Accounting distributions and subledger journal entries for vendor invoices</span></span>](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
-[<span data-ttu-id="f3c3b-114">Ulkomaanvaluutan uudelleenarvostus osto- ja myyntireskontrassa</span><span class="sxs-lookup"><span data-stu-id="f3c3b-114">Foreign currency revaluation for Accounts payable and Accounts receivable</span></span>](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
+[<span data-ttu-id="6d58b-114">Ulkomaanvaluutan uudelleenarvostus osto- ja myyntireskontrassa</span><span class="sxs-lookup"><span data-stu-id="6d58b-114">Foreign currency revaluation for Accounts payable and Accounts receivable</span></span>](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
 
-## <a name="configure-vendor-invoices"></a><span data-ttu-id="f3c3b-115">Toimittajan laskujen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f3c3b-115">Configure vendor invoices</span></span>
+## <a name="configure-vendor-invoices"></a><span data-ttu-id="6d58b-115">Toimittajan laskujen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-115">Configure vendor invoices</span></span>
 
-<span data-ttu-id="f3c3b-116">Ostoreskontran avulla voit tarkastella laskuja ja toimittajille suoritettavia maksuja.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-116">Use Accounts payable to track invoices and outgoing expenditures to vendors.</span></span>
+<span data-ttu-id="6d58b-116">Ostoreskontran avulla voit tarkastella laskuja ja toimittajille suoritettavia maksuja.</span><span class="sxs-lookup"><span data-stu-id="6d58b-116">Use Accounts payable to track invoices and outgoing expenditures to vendors.</span></span>
 
-[<span data-ttu-id="f3c3b-117">Ostoreskontran laskujen täsmäytys</span><span class="sxs-lookup"><span data-stu-id="f3c3b-117">Accounts payable invoice matching</span></span>](accounts-payable-invoice-matching.md)
+[<span data-ttu-id="6d58b-117">Ostoreskontran laskujen täsmäytys</span><span class="sxs-lookup"><span data-stu-id="6d58b-117">Accounts payable invoice matching</span></span>](accounts-payable-invoice-matching.md)
 
-[<span data-ttu-id="f3c3b-118">Toimittajan kirjausprofiilit</span><span class="sxs-lookup"><span data-stu-id="f3c3b-118">Vendor posting profiles</span></span>](vendor-posting-profiles.md)
+[<span data-ttu-id="6d58b-118">Toimittajan kirjausprofiilit</span><span class="sxs-lookup"><span data-stu-id="6d58b-118">Vendor posting profiles</span></span>](vendor-posting-profiles.md)
 
-[<span data-ttu-id="f3c3b-119">Ostoreskontran laskujen täsmäytyksen vahvistuksen asetukset</span><span class="sxs-lookup"><span data-stu-id="f3c3b-119">Set up accounts payable invoice matching validation</span></span>](tasks/set-up-accounts-payable-invoice-matching-validation.md)
+[<span data-ttu-id="6d58b-119">Ostoreskontran laskujen täsmäytyksen vahvistuksen asetukset</span><span class="sxs-lookup"><span data-stu-id="6d58b-119">Set up accounts payable invoice matching validation</span></span>](tasks/set-up-accounts-payable-invoice-matching-validation.md)
 
-[<span data-ttu-id="f3c3b-120">Kolmisuuntaiset vastaavuuskäytännöt</span><span class="sxs-lookup"><span data-stu-id="f3c3b-120">Three-way matching policies</span></span>](three-way-matching-policies.md)
+[<span data-ttu-id="6d58b-120">Kolmisuuntaiset vastaavuuskäytännöt</span><span class="sxs-lookup"><span data-stu-id="6d58b-120">Three-way matching policies</span></span>](three-way-matching-policies.md)
 
-[<span data-ttu-id="f3c3b-121">Laskujen täsmäytys ja konsernin sisäiset ostotilaukset</span><span class="sxs-lookup"><span data-stu-id="f3c3b-121">Invoice matching and intercompany purchase orders</span></span>](invoice-matching-intercompany-purchase-orders.md)
+[<span data-ttu-id="6d58b-121">Laskujen täsmäytys ja konsernin sisäiset ostotilaukset</span><span class="sxs-lookup"><span data-stu-id="6d58b-121">Invoice matching and intercompany purchase orders</span></span>](invoice-matching-intercompany-purchase-orders.md)
 
-[<span data-ttu-id="f3c3b-122">Ristiriitojen selvittäminen laskusummien täsmäytyksen aikana</span><span class="sxs-lookup"><span data-stu-id="f3c3b-122">Resolve discrepancies during invoice totals matching</span></span>](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[<span data-ttu-id="6d58b-122">Ristiriitojen selvittäminen laskusummien täsmäytyksen aikana</span><span class="sxs-lookup"><span data-stu-id="6d58b-122">Resolve discrepancies during invoice totals matching</span></span>](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
-[<span data-ttu-id="f3c3b-123">Toimittajan laskujen ja laskujen hyväksynnän kirjauskansioiden oletusvastatilit</span><span class="sxs-lookup"><span data-stu-id="f3c3b-123">Default offset accounts for vendor invoice journals and invoice approval journals</span></span>](default-offset-accounts-vendor-invoice-journals.md)
+[<span data-ttu-id="6d58b-123">Toimittajan laskujen ja laskujen hyväksynnän kirjauskansioiden oletusvastatilit</span><span class="sxs-lookup"><span data-stu-id="6d58b-123">Default offset accounts for vendor invoice journals and invoice approval journals</span></span>](default-offset-accounts-vendor-invoice-journals.md)
 
-[<span data-ttu-id="f3c3b-124">Mobiililaskujen hyväksynnät</span><span class="sxs-lookup"><span data-stu-id="f3c3b-124">Mobile invoice approvals</span></span>](mobile-invoice-approvals.md)
+[<span data-ttu-id="6d58b-124">Mobiililaskujen hyväksynnät</span><span class="sxs-lookup"><span data-stu-id="6d58b-124">Mobile invoice approvals</span></span>](mobile-invoice-approvals.md)
 
-[<span data-ttu-id="f3c3b-125">Toimittajayhteistyön laskutustyötila</span><span class="sxs-lookup"><span data-stu-id="f3c3b-125">Vendor collaboration invoicing workspace</span></span>](vendor-portal-invoicing-workspace.md)
+[<span data-ttu-id="6d58b-125">Toimittajayhteistyön laskutustyötila</span><span class="sxs-lookup"><span data-stu-id="6d58b-125">Vendor collaboration invoicing workspace</span></span>](vendor-portal-invoicing-workspace.md)
 
-[<span data-ttu-id="f3c3b-126">Toimittajan laskuautomaatio</span><span class="sxs-lookup"><span data-stu-id="f3c3b-126">Vendor invoice automation</span></span>](vendor-invoice-automation.md)
+[<span data-ttu-id="6d58b-126">Toimittajan laskuautomaatio</span><span class="sxs-lookup"><span data-stu-id="6d58b-126">Vendor invoice automation</span></span>](vendor-invoice-automation.md)
 
-## <a name="configure-vendor-payments"></a><span data-ttu-id="f3c3b-127">Toimittajan maksujen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f3c3b-127">Configure vendor payments</span></span> 
+## <a name="configure-vendor-payments"></a><span data-ttu-id="6d58b-127">Toimittajan maksujen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-127">Configure vendor payments</span></span> 
 
-<span data-ttu-id="f3c3b-128">Määritä järjestelmässä määritetty maksutyyppi, kuten sekki, sähköinen maksu tai velkakirja, mille tahansa käyttäjän määrittämälle maksutavalle.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-128">Assign a system-defined payment type, such as check, electronic payment, or promissory note, to any user-defined method of payment.</span></span> <span data-ttu-id="f3c3b-129">Maksutyypit ovat valinnaisia, mutta niiden avulla on helppo tehdä sähköisten maksujen oikeellisuustarkistus ja määrittää nopeasti, mitä maksutyyppiä maksu käyttää.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-129">Payment types are optional, but they are useful when you validate electronic payments and want to be able to quickly determine which payment type a payment uses.</span></span> 
+<span data-ttu-id="6d58b-128">Määritä järjestelmässä määritetty maksutyyppi, kuten sekki, sähköinen maksu tai velkakirja, mille tahansa käyttäjän määrittämälle maksutavalle.</span><span class="sxs-lookup"><span data-stu-id="6d58b-128">Assign a system-defined payment type, such as check, electronic payment, or promissory note, to any user-defined method of payment.</span></span> <span data-ttu-id="6d58b-129">Maksutyypit ovat valinnaisia, mutta niiden avulla on helppo tehdä sähköisten maksujen oikeellisuustarkistus ja määrittää nopeasti, mitä maksutyyppiä maksu käyttää.</span><span class="sxs-lookup"><span data-stu-id="6d58b-129">Payment types are optional, but they are useful when you validate electronic payments and want to be able to quickly determine which payment type a payment uses.</span></span> 
 
-[<span data-ttu-id="f3c3b-130">Toimittajan maksujen työtila</span><span class="sxs-lookup"><span data-stu-id="f3c3b-130">Vendor payments workspace</span></span>](vendor-payments-workspace.md)
+[<span data-ttu-id="6d58b-130">Toimittajan maksujen työtila</span><span class="sxs-lookup"><span data-stu-id="6d58b-130">Vendor payments workspace</span></span>](vendor-payments-workspace.md)
 
-[<span data-ttu-id="f3c3b-131">Toimittajan maksulisien määritys</span><span class="sxs-lookup"><span data-stu-id="f3c3b-131">Define vendor payment fees</span></span>](tasks/define-vendor-payment-fees.md)
+[<span data-ttu-id="6d58b-131">Toimittajan maksulisien määritys</span><span class="sxs-lookup"><span data-stu-id="6d58b-131">Define vendor payment fees</span></span>](tasks/define-vendor-payment-fees.md)
 
-[<span data-ttu-id="f3c3b-132">Toimittajan maksuehtojen määritys</span><span class="sxs-lookup"><span data-stu-id="f3c3b-132">Define vendor payment terms</span></span>](tasks/define-vendor-payment-terms.md)
+[<span data-ttu-id="6d58b-132">Toimittajan maksuehtojen määritys</span><span class="sxs-lookup"><span data-stu-id="6d58b-132">Define vendor payment terms</span></span>](tasks/define-vendor-payment-terms.md)
 
-[<span data-ttu-id="f3c3b-133">Positive pay -yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="f3c3b-133">Positive pay overview</span></span>](positive-pay-overview.md)
+[<span data-ttu-id="6d58b-133">Positive pay -yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="6d58b-133">Positive pay overview</span></span>](positive-pay-overview.md)
 
-[<span data-ttu-id="f3c3b-134">Positive pay -tiedostojen asetukset ja luonti</span><span class="sxs-lookup"><span data-stu-id="f3c3b-134">Set up and generate positive pay files</span></span>](set-up-generate-positive-pay-files.md)
+[<span data-ttu-id="6d58b-134">Positive pay -tiedostojen asetukset ja luonti</span><span class="sxs-lookup"><span data-stu-id="6d58b-134">Set up and generate positive pay files</span></span>](set-up-generate-positive-pay-files.md)
 
-[<span data-ttu-id="f3c3b-135">Toimittajamaksujen luominen maksuehdotuksen avulla</span><span class="sxs-lookup"><span data-stu-id="f3c3b-135">Create vendor payments by using a payment proposal</span></span>](create-vendor-payments-payment-proposal.md)
+[<span data-ttu-id="6d58b-135">Toimittajamaksujen luominen maksuehdotuksen avulla</span><span class="sxs-lookup"><span data-stu-id="6d58b-135">Create vendor payments by using a payment proposal</span></span>](create-vendor-payments-payment-proposal.md)
 
-[<span data-ttu-id="f3c3b-136">Toimittajan maksut osasummalle</span><span class="sxs-lookup"><span data-stu-id="f3c3b-136">Vendor payments for a partial amount</span></span>](vendor-payments-partial-amount.md)
+[<span data-ttu-id="6d58b-136">Toimittajan maksut osasummalle</span><span class="sxs-lookup"><span data-stu-id="6d58b-136">Vendor payments for a partial amount</span></span>](vendor-payments-partial-amount.md)
 
-[<span data-ttu-id="f3c3b-137">Alennuksen käyttäminen, kun alennuksen summa on suurempi kuin toimittajan maksulle laskettu alennus</span><span class="sxs-lookup"><span data-stu-id="f3c3b-137">Take a discount that is more than the calculated discount for a vendor payment</span></span>](take-discount-more-calculated-discount-vendor-payment.md)
+[<span data-ttu-id="6d58b-137">Alennuksen käyttäminen, kun alennuksen summa on suurempi kuin toimittajan maksulle laskettu alennus</span><span class="sxs-lookup"><span data-stu-id="6d58b-137">Take a discount that is more than the calculated discount for a vendor payment</span></span>](take-discount-more-calculated-discount-vendor-payment.md)
 
-[<span data-ttu-id="f3c3b-138">Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella</span><span class="sxs-lookup"><span data-stu-id="f3c3b-138">Take a cash discount outside the cash discount period</span></span>](take-cash-discount-outside-cash-discount-timeframe.md)
+[<span data-ttu-id="6d58b-138">Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella</span><span class="sxs-lookup"><span data-stu-id="6d58b-138">Take a cash discount outside the cash discount period</span></span>](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[<span data-ttu-id="f3c3b-139">Toimittajan sekkien sähköinen raportointi</span><span class="sxs-lookup"><span data-stu-id="f3c3b-139">Electronic reporting for vendor checks</span></span>](electronic-reporting-sample-vendor-checks.md)
+[<span data-ttu-id="6d58b-139">Toimittajan sekkien sähköinen raportointi</span><span class="sxs-lookup"><span data-stu-id="6d58b-139">Electronic reporting for vendor checks</span></span>](electronic-reporting-sample-vendor-checks.md)
 
-[<span data-ttu-id="f3c3b-140">Käänteinen toimittajamaksu</span><span class="sxs-lookup"><span data-stu-id="f3c3b-140">Reverse a vendor payment</span></span>](reverse-vendor-payment.md)
+[<span data-ttu-id="6d58b-140">Käänteinen toimittajamaksu</span><span class="sxs-lookup"><span data-stu-id="6d58b-140">Reverse a vendor payment</span></span>](reverse-vendor-payment.md)
 
-[<span data-ttu-id="f3c3b-141">Ennakkomaksulaskut ja ennakkomaksujen yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="f3c3b-141">Prepayment invoices and prepayments overview</span></span>](prepayments-invoices-vs-prepayments.md)
+[<span data-ttu-id="6d58b-141">Ennakkomaksulaskut ja ennakkomaksujen yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="6d58b-141">Prepayment invoices and prepayments overview</span></span>](prepayments-invoices-vs-prepayments.md)
 
-[<span data-ttu-id="f3c3b-142">Ostoreskontran keskitetyt maksut</span><span class="sxs-lookup"><span data-stu-id="f3c3b-142">Centralized payments for Accounts payable</span></span>](centralized-payments-accounts-payable.md)
+[<span data-ttu-id="6d58b-142">Ostoreskontran keskitetyt maksut</span><span class="sxs-lookup"><span data-stu-id="6d58b-142">Centralized payments for Accounts payable</span></span>](centralized-payments-accounts-payable.md)
 
-## <a name="settlements"></a><span data-ttu-id="f3c3b-143">Tilitykset</span><span class="sxs-lookup"><span data-stu-id="f3c3b-143">Settlements</span></span>
+## <a name="settlements"></a><span data-ttu-id="6d58b-143">Tilitykset</span><span class="sxs-lookup"><span data-stu-id="6d58b-143">Settlements</span></span>
 
-<span data-ttu-id="f3c3b-144">Seuraavissa ohjeaiheissa on tietoa tilityksistä.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-144">The following topics provide information about settlements.</span></span> <span data-ttu-id="f3c3b-145">Tilitys tarkoittaa maksujen tilittämistä laskuihin.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-145">Settlement is the process of settling payments with invoices.</span></span> 
+<span data-ttu-id="6d58b-144">Seuraavissa ohjeaiheissa on tietoa tilityksistä.</span><span class="sxs-lookup"><span data-stu-id="6d58b-144">The following topics provide information about settlements.</span></span> <span data-ttu-id="6d58b-145">Tilitys tarkoittaa maksujen tilittämistä laskuihin.</span><span class="sxs-lookup"><span data-stu-id="6d58b-145">Settlement is the process of settling payments with invoices.</span></span> 
 
-[<span data-ttu-id="f3c3b-146">Tilityksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f3c3b-146">Configure settlement</span></span>](../cash-bank-management/configure-settlement.md)
+[<span data-ttu-id="6d58b-146">Tilityksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-146">Configure settlement</span></span>](../cash-bank-management/configure-settlement.md)
 
-[<span data-ttu-id="f3c3b-147">Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää</span><span class="sxs-lookup"><span data-stu-id="f3c3b-147">Settle a partial vendor payment before the discount date</span></span>](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[<span data-ttu-id="6d58b-147">Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää</span><span class="sxs-lookup"><span data-stu-id="6d58b-147">Settle a partial vendor payment before the discount date</span></span>](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
-[<span data-ttu-id="f3c3b-148">Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen</span><span class="sxs-lookup"><span data-stu-id="f3c3b-148">Settle a partial vendor payment that has discounts on vendor credit notes</span></span>](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+[<span data-ttu-id="6d58b-148">Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-148">Settle a partial vendor payment that has discounts on vendor credit notes</span></span>](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
-[<span data-ttu-id="f3c3b-149">Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen</span><span class="sxs-lookup"><span data-stu-id="f3c3b-149">Settle a partial vendor payment that has multiple discount periods</span></span>](settle-partial-vendor-payment-multiple-discount-periods.md)
+[<span data-ttu-id="6d58b-149">Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-149">Settle a partial vendor payment that has multiple discount periods</span></span>](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[<span data-ttu-id="f3c3b-150">Toimittajan osamaksun tai viimeisen maksun tilittäminen ennen alennusta</span><span class="sxs-lookup"><span data-stu-id="f3c3b-150">Settle a partial vendor payment or final payment before discount</span></span>](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[<span data-ttu-id="6d58b-150">Toimittajan osamaksun tai viimeisen maksun tilittäminen ennen alennusta</span><span class="sxs-lookup"><span data-stu-id="6d58b-150">Settle a partial vendor payment or final payment before discount</span></span>](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
-[<span data-ttu-id="f3c3b-151">Yksi tosite useille asiakas- tai toimittajatietueille</span><span class="sxs-lookup"><span data-stu-id="f3c3b-151">Single voucher with multiple customer or vendor records</span></span>](single-voucher-multiple-customer-vendor-records.md)
+[<span data-ttu-id="6d58b-151">Yksi tosite useille asiakas- tai toimittajatietueille</span><span class="sxs-lookup"><span data-stu-id="6d58b-151">Single voucher with multiple customer or vendor records</span></span>](single-voucher-multiple-customer-vendor-records.md)
 
 
 
-### <a name="additional-resources"></a><span data-ttu-id="f3c3b-152">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="f3c3b-152">Additional resources</span></span>
+### <a name="additional-resources"></a><span data-ttu-id="6d58b-152">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="6d58b-152">Additional resources</span></span>
 
-#### <a name="whats-new-and-in-development"></a><span data-ttu-id="f3c3b-153">Uudet ja kehitteillä olevat toiminnot</span><span class="sxs-lookup"><span data-stu-id="f3c3b-153">What's new and in development</span></span>
+#### <a name="whats-new-and-in-development"></a><span data-ttu-id="6d58b-153">Uudet ja kehitteillä olevat toiminnot</span><span class="sxs-lookup"><span data-stu-id="6d58b-153">What's new and in development</span></span>
 
-<span data-ttu-id="f3c3b-154">Siirry [Microsoft Dynamics 365:n julkaisutietoihin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä uudet suunnitteilla olevat toiminnot.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-154">Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned.</span></span> 
+<span data-ttu-id="6d58b-154">Siirry [Microsoft Dynamics 365:n julkaisutietoihin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä uudet suunnitteilla olevat toiminnot.</span><span class="sxs-lookup"><span data-stu-id="6d58b-154">Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned.</span></span> 
 
-#### <a name="blogs"></a><span data-ttu-id="f3c3b-155">Blogit</span><span class="sxs-lookup"><span data-stu-id="f3c3b-155">Blogs</span></span>
+#### <a name="blogs"></a><span data-ttu-id="6d58b-155">Blogit</span><span class="sxs-lookup"><span data-stu-id="6d58b-155">Blogs</span></span>
 
-<span data-ttu-id="f3c3b-156">[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-156">You can find opinions, news, and other information about Accounts payable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
+<span data-ttu-id="6d58b-156">[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.</span><span class="sxs-lookup"><span data-stu-id="6d58b-156">You can find opinions, news, and other information about Accounts payable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
 
-<span data-ttu-id="f3c3b-157">[Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-157">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
+<span data-ttu-id="6d58b-157">[Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.</span><span class="sxs-lookup"><span data-stu-id="6d58b-157">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
 
-#### <a name="community-blogs"></a><span data-ttu-id="f3c3b-158">Yhteisöblogit</span><span class="sxs-lookup"><span data-stu-id="f3c3b-158">Community blogs</span></span>
+#### <a name="community-blogs"></a><span data-ttu-id="6d58b-158">Yhteisöblogit</span><span class="sxs-lookup"><span data-stu-id="6d58b-158">Community blogs</span></span>
 
-[<span data-ttu-id="f3c3b-159">Ostovelkojen hallinta Dynamics 365 for Finance and Operations -sovelluksessa</span><span class="sxs-lookup"><span data-stu-id="f3c3b-159">How to manage payables in Dynamics 365 for Finance and Operations</span></span>](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+[<span data-ttu-id="6d58b-159">Ostovelkojen hallinta Dynamics 365 for Finance and Operations -sovelluksessa</span><span class="sxs-lookup"><span data-stu-id="6d58b-159">How to manage payables in Dynamics 365 for Finance and Operations</span></span>](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
-#### <a name="task-guides"></a><span data-ttu-id="f3c3b-160">Tehtäväoppaat</span><span class="sxs-lookup"><span data-stu-id="f3c3b-160">Task guides</span></span>
-<span data-ttu-id="f3c3b-161">Finance and Operationsin tehtäväoppaissa on lisäohjeita.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-161">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="f3c3b-162">Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-162">To access task guides, click the Help button on any page.</span></span>
+#### <a name="task-guides"></a><span data-ttu-id="6d58b-160">Tehtäväoppaat</span><span class="sxs-lookup"><span data-stu-id="6d58b-160">Task guides</span></span>
+<span data-ttu-id="6d58b-161">Finance and Operationsin tehtäväoppaissa on lisäohjeita.</span><span class="sxs-lookup"><span data-stu-id="6d58b-161">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="6d58b-162">Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.</span><span class="sxs-lookup"><span data-stu-id="6d58b-162">To access task guides, click the Help button on any page.</span></span>
 
-#### <a name="videos"></a><span data-ttu-id="f3c3b-163">Videot</span><span class="sxs-lookup"><span data-stu-id="f3c3b-163">Videos</span></span>
+#### <a name="videos"></a><span data-ttu-id="6d58b-163">Videot</span><span class="sxs-lookup"><span data-stu-id="6d58b-163">Videos</span></span>
 
-<span data-ttu-id="f3c3b-164">Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.</span><span class="sxs-lookup"><span data-stu-id="f3c3b-164">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
+<span data-ttu-id="6d58b-164">Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.</span><span class="sxs-lookup"><span data-stu-id="6d58b-164">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
 
 
 
