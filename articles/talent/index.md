@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.openlocfilehash: 39133474b4a66e53a5525e7c90216342a6f9ed34
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "859871"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517057"
 ---
 # <a name="welcome-to-dynamics-365-for-talent"></a>Tervetuloa Dynamics 365 for Talent -ohjelmaan
 
@@ -91,7 +91,7 @@ Voit auttaa työntekijöitä saavuttamaan uratavoitteensa samalla, kun toteutat 
 Henkilöstön kompensaatio voi koostua palkan ja bonusten lisäksi myös muodostetuista etupaketeista, joihin voi sisältyä sairausvakuutus- ja eläkepaketteja. Voit myös hallita etuja, kuten laina-ohjelmia, jossa yritys lainaa työntekijöilleen nimikkeitä, kuten tietokoneita ja puhelimia.
 
 -   [Etuohjelman hallinta](manage-benefit-program.md)
--   [Etukelpoisuuden käytännöt](benefit-eligibility-policies.md)
+-   [Etuuskelpoisuuden käytännöt](benefit-eligibility-policies.md)
 -   [Työntekijöille lainattujen nimikkeiden hallinta](loan-items.md)
 -   [Työntekijöiden etuuksien hallinta Dynamics 365 for Talentissa (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
