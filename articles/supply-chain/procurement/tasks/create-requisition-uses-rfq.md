@@ -17,90 +17,90 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 8a9418b526f992008086f10ce78e95cb682bc164
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "344981"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547396"
 ---
-# <a name="create-a-requisition-that-uses-an-rfq"></a><span data-ttu-id="5b824-103">Luo ehdotus, joka käyttää tarjouspyyntöä</span><span class="sxs-lookup"><span data-stu-id="5b824-103">Create a requisition that uses an RFQ</span></span>
+# <a name="create-a-requisition-that-uses-an-rfq"></a><span data-ttu-id="0cb6d-103">Luo ehdotus, joka käyttää tarjouspyyntöä</span><span class="sxs-lookup"><span data-stu-id="0cb6d-103">Create a requisition that uses an RFQ</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="5b824-104">Tässä oppaassa esitellään, miten hinta- ja toimittajatiedot lisätään ostoehdotukseen tarjouspyyntöprosessista.</span><span class="sxs-lookup"><span data-stu-id="5b824-104">This guide shows how to add price and vendor information to a purchase requisition from an RFQ process.</span></span> <span data-ttu-id="5b824-105">Tämän oppaan esimerkkiä voidaan käyttää USMF-yrityksen demotiedoilla, ja sinun on kirjauduttava järjestelmänvalvojana suorittaaksesi kaikki vaiheet.</span><span class="sxs-lookup"><span data-stu-id="5b824-105">The example shown in this guide can be used in the USMF demo data company, and you must be logged in as an Admin to complete all the steps.</span></span> <span data-ttu-id="5b824-106">Tässä oppaassa tehtävät kuuluvat yleensä hankintojen asiantuntijoille.</span><span class="sxs-lookup"><span data-stu-id="5b824-106">The tasks in this guide would typically be done by procurement professionals.</span></span>
+<span data-ttu-id="0cb6d-104">Tässä oppaassa esitellään, miten hinta- ja toimittajatiedot lisätään ostoehdotukseen tarjouspyyntöprosessista.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-104">This guide shows how to add price and vendor information to a purchase requisition from an RFQ process.</span></span> <span data-ttu-id="0cb6d-105">Tämän oppaan esimerkkiä voidaan käyttää USMF-yrityksen demotiedoilla, ja sinun on kirjauduttava järjestelmänvalvojana suorittaaksesi kaikki vaiheet.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-105">The example shown in this guide can be used in the USMF demo data company, and you must be logged in as an Admin to complete all the steps.</span></span> <span data-ttu-id="0cb6d-106">Tässä oppaassa tehtävät kuuluvat yleensä hankintojen asiantuntijoille.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-106">The tasks in this guide would typically be done by procurement professionals.</span></span>
 
 
-## <a name="create-a-requisition"></a><span data-ttu-id="5b824-107">Luo ehdotus</span><span class="sxs-lookup"><span data-stu-id="5b824-107">Create a requisition</span></span>
-1. <span data-ttu-id="5b824-108">Valitse Hankinta > Ostoehdotukset > Itse luodut ostoehdotukset.</span><span class="sxs-lookup"><span data-stu-id="5b824-108">Go to Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me.</span></span>
-2. <span data-ttu-id="5b824-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="5b824-109">Click New.</span></span>
-3. <span data-ttu-id="5b824-110">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="5b824-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="5b824-111">Kirjoita päivämäärä Vaadittu päivämäärä -kenttään.</span><span class="sxs-lookup"><span data-stu-id="5b824-111">In the Requested date field, enter a date.</span></span>
-5. <span data-ttu-id="5b824-112">Kirjoita päivämäärä Kirjauspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="5b824-112">In the Accounting date field, enter a date.</span></span>
-6. <span data-ttu-id="5b824-113">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="5b824-113">Click OK.</span></span>
-7. <span data-ttu-id="5b824-114">Anna tai valitse Syy-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="5b824-114">In the Reason field, enter or select a value.</span></span>
-8. <span data-ttu-id="5b824-115">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="5b824-115">Click Add line.</span></span>
-9. <span data-ttu-id="5b824-116">Valitse Hankintaluokka-kenttään puussa oleva luokka ja valitse sitten OK.</span><span class="sxs-lookup"><span data-stu-id="5b824-116">In the Procurement category field, select a category in the tree, and then click OK.</span></span>
-10. <span data-ttu-id="5b824-117">Kirjoita arvo Tuotteen nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="5b824-117">In the Product name field, type a value.</span></span>
-11. <span data-ttu-id="5b824-118">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="5b824-118">In the Quantity field, enter a number.</span></span>
-12. <span data-ttu-id="5b824-119">Syötä tai valitse arvo Yksikkö-kenttään.</span><span class="sxs-lookup"><span data-stu-id="5b824-119">In the Unit field, enter or select a value.</span></span>
-13. <span data-ttu-id="5b824-120">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="5b824-120">Click Save.</span></span>
-14. <span data-ttu-id="5b824-121">Avaa valintaikkuna valitsemalla Työnkulku.</span><span class="sxs-lookup"><span data-stu-id="5b824-121">Click Workflow to open the drop dialog.</span></span>
-15. <span data-ttu-id="5b824-122">Valitse Lähetä.</span><span class="sxs-lookup"><span data-stu-id="5b824-122">Click Submit.</span></span>
-16. <span data-ttu-id="5b824-123">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="5b824-123">Close the page.</span></span>
-17. <span data-ttu-id="5b824-124">Valitse Lähetä.</span><span class="sxs-lookup"><span data-stu-id="5b824-124">Click Submit.</span></span>
+## <a name="create-a-requisition"></a><span data-ttu-id="0cb6d-107">Luo ehdotus</span><span class="sxs-lookup"><span data-stu-id="0cb6d-107">Create a requisition</span></span>
+1. <span data-ttu-id="0cb6d-108">Valitse Hankinta > Ostoehdotukset > Itse luodut ostoehdotukset.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-108">Go to Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me.</span></span>
+2. <span data-ttu-id="0cb6d-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-109">Click New.</span></span>
+3. <span data-ttu-id="0cb6d-110">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="0cb6d-111">Kirjoita päivämäärä Vaadittu päivämäärä -kenttään.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-111">In the Requested date field, enter a date.</span></span>
+5. <span data-ttu-id="0cb6d-112">Kirjoita päivämäärä Kirjauspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-112">In the Accounting date field, enter a date.</span></span>
+6. <span data-ttu-id="0cb6d-113">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-113">Click OK.</span></span>
+7. <span data-ttu-id="0cb6d-114">Anna tai valitse Syy-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-114">In the Reason field, enter or select a value.</span></span>
+8. <span data-ttu-id="0cb6d-115">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-115">Click Add line.</span></span>
+9. <span data-ttu-id="0cb6d-116">Valitse Hankintaluokka-kenttään puussa oleva luokka ja valitse sitten OK.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-116">In the Procurement category field, select a category in the tree, and then click OK.</span></span>
+10. <span data-ttu-id="0cb6d-117">Kirjoita arvo Tuotteen nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-117">In the Product name field, type a value.</span></span>
+11. <span data-ttu-id="0cb6d-118">Kirjoita numero Määrä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-118">In the Quantity field, enter a number.</span></span>
+12. <span data-ttu-id="0cb6d-119">Syötä tai valitse arvo Yksikkö-kenttään.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-119">In the Unit field, enter or select a value.</span></span>
+13. <span data-ttu-id="0cb6d-120">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-120">Click Save.</span></span>
+14. <span data-ttu-id="0cb6d-121">Avaa valintaikkuna valitsemalla Työnkulku.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-121">Click Workflow to open the drop dialog.</span></span>
+15. <span data-ttu-id="0cb6d-122">Valitse Lähetä.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-122">Click Submit.</span></span>
+16. <span data-ttu-id="0cb6d-123">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-123">Close the page.</span></span>
+17. <span data-ttu-id="0cb6d-124">Valitse Lähetä.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-124">Click Submit.</span></span>
 
-## <a name="reassign-a-workflow-task"></a><span data-ttu-id="5b824-125">Määritä työnkulkutehtävä uudelleen</span><span class="sxs-lookup"><span data-stu-id="5b824-125">Reassign a workflow task</span></span>
-    * <span data-ttu-id="5b824-126">Seuraava tehtävä on luoda tarjouspyyntö toimittajien tuotetarjouksia varten.</span><span class="sxs-lookup"><span data-stu-id="5b824-126">The next task is to create an RFQ to get bids from vendors for the product.</span></span> <span data-ttu-id="5b824-127">USMF-esittelytiedoissa ostoehdotuksen työnkululle on määritetty sääntö, jos toimittajaa ei ole valittu tai rivin yksikköhinta on 0, tietylle työntekijälle määritetään tarjouspyynnön luomisen tehtävä.</span><span class="sxs-lookup"><span data-stu-id="5b824-127">In USMF demo data, the requisition workflow is set up with a rule so that if a vendor is not selected, or the unit price is 0 for a line, a task is assigned to a specific worker to create an RFQ.</span></span> <span data-ttu-id="5b824-128">Voit jatkaa tämän oppaan seuraamista delegoimalla kyseisen tehtävän toiselle käyttäjälle (itsellesi).</span><span class="sxs-lookup"><span data-stu-id="5b824-128">To continue with this guide, you need to re-assign that task to another user (yourself).</span></span> <span data-ttu-id="5b824-129">Voit tehdä tämän vain, jos olet kirjautunut sisään järjestelmänvalvojana</span><span class="sxs-lookup"><span data-stu-id="5b824-129">You can only do this if you are logged in as an Admin.</span></span>  
-1. <span data-ttu-id="5b824-130">Avaa valintaikkuna valitsemalla Työnkulku.</span><span class="sxs-lookup"><span data-stu-id="5b824-130">Click Workflow to open the drop dialog.</span></span>
-2. <span data-ttu-id="5b824-131">Valitse Näytä historia.</span><span class="sxs-lookup"><span data-stu-id="5b824-131">Click View history.</span></span>
-3. <span data-ttu-id="5b824-132">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="5b824-132">Refresh the page.</span></span>
-4. <span data-ttu-id="5b824-133">Laajenna Seurantatiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="5b824-133">Expand the Tracking details section.</span></span>
-5. <span data-ttu-id="5b824-134">Valitse puusta "rivi, joka alkaa 'Rivin työnkulku käynnistetty'".</span><span class="sxs-lookup"><span data-stu-id="5b824-134">In the tree, select 'the line that starts with “Line workflow activated on”'.</span></span>
-6. <span data-ttu-id="5b824-135">Valitse Näytä työnkulun tiedot.</span><span class="sxs-lookup"><span data-stu-id="5b824-135">Click View workflow details.</span></span>
-7. <span data-ttu-id="5b824-136">Laajenna Työnimikkeet-osa.</span><span class="sxs-lookup"><span data-stu-id="5b824-136">Expand the Work items section.</span></span>
-8. <span data-ttu-id="5b824-137">Valitse Määritä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="5b824-137">Click Reassign.</span></span>
-9. <span data-ttu-id="5b824-138">Valitse Järjestelmänvalvoja Käyttäjä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="5b824-138">In the User field, select Admin.</span></span>
-10. <span data-ttu-id="5b824-139">Valitse Määritä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="5b824-139">Click Reassign.</span></span>
-11. <span data-ttu-id="5b824-140">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="5b824-140">Close the page.</span></span>
-12. <span data-ttu-id="5b824-141">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="5b824-141">Close the page.</span></span>
+## <a name="reassign-a-workflow-task"></a><span data-ttu-id="0cb6d-125">Määritä työnkulkutehtävä uudelleen</span><span class="sxs-lookup"><span data-stu-id="0cb6d-125">Reassign a workflow task</span></span>
+    * <span data-ttu-id="0cb6d-126">Seuraava tehtävä on luoda tarjouspyyntö toimittajien tuotetarjouksia varten.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-126">The next task is to create an RFQ to get bids from vendors for the product.</span></span> <span data-ttu-id="0cb6d-127">USMF-esittelytiedoissa ostoehdotuksen työnkululle on määritetty sääntö, jos toimittajaa ei ole valittu tai rivin yksikköhinta on 0, tietylle työntekijälle määritetään tarjouspyynnön luomisen tehtävä.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-127">In USMF demo data, the requisition workflow is set up with a rule so that if a vendor is not selected, or the unit price is 0 for a line, a task is assigned to a specific worker to create an RFQ.</span></span> <span data-ttu-id="0cb6d-128">Voit jatkaa tämän oppaan seuraamista delegoimalla kyseisen tehtävän toiselle käyttäjälle (itsellesi).</span><span class="sxs-lookup"><span data-stu-id="0cb6d-128">To continue with this guide, you need to re-assign that task to another user (yourself).</span></span> <span data-ttu-id="0cb6d-129">Voit tehdä tämän vain, jos olet kirjautunut sisään järjestelmänvalvojana</span><span class="sxs-lookup"><span data-stu-id="0cb6d-129">You can only do this if you are logged in as an Admin.</span></span>  
+1. <span data-ttu-id="0cb6d-130">Avaa valintaikkuna valitsemalla Työnkulku.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-130">Click Workflow to open the drop dialog.</span></span>
+2. <span data-ttu-id="0cb6d-131">Valitse Näytä historia.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-131">Click View history.</span></span>
+3. <span data-ttu-id="0cb6d-132">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-132">Refresh the page.</span></span>
+4. <span data-ttu-id="0cb6d-133">Laajenna Seurantatiedot -osa.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-133">Expand the Tracking details section.</span></span>
+5. <span data-ttu-id="0cb6d-134">Valitse puusta "rivi, joka alkaa 'Rivin työnkulku käynnistetty'".</span><span class="sxs-lookup"><span data-stu-id="0cb6d-134">In the tree, select 'the line that starts with “Line workflow activated on”'.</span></span>
+6. <span data-ttu-id="0cb6d-135">Valitse Näytä työnkulun tiedot.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-135">Click View workflow details.</span></span>
+7. <span data-ttu-id="0cb6d-136">Laajenna Työnimikkeet-osa.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-136">Expand the Work items section.</span></span>
+8. <span data-ttu-id="0cb6d-137">Valitse Määritä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-137">Click Reassign.</span></span>
+9. <span data-ttu-id="0cb6d-138">Valitse Järjestelmänvalvoja Käyttäjä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-138">In the User field, select Admin.</span></span>
+10. <span data-ttu-id="0cb6d-139">Valitse Määritä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-139">Click Reassign.</span></span>
+11. <span data-ttu-id="0cb6d-140">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-140">Close the page.</span></span>
+12. <span data-ttu-id="0cb6d-141">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-141">Close the page.</span></span>
 
-## <a name="create-an-rfq"></a><span data-ttu-id="5b824-142">Luo tarjouspyyntö</span><span class="sxs-lookup"><span data-stu-id="5b824-142">Create an RFQ</span></span>
-1. <span data-ttu-id="5b824-143">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="5b824-143">Refresh the page.</span></span>
-2. <span data-ttu-id="5b824-144">Valitse Tarjouspyynnön vastaus.</span><span class="sxs-lookup"><span data-stu-id="5b824-144">Click Request for quotation.</span></span>
-3. <span data-ttu-id="5b824-145">Valitse Ostava yritys -kenttään USMF.</span><span class="sxs-lookup"><span data-stu-id="5b824-145">In the Buying legal entity field, select USMF.</span></span>
-    * <span data-ttu-id="5b824-146">Valitse sama yritys, joka on ehdotusrivillä.</span><span class="sxs-lookup"><span data-stu-id="5b824-146">You must select the same legal entity that’s on the requisition line.</span></span>  
-4. <span data-ttu-id="5b824-147">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="5b824-147">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="5b824-148">Jos ostoehdotuksessa on useita rivejä, valitse kaikki rivit, jotka haluat lisätä tarjouspyyntöön.</span><span class="sxs-lookup"><span data-stu-id="5b824-148">If you had multiple lines on your purchase requisition, select all the lines that you want to add to the RFQ.</span></span>  
-5. <span data-ttu-id="5b824-149">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="5b824-149">Click OK.</span></span>
-6. <span data-ttu-id="5b824-150">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="5b824-150">Refresh the page.</span></span>
-7. <span data-ttu-id="5b824-151">Avaa tietoruutu ja laajenna liittyvien asiakirjojen osa.</span><span class="sxs-lookup"><span data-stu-id="5b824-151">Open the FactBox and then expand the Related documents section.</span></span>
-    * <span data-ttu-id="5b824-152">Tietoruutu saattaa olla jo auki.</span><span class="sxs-lookup"><span data-stu-id="5b824-152">You may already have the FactBox open.</span></span> <span data-ttu-id="5b824-153">Paikanna nuolikuvake, joka on Rivit-/Otsikko-vaihtopainikkeen oikealla puolella.</span><span class="sxs-lookup"><span data-stu-id="5b824-153">Look for the icon with an arrow on it, to the right of the Lines/Header toggle buttons.</span></span> <span data-ttu-id="5b824-154">Jos nuoli osoittaa oikealle, tietoruudun on jo avoinna.</span><span class="sxs-lookup"><span data-stu-id="5b824-154">If the arrow is pointing to the right, the FactBox is already open.</span></span> <span data-ttu-id="5b824-155">Vasemmalle osoittavasta nuolesta saat avattua tietoruudun.</span><span class="sxs-lookup"><span data-stu-id="5b824-155">If the arrow points to the left, click it to open the FactBox.</span></span>  
-8. <span data-ttu-id="5b824-156">Napsauta Tarjouspyyntö-kentän linkkiä avataksesi juuri luodun tarjouspyynnön.</span><span class="sxs-lookup"><span data-stu-id="5b824-156">Click the link in the Request for quotation field to open the RFQ that was just created.</span></span>
-9. <span data-ttu-id="5b824-157">Napsauta otsikkoa.</span><span class="sxs-lookup"><span data-stu-id="5b824-157">Click Header.</span></span>
-10. <span data-ttu-id="5b824-158">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="5b824-158">Click Add.</span></span>
-11. <span data-ttu-id="5b824-159">Anna tai valitse arvo Toimittajatili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="5b824-159">In the Vendor account field, enter or select a value.</span></span>
-12. <span data-ttu-id="5b824-160">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="5b824-160">Click Add.</span></span>
-13. <span data-ttu-id="5b824-161">Anna tai valitse arvo Toimittajatili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="5b824-161">In the Vendor account field, enter or select a value.</span></span>
-14. <span data-ttu-id="5b824-162">Valitse Lähetä.</span><span class="sxs-lookup"><span data-stu-id="5b824-162">Click Send.</span></span>
-15. <span data-ttu-id="5b824-163">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="5b824-163">Click OK.</span></span>
-16. <span data-ttu-id="5b824-164">Napsauta Kirjoita vastaus -kohtaa.</span><span class="sxs-lookup"><span data-stu-id="5b824-164">Click Enter reply.</span></span>
-17. <span data-ttu-id="5b824-165">Valitse toimintoruudussa Vastaa.</span><span class="sxs-lookup"><span data-stu-id="5b824-165">On the Action Pane, click Reply.</span></span>
-18. <span data-ttu-id="5b824-166">Napsauta Kopioi tiedot vastauskenttiin -kohtaa.</span><span class="sxs-lookup"><span data-stu-id="5b824-166">Click Copy data to reply.</span></span>
-    * <span data-ttu-id="5b824-167">Tämä kopioi tarjouspyynnön tiedot, kuten määrän ja päivämäärät, vastaukseen.</span><span class="sxs-lookup"><span data-stu-id="5b824-167">This copies data, such as the quantity and dates, from the RFQ to the reply .</span></span>  
-19. <span data-ttu-id="5b824-168">Syötä Yksikköhinta-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="5b824-168">In the Unit price field, enter a number.</span></span>
-    * <span data-ttu-id="5b824-169">Tämä on hinta, jonka olet saanut toimittajalta.</span><span class="sxs-lookup"><span data-stu-id="5b824-169">This is the price that you’ve received from the vendor.</span></span> <span data-ttu-id="5b824-170">Voit myös halutessasi kirjoittaa toimittajalta saamiasi lisätietoja.</span><span class="sxs-lookup"><span data-stu-id="5b824-170">You might also want to enter additional information from the vendor.</span></span>  
-20. <span data-ttu-id="5b824-171">Valitse Hyväksy.</span><span class="sxs-lookup"><span data-stu-id="5b824-171">Click Accept.</span></span>
-21. <span data-ttu-id="5b824-172">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="5b824-172">Click OK.</span></span>
+## <a name="create-an-rfq"></a><span data-ttu-id="0cb6d-142">Luo tarjouspyyntö</span><span class="sxs-lookup"><span data-stu-id="0cb6d-142">Create an RFQ</span></span>
+1. <span data-ttu-id="0cb6d-143">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-143">Refresh the page.</span></span>
+2. <span data-ttu-id="0cb6d-144">Valitse Tarjouspyynnön vastaus.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-144">Click Request for quotation.</span></span>
+3. <span data-ttu-id="0cb6d-145">Valitse Ostava yritys -kenttään USMF.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-145">In the Buying legal entity field, select USMF.</span></span>
+    * <span data-ttu-id="0cb6d-146">Valitse sama yritys, joka on ehdotusrivillä.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-146">You must select the same legal entity that’s on the requisition line.</span></span>  
+4. <span data-ttu-id="0cb6d-147">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-147">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="0cb6d-148">Jos ostoehdotuksessa on useita rivejä, valitse kaikki rivit, jotka haluat lisätä tarjouspyyntöön.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-148">If you had multiple lines on your purchase requisition, select all the lines that you want to add to the RFQ.</span></span>  
+5. <span data-ttu-id="0cb6d-149">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-149">Click OK.</span></span>
+6. <span data-ttu-id="0cb6d-150">Päivitä sivu.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-150">Refresh the page.</span></span>
+7. <span data-ttu-id="0cb6d-151">Avaa tietoruutu ja laajenna liittyvien asiakirjojen osa.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-151">Open the FactBox and then expand the Related documents section.</span></span>
+    * <span data-ttu-id="0cb6d-152">Tietoruutu saattaa olla jo auki.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-152">You may already have the FactBox open.</span></span> <span data-ttu-id="0cb6d-153">Paikanna nuolikuvake, joka on Rivit-/Otsikko-vaihtopainikkeen oikealla puolella.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-153">Look for the icon with an arrow on it, to the right of the Lines/Header toggle buttons.</span></span> <span data-ttu-id="0cb6d-154">Jos nuoli osoittaa oikealle, tietoruudun on jo avoinna.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-154">If the arrow is pointing to the right, the FactBox is already open.</span></span> <span data-ttu-id="0cb6d-155">Vasemmalle osoittavasta nuolesta saat avattua tietoruudun.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-155">If the arrow points to the left, click it to open the FactBox.</span></span>  
+8. <span data-ttu-id="0cb6d-156">Napsauta Tarjouspyyntö-kentän linkkiä avataksesi juuri luodun tarjouspyynnön.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-156">Click the link in the Request for quotation field to open the RFQ that was just created.</span></span>
+9. <span data-ttu-id="0cb6d-157">Napsauta otsikkoa.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-157">Click Header.</span></span>
+10. <span data-ttu-id="0cb6d-158">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-158">Click Add.</span></span>
+11. <span data-ttu-id="0cb6d-159">Anna tai valitse arvo Toimittajatili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-159">In the Vendor account field, enter or select a value.</span></span>
+12. <span data-ttu-id="0cb6d-160">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-160">Click Add.</span></span>
+13. <span data-ttu-id="0cb6d-161">Anna tai valitse arvo Toimittajatili-kentässä.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-161">In the Vendor account field, enter or select a value.</span></span>
+14. <span data-ttu-id="0cb6d-162">Valitse Lähetä.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-162">Click Send.</span></span>
+15. <span data-ttu-id="0cb6d-163">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-163">Click OK.</span></span>
+16. <span data-ttu-id="0cb6d-164">Napsauta Kirjoita vastaus -kohtaa.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-164">Click Enter reply.</span></span>
+17. <span data-ttu-id="0cb6d-165">Valitse toimintoruudussa Vastaa.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-165">On the Action Pane, click Reply.</span></span>
+18. <span data-ttu-id="0cb6d-166">Napsauta Kopioi tiedot vastauskenttiin -kohtaa.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-166">Click Copy data to reply.</span></span>
+    * <span data-ttu-id="0cb6d-167">Tämä kopioi tarjouspyynnön tiedot, kuten määrän ja päivämäärät, vastaukseen.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-167">This copies data, such as the quantity and dates, from the RFQ to the reply .</span></span>  
+19. <span data-ttu-id="0cb6d-168">Syötä Yksikköhinta-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-168">In the Unit price field, enter a number.</span></span>
+    * <span data-ttu-id="0cb6d-169">Tämä on hinta, jonka olet saanut toimittajalta.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-169">This is the price that you’ve received from the vendor.</span></span> <span data-ttu-id="0cb6d-170">Voit myös halutessasi kirjoittaa toimittajalta saamiasi lisätietoja.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-170">You might also want to enter additional information from the vendor.</span></span>  
+20. <span data-ttu-id="0cb6d-171">Valitse Hyväksy.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-171">Click Accept.</span></span>
+21. <span data-ttu-id="0cb6d-172">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-172">Click OK.</span></span>
 
-## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a><span data-ttu-id="5b824-173">Tarkista, että hinta ja toimittaja on siirretty ehdotukseen</span><span class="sxs-lookup"><span data-stu-id="5b824-173">Verify that vendor and price have been transferred to the requisition</span></span>
-1. <span data-ttu-id="5b824-174">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="5b824-174">Close the page.</span></span>
-2. <span data-ttu-id="5b824-175">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="5b824-175">Click Lines.</span></span>
-3. <span data-ttu-id="5b824-176">Valitse Aiheeseen liittyviä tietoja.</span><span class="sxs-lookup"><span data-stu-id="5b824-176">Click Related information.</span></span>
-4. <span data-ttu-id="5b824-177">Valitse Ostoehdotus.</span><span class="sxs-lookup"><span data-stu-id="5b824-177">Click Purchase requisition.</span></span>
-5. <span data-ttu-id="5b824-178">Valitse tarjouspyyntöön siirretty rivi.</span><span class="sxs-lookup"><span data-stu-id="5b824-178">Select the line that was transferred to the RFQ.</span></span>
-    * <span data-ttu-id="5b824-179">Tarkista, että hinta ja toimittaja on kopioitu ehdotukseen..</span><span class="sxs-lookup"><span data-stu-id="5b824-179">Verify that the price and vendor have been copied to the requisition.</span></span>  
-6. <span data-ttu-id="5b824-180">Avaa valintaikkuna valitsemalla Työnkulku.</span><span class="sxs-lookup"><span data-stu-id="5b824-180">Click Workflow to open the drop dialog.</span></span>
-7. <span data-ttu-id="5b824-181">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="5b824-181">Click Complete.</span></span>
-8. <span data-ttu-id="5b824-182">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="5b824-182">Close the page.</span></span>
-9. <span data-ttu-id="5b824-183">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="5b824-183">Click Complete.</span></span>
+## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a><span data-ttu-id="0cb6d-173">Tarkista, että hinta ja toimittaja on siirretty ehdotukseen</span><span class="sxs-lookup"><span data-stu-id="0cb6d-173">Verify that vendor and price have been transferred to the requisition</span></span>
+1. <span data-ttu-id="0cb6d-174">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-174">Close the page.</span></span>
+2. <span data-ttu-id="0cb6d-175">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-175">Click Lines.</span></span>
+3. <span data-ttu-id="0cb6d-176">Valitse Aiheeseen liittyviä tietoja.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-176">Click Related information.</span></span>
+4. <span data-ttu-id="0cb6d-177">Valitse Ostoehdotus.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-177">Click Purchase requisition.</span></span>
+5. <span data-ttu-id="0cb6d-178">Valitse tarjouspyyntöön siirretty rivi.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-178">Select the line that was transferred to the RFQ.</span></span>
+    * <span data-ttu-id="0cb6d-179">Tarkista, että hinta ja toimittaja on kopioitu ehdotukseen..</span><span class="sxs-lookup"><span data-stu-id="0cb6d-179">Verify that the price and vendor have been copied to the requisition.</span></span>  
+6. <span data-ttu-id="0cb6d-180">Avaa valintaikkuna valitsemalla Työnkulku.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-180">Click Workflow to open the drop dialog.</span></span>
+7. <span data-ttu-id="0cb6d-181">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-181">Click Complete.</span></span>
+8. <span data-ttu-id="0cb6d-182">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-182">Close the page.</span></span>
+9. <span data-ttu-id="0cb6d-183">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="0cb6d-183">Click Complete.</span></span>
 

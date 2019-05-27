@@ -16,51 +16,51 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9788a35e768a4a289742e9cd864b3ca185a0407
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 33e21137e604ead6cc3a7ad6f0b5bb6bfdc6992e
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370632"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537851"
 ---
-# <a name="eur-00015-registration-of-vendor-vat-id"></a><span data-ttu-id="596c6-103">EUR-00015 Toimittajan ALV-tunnuksen rekisteröinti</span><span class="sxs-lookup"><span data-stu-id="596c6-103">EUR-00015 Registration of vendor VAT ID</span></span>
+# <a name="eur-00015-registration-of-vendor-vat-id"></a><span data-ttu-id="681dc-103">EUR-00015 Toimittajan ALV-tunnuksen rekisteröinti</span><span class="sxs-lookup"><span data-stu-id="681dc-103">EUR-00015 Registration of vendor VAT ID</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="596c6-104">Tässä toimintaohjeessa kuvataan, miten ALV-tunnukset ja verovapausnumerot lisätään toimittajan tilille.</span><span class="sxs-lookup"><span data-stu-id="596c6-104">This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</span></span> <span data-ttu-id="596c6-105">Tämä prosessi on samanlainen yrityksille ja asiakkaille.</span><span class="sxs-lookup"><span data-stu-id="596c6-105">This process is similar for legal entities and customers.</span></span> 
+<span data-ttu-id="681dc-104">Tässä toimintaohjeessa kuvataan, miten ALV-tunnukset ja verovapausnumerot lisätään toimittajan tilille.</span><span class="sxs-lookup"><span data-stu-id="681dc-104">This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</span></span> <span data-ttu-id="681dc-105">Tämä prosessi on samanlainen yrityksille ja asiakkaille.</span><span class="sxs-lookup"><span data-stu-id="681dc-105">This process is similar for legal entities and customers.</span></span> 
 
-<span data-ttu-id="596c6-106">Ennen kuin tämän menettelyn voi suorittaa, ALV-tunnukset on määritettävä.</span><span class="sxs-lookup"><span data-stu-id="596c6-106">Before you can complete this procedure you must set up VAT IDs.</span></span> <span data-ttu-id="596c6-107">Tämä menettely koskee kaikkia Euroopan maita/alueita.</span><span class="sxs-lookup"><span data-stu-id="596c6-107">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="596c6-108">Tämä menettely luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Saksassa.</span><span class="sxs-lookup"><span data-stu-id="596c6-108">The procedure was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="596c6-109">Nämä toimet tekee yleensä tietojen hallinnan järjestelmänvalvoja, ostoreskontrapäällikkö tai myyntireskontrapäällikkö.</span><span class="sxs-lookup"><span data-stu-id="596c6-109">This procedure is intended for a data management administrator, accounts payable manager, or accounts receivable manager.</span></span> <span data-ttu-id="596c6-110">Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="596c6-110">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="681dc-106">Ennen kuin tämän menettelyn voi suorittaa, ALV-tunnukset on määritettävä.</span><span class="sxs-lookup"><span data-stu-id="681dc-106">Before you can complete this procedure you must set up VAT IDs.</span></span> <span data-ttu-id="681dc-107">Tämä menettely koskee kaikkia Euroopan maita/alueita.</span><span class="sxs-lookup"><span data-stu-id="681dc-107">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="681dc-108">Tämä menettely luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Saksassa.</span><span class="sxs-lookup"><span data-stu-id="681dc-108">The procedure was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="681dc-109">Nämä toimet tekee yleensä tietojen hallinnan järjestelmänvalvoja, ostoreskontrapäällikkö tai myyntireskontrapäällikkö.</span><span class="sxs-lookup"><span data-stu-id="681dc-109">This procedure is intended for a data management administrator, accounts payable manager, or accounts receivable manager.</span></span> <span data-ttu-id="681dc-110">Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="681dc-110">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. <span data-ttu-id="596c6-111">Siirry kohtaan Ostoreskontra > Toimittajat > Kaikki toimittajat.</span><span class="sxs-lookup"><span data-stu-id="596c6-111">Go to Accounts payable > Vendors > All vendors.</span></span>
-2. <span data-ttu-id="596c6-112">Etsi luettelosta asiakas DE-01001 ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="596c6-112">In the list find and select vendor DE-01001</span></span>
-3. <span data-ttu-id="596c6-113">Valitse Rekisteröintitunnukset.</span><span class="sxs-lookup"><span data-stu-id="596c6-113">Click Registration IDs.</span></span>
-4. <span data-ttu-id="596c6-114">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="596c6-114">Click Add.</span></span>
-5. <span data-ttu-id="596c6-115">Valitse ALV-tunnus.</span><span class="sxs-lookup"><span data-stu-id="596c6-115">Select VAT ID.</span></span>
-6. <span data-ttu-id="596c6-116">Kirjoita Rekisteröintinumero-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="596c6-116">In the Registration number field, type a value.</span></span>
-    * <span data-ttu-id="596c6-117">Määritä valitun toimittajan saksalainen ALV-tunnus.</span><span class="sxs-lookup"><span data-stu-id="596c6-117">Specify a VAT ID in Germany for the selected vendor.</span></span> <span data-ttu-id="596c6-118">Tunnuksen on vastattava rekisteröintityypille määritettyä muotoa.</span><span class="sxs-lookup"><span data-stu-id="596c6-118">The ID must match the specified format of the registration type.</span></span>  
-7. <span data-ttu-id="596c6-119">Valitse Yleiset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="596c6-119">Click the General tab.</span></span>
-8. <span data-ttu-id="596c6-120">Kirjoita päivämäärä Voimassa-kenttään.</span><span class="sxs-lookup"><span data-stu-id="596c6-120">In the Effective field, enter a date.</span></span>
-9. <span data-ttu-id="596c6-121">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="596c6-121">Click Save.</span></span>
-10. <span data-ttu-id="596c6-122">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="596c6-122">Click New.</span></span>
-11. <span data-ttu-id="596c6-123">Kirjoita Nimi tai kuvaus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="596c6-123">In the Name or description field, type a value.</span></span>
-    * <span data-ttu-id="596c6-124">Syötä arvoksi esimerkiksi ITA.</span><span class="sxs-lookup"><span data-stu-id="596c6-124">For example, enter ITA.</span></span>  
-12. <span data-ttu-id="596c6-125">Syötä tai valitse arvo Maa/alue-kentässä.</span><span class="sxs-lookup"><span data-stu-id="596c6-125">In the Country/region field, enter or select a value.</span></span>
-    * <span data-ttu-id="596c6-126">Voit valita esimerkiksi arvon ITA.</span><span class="sxs-lookup"><span data-stu-id="596c6-126">For example, select ITA.</span></span>  
-13. <span data-ttu-id="596c6-127">Valitse Ensisijainen maalle -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="596c6-127">Select Yes in the Primary for country field.</span></span>
-14. <span data-ttu-id="596c6-128">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="596c6-128">Click Save.</span></span>
-15. <span data-ttu-id="596c6-129">Valitse Yhteenveto-välilehti.</span><span class="sxs-lookup"><span data-stu-id="596c6-129">Click the Overview tab.</span></span>
-16. <span data-ttu-id="596c6-130">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="596c6-130">Click Add.</span></span>
-17. <span data-ttu-id="596c6-131">Syötä tai valitse arvo Rekisteröintityyppi-kentässä.</span><span class="sxs-lookup"><span data-stu-id="596c6-131">In the Registration type field, enter or select a value.</span></span>
-    * <span data-ttu-id="596c6-132">Valitse esimerkiksi ALV-tunnus.</span><span class="sxs-lookup"><span data-stu-id="596c6-132">For example, select VAT ID.</span></span>  
-18. <span data-ttu-id="596c6-133">Kirjoita Rekisteröintinumero-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="596c6-133">In the Registration number field, type a value.</span></span>
-    * <span data-ttu-id="596c6-134">Määritä esimerkiksi italialainen ALV-tunnus.</span><span class="sxs-lookup"><span data-stu-id="596c6-134">For example, specify a VAT ID in Italy.</span></span>  <span data-ttu-id="596c6-135">Tunnuksen on vastattava rekisteröintityypille määritettyä muotoa.</span><span class="sxs-lookup"><span data-stu-id="596c6-135">The ID must have the same format as the registration type.</span></span>  
-19. <span data-ttu-id="596c6-136">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="596c6-136">Click Save.</span></span>
-20. <span data-ttu-id="596c6-137">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="596c6-137">Close the page.</span></span>
-21. <span data-ttu-id="596c6-138">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="596c6-138">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="596c6-139">Voit valita esimerkiksi arvon DE-01001</span><span class="sxs-lookup"><span data-stu-id="596c6-139">For example, select DE-01001.</span></span>  
-22. <span data-ttu-id="596c6-140">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="596c6-140">In the list, click the link in the selected row.</span></span>
-23. <span data-ttu-id="596c6-141">Laajenna Lasku ja toimitus -osa.</span><span class="sxs-lookup"><span data-stu-id="596c6-141">Expand the Invoice and delivery section.</span></span>
-24. <span data-ttu-id="596c6-142">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="596c6-142">Click Edit.</span></span>
-25. <span data-ttu-id="596c6-143">Anna tai valitse Verovapausnumero-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="596c6-143">In the Tax exempt number field, enter or select a value.</span></span>
-26. <span data-ttu-id="596c6-144">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="596c6-144">Click Save.</span></span>
+1. <span data-ttu-id="681dc-111">Siirry kohtaan Ostoreskontra > Toimittajat > Kaikki toimittajat.</span><span class="sxs-lookup"><span data-stu-id="681dc-111">Go to Accounts payable > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="681dc-112">Etsi luettelosta asiakas DE-01001 ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="681dc-112">In the list find and select vendor DE-01001</span></span>
+3. <span data-ttu-id="681dc-113">Valitse Rekisteröintitunnukset.</span><span class="sxs-lookup"><span data-stu-id="681dc-113">Click Registration IDs.</span></span>
+4. <span data-ttu-id="681dc-114">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="681dc-114">Click Add.</span></span>
+5. <span data-ttu-id="681dc-115">Valitse ALV-tunnus.</span><span class="sxs-lookup"><span data-stu-id="681dc-115">Select VAT ID.</span></span>
+6. <span data-ttu-id="681dc-116">Kirjoita Rekisteröintinumero-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="681dc-116">In the Registration number field, type a value.</span></span>
+    * <span data-ttu-id="681dc-117">Määritä valitun toimittajan saksalainen ALV-tunnus.</span><span class="sxs-lookup"><span data-stu-id="681dc-117">Specify a VAT ID in Germany for the selected vendor.</span></span> <span data-ttu-id="681dc-118">Tunnuksen on vastattava rekisteröintityypille määritettyä muotoa.</span><span class="sxs-lookup"><span data-stu-id="681dc-118">The ID must match the specified format of the registration type.</span></span>  
+7. <span data-ttu-id="681dc-119">Valitse Yleiset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="681dc-119">Click the General tab.</span></span>
+8. <span data-ttu-id="681dc-120">Kirjoita päivämäärä Voimassa-kenttään.</span><span class="sxs-lookup"><span data-stu-id="681dc-120">In the Effective field, enter a date.</span></span>
+9. <span data-ttu-id="681dc-121">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="681dc-121">Click Save.</span></span>
+10. <span data-ttu-id="681dc-122">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="681dc-122">Click New.</span></span>
+11. <span data-ttu-id="681dc-123">Kirjoita Nimi tai kuvaus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="681dc-123">In the Name or description field, type a value.</span></span>
+    * <span data-ttu-id="681dc-124">Syötä arvoksi esimerkiksi ITA.</span><span class="sxs-lookup"><span data-stu-id="681dc-124">For example, enter ITA.</span></span>  
+12. <span data-ttu-id="681dc-125">Syötä tai valitse arvo Maa/alue-kentässä.</span><span class="sxs-lookup"><span data-stu-id="681dc-125">In the Country/region field, enter or select a value.</span></span>
+    * <span data-ttu-id="681dc-126">Voit valita esimerkiksi arvon ITA.</span><span class="sxs-lookup"><span data-stu-id="681dc-126">For example, select ITA.</span></span>  
+13. <span data-ttu-id="681dc-127">Valitse Ensisijainen maalle -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="681dc-127">Select Yes in the Primary for country field.</span></span>
+14. <span data-ttu-id="681dc-128">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="681dc-128">Click Save.</span></span>
+15. <span data-ttu-id="681dc-129">Valitse Yhteenveto-välilehti.</span><span class="sxs-lookup"><span data-stu-id="681dc-129">Click the Overview tab.</span></span>
+16. <span data-ttu-id="681dc-130">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="681dc-130">Click Add.</span></span>
+17. <span data-ttu-id="681dc-131">Syötä tai valitse arvo Rekisteröintityyppi-kentässä.</span><span class="sxs-lookup"><span data-stu-id="681dc-131">In the Registration type field, enter or select a value.</span></span>
+    * <span data-ttu-id="681dc-132">Valitse esimerkiksi ALV-tunnus.</span><span class="sxs-lookup"><span data-stu-id="681dc-132">For example, select VAT ID.</span></span>  
+18. <span data-ttu-id="681dc-133">Kirjoita Rekisteröintinumero-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="681dc-133">In the Registration number field, type a value.</span></span>
+    * <span data-ttu-id="681dc-134">Määritä esimerkiksi italialainen ALV-tunnus.</span><span class="sxs-lookup"><span data-stu-id="681dc-134">For example, specify a VAT ID in Italy.</span></span>  <span data-ttu-id="681dc-135">Tunnuksen on vastattava rekisteröintityypille määritettyä muotoa.</span><span class="sxs-lookup"><span data-stu-id="681dc-135">The ID must have the same format as the registration type.</span></span>  
+19. <span data-ttu-id="681dc-136">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="681dc-136">Click Save.</span></span>
+20. <span data-ttu-id="681dc-137">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="681dc-137">Close the page.</span></span>
+21. <span data-ttu-id="681dc-138">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="681dc-138">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="681dc-139">Voit valita esimerkiksi arvon DE-01001</span><span class="sxs-lookup"><span data-stu-id="681dc-139">For example, select DE-01001.</span></span>  
+22. <span data-ttu-id="681dc-140">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="681dc-140">In the list, click the link in the selected row.</span></span>
+23. <span data-ttu-id="681dc-141">Laajenna Lasku ja toimitus -osa.</span><span class="sxs-lookup"><span data-stu-id="681dc-141">Expand the Invoice and delivery section.</span></span>
+24. <span data-ttu-id="681dc-142">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="681dc-142">Click Edit.</span></span>
+25. <span data-ttu-id="681dc-143">Anna tai valitse Verovapausnumero-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="681dc-143">In the Tax exempt number field, enter or select a value.</span></span>
+26. <span data-ttu-id="681dc-144">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="681dc-144">Click Save.</span></span>
 

@@ -16,101 +16,101 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1236f27a3a5c208ffec41374a6593d1f0e7c4433
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 170c73d2ace75f990df9d57c658e859dcd30dd36
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370618"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537859"
 ---
-# <a name="eur-00002-generate-an-eu-intrastat-declaration"></a><span data-ttu-id="f14d5-103">EUR-00002 EU Intrastat -ilmoituksen luominen</span><span class="sxs-lookup"><span data-stu-id="f14d5-103">EUR-00002 Generate an EU Intrastat declaration</span></span>
+# <a name="eur-00002-generate-an-eu-intrastat-declaration"></a><span data-ttu-id="cbc80-103">EUR-00002 EU Intrastat -ilmoituksen luominen</span><span class="sxs-lookup"><span data-stu-id="cbc80-103">EUR-00002 Generate an EU Intrastat declaration</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f14d5-104">Tässä menettelyssä käydään läpi vaiheet, joissa viedään Intrastat-ilmoituksen sähköisessä tiedostomuodossa ja esikatsellaan ilmoitustiedot Excel-muodossa.</span><span class="sxs-lookup"><span data-stu-id="f14d5-104">This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</span></span> 
+<span data-ttu-id="cbc80-104">Tässä menettelyssä käydään läpi vaiheet, joissa viedään Intrastat-ilmoituksen sähköisessä tiedostomuodossa ja esikatsellaan ilmoitustiedot Excel-muodossa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-104">This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</span></span> 
 
-<span data-ttu-id="f14d5-105">Ennen kuin suoritat tämän menettelyn, tapahtumat on siirrettävä Intrastatiin.</span><span class="sxs-lookup"><span data-stu-id="f14d5-105">Before you can complete this procedure, you must transfer transactions to the Intrastat.</span></span> 
+<span data-ttu-id="cbc80-105">Ennen kuin suoritat tämän menettelyn, tapahtumat on siirrettävä Intrastatiin.</span><span class="sxs-lookup"><span data-stu-id="cbc80-105">Before you can complete this procedure, you must transfer transactions to the Intrastat.</span></span> 
 
-<span data-ttu-id="f14d5-106">Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="f14d5-106">This procedure was created using the demo data company DEMF.</span></span>
+<span data-ttu-id="cbc80-106">Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="cbc80-106">This procedure was created using the demo data company DEMF.</span></span>
 
 
-## <a name="import-configurations-with-settings"></a><span data-ttu-id="f14d5-107">Asetuksia sisältävien konfiguraatioiden tuonti</span><span class="sxs-lookup"><span data-stu-id="f14d5-107">Import configurations with settings</span></span>
-1. <span data-ttu-id="f14d5-108">Valitse Työtilat > Sähköinen raportointi</span><span class="sxs-lookup"><span data-stu-id="f14d5-108">Go to Workspaces > Electronic reporting</span></span>
-2. <span data-ttu-id="f14d5-109">Valitse Aseta aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="f14d5-109">Click Set active.</span></span>
-3. <span data-ttu-id="f14d5-110">Valitse Säilöt.</span><span class="sxs-lookup"><span data-stu-id="f14d5-110">Click Repositories.</span></span>
-4. <span data-ttu-id="f14d5-111">Valitse Avaa.</span><span class="sxs-lookup"><span data-stu-id="f14d5-111">Click Open.</span></span>
-5. <span data-ttu-id="f14d5-112">Avaa Konfiguraation nimi -sarakkeen suodatin.</span><span class="sxs-lookup"><span data-stu-id="f14d5-112">Open Configuration name column filter.</span></span>
-6. <span data-ttu-id="f14d5-113">Käytä suodatinta Konfiguraation nimi -kentässä niin, että arvo on "Intrastat (DE)" ja suodatinoperaattori Alkaa.</span><span class="sxs-lookup"><span data-stu-id="f14d5-113">Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.</span></span>
-    * <span data-ttu-id="f14d5-114">Valitse yrityksesi toimintamaata vastaava konfiguraation nimi.</span><span class="sxs-lookup"><span data-stu-id="f14d5-114">You should select the configuration name applicable for the country of your legal entity.</span></span> <span data-ttu-id="f14d5-115">Näissä toimintaohjeissa käytetään esimerkkinä saksalaista yritystä (DEMF); tämän vuoksi tulee valita "Intrastat (DE)".</span><span class="sxs-lookup"><span data-stu-id="f14d5-115">This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.</span></span>  
-    * <span data-ttu-id="f14d5-116">Valitse Tuo ja valitse sitten Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-116">Click Import and then click Yes.</span></span>  
-7. <span data-ttu-id="f14d5-117">Avaa Konfiguraation nimi -sarakkeen suodatin.</span><span class="sxs-lookup"><span data-stu-id="f14d5-117">Open Configuration name column filter.</span></span>
-8. <span data-ttu-id="f14d5-118">Käytä suodatinta Konfiguraation nimi -kentässä niin, että arvo on "Intrastat-raportti" ja suodatinoperaattori Alkaa.</span><span class="sxs-lookup"><span data-stu-id="f14d5-118">Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.</span></span>
-    * <span data-ttu-id="f14d5-119">Valitse Tuo ja valitse sitten Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-119">Click Import and then click Yes.</span></span>  
+## <a name="import-configurations-with-settings"></a><span data-ttu-id="cbc80-107">Asetuksia sisältävien konfiguraatioiden tuonti</span><span class="sxs-lookup"><span data-stu-id="cbc80-107">Import configurations with settings</span></span>
+1. <span data-ttu-id="cbc80-108">Valitse Työtilat > Sähköinen raportointi</span><span class="sxs-lookup"><span data-stu-id="cbc80-108">Go to Workspaces > Electronic reporting</span></span>
+2. <span data-ttu-id="cbc80-109">Valitse Aseta aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="cbc80-109">Click Set active.</span></span>
+3. <span data-ttu-id="cbc80-110">Valitse Säilöt.</span><span class="sxs-lookup"><span data-stu-id="cbc80-110">Click Repositories.</span></span>
+4. <span data-ttu-id="cbc80-111">Valitse Avaa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-111">Click Open.</span></span>
+5. <span data-ttu-id="cbc80-112">Avaa Konfiguraation nimi -sarakkeen suodatin.</span><span class="sxs-lookup"><span data-stu-id="cbc80-112">Open Configuration name column filter.</span></span>
+6. <span data-ttu-id="cbc80-113">Käytä suodatinta Konfiguraation nimi -kentässä niin, että arvo on "Intrastat (DE)" ja suodatinoperaattori Alkaa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-113">Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.</span></span>
+    * <span data-ttu-id="cbc80-114">Valitse yrityksesi toimintamaata vastaava konfiguraation nimi.</span><span class="sxs-lookup"><span data-stu-id="cbc80-114">You should select the configuration name applicable for the country of your legal entity.</span></span> <span data-ttu-id="cbc80-115">Näissä toimintaohjeissa käytetään esimerkkinä saksalaista yritystä (DEMF); tämän vuoksi tulee valita "Intrastat (DE)".</span><span class="sxs-lookup"><span data-stu-id="cbc80-115">This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.</span></span>  
+    * <span data-ttu-id="cbc80-116">Valitse Tuo ja valitse sitten Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-116">Click Import and then click Yes.</span></span>  
+7. <span data-ttu-id="cbc80-117">Avaa Konfiguraation nimi -sarakkeen suodatin.</span><span class="sxs-lookup"><span data-stu-id="cbc80-117">Open Configuration name column filter.</span></span>
+8. <span data-ttu-id="cbc80-118">Käytä suodatinta Konfiguraation nimi -kentässä niin, että arvo on "Intrastat-raportti" ja suodatinoperaattori Alkaa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-118">Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.</span></span>
+    * <span data-ttu-id="cbc80-119">Valitse Tuo ja valitse sitten Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-119">Click Import and then click Yes.</span></span>  
 
-## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="f14d5-120">Määritä ulkomaankaupan parametrit</span><span class="sxs-lookup"><span data-stu-id="f14d5-120">Set up Foreign trade parameters</span></span>
-1. <span data-ttu-id="f14d5-121">Valitse Vero > Asetukset > Ulkomaankauppa > Ulkomaankaupan parametrit</span><span class="sxs-lookup"><span data-stu-id="f14d5-121">Go to Tax > Setup > Foreign trade > Foreign trade parameters</span></span>
-2. <span data-ttu-id="f14d5-122">Laajenna Sähköinen raportointi -osa.</span><span class="sxs-lookup"><span data-stu-id="f14d5-122">Expand the Electronic reporting section.</span></span>
-3. <span data-ttu-id="f14d5-123">Anna tai valitse Tiedostomuodon yhdistäminen -kentässä arvoksi Intrastat (DE).</span><span class="sxs-lookup"><span data-stu-id="f14d5-123">In the File format mapping field, enter or select a value Intrastat (DE)</span></span>
-4. <span data-ttu-id="f14d5-124">Anna tai valitse Raporttimuodon yhdistäminen -kentässä arvoksi Intrastat-raportti.</span><span class="sxs-lookup"><span data-stu-id="f14d5-124">In the Report format mapping field, enter or select a value Intrastat report</span></span>
-5. <span data-ttu-id="f14d5-125">Laajenna Pyöristyssäännöt-osa.</span><span class="sxs-lookup"><span data-stu-id="f14d5-125">Expand the Rounding rules section.</span></span>
-    * <span data-ttu-id="f14d5-126">Pyöristyssäännöt tulee määrittää maasi/alueesi Intrastat-raportoinnin käytäntöjen mukaisiksi.</span><span class="sxs-lookup"><span data-stu-id="f14d5-126">You should set up rounding rules that are applicable in your country/region for Intrastat reporting.</span></span>  
-6. <span data-ttu-id="f14d5-127">Syötä Pyöristyssääntö-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="f14d5-127">In the Rounding rule field, enter a number.</span></span>
-    * <span data-ttu-id="f14d5-128">Anna pyöristystarkkuus, esimerkiksi 0,01.</span><span class="sxs-lookup"><span data-stu-id="f14d5-128">Enter rounding precision, for example, enter '0.01'.</span></span>  
-7. <span data-ttu-id="f14d5-129">Syötä Summan desimaalien määrä -kenttään haluamasi luku.</span><span class="sxs-lookup"><span data-stu-id="f14d5-129">In the Number of decimals for amount field, enter a number.</span></span>
-    * <span data-ttu-id="f14d5-130">Kirjoita esimerkiksi 2.</span><span class="sxs-lookup"><span data-stu-id="f14d5-130">For example, enter '2'.</span></span>  
-8. <span data-ttu-id="f14d5-131">Valitse vaihtoehto Pyöristys, alle 1 kg -kentässä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-131">In the Rounding below 1 kg field, select an option.</span></span>
-    * <span data-ttu-id="f14d5-132">Valitse esimerkiksi "Pyöristys, enintään 1 kg".</span><span class="sxs-lookup"><span data-stu-id="f14d5-132">For example, select 'Rounding up to 1 kg'.</span></span>  
-9. <span data-ttu-id="f14d5-133">Syötä Pyöristyssääntö-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="f14d5-133">In the Rounding rule field, enter a number.</span></span>
-    * <span data-ttu-id="f14d5-134">Kirjoita esimerkiksi 1 kokonaisluvun pyöristyksen painotukseksi.</span><span class="sxs-lookup"><span data-stu-id="f14d5-134">For example, enter '1' for rounding weight to the integer.</span></span>  
-10. <span data-ttu-id="f14d5-135">Laajenna Vähimmäisraja-osa.</span><span class="sxs-lookup"><span data-stu-id="f14d5-135">Expand the Minimum limit section.</span></span>
-11. <span data-ttu-id="f14d5-136">Syötä numero Paino-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f14d5-136">In the Weight field, enter a number.</span></span>
-    * <span data-ttu-id="f14d5-137">Määritä vähimmäispainoksi esimerkiksi "10".</span><span class="sxs-lookup"><span data-stu-id="f14d5-137">For example, enter '10' as the minimum weight.</span></span>  
-12. <span data-ttu-id="f14d5-138">Lisää Summa-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="f14d5-138">In the Amount field, enter a number.</span></span>
-    * <span data-ttu-id="f14d5-139">Määritä vähimmäismääräksi esimerkiksi "200".</span><span class="sxs-lookup"><span data-stu-id="f14d5-139">For example, enter '200' as the minimum amount.</span></span>  
-13. <span data-ttu-id="f14d5-140">Syötä tai valitse arvo Kauppatavara-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-140">In the Commodity field, enter or select a value.</span></span>
+## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="cbc80-120">Määritä ulkomaankaupan parametrit</span><span class="sxs-lookup"><span data-stu-id="cbc80-120">Set up Foreign trade parameters</span></span>
+1. <span data-ttu-id="cbc80-121">Valitse Vero > Asetukset > Ulkomaankauppa > Ulkomaankaupan parametrit</span><span class="sxs-lookup"><span data-stu-id="cbc80-121">Go to Tax > Setup > Foreign trade > Foreign trade parameters</span></span>
+2. <span data-ttu-id="cbc80-122">Laajenna Sähköinen raportointi -osa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-122">Expand the Electronic reporting section.</span></span>
+3. <span data-ttu-id="cbc80-123">Anna tai valitse Tiedostomuodon yhdistäminen -kentässä arvoksi Intrastat (DE).</span><span class="sxs-lookup"><span data-stu-id="cbc80-123">In the File format mapping field, enter or select a value Intrastat (DE)</span></span>
+4. <span data-ttu-id="cbc80-124">Anna tai valitse Raporttimuodon yhdistäminen -kentässä arvoksi Intrastat-raportti.</span><span class="sxs-lookup"><span data-stu-id="cbc80-124">In the Report format mapping field, enter or select a value Intrastat report</span></span>
+5. <span data-ttu-id="cbc80-125">Laajenna Pyöristyssäännöt-osa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-125">Expand the Rounding rules section.</span></span>
+    * <span data-ttu-id="cbc80-126">Pyöristyssäännöt tulee määrittää maasi/alueesi Intrastat-raportoinnin käytäntöjen mukaisiksi.</span><span class="sxs-lookup"><span data-stu-id="cbc80-126">You should set up rounding rules that are applicable in your country/region for Intrastat reporting.</span></span>  
+6. <span data-ttu-id="cbc80-127">Syötä Pyöristyssääntö-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="cbc80-127">In the Rounding rule field, enter a number.</span></span>
+    * <span data-ttu-id="cbc80-128">Anna pyöristystarkkuus, esimerkiksi 0,01.</span><span class="sxs-lookup"><span data-stu-id="cbc80-128">Enter rounding precision, for example, enter '0.01'.</span></span>  
+7. <span data-ttu-id="cbc80-129">Syötä Summan desimaalien määrä -kenttään haluamasi luku.</span><span class="sxs-lookup"><span data-stu-id="cbc80-129">In the Number of decimals for amount field, enter a number.</span></span>
+    * <span data-ttu-id="cbc80-130">Kirjoita esimerkiksi 2.</span><span class="sxs-lookup"><span data-stu-id="cbc80-130">For example, enter '2'.</span></span>  
+8. <span data-ttu-id="cbc80-131">Valitse vaihtoehto Pyöristys, alle 1 kg -kentässä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-131">In the Rounding below 1 kg field, select an option.</span></span>
+    * <span data-ttu-id="cbc80-132">Valitse esimerkiksi "Pyöristys, enintään 1 kg".</span><span class="sxs-lookup"><span data-stu-id="cbc80-132">For example, select 'Rounding up to 1 kg'.</span></span>  
+9. <span data-ttu-id="cbc80-133">Syötä Pyöristyssääntö-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="cbc80-133">In the Rounding rule field, enter a number.</span></span>
+    * <span data-ttu-id="cbc80-134">Kirjoita esimerkiksi 1 kokonaisluvun pyöristyksen painotukseksi.</span><span class="sxs-lookup"><span data-stu-id="cbc80-134">For example, enter '1' for rounding weight to the integer.</span></span>  
+10. <span data-ttu-id="cbc80-135">Laajenna Vähimmäisraja-osa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-135">Expand the Minimum limit section.</span></span>
+11. <span data-ttu-id="cbc80-136">Syötä numero Paino-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-136">In the Weight field, enter a number.</span></span>
+    * <span data-ttu-id="cbc80-137">Määritä vähimmäispainoksi esimerkiksi "10".</span><span class="sxs-lookup"><span data-stu-id="cbc80-137">For example, enter '10' as the minimum weight.</span></span>  
+12. <span data-ttu-id="cbc80-138">Lisää Summa-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="cbc80-138">In the Amount field, enter a number.</span></span>
+    * <span data-ttu-id="cbc80-139">Määritä vähimmäismääräksi esimerkiksi "200".</span><span class="sxs-lookup"><span data-stu-id="cbc80-139">For example, enter '200' as the minimum amount.</span></span>  
+13. <span data-ttu-id="cbc80-140">Syötä tai valitse arvo Kauppatavara-kentässä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-140">In the Commodity field, enter or select a value.</span></span>
 
-## <a name="set-up-compression-of-intrastat"></a><span data-ttu-id="f14d5-141">Määritä Intrastatin tiivistysasetukset</span><span class="sxs-lookup"><span data-stu-id="f14d5-141">Set up Compression of Intrastat</span></span>
-1. <span data-ttu-id="f14d5-142">Valitse Vero > Asetukset > Ulkomaankauppa > Intrastatin tiivistys.</span><span class="sxs-lookup"><span data-stu-id="f14d5-142">Go to Tax > Setup > Foreign trade > Compression of Intrastat.</span></span>
-2. <span data-ttu-id="f14d5-143">Valitse Poista.</span><span class="sxs-lookup"><span data-stu-id="f14d5-143">Click Remove.</span></span>
-3. <span data-ttu-id="f14d5-144">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="f14d5-144">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="f14d5-145">Valitse esimerkiksi Kauppatavara Käytettävissä-osasta.</span><span class="sxs-lookup"><span data-stu-id="f14d5-145">For example, select Commodity in the Available section.</span></span>  
-4. <span data-ttu-id="f14d5-146">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="f14d5-146">Click Add.</span></span>
+## <a name="set-up-compression-of-intrastat"></a><span data-ttu-id="cbc80-141">Määritä Intrastatin tiivistysasetukset</span><span class="sxs-lookup"><span data-stu-id="cbc80-141">Set up Compression of Intrastat</span></span>
+1. <span data-ttu-id="cbc80-142">Valitse Vero > Asetukset > Ulkomaankauppa > Intrastatin tiivistys.</span><span class="sxs-lookup"><span data-stu-id="cbc80-142">Go to Tax > Setup > Foreign trade > Compression of Intrastat.</span></span>
+2. <span data-ttu-id="cbc80-143">Valitse Poista.</span><span class="sxs-lookup"><span data-stu-id="cbc80-143">Click Remove.</span></span>
+3. <span data-ttu-id="cbc80-144">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="cbc80-144">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="cbc80-145">Valitse esimerkiksi Kauppatavara Käytettävissä-osasta.</span><span class="sxs-lookup"><span data-stu-id="cbc80-145">For example, select Commodity in the Available section.</span></span>  
+4. <span data-ttu-id="cbc80-146">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="cbc80-146">Click Add.</span></span>
 
-## <a name="generate-intrastat-declaration"></a><span data-ttu-id="f14d5-147">Intrastat-ilmoituksen luominen</span><span class="sxs-lookup"><span data-stu-id="f14d5-147">Generate Intrastat declaration</span></span>
-1. <span data-ttu-id="f14d5-148">Valitse Vero > Ilmoitukset > Ulkomaankauppa > Intrastat</span><span class="sxs-lookup"><span data-stu-id="f14d5-148">Go to Tax > Declarations > Foreign trade > Intrastat</span></span>
-2. <span data-ttu-id="f14d5-149">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="f14d5-149">Click Validate.</span></span>
-    * <span data-ttu-id="f14d5-150">Oikeellisuustarkistus suoritetaan Ulkomaankaupan parametrit -sivun Tarkista asetukset -kentän mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="f14d5-150">The validation is done according to the Check setup field on the Foreign trade parameters page.</span></span>  
-3. <span data-ttu-id="f14d5-151">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f14d5-151">Click OK.</span></span>
-4. <span data-ttu-id="f14d5-152">Valitse Päivitä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-152">Click Update.</span></span>
-5. <span data-ttu-id="f14d5-153">Valitse Vähimmäisraja.</span><span class="sxs-lookup"><span data-stu-id="f14d5-153">Click Minimum limit.</span></span>
-6. <span data-ttu-id="f14d5-154">Syötä päivämäärä Aloituspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f14d5-154">In the Start date field, enter a date.</span></span>
-    * <span data-ttu-id="f14d5-155">Syötä kenttään esimerkiksi 1. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="f14d5-155">For example, enter January 1, 2015.</span></span>  
-7. <span data-ttu-id="f14d5-156">Valitse Tiivistä-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-156">Select Yes in the Compress field.</span></span>
-8. <span data-ttu-id="f14d5-157">Syötä päivämäärä Päättymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f14d5-157">In the End date field, enter a date.</span></span>
-    * <span data-ttu-id="f14d5-158">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="f14d5-158">For example, enter January 31, 2015.</span></span>  
-9. <span data-ttu-id="f14d5-159">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f14d5-159">Click OK.</span></span>
-10. <span data-ttu-id="f14d5-160">Valitse Päivitä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-160">Click Update.</span></span>
-11. <span data-ttu-id="f14d5-161">Valitse Tiivistä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-161">Click Compress.</span></span>
-    * <span data-ttu-id="f14d5-162">Tämä pakkaus tapahtuu sen mukaan, miten Intrastatin pakkausasetukset on määritetty.</span><span class="sxs-lookup"><span data-stu-id="f14d5-162">This compression happens according to how you set the Compression of intrastate settings.</span></span>  
-12. <span data-ttu-id="f14d5-163">Syötä päivämäärä Aloituspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f14d5-163">In the Start date field, enter a date.</span></span>
-    * <span data-ttu-id="f14d5-164">Syötä kenttään esimerkiksi 1. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="f14d5-164">For example, enter January 1, 2015.</span></span>  
-13. <span data-ttu-id="f14d5-165">Syötä päivämäärä Päättymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f14d5-165">In the End date field, enter a date.</span></span>
-    * <span data-ttu-id="f14d5-166">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="f14d5-166">For example, enter 31st January 2015.</span></span>  
-14. <span data-ttu-id="f14d5-167">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f14d5-167">Click OK.</span></span>
-15. <span data-ttu-id="f14d5-168">Valitse Päivitä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-168">Click Update.</span></span>
-16. <span data-ttu-id="f14d5-169">Valitse Muodosta uudestaan järjestysnumerot.</span><span class="sxs-lookup"><span data-stu-id="f14d5-169">Click Regenerate sequence numbers.</span></span>
-17. <span data-ttu-id="f14d5-170">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f14d5-170">Click OK.</span></span>
-18. <span data-ttu-id="f14d5-171">Valitse Tulostus.</span><span class="sxs-lookup"><span data-stu-id="f14d5-171">Click Output.</span></span>
-19. <span data-ttu-id="f14d5-172">Valitse Raportti.</span><span class="sxs-lookup"><span data-stu-id="f14d5-172">Click Report.</span></span>
-20. <span data-ttu-id="f14d5-173">Kirjoita Aloituspäivämäärä-kenttään raportointikauden ensimmäinen päivä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-173">In the From date field, enter the first date of the reporting period.</span></span>
-    * <span data-ttu-id="f14d5-174">Aseta päivämääräksi esim. 1. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="f14d5-174">For example, set the date to January 1, 2015.</span></span>  
-21. <span data-ttu-id="f14d5-175">Kirjoita päivämäärä Päivämäärään-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f14d5-175">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="f14d5-176">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="f14d5-176">For example, enter January 31, 2015.</span></span>  
-22. <span data-ttu-id="f14d5-177">Valitse Luo tiedosto -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-177">Select Yes in the Generate file field.</span></span>
-23. <span data-ttu-id="f14d5-178">Kirjoita arvo Tiedostonimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f14d5-178">In the File name field, type a value.</span></span>
-24. <span data-ttu-id="f14d5-179">Valitse Luo raportti -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f14d5-179">Select Yes in the Generate report field.</span></span>
-25. <span data-ttu-id="f14d5-180">Kirjoita arvo Raportin nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="f14d5-180">In the Report file name field, type a value.</span></span>
-26. <span data-ttu-id="f14d5-181">Valitse vaihtoehto kentässä Suunta.</span><span class="sxs-lookup"><span data-stu-id="f14d5-181">In the Direction field, select an option.</span></span>
-    * <span data-ttu-id="f14d5-182">Valitse esimerkiksi Lähtevät.</span><span class="sxs-lookup"><span data-stu-id="f14d5-182">For example, select 'Dispatches'.</span></span>  
-27. <span data-ttu-id="f14d5-183">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f14d5-183">Click OK.</span></span>
+## <a name="generate-intrastat-declaration"></a><span data-ttu-id="cbc80-147">Intrastat-ilmoituksen luominen</span><span class="sxs-lookup"><span data-stu-id="cbc80-147">Generate Intrastat declaration</span></span>
+1. <span data-ttu-id="cbc80-148">Valitse Vero > Ilmoitukset > Ulkomaankauppa > Intrastat</span><span class="sxs-lookup"><span data-stu-id="cbc80-148">Go to Tax > Declarations > Foreign trade > Intrastat</span></span>
+2. <span data-ttu-id="cbc80-149">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="cbc80-149">Click Validate.</span></span>
+    * <span data-ttu-id="cbc80-150">Oikeellisuustarkistus suoritetaan Ulkomaankaupan parametrit -sivun Tarkista asetukset -kentän mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="cbc80-150">The validation is done according to the Check setup field on the Foreign trade parameters page.</span></span>  
+3. <span data-ttu-id="cbc80-151">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cbc80-151">Click OK.</span></span>
+4. <span data-ttu-id="cbc80-152">Valitse Päivitä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-152">Click Update.</span></span>
+5. <span data-ttu-id="cbc80-153">Valitse Vähimmäisraja.</span><span class="sxs-lookup"><span data-stu-id="cbc80-153">Click Minimum limit.</span></span>
+6. <span data-ttu-id="cbc80-154">Syötä päivämäärä Aloituspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-154">In the Start date field, enter a date.</span></span>
+    * <span data-ttu-id="cbc80-155">Syötä kenttään esimerkiksi 1. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-155">For example, enter January 1, 2015.</span></span>  
+7. <span data-ttu-id="cbc80-156">Valitse Tiivistä-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-156">Select Yes in the Compress field.</span></span>
+8. <span data-ttu-id="cbc80-157">Syötä päivämäärä Päättymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-157">In the End date field, enter a date.</span></span>
+    * <span data-ttu-id="cbc80-158">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-158">For example, enter January 31, 2015.</span></span>  
+9. <span data-ttu-id="cbc80-159">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cbc80-159">Click OK.</span></span>
+10. <span data-ttu-id="cbc80-160">Valitse Päivitä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-160">Click Update.</span></span>
+11. <span data-ttu-id="cbc80-161">Valitse Tiivistä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-161">Click Compress.</span></span>
+    * <span data-ttu-id="cbc80-162">Tämä pakkaus tapahtuu sen mukaan, miten Intrastatin pakkausasetukset on määritetty.</span><span class="sxs-lookup"><span data-stu-id="cbc80-162">This compression happens according to how you set the Compression of intrastate settings.</span></span>  
+12. <span data-ttu-id="cbc80-163">Syötä päivämäärä Aloituspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-163">In the Start date field, enter a date.</span></span>
+    * <span data-ttu-id="cbc80-164">Syötä kenttään esimerkiksi 1. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-164">For example, enter January 1, 2015.</span></span>  
+13. <span data-ttu-id="cbc80-165">Syötä päivämäärä Päättymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-165">In the End date field, enter a date.</span></span>
+    * <span data-ttu-id="cbc80-166">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-166">For example, enter 31st January 2015.</span></span>  
+14. <span data-ttu-id="cbc80-167">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cbc80-167">Click OK.</span></span>
+15. <span data-ttu-id="cbc80-168">Valitse Päivitä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-168">Click Update.</span></span>
+16. <span data-ttu-id="cbc80-169">Valitse Muodosta uudestaan järjestysnumerot.</span><span class="sxs-lookup"><span data-stu-id="cbc80-169">Click Regenerate sequence numbers.</span></span>
+17. <span data-ttu-id="cbc80-170">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cbc80-170">Click OK.</span></span>
+18. <span data-ttu-id="cbc80-171">Valitse Tulostus.</span><span class="sxs-lookup"><span data-stu-id="cbc80-171">Click Output.</span></span>
+19. <span data-ttu-id="cbc80-172">Valitse Raportti.</span><span class="sxs-lookup"><span data-stu-id="cbc80-172">Click Report.</span></span>
+20. <span data-ttu-id="cbc80-173">Kirjoita Aloituspäivämäärä-kenttään raportointikauden ensimmäinen päivä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-173">In the From date field, enter the first date of the reporting period.</span></span>
+    * <span data-ttu-id="cbc80-174">Aseta päivämääräksi esim. 1. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-174">For example, set the date to January 1, 2015.</span></span>  
+21. <span data-ttu-id="cbc80-175">Kirjoita päivämäärä Päivämäärään-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-175">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="cbc80-176">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-176">For example, enter January 31, 2015.</span></span>  
+22. <span data-ttu-id="cbc80-177">Valitse Luo tiedosto -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-177">Select Yes in the Generate file field.</span></span>
+23. <span data-ttu-id="cbc80-178">Kirjoita arvo Tiedostonimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-178">In the File name field, type a value.</span></span>
+24. <span data-ttu-id="cbc80-179">Valitse Luo raportti -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-179">Select Yes in the Generate report field.</span></span>
+25. <span data-ttu-id="cbc80-180">Kirjoita arvo Raportin nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-180">In the Report file name field, type a value.</span></span>
+26. <span data-ttu-id="cbc80-181">Valitse vaihtoehto kentässä Suunta.</span><span class="sxs-lookup"><span data-stu-id="cbc80-181">In the Direction field, select an option.</span></span>
+    * <span data-ttu-id="cbc80-182">Valitse esimerkiksi Lähtevät.</span><span class="sxs-lookup"><span data-stu-id="cbc80-182">For example, select 'Dispatches'.</span></span>  
+27. <span data-ttu-id="cbc80-183">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cbc80-183">Click OK.</span></span>
 

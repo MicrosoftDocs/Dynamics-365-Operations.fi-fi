@@ -17,19 +17,19 @@ ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 3d27a4d36ff8c8192d2342cd97f29c556540d00b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "318508"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1545621"
 ---
-# <a name="change-the-date-for-the-session"></a><span data-ttu-id="ee334-103">Istunnon päivämäärän muuttaminen</span><span class="sxs-lookup"><span data-stu-id="ee334-103">Change the date for the session</span></span>
+# <a name="change-the-date-for-the-session"></a><span data-ttu-id="124aa-103">Istunnon päivämäärän muuttaminen</span><span class="sxs-lookup"><span data-stu-id="124aa-103">Change the date for the session</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ee334-104">Kuluvaa päivää käytetään oletusarvoisesti syötettäessä tai kirjattaessa merkintöjä kirjauskansioon.</span><span class="sxs-lookup"><span data-stu-id="ee334-104">By default, the current date is used when entering and posting journal entries or source documents.</span></span> <span data-ttu-id="ee334-105">Voit muuttaa nykyisessä istunnossa käytettävää päivämäärää.</span><span class="sxs-lookup"><span data-stu-id="ee334-105">You can change the date that is used for your current session.</span></span> <span data-ttu-id="ee334-106">Tällä toiminnolla voi tarvittaessa päivätä kirjauskansion tai lähdeasiakirjojen merkinnät varhemmaksi.</span><span class="sxs-lookup"><span data-stu-id="ee334-106">Use this feature to back-date journal entries or source documents, as necessary.</span></span>
+<span data-ttu-id="124aa-104">Kuluvaa päivää käytetään oletusarvoisesti syötettäessä tai kirjattaessa merkintöjä kirjauskansioon.</span><span class="sxs-lookup"><span data-stu-id="124aa-104">By default, the current date is used when entering and posting journal entries or source documents.</span></span> <span data-ttu-id="124aa-105">Voit muuttaa nykyisessä istunnossa käytettävää päivämäärää.</span><span class="sxs-lookup"><span data-stu-id="124aa-105">You can change the date that is used for your current session.</span></span> <span data-ttu-id="124aa-106">Tällä toiminnolla voi tarvittaessa päivätä kirjauskansion tai lähdeasiakirjojen merkinnät varhemmaksi.</span><span class="sxs-lookup"><span data-stu-id="124aa-106">Use this feature to back-date journal entries or source documents, as necessary.</span></span>
 
-1. <span data-ttu-id="ee334-107">Valitse Yleinen > Yleinen > Istunnon päivämäärä ja aika.</span><span class="sxs-lookup"><span data-stu-id="ee334-107">Go to Common > Common > Session date and time.</span></span>
-2. <span data-ttu-id="ee334-108">Syötä Päivämäärään-kenttään päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="ee334-108">In the Date field, enter a date.</span></span>
-3. <span data-ttu-id="ee334-109">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="ee334-109">Click OK.</span></span>
+1. <span data-ttu-id="124aa-107">Valitse Yleinen > Yleinen > Istunnon päivämäärä ja aika.</span><span class="sxs-lookup"><span data-stu-id="124aa-107">Go to Common > Common > Session date and time.</span></span>
+2. <span data-ttu-id="124aa-108">Syötä Päivämäärään-kenttään päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="124aa-108">In the Date field, enter a date.</span></span>
+3. <span data-ttu-id="124aa-109">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="124aa-109">Click OK.</span></span>
 
