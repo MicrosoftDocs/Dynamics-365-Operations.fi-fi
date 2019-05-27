@@ -19,20 +19,20 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 8e28595f65bdd960dbd0ff4b786584e1c01fa257
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "349765"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1546683"
 ---
-# <a name="project-attached-to-service-agreement"></a><span data-ttu-id="c4dc9-103">Huoltosopimukseen liitetty projekti</span><span class="sxs-lookup"><span data-stu-id="c4dc9-103">Project attached to service agreement</span></span> 
+# <a name="project-attached-to-service-agreement"></a><span data-ttu-id="3ac9b-103">Huoltosopimukseen liitetty projekti</span><span class="sxs-lookup"><span data-stu-id="3ac9b-103">Project attached to service agreement</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="c4dc9-104">Voit liittää huoltosopimuksia kaikkiin paitsi **Aikaprojekti**-tyypin projekteihin.</span><span class="sxs-lookup"><span data-stu-id="c4dc9-104">You can attach service agreements to projects of every type except the **Time project** type.</span></span>
+<span data-ttu-id="3ac9b-104">Voit liittää huoltosopimuksia kaikkiin paitsi **Aikaprojekti**-tyypin projekteihin.</span><span class="sxs-lookup"><span data-stu-id="3ac9b-104">You can attach service agreements to projects of every type except the **Time project** type.</span></span>
 
-<span data-ttu-id="c4dc9-105">Kaikki huoltotilaustapahtumat rekisteröidään ja kirjataan huoltosopimukseen liitetyn projektin kautta.</span><span class="sxs-lookup"><span data-stu-id="c4dc9-105">You register and post all service order transactions through the project that you attach to the service agreement.</span></span> <span data-ttu-id="c4dc9-106">**Kirjauskansiot**-linkillä, joka sijaitsee **Huoltohallinnan parametrit** -lomakkeessa, voit määrittää kirjauskansiot, joihin nämä tapahtumat rekisteröidään ja kirjataan.</span><span class="sxs-lookup"><span data-stu-id="c4dc9-106">You specify the journals in which these transactions are registered and posted on the **Journals** link in the **Service management parameters** form.</span></span>
+<span data-ttu-id="3ac9b-105">Kaikki huoltotilaustapahtumat rekisteröidään ja kirjataan huoltosopimukseen liitetyn projektin kautta.</span><span class="sxs-lookup"><span data-stu-id="3ac9b-105">You register and post all service order transactions through the project that you attach to the service agreement.</span></span> <span data-ttu-id="3ac9b-106">**Kirjauskansiot**-linkillä, joka sijaitsee **Huoltohallinnan parametrit** -lomakkeessa, voit määrittää kirjauskansiot, joihin nämä tapahtumat rekisteröidään ja kirjataan.</span><span class="sxs-lookup"><span data-stu-id="3ac9b-106">You specify the journals in which these transactions are registered and posted on the **Journals** link in the **Service management parameters** form.</span></span>
 
   
 

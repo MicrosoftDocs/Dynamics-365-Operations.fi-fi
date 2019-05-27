@@ -19,55 +19,55 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6a66f7ea7b30e033a39c292dff4064deef6bff4c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321567"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570339"
 ---
-# <a name="modify-a-service-bom"></a><span data-ttu-id="c684c-103">Huoltotuoterakenteen muokkaaminen</span><span class="sxs-lookup"><span data-stu-id="c684c-103">Modify a Service BOM</span></span> 
+# <a name="modify-a-service-bom"></a><span data-ttu-id="a893b-103">Huoltotuoterakenteen muokkaaminen</span><span class="sxs-lookup"><span data-stu-id="a893b-103">Modify a Service BOM</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="c684c-104">Voit kirjata elementin historian huollon tuoterakenteen sisällä.</span><span class="sxs-lookup"><span data-stu-id="c684c-104">You can record the history of an element in a service BOM.</span></span> <span data-ttu-id="c684c-105">Aina, kun päivität tuoterakenneriviä, **Historia**-ruutuun syntyy historiarivi.</span><span class="sxs-lookup"><span data-stu-id="c684c-105">Every time that you update a BOM line, a history line is created in the **History** pane.</span></span> <span data-ttu-id="c684c-106">Historiarivillä näkyy tuoterakennerivin nykyinen tila.</span><span class="sxs-lookup"><span data-stu-id="c684c-106">The history line shows the current state of the BOM line.</span></span>
+<span data-ttu-id="a893b-104">Voit kirjata elementin historian huollon tuoterakenteen sisällä.</span><span class="sxs-lookup"><span data-stu-id="a893b-104">You can record the history of an element in a service BOM.</span></span> <span data-ttu-id="a893b-105">Aina, kun päivität tuoterakenneriviä, **Historia**-ruutuun syntyy historiarivi.</span><span class="sxs-lookup"><span data-stu-id="a893b-105">Every time that you update a BOM line, a history line is created in the **History** pane.</span></span> <span data-ttu-id="a893b-106">Historiarivillä näkyy tuoterakennerivin nykyinen tila.</span><span class="sxs-lookup"><span data-stu-id="a893b-106">The history line shows the current state of the BOM line.</span></span>
 
-## <a name="update-a-service-bom-element"></a><span data-ttu-id="c684c-107">Huollon tuoterakenteen elementin päivittäminen</span><span class="sxs-lookup"><span data-stu-id="c684c-107">Update a service BOM element</span></span>
+## <a name="update-a-service-bom-element"></a><span data-ttu-id="a893b-107">Huollon tuoterakenteen elementin päivittäminen</span><span class="sxs-lookup"><span data-stu-id="a893b-107">Update a service BOM element</span></span>
 
-1.  <span data-ttu-id="c684c-108">Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.</span><span class="sxs-lookup"><span data-stu-id="c684c-108">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="a893b-108">Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.</span><span class="sxs-lookup"><span data-stu-id="a893b-108">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="c684c-109">Napsauta **Muokkaa** avataksesi **Huoltosopimukset**-tietolomakkeen.</span><span class="sxs-lookup"><span data-stu-id="c684c-109">Click **Edit** to open the **Service agreements** details form.</span></span>
+2.  <span data-ttu-id="a893b-109">Napsauta **Muokkaa** avataksesi **Huoltosopimukset**-tietolomakkeen.</span><span class="sxs-lookup"><span data-stu-id="a893b-109">Click **Edit** to open the **Service agreements** details form.</span></span>
 
-3.  <span data-ttu-id="c684c-110">Napsauta **toimintoruudussa** **Huoltokohteet** avataksesi **Huoltokohteet**-lomakkeen.</span><span class="sxs-lookup"><span data-stu-id="c684c-110">On the **Action Pane**, click **Service objects** to open the **Service objects** form.</span></span>
+3.  <span data-ttu-id="a893b-110">Napsauta **toimintoruudussa** **Huoltokohteet** avataksesi **Huoltokohteet**-lomakkeen.</span><span class="sxs-lookup"><span data-stu-id="a893b-110">On the **Action Pane**, click **Service objects** to open the **Service objects** form.</span></span>
 
-4.  <span data-ttu-id="c684c-111">Valitse päivitettävän kohteen tuoterakennerivi ja valitse sitten **Suunnittelija**.</span><span class="sxs-lookup"><span data-stu-id="c684c-111">Select the object to update a BOM line for, and then click **Designer**.</span></span>
+4.  <span data-ttu-id="a893b-111">Valitse päivitettävän kohteen tuoterakennerivi ja valitse sitten **Suunnittelija**.</span><span class="sxs-lookup"><span data-stu-id="a893b-111">Select the object to update a BOM line for, and then click **Designer**.</span></span>
 
-5.  <span data-ttu-id="c684c-112">Valitse päivitettävä tuoterakennerivi **Suunnittelija**-lomakkeessa ja valitse sitten **Muokkaa tuoterakenneriviä**.</span><span class="sxs-lookup"><span data-stu-id="c684c-112">In the **Designer** form, select the BOM line to update, and then click **Edit BOM line**.</span></span>
+5.  <span data-ttu-id="a893b-112">Valitse päivitettävä tuoterakennerivi **Suunnittelija**-lomakkeessa ja valitse sitten **Muokkaa tuoterakenneriviä**.</span><span class="sxs-lookup"><span data-stu-id="a893b-112">In the **Designer** form, select the BOM line to update, and then click **Edit BOM line**.</span></span>
     
     > [!NOTE]
-    > <P><span data-ttu-id="c684c-113">Valitse <STRONG>Määritys</STRONG>-välilehdellä <STRONG>Muokkaa lisättäessä</STRONG> -valintaruutu, jos haluat <STRONG>Muokkaa tuoterakenneriviä</STRONG> -lomakkeen avautuvan, kun vedät rivin huollon tuoterakenteeseen.</span><span class="sxs-lookup"><span data-stu-id="c684c-113">On the <STRONG>Setup</STRONG> tab, select the <STRONG>Edit when adding</STRONG> check box if you want the <STRONG>Edit BOM line</STRONG> form to open when you drag a line into the service BOM.</span></span></P>
+    > <P><span data-ttu-id="a893b-113">Valitse <STRONG>Määritys</STRONG>-välilehdellä <STRONG>Muokkaa lisättäessä</STRONG> -valintaruutu, jos haluat <STRONG>Muokkaa tuoterakenneriviä</STRONG> -lomakkeen avautuvan, kun vedät rivin huollon tuoterakenteeseen.</span><span class="sxs-lookup"><span data-stu-id="a893b-113">On the <STRONG>Setup</STRONG> tab, select the <STRONG>Edit when adding</STRONG> check box if you want the <STRONG>Edit BOM line</STRONG> form to open when you drag a line into the service BOM.</span></span></P>
 
-6.  <span data-ttu-id="c684c-114">Anna määrä **Määrä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c684c-114">In the **Quantity** field, enter the quantity.</span></span>
+6.  <span data-ttu-id="a893b-114">Anna määrä **Määrä**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="a893b-114">In the **Quantity** field, enter the quantity.</span></span>
 
-7.  <span data-ttu-id="c684c-115">Valitse **Luo huoltotilausrivi**-valintaruutu, jos haluat luoda huoltotilausrivin korvaavalle nimikkeelle, jonka voi sitten laskuttaa.</span><span class="sxs-lookup"><span data-stu-id="c684c-115">If you want to create a service order line for the replacement item, which can then be invoiced, select the **Create service order line** check box.</span></span>
+7.  <span data-ttu-id="a893b-115">Valitse **Luo huoltotilausrivi**-valintaruutu, jos haluat luoda huoltotilausrivin korvaavalle nimikkeelle, jonka voi sitten laskuttaa.</span><span class="sxs-lookup"><span data-stu-id="a893b-115">If you want to create a service order line for the replacement item, which can then be invoiced, select the **Create service order line** check box.</span></span>
 
-8.  <span data-ttu-id="c684c-116">Sulje lomake valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="c684c-116">Click **OK** to close the form.</span></span>
+8.  <span data-ttu-id="a893b-116">Sulje lomake valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="a893b-116">Click **OK** to close the form.</span></span>
 
-## <a name="delete-a-service-bom-line"></a><span data-ttu-id="c684c-117">Huollon tuoterakenteen poistaminen</span><span class="sxs-lookup"><span data-stu-id="c684c-117">Delete a service BOM line</span></span>
+## <a name="delete-a-service-bom-line"></a><span data-ttu-id="a893b-117">Huollon tuoterakenteen poistaminen</span><span class="sxs-lookup"><span data-stu-id="a893b-117">Delete a service BOM line</span></span>
 
-1.  <span data-ttu-id="c684c-118">Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.</span><span class="sxs-lookup"><span data-stu-id="c684c-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="a893b-118">Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.</span><span class="sxs-lookup"><span data-stu-id="a893b-118">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="c684c-119">Napsauta **Muokkaa** avataksesi **Huoltosopimukset**-tietolomakkeen.</span><span class="sxs-lookup"><span data-stu-id="c684c-119">Click **Edit** to open the **Service agreements** details form.</span></span>
+2.  <span data-ttu-id="a893b-119">Napsauta **Muokkaa** avataksesi **Huoltosopimukset**-tietolomakkeen.</span><span class="sxs-lookup"><span data-stu-id="a893b-119">Click **Edit** to open the **Service agreements** details form.</span></span>
 
-3.  <span data-ttu-id="c684c-120">Napsauta **toimintoruudussa** **Huoltokohteet** avataksesi **Huoltokohteet**-lomakkeen.</span><span class="sxs-lookup"><span data-stu-id="c684c-120">On the **Action Pane**, click **Service objects** to open the **Service objects** form.</span></span>
+3.  <span data-ttu-id="a893b-120">Napsauta **toimintoruudussa** **Huoltokohteet** avataksesi **Huoltokohteet**-lomakkeen.</span><span class="sxs-lookup"><span data-stu-id="a893b-120">On the **Action Pane**, click **Service objects** to open the **Service objects** form.</span></span>
 
-4.  <span data-ttu-id="c684c-121">Valitse objekti, josta huollon tuoterakennerivi poistetaan ja napsauta sitten **Suunnittelija**.</span><span class="sxs-lookup"><span data-stu-id="c684c-121">Select the object to delete a service BOM line from, and then click **Designer**.</span></span>
+4.  <span data-ttu-id="a893b-121">Valitse objekti, josta huollon tuoterakennerivi poistetaan ja napsauta sitten **Suunnittelija**.</span><span class="sxs-lookup"><span data-stu-id="a893b-121">Select the object to delete a service BOM line from, and then click **Designer**.</span></span>
 
-5.  <span data-ttu-id="c684c-122">Valitse poistettava tuoterakennerivi **Suunnittelija**-lomakkeessa ja valitse sitten **Poista tuoterakennerivi**.</span><span class="sxs-lookup"><span data-stu-id="c684c-122">In the **Designer** form, select the BOM line to delete, and then click **Delete BOM line**.</span></span>
+5.  <span data-ttu-id="a893b-122">Valitse poistettava tuoterakennerivi **Suunnittelija**-lomakkeessa ja valitse sitten **Poista tuoterakennerivi**.</span><span class="sxs-lookup"><span data-stu-id="a893b-122">In the **Designer** form, select the BOM line to delete, and then click **Delete BOM line**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="c684c-123">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="c684c-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a893b-123">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="a893b-123">See also</span></span>
 
-[<span data-ttu-id="c684c-124">Mallituoterakenteet </span><span class="sxs-lookup"><span data-stu-id="c684c-124">Template BOMs</span></span>](template-boms.md)
+[<span data-ttu-id="a893b-124">Mallituoterakenteet </span><span class="sxs-lookup"><span data-stu-id="a893b-124">Template BOMs</span></span>](template-boms.md)
 
   
 

@@ -18,28 +18,28 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 6dacd2b80ca0d51d81d2bdf5bc2636b47da621ee
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "352617"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564290"
 ---
-# <a name="parameter-configurations-for-retail-statements"></a><span data-ttu-id="c8e64-103">Vähittäismyynnin laskelmien parametrin konfiguraatiot</span><span class="sxs-lookup"><span data-stu-id="c8e64-103">Parameter configurations for Retail statements</span></span>
+# <a name="parameter-configurations-for-retail-statements"></a><span data-ttu-id="9959a-103">Vähittäismyynnin laskelmien parametrin konfiguraatiot</span><span class="sxs-lookup"><span data-stu-id="9959a-103">Parameter configurations for Retail statements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="c8e64-104">Tässä menettelyssä esitellään vähittäismyynnin parametrit konfiguraatiot, jotka vaikuttavat vähittäismyynnin laskelmien luomiseen ja kirjaamiseen.</span><span class="sxs-lookup"><span data-stu-id="c8e64-104">This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="c8e64-105">Näissä toimintaohjeissa käytetään esittely-yritystä USRT.</span><span class="sxs-lookup"><span data-stu-id="c8e64-105">This procedure uses the USRT demo company.</span></span>
+<span data-ttu-id="9959a-104">Tässä menettelyssä esitellään vähittäismyynnin parametrit konfiguraatiot, jotka vaikuttavat vähittäismyynnin laskelmien luomiseen ja kirjaamiseen.</span><span class="sxs-lookup"><span data-stu-id="9959a-104">This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="9959a-105">Näissä toimintaohjeissa käytetään esittely-yritystä USRT.</span><span class="sxs-lookup"><span data-stu-id="9959a-105">This procedure uses the USRT demo company.</span></span>
 
-1. <span data-ttu-id="c8e64-106">Valitse Vähittäismyynti ja kauppa > Pääkonttorin asetukset > Parametrit > Vähittäismyyntiparametrit.</span><span class="sxs-lookup"><span data-stu-id="c8e64-106">Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.</span></span>
-2. <span data-ttu-id="c8e64-107">Valitse Kirjaus-välilehti.</span><span class="sxs-lookup"><span data-stu-id="c8e64-107">Click the Posting tab.</span></span>
-    * <span data-ttu-id="c8e64-108">Valitse Kyllä, jos haluat kirjata erityisesti kausialennussummat.</span><span class="sxs-lookup"><span data-stu-id="c8e64-108">Select "Yes" if you want to post the periodic discount amounts specifically.</span></span>  
-    * <span data-ttu-id="c8e64-109">Valitse Vakio, kun haluat käyttää oletustilejä. Valitse Kausittainen, jos haluat määrittää kunkin kausialennuksen käyttämän tili.</span><span class="sxs-lookup"><span data-stu-id="c8e64-109">Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.</span></span>  
-    * <span data-ttu-id="c8e64-110">Valitse Yhteenveto, jos varastorivit yhdistetään aina, kun se on mahdollista.</span><span class="sxs-lookup"><span data-stu-id="c8e64-110">Select "Summary" if inventory lines should get aggregated whenever possible.</span></span>  
-    * <span data-ttu-id="c8e64-111">Valitse Kyllä, jos laskut ja maksut selvitetään automaattisesti laskelman kirjausprosessin osana.</span><span class="sxs-lookup"><span data-stu-id="c8e64-111">Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.</span></span>  
-    * <span data-ttu-id="c8e64-112">Valitse Kyllä, jos kassakaappiin toimitukset yhdistetään.</span><span class="sxs-lookup"><span data-stu-id="c8e64-112">Select "Yes" if Safe drop transactions should get aggregated.</span></span>  
-    * <span data-ttu-id="c8e64-113">Valitse Kyllä, jos pankkiin toimitukset yhdistetään.</span><span class="sxs-lookup"><span data-stu-id="c8e64-113">Select "Yes" if Bank drop transactions should get aggregated.</span></span>  
-    * <span data-ttu-id="c8e64-114">Valitse Kyllä, jos laskelman kirjauksen yhdistäminen otetaan käyttöön.</span><span class="sxs-lookup"><span data-stu-id="c8e64-114">Select "Yes" to turn aggregation on for Statement posting.</span></span>  
-    * <span data-ttu-id="c8e64-115">Valitse Kyllä, kun tilaukset luodaan ja käsitellään rinnakkain, kun laskelmat kirjataan.</span><span class="sxs-lookup"><span data-stu-id="c8e64-115">Select "Yes" to create and process orders in parallel when statements are posted.</span></span>  
-    * <span data-ttu-id="c8e64-116">Syötä kussakin erätyötehtävässä käsiteltävien tilausten enimmäismäärä.</span><span class="sxs-lookup"><span data-stu-id="c8e64-116">Enter the maximum orders to be processed in each batch job task.</span></span>  
-3. <span data-ttu-id="c8e64-117">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="c8e64-117">Click Save.</span></span>
+1. <span data-ttu-id="9959a-106">Valitse Vähittäismyynti ja kauppa > Pääkonttorin asetukset > Parametrit > Vähittäismyyntiparametrit.</span><span class="sxs-lookup"><span data-stu-id="9959a-106">Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.</span></span>
+2. <span data-ttu-id="9959a-107">Valitse Kirjaus-välilehti.</span><span class="sxs-lookup"><span data-stu-id="9959a-107">Click the Posting tab.</span></span>
+    * <span data-ttu-id="9959a-108">Valitse Kyllä, jos haluat kirjata erityisesti kausialennussummat.</span><span class="sxs-lookup"><span data-stu-id="9959a-108">Select "Yes" if you want to post the periodic discount amounts specifically.</span></span>  
+    * <span data-ttu-id="9959a-109">Valitse Vakio, kun haluat käyttää oletustilejä. Valitse Kausittainen, jos haluat määrittää kunkin kausialennuksen käyttämän tili.</span><span class="sxs-lookup"><span data-stu-id="9959a-109">Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.</span></span>  
+    * <span data-ttu-id="9959a-110">Valitse Yhteenveto, jos varastorivit yhdistetään aina, kun se on mahdollista.</span><span class="sxs-lookup"><span data-stu-id="9959a-110">Select "Summary" if inventory lines should get aggregated whenever possible.</span></span>  
+    * <span data-ttu-id="9959a-111">Valitse Kyllä, jos laskut ja maksut selvitetään automaattisesti laskelman kirjausprosessin osana.</span><span class="sxs-lookup"><span data-stu-id="9959a-111">Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.</span></span>  
+    * <span data-ttu-id="9959a-112">Valitse Kyllä, jos kassakaappiin toimitukset yhdistetään.</span><span class="sxs-lookup"><span data-stu-id="9959a-112">Select "Yes" if Safe drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="9959a-113">Valitse Kyllä, jos pankkiin toimitukset yhdistetään.</span><span class="sxs-lookup"><span data-stu-id="9959a-113">Select "Yes" if Bank drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="9959a-114">Valitse Kyllä, jos laskelman kirjauksen yhdistäminen otetaan käyttöön.</span><span class="sxs-lookup"><span data-stu-id="9959a-114">Select "Yes" to turn aggregation on for Statement posting.</span></span>  
+    * <span data-ttu-id="9959a-115">Valitse Kyllä, kun tilaukset luodaan ja käsitellään rinnakkain, kun laskelmat kirjataan.</span><span class="sxs-lookup"><span data-stu-id="9959a-115">Select "Yes" to create and process orders in parallel when statements are posted.</span></span>  
+    * <span data-ttu-id="9959a-116">Syötä kussakin erätyötehtävässä käsiteltävien tilausten enimmäismäärä.</span><span class="sxs-lookup"><span data-stu-id="9959a-116">Enter the maximum orders to be processed in each batch job task.</span></span>  
+3. <span data-ttu-id="9959a-117">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="9959a-117">Click Save.</span></span>
 

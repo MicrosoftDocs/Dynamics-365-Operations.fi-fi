@@ -18,37 +18,37 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9acb1c2672af70f535f3dce1c8f5a97e8d479158
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "343670"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552296"
 ---
-# <a name="add-a-predecessor-to-a-production-flow-activity"></a><span data-ttu-id="c3c05-103">Edeltäjän lisääminen tuotantovirran tehtävään</span><span class="sxs-lookup"><span data-stu-id="c3c05-103">Add a predecessor to a production flow activity</span></span>
+# <a name="add-a-predecessor-to-a-production-flow-activity"></a><span data-ttu-id="7c4f9-103">Edeltäjän lisääminen tuotantovirran tehtävään</span><span class="sxs-lookup"><span data-stu-id="7c4f9-103">Add a predecessor to a production flow activity</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="c3c05-104">Kaikkien tehtävien on oltava järjestyksessä tuotantovirran versiossa.</span><span class="sxs-lookup"><span data-stu-id="c3c05-104">In a production flow version, all activities must be sequenced.</span></span> <span data-ttu-id="c3c05-105">Tehtävällä voi olla yksi tai useampi edeltäjä tai seuraaja.</span><span class="sxs-lookup"><span data-stu-id="c3c05-105">An activity can have one or multiple predecessors or successors.</span></span> 
+<span data-ttu-id="7c4f9-104">Kaikkien tehtävien on oltava järjestyksessä tuotantovirran versiossa.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-104">In a production flow version, all activities must be sequenced.</span></span> <span data-ttu-id="7c4f9-105">Tehtävällä voi olla yksi tai useampi edeltäjä tai seuraaja.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-105">An activity can have one or multiple predecessors or successors.</span></span> 
 
-<span data-ttu-id="c3c05-106">Tässä menettelyssä kuvataan, miten liität tehtävään edeltäjän.</span><span class="sxs-lookup"><span data-stu-id="c3c05-106">This procedure shows how to associate a predecessor to an activity.</span></span> 
+<span data-ttu-id="7c4f9-106">Tässä menettelyssä kuvataan, miten liität tehtävään edeltäjän.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-106">This procedure shows how to associate a predecessor to an activity.</span></span> 
 
-<span data-ttu-id="c3c05-107">Tämän tehtävän suorittamiseen tarvitset tuotantovirran, jossa on luonnosversio, jolla on vähintään kaksi yhdistettävää aktiviteetteihin.</span><span class="sxs-lookup"><span data-stu-id="c3c05-107">To perform this task, you need a production flow that has the Draft version with at least two activities that can be connected.</span></span> 
+<span data-ttu-id="7c4f9-107">Tämän tehtävän suorittamiseen tarvitset tuotantovirran, jossa on luonnosversio, jolla on vähintään kaksi yhdistettävää aktiviteetteihin.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-107">To perform this task, you need a production flow that has the Draft version with at least two activities that can be connected.</span></span> 
 
-<span data-ttu-id="c3c05-108">Lisätietoja on mietinnössä Lean-valmistuksen tuotantovirrat ja tehtävät.</span><span class="sxs-lookup"><span data-stu-id="c3c05-108">To learn more, read the white paper "Production flows and activities in lean manufacturing."</span></span>
+<span data-ttu-id="7c4f9-108">Lisätietoja on mietinnössä Lean-valmistuksen tuotantovirrat ja tehtävät.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-108">To learn more, read the white paper "Production flows and activities in lean manufacturing."</span></span>
 
 
-## <a name="find-the-production-flow-and-version"></a><span data-ttu-id="c3c05-109">Etsi tuotantovirta ja versio</span><span class="sxs-lookup"><span data-stu-id="c3c05-109">Find the production flow and version</span></span>
-1. <span data-ttu-id="c3c05-110">Valitse Tuotannonhallinta > Asetukset > Lean-tuotantovirta > Tuotantovirrat.</span><span class="sxs-lookup"><span data-stu-id="c3c05-110">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
-2. <span data-ttu-id="c3c05-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c3c05-111">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="c3c05-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c3c05-112">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="c3c05-113">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c3c05-113">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="c3c05-114">Valitse Tehtävät.</span><span class="sxs-lookup"><span data-stu-id="c3c05-114">Click Activities.</span></span>
+## <a name="find-the-production-flow-and-version"></a><span data-ttu-id="7c4f9-109">Etsi tuotantovirta ja versio</span><span class="sxs-lookup"><span data-stu-id="7c4f9-109">Find the production flow and version</span></span>
+1. <span data-ttu-id="7c4f9-110">Valitse Tuotannonhallinta > Asetukset > Lean-tuotantovirta > Tuotantovirrat.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-110">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="7c4f9-111">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-111">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="7c4f9-112">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-112">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="7c4f9-113">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-113">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="7c4f9-114">Valitse Tehtävät.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-114">Click Activities.</span></span>
 
-## <a name="select-an-activity-and-add-a-predecessor"></a><span data-ttu-id="c3c05-115">Valitse tehtävä ja lisää edeltäjä</span><span class="sxs-lookup"><span data-stu-id="c3c05-115">Select an activity and add a predecessor</span></span>
-1. <span data-ttu-id="c3c05-116">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c3c05-116">In the list, find and select the desired record.</span></span>
-2. <span data-ttu-id="c3c05-117">Valitse Lisää edeltäjä.</span><span class="sxs-lookup"><span data-stu-id="c3c05-117">Click Add predecessor.</span></span>
-3. <span data-ttu-id="c3c05-118">Syötä tai valitse arvo Tehtävä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c3c05-118">In the Activity field, enter or select a value.</span></span>
-4. <span data-ttu-id="c3c05-119">Lisää Syklin kestojen suhde -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="c3c05-119">In the Cycle time ratio field, enter a number.</span></span>
-    * <span data-ttu-id="c3c05-120">Tehtäväsuhteen oletusarvoinen syklin keston suhde on 1.</span><span class="sxs-lookup"><span data-stu-id="c3c05-120">The default cycle time ratio of an activity relation is 1.</span></span> <span data-ttu-id="c3c05-121">Oletuksena on, että molemmat tehtävät suoritetaan samassa tahdissa eli niiden tahtiaika on sama.</span><span class="sxs-lookup"><span data-stu-id="c3c05-121">This assumes that both activities run at the same pace or takt time.</span></span> <span data-ttu-id="c3c05-122">Jos edeltäjä suoritetaan suuremmalla nopeudella (alempi tahtiaika), suhteen pitäisi olla pienempi kuin 1; jos edeltäjä suoritetaan hitaammalla nopeudella (korkeampi tahtiaika) syklin kestosuhde on suurempi kuin 1.</span><span class="sxs-lookup"><span data-stu-id="c3c05-122">If the predecessor runs at a higher pace (lower takt time), the ratio should be lower than 1, if the predecessor runs at a slower pace (higher takt time) the cycle time ratio is greater than 1.</span></span>  
-5. <span data-ttu-id="c3c05-123">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="c3c05-123">Click OK.</span></span>
+## <a name="select-an-activity-and-add-a-predecessor"></a><span data-ttu-id="7c4f9-115">Valitse tehtävä ja lisää edeltäjä</span><span class="sxs-lookup"><span data-stu-id="7c4f9-115">Select an activity and add a predecessor</span></span>
+1. <span data-ttu-id="7c4f9-116">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-116">In the list, find and select the desired record.</span></span>
+2. <span data-ttu-id="7c4f9-117">Valitse Lisää edeltäjä.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-117">Click Add predecessor.</span></span>
+3. <span data-ttu-id="7c4f9-118">Syötä tai valitse arvo Tehtävä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-118">In the Activity field, enter or select a value.</span></span>
+4. <span data-ttu-id="7c4f9-119">Lisää Syklin kestojen suhde -kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-119">In the Cycle time ratio field, enter a number.</span></span>
+    * <span data-ttu-id="7c4f9-120">Tehtäväsuhteen oletusarvoinen syklin keston suhde on 1.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-120">The default cycle time ratio of an activity relation is 1.</span></span> <span data-ttu-id="7c4f9-121">Oletuksena on, että molemmat tehtävät suoritetaan samassa tahdissa eli niiden tahtiaika on sama.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-121">This assumes that both activities run at the same pace or takt time.</span></span> <span data-ttu-id="7c4f9-122">Jos edeltäjä suoritetaan suuremmalla nopeudella (alempi tahtiaika), suhteen pitäisi olla pienempi kuin 1; jos edeltäjä suoritetaan hitaammalla nopeudella (korkeampi tahtiaika) syklin kestosuhde on suurempi kuin 1.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-122">If the predecessor runs at a higher pace (lower takt time), the ratio should be lower than 1, if the predecessor runs at a slower pace (higher takt time) the cycle time ratio is greater than 1.</span></span>  
+5. <span data-ttu-id="7c4f9-123">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7c4f9-123">Click OK.</span></span>
 

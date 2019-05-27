@@ -18,26 +18,26 @@ ms.author: margoc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 2012 R3 CU8
 ms.openlocfilehash: 4f2edba4add691e9ad4c7829551c6f79b9804853
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "357723"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555262"
 ---
-# <a name="quick-import-export"></a><span data-ttu-id="1e8f1-103">Pikatuonti/-vienti</span><span class="sxs-lookup"><span data-stu-id="1e8f1-103">Quick import export</span></span>
+# <a name="quick-import-export"></a><span data-ttu-id="a58b7-103">Pikatuonti/-vienti</span><span class="sxs-lookup"><span data-stu-id="a58b7-103">Quick import export</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="1e8f1-104">Pikatuonti- ja vientitoiminnon tarkoitus on vähentää tuonti- ja vientivaiheita.</span><span class="sxs-lookup"><span data-stu-id="1e8f1-104">The purpose of Quick import export is to let you import and export with fewer steps.</span></span>
+<span data-ttu-id="a58b7-104">Pikatuonti- ja vientitoiminnon tarkoitus on vähentää tuonti- ja vientivaiheita.</span><span class="sxs-lookup"><span data-stu-id="a58b7-104">The purpose of Quick import export is to let you import and export with fewer steps.</span></span>
 
-<span data-ttu-id="1e8f1-105">Pikatuonti- ja vientiomaisuus on lisätty, jotta käyttäjät voivat tuoda tai viedä yksinkertaisia, nopeasti suoritettavia töitä.</span><span class="sxs-lookup"><span data-stu-id="1e8f1-105">We added the Quick Import Export feature to let users import or export simple jobs that they want to execute quickly.</span></span> <span data-ttu-id="1e8f1-106">Ihannetapauksessa tätä ominaisuutta käytetään skenaarioissa, joissa tiedosto yhdistetään automaattisesti järjestelmään eikä käyttäjän tarvitse käyttää yhdistämisen lisäasetuksia tai luoda toistuvia tuonti- tai vientitöitä.</span><span class="sxs-lookup"><span data-stu-id="1e8f1-106">Ideally this feature is used in scenarios in which a file automatically maps to the system and user does not need to go through advanced mapping or create repeated import or export jobs.</span></span>
+<span data-ttu-id="a58b7-105">Pikatuonti- ja vientiomaisuus on lisätty, jotta käyttäjät voivat tuoda tai viedä yksinkertaisia, nopeasti suoritettavia töitä.</span><span class="sxs-lookup"><span data-stu-id="a58b7-105">We added the Quick Import Export feature to let users import or export simple jobs that they want to execute quickly.</span></span> <span data-ttu-id="a58b7-106">Ihannetapauksessa tätä ominaisuutta käytetään skenaarioissa, joissa tiedosto yhdistetään automaattisesti järjestelmään eikä käyttäjän tarvitse käyttää yhdistämisen lisäasetuksia tai luoda toistuvia tuonti- tai vientitöitä.</span><span class="sxs-lookup"><span data-stu-id="a58b7-106">Ideally this feature is used in scenarios in which a file automatically maps to the system and user does not need to go through advanced mapping or create repeated import or export jobs.</span></span>
 
-- <span data-ttu-id="1e8f1-107">Tämä ominaisuus tukee sekä käyttövalmiita että mukautettuja yksikköjä.</span><span class="sxs-lookup"><span data-stu-id="1e8f1-107">This feature supports working with both out-of-the-box and custom entities.</span></span>
-- <span data-ttu-id="1e8f1-108">Tuonti on mahdollista tiedostoista tai, jos käytät ODBC-tietolähdettä, voi määrittää tuonnin valitsemalla kyselyn.</span><span class="sxs-lookup"><span data-stu-id="1e8f1-108">You can import from files, and if you are using an ODBC data source, you can select a query to use to define your import.</span></span>
-- <span data-ttu-id="1e8f1-109">Sinulla on oltava aiemmin määritetyt AX- tai tiedostomuotoiset lähdetietomuodot ja sinun on tiedettävä niiden sijainti.</span><span class="sxs-lookup"><span data-stu-id="1e8f1-109">You must have previously defined source data formats for either AX or File, and know where they are located.</span></span>
-- <span data-ttu-id="1e8f1-110">Pikatuontia tai -vientiä varten ei tarvitse luoda käsittelyryhmää, sillä järjestelmä luo sen automaattisesti tuonti- tai vientityön suorittamisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="1e8f1-110">You do not need to create a processing group to use quick import/export, one will be automatically created by the system when executing the import or export job.</span></span> <span data-ttu-id="1e8f1-111">Voit myös säilyttää halutessasi pikatuonnilla- tai viennillä tuotujen tietojen historiatiedot.</span><span class="sxs-lookup"><span data-stu-id="1e8f1-111">You can also choose keep the history of the data imported by the quick import/export.</span></span>
+- <span data-ttu-id="a58b7-107">Tämä ominaisuus tukee sekä käyttövalmiita että mukautettuja yksikköjä.</span><span class="sxs-lookup"><span data-stu-id="a58b7-107">This feature supports working with both out-of-the-box and custom entities.</span></span>
+- <span data-ttu-id="a58b7-108">Tuonti on mahdollista tiedostoista tai, jos käytät ODBC-tietolähdettä, voi määrittää tuonnin valitsemalla kyselyn.</span><span class="sxs-lookup"><span data-stu-id="a58b7-108">You can import from files, and if you are using an ODBC data source, you can select a query to use to define your import.</span></span>
+- <span data-ttu-id="a58b7-109">Sinulla on oltava aiemmin määritetyt AX- tai tiedostomuotoiset lähdetietomuodot ja sinun on tiedettävä niiden sijainti.</span><span class="sxs-lookup"><span data-stu-id="a58b7-109">You must have previously defined source data formats for either AX or File, and know where they are located.</span></span>
+- <span data-ttu-id="a58b7-110">Pikatuontia tai -vientiä varten ei tarvitse luoda käsittelyryhmää, sillä järjestelmä luo sen automaattisesti tuonti- tai vientityön suorittamisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="a58b7-110">You do not need to create a processing group to use quick import/export, one will be automatically created by the system when executing the import or export job.</span></span> <span data-ttu-id="a58b7-111">Voit myös säilyttää halutessasi pikatuonnilla- tai viennillä tuotujen tietojen historiatiedot.</span><span class="sxs-lookup"><span data-stu-id="a58b7-111">You can also choose keep the history of the data imported by the quick import/export.</span></span>
 
-  <span data-ttu-id="1e8f1-112">Huomaa, että pikatuonti- ja vientitoiminto olettaa, että tunnet DIXF-käsitteet.</span><span class="sxs-lookup"><span data-stu-id="1e8f1-112">Note that Quick import export assumes that you are familiar with the concepts of DIXF.</span></span>
+  <span data-ttu-id="a58b7-112">Huomaa, että pikatuonti- ja vientitoiminto olettaa, että tunnet DIXF-käsitteet.</span><span class="sxs-lookup"><span data-stu-id="a58b7-112">Note that Quick import export assumes that you are familiar with the concepts of DIXF.</span></span>
 
 
 

@@ -17,64 +17,64 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 16ed11bce92920fe8240fc85f706a2ac6ab0a04b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336287"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572808"
 ---
-# <a name="create-and-process-a-conformance"></a><span data-ttu-id="d006b-103">Luo ja käsittele määritysten noudattaminen</span><span class="sxs-lookup"><span data-stu-id="d006b-103">Create and process a conformance</span></span>
+# <a name="create-and-process-a-conformance"></a><span data-ttu-id="8f191-103">Luo ja käsittele määritysten noudattaminen</span><span class="sxs-lookup"><span data-stu-id="8f191-103">Create and process a conformance</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d006b-104">Tällä menettelyllä voi hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella.</span><span class="sxs-lookup"><span data-stu-id="d006b-104">Use this procedure to perform nonconformance management, based on an existing quality order.</span></span> <span data-ttu-id="d006b-105">Voit toistaa tallenteen USMF-esittely-yrityksessä ja käyttää ehdotettuja arvoja.</span><span class="sxs-lookup"><span data-stu-id="d006b-105">You can run this recording in the USMF demo company and can use the suggested values.</span></span> <span data-ttu-id="d006b-106">Tämän menettelyn suorittaa yleensä laatuassistentti.</span><span class="sxs-lookup"><span data-stu-id="d006b-106">Typically, this procedure is performed by a quality clerk.</span></span>  <span data-ttu-id="d006b-107">Edellytyksenä on suorittaa Tarkista tavaroiden laatu -tehtävätallenteen suorittaminen.</span><span class="sxs-lookup"><span data-stu-id="d006b-107">As a prerequisite, run the “Inspect the quality of goods” task recording.</span></span> <span data-ttu-id="d006b-108">Määrityksistä poikkeamisen hyväksymisen käsittely edellyttää, että tehtävätallenteen suorittajalle on määritetty Nimi-arvo Käyttäjät-sivulla.</span><span class="sxs-lookup"><span data-stu-id="d006b-108">To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page.</span></span> <span data-ttu-id="d006b-109">Asiakirjojen huomautusten käyttö taas edellyttää, että tiedoston käsittely on aktivoitu käyttäjäasetuksissa.</span><span class="sxs-lookup"><span data-stu-id="d006b-109">To use the document notes, the user must also have Document handling activated in the user options.</span></span>
+<span data-ttu-id="8f191-104">Tällä menettelyllä voi hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella.</span><span class="sxs-lookup"><span data-stu-id="8f191-104">Use this procedure to perform nonconformance management, based on an existing quality order.</span></span> <span data-ttu-id="8f191-105">Voit toistaa tallenteen USMF-esittely-yrityksessä ja käyttää ehdotettuja arvoja.</span><span class="sxs-lookup"><span data-stu-id="8f191-105">You can run this recording in the USMF demo company and can use the suggested values.</span></span> <span data-ttu-id="8f191-106">Tämän menettelyn suorittaa yleensä laatuassistentti.</span><span class="sxs-lookup"><span data-stu-id="8f191-106">Typically, this procedure is performed by a quality clerk.</span></span>  <span data-ttu-id="8f191-107">Edellytyksenä on suorittaa Tarkista tavaroiden laatu -tehtävätallenteen suorittaminen.</span><span class="sxs-lookup"><span data-stu-id="8f191-107">As a prerequisite, run the “Inspect the quality of goods” task recording.</span></span> <span data-ttu-id="8f191-108">Määrityksistä poikkeamisen hyväksymisen käsittely edellyttää, että tehtävätallenteen suorittajalle on määritetty Nimi-arvo Käyttäjät-sivulla.</span><span class="sxs-lookup"><span data-stu-id="8f191-108">To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page.</span></span> <span data-ttu-id="8f191-109">Asiakirjojen huomautusten käyttö taas edellyttää, että tiedoston käsittely on aktivoitu käyttäjäasetuksissa.</span><span class="sxs-lookup"><span data-stu-id="8f191-109">To use the document notes, the user must also have Document handling activated in the user options.</span></span>
 
 
-## <a name="select-a-quality-order"></a><span data-ttu-id="d006b-110">Valitse laatutilaus.</span><span class="sxs-lookup"><span data-stu-id="d006b-110">Select a quality order</span></span>
-1. <span data-ttu-id="d006b-111">Valitse Laatutilaukset.</span><span class="sxs-lookup"><span data-stu-id="d006b-111">Go to Quality orders.</span></span>
-2. <span data-ttu-id="d006b-112">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="d006b-112">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="d006b-113">Valitse Tarkista tavaroiden laatu -tehtävätallenteessa luotu laatutilaus.</span><span class="sxs-lookup"><span data-stu-id="d006b-113">Select the quality order that was created from the "Inspect the quality of goods" task recording.</span></span>  
+## <a name="select-a-quality-order"></a><span data-ttu-id="8f191-110">Valitse laatutilaus.</span><span class="sxs-lookup"><span data-stu-id="8f191-110">Select a quality order</span></span>
+1. <span data-ttu-id="8f191-111">Valitse Laatutilaukset.</span><span class="sxs-lookup"><span data-stu-id="8f191-111">Go to Quality orders.</span></span>
+2. <span data-ttu-id="8f191-112">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="8f191-112">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="8f191-113">Valitse Tarkista tavaroiden laatu -tehtävätallenteessa luotu laatutilaus.</span><span class="sxs-lookup"><span data-stu-id="8f191-113">Select the quality order that was created from the "Inspect the quality of goods" task recording.</span></span>  
 
-## <a name="create-a-nonconformance"></a><span data-ttu-id="d006b-114">Luo määrityksistä poikkeaminen</span><span class="sxs-lookup"><span data-stu-id="d006b-114">Create a nonconformance</span></span>
-1. <span data-ttu-id="d006b-115">Valitse Kyselyt.</span><span class="sxs-lookup"><span data-stu-id="d006b-115">Click Inquiries.</span></span>
-2. <span data-ttu-id="d006b-116">Valitse Määrityksistä poikkeamiset.</span><span class="sxs-lookup"><span data-stu-id="d006b-116">Click Non conformances.</span></span>
-3. <span data-ttu-id="d006b-117">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d006b-117">Click New.</span></span>
-4. <span data-ttu-id="d006b-118">Avaa haku napsauttamalla Ongelman tyyppi -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="d006b-118">In the Problem type field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="d006b-119">Valitse tarkistuksen aikana löytynyt ongelma.</span><span class="sxs-lookup"><span data-stu-id="d006b-119">Select the problem that was found during the inspection process.</span></span>  
-5. <span data-ttu-id="d006b-120">Avaa haku napsauttamalla Ongelman tyyppi -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="d006b-120">In the Problem type field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="d006b-121">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="d006b-121">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="d006b-122">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="d006b-122">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="d006b-123">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="d006b-123">Click OK.</span></span>
+## <a name="create-a-nonconformance"></a><span data-ttu-id="8f191-114">Luo määrityksistä poikkeaminen</span><span class="sxs-lookup"><span data-stu-id="8f191-114">Create a nonconformance</span></span>
+1. <span data-ttu-id="8f191-115">Valitse Kyselyt.</span><span class="sxs-lookup"><span data-stu-id="8f191-115">Click Inquiries.</span></span>
+2. <span data-ttu-id="8f191-116">Valitse Määrityksistä poikkeamiset.</span><span class="sxs-lookup"><span data-stu-id="8f191-116">Click Non conformances.</span></span>
+3. <span data-ttu-id="8f191-117">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="8f191-117">Click New.</span></span>
+4. <span data-ttu-id="8f191-118">Avaa haku napsauttamalla Ongelman tyyppi -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="8f191-118">In the Problem type field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="8f191-119">Valitse tarkistuksen aikana löytynyt ongelma.</span><span class="sxs-lookup"><span data-stu-id="8f191-119">Select the problem that was found during the inspection process.</span></span>  
+5. <span data-ttu-id="8f191-120">Avaa haku napsauttamalla Ongelman tyyppi -kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="8f191-120">In the Problem type field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="8f191-121">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="8f191-121">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="8f191-122">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="8f191-122">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="8f191-123">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="8f191-123">Click OK.</span></span>
 
-## <a name="approvereject-a-nonconformance"></a><span data-ttu-id="d006b-124">Hyväksy tai hylkää määrityksistä poikkeaminen</span><span class="sxs-lookup"><span data-stu-id="d006b-124">Approve/reject a nonconformance</span></span>
-1. <span data-ttu-id="d006b-125">Valitse Toiminnot.</span><span class="sxs-lookup"><span data-stu-id="d006b-125">Click Functions.</span></span>
-2. <span data-ttu-id="d006b-126">Valitse Hyväksy määrityksistä poikkeaminen.</span><span class="sxs-lookup"><span data-stu-id="d006b-126">Click Approve non conformance.</span></span>
-    * <span data-ttu-id="d006b-127">Hyväksy tässä esimerkissä määrityksistä poikkeamisen.</span><span class="sxs-lookup"><span data-stu-id="d006b-127">For this example, approve the nonconformance.</span></span> <span data-ttu-id="d006b-128">Hyväksytyt määrityksistä poikkeamiset voidaan liittää liittyviin toimintoihin tallentamaan työ, joka tehdään osana määrityksistä poikkeamisen käsittelyä ja, kuten tässä työvaiheessa, korjauskäsittelyn käsittelyä.</span><span class="sxs-lookup"><span data-stu-id="d006b-128">Approved nonconformances can be associated with related operations to record work that is done as part of the nonconformance handling and, as in this task recording, the processing of correction handling.</span></span>  
-3. <span data-ttu-id="d006b-129">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="d006b-129">Click Yes.</span></span>
+## <a name="approvereject-a-nonconformance"></a><span data-ttu-id="8f191-124">Hyväksy tai hylkää määrityksistä poikkeaminen</span><span class="sxs-lookup"><span data-stu-id="8f191-124">Approve/reject a nonconformance</span></span>
+1. <span data-ttu-id="8f191-125">Valitse Toiminnot.</span><span class="sxs-lookup"><span data-stu-id="8f191-125">Click Functions.</span></span>
+2. <span data-ttu-id="8f191-126">Valitse Hyväksy määrityksistä poikkeaminen.</span><span class="sxs-lookup"><span data-stu-id="8f191-126">Click Approve non conformance.</span></span>
+    * <span data-ttu-id="8f191-127">Hyväksy tässä esimerkissä määrityksistä poikkeamisen.</span><span class="sxs-lookup"><span data-stu-id="8f191-127">For this example, approve the nonconformance.</span></span> <span data-ttu-id="8f191-128">Hyväksytyt määrityksistä poikkeamiset voidaan liittää liittyviin toimintoihin tallentamaan työ, joka tehdään osana määrityksistä poikkeamisen käsittelyä ja, kuten tässä työvaiheessa, korjauskäsittelyn käsittelyä.</span><span class="sxs-lookup"><span data-stu-id="8f191-128">Approved nonconformances can be associated with related operations to record work that is done as part of the nonconformance handling and, as in this task recording, the processing of correction handling.</span></span>  
+3. <span data-ttu-id="8f191-129">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="8f191-129">Click Yes.</span></span>
 
-## <a name="create-a-correction-action"></a><span data-ttu-id="d006b-130">Luo korjaustoiminto</span><span class="sxs-lookup"><span data-stu-id="d006b-130">Create a correction action</span></span>
-1. <span data-ttu-id="d006b-131">Valitse Korjaukset.</span><span class="sxs-lookup"><span data-stu-id="d006b-131">Click Corrections.</span></span>
-2. <span data-ttu-id="d006b-132">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d006b-132">Click New.</span></span>
-3. <span data-ttu-id="d006b-133">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="d006b-133">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="d006b-134">Avaa haku napsauttamalla Henkilöstönumero-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="d006b-134">In the Personnel number field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="d006b-135">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="d006b-135">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="d006b-136">Klikkaa Valitse.</span><span class="sxs-lookup"><span data-stu-id="d006b-136">Click Select.</span></span>
-7. <span data-ttu-id="d006b-137">Valitse Liitä.</span><span class="sxs-lookup"><span data-stu-id="d006b-137">Click Attach.</span></span>
-    * <span data-ttu-id="d006b-138">Luo korjausta koskeva huomautus.</span><span class="sxs-lookup"><span data-stu-id="d006b-138">Create a note about the correction.</span></span> <span data-ttu-id="d006b-139">Tässä esimerkissä toimintona on yhteydenotto toimittajaan ja keskustelu määrityksistä poikkeamistapauksesta.</span><span class="sxs-lookup"><span data-stu-id="d006b-139">For this example, the action is to contact the vendor to discuss the nonconformance case.</span></span>  
-8. <span data-ttu-id="d006b-140">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d006b-140">Click New.</span></span>
-9. <span data-ttu-id="d006b-141">Valitse Huomautus.</span><span class="sxs-lookup"><span data-stu-id="d006b-141">Click Note.</span></span>
-    * <span data-ttu-id="d006b-142">Huomaa, että raporttiasetusten mukaan eri asiakirjatyyppejä voi tulostaa raportteihin, jotka liittyvät määrityksistä poikkeamisen hallintaan.</span><span class="sxs-lookup"><span data-stu-id="d006b-142">Note that, depending on the report setup, different document types can be printed on the reports that are related to nonconformance management.</span></span>  
-10. <span data-ttu-id="d006b-143">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="d006b-143">In the Description field, type a value.</span></span>
-11. <span data-ttu-id="d006b-144">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d006b-144">Close the page.</span></span>
+## <a name="create-a-correction-action"></a><span data-ttu-id="8f191-130">Luo korjaustoiminto</span><span class="sxs-lookup"><span data-stu-id="8f191-130">Create a correction action</span></span>
+1. <span data-ttu-id="8f191-131">Valitse Korjaukset.</span><span class="sxs-lookup"><span data-stu-id="8f191-131">Click Corrections.</span></span>
+2. <span data-ttu-id="8f191-132">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="8f191-132">Click New.</span></span>
+3. <span data-ttu-id="8f191-133">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="8f191-133">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="8f191-134">Avaa haku napsauttamalla Henkilöstönumero-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="8f191-134">In the Personnel number field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="8f191-135">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="8f191-135">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="8f191-136">Klikkaa Valitse.</span><span class="sxs-lookup"><span data-stu-id="8f191-136">Click Select.</span></span>
+7. <span data-ttu-id="8f191-137">Valitse Liitä.</span><span class="sxs-lookup"><span data-stu-id="8f191-137">Click Attach.</span></span>
+    * <span data-ttu-id="8f191-138">Luo korjausta koskeva huomautus.</span><span class="sxs-lookup"><span data-stu-id="8f191-138">Create a note about the correction.</span></span> <span data-ttu-id="8f191-139">Tässä esimerkissä toimintona on yhteydenotto toimittajaan ja keskustelu määrityksistä poikkeamistapauksesta.</span><span class="sxs-lookup"><span data-stu-id="8f191-139">For this example, the action is to contact the vendor to discuss the nonconformance case.</span></span>  
+8. <span data-ttu-id="8f191-140">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="8f191-140">Click New.</span></span>
+9. <span data-ttu-id="8f191-141">Valitse Huomautus.</span><span class="sxs-lookup"><span data-stu-id="8f191-141">Click Note.</span></span>
+    * <span data-ttu-id="8f191-142">Huomaa, että raporttiasetusten mukaan eri asiakirjatyyppejä voi tulostaa raportteihin, jotka liittyvät määrityksistä poikkeamisen hallintaan.</span><span class="sxs-lookup"><span data-stu-id="8f191-142">Note that, depending on the report setup, different document types can be printed on the reports that are related to nonconformance management.</span></span>  
+10. <span data-ttu-id="8f191-143">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="8f191-143">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="8f191-144">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="8f191-144">Close the page.</span></span>
 
-## <a name="maintain-a-correction"></a><span data-ttu-id="d006b-145">Ylläpidä korjausta</span><span class="sxs-lookup"><span data-stu-id="d006b-145">Maintain a correction</span></span>
-1. <span data-ttu-id="d006b-146">Valitse Merkitse valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="d006b-146">Click Mark complete.</span></span>
-2. <span data-ttu-id="d006b-147">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="d006b-147">Click OK.</span></span>
-3. <span data-ttu-id="d006b-148">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d006b-148">Close the page.</span></span>
+## <a name="maintain-a-correction"></a><span data-ttu-id="8f191-145">Ylläpidä korjausta</span><span class="sxs-lookup"><span data-stu-id="8f191-145">Maintain a correction</span></span>
+1. <span data-ttu-id="8f191-146">Valitse Merkitse valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="8f191-146">Click Mark complete.</span></span>
+2. <span data-ttu-id="8f191-147">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="8f191-147">Click OK.</span></span>
+3. <span data-ttu-id="8f191-148">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="8f191-148">Close the page.</span></span>
 
-## <a name="close-a-nonconformance"></a><span data-ttu-id="d006b-149">Sulje määrityksistä poikkeaminen</span><span class="sxs-lookup"><span data-stu-id="d006b-149">Close a nonconformance</span></span>
-1. <span data-ttu-id="d006b-150">Valitse Toiminnot.</span><span class="sxs-lookup"><span data-stu-id="d006b-150">Click Functions.</span></span>
-2. <span data-ttu-id="d006b-151">Valitse Sulje määrityksistä poikkeaminen.</span><span class="sxs-lookup"><span data-stu-id="d006b-151">Click Close non conformance.</span></span>
-3. <span data-ttu-id="d006b-152">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="d006b-152">Click Yes.</span></span>
-4. <span data-ttu-id="d006b-153">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d006b-153">Close the page.</span></span>
-5. <span data-ttu-id="d006b-154">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d006b-154">Close the page.</span></span>
+## <a name="close-a-nonconformance"></a><span data-ttu-id="8f191-149">Sulje määrityksistä poikkeaminen</span><span class="sxs-lookup"><span data-stu-id="8f191-149">Close a nonconformance</span></span>
+1. <span data-ttu-id="8f191-150">Valitse Toiminnot.</span><span class="sxs-lookup"><span data-stu-id="8f191-150">Click Functions.</span></span>
+2. <span data-ttu-id="8f191-151">Valitse Sulje määrityksistä poikkeaminen.</span><span class="sxs-lookup"><span data-stu-id="8f191-151">Click Close non conformance.</span></span>
+3. <span data-ttu-id="8f191-152">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="8f191-152">Click Yes.</span></span>
+4. <span data-ttu-id="8f191-153">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="8f191-153">Close the page.</span></span>
+5. <span data-ttu-id="8f191-154">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="8f191-154">Close the page.</span></span>

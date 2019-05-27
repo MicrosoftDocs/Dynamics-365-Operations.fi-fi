@@ -17,84 +17,84 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 6c5cfb8aae1a61d14f7a7969f688cb282530840d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333205"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568555"
 ---
-# <a name="create-boms-february-2016"></a><span data-ttu-id="983c3-103">Tuoterakenteiden luominen (helmikuu 2016)</span><span class="sxs-lookup"><span data-stu-id="983c3-103">Create BOMs (February 2016)</span></span>
+# <a name="create-boms-february-2016"></a><span data-ttu-id="3a98e-103">Tuoterakenteiden luominen (helmikuu 2016)</span><span class="sxs-lookup"><span data-stu-id="3a98e-103">Create BOMs (February 2016)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="983c3-104">Tässä tehtävässä keskitytään valmiin ja puolivalmiin tuotteen tuoterakenteen luomiseen.</span><span class="sxs-lookup"><span data-stu-id="983c3-104">This task focuses on creating the bill of materials structure for a finished product and a semi-finished product.</span></span> <span data-ttu-id="983c3-105">Se on tuoterakenteen laskentasarjan neljäs tehtävä.</span><span class="sxs-lookup"><span data-stu-id="983c3-105">It is the fourth task in the BOM calculation series.</span></span> <span data-ttu-id="983c3-106">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="983c3-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="3a98e-104">Tässä tehtävässä keskitytään valmiin ja puolivalmiin tuotteen tuoterakenteen luomiseen.</span><span class="sxs-lookup"><span data-stu-id="3a98e-104">This task focuses on creating the bill of materials structure for a finished product and a semi-finished product.</span></span> <span data-ttu-id="3a98e-105">Se on tuoterakenteen laskentasarjan neljäs tehtävä.</span><span class="sxs-lookup"><span data-stu-id="3a98e-105">It is the fourth task in the BOM calculation series.</span></span> <span data-ttu-id="3a98e-106">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="3a98e-106">The demo data company used to create this task is USMF.</span></span>
 
 
-## <a name="create-bom-for-a-semi-finished-product"></a><span data-ttu-id="983c3-107">Puolivalmiin tuotteen tuoterakenteen luominen</span><span class="sxs-lookup"><span data-stu-id="983c3-107">Create BOM for a semi-finished product</span></span>
-1. <span data-ttu-id="983c3-108">Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="983c3-108">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="983c3-109">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="983c3-109">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="983c3-110">Valitse nimiketunnus BOM_2.</span><span class="sxs-lookup"><span data-stu-id="983c3-110">Select the item number BOM_2.</span></span>  
-3. <span data-ttu-id="983c3-111">Valitse toimintoruudussa Suunnittele.</span><span class="sxs-lookup"><span data-stu-id="983c3-111">On the Action Pane, click Engineer.</span></span>
-4. <span data-ttu-id="983c3-112">Valitse Tuoterakenneversiot.</span><span class="sxs-lookup"><span data-stu-id="983c3-112">Click BOM versions.</span></span>
-5. <span data-ttu-id="983c3-113">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="983c3-113">Click New.</span></span>
-6. <span data-ttu-id="983c3-114">Napsauta kohtia Tuoterakenne ja Tuoterakenneversio.</span><span class="sxs-lookup"><span data-stu-id="983c3-114">Click BOM and BOM version.</span></span>
-7. <span data-ttu-id="983c3-115">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="983c3-115">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="983c3-116">Kirjoita esimerkiksi BOM_2.</span><span class="sxs-lookup"><span data-stu-id="983c3-116">For example, type BOM_2.</span></span>  
-8. <span data-ttu-id="983c3-117">Syötä tai valitse arvo Toimipaikka-kenttään.</span><span class="sxs-lookup"><span data-stu-id="983c3-117">In the Site field, enter or select a value.</span></span>
-    * <span data-ttu-id="983c3-118">Anna tai valitse tässä esimerkissä Toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="983c3-118">For this example, enter or select Site 1.</span></span>  
-9. <span data-ttu-id="983c3-119">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="983c3-119">Click OK.</span></span>
-10. <span data-ttu-id="983c3-120">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="983c3-120">Click New.</span></span>
-11. <span data-ttu-id="983c3-121">Kirjoita arvo Nimiketunnus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="983c3-121">In the Item number field, type a value.</span></span>
-    * <span data-ttu-id="983c3-122">Kirjoita tässä esimerkissä ITEM_C.</span><span class="sxs-lookup"><span data-stu-id="983c3-122">For this example, type ITEM_C.</span></span>  
-12. <span data-ttu-id="983c3-123">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="983c3-123">In the Warehouse field, enter or select a value.</span></span>
-    * <span data-ttu-id="983c3-124">Anna tai valitse tässä esimerkissä 11.</span><span class="sxs-lookup"><span data-stu-id="983c3-124">For this example, enter or select 11.</span></span>  
-13. <span data-ttu-id="983c3-125">Napsauta otsikkoa.</span><span class="sxs-lookup"><span data-stu-id="983c3-125">Click Header.</span></span>
-14. <span data-ttu-id="983c3-126">Hyväksy tuoterakenteen valitsemalla Hyväksyminen.</span><span class="sxs-lookup"><span data-stu-id="983c3-126">Click Approval to approve bills of materials.</span></span>
-15. <span data-ttu-id="983c3-127">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="983c3-127">Click OK.</span></span>
-16. <span data-ttu-id="983c3-128">Valitse Hyväksy.</span><span class="sxs-lookup"><span data-stu-id="983c3-128">Click Approve.</span></span>
-    * <span data-ttu-id="983c3-129">Hyväksymispainike on työkalurivillä tuoterakenneversioiden osassa.</span><span class="sxs-lookup"><span data-stu-id="983c3-129">The Approve button is on the ToolBar in the  BOM versions section.</span></span> <span data-ttu-id="983c3-130">Jos se ei ole näkyvissä, tuo Hyväksy näkyviin napsauttamalla ylätunnistetta Tuoterakenne-sivun oikeassa yläkulmassa.</span><span class="sxs-lookup"><span data-stu-id="983c3-130">If it is invisible, click Header at the upper right of the Bills of materials page to display Approve.</span></span>  
-17. <span data-ttu-id="983c3-131">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="983c3-131">Click OK.</span></span>
-18. <span data-ttu-id="983c3-132">Valitse Aktivoi.</span><span class="sxs-lookup"><span data-stu-id="983c3-132">Click Activate.</span></span>
-19. <span data-ttu-id="983c3-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="983c3-133">Close the page.</span></span>
-20. <span data-ttu-id="983c3-134">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="983c3-134">Close the page.</span></span>
-21. <span data-ttu-id="983c3-135">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="983c3-135">Close the page.</span></span>
+## <a name="create-bom-for-a-semi-finished-product"></a><span data-ttu-id="3a98e-107">Puolivalmiin tuotteen tuoterakenteen luominen</span><span class="sxs-lookup"><span data-stu-id="3a98e-107">Create BOM for a semi-finished product</span></span>
+1. <span data-ttu-id="3a98e-108">Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="3a98e-108">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="3a98e-109">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="3a98e-109">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="3a98e-110">Valitse nimiketunnus BOM_2.</span><span class="sxs-lookup"><span data-stu-id="3a98e-110">Select the item number BOM_2.</span></span>  
+3. <span data-ttu-id="3a98e-111">Valitse toimintoruudussa Suunnittele.</span><span class="sxs-lookup"><span data-stu-id="3a98e-111">On the Action Pane, click Engineer.</span></span>
+4. <span data-ttu-id="3a98e-112">Valitse Tuoterakenneversiot.</span><span class="sxs-lookup"><span data-stu-id="3a98e-112">Click BOM versions.</span></span>
+5. <span data-ttu-id="3a98e-113">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="3a98e-113">Click New.</span></span>
+6. <span data-ttu-id="3a98e-114">Napsauta kohtia Tuoterakenne ja Tuoterakenneversio.</span><span class="sxs-lookup"><span data-stu-id="3a98e-114">Click BOM and BOM version.</span></span>
+7. <span data-ttu-id="3a98e-115">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3a98e-115">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="3a98e-116">Kirjoita esimerkiksi BOM_2.</span><span class="sxs-lookup"><span data-stu-id="3a98e-116">For example, type BOM_2.</span></span>  
+8. <span data-ttu-id="3a98e-117">Syötä tai valitse arvo Toimipaikka-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3a98e-117">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="3a98e-118">Anna tai valitse tässä esimerkissä Toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="3a98e-118">For this example, enter or select Site 1.</span></span>  
+9. <span data-ttu-id="3a98e-119">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3a98e-119">Click OK.</span></span>
+10. <span data-ttu-id="3a98e-120">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="3a98e-120">Click New.</span></span>
+11. <span data-ttu-id="3a98e-121">Kirjoita arvo Nimiketunnus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3a98e-121">In the Item number field, type a value.</span></span>
+    * <span data-ttu-id="3a98e-122">Kirjoita tässä esimerkissä ITEM_C.</span><span class="sxs-lookup"><span data-stu-id="3a98e-122">For this example, type ITEM_C.</span></span>  
+12. <span data-ttu-id="3a98e-123">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="3a98e-123">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="3a98e-124">Anna tai valitse tässä esimerkissä 11.</span><span class="sxs-lookup"><span data-stu-id="3a98e-124">For this example, enter or select 11.</span></span>  
+13. <span data-ttu-id="3a98e-125">Napsauta otsikkoa.</span><span class="sxs-lookup"><span data-stu-id="3a98e-125">Click Header.</span></span>
+14. <span data-ttu-id="3a98e-126">Hyväksy tuoterakenteen valitsemalla Hyväksyminen.</span><span class="sxs-lookup"><span data-stu-id="3a98e-126">Click Approval to approve bills of materials.</span></span>
+15. <span data-ttu-id="3a98e-127">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3a98e-127">Click OK.</span></span>
+16. <span data-ttu-id="3a98e-128">Valitse Hyväksy.</span><span class="sxs-lookup"><span data-stu-id="3a98e-128">Click Approve.</span></span>
+    * <span data-ttu-id="3a98e-129">Hyväksymispainike on työkalurivillä tuoterakenneversioiden osassa.</span><span class="sxs-lookup"><span data-stu-id="3a98e-129">The Approve button is on the ToolBar in the  BOM versions section.</span></span> <span data-ttu-id="3a98e-130">Jos se ei ole näkyvissä, tuo Hyväksy näkyviin napsauttamalla ylätunnistetta Tuoterakenne-sivun oikeassa yläkulmassa.</span><span class="sxs-lookup"><span data-stu-id="3a98e-130">If it is invisible, click Header at the upper right of the Bills of materials page to display Approve.</span></span>  
+17. <span data-ttu-id="3a98e-131">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3a98e-131">Click OK.</span></span>
+18. <span data-ttu-id="3a98e-132">Valitse Aktivoi.</span><span class="sxs-lookup"><span data-stu-id="3a98e-132">Click Activate.</span></span>
+19. <span data-ttu-id="3a98e-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3a98e-133">Close the page.</span></span>
+20. <span data-ttu-id="3a98e-134">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3a98e-134">Close the page.</span></span>
+21. <span data-ttu-id="3a98e-135">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3a98e-135">Close the page.</span></span>
 
-## <a name="create-bom-for-a-finished-product"></a><span data-ttu-id="983c3-136">Valmiin tuotteen tuoterakenteen luominen</span><span class="sxs-lookup"><span data-stu-id="983c3-136">Create BOM for a finished product</span></span>
-1. <span data-ttu-id="983c3-137">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="983c3-137">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="983c3-138">Valitse nimiketunnus BOM_1.</span><span class="sxs-lookup"><span data-stu-id="983c3-138">Select the item number BOM_1.</span></span>  
-2. <span data-ttu-id="983c3-139">Valitse toimintoruudussa Suunnittele.</span><span class="sxs-lookup"><span data-stu-id="983c3-139">On the Action Pane, click Engineer.</span></span>
-3. <span data-ttu-id="983c3-140">Valitse Tuoterakenneversiot.</span><span class="sxs-lookup"><span data-stu-id="983c3-140">Click BOM versions.</span></span>
-4. <span data-ttu-id="983c3-141">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="983c3-141">Click New.</span></span>
-5. <span data-ttu-id="983c3-142">Napsauta kohtia Tuoterakenne ja Tuoterakenneversio.</span><span class="sxs-lookup"><span data-stu-id="983c3-142">Click BOM and BOM version.</span></span>
-6. <span data-ttu-id="983c3-143">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="983c3-143">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="983c3-144">Kirjoita esimerkiksi BOM_1.</span><span class="sxs-lookup"><span data-stu-id="983c3-144">For example, type BOM_1.</span></span>  
-7. <span data-ttu-id="983c3-145">Syötä tai valitse arvo Toimipaikka-kenttään.</span><span class="sxs-lookup"><span data-stu-id="983c3-145">In the Site field, enter or select a value.</span></span>
-    * <span data-ttu-id="983c3-146">Anna tai valitse tässä esimerkissä Toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="983c3-146">For this example, enter or select Site 1.</span></span>  
-8. <span data-ttu-id="983c3-147">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="983c3-147">Click OK.</span></span>
-9. <span data-ttu-id="983c3-148">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="983c3-148">Click New.</span></span>
-10. <span data-ttu-id="983c3-149">Kirjoita arvo Nimiketunnus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="983c3-149">In the Item number field, type a value.</span></span>
-    * <span data-ttu-id="983c3-150">Kirjoita tässä esimerkissä ITEM_A.</span><span class="sxs-lookup"><span data-stu-id="983c3-150">For this example, type ITEM_A.</span></span>  
-11. <span data-ttu-id="983c3-151">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="983c3-151">In the Warehouse field, enter or select a value.</span></span>
-    * <span data-ttu-id="983c3-152">Valitse tässä esimerkissä 11.</span><span class="sxs-lookup"><span data-stu-id="983c3-152">For this example, select 11.</span></span>  
-12. <span data-ttu-id="983c3-153">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="983c3-153">Click New.</span></span>
-13. <span data-ttu-id="983c3-154">Kirjoita arvo Nimiketunnus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="983c3-154">In the Item number field, type a value.</span></span>
-    * <span data-ttu-id="983c3-155">Kirjoita tässä esimerkissä ITEM_B.</span><span class="sxs-lookup"><span data-stu-id="983c3-155">For this example, type ITEM_B.</span></span>  
-14. <span data-ttu-id="983c3-156">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="983c3-156">In the Warehouse field, enter or select a value.</span></span>
-    * <span data-ttu-id="983c3-157">Anna tai valitse tässä esimerkissä 11.</span><span class="sxs-lookup"><span data-stu-id="983c3-157">For this example, enter or select 11.</span></span>  
-15. <span data-ttu-id="983c3-158">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="983c3-158">Click New.</span></span>
-16. <span data-ttu-id="983c3-159">Kirjoita arvo Nimiketunnus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="983c3-159">In the Item number field, type a value.</span></span>
-    * <span data-ttu-id="983c3-160">Kirjoita tässä esimerkissä BOM_2.</span><span class="sxs-lookup"><span data-stu-id="983c3-160">For this example, type BOM_2.</span></span>  
-17. <span data-ttu-id="983c3-161">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="983c3-161">In the list, mark the selected row.</span></span>
-18. <span data-ttu-id="983c3-162">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="983c3-162">In the Warehouse field, enter or select a value.</span></span>
-    * <span data-ttu-id="983c3-163">Anna tai valitse tässä esimerkissä varasto 11.</span><span class="sxs-lookup"><span data-stu-id="983c3-163">For this example, enter or select warehouse 11.</span></span>  
-19. <span data-ttu-id="983c3-164">Napsauta otsikkoa.</span><span class="sxs-lookup"><span data-stu-id="983c3-164">Click Header.</span></span>
-20. <span data-ttu-id="983c3-165">Hyväksy tuoterakenteen valitsemalla Hyväksyminen.</span><span class="sxs-lookup"><span data-stu-id="983c3-165">Click Approval to approve bills of materials.</span></span>
-21. <span data-ttu-id="983c3-166">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="983c3-166">Click OK.</span></span>
-22. <span data-ttu-id="983c3-167">Valitse Hyväksy.</span><span class="sxs-lookup"><span data-stu-id="983c3-167">Click Approve.</span></span>
-    * <span data-ttu-id="983c3-168">Hyväksymispainike on työkalurivillä tuoterakenneversioiden osassa.</span><span class="sxs-lookup"><span data-stu-id="983c3-168">The Approve button is on the ToolBar in the  BOM versions section.</span></span> <span data-ttu-id="983c3-169">Jos se ei ole näkyvissä, tuo Hyväksy näkyviin napsauttamalla ylätunnistetta Tuoterakenne-sivun oikeassa yläkulmassa.</span><span class="sxs-lookup"><span data-stu-id="983c3-169">If it is invisible, click Header at the upper right of the Bills of materials page to display Approve.</span></span>  
-23. <span data-ttu-id="983c3-170">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="983c3-170">Click OK.</span></span>
-24. <span data-ttu-id="983c3-171">Valitse Aktivoi.</span><span class="sxs-lookup"><span data-stu-id="983c3-171">Click Activate.</span></span>
-25. <span data-ttu-id="983c3-172">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="983c3-172">Close the page.</span></span>
-26. <span data-ttu-id="983c3-173">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="983c3-173">Close the page.</span></span>
-27. <span data-ttu-id="983c3-174">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="983c3-174">Close the page.</span></span>
+## <a name="create-bom-for-a-finished-product"></a><span data-ttu-id="3a98e-136">Valmiin tuotteen tuoterakenteen luominen</span><span class="sxs-lookup"><span data-stu-id="3a98e-136">Create BOM for a finished product</span></span>
+1. <span data-ttu-id="3a98e-137">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="3a98e-137">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="3a98e-138">Valitse nimiketunnus BOM_1.</span><span class="sxs-lookup"><span data-stu-id="3a98e-138">Select the item number BOM_1.</span></span>  
+2. <span data-ttu-id="3a98e-139">Valitse toimintoruudussa Suunnittele.</span><span class="sxs-lookup"><span data-stu-id="3a98e-139">On the Action Pane, click Engineer.</span></span>
+3. <span data-ttu-id="3a98e-140">Valitse Tuoterakenneversiot.</span><span class="sxs-lookup"><span data-stu-id="3a98e-140">Click BOM versions.</span></span>
+4. <span data-ttu-id="3a98e-141">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="3a98e-141">Click New.</span></span>
+5. <span data-ttu-id="3a98e-142">Napsauta kohtia Tuoterakenne ja Tuoterakenneversio.</span><span class="sxs-lookup"><span data-stu-id="3a98e-142">Click BOM and BOM version.</span></span>
+6. <span data-ttu-id="3a98e-143">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3a98e-143">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="3a98e-144">Kirjoita esimerkiksi BOM_1.</span><span class="sxs-lookup"><span data-stu-id="3a98e-144">For example, type BOM_1.</span></span>  
+7. <span data-ttu-id="3a98e-145">Syötä tai valitse arvo Toimipaikka-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3a98e-145">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="3a98e-146">Anna tai valitse tässä esimerkissä Toimipaikka 1.</span><span class="sxs-lookup"><span data-stu-id="3a98e-146">For this example, enter or select Site 1.</span></span>  
+8. <span data-ttu-id="3a98e-147">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3a98e-147">Click OK.</span></span>
+9. <span data-ttu-id="3a98e-148">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="3a98e-148">Click New.</span></span>
+10. <span data-ttu-id="3a98e-149">Kirjoita arvo Nimiketunnus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3a98e-149">In the Item number field, type a value.</span></span>
+    * <span data-ttu-id="3a98e-150">Kirjoita tässä esimerkissä ITEM_A.</span><span class="sxs-lookup"><span data-stu-id="3a98e-150">For this example, type ITEM_A.</span></span>  
+11. <span data-ttu-id="3a98e-151">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="3a98e-151">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="3a98e-152">Valitse tässä esimerkissä 11.</span><span class="sxs-lookup"><span data-stu-id="3a98e-152">For this example, select 11.</span></span>  
+12. <span data-ttu-id="3a98e-153">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="3a98e-153">Click New.</span></span>
+13. <span data-ttu-id="3a98e-154">Kirjoita arvo Nimiketunnus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3a98e-154">In the Item number field, type a value.</span></span>
+    * <span data-ttu-id="3a98e-155">Kirjoita tässä esimerkissä ITEM_B.</span><span class="sxs-lookup"><span data-stu-id="3a98e-155">For this example, type ITEM_B.</span></span>  
+14. <span data-ttu-id="3a98e-156">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="3a98e-156">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="3a98e-157">Anna tai valitse tässä esimerkissä 11.</span><span class="sxs-lookup"><span data-stu-id="3a98e-157">For this example, enter or select 11.</span></span>  
+15. <span data-ttu-id="3a98e-158">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="3a98e-158">Click New.</span></span>
+16. <span data-ttu-id="3a98e-159">Kirjoita arvo Nimiketunnus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="3a98e-159">In the Item number field, type a value.</span></span>
+    * <span data-ttu-id="3a98e-160">Kirjoita tässä esimerkissä BOM_2.</span><span class="sxs-lookup"><span data-stu-id="3a98e-160">For this example, type BOM_2.</span></span>  
+17. <span data-ttu-id="3a98e-161">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="3a98e-161">In the list, mark the selected row.</span></span>
+18. <span data-ttu-id="3a98e-162">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="3a98e-162">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="3a98e-163">Anna tai valitse tässä esimerkissä varasto 11.</span><span class="sxs-lookup"><span data-stu-id="3a98e-163">For this example, enter or select warehouse 11.</span></span>  
+19. <span data-ttu-id="3a98e-164">Napsauta otsikkoa.</span><span class="sxs-lookup"><span data-stu-id="3a98e-164">Click Header.</span></span>
+20. <span data-ttu-id="3a98e-165">Hyväksy tuoterakenteen valitsemalla Hyväksyminen.</span><span class="sxs-lookup"><span data-stu-id="3a98e-165">Click Approval to approve bills of materials.</span></span>
+21. <span data-ttu-id="3a98e-166">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3a98e-166">Click OK.</span></span>
+22. <span data-ttu-id="3a98e-167">Valitse Hyväksy.</span><span class="sxs-lookup"><span data-stu-id="3a98e-167">Click Approve.</span></span>
+    * <span data-ttu-id="3a98e-168">Hyväksymispainike on työkalurivillä tuoterakenneversioiden osassa.</span><span class="sxs-lookup"><span data-stu-id="3a98e-168">The Approve button is on the ToolBar in the  BOM versions section.</span></span> <span data-ttu-id="3a98e-169">Jos se ei ole näkyvissä, tuo Hyväksy näkyviin napsauttamalla ylätunnistetta Tuoterakenne-sivun oikeassa yläkulmassa.</span><span class="sxs-lookup"><span data-stu-id="3a98e-169">If it is invisible, click Header at the upper right of the Bills of materials page to display Approve.</span></span>  
+23. <span data-ttu-id="3a98e-170">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="3a98e-170">Click OK.</span></span>
+24. <span data-ttu-id="3a98e-171">Valitse Aktivoi.</span><span class="sxs-lookup"><span data-stu-id="3a98e-171">Click Activate.</span></span>
+25. <span data-ttu-id="3a98e-172">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3a98e-172">Close the page.</span></span>
+26. <span data-ttu-id="3a98e-173">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3a98e-173">Close the page.</span></span>
+27. <span data-ttu-id="3a98e-174">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="3a98e-174">Close the page.</span></span>
 

@@ -19,38 +19,38 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: dec3fe2a7344c2719ca12a180fa0adb025b7fcc7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364991"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558123"
 ---
-# <a name="view-the-status-of-service-orders"></a><span data-ttu-id="ac65d-103">Huoltotilausten tilan tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="ac65d-103">View the status of service orders</span></span> 
+# <a name="view-the-status-of-service-orders"></a><span data-ttu-id="b21c6-103">Huoltotilausten tilan tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="b21c6-103">View the status of service orders</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="ac65d-104">Voit tarkastella huoltotilausten huoltotehtävien tilaa **Resursointitaulu**-lomakkeella.</span><span class="sxs-lookup"><span data-stu-id="ac65d-104">You can use the **Dispatch board** form to view the status of service activities in service orders.</span></span>
+<span data-ttu-id="b21c6-104">Voit tarkastella huoltotilausten huoltotehtävien tilaa **Resursointitaulu**-lomakkeella.</span><span class="sxs-lookup"><span data-stu-id="b21c6-104">You can use the **Dispatch board** form to view the status of service activities in service orders.</span></span>
 
-## <a name="more-information-about-service-orders"></a><span data-ttu-id="ac65d-105">Lisätietoa huoltotilauksista</span><span class="sxs-lookup"><span data-stu-id="ac65d-105">More information about service orders</span></span>
+## <a name="more-information-about-service-orders"></a><span data-ttu-id="b21c6-105">Lisätietoa huoltotilauksista</span><span class="sxs-lookup"><span data-stu-id="b21c6-105">More information about service orders</span></span>
 
-<span data-ttu-id="ac65d-106">Lomake sisältää myös huoltotilausten kulun seurantavälineitä ja huoltotilauksen tärkeyden arviointia helpottavia lisätietoja, esimerkiksi tiedot huoltosopimuksesta ja siihen liittyvästä palvelutasosopimuksesta.</span><span class="sxs-lookup"><span data-stu-id="ac65d-106">The form also provides tools to track the flow of service orders and includes additional details to help you evaluate the urgency of a service order, such the service agreement and service level agreement that it is associated with.</span></span>
+<span data-ttu-id="b21c6-106">Lomake sisältää myös huoltotilausten kulun seurantavälineitä ja huoltotilauksen tärkeyden arviointia helpottavia lisätietoja, esimerkiksi tiedot huoltosopimuksesta ja siihen liittyvästä palvelutasosopimuksesta.</span><span class="sxs-lookup"><span data-stu-id="b21c6-106">The form also provides tools to track the flow of service orders and includes additional details to help you evaluate the urgency of a service order, such the service agreement and service level agreement that it is associated with.</span></span>
 
-<span data-ttu-id="ac65d-107">Jotta näkisit huoltotilauksen kiireellisyyden nopeasti, Gantt-kaavio tukee eri värejä.</span><span class="sxs-lookup"><span data-stu-id="ac65d-107">In order to help you quickly gauge the urgency of a service order, the Gantt chart supports the use of colors.</span></span> <span data-ttu-id="ac65d-108">Värejä käytetään huoltopyynnön priorisointiin.</span><span class="sxs-lookup"><span data-stu-id="ac65d-108">Colors are used to distinguish the priority of a service call.</span></span> <span data-ttu-id="ac65d-109">Oletusarvon mukaan punainen edustaa suurinta tärkeyttä, keltainen normaalia tärkeyttä ja vihreä pienintä tärkeyttä.</span><span class="sxs-lookup"><span data-stu-id="ac65d-109">By default, these colors are red for high priority, yellow for typical priority, and green for low priority.</span></span>
+<span data-ttu-id="b21c6-107">Jotta näkisit huoltotilauksen kiireellisyyden nopeasti, Gantt-kaavio tukee eri värejä.</span><span class="sxs-lookup"><span data-stu-id="b21c6-107">In order to help you quickly gauge the urgency of a service order, the Gantt chart supports the use of colors.</span></span> <span data-ttu-id="b21c6-108">Värejä käytetään huoltopyynnön priorisointiin.</span><span class="sxs-lookup"><span data-stu-id="b21c6-108">Colors are used to distinguish the priority of a service call.</span></span> <span data-ttu-id="b21c6-109">Oletusarvon mukaan punainen edustaa suurinta tärkeyttä, keltainen normaalia tärkeyttä ja vihreä pienintä tärkeyttä.</span><span class="sxs-lookup"><span data-stu-id="b21c6-109">By default, these colors are red for high priority, yellow for typical priority, and green for low priority.</span></span>
 
 
 > [!TIP]
-> <P><span data-ttu-id="ac65d-110">Voit muuttaa värejä <STRONG>Resursointi</STRONG>-välilehdellä <STRONG>Huollon hallinnan parametrit</STRONG> -lomakkeessa.</span><span class="sxs-lookup"><span data-stu-id="ac65d-110">You can change the colors on the <STRONG>Dispatching</STRONG> tab in the <STRONG>Service management parameters</STRONG> form.</span></span></P>
+> <P><span data-ttu-id="b21c6-110">Voit muuttaa värejä <STRONG>Resursointi</STRONG>-välilehdellä <STRONG>Huollon hallinnan parametrit</STRONG> -lomakkeessa.</span><span class="sxs-lookup"><span data-stu-id="b21c6-110">You can change the colors on the <STRONG>Dispatching</STRONG> tab in the <STRONG>Service management parameters</STRONG> form.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="ac65d-111">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="ac65d-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b21c6-111">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="b21c6-111">See also</span></span>
 
-[<span data-ttu-id="ac65d-112">Huoltotilausten priorisoiminen</span><span class="sxs-lookup"><span data-stu-id="ac65d-112">Prioritize service orders</span></span>](prioritize-service-orders.md)
+[<span data-ttu-id="b21c6-112">Huoltotilausten priorisoiminen</span><span class="sxs-lookup"><span data-stu-id="b21c6-112">Prioritize service orders</span></span>](prioritize-service-orders.md)
 
-[<span data-ttu-id="ac65d-113">Huoltotehtävien valvonta</span><span class="sxs-lookup"><span data-stu-id="ac65d-113">Monitor service activities</span></span>](monitor-service-activities.md)
+[<span data-ttu-id="b21c6-113">Huoltotehtävien valvonta</span><span class="sxs-lookup"><span data-stu-id="b21c6-113">Monitor service activities</span></span>](monitor-service-activities.md)
 
-<span data-ttu-id="ac65d-114">[Resursointitaulu (lomake)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="ac65d-114">[Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span></span>
+<span data-ttu-id="b21c6-114">[Resursointitaulu (lomake)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="b21c6-114">[Dispatch board (form)](https://technet.microsoft.com/en-us/library/hh242789\(v=ax.60\))</span></span>
 
   
 

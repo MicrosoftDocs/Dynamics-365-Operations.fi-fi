@@ -19,19 +19,19 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7ea1cd9926f3ea55d82f9030372a15b3545ed824
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "362921"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1563782"
 ---
-# <a name="postdated-checks"></a><span data-ttu-id="a9571-105">Myöhemmäksi päivätyt sekit</span><span class="sxs-lookup"><span data-stu-id="a9571-105">Postdated checks</span></span>
+# <a name="postdated-checks"></a><span data-ttu-id="51a16-105">Myöhemmäksi päivätyt sekit</span><span class="sxs-lookup"><span data-stu-id="51a16-105">Postdated checks</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a9571-106">Tässä artikkelissa on tietoja myöhemmäksi päivättyjen sekkien tuesta Microsoft Dynamics 365 for Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="a9571-106">This article provides information about support for postdated checks in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="a9571-107">Myöhemmäksi päivätyt sekit ovat sekkejä, jotka on asetettu tulevan päivämäärän omaavien maksujen vastaanottamista varten.</span><span class="sxs-lookup"><span data-stu-id="a9571-107">Postdated checks are checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="a9571-108">Tämän vuoksi sekkiä ei voi lunastaa ennen määritettyä päivämäärää.</span><span class="sxs-lookup"><span data-stu-id="a9571-108">Therefore, the check can't be cashed until the specified date.</span></span>
+<span data-ttu-id="51a16-106">Tässä artikkelissa on tietoja myöhemmäksi päivättyjen sekkien tuesta Microsoft Dynamics 365 for Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="51a16-106">This article provides information about support for postdated checks in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="51a16-107">Myöhemmäksi päivätyt sekit ovat sekkejä, jotka on asetettu tulevan päivämäärän omaavien maksujen vastaanottamista varten.</span><span class="sxs-lookup"><span data-stu-id="51a16-107">Postdated checks are checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="51a16-108">Tämän vuoksi sekkiä ei voi lunastaa ennen määritettyä päivämäärää.</span><span class="sxs-lookup"><span data-stu-id="51a16-108">Therefore, the check can't be cashed until the specified date.</span></span>
 
-<span data-ttu-id="a9571-109">Microsoft Dynamics 365 for Finance and Operations tukee myöhemmäksi päivättyjen sekkien koko hallintasykliä sekä myyntireskontrassa että ostoreskontrassa seuraavassa taulukossa esitetyllä tavalla.</span><span class="sxs-lookup"><span data-stu-id="a9571-109">Microsoft Dynamics 365 for Finance and Operations supports the full management cycle for postdated checks in both Accounts receivable and Accounts payable, as shown in the following table.</span></span>
+<span data-ttu-id="51a16-109">Microsoft Dynamics 365 for Finance and Operations tukee myöhemmäksi päivättyjen sekkien koko hallintasykliä sekä myyntireskontrassa että ostoreskontrassa seuraavassa taulukossa esitetyllä tavalla.</span><span class="sxs-lookup"><span data-stu-id="51a16-109">Microsoft Dynamics 365 for Finance and Operations supports the full management cycle for postdated checks in both Accounts receivable and Accounts payable, as shown in the following table.</span></span>
 <table>
 <colgroup>
 <col width="50%" />
@@ -39,63 +39,63 @@ ms.locfileid: "362921"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="a9571-110">Skenaario</span><span class="sxs-lookup"><span data-stu-id="a9571-110">Scenario</span></span></th>
-<th><span data-ttu-id="a9571-111">Erittely</span><span class="sxs-lookup"><span data-stu-id="a9571-111">Details</span></span></th>
+<th><span data-ttu-id="51a16-110">Skenaario</span><span class="sxs-lookup"><span data-stu-id="51a16-110">Scenario</span></span></th>
+<th><span data-ttu-id="51a16-111">Erittely</span><span class="sxs-lookup"><span data-stu-id="51a16-111">Details</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="a9571-112">Aseta jälkeen päin päivitetyt laskut</span><span class="sxs-lookup"><span data-stu-id="a9571-112">Set up postdated checks</span></span></td>
-<td><span data-ttu-id="a9571-113">Määritä uusi maksutapa ja maksurutiini lähetettyjen ja vastaanotettujen sekkien sekä ennakonpidätyksen selvitystileille.</span><span class="sxs-lookup"><span data-stu-id="a9571-113">You must set up a new payment method, and specify the payment routine for clearing accounts for issued checks, received checks, and withholding tax.</span></span></td>
+<td><span data-ttu-id="51a16-112">Aseta jälkeen päin päivitetyt laskut</span><span class="sxs-lookup"><span data-stu-id="51a16-112">Set up postdated checks</span></span></td>
+<td><span data-ttu-id="51a16-113">Määritä uusi maksutapa ja maksurutiini lähetettyjen ja vastaanotettujen sekkien sekä ennakonpidätyksen selvitystileille.</span><span class="sxs-lookup"><span data-stu-id="51a16-113">You must set up a new payment method, and specify the payment routine for clearing accounts for issued checks, received checks, and withholding tax.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="a9571-114">Kirjaa ja lähetä toimittajalle jälkeen päin päivitetty lasku</span><span class="sxs-lookup"><span data-stu-id="a9571-114">Register and post a postdated check for a vendor</span></span></td>
-<td><span data-ttu-id="a9571-115">Rekisteröi toimittajalle kirjoittamasi myöhemmäksi päivätyn sekin tiedot.</span><span class="sxs-lookup"><span data-stu-id="a9571-115">Register the details of a postdated check that you issue to a vendor.</span></span> <span data-ttu-id="a9571-116">Kun maksu kirjataan, toimittajan velka siirretään, mutta pankkitiliä ei vielä hyvitetä.</span><span class="sxs-lookup"><span data-stu-id="a9571-116">When the payment is posted, the vendor liability is recognized, but the bank account isn’t yet credit.</span></span> <span data-ttu-id="a9571-117">Sen sijaan käytetään selvitystiliä.</span><span class="sxs-lookup"><span data-stu-id="a9571-117">Instead, a clearing account is used for this purpose.</span></span> </td>
+<td><span data-ttu-id="51a16-114">Kirjaa ja lähetä toimittajalle jälkeen päin päivitetty lasku</span><span class="sxs-lookup"><span data-stu-id="51a16-114">Register and post a postdated check for a vendor</span></span></td>
+<td><span data-ttu-id="51a16-115">Rekisteröi toimittajalle kirjoittamasi myöhemmäksi päivätyn sekin tiedot.</span><span class="sxs-lookup"><span data-stu-id="51a16-115">Register the details of a postdated check that you issue to a vendor.</span></span> <span data-ttu-id="51a16-116">Kun maksu kirjataan, toimittajan velka siirretään, mutta pankkitiliä ei vielä hyvitetä.</span><span class="sxs-lookup"><span data-stu-id="51a16-116">When the payment is posted, the vendor liability is recognized, but the bank account isn’t yet credit.</span></span> <span data-ttu-id="51a16-117">Sen sijaan käytetään selvitystiliä.</span><span class="sxs-lookup"><span data-stu-id="51a16-117">Instead, a clearing account is used for this purpose.</span></span> </td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="a9571-118">Rekisteröi ja kirjaa asiakkaan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="a9571-118">Register and post a postdated check for a customer</span></span></td>
-<td><span data-ttu-id="a9571-119">Rekisteröi asiakkaalta saadun myöhemmäksi päivätyn sekin tiedot.</span><span class="sxs-lookup"><span data-stu-id="a9571-119">Register the details of a postdated check that you receive from a customer.</span></span> <span data-ttu-id="a9571-120">Kun maksu kirjataan, asiakkaan saatava on kredit, mutta pankkitiliä ei vielä veloiteta.</span><span class="sxs-lookup"><span data-stu-id="a9571-120">When the payment is posted, the customer receivable is credit, but the bank account isn’t yet debit.</span></span> <span data-ttu-id="a9571-121">Sen sijaan käytetään selvitystiliä.</span><span class="sxs-lookup"><span data-stu-id="a9571-121">Instead, a clearing account is used for this purpose.</span></span></td>
+<td><span data-ttu-id="51a16-118">Rekisteröi ja kirjaa asiakkaan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="51a16-118">Register and post a postdated check for a customer</span></span></td>
+<td><span data-ttu-id="51a16-119">Rekisteröi asiakkaalta saadun myöhemmäksi päivätyn sekin tiedot.</span><span class="sxs-lookup"><span data-stu-id="51a16-119">Register the details of a postdated check that you receive from a customer.</span></span> <span data-ttu-id="51a16-120">Kun maksu kirjataan, asiakkaan saatava on kredit, mutta pankkitiliä ei vielä veloiteta.</span><span class="sxs-lookup"><span data-stu-id="51a16-120">When the payment is posted, the customer receivable is credit, but the bank account isn’t yet debit.</span></span> <span data-ttu-id="51a16-121">Sen sijaan käytetään selvitystiliä.</span><span class="sxs-lookup"><span data-stu-id="51a16-121">Instead, a clearing account is used for this purpose.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="a9571-122">Kirjaa ja lähetä asiakkaalle tai toimittajalle myöhäisemmäksi päivätty korvaava sekki</span><span class="sxs-lookup"><span data-stu-id="a9571-122">Register and post a replacement postdated check for a customer or a vendor</span></span></td>
+<td><span data-ttu-id="51a16-122">Kirjaa ja lähetä asiakkaalle tai toimittajalle myöhäisemmäksi päivätty korvaava sekki</span><span class="sxs-lookup"><span data-stu-id="51a16-122">Register and post a replacement postdated check for a customer or a vendor</span></span></td>
 <td>
-<span data-ttu-id="a9571-123">Jos toimittajalle lähetetty tai asiakkaalta vastaanotettu alkuperäinen sekki on kadonnut tai vahingoittunut, voit asettaa korvaavan myöhemmäksi päivätyn sekin.</span><span class="sxs-lookup"><span data-stu-id="a9571-123">If your original check to a vendor or from a customer is lost or damaged, you can issue a replacement postdated check.</span></span> <span data-ttu-id="a9571-124">Kun rekisteröit sekin tiedot, määritä viittaus alkuperäiseen sekkiin ja osoita, että uusi sekki korvaa alkuperäisen sekin.</span><span class="sxs-lookup"><span data-stu-id="a9571-124">When you register the check details, provide a reference to the original check, and indicate that the new check is a replacement for the original.</span></span> <span data-ttu-id="a9571-125">Voit myös kirjata korvaavan sekin.</span><span class="sxs-lookup"><span data-stu-id="a9571-125">You can also post the replacement check.</span></span></td>
+<span data-ttu-id="51a16-123">Jos toimittajalle lähetetty tai asiakkaalta vastaanotettu alkuperäinen sekki on kadonnut tai vahingoittunut, voit asettaa korvaavan myöhemmäksi päivätyn sekin.</span><span class="sxs-lookup"><span data-stu-id="51a16-123">If your original check to a vendor or from a customer is lost or damaged, you can issue a replacement postdated check.</span></span> <span data-ttu-id="51a16-124">Kun rekisteröit sekin tiedot, määritä viittaus alkuperäiseen sekkiin ja osoita, että uusi sekki korvaa alkuperäisen sekin.</span><span class="sxs-lookup"><span data-stu-id="51a16-124">When you register the check details, provide a reference to the original check, and indicate that the new check is a replacement for the original.</span></span> <span data-ttu-id="51a16-125">Voit myös kirjata korvaavan sekin.</span><span class="sxs-lookup"><span data-stu-id="51a16-125">You can also post the replacement check.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="a9571-126">Asiakkaan myöhemmäksi päivätyn sekin siirtäminen toimittajalle</span><span class="sxs-lookup"><span data-stu-id="a9571-126">Transfer a customer postdated check to a vendor</span></span></td>
-<td><span data-ttu-id="a9571-127">Kun vastaanotat asiakkaalta myöhemmäksi päivätyn sekin, voit siirtää kyseisen sekin toimittajalle maksuna.</span><span class="sxs-lookup"><span data-stu-id="a9571-127">When you receive a postdated check from a customer, you can transfer that check to a vendor as a payment.</span></span></td>
+<td><span data-ttu-id="51a16-126">Asiakkaan myöhemmäksi päivätyn sekin siirtäminen toimittajalle</span><span class="sxs-lookup"><span data-stu-id="51a16-126">Transfer a customer postdated check to a vendor</span></span></td>
+<td><span data-ttu-id="51a16-127">Kun vastaanotat asiakkaalta myöhemmäksi päivätyn sekin, voit siirtää kyseisen sekin toimittajalle maksuna.</span><span class="sxs-lookup"><span data-stu-id="51a16-127">When you receive a postdated check from a customer, you can transfer that check to a vendor as a payment.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="a9571-128">Sovi jälkeen päin päivitetty lasku asiakkaalle tai toimittajalle</span><span class="sxs-lookup"><span data-stu-id="a9571-128">Settle a postdated check for a customer or a vendor</span></span></td>
-<td><span data-ttu-id="a9571-129">Tilitä asiakkaan tai toimittajan välitilille kirjattu myöhemmäksi päivätty sekki sitten, kun sekki lopulta erääntyy.</span><span class="sxs-lookup"><span data-stu-id="a9571-129">Settle a postdated check that is posted to a bridging account for a customer or a vendor when the check finally matures.</span></span> <span data-ttu-id="a9571-130">Kun sekki on tilitetty, pankille määritetään veloitus tai hyvitys aiemmin käytetylle selvitystilille.</span><span class="sxs-lookup"><span data-stu-id="a9571-130">When the check is settled, the bank is finally debit or credit against the clearing account that was used earlier.</span></span></td>
+<td><span data-ttu-id="51a16-128">Sovi jälkeen päin päivitetty lasku asiakkaalle tai toimittajalle</span><span class="sxs-lookup"><span data-stu-id="51a16-128">Settle a postdated check for a customer or a vendor</span></span></td>
+<td><span data-ttu-id="51a16-129">Tilitä asiakkaan tai toimittajan välitilille kirjattu myöhemmäksi päivätty sekki sitten, kun sekki lopulta erääntyy.</span><span class="sxs-lookup"><span data-stu-id="51a16-129">Settle a postdated check that is posted to a bridging account for a customer or a vendor when the check finally matures.</span></span> <span data-ttu-id="51a16-130">Kun sekki on tilitetty, pankille määritetään veloitus tai hyvitys aiemmin käytetylle selvitystilille.</span><span class="sxs-lookup"><span data-stu-id="51a16-130">When the check is settled, the bank is finally debit or credit against the clearing account that was used earlier.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="a9571-131">Peruuta toimittajalle osoitettu myöhemmäksi päivätty shekki</span><span class="sxs-lookup"><span data-stu-id="a9571-131">Cancel a postdated check for a vendor</span></span></td>
-<td><span data-ttu-id="a9571-132">Voit peruuttaa myöhemmäksi päivätyn sekin seuraavissa tilanteissa: - pankki palauttaa sekin</span><span class="sxs-lookup"><span data-stu-id="a9571-132">You can cancel a posted postdated check in these situations: - The check is returned by the bank.</span></span>
-<span data-ttu-id="a9571-133">- sekki on kohdistettu väärään laskuun</span><span class="sxs-lookup"><span data-stu-id="a9571-133">- The check is applied to an incorrect invoice.</span></span>
-<span data-ttu-id="a9571-134">- sekkiä vastaan on tehty käteismaksu.</span><span class="sxs-lookup"><span data-stu-id="a9571-134">- A cash payment is made against the check.</span></span>
+<td><span data-ttu-id="51a16-131">Peruuta toimittajalle osoitettu myöhemmäksi päivätty shekki</span><span class="sxs-lookup"><span data-stu-id="51a16-131">Cancel a postdated check for a vendor</span></span></td>
+<td><span data-ttu-id="51a16-132">Voit peruuttaa myöhemmäksi päivätyn sekin seuraavissa tilanteissa: - pankki palauttaa sekin</span><span class="sxs-lookup"><span data-stu-id="51a16-132">You can cancel a posted postdated check in these situations: - The check is returned by the bank.</span></span>
+<span data-ttu-id="51a16-133">- sekki on kohdistettu väärään laskuun</span><span class="sxs-lookup"><span data-stu-id="51a16-133">- The check is applied to an incorrect invoice.</span></span>
+<span data-ttu-id="51a16-134">- sekkiä vastaan on tehty käteismaksu.</span><span class="sxs-lookup"><span data-stu-id="51a16-134">- A cash payment is made against the check.</span></span>
   </td>
   </tr>
   <tr class="even">
-  <td><span data-ttu-id="a9571-135">Myöhemmäksi päivätyn sekkimaksun lopetus</span><span class="sxs-lookup"><span data-stu-id="a9571-135">Stop payment for a postdated check</span></span></td>
-  <td><span data-ttu-id="a9571-136">Voit lopettaa toimittajalle myönnetyn myöhemmäksi päivätyn sekkimaksun esimerkiksi seuraavista syistä: varat eivät riitä, sopimusehtojen toimittajan kanssa muuttuvat, toimittaja on toimittanut viallisia tavaroita tai tavaroita palautetaan toimittajalle.</span><span class="sxs-lookup"><span data-stu-id="a9571-136">You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor.</span></span> <span data-ttu-id="a9571-137">Voit lopettaa maksun vain niiden sekkien osalta, joita ei ole lunastettu.</span><span class="sxs-lookup"><span data-stu-id="a9571-137">You can stop payment only on checks that haven’t cleared.</span></span></td>
+  <td><span data-ttu-id="51a16-135">Myöhemmäksi päivätyn sekkimaksun lopetus</span><span class="sxs-lookup"><span data-stu-id="51a16-135">Stop payment for a postdated check</span></span></td>
+  <td><span data-ttu-id="51a16-136">Voit lopettaa toimittajalle myönnetyn myöhemmäksi päivätyn sekkimaksun esimerkiksi seuraavista syistä: varat eivät riitä, sopimusehtojen toimittajan kanssa muuttuvat, toimittaja on toimittanut viallisia tavaroita tai tavaroita palautetaan toimittajalle.</span><span class="sxs-lookup"><span data-stu-id="51a16-136">You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor.</span></span> <span data-ttu-id="51a16-137">Voit lopettaa maksun vain niiden sekkien osalta, joita ei ole lunastettu.</span><span class="sxs-lookup"><span data-stu-id="51a16-137">You can stop payment only on checks that haven’t cleared.</span></span></td>
   </tr>
   </tbody>
   </table>
 
 
 
-<span data-ttu-id="a9571-138">Lisätietoja on seuraavissa aiheissa:</span><span class="sxs-lookup"><span data-stu-id="a9571-138">For more information, see the following topics:</span></span>
+<span data-ttu-id="51a16-138">Lisätietoja on seuraavissa aiheissa:</span><span class="sxs-lookup"><span data-stu-id="51a16-138">For more information, see the following topics:</span></span>
 
-[<span data-ttu-id="a9571-139">Määritä jälkeen päin päivitetyt sekit</span><span class="sxs-lookup"><span data-stu-id="a9571-139">Set up postdated checks</span></span>](tasks/set-up-postdated-checks.md)
+[<span data-ttu-id="51a16-139">Määritä jälkeen päin päivitetyt sekit</span><span class="sxs-lookup"><span data-stu-id="51a16-139">Set up postdated checks</span></span>](tasks/set-up-postdated-checks.md)
 
-[<span data-ttu-id="a9571-140">Rekisteröi ja kirjaa asiakkaan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="a9571-140">Register and post a postdated check for a customer</span></span>](tasks/register-post-postdated-check-customer.md)
+[<span data-ttu-id="51a16-140">Rekisteröi ja kirjaa asiakkaan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="51a16-140">Register and post a postdated check for a customer</span></span>](tasks/register-post-postdated-check-customer.md)
 
-[<span data-ttu-id="a9571-141">Tilitä asiakkaalta jälkeen päin päivitetty lasku</span><span class="sxs-lookup"><span data-stu-id="a9571-141">Settle a postdated check from a customer</span></span>](tasks/settle-postdated-check-customer.md)
+[<span data-ttu-id="51a16-141">Tilitä asiakkaalta jälkeen päin päivitetty lasku</span><span class="sxs-lookup"><span data-stu-id="51a16-141">Settle a postdated check from a customer</span></span>](tasks/settle-postdated-check-customer.md)
 
-[<span data-ttu-id="a9571-142">Rekisteröi ja kirjaa toimittajan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="a9571-142">Register and post a postdated check for a vendor</span></span>](tasks/register-post-postdated-check-vendor.md) 
+[<span data-ttu-id="51a16-142">Rekisteröi ja kirjaa toimittajan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="51a16-142">Register and post a postdated check for a vendor</span></span>](tasks/register-post-postdated-check-vendor.md) 
 
-[<span data-ttu-id="a9571-143">Tilitä toimittajalle jälkeen päin päivitetty lasku</span><span class="sxs-lookup"><span data-stu-id="a9571-143">Settle a postdated check for a vendor</span></span>](tasks/settle-postdated-check-vendor.md)
+[<span data-ttu-id="51a16-143">Tilitä toimittajalle jälkeen päin päivitetty lasku</span><span class="sxs-lookup"><span data-stu-id="51a16-143">Settle a postdated check for a vendor</span></span>](tasks/settle-postdated-check-vendor.md)
 
 
 
