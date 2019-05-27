@@ -19,11 +19,11 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4dbbbdf403c3e3f7c1bfa391cc32f80505098db9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308526"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568186"
 ---
 # <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus
 
@@ -52,7 +52,7 @@ Voit määrittää budjetin hallinnan useiden eri tekijöiden perusteella:
 -   **Käytettävissä olevien varojen laskelma** – Otetaanko asiakirjat, kuten ostoehdotukset (alustavat varaukset) ja ostotilaukset (varaukset) huomioon käytettävissä olevien varojen laskelmassa? Otetaanko luonnostilaiset asiakirjat huomioon laskelmassa?
 -   **Ohita käyttöoikeus** – Kuka voi ylittää käytettävissä olevan budjetin?
 
-Budjetin hallinta on integroitu täysin Dynamics 365 for Finance and Operationsin kanssa. Tämän vuoksi sekä suunniteltujen että toteutuneiden ostojen budjetin arviointi on mahdollista. Budjettikyselyt ja -raportit ovat käytettävissä. Tämän vuoksi käyttäjät voivat arvioida budjettia koko budjettijakson aikana ja tehdä tarvittaessa oikaisuja budjetin versioiden ja siirtojen muodossa. Budjettipäällikkö voi myös viedä budjetin ja toteutuneet arvot Microsoft Exceliin, jossa voidaan suorittaa paremmat analyysit ja ennusteet.
+Budjetin hallinta on integroitu täysin Finance and Operationsin kanssa. Tämän vuoksi sekä suunniteltujen että toteutuneiden ostojen budjetin arviointi on mahdollista. Budjettikyselyt ja -raportit ovat käytettävissä. Tämän vuoksi käyttäjät voivat arvioida budjettia koko budjettijakson aikana ja tehdä tarvittaessa oikaisuja budjetin versioiden ja siirtojen muodossa. Budjettipäällikkö voi myös viedä budjetin ja toteutuneet arvot Microsoft Exceliin, jossa voidaan suorittaa paremmat analyysit ja ennusteet.
 
 ## <a name="configuring-budget-control"></a>Budjetin hallinnan konfiguroiminen
 ### <a name="budget-cycle-time-span"></a>Budjettijakson aikaväli

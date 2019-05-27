@@ -3,7 +3,7 @@ title: Talentin järjestelmävaatimukset ja päivityskäytäntö
 description: Tässä ohjeaiheessa kerrotaan Dynamics 365 for Talentin järjestelmävaatimuksista. Lisäksi siinä käsitellään päivityskäytäntö.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2389f00b22ec3b5284eeffb2c015533b7a3d13e0
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.openlocfilehash: ea8b7485b142245a359648a2a85d2a3e2a6d6629
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856298"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517909"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Talentin järjestelmävaatimukset ja päivityskäytäntö
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin järjestelmävaatimuksista. Lisäksi siinä käsitellään päivityskäytäntö.
+Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 for Talent -vaatimukset, kuten Attract, Onboard ja Core HR. Siinä esitellään myös Talentin käytettävissä olevat maat ja alueet sekä tiedot kielistä ja lokalisoinnissa Talentia koskevia tietoja varten. Lisäyksissä tämä ohjeaihe sisältää Talentin päivityskäytännön.
 
 ## <a name="supported-web-browsers"></a>Tuetut selaimet
 
@@ -57,8 +57,17 @@ Ohjelmistovalmistajien sivustot sisältävät tietoja kunkin selaimen uusimmasta
 * Microsoft Office 2016:n Windows- tai Mac-version on oltava asennettuna, jotta Microsoft Excel- ja Word-lisäosia voi käyttää. Lisätietoja versiovaatimuksista on kohdassa [Office-integroinnin vianmääritys](../dev-itpro/office-integration/office-integration-troubleshooting.md "Office-integroinnin vianmääritys").
 * Microsoft Office 2007 tai sitä uudempi on oltava asennettuna, jotta voit tarkastella Vie Exceliin- tai Vie Wordiin -toimintojen luomia asiakirjoja.
 
+## <a name="regional-availability-languages-and-localization"></a>Alueellinen käytettävyys, kielet ja lokalisointi
+
+Voit ladata PDF-tiedoston maista, alueista ja kielistä, joita Talent tukee kohdasta [Microsoft Dynamics 365:n kansainvälinen saatavuus](https://docs.microsoft.com/dynamics365/get-started/availability). 
+
+> [!NOTE]
+> Kun käyttöliittymä on lokalisoitu muille kielille, kaikki käyttäjätiedot tallennetaan kielellä, jolla ne on kirjoitettu. Voit luoda sähköposteja ja malleja muilla kielillä, mutta tiedot, kuten aikataulun tiedot, ovat tällä hetkellä käytettävissä vain englanniksi.
+
+Jos olet kehittäjä, joka on kiinnostunut maa- tai aluekohtaisten mukautusten luonnista, tai kun luot ratkaisun maalle tai alueelle, jota Microsoft ei tällä hetkellä tue, Katso lisätietoja kohdasta [Globalisaatio](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+
 ## <a name="update-policy"></a>Päivityskäytäntö
 
 Microsoft Dynamics 365 for Talent on pilvipalvelu. Dynamics 365 for Talentin päivitykset ovat jatkuvia ja Microsoft ottaa ne käyttöön automaattisesti.
 
-Päivitykset julkaistaan säännöllisesti, ja ne tehdään kaikkiin ympäristöihin.  Dynamics 365 for Talentia tuetaan [Microsoft-tuen elinkaarikäytännön](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft-tuen elinkaari") mukaisesti, joka ilmaisee yhdenmukaisen ja ennakoitavan ohjeistuksen tuotetuen saatavuudesta.
+Päivitykset julkaistaan säännöllisesti, ja ne tehdään kaikkiin ympäristöihin. Dynamics 365 for Talentia tuetaan [Microsoft-tuen elinkaarikäytännön](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft-tuen elinkaari") mukaisesti, joka ilmaisee yhdenmukaisen ja ennakoitavan ohjeistuksen tuotetuen saatavuudesta.

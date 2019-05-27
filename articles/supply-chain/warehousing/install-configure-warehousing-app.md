@@ -20,11 +20,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: f5e99351d79cb5898c6d5565d3d3197a8fe860df
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "316116"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559183"
 ---
 # <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Microsoft Dynamics 365 for Finance and Operationsin asentaminen ja määrittäminen &#8211; varastointi
 
@@ -91,10 +91,10 @@ Sinun on määritettävä sovellus laitteessa muodostaaksesi yhteyden Finance an
 1.  Siirry sovelluksessa kohtaan **Yhteysasetukset**.
 2.  Tyhjennä **Demotila**-kenttä. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Kirjoita seuraavat tiedot: 
-    + **Azure Active Directory -asiakkaan tunnus** – asiakkaan tunnus saadaan vaiheessa 9 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
-    + **Azure Active Directory -asiakkaan salasana** – Asiakkaan salasana saadaan vaiheessa 11 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
-    + **Azure Active Directory -resurssi** – Azure AD -resurssi esittää Finance and Operationsin pääkansion URL-osoitetta. **Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
-    + **Azure Active Directory -vuokraaja** – Azure AD -vuokraajaa käytetään Finance and Operations -palvelimen kanssa: `https://login.windows.net/your-AD-tenant-ID`. Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
+    + **Azure Active -asiakkaan tunnus** – asiakkaan tunnus saadaan vaiheessa 9 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
+    + **Azure Active directory -asiakkaan salasana** – Asiakkaan salasana saadaan vaiheessa 11 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
+    + **Azure Active directory -resurssi** - Azure AD -resurssi esittää Finance and Operationsin pääkansion URL-osoitetta. **Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
+    + **Azure Active directory -vuokraaja** - Azure AD -vuokraajaa käytetään Finance and Operations -palvelimen kanssa: `https://login.windows.net/your-AD-tenant-ID`. Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
     + **Yritys** – Anna Finance and Operationsin yritys, johon haluat muodostaa sovelluksella yhteyden. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Valitse **Takaisin** -painike sovelluksen vasemmassa yläkulmassa. Sovellus muodostaa nyt yhteyden Finance and Operations -palvelimeen ja fyysisen varaston työntekijän kirjautumisnäyttö avautuu. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)

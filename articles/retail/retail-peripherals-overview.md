@@ -19,11 +19,11 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "347856"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571555"
 ---
 # <a name="retail-peripherals"></a>Vähittäismyynnin oheislaitteet
 
@@ -55,7 +55,7 @@ Modern POS iOS:lle on Modern POS -ohjelman iOS-pohjainen versio, joka voidaan ot
 
 ### <a name="modern-pos-for-android"></a>Modern POS Androidille
 
-Modern POS Androidille on Modern POS -ohjelman Android-pohjainen versio, joka voidaan ottaa käyttöön Android-laitteissa.
+Modern POS Androidille onModern POS-ohjelman Android-pohjainen versio, joka voidaanottaa käyttöön Android-laitteissa.
 
 ### <a name="pos-peripherals"></a>Myyntipisteen oheislaitteet
 

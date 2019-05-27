@@ -18,11 +18,11 @@ ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 3d57419ca5c59be185c87b869302b41bef05a3c7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "342957"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554493"
 ---
 # <a name="upgrade-budget-planning"></a>Budjettisuunnittelun päivitys
 
@@ -58,7 +58,7 @@ Budjettisuunnitteluprosessit ovat pääsääntöisesti samat kuin AX 2012:ssa. M
 
 ### <a name="attachments"></a>Liitteet
 
-Perusteluasiakirjat tallennettiin liitekansioon AX 2012:ssa. Aiempia perusteluasiakirjoja ei päivitetä. Perusteluasiakirjat tallennetaan nyt tietokantaan. Jos nämä tiedot tulee tallentaa päivitettyyn versioon, voit ladata lopulliset perusteluasiakirjat kunkin suunnitelman liitteeksi käyttämällä toimintoruudun **Perustelu**-painiketta. AX 2012 loi Excel-työkirjat kullekin budjettisuunnitelmalle mallin perusteella. Kaikki suunnitelmat avaavat Dynamics 365 for Finance and Operationsissa kopion asettelusta. Excel-tiedostoon ei kuitenkaan tallenneta muutoksia. Kaikki kaavat tai tukitiedot, joita käytettiin suunnitelmakohtaisesti on lisättävä kommenteissa, perusteluasiakirjassa tai jossain toisessa täydentävässä prosessissa.
+Perusteluasiakirjat tallennettiin liitekansioon AX 2012:ssa. Aiempia perusteluasiakirjoja ei päivitetä. Perusteluasiakirjat tallennetaan nyt tietokantaan. Jos nämä tiedot tulee tallentaa päivitettyyn versioon, voit ladata lopulliset perusteluasiakirjat kunkin suunnitelman liitteeksi käyttämällä toimintoruudun **Perustelu**-painiketta. AX 2012 loi Excel-työkirjat kullekin budjettisuunnitelmalle mallin perusteella. Kaikki suunnitelmat avaavat Finance and Operationsissa kopion asettelusta. Excel-tiedostoon ei kuitenkaan tallenneta muutoksia. Kaikki kaavat tai tukitiedot, joita käytettiin suunnitelmakohtaisesti on lisättävä kommenteissa, perusteluasiakirjassa tai jossain toisessa täydentävässä prosessissa.
 
 ## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>AX 2012:sta päivitetyn ympäristön määrittäminen
 Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä budjettiprosessia, jonka avulla opit, miten päivitetty järjestelmä määritetään. Päivitysprosessin auttamiseksi sarakkeille on luotu oletusmääritykset. Voit päivittää tai poistaa nämä oletustiedot, jos ne eivät vastaa määritysvaatimuksiasi. **Huomautus:** järjestelmä ei aseta arvoja uusille, pakollisille kentille. Jos et pysty siirtymään pois esimerkiksi **Budjettisuunnittelun konfigurointi** -sivulta, voit sulkea selaimen ja avata sen uudelleen toiselle sivulle, jotta voit syöttää tiedot oikeassa järjestyksessä. Joitakin pakollisia kenttiä ei ole vielä määritetty. Voit siis kohdata ongelmia, kunnes kaikki on määritetty ja kaikki pakolliset kentät on asetettu. Tässä ohjeaiheessa selitetään, miten nämä kentät määritetään vaatimusten mukaisesti. Seuraavassa on joitakin näistä pakollisista kentistä:
@@ -72,7 +72,7 @@ Seuraavassa esimerkissä käytetään AX 2012 -esittelytiedoista päivitettyä b
    -   Budjettisuunnitelman skenaariot: Todellinen, Perusarvo, Budjettipyyntö, Budjetti hyväksytty
    -   Budjettisuunnitelman rivit kaikille vuoden 2017 skenaarioille ja Todelliset sekä vuodelle 2016 että vuodelle 2017
 
-   Dynamics 365 for Finance and Operationsissa luodaan seuraavat sarakkeet:
+   Finance and Operationsissa luodaan seuraavat sarakkeet:
 
    | Sarakkeen nimi    | Budjettisuunnitelman skenaario | Sarakkeen ajanjakso | Vuoden siirtymä |
    |----------------|----------------------|--------------------|-------------|
@@ -126,7 +126,7 @@ Kausittaisiin prosesseihin on lisätty seuraavat vaihtoehdot. Näiden vaihtoehto
 
 ### <a name="more-complete-tracking-of-amounts"></a>Lisätietoja summien seurannasta
 
-AX 2012 -järjestelmässä budjettisuunnittelu sisälsi yhden, jokaiselle arvolle tallennetun summan. Tätä tietomallia on laajennettu Dynamics 365 for Finance and Operationsissa. Kullakin arvolla on nyt erilliset kirjanpitovaluutan, tapahtumavaluutan ja raportointivaluutan summat. Näihin sarakkeisiin täytetään olemassa olevia tietoja päivityksen aikana.
+AX 2012 -järjestelmässä budjettisuunnittelu sisälsi yhden, jokaiselle arvolle tallennetun summan. Tätä tietomallia on laajennettu Finance and Operationsissa. Kullakin arvolla on nyt erilliset kirjanpitovaluutan, tapahtumavaluutan ja raportointivaluutan summat. Näihin sarakkeisiin täytetään olemassa olevia tietoja päivityksen aikana.
 
 ### <a name="do-not-convert-currency-in-aggregation"></a>Älä muunna valuuttaa koosteessa
 

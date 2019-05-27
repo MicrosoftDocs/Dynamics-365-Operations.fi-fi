@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 93b311d541ab588be82e6704dbe9ae3e43deabba
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364968"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1563736"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 
@@ -83,7 +83,7 @@ Täsmäytyksessä voi esiintyä pyöristyseroja. Voit täsmäyttää yhden tilio
 
 Tiliotteen vastatapahtumat täsmäytetään käyttämällä täsmäytyksen laskentataulukkoa. Tiliotteen kaksi riviä voidaan täsmäyttää, jos summat ovat vastakkaiset ja jos toinen tapahtumista on merkitty vastatapahtumaksi. Voit myös määrittää täsmäytyssäännön **Tyhjennä palautuslaskelman rivit** -toiminnolle.
 
-Dynamics 365 for Operations -järjestelmässä pankin vastatapahtumat on täsmäytettävä **Dynamics 365 for Operations -pankkitapahtumat** -sivulla. Voit täsmäyttää kaksi Dynamics 365 for Operations -pankkitapahtumaa yhdessä, jos asiakirjojen pankkitili, asiakirjatyyppi ja maksuviite on sama ja jos niiden summat ovat vastakkaiset. Voit täsmäyttää myös yhden selvitetyn sekin. Tämä estää kyseisten tapahtumien näkymisen täsmäytyksen laskentataulukossa. 
+Operations-pankin vastatapahtumat on täsmäytettävä **Operations-pankkitapahtumat** -sivulla. Voit täsmäyttää kaksi Dynamics 365 for Operations -pankkitapahtumaa yhdessä, jos asiakirjojen pankkitili, asiakirjatyyppi ja maksuviite on sama ja jos niiden summat ovat vastakkaiset. Voit täsmäyttää myös yhden selvitetyn sekin. Tämä estää kyseisten tapahtumien näkymisen täsmäytyksen laskentataulukossa. 
 
 Jos kyse on uusista pankista peräisin olevista tapahtumista, kuten korosta, maksuista tai kuluista, jotka eivät ole vielä Finance and Operationsissa, voit lisätä ne kirjauskansioon, joka liittyy valittuun tiliotteen täsmäytykseen. Valitse ensin täsmäyttämättömien tapahtumien **Tiliotteen tapahtumat** -ruudukossa tiliotteen tapahtuma ja sitten **Merkitse uudeksi**. Tapahtuman tilaksi on valittu **Uusi** ja tapahtuma on siirretty täsmäytettyjen tapahtumien **Tiliotteen tapahtumat** -ruudukkoon. **Uudeksi** merkityt tapahtumat kirjataan myöhemmin **Tiliote**-sivulla. 
 

@@ -18,11 +18,11 @@ ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
 ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364048"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1567973"
 ---
 # <a name="get-support-for-dynamics-365-for-retail"></a>Dynamics 365 for Retail -tuen saaminen
 
@@ -71,7 +71,7 @@ Voit saada Retail-tukea käyttämällä seuraavan taulukon resursseja. Nämä re
 <li>LCS:n käyttöön liittyvät virheet ja LCS:n käyttöoikeuksiin liittyvät virheet.</li>
 <li>Virheet, joita tapahtuu Retailin käytön aikana.</li>
 </ul>
-Jos tekniset kysymykset liittyvät CustomerSourceen kirjautumiseen tai sen käyttöön, eLearning-kursseihin, hakuun, tietämyskantaan, tietojen lataamiseen sekä sivu- tai järjestelmävirheisiin, siirry <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">sivustotukeen</a>.</td>
+Jos tekniset kysymykset liittyvät CustomerSourceen kirjautumiseen, e-learning-kursseihin, hakuun, tietämyskantaan, tietojen lataamiseen sekä sivu- tai järjestelmävirheisiin, siirry <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">sivustotukeen</a>.</td>
 </tr>
 <tr>
 <td>Pyydä apua Retail- tai Finance and Operations -lisensointia koskevissa kysymyksissä.</td>

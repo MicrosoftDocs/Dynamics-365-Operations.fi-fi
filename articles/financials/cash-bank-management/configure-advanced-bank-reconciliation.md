@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c95589b013b569f15fce80612a11eca621944f6b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "357332"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561589"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Pankkitilin täsmäytyksen lisätoimintojen määritysprosessi
 
@@ -34,7 +34,7 @@ Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliot
 Ennen kehittyneen pankin täsmäytystoiminnon käyttöä on määritettävä monta asiaa. Saat lisätietoja pankin tiliotteen tuonnin määrittämisestä ohjeaiheesta [Määritä pankin tiliotteen tuontiprosessi](set-up-advanced-bank-reconciliation-import-process.md).  Täsmäytysprosessin määrittämisen vaatimukset on kuvattu alla.
 
 ## <a name="transaction-codes"></a>Tapahtumakoodit
-Tapahtumakoodeja voidaan käyttää osana pankkitilin täsmäytyksen vastaavuussääntöjä.  Tapahtumakoodit auttavat yhdistämään vain saman tyyppisiä tapahtumia Dynamics 365 for Finance and Operationsin ja tiliotteen välillä.  Määritä tämän tyyppisen vastaavuuden määrittämiseksi ensin Dynamics 365 for Finance and Operationsista lähtevien pankkitapahtumien tapahtumatyypit ja yhdistä sitten nämä tyypit pankin käyttämiin tiliotteen tapahtumakoodeihin.  Dynamics 365 for Finance and Operationsin pankkitapahtumien tapahtumatyypit määritetään **Pankkitapahtuman tyyppi** -sivulla.  Tässä määrität myös päätilin, jota käytetään kyseiseen tapahtumatyyppiin liittyvissä kirjauksissa. 
+Tapahtumakoodeja voidaan käyttää osana pankkitilin täsmäytyksen vastaavuussääntöjä.  Tapahtumakoodit auttavat yhdistämään vain saman tyyppisiä tapahtumia Dynamics 365 for Finance and Operationsin ja tiliotteen välillä.  Määritä tämän tyyppisen vastaavuuden määrittämiseksi ensin Dynamics 365 for Finance and Operationsista lähtevien pankkitapahtumien tapahtumatyypit ja yhdistä sitten nämä tyypit pankin käyttämiin tiliotteen tapahtumakoodeihin.  Finance and Operationsin pankkitapahtumien tapahtumatyypit määritetään **Pankkitapahtuman tyyppi** -sivulla.  Tässä määrität myös päätilin, jota käytetään kyseiseen tapahtumatyyppiin liittyvissä kirjauksissa. 
 
 Kun Finance and Operationsin pankintapahtumakoodit on määritetty, nämä tapahtumakoodit yhdistetään sitten sähköisissä tiliotteissa käytettäviksi tapahtumakoodeiksi.  Voit tehdä tämän yhdistämisprosessin **Tapahtumakoodin määritys** -sivulla.  Tapahtumakoodin määritys suoritetaan erikseen kullekin pankkitilille.
 

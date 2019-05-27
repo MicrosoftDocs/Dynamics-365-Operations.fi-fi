@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c26fedf15118a304469604527c33a25871356be
-ms.sourcegitcommit: 8eac5eee94bb32143df44c82a2dfdbe903967af8
+ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "878307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1522286"
 ---
 # <a name="delays"></a>Viiveet
 
@@ -42,7 +42,8 @@ Voit määrittää kattavuusryhmän viivästysten laskentatavat. Voit liittää 
 
 **Pääsuunnittelun parametrit** -sivulla voit määrittää viivästymisten laskennan aloitusajan. Jos tilaus täyttyy tämän jälkeen, tilauksen viivästyspäivään lisätään yksi päivä. 
 
-> [!HUOMAUTUS} Aiemmissa versioissa laskettuja viiveitä kutsuttiin *viivästyssanomiksi*, viivästyspäivää *lasketuksi viivästyspäiväksi* ja viivästynyttä tapahtumaa *tulevaisuuteen määritetyksi tapahtumaksi*.
+> [!NOTE]
+> Aiemmissa versioissa laskettuja viiveitä kutsuttiin *viivästyssanomiksi*, viivästyspäivää *viivästyspäiväksi* ja viivästynyttä tapahtumaa *tulevaisuuteen määritetyksi tapahtumaksi*.
 
 ## <a name="desired-date"></a>Haluttu päivämäärä
 

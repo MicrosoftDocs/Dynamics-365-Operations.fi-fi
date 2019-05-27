@@ -3,7 +3,7 @@ title: Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 description: Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/03/2018
+ms.date: 05/14/2014
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331273"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541265"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 
@@ -440,12 +440,17 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <td>Palauttaa määritetyn luettelon sen jälkeen, kun kysely on suodatettu määritetyn ehdon mukaan. Funktio eroaa <strong>WHERE</strong>-funktiosta, koska määritettyä ehtoa käytetään tietokannan tasolla kaikkiin <strong>Taulukkotietue</strong>-tyypin ER-tietolähteisiin. Luettelo ja ehto voidaan määrittää tauluja ja suhteita käyttämällä.</td>
 <td>Jos <strong>Toimittaja</strong> on määritetty VendTable-tauluun viittaavaksi ER-tietolähteeksi, <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> palauttaa toimittajaluettelon, joka kuuluu toimittajaryhmään 40. Jos <strong>Toimittaja</strong> määritetään VendTable-tauluun viittaavaksi ER-tietolähteeksi ja ER-tietolähteeksi määritetty <strong>parmVendorBankGroup</strong> palauttaa <strong>String</strong>-tietotyypin arvon, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> palauttaa luettelon vain niistä toimittajatileistä, jotka kuuluvat tiettyyn pankkiryhmään.</td>
 </tr>
+<tr>
+<td>INDEKSI (luettelo, indeksi)</td>
+<td>Tämä funktio palauttaa luettelon tietyn numeerisen indeksin perusteella valitun tietueen. Poikkeus on heitetty, jos indeksi on luettelon tietueissa olevan alueen ulkopuolella.</td>
+<td>Jos syötät tietolähteen <strong>DS</strong><strong>laskettuun kenttätyyppiin</strong> ja se sisältää lausekkeen <strong>Split ("A | B | C "," | "), 2)</strong>, ilmaisu <strong>DS.Value</strong> palauttaa tekstiarvon "B". Lauseke <strong>INDEX (SPLIT ("A | B | C "," | "), 2).Value</strong> palauttaa myös "B"-teksti arvon.</td>
+</tr>
 </tbody>
 </table>
 
 ### <a name="logical-functions"></a>Loogiset toiminnot
 
-| Toiminto | kuvaus | Esimerkki |
+| Toiminto | Kuvaus | Esimerkki |
 |----------|-------------|---------|
 | CASE (lauseke, valinta 1, tulos 1 \[, valinta 2, tulos 2\]... \[, oletustulos\]) | Laskee määritetyn lausekkeen arvon määritetyille vaihtoehtoisille valinnoille. Palauttaa sen valinnan tuloksen, joka on sama kuin lausekkeen arvo. Muussa tapauksessa palautetaan oletustulos, jos oletustulos on määritetty. (Oletustulos on viimeinen parametri, jonka jälkeen ei tule valintaa). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** palauttaa merkkijonon **TALVI**, kun nykyisen Finance and Operations -istunnon päivämäärä on loka- ja joulukuun välissä. Muussa tapauksessa se palauttaa tyhjän merkkijonon. |
 | IF (ehto, arvo 1, arvo 2) | Palauttaa ensimmäisen määritetyn arvon, kun määritetyt ehdot täyttyvät. Muussa tapauksessa palautetaan toinen määritetty arvo. Jos arvo 1 ja arvo 2 ovat tietueita tai tietueluetteloita, tuloksessa on vain kentät, jotka ovat molemmissa luetteloissa. | **IF (1=2, "ehto täyttyy", "ehto ei täyty")** palauttaa merkkijonon **"ehto ei täyty"**. |

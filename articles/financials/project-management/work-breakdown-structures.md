@@ -19,11 +19,11 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: df4bc39f8df80580261102941712622ed59262bd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "358896"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572347"
 ---
 # <a name="work-breakdown-structures"></a>Työrakenteet
 
@@ -39,7 +39,7 @@ Työrakenteen tarkkuus riippuu arvioiden ja arvioissa käytettävien seurantasoj
 
 Sen sijaan esimerkiksi media-, mainos-, ohjelmisto- ja IT-infrastruktuurialan projektit ovat usein ainutlaatuisia. Tuottavuus riippuu tehtävän suorittavan henkilön kokemuksesta ja osaamisesta. Tämän vuoksi näillä toimialoilla käytetään työrakennetta projektin kokoarvion saamisessa, ei projektin edistymisen yksityiskohtaisessa seuraamisessa. 
 
-Työrakenteen muodostaminen on intensiivinen prosessi, joka kestää yleensä pitkään ja vaatii useiden henkilöiden yhteistyötä ja tietoja. Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 for Finance and Operationsissa olevia työrakenteen parannuksia voidaan käyttää arvioissa ja seuraamisessa vaatimusten täyttämiseksi.
+Työrakenteen muodostaminen on intensiivinen prosessi, joka kestää yleensä pitkään ja vaatii useiden henkilöiden yhteistyötä ja tietoja. Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 for Finance and Operationsissa olevia työrakenteen parannuksia voidaan käyttää arvioissa ja seuraamisessa vaatimusten täyttämiseksi.
 
 ## <a name="prerequisites-for-creating-a-wbs"></a>Työrakenteen luomisen edellytykset
 Voit luoda työrakenteen, jos sinulla on työaikataulun ja työn kustannusarvion luontioikeus.
@@ -105,7 +105,7 @@ Tällä hetkellä työrakenteen numerointia ei voi mukauttaa.
 Aikatauluarvio on yleensä työrakenteen luomisen toinen vaihe. Parhaan käytännön mukaisesti kannattaa tehdä aikatauluarvio ennen tehtävien luomista. Finance and Operationsin **Työrakenne**-sivu sisältää kaksi osaa. Yläruutu on tarkoitettu aikatauluarviolle. Alempi ruutu sisältää **Arvioidut kustannukset ja tuotto** -välilehden, jota käytetään kustannusarviossa. 
 **Tehtävän riippuvuudet** Voit luoda työrakenteen tehtävien välille edeltäjäsuhteita. Kun liität edeltäjätehtävän tehtävään, kyseinen tehtävä voi alkaa vasta, kun kaikki sen edeltäjätehtävät on suoritettu. Tehtävän suunniteltu alkamispäivämäärä määritetään automaattisesti kaikkien sen edeltäjätehtävien viimeiseksi päivämääräksi. 
 
-**Tehtävien ajoitus Microsoft Dynamics 365 for Finance and Operationsissa** Seuraavat tekijät määrittävät lehtisolmutehtävien ajoituksen:
+**Tehtävien ajoitus Microsoft Dynamics 365 for Finance and Operationsissa** Seuraavat tekijät määrittävät lehtisolmutehtävien ajoituksen:
 
 -   Edeltäjät
 -   Työmäärä

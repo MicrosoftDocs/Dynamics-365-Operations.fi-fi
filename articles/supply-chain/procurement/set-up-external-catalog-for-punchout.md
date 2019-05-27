@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
-ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "368165"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571628"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen
 
@@ -93,7 +93,7 @@ Takaisinlähetysviesti on viesti, joka saadaan toimittajalta, kun käyttäjä ki
 | Toimittajalta vastaanotettu viesti | Kopioitu ostoehdotuksen riville Finance and Operationsissa|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Määrä|
-|< ItemIn >< ItemID >< SupplierPartID >< /SupplierPartID >|Ulkoinen nimiketunnus|
+|< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|Ulkoinen nimiketunnus|
 |< ItemDetail>< UnitPrice >< Money currency=”” >| Valuutta|
 |< ItemDetail >< UnitPrice >< Money >< /Money >| Yksikköhinta|
 |< ItemDetail >< Description ShortName=”” >|Tuotteen nimi|

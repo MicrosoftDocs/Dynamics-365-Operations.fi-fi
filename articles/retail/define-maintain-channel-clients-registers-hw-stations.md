@@ -20,11 +20,11 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 544f109a4f46bd7511ee564902f627beddd29f15
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568042"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Yhdistä oheislaitteet myyntipisteeseen (POS)
 
@@ -49,11 +49,11 @@ Myyntipisteen kassakone on yksikkö, jolla määritetään tietyn POS-esiintymä
 
 Siirtyminen: Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **Laitteet**.
 
-Laite on yksikkö, joka ilmaisee myyntipisteen kassakoneeseen yhdistämismääritetyn laitteen fyysisen esiintymän. Kun laite on luotu, siitä muodostetaan yhdistämismääritys myyntipisteen kassakoneeseen. Laiteyksikkö seuraa seuraavia tietoja: myyntipisteen kassakoneen aktivoinnin ajankohta, käytettävän asiakasohjelman tyyppi ja tietyssä laitteessa käyttöönotettu sovelluspaketti. Laitetyyppejä on kaksi: **Retail Modern POS** (MPOS) ja **Retail Cloud POS** (Cloud POS).
+Laite on yksikkö, joka ilmaisee myyntipisteen kassakoneeseen yhdistämismääritetyn laitteen fyysisen esiintymän. Kun laite on luotu, siitä muodostetaan yhdistämismääritys myyntipisteen kassakoneeseen. Laiteyksikkö seuraa seuraavia tietoja: myyntipisteen kassakoneen aktivoinnin ajankohta, käytettävän asiakasohjelman tyyppi ja tietyssä laitteessa käyttöönotettu sovelluspaketti. Laitetyyppejä on kaksi: **Retail modern POS** (MPOS) ja **Retail Cloud POS** (Cloud POS).
 
 #### <a name="mpos"></a>MPOS
 
-MPOS on myyntipisteen asiakasohjelma, joka asennettu Windows 8.1- tai sitä uudempaan PC-pohjaiseen käyttöjärjestelmään. Jos **Retail Modern POS** -sovellustyyppi on yhdistämismääritetty laitteeseen, ladattava paketti voidaan määrittää tietylle laitteelle. Ladattava paketti voidaan mukauttaa sisältämään asennuspaketin eri versioita. Koska käyttöön voi ottaa erilaisia paketteja, joustavuus paranee tilanteissa, joissa myyntipisteen eri kassakoneissa on käytettävä erilaisia integrointeja. MPOS otetaan käyttöön yhdessä sisäisen laiteaseman kanssa.
+MPOS on myyntipisteen asiakasohjelma, joka asennettu Windows 8.1- tai sitä uudempaan PC-pohjaiseen käyttöjärjestelmään. Jos **Retail modern POS** -sovellustyyppi on yhdistämismääritetty laitteeseen, ladattava paketti voidaan määrittää tietylle laitteelle. Ladattava paketti voidaan mukauttaa sisältämään asennuspaketin eri versioita. Koska käyttöön voi ottaa erilaisia paketteja, joustavuus paranee tilanteissa, joissa myyntipisteen eri kassakoneissa on käytettävä erilaisia integrointeja. MPOS otetaan käyttöön yhdessä sisäisen laiteaseman kanssa.
 
 #### <a name="cloud-pos"></a>Cloud POS
 
