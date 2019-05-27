@@ -17,38 +17,38 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: e46b419ab613425ae2d758f80105ac94f1ec5cc2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "324327"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565969"
 ---
-# <a name="settle-a-postdated-check-for-a-vendor"></a><span data-ttu-id="2a7ef-103">Tilitä toimittajalle jälkeen päin päivitetty lasku</span><span class="sxs-lookup"><span data-stu-id="2a7ef-103">Settle a postdated check for a vendor</span></span>
+# <a name="settle-a-postdated-check-for-a-vendor"></a><span data-ttu-id="dda47-103">Tilitä toimittajalle jälkeen päin päivitetty lasku</span><span class="sxs-lookup"><span data-stu-id="dda47-103">Settle a postdated check for a vendor</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="2a7ef-104">Tilitä toimittajalle myönnetty myöhemmäksi päivätty sekki, kun pankki on selvittänyt erääntyneen ja pankin selvittämän sekkitapahtuman.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-104">Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank.</span></span> 
+<span data-ttu-id="dda47-104">Tilitä toimittajalle myönnetty myöhemmäksi päivätty sekki, kun pankki on selvittänyt erääntyneen ja pankin selvittämän sekkitapahtuman.</span><span class="sxs-lookup"><span data-stu-id="dda47-104">Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank.</span></span> 
 
-<span data-ttu-id="2a7ef-105">Suorita seuraavat menettelyt, kuin aloitat tämän menettelyn.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-105">Complete the following procedures before you start this one.</span></span>
+<span data-ttu-id="dda47-105">Suorita seuraavat menettelyt, kuin aloitat tämän menettelyn.</span><span class="sxs-lookup"><span data-stu-id="dda47-105">Complete the following procedures before you start this one.</span></span>
 
-1) <span data-ttu-id="2a7ef-106">Määritä jälkeen päin päivitetyt sekit</span><span class="sxs-lookup"><span data-stu-id="2a7ef-106">Set up postdated checks</span></span>
+1) <span data-ttu-id="dda47-106">Määritä jälkeen päin päivitetyt sekit</span><span class="sxs-lookup"><span data-stu-id="dda47-106">Set up postdated checks</span></span>
 
-2) <span data-ttu-id="2a7ef-107">Rekisteröi ja kirjaa toimittajan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="2a7ef-107">Register and post a postdated check for a vendor</span></span>
+2) <span data-ttu-id="dda47-107">Rekisteröi ja kirjaa toimittajan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="dda47-107">Register and post a postdated check for a vendor</span></span>
 
 
 
-<span data-ttu-id="2a7ef-108">Tämä menettelyn rooli on Rahastonhoitaja.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="2a7ef-109">Näissä toimintaohjeissa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-109">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="dda47-108">Tämä menettelyn rooli on Rahastonhoitaja.</span><span class="sxs-lookup"><span data-stu-id="dda47-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="dda47-109">Näissä toimintaohjeissa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="dda47-109">This procedure uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="2a7ef-110">Valitse Ostoreskontra > Maksut > Toimittajan myöhemmäksi päivätyt sekit.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-110">Go to Accounts payable > Payments > Vendor postdated checks.</span></span>
-2. <span data-ttu-id="2a7ef-111">Valitse Selvitä.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-111">Click Settle.</span></span>
-3. <span data-ttu-id="2a7ef-112">Valitse Tilitä siirtokirjaukset.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-112">Click Settle clearing entries.</span></span>
-    * <span data-ttu-id="2a7ef-113">Selvitä sekkitapahtumien toimittajan tili</span><span class="sxs-lookup"><span data-stu-id="2a7ef-113">Settle the vendor account for the check transaction.</span></span>  
-4. <span data-ttu-id="2a7ef-114">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-114">Close the page.</span></span>
-5. <span data-ttu-id="2a7ef-115">Siirry kohtaan Kirjanpito > Kirjauskansioviennit > Yleiset kirjauskansiot.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-115">Go to General ledger > Journal entries > General journals.</span></span>
-6. <span data-ttu-id="2a7ef-116">Valitse Näytä-kentässä Kaikki.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-116">In the Show field, select 'All'.</span></span>
-7. <span data-ttu-id="2a7ef-117">Valitse Näytä vain käyttäjän luomat -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-117">Select or clear the Show user-created only check box.</span></span>
-8. <span data-ttu-id="2a7ef-118">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-118">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="2a7ef-119">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-119">Click Lines.</span></span>
-10. <span data-ttu-id="2a7ef-120">Valitse Tosite.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-120">Click Voucher.</span></span>
-11. <span data-ttu-id="2a7ef-121">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="2a7ef-121">Close the page.</span></span>
+1. <span data-ttu-id="dda47-110">Valitse Ostoreskontra > Maksut > Toimittajan myöhemmäksi päivätyt sekit.</span><span class="sxs-lookup"><span data-stu-id="dda47-110">Go to Accounts payable > Payments > Vendor postdated checks.</span></span>
+2. <span data-ttu-id="dda47-111">Valitse Selvitä.</span><span class="sxs-lookup"><span data-stu-id="dda47-111">Click Settle.</span></span>
+3. <span data-ttu-id="dda47-112">Valitse Tilitä siirtokirjaukset.</span><span class="sxs-lookup"><span data-stu-id="dda47-112">Click Settle clearing entries.</span></span>
+    * <span data-ttu-id="dda47-113">Selvitä sekkitapahtumien toimittajan tili</span><span class="sxs-lookup"><span data-stu-id="dda47-113">Settle the vendor account for the check transaction.</span></span>  
+4. <span data-ttu-id="dda47-114">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="dda47-114">Close the page.</span></span>
+5. <span data-ttu-id="dda47-115">Siirry kohtaan Kirjanpito > Kirjauskansioviennit > Yleiset kirjauskansiot.</span><span class="sxs-lookup"><span data-stu-id="dda47-115">Go to General ledger > Journal entries > General journals.</span></span>
+6. <span data-ttu-id="dda47-116">Valitse Näytä-kentässä Kaikki.</span><span class="sxs-lookup"><span data-stu-id="dda47-116">In the Show field, select 'All'.</span></span>
+7. <span data-ttu-id="dda47-117">Valitse Näytä vain käyttäjän luomat -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="dda47-117">Select or clear the Show user-created only check box.</span></span>
+8. <span data-ttu-id="dda47-118">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="dda47-118">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="dda47-119">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="dda47-119">Click Lines.</span></span>
+10. <span data-ttu-id="dda47-120">Valitse Tosite.</span><span class="sxs-lookup"><span data-stu-id="dda47-120">Click Voucher.</span></span>
+11. <span data-ttu-id="dda47-121">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="dda47-121">Close the page.</span></span>
 
