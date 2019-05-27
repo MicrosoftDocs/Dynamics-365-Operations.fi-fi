@@ -3,14 +3,14 @@ title: Laajenna Talent käyttämällä PowerApps- ja Microsoft Flow -esimerkkej�
 description: Tässä ohjeaiheessa käsitellään Microsoft PowerAppsia ja Microsoft Flow'ta käyttäviä Microsoft Dynamics 365 for Talentin laajennusesimerkkejä.
 author: negudava
 manager: Annbe
-ms.date: 03/04/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent;Core;Experience Apps
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0aa3578047b9397682a7039d0dbcc05cc1b167e4
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "949917"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517878"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Laajenna Talent käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä
 
@@ -101,7 +101,21 @@ Tämä malli voidaan laajentaa käytettäväksi missä tahansa SharePoint-integr
 
 Voit ladata **Työnkulku – SharePoint-integrointi** -mallin Microsoft Download Centerin kohdassa [Työnkulku – SharePoint-integrointi](https://go.microsoft.com/fwlink/?linkid=2082109).
 
+## <a name="admin-console-to-manage-talent-pools"></a>Hallintakonsoli kykypoolien hallintaan
 
+Kun otat käyttöön LinkedIn-integroinnin, Attract luo automaattisesti LinkedIn-kykypoolin. Kun rekrytoija lähettää InMail-viestin rekrytoitavan kanssa LinkedIn kautta, Attract luo profiilin rekrytoitavalle ja rekrytoitava tulee jäsenenä LinkedIn-kykypooliin. Tämä PowerApps-sovellus on hyödyllinen järjestettäessä ehdokkaita osaamisryhmiin taitojen perusteella.
+
+Suorita tämä PowerApps-sovellus hallintakonsolina seuraavien tehtävien suorittamiseksi:
+
+- Listaa ehdokkaat kykypooliin
+- Hakijoiden lisääminen ja poistaminen kykypoolista
+- Siirrä ehdokkaita yhdestä kykypoolista toiseen
+- Päätä, ovatko ehdokkaat jo osa kykypoolia ennen niiden siirtämistä
+- Tarkista ehdokkaiden taidot ennen niiden siirtämistä muihin kykypooleihin
+
+Tämä PowerApps-sovellus käyttää monta-moneen-yhteyksiä, joten voit käyttää sitä mallina muille skenaarioille, joissa sinun täytyy poimia useita monta-moneen-yhteyksiä vaativia tietoja.
+
+Voit ladata **Hallintakonsoli kykypoolien hallintaan** -mallin siirtymällä kohtaan [Hallintakonsoli kykypoolien hallintaan](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) Microsoft Download Centerissä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

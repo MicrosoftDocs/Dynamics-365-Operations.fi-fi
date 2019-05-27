@@ -1,9 +1,9 @@
 ---
 title: Talent-tuen saaminen
-description: Tässä ohjeaiheessa kerrotaan, miten saat Dynamics 365 for Talentia koskevaa apua.
+description: Tässä ohjeaiheessa kerrotaan, miten saat Microsoft Dynamics 365 for Talentia koskevaa apua.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/18/2018
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,32 +15,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.openlocfilehash: 39aadda6e4c221e243d55e2fd60bbc8484d3b21d
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 9895ae8bdc6326b3863585d77b93576fe5fddcb4
+ms.sourcegitcommit: ab88de98a1958734213eb9d9b1988508b055f748
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992809"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538770"
 ---
 # <a name="get-support-for-talent"></a>Talent-tuen saaminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten saat apua Talent Core HR:n, Attractin ja Onboardin käyttöön.
+Tässä ohjeaiheessa kerrotaan, miten saat apua Microsoft Dynamics 365 for Talent Core HR:n, Dynamics 365 Talent: Attractin ja Dynamics 365 Talent: Onboardin kanssa.
 
-<a name="contact-support"></a>Ota yhteyttä tukeen
----------------
-
-Voit tämän ohjeaiheen tietojen avulla ottaa yhteyttä Microsoftiin, jos sinulla on Talentia koskevia teknisiä kysymyksiä.
-
-### <a name="talent-support"></a>Talent-tuki 
+## <a name="support-for-talent"></a>Talent-tuki
 
 Voit saada Talent-tukea käyttämällä seuraavan taulukon resursseja. Nämä resurssit mainitaan siinä järjestyksessä, jossa niitä kannattaa vianmäärityksessä käyttää.
 
-| **Tehtävä**                                                | **Lisätietoja**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kysy yhteisöltä                                      | Siirry [Kysy yhteisöltä](https://community.dynamics.com/365/talent) -sivulle, josta löydät vastauksia kysymyksiisi, ja hae ohjeaiheita Core HR:stä "Ohje"-vaihtoehdon avulla.                                                                                                                                                                                                                                                                                                                                                                                  |
-| Pilvipohjaisen tukityökalun käyttäminen                     | [Lifecycle Servicesissä (LCS)](https://lcs.dynamics.com/) **Tuki**-ruutu on työkalu, joka auttaa sinua hallitsemaan tukitapauksia. Voit lähettää ongelmia suoraan Microsoftile siirtymällä **Tuki**-ruutuun LCS-projektissa tai LCS:n **Tukipyynnöt-osiossa** napsauttamalla **Pilvipohjainen tuki**. Voit täältä lähettää ongelmia kahdella tavalla. 1: Kun lähetät ongelman LCS:n kautta, valitse **Aktiivinen ongelma** -välilehdessä ongelma ja napsauta sitten **Lähetä Microsoftille**. 2. Lähetä uudet ongelmat valitsemalla **Lähetetty Microsoftille** -välilehdessä **Lähetä uusi tapaus**.  |
-| Sovellustuessa                                 | Valitse **?** kuvake valikosta ja valitse sitten **Tuki (Core HR) Raportoi onglema (Attract, perehdytys)**. Ongelmat raportoidaan **Aktiivisen ongelmat** -LCS-välilehdellä. Huomaa, että jos olet hankkinut itsenäisen version Onboardista, raportoi ongelmasta Microsoftille.  |
-| Vastauksia kysymyksiin Talent-lisensoinnista         | Ota yhteyttä kumppaniin tai Microsoftin myyntiedustajan.     |
-| Uusien ominaisuuksien ja toimintojen pyytäminen Talentissa | Valitse sovelluksessa Talent-pääsivulla **?** -kuvaketta ja valitse sitten **Ideat** tai käytä [Ideat](https://experience.dynamics.com/ideas/)-linkkiä uusien ideoiden tarkastelemiseen, hakemiseen, äänestämiseen tai lisäämiseen.          |                                                                                                                                                                                                                                                                                           
+| Tehtävä | Lisätietoja |
+|------|------------------|
+| Kysy yhteisöltä. | Siirry [Dynamics 365 for Talent Community](https://community.dynamics.com/365/talent) -sivulle ja pyydä apua kysymyksiisi. Voit etsiä vastauksia kirjoittamalla kysymyksen **Minulla on kysymys**-kohdan viereiseen hakukenttään. Jos haluat esittää kysymyksen, valitse **Kysy kysymys**. |
+| Pilvipohjaisen tukityökalun käyttäminen. | Siirry [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/) -sivulla elinkaaripalvelut -kohdassa projektiin ja valitse**Tuki**-ruutu. Voit täältä lähettää ongelmia kahdella tavalla:<ul><li>Valitse **Aktiiviset ongelmat** -välilehdestä kysymys, jonka haluat lähettää, ja valitse sitten **Lähetä Microsoftille**.</li><li>Lähetä uusi ongelma valitsemalla **Lähetetty Microsoftille** -välilehdessä **Lähetä uusi tapaus**.</li></ul> |
+| Hanki sovelluksen tuki. | Valitse **Ohje** -painike (**?**) sivun oikeasta yläkulmasta. Sitten, jos olet Core HR:ssä, valitse **Tuki**. Jos olet Attractissa tai Onboardissa, valitse **Ilmoita ongelmasta**. Ongelmat raportoidaan LCS:n **Aktiiviset ongelmat** -välilehdessä, jossa järjestelmänvalvoja voi määrittää, tarjotaanko talon sisäinen tuki vai lähetetäänkö ongelmat Microsoftille. (Jos sinulla on erillinen versio Onboardista, ongelmat lähetetään suoraan Microsoftille.) |
+| Vastauksia kysymyksiin Talent-lisensoinnista. | Ota yhteyttä kumppaniin tai Microsoftin myyntiedustajan. |
+| Uusien ominaisuuksien ja toimintojen pyytäminen Talentissa. | Valitse sovelluksen Talent-sivulla **Ohje** -painike (**?**) ja valitse sitten **Ideat**. [Dynamics 365 -sovellusideat](https://experience.dynamics.com/ideas/) -sovelluksessa voit myös tarkastella, etsiä ja äänestää aiemmin luotuja tai lisätä uusia ideoita. |
+
+## <a name="support-for-the-onboard-stand-alone-app"></a>Erillisen Onboard-sovelluksen tuki
+
+Voit saada tukea Onboard erillissovellukseen käyttämällä seuraavan taulukon resursseja. Nämä resurssit mainitaan siinä järjestyksessä, jossa niitä kannattaa vianmäärityksessä käyttää. Voit etsiä kaikki nämä tukivaihtoehdot valitsemalla **Ohje**-painikkeen (**?**) sivun oikeasta yläkulmasta.
+
+| Tehtävä | Lisätietoja |
+|------|------------------|
+| Kysy yhteisöltä. | Siirry [Dynamics 365 for Talent Community](https://community.dynamics.com/365/talent) -sivulle ja pyydä apua. Voit etsiä vastauksia kirjoittamalla kysymyksen **Minulla on kysymys**-kohdan viereiseen hakukenttään. Jos haluat esittää kysymyksen, valitse **Kysy kysymys**. |
+| Ilmoita ongelmasta. | Valitse sivun oikeasta yläkulmasta **Ohje**-painike (**?**) ja valitse sitten **Ilmoita ongelmasta**. Kirjoita ongelman kuvaus ja sisällytä sähköpostiosoite, jos haluat seurata ilmoitettua ongelmaa. |
+| Vastauksia kysymyksiin Talent-lisensoinnista. | Ota yhteyttä kumppaniin tai Microsoftin myyntiedustajan. |
+| Uusien ominaisuuksien ja toimintojen pyytäminen Onboardissa. | Valitse **Ohje**-painike (**?**) ja valitse **Ideat**. Tutustu [Dynamics 365 for Talent: Onboard Ideas](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard) sovellukseen, jossa voit myös tarkastella, etsiä ja äänestää aiemmin luotuja tai lisätä uusia ideoita. |

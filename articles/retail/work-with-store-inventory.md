@@ -3,7 +3,7 @@ title: Myymälän varastonhallinta
 description: Tässä ohjeaiheessa käsitellään asiakirjatyyppejä, joiden avulla hallitaan varastoa.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 01/18/2019
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,20 +18,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02f8afbe3bb6f94c66a8b5aa02531c219adc3963
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: efc729c83b81bd8afb806c403d52fd85b36efc9d
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339231"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1523758"
 ---
 # <a name="store-inventory-management"></a>Myymälän varastonhallinta
 
 [!include [banner](includes/banner.md)]
-
-Tässä ohjeaiheessa käsitellään asiakirjatyyppejä, joiden avulla hallitaan varastoa.
-
-Organisaation varastoa voi hallita seuraavien asiakirjatyyppien avulla.
 
 Kun varastoa käsitellään Dynamics 365 for Retailissa ja käytössä on myyntipistesovellus, on tärkeää muistaa, että myyntipiste tukee vain rajoitetusti varastodimensioita ja tiettyjä varastonimiketyyppejä.  
 
@@ -46,10 +42,10 @@ Myyntipistesovellus ei tue tällä hetkellä myyntipisteessä seuraavia seuranta
 
 Myyntipisteratkaisu tukee rajoitetusti seuraavia dimensioita. Rajoitettu tuki ilmaisee, että myyntipiste voi palauttaa jotkin näistä dimensioista automaattisesti varastotapahtumiksi varaston tai kaupan asetusten määritysten perusteella. Myyntipiste ei tue dimensioita täysin sillä tavoin kuin niitä tuetaan, jos myyntitapahtuma viedään manuaalisesti ERP:hen. 
 
-- Paikka
-- Rekisterikilpi (käytössä vain, kun **Käytä varastonhallintaprosesseja** on otettu käyttöön nimikkeessä ja kaupan varastossa)
-- Sarjanumero
-- Varaston tila
+- **Fyysisen varastoinnin sijainti** – Käyttäjillä ei ole mahdollisuutta hallita vastaanottovaraston sijaintia nimikkeille, jotka on vastaanotettu myymälävarastoon, kun säilöä ei ole konfiguroitu käyttämään varastonhallintaprosessia.  Näille nimikkeille käytetään myymälän varastossa määritettyä oletusarvoista vastaanottosijaintia.  Jos varastonhallintaprosessi on otettu käyttöön myymälälle, järjestelmä käynnistää rajoitetun tuen, joka pyytää käyttäjää valitsemaan vastaanottopaikan koko kuittiin.  Myymälästä myydyt nimikkeet myydään aina oletusarvoiseen vähittäismyyntisijaintiin, joka on määritetty myymälän varaston määrityksissä.   Palautettavan varaston hallinnan sijaintia voidaan hallita myymälävaraston oletusarvon mukaisen palautuksen sijaintimäärityksen avulla tai palautusten syykoodien perusteella, jotka on määritetty palautuksen sijaintikäytännössä.
+- **Rekisterikilpi** - Rekisterikilvet ovat käytössä vain, kun **Käytä varastonhallintaprosesseja** on otettu käyttöön nimikkeessä ja kaupan varastossa.  Myyntipistesovelluksessa, jos varasto vastaanotetaan myymälävarastoon, jossa varaston hallintaprosessi on otettu käyttöön, ja jos nimikkeen vastaanottamiselle valittu sijainti on sidottu sijaintiprofiiliin, joka edellyttää rekisterikilpiohjausta, myyntipistesovellus käyttää vastaanottavan rivin rekisterikilpeä järjestelmällisesti.  Myyntipistekäyttäjillä ei ole mahdollisuutta muuttaa tai hallita tämän rekisterikilven tietoja.   Jos rekisterikilpien hallinta on pakollista, myymälästä käytetään WMS-mobiilisovellusta tai Back Office ERP -asiakasohjelmaa näiden nimikkeiden vastaanottamisen hallintaan.
+- **Sarjanumero** - Myyntipistesovelluksella on rajallinen tuki yksittäiselle sarjanumerolle, joka rekisteröidään tapahtumamyyntiriville myyntipistesovelluksessa luoduille tilauksille.  Tätä sarjanumeroa ei ole vahvistettu varastossa jo rekisteröidyille sarjanumeroille.  Jos myyntitilaus luodaan Call Center -kanavalla tai se toteutuu ERP-järjestelmän ja useiden sarjanumeroiden kautta, se kirjataan yhdelle myyntiriville ERP-järjestelmän toteutusprosessin aikana, näitä sarjanumeroita ei voida käyttää tai vahvistaa, jos palautukset käsitellään näiden tilausten myyntipisteessä.
+- **Varaston tila** – Nimikkeille, jotka käyttävät varastonhallintaprosessia ja vaativat varastontilan, tätä tilakenttää ei voi määrittää tai muokata myyntipistesovelluksen kautta.  Myymälän varaston konfiguraatiossa määritettyä varaston oletustilaa käytetään vastaanotettaessa nimikkeitä varastoon.  
 
 > [!NOTE]
 > Kaikkien organisaatioiden on testattava nimikemääritykset myyntipisteen kehitys- tai testiympäristössä, ennen kuin ne otetaan käyttöön tuotannossa. Testaa nimikkeet suorittamalla tavallinen itsepalvelutukun myyntitapahtuma ja luomalla (tarvittaessa) nimikkeille asiakastilauksia myyntipisteessä. Testauksen on sisällettävä täydelliset laskelmien kirjaamisprosessit testiympäristössä ja sen varmistaminen, että mitään ongelmia ei esiinny.
@@ -57,16 +53,18 @@ Myyntipisteratkaisu tukee rajoitetusti seuraavia dimensioita. Rajoitettu tuki il
 
 ## <a name="purchase-orders"></a>Ostotilaukset
 
-Ostotilaukset luodaan pääkonttorilla. Jos vähittäismyynnin varasto sisältyy ostotilauksen otsikkoon, tilaus voidaan vastaanottaa myymälään Microsoft Dynamics 365 for Retailin Modern POS- tai Cloud POS -sovelluksen avulla. Kun myymälään vastaanotetut määrät on syötetty, ne voidaan tallentaa paikallisesti muokkausta varten. Vaihtoehtoisesti määrät voidaan vahvistaa ja lähettää pääkonttoriin. Pääkonttorissa myymälään vastaanotetut määrät näytetään Dynamics 365 for Retailissa ostotilauksen **Ota vastaan nyt** -kentässä.
+Ostotilaukset luodaan pääkonttorilla. Jos vähittäismyynnin varasto sisältyy ostotilauksen otsikkoon, tilaus voidaan vastaanottaa myymälään käyttämällä Modern POS- tai Cloud POS-toimintoja Microsoft Dynamics 365 for Retailissa **Poiminta / vastaanottaminen** -toiminnolla. Kun myymälälle vastaanotetut määrät on syötetty ostotilausasiakirjan myyntipisteen **vastaanota nyt** -kenttään, ne voidaan tallentaa paikallisesti tai sitoa. Näiden tietojen tallentaminen paikallisesti ei vaikuta varastossa olevaan varastoon. Tallentaminen on tehtävä vain, jos käyttäjä ei ole valmis kirjaamaan vastaanottoa HQ-järjestelmään ja tarvitsee vain tavan tallentaa tilapäisesti aiemmin kirjoitetut **Vastaanota tiedot nyt** -tiedot.  Tällöin vastaanottotiedot tallennetaan paikallisesti käyttäjän kanavatietokantaan. Kun asiakirja on käsitelty **Toimitus**-valinnalla, **Vastaanota nyt** -tiedot lähetetään HQ-kohteeseen ja ostotilauksen vastaanotto kirjataan. 
 
 ## <a name="transfer-orders"></a>Siirtotilaukset
 
-Siirtotilaus voi määrittää, että nimikkeet lähetetään tietystä myymälästä. Tässä tapauksessa siirtotilaus näkyy myymälässä poimintapyyntönä Modern POS- tai Cloud POS -sovelluksessa. Kun pyydetyt määrät on kerätty, ne vahvistetaan ja lähetetään pääkonttoriin. Pääkonttorissa myymälässä kerätyt määrät näytetään Dynamics 365 for Retailissa siirtotilauksen **Lähetä nyt** -kentässä. Siirtotilaus voi määrittää, että nimikkeet lähetetään tiettyyn myymälään. Tässä tapauksessa siirtotilaus näkyy myymälässä vastaanottopyyntönä Modern POS- tai Cloud POS -sovelluksessa. Kun myymälään vastaanotetut määrät on syötetty, ne voidaan tallentaa paikallisesti muokkausta varten. Vaihtoehtoisesti määrät voidaan vahvistaa ja lähettää pääkonttoriin. Pääkonttorissa myymälään vastaanotetut määrät näytetään Dynamics 365 for Retailissa siirtotilauksen **Ota vastaan nyt** -kentässä.
+Siirtotilaus voi määrittää, että tietty myymälä on sijainti, josta nimikkeet voidaan toimittaa, tai varastopaikka, johon nimike saapuu. Jos POS-käyttäjä on siirtotilauksen toimitusvarasto, hän voi syöttää **Toimitus nyt** -määriä suoraan POS:ista.  Lähetysmyymälän syöttämiä tietoja voidaan tallentaa paikallisesti tai sitoa.  Kun tallennetaan paikallisesti, HQ-siirtotilausasiakirjaan ei tehdä päivityksiä. Tallentaminen on tehtävä vain, jos käyttäjä ei ole valmis kirjaamaan lähetystä HQ-järjestelmään ja tarvitsee vain tavan tallentaa tilapäisesti aiemmin kirjoitetut **Lähetä nyt** -tiedot. Kun myymälä on valmis vahvistamaan lähetyksen, tulee valita **Toimitus**-vaihtoehto. Tämä kirjaa siirtotilauksen lähetyksen HQ-tilaan, jotta vastaanottava varasto voi vastaanottaa sitä vastaan. 
+
+Jos POS-käyttäjä on siirtotilauksen vastaanottava varasto, hän voi syöttää **Vastaanota nyt** -määriä suoraan POS:ista.  Vastaanottavan myymälän syöttämiä tietoja voidaan tallentaa paikallisesti tai sitoa. Tallentaminen on tehtävä vain, jos käyttäjä ei ole valmis kirjaamaan vastaanottoa HQ-järjestelmään ja tarvitsee tavan tallentaa tilapäisesti aiemmin kirjoitetut **Vastaanota tiedot nyt** -tiedot. Tällöin vastaanottotiedot tallennetaan paikallisesti käyttäjän kanavatietokantaan. Kun asiakirja on käsitelty **Toimitus**-valinnalla, **Vastaanota nyt** -tiedot lähetetään HQ-kohteeseen ja siirtotilauksen vastaanotto kirjataan. On tärkeää huomata, että vastaanottava myymälä voi sitoutua vastaanottamaan vain määriä, jotka ovat yhtä suuria tai pienempiä kuin toimitetut määrät. Yritys vastaanottaa siirtotilauksen määriä, joita ei ole aiemmin lähetetty aiheuttaa virheitä, eikä vastaanottoa vahvisteta HQ-ohjelmassa.
 
 ## <a name="stock-counts"></a>Varaston inventoinnit
 
-Varaston inventoinnit voidaan ajoittaa tai niiden ajoitus voidaan peruuttaa. Ajastetut varaston inventoinnit määritetään pääkonttorilla. Ne määrittävät nimikkeet, joista on tehtävä inventointi. Pääkonttori luo inventointiasiakirjan, joka voidaan vastaanottaa myymälässä, jossa todelliset käytettävissä olevat määrät syötetään Modern POS- tai Cloud POS -sovelluksessa. Ajoittamattomat varaston inventoinnit aloitetaan myymälässä ja todelliset käytettävissä olevat varastomäärät päivitetään Modern POS- tai Cloud POS -sovelluksessa. Ajoittamattomilla varaston inventoinneilla ei ole ennalta määritettyä nimikeluetteloa kuten ajoitetun varaston inventoinneilla. Kun jompikumpi varaston inventointi on suoritettu, se vahvistetaan ja lähetetään pääkonttorille. Pääkonttorissa inventointi tarkistetaan ja kirjataan.
+Varaston inventoinnit voidaan ajoittaa tai niiden ajoitus voidaan peruuttaa. Ajastetut varaston inventoinnit määritetään pääkonttorilla. Ne määrittävät nimikkeet, joista on tehtävä inventointi. Pääkonttori luo inventointiasiakirjan, joka voidaan vastaanottaa myymälässä, jossa todelliset käytettävissä olevat määrät syötetään Modern POS- tai Cloud POS -sovelluksessa. Ajoittamattomat varaston inventoinnit aloitetaan myymälässä ja todelliset käytettävissä olevat varastomäärät päivitetään Modern POS- tai Cloud POS -sovelluksessa. Ajoittamattomilla varaston inventoinneilla ei ole ennalta määritettyä nimikeluetteloa kuten ajoitetun varaston inventoinneilla. Kun jompikumpi varaston inventointi on suoritettu, se vahvistetaan ja lähetetään pääkonttorille. Pääkonttorissa inventointi tarkistetaan ja kirjataan erillisenä vaiheena.
 
 ## <a name="inventory-lookup"></a>Varastohaku
 
-Nykyistä tuotteen määrää useissa myymälöissä ja varastoissa voi tarkastella varaston haku-sivulla. Nykyisen käytettävissä olevan määrän lisäksi luvattavissa oleva määrä (ATP) nähdään yksittäisistä myymälöistä. Voit tehdä tämän valitsemalla ensin myymälän, jonka ATP:tä haluat tarkastella, ja sitten **Näytä myymälän käytettävissä oleva määrä**.
+Nykyistä tuotteen määrää useissa myymälöissä ja varastoissa voi tarkastella **Varaston haku** -sivulla. Nykyisen käytettävissä olevan määrän lisäksi luvattavissa oleva määrä (ATP) nähdään yksittäisistä myymälöistä. Voit tehdä tämän valitsemalla ensin myymälän, jonka ATP:tä haluat tarkastella, ja sitten **Näytä myymälän käytettävissä oleva määrä**.

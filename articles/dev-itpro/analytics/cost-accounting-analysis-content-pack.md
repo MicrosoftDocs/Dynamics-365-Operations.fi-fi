@@ -18,11 +18,11 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: d0b563044843157940f456b07479bbd6006a42f9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "347442"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548670"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Kustannuslaskenta-analyysin Power BI -sisältö
 
@@ -34,7 +34,7 @@ Tässä aiheessa kuvataan, mitä kuuluu **kustannuslaskennan analyysin** Microso
 
 **Kustannuslaskenta-analyysin** Power BI -sisältö on tarkoitettu kustannuksista vastaaville henkilöille tai kenelle tahansa, joka on vastuussa organisaation kustannusseurannasta. Se sisältää tärkeitä mittareita, kuten kustannukset, suuruus ja kustannushinta budjetin kustannusten, todellisten kustannusten ja joustavan budjetin kustannusten mukaan. Se käyttää **Kustannuslaskentamoduulin** tapahtumatietoja ja tarjoaa koko organisaation kustannusten kokoomanäytön yhtenä raportointivaluuttana. Esimiehet voit suodattaa tietoja kustannusobjektien mukaan suorittaakseen kustannusseurantaa organisaatioyksiköille, vaikka organisaatiolla voi olla useita yrityksiä.
 
-Koska **Kustannuslaskenta-analyysi** – Power BI -sisältö korostaa toteutuneiden kustannusten ja suunniteltujen kustannusten eroja, johtajat voivat saada ilmoituksen positiivisista ja negatiivisista trendeistä omissa toiminnallisissa yksiköissään. Esimiehet voivat porautua kustannustasohierarkioihin tai yksittäisiin kustannustasoihin. Tällä tavoin esimiehet saat yksityiskohtaista tietoa tapahtuneista kustannuspoikkeamista, jonka perusteella he voivat toimia tehokkaasti.
+Koska **Cost accounting analysis** –sisältö korostaa toteutuneiden kustannusten ja suunniteltujen kustannusten eroja, johtajat voivat saada ilmoituksen positiivisista ja negatiivisista trendeistä omissa toiminnallisissa yksiköissään. Esimiehet voivat porautua kustannustasohierarkioihin tai yksittäisiin kustannustasoihin. Tällä tavoin esimiehet saat yksityiskohtaista tietoa tapahtuneista kustannuspoikkeamista, jonka perusteella he voivat toimia tehokkaasti.
 
 **Kustannuslaskenta-analyysi** -sisällön ansiosta kustannuslaskijat voivat analysoida, miten kustannukset kulkevat koko organisaation kustannusobjektien läpi.
 

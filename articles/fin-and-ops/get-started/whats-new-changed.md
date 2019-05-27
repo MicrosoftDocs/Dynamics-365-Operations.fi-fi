@@ -3,7 +3,7 @@ title: Uudet ja muuttuneet ominaisuudet
 description: Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Finance and Operations -versioiden uusista ominaisuuksista.
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 47b8a5354635303e8ce280d09201e7823137661f
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 2b6884165c6f0811a649e8fd5db831260ed1508e
+ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975776"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1538976"
 ---
 # <a name="whats-new-or-changed"></a>Uudet ja muuttuneet ominaisuudet
 
@@ -52,6 +52,12 @@ Tässä taulukossa luetellaan sovelluksen tärkeimmät versiot. Lisätietoja pil
 </thead>
 <tbody>
 <tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.3</td>
+<td>10.0.107</td>
+<td>2019. kesäkuuta</td>
+<td><a href="whats-new-changed-10-0-3.md">Dynamics 365 for Finance and Operationsin version 10.0.3 esiversio-ominaisuudet (kesäkuu 2019)</a></td>
+</tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.2</td>
 <td>10.0.80</td>
@@ -159,6 +165,12 @@ Tässä taulukossa luetellaan sovelluksen tärkeimmät versiot. Lisätietoja pil
 </thead>
 <tbody>
 <tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Ympäristön update 27 -päivitys</td>
+<td>7.0.5286</td>
+<td>2019. kesäkuuta</td>
+<td><a href="whats-new-platform-update-27.md">Dynamics 365 for Finance and Operations Platform update 27:n esiversio-ominaisuudet (kesäkuu 2019)</a></td>
+</tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Ympäristön update 26 -päivitys</td>
 <td>7.0.5257</td>

@@ -3,7 +3,7 @@ title: Kaksoisvaluutta
 description: Tässä ohjeaiheessa käsitellään kaksoisvaluuttaa eli tilannetta, jossa raportointivaluuttaa käytetään Microsoft Dynamics 365 for Finance and Operationsin toisena kirjanpitovaluuttana.
 author: kweekley
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3665ec1cb15fc63e5707a4721699872fe81424a0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1532245"
 ---
 # <a name="dual-currency"></a>Kaksoisvaluutta
 
@@ -61,6 +61,9 @@ Lisäksi moniin raportteihin ja kyselyihin lisättiin logiikka, jolla voidaan pi
 ## <a name="financial-journals"></a>Talouskirjauskansiot
 
 Talouskirjauskansiot, kuten yleinen kirjauskansio ja toimittajan laskukirjauskansio, on päivitetty siten, että niihin sisältyy lisätietoja raportointivaluutasta. Tositteen ja kirjauskansion kokonaissummat näytetään nyt raportointivaluutassa. Raportointivaluutan vaihtokurssin lisätiedot näkyvät nyt kirjauskansion rivien **Yleiset**-välilehdessä. Niinpä voitkin ohittaa raportointivaluutan vaihtokurssin tapahtumia kirjatessa.
+
+## <a name="vendor-invoices-sales-orders-and-sales-agreements"></a>Toimittajan laskut, myyntitilaukset ja myyntisopimukset
+Toimittajan laskut, myyntitilaukset ja myyntisopimukset on päivitetty sisältämään raportointivaluutan kiinteä vaihtokurssi. Sekä kirjanpitovaluutan että raportointivaluutan osalta voidaan määrittää kiinteä valuuttakurssi, kun käytössä on eri transaktiovaluutta. Kun kirjanpitovaluutta ja raportointivaluutta ovat samat, kiinteä vaihtokurssi pysyy synkronoituna käyttämällä kirjanpitovaluutan kiinteää korkoa raportointivaluutan kiinteäkorkoisena kurssina. Tämän konfiguraation raportointivaluutan kiinteää vaihtokurssia ei voi muuttaa. Kun tilinpäätösvaluutta ja raportointivaluutta eroavat toisistaan, sekä kirjanpitovaluutan että raportointivaluutan osalta voidaan määritellä kiinteä valuuttakurssi tapahtuman merkinnän aikana. Jos raportointivaluuttaa ei ole määritetty kirjanpitoon, **raportointivaluutan kiinteä vaihtokurssi** -kenttä ei ole käytössä eikä raportointivaluutan summaa ole laskettu.
 
 ## <a name="module-changes"></a>Moduulimuutokset
 

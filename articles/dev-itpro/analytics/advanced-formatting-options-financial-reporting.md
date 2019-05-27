@@ -1,16 +1,16 @@
 ---
 title: Muotoilun lisäasetukset taloushallinnon raporteissa
 description: Luodessasi raportin taloushallinnon raportoinnissa, sen muotoiluun on käytettävissä lisätoimintoja, kuten dimensiosuodattimia, rajoituksia sarakkeille ja raportoinnin yksiköille, ei-tulostettavia rivejä IF/THEN/ELSE -lausekkeita laskutoimituksissa.
-author: ShylaThompson
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 70f69fdad3d9186886190c62fba08af06d2a24d6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1502562"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Muotoilun lisäasetukset taloushallinnon raporteissa
 
@@ -41,6 +41,7 @@ Seuraavassa taulukossa kuvataan muotoilun lisäasetustoiminnot, jotka ovat käyt
 | Sarakkeen rajoitus         | Sarakkeen rajoitus rivimäärityksessä on hyödyllinen, jos haluat piilottaa arvoja, jotka vaikuttavat vain joihinkin raporttiriveihin. Kun rivillä suoritetaan prosenttilaskutoimituksia, sarakkeen rajoitus estää sekä loppusummasarakkeiden että muiden sarakkeiden tulostamisen silloin, kun ko. numerot eivät ole käytössä. |
 | Sarakkeen vaihto               | Voit lisätä sarakkeen vaihtoja rivin määrittelyyn näyttääksesi raportin tietoja rinnakkain. Voit lisätä useita sarakkeen vaihtoja yhden rivin määritykseen; sarakeotsikot toistuvat jokaisen sarakkeen yläosassa vaihdon jälkeen. Raportin kommentit näytetään sarakevaihtojen välissä. |
 | IF/THEN/ELSE -lauseke     | Voit muokata rivi- tai sarakemäärityksen laskutoimituksia. |
+| Käytä yksittäisiä lainausmerkkejä ('') ja et-merkkiä (&) dimension arvoina | Voit käyttää dimension arvoja, esimerkiksi et-merkkiä raportin suunnittelussa. |
 
 ## <a name="advanced-cell-placement"></a>Edistynyt solujen sijoittelu
 Edistynyt solujen sijoittelu, tai *pakottaminen*, on tiettyjen arvojen sijoittamista tiettyihin soluihin. Pakottamista käytetään esimerkiksi oikean saldon siirtämiseen kassavirtaraportilla. Pakottamista voi käyttää seuraaviin tarkoituksiin:
@@ -297,3 +298,9 @@ Laskentarivi voi viitata laskennan tai kirjanpitotietojen riviin. Laskutoimitus 
 
 > [!NOTE]
 > Et voi sijoittaa laskutoimituksen tuloksia mihinkään muuhun sarakkeeseen. Tulosten on oltava sarakkeessa, joka sisältää kaavan.
+
+#### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>Käytä yksittäisiä lainausmerkkejä ja et-merkkiä dimension arvoina rivillä, sarakkeessa tai puussa
+
+Voit suunnitella raportteja käyttämällä dimensioarvoja, jotka sisältävät et-merkin (&). 
+
+Voit määrittää minkä tahansa **linkin taloushallinnon dimensio** -kenttään arvon, kuten **'P & L'**. Myös puolilainausmerkit (' ') dimension arvon molemmilla puolilla tarkoittavat, että käytät literaaliarvoa, kuten esimerkiksi (&) et-merkkiä. 

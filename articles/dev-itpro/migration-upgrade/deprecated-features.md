@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992880"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527668"
 ---
 # <a name="removed-or-deprecated-features"></a>Poistetut tai vanhentuneet ominaisuudet
 
@@ -66,26 +66,6 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: Vuoden 2020 huhtikuusta alkaen parannettu On yksi seuraavista: -suodattimen käyttö kuuluu oletustoimintaan. Vanhaan toimintaan ei voi tällöin enää palata. |
-
-### <a name="deriving-from-internal-classes-is-deprecated"></a>Johtaminen sisäisistä luokista on vanhentunut
-
-|   |  |
-|------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Ennen Platform update 25 -versiota oli mahdollista luoda toisessa paketissa tai moduulissa määritetystä sisäisestä luokasta tai taulusta johdettu luokka tai taulu. Tämä ei ole turvallinen koodauskäytäntö. Platform update 25 -versiosta alkaen kääntäjä näyttää varoituksen. |
-| **Onko toinen ominaisuus korvannut?**   | Kääntäjän varoitus korvataan Platform update 26 -versiossa virheellä. Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten Platform update 25 tai uudempi versio voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava. Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan.|
-| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
-| **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa. |
-
-### <a name="overriding-internal-methods-is-deprecated"></a>Sisäisten menetelmien ohittaminen on vanhentunut
-
-|   |  |
-|------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Ennen Platform update 25 -versiota oli mahdollista ohittaa johdetun luokan sellainen sisäinen menetelmä, joka oli määritetty toisessa paketissa tai moduulissa. Tämä ei ole turvallinen koodauskäytäntö. Platform update 25 -versiosta alkaen kääntäjä näyttää varoituksen. |
-| **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan Platform update 26 -versiossa käännösvirheellä. Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten Platform update 25 tai uudempi versio voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava. Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan. |
-| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
-| **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa. |
 
 ### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parametri, joka mahdollistaa useita projektisopimuksen rahoituslähteitä sisältävät myyntitilaukset
 Niiden projektiin perustuvien myyntitilausten tuki, joissa projektisopimuksella on useita rahoituslähteitä, otetaan käyttöön **Projektinhallinnan parametrit** -asetuksen **Salli myyntitilaukset projektille, jolla on useita rahoituslähteitä** -kohdan avulla. Tämä parametri ei ole oletusarvoisesti käytössä. 
