@@ -3,7 +3,7 @@ title: Pankin ulkomaanvaluutan uudelleenarvostus
 description: Tämä ohjeaihe sisältää yhteenvedon pankin ulkomaanvaluutan uudelleenarvostusprosessista. Se sisältää tietoja asetuksista, prosessin suorittamisesta ja laskemisesta sekä uudelleenarvostustapahtumien peruutuksesta.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3aed5a6c12e8dd39956f906f922bfbed1b8fb680
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976653"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538629"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Pankin ulkomaanvaluutan uudelleenarvostus
 
@@ -52,7 +52,7 @@ Pankin ulkomaanvaluutan uudelleenarvostustoiminto on otettava käyttöön ennen 
 3. Lisää **Numerosarjat**-välilehdessä ulkomaanvaluutan uudelleenarvostuksen numerosarja.
 4. Päivitä selain, jolloin näkyviin tulee **Ulkomaanvaluutan uudelleenarvostus** alueen sivun **Kausittaiset tehtävät** -osaan.
 
-Ota toiminto käyttöön kaikissa yrityksissä, joissa ulkomaanvaluutan uudelleenarvostus on käytössä.
+Ota toiminto käyttöön kaikissa yrityksissä, joissa ulkomaanvaluutan uudelleenarvostus on käytössä. Jos sinut on määritetty järjestelmänvalvojan rooliin tai toimintojen hallinnan rooliin, voit poistaa tämän vaiheen ottamalla käyttöön **Pankin uudelleenarvostusominaisuuden ilman parametria** **Ominaisuuden hallinta** -työtilassa.
 
 > [!NOTE]
 > Jos yrityksessä käytetään Venäjän, Puolan tai Unkarin maa- tai aluekoodia, voit jo tehdä pankin ulkomaanvaluutan uudelleenarvostuksen. Et voi käyttää ulkomaanvaluutan uudelleenarvostusta, joka on käytössä muissa maissa tai muilla alueilla.

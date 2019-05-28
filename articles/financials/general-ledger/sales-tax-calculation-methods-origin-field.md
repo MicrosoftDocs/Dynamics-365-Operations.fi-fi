@@ -19,11 +19,11 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1473eeb2950296f5ae6250d7a53794af3d9cba81
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566834"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Arvonlisäveron laskentatavat Alkuperä-kentässä
 

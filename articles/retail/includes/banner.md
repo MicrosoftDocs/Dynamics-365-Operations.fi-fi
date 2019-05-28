@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Tämä aihe koskee Dynamics 365 for Retail- ja Dynamics 365 for Finance and Operations -sovelluksia.
+> Tämä ohjeaihe koskee Dynamics 365 for Retailia ja Dynamics 365 for Finance and Operationsia.

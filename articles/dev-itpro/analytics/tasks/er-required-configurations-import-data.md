@@ -17,11 +17,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 6675f35c9ec163a620e63af32ecdbff02197d3c3
-ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "337368"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551181"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Tarvittavien määritysten luonti tietojen tuontiin ulkoisesta tiedostosta
 
@@ -82,10 +82,10 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
 5. Valitse puussa muoto: Tietue.
     * Huomaa, että suunniteltu muoto esitellään tässä tietolähdeosana.  
 6. Laajenna puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietue.
-7. Laajenna puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietue\tapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo.
-8. Laajenna puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietue\tapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo\*toimittaja: XML-elementti 1..1 (toimittaja): Tietue.
-9. Laajenna puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietue\tapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo\maa: XML-elementti 0..1 (maa): Tietue.
-10. Valitse puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietue\tapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo\*toimittaja: XML-elementti 1..1 (toimittaja): Tietue.
+7. Laajenna puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietuetapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo.
+8. Laajenna puussa muoto: Tietue\*1tilitys: XML-elementti 1..1 (tilitys): Tietuetapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo\*toimittaja: XML-elementti 1..1 (toimittaja): Tietue.
+9. Laajenna puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietuetapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo\maa: XML-elementti 0..1 (maa): Tietue.
+10. Valitse puussa muoto: Tietue\*tilitys: XML-elementti 1..1 (tilitys): Tietuetapahtuma: XML-elementti 0..* (tapahtuma): Tietueluettelo\*toimittaja: XML-elementti 1..1 (toimittaja): Tietue.
     * Huomaa, että pakollisten ja valinnaisten muotoelementtien esittely on erilainen ennalta määritetyssä muodon tietolähdeosassa.  
 11. Laajenna puussa Tapahtumat: Tietueluettelo= format.settlement.'$enumerated'.
     * Huomaa, että tuodun tiedoston rakennetta määrittävät muotoelementit on sidottu mukautetun tietomallin elementteihin. Tuodun XML-tiedoston sisältö tallennetaan näiden sidontojen perusteella ajonaikaisesti aiemmin luotuun tietomalliin. Maaelementin sidontaan kannattaa kiinnittää huomiota. Jos kyseistä elementtiä ei ole saapuvan tiedoston tapahtumaelementissä, tietomallissa käytetään oletusmaakoodia USA.  

@@ -19,11 +19,11 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336241"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1557011"
 ---
 # <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS:n (MPOS) tai pilvimyyntipisteen valitseminen
 
@@ -41,7 +41,7 @@ Retail tukee seuraavia myyntipisteen vaihtoehtoja:
 
 - Microsoft Windowsin Retail Modern POS (MPOS)
 - Microsoft Windows Phonen MPOS
-- Apple iPadin tai Google Android -tabletin MPOS
+- Apple iPad- tai Google Android -tabletin MPOS
 - Microsoft Edge-, Internet Explorer- ja Google Chrome -selaimia tukeva Cloud POS (CPOS)
 
 Kaikissa tapauksissa myyntipiste (MPOS ja CPOS) jakaa saman ydinsovelluksen koodin. Tämä on tärkeää seuraavista syistä:
@@ -86,7 +86,7 @@ Windowsin MPOS tukee offline-tilaa. Myyntipiste voi jatkaa myynnin käsittelemis
 
 ### <a name="pos-peripheralhardware-considerations"></a>Myyntipisteen oheislaitteen/laitteiston huomioon otettavia seikkoja
 
-Jälleenmyyjien on myös pohdittava, miten myyntipiste käyttää oheislaitteita, kuten tulostimia, kassoja ja maksupäätteitä. Vain Windowsin MPOS tukee suoraa viestintää näiden laitteiden kanssa. Windows Phonen, iOS:n tai Androidin MPOS ja Cloud POS vaativat laiteaseman, jotta näihin laitteisiin voi muodostaa yhteyden. Laiteasemat voidaan varata myyntipisteen kassakoneelle tai ne voidaan jakaa myymälän kassakoneiden kesken. Lisätietoja laiteasemista kohdassa [Retail-laiteaseman määrittäminen ja asentaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
+Jälleenmyyjien on myös pohdittava, miten myyntipiste käyttää oheislaitteita, kuten tulostimia, kassoja ja maksupäätteitä. Vain Windowsin MPOS tukee suoraa viestintää näiden laitteiden kanssa. Windows Phonen, iOS:n, tai Androidin MPOS ja Cloud POS vaativat laiteaseman, jotta näihin laitteisiin voi muodostaa yhteyden. Laiteasemat voidaan varata myyntipisteen kassakoneelle tai ne voidaan jakaa myymälän kassakoneiden kesken. Lisätietoja laiteasemista kohdassa [Retail-laiteaseman määrittäminen ja asentaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
 
 ## <a name="implementation-considerations"></a>Toteutuksessa huomioitavaa
 

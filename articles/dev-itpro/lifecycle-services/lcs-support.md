@@ -18,11 +18,11 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334769"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552484"
 ---
 # <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Finance and Operations- tai Lifecycle Services (LCS) -tuki
 
@@ -74,7 +74,7 @@ Huomautus: Myös Microsoft Premier -asiakkaat ja -kumppanit voivat lähettää P
 <li>LCS:n käyttöön liittyvät virheet ja LCS:n käyttöoikeuksiin liittyvät virheet.</li>
 <li>Finance and Operationsin käyttöön liittyvät virheet.</li>
 </ul>
-Jos tekniset kysymykset liittyvät CustomerSourceen kirjautumiseen tai sen käyttöön, eLearning-kursseihin, hakuun, tietämyskantaan, tietojen lataamiseen sekä sivu- tai järjestelmävirheisiin, siirry <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">sivustotukeen</span></a>.</td>
+Jos tekniset kysymykset liittyvät CustomerSourceeen, kirjautumiseen tai sen käyttöön, eLearning-kursseihin, hakuun, tietämyskantaan, tietojen lataamiseen sekä sivu- tai järjestelmävirheisiin, siirry <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">sivustotukeen</span></a>.</td>
 </tr>
 <tr class="odd">
 <td>Finance and Operations -käyttöoikeuksia koskevat kysymykset.</td>

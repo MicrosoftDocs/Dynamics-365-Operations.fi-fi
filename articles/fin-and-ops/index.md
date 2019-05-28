@@ -1,25 +1,29 @@
 ---
-# required metadata
 title: Microsoft Dynamics 365 for Finance and Operations -dokumentaatio
 description: Dokumentaatio Microsoft Dynamics 365 for Finance and Operations -ohjelmalle.
 author: margoc
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 04/11/2019
 ms.topic: index-page
-ms.prod: null
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: null
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: 'Core, Operations'
+ms.search.scope: Core, Operations
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: '2016-02-28'
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4547a0c8d43584e4cb8981e0a055c514c184f6dd
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1507586"
 ---
-
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations -dokumentaatio
 
 [!include [banner](includes/banner.md)]
@@ -40,7 +44,7 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Microsoft Dyna
 <h3><a href="get-started/before-you-buy.md">Ennen ostamista</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Kokeiluversion tilaaminen</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Valitse käyttövaihtoehto</a></p>
- <p><a href="get-started/purchase-on-premises.md">Finance and Operations (on-premises) -ratkaisun ostaminen</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Osta Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Toteutuksen elinkaari</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
@@ -57,9 +61,14 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Microsoft Dyna
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Päivitysten käyttöönotto pilviympäristöissä</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Määritä palvelupäivitykset</a></p>
 <p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Keskeytä palvelupäivitykset</a></p>
-<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Saat ilmoituksia palvelupäivityksistä</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Vastaanota ilmoituksia palvelupäivityksistä</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Tietotehtävän automaatio</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
+
+<h3><a href="../dev-itpro/data-entities/integration-overview.md">Integroinnit</a></h3>
+<p><a href="../dev-itpro/business-events/home-page.md">Liiketoimintatapahtumat</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Tietoyksiköt</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integrointi Microsoft Flow'n avulla</a></p>
 
 <h3><a href="../financials/index.md">Taloushallinto</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Ostoreskontra</a></p>
@@ -105,10 +114,6 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Microsoft Dyna
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Kehitys</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Laajennettavuus</a></p>
-
-<p><a href="../dev-itpro/data-entities/integration-overview.md">Tietojen integrointi</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Tietojen hallinta</a></p>
-
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office-integrointi</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Jatkuva toimitus</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobiiliympäristö</a></p>
@@ -119,7 +124,6 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Microsoft Dyna
 <p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Paikallinen käyttöönotto</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Päivitys</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Ylläpito</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Tietojen hallintakehys</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Organisaation hallinto</a></p>
 </td>

@@ -1,9 +1,9 @@
 ---
 title: Tilausilmoitusten näyttäminen myyntipisteessä (POS)
-description: Tässä ohjeaiheessa käsitellään tilausilmoitusten ottamista käyttöön myyntipisteessä ja ilmoituskehikkoa. Kehittäjät voivat jatkossa laajentaa nämä ilmoitukset tilausten täyttämistoimintojen lisäksi muihin toimintoihin.
+description: Tässä ohjeaiheessa käsitellään tilausilmoitusten ottamista käyttöön myyntipisteessä ja ilmoituskehikkoa.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530267"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Tilausilmoitusten näyttäminen myyntipisteessä (POS)
 
@@ -67,6 +67,10 @@ POS-painikkeissa voi nyt näkyä lukua, joiden avulla työntekijöiden on helppo
 Seuraavassa kuvassa on live-sisällön asetukset painikeruudukon suunnittelutoiminnossa.
 
 ![Painikeruudukon suunnittelutoiminnon Live-sisällön asetukset](./media/ButtonGridDesigner.png "Painikeruudukon suunnittelutoiminnon Live-sisällön asetukset")
+
+Jos haluat näyttää ilmoitusten määrän painikkeessa, varmista, että oikea näyttöasettelu päivitetään. Voit määrittää POS-sovelluksen käyttämän näytön asettelun valitsemalla **Asetukset**-kuvakkeen oikeasta yläkulmasta ja huomaamalla **Näytön asettelun tunnuksen** ja **Asettelun tarkkuuden**. Nyt käytettäessä Edge-selainta, siirry**Näytön asettelu** -sivulle Dynamics 365 for Finance and Operationsissa, etsi **Näytön asettelun tunnus** ja **Asettelun resoluutio**, jotka on tunnistettu edellä ja valitse**Ota käyttöön Live-sisältö** -valintaruutu. Siirry **Vähittäismyynti > Vähittäismyynnin IT > Jakeluaikataulu** ja suorita 1090 (Rekisterit) -työ, joka synkronoi asettelun muutokset. 
+
+![Etsi POS-sovelluksen käyttämä näytön asettelu](./media/Choose_screen_layout.png "Etsi näytön asettelu ")
 
 Seuraavassa kuvassa näytetään, miten **Sisällön tasaus** -kentän **Ylös oikealle**- tai **Keskelle**-vaihtoehdon valinta vaikuttaa eri kokoisiin painikkeisiin.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
+ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "350731"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1538953"
 ---
 # <a name="finance-and-operations-help-system"></a>Finance and Operations -ohjejärjestelmä
 
@@ -54,7 +54,7 @@ Voit käyttää ohjetta käyttämäsi tuotteen Ohje-ruudusta. Seuraavassa näytt
 
 ## <a name="help-on-docsmicrosoftcom"></a>Ohje osoitteessa docs.microsoft.com
 
-Docs.microsoft.com-sivusto ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) on Dynamics 365 for Finance and Operationsin tuoteohjeistuksen ensisijainen lähde. Sivustossa on seuraavat ominaisuudet:
+The docs.microsoft.com sivu ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) on Finance and OPerationsin tuoteohjeistuksen ensisijainen lähde. Sivustossa on seuraavat ominaisuudet:
 
 - **Uusin sisältö**– sivusto on nopea ja joustava tapa luoda, toimittaa ja päivittää tuoteohjeistusta. Niinpä saatkin aina käyttöösi uusimmat tekniset tiedot.
 - **Asiantuntijoiden kirjoittama sisältö**– sivusto sisältää monipuolisesti tuoteohjeistusta, jota yhteisön jäsenet (sekä Microsoftin sisällä että ulkopuolella) voidaan täydentää.
@@ -90,8 +90,6 @@ Toivomme saavamme asiakaspalautetta. GitHubin avulla voit lähettää kommenttej
 Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.
 
 1. Napsauta **Palaute** nähdäksesi sivun alalaidan kommentit ja napsauta sitten joko **Tuotepalaute** tai **Kirjaudu sisään antaaksesi dokumentatiopalautetta**.
-
-    ![Palaute](./media/comments.png)
 
 2. Kirjoita kommentit ja valitse sitten **Julkaise palaute**.
 

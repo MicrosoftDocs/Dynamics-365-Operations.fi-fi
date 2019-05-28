@@ -3,7 +3,7 @@ title: Osto- ja kulutusanalyysin Power BI -sisältö
 description: Tässä ohjeaiheessa kerrotaan, mitä osto- ja kulutusanalyysin Power BI -sisältö sisältää. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3206573022c0f843b07a468987a112ca6ac435ef
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313839"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527714"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Osto- ja kulutusanalyysin Power BI -sisältö
 
@@ -44,88 +44,88 @@ Sisältö käyttää ostotapahtumiin liittyviä tietoja ja antaa koko yrityksen 
 **Osto- ja kulutusanalyysin** Power BI -sisältö näkyy **Osto- ja kulutusanalyysi** -sivulla (**Hankinta** \> **Kyselyt ja raportit** \> **Ostojen suorituskykyanalyysi** \> **Osto- ja kulutusanalyysi**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mittarit, jotka sisältyvät Power BI -sisältöön
-**Ostojen ja kulutuksen analyysin** Power BI -sisältöön kuuluu raportti, joka koostuu mittarijoukosta. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. Seuraavassa taulukossa on visualisointien yhteenveto.
+**Ostojen ja kulutuksen analyysin** Power BI -sisältöön kuuluu raportti, joka koostuu mittarijoukosta. Nämä mittarit visualisoidaan kaavioina, ruutuina ja taulukoina. 
 
-<table>
-<thead>
-<tr>
-<th>Raporttisivu</th>
-<th>Kaaviot</th>
-<th>Ruudut</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ostot toimittajan mukaan</td>
-<td><ul>
-<li>10 parasta toimittajaa ostojen mukaan (pinottu palkkikaavio)</li>
-<li>Ostot yhteensä toimittajaryhmän/maan/nimen mukaan (ympyräkaavio)</li>
-<li>Ostot toimittajaryhmän/maan/nimen mukaan (sarakekaavio)</li>
-<li>Ostot keskimäärin toimittajaryhmän/maan/nimen mukaan (sarakekaavio)</li>
-</ul></td>
-<td><ul>
-<li>Osto yhteensä</li>
-<li>Ostojen vuosittainen kasvu</li>
-<li>Toimittajien kokonaismäärä</li>
-<li>Aktiivisten toimittajien kokonaismäärä</li>
-</ul></td>
-</tr>
-<tr>
-<td>Ostot tuotteen mukaan</td>
-<td><ul>
-<li>Ostot hankintaluokan / tuotteen nimen mukaan (sarakekaavio)</li>
-<li>Ostot yhteensä hankintaluokan / tuotteen nimen mukaan (ympyräkaavio)</li>
-<li>10 parasta tuotetta ostojen mukaan (pinottu palkkikaavio)</li>
-</ul></td>
-<td><ul>
-<li>Tuotteiden kokonaismäärä</li>
-<li>Kaikkien aktiivisten tuotteiden prosenttiosuus tuotteiden kokonaismäärästä</li>
-<li>Tuotteiden määrä, joista koostuu 80 % ostoista</li>
-</ul></td>
-</tr>
-<tr>
-<td>Ostot kauden mukaan*</td>
-<td><ul>
-<li>Ostot kuukauden/päivän mukaan (sarakekaavio)</li>
-<li>Kumulatiivisten ostojen vuosittainen varianssi (vesiputouskaavio)</li>
-<li>Ostot yhteensä, vuosittainen kasvu (sarakekaavio)</li>
-<li>Hankintaraportti (matriisi)</li>
-</ul></td>
-<td><ul>
-<li>Ostojen vuosittainen kasvu</li>
-<li>Ostojen vuosittainen kasvuprosentti</li>
-</ul></td>
-</tr>
-<tr>
-<td>Ostot toimittajan sijainnin mukaan</td>
-<td><ul>
-<li>Ostot kaupungin mukaan</li>
-<li>Ostojen vuosittainen kasvuprosentti</li>
-<li>Ostot maan mukaan</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Ostojen ja kulutuksen analyysi ajan mukaan</td>
-<td><ul>
-<li>Ostojen kuluva vuosi kuukauden/päivän mukaan (viivakaavio)</li>
-<li>Ostojen kuluva ja edellinen vuosi (viiva- ja sarakekaavio)</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Ostojen ja kulutuksen analyysi toimittajan mukaan</td>
-<td><ul>
-<li>10 parasta toimittajaa ostojen prosenttiosuuden mukaan (suppilokaavio)</li>
-<li>10 toimittajaa, joiden vuosittainen kulutus on noussut eniten</li>
-<li>10 toimittajaa, joiden vuosittainen kulutus on laskenut eniten</li>
-</ul></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+Seuraavassa osissa on visualisointien yhteenveto.
 
-\* Ostot tänä ja edellisenä vuonna sekä kasvu hankintaluokan mukaan
+### <a name="purchase-by-vendor-report-page"></a>Ostot toimittajan mukaan -raporttisivu
+**Kaaviot**
+- 10 parasta toimittajaa ostojen mukaan (pinottu palkkikaavio)
+- Ostot yhteensä toimittajaryhmän/maan/nimen mukaan (ympyräkaavio)
+- Ostot toimittajaryhmän/maan/nimen mukaan (sarakekaavio)
+- Ostot keskimäärin toimittajaryhmän/maan/nimen mukaan (sarakekaavio)
+
+**Ruudut**
+- Osto yhteensä
+- Ostojen vuosittainen kasvu
+- Toimittajien kokonaismäärä
+- Aktiivisten toimittajien kokonaismäärä
+
+**Esimerkki**
+<img src="media/spend1.PNG" alt="Purchase by vendor">
+
+### <a name="purchase-by-product-report-page"></a>Ostot tuotteen mukaan -raporttisivu
+
+**Kaaviot**
+- Ostot hankintaluokan / tuotteen nimen mukaan (sarakekaavio)
+- Ostot yhteensä hankintaluokan / tuotteen nimen mukaan (ympyräkaavio)
+- 10 parasta tuotetta ostojen mukaan (pinottu palkkikaavio)
+
+**Ruudut**
+- Tuotteiden kokonaismäärä</li>
+- Kaikkien aktiivisten tuotteiden prosenttiosuus tuotteiden kokonaismäärästä
+- Tuotteiden määrä, joista koostuu 80 % ostoista
+
+**Esimerkki**
+
+
+<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+
+### <a name="purchase-by-period-report-page"></a>Ostot ajanjakson mukaan -raporttisivu
+Tällä sivulla nähdään ostot tänä ja edellisenä vuonna sekä kasvu hankintaluokan mukaan.
+
+**Kaaviot** 
+- Ostot kuukauden/päivän mukaan (sarakekaavio)
+- Kumulatiivisten ostojen vuosittainen varianssi (vesiputouskaavio)
+- Ostot yhteensä, vuosittainen kasvu (sarakekaavio)
+- Hankintaraportti (matriisi)
+
+**Ruudut**
+- Ostojen vuosittainen kasvu
+- Ostojen vuosittainen kasvuprosentti
+
+**Esimerkki**
+<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+
+### <a name="purchase-by-vendor-location-report-page"></a>Ostot toimittajan toimipaikan mukaan -raporttisivu
+
+**Kaaviot**
+- Ostot kaupungin mukaan
+- Ostojen vuosittainen kasvuprosentti
+- Ostot maan mukaan
+
+**Esimerkki**
+<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+
+### <a name="purchase-spend-analysis-by-time-report-page"></a>Ostojen ja kulutuksen analyysi ajan mukaan -raporttisivu
+
+**Kaaviot** 
+- Ostojen kuluva vuosi kuukauden/päivän mukaan (viivakaavio)
+- Ostojen kuluva ja edellinen vuosi (viiva- ja sarakekaavio)
+
+**Esimerkki**
+<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+
+### <a name="purchase-spend-analysis-by-vendor-report-page"></a>Ostojen ja kulutuksen analyysi toimittajan mukaan -raporttisivu
+
+**Kaaviot** 
+- 10 parasta toimittajaa ostojen prosenttiosuuden mukaan (suppilokaavio)
+- 10 toimittajaa, joiden vuosittainen kulutus on noussut eniten
+- 10 toimittajaa, joiden vuosittainen kulutus on laskenut eniten
+
+**Esimerkki** 
+<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+
 
 ## <a name="data-model-and-entities"></a>Tietomalli ja yksiköt
 Seuraavia tietoja käytetään **osto- ja kulutusanalyysin** Power BI -sisällön raporttisivujen täyttämiseen. Nämä tiedot esitetään koottuina mittauksina, joka vaiheistetaan yksikkösäilössä. Yksikkösäilö on analytiikkaa varten optimoitu Microsoft SQL Server -tietokanta. Lisätietoja on kohdassa [Power BI:n ja yksikkösäilön integroinnin yleiskatsaus](power-bi-integration-entity-store.md).

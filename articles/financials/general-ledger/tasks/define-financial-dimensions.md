@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 20a7781486c6e0612c27af02a1bccbc48c55a932
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c5cfe92b8733a0a6d76e074cc31eec3f3935b512
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530865"
 ---
 # <a name="define-financial-dimensions"></a>Määritä taloushallinnon dimensiot
 
@@ -33,7 +33,7 @@ Tässä tehtäväopastuksessa selvitetään yksikön tukeman taloushallinnon dim
 ## <a name="create-an-entity-backed-financial-dimension"></a>Luo yksikön tukema taloushallinnon dimensio
 1. Valitse Kirjanpito > Tilikartta > Dimensiot > Taloushallinnon dimensiot.
 2. Valitse Uusi.
-3. Valitse Käytä arvoja -kentässä järjestelmän määrittämä yksikkö, johon taloushallinnon dimensio perustuu. 
+3. Valitse Käytä arvoja -lomakekentässä järjestelmän määrittämä yksikkö, johon taloushallinnon dimensio perustuu. 
 4. Kirjoita Dimension nimi -kenttään taloushallinnon dimensiota kuvaava arvo.
     * Nimi voi olla jokin muu kuin järjestelmän määrittämä yksikkö, mutta siinä ei saa olla välilyöntejä eikä erikoismerkkejä.  
 5. Valitse Aktivoi.
@@ -47,7 +47,7 @@ Tässä tehtäväopastuksessa selvitetään yksikön tukeman taloushallinnon dim
 ## <a name="create-a-custom-financial-dimension"></a>Luo mukautettu taloushallinnon dimensio
 1. Sulje sivu.
 2. Valitse Uusi.
-3. Valitse Käytä arvoja kohteesta -kentässä <Custom dimension>.
+3. Valitse Käytä arvoja -kentässä Mukautettu dimensio.
 4. Kirjoita Dimension nimi -kenttään taloushallinnon dimensiota kuvaava arvo.
     * Nimi ei voi sisältää välilyöntejä eikä erikoismerkkejä.  
     * Voit määrittää myös tilipeitteen rajoittamaan dimensioarvoille annettavaa summaa ja tietojen tyyppiä.   

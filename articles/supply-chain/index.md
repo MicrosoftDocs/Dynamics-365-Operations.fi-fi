@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b46b95a10d257c56fdf20b016fbb598225d1f930
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302235"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517052"
 ---
 # <a name="supply-chain-management-home-page"></a>Toimitusketjun hallinnan kotisivu
 
@@ -59,7 +59,7 @@ Nämä lyhyet videot antavat tietoja Microsoft Dynamics 365 for Finance and Oper
 Nämä lyhyet videot antavat tietoja Microsoft Dynamics 365 for Finance and Operations -ohjelman Enterprise edition 7.3 (joulukuu 2017) -version uusista ominaisuuksista.
 
 -  [Prospektista käteiseksi -integrointi](https://youtu.be/AVV9x5x-XCg) 
--  [Optimointityökalu](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Optimointiavustaja](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 -  [Konfiguroinnin kopioiminen varaston hallintamallista](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 Nämä lyhyet videot antavat tietoja Microsoft Dynamics 365 for Finance and Operations -ohjelman Enterprise edition 7.3 (heinäkuu 2017) -version uusista ominaisuuksista.

@@ -19,11 +19,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 0b6683107f4b2dbe36af78749612ce950ea19582
-ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403234"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1569287"
 ---
 # <a name="general-ledger"></a>Kirjanpito 
 
@@ -59,7 +59,7 @@ Tutustu suunniteltuihin uusiin ominaisuuksiin siirtymällä [Microsoft Dynamics 
 
 #### <a name="blogs"></a>Blogit
 
-Mielipiteitä, uutisia ja muita tietoja on [Microsoft Dynamics 365:n blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operationsin taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials).
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
 

@@ -18,11 +18,11 @@ ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321383"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554459"
 ---
 # <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Dynamics 365 for Unified Operations -mobiilisovelluksen kotisivu
 
@@ -138,7 +138,7 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 <td>Käyttäjä</td>
 <td>Lataa ja asenna mobiilisovellus.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Androidin Unified Operations sovellus</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Androidin Unified Operations -sovellus</a><BR/>
 <a href="https://go.microsoft.com/fwlink/?linkid=850663">iOs:n Unified Operations -sovellus</a><BR/>
 (Windows Phonea ei tueta)
 </td>

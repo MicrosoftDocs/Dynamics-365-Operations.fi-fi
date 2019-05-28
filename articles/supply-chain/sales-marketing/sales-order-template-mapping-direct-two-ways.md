@@ -3,7 +3,7 @@ title: Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin 
 description: Ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään myyntitilausten synkronointiin Microsoft Dynamics 365 for Salesin ja Microsoft Dynamics 365 for Finance and Operationsin välillä.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a427bff3cd07adbf4d3d81f98bdf7f85a194730b
+ms.sourcegitcommit: 3f02d8a874d1696cbf21d100f1ad205c57224e4b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339116"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539111"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä
 
@@ -146,6 +146,16 @@ Seuraavat asetukset tulee päivittää järjestelmissä ennen myyntitilausten sy
 ### <a name="setup-in-finance-and-operations"></a>Asetukset Finance and Operationsissa
 
 - Siirry kohtaan **Myynti ja markkinointi** &gt; **Kausittaiset tehtävät** &gt; **Laske kokonaismyynti**. Määritä sitten erätyönä suoritettava työ. Määritä **Laske myyntitilausten loppusummat** -vaihtoehdon arvoksi **Kyllä**. Tämä vaihe on tärkeä, koska Salesiin synkronoidaan vain myyntitilaukset, joiden loppusummat on laskettu. Erätyön toistovälin tulisi olla sama kuin myyntitilausten synkronoinnin toistoväli.
+
+Jos käytät myös työtilausten integrointia, sinun on määritettävä myynnin alkuperä. Myynnin alkuperän avulla Field Servicen työtilauksista luodut myyntitilaukset voidaan erottaa Finance and Operationsissa. Kun myyntitilauksen myynnin alkuperätyyppi on **Työtilauksen integrointi**, myyntitilauksen ylätunnisteessa on **Ulkoisen työtilauksen tila** -kenttä. Myynnin alkuperä varmistaa, että Field Servicen työtilauksista luodut myyntitilaukset suodatetaan pois synkronoitaessa myyntitilausta Finance and Operationsista Field Serviceen.
+
+1. Valitse **Myynti ja markkinointi** \> **Asetukset** \> **Myyntitilaukset** \> **Myynnin alkuperä**.
+2. Luo uusi myynnin alkuperä valitsemalla **Uusi**.
+3. Anna **Myynnin alkuperä** -kentässä myynnin alkuperän nimi, kuten **SalesOrder**.
+4. Kirjoita **Kuvaus**-kenttään kuvaus, kuten **Myyntitilaus Salesista**.
+5. Valitse **Alkuperän tyypin määritys** -valintaruutu.
+6. Valitse **Myynnin alkuperän tyyppi** -kentässä **Myyntitilauksen integrointi**.
+7. Valitse **Tallenna**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-fin-and-ops---direct-data-integration-project"></a>Myyntitilaukset (Salesista Fin and Opsiin) - suora -integrointiprojektin asetukset
 

@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339070"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548029"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Dynamics 365 for Operationsin version 1611 uudet tai muuttuneet ominaisuudet (marraskuu 2016)
 
@@ -716,7 +716,7 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 for Operationsin version 1611 u
 | Mitä voit tehdä | Miksi tämä on tärkeää |
 |-----------------|-----------------------|
 | Myöhäinen-valinnan käyttö kirjattaessa erän laskuehdotukset eränä | Projektin kirjanpitäjä voi määrittää erätyön poimimaan automaattisesti laskuehdotukset kirjaukseen, jos, ehdotukset täyttävät erätyölle määritetyt ehdot. Tämä toiminto parantaa automaattista laskun kirjaamista, koska erätyö voidaan suorittaa jatkuvasti ja noutaa ehdotukset kirjausta varten automaattisesti. |
-| Luo analyysi Power BI Desktopissa. | Liiketoimintatietojen (BI) sisällön projektikohtaiset ja resurssiin liittyvät tiedot voidaan luoda helposti Power BI Desktopissa. |
+| Luo analyysi Power BI desktopissa. | Liiketoimintatietojen (BI) sisällön projektikohtaiset ja resurssiin liittyvät tiedot voidaan luoda helposti Power BI desktopissa. |
 | Ostotilauksen ennakkomaksujen käyttö ja sisällyttäminen oikein projektien arviointiprosessiin | Projektin ostotilausten ennakkomaksut on käsiteltävä ennen maksujen lähettämistä toimittajille. Näiden ennakkomaksulaskut näkyvät projektin arvio/kirjausprosessissa **kiinteähintainen**-projektityypissä. |
 | Kustannusten ja tuoton arvioiden ja nimiketarpeiden käyttö ja hallinta suoraan työrakenteesta | Voit hallita määritetyn WBS-tehtävän kustannusarvioita, tuottoarvioita ja nimiketarpeita tehtävän tiedot-valintaikkunassa WBS-suunnittelunäkymässä. |
 | Rahoituslähteen valinta maksukirjauskansioissa | Jos projektisopimuksella on useita rahoituslähteitä, voit valita tietyn rahoituslähteen, kun maksut kirjataan. Jos et valitse tiettyä rahoituslähdettä, rahoitussääntöjä, jotka on määritetty sopimuksessa, käytetään maksun kohdistukseen. |

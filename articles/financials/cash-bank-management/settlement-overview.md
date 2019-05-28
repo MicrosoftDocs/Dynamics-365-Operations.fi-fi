@@ -1,9 +1,9 @@
 ---
-title: Tilityksen yleiskuvaus
-description: Tässä artikkelissa on yleisiä tietoja tilitysprosessista. Artikkelissa kuvataan tilitettävien tapahtumien tyyppejä, tapahtumien tilitysajankohtia ja -tapoja sekä tilitysprosessin tuloksia.
+title: Tilityksen yleiskatsaus
+description: Tässä aiheessa on yleisiä tietoja tilitysprosessista. Artikkelissa kuvataan tilitettävien tapahtumien tyyppejä, tapahtumien tilitysajankohtia ja -tapoja sekä tilitysprosessin tuloksia.
 author: kweekley
 manager: AnnBe
-ms.date: 12/06/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b82c6afa2812344ff8200e227ee8c5f2451584f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e13bdcdcf6dac68a95e6c2759a66bc59013464cb
+ms.sourcegitcommit: fd3db9f2052c76a5d906b9ec23cb16222452a362
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "338288"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "1539964"
 ---
-# <a name="settlement-overview"></a>Tilityksen yleiskuvaus
+# <a name="settlement-overview"></a>Tilityksen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on yleisiä tietoja tilitysprosessista. Artikkelissa kuvataan tilitettävien tapahtumien tyyppejä, tapahtumien tilitysajankohtia ja -tapoja sekä tilitysprosessin tuloksia.
+Tässä aiheessa on yleisiä tietoja tilitysprosessista. Artikkelissa kuvataan tilitettävien tapahtumien tyyppejä, tapahtumien tilitysajankohtia ja -tapoja sekä tilitysprosessin tuloksia.
 
 Tilityksessä yhden asiakirjan tapahtumat kohdistetaan toisen asiakirjan tapahtumiin, jotta kummankin asiakirjan saldoa voidaan lisätä tai vähentää. Maksun voi esimerkiksi kohdistaa laskuun. Useiden tapahtumatyyppien täsmäyttäminen on mahdollista eri aikoina ja eri menetelmin. Tilityksen vuoksi voidaan myös joutua luomaan uusia tapahtumia.
 
@@ -40,7 +40,7 @@ Osto- ja myyntireskontrassa tilitys voidaan tehdä minkä tahansa toimittaja- ta
 Tapahtumat voidaan tilittää maksukirjauksen yhteydessä. Jos esimerkiksi suoritat maksun toimittajalle, valitset yleensä maksettavat laskut. Valitsemalla laskut merkitset ne tilitettäviksi maksua vastaan. Kun myyntireskontran maksuista huolehtiva henkilö kirjaa asiakasmaksun, hän voi merkitä asianmukaiset laskut tilitettäviksi asiakkaan maksuun sisältyvien tietojen perusteella. Tapahtumat merkitään tilitettäviksi **Selvitä tapahtumat** -sivulla. Sivun voi avata mistä tahansa kirjaamattomasta laskusta tai maksusta. Kun tapahtuma kirjataan, samalla kirjataan myös tilitys. Tapahtumia voi tilittää myös kirjaamisen jälkeen. Voit syöttää ja kirjata asiakasmaksun tilittämättä sitä laskuja vastaan. Kannattaa kuitenkin ensin varmistaa, että maksu tilitetään oikeaa laskua vastaan. **Selvitä tapahtumat** -sivun voi avata **Kaikki asiakkaat**- tai **Kaikki toimittajat** -sivulta tai kenen tahansa asiakkaan tai toimittajan **Tapahtumat**-sivulta. Voit myös varata laskulle kirjattuja ennakkomaksuja merkitsemällä maksun tilitettäväksi osto- tai myyntitilausta vastaan. Tässä tapauksessa maksulla on yhä avoin saldo, mutta sitä ei voi tilittää toista laskua vastaan. Maksu tilitetään automaattisesti osto- tai myyntitilauksesta luotua laskua vastaan.
 
 ## <a name="how-to-settle-transactions"></a>Tapahtumien tilitystapa
-Tapahtumia voi tilittää manuaalisesti, automaattisesti tai näiden yhdistelmällä. Valittava tilitysmenetelmä riippuu liiketoimintaprosesseista, ja se voidaan ottaa käyttöön Myyntireskontran parametrit- ja Ostoreskontran parametrit -sivujen tilitysasetuksissa. Voit luoda toimittajamaksuja ja asiakkaan suoraveloitusmaksuja käyttämällä maksuehdotusta, jolla valitaan maksettavat laskut. Maksuehdotus käynnistetään manuaalisesti, mutta Microsoft Dynamics 365 for Finance and Operations merkitsee tällöin valitut laskut automaattisesti tilitettäviksi, kun maksut luodaan. Jos maksut luodaan manuaalisesti, voit valita tilitettävät laskut **Selvitä tapahtumat** -sivulla. Voit valita laskut manuaalisesti tai käyttää **Merkitse tärkeyden mukaan** -vaihtoehtoja, jolloin laskut merkitään tilitettäviksi automaattisesti. **Merkitse tärkeyden mukaan** -vaihtoehtoa voi käyttää vain myyntireskontrassa. Voit ottaa tämän vaihtoehdon käyttöön Myyntireskontran parametrit -kohdassa **Tilitysprioriteetti**-sivulla. Jos maksuja hoitava henkilö kirjaa maksun mutta ei tilitä sitä ennen kirjaamista, maksu voidaan tilittää automaattisesti. Voit ottaa käyttöön automaattinen tilitys Myyntireskontran ja Ostoreskontran parametreissa. Kun käytät automaattista tilitystä, voit käyttää etukäteen määritettyä tilitysjärjestystä tai määrittää oman tilitysjärjestyksen Myyntireskontran parametrit -kohdassa. Tätä toimintoa voi käyttää vain myyntireskontrassa.
+Tapahtumia voi tilittää manuaalisesti, automaattisesti tai näiden yhdistelmällä. Valittava tilitysmenetelmä riippuu liiketoimintaprosesseista, ja se voidaan ottaa käyttöön Myyntireskontran parametrit- ja Ostoreskontran parametrit -sivujen tilitysasetuksissa. Voit luoda toimittajamaksuja ja asiakkaan suoraveloitusmaksuja käyttämällä maksuehdotusta, jolla valitaan maksettavat laskut. Maksuehdotus käynnistetään manuaalisesti ja Dynamics 365 for Finance and Operations merkitsee tällöin valitut laskut automaattisesti tilitettäviksi, kun maksut luodaan. Jos maksut luodaan manuaalisesti, voit valita tilitettävät laskut **Selvitä tapahtumat** -sivulla. Voit valita laskut manuaalisesti tai käyttää **Merkitse tärkeyden mukaan** -vaihtoehtoja, jolloin laskut merkitään tilitettäviksi automaattisesti. **Merkitse tärkeyden mukaan** -vaihtoehtoa voi käyttää vain myyntireskontrassa. Voit ottaa tämän vaihtoehdon käyttöön Myyntireskontran parametrit -kohdassa **Tilitysprioriteetti**-sivulla. Jos maksuja hoitava henkilö kirjaa maksun mutta ei tilitä sitä ennen kirjaamista, maksu voidaan tilittää automaattisesti. Voit ottaa käyttöön automaattinen tilitys Myyntireskontran ja Ostoreskontran parametreissa. Automaattinen tilitys ratkaisee saman juridisen yksikön sisällä olevat tapahtumat, eikä se ole tilitettävä useille juridisille entiteeteille. Kun käytät automaattista tilitystä, voit käyttää etukäteen määritettyä tilitysjärjestystä tai määrittää oman tilitysjärjestyksen Myyntireskontran parametrit -kohdassa. Tätä toimintoa voi käyttää vain myyntireskontrassa.
 
 ## <a name="results-of-settlement"></a>Tilityksen tulokset
 Kun tapahtumia tilitetään, kunkin tapahtuman jäljellä oleva saldo kasvaa tai pienenee. Tyypillisessä tilanteessa, jossa tilitetään lasku ja maksu, kummankin tapahtuman tila ja saldo päivittyvät seuraavien sääntöjen mukaisesti:

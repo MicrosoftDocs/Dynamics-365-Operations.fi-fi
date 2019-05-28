@@ -3,7 +3,7 @@ title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa Microsoft Dynamics 365 for Finance and Operationsissa.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 78c96c58b8c3331fcadb3e5c9b25dfef3b1b4cbc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975848"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1528841"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -75,7 +75,7 @@ Tietyt tavallisimmat ja tärkeimmät sivulle tehtävät muutokset ovat käytett�
 
 Lisäksi eksplisiittisen mukauttamisen yleisimmät tyypit saa käyttöön napsauttamalla elementtiä hiiren kakkospainikkeella ja valitsemalla **Mukauta**. (Huomaa, että kaikkia sivun elementtejä ei voida mukauttaa.). Kun valitset tämän mukauttamistavan, elementin ominaisuusikkuna tulee näkyviin.
 
-[![Elementin ominaisuuksien mukauttaminen](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
+[![Elementin ominaisuuksien mukauttaminen](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
 
 Voit mukauttaa elementtiä ominaisuusikkunassa seuraavilla tavoilla:
 
@@ -91,7 +91,7 @@ Ominaisuusikkunassa voi olla elementin mukaan myös muita mukauttamisominaisuuks
 
 Jos haluat tehdä useita muutoksia sivulle tai tehdä muutoksia, jotka eivät ole käytettävissä muiden mekanismien kautta (kuten elementtien uudelleenjärjestely), voit käyttää **Mukauttaminen**-työkaluriviä. Avaa **mukauttamisen** työkalurivi valitsemalla **Mukauta tämä lomake** elementin ominaisuusikkunassa. Voit valita **Mukauta tämä lomake** -vaihtoehdon myös kunkin sivun **Asetukset**-välilehden **Mukauta**-ryhmässä.
 
-[![Mukauttamisen työkalurivi](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
+[![Mukauttamisen työkalurivi](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Siirtyminen sivulla
 

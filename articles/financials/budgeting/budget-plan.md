@@ -19,11 +19,11 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "311631"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568163"
 ---
 # <a name="budget-planning"></a>Budjettisuunnittelu
 
@@ -40,7 +40,7 @@ Tämän kurssin tavoite on tarjota Microsoft Dynamics 365 for Finance and Operat
 <a name="prerequisites"></a>Edellytykset 
 ------------------
 
-Tätä opasta varten sinulla on oltava Dynamics 365 for Finance and Operations -ympäristö, jossa on Contoson esittelytiedot, ja sinun on oltava esiintymän järjestelmänvalvoja. Älä käytä selaimen yksityistä tilaa tällä kurssilla. Kirjaudu sen sijaan tarvittaessa ulos selaimen muilta tileiltä ja kirjaudu sisään Dynamics 365 for Finance and Operationsiin järjestelmänvalvojan oikeuksilla. Kun kirjaudut sisään Dynamics 365 for Finance and Operationsiin, sinun **ON** valittava Pidä minut kirjautuneena -valintaruutu Se luo Excel-sovellukseen pysyvän esteen, jota se parhaillaan tarvitsee. Jos kirjaudut sisään Dynamics 365 for Finance and Operationsiin käyttäen jotain muuta selainta kuin Internet Exploreria, järjestelmä kehottaa sinua sisäänkirjautumaan Excel-sovelluksen kautta. Kun valitset "Kirjaudu sisään" Excel-sovelluksessa, Internet Explorer -ponnahdusikkuna avautuu ja kun kirjaudut sisään, sinun **TÄYTYY** merkitä valintaruutu "Pidä minut sisäänkirjautuneena". Jos mitään ei tapahdu, kun napsautat Excel-sovelluksen "Kirjaudu sisään" -painiketta, sitten sinun kannattaa tyhjentää Internet Explorerin väimuistin evästeet.
+Tätä opasta varten sinulla on oltava Finance and Operations -ympäristö, jossa on Contoson esittelytiedot, ja sinun on oltava esiintymän järjestelmänvalvoja. Älä käytä selaimen yksityistä tilaa tällä kurssilla. Kirjaudu sen sijaan tarvittaessa ulos selaimen muilta tileiltä ja kirjaudu sisään Dynamics 365 for Finance and Operationsiin järjestelmänvalvojan oikeuksilla. Kun kirjaudut sisään Dynamics 365 for Finance and Operationsiin, sinun **ON** valittava Pidä minut kirjautuneena -valintaruutu. Se luo Excel-sovellukseen pysyvän esteen, jota se parhaillaan tarvitsee. Jos kirjaudut sisään Dynamics 365 for Finance and Operationsiin käyttäen jotain muuta selainta kuin Internet Exploreria, järjestelmä kehottaa sinua sisäänkirjautumaan Excel-sovelluksen kautta. Kun valitset "Kirjaudu sisään" Excel-sovelluksessa, Internet Explorer -ponnahdusikkuna avautuu ja kun kirjaudut sisään, sinun **TÄYTYY** merkitä valintaruutu "Pidä minut sisäänkirjautuneena". Jos mitään ei tapahdu, kun napsautat Excel-sovelluksen "Kirjaudu sisään" -painiketta, sitten sinun kannattaa tyhjentää Internet Explorerin väimuistin evästeet.
 
 ## <a name="scenario-overview"></a>**Tilanteen yleiskuvaus**
 Julia toimii talouspäällikkönä Contoso Entertainment Systemsissä Saksassa (DEMF). Kun FY2016 lähestyy, hänen on määritettävä yrityksen budjetti tulevalle vuodelle. Budjetin valmistelu näyttää seuraavanlaiselta:
@@ -148,7 +148,7 @@ Budjettisuunnitelman sarakkeet ovat joko rahaan tai määrään perustuvia sarak
 
 [![Automaattinen täyttö](./media/screenshot22.png)](./media/screenshot22.png) 
 
-4.7. Palaa Dynamics 365 for Finance and Operationsiin ja päivitä sivu. Julkaistut arvot näkyvät Finance and Operationsissa. 
+4.7. Palaa Finance and Operationsiin ja päivitä sivu. Julkaistut arvot näkyvät Finance and Operationsissa. 
 
 [![Päivitä](./media/screenshot23.png)](./media/screenshot23.png)
 

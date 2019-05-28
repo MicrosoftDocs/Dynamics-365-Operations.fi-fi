@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842719"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505093"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -70,7 +70,9 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 106 | Tyhjennä määrä | Palauta valitun rivin määräksi **1**. | Kyllä | Kyllä | En | Kyllä | En |
 | 640 | Poista myyntiedustaja riviltä | Poista provisiomyyntiryhmä (myyjä) valitulta riviltä. | Kyllä | Kyllä | En | Kyllä | En |
 | 121 | Tyhjennä myyjä | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | En |
-| 1 055 | Sulje vuoro | Sulje nykyinen vuoro, tulosta Z-raportti ja kirjaa käyttäjä ulos järjestelmästä. | Kyllä | Kyllä | Kyllä | En | En |
+| 1 055 | Sulje vuoro | Sulje nykyinen vuoro, tulosta Z-raportti ja kirjaa käyttäjä ulos järjestelmästä. | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| 139 | Päätä tapahtuma | Pyytää käyttäjää valitsemaan maksutavan | Kyllä | Kyllä | Ei | Kyllä | Ei |
+| 620 | Luo asiakastilaus | Muunna myyntipisteen tapahtuma asiakastilaukseksi. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
 | 925 | Kopioi pankkisekki | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Kyllä |
 | 620 | Luo asiakastilaus | Muunna myyntipisteen tapahtuma asiakastilaukseksi. | Kyllä | Kyllä | En | Kyllä\* | En |
 | 621 | Luo tarjous | Muunna myyntipisteen tapahtuma myyntitarjoukseksi. | Kyllä | Kyllä | En | Kyllä\* | En |

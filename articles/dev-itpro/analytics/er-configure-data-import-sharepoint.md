@@ -18,11 +18,11 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331089"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1552810"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Tietojen SharePointista tuonnin määrittäminen
 
@@ -56,7 +56,7 @@ Toista **ER -tuo tiedot Microsoft Excel -tiedostosta** -tehtäväoppaat, jotka o
 
 - Excel-tiedosto **1099import-data.xlsx**, joka sisältää toimittajatapahtumat ja joka pitäisi tuoda Finance and Operationsiin.
 
-![Microsoft Excel -mallitiedosto SharePointista tuontia varten](./media/GERImportFromSharePoint-02-Excel.PNG)
+![Microsoft Excel -mallitiedosto SharePoint SharePointista tuontia varten](./media/GERImportFromSharePoint-02-Excel.PNG)
     
 > [!NOTE]
 > Toimittajatapahtumien tuonnin muoto valitaan oletusmallimääritykseksi. Siksi, jos suoritat **1099-maksumallin** mallin määrityksen ja tämä mallin määritys on **Kohteeseen**-tyyppiä, mallin määritys suorittaa tätä muotoa, tuodakseen tietoja ulkoisista tiedostoista. Sitten se käyttää näitä tietoja sovellustaulujen päivittämiseen.
@@ -115,7 +115,7 @@ Jos haluat tallentaa sähköiset raporttitiedostot SharePoint-sijaintiin, sinun 
 Voit myös avata **Tiedostojen tilat lähteitä varten** -sivun valitsemalla **Organisaation hallinto** \> **Sähköinen raportointi** \> **Tiedostojen tilat lähteitä varten**. Tässä tapauksessa sivulla on tietoja tiedostolähteista kaikille ER-muodoille, joille on määritetty tiedostolähteet yrityksessä, johon olet parhaillaan kirjautuneena.
 
 ## <a name="import-data-from-excel-files-that-are-in-a-sharepoint-folder"></a>Tietojen tuominen Excel-tiedostoista, jotka ovat SharePoint-kansiossa
-1. Lataa SharePointissa Microsoft Excel -tiedosto **1099import-data.xlsx**, joka sisältää toimittajatapahtumat, SharePointin **Tiedostojen tuonnin lähde (ensisijainen)** -kansioon, jonka loit aikaisemmin.
+1. Lataa SharePointissa Microsoft Excel -tiedosto **1099import-data.xlsx**, joka sisältää toimittajatapahtumat **Tiedostojen tuonnin lähde (ensisijainen)** -kansioon, jonka loit aikaisemmin SharePointissa. 
 
     [![SharePoint-sisältö – Microsoft Excel -tiedosto tuontia varten](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
@@ -187,7 +187,7 @@ Voit myös avata **Tiedostojen tilat lähteitä varten** -sivun valitsemalla **O
 
     [![ER – tiedostotilojen sivu valituille lähteille](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
-   **Tuontimuodon lähteiden lokit** -osa ilmaisee, että tuonti epäonnistui ja että tiedosto on yhä SharePointin tiedostojen virheet kansiossa (**On poistettu** -valintaruutua ei ole valittu). Jos korjaat tämän tiedoston SharePointissa lisäämällä oikean toimittajakoodin ja siirtämällä sen sitten SharePointin Tiedostojen tuonnin lähde (ensisijainen) -kansioon, voit tuoda tiedoston uudelleen.
+   **Tuontimuodon lähteiden lokit** -osa ilmaisee, että tuonti epäonnistui ja että tiedosto on yhä SharePointin tiedostojen virheet -kansiossa **On poistettu** -valintaruutua ei ole valittu). Jos korjaat tämän tiedoston SharePointissa lisäämällä oikean toimittajakoodin ja siirtämällä sen sitten SharePointin Tiedostojen tuonnin lähde (ensisijainen) -kansioon, voit tuoda tiedoston uudelleen.
 
 11. Valitse Finance and Operationsin kohdassa **Ostoreskontra** \> **Kausittaiset tehtävät** \> **Valmistevero (1099)** \> **Toimittajien tilitykset valmisteveroja (1099) varten** asianmukaiset arvot **Päivämäärästä**- ja **Päivämäärään**-kenttiin ja valitse sitten **Manuaaliset 1099-tapahtumat**.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 437c9ba7142dadcb49c9255b119586598511453d
-ms.sourcegitcommit: cbc5a4f0d752d4f147fe269e4d7a2460f772c95b
+ms.openlocfilehash: d57d3bdc5354823888d695ed6bf734584bff95d1
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "307937"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1513262"
 ---
 # <a name="financial-management-home-page"></a>Taloushallinnon kotisivu
 
@@ -42,7 +42,7 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
     :::column-end:::
     :::column:::
         - [Kulujen hallinta](expense-management/expense-management.md)
-        - [Talousraportointi](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
+        - [Taloushallinnon raportointi](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Käyttöomaisuuserät](fixed-assets/fixed-assets.md)
         - [Kirjanpito](general-ledger/general-ledger.md) 
         - [Projektinhallinta](project-management/overview-project-management-accounting.md)

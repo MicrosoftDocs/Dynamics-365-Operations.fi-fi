@@ -18,11 +18,11 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.openlocfilehash: 490a9325be25908564a40478a1ee29feea67fc02
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "367475"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1545050"
 ---
 # <a name="parse-incoming-documents-in-excel-format"></a>Saapuvien asiakirjojen jäsentäminen Excel-muodossa
 
@@ -42,7 +42,7 @@ Lataa seuraavat tiedostot suorittaaksesi yo. tehtäväoppaat:
 | Saapuva tiedosto .XLSX-muodossa - malli    | [1099import-template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266) |
 | Saapuva tiedosto .XLSX-muodossa - näytetiedot | [1099import-data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
 
-Jos et ole vielä toistanut tehtäväopasta [ER – Luo vaaditut konfiguraatiot tietojen tuomiseksi ulkoisesta tiedostosta](./tasks/er-required-configurations-import-data.md) nykyisessä Dynamics 365 for Finance and Operations -sovelluksessa, lataa seuraava tiedosto.
+Jos et ole vielä toistanut tehtäväopasta, [Luo vaaditut konfiguraatiot tietojen tuomiseksi ulkoisesta tiedostosta](./tasks/er-required-configurations-import-data.md) nykyisessä Dynamics 365 for Finance and Operations -sovelluksessa, lataa seuraava tiedosto.
 
 | Sisällön kuvaus    | Tiedosto                                                            |
 |------------------------|-----------------------------------------------------------------|

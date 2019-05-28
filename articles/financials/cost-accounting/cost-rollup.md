@@ -20,11 +20,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: e809cb2cadadc623134805e028de7f2e64dd662f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356136"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565389"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kustannusten koontikäytäntö ja yleiskustannuslaskenta 
 
@@ -262,7 +262,7 @@ Tässä on esimerkki Excelin Power Pivot -raportoinnista.
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Ensisijainen kustannus**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
-| &nbsp;&nbsp;&nbsp;&nbsp; 1001                            | 100,00          | 200 000         | 6.000,00      | 2.000,00      | **8.300,00**  |
+| &nbsp;&nbsp;&nbsp;&nbsp; 1001                            | 100,00          | 200,00         | 6.000,00      | 2.000,00      | **8.300,00**  |
 | &nbsp;&nbsp;&nbsp;&nbsp; 1002                            | 10.000,00       | 10.000,00      | 8.000,00      | 6.500,00      | **34.500,00** |
 |&nbsp;&nbsp;&nbsp;&nbsp; 1003                             | 0,00            | 4.000,00       | 0,00          | 0,00          | **4.000,00**  |
 |**Toissijainen kustannus**                            | **-10 100,00**  | **-14 200,00** | **17,082,75** | **7.217,25**  | **0,00**      |

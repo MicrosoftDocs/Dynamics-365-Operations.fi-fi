@@ -20,11 +20,11 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
 ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335413"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1546222"
 ---
 # <a name="product-identifiers"></a>Tuotetunnukset 
 
@@ -164,13 +164,13 @@ Seuraavassa taulukossa on yhteenveto tuonnin ja manuaalisen luonnin tulokset, ku
 
 Tuoteyksikön tunnistemalli luotiin, jotta CDS:n versio 1.0 voidaan valmistella kaikilla tuotteeseen viittaavilla tunnisteilla. Tehtävää on yksinkertaistettu keräämällä kaikki tunnisteet yhteen yleiseen tunnistetauluun, jolloin ne voidaan vietä yhtenä mallina. Huomaa, että tämä CDS-versio ei käytä tuotetunnusten mallia. **Tuoteyksikön Common Data Service -tunnisteyksikkö** -yksiköllä ja tällä prosessilla onkin vain vähän käytännön merkitystä ja se tulee todennäköisesti muuttumaan myöhemmin.
 
-Tuotetunnistetaulukko on yleinen taulukko, jonka tiedot täytetään kaikista pääyrityksen viitetaulukoista toistuvana erätyönä. Valitse yleisten päätietojen vaikutusalueen määritelmäksi yritys ja tuoteluokkahierarkia. Yleisen tuotetunnuksen taulun luonti on rajoitettu tuotteisiin, jotka on vapautettu valitulle yritykselle ja tuotteisiin, jotka ovat **Common Data Service** -roolin tuotehierarkian jäseniä tuoteluokkahierarkiassa.
+Tuotetunnistetaulukko on yleinen taulukko, jonka tiedot täytetään kaikista pääyrityksen viitetaulukoista toistuvana erätyönä. Valitse yleisten päätietojen vaikutusalueen määritelmäksi yritys ja tuoteluokkahierarkia. Yleisen tuotetunnuksen taulun luonti on rajoitettu tuotteisiin, jotka on vapautettu valitulle yritykselle ja tuotteisiin, jotka ovat **Common data service** -roolin tuotehierarkian jäseniä tuoteluokkahierarkiassa.
 
 Tämä prosessi olettaa, että tuotteen päätietoja ylläpidetään ensisijaisesti yhdessä keskitetyssä yrityksessä. (Tämä yritys voi kuitenkin olla virtuaalinen yritys, jota käytetään vain yleisten päätietojen ylläpitämisessä.)
 
 Määritä ympäristö näiden ohjeiden avulla.
 
-1. Valitse CDS:n luokkahierarkia. Jos **Luokkahierarkian rooliliitokset** -sivulla ei ole liitetty hierarkiaa **Common Data Service** -rooliin, sinun on luotava uusi liitos. Valitse **Common Data Service** -rooli ja liitä sitten CDS-palveluun synkronoitavaa tuotevalikoimaa edustava luokkahierarkia.
+1. Valitse CDS:n luokkahierarkia. Jos **Luokkahierarkian rooliliitokset** -sivulla ei ole liitetty hierarkiaa **Common data service** -rooliin, sinun on luotava uusi liitos. Valitse **Common data service** -rooli ja liitä sitten CDS-palveluun synkronoitavaa tuotevalikoimaa edustava luokkahierarkia.
 2. Valitse yleisen tuotteen päätietojen yritys. Valitse **Tuotetietojen hallintaparametrit** -sivun **Tuotemääritteet**-välilehdessä pääyritys, jossa tuotetta ja nimiketunnuksia pääasiassa ylläpidetään.
 3. Määritä vietävät tunnisteen koodityypit ja koodit. Siirry kohtaan **Tuotetietojen hallinta** &gt; **Asetukset** &gt; **Tuotteen tunnistekoodit**. Voit muodostaa tunnistekoodityyppejä valitsemalla **Luo koodit**. Valitun yrityksen tunnisteen jokaiselle tyypille luodaan merkintä, jonka tyyppi on Koodi.
 
@@ -180,7 +180,7 @@ Määritä ympäristö näiden ohjeiden avulla.
 
 4. Kun olet määrittänyt tuotetunnisteen koodityypit, voit luoda tunnisteita yleisessä taulussa aloittamalla **Luo tuoteyksikön tunnisteet** -työn **Tuoteyksikön tunnistekoodit** -sivulla. Tämä työ on suoritettava eränä. Tämä työ on määritettävä kausittaiseksi erätyöksi, jotta tauluun lisätään tietoja uusien tapahtumien mukaan.
 
-Voit nyt käyttää **Tuoteyksikön Common Data Service -tunnisteen yksikkö**-, **Tuoteyksikön tunnistekoodi**- ja **Tuoteyksikön tunnisteen vaikutusalue** -tietoyksiköitä ja viedä niiden avulla tunnisteita mihin tahansa kohdejärjestelmään.
+Voit nyt käyttää **Tuoteyksikön common data service -tunnisteen yksikkö**-, **Tuoteyksikön tunnistekoodi** ja **Tuoteyksikön tunnisteen vaikutusalue** -tietoyksiköitä ja viedä niiden avulla tunnisteita mihin tahansa kohdejärjestelmään.
 
 ## <a name="related-topic"></a>Liittyvä aihe
 
