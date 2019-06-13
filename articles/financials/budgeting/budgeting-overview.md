@@ -1,73 +1,165 @@
----
-title: Budjetoinnin aloitussivu
-description: Tässä aiheessa käsitellään yleisesti Microsoft Dynamics 365 for Finance and Operations -ohjelman budjetointitoimintojen osia, budjetointityökaluja ja raportointitoimintoja.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 08/09/2017
-ms.topic: index-page
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: BudgetPlanningWorkspace
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 106043
-ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
-ms.search.region: Global
-ms.author: shylaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7e755e9cbcce332bf2a010083be438a8aeb9e2f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512095"
----
-# <a name="budgeting-home-page"></a><span data-ttu-id="c33fc-103">Budjetoinnin aloitussivu</span><span class="sxs-lookup"><span data-stu-id="c33fc-103">Budgeting home page</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="c33fc-104">Tässä aiheessa käsitellään yleisesti Finance and Operations -ohjelman budjetointitoimintojen osia, budjetointityökaluja ja raportointitoimintoja.</span><span class="sxs-lookup"><span data-stu-id="c33fc-104">This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Finance and Operations.</span></span> 
-
-<a name="components-of-budgeting-functionality"></a><span data-ttu-id="c33fc-105">Budjetointitoimintojen osat</span><span class="sxs-lookup"><span data-stu-id="c33fc-105">Components of budgeting functionality</span></span>
--------------------------------------
-
-<span data-ttu-id="c33fc-106">Yrityksen resurssien suunnittelujakso koostuu yleensä suunnittelu-, budjetointi- ja ennustetehtävistä.</span><span class="sxs-lookup"><span data-stu-id="c33fc-106">The resource planning cycle for a company typically consists of planning, budgeting, and forecasting activities.</span></span>
-
-<span data-ttu-id="c33fc-107">[![Budjetointitoimintojen osat](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)</span><span class="sxs-lookup"><span data-stu-id="c33fc-107">[![Budgeting functionality components](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)</span></span>
-
-<span data-ttu-id="c33fc-108">Sekä pitkän aikavälin strategisen suunnittelun että vuosittaisen budjetin suunnittelun prosesseja tuetaan budjettisuunnitelman avulla.</span><span class="sxs-lookup"><span data-stu-id="c33fc-108">The processes for both long-term strategic planning and annual budget planning are supported through a budget plan document.</span></span> <span data-ttu-id="c33fc-109">Budjettisuunnitelman asiakirjat on integroitu tiiviisti Microsoft Exceliin.</span><span class="sxs-lookup"><span data-stu-id="c33fc-109">Budget plan documents are tightly integrated with Microsoft Excel.</span></span> <span data-ttu-id="c33fc-110">Käyttäjien tekemien rahallisten ja määrällisten skenaarioiden määrää ei rajoiteta. Käyttäjät voivat myös määrittää budjetoinnin organisaatiohierarkian tukemaan sekä ylhäältä alaspäin että alhaalta ylöspäin suuntautuvia budjetointimenetelmiä.</span><span class="sxs-lookup"><span data-stu-id="c33fc-110">Users can configure unlimited monetary and quantitative scenarios, and can also define a budgeting organizational hierarchy to both support top-down and bottom-up budgeting methods.</span></span> <span data-ttu-id="c33fc-111">Kun budjetti on muodostettu ja hyväksytty Finance and Operations -ohjelmassa, voit muuntaa budjettisuunnitelman budjettirekisteritapahtumaksi.</span><span class="sxs-lookup"><span data-stu-id="c33fc-111">After a budget is established and approved in Finance and Operations, you convert the budget plan to a budget register entry.</span></span> <span data-ttu-id="c33fc-112">Budjettirekisteritapahtumat antavat työkalut budjetin ylläpitämiseen ja summien jäljittämiseen budjettikoodien avulla.</span><span class="sxs-lookup"><span data-stu-id="c33fc-112">Budget register entries provide tools for maintaining the budget and for keeping amounts traceable through budget codes.</span></span> <span data-ttu-id="c33fc-113">Budjettirekisteritapahtumien avulla voit korjata alkuperäisiä budjetteja, suorittaa siirtoja ja tehdä budjettisummien siirtokirjauksia edelliseltä vuodelta.</span><span class="sxs-lookup"><span data-stu-id="c33fc-113">Budget register entries let you revise original budgets, perform transfers, and carry forward budget amounts from the previous year.</span></span> <span data-ttu-id="c33fc-114">Yritys voi ottaa muodostettuun budjettiin perustuvan budjetin hallinnan käyttöön.</span><span class="sxs-lookup"><span data-stu-id="c33fc-114">Based on the established budget, a company can enable budget control.</span></span> <span data-ttu-id="c33fc-115">Hallinnan taso määräytyy organisaatiokulttuurin ja organisaation kypsyystason mukaan.</span><span class="sxs-lookup"><span data-stu-id="c33fc-115">The level of control depends on the organizational culture and the organization's level of maturity.</span></span> <span data-ttu-id="c33fc-116">Alhaisen kypsyystason organisaatiot voivat antaa budjetin olla koskemattomana, ja ne ehkä enemminkin reagoivat kuin toimivat ennakoivasti, jos budjetti ei vastaa odotuksia.</span><span class="sxs-lookup"><span data-stu-id="c33fc-116">Organizations that have low maturity might leave the budget “as is” and might be more reactive than proactive if a budget doesn't meet expectations.</span></span> <span data-ttu-id="c33fc-117">Toiset organisaatiot voivat ottaa käyttöön budjetin hallintakäytännöt, jotka estävät käyttäjien ostot, jos budjettirahoitusta ei ole.</span><span class="sxs-lookup"><span data-stu-id="c33fc-117">Other organizations might enable budget control policies that prevent users from purchasing if budget funds aren't available.</span></span>
-
-<span data-ttu-id="c33fc-118">Erittäin korkean kypsyystason organisaatioissa voi olla käytössä organisaatiokulttuuri, jossa työntekijöille kerrotaan organisaation tavoitteista ja miten kyseisiä tavoitteita voidaan toteuttaa erilaisten käytäntöjen avulla. Tällainen käytäntö voi olla esimerkiksi verkkotapaamisten järjestäminen matkustamisen sijaan aina, kun se on mahdollista.</span><span class="sxs-lookup"><span data-stu-id="c33fc-118">Finally, very mature organizations might establish an organizational culture where employees are educated about organizational targets and follow those targets through policies such as “Consider online meeting instead of a travel.”</span></span> <span data-ttu-id="c33fc-119">Finance and Operations sisältää budjetin hallintakehikon. Sen avulla yritysjohto voi valita joko tiukan hallinnan (joka estää budjetin ylittävät kirjaukset) tai pehmeän hallinnan (jossa käyttäjiä varoitetaan budjettirahoituksen ylittymisestä, mutta käyttäjät voivat itse päättää, mitä he tekevät).</span><span class="sxs-lookup"><span data-stu-id="c33fc-119">Finance and Operations includes a budget control framework that lets the company's management select either hard control (which prevents postings that would go over the budget) or soft control (where users are warned that they will exceed the available budget funds but can decide for themselves how to proceed).</span></span> <span data-ttu-id="c33fc-120">Käytössä on myös juoksevat ennusteet.</span><span class="sxs-lookup"><span data-stu-id="c33fc-120">Finally, you can use rolling forecasts.</span></span> <span data-ttu-id="c33fc-121">Juoksevassa ennusteessa todellisia kuluja verrataan säännöllisesti budjettiin, ja sen perusteella määritetään, miten yritys toimii budjettiin verrattuna.</span><span class="sxs-lookup"><span data-stu-id="c33fc-121">A rolling forecast is a regular comparison of budget to actuals and is used to define how well the company operates against the budget.</span></span> <span data-ttu-id="c33fc-122">Juoksevan ennusteen perusteella voidaan tunnistaa myös trendejä.</span><span class="sxs-lookup"><span data-stu-id="c33fc-122">A rolling forecast is also used to identify trends.</span></span> <span data-ttu-id="c33fc-123">Finance and Operations tukee juoksevia ennusteita budjettisuunnitelman asiakirjan alkuperäisinä suunnittelutehtävinä.</span><span class="sxs-lookup"><span data-stu-id="c33fc-123">In Finance and Operations, rolling forecasts are supported, through a budget plan document, as initial planning activities.</span></span> <span data-ttu-id="c33fc-124">Juoksevat ennusteet voidaan tehdä rinnakkain tulevan budjettijakson suunnittelun kanssa.</span><span class="sxs-lookup"><span data-stu-id="c33fc-124">Rolling forecasts can be done in parallel with the planning for the upcoming budget cycle.</span></span>
-
--   [<span data-ttu-id="c33fc-125">Perusbudjetointi: yleiskatsaus ja konfiguraatio</span><span class="sxs-lookup"><span data-stu-id="c33fc-125">Basic budgeting: Overview and configuration</span></span>](basic-budgeting-overview-configuration.md)
--   [<span data-ttu-id="c33fc-126">Budjetin hallinta: yleiskatsaus ja konfiguraatio</span><span class="sxs-lookup"><span data-stu-id="c33fc-126">Budget control: Overview and configuration</span></span>](budget-control-overview-configuration.md)
--   [<span data-ttu-id="c33fc-127">Budjettisuunnittelu: yleiskatsaus ja konfiguraatio</span><span class="sxs-lookup"><span data-stu-id="c33fc-127">Budget planning: Overview and configuration</span></span>](budget-planning-overview-configuration.md)
--   [<span data-ttu-id="c33fc-128">Toimien ennustus</span><span class="sxs-lookup"><span data-stu-id="c33fc-128">Position forecasting</span></span>](position-forecasting.md)
--   [<span data-ttu-id="c33fc-129">Budjettisuunnittelun perusteluasiakirjat</span><span class="sxs-lookup"><span data-stu-id="c33fc-129">Budget planning justification documents</span></span>](budget-planning-justification-docs.md)
--   [<span data-ttu-id="c33fc-130">Microsoft Excelin budjettisuunnittelumallit</span><span class="sxs-lookup"><span data-stu-id="c33fc-130">Microsoft Excel templates for budget planning</span></span>](budget-planning-excel-templates.md)
-
-## <a name="budgeting-tools-in-finance-and-operations"></a><span data-ttu-id="c33fc-131">Finance and Operations -ohjelman budjetointityökalut</span><span class="sxs-lookup"><span data-stu-id="c33fc-131">Budgeting tools in Finance and Operations</span></span>
-<span data-ttu-id="c33fc-132">[![Budjetointityökalut](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg)</span><span class="sxs-lookup"><span data-stu-id="c33fc-132">[![Budgeting tools](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg)</span></span> 
-
-<span data-ttu-id="c33fc-133">Finance and Operations -ohjelman eri osissa on lisää suunnittelu- ja budjetointitoimintoja, ja nämä toiminnot on integroitu kirjanpitobudjetteihin.</span><span class="sxs-lookup"><span data-stu-id="c33fc-133">Additional planning and budgeting capabilities are available across Finance and Operations and are integrated with ledger budgets.</span></span>
-
--   <span data-ttu-id="c33fc-134">**Työvoimabudjetit** – työvoiman budjetointi sisältää yksityiskohtaisen budjettikustannuksen suunnittelukomponentin esimerkiksi toimia ja kompensaatioryhmiä varten.</span><span class="sxs-lookup"><span data-stu-id="c33fc-134">**Workforce budgets** – Workforce budgeting includes detailed budget cost component planning for positions, compensation groups, and so on.</span></span>
--   <span data-ttu-id="c33fc-135">**Käyttöomaisuusbudjetit** – voit laskea käyttöomaisuustietojen perusteella suunnitellut poistot ja kirjata muut käyttöomaisuuteen liittyvät suunnitellut tapahtumat.</span><span class="sxs-lookup"><span data-stu-id="c33fc-135">**Fixed assets budgets** – Based on fixed asset information, you can calculate planned depreciation and record other planned transactions that are related to fixed assets.</span></span>
--   <span data-ttu-id="c33fc-136">**Projektibudjetit** – Voit luoda projektimoduulissa yksityiskohtaisia projektiennusteita.</span><span class="sxs-lookup"><span data-stu-id="c33fc-136">**Project budgets** – In the projects module, you can create detailed project forecasts.</span></span> <span data-ttu-id="c33fc-137">Projektiennusteet sisältävät tietoja suunnitelluista tunneista, kuluista, maksuista ja nimikkeistä.</span><span class="sxs-lookup"><span data-stu-id="c33fc-137">The projects forecasts will include details about the planned hours, expenses, fees, and items.</span></span>
--   <span data-ttu-id="c33fc-138">**Kysynnän ennuste** – voit arvioida tulevan varastokysynnän ja luoda kysynnän ennusteita historiallisten tapahtumatietojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="c33fc-138">\*\*Demand forecasting \*\*– Based on historical transaction data, you can estimate future inventory demand and create demand forecasts.</span></span>
-
-<span data-ttu-id="c33fc-139">Lisätietoja suunnittelutietojen tuomisesta muista moduuleista budjettisuunnitelmiin on aiheessa [Budjettisuunnittelun integrointi muiden moduulien kanssa](budget-planning-integration-other-modules.md).</span><span class="sxs-lookup"><span data-stu-id="c33fc-139">For information about how to bring planning data from other modules into budget plans, see [Budget planning integration with other modules](budget-planning-integration-other-modules.md).</span></span>
-
-## <a name="user-interface-and-reporting-capabilities"></a><span data-ttu-id="c33fc-140">Käyttöliittymä ja raportointiominaisuudet</span><span class="sxs-lookup"><span data-stu-id="c33fc-140">User interface and reporting capabilities</span></span>
-<span data-ttu-id="c33fc-141">Käyttäjät voivat luoda Finance and Operations -ohjelmassa budjettisuunnitelmia joko suoraan Finance and Operations -asiakasohjelmassa (käyttämällä määritettävää budjettisuunnitelman asiakirjan sivua) tai Excelin kautta.</span><span class="sxs-lookup"><span data-stu-id="c33fc-141">In Finance and Operations, users can create budget plans either directly in the Finance and Operations client (by using a configurable budget plan document page) or through Excel.</span></span> <span data-ttu-id="c33fc-142">Excelissä on käytössä useita lisäominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="c33fc-142">Excel provides several additional capabilities.</span></span> <span data-ttu-id="c33fc-143">Voit esimerkiksi käyttää ulkoisia tietoja budjettisuunnitelman lähteenä, suorittaa mukautettuja laskutoimituksia sekä käyttää Microsoft Pivot-taulukkoa ja kaavioita.</span><span class="sxs-lookup"><span data-stu-id="c33fc-143">For example, you can use external data as a source for a budget plan, do custom calculations, and use Microsoft PivotTable and charts.</span></span> <span data-ttu-id="c33fc-144">Useimmat budjettisuunnitteluprosessin muuttajat voidaan määrittää.</span><span class="sxs-lookup"><span data-stu-id="c33fc-144">Most of the variables in the budget planning process can be configured.</span></span> 
-
-<span data-ttu-id="c33fc-145">Voit esimerkiksi määrittää, kuka tekee budjetoinnin, mitä budjetoidaan ja miltä prosessi näyttää.</span><span class="sxs-lookup"><span data-stu-id="c33fc-145">For example, you can define who does budgeting, what is budgeted, and what the process looks like.</span></span> <span data-ttu-id="c33fc-146">Vaikka voit käyttää Exceliä budjetin suunnitteluun, Finance and Operations pidetään ainoana tietolähteenä. Tämä estää budjetin hallintaan liittyvien ongelmien syntymisen.</span><span class="sxs-lookup"><span data-stu-id="c33fc-146">Although you can use Excel for budget planning, Finance and Operations is kept as a single source of truth and helps prevent budget control issues.</span></span> <span data-ttu-id="c33fc-147">Budjetoinnin alkuperäiset tiedot voidaan tuoda kausittaisilla prosesseilla budjettisuunnitelmaan.</span><span class="sxs-lookup"><span data-stu-id="c33fc-147">Periodic processes can be used to bring initial data for budgeting into the budget plan.</span></span> <span data-ttu-id="c33fc-148">Finance and Operations sisältää useita vakiokyselysivuja, joiden avulla voit tarkastella ja analysoida budjetointitietoja raportointia varten.</span><span class="sxs-lookup"><span data-stu-id="c33fc-148">For reporting, Finance and Operations offers a set of standard inquiry pages that let you view and analyze budgeting data.</span></span> <span data-ttu-id="c33fc-149">Budjettisuunnitelman tietoja voidaan käyttää Management Reporterin kautta, ja erilliset budjettisuunnitelmaskenaariot voidaan näyttää Management Reporter -raportin sarakkeina.</span><span class="sxs-lookup"><span data-stu-id="c33fc-149">Budget plan data can be accessed through Management Reporter, and separate budget plan scenarios can be displayed as columns on the Management Reporter report.</span></span>
-
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="budgeting-overview.md" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>budgeting-overview.a0e130.84321b78c9869a4920c3488373876bb56bcb3a29.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>84321b78c9869a4920c3488373876bb56bcb3a29</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\budgeting\budgeting-overview.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Budgeting home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjetoinnin aloitussivu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä aiheessa käsitellään yleisesti Microsoft Dynamics 365 for Finance and Operations -ohjelman budjetointitoimintojen osia, budjetointityökaluja ja raportointitoimintoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Budgeting home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjetoinnin aloitussivu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä aiheessa käsitellään yleisesti Finance and Operations -ohjelman budjetointitoimintojen osia, budjetointityökaluja ja raportointitoimintoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Components of budgeting functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjetointitoimintojen osat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The resource planning cycle for a company typically consists of planning, budgeting, and forecasting activities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yrityksen resurssien suunnittelujakso koostuu yleensä suunnittelu-, budjetointi- ja ennustetehtävistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budgeting functionality components<ept id="p1">](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budjetointitoimintojen osat<ept id="p1">](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The processes for both long-term strategic planning and annual budget planning are supported through a budget plan document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sekä pitkän aikavälin strategisen suunnittelun että vuosittaisen budjetin suunnittelun prosesseja tuetaan budjettisuunnitelman avulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Budget plan documents are tightly integrated with Microsoft Excel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjettisuunnitelman asiakirjat on integroitu tiiviisti Microsoft Exceliin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Users can configure unlimited monetary and quantitative scenarios, and can also define a budgeting organizational hierarchy to both support top-down and bottom-up budgeting methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjien tekemien rahallisten ja määrällisten skenaarioiden määrää ei rajoiteta. Käyttäjät voivat myös määrittää budjetoinnin organisaatiohierarkian tukemaan sekä ylhäältä alaspäin että alhaalta ylöspäin suuntautuvia budjetointimenetelmiä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>After a budget is established and approved in Finance and Operations, you convert the budget plan to a budget register entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun budjetti on muodostettu ja hyväksytty Finance and Operations -ohjelmassa, voit muuntaa budjettisuunnitelman budjettirekisteritapahtumaksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Budget register entries provide tools for maintaining the budget and for keeping amounts traceable through budget codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjettirekisteritapahtumat antavat työkalut budjetin ylläpitämiseen ja summien jäljittämiseen budjettikoodien avulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Budget register entries let you revise original budgets, perform transfers, and carry forward budget amounts from the previous year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjettirekisteritapahtumien avulla voit korjata alkuperäisiä budjetteja, suorittaa siirtoja ja tehdä budjettisummien siirtokirjauksia edelliseltä vuodelta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Based on the established budget, a company can enable budget control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yritys voi ottaa muodostettuun budjettiin perustuvan budjetin hallinnan käyttöön.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>The level of control depends on the organizational culture and the organization's level of maturity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hallinnan taso määräytyy organisaatiokulttuurin ja organisaation kypsyystason mukaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Organizations that have low maturity might leave the budget “as is” and might be more reactive than proactive if a budget doesn't meet expectations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alhaisen kypsyystason organisaatiot voivat antaa budjetin olla koskemattomana, ja ne ehkä enemminkin reagoivat kuin toimivat ennakoivasti, jos budjetti ei vastaa odotuksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Other organizations might enable budget control policies that prevent users from purchasing if budget funds aren't available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiset organisaatiot voivat ottaa käyttöön budjetin hallintakäytännöt, jotka estävät käyttäjien ostot, jos budjettirahoitusta ei ole.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Finally, very mature organizations might establish an organizational culture where employees are educated about organizational targets and follow those targets through policies such as “Consider online meeting instead of a travel.”</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erittäin korkean kypsyystason organisaatioissa voi olla käytössä organisaatiokulttuuri, jossa työntekijöille kerrotaan organisaation tavoitteista ja miten kyseisiä tavoitteita voidaan toteuttaa erilaisten käytäntöjen avulla. Tällainen käytäntö voi olla esimerkiksi verkkotapaamisten järjestäminen matkustamisen sijaan aina, kun se on mahdollista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Finance and Operations includes a budget control framework that lets the company's management select either hard control (which prevents postings that would go over the budget) or soft control (where users are warned that they will exceed the available budget funds but can decide for themselves how to proceed).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations sisältää budjetin hallintakehikon. Sen avulla yritysjohto voi valita joko tiukan hallinnan (joka estää budjetin ylittävät kirjaukset) tai pehmeän hallinnan (jossa käyttäjiä varoitetaan budjettirahoituksen ylittymisestä, mutta käyttäjät voivat itse päättää, mitä he tekevät).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Finally, you can use rolling forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytössä on myös juoksevat ennusteet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>A rolling forecast is a regular comparison of budget to actuals and is used to define how well the company operates against the budget.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Juoksevassa ennusteessa todellisia kuluja verrataan säännöllisesti budjettiin, ja sen perusteella määritetään, miten yritys toimii budjettiin verrattuna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>A rolling forecast is also used to identify trends.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Juoksevan ennusteen perusteella voidaan tunnistaa myös trendejä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>In Finance and Operations, rolling forecasts are supported, through a budget plan document, as initial planning activities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations tukee juoksevia ennusteita budjettisuunnitelman asiakirjan alkuperäisinä suunnittelutehtävinä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Rolling forecasts can be done in parallel with the planning for the upcoming budget cycle.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Juoksevat ennusteet voidaan tehdä rinnakkain tulevan budjettijakson suunnittelun kanssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source><bpt id="p1">[</bpt>Basic budgeting: Overview and configuration<ept id="p1">](basic-budgeting-overview-configuration.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Perusbudjetointi: yleiskatsaus ja konfiguraatio<ept id="p1">](basic-budgeting-overview-configuration.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source><bpt id="p1">[</bpt>Budget control: Overview and configuration<ept id="p1">](budget-control-overview-configuration.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Budjetin hallinta: yleiskatsaus ja konfiguraatio<ept id="p1">](budget-control-overview-configuration.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source><bpt id="p1">[</bpt>Budget planning: Overview and configuration<ept id="p1">](budget-planning-overview-configuration.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Budjettisuunnittelu: yleiskatsaus ja konfiguraatio<ept id="p1">](budget-planning-overview-configuration.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">[</bpt>Position forecasting<ept id="p1">](position-forecasting.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimien ennustus<ept id="p1">](position-forecasting.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">[</bpt>Budget planning justification documents<ept id="p1">](budget-planning-justification-docs.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Budjettisuunnittelun perusteluasiakirjat<ept id="p1">](budget-planning-justification-docs.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">[</bpt>Microsoft Excel templates for budget planning<ept id="p1">](budget-planning-excel-templates.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Excelin budjettisuunnittelumallit<ept id="p1">](budget-planning-excel-templates.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Budgeting tools in Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations -ohjelman budjetointityökalut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budgeting tools<ept id="p1">](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budjetointityökalut<ept id="p1">](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Additional planning and budgeting capabilities are available across Finance and Operations and are integrated with ledger budgets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations -ohjelman eri osissa on lisää suunnittelu- ja budjetointitoimintoja, ja nämä toiminnot on integroitu kirjanpitobudjetteihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source><bpt id="p1">**</bpt>Workforce budgets<ept id="p1">**</ept> – Workforce budgeting includes detailed budget cost component planning for positions, compensation groups, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Työvoimabudjetit<ept id="p1">**</ept> – työvoiman budjetointi sisältää yksityiskohtaisen budjettikustannuksen suunnittelukomponentin esimerkiksi toimia ja kompensaatioryhmiä varten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source><bpt id="p1">**</bpt>Fixed assets budgets<ept id="p1">**</ept> – Based on fixed asset information, you can calculate planned depreciation and record other planned transactions that are related to fixed assets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käyttöomaisuusbudjetit<ept id="p1">**</ept> – voit laskea käyttöomaisuustietojen perusteella suunnitellut poistot ja kirjata muut käyttöomaisuuteen liittyvät suunnitellut tapahtumat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">**</bpt>Project budgets<ept id="p1">**</ept> – In the projects module, you can create detailed project forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Projektibudjetit<ept id="p1">**</ept> – Voit luoda projektimoduulissa yksityiskohtaisia projektiennusteita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>The projects forecasts will include details about the planned hours, expenses, fees, and items.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Projektiennusteet sisältävät tietoja suunnitelluista tunneista, kuluista, maksuista ja nimikkeistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>**Demand forecasting **– Based on historical transaction data, you can estimate future inventory demand and create demand forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">**Kysynnän ennuste** – voit arvioida tulevan varastokysynnän ja luoda kysynnän ennusteita historiallisten tapahtumatietojen perusteella.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For information about how to bring planning data from other modules into budget plans, see <bpt id="p1">[</bpt>Budget planning integration with other modules<ept id="p1">](budget-planning-integration-other-modules.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja suunnittelutietojen tuomisesta muista moduuleista budjettisuunnitelmiin on aiheessa <bpt id="p1">[</bpt>Budjettisuunnittelun integrointi muiden moduulien kanssa<ept id="p1">](budget-planning-integration-other-modules.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>User interface and reporting capabilities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttöliittymä ja raportointiominaisuudet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>In Finance and Operations, users can create budget plans either directly in the Finance and Operations client (by using a configurable budget plan document page) or through Excel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjät voivat luoda Finance and Operations -ohjelmassa budjettisuunnitelmia joko suoraan Finance and Operations -asiakasohjelmassa (käyttämällä määritettävää budjettisuunnitelman asiakirjan sivua) tai Excelin kautta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Excel provides several additional capabilities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Excelissä on käytössä useita lisäominaisuuksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>For example, you can use external data as a source for a budget plan, do custom calculations, and use Microsoft PivotTable and charts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit esimerkiksi käyttää ulkoisia tietoja budjettisuunnitelman lähteenä, suorittaa mukautettuja laskutoimituksia sekä käyttää Microsoft Pivot-taulukkoa ja kaavioita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Most of the variables in the budget planning process can be configured.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Useimmat budjettisuunnitteluprosessin muuttajat voidaan määrittää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>For example, you can define who does budgeting, what is budgeted, and what the process looks like.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit esimerkiksi määrittää, kuka tekee budjetoinnin, mitä budjetoidaan ja miltä prosessi näyttää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Although you can use Excel for budget planning, Finance and Operations is kept as a single source of truth and helps prevent budget control issues.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaikka voit käyttää Exceliä budjetin suunnitteluun, Finance and Operations pidetään ainoana tietolähteenä. Tämä estää budjetin hallintaan liittyvien ongelmien syntymisen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Periodic processes can be used to bring initial data for budgeting into the budget plan.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjetoinnin alkuperäiset tiedot voidaan tuoda kausittaisilla prosesseilla budjettisuunnitelmaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>For reporting, Finance and Operations offers a set of standard inquiry pages that let you view and analyze budgeting data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations sisältää useita vakiokyselysivuja, joiden avulla voit tarkastella ja analysoida budjetointitietoja raportointia varten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Budget plan data can be accessed through Management Reporter, and separate budget plan scenarios can be displayed as columns on the Management Reporter report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjettisuunnitelman tietoja voidaan käyttää Management Reporterin kautta, ja erilliset budjettisuunnitelmaskenaariot voidaan näyttää Management Reporter -raportin sarakkeina.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

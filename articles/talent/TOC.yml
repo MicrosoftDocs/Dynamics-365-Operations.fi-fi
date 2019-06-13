@@ -1,371 +1,588 @@
-- name: Dynamics 365 for Talent
-  href: index.md
-  items:
-    - name: Aloittaminen
-      href: talent-get-started.md
-      items:
-        - name: Talentin uudet ja muuttuneet ominaisuudet
-          href: whats-new.md
-          items:
-            - name: 6. toukokuuta 2019
-              href: whats-new-talent-may-6-2019.md
-            - name: 30. huhtikuuta 2019
-              href: whats-new-talent-april-30-2019.md
-            - name: 25. huhtikuuta 2019
-              href: whats-new-talent-april-25-2019.md
-            - name: 16. huhtikuuta 2019
-              href: whats-new-talent-april-16-2019.md
-            - name: 9. huhtikuuta 2019
-              href: whats-new-talent-april-9-2019.md
-            - name: 2. huhtikuuta 2019
-              href: whats-new-talent-april-2-2019.md
-            - name: 26. maaliskuuta 2019
-              href: whats-new-talent-march-26-2019.md
-            - name: 20. maaliskuuta 2019
-              href: whats-new-talent-march-20.md
-            - name: 14. maaliskuuta 2019
-              href: whats-new-talent-march-14.md
-            - name: 5. maaliskuuta 2019
-              href: whats-new-talent-march-5.md
-            - name: Uutuudet-arkisto 2019
-              items:
-                - name: 27. helmikuuta 2019
-                  href: whats-new-talent-feb-27.md
-                - name: 14. helmikuuta 2019
-                  href: whats-new-talent-feb14.md
-                - name: 7. helmikuuta 2019
-                  href: whats-new-talent-february-7.md
-                - name: 31. tammikuuta 2019
-                  href: whats-new-talent-january-29.md
-                - name: 23. tammikuuta 2019
-                  href: whats-new-talent-january-23.md
-                - name: 17. tammikuuta 2019
-                  href: whats-new-talent-january-17.md
-                - name: 11. tammikuuta 2019
-                  href: whats-new-talent-january-11.md
-            - name: Uutuudet-arkisto 2018
-              items:
-                - name: 14. joulukuuta 2018
-                  href: whats-new-talent-december-14.md
-                - name: 6. joulukuuta 2018
-                  href: whats-new-talent-december-6.md
-                - name: 27. marraskuuta 2018
-                  href: whats-new-talent-november-27.md
-                - name: 15. marraskuuta 2018
-                  href: whats-new-talent-november-15.md
-                - name: 31. lokakuuta 2018
-                  href: whats-new-talent-october-31.md
-                - name: 19. lokakuuta 2018
-                  href: whats-new-talent-october-19.md
-                - name: 15. lokakuuta 2018
-                  href: whats-new-talent-october-11.md
-                - name: 8. lokakuuta 2018
-                  href: whats-new-talent-october-8.md
-                - name: 1. lokakuuta 2018
-                  href: whats-new-talent-october-01.md
-                - name: 24. syyskuuta 2018
-                  href: whats-new-talent-september-24.md
-                - name: 17. syyskuuta 2018
-                  href: whats-new-talent-september-17-2018.md
-                - name: 10. syyskuuta 2018
-                  href: whats-new-talent-september-10.md
-                - name: Elokuu 2018
-                  href: whats-new-talent-august2018.md
-                - name: Heinäkuu 2018
-                  href: whats-new-talent-july2018.md
-        - name: Järjestelmävaatimukset ja päivityskäytäntö
-          href: talent-versions-update-policy.md
-        - name: Talentin valmistelu
-          href: provisioning-talent.md
-        - name: Talent-ympäristöjen poistaminen
-          href: remove-talent-environment.md
-        - name: Onboard-sovelluksen valmistelu
-          href: modular-app-tech-faq.md
-        - name: PowerApps-sovellusten upottaminen
-          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Core HR ja Common Data Service
-          href: CoreHREntities.md
-        - name: Esikatseluominaisuuksien käyttäminen
-          href: access-preview-feature.md
-        - name: Talent-tuen saaminen
-          href: talent-support.md
-    - name: 'Työvoiman järjestäminen osastojen, töiden ja toimien avulla'
-      href: departments-jobs-positions.md
-      items:
-        - name: Työn komponenttien määrittäminen
-          href: create-job.md
-        - name: Osastojen luominen ja sisällyttäminen osastohierarkiaan
-          href: create-department-add-department-hierarchy.md
-        - name: Yritysten välisten henkilöstöhallinnon parametrien määrittäminen
-          href: set-up-hr-parameters-across-legal-entities.md
-        - name: Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen
-          href: set-up-company-specific-hr-parameters.md
-        - name: Henkilöstötoiminnot – usein kysytyt kysymykset
-          href: personnel-actions-faq.md
-        - name: Liiketoimintaprosessien virallistaminen
-          href: formalize-business-processes.md
-        - name: Työntekijätietojen hallinta työnkulkujen avulla
-          href: workflow-manage-employee-information.md
-    - name: Virkavapaan ja poissaolojen hallinta
-      href: leave-absence-overview.md
-      items:
-        - name: Loman ja poissaolon käsitteet
-          href: leave-absence-concepts.md
-        - name: Jaksottaminen tehtyjen työtuntien perustella
-          href: leave-accrue-hours-worked.md
-        - name: Työaikakalenterit
-          href: working-time-calendars.md
-    - name: Henkilöstön palkkaaminen organisaatioon
-      items:
-        - name: Mikä Attractin versio?
-          href: attract-comprehensive-hiring.md
-        - name: Attractin toiminnot ja ominaisuudet
-          href: attract-overview.md
-        - name: Prosessimallin luominen Attractissa
-          href: Process-templates-Attract.md
-        - name: 'Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa'
-          href: Creating-jobs-Attract.md
-        - name: Työpaikkojen julkaiseminen ulkoisille sivustoille Attractista
-          href: posting-jobs-external.md
-        - name: Hanki osaajia kykypoolien avulla
-          href: attract-talent-pools.md
-        - name: Hankinta LinkedIn Recruiterin avulla
-          href: attract-linked-in-recruiter.md
-        - name: Työhönottoprosessien tehtävät
-          href: activities-attract.md
-        - name: Haastattelujen aikataulutus ja palaute
-          href: interview-scheduling-feedback.md
-        - name: Laajennettavuus
-          href: extensibility-attract.md
-        - name: Attractin urasivuston toiminnot
-          href: career-site.md
-        - name: Tarjoustenhallinnan määrittäminen
-          href: offer-setup.md
-        - name: 'Tarjousten luominen, hyväksyminen ja allekirjoittaminen'
-          href: creating-offers.md
-        - name: Sähköpostimallit
-          href: email-templates.md
-        - name: Käyttöoikeuksien ja roolien hallinta Attractissa
-          href: security-attract.md
-        - name: Järjestelmänvalvojan asetukset Attractissa
-          href: Admin-Settings-Attract.md
-        - name: Älykkäät suositukset
-          href: Intelligent-Recommendations.md
-        - name: Osallistavan perehdyttämiskokemuksen luominen
-          href: create-onboarding-experience.md
-        - name: Hakijan profiilien ja sovellusten lähteiden seuraaminen
-          href: source-tracking.md
-        - name: Analyysiraporttien käyttäminen työhönottoprosessin tietonäkymissä
-          href: analytic-reports.md
-    - name: Työntekijöiden motivointi
-      items:
-        - name: Kompensaatiosuunnitelmat
-          href: compensation-plans.md
-        - name: Kiinteiden kompensaatiosuunnitelmien luominen
-          href: create-fixed-compensation-plans.md
-        - name: Muuttuvien kompensaatiosuunnitelmien luominen
-          href: create-variable-compensation-plans.md
-        - name: Kompensaation käsittely
-          href: process-compensation.md
-        - name: Työn komponenttien määrittäminen
-          href: create-job.md
-    - name: Työntekijöiden kehittäminen ja kouluttaminen
-      items:
-        - name: Työsuoritusten hallinta
-          href: performance-management-overview.md
-        - name: Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen
-          href: skills.md
-        - name: Koulutuskurssien määrittäminen
-          href: courses.md
-    - name: Etuohjelman määrittäminen ja hallinta
-      items:
-        - name: Etuohjelman määrittäminen ja hallinta
-          href: manage-benefit-program.md
-        - name: Etuuskelpoisuuden käytännöt
-          href: benefit-eligibility-policies.md
-        - name: Affordable Care -lain (ACA) mukaisten raporttien luominen
-          href: generate-aca-reports.md
-        - name: Työntekijöille lainattujen nimikkeiden hallinta
-          href: loan-items.md
-    - name: Kyselylomakkeet
-      href: questionnaires.md
-      items:
-        - name: Kyselylomakkeiden suunnitteleminen
-          href: design-questionnaires.md
-        - name: Kyselylomakkeiden jakelu ja aikataulutus
-          href: distribute-questionnaires.md
-        - name: Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen
-          href: evaluate-questionnaire-results.md
-    - name: Työturvallisuus ja vaatimustenmukaisuus (Yhdysvallat)
-      items:
-        - name: Henkilötietopyyntöön vastaaminen Talentissa
-          href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: I-9-lomakkeen työsuhdetarkistukset
-          href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: ADA-lain noudattaminen
-          href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Äly
-      items:
-        - name: Sisällytetty Power BI työtiloissa
-          href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Mobiilisovellus
-      items:
-        - name: Mobiilityötilat
-          items:
-            - name: Yrityksen hakemiston mobiilityötila
-              href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Oman ryhmän mobiilityötila
-              href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Mobiilityötilojen julkaiseminen
-          href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Integrointi
-      items:
-        - name: Integroi Dynamics 365 for Finance and Operationsiin
-          href: talent-financeandoperations-integration.md
-        - name: Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen
-          href: configure-payroll-integration.md
-        - name: Ohje tietojen integrointiin Dynamics 365 for Talentille
-          href: data-integration.md
-        - name: Integroinnin usein kysytyt kysymykset
-          href: talent-fo-integration.md
-        - name: Tietojen toistuva vienti Azure Logic Apps -ratkaisun avulla
-          href: tutorial-integration-recurring-export.md
-    - name: Laajennettavuus
-      items:
-        - name: Laajenna Talent käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä
-          href: extensibility-examples.md
-        - name: Työhönoton tietojen muutosten seuraaminen
-          href: process-auditing.md
-        - name: Attractin laajennettavuus
-          href: extensibility-attract.md
-        - name: 'Core HR:n mukautetut kentät'
-          href: corehr-custom-fields.md
-    - name: Office-integrointi
-      items:
-        - name: Office-integroinnin opetusohjelma
-          href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Yksikkötietojen päivittäminen Excelissä
-          href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Avaa Excelissä -kokemusten luominen
-          href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Office-integroinnin vianmääritys
-          href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Organisaation hallinto
-      items:
-        - name: Numerosarjat
-          href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Yksittäisten numerosarjojen määrittäminen
-              href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Numerosarjojen määrittäminen ohjatulla toiminnolla
-              href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Organisaatiot ja organisaatiohierarkiat
-          href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Organisaatiohierarkian suunnitteleminen
-              href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Organisaatiohierarkian luominen
-              href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Luo oikeushenkilö
-              href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Luo toimintayksikkö
-              href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Yleinen osoitekirja
-          href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Yleisen osoitekirjan ja muiden osoitekirjojen suunnitteleminen
-              href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Yleisen osoitekirjan määrittäminen
-              href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Osoitekirjat – usein kysytyt kysymykset
-              href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Työnkulku
-          href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Työnkulun elementit
-              href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Toiminnot hyväksyntäprosessien työnkulussa
-              href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Työnkulkujen luominen
-              href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-              items:
-                - name: Työnkulkuominaisuuksien määrittäminen
-                  href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Manuaalisten tehtävien määrittäminen
-                  href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Automaattisten tehtävien määrittäminen
-                  href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Hyväksyntäprosessien määrittäminen
-                  href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Hyväksyntävaiheiden määrittäminen
-                  href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Manuaalisten päätösten määrittäminen
-                  href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Ehdollisten päätösten määrittäminen
-                  href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Rinnakkaisten tehtävien määrittäminen
-                  href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Rinnakkaishaarojen määrittäminen
-                  href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Rivinimikkeen työnkulkujen määrittäminen
-                  href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Sanoman käsittelyn erätyön asetusten määrittäminen
-              href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Työnkulun työnimikkeiden delegointi
-              href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Työnkulkuhistorian tarkasteleminen
-              href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Työnkulkuun liittyvien sähköpostiviestien vastaanoton salliminen käyttäjille
-              href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Hälytykset
-          href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: Hälytyssääntöjen luominen
-              href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Hälytysten eräkäsittely
-              href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Palvelupyyntöjen hallinta
-          href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/talent/toc.json
-          items:
-            - name: 'Palvelupyynnön käyttöoikeuksien, prosessien ja luokkien suunnitteleminen'
-              href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Asiakirjanhallinnan määrittäminen
-          href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Sähköpostiviestin määrittäminen ja lähettäminen
-          href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Päivämäärä- ja aikatiedot sekä aikavyöhykkeet
-          href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Henkilöstöhallinnon tehtävät
-      items:
-        - name: Merkintöjen lisääminen työsuorituksen kirjauskansioon ja kehujen lähettäminen
-          href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Tavoitteen luominen
-          href: ../fin-and-ops/hr/tasks/create-goal.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Luo suorituskykyarvio
-          href: ../fin-and-ops/hr/tasks/create-performance-review.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Talentin vianmääritys
-      items:
-        - name: Analyysiraportteja ei päivitetä
-          href: analytic-reports-not-updated.md
-        - name: PowerApps-hallintakeskuksessa ei voi luoda ympäristöä
-          href: create-envi-powerapps-admin-ctr.md
-        - name: Talent-asiakasohjelma katkaisee yhteyden
-          href: client-disconnects.md
-        - name: Tekstin katkaisun välttäminen toimihierarkiassa ja Visio-viennissä
-          href: avoid-text-truncation-position-hierarchy-visio.md
-        - name: Kompensaatioprosessin suorittaminen
-          href: run-compensation-process.md
-        - name: 'Tehtäväoppaiden tallentaminen LCS:ään sekä niiden toistaminen'
-          href: save-play-task-guides-LCS.md
-        - name: Yksityisten osoitteiden käyttöoikeudet käyttöoikeusroolin mukaan
-          href: security-roles-addresses.md
-        - name: Talent ei näy Microsoft Dynamics -sovellusten yhteydessä (Common Data Service 1.0)
-          href: talent-not-in-home-CDS.md
-        - name: 'Käyttäjä voi käyttää Core HR -sovellusta, mutta ei Onboard- tai Attract-sovellusta'
-          href: user-access-core-hr.md
-        - name: Talentin raportointiasetukset
-          href: talent-reporting-options.md
-        - name: Integroinnin usein kysytyt kysymykset
-          href: talent-FO-integration.md
-        - name: Azure Active Directory -käyttäjiä ei löydy People Pickerissä
-          href: people-picker-user-not-found.md
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="TOC.yml" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>TOC.8820d6.dea47d376e4da04c15c94a8207856ec23522f4a7.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>dea47d376e4da04c15c94a8207856ec23522f4a7</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>7e223ddd04184fe5a9861be1405fcc0eb8dd166c</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>06/04/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\talent\TOC.yml</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101">
+          <source>Dynamics 365 for Talent</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Dynamics 365 for Talent</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102">
+          <source>Get started</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Aloittaminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Get started with Talent</source><target logoport:matchpercent="80" state="translated" state-qualifier="fuzzy-match">Talentin käytön aloittaminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>What's new or changed in Talent</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Talentin uudet ja muuttuneet ominaisuudet</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>May 28, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">28. toukokuuta 2019</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>May 21, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">21. toukokuuta 2019</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>May 13, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">13. toukokuuta 2019</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>May 6, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">6. toukokuuta 2019</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>April 30, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">30. huhtikuuta 2019</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>April 25, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">25. huhtikuuta 2019</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>April 16, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">16. huhtikuuta 2019</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>April 9, 2019</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">9. huhtikuuta 2019</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>April 2, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2. huhtikuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>March 26, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">26. maaliskuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>March 20, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">20. maaliskuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>March 14, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">14. maaliskuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>March 5, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5. maaliskuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>What's new archives 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uutuudet-arkisto 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>February 27, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">27. helmikuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>February 14, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">14. helmikuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>February 7, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7. helmikuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>January 31, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">31. tammikuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>January 23, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">23. tammikuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>January 17, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">17. tammikuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>January 11, 2019</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">11. tammikuuta 2019</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>What's new archives 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uutuudet-arkisto 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>December 14, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">14. joulukuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>December 6, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6. joulukuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>November 27, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">27. marraskuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>November 15, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">15. marraskuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>October 31, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">31. lokakuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>October 19, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">19. lokakuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>October 15, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">15. lokakuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>October 8, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8. lokakuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>October 1, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1. lokakuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>September 24, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">24. syyskuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>September 17, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">17. syyskuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>September 10, 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10. syyskuuta 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>August 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elokuu 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>July 2018</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Heinäkuu 2018</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>System requirements and update policy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Järjestelmävaatimukset ja päivityskäytäntö</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Provision Talent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talentin valmistelu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Remove Talent environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talent-ympäristöjen poistaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Provisioning for the Onboard app</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Onboard-sovelluksen valmistelu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Embed PowerApps apps</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">PowerApps-sovellusten upottaminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Core HR and Common Data Service</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Core HR ja Common Data Service</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Access preview features</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Esikatseluominaisuuksien käyttäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Get support for Talent</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Talent-tuen saaminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Staff your organization with Attract</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Henkilöstön palkkaaminen organisaatioon Attractin avulla</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Which version of Attract?</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Mikä Attractin versio?</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Attract features and capabilities</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Attractin toiminnot ja ominaisuudet</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Create a process template in Attract</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prosessimallin luominen Attractissa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Create, approve, and post jobs in Attract</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Post jobs to external career sites from Attract</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Työpaikkojen julkaiseminen ulkoisille urasivustoille Attractista</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Source candidates by using talent pools</source><target logoport:matchpercent="80" state="translated" state-qualifier="fuzzy-match">Hanki osaajia kykypoolien avulla</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Sourcing with LinkedIn Recruiter</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Hankinta LinkedIn Recruiterin avulla</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Activities in the hiring processes</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Työhönottoprosessien tehtävät</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Interview scheduling and feedback</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Haastattelujen aikataulutus ja palaute</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Extensibility in Attract</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Attractin laajennettavuus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Career site functionality in Attract</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Attractin urasivuston toiminnot</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Set up offer management</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Tarjoustenhallinnan määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Create, approve, and sign offers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tarjousten luominen, hyväksyminen ja allekirjoittaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Email templates</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sähköpostimallit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Security and role management in Attract</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttöoikeuksien ja roolien hallinta Attractissa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Admin settings in Attract</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Järjestelmänvalvojan asetukset Attractissa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Intelligent recommendations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Älykkäät suositukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Create an engaging onboarding experience</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osallistavan perehdyttämiskokemuksen luominen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Track sources for candidate profiles and applications</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Hakijan profiilien ja sovellusten lähteiden seuraaminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Use analytic reports for hiring process insights</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Analyysiraporttien käyttäminen työhönottoprosessin tietonäkymissä</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Manage your workforce with Core HR</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Työvoiman hallinta Core HR:n avulla</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Organize your workforce</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Työvoiman järjestäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Organize your workforce by using departments, jobs, and positions</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Työvoiman järjestäminen osastojen, töiden ja toimien avulla</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Set up the components of a job</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työn komponenttien määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Create departments and include them in the department hierarchy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osastojen luominen ja sisällyttäminen osastohierarkiaan</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Set up HR parameters across legal entities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yritysten välisten henkilöstöhallinnon parametrien määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Set up company-specific HR parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Personnel actions FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Henkilöstötoiminnot – usein kysytyt kysymykset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Formalize business processes</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Liiketoimintaprosessien virallistaminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Use workflows to manage employee information</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Työntekijätietojen hallinta työnkulkujen avulla</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Set up number sequences</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Numerosarjojen määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Number sequence overview</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Numerosarjan yleiskatsaus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Set up number sequences on an individual basis</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Yksittäisten numerosarjojen määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Set up number sequences by using a wizard</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Numerosarjojen määrittäminen ohjatulla toiminnolla</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Configure organizations and organizational hierarchies</source><target logoport:matchpercent="84" state="translated" state-qualifier="fuzzy-match">Organisaatioiden ja organisaatiohierarkioiden määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Organizations overview</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">Organisaatioiden yleiskatsaus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Plan your organizational hierarchy</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Organisaatiohierarkian suunnitteleminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Create an organizational hierarchy</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Organisaatiohierarkian luominen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Create a legal entity</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Yrityksen luominen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Create an operating unit</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Toimintayksikön luominen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Set up a global address book</source><target logoport:matchpercent="70" state="translated" state-qualifier="fuzzy-match">Yleisen osoitekirjan määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Global address book overview</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">Yleisen osoitekirjan yleiskatsaus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>Plan for the global address book and others</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Yleisen osoitekirjan ja muiden osoitekirjojen suunnitteleminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Configure the global address book</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Yleisen osoitekirjan määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Address books FAQ</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Osoitekirjat – usein kysytyt kysymykset</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Configure workflows</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match">Työnkulun määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Workflow overview</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Työnkulun yleiskatsaus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Workflow elements</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Työnkulun elementit</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Actions in workflow approval processes</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Toiminnot hyväksyntäprosessien työnkulussa</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Create workflows</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työnkulkujen luominen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Configure workflow properties</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työnkulkuominaisuuksien määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Configure manual tasks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Manuaalisten tehtävien määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Configure automated tasks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Automaattisten tehtävien määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Configure approval processes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hyväksyntäprosessien määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Configure approval steps</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hyväksyntävaiheiden määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Configure manual decisions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Manuaalisten päätösten määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Configure conditional decisions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehdollisten päätösten määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Configure parallel activities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rinnakkaisten tehtävien määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Configure parallel branches</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rinnakkaishaarojen määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Configure line-item workflows</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rivinimikkeen työnkulkujen määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Configure the message processing batch job</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sanoman käsittelyn erätyön asetusten määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Delegate work items in a workflow</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työnkulun työnimikkeiden delegointi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>View workflow history</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Työnkulkuhistorian tarkasteleminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Enable users to receive workflow-related email messages</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Työnkulkuun liittyvien sähköpostiviestien vastaanoton salliminen käyttäjille</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Set up alerts</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Hälytysten määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Alerts overview</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Hälytysten yleiskuvaus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Create alert rules</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Hälytyssääntöjen luominen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>Batch processing of alerts</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Hälytysten eräkäsittely</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Manage cases</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Palvelupyyntöjen hallinta</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Case management overview</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Palvelupyynnön hallinnan yleiskatsaus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Plan case security, processes, and categories</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Palvelupyynnön käyttöoikeuksien, prosessien ja luokkien suunnitteleminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Configure document management</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Asiakirjanhallinnan määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Configure and send email</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Sähköpostiviestin määrittäminen ja lähettäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Date/time data and time zones</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Päivämäärä- ja aikatiedot sekä aikavyöhykkeet</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Set up leave and absence</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Loman ja poissaolon määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Manage leave and absence</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Virkavapaan ja poissaolojen hallinta</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Leave and absence concepts</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Loman ja poissaolon käsitteet</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Accrue time off based on hours worked</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Jaksottaminen tehtyjen työtuntien perustella</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Working time calendars</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Työaikakalenterit</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Set up compensation plans</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match">Kompensaatiosuunnitelmien määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Compensation plans overview</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">Kompensaatiosuunnitelmien yleiskuvaus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Create fixed compensation plans</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Kiinteiden kompensaatiosuunnitelmien luominen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Create variable compensation plans</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Muuttuvien kompensaatiosuunnitelmien luominen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Process compensation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompensaation käsittely</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Set up the components of a job</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työn komponenttien määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Develop and train employees</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työntekijöiden kehittäminen ja kouluttaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Performance management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työsuoritusten hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Align workforce skills with business needs</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>Set up training courses</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Koulutuskurssien määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Add to your performance journal and send praise to someone</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Merkintöjen lisääminen työsuorituksen kirjauskansioon ja kehujen lähettäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>Create a goal</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Tavoitteen luominen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Create a performance review</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Suorituskykyarvion luominen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Define and manage a benefits program</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Etuohjelman määrittäminen ja hallinta</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Define and manage a benefits program</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited">Etuohjelman määrittäminen ja hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>Benefit eligibility policies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etuuskelpoisuuden käytännöt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Generate Affordable Care Act (ACA) reports</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Affordable Care -lain (ACA) mukaisten raporttien luominen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Manage items lent to workers</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Työntekijöille lainattujen nimikkeiden hallinta</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Evaluate key metrics with questionnaires</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Keskeisten mittareiden arvioiminen kyselylomakkeiden avulla</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Gather information with questionnaires</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match">Tietojen kerääminen kyselylomakkeiden avulla</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Design questionnaires</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Kyselylomakkeiden suunnitteleminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Distribute and schedule questionnaires</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Kyselylomakkeiden jakelu ja aikataulutus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>View and evaluate the results of questionnaires</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Workplace safety and compliance (United States)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työturvallisuus ja vaatimustenmukaisuus (Yhdysvallat)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Respond to a request for personal data in Talent</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Henkilötietopyyntöön vastaaminen Talentissa</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Form I-9 employment verification</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">I-9-lomakkeen työsuhdetarkistukset</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Comply with the ADA</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">ADA-lain noudattaminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Integration</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Integrointi</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Integrate with Dynamics 365 for Finance and Operations</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">Integrointi Dynamics 365 for Finance and Operations -sovelluksen kanssa</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Configure the payroll integration between Talent and Dayforce</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Data integration guidance for Dynamics 365 for Talent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ohje tietojen integrointiin Dynamics 365 for Talentille</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Integration FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integroinnin usein kysytyt kysymykset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Recurring data export using Azure Logic apps</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tietojen toistuva vienti Azure Logic Apps -ratkaisun avulla</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Office integration</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Office-integrointi</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Office integration tutorial</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Office-integroinnin opetusohjelma</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Update entity data in Excel</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Yksikkötietojen päivittäminen Excelissä</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Create Open in Excel experiences</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Avaa Excelissä -kokemusten luominen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Troubleshoot the Office integration</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Office-integroinnin vianmääritys</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Extensibility</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Laajennettavuus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Embedded Power BI in workspaces</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Sisällytetty Power BI työtiloissa</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Extend Talent by using PowerApps and Microsoft Flow - Example scenarios</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Laajenna Talent käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Mobile app</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Mobiilisovellus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Mobile workspaces</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Mobiilityötilat</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Company directory mobile workspace</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Yrityksen hakemiston mobiilityötila</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>My team mobile workspace</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Oman ryhmän mobiilityötila</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Publish mobile workspaces</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Mobiilityötilojen julkaiseminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Track changes in recruiting data</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Työhönoton tietojen muutosten seuraaminen</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Extensibility in Attract</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Attractin laajennettavuus</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Custom fields in Core HR</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Core HR:n mukautetut kentät</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Troubleshoot Talent</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Talentin vianmääritys</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>Analytic reports aren't updated</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Analyysiraportteja ei päivitetä</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Can't create an environment in the PowerApps Admin center</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">PowerApps-hallintakeskuksessa ei voi luoda ympäristöä</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Talent client disconnects</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talent-asiakasohjelma katkaisee yhteyden</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Avoid text truncation on the position hierarchy and export to Visio</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tekstin katkaisun välttäminen toimihierarkiassa ja Visio-viennissä</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Run the compensation process</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompensaatioprosessin suorittaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Save task guides to LCS and replay them</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tehtäväoppaiden tallentaminen LCS:ään sekä niiden toistaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Access to private addresses by security role</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yksityisten osoitteiden käyttöoikeudet käyttöoikeusroolin mukaan</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talent ei näy Microsoft Dynamics -sovellusten yhteydessä (Common Data Service 1.0)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>User can access Core HR but not the Onboard or Attract app</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjä voi käyttää Core HR -sovellusta, mutta ei Onboard- tai Attract-sovellusta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>Reporting options in Talent</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talentin raportointiasetukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>Integration FAQ</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integroinnin usein kysytyt kysymykset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Azure Active Directory users not found in People Picker</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure Active Directory -käyttäjiä ei löydy People Pickerissä</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,147 +1,210 @@
----
-title: Ostoreskontran aloitussivu
-description: Tässä aiheessa on yleiskuvaus ostoreskontrasta.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 02/15/2019
-ms.topic: index-page
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: VendInvoiceWorkspace
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 21901
-ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
-ms.search.region: Global
-ms.author: shylaw
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 39187cf900624c5fbc7e811f0ee9632355688ba4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1507470"
----
-# <a name="accounts-payable-home-page"></a><span data-ttu-id="6d58b-103">Ostoreskontran aloitussivu</span><span class="sxs-lookup"><span data-stu-id="6d58b-103">Accounts payable home page</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="6d58b-104">Tässä aiheessa on yleiskuvaus ostoreskontrasta.</span><span class="sxs-lookup"><span data-stu-id="6d58b-104">This topic provides an overview of Accounts payable.</span></span> 
-
-<span data-ttu-id="6d58b-105">Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta.</span><span class="sxs-lookup"><span data-stu-id="6d58b-105">You can enter vendor invoices manually or receive them electronically through a data entity.</span></span> <span data-ttu-id="6d58b-106">Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="6d58b-106">After the invoices are entered or received, you can review and approve the invoices by using an invoice approval journal or the **Vendor invoice** page.</span></span> <span data-ttu-id="6d58b-107">Voit automatisoida tarkistusprosessin laskun täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla, jolloin tietyt ehdot täyttävät laskut hyväksytään automaattisesti ja muut laskut merkitään valtuutetun käyttäjän tarkistettavaksi.</span><span class="sxs-lookup"><span data-stu-id="6d58b-107">You can use invoice matching, vendor invoice policies, and workflow to automate the review process so that invoices that meet certain criteria are automatically approved, and the remaining invoices are flagged for review by an authorized user.</span></span>
-
-<span data-ttu-id="6d58b-108">**Liiketoimintaprosessit**</span><span class="sxs-lookup"><span data-stu-id="6d58b-108">**Business processes**</span></span>
-
-<span data-ttu-id="6d58b-109">[![Liiketoimintaprosessi](./media/AP-process.PNG)](./media/AP-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="6d58b-109">[![Business process](./media/AP-process.PNG)](./media/AP-process.PNG)</span></span>
-
-## <a name="set-up-accounts-payable"></a><span data-ttu-id="6d58b-110">Ostoreskontran asetukset</span><span class="sxs-lookup"><span data-stu-id="6d58b-110">Set up Accounts payable</span></span>
-
-<span data-ttu-id="6d58b-111">Määritä toimittajaryhmiä, toimittajia, kirjausprofiileja, erilaisia maksuvaihtoehtoja sekä toimittajia koskevia parametreja, hintoja, toimituksia ja kohteita, velkakirjoja ja muun tyyppisiä ostoreskontran tietoja.</span><span class="sxs-lookup"><span data-stu-id="6d58b-111">Set up vendor groups, vendors, posting profiles, various payment options, and parameters regarding vendors, charges, deliveries and destinations, promissory notes, and other types of Accounts payable information.</span></span> 
-
-[<span data-ttu-id="6d58b-112">Ostoreskontran määrittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-112">Configure Accounts payable</span></span>](accounts-payable-overview.md)
-
-[<span data-ttu-id="6d58b-113">Toimittajan laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit</span><span class="sxs-lookup"><span data-stu-id="6d58b-113">Accounting distributions and subledger journal entries for vendor invoices</span></span>](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
-
-[<span data-ttu-id="6d58b-114">Ulkomaanvaluutan uudelleenarvostus osto- ja myyntireskontrassa</span><span class="sxs-lookup"><span data-stu-id="6d58b-114">Foreign currency revaluation for Accounts payable and Accounts receivable</span></span>](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
-
-## <a name="configure-vendor-invoices"></a><span data-ttu-id="6d58b-115">Toimittajan laskujen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-115">Configure vendor invoices</span></span>
-
-<span data-ttu-id="6d58b-116">Ostoreskontran avulla voit tarkastella laskuja ja toimittajille suoritettavia maksuja.</span><span class="sxs-lookup"><span data-stu-id="6d58b-116">Use Accounts payable to track invoices and outgoing expenditures to vendors.</span></span>
-
-[<span data-ttu-id="6d58b-117">Ostoreskontran laskujen täsmäytys</span><span class="sxs-lookup"><span data-stu-id="6d58b-117">Accounts payable invoice matching</span></span>](accounts-payable-invoice-matching.md)
-
-[<span data-ttu-id="6d58b-118">Toimittajan kirjausprofiilit</span><span class="sxs-lookup"><span data-stu-id="6d58b-118">Vendor posting profiles</span></span>](vendor-posting-profiles.md)
-
-[<span data-ttu-id="6d58b-119">Ostoreskontran laskujen täsmäytyksen vahvistuksen asetukset</span><span class="sxs-lookup"><span data-stu-id="6d58b-119">Set up accounts payable invoice matching validation</span></span>](tasks/set-up-accounts-payable-invoice-matching-validation.md)
-
-[<span data-ttu-id="6d58b-120">Kolmisuuntaiset vastaavuuskäytännöt</span><span class="sxs-lookup"><span data-stu-id="6d58b-120">Three-way matching policies</span></span>](three-way-matching-policies.md)
-
-[<span data-ttu-id="6d58b-121">Laskujen täsmäytys ja konsernin sisäiset ostotilaukset</span><span class="sxs-lookup"><span data-stu-id="6d58b-121">Invoice matching and intercompany purchase orders</span></span>](invoice-matching-intercompany-purchase-orders.md)
-
-[<span data-ttu-id="6d58b-122">Ristiriitojen selvittäminen laskusummien täsmäytyksen aikana</span><span class="sxs-lookup"><span data-stu-id="6d58b-122">Resolve discrepancies during invoice totals matching</span></span>](resolve-invoice-totals-invoice-matching-discrepancies.md)
-
-[<span data-ttu-id="6d58b-123">Toimittajan laskujen ja laskujen hyväksynnän kirjauskansioiden oletusvastatilit</span><span class="sxs-lookup"><span data-stu-id="6d58b-123">Default offset accounts for vendor invoice journals and invoice approval journals</span></span>](default-offset-accounts-vendor-invoice-journals.md)
-
-[<span data-ttu-id="6d58b-124">Mobiililaskujen hyväksynnät</span><span class="sxs-lookup"><span data-stu-id="6d58b-124">Mobile invoice approvals</span></span>](mobile-invoice-approvals.md)
-
-[<span data-ttu-id="6d58b-125">Toimittajayhteistyön laskutustyötila</span><span class="sxs-lookup"><span data-stu-id="6d58b-125">Vendor collaboration invoicing workspace</span></span>](vendor-portal-invoicing-workspace.md)
-
-[<span data-ttu-id="6d58b-126">Toimittajan laskuautomaatio</span><span class="sxs-lookup"><span data-stu-id="6d58b-126">Vendor invoice automation</span></span>](vendor-invoice-automation.md)
-
-## <a name="configure-vendor-payments"></a><span data-ttu-id="6d58b-127">Toimittajan maksujen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-127">Configure vendor payments</span></span> 
-
-<span data-ttu-id="6d58b-128">Määritä järjestelmässä määritetty maksutyyppi, kuten sekki, sähköinen maksu tai velkakirja, mille tahansa käyttäjän määrittämälle maksutavalle.</span><span class="sxs-lookup"><span data-stu-id="6d58b-128">Assign a system-defined payment type, such as check, electronic payment, or promissory note, to any user-defined method of payment.</span></span> <span data-ttu-id="6d58b-129">Maksutyypit ovat valinnaisia, mutta niiden avulla on helppo tehdä sähköisten maksujen oikeellisuustarkistus ja määrittää nopeasti, mitä maksutyyppiä maksu käyttää.</span><span class="sxs-lookup"><span data-stu-id="6d58b-129">Payment types are optional, but they are useful when you validate electronic payments and want to be able to quickly determine which payment type a payment uses.</span></span> 
-
-[<span data-ttu-id="6d58b-130">Toimittajan maksujen työtila</span><span class="sxs-lookup"><span data-stu-id="6d58b-130">Vendor payments workspace</span></span>](vendor-payments-workspace.md)
-
-[<span data-ttu-id="6d58b-131">Toimittajan maksulisien määritys</span><span class="sxs-lookup"><span data-stu-id="6d58b-131">Define vendor payment fees</span></span>](tasks/define-vendor-payment-fees.md)
-
-[<span data-ttu-id="6d58b-132">Toimittajan maksuehtojen määritys</span><span class="sxs-lookup"><span data-stu-id="6d58b-132">Define vendor payment terms</span></span>](tasks/define-vendor-payment-terms.md)
-
-[<span data-ttu-id="6d58b-133">Positive pay -yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="6d58b-133">Positive pay overview</span></span>](positive-pay-overview.md)
-
-[<span data-ttu-id="6d58b-134">Positive pay -tiedostojen asetukset ja luonti</span><span class="sxs-lookup"><span data-stu-id="6d58b-134">Set up and generate positive pay files</span></span>](set-up-generate-positive-pay-files.md)
-
-[<span data-ttu-id="6d58b-135">Toimittajamaksujen luominen maksuehdotuksen avulla</span><span class="sxs-lookup"><span data-stu-id="6d58b-135">Create vendor payments by using a payment proposal</span></span>](create-vendor-payments-payment-proposal.md)
-
-[<span data-ttu-id="6d58b-136">Toimittajan maksut osasummalle</span><span class="sxs-lookup"><span data-stu-id="6d58b-136">Vendor payments for a partial amount</span></span>](vendor-payments-partial-amount.md)
-
-[<span data-ttu-id="6d58b-137">Alennuksen käyttäminen, kun alennuksen summa on suurempi kuin toimittajan maksulle laskettu alennus</span><span class="sxs-lookup"><span data-stu-id="6d58b-137">Take a discount that is more than the calculated discount for a vendor payment</span></span>](take-discount-more-calculated-discount-vendor-payment.md)
-
-[<span data-ttu-id="6d58b-138">Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella</span><span class="sxs-lookup"><span data-stu-id="6d58b-138">Take a cash discount outside the cash discount period</span></span>](take-cash-discount-outside-cash-discount-timeframe.md)
-
-[<span data-ttu-id="6d58b-139">Toimittajan sekkien sähköinen raportointi</span><span class="sxs-lookup"><span data-stu-id="6d58b-139">Electronic reporting for vendor checks</span></span>](electronic-reporting-sample-vendor-checks.md)
-
-[<span data-ttu-id="6d58b-140">Käänteinen toimittajamaksu</span><span class="sxs-lookup"><span data-stu-id="6d58b-140">Reverse a vendor payment</span></span>](reverse-vendor-payment.md)
-
-[<span data-ttu-id="6d58b-141">Ennakkomaksulaskut ja ennakkomaksujen yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="6d58b-141">Prepayment invoices and prepayments overview</span></span>](prepayments-invoices-vs-prepayments.md)
-
-[<span data-ttu-id="6d58b-142">Ostoreskontran keskitetyt maksut</span><span class="sxs-lookup"><span data-stu-id="6d58b-142">Centralized payments for Accounts payable</span></span>](centralized-payments-accounts-payable.md)
-
-## <a name="settlements"></a><span data-ttu-id="6d58b-143">Tilitykset</span><span class="sxs-lookup"><span data-stu-id="6d58b-143">Settlements</span></span>
-
-<span data-ttu-id="6d58b-144">Seuraavissa ohjeaiheissa on tietoa tilityksistä.</span><span class="sxs-lookup"><span data-stu-id="6d58b-144">The following topics provide information about settlements.</span></span> <span data-ttu-id="6d58b-145">Tilitys tarkoittaa maksujen tilittämistä laskuihin.</span><span class="sxs-lookup"><span data-stu-id="6d58b-145">Settlement is the process of settling payments with invoices.</span></span> 
-
-[<span data-ttu-id="6d58b-146">Tilityksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-146">Configure settlement</span></span>](../cash-bank-management/configure-settlement.md)
-
-[<span data-ttu-id="6d58b-147">Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää</span><span class="sxs-lookup"><span data-stu-id="6d58b-147">Settle a partial vendor payment before the discount date</span></span>](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
-
-[<span data-ttu-id="6d58b-148">Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-148">Settle a partial vendor payment that has discounts on vendor credit notes</span></span>](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
-
-[<span data-ttu-id="6d58b-149">Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen</span><span class="sxs-lookup"><span data-stu-id="6d58b-149">Settle a partial vendor payment that has multiple discount periods</span></span>](settle-partial-vendor-payment-multiple-discount-periods.md)
-
-[<span data-ttu-id="6d58b-150">Toimittajan osamaksun tai viimeisen maksun tilittäminen ennen alennusta</span><span class="sxs-lookup"><span data-stu-id="6d58b-150">Settle a partial vendor payment or final payment before discount</span></span>](settle-partial-vendor-payment-or-final-payment-before-discount.md)
-
-[<span data-ttu-id="6d58b-151">Yksi tosite useille asiakas- tai toimittajatietueille</span><span class="sxs-lookup"><span data-stu-id="6d58b-151">Single voucher with multiple customer or vendor records</span></span>](single-voucher-multiple-customer-vendor-records.md)
-
-
-
-### <a name="additional-resources"></a><span data-ttu-id="6d58b-152">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="6d58b-152">Additional resources</span></span>
-
-#### <a name="whats-new-and-in-development"></a><span data-ttu-id="6d58b-153">Uudet ja kehitteillä olevat toiminnot</span><span class="sxs-lookup"><span data-stu-id="6d58b-153">What's new and in development</span></span>
-
-<span data-ttu-id="6d58b-154">Siirry [Microsoft Dynamics 365:n julkaisutietoihin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä uudet suunnitteilla olevat toiminnot.</span><span class="sxs-lookup"><span data-stu-id="6d58b-154">Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned.</span></span> 
-
-#### <a name="blogs"></a><span data-ttu-id="6d58b-155">Blogit</span><span class="sxs-lookup"><span data-stu-id="6d58b-155">Blogs</span></span>
-
-<span data-ttu-id="6d58b-156">[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.</span><span class="sxs-lookup"><span data-stu-id="6d58b-156">You can find opinions, news, and other information about Accounts payable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
-
-<span data-ttu-id="6d58b-157">[Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.</span><span class="sxs-lookup"><span data-stu-id="6d58b-157">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
-
-#### <a name="community-blogs"></a><span data-ttu-id="6d58b-158">Yhteisöblogit</span><span class="sxs-lookup"><span data-stu-id="6d58b-158">Community blogs</span></span>
-
-[<span data-ttu-id="6d58b-159">Ostovelkojen hallinta Dynamics 365 for Finance and Operations -sovelluksessa</span><span class="sxs-lookup"><span data-stu-id="6d58b-159">How to manage payables in Dynamics 365 for Finance and Operations</span></span>](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
-
-#### <a name="task-guides"></a><span data-ttu-id="6d58b-160">Tehtäväoppaat</span><span class="sxs-lookup"><span data-stu-id="6d58b-160">Task guides</span></span>
-<span data-ttu-id="6d58b-161">Finance and Operationsin tehtäväoppaissa on lisäohjeita.</span><span class="sxs-lookup"><span data-stu-id="6d58b-161">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="6d58b-162">Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.</span><span class="sxs-lookup"><span data-stu-id="6d58b-162">To access task guides, click the Help button on any page.</span></span>
-
-#### <a name="videos"></a><span data-ttu-id="6d58b-163">Videot</span><span class="sxs-lookup"><span data-stu-id="6d58b-163">Videos</span></span>
-
-<span data-ttu-id="6d58b-164">Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.</span><span class="sxs-lookup"><span data-stu-id="6d58b-164">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="accounts-payable.md" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>accounts-payable.199fb9.f1acf2bade2bb279a35fdf4689bbbcc49e64101f.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>f1acf2bade2bb279a35fdf4689bbbcc49e64101f</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\accounts-payable\accounts-payable.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Accounts payable home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontran aloitussivu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides an overview of Accounts payable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä aiheessa on yleiskuvaus ostoreskontrasta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Accounts payable home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontran aloitussivu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides an overview of Accounts payable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä aiheessa on yleiskuvaus ostoreskontrasta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>You can enter vendor invoices manually or receive them electronically through a data entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>After the invoices are entered or received, you can review and approve the invoices by using an invoice approval journal or the <bpt id="p1">**</bpt>Vendor invoice<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai <bpt id="p1">**</bpt>Toimittajan lasku<ept id="p1">**</ept> -sivulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>You can use invoice matching, vendor invoice policies, and workflow to automate the review process so that invoices that meet certain criteria are automatically approved, and the remaining invoices are flagged for review by an authorized user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit automatisoida tarkistusprosessin laskun täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla, jolloin tietyt ehdot täyttävät laskut hyväksytään automaattisesti ja muut laskut merkitään valtuutetun käyttäjän tarkistettavaksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source><bpt id="p1">**</bpt>Business processes<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Liiketoimintaprosessit<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Business process<ept id="p1">](./media/AP-process.PNG)](./media/AP-process.PNG)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Liiketoimintaprosessi<ept id="p1">](./media/AP-process.PNG)](./media/AP-process.PNG)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Set up Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontran asetukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Set up vendor groups, vendors, posting profiles, various payment options, and parameters regarding vendors, charges, deliveries and destinations, promissory notes, and other types of Accounts payable information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä toimittajaryhmiä, toimittajia, kirjausprofiileja, erilaisia maksuvaihtoehtoja sekä toimittajia koskevia parametreja, hintoja, toimituksia ja kohteita, velkakirjoja ja muun tyyppisiä ostoreskontran tietoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">[</bpt>Configure Accounts payable<ept id="p1">](accounts-payable-overview.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Ostoreskontran määrittäminen<ept id="p1">](accounts-payable-overview.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source><bpt id="p1">[</bpt>Accounting distributions and subledger journal entries for vendor invoices<ept id="p1">](accounting-distributions-subledger-journal-entries-vendor-invoices.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit<ept id="p1">](accounting-distributions-subledger-journal-entries-vendor-invoices.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">[</bpt>Foreign currency revaluation for Accounts payable and Accounts receivable<ept id="p1">](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Ulkomaanvaluutan uudelleenarvostus osto- ja myyntireskontrassa<ept id="p1">](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Configure vendor invoices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajan laskujen määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Use Accounts payable to track invoices and outgoing expenditures to vendors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontran avulla voit tarkastella laskuja ja toimittajille suoritettavia maksuja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">[</bpt>Accounts payable invoice matching<ept id="p1">](accounts-payable-invoice-matching.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Ostoreskontran laskujen täsmäytys<ept id="p1">](accounts-payable-invoice-matching.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">[</bpt>Vendor posting profiles<ept id="p1">](vendor-posting-profiles.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan kirjausprofiilit<ept id="p1">](vendor-posting-profiles.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">[</bpt>Set up accounts payable invoice matching validation<ept id="p1">](tasks/set-up-accounts-payable-invoice-matching-validation.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Ostoreskontran laskujen täsmäytyksen vahvistuksen asetukset<ept id="p1">](tasks/set-up-accounts-payable-invoice-matching-validation.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">[</bpt>Three-way matching policies<ept id="p1">](three-way-matching-policies.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Kolmisuuntaiset vastaavuuskäytännöt<ept id="p1">](three-way-matching-policies.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source><bpt id="p1">[</bpt>Invoice matching and intercompany purchase orders<ept id="p1">](invoice-matching-intercompany-purchase-orders.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Laskujen täsmäytys ja konsernin sisäiset ostotilaukset<ept id="p1">](invoice-matching-intercompany-purchase-orders.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">[</bpt>Resolve discrepancies during invoice totals matching<ept id="p1">](resolve-invoice-totals-invoice-matching-discrepancies.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Ristiriitojen selvittäminen laskusummien täsmäytyksen aikana<ept id="p1">](resolve-invoice-totals-invoice-matching-discrepancies.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source><bpt id="p1">[</bpt>Default offset accounts for vendor invoice journals and invoice approval journals<ept id="p1">](default-offset-accounts-vendor-invoice-journals.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan laskujen ja laskujen hyväksynnän kirjauskansioiden oletusvastatilit<ept id="p1">](default-offset-accounts-vendor-invoice-journals.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source><bpt id="p1">[</bpt>Mobile invoice approvals<ept id="p1">](mobile-invoice-approvals.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Mobiililaskujen hyväksynnät<ept id="p1">](mobile-invoice-approvals.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source><bpt id="p1">[</bpt>Vendor collaboration invoicing workspace<ept id="p1">](vendor-portal-invoicing-workspace.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajayhteistyön laskutustyötila<ept id="p1">](vendor-portal-invoicing-workspace.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source><bpt id="p1">[</bpt>Vendor invoice automation<ept id="p1">](vendor-invoice-automation.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan laskuautomaatio<ept id="p1">](vendor-invoice-automation.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Configure vendor payments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajan maksujen määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Assign a system-defined payment type, such as check, electronic payment, or promissory note, to any user-defined method of payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä järjestelmässä määritetty maksutyyppi, kuten sekki, sähköinen maksu tai velkakirja, mille tahansa käyttäjän määrittämälle maksutavalle.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Payment types are optional, but they are useful when you validate electronic payments and want to be able to quickly determine which payment type a payment uses.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksutyypit ovat valinnaisia, mutta niiden avulla on helppo tehdä sähköisten maksujen oikeellisuustarkistus ja määrittää nopeasti, mitä maksutyyppiä maksu käyttää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">[</bpt>Vendor payments workspace<ept id="p1">](vendor-payments-workspace.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan maksujen työtila<ept id="p1">](vendor-payments-workspace.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source><bpt id="p1">[</bpt>Define vendor payment fees<ept id="p1">](tasks/define-vendor-payment-fees.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan maksulisien määritys<ept id="p1">](tasks/define-vendor-payment-fees.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">[</bpt>Define vendor payment terms<ept id="p1">](tasks/define-vendor-payment-terms.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan maksuehtojen määritys<ept id="p1">](tasks/define-vendor-payment-terms.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source><bpt id="p1">[</bpt>Positive pay overview<ept id="p1">](positive-pay-overview.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Positive pay -yleiskatsaus<ept id="p1">](positive-pay-overview.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source><bpt id="p1">[</bpt>Set up and generate positive pay files<ept id="p1">](set-up-generate-positive-pay-files.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Positive pay -tiedostojen asetukset ja luonti<ept id="p1">](set-up-generate-positive-pay-files.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source><bpt id="p1">[</bpt>Create vendor payments by using a payment proposal<ept id="p1">](create-vendor-payments-payment-proposal.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajamaksujen luominen maksuehdotuksen avulla<ept id="p1">](create-vendor-payments-payment-proposal.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">[</bpt>Vendor payments for a partial amount<ept id="p1">](vendor-payments-partial-amount.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan maksut osasummalle<ept id="p1">](vendor-payments-partial-amount.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source><bpt id="p1">[</bpt>Take a discount that is more than the calculated discount for a vendor payment<ept id="p1">](take-discount-more-calculated-discount-vendor-payment.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Alennuksen käyttäminen, kun alennuksen summa on suurempi kuin toimittajan maksulle laskettu alennus<ept id="p1">](take-discount-more-calculated-discount-vendor-payment.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source><bpt id="p1">[</bpt>Take a cash discount outside the cash discount period<ept id="p1">](take-cash-discount-outside-cash-discount-timeframe.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella<ept id="p1">](take-cash-discount-outside-cash-discount-timeframe.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">[</bpt>Electronic reporting for vendor checks<ept id="p1">](electronic-reporting-sample-vendor-checks.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan sekkien sähköinen raportointi<ept id="p1">](electronic-reporting-sample-vendor-checks.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source><bpt id="p1">[</bpt>Reverse a vendor payment<ept id="p1">](reverse-vendor-payment.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Käänteinen toimittajamaksu<ept id="p1">](reverse-vendor-payment.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source><bpt id="p1">[</bpt>Prepayment invoices and prepayments overview<ept id="p1">](prepayments-invoices-vs-prepayments.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Ennakkomaksulaskut ja ennakkomaksujen yleiskatsaus<ept id="p1">](prepayments-invoices-vs-prepayments.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source><bpt id="p1">[</bpt>Centralized payments for Accounts payable<ept id="p1">](centralized-payments-accounts-payable.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Ostoreskontran keskitetyt maksut<ept id="p1">](centralized-payments-accounts-payable.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Settlements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilitykset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>The following topics provide information about settlements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavissa ohjeaiheissa on tietoa tilityksistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Settlement is the process of settling payments with invoices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilitys tarkoittaa maksujen tilittämistä laskuihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source><bpt id="p1">[</bpt>Configure settlement<ept id="p1">](../cash-bank-management/configure-settlement.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Tilityksen määrittäminen<ept id="p1">](../cash-bank-management/configure-settlement.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source><bpt id="p1">[</bpt>Settle a partial vendor payment before the discount date<ept id="p1">](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää<ept id="p1">](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source><bpt id="p1">[</bpt>Settle a partial vendor payment that has discounts on vendor credit notes<ept id="p1">](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen<ept id="p1">](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source><bpt id="p1">[</bpt>Settle a partial vendor payment that has multiple discount periods<ept id="p1">](settle-partial-vendor-payment-multiple-discount-periods.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen<ept id="p1">](settle-partial-vendor-payment-multiple-discount-periods.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source><bpt id="p1">[</bpt>Settle a partial vendor payment or final payment before discount<ept id="p1">](settle-partial-vendor-payment-or-final-payment-before-discount.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Toimittajan osamaksun tai viimeisen maksun tilittäminen ennen alennusta<ept id="p1">](settle-partial-vendor-payment-or-final-payment-before-discount.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source><bpt id="p1">[</bpt>Single voucher with multiple customer or vendor records<ept id="p1">](single-voucher-multiple-customer-vendor-records.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Yksi tosite useille asiakas- tai toimittajatietueille<ept id="p1">](single-voucher-multiple-customer-vendor-records.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisäresurssit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>What's new and in development</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uudet ja kehitteillä olevat toiminnot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Go to the <bpt id="p1">[</bpt>Microsoft Dynamics 365 Release Notes<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=2010158)</ept> to see what new features are planned.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry <bpt id="p1">[</bpt>Microsoft Dynamics 365:n julkaisutietoihin<ept id="p1">](https://go.microsoft.com/fwlink/?linkid=2010158)</ept>, kun haluat nähdä uudet suunnitteilla olevat toiminnot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Blogs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Blogit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>You can find opinions, news, and other information about Accounts payable and other solutions on the <bpt id="p1">[</bpt>Microsoft Dynamics 365 blog<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept>and the <bpt id="p2">[</bpt>Microsoft Dynamics 365 Finance and Operations - Financials blog<ept id="p2">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics 365 -blogissa<ept id="p1">](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)</ept> ja <bpt id="p2">[</bpt>Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa<ept id="p2">](https://community.dynamics.com/365/financeandoperations/b/financials)</ept> on ostoreskontraa ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>The <bpt id="p1">[</bpt>Microsoft Dynamics Operations Partner Community Blog<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept> gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Dynamics Operations -kumppaniyhteisön blogista<ept id="p1">](https://community.dynamics.com/partner/b/operationspartnercommunityblog)</ept> Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Community blogs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yhteisöblogit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source><bpt id="p1">[</bpt>How to manage payables in Dynamics 365 for Finance and Operations<ept id="p1">](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Ostovelkojen hallinta Dynamics 365 for Finance and Operations -sovelluksessa<ept id="p1">](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Task guides</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tehtäväoppaat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Additional help is available as task guides inside Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operationsin tehtäväoppaissa on lisäohjeita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>To access task guides, click the Help button on any page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Videos</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Videot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Check out the how-to videos that are now available on the <bpt id="p1">[</bpt>Microsoft Dynamics 365 YouTube Channel<ept id="p1">](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tutustu <bpt id="p1">[</bpt>Microsoft Dynamics 365 YouTube -kanavan<ept id="p1">](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ)</ept> ohjevideoihin.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
