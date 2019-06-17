@@ -1,84 +1,159 @@
----
-title: Taseen talousraportit
-description: Tässä artikkelissa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin.
-author: jcart1106
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: FinanicalReports
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 12274
-ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
-ms.search.region: Global
-ms.author: jcart
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ff778af1bb3af3a10132ab3193ad1cd5daa24e1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567326"
----
-# <a name="balance-sheet-financial-reports"></a>Taseen talousraportit
-
-[!include [banner](../includes/banner.md)]
-
-Tässä artikkelissa kuvataan taseiden oletusraportteja. Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin. 
-
-<a name="default-balance-sheet-reports"></a>Oletustaseraportit
------------------------------
-
-Oletustaseraportteja on kaksi. Osat on pinottu yhteen raporttiin. Osat ovat rinnakkain raportissa.
-
-| Oletusraportti                       | Toiminnot                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Tase – oletus              | Määrittää organisaation vuoden rahoitusaseman näkymän.                                                                 |
-| Tase rinnakkain – oletus | Määrittää organisaation vuoden rahoitusaseman näkymän. Käyttöomaisuus, velat ja osakkeenomistajien oma pääoma ovat rinnakkain. |
-
-## <a name="building-blocks"></a>Rakenneosat
-Taseen talousraporteissa käytetään seuraavia rakenneosia.
-
-| Oletusraportti                       | Rivimääritys                       | Sarakemääritys             |
-|--------------------------------------|--------------------------------------|-------------------------------|
-| Tase - oletusarvo              | Tase - oletusarvo              | Vuoden alusta ja varianssi - oletusarvo    |
-| Tase rinnakkain – oletus | Tase rinnakkain – oletus | Vuoden alusta -sarake - oletusarvo |
-
-### <a name="row-definition"></a>Rivimääritys
-
-Molempien taseraporttien rivimääritykset sisältävät osia kunkin perinteisen taseen osista. Rinnakkainen raportti sisältää sarakkeen vaihdon, jolloin velat ja omistajan oma pääoma näkyvät käyttöomaisuuden vieressä. Päätilin luokan dimensiota käytetään molempien rivimääritysten muodostamisessa. Tämän vuoksi kuka tahansa voi luoda raportteja ilman muutosten tekemistä.
-
-### <a name="column-definition"></a>Sarakemääritys
-
-Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksityiskohtaisia tasoja ja taloushallinnon tietoja.
-
--   **Vuoden alusta ja varianssi – oletussaraketyypit:**
-    -   **DESC** – rivimäärityksen kuvaus
-    -   **FD** – kuluvan vuoden taloushallinnon tiedot vuoden alusta
-    -   **FD** – edellisen vuoden taloushallinnon tiedot vuoden alusta
-    -   **CALC** – varianssi, kun kuluva vuosi vähennetään edellisestä vuodesta
-
-<!-- -->
-
--   **Vuoden alusta -sarake – oletusarvo**
-    -   **DESC** – rivimäärityksen kuvaus
-    -   **FD** – kuluvan vuoden taloushallinnon tiedot vuoden alusta
-
-
-
-<a name="additional-resources"></a>Lisäresurssit
---------
-
-[Talousraportointi](financial-reporting-getting-started.md)
-
-[Raporttien näyttäminen](view-financial-reports.md)
-
-[Dynamicsin talousraportointi -blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="balance-sheet-financial-reports.md" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>balance-sheet-financial-reports.efb624.2d54748daa27011e0222123ee2b9a19b9288734c.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>2d54748daa27011e0222123ee2b9a19b9288734c</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\general-ledger\balance-sheet-financial-reports.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Balance sheet financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taseen talousraportit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This article describes the default reports for balance sheets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä artikkelissa kuvataan taseiden oletusraportteja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>It also describes the building blocks that are associated with these reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Balance sheet financial reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taseen talousraportit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This article describes the default reports for balance sheets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä artikkelissa kuvataan taseiden oletusraportteja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It also describes the building blocks that are associated with these reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siinä myös kuvataan rakenneosat, jotka liittyvät näihin raportteihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Default balance sheet reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletustaseraportit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>There are two default balance sheet reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletustaseraportteja on kaksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>On one report, the sections are stacked.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osat on pinottu yhteen raporttiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>On the other report, the sections are side by side.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osat ovat rinnakkain raportissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Default report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletusraportti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>What it does</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tase – oletus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Provides a view of the organization's financial position for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määrittää organisaation vuoden rahoitusaseman näkymän.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Side by Side Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tase rinnakkain – oletus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Provides a view of the organization's financial position for the year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määrittää organisaation vuoden rahoitusaseman näkymän.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Assets and liability and shareholder’s equity are side by side.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttöomaisuus, velat ja osakkeenomistajien oma pääoma ovat rinnakkain.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Building blocks</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rakenneosat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The balance sheet financial reports use the following building blocks.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taseen talousraporteissa käytetään seuraavia rakenneosia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Default report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletusraportti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rivimääritys</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakemääritys</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Balance Sheet - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tase - oletusarvo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Balance Sheet - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tase - oletusarvo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>YTD and Variance - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vuoden alusta ja varianssi - oletusarvo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Side by Side Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tase rinnakkain – oletus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Side by Side Balance Sheet – Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tase rinnakkain – oletus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Year to Date Column - Default</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vuoden alusta -sarake - oletusarvo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rivimääritys</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>The row definitions for both balance sheet reports contain sections for each part of a traditional balance sheet.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Molempien taseraporttien rivimääritykset sisältävät osia kunkin perinteisen taseen osista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>The side-by-side report includes a column break, so that liability and the owner’s equity appear next to assets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rinnakkainen raportti sisältää sarakkeen vaihdon, jolloin velat ja omistajan oma pääoma näkyvät käyttöomaisuuden vieressä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>The Main Account Category dimension is used to build both row definitions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Päätilin luokan dimensiota käytetään molempien rivimääritysten muodostamisessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Therefore, anyone can generate the reports without having to make any modifications.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vuoksi kuka tahansa voi luoda raportteja ilman muutosten tekemistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Column definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakemääritys</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>The column definitions contain different types of columns to provide different levels of detail and financial data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksityiskohtaisia tasoja ja taloushallinnon tietoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">**</bpt>YTD and Variance – Default column types:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vuoden alusta ja varianssi – oletussaraketyypit:<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – The description from the row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – rivimäärityksen kuvaus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Year-to-date financial data for the current year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – kuluvan vuoden taloushallinnon tiedot vuoden alusta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Year-to-date financial data for the last year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – edellisen vuoden taloushallinnon tiedot vuoden alusta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – The variance from subtracting last year from this year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> – varianssi, kun kuluva vuosi vähennetään edellisestä vuodesta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source><bpt id="p1">**</bpt>Year to Date Column – Default:<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vuoden alusta -sarake – oletusarvo<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – The description from the row definition</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DESC<ept id="p1">**</ept> – rivimäärityksen kuvaus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – Year-to-date financial data for the current year</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept> – kuluvan vuoden taloushallinnon tiedot vuoden alusta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisäresurssit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source><bpt id="p1">[</bpt>Financial reporting<ept id="p1">](financial-reporting-getting-started.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Talousraportointi<ept id="p1">](financial-reporting-getting-started.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source><bpt id="p1">[</bpt>View financial reports<ept id="p1">](view-financial-reports.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Raporttien näyttäminen<ept id="p1">](view-financial-reports.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source><bpt id="p1">[</bpt>Dynamics Financial Reporting Blog<ept id="p1">](https://blogs.msdn.com/b/dynamics_financial_reporting/)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Dynamicsin talousraportointi -blogi<ept id="p1">](https://blogs.msdn.com/b/dynamics_financial_reporting/)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
