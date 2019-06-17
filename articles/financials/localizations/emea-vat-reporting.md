@@ -1,279 +1,543 @@
----
-title: ALV-raportointi Euroopassa
-description: Tässä aiheessa on yleistietoja (ALV)-lauseen määrittämisestä ja muodostamisesta joissakin Euroopan maissa.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 266844
-ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
-ms.author: v-elgolu
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d3496e0dec51daa640ff80355b9bcc63f8ba7ea2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513099"
----
-# <a name="vat-reporting-for-europe"></a><span data-ttu-id="653fe-103">ALV-raportointi Euroopassa</span><span class="sxs-lookup"><span data-stu-id="653fe-103">VAT reporting for Europe</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="653fe-104">Tässä aiheessa on yleistietoja (ALV)-lauseen määrittämisestä ja muodostamisesta joissakin Euroopan maissa.</span><span class="sxs-lookup"><span data-stu-id="653fe-104">This topic provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.</span></span>
-
-<span data-ttu-id="653fe-105">Tämä ohjeaihe sisältää yleisen lähestymistavan ALV-ilmoituksen määrittämiseen ja luomiseen.</span><span class="sxs-lookup"><span data-stu-id="653fe-105">This topic provides a generic approach to setting up and generating the VAT statement.</span></span> <span data-ttu-id="653fe-106">Tämä lähestymistapa on yhteinen yrityksille seuraavissa maissa/alueilla:</span><span class="sxs-lookup"><span data-stu-id="653fe-106">This approach is common for users in legal entities in the following countries/regions:</span></span>
-
--   <span data-ttu-id="653fe-107">Itävalta</span><span class="sxs-lookup"><span data-stu-id="653fe-107">Austria</span></span>
--   <span data-ttu-id="653fe-108">Belgia</span><span class="sxs-lookup"><span data-stu-id="653fe-108">Belgium</span></span>
--   <span data-ttu-id="653fe-109">Tšekin tasavalta</span><span class="sxs-lookup"><span data-stu-id="653fe-109">Czech Republic</span></span>
--   <span data-ttu-id="653fe-110">Viro</span><span class="sxs-lookup"><span data-stu-id="653fe-110">Estonia</span></span>
--   <span data-ttu-id="653fe-111">Suomi</span><span class="sxs-lookup"><span data-stu-id="653fe-111">Finland</span></span>
--   <span data-ttu-id="653fe-112">Saksa</span><span class="sxs-lookup"><span data-stu-id="653fe-112">Germany</span></span>
--   <span data-ttu-id="653fe-113">Latvia</span><span class="sxs-lookup"><span data-stu-id="653fe-113">Latvia</span></span>
--   <span data-ttu-id="653fe-114">Liettua</span><span class="sxs-lookup"><span data-stu-id="653fe-114">Lithuania</span></span>
--   <span data-ttu-id="653fe-115">Alankomaat</span><span class="sxs-lookup"><span data-stu-id="653fe-115">Netherlands</span></span>
--   <span data-ttu-id="653fe-116">Ruotsi</span><span class="sxs-lookup"><span data-stu-id="653fe-116">Sweden</span></span>
-
-## <a name="vat-statement-overview"></a><span data-ttu-id="653fe-117">ALV-ilmoituksen yhteenveto</span><span class="sxs-lookup"><span data-stu-id="653fe-117">VAT statement overview</span></span>
-<span data-ttu-id="653fe-118">ALV-ilmoitus perustuu verotapahtumien summiin.</span><span class="sxs-lookup"><span data-stu-id="653fe-118">The VAT statement is based on tax transactions’ amounts.</span></span> <span data-ttu-id="653fe-119">ALV-ilmoituksen luomisprosessi kuuluu arvonlisäveron maksamisen prosessiin, joka toteutetaan Tilitä ja kirjaa arvonlisävero -toiminnon avulla.</span><span class="sxs-lookup"><span data-stu-id="653fe-119">The process of generating a VAT statement is part of the Sales tax payment process, which is implemented through the Settle and post sales tax function.</span></span> <span data-ttu-id="653fe-120">Tämä toiminto laskee arvonlisäveron, joka erääntyy tiettynä aikana.</span><span class="sxs-lookup"><span data-stu-id="653fe-120">This function calculates the sales tax that is due for a given period.</span></span> <span data-ttu-id="653fe-121">Tilityksen laskenta sisältää kirjatun arvonlisäveron valitulta tilityskaudelta verotapahtumille.</span><span class="sxs-lookup"><span data-stu-id="653fe-121">The settlement calculation includes the posted sales tax for the selected settlement period for the tax transactions.</span></span> <span data-ttu-id="653fe-122">ALV-ilmoituksen tietojen laskentaprosessi perustuu arvonlisäverokoodien ja arvonlisäveroilmoituksen koodien suhteeseen, jossa ALV-raporttikoodit vastaavat ALV-ilmoitusten ruutuja (tai XML-tunnisteita).</span><span class="sxs-lookup"><span data-stu-id="653fe-122">The process for calculating data for a VAT statement is based on the relationship between sales tax codes and sales tax reporting codes, where sales tax reporting codes match the VAT statements boxes (or tags in XML).</span></span> <span data-ttu-id="653fe-123">Kullekin arvonlisäverokoodille arvonlisäveron raportointikoodit pitäisi määrittää kunkin tyyppiselle tapahtumalle, kuten verolliselle myynnille, verollisille ostoille tai verolliselle tuonnille.</span><span class="sxs-lookup"><span data-stu-id="653fe-123">For each sales tax code, sales tax reporting codes should be set up for each type of transaction, such as taxable sales, taxable purchases, taxable import.</span></span> <span data-ttu-id="653fe-124">Näiden tapahtumien tyyppi on kuvattu Arvonlisäverokoodit ALV-raportoinnissa -osassa jäljempänä tässä ohjeaiheessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-124">These type of transactions are described in the Sales tax codes for VAT reporting section later in this topic.</span></span>
-
-<span data-ttu-id="653fe-125">Jokaiselle arvonlisäveroilmoituksen koodille olisi määritettävä tietty raporttiasettelu.</span><span class="sxs-lookup"><span data-stu-id="653fe-125">For each sales tax reporting code, a specific report layout should be determined.</span></span> <span data-ttu-id="653fe-126">Samaan aikaan arvonlisäverokoodit on linkitetty tiettyyn arvonlisäveroviranomaiseen arvonlisäveron tilityskausien kautta.</span><span class="sxs-lookup"><span data-stu-id="653fe-126">At the same time, sales tax codes are linked to a specific sales tax authority through sales tax settlement periods.</span></span> <span data-ttu-id="653fe-127">Jokaiselle arvonlisäveroviranomaiselle olisi määritettävä raporttiasettelu.</span><span class="sxs-lookup"><span data-stu-id="653fe-127">For every sales tax authority, a report layout should be determined.</span></span> <span data-ttu-id="653fe-128">Näin ollen ainoastaan raportointikoodeja, joilla on sama raporttiasettelu, joka on määritetty ALV-viranomaiselle arvonlisäverokoodin arvonlisäveron tilityskausissa, voidaan valita arvonlisäverokoodin raportin määrityksessä.</span><span class="sxs-lookup"><span data-stu-id="653fe-128">Thus, only sales tax reporting codes with the same report layout that is set up for a sales tax authority in sales tax settlement periods for the sales tax code can be selected in the report setup of the sales tax code.</span></span> <span data-ttu-id="653fe-129">Arvonlisäverotapahtuma, joka luodaan kirjatessa tilauksen tai päiväkirjan, sisältää arvonlisäverokoodin, arvonlisäveron lähteen, arvonlisäveron suunnan ja tapahtumasummat (veron peruste ja verosumma kirjanpitovaluuttana, ALV-valuutta ja tapahtumavaluutta).</span><span class="sxs-lookup"><span data-stu-id="653fe-129">A sales tax transaction generated upon posting an order or a journal, contains a sales tax code, sales tax source, sales tax direction, and transaction amounts (tax base amount and tax amount in accounting currency, sales-tax currency, and transaction currency).</span></span> <span data-ttu-id="653fe-130">Perustuen verotapahtuman määritteiden yhdistelmään, tapahtumasummat koostavat kokonaissummat arvonlisäverokoodeille määritetyille arvonlisäveroilmoituksen koodeille.</span><span class="sxs-lookup"><span data-stu-id="653fe-130">Based on the combination of tax transaction attributes, transaction amounts compose total amounts for sales tax reporting codes specified for sales tax codes.</span></span> <span data-ttu-id="653fe-131">Seuraavassa on kuvattu tietojen suhdetta.</span><span class="sxs-lookup"><span data-stu-id="653fe-131">The following illustration shows the data relationship.</span></span>
-
-![Kaavio](./media/diagram4.jpg)
-
-## <a name="vat-statement-setup"></a><span data-ttu-id="653fe-133">ALV-ilmoituksen asetukset</span><span class="sxs-lookup"><span data-stu-id="653fe-133">VAT statement setup</span></span>
-<span data-ttu-id="653fe-134">Voit luoda ALV-ilmoituksen määrittämällä seuraavat.</span><span class="sxs-lookup"><span data-stu-id="653fe-134">To generate a VAT statement you must set up the following.</span></span>
-
-### <a name="sales-tax-authorities-for-vat-reporting"></a><span data-ttu-id="653fe-135">Veroviranomaiset ALV-raportointia varten</span><span class="sxs-lookup"><span data-stu-id="653fe-135">Sales tax authorities for VAT reporting</span></span>
-
-<span data-ttu-id="653fe-136">Ennen kuin voit määrittää arvonlisäveroilmoituksen koodit, sinun on valittava oikea raporttiasettelu arvonlisäveroviranomaiselle.</span><span class="sxs-lookup"><span data-stu-id="653fe-136">Before you can set up sales tax reporting codes, you must select the correct report layout for the sales tax authority.</span></span> <span data-ttu-id="653fe-137">Valitse **Arvonlisäveroviranomaiset**-sivulla **Yleiset**-osassa **Raportin asettelu**.</span><span class="sxs-lookup"><span data-stu-id="653fe-137">On the **Sales tax authorities** page, in the **General** section, select a **Report layout**.</span></span> <span data-ttu-id="653fe-138">Tätä asettelua käytetään määrittäessäsi arvonlisäveroilmoituksen koodit.</span><span class="sxs-lookup"><span data-stu-id="653fe-138">This layout will be used when you set up sales tax reporting codes.</span></span>
-
-<!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md). -->
-
-### <a name="sales-tax-reporting-codes"></a><span data-ttu-id="653fe-139">Arvonlisäveroilmoituksen koodit</span><span class="sxs-lookup"><span data-stu-id="653fe-139">Sales tax reporting codes</span></span>
-
-<span data-ttu-id="653fe-140">ALV-ilmoituskoodit ovat ruutukoodeja ALV-ilmoituksessa tai tunnisteen nimiä XML-muodossa.</span><span class="sxs-lookup"><span data-stu-id="653fe-140">Sales tax reporting codes are box codes in the VAT statement or tag names in XML format.</span></span> <span data-ttu-id="653fe-141">Näitä koodeja käytetään keräämään ja valmistelemaan raportin summat.</span><span class="sxs-lookup"><span data-stu-id="653fe-141">These codes are used to aggregate and prepare amounts for the report.</span></span> <span data-ttu-id="653fe-142">ALV-ilmoituksen sähköisen raportoinnin muotoa määrittäessäsi käytetään tulossummien nimiä.</span><span class="sxs-lookup"><span data-stu-id="653fe-142">When you configure the electronic reporting format of the VAT statement, the names of the result amounts will be used.</span></span> <span data-ttu-id="653fe-143">Voit luoda ja ylläpitää arvonlisäveroilmoituksen koodeja **Arvonlisäveroilmoituksen koodit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="653fe-143">You can create and maintain sales tax reporting codes on the **Sales tax reporting codes** page.</span></span> <span data-ttu-id="653fe-144">Jokaiselle koodille tulee määrittää raporttiasettelu.</span><span class="sxs-lookup"><span data-stu-id="653fe-144">You must assign each code a report layout.</span></span> <span data-ttu-id="653fe-145">Kun olet luonut arvonlisäveroraportin koodit, voit valita koodeja **Arvonlisäverokoodit**-sivun **Raportin asetukset** -osassa.</span><span class="sxs-lookup"><span data-stu-id="653fe-145">After you create the sales tax reporting codes, you can choose the codes in the **Report setup** section on the **Sales tax codes** page.</span></span> <!---For more information, see [Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md).-->
-
-### <a name="sales-tax-codes-for-vat-reporting"></a><span data-ttu-id="653fe-146">ALV-ilmoituksen arvonlisäverokoodit</span><span class="sxs-lookup"><span data-stu-id="653fe-146">Sales tax codes for VAT reporting</span></span>
-
-<!---For general information about setting up sales tax codes, see [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).--> <span data-ttu-id="653fe-147"> Arvonlisäverotapahtumien perussummat ja verosummat voidaan koostaa ALV-ilmoituksen raportointikoodeista (XML-tunnisteista tai ilmoitusruuduista).</span><span class="sxs-lookup"><span data-stu-id="653fe-147">Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the VAT statement (XML tags or declaration boxes).</span></span> <span data-ttu-id="653fe-148">Voit määrittää tämän liittämällä arvonlisäveroilmoituksen koodit arvonlisäverokoodien eri tapahtumalajeille <strong>Arvonlisäverokoodit</strong> -sivulla.</span><span class="sxs-lookup"><span data-stu-id="653fe-148">You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the <strong>Sales tax codes</strong> page.</span></span> <span data-ttu-id="653fe-149">Seuraavassa taulukossa kuvataan tapahtumatyypit arvonlisäverokoodien raporttiasetuksissa.</span><span class="sxs-lookup"><span data-stu-id="653fe-149">The following table describes the transaction types in the report setup for sales tax codes.</span></span> <span data-ttu-id="653fe-150">Laskenta sisältää tapahtumia kaiken tyyppisille lähteille lukuun ottamatta arvonlisäveroa.</span><span class="sxs-lookup"><span data-stu-id="653fe-150">The calculation includes transactions for all types of sources except sales tax.</span></span>
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><span data-ttu-id="653fe-151"><strong>Tapahtumalaji</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-151"><strong>Transaction type</strong></span></span></td>
-<td><span data-ttu-id="653fe-152"><strong>Tapahtumien kuvaus ja tapahtumatyypille laskettavat summat</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-152"><strong>Description of transactions and amounts to be counted on the transaction type</strong></span></span></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="653fe-153"><strong>Verollinen myynti</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-153"><strong>Taxable Sales</strong></span></span></td>
-<td><span data-ttu-id="653fe-154">Verotapahtumien <strong>Veron perustesummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-154">Sum of <strong>Tax base amounts</strong> of tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-155">Tapahtumapäivä on valitussa kaudessa/</span><span class="sxs-lookup"><span data-stu-id="653fe-155">Transaction date is in the selected period/</span></span></li>
-<li><span data-ttu-id="653fe-156">Myynti on kotimaista (<strong>Veron suunta</strong> on <strong>Maksettava arvonlisävero</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-156">The sale is domestic (<strong>Tax direction</strong> is <strong>Sales tax payable</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-157">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&lt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-157">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="653fe-158"><strong>Verovapaa myynti</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-158"><strong>Tax-free sales</strong></span></span></td>
-<td><span data-ttu-id="653fe-159">Verotapahtumien <strong>Veron perustesummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-159">Sum of <strong>Tax base amounts</strong> of tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-160">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-160">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-161">Myynti on vientiä (<strong>Veron suunta</strong> on <strong>Verovapaa myynti</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-161">The sale is export (<strong>Tax direction</strong> is <strong>Tax-free sale</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-162">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&lt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-162">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="653fe-163"><strong>Maksettava arvonlisävero</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-163"><strong>Sales tax payable</strong></span></span></td>
-<td><span data-ttu-id="653fe-164">Verotapahtumien <strong>Verosummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-164">Sum of <strong>Tax amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-165">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-165">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-166">Myynti on kotimaista (<strong>Veron suunta</strong> on <strong>Maksettava arvonlisävero</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-166">The sale is domestic (<strong>Tax direction</strong> is <strong>Sales tax payable</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-167">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&lt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-167">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="653fe-168"><strong>Verollinen hyvityslasku</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-168"><strong>Taxable sales credit note</strong></span></span></td>
-<td><span data-ttu-id="653fe-169">Verotapahtumien <strong>Veron perustesummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-169">Sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-170">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-170">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-171">Myynti on kotimaista (<strong>Veron suunta</strong> on <strong>Maksettava arvonlisävero</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-171">The sale is domestic (<strong>Tax direction</strong> is <strong>Sales tax payable</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-172">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&gt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-172">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &gt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="653fe-173"><strong>Verovapaa hyvityslasku</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-173"><strong>Fax exempt sales credit note</strong></span></span></td>
-<td><span data-ttu-id="653fe-174">Verotapahtumien <strong>Veron perustesummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-174">Sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-175">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-175">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-176">Myynti on vientiä (<strong>Veron suunta</strong> on <strong>Verovapaa myynti</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-176">The sale is export (<strong>Tax direction</strong> is <strong>Tax-free sale</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-177">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&gt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-177">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &gt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="653fe-178"><strong>Myyntihyvityslaskun arvonlisävero</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-178"><strong>Sales tax on sales credit note</strong></span></span></td>
-<td><span data-ttu-id="653fe-179">Verotapahtumien <strong>Verosummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-179">Sum of <strong>Tax amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-180">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-180">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-181">Myynti on kotimaista (<strong>Veron suunta</strong> on <strong>Maksettava arvonlisävero</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-181">The sale is domestic (<strong>Tax direction</strong> is <strong>Sales tax payable</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-182">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&gt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-182">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &gt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="653fe-183"><strong>Verollinen osto</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-183"><strong>Taxable purchases</strong></span></span></td>
-<td><span data-ttu-id="653fe-184">Verotapahtumien <strong>Veron perustesummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-184">Sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-185">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-185">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-186">Osto on kotimaista (<strong>Veron suunta</strong> on <strong>Saatava arvonlisävero</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-186">The purchase is domestic (<strong>Tax direction</strong> is <strong>Sales tax receivable</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-187">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&gt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-187">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &gt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="653fe-188"><strong>Verovapaa osto</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-188"><strong>Tax-free purchase</strong></span></span></td>
-<td><span data-ttu-id="653fe-189">Verotapahtumien <strong>Veron perustesummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-189">Sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-190">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-190">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-191">Osto on tuontia (<strong>Veron suunta</strong> on <strong>Verovapaa osto</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-191">The purchase is import (<strong>Tax direction</strong> is <strong>Tax-free purchase</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-192">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&gt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-192">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &gt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="653fe-193"><strong>Saatava arvonlisävero</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-193"><strong>Sales tax receivable</strong></span></span></td>
-<td><span data-ttu-id="653fe-194">Verotapahtumien <strong>Verosummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-194">Sum of <strong>Tax amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-195">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-195">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-196">Osto on kotimaista (<strong>Veron suunta</strong> on <strong>Saatava arvonlisävero</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-196">The purchase is domestic (<strong>Tax direction</strong> is <strong>Sales tax receivable</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-197">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&gt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-197">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &gt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="653fe-198"><strong>Verollinen ostohyvityslasku</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-198"><strong>Taxable purchase credit note</strong></span></span></td>
-<td><span data-ttu-id="653fe-199">Verotapahtumien <strong>Veron perustesummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-199">Sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-200">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-200">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-201">Osto on kotimaista (<strong>Veron suunta</strong> on <strong>Saatava arvonlisävero</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-201">The purchase is domestic (<strong>Tax direction</strong> is <strong>Sales tax receivable</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-202">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&lt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-202">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="653fe-203"><strong>Verovapaa ostohyvityslasku</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-203"><strong>Tax exempt purchase credit note</strong></span></span></td>
-<td><span data-ttu-id="653fe-204">Verotapahtumien <strong>Veron perustesummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-204">Sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-205">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-205">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-206">Osto on tuontia (<strong>Veron suunta</strong> on <strong>Verovapaa osto</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-206">The purchase is import (<strong>Tax direction</strong> is <strong>Tax-free purchase</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-207">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&lt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-207">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="653fe-208"><strong>Ostohyvityslaskun arvonlisävero</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-208"><strong>Sales tax on purchase credit note</strong></span></span></td>
-<td><span data-ttu-id="653fe-209">Verotapahtumien <strong>Verosummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-209">Sum of <strong>Tax amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-210">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-210">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-211">Osto on kotimaista (<strong>Veron suunta</strong> on <strong>Saatava arvonlisävero</strong>).</span><span class="sxs-lookup"><span data-stu-id="653fe-211">The purchase is domestic (<strong>Tax direction</strong> is <strong>Sales tax receivable</strong>).</span></span></li>
-<li><span data-ttu-id="653fe-212">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&lt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-212">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="653fe-213"><strong>Verollinen tuonti</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-213"><strong>Taxable import</strong></span></span></td>
-<td><span data-ttu-id="653fe-214">Verotapahtumien <strong>Veron perustesummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-214">Sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-215">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-215">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-216"><strong>Veron suunta</strong> on <strong>Käyttövero</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-216"><strong>Tax direction</strong> is <strong>Use tax</strong></span></span></li>
-<li><span data-ttu-id="653fe-217">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&gt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-217">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &gt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="653fe-218"><strong>Verollinen tuonti vastakirjaus</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-218"><strong>Offset taxable import</strong></span></span></td>
-<td><span data-ttu-id="653fe-219">Verotapahtumien <strong>Veron perustesummien</strong> käänteinen summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-219">Reversed sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-220">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-220">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-221"><strong>Veron suunta</strong> on <strong>Käyttövero</strong>.</span><span class="sxs-lookup"><span data-stu-id="653fe-221"><strong>Tax direction</strong> is <strong>Use tax</strong>.</span></span></li>
-<li><span data-ttu-id="653fe-222">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&gt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-222">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &gt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="653fe-223"><strong>Verollinen tuontihyvitysmaksu</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-223"><strong>Taxable import credit note</strong></span></span></td>
-<td><span data-ttu-id="653fe-224">Verotapahtumien <strong>Veron perustesummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-224">Sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-225">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-225">Transaction date is in the selected period.</span></span></li>
-<span data-ttu-id="653fe-226">e</span><span class="sxs-lookup"><span data-stu-id="653fe-226">e</span></span><li><span data-ttu-id="653fe-227"><strong>Veron suunta</strong> on <strong>Käyttövero</strong>.</span><span class="sxs-lookup"><span data-stu-id="653fe-227"><strong>Tax direction</strong> is <strong>Use tax</strong>.</span></span></li>
-<li><span data-ttu-id="653fe-228">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&lt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-228">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="653fe-229"><strong>Verollinen tuontihyvityslasku vastakirjaus</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-229"><strong>Offset taxable import credit note</strong></span></span></td>
-<td><span data-ttu-id="653fe-230">Verotapahtumien <strong>Veron perustesummien</strong> käänteinen summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-230">Reversed sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-231">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-231">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-232">Veron suunta on <strong>Käyttövero</strong>.</span><span class="sxs-lookup"><span data-stu-id="653fe-232">Tax direction is <strong>Use tax</strong>.</span></span></li>
-<span data-ttu-id="653fe-233">d</span><span class="sxs-lookup"><span data-stu-id="653fe-233">d</span></span><li><span data-ttu-id="653fe-234">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&lt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-234">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="653fe-235"><strong>Käyttövero</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-235"><strong>Use tax</strong></span></span></td>
-<td><span data-ttu-id="653fe-236">Verotapahtumien <strong>Verosummien</strong> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-236">Sum of <strong>Tax amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-237">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-237">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-238"><strong>Veron suunta</strong> on <strong>Käyttövero</strong>.</span><span class="sxs-lookup"><span data-stu-id="653fe-238"><strong>Tax direction</strong> is <strong>Use tax</strong>.</span></span></li>
-<li><span data-ttu-id="653fe-239">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&gt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-239">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &gt; 0.</span></span></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span data-ttu-id="653fe-240"><strong>Käyttöveron vastakirjaus</strong></span><span class="sxs-lookup"><span data-stu-id="653fe-240"><strong>Offset use tax</strong></span></span></td>
-<td><span data-ttu-id="653fe-241">Verotapahtumien <strong>Verosummien</strong> käänteinen summa tapahtumille, jotka täyttävät seuraavat edellytykset:</span><span class="sxs-lookup"><span data-stu-id="653fe-241">Reversed sum of <strong>Tax amounts</strong> of the tax transactions which satisfy the following conditions:</span></span>
-<ul>
-<li><span data-ttu-id="653fe-242">Tapahtumapäivä on valitussa kaudessa.</span><span class="sxs-lookup"><span data-stu-id="653fe-242">Transaction date is in the selected period.</span></span></li>
-<li><span data-ttu-id="653fe-243"><strong>Veron suunta</strong> on <strong>Käyttövero</strong>.</span><span class="sxs-lookup"><span data-stu-id="653fe-243"><strong>Tax direction</strong> is <strong>Use tax</strong>.</span></span></li>
-<li><span data-ttu-id="653fe-244">Tapahtuman <strong>Veron perustesumma</strong> tai <strong>Verosumma</strong>&gt; 0.</span><span class="sxs-lookup"><span data-stu-id="653fe-244">The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &gt; 0.</span></span></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-> [!NOTE]
-> <span data-ttu-id="653fe-245">Edellä olevassa taulukossa oletetaan, että seuraavat ehdot täyttyvät:</span><span class="sxs-lookup"><span data-stu-id="653fe-245">For the table above, it is assumed that the following criteria are met:</span></span> 
-> -   <span data-ttu-id="653fe-246">Veron perustesumma on tapahtumasumma **Alkuperäinen summa kirjanpitovaluuttana** -kentästä.</span><span class="sxs-lookup"><span data-stu-id="653fe-246">The tax base amount is a transaction amount from the **Origin in Accounting currency** field.</span></span>
-> -   <span data-ttu-id="653fe-247">Veron summa on tapahtumasumma **Toteutunut arvonlisäverosumma kirjanpitovaluuttana** -kentästä.</span><span class="sxs-lookup"><span data-stu-id="653fe-247">The tax amount is a transition amount from the **Actual sales tax amount in Accounting currency** field.</span></span>
-
-### <a name="configure-the-er-model-and-format-for-the-report"></a><span data-ttu-id="653fe-248">Raportin ER-mallin ja muodon määrittäminen</span><span class="sxs-lookup"><span data-stu-id="653fe-248">Configure the ER model and format for the report</span></span>
-
-<span data-ttu-id="653fe-249">Voit käyttää sähköistä raportointia (ER) määrittääksesi ilmoituksia ja raportteja sekä viedäksesi tietoja eri sähköisissä muodoissa muuttamatta X++ -koodia.</span><span class="sxs-lookup"><span data-stu-id="653fe-249">You can use Electronic Reporting (ER) to configure statements and report, and to export data different electronic formats without changing X++ code.</span></span> <span data-ttu-id="653fe-250">Lisätietoja:</span><span class="sxs-lookup"><span data-stu-id="653fe-250">For additional information:</span></span>
-
--   [<span data-ttu-id="653fe-251">Sähköisen raportoinnin yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="653fe-251">Electronic reporting overview</span></span>](../../dev-itpro/analytics/general-electronic-reporting.md)
--   [<span data-ttu-id="653fe-252">Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Servicesista</span><span class="sxs-lookup"><span data-stu-id="653fe-252">Download Electronic reporting configurations from Lifecycle Services</span></span>](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [<span data-ttu-id="653fe-253">Lokalisoinnin vaatimukset – GER-konfiguraation luominen</span><span class="sxs-lookup"><span data-stu-id="653fe-253">Localization requirements – Create a GER configuration</span></span>](../../dev-itpro/analytics/electronic-reporting-configuration.md)
-
-## <a name="countryspecific-resources-for-vat-statements"></a><span data-ttu-id="653fe-254">ALV-ilmoitusten maakohtaiset resurssit</span><span class="sxs-lookup"><span data-stu-id="653fe-254">Countryspecific resources for VAT statements</span></span>
-<span data-ttu-id="653fe-255">Kunkin maan ALV-ilmoituksen on täytettävä sen maan lainsäädännön vaatimukset.</span><span class="sxs-lookup"><span data-stu-id="653fe-255">The VAT statement for each country must meet the requirements of the country’s legislation.</span></span> <span data-ttu-id="653fe-256">On olemassa ennalta määritetyt mallit ja muodot ALV-ilmoituksille seuraavassa taulukossa luetelluissa maissa.</span><span class="sxs-lookup"><span data-stu-id="653fe-256">There are predefined general models and formats of VAT statements for the countries listed in the following table.</span></span>
-
-
-| <span data-ttu-id="653fe-257">Maa tai alue</span><span class="sxs-lookup"><span data-stu-id="653fe-257">Country</span></span>        | <span data-ttu-id="653fe-258">Lisätiedot</span><span class="sxs-lookup"><span data-stu-id="653fe-258">Additional information</span></span>                                                          |
-|----------------|---------------------------------------------------------------------------------|
-| <span data-ttu-id="653fe-259">Itävalta</span><span class="sxs-lookup"><span data-stu-id="653fe-259">Austria</span></span>        |  [<span data-ttu-id="653fe-260">ALV-ilmoituksen erittely, Itävalta</span><span class="sxs-lookup"><span data-stu-id="653fe-260">VAT statement details for Austria</span></span>](emea-aut-vat-statement-details.md)         |
-| <span data-ttu-id="653fe-261">Belgia</span><span class="sxs-lookup"><span data-stu-id="653fe-261">Belgium</span></span>        |                                                                                 |
-| <span data-ttu-id="653fe-262">Tšekin tasavalta</span><span class="sxs-lookup"><span data-stu-id="653fe-262">Czech Republic</span></span> |  [<span data-ttu-id="653fe-263">ALV-ilmoituksen tiedot, Tšekin tasavalta</span><span class="sxs-lookup"><span data-stu-id="653fe-263">VAT statement details for Czech Republic</span></span>](emea-cze-vat-statement-details.md)   |
-| <span data-ttu-id="653fe-264">Viro</span><span class="sxs-lookup"><span data-stu-id="653fe-264">Estonia</span></span>        |  [<span data-ttu-id="653fe-265">ALV-ilmoituksen erittely, Viro</span><span class="sxs-lookup"><span data-stu-id="653fe-265">VAT statement details for Estonia</span></span>](emea-est-vat-statement-details.md) |
-| <span data-ttu-id="653fe-266">Suomi</span><span class="sxs-lookup"><span data-stu-id="653fe-266">Finland</span></span>        |                                                                                 |
-| <span data-ttu-id="653fe-267">Saksa</span><span class="sxs-lookup"><span data-stu-id="653fe-267">Germany</span></span>        |                                                                                 |
-| <span data-ttu-id="653fe-268">Italia</span><span class="sxs-lookup"><span data-stu-id="653fe-268">Italy</span></span>          | [<span data-ttu-id="653fe-269">ALV-ilmoituksen erittely, Italia</span><span class="sxs-lookup"><span data-stu-id="653fe-269">VAT statement details for Italy</span></span>](emea-ita-vat-statements-details.md)            |
-| <span data-ttu-id="653fe-270">Latvia</span><span class="sxs-lookup"><span data-stu-id="653fe-270">Latvia</span></span>         | [<span data-ttu-id="653fe-271">ALV-ilmoituksen erittely, Latvia</span><span class="sxs-lookup"><span data-stu-id="653fe-271">VAT statement details for Latvia</span></span>](emea-lva-vat-statement-details.md)           |
-| <span data-ttu-id="653fe-272">Liettua</span><span class="sxs-lookup"><span data-stu-id="653fe-272">Lithuania</span></span>      | [<span data-ttu-id="653fe-273">ALV-ilmoituksen erittely, Liettua</span><span class="sxs-lookup"><span data-stu-id="653fe-273">VAT statement details for Lithuania</span></span>](emea-ltu-vat-statement-details.md)         |
-| <span data-ttu-id="653fe-274">Alankomaat</span><span class="sxs-lookup"><span data-stu-id="653fe-274">Netherlands</span></span>    |                                                                                 |
-| <span data-ttu-id="653fe-275">Ruotsi</span><span class="sxs-lookup"><span data-stu-id="653fe-275">Sweden</span></span>         |                                                                                 |
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-vat-reporting.md" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-vat-reporting.c5f486.5c5cd61c45eb7cbc6f040f054a99d9a54e1ee854.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>5c5cd61c45eb7cbc6f040f054a99d9a54e1ee854</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-vat-reporting.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>VAT reporting for Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-raportointi Euroopassa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä aiheessa on yleistietoja (ALV)-lauseen määrittämisestä ja muodostamisesta joissakin Euroopan maissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>VAT reporting for Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-raportointi Euroopassa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä aiheessa on yleistietoja (ALV)-lauseen määrittämisestä ja muodostamisesta joissakin Euroopan maissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This topic provides a generic approach to setting up and generating the VAT statement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ohjeaihe sisältää yleisen lähestymistavan ALV-ilmoituksen määrittämiseen ja luomiseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This approach is common for users in legal entities in the following countries/regions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä lähestymistapa on yhteinen yrityksille seuraavissa maissa/alueilla:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Austria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Itävalta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Belgium</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belgia</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Czech Republic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tšekin tasavalta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Estonia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Viro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Finland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suomi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Germany</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saksa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Latvia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Latvia</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Lithuania</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Liettua</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Netherlands</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alankomaat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Sweden</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ruotsi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>VAT statement overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-ilmoituksen yhteenveto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>The VAT statement is based on tax transactions’ amounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-ilmoitus perustuu verotapahtumien summiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The process of generating a VAT statement is part of the Sales tax payment process, which is implemented through the Settle and post sales tax function.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-ilmoituksen luomisprosessi kuuluu arvonlisäveron maksamisen prosessiin, joka toteutetaan Tilitä ja kirjaa arvonlisävero -toiminnon avulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>This function calculates the sales tax that is due for a given period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä toiminto laskee arvonlisäveron, joka erääntyy tiettynä aikana.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>The settlement calculation includes the posted sales tax for the selected settlement period for the tax transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilityksen laskenta sisältää kirjatun arvonlisäveron valitulta tilityskaudelta verotapahtumille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>The process for calculating data for a VAT statement is based on the relationship between sales tax codes and sales tax reporting codes, where sales tax reporting codes match the VAT statements boxes (or tags in XML).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-ilmoituksen tietojen laskentaprosessi perustuu arvonlisäverokoodien ja arvonlisäveroilmoituksen koodien suhteeseen, jossa ALV-raporttikoodit vastaavat ALV-ilmoitusten ruutuja (tai XML-tunnisteita).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>For each sales tax code, sales tax reporting codes should be set up for each type of transaction, such as taxable sales, taxable purchases, taxable import.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kullekin arvonlisäverokoodille arvonlisäveron raportointikoodit pitäisi määrittää kunkin tyyppiselle tapahtumalle, kuten verolliselle myynnille, verollisille ostoille tai verolliselle tuonnille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>These type of transactions are described in the Sales tax codes for VAT reporting section later in this topic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näiden tapahtumien tyyppi on kuvattu Arvonlisäverokoodit ALV-raportoinnissa -osassa jäljempänä tässä ohjeaiheessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>For each sales tax reporting code, a specific report layout should be determined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jokaiselle arvonlisäveroilmoituksen koodille olisi määritettävä tietty raporttiasettelu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>At the same time, sales tax codes are linked to a specific sales tax authority through sales tax settlement periods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Samaan aikaan arvonlisäverokoodit on linkitetty tiettyyn arvonlisäveroviranomaiseen arvonlisäveron tilityskausien kautta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>For every sales tax authority, a report layout should be determined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jokaiselle arvonlisäveroviranomaiselle olisi määritettävä raporttiasettelu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Thus, only sales tax reporting codes with the same report layout that is set up for a sales tax authority in sales tax settlement periods for the sales tax code can be selected in the report setup of the sales tax code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näin ollen ainoastaan raportointikoodeja, joilla on sama raporttiasettelu, joka on määritetty ALV-viranomaiselle arvonlisäverokoodin arvonlisäveron tilityskausissa, voidaan valita arvonlisäverokoodin raportin määrityksessä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>A sales tax transaction generated upon posting an order or a journal, contains a sales tax code, sales tax source, sales tax direction, and transaction amounts (tax base amount and tax amount in accounting currency, sales-tax currency, and transaction currency).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arvonlisäverotapahtuma, joka luodaan kirjatessa tilauksen tai päiväkirjan, sisältää arvonlisäverokoodin, arvonlisäveron lähteen, arvonlisäveron suunnan ja tapahtumasummat (veron peruste ja verosumma kirjanpitovaluuttana, ALV-valuutta ja tapahtumavaluutta).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Based on the combination of tax transaction attributes, transaction amounts compose total amounts for sales tax reporting codes specified for sales tax codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Perustuen verotapahtuman määritteiden yhdistelmään, tapahtumasummat koostavat kokonaissummat arvonlisäverokoodeille määritetyille arvonlisäveroilmoituksen koodeille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>The following illustration shows the data relationship.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa on kuvattu tietojen suhdetta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>diagram</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaavio</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>VAT statement setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-ilmoituksen asetukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>To generate a VAT statement you must set up the following.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit luoda ALV-ilmoituksen määrittämällä seuraavat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Sales tax authorities for VAT reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Veroviranomaiset ALV-raportointia varten</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Before you can set up sales tax reporting codes, you must select the correct report layout for the sales tax authority.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ennen kuin voit määrittää arvonlisäveroilmoituksen koodit, sinun on valittava oikea raporttiasettelu arvonlisäveroviranomaiselle.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>On the <bpt id="p1">**</bpt>Sales tax authorities<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>General<ept id="p2">**</ept> section, select a <bpt id="p3">**</bpt>Report layout<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Arvonlisäveroviranomaiset<ept id="p1">**</ept>-sivulla <bpt id="p2">**</bpt>Yleiset<ept id="p2">**</ept>-osassa <bpt id="p3">**</bpt>Raportin asettelu<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>This layout will be used when you set up sales tax reporting codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä asettelua käytetään määrittäessäsi arvonlisäveroilmoituksen koodit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Sales tax reporting codes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arvonlisäveroilmoituksen koodit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Sales tax reporting codes are box codes in the VAT statement or tag names in XML format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-ilmoituskoodit ovat ruutukoodeja ALV-ilmoituksessa tai tunnisteen nimiä XML-muodossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>These codes are used to aggregate and prepare amounts for the report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näitä koodeja käytetään keräämään ja valmistelemaan raportin summat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>When you configure the electronic reporting format of the VAT statement, the names of the result amounts will be used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-ilmoituksen sähköisen raportoinnin muotoa määrittäessäsi käytetään tulossummien nimiä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>You can create and maintain sales tax reporting codes on the <bpt id="p1">**</bpt>Sales tax reporting codes<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit luoda ja ylläpitää arvonlisäveroilmoituksen koodeja <bpt id="p1">**</bpt>Arvonlisäveroilmoituksen koodit<ept id="p1">**</ept> -sivulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>You must assign each code a report layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jokaiselle koodille tulee määrittää raporttiasettelu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>After you create the sales tax reporting codes, you can choose the codes in the <bpt id="p1">**</bpt>Report setup<ept id="p1">**</ept> section on the <bpt id="p2">**</bpt>Sales tax codes<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet luonut arvonlisäveroraportin koodit, voit valita koodeja <bpt id="p2">**</bpt>Arvonlisäverokoodit<ept id="p2">**</ept>-sivun <bpt id="p1">**</bpt>Raportin asetukset<ept id="p1">**</ept> -osassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Sales tax codes for VAT reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-ilmoituksen arvonlisäverokoodit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the VAT statement (XML tags or declaration boxes).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Arvonlisäverotapahtumien perussummat ja verosummat voidaan koostaa ALV-ilmoituksen raportointikoodeista (XML-tunnisteista tai ilmoitusruuduista).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the <bpt id="p1">&lt;strong&gt;</bpt>Sales tax codes<ept id="p1">&lt;/strong&gt;</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää tämän liittämällä arvonlisäveroilmoituksen koodit arvonlisäverokoodien eri tapahtumalajeille <bpt id="p1">&lt;strong&gt;</bpt>Arvonlisäverokoodit<ept id="p1">&lt;/strong&gt;</ept> -sivulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>The following table describes the transaction types in the report setup for sales tax codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa taulukossa kuvataan tapahtumatyypit arvonlisäverokoodien raporttiasetuksissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>The calculation includes transactions for all types of sources except sales tax.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskenta sisältää tapahtumia kaiken tyyppisille lähteille lukuun ottamatta arvonlisäveroa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Transaction type<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Tapahtumalaji<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Description of transactions and amounts to be counted on the transaction type<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Tapahtumien kuvaus ja tapahtumatyypille laskettavat summat<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Taxable Sales<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verollinen myynti<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Transaction date is in the selected period/</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa/</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>The sale is domestic (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Sales tax payable<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myynti on kotimaista (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Maksettava arvonlisävero<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;lt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;lt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Tax-free sales<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verovapaa myynti<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>The sale is export (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Tax-free sale<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myynti on vientiä (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Verovapaa myynti<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;lt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;lt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Sales tax payable<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Maksettava arvonlisävero<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Verosummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>The sale is domestic (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Sales tax payable<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myynti on kotimaista (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Maksettava arvonlisävero<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;lt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;lt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Taxable sales credit note<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verollinen hyvityslasku<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>The sale is domestic (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Sales tax payable<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myynti on kotimaista (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Maksettava arvonlisävero<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;gt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Fax exempt sales credit note<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verovapaa hyvityslasku<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>The sale is export (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Tax-free sale<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myynti on vientiä (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Verovapaa myynti<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;gt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Sales tax on sales credit note<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Myyntihyvityslaskun arvonlisävero<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Verosummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>The sale is domestic (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Sales tax payable<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myynti on kotimaista (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Maksettava arvonlisävero<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;gt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Taxable purchases<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verollinen osto<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>The purchase is domestic (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Sales tax receivable<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osto on kotimaista (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Saatava arvonlisävero<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;gt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Tax-free purchase<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verovapaa osto<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>The purchase is import (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Tax-free purchase<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osto on tuontia (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Verovapaa osto<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;gt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Sales tax receivable<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Saatava arvonlisävero<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Verosummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>The purchase is domestic (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Sales tax receivable<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osto on kotimaista (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Saatava arvonlisävero<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;gt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Taxable purchase credit note<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verollinen ostohyvityslasku<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>The purchase is domestic (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Sales tax receivable<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osto on kotimaista (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Saatava arvonlisävero<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;lt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;lt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Tax exempt purchase credit note<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verovapaa ostohyvityslasku<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>The purchase is import (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Tax-free purchase<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osto on tuontia (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Verovapaa osto<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;lt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;lt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Sales tax on purchase credit note<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Ostohyvityslaskun arvonlisävero<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Verosummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>The purchase is domestic (<bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Sales tax receivable<ept id="p2">&lt;/strong&gt;</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osto on kotimaista (<bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Saatava arvonlisävero<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;lt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;lt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Taxable import<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verollinen tuonti<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Use tax<ept id="p2">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Käyttövero<ept id="p2">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;gt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Offset taxable import<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verollinen tuonti vastakirjaus<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Reversed sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> käänteinen summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Use tax<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Käyttövero<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;gt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Taxable import credit note<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verollinen tuontihyvitysmaksu<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>e</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">e</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Use tax<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Käyttövero<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;lt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;lt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Offset taxable import credit note<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verollinen tuontihyvityslasku vastakirjaus<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Reversed sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax base amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesummien<ept id="p1">&lt;/strong&gt;</ept> käänteinen summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Tax direction is <bpt id="p1">&lt;strong&gt;</bpt>Use tax<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Veron suunta on <bpt id="p1">&lt;strong&gt;</bpt>Käyttövero<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>d</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">d</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;lt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;lt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Use tax<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Käyttövero<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Verosummien<ept id="p1">&lt;/strong&gt;</ept> summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Use tax<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Käyttövero<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;gt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Offset use tax<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Käyttöveron vastakirjaus<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Reversed sum of <bpt id="p1">&lt;strong&gt;</bpt>Tax amounts<ept id="p1">&lt;/strong&gt;</ept> of the tax transactions which satisfy the following conditions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verotapahtumien <bpt id="p1">&lt;strong&gt;</bpt>Verosummien<ept id="p1">&lt;/strong&gt;</ept> käänteinen summa tapahtumille, jotka täyttävät seuraavat edellytykset:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Transaction date is in the selected period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumapäivä on valitussa kaudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Tax direction<ept id="p1">&lt;/strong&gt;</ept> is <bpt id="p2">&lt;strong&gt;</bpt>Use tax<ept id="p2">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Veron suunta<ept id="p1">&lt;/strong&gt;</ept> on <bpt id="p2">&lt;strong&gt;</bpt>Käyttövero<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>The transaction <bpt id="p1">&lt;strong&gt;</bpt>Tax base amount<ept id="p1">&lt;/strong&gt;</ept> or <bpt id="p2">&lt;strong&gt;</bpt>Tax amount<ept id="p2">&lt;/strong&gt;</ept> <ph id="ph1">&amp;gt;</ph> 0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman <bpt id="p1">&lt;strong&gt;</bpt>Veron perustesumma<ept id="p1">&lt;/strong&gt;</ept> tai <bpt id="p2">&lt;strong&gt;</bpt>Verosumma<ept id="p2">&lt;/strong&gt;</ept><ph id="ph1">&amp;gt;</ph> 0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>For the table above, it is assumed that the following criteria are met:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Edellä olevassa taulukossa oletetaan, että seuraavat ehdot täyttyvät:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>The tax base amount is a transaction amount from the <bpt id="p1">**</bpt>Origin in Accounting currency<ept id="p1">**</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Veron perustesumma on tapahtumasumma <bpt id="p1">**</bpt>Alkuperäinen summa kirjanpitovaluuttana<ept id="p1">**</ept> -kentästä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>The tax amount is a transition amount from the <bpt id="p1">**</bpt>Actual sales tax amount in Accounting currency<ept id="p1">**</ept> field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Veron summa on tapahtumasumma <bpt id="p1">**</bpt>Toteutunut arvonlisäverosumma kirjanpitovaluuttana<ept id="p1">**</ept> -kentästä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Configure the ER model and format for the report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportin ER-mallin ja muodon määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>You can use Electronic Reporting (ER) to configure statements and report, and to export data different electronic formats without changing X++ code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit käyttää sähköistä raportointia (ER) määrittääksesi ilmoituksia ja raportteja sekä viedäksesi tietoja eri sähköisissä muodoissa muuttamatta X++ -koodia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>For additional information:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source><bpt id="p1">[</bpt>Electronic reporting overview<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Sähköisen raportoinnin yleiskatsaus<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source><bpt id="p1">[</bpt>Download Electronic reporting configurations from Lifecycle Services<ept id="p1">](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Servicesista<ept id="p1">](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source><bpt id="p1">[</bpt>Localization requirements – Create a GER configuration<ept id="p1">](../../dev-itpro/analytics/electronic-reporting-configuration.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Lokalisoinnin vaatimukset – GER-konfiguraation luominen<ept id="p1">](../../dev-itpro/analytics/electronic-reporting-configuration.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Countryspecific resources for VAT statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALV-ilmoitusten maakohtaiset resurssit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>The VAT statement for each country must meet the requirements of the country’s legislation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kunkin maan ALV-ilmoituksen on täytettävä sen maan lainsäädännön vaatimukset.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>There are predefined general models and formats of VAT statements for the countries listed in the following table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">On olemassa ennalta määritetyt mallit ja muodot ALV-ilmoituksille seuraavassa taulukossa luetelluissa maissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Country</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maa tai alue</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Additional information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Austria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Itävalta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source><bpt id="p1">[</bpt>VAT statement details for Austria<ept id="p1">](emea-aut-vat-statement-details.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ALV-ilmoituksen erittely, Itävalta<ept id="p1">](emea-aut-vat-statement-details.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Belgium</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belgia</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Czech Republic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tšekin tasavalta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source><bpt id="p1">[</bpt>VAT statement details for Czech Republic<ept id="p1">](emea-cze-vat-statement-details.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ALV-ilmoituksen tiedot, Tšekin tasavalta<ept id="p1">](emea-cze-vat-statement-details.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Estonia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Viro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source><bpt id="p1">[</bpt>VAT statement details for Estonia<ept id="p1">](emea-est-vat-statement-details.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ALV-ilmoituksen erittely, Viro<ept id="p1">](emea-est-vat-statement-details.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Finland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suomi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Germany</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saksa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Italy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Italia</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source><bpt id="p1">[</bpt>VAT statement details for Italy<ept id="p1">](emea-ita-vat-statements-details.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ALV-ilmoituksen erittely, Italia<ept id="p1">](emea-ita-vat-statements-details.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Latvia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Latvia</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source><bpt id="p1">[</bpt>VAT statement details for Latvia<ept id="p1">](emea-lva-vat-statement-details.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ALV-ilmoituksen erittely, Latvia<ept id="p1">](emea-lva-vat-statement-details.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Lithuania</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Liettua</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source><bpt id="p1">[</bpt>VAT statement details for Lithuania<ept id="p1">](emea-ltu-vat-statement-details.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>ALV-ilmoituksen erittely, Liettua<ept id="p1">](emea-ltu-vat-statement-details.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Netherlands</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alankomaat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Sweden</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ruotsi</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

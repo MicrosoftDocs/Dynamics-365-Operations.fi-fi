@@ -1,228 +1,492 @@
----
-title: Vähittäismyyntikanavien kirjanpidon integroinnin määrittäminen
-description: Tässä ohjeaiheessa on ohjeet vähittäismyyntikanavien kirjanpidon integrointitoiminnon määrittämiseen.
-author: josaw
-manager: annbe
-ms.date: 02/01/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.search.region: Global
-ms.search.industry: Retail
-ms.author: v-kikozl
-ms.search.validFrom: 2018-11-1
-ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1525322"
----
-# <a name="set-up-the-fiscal-integration-for-retail-channels"></a><span data-ttu-id="3fae9-103">Vähittäismyyntikanavien kirjanpidon integroinnin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="3fae9-103">Set up the fiscal integration for Retail channels</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-## <a name="introduction"></a><span data-ttu-id="3fae9-104">Johdanto</span><span class="sxs-lookup"><span data-stu-id="3fae9-104">Introduction</span></span>
-
-<span data-ttu-id="3fae9-105">Tässä ohjeaiheessa on ohjeet vähittäismyyntikanavien kirjanpidon integrointitoiminnon määrittämiseen.</span><span class="sxs-lookup"><span data-stu-id="3fae9-105">This topic provides guidelines for setting up the fiscal integration functionality for Retail channels.</span></span> <span data-ttu-id="3fae9-106">Lisätietoja kirjanpidon integroinnista on kohdassa [Vähittäismyyntikanavan kirjanpidon integroinnin yleiskatsaus](fiscal-integration-for-retail-channel.md).</span><span class="sxs-lookup"><span data-stu-id="3fae9-106">For more information about the fiscal integration, see [Overview of fiscal integration for Retail channels](fiscal-integration-for-retail-channel.md).</span></span>
-
-<span data-ttu-id="3fae9-107">Kirjanpidon integroinnin määritysprosessi sisältää seuraavat tehtävät:</span><span class="sxs-lookup"><span data-stu-id="3fae9-107">The process of setting up the fiscal integration includes the following tasks:</span></span>
-
-1. <span data-ttu-id="3fae9-108">Määritä ne kirjanpidon yhdistimet, jotka edustavat kirjanpidon rekisteröinnissä käytettäviä kirjanpidon laitteita tai palveluja, kuten kuittitulostimia.</span><span class="sxs-lookup"><span data-stu-id="3fae9-108">Configure fiscal connectors that represent fiscal devices or services that are used for fiscal registration purposes, such as fiscal printers.</span></span>
-2. <span data-ttu-id="3fae9-109">Määritä tiedostopalvelut, jotka muodostavat kirjanpidon yhdistimien kirjanpidon laitteissa tai palveluissa rekisteröitävät kirjanpitoasiakirjat.</span><span class="sxs-lookup"><span data-stu-id="3fae9-109">Configure document providers that generate fiscal documents that will be registered in fiscal devices or services by fiscal connectors.</span></span>
-3. <span data-ttu-id="3fae9-110">Määritä kirjanpidon rekisteröintiprosessi, joka määrittää kirjanpidon rekisteröintivaiheiden järjestyksen sekä kussakin vaiheessa käytettävät kirjanpidon yhdistimet ja kirjanpitoasiakirjojen toimittajat.</span><span class="sxs-lookup"><span data-stu-id="3fae9-110">Configure the fiscal registration process that defines a sequence of fiscal registration steps and the fiscal connectors and fiscal document providers that are used for each step.</span></span>
-4. <span data-ttu-id="3fae9-111">Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintaprofiileihin.</span><span class="sxs-lookup"><span data-stu-id="3fae9-111">Assign the fiscal registration process to point of sale (POS) functionality profiles.</span></span>
-5. <span data-ttu-id="3fae9-112">Määritä yhdistimen tekniset profiilit laiteprofiileihin.</span><span class="sxs-lookup"><span data-stu-id="3fae9-112">Assign connector technical profiles to hardware profiles.</span></span>
-
-## <a name="set-up-a-fiscal-registration-process"></a><span data-ttu-id="3fae9-113">Kirjanpidon rekisteröintiprosessin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="3fae9-113">Set up a fiscal registration process</span></span>
-
-<span data-ttu-id="3fae9-114">Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämistä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-114">Before you use the fiscal integration functionality, you should configure the following settings.</span></span>
-
-1. <span data-ttu-id="3fae9-115">Päivitä vähittäismyynnin parametrit.</span><span class="sxs-lookup"><span data-stu-id="3fae9-115">Update retail parameters.</span></span>
-
-    1. <span data-ttu-id="3fae9-116">Valitse **Vähittäismyynnin yhteiset parametrit** -sivun **Yleiset**-välilehden **Ota kirjanpidon integrointi käyttöön** -asetukseksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="3fae9-116">On the **Retail shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**.</span></span> <span data-ttu-id="3fae9-117">Määritä seuraavien viitteiden numerosarjat **Numerosarjat**-välilehdessä:</span><span class="sxs-lookup"><span data-stu-id="3fae9-117">On the **Number sequences** tab, define the number sequences for the following references:</span></span>
-
-        - <span data-ttu-id="3fae9-118">Kirjanpidon teknisen profiilin numero</span><span class="sxs-lookup"><span data-stu-id="3fae9-118">Fiscal technical profile number</span></span>
-        - <span data-ttu-id="3fae9-119">Kirjanpidon yhdistinryhmän numero</span><span class="sxs-lookup"><span data-stu-id="3fae9-119">Fiscal connector group number</span></span>
-        - <span data-ttu-id="3fae9-120">Rekisteröintiprosessin numero</span><span class="sxs-lookup"><span data-stu-id="3fae9-120">Registration process number</span></span>
-
-    2. <span data-ttu-id="3fae9-121">Määritä kirjanpidon toimintaprofiilinumeron numerosarja **Vähittäismyynnin parametrit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="3fae9-121">On the **Retail parameters** page, define the number sequence for the fiscal functional profile number.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="3fae9-122">Numerosarjat ovat valinnaisia.</span><span class="sxs-lookup"><span data-stu-id="3fae9-122">Number sequences are optional.</span></span> <span data-ttu-id="3fae9-123">Kaikki kirjanpidon integrointiyksiköt voidaan luoda joko numerosarjoista tai manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="3fae9-123">Numbers for all fiscal integration entities can be generated either from number sequences or manually.</span></span>
-
-2. <span data-ttu-id="3fae9-124">Lataa kirjanpidon yhdistimien ja kirjanpitoasiakirjan toimittajien määritykset.</span><span class="sxs-lookup"><span data-stu-id="3fae9-124">Upload configurations of fiscal connectors and fiscal document providers.</span></span>
-
-    <span data-ttu-id="3fae9-125">Kirjanpitoasiakirjan toimittaja vastaa niiden kirjanpitoasiakirjojen luomisesta, jotka vastaavat myyntipisteessä rekisteröityjä vähittäismyyntitransaktioita ja -tapahtumia. Rekisteröinnissä käytetään samaa muotoa, jota käytetään myös kirjanpidon laitetta tai palvelua käytettäessä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-125">A fiscal document provider is responsible for generating fiscal documents that represent retail transactions and events that are registered on the POS in a format that is also used for the interaction with a fiscal device or service.</span></span> <span data-ttu-id="3fae9-126">Kirjanpitoasiakirjan toimittaja voi esimerkiksi luoda verokuitin XML-muodossa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-126">For example, a fiscal document provider might generate a representation of a fiscal receipt in an XML format.</span></span>
-
-    <span data-ttu-id="3fae9-127">Kirjanpidon yhdistin vastaa kirjanpidon laitteen tai palvelun kanssa tapahtuvasta tietoliikenteestä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-127">A fiscal connector is responsible for the communication with a fiscal device or service.</span></span> <span data-ttu-id="3fae9-128">Kirjanpidon yhdistin voi esimerkiksi lähettää kirjanpitoasiakirjan toimittajan XML-muodossa luoman verokuitin kuittitulostimeen.</span><span class="sxs-lookup"><span data-stu-id="3fae9-128">For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer.</span></span> <span data-ttu-id="3fae9-129">Lisätietoja kirjanpidon integroinnin osista on kohdassa [Kirjanpidon rekisteröintiprosessi ja kirjanpidon laitteiden kirjanpidon integrointimallit](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).</span><span class="sxs-lookup"><span data-stu-id="3fae9-129">For more details about fiscal integration components, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).</span></span>
-
-    1. <span data-ttu-id="3fae9-130">Lataa **Kirjanpidon yhdistimet** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistimet**) kunkin sellaisen laitteen tai palvelun XML-määritys, jota aiot käyttää kirjanpidon integroinnissa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-130">On the **Fiscal connectors** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes.</span></span>
-
-        > [!TIP]
-        > <span data-ttu-id="3fae9-131">Valitsemalla **Näytä** voit tarkastella kaikkia nykyisiin kirjanpidon yhdistimeen liittyviä toimintaprofiileja ja teknisiä profiileja.</span><span class="sxs-lookup"><span data-stu-id="3fae9-131">By selecting **View**, you can view all functional and technical profiles that are related to the current fiscal connector.</span></span>
-
-    2. <span data-ttu-id="3fae9-132">Lataa **Kirjanpitoasiakirjan toimittajat** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpitoasiakirjan toimittajat**) kunkin sellaisen laitteen tai palvelun XML-määritys, jota aiot käyttää.</span><span class="sxs-lookup"><span data-stu-id="3fae9-132">On the **Fiscal document providers** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal document providers**), upload an XML configuration for each device or service that you plan to use.</span></span>
-
-        > [!TIP]
-        > <span data-ttu-id="3fae9-133">Valitsemalla **Näytä** voit tarkastella kaikkia nykyiseen kirjanpitoasiakirjan toimittajaan liittyviä toimintaprofiileja.</span><span class="sxs-lookup"><span data-stu-id="3fae9-133">By selecting **View**, you can view all functional profiles that are related to the current fiscal document provider.</span></span>
-
-    <span data-ttu-id="3fae9-134">Esimerkkejä kirjanpidon yhdistimien ja kirjanpitoasiakirjojen toimittajien määrityksistä on kohdassa [Retail SDK:n kirjanpidon integrointimallit](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk).</span><span class="sxs-lookup"><span data-stu-id="3fae9-134">For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Retail SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk).</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="3fae9-135">Tietojen yhdistämisen katsotaan olevan osa kirjainpitoasiakirjan toimittajaa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-135">Data mapping is considered part of a fiscal document provider.</span></span> <span data-ttu-id="3fae9-136">Jos haluat määrittää samalle yhdistimelle erilaisia tietojen yhdistämisiä (kuten osavaltiokohtaisia säädöksiä), sinun on luotava erillisiä kirjainpitoasiakirjan toimittajia.</span><span class="sxs-lookup"><span data-stu-id="3fae9-136">To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.</span></span>
-
-3. <span data-ttu-id="3fae9-137">Luo yhdistimen toiminnalliset ja tekniset profiilit.</span><span class="sxs-lookup"><span data-stu-id="3fae9-137">Create connector functional profiles and connector technical profiles.</span></span>
-
-    1. <span data-ttu-id="3fae9-138">Luo **Yhdistimen toiminnalliset profiilit** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Yhdistimen toiminnalliset profiilit**) yhdistimen toiminnallinen profiili jokaiselle kirjanpidon yhdistimen ja siihen liittyvän kirjanpitoasiakirjan toimittajan yhdistelmälle.</span><span class="sxs-lookup"><span data-stu-id="3fae9-138">On the **Connector functional profiles** page (**Retail \> Channel setup \> Fiscal integration \> Connector functional profiles**), create a connector functional profile for each combination of a fiscal connector and a fiscal document provider that is related to this fiscal connector.</span></span>
-
-        1. <span data-ttu-id="3fae9-139">Valitse yhdistimen nimi.</span><span class="sxs-lookup"><span data-stu-id="3fae9-139">Select a connector name.</span></span>
-        2. <span data-ttu-id="3fae9-140">Valitse asiakirjan toimittaja.</span><span class="sxs-lookup"><span data-stu-id="3fae9-140">Select a document provider.</span></span>
-
-        <span data-ttu-id="3fae9-141">Voit muuttaa tietojen yhdistämisparametreja yhdistimen toiminnallisessa profiilissa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-141">You can change the data mapping parameters in a connector functional profile.</span></span> <span data-ttu-id="3fae9-142">Voit palauttaa kirjanpitoasiakirjan toimittajan määrityksessä määritetyt oletusparametrit valitsemalla **Päivitys**.</span><span class="sxs-lookup"><span data-stu-id="3fae9-142">To restore the default parameters that are defined in the fiscal document provider configuration, select **Update**.</span></span>
-
-        <span data-ttu-id="3fae9-143">**Esimerkkejä**</span><span class="sxs-lookup"><span data-stu-id="3fae9-143">**Examples**</span></span>
-    
-        |   | <span data-ttu-id="3fae9-144">Muoto</span><span class="sxs-lookup"><span data-stu-id="3fae9-144">Format</span></span> | <span data-ttu-id="3fae9-145">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="3fae9-145">Example</span></span> |
-        |---|--------|---------|
-        | <span data-ttu-id="3fae9-146">**ALV-prosenttiasetukset**</span><span class="sxs-lookup"><span data-stu-id="3fae9-146">**VAT rates settings**</span></span> | <span data-ttu-id="3fae9-147">arvo: VATrate</span><span class="sxs-lookup"><span data-stu-id="3fae9-147">value : VATrate</span></span> | <span data-ttu-id="3fae9-148">1 : 2000, 2 : 1800</span><span class="sxs-lookup"><span data-stu-id="3fae9-148">1 : 2000, 2 : 1800</span></span> |
-        | <span data-ttu-id="3fae9-149">**ALV-koodien yhdistäminen**</span><span class="sxs-lookup"><span data-stu-id="3fae9-149">**VAT codes mapping**</span></span> | <span data-ttu-id="3fae9-150">VATcode : arvo</span><span class="sxs-lookup"><span data-stu-id="3fae9-150">VATcode : value</span></span> | <span data-ttu-id="3fae9-151">vat20 : 1, vat18 : 2</span><span class="sxs-lookup"><span data-stu-id="3fae9-151">vat20 : 1, vat18 : 2</span></span> |
-        | <span data-ttu-id="3fae9-152">**Maksuvälinetyyppien yhdistäminen**</span><span class="sxs-lookup"><span data-stu-id="3fae9-152">**Tender types mapping**</span></span> | <span data-ttu-id="3fae9-153">TenderType : arvo</span><span class="sxs-lookup"><span data-stu-id="3fae9-153">TenderType : value</span></span> | <span data-ttu-id="3fae9-154">Käteinen : 1, Kortti : 2</span><span class="sxs-lookup"><span data-stu-id="3fae9-154">Cash : 1, Card : 2</span></span> |
-
-        > [!NOTE]
-        > <span data-ttu-id="3fae9-155">Yhdistimen toiminnalliset profiilit ovat yrityskohtaisia.</span><span class="sxs-lookup"><span data-stu-id="3fae9-155">Connector functional profiles are company-specific.</span></span> <span data-ttu-id="3fae9-156">Jos aiot käyttää samaa kirjanpidon yhdistimen ja kirjanpitoasiakirjan toimittajan yhdistelmää eri yrityksissä, kullekin yritykselle on luotava yhdistimen toiminnallinen profiili.</span><span class="sxs-lookup"><span data-stu-id="3fae9-156">If you plan to use the same combination of a fiscal connector and a fiscal document provider in different companies, you should create a connector functional profile for each company.</span></span>
-
-    2. <span data-ttu-id="3fae9-157">Luo kunkin kirjanpidon yhdistimen toiminnallinen profiili **Yhdistimen tekniset profiilit** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \>Yhdistimen tekniset profiilit**).</span><span class="sxs-lookup"><span data-stu-id="3fae9-157">On the **Connector technical profiles** page (**Retail \> Channel setup \> Fiscal integration \> Connector technical profiles**), create a connector technical profile for each fiscal connector.</span></span>
-
-        1. <span data-ttu-id="3fae9-158">Valitse yhdistimen nimi.</span><span class="sxs-lookup"><span data-stu-id="3fae9-158">Select a connector name.</span></span>
-        2. <span data-ttu-id="3fae9-159">Valitse yhdistimen tyyppi.</span><span class="sxs-lookup"><span data-stu-id="3fae9-159">Select a connector type.</span></span> <span data-ttu-id="3fae9-160">Valitse laiteasemaan liitetyissä laitteissa **Paikallinen**.</span><span class="sxs-lookup"><span data-stu-id="3fae9-160">For devices that are connected to a Hardware station, select **Local**.</span></span>
-
-            > [!NOTE]
-            > <span data-ttu-id="3fae9-161">Vain paikallisia yhdistimiä tuetaan.</span><span class="sxs-lookup"><span data-stu-id="3fae9-161">Only local connectors are currently supported.</span></span>
-
-        <span data-ttu-id="3fae9-162">Yhdistimen teknisen profiilin **Laite**- ja **Asetukset**-välilehtien parametreja voi muuttaa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-162">Parameters on the **Device** and **Settings** tabs in a connector technical profile can be changed.</span></span> <span data-ttu-id="3fae9-163">Voit palauttaa kirjanpidon yhdistimen määrityksessä määritetyt oletusparametrit valitsemalla **Päivitys**.</span><span class="sxs-lookup"><span data-stu-id="3fae9-163">To restore the default parameters that are defined in the fiscal connector configuration, select **Update**.</span></span> <span data-ttu-id="3fae9-164">Kun XML-määrityksen uutta versiota ladataan, saat ilmoituksen, jonka mukaan nykyistä kirjanpidon yhdistintä tai kirjanpitoasiakirjan toimittaja on jo käytössä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-164">While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used.</span></span> <span data-ttu-id="3fae9-165">Tämä menettely ei ohita yhdistimen toiminnallisiin tai teknisiin profiileihin aiemmin tehtyjä manuaalisia muutoksia.</span><span class="sxs-lookup"><span data-stu-id="3fae9-165">This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles.</span></span> <span data-ttu-id="3fae9-166">Voit käyttää uuden määrityksen oletusparametrijoukkoa valitsemalla **Päivitä** **Yhdistimen toiminnalliset profiilit**- tai **Yhdistimen tekniset profiilit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="3fae9-166">To apply the default set of parameters from a new configuration, on the **Connector functional profiles** page or the **Connector technical profiles** page, select **Update**.</span></span>
-
-4. <span data-ttu-id="3fae9-167">Luo kirjanpidon yhdistinryhmiä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-167">Create fiscal connector groups.</span></span>
-
-    <span data-ttu-id="3fae9-168">Kirjanpidon yhdistinryhmä yhdistää ne kirjanpidon yhdistimien toiminnalliset profiilit, jotka suorittavat samoja toimintoja ja joita käytetään samassa kirjanpidon rekisteröintiprosessin vaiheessa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-168">A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process.</span></span> <span data-ttu-id="3fae9-169">Jos esimerkiksi myymälässä käytetään useita kuittitulostinmalleja, kyseisten kuittitulostimien kirjanpidon yhdistimet voidaan yhdistää kirjanpidon yhdistinryhmäksi.</span><span class="sxs-lookup"><span data-stu-id="3fae9-169">For example, if several fiscal printer models can be used in a retail store, fiscal connectors for those fiscal printers can be combined in a fiscal connector group.</span></span>
-    
-    1. <span data-ttu-id="3fae9-170">Luo uusi kirjanpidon yhdistinryhmä **Kirjanpidon yhdistinryhmä** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistinryhmä**).</span><span class="sxs-lookup"><span data-stu-id="3fae9-170">On the **Fiscal connector group** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**), create a new fiscal connector group.</span></span>
-    2. <span data-ttu-id="3fae9-171">Lisää toiminnalliset profiilit yhdistinryhmään.</span><span class="sxs-lookup"><span data-stu-id="3fae9-171">Add functional profiles to the connector group.</span></span> <span data-ttu-id="3fae9-172">Valitse ensin **Toiminnalliset profiilit** -sivulla **Lisää** ja valitse sitten profiilin numero.</span><span class="sxs-lookup"><span data-stu-id="3fae9-172">On the **Functional profiles** tab, select **Add**, and select a profile number.</span></span> <span data-ttu-id="3fae9-173">Kullakin yhdistinryhmän kirjanpidon yhdistimellä voi olla vain yksi toiminnallinen profiili.</span><span class="sxs-lookup"><span data-stu-id="3fae9-173">Each fiscal connector in a connector group can only have one functional profile.</span></span>
-    3. <span data-ttu-id="3fae9-174">Voit keskeyttää toiminnallisen profiilin käytön valitsemalla **Poista käytöstä** -asetukseksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="3fae9-174">To suspend use of the functional profile, set the **Disable** option to **Yes**.</span></span> <span data-ttu-id="3fae9-175">Muutos koskee vain nykyistä yhdistinryhmää.</span><span class="sxs-lookup"><span data-stu-id="3fae9-175">This change affects only the current connector group.</span></span> <span data-ttu-id="3fae9-176">Voit jatkaa saman toiminnallisen profiilin käyttöä muissa yhdistinryhmissä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-176">You can continue to use the same functional profile in other connector groups.</span></span>
-
-5. <span data-ttu-id="3fae9-177">Luo kirjanpidon rekisteröintiprosessi.</span><span class="sxs-lookup"><span data-stu-id="3fae9-177">Create a fiscal registration process.</span></span>
-
-    <span data-ttu-id="3fae9-178">Rekisteröintivaiheiden järjestys ja kussakin vaiheessa käytetty yhdistinryhmä määrittävät kirjanpidon rekisteröintiprosessin.</span><span class="sxs-lookup"><span data-stu-id="3fae9-178">A fiscal registration process is defined by the sequence of registration steps and the connector group that is used for each step.</span></span>
-    
-    1. <span data-ttu-id="3fae9-179">Luo uusi tietue kirjanpidon rekisteröinnin kullekin yksilölliselle prosessille **Kirjanpidon rekisteröintiprosessi** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessi**).</span><span class="sxs-lookup"><span data-stu-id="3fae9-179">On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), create a new record for each unique process of fiscal registration.</span></span>
-    2. <span data-ttu-id="3fae9-180">Lisää rekisteröintivaiheet prosessiin:</span><span class="sxs-lookup"><span data-stu-id="3fae9-180">Add registration steps to the process:</span></span>
-
-        1. <span data-ttu-id="3fae9-181">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="3fae9-181">Select **Add**.</span></span>
-        2. <span data-ttu-id="3fae9-182">Valitse kirjanpidon yhdistimen tyyppi.</span><span class="sxs-lookup"><span data-stu-id="3fae9-182">Select a fiscal connector type.</span></span>
-        3. <span data-ttu-id="3fae9-183">Valitse sopiva kirjanpidon yhdistinryhmä **Ryhmän numero** -kentässä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-183">In the **Group number** field, select an appropriate fiscal connector group.</span></span>
-
-6. <span data-ttu-id="3fae9-184">Määritä kirjanpidon rekisteröintiprosessiyksiköt myyntipisteen profiileihin.</span><span class="sxs-lookup"><span data-stu-id="3fae9-184">Assign entities of the fiscal registration process to POS profiles.</span></span>
-
-    1. <span data-ttu-id="3fae9-185">Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintoprofiiliin **Myyntipisteen toimintoprofiilit** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit**).</span><span class="sxs-lookup"><span data-stu-id="3fae9-185">On the **POS functionality profiles** page (**Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**), assign the fiscal registration process to a POS functionality profile.</span></span> <span data-ttu-id="3fae9-186">Valitse ensin **Muokkaa** ja sitten prosessi **Kirjanpidon rekisteröintiprosessi** -välilehden **Prosessin numero** -kentässä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-186">Select **Edit**, and then, on the **Fiscal registration process** tab, in the **Process number** field, select a process.</span></span>
-    2. <span data-ttu-id="3fae9-187">Määritä yhdistimen tekniset profiilit laiteprofiiliin **POS-laiteprofiili** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Laite profiilit**).</span><span class="sxs-lookup"><span data-stu-id="3fae9-187">On the **POS hardware profile** page (**Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**), assign connector technical profiles to a hardware profile.</span></span> <span data-ttu-id="3fae9-188">Valitse **Muokkaa**, lisää rivit **Kirjanpidon oheislaitteet** -välilehdessä ja valitse sitten yhdistimen tekninen profiili **Profiilin numero** -kentässä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-188">Select **Edit**, add a line on the **Fiscal peripherals** tab, and then, in the **Profile number** field, select a connector technical profile.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="3fae9-189">Voit lisätä useita teknisiä profiileja samaan laiteprofiiliin.</span><span class="sxs-lookup"><span data-stu-id="3fae9-189">You can add several technical profiles to the same hardware profile.</span></span> <span data-ttu-id="3fae9-190">Laiteprofiilia tai myyntipisteen toimintoprofiilia voi kuitenkin käyttää vain kerran samassa kirjanpidon yhdistinryhmässä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-190">However, a hardware profile or POS functionality profile should have only one intersection with any fiscal connector group.</span></span>
-
-    <span data-ttu-id="3fae9-191">Kirjanpidon rekisteröinnin työnkulun määrittää kirjanpidon rekisteröintiprosessi sekä tietyt kirjanpidon integrointiosien osat: kirjanpitoasiakirjan toimittajan Commerce Runtime -laajennus ja kirjanpidon yhdistimen Hardware station -laajennus.</span><span class="sxs-lookup"><span data-stu-id="3fae9-191">The fiscal registration flow is defined by the fiscal registration process and also by some parameters of fiscal integration components: the Commerce runtime extension for the fiscal document provider and the Hardware station extension for the fiscal connector.</span></span>
-
-    - <span data-ttu-id="3fae9-192">Kirjanpidon rekisteröinnin tapahtumien ja transaktioiden tilaus määritetään valmiiksi kirjanpitoasiakirjan toimittajassa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-192">The subscription of events and transactions to fiscal registration is predefined in the fiscal document provider.</span></span>
-    - <span data-ttu-id="3fae9-193">Kirjanpitoasiakirjan toimittaja vastaa myös kirjanpidon rekisteröinnissä käytettävän kirjanpidon yhdistimen tunnistamisesta.</span><span class="sxs-lookup"><span data-stu-id="3fae9-193">The fiscal document provider is also responsible for identifying the fiscal connector that is used for fiscal registration.</span></span> <span data-ttu-id="3fae9-194">Se yhdistää siihen kirjanpidon yhdistinryhmään sisältyvät yhdistimen toiminnalliset profiilit, joka on määritetty kirjanpidon rekisteröintiprosessin nykyiselle vaiheelle, siihen yhdistimen tekniseen profiilin, joka on määritetty myyntipisteeseen pariliitoksen muodostaneen laiteaseman laiteprofiiliin.</span><span class="sxs-lookup"><span data-stu-id="3fae9-194">It matches the connector functional profiles that are included in the fiscal connector group that is specified for the current step of the fiscal registration process with the connector technical profile that is assigned to the hardware profile of the Hardware station that the POS is paired to.</span></span>
-    - <span data-ttu-id="3fae9-195">Kirjanpitoasiakirjan toimittaja käyttää kirjanpitoasiakirjan toimittajan määrityksen tietojen yhdistämisasetuksia transaktio- tai tapahtumatietojen, kuten verojen ja maksujen, muuntamiseen kirjanpitoasiakirjaa luotaessa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-195">The fiscal document provider uses the data mapping settings from the fiscal document provider configuration to transform transaction/event data such as taxes and payments while a fiscal document is generated.</span></span>
-    - <span data-ttu-id="3fae9-196">Kun kirjanpitoasiakirjan toimittaja luo kirjanpitoasiakirjan, kirjanpidon yhdistin voi joko lähettää sen sellaisenaan kirjanpidon laitteeseen tai muuntaa sen sarjaksi laitteen ohjelmointirajapinnan komentoja. Valittu vaihtoehto perustuu siihen, miten tietoliikennettä käsitellään.</span><span class="sxs-lookup"><span data-stu-id="3fae9-196">When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device application programming interface (API), depending on how the communication is handled.</span></span>
-
-7. <span data-ttu-id="3fae9-197">Vahvista kirjanpidon rekisteröintiprosessi **Kirjanpidon rekisteröintiprosessi** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessit**) valitsemalla **Vahvista**.</span><span class="sxs-lookup"><span data-stu-id="3fae9-197">On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), select **Validate** to validate the fiscal registration process.</span></span>
-
-    <span data-ttu-id="3fae9-198">Tämän tyyppinen vahvistus kannattaa tehdä seuraavissa tapauksissa:</span><span class="sxs-lookup"><span data-stu-id="3fae9-198">We recommend that you run this type of validation in the following cases:</span></span>
-    
-    - <span data-ttu-id="3fae9-199">Uudessa rekisteröintiprosessissa sen jälkeen, kun kaikki asetukset ovat valmiita – myös silloin kun rekisteröintiprosessit määritetään myyntipisteen toiminnallisiin profiileihin ja laitteistoprofiileihin.</span><span class="sxs-lookup"><span data-stu-id="3fae9-199">After you've completed all the settings for a new registration process, including when you assign registration processes to POS functionality profiles and hardware profiles.</span></span>
-    - <span data-ttu-id="3fae9-200">Aiemmin luodussa kirjanpidon rekisteröintiprosessissa tehtyjen muutosten jälkeen, kun kyseiset muutokset voivat aiheuttaa toisen kirjanpidon yhdistimen valinnan suorituksen aikana. (Näin voi tapahtua esimerkiksi silloin, kun kirjanpidon rekisteröintiprosessivaiheen yhdistinryhmä vaihdetaan, yhdistimen toiminnallinen profiili otetaan käyttöön yhdistinryhmässä tai yhdistimen uusi toiminnallinen profiili lisätään yhdistinryhmään.)</span><span class="sxs-lookup"><span data-stu-id="3fae9-200">After you make changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime (for example, if you change the connector group for a fiscal registration process step, enable a connector functional profile in a connector group, or add a new connector functional profile to a connector group).</span></span>
-    - <span data-ttu-id="3fae9-201">Yhdistimen teknisten profiilien laiteprofiileihin määrittämisessä tehtyjen muutosten jälkeen.</span><span class="sxs-lookup"><span data-stu-id="3fae9-201">After you make changes in the assignment of connector technical profiles to hardware profiles.</span></span>
-
-8. <span data-ttu-id="3fae9-202">Siirrä tiedot kanavatietokantaan suorittamalla **Jakeluaikataulu** -sivulla **1070**- ja **1090**-työt.</span><span class="sxs-lookup"><span data-stu-id="3fae9-202">On the **Distribution schedule** page, run the **1070** and **1090** jobs to transfer data to the channel database.</span></span>
-
-## <a name="set-up-fiscal-texts-for-discounts"></a><span data-ttu-id="3fae9-203">Alennusten kirjanpitotekstien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="3fae9-203">Set up fiscal texts for discounts</span></span>
-
-<span data-ttu-id="3fae9-204">Alennusta käytettäessä verokuittiin on joissakin tapauksissa tulostettava erityinen teksti.</span><span class="sxs-lookup"><span data-stu-id="3fae9-204">In some cases, a special text must be printed on a fiscal receipt if a discount is applied.</span></span> <span data-ttu-id="3fae9-205">Voit määrittää alennusten kirjanpitotekstit **Kirjanpidon yhdistinryhmä** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistinryhmä**).</span><span class="sxs-lookup"><span data-stu-id="3fae9-205">You can set up fiscal texts for discounts on the **Fiscal connector group** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**).</span></span>
-
-- <span data-ttu-id="3fae9-206">Jos kyse on manuaalisesti myyntipisteessä lisättävistä alennuksista, tietokoodin tai tietokoodiryhmän kirjanpitoteksti on määritettävä. Tämä tietokoodi määritetään myyntipisteen toimintaprofiilissa **Tuotealennus**-tietokoodina.</span><span class="sxs-lookup"><span data-stu-id="3fae9-206">For manual discounts that are applied at the POS, you should set a fiscal text for the info code or info code group that is specified as the **Product discount** info code in the POS functionality profile.</span></span>
-
-    1. <span data-ttu-id="3fae9-207">Valitse **Kirjanpidon yhdistinryhmä** -sivulla **Verokuitin teksti**.</span><span class="sxs-lookup"><span data-stu-id="3fae9-207">On the **Fiscal connector group** page, select **Text for fiscal receipt**.</span></span>
-    2. <span data-ttu-id="3fae9-208">Valitse **Tietokoodit**-välilehdessä ensin **Lisää** ja sitten tietokoodi tai tietokoodiryhmä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-208">On the **Info codes** tab, select **Add**, and select an info code or info code group.</span></span>
-    3. <span data-ttu-id="3fae9-209">Valitse **Tietokoodin numero** -kohdassa arvo.</span><span class="sxs-lookup"><span data-stu-id="3fae9-209">In the **Info code number**, select a value.</span></span>
-    4. <span data-ttu-id="3fae9-210">Valitse **Alikoodin numero** -kentässä arvo, jos valittu tietokoodi edellyttää alikoodia.</span><span class="sxs-lookup"><span data-stu-id="3fae9-210">In the **Subcode number** field, select a value if a subcode is required for the selected info code.</span></span>
-    5. <span data-ttu-id="3fae9-211">Määritä **Verokuitin teksti** -kentässä verokuittiin tulostettava kirjanpitoteksti.</span><span class="sxs-lookup"><span data-stu-id="3fae9-211">In the **Text for fiscal receipt** field, specify a fiscal text that should be printed on a fiscal receipt.</span></span>
-    6. <span data-ttu-id="3fae9-212">Valitse **Tulosta käyttäjän syöte verokuittiin** -asetukseksi **Kyllä**, jolloin verokuitin teksti korvataan käyttäjän myyntipisteessä manuaalisesti antamilla tiedoilla.</span><span class="sxs-lookup"><span data-stu-id="3fae9-212">Set the **Print user input on fiscal receipt** option to **Yes** to override the text on a fiscal receipt with information that a user manually enters at the POS.</span></span> <span data-ttu-id="3fae9-213">Tämä asetus koskee vain tietokoodeja, joiden syötetyyppi on **Teksti**.</span><span class="sxs-lookup"><span data-stu-id="3fae9-213">This option applies only to info codes that have an input type of **Text**.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="3fae9-214">Voit määrittää kirjanpitotekstin useisiin tietokoodeihin sellaisia skenaarioita varten, joissa käytetään tietokoodiryhmiä. linkitettyjä tietokoodeja ja käynnistettyjä tietokoodeja.</span><span class="sxs-lookup"><span data-stu-id="3fae9-214">You can specify a fiscal text for several info codes to support scenarios where info code groups, linked info codes, and triggered info codes are used.</span></span> <span data-ttu-id="3fae9-215">Näissä skenaarioissa verokuitissa on kirjanpitotekstiä kaikista siihen tapahtumariviin linkitetyistä tietokoodeista, jossa alennusta käytettiin.</span><span class="sxs-lookup"><span data-stu-id="3fae9-215">In these scenarios, the fiscal receipt will contain the fiscal texts from all info codes that are linked to the transaction line where the discount was applied.</span></span>
-
-- <span data-ttu-id="3fae9-216">Kanavakohtaisissa alennuksissa alennustunnukselle on määritettävä kirjanpitoteksti.</span><span class="sxs-lookup"><span data-stu-id="3fae9-216">For channel-specific discounts, you should define a fiscal text for the discount ID.</span></span>
-
-    1. <span data-ttu-id="3fae9-217">Valitse **Kirjanpidon yhdistinryhmä** -sivulla **Verokuitin teksti**.</span><span class="sxs-lookup"><span data-stu-id="3fae9-217">On the **Fiscal connector group** page, select **Text for fiscal receipt**.</span></span>
-    2. <span data-ttu-id="3fae9-218">Valitse **Alennukset**-välilehdessä ensin **Lisää** ja sitten alennustunnus.</span><span class="sxs-lookup"><span data-stu-id="3fae9-218">On the **Discounts** tab, select **Add**, and select a discount ID.</span></span>
-    3. <span data-ttu-id="3fae9-219">Määritä **Verokuitin teksti** -kentässä verokuittiin tulostettava kirjanpitoteksti.</span><span class="sxs-lookup"><span data-stu-id="3fae9-219">In the **Text for fiscal receipt** field, specify a fiscal text that should be printed on a fiscal receipt.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="3fae9-220">Jos samalle tapahtumariville käytetään useita alennuksia, verokuitissa on kirjanpitotekstiä kaikista kyseiseen tapahtumariviin linkitetyistä alennuksista.</span><span class="sxs-lookup"><span data-stu-id="3fae9-220">If several discounts are applied to the same transaction line, the fiscal receipt will contain fiscal texts from all discounts that are linked to those transaction line.</span></span>
-
-## <a name="set-error-handling-settings"></a><span data-ttu-id="3fae9-221">Virheen käsittelyasetusten määrittäminen</span><span class="sxs-lookup"><span data-stu-id="3fae9-221">Set error handling settings</span></span>
-
-<span data-ttu-id="3fae9-222">Kirjanpidon integroinnissa käytettävissä olevat virheen käsittelyasetukset määritetään kirjanpidon rekisteröintiprosessissa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-222">The error handling options that are available in the fiscal integration are set in the fiscal registration process.</span></span> <span data-ttu-id="3fae9-223">Lisätietoja virheen käsittelystä kirjanpidon integroinnissa on kohdassa [Virheen käsittely](fiscal-integration-for-retail-channel.md#error-handling).</span><span class="sxs-lookup"><span data-stu-id="3fae9-223">For more information about error handling in the fiscal integration, see [Error handling](fiscal-integration-for-retail-channel.md#error-handling).</span></span>
-
-1. <span data-ttu-id="3fae9-224">Voit määrittää seuraavat parametrit kirjanpidon rekisteröinnin kullekin vaiheelle **Kirjanpidon rekisteröintiprosessi** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessi**):</span><span class="sxs-lookup"><span data-stu-id="3fae9-224">On the **Fiscal registration process** page (**Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**), you can set the following parameters for each step of the fiscal registration process:</span></span>
-
-    - <span data-ttu-id="3fae9-225">**Salli ohitus** – tämä parametri ottaa **Ohita**-asetuksen käyttöön virheen käsittelyn valintaikkunassa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-225">**Allow skip** – This parameter enables the **Skip** option in the error handling dialog box.</span></span>
-    - <span data-ttu-id="3fae9-226">**Salli rekisteröidyksi merkitseminen** – tämä parametri ottaa **Merkitse rekisteröidyksi** -asetuksen käyttöön virheen käsittelyn valintaikkunassa.</span><span class="sxs-lookup"><span data-stu-id="3fae9-226">**Allow mark as registered** – This parameter enables the **Mark as registered** option in the error handling dialog box.</span></span>
-    - <span data-ttu-id="3fae9-227">**Jatka virheen ilmetessä** – Jos tämä parametri on käytössä, kirjanpidon rekisteröintiprosessi voi jatkua POS-rekisterissä, jos transaktion tai tapahtuman tilikausirekisteröinti epäonnistuu.</span><span class="sxs-lookup"><span data-stu-id="3fae9-227">**Continue on error** – If this parameter is enabled, the fiscal registration process can continue on the POS register if the fiscal registration of a transaction or event fails.</span></span> <span data-ttu-id="3fae9-228">Muussa tapauksessa operaattorin on suoritettava epäonnistunut tilikausirekisteröinti uudelleen, ohitettava se tai merkittävä transaktio tai tapahtuma rekisteröidyksi, jos haluaa suorittaa seuraavan transaktion tai tapahtuman tilikausirekisteröinnin.</span><span class="sxs-lookup"><span data-stu-id="3fae9-228">Otherwise, to run the fiscal registration of the next transaction or event, the operator must retry the failed fiscal registration, skip it, or mark the transaction or event as registered.</span></span> <span data-ttu-id="3fae9-229">Lisätietoja on kohdassa [valinnainen tilikausirekisteröinti](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).</span><span class="sxs-lookup"><span data-stu-id="3fae9-229">For more information, see [Optional fiscal registration](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="3fae9-230">Jos **Jatka virheen ilmetessä** -parametri on käytössä, **Salli Ohita**- ja **Salli Merkitse rekisteröidyksi** -parametrit ovat automaattisesti poissa käytöstä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-230">If the **Continue on error** parameter is enabled, the **Allow skip** and **Allow mark as registered** parameters are automatically disabled.</span></span>
-
-2. <span data-ttu-id="3fae9-231">Virheen käsittelyn valintaikkunan **Ohita**- ja **Merkitse rekisteröidyksi** -asetukset edellyttävät **Salli rekisteröinnin ohitus tai rekisteröidyksi merkitseminen** -käyttöoikeuden.</span><span class="sxs-lookup"><span data-stu-id="3fae9-231">The **Skip** and **Mark as registered** options in the error handling dialog box require the **Allow skip registration or mark as registered** permission.</span></span> <span data-ttu-id="3fae9-232">Ota tämän vuoksi **Salli ohita rekisteröinti tai rekisteröidyksi merkitseminen** -käyttöoikeus käyttöön **Käyttöoikeusryhmät** -sivulla (**Vähittäismyynti \> Työntekijät \> Käyttöoikeusryhmät**).</span><span class="sxs-lookup"><span data-stu-id="3fae9-232">Therefore, on the **Permission groups** page (**Retail \> Employees \> Permission groups**), enable the **Allow skip registration or mark as registered** permission.</span></span>
-3. <span data-ttu-id="3fae9-233">Käyttäjät voivat antaa **Ohita**- ja **Merkitse rekisteröidyksi** -asetuksilla lisätietoja siitä, milloin kirjanpidon rekisteröinti epäonnistuu.</span><span class="sxs-lookup"><span data-stu-id="3fae9-233">The **Skip** and **Mark as registered** options let operators enter additional information when fiscal registration fails.</span></span> <span data-ttu-id="3fae9-234">Voit ottaa tämän toiminnon käyttöön määrittämällä **Ohita**- ja **Merkitse rekisteröidyksi** -tietokoodit kirjanpidon yhdistinryhmässä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-234">To make this functionality available, you should specify the **Skip** and **Mark as registered** info codes on a fiscal connector group.</span></span> <span data-ttu-id="3fae9-235">Käyttäjien antamat tiedot tallennetaan sitten kirjanpitotapahtumaan linkitettyjä tietokooditapahtumana.</span><span class="sxs-lookup"><span data-stu-id="3fae9-235">The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction.</span></span> <span data-ttu-id="3fae9-236">Lisätietoja tietokoodeista on kohdassa [Tietokoodit ja tietokoodiryhmät](../info-codes-retail.md).</span><span class="sxs-lookup"><span data-stu-id="3fae9-236">For more details about info codes, see [Info codes and info code groups](../info-codes-retail.md).</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="3fae9-237">**Tuotteen** käynnistintoimintoa ei tueta tietokoodeissa, joita käytetään **Ohita**- ja **Merkitse rekisteröidyksi** -asetuksina kirjanpidon yhdistinryhmissä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-237">The **Product** trigger function isn't supported for the info codes that are used for **Skip** and **Mark as registered** in fiscal connector groups.</span></span>
-
-    - <span data-ttu-id="3fae9-238">Valitse **Kirjanpidon yhdistinryhmä**-sivun **Tietokoodit**-välilehdessä tietokoodit tai tietokooditryhmät **Ohita**- ja **Merkitse rekisteröidyksi** -kenttinä.</span><span class="sxs-lookup"><span data-stu-id="3fae9-238">On the **Fiscal connector group** page, on the **Info codes** tab, select info codes or info code groups in the **Skip** and **Mark as registered** fields.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="3fae9-239">Kirjanpidon rekisteröintiprosessin missä tahansa vaiheessa voidaan luoda yksi kirjanpitoasiakirja ja yksi muu kuin kirjanpitoasiakirja.</span><span class="sxs-lookup"><span data-stu-id="3fae9-239">One fiscal document and one non-fiscal document can be generated on any step of a fiscal registration process.</span></span> <span data-ttu-id="3fae9-240">Kirjanpitoasiakirjan toimittajalaajennus tunnistaa jokaisen transaktio- tai tapahtumatyypin kirjanpitoasiakirjaan tai muuhun kuin kirjanpitoasiakirjaan liittyväksi.</span><span class="sxs-lookup"><span data-stu-id="3fae9-240">A fiscal document provider extension identifies every type of transaction or event as related to fiscal or non-fiscal documents.</span></span> <span data-ttu-id="3fae9-241">Virheen käsittelytoiminto koskee vain kirjanpitoasiakirjoja.</span><span class="sxs-lookup"><span data-stu-id="3fae9-241">The error handling feature applies only to fiscal documents.</span></span>
-    >
-    > - <span data-ttu-id="3fae9-242">**Kirjanpitoasiakirja** – pakollinen asiakirja, jonka rekisteröitymisen on onnistuttava (esimerkiksi verokuitti).</span><span class="sxs-lookup"><span data-stu-id="3fae9-242">**Fiscal document** – A mandatory document that should be registered successfully (for example, a fiscal receipt).</span></span>
-    > - <span data-ttu-id="3fae9-243">**Muu kuin kirjanpitoasiakirja** – transaktion tai tapahtuman täydentävä asiakirja (esimerkiksi lahjakortti).</span><span class="sxs-lookup"><span data-stu-id="3fae9-243">**Non-fiscal document** – A supplementary document for the transaction or event (for example, a gift card slip).</span></span>
-
-4. <span data-ttu-id="3fae9-244">Jos operaattorin on voitava jatkaa nykyisen toiminnan käsittelyä (esimerkiksi tapahtuman luominen tai viimeistely) kuntotarkastuksen virheen jälkeen, sen on otettava käyttöön **Salli kuntotarkistuksen virheen ohitus** -käyttöoikeudet **Käyttöoikeusryhmät** -sivulla (**Retail \> työntekijät \> käyttöoikeusryhmät**).</span><span class="sxs-lookup"><span data-stu-id="3fae9-244">If the operator must be able to continue to process the current operation (for example, creation or finalization of a transaction) after a health check error occurs, you should enable the **Allow skip health check error** permission on the **Permission groups** page (**Retail \> Employees \> Permission groups**).</span></span> <span data-ttu-id="3fae9-245">Saat lisätietoja kuntotarkastusmenettelystä kohdasta [Tilikausirekisteröinnin kuntotarkastus](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).</span><span class="sxs-lookup"><span data-stu-id="3fae9-245">For more information about the health check procedure, see [Fiscal registration health check](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).</span></span>
-
-## <a name="set-up-fiscal-xz-reports-from-the-pos"></a><span data-ttu-id="3fae9-246">Kirjanpidon X/Z-raporttien määrittäminen myyntipisteessä</span><span class="sxs-lookup"><span data-stu-id="3fae9-246">Set up fiscal X/Z reports from the POS</span></span>
-
-<span data-ttu-id="3fae9-247">Kirjanpidon X/Z-raporttien suorittaminen myyntipisteestä edellyttää, että myyntipisteen asetteluun lisätään uusia painikkeita.</span><span class="sxs-lookup"><span data-stu-id="3fae9-247">To enable fiscal X/Z reports to be run from the POS, you should add new buttons to a POS layout.</span></span>
-
-- <span data-ttu-id="3fae9-248">Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu **Painikeruudukot**-sivulla noudattamalla kohdan [Mukautetun toimintopainikkeen lisääminen myyntipisteen asetteluun Retail Headquarters -sovelluksessa](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) ohjeita.</span><span class="sxs-lookup"><span data-stu-id="3fae9-248">On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.</span></span>
-
-    1. <span data-ttu-id="3fae9-249">Valitse päivitettävä asettelu.</span><span class="sxs-lookup"><span data-stu-id="3fae9-249">Select the layout to update.</span></span> 
-    2. <span data-ttu-id="3fae9-250">Lisää uusi painike, määritä **Tulosta kuitti X** -painikeominaisuus.</span><span class="sxs-lookup"><span data-stu-id="3fae9-250">Add a new button, and set the **Print fiscal X** button property.</span></span>
-    3. <span data-ttu-id="3fae9-251">Lisää uusi painike ja määritä **Tulosta kuitti Z** -painikeominaisuus.</span><span class="sxs-lookup"><span data-stu-id="3fae9-251">Add a new button, and set the **Print fiscal Z** button property.</span></span>
-    4. <span data-ttu-id="3fae9-252">Siirrä muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="3fae9-252">On the **Distribution schedule** page, run the **1090** job to transfer changes to the channel database.</span></span>
-
-## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a><span data-ttu-id="3fae9-253">Ota käyttöön lykätyn tilikausirekisteröinnin manuaalinen käyttö</span><span class="sxs-lookup"><span data-stu-id="3fae9-253">Enable manual execution of postponed fiscal registration</span></span>
-
-<span data-ttu-id="3fae9-254">Jos haluat ottaa käyttöön lykätyn tilikausirekisteröinnin manuaalisen käytön, lisää uusi painike POS-asetteluun.</span><span class="sxs-lookup"><span data-stu-id="3fae9-254">To enable manual execution of a postponed fiscal registration, you should add a new button to a POS layout.</span></span>
-
-- <span data-ttu-id="3fae9-255">Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu **Painikeruudukot**-sivulla noudattamalla kohdan [Mukautetun toimintopainikkeen lisääminen myyntipisteen asetteluun Retail Headquarters -sovelluksessa](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) ohjeita.</span><span class="sxs-lookup"><span data-stu-id="3fae9-255">On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.</span></span>
-
-    1. <span data-ttu-id="3fae9-256">Valitse päivitettävä asettelu.</span><span class="sxs-lookup"><span data-stu-id="3fae9-256">Select the layout to update.</span></span>
-    2. <span data-ttu-id="3fae9-257">Lisää uusi painike, määritä **Viimeistele tilikausirekisteröintiprosessi** -painikeominaisuus.</span><span class="sxs-lookup"><span data-stu-id="3fae9-257">Add a new button, and set the **Complete fiscal registration process** button property.</span></span>
-    3. <span data-ttu-id="3fae9-258">Siirrä tekemäsi muutokset kanavatietokantaan suorittamalla työ **1090** **Ajastuksen jakelu** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="3fae9-258">On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="setting-up-fiscal-integration-for-retail-channel.md" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>setting-up-fiscal-integration-for-retail-channel.bcaf21.fda94e77480b9d9455fc0e214e43772ab2921f2d.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>fda94e77480b9d9455fc0e214e43772ab2921f2d</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>ffc37f7c2a63bada3055f37856a30424040bc9a3</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/16/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\localizations\setting-up-fiscal-integration-for-retail-channel.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Set up the fiscal integration for Retail channels</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähittäismyyntikanavien kirjanpidon integroinnin määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides guidelines for setting up the fiscal integration functionality for Retail channels.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä ohjeaiheessa on ohjeet vähittäismyyntikanavien kirjanpidon integrointitoiminnon määrittämiseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Set up the fiscal integration for Retail channels</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähittäismyyntikanavien kirjanpidon integroinnin määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Introduction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Johdanto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This topic provides guidelines for setting up the fiscal integration functionality for Retail channels.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä ohjeaiheessa on ohjeet vähittäismyyntikanavien kirjanpidon integrointitoiminnon määrittämiseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>For more information about the fiscal integration, see <bpt id="p1">[</bpt>Overview of fiscal integration for Retail channels<ept id="p1">](fiscal-integration-for-retail-channel.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja kirjanpidon integroinnista on kohdassa <bpt id="p1">[</bpt>Vähittäismyyntikanavan kirjanpidon integroinnin yleiskatsaus<ept id="p1">](fiscal-integration-for-retail-channel.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The process of setting up the fiscal integration includes the following tasks:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon integroinnin määritysprosessi sisältää seuraavat tehtävät:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Configure fiscal connectors that represent fiscal devices or services that are used for fiscal registration purposes, such as fiscal printers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä ne kirjanpidon yhdistimet, jotka edustavat kirjanpidon rekisteröinnissä käytettäviä kirjanpidon laitteita tai palveluja, kuten kuittitulostimia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Configure document providers that generate fiscal documents that will be registered in fiscal devices or services by fiscal connectors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä tiedostopalvelut, jotka muodostavat kirjanpidon yhdistimien kirjanpidon laitteissa tai palveluissa rekisteröitävät kirjanpitoasiakirjat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Configure the fiscal registration process that defines a sequence of fiscal registration steps and the fiscal connectors and fiscal document providers that are used for each step.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä kirjanpidon rekisteröintiprosessi, joka määrittää kirjanpidon rekisteröintivaiheiden järjestyksen sekä kussakin vaiheessa käytettävät kirjanpidon yhdistimet ja kirjanpitoasiakirjojen toimittajat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Assign the fiscal registration process to point of sale (POS) functionality profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintaprofiileihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Assign connector technical profiles to hardware profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä yhdistimen tekniset profiilit laiteprofiileihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Set up a fiscal registration process</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon rekisteröintiprosessin määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Before you use the fiscal integration functionality, you should configure the following settings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Update retail parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Päivitä vähittäismyynnin parametrit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>On the <bpt id="p1">**</bpt>Retail shared parameters<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>General<ept id="p2">**</ept> tab, set the <bpt id="p3">**</bpt>Enable fiscal integration<ept id="p3">**</ept> option to <bpt id="p4">**</bpt>Yes<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Vähittäismyynnin yhteiset parametrit<ept id="p1">**</ept> -sivun <bpt id="p2">**</bpt>Yleiset<ept id="p2">**</ept>-välilehden <bpt id="p3">**</bpt>Ota kirjanpidon integrointi käyttöön<ept id="p3">**</ept> -asetukseksi <bpt id="p4">**</bpt>Kyllä<ept id="p4">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>On the <bpt id="p1">**</bpt>Number sequences<ept id="p1">**</ept> tab, define the number sequences for the following references:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä seuraavien viitteiden numerosarjat <bpt id="p1">**</bpt>Numerosarjat<ept id="p1">**</ept>-välilehdessä:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Fiscal technical profile number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon teknisen profiilin numero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Fiscal connector group number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon yhdistinryhmän numero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Registration process number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rekisteröintiprosessin numero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>On the <bpt id="p1">**</bpt>Retail parameters<ept id="p1">**</ept> page, define the number sequence for the fiscal functional profile number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä kirjanpidon toimintaprofiilinumeron numerosarja <bpt id="p1">**</bpt>Vähittäismyynnin parametrit<ept id="p1">**</ept> -sivulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Number sequences are optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Numerosarjat ovat valinnaisia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Numbers for all fiscal integration entities can be generated either from number sequences or manually.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki kirjanpidon integrointiyksiköt voidaan luoda joko numerosarjoista tai manuaalisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Upload configurations of fiscal connectors and fiscal document providers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lataa kirjanpidon yhdistimien ja kirjanpitoasiakirjan toimittajien määritykset.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>A fiscal document provider is responsible for generating fiscal documents that represent retail transactions and events that are registered on the POS in a format that is also used for the interaction with a fiscal device or service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitoasiakirjan toimittaja vastaa niiden kirjanpitoasiakirjojen luomisesta, jotka vastaavat myyntipisteessä rekisteröityjä vähittäismyyntitransaktioita ja -tapahtumia. Rekisteröinnissä käytetään samaa muotoa, jota käytetään myös kirjanpidon laitetta tai palvelua käytettäessä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>For example, a fiscal document provider might generate a representation of a fiscal receipt in an XML format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitoasiakirjan toimittaja voi esimerkiksi luoda verokuitin XML-muodossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>A fiscal connector is responsible for the communication with a fiscal device or service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon yhdistin vastaa kirjanpidon laitteen tai palvelun kanssa tapahtuvasta tietoliikenteestä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>For example, a fiscal connector might send a fiscal receipt that a fiscal document provider created in an XML format to a fiscal printer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon yhdistin voi esimerkiksi lähettää kirjanpitoasiakirjan toimittajan XML-muodossa luoman verokuitin kuittitulostimeen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>For more details about fiscal integration components, see <bpt id="p1">[</bpt>Fiscal registration process and fiscal integration samples for fiscal devices<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja kirjanpidon integroinnin osista on kohdassa <bpt id="p1">[</bpt>Kirjanpidon rekisteröintiprosessi ja kirjanpidon laitteiden kirjanpidon integrointimallit<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>On the <bpt id="p1">**</bpt>Fiscal connectors<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal connectors<ept id="p2">**</ept>), upload an XML configuration for each device or service that you plan to use for fiscal integration purposes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lataa <bpt id="p1">**</bpt>Kirjanpidon yhdistimet<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> Kirjanpidon integrointi <ph id="ph3">\&gt;</ph> Kirjanpidon yhdistimet<ept id="p2">**</ept>) kunkin sellaisen laitteen tai palvelun XML-määritys, jota aiot käyttää kirjanpidon integroinnissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>By selecting <bpt id="p1">**</bpt>View<ept id="p1">**</ept>, you can view all functional and technical profiles that are related to the current fiscal connector.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitsemalla <bpt id="p1">**</bpt>Näytä<ept id="p1">**</ept> voit tarkastella kaikkia nykyisiin kirjanpidon yhdistimeen liittyviä toimintaprofiileja ja teknisiä profiileja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>On the <bpt id="p1">**</bpt>Fiscal document providers<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal document providers<ept id="p2">**</ept>), upload an XML configuration for each device or service that you plan to use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lataa <bpt id="p1">**</bpt>Kirjanpitoasiakirjan toimittajat<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> Kirjanpidon integrointi <ph id="ph3">\&gt;</ph> Kirjanpitoasiakirjan toimittajat<ept id="p2">**</ept>) kunkin sellaisen laitteen tai palvelun XML-määritys, jota aiot käyttää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>By selecting <bpt id="p1">**</bpt>View<ept id="p1">**</ept>, you can view all functional profiles that are related to the current fiscal document provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitsemalla <bpt id="p1">**</bpt>Näytä<ept id="p1">**</ept> voit tarkastella kaikkia nykyiseen kirjanpitoasiakirjan toimittajaan liittyviä toimintaprofiileja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>For examples of configurations of fiscal connectors and fiscal document providers, see <bpt id="p1">[</bpt>Fiscal integration samples in the Retail SDK<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkkejä kirjanpidon yhdistimien ja kirjanpitoasiakirjojen toimittajien määrityksistä on kohdassa <bpt id="p1">[</bpt>Retail SDK:n kirjanpidon integrointimallit<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Data mapping is considered part of a fiscal document provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietojen yhdistämisen katsotaan olevan osa kirjainpitoasiakirjan toimittajaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat määrittää samalle yhdistimelle erilaisia tietojen yhdistämisiä (kuten osavaltiokohtaisia säädöksiä), sinun on luotava erillisiä kirjainpitoasiakirjan toimittajia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Create connector functional profiles and connector technical profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo yhdistimen toiminnalliset ja tekniset profiilit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>On the <bpt id="p1">**</bpt>Connector functional profiles<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Connector functional profiles<ept id="p2">**</ept>), create a connector functional profile for each combination of a fiscal connector and a fiscal document provider that is related to this fiscal connector.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo <bpt id="p1">**</bpt>Yhdistimen toiminnalliset profiilit<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> Kirjanpidon integrointi <ph id="ph3">\&gt;</ph> Yhdistimen toiminnalliset profiilit<ept id="p2">**</ept>) yhdistimen toiminnallinen profiili jokaiselle kirjanpidon yhdistimen ja siihen liittyvän kirjanpitoasiakirjan toimittajan yhdistelmälle.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Select a connector name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse yhdistimen nimi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Select a document provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse asiakirjan toimittaja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>You can change the data mapping parameters in a connector functional profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit muuttaa tietojen yhdistämisparametreja yhdistimen toiminnallisessa profiilissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>To restore the default parameters that are defined in the fiscal document provider configuration, select <bpt id="p1">**</bpt>Update<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit palauttaa kirjanpitoasiakirjan toimittajan määrityksessä määritetyt oletusparametrit valitsemalla <bpt id="p1">**</bpt>Päivitys<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source><bpt id="p1">**</bpt>Examples<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Esimerkkejä<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source><bpt id="p1">**</bpt>VAT rates settings<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ALV-prosenttiasetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>value : VATrate</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">arvo: VATrate</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>1 : 2000, 2 : 1800</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 : 2000, 2 : 1800</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source><bpt id="p1">**</bpt>VAT codes mapping<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ALV-koodien yhdistäminen<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>VATcode : value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VATcode : arvo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>vat20 : 1, vat18 : 2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vat20 : 1, vat18 : 2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source><bpt id="p1">**</bpt>Tender types mapping<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Maksuvälinetyyppien yhdistäminen<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>TenderType : value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TenderType : arvo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Cash : 1, Card : 2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käteinen : 1, Kortti : 2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Connector functional profiles are company-specific.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yhdistimen toiminnalliset profiilit ovat yrityskohtaisia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>If you plan to use the same combination of a fiscal connector and a fiscal document provider in different companies, you should create a connector functional profile for each company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos aiot käyttää samaa kirjanpidon yhdistimen ja kirjanpitoasiakirjan toimittajan yhdistelmää eri yrityksissä, kullekin yritykselle on luotava yhdistimen toiminnallinen profiili.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>On the <bpt id="p1">**</bpt>Connector technical profiles<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Connector technical profiles<ept id="p2">**</ept>), create a connector technical profile for each fiscal connector.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo kunkin kirjanpidon yhdistimen toiminnallinen profiili <bpt id="p1">**</bpt>Yhdistimen tekniset profiilit<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> Kirjanpidon integrointi <ph id="ph3">\&gt;</ph>Yhdistimen tekniset profiilit<ept id="p2">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Select a connector name.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse yhdistimen nimi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Select a connector type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse yhdistimen tyyppi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>For devices that are connected to a Hardware station, select <bpt id="p1">**</bpt>Local<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse laiteasemaan liitetyissä laitteissa <bpt id="p1">**</bpt>Paikallinen<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Only local connectors are currently supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vain paikallisia yhdistimiä tuetaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Parameters on the <bpt id="p1">**</bpt>Device<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> tabs in a connector technical profile can be changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yhdistimen teknisen profiilin <bpt id="p1">**</bpt>Laite<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Asetukset<ept id="p2">**</ept>-välilehtien parametreja voi muuttaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>To restore the default parameters that are defined in the fiscal connector configuration, select <bpt id="p1">**</bpt>Update<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit palauttaa kirjanpidon yhdistimen määrityksessä määritetyt oletusparametrit valitsemalla <bpt id="p1">**</bpt>Päivitys<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>While a new version of an XML configuration is loaded, you receive a message that states that the current fiscal connector or fiscal document provider is already being used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun XML-määrityksen uutta versiota ladataan, saat ilmoituksen, jonka mukaan nykyistä kirjanpidon yhdistintä tai kirjanpitoasiakirjan toimittaja on jo käytössä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>This procedure doesn't override manual changes that were previously made in connector functional profiles and connector technical profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä menettely ei ohita yhdistimen toiminnallisiin tai teknisiin profiileihin aiemmin tehtyjä manuaalisia muutoksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>To apply the default set of parameters from a new configuration, on the <bpt id="p1">**</bpt>Connector functional profiles<ept id="p1">**</ept> page or the <bpt id="p2">**</bpt>Connector technical profiles<ept id="p2">**</ept> page, select <bpt id="p3">**</bpt>Update<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit käyttää uuden määrityksen oletusparametrijoukkoa valitsemalla <bpt id="p1">**</bpt>Päivitä<ept id="p1">**</ept> <bpt id="p2">**</bpt>Yhdistimen toiminnalliset profiilit<ept id="p2">**</ept>- tai <bpt id="p3">**</bpt>Yhdistimen tekniset profiilit<ept id="p3">**</ept> -sivulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Create fiscal connector groups.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo kirjanpidon yhdistinryhmiä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon yhdistinryhmä yhdistää ne kirjanpidon yhdistimien toiminnalliset profiilit, jotka suorittavat samoja toimintoja ja joita käytetään samassa kirjanpidon rekisteröintiprosessin vaiheessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>For example, if several fiscal printer models can be used in a retail store, fiscal connectors for those fiscal printers can be combined in a fiscal connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos esimerkiksi myymälässä käytetään useita kuittitulostinmalleja, kyseisten kuittitulostimien kirjanpidon yhdistimet voidaan yhdistää kirjanpidon yhdistinryhmäksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>On the <bpt id="p1">**</bpt>Fiscal connector group<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal connector groups<ept id="p2">**</ept>), create a new fiscal connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo uusi kirjanpidon yhdistinryhmä <bpt id="p1">**</bpt>Kirjanpidon yhdistinryhmä<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> Kirjanpidon integrointi <ph id="ph3">\&gt;</ph> Kirjanpidon yhdistinryhmä<ept id="p2">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Add functional profiles to the connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää toiminnalliset profiilit yhdistinryhmään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>On the <bpt id="p1">**</bpt>Functional profiles<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and select a profile number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse ensin <bpt id="p1">**</bpt>Toiminnalliset profiilit<ept id="p1">**</ept> -sivulla <bpt id="p2">**</bpt>Lisää<ept id="p2">**</ept> ja valitse sitten profiilin numero.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Each fiscal connector in a connector group can only have one functional profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kullakin yhdistinryhmän kirjanpidon yhdistimellä voi olla vain yksi toiminnallinen profiili.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>To suspend use of the functional profile, set the <bpt id="p1">**</bpt>Disable<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit keskeyttää toiminnallisen profiilin käytön valitsemalla <bpt id="p1">**</bpt>Poista käytöstä<ept id="p1">**</ept> -asetukseksi <bpt id="p2">**</bpt>Kyllä<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>This change affects only the current connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muutos koskee vain nykyistä yhdistinryhmää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>You can continue to use the same functional profile in other connector groups.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit jatkaa saman toiminnallisen profiilin käyttöä muissa yhdistinryhmissä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Create a fiscal registration process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo kirjanpidon rekisteröintiprosessi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>A fiscal registration process is defined by the sequence of registration steps and the connector group that is used for each step.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rekisteröintivaiheiden järjestys ja kussakin vaiheessa käytetty yhdistinryhmä määrittävät kirjanpidon rekisteröintiprosessin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>On the <bpt id="p1">**</bpt>Fiscal registration process<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal registration processes<ept id="p2">**</ept>), create a new record for each unique process of fiscal registration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo uusi tietue kirjanpidon rekisteröinnin kullekin yksilölliselle prosessille <bpt id="p1">**</bpt>Kirjanpidon rekisteröintiprosessi<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> Kirjanpidon integrointi <ph id="ph3">\&gt;</ph> Kirjanpidon rekisteröintiprosessi<ept id="p2">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Add registration steps to the process:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää rekisteröintivaiheet prosessiin:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Lisää<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Select a fiscal connector type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse kirjanpidon yhdistimen tyyppi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>In the <bpt id="p1">**</bpt>Group number<ept id="p1">**</ept> field, select an appropriate fiscal connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse sopiva kirjanpidon yhdistinryhmä <bpt id="p1">**</bpt>Ryhmän numero<ept id="p1">**</ept> -kentässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Assign entities of the fiscal registration process to POS profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä kirjanpidon rekisteröintiprosessiyksiköt myyntipisteen profiileihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>On the <bpt id="p1">**</bpt>POS functionality profiles<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> POS setup <ph id="ph3">\&gt;</ph> POS profiles <ph id="ph4">\&gt;</ph> Functionality profiles<ept id="p2">**</ept>), assign the fiscal registration process to a POS functionality profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä kirjanpidon rekisteröintiprosessi myyntipisteen toimintoprofiiliin <bpt id="p1">**</bpt>Myyntipisteen toimintoprofiilit<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> POS-asetukset <ph id="ph3">\&gt;</ph> POS-profiilit <ph id="ph4">\&gt;</ph> Toimintoprofiilit<ept id="p2">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, and then, on the <bpt id="p2">**</bpt>Fiscal registration process<ept id="p2">**</ept> tab, in the <bpt id="p3">**</bpt>Process number<ept id="p3">**</ept> field, select a process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse ensin <bpt id="p1">**</bpt>Muokkaa<ept id="p1">**</ept> ja sitten prosessi <bpt id="p2">**</bpt>Kirjanpidon rekisteröintiprosessi<ept id="p2">**</ept> -välilehden <bpt id="p3">**</bpt>Prosessin numero<ept id="p3">**</ept> -kentässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>On the <bpt id="p1">**</bpt>POS hardware profile<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> POS setup <ph id="ph3">\&gt;</ph> POS profiles <ph id="ph4">\&gt;</ph> Hardware profiles<ept id="p2">**</ept>), assign connector technical profiles to a hardware profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä yhdistimen tekniset profiilit laiteprofiiliin <bpt id="p1">**</bpt>POS-laiteprofiili<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> POS-asetukset <ph id="ph3">\&gt;</ph> POS-profiilit <ph id="ph4">\&gt;</ph> Laite profiilit<ept id="p2">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, add a line on the <bpt id="p2">**</bpt>Fiscal peripherals<ept id="p2">**</ept> tab, and then, in the <bpt id="p3">**</bpt>Profile number<ept id="p3">**</ept> field, select a connector technical profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Muokkaa<ept id="p1">**</ept>, lisää rivit <bpt id="p2">**</bpt>Kirjanpidon oheislaitteet<ept id="p2">**</ept> -välilehdessä ja valitse sitten yhdistimen tekninen profiili <bpt id="p3">**</bpt>Profiilin numero<ept id="p3">**</ept> -kentässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>You can add several technical profiles to the same hardware profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit lisätä useita teknisiä profiileja samaan laiteprofiiliin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>However, a hardware profile or POS functionality profile should have only one intersection with any fiscal connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laiteprofiilia tai myyntipisteen toimintoprofiilia voi kuitenkin käyttää vain kerran samassa kirjanpidon yhdistinryhmässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>The fiscal registration flow is defined by the fiscal registration process and also by some parameters of fiscal integration components: the Commerce runtime extension for the fiscal document provider and the Hardware station extension for the fiscal connector.</source>
+        <target logoport:matchpercent="0" state="translated">Kirjanpidon rekisteröinnin työnkulun määrittää kirjanpidon rekisteröintiprosessi sekä tietyt kirjanpidon integrointiosien osat: kirjanpitoasiakirjan toimittajan Commerce Runtime -laajennus ja kirjanpidon yhdistimen Hardware station -laajennus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>The subscription of events and transactions to fiscal registration is predefined in the fiscal document provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon rekisteröinnin tapahtumien ja transaktioiden tilaus määritetään valmiiksi kirjanpitoasiakirjan toimittajassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>The fiscal document provider is also responsible for identifying the fiscal connector that is used for fiscal registration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitoasiakirjan toimittaja vastaa myös kirjanpidon rekisteröinnissä käytettävän kirjanpidon yhdistimen tunnistamisesta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>It matches the connector functional profiles that are included in the fiscal connector group that is specified for the current step of the fiscal registration process with the connector technical profile that is assigned to the hardware profile of the Hardware station that the POS is paired to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se yhdistää siihen kirjanpidon yhdistinryhmään sisältyvät yhdistimen toiminnalliset profiilit, joka on määritetty kirjanpidon rekisteröintiprosessin nykyiselle vaiheelle, siihen yhdistimen tekniseen profiilin, joka on määritetty myyntipisteeseen pariliitoksen muodostaneen laiteaseman laiteprofiiliin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>The fiscal document provider uses the data mapping settings from the fiscal document provider configuration to transform transaction/event data such as taxes and payments while a fiscal document is generated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitoasiakirjan toimittaja käyttää kirjanpitoasiakirjan toimittajan määrityksen tietojen yhdistämisasetuksia transaktio- tai tapahtumatietojen, kuten verojen ja maksujen, muuntamiseen kirjanpitoasiakirjaa luotaessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>When the fiscal document provider generates a fiscal document, the fiscal connector can either send it to the fiscal device as is, or parse it and transform it into a sequence of commands of the device application programming interface (API), depending on how the communication is handled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun kirjanpitoasiakirjan toimittaja luo kirjanpitoasiakirjan, kirjanpidon yhdistin voi joko lähettää sen sellaisenaan kirjanpidon laitteeseen tai muuntaa sen sarjaksi laitteen ohjelmointirajapinnan komentoja. Valittu vaihtoehto perustuu siihen, miten tietoliikennettä käsitellään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>On the <bpt id="p1">**</bpt>Fiscal registration process<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal registration processes<ept id="p2">**</ept>), select <bpt id="p3">**</bpt>Validate<ept id="p3">**</ept> to validate the fiscal registration process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vahvista kirjanpidon rekisteröintiprosessi <bpt id="p1">**</bpt>Kirjanpidon rekisteröintiprosessi<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> Kirjanpidon integrointi <ph id="ph3">\&gt;</ph> Kirjanpidon rekisteröintiprosessit<ept id="p2">**</ept>) valitsemalla <bpt id="p3">**</bpt>Vahvista<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>We recommend that you run this type of validation in the following cases:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän tyyppinen vahvistus kannattaa tehdä seuraavissa tapauksissa:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>After you've completed all the settings for a new registration process, including when you assign registration processes to POS functionality profiles and hardware profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uudessa rekisteröintiprosessissa sen jälkeen, kun kaikki asetukset ovat valmiita – myös silloin kun rekisteröintiprosessit määritetään myyntipisteen toiminnallisiin profiileihin ja laitteistoprofiileihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>After you make changes to an existing fiscal registration process, and those changes might cause a different fiscal connector to be selected at runtime (for example, if you change the connector group for a fiscal registration process step, enable a connector functional profile in a connector group, or add a new connector functional profile to a connector group).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aiemmin luodussa kirjanpidon rekisteröintiprosessissa tehtyjen muutosten jälkeen, kun kyseiset muutokset voivat aiheuttaa toisen kirjanpidon yhdistimen valinnan suorituksen aikana. (Näin voi tapahtua esimerkiksi silloin, kun kirjanpidon rekisteröintiprosessivaiheen yhdistinryhmä vaihdetaan, yhdistimen toiminnallinen profiili otetaan käyttöön yhdistinryhmässä tai yhdistimen uusi toiminnallinen profiili lisätään yhdistinryhmään.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>After you make changes in the assignment of connector technical profiles to hardware profiles.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yhdistimen teknisten profiilien laiteprofiileihin määrittämisessä tehtyjen muutosten jälkeen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>On the <bpt id="p1">**</bpt>Distribution schedule<ept id="p1">**</ept> page, run the <bpt id="p2">**</bpt>1070<ept id="p2">**</ept> and <bpt id="p3">**</bpt>1090<ept id="p3">**</ept> jobs to transfer data to the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirrä tiedot kanavatietokantaan suorittamalla <bpt id="p1">**</bpt>Jakeluaikataulu<ept id="p1">**</ept> -sivulla <bpt id="p2">**</bpt>1070<ept id="p2">**</ept>- ja <bpt id="p3">**</bpt>1090<ept id="p3">**</ept>-työt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Set up fiscal texts for discounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alennusten kirjanpitotekstien määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>In some cases, a special text must be printed on a fiscal receipt if a discount is applied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alennusta käytettäessä verokuittiin on joissakin tapauksissa tulostettava erityinen teksti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>You can set up fiscal texts for discounts on the <bpt id="p1">**</bpt>Fiscal connector group<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal connector groups<ept id="p2">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää alennusten kirjanpitotekstit <bpt id="p1">**</bpt>Kirjanpidon yhdistinryhmä<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> Kirjanpidon integrointi <ph id="ph3">\&gt;</ph> Kirjanpidon yhdistinryhmä<ept id="p2">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>For manual discounts that are applied at the POS, you should set a fiscal text for the info code or info code group that is specified as the <bpt id="p1">**</bpt>Product discount<ept id="p1">**</ept> info code in the POS functionality profile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos kyse on manuaalisesti myyntipisteessä lisättävistä alennuksista, tietokoodin tai tietokoodiryhmän kirjanpitoteksti on määritettävä. Tämä tietokoodi määritetään myyntipisteen toimintaprofiilissa <bpt id="p1">**</bpt>Tuotealennus<ept id="p1">**</ept>-tietokoodina.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>On the <bpt id="p1">**</bpt>Fiscal connector group<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Text for fiscal receipt<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Kirjanpidon yhdistinryhmä<ept id="p1">**</ept> -sivulla <bpt id="p2">**</bpt>Verokuitin teksti<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>On the <bpt id="p1">**</bpt>Info codes<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and select an info code or info code group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Tietokoodit<ept id="p1">**</ept>-välilehdessä ensin <bpt id="p2">**</bpt>Lisää<ept id="p2">**</ept> ja sitten tietokoodi tai tietokoodiryhmä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>In the <bpt id="p1">**</bpt>Info code number<ept id="p1">**</ept>, select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Tietokoodin numero<ept id="p1">**</ept> -kohdassa arvo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>In the <bpt id="p1">**</bpt>Subcode number<ept id="p1">**</ept> field, select a value if a subcode is required for the selected info code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Alikoodin numero<ept id="p1">**</ept> -kentässä arvo, jos valittu tietokoodi edellyttää alikoodia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>In the <bpt id="p1">**</bpt>Text for fiscal receipt<ept id="p1">**</ept> field, specify a fiscal text that should be printed on a fiscal receipt.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Verokuitin teksti<ept id="p1">**</ept> -kentässä verokuittiin tulostettava kirjanpitoteksti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Set the <bpt id="p1">**</bpt>Print user input on fiscal receipt<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> to override the text on a fiscal receipt with information that a user manually enters at the POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Tulosta käyttäjän syöte verokuittiin<ept id="p1">**</ept> -asetukseksi <bpt id="p2">**</bpt>Kyllä<ept id="p2">**</ept>, jolloin verokuitin teksti korvataan käyttäjän myyntipisteessä manuaalisesti antamilla tiedoilla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>This option applies only to info codes that have an input type of <bpt id="p1">**</bpt>Text<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä asetus koskee vain tietokoodeja, joiden syötetyyppi on <bpt id="p1">**</bpt>Teksti<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>You can specify a fiscal text for several info codes to support scenarios where info code groups, linked info codes, and triggered info codes are used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää kirjanpitotekstin useisiin tietokoodeihin sellaisia skenaarioita varten, joissa käytetään tietokoodiryhmiä. linkitettyjä tietokoodeja ja käynnistettyjä tietokoodeja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>In these scenarios, the fiscal receipt will contain the fiscal texts from all info codes that are linked to the transaction line where the discount was applied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näissä skenaarioissa verokuitissa on kirjanpitotekstiä kaikista siihen tapahtumariviin linkitetyistä tietokoodeista, jossa alennusta käytettiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>For channel-specific discounts, you should define a fiscal text for the discount ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kanavakohtaisissa alennuksissa alennustunnukselle on määritettävä kirjanpitoteksti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>On the <bpt id="p1">**</bpt>Fiscal connector group<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Text for fiscal receipt<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Kirjanpidon yhdistinryhmä<ept id="p1">**</ept> -sivulla <bpt id="p2">**</bpt>Verokuitin teksti<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>On the <bpt id="p1">**</bpt>Discounts<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and select a discount ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Alennukset<ept id="p1">**</ept>-välilehdessä ensin <bpt id="p2">**</bpt>Lisää<ept id="p2">**</ept> ja sitten alennustunnus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>In the <bpt id="p1">**</bpt>Text for fiscal receipt<ept id="p1">**</ept> field, specify a fiscal text that should be printed on a fiscal receipt.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Verokuitin teksti<ept id="p1">**</ept> -kentässä verokuittiin tulostettava kirjanpitoteksti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>If several discounts are applied to the same transaction line, the fiscal receipt will contain fiscal texts from all discounts that are linked to those transaction line.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos samalle tapahtumariville käytetään useita alennuksia, verokuitissa on kirjanpitotekstiä kaikista kyseiseen tapahtumariviin linkitetyistä alennuksista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Set error handling settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virheen käsittelyasetusten määrittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>The error handling options that are available in the fiscal integration are set in the fiscal registration process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon integroinnissa käytettävissä olevat virheen käsittelyasetukset määritetään kirjanpidon rekisteröintiprosessissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>For more information about error handling in the fiscal integration, see <bpt id="p1">[</bpt>Error handling<ept id="p1">](fiscal-integration-for-retail-channel.md#error-handling)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja virheen käsittelystä kirjanpidon integroinnissa on kohdassa <bpt id="p1">[</bpt>Virheen käsittely<ept id="p1">](fiscal-integration-for-retail-channel.md#error-handling)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>On the <bpt id="p1">**</bpt>Fiscal registration process<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fiscal integration <ph id="ph3">\&gt;</ph> Fiscal registration processes<ept id="p2">**</ept>), you can set the following parameters for each step of the fiscal registration process:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää seuraavat parametrit kirjanpidon rekisteröinnin kullekin vaiheelle <bpt id="p1">**</bpt>Kirjanpidon rekisteröintiprosessi<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> Kirjanpidon integrointi <ph id="ph3">\&gt;</ph> Kirjanpidon rekisteröintiprosessi<ept id="p2">**</ept>):</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source><bpt id="p1">**</bpt>Allow skip<ept id="p1">**</ept> – This parameter enables the <bpt id="p2">**</bpt>Skip<ept id="p2">**</ept> option in the error handling dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Salli ohitus<ept id="p1">**</ept> – tämä parametri ottaa <bpt id="p2">**</bpt>Ohita<ept id="p2">**</ept>-asetuksen käyttöön virheen käsittelyn valintaikkunassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source><bpt id="p1">**</bpt>Allow mark as registered<ept id="p1">**</ept> – This parameter enables the <bpt id="p2">**</bpt>Mark as registered<ept id="p2">**</ept> option in the error handling dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Salli rekisteröidyksi merkitseminen<ept id="p1">**</ept> – tämä parametri ottaa <bpt id="p2">**</bpt>Merkitse rekisteröidyksi<ept id="p2">**</ept> -asetuksen käyttöön virheen käsittelyn valintaikkunassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source><bpt id="p1">**</bpt>Continue on error<ept id="p1">**</ept> – If this parameter is enabled, the fiscal registration process can continue on the POS register if the fiscal registration of a transaction or event fails.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jatka virheen ilmetessä<ept id="p1">**</ept> – Jos tämä parametri on käytössä, kirjanpidon rekisteröintiprosessi voi jatkua POS-rekisterissä, jos transaktion tai tapahtuman tilikausirekisteröinti epäonnistuu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Otherwise, to run the fiscal registration of the next transaction or event, the operator must retry the failed fiscal registration, skip it, or mark the transaction or event as registered.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muussa tapauksessa operaattorin on suoritettava epäonnistunut tilikausirekisteröinti uudelleen, ohitettava se tai merkittävä transaktio tai tapahtuma rekisteröidyksi, jos haluaa suorittaa seuraavan transaktion tai tapahtuman tilikausirekisteröinnin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>For more information, see <bpt id="p1">[</bpt>Optional fiscal registration<ept id="p1">](fiscal-integration-for-retail-channel.md#optional-fiscal-registration)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja on kohdassa <bpt id="p1">[</bpt>valinnainen tilikausirekisteröinti<ept id="p1">](fiscal-integration-for-retail-channel.md#optional-fiscal-registration)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>If the <bpt id="p1">**</bpt>Continue on error<ept id="p1">**</ept> parameter is enabled, the <bpt id="p2">**</bpt>Allow skip<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Allow mark as registered<ept id="p3">**</ept> parameters are automatically disabled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos <bpt id="p1">**</bpt>Jatka virheen ilmetessä<ept id="p1">**</ept> -parametri on käytössä, <bpt id="p2">**</bpt>Salli Ohita<ept id="p2">**</ept>- ja <bpt id="p3">**</bpt>Salli Merkitse rekisteröidyksi<ept id="p3">**</ept> -parametrit ovat automaattisesti poissa käytöstä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>The <bpt id="p1">**</bpt>Skip<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Mark as registered<ept id="p2">**</ept> options in the error handling dialog box require the <bpt id="p3">**</bpt>Allow skip registration or mark as registered<ept id="p3">**</ept> permission.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virheen käsittelyn valintaikkunan <bpt id="p1">**</bpt>Ohita<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Merkitse rekisteröidyksi<ept id="p2">**</ept> -asetukset edellyttävät <bpt id="p3">**</bpt>Salli rekisteröinnin ohitus tai rekisteröidyksi merkitseminen<ept id="p3">**</ept> -käyttöoikeuden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Therefore, on the <bpt id="p1">**</bpt>Permission groups<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Retail <ph id="ph1">\&gt;</ph> Employees <ph id="ph2">\&gt;</ph> Permission groups<ept id="p2">**</ept>), enable the <bpt id="p3">**</bpt>Allow skip registration or mark as registered<ept id="p3">**</ept> permission.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ota tämän vuoksi <bpt id="p3">**</bpt>Salli ohita rekisteröinti tai rekisteröidyksi merkitseminen<ept id="p3">**</ept> -käyttöoikeus käyttöön <bpt id="p1">**</bpt>Käyttöoikeusryhmät<ept id="p1">**</ept> -sivulla (<bpt id="p2">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Työntekijät <ph id="ph2">\&gt;</ph> Käyttöoikeusryhmät<ept id="p2">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>The <bpt id="p1">**</bpt>Skip<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Mark as registered<ept id="p2">**</ept> options let operators enter additional information when fiscal registration fails.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjät voivat antaa <bpt id="p1">**</bpt>Ohita<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Merkitse rekisteröidyksi<ept id="p2">**</ept> -asetuksilla lisätietoja siitä, milloin kirjanpidon rekisteröinti epäonnistuu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>To make this functionality available, you should specify the <bpt id="p1">**</bpt>Skip<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Mark as registered<ept id="p2">**</ept> info codes on a fiscal connector group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit ottaa tämän toiminnon käyttöön määrittämällä <bpt id="p1">**</bpt>Ohita<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Merkitse rekisteröidyksi<ept id="p2">**</ept> -tietokoodit kirjanpidon yhdistinryhmässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>The information that operators enter is then saved as an info code transaction that is linked to the fiscal transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjien antamat tiedot tallennetaan sitten kirjanpitotapahtumaan linkitettyjä tietokooditapahtumana.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>For more details about info codes, see <bpt id="p1">[</bpt>Info codes and info code groups<ept id="p1">](../info-codes-retail.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja tietokoodeista on kohdassa <bpt id="p1">[</bpt>Tietokoodit ja tietokoodiryhmät<ept id="p1">](../info-codes-retail.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>The <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> trigger function isn't supported for the info codes that are used for <bpt id="p2">**</bpt>Skip<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Mark as registered<ept id="p3">**</ept> in fiscal connector groups.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotteen<ept id="p1">**</ept> käynnistintoimintoa ei tueta tietokoodeissa, joita käytetään <bpt id="p2">**</bpt>Ohita<ept id="p2">**</ept>- ja <bpt id="p3">**</bpt>Merkitse rekisteröidyksi<ept id="p3">**</ept> -asetuksina kirjanpidon yhdistinryhmissä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>On the <bpt id="p1">**</bpt>Fiscal connector group<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Info codes<ept id="p2">**</ept> tab, select info codes or info code groups in the <bpt id="p3">**</bpt>Skip<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Mark as registered<ept id="p4">**</ept> fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Kirjanpidon yhdistinryhmä<ept id="p1">**</ept>-sivun <bpt id="p2">**</bpt>Tietokoodit<ept id="p2">**</ept>-välilehdessä tietokoodit tai tietokooditryhmät <bpt id="p3">**</bpt>Ohita<ept id="p3">**</ept>- ja <bpt id="p4">**</bpt>Merkitse rekisteröidyksi<ept id="p4">**</ept> -kenttinä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>One fiscal document and one non-fiscal document can be generated on any step of a fiscal registration process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon rekisteröintiprosessin missä tahansa vaiheessa voidaan luoda yksi kirjanpitoasiakirja ja yksi muu kuin kirjanpitoasiakirja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>A fiscal document provider extension identifies every type of transaction or event as related to fiscal or non-fiscal documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitoasiakirjan toimittajalaajennus tunnistaa jokaisen transaktio- tai tapahtumatyypin kirjanpitoasiakirjaan tai muuhun kuin kirjanpitoasiakirjaan liittyväksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>The error handling feature applies only to fiscal documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virheen käsittelytoiminto koskee vain kirjanpitoasiakirjoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source><bpt id="p1">**</bpt>Fiscal document<ept id="p1">**</ept> – A mandatory document that should be registered successfully (for example, a fiscal receipt).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kirjanpitoasiakirja<ept id="p1">**</ept> – pakollinen asiakirja, jonka rekisteröitymisen on onnistuttava (esimerkiksi verokuitti).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source><bpt id="p1">**</bpt>Non-fiscal document<ept id="p1">**</ept> – A supplementary document for the transaction or event (for example, a gift card slip).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Muu kuin kirjanpitoasiakirja<ept id="p1">**</ept> – transaktion tai tapahtuman täydentävä asiakirja (esimerkiksi lahjakortti).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>If the operator must be able to continue to process the current operation (for example, creation or finalization of a transaction) after a health check error occurs, you should enable the <bpt id="p1">**</bpt>Allow skip health check error<ept id="p1">**</ept> permission on the <bpt id="p2">**</bpt>Permission groups<ept id="p2">**</ept> page (<bpt id="p3">**</bpt>Retail <ph id="ph1">\&gt;</ph> Employees <ph id="ph2">\&gt;</ph> Permission groups<ept id="p3">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos operaattorin on voitava jatkaa nykyisen toiminnan käsittelyä (esimerkiksi tapahtuman luominen tai viimeistely) kuntotarkastuksen virheen jälkeen, sen on otettava käyttöön <bpt id="p1">**</bpt>Salli kuntotarkistuksen virheen ohitus<ept id="p1">**</ept> -käyttöoikeudet <bpt id="p2">**</bpt>Käyttöoikeusryhmät<ept id="p2">**</ept> -sivulla (<bpt id="p3">**</bpt>Retail <ph id="ph1">\&gt;</ph> työntekijät <ph id="ph2">\&gt;</ph> käyttöoikeusryhmät<ept id="p3">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>For more information about the health check procedure, see <bpt id="p1">[</bpt>Fiscal registration health check<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saat lisätietoja kuntotarkastusmenettelystä kohdasta <bpt id="p1">[</bpt>Tilikausirekisteröinnin kuntotarkastus<ept id="p1">](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Set up fiscal X/Z reports from the POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon X/Z-raporttien määrittäminen myyntipisteessä</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>To enable fiscal X/Z reports to be run from the POS, you should add new buttons to a POS layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon X/Z-raporttien suorittaminen myyntipisteestä edellyttää, että myyntipisteen asetteluun lisätään uusia painikkeita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>On the <bpt id="p1">**</bpt>Button grids<ept id="p1">**</ept> page, follow the instructions in <bpt id="p2">[</bpt>Add a custom operation button to the POS layout in Retail headquarters<ept id="p2">](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters)</ept> to install the designer and update a POS layout.</source>
+        <target logoport:matchpercent="0" state="translated">Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu <bpt id="p1">**</bpt>Painikeruudukot<ept id="p1">**</ept>-sivulla noudattamalla kohdan <bpt id="p2">[</bpt>Mukautetun toimintopainikkeen lisääminen myyntipisteen asetteluun Retail Headquarters -sovelluksessa<ept id="p2">](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters)</ept> ohjeita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Select the layout to update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse päivitettävä asettelu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Add a new button, and set the <bpt id="p1">**</bpt>Print fiscal X<ept id="p1">**</ept> button property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää uusi painike, määritä <bpt id="p1">**</bpt>Tulosta kuitti X<ept id="p1">**</ept> -painikeominaisuus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Add a new button, and set the <bpt id="p1">**</bpt>Print fiscal Z<ept id="p1">**</ept> button property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää uusi painike ja määritä <bpt id="p1">**</bpt>Tulosta kuitti Z<ept id="p1">**</ept> -painikeominaisuus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>On the <bpt id="p1">**</bpt>Distribution schedule<ept id="p1">**</ept> page, run the <bpt id="p2">**</bpt>1090<ept id="p2">**</ept> job to transfer changes to the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirrä muutokset kanavatietokantaan suorittamalla työ <bpt id="p2">**</bpt>1090<ept id="p2">**</ept> <bpt id="p1">**</bpt>Ajastuksen jakelu<ept id="p1">**</ept> -sivulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Enable manual execution of postponed fiscal registration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ota käyttöön lykätyn tilikausirekisteröinnin manuaalinen käyttö</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>To enable manual execution of a postponed fiscal registration, you should add a new button to a POS layout.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat ottaa käyttöön lykätyn tilikausirekisteröinnin manuaalisen käytön, lisää uusi painike POS-asetteluun.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>On the <bpt id="p1">**</bpt>Button grids<ept id="p1">**</ept> page, follow the instructions in <bpt id="p2">[</bpt>Add a custom operation button to the POS layout in Retail headquarters<ept id="p2">](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters)</ept> to install the designer and update a POS layout.</source>
+        <target logoport:matchpercent="0" state="translated">Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu <bpt id="p1">**</bpt>Painikeruudukot<ept id="p1">**</ept>-sivulla noudattamalla kohdan <bpt id="p2">[</bpt>Mukautetun toimintopainikkeen lisääminen myyntipisteen asetteluun Retail Headquarters -sovelluksessa<ept id="p2">](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters)</ept> ohjeita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Select the layout to update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse päivitettävä asettelu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Add a new button, and set the <bpt id="p1">**</bpt>Complete fiscal registration process<ept id="p1">**</ept> button property.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää uusi painike, määritä <bpt id="p1">**</bpt>Viimeistele tilikausirekisteröintiprosessi<ept id="p1">**</ept> -painikeominaisuus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>On the <bpt id="p1">**</bpt>Distribution schedule<ept id="p1">**</ept> page, run the <bpt id="p2">**</bpt>1090<ept id="p2">**</ept> job to transfer your changes to the channel database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirrä tekemäsi muutokset kanavatietokantaan suorittamalla työ <bpt id="p2">**</bpt>1090<ept id="p2">**</ept> <bpt id="p1">**</bpt>Ajastuksen jakelu<ept id="p1">**</ept> -sivulla.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

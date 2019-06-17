@@ -1,202 +1,576 @@
----
-title: ER Muodon päivittäminen ottamalla käyttöön sitä koskeva uusi perusversio
-description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi ylläpitää muotokonfiguraatiota sähköiselle raportoinnille (ER).
-author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
-audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Core, Operations
-ms.search.region: Global
-ms.author: nselin
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544446"
----
-# <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a><span data-ttu-id="ceb58-103">ER Muodon päivittäminen ottamalla käyttöön sitä koskeva uusi perusversio</span><span class="sxs-lookup"><span data-stu-id="ceb58-103">ER Upgrade your format by adopting a new, base version of that format</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="ceb58-104">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi ylläpitää muotokonfiguraatiota sähköiselle raportoinnille (ER).</span><span class="sxs-lookup"><span data-stu-id="ceb58-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</span></span> <span data-ttu-id="ceb58-105">Seuraavassa menettelyssä kerrotaan, miten luodaan muodosta mukautettu versio konfiguroinnin lähteen (CP) tarjoaman muodon perusteella.</span><span class="sxs-lookup"><span data-stu-id="ceb58-105">This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP).</span></span> <span data-ttu-id="ceb58-106">Siinä käsitellään myös muodon uuden perusversion käyttöönotto.</span><span class="sxs-lookup"><span data-stu-id="ceb58-106">It also explains how to adopt a new, base version of that format.</span></span>
-
-
-
-<span data-ttu-id="ceb58-107">Näitä vaiheita varten on suoritettava ensin seuraavien menettelyiden vaiheet: "Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi" ja "Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen".</span><span class="sxs-lookup"><span data-stu-id="ceb58-107">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” and “Use created format to generate electronic documents for payments” procedures.</span></span> <span data-ttu-id="ceb58-108">Nämä vaiheet voidaan suorittaa GBSI-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="ceb58-108">These steps can be performed in the GBSI company.</span></span>
-
-
-## <a name="select-format-configuration-for-customization"></a><span data-ttu-id="ceb58-109">Mukautettavan muotokonfiguraation valinta</span><span class="sxs-lookup"><span data-stu-id="ceb58-109">Select format configuration for customization</span></span>
-1. <span data-ttu-id="ceb58-110">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="ceb58-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-    * <span data-ttu-id="ceb58-111">Tässä esimerkissä malliyritys Litware, Inc. (http://www.litware.com) toimii konfiguraation lähteenä, joka tukee tietyn maan muotokonfiguraatioita sähköisille maksuille.</span><span class="sxs-lookup"><span data-stu-id="ceb58-111">In this example, sample company Litware, Inc. (http://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country.</span></span>    <span data-ttu-id="ceb58-112">Malliyritys Proseware, Inc. (http://www.proseware.com) toimii kuluttajana Litware, Inc.:n toimittamalle muotokonfiguraatiolle.</span><span class="sxs-lookup"><span data-stu-id="ceb58-112">Sample company Proseware, Inc. (http://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided.</span></span> <span data-ttu-id="ceb58-113">Proseware, Inc. käyttää muotoja tietyillä maan alueilla.</span><span class="sxs-lookup"><span data-stu-id="ceb58-113">Proseware, Inc. uses formats in certain regions of that country.</span></span>  
-2. <span data-ttu-id="ceb58-114">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="ceb58-114">Click Reporting configurations.</span></span>
-3. <span data-ttu-id="ceb58-115">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="ceb58-115">Click Show filters.</span></span>
-4. <span data-ttu-id="ceb58-116">Käytä seuraavia suodattimia: Anna suodattimen arvoksi Nimi-kenttään BACS (Iso-Britannia, kuvitteellinen) käyttämällä Alkaa-suodatinoperaattoria.</span><span class="sxs-lookup"><span data-stu-id="ceb58-116">Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator</span></span>
-    * <span data-ttu-id="ceb58-117">BACS (Iso-Britannia, kuvitteellinen)</span><span class="sxs-lookup"><span data-stu-id="ceb58-117">BACS (UK fictitious)</span></span>  
-    * <span data-ttu-id="ceb58-118">Valitun BACS-muotomäärityksen (Iso-Britannia, kuvitteellinen ja mukautettu) omistaja on toimittaja Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="ceb58-118">The selected format configuration BACS (UK fictitious) is owned by provider Litware, Inc.</span></span>  
-5. <span data-ttu-id="ceb58-119">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="ceb58-119">Click Show filters.</span></span>
-6. <span data-ttu-id="ceb58-120">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="ceb58-120">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ceb58-121">Proseware Inc. käyttää mukauttamiseen tämän muodon versiota, jonka tila on Valmis.</span><span class="sxs-lookup"><span data-stu-id="ceb58-121">The version of the format with the status of Completed will be used by Proseware, Inc. for customization.</span></span>  
-
-## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a><span data-ttu-id="ceb58-122">Luo uusi konfiguraatio sähköisen asiakirjan mukautetulle muodolle</span><span class="sxs-lookup"><span data-stu-id="ceb58-122">Create a new configuration for your custom format of electronic document</span></span>
-    * <span data-ttu-id="ceb58-123">Proseware Inc. on vastaanottanut Litware, Inc:ltä palvelutilauksen mukaisesti version 1.1 BACS-muotokonfiguraatiosta (Iso-Britannia, kuvitteellinen), joka sisältää alustavan muodon sähköisten maksuasiakirjojen luomiseen</span><span class="sxs-lookup"><span data-stu-id="ceb58-123">Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription.</span></span> <span data-ttu-id="ceb58-124">Proseware Inc. haluaa käyttää konfiguraatiota vakiomuodossaan maassaan, mutta joitain mukautuksia tarvitaan tukemaan aluekohtaisia erityisvaatimuksia.</span><span class="sxs-lookup"><span data-stu-id="ceb58-124">Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements.</span></span> <span data-ttu-id="ceb58-125">Proseware Inc. haluaa säilyttää mahdollisuuden päivittää mukautetun muodon heti, kun uusi versio (joka sisältää muutoksia uusien maakohtaisten vaatimusten tukeen) on saatavilla Litware, Inc:ltä. Yritys haluaa myös suorittaa päivityksen mahdollisimman edullisesti.</span><span class="sxs-lookup"><span data-stu-id="ceb58-125">Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.</span></span>  <span data-ttu-id="ceb58-126">Tätä varten Proseware, Inc:n on luotava määritys käyttämällä Litware, Inc:n BACS-muotokonfiguraatiota (Iso-Britannia, kuvitteellinen) pohjana.</span><span class="sxs-lookup"><span data-stu-id="ceb58-126">To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.</span></span>  
-1. <span data-ttu-id="ceb58-127">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ceb58-127">Close the page.</span></span>
-2. <span data-ttu-id="ceb58-128">Valitse Proseware, Inc. ja tee siitä aktiivinen lähde.</span><span class="sxs-lookup"><span data-stu-id="ceb58-128">Select Proseware, Inc. to make it an active provider.</span></span>
-3. <span data-ttu-id="ceb58-129">Valitse Aseta aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="ceb58-129">Click Set active.</span></span>
-4. <span data-ttu-id="ceb58-130">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="ceb58-130">Click Reporting configurations.</span></span>
-5. <span data-ttu-id="ceb58-131">Laajenna puussa solmu Payments (simplified model).</span><span class="sxs-lookup"><span data-stu-id="ceb58-131">In the tree, expand 'Payments (simplified model)'.</span></span>
-6. <span data-ttu-id="ceb58-132">Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious).</span><span class="sxs-lookup"><span data-stu-id="ceb58-132">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
-    * <span data-ttu-id="ceb58-133">Valitse Litware, Inc:n BACS-muotokonfiguraatio (Iso-Britannia, kuvitteellinen). Proseware, Inc. käyttää versiota 1.1 mukautetun version pohjana.</span><span class="sxs-lookup"><span data-stu-id="ceb58-133">Select the BACS (UK fictitious) configuration from Litware, Inc.     Proseware, Inc. will use version 1.1 as a base for the custom version.</span></span>  
-7. <span data-ttu-id="ceb58-134">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="ceb58-134">Click Create configuration to open the drop dialog.</span></span>
-    * <span data-ttu-id="ceb58-135">Näin voit luoda uuden määrityksen mukautetulle maksumuodolle.</span><span class="sxs-lookup"><span data-stu-id="ceb58-135">This lets you create a new configuration for a custom payment format.</span></span>  
-8. <span data-ttu-id="ceb58-136">Anna Uusi-kentän arvoksi "Derive from Name: BACS (UK fictitious), Litware, Inc."</span><span class="sxs-lookup"><span data-stu-id="ceb58-136">In the New field, enter 'Derive from Name: BACS (UK fictitious), Litware, Inc.'.</span></span>
-    * <span data-ttu-id="ceb58-137">Valitse Johda-vaihtoehto vahvistaaksesi BACS (Iso-Britannia, kuvitteellinen) -konfiguraation käytön pohjana mukautetulle versiolle.</span><span class="sxs-lookup"><span data-stu-id="ceb58-137">Select the Derive option to confirm the usage of BACS (UK fictitious) as the base for creating the custom version.</span></span>  
-9. <span data-ttu-id="ceb58-138">Syötä Nimi-kenttään BACS (Iso-Britannia, kuvitteellinen ja mukautettu).</span><span class="sxs-lookup"><span data-stu-id="ceb58-138">In the Name field, type 'BACS (UK fictitious custom)'.</span></span>
-    * <span data-ttu-id="ceb58-139">BACS (Iso-Britannia, kuvitteellinen, mukautettu)</span><span class="sxs-lookup"><span data-stu-id="ceb58-139">BACS (UK fictitious custom)</span></span>  
-10. <span data-ttu-id="ceb58-140">Kirjoita Kuvaus-kenttään BACS - toimittajan maksumuoto (Iso-Britannia, kuvitteellinen ja mukautettu).</span><span class="sxs-lookup"><span data-stu-id="ceb58-140">In the Description field, type 'BACS vendor payment (UK fictitious custom)'.</span></span>
-    * <span data-ttu-id="ceb58-141">BACS - toimittajan maksumuoto (Iso-Britannia, kuvitteellinen ja mukautettu)</span><span class="sxs-lookup"><span data-stu-id="ceb58-141">BACS vendor payment (UK fictitious custom)</span></span>  
-    * <span data-ttu-id="ceb58-142">Aktiivinen konfiguraation lähde (Proseware, Inc.) syötetään tähän automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="ceb58-142">The active configuration provider (Proseware, Inc.) is automatically entered here.</span></span> <span data-ttu-id="ceb58-143">Tämä lähde voi ylläpitää tätä konfiguraatiota.</span><span class="sxs-lookup"><span data-stu-id="ceb58-143">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="ceb58-144">Muut lähteet voivat käyttää tätä konfiguraatiota, mutta eivät ylläpitää sitä.</span><span class="sxs-lookup"><span data-stu-id="ceb58-144">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
-11. <span data-ttu-id="ceb58-145">Valitse Luo konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="ceb58-145">Click Create configuration.</span></span>
-
-## <a name="customize-your-format-for-the-electronic-document"></a><span data-ttu-id="ceb58-146">Sähköisen asiakirjan muodon mukauttaminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-146">Customize your format for the electronic document</span></span>
-1. <span data-ttu-id="ceb58-147">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="ceb58-147">Click Designer.</span></span>
-2. <span data-ttu-id="ceb58-148">Valitse Laajenna tai tiivistä.</span><span class="sxs-lookup"><span data-stu-id="ceb58-148">Click Expand/collapse.</span></span>
-3. <span data-ttu-id="ceb58-149">Valitse Laajenna tai tiivistä.</span><span class="sxs-lookup"><span data-stu-id="ceb58-149">Click Expand/collapse.</span></span>
-4. <span data-ttu-id="ceb58-150">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki.</span><span class="sxs-lookup"><span data-stu-id="ceb58-150">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
-5. <span data-ttu-id="ceb58-151">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="ceb58-151">Click Add to open the drop dialog.</span></span>
-6. <span data-ttu-id="ceb58-152">Valitse puussa solmu XML\Element.</span><span class="sxs-lookup"><span data-stu-id="ceb58-152">In the tree, select 'XML\Element'.</span></span>
-7. <span data-ttu-id="ceb58-153">Syötä Nimi-kenttään IBAN.</span><span class="sxs-lookup"><span data-stu-id="ceb58-153">In the Name field, type 'IBAN'.</span></span>
-    * <span data-ttu-id="ceb58-154">IBAN-tilinumero</span><span class="sxs-lookup"><span data-stu-id="ceb58-154">IBAN</span></span>  
-8. <span data-ttu-id="ceb58-155">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="ceb58-155">Click OK.</span></span>
-9. <span data-ttu-id="ceb58-156">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki\IBAN.</span><span class="sxs-lookup"><span data-stu-id="ceb58-156">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\IBAN'.</span></span>
-10. <span data-ttu-id="ceb58-157">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="ceb58-157">Click Add to open the drop dialog.</span></span>
-11. <span data-ttu-id="ceb58-158">Valitse puussa solmu Text\String.</span><span class="sxs-lookup"><span data-stu-id="ceb58-158">In the tree, select 'Text\String'.</span></span>
-12. <span data-ttu-id="ceb58-159">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="ceb58-159">Click OK.</span></span>
-13. <span data-ttu-id="ceb58-160">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Nimi\Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="ceb58-160">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
-14. <span data-ttu-id="ceb58-161">Anna Enimmäispituus-kentän arvoksi 60.</span><span class="sxs-lookup"><span data-stu-id="ceb58-161">In the Maximum length field, enter '60'.</span></span>
-15. <span data-ttu-id="ceb58-162">Valitse Yhdistämismääritys-välilehti.</span><span class="sxs-lookup"><span data-stu-id="ceb58-162">Click the Mapping tab.</span></span>
-16. <span data-ttu-id="ceb58-163">Laajenna puussa solmu model.</span><span class="sxs-lookup"><span data-stu-id="ceb58-163">In the tree, expand 'model'.</span></span>
-17. <span data-ttu-id="ceb58-164">Laajenna puussa solmu model\Payments.</span><span class="sxs-lookup"><span data-stu-id="ceb58-164">In the tree, expand 'model\Payments'.</span></span>
-18. <span data-ttu-id="ceb58-165">Laajenna puussa solmu model\Payments\Creditor.</span><span class="sxs-lookup"><span data-stu-id="ceb58-165">In the tree, expand 'model\Payments\Creditor'.</span></span>
-19. <span data-ttu-id="ceb58-166">Laajenna puussa solmu model\Payments\Creditor\Account.</span><span class="sxs-lookup"><span data-stu-id="ceb58-166">In the tree, expand 'model\Payments\Creditor\Account'.</span></span>
-20. <span data-ttu-id="ceb58-167">Valitse puussa malli\Maksut\Laskuttaja\Tili\IBAN.</span><span class="sxs-lookup"><span data-stu-id="ceb58-167">In the tree, select 'model\Payments\Creditor\Account\IBAN'.</span></span>
-21. <span data-ttu-id="ceb58-168">Valitse puussa Xml\Sanoma\Maksut\Nimike =  model.Payments\Vendor\Bank\IBAN\String.</span><span class="sxs-lookup"><span data-stu-id="ceb58-168">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\IBAN\String'.</span></span>
-22. <span data-ttu-id="ceb58-169">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="ceb58-169">Click Bind.</span></span>
-23. <span data-ttu-id="ceb58-170">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="ceb58-170">Click Save.</span></span>
-
-## <a name="validate-the-customized-format"></a><span data-ttu-id="ceb58-171">Mukautetun muodon vahvistaminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-171">Validate the customized format</span></span>
-1. <span data-ttu-id="ceb58-172">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="ceb58-172">Click Validate.</span></span>
-    * <span data-ttu-id="ceb58-173">Vahvista mukautetun muodon asettelu ja tietojen yhdistämisen muutokset, että kaikki sidokset ovat kunnossa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-173">Validate the customized format layout and data mapping changes to make sure that all bindings are okay.</span></span>  
-2. <span data-ttu-id="ceb58-174">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ceb58-174">Close the page.</span></span>
-
-## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a><span data-ttu-id="ceb58-175">Mukautetun muotomäärityksen nykyisen version tilan muuttaminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-175">Change the status of the current version of the custom format configuration</span></span>
-    * <span data-ttu-id="ceb58-176">Muuta suunnitellun muotomäärityksen tila Luonnos-tilasta Valmis-tilaan. Tällöin se on käytettävissä maksuasiakirjojen luomiseen.</span><span class="sxs-lookup"><span data-stu-id="ceb58-176">Change the status of the designed format configuration from Draft to Completed to make it available for payment document generation.</span></span>  
-1. <span data-ttu-id="ceb58-177">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="ceb58-177">Click Change status.</span></span>
-    * <span data-ttu-id="ceb58-178">Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.</span><span class="sxs-lookup"><span data-stu-id="ceb58-178">Note that the current version of the selected configuration is in Draft status.</span></span>  
-2. <span data-ttu-id="ceb58-179">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="ceb58-179">Click Complete.</span></span>
-3. <span data-ttu-id="ceb58-180">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ceb58-180">In the Description field, type a value.</span></span>
-4. <span data-ttu-id="ceb58-181">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="ceb58-181">Click OK.</span></span>
-5. <span data-ttu-id="ceb58-182">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="ceb58-182">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ceb58-183">Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.1.1.</span><span class="sxs-lookup"><span data-stu-id="ceb58-183">Note that the created configuration is saved as completed version 1.1.1.</span></span> <span data-ttu-id="ceb58-184">Tämä tarkoittaa, että kyseessä on mukautetun BACS-muodon (Iso-Britannia, kuvitteellinen ja mukautettu) versio 1, joka perustuu BACS-muodon versioon 1, joka perustuu Maksut-tietomallin versioon 1 (yksinkertaistettu malli).</span><span class="sxs-lookup"><span data-stu-id="ceb58-184">This means it is version 1 of the custom BACS (UK fictitious custom) format, which is based on version 1 of the BACS (UK fictitious) format, which is based on version 1 of the Payments (simplified model) data model.</span></span>  
-
-## <a name="test-the-customized-format-to-generate-payment-files"></a><span data-ttu-id="ceb58-185">Mukautetun muodon maksutiedostojen luonnin testaaminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-185">Test the customized format to generate payment files</span></span>
-    * <span data-ttu-id="ceb58-186">Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Dynamics 365 for Finance and Operations, Enterprise edition -istunnossa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-186">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in a parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="ceb58-187">Valitse BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-187">Select the BACS (UK fictitious custom) format in electronic payment method parameters.</span></span> <span data-ttu-id="ceb58-188">Varmista, että luotu maksutiedosto sisältää on viimeisimmän XML-solmun, joka vastaa IBAN-koodia aluekohtaisten vaatimusten mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="ceb58-188">Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.</span></span>  
-
-## <a name="update-the-existing-country-specific-configuration"></a><span data-ttu-id="ceb58-189">Olemassaolevien maakohtaisten konfiguraatioiden päivittäminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-189">Update the existing country-specific configuration</span></span>
-    * <span data-ttu-id="ceb58-190">Litware, Inc. haluaa päivittää BACS-konfiguraation (Iso-Britannia, kuvitteellinen) ja ottaa käyttöön uudet maavaatimukset sähköisen asiakirjan muodon hallinnassa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-190">Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document.</span></span> <span data-ttu-id="ceb58-191">Tämä sisältyy tulevaan konfiguraation versiopäivitykseen, joka tarjotaan palvelun tilaajille, joihin Proseware, Inc. kuuluu.</span><span class="sxs-lookup"><span data-stu-id="ceb58-191">Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.</span></span>  
-    * <span data-ttu-id="ceb58-192">Todellisissa palveluntoteutusprosesseissa Proseware Inc. voi tuoda jokaisen uuden version BACS-muodosta (Iso-Britannia, kuvitteellinen) Litware, Inc:n LCS-konfiguraatiosäilöstä.</span><span class="sxs-lookup"><span data-stu-id="ceb58-192">In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations’ LCS repository.</span></span> <span data-ttu-id="ceb58-193">Näissä toimintaohjeissa tätä simuloidaan päivittämällä BACS-muoto (Iso-Britannia, kuvitteellinen) palveluntarjoajan puolesta.</span><span class="sxs-lookup"><span data-stu-id="ceb58-193">In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.</span></span>  
-1. <span data-ttu-id="ceb58-194">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ceb58-194">Close the page.</span></span>
-2. <span data-ttu-id="ceb58-195">Valitse lähteeksi Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="ceb58-195">Select Litware, inc. provider.</span></span>
-3. <span data-ttu-id="ceb58-196">Valitse Aseta aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="ceb58-196">Click Set active.</span></span>
-4. <span data-ttu-id="ceb58-197">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="ceb58-197">Click Reporting configurations.</span></span>
-5. <span data-ttu-id="ceb58-198">Laajenna puussa solmu Payments (simplified model).</span><span class="sxs-lookup"><span data-stu-id="ceb58-198">In the tree, expand 'Payments (simplified model)'.</span></span>
-6. <span data-ttu-id="ceb58-199">Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious).</span><span class="sxs-lookup"><span data-stu-id="ceb58-199">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
-    * <span data-ttu-id="ceb58-200">Litware, Inc:n omistaman luonnosversion lähde-BACS (Iso-Britannia, kuvitteellinen) valitaan tuomaan uusien maakohtaisten vaatimusten tuki.</span><span class="sxs-lookup"><span data-stu-id="ceb58-200">The draft version owned by Litware, Inc. provider BACS (UK fictitious) is selected to bring in changes to support new country-specific requirements.</span></span>  
-
-## <a name="localize-the-base-format-of-the-electronic-document"></a><span data-ttu-id="ceb58-201">Sähköisen asiakirjan perusmuodon lokalisoiminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-201">Localize the base format of the electronic document</span></span>
-    * <span data-ttu-id="ceb58-202">Oletetaan, että Litware, Inc:n on tuettava uusia maakohtaisia vaatimuksia: - Arvo laskuttajan SWIFT-koodille jokaisessa maksutapahtumassa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-202">Assume that there are new country-specific requirements to be supported by Litware, Inc.:  - A value for the creditor’s bank SWIFT code in each payment transaction.</span></span>  <span data-ttu-id="ceb58-203">- 100 merkin raja toimittajan nimelle luontitiedostossa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-203">- A limit of 100 characters for the length of text for the vendor’s name in a generating file.</span></span>  
-    * <span data-ttu-id="ceb58-204">Uudet maakohtaiset vaatimukset</span><span class="sxs-lookup"><span data-stu-id="ceb58-204">New country-specific requirements</span></span>  
-    * <span data-ttu-id="ceb58-205">Valitse halutun konfiguraation luonnosversio tuodaksesi vaaditut muutokset.</span><span class="sxs-lookup"><span data-stu-id="ceb58-205">Select the draft version of the desired configuration to introduce required changes.</span></span>  
-1. <span data-ttu-id="ceb58-206">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="ceb58-206">Click Designer.</span></span>
-2. <span data-ttu-id="ceb58-207">Valitse Laajenna tai tiivistä.</span><span class="sxs-lookup"><span data-stu-id="ceb58-207">Click Expand/collapse.</span></span>
-3. <span data-ttu-id="ceb58-208">Valitse Laajenna tai tiivistä.</span><span class="sxs-lookup"><span data-stu-id="ceb58-208">Click Expand/collapse.</span></span>
-4. <span data-ttu-id="ceb58-209">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki.</span><span class="sxs-lookup"><span data-stu-id="ceb58-209">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
-5. <span data-ttu-id="ceb58-210">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="ceb58-210">Click Add to open the drop dialog.</span></span>
-6. <span data-ttu-id="ceb58-211">Valitse puussa solmu XML\Element.</span><span class="sxs-lookup"><span data-stu-id="ceb58-211">In the tree, select 'XML\Element'.</span></span>
-7. <span data-ttu-id="ceb58-212">Syötä Nimi-kenttään SWIFT.</span><span class="sxs-lookup"><span data-stu-id="ceb58-212">In the Name field, type 'SWIFT'.</span></span>
-    * <span data-ttu-id="ceb58-213">SWIFT-koodi</span><span class="sxs-lookup"><span data-stu-id="ceb58-213">SWIFT</span></span>  
-8. <span data-ttu-id="ceb58-214">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="ceb58-214">Click OK.</span></span>
-9. <span data-ttu-id="ceb58-215">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki\SWIFT.</span><span class="sxs-lookup"><span data-stu-id="ceb58-215">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\SWIFT'.</span></span>
-10. <span data-ttu-id="ceb58-216">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="ceb58-216">Click Add to open the drop dialog.</span></span>
-11. <span data-ttu-id="ceb58-217">Valitse puussa solmu Text\String.</span><span class="sxs-lookup"><span data-stu-id="ceb58-217">In the tree, select 'Text\String'.</span></span>
-12. <span data-ttu-id="ceb58-218">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="ceb58-218">Click OK.</span></span>
-13. <span data-ttu-id="ceb58-219">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Nimi\Merkkijono.</span><span class="sxs-lookup"><span data-stu-id="ceb58-219">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
-14. <span data-ttu-id="ceb58-220">Anna Enimmäispituus-kentän arvoksi 100.</span><span class="sxs-lookup"><span data-stu-id="ceb58-220">In the Maximum length field, enter '100'.</span></span>
-15. <span data-ttu-id="ceb58-221">Valitse Yhdistämismääritys-välilehti.</span><span class="sxs-lookup"><span data-stu-id="ceb58-221">Click the Mapping tab.</span></span>
-16. <span data-ttu-id="ceb58-222">Laajenna puussa solmu model.</span><span class="sxs-lookup"><span data-stu-id="ceb58-222">In the tree, expand 'model'.</span></span>
-17. <span data-ttu-id="ceb58-223">Laajenna puussa solmu model\Payments.</span><span class="sxs-lookup"><span data-stu-id="ceb58-223">In the tree, expand 'model\Payments'.</span></span>
-18. <span data-ttu-id="ceb58-224">Laajenna puussa solmu model\Payments\Creditor.</span><span class="sxs-lookup"><span data-stu-id="ceb58-224">In the tree, expand 'model\Payments\Creditor'.</span></span>
-19. <span data-ttu-id="ceb58-225">Laajenna puussa solmu expand 'model\Payments\Creditor\Agent.</span><span class="sxs-lookup"><span data-stu-id="ceb58-225">In the tree, expand 'model\Payments\Creditor\Agent'.</span></span>
-20. <span data-ttu-id="ceb58-226">Valitse puussa malli\Maksut\Laskuttaja\Edustaja\SWIFT.</span><span class="sxs-lookup"><span data-stu-id="ceb58-226">In the tree, select 'model\Payments\Creditor\Agent\SWIFT'.</span></span>
-21. <span data-ttu-id="ceb58-227">Valitse puussa Xml\Sanoma\Maksut\Nimike =  model.Payments\Vendor\Bank\SWIFT\String.</span><span class="sxs-lookup"><span data-stu-id="ceb58-227">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\SWIFT\String'.</span></span>
-22. <span data-ttu-id="ceb58-228">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="ceb58-228">Click Bind.</span></span>
-23. <span data-ttu-id="ceb58-229">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="ceb58-229">Click Save.</span></span>
-
-## <a name="validate-the-localized-format"></a><span data-ttu-id="ceb58-230">Lokalisoidun muodon tarkistaminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-230">Validate the localized format</span></span>
-1. <span data-ttu-id="ceb58-231">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="ceb58-231">Click Validate.</span></span>
-2. <span data-ttu-id="ceb58-232">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ceb58-232">Close the page.</span></span>
-
-## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a><span data-ttu-id="ceb58-233">Muotokonfiguraation nykyisen perusversion tilan muuttaminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-233">Change the status of the current version of the base format configuration</span></span>
-    * <span data-ttu-id="ceb58-234">Muutta päivitetyn muotokonfiguraation perusversion tila luonnoksesta valmiiksi, jotta se on käytettävissä maksuasiakirjojen luomiseen ja siitä johdettujen muotokonfiguraatioiden päivityksiin.</span><span class="sxs-lookup"><span data-stu-id="ceb58-234">Change the status of the updated base format configuration from Draft to Completed to make it available for generation of payment documents and updates of format configurations derived from it.</span></span>  
-1. <span data-ttu-id="ceb58-235">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="ceb58-235">Click Change status.</span></span>
-    * <span data-ttu-id="ceb58-236">Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.</span><span class="sxs-lookup"><span data-stu-id="ceb58-236">Note that the current version of the selected configuration is in Draft status.</span></span>  
-2. <span data-ttu-id="ceb58-237">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="ceb58-237">Click Complete.</span></span>
-3. <span data-ttu-id="ceb58-238">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ceb58-238">In the Description field, type a value.</span></span>
-4. <span data-ttu-id="ceb58-239">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="ceb58-239">Click OK.</span></span>
-5. <span data-ttu-id="ceb58-240">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="ceb58-240">In the list, find and select the desired record.</span></span>
-
-## <a name="change-the-base-version-for-the-custom-format-configuration"></a><span data-ttu-id="ceb58-241">Mukautetun muotokonfiguraation perusversion muuttaminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-241">Change the base version for the custom format configuration</span></span>
-    * <span data-ttu-id="ceb58-242">Proseware, Inc. saa tiedon, että saatavilla on BACS-konfiguraation (Iso-Britannia, kuvitteellinen) versiopäivitys 1.2, jolla on mahdollista luoda sähköisiä maksuasiakirjoja vasta julkaistujen maakohtaisten vaatimusten mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="ceb58-242">Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements.</span></span> <span data-ttu-id="ceb58-243">Proseware, Inc. haluaa käyttää uutta versiota maan standardien noudattamiseen.</span><span class="sxs-lookup"><span data-stu-id="ceb58-243">Proseware, Inc. wants to start using it as a standard for the country.</span></span>  <span data-ttu-id="ceb58-244">Tämän vuoksi Proseware, Inc:n on muutettava peruskonfiguraation versiota mukautetulle BACS-konfiguraatiolleen (Iso-Britannia, kuvitteellinen ja mukautettu).</span><span class="sxs-lookup"><span data-stu-id="ceb58-244">To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom).</span></span> <span data-ttu-id="ceb58-245">Käytä uutta versiota 1.2 edellisen BACS-muodon (Iso-Britannia, kuvitteellinen) 1.1-version sijaan.</span><span class="sxs-lookup"><span data-stu-id="ceb58-245">Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.</span></span>  
-1. <span data-ttu-id="ceb58-246">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="ceb58-246">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="ceb58-247">Valitse Proseware, Inc -lähde ja merkitse aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="ceb58-247">Select the Proseware, Inc. provider to mark it as active.</span></span>
-3. <span data-ttu-id="ceb58-248">Valitse Aseta aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="ceb58-248">Click Set active.</span></span>
-4. <span data-ttu-id="ceb58-249">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="ceb58-249">Click Reporting configurations.</span></span>
-5. <span data-ttu-id="ceb58-250">Laajenna puussa solmu Payments (simplified model).</span><span class="sxs-lookup"><span data-stu-id="ceb58-250">In the tree, expand 'Payments (simplified model)'.</span></span>
-6. <span data-ttu-id="ceb58-251">Laajenna puussa solmu Payments (simplified model)\BACS (UK fictitious).</span><span class="sxs-lookup"><span data-stu-id="ceb58-251">In the tree, expand 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
-7. <span data-ttu-id="ceb58-252">Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom).</span><span class="sxs-lookup"><span data-stu-id="ceb58-252">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom)'.</span></span>
-    * <span data-ttu-id="ceb58-253">Valitse BACS-muodon (Iso-Britannia, kuvitteellinen ja mukautettu) konfiguraatio, jonka omistaa Proseware, Inc.</span><span class="sxs-lookup"><span data-stu-id="ceb58-253">Select the BACS (UK fictitious custom) configuration, which is owned by Proseware, Inc.</span></span>  
-    * <span data-ttu-id="ceb58-254">Käytä valitun konfiguraation luonnosversiota tuodaksesi vaaditut muutokset.</span><span class="sxs-lookup"><span data-stu-id="ceb58-254">Use the draft version of the selected configuration to introduce required changes.</span></span>  
-8. <span data-ttu-id="ceb58-255">Valitse Pohjusta.</span><span class="sxs-lookup"><span data-stu-id="ceb58-255">Click Rebase.</span></span>
-    * <span data-ttu-id="ceb58-256">Valitse peruskonfiguraation uusi versio 1.2 käytettäväksi perusteena konfiguraation päivityksille.</span><span class="sxs-lookup"><span data-stu-id="ceb58-256">Select the new version 1.2 of the base configuration to be applied as a new base for updating the configuration.</span></span>  
-9. <span data-ttu-id="ceb58-257">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="ceb58-257">Click OK.</span></span>
-    * <span data-ttu-id="ceb58-258">Huomaa, että osaa muodon muutosten ristiriidoista, jotka havaitaan mukautetun version ja uuden perusversion yhdistämisen yhteydessä, ei voida yhdistää automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="ceb58-258">Note that some conflicts have been discovered between merging the custom version and a new base version representing some format changes that can’t be merged automatically.</span></span>  
-
-## <a name="resolve-rebase-conflicts"></a><span data-ttu-id="ceb58-259">Pohjustusriitojen ratkaiseminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-259">Resolve rebase conflicts</span></span>
-1. <span data-ttu-id="ceb58-260">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="ceb58-260">Click Designer.</span></span>
-    * <span data-ttu-id="ceb58-261">Huomaa, että muutoksia toimittajan nimen pituusrajoitukseen ei voitu selvittää automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="ceb58-261">Note that changes to the vendor’s name text length limit couldn’t be resolved automatically.</span></span> <span data-ttu-id="ceb58-262">Tämä esitetään sen vuoksi ristiriitojen luettelossa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-262">Therefore, this is presented in a conflicts list.</span></span> <span data-ttu-id="ceb58-263">Jokaiselle päivitystyypin ristiriidalle on seuraavat ratkaisuvaihtoehdot: - Käytä aiempaa perusarvoa (painike ruudukon yläpuolella) edellisen perusversion arvon mukaisesti (tässä tapauksessa 0).</span><span class="sxs-lookup"><span data-stu-id="ceb58-263">For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).</span></span>  <span data-ttu-id="ceb58-264">- Käytä perusarvoa (painike ruudukon yläpuolella) uuden perusversion arvon mukaisesti (tässä tapauksessa 100).</span><span class="sxs-lookup"><span data-stu-id="ceb58-264">- Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).</span></span>  <span data-ttu-id="ceb58-265">- Säilytä oma (mukautettu) arvo (tässä tapauksessa 60).</span><span class="sxs-lookup"><span data-stu-id="ceb58-265">- Keep your own (custom) value (60 in our case).</span></span>  <span data-ttu-id="ceb58-266">Valitse Kohdista perusarvo -painiketta kohdistaaksesi maakohtaisesti sallitut 100 merkkiä toimittajan nimille.</span><span class="sxs-lookup"><span data-stu-id="ceb58-266">Click Apply base value to apply a country-specific limit of 100 characters for vendor’s name text length.</span></span>  
-    * <span data-ttu-id="ceb58-267">Huomaa, että Proseware, Inc. ja Litware, Inc. käyttävät mukautettuja ja paikallisia versioita tästä muodosta käyttäen IBAN- ja SWIFT-koodeja liittyvissä komponenteissa, jotka yhdistetään automaattisesti hallitussa muodossa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-267">Note that Proseware, Inc. and Litware, Inc. have custom and local versions of this format using IBAN and SWIFT codes with related components that are automatically merged in the managing format.</span></span>  
-2. <span data-ttu-id="ceb58-268">Valitse Käytä aiempaa perusarvoa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-268">Click Apply base value.</span></span>
-    * <span data-ttu-id="ceb58-269">Valitse Kohdista perusarvo -painiketta kohdistaaksesi maakohtaisesti sallitut 100 merkkiä toimittajan nimille.</span><span class="sxs-lookup"><span data-stu-id="ceb58-269">Click Apply base value to apply the country-specific limit of 100 characters for vendor names.</span></span>  
-3. <span data-ttu-id="ceb58-270">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="ceb58-270">Click Save.</span></span>
-    * <span data-ttu-id="ceb58-271">Muodon tallentaminen poistaa ratkaistut ristiriidat luettelosta.</span><span class="sxs-lookup"><span data-stu-id="ceb58-271">Saving the format will remove resolved conflicts from the conflicts list.</span></span>  
-4. <span data-ttu-id="ceb58-272">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ceb58-272">Close the page.</span></span>
-
-## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a><span data-ttu-id="ceb58-273">Muotokonfiguraation uuden mukautetun version tilan muuttaminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-273">Change the status of the new version of the custom format configuration</span></span>
-1. <span data-ttu-id="ceb58-274">Voit muuttaa tilaa valitsemalla Muuta.</span><span class="sxs-lookup"><span data-stu-id="ceb58-274">Click Change status.</span></span>
-    * <span data-ttu-id="ceb58-275">Muuttaa päivitetyn mukautetun muotokonfiguraation tilan luonnoksesta valmiiksi.</span><span class="sxs-lookup"><span data-stu-id="ceb58-275">Change the status of the updated, custom format configuration from Draft to Completed.</span></span> <span data-ttu-id="ceb58-276">Muotomääritykset ovat nyt käytettävissä maksuasiakirjoja luotaessa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-276">This will make the format configuration available for generating payment documents.</span></span> <span data-ttu-id="ceb58-277">Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.</span><span class="sxs-lookup"><span data-stu-id="ceb58-277">Note that the current version of the selected configuration is in Draft status.</span></span>  
-2. <span data-ttu-id="ceb58-278">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="ceb58-278">Click Complete.</span></span>
-3. <span data-ttu-id="ceb58-279">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ceb58-279">In the Description field, type a value.</span></span>
-4. <span data-ttu-id="ceb58-280">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="ceb58-280">Click OK.</span></span>
-    * <span data-ttu-id="ceb58-281">Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.2.2: BACS-perusmuodon (Iso-Britannia, kuvitteellinen ja mukautettu) versiona 2, joka perustuu BACS-perusmuodon (Iso-Britannia, kuvitteellinen) versioon 2, joka perustuu maksujen tietomallin versioon 1 (yksinkertaistettu malli).</span><span class="sxs-lookup"><span data-stu-id="ceb58-281">Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.</span></span>  
-
-## <a name="test-the-customized-format-for-payment-files-generation"></a><span data-ttu-id="ceb58-282">Mukautetun muodon maksutiedostojen luonnin testaaminen</span><span class="sxs-lookup"><span data-stu-id="ceb58-282">Test the customized format for payment files generation</span></span>
-    * <span data-ttu-id="ceb58-283">Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Dynamics 365 for Finance and Operations, Enterprise edition -istunnossa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-283">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="ceb58-284">Valitse luotu BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa.</span><span class="sxs-lookup"><span data-stu-id="ceb58-284">Select the created ‘BACS (UK fictitious custom)’ format in electronic payment method parameters.</span></span> <span data-ttu-id="ceb58-285">Varmista, että luotu maksutiedosto sisältää on viimeisimmän Proseware, Inc:n XML-solmun, joka vastaa IBAN-tilikoodia aluekohtaisten vaatimusten mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="ceb58-285">Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements.</span></span> <span data-ttu-id="ceb58-286">Tiedoston pitäisi myös sisältää viimeisin Litware, Inc:n XML-solmu, joka edustaa SWIFT-pankkikoodia maakohtaisten vaatimusten mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="ceb58-286">The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.</span></span>  
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="er-upgrade-format.md" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>er-upgrade-format.32ec25.151b8936a46a1945e98bfe0ed040ca50c93db4b0.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>151b8936a46a1945e98bfe0ed040ca50c93db4b0</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\analytics\tasks\er-upgrade-format.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>ER Upgrade your format by adopting a new, base version of that format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER Muodon päivittäminen ottamalla käyttöön sitä koskeva uusi perusversio</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi ylläpitää muotokonfiguraatiota sähköiselle raportoinnille (ER).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>ER Upgrade your format by adopting a new, base version of that format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER Muodon päivittäminen ottamalla käyttöön sitä koskeva uusi perusversio</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi ylläpitää muotokonfiguraatiota sähköiselle raportoinnille (ER).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa menettelyssä kerrotaan, miten luodaan muodosta mukautettu versio konfiguroinnin lähteen (CP) tarjoaman muodon perusteella.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>It also explains how to adopt a new, base version of that format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siinä käsitellään myös muodon uuden perusversion käyttöönotto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” and “Use created format to generate electronic documents for payments” procedures.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näitä vaiheita varten on suoritettava ensin seuraavien menettelyiden vaiheet: "Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi" ja "Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>These steps can be performed in the GBSI company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nämä vaiheet voidaan suorittaa GBSI-yrityksessä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Select format configuration for customization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautettavan muotokonfiguraation valinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Go to Organization administration &gt; Workspaces &gt; Electronic reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry kohtaan Organisaation hallinto &gt; Työtilat &gt; Sähköinen raportointi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>In this example, sample company Litware, Inc. (<ph id="ph1">https://www.litware.com)</ph> will act as a configuration provider that supports format configurations for electronic payments for a particular country.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä esimerkissä malliyritys Litware, Inc. (<ph id="ph1">https://www.litware.com)</ph> toimii konfiguraation lähteenä, joka tukee tietyn maan muotokonfiguraatioita sähköisille maksuille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Sample company Proseware, Inc. (<ph id="ph1">http://www.proseware.com)</ph> will act as a consumer of the format configuration that Litware, Inc. provided.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Malliyritys Proseware, Inc. (<ph id="ph1">http://www.proseware.com)</ph> toimii kuluttajana Litware, Inc.:n toimittamalle muotokonfiguraatiolle.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Proseware, Inc. uses formats in certain regions of that country.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware, Inc. käyttää muotoja tietyillä maan alueilla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Click Reporting configurations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Raportointikonfiguraatiot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Click Show filters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Näytä suodattimet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä seuraavia suodattimia: Anna suodattimen arvoksi Nimi-kenttään BACS (Iso-Britannia, kuvitteellinen) käyttämällä Alkaa-suodatinoperaattoria.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>BACS (UK fictitious)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BACS (Iso-Britannia, kuvitteellinen)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>The selected format configuration BACS (UK fictitious) is owned by provider Litware, Inc.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitun BACS-muotomäärityksen (Iso-Britannia, kuvitteellinen ja mukautettu) omistaja on toimittaja Litware, Inc.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Click Show filters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Näytä suodattimet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etsi haluamasi tietue luettelosta ja valitse se.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>The version of the format with the status of Completed will be used by Proseware, Inc. for customization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware Inc. käyttää mukauttamiseen tämän muodon versiota, jonka tila on Valmis.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Create a new configuration for your custom format of electronic document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo uusi konfiguraatio sähköisen asiakirjan mukautetulle muodolle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware Inc. on vastaanottanut Litware, Inc:ltä palvelutilauksen mukaisesti version 1.1 BACS-muotokonfiguraatiosta (Iso-Britannia, kuvitteellinen), joka sisältää alustavan muodon sähköisten maksuasiakirjojen luomiseen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware Inc. haluaa käyttää konfiguraatiota vakiomuodossaan maassaan, mutta joitain mukautuksia tarvitaan tukemaan aluekohtaisia erityisvaatimuksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware Inc. haluaa säilyttää mahdollisuuden päivittää mukautetun muodon heti, kun uusi versio (joka sisältää muutoksia uusien maakohtaisten vaatimusten tukeen) on saatavilla Litware, Inc:ltä. Yritys haluaa myös suorittaa päivityksen mahdollisimman edullisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä varten Proseware, Inc:n on luotava määritys käyttämällä Litware, Inc:n BACS-muotokonfiguraatiota (Iso-Britannia, kuvitteellinen) pohjana.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sulje sivu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Select Proseware, Inc. to make it an active provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Proseware, Inc. ja tee siitä aktiivinen lähde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Click Set active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Aseta aktiiviseksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Click Reporting configurations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Raportointikonfiguraatiot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the tree, expand 'Payments (simplified model)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu Payments (simplified model).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Select the BACS (UK fictitious) configuration from Litware, Inc.     Proseware, Inc. will use version 1.1 as a base for the custom version.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Litware, Inc:n BACS-muotokonfiguraatio (Iso-Britannia, kuvitteellinen). Proseware, Inc. käyttää versiota 1.1 mukautetun version pohjana.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Click Create configuration to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>This lets you create a new configuration for a custom payment format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näin voit luoda uuden määrityksen mukautetulle maksumuodolle.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>In the New field, enter 'Derive from Name: BACS (UK fictitious), Litware, Inc.'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anna Uusi-kentän arvoksi "Derive from Name: BACS (UK fictitious), Litware, Inc."</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Select the Derive option to confirm the usage of BACS (UK fictitious) as the base for creating the custom version.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Johda-vaihtoehto vahvistaaksesi BACS (Iso-Britannia, kuvitteellinen) -konfiguraation käytön pohjana mukautetulle versiolle.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the Name field, type 'BACS (UK fictitious custom)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä Nimi-kenttään BACS (Iso-Britannia, kuvitteellinen ja mukautettu).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>BACS (UK fictitious custom)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BACS (Iso-Britannia, kuvitteellinen, mukautettu)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>In the Description field, type 'BACS vendor payment (UK fictitious custom)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita Kuvaus-kenttään BACS - toimittajan maksumuoto (Iso-Britannia, kuvitteellinen ja mukautettu).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>BACS vendor payment (UK fictitious custom)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BACS - toimittajan maksumuoto (Iso-Britannia, kuvitteellinen ja mukautettu)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>The active configuration provider (Proseware, Inc.) is automatically entered here.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktiivinen konfiguraation lähde (Proseware, Inc.) syötetään tähän automaattisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>This provider will be able to maintain this configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä lähde voi ylläpitää tätä konfiguraatiota.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Other providers can use this configuration, but will not be able to maintain it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muut lähteet voivat käyttää tätä konfiguraatiota, mutta eivät ylläpitää sitä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Click Create configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Luo konfiguraatio.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Customize your format for the electronic document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sähköisen asiakirjan muodon mukauttaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Click Designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Suunnittelutoiminto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Click Expand/collapse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Laajenna tai tiivistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Click Expand/collapse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Laajenna tai tiivistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Click Add to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa valintaikkuna valitsemalla Lisää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>In the tree, select 'XML\Element'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa solmu XML\Element.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>In the Name field, type 'IBAN'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä Nimi-kenttään IBAN.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>IBAN</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IBAN-tilinumero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\IBAN'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki\IBAN.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Click Add to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa valintaikkuna valitsemalla Lisää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>In the tree, select 'Text\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa solmu Text\String.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Nimi\Merkkijono.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>In the Maximum length field, enter '60'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anna Enimmäispituus-kentän arvoksi 60.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Click the Mapping tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Yhdistämismääritys-välilehti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>In the tree, expand 'model'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu model.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>In the tree, expand 'model\Payments'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu model\Payments.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>In the tree, expand 'model\Payments\Creditor'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu model\Payments\Creditor.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>In the tree, expand 'model\Payments\Creditor\Account'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu model\Payments\Creditor\Account.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>In the tree, select 'model\Payments\Creditor\Account\IBAN'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa malli\Maksut\Laskuttaja\Tili\IBAN.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\IBAN\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa Xml\Sanoma\Maksut\Nimike =  model.Payments\Vendor\Bank\IBAN\String.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Click Bind.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Sido.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tallenna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Validate the customized format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautetun muodon vahvistaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Click Validate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Vahvista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Validate the customized format layout and data mapping changes to make sure that all bindings are okay.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vahvista mukautetun muodon asettelu ja tietojen yhdistämisen muutokset, että kaikki sidokset ovat kunnossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sulje sivu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>Change the status of the current version of the custom format configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautetun muotomäärityksen nykyisen version tilan muuttaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Change the status of the designed format configuration from Draft to Completed to make it available for payment document generation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muuta suunnitellun muotomäärityksen tila Luonnos-tilasta Valmis-tilaan. Tällöin se on käytettävissä maksuasiakirjojen luomiseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Click Change status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit muuttaa tilaa valitsemalla Muuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Note that the current version of the selected configuration is in Draft status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Click Complete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Valmis.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>In the Description field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita arvo Kuvaus-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etsi haluamasi tietue luettelosta ja valitse se.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Note that the created configuration is saved as completed version 1.1.1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.1.1.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>This means it is version 1 of the custom BACS (UK fictitious custom) format, which is based on version 1 of the BACS (UK fictitious) format, which is based on version 1 of the Payments (simplified model) data model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä tarkoittaa, että kyseessä on mukautetun BACS-muodon (Iso-Britannia, kuvitteellinen ja mukautettu) versio 1, joka perustuu BACS-muodon versioon 1, joka perustuu Maksut-tietomallin versioon 1 (yksinkertaistettu malli).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Test the customized format to generate payment files</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautetun muodon maksutiedostojen luonnin testaaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Complete the steps in the “Use created format to generate electronic documents for payments” procedure in a parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Dynamics 365 for Finance and Operations, Enterprise edition -istunnossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Select the BACS (UK fictitious custom) format in electronic payment method parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varmista, että luotu maksutiedosto sisältää on viimeisimmän XML-solmun, joka vastaa IBAN-koodia aluekohtaisten vaatimusten mukaisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Update the existing country-specific configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Olemassaolevien maakohtaisten konfiguraatioiden päivittäminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Litware, Inc. haluaa päivittää BACS-konfiguraation (Iso-Britannia, kuvitteellinen) ja ottaa käyttöön uudet maavaatimukset sähköisen asiakirjan muodon hallinnassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä sisältyy tulevaan konfiguraation versiopäivitykseen, joka tarjotaan palvelun tilaajille, joihin Proseware, Inc. kuuluu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations’ LCS repository.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Todellisissa palveluntoteutusprosesseissa Proseware Inc. voi tuoda jokaisen uuden version BACS-muodosta (Iso-Britannia, kuvitteellinen) Litware, Inc:n LCS-konfiguraatiosäilöstä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näissä toimintaohjeissa tätä simuloidaan päivittämällä BACS-muoto (Iso-Britannia, kuvitteellinen) palveluntarjoajan puolesta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sulje sivu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Select Litware, inc. provider.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse lähteeksi Litware, Inc.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Click Set active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Aseta aktiiviseksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Click Reporting configurations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Raportointikonfiguraatiot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>In the tree, expand 'Payments (simplified model)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu Payments (simplified model).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>The draft version owned by Litware, Inc. provider BACS (UK fictitious) is selected to bring in changes to support new country-specific requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Litware, Inc:n omistaman luonnosversion lähde-BACS (Iso-Britannia, kuvitteellinen) valitaan tuomaan uusien maakohtaisten vaatimusten tuki.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Localize the base format of the electronic document</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sähköisen asiakirjan perusmuodon lokalisoiminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Assume that there are new country-specific requirements to be supported by Litware, Inc.:  - A value for the creditor’s bank SWIFT code in each payment transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletetaan, että Litware, Inc:n on tuettava uusia maakohtaisia vaatimuksia: - Arvo laskuttajan SWIFT-koodille jokaisessa maksutapahtumassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>- A limit of 100 characters for the length of text for the vendor’s name in a generating file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- 100 merkin raja toimittajan nimelle luontitiedostossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>New country-specific requirements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uudet maakohtaiset vaatimukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Select the draft version of the desired configuration to introduce required changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse halutun konfiguraation luonnosversio tuodaksesi vaaditut muutokset.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Click Designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Suunnittelutoiminto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Click Expand/collapse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Laajenna tai tiivistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Click Expand/collapse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Laajenna tai tiivistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Click Add to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa valintaikkuna valitsemalla Lisää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>In the tree, select 'XML\Element'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa solmu XML\Element.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>In the Name field, type 'SWIFT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä Nimi-kenttään SWIFT.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>SWIFT</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SWIFT-koodi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\SWIFT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Pankki\SWIFT.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Click Add to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa valintaikkuna valitsemalla Lisää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>In the tree, select 'Text\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa solmu Text\String.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa Xml\Sanoma\Maksut\Nimike\Toimittaja\Nimi\Merkkijono.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>In the Maximum length field, enter '100'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anna Enimmäispituus-kentän arvoksi 100.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>Click the Mapping tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Yhdistämismääritys-välilehti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>In the tree, expand 'model'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu model.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>In the tree, expand 'model\Payments'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu model\Payments.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>In the tree, expand 'model\Payments\Creditor'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu model\Payments\Creditor.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>In the tree, expand 'model\Payments\Creditor\Agent'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu expand 'model\Payments\Creditor\Agent.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>In the tree, select 'model\Payments\Creditor\Agent\SWIFT'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa malli\Maksut\Laskuttaja\Edustaja\SWIFT.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\SWIFT\String'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa Xml\Sanoma\Maksut\Nimike =  model.Payments\Vendor\Bank\SWIFT\String.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Click Bind.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Sido.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tallenna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Validate the localized format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lokalisoidun muodon tarkistaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Click Validate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Vahvista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sulje sivu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Change the status of the current version of the base format configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotokonfiguraation nykyisen perusversion tilan muuttaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Change the status of the updated base format configuration from Draft to Completed to make it available for generation of payment documents and updates of format configurations derived from it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muutta päivitetyn muotokonfiguraation perusversion tila luonnoksesta valmiiksi, jotta se on käytettävissä maksuasiakirjojen luomiseen ja siitä johdettujen muotokonfiguraatioiden päivityksiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Click Change status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit muuttaa tilaa valitsemalla Muuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Note that the current version of the selected configuration is in Draft status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Click Complete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Valmis.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>In the Description field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita arvo Kuvaus-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etsi haluamasi tietue luettelosta ja valitse se.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Change the base version for the custom format configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautetun muotokonfiguraation perusversion muuttaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware, Inc. saa tiedon, että saatavilla on BACS-konfiguraation (Iso-Britannia, kuvitteellinen) versiopäivitys 1.2, jolla on mahdollista luoda sähköisiä maksuasiakirjoja vasta julkaistujen maakohtaisten vaatimusten mukaisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Proseware, Inc. wants to start using it as a standard for the country.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proseware, Inc. haluaa käyttää uutta versiota maan standardien noudattamiseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vuoksi Proseware, Inc:n on muutettava peruskonfiguraation versiota mukautetulle BACS-konfiguraatiolleen (Iso-Britannia, kuvitteellinen ja mukautettu).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä uutta versiota 1.2 edellisen BACS-muodon (Iso-Britannia, kuvitteellinen) 1.1-version sijaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Go to Organization administration &gt; Workspaces &gt; Electronic reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry kohtaan Organisaation hallinto &gt; Työtilat &gt; Sähköinen raportointi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Select the Proseware, Inc. provider to mark it as active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Proseware, Inc -lähde ja merkitse aktiiviseksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>Click Set active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Aseta aktiiviseksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Click Reporting configurations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Raportointikonfiguraatiot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>In the tree, expand 'Payments (simplified model)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu Payments (simplified model).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>In the tree, expand 'Payments (simplified model)\BACS (UK fictitious)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna puussa solmu Payments (simplified model)\BACS (UK fictitious).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>In the tree, select 'Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom)'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse puussa solmu Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>Select the BACS (UK fictitious custom) configuration, which is owned by Proseware, Inc.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse BACS-muodon (Iso-Britannia, kuvitteellinen ja mukautettu) konfiguraatio, jonka omistaa Proseware, Inc.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>Use the draft version of the selected configuration to introduce required changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä valitun konfiguraation luonnosversiota tuodaksesi vaaditut muutokset.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>Click Rebase.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Pohjusta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Select the new version 1.2 of the base configuration to be applied as a new base for updating the configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse peruskonfiguraation uusi versio 1.2 käytettäväksi perusteena konfiguraation päivityksille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Note that some conflicts have been discovered between merging the custom version and a new base version representing some format changes that can’t be merged automatically.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Huomaa, että osaa muodon muutosten ristiriidoista, jotka havaitaan mukautetun version ja uuden perusversion yhdistämisen yhteydessä, ei voida yhdistää automaattisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>Resolve rebase conflicts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pohjustusriitojen ratkaiseminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>Click Designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Suunnittelutoiminto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Note that changes to the vendor’s name text length limit couldn’t be resolved automatically.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Huomaa, että muutoksia toimittajan nimen pituusrajoitukseen ei voitu selvittää automaattisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Therefore, this is presented in a conflicts list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä esitetään sen vuoksi ristiriitojen luettelossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jokaiselle päivitystyypin ristiriidalle on seuraavat ratkaisuvaihtoehdot: - Käytä aiempaa perusarvoa (painike ruudukon yläpuolella) edellisen perusversion arvon mukaisesti (tässä tapauksessa 0).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>- Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Käytä perusarvoa (painike ruudukon yläpuolella) uuden perusversion arvon mukaisesti (tässä tapauksessa 100).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>- Keep your own (custom) value (60 in our case).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Säilytä oma (mukautettu) arvo (tässä tapauksessa 60).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>Click Apply base value to apply a country-specific limit of 100 characters for vendor’s name text length.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Kohdista perusarvo -painiketta kohdistaaksesi maakohtaisesti sallitut 100 merkkiä toimittajan nimille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Note that Proseware, Inc. and Litware, Inc. have custom and local versions of this format using IBAN and SWIFT codes with related components that are automatically merged in the managing format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Huomaa, että Proseware, Inc. ja Litware, Inc. käyttävät mukautettuja ja paikallisia versioita tästä muodosta käyttäen IBAN- ja SWIFT-koodeja liittyvissä komponenteissa, jotka yhdistetään automaattisesti hallitussa muodossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>Click Apply base value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Käytä aiempaa perusarvoa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>Click Apply base value to apply the country-specific limit of 100 characters for vendor names.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Kohdista perusarvo -painiketta kohdistaaksesi maakohtaisesti sallitut 100 merkkiä toimittajan nimille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tallenna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>Saving the format will remove resolved conflicts from the conflicts list.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muodon tallentaminen poistaa ratkaistut ristiriidat luettelosta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sulje sivu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Change the status of the new version of the custom format configuration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotokonfiguraation uuden mukautetun version tilan muuttaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Click Change status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit muuttaa tilaa valitsemalla Muuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>Change the status of the updated, custom format configuration from Draft to Completed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muuttaa päivitetyn mukautetun muotokonfiguraation tilan luonnoksesta valmiiksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>This will make the format configuration available for generating payment documents.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotomääritykset ovat nyt käytettävissä maksuasiakirjoja luotaessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Note that the current version of the selected configuration is in Draft status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Huomaa, että valitun konfiguraation nykyisen version tila on Luonnos.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Click Complete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Valmis.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>In the Description field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita arvo Kuvaus-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Huomaa, että luotu konfiguraatio tallennetaan valmiina versiona 1.2.2: BACS-perusmuodon (Iso-Britannia, kuvitteellinen ja mukautettu) versiona 2, joka perustuu BACS-perusmuodon (Iso-Britannia, kuvitteellinen) versioon 2, joka perustuu maksujen tietomallin versioon 1 (yksinkertaistettu malli).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Test the customized format for payment files generation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautetun muodon maksutiedostojen luonnin testaaminen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Complete the steps in the “Use created format to generate electronic documents for payments” procedure in parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suorita Käytä luotua muotoa sähköisten maksuasiakirjojen luomiseen -menettelyn vaiheet rinnakkaisessa Dynamics 365 for Finance and Operations, Enterprise edition -istunnossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Select the created ‘BACS (UK fictitious custom)’ format in electronic payment method parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse luotu BACS-muoto (Iso-Britannia, kuvitteellinen ja mukautettu) sähköisen maksutavan parametreissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varmista, että luotu maksutiedosto sisältää on viimeisimmän Proseware, Inc:n XML-solmun, joka vastaa IBAN-tilikoodia aluekohtaisten vaatimusten mukaisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tiedoston pitäisi myös sisältää viimeisin Litware, Inc:n XML-solmu, joka edustaa SWIFT-pankkikoodia maakohtaisten vaatimusten mukaisesti.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

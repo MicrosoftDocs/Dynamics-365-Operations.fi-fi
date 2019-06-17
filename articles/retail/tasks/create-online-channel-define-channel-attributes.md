@@ -1,63 +1,132 @@
----
-title: Luo online-kanava ja määritä kanavamääritteet
-description: Tässä menettelyssä kerrotaan, miten uusi online-kanava luodaan ja lisätään organisaatiohierarkiaan.
-author: jashanno
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: RetailSPOnlineStoreDetailPage, SysLookupMultiSelectGrid, DimensionLookup, OMHierarchyManager, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
-audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
-ms.search.region: Global
-ms.search.industry: Retail
-ms.author: jashanno
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e066e9901a97bd5b72815a7af472247ef519ecb9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569518"
----
-# <a name="create-online-channel-and-define-channel-attributes"></a><span data-ttu-id="7f22d-103">Luo online-kanava ja määritä kanavamääritteet</span><span class="sxs-lookup"><span data-stu-id="7f22d-103">Create online channel and define channel attributes</span></span>
-
-[!include[task guide banner](../includes/task-guide-banner.md)]
-
-<span data-ttu-id="7f22d-104">Tässä menettelyssä kerrotaan, miten uusi online-kanava luodaan ja lisätään organisaatiohierarkiaan.</span><span class="sxs-lookup"><span data-stu-id="7f22d-104">This procedure walks through creating a new online channel and adding it to the organization hierarchy.</span></span> <span data-ttu-id="7f22d-105">Organisaatiohierarkia on luotava ennen uuden online-kanavan luomista.</span><span class="sxs-lookup"><span data-stu-id="7f22d-105">You must create the organization hierarchy before you can create a new online channel.</span></span> <span data-ttu-id="7f22d-106">Menettely käyttää esittelytietojen USRT-yritystä.</span><span class="sxs-lookup"><span data-stu-id="7f22d-106">This procedure uses the USRT demo data company.</span></span>
-
-
-## <a name="create-a-new-online-channel"></a><span data-ttu-id="7f22d-107">Uuden online-kanavan luominen</span><span class="sxs-lookup"><span data-stu-id="7f22d-107">Create a new online channel</span></span>
-1. <span data-ttu-id="7f22d-108">Valitse Vähittäismyynti ja kauppa > Kanavat > Verkkokaupat.</span><span class="sxs-lookup"><span data-stu-id="7f22d-108">Go to Retail and commerce > Channels > Online stores.</span></span>
-2. <span data-ttu-id="7f22d-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7f22d-109">Click New.</span></span>
-3. <span data-ttu-id="7f22d-110">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7f22d-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="7f22d-111">Anna tai valitse Varasto-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="7f22d-111">In the Warehouse field, enter or select a value.</span></span>
-5. <span data-ttu-id="7f22d-112">Valitse vaihtoehto Varaston aikavyöhyke -kentässä.</span><span class="sxs-lookup"><span data-stu-id="7f22d-112">In the Store time zone field, select an option.</span></span>
-6. <span data-ttu-id="7f22d-113">Syötä tai valitse arvo Oletusasiakas-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7f22d-113">In the Default customer field, enter or select a value.</span></span>
-7. <span data-ttu-id="7f22d-114">Syötä tai valitse arvo Asiakkaan osoitekirja -kentässä.</span><span class="sxs-lookup"><span data-stu-id="7f22d-114">In the Customer address book field, enter or select a value.</span></span>
-8. <span data-ttu-id="7f22d-115">Syötä tai valitse arvo Maksuehdot-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7f22d-115">In the Terms of payment field, enter or select a value.</span></span>
-9. <span data-ttu-id="7f22d-116">Anna tai valitse arvo Maksutapa-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7f22d-116">In the Method of payment field, enter or select a value.</span></span>
-10. <span data-ttu-id="7f22d-117">Syötä tai valitse arvo Sähköposti-ilmoitusprofiili-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7f22d-117">In the Email notification profile field, enter or select a value.</span></span>
-11. <span data-ttu-id="7f22d-118">Laajenna Taloushallinnon dimensiot -osa.</span><span class="sxs-lookup"><span data-stu-id="7f22d-118">Expand the Financial dimensions section.</span></span>
-12. <span data-ttu-id="7f22d-119">Syötä tai valitse arvo BusinessUnit-kentässä.</span><span class="sxs-lookup"><span data-stu-id="7f22d-119">In the BusinessUnit field, enter or select a value.</span></span>
-    * <span data-ttu-id="7f22d-120">Määritä samalla tavalla kaikkien muiden oletusdimensioiden arvot.</span><span class="sxs-lookup"><span data-stu-id="7f22d-120">Similarly set the value for all the other default dimensions.</span></span>  
-13. <span data-ttu-id="7f22d-121">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7f22d-121">Click Save.</span></span>
-
-## <a name="add-the-online-channel-to-organization-hierarchy"></a><span data-ttu-id="7f22d-122">Verkkokaupan lisääminen organisaatiohierarkiaan</span><span class="sxs-lookup"><span data-stu-id="7f22d-122">Add the online channel to organization hierarchy</span></span>
-1. <span data-ttu-id="7f22d-123">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="7f22d-123">Close the page.</span></span>
-2. <span data-ttu-id="7f22d-124">Valitse Organisaation hallinto > Organisaatiot > Organisaatiohierarkiat.</span><span class="sxs-lookup"><span data-stu-id="7f22d-124">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
-3. <span data-ttu-id="7f22d-125">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="7f22d-125">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="7f22d-126">Valitse Näytä.</span><span class="sxs-lookup"><span data-stu-id="7f22d-126">Click View.</span></span>
-5. <span data-ttu-id="7f22d-127">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="7f22d-127">Click Edit.</span></span>
-    * <span data-ttu-id="7f22d-128">Voit valita minkä tahansa hierarkiasolmun, josta haluat lisätä uuden kanavan.</span><span class="sxs-lookup"><span data-stu-id="7f22d-128">You can select any hierarchy node under which you want to insert the new channel.</span></span>  
-6. <span data-ttu-id="7f22d-129">Valitse Lisää.</span><span class="sxs-lookup"><span data-stu-id="7f22d-129">Click Insert.</span></span>
-7. <span data-ttu-id="7f22d-130">Valitse Vähittäismyyntikanava.</span><span class="sxs-lookup"><span data-stu-id="7f22d-130">Click Retail channel.</span></span>
-8. <span data-ttu-id="7f22d-131">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7f22d-131">Click OK.</span></span>
-9. <span data-ttu-id="7f22d-132">Valitse Julkaise, jolloin valintaikkuna avautuu.</span><span class="sxs-lookup"><span data-stu-id="7f22d-132">Click Publish to open the drop dialog.</span></span>
-10. <span data-ttu-id="7f22d-133">Syötä päivämäärä ja kellonaika Voimaantulopäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="7f22d-133">In the Effective date field, enter a date and time.</span></span>
-11. <span data-ttu-id="7f22d-134">Valitse Julkaise.</span><span class="sxs-lookup"><span data-stu-id="7f22d-134">Click Publish.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="create-online-channel-define-channel-attributes.md" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>create-online-channel-define-channel-attributes.74288c.4547731d7e3bc56b1ba5e0a35ff4746c6c0e9863.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>4547731d7e3bc56b1ba5e0a35ff4746c6c0e9863</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\tasks\create-online-channel-define-channel-attributes.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Create online channel and define channel attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo online-kanava ja määritä kanavamääritteet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This procedure walks through creating a new online channel and adding it to the organization hierarchy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä menettelyssä kerrotaan, miten uusi online-kanava luodaan ja lisätään organisaatiohierarkiaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Create online channel and define channel attributes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo online-kanava ja määritä kanavamääritteet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This procedure walks through creating a new online channel and adding it to the organization hierarchy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä menettelyssä kerrotaan, miten uusi online-kanava luodaan ja lisätään organisaatiohierarkiaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>You must create the organization hierarchy before you can create a new online channel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organisaatiohierarkia on luotava ennen uuden online-kanavan luomista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This procedure uses the USRT demo data company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Menettely käyttää esittelytietojen USRT-yritystä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Create a new online channel</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uuden online-kanavan luominen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Go to Retail and commerce &gt; Channels &gt; Online stores.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Vähittäismyynti ja kauppa &gt; Kanavat &gt; Verkkokaupat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Uusi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>In the Name field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita arvo Nimi-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>In the Warehouse field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anna tai valitse Varasto-kentässä arvo.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>In the Store time zone field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse vaihtoehto Varaston aikavyöhyke -kentässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>In the Default customer field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä tai valitse arvo Oletusasiakas-kentässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>In the Customer address book field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä tai valitse arvo Asiakkaan osoitekirja -kentässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>In the Terms of payment field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä tai valitse arvo Maksuehdot-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>In the Method of payment field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anna tai valitse arvo Maksutapa-kentässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>In the Email notification profile field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä tai valitse arvo Sähköposti-ilmoitusprofiili-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Expand the Financial dimensions section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna Taloushallinnon dimensiot -osa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>In the BusinessUnit field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä tai valitse arvo BusinessUnit-kentässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Similarly set the value for all the other default dimensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä samalla tavalla kaikkien muiden oletusdimensioiden arvot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tallenna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Add the online channel to organization hierarchy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verkkokaupan lisääminen organisaatiohierarkiaan</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sulje sivu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Go to Organization administration &gt; Organizations &gt; Organization hierarchies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Organisaation hallinto &gt; Organisaatiot &gt; Organisaatiohierarkiat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etsi haluamasi tietue luettelosta ja valitse se.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Click View.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Näytä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Muokkaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>You can select any hierarchy node under which you want to insert the new channel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit valita minkä tahansa hierarkiasolmun, josta haluat lisätä uuden kanavan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Click Insert.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Lisää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Click Retail channel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Vähittäismyyntikanava.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Click Publish to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Julkaise, jolloin valintaikkuna avautuu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>In the Effective date field, enter a date and time.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Syötä päivämäärä ja kellonaika Voimaantulopäivä-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Click Publish.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse Julkaise.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Configure orders for near realtime notification</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tilausten määrittäminen lähes reaaliaikaista ilmoitusta varten</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Go to Retail  &gt; Headquarters setup &gt; Parameters &gt; Retail parameters.</source><target logoport:matchpercent="0" state="translated">Valitse Vähittäismyynti &gt; Pääkonttorin asetukset &gt; Parametrit &gt; Vähittäismyyntiparametrit.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Set Use realtime service for eCommerce order creation to "Yes".</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Määritä Käytä reaaliaikaista palvelua verkkokauppatilausten luontiin asetukseksi "kyllä".</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Run the 1070 distribution schedule to sync changes to the channel database.</source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match">Suorita 1070-jakeluaikataulu, kun synkronoit muutokset kanavatietokannan kanssa.</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

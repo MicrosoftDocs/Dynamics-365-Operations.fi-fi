@@ -1,116 +1,267 @@
----
-title: EUR-00002 EU Intrastat -ilmoituksen luominen
-description: Tässä menettelyssä käydään läpi vaiheet, joissa viedään Intrastat-ilmoituksen sähköisessä tiedostomuodossa ja esikatsellaan ilmoitustiedot Excel-muodossa.
-author: Anasyash
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: anasyash
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 170c73d2ace75f990df9d57c658e859dcd30dd36
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537859"
----
-# <a name="eur-00002-generate-an-eu-intrastat-declaration"></a><span data-ttu-id="cbc80-103">EUR-00002 EU Intrastat -ilmoituksen luominen</span><span class="sxs-lookup"><span data-stu-id="cbc80-103">EUR-00002 Generate an EU Intrastat declaration</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="cbc80-104">Tässä menettelyssä käydään läpi vaiheet, joissa viedään Intrastat-ilmoituksen sähköisessä tiedostomuodossa ja esikatsellaan ilmoitustiedot Excel-muodossa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-104">This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</span></span> 
-
-<span data-ttu-id="cbc80-105">Ennen kuin suoritat tämän menettelyn, tapahtumat on siirrettävä Intrastatiin.</span><span class="sxs-lookup"><span data-stu-id="cbc80-105">Before you can complete this procedure, you must transfer transactions to the Intrastat.</span></span> 
-
-<span data-ttu-id="cbc80-106">Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.</span><span class="sxs-lookup"><span data-stu-id="cbc80-106">This procedure was created using the demo data company DEMF.</span></span>
-
-
-## <a name="import-configurations-with-settings"></a><span data-ttu-id="cbc80-107">Asetuksia sisältävien konfiguraatioiden tuonti</span><span class="sxs-lookup"><span data-stu-id="cbc80-107">Import configurations with settings</span></span>
-1. <span data-ttu-id="cbc80-108">Valitse Työtilat > Sähköinen raportointi</span><span class="sxs-lookup"><span data-stu-id="cbc80-108">Go to Workspaces > Electronic reporting</span></span>
-2. <span data-ttu-id="cbc80-109">Valitse Aseta aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="cbc80-109">Click Set active.</span></span>
-3. <span data-ttu-id="cbc80-110">Valitse Säilöt.</span><span class="sxs-lookup"><span data-stu-id="cbc80-110">Click Repositories.</span></span>
-4. <span data-ttu-id="cbc80-111">Valitse Avaa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-111">Click Open.</span></span>
-5. <span data-ttu-id="cbc80-112">Avaa Konfiguraation nimi -sarakkeen suodatin.</span><span class="sxs-lookup"><span data-stu-id="cbc80-112">Open Configuration name column filter.</span></span>
-6. <span data-ttu-id="cbc80-113">Käytä suodatinta Konfiguraation nimi -kentässä niin, että arvo on "Intrastat (DE)" ja suodatinoperaattori Alkaa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-113">Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.</span></span>
-    * <span data-ttu-id="cbc80-114">Valitse yrityksesi toimintamaata vastaava konfiguraation nimi.</span><span class="sxs-lookup"><span data-stu-id="cbc80-114">You should select the configuration name applicable for the country of your legal entity.</span></span> <span data-ttu-id="cbc80-115">Näissä toimintaohjeissa käytetään esimerkkinä saksalaista yritystä (DEMF); tämän vuoksi tulee valita "Intrastat (DE)".</span><span class="sxs-lookup"><span data-stu-id="cbc80-115">This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.</span></span>  
-    * <span data-ttu-id="cbc80-116">Valitse Tuo ja valitse sitten Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-116">Click Import and then click Yes.</span></span>  
-7. <span data-ttu-id="cbc80-117">Avaa Konfiguraation nimi -sarakkeen suodatin.</span><span class="sxs-lookup"><span data-stu-id="cbc80-117">Open Configuration name column filter.</span></span>
-8. <span data-ttu-id="cbc80-118">Käytä suodatinta Konfiguraation nimi -kentässä niin, että arvo on "Intrastat-raportti" ja suodatinoperaattori Alkaa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-118">Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.</span></span>
-    * <span data-ttu-id="cbc80-119">Valitse Tuo ja valitse sitten Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-119">Click Import and then click Yes.</span></span>  
-
-## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="cbc80-120">Määritä ulkomaankaupan parametrit</span><span class="sxs-lookup"><span data-stu-id="cbc80-120">Set up Foreign trade parameters</span></span>
-1. <span data-ttu-id="cbc80-121">Valitse Vero > Asetukset > Ulkomaankauppa > Ulkomaankaupan parametrit</span><span class="sxs-lookup"><span data-stu-id="cbc80-121">Go to Tax > Setup > Foreign trade > Foreign trade parameters</span></span>
-2. <span data-ttu-id="cbc80-122">Laajenna Sähköinen raportointi -osa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-122">Expand the Electronic reporting section.</span></span>
-3. <span data-ttu-id="cbc80-123">Anna tai valitse Tiedostomuodon yhdistäminen -kentässä arvoksi Intrastat (DE).</span><span class="sxs-lookup"><span data-stu-id="cbc80-123">In the File format mapping field, enter or select a value Intrastat (DE)</span></span>
-4. <span data-ttu-id="cbc80-124">Anna tai valitse Raporttimuodon yhdistäminen -kentässä arvoksi Intrastat-raportti.</span><span class="sxs-lookup"><span data-stu-id="cbc80-124">In the Report format mapping field, enter or select a value Intrastat report</span></span>
-5. <span data-ttu-id="cbc80-125">Laajenna Pyöristyssäännöt-osa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-125">Expand the Rounding rules section.</span></span>
-    * <span data-ttu-id="cbc80-126">Pyöristyssäännöt tulee määrittää maasi/alueesi Intrastat-raportoinnin käytäntöjen mukaisiksi.</span><span class="sxs-lookup"><span data-stu-id="cbc80-126">You should set up rounding rules that are applicable in your country/region for Intrastat reporting.</span></span>  
-6. <span data-ttu-id="cbc80-127">Syötä Pyöristyssääntö-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="cbc80-127">In the Rounding rule field, enter a number.</span></span>
-    * <span data-ttu-id="cbc80-128">Anna pyöristystarkkuus, esimerkiksi 0,01.</span><span class="sxs-lookup"><span data-stu-id="cbc80-128">Enter rounding precision, for example, enter '0.01'.</span></span>  
-7. <span data-ttu-id="cbc80-129">Syötä Summan desimaalien määrä -kenttään haluamasi luku.</span><span class="sxs-lookup"><span data-stu-id="cbc80-129">In the Number of decimals for amount field, enter a number.</span></span>
-    * <span data-ttu-id="cbc80-130">Kirjoita esimerkiksi 2.</span><span class="sxs-lookup"><span data-stu-id="cbc80-130">For example, enter '2'.</span></span>  
-8. <span data-ttu-id="cbc80-131">Valitse vaihtoehto Pyöristys, alle 1 kg -kentässä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-131">In the Rounding below 1 kg field, select an option.</span></span>
-    * <span data-ttu-id="cbc80-132">Valitse esimerkiksi "Pyöristys, enintään 1 kg".</span><span class="sxs-lookup"><span data-stu-id="cbc80-132">For example, select 'Rounding up to 1 kg'.</span></span>  
-9. <span data-ttu-id="cbc80-133">Syötä Pyöristyssääntö-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="cbc80-133">In the Rounding rule field, enter a number.</span></span>
-    * <span data-ttu-id="cbc80-134">Kirjoita esimerkiksi 1 kokonaisluvun pyöristyksen painotukseksi.</span><span class="sxs-lookup"><span data-stu-id="cbc80-134">For example, enter '1' for rounding weight to the integer.</span></span>  
-10. <span data-ttu-id="cbc80-135">Laajenna Vähimmäisraja-osa.</span><span class="sxs-lookup"><span data-stu-id="cbc80-135">Expand the Minimum limit section.</span></span>
-11. <span data-ttu-id="cbc80-136">Syötä numero Paino-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-136">In the Weight field, enter a number.</span></span>
-    * <span data-ttu-id="cbc80-137">Määritä vähimmäispainoksi esimerkiksi "10".</span><span class="sxs-lookup"><span data-stu-id="cbc80-137">For example, enter '10' as the minimum weight.</span></span>  
-12. <span data-ttu-id="cbc80-138">Lisää Summa-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="cbc80-138">In the Amount field, enter a number.</span></span>
-    * <span data-ttu-id="cbc80-139">Määritä vähimmäismääräksi esimerkiksi "200".</span><span class="sxs-lookup"><span data-stu-id="cbc80-139">For example, enter '200' as the minimum amount.</span></span>  
-13. <span data-ttu-id="cbc80-140">Syötä tai valitse arvo Kauppatavara-kentässä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-140">In the Commodity field, enter or select a value.</span></span>
-
-## <a name="set-up-compression-of-intrastat"></a><span data-ttu-id="cbc80-141">Määritä Intrastatin tiivistysasetukset</span><span class="sxs-lookup"><span data-stu-id="cbc80-141">Set up Compression of Intrastat</span></span>
-1. <span data-ttu-id="cbc80-142">Valitse Vero > Asetukset > Ulkomaankauppa > Intrastatin tiivistys.</span><span class="sxs-lookup"><span data-stu-id="cbc80-142">Go to Tax > Setup > Foreign trade > Compression of Intrastat.</span></span>
-2. <span data-ttu-id="cbc80-143">Valitse Poista.</span><span class="sxs-lookup"><span data-stu-id="cbc80-143">Click Remove.</span></span>
-3. <span data-ttu-id="cbc80-144">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="cbc80-144">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="cbc80-145">Valitse esimerkiksi Kauppatavara Käytettävissä-osasta.</span><span class="sxs-lookup"><span data-stu-id="cbc80-145">For example, select Commodity in the Available section.</span></span>  
-4. <span data-ttu-id="cbc80-146">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="cbc80-146">Click Add.</span></span>
-
-## <a name="generate-intrastat-declaration"></a><span data-ttu-id="cbc80-147">Intrastat-ilmoituksen luominen</span><span class="sxs-lookup"><span data-stu-id="cbc80-147">Generate Intrastat declaration</span></span>
-1. <span data-ttu-id="cbc80-148">Valitse Vero > Ilmoitukset > Ulkomaankauppa > Intrastat</span><span class="sxs-lookup"><span data-stu-id="cbc80-148">Go to Tax > Declarations > Foreign trade > Intrastat</span></span>
-2. <span data-ttu-id="cbc80-149">Valitse Vahvista.</span><span class="sxs-lookup"><span data-stu-id="cbc80-149">Click Validate.</span></span>
-    * <span data-ttu-id="cbc80-150">Oikeellisuustarkistus suoritetaan Ulkomaankaupan parametrit -sivun Tarkista asetukset -kentän mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="cbc80-150">The validation is done according to the Check setup field on the Foreign trade parameters page.</span></span>  
-3. <span data-ttu-id="cbc80-151">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cbc80-151">Click OK.</span></span>
-4. <span data-ttu-id="cbc80-152">Valitse Päivitä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-152">Click Update.</span></span>
-5. <span data-ttu-id="cbc80-153">Valitse Vähimmäisraja.</span><span class="sxs-lookup"><span data-stu-id="cbc80-153">Click Minimum limit.</span></span>
-6. <span data-ttu-id="cbc80-154">Syötä päivämäärä Aloituspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-154">In the Start date field, enter a date.</span></span>
-    * <span data-ttu-id="cbc80-155">Syötä kenttään esimerkiksi 1. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-155">For example, enter January 1, 2015.</span></span>  
-7. <span data-ttu-id="cbc80-156">Valitse Tiivistä-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-156">Select Yes in the Compress field.</span></span>
-8. <span data-ttu-id="cbc80-157">Syötä päivämäärä Päättymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-157">In the End date field, enter a date.</span></span>
-    * <span data-ttu-id="cbc80-158">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-158">For example, enter January 31, 2015.</span></span>  
-9. <span data-ttu-id="cbc80-159">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cbc80-159">Click OK.</span></span>
-10. <span data-ttu-id="cbc80-160">Valitse Päivitä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-160">Click Update.</span></span>
-11. <span data-ttu-id="cbc80-161">Valitse Tiivistä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-161">Click Compress.</span></span>
-    * <span data-ttu-id="cbc80-162">Tämä pakkaus tapahtuu sen mukaan, miten Intrastatin pakkausasetukset on määritetty.</span><span class="sxs-lookup"><span data-stu-id="cbc80-162">This compression happens according to how you set the Compression of intrastate settings.</span></span>  
-12. <span data-ttu-id="cbc80-163">Syötä päivämäärä Aloituspäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-163">In the Start date field, enter a date.</span></span>
-    * <span data-ttu-id="cbc80-164">Syötä kenttään esimerkiksi 1. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-164">For example, enter January 1, 2015.</span></span>  
-13. <span data-ttu-id="cbc80-165">Syötä päivämäärä Päättymispäivä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-165">In the End date field, enter a date.</span></span>
-    * <span data-ttu-id="cbc80-166">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-166">For example, enter 31st January 2015.</span></span>  
-14. <span data-ttu-id="cbc80-167">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cbc80-167">Click OK.</span></span>
-15. <span data-ttu-id="cbc80-168">Valitse Päivitä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-168">Click Update.</span></span>
-16. <span data-ttu-id="cbc80-169">Valitse Muodosta uudestaan järjestysnumerot.</span><span class="sxs-lookup"><span data-stu-id="cbc80-169">Click Regenerate sequence numbers.</span></span>
-17. <span data-ttu-id="cbc80-170">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cbc80-170">Click OK.</span></span>
-18. <span data-ttu-id="cbc80-171">Valitse Tulostus.</span><span class="sxs-lookup"><span data-stu-id="cbc80-171">Click Output.</span></span>
-19. <span data-ttu-id="cbc80-172">Valitse Raportti.</span><span class="sxs-lookup"><span data-stu-id="cbc80-172">Click Report.</span></span>
-20. <span data-ttu-id="cbc80-173">Kirjoita Aloituspäivämäärä-kenttään raportointikauden ensimmäinen päivä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-173">In the From date field, enter the first date of the reporting period.</span></span>
-    * <span data-ttu-id="cbc80-174">Aseta päivämääräksi esim. 1. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-174">For example, set the date to January 1, 2015.</span></span>  
-21. <span data-ttu-id="cbc80-175">Kirjoita päivämäärä Päivämäärään-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-175">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="cbc80-176">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</span><span class="sxs-lookup"><span data-stu-id="cbc80-176">For example, enter January 31, 2015.</span></span>  
-22. <span data-ttu-id="cbc80-177">Valitse Luo tiedosto -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-177">Select Yes in the Generate file field.</span></span>
-23. <span data-ttu-id="cbc80-178">Kirjoita arvo Tiedostonimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-178">In the File name field, type a value.</span></span>
-24. <span data-ttu-id="cbc80-179">Valitse Luo raportti -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="cbc80-179">Select Yes in the Generate report field.</span></span>
-25. <span data-ttu-id="cbc80-180">Kirjoita arvo Raportin nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="cbc80-180">In the Report file name field, type a value.</span></span>
-26. <span data-ttu-id="cbc80-181">Valitse vaihtoehto kentässä Suunta.</span><span class="sxs-lookup"><span data-stu-id="cbc80-181">In the Direction field, select an option.</span></span>
-    * <span data-ttu-id="cbc80-182">Valitse esimerkiksi Lähtevät.</span><span class="sxs-lookup"><span data-stu-id="cbc80-182">For example, select 'Dispatches'.</span></span>  
-27. <span data-ttu-id="cbc80-183">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="cbc80-183">Click OK.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="eur-00002-eu-intrastat-declaration.md" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>eur-00002-eu-intrastat-declaration.f3e0e2.1236f27a3a5c208ffec41374a6593d1f0e7c4433.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>1236f27a3a5c208ffec41374a6593d1f0e7c4433</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00002-eu-intrastat-declaration.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>EUR-00002 Generate an EU Intrastat declaration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00002 EU Intrastat -ilmoituksen luominen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä menettelyssä käydään läpi vaiheet, joissa viedään Intrastat-ilmoituksen sähköisessä tiedostomuodossa ja esikatsellaan ilmoitustiedot Excel-muodossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>EUR-00002 Generate an EU Intrastat declaration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00002 EU Intrastat -ilmoituksen luominen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä menettelyssä käydään läpi vaiheet, joissa viedään Intrastat-ilmoituksen sähköisessä tiedostomuodossa ja esikatsellaan ilmoitustiedot Excel-muodossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Before you can complete this procedure, you must transfer transactions to the Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ennen kuin suoritat tämän menettelyn, tapahtumat on siirrettävä Intrastatiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This procedure was created using the demo data company DEMF.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä menettelyn luomisessa käytettiin DEMF-yrityksen demotietoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Import configurations with settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asetuksia sisältävien konfiguraatioiden tuonti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Go to Workspaces &gt; Electronic reporting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Työtilat &gt; Sähköinen raportointi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Click Set active.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Aseta aktiiviseksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Click Repositories.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Säilöt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Click Open.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Avaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Open Configuration name column filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Konfiguraation nimi -sarakkeen suodatin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä suodatinta Konfiguraation nimi -kentässä niin, että arvo on "Intrastat (DE)" ja suodatinoperaattori Alkaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>You should select the configuration name applicable for the country of your legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse yrityksesi toimintamaata vastaava konfiguraation nimi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näissä toimintaohjeissa käytetään esimerkkinä saksalaista yritystä (DEMF); tämän vuoksi tulee valita "Intrastat (DE)".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Click Import and then click Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tuo ja valitse sitten Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Open Configuration name column filter.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Konfiguraation nimi -sarakkeen suodatin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä suodatinta Konfiguraation nimi -kentässä niin, että arvo on "Intrastat-raportti" ja suodatinoperaattori Alkaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Click Import and then click Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tuo ja valitse sitten Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Set up Foreign trade parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä ulkomaankaupan parametrit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Foreign trade parameters</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Vero &gt; Asetukset &gt; Ulkomaankauppa &gt; Ulkomaankaupan parametrit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Expand the Electronic reporting section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna Sähköinen raportointi -osa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>In the File format mapping field, enter or select a value Intrastat (DE)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anna tai valitse Tiedostomuodon yhdistäminen -kentässä arvoksi Intrastat (DE).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>In the Report format mapping field, enter or select a value Intrastat report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anna tai valitse Raporttimuodon yhdistäminen -kentässä arvoksi Intrastat-raportti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Expand the Rounding rules section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna Pyöristyssäännöt-osa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>You should set up rounding rules that are applicable in your country/region for Intrastat reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pyöristyssäännöt tulee määrittää maasi/alueesi Intrastat-raportoinnin käytäntöjen mukaisiksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>In the Rounding rule field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä Pyöristyssääntö-kenttään numero.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Enter rounding precision, for example, enter '0.01'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anna pyöristystarkkuus, esimerkiksi 0,01.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>In the Number of decimals for amount field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä Summan desimaalien määrä -kenttään haluamasi luku.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>For example, enter '2'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita esimerkiksi 2.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the Rounding below 1 kg field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse vaihtoehto Pyöristys, alle 1 kg -kentässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>For example, select 'Rounding up to 1 kg'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse esimerkiksi "Pyöristys, enintään 1 kg".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>In the Rounding rule field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä Pyöristyssääntö-kenttään numero.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>For example, enter '1' for rounding weight to the integer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita esimerkiksi 1 kokonaisluvun pyöristyksen painotukseksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Expand the Minimum limit section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna Vähimmäisraja-osa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>In the Weight field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä numero Paino-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>For example, enter '10' as the minimum weight.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä vähimmäispainoksi esimerkiksi "10".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the Amount field, enter a number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää Summa-kenttään numero.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For example, enter '200' as the minimum amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä vähimmäismääräksi esimerkiksi "200".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>In the Commodity field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä tai valitse arvo Kauppatavara-kentässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Set up Compression of Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä Intrastatin tiivistysasetukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Go to Tax &gt; Setup &gt; Foreign trade &gt; Compression of Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Vero &gt; Asetukset &gt; Ulkomaankauppa &gt; Intrastatin tiivistys.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Click Remove.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Poista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etsi haluamasi tietue luettelosta ja valitse se.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>For example, select Commodity in the Available section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse esimerkiksi Kauppatavara Käytettävissä-osasta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Click Add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ValitseLisää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Generate Intrastat declaration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Intrastat-ilmoituksen luominen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Go to Tax &gt; Declarations &gt; Foreign trade &gt; Intrastat</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Vero &gt; Ilmoitukset &gt; Ulkomaankauppa &gt; Intrastat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Click Validate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Vahvista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>The validation is done according to the Check setup field on the Foreign trade parameters page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oikeellisuustarkistus suoritetaan Ulkomaankaupan parametrit -sivun Tarkista asetukset -kentän mukaisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Click Update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Päivitä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Click Minimum limit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Vähimmäisraja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>In the Start date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä päivämäärä Aloituspäivä-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>For example, enter January 1, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä kenttään esimerkiksi 1. tammikuuta 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Select Yes in the Compress field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tiivistä-kentässä Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>In the End date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä päivämäärä Päättymispäivä-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>For example, enter January 31, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Click Update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Päivitä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Click Compress.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tiivistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>This compression happens according to how you set the Compression of intrastate settings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä pakkaus tapahtuu sen mukaan, miten Intrastatin pakkausasetukset on määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>In the Start date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä päivämäärä Aloituspäivä-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>For example, enter January 1, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä kenttään esimerkiksi 1. tammikuuta 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>In the End date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä päivämäärä Päättymispäivä-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>For example, enter 31st January 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Click Update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Päivitä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>Click Regenerate sequence numbers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Muodosta uudestaan järjestysnumerot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Click Output.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tulostus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Click Report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Raportti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>In the From date field, enter the first date of the reporting period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita Aloituspäivämäärä-kenttään raportointikauden ensimmäinen päivä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>For example, set the date to January 1, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aseta päivämääräksi esim. 1. tammikuuta 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>In the To date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita päivämäärä Päivämäärään-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>For example, enter January 31, 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä kenttään esimerkiksi 31. tammikuuta 2015.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Select Yes in the Generate file field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Luo tiedosto -kentässä Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>In the File name field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita arvo Tiedostonimi-kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>Select Yes in the Generate report field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Luo raportti -kentässä Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>In the Report file name field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita arvo Raportin nimi -kenttään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>In the Direction field, select an option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse vaihtoehto kentässä Suunta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>For example, select 'Dispatches'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse esimerkiksi Lähtevät.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse OK.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,1255 +1,4029 @@
----
-title: Vanhentuneet tai poistetut ominaisuudet
-description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.
-author: sericks007
-manager: AnnBe
-ms.date: 04/12/2019
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
-ms.search.scope: Operations
-ms.custom: 21821
-ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
-ms.search.region: Global
-ms.author: sericks
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1527668"
----
-# <a name="removed-or-deprecated-features"></a><span data-ttu-id="dc272-103">Poistetut tai vanhentuneet ominaisuudet</span><span class="sxs-lookup"><span data-stu-id="dc272-103">Removed or deprecated features</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="dc272-104">Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operationsin ominaisuuksia, jotka on poistettu tai jotka ovat vanhentuneita.</span><span class="sxs-lookup"><span data-stu-id="dc272-104">This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</span></span>
-
-- <span data-ttu-id="dc272-105">*Poistettu* ominaisuus ei ole enää käytettävissä tuotteessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-105">A *removed* feature is no longer available in the product.</span></span>
-- <span data-ttu-id="dc272-106">*Vanhentunutta* ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.</span><span class="sxs-lookup"><span data-stu-id="dc272-106">A *deprecated* feature is not in active development and may be removed in a future update.</span></span>
-
-<span data-ttu-id="dc272-107">Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi.</span><span class="sxs-lookup"><span data-stu-id="dc272-107">This list is intended to help you consider these removals and deprecations for your own planning.</span></span> 
-
-> [!NOTE]
-> <span data-ttu-id="dc272-108">Dynamics 365 for Finance and Operationsin heinäkuun 2017 ympäristöpäivityksestä 8 alkaen kunkin poistetun tai vanhentuneen ominaisuuden käyttöottotyyppi ilmoitetaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-108">Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature.</span></span> <span data-ttu-id="dc272-109">Kaikki tässä aiheessa mainitut aiemmat versiot tukivat vain pilvikäyttöönottoja.</span><span class="sxs-lookup"><span data-stu-id="dc272-109">All of the previous releases mentioned in this topic supported cloud deployments only.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="dc272-110">Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: [Tekniset viitetiedot](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).</span><span class="sxs-lookup"><span data-stu-id="dc272-110">Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).</span></span> <span data-ttu-id="dc272-111">Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.</span><span class="sxs-lookup"><span data-stu-id="dc272-111">You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.</span></span>
-
-
-## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a><span data-ttu-id="dc272-112">Dynamics 365 for Finance and Operations 10.0.2 ja Platform update 26</span><span class="sxs-lookup"><span data-stu-id="dc272-112">Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="dc272-113">Dynamics 365 for Finance and Operations 10.0.2 ja Platform update 26 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana.</span><span class="sxs-lookup"><span data-stu-id="dc272-113">Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release.</span></span> <span data-ttu-id="dc272-114">Sisältö ja toiminnot voivat muuttua.</span><span class="sxs-lookup"><span data-stu-id="dc272-114">The content and the functionality are subject to change.</span></span> <span data-ttu-id="dc272-115">Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).</span><span class="sxs-lookup"><span data-stu-id="dc272-115">For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).</span></span>
-
-### <a name="legacy-default-action-behavior"></a><span data-ttu-id="dc272-116">Vanha oletustoiminnon toiminto</span><span class="sxs-lookup"><span data-stu-id="dc272-116">Legacy default action behavior</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-117">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-117">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-118">Ruudukoiden oletustoimintojen vanha toiminta saa aikaan tuloksia odottamattomaan sarakkeeseen, jolla on oletustoimintolinkki ruudukon sarakkeiden jälkeen. Ne on järjestetty uudelleen mukauttamisen avulla.</span><span class="sxs-lookup"><span data-stu-id="dc272-118">The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization.</span></span> <span data-ttu-id="dc272-119">Uusi lukitun oletustoiminnon ominaisuus korjaa tämän.</span><span class="sxs-lookup"><span data-stu-id="dc272-119">The new sticky default action feature corrects this.</span></span> <span data-ttu-id="dc272-120">Lisätietoja on kohdassa [Lukitut oletustoiminnot ruudukoissa](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action).</span><span class="sxs-lookup"><span data-stu-id="dc272-120">For more details, see [Sticky default actions in grids](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action).</span></span> |
-| <span data-ttu-id="dc272-121">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-121">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-122">Lukittujen oletustoimintojen ominaisuus oli ensimmäisen kerran mukana Platform update 21 -versiossa.</span><span class="sxs-lookup"><span data-stu-id="dc272-122">Starting in Platform update 21, a feature for "sticky default actions" was introduced.</span></span> <span data-ttu-id="dc272-123">Tämän ominaisuuden voi ottaa käyttöön **Työaseman suorituskykyasetukset** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="dc272-123">This feature can be enabled on the **Client performance options** page.</span></span> |
-| <span data-ttu-id="dc272-124">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-124">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-125">WWW-asiakasohjelman ruudukot</span><span class="sxs-lookup"><span data-stu-id="dc272-125">Grids in the web client</span></span> |
-| <span data-ttu-id="dc272-126">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-126">**Deployment option**</span></span>              | <span data-ttu-id="dc272-127">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-127">All</span></span> |
-| <span data-ttu-id="dc272-128">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-128">**Status**</span></span>                         | <span data-ttu-id="dc272-129">Vanhentunut: Vuoden 2020 huhtikuusta alkaen lukitut oletustoiminnot kuuluvat oletustoimintaan. Vanhaan toimintaan ei voi tällöin enää palata.</span><span class="sxs-lookup"><span data-stu-id="dc272-129">Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior.</span></span> |
-
-### <a name="legacy-is-one-of-filtering-experience"></a><span data-ttu-id="dc272-130">Vanha On yksi seuraavista: -suodattimen käyttö</span><span class="sxs-lookup"><span data-stu-id="dc272-130">Legacy "is one of" filtering experience</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-131">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-131">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-132">On yksi seuraavista: -suodattimen käyttö suunniteltiin uudelleen Platform update 22 -versiota varten niin, että tämän piti olla ainoa On yksi seuraavista: -suodattimen käyttömahdollisuus.</span><span class="sxs-lookup"><span data-stu-id="dc272-132">The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience.</span></span> |
-| <span data-ttu-id="dc272-133">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-133">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-134">Platform update 22 -versiosta alkaen parannettu On yksi seuraavista: -suodattimen käyttö on saatavissa **Työaseman suorituskykyasetukset** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="dc272-134">Starting in Platform update 22, an improved "is one of" filtering experience became available on the **Client performance options** page.</span></span> <span data-ttu-id="dc272-135">Lisätietoja on kohdassa [On yksi seuraavista: -suodattimen käytön optimointi](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).</span><span class="sxs-lookup"><span data-stu-id="dc272-135">For more information, see [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).</span></span> |
-| <span data-ttu-id="dc272-136">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-136">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-137">WWW-asiakasohjelma</span><span class="sxs-lookup"><span data-stu-id="dc272-137">Web client</span></span> |
-| <span data-ttu-id="dc272-138">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-138">**Deployment option**</span></span>              | <span data-ttu-id="dc272-139">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-139">All</span></span> |
-| <span data-ttu-id="dc272-140">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-140">**Status**</span></span>                         | <span data-ttu-id="dc272-141">Vanhentunut: Vuoden 2020 huhtikuusta alkaen parannettu On yksi seuraavista: -suodattimen käyttö kuuluu oletustoimintaan. Vanhaan toimintaan ei voi tällöin enää palata.</span><span class="sxs-lookup"><span data-stu-id="dc272-141">Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior.</span></span> |
-
-### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a><span data-ttu-id="dc272-142">Parametri, joka mahdollistaa useita projektisopimuksen rahoituslähteitä sisältävät myyntitilaukset</span><span class="sxs-lookup"><span data-stu-id="dc272-142">Parameter to enable sales orders with multiple project contract funding sources</span></span>
-<span data-ttu-id="dc272-143">Niiden projektiin perustuvien myyntitilausten tuki, joissa projektisopimuksella on useita rahoituslähteitä, otetaan käyttöön **Projektinhallinnan parametrit** -asetuksen **Salli myyntitilaukset projektille, jolla on useita rahoituslähteitä** -kohdan avulla.</span><span class="sxs-lookup"><span data-stu-id="dc272-143">Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **Allow sales orders for project with multiple funding sources**.</span></span> <span data-ttu-id="dc272-144">Tämä parametri ei ole oletusarvoisesti käytössä.</span><span class="sxs-lookup"><span data-stu-id="dc272-144">By default, this parameter is not enabled.</span></span> 
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-145">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-145">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-146">Toiminnot otetaan aina käyttöön parametrin poistamisen jälkeen.</span><span class="sxs-lookup"><span data-stu-id="dc272-146">The functionality will always be enabled after the parameter is removed.</span></span> |
-| <span data-ttu-id="dc272-147">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-147">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-148">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-148">No.</span></span> <span data-ttu-id="dc272-149">Niiden projektiin perustuvien myyntitilausten tuen toiminnot, joilla on useita rahoituslähteitä, ovat aina käytössä.</span><span class="sxs-lookup"><span data-stu-id="dc272-149">The functionality to support project-based sales orders with multiple funding sources will always be enabled.</span></span>   |
-| <span data-ttu-id="dc272-150">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-150">**Product areas affected**</span></span>         |<span data-ttu-id="dc272-151">**Salli myyntitilaukset projekteissa, joissa on useita rahoituslähteitä** -parametri poistetaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-151">The **Allow sales orders for projects with multiple funding sources** parameter will be removed.</span></span> <span data-ttu-id="dc272-152">Seuraavia menetelmiä muokataan, kun parametri poistetaan: **ctrlSalesOrderTable**-menetelmä **ProjStatusType**-luokassa, **validate**-menetelmä **ProjId**-kentässä ja **run**-menetelmä **SalescreateOrder**-lomakkeessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-152">The following methods will be modified when the parameter is removed: **ctrlSalesOrderTable** method in **ProjStatusType** class, **validate** method for **ProjId** field, and **run** method in **SalescreateOrder** form.</span></span> <span data-ttu-id="dc272-153">Seuraavat menetelmät vanhentuvat, kun parametri poistetaan: **IsSalesOrderAllowedForMultipleFundingSources** **ProjTable**-taulukkotiedostossa, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled**-menetelmä **ProjTable**-taulukkotiedostossa, **AllowSalesOrdersForMultipleFundingSources**-tietokenttä **ProjParameters**-lomakkeessa ja **ProjParameterEntity**-tiedostoissa sekä yksityinen **IsAssociatedToMultipleFundingSourcesContract**-menetelmä **ProjTable**-taulukkotiedostossa.</span><span class="sxs-lookup"><span data-stu-id="dc272-153">The following methods will be deprecated when the parameter is removed: **IsSalesOrderAllowedForMultipleFundingSources** in **ProjTable** table file, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** method in **ProjTable** table file, **AllowSalesOrdersForMultipleFundingSources** data field in **ProjParameters** form and **ProjParameterEntity** files, **IsAssociatedToMultipleFundingSourcesContract** private method in **ProjTable** table file.</span></span> |
-| <span data-ttu-id="dc272-154">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-154">**Deployment option**</span></span>              | <span data-ttu-id="dc272-155">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-155">All</span></span>  |
-| <span data-ttu-id="dc272-156">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-156">**Status**</span></span>                         | <span data-ttu-id="dc272-157">Toiminnon suunniteltu vanhenemisajankohta on vuoden 2020 huhtikuun julkaisuaallon yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="dc272-157">Deprecation is planned for the April 2020 release wave.</span></span> |
-
-### <a name="legacy-workflow-reports-for-tracking-and-instance-status"></a><span data-ttu-id="dc272-158">Vanhat työnkulkuraportit seurantaa ja ilmentymän tilaa varten</span><span class="sxs-lookup"><span data-stu-id="dc272-158">Legacy workflow reports for tracking and instance status</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-159">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-159">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-160">Vanhat työnkulun raportit seurantaa ja ilmentymän tilaa varten vanhentuvat, koska niihin ei enää viitata siirtymisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="dc272-160">The legacy workflow reports for tracking and instance status are being deprecated because they are no longer referenced from the navigation.</span></span> <span data-ttu-id="dc272-161">Raporttien nimet ovat WorkflowWorkflowInstanceByStatusReport ja WorkflowWorkflowTrackingReport.</span><span class="sxs-lookup"><span data-stu-id="dc272-161">The report names are WorkflowWorkflowInstanceByStatusReport and WorkflowWorkflowTrackingReport.</span></span> |
-| <span data-ttu-id="dc272-162">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-162">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-163">Tämän sijaan käytössä on työnkulkuhistorian lomake.</span><span class="sxs-lookup"><span data-stu-id="dc272-163">The workflow history form can be used instead.</span></span> |
-| <span data-ttu-id="dc272-164">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-164">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-165">WWW-asiakasohjelma</span><span class="sxs-lookup"><span data-stu-id="dc272-165">Web client</span></span> |
-| <span data-ttu-id="dc272-166">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-166">**Deployment option**</span></span>              | <span data-ttu-id="dc272-167">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-167">All</span></span> |
-| <span data-ttu-id="dc272-168">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-168">**Status**</span></span>                         | <span data-ttu-id="dc272-169">Vanhentunut: Toiminnon poiston tavoiteajankohta on vuoden 2020 huhtikuu.</span><span class="sxs-lookup"><span data-stu-id="dc272-169">Deprecated: Target timeframe for the functionality to be removed is April 2020.</span></span> |
-
-## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a><span data-ttu-id="dc272-170">Dynamics 365 for Finance and Operations 10.0.1 ja platform update 25</span><span class="sxs-lookup"><span data-stu-id="dc272-170">Dynamics 365 for Finance and Operations 10.0.1 with platform update 25</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="dc272-171">Dynamics 365 for Finance and Operations 10.0.1 ja Platform update 25 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana.</span><span class="sxs-lookup"><span data-stu-id="dc272-171">Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release.</span></span> <span data-ttu-id="dc272-172">Sisältö ja toiminnot voivat muuttua.</span><span class="sxs-lookup"><span data-stu-id="dc272-172">The content and the functionality are subject to change.</span></span> <span data-ttu-id="dc272-173">Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).</span><span class="sxs-lookup"><span data-stu-id="dc272-173">For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).</span></span>
-
-### <a name="deprecated-apis-and-potential-breaking-changes"></a><span data-ttu-id="dc272-174">Vanhentuneet ohjelmointirajapinnat ja mahdolliset tärkeimmät muutokset</span><span class="sxs-lookup"><span data-stu-id="dc272-174">Deprecated APIs and potential breaking changes</span></span>
-
-
-#### <a name="deriving-from-internal-classes-is-deprecated"></a><span data-ttu-id="dc272-175">Johtaminen sisäisistä luokista on vanhentunut</span><span class="sxs-lookup"><span data-stu-id="dc272-175">Deriving from internal classes is deprecated</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-176">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-176">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-177">Ennen Platform update 25 -versiota oli mahdollista luoda toisessa paketissa tai moduulissa määritetystä sisäisestä luokasta tai taulusta johdettu luokka tai taulu.</span><span class="sxs-lookup"><span data-stu-id="dc272-177">Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module.</span></span> <span data-ttu-id="dc272-178">Tämä ei ole turvallinen koodauskäytäntö.</span><span class="sxs-lookup"><span data-stu-id="dc272-178">This is not a safe coding practice.</span></span> <span data-ttu-id="dc272-179">Platform update 25 -versiosta alkaen kääntäjä näyttää varoituksen.</span><span class="sxs-lookup"><span data-stu-id="dc272-179">As of Platform update 25, the compiler will display a warning.</span></span> |
-| <span data-ttu-id="dc272-180">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-180">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-181">Kääntäjän varoitus korvataan Platform update 26 -versiossa virheellä.</span><span class="sxs-lookup"><span data-stu-id="dc272-181">The compiler warning will be replaced by an error in Platform update 26.</span></span> <span data-ttu-id="dc272-182">Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten Platform update 25 tai uudempi versio voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava.</span><span class="sxs-lookup"><span data-stu-id="dc272-182">This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</span></span> <span data-ttu-id="dc272-183">Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-183">This change only affects development and compile time.</span></span>|
-| <span data-ttu-id="dc272-184">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-184">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-185">Visual Studio -sovelluksen kehitystyökalut</span><span class="sxs-lookup"><span data-stu-id="dc272-185">Visual Studio development tools</span></span> |
-| <span data-ttu-id="dc272-186">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-186">**Deployment option**</span></span>              | <span data-ttu-id="dc272-187">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-187">All</span></span> |
-| <span data-ttu-id="dc272-188">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-188">**Status**</span></span>                         | <span data-ttu-id="dc272-189">Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa.</span><span class="sxs-lookup"><span data-stu-id="dc272-189">Deprecated: The warning will become a compilation error in Platform update 26.</span></span> |
-
-#### <a name="overriding-internal-methods-is-deprecated"></a><span data-ttu-id="dc272-190">Sisäisten menetelmien ohittaminen on vanhentunut</span><span class="sxs-lookup"><span data-stu-id="dc272-190">Overriding internal methods is deprecated</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-191">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-191">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-192">Ennen Platform update 25 -versiota oli mahdollista ohittaa johdetun luokan sellainen sisäinen menetelmä, joka oli määritetty toisessa paketissa tai moduulissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-192">Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module.</span></span> <span data-ttu-id="dc272-193">Tämä ei ole turvallinen koodauskäytäntö.</span><span class="sxs-lookup"><span data-stu-id="dc272-193">This is not a safe coding practice.</span></span> <span data-ttu-id="dc272-194">Platform update 25 -versiosta alkaen kääntäjä näyttää varoituksen.</span><span class="sxs-lookup"><span data-stu-id="dc272-194">As of Platform update 25, the compiler will display a warning.</span></span> |
-| <span data-ttu-id="dc272-195">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-195">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-196">Tämä varoitus korvataan Platform update 26 -versiossa käännösvirheellä.</span><span class="sxs-lookup"><span data-stu-id="dc272-196">This warning will be replaced by a compile error in Platform update 26.</span></span> <span data-ttu-id="dc272-197">Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten Platform update 25 tai uudempi versio voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava.</span><span class="sxs-lookup"><span data-stu-id="dc272-197">This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</span></span> <span data-ttu-id="dc272-198">Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-198">This change only affects development and compile time.</span></span> |
-| <span data-ttu-id="dc272-199">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-199">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-200">Visual Studio -sovelluksen kehitystyökalut</span><span class="sxs-lookup"><span data-stu-id="dc272-200">Visual Studio development tools</span></span> |
-| <span data-ttu-id="dc272-201">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-201">**Deployment option**</span></span>              | <span data-ttu-id="dc272-202">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-202">All</span></span> |
-| <span data-ttu-id="dc272-203">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-203">**Status**</span></span>                         | <span data-ttu-id="dc272-204">Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa.</span><span class="sxs-lookup"><span data-stu-id="dc272-204">Deprecated: The warning will become a compilation error in Platform update 26.</span></span> |
-
-
-## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a><span data-ttu-id="dc272-205">Dynamics 365 for Finance and Operations 8.1.3 ja platform update 23</span><span class="sxs-lookup"><span data-stu-id="dc272-205">Dynamics 365 for Finance and Operations 8.1.3 with platform update 23</span></span>
-
-### <a name="sql-server-reporting-services-reportviewer-control"></a><span data-ttu-id="dc272-206">SQL Server Reporting Services ReportViewer -ohjausobjekti</span><span class="sxs-lookup"><span data-stu-id="dc272-206">SQL Server Reporting Services ReportViewer Control</span></span>
-<span data-ttu-id="dc272-207">Asiakkaat voivat käyttää upotetun SQL Server Reporting Services (SSRS) ReportViewer -ohjausobjektin **vientitoimintoa** Finance and Operations -sovellusten asiakirjojen lataamisessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-207">Customers can use the **Export** action provided by the embedded SQL Server Reporting Services (SSRS) ReportViewer control to download documents produced by Finance and Operations applications.</span></span> <span data-ttu-id="dc272-208">Tämä HTML-pohjainen raportin esittäminen antaa käyttäjien käyttöön asiakirjan sivuttamattoman esikatselun.</span><span class="sxs-lookup"><span data-stu-id="dc272-208">This HTML-based presentation of the report offers users a non-paginated preview of the document.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-209">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-209">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-210">Koska HTML-pohjainen esikatselukokemus on sivuttamaton, Finance and Operationsin lopulta tuottamat fyysiset asiakirjat **eivät** ole samanlaisia kuin tässä esikatselussa.</span><span class="sxs-lookup"><span data-stu-id="dc272-210">The non-paginated nature of the HTML-based preview experience does **not** deliver fidelity with the physical documents ultimately produced by Finance and Operations.</span></span> <span data-ttu-id="dc272-211">Koska PDF on otettu kattavasti liiketoiminta-asiakirjojen standardimuodoksi, käyttäjät voivat hyödyntää uutta katselukokemusta ja parannettua suorituskykyä sovelluksen raporttien luomisessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-211">By fully embracing PDF as the standard format for business documents, users are able to take advantage of a modern viewing experience with improved performance when producing application reports.</span></span> |
-| <span data-ttu-id="dc272-212">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-212">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-213">Jatkossa PDF-tiedostot tulevat olevaan Finance and Operationsin hahmontamien raporttien oletusmuoto.</span><span class="sxs-lookup"><span data-stu-id="dc272-213">Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.</span></span>   |
-| <span data-ttu-id="dc272-214">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-214">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-215">Tämä muutos **ei** vaikuta asiakasskenaarioihin, joissa raportit jaetaan sähköisesti tai lähetetään suoraan tulostimiin.</span><span class="sxs-lookup"><span data-stu-id="dc272-215">This change does **not** impact customer scenarios where reports are distributed electronically or sent directly to printers.</span></span>    |
-| <span data-ttu-id="dc272-216">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-216">**Deployment option**</span></span>              | <span data-ttu-id="dc272-217">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-217">All</span></span>  |
-| <span data-ttu-id="dc272-218">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-218">**Status**</span></span>                         | <span data-ttu-id="dc272-219">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-219">Deprecated: A removal date has not been set for this feature.</span></span> <span data-ttu-id="dc272-220">Toiminto, jolla sovelluksen raportit voidaan esikatsella automaattisesti upotetun PDF-katseluohjelman avulla, on tulossa vuoden 2019 toukokuun Platform update -versioon.</span><span class="sxs-lookup"><span data-stu-id="dc272-220">The functionality to automatically preview application reports using an embedded PDF viewer is planned for the May 2019 Platform update.</span></span> |
-
-### <a name="client-kpi-controls"></a><span data-ttu-id="dc272-221">Asiakasohjelman tunnuslukujen ohjausobjektit</span><span class="sxs-lookup"><span data-stu-id="dc272-221">Client KPI controls</span></span>
-<span data-ttu-id="dc272-222">Kehittäjä voi mallintaa upotetut tunnusluvut Visual Studiossa, ja loppukäyttäjät voivat sitten muokata niitä lisää.</span><span class="sxs-lookup"><span data-stu-id="dc272-222">Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-223">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-223">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-224">Tunnuslukujen määrittämiseen käytetyt alkuperäiset asiakasohjelman ohjausobjektit eivät olleet asiakkaan kannalta käteviä ja kehittäjien oli lisättävä seurattavat mittarit.</span><span class="sxs-lookup"><span data-stu-id="dc272-224">The native client controls used to define KPIs have low customer uptake and rely on a developer to add trackable metrics.</span></span> |
-| <span data-ttu-id="dc272-225">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-225">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-226">PowerBI.com-palvelu sisältää maailmanluokan työkaluja tunnuslukujen määrittämiseen ja hallitsemiseen ulkoisten lähteiden tietojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="dc272-226">PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.</span></span>  <span data-ttu-id="dc272-227">Tulevassa julkaisussa on käyttäjälle on tarkoitus antaa mahdollisuus upottaa PowerBI.comissa isännöityjä ratkaisuja sovelluksen työtiloihin.</span><span class="sxs-lookup"><span data-stu-id="dc272-227">In an upcoming release, we plan to enable you to embed solutions hosted on PowerBI.com in application workspaces.</span></span>   |
-| <span data-ttu-id="dc272-228">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-228">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-229">Tämä päivitys estää kehittäjiä ottamasta käyttöön uusia tunnuslukujen ohjausobjekteja Visual Studion suunnitteluohjelmassa.</span><span class="sxs-lookup"><span data-stu-id="dc272-229">This update will prevent developers from introducing new KPI controls in Visual Studio designer.</span></span>    |
-| <span data-ttu-id="dc272-230">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-230">**Deployment option**</span></span>              | <span data-ttu-id="dc272-231">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-231">All</span></span>  |
-| <span data-ttu-id="dc272-232">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-232">**Status**</span></span>                         | <span data-ttu-id="dc272-233">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-233">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="deprecated-apis-and-future-breaking-changes"></a><span data-ttu-id="dc272-234">Vanhentuneet ohjelmointirajapinnat ja tulevat tärkeimmät muutokset</span><span class="sxs-lookup"><span data-stu-id="dc272-234">Deprecated APIs and future breaking changes</span></span>
-
-#### <a name="field-groups-containing-invalid-field-references"></a><span data-ttu-id="dc272-235">Virheellisiä kenttäviitteitä sisältävät kenttäryhmät</span><span class="sxs-lookup"><span data-stu-id="dc272-235">Field groups containing invalid field references</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-236">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-236">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-237">Taulun metatietomääritelmissä voi olla virheellisiä kenttäviittauksia sisältäviä kenttäryhmiä.</span><span class="sxs-lookup"><span data-stu-id="dc272-237">It is possible for table metadata definitions to have field groups containing invalid field references.</span></span> <span data-ttu-id="dc272-238">Tämä ongelma on luokiteltu tällä hetkellä *kääntäjän varoitukseksi* eikä *virheeksi*, minkä vuoksi käyttöönotettavan paketin luonti ja käyttöönotto voi jatkua ongelmaa korjaamatta.</span><span class="sxs-lookup"><span data-stu-id="dc272-238">This issue is currently categorized as a *compiler warning* rather than an *error*, meaning that the deployable package creation and deployment can proceed without fixing the issue.</span></span> <span data-ttu-id="dc272-239">Käyttöönotettuna tämä ongelma voi aiheuttaa suorituksenaikaisia virheitä talousraportoinnissa ja SQL Server Reporting Servicesissa (SSRS).</span><span class="sxs-lookup"><span data-stu-id="dc272-239">If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS).</span></span> <span data-ttu-id="dc272-240">Ongelman korjaaminen:</span><span class="sxs-lookup"><span data-stu-id="dc272-240">To fix this issue:</span></span><br><br><span data-ttu-id="dc272-241">1. Poista virheellinen kenttäviite taulun kenttäryhmämääritelmästä.</span><span class="sxs-lookup"><span data-stu-id="dc272-241">1. Remove the invalid field reference from the table field group definition.</span></span><br><br><span data-ttu-id="dc272-242">2. Käännä uudelleen.</span><span class="sxs-lookup"><span data-stu-id="dc272-242">2. Recompile.</span></span><br><br><span data-ttu-id="dc272-243">3. Varmista, että kaikki varoitukset tai virheet käsitellään.</span><span class="sxs-lookup"><span data-stu-id="dc272-243">3. Ensure any warnings or errors are addressed.</span></span> |
-| <span data-ttu-id="dc272-244">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-244">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-245">Tämä varoitus korvataan jatkossa käännösvirheellä.</span><span class="sxs-lookup"><span data-stu-id="dc272-245">This warning will be replaced by a compile error in the future.</span></span>  |
-| <span data-ttu-id="dc272-246">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-246">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-247">Visual Studion kehitystyökalut.</span><span class="sxs-lookup"><span data-stu-id="dc272-247">Visual Studio development tools.</span></span> |
-| <span data-ttu-id="dc272-248">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-248">**Deployment option**</span></span>              | <span data-ttu-id="dc272-249">Kaikki.</span><span class="sxs-lookup"><span data-stu-id="dc272-249">All.</span></span> |
-| <span data-ttu-id="dc272-250">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-250">**Status**</span></span>                         | <span data-ttu-id="dc272-251">Vanhentunut: Varoituksesta tulee jatkossa käännöksenaikainen virhe.</span><span class="sxs-lookup"><span data-stu-id="dc272-251">Deprecated: The warning will become a compile-time error in the future.</span></span> <span data-ttu-id="dc272-252">Tällä hetkellä tavoitteena on Platform update 30.</span><span class="sxs-lookup"><span data-stu-id="dc272-252">We're currently targeting Platform update 30.</span></span> |
-
-#### <a name="complete-list"></a><span data-ttu-id="dc272-253">Täydellinen luettelo</span><span class="sxs-lookup"><span data-stu-id="dc272-253">Complete list</span></span>
-<span data-ttu-id="dc272-254">Täydellinen vanhentumassa olevien ohjelmointirajapintojen luettelo on kohdassa [Menetelmien ja metatietojen elementtien poisto](deprecation-deletion-apis.md).</span><span class="sxs-lookup"><span data-stu-id="dc272-254">To access the full list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).</span></span>
-
-## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a><span data-ttu-id="dc272-255">Dynamics 365 for Finance and Operations 8.1 ja platform update 20</span><span class="sxs-lookup"><span data-stu-id="dc272-255">Dynamics 365 for Finance and Operations 8.1 with platform update 20</span></span>
-
-### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a><span data-ttu-id="dc272-256">Alareskontran kirjauskansion kirjanpitovientien eräsiirtosäännöt</span><span class="sxs-lookup"><span data-stu-id="dc272-256">Batch transfer rules for subledger journal account entries</span></span>
-<span data-ttu-id="dc272-257">Synkrononinen siirtotila on vanhentunut kirjanpitotilin parametreissä.</span><span class="sxs-lookup"><span data-stu-id="dc272-257">The Synchronous transfer mode is being deprecated in the General ledger parameters.</span></span>  <span data-ttu-id="dc272-258">Tämä tila korvataan vain asynkronisella ja ajoitetulla erällä, joka on jo olemassa siirtovaihtoehtona.</span><span class="sxs-lookup"><span data-stu-id="dc272-258">This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer.</span></span> <span data-ttu-id="dc272-259">Lisätietoja on [Kirjanpitoparametrit - eräsiirron säännöt](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules) -blogissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-259">For additional information, see the [General Ledger Parameters – Batch transfer rules](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules) blog.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-260">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-260">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-261">Poistamme synkronisen vaihtoehdon, koska se vaikuttaa järjestelmän suorituskykyyn.</span><span class="sxs-lookup"><span data-stu-id="dc272-261">We are removing the synchronous option due to performance impact to the system.</span></span> |
-| <span data-ttu-id="dc272-262">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-262">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-263">Synkrononisen vaihtoehdon sijasta käytetään asynkronista ja ajoitettua erää.</span><span class="sxs-lookup"><span data-stu-id="dc272-263">Asynchronous and scheduled batch are options to use in place of Synchronous.</span></span>   |
-| <span data-ttu-id="dc272-264">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-264">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-265">Kirjanpitotili, ostoreskontra, myyntireskontra, hankinta, kulut</span><span class="sxs-lookup"><span data-stu-id="dc272-265">General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense</span></span>    |
-| <span data-ttu-id="dc272-266">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-266">**Deployment option**</span></span>              | <span data-ttu-id="dc272-267">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-267">All</span></span>  |
-| <span data-ttu-id="dc272-268">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-268">**Status**</span></span>                         | <span data-ttu-id="dc272-269">Vanhentunut: toiminnon poiston tavoiteajankohta on versio 10.0.</span><span class="sxs-lookup"><span data-stu-id="dc272-269">Deprecated: Target timeframe for the functionality to be removed is the 10.0 version.</span></span>|
-
-### <a name="electronic-reporting-for-russia"></a><span data-ttu-id="dc272-270">Sähköinen raportointi Venäjää varten</span><span class="sxs-lookup"><span data-stu-id="dc272-270">Electronic reporting for Russia</span></span>
-<span data-ttu-id="dc272-271">Toiminto ilmoitusten .txt- ja .xml-tiedostomuotojen määrittämiseen.</span><span class="sxs-lookup"><span data-stu-id="dc272-271">Feature for configuring .txt and .xml file formats of declarations.</span></span> 
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-272">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-272">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-273">Korvataan sähköisellä raportoinnilla.</span><span class="sxs-lookup"><span data-stu-id="dc272-273">Replaced with Electronic reporting.</span></span> |
-| <span data-ttu-id="dc272-274">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-274">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-275">Kyllä.</span><span class="sxs-lookup"><span data-stu-id="dc272-275">Yes.</span></span> |
-| <span data-ttu-id="dc272-276">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-276">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-277">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="dc272-277">General Ledger</span></span> |
-| <span data-ttu-id="dc272-278">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-278">**Deployment option**</span></span>              | <span data-ttu-id="dc272-279">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-279">All</span></span> |
-| <span data-ttu-id="dc272-280">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-280">**Status**</span></span>                         | <span data-ttu-id="dc272-281">Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-281">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
-
-### <a name="financial-reports-generator-for-russia"></a><span data-ttu-id="dc272-282">Rahoitusraporttien luonti Venäjää varten</span><span class="sxs-lookup"><span data-stu-id="dc272-282">Financial reports generator for Russia</span></span>
-<span data-ttu-id="dc272-283">Tiedonkeruun määritystyökalu kirjanpitoa ja veroraportteja varten sekä tietojen viemiseksi XLS- ja DOC-raporttimalleihin.</span><span class="sxs-lookup"><span data-stu-id="dc272-283">A tool for setting up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</span></span> <span data-ttu-id="dc272-284">Toiminnalliset osat: tietojen vienti XLS- ja DOC-raporttimalleihin, kyselyt, kiinteät edellytykset poistetaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-284">Functional parts: Export data to XLS and DOC report templates, queries, fixed requisites are removed.</span></span> 
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-285">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-285">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-286">Poisteut osat korvataan sähköisellä raportoinnilla.</span><span class="sxs-lookup"><span data-stu-id="dc272-286">Removed parts are replaced with Electronic reporting.</span></span> |
-| <span data-ttu-id="dc272-287">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-287">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-288">Kyllä.</span><span class="sxs-lookup"><span data-stu-id="dc272-288">Yes.</span></span> <span data-ttu-id="dc272-289">Tilinpäätösten määrityksen käyttöliittymää olisi käytettävä tiedonkeruusääntöjen määrittämiseen kirjanpitotilien tai verorekistereiden mukaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-289">Financial reports setup user interface should be used for setting up data collection rules by GL accounts or tax registers.</span></span> <span data-ttu-id="dc272-290">Sähköisessä raportoinnissa olisi määritettävä äännöt, jotka koskevat tietojen vientiä erilaisiin tiedostotyyppeihin, kiinteitä edellytyksiä ja kyselyjen kaltaisten tietojen keruuta.</span><span class="sxs-lookup"><span data-stu-id="dc272-290">Export data to various file types, fixed requisites and query-like data collection rules should be configured in Electronic reporting.</span></span> |
-| <span data-ttu-id="dc272-291">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-291">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-292">Kirjanpitotili.</span><span class="sxs-lookup"><span data-stu-id="dc272-292">General ledger.</span></span> |
-| <span data-ttu-id="dc272-293">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-293">**Deployment option**</span></span>              | <span data-ttu-id="dc272-294">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-294">All</span></span> |
-| <span data-ttu-id="dc272-295">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-295">**Status**</span></span>                         | <span data-ttu-id="dc272-296">Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-296">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
-
-### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a><span data-ttu-id="dc272-297">Integrointi ulkoisten toimittajien kanssa sähköisen raportoinnin lähettämiseksi viestintäkanavien kautta Venäjää varten</span><span class="sxs-lookup"><span data-stu-id="dc272-297">Integration with external providers for sending electronic reporting through communication channels for Russia</span></span>
-<span data-ttu-id="dc272-298">Ilmoitusten luotujen sähköisten tiedostojen vienti kansioon, josta ne lähetetään edelleen sähköisen raportoinnin virallisille palveluntarjoajille, sekä tilan tuonti takaisin.</span><span class="sxs-lookup"><span data-stu-id="dc272-298">Feature exporting generated electronic files of declarations to folder for further sending to official providers of electronic reporting as well as importing state back.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-299">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-299">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-300">Korvattu sähköisten viestien määritettävällä toiminnolla.</span><span class="sxs-lookup"><span data-stu-id="dc272-300">Replaced with electronic messages configurable feature.</span></span> |
-| <span data-ttu-id="dc272-301">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-301">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-302">Kyllä.</span><span class="sxs-lookup"><span data-stu-id="dc272-302">Yes.</span></span>  |
-| <span data-ttu-id="dc272-303">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-303">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-304">Kirjanpitotili, vero</span><span class="sxs-lookup"><span data-stu-id="dc272-304">General Ledger, Tax</span></span> |
-| <span data-ttu-id="dc272-305">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-305">**Deployment option**</span></span>              | <span data-ttu-id="dc272-306">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-306">All</span></span> |
-| <span data-ttu-id="dc272-307">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-307">**Status**</span></span>                         | <span data-ttu-id="dc272-308">Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-308">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
-
-
-### <a name="profit-tax-register-wizard"></a><span data-ttu-id="dc272-309">Voittojen verorekisterin ohjattu toiminto</span><span class="sxs-lookup"><span data-stu-id="dc272-309">Profit tax register wizard</span></span>
-<span data-ttu-id="dc272-310">Omaisuus, jolla luodaan uusia voittojen verorekisterimalleja.</span><span class="sxs-lookup"><span data-stu-id="dc272-310">Feature for creating templates for new profit tax registers.</span></span> <span data-ttu-id="dc272-311">Tämä ominaisuudella luodaan uusien rekisteröiden X++-objekteja, jotka sitten luodaan soveltuvan laskentalogiikan sisältävinä malleina.</span><span class="sxs-lookup"><span data-stu-id="dc272-311">This feature creates X++ objects for new registers, which are then  created as templates with the appropriate calculation logic added in.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-312">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-312">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-313">Toiminto ei ole yhteensopiva Dynamics 365 for Finance and Operationsin laajennettavuusmallin kanssa.</span><span class="sxs-lookup"><span data-stu-id="dc272-313">Feature is not compatible with the Dynamics 365 for Finance and Operations extensibility model.</span></span> |
-| <span data-ttu-id="dc272-314">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-314">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-315">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-315">No</span></span> |
-| <span data-ttu-id="dc272-316">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-316">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-317">Vero</span><span class="sxs-lookup"><span data-stu-id="dc272-317">Tax</span></span> |
-| <span data-ttu-id="dc272-318">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-318">**Deployment option**</span></span>              | <span data-ttu-id="dc272-319">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-319">All</span></span> |
-| <span data-ttu-id="dc272-320">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-320">**Status**</span></span>                         | <span data-ttu-id="dc272-321">Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-321">Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</span></span> |
-
-
-## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a><span data-ttu-id="dc272-322">Dynamics 365 for Finance and Operations 8.0 ja platform update 15</span><span class="sxs-lookup"><span data-stu-id="dc272-322">Dynamics 365 for Finance and Operations 8.0 with platform update 15</span></span>
-<span data-ttu-id="dc272-323">Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version ominaisuus ei ole vanhentunut.</span><span class="sxs-lookup"><span data-stu-id="dc272-323">No features have been removed or deprecated with this release.</span></span> <span data-ttu-id="dc272-324">Ympäristöpäivitys 15 on kumulatiivinen, ja siinä on uusia tai ympäristöpäivityksistä 13, 14 ja 15 muuttuneita ominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="dc272-324">Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.</span></span>
-
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a><span data-ttu-id="dc272-325">Dynamics 365 for Finance and Operations, Enterprise edition 7.3 ja platform update 12</span><span class="sxs-lookup"><span data-stu-id="dc272-325">Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12</span></span>
-
-### <a name="personalized-product-recommendations"></a><span data-ttu-id="dc272-326">Kohdennetut tuotesuositukset</span><span class="sxs-lookup"><span data-stu-id="dc272-326">Personalized product recommendations</span></span> 
-<span data-ttu-id="dc272-327">15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-327">Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</span></span> <span data-ttu-id="dc272-328">Lisätietoja on kohdassa [Mukautetut tuotesuositukset](../../retail/personalized-product-recommendations.md).</span><span class="sxs-lookup"><span data-stu-id="dc272-328">For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).</span></span>  
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-329">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-329">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-330">Tuotesuosituspalvelun nykyinen versio ollaan poistamassa, sillä toiminto suunnitellaan uudelleen käyttämällä parempaa algoritmia ja uudempia vähittäismyyntiin soveltuvia ominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="dc272-330">We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</span></span>  |
-| <span data-ttu-id="dc272-331">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-331">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-332">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-332">No.</span></span> <span data-ttu-id="dc272-333">Tämä ominaisuus on kuitenkin tarkoitus palauttaa kevään 2018 jälkeen uutta suosituspalvelua varten.</span><span class="sxs-lookup"><span data-stu-id="dc272-333">However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</span></span>   |
-| <span data-ttu-id="dc272-334">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-334">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-335">Mukautetut tuotesuositukset myyntipisteessä.</span><span class="sxs-lookup"><span data-stu-id="dc272-335">Personalized product recommendations in POS.</span></span>                                                    |
-| <span data-ttu-id="dc272-336">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-336">**Deployment option**</span></span>              | <span data-ttu-id="dc272-337">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-337">All</span></span>                                                                                      |
-| <span data-ttu-id="dc272-338">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-338">**Status**</span></span>                         |<span data-ttu-id="dc272-339">Poistettu 15.2.2018.</span><span class="sxs-lookup"><span data-stu-id="dc272-339">Removed as of February 15, 2018.</span></span> <span data-ttu-id="dc272-340">Tämä koskee asiakkaita, joiden käytössä on Dynamics 365 for Operations 1611 ja sitä uudempi versio.</span><span class="sxs-lookup"><span data-stu-id="dc272-340">This affects customers running Dynamics 365 for Operations 1611 and later.</span></span>  |
-
-### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a><span data-ttu-id="dc272-341">Sähköisen raportoinnin (ER) toimintoluettelon laajennus</span><span class="sxs-lookup"><span data-stu-id="dc272-341">Extension of the list of Electronic reporting (ER) functions</span></span>
-<span data-ttu-id="dc272-342">Mahdollisuutta käyttää mukautettuja toimintoja ER-lausekkeenmuodostimessa ei tueta enää. (Lisätietoja on kohdassa [Sähköisen raportoinnin toimintoluettelon laajentaminen](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)).</span><span class="sxs-lookup"><span data-stu-id="dc272-342">The possibility to introduce custom functions to be used in the ER expression builder (for more information, see [Extend the list of Electronic reporting functions](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) is not supported any more.</span></span> <span data-ttu-id="dc272-343">Sähköisen raportoinnin ohjelmointirajapintojen muutosten vuoksi, ohjelmointirajapinnan sisäisten toimintojen kutsuminen ER-lausekkeenmuodostimesta muuttui sisäiseksi eikä sitä voi enää laajentaa.</span><span class="sxs-lookup"><span data-stu-id="dc272-343">Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-344">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-344">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-345">Koodin sulkemisaloite</span><span class="sxs-lookup"><span data-stu-id="dc272-345">Code sealing initiative</span></span>  |
-| <span data-ttu-id="dc272-346">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-346">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-347">Ei mitään.</span><span class="sxs-lookup"><span data-stu-id="dc272-347">None.</span></span> <span data-ttu-id="dc272-348">Aina kun uutta sisäistä tarvitaan, uusi laajennuspyyntö on osoitettava ER-kehikkotiimille.</span><span class="sxs-lookup"><span data-stu-id="dc272-348">Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.</span></span><br><br><span data-ttu-id="dc272-349">ER-tiimi kehittää pyydettyä toimintoa, mutta ongelman voi väliaikaisesti välttää ohjelmoimalla tarvittavan logiikan mukautetun sovellusluokan menetelmänä.</span><span class="sxs-lookup"><span data-stu-id="dc272-349">As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class.</span></span> <span data-ttu-id="dc272-350">Tätä menetelmää voi käyttää ER-lausekkeessa mukautettuun sovellusluokkaan viittaavan **Sovellus\luokka**-tyypin lisätyn ER-tietolähteen ominaisuutena.</span><span class="sxs-lookup"><span data-stu-id="dc272-350">This method can be accessed in an ER expression as a property of the added ER data source of the **Application\Class** type that refers to that custom application class.</span></span>  |
-| <span data-ttu-id="dc272-351">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-351">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-352">Sähköisen raportoinnin kehikko</span><span class="sxs-lookup"><span data-stu-id="dc272-352">Electronic reporting framework</span></span>                                                      |
-| <span data-ttu-id="dc272-353">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-353">**Deployment option**</span></span>              | <span data-ttu-id="dc272-354">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-354">All</span></span>                                                                                      |
-| <span data-ttu-id="dc272-355">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-355">**Status**</span></span>                         | <span data-ttu-id="dc272-356">Poistettu versiosta Dynamics 365 for Finance and Operations, Enterprise edition 7.3 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-356">Removed as of Dynamics 365 for Finance and Operations, Enterprise edition 7.3.</span></span>    |
-
-### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a><span data-ttu-id="dc272-357">Erääntymisraportti varastoryhmittäin ja Erääntymisraportti varastodimensioittain</span><span class="sxs-lookup"><span data-stu-id="dc272-357">Inventory by item group and Inventory by inventory dimension aging reports</span></span>
-
-<span data-ttu-id="dc272-358">Finance and Operations ei enää tue raporttia.</span><span class="sxs-lookup"><span data-stu-id="dc272-358">These two reports are no longer supported in Finance and Operations.</span></span> <span data-ttu-id="dc272-359">Asiakaskokemusta voi sen sijaan parantaa **Varaston erääntyminen** -raportin avulla.</span><span class="sxs-lookup"><span data-stu-id="dc272-359">Instead, the **Inventory aging** report can be used to improve the user experience.</span></span>
-
-|   |  |
-|--------------|-----------------------|
-| <span data-ttu-id="dc272-360">**Poiston syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-360">**Reason for deprecation**</span></span>       | <span data-ttu-id="dc272-361">Sama toiminto</span><span class="sxs-lookup"><span data-stu-id="dc272-361">Duplicate functionality</span></span>  |
-| <span data-ttu-id="dc272-362">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-362">**Replaced by another feature?**</span></span> | <span data-ttu-id="dc272-363">Kyllä.</span><span class="sxs-lookup"><span data-stu-id="dc272-363">Yes.</span></span> <span data-ttu-id="dc272-364">Kaksi raporttia on korvattu **Varaston erääntyminen** -raportilla.</span><span class="sxs-lookup"><span data-stu-id="dc272-364">The two reports have been replaced by the **Inventory aging** report.</span></span>     |
-| <span data-ttu-id="dc272-365">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-365">**Product areas affected**</span></span>       | <span data-ttu-id="dc272-366">Varastonhallinta, kustannushintojen hallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-366">Inventory management, Cost management</span></span>        |
-| <span data-ttu-id="dc272-367">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-367">**Deployment option**</span></span>        | <span data-ttu-id="dc272-368">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-368">All</span></span>|
-| <span data-ttu-id="dc272-369">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-369">**Status**</span></span>                       | <span data-ttu-id="dc272-370">Vanhentunut: kahden raportin valikkovaihtoehdot on poistettu versiossa 7.3.</span><span class="sxs-lookup"><span data-stu-id="dc272-370">Deprecated: The menu items for the two reports have been removed in version 7.3.</span></span> <span data-ttu-id="dc272-371">Raporttien koodi on kuitenkin edelleen tuotteessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-371">However, the code for the reports remains in the product.</span></span> <span data-ttu-id="dc272-372">Koodi on tarkoitus poistaa tulevissa versioissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-372">The plan is to remove the code in a future release.</span></span> |
-
-### <a name="power-bi-content-packs-available-on-appsource"></a><span data-ttu-id="dc272-373">Power BI -sisältöpaketit ovat saatavilla AppSourcessa</span><span class="sxs-lookup"><span data-stu-id="dc272-373">Power BI content packs available on AppSource</span></span>
-<span data-ttu-id="dc272-374">**Kustannushintojen hallinta**-, **Taloudellinen suorituskyky**- ja **Retail Channel Performance** -sisältöpaketit, jotka ovat saatavilla [Microsoft AppSource](https://appsource.microsoft.com) -sivustossa, ovat vanhentuneet Microsoft Power BI:n tuotepäivitysten vuoksi.</span><span class="sxs-lookup"><span data-stu-id="dc272-374">The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [Microsoft AppSource](https://appsource.microsoft.com) site, are deprecated as a consequence of product updates in Microsoft Power BI.</span></span> <span data-ttu-id="dc272-375">Myös järjestelmän hallintalomakkeet, joilla nämä sisältöpaketit otetaan käyttöön Pack PowerBI.comissa, ovat vanhentumassa Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-375">System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-376">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-376">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-377">Microsoft Power BI:n tuotepäivitykset.</span><span class="sxs-lookup"><span data-stu-id="dc272-377">Product updates in Microsoft Power BI.</span></span> |
-| <span data-ttu-id="dc272-378">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-378">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-379">**Kustannushintojen hallinta**-, **Taloudellinen suorituskyky**- ja **Retail Channel Performance** -sisältöpaketit, jotka ovat saatavilla [AppSource](https://appsource.microsoft.com)-sivustossa, korvataan analyysisovelluksilla, jotka mahdollistavat ratkaisujen integraation tietokantatasolla.</span><span class="sxs-lookup"><span data-stu-id="dc272-379">The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level.</span></span> <span data-ttu-id="dc272-380">Lisätietoja analyysisovelluksista on kohdassa [Embedded Power BI työtiloissa](../../dev-itpro/analytics/embed-power-bi-workspaces.md).</span><span class="sxs-lookup"><span data-stu-id="dc272-380">For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).</span></span>    |
-| <span data-ttu-id="dc272-381">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-381">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-382">Kustannushintojen hallinta, myyntitiedot ja vähittäismyynti</span><span class="sxs-lookup"><span data-stu-id="dc272-382">Cost management, Finance, and Retail</span></span>                                                                                               |
-| <span data-ttu-id="dc272-383">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-383">**Deployment option**</span></span>              | <span data-ttu-id="dc272-384">Vain pilvipalvelut (PowerBI.com-integraatiota ei tueta paikallisissa käyttöönotoissa).</span><span class="sxs-lookup"><span data-stu-id="dc272-384">Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)</span></span>                                                                                                            |
-| <span data-ttu-id="dc272-385">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-385">**Status**</span></span>                         | <span data-ttu-id="dc272-386">Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2018 2. vuosineljännes.</span><span class="sxs-lookup"><span data-stu-id="dc272-386">Deprecated: Target timeframe for the functionality removal is Q2 2018.</span></span>    |
-
-### <a name="standard-ui-in-data-management-workspace"></a><span data-ttu-id="dc272-387">Tietojen hallinnan työtilan vakiokäyttöliittymä</span><span class="sxs-lookup"><span data-stu-id="dc272-387">Standard UI in data management workspace</span></span>
-
-<span data-ttu-id="dc272-388">Tietojen hallinnan vakiokäyttöliittämä on käyttöliittymä, jonka käyttäjät oletusarvoisesti näkevät, kun he ovat tietojen hallinnan työtilassa.</span><span class="sxs-lookup"><span data-stu-id="dc272-388">The standard UI in data management is the legacy UI, which is the default UI presented to the users when they visit the data management workspace.</span></span>
-
-|   |  |
-|------------------|-------------------------|
-| <span data-ttu-id="dc272-389">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-389">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-390">Panostus tehdään uuden käyttöliittymän uusiin asiakaskokemuksiin.</span><span class="sxs-lookup"><span data-stu-id="dc272-390">We are investing in providing new user experiences in the new UI.</span></span>             |
-| <span data-ttu-id="dc272-391">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-391">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-392">Uusi *laajennetuiksi näkymiksi* kutsuttu käyttöliittymä korvaa vanhan käyttöliittymän.</span><span class="sxs-lookup"><span data-stu-id="dc272-392">The new UI called *Enhanced views* is replacing the old UI.</span></span>            |
-| <span data-ttu-id="dc272-393">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-393">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-394">Tietojen hallinnan työtila</span><span class="sxs-lookup"><span data-stu-id="dc272-394">Data management workspace</span></span>                                                     |
-| <span data-ttu-id="dc272-395">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-395">**Deployment option**</span></span>              | <span data-ttu-id="dc272-396">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-396">All</span></span>                                                                           |
-| <span data-ttu-id="dc272-397">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-397">**Status**</span></span>                         | <span data-ttu-id="dc272-398">Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2018 2. vuosineljännes.</span><span class="sxs-lookup"><span data-stu-id="dc272-398">Deprecated: Target timeframe for the functionality to be removed is Q2 2018.</span></span> |
-
-### <a name="excise-sales-tax-service-tax-for-india"></a><span data-ttu-id="dc272-399">Valmistevero, arvonlisävero, Intian palveluvero</span><span class="sxs-lookup"><span data-stu-id="dc272-399">Excise, Sales Tax, Service Tax for India</span></span>
-
-<span data-ttu-id="dc272-400">Nämä verot on sisällytetty Intian GST-veroon.</span><span class="sxs-lookup"><span data-stu-id="dc272-400">These taxes have been subsumed into Indian GST.</span></span>
-
-|                                             |                                                                         |
-|---------------------------------------------|-------------------------------------------------------------------------|
-| <span data-ttu-id="dc272-401">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-401">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="dc272-402">Nämä verot on sisällytetty Intian GST-veroon.</span><span class="sxs-lookup"><span data-stu-id="dc272-402">These taxes have been subsumed into Indian GST.</span></span>                          |
-| <span data-ttu-id="dc272-403">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-403">**Replaced by another feature?**</span></span>            | <span data-ttu-id="dc272-404">Intian GST-vero</span><span class="sxs-lookup"><span data-stu-id="dc272-404">Indian GST</span></span>                                                              |
-| <span data-ttu-id="dc272-405">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-405">**Product areas affected**</span></span>                  | <span data-ttu-id="dc272-406">Vero</span><span class="sxs-lookup"><span data-stu-id="dc272-406">Tax</span></span>                                                                     |
-| <span data-ttu-id="dc272-407">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-407">**Deployment option**</span></span>                       | <span data-ttu-id="dc272-408">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-408">All modules</span></span>                                                   |
-| <span data-ttu-id="dc272-409">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-409">**Status**</span></span>                                  | <span data-ttu-id="dc272-410">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-410">Deprecated: A removal date has not been set for this feature.</span></span> |    
-
-### <a name="file-validation-utility-fvu-for-india"></a><span data-ttu-id="dc272-411">Intian tiedoston tarkistuksen apuohjelma (FVU)</span><span class="sxs-lookup"><span data-stu-id="dc272-411">File Validation Utility (FVU) for India</span></span>
-
-|                                             |                                                                         |
-|---------------------------------------------|-------------------------------------------------------------------------|
-| <span data-ttu-id="dc272-412">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-412">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="dc272-413">Toimintoa ei käytetty</span><span class="sxs-lookup"><span data-stu-id="dc272-413">Lack of customer usage</span></span>                                                  |
-| <span data-ttu-id="dc272-414">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-414">**Replaced by another feature?**</span></span>            | <span data-ttu-id="dc272-415">En</span><span class="sxs-lookup"><span data-stu-id="dc272-415">No</span></span>                                                                      |
-| <span data-ttu-id="dc272-416">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-416">**Product areas affected**</span></span>                  | <span data-ttu-id="dc272-417">Intian ennakonpidätys</span><span class="sxs-lookup"><span data-stu-id="dc272-417">Indian withholding tax</span></span>                                                  |
-| <span data-ttu-id="dc272-418">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-418">**Deployment option**</span></span>                       | <span data-ttu-id="dc272-419">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-419">All modules</span></span>                                                                    |
-| <span data-ttu-id="dc272-420">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-420">**Status**</span></span>                                  | <span data-ttu-id="dc272-421">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-421">Deprecated: A removal date has not been set for this feature.</span></span>   |        
-
-### <a name="tdstcs-certificate-for-india"></a><span data-ttu-id="dc272-422">Intian TDS/TCS-varmenne</span><span class="sxs-lookup"><span data-stu-id="dc272-422">TDS/TCS certificate for India</span></span>
-
-<span data-ttu-id="dc272-423">Käyttäjät voivat ladata tämän julkishallinnon portaalista.</span><span class="sxs-lookup"><span data-stu-id="dc272-423">Users can download this from the government portal.</span></span>
-
-|                                             |                                                                         |
-|---------------------------------------------|-------------------------------------------------------------------------|
-| <span data-ttu-id="dc272-424">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-424">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="dc272-425">Toimintoa ei käytetty</span><span class="sxs-lookup"><span data-stu-id="dc272-425">Lack of customer usage</span></span>                                                  |
-| <span data-ttu-id="dc272-426">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-426">**Replaced by another feature?**</span></span>            | <span data-ttu-id="dc272-427">En</span><span class="sxs-lookup"><span data-stu-id="dc272-427">No</span></span>                                                                      |
-| <span data-ttu-id="dc272-428">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-428">**Product areas affected**</span></span>                  | <span data-ttu-id="dc272-429">Intian ennakonpidätys</span><span class="sxs-lookup"><span data-stu-id="dc272-429">Indian withholding tax</span></span>                                                  |
-| <span data-ttu-id="dc272-430">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-430">**Deployment option**</span></span>                       | <span data-ttu-id="dc272-431">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-431">All modules</span></span>                                                                   |
-| <span data-ttu-id="dc272-432">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-432">**Status**</span></span>                                  | <span data-ttu-id="dc272-433">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-433">Deprecated: A removal date has not been set for this feature.</span></span>     |    
-
-### <a name="exportimport-exim-incentive-scheme-for-india"></a><span data-ttu-id="dc272-434">Intian tuonnin ja viennin kannustinmalli (EXIM)</span><span class="sxs-lookup"><span data-stu-id="dc272-434">Export/import (EXIM) incentive scheme for India</span></span>
-
-
-|                                             |                                                                         |
-|---------------------------------------------|-------------------------------------------------------------------------|
-| <span data-ttu-id="dc272-435">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-435">**Reason for removal or deprecation**</span></span>       | <span data-ttu-id="dc272-436">Toimintoa ei käytetty</span><span class="sxs-lookup"><span data-stu-id="dc272-436">Lack of customer usage</span></span>                                                  |
-| <span data-ttu-id="dc272-437">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-437">**Replaced by another feature?**</span></span>            | <span data-ttu-id="dc272-438">En</span><span class="sxs-lookup"><span data-stu-id="dc272-438">No</span></span>                                                                      |
-| <span data-ttu-id="dc272-439">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-439">**Product areas affected**</span></span>                  | <span data-ttu-id="dc272-440">Tuo ja vie</span><span class="sxs-lookup"><span data-stu-id="dc272-440">Import and export</span></span>                                                       |
-| <span data-ttu-id="dc272-441">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-441">**Deployment option**</span></span>                       | <span data-ttu-id="dc272-442">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-442">All modules</span></span>                                                                    |
-| <span data-ttu-id="dc272-443">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-443">**Status**</span></span>                                  | <span data-ttu-id="dc272-444">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-444">Deprecated: A removal date has not been set for this feature.</span></span>  |    
-
-
-## <a name="dynamics-365-for-retail-72"></a><span data-ttu-id="dc272-445">Dynamics 365 for Retail 7.2</span><span class="sxs-lookup"><span data-stu-id="dc272-445">Dynamics 365 for Retail 7.2</span></span>
-
-### <a name="personalized-product-recommendations"></a><span data-ttu-id="dc272-446">Kohdennetut tuotesuositukset</span><span class="sxs-lookup"><span data-stu-id="dc272-446">Personalized product recommendations</span></span> 
-<span data-ttu-id="dc272-447">15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-447">Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</span></span> <span data-ttu-id="dc272-448">Lisätietoja on kohdassa [Mukautetut tuotesuositukset](../../retail/personalized-product-recommendations.md).</span><span class="sxs-lookup"><span data-stu-id="dc272-448">For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).</span></span>  
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-449">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-449">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-450">Tuotesuosituspalvelun nykyinen versio ollaan poistamassa, sillä toiminto suunnitellaan uudelleen käyttämällä parempaa algoritmia ja uudempia vähittäismyyntiin soveltuvia ominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="dc272-450">We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</span></span>  |
-| <span data-ttu-id="dc272-451">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-451">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-452">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-452">No.</span></span> <span data-ttu-id="dc272-453">Tämä ominaisuus on kuitenkin tarkoitus palauttaa kevään 2018 jälkeen uutta suosituspalvelua varten.</span><span class="sxs-lookup"><span data-stu-id="dc272-453">However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</span></span>   |
-| <span data-ttu-id="dc272-454">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-454">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-455">Mukautetut tuotesuositukset myyntipisteessä.</span><span class="sxs-lookup"><span data-stu-id="dc272-455">Personalized product recommendations in POS.</span></span>                                                    |
-| <span data-ttu-id="dc272-456">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-456">**Deployment option**</span></span>              | <span data-ttu-id="dc272-457">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-457">All</span></span>                                                                                      |
-| <span data-ttu-id="dc272-458">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-458">**Status**</span></span>                         |<span data-ttu-id="dc272-459">Poistettu 15.2.2018.</span><span class="sxs-lookup"><span data-stu-id="dc272-459">Removed as of February 15, 2018.</span></span> <span data-ttu-id="dc272-460">Tämä koskee asiakkaita, joiden käytössä on Dynamics 365 for Retail 7.2 ja sitä uudempi versio.</span><span class="sxs-lookup"><span data-stu-id="dc272-460">This affects customers running Dynamics 365 for Retail 7.2  and later.</span></span> |
-
-
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a><span data-ttu-id="dc272-461">Dynamics 365 for Finance and Operations, Enterprise edition heinäkuu 2017 ja platform update 8</span><span class="sxs-lookup"><span data-stu-id="dc272-461">Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8</span></span>
-
-### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a><span data-ttu-id="dc272-462">Valuuttamuunnos kirjanpito- ja raportointivaluutoille</span><span class="sxs-lookup"><span data-stu-id="dc272-462">Currency conversion for accounting and reporting currencies</span></span>
-
-<span data-ttu-id="dc272-463">Valuuttamuunnos kirjanpito- ja raportointivaluutoille otettiin käyttöön, kun euro otettiin otettiin käyttöön.</span><span class="sxs-lookup"><span data-stu-id="dc272-463">Currency conversion for accounting and reporting currencies was introduced when the euro was introduced.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-464">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-464">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-465">Rajoitettu käyttö ja Kopioi yritys -toiminnon lisäys korvauksena.</span><span class="sxs-lookup"><span data-stu-id="dc272-465">Limited usage and addition of the Copy legal entity functionality as a replacement.</span></span>      |
-| <span data-ttu-id="dc272-466">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-466">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-467">Ei, mutta Kopioi yritys- ja Konfiguroinnit-ominaisuudet lisättiin, jotta olisi helppo siirtää yritys, jolla on muuttuvat ydintarpeet.</span><span class="sxs-lookup"><span data-stu-id="dc272-467">No, but the Copy legal entity and Configurations features were added to make it easier to move to a company that has changing core requirements.</span></span> |
-| <span data-ttu-id="dc272-468">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-468">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-469">Taloushallinto</span><span class="sxs-lookup"><span data-stu-id="dc272-469">Financial management</span></span>     |
-| <span data-ttu-id="dc272-470">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-470">**Status**</span></span>                         | <span data-ttu-id="dc272-471">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-471">Deprecated: A removal date has not been set for this feature.</span></span>   |
-
-
-### <a name="warehouse-mobile-devices-portal"></a><span data-ttu-id="dc272-472">Varaston mobiililaiteportaali</span><span class="sxs-lookup"><span data-stu-id="dc272-472">Warehouse mobile devices portal</span></span>
-
-<span data-ttu-id="dc272-473">Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon.</span><span class="sxs-lookup"><span data-stu-id="dc272-473">Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</span></span> <span data-ttu-id="dc272-474">Finance and Operations ei enää tue tätä osaa.</span><span class="sxs-lookup"><span data-stu-id="dc272-474">This component is no longer supported in Finance and Operations.</span></span> <span data-ttu-id="dc272-475">Alkuperäinen, käyttäjäkokemusta parantava sovellus, on korvannut WMDP-toiminnot.</span><span class="sxs-lookup"><span data-stu-id="dc272-475">A native app that improves the user experience has replaced the functionality of WMDP.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-476">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-476">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-477">Sama toiminto.</span><span class="sxs-lookup"><span data-stu-id="dc272-477">Duplicate functionality.</span></span>       |
-| <span data-ttu-id="dc272-478">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-478">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-479">Kyllä.</span><span class="sxs-lookup"><span data-stu-id="dc272-479">Yes.</span></span> <span data-ttu-id="dc272-480">Finance and Operations – varastointi on korvannut tämän ominaisuuden.</span><span class="sxs-lookup"><span data-stu-id="dc272-480">This feature has been replaced by Finance and Operations - Warehousing.</span></span> <span data-ttu-id="dc272-481">Lisätietoja asetuksista ja edellytyksistä on kohdassa [Microsoft Dynamics 365 for Finance and Operationsin asennus ja määritys – varastointi](../../supply-chain/warehousing/install-configure-warehousing-app.md).</span><span class="sxs-lookup"><span data-stu-id="dc272-481">For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](../../supply-chain/warehousing/install-configure-warehousing-app.md).</span></span> |
-| <span data-ttu-id="dc272-482">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-482">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-483">Varaston hallinta, kuljetusten hallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-483">Warehouse management, Transportation management</span></span>     |
-| <span data-ttu-id="dc272-484">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-484">**Deployment option**</span></span>              | <span data-ttu-id="dc272-485">Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon.</span><span class="sxs-lookup"><span data-stu-id="dc272-485">Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</span></span>               |
-| <span data-ttu-id="dc272-486">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-486">**Status**</span></span>                         | <span data-ttu-id="dc272-487">Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2019 4. vuosineljännes.</span><span class="sxs-lookup"><span data-stu-id="dc272-487">Deprecated: Target timeframe for the functionality to be removed is Q4 2019.</span></span>   |
-
-### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a><span data-ttu-id="dc272-488">Pankkitilin täsmäytyksen lisätoimintojen manuaalisen täsmäytyksen täsmäytyssääntö</span><span class="sxs-lookup"><span data-stu-id="dc272-488">Advanced bank reconciliation matching rule for manual matching</span></span>
-
-<span data-ttu-id="dc272-489">Täsmäytyssäännöllä valittiin ja merkittiin pankkitosite, kun asiakirjat täsmäytettiin manuaalisesti täsmäytyslaskentataulukossa.</span><span class="sxs-lookup"><span data-stu-id="dc272-489">A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-490">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-490">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-491">Rajoitettu käyttö.</span><span class="sxs-lookup"><span data-stu-id="dc272-491">Limited usage.</span></span>                                                                         |
-| <span data-ttu-id="dc272-492">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-492">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-493">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-493">No.</span></span> <span data-ttu-id="dc272-494">Täsmäytettäviä asiakirjoja etsitään sarakkeen suodatusominaisuuksilla.</span><span class="sxs-lookup"><span data-stu-id="dc272-494">Column filtering capabilities should be used to find documents for reconciliation.</span></span> |
-| <span data-ttu-id="dc272-495">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-495">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-496">Maksuliikenteen hallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-496">Cash and bank management</span></span>                                                               |
-| <span data-ttu-id="dc272-497">**Käytön asetukset**</span><span class="sxs-lookup"><span data-stu-id="dc272-497">**Deployment option**</span></span>              | <span data-ttu-id="dc272-498">Kaikki</span><span class="sxs-lookup"><span data-stu-id="dc272-498">All</span></span>                                                                                    |
-| <span data-ttu-id="dc272-499">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-499">**Status**</span></span>                         | <span data-ttu-id="dc272-500">Poistettu heinäkuusta 2017 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-500">Removed as of July 2017.</span></span>                                                               |
-
-## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a><span data-ttu-id="dc272-501">Dynamics 365 for Operations 1611 ja platform update 3</span><span class="sxs-lookup"><span data-stu-id="dc272-501">Dynamics 365 for Operations 1611 with platform update 3</span></span>
-
-### <a name="aeb-payment-formats-for-spain"></a><span data-ttu-id="dc272-502">Espanjan AEB-maksumuodot</span><span class="sxs-lookup"><span data-stu-id="dc272-502">AEB payment formats for Spain</span></span>
-
-<span data-ttu-id="dc272-503">Consejo Superior Bancario -maksumuotoja käytettiin maksusuoritustiedostojen lähettämiseen pankkiin asiakkaan maksuja ja toimittajamaksuja varten.</span><span class="sxs-lookup"><span data-stu-id="dc272-503">The Consejo Superior Bancario payment formats were used to send remittance files to the bank for customer payments and vendor payments.</span></span> <span data-ttu-id="dc272-504">Muotojen sisällön määritti Asociación Española de Banca.</span><span class="sxs-lookup"><span data-stu-id="dc272-504">The content of these formats was determined by the Asociación Española de Banca.</span></span> <span data-ttu-id="dc272-505">Siihen sisältyy Cuaderno 19, 32, 58, 34.</span><span class="sxs-lookup"><span data-stu-id="dc272-505">It covers Cuaderno 19, 32, 58, 34.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-506">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-506">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-507">Maksumuotoja ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-507">The payment formats are no longer used.</span></span>                                  |
-| <span data-ttu-id="dc272-508">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-508">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-509">Kyllä, Espanjan ISO20022-tilisiirto ja suoraveloituksen maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-509">Yes, ISO20022 Credit transfer and Direct debit payment formats for Spain</span></span> |
-| <span data-ttu-id="dc272-510">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-510">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-511">Myyntireskontra, ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-511">Accounts payable, Accounts receivable</span></span>                                    |
-| <span data-ttu-id="dc272-512">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-512">**Status**</span></span>                         | <span data-ttu-id="dc272-513">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-513">Deprecated: A removal date has not been set for this feature.</span></span>           |
-
-### <a name="bank-payments-transfer-for-lithuania"></a><span data-ttu-id="dc272-514">Liettuan pankkiohjelmamaksujen siirto</span><span class="sxs-lookup"><span data-stu-id="dc272-514">Bank payments transfer for Lithuania</span></span>
-
-<span data-ttu-id="dc272-515">Pankkiohjelmamaksujen siirrot luotiin ja tulostettiin Liettuan maksunsiirron (LT) vientimuodon avulla.</span><span class="sxs-lookup"><span data-stu-id="dc272-515">Bank payment transfers were generated and printed by using the Payment transfer (LT) export format for Lithuania.</span></span> <span data-ttu-id="dc272-516">Liettuan markkina-alue aloitti LITASin, yhdistetyn sähköisen pankkijärjestelmän, käytön vuonna 2005.</span><span class="sxs-lookup"><span data-stu-id="dc272-516">The Lithuanian market began to use LITAS, the unified electronic banking system, in 2005.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-517">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-517">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-518">Maksumuotoja ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-518">The payment formats are no longer used.</span></span>                        |
-| <span data-ttu-id="dc272-519">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-519">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-520">Kyllä, Liettuan ISO20022-tilisiirron maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-520">Yes, ISO20022 Credit transfer payment format for Lithuania</span></span>     |
-| <span data-ttu-id="dc272-521">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-521">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-522">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-522">Accounts payable</span></span>                                               |
-| <span data-ttu-id="dc272-523">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-523">**Status**</span></span>                         | <span data-ttu-id="dc272-524">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-524">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="bbs-direkte-remittering-payment-formats-for-norway"></a><span data-ttu-id="dc272-525">Norjan BBS Direkte Remittering -maksumuodot</span><span class="sxs-lookup"><span data-stu-id="dc272-525">BBS Direkte Remittering payment formats for Norway</span></span>
-
-<span data-ttu-id="dc272-526">BBS Direkte Remittering -maksumuotoja ovat asiakkaan maksun perittävän vienti (suoraveloitus) ja palautussanoman tuonti.</span><span class="sxs-lookup"><span data-stu-id="dc272-526">BBS Direkte Remittering payment formats include customer payment collection export (direct debit) and return message import.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-527">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-527">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-528">Maksumuotoja ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-528">The payment formats are no longer used.</span></span>  |
-| <span data-ttu-id="dc272-529">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-529">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-530">Norjan AvtaleGiro- asiakkaan maksumuotoa voidaan käyttää suoraveloituksen sanomien luomiseen.</span><span class="sxs-lookup"><span data-stu-id="dc272-530">The AvtaleGiro customer payment format for Norway can be used to generate direct debit messages.</span></span> <span data-ttu-id="dc272-531">Palautussanoman tuominen toteutetaan tulevissa versioissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-531">Return message import will be implemented in future releases.</span></span> |
-| <span data-ttu-id="dc272-532">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-532">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-533">Myyntireskontra, ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-533">Accounts payable, Accounts receivable</span></span>   |
-| <span data-ttu-id="dc272-534">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-534">**Status**</span></span>                         | <span data-ttu-id="dc272-535">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-535">Deprecated: A removal date has not been set for this feature.</span></span>                                                                                                 |
-
-### <a name="chart-of-accounts-tool-for-spain"></a><span data-ttu-id="dc272-536">Espanjan tilikartta-työkalu</span><span class="sxs-lookup"><span data-stu-id="dc272-536">Chart of Accounts tool for Spain</span></span>
-
-<span data-ttu-id="dc272-537">Tätä työkalua käytetään, kun Espanjan tilikartta edellyttää suuria muutoksia.</span><span class="sxs-lookup"><span data-stu-id="dc272-537">This tool is used when a chart of accounts in Spain requires major changes.</span></span> <span data-ttu-id="dc272-538">Käyttäjä voi tuoda uuden tilikartan Microsoft Excel- tai tekstimuodossa ja tuoda myös raportteja.</span><span class="sxs-lookup"><span data-stu-id="dc272-538">Users can import a new chart of accounts in Microsoft Excel or text format, and can also import financial statements.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-539">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-539">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-540">Rajoitettu käyttö</span><span class="sxs-lookup"><span data-stu-id="dc272-540">Limited usage</span></span>                                                  |
-| <span data-ttu-id="dc272-541">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-541">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-542">En</span><span class="sxs-lookup"><span data-stu-id="dc272-542">No</span></span>                                                             |
-| <span data-ttu-id="dc272-543">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-543">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-544">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="dc272-544">General ledger</span></span>                                                 |
-| <span data-ttu-id="dc272-545">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-545">**Status**</span></span>                         | <span data-ttu-id="dc272-546">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-546">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="dom80-payment-format-for-belgium"></a><span data-ttu-id="dc272-547">Belgian Dom80-maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-547">Dom80 payment format for Belgium</span></span>
-
-<span data-ttu-id="dc272-548">Vanha Belgian maksukehotuksen maksumuoto (suoraveloitus).</span><span class="sxs-lookup"><span data-stu-id="dc272-548">Legacy Belgian payment format for payment collection (direct debit).</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-549">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-549">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-550">Tätä maksumuotoa ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-550">The payment format is no longer used.</span></span>                          |
-| <span data-ttu-id="dc272-551">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-551">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-552">Kyllä Belgian SO 20022 -suoraveloituksen maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-552">Yes, ISO 20022 Direct debit payment format for Belgium</span></span>         |
-| <span data-ttu-id="dc272-553">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-553">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-554">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-554">Accounts receivable</span></span>                                            |
-| <span data-ttu-id="dc272-555">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-555">**Status**</span></span>                         | <span data-ttu-id="dc272-556">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-556">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="dtaezag-payment-formats-for-switzerland"></a><span data-ttu-id="dc272-557">Sveitsin DTA/EZAG-maksumuodot</span><span class="sxs-lookup"><span data-stu-id="dc272-557">DTA/EZAG payment formats for Switzerland</span></span>
-
-<span data-ttu-id="dc272-558">DTA/EZAG-muodot integroidaan ESR-järjestelmään, koska niissä voidaan käsitellä viitenumeroa.</span><span class="sxs-lookup"><span data-stu-id="dc272-558">DTA/EZAG formats are integrated into the ESR system, because they can carry on the reference number.</span></span> <span data-ttu-id="dc272-559">Koska viitenumero ei ole pakollinen, näitä muotoja voidaan käyttää kaikkien toimittajamaksujen käsittelyssä.</span><span class="sxs-lookup"><span data-stu-id="dc272-559">Because the reference number isn’t mandatory, these formats can be used to process any vendor payments.</span></span> <span data-ttu-id="dc272-560">Muotoja käytetään yrityksissä, joissa on pankkitili muussa kuin "Postfinance"-sijainnissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-560">These formats are used by companies that have a bank account in a location other than “Postfinance.”</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-561">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-561">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-562">Maksumuotoja ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-562">The payment formats are no longer used.</span></span>                        |
-| <span data-ttu-id="dc272-563">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-563">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-564">Kyllä, Sveitsin ISO20022-tilisiirron maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-564">Yes, ISO20022 Credit transfer payment format for Switzerland</span></span>   |
-| <span data-ttu-id="dc272-565">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-565">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-566">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-566">Accounts payable</span></span>                                               |
-| <span data-ttu-id="dc272-567">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-567">**Status**</span></span>                         | <span data-ttu-id="dc272-568">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-568">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="edifact-dirdeb-payment-format-for-austria"></a><span data-ttu-id="dc272-569">Itävallan ISOEDIFACT-DIRDEB-suoraveloituksen maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-569">EDIFACT-DIRDEB payment format for Austria</span></span>
-
-<span data-ttu-id="dc272-570">Maksukehotuksen EDIFACT-DIRDEB-maksumuoto (suoraveloitus).</span><span class="sxs-lookup"><span data-stu-id="dc272-570">EDIFACT-DIRDEB payment format for payment collection (direct debit).</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-571">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-571">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-572">Tätä maksumuotoa ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-572">The payment format is no longer used.</span></span>                          |
-| <span data-ttu-id="dc272-573">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-573">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-574">Kyllä, Itävallan ISO 20022 -suoraveloituksen maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-574">Yes, ISO 20022 Direct debit payment format for Austria</span></span>         |
-| <span data-ttu-id="dc272-575">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-575">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-576">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-576">Accounts receivable</span></span>                                            |
-| <span data-ttu-id="dc272-577">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-577">**Status**</span></span>                         | <span data-ttu-id="dc272-578">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-578">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="edivat-for-belgium"></a><span data-ttu-id="dc272-579">Belgian EDIVAT</span><span class="sxs-lookup"><span data-stu-id="dc272-579">EDIVAT for Belgium</span></span>
-
-<span data-ttu-id="dc272-580">EDIVAT on Belgian vanhentunut standardi sähköiselle ilmoitukselle suojatun sähköpostin kautta.</span><span class="sxs-lookup"><span data-stu-id="dc272-580">EDIVAT is an obsolete Belgian standard for electronic declaration via secure mail.</span></span> <span data-ttu-id="dc272-581">Microsoft Dynamics AX 2012 säilyttää vain luku -ratkaisun historiallisten tietojen käyttämiseksi.</span><span class="sxs-lookup"><span data-stu-id="dc272-581">Microsoft Dynamics AX 2012 retains the read-only solution to enable access to the historical data.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-582">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-582">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-583">Tätä toimintoa ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-583">The functionality is no longer used.</span></span>                           |
-| <span data-ttu-id="dc272-584">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-584">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-585">En</span><span class="sxs-lookup"><span data-stu-id="dc272-585">No</span></span>                                                             |
-| <span data-ttu-id="dc272-586">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-586">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-587">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="dc272-587">General ledger</span></span>                                                 |
-| <span data-ttu-id="dc272-588">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-588">**Status**</span></span>                         | <span data-ttu-id="dc272-589">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-589">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a><span data-ttu-id="dc272-590">Norjan eGiro EDIFACT CREMUL- maksun tuontimuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-590">eGiro EDIFACT CREMUL payment import format for Norway</span></span>
-
-<span data-ttu-id="dc272-591">eGiro perustuu YK:n kansainväliseen EDIFACT CREMUL (Multiple Credit Advice Message) -standardiin, jota käytetään asiakasmaksujen automaattisessa kirjauksessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-591">eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Message) standard that is used for automatic posting of customer payments.</span></span> <span data-ttu-id="dc272-592">Microsoft Dynamics AX:ssä eGiro toteutetaan asiakkaan maksun tuontimuotona.</span><span class="sxs-lookup"><span data-stu-id="dc272-592">In Microsoft Dynamics AX, eGiro is implemented as a customer payment import format.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-593">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-593">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-594">Tätä maksumuotoa ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-594">The payment format is no longer used.</span></span>                                                     |
-| <span data-ttu-id="dc272-595">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-595">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-596">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-596">No.</span></span> <span data-ttu-id="dc272-597">Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-597">The format will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
-| <span data-ttu-id="dc272-598">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-598">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-599">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-599">Accounts receivable</span></span>                                                                       |
-| <span data-ttu-id="dc272-600">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-600">**Status**</span></span>                         | <span data-ttu-id="dc272-601">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-601">Deprecated: A removal date has not been set for this feature.</span></span>                            |
-
-### <a name="external-inventory-for-poland"></a><span data-ttu-id="dc272-602">Puolan ulkoinen varasto</span><span class="sxs-lookup"><span data-stu-id="dc272-602">External inventory for Poland</span></span>
-
-<span data-ttu-id="dc272-603">Tavaroiden tunnistetiedot, jotka saadaan toimittajan myynnistä ilman ostoa.</span><span class="sxs-lookup"><span data-stu-id="dc272-603">Evidence of goods that are taken from a vendor for sales without purchase.</span></span> <span data-ttu-id="dc272-604">Ulkoisessa varastossa käsitellyt tavarat eivät vaikuta vakiovarastoon ja ne voidaan myydä ja ostaa automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="dc272-604">Goods that are handled in external inventory don’t affect standard inventory, and can be sold and then purchased automatically.</span></span> <span data-ttu-id="dc272-605">Tämä prosessi luo todelliset varastosiirrot.</span><span class="sxs-lookup"><span data-stu-id="dc272-605">This process creates real inventory movements.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-606">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-606">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-607">Korvattu toisella toiminnolla</span><span class="sxs-lookup"><span data-stu-id="dc272-607">Replaced by another feature</span></span>                                    |
-| <span data-ttu-id="dc272-608">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-608">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-609">Kyllä, saapuvan tavaralähetyksen perustoiminnot</span><span class="sxs-lookup"><span data-stu-id="dc272-609">Yes, the core Inbound consignment functionality</span></span>                |
-| <span data-ttu-id="dc272-610">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-610">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-611">Ostoreskontra, varastonhallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-611">Accounts payable, Inventory management</span></span>                         |
-| <span data-ttu-id="dc272-612">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-612">**Status**</span></span>                         | <span data-ttu-id="dc272-613">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-613">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="financial-reports-generator-for-eastern-europe"></a><span data-ttu-id="dc272-614">Itä-Euroopan raportin muodostustoiminto</span><span class="sxs-lookup"><span data-stu-id="dc272-614">Financial reports generator for Eastern Europe</span></span>
-
-<span data-ttu-id="dc272-615">Työkalua käytetään tiedonkeruun määritykseen kirjanpitoa ja veroraportteja varten sekä tietojen viemiseksi XLS- ja DOC- raporttimalleihin.</span><span class="sxs-lookup"><span data-stu-id="dc272-615">A tool is used to set up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-616">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-616">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-617">Rajoitettu käyttö</span><span class="sxs-lookup"><span data-stu-id="dc272-617">Limited usage</span></span>                                                                            |
-| <span data-ttu-id="dc272-618">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-618">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-619">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-619">No.</span></span> <span data-ttu-id="dc272-620">Työkalu korvataan sähköiset raportoinnin konfiguraatioilla tulevissa julkaisuversioissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-620">The tool will be replaced by Electronic reporting configurations in future releases.</span></span> |
-| <span data-ttu-id="dc272-621">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-621">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-622">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="dc272-622">General Ledger</span></span>                                                                           |
-| <span data-ttu-id="dc272-623">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-623">**Status**</span></span>                         | <span data-ttu-id="dc272-624">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-624">Deprecated: A removal date has not been set for this feature.</span></span>                           |
-
-### <a name="import-of-customer-payment-transactions-for-finland"></a><span data-ttu-id="dc272-625">Suomen asiakasmaksutapahtumien tuominen</span><span class="sxs-lookup"><span data-stu-id="dc272-625">Import of customer payment transactions for Finland</span></span>
-
-<span data-ttu-id="dc272-626">Voit valita Suomen maksujen tuontimuodon asiakasmaksutapahtumien tuomiselle pankin antamasta ulkoisesta tiedostosta.</span><span class="sxs-lookup"><span data-stu-id="dc272-626">You can select an import format for Finnish payments to import customer payment transactions from an external file that the bank provides.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-627">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-627">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-628">Tätä maksumuotoa ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-628">The payment format is no longer used.</span></span>                                                     |
-| <span data-ttu-id="dc272-629">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-629">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-630">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-630">No.</span></span> <span data-ttu-id="dc272-631">Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-631">The format will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
-| <span data-ttu-id="dc272-632">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-632">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-633">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-633">Accounts receivable</span></span>                                                                       |
-| <span data-ttu-id="dc272-634">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-634">**Status**</span></span>                         | <span data-ttu-id="dc272-635">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-635">Deprecated: A removal date has not been set for this feature.</span></span>                            |
-
-### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a><span data-ttu-id="dc272-636">Suomen maksutapahtumien tuominen kirjanpidon kirjauskansioon</span><span class="sxs-lookup"><span data-stu-id="dc272-636">Import of payment transactions into a general ledger journal for Finland</span></span>
-
-<span data-ttu-id="dc272-637">Suomen erityismuotoa käytetään kirjanpidon tapahtumien tuomiseksi kirjanpitoon.</span><span class="sxs-lookup"><span data-stu-id="dc272-637">A format that is specific to Finland is used to import accounting transactions into the general ledger.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-638">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-638">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-639">Tätä maksumuotoa ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-639">The payment format is no longer used.</span></span>                                                     |
-| <span data-ttu-id="dc272-640">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-640">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-641">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-641">No.</span></span> <span data-ttu-id="dc272-642">Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-642">The format will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
-| <span data-ttu-id="dc272-643">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-643">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-644">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-644">Accounts receivable</span></span>                                                                       |
-| <span data-ttu-id="dc272-645">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-645">**Status**</span></span>                         | <span data-ttu-id="dc272-646">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-646">Deprecated: A removal date has not been set for this feature.</span></span>                            |
-
-### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a><span data-ttu-id="dc272-647">Belgian Isabel-synkronoitu integrointi (CIS)</span><span class="sxs-lookup"><span data-stu-id="dc272-647">Integration with Isabel synchronized (CIS) for Belgium</span></span>
-
-<span data-ttu-id="dc272-648">Isabel on Euroopan sähköisen maksuliikenteen ja tiedonsiirron yleinen standardi Belgiassa.</span><span class="sxs-lookup"><span data-stu-id="dc272-648">Isabel is the framework for electronic banking in Europe and is a de-facto standard in Belgium.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-649">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-649">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-650">Integrointi Isabel-asiakasohjelmaan on lopetettu.</span><span class="sxs-lookup"><span data-stu-id="dc272-650">Integration with Isabel client has been discontinued.</span></span>   |
-| <span data-ttu-id="dc272-651">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-651">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-652">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-652">No.</span></span> <span data-ttu-id="dc272-653">Maksumuodot, joita ei voi enää käyttää, korvataan ISO20022-tilisiirron maksumuodolla Belgiassa.</span><span class="sxs-lookup"><span data-stu-id="dc272-653">The payment formats that are no longer used are replaced by ISO20022 Credit transfer payment format for Belgium.</span></span> |
-| <span data-ttu-id="dc272-654">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-654">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-655">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-655">Accounts payable</span></span>     |
-| <span data-ttu-id="dc272-656">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-656">**Status**</span></span>                         | <span data-ttu-id="dc272-657">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-657">Deprecated: A removal date has not been set for this feature.</span></span>    |
-
-### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a><span data-ttu-id="dc272-658">Espanjan tilikartan ja kirjanpitosääntöjen muutokset</span><span class="sxs-lookup"><span data-stu-id="dc272-658">Modifications in the chart of accounts and accounting rules for Spain</span></span>
-
-<span data-ttu-id="dc272-659">Tätä toimintoa käytetään Espanjan tilikartan ja kirjanpitosääntöjen muutoksiin.</span><span class="sxs-lookup"><span data-stu-id="dc272-659">This feature is used for changes in the chart of accounts and accounting rules in Spain.</span></span> <span data-ttu-id="dc272-660">Se yhdistää tilejä ja auttaa vanhan tilikartan muuttamisessa uudeksi tilikartaksi ja vertaa edellistä tilikautta uuteen tilikauteen, vaikka ne on kirjattu eri tilinumeroille.</span><span class="sxs-lookup"><span data-stu-id="dc272-660">It maps accounts to help transform the old chart of accounts into the new chart of accounts, and compares the previous fiscal year with the new fiscal year, even if they were posted to different account numbers.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-661">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-661">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-662">Rajoitettu käyttö</span><span class="sxs-lookup"><span data-stu-id="dc272-662">Limited usage</span></span>                                                  |
-| <span data-ttu-id="dc272-663">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-663">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-664">En</span><span class="sxs-lookup"><span data-stu-id="dc272-664">No</span></span>                                                             |
-| <span data-ttu-id="dc272-665">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-665">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-666">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="dc272-666">General ledger</span></span>                                                 |
-| <span data-ttu-id="dc272-667">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-667">**Status**</span></span>                         | <span data-ttu-id="dc272-668">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-668">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="pagamento-fornittori-vendor-payment-format"></a><span data-ttu-id="dc272-669">Toimittajan Pagamento Fornittori -maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-669">Pagamento Fornittori vendor payment format</span></span>
-
-<span data-ttu-id="dc272-670">Vanha Italian tilisiirron maksumuoto.</span><span class="sxs-lookup"><span data-stu-id="dc272-670">Legacy Italian payment format for credit transfers.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-671">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-671">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-672">Tätä maksumuotoa ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-672">The payment format is no longer used.</span></span>                          |
-| <span data-ttu-id="dc272-673">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-673">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-674">Kyllä, Italian ISO20022-tilisiirron maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-674">Yes, ISO20022 Credit transfer payment format for Italy</span></span>         |
-| <span data-ttu-id="dc272-675">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-675">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-676">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-676">Accounts payable</span></span>                                               |
-| <span data-ttu-id="dc272-677">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-677">**Status**</span></span>                         | <span data-ttu-id="dc272-678">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-678">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="payment-export-formats-for-estonia"></a><span data-ttu-id="dc272-679">Viron maksun vientimuodot</span><span class="sxs-lookup"><span data-stu-id="dc272-679">Payment export formats for Estonia</span></span>
-
-<span data-ttu-id="dc272-680">Pankin maksun viennissä käytetään Telehansa- ja Teleservice-muotoja.</span><span class="sxs-lookup"><span data-stu-id="dc272-680">The Telehansa and Teleservice formats are used for bank payment export.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-681">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-681">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-682">Maksumuotoja ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-682">The payment formats are no longer used.</span></span>                        |
-| <span data-ttu-id="dc272-683">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-683">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-684">Kyllä, Viron ISO20022-tilisiirron maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-684">Yes, ISO20022 Credit transfer payment format for Estonia</span></span>       |
-| <span data-ttu-id="dc272-685">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-685">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-686">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-686">Accounts payable</span></span>                                               |
-| <span data-ttu-id="dc272-687">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-687">**Status**</span></span>                         | <span data-ttu-id="dc272-688">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-688">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="payment-file-archive-for-norway"></a><span data-ttu-id="dc272-689">Norjan maksutiedostoarkisto</span><span class="sxs-lookup"><span data-stu-id="dc272-689">Payment file archive for Norway</span></span>
-
-<span data-ttu-id="dc272-690">Kun maksutiedostot on luotu, tiedostoarkistoon arkistoidaan kaikki luodut tiedostot, vaikka tiedostot on aiemmin kirjoitettu tai luettu.</span><span class="sxs-lookup"><span data-stu-id="dc272-690">When payment files are generated, the file archive automatically archives all files that are created, even files that were previously written or read.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-691">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-691">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-692">Korvattu toisella toiminnolla</span><span class="sxs-lookup"><span data-stu-id="dc272-692">Replaced by another feature</span></span>                                        |
-| <span data-ttu-id="dc272-693">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-693">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-694">Kyllä, sähköisen raportoinnin arkistoidut työt</span><span class="sxs-lookup"><span data-stu-id="dc272-694">Yes, Electronic reporting archived jobs</span></span>                            |
-| <span data-ttu-id="dc272-695">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-695">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-696">Ostoreskontra, myyntireskontra, organisaation hallinto</span><span class="sxs-lookup"><span data-stu-id="dc272-696">Accounts payable, Accounts receivable, Organization administration</span></span> |
-| <span data-ttu-id="dc272-697">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-697">**Status**</span></span>                         | <span data-ttu-id="dc272-698">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-698">Deprecated: A removal date has not been set for this feature.</span></span>     |
-
-### <a name="payment-import-formats-for-estonia"></a><span data-ttu-id="dc272-699">Viron maksun tuontimuodot</span><span class="sxs-lookup"><span data-stu-id="dc272-699">Payment import formats for Estonia</span></span>
-
-<span data-ttu-id="dc272-700">Pankin maksun tuonnissa käytetään Telehansa- ja TeleTeenus-muotoja.</span><span class="sxs-lookup"><span data-stu-id="dc272-700">The Telehansa and TeleTeenus formats are used for bank payment import.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-701">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-701">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-702">Maksumuotoja ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-702">The payment formats are no longer used.</span></span>                                                    |
-| <span data-ttu-id="dc272-703">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-703">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-704">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-704">No.</span></span> <span data-ttu-id="dc272-705">Muodot korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-705">The formats will be replaced by ISO 20022 statement import formats in future releases.</span></span> |
-| <span data-ttu-id="dc272-706">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-706">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-707">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-707">Accounts receivable</span></span>                                                                        |
-| <span data-ttu-id="dc272-708">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-708">**Status**</span></span>                         | <span data-ttu-id="dc272-709">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-709">Deprecated: A removal date has not been set for this feature.</span></span>                             |
-
-### <a name="payroll-information-in-human-resources"></a><span data-ttu-id="dc272-710">Henkilöstöhallinnon palkanlaskentatiedot</span><span class="sxs-lookup"><span data-stu-id="dc272-710">Payroll information in Human Resources</span></span>
-
-<span data-ttu-id="dc272-711">Henkilöstöhallinnon palkanlaskentatiedot</span><span class="sxs-lookup"><span data-stu-id="dc272-711">Human Resources Payroll information</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-712">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-712">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-713">Palkanlaskennan ja Henkilöstöhallinnan perussivut ovat korvanneet tämän ominaisuuden.</span><span class="sxs-lookup"><span data-stu-id="dc272-713">This functionality has been replaced by core Payroll and Human Resources pages.</span></span>  |
-| <span data-ttu-id="dc272-714">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-714">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-715">**Edut**, **Ansiot** ja muut liittyvät Yhdysvaltojen palkanlaskenta -kohdassa olleet sivut on määritetty uudelleen ja sisältyvät nyt henkilöstöhallinnon perusmäärityksiin. Tämä auttaa tukemaan ulkoista palkanlaskennan käsittelyä.</span><span class="sxs-lookup"><span data-stu-id="dc272-715">**Benefits**, **Earnings**, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing.</span></span> <span data-ttu-id="dc272-716">Toimintoa käytetään valitsemalla **Henkilöstöhallinta 1** \> **Palkanlaskenta**-määritysavain.</span><span class="sxs-lookup"><span data-stu-id="dc272-716">This functionality is accessed by using the **Human Resources 1** \> **Payroll** configuration key.</span></span> |
-| <span data-ttu-id="dc272-717">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-717">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-718">Henkilöstöhallinto, palkanlaskenta</span><span class="sxs-lookup"><span data-stu-id="dc272-718">Human Resources, Payroll</span></span>   |
-| <span data-ttu-id="dc272-719">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-719">**Status**</span></span>                         | <span data-ttu-id="dc272-720">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-720">Removed as of Dynamics 365 for Operations version 1611.</span></span>    |
-
-### <a name="performance-management-goal-workflow"></a><span data-ttu-id="dc272-721">Suorituskyvyn hallintatavoite -työnkulku</span><span class="sxs-lookup"><span data-stu-id="dc272-721">Performance management goal workflow</span></span>
-
-<span data-ttu-id="dc272-722">Suorituskyvyn hallinta sisältää tavoitteiden hallinnan ja integroinnin suorituskykyarvioiden kanssa.</span><span class="sxs-lookup"><span data-stu-id="dc272-722">Performance management includes goal management and integration with performance reviews.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-723">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-723">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-724">Suorituskyvyn hallinta on suunniteltu uudelleen ja tavoitesivujen lukumäärää vähennettiin prosessin yksinkertaistamiseksi.</span><span class="sxs-lookup"><span data-stu-id="dc272-724">Performance management was redesigned, and the number of goal pages was reduced to simplify the process.</span></span>                 |
-| <span data-ttu-id="dc272-725">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-725">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-726">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-726">No.</span></span> <span data-ttu-id="dc272-727">Tavoitteet näkyvät esimiehille esimiehen itsepalveluportaalin kautta, ja esimies voi muuttaa ja tarkastella niitä.</span><span class="sxs-lookup"><span data-stu-id="dc272-727">Goals are visible to managers through the Manager Self Service portal, and can be changed and viewed by the manager.</span></span> |
-| <span data-ttu-id="dc272-728">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-728">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-729">Henkilöstöresurssien hallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-729">Human capital management</span></span>       |
-| <span data-ttu-id="dc272-730">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-730">**Status**</span></span>                         | <span data-ttu-id="dc272-731">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-731">Removed as of Dynamics 365 for Operations version 1611.</span></span>    |
-
-### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a><span data-ttu-id="dc272-732">Ruotsin Postgirot- ja Postgirot Utland -maksumuodot</span><span class="sxs-lookup"><span data-stu-id="dc272-732">Postgirot and Postgirot Utland payment formats for Sweden</span></span>
-
-<span data-ttu-id="dc272-733">Ruotsin Postgirot- ja Postgirot Utland -maksumuodot.</span><span class="sxs-lookup"><span data-stu-id="dc272-733">Postgirot and Postgirot Utland payment formats for Sweden.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-734">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-734">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-735">Maksumuotoja ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-735">The payment formats are no longer used.</span></span>                        |
-| <span data-ttu-id="dc272-736">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-736">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-737">Kyllä, Ruotsin ISO20022-tilisiirron maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-737">Yes, ISO20022 Credit transfer payment format for Sweden</span></span>        |
-| <span data-ttu-id="dc272-738">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-738">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-739">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-739">Accounts payable</span></span>                                               |
-| <span data-ttu-id="dc272-740">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-740">**Status**</span></span>                         | <span data-ttu-id="dc272-741">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-741">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="radio-frequency-identifier"></a><span data-ttu-id="dc272-742">Radiotaajuinen etätunnistus</span><span class="sxs-lookup"><span data-stu-id="dc272-742">Radio frequency identifier</span></span>
-
-<span data-ttu-id="dc272-743">Radiotaajuinen etätunnistus (RFID) on tiedonkeräysmenetelmä, jossa käytetään tunnistetietojen tallentamiseen sähköisiä tunnisteita, ja tunnistetiedot luetaan ilman näköyhteyttä.</span><span class="sxs-lookup"><span data-stu-id="dc272-743">Radio Frequency Identification (RFID) is a data-collection technology that uses electronic tags to store identification data and a no-line-of-sight requirement reader to capture the identification data.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-744">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-744">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-745">Vähäinen käyttö ja rajoitetut toiminnot.</span><span class="sxs-lookup"><span data-stu-id="dc272-745">Low customer usage and a limited feature set.</span></span>   |
-| <span data-ttu-id="dc272-746">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-746">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-747">En</span><span class="sxs-lookup"><span data-stu-id="dc272-747">No</span></span>                                              |
-| <span data-ttu-id="dc272-748">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-748">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-749">Inventoinnin- ja varastonhallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-749">Inventory management</span></span>                            |
-| <span data-ttu-id="dc272-750">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-750">**Status**</span></span>                         | <span data-ttu-id="dc272-751">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-751">Removed as of Dynamics 365 for Operations 1611.</span></span> |
-
-### <a name="report-about-state-invoices-numbering-for-latvia"></a><span data-ttu-id="dc272-752">Latvian valtion määrittämän laskujen numeroinnin raportti</span><span class="sxs-lookup"><span data-stu-id="dc272-752">Report about state invoices numbering for Latvia</span></span>
-
-<span data-ttu-id="dc272-753">Latvian lainsäädäntö sisältää myyntilaskujen numerointia koskevia erityissääntöjä.</span><span class="sxs-lookup"><span data-stu-id="dc272-753">Latvian legislation provides specific rules about the numbering of sales invoices.</span></span> <span data-ttu-id="dc272-754">Toiminnon avulla voidaan määrittää erityiset numerot myyntilaskuille käyttäjän tai käyttäjäryhmän mukaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-754">The functionality lets you assign specific numbers to sales invoices, based on the user or user group.</span></span> <span data-ttu-id="dc272-755">Tämän jälkeen voit luoda raportin tai XML-tiedoston.</span><span class="sxs-lookup"><span data-stu-id="dc272-755">You can then generate a report or an XML file.</span></span> <span data-ttu-id="dc272-756">Voit myös tulostaa raportin käytetyistä laskunumeroista.</span><span class="sxs-lookup"><span data-stu-id="dc272-756">You can also print a report about invoice numbers that are used.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-757">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-757">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-758">Valtion määrittämää laskujen numerointia ei tarvitse enää ylläpitää.</span><span class="sxs-lookup"><span data-stu-id="dc272-758">The state invoice numbering no longer has to be maintained.</span></span> <span data-ttu-id="dc272-759">Käytettyjen laskunumeroiden raporttia ei enää vaadita.</span><span class="sxs-lookup"><span data-stu-id="dc272-759">The report about used invoice numbers is no longer required.</span></span> |
-| <span data-ttu-id="dc272-760">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-760">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-761">En</span><span class="sxs-lookup"><span data-stu-id="dc272-761">No</span></span>       |
-| <span data-ttu-id="dc272-762">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-762">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-763">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-763">Accounts receivable</span></span>    |
-| <span data-ttu-id="dc272-764">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-764">**Status**</span></span>                         | <span data-ttu-id="dc272-765">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-765">Deprecated: A removal date has not been set for this feature.</span></span>  |
-
-### <a name="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania"></a><span data-ttu-id="dc272-766">Liettuaa koskevat johtajan ja kirjanpitäjän nimien asetukset</span><span class="sxs-lookup"><span data-stu-id="dc272-766">Set up the names of the manager and general accountant of a company for Lithuania</span></span>
-
-<span data-ttu-id="dc272-767">Yrityksen johtajan ja kirjanpitäjän nimet voidaan määrittää yrityksen tietoihin ja käyttää paikallisten raporttien tulostuksessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-767">The names of the manager and the general accountant of a company can be specified in the company information and used in different local report printouts.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-768">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-768">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-769">Korvattu toisella toiminnolla</span><span class="sxs-lookup"><span data-stu-id="dc272-769">Replaced by another feature</span></span>                                     |
-| <span data-ttu-id="dc272-770">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-770">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-771">Kyllä, viranomaisten asetuksia käytetään samaan tarkoitukseen.</span><span class="sxs-lookup"><span data-stu-id="dc272-771">Yes, the setup of officials can be used for the same purpose.</span></span>   |
-| <span data-ttu-id="dc272-772">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-772">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-773">Ostoreskontra, myyntireskontra, maksuliikenteen hallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-773">Accounts payable, Accounts receivable, Cash and bank management</span></span> |
-| <span data-ttu-id="dc272-774">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-774">**Status**</span></span>                         | <span data-ttu-id="dc272-775">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-775">Deprecated: A removal date has not been set for this feature.</span></span>  |
-
-### <a name="shipping-carrier-interface"></a><span data-ttu-id="dc272-776">Rahdinkuljettajan liittymä</span><span class="sxs-lookup"><span data-stu-id="dc272-776">Shipping carrier interface</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-777">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-777">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-778">Sama toiminto</span><span class="sxs-lookup"><span data-stu-id="dc272-778">Duplicate functionality</span></span>   |
-| <span data-ttu-id="dc272-779">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-779">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-780">Kuljetuksenhallinta korvaa osittain</span><span class="sxs-lookup"><span data-stu-id="dc272-780">Partially replaced by Transportation management</span></span> |
-| <span data-ttu-id="dc272-781">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-781">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-782">Myynti ja markkinointi, inventoinnin- ja varastonhallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-782">Sales and marketing, Inventory management</span></span>  |
-| <span data-ttu-id="dc272-783">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-783">**Status**</span></span>                         | <span data-ttu-id="dc272-784">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-784">Removed as of Dynamics 365 for Operations version 1611.</span></span>  |
-
-### <a name="telepay-payment-formats-for-norway"></a><span data-ttu-id="dc272-785">Norjan Telepay-maksumuodot</span><span class="sxs-lookup"><span data-stu-id="dc272-785">Telepay payment formats for Norway</span></span>
-
-<span data-ttu-id="dc272-786">Telepay-maksumuodot sisältävät toimittajan maksun viennin (tilisiirrolla) ja asiakkaan maksukehotuksen (suoraveloitus).</span><span class="sxs-lookup"><span data-stu-id="dc272-786">Telepay payment formats include vendor payment export (credit transfer) and customer payment collection (direct debit).</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-787">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-787">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-788">Maksumuotoja ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-788">The payment formats are no longer used.</span></span>                                                        |
-| <span data-ttu-id="dc272-789">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-789">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-790">Kyllä, Norjan ISO20022-tilisiirron maksumuoto ja asiakkaan maksun AvtaleGiro-muoto</span><span class="sxs-lookup"><span data-stu-id="dc272-790">Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway</span></span> |
-| <span data-ttu-id="dc272-791">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-791">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-792">Myyntireskontra, ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-792">Accounts payable, Accounts receivable</span></span>                                                          |
-| <span data-ttu-id="dc272-793">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-793">**Status**</span></span>                         | <span data-ttu-id="dc272-794">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-794">Deprecated: A removal date has not been set for this feature.</span></span>                                 |
-
-### <a name="vendor-payment-export-formats-for-finland"></a><span data-ttu-id="dc272-795">Suomen toimittajan maksun vientimuodot</span><span class="sxs-lookup"><span data-stu-id="dc272-795">Vendor payment export formats for Finland</span></span>
-
-<span data-ttu-id="dc272-796">Kaksi eri muotoa maksujen vientiä varten käytettävissä Suomessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-796">Two formats for exporting payments are available for Finland.</span></span> <span data-ttu-id="dc272-797">LM02 (FI) käytetään kotimaan maksuille ja LUM2 (FI) ulkomaanmaksuille.</span><span class="sxs-lookup"><span data-stu-id="dc272-797">LM02 (FI) is used for domestic payments, and LUM2 (FI) is used for foreign payments.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-798">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-798">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-799">Maksumuotoja ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-799">The payment formats are no longer used.</span></span>                        |
-| <span data-ttu-id="dc272-800">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-800">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-801">Kyllä, Suomen ISO20022-tilisiirron maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-801">Yes, ISO20022 Credit transfer payment format for Finland</span></span>       |
-| <span data-ttu-id="dc272-802">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-802">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-803">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-803">Accounts payable</span></span>                                               |
-| <span data-ttu-id="dc272-804">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-804">**Status**</span></span>                         | <span data-ttu-id="dc272-805">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-805">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="warehouse-management-ii"></a><span data-ttu-id="dc272-806">Varastonhallinta II</span><span class="sxs-lookup"><span data-stu-id="dc272-806">Warehouse management II</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-807">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-807">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-808">**Inventoinnin- ja varastonhallinta** -moduuliin sisältynyt Varastonhallinta II -ratkaisu (WMS II) oli Microsoft Dynamics AX 2012 R3:ssa julkaistun **Varastonhallinta**-moduulin toiminnon kaksoiskappale.</span><span class="sxs-lookup"><span data-stu-id="dc272-808">The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.</span></span>                                                                         |
-| <span data-ttu-id="dc272-809">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-809">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-810">AX 2012 R3:ssa, Microsoft Dynamics AX 2012 R3 CU8:ssa ja Dynamics AX 2012 R3 CU9:ssa julkaistu **Varastonhallinta**-moduuli korvaa Varastonhallinta II:n ominaisuudet.</span><span class="sxs-lookup"><span data-stu-id="dc272-810">The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features.</span></span> <span data-ttu-id="dc272-811">Uudessa moduulissa on kehittyneemmät ominaisuudet ja joustavammat varaston hallintaprosessit kuin Varastonhallinta II:ssa.</span><span class="sxs-lookup"><span data-stu-id="dc272-811">The new module has more advanced features and more flexible warehouse management processes than Warehouse management II.</span></span> |
-| <span data-ttu-id="dc272-812">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-812">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-813">Varaston hallinta, myynti ja markkinointi, hankinta</span><span class="sxs-lookup"><span data-stu-id="dc272-813">Inventory management, Sales and marketing, Procurement and sourcing</span></span>   |
-| <span data-ttu-id="dc272-814">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-814">**Status**</span></span>                         | <span data-ttu-id="dc272-815">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-815">Removed as of Dynamics 365 for Operations version 1611.</span></span>    |
-
-### <a name="worker-reminders-in-human-resources"></a><span data-ttu-id="dc272-816">Henkilöstöhallinnon työntekijän muistutukset</span><span class="sxs-lookup"><span data-stu-id="dc272-816">Worker reminders in Human Resources</span></span>
-
-<span data-ttu-id="dc272-817">Henkilöstöhallinnon palkanlaskentatiedot</span><span class="sxs-lookup"><span data-stu-id="dc272-817">Human Resources Payroll information</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-818">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-818">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-819">Vähäinen käyttö</span><span class="sxs-lookup"><span data-stu-id="dc272-819">Low usage</span></span>                                                           |
-| <span data-ttu-id="dc272-820">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-820">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-821">En</span><span class="sxs-lookup"><span data-stu-id="dc272-821">No</span></span>                                                                  |
-| <span data-ttu-id="dc272-822">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-822">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-823">Henkilöstöhallinto</span><span class="sxs-lookup"><span data-stu-id="dc272-823">Human resources</span></span>                                                     |
-| <span data-ttu-id="dc272-824">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-824">**Status**</span></span>                         | <span data-ttu-id="dc272-825">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen</span><span class="sxs-lookup"><span data-stu-id="dc272-825">Removed as of Dynamics 365 for Operations version 1611</span></span> |
-
-### <a name="workflow-for-creating-goals"></a><span data-ttu-id="dc272-826">Tavoitteiden luomisen työnkulku</span><span class="sxs-lookup"><span data-stu-id="dc272-826">Workflow for creating goals</span></span>
-
-<span data-ttu-id="dc272-827">Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista, joita oli käytettävissä suorituskyvyn hallintaprosessin koordinoinnin apuna.</span><span class="sxs-lookup"><span data-stu-id="dc272-827">A workflow for managing the creation of employee goals is one of several workflows that were available to help coordinate the performance management process.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-828">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-828">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-829">Suorituksen hallinta on suunniteltu kokonaan uudelleen Microsoft Dynamics 365 for Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-829">Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.</span></span>     |
-| <span data-ttu-id="dc272-830">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-830">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-831">Uudelleen suunnitellulla suorituskyvyn hallintatoiminnolla voidaan seurata tarkemmin tavoitteiden sisältöä ja mittauksia, joiden avulla voidaan seurata etenemistä, sekä tukidokumentaation liittämistä.</span><span class="sxs-lookup"><span data-stu-id="dc272-831">The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation.</span></span> <span data-ttu-id="dc272-832">Tavoitteet voidaan tallentaa malleina ja käyttää uudelleen.</span><span class="sxs-lookup"><span data-stu-id="dc272-832">Goals can be stored as templates and then reused.</span></span> <span data-ttu-id="dc272-833">Tämän toiminnon avulla voit määrittää lisätavoitteita työntekijöille entistä nopeammin.</span><span class="sxs-lookup"><span data-stu-id="dc272-833">This feature can help you set up additional goals for your employees more quickly.</span></span> |
-| <span data-ttu-id="dc272-834">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-834">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-835">Henkilöstöresurssien hallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-835">Human capital management</span></span>                 |
-| <span data-ttu-id="dc272-836">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-836">**Status**</span></span>                         | <span data-ttu-id="dc272-837">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-837">Removed as of Dynamics 365 for Operations version 1611.</span></span> |
-
-## <a name="dynamics-ax-70"></a><span data-ttu-id="dc272-838">Dynamics AX 7.0</span><span class="sxs-lookup"><span data-stu-id="dc272-838">Dynamics AX 7.0</span></span> 
-
-
-### <a name="ability-to-cancel-changes-to-a-vendor-invoice"></a><span data-ttu-id="dc272-839">Mahdollisuus peruuttaa toimittajan laskun muutokset</span><span class="sxs-lookup"><span data-stu-id="dc272-839">Ability to cancel changes to a vendor invoice</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-840">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-840">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-841">Suorituskyvyn parannus</span><span class="sxs-lookup"><span data-stu-id="dc272-841">Performance enhancement</span></span>        |
-| <span data-ttu-id="dc272-842">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-842">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-843">En</span><span class="sxs-lookup"><span data-stu-id="dc272-843">No</span></span>                             |
-| <span data-ttu-id="dc272-844">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-844">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-845">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-845">Accounts payable</span></span>               |
-| <span data-ttu-id="dc272-846">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-846">**Status**</span></span>                         | <span data-ttu-id="dc272-847">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-847">Removed as of Dynamics AX 7.0.</span></span> |
-
-### <a name="aif-axd-and-axbc-integrations"></a><span data-ttu-id="dc272-848">AIF-, AxD- ja AxBC-integraatiot</span><span class="sxs-lookup"><span data-stu-id="dc272-848">AIF, AxD, and AxBC integrations</span></span>
-
-<span data-ttu-id="dc272-849">Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana.</span><span class="sxs-lookup"><span data-stu-id="dc272-849">In Application Integration Framework (AIF), data can be exchanged with external systems through business logic that is exposed as services.</span></span> <span data-ttu-id="dc272-850">Dynamics AX sisältää asiakirjoihin ja .NET Business Connectoriin (AxBC) perustuvia palveluja.</span><span class="sxs-lookup"><span data-stu-id="dc272-850">Dynamics AX includes services that are based on documents and .NET Business Connector (AxBC).</span></span> <span data-ttu-id="dc272-851">Asiakirja luodaan XML-muotoisena.</span><span class="sxs-lookup"><span data-stu-id="dc272-851">A document is created by using XML.</span></span> <span data-ttu-id="dc272-852">XML sisältää otsikkotiedot, joka lisäämällä luodaan *sanoma*, joka siirretään Dynamics AX:ään ja siitä pois.</span><span class="sxs-lookup"><span data-stu-id="dc272-852">The XML includes header information that is added to create a *message* that can be transferred into or out of Dynamics AX.</span></span> <span data-ttu-id="dc272-853">Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset.</span><span class="sxs-lookup"><span data-stu-id="dc272-853">Examples of documents include sales orders and purchase orders.</span></span> <span data-ttu-id="dc272-854">Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana.</span><span class="sxs-lookup"><span data-stu-id="dc272-854">However, almost any entity, such as a customer, can be represented by a document.</span></span> <span data-ttu-id="dc272-855">Asiakirjoihin perustuvat palvelut käyttävät **Axd\<asiakirja\>**-luokkia.</span><span class="sxs-lookup"><span data-stu-id="dc272-855">Services that are based on documents use the **Axd \<Document\>** classes.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-856">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-856">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-857">AIF:n ja AxDs:n arkkitehtuuria ei voi skaalata pilvipalveluun.</span><span class="sxs-lookup"><span data-stu-id="dc272-857">The architecture of AIF and AxDs could not be scaled to a cloud service.</span></span> <span data-ttu-id="dc272-858">Joukkotuontiin liittyi suorituskykyongelmia.</span><span class="sxs-lookup"><span data-stu-id="dc272-858">There were performance issues around bulk import.</span></span>                                        |
-| <span data-ttu-id="dc272-859">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-859">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-860">Tämä ominaisuus on korvattu tietojen tuonti- ja vientiympäristöllä, joka tukee toistuvaa joukkotuontia ja -vientiä.</span><span class="sxs-lookup"><span data-stu-id="dc272-860">This feature is replaced by the Data Import/Export framework, which supports recurring bulk import/export.</span></span> <span data-ttu-id="dc272-861">AxBC:ssä on suositeltavaa käyttää varsinaisia tauluja.</span><span class="sxs-lookup"><span data-stu-id="dc272-861">For AxBC, we recommend that you use the actual tables.</span></span> |
-| <span data-ttu-id="dc272-862">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-862">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-863">AxDs, AxBCs ja AIF</span><span class="sxs-lookup"><span data-stu-id="dc272-863">AxDs, AxBCs, and AIF</span></span>   |
-| <span data-ttu-id="dc272-864">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-864">**Status**</span></span>                         | <span data-ttu-id="dc272-865">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-865">Removed as of Dynamics AX 7.0.</span></span>   |
-
-### <a name="billing-code-rate-scripts"></a><span data-ttu-id="dc272-866">Laskutuskoodin hinnan komentosarjat</span><span class="sxs-lookup"><span data-stu-id="dc272-866">Billing code rate scripts</span></span>
-
-<span data-ttu-id="dc272-867">Laskutuksen komentosarjoja käytetään laskutuskoodin laskutushintojen laskemisessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-867">Billing scripts were used to calculate billing rates for billing codes.</span></span> <span data-ttu-id="dc272-868">Nämä komentosarjat vaaditaan C Sharp- ja Visual Basic -ohjelmointikielen mukautetussa kehityksessä.</span><span class="sxs-lookup"><span data-stu-id="dc272-868">This scripts required custom development in the C Sharp or Visual Basic programming language.</span></span> <span data-ttu-id="dc272-869">Dynamics AX:n nykyisessä versiossa **laskutuskoodin hinnan komentosarjoja** ei tueta.</span><span class="sxs-lookup"><span data-stu-id="dc272-869">In the current version of Dynamics AX, the **billing code rate scripts** are not supported.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-870">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-870">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-871">Mukautettujen C Sharp- ja Visual Basic -komentosarjojen tukea ei lisätty Dynamics AX 7.0 -versioon.</span><span class="sxs-lookup"><span data-stu-id="dc272-871">The support for the custom C Sharp or Visual Basic scripts was not added in Dynamics AX 7.0.</span></span> |
-| <span data-ttu-id="dc272-872">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-872">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-873">Ei</span><span class="sxs-lookup"><span data-stu-id="dc272-873">No</span></span>                                                                                      |
-| <span data-ttu-id="dc272-874">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-874">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-875">Julkinen sektori, myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-875">Public sector, Accounts receivable</span></span>                                    |
-| <span data-ttu-id="dc272-876">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-876">**Status**</span></span>                         | <span data-ttu-id="dc272-877">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-877">Removed as of Dynamics AX 7.0.</span></span>                                                          |
-
-### <a name="boms-without-bom-versions"></a><span data-ttu-id="dc272-878">Tuoterakenteet ilman tuoterakenneversioita</span><span class="sxs-lookup"><span data-stu-id="dc272-878">BOMs without BOM versions</span></span>
-
-<span data-ttu-id="dc272-879">Kun **Tuoterakenneversiot**-määritysavain poistettiin käytöstä, tuoterakenneversiot piilotettiin kaikissa lomakkeissa ja järjestelmä pakotti 1:1-suhteen vapautettujen tuotteiden ja tuoterakenteiden välille.</span><span class="sxs-lookup"><span data-stu-id="dc272-879">When the **BOM versions** configuration key was disabled, bill of materials (BOM) versions were hidden in all forms, and the system forced a 1:1 relationship between released products and BOMs.</span></span> <span data-ttu-id="dc272-880">**Tuoterakenneversiot**-määritysavainta ei voi poistaa Dynamics AX:n nykyisessä versiossa.</span><span class="sxs-lookup"><span data-stu-id="dc272-880">In the current version of Dynamics AX, the **BOM versions** configuration key can't be disabled.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-881">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-881">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-882">Tuoterakenneversioiden ohjaamista määritysavaimella ei voi skaalata pilviympäristöön.</span><span class="sxs-lookup"><span data-stu-id="dc272-882">Using a configuration key to control BOM versions doesn't scale in a cloud environment.</span></span> |
-| <span data-ttu-id="dc272-883">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-883">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-884">En</span><span class="sxs-lookup"><span data-stu-id="dc272-884">No</span></span>                                                                                      |
-| <span data-ttu-id="dc272-885">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-885">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-886">Tuotetietojen hallinta, inventoinnin- ja varastonhallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-886">Product information management, Inventory management</span></span>                                    |
-| <span data-ttu-id="dc272-887">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-887">**Status**</span></span>                         | <span data-ttu-id="dc272-888">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-888">Removed as of Dynamics AX 7.0.</span></span>                                                          |
-
-### <a name="brazilian-bordero"></a><span data-ttu-id="dc272-889">Brasilian Bordero</span><span class="sxs-lookup"><span data-stu-id="dc272-889">Brazilian Bordero</span></span>
-
-<span data-ttu-id="dc272-890">Erityismaksutapa Brasilian yrityksille</span><span class="sxs-lookup"><span data-stu-id="dc272-890">Specific method of payment for Brazilian companies</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-891">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-891">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-892">Brasilian Bordero-maksutavan tuki on lopetettu Brasilian lokalisointiversiosta</span><span class="sxs-lookup"><span data-stu-id="dc272-892">Support for the Brazilian Bordero method of payment has been discontinued from Brazilian localization</span></span> |
-| <span data-ttu-id="dc272-893">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-893">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-894">En</span><span class="sxs-lookup"><span data-stu-id="dc272-894">No</span></span>   |
-| <span data-ttu-id="dc272-895">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-895">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-896">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-896">Accounts payable</span></span>   |
-| <span data-ttu-id="dc272-897">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-897">**Status**</span></span>                         | <span data-ttu-id="dc272-898">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-898">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="brazilian-sintegra-statement"></a><span data-ttu-id="dc272-899">Brasilian Sintegra-raportti</span><span class="sxs-lookup"><span data-stu-id="dc272-899">Brazilian Sintegra statement</span></span>
-
-<span data-ttu-id="dc272-900">Liittovaltion veroraportti ICMS-verolle</span><span class="sxs-lookup"><span data-stu-id="dc272-900">Federal tax statement for ICMS tax</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-901">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-901">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-902">Tämä raportti ei ole enää käytettävissä joissain Brasilian osavaltioissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-902">This statement is no longer applicable in some Brazilian states.</span></span> |
-| <span data-ttu-id="dc272-903">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-903">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-904">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-904">No.</span></span> <span data-ttu-id="dc272-905">Käyttäjät voivat käyttää yleistä sähköistä raportointityökalua raportin määrittämiseen, jos se on pakollinen erityistilanteissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-905">Users can use Generic Electronic reporting tool to configure the statement if required under specific situations.</span></span> |
-| <span data-ttu-id="dc272-906">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-906">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-907">Verokirjat</span><span class="sxs-lookup"><span data-stu-id="dc272-907">Fiscal books</span></span>    |
-| <span data-ttu-id="dc272-908">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-908">**Status**</span></span>                         | <span data-ttu-id="dc272-909">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-909">Deprecated: A removal date has not been set for this feature.</span></span>   |
-
-### <a name="brazilian-scan-contingency-mode-for-nf-e"></a><span data-ttu-id="dc272-910">Brasilian NF-e:n SCAN-varatila</span><span class="sxs-lookup"><span data-stu-id="dc272-910">Brazilian SCAN contingency mode for NF-e</span></span>
-
-<span data-ttu-id="dc272-911">(SCAN) varaympäristöä käytetään Nota Fiscal eletrônica (NF e) -tilan luontiin, vientiin ja tuontiin, kun Secretaria da Fazenda (SEFAZ) -ympäristö ei ole käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="dc272-911">(SCAN) contingency environment is used to generate, export, and import the status of a Nota Fiscal eletrônica (NF-e) when the environment of Secretaria da Fazenda (SEFAZ) is not available.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-912">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-912">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-913">Tämä varamenetelmä ei ole enää käytettävissä kaikissa Brasilian osavaltioissa</span><span class="sxs-lookup"><span data-stu-id="dc272-913">This method of contingency is no longer applicable in all Brazilian states</span></span> |
-| <span data-ttu-id="dc272-914">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-914">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-915">En</span><span class="sxs-lookup"><span data-stu-id="dc272-915">No</span></span>                                                                          |
-| <span data-ttu-id="dc272-916">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-916">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-917">Myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-917">Accounts receivable</span></span>                                                         |
-| <span data-ttu-id="dc272-918">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-918">**Status**</span></span>                         | <span data-ttu-id="dc272-919">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-919">Deprecated: A removal date has not been set for this feature.</span></span>              |
-
-### <a name="business-analyzer"></a><span data-ttu-id="dc272-920">Business Analyzer</span><span class="sxs-lookup"><span data-stu-id="dc272-920">Business Analyzer</span></span>
-
-<span data-ttu-id="dc272-921">Käyttäjät voivat tarkastella tällä mobiilisovelluksella tärkeitä liiketoiminnan mittareita.</span><span class="sxs-lookup"><span data-stu-id="dc272-921">This mobile application let users review key business metrics.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-922">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-922">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-923">Toinen ominaisuus on korvannut tämän toiminnon.</span><span class="sxs-lookup"><span data-stu-id="dc272-923">This functionality has been replaced by another feature.</span></span>   |
-| <span data-ttu-id="dc272-924">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-924">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-925">Microsoft Power BI:n taloudellisen suorituskyvyn seurannan sisältöpaketti sisältää tärkeät taloudelliset mittarit, jotka sisältyivät aiemmin Business Analyzeriin.</span><span class="sxs-lookup"><span data-stu-id="dc272-925">The Monitor financial performance content pack for Microsoft Power BI will include key financial metrics that were previously available in Business Analyzer.</span></span> |
-| <span data-ttu-id="dc272-926">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-926">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-927">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="dc272-927">General ledger</span></span>      |
-| <span data-ttu-id="dc272-928">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-928">**Status**</span></span>                         | <span data-ttu-id="dc272-929">Vanhentunut: Business Analyzerin käyttö on vanhentunut.</span><span class="sxs-lookup"><span data-stu-id="dc272-929">Deprecated: The use of Business Analyzer has been deprecated.</span></span>    |
-
-### <a name="business-statistics"></a><span data-ttu-id="dc272-930">Liiketoimintatilastot</span><span class="sxs-lookup"><span data-stu-id="dc272-930">Business statistics</span></span>
-
-<span data-ttu-id="dc272-931">Niiden liiketoiminnan tilastotietokyselyiden asetukset, jotka voivat auttaa organisaation suorituskyvyn analysoinnissa</span><span class="sxs-lookup"><span data-stu-id="dc272-931">The setup of business statistics inquiries that can help you analyze the performance of the organization</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-932">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-932">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-933">Vanha tapa käsitellä liiketoiminnan tietoja (BI), vähäinen käyttö ja rajalliset ominaisuudet</span><span class="sxs-lookup"><span data-stu-id="dc272-933">Legacy approach to business intelligence (BI), low customer usage, and a limited feature set</span></span> |
-| <span data-ttu-id="dc272-934">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-934">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-935">Uudet BI-ratkaisut Dynamics AX:n nykyisessä versiossa</span><span class="sxs-lookup"><span data-stu-id="dc272-935">New BI solutions for the current version of Dynamics AX</span></span>                                      |
-| <span data-ttu-id="dc272-936">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-936">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-937">Hankinta, ostoreskontra, myynti ja markkinointi, myyntireskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-937">Procurement and sourcing, Accounts payable, Sales and marketing, Accounts receivable</span></span>         |
-| <span data-ttu-id="dc272-938">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-938">**Status**</span></span>                         | <span data-ttu-id="dc272-939">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-939">Removed as of Dynamics AX 7.0.</span></span>                                                               |
-
-### <a name="change-document-date-function-in-invoice-approval-journal"></a><span data-ttu-id="dc272-940">Hyväksyttyjen laskujen kirjauskansion tiedoston päivämäärän muutostoiminto</span><span class="sxs-lookup"><span data-stu-id="dc272-940">Change document date function in Invoice approval journal</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-941">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-941">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-942">Vähäinen käyttö</span><span class="sxs-lookup"><span data-stu-id="dc272-942">Low usage</span></span>                                                               |
-| <span data-ttu-id="dc272-943">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-943">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-944">Kyllä.</span><span class="sxs-lookup"><span data-stu-id="dc272-944">Yes.</span></span> <span data-ttu-id="dc272-945">Kirjatun toimittajatapahtuman tiedoston päivämäärää voidaan muuttaa.</span><span class="sxs-lookup"><span data-stu-id="dc272-945">The document date on the posted vendor transaction can be changed.</span></span> |
-| <span data-ttu-id="dc272-946">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-946">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-947">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-947">Accounts payable</span></span>                                                        |
-| <span data-ttu-id="dc272-948">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-948">**Status**</span></span>                         | <span data-ttu-id="dc272-949">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-949">Removed as of Dynamics AX 7.0.</span></span>                                          |
-
-### <a name="clieop03-payment-format-for-the-netherlands"></a><span data-ttu-id="dc272-950">Alankomaiden ClieOp03-maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-950">ClieOp03 payment format for the Netherlands</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-951">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-951">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-952">Muotoa ei enää käytetä Alankomaissa, sillä SEPA-toiminto on korvannut sen.</span><span class="sxs-lookup"><span data-stu-id="dc272-952">The format is no longer applicable in the Netherlands, because it has been replaced by SEPA functionality.</span></span> |
-| <span data-ttu-id="dc272-953">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-953">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-954">SEPA-maksujen vienti</span><span class="sxs-lookup"><span data-stu-id="dc272-954">SEPA payments export</span></span>  |
-| <span data-ttu-id="dc272-955">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-955">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-956">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-956">All modules</span></span>     |
-| <span data-ttu-id="dc272-957">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-957">**Status**</span></span>                         | <span data-ttu-id="dc272-958">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-958">Deprecated: A removal date has not been set for this feature.</span></span>   |
-
-### <a name="compliance-center"></a><span data-ttu-id="dc272-959">Compliance Center</span><span class="sxs-lookup"><span data-stu-id="dc272-959">Compliance Center</span></span>
-
-<span data-ttu-id="dc272-960">Compliance Center oli Sarbanes-Oxley-lakiin liittyvien vaatimustenmukaisuusaloitteiden asiakirjavaatimusten hallintaan tarkoitettu yritysportaalisivusto.</span><span class="sxs-lookup"><span data-stu-id="dc272-960">The Compliance Center was an Enterprise Portal site for managing the documentation requirements for compliance initiatives that are related to the Sarbanes-Oxley law.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-961">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-961">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-962">Toimintoa ei käytetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-962">Lack of customer usage.</span></span> <span data-ttu-id="dc272-963">Microsoft SharePoint sisältää Compliance Centerin käytössä olleet ominaisuudet.</span><span class="sxs-lookup"><span data-stu-id="dc272-963">Microsoft SharePoint includes the same capability that was available in the Compliance Center.</span></span> |
-| <span data-ttu-id="dc272-964">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-964">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-965">En</span><span class="sxs-lookup"><span data-stu-id="dc272-965">No</span></span>   |
-| <span data-ttu-id="dc272-966">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-966">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-967">Yhteensopivuus ja sisäinen valvonta</span><span class="sxs-lookup"><span data-stu-id="dc272-967">Compliance and internal controls</span></span>  |
-| <span data-ttu-id="dc272-968">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-968">**Status**</span></span>                         | <span data-ttu-id="dc272-969">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-969">Removed as of Dynamics AX 7.0.</span></span>    |
-
-### <a name="connector-for-microsoft-dynamics"></a><span data-ttu-id="dc272-970">Microsoft Dynamicsin yhdistin</span><span class="sxs-lookup"><span data-stu-id="dc272-970">Connector for Microsoft Dynamics</span></span>
-
-<span data-ttu-id="dc272-971">Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Microsoft Dynamics ERP -sovelluksiin.</span><span class="sxs-lookup"><span data-stu-id="dc272-971">This tool was used to integrate key data from Microsoft Dynamics CRM to Microsoft Dynamics ERP applications.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-972">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-972">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-973">Toinen ominaisuus on korvannut tämän toiminnon.</span><span class="sxs-lookup"><span data-stu-id="dc272-973">This functionality has been replaced by another feature.</span></span> |
-| <span data-ttu-id="dc272-974">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-974">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-975">Common data service</span><span class="sxs-lookup"><span data-stu-id="dc272-975">Common data service</span></span>                                      |
-| <span data-ttu-id="dc272-976">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-976">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-977">Microsoft Dynamicsin yhdistin</span><span class="sxs-lookup"><span data-stu-id="dc272-977">Connector for Microsoft Dynamics</span></span>                         |
-| <span data-ttu-id="dc272-978">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-978">**Status**</span></span>                         | <span data-ttu-id="dc272-979">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-979">Removed as of Dynamics AX 7.0.</span></span>                           |
-
-### <a name="container-unit-and-multi-dimension-on-hand"></a><span data-ttu-id="dc272-980">Säilöyksikkö ja monidimensioinen varasto</span><span class="sxs-lookup"><span data-stu-id="dc272-980">Container unit and multi dimension on-hand</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-981">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-981">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-982">Sama toiminto</span><span class="sxs-lookup"><span data-stu-id="dc272-982">Duplicate functionality</span></span> |
-| <span data-ttu-id="dc272-983">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-983">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-984">Kyllä.</span><span class="sxs-lookup"><span data-stu-id="dc272-984">Yes.</span></span> <span data-ttu-id="dc272-985">AX 2012:n jälkeen tämä toiminto on korvattu konsolidoidulla erätilaustoiminnoilla.</span><span class="sxs-lookup"><span data-stu-id="dc272-985">Since AX 2012, this functionality has been replaced by the consolidated batch orders feature set.</span></span> <span data-ttu-id="dc272-986">Tämä ominaisuusjoukko sisältää konsolidoidun varastonäkymän.</span><span class="sxs-lookup"><span data-stu-id="dc272-986">This feature set includes the consolidated on-hand view.</span></span> |
-| <span data-ttu-id="dc272-987">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-987">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-988">Tuotetietojen hallinta, tuotannonhallinta, varastonhallinta, myynti ja markkinointi</span><span class="sxs-lookup"><span data-stu-id="dc272-988">Product information management, Production control, Inventory management, Sales and marketing</span></span>  |
-| <span data-ttu-id="dc272-989">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-989">**Status**</span></span>                         | <span data-ttu-id="dc272-990">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-990">Removed as of Dynamics AX 7.0.</span></span> |
-
-### <a name="cue-group-metadata"></a><span data-ttu-id="dc272-991">Pinoryhmän metatiedot</span><span class="sxs-lookup"><span data-stu-id="dc272-991">Cue group metadata</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-992">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-992">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-993">Pinoryhmiä käytettiin näyttämään vähintään yksi pino tietoruutualueella.</span><span class="sxs-lookup"><span data-stu-id="dc272-993">Cue groups were used to display one or more Cues in the FactBox area.</span></span> <span data-ttu-id="dc272-994">Toiminto oli rajallinen ja siihen liittyi suorituskykyongelmia, koska tietueen muuttuminen päälomakkeessa loi jokaiselle pinolle yhden kyselyn pinoryhmässä.</span><span class="sxs-lookup"><span data-stu-id="dc272-994">There was limited uptake, and there were also performance concerns, because a record change in a parent form caused one query per Cue in the Cue group.</span></span> |
-| <span data-ttu-id="dc272-995">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-995">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-996">En</span><span class="sxs-lookup"><span data-stu-id="dc272-996">No</span></span>      |
-| <span data-ttu-id="dc272-997">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-997">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-998">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-998">All modules</span></span>    |
-| <span data-ttu-id="dc272-999">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-999">**Status**</span></span>                         | <span data-ttu-id="dc272-1000">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1000">Removed as of Dynamics AX 7.0.</span></span>  |
-
-### <a name="cue-metadata"></a><span data-ttu-id="dc272-1001">Pinon metatiedot</span><span class="sxs-lookup"><span data-stu-id="dc272-1001">Cue metadata</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1002">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1002">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1003">Pinon metatiedot rajoittuivat määrä- tai summatietoihin.</span><span class="sxs-lookup"><span data-stu-id="dc272-1003">Cue metadata was limited to count or sum information.</span></span>    |
-| <span data-ttu-id="dc272-1004">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1004">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1005">Käyttöönotetut ruudun metatiedot mahdollistavat joustavamman mallinnuksen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1005">Tile metadata was introduced to provide more flexibility for modeling.</span></span> <span data-ttu-id="dc272-1006">Voit esimerkiksi mallintaa nykyiset määrät, siirtymisen ja suorituskykyilmaisimet (KPI:t).</span><span class="sxs-lookup"><span data-stu-id="dc272-1006">For example, you can model current counts, navigation, and key performance indicators (KPIs).</span></span> <span data-ttu-id="dc272-1007">Määräruudun metatiedot korvaavat suoraan pinon metatiedot.</span><span class="sxs-lookup"><span data-stu-id="dc272-1007">Count tile metadata is the direct replacement of the Cue metadata.</span></span> |
-| <span data-ttu-id="dc272-1008">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1008">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1009">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1009">All modules</span></span>           |
-| <span data-ttu-id="dc272-1010">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1010">**Status**</span></span>                         | <span data-ttu-id="dc272-1011">Poistettu versiosta Dynamics AX 7.0 alkaen</span><span class="sxs-lookup"><span data-stu-id="dc272-1011">Removed as of Dynamics AX 7.0</span></span>      |
-
-### <a name="danish-check-format"></a><span data-ttu-id="dc272-1012">Tanskalainen sekkilomake</span><span class="sxs-lookup"><span data-stu-id="dc272-1012">Danish check format</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1013">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1013">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1014">Tanskan sekkimuodon tuki on lopetettu ja raportti on poistettu tanskalaisesta lokalisoinnista.</span><span class="sxs-lookup"><span data-stu-id="dc272-1014">Support for the Danish check format layout has been discontinued, and the report has been removed from DK localization.</span></span> |
-| <span data-ttu-id="dc272-1015">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1015">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1016">En</span><span class="sxs-lookup"><span data-stu-id="dc272-1016">No</span></span>    |
-| <span data-ttu-id="dc272-1017">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1017">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1018">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1018">All modules</span></span>    |
-| <span data-ttu-id="dc272-1019">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1019">**Status**</span></span>                         | <span data-ttu-id="dc272-1020">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1020">Deprecated: A removal date has not been set for this feature.</span></span>  |
-
-### <a name="data-partitions"></a><span data-ttu-id="dc272-1021">Tieto-osiot</span><span class="sxs-lookup"><span data-stu-id="dc272-1021">Data partitions</span></span>
-
-<span data-ttu-id="dc272-1022">Tieto-osiot erottavat Microsoft Dynamics AX:n tietokannan tiedot loogisesti.</span><span class="sxs-lookup"><span data-stu-id="dc272-1022">Data partitions provide a logical separation of data in the Microsoft Dynamics AX database.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1023">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1023">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1024">Tieto-osiot otettiin käyttöön Microsoft Dynamics AX 2012 R2:ssa tietojen eristämistä varten.</span><span class="sxs-lookup"><span data-stu-id="dc272-1024">Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation.</span></span> <span data-ttu-id="dc272-1025">Yleisessä skenaariossa yrityksellä on tytäryhtiöitä mutta tytäryhtiön tiedot eivät saisi olla toisen tytäryhtiön nähtävissä, vaikka kumpikin tytäryhtiö on saman IT-osaston alaisuudessa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1025">In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department.</span></span> <span data-ttu-id="dc272-1026">Ohjelmassa oli kuitenkin otettava käyttöön ylimääräisiä komentosarjoja ja hallintakustannuksia, jotta uusia osioita voitaisiin luoda, tiedot voitaisiin lisätä ja osiotiedot voitaisiin varmuuskopioida.</span><span class="sxs-lookup"><span data-stu-id="dc272-1026">However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data.</span></span> <span data-ttu-id="dc272-1027">Pilvipalvelussa, jossa meillä on käyttöympäristövuokrattuja (PaaS-palvelu) tietokantapalveluja (Microsoft Azuren SQL-tietokanta), tietokantaa on tehokkaampaa käyttää erityssäilönä kuin tehdä eristys ohjelmassa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1027">In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program.</span></span> <span data-ttu-id="dc272-1028">Riippumatta siitä, tarvitaanko tietojen osiointia tytäryhtiöitä tai useita vuokraajia varten tai koon vuoksi, skenaariot voidaan mielestämme käsitellä paremmin useissa Finance and Operations -esiintymissä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1028">Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple instances of Finance and Operations.</span></span> |
-| <span data-ttu-id="dc272-1029">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1029">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1030">Tieto-osioita käyttävien asiakkaiden on käytettävä useita Finance and Operations -esiintymiä, jos tietokantatasoiden erottaminen on tärkeää.</span><span class="sxs-lookup"><span data-stu-id="dc272-1030">Customers using data partitions must use multiple instances of Finance and Operations if database level separation is a critical issue.</span></span>    |
-| <span data-ttu-id="dc272-1031">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1031">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1032">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1032">All modules</span></span>  |
-| <span data-ttu-id="dc272-1033">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1033">**Status**</span></span>                         | <span data-ttu-id="dc272-1034">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1034">Removed as of Dynamics AX 7.0.</span></span>  |
-
-
-### <a name="database-and-file-share-storage-for-attachments"></a><span data-ttu-id="dc272-1035">Liitteiden tallennus tietokantaa ja jaettuun tiedostoresurssiin</span><span class="sxs-lookup"><span data-stu-id="dc272-1035">Database and file share storage for attachments</span></span>
-
-<span data-ttu-id="dc272-1036">Microsoft Dynamics AX 2012:ssa liitteet voitiin tallentaa tietokantaan ja jaettuihin tiedostoresursseihin.</span><span class="sxs-lookup"><span data-stu-id="dc272-1036">Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares.</span></span> <span data-ttu-id="dc272-1037">Kumpaakaan asetusta ei tueta enää.</span><span class="sxs-lookup"><span data-stu-id="dc272-1037">Both of those options are no longer supported.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1038">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1038">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1039">Tallennusta jaettuna tiedostoresurssina ei enää tueta, koska pilvipalveluympäristöt eivät voi viestiä paikallisten jaettujen tiedostoresurssien kanssa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1039">Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares.</span></span> <span data-ttu-id="dc272-1040">Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1040">Database storage has been deprecated in favor of Azure Blob storage.</span></span> <span data-ttu-id="dc272-1041">Azure Blob -tallennus vastaa tietokantatallennusta, sillä asiakirjoja voi käyttää vain Dynamics 365 for Finance and Operations -asiakasohjelman lomakkeiden kautta.</span><span class="sxs-lookup"><span data-stu-id="dc272-1041">Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Dynamics 365 for Finance and Operations client forms.</span></span> <span data-ttu-id="dc272-1042">Lisäksi tällä tavoin saadaan tallennustila, joka ei heikennä tietokannan toimintaa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1042">This provides the added benefit of providing storage that doesn't negatively affect the performance of the database.</span></span> <span data-ttu-id="dc272-1043">Blob-tallennus on asiakirjanhallinnan oletustallennusmekanismi ja toimii välittömästi.</span><span class="sxs-lookup"><span data-stu-id="dc272-1043">Blob storage is the default storage mechanism for Document Management and works immediately.</span></span> |
-| <span data-ttu-id="dc272-1044">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1044">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1045">Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1045">Database storage has been deprecated in favor of Azure Blob storage.</span></span>   |
-| <span data-ttu-id="dc272-1046">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1046">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1047">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1047">All modules</span></span>  |
-| <span data-ttu-id="dc272-1048">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1048">**Status**</span></span>                         | <span data-ttu-id="dc272-1049">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1049">Removed as of Dynamics AX 7.0.</span></span>   |
-
-### <a name="delimitation"></a><span data-ttu-id="dc272-1050">Rajoitus</span><span class="sxs-lookup"><span data-stu-id="dc272-1050">Delimitation</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1051">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1051">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1052">Toiminnolle ei ollut käyttöä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1052">No use of the functionality was found.</span></span> |
-| <span data-ttu-id="dc272-1053">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1053">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1054">En</span><span class="sxs-lookup"><span data-stu-id="dc272-1054">No</span></span>                                     |
-| <span data-ttu-id="dc272-1055">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1055">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1056">Työajan seuranta</span><span class="sxs-lookup"><span data-stu-id="dc272-1056">Time and attendance</span></span>                    |
-| <span data-ttu-id="dc272-1057">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1057">**Status**</span></span>                         | <span data-ttu-id="dc272-1058">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1058">Removed as of Dynamics AX 7.0.</span></span>         |
-
-### <a name="desktop-client"></a><span data-ttu-id="dc272-1059">Työpöytäasiakasohjelma</span><span class="sxs-lookup"><span data-stu-id="dc272-1059">Desktop client</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1060">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1060">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1061">Dynamics AX:n asiakasohjelmakokemus on uudistettu parantamaan käytettävyyttä kaikissa ympäristöissä ja laitteissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1061">The Dynamics AX client experience has been redesigned to improve usability across multiple platforms and devices.</span></span>                      |
-| <span data-ttu-id="dc272-1062">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1062">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1063">Uusi verkkoasiakasohjelma perustuu työpöytälomakkeen metatietoihin ja ohjelmointimalliin, jota on muokattu luomaan monipuolinen verkkoympäristö.</span><span class="sxs-lookup"><span data-stu-id="dc272-1063">The new web client is based on the desktop Form metadata and programming model that have been modified to provide a rich web platform.</span></span> |
-| <span data-ttu-id="dc272-1064">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1064">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1065">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1065">All modules</span></span>  |
-| <span data-ttu-id="dc272-1066">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1066">**Status**</span></span>                         | <span data-ttu-id="dc272-1067">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1067">Removed as of Dynamics AX 7.0.</span></span>   |
-
-### <a name="direct-database-connection"></a><span data-ttu-id="dc272-1068">Suora tietokantayhteys</span><span class="sxs-lookup"><span data-stu-id="dc272-1068">Direct database connection</span></span>
-
-<span data-ttu-id="dc272-1069">Dynamics AX 2012 R3 -versiossa Retail Modern POS voi muodostaa suoran yhteyden kanavatietokantaan samalla tavalla kuin Enterprise POS.</span><span class="sxs-lookup"><span data-stu-id="dc272-1069">In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel DB in similar fashion to Enterprise POS.</span></span> <span data-ttu-id="dc272-1070">Tämä oli lisänä Retail Modern POS -sovelluksen normaalille tietoliikenneyhteydelle, joka kulki vähittäismyynnin palvelimen välityksellä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1070">This was in addition to the standard communication method of Retail Modern POS communicating through Retail Server.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1071">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1071">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1072">Suora tietokantayhteys edellytti matalamman suojauksen, ja sitä käytettiin pääasiassa korkeamman suorituskyvyn saavuttamiseen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1072">Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance.</span></span> <span data-ttu-id="dc272-1073">Finance and Operationsissa tehtyjen suorituskyky- ja tietoturvaparannusten vuoksi tämä toiminnallisuus aiheuttaa enemmän ongelmia kuin mitä se ratkaisee.</span><span class="sxs-lookup"><span data-stu-id="dc272-1073">Due to the performance and security enhancements that have occurred in Finance and Operations, this functionality now causes more issues than it solves.</span></span> |
-| <span data-ttu-id="dc272-1074">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1074">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1075">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-1075">No.</span></span> <span data-ttu-id="dc272-1076">Vain vakiomuotoinen vähittäismyynnin palvelinyhteys on enää tuettu.</span><span class="sxs-lookup"><span data-stu-id="dc272-1076">Only standard Retail Server communication is now supported.</span></span>  |
-| <span data-ttu-id="dc272-1077">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1077">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1078">Kanavatietokanta / Retail Modern POS</span><span class="sxs-lookup"><span data-stu-id="dc272-1078">Channel DB/Retail Modern POS</span></span>   |
-| <span data-ttu-id="dc272-1079">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1079">**Status**</span></span>                         | <span data-ttu-id="dc272-1080">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1080">Removed as of Dynamics AX 7.0.</span></span>  |
-
-### <a name="dutch-swift-mt940"></a><span data-ttu-id="dc272-1081">Alankomaiden SWIFT MT940</span><span class="sxs-lookup"><span data-stu-id="dc272-1081">Dutch SWIFT MT940</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1082">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1082">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1083">Käytössä on nyt yleinen toiminto lokalisoidun toiminnon sijaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-1083">Generic functionality is now used instead of localized functionality.</span></span>                    |
-| <span data-ttu-id="dc272-1084">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1084">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1085">Kyllä. Pankkitilin täsmäytyksen lisätoiminnot on korvannut tämän toiminnon.</span><span class="sxs-lookup"><span data-stu-id="dc272-1085">Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</span></span> |
-| <span data-ttu-id="dc272-1086">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1086">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1087">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1087">All modules</span></span>                                                                              |
-| <span data-ttu-id="dc272-1088">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1088">**Status**</span></span>                         | <span data-ttu-id="dc272-1089">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1089">Deprecated: A removal date has not been set for this feature.</span></span>                           |
-
-### <a name="ebilanz-xbrl-for-germany"></a><span data-ttu-id="dc272-1090">eBilanz (XBRL Saksassa)</span><span class="sxs-lookup"><span data-stu-id="dc272-1090">eBilanz (XBRL for Germany)</span></span>
-
-<span data-ttu-id="dc272-1091">Tämä toiminto mahdollisti XBRL (eXtensible Business Reporting Language) -tulostuksen, joka on tarkoitettu erityisesti Saksan eBilanz-luokitusta varten.</span><span class="sxs-lookup"><span data-stu-id="dc272-1091">This functionality provided eXtensible Business Reporting Language (XBRL) output that is intended specifically for the German eBilanz taxonomy.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1092">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1092">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1093">Toimintoa ei käytetty</span><span class="sxs-lookup"><span data-stu-id="dc272-1093">Lack of customer usage</span></span>  |
-| <span data-ttu-id="dc272-1094">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1094">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1095">Toimintoa ei korvata toisella ominaisuudella, mutta Saksan markkinoilla on saatavana useista erikoistuneita XBRL-paketteja, joissa on monipuolisia XBRL-toimintoja.</span><span class="sxs-lookup"><span data-stu-id="dc272-1095">This feature hasn't been replaced by another feature, but multiple specialized XBRL packages that provide rich XBRL functionality are available for the German market.</span></span> |
-| <span data-ttu-id="dc272-1096">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1096">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1097">Management Reporter</span><span class="sxs-lookup"><span data-stu-id="dc272-1097">Management Reporter</span></span>      |
-| <span data-ttu-id="dc272-1098">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1098">**Status**</span></span>                         | <span data-ttu-id="dc272-1099">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1099">Deprecated: A removal date has not been set for this feature.</span></span>  |
-
-### <a name="enterprise-portal-client"></a><span data-ttu-id="dc272-1100">Yritysportaalin asiakasohjelma</span><span class="sxs-lookup"><span data-stu-id="dc272-1100">Enterprise Portal client</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1101">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1101">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1102">Käytössä on yksi asiakasohjelmaympäristö.</span><span class="sxs-lookup"><span data-stu-id="dc272-1102">A single client platform has been provided.</span></span>  |
-| <span data-ttu-id="dc272-1103">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1103">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1104">Uusi verkkoasiakasohjelma perustuu työpöytälomakkeen metatietoihin ja ohjelmointimalliin, jota on muokattu luomaan monipuolinen verkkoympäristö.</span><span class="sxs-lookup"><span data-stu-id="dc272-1104">The new web client is based on the desktop form metadata and programming model that have been modified to provide a rich web platform.</span></span> |
-| <span data-ttu-id="dc272-1105">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1105">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1106">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1106">All modules</span></span>  |
-| <span data-ttu-id="dc272-1107">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1107">**Status**</span></span>                         | <span data-ttu-id="dc272-1108">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1108">Removed as of Dynamics AX 7.0.</span></span>   |
-
-### <a name="environmental-sustainability"></a><span data-ttu-id="dc272-1109">Ekologinen kestävyys</span><span class="sxs-lookup"><span data-stu-id="dc272-1109">Environmental sustainability</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1110">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1110">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1111">Vähäinen käyttö ja rajoitetut toiminnot</span><span class="sxs-lookup"><span data-stu-id="dc272-1111">Low customer usage and a limited feature set</span></span>  |
-| <span data-ttu-id="dc272-1112">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1112">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1113">En</span><span class="sxs-lookup"><span data-stu-id="dc272-1113">No</span></span>              |
-| <span data-ttu-id="dc272-1114">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1114">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1115">Yhteensopivuus ja sisäisen tarkistus, ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-1115">Compliance and internal controls, Accounts payable</span></span>  |
-| <span data-ttu-id="dc272-1116">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1116">**Status**</span></span>                         | <span data-ttu-id="dc272-1117">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1117">Removed as of Dynamics AX 7.0.</span></span> |
-
-### <a name="form-activex-and-managed-host-controls"></a><span data-ttu-id="dc272-1118">Lomakkeen ActiveX:n ja hallitun ylläpidon ohjausobjektit</span><span class="sxs-lookup"><span data-stu-id="dc272-1118">Form ActiveX and Managed Host controls</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1119">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1119">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1120">ActiveX:n ja hallitun ylläpidon ohjausobjektit perustuivat vanhentuneeseen työpöytäasiakasohjelmaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-1120">The ActiveX and Managed Host controls are based on the deprecated desktop client.</span></span> |
-| <span data-ttu-id="dc272-1121">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1121">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1122">Laajennettava ohjausobjektiympäristö tukee uusien HTML-, CSS- ja JavaScript-pohjaisten ohjausobjektien luomista ja on ensimmäisen luokan ohjausobjekti Microsoft Visual Studio Tooling -ympäristössä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1122">The extensible control framework supports building new controls that are based on HTML, CSS, and JavaScript, and is a first-class control in the Microsoft Visual Studio Tooling environment.</span></span> |
-| <span data-ttu-id="dc272-1123">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1123">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1124">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1124">All modules</span></span>     |
-| <span data-ttu-id="dc272-1125">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1125">**Status**</span></span>                         | <span data-ttu-id="dc272-1126">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1126">Removed as of Dynamics AX 7.0.</span></span>       |
-
-### <a name="generate-prenotes-by-using-a-batch"></a><span data-ttu-id="dc272-1127">Esilaskujen muodostus erätoiminnolla</span><span class="sxs-lookup"><span data-stu-id="dc272-1127">Generate prenotes by using a batch</span></span>
-
-<span data-ttu-id="dc272-1128">Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edelleen luoda esilaskun.</span><span class="sxs-lookup"><span data-stu-id="dc272-1128">Prenote generation can't be done by using a batch, but it can still be done by a user.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1129">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1129">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1130">Erätoiminnolla luodulle laskulle ei ole lomaketta, jossa luotu esilaskutiedosto voitaisiin säilyttää ja näyttää.</span><span class="sxs-lookup"><span data-stu-id="dc272-1130">No form exists to persist and display the resulting prenote file when it's generated by using a batch.</span></span> |
-| <span data-ttu-id="dc272-1131">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1131">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1132">Esilaskuja voidaan luoda edelleen ja käyttäjä päättää sijainnin, johon tiedosto tallennetaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-1132">Prenotes can still be generated, and the user has control over the location where the file is saved.</span></span>   |
-| <span data-ttu-id="dc272-1133">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1133">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1134">Ostoreskontra, myyntireskontra, maksuliikenteen hallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-1134">Accounts payable, Accounts receivable, Cash and bank management</span></span>  |
-| <span data-ttu-id="dc272-1135">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1135">**Status**</span></span>                         | <span data-ttu-id="dc272-1136">Poistettu versiosta AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1136">Removed as of AX 7.0.</span></span>    |
-
-### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a><span data-ttu-id="dc272-1137">Saksan DTAUS-maksun vienti ja tiliotteen tuonti (kokonaissummat ja tapahtumat)</span><span class="sxs-lookup"><span data-stu-id="dc272-1137">German DTAUS payment export and account statement import (totals and transactions)</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1138">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1138">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1139">Muotoa ei enää käytetä Saksassa, sillä SEPA (yhtenäinen euromaksualue) -toiminto on korvannut sen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1139">The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.</span></span>                    |
-| <span data-ttu-id="dc272-1140">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1140">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1141">Kyllä. SEPA-maksun vienti ja pankkitilin täsmäytyksen lisätoiminnot tiliotteiden tuomiseen on korvannut tämän toiminnon.</span><span class="sxs-lookup"><span data-stu-id="dc272-1141">Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements.</span></span> |
-| <span data-ttu-id="dc272-1142">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1142">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1143">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1143">All modules</span></span>  |
-| <span data-ttu-id="dc272-1144">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1144">**Status**</span></span>                         | <span data-ttu-id="dc272-1145">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1145">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="german-dtazv-payment-format"></a><span data-ttu-id="dc272-1146">Saksan DTAZV-maksumuoto</span><span class="sxs-lookup"><span data-stu-id="dc272-1146">German DTAZV payment format</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1147">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1147">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1148">Muotoa ei enää käytetä Saksassa, sillä SEPA-toiminto on korvannut sen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1148">The format is no longer applicable in Germany, because it has been replaced by SEPA functionality.</span></span> |
-| <span data-ttu-id="dc272-1149">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1149">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1150">SEPA-maksujen vienti</span><span class="sxs-lookup"><span data-stu-id="dc272-1150">SEPA payments export</span></span>    |
-| <span data-ttu-id="dc272-1151">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1151">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1152">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1152">All modules</span></span>   |
-| <span data-ttu-id="dc272-1153">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1153">**Status**</span></span>                         | <span data-ttu-id="dc272-1154">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1154">Deprecated: A removal date has not been set for this feature.</span></span>    |
-
-### <a name="german-mt940-import"></a><span data-ttu-id="dc272-1155">Saksassa tuominen MT940-muodossa</span><span class="sxs-lookup"><span data-stu-id="dc272-1155">German MT940 import</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1156">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1156">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1157">Käytössä on nyt yleinen toiminto lokalisoidun toiminnon sijaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-1157">Generic functionality is now used instead of localized functionality.</span></span>                    |
-| <span data-ttu-id="dc272-1158">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1158">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1159">Kyllä. Pankkitilin täsmäytyksen lisätoiminnot on korvannut tämän toiminnon.</span><span class="sxs-lookup"><span data-stu-id="dc272-1159">Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</span></span> |
-| <span data-ttu-id="dc272-1160">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1160">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1161">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1161">All modules</span></span>                                                                              |
-| <span data-ttu-id="dc272-1162">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1162">**Status**</span></span>                         | <span data-ttu-id="dc272-1163">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1163">Deprecated: A removal date has not been set for this feature.</span></span>                           |
-
-### <a name="german-xml-eu-sales-list"></a><span data-ttu-id="dc272-1164">Saksan XML-muotoinen EU-myyntiluettelo</span><span class="sxs-lookup"><span data-stu-id="dc272-1164">German XML EU Sales list</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1165">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1165">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1166">XML-muotoa Saksan EU:n arvonlisäveron yhteenvetoilmoitusta varten ei enää tueta.</span><span class="sxs-lookup"><span data-stu-id="dc272-1166">The XML format for German EU Sales List reporting is no longer supported.</span></span> <span data-ttu-id="dc272-1167">Saksan EU:n arvonlisäveron yhteenvetoilmoitus voidaan lähettää Saksan veroviranomaiselle ainoastaan ELMA5-tekstitiedostomuodossa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1167">Only the ELMA5 text file format can be used to submit the EU Sales List report to the German Tax Office.</span></span> |
-| <span data-ttu-id="dc272-1168">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1168">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1169">En</span><span class="sxs-lookup"><span data-stu-id="dc272-1169">No</span></span>         |
-| <span data-ttu-id="dc272-1170">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1170">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1171">Vero</span><span class="sxs-lookup"><span data-stu-id="dc272-1171">Tax</span></span>        |
-| <span data-ttu-id="dc272-1172">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1172">**Status**</span></span>                         | <span data-ttu-id="dc272-1173">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1173">Deprecated: A removal date has not been set for this feature.</span></span>   |
-
-### <a name="gl-ssrs-reports"></a><span data-ttu-id="dc272-1174">Kirjanpidon SSRS-raportit</span><span class="sxs-lookup"><span data-stu-id="dc272-1174">GL SSRS reports</span></span>
-
-<span data-ttu-id="dc272-1175">Seuraavia valikkovaihtoehtoja sisältävät raportit on poistettu: **Pääkirjan yhteenveto**, **Yksityiskohtainen pääkirja**, **Tilikartta**, **Kirjausketju**, **Saldot** ja **Saldoluettelo**.</span><span class="sxs-lookup"><span data-stu-id="dc272-1175">Reports that include the following menu items have been removed: **Summary trial balance**, **Detailed trial balance**, **Chart of accounts**, **Audit trail**, **Balances**, and **Balance list**.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1176">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1176">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1177">Microsoft SQL Server Reporting Services (SSRS) -raportit on korvattu Management Reporter -toiminnoilla ja oletusraporteilla.</span><span class="sxs-lookup"><span data-stu-id="dc272-1177">Financial Microsoft SQL Server Reporting Services (SSRS) reports have been replaced by Management Reporter capabilities and default reports.</span></span> |
-| <span data-ttu-id="dc272-1178">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1178">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1179">Management Reporter (Dynamics AX:n nykyisessä versiossa sen nimi on **Talousraportointi**)</span><span class="sxs-lookup"><span data-stu-id="dc272-1179">Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX)</span></span>    |
-| <span data-ttu-id="dc272-1180">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1180">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1181">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="dc272-1181">General ledger</span></span>   |
-| <span data-ttu-id="dc272-1182">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1182">**Status**</span></span>                         | <span data-ttu-id="dc272-1183">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1183">Removed as of Dynamics AX 7.0.</span></span>   |
-
-### <a name="infopart-and-formpart-metadata"></a><span data-ttu-id="dc272-1184">InfoPart- ja FormPart-metatiedot</span><span class="sxs-lookup"><span data-stu-id="dc272-1184">InfoPart and FormPart metadata</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1185">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1185">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1186">InfoPart- ja FormPart-metatietojen avulla voitiin luoda kahden eri asiakasohjelman tietoruutuja.</span><span class="sxs-lookup"><span data-stu-id="dc272-1186">InfoPart and FormPart metadata enabled the creation of FactBoxes for two different clients.</span></span> |
-| <span data-ttu-id="dc272-1187">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1187">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1188">InfoPart-metatiedot oli yksinkertaistettu lomakemääritelmä, ja se on muunnettu lomakkeeksi päivitystyökaluilla.</span><span class="sxs-lookup"><span data-stu-id="dc272-1188">InfoPart metadata, which was a simplified form definition, is converted into a Form by upgrade tooling.</span></span> <span data-ttu-id="dc272-1189">Lomakkeeseen viittaavat FormPart-metatiedot on korvattu suoralla viittauksella, joka luodaan päivitystyökaluilla.</span><span class="sxs-lookup"><span data-stu-id="dc272-1189">FormPart metadata, which referenced a Form, is replaced by a more direct reference that is created by upgrade tooling.</span></span> |
-| <span data-ttu-id="dc272-1190">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1190">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1191">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1191">All modules</span></span>    |
-| <span data-ttu-id="dc272-1192">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1192">**Status**</span></span>                         | <span data-ttu-id="dc272-1193">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1193">Removed as of Dynamics AX 7.0.</span></span>        |
-
-### <a name="main-account-list-page"></a><span data-ttu-id="dc272-1194">Päätilin luettelosivu</span><span class="sxs-lookup"><span data-stu-id="dc272-1194">Main account list page</span></span>
-
-<span data-ttu-id="dc272-1195">Luettelo yrityksen tileistä ja niihin liittyvät saldotiedot</span><span class="sxs-lookup"><span data-stu-id="dc272-1195">A list of accounts for the legal entity and related balance information</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1196">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1196">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1197">Saldotiedot ovat saatavilla tilin ja dimension mukaisella **Pääkirja**-luettelosivulla.</span><span class="sxs-lookup"><span data-stu-id="dc272-1197">Balance information is available on the **Trial balance** list page by account and dimension.</span></span>  |
-| <span data-ttu-id="dc272-1198">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1198">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1199">**Päätilit** sisältää saman tililuettelon kuin **Päätili**-luettelosivu.</span><span class="sxs-lookup"><span data-stu-id="dc272-1199">**Main accounts** contains the same list of accounts that the **Main account** list page contained.</span></span> <span data-ttu-id="dc272-1200">**Päätilit**-ruudukkonäkymä näyttää myös pienemmän ruudukkomaisen näkymän.</span><span class="sxs-lookup"><span data-stu-id="dc272-1200">The grid view in **Main accounts** also shows an even smaller, grid-like view.</span></span> |
-| <span data-ttu-id="dc272-1201">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1201">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1202">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="dc272-1202">General ledger</span></span>      |
-| <span data-ttu-id="dc272-1203">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1203">**Status**</span></span>                         | <span data-ttu-id="dc272-1204">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1204">Removed as of Dynamics AX 7.0.</span></span>    |
-
-### <a name="malaysia-and-singapore-bank-cash-flow-report"></a><span data-ttu-id="dc272-1205">Malesian ja Singaporen pankin kassavirtaraportti</span><span class="sxs-lookup"><span data-stu-id="dc272-1205">Malaysia and Singapore bank cash flow report</span></span>
-
-<span data-ttu-id="dc272-1206">Toiminnolla voitiin tulostaa kassavirtaraportti, joka sisältää valittujen pankkitilien saapuvien ja lähtevien kassavirtojen tapahtumat sekä tiedot määritetyltä päivämääräväliltä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1206">This feature let the user print a cash flow report that shows transactions and details of the cash inflows and outflows for a specific date range for selected bank accounts.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1207">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1207">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1208">Samat tiedot saadaan pankkitapahtuman kyselyllä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1208">The same information can be obtained from the Inquiry bank transaction.</span></span> |
-| <span data-ttu-id="dc272-1209">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1209">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1210">Pankkitapahtuman kysely</span><span class="sxs-lookup"><span data-stu-id="dc272-1210">The Inquiry bank transaction</span></span>                                            |
-| <span data-ttu-id="dc272-1211">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1211">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1212">Maksuliikenteen hallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-1212">Cash and bank management</span></span>                                                |
-| <span data-ttu-id="dc272-1213">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1213">**Status**</span></span>                         | <span data-ttu-id="dc272-1214">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1214">Deprecated: A removal date has not been set for this feature.</span></span>          |
-
-### <a name="mexican-cfd-electronic-invoice"></a><span data-ttu-id="dc272-1215">Meksikon sähköinen CFD-lasku</span><span class="sxs-lookup"><span data-stu-id="dc272-1215">Mexican CFD electronic invoice</span></span>
-
-<span data-ttu-id="dc272-1216">Tällä ominaisuudella voitiin luoda Meksikossa sähköisiä laskuja käyttämällä CFD (Comprobante Fiscal Digital) -menetelmää, jossa yritys allekirjoittaa laskun pyytämällä liittyvän valtuutuksen viranomaiselta.</span><span class="sxs-lookup"><span data-stu-id="dc272-1216">This feature enabled the generation of Mexican electronic invoices by using the Comprobante Fiscal Digital (CFD) method, where the company signs the invoice by requesting the related authorization from the government.</span></span> <span data-ttu-id="dc272-1217">Tämä ominaisuus tarjoaa myös kuukausiraportin, joka koostui kaikista kyseisen kuukauden aikana tehdyistä sähköisistä laskuista.</span><span class="sxs-lookup"><span data-stu-id="dc272-1217">This feature also provides a monthly report that includes all electronics invoices that were issued in the period.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1218">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1218">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1219">Menetelmää ei enää käytetä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1219">The method is no longer applicable.</span></span> <span data-ttu-id="dc272-1220">Veroviranomaiset lopettivat CFD-menetelmällä luotavat sähköiset laskut ja niiden tilalla käytetään CFDI (Comprobante Fiscal Digital a través de Internet) -menetelmää, jossa allekirjoitus on delegoitu kolmannen osapuolen palveluntarjoajalle (PAC).</span><span class="sxs-lookup"><span data-stu-id="dc272-1220">The generation of electronic invoices by using the CFD method was deprecated by the tax authorities and replaced by the Comprobante Fiscal Digital a través de Internet (CFDI) method, where the signing is delegated to the third-party provider (PAC).</span></span> <span data-ttu-id="dc272-1221">Kuukausiraportti on poistettu, ja käyttäjät voivat tehdä kyselyvaihtoehdolla kyselyjä historiallisista tapahtumista.</span><span class="sxs-lookup"><span data-stu-id="dc272-1221">The monthly report has been removed, and an inquiry option lets users inquire about historical transactions.</span></span> |
-| <span data-ttu-id="dc272-1222">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1222">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1223">En</span><span class="sxs-lookup"><span data-stu-id="dc272-1223">No</span></span>    |
-| <span data-ttu-id="dc272-1224">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1224">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1225">Myyntireskontra, projekti</span><span class="sxs-lookup"><span data-stu-id="dc272-1225">Account receivables, Project</span></span>   |
-| <span data-ttu-id="dc272-1226">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1226">**Status**</span></span>                         | <span data-ttu-id="dc272-1227">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1227">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="mexico-realized-and-unrealized-vat"></a><span data-ttu-id="dc272-1228">Meksikon toteutunut ja toteutumaton ALV</span><span class="sxs-lookup"><span data-stu-id="dc272-1228">Mexico realized and unrealized VAT</span></span>
-
-<span data-ttu-id="dc272-1229">Microsoft Dynamics AX 2012:lla hallittiin toteutumatonta arvonlisäveroa (ALV:tä) käyttämällä vain Meksikoa koskevaa toteutumattoman veron toimintoa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1229">Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for unrealized tax.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1230">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1230">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1231">Sama toiminto</span><span class="sxs-lookup"><span data-stu-id="dc272-1231">Duplicate functionality</span></span>  |
-| <span data-ttu-id="dc272-1232">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1232">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1233">Kyllä. Tämä toiminto on korvattu ydintoimintojen tavallisessa suoritusperusteisella arvonlisäverotoiminnolla.</span><span class="sxs-lookup"><span data-stu-id="dc272-1233">Yes, this functionality has been replaced by standard conditional sales tax functionality that is provided by Core.</span></span> |
-| <span data-ttu-id="dc272-1234">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1234">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1235">Vero</span><span class="sxs-lookup"><span data-stu-id="dc272-1235">Tax</span></span>   |
-| <span data-ttu-id="dc272-1236">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1236">**Status**</span></span>                         | <span data-ttu-id="dc272-1237">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1237">Deprecated: A removal date has not been set for this feature.</span></span> |
-
-### <a name="microsoft-outlook-integration"></a><span data-ttu-id="dc272-1238">Microsoft Outlook -integrointi</span><span class="sxs-lookup"><span data-stu-id="dc272-1238">Microsoft Outlook integration</span></span>
-
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1239">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1239">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1240">Microsoft Exchange Server -integrointi on korvannut tämän toiminnon.</span><span class="sxs-lookup"><span data-stu-id="dc272-1240">This functionality has been replaced by Microsoft Exchange Server integration.</span></span> |
-| <span data-ttu-id="dc272-1241">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1241">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1242">Kyllä</span><span class="sxs-lookup"><span data-stu-id="dc272-1242">Yes</span></span>                                                                            |
-| <span data-ttu-id="dc272-1243">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1243">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1244">Myynti ja markkinointi</span><span class="sxs-lookup"><span data-stu-id="dc272-1244">Sales and marketing</span></span>                                                            |
-| <span data-ttu-id="dc272-1245">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1245">**Status**</span></span>                         | <span data-ttu-id="dc272-1246">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1246">Removed as of Dynamics AX 7.0.</span></span>                                                 |
-
-### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a><span data-ttu-id="dc272-1247">Varastonhallinnan kirjauskansioiden yksityinen esto</span><span class="sxs-lookup"><span data-stu-id="dc272-1247">Private blocking of inventory and warehouse management journals</span></span>
-
-<span data-ttu-id="dc272-1248">Varastokirjauskansiot eivät enää tue kirjauskansion merkitsemistä yksityiseksi valitulle käyttäjälle.</span><span class="sxs-lookup"><span data-stu-id="dc272-1248">The inventory and warehouse journals no longer support the ability to mark a journal as private for a selected user.</span></span> <span data-ttu-id="dc272-1249">Vain käyttäjäryhmien käyttämää kirjauskansioiden yksityistä estoa ja estoa muokkauksen aikana tuetaan.</span><span class="sxs-lookup"><span data-stu-id="dc272-1249">Only the process of blocking journals as private for user groups and blocking during editing is supported.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1250">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1250">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1251">Toiminnolle ei ollut käyttöä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1251">No use of the functionality was found.</span></span> |
-| <span data-ttu-id="dc272-1252">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1252">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1253">En</span><span class="sxs-lookup"><span data-stu-id="dc272-1253">No</span></span>                                     |
-| <span data-ttu-id="dc272-1254">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1254">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1255">Inventoinnin- ja varastonhallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-1255">Inventory management</span></span>                   |
-| <span data-ttu-id="dc272-1256">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1256">**Status**</span></span>                         | <span data-ttu-id="dc272-1257">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1257">Removed as of Dynamics AX 7.0.</span></span>         |
-
-### <a name="product-builder"></a><span data-ttu-id="dc272-1258">Tuotekonfiguraattori</span><span class="sxs-lookup"><span data-stu-id="dc272-1258">Product builder</span></span>
-
-<span data-ttu-id="dc272-1259">Tuotekonfiguraattoria käytettiin määrittämään dynaamisesti nimikkeitä myyntitilauksesta, ostotilauksesta, tuotantotilauksesta, myyntitarjouksesta, projektitarjouksesta tai nimiketarpeesta.</span><span class="sxs-lookup"><span data-stu-id="dc272-1259">Product builder was used to dynamically configure items from a sales order, purchase order, production order, sales quotation, project quotation, or item requirement.</span></span> <span data-ttu-id="dc272-1260">Käyttäjä voi valita asiakkaan vaatimusten mukaisia arvoja mallinnusmuuttujia sisältävän tuotemallin perusteella ja saada näin yksilöllisen tuotevariantin, jolla on tuoterakenne ja reitti.</span><span class="sxs-lookup"><span data-stu-id="dc272-1260">Based on a product model that had modeling variables, the user could select values to meet the customer requirements and get a unique product variant that had a BOM and route.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1261">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1261">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1262">Tuotekonfiguraattori paljasti X ++-koodin loppukäyttäjille eikä sitä tueta Dynamics AX:n nykyisessä versiossa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1262">Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX.</span></span> <span data-ttu-id="dc272-1263">Se on poistettu, jotta päällekkäisissä suurissa koodikannoissa ei tarvitsisi tehdä kaksinkertaista ylläpitoa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1263">It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.</span></span>  |
-| <span data-ttu-id="dc272-1264">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1264">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1265">Kyllä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1265">Yes.</span></span> <span data-ttu-id="dc272-1266">Poissulkeva konfiguraatio otettiin käyttöön Dynamics AX 2012:ssä, jossa tuotekonfiguraattorin vanhentuminen tulevissa versioissa oli jo ilmoitettu.</span><span class="sxs-lookup"><span data-stu-id="dc272-1266">The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced.</span></span> <span data-ttu-id="dc272-1267">Poissulkeva konfiguraatiomenetelmä valitaan päätuotteessa ottamaan konfiguraatio käyttöön.</span><span class="sxs-lookup"><span data-stu-id="dc272-1267">The constraint-based configuration technology is selected on the product masters to enable the configuration.</span></span> <span data-ttu-id="dc272-1268">Lisätietoja on kohdassa [Tuotemääritysmallin luominen](../../supply-chain/pim/build-product-configuration-model.md).</span><span class="sxs-lookup"><span data-stu-id="dc272-1268">To learn more, see [Build a product configuration model](../../supply-chain/pim/build-product-configuration-model.md).</span></span> |
-| <span data-ttu-id="dc272-1269">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1269">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1270">Tuotetietojen hallinta, myynti ja markkinointi</span><span class="sxs-lookup"><span data-stu-id="dc272-1270">Product information management, Sales and marketing</span></span>  |
-| <span data-ttu-id="dc272-1271">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1271">**Status**</span></span>                         | <span data-ttu-id="dc272-1272">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1272">Removed as of Dynamics AX 7.0.</span></span>      |
-
-### <a name="production-floor-app"></a><span data-ttu-id="dc272-1273">Tuotantosovellus</span><span class="sxs-lookup"><span data-stu-id="dc272-1273">Production Floor app</span></span>
-<span data-ttu-id="dc272-1274">Tämä sovellus on tarkoitettu tabletteihin, joissa on käytössä Windows 8.1 RT ja Windows 8.1 Pro.</span><span class="sxs-lookup"><span data-stu-id="dc272-1274">This is the app for tablet devices running Windows 8.1 RT and Windows 8.1 Pro.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1275">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1275">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1276">Verkkoasiakasohjelmaan tehdyllä muutoksella voidaan toimittaa samanlaiset toiminnot alkuperäisen Dynamics AX 7.0 -asiakasohjelman kautta.</span><span class="sxs-lookup"><span data-stu-id="dc272-1276">With the change to a web-based client, it is possible to deliver similar functionality through the native Dynamics AX 7.0 client.</span></span> <span data-ttu-id="dc272-1277">Työkorttilaitteessa on tuotannossa käytettävä käyttöliittymä, joka on optimoitu kosketus- ja tablettikäyttöä varten.</span><span class="sxs-lookup"><span data-stu-id="dc272-1277">The Job Card Device provides a production floor user interface that is optimized for touch and tablet form factors.</span></span> |
-| <span data-ttu-id="dc272-1278">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1278">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1279">Kyllä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1279">Yes.</span></span> <span data-ttu-id="dc272-1280">Työkorttilaite, joka sisältyy Dynamics AX 7.0:aan.</span><span class="sxs-lookup"><span data-stu-id="dc272-1280">The Job Card Device, which is a native part of Dynamics AX 7.0.</span></span>                                                                           |
-| <span data-ttu-id="dc272-1281">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1281">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1282">Tuotannonhallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-1282">Production control</span></span>                                                |
-| <span data-ttu-id="dc272-1283">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1283">**Status**</span></span>                         | <span data-ttu-id="dc272-1284">Vanhentuminen: Tälle ominaisuudelle ei ole vielä määritetty poistopäivää Microsoft Storesta.</span><span class="sxs-lookup"><span data-stu-id="dc272-1284">Deprecated: A removal date from the Microsoft store has not yet been set for this feature.</span></span>                                                |
-
-
-### <a name="rename-product-dimension"></a><span data-ttu-id="dc272-1285">Nimeä tuotedimensio uudelleen</span><span class="sxs-lookup"><span data-stu-id="dc272-1285">Rename product dimension</span></span>
-
-<span data-ttu-id="dc272-1286">Tällä toiminnolla voi vaihtaa yhden kolmesta vakiotuotedimension nimestä (koko, väri tai tyyli) liiketoiminnan vaatimuksiin paremmin sopivaan nimeen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1286">This feature let you change the name of one of the three standard product dimensions (size, color, or style) to a name that better suited your business requirements.</span></span> <span data-ttu-id="dc272-1287">Uudelleennimeäminen koski kaikkia otsikoita, joissa tuotedimension nimeä käytettiin.</span><span class="sxs-lookup"><span data-stu-id="dc272-1287">Renaming included all the labels where the product dimension name was used.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1288">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1288">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1289">Dynamics AX:n nykyinen versio ei tue suorituksen aikaisia otsikkomuutoksia.</span><span class="sxs-lookup"><span data-stu-id="dc272-1289">The current version of Dynamics AX doesn't support label changes at run time.</span></span> |
-| <span data-ttu-id="dc272-1290">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1290">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1291">En</span><span class="sxs-lookup"><span data-stu-id="dc272-1291">No</span></span>                                                                            |
-| <span data-ttu-id="dc272-1292">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1292">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1293">Tuotetietojen hallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-1293">Product information management</span></span>                                                |
-| <span data-ttu-id="dc272-1294">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1294">**Status**</span></span>                         | <span data-ttu-id="dc272-1295">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1295">Removed as of Dynamics AX 7.0.</span></span>                                                |
-
-### <a name="retail-server-connectivity-using-http"></a><span data-ttu-id="dc272-1296">Vähittäismyynnin palvelinyhteys HTTP-protokollalla</span><span class="sxs-lookup"><span data-stu-id="dc272-1296">Retail Server connectivity using HTTP</span></span>
-
-<span data-ttu-id="dc272-1297">Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdollista käyttää (suojaamattomalla) HTTP-yhteydellä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1297">In Dynamics AX 2012 R3, the Retail Server could function using HTTP communication (non-secured).</span></span> <span data-ttu-id="dc272-1298">Tämä oli lisänä vakioyhteyteen HTTPS-protokollalla.</span><span class="sxs-lookup"><span data-stu-id="dc272-1298">This was in addition to the standard communication using HTTPS.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1299">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1299">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1300">Uusien suojausvaatimusten vuoksi tietoliikenneyhteys on sallittua ainoastaan TLS 1.2 -suojausta (tai uudempaa) käyttäen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1300">Due to new security requirements, only secured communication using TLS 1.2 (or above, as available) is now supported.</span></span> <span data-ttu-id="dc272-1301">Omatoiminen asennusohjelma määrittää yhteystavan tietokoneelle automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="dc272-1301">The self-service installer will automatically configure the computer for this communication.</span></span> |
-| <span data-ttu-id="dc272-1302">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1302">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1303">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-1303">No.</span></span> <span data-ttu-id="dc272-1304">Vain vakiomuotoinen HTTPS-yhteys on enää tuettu.</span><span class="sxs-lookup"><span data-stu-id="dc272-1304">Only standard HTTPS communication is now supported.</span></span> |
-| <span data-ttu-id="dc272-1305">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1305">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1306">Vähittäismyynnin palvelin</span><span class="sxs-lookup"><span data-stu-id="dc272-1306">Retail Server</span></span>  |
-| <span data-ttu-id="dc272-1307">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1307">**Status**</span></span>                         | <span data-ttu-id="dc272-1308">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1308">Removed as of Dynamics AX 7.0.</span></span> |
-
-### <a name="role-center-pages"></a><span data-ttu-id="dc272-1309">Roolikeskus-sivut</span><span class="sxs-lookup"><span data-stu-id="dc272-1309">Role Center pages</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1310">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1310">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1311">Roolikeskus-sivut perustuivat vanhentuneeseen yritysportaaliympäristöön, joka on korvattu uudella verkkoasiakasympäristöllä Dynamics AX:n nykyisessä versiossa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1311">Role Center pages were built on the deprecated Enterprise Portal platform, which has been replaced by the new web client platform in the current version of Dynamics AX.</span></span> |
-| <span data-ttu-id="dc272-1312">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1312">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1313">Uusi Työtila-lomakemalli käyttäjille prosessikeskeisen rakenteen, jonka kautta on helppo käyttää kyseisen prosessin usein käytettyjä tehtäviä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1313">The new Workspace form pattern provides users with a process-centered design that provides easy access to commonly used tasks within that process.</span></span>                       |
-| <span data-ttu-id="dc272-1314">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1314">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1315">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1315">All modules</span></span>    |
-| <span data-ttu-id="dc272-1316">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1316">**Status**</span></span>                         | <span data-ttu-id="dc272-1317">Poistettu versiosta Dynamics AX 7.0 alkaen</span><span class="sxs-lookup"><span data-stu-id="dc272-1317">Removed as of Dynamics AX 7.0</span></span>   |
-
-### <a name="sales-tax-jurisdictions"></a><span data-ttu-id="dc272-1318">Arvonlisäveroviranomaiset</span><span class="sxs-lookup"><span data-stu-id="dc272-1318">Sales tax jurisdictions</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1319">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1319">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1320">Vähäinen käyttö ja rajoitetut toiminnot</span><span class="sxs-lookup"><span data-stu-id="dc272-1320">Low customer usage and a limited feature set</span></span> |
-| <span data-ttu-id="dc272-1321">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1321">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1322">En</span><span class="sxs-lookup"><span data-stu-id="dc272-1322">No</span></span>                                           |
-| <span data-ttu-id="dc272-1323">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1323">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1324">Yhdysvaltojen arvonlisävero</span><span class="sxs-lookup"><span data-stu-id="dc272-1324">US sales tax</span></span>                                 |
-| <span data-ttu-id="dc272-1325">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1325">**Status**</span></span>                         | <span data-ttu-id="dc272-1326">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1326">Removed as of Dynamics AX 7.0.</span></span>               |
-
-### <a name="sites-services"></a><span data-ttu-id="dc272-1327">Sites Services -palvelut</span><span class="sxs-lookup"><span data-stu-id="dc272-1327">Sites Services</span></span>
-
-<span data-ttu-id="dc272-1328">Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liiketoimintaprosesseja Internetiin.</span><span class="sxs-lookup"><span data-stu-id="dc272-1328">Sites Services let you build websites that extend your business processes to the Internet without IT support.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1329">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1329">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1330">Dynamics AX:n käyttämässä Microsoft Azuren infrastruktuurissa on uusia korvaavia ominaisuuksia (esimerkiksi Azure-sivustot).</span><span class="sxs-lookup"><span data-stu-id="dc272-1330">The Microsoft Azure infrastructure that is used by Dynamics AX has new capabilities that can be used instead (for example, Azure sites).</span></span> |
-| <span data-ttu-id="dc272-1331">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1331">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1332">En</span><span class="sxs-lookup"><span data-stu-id="dc272-1332">No</span></span>   |
-| <span data-ttu-id="dc272-1333">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1333">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1334">Henkilön työhönotto, palvelupyynnön hallinta, tarjouspyynnöt, toimittajan rekisteröinti, mahdollisuuksien ja kampanjoiden yhteistyötyötila</span><span class="sxs-lookup"><span data-stu-id="dc272-1334">HR recruiting, Case management, Request for quotes, Vendor registration, Collaborative workspaces for opportunities and campaigns</span></span>  |
-| <span data-ttu-id="dc272-1335">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1335">**Status**</span></span>                         | <span data-ttu-id="dc272-1336">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1336">Removed as of Dynamics AX 7.0.</span></span>    |
-
-### <a name="ssas-demand-forecasting-strategy"></a><span data-ttu-id="dc272-1337">SSAS – kysynnän ennustestrategia</span><span class="sxs-lookup"><span data-stu-id="dc272-1337">SSAS demand forecasting strategy</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1338">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1338">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1339">Uusi pilviarkkitehtuuri ei voi tukea toiminnon rakennetta.</span><span class="sxs-lookup"><span data-stu-id="dc272-1339">The design of the feature cannot be supported in the new cloud architecture.</span></span> |
-| <span data-ttu-id="dc272-1340">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1340">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1341">Azure Machine Learningin kysynnän ennusteen strategia</span><span class="sxs-lookup"><span data-stu-id="dc272-1341">Azure Machine Learning demand forecasting strategy</span></span>                           |
-| <span data-ttu-id="dc272-1342">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1342">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1343">Pääsuunnittelu</span><span class="sxs-lookup"><span data-stu-id="dc272-1343">Master planning</span></span>                                                              |
-| <span data-ttu-id="dc272-1344">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1344">**Status**</span></span>                         | <span data-ttu-id="dc272-1345">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1345">Removed as of Dynamics AX 7.0.</span></span>                                               |
-
-### <a name="vendor-invoice-pool-excluding-posting-details"></a><span data-ttu-id="dc272-1346">Toimittajan laskupooli, ei sisällä kirjaustietoja</span><span class="sxs-lookup"><span data-stu-id="dc272-1346">Vendor invoice pool excluding posting details</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1347">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1347">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1348">Vähäinen käyttö.</span><span class="sxs-lookup"><span data-stu-id="dc272-1348">Low usage.</span></span> <span data-ttu-id="dc272-1349">Toiminto on korvattu laskun kirjauskansiolla, joka sisältää työnkulkutoiminnon.</span><span class="sxs-lookup"><span data-stu-id="dc272-1349">This functionality has been replaced by the Invoice journal that has workflow functionality.</span></span> |
-| <span data-ttu-id="dc272-1350">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1350">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1351">Laskun kirjauskansion työnkulkutoiminnot</span><span class="sxs-lookup"><span data-stu-id="dc272-1351">Workflow capabilities of the Invoice journal.</span></span>     |
-| <span data-ttu-id="dc272-1352">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1352">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1353">Ostoreskontra</span><span class="sxs-lookup"><span data-stu-id="dc272-1353">Accounts payable</span></span> |
-| <span data-ttu-id="dc272-1354">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1354">**Status**</span></span>                         | <span data-ttu-id="dc272-1355">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1355">Removed as of Dynamics AX 7.0.</span></span>    |
-
-
-### <a name="virtual-company-accounts"></a><span data-ttu-id="dc272-1356">Virtuaaliyritykset</span><span class="sxs-lookup"><span data-stu-id="dc272-1356">Virtual company accounts</span></span>
-
-<span data-ttu-id="dc272-1357">Dynamics AX ei enää tue virtuaaliyritystoimintoa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1357">The virtual companies feature is no longer supported in Dynamics AX.</span></span> <span data-ttu-id="dc272-1358">Virtuaaliyritystoiminnon avulla käyttäjät pystyivät määrittämään tauluja yritysjoukon jaettavaksi.</span><span class="sxs-lookup"><span data-stu-id="dc272-1358">The virtual companies feature let users set up tables that could be shared by a set of companies.</span></span> <span data-ttu-id="dc272-1359">Toiminnon kuvaus on artikkelissa [Yrityksen tilit ja virtuaaliyrityksen tilit](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx).</span><span class="sxs-lookup"><span data-stu-id="dc272-1359">For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx).</span></span> <span data-ttu-id="dc272-1360">Toiminto ryhmittää virtuaaliyrityksille määritetyiksi tauluiksi. Virtuaaliyritykset ovat olemassa olevien "oikeiden" yritysten ryhmiä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1360">The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies.</span></span> <span data-ttu-id="dc272-1361">Kyselyjä luomalla kaikki virtuaaliyrityksen yritykset voivat käyttää liitettyjen taulukokoelmien taulujen tietoja.</span><span class="sxs-lookup"><span data-stu-id="dc272-1361">Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.</span></span>
-
-|   |  | 
-|------------|--------------------|
-| <span data-ttu-id="dc272-1362">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1362">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1363">- Virtuaaliyritykset on määritettävä, ennen kuin tiedot tallennetaan tauluihin.</span><span class="sxs-lookup"><span data-stu-id="dc272-1363">- Virtual companies must be set up before data is stored in the tables.</span></span> <span data-ttu-id="dc272-1364">Virtuaaliyritysten sovittaminen jälkikäteen aiemmin luotuihin toteutuksiin on erittäin hankalaa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1364">Retrofitting virtual companies onto an existing implementation is very difficult.</span></span><br><br><span data-ttu-id="dc272-1365">- Koska Dynamics AX:n nykyisessä versiossa on niin paljon tietojen normalisointia, taulukokoelmiin lisättävän tiedon hahmottamisesta on tullut erittäin hankalaa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1365">- Because there has been so much data normalization in the current version of Dynamics AX, it has become difficult to know what to add to the table collections.</span></span> <span data-ttu-id="dc272-1366">Esimerkiksi on vaikea hahmottaa, mitä taulut tulee jakaa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1366">For example, it's difficult to know which tables to share.</span></span> <span data-ttu-id="dc272-1367">Lisäksi kaikki taulut, joihin virtuaaliyrityksessä olevat taulut viitataan, on lisättävä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1367">All the tables referenced from tables that are in a virtual company must also added.</span></span> <span data-ttu-id="dc272-1368">Taulun normalisoinnin vuoksi yksinkertaisimmankin useissa taulukoissa olevan päätiedon on oltava myös virtuaaliyrityksen osa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1368">Because of table normalization, even simple master data that is spread across multiple tables must be part of the virtual company.</span></span> <span data-ttu-id="dc272-1369">Tässä yhteydessä tehdyt mahdolliset virheet aiheuttavat toimintaongelmia.</span><span class="sxs-lookup"><span data-stu-id="dc272-1369">Any mistake that is made here will cause functional issues.</span></span><br><br><span data-ttu-id="dc272-1370">- Kun taulu on osa virtuaaliyritystä, se menettää tiedot tiedon alkuperästä ja vain virtuaaliyritys kirjataan.</span><span class="sxs-lookup"><span data-stu-id="dc272-1370">- When a table is part of a virtual company, it loses information about the origin of the data, and only the virtual company is recorded.</span></span>   |
-| <span data-ttu-id="dc272-1371">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1371">**Replaced by another feature?**</span></span> | <span data-ttu-id="dc272-1372">Yleisiä tauluja käyttämällä taulut ovat kaikkien yritysten käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="dc272-1372">Global tables can be used to make tables accessible from all companies.</span></span> <span data-ttu-id="dc272-1373">Tällä hetkellä korvaavaa toimintoa ei ole.</span><span class="sxs-lookup"><span data-stu-id="dc272-1373">Currently, there is no replacement.</span></span> |   
-| <span data-ttu-id="dc272-1374">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1374">**Product areas affected**</span></span>       | <span data-ttu-id="dc272-1375">Kaikki moduulit</span><span class="sxs-lookup"><span data-stu-id="dc272-1375">All modules</span></span> |   
-| <span data-ttu-id="dc272-1376">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1376">**Status**</span></span>                       | <span data-ttu-id="dc272-1377">Poistettu versiosta Dynamics AX 7.0 alkaen.</span><span class="sxs-lookup"><span data-stu-id="dc272-1377">Removed as of Dynamics AX 7.0.</span></span>   |   
-
-### <a name="windows-8-tablet-app"></a><span data-ttu-id="dc272-1378">Windows 8 -tablettisovellus</span><span class="sxs-lookup"><span data-stu-id="dc272-1378">Windows 8 tablet app</span></span>
-
-<span data-ttu-id="dc272-1379">Windows 8 -tablettisovelluksessa oli kulujen vienti- ja hyväksymistoiminnot.</span><span class="sxs-lookup"><span data-stu-id="dc272-1379">The Windows 8 tablet app provided functionality for expense entry and approval.</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1380">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1380">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1381">Finance and Operationsia voi käyttää tableteissa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1381">Finance and Operations is compatible with tablets.</span></span> <span data-ttu-id="dc272-1382">Tablettisovellusta ei enää tarvita.</span><span class="sxs-lookup"><span data-stu-id="dc272-1382">The tablet app is no longer required.</span></span>    |
-| <span data-ttu-id="dc272-1383">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1383">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1384">Nro</span><span class="sxs-lookup"><span data-stu-id="dc272-1384">No.</span></span>          |
-| <span data-ttu-id="dc272-1385">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1385">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1386">Kulujen hallinta</span><span class="sxs-lookup"><span data-stu-id="dc272-1386">Expense management</span></span>   |
-| <span data-ttu-id="dc272-1387">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1387">**Status**</span></span>                         | <span data-ttu-id="dc272-1388">Poistettu: Tämä toiminto on käytössä vain Dynamics AX 2012 R3:ssa.</span><span class="sxs-lookup"><span data-stu-id="dc272-1388">Removed: This functionality is only available for Dynamics AX 2012 R3.</span></span> |
-
-### <a name="workplanner"></a><span data-ttu-id="dc272-1389">Työn suunnittelu</span><span class="sxs-lookup"><span data-stu-id="dc272-1389">Workplanner</span></span>
-
-|   |  |
-|------------|--------------------|
-| <span data-ttu-id="dc272-1390">**Poiston tai vanhentumisen syy**</span><span class="sxs-lookup"><span data-stu-id="dc272-1390">**Reason for deprecation/removal**</span></span> | <span data-ttu-id="dc272-1391">Vähäinen käyttö</span><span class="sxs-lookup"><span data-stu-id="dc272-1391">Low usage</span></span> |
-| <span data-ttu-id="dc272-1392">**Onko toinen ominaisuus korvannut?**</span><span class="sxs-lookup"><span data-stu-id="dc272-1392">**Replaced by another feature?**</span></span>   | <span data-ttu-id="dc272-1393">Ei, mutta **Profiilirelaatio**-sivu, joka avautuu **Profiiliryhmät**-sivulta, tukee samoja liiketoimintaskenaarioita mitä vanhentuneella **Työn suunnittelu**-sivulla käytettiin.</span><span class="sxs-lookup"><span data-stu-id="dc272-1393">No, but the **Profile relation** page, which is opened from the **Profile groups** page, supports the same business scenario as the deprecated **Workplanner** page.</span></span> |
-| <span data-ttu-id="dc272-1394">**Tuotealueet, joihin vaikutetaan**</span><span class="sxs-lookup"><span data-stu-id="dc272-1394">**Product areas affected**</span></span>         | <span data-ttu-id="dc272-1395">Työajan seuranta</span><span class="sxs-lookup"><span data-stu-id="dc272-1395">Time and attendance</span></span>     |
-| <span data-ttu-id="dc272-1396">**Tila**</span><span class="sxs-lookup"><span data-stu-id="dc272-1396">**Status**</span></span>                         | <span data-ttu-id="dc272-1397">Koodia ei ole poistettu.</span><span class="sxs-lookup"><span data-stu-id="dc272-1397">The code has not been removed.</span></span> <span data-ttu-id="dc272-1398">Lomaketta, JmgWorkPlanner, ei kuitenkaan siirretty.</span><span class="sxs-lookup"><span data-stu-id="dc272-1398">However, the form, JmgWorkPlanner, was not migrated.</span></span>    |
-
-### <a name="x-financial-statements"></a><span data-ttu-id="dc272-1399">X++-raportit</span><span class="sxs-lookup"><span data-stu-id="dc272-1399">X++ financial statements</span></span>
-
-|                                                 |                                                                                                          |
-|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="dc272-1400"><strong>Poiston tai vanhentumisen syy</strong></span><span class="sxs-lookup"><span data-stu-id="dc272-1400"><strong>Reason for deprecation/removal</strong></span></span> |                         <span data-ttu-id="dc272-1401">Toinen ominaisuus on korvannut tämän toiminnon.</span><span class="sxs-lookup"><span data-stu-id="dc272-1401">This functionality has been replaced by another feature.</span></span>                         |
-|  <span data-ttu-id="dc272-1402"><strong>Onko toinen ominaisuus korvannut?</strong></span><span class="sxs-lookup"><span data-stu-id="dc272-1402"><strong>Replaced by another feature?</strong></span></span>  | <span data-ttu-id="dc272-1403">Management Reporter (Dynamics AX:n nykyisessä versiossa sen nimi on <strong>Talousraportointi</strong>)</span><span class="sxs-lookup"><span data-stu-id="dc272-1403">Management Reporter (labeled <strong>Financial reporting</strong> in the current version of Dynamics AX)</span></span> |
-|     <span data-ttu-id="dc272-1404"><strong>Tuotealueet, joihin vaikutetaan</strong></span><span class="sxs-lookup"><span data-stu-id="dc272-1404"><strong>Product areas affected</strong></span></span>     |                                              <span data-ttu-id="dc272-1405">Kirjanpito</span><span class="sxs-lookup"><span data-stu-id="dc272-1405">General ledger</span></span>                                              |
-|             <span data-ttu-id="dc272-1406"><strong>Tila</strong></span><span class="sxs-lookup"><span data-stu-id="dc272-1406"><strong>Status</strong></span></span>             |                                      <span data-ttu-id="dc272-1407">Poistettu versiosta Dynamics AX 2012 alkaen</span><span class="sxs-lookup"><span data-stu-id="dc272-1407">Removed as of Dynamics AX 2012</span></span>                                      |
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="deprecated-features.md" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>deprecated-features.a8ef67.9daba2449b6a20634c13117cedb6b63fcc8ee674.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>9daba2449b6a20634c13117cedb6b63fcc8ee674</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>fcae2e7938d7dbd94b76b0948b084d90d5fc919c</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>06/05/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\dev-itpro\migration-upgrade\deprecated-features.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Removed or deprecated features</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentuneet tai poistetut ominaisuudet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes features that have been removed, or that are planned for removal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Removed or deprecated features</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistetut tai vanhentuneet ominaisuudet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operationsin ominaisuuksia, jotka on poistettu tai jotka ovat vanhentuneita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>A <bpt id="p1">*</bpt>removed<ept id="p1">*</ept> feature is no longer available in the product.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Poistettu<ept id="p1">*</ept> ominaisuus ei ole enää käytettävissä tuotteessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>A <bpt id="p1">*</bpt>deprecated<ept id="p1">*</ept> feature is not in active development and may be removed in a future update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">*</bpt>Vanhentunutta<ept id="p1">*</ept> ominaisuutta ei enää kehitetä aktiivisesti ja se voidaan poistaa tulevassa päivityksessä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>This list is intended to help you consider these removals and deprecations for your own planning.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet ominaisuudet omassa suunnittelussasi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operationsin heinäkuun 2017 ympäristöpäivityksestä 8 alkaen kunkin poistetun tai vanhentuneen ominaisuuden käyttöottotyyppi ilmoitetaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>All of the previous releases mentioned in this topic supported cloud deployments only.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki tässä aiheessa mainitut aiemmat versiot tukivat vain pilvikäyttöönottoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Detailed information about objects in Finance and Operations can be found in the <bpt id="p1">[</bpt>Technical reference reports<ept id="p1">](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: <bpt id="p1">[</bpt>Tekniset viitetiedot<ept id="p1">](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Dynamics 365 for Finance and Operations 10.0.4</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.4</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>France: FEC Accounting data export in XML</source><target logoport:matchpercent="73" state="translated" state-qualifier="fuzzy-match">Ranska: FEC-kirjanpidon tiedot XML-muodossa</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Replaced by TXT format, <bpt id="p1">**</bpt>French FEC audit file<ept id="p1">**</ept> is available through <bpt id="p2">**</bpt>General ledger<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Periodic tasks<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Data export<ept id="p4">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Korvattu txt-muodossa, <bpt id="p1">**</bpt>Ranskan FEC-auditointitiedosto<ept id="p1">**</ept> on saatavilla <bpt id="p2">**</bpt>Kirjanpidon<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Kausittaisten tehtävien<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Tietojen viennin<ept id="p4">**</ept> kautta.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Yes</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>General ledger</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Kirjanpito</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>All</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Deprecated.</source><target logoport:matchpercent="98" state="translated" state-qualifier="fuzzy-match">Vanhentunut.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Target timeframe for the functionality to be removed is July 2020.</source><target logoport:matchpercent="84" state="translated" state-qualifier="fuzzy-match">Toiminnon poiston tavoiteajankohta on heinäkuu 2020.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.4 ja Platform update 28</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.4 ja Platform update 28 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>The content and the functionality are subject to change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sisältö ja toiminnot voivat muuttua.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>For more information about preview releases, see <bpt id="p1">[</bpt>Service update availability<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Lisätietoja ennakkojulkaisusta on kohdassa <bpt id="p1">[</bpt>Palvelupäivitysten saatavuus<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Legacy navigation bar</source><target logoport:matchpercent="69" state="translated" state-qualifier="fuzzy-match">Vanha siirtymispalkin ohje</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Header alignment with other Dynamics and Office products.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ylätunnisteen tasaus muihin Dynamics- ja Office-tuotteisiin.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>For more details, see <bpt id="p1">[</bpt>Updated navigation bar that aligns with the Office header<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar)</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Lisätietoja on kohdassa <bpt id="p1">[</bpt>Päivitetty siirtymispalkki, joka kohdistuu Office-otsikkoon.<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar)</ept></target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Starting in Platform update 24, a restyled navigation bar that features search was introduced.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Uudelleen muotoiltu navigointipalkki, jossa on hakuominaisuus, otettiin käyttöön Platform Update 24:sta alkaen.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Web client</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">WWW-asiakasohjelma</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>All</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Deprecated: Starting in April 2020, the legacy navigation bar will no longer be available.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Vanhentunut: Huhtikuusta 2020 alkaen vanha siirtymispalkki ei ole enää käytettävissä.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Until that point, customers can revert to the legacy navigation bar through the <bpt id="p1">**</bpt>Client performance options<ept id="p1">**</ept> page.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Siihen saakka asiakkaat voivat palata takaisin vanhaan siirtymispalkkiin <bpt id="p1">**</bpt>Työaseman suorituskykyasetukset<ept id="p1">**</ept> -sivulla.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.2 ja Platform update 26</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.2 ja Platform update 26 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>The content and the functionality are subject to change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sisältö ja toiminnot voivat muuttua.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>For more information about preview releases, see <bpt id="p1">[</bpt>Service update availability<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja ennakkojulkaisusta on kohdassa <bpt id="p1">[</bpt>Palvelupäivitysten saatavuus<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Legacy default action behavior</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanha oletustoiminnon toiminto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ruudukoiden oletustoimintojen vanha toiminta saa aikaan tuloksia odottamattomaan sarakkeeseen, jolla on oletustoimintolinkki ruudukon sarakkeiden jälkeen. Ne on järjestetty uudelleen mukauttamisen avulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>The new sticky default action feature corrects this.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi lukitun oletustoiminnon ominaisuus korjaa tämän.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>For more details, see <bpt id="p1">[</bpt>Sticky default actions in grids<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja on kohdassa <bpt id="p1">[</bpt>Lukitut oletustoiminnot ruudukoissa<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Starting in Platform update 21, a feature for "sticky default actions" was introduced.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lukittujen oletustoimintojen ominaisuus oli ensimmäisen kerran mukana Platform update 21 -versiossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>This feature can be enabled on the <bpt id="p1">**</bpt>Client performance options<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän ominaisuuden voi ottaa käyttöön <bpt id="p1">**</bpt>Työaseman suorituskykyasetukset<ept id="p1">**</ept> -sivulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Grids in the web client</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WWW-asiakasohjelman ruudukot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: Vuoden 2020 huhtikuusta alkaen lukitut oletustoiminnot kuuluvat oletustoimintaan. Vanhaan toimintaan ei voi tällöin enää palata.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Legacy "is one of" filtering experience</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanha On yksi seuraavista: -suodattimen käyttö</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">On yksi seuraavista: -suodattimen käyttö suunniteltiin uudelleen Platform update 22 -versiota varten niin, että tämän piti olla ainoa On yksi seuraavista: -suodattimen käyttömahdollisuus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>Starting in Platform update 22, an improved "is one of" filtering experience became available on the <bpt id="p1">**</bpt>Client performance options<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platform update 22 -versiosta alkaen parannettu On yksi seuraavista: -suodattimen käyttö on saatavissa <bpt id="p1">**</bpt>Työaseman suorituskykyasetukset<ept id="p1">**</ept> -sivulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>For more information, see <bpt id="p1">[</bpt>Optimized is one of filtering experience<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja on kohdassa <bpt id="p1">[</bpt>On yksi seuraavista: -suodattimen käytön optimointi<ept id="p1">](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Web client</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WWW-asiakasohjelma</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: Vuoden 2020 huhtikuusta alkaen parannettu On yksi seuraavista: -suodattimen käyttö kuuluu oletustoimintaan. Vanhaan toimintaan ei voi tällöin enää palata.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>Parameter to enable sales orders with multiple project contract funding sources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametri, joka mahdollistaa useita projektisopimuksen rahoituslähteitä sisältävät myyntitilaukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the <bpt id="p1">**</bpt>Project management parameters<ept id="p1">**</ept> setting <bpt id="p2">**</bpt>Allow sales orders for project with multiple funding sources<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niiden projektiin perustuvien myyntitilausten tuki, joissa projektisopimuksella on useita rahoituslähteitä, otetaan käyttöön <bpt id="p1">**</bpt>Projektinhallinnan parametrit<ept id="p1">**</ept> -asetuksen <bpt id="p2">**</bpt>Salli myyntitilaukset projektille, jolla on useita rahoituslähteitä<ept id="p2">**</ept> -kohdan avulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>By default, this parameter is not enabled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä parametri ei ole oletusarvoisesti käytössä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>The functionality will always be enabled after the parameter is removed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnot otetaan aina käyttöön parametrin poistamisen jälkeen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>The functionality to support project-based sales orders with multiple funding sources will always be enabled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niiden projektiin perustuvien myyntitilausten tuen toiminnot, joilla on useita rahoituslähteitä, ovat aina käytössä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>The <bpt id="p1">**</bpt>Allow sales orders for projects with multiple funding sources<ept id="p1">**</ept> parameter will be removed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Salli myyntitilaukset projekteissa, joissa on useita rahoituslähteitä<ept id="p1">**</ept> -parametri poistetaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>The following methods will be modified when the parameter is removed: <bpt id="p1">**</bpt>ctrlSalesOrderTable<ept id="p1">**</ept> method in <bpt id="p2">**</bpt>ProjStatusType<ept id="p2">**</ept> class, <bpt id="p3">**</bpt>validate<ept id="p3">**</ept> method for <bpt id="p4">**</bpt>ProjId<ept id="p4">**</ept> field, and <bpt id="p5">**</bpt>run<ept id="p5">**</ept> method in <bpt id="p6">**</bpt>SalescreateOrder<ept id="p6">**</ept> form.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavia menetelmiä muokataan, kun parametri poistetaan: <bpt id="p1">**</bpt>ctrlSalesOrderTable<ept id="p1">**</ept>-menetelmä <bpt id="p2">**</bpt>ProjStatusType<ept id="p2">**</ept>-luokassa, <bpt id="p3">**</bpt>validate<ept id="p3">**</ept>-menetelmä <bpt id="p4">**</bpt>ProjId<ept id="p4">**</ept>-kentässä ja <bpt id="p5">**</bpt>run<ept id="p5">**</ept>-menetelmä <bpt id="p6">**</bpt>SalescreateOrder<ept id="p6">**</ept>-lomakkeessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>The following methods will be deprecated when the parameter is removed: <bpt id="p1">**</bpt>IsSalesOrderAllowedForMultipleFundingSources<ept id="p1">**</ept> in <bpt id="p2">**</bpt>ProjTable<ept id="p2">**</ept> table file, <bpt id="p3">**</bpt>IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled<ept id="p3">**</ept> method in <bpt id="p4">**</bpt>ProjTable<ept id="p4">**</ept> table file, <bpt id="p5">**</bpt>AllowSalesOrdersForMultipleFundingSources<ept id="p5">**</ept> data field in <bpt id="p6">**</bpt>ProjParameters<ept id="p6">**</ept> form and <bpt id="p7">**</bpt>ProjParameterEntity<ept id="p7">**</ept> files, <bpt id="p8">**</bpt>IsAssociatedToMultipleFundingSourcesContract<ept id="p8">**</ept> private method in <bpt id="p9">**</bpt>ProjTable<ept id="p9">**</ept> table file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavat menetelmät vanhentuvat, kun parametri poistetaan: <bpt id="p1">**</bpt>IsSalesOrderAllowedForMultipleFundingSources<ept id="p1">**</ept> <bpt id="p2">**</bpt>ProjTable<ept id="p2">**</ept>-taulukkotiedostossa, <bpt id="p3">**</bpt>IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled<ept id="p3">**</ept>-menetelmä <bpt id="p4">**</bpt>ProjTable<ept id="p4">**</ept>-taulukkotiedostossa, <bpt id="p5">**</bpt>AllowSalesOrdersForMultipleFundingSources<ept id="p5">**</ept>-tietokenttä <bpt id="p6">**</bpt>ProjParameters<ept id="p6">**</ept>-lomakkeessa ja <bpt id="p7">**</bpt>ProjParameterEntity<ept id="p7">**</ept>-tiedostoissa sekä yksityinen <bpt id="p8">**</bpt>IsAssociatedToMultipleFundingSourcesContract<ept id="p8">**</ept>-menetelmä <bpt id="p9">**</bpt>ProjTable<ept id="p9">**</ept>-taulukkotiedostossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Deprecation is planned for the April 2020 release wave.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnon suunniteltu vanhenemisajankohta on vuoden 2020 huhtikuun julkaisuaallon yhteydessä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Legacy workflow reports for tracking and instance status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhat työnkulkuraportit seurantaa ja ilmentymän tilaa varten</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>The legacy workflow reports for tracking and instance status are being deprecated because they are no longer referenced from the navigation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhat työnkulun raportit seurantaa ja ilmentymän tilaa varten vanhentuvat, koska niihin ei enää viitata siirtymisen yhteydessä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>The report names are WorkflowWorkflowInstanceByStatusReport and WorkflowWorkflowTrackingReport.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raporttien nimet ovat WorkflowWorkflowInstanceByStatusReport ja WorkflowWorkflowTrackingReport.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>The workflow history form can be used instead.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän sijaan käytössä on työnkulkuhistorian lomake.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Web client</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WWW-asiakasohjelma</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>Deprecated: Target timeframe for the functionality to be removed is April 2020.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: Toiminnon poiston tavoiteajankohta on vuoden 2020 huhtikuu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Dynamics 365 for Finance and Operations 10.0.1 with platform update 25</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.1 ja platform update 25</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 10.0.1 ja Platform update 25 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>The content and the functionality are subject to change.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sisältö ja toiminnot voivat muuttua.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>For more information about preview releases, see <bpt id="p1">[</bpt>Service update availability<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja ennakkojulkaisusta on kohdassa <bpt id="p1">[</bpt>Palvelupäivitysten saatavuus<ept id="p1">](../../fin-and-ops/get-started/public-preview-releases.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Deprecated APIs and potential breaking changes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentuneet ohjelmointirajapinnat ja mahdolliset tärkeimmät muutokset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Deriving from internal classes is deprecated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Johtaminen sisäisistä luokista on vanhentunut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ennen Platform update 25 -versiota oli mahdollista luoda toisessa paketissa tai moduulissa määritetystä sisäisestä luokasta tai taulusta johdettu luokka tai taulu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>This is not a safe coding practice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ei ole turvallinen koodauskäytäntö.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>As of Platform update 25, the compiler will display a warning.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platform update 25 -versiosta alkaen kääntäjä näyttää varoituksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>The compiler warning will be replaced by an error in Platform update 26.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kääntäjän varoitus korvataan Platform update 26 -versiossa virheellä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten Platform update 25 tai uudempi versio voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>This change only affects development and compile time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>Visual Studio development tools</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio -sovelluksen kehitystyökalut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>Deprecated: The warning will become a compilation error in Platform update 26.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>Overriding internal methods is deprecated</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sisäisten menetelmien ohittaminen on vanhentunut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ennen Platform update 25 -versiota oli mahdollista ohittaa johdetun luokan sellainen sisäinen menetelmä, joka oli määritetty toisessa paketissa tai moduulissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>This is not a safe coding practice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ei ole turvallinen koodauskäytäntö.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>As of Platform update 25, the compiler will display a warning.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Platform update 25 -versiosta alkaen kääntäjä näyttää varoituksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>This warning will be replaced by a compile error in Platform update 26.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä varoitus korvataan Platform update 26 -versiossa käännösvirheellä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä muutos on suorituksenaikaisesti yhteensopiva vanhojen versioiden kanssa, joten Platform update 25 tai uudempi versio voidaan ottaa käyttöön kaikissa Sandbox- tai tuotantoympäristöissä ilman, että mukautettua koodia on muokattava.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>This change only affects development and compile time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä muutos vaikuttaa vain kehitys- ja käännösaikaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Visual Studio development tools</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studio -sovelluksen kehitystyökalut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Deprecated: The warning will become a compilation error in Platform update 26.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Dynamics 365 for Finance and Operations 8.1.3 with platform update 23</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 8.1.3 ja platform update 23</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>SQL Server Reporting Services ReportViewer Control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server Reporting Services ReportViewer -ohjausobjekti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Customers can use the <bpt id="p1">**</bpt>Export<ept id="p1">**</ept> action provided by the embedded SQL Server Reporting Services (SSRS) ReportViewer control to download documents produced by Finance and Operations applications.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakkaat voivat käyttää upotetun SQL Server Reporting Services (SSRS) ReportViewer -ohjausobjektin <bpt id="p1">**</bpt>vientitoimintoa<ept id="p1">**</ept> Finance and Operations -sovellusten asiakirjojen lataamisessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>This HTML-based presentation of the report offers users a non-paginated preview of the document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä HTML-pohjainen raportin esittäminen antaa käyttäjien käyttöön asiakirjan sivuttamattoman esikatselun.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>The non-paginated nature of the HTML-based preview experience does <bpt id="p1">**</bpt>not<ept id="p1">**</ept> deliver fidelity with the physical documents ultimately produced by Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koska HTML-pohjainen esikatselukokemus on sivuttamaton, Finance and Operationsin lopulta tuottamat fyysiset asiakirjat <bpt id="p1">**</bpt>eivät<ept id="p1">**</ept> ole samanlaisia kuin tässä esikatselussa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>By fully embracing PDF as the standard format for business documents, users are able to take advantage of a modern viewing experience with improved performance when producing application reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koska PDF on otettu kattavasti liiketoiminta-asiakirjojen standardimuodoksi, käyttäjät voivat hyödyntää uutta katselukokemusta ja parannettua suorituskykyä sovelluksen raporttien luomisessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>Going forward, PDF documents will be the default format for reports rendered by Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jatkossa PDF-tiedostot tulevat olevaan Finance and Operationsin hahmontamien raporttien oletusmuoto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>This change does <bpt id="p1">**</bpt>not<ept id="p1">**</ept> impact customer scenarios where reports are distributed electronically or sent directly to printers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä muutos <bpt id="p1">**</bpt>ei<ept id="p1">**</ept> vaikuta asiakasskenaarioihin, joissa raportit jaetaan sähköisesti tai lähetetään suoraan tulostimiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>The functionality to automatically preview application reports using an embedded PDF viewer is planned for the May 2019 Platform update.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminto, jolla sovelluksen raportit voidaan esikatsella automaattisesti upotetun PDF-katseluohjelman avulla, on tulossa vuoden 2019 toukokuun Platform update -versioon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Client KPI controls</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakasohjelman tunnuslukujen ohjausobjektit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>Embedded key performance indicators (KPIs) could be modeled in Visual Studio by a developer and further customized by the end user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kehittäjä voi mallintaa upotetut tunnusluvut Visual Studiossa, ja loppukäyttäjät voivat sitten muokata niitä lisää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>The native client controls used to define KPIs have low customer uptake and rely on a developer to add trackable metrics.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tunnuslukujen määrittämiseen käytetyt alkuperäiset asiakasohjelman ohjausobjektit eivät olleet asiakkaan kannalta käteviä ja kehittäjien oli lisättävä seurattavat mittarit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>PowerBI.com service delivers world-class tooling for defining and managing KPIs based on data from external sources.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PowerBI.com-palvelu sisältää maailmanluokan työkaluja tunnuslukujen määrittämiseen ja hallitsemiseen ulkoisten lähteiden tietojen perusteella.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>In an upcoming release, we plan to enable you to embed solutions hosted on PowerBI.com in application workspaces.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulevassa julkaisussa on käyttäjälle on tarkoitus antaa mahdollisuus upottaa PowerBI.comissa isännöityjä ratkaisuja sovelluksen työtiloihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>This update will prevent developers from introducing new KPI controls in Visual Studio designer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä päivitys estää kehittäjiä ottamasta käyttöön uusia tunnuslukujen ohjausobjekteja Visual Studion suunnitteluohjelmassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>Deprecated APIs and future breaking changes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentuneet ohjelmointirajapinnat ja tulevat tärkeimmät muutokset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>Field groups containing invalid field references</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virheellisiä kenttäviitteitä sisältävät kenttäryhmät</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>It is possible for table metadata definitions to have field groups containing invalid field references.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taulun metatietomääritelmissä voi olla virheellisiä kenttäviittauksia sisältäviä kenttäryhmiä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>This issue is currently categorized as a <bpt id="p1">*</bpt>compiler warning<ept id="p1">*</ept> rather than an <bpt id="p2">*</bpt>error<ept id="p2">*</ept>, meaning that the deployable package creation and deployment can proceed without fixing the issue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ongelma on luokiteltu tällä hetkellä <bpt id="p1">*</bpt>kääntäjän varoitukseksi<ept id="p1">*</ept> eikä <bpt id="p2">*</bpt>virheeksi<ept id="p2">*</ept>, minkä vuoksi käyttöönotettavan paketin luonti ja käyttöönotto voi jatkua ongelmaa korjaamatta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>If deployed, this can cause runtime failures in Financial Reporting and SQL Server Reporting Services (SSRS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttöönotettuna tämä ongelma voi aiheuttaa suorituksenaikaisia virheitä talousraportoinnissa ja SQL Server Reporting Servicesissa (SSRS).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>To fix this issue:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ongelman korjaaminen:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>1. Remove the invalid field reference from the table field group definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1. Poista virheellinen kenttäviite taulun kenttäryhmämääritelmästä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>2. Recompile.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2. Käännä uudelleen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>3. Ensure any warnings or errors are addressed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3. Varmista, että kaikki varoitukset tai virheet käsitellään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>This warning will be replaced by a compile error in the future.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä varoitus korvataan jatkossa käännösvirheellä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>Visual Studio development tools.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visual Studion kehitystyökalut.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>All.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>Deprecated: The warning will become a compile-time error in the future.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: Varoituksesta tulee jatkossa käännöksenaikainen virhe.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>We're currently targeting Platform update 30.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällä hetkellä tavoitteena on Platform update 30.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Complete list</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täydellinen luettelo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>To access the full list of APIs that are being deprecated, see <bpt id="p1">[</bpt>Deprecation of methods and meta data elements<ept id="p1">](deprecation-deletion-apis.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täydellinen vanhentumassa olevien ohjelmointirajapintojen luettelo on kohdassa <bpt id="p1">[</bpt>Menetelmien ja metatietojen elementtien poisto<ept id="p1">](deprecation-deletion-apis.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Dynamics 365 for Finance and Operations 8.1 with platform update 20</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 8.1 ja platform update 20</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Batch transfer rules for subledger journal account entries</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alareskontran kirjauskansion kirjanpitovientien eräsiirtosäännöt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>The Synchronous transfer mode is being deprecated in the General ledger parameters.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Synkrononinen siirtotila on vanhentunut kirjanpitotilin parametreissä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä tila korvataan vain asynkronisella ja ajoitetulla erällä, joka on jo olemassa siirtovaihtoehtona.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>For additional information, see the <bpt id="p1">[</bpt>General Ledger Parameters – Batch transfer rules<ept id="p1">](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules)</ept> blog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja on <bpt id="p1">[</bpt>Kirjanpitoparametrit - eräsiirron säännöt<ept id="p1">](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules)</ept> -blogissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>We are removing the synchronous option due to performance impact to the system.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistamme synkronisen vaihtoehdon, koska se vaikuttaa järjestelmän suorituskykyyn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Asynchronous and scheduled batch are options to use in place of Synchronous.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Synkrononisen vaihtoehdon sijasta käytetään asynkronista ja ajoitettua erää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>General Ledger, Accounts payable, Accounts Receivable, Procurement, Expense</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitotili, ostoreskontra, myyntireskontra, hankinta, kulut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Deprecated: Target timeframe for the functionality to be removed is the 10.0 version.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: toiminnon poiston tavoiteajankohta on versio 10.0.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>Electronic reporting for Russia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sähköinen raportointi Venäjää varten</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>Feature for configuring .txt and .xml file formats of declarations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminto ilmoitusten .txt- ja .xml-tiedostomuotojen määrittämiseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Replaced with Electronic reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korvataan sähköisellä raportoinnilla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>General Ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpito</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>Financial reports generator for Russia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rahoitusraporttien luonti Venäjää varten</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>A tool for setting up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tiedonkeruun määritystyökalu kirjanpitoa ja veroraportteja varten sekä tietojen viemiseksi XLS- ja DOC-raporttimalleihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>Functional parts: Export data to XLS and DOC report templates, queries, fixed requisites are removed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnalliset osat: tietojen vienti XLS- ja DOC-raporttimalleihin, kyselyt, kiinteät edellytykset poistetaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Removed parts are replaced with Electronic reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poisteut osat korvataan sähköisellä raportoinnilla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Financial reports setup user interface should be used for setting up data collection rules by GL accounts or tax registers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilinpäätösten määrityksen käyttöliittymää olisi käytettävä tiedonkeruusääntöjen määrittämiseen kirjanpitotilien tai verorekistereiden mukaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>Export data to various file types, fixed requisites and query-like data collection rules should be configured in Electronic reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sähköisessä raportoinnissa olisi määritettävä äännöt, jotka koskevat tietojen vientiä erilaisiin tiedostotyyppeihin, kiinteitä edellytyksiä ja kyselyjen kaltaisten tietojen keruuta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>General ledger.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitotili.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source>Integration with external providers for sending electronic reporting through communication channels for Russia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integrointi ulkoisten toimittajien kanssa sähköisen raportoinnin lähettämiseksi viestintäkanavien kautta Venäjää varten</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source>Feature exporting generated electronic files of declarations to folder for further sending to official providers of electronic reporting as well as importing state back.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ilmoitusten luotujen sähköisten tiedostojen vienti kansioon, josta ne lähetetään edelleen sähköisen raportoinnin virallisille palveluntarjoajille, sekä tilan tuonti takaisin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>Replaced with electronic messages configurable feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korvattu sähköisten viestien määritettävällä toiminnolla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>General Ledger, Tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitotili, vero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>Profit tax register wizard</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voittojen verorekisterin ohjattu toiminto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Feature for creating templates for new profit tax registers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omaisuus, jolla luodaan uusia voittojen verorekisterimalleja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>This feature creates X++ objects for new registers, which are then  created as templates with the appropriate calculation logic added in.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ominaisuudella luodaan uusien rekisteröiden X++-objekteja, jotka sitten luodaan soveltuvan laskentalogiikan sisältävinä malleina.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>Feature is not compatible with the Dynamics 365 for Finance and Operations extensibility model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminto ei ole yhteensopiva Dynamics 365 for Finance and Operationsin laajennettavuusmallin kanssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Finance and Operations 8.1 platform update 20 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source>Dynamics 365 for Finance and Operations 8.0 with platform update 15</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations 8.0 ja platform update 15</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>No features have been removed or deprecated with this release.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version ominaisuus ei ole vanhentunut.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ympäristöpäivitys 15 on kumulatiivinen, ja siinä on uusia tai ympäristöpäivityksistä 13, 14 ja 15 muuttuneita ominaisuuksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations, Enterprise edition 7.3 ja platform update 12</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>Personalized product recommendations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kohdennetut tuotesuositukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>For more information, see <bpt id="p1">[</bpt>Personalized product recommendations<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja on kohdassa <bpt id="p1">[</bpt>Mukautetut tuotesuositukset<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotesuosituspalvelun nykyinen versio ollaan poistamassa, sillä toiminto suunnitellaan uudelleen käyttämällä parempaa algoritmia ja uudempia vähittäismyyntiin soveltuvia ominaisuuksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ominaisuus on kuitenkin tarkoitus palauttaa kevään 2018 jälkeen uutta suosituspalvelua varten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>Personalized product recommendations in POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautetut tuotesuositukset myyntipisteessä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="369">
+          <source>Removed as of February 15, 2018.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu 15.2.2018.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="370">
+          <source>This affects customers running Dynamics 365 for Operations 1611 and later.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä koskee asiakkaita, joiden käytössä on Dynamics 365 for Operations 1611 ja sitä uudempi versio.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="371">
+          <source>Extension of the list of Electronic reporting (ER) functions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sähköisen raportoinnin (ER) toimintoluettelon laajennus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="372">
+          <source>The possibility to introduce custom functions to be used in the ER expression builder (for more information, see <bpt id="p1">[</bpt>Extend the list of Electronic reporting functions<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)</ept>) is not supported any more.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mahdollisuutta käyttää mukautettuja toimintoja ER-lausekkeenmuodostimessa ei tueta enää. (Lisätietoja on kohdassa <bpt id="p1">[</bpt>Sähköisen raportoinnin toimintoluettelon laajentaminen<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="373">
+          <source>Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sähköisen raportoinnin ohjelmointirajapintojen muutosten vuoksi, ohjelmointirajapinnan sisäisten toimintojen kutsuminen ER-lausekkeenmuodostimesta muuttui sisäiseksi eikä sitä voi enää laajentaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="374">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="375">
+          <source>Code sealing initiative</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koodin sulkemisaloite</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="376">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="377">
+          <source>None.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei mitään.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="378">
+          <source>Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aina kun uutta sisäistä tarvitaan, uusi laajennuspyyntö on osoitettava ER-kehikkotiimille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="379">
+          <source>As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER-tiimi kehittää pyydettyä toimintoa, mutta ongelman voi väliaikaisesti välttää ohjelmoimalla tarvittavan logiikan mukautetun sovellusluokan menetelmänä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="380">
+          <source>This method can be accessed in an ER expression as a property of the added ER data source of the <bpt id="p1">**</bpt>Application\Class<ept id="p1">**</ept> type that refers to that custom application class.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä menetelmää voi käyttää ER-lausekkeessa mukautettuun sovellusluokkaan viittaavan <bpt id="p1">**</bpt>Sovellus\luokka<ept id="p1">**</ept>-tyypin lisätyn ER-tietolähteen ominaisuutena.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="381">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="382">
+          <source>Electronic reporting framework</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sähköisen raportoinnin kehikko</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="383">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="384">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="385">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="386">
+          <source>Removed as of Dynamics 365 for Finance and Operations, Enterprise edition 7.3.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Finance and Operations, Enterprise edition 7.3 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="387">
+          <source>Inventory by item group and Inventory by inventory dimension aging reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erääntymisraportti varastoryhmittäin ja Erääntymisraportti varastodimensioittain</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="388">
+          <source>These two reports are no longer supported in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations ei enää tue raporttia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="389">
+          <source>Instead, the <bpt id="p1">**</bpt>Inventory aging<ept id="p1">**</ept> report can be used to improve the user experience.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakaskokemusta voi sen sijaan parantaa <bpt id="p1">**</bpt>Varaston erääntyminen<ept id="p1">**</ept> -raportin avulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="390">
+          <source><bpt id="p1">**</bpt>Reason for deprecation<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="391">
+          <source>Duplicate functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sama toiminto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="392">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="393">
+          <source>Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="394">
+          <source>The two reports have been replaced by the <bpt id="p1">**</bpt>Inventory aging<ept id="p1">**</ept> report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksi raporttia on korvattu <bpt id="p1">**</bpt>Varaston erääntyminen<ept id="p1">**</ept> -raportilla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="395">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="396">
+          <source>Inventory management, Cost management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varastonhallinta, kustannushintojen hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="397">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="398">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="399">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="400">
+          <source>Deprecated: The menu items for the two reports have been removed in version 7.3.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: kahden raportin valikkovaihtoehdot on poistettu versiossa 7.3.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="401">
+          <source>However, the code for the reports remains in the product.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raporttien koodi on kuitenkin edelleen tuotteessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="402">
+          <source>The plan is to remove the code in a future release.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koodi on tarkoitus poistaa tulevissa versioissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="403">
+          <source>Power BI content packs available on AppSource</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI -sisältöpaketit ovat saatavilla AppSourcessa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="404">
+          <source>The <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Financial performance<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Retail channel performance<ept id="p3">**</ept> content packs, available on the <bpt id="p4">[</bpt>Microsoft AppSource<ept id="p4">](https://appsource.microsoft.com)</ept> site, are deprecated as a consequence of product updates in Microsoft Power BI.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kustannushintojen hallinta<ept id="p1">**</ept>-, <bpt id="p2">**</bpt>Taloudellinen suorituskyky<ept id="p2">**</ept>- ja <bpt id="p3">**</bpt>Retail Channel Performance<ept id="p3">**</ept> -sisältöpaketit, jotka ovat saatavilla <bpt id="p4">[</bpt>Microsoft AppSource<ept id="p4">](https://appsource.microsoft.com)</ept> -sivustossa, ovat vanhentuneet Microsoft Power BI:n tuotepäivitysten vuoksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="405">
+          <source>System administration forms used to deploy these content packs to PowerBI.com are also being deprecated in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myös järjestelmän hallintalomakkeet, joilla nämä sisältöpaketit otetaan käyttöön Pack PowerBI.comissa, ovat vanhentumassa Finance and Operationsissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="406">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="407">
+          <source>Product updates in Microsoft Power BI.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Power BI:n tuotepäivitykset.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="408">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="409">
+          <source>The <bpt id="p1">**</bpt>Cost management<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Financial performance<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Retail channel performance<ept id="p3">**</ept> content packs, available on the <bpt id="p4">[</bpt>AppSource<ept id="p4">](https://appsource.microsoft.com)</ept> site, are being replaced by analytical applications which allow for solution integrations at the database level.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kustannushintojen hallinta<ept id="p1">**</ept>-, <bpt id="p2">**</bpt>Taloudellinen suorituskyky<ept id="p2">**</ept>- ja <bpt id="p3">**</bpt>Retail Channel Performance<ept id="p3">**</ept> -sisältöpaketit, jotka ovat saatavilla <bpt id="p4">[</bpt>AppSource<ept id="p4">](https://appsource.microsoft.com)</ept>-sivustossa, korvataan analyysisovelluksilla, jotka mahdollistavat ratkaisujen integraation tietokantatasolla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="410">
+          <source>For more information about analytical applications, see <bpt id="p1">[</bpt>Embedded Power BI in workspackes<ept id="p1">](../../dev-itpro/analytics/embed-power-bi-workspaces.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja analyysisovelluksista on kohdassa <bpt id="p1">[</bpt>Embedded Power BI työtiloissa<ept id="p1">](../../dev-itpro/analytics/embed-power-bi-workspaces.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="411">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="412">
+          <source>Cost management, Finance, and Retail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kustannushintojen hallinta, myyntitiedot ja vähittäismyynti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="413">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="414">
+          <source>Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vain pilvipalvelut (PowerBI.com-integraatiota ei tueta paikallisissa käyttöönotoissa).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="415">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="416">
+          <source>Deprecated: Target timeframe for the functionality removal is Q2 2018.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2018 2. vuosineljännes.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="417">
+          <source>Standard UI in data management workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietojen hallinnan työtilan vakiokäyttöliittymä</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="418">
+          <source>The standard UI in data management is the legacy UI, which is the default UI presented to the users when they visit the data management workspace.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietojen hallinnan vakiokäyttöliittämä on käyttöliittymä, jonka käyttäjät oletusarvoisesti näkevät, kun he ovat tietojen hallinnan työtilassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="419">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="420">
+          <source>We are investing in providing new user experiences in the new UI.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Panostus tehdään uuden käyttöliittymän uusiin asiakaskokemuksiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="421">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="422">
+          <source>The new UI called <bpt id="p1">*</bpt>Enhanced views<ept id="p1">*</ept> is replacing the old UI.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi <bpt id="p1">*</bpt>laajennetuiksi näkymiksi<ept id="p1">*</ept> kutsuttu käyttöliittymä korvaa vanhan käyttöliittymän.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="423">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="424">
+          <source>Data management workspace</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietojen hallinnan työtila</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="425">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="426">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="427">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="428">
+          <source>Deprecated: Target timeframe for the functionality to be removed is Q2 2018.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2018 2. vuosineljännes.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="429">
+          <source>Excise, Sales Tax, Service Tax for India</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valmistevero, arvonlisävero, Intian palveluvero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="430">
+          <source>These taxes have been subsumed into Indian GST.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nämä verot on sisällytetty Intian GST-veroon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="431">
+          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="432">
+          <source>These taxes have been subsumed into Indian GST.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nämä verot on sisällytetty Intian GST-veroon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="433">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="434">
+          <source>Indian GST</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Intian GST-vero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="435">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="436">
+          <source>Tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="437">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="438">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="439">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="440">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="441">
+          <source>File Validation Utility (FVU) for India</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Intian tiedoston tarkistuksen apuohjelma (FVU)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="442">
+          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="443">
+          <source>Lack of customer usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimintoa ei käytetty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="444">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="445">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="446">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="447">
+          <source>Indian withholding tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Intian ennakonpidätys</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="448">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="449">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="450">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="451">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="452">
+          <source>TDS/TCS certificate for India</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Intian TDS/TCS-varmenne</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="453">
+          <source>Users can download this from the government portal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjät voivat ladata tämän julkishallinnon portaalista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="454">
+          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="455">
+          <source>Lack of customer usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimintoa ei käytetty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="456">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="457">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="458">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="459">
+          <source>Indian withholding tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Intian ennakonpidätys</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="460">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="461">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="462">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="463">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="464">
+          <source>Export/import (EXIM) incentive scheme for India</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Intian tuonnin ja viennin kannustinmalli (EXIM)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="465">
+          <source><bpt id="p1">**</bpt>Reason for removal or deprecation<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="466">
+          <source>Lack of customer usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimintoa ei käytetty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="467">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="468">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="469">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="470">
+          <source>Import and export</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuo ja vie</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="471">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="472">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="473">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="474">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="475">
+          <source>Dynamics 365 for Retail 7.2</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Retail 7.2</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="476">
+          <source>Personalized product recommendations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kohdennetut tuotesuositukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="477">
+          <source>Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="478">
+          <source>For more information, see <bpt id="p1">[</bpt>Personalized product recommendations<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja on kohdassa <bpt id="p1">[</bpt>Mukautetut tuotesuositukset<ept id="p1">](../../retail/personalized-product-recommendations.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="479">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="480">
+          <source>We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotesuosituspalvelun nykyinen versio ollaan poistamassa, sillä toiminto suunnitellaan uudelleen käyttämällä parempaa algoritmia ja uudempia vähittäismyyntiin soveltuvia ominaisuuksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="481">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="482">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="483">
+          <source>However, after Spring 2018, we plan to bring back this feature to leverage a new recommendation service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ominaisuus on kuitenkin tarkoitus palauttaa kevään 2018 jälkeen uutta suosituspalvelua varten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="484">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="485">
+          <source>Personalized product recommendations in POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautetut tuotesuositukset myyntipisteessä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="486">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="487">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="488">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="489">
+          <source>Removed as of February 15, 2018.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu 15.2.2018.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="490">
+          <source>This affects customers running Dynamics 365 for Retail 7.2  and later.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä koskee asiakkaita, joiden käytössä on Dynamics 365 for Retail 7.2 ja sitä uudempi versio.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="491">
+          <source>Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Finance and Operations, Enterprise edition heinäkuu 2017 ja platform update 8</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="492">
+          <source>Currency conversion for accounting and reporting currencies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuuttamuunnos kirjanpito- ja raportointivaluutoille</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="493">
+          <source>Currency conversion for accounting and reporting currencies was introduced when the euro was introduced.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuuttamuunnos kirjanpito- ja raportointivaluutoille otettiin käyttöön, kun euro otettiin otettiin käyttöön.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="494">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="495">
+          <source>Limited usage and addition of the Copy legal entity functionality as a replacement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoitettu käyttö ja Kopioi yritys -toiminnon lisäys korvauksena.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="496">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="497">
+          <source>No, but the Copy legal entity and Configurations features were added to make it easier to move to a company that has changing core requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei, mutta Kopioi yritys- ja Konfiguroinnit-ominaisuudet lisättiin, jotta olisi helppo siirtää yritys, jolla on muuttuvat ydintarpeet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="498">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="499">
+          <source>Financial management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallinto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="500">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="501">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="502">
+          <source>Warehouse mobile devices portal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varaston mobiililaiteportaali</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="503">
+          <source>Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="504">
+          <source>This component is no longer supported in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations ei enää tue tätä osaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="505">
+          <source>A native app that improves the user experience has replaced the functionality of WMDP.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alkuperäinen, käyttäjäkokemusta parantava sovellus, on korvannut WMDP-toiminnot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="506">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="507">
+          <source>Duplicate functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sama toiminto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="508">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="509">
+          <source>Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="510">
+          <source>This feature has been replaced by Finance and Operations - Warehousing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations – varastointi on korvannut tämän ominaisuuden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="511">
+          <source>For more information about setup and prerequisites, see <bpt id="p1">[</bpt>Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing<ept id="p1">](../../supply-chain/warehousing/install-configure-warehousing-app.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja asetuksista ja edellytyksistä on kohdassa <bpt id="p1">[</bpt>Microsoft Dynamics 365 for Finance and Operationsin asennus ja määritys – varastointi<ept id="p1">](../../supply-chain/warehousing/install-configure-warehousing-app.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="512">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="513">
+          <source>Warehouse management, Transportation management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varaston hallinta, kuljetusten hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="514">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="515">
+          <source>Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="516">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="517">
+          <source>Deprecated: Target timeframe for the functionality to be removed is Q4 2019.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2019 4. vuosineljännes.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="518">
+          <source>Advanced bank reconciliation matching rule for manual matching</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pankkitilin täsmäytyksen lisätoimintojen manuaalisen täsmäytyksen täsmäytyssääntö</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="519">
+          <source>A matching rule was used to select and mark a bank document when documents were manually matched in the reconciliation worksheet.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täsmäytyssäännöllä valittiin ja merkittiin pankkitosite, kun asiakirjat täsmäytettiin manuaalisesti täsmäytyslaskentataulukossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="520">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="521">
+          <source>Limited usage.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoitettu käyttö.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="522">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="523">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="524">
+          <source>Column filtering capabilities should be used to find documents for reconciliation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täsmäytettäviä asiakirjoja etsitään sarakkeen suodatusominaisuuksilla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="525">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="526">
+          <source>Cash and bank management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksuliikenteen hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="527">
+          <source><bpt id="p1">**</bpt>Deployment option<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Käytön asetukset<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="528">
+          <source>All</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="529">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="530">
+          <source>Removed as of July 2017.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu heinäkuusta 2017 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="531">
+          <source>Dynamics 365 for Operations 1611 with platform update 3</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Operations 1611 ja platform update 3</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="532">
+          <source>AEB payment formats for Spain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Espanjan AEB-maksumuodot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="533">
+          <source>The Consejo Superior Bancario payment formats were used to send remittance files to the bank for customer payments and vendor payments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Consejo Superior Bancario -maksumuotoja käytettiin maksusuoritustiedostojen lähettämiseen pankkiin asiakkaan maksuja ja toimittajamaksuja varten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="534">
+          <source>The content of these formats was determined by the Asociación Española de Banca.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotojen sisällön määritti Asociación Española de Banca.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="535">
+          <source>It covers Cuaderno 19, 32, 58, 34.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siihen sisältyy Cuaderno 19, 32, 58, 34.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="536">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="537">
+          <source>The payment formats are no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksumuotoja ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="538">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="539">
+          <source>Yes, ISO20022 Credit transfer and Direct debit payment formats for Spain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, Espanjan ISO20022-tilisiirto ja suoraveloituksen maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="540">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="541">
+          <source>Accounts payable, Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra, ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="542">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="543">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="544">
+          <source>Bank payments transfer for Lithuania</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Liettuan pankkiohjelmamaksujen siirto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="545">
+          <source>Bank payment transfers were generated and printed by using the Payment transfer (LT) export format for Lithuania.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pankkiohjelmamaksujen siirrot luotiin ja tulostettiin Liettuan maksunsiirron (LT) vientimuodon avulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="546">
+          <source>The Lithuanian market began to use LITAS, the unified electronic banking system, in 2005.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Liettuan markkina-alue aloitti LITASin, yhdistetyn sähköisen pankkijärjestelmän, käytön vuonna 2005.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="547">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="548">
+          <source>The payment formats are no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksumuotoja ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="549">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="550">
+          <source>Yes, ISO20022 Credit transfer payment format for Lithuania</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, Liettuan ISO20022-tilisiirron maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="551">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="552">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="553">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="554">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="555">
+          <source>BBS Direkte Remittering payment formats for Norway</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Norjan BBS Direkte Remittering -maksumuodot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="556">
+          <source>BBS Direkte Remittering payment formats include customer payment collection export (direct debit) and return message import.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BBS Direkte Remittering -maksumuotoja ovat asiakkaan maksun perittävän vienti (suoraveloitus) ja palautussanoman tuonti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="557">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="558">
+          <source>The payment formats are no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksumuotoja ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="559">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="560">
+          <source>The AvtaleGiro customer payment format for Norway can be used to generate direct debit messages.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Norjan AvtaleGiro- asiakkaan maksumuotoa voidaan käyttää suoraveloituksen sanomien luomiseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="561">
+          <source>Return message import will be implemented in future releases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Palautussanoman tuominen toteutetaan tulevissa versioissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="562">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="563">
+          <source>Accounts payable, Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra, ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="564">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="565">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="566">
+          <source>Chart of Accounts tool for Spain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Espanjan tilikartta-työkalu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="567">
+          <source>This tool is used when a chart of accounts in Spain requires major changes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä työkalua käytetään, kun Espanjan tilikartta edellyttää suuria muutoksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="568">
+          <source>Users can import a new chart of accounts in Microsoft Excel or text format, and can also import financial statements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjä voi tuoda uuden tilikartan Microsoft Excel- tai tekstimuodossa ja tuoda myös raportteja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="569">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="570">
+          <source>Limited usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoitettu käyttö</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="571">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="572">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="573">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="574">
+          <source>General ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpito</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="575">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="576">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="577">
+          <source>Dom80 payment format for Belgium</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belgian Dom80-maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="578">
+          <source>Legacy Belgian payment format for payment collection (direct debit).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanha Belgian maksukehotuksen maksumuoto (suoraveloitus).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="579">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="580">
+          <source>The payment format is no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä maksumuotoa ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="581">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="582">
+          <source>Yes, ISO 20022 Direct debit payment format for Belgium</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä Belgian SO 20022 -suoraveloituksen maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="583">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="584">
+          <source>Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="585">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="586">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="587">
+          <source>DTA/EZAG payment formats for Switzerland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sveitsin DTA/EZAG-maksumuodot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="588">
+          <source>DTA/EZAG formats are integrated into the ESR system, because they can carry on the reference number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DTA/EZAG-muodot integroidaan ESR-järjestelmään, koska niissä voidaan käsitellä viitenumeroa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="589">
+          <source>Because the reference number isn’t mandatory, these formats can be used to process any vendor payments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koska viitenumero ei ole pakollinen, näitä muotoja voidaan käyttää kaikkien toimittajamaksujen käsittelyssä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="590">
+          <source>These formats are used by companies that have a bank account in a location other than “Postfinance.”</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotoja käytetään yrityksissä, joissa on pankkitili muussa kuin "Postfinance"-sijainnissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="591">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="592">
+          <source>The payment formats are no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksumuotoja ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="593">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="594">
+          <source>Yes, ISO20022 Credit transfer payment format for Switzerland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, Sveitsin ISO20022-tilisiirron maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="595">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="596">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="597">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="598">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="599">
+          <source>EDIFACT-DIRDEB payment format for Austria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Itävallan ISOEDIFACT-DIRDEB-suoraveloituksen maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="600">
+          <source>EDIFACT-DIRDEB payment format for payment collection (direct debit).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksukehotuksen EDIFACT-DIRDEB-maksumuoto (suoraveloitus).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="601">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="602">
+          <source>The payment format is no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä maksumuotoa ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="603">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="604">
+          <source>Yes, ISO 20022 Direct debit payment format for Austria</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, Itävallan ISO 20022 -suoraveloituksen maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="605">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="606">
+          <source>Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="607">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="608">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="609">
+          <source>EDIVAT for Belgium</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belgian EDIVAT</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="610">
+          <source>EDIVAT is an obsolete Belgian standard for electronic declaration via secure mail.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EDIVAT on Belgian vanhentunut standardi sähköiselle ilmoitukselle suojatun sähköpostin kautta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="611">
+          <source>Microsoft Dynamics AX 2012 retains the read-only solution to enable access to the historical data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012 säilyttää vain luku -ratkaisun historiallisten tietojen käyttämiseksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="612">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="613">
+          <source>The functionality is no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä toimintoa ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="614">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="615">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="616">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="617">
+          <source>General ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpito</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="618">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="619">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="620">
+          <source>eGiro EDIFACT CREMUL payment import format for Norway</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Norjan eGiro EDIFACT CREMUL- maksun tuontimuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="621">
+          <source>eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Message) standard that is used for automatic posting of customer payments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eGiro perustuu YK:n kansainväliseen EDIFACT CREMUL (Multiple Credit Advice Message) -standardiin, jota käytetään asiakasmaksujen automaattisessa kirjauksessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="622">
+          <source>In Microsoft Dynamics AX, eGiro is implemented as a customer payment import format.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX:ssä eGiro toteutetaan asiakkaan maksun tuontimuotona.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="623">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="624">
+          <source>The payment format is no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä maksumuotoa ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="625">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="626">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="627">
+          <source>The format will be replaced by ISO 20022 statement import formats in future releases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="628">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="629">
+          <source>Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="630">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="631">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="632">
+          <source>External inventory for Poland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Puolan ulkoinen varasto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="633">
+          <source>Evidence of goods that are taken from a vendor for sales without purchase.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tavaroiden tunnistetiedot, jotka saadaan toimittajan myynnistä ilman ostoa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="634">
+          <source>Goods that are handled in external inventory don’t affect standard inventory, and can be sold and then purchased automatically.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ulkoisessa varastossa käsitellyt tavarat eivät vaikuta vakiovarastoon ja ne voidaan myydä ja ostaa automaattisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="635">
+          <source>This process creates real inventory movements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä prosessi luo todelliset varastosiirrot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="636">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="637">
+          <source>Replaced by another feature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korvattu toisella toiminnolla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="638">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="639">
+          <source>Yes, the core Inbound consignment functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, saapuvan tavaralähetyksen perustoiminnot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="640">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="641">
+          <source>Accounts payable, Inventory management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra, varastonhallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="642">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="643">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="644">
+          <source>Financial reports generator for Eastern Europe</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Itä-Euroopan raportin muodostustoiminto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="645">
+          <source>A tool is used to set up data collection for accounting and tax reports, and to export data to XLS and DOC report templates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työkalua käytetään tiedonkeruun määritykseen kirjanpitoa ja veroraportteja varten sekä tietojen viemiseksi XLS- ja DOC- raporttimalleihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="646">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="647">
+          <source>Limited usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoitettu käyttö</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="648">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="649">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="650">
+          <source>The tool will be replaced by Electronic reporting configurations in future releases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työkalu korvataan sähköiset raportoinnin konfiguraatioilla tulevissa julkaisuversioissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="651">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="652">
+          <source>General Ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpito</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="653">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="654">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="655">
+          <source>Import of customer payment transactions for Finland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suomen asiakasmaksutapahtumien tuominen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="656">
+          <source>You can select an import format for Finnish payments to import customer payment transactions from an external file that the bank provides.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit valita Suomen maksujen tuontimuodon asiakasmaksutapahtumien tuomiselle pankin antamasta ulkoisesta tiedostosta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="657">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="658">
+          <source>The payment format is no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä maksumuotoa ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="659">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="660">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="661">
+          <source>The format will be replaced by ISO 20022 statement import formats in future releases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="662">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="663">
+          <source>Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="664">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="665">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="666">
+          <source>Import of payment transactions into a general ledger journal for Finland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suomen maksutapahtumien tuominen kirjanpidon kirjauskansioon</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="667">
+          <source>A format that is specific to Finland is used to import accounting transactions into the general ledger.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suomen erityismuotoa käytetään kirjanpidon tapahtumien tuomiseksi kirjanpitoon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="668">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="669">
+          <source>The payment format is no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä maksumuotoa ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="670">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="671">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="672">
+          <source>The format will be replaced by ISO 20022 statement import formats in future releases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muoto korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="673">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="674">
+          <source>Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="675">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="676">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="677">
+          <source>Integration with Isabel synchronized (CIS) for Belgium</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belgian Isabel-synkronoitu integrointi (CIS)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="678">
+          <source>Isabel is the framework for electronic banking in Europe and is a de-facto standard in Belgium.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Isabel on Euroopan sähköisen maksuliikenteen ja tiedonsiirron yleinen standardi Belgiassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="679">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="680">
+          <source>Integration with Isabel client has been discontinued.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integrointi Isabel-asiakasohjelmaan on lopetettu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="681">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="682">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="683">
+          <source>The payment formats that are no longer used are replaced by ISO20022 Credit transfer payment format for Belgium.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksumuodot, joita ei voi enää käyttää, korvataan ISO20022-tilisiirron maksumuodolla Belgiassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="684">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="685">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="686">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="687">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="688">
+          <source>Modifications in the chart of accounts and accounting rules for Spain</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Espanjan tilikartan ja kirjanpitosääntöjen muutokset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="689">
+          <source>This feature is used for changes in the chart of accounts and accounting rules in Spain.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä toimintoa käytetään Espanjan tilikartan ja kirjanpitosääntöjen muutoksiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="690">
+          <source>It maps accounts to help transform the old chart of accounts into the new chart of accounts, and compares the previous fiscal year with the new fiscal year, even if they were posted to different account numbers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se yhdistää tilejä ja auttaa vanhan tilikartan muuttamisessa uudeksi tilikartaksi ja vertaa edellistä tilikautta uuteen tilikauteen, vaikka ne on kirjattu eri tilinumeroille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="691">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="692">
+          <source>Limited usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoitettu käyttö</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="693">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="694">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="695">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="696">
+          <source>General ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpito</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="697">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="698">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="699">
+          <source>Pagamento Fornittori vendor payment format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajan Pagamento Fornittori -maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="700">
+          <source>Legacy Italian payment format for credit transfers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanha Italian tilisiirron maksumuoto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="701">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="702">
+          <source>The payment format is no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä maksumuotoa ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="703">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="704">
+          <source>Yes, ISO20022 Credit transfer payment format for Italy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, Italian ISO20022-tilisiirron maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="705">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="706">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="707">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="708">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="709">
+          <source>Payment export formats for Estonia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Viron maksun vientimuodot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="710">
+          <source>The Telehansa and Teleservice formats are used for bank payment export.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pankin maksun viennissä käytetään Telehansa- ja Teleservice-muotoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="711">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="712">
+          <source>The payment formats are no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksumuotoja ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="713">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="714">
+          <source>Yes, ISO20022 Credit transfer payment format for Estonia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, Viron ISO20022-tilisiirron maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="715">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="716">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="717">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="718">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="719">
+          <source>Payment file archive for Norway</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Norjan maksutiedostoarkisto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="720">
+          <source>When payment files are generated, the file archive automatically archives all files that are created, even files that were previously written or read.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun maksutiedostot on luotu, tiedostoarkistoon arkistoidaan kaikki luodut tiedostot, vaikka tiedostot on aiemmin kirjoitettu tai luettu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="721">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="722">
+          <source>Replaced by another feature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korvattu toisella toiminnolla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="723">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="724">
+          <source>Yes, Electronic reporting archived jobs</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, sähköisen raportoinnin arkistoidut työt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="725">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="726">
+          <source>Accounts payable, Accounts receivable, Organization administration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra, myyntireskontra, organisaation hallinto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="727">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="728">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="729">
+          <source>Payment import formats for Estonia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Viron maksun tuontimuodot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="730">
+          <source>The Telehansa and TeleTeenus formats are used for bank payment import.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pankin maksun tuonnissa käytetään Telehansa- ja TeleTeenus-muotoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="731">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="732">
+          <source>The payment formats are no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksumuotoja ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="733">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="734">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="735">
+          <source>The formats will be replaced by ISO 20022 statement import formats in future releases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muodot korvataan ISO 20022- tiliotteen tuontimuodoilla tulevissa versioissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="736">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="737">
+          <source>Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="738">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="739">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="740">
+          <source>Payroll information in Human Resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Henkilöstöhallinnon palkanlaskentatiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="741">
+          <source>Human Resources Payroll information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Henkilöstöhallinnon palkanlaskentatiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="742">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="743">
+          <source>This functionality has been replaced by core Payroll and Human Resources pages.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Palkanlaskennan ja Henkilöstöhallinnan perussivut ovat korvanneet tämän ominaisuuden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="744">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="745">
+          <source><bpt id="p1">**</bpt>Benefits<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Earnings<ept id="p2">**</ept>, and other related pages that were previously in US Payroll have been reconfigured, and are now part of the core Human Resources configuration to help support external payroll processing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Edut<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Ansiot<ept id="p2">**</ept> ja muut liittyvät Yhdysvaltojen palkanlaskenta -kohdassa olleet sivut on määritetty uudelleen ja sisältyvät nyt henkilöstöhallinnon perusmäärityksiin. Tämä auttaa tukemaan ulkoista palkanlaskennan käsittelyä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="746">
+          <source>This functionality is accessed by using the <bpt id="p1">**</bpt>Human Resources 1<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Payroll<ept id="p2">**</ept> configuration key.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimintoa käytetään valitsemalla <bpt id="p1">**</bpt>Henkilöstöhallinta 1<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Palkanlaskenta<ept id="p2">**</ept>-määritysavain.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="747">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="748">
+          <source>Human Resources, Payroll</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Henkilöstöhallinto, palkanlaskenta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="749">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="750">
+          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="751">
+          <source>Performance management goal workflow</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suorituskyvyn hallintatavoite -työnkulku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="752">
+          <source>Performance management includes goal management and integration with performance reviews.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suorituskyvyn hallinta sisältää tavoitteiden hallinnan ja integroinnin suorituskykyarvioiden kanssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="753">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="754">
+          <source>Performance management was redesigned, and the number of goal pages was reduced to simplify the process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suorituskyvyn hallinta on suunniteltu uudelleen ja tavoitesivujen lukumäärää vähennettiin prosessin yksinkertaistamiseksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="755">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="756">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="757">
+          <source>Goals are visible to managers through the Manager Self Service portal, and can be changed and viewed by the manager.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tavoitteet näkyvät esimiehille esimiehen itsepalveluportaalin kautta, ja esimies voi muuttaa ja tarkastella niitä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="758">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="759">
+          <source>Human capital management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Henkilöstöresurssien hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="760">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="761">
+          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="762">
+          <source>Postgirot and Postgirot Utland payment formats for Sweden</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ruotsin Postgirot- ja Postgirot Utland -maksumuodot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="763">
+          <source>Postgirot and Postgirot Utland payment formats for Sweden.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ruotsin Postgirot- ja Postgirot Utland -maksumuodot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="764">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="765">
+          <source>The payment formats are no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksumuotoja ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="766">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="767">
+          <source>Yes, ISO20022 Credit transfer payment format for Sweden</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, Ruotsin ISO20022-tilisiirron maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="768">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="769">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="770">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="771">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="772">
+          <source>Radio frequency identifier</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Radiotaajuinen etätunnistus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="773">
+          <source>Radio Frequency Identification (RFID) is a data-collection technology that uses electronic tags to store identification data and a no-line-of-sight requirement reader to capture the identification data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Radiotaajuinen etätunnistus (RFID) on tiedonkeräysmenetelmä, jossa käytetään tunnistetietojen tallentamiseen sähköisiä tunnisteita, ja tunnistetiedot luetaan ilman näköyhteyttä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="774">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="775">
+          <source>Low customer usage and a limited feature set.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähäinen käyttö ja rajoitetut toiminnot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="776">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="777">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="778">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="779">
+          <source>Inventory management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Inventoinnin- ja varastonhallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="780">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="781">
+          <source>Removed as of Dynamics 365 for Operations 1611.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="782">
+          <source>Report about state invoices numbering for Latvia</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Latvian valtion määrittämän laskujen numeroinnin raportti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="783">
+          <source>Latvian legislation provides specific rules about the numbering of sales invoices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Latvian lainsäädäntö sisältää myyntilaskujen numerointia koskevia erityissääntöjä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="784">
+          <source>The functionality lets you assign specific numbers to sales invoices, based on the user or user group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnon avulla voidaan määrittää erityiset numerot myyntilaskuille käyttäjän tai käyttäjäryhmän mukaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="785">
+          <source>You can then generate a report or an XML file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän jälkeen voit luoda raportin tai XML-tiedoston.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="786">
+          <source>You can also print a report about invoice numbers that are used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös tulostaa raportin käytetyistä laskunumeroista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="787">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="788">
+          <source>The state invoice numbering no longer has to be maintained.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valtion määrittämää laskujen numerointia ei tarvitse enää ylläpitää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="789">
+          <source>The report about used invoice numbers is no longer required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytettyjen laskunumeroiden raporttia ei enää vaadita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="790">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="791">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="792">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="793">
+          <source>Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="794">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="795">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="796">
+          <source>Set up the names of the manager and general accountant of a company for Lithuania</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Liettuaa koskevat johtajan ja kirjanpitäjän nimien asetukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="797">
+          <source>The names of the manager and the general accountant of a company can be specified in the company information and used in different local report printouts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yrityksen johtajan ja kirjanpitäjän nimet voidaan määrittää yrityksen tietoihin ja käyttää paikallisten raporttien tulostuksessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="798">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="799">
+          <source>Replaced by another feature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korvattu toisella toiminnolla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="800">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="801">
+          <source>Yes, the setup of officials can be used for the same purpose.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, viranomaisten asetuksia käytetään samaan tarkoitukseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="802">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="803">
+          <source>Accounts payable, Accounts receivable, Cash and bank management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra, myyntireskontra, maksuliikenteen hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="804">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="805">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="806">
+          <source>Shipping carrier interface</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rahdinkuljettajan liittymä</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="807">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="808">
+          <source>Duplicate functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sama toiminto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="809">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="810">
+          <source>Partially replaced by Transportation management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuljetuksenhallinta korvaa osittain</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="811">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="812">
+          <source>Sales and marketing, Inventory management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myynti ja markkinointi, inventoinnin- ja varastonhallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="813">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="814">
+          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="815">
+          <source>Telepay payment formats for Norway</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Norjan Telepay-maksumuodot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="816">
+          <source>Telepay payment formats include vendor payment export (credit transfer) and customer payment collection (direct debit).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Telepay-maksumuodot sisältävät toimittajan maksun viennin (tilisiirrolla) ja asiakkaan maksukehotuksen (suoraveloitus).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="817">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="818">
+          <source>The payment formats are no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksumuotoja ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="819">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="820">
+          <source>Yes, ISO20022 Credit transfer payment format and AvtaleGiro customer payment format for Norway</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, Norjan ISO20022-tilisiirron maksumuoto ja asiakkaan maksun AvtaleGiro-muoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="821">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="822">
+          <source>Accounts payable, Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra, ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="823">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="824">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="825">
+          <source>Vendor payment export formats for Finland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suomen toimittajan maksun vientimuodot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="826">
+          <source>Two formats for exporting payments are available for Finland.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksi eri muotoa maksujen vientiä varten käytettävissä Suomessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="827">
+          <source>LM02 (FI) is used for domestic payments, and LUM2 (FI) is used for foreign payments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LM02 (FI) käytetään kotimaan maksuille ja LUM2 (FI) ulkomaanmaksuille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="828">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="829">
+          <source>The payment formats are no longer used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksumuotoja ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="830">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="831">
+          <source>Yes, ISO20022 Credit transfer payment format for Finland</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä, Suomen ISO20022-tilisiirron maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="832">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="833">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="834">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="835">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="836">
+          <source>Warehouse management II</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varastonhallinta II</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="837">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="838">
+          <source>The Warehouse management II solution (WMS II) that was available in the <bpt id="p1">**</bpt>Inventory management<ept id="p1">**</ept> module duplicates functionality that is in the <bpt id="p2">**</bpt>Warehouse management<ept id="p2">**</ept> module that was released in Microsoft Dynamics AX 2012 R3.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Inventoinnin- ja varastonhallinta<ept id="p1">**</ept> -moduuliin sisältynyt Varastonhallinta II -ratkaisu (WMS II) oli Microsoft Dynamics AX 2012 R3:ssa julkaistun <bpt id="p2">**</bpt>Varastonhallinta<ept id="p2">**</ept>-moduulin toiminnon kaksoiskappale.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="839">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="840">
+          <source>The <bpt id="p1">**</bpt>Warehouse management<ept id="p1">**</ept> module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012 R3:ssa, Microsoft Dynamics AX 2012 R3 CU8:ssa ja Dynamics AX 2012 R3 CU9:ssa julkaistu <bpt id="p1">**</bpt>Varastonhallinta<ept id="p1">**</ept>-moduuli korvaa Varastonhallinta II:n ominaisuudet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="841">
+          <source>The new module has more advanced features and more flexible warehouse management processes than Warehouse management II.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uudessa moduulissa on kehittyneemmät ominaisuudet ja joustavammat varaston hallintaprosessit kuin Varastonhallinta II:ssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="842">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="843">
+          <source>Inventory management, Sales and marketing, Procurement and sourcing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varaston hallinta, myynti ja markkinointi, hankinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="844">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="845">
+          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="846">
+          <source>Worker reminders in Human Resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Henkilöstöhallinnon työntekijän muistutukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="847">
+          <source>Human Resources Payroll information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Henkilöstöhallinnon palkanlaskentatiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="848">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="849">
+          <source>Low usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähäinen käyttö</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="850">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="851">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="852">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="853">
+          <source>Human resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Henkilöstöhallinto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="854">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="855">
+          <source>Removed as of Dynamics 365 for Operations version 1611</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="856">
+          <source>Workflow for creating goals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tavoitteiden luomisen työnkulku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="857">
+          <source>A workflow for managing the creation of employee goals is one of several workflows that were available to help coordinate the performance management process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työntekijöiden tavoitteiden luomisen työnkulku on yksi monista työnkuluista, joita oli käytettävissä suorituskyvyn hallintaprosessin koordinoinnin apuna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="858">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="859">
+          <source>Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suorituksen hallinta on suunniteltu kokonaan uudelleen Microsoft Dynamics 365 for Finance and Operationsissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="860">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="861">
+          <source>The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uudelleen suunnitellulla suorituskyvyn hallintatoiminnolla voidaan seurata tarkemmin tavoitteiden sisältöä ja mittauksia, joiden avulla voidaan seurata etenemistä, sekä tukidokumentaation liittämistä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="862">
+          <source>Goals can be stored as templates and then reused.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tavoitteet voidaan tallentaa malleina ja käyttää uudelleen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="863">
+          <source>This feature can help you set up additional goals for your employees more quickly.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän toiminnon avulla voit määrittää lisätavoitteita työntekijöille entistä nopeammin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="864">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="865">
+          <source>Human capital management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Henkilöstöresurssien hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="866">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="867">
+          <source>Removed as of Dynamics 365 for Operations version 1611.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics 365 for Operations 1611 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="868">
+          <source>Dynamics AX 7.0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 7.0</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="869">
+          <source>Ability to cancel changes to a vendor invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mahdollisuus peruuttaa toimittajan laskun muutokset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="870">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="871">
+          <source>Performance enhancement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suorituskyvyn parannus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="872">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="873">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="874">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="875">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="876">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="877">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="878">
+          <source>AIF, AxD, and AxBC integrations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AIF-, AxD- ja AxBC-integraatiot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="879">
+          <source>In Application Integration Framework (AIF), data can be exchanged with external systems through business logic that is exposed as services.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Application Integration Frameworkissä (AIF) tietoja voidaan vaihtaa ulkoisten järjestelmien kanssa palveluina näyttäytyvänä liiketoimintalogiikkana.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="880">
+          <source>Dynamics AX includes services that are based on documents and .NET Business Connector (AxBC).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX sisältää asiakirjoihin ja .NET Business Connectoriin (AxBC) perustuvia palveluja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="881">
+          <source>A document is created by using XML.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakirja luodaan XML-muotoisena.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="882">
+          <source>The XML includes header information that is added to create a <bpt id="p1">*</bpt>message<ept id="p1">*</ept> that can be transferred into or out of Dynamics AX.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XML sisältää otsikkotiedot, joka lisäämällä luodaan <bpt id="p1">*</bpt>sanoma<ept id="p1">*</ept>, joka siirretään Dynamics AX:ään ja siitä pois.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="883">
+          <source>Examples of documents include sales orders and purchase orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakirjoja ovat esimerkiksi myynti- ja ostotilaukset.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="884">
+          <source>However, almost any entity, such as a customer, can be represented by a document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytännössä kuitenkin lähes mikä tahansa yksikkö, kuten asiakas, voidaan ilmaista asiakirjana.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="885">
+          <source>Services that are based on documents use the <bpt id="p1">**</bpt>Axd <ph id="ph1">\&lt;</ph>Document<ph id="ph2">\&gt;</ph><ept id="p1">**</ept> classes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakirjoihin perustuvat palvelut käyttävät <bpt id="p1">**</bpt>Axd<ph id="ph1">\&lt;</ph>asiakirja<ph id="ph2">\&gt;</ph><ept id="p1">**</ept>-luokkia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="886">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="887">
+          <source>The architecture of AIF and AxDs could not be scaled to a cloud service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AIF:n ja AxDs:n arkkitehtuuria ei voi skaalata pilvipalveluun.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="888">
+          <source>There were performance issues around bulk import.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Joukkotuontiin liittyi suorituskykyongelmia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="889">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="890">
+          <source>This feature is replaced by the Data Import/Export framework, which supports recurring bulk import/export.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ominaisuus on korvattu tietojen tuonti- ja vientiympäristöllä, joka tukee toistuvaa joukkotuontia ja -vientiä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="891">
+          <source>For AxBC, we recommend that you use the actual tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AxBC:ssä on suositeltavaa käyttää varsinaisia tauluja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="892">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="893">
+          <source>AxDs, AxBCs, and AIF</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AxDs, AxBCs ja AIF</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="894">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="895">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="896">
+          <source>Billing code rate scripts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskutuskoodin hinnan komentosarjat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="897">
+          <source>Billing scripts were used to calculate billing rates for billing codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskutuksen komentosarjoja käytetään laskutuskoodin laskutushintojen laskemisessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="898">
+          <source>This scripts required custom development in the C Sharp or Visual Basic programming language.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nämä komentosarjat vaaditaan C Sharp- ja Visual Basic -ohjelmointikielen mukautetussa kehityksessä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="899">
+          <source>In the current version of Dynamics AX, the <bpt id="p1">**</bpt>billing code rate scripts<ept id="p1">**</ept> are not supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX:n nykyisessä versiossa <bpt id="p1">**</bpt>laskutuskoodin hinnan komentosarjoja<ept id="p1">**</ept> ei tueta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="900">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="901">
+          <source>The support for the custom C Sharp or Visual Basic scripts was not added in Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautettujen C Sharp- ja Visual Basic -komentosarjojen tukea ei lisätty Dynamics AX 7.0 -versioon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="902">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="903">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="904">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="905">
+          <source>Public sector, Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Julkinen sektori, myyntireskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="906">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="907">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="908">
+          <source>BOMs without BOM versions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuoterakenteet ilman tuoterakenneversioita</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="909">
+          <source>When the <bpt id="p1">**</bpt>BOM versions<ept id="p1">**</ept> configuration key was disabled, bill of materials (BOM) versions were hidden in all forms, and the system forced a 1:1 relationship between released products and BOMs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun <bpt id="p1">**</bpt>Tuoterakenneversiot<ept id="p1">**</ept>-määritysavain poistettiin käytöstä, tuoterakenneversiot piilotettiin kaikissa lomakkeissa ja järjestelmä pakotti 1:1-suhteen vapautettujen tuotteiden ja tuoterakenteiden välille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="910">
+          <source>In the current version of Dynamics AX, the <bpt id="p1">**</bpt>BOM versions<ept id="p1">**</ept> configuration key can't be disabled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuoterakenneversiot<ept id="p1">**</ept>-määritysavainta ei voi poistaa Dynamics AX:n nykyisessä versiossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="911">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="912">
+          <source>Using a configuration key to control BOM versions doesn't scale in a cloud environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuoterakenneversioiden ohjaamista määritysavaimella ei voi skaalata pilviympäristöön.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="913">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="914">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="915">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="916">
+          <source>Product information management, Inventory management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotetietojen hallinta, inventoinnin- ja varastonhallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="917">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="918">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="919">
+          <source>Brazilian Bordero</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brasilian Bordero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="920">
+          <source>Specific method of payment for Brazilian companies</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erityismaksutapa Brasilian yrityksille</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="921">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="922">
+          <source>Support for the Brazilian Bordero method of payment has been discontinued from Brazilian localization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brasilian Bordero-maksutavan tuki on lopetettu Brasilian lokalisointiversiosta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="923">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="924">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="925">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="926">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="927">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="928">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="929">
+          <source>Brazilian Sintegra statement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brasilian Sintegra-raportti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="930">
+          <source>Federal tax statement for ICMS tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Liittovaltion veroraportti ICMS-verolle</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="931">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="932">
+          <source>This statement is no longer applicable in some Brazilian states.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä raportti ei ole enää käytettävissä joissain Brasilian osavaltioissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="933">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="934">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="935">
+          <source>Users can use Generic Electronic reporting tool to configure the statement if required under specific situations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjät voivat käyttää yleistä sähköistä raportointityökalua raportin määrittämiseen, jos se on pakollinen erityistilanteissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="936">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="937">
+          <source>Fiscal books</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verokirjat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="938">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="939">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="940">
+          <source>Brazilian SCAN contingency mode for NF-e</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Brasilian NF-e:n SCAN-varatila</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="941">
+          <source>(SCAN) contingency environment is used to generate, export, and import the status of a Nota Fiscal eletrônica (NF-e) when the environment of Secretaria da Fazenda (SEFAZ) is not available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(SCAN) varaympäristöä käytetään Nota Fiscal eletrônica (NF e) -tilan luontiin, vientiin ja tuontiin, kun Secretaria da Fazenda (SEFAZ) -ympäristö ei ole käytettävissä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="942">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="943">
+          <source>This method of contingency is no longer applicable in all Brazilian states</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä varamenetelmä ei ole enää käytettävissä kaikissa Brasilian osavaltioissa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="944">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="945">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="946">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="947">
+          <source>Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="948">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="949">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="950">
+          <source>Business Analyzer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Business Analyzer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="951">
+          <source>This mobile application let users review key business metrics.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjät voivat tarkastella tällä mobiilisovelluksella tärkeitä liiketoiminnan mittareita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="952">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="953">
+          <source>This functionality has been replaced by another feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toinen ominaisuus on korvannut tämän toiminnon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="954">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="955">
+          <source>The Monitor financial performance content pack for Microsoft Power BI will include key financial metrics that were previously available in Business Analyzer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Power BI:n taloudellisen suorituskyvyn seurannan sisältöpaketti sisältää tärkeät taloudelliset mittarit, jotka sisältyivät aiemmin Business Analyzeriin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="956">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="957">
+          <source>General ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpito</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="958">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="959">
+          <source>Deprecated: The use of Business Analyzer has been deprecated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: Business Analyzerin käyttö on vanhentunut.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="960">
+          <source>Business statistics</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Liiketoimintatilastot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="961">
+          <source>The setup of business statistics inquiries that can help you analyze the performance of the organization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niiden liiketoiminnan tilastotietokyselyiden asetukset, jotka voivat auttaa organisaation suorituskyvyn analysoinnissa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="962">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="963">
+          <source>Legacy approach to business intelligence (BI), low customer usage, and a limited feature set</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanha tapa käsitellä liiketoiminnan tietoja (BI), vähäinen käyttö ja rajalliset ominaisuudet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="964">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="965">
+          <source>New BI solutions for the current version of Dynamics AX</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uudet BI-ratkaisut Dynamics AX:n nykyisessä versiossa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="966">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="967">
+          <source>Procurement and sourcing, Accounts payable, Sales and marketing, Accounts receivable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hankinta, ostoreskontra, myynti ja markkinointi, myyntireskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="968">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="969">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="970">
+          <source>Change document date function in Invoice approval journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hyväksyttyjen laskujen kirjauskansion tiedoston päivämäärän muutostoiminto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="971">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="972">
+          <source>Low usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähäinen käyttö</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="973">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="974">
+          <source>Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="975">
+          <source>The document date on the posted vendor transaction can be changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjatun toimittajatapahtuman tiedoston päivämäärää voidaan muuttaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="976">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="977">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="978">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="979">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="980">
+          <source>ClieOp03 payment format for the Netherlands</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alankomaiden ClieOp03-maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="981">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="982">
+          <source>The format is no longer applicable in the Netherlands, because it has been replaced by SEPA functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotoa ei enää käytetä Alankomaissa, sillä SEPA-toiminto on korvannut sen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="983">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="984">
+          <source>SEPA payments export</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SEPA-maksujen vienti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="985">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="986">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="987">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="988">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="989">
+          <source>Compliance Center</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Compliance Center</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="990">
+          <source>The Compliance Center was an Enterprise Portal site for managing the documentation requirements for compliance initiatives that are related to the Sarbanes-Oxley law.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Compliance Center oli Sarbanes-Oxley-lakiin liittyvien vaatimustenmukaisuusaloitteiden asiakirjavaatimusten hallintaan tarkoitettu yritysportaalisivusto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="991">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="992">
+          <source>Lack of customer usage.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimintoa ei käytetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="993">
+          <source>Microsoft SharePoint includes the same capability that was available in the Compliance Center.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft SharePoint sisältää Compliance Centerin käytössä olleet ominaisuudet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="994">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="995">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="996">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="997">
+          <source>Compliance and internal controls</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yhteensopivuus ja sisäinen valvonta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="998">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="999">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1000">
+          <source>Connector for Microsoft Dynamics</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamicsin yhdistin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1001">
+          <source>This tool was used to integrate key data from Microsoft Dynamics CRM to Microsoft Dynamics ERP applications.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällä työkalulla integroitiin Microsoft Dynamics CRM:n tärkeitä tietoja Microsoft Dynamics ERP -sovelluksiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1002">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1003">
+          <source>This functionality has been replaced by another feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toinen ominaisuus on korvannut tämän toiminnon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1004">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1005">
+          <source>Common data service</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Common data service</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1006">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1007">
+          <source>Connector for Microsoft Dynamics</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamicsin yhdistin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1008">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1009">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1010">
+          <source>Container unit and multi dimension on-hand</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Säilöyksikkö ja monidimensioinen varasto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1011">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1012">
+          <source>Duplicate functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sama toiminto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1013">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1014">
+          <source>Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1015">
+          <source>Since AX 2012, this functionality has been replaced by the consolidated batch orders feature set.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AX 2012:n jälkeen tämä toiminto on korvattu konsolidoidulla erätilaustoiminnoilla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1016">
+          <source>This feature set includes the consolidated on-hand view.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ominaisuusjoukko sisältää konsolidoidun varastonäkymän.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1017">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1018">
+          <source>Product information management, Production control, Inventory management, Sales and marketing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotetietojen hallinta, tuotannonhallinta, varastonhallinta, myynti ja markkinointi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1019">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1020">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1021">
+          <source>Cue group metadata</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pinoryhmän metatiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1022">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1023">
+          <source>Cue groups were used to display one or more Cues in the FactBox area.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pinoryhmiä käytettiin näyttämään vähintään yksi pino tietoruutualueella.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1024">
+          <source>There was limited uptake, and there were also performance concerns, because a record change in a parent form caused one query per Cue in the Cue group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminto oli rajallinen ja siihen liittyi suorituskykyongelmia, koska tietueen muuttuminen päälomakkeessa loi jokaiselle pinolle yhden kyselyn pinoryhmässä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1025">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1026">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1027">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1028">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1029">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1030">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1031">
+          <source>Cue metadata</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pinon metatiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1032">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1033">
+          <source>Cue metadata was limited to count or sum information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pinon metatiedot rajoittuivat määrä- tai summatietoihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1034">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1035">
+          <source>Tile metadata was introduced to provide more flexibility for modeling.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttöönotetut ruudun metatiedot mahdollistavat joustavamman mallinnuksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1036">
+          <source>For example, you can model current counts, navigation, and key performance indicators (KPIs).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit esimerkiksi mallintaa nykyiset määrät, siirtymisen ja suorituskykyilmaisimet (KPI:t).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1037">
+          <source>Count tile metadata is the direct replacement of the Cue metadata.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määräruudun metatiedot korvaavat suoraan pinon metatiedot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1038">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1039">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1040">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1041">
+          <source>Removed as of Dynamics AX 7.0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1042">
+          <source>Danish check format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tanskalainen sekkilomake</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1043">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1044">
+          <source>Support for the Danish check format layout has been discontinued, and the report has been removed from DK localization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tanskan sekkimuodon tuki on lopetettu ja raportti on poistettu tanskalaisesta lokalisoinnista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1045">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1046">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1047">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1048">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1049">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1050">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1051">
+          <source>Data partitions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tieto-osiot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1052">
+          <source>Data partitions provide a logical separation of data in the Microsoft Dynamics AX database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tieto-osiot erottavat Microsoft Dynamics AX:n tietokannan tiedot loogisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1053">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1054">
+          <source>Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tieto-osiot otettiin käyttöön Microsoft Dynamics AX 2012 R2:ssa tietojen eristämistä varten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1055">
+          <source>In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yleisessä skenaariossa yrityksellä on tytäryhtiöitä mutta tytäryhtiön tiedot eivät saisi olla toisen tytäryhtiön nähtävissä, vaikka kumpikin tytäryhtiö on saman IT-osaston alaisuudessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1056">
+          <source>However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ohjelmassa oli kuitenkin otettava käyttöön ylimääräisiä komentosarjoja ja hallintakustannuksia, jotta uusia osioita voitaisiin luoda, tiedot voitaisiin lisätä ja osiotiedot voitaisiin varmuuskopioida.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1057">
+          <source>In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pilvipalvelussa, jossa meillä on käyttöympäristövuokrattuja (PaaS-palvelu) tietokantapalveluja (Microsoft Azuren SQL-tietokanta), tietokantaa on tehokkaampaa käyttää erityssäilönä kuin tehdä eristys ohjelmassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1058">
+          <source>Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple instances of Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Riippumatta siitä, tarvitaanko tietojen osiointia tytäryhtiöitä tai useita vuokraajia varten tai koon vuoksi, skenaariot voidaan mielestämme käsitellä paremmin useissa Finance and Operations -esiintymissä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1059">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1060">
+          <source>Customers using data partitions must use multiple instances of Finance and Operations if database level separation is a critical issue.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tieto-osioita käyttävien asiakkaiden on käytettävä useita Finance and Operations -esiintymiä, jos tietokantatasoiden erottaminen on tärkeää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1061">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1062">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1063">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1064">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1065">
+          <source>Database and file share storage for attachments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Liitteiden tallennus tietokantaa ja jaettuun tiedostoresurssiin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1066">
+          <source>Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012:ssa liitteet voitiin tallentaa tietokantaan ja jaettuihin tiedostoresursseihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1067">
+          <source>Both of those options are no longer supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kumpaakaan asetusta ei tueta enää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1068">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1069">
+          <source>Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tallennusta jaettuna tiedostoresurssina ei enää tueta, koska pilvipalveluympäristöt eivät voi viestiä paikallisten jaettujen tiedostoresurssien kanssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1070">
+          <source>Database storage has been deprecated in favor of Azure Blob storage.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1071">
+          <source>Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Dynamics 365 for Finance and Operations client forms.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure Blob -tallennus vastaa tietokantatallennusta, sillä asiakirjoja voi käyttää vain Dynamics 365 for Finance and Operations -asiakasohjelman lomakkeiden kautta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1072">
+          <source>This provides the added benefit of providing storage that doesn't negatively affect the performance of the database.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisäksi tällä tavoin saadaan tallennustila, joka ei heikennä tietokannan toimintaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1073">
+          <source>Blob storage is the default storage mechanism for Document Management and works immediately.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Blob-tallennus on asiakirjanhallinnan oletustallennusmekanismi ja toimii välittömästi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1074">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1075">
+          <source>Database storage has been deprecated in favor of Azure Blob storage.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietokantatallennus on vanhentunut Azure Blob -tallennuksen tieltä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1076">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1077">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1078">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1079">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1080">
+          <source>Delimitation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoitus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1081">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1082">
+          <source>No use of the functionality was found.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnolle ei ollut käyttöä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1083">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1084">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1085">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1086">
+          <source>Time and attendance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työajan seuranta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1087">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1088">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1089">
+          <source>Desktop client</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työpöytäasiakasohjelma</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1090">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1091">
+          <source>The Dynamics AX client experience has been redesigned to improve usability across multiple platforms and devices.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX:n asiakasohjelmakokemus on uudistettu parantamaan käytettävyyttä kaikissa ympäristöissä ja laitteissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1092">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1093">
+          <source>The new web client is based on the desktop Form metadata and programming model that have been modified to provide a rich web platform.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi verkkoasiakasohjelma perustuu työpöytälomakkeen metatietoihin ja ohjelmointimalliin, jota on muokattu luomaan monipuolinen verkkoympäristö.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1094">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1095">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1096">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1097">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1098">
+          <source>Direct database connection</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suora tietokantayhteys</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1099">
+          <source>In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel DB in similar fashion to Enterprise POS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 2012 R3 -versiossa Retail Modern POS voi muodostaa suoran yhteyden kanavatietokantaan samalla tavalla kuin Enterprise POS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1100">
+          <source>This was in addition to the standard communication method of Retail Modern POS communicating through Retail Server.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä oli lisänä Retail Modern POS -sovelluksen normaalille tietoliikenneyhteydelle, joka kulki vähittäismyynnin palvelimen välityksellä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1101">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1102">
+          <source>Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suora tietokantayhteys edellytti matalamman suojauksen, ja sitä käytettiin pääasiassa korkeamman suorituskyvyn saavuttamiseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1103">
+          <source>Due to the performance and security enhancements that have occurred in Finance and Operations, this functionality now causes more issues than it solves.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operationsissa tehtyjen suorituskyky- ja tietoturvaparannusten vuoksi tämä toiminnallisuus aiheuttaa enemmän ongelmia kuin mitä se ratkaisee.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1104">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1105">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1106">
+          <source>Only standard Retail Server communication is now supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vain vakiomuotoinen vähittäismyynnin palvelinyhteys on enää tuettu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1107">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1108">
+          <source>Channel DB/Retail Modern POS</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kanavatietokanta / Retail Modern POS</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1109">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1110">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1111">
+          <source>Dutch SWIFT MT940</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alankomaiden SWIFT MT940</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1112">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1113">
+          <source>Generic functionality is now used instead of localized functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytössä on nyt yleinen toiminto lokalisoidun toiminnon sijaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1114">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1115">
+          <source>Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä. Pankkitilin täsmäytyksen lisätoiminnot on korvannut tämän toiminnon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1116">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1117">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1118">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1119">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1120">
+          <source>eBilanz (XBRL for Germany)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">eBilanz (XBRL Saksassa)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1121">
+          <source>This functionality provided eXtensible Business Reporting Language (XBRL) output that is intended specifically for the German eBilanz taxonomy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä toiminto mahdollisti XBRL (eXtensible Business Reporting Language) -tulostuksen, joka on tarkoitettu erityisesti Saksan eBilanz-luokitusta varten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1122">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1123">
+          <source>Lack of customer usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimintoa ei käytetty</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1124">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1125">
+          <source>This feature hasn't been replaced by another feature, but multiple specialized XBRL packages that provide rich XBRL functionality are available for the German market.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimintoa ei korvata toisella ominaisuudella, mutta Saksan markkinoilla on saatavana useista erikoistuneita XBRL-paketteja, joissa on monipuolisia XBRL-toimintoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1126">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1127">
+          <source>Management Reporter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1128">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1129">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1130">
+          <source>Enterprise Portal client</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yritysportaalin asiakasohjelma</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1131">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1132">
+          <source>A single client platform has been provided.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytössä on yksi asiakasohjelmaympäristö.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1133">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1134">
+          <source>The new web client is based on the desktop form metadata and programming model that have been modified to provide a rich web platform.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi verkkoasiakasohjelma perustuu työpöytälomakkeen metatietoihin ja ohjelmointimalliin, jota on muokattu luomaan monipuolinen verkkoympäristö.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1135">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1136">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1137">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1138">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1139">
+          <source>Environmental sustainability</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ekologinen kestävyys</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1140">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1141">
+          <source>Low customer usage and a limited feature set</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähäinen käyttö ja rajoitetut toiminnot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1142">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1143">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1144">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1145">
+          <source>Compliance and internal controls, Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yhteensopivuus ja sisäisen tarkistus, ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1146">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1147">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1148">
+          <source>Form ActiveX and Managed Host controls</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lomakkeen ActiveX:n ja hallitun ylläpidon ohjausobjektit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1149">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1150">
+          <source>The ActiveX and Managed Host controls are based on the deprecated desktop client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ActiveX:n ja hallitun ylläpidon ohjausobjektit perustuivat vanhentuneeseen työpöytäasiakasohjelmaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1151">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1152">
+          <source>The extensible control framework supports building new controls that are based on HTML, CSS, and JavaScript, and is a first-class control in the Microsoft Visual Studio Tooling environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajennettava ohjausobjektiympäristö tukee uusien HTML-, CSS- ja JavaScript-pohjaisten ohjausobjektien luomista ja on ensimmäisen luokan ohjausobjekti Microsoft Visual Studio Tooling -ympäristössä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1153">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1154">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1155">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1156">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1157">
+          <source>Generate prenotes by using a batch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esilaskujen muodostus erätoiminnolla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1158">
+          <source>Prenote generation can't be done by using a batch, but it can still be done by a user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaikka esilaskua ei voi enää muodostaa erätoimintona, käyttäjä voi edelleen luoda esilaskun.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1159">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1160">
+          <source>No form exists to persist and display the resulting prenote file when it's generated by using a batch.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erätoiminnolla luodulle laskulle ei ole lomaketta, jossa luotu esilaskutiedosto voitaisiin säilyttää ja näyttää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1161">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1162">
+          <source>Prenotes can still be generated, and the user has control over the location where the file is saved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esilaskuja voidaan luoda edelleen ja käyttäjä päättää sijainnin, johon tiedosto tallennetaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1163">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1164">
+          <source>Accounts payable, Accounts receivable, Cash and bank management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra, myyntireskontra, maksuliikenteen hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1165">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1166">
+          <source>Removed as of AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1167">
+          <source>German DTAUS payment export and account statement import (totals and transactions)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saksan DTAUS-maksun vienti ja tiliotteen tuonti (kokonaissummat ja tapahtumat)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1168">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1169">
+          <source>The format is no longer applicable in Germany, because it has been replaced by Single Euro Payments Area (SEPA) functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotoa ei enää käytetä Saksassa, sillä SEPA (yhtenäinen euromaksualue) -toiminto on korvannut sen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1170">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1171">
+          <source>Yes, this functionality has been replaced by SEPA payment export and advanced bank reconciliation functionality for importing account statements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä. SEPA-maksun vienti ja pankkitilin täsmäytyksen lisätoiminnot tiliotteiden tuomiseen on korvannut tämän toiminnon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1172">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1173">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1174">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1175">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1176">
+          <source>German DTAZV payment format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saksan DTAZV-maksumuoto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1177">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1178">
+          <source>The format is no longer applicable in Germany, because it has been replaced by SEPA functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotoa ei enää käytetä Saksassa, sillä SEPA-toiminto on korvannut sen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1179">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1180">
+          <source>SEPA payments export</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SEPA-maksujen vienti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1181">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1182">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1183">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1184">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1185">
+          <source>German MT940 import</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saksassa tuominen MT940-muodossa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1186">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1187">
+          <source>Generic functionality is now used instead of localized functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytössä on nyt yleinen toiminto lokalisoidun toiminnon sijaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1188">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1189">
+          <source>Yes, this functionality has been replaced by Advanced bank reconciliation functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä. Pankkitilin täsmäytyksen lisätoiminnot on korvannut tämän toiminnon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1190">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1191">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1192">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1193">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1194">
+          <source>German XML EU Sales list</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saksan XML-muotoinen EU-myyntiluettelo</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1195">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1196">
+          <source>The XML format for German EU Sales List reporting is no longer supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XML-muotoa Saksan EU:n arvonlisäveron yhteenvetoilmoitusta varten ei enää tueta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1197">
+          <source>Only the ELMA5 text file format can be used to submit the EU Sales List report to the German Tax Office.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saksan EU:n arvonlisäveron yhteenvetoilmoitus voidaan lähettää Saksan veroviranomaiselle ainoastaan ELMA5-tekstitiedostomuodossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1198">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1199">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1200">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1201">
+          <source>Tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1202">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1203">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1204">
+          <source>GL SSRS reports</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon SSRS-raportit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1205">
+          <source>Reports that include the following menu items have been removed: <bpt id="p1">**</bpt>Summary trial balance<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Detailed trial balance<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Chart of accounts<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Audit trail<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Balances<ept id="p5">**</ept>, and <bpt id="p6">**</bpt>Balance list<ept id="p6">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavia valikkovaihtoehtoja sisältävät raportit on poistettu: <bpt id="p1">**</bpt>Pääkirjan yhteenveto<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Yksityiskohtainen pääkirja<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Tilikartta<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Kirjausketju<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Saldot<ept id="p5">**</ept> ja <bpt id="p6">**</bpt>Saldoluettelo<ept id="p6">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1206">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1207">
+          <source>Financial Microsoft SQL Server Reporting Services (SSRS) reports have been replaced by Management Reporter capabilities and default reports.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft SQL Server Reporting Services (SSRS) -raportit on korvattu Management Reporter -toiminnoilla ja oletusraporteilla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1208">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1209">
+          <source>Management Reporter (labeled <bpt id="p1">**</bpt>Financial reporting<ept id="p1">**</ept> in the current version of Dynamics AX)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter (Dynamics AX:n nykyisessä versiossa sen nimi on <bpt id="p1">**</bpt>Talousraportointi<ept id="p1">**</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1210">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1211">
+          <source>General ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpito</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1212">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1213">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1214">
+          <source>InfoPart and FormPart metadata</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPart- ja FormPart-metatiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1215">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1216">
+          <source>InfoPart and FormPart metadata enabled the creation of FactBoxes for two different clients.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPart- ja FormPart-metatietojen avulla voitiin luoda kahden eri asiakasohjelman tietoruutuja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1217">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1218">
+          <source>InfoPart metadata, which was a simplified form definition, is converted into a Form by upgrade tooling.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">InfoPart-metatiedot oli yksinkertaistettu lomakemääritelmä, ja se on muunnettu lomakkeeksi päivitystyökaluilla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1219">
+          <source>FormPart metadata, which referenced a Form, is replaced by a more direct reference that is created by upgrade tooling.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lomakkeeseen viittaavat FormPart-metatiedot on korvattu suoralla viittauksella, joka luodaan päivitystyökaluilla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1220">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1221">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1222">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1223">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1224">
+          <source>Main account list page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Päätilin luettelosivu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1225">
+          <source>A list of accounts for the legal entity and related balance information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luettelo yrityksen tileistä ja niihin liittyvät saldotiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1226">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1227">
+          <source>Balance information is available on the <bpt id="p1">**</bpt>Trial balance<ept id="p1">**</ept> list page by account and dimension.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saldotiedot ovat saatavilla tilin ja dimension mukaisella <bpt id="p1">**</bpt>Pääkirja<ept id="p1">**</ept>-luettelosivulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1228">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1229">
+          <source><bpt id="p1">**</bpt>Main accounts<ept id="p1">**</ept> contains the same list of accounts that the <bpt id="p2">**</bpt>Main account<ept id="p2">**</ept> list page contained.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Päätilit<ept id="p1">**</ept> sisältää saman tililuettelon kuin <bpt id="p2">**</bpt>Päätili<ept id="p2">**</ept>-luettelosivu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1230">
+          <source>The grid view in <bpt id="p1">**</bpt>Main accounts<ept id="p1">**</ept> also shows an even smaller, grid-like view.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Päätilit<ept id="p1">**</ept>-ruudukkonäkymä näyttää myös pienemmän ruudukkomaisen näkymän.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1231">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1232">
+          <source>General ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpito</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1233">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1234">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1235">
+          <source>Malaysia and Singapore bank cash flow report</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Malesian ja Singaporen pankin kassavirtaraportti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1236">
+          <source>This feature let the user print a cash flow report that shows transactions and details of the cash inflows and outflows for a specific date range for selected bank accounts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnolla voitiin tulostaa kassavirtaraportti, joka sisältää valittujen pankkitilien saapuvien ja lähtevien kassavirtojen tapahtumat sekä tiedot määritetyltä päivämääräväliltä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1237">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1238">
+          <source>The same information can be obtained from the Inquiry bank transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Samat tiedot saadaan pankkitapahtuman kyselyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1239">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1240">
+          <source>The Inquiry bank transaction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pankkitapahtuman kysely</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1241">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1242">
+          <source>Cash and bank management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maksuliikenteen hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1243">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1244">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1245">
+          <source>Mexican CFD electronic invoice</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Meksikon sähköinen CFD-lasku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1246">
+          <source>This feature enabled the generation of Mexican electronic invoices by using the Comprobante Fiscal Digital (CFD) method, where the company signs the invoice by requesting the related authorization from the government.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällä ominaisuudella voitiin luoda Meksikossa sähköisiä laskuja käyttämällä CFD (Comprobante Fiscal Digital) -menetelmää, jossa yritys allekirjoittaa laskun pyytämällä liittyvän valtuutuksen viranomaiselta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1247">
+          <source>This feature also provides a monthly report that includes all electronics invoices that were issued in the period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ominaisuus tarjoaa myös kuukausiraportin, joka koostui kaikista kyseisen kuukauden aikana tehdyistä sähköisistä laskuista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1248">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1249">
+          <source>The method is no longer applicable.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Menetelmää ei enää käytetä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1250">
+          <source>The generation of electronic invoices by using the CFD method was deprecated by the tax authorities and replaced by the Comprobante Fiscal Digital a través de Internet (CFDI) method, where the signing is delegated to the third-party provider (PAC).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Veroviranomaiset lopettivat CFD-menetelmällä luotavat sähköiset laskut ja niiden tilalla käytetään CFDI (Comprobante Fiscal Digital a través de Internet) -menetelmää, jossa allekirjoitus on delegoitu kolmannen osapuolen palveluntarjoajalle (PAC).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1251">
+          <source>The monthly report has been removed, and an inquiry option lets users inquire about historical transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuukausiraportti on poistettu, ja käyttäjät voivat tehdä kyselyvaihtoehdolla kyselyjä historiallisista tapahtumista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1252">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1253">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1254">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1255">
+          <source>Account receivables, Project</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntireskontra, projekti</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1256">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1257">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1258">
+          <source>Mexico realized and unrealized VAT</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Meksikon toteutunut ja toteutumaton ALV</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1259">
+          <source>Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for unrealized tax.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics AX 2012:lla hallittiin toteutumatonta arvonlisäveroa (ALV:tä) käyttämällä vain Meksikoa koskevaa toteutumattoman veron toimintoa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1260">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1261">
+          <source>Duplicate functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sama toiminto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1262">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1263">
+          <source>Yes, this functionality has been replaced by standard conditional sales tax functionality that is provided by Core.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä. Tämä toiminto on korvattu ydintoimintojen tavallisessa suoritusperusteisella arvonlisäverotoiminnolla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1264">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1265">
+          <source>Tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1266">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1267">
+          <source>Deprecated: A removal date has not been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentunut: tämän ominaisuuden poistopäivämäärää ei ole määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1268">
+          <source>Microsoft Outlook integration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Outlook -integrointi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1269">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1270">
+          <source>This functionality has been replaced by Microsoft Exchange Server integration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Exchange Server -integrointi on korvannut tämän toiminnon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1271">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1272">
+          <source>Yes</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1273">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1274">
+          <source>Sales and marketing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myynti ja markkinointi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1275">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1276">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1277">
+          <source>Private blocking of inventory and warehouse management journals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varastonhallinnan kirjauskansioiden yksityinen esto</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1278">
+          <source>The inventory and warehouse journals no longer support the ability to mark a journal as private for a selected user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varastokirjauskansiot eivät enää tue kirjauskansion merkitsemistä yksityiseksi valitulle käyttäjälle.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1279">
+          <source>Only the process of blocking journals as private for user groups and blocking during editing is supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vain käyttäjäryhmien käyttämää kirjauskansioiden yksityistä estoa ja estoa muokkauksen aikana tuetaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1280">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1281">
+          <source>No use of the functionality was found.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnolle ei ollut käyttöä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1282">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1283">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1284">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1285">
+          <source>Inventory management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Inventoinnin- ja varastonhallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1286">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1287">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1288">
+          <source>Product builder</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotekonfiguraattori</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1289">
+          <source>Product builder was used to dynamically configure items from a sales order, purchase order, production order, sales quotation, project quotation, or item requirement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotekonfiguraattoria käytettiin määrittämään dynaamisesti nimikkeitä myyntitilauksesta, ostotilauksesta, tuotantotilauksesta, myyntitarjouksesta, projektitarjouksesta tai nimiketarpeesta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1290">
+          <source>Based on a product model that had modeling variables, the user could select values to meet the customer requirements and get a unique product variant that had a BOM and route.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjä voi valita asiakkaan vaatimusten mukaisia arvoja mallinnusmuuttujia sisältävän tuotemallin perusteella ja saada näin yksilöllisen tuotevariantin, jolla on tuoterakenne ja reitti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1291">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1292">
+          <source>Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotekonfiguraattori paljasti X ++-koodin loppukäyttäjille eikä sitä tueta Dynamics AX:n nykyisessä versiossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1293">
+          <source>It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se on poistettu, jotta päällekkäisissä suurissa koodikannoissa ei tarvitsisi tehdä kaksinkertaista ylläpitoa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1294">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1295">
+          <source>Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1296">
+          <source>The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poissulkeva konfiguraatio otettiin käyttöön Dynamics AX 2012:ssä, jossa tuotekonfiguraattorin vanhentuminen tulevissa versioissa oli jo ilmoitettu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1297">
+          <source>The constraint-based configuration technology is selected on the product masters to enable the configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poissulkeva konfiguraatiomenetelmä valitaan päätuotteessa ottamaan konfiguraatio käyttöön.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1298">
+          <source>To learn more, see <bpt id="p1">[</bpt>Build a product configuration model<ept id="p1">](../../supply-chain/pim/build-product-configuration-model.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja on kohdassa <bpt id="p1">[</bpt>Tuotemääritysmallin luominen<ept id="p1">](../../supply-chain/pim/build-product-configuration-model.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1299">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1300">
+          <source>Product information management, Sales and marketing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotetietojen hallinta, myynti ja markkinointi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1301">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1302">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1303">
+          <source>Production Floor app</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotantosovellus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1304">
+          <source>This is the app for tablet devices running Windows 8.1 RT and Windows 8.1 Pro.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä sovellus on tarkoitettu tabletteihin, joissa on käytössä Windows 8.1 RT ja Windows 8.1 Pro.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1305">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1306">
+          <source>With the change to a web-based client, it is possible to deliver similar functionality through the native Dynamics AX 7.0 client.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verkkoasiakasohjelmaan tehdyllä muutoksella voidaan toimittaa samanlaiset toiminnot alkuperäisen Dynamics AX 7.0 -asiakasohjelman kautta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1307">
+          <source>The Job Card Device provides a production floor user interface that is optimized for touch and tablet form factors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työkorttilaitteessa on tuotannossa käytettävä käyttöliittymä, joka on optimoitu kosketus- ja tablettikäyttöä varten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1308">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1309">
+          <source>Yes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1310">
+          <source>The Job Card Device, which is a native part of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työkorttilaite, joka sisältyy Dynamics AX 7.0:aan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1311">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1312">
+          <source>Production control</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotannonhallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1313">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1314">
+          <source>Deprecated: A removal date from the Microsoft store has not yet been set for this feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vanhentuminen: Tälle ominaisuudelle ei ole vielä määritetty poistopäivää Microsoft Storesta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1315">
+          <source>Rename product dimension</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nimeä tuotedimensio uudelleen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1316">
+          <source>This feature let you change the name of one of the three standard product dimensions (size, color, or style) to a name that better suited your business requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällä toiminnolla voi vaihtaa yhden kolmesta vakiotuotedimension nimestä (koko, väri tai tyyli) liiketoiminnan vaatimuksiin paremmin sopivaan nimeen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1317">
+          <source>Renaming included all the labels where the product dimension name was used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uudelleennimeäminen koski kaikkia otsikoita, joissa tuotedimension nimeä käytettiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1318">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1319">
+          <source>The current version of Dynamics AX doesn't support label changes at run time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX:n nykyinen versio ei tue suorituksen aikaisia otsikkomuutoksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1320">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1321">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1322">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1323">
+          <source>Product information management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotetietojen hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1324">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1325">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1326">
+          <source>Retail Server connectivity using HTTP</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähittäismyynnin palvelinyhteys HTTP-protokollalla</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1327">
+          <source>In Dynamics AX 2012 R3, the Retail Server could function using HTTP communication (non-secured).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX 2012 R3 -versiossa vähittäismyynnin palvelinyhteyttä oli mahdollista käyttää (suojaamattomalla) HTTP-yhteydellä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1328">
+          <source>This was in addition to the standard communication using HTTPS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä oli lisänä vakioyhteyteen HTTPS-protokollalla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1329">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1330">
+          <source>Due to new security requirements, only secured communication using TLS 1.2 (or above, as available) is now supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusien suojausvaatimusten vuoksi tietoliikenneyhteys on sallittua ainoastaan TLS 1.2 -suojausta (tai uudempaa) käyttäen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1331">
+          <source>The self-service installer will automatically configure the computer for this communication.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omatoiminen asennusohjelma määrittää yhteystavan tietokoneelle automaattisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1332">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1333">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1334">
+          <source>Only standard HTTPS communication is now supported.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vain vakiomuotoinen HTTPS-yhteys on enää tuettu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1335">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1336">
+          <source>Retail Server</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähittäismyynnin palvelin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1337">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1338">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1339">
+          <source>Role Center pages</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Roolikeskus-sivut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1340">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1341">
+          <source>Role Center pages were built on the deprecated Enterprise Portal platform, which has been replaced by the new web client platform in the current version of Dynamics AX.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Roolikeskus-sivut perustuivat vanhentuneeseen yritysportaaliympäristöön, joka on korvattu uudella verkkoasiakasympäristöllä Dynamics AX:n nykyisessä versiossa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1342">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1343">
+          <source>The new Workspace form pattern provides users with a process-centered design that provides easy access to commonly used tasks within that process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi Työtila-lomakemalli käyttäjille prosessikeskeisen rakenteen, jonka kautta on helppo käyttää kyseisen prosessin usein käytettyjä tehtäviä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1344">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1345">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1346">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1347">
+          <source>Removed as of Dynamics AX 7.0</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1348">
+          <source>Sales tax jurisdictions</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arvonlisäveroviranomaiset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1349">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1350">
+          <source>Low customer usage and a limited feature set</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähäinen käyttö ja rajoitetut toiminnot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1351">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1352">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1353">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1354">
+          <source>US sales tax</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yhdysvaltojen arvonlisävero</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1355">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1356">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1357">
+          <source>Sites Services</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sites Services -palvelut</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1358">
+          <source>Sites Services let you build websites that extend your business processes to the Internet without IT support.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liiketoimintaprosesseja Internetiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1359">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1360">
+          <source>The Microsoft Azure infrastructure that is used by Dynamics AX has new capabilities that can be used instead (for example, Azure sites).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX:n käyttämässä Microsoft Azuren infrastruktuurissa on uusia korvaavia ominaisuuksia (esimerkiksi Azure-sivustot).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1361">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1362">
+          <source>No</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1363">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1364">
+          <source>HR recruiting, Case management, Request for quotes, Vendor registration, Collaborative workspaces for opportunities and campaigns</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Henkilön työhönotto, palvelupyynnön hallinta, tarjouspyynnöt, toimittajan rekisteröinti, mahdollisuuksien ja kampanjoiden yhteistyötyötila</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1365">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1366">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1367">
+          <source>SSAS demand forecasting strategy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SSAS – kysynnän ennustestrategia</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1368">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1369">
+          <source>The design of the feature cannot be supported in the new cloud architecture.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi pilviarkkitehtuuri ei voi tukea toiminnon rakennetta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1370">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1371">
+          <source>Azure Machine Learning demand forecasting strategy</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Azure Machine Learningin kysynnän ennusteen strategia</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1372">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1373">
+          <source>Master planning</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pääsuunnittelu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1374">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1375">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1376">
+          <source>Vendor invoice pool excluding posting details</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajan laskupooli, ei sisällä kirjaustietoja</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1377">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1378">
+          <source>Low usage.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähäinen käyttö.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1379">
+          <source>This functionality has been replaced by the Invoice journal that has workflow functionality.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminto on korvattu laskun kirjauskansiolla, joka sisältää työnkulkutoiminnon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1380">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1381">
+          <source>Workflow capabilities of the Invoice journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskun kirjauskansion työnkulkutoiminnot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1382">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1383">
+          <source>Accounts payable</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ostoreskontra</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1384">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1385">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1386">
+          <source>Virtual company accounts</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virtuaaliyritykset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1387">
+          <source>The virtual companies feature is no longer supported in Dynamics AX.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics AX ei enää tue virtuaaliyritystoimintoa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1388">
+          <source>The virtual companies feature let users set up tables that could be shared by a set of companies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virtuaaliyritystoiminnon avulla käyttäjät pystyivät määrittämään tauluja yritysjoukon jaettavaksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1389">
+          <source>For a description of the feature, see <bpt id="p1">[</bpt>Company accounts and Virtual company accounts<ept id="p1">](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnon kuvaus on artikkelissa <bpt id="p1">[</bpt>Yrityksen tilit ja virtuaaliyrityksen tilit<ept id="p1">](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1390">
+          <source>The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminto ryhmittää virtuaaliyrityksille määritetyiksi tauluiksi. Virtuaaliyritykset ovat olemassa olevien "oikeiden" yritysten ryhmiä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1391">
+          <source>Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyselyjä luomalla kaikki virtuaaliyrityksen yritykset voivat käyttää liitettyjen taulukokoelmien taulujen tietoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1392">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1393">
+          <source>- Virtual companies must be set up before data is stored in the tables.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Virtuaaliyritykset on määritettävä, ennen kuin tiedot tallennetaan tauluihin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1394">
+          <source>Retrofitting virtual companies onto an existing implementation is very difficult.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virtuaaliyritysten sovittaminen jälkikäteen aiemmin luotuihin toteutuksiin on erittäin hankalaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1395">
+          <source>- Because there has been so much data normalization in the current version of Dynamics AX, it has become difficult to know what to add to the table collections.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Koska Dynamics AX:n nykyisessä versiossa on niin paljon tietojen normalisointia, taulukokoelmiin lisättävän tiedon hahmottamisesta on tullut erittäin hankalaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1396">
+          <source>For example, it's difficult to know which tables to share.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi on vaikea hahmottaa, mitä taulut tulee jakaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1397">
+          <source>All the tables referenced from tables that are in a virtual company must also added.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisäksi kaikki taulut, joihin virtuaaliyrityksessä olevat taulut viitataan, on lisättävä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1398">
+          <source>Because of table normalization, even simple master data that is spread across multiple tables must be part of the virtual company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taulun normalisoinnin vuoksi yksinkertaisimmankin useissa taulukoissa olevan päätiedon on oltava myös virtuaaliyrityksen osa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1399">
+          <source>Any mistake that is made here will cause functional issues.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä yhteydessä tehdyt mahdolliset virheet aiheuttavat toimintaongelmia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1400">
+          <source>- When a table is part of a virtual company, it loses information about the origin of the data, and only the virtual company is recorded.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- Kun taulu on osa virtuaaliyritystä, se menettää tiedot tiedon alkuperästä ja vain virtuaaliyritys kirjataan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1401">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1402">
+          <source>Global tables can be used to make tables accessible from all companies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yleisiä tauluja käyttämällä taulut ovat kaikkien yritysten käytettävissä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1403">
+          <source>Currently, there is no replacement.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällä hetkellä korvaavaa toimintoa ei ole.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1404">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1405">
+          <source>All modules</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki moduulit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1406">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1407">
+          <source>Removed as of Dynamics AX 7.0.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 7.0 alkaen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1408">
+          <source>Windows 8 tablet app</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows 8 -tablettisovellus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1409">
+          <source>The Windows 8 tablet app provided functionality for expense entry and approval.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windows 8 -tablettisovelluksessa oli kulujen vienti- ja hyväksymistoiminnot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1410">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1411">
+          <source>Finance and Operations is compatible with tablets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operationsia voi käyttää tableteissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1412">
+          <source>The tablet app is no longer required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tablettisovellusta ei enää tarvita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1413">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1414">
+          <source>No.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nro</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1415">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1416">
+          <source>Expense management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kulujen hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1417">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1418">
+          <source>Removed: This functionality is only available for Dynamics AX 2012 R3.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu: Tämä toiminto on käytössä vain Dynamics AX 2012 R3:ssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1419">
+          <source>Workplanner</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työn suunnittelu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1420">
+          <source><bpt id="p1">**</bpt>Reason for deprecation/removal<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poiston tai vanhentumisen syy<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1421">
+          <source>Low usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähäinen käyttö</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1422">
+          <source><bpt id="p1">**</bpt>Replaced by another feature?<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1423">
+          <source>No, but the <bpt id="p1">**</bpt>Profile relation<ept id="p1">**</ept> page, which is opened from the <bpt id="p2">**</bpt>Profile groups<ept id="p2">**</ept> page, supports the same business scenario as the deprecated <bpt id="p3">**</bpt>Workplanner<ept id="p3">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei, mutta <bpt id="p1">**</bpt>Profiilirelaatio<ept id="p1">**</ept>-sivu, joka avautuu <bpt id="p2">**</bpt>Profiiliryhmät<ept id="p2">**</ept>-sivulta, tukee samoja liiketoimintaskenaarioita mitä vanhentuneella <bpt id="p3">**</bpt>Työn suunnittelu<ept id="p3">**</ept>-sivulla käytettiin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1424">
+          <source><bpt id="p1">**</bpt>Product areas affected<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1425">
+          <source>Time and attendance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työajan seuranta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1426">
+          <source><bpt id="p1">**</bpt>Status<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tila<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1427">
+          <source>The code has not been removed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koodia ei ole poistettu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1428">
+          <source>However, the form, JmgWorkPlanner, was not migrated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lomaketta, JmgWorkPlanner, ei kuitenkaan siirretty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1429">
+          <source>X++ financial statements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X++-raportit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1430">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Reason for deprecation/removal<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Poiston tai vanhentumisen syy<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1431">
+          <source>This functionality has been replaced by another feature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toinen ominaisuus on korvannut tämän toiminnon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1432">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Replaced by another feature?<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Onko toinen ominaisuus korvannut?<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1433">
+          <source>Management Reporter (labeled <bpt id="p1">&lt;strong&gt;</bpt>Financial reporting<ept id="p1">&lt;/strong&gt;</ept> in the current version of Dynamics AX)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter (Dynamics AX:n nykyisessä versiossa sen nimi on <bpt id="p1">&lt;strong&gt;</bpt>Talousraportointi<ept id="p1">&lt;/strong&gt;</ept>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1434">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Product areas affected<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Tuotealueet, joihin vaikutetaan<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1435">
+          <source>General ledger</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpito</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1436">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Status<ept id="p1">&lt;/strong&gt;</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Tila<ept id="p1">&lt;/strong&gt;</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="1437">
+          <source>Removed as of Dynamics AX 2012</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poistettu versiosta Dynamics AX 2012 alkaen</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

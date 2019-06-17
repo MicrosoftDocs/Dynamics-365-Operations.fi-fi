@@ -1,155 +1,453 @@
----
-title: Suorituksen hallinta
-description: Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa. Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-talent
-ms.technology: ''
-audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
-ms.custom: 221024
-ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
-ms.search.region: Global
-ms.author: anbichse
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1954b691d84b0aa8710da621af21415c6c116539
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517893"
----
-# <a name="performance-management"></a><span data-ttu-id="4cfd7-104">Suorituksen hallinta</span><span class="sxs-lookup"><span data-stu-id="4cfd7-104">Performance management</span></span>
-
-[!include [banner](includes/banner.md)]
-
-<span data-ttu-id="4cfd7-105">Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-105">The performance management process lets employees document and discuss their performance with their manager.</span></span> <span data-ttu-id="4cfd7-106">Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-106">In turn, managers can then provide feedback and guidance to the employees.</span></span>  
-
-<span data-ttu-id="4cfd7-107">Prosessin hallinta sisältää seuraavan kaavion osoittamat kolme sivua:</span><span class="sxs-lookup"><span data-stu-id="4cfd7-107">As the following diagram shows, there are three pages that help you manage the process:</span></span>
-
--   <span data-ttu-id="4cfd7-108">Suoritustason kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="4cfd7-108">Performance journal</span></span>
--   <span data-ttu-id="4cfd7-109">Tavoitteet</span><span class="sxs-lookup"><span data-stu-id="4cfd7-109">Goals</span></span>
--   <span data-ttu-id="4cfd7-110">Kehityskeskustelu</span><span class="sxs-lookup"><span data-stu-id="4cfd7-110">Performance review</span></span>
-
-<span data-ttu-id="4cfd7-111">Seuraavassa kaaviossa on kuvattu, miten suoritustason hallinnan ensisijaiset osat liittyvät toisiinsa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-111">The following diagram shows how the primary components of performance management are related to each other.</span></span> <span data-ttu-id="4cfd7-112">[![Suoritustasoprosessin yleiskuvaus](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)</span><span class="sxs-lookup"><span data-stu-id="4cfd7-112">[![Performance process overview](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)</span></span>    
-
-## <a name="performance-journal"></a><span data-ttu-id="4cfd7-113">Suoritustason kirjauskansio</span><span class="sxs-lookup"><span data-stu-id="4cfd7-113">Performance journal</span></span>
-<span data-ttu-id="4cfd7-114">Ennen työntekijän suorittamaa tarkastusta kerätään usein tietoja tehtävistä ja tapahtumista, jotka ovat vaikuttaneet onnistumiseen tarkastelukauden aikana.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-114">As an employee, before you complete your review, you often gather information about activities or events that contributed to your success during a review period.</span></span> <span data-ttu-id="4cfd7-115">Nämä tehtävät ja tapahtumat voidaan dokumentoida suoritustason kirjauskansioon.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-115">The performance journal is the place where you can document those activities and events.</span></span> <span data-ttu-id="4cfd7-116">Lisäksi voidaan luoda tulevia tehtäviä, jotka on suoritettava tavoitteen saavuttamiseksi tai kehityssuunnitelman vaatimusten tai suoritustasoon sitoutumisen täyttämiseksi.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-116">In addition, you can create future activities that must be completed to help you accomplish a goal, meet the requirements of a development plan, or meet a performance commitment.</span></span> <span data-ttu-id="4cfd7-117">Suoritustason kirjauskansiot eivät ole pakollisia tavoitteiden ja suoritustasoarviointien luomisessa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-117">Performance journals aren’t required in order to create goals or performance reviews.</span></span> 
-
-<span data-ttu-id="4cfd7-118">Suoritustason kirjauskansiosta on kaksi eri versiota: työntekijän versio, jota käytetään **Työntekijän itsepalvelu** -työtilan (**ESS**) kautta ja esimiehen versio, jota käytetään **Esimiehen itsepalvelu** -työtilan (**MSS**) kautta.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-118">There are two versions of the performance journal: the employee version, which is accessible through the **Employee self-service** workspace (**ESS**), and the manager version, which is accessible through the **Manager self-service** workspace (**MSS**).</span></span> <span data-ttu-id="4cfd7-119">Työntekijät voivat luoda itselleen kirjauskansioita ja jakaa niitä esimiesten kanssa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-119">Employees can create journals for themselves and can choose to share them with their manager.</span></span> <span data-ttu-id="4cfd7-120">Esimiehet voivat luoda ryhmälleen kirjauskansioita ja jakaa niitä työntekijöiden kanssa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-120">Managers can create journals for their team and can choose to share them with their employees.</span></span> 
-
-<span data-ttu-id="4cfd7-121">Kun **Suoritustason kirjauskansio** -sivua käytetään **Työntekijän itsepalvelu** -työtilan kautta, voit tallentaa seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="4cfd7-121">When it’s accessed from the **ESS** workspace, the **performance journal** page lets you capture the following information:</span></span>
-
--   <span data-ttu-id="4cfd7-122">tehtävän otsikko</span><span class="sxs-lookup"><span data-stu-id="4cfd7-122">A title for the activity</span></span>
--   <span data-ttu-id="4cfd7-123">tehtävän kuvaus, joka sisältää tehtävän yksityiskohtaiset tiedot</span><span class="sxs-lookup"><span data-stu-id="4cfd7-123">A description for the activity, which includes detailed information about the activity</span></span>
--   <span data-ttu-id="4cfd7-124">kirjauskansion luontipäivämäärä</span><span class="sxs-lookup"><span data-stu-id="4cfd7-124">The date when the journal was created</span></span>
--   <span data-ttu-id="4cfd7-125">tehtävän alkamis- ja valmistumispäivämäärä</span><span class="sxs-lookup"><span data-stu-id="4cfd7-125">The dates when the activity was started and completed</span></span>
--   <span data-ttu-id="4cfd7-126">tila-asetus, joka osoittaa, voiko tehtävän jakaa työntekijän esimiehen kanssa</span><span class="sxs-lookup"><span data-stu-id="4cfd7-126">A status setting that indicates whether the activity can be shared with the employee’s manager</span></span>
--   <span data-ttu-id="4cfd7-127">asetus, joka osoittaa, onko merkintä kehityssuunnitelman osa</span><span class="sxs-lookup"><span data-stu-id="4cfd7-127">A setting that indicates whether the entry is part of a development plan</span></span>
--   <span data-ttu-id="4cfd7-128">avainsanat, joiden avulla voi etsiä samanlaisia suoritustason kirjauskansiokohteita.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-128">Keywords that will help you search for similar performance journal items</span></span>
-
-<span data-ttu-id="4cfd7-129">Voit myös linkittää suoritustason kirjauskansion ulkoiseen verkkosivustoon tallentamalla sivuston URL-osoitteen.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-129">You can also link the performance journal to an external website by storing the URL of that site.</span></span> <span data-ttu-id="4cfd7-130">Jos kirjauskansio liittyy tavoitteisiin tai suoritustasoarviointeihin, voit linkittää kirjauskansion myös niihin halutessasi.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-130">If the journal is related to goals or performance reviews, you can also link it to one or more of them.</span></span> <span data-ttu-id="4cfd7-131">Kun suoritustason kirjauskansiota käytetään **Esimiehen itsepalvelu** -sivun kautta, voit syöttää samat tiedot kuin työntekijän kirjauskansioon.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-131">When the performance journal is accessed from the **MSS** page, you can enter the same information that you can enter for the employee journal.</span></span> <span data-ttu-id="4cfd7-132">Lisäksi voit määrittää työntekijät, joille kirjauskansio luodaan.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-132">In addition, you can specify the employee that the journal is being created for.</span></span> <span data-ttu-id="4cfd7-133">Voit määrittää, jaetaanko esimiehen kirjauskansio työntekijöiden kanssa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-133">You can choose whether to share the manager journal with your employee.</span></span>
-
-### <a name="send-feedback"></a><span data-ttu-id="4cfd7-134">Lähetä palaute</span><span class="sxs-lookup"><span data-stu-id="4cfd7-134">Send feedback</span></span>
-
-<span data-ttu-id="4cfd7-135">Suoritustason kirjauskansio sisältää lisätoiminnon, jonka nimi on Palaute.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-135">The performance journal contains an additional feature that is named Feedback.</span></span> <span data-ttu-id="4cfd7-136">Kun valitset **Lähetä palaute**, voit valita työntekijän ja antaa tälle palautetta sähköpostitse.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-136">When you click on **Send feedback**, you can select an employee and provide feedback to that employee via email.</span></span> <span data-ttu-id="4cfd7-137">Viesti lähetetään palautteen saavalle työntekijälle, työntekijän esimiehelle, palautteen lähettävälle työntekijälle ja tämän työntekijän esimiehelle.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-137">The message is sent to the employee who is receiving the feedback, that employee’s manager, the employee who is sending the feedback, and that employee’s manager.</span></span> <span data-ttu-id="4cfd7-138">Suoritustason kirjauskansiovienti luodaan jokaiselle palauteviestin vastaanottavalle henkilölle.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-138">A performance journal entry is created for each person who receives the feedback message.</span></span>
-
-## <a name="goals"></a><span data-ttu-id="4cfd7-139">Tavoitteet</span><span class="sxs-lookup"><span data-stu-id="4cfd7-139">Goals</span></span>
-<span data-ttu-id="4cfd7-140">**Suoritustasotavoitteet**-sivu auttaa sinun ja esimiehesi luomien tavoitteiden seuraamisessa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-140">The **performance goals** page helps you track the goals that you and your manager have created for you.</span></span> <span data-ttu-id="4cfd7-141">Voit luoda haluamasi määrän tavoitteita. Tavoitteiden ei tarvitse olla samalla kaudella tai samoissa suoritustasoarvioinneissa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-141">You can create any number of goals, and those goals can span different periods and performance reviews.</span></span> <span data-ttu-id="4cfd7-142">Voit luoda myös yksinkertaisia tai monitasoisia tavoitteita sen mukaan, miten paljon tavoitetta koskevia tietoja haluat syöttää.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-142">You can also create simple or complex goals, depending on the amount of information that you want to enter about the goal.</span></span> <span data-ttu-id="4cfd7-143">Suoritustasoarvioinnit eivät edellytä tavoitteiden asettamista.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-143">Goals aren’t required for performance reviews.</span></span> 
-
-<span data-ttu-id="4cfd7-144">Perustavoitteelle on annettava seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="4cfd7-144">A basic goal must include the following information:</span></span>
-
--   <span data-ttu-id="4cfd7-145">lyhyt nimi</span><span class="sxs-lookup"><span data-stu-id="4cfd7-145">A short name</span></span>
--   <span data-ttu-id="4cfd7-146">tavoitteen pidempi kuvaus</span><span class="sxs-lookup"><span data-stu-id="4cfd7-146">A longer description of the goal</span></span>
--   <span data-ttu-id="4cfd7-147">tavoitteen arvioitu aloituspäivämäärä</span><span class="sxs-lookup"><span data-stu-id="4cfd7-147">The anticipated start date for the goal</span></span>
--   <span data-ttu-id="4cfd7-148">tavoitteen arvioitu valmistumispäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-148">The estimated completion date for the goal</span></span>
-
-<span data-ttu-id="4cfd7-149">Voit myös määrittää tavoiteluokan, joka auttaa tavoitteiden järjestelyssä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-149">You can also specify a goal category to help you organize your goals.</span></span> <span data-ttu-id="4cfd7-150">Esimiehet näkevät myös sen henkilön nimen, jolle tavoite on määritetty.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-150">Managers will also see the name of the person that the goal is assigned to.</span></span> 
-
-<span data-ttu-id="4cfd7-151">Jos saatava yksityiskohtaisempia tietoja tavoitteesta, voit luoda tavoitteen ohjeaiheen.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-151">If you have more detailed instructions for a goal, you can create goal topics.</span></span> <span data-ttu-id="4cfd7-152">Ohjeaiheet sisältävät otsikon ja kuvauksen.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-152">These topics include a title and a description.</span></span> <span data-ttu-id="4cfd7-153">Voit lisätä haluamasi määrän ohjeaiheita. Niiden avulla varmistat, että sekä työntekijä että esimies ymmärtävät tavoitteen tiedot.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-153">You can include as many topics as you require to help guarantee that the details of the goal are clear to both the employee and the manager.</span></span> <span data-ttu-id="4cfd7-154">Sekä työntekijät että esimiehet voivat myös syöttää tavoitteen etenemistä koskevia kommentteja.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-154">Both employees and managers can also enter comments about the progress of the goals.</span></span> 
-
-<span data-ttu-id="4cfd7-155">Tavoitteisiin liittyy usein mitattavissa olevia tuloksia.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-155">Goals often have measurable results.</span></span> <span data-ttu-id="4cfd7-156">Voit lisätä mittaukset, kun haluat seurata tavoitteen tavoitetuloksia ja todellisia tuloksia.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-156">You can add measurements to track the target goal results and the actual results.</span></span> <span data-ttu-id="4cfd7-157">Jos mittaus on haastava tavoite, voit merkitä mittauksen **Haastava tavoite** -valinnan avulla.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-157">If the measurement is a stretch goal, you can mark the measurement by using the **Stretch goal** option.</span></span> 
-
-<span data-ttu-id="4cfd7-158">Suoritustason kirjauskansio sisältää tehtäviä, joiden avulla esimies saa lisätietoja tavoitteen suorittamisesta.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-158">Your performance journal will contain activities that provide your manager with more information about how you accomplished your goal.</span></span> <span data-ttu-id="4cfd7-159">Jos suoritustason kirjauskansio on linkitetty tavoitteeseen, se näkyy kyseisen tavoitteen **Tehtävät**-osassa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-159">If you’ve linked a performance journal to the goal, it appears in the **Activities** section of that goal.</span></span> <span data-ttu-id="4cfd7-160">Voit lisätä uuden suoritustason kirjauskansion myös **Suoritustasotavoitteet**-sivulta.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-160">You can also add a new performance journal from the **performance goals** page.</span></span> <span data-ttu-id="4cfd7-161">Kyseinen suoritustason kirjauskansio linkitetään automaattisesti tavoitteeseen.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-161">That performance journal will be automatically linked to the goal.</span></span> 
-
-<span data-ttu-id="4cfd7-162">Jos haluat liittää tavoitteeseen asiakirjan, kuten suoritustodistuksen, voit liittää sen **Suoritustasotavoitteet**-sivun **Liitteet**-osassa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-162">If you want to attach a document to the goal, such as a certificate of completion, you can attach it in the **Attachments** section of the **performance goals** page.</span></span> <span data-ttu-id="4cfd7-163">Asiakirjojen katseluohjelman avulla voi tarkastella nopeasti minkä tahansa liitetyn asiakirjan sisältöä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-163">A document viewer is provided so that you can quickly view the contents of any attached document.</span></span> 
-
-<span data-ttu-id="4cfd7-164">Voit luoda tavoitteesta mallin ja luoda mallin avulla uusia kyseiseen malliin perustuvia tavoitteita.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-164">You can create a template from a goal and then use the template to create new goals that are based on the template.</span></span> <span data-ttu-id="4cfd7-165">Kuvaus, ohjeaihe ja tavoitemittaukset tallennetaan, kun luot tavoitteesta mallin.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-165">When you create a template from a goal, the description, topics, and target measurements are saved.</span></span> <span data-ttu-id="4cfd7-166">Kaikki todelliset mittaukset, valmistumispäivämäärät ja ohjeaiheiden kommentit kuitenkin poistetaan.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-166">However, all actual measurements, completion dates, and topic comments are removed.</span></span>
-
-## <a name="performance-reviews"></a><span data-ttu-id="4cfd7-167">Suoritustasoarvioinnit</span><span class="sxs-lookup"><span data-stu-id="4cfd7-167">Performance reviews</span></span>
-<span data-ttu-id="4cfd7-168">Suoritustasoarviointeja kutsutaan virallisesti keskusteluiksi.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-168">Performance reviews are more formally known as discussions.</span></span> <span data-ttu-id="4cfd7-169">Ne ovat nyt riittävän joustavia ja tukevat jatkuvaa palautetta, kehityssuunnitelmia ja virallisempia arviointeja.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-169">They are now flexible enough to support continuous feedback, development plans and more formal reviews.</span></span> <span data-ttu-id="4cfd7-170">Voit luoda nopeasti kahdelle ihmiselle pieniä tapaamisia, kuten kahdenkeskisiä tapaamisia, tai monitasoisemman yrityksen arviointiprosessia vastaavan arvioinnin.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-170">You can quickly create small meetings for two people, such as a one-on-one meeting, or you can build a more complex review that matches the review process of your company.</span></span> 
-
-<span data-ttu-id="4cfd7-171">Tapaaminen, kuten kahdenkeskinen tapaaminen, on yksinkertainen arviointi. Sitä varten tarvitsee antaa lyhyt nimi, pidempi kuvaus tapaamisen sisällöstä ja tapaamisen päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-171">A meeting such as a one-on-one is a simple review, and requires a short name, a longer description of the contents of the meeting, and the date of the meeting.</span></span> <span data-ttu-id="4cfd7-172">Yksinkertainen arviointi sisältää samat tiedot sekä kyseisen arvioinnin kauden.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-172">A simple review includes the same information, plus the review period that is being discussed.</span></span> <span data-ttu-id="4cfd7-173">Esimiehet näkevät myös sen henkilön nimen, jolle arviointi on luotu.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-173">Managers will also see the name of the person that the review is created for.</span></span> 
-
-<span data-ttu-id="4cfd7-174">Yksityiskohtaisimpia arvioita varten voit noutaa aktiiviset ja valmiit tavoitteet ja syöttää niitä koskevat kommentit.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-174">For more detailed reviews, you can pull in active and completed goals, and enter comments about them.</span></span> <span data-ttu-id="4cfd7-175">Kaikki tavoitteeseen liittyvät suoritustason kirjauskansion tehtävät ja mittaukset näkyvät arvioinnissa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-175">All performance journal activities and measurements that are related to a goal will appear on the review.</span></span> <span data-ttu-id="4cfd7-176">Kun arviointi on tehty, arvioinnin aikaisten kohteiden historia sisältävä mittausten tilannevedos tallennetaan.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-176">After the review is finalized, a snapshot of the measurements is stored to retain the history of those items at the time of the review.</span></span> 
-
-<span data-ttu-id="4cfd7-177">Myös **Osaamistiedot**-osaa voi käyttää työntekijän osaamistiedoista keskustelemiseen sekä niiden arviointiin ja luokitteluun.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-177">You can also use the **Competencies** section to discuss, review, and rate the employee’s competencies.</span></span> <span data-ttu-id="4cfd7-178">Lisää haluamasi määrä osaamistietoja. Määritä, onko osaamistiedot luokiteltava.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-178">You can add as many competencies as you require, and you can choose whether the competency must be rated.</span></span> 
-
-<span data-ttu-id="4cfd7-179">Voit luoda uusia arvioijia luomasi mallin perusteella.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-179">You can create new reviews that are based on templates that you’ve created.</span></span> <span data-ttu-id="4cfd7-180">Sinulla voi olla malli esimerkiksi kahdenkeskisiä tapaamisia, kehityssuunnitelmia tai kausittaisia arviointeja varten.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-180">For example, you can have a template for one-on-ones, development plans, or periodic reviews.</span></span> <span data-ttu-id="4cfd7-181">Valitse malli uuden arvioinnin luomisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-181">You can select the template when you create a new review.</span></span>
-
-## <a name="components-you-can-include-in-performance-reviews"></a><span data-ttu-id="4cfd7-182">Suoritustasoarviointeihin lisättävissä olevat osat</span><span class="sxs-lookup"><span data-stu-id="4cfd7-182">Components you can include in performance reviews</span></span>
-<span data-ttu-id="4cfd7-183">Suoritustasoarviointeihin voi lisätä erityyppisiä tietoja.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-183">You can include a number of types of information in performance reviews.</span></span> <span data-ttu-id="4cfd7-184">Tietoja ovat esimerkiksi arvioinnin tiedot, mittaukset, tehtävät, luokitukset, kuittaukset ja liitteet.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-184">They include review detail, measurements, activities, ratings, sign-offs and attachments.</span></span>
-
-### <a name="review-detail"></a><span data-ttu-id="4cfd7-185">Arvioinnin tiedot</span><span class="sxs-lookup"><span data-stu-id="4cfd7-185">Review detail</span></span>
-
-<span data-ttu-id="4cfd7-186">Voit noutaa tavoitteesi arvioinnin tietoihin ja lisätä niihin kommentteja.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-186">You can pull in your goals into the review details and make comments on them.</span></span> <span data-ttu-id="4cfd7-187">Voit myös määrittää osaamistietoja ja lisätä niihin kommentteja.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-187">You can also set up competencies and make comments on them.</span></span>
-
-### <a name="measurements"></a><span data-ttu-id="4cfd7-188">Mittaukset</span><span class="sxs-lookup"><span data-stu-id="4cfd7-188">Measurements</span></span>
-
-<span data-ttu-id="4cfd7-189">Voit tarkastella tavoitteeseen tai arviointiin liittyviä mittauksia.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-189">You can view measurements that are related to a goal or review.</span></span> <span data-ttu-id="4cfd7-190">Voit myös lisätä arviointiin liittyvän uuden mittauksen.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-190">You can also add a new measurement that is related to the review.</span></span>
-
-### <a name="activities"></a><span data-ttu-id="4cfd7-191">Tehtävät</span><span class="sxs-lookup"><span data-stu-id="4cfd7-191">Activities</span></span>
-
-<span data-ttu-id="4cfd7-192">Voit näyttää arviointiin liittyvän suoritustason kirjauskansiokohteet.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-192">You can show performance journal items that are related to the review.</span></span> <span data-ttu-id="4cfd7-193">Voit myös lisätä suoritustason kirjauskansion, joka linkitetään arviointiin automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-193">You can also add a performance journal, which will be automatically linked to the review.</span></span>
-
-### <a name="ratings"></a><span data-ttu-id="4cfd7-194">Luokitukset</span><span class="sxs-lookup"><span data-stu-id="4cfd7-194">Ratings</span></span>
-
-<span data-ttu-id="4cfd7-195">Voit kohdistaa luokituksen mihin tahansa arvioinnin tavoitteeseen tai osaamiseen.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-195">You can apply a rating to any goal or competency that is on the review.</span></span> <span data-ttu-id="4cfd7-196">Voit määrittää jokaiselle arvioinnille arviointimallit.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-196">You can define the rating models for each review.</span></span> <span data-ttu-id="4cfd7-197">Arviointien oletusarvot ovat **Suoritustaso**-kohdan **Henkilöstöhallintoparametrit**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-197">The defaults for ratings are on the **Human resources parameters** page under **Performance.**</span></span>
-
-### <a name="sign-offs"></a><span data-ttu-id="4cfd7-198">Kuittaukset</span><span class="sxs-lookup"><span data-stu-id="4cfd7-198">Sign-offs</span></span>
-
-<span data-ttu-id="4cfd7-199">Työntekijä ja/tai esimies listataan arviointiin määrittämiesi arviointiparametrien perusteella.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-199">The employee and/or the manager will be listed on the review based on the review parameters that you set.</span></span> <span data-ttu-id="4cfd7-200">Arvioinnit voivat olla pakollisia tai valinnaisia.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-200">The reviews can be required or optional.</span></span> <span data-ttu-id="4cfd7-201">Kun kaikki pakolliset kuittaukset on tehty, arvioinnin tilaksi voidaan merkitä Valmis.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-201">Once all of the required sign-offs are made, the review will be marked with a status of Complete.</span></span>
-
-### <a name="attachments"></a><span data-ttu-id="4cfd7-202">Liitteet</span><span class="sxs-lookup"><span data-stu-id="4cfd7-202">Attachments</span></span>
-
-<span data-ttu-id="4cfd7-203">Voit liittää arviointiin asiakirjan **Arvioinnit**-sivun **Liitteet**-osassa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-203">You can attach a document to a review in the **Attachments** section of the **reviews** page.</span></span> <span data-ttu-id="4cfd7-204">Asiakirjojen katseluohjelman avulla voi tarkastella nopeasti minkä tahansa liitetyn asiakirjan sisältöä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-204">A document viewer is provided so that you can quickly view the contents of any attached document.</span></span>
-
-### 
-
-## <a name="workflow-for-performance-management"></a><span data-ttu-id="4cfd7-205">Suoritustason hallinnan työnkulku</span><span class="sxs-lookup"><span data-stu-id="4cfd7-205">Workflow for performance management</span></span>
-<span data-ttu-id="4cfd7-206">Työntekijän arvioinnin työnkulun avulla voit hallita arvioinnin hyväksyntää.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-206">You can use the Worker Review workflow to control the approval of a review.</span></span> <span data-ttu-id="4cfd7-207">Voit myös ohittaa automaattisen työnkulun ja muuttaa arvioinnin tilan manuaalisesti. Näin voit luoda yksinkertaisempia asiakirjoja, kuten kahden henkilön käytössä olevia asiakirjoja, ilman työnkulkuprosessia.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-207">You can also choose to skip the automated workflow and manually change the status of the review, which allows you to create simpler documents like a one-on-one without having to use the workflow process.</span></span> <span data-ttu-id="4cfd7-208">Arvioinnin tila ohjaa arvioinnin käyttöä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-208">Access to a review is controlled by the status of the review.</span></span>
-
-1.  <span data-ttu-id="4cfd7-209">Kun arviointi luodaan, sen tilaksi määritetään **Ei aloitettu**.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-209">When the review is created, it’s set to the **Not started** status.</span></span> <span data-ttu-id="4cfd7-210">Kuka tahansa voi muokata arviointia.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-210">The review is editable by anyone.</span></span>
-2.  <span data-ttu-id="4cfd7-211">Kun työntekijä painaa **Aloita arviointi** -painiketta, arvioinnin tilaksi määritetään **Käsittelyssä**.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-211">Once the employee presses the **Begin review** button, the review is set to the **In progress** status.</span></span> <span data-ttu-id="4cfd7-212">Tämän jälkeen työntekijä alkaa lisätä sisältöä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-212">The employee then begins to add content.</span></span> <span data-ttu-id="4cfd7-213">Tässä vaiheessa esimies ei enää voi tarkastella arviointiasiakirjaa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-213">At this point, the manager can no longer view the review document.</span></span>
-3.  <span data-ttu-id="4cfd7-214">Työntekijä muuttaa tilaksi **Valmis arvioitavaksi**.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-214">The employee changes the status to **Ready for review**.</span></span>
-4.  <span data-ttu-id="4cfd7-215">Esimies voi lisätä kommentteja ja luokituksia.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-215">The manager can add comments and ratings.</span></span> <span data-ttu-id="4cfd7-216">Tässä vaiheessa vain esimies näkee arvioinnin.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-216">At this point, only the manager can see the review.</span></span>
-5.  <span data-ttu-id="4cfd7-217">Esimies muuttaa tilaksi **Lopullinen arviointi**. Tällöin sekä esimies että työntekijä näkevät arvioinnin, ja he voivat keskustella siitä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-217">The manager changes the status to **Final review**, so that both the manager and the employee can see the review and discuss it.</span></span> <span data-ttu-id="4cfd7-218">Voit määrittää parametrien avulla, voiko arviointia muokata tässä vaiheessa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-218">You can specify in the parameters whether or not the review can be edited at this point.</span></span> <span data-ttu-id="4cfd7-219">Tämä vaihe on myös valinnainen, jos esimies haluaa yksinkertaisesti jakaa arvioinnin työntekijän kanssa ja merkitä sen tilaksi **Valmis**, kun toimenpiteet on tehty.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-219">This step is also optional if the manager simply wants to share the review with the employee and mark it as **Complete** when they are finished.</span></span>
-6.  <span data-ttu-id="4cfd7-220">Kun kuittaukset on tehty, tilaksi muutetaan **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-220">After the sign-offs are completed, the status is changed to **Complete**.</span></span> <span data-ttu-id="4cfd7-221">Tässä vaiheessa arviointia ei voi enää muuttaa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-221">At this point, the review can’t be changed.</span></span>
-
-<span data-ttu-id="4cfd7-222">Työntekijän arvioinnin työnkulku koostuu kahdesta seuraavasta elementistä:</span><span class="sxs-lookup"><span data-stu-id="4cfd7-222">The Worker Review workflow has two elements:</span></span>
-
-1.  <span data-ttu-id="4cfd7-223">Hyväksy arviointi.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-223">Approve review.</span></span> <span data-ttu-id="4cfd7-224">Lisää tämä elementti, kun haluat hallita tilan muuttamista **Keskeneräinen**-tilasta **Valmis arvioitavaksi** -tilaan.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-224">Add this element to control the status change from **In progress** to **Ready for review**.</span></span> <span data-ttu-id="4cfd7-225">Muuta määritystä käyttääksesi johtajahierarkiaa, jossa työntekijärivin esimiehen taso = 1.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-225">Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1.</span></span>
-2.  <span data-ttu-id="4cfd7-226">Lopullinen arviointi.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-226">Final review.</span></span> <span data-ttu-id="4cfd7-227">Lisää tämä elementti, kun haluat hallita tilan muuttamista **Valmis arvioitavaksi**-tilasta **Lopullinen arviointi** -tilaan.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-227">Add this element to control the status change from **Ready for review** to **Final review**.</span></span> <span data-ttu-id="4cfd7-228">Muuta määritystä käyttääksesi johtajahierarkiaa, jossa työntekijärivin esimiehen taso = 1, kun haluat esimiehen hyväksyvän lopullisen arvioinnin.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-228">Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1 if you want the manager to approve the final review.</span></span> <span data-ttu-id="4cfd7-229">Muuta määritykseksi Työnkulun käyttäjä, jos haluat, että työntekijä hyväksyy arvioinnin.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-229">Change the assignment to Workflow user if you want the employee to approve it.</span></span> <span data-ttu-id="4cfd7-230">Jos haluat, että sekä esimies että työntekijä hyväksyvät arvioinnin, lisää työnkulkuun kaksi vaihetta ja tee jokaiselle vaiheelle tarvittava määritys siinä järjestyksessä, jossa hyväksynnät tulee tehdä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-230">If you want both the manager and employee to approve it, add two steps in the workflow and make the appropriate assignment for each step in the order that you want the approvals to follow.</span></span>
-
-## <a name="setup"></a><span data-ttu-id="4cfd7-231">Luo perustiedot</span><span class="sxs-lookup"><span data-stu-id="4cfd7-231">Setup</span></span>
-<span data-ttu-id="4cfd7-232">Voit määrittää suoritustasoprosessin suorittamisessa vaadittavat tiedot seuraavien kolmen sivun avulla: **Mittaukset**-sivu, **Suoritustason kirjauskansion lähdetyypit** -sivu ja **Arviointityypit**-sivu.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-232">There are three pages that help you set up information that is required in order to complete the performance process: the **measurements** page,  the **performance journal source types** page and the **review types** page.</span></span>
-
-### <a name="measurements"></a><span data-ttu-id="4cfd7-233">Mittaukset</span><span class="sxs-lookup"><span data-stu-id="4cfd7-233">Measurements</span></span>
-
-<span data-ttu-id="4cfd7-234">Mittaukset-sivun avulla voit luoda **Suoritustasotavoitteet**- ja **Arvioinnit**-sivuilla käytettävät vakiomittaukset.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-234">The measurements page lets you create standard measurements that will be used on the **performance goals** and **reviews** pages.</span></span> <span data-ttu-id="4cfd7-235">Voit luoda mittauksia, jotka ovat päivämääriä, summia, määriä tai prosenttilukuja, tai luokitusmalliin perustuvia mittauksia.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-235">You can create measurements that are dates, amounts, quantities, or percentages, or measurements that are based on a rating model.</span></span>
-
-### <a name="performance-journal-source-types"></a><span data-ttu-id="4cfd7-236">Suoritustason kirjauskansion lähdetyypit</span><span class="sxs-lookup"><span data-stu-id="4cfd7-236">Performance journal source types</span></span>
-
-<span data-ttu-id="4cfd7-237">Suoritustason kirjauskansion lähdetyypit kuvaavat suoritustason kirjauskansioiden alkuperää.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-237">Performance journal source types describe where the performance journals come from.</span></span> <span data-ttu-id="4cfd7-238">Näet, onko kirjauskansiokohde oletusarvoisesti vain esimiehen tai työntekijän tarkasteltavissa, vai voivatko molemmat tarkastella sitä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-238">You can see whether a journal item will be viewed by default by the manager only, the employee only, or both the manager and the employee.</span></span> <span data-ttu-id="4cfd7-239">Voit myös ottaa käyttöön Lähetä kehu -toiminnon tai poistaa sen käytöstä muuttamalla kehun lähdetyyppiä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-239">You can also enable or disable the Send Praise feature by changing the Praise source type.</span></span> <span data-ttu-id="4cfd7-240">Et voi poistaa muita lähdetyyppejä tällä hetkellä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-240">You cannot disable the other source types at this time.</span></span>
-
-### <a name="review-types"></a><span data-ttu-id="4cfd7-241">Arviointityypit</span><span class="sxs-lookup"><span data-stu-id="4cfd7-241">Review types</span></span>
-
-<span data-ttu-id="4cfd7-242">Suoritustason arviointityyppien avulla voit hallita arvioinnin toimintaa.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-242">Performance review types help you control the behavior of a review.</span></span> <span data-ttu-id="4cfd7-243">Voit ottaa käyttöön arvioinnin työnkulun tai poistaa sen käytöstä.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-243">You can enable or disable workflow for a review.</span></span> <span data-ttu-id="4cfd7-244">Jos arvioinnissa ei käytetä työnkulkua, voit määrittää arvioinnin luomisen yhteydessä käytettävän oletustilan.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-244">If the review does not use workflow, you can define the default status that will be used when the review is created.</span></span> <span data-ttu-id="4cfd7-245">Voit myös määrittää, vaaditaanko arvioinnissa työntekijän, esimiehen vai molempien kuittaus.</span><span class="sxs-lookup"><span data-stu-id="4cfd7-245">You can also decide if the employee, the manager, or both will be required to sign off on the review.</span></span>
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="performance-management-overview.md" target-language="fi-FI">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>performance-management-overview.11e250.05d8986d69abba4dbba7c30aad5a7e4626ceb5b1.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>05d8986d69abba4dbba7c30aad5a7e4626ceb5b1</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>cadce85ca3004d53caf6bc49147a524c1bfd421f</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/16/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\talent\performance-management-overview.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Performance management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suorituksen hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>The performance management process lets employees document and discuss their performance with their manager.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>In turn, managers can then provide feedback and guidance to the employees.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Performance management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suorituksen hallinta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>The performance management process lets employees document and discuss their performance with their manager.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>In turn, managers can then provide feedback and guidance to the employees.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>As the following diagram shows, there are three pages that help you manage the process:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prosessin hallinta sisältää seuraavan kaavion osoittamat kolme sivua:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Performance journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason kirjauskansio</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Goals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tavoitteet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Performance review</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kehityskeskustelu</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The following diagram shows how the primary components of performance management are related to each other.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa kaaviossa on kuvattu, miten suoritustason hallinnan ensisijaiset osat liittyvät toisiinsa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Performance process overview<ept id="p1">](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Suoritustasoprosessin yleiskuvaus<ept id="p1">](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Performance journal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason kirjauskansio</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>As an employee, before you complete your review, you often gather information about activities or events that contributed to your success during a review period.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ennen työntekijän suorittamaa tarkastusta kerätään usein tietoja tehtävistä ja tapahtumista, jotka ovat vaikuttaneet onnistumiseen tarkastelukauden aikana.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>The performance journal is the place where you can document those activities and events.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nämä tehtävät ja tapahtumat voidaan dokumentoida suoritustason kirjauskansioon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>In addition, you can create future activities that must be completed to help you accomplish a goal, meet the requirements of a development plan, or meet a performance commitment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisäksi voidaan luoda tulevia tehtäviä, jotka on suoritettava tavoitteen saavuttamiseksi tai kehityssuunnitelman vaatimusten tai suoritustasoon sitoutumisen täyttämiseksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Performance journals aren’t required in order to create goals or performance reviews.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason kirjauskansiot eivät ole pakollisia tavoitteiden ja suoritustasoarviointien luomisessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>There are two versions of the performance journal: the employee version, which is accessible through the <bpt id="p1">**</bpt>Employee self-service<ept id="p1">**</ept> workspace (<bpt id="p2">**</bpt>ESS<ept id="p2">**</ept>), and the manager version, which is accessible through the <bpt id="p3">**</bpt>Manager self-service<ept id="p3">**</ept> workspace (<bpt id="p4">**</bpt>MSS<ept id="p4">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason kirjauskansiosta on kaksi eri versiota: työntekijän versio, jota käytetään <bpt id="p1">**</bpt>Työntekijän itsepalvelu<ept id="p1">**</ept> -työtilan (<bpt id="p2">**</bpt>ESS<ept id="p2">**</ept>) kautta ja esimiehen versio, jota käytetään <bpt id="p3">**</bpt>Esimiehen itsepalvelu<ept id="p3">**</ept> -työtilan (<bpt id="p4">**</bpt>MSS<ept id="p4">**</ept>) kautta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Employees can create journals for themselves and can choose to share them with their manager.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työntekijät voivat luoda itselleen kirjauskansioita ja jakaa niitä esimiesten kanssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Managers can create journals for their team and can choose to share them with their employees.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimiehet voivat luoda ryhmälleen kirjauskansioita ja jakaa niitä työntekijöiden kanssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>When it’s accessed from the <bpt id="p1">**</bpt>ESS<ept id="p1">**</ept> workspace, the <bpt id="p2">**</bpt>performance journal<ept id="p2">**</ept> page lets you capture the following information:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun <bpt id="p2">**</bpt>Suoritustason kirjauskansio<ept id="p2">**</ept> -sivua käytetään <bpt id="p1">**</bpt>Työntekijän itsepalvelu<ept id="p1">**</ept> -työtilan kautta, voit tallentaa seuraavat tiedot:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>A title for the activity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tehtävän otsikko</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>A description for the activity, which includes detailed information about the activity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tehtävän kuvaus, joka sisältää tehtävän yksityiskohtaiset tiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>The date when the journal was created</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">kirjauskansion luontipäivämäärä</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>The dates when the activity was started and completed</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tehtävän alkamis- ja valmistumispäivämäärä</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>A status setting that indicates whether the activity can be shared with the employee’s manager</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tila-asetus, joka osoittaa, voiko tehtävän jakaa työntekijän esimiehen kanssa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>A setting that indicates whether the entry is part of a development plan</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">asetus, joka osoittaa, onko merkintä kehityssuunnitelman osa</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Keywords that will help you search for similar performance journal items</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">avainsanat, joiden avulla voi etsiä samanlaisia suoritustason kirjauskansiokohteita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>You can also link the performance journal to an external website by storing the URL of that site.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös linkittää suoritustason kirjauskansion ulkoiseen verkkosivustoon tallentamalla sivuston URL-osoitteen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>If the journal is related to goals or performance reviews, you can also link it to one or more of them.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos kirjauskansio liittyy tavoitteisiin tai suoritustasoarviointeihin, voit linkittää kirjauskansion myös niihin halutessasi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>When the performance journal is accessed from the <bpt id="p1">**</bpt>MSS<ept id="p1">**</ept> page, you can enter the same information that you can enter for the employee journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun suoritustason kirjauskansiota käytetään <bpt id="p1">**</bpt>Esimiehen itsepalvelu<ept id="p1">**</ept> -sivun kautta, voit syöttää samat tiedot kuin työntekijän kirjauskansioon.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>In addition, you can specify the employee that the journal is being created for.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisäksi voit määrittää työntekijät, joille kirjauskansio luodaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>You can choose whether to share the manager journal with your employee.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää, jaetaanko esimiehen kirjauskansio työntekijöiden kanssa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Send feedback</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lähetä palaute</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>The performance journal contains an additional feature that is named Feedback.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason kirjauskansio sisältää lisätoiminnon, jonka nimi on Palaute.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>When you click on <bpt id="p1">**</bpt>Send feedback<ept id="p1">**</ept>, you can select an employee and provide feedback to that employee via email.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun valitset <bpt id="p1">**</bpt>Lähetä palaute<ept id="p1">**</ept>, voit valita työntekijän ja antaa tälle palautetta sähköpostitse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>The message is sent to the employee who is receiving the feedback, that employee’s manager, the employee who is sending the feedback, and that employee’s manager.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Viesti lähetetään palautteen saavalle työntekijälle, työntekijän esimiehelle, palautteen lähettävälle työntekijälle ja tämän työntekijän esimiehelle.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>A performance journal entry is created for each person who receives the feedback message.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason kirjauskansiovienti luodaan jokaiselle palauteviestin vastaanottavalle henkilölle.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Goals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tavoitteet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>The <bpt id="p1">**</bpt>performance goals<ept id="p1">**</ept> page helps you track the goals that you and your manager have created for you.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Suoritustasotavoitteet<ept id="p1">**</ept>-sivu auttaa sinun ja esimiehesi luomien tavoitteiden seuraamisessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>You can create any number of goals, and those goals can span different periods and performance reviews.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit luoda haluamasi määrän tavoitteita. Tavoitteiden ei tarvitse olla samalla kaudella tai samoissa suoritustasoarvioinneissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>You can also create simple or complex goals, depending on the amount of information that you want to enter about the goal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit luoda myös yksinkertaisia tai monitasoisia tavoitteita sen mukaan, miten paljon tavoitetta koskevia tietoja haluat syöttää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Goals aren’t required for performance reviews.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustasoarvioinnit eivät edellytä tavoitteiden asettamista.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>A basic goal must include the following information:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Perustavoitteelle on annettava seuraavat tiedot:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>A short name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">lyhyt nimi</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>A longer description of the goal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tavoitteen pidempi kuvaus</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>The anticipated start date for the goal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tavoitteen arvioitu aloituspäivämäärä</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>The estimated completion date for the goal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">tavoitteen arvioitu valmistumispäivämäärä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>You can also specify a goal category to help you organize your goals.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös määrittää tavoiteluokan, joka auttaa tavoitteiden järjestelyssä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Managers will also see the name of the person that the goal is assigned to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimiehet näkevät myös sen henkilön nimen, jolle tavoite on määritetty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>If you have more detailed instructions for a goal, you can create goal topics.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos saatava yksityiskohtaisempia tietoja tavoitteesta, voit luoda tavoitteen ohjeaiheen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>These topics include a title and a description.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ohjeaiheet sisältävät otsikon ja kuvauksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>You can include as many topics as you require to help guarantee that the details of the goal are clear to both the employee and the manager.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit lisätä haluamasi määrän ohjeaiheita. Niiden avulla varmistat, että sekä työntekijä että esimies ymmärtävät tavoitteen tiedot.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Both employees and managers can also enter comments about the progress of the goals.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sekä työntekijät että esimiehet voivat myös syöttää tavoitteen etenemistä koskevia kommentteja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Goals often have measurable results.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tavoitteisiin liittyy usein mitattavissa olevia tuloksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>You can add measurements to track the target goal results and the actual results.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit lisätä mittaukset, kun haluat seurata tavoitteen tavoitetuloksia ja todellisia tuloksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>If the measurement is a stretch goal, you can mark the measurement by using the <bpt id="p1">**</bpt>Stretch goal<ept id="p1">**</ept> option.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos mittaus on haastava tavoite, voit merkitä mittauksen <bpt id="p1">**</bpt>Haastava tavoite<ept id="p1">**</ept> -valinnan avulla.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Your performance journal will contain activities that provide your manager with more information about how you accomplished your goal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason kirjauskansio sisältää tehtäviä, joiden avulla esimies saa lisätietoja tavoitteen suorittamisesta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>If you’ve linked a performance journal to the goal, it appears in the <bpt id="p1">**</bpt>Activities<ept id="p1">**</ept> section of that goal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos suoritustason kirjauskansio on linkitetty tavoitteeseen, se näkyy kyseisen tavoitteen <bpt id="p1">**</bpt>Tehtävät<ept id="p1">**</ept>-osassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>You can also add a new performance journal from the <bpt id="p1">**</bpt>performance goals<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit lisätä uuden suoritustason kirjauskansion myös <bpt id="p1">**</bpt>Suoritustasotavoitteet<ept id="p1">**</ept>-sivulta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>That performance journal will be automatically linked to the goal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyseinen suoritustason kirjauskansio linkitetään automaattisesti tavoitteeseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>If you want to attach a document to the goal, such as a certificate of completion, you can attach it in the <bpt id="p1">**</bpt>Attachments<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>performance goals<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat liittää tavoitteeseen asiakirjan, kuten suoritustodistuksen, voit liittää sen <bpt id="p2">**</bpt>Suoritustasotavoitteet<ept id="p2">**</ept>-sivun <bpt id="p1">**</bpt>Liitteet<ept id="p1">**</ept>-osassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>A document viewer is provided so that you can quickly view the contents of any attached document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakirjojen katseluohjelman avulla voi tarkastella nopeasti minkä tahansa liitetyn asiakirjan sisältöä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>You can create a template from a goal and then use the template to create new goals that are based on the template.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit luoda tavoitteesta mallin ja luoda mallin avulla uusia kyseiseen malliin perustuvia tavoitteita.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>When you create a template from a goal, the description, topics, and target measurements are saved.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus, ohjeaihe ja tavoitemittaukset tallennetaan, kun luot tavoitteesta mallin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>However, all actual measurements, completion dates, and topic comments are removed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki todelliset mittaukset, valmistumispäivämäärät ja ohjeaiheiden kommentit kuitenkin poistetaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>Performance reviews</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustasoarvioinnit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>Performance reviews are more formally known as discussions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustasoarviointeja kutsutaan virallisesti keskusteluiksi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>They are now flexible enough to support continuous feedback, development plans and more formal reviews.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne ovat nyt riittävän joustavia ja tukevat jatkuvaa palautetta, kehityssuunnitelmia ja virallisempia arviointeja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>You can quickly create small meetings for two people, such as a one-on-one meeting, or you can build a more complex review that matches the review process of your company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit luoda nopeasti kahdelle ihmiselle pieniä tapaamisia, kuten kahdenkeskisiä tapaamisia, tai monitasoisemman yrityksen arviointiprosessia vastaavan arvioinnin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>A meeting such as a one-on-one is a simple review, and requires a short name, a longer description of the contents of the meeting, and the date of the meeting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapaaminen, kuten kahdenkeskinen tapaaminen, on yksinkertainen arviointi. Sitä varten tarvitsee antaa lyhyt nimi, pidempi kuvaus tapaamisen sisällöstä ja tapaamisen päivämäärä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>A simple review includes the same information, plus the review period that is being discussed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yksinkertainen arviointi sisältää samat tiedot sekä kyseisen arvioinnin kauden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>Managers will also see the name of the person that the review is created for.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimiehet näkevät myös sen henkilön nimen, jolle arviointi on luotu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>For more detailed reviews, you can pull in active and completed goals, and enter comments about them.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yksityiskohtaisimpia arvioita varten voit noutaa aktiiviset ja valmiit tavoitteet ja syöttää niitä koskevat kommentit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>All performance journal activities and measurements that are related to a goal will appear on the review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki tavoitteeseen liittyvät suoritustason kirjauskansion tehtävät ja mittaukset näkyvät arvioinnissa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>After the review is finalized, a snapshot of the measurements is stored to retain the history of those items at the time of the review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun arviointi on tehty, arvioinnin aikaisten kohteiden historia sisältävä mittausten tilannevedos tallennetaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>You can also use the <bpt id="p1">**</bpt>Competencies<ept id="p1">**</ept> section to discuss, review, and rate the employee’s competencies.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myös <bpt id="p1">**</bpt>Osaamistiedot<ept id="p1">**</ept>-osaa voi käyttää työntekijän osaamistiedoista keskustelemiseen sekä niiden arviointiin ja luokitteluun.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>You can add as many competencies as you require, and you can choose whether the competency must be rated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää haluamasi määrä osaamistietoja. Määritä, onko osaamistiedot luokiteltava.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>You can create new reviews that are based on templates that you’ve created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit luoda uusia arvioijia luomasi mallin perusteella.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>For example, you can have a template for one-on-ones, development plans, or periodic reviews.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sinulla voi olla malli esimerkiksi kahdenkeskisiä tapaamisia, kehityssuunnitelmia tai kausittaisia arviointeja varten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>You can select the template when you create a new review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse malli uuden arvioinnin luomisen yhteydessä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Components you can include in performance reviews</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustasoarviointeihin lisättävissä olevat osat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>You can include a number of types of information in performance reviews.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustasoarviointeihin voi lisätä erityyppisiä tietoja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>They include review detail, measurements, activities, ratings, sign-offs and attachments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietoja ovat esimerkiksi arvioinnin tiedot, mittaukset, tehtävät, luokitukset, kuittaukset ja liitteet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Review detail</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arvioinnin tiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>You can pull in your goals into the review details and make comments on them.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit noutaa tavoitteesi arvioinnin tietoihin ja lisätä niihin kommentteja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>You can also set up competencies and make comments on them.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös määrittää osaamistietoja ja lisätä niihin kommentteja.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Measurements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mittaukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>You can view measurements that are related to a goal or review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit tarkastella tavoitteeseen tai arviointiin liittyviä mittauksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>You can also add a new measurement that is related to the review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös lisätä arviointiin liittyvän uuden mittauksen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Activities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tehtävät</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>You can show performance journal items that are related to the review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit näyttää arviointiin liittyvän suoritustason kirjauskansiokohteet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>You can also add a performance journal, which will be automatically linked to the review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös lisätä suoritustason kirjauskansion, joka linkitetään arviointiin automaattisesti.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Ratings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luokitukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>You can apply a rating to any goal or competency that is on the review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kohdistaa luokituksen mihin tahansa arvioinnin tavoitteeseen tai osaamiseen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>You can define the rating models for each review.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Voit määrittää jokaiselle arvioinnille arviointimallit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>The defaults for ratings are on the <bpt id="p1">**</bpt>Human resources shared parameters<ept id="p1">**</ept> page under <bpt id="p2">**</bpt>Performance.<ept id="p2">**</ept></source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match">Arviointien oletusarvot ovat <bpt id="p2">**</bpt>Suoritustaso<ept id="p2">**</ept>-kohdan <bpt id="p1">**</bpt>Henkilöstöhallinnon jaetut parametrit<ept id="p1">**</ept>-sivulla.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Sign-offs</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Kuittaukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>The employee and/or the manager will be listed on the review based on the review parameters that you set.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Työntekijä ja/tai esimies listataan arviointiin määrittämiesi arviointiparametrien perusteella.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>The reviews can be required or optional.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arvioinnit voivat olla pakollisia tai valinnaisia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Once all of the required sign-offs are made, the review will be marked with a status of Complete.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun kaikki pakolliset kuittaukset on tehty, arvioinnin tilaksi voidaan merkitä Valmis.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Attachments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Liitteet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>You can attach a document to a review in the <bpt id="p1">**</bpt>Attachments<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>reviews<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit liittää arviointiin asiakirjan <bpt id="p2">**</bpt>Arvioinnit<ept id="p2">**</ept>-sivun <bpt id="p1">**</bpt>Liitteet<ept id="p1">**</ept>-osassa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>A document viewer is provided so that you can quickly view the contents of any attached document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakirjojen katseluohjelman avulla voi tarkastella nopeasti minkä tahansa liitetyn asiakirjan sisältöä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Workflow for performance management</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason hallinnan työnkulku</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>You can use the Worker Review workflow to control the approval of a review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työntekijän arvioinnin työnkulun avulla voit hallita arvioinnin hyväksyntää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>You can also choose to skip the automated workflow and manually change the status of the review, which allows you to create simpler documents like a one-on-one without having to use the workflow process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös ohittaa automaattisen työnkulun ja muuttaa arvioinnin tilan manuaalisesti. Näin voit luoda yksinkertaisempia asiakirjoja, kuten kahden henkilön käytössä olevia asiakirjoja, ilman työnkulkuprosessia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Access to a review is controlled by the status of the review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arvioinnin tila ohjaa arvioinnin käyttöä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>When the review is created, it’s set to the <bpt id="p1">**</bpt>Not started<ept id="p1">**</ept> status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun arviointi luodaan, sen tilaksi määritetään <bpt id="p1">**</bpt>Ei aloitettu<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>The review is editable by anyone.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuka tahansa voi muokata arviointia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Once the employee presses the <bpt id="p1">**</bpt>Begin review<ept id="p1">**</ept> button, the review is set to the <bpt id="p2">**</bpt>In progress<ept id="p2">**</ept> status.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun työntekijä painaa <bpt id="p1">**</bpt>Aloita arviointi<ept id="p1">**</ept> -painiketta, arvioinnin tilaksi määritetään <bpt id="p2">**</bpt>Käsittelyssä<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>The employee then begins to add content.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän jälkeen työntekijä alkaa lisätä sisältöä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>At this point, the manager can no longer view the review document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä vaiheessa esimies ei enää voi tarkastella arviointiasiakirjaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>The employee changes the status to <bpt id="p1">**</bpt>Ready for review<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työntekijä muuttaa tilaksi <bpt id="p1">**</bpt>Valmis arvioitavaksi<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>The manager can add comments and ratings.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimies voi lisätä kommentteja ja luokituksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>At this point, only the manager can see the review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä vaiheessa vain esimies näkee arvioinnin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>The manager changes the status to <bpt id="p1">**</bpt>Final review<ept id="p1">**</ept>, so that both the manager and the employee can see the review and discuss it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimies muuttaa tilaksi <bpt id="p1">**</bpt>Lopullinen arviointi<ept id="p1">**</ept>. Tällöin sekä esimies että työntekijä näkevät arvioinnin, ja he voivat keskustella siitä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>You can specify in the parameters whether or not the review can be edited at this point.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää parametrien avulla, voiko arviointia muokata tässä vaiheessa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>This step is also optional if the manager simply wants to share the review with the employee and mark it as <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> when they are finished.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä vaihe on myös valinnainen, jos esimies haluaa yksinkertaisesti jakaa arvioinnin työntekijän kanssa ja merkitä sen tilaksi <bpt id="p1">**</bpt>Valmis<ept id="p1">**</ept>, kun toimenpiteet on tehty.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>After the sign-offs are completed, the status is changed to <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun kuittaukset on tehty, tilaksi muutetaan <bpt id="p1">**</bpt>Valmis<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>At this point, the review can’t be changed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä vaiheessa arviointia ei voi enää muuttaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>The Worker Review workflow has two elements:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Työntekijän arvioinnin työnkulku koostuu kahdesta seuraavasta elementistä:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>Approve review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hyväksy arviointi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Add this element to control the status change from <bpt id="p1">**</bpt>In progress<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Ready for review<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää tämä elementti, kun haluat hallita tilan muuttamista <bpt id="p1">**</bpt>Keskeneräinen<ept id="p1">**</ept>-tilasta <bpt id="p2">**</bpt>Valmis arvioitavaksi<ept id="p2">**</ept> -tilaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muuta määritystä käyttääksesi johtajahierarkiaa, jossa työntekijärivin esimiehen taso = 1.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>Final review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lopullinen arviointi.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Add this element to control the status change from <bpt id="p1">**</bpt>Ready for review<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Final review<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää tämä elementti, kun haluat hallita tilan muuttamista <bpt id="p1">**</bpt>Valmis arvioitavaksi<ept id="p1">**</ept>-tilasta <bpt id="p2">**</bpt>Lopullinen arviointi<ept id="p2">**</ept> -tilaan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Change the assignment to use the managerial hierarchy where the Employee.line manager level = 1 if you want the manager to approve the final review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muuta määritystä käyttääksesi johtajahierarkiaa, jossa työntekijärivin esimiehen taso = 1, kun haluat esimiehen hyväksyvän lopullisen arvioinnin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Change the assignment to Workflow user if you want the employee to approve it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muuta määritykseksi Työnkulun käyttäjä, jos haluat, että työntekijä hyväksyy arvioinnin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>If you want both the manager and employee to approve it, add two steps in the workflow and make the appropriate assignment for each step in the order that you want the approvals to follow.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat, että sekä esimies että työntekijä hyväksyvät arvioinnin, lisää työnkulkuun kaksi vaihetta ja tee jokaiselle vaiheelle tarvittava määritys siinä järjestyksessä, jossa hyväksynnät tulee tehdä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo perustiedot</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>There are three pages that help you set up information that is required in order to complete the performance process: the <bpt id="p1">**</bpt>measurements<ept id="p1">**</ept> page,  the <bpt id="p2">**</bpt>performance journal source types<ept id="p2">**</ept> page and the <bpt id="p3">**</bpt>review types<ept id="p3">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää suoritustasoprosessin suorittamisessa vaadittavat tiedot seuraavien kolmen sivun avulla: <bpt id="p1">**</bpt>Mittaukset<ept id="p1">**</ept>-sivu, <bpt id="p2">**</bpt>Suoritustason kirjauskansion lähdetyypit<ept id="p2">**</ept> -sivu ja <bpt id="p3">**</bpt>Arviointityypit<ept id="p3">**</ept>-sivu.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Measurements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mittaukset</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>The measurements page lets you create standard measurements that will be used on the <bpt id="p1">**</bpt>performance goals<ept id="p1">**</ept> and <bpt id="p2">**</bpt>reviews<ept id="p2">**</ept> pages.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mittaukset-sivun avulla voit luoda <bpt id="p1">**</bpt>Suoritustasotavoitteet<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Arvioinnit<ept id="p2">**</ept>-sivuilla käytettävät vakiomittaukset.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>You can create measurements that are dates, amounts, quantities, or percentages, or measurements that are based on a rating model.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit luoda mittauksia, jotka ovat päivämääriä, summia, määriä tai prosenttilukuja, tai luokitusmalliin perustuvia mittauksia.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Performance journal source types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason kirjauskansion lähdetyypit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>Performance journal source types describe where the performance journals come from.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason kirjauskansion lähdetyypit kuvaavat suoritustason kirjauskansioiden alkuperää.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>You can see whether a journal item will be viewed by default by the manager only, the employee only, or both the manager and the employee.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näet, onko kirjauskansiokohde oletusarvoisesti vain esimiehen tai työntekijän tarkasteltavissa, vai voivatko molemmat tarkastella sitä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>You can also enable or disable the Send Praise feature by changing the Praise source type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös ottaa käyttöön Lähetä kehu -toiminnon tai poistaa sen käytöstä muuttamalla kehun lähdetyyppiä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>You cannot disable the other source types at this time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et voi poistaa muita lähdetyyppejä tällä hetkellä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>Review types</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arviointityypit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>Performance review types help you control the behavior of a review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suoritustason arviointityyppien avulla voit hallita arvioinnin toimintaa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>You can enable or disable workflow for a review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit ottaa käyttöön arvioinnin työnkulun tai poistaa sen käytöstä.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>If the review does not use workflow, you can define the default status that will be used when the review is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos arvioinnissa ei käytetä työnkulkua, voit määrittää arvioinnin luomisen yhteydessä käytettävän oletustilan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>You can also decide if the employee, the manager, or both will be required to sign off on the review.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös määrittää, vaaditaanko arvioinnissa työntekijän, esimiehen vai molempien kuittaus.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
