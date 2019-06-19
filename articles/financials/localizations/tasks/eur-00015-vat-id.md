@@ -1,132 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="eur-00015-vat-id.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>eur-00015-vat-id.ebdcfa.66ee7215dc21921f9d8e405c3f77d9b5e0b89a9e.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>66ee7215dc21921f9d8e405c3f77d9b5e0b89a9e</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00015-vat-id.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>EUR-00015 Set up VAT ID</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00015 ALV-tunnuksen määrittäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä toimintosarja opastaa ALV-tunnuksen rekisteröinnin edellytykset, kuten rekisteröintityypin määrittämisen ja sen liittämisen rekisteröintiluokkaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>EUR-00015 Set up VAT ID</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00015 ALV-tunnuksen määrittäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä toimintosarja opastaa ALV-tunnuksen rekisteröinnin edellytykset, kuten rekisteröintityypin määrittämisen ja sen liittämisen rekisteröintiluokkaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>You can find additional information about registration IDs and registration ID processing, including required prerequisites, in the Registration IDs help topic.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Löydät lisätietoja rekisteröintitunnuksista niiden käsittelystä, mukaan lukien niiden edellytykset, Rekisteröintitunnukset-ohjeaiheesta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The information here applies to all European countries/regions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nämä tiedot koskevat kaikkia Euroopan maita/alueita.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The task was created using the demo data company DEMF with Germany as the legal entity primary address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä tehtävä luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Saksassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>This task is intended for system administrators.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä tehtävä on tarkoitettu järjestelmänvalvojille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Go to Organization administration &gt; Global address book &gt; Registration types &gt; Registration types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Organisaation hallinto &gt; Yleinen osoitekirja &gt; Rekisteröintityypit &gt; Rekisteröintityypit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Click New to open the drop dialog.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa valintaikkuna valitsemalla Uusi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>In the Name field, type 'VAT ID'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä Nimi-kenttään arvoksi "ALV-tunnus".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>In the Description field, VAT number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita Kuvaus-kenttään ALV-numero.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>In the Country/region field, enter or select a value DEU</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä tai valitse arvoksi DEU Maa/alue-kentässä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Select Yes in the Unique field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Yksilöllinen-kentässä Kyllä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Select this check box to verify if the VAT ID is unique.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse tämä valintaruutu varmistaaksesi, että ALV-tunnus on yksilöllinen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Select Yes in the Primary for country field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Ensisijainen maalle -kentässä Kyllä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Select this check box if the VAT ID should be effective for all addresses belonging to the specified country/region.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse tämä valintaruutu, jos ALV-tunnus on voimassa kaikille osoitteille, jotka kuuluvat määritettyyn maahan/alueeseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Click Create.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Luo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Click Add.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ValitseLisää.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>In the Country/region field, enter or select a value ITA</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä tai valitse arvoksi ITA Maa/alue-kentässä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>In the Format field, type '###########'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita Muoto-kenttään "###########".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>When you enter a registration ID of this type for the selected country/region, the registration ID will be verified against this format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun annat tämäntyyppisen rekisteröintitunnuksen valitulle maalle/alueelle, rekisteröintitunnusta verrataan tähän muotoon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Select the Unique check box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Yksilöllinen-valintaruutu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Select this check box to verify if the VAT ID is unique.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse tämä valintaruutu varmistaaksesi, että ALV-tunnus on yksilöllinen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Select the Primary for country check box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Ensisijainen maalle -valintaruutu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Select this check box if the VAT ID should be effective for all addresses belonging to the specified country/region.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse tämä valintaruutu, jos ALV-tunnus on voimassa kaikille osoitteille, jotka kuuluvat määritettyyn maahan/alueeseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tallenna.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Go to Organization administration &gt; Global address book &gt; Registration types &gt; Registration categories.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Organisaation hallinto &gt; Yleinen osoitekirja &gt; Rekisteröintityypit &gt; Rekisteröintiluokat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Uusi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>In the Country/region field, enter or select a value VAT ID, DEU</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä tai valitse arvoksi "ALV-tunnus, DEU" Maa/alue-kentässä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>In the Registration category field, select 'VAT ID'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Rekisteröintiluokka-kentän arvoksi "ALV-tunnus".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Assign the registration type that you created earlier to a predefined Registration category.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä aiemmin luomasi rekisteröintityyppi esimääritettyyn rekisteröintiluokkaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Uusi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>In the Country/region field, enter or select a value VAT ID, ITA</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä tai valitse arvoksi "ALV-tunnus, ITA" Maa/alue-kentässä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>In the Registration category field, select 'VAT ID'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Rekisteröintiluokka-kentän arvoksi "ALV-tunnus".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Assign the registration type that you created to a predefined registration category.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä luomasi rekisteröintityyppi esimääritettyyn rekisteröintiluokkaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Tallenna.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: EUR-00015 ALV-tunnuksen määrittäminen
+description: Tämä toimintosarja opastaa ALV-tunnuksen rekisteröinnin edellytykset, kuten rekisteröintityypin määrittämisen ja sen liittämisen rekisteröintiluokkaan.
+author: v-oloski
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+ms.author: v-oloski
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 66ee7215dc21921f9d8e405c3f77d9b5e0b89a9e
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556604"
+---
+# <a name="eur-00015-set-up-vat-id"></a><span data-ttu-id="d4676-103">EUR-00015 ALV-tunnuksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="d4676-103">EUR-00015 Set up VAT ID</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="d4676-104">Tämä toimintosarja opastaa ALV-tunnuksen rekisteröinnin edellytykset, kuten rekisteröintityypin määrittämisen ja sen liittämisen rekisteröintiluokkaan.</span><span class="sxs-lookup"><span data-stu-id="d4676-104">This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category.</span></span> <span data-ttu-id="d4676-105">Löydät lisätietoja rekisteröintitunnuksista niiden käsittelystä, mukaan lukien niiden edellytykset, Rekisteröintitunnukset-ohjeaiheesta.</span><span class="sxs-lookup"><span data-stu-id="d4676-105">You can find additional information about registration IDs and registration ID processing, including required prerequisites, in the Registration IDs help topic.</span></span> 
+
+<span data-ttu-id="d4676-106">Nämä tiedot koskevat kaikkia Euroopan maita/alueita.</span><span class="sxs-lookup"><span data-stu-id="d4676-106">The information here applies to all European countries/regions.</span></span> <span data-ttu-id="d4676-107">Tämä tehtävä luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Saksassa.</span><span class="sxs-lookup"><span data-stu-id="d4676-107">The task was created using the demo data company DEMF with Germany as the legal entity primary address.</span></span> <span data-ttu-id="d4676-108">Tämä tehtävä on tarkoitettu järjestelmänvalvojille.</span><span class="sxs-lookup"><span data-stu-id="d4676-108">This task is intended for system administrators.</span></span> <span data-ttu-id="d4676-109">Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="d4676-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+
+1. <span data-ttu-id="d4676-110">Valitse Organisaation hallinto > Yleinen osoitekirja > Rekisteröintityypit > Rekisteröintityypit.</span><span class="sxs-lookup"><span data-stu-id="d4676-110">Go to Organization administration > Global address book > Registration types > Registration types.</span></span>
+2. <span data-ttu-id="d4676-111">Avaa valintaikkuna valitsemalla Uusi.</span><span class="sxs-lookup"><span data-stu-id="d4676-111">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="d4676-112">Syötä Nimi-kenttään arvoksi "ALV-tunnus".</span><span class="sxs-lookup"><span data-stu-id="d4676-112">In the Name field, type 'VAT ID'.</span></span>
+4. <span data-ttu-id="d4676-113">Kirjoita Kuvaus-kenttään ALV-numero.</span><span class="sxs-lookup"><span data-stu-id="d4676-113">In the Description field, VAT number.</span></span>
+5. <span data-ttu-id="d4676-114">Syötä tai valitse arvoksi DEU Maa/alue-kentässä</span><span class="sxs-lookup"><span data-stu-id="d4676-114">In the Country/region field, enter or select a value DEU</span></span>
+6. <span data-ttu-id="d4676-115">Valitse Yksilöllinen-kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="d4676-115">Select Yes in the Unique field.</span></span>
+    * <span data-ttu-id="d4676-116">Valitse tämä valintaruutu varmistaaksesi, että ALV-tunnus on yksilöllinen.</span><span class="sxs-lookup"><span data-stu-id="d4676-116">Select this check box to verify if the VAT ID is unique.</span></span>  
+7. <span data-ttu-id="d4676-117">Valitse Ensisijainen maalle -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="d4676-117">Select Yes in the Primary for country field.</span></span>
+    * <span data-ttu-id="d4676-118">Valitse tämä valintaruutu, jos ALV-tunnus on voimassa kaikille osoitteille, jotka kuuluvat määritettyyn maahan/alueeseen.</span><span class="sxs-lookup"><span data-stu-id="d4676-118">Select this check box if the VAT ID should be effective for all addresses belonging to the specified country/region.</span></span>  
+8. <span data-ttu-id="d4676-119">Valitse Luo.</span><span class="sxs-lookup"><span data-stu-id="d4676-119">Click Create.</span></span>
+9. <span data-ttu-id="d4676-120">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="d4676-120">Click Add.</span></span>
+10. <span data-ttu-id="d4676-121">Syötä tai valitse arvoksi ITA Maa/alue-kentässä.</span><span class="sxs-lookup"><span data-stu-id="d4676-121">In the Country/region field, enter or select a value ITA</span></span>
+11. <span data-ttu-id="d4676-122">Kirjoita Muoto-kenttään "###########".</span><span class="sxs-lookup"><span data-stu-id="d4676-122">In the Format field, type '###########'.</span></span>
+    * <span data-ttu-id="d4676-123">Kun annat tämäntyyppisen rekisteröintitunnuksen valitulle maalle/alueelle, rekisteröintitunnusta verrataan tähän muotoon.</span><span class="sxs-lookup"><span data-stu-id="d4676-123">When you enter a registration ID of this type for the selected country/region, the registration ID will be verified against this format.</span></span>  
+12. <span data-ttu-id="d4676-124">Valitse Yksilöllinen-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="d4676-124">Select the Unique check box.</span></span>
+    * <span data-ttu-id="d4676-125">Valitse tämä valintaruutu varmistaaksesi, että ALV-tunnus on yksilöllinen.</span><span class="sxs-lookup"><span data-stu-id="d4676-125">Select this check box to verify if the VAT ID is unique.</span></span>  
+13. <span data-ttu-id="d4676-126">Valitse Ensisijainen maalle -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="d4676-126">Select the Primary for country check box.</span></span>
+    * <span data-ttu-id="d4676-127">Valitse tämä valintaruutu, jos ALV-tunnus on voimassa kaikille osoitteille, jotka kuuluvat määritettyyn maahan/alueeseen.</span><span class="sxs-lookup"><span data-stu-id="d4676-127">Select this check box if the VAT ID should be effective for all addresses belonging to the specified country/region.</span></span>  
+14. <span data-ttu-id="d4676-128">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="d4676-128">Click Save.</span></span>
+15. <span data-ttu-id="d4676-129">Valitse Organisaation hallinto > Yleinen osoitekirja > Rekisteröintityypit > Rekisteröintiluokat.</span><span class="sxs-lookup"><span data-stu-id="d4676-129">Go to Organization administration > Global address book > Registration types > Registration categories.</span></span>
+16. <span data-ttu-id="d4676-130">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d4676-130">Click New.</span></span>
+17. <span data-ttu-id="d4676-131">Syötä tai valitse arvoksi "ALV-tunnus, DEU" Maa/alue-kentässä.</span><span class="sxs-lookup"><span data-stu-id="d4676-131">In the Country/region field, enter or select a value VAT ID, DEU</span></span>
+18. <span data-ttu-id="d4676-132">Valitse Rekisteröintiluokka-kentän arvoksi "ALV-tunnus".</span><span class="sxs-lookup"><span data-stu-id="d4676-132">In the Registration category field, select 'VAT ID'.</span></span>
+    * <span data-ttu-id="d4676-133">Määritä aiemmin luomasi rekisteröintityyppi esimääritettyyn rekisteröintiluokkaan.</span><span class="sxs-lookup"><span data-stu-id="d4676-133">Assign the registration type that you created earlier to a predefined Registration category.</span></span>  
+19. <span data-ttu-id="d4676-134">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d4676-134">Click New.</span></span>
+20. <span data-ttu-id="d4676-135">Syötä tai valitse arvoksi "ALV-tunnus, ITA" Maa/alue-kentässä.</span><span class="sxs-lookup"><span data-stu-id="d4676-135">In the Country/region field, enter or select a value VAT ID, ITA</span></span>
+21. <span data-ttu-id="d4676-136">Valitse Rekisteröintiluokka-kentän arvoksi "ALV-tunnus".</span><span class="sxs-lookup"><span data-stu-id="d4676-136">In the Registration category field, select 'VAT ID'.</span></span>
+    * <span data-ttu-id="d4676-137">Määritä luomasi rekisteröintityyppi esimääritettyyn rekisteröintiluokkaan.</span><span class="sxs-lookup"><span data-stu-id="d4676-137">Assign the registration type that you created to a predefined registration category.</span></span>  
+22. <span data-ttu-id="d4676-138">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="d4676-138">Click Save.</span></span>
+

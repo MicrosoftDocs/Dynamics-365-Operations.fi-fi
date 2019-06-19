@@ -1,147 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="whats-new-talent-may-13-2019.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>whats-new-talent-may-13-2019.7ca16c.dac453ee83492655b6681b9784af4712bf39fc2a.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>dac453ee83492655b6681b9784af4712bf39fc2a</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>2bbc0eeca6826c529fb729b82d16f287c1ce05bb</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/16/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\talent\whats-new-talent-may-13-2019.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>What's new or changed in Dynamics 365 for Talent (May 13, 2019)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (13. toukokuuta 2019)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>What's new or changed in Dynamics 365 for Talent (May 13, 2019)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (13. toukokuuta 2019)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic describes features that are either new or changed in Dynamics 365 for Talent.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Tässä ohjeaiheessa käsitellään Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Coming soon in Attract</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tulossa pian Attractiin</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Job approvals on home page</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Työn hyväksynnät kotisivulla</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Approvals appear in an <bpt id="p1">**</bpt>Approvals<ept id="p1">**</ept> section on the dashboard.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Hyväksynnät näkyvät koontinäytön <bpt id="p1">**</bpt>Hyväksynnät<ept id="p1">**</ept>-osassa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Approvers can review their approvals under <bpt id="p1">**</bpt>Assigned to you<ept id="p1">**</ept>, which displays the job ID, title, other approvers, and date assigned.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Hyväksyjät voivat tarkistaa <bpt id="p1">**</bpt>Vastuualueensa<ept id="p1">**</ept> hyväksynnät, jolloin työn tunnus, otsikko, muut hyväksyjät ja määritetty päivämäärä näkyvät.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Users who submit a job for approval can review their jobs under <bpt id="p1">**</bpt>Requested by you<ept id="p1">**</ept>, which displays the approvers who still need to approve the submitted job.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Käyttäjät, jotka lähettävät työn hyväksyttäväksi, voivat tarkastella töitään kohdassa <bpt id="p1">**</bpt>Mitä olet pyytänyt<ept id="p1">**</ept>, joka näyttää hyväksyjät, joiden on vielä hyväksyttävä lähetetty työ.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Changes in Onboard</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Onboardin muutokset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>This release includes minor bug fixes for Dynamics 365 Talent: Onboard.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboardin ohjelmakorjauksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Changes in Core HR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Core HR:n muutokset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Changes described in this section apply to build number 8.1.2297.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2297.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin Microsoft Dynamics Lifecycle Services (LCS) -palveluissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Indicate instance type when provisioning Talent</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Määritä esiintymätyyppi, kun Talentia valmistellaan</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>When provisioning a new instance of Talent, you can indicate whether the instance type is <bpt id="p1">**</bpt>Production<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Sandbox<ept id="p2">**</ept>, which allows for early testing of new features.</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Uuden Talent-esiintymän valmistelun yhteydessä voit määrittää, onko esiintymän tyyppi <bpt id="p1">**</bpt>Tuotanto<ept id="p1">**</ept> vai <bpt id="p2">**</bpt>Eristys<ept id="p2">**</ept>, mikä mahdollistaa uusien ominaisuuksien varhaisen testaamisen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>All existing Talent instances will be updated to the <bpt id="p1">**</bpt>Production<ept id="p1">**</ept> instance type.</source><target logoport:matchpercent="0" state="translated">Kaikki aiemmin luodut Talent-esiintymät päivitetään <bpt id="p1">**</bpt>Tuotanto<ept id="p1">**</ept>-esiintymän tyyppiin.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>If you want one of your existing instances to be updated to the <bpt id="p1">**</bpt>Sandbox<ept id="p1">**</ept> instance type, please contact <bpt id="p2">[</bpt>Support<ept id="p2">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support)</ept> to initiate the change request.</source><target logoport:matchpercent="0" state="translated">Jos haluat, että jokin olemassa olevista instansseista päivitetään <bpt id="p1">**</bpt>Eristys<ept id="p1">**</ept>-esiintymätyypiksi, ota yhteyttä <bpt id="p2">[</bpt>Tukeen<ept id="p2">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support)</ept> ja tee muutospyyntö.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Common Data Service entity support for custom fields</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Common Data Service mukautettujen kenttien yksikkötuki</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>In this week's release, the following Common Data Service entities now support custom fields: Employment, Benefit calc frequency, Benefit calc rate, Work calendar holiday, and Identification type.</source><target logoport:matchpercent="0" state="translated">Tämän viikon versiossa seuraavat Common Data Service entiteetit tukevat nyt mukautettuja kenttiä: Työllisyys, etuuden laskentataajuus, etuuden laskenta, työlomakalenteri ja tunnustyypit.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Common Data Service integration page</source><target logoport:matchpercent="71" state="translated" state-qualifier="fuzzy-match">Common Data Service -integrointisivu</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>This release provides a new option in <bpt id="p1">**</bpt>System Administration &gt; Links &gt; Integrations &gt; Common Data Service configuration<ept id="p1">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tämä versio sisältää <bpt id="p1">**</bpt>Järjestelmänhallinnan &gt; Linkkien &gt; Integroinnin &gt; Common Data Service -määrityksen<ept id="p1">**</ept> uuden vaihtoehdon.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>The <bpt id="p1">**</bpt>Common Data Service configuration<ept id="p1">**</ept> option allows an administrator or data management administrator some flexibility and insights with the Common Data Service.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Common Data Service<ept id="p1">**</ept> -vaihtoehdon avulla järjestelmänvalvoja tai tietojen hallinnan järjestelmänvalvoja voi tehdä joustavuutta ja oivalluksia Common Data Servicessä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>With this option, you can enable or disable Common Data Service integration with a Talent instance and view the sync details between the Talent instance and the Common Data Service.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tämän vaihtoehdon voit ottaa käyttöön tai poistaa Common Data Service -integroinnissa Talent-esiintymässä ja tarkastella synkronoinnin tietoja Talent-instanssin ja Common Data Servicen välillä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Import performance data with final employee rating (316710)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tuo suorituskykytiedot lopullisen työntekijäluokituksen kanssa (316710)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>In this release, you can import historical employee rating data.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tässä versiossa voit tuoda aiempia työntekijän luokitustietoja.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The <bpt id="p1">**</bpt>FinalEmployeeRatingId<ept id="p1">**</ept> field now has write permission.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>FinalEmployeeRatingId<ept id="p1">**</ept>-kentällä on nyt kirjoitusoikeus.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Can't create Worker address in Common Data Service and sync it with Talent (317555)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ei voi luoda työntekijän Common Data Service -osoitetta ja synkronoida sitä Talentin (317555) kanssa</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>This change allows address data created in Common Data Service to sync with Talent.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tämä muutos sallii Common Data Service -järjestelmään luotujen osoitetietojen synkronoinnin Talentin kanssa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>In preview</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Esiversiossa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>New page to validate position hierarchy data</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Uusi sivu sijaintihierarkian tietojen tarkistamista varten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Human resources (HR) and administrators can validate the managerial hierarchy for any circular references that might have been inadvertently imported.</source><target logoport:matchpercent="95" state="translated" state-qualifier="fuzzy-match">Henkilöstöhallinto (HR) ja järjestelmänvalvojat voivat vahvistaa johtamishierarkian mahdollisesti vahingossa tuotuja kehäviittauksia varten.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>You can access this new page from <bpt id="p1">**</bpt>Organizational administration &gt; Links &gt; Positions &gt; Position hierarchy validation<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Voit käyttää tätä uutta sivua kohdasta <bpt id="p1">**</bpt>Organisaation hallinta &gt; Linkit &gt; Tehtävät &gt; Tehtävähierarkian oikeellisuustarkistus<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Specify reason codes on leave types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä lomatyyppien syykoodit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Organizations might require additional information about time-off requests.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organisaatiot saattavat vaatia lisätietoja, jotka liittyvät lomapyyntöihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>You can now specify reason codes for leave types and let employees select a reason code on their time-off requests.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit nyt määrittää lomalajien syykoodit ja antaa työntekijöille mahdollisuuden valita syykoodin lomapyynnöissään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Require reason codes for specific leave types on time-off requests</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaadi syykoodeja määrätyille poissaolopyyntöjen lomatyypeille</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Organizations might require reason codes for specific leave types when employees submit time-off requests.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organisaatiot saattavat vaatia syykoodien asettamista tietylle lomalajeille, kun työntekijät kirjaavat poissaolopyyntöjä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>This requirement might exist because of company policy or regulatory requirements.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Tämä vaatimus voi olla olemassa yrityksen käytäntöjen tai lakisääteisten vaatimusten vuoksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>You can specify which leave types require a reason code, and you can require that employees provide a reason code for the leave type on their time-off requests.</source><target logoport:matchpercent="97" state="translated" state-qualifier="fuzzy-match">Voit määrittää mitkä lomatyypit edellyttävät syykoodin, ja voit vaatia työntekijöitä antamaan syykoodin näille lomatyypeille poissaolopyynnössä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Provide a leave and absence transaction list for HR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tarjoa henkilöstöhallinnolle loma- ja poissaololuettelot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>The ability to track employee time off and understand how time off is calculated not only helps HR answer employee questions, but also helps ensure accurate time-off awards for employees.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mahdollisuus seurata työntekijöiden aikaa ja ymmärtää, kuinka aikaa lasketaan, ei ainoastaan auta henkilöstöresursseja vastaamaan työntekijäkysymyksiin, vaan myös auttaa varmistamaan työntekijöille tarkat aikakatkaisuehdotukset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind time-off balances.</source><target logoport:matchpercent="93" state="translated" state-qualifier="fuzzy-match">Henkilöstöhallinnolla on nyt uusi näkemys liiketoimista (apurahat, suoritukset, oikaisut ja pyynnöt), jolloin henkilöstöhallinto voi nähdä poissaolosaldon syyt.</target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (13. toukokuuta 2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+author: Darinkramer
+manager: AnnBe
+ms.date: 05/13/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-talent
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Talent
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: dkrame
+ms.search.validFrom: 2019-05-13
+ms.dyn365.ops.version: Talent
+ms.openlocfilehash: dac453ee83492655b6681b9784af4712bf39fc2a
+ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1591499"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-13-2019"></a><span data-ttu-id="70453-103">Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (13. toukokuuta 2019)</span><span class="sxs-lookup"><span data-stu-id="70453-103">What's new or changed in Dynamics 365 for Talent (May 13, 2019)</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="70453-104">Tässä ohjeaiheessa käsitellään Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="70453-104">This topic describes features that are either new or changed in Dynamics 365 for Talent.</span></span>
+
+## <a name="coming-soon-in-attract"></a><span data-ttu-id="70453-105">Tulossa pian Attractiin</span><span class="sxs-lookup"><span data-stu-id="70453-105">Coming soon in Attract</span></span>
+
+### <a name="job-approvals-on-home-page"></a><span data-ttu-id="70453-106">Työn hyväksynnät kotisivulla</span><span class="sxs-lookup"><span data-stu-id="70453-106">Job approvals on home page</span></span>
+
+<span data-ttu-id="70453-107">Hyväksynnät näkyvät koontinäytön **Hyväksynnät**-osassa.</span><span class="sxs-lookup"><span data-stu-id="70453-107">Approvals appear in an **Approvals** section on the dashboard.</span></span> <span data-ttu-id="70453-108">Hyväksyjät voivat tarkistaa **Vastuualueensa** hyväksynnät, jolloin työn tunnus, otsikko, muut hyväksyjät ja määritetty päivämäärä näkyvät.</span><span class="sxs-lookup"><span data-stu-id="70453-108">Approvers can review their approvals under **Assigned to you**, which displays the job ID, title, other approvers, and date assigned.</span></span> <span data-ttu-id="70453-109">Käyttäjät, jotka lähettävät työn hyväksyttäväksi, voivat tarkastella töitään kohdassa **Mitä olet pyytänyt**, joka näyttää hyväksyjät, joiden on vielä hyväksyttävä lähetetty työ.</span><span class="sxs-lookup"><span data-stu-id="70453-109">Users who submit a job for approval can review their jobs under **Requested by you**, which displays the approvers who still need to approve the submitted job.</span></span>
+
+## <a name="changes-in-onboard"></a><span data-ttu-id="70453-110">Onboardin muutokset</span><span class="sxs-lookup"><span data-stu-id="70453-110">Changes in Onboard</span></span>
+
+<span data-ttu-id="70453-111">Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboardin ohjelmakorjauksia.</span><span class="sxs-lookup"><span data-stu-id="70453-111">This release includes minor bug fixes for Dynamics 365 Talent: Onboard.</span></span>
+
+## <a name="changes-in-core-hr"></a><span data-ttu-id="70453-112">Core HR:n muutokset</span><span class="sxs-lookup"><span data-stu-id="70453-112">Changes in Core HR</span></span>
+
+<span data-ttu-id="70453-113">Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2297.</span><span class="sxs-lookup"><span data-stu-id="70453-113">Changes described in this section apply to build number 8.1.2297.</span></span> <span data-ttu-id="70453-114">Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin Microsoft Dynamics Lifecycle Services (LCS) -palveluissa.</span><span class="sxs-lookup"><span data-stu-id="70453-114">The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
+
+### <a name="indicate-instance-type-when-provisioning-talent"></a><span data-ttu-id="70453-115">Määritä esiintymätyyppi, kun Talentia valmistellaan</span><span class="sxs-lookup"><span data-stu-id="70453-115">Indicate instance type when provisioning Talent</span></span>
+
+<span data-ttu-id="70453-116">Uuden Talent-esiintymän valmistelun yhteydessä voit määrittää, onko esiintymän tyyppi **Tuotanto** vai **Eristys**, mikä mahdollistaa uusien ominaisuuksien varhaisen testaamisen.</span><span class="sxs-lookup"><span data-stu-id="70453-116">When provisioning a new instance of Talent, you can indicate whether the instance type is **Production** or **Sandbox**, which allows for early testing of new features.</span></span> <span data-ttu-id="70453-117">Kaikki aiemmin luodut Talent-esiintymät päivitetään **Tuotanto**-esiintymän tyyppiin.</span><span class="sxs-lookup"><span data-stu-id="70453-117">All existing Talent instances will be updated to the **Production** instance type.</span></span> <span data-ttu-id="70453-118">Jos haluat, että jokin olemassa olevista instansseista päivitetään **Eristys**-esiintymätyypiksi, ota yhteyttä [Tukeen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) ja tee muutospyyntö.</span><span class="sxs-lookup"><span data-stu-id="70453-118">If you want one of your existing instances to be updated to the **Sandbox** instance type, please contact [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) to initiate the change request.</span></span>
+
+### <a name="common-data-service-entity-support-for-custom-fields"></a><span data-ttu-id="70453-119">Common Data Service mukautettujen kenttien yksikkötuki</span><span class="sxs-lookup"><span data-stu-id="70453-119">Common Data Service entity support for custom fields</span></span>
+
+<span data-ttu-id="70453-120">Tämän viikon versiossa seuraavat Common Data Service entiteetit tukevat nyt mukautettuja kenttiä: Työllisyys, etuuden laskentataajuus, etuuden laskenta, työlomakalenteri ja tunnustyypit.</span><span class="sxs-lookup"><span data-stu-id="70453-120">In this week's release, the following Common Data Service entities now support custom fields: Employment, Benefit calc frequency, Benefit calc rate, Work calendar holiday, and Identification type.</span></span>
+
+### <a name="common-data-service-integration-page"></a><span data-ttu-id="70453-121">Common Data Service -integrointisivu</span><span class="sxs-lookup"><span data-stu-id="70453-121">Common Data Service integration page</span></span>
+
+<span data-ttu-id="70453-122">Tämä versio sisältää **Järjestelmänhallinnan > Linkkien > Integroinnin > Common Data Service -määrityksen** uuden vaihtoehdon.</span><span class="sxs-lookup"><span data-stu-id="70453-122">This release provides a new option in **System Administration > Links > Integrations > Common Data Service configuration**.</span></span> <span data-ttu-id="70453-123">**Common Data Service** -vaihtoehdon avulla järjestelmänvalvoja tai tietojen hallinnan järjestelmänvalvoja voi tehdä joustavuutta ja oivalluksia Common Data Servicessä.</span><span class="sxs-lookup"><span data-stu-id="70453-123">The **Common Data Service configuration** option allows an administrator or data management administrator some flexibility and insights with the Common Data Service.</span></span> <span data-ttu-id="70453-124">Tämän vaihtoehdon voit ottaa käyttöön tai poistaa Common Data Service -integroinnissa Talent-esiintymässä ja tarkastella synkronoinnin tietoja Talent-instanssin ja Common Data Servicen välillä.</span><span class="sxs-lookup"><span data-stu-id="70453-124">With this option, you can enable or disable Common Data Service integration with a Talent instance and view the sync details between the Talent instance and the Common Data Service.</span></span>
+
+### <a name="import-performance-data-with-final-employee-rating-316710"></a><span data-ttu-id="70453-125">Tuo suorituskykytiedot lopullisen työntekijäluokituksen kanssa (316710)</span><span class="sxs-lookup"><span data-stu-id="70453-125">Import performance data with final employee rating (316710)</span></span>
+
+<span data-ttu-id="70453-126">Tässä versiossa voit tuoda aiempia työntekijän luokitustietoja.</span><span class="sxs-lookup"><span data-stu-id="70453-126">In this release, you can import historical employee rating data.</span></span> <span data-ttu-id="70453-127">**FinalEmployeeRatingId**-kentällä on nyt kirjoitusoikeus.</span><span class="sxs-lookup"><span data-stu-id="70453-127">The **FinalEmployeeRatingId** field now has write permission.</span></span>
+
+### <a name="cant-create-worker-address-in-common-data-service-and-sync-it-with-talent-317555"></a><span data-ttu-id="70453-128">Ei voi luoda työntekijän Common Data Service -osoitetta ja synkronoida sitä Talentin (317555) kanssa</span><span class="sxs-lookup"><span data-stu-id="70453-128">Can't create Worker address in Common Data Service and sync it with Talent (317555)</span></span>
+
+<span data-ttu-id="70453-129">Tämä muutos sallii Common Data Service -järjestelmään luotujen osoitetietojen synkronoinnin Talentin kanssa.</span><span class="sxs-lookup"><span data-stu-id="70453-129">This change allows address data created in Common Data Service to sync with Talent.</span></span>
+
+## <a name="in-preview"></a><span data-ttu-id="70453-130">Esiversiossa</span><span class="sxs-lookup"><span data-stu-id="70453-130">In preview</span></span>
+
+### <a name="new-page-to-validate-position-hierarchy-data"></a><span data-ttu-id="70453-131">Uusi sivu sijaintihierarkian tietojen tarkistamista varten</span><span class="sxs-lookup"><span data-stu-id="70453-131">New page to validate position hierarchy data</span></span>
+
+<span data-ttu-id="70453-132">Henkilöstöhallinto (HR) ja järjestelmänvalvojat voivat vahvistaa johtamishierarkian mahdollisesti vahingossa tuotuja kehäviittauksia varten.</span><span class="sxs-lookup"><span data-stu-id="70453-132">Human resources (HR) and administrators can validate the managerial hierarchy for any circular references that might have been inadvertently imported.</span></span> <span data-ttu-id="70453-133">Voit käyttää tätä uutta sivua kohdasta **Organisaation hallinta > Linkit > Tehtävät > Tehtävähierarkian oikeellisuustarkistus**.</span><span class="sxs-lookup"><span data-stu-id="70453-133">You can access this new page from **Organizational administration > Links > Positions > Position hierarchy validation**.</span></span>
+
+### <a name="specify-reason-codes-on-leave-types"></a><span data-ttu-id="70453-134">Määritä lomatyyppien syykoodit</span><span class="sxs-lookup"><span data-stu-id="70453-134">Specify reason codes on leave types</span></span>
+
+<span data-ttu-id="70453-135">Organisaatiot saattavat vaatia lisätietoja, jotka liittyvät lomapyyntöihin.</span><span class="sxs-lookup"><span data-stu-id="70453-135">Organizations might require additional information about time-off requests.</span></span> <span data-ttu-id="70453-136">Voit nyt määrittää lomalajien syykoodit ja antaa työntekijöille mahdollisuuden valita syykoodin lomapyynnöissään.</span><span class="sxs-lookup"><span data-stu-id="70453-136">You can now specify reason codes for leave types and let employees select a reason code on their time-off requests.</span></span>
+
+### <a name="require-reason-codes-for-specific-leave-types-on-time-off-requests"></a><span data-ttu-id="70453-137">Vaadi syykoodeja määrätyille poissaolopyyntöjen lomatyypeille</span><span class="sxs-lookup"><span data-stu-id="70453-137">Require reason codes for specific leave types on time-off requests</span></span>
+
+<span data-ttu-id="70453-138">Organisaatiot saattavat vaatia syykoodien asettamista tietylle lomalajeille, kun työntekijät kirjaavat poissaolopyyntöjä.</span><span class="sxs-lookup"><span data-stu-id="70453-138">Organizations might require reason codes for specific leave types when employees submit time-off requests.</span></span> <span data-ttu-id="70453-139">Tämä vaatimus voi olla olemassa yrityksen käytäntöjen tai lakisääteisten vaatimusten vuoksi.</span><span class="sxs-lookup"><span data-stu-id="70453-139">This requirement might exist because of company policy or regulatory requirements.</span></span> <span data-ttu-id="70453-140">Voit määrittää mitkä lomatyypit edellyttävät syykoodin, ja voit vaatia työntekijöitä antamaan syykoodin näille lomatyypeille poissaolopyynnössä.</span><span class="sxs-lookup"><span data-stu-id="70453-140">You can specify which leave types require a reason code, and you can require that employees provide a reason code for the leave type on their time-off requests.</span></span>
+
+### <a name="provide-a-leave-and-absence-transaction-list-for-hr"></a><span data-ttu-id="70453-141">Tarjoa henkilöstöhallinnolle loma- ja poissaololuettelot</span><span class="sxs-lookup"><span data-stu-id="70453-141">Provide a leave and absence transaction list for HR</span></span>
+
+<span data-ttu-id="70453-142">Mahdollisuus seurata työntekijöiden aikaa ja ymmärtää, kuinka aikaa lasketaan, ei ainoastaan auta henkilöstöresursseja vastaamaan työntekijäkysymyksiin, vaan myös auttaa varmistamaan työntekijöille tarkat aikakatkaisuehdotukset.</span><span class="sxs-lookup"><span data-stu-id="70453-142">The ability to track employee time off and understand how time off is calculated not only helps HR answer employee questions, but also helps ensure accurate time-off awards for employees.</span></span> <span data-ttu-id="70453-143">Henkilöstöhallinnolla on nyt uusi näkemys liiketoimista (apurahat, suoritukset, oikaisut ja pyynnöt), jolloin henkilöstöhallinto voi nähdä poissaolosaldon syyt.</span><span class="sxs-lookup"><span data-stu-id="70453-143">HR now has a new view into the transactions (grants, accruals, adjustments, and requests), so that HR staff can view the reasons behind time-off balances.</span></span>

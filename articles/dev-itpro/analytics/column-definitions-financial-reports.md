@@ -1,2340 +1,603 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="column-definitions-financial-reports.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>column-definitions-financial-reports.2311f7.bb08833cca843c370e2c845bce56d6f5a8b5f2ed.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>bb08833cca843c370e2c845bce56d6f5a8b5f2ed</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\analytics\column-definitions-financial-reports.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Column definitions in financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talousraporttien sarakemääritykset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This article provides information about column definitions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä artikkelissa on tietoja sarakemäärityksistä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>A column definition is a report component, or building block, that defines the contents of columns on a report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104" restype="x-metadata">
-          <source>Like row definitions, basic column definitions can be used on multiple reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Column definitions in financial reports</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talousraporttien sarakemääritykset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>This article provides information about column definitions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä artikkelissa on tietoja sarakemäärityksistä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>A column definition is a report component, or building block, that defines the contents of columns on a report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Like row definitions, basic column definitions can be used on multiple reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Create and modify a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määrityksen luominen ja muokkaaminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>A column definition can contain two to 255 columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määritys voi sisältää 2–255 saraketta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Create a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määrityksen luominen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>In Report Designer, in the navigation pane, click <bpt id="p1">**</bpt>Column Definitions<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Report Designer -ohjelman siirtymisruudussa <bpt id="p1">**</bpt>Sarakkeiden määritykset<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>New<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Column Definition<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Tiedosto<ept id="p1">**</ept>-valikossa <bpt id="p2">**</bpt>Uusi<ept id="p2">**</ept> ja valitse sitten <bpt id="p3">**</bpt>Sarakkeen määritys<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Add the contents of the column definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää sarakkeen määrityksen sisältö.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Open a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määrityksen avaaminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>In Report Designer, in the navigation pane, click <bpt id="p1">**</bpt>Column Definitions<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Report Designer -ohjelman siirtymisruudussa <bpt id="p1">**</bpt>Sarakkeiden määritykset<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Double-click a column definition to open it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa sarakkeen määritys kaksoisnapsauttamalla sitä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Add a column to a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen lisääminen sarakemääritykseen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>In Report Designer, click <bpt id="p1">**</bpt>Column Definitions<ept id="p1">**</ept>, and then open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse Report Designerissa <bpt id="p1">**</bpt>Sarakkeiden määritykset<ept id="p1">**</ept> ja avaa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Select the column where a new column should be inserted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse sarake, johon uusi sarake lisätään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>On the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Insert Column<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Muokkaa<ept id="p1">**</ept>-valikossa <bpt id="p2">**</bpt>Lisää sarake<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>The new column appears to the left of the column that you selected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi sarake näkyy valitsemasi sarakkeen vasemmalla puolella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Delete a column from a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen poistaminen sarakemäärityksestä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>In Report Designer, click <bpt id="p1">**</bpt>Column Definitions<ept id="p1">**</ept>, and then open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse raporttien suunnitteluohjelmassa <bpt id="p1">**</bpt>Sarakemääritykset<ept id="p1">**</ept> ja avaa sen jälkeen muokattava sarakemääritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Select the column to delete.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse poistettava sarake.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>On the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Delete Column<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Muokkaa<ept id="p1">**</ept>-valikosta <bpt id="p2">**</bpt>Poista sarake<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Contents of a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakemäärityksen sisältö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>A column definition includes the following information:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määritys sisältää seuraavat tiedot:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>A column of the descriptions for the row definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvausten sarake rivin määrityksessä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Amount columns that show data from the financial data or calculations that are based on other data in the column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Summasarakkeet, joissa on taloushallinnon tiedot, tai laskutoimitukset, jotka perustuvat sarakkeen määrityksen muihin tietoihin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Formatting columns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeiden muotoilu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Attribute columns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritesarakkeet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>This information appears in the following areas in the column definition:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nämä tiedot näkyvät seuraavilla sarakkeen määrityksen alueilla:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>The headers area of the column definition contains the heading text and formatting that appears in the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määrityksen otsikon alue sisältää otsikon tekstin ja raportin muotoilun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>A header can apply to a single column of data, can span multiple columns, or can apply to columns on a conditional basis.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otsikko voi koskea yhtä tai useaa tietosaraketta, tai se voi koskea sarakkeita ehdollisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>The column definition can include as many column header rows as you require.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakemääritys voi sisältää niin monta sarakeotsikkoriviä kuin on tarpeen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Column headers apply to each column of data on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakeotsikot koskevat raportin tietojen jokaista saraketta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Report headers apply to the whole report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raporttiotsikot koskevat koko raporttia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>You define report headers on the <bpt id="p1">**</bpt>Headers and Footers<ept id="p1">**</ept> tab of the report definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää raportin otsikot raportin määrityksen <bpt id="p1">**</bpt>Ylä- ja alatunnisteet<ept id="p1">**</ept> -välilehdessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Column detail rows are the rows under the header rows in the column definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeiden tietorivit sijaitsevat sarakkeen määrityksen otsikoiden rivien alla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Column detail rows define the information that is included on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeiden tietorivit määrittävät raportin tiedot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>The following table lists and describes the column detail rows.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa taulukossa luetellaan sarakkeiden tietorivit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Column detail row name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen tietorivin nimi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Column Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakelaji</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>(Required) Specify the type of data in the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Pakollinen) Määritä sarakkeen tietojen tyyppi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Book Code/Attribute Category</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjakoodi/määriteluokka</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Specify financial data information for columns of the <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ATTR<ept id="p2">**</ept> types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>FD<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>ATTR<ept id="p2">**</ept>-tyypin sarakkeiden taloushallinnon tiedot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Fiscal Year Period Periods Covered</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilikausi, Katetut jaksot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Specify financial data information for columns of the <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>FD<ept id="p1">**</ept>-tyypin sarakkeiden taloushallinnon tiedot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Formula</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Resepti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Specify a calculation formula for columns of the <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept>-tyypin sarakkeiden laskentakaava.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Column Width Extra Spaces Before Column Format Override Print Control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen leveys, Lisävälilyönnit ennen saraketta, Muotoilun ohitus, Tulostuksen hallinta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Specify special format options.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä erikoismuotoiluasetukset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Column Restrictions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen rajoitukset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Restrict data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoita tietoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Reporting Unit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportoinnin yksikkö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Restrict the column, so that it shows data only for the specified reporting unit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoita saraketta niin, että sarakkeessa näkyvät vain tietyn raportoinnin yksikön tiedot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Currency Display Currency Filter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuutan näyttö, Valuuttasuodatin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Format currency.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotoile valuuttaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Dimension Filter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimensiosuodatin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Specify a filter to restrict data to certain financial data reporting units.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä tietojen rajoituksessa käytettävä suodatin tietyille taloushallinnon tietojen raportoinnin yksiköille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Attribute Filter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritesuodatin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Specify a filter to restrict the financial data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä taloushallinnon tietojen rajoituksessa käytettävä suodatin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Start Date End Date</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alkamispäivämäärä, Päättymispäivämäärä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Restrict the financial data to specific dates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoita taloushallinnon tiedot tietyille päivämäärille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Justification</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Perustelu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Left-align, center-align, or right-align the description text that is specified in the row definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tasaa rivin määrityksessä määritetty kuvausteksti vasemmalle tai oikealle tai keskitä se.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Column restrictions in a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen rajoitukset sarakkeen määrityksessä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>You can use column restrictions to specify how a column definition uses data or calculates information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit käyttää sarakkeen rajoituksia määrittäessäsi, miten sarakkeen määritys käyttää tietoja tai laskee ne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>You can also restrict a report column to a specific unit or for specific dates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös rajata raportin sarakkeen koskemaan tiettyä yksikköä tai tiettyjä päivämääriä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>A <bpt id="p1">**</bpt>Column Restriction<ept id="p1">**</ept> code overrides any conflicting setting that is assigned in the row definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Sarakerajoitus<ept id="p1">**</ept>-koodi korvaa minkä tahansa rivimäärityksen kanssa ristiriidassa olevan asetuksen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Column Restrictions cell</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen rajoitukset -solu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>The <bpt id="p1">**</bpt>Column Restrictions<ept id="p1">**</ept> cell can include codes that restrict or suppress information, such as row formatting, details, and amounts, for that column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Sarakkeen rajoitukset<ept id="p1">**</ept> -solu voi sisältää koodeja, jotka rajoittavat tai piilottavat tietoja, kuten rivin muotoilua tai sarakkeen tietoja ja summia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Add a column restriction in a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen rajoituksen lisääminen sarakkeen määritykseen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Double-click the <bpt id="p1">**</bpt>Column Restrictions<ept id="p1">**</ept> cell for the column to restrict.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta rajoitettavan sarakkeen <bpt id="p1">**</bpt>Sarakkeen rajoitukset<ept id="p1">**</ept> -solua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>In the <bpt id="p1">**</bpt>Column Restrictions<ept id="p1">**</ept> dialog box, select one or more codes in the list, and then click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Sarakkeen rajoitukset<ept id="p1">**</ept> -valintaikkunan luettelosta yksi koodi tai useita koodeja ja valitse sitten <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Column restriction codes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakerajoituskoodit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>The following table describes the column restriction codes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa taulukossa esitellään sarakkeen rajoituksen koodit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Column restriction code</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen rajoituksen koodi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>SU</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SU</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>Suppress the underscore for a column where either an underscore command (<bpt id="p1">**</bpt><ph id="ph1">---</ph><ept id="p1">**</ept>) or a double underscore command (<bpt id="p2">**</bpt><ph id="ph2">===</ph><ept id="p2">**</ept>) is entered in the row definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Piilottaa sarakkeen alaviivan, jos alaviivan komento (<bpt id="p1">**</bpt><ph id="ph1">---</ph><ept id="p1">**</ept>) tai kaksoisalaviivan komento (<bpt id="p2">**</bpt><ph id="ph2">===</ph><ept id="p2">**</ept>) on syötetty rivin määritykseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>For example, you might not want to underline amounts that are produced by a percentage calculation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän voi tehdä, jos et halua alaviivaa prosenttilaskennan luomien summien kohdalle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>ST</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ST</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Suppress totals, so that only details are shown in the column (for example, a statistical column).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Piilottaa kokonaissummat niin, että vain tiedot näytetään sarakkeessa (esimerkiksi tilastosarakkeessa).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>SD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Suppress details, so that only <bpt id="p1">**</bpt>TOT<ept id="p1">**</ept> and <bpt id="p2">**</bpt>CAL<ept id="p2">**</ept> rows (from the row definition) are shown in the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Piilota tiedot niin, että sarakkeessa näytetään vain <bpt id="p1">**</bpt>TOT<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>CAL<ept id="p2">**</ept>-rivi (rivin määrityksestä).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>DR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Restrict the amounts in an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column to debit amounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoita <bpt id="p1">**</bpt>FD<ept id="p1">**</ept>-sarakkeen summat debet-summiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>CR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Restrict the amounts in an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column to credit amounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoita <bpt id="p1">**</bpt>FD<ept id="p1">**</ept>-sarakkeen summat kredit-summiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>ADJ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ADJ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Restrict the amounts in the column to period adjustment amounts, if these amounts are available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoita sarakkeen summat kauden oikaisusummiin, jos summia ovat käytettävissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>XAD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XAD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Restrict the amounts in the column, so that period adjustment amounts are excluded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoita sarakkeen summat niin, että kauden oikaisusummat suljetaan pois.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>PT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Restrict the amounts in the column, so that only posted transactions are included, if these transactions are available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoita sarakkeen summat niin, että vain kirjatut tapahtumat sisällytetään, jos tapahtumia on käytettävissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>UPT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UPT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoita sarakkeen summat niin, että vain kirjaamattomat tapahtumat sisällytetään, jos tapahtumia on käytettävissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> Not all data providers support unposted transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Huomautus:<ept id="p1">&lt;/strong&gt;</ept> Kaikki tietopalvelut eivät tue kirjaamattomia tapahtumia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>For more information, see the <bpt id="p1">&lt;a href='https://go.microsoft.com/fwlink/?LinkID=162565'&gt;</bpt>data integration guide<ept id="p1">&lt;/a&gt;</ept> for your Microsoft Dynamics ERP system.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Lisätietoja on Microsoft Dynamics ERP -järjestelmän <bpt id="p1">&lt;a href='https://go.microsoft.com/fwlink/?LinkID=162565'&gt;</bpt>tietojen integrointioppaassa<ept id="p1">&lt;/a&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Restrict a column to a reporting unit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen rajoittaminen raportoinnin yksikköön</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Double-click the <bpt id="p1">**</bpt>Reporting Unit<ept id="p1">**</ept> cell for the column to restrict.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta rajoitettavan sarakkeen <bpt id="p1">**</bpt>Raportoinnin yksikkö<ept id="p1">**</ept> -solua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>In the <bpt id="p1">**</bpt>Reporting Unit Selection<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Reporting tree<ept id="p2">**</ept> list, select a tree.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Raportoinnin yksikön valinta<ept id="p1">**</ept> -valintaikkunan <bpt id="p2">**</bpt>Raportointipuu<ept id="p2">**</ept>-luettelosta puu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Expand or collapse the list of units, select a reporting unit, and then click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna tai tiivistä yksikköluettelo, valitse raportoinnin yksikkö ja valitse sitten <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Format column headers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakeotsikoiden muotoileminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>You can add, modify, and delete the headers that appear at the top of the columns on a report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä otsikoita.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>You can also configure conditional spanning column headers, based on the <bpt id="p1">**</bpt>Period<ept id="p1">**</ept> field from column definitions and the <bpt id="p2">**</bpt>Base Period<ept id="p2">**</ept> field from report definitions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää myös ehdollisen koonnin sarakeotsikoita sarakkeiden määritysten <bpt id="p1">**</bpt>Jakso<ept id="p1">**</ept>-kentän ja raporttien määritysten <bpt id="p2">**</bpt>Perusjakso<ept id="p2">**</ept>-kentän perusteella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>The base period feature helps save you time when you create rolling forecast reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Perusjaksotoiminto säästää aikaa vaiheittaisten ennusteraporttien luomisen yhteydessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Create and manage column headers</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakeotsikoiden luominen ja hallinta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>You can use the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box to add, modify, and delete the headers that appear at the top of the columns on a report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä otsikoita <bpt id="p1">**</bpt>Sarakeotsikko<ept id="p1">**</ept>-valintaikkunassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>The following table describes the fields in the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa taulukossa esitellään <bpt id="p1">**</bpt>Sarakeotsikot<ept id="p1">**</ept>-valintaikkunan kentät.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kenttä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Column header text</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakeotsikon teksti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>This text appears in the column header.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä teksti näkyy sarakeotsikossa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>You can type text directly in this field, or click <bpt id="p1">**</bpt>Insert AutoText<ept id="p1">**</ept> to select an option that updates the column header every time that the report is generated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kirjoittaa tekstin suoraan kenttään tai valita sarakeotsikon aina raportin luomisen yhteydessä päivittävän vaihtoehdon valitsemalla <bpt id="p1">**</bpt>Lisää automaattinen teksti<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>To include multiple autotext codes, click <bpt id="p1">**</bpt>Insert AutoText<ept id="p1">**</ept> again, and then click another code in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit lisätä useita automaattisen tekstin koodeja valitsemalla uudelleen <bpt id="p1">**</bpt>Lisää automaattinen teksti<ept id="p1">**</ept> ja valitsemalla sitten toisen koodin luettelosta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Format options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotoiluasetukset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>Apply formatting to a column header, such as box or underline.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä sarakeotsikossa muotoilua, kuten ruuutua tai alleviivausta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Spread from Spread to</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Levitä mistä, Levitä mihin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Define the column or columns that the header text applies to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä sarake tai sarakkeet, joita otsikon teksti koskee.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Justification</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Perustelu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Specify how the column header text should be aligned for the column or range of columns that is specified in the <bpt id="p1">**</bpt>Spread from<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Spread to<ept id="p2">**</ept> fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä, miten sarakeotsikko kohdistetaan sarakkeeseen tai <bpt id="p1">**</bpt>Levitä mistä<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Levitä mihin<ept id="p2">**</ept> -kentässä määritettyyn sarakeväliin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Create a column header</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakeotsikon luominen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Double-click a header cell.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta otsikkosolua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>In the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box, enter the column header text.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä <bpt id="p1">**</bpt>Sarakeotsikko<ept id="p1">**</ept>-valintaikkunassa sarakeotsikon teksti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Alternatively, click <bpt id="p1">**</bpt>Insert AutoText<ept id="p1">**</ept>, and select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaihtoehtoisesti voit valita <bpt id="p1">**</bpt>Lisää automaattinen teksti<ept id="p1">**</ept> -kohdan, jossa voit valita vaihtoehdon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>In the <bpt id="p1">**</bpt>Format options<ept id="p1">**</ept> field, select a format for the header.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Muotoiluasetukset<ept id="p1">**</ept>-kentässä otsikon muoto.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>In the <bpt id="p1">**</bpt>Spread from<ept id="p1">**</ept> field, enter the letter of the column that the column header should start over.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä <bpt id="p1">**</bpt>Levitä mistä<ept id="p1">**</ept> -kenttään sen sarakkeen kirjain, josta sarakeotsikko alkaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>In the <bpt id="p1">**</bpt>Spread to<ept id="p1">**</ept> field, enter the letter of the column that the column header should end over.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä <bpt id="p1">**</bpt>Levitä mihin<ept id="p1">**</ept> -kenttään sen sarakkeen kirjain, johon sarakeotsikko loppuu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Under <bpt id="p1">**</bpt>Justification<ept id="p1">**</ept>, select whether the column header text to should be left-justified, center-justified, or right-justified.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Tasaus<ept id="p1">**</ept>-kohdassa, tasataanko otsikon teksti vasemmalle vai oikealle vai keskitetäänkö se.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Napsauta <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Add a column header row</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakeotsikon rivin lisääminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>Select a cell in the header row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse otsikkorivin solu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>On the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Insert Row<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Muokkaa<ept id="p1">**</ept>-valikossa <bpt id="p2">**</bpt>Lisää rivi<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>The new row is inserted above the row that you selected in step 2.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi rivi lisätään vaiheessa 2 valitsemasi rivin yläpuolelle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>If you have four or more rows of report headers on a report, the headers will overlap when the report is exported to an Excel worksheet.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos raportissa on vähintään neljä tai ylätunnistetta, tunnisteet ovat päällekkäisiä, kun raportti viedään Excel-työkirjaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>To view all headers on the report, increase the top margin in the report definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit tarkastella kaikkia raportin otsikoita lisäämällä raportin määritykseen ylämarginaalin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Delete a column header row</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakeotsikon rivin poistaminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>In the header row, select the cell to delete.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse otsikon rivillä poistettava solu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>On the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Delete Row<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Muokkaa<ept id="p1">**</ept>-valikossa <bpt id="p2">**</bpt>Poista rivi<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>Create an automatically generated header</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Automaattisesti luodun otsikon luominen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Report designer can automatically generate column headers, based on autotext codes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportin suunnittelija voi luoda sarakeotsikoita automaattisesti automaattisen tekstin koodien perusteella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Autotext codes are variables that are updated every time that a report is generated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Automaattisen tekstin koodit ovat muuttujia, jotka päivitetään aina raportin luomisen yhteydessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Any column header can include these codes to specify report information that can vary, such as dates or period numbers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mikä tahansa sarakeotsikko voi sisältää näitä koodeja. Ne määrittävät raportin muuttuvia tietoja, kuten päivämääriä ja jaksojen numeroita.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vuoksi useissa raportin määrityksissä, ajanjaksoissa ja raportointipuissa voidaan käyttää yhtä sarakkeen määritystä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> and <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koska automaattisen tekstin koodeissa käytetään sarakkeen määrityksen tietorivien kalenterin tietoja, niitä tuetaan vain <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>FD<ept id="p2">**</ept>-sarakkeissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>The way that an autotext code appears in the column header cell affects how that information appears on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapa, jolla automaattisen tekstin koodi näkyy sarakeotsikon solussa, vaikuttaa siihen, miten tiedot näkyvät raportissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>In the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box, the autotext codes appear in mixed case.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Automaattisen tekstin koodeissa käytetään isoja ja pieniä kirjaimia <bpt id="p1">**</bpt>Sarakeotsikko<ept id="p1">**</ept>-valintaikkunassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Therefore, the text appears in mixed case on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vuoksi teksti näkyy näin myös raportissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>For example, in a standard calendar year, <bpt id="p1">**</bpt>@CalMonthLong<ept id="p1">**</ept> resolves month <bpt id="p2">**</bpt>7<ept id="p2">**</ept> to <bpt id="p3">**</bpt>July<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi vakiokalenterivuosi <bpt id="p1">**</bpt>@CalMonthLong<ept id="p1">**</ept> muuntaa kuukauden <bpt id="p2">**</bpt>7<ept id="p2">**</ept> <bpt id="p3">**</bpt>heinäkuuksi<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>If the name of the month should be uppercase (for example <bpt id="p1">**</bpt>JULY<ept id="p1">**</ept>), enter the autotext code in uppercase characters in the <bpt id="p2">**</bpt>Column header text<ept id="p2">**</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos raportin tekstin pitää olla isoilla kirjaimilla (esimerkiksi <bpt id="p1">**</bpt>HEINÄKUU<ept id="p1">**</ept>), kirjoita myös koodi isoin kirjaimin <bpt id="p2">**</bpt>Sarakeotsikon teksti<ept id="p2">**</ept> -ruutuun).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>For example, enter <bpt id="p1">**</bpt>@CALMONTHLONG<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita esimerkiksi <bpt id="p1">**</bpt>@CALMONTHLONG<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>You can mix codes and text.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tekstissä voi käyttää sekä isoja ja pieniä kirjaimia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>For example, you enter the following header text: <bpt id="p1">**</bpt>Period @FiscalPeriod-@FiscalYear from @StartDate to @EndDate<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit syöttää otsikon tekstin esimerkiksi tällaisena: <bpt id="p1">**</bpt>Jakso @FiscalPeriod–@FiscalYear @StartDate–@EndDate<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>The report heading that is generated resembles the following text: <bpt id="p1">**</bpt>Period 1-02 from 01/01/02 to 01/31/02<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luotu raportin otsikko muistuttaa seuraavaa tekstiä: <bpt id="p1">**</bpt>Jakso 1–02 01/01/02–01/31/02<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>The format of some of the text, such as the long date, depends on your regional settings on the Finance and Operations server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Joidenkin tekstien muoto, kuten pitkä päivämäärä, määräytyy Finance and Operations -palvelimen alueellisten asetusten mukaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>To change these settings, click the <bpt id="p1">**</bpt>Start<ept id="p1">**</ept> button, click <bpt id="p2">**</bpt>Control Panel<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Region and Language<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit muuttaa näitä asetuksia valitsemalla <bpt id="p1">**</bpt>Käynnistä<ept id="p1">**</ept>-painikkeen, <bpt id="p2">**</bpt>Ohjauspaneeli<ept id="p2">**</ept>-kohdan ja valitsemalla sitten <bpt id="p3">**</bpt>Alue ja kieli<ept id="p3">**</ept> -kohdan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>The following table lists the available autotext options for column headers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa taulukossa luetellaan sarakeotsikoiden käytettävissä olevat automaattisen tekstin asetukset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Autotext option and code</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Automaattinen teksti -asetus ja koodi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Month name (@CalMonthLong)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuukauden nimi (@CalMonthLong)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Print the name of the current month in the column heading.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulosta kuluvan kuukauden nimi sarakeotsikkoon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>If you decide to round the amounts in the report to thousands, millions, or billions, or if you set the column width on the report to fewer than nine characters, the name of the month is abbreviated to the first three characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat pyöristää raportin summat tuhansiksi, miljooniksi tai miljardeiksi tai määrittää raportin sarakkeiden leveyden pienemmäksi kuin 9 merkkiä, kuukauden nimi lyhennetään nimen kolmeksi ensimmäiseksi merkiksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Abbreviated month name (@CalMonthShort)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuukauden nimen lyhenne (@CalMonthShort)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>Print the abbreviated name of the month for the selected fiscal period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulosta valitun tilikauden kuukauden nimen lyhenne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Period number (@FiscalPeriod)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jakson numero (@FiscalPeriod)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Print the numeric form of the fiscal period that is identified for that column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulosta tilikauden numeerinen muoto, joka sarakkeelle on määritetty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>If the column spans multiple periods, the last period in the range is printed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos sarake levitetään useille jaksoille, tulostetaan välin viimeinen jakso.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Period description (@FiscalPeriodName)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jakson kuvaus (@FiscalPeriodName)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Print the fiscal period description that is identified in the financial data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulosta taloushallinnon tiedoissa määritetty tilikauden kuvaus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Fiscal year (@FiscalYear)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilikausi (@FiscalYear)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Print the fiscal year for the column in numeric form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulosta sarakkeen tilikausi numeerisessa muodossa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Calendar year (@CalYear)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kalenterivuosi (@CalYear)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Print the calendar year for the column in numeric form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulosta sarakkeen kalenterivuosi numeerisessa muodossa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Start date (@StartDate)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alkamispäivämäärä (@StartDate)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>Print the start date for the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulosta sarakkeen alkamispäivämäärä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>End Date (@EndDate)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Päättymispäivämäärä (@EndDate)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Print the end date for the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulosta sarakkeen päättymispäivämäärä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>Unit name from tree (@UnitName)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yksikön nimi puusta (@UnitName)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>If you restrict a column to a specific unit of the reporting tree, print the unit name in the column header.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos sarake rajoitetaan tietylle raportointipuun yksikölle, tulosta sarakeotsikon yksikön nimi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Unit description (@UnitDesc)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yksikön kuvaus (@UnitDesc)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>If you restrict a column to a specific unit of the reporting tree, print the unit description in the column header.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos sarake rajoitetaan tietylle raportointipuun yksikölle, tulosta sarakeotsikon yksikön kuvaus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Book Code (@BookCode)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjakoodi (@BookCode)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>Print the book code that is specified in the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulosta sarakkeelle määritetty kirjakoodi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>Blank line (@Blank)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyhjä rivi (@Blank)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>Insert an empty line in the column header.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää sarakeotsikkoon tyhjä rivi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>Create a conditional spanning header</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehdollisen koonnin otsikon luominen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>Conditional spanning headers can span multiple columns that are based on specific period data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehdollisen koonnin otsikot voivat olla useiden tietyn jakson tietoihin perustuvien sarakkeiden käytössä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>For example, if you have a budget report for the fiscal year and want to display the actual budgets of past months together with the projected budgets of future months, you can use a conditional spanning header to automatically update the report header.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos käsittelyssä on esimerkiksi tilikauden budjettiraportti, ja haluat näyttää edellisten kuukausien toteutuneet budjetit tulevien kuukausien ennustettujen budjettien kanssa, voit päivittää raportin otsikon automaattisesti ehdollisen koonnin otsikon avulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>Be aware of the following situations when you create a conditional spanning header:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ota huomioon seuraavat tilanteet, kun luot ehdollisen jatkuvan otsikon:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Any stop condition (<bpt id="p1">**</bpt>Spread to<ept id="p1">**</ept> field) that is matched before a start condition (<bpt id="p2">**</bpt>Spread From<ept id="p2">**</ept> field) is ignored.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mikä tahansa pysäytysehto (<bpt id="p1">**</bpt>Levitä mihin<ept id="p1">**</ept> -kenttä), joka täsmää ennen aloitusehtoa (<bpt id="p2">**</bpt>Levitä mistä<ept id="p2">**</ept> -kenttä) ohitetaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>For example, column B has the spread condition defined as BASE+1 to BASE, BASE is in column C, and BASE+1 is in column D. In this case, the stop condition in column C is ignored, and the printing of the header starts at column D.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi sarakkeen B levitysehto on BASE+1 - BASE. BASE on sarakkeessa C ja BASE+1 sarakkeessa D. Tässä tapauksessa sarakkeen C pysäytysehto ohitetaan ja otsikon tulostus alkaa sarakkeesta D.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>If you specify column headers that overlap, they overlap when they are printed on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos määritetyt sarakeotsikot ovat päällekkäisiä, ne ovat päällekkäisiä myös raporttiin tulostettuna.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>The report is generated, but the following warning appears in the <bpt id="p1">**</bpt>Report Queue Status<ept id="p1">**</ept> field: "Column headers using Base intersect with other column headers and may cause overlapping text."</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportti luodaan, mutta seuraava varoitus tulee näkyviin <bpt id="p1">**</bpt>Raportin jonon tila<ept id="p1">**</ept> -kentässä: "Sarakeotsikot, jotka käyttävät pohjaa leikkaavat muiden sarakkeiden otsikoiden kanssa ja tämä saattaa aiheuttaa päällekkäistä tekstiä."</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>For example, the header definition on column B is B to BASE+1, and the header definition on column D is BASE+1 to F. In this case, the headers are printed on top of each other and are unreadable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi sarakkeen B otsikkomääritys on B to BASE+1, ja sarakkeen D otsikkomääritys on is BASE+1 to F. Tässä tapauksessa otsikot tulostetaan toistensa päälle, jolloin niitä ei voi lukea.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>Whenever BASE is used in a <bpt id="p1">**</bpt>Spread from/Spread to<ept id="p1">**</ept> definition, be sure to view the report that is generated, to see whether the headers overlap.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun BASE-määritystä käytetään <bpt id="p1">**</bpt>Levitä mistä / Levitä mihin<ept id="p1">**</ept> -määrityksessä, muista aina tarkistaa luotava raportti päällekkäisten otsikoiden varalta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>If you specify BASE in the spread definition in a No Print (<bpt id="p1">**</bpt>NP<ept id="p1">**</ept>) column, it's ignored, regardless of what is defined in the column definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos levitysehdon BASE-määritys määritetään Ei tulostusta (<bpt id="p1">**</bpt>NP<ept id="p1">**</ept>) -sarakkeessa, se ohitetaan sarakkeen määrityksessä tehdyistä valinnoista huolimatta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>Essentially, this scenario is the same as not creating a column header definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä skenaario on sama kuin sarakeotsikon määrityksen luomatta jättäminen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>For conditional printing columns (<bpt id="p1">**</bpt>P<ph id="ph1">&amp;lt;</ph>B<ept id="p1">**</ept>, <bpt id="p2">**</bpt>P<ph id="ph2">&amp;gt;</ph>=B<ept id="p2">**</ept>), conditional spanning headers behave like any regular column header definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehdollisten tulostussarakkeiden (<bpt id="p1">**</bpt>P<ph id="ph1">&amp;lt;</ph>B<ept id="p1">**</ept>, <bpt id="p2">**</bpt>P<ph id="ph2">&amp;gt;</ph>=B<ept id="p2">**</ept>) ehdollisen koonnin otsikot toimivat kuten mikä tahansa sarakeotsikon määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>For example, if the condition is false, any subsequent column matching for the spread condition starts the printing of the header.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos esimerkiksi ehto on epätosi, mikä tahansa levitysehtoa vastaava peräkkäinen sarake käynnistää otsikon tulostuksen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>Create a conditional spanning header</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehdollisen koonnin otsikon luominen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Double-click a header cell.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta otsikkosolua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>In the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box, enter the column header text.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä <bpt id="p1">**</bpt>Sarakeotsikko<ept id="p1">**</ept>-valintaikkunassa sarakeotsikon teksti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Alternatively, click <bpt id="p1">**</bpt>Insert AutoText<ept id="p1">**</ept>, and select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaihtoehtoisesti voit valita <bpt id="p1">**</bpt>Lisää automaattinen teksti<ept id="p1">**</ept> -kohdan, jossa voit valita vaihtoehdon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>In the <bpt id="p1">**</bpt>Format options<ept id="p1">**</ept> field, select a formatting style for the header.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Muotoiluasetukset<ept id="p1">**</ept>-kentässä otsikon muotoilutyyli.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>Specify a period relative to the base period that is specified when the report is generated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä perusjaksoon liittyvä kausi, joka määritetään raportin luomisen yhteydessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>In the <bpt id="p1">**</bpt>Spread from<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Spread to<ept id="p2">**</ept> fields, enter one of the following values: <bpt id="p3">**</bpt>BASE<ept id="p3">**</ept>, <bpt id="p4">**</bpt>BASE-X<ept id="p4">**</ept> or <bpt id="p5">**</bpt>BASE+X<ept id="p5">**</ept>, where X is the number of periods from the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä <bpt id="p1">**</bpt>Levitä mistä<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Levitä mihin<ept id="p2">**</ept> -kenttään jonkin seuraavista arvoista: <bpt id="p3">**</bpt>BASE<ept id="p3">**</ept>, <bpt id="p4">**</bpt>BASE-X<ept id="p4">**</ept> tai <bpt id="p5">**</bpt>BASE+X<ept id="p5">**</ept>, jossa X on perusjakson jaksojen määrä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>For example, if you enter <bpt id="p1">**</bpt>BASE<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Spread from<ept id="p2">**</ept> field, the conditional spanning column header text starts in the column header where the report definition's <bpt id="p3">**</bpt>Base period<ept id="p3">**</ept> value equals the column definition's <bpt id="p4">**</bpt>Period<ept id="p4">**</ept> value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos syötät esimerkiksi <bpt id="p2">**</bpt>Levitä mistä<ept id="p2">**</ept> -kenttään <bpt id="p1">**</bpt>BASE<ept id="p1">**</ept>-arvon, ehdollisen koonnin sarakeotsikon teksti alkaa sarakeotsikosta, jossa raportin määrityksen <bpt id="p3">**</bpt>perusjakson<ept id="p3">**</ept> arvo on sama kuin <bpt id="p4">**</bpt>jakson<ept id="p4">**</ept> arvo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>It ends in the column that is indicated in the <bpt id="p1">**</bpt>Spread to<ept id="p1">**</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se päättyy <bpt id="p1">**</bpt>Levitä mihin<ept id="p1">**</ept> -kenttään määritettyyn sarakkeeseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Therefore, if the spread is BASE to M, and the report definition's <bpt id="p1">**</bpt>Base period<ept id="p1">**</ept> value is <bpt id="p2">**</bpt>4<ept id="p2">**</ept>, the header starts in the column where the period is set to <bpt id="p3">**</bpt>4<ept id="p3">**</ept> and ends at column M. Headers stop and start on printing columns only.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos siis levitys tapahtuu välillä BASE - M ja raportin määrityksen <bpt id="p1">**</bpt>perusjakson<ept id="p1">**</ept> arvo on <bpt id="p2">**</bpt>4<ept id="p2">**</ept>, otsikko alkaa sarakkeesta, jossa jakson arvoksi on määritetty <bpt id="p3">**</bpt>4<ept id="p3">**</ept>. Se päättyy sarakkeeseen M. Otsikot päättyvät ja alkavat vain tulostussarakkeissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>Under <bpt id="p1">**</bpt>Justification<ept id="p1">**</ept>, select whether the column header text should be left-justified, center-justified, or right justified.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Tasaus<ept id="p1">**</ept>-kohdassa, tasataanko otsikon teksti vasemmalle vai oikealle vai keskitetäänkö se.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Napsauta <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>Example of a conditional spanning header</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehdollisen koonnin otsikon esimerkki</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>Phyllis is creating a report for a dynamic six-month forecast.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Paula on luomassa dynaamista kuuden kuukauden ennusteen raporttia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>She wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hän haluaa tulostaa toteutuneita tietoja sisältäviin sarakkeisiin sanan Toteutunut ja budjettiennusteita sisältäviin sarakkeisiin sanan Budjetti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>Each month that the report is run, there is one more actual column and one less budget column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportti suoritetaan joka kuukausi, joten kuukausi kuukaudelta toteutuneita sarakkeita on yksi enemmän ja budjettisarakkeita yksi vähemmän.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>Although Phyllis can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, she decides to create conditional spanning headers that will automatically create headers over the appropriate columns each time that the report is run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaikka Paula voi muokata sarakkeen määritystä otsikoiden oikaisua varten manuaalisesti aina, kun raportti luodaan, hän päättää luoda ehdollisen koonnin otsikot ja säästää aikaa ja työtä. Näin otsikot luodaan automaattisesti oikeisiin sarakkeisiin aina, kun raportti suoritetaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>Phyllis opens Report Designer, clicks <bpt id="p1">**</bpt>Column Definition<ept id="p1">**</ept> in the navigation pane, and opens the column definition for the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Paula avaa Report Designerin, valitsee siirtymisruudussa <bpt id="p1">**</bpt>Sarakkeen määritys<ept id="p1">**</ept> -kohdan ja avaa raportin sarakkeen määrityksen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>She then enters the following information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sitten hän syöttää seuraava tiedot:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>The base period in the report definition is 4.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportin määrityksen perusjakso on 4.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>A</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>C</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">C</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>D</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">D</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>E</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">E</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>F</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">F</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>G</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">G</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source>H</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">H</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>I</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>J</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">J</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>K</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">K</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>L</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">L</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>M</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">M</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>Header 1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otsikko 1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source>Actual</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Todellinen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>Budget</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjetti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source>Header 2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otsikko 2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>@CalMonthLong</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">@CalMonthLong</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source>Header 3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Otsikko 3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>Column Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saraketyyppi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source>DESC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUV</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="364">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="365">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="366">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="367">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="368">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="369">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="370">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="371">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="372">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="373">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="374">
-          <source>Book Code/Attribute</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjakoodi/määrite</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="375">
-          <source>ACTUAL</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TOTEUTUNUT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="376">
-          <source>BUDGET2012</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUDJETTI2012</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="377">
-          <source>ACTUAL</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TOTEUTUNUT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="378">
-          <source>BUDGET2012</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUDJETTI2012</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="379">
-          <source>ACTUAL</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TOTEUTUNUT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="380">
-          <source>BUDGET2012</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUDJETTI2012</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="381">
-          <source>ACTUAL</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TOTEUTUNUT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="382">
-          <source>BUDGET2012</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUDJETTI2012</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="383">
-          <source>ACTUAL</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TOTEUTUNUT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="384">
-          <source>BUDGET2012</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUDJETTI2012</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="385">
-          <source>ACTUAL</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TOTEUTUNUT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="386">
-          <source>BUDGET2012</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUDJETTI2012</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="387">
-          <source>Fiscal Year</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilikausi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="388">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="389">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="390">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="391">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="392">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="393">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="394">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="395">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="396">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="397">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="398">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="399">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="400">
-          <source>Period</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kausi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="401">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="402">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="403">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="404">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="405">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="406">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="407">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="408">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="409">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="410">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="411">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="412">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="413">
-          <source>Periods Covered</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Katetut kaudet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="414">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="415">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="416">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="417">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="418">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="419">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="420">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="421">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="422">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="423">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="424">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="425">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="426">
-          <source>Column Width</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen leveys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="427">
-          <source>30</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">30</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="428">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="429">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="430">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="431">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="432">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="433">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="434">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="435">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="436">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="437">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="438">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="439">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="440">
-          <source>Print Control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulostuksen hallinta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="441">
-          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="442">
-          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="443">
-          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="444">
-          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="445">
-          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="446">
-          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="447">
-          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="448">
-          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="449">
-          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="450">
-          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="451">
-          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="452">
-          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="453">
-          <source>Phyllis double-clicks a column header cell to open the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box, where she enters the following information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Paula kaksoisnapsauttaa sarakeotsikon solua ja avaa <bpt id="p1">**</bpt>Sarakeotsikko<ept id="p1">**</ept>-valintaikkunan, johon hän syöttää seuraavat tiedot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="454">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kenttä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="455">
-          <source>Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arvo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="456">
-          <source>Column header text</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakeotsikon teksti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="457">
-          <source>Actual</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Todellinen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="458">
-          <source>Insert AutoText</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää automaattinen teksti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="459">
-          <source>No selection is made.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valintaa ei ole tehty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="460">
-          <source>Format options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotoiluasetukset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="461">
-          <source>Box</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ruutu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="462">
-          <source>Justification</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Perustelu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="463">
-          <source>No selection is made.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valintaa ei ole tehty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="464">
-          <source>Spread from</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Levitä mistä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="465">
-          <source>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="466">
-          <source>Spread to</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Levitä mihin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="467">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="468">
-          <source>Budget header</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjetin otsikko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="469">
-          <source>BASE+1 to end column</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE+1 - loppusarake</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="470">
-          <source>After she has finished entering information, Phyllis clicks <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun Paula on syöttänyt tiedot, hän valitsee <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="471">
-          <source>She then double-clicks the column header cell in column C to open the <bpt id="p1">**</bpt>Column Header<ept id="p1">**</ept> dialog box, where she enters the following information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän jälkeen hän kaksoisnapsauttaa sarakeotsikon solua sarakkeessa C ja avaa <bpt id="p1">**</bpt>Sarakeotsikko<ept id="p1">**</ept>-valintaikkunan, johon hän syöttää seuraavat tiedot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="472">
-          <source>Field</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kenttä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="473">
-          <source>Value</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Arvo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="474">
-          <source>Column header text</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakeotsikon teksti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="475">
-          <source>Budget</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjetti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="476">
-          <source>Insert AutoText</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää automaattinen teksti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="477">
-          <source>No selection is made.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valintaa ei ole tehty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="478">
-          <source>Format options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotoiluasetukset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="479">
-          <source>Box</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ruutu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="480">
-          <source>Justification</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Perustelu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="481">
-          <source>No selection is made.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valintaa ei ole tehty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="482">
-          <source>Spread from</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Levitä mistä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="483">
-          <source>C</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">C</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="484">
-          <source>Spread to</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Levitä mihin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="485">
-          <source>BASE+2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE+2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="486">
-          <source>Now, every time that this report is generated, the word "Actual" will be printed over the columns that contain actual data, and the word "Budget" will be printed over the columns that contain budget forecasts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän jälkeen toteutuneita tietoja sisältäviin sarakkeisiin tulostetaan sana Toteutunut ja budjettiennusteita sisältäviin sarakkeisiin sana Budjetti aina, kun raportti luodaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="487">
-          <source>Additionally, the number of columns will be adjusted each month.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän lisäksi sarakkeiden määrä oikaistaan joka kuukausi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="488">
-          <source>Apply column justification</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen tasauksen käyttäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="489">
-          <source>The <bpt id="p1">**</bpt>Justification<ept id="p1">**</ept> cell is used to apply justification formatting to a description column in a report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tasaus<ept id="p1">**</ept>-solun avulla raportin kuvaussarakkeessa käytetään tasausmuotoilua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="490">
-          <source>This option affects only the column descriptions, not the actual values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä vaihtoehto vaikuttaa vain sarakkeen kuvauksiin, ei toteutuneisiin arvoihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="491">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="492">
-          <source>Double-click the <bpt id="p1">**</bpt>Justification<ept id="p1">**</ept> cell.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta <bpt id="p1">**</bpt>Tasaus<ept id="p1">**</ept>-solua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="493">
-          <source>Select one of the following values in the list:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse jokin seuraavista luettelon arvoista:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="494">
-          <source><bpt id="p1">**</bpt>None<ept id="p1">**</ept> – No justification is applied.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ei mitään<ept id="p1">**</ept> – tasausta ei käytetä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="495">
-          <source><bpt id="p1">**</bpt>Left<ept id="p1">**</ept> – Left-align the column descriptions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vasen<ept id="p1">**</ept> – sarakkeen kuvaukset tasataan vasemmalle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="496">
-          <source><bpt id="p1">**</bpt>Center<ept id="p1">**</ept> – Center-align the column descriptions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Keskitys<ept id="p1">**</ept> – sarakkeen kuvaukset keskitetään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="497">
-          <source><bpt id="p1">**</bpt>Right<ept id="p1">**</ept> – Right-align the column descriptions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Oikea<ept id="p1">**</ept> – sarakkeen kuvaukset tasataan oikealle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="498">
-          <source>Add special formatting options</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erityismuotoiluvalintojen lisääminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="499">
-          <source>In the column definition, the formatting column detail rows apply special formatting to selected columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määrityksen muotoilusarakkeen tietorivien valituissa sarakkeissa käytetään erityismuotoilua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="500">
-          <source>Although some of the <bpt id="p1">**</bpt>Print Control<ept id="p1">**</ept> options and <bpt id="p2">**</bpt>Column Restrictions<ept id="p2">**</ept> options are specific to <bpt id="p3">**</bpt>FD<ept id="p3">**</ept> columns, most of the options apply to all column types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaikka jotkin <bpt id="p1">**</bpt>Tulostuksen hallinta<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Sarakkeiden rajoitukset<ept id="p2">**</ept> -vaihtoehdoista ovat <bpt id="p3">**</bpt>FD<ept id="p3">**</ept>-sarakekohtaisia, suurin osa vaihtoehdoista koskee kaikkia saraketyyppejä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="501">
-          <source>The formatting that is specified in the column definition overrides the formatting that is specified in the report definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määrityksessä määritetty muotoilu korvaa raportin määrityksessä määritetyn muotoilun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="502">
-          <source>However, the formatting that is specified in the row definition overrides the formatting that is specified in the column definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rivin määrityksessä määritetty muotoilu korvaa kuitenkin sarakkeen määrityksessä määritetyn muotoilun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="503">
-          <source>The following rows are considered formatting rows:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavilla riveillä käytetään muotoilurivejä:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="504">
-          <source>Column Width</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen leveys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="505">
-          <source>Extra Spaces Before Column</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisävälilyönnit ennen saraketta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="506">
-          <source>Format/Currency Override</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muotoilun/valuutan korvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="507">
-          <source>Print Control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulostuksen hallinta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="508">
-          <source>Changing the column width</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen leveyden muuttaminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="509">
-          <source>The <bpt id="p1">**</bpt>Column Width<ept id="p1">**</ept> cell specifies the number of characters to use for the width of this column on the printed report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Sarakkeen leveys<ept id="p1">**</ept> -solu määrittää tämän sarakkeen merkkien määrän tulostetussa raportissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="510">
-          <source>Column width is important for columns that contain amounts (columns of the <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept>, <bpt id="p2">**</bpt>WKS<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>FD<ept id="p3">**</ept> type), descriptions (columns of the <bpt id="p4">**</bpt>DESC<ept id="p4">**</ept> type), or fill (columns of the <bpt id="p5">**</bpt>FILL<ept id="p5">**</ept> type).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen leveys on tärkeä sarakkeissa, jotka sisältävät summia (sarakkeet, joiden tyyppi on <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept>, <bpt id="p2">**</bpt>WKS<ept id="p2">**</ept> tai <bpt id="p3">**</bpt>FD<ept id="p3">**</ept>), kuvauksissa (sarakkeet, joiden tyyppi on <bpt id="p4">**</bpt>DESC<ept id="p4">**</ept>) tai täytöissä (sarakkeet, joiden tyyppi on <bpt id="p5">**</bpt>FILL<ept id="p5">**</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="511">
-          <source>By default, the <bpt id="p1">**</bpt>AutoFit<ept id="p1">**</ept> option is selected, so that the width of each column is automatically adjusted to fit the contents.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletusarvoisesti on valittuna <bpt id="p1">**</bpt>Sovita<ept id="p1">**</ept>-vaihtoehto. Tällöin kunkin sarakkeen leveys määritetään automaattisesti sarakkeen sisällön mukaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="512">
-          <source>Specify the width of a column on a report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportin sarakkeen leveyden määrittäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="513">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="514">
-          <source>In the <bpt id="p1">**</bpt>Column Width<ept id="p1">**</ept> cell, enter the number of spaces for the width of the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä <bpt id="p1">**</bpt>Sarakkeen leveys<ept id="p1">**</ept> -soluun sarakkeen leveyden välilyöntien määrä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="515">
-          <source>The maximum width of any column is 255 characters (this number includes cents, commas, and parentheses).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen leveyden enimmäismäärä on 255 merkkiä (tämä luku sisältää sentit, pilkut ja sulut)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="516">
-          <source>Alternatively, to enable report designer to select the appropriate width for the column, based on the cell content, double-click the <bpt id="p1">**</bpt>Column Width<ept id="p1">**</ept> cell, and then click <bpt id="p2">**</bpt>AutoFit<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaihtoehtoisesti voit ottaa käyttöön raportin suunnittelijan ja valita sarakkeen leveyden solun sisällön perusteella kaksoisnapsauttamalla <bpt id="p1">**</bpt>Sarakkeen leveys<ept id="p1">**</ept> -solua ja valitsemalla sitten <bpt id="p2">**</bpt>Sovita<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="517">
-          <source>Add space between columns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välilyönnin lisääminen sarakkeiden väliin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="518">
-          <source>The <bpt id="p1">**</bpt>Extra Spaces Before Column<ept id="p1">**</ept> cell specifies the width of the separator between one column and adjacent columns in the column definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Lisävälilyönnit ennen saraketta<ept id="p1">**</ept> -solu määrittää sarakkeiden välisen erottimen leveyden sarakkeen määrityksessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="519">
-          <source>The <bpt id="p1">**</bpt>Extra Spaces Before Column<ept id="p1">**</ept> setting affects all column detail rows for the column, but not the column header rows.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Lisävälilyönnit ennen saraketta<ept id="p1">**</ept> -asetus vaikuttaa sarakkeen tietoriveihin, mutta ei sarakeotsikoiden riveihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="520">
-          <source>Use this option to separate groups of columns or to add a few spaces before the description, so that the description column is indented from the left-aligned titles on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vaihtoehdon avulla voit erotella sarakeryhmät tai lisätä muutaman välilyönnin ennen kuvausta, jolloin kuvaussarake sisennetään raportin vasemmalle tasatuista otsikoista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="521">
-          <source>The default number of spaces between each column is two.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kunkin sarakkeen välissä olevien välilyöntien oletusmäärä on kaksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="522">
-          <source>You can change this setting on the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> tab in the report definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit muuttaa tätä asetusta raportin määrityksen <bpt id="p1">**</bpt>Asetukset<ept id="p1">**</ept>-välilehdessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="523">
-          <source>Specify the space between columns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeiden välisten välien määrittäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="524">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="525">
-          <source>In the <bpt id="p1">**</bpt>Extra Spaces Before Column<ept id="p1">**</ept> cell, enter the number of spaces to insert between columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä <bpt id="p1">**</bpt>Lisävälilyönnit ennen saraketta<ept id="p1">**</ept> -soluun sarakkeiden väliin lisättävien välilyöntien määrä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="526">
-          <source>Specify a format currency override</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuutan muotoilun ohituksen määrittäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="527">
-          <source>The <bpt id="p1">**</bpt>Format/Currency Override<ept id="p1">**</ept> cell specifies the formatting of the decimal, currency, and percentage amounts in the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Muotoilun/valuutan ohitus<ept id="p1">**</ept> -solussa määritetään sarakkeen desimaalin, valuutan ja prosenttimäärien muotoilu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="528">
-          <source>This formatting overrides any formatting that is specified in the report definition or system defaults.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä muotoilu korvaa sarakkeen ja raportin määrityksessä tai järjestelmän oletusarvoissa määritetyn muotoilun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="529">
-          <source>Assign a format currency override to a report column</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuutan muotoilun korvaamisen määrittäminen raportin sarakkeelle</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="530">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="531">
-          <source>Double-click a <bpt id="p1">**</bpt>Format/Currency Override<ept id="p1">**</ept> cell in an amount column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta <bpt id="p1">**</bpt>Muotoilun/valuutan korvaus<ept id="p1">**</ept> -solua summasarakkeessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="532">
-          <source>In the <bpt id="p1">**</bpt>Format Override<ept id="p1">**</ept> dialog box, select formatting options.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Muotoilun ohitus<ept id="p1">**</ept> -valintaikkunassa muotoiluasetukset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="533">
-          <source>Add a print control code</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulostuksen hallintakoodin lisääminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="534">
-          <source>The <bpt id="p1">**</bpt>Print Control<ept id="p1">**</ept> cell can contain codes that adjust the display or the printing characteristics of a column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tulostuksen hallinta<ept id="p1">**</ept> -solu voi sisältää koodeja, joiden mukaan sarakkeen näyttö- tai tulostusominaisuuksia muokataan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="535">
-          <source>There are two types of print control codes: regular print control codes and conditional print control codes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulostuksen hallintakoodeja on kaksi eri tyyppiä: tavalliset tulostuksen hallintakoodit ja ehdolliset hallintakoodit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="536">
-          <source>Regular print control codes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tavalliset tulostuksen hallintakoodit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="537">
-          <source>Print control code</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulostuksen hallintakoodi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="538">
-          <source>Translation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käännös</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="539">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="540">
-          <source>NP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="541">
-          <source>Nonprinting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Piilotettu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="542">
-          <source>Exclude the amounts in this column from the report that is printed and from calculations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän sarakkeen summat suljetaan pois tulostettavasta raportista ja laskutoimituksista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="543">
-          <source>To include a non-printing column in a calculation, refer to the column directly in the calculation formula.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit ottaa piilotetun sarakkeen mukaan laskutoimitukseen viittaamalla sarakkeeseen suoraan laskentakaavassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="544">
-          <source>For example, the non-printing column C is included in the following calculation: <bpt id="p1">**</bpt>B+C+D<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Piilotettu sarake C voidaan esimerkiksi sisällyttää seuraavaan laskutoimitukseen: <bpt id="p1">**</bpt>B+C+D<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="545">
-          <source>However, the non-printing column C isn't included in the following calculation: <bpt id="p1">**</bpt>B:D<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Piilotettua saraketta C ei kuitenkaan oteta mukaan esimerkiksi seuraavaan laskutoimitukseen: <bpt id="p1">**</bpt>B:D<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="546">
-          <source>XCR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XCR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="547">
-          <source>Change sign if typical balance of row is credit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Merkin muuttaminen, jos rivin tavallinen saldo on kredit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="548">
-          <source>Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Luo budjetti tai vertaileva raportti, jossa mikä tahansa kielteinen varianssi (kuten tuoton vaje tai kulujen ylitys) on aina negatiivinen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="549">
-          <source>Apply this code to a <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a <bpt id="p2">**</bpt>C<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Normal Balance<ept id="p3">**</ept> column of the row definition).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ota tämä koodi käyttöön <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept>-sarakkeessa ja vaihda sarakesumman etumerkki, jos annetun rivin tavallinen saldo on kredit (kuten rivin määrityksen <bpt id="p3">**</bpt>Tavallinen saldo<ept id="p3">**</ept> -sarakkeen <bpt id="p2">**</bpt>C<ept id="p2">**</ept>-arvo määrittää).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="550">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> For <bpt id="p2">&lt;strong&gt;</bpt>TOT<ept id="p2">&lt;/strong&gt;</ept> rows and <ph id="ph1">&lt;/strong&gt;</ph>CAL<ph id="ph2">&lt;/strong&gt;</ph> rows that typically carry a credit balance, be sure to enter a <bpt id="p3">&lt;strong&gt;</bpt>C<ept id="p3">&lt;/strong&gt;</ept> in the <bpt id="p4">&lt;strong&gt;</bpt>Normal Balance<ept id="p4">&lt;/strong&gt;</ept> column in the row definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Huomautus:<ept id="p1">&lt;/strong&gt;</ept> Varmista, että<bpt id="p2">&lt;strong&gt;</bpt>TOT<ept id="p2">&lt;/strong&gt;</ept>- ja <ph id="ph1">&lt;/strong&gt;</ph>CAL<ph id="ph2">&lt;/strong&gt;</ph>-riveille, joissa usein on kredit-saldo, syötetään rivin määrityksen <bpt id="p4">&lt;strong&gt;</bpt>Tavallinen saldo<ept id="p4">&lt;/strong&gt;</ept> -sarakkeeseen <bpt id="p3">&lt;strong&gt;</bpt>C<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="551">
-          <source>X0</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="552">
-          <source>Suppress column if all zeros or blanks</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen piilottaminen, jos ne ovat nollia tai tyhjiä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="553">
-          <source>Exclude an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column from the report if all cells in that column are either empty or contain zeros.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sulje <bpt id="p1">**</bpt>FD<ept id="p1">**</ept>-sarake pois raportista, jos sarakkeen kaikki solut ovat tyhjiä tai sisältävät vain nollia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="554">
-          <source>SR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="555">
-          <source>Suppress rounding</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Estä pyöristys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="556">
-          <source>Prevent the amounts in this column from being rounded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Estä tämän sarakkeen summien pyöristys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="557">
-          <source>XR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">XR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="558">
-          <source>Suppress rollup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Piilota koonti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="559">
-          <source>Suppress a rollup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Piilota koonti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="560">
-          <source>If the report uses a reporting tree, the amounts in this column aren't rolled up into subsequent parent nodes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos raportissa käytetään raportointipuuta, tämän sarakkeen summia ei koota vastaaviksi ylätason solmuiksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="561">
-          <source>RP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="562">
-          <source>Repeat column on each page</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen toistaminen jokaisella sivulla</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="563">
-          <source>Repeat a specified column on each page of a report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toista määritetty sarake raportin jokaisella sivulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="564">
-          <source>For example, you can use the <bpt id="p1">**</bpt>RP<ept id="p1">**</ept> print control code to include a column of the <bpt id="p2">**</bpt>ROW<ept id="p2">**</ept> type that pulls in row codes on every page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit käyttää esimerkiksi tulostuksen <bpt id="p1">**</bpt>RP<ept id="p1">**</ept>-hallintakoodia, kun haluat sisällyttää rivien koodeja noutavan <bpt id="p2">**</bpt>ROW<ept id="p2">**</ept>-tyyppiä olevan sarakkeen jokaiselle sivulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="565">
-          <source>WT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="566">
-          <source>Wrap text</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rivitä teksti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="567">
-          <source>If the text in a column is too long to fit the space, wrap the text to keep all the text in the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos sarakkeen teksti on liian pitkä, eikä sitä voida sovittaa sarakkeen tilaan, se voidaan rivittää. Tällöin teksti mahtuu sarakkeeseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="568">
-          <source>Conditional print control codes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehdolliset tulostuksen hallintakoodit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="569">
-          <source>Conditional print control code</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ehdolliset tulostuksen hallintakoodi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="570">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="571">
-          <source>(none)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(ei mitään)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="572">
-          <source>Clear the conditional print selection.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poista ehdollisen tulostuksen valinta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="573">
-          <source>P<ph id="ph1">&amp;lt;</ph>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="574">
-          <source>Display a specified column only if the period is less than the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näyttää tietyn sarakkeen vain, jos jakso on pienempi kuin perusjakso.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="575">
-          <source>P<ph id="ph1">&amp;gt;</ph>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="576">
-          <source>Display a specified column only if the period is more than the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näyttää tietyn sarakkeen vain, jos jakso on suurempi kuin perusjakso.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="577">
-          <source>P=B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P=B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="578">
-          <source>Display a specified column only if the period is equal to the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näyttää tietyn sarakkeen vain, jos jakso on yhtä suuri kuin perusjakso.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="579">
-          <source>P<ph id="ph1">&amp;lt;</ph>=B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;lt;</ph>=B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="580">
-          <source>Display a specified column only if the period is less than or equal to the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näyttää tietyn sarakkeen vain, jos jakso on pienempi tai yhtä suuri kuin perusjakso.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="581">
-          <source>P<ph id="ph1">&amp;gt;</ph>=B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">P<ph id="ph1">&amp;gt;</ph>=B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="582">
-          <source>Display a specified column only if the period is more than or equal to the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näyttää tietyn sarakkeen vain, jos jakso on suurempi tai yhtä suuri kuin perusjakso.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="583">
-          <source>Add print control codes to a report column</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulostuksen hallintakoodin lisääminen raporttisarakkeeseen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="584">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="585">
-          <source>Double-click the <bpt id="p1">**</bpt>Print Control<ept id="p1">**</ept> cell.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta <bpt id="p1">**</bpt>Tulostusohjaus<ept id="p1">**</ept>-solua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="586">
-          <source>In the <bpt id="p1">**</bpt>Print Control<ept id="p1">**</ept> dialog box, select a code in the <bpt id="p2">**</bpt>Select print control options<ept id="p2">**</ept> list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Tulostuksen hallinta<ept id="p1">**</ept> -valintaikkunassa koodi <bpt id="p2">**</bpt>Valitse tulostuksen hallinnan asetukset<ept id="p2">**</ept> -luettelosta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="587">
-          <source>To select more than one code, hold down the Ctrl key while you select the codes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit valita useita koodeja pitämällä Ctrl-näppäintä alhaalla koodien valinnan aikana.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="588">
-          <source>Select an option in the <bpt id="p1">**</bpt>Conditional print options<ept id="p1">**</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse vaihtoehto <bpt id="p1">**</bpt>Ehdollisen tulostuksen asetukset<ept id="p1">**</ept> -kentässä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="589">
-          <source>By default, <bpt id="p1">**</bpt>(none)<ept id="p1">**</ept> is selected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletusasetus on <bpt id="p1">**</bpt>(ei mitään)<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="590">
-          <source>You can select only one conditional print code at a time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit valita vain yhden ehdollisen tulostuskoodin kerrallaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="591">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="592">
-          <source>You can also enter the print codes directly in the <bpt id="p1">**</bpt>Print Control<ept id="p1">**</ept> cell.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös syöttää tulostuskoodeja suoraan <bpt id="p1">**</bpt>Tulostuksen hallinta<ept id="p1">**</ept> -soluun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="593">
-          <source>Separate multiple print control codes with a comma.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erota tulostuksen useat hallintakoodit pilkuilla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="594">
-          <source>Column types</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakelajit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="595">
-          <source>The type of information that each column on a report includes is specified by the value in the <bpt id="p1">**</bpt>Column Type<ept id="p1">**</ept> row in the column definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportin kunkin sarakkeen tietojen lajin määrittää sarakkeen määrityksen <bpt id="p1">**</bpt>Sarakelaji<ept id="p1">**</ept>-rivin arvo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="596">
-          <source>Each column definition must contain at least one description (<bpt id="p1">**</bpt>DESC<ept id="p1">**</ept>) column and one amount (<bpt id="p2">**</bpt>FD<ept id="p2">**</ept>, <bpt id="p3">**</bpt>WKS<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>CALC<ept id="p4">**</ept>) column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kussakin sarakemäärityksessä on oltava vähintään yksi kuvaussarake (<bpt id="p1">**</bpt>KUV<ept id="p1">**</ept>) ja yksi summasarake (<bpt id="p2">**</bpt>TD<ept id="p2">**</ept>, <bpt id="p3">**</bpt>LTAUL<ept id="p3">**</ept> tai <bpt id="p4">**</bpt>LASK<ept id="p4">**</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="597">
-          <source>The column type codes don't apply to all accounting systems.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saraketyyppikoodit eivät sovellu kaikkiin kirjanpitojärjestelmiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="598">
-          <source>If you select a type that isn't valid for your accounting system, that column is blank on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos valitset lajin, joka ei kelpaa organisaation kirjanpitojärjestelmässä, sarake näkyy raportissa tyhjänä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="599">
-          <source>Specify a column type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakelajin määrittäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="600">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="601">
-          <source>In the appropriate column, double-click a cell in the <bpt id="p1">**</bpt>Column Type<ept id="p1">**</ept> row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta oikeassa sarakkeessa <bpt id="p1">**</bpt>Sarakelaji<ept id="p1">**</ept>-rivin solua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="602">
-          <source>Select a column type in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse luettelosta sarakelaji.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="603">
-          <source>The following table describes the various column types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eri sarakelajit esitellään seuraavassa taulukossa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="604">
-          <source>Column type code</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakelajin koodi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="605">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="606">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="607">
-          <source>Display financial data when you use a <bpt id="p1">&lt;strong&gt;</bpt>Link to Financial Dimensions<ept id="p1">&lt;/strong&gt;</ept> column in the row definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä taloustiedot, kun käytät rivimääritelmän <bpt id="p1">&lt;strong&gt;</bpt>Linkki taloushallinnon dimensioihin<ept id="p1">&lt;/strong&gt;</ept> -saraketta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="608">
-          <source>When you select the <bpt id="p1">&lt;strong&gt;</bpt>FD<ept id="p1">&lt;/strong&gt;</ept> column type, default settings are automatically specified for the following rows:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun valitset <bpt id="p1">&lt;strong&gt;</bpt>TD<ept id="p1">&lt;/strong&gt;</ept>-saraketyypin, seuraaville riveille määritetään automaattisesti oletusasetukset:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="609">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Book Code/Attribute Category:<ept id="p1">&lt;/strong&gt;</ept> ACTUAL</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Kirjauskoodi/määriteryhmä<ept id="p1">&lt;/strong&gt;</ept> TOTEUTUNUT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="610">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Book Code/Attribute Category:<ept id="p1">&lt;/strong&gt;</ept> ACTUAL</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Kirjauskoodi/määriteryhmä<ept id="p1">&lt;/strong&gt;</ept> TOTEUTUNUT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="611">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Fiscal Year:<ept id="p1">&lt;/strong&gt;</ept> BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Tilikausi:<ept id="p1">&lt;/strong&gt;</ept> BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="612">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Period:<ept id="p1">&lt;/strong&gt;</ept> BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Kausi:<ept id="p1">&lt;/strong&gt;</ept> BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="613">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Periods Covered:<ept id="p1">&lt;/strong&gt;</ept> PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Katetut kaudet<ept id="p1">&lt;/strong&gt;</ept> Kausittainen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="614">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Column Width:<ept id="p1">&lt;/strong&gt;</ept> 14</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Sarakkeen leveys:<ept id="p1">&lt;/strong&gt;</ept> 14</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="615">
-          <source>You can change these default settings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näitä oletusasetuksia voi muuttaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="616">
-          <source>CALC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CALC</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="617">
-          <source>Display the result of a simple or complex calculation that is specified in the <bpt id="p1">&lt;strong&gt;</bpt>Formula<ept id="p1">&lt;/strong&gt;</ept> cell.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä <bpt id="p1">&lt;strong&gt;</bpt>Kaava<ept id="p1">&lt;/strong&gt;</ept>-solussa määritetyn yksinkertaisen tai monimutkaisen laskutoimituksen tulokset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="618">
-          <source>For more information, see <bpt id="p1">&lt;a href="advanced-formatting-options-financial-reporting.md"&gt;</bpt>Advanced formatting options in financial reporting<ept id="p1">&lt;/a&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja on kohdassa <bpt id="p1">&lt;a href="advanced-formatting-options-financial-reporting.md"&gt;</bpt>Muotoilun lisäasetukset taloushallinnon raportoinnissa<ept id="p1">&lt;/a&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="619">
-          <source>DESC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUVAUS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="620">
-          <source>Display the row description from the row definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä rivin kuvaus rivin määrityksestä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="621">
-          <source>Although the description column is often the first column on the report, it can be in any position.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaikka kuvaussarake on usein raportin ensimmäinen sarake, se voi olla missä tahansa kohdassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="622">
-          <source>ROW</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROW</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="623">
-          <source>Display the individual row codes for financial rows from the <bpt id="p1">&lt;strong&gt;</bpt>Row Code<ept id="p1">&lt;/strong&gt;</ept> column in the row definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä taloushallinnon rivien yksittäisten rivien koodit rivin määrityksen <bpt id="p1">&lt;strong&gt;</bpt>Rivin koodi<ept id="p1">&lt;/strong&gt;</ept> -sarakkeesta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="624">
-          <source>For more information, see <bpt id="p1">&lt;a href="row-definitions-financial-reporting.md"&gt;</bpt>Row definitions in financial reporting<ept id="p1">&lt;/a&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja on kohdassa <bpt id="p1">&lt;a href="row-definitions-financial-reporting.md"&gt;</bpt>Rivien määritykset taloushallinnon raportoinnissa<ept id="p1">&lt;/a&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="625">
-          <source>ACCT (Account codes)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ACCT (tilikoodit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="626">
-          <source>Display the financial data segment values or dimension values that apply to each row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä jokaisella rivillä käytettävät taloushallinnon tietojen segmentti- tai dimensioarvot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="627">
-          <source>For account and transaction detail reports, the fully qualified account is printed (for example, <bpt id="p1">&lt;strong&gt;</bpt>110140-070-0101<ept id="p1">&lt;/strong&gt;</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tili- ja tapahtumatietojen raporteissa tulostetaan täydellinen tilinumero, (esimerkiksi <bpt id="p1">&lt;strong&gt;</bpt>110140-070-0101<ept id="p1">&lt;/strong&gt;</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="628">
-          <source>If ranges have been specified in the <bpt id="p1">&lt;strong&gt;</bpt>Link to Financial Dimensions<ept id="p1">&lt;/strong&gt;</ept> column in an associated row definition, the range is enclosed in square brackets and is treated as a single value (for example, <bpt id="p2">&lt;strong&gt;</bpt>[110140:110700]-070-[0101:0200]<ept id="p2">&lt;/strong&gt;</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos liittyvän rivimäärityksen <bpt id="p1">&lt;strong&gt;</bpt>Linkki taloushallinnon dimensioihin<ept id="p1">&lt;/strong&gt;</ept> -sarakkeessa on määritetty alueita, hakasulkeissa olevaa aluetta käsitellään samoin kuin yksittäistä arvoa (esimerkiksi <bpt id="p2">&lt;strong&gt;</bpt>[110140:110700]-070-[0101:0200]<ept id="p2">&lt;/strong&gt;</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="629">
-          <source>For financial reports and high-level reports that are a combination of several accounts, the financial data link from the row definition is printed (for example, <bpt id="p1">&lt;strong&gt;</bpt>1100:1200<ept id="p1">&lt;/strong&gt;</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talousraporteissa ja korkean tason raporteissa, jotka voivat olla yhdistelmiä useista tileistä, tulostetaan taloushallinnon tietojen linkki rivimäärityksestä (esimerkiksi <bpt id="p1">&lt;strong&gt;</bpt>1100:1200<ept id="p1">&lt;/strong&gt;</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="630">
-          <source>FILL</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FILL</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="631">
-          <source>Fill the cell with a character that you enclose in single quotation marks.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täytä soluun merkki, joka on heittomerkkien sisällä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="632">
-          <source>If you don't enter a character, the column is empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos et syötä merkkiä, sarake on tyhjä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="633">
-          <source>For example, to fill a column with an ellipsis (...), enter <bpt id="p1">&lt;strong&gt;</bpt>FILL<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt>'.'<ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi sarakkeen, jolla on ellipsi (...), voi täyttää syöttämällä <bpt id="p1">&lt;strong&gt;</bpt>FILL<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt>'.'<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="634">
-          <source>PAGE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PAGE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="635">
-          <source>Insert a vertical page break in the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää raporttiin pystysuora sivunvaihto.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="636">
-          <source>The columns that are to the right of the <bpt id="p1">&lt;strong&gt;</bpt>PAGE<ept id="p1">&lt;/strong&gt;</ept> column appear on a different page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>SIVU<ept id="p1">&lt;/strong&gt;</ept>-sarakkeen oikealla puolella olevat sarakkeet tulevat eri sivulle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="637">
-          <source>ATTR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ATTR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="638">
-          <source>If your accounting system supports attributes, display an account or transaction attribute in the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos kirjanpitojärjestelmä tukee määritteitä, näytä sarakkeessa tilin tai tapahtuman määrite.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="639">
-          <source>An attribute, which must apply to a single full account, extracts underlying account or transaction information from the financial data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määrite, jota käytetään yhdessä täydellisessä tilissä, poimii taloushallinnon tiedoista tilin tai tapahtuman taustatietoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="640">
-          <source>Account-level attributes display data from the account, and transaction-level attributes display data that occurred at the time that the transaction was posted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilitason määritteet näyttävät tietoja tilistä, ja tapahtumatason määritteet näyttävät tietoja tapahtuman kirjaushetkeltä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="641">
-          <source>If you select <bpt id="p1">&lt;strong&gt;</bpt>ATTR<ept id="p1">&lt;/strong&gt;</ept> as the column type, specify the attribute category in the <bpt id="p2">&lt;strong&gt;</bpt>Book Code/Attribute Category<ept id="p2">&lt;/strong&gt;</ept> detail row of the column definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun valitset saraketyypiksi <bpt id="p1">&lt;strong&gt;</bpt>MÄÄR<ept id="p1">&lt;/strong&gt;</ept>, määritä sarakemäärityksen <bpt id="p2">&lt;strong&gt;</bpt>Kirjauskoodi/määriteryhmä<ept id="p2">&lt;/strong&gt;</ept>-tietorivillä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="642">
-          <source>Financial Dimensions column</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallinnon dimensioiden sarake</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="643">
-          <source>The following <bpt id="p1">**</bpt>Column Definition<ept id="p1">**</ept> row definitions apply to columns that have a column type of <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> (Amounts from financial dimensions).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavia <bpt id="p1">**</bpt>sarakkeen määrityksen<ept id="p1">**</ept> rivien määrityksiä käytetään sarakkeissa, joiden sarakelaji on <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> (summat taloushallinnon dimensioista).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="644">
-          <source>Book Code/Attribute Category cell</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjakoodi/määriteluokka-solu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="645">
-          <source>The <bpt id="p1">**</bpt>Book Code/Attribute Category<ept id="p1">**</ept> cell identifies the book code for the data in the <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kirjakoodi/määriteluokka<ept id="p1">**</ept>-solu määrittää <bpt id="p2">**</bpt>FD<ept id="p2">**</ept>-sarakkeen tietojen kirjakoodin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="646">
-          <source>A column definition can include multiple actual, budget, and statistical columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määritys voi sisältää useita toteutuneiden tietojen, budjetin ja tilastojen sarakkeita.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="647">
-          <source>A column definition can also display different periods, such as current or year-to-date, and different amounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määrityksessä voidaan näyttää myös erilaisia jaksoja, kuten kuluva tai vuoden alusta, sekä erilaisia summia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="648">
-          <source>The list of book codes reflects the actual, budget, and statistical (non-financial) options that have been established in your financial data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjakoodien luettelo vaikuttaa toteutuneiden, budjetin ja tilastojen (muu kuin taloushallinto) asetuksiin, jotka on määritetty taloushallinnon tiedoissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="649">
-          <source>Fiscal Year cell</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilikausi-solu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="650">
-          <source>The <bpt id="p1">**</bpt>Fiscal Year<ept id="p1">**</ept> cell identifies the fiscal year that the column should include.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tilikausi<ept id="p1">**</ept>-solu määrittää tilikauden, jonka sarake sisältää.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="651">
-          <source>The year can be relative to the base year that is specified when the report is generated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vuosi voi olla suhteessa perusvuoteen, joka on määritetty raportin luomisen yhteydessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="652">
-          <source>The following options are available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valittavissa ovat seuraavat vaihtoehdot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="653">
-          <source>Option</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaihtoehto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="654">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="655">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERUS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="656">
-          <source>Use the base year that is specified at report time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä raportin ajassa määritettyä perusvuotta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="657">
-          <source>BASE+<ph id="ph1">\#</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE+<ph id="ph1">\#</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="658">
-          <source>Use the year that is <ph id="ph1">\#</ph> years after the base year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä vuotta, joka on <ph id="ph1">\#</ph> vuotta perusvuoden jälkeen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="659">
-          <source>For example, to use the third year after the base year, enter <bpt id="p1">**</bpt>BASE+3<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit käyttää esimerkiksi kolmatta vuotta perusvuoden jälkeen syöttämällä <bpt id="p1">**</bpt>BASE+3<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="660">
-          <source>BASE-<ph id="ph1">\#</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE-<ph id="ph1">\#</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="661">
-          <source>Use the year that is <ph id="ph1">\#</ph> years before the base year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä vuotta, joka on <ph id="ph1">\#</ph> vuotta ennen perusvuotta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="662">
-          <source>For example, to use the previous year, enter <bpt id="p1">**</bpt>BASE-1<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit käyttää esimerkiksi edellistä vuotta syöttämällä <bpt id="p1">**</bpt>BASE-1<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="663">
-          <source>Enter the actual fiscal year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä toteutunut tilikausi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="664">
-          <source>Period cell</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jakso-solu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="665">
-          <source>The <bpt id="p1">**</bpt>Period<ept id="p1">**</ept> cell identifies the fiscal periods that the column should include.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jakso<ept id="p1">**</ept>-solu määrittää tilikaudet, jonka sarake sisältää.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="666">
-          <source>The period can be relative to the base period that is specified when the report is generated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jakso voi olla suhteessa perusjaksoon, joka määritetään raportin luomisen yhteydessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="667">
-          <source>The following options are available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valittavissa ovat seuraavat vaihtoehdot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="668">
-          <source>Option</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaihtoehto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="669">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="670">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERUS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="671">
-          <source>Use the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä perusjaksoa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="672">
-          <source>BASE+<ph id="ph1">\#</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE+<ph id="ph1">\#</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="673">
-          <source>Use the period that is <ph id="ph1">\#</ph> periods after the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä jaksoa, joka on <ph id="ph1">\#</ph> jaksoa perusjakson jälkeen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="674">
-          <source>For example, to use the third period after the base period, enter <bpt id="p1">**</bpt>BASE+3<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit käyttää esimerkiksi kolmatta jaksoa perusjakson jälkeen syöttämällä <bpt id="p1">**</bpt>BASE+3<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="675">
-          <source>BASE-<ph id="ph1">\#</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE-<ph id="ph1">\#</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="676">
-          <source>Use the period that is <ph id="ph1">\#</ph> periods before the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä jaksoa, joka on <ph id="ph1">\#</ph> jaksoa ennen perusjaksoa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="677">
-          <source>For example, to use the previous period, enter <bpt id="p1">**</bpt>BASE-1<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit käyttää esimerkiksi edellistä jaksoa syöttämällä <bpt id="p1">**</bpt>BASE-1<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="678">
-          <source>BASE-<ph id="ph1">\#</ph>:BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE-<ph id="ph1">\#</ph>:BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="679">
-          <source>Use multiple periods, from several periods before the base period through the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Useiden jaksojen käyttäminen on mahdollista niin, että aloitat useiden jaksojen käyttämisen ennen perusjaksoa ja jatkat perusjaksoon asti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="680">
-          <source>For example, to use the three previous periods and the base period, enter <bpt id="p1">**</bpt>BASE-3:BASE<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat käyttää esimerkiksi kolmea edellistä jaksoa ja perusjaksoa, syötä <bpt id="p1">**</bpt>BASE-3:BASE<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="681">
-          <source>BASE:BASE+<ph id="ph1">\#</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE:BASE+<ph id="ph1">\#</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="682">
-          <source>Use multiple periods, from the base period through several periods after the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Useiden jaksojen käyttäminen on mahdollista niin, että aloitat perusjaksosta ja jatkat käyttämistä useita jaksoja perusjakson jälkeen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="683">
-          <source>For example, to use the base period and the following two periods, enter <bpt id="p1">**</bpt>BASE:BASE+2<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit käyttää esimerkiksi perusjaksoa ja seuraavaa kahta jaksoa syöttämällä <bpt id="p1">**</bpt>BASE:BASE+2<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="684">
-          <source>BASE-<ph id="ph1">\#</ph>:BASE+<ph id="ph2">\#</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE-<ph id="ph1">\#</ph>:BASE+<ph id="ph2">\#</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="685">
-          <source>Use multiple periods, from several periods before the base period to several periods after the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Useiden jaksojen käyttäminen on mahdollista niin, että aloitat useita jaksoja ennen perusjaksoa alkavilla jaksoilla ja jatkat useita jaksoja perusjakson jälkeen jatkuviin jaksoihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="686">
-          <source>For example, to use the three previous periods, the base period, and the following two periods, enter <bpt id="p1">**</bpt>BASE-3:BASE+2<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat käyttää esimerkiksi kolmea edellistä jaksoa, perusjaksoa ja seuraavia kahta jaksoa, syötä <bpt id="p1">**</bpt>BASE-3:BASE+2<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="687">
-          <source>1:BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1:BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="688">
-          <source>Use multiple periods, from the first period through the base period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Useiden jaksojen käyttäminen on mahdollista niin, että aloitat ensimmäisestä jaksosta perusjaksoon asti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="689">
-          <source>Always use a specific period number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä aina tiettyä jaksonumeroa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="690">
-          <source>We don't recommend that you use this option, because it reduces the flexibility of the column definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän toiminnon käyttämistä ei suositella, koska se vähentää sarakkeen määrityksen joustavuutta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="691">
-          <source><ph id="ph1">\#</ph>:<ph id="ph2">\#</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\#</ph>                                      : <ph id="ph2">\#</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="692">
-          <source>Always use a specific range of periods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä aina tiettyä jaksoväliä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="693">
-          <source>We don't recommend that you use this option, because it reduces the flexibility of the column definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän toiminnon käyttämistä ei suositella, koska se vähentää sarakkeen määrityksen joustavuutta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="694">
-          <source>You can go beyond fiscal year boundaries in any of the period specifications, and you can mix years in a range of periods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit siirtyä tilikauden ulkopuolelle minkä tahansa jakson määrityksissä. Voit myös yhdistää jaksoväleissä eri vuosia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="695">
-          <source>For example, you specify the periods as <bpt id="p1">**</bpt>BASE-5<ept id="p1">**</ept> (to represent the past six periods) and run a report that has a base period of 2.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi voit määrittää kausia, jotka on <bpt id="p1">**</bpt>BASE-5<ept id="p1">**</ept> (esittämään viimeisintä kuutta ajanjaksoa) ja ajaa raportin, jossa on peruskautena 2.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="696">
-          <source>In this case, the report shows data for the first two periods of the specified fiscal year and the last four periods of the previous fiscal year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällöin raportissa näkyy tietoja määritetyn tilikauden kahdesta ensimmäisestä kaudesta ja edellisen tilikauden viimeisestä neljästä kaudesta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="697">
-          <source>Specify the periods for an FD column</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD-sarakkeen kausien määrittäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="698">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="699">
-          <source>In an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column, double-click the cell in the <bpt id="p2">**</bpt>Period<ept id="p2">**</ept> row, and then select an option in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta <bpt id="p1">**</bpt>FD<ept id="p1">**</ept>-sarakkeessa <bpt id="p2">**</bpt>Jakso<ept id="p2">**</ept>-rivin solua. Valitse sitten vaihtoehto luettelosta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="700">
-          <source>In the formula bar above the navigation pane, or in the <bpt id="p1">**</bpt>Period<ept id="p1">**</ept> cell, complete the formula.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tee kaava valmiiksi siirtymisruudun yläpuolella olevalla kaavarivillä tai <bpt id="p1">**</bpt>Jakso<ept id="p1">**</ept>-solussa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="701">
-          <source>Replace any number sign (<ph id="ph1">\#</ph>) with the appropriate value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korvaa kaikki numeromerkit (<ph id="ph1">\#</ph>) sopivalla arvolla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="702">
-          <source>Periods Covered cell</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Katetut jaksot -solu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="703">
-          <source>The <bpt id="p1">**</bpt>Periods Covered<ept id="p1">**</ept> cell identifies the amount that the column should display.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Katetut jaksot<ept id="p1">**</ept> -solu määrittää summan, joka näytetään sarakkeessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="704">
-          <source>This amount is relative to the value in the <bpt id="p1">**</bpt>Fiscal Year<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Period<ept id="p2">**</ept> cells for the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä summa on suhteessa sarakkeen <bpt id="p1">**</bpt>Tilikausi<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Jakso<ept id="p2">**</ept>-soluun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="705">
-          <source>The following options are available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valittavissa ovat seuraavat vaihtoehdot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="706">
-          <source>Option</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaihtoehto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="707">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="708">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODIC</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="709">
-          <source>Display the sum of the activity for the current period or range of periods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä nykyisen jakson tai jaksovälin tehtävän summa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="710">
-          <source>PERIODIC/BB</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODIC/BB</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="711">
-          <source>Display the beginning balance for the current period or range of periods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä nykyisen jakson tai jaksovälin alkusaldo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="712">
-          <source>YTD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">YTD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="713">
-          <source>Display the sum of the year-to-date activity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä tehtävän summa vuoden alusta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="714">
-          <source>YTD/BB</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">YTD/BB</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="715">
-          <source>Display the beginning balance for the year.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä vuoden alkusaldo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="716">
-          <source>Specify the periods that are covered for an FD column</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FD-sarakkeen katettujen jaksojen määrittäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="717">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="718">
-          <source>In an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column, double-click the cell in the <bpt id="p2">**</bpt>Periods Covered<ept id="p2">**</ept> row, and select an option in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta <bpt id="p1">**</bpt>FD<ept id="p1">**</ept>-sarakkeessa <bpt id="p2">**</bpt>Katetut jaksot<ept id="p2">**</ept> -rivin solua. Valitse sitten vaihtoehto luettelosta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="719">
-          <source>Attribute filter in a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määrityksen määritesuodatin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="720">
-          <source>Attributes are financial data values that further define an account or transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritteet ovat taloushallinnon tietojen arvoja, jotka määrittävät tilin tai tapahtuman tarkemmin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="721">
-          <source>The account attributes include <bpt id="p1">**</bpt>Asset<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Liability<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Revenue<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Expense<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilimääritteitä ovat <bpt id="p1">**</bpt>Käyttöomaisuus<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Velka<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Tuotto<ept id="p3">**</ept> ja <bpt id="p4">**</bpt>Kulu<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="722">
-          <source>The transaction attributes include <bpt id="p1">**</bpt>Transaction Description<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Transaction Apply Date<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumamääritteitä ovat <bpt id="p1">**</bpt>Tapahtuman kuvaus<ept id="p1">**</ept> ja <bpt id="p2">**</bpt>Tapahtuman käyttöpäivämäärä<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="723">
-          <source>Attribute support might differ between Microsoft Dynamics ERP systems.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritetuki voi vaihdella eri Microsoft Dynamics ERP -järjestelmien kesken.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="724">
-          <source>The <bpt id="p1">**</bpt>Attribute Filter<ept id="p1">**</ept> cell restricts the data in <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> columns to specific values or ranges for attribute categories.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Määritesuodatin<ept id="p1">**</ept>-solu rajoittaa <bpt id="p2">**</bpt>FD<ept id="p2">**</ept>-sarakkeiden tiedot määritettyihin määriteluokkien arvoihin tai alueisiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="725">
-          <source>Although this feature can be used together with an <bpt id="p1">**</bpt>ATTR<ept id="p1">**</ept> column, the <bpt id="p2">**</bpt>ATTR<ept id="p2">**</ept> column isn't required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaikka tätä toimintoa voi käyttää yhdessä <bpt id="p1">**</bpt>ATTR<ept id="p1">**</ept>-sarakkeen kanssa, <bpt id="p2">**</bpt>ATTR<ept id="p2">**</ept>-sarake ei ole pakollinen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="726">
-          <source>In an <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column, there is a limit on the accounts or transactions that the report will include from the attribute filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FD<ept id="p1">**</ept>-sarake sisältää tilien tai tapahtumien rajoituksen, jonka raportti saa määritesuodattimesta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="727">
-          <source>To see which attributes your ERP system supports, see the integration guide for your system.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat tarkistaa, mitä määritteitä ERP-järjestelmäsi tukee, tutustu järjestelmäsi integrointioppaaseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="728">
-          <source>Apply an attribute filter for an FD column on a report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritesuodattimen käyttäminen raportin FD-sarakkeessa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="729">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="730">
-          <source>Double-click the <bpt id="p1">**</bpt>Attribute Filter<ept id="p1">**</ept> cell for an <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta <bpt id="p2">**</bpt>TD<ept id="p2">**</ept>-sarakkeen <bpt id="p1">**</bpt>Määritesuodatin<ept id="p1">**</ept>-solua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="731">
-          <source>In the <bpt id="p1">**</bpt>Attribute Filter<ept id="p1">**</ept> dialog box, double-click a cell in the <bpt id="p2">**</bpt>Attribute<ept id="p2">**</ept> column, and then select the filter type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta <bpt id="p1">**</bpt>Määritesuodatin<ept id="p1">**</ept>-valintaikkunan <bpt id="p2">**</bpt>Määrite<ept id="p2">**</ept>-sarakkeen solua ja valitse sitten haluamasi suodatintyyppi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="732">
-          <source>To further limit the results, enter a range in the <bpt id="p1">**</bpt>From<ept id="p1">**</ept> and <bpt id="p2">**</bpt>To<ept id="p2">**</ept> columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit rajoittaa tuloksia lisää syöttämällä <bpt id="p1">**</bpt>Mistä<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Mihin<ept id="p2">**</ept>-sarakkeiden alue.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="733">
-          <source>The <bpt id="p1">**</bpt>From<ept id="p1">**</ept> cell must contain a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Mistä<ept id="p1">**</ept>-solussa on oltava arvo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="734">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Napsauta <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="735">
-          <source>Example of an attribute filter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritesuodattimen esimerkki</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="736">
-          <source>The following example shows part of a column description that has an account attribute in the <bpt id="p1">**</bpt>Book Code/Attribute Category<ept id="p1">**</ept> row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa esimerkissä esitetään osa sarakkeen kuvausta, joka sisältää tilimääritteen <bpt id="p1">**</bpt>Kirjakoodi/määriteluokka<ept id="p1">**</ept>-rivillä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="737">
-          <source>The attribute filter for this column specifies the range of values to include in the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän sarakkeen määritesuodatin määrittää arvovälin, joka sisällytetään raporttiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="738">
-          <source>A</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="739">
-          <source>B</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">B</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="740">
-          <source>Column Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saraketyyppi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="741">
-          <source>DESC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUV</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="742">
-          <source>FD</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TD</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="743">
-          <source>Book Code/Attribute Category</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjauskoodi/määriteryhmä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="744">
-          <source>ACTUAL</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TOTEUTUNUT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="745">
-          <source>Fiscal Year</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilikausi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="746">
-          <source>BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="747">
-          <source>Period</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kausi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="748">
-          <source>1:BASE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1:BASE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="749">
-          <source>Periods Covered</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Katetut kaudet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="750">
-          <source>PERIODIC</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KAUSITTAINEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="751">
-          <source>...</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">...</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="752">
-          <source>Column Width</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen leveys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="753">
-          <source>30</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">30</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="754">
-          <source>...</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">...</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="755">
-          <source>Attribute Filter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritesuodatin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="756">
-          <source>Reference=<ph id="ph1">\[</ph>01:10<ph id="ph2">\]</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Viite=<ph id="ph1">\[</ph>01:10<ph id="ph2">\]</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="757">
-          <source>Dimension filter in a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen määrityksen dimensiosuodatin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="758">
-          <source>A dimension filter is used to restrict the <bpt id="p1">**</bpt>FD<ept id="p1">**</ept> column to specific dimension values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimensiosuodatinta käytetään rajoitettaessa <bpt id="p1">**</bpt>FD<ept id="p1">**</ept>-sarake tietyille dimensioarvoille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="759">
-          <source>The filter can include a single dimension, a range of dimensions, or a group of dimensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suodatin voi sisältää yksittäisen dimension, dimensioiden alueen tai dimensioryhmän.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="760">
-          <source>The filter can also include dimension value sets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suodatin voi sisältää myös dimensioarvojoukkoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="761">
-          <source>Because dimension values can vary, a ..<ph id="ph1">\\</ph>financial-dimensions<ph id="ph2">\\</ph>dimension-based system doesn't have to correspond to an exact length.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koska dimensioarvot voivat vaihdella, kohteeseen ..<ph id="ph1">\\</ph>financial-dimensions<ph id="ph2">\\</ph>dimension perustuvan järjestelmän ei tarvitse olla tietyn pituinen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="762">
-          <source>The filter is applied, regardless of whether the report includes a reporting tree.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suodatin otetaan käyttöön siitä huolimatta, sisältääkö raportti raportointipuun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="763">
-          <source>You can use a wildcard character (<ph id="ph1">\*</ph> or ?) in any position.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yleismerkkejä (<ph id="ph1">\*</ph> tai?) voi käyttää missä tahansa kohdassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="764">
-          <source>When you specify multiple accounts, put a comma between accounts, as in the following example: +Account=<ph id="ph1">\[</ph>1200<ph id="ph2">\]</ph>, +Account=<ph id="ph3">\[</ph>1100<ph id="ph4">\]</ph>, Department=<ph id="ph5">\[</ph>01?<ph id="ph6">\]</ph> To receive all departments for a specific account, you can exclude the Department dimension from the dimension filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää useita tilejä määritettäessä pilkku tilien väliin, kuten seuraavassa esimerkissä: +Tili=<ph id="ph1">\[</ph>1200<ph id="ph2">\]</ph>, +Tili=<ph id="ph3">\[</ph>1100<ph id="ph4">\]</ph>, Osasto=<ph id="ph5">\[</ph>01?<ph id="ph6">\]</ph> Voit vastaanottaa tietyn tilin kaikki osastot sulkemalla osaston dimension pois dimensiosuodattimesta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="765">
-          <source>For example, both of the following dimension filters are handled in the same way:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi molemmat seuraavista dimensiosuodattimista käsitellään samalla tavalla:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="766">
-          <source>+Account=<ph id="ph1">\[</ph>1100<ph id="ph2">\]</ph>,Department</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">+tili=<ph id="ph1">\[</ph>1100<ph id="ph2">\]</ph>,osasto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="767">
-          <source>+Account=<ph id="ph1">\[</ph>1100<ph id="ph2">\]</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">+tili=<ph id="ph1">\[</ph>1100<ph id="ph2">\]</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="768">
-          <source>You can also use any combination of alphanumeric characters for exact matching, and you can define partial dimensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit käyttää myös mitä tahansa aakkosnumeerisen merkin yhdistelmää tarkassa vastineessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="769">
-          <source>For example, <bpt id="p1">**</bpt>Location = <ph id="ph1">\[</ph>10<ph id="ph2">\*</ph><ph id="ph3">\]</ph><ept id="p1">**</ept> includes all location dimension values that begin with 10.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi <bpt id="p1">**</bpt>Sijainti = <ph id="ph1">\[</ph>10<ph id="ph2">\*</ph><ph id="ph3">\]</ph><ept id="p1">**</ept> sisältää kaikki sijainnin dimensioarvot, jotka alkavat arvolla 10.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="770">
-          <source>Apply a dimension filter for a column on a report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimensiosuodattimen käyttäminen raportin sarakkeessa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="771">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="772">
-          <source>Double-click the <bpt id="p1">**</bpt>Dimension Filter<ept id="p1">**</ept> cell for an <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta <bpt id="p2">**</bpt>FD<ept id="p2">**</ept>-sarakkeen <bpt id="p1">**</bpt>Dimensiosuodatin<ept id="p1">**</ept>-solua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="773">
-          <source>In the <bpt id="p1">**</bpt>Dimensions<ept id="p1">**</ept> dialog box, enter the filters to apply.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä <bpt id="p1">**</bpt>Dimensiot<ept id="p1">**</ept>-valintaikkunaan käytettävät suodattimet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="774">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Napsauta <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="775">
-          <source>Format a multiple-currency report in a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Usean valuutan raportin muotoileminen sarakkeen määrityksessä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="776">
-          <source>A multiple-currency report can display amounts in the ledger's accounting currency, the ledger's reporting, the originating transaction currency, or the translated reporting currency.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Usean valuutan raportti voi näyttää summat kirjanpidon kirjanpitovaluutassa, kirjanpidon raportointivaluutassa, alkuperäisen tapahtuman valuutassa tai muunnetussa raportointivaluutassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="777">
-          <source>A company's accounting currency is defined in the Ledgers setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yrityksen kirjanpitovaluutta määritetään kirjanpidon asetuksissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="778">
-          <source>Don't confuse this setting with the operating system's regional options setting, where you can configure the default currency symbols that are used on reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Älä sekoita tätä asetusta käyttöjärjestelmän järjestelmän alueellisiin asetuksiin, joissa määritetään raporteissa käytettävät oletusvaluutan symbolit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="779">
-          <source>The following currency-related cells are available in the column definition:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavat valuuttaan liittyvät solut ovat käytettävissä sarakkeen määrityksessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="780">
-          <source><bpt id="p1">**</bpt>Currency Display<ept id="p1">**</ept> – Specify the type of currency (accounting, reporting, transaction, or translated reporting) that the transactions are displayed in.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Valuutan näyttö<ept id="p1">**</ept> – määrittää, minkä tyypin valuutassa (kirjanpito, raportointi, tapahtuma tai muunnettu raportointi) tapahtumat näytetään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="781">
-          <source>Translated to a reporting currency functionality is sometimes referred to as currency translation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportointivaluuttaan muuntamistoimintoa kutsutaan joskus valuutan muuntamiseksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="782">
-          <source>Currency translation is the ability to report general ledger amounts in a currency that might not be the functional or reporting currency of the company or the currency that the transaction was entered in.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuutan muunnon avulla kirjanpidon summat voidaan raportoida muussa kuin yrityksen perusvaluutassa tai raportointivaluutassa, jossa tapahtuma annettiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="783">
-          <source><bpt id="p1">**</bpt>Currency Filter<ept id="p1">**</ept> – Specify a currency filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Valuuttasuodatin<ept id="p1">**</ept> – Määritä valuuttasuodatin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="784">
-          <source>Only transactions that are entered in the selected currency are displayed on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vain valitussa valuutassa syötetyt tapahtumat näytetään raportissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="785">
-          <source>To determine a company's accounting currency, follow these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavien vaiheiden avulla voit määrittää yrityksen kirjanpitovaluutan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="786">
-          <source>In Report Designer, on the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> menu, click <bpt id="p2">**</bpt>Companies<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse raporttien suunnitteluohjelman <bpt id="p1">**</bpt>Yritys<ept id="p1">**</ept>-valikosta <bpt id="p2">**</bpt>Yritykset<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="787">
-          <source>In the <bpt id="p1">**</bpt>Companies<ept id="p1">**</ept> dialog box, select a company, and then click <bpt id="p2">**</bpt>View<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Yritykset<ept id="p1">**</ept>-valintaikkunassa yritys. Valitse sitten <bpt id="p2">**</bpt>Näytä<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="788">
-          <source>In the <bpt id="p1">**</bpt>View Company<ept id="p1">**</ept> dialog box, under <bpt id="p2">**</bpt>Regional options<ept id="p2">**</ept>, you can view the currency that is defined for the selected company.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit tarkastella valitulle yritykselle määritettyä valuuttaa <bpt id="p2">**</bpt>Alueelliset asetukset<ept id="p2">**</ept> -kohdan <bpt id="p1">**</bpt>Näytä yritys<ept id="p1">**</ept> -valintaikkunassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="789">
-          <source>Specify the currency on a multiple-currency report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuutan määrittäminen usean valuutan raportissa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="790">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="791">
-          <source>Double-click the <bpt id="p1">**</bpt>Currency Display<ept id="p1">**</ept> cell in the appropriate <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> column, and then select the option for displaying currency information: <bpt id="p3">**</bpt>Ledger accounting currency<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Ledger reporting<ept id="p4">**</ept>, transaction currency, or select to translate to a different reporting currency.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta soveltuvan <bpt id="p2">**</bpt>FD<ept id="p2">**</ept>-sarakkeen <bpt id="p1">**</bpt>Valuutan näyttö<ept id="p1">**</ept> -solua ja valitse valuutan tietojen näyttöasetukseksi <bpt id="p3">**</bpt>Kirjanpitovaluutta<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Kirjanpidon raportointi<ept id="p4">**</ept>, tapahtumavaluutta tai valitse muunto toiseksi raportointivaluutaksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="792">
-          <source>Double-click the <bpt id="p1">**</bpt>Currency Filter<ept id="p1">**</ept> cell in the appropriate <bpt id="p2">**</bpt>FD<ept id="p2">**</ept> column, and then select the appropriate currency code in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaksoisnapsauta soveltuvan <bpt id="p2">**</bpt>FD<ept id="p2">**</ept>-sarakkeen <bpt id="p1">**</bpt>Valuutan suodatin<ept id="p1">**</ept> -solua ja valitse luettelosta soveltuva valuuttakoodi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="793">
-          <source>Only transactions that are entered in this currency are displayed on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vain tässä valuutassa syötetyt tapahtumat näytetään raportissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="794">
-          <source>Example for Currency Display and Currency Filter cells</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuutan näytön ja valuuttasuodattimen solujen esimerkkejä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="795">
-          <source>Phyllis has made the following currency selections in her column definition:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Paula on tehnyt sarakkeen määrityksessä seuraavat valuuttavalinnat:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="796">
-          <source><bpt id="p1">**</bpt>Currency Filter:<ept id="p1">**</ept> Yen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Valuuttasuodatin:<ept id="p1">**</ept> Jeni</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="797">
-          <source><bpt id="p1">**</bpt>Currency Display:<ept id="p1">**</ept> Accounting currency from Ledger (U.S. dollars)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Valuutan näyttö:<ept id="p1">**</ept> kirjanpitovaluutta kirjanpidosta (USA:n dollarit)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="798">
-          <source>Because of the currency filter that Phyllis selected, the report includes only transactions that were entered in Japanese yen (JPY).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Paulan valitsemasta valuuttasuodattimesta johtuen raportissa näkyvät vain tapahtumat, jotka on syötetty Japanin jeneinä (JPY).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="799">
-          <source>Because of the currency display that she selected, the report displays those transactions in the accounting currency, U.S. dollars (USD).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitusta valuutan näyttöasetuksesta johtuen tapahtumat näkyvät raportissa kirjanpitovaluutassa eli Yhdysvaltojen dollareina (USD).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="800">
-          <source>Currency Filter and Currency Display combinations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuuttasuodattimen ja valuutan näytön yhdistelmät</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="801">
-          <source>The following table shows the report results that can occur for various combinations of the options in <bpt id="p1">**</bpt>Currency Display<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Currency Filter<ept id="p2">**</ept> cells because of the selections that Phyllis made.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa taulukossa näytetään tulokset, joita saadaan <bpt id="p1">**</bpt>Valuutan näyttö<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Valuuttasuodatin<ept id="p2">**</ept>-solun erilaisilla yhdistelmillä Paulan tekemien valintojen kanssa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="802">
-          <source>The functional currency is USD.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Perusvaluutta on Yhdysvaltojen dollari (USD).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="803">
-          <source>Currency Display cell</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuutan näyttö -solu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="804">
-          <source>Currency Filter cell</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuuttasuodatin-solu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="805">
-          <source>Report result</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportin tulos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="806">
-          <source>Transaction currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumavaluutta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="807">
-          <source><bpt id="p1">**</bpt>YEN<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>JENI<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="808">
-          <source><bpt id="p1">**</bpt>Y6,000<ept id="p1">**</ept> – The result shows only transactions that were entered in JPY.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>6 000 Y<ept id="p1">**</ept> – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="809">
-          <source>Accounting currency from Ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitovaluutta kirjanpidosta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="810">
-          <source><bpt id="p1">**</bpt>YEN<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>JENI<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="811">
-          <source><bpt id="p1">**</bpt>$60<ept id="p1">**</ept> – The result shows only transactions that were entered in JPY and displays those transactions in USD.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>60 $<ept id="p1">**</ept> – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat, jotka näytetään Yhdysvaltojen dollareina.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="812">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> The conversion rate is approximately 100 JPY per USD.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Huomautus:<ept id="p1">&lt;/strong&gt;</ept> Muuntokurssina käytetään noin 100 jeniä yhtä Yhdysvaltojen dollaria kohti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="813">
-          <source>Accounting currency from Ledger</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Kirjanpitovaluutta kirjanpidosta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="814">
-          <source>Empty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyhjä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="815">
-          <source><bpt id="p1">**</bpt>$2,310<ept id="p1">**</ept> – The result shows all data in the accounting currency that is specified in the Ledger.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>2 310 $<ept id="p1">**</ept> – Tuloksessa näytetään kaikki tiedot kirjanpidossa määritetyssä kirjanpitovaluutassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="816">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> This amount is the sum of all transactions in accounting currency.</source><target logoport:matchpercent="0" state="translated"><bpt id="p1">&lt;strong&gt;</bpt>Huomautus:<ept id="p1">&lt;/strong&gt;</ept> Tämä summa on kaikkien tapahtumien summa kirjanpitovaluutassa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="817">
-          <source>Transaction currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumavaluutta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="818">
-          <source>Empty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyhjä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="819">
-          <source><bpt id="p1">**</bpt>$2,250<ept id="p1">**</ept> – The result shows all amounts in the currency that the transaction was performed in.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>2 250 $<ept id="p1">**</ept> – Tuloksessa näytetään kaikki summat valuutassa, jossa tapahtuma suoritettiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="820">
-          <source>This means the total is adding together amounts from different currencies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä tarkoittaa sitä, että kokonaissummassa eri valuuttojen summat lasketaan yhteen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="821">
-          <source>Calculation column in a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskenta-sarake sarakkeen määrityksessä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="822">
-          <source>A column type of <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> in a column definition supports complex calculations in the <bpt id="p2">**</bpt>Formula<ept id="p2">**</ept> cell, and can include the <bpt id="p3">**</bpt><ph id="ph1">+</ph><ept id="p3">**</ept>, <bpt id="p4">**</bpt><ph id="ph2">-</ph><ept id="p4">**</ept>, <bpt id="p5">**</bpt><ph id="ph3">\*</ph><ept id="p5">**</ept>, and <bpt id="p6">**</bpt><ph id="ph4">/</ph><ept id="p6">**</ept> operators, and also <bpt id="p7">**</bpt>IF/THEN/ELSE<ept id="p7">**</ept> statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen tyyppi <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> sarakemäärityksessä tukee monimutkaisia laskelmia <bpt id="p2">**</bpt>Kaava<ept id="p2">**</ept>-solussa ja siinä voi olla operaattorit <bpt id="p3">**</bpt><ph id="ph1">+</ph><ept id="p3">**</ept>, <bpt id="p4">**</bpt><ph id="ph2">-</ph><ept id="p4">**</ept>, <bpt id="p5">**</bpt><ph id="ph3">\*</ph><ept id="p5">**</ept>,<bpt id="p6">**</bpt><ph id="ph4">/</ph><ept id="p6">**</ept> sekä lausekkeet <bpt id="p7">**</bpt>IF/THEN/ELSE<ept id="p7">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="823">
-          <source>A calculation column can also refer to any other column, even subsequent columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskenta-sarake, voi myös viitata toiseen sarakkeeseen, myös seuraaviin sarakkeisiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="824">
-          <source>Additionally, a calculation column can also include the fiscal year and period to support headers for the column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskelmasarake voi myös sisältää tilikauden ja jakson, jotka tukevat sarakkeen otsikoita.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="825">
-          <source>The calculation formula can be up to 1,024 characters long.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskentakaavan pituus voi olla enintään 1 024 merkkiä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="826">
-          <source>To express the calculation result as a percentage, use a special format override.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytä erityistä muotoilun ohitusta, jos haluat esittää laskutoimituksen tuloksen prosenttilukuna.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="827">
-          <source>The results of calculation formulas don't include the values in non-printing column ranges.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaavojen laskemisen tulokset eivät sisällä arvoja tulostumattomista sarakealueista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="828">
-          <source>For example, <bpt id="p1">**</bpt>A:D<ept id="p1">**</ept> prints <bpt id="p2">**</bpt>0<ept id="p2">**</ept> (zero), whereas <bpt id="p3">**</bpt>A+B+C<ept id="p3">**</ept> for non-printing values calculates the value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi <bpt id="p1">**</bpt>A:D<ept id="p1">**</ept> tulostaa <bpt id="p2">**</bpt>0<ept id="p2">**</ept> (nolla) -arvon, kun taas piilotettujen arvojen <bpt id="p3">**</bpt>A+B+C<ept id="p3">**</ept> tulostaa arvon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="829">
-          <source>Operators in calculation columns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskentasarakkeiden operaattorit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="830">
-          <source>To add, subtract, multiply, or divide columns, enter the column letters in the order of computation, and then use the appropriate operator to separate each column letter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit lisätä, vähentää, kertoa ja jakaa sarakkeita syöttämällä sarakkeiden kirjaimet laskentajärjestyksessä ja syöttämällä kirjainten väliin sopivan operaattorin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="831">
-          <source>The following table explains the operators that you can use in a calculation column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa taulukossa esitellään laskentasarakkeessa käytettävät operaattorit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="832">
-          <source>Operator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operaattori</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="833">
-          <source>Example calculation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkkilaskutoimitus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="834">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="835">
-          <source>A+C</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A+C</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="836">
-          <source>Add the amount in column A to the amount in column C.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laske sarakkeen A ja sarakkeen C summa yhteen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="837">
-          <source>:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="838">
-          <source>A:C A:C-D</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A:C A:C-D</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="839">
-          <source>Add a range of consecutive columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisää peräkkäiset sarakkeet toisiinsa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="840">
-          <source>For example, the formula <bpt id="p1">**</bpt>A:C<ept id="p1">**</ept> adds the sums of columns A through C, and the formula <bpt id="p2">**</bpt>A:C-D<ept id="p2">**</ept> adds the sums of columns A through C, and then subtracts the amount in column D.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi kaava <bpt id="p1">**</bpt>A:C<ept id="p1">**</ept> laskee sarakkeiden A–C summat yhteen, kun taas kaava <bpt id="p2">**</bpt>A:C-D<ept id="p2">**</ept> laskee sarakkeiden A–C summat yhteen ja vähentää sitten sarakkeen D summan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="841">
-          <source>A-C</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">A-C</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="842">
-          <source>Subtract the amount in column A from the amount in column C.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Vähentää sarakkeen A arvosta sarakkeen C arvon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="843">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Note:<ept id="p1">&lt;/strong&gt;</ept> You can also use the minus sign (-) to reverse the signs in a column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Huomautus:<ept id="p1">&lt;/strong&gt;</ept> Voit myös käyttää miinusmerkkiä (-) sarakkeen etumerkin vaihtamiseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="844">
-          <source>For example, use <bpt id="p1">&lt;strong&gt;</bpt>-A+B<ept id="p1">&lt;/strong&gt;</ept> to add the reverse of the amount in column A to the amount in column B.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi <bpt id="p1">&lt;strong&gt;</bpt>-A+B<ept id="p1">&lt;/strong&gt;</ept> lisää sarakkeen A käänteisen summan sarakkeen B summaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="845">
-          <source>A<ph id="ph1">\*</ph>C</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A<ph id="ph1">\*</ph>C</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="846">
-          <source>Multiply the amount in column A by the amount in column C.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kerro sarakkeen A summa sarakkeen C summalla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="847">
-          <source>A/C</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">A/C</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="848">
-          <source>Divide the amount in column A by the amount in column C.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jaa sarakkeen A summa sarakkeen C summalla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="849">
-          <source>Use a calculation formula in a column definition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskentakaavan käyttäminen sarakkeen määrityksessä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="850">
-          <source>In Report Designer, open the column definition to modify.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="851">
-          <source>In the appropriate <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept> column, enter a formula in the <bpt id="p2">**</bpt>Formula<ept id="p2">**</ept> cell.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä kaava soveltuvaan <bpt id="p1">**</bpt>CALC<ept id="p1">**</ept>-sarakkeen <bpt id="p2">**</bpt>Kaava<ept id="p2">**</ept>-soluun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="852">
-          <source>Complex calculations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Monimutkaiset laskutoimitukset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="853">
-          <source>A complex calculation can contain any combination of cell references, operators, values, and levels of nested parentheses.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Monimutkainen laskutoimitus voi sisältää minkä tahansa solun viitteiden, operaattorien, arvojen ja sisäkkäisten sulkeiden tasojen yhdistelmän.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="854">
-          <source>For example, to compute the average of columns A and B, use the calculation formula <bpt id="p1">**</bpt>((A+B)/2)<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit esimerkiksi laskea sarakkeiden A ja B keskiarvon käyttämällä laskentakaavaa <bpt id="p1">**</bpt>((A+B)/2)<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="855">
-          <source>Specify report cells in a column calculation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportin solujen määrittäminen sarakelaskelmassa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="856">
-          <source>You can refer to a specific report cell by entering a column letter and a row code.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit viitata raportin tiettyyn soluun syöttämällä sarakkeen kirjaimen ja rivin koodi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="857">
-          <source>For example, <bpt id="p1">**</bpt>B.100<ept id="p1">**</ept> refers to row code 100 in column B. You can divide a whole column by a specific report cell amount that is in the same column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi <bpt id="p1">**</bpt>B.100<ept id="p1">**</ept> viittaa rivin koodiin 100 sarakkeessa B. Voit jakaa koko sarakkeen raportin samassa sarakkeessa olevan tietyn solun summalla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="858">
-          <source>For example, the calculation <bpt id="p1">**</bpt>B/B.100<ept id="p1">**</ept> means that the amount in column B should be divided by the value in row code 100 in column B. If the calculation refers to a column that depends on another column, the dependent column is resolved first.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi <bpt id="p1">**</bpt>B/B.100<ept id="p1">**</ept>-laskutoimitus tarkoittaa, että sarakkeen B summa tulee jakaa sarakkeen B rivin koodin 100 mukaisella summalla. Jos laskutoimitus viittaa toisesta sarakkeesta riippuvaan sarakkeeseen, riippuvainen sarake ratkaistaan ensin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="859">
-          <source>If you refer a column to another column that refers back to the first column, you will cause a circular reference error.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos sarakkeeseen viitataan sarakkeessa, joka viittaa ensimmäiseen sarakkeeseen, tuloksena saadaan kehäviittausvirhe.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="860">
-          <source>The calculation might be incorrect if you change the calculation priority for the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä laskelma saattaa olla virheellinen, jos muokkaat raportin laskentaprioriteettia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="861">
-          <source>You can set the calculation priority on the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> tab of the report definition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää laskennan prioriteetin raportin määrityksen <bpt id="p1">**</bpt>Asetukset<ept id="p1">**</ept>-välilehdessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="862">
-          <source>Multiply or divide a column by a base row</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen kertominen tai jakaminen perusrivillä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="863">
-          <source>You can create a column that displays all the values in a specified column as a percentage of a base number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit luoda sarakkeen, joka näyttää kaikki määritetyn sarakkeen arvot perusnumeron prosenttilukuna.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="864">
-          <source>Therefore, you can show relationships between rows, such as a percentage of a sales row or a percentage of a total expenses row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit siis näyttää rivien väliset suhteet, kuten myyntirivin tai kokonaiskulujen rivin prosenttiosuuden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="865">
-          <source>To multiply or divide each row in a specific column by a base row, enter the column to use in the calculation, and then enter <bpt id="p1">**</bpt><ph id="ph1">\*</ph>BASEROW<ept id="p1">**</ept> or <bpt id="p2">**</bpt>/BASEROW<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kertoa tai jakaa kunkin rivin tietyllä perusrivin sarakkeella, kun syötät laskutoimituksessa käytettävän sarakkeen ja sitten <bpt id="p1">**</bpt><ph id="ph1">\*</ph>BASEROW<ept id="p1">**</ept>- tai <bpt id="p2">**</bpt>/BASEROW<ept id="p2">**</ept>-arvon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="866">
-          <source>For example, enter <bpt id="p1">**</bpt>C<ph id="ph1">\*</ph>BASEROW<ept id="p1">**</ept> or <bpt id="p2">**</bpt>C/BASEROW<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syötä esimerkiksi <bpt id="p1">**</bpt>C<ph id="ph1">\*</ph>BASEROW<ept id="p1">**</ept> tai <bpt id="p2">**</bpt>C/BASEROW<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="867">
-          <source>When you use a base row calculation in a column definition, make sure that each row definition that is used with this column definition contains at least one base row for calculations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun käytät perusrivilaskentaa sarakemäärityksessä, varmista, että kaikilla tämän sarakemäärityksen kanssa käytettävillä rivimäärityksillä on ainakin yksi perusrivi laskentaa varten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="868">
-          <source>Divide the amount in a column by the number of periods</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeen summan jakaminen jaksojen määrällä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="869">
-          <source>You can divide the amount in a column by a specified number of periods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit jakaa sarakkeen summan määritetyllä jaksojen määrällä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="870">
-          <source>For example, the formula <bpt id="p1">**</bpt>B/Periods<ept id="p1">**</ept> divides the value in column B by the number of periods in column B. If the calculation spans multiple columns, specify the number of periods to use in the calculation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi <bpt id="p1">**</bpt>B/Jaksot<ept id="p1">**</ept>-kaava jakaa sarakkeen B arvon sarakkeen B jaksojen määrällä. Jos laskutoimitukseen otetaan mukaan useita sarakkeita, määritä jaksojen määrä, jota käytetään laskutoimituksessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="871">
-          <source>For example, the formula <bpt id="p1">**</bpt>(B+C)/Periods<ept id="p1">**</ept> adds the amounts in column B and column C, and then divides the result by the period value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi <bpt id="p1">**</bpt>(B+C)/Jaksot<ept id="p1">**</ept>-kaava laskee sarakkeen B ha C summat yhteen ja jakaa tuloksen jakson arvolla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="872">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisäresurssit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="873">
-          <source><bpt id="p1">[</bpt>Row definitions in financial reporting<ept id="p1">](row-definitions-financial-reporting.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Talousraporttien rivimääritykset<ept id="p1">](row-definitions-financial-reporting.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="874">
-          <source><bpt id="p1">[</bpt>Advanced formatting options in financial reporting<ept id="p1">](advanced-formatting-options-financial-reporting.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Muotoilun lisäasetukset taloushallinnon raporteissa<ept id="p1">](advanced-formatting-options-financial-reporting.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Talousraporttien sarakemääritykset
+description: Tässä artikkelissa on tietoja sarakemäärityksistä. Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön. Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+ms.search.form: FinancialReports
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 106601
+ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
+ms.search.region: Global
+ms.author: aolson
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bb08833cca843c370e2c845bce56d6f5a8b5f2ed
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595336"
+---
+# <a name="column-definitions-in-financial-reports"></a><span data-ttu-id="2c7b9-105">Talousraporttien sarakemääritykset</span><span class="sxs-lookup"><span data-stu-id="2c7b9-105">Column definitions in financial reports</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="2c7b9-106">Tässä artikkelissa on tietoja sarakemäärityksistä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-106">This article provides information about column definitions.</span></span> <span data-ttu-id="2c7b9-107">Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-107">A column definition is a report component, or building block, that defines the contents of columns on a report.</span></span> <span data-ttu-id="2c7b9-108">Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-108">Like row definitions, basic column definitions can be used on multiple reports.</span></span>
+
+## <a name="create-and-modify-a-column-definition"></a><span data-ttu-id="2c7b9-109">Sarakkeen määrityksen luominen ja muokkaaminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-109">Create and modify a column definition</span></span>
+
+<span data-ttu-id="2c7b9-110">Sarakkeen määritys voi sisältää 2–255 saraketta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-110">A column definition can contain two to 255 columns.</span></span>
+
+### <a name="create-a-column-definition"></a><span data-ttu-id="2c7b9-111">Sarakkeen määrityksen luominen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-111">Create a column definition</span></span>
+
+1. <span data-ttu-id="2c7b9-112">Valitse Report Designer -ohjelman siirtymisruudussa **Sarakkeiden määritykset**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-112">In Report Designer, in the navigation pane, click **Column Definitions**.</span></span>
+2. <span data-ttu-id="2c7b9-113">Valitse **Tiedosto**-valikossa **Uusi** ja valitse sitten **Sarakkeen määritys**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-113">On the **File** menu, click **New**, and then click **Column Definition**.</span></span>
+3. <span data-ttu-id="2c7b9-114">Lisää sarakkeen määrityksen sisältö.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-114">Add the contents of the column definition.</span></span>
+
+### <a name="open-a-column-definition"></a><span data-ttu-id="2c7b9-115">Sarakkeen määrityksen avaaminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-115">Open a column definition</span></span>
+
+1. <span data-ttu-id="2c7b9-116">Valitse Report Designer -ohjelman siirtymisruudussa **Sarakkeiden määritykset**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-116">In Report Designer, in the navigation pane, click **Column Definitions**.</span></span>
+2. <span data-ttu-id="2c7b9-117">Avaa sarakkeen määritys kaksoisnapsauttamalla sitä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-117">Double-click a column definition to open it.</span></span>
+
+### <a name="add-a-column-to-a-column-definition"></a><span data-ttu-id="2c7b9-118">Sarakkeen lisääminen sarakemääritykseen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-118">Add a column to a column definition</span></span>
+
+1. <span data-ttu-id="2c7b9-119">Valitse Report Designerissa **Sarakkeiden määritykset** ja avaa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-119">In Report Designer, click **Column Definitions**, and then open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-120">Valitse sarake, johon uusi sarake lisätään.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-120">Select the column where a new column should be inserted.</span></span>
+3. <span data-ttu-id="2c7b9-121">Valitse **Muokkaa**-valikossa **Lisää sarake**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-121">On the **Edit** menu, click **Insert Column**.</span></span> <span data-ttu-id="2c7b9-122">Uusi sarake näkyy valitsemasi sarakkeen vasemmalla puolella.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-122">The new column appears to the left of the column that you selected.</span></span>
+
+### <a name="delete-a-column-from-a-column-definition"></a><span data-ttu-id="2c7b9-123">Sarakkeen poistaminen sarakemäärityksestä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-123">Delete a column from a column definition</span></span>
+
+1. <span data-ttu-id="2c7b9-124">Valitse raporttien suunnitteluohjelmassa **Sarakemääritykset** ja avaa sen jälkeen muokattava sarakemääritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-124">In Report Designer, click **Column Definitions**, and then open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-125">Valitse poistettava sarake.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-125">Select the column to delete.</span></span>
+3. <span data-ttu-id="2c7b9-126">Valitse **Muokkaa**-valikosta **Poista sarake**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-126">On the **Edit** menu, click **Delete Column**.</span></span>
+
+## <a name="contents-of-a-column-definition"></a><span data-ttu-id="2c7b9-127">Sarakemäärityksen sisältö</span><span class="sxs-lookup"><span data-stu-id="2c7b9-127">Contents of a column definition</span></span>
+<span data-ttu-id="2c7b9-128">Sarakkeen määritys sisältää seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="2c7b9-128">A column definition includes the following information:</span></span>
+
+- <span data-ttu-id="2c7b9-129">Kuvausten sarake rivin määrityksessä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-129">A column of the descriptions for the row definition</span></span>
+- <span data-ttu-id="2c7b9-130">Summasarakkeet, joissa on taloushallinnon tiedot, tai laskutoimitukset, jotka perustuvat sarakkeen määrityksen muihin tietoihin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-130">Amount columns that show data from the financial data or calculations that are based on other data in the column definition</span></span>
+- <span data-ttu-id="2c7b9-131">Sarakkeiden muotoilu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-131">Formatting columns</span></span>
+- <span data-ttu-id="2c7b9-132">Määritesarakkeet</span><span class="sxs-lookup"><span data-stu-id="2c7b9-132">Attribute columns</span></span>
+
+<span data-ttu-id="2c7b9-133">Nämä tiedot näkyvät seuraavilla sarakkeen määrityksen alueilla:</span><span class="sxs-lookup"><span data-stu-id="2c7b9-133">This information appears in the following areas in the column definition:</span></span>
+
+- <span data-ttu-id="2c7b9-134">Sarakkeen määrityksen otsikon alue sisältää otsikon tekstin ja raportin muotoilun.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-134">The headers area of the column definition contains the heading text and formatting that appears in the report.</span></span> <span data-ttu-id="2c7b9-135">Otsikko voi koskea yhtä tai useaa tietosaraketta, tai se voi koskea sarakkeita ehdollisesti.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-135">A header can apply to a single column of data, can span multiple columns, or can apply to columns on a conditional basis.</span></span> <span data-ttu-id="2c7b9-136">Sarakemääritys voi sisältää niin monta sarakeotsikkoriviä kuin on tarpeen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-136">The column definition can include as many column header rows as you require.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="2c7b9-137">Sarakeotsikot koskevat raportin tietojen jokaista saraketta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-137">Column headers apply to each column of data on the report.</span></span> <span data-ttu-id="2c7b9-138">Raporttiotsikot koskevat koko raporttia.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-138">Report headers apply to the whole report.</span></span> <span data-ttu-id="2c7b9-139">Voit määrittää raportin otsikot raportin määrityksen **Ylä- ja alatunnisteet** -välilehdessä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-139">You define report headers on the **Headers and Footers** tab of the report definition.</span></span>
+
+- <span data-ttu-id="2c7b9-140">Sarakkeiden tietorivit sijaitsevat sarakkeen määrityksen otsikoiden rivien alla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-140">Column detail rows are the rows under the header rows in the column definition.</span></span> <span data-ttu-id="2c7b9-141">Sarakkeiden tietorivit määrittävät raportin tiedot.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-141">Column detail rows define the information that is included on the report.</span></span> <span data-ttu-id="2c7b9-142">Seuraavassa taulukossa luetellaan sarakkeiden tietorivit.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-142">The following table lists and describes the column detail rows.</span></span>
+
+    | <span data-ttu-id="2c7b9-143">Sarakkeen tietorivin nimi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-143">Column detail row name</span></span>                                                | <span data-ttu-id="2c7b9-144">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-144">Description</span></span>                                                                                            |
+    |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+    | <span data-ttu-id="2c7b9-145">Sarakelaji</span><span class="sxs-lookup"><span data-stu-id="2c7b9-145">Column Type</span></span>                                                           | <span data-ttu-id="2c7b9-146">(Pakollinen) Määritä sarakkeen tietojen tyyppi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-146">(Required) Specify the type of data in the column.</span></span>                                                     |
+    | <span data-ttu-id="2c7b9-147">Kirjakoodi/määriteluokka</span><span class="sxs-lookup"><span data-stu-id="2c7b9-147">Book Code/Attribute Category</span></span>                                          | <span data-ttu-id="2c7b9-148">Määritä **FD**- ja **ATTR**-tyypin sarakkeiden taloushallinnon tiedot.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-148">Specify financial data information for columns of the **FD** and **ATTR** types.</span></span>                       |
+    | <span data-ttu-id="2c7b9-149">Tilikausi, Katetut jaksot</span><span class="sxs-lookup"><span data-stu-id="2c7b9-149">Fiscal Year Period Periods Covered</span></span>                                    | <span data-ttu-id="2c7b9-150">Määritä **FD**-tyypin sarakkeiden taloushallinnon tiedot.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-150">Specify financial data information for columns of the **FD** type.</span></span>                                     |
+    | <span data-ttu-id="2c7b9-151">Resepti</span><span class="sxs-lookup"><span data-stu-id="2c7b9-151">Formula</span></span>                                                               | <span data-ttu-id="2c7b9-152">Määritä **CALC**-tyypin sarakkeiden laskentakaava.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-152">Specify a calculation formula for columns of the **CALC** type.</span></span>                                        |
+    | <span data-ttu-id="2c7b9-153">Sarakkeen leveys, Lisävälilyönnit ennen saraketta, Muotoilun ohitus, Tulostuksen hallinta</span><span class="sxs-lookup"><span data-stu-id="2c7b9-153">Column Width Extra Spaces Before Column Format Override Print Control</span></span> | <span data-ttu-id="2c7b9-154">Määritä erikoismuotoiluasetukset.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-154">Specify special format options.</span></span>                                                                        |
+    | <span data-ttu-id="2c7b9-155">Sarakkeen rajoitukset</span><span class="sxs-lookup"><span data-stu-id="2c7b9-155">Column Restrictions</span></span>                                                   | <span data-ttu-id="2c7b9-156">Rajoita tietoja.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-156">Restrict data.</span></span>                                                                                         |
+    | <span data-ttu-id="2c7b9-157">Raportoinnin yksikkö</span><span class="sxs-lookup"><span data-stu-id="2c7b9-157">Reporting Unit</span></span>                                                        | <span data-ttu-id="2c7b9-158">Rajoita saraketta niin, että sarakkeessa näkyvät vain tietyn raportoinnin yksikön tiedot.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-158">Restrict the column, so that it shows data only for the specified reporting unit.</span></span>                      |
+    | <span data-ttu-id="2c7b9-159">Valuutan näyttö, Valuuttasuodatin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-159">Currency Display Currency Filter</span></span>                                      | <span data-ttu-id="2c7b9-160">Muotoile valuuttaa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-160">Format currency.</span></span>                                                                                       |
+    | <span data-ttu-id="2c7b9-161">Dimensiosuodatin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-161">Dimension Filter</span></span>                                                      | <span data-ttu-id="2c7b9-162">Määritä tietojen rajoituksessa käytettävä suodatin tietyille taloushallinnon tietojen raportoinnin yksiköille.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-162">Specify a filter to restrict data to certain financial data reporting units.</span></span>                           |
+    | <span data-ttu-id="2c7b9-163">Määritesuodatin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-163">Attribute Filter</span></span>                                                      | <span data-ttu-id="2c7b9-164">Määritä taloushallinnon tietojen rajoituksessa käytettävä suodatin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-164">Specify a filter to restrict the financial data.</span></span>                                                       |
+    | <span data-ttu-id="2c7b9-165">Alkamispäivämäärä, Päättymispäivämäärä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-165">Start Date End Date</span></span>                                                   | <span data-ttu-id="2c7b9-166">Rajoita taloushallinnon tiedot tietyille päivämäärille.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-166">Restrict the financial data to specific dates.</span></span>                                                         |
+    | <span data-ttu-id="2c7b9-167">Perustelu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-167">Justification</span></span>                                                         | <span data-ttu-id="2c7b9-168">Tasaa rivin määrityksessä määritetty kuvausteksti vasemmalle tai oikealle tai keskitä se.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-168">Left-align, center-align, or right-align the description text that is specified in the row definition.</span></span> |
+
+## <a name="column-restrictions-in-a-column-definition"></a><span data-ttu-id="2c7b9-169">Sarakkeen rajoitukset sarakkeen määrityksessä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-169">Column restrictions in a column definition</span></span>
+<span data-ttu-id="2c7b9-170">Voit käyttää sarakkeen rajoituksia määrittäessäsi, miten sarakkeen määritys käyttää tietoja tai laskee ne.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-170">You can use column restrictions to specify how a column definition uses data or calculates information.</span></span> <span data-ttu-id="2c7b9-171">Voit myös rajata raportin sarakkeen koskemaan tiettyä yksikköä tai tiettyjä päivämääriä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-171">You can also restrict a report column to a specific unit or for specific dates.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="2c7b9-172">**Sarakerajoitus**-koodi korvaa minkä tahansa rivimäärityksen kanssa ristiriidassa olevan asetuksen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-172">A **Column Restriction** code overrides any conflicting setting that is assigned in the row definition.</span></span>
+
+### <a name="column-restrictions-cell"></a><span data-ttu-id="2c7b9-173">Sarakkeen rajoitukset -solu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-173">Column Restrictions cell</span></span>
+
+<span data-ttu-id="2c7b9-174">**Sarakkeen rajoitukset** -solu voi sisältää koodeja, jotka rajoittavat tai piilottavat tietoja, kuten rivin muotoilua tai sarakkeen tietoja ja summia.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-174">The **Column Restrictions** cell can include codes that restrict or suppress information, such as row formatting, details, and amounts, for that column.</span></span>
+
+#### <a name="add-a-column-restriction-in-a-column-definition"></a><span data-ttu-id="2c7b9-175">Sarakkeen rajoituksen lisääminen sarakkeen määritykseen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-175">Add a column restriction in a column definition</span></span>
+
+1. <span data-ttu-id="2c7b9-176">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-176">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-177">Kaksoisnapsauta rajoitettavan sarakkeen **Sarakkeen rajoitukset** -solua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-177">Double-click the **Column Restrictions** cell for the column to restrict.</span></span>
+3. <span data-ttu-id="2c7b9-178">Valitse **Sarakkeen rajoitukset** -valintaikkunan luettelosta yksi koodi tai useita koodeja ja valitse sitten **OK**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-178">In the **Column Restrictions** dialog box, select one or more codes in the list, and then click **OK**.</span></span>
+
+### <a name="column-restriction-codes"></a><span data-ttu-id="2c7b9-179">Sarakerajoituskoodit</span><span class="sxs-lookup"><span data-stu-id="2c7b9-179">Column restriction codes</span></span>
+
+<span data-ttu-id="2c7b9-180">Seuraavassa taulukossa esitellään sarakkeen rajoituksen koodit.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-180">The following table describes the column restriction codes.</span></span>
+
+| <span data-ttu-id="2c7b9-181">Sarakkeen rajoituksen koodi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-181">Column restriction code</span></span> | <span data-ttu-id="2c7b9-182">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-182">Description</span></span> |
+|-------------------------|-------------|
+| <span data-ttu-id="2c7b9-183">SU</span><span class="sxs-lookup"><span data-stu-id="2c7b9-183">SU</span></span>                      | <span data-ttu-id="2c7b9-184">Piilottaa sarakkeen alaviivan, jos alaviivan komento (**---**) tai kaksoisalaviivan komento (**===**) on syötetty rivin määritykseen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-184">Suppress the underscore for a column where either an underscore command (**---**) or a double underscore command (**===**) is entered in the row definition.</span></span> <span data-ttu-id="2c7b9-185">Tämän voi tehdä, jos et halua alaviivaa prosenttilaskennan luomien summien kohdalle.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-185">For example, you might not want to underline amounts that are produced by a percentage calculation.</span></span> |
+| <span data-ttu-id="2c7b9-186">ST</span><span class="sxs-lookup"><span data-stu-id="2c7b9-186">ST</span></span>                      | <span data-ttu-id="2c7b9-187">Piilottaa kokonaissummat niin, että vain tiedot näytetään sarakkeessa (esimerkiksi tilastosarakkeessa).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-187">Suppress totals, so that only details are shown in the column (for example, a statistical column).</span></span> |
+| <span data-ttu-id="2c7b9-188">SD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-188">SD</span></span>                      | <span data-ttu-id="2c7b9-189">Piilota tiedot niin, että sarakkeessa näytetään vain **TOT**- ja **CAL**-rivi (rivin määrityksestä).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-189">Suppress details, so that only **TOT** and **CAL** rows (from the row definition) are shown in the column.</span></span> |
+| <span data-ttu-id="2c7b9-190">PR</span><span class="sxs-lookup"><span data-stu-id="2c7b9-190">DR</span></span>                      | <span data-ttu-id="2c7b9-191">Rajoita **FD**-sarakkeen summat debet-summiin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-191">Restrict the amounts in an **FD** column to debit amounts.</span></span> |
+| <span data-ttu-id="2c7b9-192">CR</span><span class="sxs-lookup"><span data-stu-id="2c7b9-192">CR</span></span>                      | <span data-ttu-id="2c7b9-193">Rajoita **FD**-sarakkeen summat kredit-summiin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-193">Restrict the amounts in an **FD** column to credit amounts.</span></span> |
+| <span data-ttu-id="2c7b9-194">ADJ</span><span class="sxs-lookup"><span data-stu-id="2c7b9-194">ADJ</span></span>                     | <span data-ttu-id="2c7b9-195">Rajoita sarakkeen summat kauden oikaisusummiin, jos summia ovat käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-195">Restrict the amounts in the column to period adjustment amounts, if these amounts are available.</span></span> |
+| <span data-ttu-id="2c7b9-196">XAD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-196">XAD</span></span>                     | <span data-ttu-id="2c7b9-197">Rajoita sarakkeen summat niin, että kauden oikaisusummat suljetaan pois.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-197">Restrict the amounts in the column, so that period adjustment amounts are excluded.</span></span> |
+| <span data-ttu-id="2c7b9-198">SS</span><span class="sxs-lookup"><span data-stu-id="2c7b9-198">PT</span></span>                      | <span data-ttu-id="2c7b9-199">Rajoita sarakkeen summat niin, että vain kirjatut tapahtumat sisällytetään, jos tapahtumia on käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-199">Restrict the amounts in the column, so that only posted transactions are included, if these transactions are available.</span></span> |
+| <span data-ttu-id="2c7b9-200">UPT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-200">UPT</span></span>                     | <span data-ttu-id="2c7b9-201">Rajoita sarakkeen summat niin, että vain kirjaamattomat tapahtumat sisällytetään, jos tapahtumia on käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-201">Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.</span></span><p><span data-ttu-id="2c7b9-202"><strong>Huomautus:</strong> Kaikki tietopalvelut eivät tue kirjaamattomia tapahtumia.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-202"><strong>Note:</strong> Not all data providers support unposted transactions.</span></span> <span data-ttu-id="2c7b9-203">Lisätietoja on Microsoft Dynamics ERP -järjestelmän <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>tietojen integrointioppaassa</a>.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-203">For more information, see the <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>data integration guide</a> for your Microsoft Dynamics ERP system.</span></span></p> |
+
+### <a name="restrict-a-column-to-a-reporting-unit"></a><span data-ttu-id="2c7b9-204">Sarakkeen rajoittaminen raportoinnin yksikköön</span><span class="sxs-lookup"><span data-stu-id="2c7b9-204">Restrict a column to a reporting unit</span></span>
+
+1. <span data-ttu-id="2c7b9-205">Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-205">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-206">Kaksoisnapsauta rajoitettavan sarakkeen **Raportoinnin yksikkö** -solua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-206">Double-click the **Reporting Unit** cell for the column to restrict.</span></span>
+3. <span data-ttu-id="2c7b9-207">Valitse **Raportoinnin yksikön valinta** -valintaikkunan **Raportointipuu**-luettelosta puu.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-207">In the **Reporting Unit Selection** dialog box, in the **Reporting tree** list, select a tree.</span></span>
+4. <span data-ttu-id="2c7b9-208">Laajenna tai tiivistä yksikköluettelo, valitse raportoinnin yksikkö ja valitse sitten **OK**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-208">Expand or collapse the list of units, select a reporting unit, and then click **OK**.</span></span>
+
+## <a name="format-column-headers"></a><span data-ttu-id="2c7b9-209">Sarakeotsikoiden muotoileminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-209">Format column headers</span></span>
+<span data-ttu-id="2c7b9-210">Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä otsikoita.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-210">You can add, modify, and delete the headers that appear at the top of the columns on a report.</span></span> <span data-ttu-id="2c7b9-211">Voit määrittää myös ehdollisen koonnin sarakeotsikoita sarakkeiden määritysten **Jakso**-kentän ja raporttien määritysten **Perusjakso**-kentän perusteella.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-211">You can also configure conditional spanning column headers, based on the **Period** field from column definitions and the **Base Period** field from report definitions.</span></span> <span data-ttu-id="2c7b9-212">Perusjaksotoiminto säästää aikaa vaiheittaisten ennusteraporttien luomisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-212">The base period feature helps save you time when you create rolling forecast reports.</span></span>
+
+### <a name="create-and-manage-column-headers"></a><span data-ttu-id="2c7b9-213">Sarakeotsikoiden luominen ja hallinta</span><span class="sxs-lookup"><span data-stu-id="2c7b9-213">Create and manage column headers</span></span>
+
+<span data-ttu-id="2c7b9-214">Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä otsikoita **Sarakeotsikko**-valintaikkunassa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-214">You can use the **Column Header** dialog box to add, modify, and delete the headers that appear at the top of the columns on a report.</span></span> <span data-ttu-id="2c7b9-215">Seuraavassa taulukossa esitellään **Sarakeotsikot**-valintaikkunan kentät.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-215">The following table describes the fields in the **Column Header** dialog box.</span></span>
+
+| <span data-ttu-id="2c7b9-216">Kenttä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-216">Field</span></span>                 | <span data-ttu-id="2c7b9-217">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-217">Description</span></span> |
+|-----------------------|-------------|
+| <span data-ttu-id="2c7b9-218">Sarakeotsikon teksti</span><span class="sxs-lookup"><span data-stu-id="2c7b9-218">Column header text</span></span>    | <span data-ttu-id="2c7b9-219">Tämä teksti näkyy sarakeotsikossa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-219">This text appears in the column header.</span></span> <span data-ttu-id="2c7b9-220">Voit kirjoittaa tekstin suoraan kenttään tai valita sarakeotsikon aina raportin luomisen yhteydessä päivittävän vaihtoehdon valitsemalla **Lisää automaattinen teksti**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-220">You can type text directly in this field, or click **Insert AutoText** to select an option that updates the column header every time that the report is generated.</span></span> <span data-ttu-id="2c7b9-221">Voit lisätä useita automaattisen tekstin koodeja valitsemalla uudelleen **Lisää automaattinen teksti** ja valitsemalla sitten toisen koodin luettelosta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-221">To include multiple autotext codes, click **Insert AutoText** again, and then click another code in the list.</span></span> |
+| <span data-ttu-id="2c7b9-222">Muotoiluasetukset</span><span class="sxs-lookup"><span data-stu-id="2c7b9-222">Format options</span></span>        | <span data-ttu-id="2c7b9-223">Käytä sarakeotsikossa muotoilua, kuten ruuutua tai alleviivausta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-223">Apply formatting to a column header, such as box or underline.</span></span> |
+| <span data-ttu-id="2c7b9-224">Levitä mistä, Levitä mihin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-224">Spread from Spread to</span></span> | <span data-ttu-id="2c7b9-225">Määritä sarake tai sarakkeet, joita otsikon teksti koskee.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-225">Define the column or columns that the header text applies to.</span></span> |
+| <span data-ttu-id="2c7b9-226">Perustelu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-226">Justification</span></span>         | <span data-ttu-id="2c7b9-227">Määritä, miten sarakeotsikko kohdistetaan sarakkeeseen tai **Levitä mistä**- ja **Levitä mihin** -kentässä määritettyyn sarakeväliin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-227">Specify how the column header text should be aligned for the column or range of columns that is specified in the **Spread from** and **Spread to** fields.</span></span> |
+
+### <a name="create-a-column-header"></a><span data-ttu-id="2c7b9-228">Sarakeotsikon luominen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-228">Create a column header</span></span>
+
+1. <span data-ttu-id="2c7b9-229">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-229">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-230">Kaksoisnapsauta otsikkosolua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-230">Double-click a header cell.</span></span>
+3. <span data-ttu-id="2c7b9-231">Syötä **Sarakeotsikko**-valintaikkunassa sarakeotsikon teksti.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-231">In the **Column Header** dialog box, enter the column header text.</span></span> <span data-ttu-id="2c7b9-232">Vaihtoehtoisesti voit valita **Lisää automaattinen teksti** -kohdan, jossa voit valita vaihtoehdon.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-232">Alternatively, click **Insert AutoText**, and select an option.</span></span>
+4. <span data-ttu-id="2c7b9-233">Valitse **Muotoiluasetukset**-kentässä otsikon muoto.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-233">In the **Format options** field, select a format for the header.</span></span>
+5. <span data-ttu-id="2c7b9-234">Syötä **Levitä mistä** -kenttään sen sarakkeen kirjain, josta sarakeotsikko alkaa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-234">In the **Spread from** field, enter the letter of the column that the column header should start over.</span></span> <span data-ttu-id="2c7b9-235">Syötä **Levitä mihin** -kenttään sen sarakkeen kirjain, johon sarakeotsikko loppuu.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-235">In the **Spread to** field, enter the letter of the column that the column header should end over.</span></span>
+6. <span data-ttu-id="2c7b9-236">Määritä **Tasaus**-kohdassa, tasataanko otsikon teksti vasemmalle vai oikealle vai keskitetäänkö se.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-236">Under **Justification**, select whether the column header text to should be left-justified, center-justified, or right-justified.</span></span>
+7. <span data-ttu-id="2c7b9-237">Napsauta **OK**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-237">Click **OK**.</span></span>
+
+### <a name="add-a-column-header-row"></a><span data-ttu-id="2c7b9-238">Sarakeotsikon rivin lisääminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-238">Add a column header row</span></span>
+
+1. <span data-ttu-id="2c7b9-239">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-239">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-240">Valitse otsikkorivin solu.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-240">Select a cell in the header row.</span></span>
+3. <span data-ttu-id="2c7b9-241">Valitse **Muokkaa**-valikossa **Lisää rivi**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-241">On the **Edit** menu, click **Insert Row**.</span></span> <span data-ttu-id="2c7b9-242">Uusi rivi lisätään vaiheessa 2 valitsemasi rivin yläpuolelle.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-242">The new row is inserted above the row that you selected in step 2.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="2c7b9-243">Jos raportissa on vähintään neljä tai ylätunnistetta, tunnisteet ovat päällekkäisiä, kun raportti viedään Excel-työkirjaan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-243">If you have four or more rows of report headers on a report, the headers will overlap when the report is exported to an Excel worksheet.</span></span> <span data-ttu-id="2c7b9-244">Voit tarkastella kaikkia raportin otsikoita lisäämällä raportin määritykseen ylämarginaalin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-244">To view all headers on the report, increase the top margin in the report definition.</span></span>
+
+### <a name="delete-a-column-header-row"></a><span data-ttu-id="2c7b9-245">Sarakeotsikon rivin poistaminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-245">Delete a column header row</span></span>
+
+1. <span data-ttu-id="2c7b9-246">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-246">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-247">Valitse otsikon rivillä poistettava solu.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-247">In the header row, select the cell to delete.</span></span>
+3. <span data-ttu-id="2c7b9-248">Valitse **Muokkaa**-valikossa **Poista rivi**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-248">On the **Edit** menu, click **Delete Row**.</span></span>
+
+### <a name="create-an-automatically-generated-header"></a><span data-ttu-id="2c7b9-249">Automaattisesti luodun otsikon luominen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-249">Create an automatically generated header</span></span>
+
+<span data-ttu-id="2c7b9-250">Raportin suunnittelija voi luoda sarakeotsikoita automaattisesti automaattisen tekstin koodien perusteella.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-250">Report designer can automatically generate column headers, based on autotext codes.</span></span> <span data-ttu-id="2c7b9-251">Automaattisen tekstin koodit ovat muuttujia, jotka päivitetään aina raportin luomisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-251">Autotext codes are variables that are updated every time that a report is generated.</span></span> <span data-ttu-id="2c7b9-252">Mikä tahansa sarakeotsikko voi sisältää näitä koodeja. Ne määrittävät raportin muuttuvia tietoja, kuten päivämääriä ja jaksojen numeroita.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-252">Any column header can include these codes to specify report information that can vary, such as dates or period numbers.</span></span> <span data-ttu-id="2c7b9-253">Tämän vuoksi useissa raportin määrityksissä, ajanjaksoissa ja raportointipuissa voidaan käyttää yhtä sarakkeen määritystä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-253">Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees.</span></span> <span data-ttu-id="2c7b9-254">Koska automaattisen tekstin koodeissa käytetään sarakkeen määrityksen tietorivien kalenterin tietoja, niitä tuetaan vain **CALC**- ja **FD**-sarakkeissa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-254">Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for **CALC** and **FD** columns.</span></span> <span data-ttu-id="2c7b9-255">Tapa, jolla automaattisen tekstin koodi näkyy sarakeotsikon solussa, vaikuttaa siihen, miten tiedot näkyvät raportissa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-255">The way that an autotext code appears in the column header cell affects how that information appears on the report.</span></span> <span data-ttu-id="2c7b9-256">Automaattisen tekstin koodeissa käytetään isoja ja pieniä kirjaimia **Sarakeotsikko**-valintaikkunassa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-256">In the **Column Header** dialog box, the autotext codes appear in mixed case.</span></span> <span data-ttu-id="2c7b9-257">Tämän vuoksi teksti näkyy näin myös raportissa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-257">Therefore, the text appears in mixed case on the report.</span></span> <span data-ttu-id="2c7b9-258">Esimerkiksi vakiokalenterivuosi **@CalMonthLong** muuntaa kuukauden **7** **heinäkuuksi**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-258">For example, in a standard calendar year, **@CalMonthLong** resolves month **7** to **July**.</span></span> <span data-ttu-id="2c7b9-259">Jos raportin tekstin pitää olla isoilla kirjaimilla (esimerkiksi **HEINÄKUU**), kirjoita myös koodi isoin kirjaimin **Sarakeotsikon teksti** -ruutuun).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-259">If the name of the month should be uppercase (for example **JULY**), enter the autotext code in uppercase characters in the **Column header text** field.</span></span> <span data-ttu-id="2c7b9-260">Kirjoita esimerkiksi **@CALMONTHLONG**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-260">For example, enter **@CALMONTHLONG**.</span></span> <span data-ttu-id="2c7b9-261">Tekstissä voi käyttää sekä isoja ja pieniä kirjaimia.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-261">You can mix codes and text.</span></span> <span data-ttu-id="2c7b9-262">Voit syöttää otsikon tekstin esimerkiksi tällaisena: **Jakso @FiscalPeriod–@FiscalYear @StartDate–@EndDate**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-262">For example, you enter the following header text: **Period @FiscalPeriod-@FiscalYear from @StartDate to @EndDate**.</span></span> <span data-ttu-id="2c7b9-263">Luotu raportin otsikko muistuttaa seuraavaa tekstiä: **Jakso 1–02 01/01/02–01/31/02**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-263">The report heading that is generated resembles the following text: **Period 1-02 from 01/01/02 to 01/31/02**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="2c7b9-264">Joidenkin tekstien muoto, kuten pitkä päivämäärä, määräytyy Finance and Operations -palvelimen alueellisten asetusten mukaan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-264">The format of some of the text, such as the long date, depends on your regional settings on the Finance and Operations server.</span></span> <span data-ttu-id="2c7b9-265">Voit muuttaa näitä asetuksia valitsemalla **Käynnistä**-painikkeen, **Ohjauspaneeli**-kohdan ja valitsemalla sitten **Alue ja kieli** -kohdan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-265">To change these settings, click the **Start** button, click **Control Panel**, and then click **Region and Language**.</span></span> <span data-ttu-id="2c7b9-266">Seuraavassa taulukossa luetellaan sarakeotsikoiden käytettävissä olevat automaattisen tekstin asetukset.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-266">The following table lists the available autotext options for column headers.</span></span>
+
+
+| <span data-ttu-id="2c7b9-267">Automaattinen teksti -asetus ja koodi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-267">Autotext option and code</span></span>                | <span data-ttu-id="2c7b9-268">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-268">Description</span></span> |
+|-----------------------------------------|-------------|
+| <span data-ttu-id="2c7b9-269">Kuukauden nimi (@CalMonthLong)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-269">Month name (@CalMonthLong)</span></span>              | <span data-ttu-id="2c7b9-270">Tulosta kuluvan kuukauden nimi sarakeotsikkoon.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-270">Print the name of the current month in the column heading.</span></span> <span data-ttu-id="2c7b9-271">Jos haluat pyöristää raportin summat tuhansiksi, miljooniksi tai miljardeiksi tai määrittää raportin sarakkeiden leveyden pienemmäksi kuin 9 merkkiä, kuukauden nimi lyhennetään nimen kolmeksi ensimmäiseksi merkiksi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-271">If you decide to round the amounts in the report to thousands, millions, or billions, or if you set the column width on the report to fewer than nine characters, the name of the month is abbreviated to the first three characters.</span></span> |
+| <span data-ttu-id="2c7b9-272">Kuukauden nimen lyhenne (@CalMonthShort)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-272">Abbreviated month name (@CalMonthShort)</span></span> | <span data-ttu-id="2c7b9-273">Tulosta valitun tilikauden kuukauden nimen lyhenne.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-273">Print the abbreviated name of the month for the selected fiscal period.</span></span> |
+| <span data-ttu-id="2c7b9-274">Jakson numero (@FiscalPeriod)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-274">Period number (@FiscalPeriod)</span></span>           | <span data-ttu-id="2c7b9-275">Tulosta tilikauden numeerinen muoto, joka sarakkeelle on määritetty.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-275">Print the numeric form of the fiscal period that is identified for that column.</span></span> <span data-ttu-id="2c7b9-276">Jos sarake levitetään useille jaksoille, tulostetaan välin viimeinen jakso.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-276">If the column spans multiple periods, the last period in the range is printed.</span></span> |
+| <span data-ttu-id="2c7b9-277">Jakson kuvaus (@FiscalPeriodName)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-277">Period description (@FiscalPeriodName)</span></span>  | <span data-ttu-id="2c7b9-278">Tulosta taloushallinnon tiedoissa määritetty tilikauden kuvaus.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-278">Print the fiscal period description that is identified in the financial data.</span></span> |
+| <span data-ttu-id="2c7b9-279">Tilikausi (@FiscalYear)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-279">Fiscal year (@FiscalYear)</span></span>               | <span data-ttu-id="2c7b9-280">Tulosta sarakkeen tilikausi numeerisessa muodossa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-280">Print the fiscal year for the column in numeric form.</span></span> |
+| <span data-ttu-id="2c7b9-281">Kalenterivuosi (@CalYear)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-281">Calendar year (@CalYear)</span></span>                | <span data-ttu-id="2c7b9-282">Tulosta sarakkeen kalenterivuosi numeerisessa muodossa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-282">Print the calendar year for the column in numeric form.</span></span> |
+| <span data-ttu-id="2c7b9-283">Alkamispäivämäärä (@StartDate)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-283">Start date (@StartDate)</span></span>                 | <span data-ttu-id="2c7b9-284">Tulosta sarakkeen alkamispäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-284">Print the start date for the column.</span></span> |
+| <span data-ttu-id="2c7b9-285">Päättymispäivämäärä (@EndDate)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-285">End Date (@EndDate)</span></span>                     | <span data-ttu-id="2c7b9-286">Tulosta sarakkeen päättymispäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-286">Print the end date for the column.</span></span> |
+| <span data-ttu-id="2c7b9-287">Yksikön nimi puusta (@UnitName)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-287">Unit name from tree (@UnitName)</span></span>         | <span data-ttu-id="2c7b9-288">Jos sarake rajoitetaan tietylle raportointipuun yksikölle, tulosta sarakeotsikon yksikön nimi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-288">If you restrict a column to a specific unit of the reporting tree, print the unit name in the column header.</span></span> |
+| <span data-ttu-id="2c7b9-289">Yksikön kuvaus (@UnitDesc)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-289">Unit description (@UnitDesc)</span></span>            | <span data-ttu-id="2c7b9-290">Jos sarake rajoitetaan tietylle raportointipuun yksikölle, tulosta sarakeotsikon yksikön kuvaus.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-290">If you restrict a column to a specific unit of the reporting tree, print the unit description in the column header.</span></span> |
+| <span data-ttu-id="2c7b9-291">Kirjakoodi (@BookCode)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-291">Book Code (@BookCode)</span></span>                   | <span data-ttu-id="2c7b9-292">Tulosta sarakkeelle määritetty kirjakoodi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-292">Print the book code that is specified in the column.</span></span> |
+| <span data-ttu-id="2c7b9-293">Tyhjä rivi (@Blank)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-293">Blank line (@Blank)</span></span>                     | <span data-ttu-id="2c7b9-294">Lisää sarakeotsikkoon tyhjä rivi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-294">Insert an empty line in the column header.</span></span> |
+
+### <a name="create-a-conditional-spanning-header"></a><span data-ttu-id="2c7b9-295">Ehdollisen koonnin otsikon luominen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-295">Create a conditional spanning header</span></span>
+
+<span data-ttu-id="2c7b9-296">Ehdollisen koonnin otsikot voivat olla useiden tietyn jakson tietoihin perustuvien sarakkeiden käytössä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-296">Conditional spanning headers can span multiple columns that are based on specific period data.</span></span> <span data-ttu-id="2c7b9-297">Jos käsittelyssä on esimerkiksi tilikauden budjettiraportti, ja haluat näyttää edellisten kuukausien toteutuneet budjetit tulevien kuukausien ennustettujen budjettien kanssa, voit päivittää raportin otsikon automaattisesti ehdollisen koonnin otsikon avulla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-297">For example, if you have a budget report for the fiscal year and want to display the actual budgets of past months together with the projected budgets of future months, you can use a conditional spanning header to automatically update the report header.</span></span> <span data-ttu-id="2c7b9-298">Ota huomioon seuraavat tilanteet, kun luot ehdollisen jatkuvan otsikon:</span><span class="sxs-lookup"><span data-stu-id="2c7b9-298">Be aware of the following situations when you create a conditional spanning header:</span></span>
+
+- <span data-ttu-id="2c7b9-299">Mikä tahansa pysäytysehto (**Levitä mihin** -kenttä), joka täsmää ennen aloitusehtoa (**Levitä mistä** -kenttä) ohitetaan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-299">Any stop condition (**Spread to** field) that is matched before a start condition (**Spread From** field) is ignored.</span></span> <span data-ttu-id="2c7b9-300">Esimerkiksi sarakkeen B levitysehto on BASE+1 - BASE. BASE on sarakkeessa C ja BASE+1 sarakkeessa D. Tässä tapauksessa sarakkeen C pysäytysehto ohitetaan ja otsikon tulostus alkaa sarakkeesta D.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-300">For example, column B has the spread condition defined as BASE+1 to BASE, BASE is in column C, and BASE+1 is in column D. In this case, the stop condition in column C is ignored, and the printing of the header starts at column D.</span></span>
+- <span data-ttu-id="2c7b9-301">Jos määritetyt sarakeotsikot ovat päällekkäisiä, ne ovat päällekkäisiä myös raporttiin tulostettuna.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-301">If you specify column headers that overlap, they overlap when they are printed on the report.</span></span> <span data-ttu-id="2c7b9-302">Raportti luodaan, mutta seuraava varoitus tulee näkyviin **Raportin jonon tila** -kentässä: "Sarakeotsikot, jotka käyttävät pohjaa leikkaavat muiden sarakkeiden otsikoiden kanssa ja tämä saattaa aiheuttaa päällekkäistä tekstiä."</span><span class="sxs-lookup"><span data-stu-id="2c7b9-302">The report is generated, but the following warning appears in the **Report Queue Status** field: "Column headers using Base intersect with other column headers and may cause overlapping text."</span></span> <span data-ttu-id="2c7b9-303">Esimerkiksi sarakkeen B otsikkomääritys on B to BASE+1, ja sarakkeen D otsikkomääritys on is BASE+1 to F. Tässä tapauksessa otsikot tulostetaan toistensa päälle, jolloin niitä ei voi lukea.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-303">For example, the header definition on column B is B to BASE+1, and the header definition on column D is BASE+1 to F. In this case, the headers are printed on top of each other and are unreadable.</span></span> <span data-ttu-id="2c7b9-304">Kun BASE-määritystä käytetään **Levitä mistä / Levitä mihin** -määrityksessä, muista aina tarkistaa luotava raportti päällekkäisten otsikoiden varalta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-304">Whenever BASE is used in a **Spread from/Spread to** definition, be sure to view the report that is generated, to see whether the headers overlap.</span></span>
+- <span data-ttu-id="2c7b9-305">Jos levitysehdon BASE-määritys määritetään Ei tulostusta (**NP**) -sarakkeessa, se ohitetaan sarakkeen määrityksessä tehdyistä valinnoista huolimatta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-305">If you specify BASE in the spread definition in a No Print (**NP**) column, it's ignored, regardless of what is defined in the column definition.</span></span> <span data-ttu-id="2c7b9-306">Tämä skenaario on sama kuin sarakeotsikon määrityksen luomatta jättäminen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-306">Essentially, this scenario is the same as not creating a column header definition.</span></span>
+- <span data-ttu-id="2c7b9-307">Ehdollisten tulostussarakkeiden (**P&lt;B**, **P&gt;=B**) ehdollisen koonnin otsikot toimivat kuten mikä tahansa sarakeotsikon määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-307">For conditional printing columns (**P&lt;B**, **P&gt;=B**), conditional spanning headers behave like any regular column header definition.</span></span> <span data-ttu-id="2c7b9-308">Jos esimerkiksi ehto on epätosi, mikä tahansa levitysehtoa vastaava peräkkäinen sarake käynnistää otsikon tulostuksen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-308">For example, if the condition is false, any subsequent column matching for the spread condition starts the printing of the header.</span></span>
+
+#### <a name="create-a-conditional-spanning-header"></a><span data-ttu-id="2c7b9-309">Ehdollisen koonnin otsikon luominen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-309">Create a conditional spanning header</span></span>
+
+1. <span data-ttu-id="2c7b9-310">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-310">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-311">Kaksoisnapsauta otsikkosolua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-311">Double-click a header cell.</span></span>
+3. <span data-ttu-id="2c7b9-312">Syötä **Sarakeotsikko**-valintaikkunassa sarakeotsikon teksti.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-312">In the **Column Header** dialog box, enter the column header text.</span></span> <span data-ttu-id="2c7b9-313">Vaihtoehtoisesti voit valita **Lisää automaattinen teksti** -kohdan, jossa voit valita vaihtoehdon.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-313">Alternatively, click **Insert AutoText**, and select an option.</span></span>
+4. <span data-ttu-id="2c7b9-314">Valitse **Muotoiluasetukset**-kentässä otsikon muotoilutyyli.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-314">In the **Format options** field, select a formatting style for the header.</span></span>
+5. <span data-ttu-id="2c7b9-315">Määritä perusjaksoon liittyvä kausi, joka määritetään raportin luomisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-315">Specify a period relative to the base period that is specified when the report is generated.</span></span> <span data-ttu-id="2c7b9-316">Syötä **Levitä mistä**- ja **Levitä mihin** -kenttään jonkin seuraavista arvoista: **BASE**, **BASE-X** tai **BASE+X**, jossa X on perusjakson jaksojen määrä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-316">In the **Spread from** and **Spread to** fields, enter one of the following values: **BASE**, **BASE-X** or **BASE+X**, where X is the number of periods from the base period.</span></span> <span data-ttu-id="2c7b9-317">Jos syötät esimerkiksi **Levitä mistä** -kenttään **BASE**-arvon, ehdollisen koonnin sarakeotsikon teksti alkaa sarakeotsikosta, jossa raportin määrityksen **perusjakson** arvo on sama kuin **jakson** arvo.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-317">For example, if you enter **BASE** in the **Spread from** field, the conditional spanning column header text starts in the column header where the report definition's **Base period** value equals the column definition's **Period** value.</span></span> <span data-ttu-id="2c7b9-318">Se päättyy **Levitä mihin** -kenttään määritettyyn sarakkeeseen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-318">It ends in the column that is indicated in the **Spread to** field.</span></span> <span data-ttu-id="2c7b9-319">Jos siis levitys tapahtuu välillä BASE - M ja raportin määrityksen **perusjakson** arvo on **4**, otsikko alkaa sarakkeesta, jossa jakson arvoksi on määritetty **4**. Se päättyy sarakkeeseen M. Otsikot päättyvät ja alkavat vain tulostussarakkeissa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-319">Therefore, if the spread is BASE to M, and the report definition's **Base period** value is **4**, the header starts in the column where the period is set to **4** and ends at column M. Headers stop and start on printing columns only.</span></span>
+6. <span data-ttu-id="2c7b9-320">Määritä **Tasaus**-kohdassa, tasataanko otsikon teksti vasemmalle vai oikealle vai keskitetäänkö se.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-320">Under **Justification**, select whether the column header text should be left-justified, center-justified, or right justified.</span></span>
+7. <span data-ttu-id="2c7b9-321">Napsauta **OK**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-321">Click **OK**.</span></span>
+
+#### <a name="example-of-a-conditional-spanning-header"></a><span data-ttu-id="2c7b9-322">Ehdollisen koonnin otsikon esimerkki</span><span class="sxs-lookup"><span data-stu-id="2c7b9-322">Example of a conditional spanning header</span></span>
+
+<span data-ttu-id="2c7b9-323">Paula on luomassa dynaamista kuuden kuukauden ennusteen raporttia.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-323">Phyllis is creating a report for a dynamic six-month forecast.</span></span> <span data-ttu-id="2c7b9-324">Hän haluaa tulostaa toteutuneita tietoja sisältäviin sarakkeisiin sanan Toteutunut ja budjettiennusteita sisältäviin sarakkeisiin sanan Budjetti.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-324">She wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts.</span></span> <span data-ttu-id="2c7b9-325">Raportti suoritetaan joka kuukausi, joten kuukausi kuukaudelta toteutuneita sarakkeita on yksi enemmän ja budjettisarakkeita yksi vähemmän.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-325">Each month that the report is run, there is one more actual column and one less budget column.</span></span> <span data-ttu-id="2c7b9-326">Vaikka Paula voi muokata sarakkeen määritystä otsikoiden oikaisua varten manuaalisesti aina, kun raportti luodaan, hän päättää luoda ehdollisen koonnin otsikot ja säästää aikaa ja työtä. Näin otsikot luodaan automaattisesti oikeisiin sarakkeisiin aina, kun raportti suoritetaan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-326">Although Phyllis can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, she decides to create conditional spanning headers that will automatically create headers over the appropriate columns each time that the report is run.</span></span> <span data-ttu-id="2c7b9-327">Paula avaa Report Designerin, valitsee siirtymisruudussa **Sarakkeen määritys** -kohdan ja avaa raportin sarakkeen määrityksen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-327">Phyllis opens Report Designer, clicks **Column Definition** in the navigation pane, and opens the column definition for the report.</span></span> <span data-ttu-id="2c7b9-328">Sitten hän syöttää seuraava tiedot:</span><span class="sxs-lookup"><span data-stu-id="2c7b9-328">She then enters the following information.</span></span> <span data-ttu-id="2c7b9-329">Raportin määrityksen perusjakso on 4.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-329">The base period in the report definition is 4.</span></span>
+
+
+|                     |  <span data-ttu-id="2c7b9-330">A</span><span class="sxs-lookup"><span data-stu-id="2c7b9-330">A</span></span>   | <span data-ttu-id="2c7b9-331">B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-331">B</span></span>             | <span data-ttu-id="2c7b9-332">C</span><span class="sxs-lookup"><span data-stu-id="2c7b9-332">C</span></span>             | <span data-ttu-id="2c7b9-333">D</span><span class="sxs-lookup"><span data-stu-id="2c7b9-333">D</span></span>             | <span data-ttu-id="2c7b9-334">E</span><span class="sxs-lookup"><span data-stu-id="2c7b9-334">E</span></span>             | <span data-ttu-id="2c7b9-335">F</span><span class="sxs-lookup"><span data-stu-id="2c7b9-335">F</span></span>             | <span data-ttu-id="2c7b9-336">G</span><span class="sxs-lookup"><span data-stu-id="2c7b9-336">G</span></span>             | <span data-ttu-id="2c7b9-337">H</span><span class="sxs-lookup"><span data-stu-id="2c7b9-337">H</span></span>             | <span data-ttu-id="2c7b9-338">I</span><span class="sxs-lookup"><span data-stu-id="2c7b9-338">I</span></span>             | <span data-ttu-id="2c7b9-339">J</span><span class="sxs-lookup"><span data-stu-id="2c7b9-339">J</span></span>             | <span data-ttu-id="2c7b9-340">K</span><span class="sxs-lookup"><span data-stu-id="2c7b9-340">K</span></span>             | <span data-ttu-id="2c7b9-341">L</span><span class="sxs-lookup"><span data-stu-id="2c7b9-341">L</span></span>             | <span data-ttu-id="2c7b9-342">M</span><span class="sxs-lookup"><span data-stu-id="2c7b9-342">M</span></span>             |
+|---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
+| <span data-ttu-id="2c7b9-343">Otsikko 1</span><span class="sxs-lookup"><span data-stu-id="2c7b9-343">Header 1</span></span>            |      | <span data-ttu-id="2c7b9-344">Todellinen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-344">Actual</span></span>        | <span data-ttu-id="2c7b9-345">Budjetti</span><span class="sxs-lookup"><span data-stu-id="2c7b9-345">Budget</span></span>        |               |               |               |               |               |               |               |               |               |               |
+| <span data-ttu-id="2c7b9-346">Otsikko 2</span><span class="sxs-lookup"><span data-stu-id="2c7b9-346">Header 2</span></span>            |      | <span data-ttu-id="2c7b9-347">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-347">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-348">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-348">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-349">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-349">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-350">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-350">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-351">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-351">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-352">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-352">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-353">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-353">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-354">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-354">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-355">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-355">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-356">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-356">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-357">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-357">@CalMonthLong</span></span> | <span data-ttu-id="2c7b9-358">@CalMonthLong</span><span class="sxs-lookup"><span data-stu-id="2c7b9-358">@CalMonthLong</span></span> |
+| <span data-ttu-id="2c7b9-359">Otsikko 3</span><span class="sxs-lookup"><span data-stu-id="2c7b9-359">Header 3</span></span>            |      |               |               |               |               |               |               |               |               |               |               |               |               |
+| <span data-ttu-id="2c7b9-360">Saraketyyppi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-360">Column Type</span></span>         | <span data-ttu-id="2c7b9-361">KUV</span><span class="sxs-lookup"><span data-stu-id="2c7b9-361">DESC</span></span> | <span data-ttu-id="2c7b9-362">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-362">FD</span></span>            | <span data-ttu-id="2c7b9-363">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-363">FD</span></span>            | <span data-ttu-id="2c7b9-364">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-364">FD</span></span>            | <span data-ttu-id="2c7b9-365">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-365">FD</span></span>            | <span data-ttu-id="2c7b9-366">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-366">FD</span></span>            | <span data-ttu-id="2c7b9-367">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-367">FD</span></span>            | <span data-ttu-id="2c7b9-368">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-368">FD</span></span>            | <span data-ttu-id="2c7b9-369">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-369">FD</span></span>            | <span data-ttu-id="2c7b9-370">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-370">FD</span></span>            | <span data-ttu-id="2c7b9-371">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-371">FD</span></span>            | <span data-ttu-id="2c7b9-372">FD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-372">FD</span></span>            | <span data-ttu-id="2c7b9-373">FD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-373">FD</span></span>            |
+| <span data-ttu-id="2c7b9-374">Kirjakoodi/määrite</span><span class="sxs-lookup"><span data-stu-id="2c7b9-374">Book Code/Attribute</span></span> |      | <span data-ttu-id="2c7b9-375">TOTEUTUNUT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-375">ACTUAL</span></span>        | <span data-ttu-id="2c7b9-376">BUDJETTI2012</span><span class="sxs-lookup"><span data-stu-id="2c7b9-376">BUDGET2012</span></span>    | <span data-ttu-id="2c7b9-377">TOTEUTUNUT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-377">ACTUAL</span></span>        | <span data-ttu-id="2c7b9-378">BUDJETTI2012</span><span class="sxs-lookup"><span data-stu-id="2c7b9-378">BUDGET2012</span></span>    | <span data-ttu-id="2c7b9-379">TOTEUTUNUT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-379">ACTUAL</span></span>        | <span data-ttu-id="2c7b9-380">BUDJETTI2012</span><span class="sxs-lookup"><span data-stu-id="2c7b9-380">BUDGET2012</span></span>    | <span data-ttu-id="2c7b9-381">TOTEUTUNUT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-381">ACTUAL</span></span>        | <span data-ttu-id="2c7b9-382">BUDJETTI2012</span><span class="sxs-lookup"><span data-stu-id="2c7b9-382">BUDGET2012</span></span>    | <span data-ttu-id="2c7b9-383">TOTEUTUNUT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-383">ACTUAL</span></span>        | <span data-ttu-id="2c7b9-384">BUDJETTI2012</span><span class="sxs-lookup"><span data-stu-id="2c7b9-384">BUDGET2012</span></span>    | <span data-ttu-id="2c7b9-385">TOTEUTUNUT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-385">ACTUAL</span></span>        | <span data-ttu-id="2c7b9-386">BUDJETTI2012</span><span class="sxs-lookup"><span data-stu-id="2c7b9-386">BUDGET2012</span></span>    |
+| <span data-ttu-id="2c7b9-387">Tilikausi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-387">Fiscal Year</span></span>         |      | <span data-ttu-id="2c7b9-388">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-388">BASE</span></span>          | <span data-ttu-id="2c7b9-389">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-389">BASE</span></span>          | <span data-ttu-id="2c7b9-390">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-390">BASE</span></span>          | <span data-ttu-id="2c7b9-391">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-391">BASE</span></span>          | <span data-ttu-id="2c7b9-392">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-392">BASE</span></span>          | <span data-ttu-id="2c7b9-393">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-393">BASE</span></span>          | <span data-ttu-id="2c7b9-394">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-394">BASE</span></span>          | <span data-ttu-id="2c7b9-395">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-395">BASE</span></span>          | <span data-ttu-id="2c7b9-396">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-396">BASE</span></span>          | <span data-ttu-id="2c7b9-397">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-397">BASE</span></span>          | <span data-ttu-id="2c7b9-398">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-398">BASE</span></span>          | <span data-ttu-id="2c7b9-399">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-399">BASE</span></span>          |
+| <span data-ttu-id="2c7b9-400">Kausi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-400">Period</span></span>              |      | <span data-ttu-id="2c7b9-401">1</span><span class="sxs-lookup"><span data-stu-id="2c7b9-401">1</span></span>             | <span data-ttu-id="2c7b9-402">1</span><span class="sxs-lookup"><span data-stu-id="2c7b9-402">1</span></span>             | <span data-ttu-id="2c7b9-403">2</span><span class="sxs-lookup"><span data-stu-id="2c7b9-403">2</span></span>             | <span data-ttu-id="2c7b9-404">2</span><span class="sxs-lookup"><span data-stu-id="2c7b9-404">2</span></span>             | <span data-ttu-id="2c7b9-405">3</span><span class="sxs-lookup"><span data-stu-id="2c7b9-405">3</span></span>             | <span data-ttu-id="2c7b9-406">3</span><span class="sxs-lookup"><span data-stu-id="2c7b9-406">3</span></span>             | <span data-ttu-id="2c7b9-407">4</span><span class="sxs-lookup"><span data-stu-id="2c7b9-407">4</span></span>             | <span data-ttu-id="2c7b9-408">4</span><span class="sxs-lookup"><span data-stu-id="2c7b9-408">4</span></span>             | <span data-ttu-id="2c7b9-409">5</span><span class="sxs-lookup"><span data-stu-id="2c7b9-409">5</span></span>             | <span data-ttu-id="2c7b9-410">5</span><span class="sxs-lookup"><span data-stu-id="2c7b9-410">5</span></span>             | <span data-ttu-id="2c7b9-411">6</span><span class="sxs-lookup"><span data-stu-id="2c7b9-411">6</span></span>             | <span data-ttu-id="2c7b9-412">6</span><span class="sxs-lookup"><span data-stu-id="2c7b9-412">6</span></span>             |
+| <span data-ttu-id="2c7b9-413">Katetut kaudet</span><span class="sxs-lookup"><span data-stu-id="2c7b9-413">Periods Covered</span></span>     |      | <span data-ttu-id="2c7b9-414">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-414">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-415">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-415">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-416">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-416">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-417">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-417">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-418">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-418">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-419">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-419">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-420">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-420">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-421">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-421">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-422">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-422">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-423">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-423">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-424">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-424">PERIODIC</span></span>      | <span data-ttu-id="2c7b9-425">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-425">PERIODIC</span></span>      |
+| <span data-ttu-id="2c7b9-426">Sarakkeen leveys</span><span class="sxs-lookup"><span data-stu-id="2c7b9-426">Column Width</span></span>        | <span data-ttu-id="2c7b9-427">30</span><span class="sxs-lookup"><span data-stu-id="2c7b9-427">30</span></span>   | <span data-ttu-id="2c7b9-428">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-428">10</span></span>            | <span data-ttu-id="2c7b9-429">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-429">10</span></span>            | <span data-ttu-id="2c7b9-430">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-430">10</span></span>            | <span data-ttu-id="2c7b9-431">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-431">10</span></span>            | <span data-ttu-id="2c7b9-432">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-432">10</span></span>            | <span data-ttu-id="2c7b9-433">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-433">10</span></span>            | <span data-ttu-id="2c7b9-434">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-434">10</span></span>            | <span data-ttu-id="2c7b9-435">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-435">10</span></span>            | <span data-ttu-id="2c7b9-436">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-436">10</span></span>            | <span data-ttu-id="2c7b9-437">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-437">10</span></span>            | <span data-ttu-id="2c7b9-438">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-438">10</span></span>            | <span data-ttu-id="2c7b9-439">10</span><span class="sxs-lookup"><span data-stu-id="2c7b9-439">10</span></span>            |
+| <span data-ttu-id="2c7b9-440">Tulostuksen hallinta</span><span class="sxs-lookup"><span data-stu-id="2c7b9-440">Print Control</span></span>       |      | <span data-ttu-id="2c7b9-441">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-441">P&lt;=B</span></span>       | <span data-ttu-id="2c7b9-442">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-442">P&gt;B</span></span>        | <span data-ttu-id="2c7b9-443">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-443">P&lt;=B</span></span>       | <span data-ttu-id="2c7b9-444">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-444">P&gt;B</span></span>        | <span data-ttu-id="2c7b9-445">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-445">P&lt;=B</span></span>       | <span data-ttu-id="2c7b9-446">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-446">P&gt;B</span></span>        | <span data-ttu-id="2c7b9-447">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-447">P&lt;=B</span></span>       | <span data-ttu-id="2c7b9-448">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-448">P&gt;B</span></span>        | <span data-ttu-id="2c7b9-449">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-449">P&lt;=B</span></span>       | <span data-ttu-id="2c7b9-450">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-450">P&gt;B</span></span>        | <span data-ttu-id="2c7b9-451">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-451">P&lt;=B</span></span>       | <span data-ttu-id="2c7b9-452">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-452">P&gt;B</span></span>        |
+
+<span data-ttu-id="2c7b9-453">Paula kaksoisnapsauttaa sarakeotsikon solua ja avaa **Sarakeotsikko**-valintaikkunan, johon hän syöttää seuraavat tiedot.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-453">Phyllis double-clicks a column header cell to open the **Column Header** dialog box, where she enters the following information.</span></span>
+
+| <span data-ttu-id="2c7b9-454">Kenttä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-454">Field</span></span>              | <span data-ttu-id="2c7b9-455">Arvo</span><span class="sxs-lookup"><span data-stu-id="2c7b9-455">Value</span></span>                 |
+|--------------------|-----------------------|
+| <span data-ttu-id="2c7b9-456">Sarakeotsikon teksti</span><span class="sxs-lookup"><span data-stu-id="2c7b9-456">Column header text</span></span> | <span data-ttu-id="2c7b9-457">Todellinen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-457">Actual</span></span>                |
+| <span data-ttu-id="2c7b9-458">Lisää automaattinen teksti</span><span class="sxs-lookup"><span data-stu-id="2c7b9-458">Insert AutoText</span></span>    | <span data-ttu-id="2c7b9-459">Valintaa ei ole tehty.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-459">No selection is made.</span></span> |
+| <span data-ttu-id="2c7b9-460">Muotoiluasetukset</span><span class="sxs-lookup"><span data-stu-id="2c7b9-460">Format options</span></span>     | <span data-ttu-id="2c7b9-461">Ruutu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-461">Box</span></span>                   |
+| <span data-ttu-id="2c7b9-462">Perustelu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-462">Justification</span></span>      | <span data-ttu-id="2c7b9-463">Valintaa ei ole tehty.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-463">No selection is made.</span></span> |
+| <span data-ttu-id="2c7b9-464">Levitä mistä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-464">Spread from</span></span>        | <span data-ttu-id="2c7b9-465">B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-465">B</span></span>                     |
+| <span data-ttu-id="2c7b9-466">Levitä mihin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-466">Spread to</span></span>          | <span data-ttu-id="2c7b9-467">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-467">BASE</span></span>                  |
+| <span data-ttu-id="2c7b9-468">Budjetin otsikko</span><span class="sxs-lookup"><span data-stu-id="2c7b9-468">Budget header</span></span>      | <span data-ttu-id="2c7b9-469">BASE+1 - loppusarake</span><span class="sxs-lookup"><span data-stu-id="2c7b9-469">BASE+1 to end column</span></span>  |
+
+<span data-ttu-id="2c7b9-470">Kun Paula on syöttänyt tiedot, hän valitsee **OK**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-470">After she has finished entering information, Phyllis clicks **OK**.</span></span> <span data-ttu-id="2c7b9-471">Tämän jälkeen hän kaksoisnapsauttaa sarakeotsikon solua sarakkeessa C ja avaa **Sarakeotsikko**-valintaikkunan, johon hän syöttää seuraavat tiedot.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-471">She then double-clicks the column header cell in column C to open the **Column Header** dialog box, where she enters the following information.</span></span>
+
+| <span data-ttu-id="2c7b9-472">Kenttä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-472">Field</span></span>              | <span data-ttu-id="2c7b9-473">Arvo</span><span class="sxs-lookup"><span data-stu-id="2c7b9-473">Value</span></span>                 |
+|--------------------|-----------------------|
+| <span data-ttu-id="2c7b9-474">Sarakeotsikon teksti</span><span class="sxs-lookup"><span data-stu-id="2c7b9-474">Column header text</span></span> | <span data-ttu-id="2c7b9-475">Budjetti</span><span class="sxs-lookup"><span data-stu-id="2c7b9-475">Budget</span></span>                |
+| <span data-ttu-id="2c7b9-476">Lisää automaattinen teksti</span><span class="sxs-lookup"><span data-stu-id="2c7b9-476">Insert AutoText</span></span>    | <span data-ttu-id="2c7b9-477">Valintaa ei ole tehty.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-477">No selection is made.</span></span> |
+| <span data-ttu-id="2c7b9-478">Muotoiluasetukset</span><span class="sxs-lookup"><span data-stu-id="2c7b9-478">Format options</span></span>     | <span data-ttu-id="2c7b9-479">Ruutu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-479">Box</span></span>                   |
+| <span data-ttu-id="2c7b9-480">Perustelu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-480">Justification</span></span>      | <span data-ttu-id="2c7b9-481">Valintaa ei ole tehty.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-481">No selection is made.</span></span> |
+| <span data-ttu-id="2c7b9-482">Levitä mistä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-482">Spread from</span></span>        | <span data-ttu-id="2c7b9-483">C</span><span class="sxs-lookup"><span data-stu-id="2c7b9-483">C</span></span>                     |
+| <span data-ttu-id="2c7b9-484">Levitä mihin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-484">Spread to</span></span>          | <span data-ttu-id="2c7b9-485">BASE+2</span><span class="sxs-lookup"><span data-stu-id="2c7b9-485">BASE+2</span></span>                |
+
+<span data-ttu-id="2c7b9-486">Tämän jälkeen toteutuneita tietoja sisältäviin sarakkeisiin tulostetaan sana Toteutunut ja budjettiennusteita sisältäviin sarakkeisiin sana Budjetti aina, kun raportti luodaan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-486">Now, every time that this report is generated, the word "Actual" will be printed over the columns that contain actual data, and the word "Budget" will be printed over the columns that contain budget forecasts.</span></span> <span data-ttu-id="2c7b9-487">Tämän lisäksi sarakkeiden määrä oikaistaan joka kuukausi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-487">Additionally, the number of columns will be adjusted each month.</span></span>
+
+## <a name="apply-column-justification"></a><span data-ttu-id="2c7b9-488">Sarakkeen tasauksen käyttäminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-488">Apply column justification</span></span>
+<span data-ttu-id="2c7b9-489">**Tasaus**-solun avulla raportin kuvaussarakkeessa käytetään tasausmuotoilua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-489">The **Justification** cell is used to apply justification formatting to a description column in a report.</span></span> <span data-ttu-id="2c7b9-490">Tämä vaihtoehto vaikuttaa vain sarakkeen kuvauksiin, ei toteutuneisiin arvoihin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-490">This option affects only the column descriptions, not the actual values.</span></span>
+
+1. <span data-ttu-id="2c7b9-491">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-491">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-492">Kaksoisnapsauta **Tasaus**-solua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-492">Double-click the **Justification** cell.</span></span>
+3. <span data-ttu-id="2c7b9-493">Valitse jokin seuraavista luettelon arvoista:</span><span class="sxs-lookup"><span data-stu-id="2c7b9-493">Select one of the following values in the list:</span></span>
+
+    - <span data-ttu-id="2c7b9-494">**Ei mitään** – tasausta ei käytetä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-494">**None** – No justification is applied.</span></span>
+    - <span data-ttu-id="2c7b9-495">**Vasen** – sarakkeen kuvaukset tasataan vasemmalle.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-495">**Left** – Left-align the column descriptions.</span></span>
+    - <span data-ttu-id="2c7b9-496">**Keskitys** – sarakkeen kuvaukset keskitetään.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-496">**Center** – Center-align the column descriptions.</span></span>
+    - <span data-ttu-id="2c7b9-497">**Oikea** – sarakkeen kuvaukset tasataan oikealle.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-497">**Right** – Right-align the column descriptions.</span></span>
+
+## <a name="add-special-formatting-options"></a><span data-ttu-id="2c7b9-498">Erityismuotoiluvalintojen lisääminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-498">Add special formatting options</span></span>
+<span data-ttu-id="2c7b9-499">Sarakkeen määrityksen muotoilusarakkeen tietorivien valituissa sarakkeissa käytetään erityismuotoilua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-499">In the column definition, the formatting column detail rows apply special formatting to selected columns.</span></span> <span data-ttu-id="2c7b9-500">Vaikka jotkin **Tulostuksen hallinta**- ja **Sarakkeiden rajoitukset** -vaihtoehdoista ovat **FD**-sarakekohtaisia, suurin osa vaihtoehdoista koskee kaikkia saraketyyppejä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-500">Although some of the **Print Control** options and **Column Restrictions** options are specific to **FD** columns, most of the options apply to all column types.</span></span> <span data-ttu-id="2c7b9-501">Sarakkeen määrityksessä määritetty muotoilu korvaa raportin määrityksessä määritetyn muotoilun.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-501">The formatting that is specified in the column definition overrides the formatting that is specified in the report definition.</span></span> <span data-ttu-id="2c7b9-502">Rivin määrityksessä määritetty muotoilu korvaa kuitenkin sarakkeen määrityksessä määritetyn muotoilun.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-502">However, the formatting that is specified in the row definition overrides the formatting that is specified in the column definition.</span></span> <span data-ttu-id="2c7b9-503">Seuraavilla riveillä käytetään muotoilurivejä:</span><span class="sxs-lookup"><span data-stu-id="2c7b9-503">The following rows are considered formatting rows:</span></span>
+
+- <span data-ttu-id="2c7b9-504">Sarakkeen leveys</span><span class="sxs-lookup"><span data-stu-id="2c7b9-504">Column Width</span></span>
+- <span data-ttu-id="2c7b9-505">Lisävälilyönnit ennen saraketta</span><span class="sxs-lookup"><span data-stu-id="2c7b9-505">Extra Spaces Before Column</span></span>
+- <span data-ttu-id="2c7b9-506">Muotoilun/valuutan korvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-506">Format/Currency Override</span></span>
+- <span data-ttu-id="2c7b9-507">Tulostuksen hallinta</span><span class="sxs-lookup"><span data-stu-id="2c7b9-507">Print Control</span></span>
+
+### <a name="changing-the-column-width"></a><span data-ttu-id="2c7b9-508">Sarakkeen leveyden muuttaminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-508">Changing the column width</span></span>
+
+<span data-ttu-id="2c7b9-509">**Sarakkeen leveys** -solu määrittää tämän sarakkeen merkkien määrän tulostetussa raportissa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-509">The **Column Width** cell specifies the number of characters to use for the width of this column on the printed report.</span></span> <span data-ttu-id="2c7b9-510">Sarakkeen leveys on tärkeä sarakkeissa, jotka sisältävät summia (sarakkeet, joiden tyyppi on **CALC**, **WKS** tai **FD**), kuvauksissa (sarakkeet, joiden tyyppi on **DESC**) tai täytöissä (sarakkeet, joiden tyyppi on **FILL**).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-510">Column width is important for columns that contain amounts (columns of the **CALC**, **WKS**, or **FD** type), descriptions (columns of the **DESC** type), or fill (columns of the **FILL** type).</span></span> <span data-ttu-id="2c7b9-511">Oletusarvoisesti on valittuna **Sovita**-vaihtoehto. Tällöin kunkin sarakkeen leveys määritetään automaattisesti sarakkeen sisällön mukaan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-511">By default, the **AutoFit** option is selected, so that the width of each column is automatically adjusted to fit the contents.</span></span>
+
+#### <a name="specify-the-width-of-a-column-on-a-report"></a><span data-ttu-id="2c7b9-512">Raportin sarakkeen leveyden määrittäminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-512">Specify the width of a column on a report</span></span>
+
+1. <span data-ttu-id="2c7b9-513">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-513">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-514">Syötä **Sarakkeen leveys** -soluun sarakkeen leveyden välilyöntien määrä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-514">In the **Column Width** cell, enter the number of spaces for the width of the column.</span></span> <span data-ttu-id="2c7b9-515">Sarakkeen leveyden enimmäismäärä on 255 merkkiä (tämä luku sisältää sentit, pilkut ja sulut)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-515">The maximum width of any column is 255 characters (this number includes cents, commas, and parentheses).</span></span> <span data-ttu-id="2c7b9-516">Vaihtoehtoisesti voit ottaa käyttöön raportin suunnittelijan ja valita sarakkeen leveyden solun sisällön perusteella kaksoisnapsauttamalla **Sarakkeen leveys** -solua ja valitsemalla sitten **Sovita**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-516">Alternatively, to enable report designer to select the appropriate width for the column, based on the cell content, double-click the **Column Width** cell, and then click **AutoFit**.</span></span>
+
+### <a name="add-space-between-columns"></a><span data-ttu-id="2c7b9-517">Välilyönnin lisääminen sarakkeiden väliin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-517">Add space between columns</span></span>
+
+<span data-ttu-id="2c7b9-518">**Lisävälilyönnit ennen saraketta** -solu määrittää sarakkeiden välisen erottimen leveyden sarakkeen määrityksessä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-518">The **Extra Spaces Before Column** cell specifies the width of the separator between one column and adjacent columns in the column definition.</span></span> <span data-ttu-id="2c7b9-519">**Lisävälilyönnit ennen saraketta** -asetus vaikuttaa sarakkeen tietoriveihin, mutta ei sarakeotsikoiden riveihin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-519">The **Extra Spaces Before Column** setting affects all column detail rows for the column, but not the column header rows.</span></span> <span data-ttu-id="2c7b9-520">Tämän vaihtoehdon avulla voit erotella sarakeryhmät tai lisätä muutaman välilyönnin ennen kuvausta, jolloin kuvaussarake sisennetään raportin vasemmalle tasatuista otsikoista.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-520">Use this option to separate groups of columns or to add a few spaces before the description, so that the description column is indented from the left-aligned titles on the report.</span></span> <span data-ttu-id="2c7b9-521">Kunkin sarakkeen välissä olevien välilyöntien oletusmäärä on kaksi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-521">The default number of spaces between each column is two.</span></span> <span data-ttu-id="2c7b9-522">Voit muuttaa tätä asetusta raportin määrityksen **Asetukset**-välilehdessä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-522">You can change this setting on the **Settings** tab in the report definition.</span></span>
+
+#### <a name="specify-the-space-between-columns"></a><span data-ttu-id="2c7b9-523">Sarakkeiden välisten välien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-523">Specify the space between columns</span></span>
+
+1. <span data-ttu-id="2c7b9-524">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-524">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-525">Syötä **Lisävälilyönnit ennen saraketta** -soluun sarakkeiden väliin lisättävien välilyöntien määrä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-525">In the **Extra Spaces Before Column** cell, enter the number of spaces to insert between columns.</span></span>
+
+### <a name="specify-a-format-currency-override"></a><span data-ttu-id="2c7b9-526">Valuutan muotoilun ohituksen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-526">Specify a format currency override</span></span>
+
+<span data-ttu-id="2c7b9-527">**Muotoilun/valuutan ohitus** -solussa määritetään sarakkeen desimaalin, valuutan ja prosenttimäärien muotoilu.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-527">The **Format/Currency Override** cell specifies the formatting of the decimal, currency, and percentage amounts in the column.</span></span> <span data-ttu-id="2c7b9-528">Tämä muotoilu korvaa sarakkeen ja raportin määrityksessä tai järjestelmän oletusarvoissa määritetyn muotoilun.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-528">This formatting overrides any formatting that is specified in the report definition or system defaults.</span></span>
+
+#### <a name="assign-a-format-currency-override-to-a-report-column"></a><span data-ttu-id="2c7b9-529">Valuutan muotoilun korvaamisen määrittäminen raportin sarakkeelle</span><span class="sxs-lookup"><span data-stu-id="2c7b9-529">Assign a format currency override to a report column</span></span>
+
+1. <span data-ttu-id="2c7b9-530">Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-530">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-531">Kaksoisnapsauta **Muotoilun/valuutan korvaus** -solua summasarakkeessa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-531">Double-click a **Format/Currency Override** cell in an amount column.</span></span>
+3. <span data-ttu-id="2c7b9-532">Valitse **Muotoilun ohitus** -valintaikkunassa muotoiluasetukset.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-532">In the **Format Override** dialog box, select formatting options.</span></span>
+
+### <a name="add-a-print-control-code"></a><span data-ttu-id="2c7b9-533">Tulostuksen hallintakoodin lisääminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-533">Add a print control code</span></span>
+
+<span data-ttu-id="2c7b9-534">**Tulostuksen hallinta** -solu voi sisältää koodeja, joiden mukaan sarakkeen näyttö- tai tulostusominaisuuksia muokataan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-534">The **Print Control** cell can contain codes that adjust the display or the printing characteristics of a column.</span></span> <span data-ttu-id="2c7b9-535">Tulostuksen hallintakoodeja on kaksi eri tyyppiä: tavalliset tulostuksen hallintakoodit ja ehdolliset hallintakoodit.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-535">There are two types of print control codes: regular print control codes and conditional print control codes.</span></span>
+
+#### <a name="regular-print-control-codes"></a><span data-ttu-id="2c7b9-536">Tavalliset tulostuksen hallintakoodit</span><span class="sxs-lookup"><span data-stu-id="2c7b9-536">Regular print control codes</span></span>
+
+| <span data-ttu-id="2c7b9-537">Tulostuksen hallintakoodi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-537">Print control code</span></span> | <span data-ttu-id="2c7b9-538">Käännös</span><span class="sxs-lookup"><span data-stu-id="2c7b9-538">Translation</span></span>                                     | <span data-ttu-id="2c7b9-539">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-539">Description</span></span> |
+|--------------------|-------------------------------------------------|-------------|
+| <span data-ttu-id="2c7b9-540">NP</span><span class="sxs-lookup"><span data-stu-id="2c7b9-540">NP</span></span>                 | <span data-ttu-id="2c7b9-541">Piilotettu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-541">Nonprinting</span></span>                                     | <span data-ttu-id="2c7b9-542">Tämän sarakkeen summat suljetaan pois tulostettavasta raportista ja laskutoimituksista.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-542">Exclude the amounts in this column from the report that is printed and from calculations.</span></span> <span data-ttu-id="2c7b9-543">Voit ottaa piilotetun sarakkeen mukaan laskutoimitukseen viittaamalla sarakkeeseen suoraan laskentakaavassa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-543">To include a non-printing column in a calculation, refer to the column directly in the calculation formula.</span></span> <span data-ttu-id="2c7b9-544">Piilotettu sarake C voidaan esimerkiksi sisällyttää seuraavaan laskutoimitukseen: **B+C+D**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-544">For example, the non-printing column C is included in the following calculation: **B+C+D**.</span></span> <span data-ttu-id="2c7b9-545">Piilotettua saraketta C ei kuitenkaan oteta mukaan esimerkiksi seuraavaan laskutoimitukseen: **B:D**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-545">However, the non-printing column C isn't included in the following calculation: **B:D**.</span></span> |
+| <span data-ttu-id="2c7b9-546">XCR</span><span class="sxs-lookup"><span data-stu-id="2c7b9-546">XCR</span></span>                | <span data-ttu-id="2c7b9-547">Merkin muuttaminen, jos rivin tavallinen saldo on kredit</span><span class="sxs-lookup"><span data-stu-id="2c7b9-547">Change sign if typical balance of row is credit</span></span> | <span data-ttu-id="2c7b9-548">Luo budjetti tai vertaileva raportti, jossa mikä tahansa kielteinen varianssi (kuten tuoton vaje tai kulujen ylitys) on aina negatiivinen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-548">Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative.</span></span> <span data-ttu-id="2c7b9-549">Ota tämä koodi käyttöön **CALC**-sarakkeessa ja vaihda sarakesumman etumerkki, jos annetun rivin tavallinen saldo on kredit (kuten rivin määrityksen **Tavallinen saldo** -sarakkeen **C**-arvo määrittää).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-549">Apply this code to a **CALC** column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a **C** in the **Normal Balance** column of the row definition).</span></span><p><span data-ttu-id="2c7b9-550"><strong>Huomautus:</strong> Varmista, että<strong>TOT</strong>- ja </strong>CAL</strong>-riveille, joissa usein on kredit-saldo, syötetään rivin määrityksen <strong>Tavallinen saldo</strong> -sarakkeeseen <strong>C</strong>.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-550"><strong>Note:</strong> For <strong>TOT</strong> rows and </strong>CAL</strong> rows that typically carry a credit balance, be sure to enter a <strong>C</strong> in the <strong>Normal Balance</strong> column in the row definition.</span></span></p> |
+| <span data-ttu-id="2c7b9-551">X0</span><span class="sxs-lookup"><span data-stu-id="2c7b9-551">X0</span></span>                 | <span data-ttu-id="2c7b9-552">Sarakkeen piilottaminen, jos ne ovat nollia tai tyhjiä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-552">Suppress column if all zeros or blanks</span></span>          | <span data-ttu-id="2c7b9-553">Sulje **FD**-sarake pois raportista, jos sarakkeen kaikki solut ovat tyhjiä tai sisältävät vain nollia.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-553">Exclude an **FD** column from the report if all cells in that column are either empty or contain zeros.</span></span> |
+| <span data-ttu-id="2c7b9-554">SR</span><span class="sxs-lookup"><span data-stu-id="2c7b9-554">SR</span></span>                 | <span data-ttu-id="2c7b9-555">Estä pyöristys</span><span class="sxs-lookup"><span data-stu-id="2c7b9-555">Suppress rounding</span></span>                               | <span data-ttu-id="2c7b9-556">Estä tämän sarakkeen summien pyöristys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-556">Prevent the amounts in this column from being rounded.</span></span> |
+| <span data-ttu-id="2c7b9-557">XR</span><span class="sxs-lookup"><span data-stu-id="2c7b9-557">XR</span></span>                 | <span data-ttu-id="2c7b9-558">Piilota koonti</span><span class="sxs-lookup"><span data-stu-id="2c7b9-558">Suppress rollup</span></span>                                 | <span data-ttu-id="2c7b9-559">Piilota koonti.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-559">Suppress a rollup.</span></span> <span data-ttu-id="2c7b9-560">Jos raportissa käytetään raportointipuuta, tämän sarakkeen summia ei koota vastaaviksi ylätason solmuiksi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-560">If the report uses a reporting tree, the amounts in this column aren't rolled up into subsequent parent nodes.</span></span> |
+| <span data-ttu-id="2c7b9-561">RP</span><span class="sxs-lookup"><span data-stu-id="2c7b9-561">RP</span></span>                 | <span data-ttu-id="2c7b9-562">Sarakkeen toistaminen jokaisella sivulla</span><span class="sxs-lookup"><span data-stu-id="2c7b9-562">Repeat column on each page</span></span>                      | <span data-ttu-id="2c7b9-563">Toista määritetty sarake raportin jokaisella sivulla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-563">Repeat a specified column on each page of a report.</span></span> <span data-ttu-id="2c7b9-564">Voit käyttää esimerkiksi tulostuksen **RP**-hallintakoodia, kun haluat sisällyttää rivien koodeja noutavan **ROW**-tyyppiä olevan sarakkeen jokaiselle sivulla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-564">For example, you can use the **RP** print control code to include a column of the **ROW** type that pulls in row codes on every page.</span></span> |
+| <span data-ttu-id="2c7b9-565">WT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-565">WT</span></span>                 |  <span data-ttu-id="2c7b9-566">Rivitä teksti</span><span class="sxs-lookup"><span data-stu-id="2c7b9-566">Wrap text</span></span>                                      |  <span data-ttu-id="2c7b9-567">Jos sarakkeen teksti on liian pitkä, eikä sitä voida sovittaa sarakkeen tilaan, se voidaan rivittää. Tällöin teksti mahtuu sarakkeeseen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-567">If the text in a column is too long to fit the space, wrap the text to keep all the text in the column.</span></span> |
+
+#### <a name="conditional-print-control-codes"></a><span data-ttu-id="2c7b9-568">Ehdolliset tulostuksen hallintakoodit</span><span class="sxs-lookup"><span data-stu-id="2c7b9-568">Conditional print control codes</span></span>
+
+| <span data-ttu-id="2c7b9-569">Ehdolliset tulostuksen hallintakoodi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-569">Conditional print control code</span></span> | <span data-ttu-id="2c7b9-570">kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-570">Description</span></span>                                                                             |
+|--------------------------------|-----------------------------------------------------------------------------------------|
+| <span data-ttu-id="2c7b9-571">(ei mitään)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-571">(none)</span></span>                         | <span data-ttu-id="2c7b9-572">Poista ehdollisen tulostuksen valinta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-572">Clear the conditional print selection.</span></span>                                                  |
+| <span data-ttu-id="2c7b9-573">P&lt;B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-573">P&lt;B</span></span>                         | <span data-ttu-id="2c7b9-574">Näyttää tietyn sarakkeen vain, jos jakso on pienempi kuin perusjakso.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-574">Display a specified column only if the period is less than the base period.</span></span>             |
+| <span data-ttu-id="2c7b9-575">P&gt;B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-575">P&gt;B</span></span>                         | <span data-ttu-id="2c7b9-576">Näyttää tietyn sarakkeen vain, jos jakso on suurempi kuin perusjakso.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-576">Display a specified column only if the period is more than the base period.</span></span>             |
+| <span data-ttu-id="2c7b9-577">P=B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-577">P=B</span></span>                            | <span data-ttu-id="2c7b9-578">Näyttää tietyn sarakkeen vain, jos jakso on yhtä suuri kuin perusjakso.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-578">Display a specified column only if the period is equal to the base period.</span></span>              |
+| <span data-ttu-id="2c7b9-579">P&lt;=B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-579">P&lt;=B</span></span>                        | <span data-ttu-id="2c7b9-580">Näyttää tietyn sarakkeen vain, jos jakso on pienempi tai yhtä suuri kuin perusjakso.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-580">Display a specified column only if the period is less than or equal to the base period.</span></span> |
+| <span data-ttu-id="2c7b9-581">P&gt;=B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-581">P&gt;=B</span></span>                        | <span data-ttu-id="2c7b9-582">Näyttää tietyn sarakkeen vain, jos jakso on suurempi tai yhtä suuri kuin perusjakso.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-582">Display a specified column only if the period is more than or equal to the base period.</span></span> |
+
+#### <a name="add-print-control-codes-to-a-report-column"></a><span data-ttu-id="2c7b9-583">Tulostuksen hallintakoodin lisääminen raporttisarakkeeseen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-583">Add print control codes to a report column</span></span>
+
+1. <span data-ttu-id="2c7b9-584">Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-584">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-585">Kaksoisnapsauta **Tulostusohjaus**-solua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-585">Double-click the **Print Control** cell.</span></span>
+3. <span data-ttu-id="2c7b9-586">Valitse **Tulostuksen hallinta** -valintaikkunassa koodi **Valitse tulostuksen hallinnan asetukset** -luettelosta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-586">In the **Print Control** dialog box, select a code in the **Select print control options** list.</span></span> <span data-ttu-id="2c7b9-587">Voit valita useita koodeja pitämällä Ctrl-näppäintä alhaalla koodien valinnan aikana.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-587">To select more than one code, hold down the Ctrl key while you select the codes.</span></span>
+4. <span data-ttu-id="2c7b9-588">Valitse vaihtoehto **Ehdollisen tulostuksen asetukset** -kentässä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-588">Select an option in the **Conditional print options** field.</span></span> <span data-ttu-id="2c7b9-589">Oletusasetus on **(ei mitään)**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-589">By default, **(none)** is selected.</span></span> <span data-ttu-id="2c7b9-590">Voit valita vain yhden ehdollisen tulostuskoodin kerrallaan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-590">You can select only one conditional print code at a time.</span></span>
+5. <span data-ttu-id="2c7b9-591">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-591">Click **OK**.</span></span>
+
+> [!TIP]
+> <span data-ttu-id="2c7b9-592">Voit myös syöttää tulostuskoodeja suoraan **Tulostuksen hallinta** -soluun.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-592">You can also enter the print codes directly in the **Print Control** cell.</span></span> <span data-ttu-id="2c7b9-593">Erota tulostuksen useat hallintakoodit pilkuilla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-593">Separate multiple print control codes with a comma.</span></span>
+
+## <a name="column-types"></a><span data-ttu-id="2c7b9-594">Sarakelajit</span><span class="sxs-lookup"><span data-stu-id="2c7b9-594">Column types</span></span>
+<span data-ttu-id="2c7b9-595">Raportin kunkin sarakkeen tietojen lajin määrittää sarakkeen määrityksen **Sarakelaji**-rivin arvo.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-595">The type of information that each column on a report includes is specified by the value in the **Column Type** row in the column definition.</span></span> <span data-ttu-id="2c7b9-596">Kussakin sarakemäärityksessä on oltava vähintään yksi kuvaussarake (**KUV**) ja yksi summasarake (**TD**, **LTAUL** tai **LASK**).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-596">Each column definition must contain at least one description (**DESC**) column and one amount (**FD**, **WKS**, or **CALC**) column.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="2c7b9-597">Saraketyyppikoodit eivät sovellu kaikkiin kirjanpitojärjestelmiin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-597">The column type codes don't apply to all accounting systems.</span></span> <span data-ttu-id="2c7b9-598">Jos valitset lajin, joka ei kelpaa organisaation kirjanpitojärjestelmässä, sarake näkyy raportissa tyhjänä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-598">If you select a type that isn't valid for your accounting system, that column is blank on the report.</span></span>
+
+### <a name="specify-a-column-type"></a><span data-ttu-id="2c7b9-599">Sarakelajin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-599">Specify a column type</span></span>
+
+1. <span data-ttu-id="2c7b9-600">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-600">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-601">Kaksoisnapsauta oikeassa sarakkeessa **Sarakelaji**-rivin solua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-601">In the appropriate column, double-click a cell in the **Column Type** row.</span></span>
+3. <span data-ttu-id="2c7b9-602">Valitse luettelosta sarakelaji.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-602">Select a column type in the list.</span></span> <span data-ttu-id="2c7b9-603">Eri sarakelajit esitellään seuraavassa taulukossa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-603">The following table describes the various column types.</span></span>
+
+    <table>
+    <thead>
+    <tr>
+    <th><span data-ttu-id="2c7b9-604">Sarakelajin koodi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-604">Column type code</span></span></th>
+    <th><span data-ttu-id="2c7b9-605">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-605">Description</span></span></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><span data-ttu-id="2c7b9-606">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-606">FD</span></span></td>
+    <td><span data-ttu-id="2c7b9-607">Näytä taloustiedot, kun käytät rivimääritelmän <strong>Linkki taloushallinnon dimensioihin</strong> -saraketta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-607">Display financial data when you use a <strong>Link to Financial Dimensions</strong> column in the row definition.</span></span> <span data-ttu-id="2c7b9-608">Kun valitset <strong>TD</strong>-saraketyypin, seuraaville riveille määritetään automaattisesti oletusasetukset:</span><span class="sxs-lookup"><span data-stu-id="2c7b9-608">When you select the <strong>FD</strong> column type, default settings are automatically specified for the following rows:</span></span> <ul>
+    <li><span data-ttu-id="2c7b9-609"><strong>Kirjauskoodi/määriteryhmä</strong> TOTEUTUNUT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-609"><strong>Book Code/Attribute Category:</strong> ACTUAL</span></span></li>
+    <li><span data-ttu-id="2c7b9-610"><strong>Kirjauskoodi/määriteryhmä</strong> TOTEUTUNUT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-610"><strong>Book Code/Attribute Category:</strong> ACTUAL</span></span></li>
+    <li><span data-ttu-id="2c7b9-611"><strong>Tilikausi:</strong> BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-611"><strong>Fiscal Year:</strong> BASE</span></span></li>
+    <li><span data-ttu-id="2c7b9-612"><strong>Kausi:</strong> BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-612"><strong>Period:</strong> BASE</span></span></li>
+    <li><span data-ttu-id="2c7b9-613"><strong>Katetut kaudet</strong> Kausittainen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-613"><strong>Periods Covered:</strong> PERIODIC</span></span></li>
+    <li><span data-ttu-id="2c7b9-614"><strong>Sarakkeen leveys:</strong> 14</span><span class="sxs-lookup"><span data-stu-id="2c7b9-614"><strong>Column Width:</strong> 14</span></span></li>
+    </ul>
+<span data-ttu-id="2c7b9-615">Näitä oletusasetuksia voi muuttaa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-615">You can change these default settings.</span></span></td>
+    </tr>
+    <tr>
+    <td><span data-ttu-id="2c7b9-616">CALC</span><span class="sxs-lookup"><span data-stu-id="2c7b9-616">CALC</span></span></td>
+    <td><span data-ttu-id="2c7b9-617">Näytä <strong>Kaava</strong>-solussa määritetyn yksinkertaisen tai monimutkaisen laskutoimituksen tulokset.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-617">Display the result of a simple or complex calculation that is specified in the <strong>Formula</strong> cell.</span></span> <span data-ttu-id="2c7b9-618">Lisätietoja on kohdassa <a href="advanced-formatting-options-financial-reporting.md">Muotoilun lisäasetukset taloushallinnon raportoinnissa</a>.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-618">For more information, see <a href="advanced-formatting-options-financial-reporting.md">Advanced formatting options in financial reporting</a>.</span></span></td>
+    </tr>
+    <tr>
+    <td><span data-ttu-id="2c7b9-619">KUVAUS</span><span class="sxs-lookup"><span data-stu-id="2c7b9-619">DESC</span></span></td>
+    <td><span data-ttu-id="2c7b9-620">Näytä rivin kuvaus rivin määrityksestä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-620">Display the row description from the row definition.</span></span> <span data-ttu-id="2c7b9-621">Vaikka kuvaussarake on usein raportin ensimmäinen sarake, se voi olla missä tahansa kohdassa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-621">Although the description column is often the first column on the report, it can be in any position.</span></span></td>
+    </tr>
+    <tr>
+    <td><span data-ttu-id="2c7b9-622">ROW</span><span class="sxs-lookup"><span data-stu-id="2c7b9-622">ROW</span></span></td>
+    <td><span data-ttu-id="2c7b9-623">Näytä taloushallinnon rivien yksittäisten rivien koodit rivin määrityksen <strong>Rivin koodi</strong> -sarakkeesta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-623">Display the individual row codes for financial rows from the <strong>Row Code</strong> column in the row definition.</span></span> <span data-ttu-id="2c7b9-624">Lisätietoja on kohdassa <a href="row-definitions-financial-reporting.md">Rivien määritykset taloushallinnon raportoinnissa</a>.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-624">For more information, see <a href="row-definitions-financial-reporting.md">Row definitions in financial reporting</a>.</span></span></td>
+    </tr>
+    <tr>
+    <td><span data-ttu-id="2c7b9-625">ACCT (tilikoodit)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-625">ACCT (Account codes)</span></span></td>
+    <td><span data-ttu-id="2c7b9-626">Näytä jokaisella rivillä käytettävät taloushallinnon tietojen segmentti- tai dimensioarvot.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-626">Display the financial data segment values or dimension values that apply to each row.</span></span> <span data-ttu-id="2c7b9-627">Tili- ja tapahtumatietojen raporteissa tulostetaan täydellinen tilinumero, (esimerkiksi <strong>110140-070-0101</strong>).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-627">For account and transaction detail reports, the fully qualified account is printed (for example, <strong>110140-070-0101</strong>).</span></span> <span data-ttu-id="2c7b9-628">Jos liittyvän rivimäärityksen <strong>Linkki taloushallinnon dimensioihin</strong> -sarakkeessa on määritetty alueita, hakasulkeissa olevaa aluetta käsitellään samoin kuin yksittäistä arvoa (esimerkiksi <strong>[110140:110700]-070-[0101:0200]</strong>).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-628">If ranges have been specified in the <strong>Link to Financial Dimensions</strong> column in an associated row definition, the range is enclosed in square brackets and is treated as a single value (for example, <strong>[110140:110700]-070-[0101:0200]</strong>).</span></span> <span data-ttu-id="2c7b9-629">Talousraporteissa ja korkean tason raporteissa, jotka voivat olla yhdistelmiä useista tileistä, tulostetaan taloushallinnon tietojen linkki rivimäärityksestä (esimerkiksi <strong>1100:1200</strong>).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-629">For financial reports and high-level reports that are a combination of several accounts, the financial data link from the row definition is printed (for example, <strong>1100:1200</strong>).</span></span></td>
+    </tr>
+    <tr>
+    <td><span data-ttu-id="2c7b9-630">FILL</span><span class="sxs-lookup"><span data-stu-id="2c7b9-630">FILL</span></span></td>
+    <td><span data-ttu-id="2c7b9-631">Täytä soluun merkki, joka on heittomerkkien sisällä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-631">Fill the cell with a character that you enclose in single quotation marks.</span></span> <span data-ttu-id="2c7b9-632">Jos et syötä merkkiä, sarake on tyhjä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-632">If you don't enter a character, the column is empty.</span></span> <span data-ttu-id="2c7b9-633">Esimerkiksi sarakkeen, jolla on ellipsi (...), voi täyttää syöttämällä <strong>FILL</strong> <strong>'.'</strong>.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-633">For example, to fill a column with an ellipsis (...), enter <strong>FILL</strong> <strong>'.'</strong>.</span></span></td>
+    </tr>
+    <tr>
+    <td><span data-ttu-id="2c7b9-634">PAGE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-634">PAGE</span></span></td>
+    <td><span data-ttu-id="2c7b9-635">Lisää raporttiin pystysuora sivunvaihto.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-635">Insert a vertical page break in the report.</span></span> <span data-ttu-id="2c7b9-636"><strong>SIVU</strong>-sarakkeen oikealla puolella olevat sarakkeet tulevat eri sivulle.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-636">The columns that are to the right of the <strong>PAGE</strong> column appear on a different page.</span></span></td>
+    </tr>
+    <tr>
+    <td><span data-ttu-id="2c7b9-637">ATTR</span><span class="sxs-lookup"><span data-stu-id="2c7b9-637">ATTR</span></span></td>
+    <td><span data-ttu-id="2c7b9-638">Jos kirjanpitojärjestelmä tukee määritteitä, näytä sarakkeessa tilin tai tapahtuman määrite.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-638">If your accounting system supports attributes, display an account or transaction attribute in the column.</span></span> <span data-ttu-id="2c7b9-639">Määrite, jota käytetään yhdessä täydellisessä tilissä, poimii taloushallinnon tiedoista tilin tai tapahtuman taustatietoja.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-639">An attribute, which must apply to a single full account, extracts underlying account or transaction information from the financial data.</span></span> <span data-ttu-id="2c7b9-640">Tilitason määritteet näyttävät tietoja tilistä, ja tapahtumatason määritteet näyttävät tietoja tapahtuman kirjaushetkeltä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-640">Account-level attributes display data from the account, and transaction-level attributes display data that occurred at the time that the transaction was posted.</span></span> <span data-ttu-id="2c7b9-641">Kun valitset saraketyypiksi <strong>MÄÄR</strong>, määritä sarakemäärityksen <strong>Kirjauskoodi/määriteryhmä</strong>-tietorivillä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-641">If you select <strong>ATTR</strong> as the column type, specify the attribute category in the <strong>Book Code/Attribute Category</strong> detail row of the column definition.</span></span></td>
+    </tr>
+    </tbody>
+    </table>
+
+### <a name="financial-dimensions-column"></a><span data-ttu-id="2c7b9-642">Taloushallinnon dimensioiden sarake</span><span class="sxs-lookup"><span data-stu-id="2c7b9-642">Financial Dimensions column</span></span>
+
+<span data-ttu-id="2c7b9-643">Seuraavia **sarakkeen määrityksen** rivien määrityksiä käytetään sarakkeissa, joiden sarakelaji on **FD** (summat taloushallinnon dimensioista).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-643">The following **Column Definition** row definitions apply to columns that have a column type of **FD** (Amounts from financial dimensions).</span></span>
+
+#### <a name="book-codeattribute-category-cell"></a><span data-ttu-id="2c7b9-644">Kirjakoodi/määriteluokka-solu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-644">Book Code/Attribute Category cell</span></span>
+
+<span data-ttu-id="2c7b9-645">**Kirjakoodi/määriteluokka**-solu määrittää **FD**-sarakkeen tietojen kirjakoodin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-645">The **Book Code/Attribute Category** cell identifies the book code for the data in the **FD** column.</span></span> <span data-ttu-id="2c7b9-646">Sarakkeen määritys voi sisältää useita toteutuneiden tietojen, budjetin ja tilastojen sarakkeita.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-646">A column definition can include multiple actual, budget, and statistical columns.</span></span> <span data-ttu-id="2c7b9-647">Sarakkeen määrityksessä voidaan näyttää myös erilaisia jaksoja, kuten kuluva tai vuoden alusta, sekä erilaisia summia.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-647">A column definition can also display different periods, such as current or year-to-date, and different amounts.</span></span> <span data-ttu-id="2c7b9-648">Kirjakoodien luettelo vaikuttaa toteutuneiden, budjetin ja tilastojen (muu kuin taloushallinto) asetuksiin, jotka on määritetty taloushallinnon tiedoissa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-648">The list of book codes reflects the actual, budget, and statistical (non-financial) options that have been established in your financial data.</span></span>
+
+#### <a name="fiscal-year-cell"></a><span data-ttu-id="2c7b9-649">Tilikausi-solu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-649">Fiscal Year cell</span></span>
+
+<span data-ttu-id="2c7b9-650">**Tilikausi**-solu määrittää tilikauden, jonka sarake sisältää.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-650">The **Fiscal Year** cell identifies the fiscal year that the column should include.</span></span> <span data-ttu-id="2c7b9-651">Vuosi voi olla suhteessa perusvuoteen, joka on määritetty raportin luomisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-651">The year can be relative to the base year that is specified when the report is generated.</span></span> <span data-ttu-id="2c7b9-652">Valittavissa ovat seuraavat vaihtoehdot.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-652">The following options are available.</span></span>
+
+| <span data-ttu-id="2c7b9-653">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="2c7b9-653">Option</span></span>  | <span data-ttu-id="2c7b9-654">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-654">Description</span></span>                                                                                                                  |
+|---------|------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="2c7b9-655">PERUS</span><span class="sxs-lookup"><span data-stu-id="2c7b9-655">BASE</span></span>    | <span data-ttu-id="2c7b9-656">Käytä raportin ajassa määritettyä perusvuotta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-656">Use the base year that is specified at report time.</span></span>                                                                          |
+| <span data-ttu-id="2c7b9-657">BASE+\#</span><span class="sxs-lookup"><span data-stu-id="2c7b9-657">BASE+\#</span></span> | <span data-ttu-id="2c7b9-658">Käytä vuotta, joka on \# vuotta perusvuoden jälkeen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-658">Use the year that is \# years after the base year.</span></span> <span data-ttu-id="2c7b9-659">Voit käyttää esimerkiksi kolmatta vuotta perusvuoden jälkeen syöttämällä **BASE+3**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-659">For example, to use the third year after the base year, enter **BASE+3**.</span></span> |
+| <span data-ttu-id="2c7b9-660">BASE-\#</span><span class="sxs-lookup"><span data-stu-id="2c7b9-660">BASE-\#</span></span> | <span data-ttu-id="2c7b9-661">Käytä vuotta, joka on \# vuotta ennen perusvuotta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-661">Use the year that is \# years before the base year.</span></span> <span data-ttu-id="2c7b9-662">Voit käyttää esimerkiksi edellistä vuotta syöttämällä **BASE-1**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-662">For example, to use the previous year, enter **BASE-1**.</span></span>                 |
+| \#      | <span data-ttu-id="2c7b9-663">Syötä toteutunut tilikausi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-663">Enter the actual fiscal year.</span></span>                                                                                                |
+
+#### <a name="period-cell"></a><span data-ttu-id="2c7b9-664">Jakso-solu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-664">Period cell</span></span>
+
+<span data-ttu-id="2c7b9-665">**Jakso**-solu määrittää tilikaudet, jonka sarake sisältää.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-665">The **Period** cell identifies the fiscal periods that the column should include.</span></span> <span data-ttu-id="2c7b9-666">Jakso voi olla suhteessa perusjaksoon, joka määritetään raportin luomisen yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-666">The period can be relative to the base period that is specified when the report is generated.</span></span> <span data-ttu-id="2c7b9-667">Valittavissa ovat seuraavat vaihtoehdot.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-667">The following options are available.</span></span>
+
+| <span data-ttu-id="2c7b9-668">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="2c7b9-668">Option</span></span>          | <span data-ttu-id="2c7b9-669">kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-669">Description</span></span> |
+|-----------------|-------------|
+| <span data-ttu-id="2c7b9-670">PERUS</span><span class="sxs-lookup"><span data-stu-id="2c7b9-670">BASE</span></span>            | <span data-ttu-id="2c7b9-671">Käytä perusjaksoa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-671">Use the base period.</span></span> |
+| <span data-ttu-id="2c7b9-672">BASE+\#</span><span class="sxs-lookup"><span data-stu-id="2c7b9-672">BASE+\#</span></span>         | <span data-ttu-id="2c7b9-673">Käytä jaksoa, joka on \# jaksoa perusjakson jälkeen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-673">Use the period that is \# periods after the base period.</span></span> <span data-ttu-id="2c7b9-674">Voit käyttää esimerkiksi kolmatta jaksoa perusjakson jälkeen syöttämällä **BASE+3**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-674">For example, to use the third period after the base period, enter **BASE+3**.</span></span> |
+| <span data-ttu-id="2c7b9-675">BASE-\#</span><span class="sxs-lookup"><span data-stu-id="2c7b9-675">BASE-\#</span></span>         | <span data-ttu-id="2c7b9-676">Käytä jaksoa, joka on \# jaksoa ennen perusjaksoa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-676">Use the period that is \# periods before the base period.</span></span> <span data-ttu-id="2c7b9-677">Voit käyttää esimerkiksi edellistä jaksoa syöttämällä **BASE-1**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-677">For example, to use the previous period, enter **BASE-1**.</span></span> |
+| <span data-ttu-id="2c7b9-678">BASE-\#:BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-678">BASE-\#:BASE</span></span>    | <span data-ttu-id="2c7b9-679">Useiden jaksojen käyttäminen on mahdollista niin, että aloitat useiden jaksojen käyttämisen ennen perusjaksoa ja jatkat perusjaksoon asti.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-679">Use multiple periods, from several periods before the base period through the base period.</span></span> <span data-ttu-id="2c7b9-680">Jos haluat käyttää esimerkiksi kolmea edellistä jaksoa ja perusjaksoa, syötä **BASE-3:BASE**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-680">For example, to use the three previous periods and the base period, enter **BASE-3:BASE**.</span></span> |
+| <span data-ttu-id="2c7b9-681">BASE:BASE+\#</span><span class="sxs-lookup"><span data-stu-id="2c7b9-681">BASE:BASE+\#</span></span>    | <span data-ttu-id="2c7b9-682">Useiden jaksojen käyttäminen on mahdollista niin, että aloitat perusjaksosta ja jatkat käyttämistä useita jaksoja perusjakson jälkeen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-682">Use multiple periods, from the base period through several periods after the base period.</span></span> <span data-ttu-id="2c7b9-683">Voit käyttää esimerkiksi perusjaksoa ja seuraavaa kahta jaksoa syöttämällä **BASE:BASE+2**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-683">For example, to use the base period and the following two periods, enter **BASE:BASE+2**.</span></span> |
+| <span data-ttu-id="2c7b9-684">BASE-\#:BASE+\#</span><span class="sxs-lookup"><span data-stu-id="2c7b9-684">BASE-\#:BASE+\#</span></span> | <span data-ttu-id="2c7b9-685">Useiden jaksojen käyttäminen on mahdollista niin, että aloitat useita jaksoja ennen perusjaksoa alkavilla jaksoilla ja jatkat useita jaksoja perusjakson jälkeen jatkuviin jaksoihin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-685">Use multiple periods, from several periods before the base period to several periods after the base period.</span></span> <span data-ttu-id="2c7b9-686">Jos haluat käyttää esimerkiksi kolmea edellistä jaksoa, perusjaksoa ja seuraavia kahta jaksoa, syötä **BASE-3:BASE+2**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-686">For example, to use the three previous periods, the base period, and the following two periods, enter **BASE-3:BASE+2**.</span></span> |
+| <span data-ttu-id="2c7b9-687">1:BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-687">1:BASE</span></span>          | <span data-ttu-id="2c7b9-688">Useiden jaksojen käyttäminen on mahdollista niin, että aloitat ensimmäisestä jaksosta perusjaksoon asti.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-688">Use multiple periods, from the first period through the base period.</span></span> |
+| \#              | <span data-ttu-id="2c7b9-689">Käytä aina tiettyä jaksonumeroa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-689">Always use a specific period number.</span></span> <span data-ttu-id="2c7b9-690">Tämän toiminnon käyttämistä ei suositella, koska se vähentää sarakkeen määrityksen joustavuutta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-690">We don't recommend that you use this option, because it reduces the flexibility of the column definition.</span></span> |
+| <span data-ttu-id="2c7b9-691">\#                                      : \#</span><span class="sxs-lookup"><span data-stu-id="2c7b9-691">\#:\#</span></span>           | <span data-ttu-id="2c7b9-692">Käytä aina tiettyä jaksoväliä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-692">Always use a specific range of periods.</span></span> <span data-ttu-id="2c7b9-693">Tämän toiminnon käyttämistä ei suositella, koska se vähentää sarakkeen määrityksen joustavuutta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-693">We don't recommend that you use this option, because it reduces the flexibility of the column definition.</span></span> |
+
+<span data-ttu-id="2c7b9-694">Voit siirtyä tilikauden ulkopuolelle minkä tahansa jakson määrityksissä. Voit myös yhdistää jaksoväleissä eri vuosia.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-694">You can go beyond fiscal year boundaries in any of the period specifications, and you can mix years in a range of periods.</span></span> <span data-ttu-id="2c7b9-695">Esimerkiksi voit määrittää kausia, jotka on **BASE-5** (esittämään viimeisintä kuutta ajanjaksoa) ja ajaa raportin, jossa on peruskautena 2.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-695">For example, you specify the periods as **BASE-5** (to represent the past six periods) and run a report that has a base period of 2.</span></span> <span data-ttu-id="2c7b9-696">Tällöin raportissa näkyy tietoja määritetyn tilikauden kahdesta ensimmäisestä kaudesta ja edellisen tilikauden viimeisestä neljästä kaudesta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-696">In this case, the report shows data for the first two periods of the specified fiscal year and the last four periods of the previous fiscal year.</span></span>
+
+### <a name="specify-the-periods-for-an-fd-column"></a><span data-ttu-id="2c7b9-697">TD-sarakkeen kausien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-697">Specify the periods for an FD column</span></span>
+
+1. <span data-ttu-id="2c7b9-698">Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-698">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-699">Kaksoisnapsauta **FD**-sarakkeessa **Jakso**-rivin solua. Valitse sitten vaihtoehto luettelosta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-699">In an **FD** column, double-click the cell in the **Period** row, and then select an option in the list.</span></span>
+3. <span data-ttu-id="2c7b9-700">Tee kaava valmiiksi siirtymisruudun yläpuolella olevalla kaavarivillä tai **Jakso**-solussa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-700">In the formula bar above the navigation pane, or in the **Period** cell, complete the formula.</span></span> <span data-ttu-id="2c7b9-701">Korvaa kaikki numeromerkit (\#) sopivalla arvolla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-701">Replace any number sign (\#) with the appropriate value.</span></span>
+
+#### <a name="periods-covered-cell"></a><span data-ttu-id="2c7b9-702">Katetut jaksot -solu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-702">Periods Covered cell</span></span>
+
+<span data-ttu-id="2c7b9-703">**Katetut jaksot** -solu määrittää summan, joka näytetään sarakkeessa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-703">The **Periods Covered** cell identifies the amount that the column should display.</span></span> <span data-ttu-id="2c7b9-704">Tämä summa on suhteessa sarakkeen **Tilikausi**- ja **Jakso**-soluun.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-704">This amount is relative to the value in the **Fiscal Year** and **Period** cells for the column.</span></span> <span data-ttu-id="2c7b9-705">Valittavissa ovat seuraavat vaihtoehdot.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-705">The following options are available.</span></span>
+
+| <span data-ttu-id="2c7b9-706">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="2c7b9-706">Option</span></span>      | <span data-ttu-id="2c7b9-707">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-707">Description</span></span>                                                                 |
+|-------------|-----------------------------------------------------------------------------|
+| <span data-ttu-id="2c7b9-708">PERIODIC</span><span class="sxs-lookup"><span data-stu-id="2c7b9-708">PERIODIC</span></span>    | <span data-ttu-id="2c7b9-709">Näytä nykyisen jakson tai jaksovälin tehtävän summa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-709">Display the sum of the activity for the current period or range of periods.</span></span> |
+| <span data-ttu-id="2c7b9-710">PERIODIC/BB</span><span class="sxs-lookup"><span data-stu-id="2c7b9-710">PERIODIC/BB</span></span> | <span data-ttu-id="2c7b9-711">Näytä nykyisen jakson tai jaksovälin alkusaldo.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-711">Display the beginning balance for the current period or range of periods.</span></span>   |
+| <span data-ttu-id="2c7b9-712">YTD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-712">YTD</span></span>         | <span data-ttu-id="2c7b9-713">Näytä tehtävän summa vuoden alusta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-713">Display the sum of the year-to-date activity.</span></span>                               |
+| <span data-ttu-id="2c7b9-714">YTD/BB</span><span class="sxs-lookup"><span data-stu-id="2c7b9-714">YTD/BB</span></span>      | <span data-ttu-id="2c7b9-715">Näytä vuoden alkusaldo.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-715">Display the beginning balance for the year.</span></span>                                 |
+
+### <a name="specify-the-periods-that-are-covered-for-an-fd-column"></a><span data-ttu-id="2c7b9-716">FD-sarakkeen katettujen jaksojen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="2c7b9-716">Specify the periods that are covered for an FD column</span></span>
+
+1. <span data-ttu-id="2c7b9-717">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-717">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-718">Kaksoisnapsauta **FD**-sarakkeessa **Katetut jaksot** -rivin solua. Valitse sitten vaihtoehto luettelosta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-718">In an **FD** column, double-click the cell in the **Periods Covered** row, and select an option in the list.</span></span>
+
+### <a name="attribute-filter-in-a-column-definition"></a><span data-ttu-id="2c7b9-719">Sarakkeen määrityksen määritesuodatin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-719">Attribute filter in a column definition</span></span>
+
+<span data-ttu-id="2c7b9-720">Määritteet ovat taloushallinnon tietojen arvoja, jotka määrittävät tilin tai tapahtuman tarkemmin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-720">Attributes are financial data values that further define an account or transaction.</span></span> <span data-ttu-id="2c7b9-721">Tilimääritteitä ovat **Käyttöomaisuus**, **Velka**, **Tuotto** ja **Kulu**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-721">The account attributes include **Asset**, **Liability**, **Revenue**, and **Expense**.</span></span> <span data-ttu-id="2c7b9-722">Tapahtumamääritteitä ovat **Tapahtuman kuvaus** ja **Tapahtuman käyttöpäivämäärä**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-722">The transaction attributes include **Transaction Description** and **Transaction Apply Date**.</span></span> <span data-ttu-id="2c7b9-723">Määritetuki voi vaihdella eri Microsoft Dynamics ERP -järjestelmien kesken.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-723">Attribute support might differ between Microsoft Dynamics ERP systems.</span></span> <span data-ttu-id="2c7b9-724">**Määritesuodatin**-solu rajoittaa **FD**-sarakkeiden tiedot määritettyihin määriteluokkien arvoihin tai alueisiin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-724">The **Attribute Filter** cell restricts the data in **FD** columns to specific values or ranges for attribute categories.</span></span> <span data-ttu-id="2c7b9-725">Vaikka tätä toimintoa voi käyttää yhdessä **ATTR**-sarakkeen kanssa, **ATTR**-sarake ei ole pakollinen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-725">Although this feature can be used together with an **ATTR** column, the **ATTR** column isn't required.</span></span> <span data-ttu-id="2c7b9-726">**FD**-sarake sisältää tilien tai tapahtumien rajoituksen, jonka raportti saa määritesuodattimesta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-726">In an **FD** column, there is a limit on the accounts or transactions that the report will include from the attribute filter.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="2c7b9-727">Jos haluat tarkistaa, mitä määritteitä ERP-järjestelmäsi tukee, tutustu järjestelmäsi integrointioppaaseen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-727">To see which attributes your ERP system supports, see the integration guide for your system.</span></span>
+
+#### <a name="apply-an-attribute-filter-for-an-fd-column-on-a-report"></a><span data-ttu-id="2c7b9-728">Määritesuodattimen käyttäminen raportin FD-sarakkeessa</span><span class="sxs-lookup"><span data-stu-id="2c7b9-728">Apply an attribute filter for an FD column on a report</span></span>
+
+1. <span data-ttu-id="2c7b9-729">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-729">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-730">Kaksoisnapsauta **TD**-sarakkeen **Määritesuodatin**-solua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-730">Double-click the **Attribute Filter** cell for an **FD** column.</span></span>
+3. <span data-ttu-id="2c7b9-731">Kaksoisnapsauta **Määritesuodatin**-valintaikkunan **Määrite**-sarakkeen solua ja valitse sitten haluamasi suodatintyyppi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-731">In the **Attribute Filter** dialog box, double-click a cell in the **Attribute** column, and then select the filter type.</span></span>
+4. <span data-ttu-id="2c7b9-732">Voit rajoittaa tuloksia lisää syöttämällä **Mistä**- ja **Mihin**-sarakkeiden alue.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-732">To further limit the results, enter a range in the **From** and **To** columns.</span></span> <span data-ttu-id="2c7b9-733">**Mistä**-solussa on oltava arvo.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-733">The **From** cell must contain a value.</span></span>
+5. <span data-ttu-id="2c7b9-734">Napsauta **OK**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-734">Click **OK**.</span></span>
+
+#### <a name="example-of-an-attribute-filter"></a><span data-ttu-id="2c7b9-735">Määritesuodattimen esimerkki</span><span class="sxs-lookup"><span data-stu-id="2c7b9-735">Example of an attribute filter</span></span>
+
+<span data-ttu-id="2c7b9-736">Seuraavassa esimerkissä esitetään osa sarakkeen kuvausta, joka sisältää tilimääritteen **Kirjakoodi/määriteluokka**-rivillä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-736">The following example shows part of a column description that has an account attribute in the **Book Code/Attribute Category** row.</span></span> <span data-ttu-id="2c7b9-737">Tämän sarakkeen määritesuodatin määrittää arvovälin, joka sisällytetään raporttiin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-737">The attribute filter for this column specifies the range of values to include in the report.</span></span>
+
+|                              | <span data-ttu-id="2c7b9-738">A</span><span class="sxs-lookup"><span data-stu-id="2c7b9-738">A</span></span>    | <span data-ttu-id="2c7b9-739">B</span><span class="sxs-lookup"><span data-stu-id="2c7b9-739">B</span></span>                   |
+|------------------------------|------|---------------------|
+| <span data-ttu-id="2c7b9-740">Saraketyyppi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-740">Column Type</span></span>                  | <span data-ttu-id="2c7b9-741">KUV</span><span class="sxs-lookup"><span data-stu-id="2c7b9-741">DESC</span></span> | <span data-ttu-id="2c7b9-742">TD</span><span class="sxs-lookup"><span data-stu-id="2c7b9-742">FD</span></span>                  |
+| <span data-ttu-id="2c7b9-743">Kirjauskoodi/määriteryhmä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-743">Book Code/Attribute Category</span></span> |      | <span data-ttu-id="2c7b9-744">TOTEUTUNUT</span><span class="sxs-lookup"><span data-stu-id="2c7b9-744">ACTUAL</span></span>              |
+| <span data-ttu-id="2c7b9-745">Tilikausi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-745">Fiscal Year</span></span>                  |      | <span data-ttu-id="2c7b9-746">BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-746">BASE</span></span>                |
+| <span data-ttu-id="2c7b9-747">Kausi</span><span class="sxs-lookup"><span data-stu-id="2c7b9-747">Period</span></span>                       |      | <span data-ttu-id="2c7b9-748">1:BASE</span><span class="sxs-lookup"><span data-stu-id="2c7b9-748">1:BASE</span></span>              |
+| <span data-ttu-id="2c7b9-749">Katetut kaudet</span><span class="sxs-lookup"><span data-stu-id="2c7b9-749">Periods Covered</span></span>              |      | <span data-ttu-id="2c7b9-750">KAUSITTAINEN</span><span class="sxs-lookup"><span data-stu-id="2c7b9-750">PERIODIC</span></span>            |
+| <span data-ttu-id="2c7b9-751">...</span><span class="sxs-lookup"><span data-stu-id="2c7b9-751">...</span></span>                          |      |                     |
+| <span data-ttu-id="2c7b9-752">Sarakkeen leveys</span><span class="sxs-lookup"><span data-stu-id="2c7b9-752">Column Width</span></span>                 | <span data-ttu-id="2c7b9-753">30</span><span class="sxs-lookup"><span data-stu-id="2c7b9-753">30</span></span>   |                     |
+| <span data-ttu-id="2c7b9-754">...</span><span class="sxs-lookup"><span data-stu-id="2c7b9-754">...</span></span>                          |      |                     |
+| <span data-ttu-id="2c7b9-755">Määritesuodatin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-755">Attribute Filter</span></span>             |      | <span data-ttu-id="2c7b9-756">Viite=\[01:10\]</span><span class="sxs-lookup"><span data-stu-id="2c7b9-756">Reference=\[01:10\]</span></span> |
+
+### <a name="dimension-filter-in-a-column-definition"></a><span data-ttu-id="2c7b9-757">Sarakkeen määrityksen dimensiosuodatin</span><span class="sxs-lookup"><span data-stu-id="2c7b9-757">Dimension filter in a column definition</span></span>
+
+<span data-ttu-id="2c7b9-758">Dimensiosuodatinta käytetään rajoitettaessa **FD**-sarake tietyille dimensioarvoille.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-758">A dimension filter is used to restrict the **FD** column to specific dimension values.</span></span> <span data-ttu-id="2c7b9-759">Suodatin voi sisältää yksittäisen dimension, dimensioiden alueen tai dimensioryhmän.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-759">The filter can include a single dimension, a range of dimensions, or a group of dimensions.</span></span> <span data-ttu-id="2c7b9-760">Suodatin voi sisältää myös dimensioarvojoukkoja.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-760">The filter can also include dimension value sets.</span></span> <span data-ttu-id="2c7b9-761">Koska dimensioarvot voivat vaihdella, kohteeseen ..\\financial-dimensions\\dimension perustuvan järjestelmän ei tarvitse olla tietyn pituinen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-761">Because dimension values can vary, a ..\\financial-dimensions\\dimension-based system doesn't have to correspond to an exact length.</span></span> <span data-ttu-id="2c7b9-762">Suodatin otetaan käyttöön siitä huolimatta, sisältääkö raportti raportointipuun.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-762">The filter is applied, regardless of whether the report includes a reporting tree.</span></span> <span data-ttu-id="2c7b9-763">Yleismerkkejä (\* tai?) voi käyttää missä tahansa kohdassa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-763">You can use a wildcard character (\* or ?) in any position.</span></span> <span data-ttu-id="2c7b9-764">Lisää useita tilejä määritettäessä pilkku tilien väliin, kuten seuraavassa esimerkissä: +Tili=\[1200\], +Tili=\[1100\], Osasto=\[01?\] Voit vastaanottaa tietyn tilin kaikki osastot sulkemalla osaston dimension pois dimensiosuodattimesta.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-764">When you specify multiple accounts, put a comma between accounts, as in the following example: +Account=\[1200\], +Account=\[1100\], Department=\[01?\] To receive all departments for a specific account, you can exclude the Department dimension from the dimension filter.</span></span> <span data-ttu-id="2c7b9-765">Esimerkiksi molemmat seuraavista dimensiosuodattimista käsitellään samalla tavalla:</span><span class="sxs-lookup"><span data-stu-id="2c7b9-765">For example, both of the following dimension filters are handled in the same way:</span></span>
+
+- <span data-ttu-id="2c7b9-766">+tili=\[1100\],osasto</span><span class="sxs-lookup"><span data-stu-id="2c7b9-766">+Account=\[1100\],Department</span></span>
+- <span data-ttu-id="2c7b9-767">+tili=\[1100\]</span><span class="sxs-lookup"><span data-stu-id="2c7b9-767">+Account=\[1100\]</span></span>
+
+<span data-ttu-id="2c7b9-768">Voit käyttää myös mitä tahansa aakkosnumeerisen merkin yhdistelmää tarkassa vastineessa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-768">You can also use any combination of alphanumeric characters for exact matching, and you can define partial dimensions.</span></span> <span data-ttu-id="2c7b9-769">Esimerkiksi **Sijainti = \[10\*\]** sisältää kaikki sijainnin dimensioarvot, jotka alkavat arvolla 10.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-769">For example, **Location = \[10\*\]** includes all location dimension values that begin with 10.</span></span>
+
+#### <a name="apply-a-dimension-filter-for-a-column-on-a-report"></a><span data-ttu-id="2c7b9-770">Dimensiosuodattimen käyttäminen raportin sarakkeessa</span><span class="sxs-lookup"><span data-stu-id="2c7b9-770">Apply a dimension filter for a column on a report</span></span>
+
+1. <span data-ttu-id="2c7b9-771">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-771">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-772">Kaksoisnapsauta **FD**-sarakkeen **Dimensiosuodatin**-solua.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-772">Double-click the **Dimension Filter** cell for an **FD** column.</span></span>
+3. <span data-ttu-id="2c7b9-773">Syötä **Dimensiot**-valintaikkunaan käytettävät suodattimet.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-773">In the **Dimensions** dialog box, enter the filters to apply.</span></span>
+4. <span data-ttu-id="2c7b9-774">Napsauta **OK**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-774">Click **OK**.</span></span>
+
+### <a name="format-a-multiple-currency-report-in-a-column-definition"></a><span data-ttu-id="2c7b9-775">Usean valuutan raportin muotoileminen sarakkeen määrityksessä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-775">Format a multiple-currency report in a column definition</span></span>
+
+<span data-ttu-id="2c7b9-776">Usean valuutan raportti voi näyttää summat kirjanpidon kirjanpitovaluutassa, kirjanpidon raportointivaluutassa, alkuperäisen tapahtuman valuutassa tai muunnetussa raportointivaluutassa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-776">A multiple-currency report can display amounts in the ledger's accounting currency, the ledger's reporting, the originating transaction currency, or the translated reporting currency.</span></span> <span data-ttu-id="2c7b9-777">Yrityksen kirjanpitovaluutta määritetään kirjanpidon asetuksissa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-777">A company's accounting currency is defined in the Ledgers setup.</span></span> <span data-ttu-id="2c7b9-778">Älä sekoita tätä asetusta käyttöjärjestelmän järjestelmän alueellisiin asetuksiin, joissa määritetään raporteissa käytettävät oletusvaluutan symbolit.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-778">Don't confuse this setting with the operating system's regional options setting, where you can configure the default currency symbols that are used on reports.</span></span> <span data-ttu-id="2c7b9-779">Seuraavat valuuttaan liittyvät solut ovat käytettävissä sarakkeen määrityksessä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-779">The following currency-related cells are available in the column definition:</span></span>
+
+- <span data-ttu-id="2c7b9-780">**Valuutan näyttö** – määrittää, minkä tyypin valuutassa (kirjanpito, raportointi, tapahtuma tai muunnettu raportointi) tapahtumat näytetään.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-780">**Currency Display** – Specify the type of currency (accounting, reporting, transaction, or translated reporting) that the transactions are displayed in.</span></span> <span data-ttu-id="2c7b9-781">Raportointivaluuttaan muuntamistoimintoa kutsutaan joskus valuutan muuntamiseksi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-781">Translated to a reporting currency functionality is sometimes referred to as currency translation.</span></span> <span data-ttu-id="2c7b9-782">Valuutan muunnon avulla kirjanpidon summat voidaan raportoida muussa kuin yrityksen perusvaluutassa tai raportointivaluutassa, jossa tapahtuma annettiin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-782">Currency translation is the ability to report general ledger amounts in a currency that might not be the functional or reporting currency of the company or the currency that the transaction was entered in.</span></span>
+- <span data-ttu-id="2c7b9-783">**Valuuttasuodatin** – Määritä valuuttasuodatin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-783">**Currency Filter** – Specify a currency filter.</span></span> <span data-ttu-id="2c7b9-784">Vain valitussa valuutassa syötetyt tapahtumat näytetään raportissa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-784">Only transactions that are entered in the selected currency are displayed on the report.</span></span>
+
+> 
+<span data-ttu-id="2c7b9-785">Seuraavien vaiheiden avulla voit määrittää yrityksen kirjanpitovaluutan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-785">To determine a company's accounting currency, follow these steps.</span></span>
+
+1. <span data-ttu-id="2c7b9-786">Valitse raporttien suunnitteluohjelman **Yritys**-valikosta **Yritykset**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-786">In Report Designer, on the **Company** menu, click **Companies**.</span></span>
+2. <span data-ttu-id="2c7b9-787">Valitse **Yritykset**-valintaikkunassa yritys. Valitse sitten **Näytä**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-787">In the **Companies** dialog box, select a company, and then click **View**.</span></span>
+3. <span data-ttu-id="2c7b9-788">Voit tarkastella valitulle yritykselle määritettyä valuuttaa **Alueelliset asetukset** -kohdan **Näytä yritys** -valintaikkunassa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-788">In the **View Company** dialog box, under **Regional options**, you can view the currency that is defined for the selected company.</span></span>
+
+#### <a name="specify-the-currency-on-a-multiple-currency-report"></a><span data-ttu-id="2c7b9-789">Valuutan määrittäminen usean valuutan raportissa</span><span class="sxs-lookup"><span data-stu-id="2c7b9-789">Specify the currency on a multiple-currency report</span></span>
+
+1. <span data-ttu-id="2c7b9-790">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-790">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-791">Kaksoisnapsauta soveltuvan **FD**-sarakkeen **Valuutan näyttö** -solua ja valitse valuutan tietojen näyttöasetukseksi **Kirjanpitovaluutta**, **Kirjanpidon raportointi**, tapahtumavaluutta tai valitse muunto toiseksi raportointivaluutaksi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-791">Double-click the **Currency Display** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Ledger accounting currency**, **Ledger reporting**, transaction currency, or select to translate to a different reporting currency.</span></span>
+3. <span data-ttu-id="2c7b9-792">Kaksoisnapsauta soveltuvan **FD**-sarakkeen **Valuutan suodatin** -solua ja valitse luettelosta soveltuva valuuttakoodi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-792">Double-click the **Currency Filter** cell in the appropriate **FD** column, and then select the appropriate currency code in the list.</span></span> <span data-ttu-id="2c7b9-793">Vain tässä valuutassa syötetyt tapahtumat näytetään raportissa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-793">Only transactions that are entered in this currency are displayed on the report.</span></span>
+
+
+### <a name="example-for-currency-display-and-currency-filter-cells"></a><span data-ttu-id="2c7b9-794">Valuutan näytön ja valuuttasuodattimen solujen esimerkkejä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-794">Example for Currency Display and Currency Filter cells</span></span>
+
+<span data-ttu-id="2c7b9-795">Paula on tehnyt sarakkeen määrityksessä seuraavat valuuttavalinnat:</span><span class="sxs-lookup"><span data-stu-id="2c7b9-795">Phyllis has made the following currency selections in her column definition:</span></span>
+
+- <span data-ttu-id="2c7b9-796">**Valuuttasuodatin:** Jeni</span><span class="sxs-lookup"><span data-stu-id="2c7b9-796">**Currency Filter:** Yen</span></span>
+- <span data-ttu-id="2c7b9-797">**Valuutan näyttö:** kirjanpitovaluutta kirjanpidosta (USA:n dollarit)</span><span class="sxs-lookup"><span data-stu-id="2c7b9-797">**Currency Display:** Accounting currency from Ledger (U.S. dollars)</span></span>
+
+<span data-ttu-id="2c7b9-798">Paulan valitsemasta valuuttasuodattimesta johtuen raportissa näkyvät vain tapahtumat, jotka on syötetty Japanin jeneinä (JPY).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-798">Because of the currency filter that Phyllis selected, the report includes only transactions that were entered in Japanese yen (JPY).</span></span> <span data-ttu-id="2c7b9-799">Valitusta valuutan näyttöasetuksesta johtuen tapahtumat näkyvät raportissa kirjanpitovaluutassa eli Yhdysvaltojen dollareina (USD).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-799">Because of the currency display that she selected, the report displays those transactions in the accounting currency, U.S. dollars (USD).</span></span>
+
+#### <a name="currency-filter-and-currency-display-combinations"></a><span data-ttu-id="2c7b9-800">Valuuttasuodattimen ja valuutan näytön yhdistelmät</span><span class="sxs-lookup"><span data-stu-id="2c7b9-800">Currency Filter and Currency Display combinations</span></span>
+
+<span data-ttu-id="2c7b9-801">Seuraavassa taulukossa näytetään tulokset, joita saadaan **Valuutan näyttö**- ja **Valuuttasuodatin**-solun erilaisilla yhdistelmillä Paulan tekemien valintojen kanssa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-801">The following table shows the report results that can occur for various combinations of the options in **Currency Display** and **Currency Filter** cells because of the selections that Phyllis made.</span></span> <span data-ttu-id="2c7b9-802">Perusvaluutta on Yhdysvaltojen dollari (USD).</span><span class="sxs-lookup"><span data-stu-id="2c7b9-802">The functional currency is USD.</span></span>
+
+
+| <span data-ttu-id="2c7b9-803">Valuutan näyttö -solu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-803">Currency Display cell</span></span>                        | <span data-ttu-id="2c7b9-804">Valuuttasuodatin-solu</span><span class="sxs-lookup"><span data-stu-id="2c7b9-804">Currency Filter cell</span></span> | <span data-ttu-id="2c7b9-805">Raportin tulos</span><span class="sxs-lookup"><span data-stu-id="2c7b9-805">Report result</span></span> |
+|----------------------------------------------|----------------------|---------------|
+| <span data-ttu-id="2c7b9-806">Tapahtumavaluutta</span><span class="sxs-lookup"><span data-stu-id="2c7b9-806">Transaction currency</span></span>                 | <span data-ttu-id="2c7b9-807">**JENI**</span><span class="sxs-lookup"><span data-stu-id="2c7b9-807">**YEN**</span></span>              | <span data-ttu-id="2c7b9-808">**6 000 Y** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-808">**Y6,000** – The result shows only transactions that were entered in JPY.</span></span> |
+| <span data-ttu-id="2c7b9-809">Kirjanpitovaluutta kirjanpidosta</span><span class="sxs-lookup"><span data-stu-id="2c7b9-809">Accounting currency from Ledger</span></span> | <span data-ttu-id="2c7b9-810">**JENI**</span><span class="sxs-lookup"><span data-stu-id="2c7b9-810">**YEN**</span></span>              |<span data-ttu-id="2c7b9-811">**60 $** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat, jotka näytetään Yhdysvaltojen dollareina.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-811">**$60** – The result shows only transactions that were entered in JPY and displays those transactions in USD.</span></span><p><span data-ttu-id="2c7b9-812"><strong>Huomautus:</strong> Muuntokurssina käytetään noin 100 jeniä yhtä Yhdysvaltojen dollaria kohti.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-812"><strong>Note:</strong> The conversion rate is approximately 100 JPY per USD.</span></span></p> |
+| <span data-ttu-id="2c7b9-813">Kirjanpitovaluutta kirjanpidosta</span><span class="sxs-lookup"><span data-stu-id="2c7b9-813">Accounting currency from Ledger</span></span> | <span data-ttu-id="2c7b9-814">Tyhjä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-814">Empty</span></span>                | <span data-ttu-id="2c7b9-815">**2 310 $** – Tuloksessa näytetään kaikki tiedot kirjanpidossa määritetyssä kirjanpitovaluutassa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-815">**$2,310** – The result shows all data in the accounting currency that is specified in the Ledger.</span></span><p><span data-ttu-id="2c7b9-816"><strong>Huomautus:</strong> Tämä summa on kaikkien tapahtumien summa kirjanpitovaluutassa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-816"><strong>Note:</strong> This amount is the sum of all transactions in accounting currency.</span></span></p> |
+| <span data-ttu-id="2c7b9-817">Tapahtumavaluutta</span><span class="sxs-lookup"><span data-stu-id="2c7b9-817">Transaction currency</span></span>                 | <span data-ttu-id="2c7b9-818">Tyhjä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-818">Empty</span></span>                | <span data-ttu-id="2c7b9-819">**2 250 $** – Tuloksessa näytetään kaikki summat valuutassa, jossa tapahtuma suoritettiin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-819">**$2,250** – The result shows all amounts in the currency that the transaction was performed in.</span></span> <span data-ttu-id="2c7b9-820">Tämä tarkoittaa sitä, että kokonaissummassa eri valuuttojen summat lasketaan yhteen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-820">This means the total is adding together amounts from different currencies.</span></span> |
+
+### <a name="calculation-column-in-a-column-definition"></a><span data-ttu-id="2c7b9-821">Laskenta-sarake sarakkeen määrityksessä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-821">Calculation column in a column definition</span></span>
+
+<span data-ttu-id="2c7b9-822">Sarakkeen tyyppi **CALC** sarakemäärityksessä tukee monimutkaisia laskelmia **Kaava**-solussa ja siinä voi olla operaattorit **+**, **-**, **\***,**/** sekä lausekkeet **IF/THEN/ELSE**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-822">A column type of **CALC** in a column definition supports complex calculations in the **Formula** cell, and can include the **+**, **-**, **\***, and **/** operators, and also **IF/THEN/ELSE** statements.</span></span> <span data-ttu-id="2c7b9-823">Laskenta-sarake, voi myös viitata toiseen sarakkeeseen, myös seuraaviin sarakkeisiin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-823">A calculation column can also refer to any other column, even subsequent columns.</span></span> <span data-ttu-id="2c7b9-824">Laskelmasarake voi myös sisältää tilikauden ja jakson, jotka tukevat sarakkeen otsikoita.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-824">Additionally, a calculation column can also include the fiscal year and period to support headers for the column.</span></span> <span data-ttu-id="2c7b9-825">Laskentakaavan pituus voi olla enintään 1 024 merkkiä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-825">The calculation formula can be up to 1,024 characters long.</span></span> <span data-ttu-id="2c7b9-826">Käytä erityistä muotoilun ohitusta, jos haluat esittää laskutoimituksen tuloksen prosenttilukuna.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-826">To express the calculation result as a percentage, use a special format override.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="2c7b9-827">Kaavojen laskemisen tulokset eivät sisällä arvoja tulostumattomista sarakealueista.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-827">The results of calculation formulas don't include the values in non-printing column ranges.</span></span> <span data-ttu-id="2c7b9-828">Esimerkiksi **A:D** tulostaa **0** (nolla) -arvon, kun taas piilotettujen arvojen **A+B+C** tulostaa arvon.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-828">For example, **A:D** prints **0** (zero), whereas **A+B+C** for non-printing values calculates the value.</span></span>
+
+#### <a name="operators-in-calculation-columns"></a><span data-ttu-id="2c7b9-829">Laskentasarakkeiden operaattorit</span><span class="sxs-lookup"><span data-stu-id="2c7b9-829">Operators in calculation columns</span></span>
+
+<span data-ttu-id="2c7b9-830">Voit lisätä, vähentää, kertoa ja jakaa sarakkeita syöttämällä sarakkeiden kirjaimet laskentajärjestyksessä ja syöttämällä kirjainten väliin sopivan operaattorin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-830">To add, subtract, multiply, or divide columns, enter the column letters in the order of computation, and then use the appropriate operator to separate each column letter.</span></span> <span data-ttu-id="2c7b9-831">Seuraavassa taulukossa esitellään laskentasarakkeessa käytettävät operaattorit.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-831">The following table explains the operators that you can use in a calculation column.</span></span>
+
+| <span data-ttu-id="2c7b9-832">Operaattori</span><span class="sxs-lookup"><span data-stu-id="2c7b9-832">Operator</span></span> | <span data-ttu-id="2c7b9-833">Esimerkkilaskutoimitus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-833">Example calculation</span></span> | <span data-ttu-id="2c7b9-834">kuvaus</span><span class="sxs-lookup"><span data-stu-id="2c7b9-834">Description</span></span> |
+|----------|---------------------|-------------|
+| +        | <span data-ttu-id="2c7b9-835">A+C</span><span class="sxs-lookup"><span data-stu-id="2c7b9-835">A+C</span></span>                 | <span data-ttu-id="2c7b9-836">Laske sarakkeen A ja sarakkeen C summa yhteen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-836">Add the amount in column A to the amount in column C.</span></span> |
+| <span data-ttu-id="2c7b9-837">:</span><span class="sxs-lookup"><span data-stu-id="2c7b9-837">:</span></span>        | <span data-ttu-id="2c7b9-838">A:C A:C-D</span><span class="sxs-lookup"><span data-stu-id="2c7b9-838">A:C A:C-D</span></span>           | <span data-ttu-id="2c7b9-839">Lisää peräkkäiset sarakkeet toisiinsa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-839">Add a range of consecutive columns.</span></span> <span data-ttu-id="2c7b9-840">Esimerkiksi kaava **A:C** laskee sarakkeiden A–C summat yhteen, kun taas kaava **A:C-D** laskee sarakkeiden A–C summat yhteen ja vähentää sitten sarakkeen D summan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-840">For example, the formula **A:C** adds the sums of columns A through C, and the formula **A:C-D** adds the sums of columns A through C, and then subtracts the amount in column D.</span></span> |
+| -        | <span data-ttu-id="2c7b9-841">A-C</span><span class="sxs-lookup"><span data-stu-id="2c7b9-841">A-C</span></span>                 | <span data-ttu-id="2c7b9-842">Vähentää sarakkeen A arvosta sarakkeen C arvon.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-842">Subtract the amount in column A from the amount in column C.</span></span><p><span data-ttu-id="2c7b9-843"><strong>Huomautus:</strong> Voit myös käyttää miinusmerkkiä (-) sarakkeen etumerkin vaihtamiseen.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-843"><strong>Note:</strong> You can also use the minus sign (-) to reverse the signs in a column.</span></span> <span data-ttu-id="2c7b9-844">Esimerkiksi <strong>-A+B</strong> lisää sarakkeen A käänteisen summan sarakkeen B summaan.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-844">For example, use <strong>-A+B</strong> to add the reverse of the amount in column A to the amount in column B.</span></span></p> |
+| \*       | <span data-ttu-id="2c7b9-845">A\*C</span><span class="sxs-lookup"><span data-stu-id="2c7b9-845">A\*C</span></span>                | <span data-ttu-id="2c7b9-846">Kerro sarakkeen A summa sarakkeen C summalla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-846">Multiply the amount in column A by the amount in column C.</span></span> |
+| /        | <span data-ttu-id="2c7b9-847">A/C</span><span class="sxs-lookup"><span data-stu-id="2c7b9-847">A/C</span></span>                 | <span data-ttu-id="2c7b9-848">Jaa sarakkeen A summa sarakkeen C summalla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-848">Divide the amount in column A by the amount in column C.</span></span> |
+
+#### <a name="use-a-calculation-formula-in-a-column-definition"></a><span data-ttu-id="2c7b9-849">Laskentakaavan käyttäminen sarakkeen määrityksessä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-849">Use a calculation formula in a column definition</span></span>
+
+1. <span data-ttu-id="2c7b9-850">Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-850">In Report Designer, open the column definition to modify.</span></span>
+2. <span data-ttu-id="2c7b9-851">Syötä kaava soveltuvaan **CALC**-sarakkeen **Kaava**-soluun.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-851">In the appropriate **CALC** column, enter a formula in the **Formula** cell.</span></span>
+
+#### <a name="complex-calculations"></a><span data-ttu-id="2c7b9-852">Monimutkaiset laskutoimitukset</span><span class="sxs-lookup"><span data-stu-id="2c7b9-852">Complex calculations</span></span>
+
+<span data-ttu-id="2c7b9-853">Monimutkainen laskutoimitus voi sisältää minkä tahansa solun viitteiden, operaattorien, arvojen ja sisäkkäisten sulkeiden tasojen yhdistelmän.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-853">A complex calculation can contain any combination of cell references, operators, values, and levels of nested parentheses.</span></span> <span data-ttu-id="2c7b9-854">Voit esimerkiksi laskea sarakkeiden A ja B keskiarvon käyttämällä laskentakaavaa **((A+B)/2)**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-854">For example, to compute the average of columns A and B, use the calculation formula **((A+B)/2)**.</span></span>
+
+#### <a name="specify-report-cells-in-a-column-calculation"></a><span data-ttu-id="2c7b9-855">Raportin solujen määrittäminen sarakelaskelmassa</span><span class="sxs-lookup"><span data-stu-id="2c7b9-855">Specify report cells in a column calculation</span></span>
+
+<span data-ttu-id="2c7b9-856">Voit viitata raportin tiettyyn soluun syöttämällä sarakkeen kirjaimen ja rivin koodi.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-856">You can refer to a specific report cell by entering a column letter and a row code.</span></span> <span data-ttu-id="2c7b9-857">Esimerkiksi **B.100** viittaa rivin koodiin 100 sarakkeessa B. Voit jakaa koko sarakkeen raportin samassa sarakkeessa olevan tietyn solun summalla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-857">For example, **B.100** refers to row code 100 in column B. You can divide a whole column by a specific report cell amount that is in the same column.</span></span> <span data-ttu-id="2c7b9-858">Esimerkiksi **B/B.100**-laskutoimitus tarkoittaa, että sarakkeen B summa tulee jakaa sarakkeen B rivin koodin 100 mukaisella summalla. Jos laskutoimitus viittaa toisesta sarakkeesta riippuvaan sarakkeeseen, riippuvainen sarake ratkaistaan ensin.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-858">For example, the calculation **B/B.100** means that the amount in column B should be divided by the value in row code 100 in column B. If the calculation refers to a column that depends on another column, the dependent column is resolved first.</span></span> <span data-ttu-id="2c7b9-859">Jos sarakkeeseen viitataan sarakkeessa, joka viittaa ensimmäiseen sarakkeeseen, tuloksena saadaan kehäviittausvirhe.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-859">If you refer a column to another column that refers back to the first column, you will cause a circular reference error.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="2c7b9-860">Tämä laskelma saattaa olla virheellinen, jos muokkaat raportin laskentaprioriteettia.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-860">The calculation might be incorrect if you change the calculation priority for the report.</span></span> <span data-ttu-id="2c7b9-861">Voit määrittää laskennan prioriteetin raportin määrityksen **Asetukset**-välilehdessä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-861">You can set the calculation priority on the **Settings** tab of the report definition.</span></span>
+
+#### <a name="multiply-or-divide-a-column-by-a-base-row"></a><span data-ttu-id="2c7b9-862">Sarakkeen kertominen tai jakaminen perusrivillä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-862">Multiply or divide a column by a base row</span></span>
+
+<span data-ttu-id="2c7b9-863">Voit luoda sarakkeen, joka näyttää kaikki määritetyn sarakkeen arvot perusnumeron prosenttilukuna.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-863">You can create a column that displays all the values in a specified column as a percentage of a base number.</span></span> <span data-ttu-id="2c7b9-864">Voit siis näyttää rivien väliset suhteet, kuten myyntirivin tai kokonaiskulujen rivin prosenttiosuuden.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-864">Therefore, you can show relationships between rows, such as a percentage of a sales row or a percentage of a total expenses row.</span></span> <span data-ttu-id="2c7b9-865">Voit kertoa tai jakaa kunkin rivin tietyllä perusrivin sarakkeella, kun syötät laskutoimituksessa käytettävän sarakkeen ja sitten **\*BASEROW**- tai **/BASEROW**-arvon.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-865">To multiply or divide each row in a specific column by a base row, enter the column to use in the calculation, and then enter **\*BASEROW** or **/BASEROW**.</span></span> <span data-ttu-id="2c7b9-866">Syötä esimerkiksi **C\*BASEROW** tai **C/BASEROW**.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-866">For example, enter **C\*BASEROW** or **C/BASEROW**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="2c7b9-867">Kun käytät perusrivilaskentaa sarakemäärityksessä, varmista, että kaikilla tämän sarakemäärityksen kanssa käytettävillä rivimäärityksillä on ainakin yksi perusrivi laskentaa varten.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-867">When you use a base row calculation in a column definition, make sure that each row definition that is used with this column definition contains at least one base row for calculations.</span></span>
+
+#### <a name="divide-the-amount-in-a-column-by-the-number-of-periods"></a><span data-ttu-id="2c7b9-868">Sarakkeen summan jakaminen jaksojen määrällä</span><span class="sxs-lookup"><span data-stu-id="2c7b9-868">Divide the amount in a column by the number of periods</span></span>
+
+<span data-ttu-id="2c7b9-869">Voit jakaa sarakkeen summan määritetyllä jaksojen määrällä.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-869">You can divide the amount in a column by a specified number of periods.</span></span> <span data-ttu-id="2c7b9-870">Esimerkiksi **B/Jaksot**-kaava jakaa sarakkeen B arvon sarakkeen B jaksojen määrällä. Jos laskutoimitukseen otetaan mukaan useita sarakkeita, määritä jaksojen määrä, jota käytetään laskutoimituksessa.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-870">For example, the formula **B/Periods** divides the value in column B by the number of periods in column B. If the calculation spans multiple columns, specify the number of periods to use in the calculation.</span></span> <span data-ttu-id="2c7b9-871">Esimerkiksi **(B+C)/Jaksot**-kaava laskee sarakkeen B ha C summat yhteen ja jakaa tuloksen jakson arvolla.</span><span class="sxs-lookup"><span data-stu-id="2c7b9-871">For example, the formula **(B+C)/Periods** adds the amounts in column B and column C, and then divides the result by the period value.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="2c7b9-872">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="2c7b9-872">Additional resources</span></span>
+
+[<span data-ttu-id="2c7b9-873">Talousraporttien rivimääritykset</span><span class="sxs-lookup"><span data-stu-id="2c7b9-873">Row definitions in financial reporting</span></span>](row-definitions-financial-reporting.md)
+
+[<span data-ttu-id="2c7b9-874">Muotoilun lisäasetukset taloushallinnon raporteissa</span><span class="sxs-lookup"><span data-stu-id="2c7b9-874">Advanced formatting options in financial reporting</span></span>](advanced-formatting-options-financial-reporting.md)

@@ -1,93 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="travel-expense-policies.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>travel-expense-policies.21ca19.6923a4d5420cd768d1b0da24eab406033c17fd67.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>6923a4d5420cd768d1b0da24eab406033c17fd67</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>06c8dc5bc4e1c41f68e1cda141d61529768be958</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\expense-management\travel-expense-policies.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Define expense policies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä kulukäytännöt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>You can define expense policies that your workers must follow when entering and submitting expense reports and travel requisitions in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää kulukäytäntöjä tai sääntöjä, joita työntekijöiden on noudatettava kirjatessaan ja lähettäessään kuluraportteja ja matkustusehdotuksia Microsoft Dynamics 365 for Finance and Operationsissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Expense policies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kulukäytännöt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>You can define policies that your workers must follow when entering and submitting expense reports and travel requisitions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää käytäntöjä tai sääntöjä, joita työntekijöiden on noudatettava kirjatessaan ja lähettäessään kuluraportteja ja matkustusehdotuksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Implementing expense policies can help you manage expenses effectively.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kulukäytäntöjen käyttöönotto auttaa hallitsemaan kuluja tehokkaasti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>For example, you can set a policy for hotel expenses in New York City, which states that the per night expense cannot exceed USD 250.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit esimerkiksi määrittää käytännön, jonka mukaan hotellikulut New Yorkissa yötä kohti eivät saa ylittää 250 Yhdysvaltain dollaria.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>If a worker submits an expense report or a travel requisition in which the room rate exceeds this amount, the system will notify the</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos työntekijä lähettää kuluraportin tai matkustusehdotuksen, jonka huoneen hinta ylittää tämän summan, järjestelmä ilmoittaa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>worker that the policy amount for the expense has been exceeded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">työntekijälle, että kulukäytännön summa on ylitetty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>You can configure the message that the worker will receive when you</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää työntekijälle lähetettävän viestin, kun</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>define the policy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">määrität käytännön.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>You can define three types of policies:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää kolmenlaisia käytäntöjä:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Warning – Allows the worker to submit an expense report or travel requisition but the expense will be marked for all approvers and</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varoitus – antaa työntekijän lähettää kuluraportin tai matkustusehdotuksen, mutta kulu merkitään kaikille hyväksyjille ja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>for later reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">myöhempää raportointia varten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Error – Requires the worker to revise the expense to comply with the policy before submitting the expense report or travel requisition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virhe – edellyttää, että työntekijä muuttaa kulua vastaamaan käytäntöä ennen kuluraportin tai matkustusehdotuksen lähettämistä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Peruse – edellyttää, että työntekijä tai esimies antaa käytännön summan ylittämiselle perusteen ennen kuluraportin tai matkustusehdotuksen lähettämistä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Policy tips</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytännön vinkkejä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Here are a few suggestions that can assist you whe creating new policies for expense management.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa on muutamia ehdotuksia, jotka voivat auttaa sinua uusien kulujen hallintakäytäntöjen luomisessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Policies are date effective and won't take effect if the policy is created with a date after the date that the expense occurred.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytännöt ovat riippuvaisia voimaantulopäivästä, eivätkä ne tule voimaan, jos käytäntö luodaan sen päivämäärän jälkeen, jolloin kulu on syntynyt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>For example, if you are creating a new policy today to enforce a maximum meal expense of $50, then any existing expenses entered as of yesterday won't be checked against this policy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos esimerkiksi olet luomassa uutta käytäntöä, jonka mukaan $50 enimmäisateriakustannukset ovat voimassa, kaikkia eilisestä lähtien määritettyjä kuluja ei tarkisteta tätä käytäntöä vasten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>When creating a policy for an expense category that can be itemized, consider adding a condition for expense line type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun luot käytännön kululuokalle, joka voidaan määrittää, harkitse kulujen rivityypin ehdon lisäämistä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Some policies such as requiring a receipt may not make sense for itemized lines and should only be applied to the header line or a non-itemized line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jotkin käytännöt, kuten kuittauksen vaatiminen, eivät ehkä ole järkeviä eriteltyjä rivejä varten, ja niitä tulisi käyttää vain otsikkorivillä tai ei-eriteltyjen rivien yhteydessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>When to evaluate policies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytäntöjen arvioiminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>In expense management parameters, there is an option to either evaluate expense management policies when a line is saved or when an expense report is submitted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kulujenhallinnan parametreissa voit joko arvioida kulunhallintakäytäntöjä, kun rivi tallennetaan tai kun kuluraportti lähetetään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>If you choose to evaluate when a line is saved this ensures that users have earlier visibility into what they need to do to complete their expense report all at once.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos päätät arvioida, milloin rivi tallennetaan, tämä varmistaa, että käyttäjillä on aiemmin ollut näkyvyyttä, jotta he voivat täyttää kuluraportin kerralla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Otherwise, you can delay policy evaluation and save time if you have validation occur at the end, during submission to workflow.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muussa tapauksessa voit viivyttää käytännön arviointia ja säästää aikaa, jos oikeellisuustarkistus tapahtuu lopussa, työn kulkuun lähettämisen aikana.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Määritä kulukäytännöt
+description: Voit määrittää kulukäytäntöjä tai sääntöjä, joita työntekijöiden on noudatettava kirjatessaan ja lähettäessään kuluraportteja ja matkustusehdotuksia Microsoft Dynamics 365 for Finance and Operationsissa.
+author: ryansandness
+manager: AnnBe
+ms.date: 04/26/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: SysPolicyListPage, TrvPolicyRule
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: ryansand
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6923a4d5420cd768d1b0da24eab406033c17fd67
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594933"
+---
+# <a name="expense-policies"></a><span data-ttu-id="1823c-103">Kulukäytännöt</span><span class="sxs-lookup"><span data-stu-id="1823c-103">Expense policies</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="1823c-104">Voit määrittää käytäntöjä tai sääntöjä, joita työntekijöiden on noudatettava kirjatessaan ja lähettäessään kuluraportteja ja matkustusehdotuksia.</span><span class="sxs-lookup"><span data-stu-id="1823c-104">You can define policies that your workers must follow when entering and submitting expense reports and travel requisitions.</span></span>         
+<span data-ttu-id="1823c-105">Kulukäytäntöjen käyttöönotto auttaa hallitsemaan kuluja tehokkaasti.</span><span class="sxs-lookup"><span data-stu-id="1823c-105">Implementing expense policies can help you manage expenses effectively.</span></span>         
+
+<span data-ttu-id="1823c-106">Voit esimerkiksi määrittää käytännön, jonka mukaan hotellikulut New Yorkissa yötä kohti eivät saa ylittää 250 Yhdysvaltain dollaria.</span><span class="sxs-lookup"><span data-stu-id="1823c-106">For example, you can set a policy for hotel expenses in New York City, which states that the per night expense cannot exceed USD 250.</span></span>       
+<span data-ttu-id="1823c-107">Jos työntekijä lähettää kuluraportin tai matkustusehdotuksen, jonka huoneen hinta ylittää tämän summan, järjestelmä ilmoittaa</span><span class="sxs-lookup"><span data-stu-id="1823c-107">If a worker submits an expense report or a travel requisition in which the room rate exceeds this amount, the system will notify the</span></span>        
+<span data-ttu-id="1823c-108">työntekijälle, että kulukäytännön summa on ylitetty.</span><span class="sxs-lookup"><span data-stu-id="1823c-108">worker that the policy amount for the expense has been exceeded.</span></span> <span data-ttu-id="1823c-109">Voit määrittää työntekijälle lähetettävän viestin, kun</span><span class="sxs-lookup"><span data-stu-id="1823c-109">You can configure the message that the worker will receive when you</span></span>        
+<span data-ttu-id="1823c-110">määrität käytännön.</span><span class="sxs-lookup"><span data-stu-id="1823c-110">define the policy.</span></span>      
+        
+<span data-ttu-id="1823c-111">Voit määrittää kolmenlaisia käytäntöjä:</span><span class="sxs-lookup"><span data-stu-id="1823c-111">You can define three types of policies:</span></span>         
+        
+- <span data-ttu-id="1823c-112">Varoitus – antaa työntekijän lähettää kuluraportin tai matkustusehdotuksen, mutta kulu merkitään kaikille hyväksyjille ja</span><span class="sxs-lookup"><span data-stu-id="1823c-112">Warning – Allows the worker to submit an expense report or travel requisition but the expense will be marked for all approvers and</span></span>        
+  <span data-ttu-id="1823c-113">myöhempää raportointia varten.</span><span class="sxs-lookup"><span data-stu-id="1823c-113">for later reporting.</span></span>        
+
+- <span data-ttu-id="1823c-114">Virhe – edellyttää, että työntekijä muuttaa kulua vastaamaan käytäntöä ennen kuluraportin tai matkustusehdotuksen lähettämistä.</span><span class="sxs-lookup"><span data-stu-id="1823c-114">Error – Requires the worker to revise the expense to comply with the policy before submitting the expense report or travel requisition.</span></span>       
+ 
+ - <span data-ttu-id="1823c-115">Peruse – edellyttää, että työntekijä tai esimies antaa käytännön summan ylittämiselle perusteen ennen kuluraportin tai matkustusehdotuksen lähettämistä.</span><span class="sxs-lookup"><span data-stu-id="1823c-115">Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.</span></span>        
+
+## <a name="policy-tips"></a><span data-ttu-id="1823c-116">Käytännön vinkkejä</span><span class="sxs-lookup"><span data-stu-id="1823c-116">Policy tips</span></span>
+<span data-ttu-id="1823c-117">Seuraavassa on muutamia ehdotuksia, jotka voivat auttaa sinua uusien kulujen hallintakäytäntöjen luomisessa.</span><span class="sxs-lookup"><span data-stu-id="1823c-117">Here are a few suggestions that can assist you whe creating new policies for expense management.</span></span> 
+* <span data-ttu-id="1823c-118">Käytännöt ovat riippuvaisia voimaantulopäivästä, eivätkä ne tule voimaan, jos käytäntö luodaan sen päivämäärän jälkeen, jolloin kulu on syntynyt.</span><span class="sxs-lookup"><span data-stu-id="1823c-118">Policies are date effective and won't take effect if the policy is created with a date after the date that the expense occurred.</span></span> <span data-ttu-id="1823c-119">Jos esimerkiksi olet luomassa uutta käytäntöä, jonka mukaan $50 enimmäisateriakustannukset ovat voimassa, kaikkia eilisestä lähtien määritettyjä kuluja ei tarkisteta tätä käytäntöä vasten.</span><span class="sxs-lookup"><span data-stu-id="1823c-119">For example, if you are creating a new policy today to enforce a maximum meal expense of $50, then any existing expenses entered as of yesterday won't be checked against this policy.</span></span>
+* <span data-ttu-id="1823c-120">Kun luot käytännön kululuokalle, joka voidaan määrittää, harkitse kulujen rivityypin ehdon lisäämistä.</span><span class="sxs-lookup"><span data-stu-id="1823c-120">When creating a policy for an expense category that can be itemized, consider adding a condition for expense line type.</span></span> <span data-ttu-id="1823c-121">Jotkin käytännöt, kuten kuittauksen vaatiminen, eivät ehkä ole järkeviä eriteltyjä rivejä varten, ja niitä tulisi käyttää vain otsikkorivillä tai ei-eriteltyjen rivien yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="1823c-121">Some policies such as requiring a receipt may not make sense for itemized lines and should only be applied to the header line or a non-itemized line.</span></span> 
+
+## <a name="when-to-evaluate-policies"></a><span data-ttu-id="1823c-122">Käytäntöjen arvioiminen</span><span class="sxs-lookup"><span data-stu-id="1823c-122">When to evaluate policies</span></span>
+
+<span data-ttu-id="1823c-123">Kulujenhallinnan parametreissa voit joko arvioida kulunhallintakäytäntöjä, kun rivi tallennetaan tai kun kuluraportti lähetetään.</span><span class="sxs-lookup"><span data-stu-id="1823c-123">In expense management parameters, there is an option to either evaluate expense management policies when a line is saved or when an expense report is submitted.</span></span> <span data-ttu-id="1823c-124">Jos päätät arvioida, milloin rivi tallennetaan, tämä varmistaa, että käyttäjillä on aiemmin ollut näkyvyyttä, jotta he voivat täyttää kuluraportin kerralla.</span><span class="sxs-lookup"><span data-stu-id="1823c-124">If you choose to evaluate when a line is saved this ensures that users have earlier visibility into what they need to do to complete their expense report all at once.</span></span> <span data-ttu-id="1823c-125">Muussa tapauksessa voit viivyttää käytännön arviointia ja säästää aikaa, jos oikeellisuustarkistus tapahtuu lopussa, työn kulkuun lähettämisen aikana.</span><span class="sxs-lookup"><span data-stu-id="1823c-125">Otherwise, you can delay policy evaluation and save time if you have validation occur at the end, during submission to workflow.</span></span>

@@ -1,192 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="vendor-copy.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>vendor-copy.deb9a6.0c492cd76fc9742aa4cff8fe588541cb2c6f1863.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>0c492cd76fc9742aa4cff8fe588541cb2c6f1863</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\accounts-payable\vendor-copy.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Copy vendors by using shared number sequences</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kopioi toimittajat käyttämällä jaettuja numerosarjoja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how to use shared number sequences to copy a vendor to another legal entity but keep the same vendor ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä ohjeaiheessa kerrotaan, miten jaettujen numerosarjojen avulla toimittaja kopioidaan toiseen yritykseen pitäen toimittajatunnus ennallaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Copy vendors by using shared number sequences</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kopioi toimittajat käyttämällä jaettuja numerosarjoja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>You can use shared number sequences to assign vendor IDs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajatunnukset voidaan määrittää jaettujen numerosarjojen avulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Shared number sequences also let you copy vendors from one legal entity to another legal entity but use the same vendor IDs in both legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jaettujen numerosarjojen avulla voidaan kopioida toimittajia yrityksestä toiseen ja käyttää samoja toimittajatunnuksia molemmissa yrityksissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Setup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The feature is activated when you use a shared number sequence to assign vendor IDs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminto on käytössä, kun toimittajatunnukset määritetään jaettujen numerosarjojen avulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>You must use the same number sequence in every legal entity that you want to copy a vendor to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Samaa numerosarjaa on käytettävä kaikissa yrityksissä, joihin toimittaja halutaan kopioida.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>You change the vendor number sequence on the <bpt id="p1">**</bpt>Accounts payable parameters<ept id="p1">**</ept> page for each legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajan numerosarjan voi muuttaa kunkin yrityksen <bpt id="p1">**</bpt>Ostoreskontran parametrit<ept id="p1">**</ept> -sivulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Select <bpt id="p1">**</bpt>Accounts payable<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Accounts payable parameters<ept id="p3">**</ept>, and then select the <bpt id="p4">**</bpt>Number sequences<ept id="p4">**</ept> tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Ostoreskontra<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Asetukset<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Ostoreskontran parametrit<ept id="p3">**</ept> ja <bpt id="p4">**</bpt>Numerosarjat<ept id="p4">**</ept>-välilehti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>You can also set up vendor number sequences for each vendor group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajanumerosarjat voidaan määrittää jokaiselle toimittajaryhmälle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>These number sequences must also be shared.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myös nämä numerosarjat on jaettava.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The number sequence for a vendor group is used first.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajaryhmän numerosarja käytetään ensin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>If no number sequence is specified for a vendor group, the number sequence that is specified on the <bpt id="p1">**</bpt>Accounts payable parameters<ept id="p1">**</ept> page is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos toimittajaryhmälle ei ole määritetty numerosarjaa, käytetään <bpt id="p1">**</bpt>Ostoreskontran parametrit<ept id="p1">**</ept> -sivulla määritettyä numerosarjaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>You can also copy vendors between legal entities if you use manual vendor IDs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajia voidaan kopioida yritysten välillä myös käytettäessä manuaalisia toimittajatunnuksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>However, if you try to copy a vendor to a legal entity where the vendor ID already exists, the copy process won't be started.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos toimittaja yritetään kopioida yritykseen, jossa toimittajatunnus on jo käytössä, kopiointiprosessia ei voi käynnistää.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Copy a vendor</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kopioi toimittaja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>To copy a vendor, select <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>All vendors<ept id="p2">**</ept> list page to open the <bpt id="p3">**</bpt>All vendors, new record<ept id="p3">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittaja kopioidaan valitsemalla <bpt id="p2">**</bpt>Kaikki toimittajat<ept id="p2">**</ept> -luettelosivulla <bpt id="p1">**</bpt>Uusi<ept id="p1">**</ept>. <bpt id="p3">**</bpt>Kaikki toimittajat, uusi tietue<ept id="p3">**</ept> -sivu avautuu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Notice that the new vendor ID isn't assigned immediately.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uutta toimittajatunnusta ei määritetä heti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä toiminnallisuus eroaa Microsoft Dynamics 365 for Finance and Operations -ohjelman edellisten versioiden toiminnasta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Because you haven't yet selected the vendor group, the system can't determine the correct number sequence to use.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajaryhmää ei ole vielä valittu, joten järjestelmä ei voi määrittää oikeaa käytettävää numerosarjaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Additionally, it can't determine whether you're trying to create a new vendor or copy a vendor.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se ei voi myöskään määrittää, halutaanko luoda uusi toimittaja vai kopioida toimittaja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Therefore, the vendor ID isn't assigned until you select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> at the bottom of the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siksi toimittajatunnus määritetään vasta kun valitset <bpt id="p1">**</bpt>Tallenna<ept id="p1">**</ept>-vaihtoehdon sivun alareunassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>If you're creating a new vendor, you can continue to fill in all the fields as you usually do.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos luot uutta toimittajaa, voit jatkaa täyttämään kaikki kentät tavalliseen tapaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>When you've finished, and you select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>, you will see that the vendor ID was assigned automatically.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet valmis ja valitset <bpt id="p1">**</bpt>Tallenna<ept id="p1">**</ept>, huomaat, että toimittajatunnus määritettiin automaattisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Alternatively, for manual number sequences, you will see that your manual vendor ID was used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos käytetään manuaalisia numerosarjoja, huomaat, että käytettiin manuaalista toimittajatunnusta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>To copy a vendor, in the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter one or more characters that represent the vendor that you're looking for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kopioida toimittajan syöttämällä <bpt id="p1">**</bpt>Nimi<ept id="p1">**</ept>-kenttään vähintään yhden merkin, joka edustaa etsittävää toimittajaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>A search dialog box shows a list of parties that might represent the vendor that you're looking for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hakuvalintaikkunassa näkyy luettelo, jossa etsittävä toimittaja saattaa näkyä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>When you select one of the parties, additional information appears on the right side of the dialog box:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun valitset jonkun osapuolen, valintaikkunan oikealla puolella näkyy lisätietoja:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>The <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab shows the party's phone number and address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Yleistä<ept id="p1">**</ept>-välilehdessä näkyy osapuolen puhelinnumero ja osoite.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>The <bpt id="p1">**</bpt>Roles<ept id="p1">**</ept> tab shows the roles that the selected party can have and the legal entity where it has each role.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitun osapuolen mahdolliset roolit ja yritykset näkyvät <bpt id="p1">**</bpt>Roolit<ept id="p1">**</ept>-välilehdessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">**</bpt>Tax registration ID<ept id="p1">**</ept> tab shows the tax registration IDs that are assigned to the party.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osapuolen verotunnukset näkyvät <bpt id="p1">**</bpt>Verorekisteröintitunnus<ept id="p1">**</ept>-välilehdessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>You can copy a party only if it has a vendor role, and if it has that role in a legal entity that isn't the current legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kopioida osapuolen vain, jos sen rooli on toimittaja ja jos sillä on tämä rooli muussa kuin nykyisessä yrityksessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>When you find a party that meets these criteria, follow these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet löytänyt nämä ehdot täyttävän osapuolen, toimi seuraavasti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>A <bpt id="p1">**</bpt>Copy vendor<ept id="p1">**</ept> option appears.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näkyviin tulee <bpt id="p1">**</bpt>Kopioi toimittaja<ept id="p1">**</ept> -vaihtoehto.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>By default, this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä vaihtoehto on oletusarvoisesti <bpt id="p1">**</bpt>Ei<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>To copy the vendor to the current legal entity, set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kopioida toimittajan nykyiseen yritykseen valitsemalla <bpt id="p1">**</bpt>Kyllä<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>A <bpt id="p1">**</bpt>Legal entity<ept id="p1">**</ept> field appears.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> <bpt id="p1">**</bpt>Yritys<ept id="p1">**</ept>-kenttä tulee näkyviin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Select the legal entity to copy the vendor from.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse yritys, josta toimittaja kopioidaan</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>If the vendor exists in only one legal entity, the field is set to that legal entity by default.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos toimittaja kuuluu vain yhteen yritykseen, kenttään määritetään tämä yritys oletusarvoisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Select <bpt id="p1">**</bpt>Select<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Valitse<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>The new vendor is created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi toimittaja luodaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Validation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valintasäännöt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>When you copy a vendor, the system tries to save the new vendor information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun toimittaja kopioidaan, järjestelmä yrittää tallentaa uuden toimittajan tiedot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Validations are run to verify that the data that was copied is good.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valintasääntöjen avulla tarkistetaan, että kopioidut tiedot ovat oikein.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>You receive an error message for every validation that fails.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos valintasääntötarkistus tuottaa virheellisen tuloksen, näkyviin tulee virheilmoitus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>The error messages explain what information must be updated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virheilmoituksessa kerrotaan, mitä tietoja on päivitettävä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>The copy of the vendor can't be saved until you fix all the validation errors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajan kopio tallennetaan vasta kun tarkistuksessa havaitut virheet on korjattu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Copy a vendor by using the Tax exempt number search feature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajan kopioiminen käyttämällä verovapautusnumeron hakua</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>You can also copy vendors by using the Tax exempt number search feature that is in the <bpt id="p1">**</bpt>Registration<ept id="p1">**</ept> group on the <bpt id="p2">**</bpt>Vendor<ept id="p2">**</ept> tab on the Action Pane of the <bpt id="p3">**</bpt>All vendors<ept id="p3">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajat voi kopioida myös hakemalla verovapausnumeron perusteella <bpt id="p1">**</bpt>Kaikki asiakkaat<ept id="p1">**</ept>-sivun <bpt id="p2">**</bpt>Toimittaja<ept id="p2">**</ept>-välilehden <bpt id="p3">**</bpt>Kaikki toimittajat<ept id="p3">**</ept> -ryhmän toimintoruudussa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The <bpt id="p1">**</bpt>Tax exempt number search<ept id="p1">**</ept> dialog box that appears shows tax exempt numbers, the vendor ID, the vendor name, and the legal entity where the tax exempt ID is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näkyviin tulevassa <bpt id="p1">**</bpt>Verovapausnumeron haku<ept id="p1">**</ept> -valintaikkunassa näkyvät verovapausnumerot, toimittajatunnus, toimittajan nimi ja yritys, jossa verovapaustunnusta käytetään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>You can copy a vendor only if it's in a legal entity that isn't the current legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittaja voidaan kopioida vain, jos se on muu yritys kuin nykyinen yritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>After you select a vendor that meets this criterion, follow these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet valinnut nämä ehdot täyttävän toimittajan, toimi seuraavasti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>A <bpt id="p1">**</bpt>Copy vendor<ept id="p1">**</ept> option appears.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näkyviin tulee <bpt id="p1">**</bpt>Kopioi toimittaja<ept id="p1">**</ept> -vaihtoehto.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>By default, this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä vaihtoehto on oletusarvoisesti <bpt id="p1">**</bpt>Ei<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>To copy the vendor to the current legal entity, set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kopioida toimittajan nykyiseen yritykseen valitsemalla <bpt id="p1">**</bpt>Kyllä<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Select <bpt id="p1">**</bpt>Select<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Valitse<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>The new vendor is created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi toimittaja luodaan.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Kopioi toimittajat käyttämällä jaettuja numerosarjoja
+description: Tässä ohjeaiheessa kerrotaan, miten jaettujen numerosarjojen avulla toimittaja kopioidaan toiseen yritykseen pitäen toimittajatunnus ennallaan.
+author: mikefalkner
+manager: aolson
+ms.date: 08/24/2018
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: VendTable
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: mikefalkner
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548597"
+---
+# <a name="copy-vendors-by-using-shared-number-sequences"></a><span data-ttu-id="3817a-103">Kopioi toimittajat käyttämällä jaettuja numerosarjoja</span><span class="sxs-lookup"><span data-stu-id="3817a-103">Copy vendors by using shared number sequences</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="3817a-104">Toimittajatunnukset voidaan määrittää jaettujen numerosarjojen avulla.</span><span class="sxs-lookup"><span data-stu-id="3817a-104">You can use shared number sequences to assign vendor IDs.</span></span> <span data-ttu-id="3817a-105">Jaettujen numerosarjojen avulla voidaan kopioida toimittajia yrityksestä toiseen ja käyttää samoja toimittajatunnuksia molemmissa yrityksissä.</span><span class="sxs-lookup"><span data-stu-id="3817a-105">Shared number sequences also let you copy vendors from one legal entity to another legal entity but use the same vendor IDs in both legal entities.</span></span>
+
+## <a name="setup"></a><span data-ttu-id="3817a-106">Määritys</span><span class="sxs-lookup"><span data-stu-id="3817a-106">Setup</span></span>
+
+<span data-ttu-id="3817a-107">Toiminto on käytössä, kun toimittajatunnukset määritetään jaettujen numerosarjojen avulla.</span><span class="sxs-lookup"><span data-stu-id="3817a-107">The feature is activated when you use a shared number sequence to assign vendor IDs.</span></span> <span data-ttu-id="3817a-108">Samaa numerosarjaa on käytettävä kaikissa yrityksissä, joihin toimittaja halutaan kopioida.</span><span class="sxs-lookup"><span data-stu-id="3817a-108">You must use the same number sequence in every legal entity that you want to copy a vendor to.</span></span> <span data-ttu-id="3817a-109">Toimittajan numerosarjan voi muuttaa kunkin yrityksen **Ostoreskontran parametrit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="3817a-109">You change the vendor number sequence on the **Accounts payable parameters** page for each legal entity.</span></span> <span data-ttu-id="3817a-110">Valitse **Ostoreskontra** \> **Asetukset** \> **Ostoreskontran parametrit** ja **Numerosarjat**-välilehti.</span><span class="sxs-lookup"><span data-stu-id="3817a-110">Select **Accounts payable** \> **Setup** \> **Accounts payable parameters**, and then select the **Number sequences** tab.</span></span>
+
+<span data-ttu-id="3817a-111">Toimittajanumerosarjat voidaan määrittää jokaiselle toimittajaryhmälle.</span><span class="sxs-lookup"><span data-stu-id="3817a-111">You can also set up vendor number sequences for each vendor group.</span></span> <span data-ttu-id="3817a-112">Myös nämä numerosarjat on jaettava.</span><span class="sxs-lookup"><span data-stu-id="3817a-112">These number sequences must also be shared.</span></span> <span data-ttu-id="3817a-113">Toimittajaryhmän numerosarja käytetään ensin.</span><span class="sxs-lookup"><span data-stu-id="3817a-113">The number sequence for a vendor group is used first.</span></span> <span data-ttu-id="3817a-114">Jos toimittajaryhmälle ei ole määritetty numerosarjaa, käytetään **Ostoreskontran parametrit** -sivulla määritettyä numerosarjaa.</span><span class="sxs-lookup"><span data-stu-id="3817a-114">If no number sequence is specified for a vendor group, the number sequence that is specified on the **Accounts payable parameters** page is used.</span></span>
+
+<span data-ttu-id="3817a-115">Toimittajia voidaan kopioida yritysten välillä myös käytettäessä manuaalisia toimittajatunnuksia.</span><span class="sxs-lookup"><span data-stu-id="3817a-115">You can also copy vendors between legal entities if you use manual vendor IDs.</span></span> <span data-ttu-id="3817a-116">Jos toimittaja yritetään kopioida yritykseen, jossa toimittajatunnus on jo käytössä, kopiointiprosessia ei voi käynnistää.</span><span class="sxs-lookup"><span data-stu-id="3817a-116">However, if you try to copy a vendor to a legal entity where the vendor ID already exists, the copy process won't be started.</span></span>
+
+## <a name="copy-a-vendor"></a><span data-ttu-id="3817a-117">Kopioi toimittaja</span><span class="sxs-lookup"><span data-stu-id="3817a-117">Copy a vendor</span></span>
+
+<span data-ttu-id="3817a-118">Toimittaja kopioidaan valitsemalla **Kaikki toimittajat** -luettelosivulla **Uusi**. **Kaikki toimittajat, uusi tietue** -sivu avautuu.</span><span class="sxs-lookup"><span data-stu-id="3817a-118">To copy a vendor, select **New** on the **All vendors** list page to open the **All vendors, new record** page.</span></span> <span data-ttu-id="3817a-119">Uutta toimittajatunnusta ei määritetä heti.</span><span class="sxs-lookup"><span data-stu-id="3817a-119">Notice that the new vendor ID isn't assigned immediately.</span></span> <span data-ttu-id="3817a-120">Tämä toiminnallisuus eroaa Microsoft Dynamics 365 for Finance and Operations -ohjelman edellisten versioiden toiminnasta.</span><span class="sxs-lookup"><span data-stu-id="3817a-120">This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="3817a-121">Toimittajaryhmää ei ole vielä valittu, joten järjestelmä ei voi määrittää oikeaa käytettävää numerosarjaa.</span><span class="sxs-lookup"><span data-stu-id="3817a-121">Because you haven't yet selected the vendor group, the system can't determine the correct number sequence to use.</span></span> <span data-ttu-id="3817a-122">Se ei voi myöskään määrittää, halutaanko luoda uusi toimittaja vai kopioida toimittaja.</span><span class="sxs-lookup"><span data-stu-id="3817a-122">Additionally, it can't determine whether you're trying to create a new vendor or copy a vendor.</span></span> <span data-ttu-id="3817a-123">Siksi toimittajatunnus määritetään vasta kun valitset **Tallenna**-vaihtoehdon sivun alareunassa.</span><span class="sxs-lookup"><span data-stu-id="3817a-123">Therefore, the vendor ID isn't assigned until you select **Save** at the bottom of the page.</span></span>
+
+<span data-ttu-id="3817a-124">Jos luot uutta toimittajaa, voit jatkaa täyttämään kaikki kentät tavalliseen tapaan.</span><span class="sxs-lookup"><span data-stu-id="3817a-124">If you're creating a new vendor, you can continue to fill in all the fields as you usually do.</span></span> <span data-ttu-id="3817a-125">Kun olet valmis ja valitset **Tallenna**, huomaat, että toimittajatunnus määritettiin automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="3817a-125">When you've finished, and you select **Save**, you will see that the vendor ID was assigned automatically.</span></span> <span data-ttu-id="3817a-126">Jos käytetään manuaalisia numerosarjoja, huomaat, että käytettiin manuaalista toimittajatunnusta.</span><span class="sxs-lookup"><span data-stu-id="3817a-126">Alternatively, for manual number sequences, you will see that your manual vendor ID was used.</span></span>
+
+<span data-ttu-id="3817a-127">Voit kopioida toimittajan syöttämällä **Nimi**-kenttään vähintään yhden merkin, joka edustaa etsittävää toimittajaa.</span><span class="sxs-lookup"><span data-stu-id="3817a-127">To copy a vendor, in the **Name** field, enter one or more characters that represent the vendor that you're looking for.</span></span> <span data-ttu-id="3817a-128">Hakuvalintaikkunassa näkyy luettelo, jossa etsittävä toimittaja saattaa näkyä.</span><span class="sxs-lookup"><span data-stu-id="3817a-128">A search dialog box shows a list of parties that might represent the vendor that you're looking for.</span></span> <span data-ttu-id="3817a-129">Kun valitset jonkun osapuolen, valintaikkunan oikealla puolella näkyy lisätietoja:</span><span class="sxs-lookup"><span data-stu-id="3817a-129">When you select one of the parties, additional information appears on the right side of the dialog box:</span></span>
+
+- <span data-ttu-id="3817a-130">**Yleistä**-välilehdessä näkyy osapuolen puhelinnumero ja osoite.</span><span class="sxs-lookup"><span data-stu-id="3817a-130">The **General** tab shows the party's phone number and address.</span></span>
+- <span data-ttu-id="3817a-131">Valitun osapuolen mahdolliset roolit ja yritykset näkyvät **Roolit**-välilehdessä.</span><span class="sxs-lookup"><span data-stu-id="3817a-131">The **Roles** tab shows the roles that the selected party can have and the legal entity where it has each role.</span></span>
+- <span data-ttu-id="3817a-132">Osapuolen verotunnukset näkyvät **Verorekisteröintitunnus**-välilehdessä.</span><span class="sxs-lookup"><span data-stu-id="3817a-132">**Tax registration ID** tab shows the tax registration IDs that are assigned to the party.</span></span>
+
+<span data-ttu-id="3817a-133">Voit kopioida osapuolen vain, jos sen rooli on toimittaja ja jos sillä on tämä rooli muussa kuin nykyisessä yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="3817a-133">You can copy a party only if it has a vendor role, and if it has that role in a legal entity that isn't the current legal entity.</span></span> <span data-ttu-id="3817a-134">Kun olet löytänyt nämä ehdot täyttävän osapuolen, toimi seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="3817a-134">When you find a party that meets these criteria, follow these steps.</span></span>
+
+1. <span data-ttu-id="3817a-135">Näkyviin tulee **Kopioi toimittaja** -vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="3817a-135">A **Copy vendor** option appears.</span></span> <span data-ttu-id="3817a-136">Tämä vaihtoehto on oletusarvoisesti **Ei**.</span><span class="sxs-lookup"><span data-stu-id="3817a-136">By default, this option is set to **No**.</span></span> <span data-ttu-id="3817a-137">Voit kopioida toimittajan nykyiseen yritykseen valitsemalla **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="3817a-137">To copy the vendor to the current legal entity, set the option to **Yes**.</span></span> 
+2. <span data-ttu-id="3817a-138"> **Yritys**-kenttä tulee näkyviin.</span><span class="sxs-lookup"><span data-stu-id="3817a-138">A **Legal entity** field appears.</span></span> <span data-ttu-id="3817a-139">Valitse yritys, josta toimittaja kopioidaan</span><span class="sxs-lookup"><span data-stu-id="3817a-139">Select the legal entity to copy the vendor from.</span></span> <span data-ttu-id="3817a-140">Jos toimittaja kuuluu vain yhteen yritykseen, kenttään määritetään tämä yritys oletusarvoisesti.</span><span class="sxs-lookup"><span data-stu-id="3817a-140">If the vendor exists in only one legal entity, the field is set to that legal entity by default.</span></span>
+3. <span data-ttu-id="3817a-141">Valitse **Valitse**.</span><span class="sxs-lookup"><span data-stu-id="3817a-141">Select **Select**.</span></span> <span data-ttu-id="3817a-142">Uusi toimittaja luodaan.</span><span class="sxs-lookup"><span data-stu-id="3817a-142">The new vendor is created.</span></span>
+
+## <a name="validation"></a><span data-ttu-id="3817a-143">Valintasäännöt</span><span class="sxs-lookup"><span data-stu-id="3817a-143">Validation</span></span>
+
+<span data-ttu-id="3817a-144">Kun toimittaja kopioidaan, järjestelmä yrittää tallentaa uuden toimittajan tiedot.</span><span class="sxs-lookup"><span data-stu-id="3817a-144">When you copy a vendor, the system tries to save the new vendor information.</span></span> <span data-ttu-id="3817a-145">Valintasääntöjen avulla tarkistetaan, että kopioidut tiedot ovat oikein.</span><span class="sxs-lookup"><span data-stu-id="3817a-145">Validations are run to verify that the data that was copied is good.</span></span> <span data-ttu-id="3817a-146">Jos valintasääntötarkistus tuottaa virheellisen tuloksen, näkyviin tulee virheilmoitus.</span><span class="sxs-lookup"><span data-stu-id="3817a-146">You receive an error message for every validation that fails.</span></span> <span data-ttu-id="3817a-147">Virheilmoituksessa kerrotaan, mitä tietoja on päivitettävä.</span><span class="sxs-lookup"><span data-stu-id="3817a-147">The error messages explain what information must be updated.</span></span> <span data-ttu-id="3817a-148">Toimittajan kopio tallennetaan vasta kun tarkistuksessa havaitut virheet on korjattu.</span><span class="sxs-lookup"><span data-stu-id="3817a-148">The copy of the vendor can't be saved until you fix all the validation errors.</span></span>
+
+## <a name="copy-a-vendor-by-using-the-tax-exempt-number-search-feature"></a><span data-ttu-id="3817a-149">Toimittajan kopioiminen käyttämällä verovapautusnumeron hakua</span><span class="sxs-lookup"><span data-stu-id="3817a-149">Copy a vendor by using the Tax exempt number search feature</span></span>
+
+<span data-ttu-id="3817a-150">Toimittajat voi kopioida myös hakemalla verovapausnumeron perusteella **Kaikki asiakkaat**-sivun **Toimittaja**-välilehden **Kaikki toimittajat** -ryhmän toimintoruudussa.</span><span class="sxs-lookup"><span data-stu-id="3817a-150">You can also copy vendors by using the Tax exempt number search feature that is in the **Registration** group on the **Vendor** tab on the Action Pane of the **All vendors** page.</span></span> <span data-ttu-id="3817a-151">Näkyviin tulevassa **Verovapausnumeron haku** -valintaikkunassa näkyvät verovapausnumerot, toimittajatunnus, toimittajan nimi ja yritys, jossa verovapaustunnusta käytetään.</span><span class="sxs-lookup"><span data-stu-id="3817a-151">The **Tax exempt number search** dialog box that appears shows tax exempt numbers, the vendor ID, the vendor name, and the legal entity where the tax exempt ID is used.</span></span> <span data-ttu-id="3817a-152">Toimittaja voidaan kopioida vain, jos se on muu yritys kuin nykyinen yritys.</span><span class="sxs-lookup"><span data-stu-id="3817a-152">You can copy a vendor only if it's in a legal entity that isn't the current legal entity.</span></span> <span data-ttu-id="3817a-153">Kun olet valinnut nämä ehdot täyttävän toimittajan, toimi seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="3817a-153">After you select a vendor that meets this criterion, follow these steps.</span></span>
+
+1. <span data-ttu-id="3817a-154">Näkyviin tulee **Kopioi toimittaja** -vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="3817a-154">A **Copy vendor** option appears.</span></span> <span data-ttu-id="3817a-155">Tämä vaihtoehto on oletusarvoisesti **Ei**.</span><span class="sxs-lookup"><span data-stu-id="3817a-155">By default, this option is set to **No**.</span></span> <span data-ttu-id="3817a-156">Voit kopioida toimittajan nykyiseen yritykseen valitsemalla **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="3817a-156">To copy the vendor to the current legal entity, set the option to **Yes**.</span></span>
+2. <span data-ttu-id="3817a-157">Valitse **Valitse**.</span><span class="sxs-lookup"><span data-stu-id="3817a-157">Select **Select**.</span></span> <span data-ttu-id="3817a-158">Uusi toimittaja luodaan.</span><span class="sxs-lookup"><span data-stu-id="3817a-158">The new vendor is created.</span></span>

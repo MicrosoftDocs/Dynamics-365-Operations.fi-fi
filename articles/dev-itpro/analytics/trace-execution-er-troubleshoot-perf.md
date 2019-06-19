@@ -1,732 +1,348 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="trace-execution-er-troubleshoot-perf.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>trace-execution-er-troubleshoot-perf.773b92.aa71db2752889bc905c22bab1cf2fa46d7ee07c7.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>aa71db2752889bc905c22bab1cf2fa46d7ee07c7</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>67d00b95952faf0db580d341249d4e50be59119c</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\analytics\trace-execution-er-troubleshoot-perf.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Trace execution of ER format to troubleshoot performance issues</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Sähköisen raportoinnin muodon suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides information about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tässä ohjeaiheessa on tietoja suorituskykyongelmien vianmäärityksestä sähköisen raportoinnin (ER) suorituskyvyn jäljitystoiminnon avulla.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Trace the execution of ER formats to troubleshoot performance issues</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>As part of the process of designing Electronic reporting (ER) configurations to generate electronic documents, you define the method that is used to get data out of Microsoft Dynamics 365 for Finance and Operations and enter it in the output that is generated.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Osana sähköisten raportointikonfiguraatioiden suunnittelua sähköisten asiakirjojen luomista varten määritetään menetelmä, jonka avulla tiedot haetaan Microsoft Dynamics 365 for Finance and Operationsista ja syötetään tuotavaan tuotokseen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The ER performance trace feature helps significantly reduce the time and cost that are involved in collecting the details of ER format execution and using them to troubleshoot performance issues.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">ER Performance Trace -toiminto auttaa vähentämään huomattavasti aikaa ja kustannuksia, jotka liittyvät ER-muodon suorituksen yksityiskohtien keräämiseen ja niiden käyttämiseen suorituskykyongelmien vianmäärityksessä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>This tutorial provides guidelines about how to take performance traces for executed ER formats in Finance and Operations, and how to use the information from these traces to help improve performance.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tässä opetusohjelmassa on ohjeita siitä, miten suorituskykyä voidaan seurata suoritettavissa ER-muodoissa Finance and Operationsin yhteydessä ja miten suorituskykyä voidaan parantaa näiden jälkien tietojen avulla.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Prerequisites</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Edellytykset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>To complete the examples in this tutorial, you must have the following access:</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tämän opetusohjelman esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksia:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Access to Finance and Operations for one of the following roles:</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Finance and Operations -käyttöoikeudet seuraaville rooleille:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Electronic reporting developer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sähköisen raportoinnin kehittäjä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Electronic reporting functional consultant</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Sähköisen raportoinnin toiminnallinen konsultti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>System administrator</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Järjestelmänvalvoja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Access to the instance of Regulatory Configuration Services (RCS) that has been provisioned for the same tenant as Finance and Operations, for one of the following roles:</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Voit käyttää järjestelmän (RCS) esiintymää, joka on valmisteltu samalle vuokralaiselle kuin Finance and Operations jostakin seuraavista rooleista:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Electronic reporting developer</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Sähköisen raportoinnin kehittäjä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Electronic reporting functional consultant</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited">Sähköisen raportoinnin toiminnallinen konsultti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>System administrator</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Järjestelmänvalvoja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>You must also download and locally store the following files.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Seuraavat tiedostot täytyy myös ladata ja tallentaa paikallisesti.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>File</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Tiedosto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Content</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Sisältö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Performance trace model.version.1</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Suorituskyvyn jäljitysmalli.versio.1</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source><bpt id="p1">[</bpt>Sample ER data model configuration<ept id="p1">](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)</ept></source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match"><bpt id="p1">[</bpt>Esimerkin ER-tietomallin konfigurointi<ept id="p1">](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Performance trace metadata.version.1</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Suorituskyvyn jäljitysmetadata.versio.1</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source><bpt id="p1">[</bpt>Sample ER metadata configuration<ept id="p1">](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)</ept></source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match"><bpt id="p1">[</bpt>Esimerkin ER-metadatan konfigurointi<ept id="p1">](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Performance trace mapping.version.1.1</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Suorituskyvyn jäljitysmapping.versio.1</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">[</bpt>Sample ER model mapping configuration<ept id="p1">](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)</ept></source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match"><bpt id="p1">[</bpt>Esimerkin ER-mallikartoituksen konfigurointi<ept id="p1">](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Performance trace format.version.1.1</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Suorituskyvyn jäljitysformat.versio.1</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source><bpt id="p1">[</bpt>Sample ER format configuration<ept id="p1">](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)</ept></source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match"><bpt id="p1">[</bpt>Esimerkin ER-format-konfigurointi<ept id="p1">](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)</ept></target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Configure ER parameters</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Konfiguroi ER-parametrit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Each ER performance trace that is generated in Finance and Operations is stored as an attachment of the execution log record.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Kukin Finance and Operationsin suorituskyvyn jäljitys tallennetaan suorituslokitietueen liitteenä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>The Document management (DM) framework of Finance and Operations is used to manage these attachments.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Näiden liitteiden hallinnassa käytetään Finance and Operationsin tiedostohallinnan (DM) kehystä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>You must configure ER parameters in advance, to specify the DM document type that should be used to attach performance traces.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Sinun on määritettävä ER-parametrit etukäteen ja määritettävä DM-tiedosto tyyppi, jota käytetään suorituskykyjälkien liittämiseen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>In Finance and Operation, in the <bpt id="p1">**</bpt>Electronic reporting<ept id="p1">**</ept> workspace, select <bpt id="p2">**</bpt>Electronic reporting parameters<ept id="p2">**</ept>.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Valitse Finance and Operationissa <bpt id="p1">**</bpt>Sähköisen raportoinnin<ept id="p1">**</ept> työtilassa <bpt id="p2">**</bpt>Sähköisen raportoinnin parametrit<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Then, on the <bpt id="p1">**</bpt>Electronic reporting parameters<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Attachments<ept id="p2">**</ept> tab, in the <bpt id="p3">**</bpt>Others<ept id="p3">**</ept> field, select the DM document type to use for performance traces.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Valitse sitten <bpt id="p1">**</bpt>Sähköisen raportoinnin parametrit<ept id="p1">**</ept> -sivun <bpt id="p2">**</bpt>Liitteet<ept id="p2">**</ept>-välilehden <bpt id="p3">**</bpt>Muut<ept id="p3">**</ept>-kentästä suorituskyvyn jäljille käytettävä DM-tiedostotyyppi.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Electronic reporting parameters page in Finance and Operations</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Sähköisen raportoinnin parametrisivu Finance and Operationsissa</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>To be available in the <bpt id="p1">**</bpt>Others<ept id="p1">**</ept> lookup field, a DM document type must be configured in the following manner on the <bpt id="p2">**</bpt>Document types<ept id="p2">**</ept> page (<bpt id="p3">**</bpt>Organization administration <ph id="ph1">\&gt;</ph> Document management <ph id="ph2">\&gt;</ph> Document types<ept id="p3">**</ept>):</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Jos haluat olla käytettävissä <bpt id="p1">**</bpt>Muut<ept id="p1">**</ept> -hakukentässä, DM-tiedostotyyppi on konfiguroitava seuraavalla tavalla <bpt id="p2">**</bpt>Asiakirjatyypit<ept id="p2">**</ept>-sivulla (<bpt id="p3">**</bpt>Organisaation hallinta <ph id="ph1">\&gt;</ph> Asiakirjan hallinta <ph id="ph2">\&gt;</ph> Asiakirjatyypit<ept id="p3">**</ept>):</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">**</bpt>Class:<ept id="p1">**</ept> Attach file</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match"><bpt id="p1">**</bpt>Luokka:<ept id="p1">**</ept> Liitä tiedosto</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">**</bpt>Group:<ept id="p1">**</ept> File</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match"><bpt id="p1">**</bpt>Ryhmä:<ept id="p1">**</ept> Tiedosto</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Document types page in Finance and Operations</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Finance and Operations -tiedostotyypit-sivu</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>The selected document type must be available in every company of the current Finance and Operations instance, because DM attachments are company-specific.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Valitun tiedostotyypin on oltava käytettävissä kaikissa nykyisen Finance and Operations -esiintymän yrityksissä, koska DM-liitteet ovat yrityskohtaisia.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Configure RCS parameters</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Konfiguroi RCS-parametrit</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>ER performance traces that are generated in Finance and Operations will be imported into RCS for analysis by using the ER format designer and the ER mapping designer.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Finance and Operationsissa luodut ER-suorituskykyjäljet tuodaan RCS-määritykseen analysointia varten käyttämällä ER Format Designeria ja ER Mapping Designeria.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Because ER performance traces are stored as attachments of the execution log record that is related to the ER format, you must configure RCS parameters in advance, to specify the DM document type that should be used to attach performance traces.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Koska ER-suorituskykyjäljet tallennetaan ER-muotoon liittyvän suorituslokitietueen liitteinä, RCS-parametrit on määritettävä etukäteen, jotta voidaan määrittää DM-tiedostotyyppi, jota käytetään suorituskykyjälkien liittämiseen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>In the instance of RCS that has been provisioned for your company, in the <bpt id="p1">**</bpt>Electronic reporting<ept id="p1">**</ept> workspace, select <bpt id="p2">**</bpt>Electronic reporting parameters<ept id="p2">**</ept>.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Valitse yrityksellesi määritetyn RCS-esiintymän <bpt id="p1">**</bpt>Sähköisen raportoinnin<ept id="p1">**</ept> -työtilassa <bpt id="p2">**</bpt>Sähköiset raportointiparametrit<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Then, on the <bpt id="p1">**</bpt>Electronic reporting parameters<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Attachments<ept id="p2">**</ept> tab, in the <bpt id="p3">**</bpt>Others<ept id="p3">**</ept> field, select the DM document type to use for performance traces.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited">Valitse sitten <bpt id="p1">**</bpt>Sähköisen raportoinnin parametrit<ept id="p1">**</ept> -sivun <bpt id="p2">**</bpt>Liitteet<ept id="p2">**</ept>-välilehden <bpt id="p3">**</bpt>Muut<ept id="p3">**</ept>-kentästä suorituskyvyn jäljille käytettävä DM-tiedostotyyppi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Electronic reporting parameters page in RCS</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Sähköisen raportoinnin parametrit -sivu RCS:ssä</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>To be available in the <bpt id="p1">**</bpt>Others<ept id="p1">**</ept> lookup field, a DM document type must be configured in the following manner on the <bpt id="p2">**</bpt>Document types<ept id="p2">**</ept> page (<bpt id="p3">**</bpt>Organization administration <ph id="ph1">\&gt;</ph> Document management <ph id="ph2">\&gt;</ph> Document types<ept id="p3">**</ept>):</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited">Jos haluat olla käytettävissä <bpt id="p1">**</bpt>Muut<ept id="p1">**</ept> -hakukentässä, DM-tiedostotyyppi on konfiguroitava seuraavalla tavalla <bpt id="p2">**</bpt>Asiakirjatyypit<ept id="p2">**</ept>-sivulla (<bpt id="p3">**</bpt>Organisaation hallinta <ph id="ph1">\&gt;</ph> Asiakirjan hallinta <ph id="ph2">\&gt;</ph> Asiakirjatyypit<ept id="p3">**</ept>):</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source><bpt id="p1">**</bpt>Class:<ept id="p1">**</ept> Attach file</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match"><bpt id="p1">**</bpt>Luokka:<ept id="p1">**</ept> Liitä tiedosto</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source><bpt id="p1">**</bpt>Group:<ept id="p1">**</ept> File</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match"><bpt id="p1">**</bpt>Ryhmä:<ept id="p1">**</ept> Tiedosto</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Design an ER solution</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Suunnittele ER-ratkaisu</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Assume that you've started to design a new ER solution to generate a new report that presents vendor transactions.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Oletetaan, että olet aloittanut uuden ER-ratkaisun suunnittelun, joka luo toimittajatapahtumia esittelevän uuden raportin.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Currently, you can find the transactions for a selected vendor on the <bpt id="p1">**</bpt>Vendor transactions<ept id="p1">**</ept> page (go to <bpt id="p2">**</bpt>Account payable <ph id="ph1">\&gt;</ph> Vendors <ph id="ph2">\&gt;</ph> All vendors<ept id="p2">**</ept>, select a vendor, and then, on the Action Pane, on the <bpt id="p3">**</bpt>Vendor<ept id="p3">**</ept> tab, in the <bpt id="p4">**</bpt>Transactions<ept id="p4">**</ept> group, select <bpt id="p5">**</bpt>Transactions<ept id="p5">**</ept>).</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tällä hetkellä voit etsiä valitun toimittajan tapahtumat <bpt id="p1">**</bpt>Toimittajatapahtumat<ept id="p1">**</ept>-sivulta (Siirry <bpt id="p2">**</bpt>Ostoreskontra <ph id="ph1">\&gt;</ph> Toimittajat <ph id="ph2">\&gt;</ph> Kaikki toimittajat<ept id="p2">**</ept>, valitse toimittaja ja sitten toimintoruudun <bpt id="p3">**</bpt>Toimittaja<ept id="p3">**</ept>-välilehti kohdassa valitse <bpt id="p4">**</bpt>Tapahtumat<ept id="p4">**</ept>-ryhmästä <bpt id="p5">**</bpt>Tapahtumat<ept id="p5">**</ept>).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>However, you want to have all vendor transaction at the same time in one electronic document in XML format.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Haluat kuitenkin saada kaikki toimittajatapahtumat samaan aikaan yhdessä sähköisessä asiakirjassa XML-muodossa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>This solution will consist of several ER configurations that contain the required data model, metadata, model mapping, and format components.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tämä ratkaisu koostuu useista ER-konfiguraatioista, jotka sisältävät vaaditun tietomallin, metatiedot, mallien yhdistämismääritykset ja muotokomponentit.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Sign in to the instance of RCS that has been provisioned for your company.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Kirjaudu yrityksen RCS-esiintymään, joka on valmisteltu yrityksellesi.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>In this tutorial, you will create and modify configurations for the <bpt id="p1">**</bpt>Litware, Inc.<ept id="p1">**</ept> sample company.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tässä opetusohjelmassa luodaan ja muokataan konfiguraatioita malliyritykselle <bpt id="p1">**</bpt>Litware, Inc.<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Therefore, make sure that this configuration provider has been added to RCS and selected as active.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Varmista siksi, että tämä konfigurointipalvelu on lisätty RCS-järjestelmään ja valittu aktiiviseksi.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>For instructions, see the <bpt id="p1">[</bpt>Create configuration providers and mark them as active<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11)</ept> procedure.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Lisätietoja on kohdassa <bpt id="p1">[</bpt>Luo konfigurointipalvelut ja merkitse ne aktiivisiksi<ept id="p1">](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11)</ept> menettelyiksi.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>In the <bpt id="p1">**</bpt>Electronic reporting<ept id="p1">**</ept> workspace, select the <bpt id="p2">**</bpt>Reporting configurations<ept id="p2">**</ept> tile.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Sähköisen raportoinnin<ept id="p1">**</ept> työtilassa <bpt id="p2">**</bpt>Raportointimääritykset<ept id="p2">**</ept>-ruutu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>On the <bpt id="p1">**</bpt>Configurations<ept id="p1">**</ept> page, import the ER configurations that you downloaded as a prerequisite into RCS, in the following order: data model, metadata, model mapping, format.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tuo <bpt id="p1">**</bpt>Konfiguraatiot<ept id="p1">**</ept> -sivulla lataamasi ER-kokoonpanot RCS-edellytyksenä seuraavassa järjestyksessä: tietomalli, metatiedot, mallikartoitus, muoto.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>For each configuration, follow these steps:</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Luo kukin mukautus seuraavasti:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>On the Action Pane, select <bpt id="p1">**</bpt>Exchange <ph id="ph1">\&gt;</ph> Load from XML file<ept id="p1">**</ept>.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Valitse toimintoruudusta <bpt id="p1">**</bpt>Vaihda <ph id="ph1">\&gt;</ph> Lataa XML-tiedostosta<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Select <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept> to select the appropriate file for the required ER configuration in XML format.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Valitse haluamasi ER-kokoonpanon tiedosto XML-muodossa valitsemalla <bpt id="p1">**</bpt>Selaa<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Configurations page in RCS</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Konfiguroinnit-sivu RCS:ssä</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Run the ER solution to trace execution</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">ER-ratkaisun suorittaminen jäljityksen suorittamista varten</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Assume that you've finished designing the first version of the ER solution.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Oletetaan, että olet suunnitellut ER-ratkaisun ensimmäisen version.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>You now want to test it in your Finance and Operations instance and analyze execution performance.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Haluat nyt testata sen Finance and Operations -esiintymässä ja analysoida suorituskykyä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source><bpt id="p1">&lt;a id='import-configuration'&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Import an ER configuration from RCS into Finance and Operations</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match"><bpt id="p1">&lt;a id='import-configuration'&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>ER-konfiguraation tuominen RCI:sta Finance and Operationsiin</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Sign in to your Finance and Operations instance.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Kirjaudu omaan Finance and Operations -esiintymään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>For this tutorial, you will import configurations from your RCS instance (where you design your ER components) into your Finance and Operations instance (where you test and finally use them).</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tämän opetusohjelman avulla voit tuoda konfiguraatiot RCS-esiintymästä (jossa suunnittelet ER-komponentteja) Finance and Operations -esiintymään (jossa testaat ja lopulta käytät niitä).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Therefore, you must make sure that all the required artifacts have been prepared.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Siksi on varmistettava, että kaikki vaaditut tiedot on valmisteltu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>For instructions, see the <bpt id="p1">[</bpt>Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)<ept id="p1">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations)</ept> procedure.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Ohjeita on kohdassa <bpt id="p1">[</bpt>Sähköisen raportoinnin konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta<ept id="p1">](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations)</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Follow these steps to import the configurations from RCS into Finance and Operations:</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Seuraavien vaiheiden mukaisesti voit tuoda konfiguraatiot RCS-asetuksista Finance and Operationsiin:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>In the <bpt id="p1">**</bpt>Electronic reporting<ept id="p1">**</ept> workspace, on the tile for the <bpt id="p2">**</bpt>Litware, Inc.<ept id="p2">**</ept> configuration provider, select <bpt id="p3">**</bpt>Repositories<ept id="p3">**</ept>.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Valitse <bpt id="p1">**</bpt>Sähköisen raportoinnin<ept id="p1">**</ept> työtilassa<bpt id="p2">**</bpt>Litware, Inc<ept id="p2">**</ept>-määrityspalveluruudussa <bpt id="p3">**</bpt>Arkistot<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>On the <bpt id="p1">**</bpt>Configuration repository<ept id="p1">**</ept> page, select the repository of the <bpt id="p2">**</bpt>RCS<ept id="p2">**</ept> type, and then select <bpt id="p3">**</bpt>Open<ept id="p3">**</ept>.</source><target logoport:matchpercent="0" state="translated">Valitse <bpt id="p1">**</bpt>Konfiguraatiosäilö<ept id="p1">**</ept>-sivun ruudukossa oleva säilö, jonka tyyppi on <bpt id="p2">**</bpt>RCS<ept id="p2">**</ept> ja valitse sitten <bpt id="p3">**</bpt>Avaa<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>On the <bpt id="p1">**</bpt>Configurations<ept id="p1">**</ept> FastTab, select the <bpt id="p2">**</bpt>Performance trace format<ept id="p2">**</ept> configuration.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Valitse <bpt id="p1">**</bpt>Konfiguraatiot<ept id="p1">**</ept>-pikavälilehdessä <bpt id="p2">**</bpt>Suorituskyvyn jäljitysmuodon<ept id="p2">**</ept> konfiguraatio.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>On the <bpt id="p1">**</bpt>Versions<ept id="p1">**</ept> FastTab, select version <bpt id="p2">**</bpt>1.1<ept id="p2">**</ept> of the selected configuration, and then select <bpt id="p3">**</bpt>Import<ept id="p3">**</ept>.</source><target logoport:matchpercent="0" state="translated">Valitse <bpt id="p1">**</bpt>Versiot<ept id="p1">**</ept>-pikavälilehdellä valitun konfiguraation versio <bpt id="p2">**</bpt>1.1<ept id="p2">**</ept> ja valitse sitten <bpt id="p3">**</bpt>Tuo<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Configuration repository page in Finance and Operations</source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match">Konfigurointivaraston sivu Finance and Operationsissa</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>The corresponding versions of the data model and model mapping configurations are automatically imported as prerequisites for the imported ER format configuration.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tietomallin ja mallin yhdistämismääritysten vastaavat versiot tuodaan automaattisesti valmiiksi tuodun ER-muodon konfiguroinnin edellytyksinä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Turn on the ER performance trace</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">ER-suorituskykyjäljityksen ottaminen käyttöön</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>In Finance and Operations, go to <bpt id="p1">**</bpt>Organization administration <ph id="ph1">\&gt;</ph> Electronic reporting <ph id="ph2">\&gt;</ph> Configurations<ept id="p1">**</ept>.</source><target logoport:matchpercent="0" state="translated">Valitse Finance and Operationsissa <bpt id="p1">**</bpt>Organisaation hallinto <ph id="ph1">\&gt;</ph> Sähköinen raportointi <ph id="ph2">\&gt;</ph> Määritykset<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>On the <bpt id="p1">**</bpt>Configurations<ept id="p1">**</ept> page, on the Action Pane, on the <bpt id="p2">**</bpt>Configurations<ept id="p2">**</ept> tab, in the <bpt id="p3">**</bpt>Advanced settings<ept id="p3">**</ept> group, select <bpt id="p4">**</bpt>User parameters<ept id="p4">**</ept>.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">Valitse <bpt id="p1">**</bpt>Määritykset<ept id="p1">**</ept>-sivun toimintoruudun <bpt id="p2">**</bpt>Määritykset<ept id="p2">**</ept>-välilehden <bpt id="p3">**</bpt>Lisämääritykset<ept id="p3">**</ept>-ryhmässä <bpt id="p4">**</bpt>Käyttäjäparametrit<ept id="p4">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>In the <bpt id="p1">**</bpt>User parameters<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Execution tracing<ept id="p2">**</ept> section, follow these steps:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Toimi <bpt id="p1">**</bpt>Käyttäjäparametrit<ept id="p1">**</ept>-valintaikkunan <bpt id="p2">**</bpt>Suorituksen jäljitys<ept id="p2">**</ept> -osassa seuraavasti:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>In the <bpt id="p1">**</bpt>Execution trace format<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Debug trace format<ept id="p2">**</ept> to start to collect the details of ER format execution.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Valitse <bpt id="p1">**</bpt>Suorituksen jäljitys muoto<ept id="p1">**</ept> -kentässä <bpt id="p2">**</bpt>Korjaa jäljitystiedosto<ept id="p2">**</ept> -kentässä, joka alkaa keräämään tietoja ER-muodon suorittamisesta.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>When this value is selected, the performance trace will collect information about the time that is spent on the following actions:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Kun tämä arvo valitaan, suorituskyvyn jäljitys kerää seuraaviin toimiin kuluvaa aikaa koskevia tietoja:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Running each data source in the model mapping that is called to get data</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Kunkin tietolähteen suorittamista mallikartoituksista, joita kutsutaan tietojen hakemiseksi</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Processing each format item to enter data in the output that is generated</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Kunkin muotoilunimikkeen käsitteleminen siten, että se syöttää tietoja luotavalle tulosteelle</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>You use the <bpt id="p1">**</bpt>Execution trace format<ept id="p1">**</ept> field to specify the format of the generated performance trace that the execution details are stored in for ER format and mapping elements.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Suorituksen jäljitysmuoto<ept id="p1">**</ept> -kentän avulla voit määrittää sen luodun suorituskykyjäljityksen muodon, johon suoritustiedot tallennetaan ER-ja Mapping-elementeissä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>By selecting <bpt id="p1">**</bpt>Debug trace format<ept id="p1">**</ept> as the value, you will be able to analyze the content of the trace in ER Operation designer, and see the ER format or mapping elements that are mentioned in the trace.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Kun valitset arvoksi <bpt id="p1">**</bpt>Virheen korjauksen jäljitysmuodon<ept id="p1">**</ept>, pystyt analysoimaan jäljityksen sisältöä ER Operation Designerissa ja näkemään ER-muodon tai määrityselementit, jotka mainitaan jäljityksessä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Set the following options to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to collect specific details of the execution of the ER model mapping and ER format components:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Määritä seuraavat asetukset: <bpt id="p1">**</bpt>Kyllä<ept id="p1">**</ept>, jos haluat kerätä tarkempia tietoja ER-mallin kartoituksesta ja ER-muotokomponenttien suorittamisesta.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source><bpt id="p1">**</bpt>Collect query statistics<ept id="p1">**</ept> – When this option is turned on, the performance trace will collect the following information:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Kyselyn tilastotietojen kerääminen<ept id="p1">**</ept> – Kun tämä vaihtoehto on käytössä, suorituskyvyn jäljitys kerää seuraavat tiedot:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>The number of database calls that were made by data sources</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tietolähteiden tekemien kutsujen määrä</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>The number of duplicate calls to the database</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Tietokantaan lisättyjen toistettujen kutsujen määrä</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Details of the SQL statements that were used to make database calls</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tietokantakutsujen tekemiseen käytettävien SQL-lauseiden tiedot</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source><bpt id="p1">**</bpt>Trace access of caching<ept id="p1">**</ept> – When this option is turned on, the performance trace will collect information about the ER model mapping's cache usage.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Jäljitysvälimuistin käyttäminen<ept id="p1">**</ept> – Kun tämä asetus on käytössä, suorituskyvyn jäljitys kerää tietoja ER-mallikartoituksen välimuistin käytöstä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source><bpt id="p1">**</bpt>Trace data access<ept id="p1">**</ept> – When this option is turned on, the performance trace will collect information about the number of calls to the database for executed data sources of the record list type.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Jäljitystietojen käyttö<ept id="p1">**</ept> – Kun tämä asetus on käytössä, suorituskyvyn jäljitys kerää tietoja siitä, kuinka monta käyntiä tietokantaan on tehty tietueluettelotyypin suoritettavissa tietolähteissä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source><bpt id="p1">**</bpt>Trace list enumeration<ept id="p1">**</ept> – When this option is turned on, the performance trace will collect information about the number of records that are requested from data sources of the record list type.</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">**</bpt>Jäljitystietojen luettelointi<ept id="p1">**</ept> – Kun tämä asetus on käytössä, suorituskyvyn jäljitys kerää tietoja siitä, kuinka monta käyntiä tietokantaan on tehty tietueluettelotyypin suoritettavissa tietolähteissä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>The parameters in the <bpt id="p1">**</bpt>User parameters<ept id="p1">**</ept> dialog box are specific to the user and the current company.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Käyttäjäparametrit<ept id="p1">**</ept> -valintaikkunan parametrit koskevat käyttäjää ja nykyistä yritystä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>User parameters dialog box in Finance and Operations</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Käyttäjäparametrit-valintaikkuna Finance and Operationsissa</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source><bpt id="p1">&lt;a id='run-format'&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Run the ER format</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;a id='run-format'&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Suorita ER-muoto</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>In Finance and Operations, select the <bpt id="p1">**</bpt>DEMF<ept id="p1">**</ept> company.</source><target logoport:matchpercent="66" state="translated" state-qualifier="fuzzy-match">Valitse <bpt id="p1">**</bpt>DEMF<ept id="p1">**</ept>-yritys Finance and Operationsissa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Go to <bpt id="p1">**</bpt>Organization administration <ph id="ph1">\&gt;</ph> Electronic reporting <ph id="ph2">\&gt;</ph> Configurations<ept id="p1">**</ept>.</source><target logoport:matchpercent="0" state="translated">Siirry kohtaan <bpt id="p1">**</bpt>Organisaation hallinto <ph id="ph1">\&gt;</ph> Sähköinen raportointi <ph id="ph2">\&gt;</ph> Konfiguraatiot<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>On the <bpt id="p1">**</bpt>Configurations<ept id="p1">**</ept> page, in the configuration tree, select the <bpt id="p2">**</bpt>Performance trace format<ept id="p2">**</ept> item.</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Valitse <bpt id="p1">**</bpt>Konfiguraatiot<ept id="p1">**</ept>-sivulla konfiguraatiopuussa <bpt id="p2">**</bpt>Suorituskyvyn jäljitysmuodon<ept id="p2">**</ept> nimike.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>On the Action Pane, select <bpt id="p1">**</bpt>Run<ept id="p1">**</ept>.</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Valitse toimintoruudussa <bpt id="p1">**</bpt>Suorita<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Notice that the file that is generated presents information about 265 transactions for six vendors.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Huomaa, että luotu tiedosto sisältää tietoja kuuden toimittajan 265-tapahtumista.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Review the execution trace</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Suorituksen jäljityksen tarkasteleminen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source><bpt id="p1">&lt;a id='export-trace'&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Export the generated trace from Finance and Operations</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">&lt;a id='export-trace'&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Vie luotu jäljitys Finance and Operationsista</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Performance traces are decoupled from the source ER format and can be serialized to an external zip file.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Suorituskykyjäljet irrotetaan lähde-ER-muodosta, ja ne voidaan sarjoittaa ulkoiseen zip-tiedostoon.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>In Finance and Operations, go to <bpt id="p1">**</bpt>Organization administration <ph id="ph1">\&gt;</ph> Electronic reporting <ph id="ph2">\&gt;</ph> Configuration debug logs<ept id="p1">**</ept>.</source><target logoport:matchpercent="88" state="translated" state-qualifier="fuzzy-match">Valitse Finance and Operationsissa <bpt id="p1">**</bpt>Organisaation hallinto <ph id="ph1">\&gt;</ph> Sähköinen raportointi <ph id="ph2">\&gt;</ph> Määritysten virheenkorjauslokit<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>On the <bpt id="p1">**</bpt>Electronic reporting run logs<ept id="p1">**</ept> page, in the left pane, in the <bpt id="p2">**</bpt>Configuration name<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>Performance trace format<ept id="p3">**</ept> to find the log records that have been generated by the execution of the <bpt id="p4">**</bpt>Performance trace format<ept id="p4">**</ept> configuration.</source><target logoport:matchpercent="0" state="translated">Valitse <bpt id="p1">**</bpt>Sähköisen raportoinnin ajon lokit<ept id="p1">**</ept> -sivun vasemmanpuoleisen ruudun <bpt id="p2">**</bpt>Konfiguration nimi<ept id="p2">**</ept> -kentässä <bpt id="p3">**</bpt>Suorituskyvyn jäljitysmuoto<ept id="p3">**</ept> jos haluat löytää lokitiedostot, jotka on luotu <bpt id="p4">**</bpt>Suoritus kyvyn jäljitysmuodon<ept id="p4">**</ept> konfiguraatiolle.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Select the <bpt id="p1">**</bpt>Attachments<ept id="p1">**</ept> button (the paper clip symbol) in the upper-right corner of the page, or press <bpt id="p2">**</bpt>Ctrl+Shift+A<ept id="p2">**</ept>.</source><target logoport:matchpercent="0" state="translated">Valitse <bpt id="p1">**</bpt>Liitteet<ept id="p1">**</ept>-painikkeen sivun oikeassa yläkulmassa (paperiliitinsymboli) tai paina <bpt id="p2">**</bpt>Ctrl+Shift+A<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Attachments button on the Electronic reporting run logs page in Finance and Operations</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Liitteet-painike sähköisen raportoinnin ajon lokit -sivulla Finance and Operationsissa</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>On the <bpt id="p1">**</bpt>Attachments for Electronic reporting run logs<ept id="p1">**</ept> page, on the Action Pane, select <bpt id="p2">**</bpt>Open<ept id="p2">**</ept> to get the performance trace as a zip file and store it locally.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Valitse sähköisen raportoinnin ajon lokit<ept id="p1">**</ept> -sivun toimintoruudussa <bpt id="p2">**</bpt>Avaa<ept id="p2">**</ept>, jos haluat saada suorituskyvyn jäljityksen zip-tiedostona ja tallentaa sen paikallisesti.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Attachments for Electronic reporting run logs page in Finance and Operations</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match">Liitteet sähköisen raportoinnin ajon lokit -sivulla Finance and Operationsissa</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>The trace that is generated has a reference to the source ER report via a unique report identifier in <bpt id="p1">**</bpt>GUID<ept id="p1">**</ept> format only.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Luotu jäljitys viittaa lähde-ER-raporttiin yksilöivän raporttitunnuksen avulla vain <bpt id="p1">**</bpt>GUID<ept id="p1">**</ept>-muodossa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>The version numbering of the format isn't considered.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Muodon versionumerointia ei oteta huomioon.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Notice that the association between the performance trace that has been generated for the executed ER format and the ER model mapping is based on the root descriptor that was used and the common data model.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Huomaa, että suoritetun ER-muodon ja ER-mallikartoituksen muodostaman suorituskyvyn jäljittämisen välinen yhteys perustuu käytössä olevaan juurihakemistoon ja yhteiseen tietomalliin.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>The version numbering of the format and model mapping isn't considered.</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Muodon versionumerointia ja mallin yhdistämistä ei oteta huomioon.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>The setting of the <bpt id="p1">**</bpt>Default for model mapping<ept id="p1">**</ept> flag for the model mapping also isn't considered.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Mallimerkinnän <bpt id="p1">**</bpt>oletusarvoa mallimerkintää varten<ept id="p1">**</ept> ei myöskään oteta huomioon.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source><bpt id="p1">&lt;a id='import-trace'&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Import the generated trace into RCS</source><target logoport:matchpercent="80" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;a id='import-trace'&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Tuo tuotettu jälki RCS:ään.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>In RCS, in the <bpt id="p1">**</bpt>Electronic reporting<ept id="p1">**</ept> workspace, select the <bpt id="p2">**</bpt>Reporting configurations<ept id="p2">**</ept> tile.</source><target logoport:matchpercent="94" state="translated" state-qualifier="fuzzy-match">Valitse RCS:ssä <bpt id="p1">**</bpt>Sähköisen raportoinnin<ept id="p1">**</ept> työtilassa <bpt id="p2">**</bpt>Raportointimääritykset<ept id="p2">**</ept>-ruutu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>On the <bpt id="p1">**</bpt>Configurations<ept id="p1">**</ept> page, in the configuration tree, expand the <bpt id="p2">**</bpt>Performance trace model<ept id="p2">**</ept> item, and select the <bpt id="p3">**</bpt>Performance trace format<ept id="p3">**</ept> item.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Laajenna <bpt id="p1">**</bpt>Konfiguraatiot<ept id="p1">**</ept>-sivun konfiguraatiopuussa <bpt id="p2">**</bpt>Suorituskyvyn jäljitysmalli<ept id="p2">**</ept> -nimike ja valitse <bpt id="p3">**</bpt>Suorituskyvyn seurannan muoto<ept id="p3">**</ept> -nimike.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>On the Action Pane, select <bpt id="p1">**</bpt>Designer<ept id="p1">**</ept>.</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match">Valitse toimintoruudussa <bpt id="p1">**</bpt>Suunnittelija<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>On the <bpt id="p1">**</bpt>Format designer<ept id="p1">**</ept> page, on the Action Pane, select <bpt id="p2">**</bpt>Performance trace<ept id="p2">**</ept>.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">Valitse <bpt id="p1">**</bpt>Muodon suunnittelija<ept id="p1">**</ept>-sivulla hallintapaneelista <bpt id="p2">**</bpt>Suorituskyvyn jäljitysmuoto<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>In the <bpt id="p1">**</bpt>Performance trace result settings<ept id="p1">**</ept> dialog box, select <bpt id="p2">**</bpt>Import performance trace<ept id="p2">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Valitse <bpt id="p1">**</bpt>Suorituskyvyn jäljitystulosten asetukset<ept id="p1">**</ept> -valintaikkunasta <bpt id="p2">**</bpt>Tuo suorituskyvyn jäljitys<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Select <bpt id="p1">**</bpt>Browse<ept id="p1">**</ept> to select the zip file that you exported from Finance and Operations earlier.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Valitse <bpt id="p1">**</bpt>Selaa<ept id="p1">**</ept> ja valitse zip-tiedosto, jonka olet vienyt Finance and Operationsista aiemmin.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Performance trace result settings dialog box in RCS</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Suorituskyvyn jäljitystulosten asetukset -valintaikkuna RCS-kohteessa</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Use the performance trace for analysis in RCS – Format execution</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Suorituskyvyn seurannan käyttäminen RCS – Format -suoritusanalyysissä</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>In RCS, on the <bpt id="p1">**</bpt>Format designer<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Expand/collapse<ept id="p2">**</ept> to expand the content of all format items.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Laajenna kaikkien muotoilukohteiden sisältö valitsemalla <bpt id="p1">**</bpt>Laajenna/tiivistä<ept id="p1">**</ept>-vaihtoehto <bpt id="p2">**</bpt>Muodon suunnittelija<ept id="p2">**</ept>-sivulla.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Notice that additional information is shown for some items of the current format:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Huomaa, että joistakin nykyisen muodon kohteista näytetään lisätietoja:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>The actual time that was spent entering data in the generated output by using the format item</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Todellinen aika, joka käytettiin tietojen syöttämiseen luotuun tulosteeseen kohteen muotoilun avulla</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>The same time expressed as a percentage of the total time that was spent generating the whole output</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Sama aika ilmaistaan prosentteina kokonaisajasta, joka käytettiin koko tuotoksen tuottamiseen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Format designer page in RCS</source><target logoport:matchpercent="84" state="translated" state-qualifier="fuzzy-match">Muodon suunnittelutoiminto -sivu RCS:ssä</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Close <bpt id="p1">**</bpt>Format designer<ept id="p1">**</ept> page.</source><target logoport:matchpercent="0" state="translated">Sulje <bpt id="p1">**</bpt>Muodon suunnittelutoiminto<ept id="p1">**</ept> -sivu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source><bpt id="p1">&lt;a id='use-trace'&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Use the performance trace for analysis in RCS – Model mapping</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;a id='use-trace'&gt;</bpt><ept id="p1">&lt;/a&gt;</ept>Suorituskyvyn seurannan käyttäminen RCS:ssä – Mallin määritys</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>In RCS, on the <bpt id="p1">**</bpt>Configurations<ept id="p1">**</ept> page, in the configuration tree, select the <bpt id="p2">**</bpt>Performance trace mapping<ept id="p2">**</ept> item.</source><target logoport:matchpercent="85" state="translated" state-qualifier="fuzzy-match">Valitse RCS:ssä <bpt id="p1">**</bpt>Konfiguraatiot<ept id="p1">**</ept>-sivulla konfiguraatiopuussa <bpt id="p2">**</bpt>Suorituskyvyn jäljitysmääritys<ept id="p2">**</ept> -nimike.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>On the Action Pane, select <bpt id="p1">**</bpt>Designer<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="85" state="translated" state-qualifier="leveraged-inherited">Valitse toimintoruudussa <bpt id="p1">**</bpt>Suunnittelija<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>Select <bpt id="p1">**</bpt>Designer<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Suunnittelu<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>On the <bpt id="p1">**</bpt>Model mapping designer<ept id="p1">**</ept> page, on the Action Pane, select <bpt id="p2">**</bpt>Performance trace<ept id="p2">**</ept>.</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Valitse <bpt id="p1">**</bpt>Mallin määrityssuunnittelija<ept id="p1">**</ept> -sivulla hallintapaneelista <bpt id="p2">**</bpt>Suorituskyvyn jäljitysmuoto<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Select the trace that you imported earlier.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Valitse aiemmin tuotu jäljitys.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Notice that new information becomes available for some data source items of the current model mapping:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Huomaa, että joidenkin nykyisen mallimääritysten tietolähdenimikkeiden käytettävissä on uusia tietoja:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>The actual time that was spent getting data by using the data source</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tietolähteen avulla tietoja haettaessa käytetty todellinen aika</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>The same time expressed as a percentage of the total time that was spent running the whole model mapping</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Sama aika ilmaistaan prosentteina kokonaisajasta, joka käytettiin koko mallin määrityksen suorittamiseen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Notice that ER informs you that the current model mapping duplicates database requests while the VendTable/<ph id="ph1">\&lt;</ph>Relations/VendTrans.VendTable<ph id="ph2">\_</ph>AccountNum data source is run.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Huomaa, että ER ilmoittaa, että nykyisen mallin yhdistämismääritys kopioi tietokantapyynnöt, kun VendTable/<ph id="ph1">\&lt;</ph>Relations/VendTrans<ph id="ph2">\_</ph>. VendTable AccountNum-tietolähde suoritetaan.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>This duplication occurs because the list of vendor transactions is called two times for each iterated vendor record:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tämä päällekkäisyys johtuu siitä, että toimittajatapahtumien luetteloa kutsutaan kaksi kertaa kutakin iteroitua toimittajatietuetta varten:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>One call is made to enter details of each transaction in the data model, based on configured bindings.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Yksi kutsu tehdään tietomallin kunkin tapahtuman tietojen syöttämiseen määritettyjen sidosten perusteella.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>One call is made to enter the calculated number of transactions per vendor in the data model.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Yksi kutsu tehdään, kun toimittaja määrittää lasketun määrän tapahtumia toimittajakohtaisesti tietomallissa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Message about duplicate database requests on the Model mapping designer page in RCS</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Virheilmoitus tietokantapyyntöjen kopioista RCS-mallin malli kartoituksen suunnittelusivulla</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>The value <bpt id="p1">**</bpt><ph id="ph1">\[</ph>Q:530<ph id="ph2">\]</ph><ept id="p1">**</ept> indicates that the VendTrans table was called 530 times to return a record from that table to the VendTable/<ph id="ph3">\&lt;</ph>Relations/VendTrans.VendTable<ph id="ph4">\_</ph>AccountNum data source.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Arvo <bpt id="p1">**</bpt><ph id="ph1">\[</ph>Q:530<ph id="ph2">\]</ph><ept id="p1">**</ept> ilmaisee, että VendTrans-taulua kutsuttiin 530 kertaa palauttamaan kyseisessä taulussa oleva tietue VendTable/<ph id="ph3">\&lt;</ph>Relations/VendTrans. VendTable<ph id="ph4">\_</ph>AccountNum-tieto lähteeseen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>The value <bpt id="p1">**</bpt><ph id="ph1">\[</ph>530<ph id="ph2">\]</ph><ept id="p1">**</ept> indicates that the VendTable/<ph id="ph3">\&lt;</ph>Relations/VendTrans.VendTable<ph id="ph4">\_</ph>AccountNum data source was called 530 times to return a record from that data source and enter the details from it in the data model.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Arvo <bpt id="p1">**</bpt><ph id="ph1">\[</ph>530<ph id="ph2">\]</ph><ept id="p1">**</ept> ilmaisee, että VendTable/<ph id="ph3">\&lt;</ph>Relations/VendTrans. VendTable<ph id="ph4">\_</ph>AccountNum-tietolähdettä kutsuttiin 530 kertaa palaamaan, jolloin tietue palautetaan kyseiseen tietolähteeseen ja sen tiedot syötetään tietomalliin.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>We recommend that you use caching for the VendTable/<ph id="ph1">\&lt;</ph>Relations/VendTrans.VendTable<ph id="ph2">\_</ph>AccountNum data source, to reduce the number of calls that are made to get the details for 265 transactions and help improve the performance of the model mapping.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Suosittelemme, että käytät VendTable/<ph id="ph1">\&lt;</ph>Relations/VendTrans. VendTable<ph id="ph2">\_</ph>AccountNum-tietolähteen välimuistia, jotta voit vähentää 265-tapahtumien tietojen saamiseksi tehtyjen kutsujen määrää ja parantaa mallimäärityksen suorituskykyä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>It can also be useful to reduce the number of calls that are made to the LedgerTransTypeList data source.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Voi myös olla hyödyllistä vähentää LedgerTransTypeList-tietolähteeseen tehtyjen kutsujen määrää.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>This data source is used to associate each value of the <bpt id="p1">**</bpt>LedgerTransType<ept id="p1">**</ept> enumeration with its label.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tätä tietolähdettä käytetään liittämään kaikki <bpt id="p1">**</bpt>lLedgerTransType<ept id="p1">**</ept>-luetteloinnin arvot sen otsikkoon.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>By using this data source, you can find an appropriate label and enter it in the data model for each vendor transaction.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Käyttämällä tätä tietolähdettä voit löytää asianmukaisen tunnisteen ja syöttää sen kunkin toimittajatapahtuman tietomalliin.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>The current number of calls to this data source (9,027) is quite high for 265 transactions.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tähän tietolähteeseen soitettujen kutsujen määrä (9 027) on melko suuri 265-tapahtumissa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Model mapping designer page in RCS, showing 9,027 calls to the data source</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Mallin määrityksen suunnittelijasivu RCS:ssä näyttää 9 027 puhelua tietolähteeseen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Improve the model mapping based on information from the execution trace</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Paranna mallin määritystä suorituksen jälkeisten tietojen perusteella</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Modify the logic of the model mapping</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Mallin määrityksen logiikan muokkaaminen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Follow these steps to use caching, to help prevent duplicate calls to the database:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Seuraavia ohjeita noudattamalla voit käyttää välimuistia, joka estää kaksoissoittoja tietokantaan:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>In RCS, on the <bpt id="p1">**</bpt>Model mapping designer<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Data sources<ept id="p2">**</ept> pane, select the <bpt id="p3">**</bpt>VendTable<ept id="p3">**</ept> item.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Valitse RCS:ssä <bpt id="p1">**</bpt>Mallin määrityksen suunnittelu<ept id="p1">**</ept> -sivun <bpt id="p2">**</bpt>Tietolähteet<ept id="p2">**</ept>-ruudusta <bpt id="p3">**</bpt>VendTable<ept id="p3">**</ept>-nimike.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Select <bpt id="p1">**</bpt>Cache<ept id="p1">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Valitse <bpt id="p1">**</bpt>Välimuisti<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Expand the <bpt id="p1">**</bpt>VendTable<ept id="p1">**</ept> item, expand the list of one-to-many relations for the VendTable data source (the <bpt id="p2">**</bpt><ph id="ph1">\&lt;</ph>Relations<ept id="p2">**</ept> item), and select the <bpt id="p3">**</bpt>VendTrans.VendTable<ph id="ph2">\_</ph>AccountNum<ept id="p3">**</ept> item.</source><target logoport:matchpercent="0" state="translated">Laajenna <bpt id="p1">**</bpt>VendTable<ept id="p1">**</ept>-nimike, laajenna VendTable-tietolähde ( <bpt id="p2">**</bpt><ph id="ph1">\&lt;</ph>Suhde<ept id="p2">**</ept>-nimike), yksi-moneen-suhteiden luettelo ja valitse <bpt id="p3">**</bpt>VendTrans.VendTable<ph id="ph2">\_</ph>AccountNum<ept id="p3">**</ept>-nimike</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Select <bpt id="p1">**</bpt>Cache<ept id="p1">**</ept>.</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Valitse <bpt id="p1">**</bpt>Välimuisti<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Caching setup to help prevent duplicate calls</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Asetusten tallentaminen välimuistiin, jotta kaksinkertaiset kutsut voidaan estää</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Follow these steps to bring the LedgerTransTypeList data source into the scope of the VendTable data source:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Siirrä LedgerTransTypeList-tietolähde VendTable-tietolähteen käyttöalueeseen seuraavasti:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>In the <bpt id="p1">**</bpt>Data source types<ept id="p1">**</ept> pane, expand the <bpt id="p2">**</bpt>Functions<ept id="p2">**</ept> item, and select the <bpt id="p3">**</bpt>Calculated field<ept id="p3">**</ept> item.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Laajenna <bpt id="p1">**</bpt>Tietolähdetyypit<ept id="p1">**</ept>-ruudussa <bpt id="p2">**</bpt>Funktiot<ept id="p2">**</ept>-nimike ja valitse <bpt id="p3">**</bpt>Laskettu kenttä<ept id="p3">**</ept> -nimike.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>In the <bpt id="p1">**</bpt>Data sources<ept id="p1">**</ept> pane, select the <bpt id="p2">**</bpt>VendTable<ept id="p2">**</ept> item.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Valitse <bpt id="p1">**</bpt>Tietolähteet<ept id="p1">**</ept>-ruudusta <bpt id="p2">**</bpt>VendTable<ept id="p2">**</ept>-nimike.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Lisää<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>In the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter <bpt id="p2">**</bpt><ph id="ph1">\$</ph>TransType<ept id="p2">**</ept>.</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">Kirjoita <bpt id="p1">**</bpt>Nimi<ept id="p1">**</ept>-kenttään <bpt id="p2">**</bpt><ph id="ph1">\$</ph>TransType<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Select <bpt id="p1">**</bpt>Edit formula<ept id="p1">**</ept>.</source><target logoport:matchpercent="74" state="translated" state-qualifier="fuzzy-match">Valitse <bpt id="p1">**</bpt>Muokkaa kaavaa<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>In the <bpt id="p1">**</bpt>Formula<ept id="p1">**</ept> field, enter <bpt id="p2">**</bpt>LedgerTransTypeList<ept id="p2">**</ept>.</source><target logoport:matchpercent="0" state="translated">Kirjoita <bpt id="p1">**</bpt>Kaava<ept id="p1">**</ept>-kenttään <bpt id="p2">**</bpt>LedgerTransTypeList<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Tallenna<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Close the <bpt id="p1">**</bpt>Formula editor<ept id="p1">**</ept> page.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Sulje <bpt id="p1">**</bpt>Kaavaeditori<ept id="p1">**</ept>-sivu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Click <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Follow these steps to do caching of the <bpt id="p1">**</bpt><ph id="ph1">\$</ph>TransType<ept id="p1">**</ept> field:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Suorita <bpt id="p1">**</bpt><ph id="ph1">\$</ph>TransType<ept id="p1">**</ept>-kentän tallentaminen välimuistiin seuraavien vaiheiden mukaisesti:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Select the <bpt id="p1">**</bpt>LedgerTransTypeList<ept id="p1">**</ept> item.</source><target logoport:matchpercent="0" state="translated">Valitse <bpt id="p1">**</bpt>LedgerTransTypeList<ept id="p1">**</ept>-nimike.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Select <bpt id="p1">**</bpt>Cache<ept id="p1">**</ept>.</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Valitse <bpt id="p1">**</bpt>Välimuisti<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Select the <bpt id="p1">**</bpt>VendTable.<ph id="ph1">\$</ph>TransType<ept id="p1">**</ept> item.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Valitse <bpt id="p1">**</bpt>VendTable.<ph id="ph1">\$</ph>TransType<ept id="p1">**</ept>-nimike.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Select <bpt id="p1">**</bpt>Cache<ept id="p1">**</ept>.</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Valitse <bpt id="p1">**</bpt>Välimuisti<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Caching setup for the $TransType field</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">$TransType-kentän asetusten tallentaminen välimuistiin</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Follow these steps to change the <bpt id="p1">**</bpt><ph id="ph1">\$</ph>TransTypeRecord<ept id="p1">**</ept> field so that it starts to use the cached <bpt id="p2">**</bpt><ph id="ph2">\$</ph>TransType<ept id="p2">**</ept> field:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Näiden vaiheiden avulla voit muuttaa <bpt id="p1">**</bpt><ph id="ph1">\$</ph>TransTypeRecord<ept id="p1">**</ept>-kenttää siten, että se alkaa käyttää välimuistissa olevaa <bpt id="p2">**</bpt><ph id="ph2">\$</ph>TransType<ept id="p2">**</ept>-kenttää:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>In the <bpt id="p1">**</bpt>Data sources<ept id="p1">**</ept> pane, expand the <bpt id="p2">**</bpt>VendTable<ept id="p2">**</ept> item, expand the <bpt id="p3">**</bpt><ph id="ph1">\&lt;</ph>Relations<ept id="p3">**</ept> item, expand the <bpt id="p4">**</bpt>VendTrans.VendTable<ph id="ph2">\_</ph>AccountNum<ept id="p4">**</ept> item, and select the <bpt id="p5">**</bpt>VendTable. VendTrans.VendTable<ph id="ph3">\_</ph>AccountNum.<ph id="ph4">\$</ph>TransTypeRecord<ept id="p5">**</ept> item.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Laajenna <bpt id="p1">**</bpt>Tietolähteet<ept id="p1">**</ept>-ruudussa <bpt id="p2">**</bpt>VendTable<ept id="p2">**</ept>-nimike, laajenna <bpt id="p3">**</bpt><ph id="ph1">\&lt;</ph>Suhteet<ept id="p3">**</ept>-nimike, laajenna <bpt id="p4">**</bpt>VendTrans.VendTable<ph id="ph2">\_</ph>AccountNum<ept id="p4">**</ept>-nimike ja valitse <bpt id="p5">**</bpt>VendTable. VendTrans. VendTable<ph id="ph3">\_</ph>AccountNum.<ph id="ph4">\$</ph>Transtyperecord<ept id="p5">**</ept> -nimike.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Muokkaa<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>Select <bpt id="p1">**</bpt>Edit formula<ept id="p1">**</ept>.</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Valitse <bpt id="p1">**</bpt>Muokkaa kaavaa<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>In the <bpt id="p1">**</bpt>Formula<ept id="p1">**</ept> field, find the following expression:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Etsi <bpt id="p1">**</bpt>Kaava<ept id="p1">**</ept>-kentästä seuraava lauseke:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>FIRSTORNULL (WHERE (LedgerTransTypeList, LedgerTransTypeList.Enum = <ph id="ph1">\@</ph>.TransType))</source><target logoport:matchpercent="0" state="translated">FIRSTORNULL (WHERE (LedgerTransTypeList, LedgerTransTypeList.Enum = <ph id="ph1">\@</ph>.TransType))</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>In the <bpt id="p1">**</bpt>Formula<ept id="p1">**</ept> field, enter the following expression:</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Syötä <bpt id="p1">**</bpt>Kaava<ept id="p1">**</ept>-kenttään seuraava lauseke:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>FIRSTORNULL (WHERE (VendTable.'<ph id="ph1">\$</ph>TransType', VendTable.'<ph id="ph2">\$</ph>TransType'.Enum = <ph id="ph3">\@</ph>.TransType)).</source><target logoport:matchpercent="0" state="translated">FIRSTORNULL (WHERE (VendTable.'<ph id="ph1">\$</ph>TransType', VendTable.'<ph id="ph2">\$</ph>TransType'.Enum = <ph id="ph3">\@</ph>.TransType)).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Tallenna<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>Close the <bpt id="p1">**</bpt>Formula editor<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Sulje <bpt id="p1">**</bpt>Kaavaeditori<ept id="p1">**</ept>-sivu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>Select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Tallenna<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>Close the <bpt id="p1">**</bpt>Model mapping designer<ept id="p1">**</ept> page.</source><target logoport:matchpercent="0" state="translated">Sulje <bpt id="p1">**</bpt>Mallimäärityksen sunnittelun<ept id="p1">**</ept> sivu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>Close the <bpt id="p1">**</bpt>Model mappings<ept id="p1">**</ept> page.</source><target logoport:matchpercent="73" state="translated" state-qualifier="fuzzy-match">Sulje <bpt id="p1">**</bpt>Mallimääritykset<ept id="p1">**</ept>-sivu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>Complete the modified version of the ER model mapping</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">ER-mallin yhdistämismäärityksen muokatun version täydentäminen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>In RCS, on the <bpt id="p1">**</bpt>Configurations<ept id="p1">**</ept> page, on the <bpt id="p2">**</bpt>Versions<ept id="p2">**</ept> FastTab, select version <bpt id="p3">**</bpt>1.2<ept id="p3">**</ept> of the <bpt id="p4">**</bpt>Performance trace mapping<ept id="p4">**</ept> configuration.</source><target logoport:matchpercent="0" state="translated">Valitse RCS-järjestelmän <bpt id="p1">**</bpt>Konfiguraatiot<ept id="p1">**</ept>-sivun <bpt id="p2">**</bpt>Versiot<ept id="p2">**</ept>-pikavälilehdessä <bpt id="p3">**</bpt>Suorituskyvyn jäljityksen<ept id="p3">**</ept> määrityksen versio <bpt id="p4">**</bpt>1.2<ept id="p4">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Select <bpt id="p1">**</bpt>Change status<ept id="p1">**</ept>.</source><target logoport:matchpercent="0" state="translated">Valitse <bpt id="p1">**</bpt>Muutoksen tila<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Select <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept>.</source><target logoport:matchpercent="0" state="translated">Valitse <bpt id="p1">**</bpt>Valmis<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Import the modified ER model mapping configuration from RCS into Finance and Operations</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tuo muutettu ER-mallin kartoitusmääritys RCI:sta Finance and Operationsiin</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>Repeat the steps in the <bpt id="p1">[</bpt>Import an ER configuration from RCS into Finance and Operations<ept id="p1">](#import-configuration)</ept> section earlier in this topic to import version 1.2 of the <bpt id="p2">**</bpt>Performance trace mapping<ept id="p2">**</ept> configuration into Finance and Operations.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tuo tämän jakson aikaisemmissa osissa esitetyt vaiheet <bpt id="p1">[</bpt>Tuo ER-konfiguraatio RCS:stä Finance and Operationsiin<ept id="p1">](#import-configuration)</ept> tuodaksesi <bpt id="p2">**</bpt>Suorituskyvyn jäljityskartoitus<ept id="p2">**</ept> -konfiguraation versiot 1.2 Finance and Operationsiin.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Run the modified ER solution to trace execution</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Muokatun ER-ratkaisun suorittaminen jäljityksen suorittamista varten</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>Run the ER format</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Suorita ER-muoto</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>Repeat the steps in the <bpt id="p1">[</bpt>Run the ER format<ept id="p1">](#run-format)</ept> section earlier in this topic to generate a new performance trace.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Luo uusi suoritusjälki <bpt id="p1">[</bpt>Suorita ER-muoto<ept id="p1">](#run-format)</ept> toistamalla tämän aiheen aikaisemmissa jaksoissa esitetyt vaiheet.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>Review the execution trace</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Suorituksen jäljityksen tarkasteleminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>Export the generated trace from Finance and Operations</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Vie luotu jäljitys Finance and Operationsista</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>Repeat the steps in the <bpt id="p1">[</bpt>Export the generated trace from Finance and Operations<ept id="p1">](#export-trace)</ept> section earlier in this topic to save a new performance trace locally.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Toista aiemmin tässä aiheessa kerrotut jakson vaiheet <bpt id="p1">[</bpt>Valitse luotu jälki Finance and Operationsista<ept id="p1">](#export-trace)</ept> jos haluat tallentaa uuden suoritusjäljen paikallisesti.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>Import the generated trace into RCS</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Tuo tuotettu jälki RCS:ään.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>Repeat the steps in the <bpt id="p1">[</bpt>Import the generated trace into RCS<ept id="p1">](#import-trace)</ept> section earlier in this topic to import the new performance trace into RCS.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Toista tässä osassa aiemmin kerrotut vaiheet <bpt id="p1">[</bpt>Tuo luodut jäljet RCS<ept id="p1">](#import-trace)</ept> tuodaksesi uudet suorituskykyjäljet RCS:ään.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Use the performance trace for analysis in RCS – Model mapping</source><target logoport:matchpercent="100" state="translated" state-qualifier="exact-match">Suorituskyvyn seurannan käyttäminen RCS:ssä – Mallin määritys</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Repeat the steps in the <bpt id="p1">[</bpt>Use the performance trace for analysis in RCS – Model mapping<ept id="p1">](#use-trace)</ept> section earlier in this topic to analyze the latest performance trace.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Suorita aiemmin tämän ohjeaiheen <bpt id="p1">[</bpt>Suorituskyvyn seurannan käyttäminen RCS:ssä – Mallin määritys<ept id="p1">](#use-trace)</ept> -osassa kuvatut suorituskyvyn jäljitys -kohdan vaiheet, kun haluat analysoida viimeisimmän suorituskyvyn jäljityksen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Notice that the adjustments that you made to the model mapping have eliminated duplicate queries to database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Huomaa, että mallimääritykseen tehdyt oikaisut ovat poistaneet tietokannasta päällekkäisiä kyselyitä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>The number of calls to database tables and data sources for this model mapping has been also reduced.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tämän mallimäärityksen tietokantataulukoihin ja tietolähteisiin tehtyjen kutsujen määrä on myös vähennetty.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>Therefore, the performance of the whole ER solution has improved.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Näin ollen koko ER-ratkaisun suorituskyky on parantunut.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>Trace information for the VendTable data source on the Model mapping designer page in RCS</source><target logoport:matchpercent="74" state="translated" state-qualifier="fuzzy-match">Jäljitä tietoja VendTable-tietolähteestä RCS-mallin mallinmäärityssuunnittelija-sivulta</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>In the trace information, the value <bpt id="p1">**</bpt><ph id="ph1">\[</ph>12<ph id="ph2">\]</ph><ept id="p1">**</ept> for the VendTable data source indicates that this data source was called 12 times.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jäljitystiedoissa VendTable-tietolähteen arvo <bpt id="p1">**</bpt><ph id="ph1">\[</ph>12<ph id="ph2">\]</ph><ept id="p1">**</ept> ilmaisee, että tätä tietolähdettä kutsuttiin 12 kertaa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>The value <bpt id="p1">**</bpt><ph id="ph1">\[</ph>Q:6<ph id="ph2">\]</ph><ept id="p1">**</ept> indicates that six calls were translated to database calls to the VendTable table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Arvo <bpt id="p1">**</bpt><ph id="ph1">\[</ph>Q:6<ph id="ph2">\]</ph><ept id="p1">**</ept> ilmaisee, että tietokantakutsuille on käännetty kuusi kutsua VendTable-tauluun.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>The value <bpt id="p1">**</bpt><ph id="ph1">\[</ph>C:6<ph id="ph2">\]</ph><ept id="p1">**</ept> indicates that the records that were fetched from the database were cached, and six other calls were processed by using the cache.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Arvo <bpt id="p1">**</bpt><ph id="ph1">\[</ph>C:6<ph id="ph2">\]</ph><ept id="p1">**</ept> ilmaisee, että tietokannasta noudetut tiedot tallennettiin välimuistiin ja kuusi muuta kutsua käsiteltiin välimuistin avulla.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>Notice that the number of calls to the LedgerTransTypeList data source has been reduced from 9,027 to 240.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Huomaa, että LedgerTransTypeList-tietolähteeseen soitettujen kutsujen määrä on vähentynyt 9 027:sta 240:een.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>Trace information for the LedgerTransTypeList data source on the Model mapping designer page in RCS</source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match">Jäljitä tietoja LedgerTransTypeList-tietolähteestä RCS-mallin mallinmäärityssuunnittelija-sivulta</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>Review the execution trace in Finance and Operations</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Suorituksen jäljityksen tarkasteleminen Finance and Operationsissa</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>In addition to RCS, some versions of Finance and Operations might offer capabilities for an ER framework designer experience.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">RCS-ohjelman lisäksi jotkin Finance and Operations -versiot voivat tarjota ER-kehyssuunnittelijakokemuksen ominaisuuksia.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>These versions of Finance and Operations have an <bpt id="p1">**</bpt>Enable design mode<ept id="p1">**</ept> option that can be turned on.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Näissä Finance and Operations -versioissa on <bpt id="p1">**</bpt>Ota käyttöön suunnittelutila<ept id="p1">**</ept> -vaihtoehto, joka voidaan ottaa käyttöön.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>You can find this option on the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab of the <bpt id="p2">**</bpt>Electronic reporting parameters<ept id="p2">**</ept> page, which you can open from the <bpt id="p3">**</bpt>Electronic reporting<ept id="p3">**</ept> workspace.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tämä vaihtoehto löytyy <bpt id="p1">**</bpt>Sähköisen raportoinnin parametrit<ept id="p1">**</ept> -sivun <bpt id="p2">**</bpt>Yleiset<ept id="p2">**</ept>-välilehdestä, jonka voit avata <bpt id="p3">**</bpt>Sähköisen raportoinnin<ept id="p3">**</ept> työtilassa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>Enable design mode option on the Electronic reporting parameters page in Finance and Operations</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ota suunnittelutilan vaihtoehto käyttöön Finance and Operationsin sähköisen raportoinnin parametrit -sivulla</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>If you use one of these versions of Finance and Operations, you can analyze the details of generated performance traces directly in Finance and Operations.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jos käytät jotakin näistä Finance and Operations -versioista, voit analysoida luotuja suorituskykytietoja suoraan Finance and Operationsissa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>You don't have to export them from Finance and Operation and import them into RCS.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Sinun ei tarvitse viedä niitä Finance and Operationsista ja tuoda niitä RCS-järjestelmään.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>Review the execution trace by using external tools</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Suorituksen jäljityksen tarkasteleminen ulkoisten työkalujen avulla</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>Configure user parameters</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Konfiguroi käyttäjäparametrit</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source>In Finance and Operations, go to <bpt id="p1">**</bpt>Organization administration <ph id="ph1">\&gt;</ph> Electronic reporting <ph id="ph2">\&gt;</ph> Configurations<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="0" state="translated" state-qualifier="leveraged-inherited">Valitse Finance and Operationsissa <bpt id="p1">**</bpt>Organisaation hallinto <ph id="ph1">\&gt;</ph> Sähköinen raportointi <ph id="ph2">\&gt;</ph> Määritykset<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>On the <bpt id="p1">**</bpt>Configurations<ept id="p1">**</ept> page, on the Action Pane, on the <bpt id="p2">**</bpt>Configurations<ept id="p2">**</ept> tab, in the <bpt id="p3">**</bpt>Advanced settings<ept id="p3">**</ept> group, select <bpt id="p4">**</bpt>User parameters<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="72" state="translated" state-qualifier="leveraged-inherited">Valitse <bpt id="p1">**</bpt>Määritykset<ept id="p1">**</ept>-sivun toimintoruudun <bpt id="p2">**</bpt>Määritykset<ept id="p2">**</ept>-välilehden <bpt id="p3">**</bpt>Lisämääritykset<ept id="p3">**</ept>-ryhmässä <bpt id="p4">**</bpt>Käyttäjäparametrit<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>In the <bpt id="p1">**</bpt>User parameters<ept id="p1">**</ept> dialog box, in the <bpt id="p2">**</bpt>Execution tracing<ept id="p2">**</ept> section, in the <bpt id="p3">**</bpt>Execution trace format<ept id="p3">**</ept> field, select <bpt id="p4">**</bpt>PerfView XML<ept id="p4">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Valitse <bpt id="p1">**</bpt>Käyttäjäparametrit<ept id="p1">**</ept> -valintaikkunan <bpt id="p2">**</bpt>Suorituksen jäljitys<ept id="p2">**</ept> -osan <bpt id="p3">**</bpt>Suorituksen jäljitys muoto-osan<ept id="p3">**</ept> -kentässä <bpt id="p4">**</bpt>PerfView XML<ept id="p4">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>Run the ER format</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-inherited">Suorita ER-muoto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>Repeat the steps in the <bpt id="p1">[</bpt>Run the ER format<ept id="p1">](#run-format)</ept> section earlier in this topic to generate a new performance trace.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Luo uusi suoritusjälki <bpt id="p1">[</bpt>Suorita ER-muoto<ept id="p1">](#run-format)</ept> toistamalla tämän aiheen aikaisemmissa jaksoissa esitetyt vaiheet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>Notice that the web browser offers a zip file for download.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source>This file contains the performance trace in PerfView format.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tämä tiedosto sisältää suorituskyvyn jäljityksen PerfView-muodossa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>You can then use the PerfView performance analysis tool to analyze the details of ER format execution.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tämän jälkeen voit analysoida ER Format Execution -toiminnon tietoja Perxview-suorituskyvyn analysointityökalun avulla.</target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Sähköisen raportoinnin muodon suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
+description: Tässä ohjeaiheessa on tietoja suorituskykyongelmien vianmäärityksestä sähköisen raportoinnin (ER) suorituskyvyn jäljitystoiminnon avulla.
+author: NickSelin
+manager: AnnBe
+ms.date: 05/08/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.region: Global
+ms.author: nselin
+ms.search.validFrom: ''
+ms.dyn365.ops.version: 10.0.1
+ms.openlocfilehash: aa71db2752889bc905c22bab1cf2fa46d7ee07c7
+ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1576543"
+---
+# <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a><span data-ttu-id="ca57c-103">Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi</span><span class="sxs-lookup"><span data-stu-id="ca57c-103">Trace the execution of ER formats to troubleshoot performance issues</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="ca57c-104">Osana sähköisten raportointikonfiguraatioiden suunnittelua sähköisten asiakirjojen luomista varten määritetään menetelmä, jonka avulla tiedot haetaan Microsoft Dynamics 365 for Finance and Operationsista ja syötetään tuotavaan tuotokseen.</span><span class="sxs-lookup"><span data-stu-id="ca57c-104">As part of the process of designing Electronic reporting (ER) configurations to generate electronic documents, you define the method that is used to get data out of Microsoft Dynamics 365 for Finance and Operations and enter it in the output that is generated.</span></span> <span data-ttu-id="ca57c-105">ER Performance Trace -toiminto auttaa vähentämään huomattavasti aikaa ja kustannuksia, jotka liittyvät ER-muodon suorituksen yksityiskohtien keräämiseen ja niiden käyttämiseen suorituskykyongelmien vianmäärityksessä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-105">The ER performance trace feature helps significantly reduce the time and cost that are involved in collecting the details of ER format execution and using them to troubleshoot performance issues.</span></span> <span data-ttu-id="ca57c-106">Tässä opetusohjelmassa on ohjeita siitä, miten suorituskykyä voidaan seurata suoritettavissa ER-muodoissa Finance and Operationsin yhteydessä ja miten suorituskykyä voidaan parantaa näiden jälkien tietojen avulla.</span><span class="sxs-lookup"><span data-stu-id="ca57c-106">This tutorial provides guidelines about how to take performance traces for executed ER formats in Finance and Operations, and how to use the information from these traces to help improve performance.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="ca57c-107">Edellytykset</span><span class="sxs-lookup"><span data-stu-id="ca57c-107">Prerequisites</span></span>
+
+<span data-ttu-id="ca57c-108">Tämän opetusohjelman esimerkkien suorittaminen edellyttää seuraavia käyttöoikeuksia:</span><span class="sxs-lookup"><span data-stu-id="ca57c-108">To complete the examples in this tutorial, you must have the following access:</span></span>
+
+- <span data-ttu-id="ca57c-109">Finance and Operations -käyttöoikeudet seuraaville rooleille:</span><span class="sxs-lookup"><span data-stu-id="ca57c-109">Access to Finance and Operations for one of the following roles:</span></span>
+
+    - <span data-ttu-id="ca57c-110">Sähköisen raportoinnin kehittäjä</span><span class="sxs-lookup"><span data-stu-id="ca57c-110">Electronic reporting developer</span></span>
+    - <span data-ttu-id="ca57c-111">Sähköisen raportoinnin toiminnallinen konsultti</span><span class="sxs-lookup"><span data-stu-id="ca57c-111">Electronic reporting functional consultant</span></span>
+    - <span data-ttu-id="ca57c-112">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="ca57c-112">System administrator</span></span>
+
+- <span data-ttu-id="ca57c-113">Voit käyttää järjestelmän (RCS) esiintymää, joka on valmisteltu samalle vuokralaiselle kuin Finance and Operations jostakin seuraavista rooleista:</span><span class="sxs-lookup"><span data-stu-id="ca57c-113">Access to the instance of Regulatory Configuration Services (RCS) that has been provisioned for the same tenant as Finance and Operations, for one of the following roles:</span></span>
+
+    - <span data-ttu-id="ca57c-114">Sähköisen raportoinnin kehittäjä</span><span class="sxs-lookup"><span data-stu-id="ca57c-114">Electronic reporting developer</span></span>
+    - <span data-ttu-id="ca57c-115">Sähköisen raportoinnin toiminnallinen konsultti</span><span class="sxs-lookup"><span data-stu-id="ca57c-115">Electronic reporting functional consultant</span></span>
+    - <span data-ttu-id="ca57c-116">Järjestelmänvalvoja</span><span class="sxs-lookup"><span data-stu-id="ca57c-116">System administrator</span></span>
+
+<span data-ttu-id="ca57c-117">Seuraavat tiedostot täytyy myös ladata ja tallentaa paikallisesti.</span><span class="sxs-lookup"><span data-stu-id="ca57c-117">You must also download and locally store the following files.</span></span>
+
+| <span data-ttu-id="ca57c-118">Tiedosto</span><span class="sxs-lookup"><span data-stu-id="ca57c-118">File</span></span>                                  | <span data-ttu-id="ca57c-119">Sisältö</span><span class="sxs-lookup"><span data-stu-id="ca57c-119">Content</span></span>                               |
+|---------------------------------------|---------------------------------------|
+| <span data-ttu-id="ca57c-120">Suorituskyvyn jäljitysmalli.versio.1</span><span class="sxs-lookup"><span data-stu-id="ca57c-120">Performance trace model.version.1</span></span>     | [<span data-ttu-id="ca57c-121">Esimerkin ER-tietomallin konfigurointi</span><span class="sxs-lookup"><span data-stu-id="ca57c-121">Sample ER data model configuration</span></span>](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
+| <span data-ttu-id="ca57c-122">Suorituskyvyn jäljitysmetadata.versio.1</span><span class="sxs-lookup"><span data-stu-id="ca57c-122">Performance trace metadata.version.1</span></span>  | [<span data-ttu-id="ca57c-123">Esimerkin ER-metadatan konfigurointi</span><span class="sxs-lookup"><span data-stu-id="ca57c-123">Sample ER metadata configuration</span></span>](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
+| <span data-ttu-id="ca57c-124">Suorituskyvyn jäljitysmapping.versio.1</span><span class="sxs-lookup"><span data-stu-id="ca57c-124">Performance trace mapping.version.1.1</span></span> | [<span data-ttu-id="ca57c-125">Esimerkin ER-mallikartoituksen konfigurointi</span><span class="sxs-lookup"><span data-stu-id="ca57c-125">Sample ER model mapping configuration</span></span>](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| <span data-ttu-id="ca57c-126">Suorituskyvyn jäljitysformat.versio.1</span><span class="sxs-lookup"><span data-stu-id="ca57c-126">Performance trace format.version.1.1</span></span>  | [<span data-ttu-id="ca57c-127">Esimerkin ER-format-konfigurointi</span><span class="sxs-lookup"><span data-stu-id="ca57c-127">Sample ER format configuration</span></span>](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+
+### <a name="configure-er-parameters"></a><span data-ttu-id="ca57c-128">Konfiguroi ER-parametrit</span><span class="sxs-lookup"><span data-stu-id="ca57c-128">Configure ER parameters</span></span>
+
+<span data-ttu-id="ca57c-129">Kukin Finance and Operationsin suorituskyvyn jäljitys tallennetaan suorituslokitietueen liitteenä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-129">Each ER performance trace that is generated in Finance and Operations is stored as an attachment of the execution log record.</span></span> <span data-ttu-id="ca57c-130">Näiden liitteiden hallinnassa käytetään Finance and Operationsin tiedostohallinnan (DM) kehystä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-130">The Document management (DM) framework of Finance and Operations is used to manage these attachments.</span></span> <span data-ttu-id="ca57c-131">Sinun on määritettävä ER-parametrit etukäteen ja määritettävä DM-tiedosto tyyppi, jota käytetään suorituskykyjälkien liittämiseen.</span><span class="sxs-lookup"><span data-stu-id="ca57c-131">You must configure ER parameters in advance, to specify the DM document type that should be used to attach performance traces.</span></span> <span data-ttu-id="ca57c-132">Valitse Finance and Operationissa **Sähköisen raportoinnin** työtilassa **Sähköisen raportoinnin parametrit**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-132">In Finance and Operation, in the **Electronic reporting** workspace, select **Electronic reporting parameters**.</span></span> <span data-ttu-id="ca57c-133">Valitse sitten **Sähköisen raportoinnin parametrit** -sivun **Liitteet**-välilehden **Muut**-kentästä suorituskyvyn jäljille käytettävä DM-tiedostotyyppi.</span><span class="sxs-lookup"><span data-stu-id="ca57c-133">Then, on the **Electronic reporting parameters** page, on the **Attachments** tab, in the **Others** field, select the DM document type to use for performance traces.</span></span>
+
+![Sähköisen raportoinnin parametrisivu Finance and Operationsissa](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+
+<span data-ttu-id="ca57c-135">Jos haluat olla käytettävissä **Muut** -hakukentässä, DM-tiedostotyyppi on konfiguroitava seuraavalla tavalla **Asiakirjatyypit**-sivulla (**Organisaation hallinta \> Asiakirjan hallinta \> Asiakirjatyypit**):</span><span class="sxs-lookup"><span data-stu-id="ca57c-135">To be available in the **Others** lookup field, a DM document type must be configured in the following manner on the **Document types** page (**Organization administration \> Document management \> Document types**):</span></span>
+
+- <span data-ttu-id="ca57c-136">**Luokka:** Liitä tiedosto</span><span class="sxs-lookup"><span data-stu-id="ca57c-136">**Class:** Attach file</span></span>
+- <span data-ttu-id="ca57c-137">**Ryhmä:** Tiedosto</span><span class="sxs-lookup"><span data-stu-id="ca57c-137">**Group:** File</span></span>
+
+![Finance and Operations -tiedostotyypit-sivu](./media/GER-PerfTrace-DM-DocumentType.png)
+
+> [!NOTE]
+> <span data-ttu-id="ca57c-139">Valitun tiedostotyypin on oltava käytettävissä kaikissa nykyisen Finance and Operations -esiintymän yrityksissä, koska DM-liitteet ovat yrityskohtaisia.</span><span class="sxs-lookup"><span data-stu-id="ca57c-139">The selected document type must be available in every company of the current Finance and Operations instance, because DM attachments are company-specific.</span></span>
+
+### <a name="configure-rcs-parameters"></a><span data-ttu-id="ca57c-140">Konfiguroi RCS-parametrit</span><span class="sxs-lookup"><span data-stu-id="ca57c-140">Configure RCS parameters</span></span>
+
+<span data-ttu-id="ca57c-141">Finance and Operationsissa luodut ER-suorituskykyjäljet tuodaan RCS-määritykseen analysointia varten käyttämällä ER Format Designeria ja ER Mapping Designeria.</span><span class="sxs-lookup"><span data-stu-id="ca57c-141">ER performance traces that are generated in Finance and Operations will be imported into RCS for analysis by using the ER format designer and the ER mapping designer.</span></span> <span data-ttu-id="ca57c-142">Koska ER-suorituskykyjäljet tallennetaan ER-muotoon liittyvän suorituslokitietueen liitteinä, RCS-parametrit on määritettävä etukäteen, jotta voidaan määrittää DM-tiedostotyyppi, jota käytetään suorituskykyjälkien liittämiseen.</span><span class="sxs-lookup"><span data-stu-id="ca57c-142">Because ER performance traces are stored as attachments of the execution log record that is related to the ER format, you must configure RCS parameters in advance, to specify the DM document type that should be used to attach performance traces.</span></span> <span data-ttu-id="ca57c-143">Valitse yrityksellesi määritetyn RCS-esiintymän **Sähköisen raportoinnin** -työtilassa **Sähköiset raportointiparametrit**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-143">In the instance of RCS that has been provisioned for your company, in the **Electronic reporting** workspace, select **Electronic reporting parameters**.</span></span> <span data-ttu-id="ca57c-144">Valitse sitten **Sähköisen raportoinnin parametrit** -sivun **Liitteet**-välilehden **Muut**-kentästä suorituskyvyn jäljille käytettävä DM-tiedostotyyppi.</span><span class="sxs-lookup"><span data-stu-id="ca57c-144">Then, on the **Electronic reporting parameters** page, on the **Attachments** tab, in the **Others** field, select the DM document type to use for performance traces.</span></span>
+
+![Sähköisen raportoinnin parametrit -sivu RCS:ssä](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
+
+<span data-ttu-id="ca57c-146">Jos haluat olla käytettävissä **Muut** -hakukentässä, DM-tiedostotyyppi on konfiguroitava seuraavalla tavalla **Asiakirjatyypit**-sivulla (**Organisaation hallinta \> Asiakirjan hallinta \> Asiakirjatyypit**):</span><span class="sxs-lookup"><span data-stu-id="ca57c-146">To be available in the **Others** lookup field, a DM document type must be configured in the following manner on the **Document types** page (**Organization administration \> Document management \> Document types**):</span></span>
+
+- <span data-ttu-id="ca57c-147">**Luokka:** Liitä tiedosto</span><span class="sxs-lookup"><span data-stu-id="ca57c-147">**Class:** Attach file</span></span>
+- <span data-ttu-id="ca57c-148">**Ryhmä:** Tiedosto</span><span class="sxs-lookup"><span data-stu-id="ca57c-148">**Group:** File</span></span>
+
+## <a name="design-an-er-solution"></a><span data-ttu-id="ca57c-149">Suunnittele ER-ratkaisu</span><span class="sxs-lookup"><span data-stu-id="ca57c-149">Design an ER solution</span></span>
+
+<span data-ttu-id="ca57c-150">Oletetaan, että olet aloittanut uuden ER-ratkaisun suunnittelun, joka luo toimittajatapahtumia esittelevän uuden raportin.</span><span class="sxs-lookup"><span data-stu-id="ca57c-150">Assume that you've started to design a new ER solution to generate a new report that presents vendor transactions.</span></span> <span data-ttu-id="ca57c-151">Tällä hetkellä voit etsiä valitun toimittajan tapahtumat **Toimittajatapahtumat**-sivulta (Siirry **Ostoreskontra \> Toimittajat \> Kaikki toimittajat**, valitse toimittaja ja sitten toimintoruudun **Toimittaja**-välilehti kohdassa valitse **Tapahtumat**-ryhmästä **Tapahtumat**).</span><span class="sxs-lookup"><span data-stu-id="ca57c-151">Currently, you can find the transactions for a selected vendor on the **Vendor transactions** page (go to **Account payable \> Vendors \> All vendors**, select a vendor, and then, on the Action Pane, on the **Vendor** tab, in the **Transactions** group, select **Transactions**).</span></span> <span data-ttu-id="ca57c-152">Haluat kuitenkin saada kaikki toimittajatapahtumat samaan aikaan yhdessä sähköisessä asiakirjassa XML-muodossa.</span><span class="sxs-lookup"><span data-stu-id="ca57c-152">However, you want to have all vendor transaction at the same time in one electronic document in XML format.</span></span> <span data-ttu-id="ca57c-153">Tämä ratkaisu koostuu useista ER-konfiguraatioista, jotka sisältävät vaaditun tietomallin, metatiedot, mallien yhdistämismääritykset ja muotokomponentit.</span><span class="sxs-lookup"><span data-stu-id="ca57c-153">This solution will consist of several ER configurations that contain the required data model, metadata, model mapping, and format components.</span></span>
+
+1. <span data-ttu-id="ca57c-154">Kirjaudu yrityksen RCS-esiintymään, joka on valmisteltu yrityksellesi.</span><span class="sxs-lookup"><span data-stu-id="ca57c-154">Sign in to the instance of RCS that has been provisioned for your company.</span></span>
+2. <span data-ttu-id="ca57c-155">Tässä opetusohjelmassa luodaan ja muokataan konfiguraatioita malliyritykselle **Litware, Inc.**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-155">In this tutorial, you will create and modify configurations for the **Litware, Inc.** sample company.</span></span> <span data-ttu-id="ca57c-156">Varmista siksi, että tämä konfigurointipalvelu on lisätty RCS-järjestelmään ja valittu aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="ca57c-156">Therefore, make sure that this configuration provider has been added to RCS and selected as active.</span></span> <span data-ttu-id="ca57c-157">Lisätietoja on kohdassa [Luo konfigurointipalvelut ja merkitse ne aktiivisiksi](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) menettelyiksi.</span><span class="sxs-lookup"><span data-stu-id="ca57c-157">For instructions, see the [Create configuration providers and mark them as active](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) procedure.</span></span>
+3. <span data-ttu-id="ca57c-158">Valitse **Sähköisen raportoinnin** työtilassa **Raportointimääritykset**-ruutu.</span><span class="sxs-lookup"><span data-stu-id="ca57c-158">In the **Electronic reporting** workspace, select the **Reporting configurations** tile.</span></span>
+4. <span data-ttu-id="ca57c-159">Tuo **Konfiguraatiot** -sivulla lataamasi ER-kokoonpanot RCS-edellytyksenä seuraavassa järjestyksessä: tietomalli, metatiedot, mallikartoitus, muoto.</span><span class="sxs-lookup"><span data-stu-id="ca57c-159">On the **Configurations** page, import the ER configurations that you downloaded as a prerequisite into RCS, in the following order: data model, metadata, model mapping, format.</span></span> <span data-ttu-id="ca57c-160">Luo kukin mukautus seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="ca57c-160">For each configuration, follow these steps:</span></span>
+
+    1. <span data-ttu-id="ca57c-161">Valitse toimintoruudusta **Vaihda \> Lataa XML-tiedostosta**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-161">On the Action Pane, select **Exchange \> Load from XML file**.</span></span>
+    2. <span data-ttu-id="ca57c-162">Valitse haluamasi ER-kokoonpanon tiedosto XML-muodossa valitsemalla **Selaa**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-162">Select **Browse** to select the appropriate file for the required ER configuration in XML format.</span></span>
+    3. <span data-ttu-id="ca57c-163">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-163">Select **OK**.</span></span>
+
+    ![Konfiguroinnit-sivu RCS:ssä](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
+
+## <a name="run-the-er-solution-to-trace-execution"></a><span data-ttu-id="ca57c-165">ER-ratkaisun suorittaminen jäljityksen suorittamista varten</span><span class="sxs-lookup"><span data-stu-id="ca57c-165">Run the ER solution to trace execution</span></span>
+
+<span data-ttu-id="ca57c-166">Oletetaan, että olet suunnitellut ER-ratkaisun ensimmäisen version.</span><span class="sxs-lookup"><span data-stu-id="ca57c-166">Assume that you've finished designing the first version of the ER solution.</span></span> <span data-ttu-id="ca57c-167">Haluat nyt testata sen Finance and Operations -esiintymässä ja analysoida suorituskykyä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-167">You now want to test it in your Finance and Operations instance and analyze execution performance.</span></span>
+
+### <a id='import-configuration'></a><span data-ttu-id="ca57c-168">ER-konfiguraation tuominen RCI:sta Finance and Operationsiin</span><span class="sxs-lookup"><span data-stu-id="ca57c-168">Import an ER configuration from RCS into Finance and Operations</span></span>
+
+1. <span data-ttu-id="ca57c-169">Kirjaudu omaan Finance and Operations -esiintymään.</span><span class="sxs-lookup"><span data-stu-id="ca57c-169">Sign in to your Finance and Operations instance.</span></span>
+2. <span data-ttu-id="ca57c-170">Tämän opetusohjelman avulla voit tuoda konfiguraatiot RCS-esiintymästä (jossa suunnittelet ER-komponentteja) Finance and Operations -esiintymään (jossa testaat ja lopulta käytät niitä).</span><span class="sxs-lookup"><span data-stu-id="ca57c-170">For this tutorial, you will import configurations from your RCS instance (where you design your ER components) into your Finance and Operations instance (where you test and finally use them).</span></span> <span data-ttu-id="ca57c-171">Siksi on varmistettava, että kaikki vaaditut tiedot on valmisteltu.</span><span class="sxs-lookup"><span data-stu-id="ca57c-171">Therefore, you must make sure that all the required artifacts have been prepared.</span></span> <span data-ttu-id="ca57c-172">Ohjeita on kohdassa [Sähköisen raportoinnin konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).</span><span class="sxs-lookup"><span data-stu-id="ca57c-172">For instructions, see the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) procedure.</span></span>
+3. <span data-ttu-id="ca57c-173">Seuraavien vaiheiden mukaisesti voit tuoda konfiguraatiot RCS-asetuksista Finance and Operationsiin:</span><span class="sxs-lookup"><span data-stu-id="ca57c-173">Follow these steps to import the configurations from RCS into Finance and Operations:</span></span>
+
+    1. <span data-ttu-id="ca57c-174">Valitse **Sähköisen raportoinnin** työtilassa**Litware, Inc**-määrityspalveluruudussa **Arkistot**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-174">In the **Electronic reporting** workspace, on the tile for the **Litware, Inc.** configuration provider, select **Repositories**.</span></span>
+    2. <span data-ttu-id="ca57c-175">Valitse **Konfiguraatiosäilö**-sivun ruudukossa oleva säilö, jonka tyyppi on **RCS** ja valitse sitten **Avaa**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-175">On the **Configuration repository** page, select the repository of the **RCS** type, and then select **Open**.</span></span>
+    3. <span data-ttu-id="ca57c-176">Valitse **Konfiguraatiot**-pikavälilehdessä **Suorituskyvyn jäljitysmuodon** konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="ca57c-176">On the **Configurations** FastTab, select the **Performance trace format** configuration.</span></span>
+    4. <span data-ttu-id="ca57c-177">Valitse **Versiot**-pikavälilehdellä valitun konfiguraation versio **1.1** ja valitse sitten **Tuo**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-177">On the **Versions** FastTab, select version **1.1** of the selected configuration, and then select **Import**.</span></span>
+
+    ![Konfigurointivaraston sivu Finance and Operationsissa](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+
+<span data-ttu-id="ca57c-179">Tietomallin ja mallin yhdistämismääritysten vastaavat versiot tuodaan automaattisesti valmiiksi tuodun ER-muodon konfiguroinnin edellytyksinä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-179">The corresponding versions of the data model and model mapping configurations are automatically imported as prerequisites for the imported ER format configuration.</span></span>
+
+### <a name="turn-on-the-er-performance-trace"></a><span data-ttu-id="ca57c-180">ER-suorituskykyjäljityksen ottaminen käyttöön</span><span class="sxs-lookup"><span data-stu-id="ca57c-180">Turn on the ER performance trace</span></span>
+
+1. <span data-ttu-id="ca57c-181">Valitse Finance and Operationsissa **Organisaation hallinto \> Sähköinen raportointi \> Määritykset**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-181">In Finance and Operations, go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+2. <span data-ttu-id="ca57c-182">Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-182">On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.</span></span>
+3. <span data-ttu-id="ca57c-183">Toimi **Käyttäjäparametrit**-valintaikkunan **Suorituksen jäljitys** -osassa seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="ca57c-183">In the **User parameters** dialog box, in the **Execution tracing** section, follow these steps:</span></span>
+
+    1. <span data-ttu-id="ca57c-184">Valitse **Suorituksen jäljitys muoto** -kentässä **Korjaa jäljitystiedosto** -kentässä, joka alkaa keräämään tietoja ER-muodon suorittamisesta.</span><span class="sxs-lookup"><span data-stu-id="ca57c-184">In the **Execution trace format** field, select **Debug trace format** to start to collect the details of ER format execution.</span></span> <span data-ttu-id="ca57c-185">Kun tämä arvo valitaan, suorituskyvyn jäljitys kerää seuraaviin toimiin kuluvaa aikaa koskevia tietoja:</span><span class="sxs-lookup"><span data-stu-id="ca57c-185">When this value is selected, the performance trace will collect information about the time that is spent on the following actions:</span></span>
+
+        - <span data-ttu-id="ca57c-186">Kunkin tietolähteen suorittamista mallikartoituksista, joita kutsutaan tietojen hakemiseksi</span><span class="sxs-lookup"><span data-stu-id="ca57c-186">Running each data source in the model mapping that is called to get data</span></span>
+        - <span data-ttu-id="ca57c-187">Kunkin muotoilunimikkeen käsitteleminen siten, että se syöttää tietoja luotavalle tulosteelle</span><span class="sxs-lookup"><span data-stu-id="ca57c-187">Processing each format item to enter data in the output that is generated</span></span>
+
+        <span data-ttu-id="ca57c-188">**Suorituksen jäljitysmuoto** -kentän avulla voit määrittää sen luodun suorituskykyjäljityksen muodon, johon suoritustiedot tallennetaan ER-ja Mapping-elementeissä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-188">You use the **Execution trace format** field to specify the format of the generated performance trace that the execution details are stored in for ER format and mapping elements.</span></span> <span data-ttu-id="ca57c-189">Kun valitset arvoksi **Virheen korjauksen jäljitysmuodon**, pystyt analysoimaan jäljityksen sisältöä ER Operation Designerissa ja näkemään ER-muodon tai määrityselementit, jotka mainitaan jäljityksessä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-189">By selecting **Debug trace format** as the value, you will be able to analyze the content of the trace in ER Operation designer, and see the ER format or mapping elements that are mentioned in the trace.</span></span>
+
+    2. <span data-ttu-id="ca57c-190">Määritä seuraavat asetukset: **Kyllä**, jos haluat kerätä tarkempia tietoja ER-mallin kartoituksesta ja ER-muotokomponenttien suorittamisesta.</span><span class="sxs-lookup"><span data-stu-id="ca57c-190">Set the following options to **Yes** to collect specific details of the execution of the ER model mapping and ER format components:</span></span>
+
+        - <span data-ttu-id="ca57c-191">**Kyselyn tilastotietojen kerääminen** – Kun tämä vaihtoehto on käytössä, suorituskyvyn jäljitys kerää seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="ca57c-191">**Collect query statistics** – When this option is turned on, the performance trace will collect the following information:</span></span>
+
+            - <span data-ttu-id="ca57c-192">Tietolähteiden tekemien kutsujen määrä</span><span class="sxs-lookup"><span data-stu-id="ca57c-192">The number of database calls that were made by data sources</span></span>
+            - <span data-ttu-id="ca57c-193">Tietokantaan lisättyjen toistettujen kutsujen määrä</span><span class="sxs-lookup"><span data-stu-id="ca57c-193">The number of duplicate calls to the database</span></span>
+            - <span data-ttu-id="ca57c-194">Tietokantakutsujen tekemiseen käytettävien SQL-lauseiden tiedot</span><span class="sxs-lookup"><span data-stu-id="ca57c-194">Details of the SQL statements that were used to make database calls</span></span>
+
+        - <span data-ttu-id="ca57c-195">**Jäljitysvälimuistin käyttäminen** – Kun tämä asetus on käytössä, suorituskyvyn jäljitys kerää tietoja ER-mallikartoituksen välimuistin käytöstä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-195">**Trace access of caching** – When this option is turned on, the performance trace will collect information about the ER model mapping's cache usage.</span></span>
+        - <span data-ttu-id="ca57c-196">**Jäljitystietojen käyttö** – Kun tämä asetus on käytössä, suorituskyvyn jäljitys kerää tietoja siitä, kuinka monta käyntiä tietokantaan on tehty tietueluettelotyypin suoritettavissa tietolähteissä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-196">**Trace data access** – When this option is turned on, the performance trace will collect information about the number of calls to the database for executed data sources of the record list type.</span></span>
+        - <span data-ttu-id="ca57c-197">**Jäljitystietojen luettelointi** – Kun tämä asetus on käytössä, suorituskyvyn jäljitys kerää tietoja siitä, kuinka monta käyntiä tietokantaan on tehty tietueluettelotyypin suoritettavissa tietolähteissä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-197">**Trace list enumeration** – When this option is turned on, the performance trace will collect information about the number of records that are requested from data sources of the record list type.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="ca57c-198">**Käyttäjäparametrit** -valintaikkunan parametrit koskevat käyttäjää ja nykyistä yritystä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-198">The parameters in the **User parameters** dialog box are specific to the user and the current company.</span></span>
+
+    ![Käyttäjäparametrit-valintaikkuna Finance and Operationsissa](./media/GER-PerfTrace-GER-UserParameters.png)
+
+### <a id='run-format'></a><span data-ttu-id="ca57c-200">Suorita ER-muoto</span><span class="sxs-lookup"><span data-stu-id="ca57c-200">Run the ER format</span></span>
+
+1. <span data-ttu-id="ca57c-201">Valitse **DEMF**-yritys Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="ca57c-201">In Finance and Operations, select the **DEMF** company.</span></span>
+2. <span data-ttu-id="ca57c-202">Siirry kohtaan **Organisaation hallinto \> Sähköinen raportointi \> Konfiguraatiot**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-202">Go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+3. <span data-ttu-id="ca57c-203">Valitse **Konfiguraatiot**-sivulla konfiguraatiopuussa **Suorituskyvyn jäljitysmuodon** nimike.</span><span class="sxs-lookup"><span data-stu-id="ca57c-203">On the **Configurations** page, in the configuration tree, select the **Performance trace format** item.</span></span>
+4. <span data-ttu-id="ca57c-204">Valitse toimintoruudussa **Suorita**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-204">On the Action Pane, select **Run**.</span></span>
+
+<span data-ttu-id="ca57c-205">Huomaa, että luotu tiedosto sisältää tietoja kuuden toimittajan 265-tapahtumista.</span><span class="sxs-lookup"><span data-stu-id="ca57c-205">Notice that the file that is generated presents information about 265 transactions for six vendors.</span></span>
+
+## <a name="review-the-execution-trace"></a><span data-ttu-id="ca57c-206">Suorituksen jäljityksen tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="ca57c-206">Review the execution trace</span></span>
+
+### <a id='export-trace'></a><span data-ttu-id="ca57c-207">Vie luotu jäljitys Finance and Operationsista</span><span class="sxs-lookup"><span data-stu-id="ca57c-207">Export the generated trace from Finance and Operations</span></span>
+
+<span data-ttu-id="ca57c-208">Suorituskykyjäljet irrotetaan lähde-ER-muodosta, ja ne voidaan sarjoittaa ulkoiseen zip-tiedostoon.</span><span class="sxs-lookup"><span data-stu-id="ca57c-208">Performance traces are decoupled from the source ER format and can be serialized to an external zip file.</span></span>
+
+1. <span data-ttu-id="ca57c-209">Valitse Finance and Operationsissa **Organisaation hallinto \> Sähköinen raportointi \> Määritysten virheenkorjauslokit**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-209">In Finance and Operations, go to **Organization administration \> Electronic reporting \> Configuration debug logs**.</span></span>
+2. <span data-ttu-id="ca57c-210">Valitse **Sähköisen raportoinnin ajon lokit** -sivun vasemmanpuoleisen ruudun **Konfiguration nimi** -kentässä **Suorituskyvyn jäljitysmuoto** jos haluat löytää lokitiedostot, jotka on luotu **Suoritus kyvyn jäljitysmuodon** konfiguraatiolle.</span><span class="sxs-lookup"><span data-stu-id="ca57c-210">On the **Electronic reporting run logs** page, in the left pane, in the **Configuration name** field, select **Performance trace format** to find the log records that have been generated by the execution of the **Performance trace format** configuration.</span></span>
+3. <span data-ttu-id="ca57c-211">Valitse **Liitteet**-painikkeen sivun oikeassa yläkulmassa (paperiliitinsymboli) tai paina **Ctrl+Shift+A**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-211">Select the **Attachments** button (the paper clip symbol) in the upper-right corner of the page, or press **Ctrl+Shift+A**.</span></span>
+
+    ![Liitteet-painike sähköisen raportoinnin ajon lokit -sivulla Finance and Operationsissa](./media/GER-PerfTrace-GER-DebugLog.png)
+
+4. <span data-ttu-id="ca57c-213">**Valitse sähköisen raportoinnin ajon lokit** -sivun toimintoruudussa **Avaa**, jos haluat saada suorituskyvyn jäljityksen zip-tiedostona ja tallentaa sen paikallisesti.</span><span class="sxs-lookup"><span data-stu-id="ca57c-213">On the **Attachments for Electronic reporting run logs** page, on the Action Pane, select **Open** to get the performance trace as a zip file and store it locally.</span></span>
+
+    ![Liitteet sähköisen raportoinnin ajon lokit -sivulla Finance and Operationsissa](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+
+> [!NOTE]
+> <span data-ttu-id="ca57c-215">Luotu jäljitys viittaa lähde-ER-raporttiin yksilöivän raporttitunnuksen avulla vain **GUID**-muodossa.</span><span class="sxs-lookup"><span data-stu-id="ca57c-215">The trace that is generated has a reference to the source ER report via a unique report identifier in **GUID** format only.</span></span> <span data-ttu-id="ca57c-216">Muodon versionumerointia ei oteta huomioon.</span><span class="sxs-lookup"><span data-stu-id="ca57c-216">The version numbering of the format isn't considered.</span></span>
+
+<span data-ttu-id="ca57c-217">Huomaa, että suoritetun ER-muodon ja ER-mallikartoituksen muodostaman suorituskyvyn jäljittämisen välinen yhteys perustuu käytössä olevaan juurihakemistoon ja yhteiseen tietomalliin.</span><span class="sxs-lookup"><span data-stu-id="ca57c-217">Notice that the association between the performance trace that has been generated for the executed ER format and the ER model mapping is based on the root descriptor that was used and the common data model.</span></span> <span data-ttu-id="ca57c-218">Muodon versionumerointia ja mallin yhdistämistä ei oteta huomioon.</span><span class="sxs-lookup"><span data-stu-id="ca57c-218">The version numbering of the format and model mapping isn't considered.</span></span> <span data-ttu-id="ca57c-219">Mallimerkinnän **oletusarvoa mallimerkintää varten** ei myöskään oteta huomioon.</span><span class="sxs-lookup"><span data-stu-id="ca57c-219">The setting of the **Default for model mapping** flag for the model mapping also isn't considered.</span></span>
+
+### <a id='import-trace'></a><span data-ttu-id="ca57c-220">Tuo tuotettu jälki RCS:ään.</span><span class="sxs-lookup"><span data-stu-id="ca57c-220">Import the generated trace into RCS</span></span>
+
+1. <span data-ttu-id="ca57c-221">Valitse RCS:ssä **Sähköisen raportoinnin** työtilassa **Raportointimääritykset**-ruutu.</span><span class="sxs-lookup"><span data-stu-id="ca57c-221">In RCS, in the **Electronic reporting** workspace, select the **Reporting configurations** tile.</span></span>
+2. <span data-ttu-id="ca57c-222">Laajenna **Konfiguraatiot**-sivun konfiguraatiopuussa **Suorituskyvyn jäljitysmalli** -nimike ja valitse **Suorituskyvyn seurannan muoto** -nimike.</span><span class="sxs-lookup"><span data-stu-id="ca57c-222">On the **Configurations** page, in the configuration tree, expand the **Performance trace model** item, and select the **Performance trace format** item.</span></span>
+3. <span data-ttu-id="ca57c-223">Valitse toimintoruudussa **Suunnittelija**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-223">On the Action Pane, select **Designer**.</span></span>
+4. <span data-ttu-id="ca57c-224">Valitse **Muodon suunnittelija**-sivulla hallintapaneelista **Suorituskyvyn jäljitysmuoto**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-224">On the **Format designer** page, on the Action Pane, select **Performance trace**.</span></span>
+5. <span data-ttu-id="ca57c-225">Valitse **Suorituskyvyn jäljitystulosten asetukset** -valintaikkunasta **Tuo suorituskyvyn jäljitys**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-225">In the **Performance trace result settings** dialog box, select **Import performance trace**.</span></span>
+6. <span data-ttu-id="ca57c-226">Valitse **Selaa** ja valitse zip-tiedosto, jonka olet vienyt Finance and Operationsista aiemmin.</span><span class="sxs-lookup"><span data-stu-id="ca57c-226">Select **Browse** to select the zip file that you exported from Finance and Operations earlier.</span></span>
+7. <span data-ttu-id="ca57c-227">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-227">Select **OK**.</span></span>
+
+    ![Suorituskyvyn jäljitystulosten asetukset -valintaikkuna RCS-kohteessa](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
+
+### <a name="use-the-performance-trace-for-analysis-in-rcs--format-execution"></a><span data-ttu-id="ca57c-229">Suorituskyvyn seurannan käyttäminen RCS – Format -suoritusanalyysissä</span><span class="sxs-lookup"><span data-stu-id="ca57c-229">Use the performance trace for analysis in RCS – Format execution</span></span>
+
+1. <span data-ttu-id="ca57c-230">Laajenna kaikkien muotoilukohteiden sisältö valitsemalla **Laajenna/tiivistä**-vaihtoehto **Muodon suunnittelija**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="ca57c-230">In RCS, on the **Format designer** page, select **Expand/collapse** to expand the content of all format items.</span></span>
+
+    <span data-ttu-id="ca57c-231">Huomaa, että joistakin nykyisen muodon kohteista näytetään lisätietoja:</span><span class="sxs-lookup"><span data-stu-id="ca57c-231">Notice that additional information is shown for some items of the current format:</span></span>
+
+    - <span data-ttu-id="ca57c-232">Todellinen aika, joka käytettiin tietojen syöttämiseen luotuun tulosteeseen kohteen muotoilun avulla</span><span class="sxs-lookup"><span data-stu-id="ca57c-232">The actual time that was spent entering data in the generated output by using the format item</span></span>
+    - <span data-ttu-id="ca57c-233">Sama aika ilmaistaan prosentteina kokonaisajasta, joka käytettiin koko tuotoksen tuottamiseen.</span><span class="sxs-lookup"><span data-stu-id="ca57c-233">The same time expressed as a percentage of the total time that was spent generating the whole output</span></span>
+
+    ![Muodon suunnittelutoiminto -sivu RCS:ssä](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
+
+2. <span data-ttu-id="ca57c-235">Sulje **Muodon suunnittelutoiminto** -sivu.</span><span class="sxs-lookup"><span data-stu-id="ca57c-235">Close **Format designer** page.</span></span>
+
+### <a id='use-trace'></a><span data-ttu-id="ca57c-236">Suorituskyvyn seurannan käyttäminen RCS:ssä – Mallin määritys</span><span class="sxs-lookup"><span data-stu-id="ca57c-236">Use the performance trace for analysis in RCS – Model mapping</span></span>
+
+1. <span data-ttu-id="ca57c-237">Valitse RCS:ssä **Konfiguraatiot**-sivulla konfiguraatiopuussa **Suorituskyvyn jäljitysmääritys** -nimike.</span><span class="sxs-lookup"><span data-stu-id="ca57c-237">In RCS, on the **Configurations** page, in the configuration tree, select the **Performance trace mapping** item.</span></span>
+2. <span data-ttu-id="ca57c-238">Valitse toimintoruudussa **Suunnittelija**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-238">On the Action Pane, select **Designer**.</span></span>
+3. <span data-ttu-id="ca57c-239">Valitse **Suunnittelu**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-239">Select **Designer**.</span></span>
+4. <span data-ttu-id="ca57c-240">Valitse **Mallin määrityssuunnittelija** -sivulla hallintapaneelista **Suorituskyvyn jäljitysmuoto**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-240">On the **Model mapping designer** page, on the Action Pane, select **Performance trace**.</span></span>
+5. <span data-ttu-id="ca57c-241">Valitse aiemmin tuotu jäljitys.</span><span class="sxs-lookup"><span data-stu-id="ca57c-241">Select the trace that you imported earlier.</span></span>
+6. <span data-ttu-id="ca57c-242">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-242">Select **OK**.</span></span>
+
+<span data-ttu-id="ca57c-243">Huomaa, että joidenkin nykyisen mallimääritysten tietolähdenimikkeiden käytettävissä on uusia tietoja:</span><span class="sxs-lookup"><span data-stu-id="ca57c-243">Notice that new information becomes available for some data source items of the current model mapping:</span></span>
+
+- <span data-ttu-id="ca57c-244">Tietolähteen avulla tietoja haettaessa käytetty todellinen aika</span><span class="sxs-lookup"><span data-stu-id="ca57c-244">The actual time that was spent getting data by using the data source</span></span>
+- <span data-ttu-id="ca57c-245">Sama aika ilmaistaan prosentteina kokonaisajasta, joka käytettiin koko mallin määrityksen suorittamiseen.</span><span class="sxs-lookup"><span data-stu-id="ca57c-245">The same time expressed as a percentage of the total time that was spent running the whole model mapping</span></span>
+
+<span data-ttu-id="ca57c-246">Huomaa, että ER ilmoittaa, että nykyisen mallin yhdistämismääritys kopioi tietokantapyynnöt, kun VendTable/\<Relations/VendTrans\_. VendTable AccountNum-tietolähde suoritetaan.</span><span class="sxs-lookup"><span data-stu-id="ca57c-246">Notice that ER informs you that the current model mapping duplicates database requests while the VendTable/\<Relations/VendTrans.VendTable\_AccountNum data source is run.</span></span> <span data-ttu-id="ca57c-247">Tämä päällekkäisyys johtuu siitä, että toimittajatapahtumien luetteloa kutsutaan kaksi kertaa kutakin iteroitua toimittajatietuetta varten:</span><span class="sxs-lookup"><span data-stu-id="ca57c-247">This duplication occurs because the list of vendor transactions is called two times for each iterated vendor record:</span></span>
+
+- <span data-ttu-id="ca57c-248">Yksi kutsu tehdään tietomallin kunkin tapahtuman tietojen syöttämiseen määritettyjen sidosten perusteella.</span><span class="sxs-lookup"><span data-stu-id="ca57c-248">One call is made to enter details of each transaction in the data model, based on configured bindings.</span></span>
+- <span data-ttu-id="ca57c-249">Yksi kutsu tehdään, kun toimittaja määrittää lasketun määrän tapahtumia toimittajakohtaisesti tietomallissa.</span><span class="sxs-lookup"><span data-stu-id="ca57c-249">One call is made to enter the calculated number of transactions per vendor in the data model.</span></span>
+
+![Virheilmoitus tietokantapyyntöjen kopioista RCS-mallin malli kartoituksen suunnittelusivulla](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
+
+<span data-ttu-id="ca57c-251">Arvo **\[Q:530\]** ilmaisee, että VendTrans-taulua kutsuttiin 530 kertaa palauttamaan kyseisessä taulussa oleva tietue VendTable/\<Relations/VendTrans. VendTable\_AccountNum-tieto lähteeseen.</span><span class="sxs-lookup"><span data-stu-id="ca57c-251">The value **\[Q:530\]** indicates that the VendTrans table was called 530 times to return a record from that table to the VendTable/\<Relations/VendTrans.VendTable\_AccountNum data source.</span></span> <span data-ttu-id="ca57c-252">Arvo **\[530\]** ilmaisee, että VendTable/\<Relations/VendTrans. VendTable\_AccountNum-tietolähdettä kutsuttiin 530 kertaa palaamaan, jolloin tietue palautetaan kyseiseen tietolähteeseen ja sen tiedot syötetään tietomalliin.</span><span class="sxs-lookup"><span data-stu-id="ca57c-252">The value **\[530\]** indicates that the VendTable/\<Relations/VendTrans.VendTable\_AccountNum data source was called 530 times to return a record from that data source and enter the details from it in the data model.</span></span>
+
+<span data-ttu-id="ca57c-253">Suosittelemme, että käytät VendTable/\<Relations/VendTrans. VendTable\_AccountNum-tietolähteen välimuistia, jotta voit vähentää 265-tapahtumien tietojen saamiseksi tehtyjen kutsujen määrää ja parantaa mallimäärityksen suorituskykyä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-253">We recommend that you use caching for the VendTable/\<Relations/VendTrans.VendTable\_AccountNum data source, to reduce the number of calls that are made to get the details for 265 transactions and help improve the performance of the model mapping.</span></span>
+
+<span data-ttu-id="ca57c-254">Voi myös olla hyödyllistä vähentää LedgerTransTypeList-tietolähteeseen tehtyjen kutsujen määrää.</span><span class="sxs-lookup"><span data-stu-id="ca57c-254">It can also be useful to reduce the number of calls that are made to the LedgerTransTypeList data source.</span></span> <span data-ttu-id="ca57c-255">Tätä tietolähdettä käytetään liittämään kaikki **lLedgerTransType**-luetteloinnin arvot sen otsikkoon.</span><span class="sxs-lookup"><span data-stu-id="ca57c-255">This data source is used to associate each value of the **LedgerTransType** enumeration with its label.</span></span> <span data-ttu-id="ca57c-256">Käyttämällä tätä tietolähdettä voit löytää asianmukaisen tunnisteen ja syöttää sen kunkin toimittajatapahtuman tietomalliin.</span><span class="sxs-lookup"><span data-stu-id="ca57c-256">By using this data source, you can find an appropriate label and enter it in the data model for each vendor transaction.</span></span> <span data-ttu-id="ca57c-257">Tähän tietolähteeseen soitettujen kutsujen määrä (9 027) on melko suuri 265-tapahtumissa.</span><span class="sxs-lookup"><span data-stu-id="ca57c-257">The current number of calls to this data source (9,027) is quite high for 265 transactions.</span></span>
+
+![Mallin määrityksen suunnittelijasivu RCS:ssä näyttää 9 027 puhelua tietolähteeseen](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
+
+## <a name="improve-the-model-mapping-based-on-information-from-the-execution-trace"></a><span data-ttu-id="ca57c-259">Paranna mallin määritystä suorituksen jälkeisten tietojen perusteella</span><span class="sxs-lookup"><span data-stu-id="ca57c-259">Improve the model mapping based on information from the execution trace</span></span>
+
+### <a name="modify-the-logic-of-the-model-mapping"></a><span data-ttu-id="ca57c-260">Mallin määrityksen logiikan muokkaaminen</span><span class="sxs-lookup"><span data-stu-id="ca57c-260">Modify the logic of the model mapping</span></span>
+
+1. <span data-ttu-id="ca57c-261">Seuraavia ohjeita noudattamalla voit käyttää välimuistia, joka estää kaksoissoittoja tietokantaan:</span><span class="sxs-lookup"><span data-stu-id="ca57c-261">Follow these steps to use caching, to help prevent duplicate calls to the database:</span></span>
+
+    1. <span data-ttu-id="ca57c-262">Valitse RCS:ssä **Mallin määrityksen suunnittelu** -sivun **Tietolähteet**-ruudusta **VendTable**-nimike.</span><span class="sxs-lookup"><span data-stu-id="ca57c-262">In RCS, on the **Model mapping designer** page, in the **Data sources** pane, select the **VendTable** item.</span></span>
+    2. <span data-ttu-id="ca57c-263">Valitse **Välimuisti**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-263">Select **Cache**.</span></span>
+    3. <span data-ttu-id="ca57c-264">Laajenna **VendTable**-nimike, laajenna VendTable-tietolähde ( **\<Suhde**-nimike), yksi-moneen-suhteiden luettelo ja valitse **VendTrans.VendTable\_AccountNum**-nimike</span><span class="sxs-lookup"><span data-stu-id="ca57c-264">Expand the **VendTable** item, expand the list of one-to-many relations for the VendTable data source (the **\<Relations** item), and select the **VendTrans.VendTable\_AccountNum** item.</span></span>
+    4. <span data-ttu-id="ca57c-265">Valitse **Välimuisti**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-265">Select **Cache**.</span></span>
+
+    ![Asetusten tallentaminen välimuistiin, jotta kaksinkertaiset kutsut voidaan estää](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
+
+2. <span data-ttu-id="ca57c-267">Siirrä LedgerTransTypeList-tietolähde VendTable-tietolähteen käyttöalueeseen seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="ca57c-267">Follow these steps to bring the LedgerTransTypeList data source into the scope of the VendTable data source:</span></span>
+
+    1. <span data-ttu-id="ca57c-268">Laajenna **Tietolähdetyypit**-ruudussa **Funktiot**-nimike ja valitse **Laskettu kenttä** -nimike.</span><span class="sxs-lookup"><span data-stu-id="ca57c-268">In the **Data source types** pane, expand the **Functions** item, and select the **Calculated field** item.</span></span>
+    2. <span data-ttu-id="ca57c-269">Valitse **Tietolähteet**-ruudusta **VendTable**-nimike.</span><span class="sxs-lookup"><span data-stu-id="ca57c-269">In the **Data sources** pane, select the **VendTable** item.</span></span>
+    3. <span data-ttu-id="ca57c-270">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-270">Select **Add**.</span></span>
+    4. <span data-ttu-id="ca57c-271">Kirjoita **Nimi**-kenttään **\$TransType**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-271">In the **Name** field, enter **\$TransType**.</span></span>
+    5. <span data-ttu-id="ca57c-272">Valitse **Muokkaa kaavaa**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-272">Select **Edit formula**.</span></span>
+    6. <span data-ttu-id="ca57c-273">Kirjoita **Kaava**-kenttään **LedgerTransTypeList**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-273">In the **Formula** field, enter **LedgerTransTypeList**.</span></span>
+    7. <span data-ttu-id="ca57c-274">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-274">Select **Save**.</span></span>
+    8. <span data-ttu-id="ca57c-275">Sulje **Kaavaeditori**-sivu.</span><span class="sxs-lookup"><span data-stu-id="ca57c-275">Close the **Formula editor** page.</span></span>
+    9. <span data-ttu-id="ca57c-276">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-276">Click **OK**.</span></span>
+
+3. <span data-ttu-id="ca57c-277">Suorita **\$TransType**-kentän tallentaminen välimuistiin seuraavien vaiheiden mukaisesti:</span><span class="sxs-lookup"><span data-stu-id="ca57c-277">Follow these steps to do caching of the **\$TransType** field:</span></span>
+
+    1. <span data-ttu-id="ca57c-278">Valitse **LedgerTransTypeList**-nimike.</span><span class="sxs-lookup"><span data-stu-id="ca57c-278">Select the **LedgerTransTypeList** item.</span></span>
+    2. <span data-ttu-id="ca57c-279">Valitse **Välimuisti**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-279">Select **Cache**.</span></span>
+    3. <span data-ttu-id="ca57c-280">Valitse **VendTable.\$TransType**-nimike.</span><span class="sxs-lookup"><span data-stu-id="ca57c-280">Select the **VendTable.\$TransType** item.</span></span>
+    4. <span data-ttu-id="ca57c-281">Valitse **Välimuisti**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-281">Select **Cache**.</span></span>
+
+    ![$TransType-kentän asetusten tallentaminen välimuistiin](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
+
+4. <span data-ttu-id="ca57c-283">Näiden vaiheiden avulla voit muuttaa **\$TransTypeRecord**-kenttää siten, että se alkaa käyttää välimuistissa olevaa **\$TransType**-kenttää:</span><span class="sxs-lookup"><span data-stu-id="ca57c-283">Follow these steps to change the **\$TransTypeRecord** field so that it starts to use the cached **\$TransType** field:</span></span>
+
+    1. <span data-ttu-id="ca57c-284">Laajenna **Tietolähteet**-ruudussa **VendTable**-nimike, laajenna **\<Suhteet**-nimike, laajenna **VendTrans.VendTable\_AccountNum**-nimike ja valitse **VendTable. VendTrans. VendTable\_AccountNum.\$Transtyperecord** -nimike.</span><span class="sxs-lookup"><span data-stu-id="ca57c-284">In the **Data sources** pane, expand the **VendTable** item, expand the **\<Relations** item, expand the **VendTrans.VendTable\_AccountNum** item, and select the **VendTable. VendTrans.VendTable\_AccountNum.\$TransTypeRecord** item.</span></span>
+    2. <span data-ttu-id="ca57c-285">Valitse **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-285">Select **Edit**.</span></span>
+    3. <span data-ttu-id="ca57c-286">Valitse **Muokkaa kaavaa**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-286">Select **Edit formula**.</span></span>
+    4. <span data-ttu-id="ca57c-287">Etsi **Kaava**-kentästä seuraava lauseke:</span><span class="sxs-lookup"><span data-stu-id="ca57c-287">In the **Formula** field, find the following expression:</span></span>
+
+        <span data-ttu-id="ca57c-288">FIRSTORNULL (WHERE (LedgerTransTypeList, LedgerTransTypeList.Enum = \@.TransType))</span><span class="sxs-lookup"><span data-stu-id="ca57c-288">FIRSTORNULL (WHERE (LedgerTransTypeList, LedgerTransTypeList.Enum = \@.TransType))</span></span>
+
+    5. <span data-ttu-id="ca57c-289">Syötä **Kaava**-kenttään seuraava lauseke:</span><span class="sxs-lookup"><span data-stu-id="ca57c-289">In the **Formula** field, enter the following expression:</span></span>
+
+        <span data-ttu-id="ca57c-290">FIRSTORNULL (WHERE (VendTable.'\$TransType', VendTable.'\$TransType'.Enum = \@.TransType)).</span><span class="sxs-lookup"><span data-stu-id="ca57c-290">FIRSTORNULL (WHERE (VendTable.'\$TransType', VendTable.'\$TransType'.Enum = \@.TransType)).</span></span>
+
+    6. <span data-ttu-id="ca57c-291">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-291">Select **Save**.</span></span>
+    7. <span data-ttu-id="ca57c-292">Sulje **Kaavaeditori**-sivu.</span><span class="sxs-lookup"><span data-stu-id="ca57c-292">Close the **Formula editor** page.</span></span>
+    8. <span data-ttu-id="ca57c-293">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-293">Select **OK**.</span></span>
+
+5. <span data-ttu-id="ca57c-294">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-294">Select **Save**.</span></span>
+6. <span data-ttu-id="ca57c-295">Sulje **Mallimäärityksen sunnittelun** sivu.</span><span class="sxs-lookup"><span data-stu-id="ca57c-295">Close the **Model mapping designer** page.</span></span>
+7. <span data-ttu-id="ca57c-296">Sulje **Mallimääritykset**-sivu.</span><span class="sxs-lookup"><span data-stu-id="ca57c-296">Close the **Model mappings** page.</span></span>
+
+### <a name="complete-the-modified-version-of-the-er-model-mapping"></a><span data-ttu-id="ca57c-297">ER-mallin yhdistämismäärityksen muokatun version täydentäminen</span><span class="sxs-lookup"><span data-stu-id="ca57c-297">Complete the modified version of the ER model mapping</span></span>
+
+1. <span data-ttu-id="ca57c-298">Valitse RCS-järjestelmän **Konfiguraatiot**-sivun **Versiot**-pikavälilehdessä **Suorituskyvyn jäljityksen** määrityksen versio **1.2**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-298">In RCS, on the **Configurations** page, on the **Versions** FastTab, select version **1.2** of the **Performance trace mapping** configuration.</span></span>
+2. <span data-ttu-id="ca57c-299">Valitse **Muutoksen tila**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-299">Select **Change status**.</span></span>
+3. <span data-ttu-id="ca57c-300">Valitse **Valmis**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-300">Select **Complete**.</span></span>
+
+### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-finance-and-operations"></a><span data-ttu-id="ca57c-301">Tuo muutettu ER-mallin kartoitusmääritys RCI:sta Finance and Operationsiin</span><span class="sxs-lookup"><span data-stu-id="ca57c-301">Import the modified ER model mapping configuration from RCS into Finance and Operations</span></span>
+
+<span data-ttu-id="ca57c-302">Tuo tämän jakson aikaisemmissa osissa esitetyt vaiheet [Tuo ER-konfiguraatio RCS:stä Finance and Operationsiin](#import-configuration) tuodaksesi **Suorituskyvyn jäljityskartoitus** -konfiguraation versiot 1.2 Finance and Operationsiin.</span><span class="sxs-lookup"><span data-stu-id="ca57c-302">Repeat the steps in the [Import an ER configuration from RCS into Finance and Operations](#import-configuration) section earlier in this topic to import version 1.2 of the **Performance trace mapping** configuration into Finance and Operations.</span></span>
+
+## <a name="run-the-modified-er-solution-to-trace-execution"></a><span data-ttu-id="ca57c-303">Muokatun ER-ratkaisun suorittaminen jäljityksen suorittamista varten</span><span class="sxs-lookup"><span data-stu-id="ca57c-303">Run the modified ER solution to trace execution</span></span>
+
+### <a name="run-the-er-format"></a><span data-ttu-id="ca57c-304">Suorita ER-muoto</span><span class="sxs-lookup"><span data-stu-id="ca57c-304">Run the ER format</span></span>
+
+<span data-ttu-id="ca57c-305">Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aiheen aikaisemmissa jaksoissa esitetyt vaiheet.</span><span class="sxs-lookup"><span data-stu-id="ca57c-305">Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.</span></span>
+
+## <a name="review-the-execution-trace"></a><span data-ttu-id="ca57c-306">Suorituksen jäljityksen tarkasteleminen</span><span class="sxs-lookup"><span data-stu-id="ca57c-306">Review the execution trace</span></span>
+
+### <a name="export-the-generated-trace-from-finance-and-operations"></a><span data-ttu-id="ca57c-307">Vie luotu jäljitys Finance and Operationsista</span><span class="sxs-lookup"><span data-stu-id="ca57c-307">Export the generated trace from Finance and Operations</span></span>
+
+<span data-ttu-id="ca57c-308">Toista aiemmin tässä aiheessa kerrotut jakson vaiheet [Valitse luotu jälki Finance and Operationsista](#export-trace) jos haluat tallentaa uuden suoritusjäljen paikallisesti.</span><span class="sxs-lookup"><span data-stu-id="ca57c-308">Repeat the steps in the [Export the generated trace from Finance and Operations](#export-trace) section earlier in this topic to save a new performance trace locally.</span></span>
+
+### <a name="import-the-generated-trace-into-rcs"></a><span data-ttu-id="ca57c-309">Tuo tuotettu jälki RCS:ään.</span><span class="sxs-lookup"><span data-stu-id="ca57c-309">Import the generated trace into RCS</span></span>
+
+<span data-ttu-id="ca57c-310">Toista tässä osassa aiemmin kerrotut vaiheet [Tuo luodut jäljet RCS](#import-trace) tuodaksesi uudet suorituskykyjäljet RCS:ään.</span><span class="sxs-lookup"><span data-stu-id="ca57c-310">Repeat the steps in the [Import the generated trace into RCS](#import-trace) section earlier in this topic to import the new performance trace into RCS.</span></span>
+
+### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a><span data-ttu-id="ca57c-311">Suorituskyvyn seurannan käyttäminen RCS:ssä – Mallin määritys</span><span class="sxs-lookup"><span data-stu-id="ca57c-311">Use the performance trace for analysis in RCS – Model mapping</span></span>
+
+<span data-ttu-id="ca57c-312">Suorita aiemmin tämän ohjeaiheen [Suorituskyvyn seurannan käyttäminen RCS:ssä – Mallin määritys](#use-trace) -osassa kuvatut suorituskyvyn jäljitys -kohdan vaiheet, kun haluat analysoida viimeisimmän suorituskyvyn jäljityksen.</span><span class="sxs-lookup"><span data-stu-id="ca57c-312">Repeat the steps in the [Use the performance trace for analysis in RCS – Model mapping](#use-trace) section earlier in this topic to analyze the latest performance trace.</span></span>
+
+<span data-ttu-id="ca57c-313">Huomaa, että mallimääritykseen tehdyt oikaisut ovat poistaneet tietokannasta päällekkäisiä kyselyitä.</span><span class="sxs-lookup"><span data-stu-id="ca57c-313">Notice that the adjustments that you made to the model mapping have eliminated duplicate queries to database.</span></span> <span data-ttu-id="ca57c-314">Tämän mallimäärityksen tietokantataulukoihin ja tietolähteisiin tehtyjen kutsujen määrä on myös vähennetty.</span><span class="sxs-lookup"><span data-stu-id="ca57c-314">The number of calls to database tables and data sources for this model mapping has been also reduced.</span></span> <span data-ttu-id="ca57c-315">Näin ollen koko ER-ratkaisun suorituskyky on parantunut.</span><span class="sxs-lookup"><span data-stu-id="ca57c-315">Therefore, the performance of the whole ER solution has improved.</span></span>
+
+![Jäljitä tietoja VendTable-tietolähteestä RCS-mallin mallinmäärityssuunnittelija-sivulta](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
+
+<span data-ttu-id="ca57c-317">Jäljitystiedoissa VendTable-tietolähteen arvo **\[12\]** ilmaisee, että tätä tietolähdettä kutsuttiin 12 kertaa.</span><span class="sxs-lookup"><span data-stu-id="ca57c-317">In the trace information, the value **\[12\]** for the VendTable data source indicates that this data source was called 12 times.</span></span> <span data-ttu-id="ca57c-318">Arvo **\[Q:6\]** ilmaisee, että tietokantakutsuille on käännetty kuusi kutsua VendTable-tauluun.</span><span class="sxs-lookup"><span data-stu-id="ca57c-318">The value **\[Q:6\]** indicates that six calls were translated to database calls to the VendTable table.</span></span> <span data-ttu-id="ca57c-319">Arvo **\[C:6\]** ilmaisee, että tietokannasta noudetut tiedot tallennettiin välimuistiin ja kuusi muuta kutsua käsiteltiin välimuistin avulla.</span><span class="sxs-lookup"><span data-stu-id="ca57c-319">The value **\[C:6\]** indicates that the records that were fetched from the database were cached, and six other calls were processed by using the cache.</span></span>
+
+<span data-ttu-id="ca57c-320">Huomaa, että LedgerTransTypeList-tietolähteeseen soitettujen kutsujen määrä on vähentynyt 9 027:sta 240:een.</span><span class="sxs-lookup"><span data-stu-id="ca57c-320">Notice that the number of calls to the LedgerTransTypeList data source has been reduced from 9,027 to 240.</span></span>
+
+![Jäljitä tietoja LedgerTransTypeList-tietolähteestä RCS-mallin mallinmäärityssuunnittelija-sivulta](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
+
+## <a name="review-the-execution-trace-in-finance-and-operations"></a><span data-ttu-id="ca57c-322">Suorituksen jäljityksen tarkasteleminen Finance and Operationsissa</span><span class="sxs-lookup"><span data-stu-id="ca57c-322">Review the execution trace in Finance and Operations</span></span>
+
+<span data-ttu-id="ca57c-323">RCS-ohjelman lisäksi jotkin Finance and Operations -versiot voivat tarjota ER-kehyssuunnittelijakokemuksen ominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="ca57c-323">In addition to RCS, some versions of Finance and Operations might offer capabilities for an ER framework designer experience.</span></span> <span data-ttu-id="ca57c-324">Näissä Finance and Operations -versioissa on **Ota käyttöön suunnittelutila** -vaihtoehto, joka voidaan ottaa käyttöön.</span><span class="sxs-lookup"><span data-stu-id="ca57c-324">These versions of Finance and Operations have an **Enable design mode** option that can be turned on.</span></span> <span data-ttu-id="ca57c-325">Tämä vaihtoehto löytyy **Sähköisen raportoinnin parametrit** -sivun **Yleiset**-välilehdestä, jonka voit avata **Sähköisen raportoinnin** työtilassa.</span><span class="sxs-lookup"><span data-stu-id="ca57c-325">You can find this option on the **General** tab of the **Electronic reporting parameters** page, which you can open from the **Electronic reporting** workspace.</span></span>
+
+![Ota suunnittelutilan vaihtoehto käyttöön Finance and Operationsin sähköisen raportoinnin parametrit -sivulla](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+
+<span data-ttu-id="ca57c-327">Jos käytät jotakin näistä Finance and Operations -versioista, voit analysoida luotuja suorituskykytietoja suoraan Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="ca57c-327">If you use one of these versions of Finance and Operations, you can analyze the details of generated performance traces directly in Finance and Operations.</span></span> <span data-ttu-id="ca57c-328">Sinun ei tarvitse viedä niitä Finance and Operationsista ja tuoda niitä RCS-järjestelmään.</span><span class="sxs-lookup"><span data-stu-id="ca57c-328">You don't have to export them from Finance and Operation and import them into RCS.</span></span>
+
+## <a name="review-the-execution-trace-by-using-external-tools"></a><span data-ttu-id="ca57c-329">Suorituksen jäljityksen tarkasteleminen ulkoisten työkalujen avulla</span><span class="sxs-lookup"><span data-stu-id="ca57c-329">Review the execution trace by using external tools</span></span>
+
+### <a name="configure-user-parameters"></a><span data-ttu-id="ca57c-330">Konfiguroi käyttäjäparametrit</span><span class="sxs-lookup"><span data-stu-id="ca57c-330">Configure user parameters</span></span>
+
+1. <span data-ttu-id="ca57c-331">Valitse Finance and Operationsissa **Organisaation hallinto \> Sähköinen raportointi \> Määritykset**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-331">In Finance and Operations, go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+2. <span data-ttu-id="ca57c-332">Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-332">On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.</span></span>
+3. <span data-ttu-id="ca57c-333">Valitse **Käyttäjäparametrit** -valintaikkunan **Suorituksen jäljitys** -osan **Suorituksen jäljitys muoto-osan** -kentässä **PerfView XML**.</span><span class="sxs-lookup"><span data-stu-id="ca57c-333">In the **User parameters** dialog box, in the **Execution tracing** section, in the **Execution trace format** field, select **PerfView XML**.</span></span>
+
+### <a name="run-the-er-format"></a><span data-ttu-id="ca57c-334">Suorita ER-muoto</span><span class="sxs-lookup"><span data-stu-id="ca57c-334">Run the ER format</span></span>
+
+<span data-ttu-id="ca57c-335">Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aiheen aikaisemmissa jaksoissa esitetyt vaiheet.</span><span class="sxs-lookup"><span data-stu-id="ca57c-335">Repeat the steps in the [Run the ER format](#run-format) section earlier in this topic to generate a new performance trace.</span></span>
+
+<span data-ttu-id="ca57c-336">Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi.</span><span class="sxs-lookup"><span data-stu-id="ca57c-336">Notice that the web browser offers a zip file for download.</span></span> <span data-ttu-id="ca57c-337">Tämä tiedosto sisältää suorituskyvyn jäljityksen PerfView-muodossa.</span><span class="sxs-lookup"><span data-stu-id="ca57c-337">This file contains the performance trace in PerfView format.</span></span> <span data-ttu-id="ca57c-338">Tämän jälkeen voit analysoida ER Format Execution -toiminnon tietoja Perxview-suorituskyvyn analysointityökalun avulla.</span><span class="sxs-lookup"><span data-stu-id="ca57c-338">You can then use the PerfView performance analysis tool to analyze the details of ER format execution.</span></span>

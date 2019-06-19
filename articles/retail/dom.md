@@ -1,807 +1,231 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="dom.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>dom.d75ec3.4f682e0c98ff70d526648bc50f8a5d6cb884ac93.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>4f682e0c98ff70d526648bc50f8a5d6cb884ac93</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\dom.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Distributed order management (DOM)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jaettu tilausten hallinta (JTH)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes the distributed order management (DOM) functionality in Microsoft Dynamics 365 for Retail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä aiheessa kuvataan Microsoft Dynamics 365 for Retail -ohjelman jaetun tilausten hallinnan (JTH) toimintoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Distributed order management (DOM)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jaettu tilausten hallinta (JTH)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>In the new paradigm for retail operations, retailers strive to provide personalized customer engagement, omni-channel experiences, and frictionless interactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vähittäismyynnin uudella aikakaudella myyjät pyrkivät tarjoamaan mukautettuja asiakkaan aktivointitoimia, monikanavaisia käyttökokemuksia ja sujuvaa vuorovaikutusta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Because so many choices are available, consumers will shop wherever they can have the most favorable experience.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koska valinnanmahdollisuudet ovat lähes rajattomat, kuluttajat ostavat sieltä, mistä he saavat miellyttävimmän ostokokemuksen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>In many cases, prices and products are no longer the top deciding factors for consumers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pelkät hinnat ja tuotteet eivät välttämättä enää ole tärkeimpiä perusteita kuluttajille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>To help improve the customer experience, retailers must have visibility into their inventory in real time, across all their channels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakaskokemuksen parantamiseksi vähittäismyyjillä on oltava näkyvyys varastoon reaaliaikaisesti ja kaikissa eri kanavissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>A single, holistic view of all the inventory can help optimize order fulfillment, allocation, and distribution.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yksi kokonaisvaltainen näkymä varastoon voi auttaa optimoimaan tilausten toteuttamisen, kohdistamisen ja jakelun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Therefore, adoption and implementation of a distributed order management (DOM) system are becoming more imperative for retailers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siksi jaetun tilausten hallinnan (JTH) järjestelmän käyttöönotto on muuttumassa entistä tärkeämmäksi vähittäismyyjille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>DOM optimizes order fulfillment across a complex network of systems and processes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH optimoi tilausten toteutuksen järjestelmien ja prosessien monimutkaisessa verkostossa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>It relies on a single, global view of inventory across the whole organization to intelligently manage orders, so that they are fulfilled accurately and in a more cost-effective manner.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se perustuu yhteen yhtenäiseen varastonäkymään kaikkialla organisaatiossa, jotta tilauksia voitaisiin hallita ja toteuttaa entistä tarkemmin ja kustannustehokkaammin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>By improving the efficiency of a retailer's supply chain, DOM helps the retailer better meet customer expectations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parantamalla vähittäismyyjän toimitusketjun tehokkuutta JTH auttaa vähittäismyyjää vastaamaan asiakkaiden odotuksiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The following illustration shows the lifecycle of a sales order in a DOM system.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">![</bpt>Sales order lifecycle in the context of DOM<ept id="p1">]</ept><bpt id="p2">(./media/flow.png "</bpt>Sales order lifecycle in the context of DOM<ept id="p2">")</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">![</bpt>Myyntitilauksen elinkaari JTH-kontekstissa<ept id="p1">]</ept><bpt id="p2">(./media/flow.png "</bpt>Myyntitilauksen elinkaari JTH-kontekstissa<ept id="p2">")</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Set up DOM</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH:n määrittäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Go to <bpt id="p1">**</bpt>System administration <ph id="ph1">\&gt;</ph> Setup <ph id="ph2">\&gt;</ph> License configuration<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Järjestelmän hallinta <ph id="ph1">\&gt;</ph> Asetukset <ph id="ph2">\&gt;</ph> Käyttöoikeuden konfiguraatio<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>On the <bpt id="p1">**</bpt>Configuration keys<ept id="p1">**</ept> tab, expand the <bpt id="p2">**</bpt>Retail<ept id="p2">**</ept> node, and then select the <bpt id="p3">**</bpt>Distributed Order Management<ept id="p3">**</ept> check box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajenna <bpt id="p1">**</bpt>Konfigurointiavaimet<ept id="p1">**</ept>-välilehdessä <bpt id="p2">**</bpt>Vähittäismyynti<ept id="p2">**</ept>-solmu ja valitse <bpt id="p3">**</bpt>Jaettu tilausten hallinta<ept id="p3">**</ept> -valintaruutu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Distributed order management <ph id="ph2">\&gt;</ph> Setup <ph id="ph3">\&gt;</ph> DOM parameters<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry kohtaan <bpt id="p1">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Jaettu tilausten hallinta <ph id="ph2">\&gt;</ph> Asetukset <ph id="ph3">\&gt;</ph> JTH-parametrit<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>On the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab, set the following values:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Yleiset<ept id="p1">**</ept>-välilehdessä seuraavat arvot:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">**</bpt>Enable distributed order management<ept id="p1">**</ept> – Set this option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ota jaettu tilausten hallinta käyttöön<ept id="p1">**</ept> – Määritä tähän arvoksi <bpt id="p2">**</bpt>Kyllä<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source><bpt id="p1">**</bpt>Confirm Bing Maps usage for DOM<ept id="p1">**</ept> – Set this option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vahvista Bing Maps -palvelun käyttö JTH:ssa<ept id="p1">**</ept> – Määritä tähän arvoksi <bpt id="p2">**</bpt>Kyllä<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>You can set this option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> only if the <bpt id="p2">**</bpt>Enable Bing Maps<ept id="p2">**</ept> option on the <bpt id="p3">**</bpt>Bing Maps<ept id="p3">**</ept> tab of the <bpt id="p4">**</bpt>Retail shared parameters<ept id="p4">**</ept> page (<bpt id="p5">**</bpt>Retail <ph id="ph1">\&gt;</ph> Headquarters setup <ph id="ph2">\&gt;</ph> Parameters <ph id="ph3">\&gt;</ph> Retail shared parameters<ept id="p5">**</ept>) is also set to <bpt id="p6">**</bpt>Yes<ept id="p6">**</ept>, and if a valid key is entered in the <bpt id="p7">**</bpt>Bing Maps key<ept id="p7">**</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää tähän arvoksi <bpt id="p1">**</bpt>Kyllä<ept id="p1">**</ept> vain, jos <bpt id="p2">**</bpt>Ota Bing Maps käyttöön<ept id="p2">**</ept> -asetuksen arvo <bpt id="p3">**</bpt>Bing Maps<ept id="p3">**</ept> -välilehdessä <bpt id="p4">**</bpt>Vähittäismyynnin yhteiset parametrit<ept id="p4">**</ept> -sivulla (<bpt id="p5">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Pääkonttorin asetukset <ph id="ph2">\&gt;</ph> Parametrit <ph id="ph3">\&gt;</ph> Vähittäismyynnin yhteiset parametrit<ept id="p5">**</ept>) on myös <bpt id="p6">**</bpt>Kyllä<ept id="p6">**</ept> ja jos <bpt id="p7">**</bpt>Bing Maps -avain<ept id="p7">**</ept> -kenttään annetaan kelvollinen avain.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source><bpt id="p1">**</bpt>Retention period in days<ept id="p1">**</ept> – Specify how long the fulfillment plans that DOM runs generate are kept in the system.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Pidätyskausi päivinä<ept id="p1">**</ept> – Määritä, kauanko JTH-ajojen luomia täyttämistilauksia säilytetään järjestelmässä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>The <bpt id="p1">**</bpt>DOM fulfillment data deletion job setup<ept id="p1">**</ept> batch job will delete any fulfillment plan that is older than the number of days that you specify here.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>JTH-täyttämistietojen poistotyön asetukset<ept id="p1">**</ept> -eräyö poistaa kaikki täyttämissuunnitelmat, jotka ovat tässä määritettyä päivien määrää vanhempia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source><bpt id="p1">**</bpt>Rejection period (in days)<ept id="p1">**</ept> – Specify how much time must pass before a rejected order line can be assigned to the same location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Hylkäämiskausi (päivinä)<ept id="p1">**</ept> – Määritä, kuinka paljon aikaa pitää kulua, ennen kuin hylätty tilausrivi voidaan määrittää samaan sijaintiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>On the <bpt id="p1">**</bpt>Solver<ept id="p1">**</ept> tab, set the following values:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Selvitys<ept id="p1">**</ept>-välilehdessä seuraavat arvot:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source><bpt id="p1">**</bpt>Max auto-fulfillment attempts<ept id="p1">**</ept> – Specify how many times the DOM engine will try to broker an order line to a location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Automaattisten täyttämisyritysten enimmäismäärä<ept id="p1">**</ept> – Määritä, kuinka monta kertaa JTH-moduuli yrittää välittää tilausrivin valittuun sijaintiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>If the DOM engine can't broker an order line to a location in the specified number of attempts, it will flag the order line as an exception.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos JTH-moduuli ei voi välittää tilausriviä sijaintiin määritetyillä yrityskerroilla, se merkitsee tilausrivin poikkeukseksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>It will then skip that line in future runs until the status is manually reset.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän jälkeen rivi ohitetaan tulevissa suorituksissa, kunnes tila nollataan manuaalisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">**</bpt>Local store region radius<ept id="p1">**</ept> – Enter a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Paikallisen myymälän alueen säde<ept id="p1">**</ept> – Kirjoita arvo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>This field helps determine how locations are grouped and considered equal in terms of distance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän kentän avulla määritetään, miten sijainnit ryhmitellään ja määritetään tasaveroisiksi etäisyyden osalta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>For example, if you enter <bpt id="p1">**</bpt>100<ept id="p1">**</ept>, every store or distribution center within a 100-mile radius of the fulfillment address is considered equal in terms of distance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos esimerkiksi annat arvon <bpt id="p1">**</bpt>100<ept id="p1">**</ept>, jokaista myymälää ja jakelukeskusta 100 mailin säteellä täyttämistilauksen osoitteesta pidetään tasaveroisena etäisyyden osalta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">**</bpt>Solver type<ept id="p1">**</ept> – Select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Selvityksen tyyppi<ept id="p1">**</ept> – Valitse arvo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Two solver types are released with Retail: <bpt id="p1">**</bpt>Production Solver<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Simplified Solver<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retailissa vapautetaan kaksi selvityksen tyyppiä: <bpt id="p1">**</bpt>Tuotannon selvitys<ept id="p1">**</ept> ja <bpt id="p2">**</bpt>Yksinkertaistettu selvitys<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>For all machines that will run DOM (that is, all servers that are part of the DOMBatch group), <bpt id="p1">**</bpt>Production Solver<ept id="p1">**</ept> must be selected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikille koneille, jotka suorittavat JTH:n (siis kaikki palvelimet, jotka kuuluvat DOMBatch-ryhmään), on valittava <bpt id="p1">**</bpt>Tuotannon selvitys<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>The Production Solver requires the special license key that, by default, is licensed and deployed in production environments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuotannon selvitys edellyttää erityisen lisenssiavaimen, joka oletusarvoisesti lisensoidaan ja otetaan käyttöön tuotantoympäristöissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>For non-production environments, this license key must be manually deployed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muille kuin tuotantoympäristöille tämä lisenssiavain on otettava käyttöön manuaalisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>To manually deploy the license key, follow these steps:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit ottaa lisenssiavaimen käyttöön manuaalisesti toimimalla seuraavasti:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>In Microsoft Dynamics Lifecycle Services, open the Shared asset library, select <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> as the asset type, and download the <bpt id="p2">**</bpt>DOM license<ept id="p2">**</ept> file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avaa Microsoft Dynamics Lifecycle Servicesissa jaettu omaisuuskirjasto, valitse omaisuustyypiksi <bpt id="p1">**</bpt>Malli<ept id="p1">**</ept>, ja lataa <bpt id="p2">**</bpt>JTH-license<ept id="p2">**</ept>-tiedosto.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Start Microsoft Internet Information Services (IIS) Manager, right-click <bpt id="p1">**</bpt>AOSService website<ept id="p1">**</ept>, and then select <bpt id="p2">**</bpt>Explore<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käynnistä Microsoft IIS -palveluiden hallinta, napsauta hiiren kakkospainikkeella <bpt id="p1">**</bpt>AOSService-verkkosivusto<ept id="p1">**</ept>, ja valitse sitten <bpt id="p2">**</bpt>Selaa<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>A Windows Explorer window is opened at <bpt id="p1">**</bpt><ph id="ph1">\&lt;</ph>AOS service root<ph id="ph2">\&gt;</ph><ph id="ph3">\\</ph>webroot<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Windowsin resurssienhallintaikkuna avautuu kansiossa <bpt id="p1">**</bpt><ph id="ph1">\&lt;</ph>AOS-palvelun pääkansio<ph id="ph2">\&gt;</ph><ph id="ph3">\\</ph>webroot<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Make a note of the <ph id="ph1">\&lt;</ph>AOS Service root<ph id="ph2">\&gt;</ph> path, because you will use it in the next step.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Merkitse muistiin polku <ph id="ph1">\&lt;</ph>AOS-palvelun pääkansio<ph id="ph2">\&gt;</ph>, sillä sitä käytetään seuraavassa vaiheessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Copy the configuration file in the <bpt id="p1">**</bpt><ph id="ph1">\&lt;</ph>AOS Service root<ph id="ph2">\&gt;</ph><ph id="ph3">\\</ph>PackagesLocalDirectory<ph id="ph4">\\</ph>DOM<ph id="ph5">\\</ph>bin<ept id="p1">**</ept> directory.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kopioi konfiguraatiotiedosto hakemistoon <bpt id="p1">**</bpt><ph id="ph1">\&lt;</ph>AOS Service root<ph id="ph2">\&gt;</ph><ph id="ph3">\\</ph>PackagesLocalDirectory<ph id="ph4">\\</ph>DOM<ph id="ph5">\\</ph>bin<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Go to the Retail Headquarters client, and open the <bpt id="p1">**</bpt>DOM parameters<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry Retail Headquarters -asiakasohjelmaan ja avaa <bpt id="p1">**</bpt>DOM-parametrit<ept id="p1">**</ept>-sivu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>On the <bpt id="p1">**</bpt>Solver<ept id="p1">**</ept> tab, in the <bpt id="p2">**</bpt>Solver type<ept id="p2">**</ept> field, select <bpt id="p3">**</bpt>Production solver<ept id="p3">**</ept>, and confirm that no error messages appear.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Selvitys<ept id="p1">**</ept>-välilehden <bpt id="p2">**</bpt>Selvityksen tyyppi<ept id="p2">**</ept> -kentässä <bpt id="p3">**</bpt>Tuotannon selvitys<ept id="p3">**</ept> ja varmista, ettei virhesanomia ole näkyvissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yksinkertaistettu selvitys on vaihtoehto silloin, kun vähittäismyyjä haluaa kokeilla JTH-ominaisuutta ottamatta käyttöön erityistä lisenssiä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Organizations should not use the Simplified Solver in production environments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organisaatioiden ei tulisi käyttää yksinkertaistettua selvitystä tuotantoympäristöissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Although the Simplified Solver provides the same set of capabilities as the Production Solver, there are limitations as to performance (the number of orders and order lines that can be handled in a run) and convergence of results (a batch of orders might not yield the best result in some scenarios).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaikka yksinkertaistettu selvitys sisältää samat toiminnot kuin tuotannon selvitys, siinä on rajoituksia suorituskyvyn suhteen (tilauksien ja tilausrivien määrä, joka voidaan käsitellä yhden suorituksen aikana) ja tulosten yhdistämisen suhteen (tilauserä ei ehkä tuota parhaita tuloksia joissakin tilanteissa).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Go back to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Distributed order management <ph id="ph2">\&gt;</ph> Setup <ph id="ph3">\&gt;</ph> DOM parameters<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry takaisin kohtaan <bpt id="p1">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Jaettu tilausten hallinta <ph id="ph2">\&gt;</ph> Asetukset <ph id="ph3">\&gt;</ph> JTH-parametrit<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>On the <bpt id="p1">**</bpt>Number sequences<ept id="p1">**</ept> tab, assign the required number sequences to the various DOM entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Numerosarjat<ept id="p1">**</ept>-välilehdessä tarvittavat numerosarjat eri JTH-yksiköille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Before the number sequences can be assigned to the entities, they must be defined on the <bpt id="p1">**</bpt>Number sequences<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Organization administration <ph id="ph1">\&gt;</ph> Number sequences <ph id="ph2">\&gt;</ph> Number sequences<ept id="p2">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ennen kuin numerosarjat voidaan määrittää näille yksiköille, ne on määritettävä <bpt id="p1">**</bpt>Numerosarjat<ept id="p1">**</ept>-sivulla (<bpt id="p2">**</bpt>Organisaation hallinto <ph id="ph1">\&gt;</ph> Numerosarjat <ph id="ph2">\&gt;</ph> Numerosarjat<ept id="p2">**</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>The DOM feature supports the definition of various types of DOM rules, and organizations can configure multiple rules, depending on their business needs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH-ominaisuus tukee erilaisia JTH-sääntöjen määrityksiä, ja organisaatiot voivat määrittää useita sääntöjä liiketoiminnan tarpeiden mukaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>DOM rules can be defined for a group of locations or individual locations, and for a specific product category, product, or variant.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH-säännöt voidaan määrittää sijaintiryhmälle tai yksittäiselle sijainnille sekä tietylle tuoteluokalle, tuotteelle tai variantille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>To create the grouping of locations that must be used for the DOM rules, follow these steps:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit luoda JTH-säännöissä käytettävät sijaintien ryhmittelyt seuraavasti:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> Fulfillment groups<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry kohtaan <bpt id="p1">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> Täytäntöönpanoryhmät<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Select <bpt id="p1">**</bpt>New<ept id="p1">**</ept>, and enter a name and description for the new group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Uusi<ept id="p1">**</ept> ja kirjoita uuden ryhmän nimi ja kuvaus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Tallenna<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Select <bpt id="p1">**</bpt>Add line<ept id="p1">**</ept> to add a single location to the group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit lisätä ryhmään yksittäisen sijainnin valitsemalla <bpt id="p1">**</bpt>Lisää rivi<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Alternatively, select <bpt id="p1">**</bpt>Add lines<ept id="p1">**</ept> to add multiple locations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaihtoehtoisesti voit lisätä useita sijainteja valitsemalla <bpt id="p1">**</bpt>Lisää rivejä<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>To define rules, go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Distributed order management <ph id="ph2">\&gt;</ph> Setup <ph id="ph3">\&gt;</ph> Manage rules<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää säännöt kohdassa <bpt id="p1">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Jaettu tilausten hallinta <ph id="ph2">\&gt;</ph> Asetukset <ph id="ph3">\&gt;</ph> Sääntöjen hallinta<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>The following DOM rules are currently supported:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällä hetkellä tuetaan seuraavia JTH-sääntöjä:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source><bpt id="p1">**</bpt>Minimum inventory rule<ept id="p1">**</ept> – This rule type lets organizations "ring fence" a specific quantity of a product for purposes other than order fulfillment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vähimmäisvarastosääntö<ept id="p1">**</ept> – Tämäntyyppisen säännön avulla organisaatiot voivat merkitä tuotteen tietyn määrän erityiseksi muihin tarkoituksiin kuin tilauksen täytäntöönpanoon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>For example, organizations might not want DOM to consider all the inventory that is available in a store for order fulfillment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi organisaatiot eivät ehkä halua JTH-ajon kohdistavan myymälässä saatavilla olevan varaston koko määrää tilausten täytäntöönpanoon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Instead, they might want to reserve some inventory for walk-in customers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sen sijaan voidaan haluta varata osa saldosta fyysiseen kauppaan tuleville asiakkaille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>When this rule type is used, you can define the minimum inventory to keep for a category of products, an individual product, or a product variant per location or group of locations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun käytetään tämäntyyppistä sääntöä, voidaan määrittää vähimmäisvarasto, jota täytyy ylläpitää tietylle tuoteluokalle, yksittäiselle tuotteelle tai tuotevariantille yhtä sijaintia tai sijaintiryhmää kohden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source><bpt id="p1">**</bpt>Fulfillment location priority rule<ept id="p1">**</ept> – This rule type lets organizations define a hierarchy of locations to establish the priority that the DOM engine considers when it tries to identify fulfillment locations for specific products.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Täyttämissijainnin prioriteettisääntö<ept id="p1">**</ept> – Tämäntyyppisen säännön avulla organisaatiot voivat määrittää sijaintihierarkian JTH-moduulin priorisointia varten, kun se yrittää tunnistaa tiettyjen tuotteiden täyttämissijainnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>The valid range of priorities is 1 through 10, where 1 is the highest priority and 10 is the lowest priority.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prioriteettien arvot voivat olla välillä on 1–10, jossa 1 on suurin prioriteetti ja 10 on pienin prioriteetti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Locations that have higher priority are considered before locations that have lower priority.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suuren prioriteetin sijainteja käytetään ennen sijainteja, joilla on alhaisempi prioriteetti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>If the rule is defined as a hard constraint rule, orders are brokered only to locations that priorities are defined for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos sääntö määritetään kovana rajoitussääntönä, tilaukset välitetään vain sijainteihin, joille on määritetty prioriteetti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source><bpt id="p1">**</bpt>Partial orders rule<ept id="p1">**</ept> – This rule lets organizations define whether an order or order lines can be partially fulfilled.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Osittaistilausten sääntö<ept id="p1">**</ept> – Tämän säännön avulla organisaatiot voivat määrittää, voidaanko tilaus tai tilausrivit toteuttaa vain osittain.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>The following parameters are available:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavat parametrit ovat käytettävissä:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source><bpt id="p1">**</bpt>Fulfill partial orders?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Täytetäänkö osittaistilaukset?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>– If this option is set to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>, DOM can fulfill only part of the quantity on an order line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">– Jos tämä asetus on <bpt id="p1">**</bpt>Kyllä<ept id="p1">**</ept>, JTH voi täyttää vain osan tilausrivin määrästä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>This partial fulfillment is achieved by splitting the order line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osittainen täyttäminen saavutetaan jakamalla tilausrivi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source><bpt id="p1">**</bpt>Fulfill partial lines?<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Täytetäänkö osittaiset rivit?<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>– If this option is set to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>, DOM can fulfill a partial quantity of order lines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">– Jos tämä asetus on <bpt id="p1">**</bpt>Kyllä<ept id="p1">**</ept>, JTH voi täyttää vain osan tilausrivien määristä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>This partial fulfillment is achieved by splitting the order line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osittainen täyttäminen saavutetaan jakamalla tilausrivi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source><bpt id="p1">**</bpt>Fulfill order from one location only<ept id="p1">**</ept> – If this option is set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>, DOM makes sure that all lines on an order are fulfilled from a single location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Täytä tilaus vain yhdestä sijainnista<ept id="p1">**</ept> – Jos tämä asetus on <bpt id="p2">**</bpt>Kyllä<ept id="p2">**</ept>, JTH varmistaa, että tilauksen kaikki rivit täytetään yhdestä sijainnista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>The following table explains the behavior when a combination of these parameters is defined.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa taulukossa kuvataan toimintaa, kun määritetään näiden parametrien yhdistelmiä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Fulfill partial orders</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täytä osittaistilaukset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Fulfill partial lines</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täytä osittaiset rivit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Fulfill order from one location only</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täytä tilaus vain yhdestä sijainnista</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>A few lines of the order can be fulfilled, and individual lines can be partially fulfilled, but all the lines must be from the same location in an instance of the DOM run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilauksesta voidaan täyttää vain muutama rivi ja yksittäiset rivit voidaan täyttää osittain, mutta kaikki rivit tulee täyttää samasta sijainnista JTH-suoritusesiintymän yhteydessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>(This combination isn't currently supported.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Tätä yhdistelmää ei tueta tällä hetkellä.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>A few lines of the order can be fulfilled, but individual lines can't be partially fulfilled, and all the fulfilled lines must be from the same location in an instance of the DOM run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilauksesta voidaan täyttää vain muutama rivi, mutta yksittäisiä rivejä ei voida täyttää vain osittain, ja kaikki täytetyt rivit tulee täyttää samasta sijainnista JTH-suoritusesiintymän yhteydessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>(This combination isn't currently supported.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Tätä yhdistelmää ei tueta tällä hetkellä.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>A few lines of the order can be fulfilled, individual lines can be partially fulfilled, and each line can be fulfilled from more than one location in an instance of the DOM run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilauksesta voidaan täyttää vain muutama rivi, yksittäiset rivit voidaan täyttää vain osittain, ja kukin rivi voidaan täyttää useammasta kuin yhdestä sijainnista JTH-suoritusesiintymän yhteydessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>4<ph id="ph1">\*</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4<ph id="ph1">\*</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Not applicable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei käytettävissä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>All order lines must be fulfilled, individual lines can't be partially fulfilled, and each order line can be fulfilled from a different location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki tilausrivit on täytettävä, yksittäisiä rivejä ei voida täyttää vain osittain ja kukin tilausrivi voidaan täyttää eri sijainnista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>5<ph id="ph1">\*</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5<ph id="ph1">\*</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Not applicable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei käytettävissä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>All order lines must be fulfilled, individual lines can't be partially fulfilled, and all the order lines can be delivered from one location only.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki tilausrivit on täytettävä, yksittäisiä rivejä ei voida täyttää vain osittain ja kaikki tilausrivit voidaan toimittaa vain yhdestä sijainnista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>6<ph id="ph1">\*</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6<ph id="ph1">\*</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Not applicable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei käytettävissä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>This combination works like combination 4, because <bpt id="p1">**</bpt>Fulfill partial lines<ept id="p1">**</ept> can't be set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> when <bpt id="p3">**</bpt>Fulfill partial orders<ept id="p3">**</ept> is set to <bpt id="p4">**</bpt>No<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä yhdistelmä toimii samalla tavalla kuin yhdistelmä 4, koska <bpt id="p1">**</bpt>Täytä osittaiset rivit<ept id="p1">**</ept> -asetukseksi ei voi määrittää <bpt id="p2">**</bpt>Kyllä<ept id="p2">**</ept>, kun <bpt id="p3">**</bpt>Täytä osittaistilaukset<ept id="p3">**</ept> -asetuksella on arvo <bpt id="p4">**</bpt>Ei<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>7<ph id="ph1">\*</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7<ph id="ph1">\*</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Not applicable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei käytettävissä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>This combination works like combination 5, because <bpt id="p1">**</bpt>Fulfill partial lines<ept id="p1">**</ept> can't be <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept> when <bpt id="p3">**</bpt>Fulfill partial orders<ept id="p3">**</ept> is <bpt id="p4">**</bpt>No<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä yhdistelmä toimii samalla tavalla kuin yhdistelmä 5, koska <bpt id="p1">**</bpt>Täytä osittaiset rivit<ept id="p1">**</ept> -asetukseksi ei voi määrittää <bpt id="p2">**</bpt>Kyllä<ept id="p2">**</ept>, kun <bpt id="p3">**</bpt>Täytä osittaistilaukset<ept id="p3">**</ept> -asetuksella on arvo <bpt id="p4">**</bpt>Ei<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>8</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>A few lines of the order can be fulfilled, but individual lines can't be partially fulfilled, and the various order lines can be fulfilled from more than one location in an instance of the DOM run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilauksesta voidaan täyttää vain muutama rivi, mutta yksittäisiä rivejä ei voida toteuttaa vain osittain, ja eri tilausrivit voidaan täyttää useammasta kuin yhdestä sijainnista JTH-suoritusesiintymän yhteydessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>9<ph id="ph1">\*</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">9<ph id="ph1">\*</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Not applicable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei käytettävissä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>All order lines must be fulfilled, and all the order lines must be fulfilled from one location only.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki tilausrivit on täytettävä ja ne on täytettävä vain yhdestä sijainnista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source><ph id="ph1">\*</ph> If <bpt id="p1">**</bpt>Fulfill partial orders<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>No<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Fulfill partial lines<ept id="p3">**</ept> is always considered to be set to <bpt id="p4">**</bpt>No<ept id="p4">**</ept>, regardless of how it's actually set.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph>Jos <bpt id="p1">**</bpt>Täytä osittaistilaukset<ept id="p1">**</ept> -asetukseksi määritetään <bpt id="p2">**</bpt>Ei<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Täytä osittaiset rivit<ept id="p3">**</ept> -asetuksen arvona pidetään aina arvoa <bpt id="p4">**</bpt>Ei<ept id="p4">**</ept> riippumatta siitä, mikä arvo asetukseen on määritetty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source><bpt id="p1">**</bpt>Offline fulfillment location rule<ept id="p1">**</ept> – This rule lets organizations specify a location or group of locations as offline or unavailable to DOM, so that orders can't be assigned there for fulfillment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Offline-täyttämisen sijaintisääntö<ept id="p1">**</ept> – Tämän säännön avulla organisaatiot voivat määrittää sijainnin tai sijaintiryhmän offline-sijainniksi tai JTH:n ulkopuolelle, jotta tilauksia ei voi määrittää täytettäväksi kyseisestä sijainnista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source><bpt id="p1">**</bpt>Maximum rejects rule<ept id="p1">**</ept> – This rule lets organizations define a threshold for rejections.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Hylkäysten enimmäismäärän sääntö<ept id="p1">**</ept> – Tämän säännön avulla organisaatiot voivat määrittää hylkäyksille raja-arvon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>When the threshold is reached, the DOM processor will mark an order or order line as an exception, and exclude it from further processing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun raja-arvo saavutetaan, JTH-käsittelijä merkitsee tilauksen vai tilausrivin poikkeukseksi ja jättää sen jatkokäsittelyn ulkopuolelle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>After order lines are assigned to a location, the location can reject an assigned order line, because it might not be able to fulfill that line for some reasons.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sen jälkeen, kun tilausrivit on määritetty sijaintiin, sijainti voi hylätä määritetyn tilausrivin, koska se ei jostakin syystä pysty täyttämään tilausriviä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Rejected lines are marked as an exception and put back into the pool for processing in the next run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hylätyt rivit merkitään poikkeukseksi ja palautetaan takaisin pooliin seuraavaa suorituskertaa varten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>During the next run, DOM will try to assign the rejected line to a different location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavan ajon aikana JTH yrittää määrittää hylätyn rivin toiseen sijaintiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>The new location can also reject the assigned order line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myös uusi sijainti voi hylätä määritetyn tilausrivin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>This cycle of assignment and rejection can occur multiple times.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä määrittämisen ja hylkäämisen sykli voi tapahtua useita kertoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>When the rejection count hits the threshold that is defined, DOM will mark the order line as a permanent exception and won't pick the line for assignment again.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun hylkäysten määrä ylittää määritetyn raja-arvon, JTH merkitsee tilausrivin pysyväksi poikkeukseksi eikä enää ota kyseistä tilausriviä määritettäväksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>DOM will consider the order line again for reassignment only if a user manually resets the status of the order line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH ottaa tilausrivin uudelleen määritettäväksi vain, jos käyttäjä nollaa tilausrivin tilan manuaalisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source><bpt id="p1">**</bpt>Maximum distance rule<ept id="p1">**</ept> – This rule lets organizations define the maximum distance that a location or group of locations can be to fulfill the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Enimmäisetäisyyssääntö<ept id="p1">**</ept> – Tämä säännön avulla organisaatiot voivat määrittää enimmäisetäisyyden tilauksen täyttävälle sijainnille tai sijaintiryhmälle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>If overlapping maximum distance rules are defined for a location, DOM will apply the lowest maximum distance that is defined for that location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos sijainnille on määritetty päällekkäisiä enimmäisetäisyyssääntöjä, JTH käyttää pienintä sijainnille määritettyä enimmäisetäisyyttä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source><bpt id="p1">**</bpt>Maximum orders rule<ept id="p1">**</ept> – This rule lets organizations define the maximum number of orders that a location or group of locations can process during a calendar day.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tilausten enimmäismäärän sääntö<ept id="p1">**</ept> – Tämän säännön avulla organisaatiot voivat määrittää tilausten enimmäismäärän, jonka sijainti tai sijaintiryhmä voi käsitellä kalenteripäivän aikana.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>If the maximum number of orders is assigned to a location in a single day, DOM won't assign any more orders to that location for the rest of that calendar day.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos sijainnille määritetään tilausten enimmäismäärä yhden päivän aikana, JTH ei määritä uusia tilauksia kyseiseen sijaintiin kyseisen kalenteripäivän aikana.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Here are some of the common attributes that can be defined for all the preceding rule types:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa on lueteltu yleisiä määritteitä, joita voidaan määrittää edellä esitellyille sääntötyypeille:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source><bpt id="p1">**</bpt>Start date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>End date<ept id="p2">**</ept> – Every rule can be made date-effective by using the these fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Aloituspäivä<ept id="p1">**</ept> ja <bpt id="p2">**</bpt>Päättymispäivä<ept id="p2">**</ept> – Jokaiselle säännölle voidaan määrittää päivämääräväli voimassaoloajaksi näiden kenttien avulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source><bpt id="p1">**</bpt>Disabled<ept id="p1">**</ept> – Only rules that have a value of <bpt id="p2">**</bpt>No<ept id="p2">**</ept> for this field are considered in a DOM run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ei käytössä<ept id="p1">**</ept> – Vain ne säännöt, joiden arvo tässä kentässä on <bpt id="p2">**</bpt>Ei<ept id="p2">**</ept>, otetaan huomioon JTH-suorituksessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source><bpt id="p1">**</bpt>Hard constraint<ept id="p1">**</ept> – A rule can be defined as either a hard constraint or not a hard constraint.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tiukka rajoitus<ept id="p1">**</ept> – Sääntö voidaan määrittää tiukaksi rajoitukseksi tai ei-tiukaksi rajoitukseksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Every DOM run goes through two iterations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kukin JTH-suoritus käy läpi kaksi toistoa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>In the first iteration, every rule is treated as a hard constraint rule, regardless of the setting of this field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ensimmäisessä toistossa jokaista sääntöä pidetään tiukkana rajoituksena riippumatta tämän kentän arvosta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>In other words, every rule is applied.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toisin sanoen kaikki säännöt ovat käytössä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>The only exception is the <bpt id="p1">**</bpt>Location priority<ept id="p1">**</ept> rule.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ainoa poikkeus on <bpt id="p1">**</bpt>Sijainnin prioriteetti<ept id="p1">**</ept> -sääntö.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>In the second iteration, the rules that weren't defined as hard constraint rules are removed, and the order or order lines that weren't assigned to locations when all the rules were applied are assigned to locations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toisessa toistossa säännöt, joita ei ole määritetty tiukoiksi rajoituksiksi, poistetaan, ja tilauksille tai tilausriveille, joille ei määritetty sijaintia kaikkia sääntöjä käytettäessä, määritetään sijainnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täyttämisprofiileja käytetään sääntökokoelmien, yritysten, myyntitilausten alkuperien ja toimitustapojen ryhmittelyyn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Every DOM run is for a specific fulfillment profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jokainen JTH-suoritus on tiettyä täyttämisprofiilia varten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>In this way, organizations can define and run a set of rules for a set of legal entities, on orders that have specific sales order origins and modes of delivery.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näin organisaatiot voivat määrittää ja suorittaa sääntöjoukkoja yritysjoukossa sellaisille tilauksille, joilla on tietyt myyntitilauksen alkuperät ja toimitustavat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>Therefore, if different set of rules must be run for different sets of sales order origins or modes of delivery, the fulfillment profiles can be defined accordingly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos siis pitää suorittaa eri sääntöjoukkoja myyntitilausten alkuperän tai toimitustavan mukaan, täyttämisprofiilit voidaan määrittää vastaavasti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>To set up fulfillment profiles, follow these steps:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää täyttämisprofiileita noudattamalla seuraavia ohjeita:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Distributed order management <ph id="ph2">\&gt;</ph> Setup <ph id="ph3">\&gt;</ph> Fulfillment profiles<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry kohtaan <bpt id="p1">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Jaettu tilausten hallinta <ph id="ph2">\&gt;</ph> Asetukset <ph id="ph3">\&gt;</ph> Täyttämisprofiilit<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Select <bpt id="p1">**</bpt>New<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Uusi<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Enter values in the <bpt id="p1">**</bpt>Profile<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Description<ept id="p2">**</ept> fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita arvot <bpt id="p1">**</bpt>Profiili<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Kuvaus<ept id="p2">**</ept>-kenttiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Set the <bpt id="p1">**</bpt>Auto apply result<ept id="p1">**</ept> option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Automaattinen tuloksen käyttö<ept id="p1">**</ept> -asetus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>If you set this option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>, the results of the DOM run for the profile will be automatically applied to the sales order lines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos määrität tämän asetuksen arvoksi <bpt id="p1">**</bpt>Kyllä<ept id="p1">**</ept>, profiilin JTH-ajon tulokset kohdistetaan automaattisesti myyntitilauksen riveille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>If you set it to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>, the results can only be viewed in the fulfillment plan.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos määrität arvoksi <bpt id="p1">**</bpt>Ei<ept id="p1">**</ept>, tuloksia voi tarkastella vain täyttämissuunnitelmassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>They won't be applied to the sales order lines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niitä ei kohdisteta myyntitilausriveille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>If you want the DOM profile to be run for orders that have every sales order origin, even orders where the sales order origin is undefined, set the <bpt id="p1">**</bpt>Process orders with empty sales origin<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat, että JTH-profiili suoritetaan tilauksille, joilla on kaikki myyntitilausten alkuperät (myös tilauksille, joissa myyntitilauksen alkuperää ei ole määritetty), määritä <bpt id="p1">**</bpt>Käsittele tilaukset, joilla on tyhjä myynnin alkuperä<ept id="p1">**</ept> -asetuksen arvoksi <bpt id="p2">**</bpt>Kyllä<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>To run the profile for only a few sales order origins, you can define them on the <bpt id="p1">**</bpt>Sales origins<ept id="p1">**</ept> page, as explained later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit suorittaa profiilin vain joillekin myyntitilauksen alkuperille määrittämällä ne <bpt id="p1">**</bpt>Myynnin alkuperät<ept id="p1">**</ept> -sivulla jäljempänä esitetyllä tavalla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>On the <bpt id="p1">**</bpt>Legal entities<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and then select a legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Yritykset<ept id="p1">**</ept>-pikavälilehdessä <bpt id="p2">**</bpt>Lisää<ept id="p2">**</ept> ja sitten haluttu yritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>On the <bpt id="p1">**</bpt>Rules<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>, and then select the rule to link to the profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Säännöt<ept id="p1">**</ept>-pikavälilehdessä <bpt id="p2">**</bpt>Lisää<ept id="p2">**</ept> ja sitten profiiliin linkitettävä sääntö.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Repeat the previous two steps until all the required rules are associated with the profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toista kahta edellistä vaihetta, kunnes kaikki tarvittavat säännöt on liitetty profiiliin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Tallenna<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>On the Action Pane, on the <bpt id="p1">**</bpt>Setup<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Modes of delivery<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse toimintoruudun <bpt id="p1">**</bpt>Asetukset<ept id="p1">**</ept>-välilehdessä <bpt id="p2">**</bpt>Toimitustavat<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>On the <bpt id="p1">**</bpt>Modes of delivery<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>New<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Toimitustavat<ept id="p1">**</ept>-sivulla <bpt id="p2">**</bpt>Uusi<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>In the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> field, select the legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse yritys kentässä <bpt id="p1">**</bpt>Yritys<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>The list of companies is limited to the legal entities that you added earlier.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yritysten luettelossa on vain aikaisemmin lisätyt yritykset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>In the <bpt id="p1">**</bpt>Mode of delivery<ept id="p1">**</ept> field, select the mode of delivery to associate with this profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Toimitustapa<ept id="p1">**</ept>-kentässä tähän profiiliin liitettävä toimitustapa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>A mode of delivery can't be associated with multiple active profiles.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimitustapaa ei voi liittää useisiin aktiivisiin profiileihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Repeat the previous two steps until all the required modes of delivery are associated with the profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toista kahta edellistä vaihetta, kunnes kaikki tarvittavat toimitustavat on liitetty profiiliin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Close the <bpt id="p1">**</bpt>Modes of delivery<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sulje <bpt id="p1">**</bpt>Toimitustavat<ept id="p1">**</ept>-sivu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>On the Action Pane, on the <bpt id="p1">**</bpt>Setup<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Sales order origins<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse toimintoruudun <bpt id="p1">**</bpt>Asetukset<ept id="p1">**</ept>-välilehdessä <bpt id="p2">**</bpt>Myyntitilauksen alkuperät<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>On the <bpt id="p1">**</bpt>Sales origins<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>New<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Myynnin alkuperät<ept id="p1">**</ept> -sivulla <bpt id="p2">**</bpt>Uusi<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>In the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> field, select the legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse yritys kentässä <bpt id="p1">**</bpt>Yritys<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>The list of companies is limited to the legal entities that you added earlier.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yritysten luettelossa on vain aikaisemmin lisätyt yritykset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>In the <bpt id="p1">**</bpt>Sales origin<ept id="p1">**</ept> field, select the sales origin to associate with this profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Myynnin alkuperä<ept id="p1">**</ept> -kentässä tähän profiiliin liitettävä myynnin alkuperä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>A sales origin can't be associated with multiple active profiles.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myynnin alkuperää ei voi liittää useisiin aktiivisiin profiileihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>Repeat the previous two steps until all the required sales origins are associated with the profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toista kahta edellistä vaihetta, kunnes kaikki tarvittavat myynnin alkuperät on liitetty profiiliin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Close the <bpt id="p1">**</bpt>Sales origins<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sulje <bpt id="p1">**</bpt>Myynnin alkuperät<ept id="p1">**</ept> -sivu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Set the <bpt id="p1">**</bpt>Enable profile<ept id="p1">**</ept> option to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Ota profiili käyttöön<ept id="p1">**</ept> -asetukseksi <bpt id="p2">**</bpt>Kyllä<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>If there are any errors in the setup, you receive a warning message.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos asetuksissa on virheitä, saat varoitussanoman.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>DOM processing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH-käsittely</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>DOM will run only in a batch job.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH suoritetaan vain erätyönä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>To configure the batch job for DOM runs, follow these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää JTH-ajojen erätyön seuraavasti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>Go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Distributed order management <ph id="ph2">\&gt;</ph> Batch processing <ph id="ph3">\&gt;</ph> DOM processor job setup<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry kohtaan <bpt id="p1">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Jaettu tilausten hallinta <ph id="ph2">\&gt;</ph> Eräkäsittely <ph id="ph3">\&gt;</ph> JTH-käsittelijän työasetukset<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>On the <bpt id="p1">**</bpt>Parameters<ept id="p1">**</ept> FastTab, in the <bpt id="p2">**</bpt>Fulfillment profile<ept id="p2">**</ept> field, select a profile that DOM must be run for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Parametrit<ept id="p1">**</ept>-pikavälilehden <bpt id="p2">**</bpt>Täyttämisprofiili<ept id="p2">**</ept> -kentässä profiili, jota varten JTH suoritetaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>On the <bpt id="p1">**</bpt>Run in the background<ept id="p1">**</ept> FastTab, in the <bpt id="p2">**</bpt>Batch group<ept id="p2">**</ept> field, select a configured batch group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Suorita taustalla<ept id="p1">**</ept> -pikavälilehden <bpt id="p2">**</bpt>Eräryhmä<ept id="p2">**</ept>-kentässä määritetty eräryhmä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>In the <bpt id="p1">**</bpt>Task description<ept id="p1">**</ept> field, enter a name for the batch job.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjoita <bpt id="p1">**</bpt>Tehtävän kuvaus<ept id="p1">**</ept> -kenttään erätyön nimi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>Select <bpt id="p1">**</bpt>Recurrence<ept id="p1">**</ept>, and define the recurrence of the batch job.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Toistuminen<ept id="p1">**</ept>-kohdassa erätyön toistuminen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>At the time of processing, DOM will consider the order and order lines as described here:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käsittelyn aikana JTH ottaa huomioon seuraavassa kuvatut tilaukset ja tilausrivit:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Order lines that meet the criteria for sales order origins, modes of delivery, and legal entity as defined in the DOM profile, and that also meet any of these criteria:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntitilauksen alkuperään, toimitustapaan ja yritykseen liittyvät JTH-profiilissa määritetyt ehdot täyttävät tilausrivit, jotka täyttävät myös jonkin seuraavista ehdoista:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>They are created from retail channels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ne on luotu vähittäismyyntikanavista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>They have never been brokered by DOM.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH ei ole koskaan välittänyt niitä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>They have been brokered by DOM before, but they are marked as exceptions and are below the maximum threshold for attempts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH on välittänyt niitä aiemmin, mutta ne on merkitty poikkeuksiksi ja ovat yritysten määrän raja-arvon alapuolella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>The mode of delivery isn't pick-up or electronic delivery.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimitustapa ei ole nouto tai sähköinen toimitus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>They aren't marked for delivery.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niitä ei ole merkitty toimitusta varten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>They aren't manually excluded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niitä ei ole manuaalisesti poissuljettu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>Orders that aren't on hold</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilaukset,jotka eivät ole pidossa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>After it applies the rules, inventory constraints, and optimization, DOM picks the location that is closest to the customer's delivery address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sen jälkeen, kun JTH on käyttänyt sääntöjä, varaston rajoituksia ja optimointia, JTH valitsee sijainnin, joka on lähinnä asiakkaan toimitusosoitetta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source><bpt id="p1">![</bpt>Sales order criteria<ept id="p1">]</ept><bpt id="p2">(./media/ordercriteria.png "</bpt>Sales order criteria<ept id="p2">")</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">![</bpt>Myyntitilauksen ehdot<ept id="p1">]</ept><bpt id="p2">(./media/ordercriteria.png "</bpt>Myyntitilauksen ehdot<ept id="p2">")</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Results of DOM runs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH-suoritusten tulokset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>If the fulfillment profile is set to <bpt id="p1">**</bpt>Auto apply<ept id="p1">**</ept>, the results of the run will be automatically applied to the sales order lines, and the fulfillment plan can be viewed separately.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos täyttämisprofiiliksi valitaan <bpt id="p1">**</bpt>Automaattinen käyttö<ept id="p1">**</ept>, ajon tulokset kohdistetaan automaattisesti myyntitilausriveille ja täyttämissuunnitelmaa voi tarkastella erikseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>However, if the fulfillment profile isn't set to <bpt id="p1">**</bpt>Auto apply<ept id="p1">**</ept>, the results of the run can be seen only from the fulfillment plan view.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos täyttämisprofiiliksi ei kuitenkaan ole määritetty <bpt id="p1">**</bpt>Automaattinen käyttö<ept id="p1">**</ept>, ajon tulokset näkyvät vain täyttämissuunnitelman näkymässä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>To view all the fulfillment plans that are generated, follow these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näet kaikki luodut täyttämissuunnitelmat seuraavasti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>Go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Distributed order management <ph id="ph2">\&gt;</ph> Distributed order management<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry kohtaan <bpt id="p1">**</bpt>Vähittäiskauppa <ph id="ph1">\&gt;</ph> Jaettu tilausten hallinta <ph id="ph2">\&gt;</ph> Jaettu tilausten hallinta<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>In the <bpt id="p1">**</bpt>Distributed order management<ept id="p1">**</ept> workspace, select the <bpt id="p2">**</bpt>Fulfillment Plans<ept id="p2">**</ept> tile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Jaettu tilausten hallinta<ept id="p1">**</ept> -työtilassa <bpt id="p2">**</bpt>Täyttämissuunnitelmat<ept id="p2">**</ept>-ruutu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>Select the ID of the relevant order fulfillment plan to view the fulfillment plan.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit tarkastella haluttua täyttämissuunnitelmaa valitsemalla sen tunnuksen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>The order details section of the fulfillment plan shows the original sales order lines that were part of the run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täyttämissuunnitelman tilaustietojen osassa näkyvät alkuperäiset myyntitilausrivit, jotka kuuluivat ajoon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Besides the standard sales order line fields, the order details section also includes the following three DOM-related fields:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Normaalien myyntitilausrivien kenttien lisäksi tilaustietojen osassa on myös seuraavat kolme JTH-kenttää:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source><bpt id="p1">**</bpt>Fulfillment type<ept id="p1">**</ept> – This field indicates whether the sales order line is fully brokered, partially brokered, or not brokered at all to a location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Täyttämistyyppi<ept id="p1">**</ept> – Kenttä ilmaisee, onko myyntitilausrivi kokonaan vai osittain välitetty vai onko sitä ollenkaan välitetty sijaintiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source><bpt id="p1">**</bpt>Split<ept id="p1">**</ept> – This field indicates whether one sales order line has been split and brokered to different locations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Jako<ept id="p1">**</ept> – Tämä kenttä ilmaisee, onko jokin myyntitilausrivi jaettu ja välitetty eri sijainteihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source><bpt id="p1">**</bpt>Number of fulfillment locations<ept id="p1">**</ept> – This field indicates how many fulfillment lines were created for one sales order line (based on the number of locations that the original sales order line was brokered to).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Täyttämissijaintien määrä<ept id="p1">**</ept> – Tämä kenttä ilmaisee, kuinka monta täyttämisriviä luotiin yhdelle myyntitilausriville (perustuen niiden sijaintien määrään, joihin alkuperäinen myyntitilausrivi välitettiin).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>The order fulfillment details section shows the assignment of the original sales order lines to different locations, together with their quantities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilauksen täyttämistiedoissa näkyy alkuperäisten myyntitilausrivien määritys eri sijainteihin sekä niiden määrät.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>Order line actions and statuses</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilausrivin toiminnot ja tilat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>The following describes settings on the order line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa kuvataan tilausrivin asetukset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>To open the order line, go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Customers <ph id="ph2">\&gt;</ph> All sales orders<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit avata tilausrivin siirtymällä kohtaan <bpt id="p1">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Asiakkaat <ph id="ph2">\&gt;</ph> Kaikki myyntitilaukset<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>If you set the <bpt id="p1">**</bpt>Exclude from DOM processing<ept id="p1">**</ept> option on the <bpt id="p2">**</bpt>General<ept id="p2">**</ept> tab of the sales order line to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept>, the order or order line will be excluded from DOM processing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos määrität <bpt id="p1">**</bpt>Jätä pois JTH-käsittelystä<ept id="p1">**</ept> -asetuksen (myyntitilausrivin <bpt id="p2">**</bpt>Yleiset<ept id="p2">**</ept>-välilehdessä) arvoksi <bpt id="p3">**</bpt>Kyllä<ept id="p3">**</ept>, tilaus tai tilausrivi jätetään pois JTH-käsittelystä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>The <bpt id="p1">**</bpt>DOM status<ept id="p1">**</ept> field on the <bpt id="p2">**</bpt>General<ept id="p2">**</ept> tab of the sales order line can be set to one of the following values:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>JTH-tila<ept id="p1">**</ept>-kenttään (myyntitilausrivin <bpt id="p2">**</bpt>Yleiset<ept id="p2">**</ept>-välilehdessä) voidaan määrittää jokin seuraavista arvoista:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source><bpt id="p1">**</bpt>None<ept id="p1">**</ept> – The order line has never been brokered.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ei mitään<ept id="p1">**</ept> – tilausriviä ei ole koskaan välitetty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source><bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> – The order line has been successfully brokered and assigned to a location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Valmis<ept id="p1">**</ept> – tilausrivi on onnistuneesti välitetty ja määritetty sijaintiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source><bpt id="p1">**</bpt>Exception<ept id="p1">**</ept> – The order line has been brokered but can't be assigned to a location.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poikkeus<ept id="p1">**</ept> – Tilausrivi on välitetty, mutta sitä ei voi määrittää sijaintiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>Exceptions have multiple subtypes that can be viewed from the DOM workspace:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poikkeuksia on useita alatyyppejä, joita voidaan tarkastella JTH-työtilassa:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source><bpt id="p1">**</bpt>No quantity available<ept id="p1">**</ept> – There is no available inventory to assign the order to in the locations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ei käytettävissä olevaa määrää<ept id="p1">**</ept> – ei ole olemassa käytettävissä olevaa varastoa tilauksen määrittämiseksi sijainteihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source><bpt id="p1">**</bpt>Maximum rejections<ept id="p1">**</ept> – The order line has reached the maximum threshold for rejections.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Hylkäysten enimmäismäärä<ept id="p1">**</ept> – tilausrivi on saavuttanut hylkäysten määrän ylärajan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source><bpt id="p1">**</bpt>Data modification conflict<ept id="p1">**</ept> – The sales order line has been changed since the order was brokered.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tietojen muutoksen ristiriita<ept id="p1">**</ept> – myyntitilausriviä on muutettu tilauksen välittämisen jälkeen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>Therefore, the fulfillment plan can't be applied to the order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siksi täyttämissuunnitelmaa ei voi käyttää tilaukseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source><bpt id="p1">**</bpt>Order line specific exception<ept id="p1">**</ept> – There are multiple exceptions on the order line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tilausrivikohtainen poikkeus<ept id="p1">**</ept> – tilausrivillä on useita poikkeuksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>During the sales order entry, DOM can be run in an interactive mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntitilausta syötettäessä JTH voidaan suorittaa vuorovaikutteisessa tilassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>While you're entering an order line, after you specify the product and quantity, you can select <bpt id="p1">**</bpt>Update line<ept id="p1">**</ept> and then, under <bpt id="p2">**</bpt>DOM<ept id="p2">**</ept>, select <bpt id="p3">**</bpt>Suggest fulfillment location<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet syöttämässä tilausriviä ja olet määrittänyt tuotteen ja määrän, voit valita <bpt id="p1">**</bpt>Päivitä rivi<ept id="p1">**</ept> ja sitten (kohdassa <bpt id="p2">**</bpt>JTH<ept id="p2">**</ept>) <bpt id="p3">**</bpt>Ehdota täyttämissijaintia<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>You then see a list of locations that is based on DOM rules that can fulfill the quantity on the order line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällöin näet sijaintiluettelon, joka perustuu JTH-sääntöihin, jotka voivat täyttää tilausrivin määrän.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>This list is sorted by distance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä luettelo on lajiteltu etäisyyden mukaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>Select a location to set the relevant site and warehouse on the sales order line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse sijainti määrittääksesi asianmukaisen toimipisteen ja varaston myyntitilausrivillä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>For this functionality to work, there must be an existing, active fulfillment profile that matches the sales origin and delivery mode on the sales line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jotta tätä toimintoa voisi käyttää, on oltava olemassa aktiivinen täyttämisprofiili, joka vastaa myyntirivin myynnin alkuperää ja toimitustapaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source>To view the DOM run logs for a sales order line, select <bpt id="p1">**</bpt>Sales order line<ept id="p1">**</ept>, and then, under <bpt id="p2">**</bpt>DOM<ept id="p2">**</ept>, select <bpt id="p3">**</bpt>View DOM Logs<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit tarkastella JTH-ajojen myyntitilausriviä koskevia lokeja valitsemalla <bpt id="p1">**</bpt>Myyntitilausrivi<ept id="p1">**</ept> ja sitten kohdassa <bpt id="p2">**</bpt>JTH<ept id="p2">**</ept> <bpt id="p3">**</bpt>Näytä JTH-lokit<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>The DOM logs show all the events and logs that were generated by the DOM run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH-lokeissa näkyvät kaikki JTH-ajon luomat tapahtumat ja lokit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source>The logs can help you understand why a specific location was assigned to the order line, and what rules and constraints were considered as a part of the assignment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lokien avulla voit selvittää, miksi tietty sijainti määritettiin tietylle tilausriville ja mitä sääntöjä ja rajoituksia määrityksessä otettiin huomioon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>On the <bpt id="p1">**</bpt>Manage<ept id="p1">**</ept> tab, the DOM logs are also available at the level of the sales order header.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Hallinta<ept id="p1">**</ept>-välilehdessä JTH-lokeja voi tarkastella myös myyntitilauksen otsikon tasolla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source>Run a clean-up job for DOM fulfillment plans</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH-täyttämissuunnitelmien puhdistusajo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>As DOM processing is run, fulfillment plans are created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH-käsittelyn aikana luodaan täyttämissuunnitelmia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source>Over time, the system will keep numerous fulfillment plans.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ajan kuluessa järjestelmään kertyy paljon täyttämissuunnitelmia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>To manage the number of fulfillment plans that the system keeps, you can configure a batch job that deletes older fulfillment plans, based on the <bpt id="p1">**</bpt>Retention period in days<ept id="p1">**</ept> value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit hallita järjestelmän säilyttämien täyttämissuunnitelmien määrää määrittämällä erätyön, joka poistaa vanhoja täyttämissuunnitelma <bpt id="p1">**</bpt>Pidätyskausi päivinä<ept id="p1">**</ept> -arvon perusteella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>Go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Distributed order management <ph id="ph2">\&gt;</ph> Batch processing <ph id="ph3">\&gt;</ph> DOM fulfillment data deletion job setup<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siirry kohtaan <bpt id="p1">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Jaettu tilausten hallinta <ph id="ph2">\&gt;</ph> Eräkäsittely <ph id="ph3">\&gt;</ph> JTH-täyttämistietojen poistotyön asetukset<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>In the <bpt id="p1">**</bpt>Batch group<ept id="p1">**</ept> field, select a configured batch group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse määritetty eräryhmä <bpt id="p1">**</bpt>Eräryhmä<ept id="p1">**</ept>-kentässä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>Select <bpt id="p1">**</bpt>Recurrence<ept id="p1">**</ept>, and define the recurrence of the batch job.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä <bpt id="p1">**</bpt>Toistuminen<ept id="p1">**</ept>-kohdassa erätyön toistuminen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>More information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>Here are some things to consider when you use the DOM feature:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavat asiat on hyvä huomioida JTH-ominaisuutta käytettäessä:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>Currently, DOM looks only at orders that are created from retail channels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällä hetkellä JTH tarkastelee vain vähittäismyynnin kanavissa luotuja tilauksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source>Sales orders are identified as retail sales orders when the <bpt id="p1">**</bpt>Retail sale<ept id="p1">**</ept> option is set to <bpt id="p2">**</bpt>Yes<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntilaukset tunnistetaan vähittäismyynnin myyntitilauksiksi, kun <bpt id="p1">**</bpt>Vähittäismyynti<ept id="p1">**</ept> -asetukseksi on määritetty <bpt id="p2">**</bpt>Kyllä<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>Microsoft hasn't tested DOM with advanced warehouse management features.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft ei ole testannut JTH-ominaisuutta edistyneen varastonhallinnan ominaisuuksien kanssa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source>Customers and partners must be careful to determine whether DOM is compatible with the advanced warehouse management capabilities and processes that are relevant to them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakkaiden ja kumppanien on huolellisesti selvitettävä, onko JTH yhteensopiva heille tärkeiden edistyneen varastonhallinnan ominaisuuksien ja prosessien kanssa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>DOM is available only on the cloud version of Retail.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JTH on saatavissa vain Retail-ratkaisun pilvipalveluversioon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>It isn't supported in on-premises deployments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sitä ei tueta paikallisissa käyttöönotoissa.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Jaettu tilausten hallinta (JTH)
+description: Tässä aiheessa kuvataan Microsoft Dynamics 365 for Retail -ohjelman jaetun tilausten hallinnan (JTH) toimintoja.
+author: josaw1
+manager: AnnBe
+ms.date: 11/15/2018
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2018-11-15
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565800"
+---
+# <a name="distributed-order-management-dom"></a><span data-ttu-id="20385-103">Jaettu tilausten hallinta (JTH)</span><span class="sxs-lookup"><span data-stu-id="20385-103">Distributed order management (DOM)</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="20385-104">Vähittäismyynnin uudella aikakaudella myyjät pyrkivät tarjoamaan mukautettuja asiakkaan aktivointitoimia, monikanavaisia käyttökokemuksia ja sujuvaa vuorovaikutusta.</span><span class="sxs-lookup"><span data-stu-id="20385-104">In the new paradigm for retail operations, retailers strive to provide personalized customer engagement, omni-channel experiences, and frictionless interactions.</span></span> <span data-ttu-id="20385-105">Koska valinnanmahdollisuudet ovat lähes rajattomat, kuluttajat ostavat sieltä, mistä he saavat miellyttävimmän ostokokemuksen.</span><span class="sxs-lookup"><span data-stu-id="20385-105">Because so many choices are available, consumers will shop wherever they can have the most favorable experience.</span></span> <span data-ttu-id="20385-106">Pelkät hinnat ja tuotteet eivät välttämättä enää ole tärkeimpiä perusteita kuluttajille.</span><span class="sxs-lookup"><span data-stu-id="20385-106">In many cases, prices and products are no longer the top deciding factors for consumers.</span></span>
+
+<span data-ttu-id="20385-107">Asiakaskokemuksen parantamiseksi vähittäismyyjillä on oltava näkyvyys varastoon reaaliaikaisesti ja kaikissa eri kanavissa.</span><span class="sxs-lookup"><span data-stu-id="20385-107">To help improve the customer experience, retailers must have visibility into their inventory in real time, across all their channels.</span></span> <span data-ttu-id="20385-108">Yksi kokonaisvaltainen näkymä varastoon voi auttaa optimoimaan tilausten toteuttamisen, kohdistamisen ja jakelun.</span><span class="sxs-lookup"><span data-stu-id="20385-108">A single, holistic view of all the inventory can help optimize order fulfillment, allocation, and distribution.</span></span> <span data-ttu-id="20385-109">Siksi jaetun tilausten hallinnan (JTH) järjestelmän käyttöönotto on muuttumassa entistä tärkeämmäksi vähittäismyyjille.</span><span class="sxs-lookup"><span data-stu-id="20385-109">Therefore, adoption and implementation of a distributed order management (DOM) system are becoming more imperative for retailers.</span></span>
+
+<span data-ttu-id="20385-110">JTH optimoi tilausten toteutuksen järjestelmien ja prosessien monimutkaisessa verkostossa.</span><span class="sxs-lookup"><span data-stu-id="20385-110">DOM optimizes order fulfillment across a complex network of systems and processes.</span></span> <span data-ttu-id="20385-111">Se perustuu yhteen yhtenäiseen varastonäkymään kaikkialla organisaatiossa, jotta tilauksia voitaisiin hallita ja toteuttaa entistä tarkemmin ja kustannustehokkaammin.</span><span class="sxs-lookup"><span data-stu-id="20385-111">It relies on a single, global view of inventory across the whole organization to intelligently manage orders, so that they are fulfilled accurately and in a more cost-effective manner.</span></span> <span data-ttu-id="20385-112">Parantamalla vähittäismyyjän toimitusketjun tehokkuutta JTH auttaa vähittäismyyjää vastaamaan asiakkaiden odotuksiin.</span><span class="sxs-lookup"><span data-stu-id="20385-112">By improving the efficiency of a retailer's supply chain, DOM helps the retailer better meet customer expectations.</span></span>
+
+<span data-ttu-id="20385-113">Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.</span><span class="sxs-lookup"><span data-stu-id="20385-113">The following illustration shows the lifecycle of a sales order in a DOM system.</span></span>
+
+<span data-ttu-id="20385-114">![Myyntitilauksen elinkaari JTH-kontekstissa](./media/flow.png "Myyntitilauksen elinkaari JTH-kontekstissa")</span><span class="sxs-lookup"><span data-stu-id="20385-114">![Sales order lifecycle in the context of DOM](./media/flow.png "Sales order lifecycle in the context of DOM")</span></span>
+
+## <a name="set-up-dom"></a><span data-ttu-id="20385-115">JTH:n määrittäminen</span><span class="sxs-lookup"><span data-stu-id="20385-115">Set up DOM</span></span>
+
+1. <span data-ttu-id="20385-116">Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**.</span><span class="sxs-lookup"><span data-stu-id="20385-116">Go to **System administration \> Setup \> License configuration**.</span></span>
+2. <span data-ttu-id="20385-117">Laajenna **Konfigurointiavaimet**-välilehdessä **Vähittäismyynti**-solmu ja valitse **Jaettu tilausten hallinta** -valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="20385-117">On the **Configuration keys** tab, expand the **Retail** node, and then select the **Distributed Order Management** check box.</span></span>
+3. <span data-ttu-id="20385-118">Siirry kohtaan **Vähittäismyynti \> Jaettu tilausten hallinta \> Asetukset \> JTH-parametrit**.</span><span class="sxs-lookup"><span data-stu-id="20385-118">Go to **Retail \> Distributed order management \> Setup \> DOM parameters**.</span></span>
+4. <span data-ttu-id="20385-119">Määritä **Yleiset**-välilehdessä seuraavat arvot:</span><span class="sxs-lookup"><span data-stu-id="20385-119">On the **General** tab, set the following values:</span></span>
+
+    - <span data-ttu-id="20385-120">**Ota jaettu tilausten hallinta käyttöön** – Määritä tähän arvoksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="20385-120">**Enable distributed order management** – Set this option to **Yes**.</span></span>
+    - <span data-ttu-id="20385-121">**Vahvista Bing Maps -palvelun käyttö JTH:ssa** – Määritä tähän arvoksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="20385-121">**Confirm Bing Maps usage for DOM** – Set this option to **Yes**.</span></span>
+
+        > [!NOTE]
+        > <span data-ttu-id="20385-122">Voit määrittää tähän arvoksi **Kyllä** vain, jos **Ota Bing Maps käyttöön** -asetuksen arvo **Bing Maps** -välilehdessä **Vähittäismyynnin yhteiset parametrit** -sivulla (**Vähittäismyynti \> Pääkonttorin asetukset \> Parametrit \> Vähittäismyynnin yhteiset parametrit**) on myös **Kyllä** ja jos **Bing Maps -avain** -kenttään annetaan kelvollinen avain.</span><span class="sxs-lookup"><span data-stu-id="20385-122">You can set this option to **Yes** only if the **Enable Bing Maps** option on the **Bing Maps** tab of the **Retail shared parameters** page (**Retail \> Headquarters setup \> Parameters \> Retail shared parameters**) is also set to **Yes**, and if a valid key is entered in the **Bing Maps key** field.</span></span>
+
+    - <span data-ttu-id="20385-123">**Pidätyskausi päivinä** – Määritä, kauanko JTH-ajojen luomia täyttämistilauksia säilytetään järjestelmässä.</span><span class="sxs-lookup"><span data-stu-id="20385-123">**Retention period in days** – Specify how long the fulfillment plans that DOM runs generate are kept in the system.</span></span> <span data-ttu-id="20385-124">**JTH-täyttämistietojen poistotyön asetukset** -eräyö poistaa kaikki täyttämissuunnitelmat, jotka ovat tässä määritettyä päivien määrää vanhempia.</span><span class="sxs-lookup"><span data-stu-id="20385-124">The **DOM fulfillment data deletion job setup** batch job will delete any fulfillment plan that is older than the number of days that you specify here.</span></span>
+    - <span data-ttu-id="20385-125">**Hylkäämiskausi (päivinä)** – Määritä, kuinka paljon aikaa pitää kulua, ennen kuin hylätty tilausrivi voidaan määrittää samaan sijaintiin.</span><span class="sxs-lookup"><span data-stu-id="20385-125">**Rejection period (in days)** – Specify how much time must pass before a rejected order line can be assigned to the same location.</span></span>
+
+5. <span data-ttu-id="20385-126">Määritä **Selvitys**-välilehdessä seuraavat arvot:</span><span class="sxs-lookup"><span data-stu-id="20385-126">On the **Solver** tab, set the following values:</span></span>
+
+    - <span data-ttu-id="20385-127">**Automaattisten täyttämisyritysten enimmäismäärä** – Määritä, kuinka monta kertaa JTH-moduuli yrittää välittää tilausrivin valittuun sijaintiin.</span><span class="sxs-lookup"><span data-stu-id="20385-127">**Max auto-fulfillment attempts** – Specify how many times the DOM engine will try to broker an order line to a location.</span></span> <span data-ttu-id="20385-128">Jos JTH-moduuli ei voi välittää tilausriviä sijaintiin määritetyillä yrityskerroilla, se merkitsee tilausrivin poikkeukseksi.</span><span class="sxs-lookup"><span data-stu-id="20385-128">If the DOM engine can't broker an order line to a location in the specified number of attempts, it will flag the order line as an exception.</span></span> <span data-ttu-id="20385-129">Tämän jälkeen rivi ohitetaan tulevissa suorituksissa, kunnes tila nollataan manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="20385-129">It will then skip that line in future runs until the status is manually reset.</span></span>
+    - <span data-ttu-id="20385-130">**Paikallisen myymälän alueen säde** – Kirjoita arvo.</span><span class="sxs-lookup"><span data-stu-id="20385-130">**Local store region radius** – Enter a value.</span></span> <span data-ttu-id="20385-131">Tämän kentän avulla määritetään, miten sijainnit ryhmitellään ja määritetään tasaveroisiksi etäisyyden osalta.</span><span class="sxs-lookup"><span data-stu-id="20385-131">This field helps determine how locations are grouped and considered equal in terms of distance.</span></span> <span data-ttu-id="20385-132">Jos esimerkiksi annat arvon **100**, jokaista myymälää ja jakelukeskusta 100 mailin säteellä täyttämistilauksen osoitteesta pidetään tasaveroisena etäisyyden osalta.</span><span class="sxs-lookup"><span data-stu-id="20385-132">For example, if you enter **100**, every store or distribution center within a 100-mile radius of the fulfillment address is considered equal in terms of distance.</span></span>
+    - <span data-ttu-id="20385-133">**Selvityksen tyyppi** – Valitse arvo.</span><span class="sxs-lookup"><span data-stu-id="20385-133">**Solver type** – Select a value.</span></span> <span data-ttu-id="20385-134">Retailissa vapautetaan kaksi selvityksen tyyppiä: **Tuotannon selvitys** ja **Yksinkertaistettu selvitys**.</span><span class="sxs-lookup"><span data-stu-id="20385-134">Two solver types are released with Retail: **Production Solver** and **Simplified Solver**.</span></span> <span data-ttu-id="20385-135">Kaikille koneille, jotka suorittavat JTH:n (siis kaikki palvelimet, jotka kuuluvat DOMBatch-ryhmään), on valittava **Tuotannon selvitys**.</span><span class="sxs-lookup"><span data-stu-id="20385-135">For all machines that will run DOM (that is, all servers that are part of the DOMBatch group), **Production Solver** must be selected.</span></span> <span data-ttu-id="20385-136">Tuotannon selvitys edellyttää erityisen lisenssiavaimen, joka oletusarvoisesti lisensoidaan ja otetaan käyttöön tuotantoympäristöissä.</span><span class="sxs-lookup"><span data-stu-id="20385-136">The Production Solver requires the special license key that, by default, is licensed and deployed in production environments.</span></span> <span data-ttu-id="20385-137">Muille kuin tuotantoympäristöille tämä lisenssiavain on otettava käyttöön manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="20385-137">For non-production environments, this license key must be manually deployed.</span></span> <span data-ttu-id="20385-138">Voit ottaa lisenssiavaimen käyttöön manuaalisesti toimimalla seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="20385-138">To manually deploy the license key, follow these steps:</span></span>
+
+        1. <span data-ttu-id="20385-139">Avaa Microsoft Dynamics Lifecycle Servicesissa jaettu omaisuuskirjasto, valitse omaisuustyypiksi **Malli**, ja lataa **JTH-license**-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="20385-139">In Microsoft Dynamics Lifecycle Services, open the Shared asset library, select **Model** as the asset type, and download the **DOM license** file.</span></span>
+        2. <span data-ttu-id="20385-140">Käynnistä Microsoft IIS -palveluiden hallinta, napsauta hiiren kakkospainikkeella **AOSService-verkkosivusto**, ja valitse sitten **Selaa**.</span><span class="sxs-lookup"><span data-stu-id="20385-140">Start Microsoft Internet Information Services (IIS) Manager, right-click **AOSService website**, and then select **Explore**.</span></span> <span data-ttu-id="20385-141">Windowsin resurssienhallintaikkuna avautuu kansiossa **\<AOS-palvelun pääkansio\>\\webroot**.</span><span class="sxs-lookup"><span data-stu-id="20385-141">A Windows Explorer window is opened at **\<AOS service root\>\\webroot**.</span></span> <span data-ttu-id="20385-142">Merkitse muistiin polku \<AOS-palvelun pääkansio\>, sillä sitä käytetään seuraavassa vaiheessa.</span><span class="sxs-lookup"><span data-stu-id="20385-142">Make a note of the \<AOS Service root\> path, because you will use it in the next step.</span></span>
+        3. <span data-ttu-id="20385-143">Kopioi konfiguraatiotiedosto hakemistoon **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.</span><span class="sxs-lookup"><span data-stu-id="20385-143">Copy the configuration file in the **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** directory.</span></span>
+        4. <span data-ttu-id="20385-144">Siirry Retail Headquarters -asiakasohjelmaan ja avaa **DOM-parametrit**-sivu.</span><span class="sxs-lookup"><span data-stu-id="20385-144">Go to the Retail Headquarters client, and open the **DOM parameters** page.</span></span> <span data-ttu-id="20385-145">Valitse **Selvitys**-välilehden **Selvityksen tyyppi** -kentässä **Tuotannon selvitys** ja varmista, ettei virhesanomia ole näkyvissä.</span><span class="sxs-lookup"><span data-stu-id="20385-145">On the **Solver** tab, in the **Solver type** field, select **Production solver**, and confirm that no error messages appear.</span></span>
+
+        > [!NOTE]
+        > <span data-ttu-id="20385-146">Yksinkertaistettu selvitys on vaihtoehto silloin, kun vähittäismyyjä haluaa kokeilla JTH-ominaisuutta ottamatta käyttöön erityistä lisenssiä.</span><span class="sxs-lookup"><span data-stu-id="20385-146">The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license.</span></span> <span data-ttu-id="20385-147">Organisaatioiden ei tulisi käyttää yksinkertaistettua selvitystä tuotantoympäristöissä.</span><span class="sxs-lookup"><span data-stu-id="20385-147">Organizations should not use the Simplified Solver in production environments.</span></span>
+        >
+        > <span data-ttu-id="20385-148">Vaikka yksinkertaistettu selvitys sisältää samat toiminnot kuin tuotannon selvitys, siinä on rajoituksia suorituskyvyn suhteen (tilauksien ja tilausrivien määrä, joka voidaan käsitellä yhden suorituksen aikana) ja tulosten yhdistämisen suhteen (tilauserä ei ehkä tuota parhaita tuloksia joissakin tilanteissa).</span><span class="sxs-lookup"><span data-stu-id="20385-148">Although the Simplified Solver provides the same set of capabilities as the Production Solver, there are limitations as to performance (the number of orders and order lines that can be handled in a run) and convergence of results (a batch of orders might not yield the best result in some scenarios).</span></span>
+     
+6. <span data-ttu-id="20385-149">Siirry takaisin kohtaan **Vähittäismyynti \> Jaettu tilausten hallinta \> Asetukset \> JTH-parametrit**.</span><span class="sxs-lookup"><span data-stu-id="20385-149">Go back to **Retail \> Distributed order management \> Setup \> DOM parameters**.</span></span>
+7. <span data-ttu-id="20385-150">Määritä **Numerosarjat**-välilehdessä tarvittavat numerosarjat eri JTH-yksiköille.</span><span class="sxs-lookup"><span data-stu-id="20385-150">On the **Number sequences** tab, assign the required number sequences to the various DOM entities.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="20385-151">Ennen kuin numerosarjat voidaan määrittää näille yksiköille, ne on määritettävä **Numerosarjat**-sivulla (**Organisaation hallinto \> Numerosarjat \> Numerosarjat**).</span><span class="sxs-lookup"><span data-stu-id="20385-151">Before the number sequences can be assigned to the entities, they must be defined on the **Number sequences** page (**Organization administration \> Number sequences \> Number sequences**).</span></span>
+
+8. <span data-ttu-id="20385-152">JTH-ominaisuus tukee erilaisia JTH-sääntöjen määrityksiä, ja organisaatiot voivat määrittää useita sääntöjä liiketoiminnan tarpeiden mukaan.</span><span class="sxs-lookup"><span data-stu-id="20385-152">The DOM feature supports the definition of various types of DOM rules, and organizations can configure multiple rules, depending on their business needs.</span></span> <span data-ttu-id="20385-153">JTH-säännöt voidaan määrittää sijaintiryhmälle tai yksittäiselle sijainnille sekä tietylle tuoteluokalle, tuotteelle tai variantille.</span><span class="sxs-lookup"><span data-stu-id="20385-153">DOM rules can be defined for a group of locations or individual locations, and for a specific product category, product, or variant.</span></span> <span data-ttu-id="20385-154">Voit luoda JTH-säännöissä käytettävät sijaintien ryhmittelyt seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="20385-154">To create the grouping of locations that must be used for the DOM rules, follow these steps:</span></span>
+
+    1. <span data-ttu-id="20385-155">Siirry kohtaan **Vähittäismyynti \> Kanavan asetukset \> Täytäntöönpanoryhmät**.</span><span class="sxs-lookup"><span data-stu-id="20385-155">Go to **Retail \> Channel setup \> Fulfillment groups**.</span></span>
+    2. <span data-ttu-id="20385-156">Valitse **Uusi** ja kirjoita uuden ryhmän nimi ja kuvaus.</span><span class="sxs-lookup"><span data-stu-id="20385-156">Select **New**, and enter a name and description for the new group.</span></span>
+    3. <span data-ttu-id="20385-157">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="20385-157">Select **Save**.</span></span>
+    4. <span data-ttu-id="20385-158">Voit lisätä ryhmään yksittäisen sijainnin valitsemalla **Lisää rivi**.</span><span class="sxs-lookup"><span data-stu-id="20385-158">Select **Add line** to add a single location to the group.</span></span> <span data-ttu-id="20385-159">Vaihtoehtoisesti voit lisätä useita sijainteja valitsemalla **Lisää rivejä**.</span><span class="sxs-lookup"><span data-stu-id="20385-159">Alternatively, select **Add lines** to add multiple locations.</span></span>
+
+9. <span data-ttu-id="20385-160">Voit määrittää säännöt kohdassa **Vähittäismyynti \> Jaettu tilausten hallinta \> Asetukset \> Sääntöjen hallinta**.</span><span class="sxs-lookup"><span data-stu-id="20385-160">To define rules, go to **Retail \> Distributed order management \> Setup \> Manage rules**.</span></span> <span data-ttu-id="20385-161">Tällä hetkellä tuetaan seuraavia JTH-sääntöjä:</span><span class="sxs-lookup"><span data-stu-id="20385-161">The following DOM rules are currently supported:</span></span>
+
+    - <span data-ttu-id="20385-162">**Vähimmäisvarastosääntö** – Tämäntyyppisen säännön avulla organisaatiot voivat merkitä tuotteen tietyn määrän erityiseksi muihin tarkoituksiin kuin tilauksen täytäntöönpanoon.</span><span class="sxs-lookup"><span data-stu-id="20385-162">**Minimum inventory rule** – This rule type lets organizations "ring fence" a specific quantity of a product for purposes other than order fulfillment.</span></span> <span data-ttu-id="20385-163">Esimerkiksi organisaatiot eivät ehkä halua JTH-ajon kohdistavan myymälässä saatavilla olevan varaston koko määrää tilausten täytäntöönpanoon.</span><span class="sxs-lookup"><span data-stu-id="20385-163">For example, organizations might not want DOM to consider all the inventory that is available in a store for order fulfillment.</span></span> <span data-ttu-id="20385-164">Sen sijaan voidaan haluta varata osa saldosta fyysiseen kauppaan tuleville asiakkaille.</span><span class="sxs-lookup"><span data-stu-id="20385-164">Instead, they might want to reserve some inventory for walk-in customers.</span></span> <span data-ttu-id="20385-165">Kun käytetään tämäntyyppistä sääntöä, voidaan määrittää vähimmäisvarasto, jota täytyy ylläpitää tietylle tuoteluokalle, yksittäiselle tuotteelle tai tuotevariantille yhtä sijaintia tai sijaintiryhmää kohden.</span><span class="sxs-lookup"><span data-stu-id="20385-165">When this rule type is used, you can define the minimum inventory to keep for a category of products, an individual product, or a product variant per location or group of locations.</span></span>
+    - <span data-ttu-id="20385-166">**Täyttämissijainnin prioriteettisääntö** – Tämäntyyppisen säännön avulla organisaatiot voivat määrittää sijaintihierarkian JTH-moduulin priorisointia varten, kun se yrittää tunnistaa tiettyjen tuotteiden täyttämissijainnit.</span><span class="sxs-lookup"><span data-stu-id="20385-166">**Fulfillment location priority rule** – This rule type lets organizations define a hierarchy of locations to establish the priority that the DOM engine considers when it tries to identify fulfillment locations for specific products.</span></span> <span data-ttu-id="20385-167">Prioriteettien arvot voivat olla välillä on 1–10, jossa 1 on suurin prioriteetti ja 10 on pienin prioriteetti.</span><span class="sxs-lookup"><span data-stu-id="20385-167">The valid range of priorities is 1 through 10, where 1 is the highest priority and 10 is the lowest priority.</span></span> <span data-ttu-id="20385-168">Suuren prioriteetin sijainteja käytetään ennen sijainteja, joilla on alhaisempi prioriteetti.</span><span class="sxs-lookup"><span data-stu-id="20385-168">Locations that have higher priority are considered before locations that have lower priority.</span></span> <span data-ttu-id="20385-169">Jos sääntö määritetään kovana rajoitussääntönä, tilaukset välitetään vain sijainteihin, joille on määritetty prioriteetti.</span><span class="sxs-lookup"><span data-stu-id="20385-169">If the rule is defined as a hard constraint rule, orders are brokered only to locations that priorities are defined for.</span></span>
+    - <span data-ttu-id="20385-170">**Osittaistilausten sääntö** – Tämän säännön avulla organisaatiot voivat määrittää, voidaanko tilaus tai tilausrivit toteuttaa vain osittain.</span><span class="sxs-lookup"><span data-stu-id="20385-170">**Partial orders rule** – This rule lets organizations define whether an order or order lines can be partially fulfilled.</span></span> <span data-ttu-id="20385-171">Seuraavat parametrit ovat käytettävissä:</span><span class="sxs-lookup"><span data-stu-id="20385-171">The following parameters are available:</span></span>
+
+        - <span data-ttu-id="20385-172">**Täytetäänkö osittaistilaukset?**</span><span class="sxs-lookup"><span data-stu-id="20385-172">**Fulfill partial orders?**</span></span> <span data-ttu-id="20385-173">– Jos tämä asetus on **Kyllä**, JTH voi täyttää vain osan tilausrivin määrästä.</span><span class="sxs-lookup"><span data-stu-id="20385-173">– If this option is set to **Yes**, DOM can fulfill only part of the quantity on an order line.</span></span> <span data-ttu-id="20385-174">Osittainen täyttäminen saavutetaan jakamalla tilausrivi.</span><span class="sxs-lookup"><span data-stu-id="20385-174">This partial fulfillment is achieved by splitting the order line.</span></span>
+        - <span data-ttu-id="20385-175">**Täytetäänkö osittaiset rivit?**</span><span class="sxs-lookup"><span data-stu-id="20385-175">**Fulfill partial lines?**</span></span> <span data-ttu-id="20385-176">– Jos tämä asetus on **Kyllä**, JTH voi täyttää vain osan tilausrivien määristä.</span><span class="sxs-lookup"><span data-stu-id="20385-176">– If this option is set to **Yes**, DOM can fulfill a partial quantity of order lines.</span></span> <span data-ttu-id="20385-177">Osittainen täyttäminen saavutetaan jakamalla tilausrivi.</span><span class="sxs-lookup"><span data-stu-id="20385-177">This partial fulfillment is achieved by splitting the order line.</span></span>
+        - <span data-ttu-id="20385-178">**Täytä tilaus vain yhdestä sijainnista** – Jos tämä asetus on **Kyllä**, JTH varmistaa, että tilauksen kaikki rivit täytetään yhdestä sijainnista.</span><span class="sxs-lookup"><span data-stu-id="20385-178">**Fulfill order from one location only** – If this option is set to **Yes**, DOM makes sure that all lines on an order are fulfilled from a single location.</span></span>
+
+        <span data-ttu-id="20385-179">Seuraavassa taulukossa kuvataan toimintaa, kun määritetään näiden parametrien yhdistelmiä.</span><span class="sxs-lookup"><span data-stu-id="20385-179">The following table explains the behavior when a combination of these parameters is defined.</span></span>
+
+        |      | <span data-ttu-id="20385-180">Täytä osittaistilaukset</span><span class="sxs-lookup"><span data-stu-id="20385-180">Fulfill partial orders</span></span> | <span data-ttu-id="20385-181">Täytä osittaiset rivit</span><span class="sxs-lookup"><span data-stu-id="20385-181">Fulfill partial lines</span></span> | <span data-ttu-id="20385-182">Täytä tilaus vain yhdestä sijainnista</span><span class="sxs-lookup"><span data-stu-id="20385-182">Fulfill order from one location only</span></span> | <span data-ttu-id="20385-183">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="20385-183">Description</span></span> |
+        |------|------------------------|-----------------------|--------------------------------------|-------------|
+        | <span data-ttu-id="20385-184">1</span><span class="sxs-lookup"><span data-stu-id="20385-184">1</span></span>    | <span data-ttu-id="20385-185">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-185">Yes</span></span>                    | <span data-ttu-id="20385-186">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-186">Yes</span></span>                   | <span data-ttu-id="20385-187">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-187">Yes</span></span>                                  | <span data-ttu-id="20385-188">Tilauksesta voidaan täyttää vain muutama rivi ja yksittäiset rivit voidaan täyttää osittain, mutta kaikki rivit tulee täyttää samasta sijainnista JTH-suoritusesiintymän yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="20385-188">A few lines of the order can be fulfilled, and individual lines can be partially fulfilled, but all the lines must be from the same location in an instance of the DOM run.</span></span> <span data-ttu-id="20385-189">(Tätä yhdistelmää ei tueta tällä hetkellä.)</span><span class="sxs-lookup"><span data-stu-id="20385-189">(This combination isn't currently supported.)</span></span> |
+        | <span data-ttu-id="20385-190">2</span><span class="sxs-lookup"><span data-stu-id="20385-190">2</span></span>    | <span data-ttu-id="20385-191">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-191">Yes</span></span>                    | <span data-ttu-id="20385-192">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-192">No</span></span>                    | <span data-ttu-id="20385-193">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-193">Yes</span></span>                                  | <span data-ttu-id="20385-194">Tilauksesta voidaan täyttää vain muutama rivi, mutta yksittäisiä rivejä ei voida täyttää vain osittain, ja kaikki täytetyt rivit tulee täyttää samasta sijainnista JTH-suoritusesiintymän yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="20385-194">A few lines of the order can be fulfilled, but individual lines can't be partially fulfilled, and all the fulfilled lines must be from the same location in an instance of the DOM run.</span></span> <span data-ttu-id="20385-195">(Tätä yhdistelmää ei tueta tällä hetkellä.)</span><span class="sxs-lookup"><span data-stu-id="20385-195">(This combination isn't currently supported.)</span></span> |
+        | <span data-ttu-id="20385-196">3</span><span class="sxs-lookup"><span data-stu-id="20385-196">3</span></span>    | <span data-ttu-id="20385-197">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-197">Yes</span></span>                    | <span data-ttu-id="20385-198">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-198">Yes</span></span>                   | <span data-ttu-id="20385-199">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-199">No</span></span>                                   | <span data-ttu-id="20385-200">Tilauksesta voidaan täyttää vain muutama rivi, yksittäiset rivit voidaan täyttää vain osittain, ja kukin rivi voidaan täyttää useammasta kuin yhdestä sijainnista JTH-suoritusesiintymän yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="20385-200">A few lines of the order can be fulfilled, individual lines can be partially fulfilled, and each line can be fulfilled from more than one location in an instance of the DOM run.</span></span> |
+        | <span data-ttu-id="20385-201">4\*</span><span class="sxs-lookup"><span data-stu-id="20385-201">4\*</span></span>  | <span data-ttu-id="20385-202">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-202">No</span></span>                     | <span data-ttu-id="20385-203">Ei käytettävissä</span><span class="sxs-lookup"><span data-stu-id="20385-203">Not applicable</span></span>        | <span data-ttu-id="20385-204">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-204">No</span></span>                                   | <span data-ttu-id="20385-205">Kaikki tilausrivit on täytettävä, yksittäisiä rivejä ei voida täyttää vain osittain ja kukin tilausrivi voidaan täyttää eri sijainnista.</span><span class="sxs-lookup"><span data-stu-id="20385-205">All order lines must be fulfilled, individual lines can't be partially fulfilled, and each order line can be fulfilled from a different location.</span></span> |
+        | <span data-ttu-id="20385-206">5\*</span><span class="sxs-lookup"><span data-stu-id="20385-206">5\*</span></span>  | <span data-ttu-id="20385-207">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-207">No</span></span>                     | <span data-ttu-id="20385-208">Ei käytettävissä</span><span class="sxs-lookup"><span data-stu-id="20385-208">Not applicable</span></span>        | <span data-ttu-id="20385-209">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-209">Yes</span></span>                                  | <span data-ttu-id="20385-210">Kaikki tilausrivit on täytettävä, yksittäisiä rivejä ei voida täyttää vain osittain ja kaikki tilausrivit voidaan toimittaa vain yhdestä sijainnista.</span><span class="sxs-lookup"><span data-stu-id="20385-210">All order lines must be fulfilled, individual lines can't be partially fulfilled, and all the order lines can be delivered from one location only.</span></span> |
+        | <span data-ttu-id="20385-211">6\*</span><span class="sxs-lookup"><span data-stu-id="20385-211">6\*</span></span>  | <span data-ttu-id="20385-212">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-212">No</span></span>                     | <span data-ttu-id="20385-213">Ei käytettävissä</span><span class="sxs-lookup"><span data-stu-id="20385-213">Not applicable</span></span>        | <span data-ttu-id="20385-214">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-214">No</span></span>                                   | <span data-ttu-id="20385-215">Tämä yhdistelmä toimii samalla tavalla kuin yhdistelmä 4, koska **Täytä osittaiset rivit** -asetukseksi ei voi määrittää **Kyllä**, kun **Täytä osittaistilaukset** -asetuksella on arvo **Ei**.</span><span class="sxs-lookup"><span data-stu-id="20385-215">This combination works like combination 4, because **Fulfill partial lines** can't be set to **Yes** when **Fulfill partial orders** is set to **No**.</span></span> |
+        | <span data-ttu-id="20385-216">7\*</span><span class="sxs-lookup"><span data-stu-id="20385-216">7\*</span></span>  | <span data-ttu-id="20385-217">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-217">No</span></span>                     | <span data-ttu-id="20385-218">Ei käytettävissä</span><span class="sxs-lookup"><span data-stu-id="20385-218">Not applicable</span></span>        | <span data-ttu-id="20385-219">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-219">Yes</span></span>                                  | <span data-ttu-id="20385-220">Tämä yhdistelmä toimii samalla tavalla kuin yhdistelmä 5, koska **Täytä osittaiset rivit** -asetukseksi ei voi määrittää **Kyllä**, kun **Täytä osittaistilaukset** -asetuksella on arvo **Ei**.</span><span class="sxs-lookup"><span data-stu-id="20385-220">This combination works like combination 5, because **Fulfill partial lines** can't be **Yes** when **Fulfill partial orders** is **No**.</span></span> |
+        | <span data-ttu-id="20385-221">8</span><span class="sxs-lookup"><span data-stu-id="20385-221">8</span></span>    | <span data-ttu-id="20385-222">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-222">Yes</span></span>                    | <span data-ttu-id="20385-223">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-223">No</span></span>                    | <span data-ttu-id="20385-224">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-224">No</span></span>                                   | <span data-ttu-id="20385-225">Tilauksesta voidaan täyttää vain muutama rivi, mutta yksittäisiä rivejä ei voida toteuttaa vain osittain, ja eri tilausrivit voidaan täyttää useammasta kuin yhdestä sijainnista JTH-suoritusesiintymän yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="20385-225">A few lines of the order can be fulfilled, but individual lines can't be partially fulfilled, and the various order lines can be fulfilled from more than one location in an instance of the DOM run.</span></span> |
+        | <span data-ttu-id="20385-226">9\*</span><span class="sxs-lookup"><span data-stu-id="20385-226">9\*</span></span>  | <span data-ttu-id="20385-227">Ei</span><span class="sxs-lookup"><span data-stu-id="20385-227">No</span></span>                     | <span data-ttu-id="20385-228">Ei käytettävissä</span><span class="sxs-lookup"><span data-stu-id="20385-228">Not applicable</span></span>        | <span data-ttu-id="20385-229">Kyllä</span><span class="sxs-lookup"><span data-stu-id="20385-229">Yes</span></span>                                  | <span data-ttu-id="20385-230">Kaikki tilausrivit on täytettävä ja ne on täytettävä vain yhdestä sijainnista.</span><span class="sxs-lookup"><span data-stu-id="20385-230">All order lines must be fulfilled, and all the order lines must be fulfilled from one location only.</span></span> |
+
+        <span data-ttu-id="20385-231">\*Jos **Täytä osittaistilaukset** -asetukseksi määritetään **Ei**, **Täytä osittaiset rivit** -asetuksen arvona pidetään aina arvoa **Ei** riippumatta siitä, mikä arvo asetukseen on määritetty.</span><span class="sxs-lookup"><span data-stu-id="20385-231">\* If **Fulfill partial orders** is set to **No**, **Fulfill partial lines** is always considered to be set to **No**, regardless of how it's actually set.</span></span>
+
+    - <span data-ttu-id="20385-232">**Offline-täyttämisen sijaintisääntö** – Tämän säännön avulla organisaatiot voivat määrittää sijainnin tai sijaintiryhmän offline-sijainniksi tai JTH:n ulkopuolelle, jotta tilauksia ei voi määrittää täytettäväksi kyseisestä sijainnista.</span><span class="sxs-lookup"><span data-stu-id="20385-232">**Offline fulfillment location rule** – This rule lets organizations specify a location or group of locations as offline or unavailable to DOM, so that orders can't be assigned there for fulfillment.</span></span>
+    - <span data-ttu-id="20385-233">**Hylkäysten enimmäismäärän sääntö** – Tämän säännön avulla organisaatiot voivat määrittää hylkäyksille raja-arvon.</span><span class="sxs-lookup"><span data-stu-id="20385-233">**Maximum rejects rule** – This rule lets organizations define a threshold for rejections.</span></span> <span data-ttu-id="20385-234">Kun raja-arvo saavutetaan, JTH-käsittelijä merkitsee tilauksen vai tilausrivin poikkeukseksi ja jättää sen jatkokäsittelyn ulkopuolelle.</span><span class="sxs-lookup"><span data-stu-id="20385-234">When the threshold is reached, the DOM processor will mark an order or order line as an exception, and exclude it from further processing.</span></span>
+
+        <span data-ttu-id="20385-235">Sen jälkeen, kun tilausrivit on määritetty sijaintiin, sijainti voi hylätä määritetyn tilausrivin, koska se ei jostakin syystä pysty täyttämään tilausriviä.</span><span class="sxs-lookup"><span data-stu-id="20385-235">After order lines are assigned to a location, the location can reject an assigned order line, because it might not be able to fulfill that line for some reasons.</span></span> <span data-ttu-id="20385-236">Hylätyt rivit merkitään poikkeukseksi ja palautetaan takaisin pooliin seuraavaa suorituskertaa varten.</span><span class="sxs-lookup"><span data-stu-id="20385-236">Rejected lines are marked as an exception and put back into the pool for processing in the next run.</span></span> <span data-ttu-id="20385-237">Seuraavan ajon aikana JTH yrittää määrittää hylätyn rivin toiseen sijaintiin.</span><span class="sxs-lookup"><span data-stu-id="20385-237">During the next run, DOM will try to assign the rejected line to a different location.</span></span> <span data-ttu-id="20385-238">Myös uusi sijainti voi hylätä määritetyn tilausrivin.</span><span class="sxs-lookup"><span data-stu-id="20385-238">The new location can also reject the assigned order line.</span></span> <span data-ttu-id="20385-239">Tämä määrittämisen ja hylkäämisen sykli voi tapahtua useita kertoja.</span><span class="sxs-lookup"><span data-stu-id="20385-239">This cycle of assignment and rejection can occur multiple times.</span></span> <span data-ttu-id="20385-240">Kun hylkäysten määrä ylittää määritetyn raja-arvon, JTH merkitsee tilausrivin pysyväksi poikkeukseksi eikä enää ota kyseistä tilausriviä määritettäväksi.</span><span class="sxs-lookup"><span data-stu-id="20385-240">When the rejection count hits the threshold that is defined, DOM will mark the order line as a permanent exception and won't pick the line for assignment again.</span></span> <span data-ttu-id="20385-241">JTH ottaa tilausrivin uudelleen määritettäväksi vain, jos käyttäjä nollaa tilausrivin tilan manuaalisesti.</span><span class="sxs-lookup"><span data-stu-id="20385-241">DOM will consider the order line again for reassignment only if a user manually resets the status of the order line.</span></span>
+
+    - <span data-ttu-id="20385-242">**Enimmäisetäisyyssääntö** – Tämä säännön avulla organisaatiot voivat määrittää enimmäisetäisyyden tilauksen täyttävälle sijainnille tai sijaintiryhmälle.</span><span class="sxs-lookup"><span data-stu-id="20385-242">**Maximum distance rule** – This rule lets organizations define the maximum distance that a location or group of locations can be to fulfill the order.</span></span> <span data-ttu-id="20385-243">Jos sijainnille on määritetty päällekkäisiä enimmäisetäisyyssääntöjä, JTH käyttää pienintä sijainnille määritettyä enimmäisetäisyyttä.</span><span class="sxs-lookup"><span data-stu-id="20385-243">If overlapping maximum distance rules are defined for a location, DOM will apply the lowest maximum distance that is defined for that location.</span></span>
+    - <span data-ttu-id="20385-244">**Tilausten enimmäismäärän sääntö** – Tämän säännön avulla organisaatiot voivat määrittää tilausten enimmäismäärän, jonka sijainti tai sijaintiryhmä voi käsitellä kalenteripäivän aikana.</span><span class="sxs-lookup"><span data-stu-id="20385-244">**Maximum orders rule** – This rule lets organizations define the maximum number of orders that a location or group of locations can process during a calendar day.</span></span> <span data-ttu-id="20385-245">Jos sijainnille määritetään tilausten enimmäismäärä yhden päivän aikana, JTH ei määritä uusia tilauksia kyseiseen sijaintiin kyseisen kalenteripäivän aikana.</span><span class="sxs-lookup"><span data-stu-id="20385-245">If the maximum number of orders is assigned to a location in a single day, DOM won't assign any more orders to that location for the rest of that calendar day.</span></span>
+
+    <span data-ttu-id="20385-246">Seuraavassa on lueteltu yleisiä määritteitä, joita voidaan määrittää edellä esitellyille sääntötyypeille:</span><span class="sxs-lookup"><span data-stu-id="20385-246">Here are some of the common attributes that can be defined for all the preceding rule types:</span></span>
+
+    - <span data-ttu-id="20385-247">**Aloituspäivä** ja **Päättymispäivä** – Jokaiselle säännölle voidaan määrittää päivämääräväli voimassaoloajaksi näiden kenttien avulla.</span><span class="sxs-lookup"><span data-stu-id="20385-247">**Start date** and **End date** – Every rule can be made date-effective by using the these fields.</span></span>
+    - <span data-ttu-id="20385-248">**Ei käytössä** – Vain ne säännöt, joiden arvo tässä kentässä on **Ei**, otetaan huomioon JTH-suorituksessa.</span><span class="sxs-lookup"><span data-stu-id="20385-248">**Disabled** – Only rules that have a value of **No** for this field are considered in a DOM run.</span></span>
+    - <span data-ttu-id="20385-249">**Tiukka rajoitus** – Sääntö voidaan määrittää tiukaksi rajoitukseksi tai ei-tiukaksi rajoitukseksi.</span><span class="sxs-lookup"><span data-stu-id="20385-249">**Hard constraint** – A rule can be defined as either a hard constraint or not a hard constraint.</span></span> <span data-ttu-id="20385-250">Kukin JTH-suoritus käy läpi kaksi toistoa.</span><span class="sxs-lookup"><span data-stu-id="20385-250">Every DOM run goes through two iterations.</span></span> <span data-ttu-id="20385-251">Ensimmäisessä toistossa jokaista sääntöä pidetään tiukkana rajoituksena riippumatta tämän kentän arvosta.</span><span class="sxs-lookup"><span data-stu-id="20385-251">In the first iteration, every rule is treated as a hard constraint rule, regardless of the setting of this field.</span></span> <span data-ttu-id="20385-252">Toisin sanoen kaikki säännöt ovat käytössä.</span><span class="sxs-lookup"><span data-stu-id="20385-252">In other words, every rule is applied.</span></span> <span data-ttu-id="20385-253">Ainoa poikkeus on **Sijainnin prioriteetti** -sääntö.</span><span class="sxs-lookup"><span data-stu-id="20385-253">The only exception is the **Location priority** rule.</span></span> <span data-ttu-id="20385-254">Toisessa toistossa säännöt, joita ei ole määritetty tiukoiksi rajoituksiksi, poistetaan, ja tilauksille tai tilausriveille, joille ei määritetty sijaintia kaikkia sääntöjä käytettäessä, määritetään sijainnit.</span><span class="sxs-lookup"><span data-stu-id="20385-254">In the second iteration, the rules that weren't defined as hard constraint rules are removed, and the order or order lines that weren't assigned to locations when all the rules were applied are assigned to locations.</span></span>
+
+10. <span data-ttu-id="20385-255">Täyttämisprofiileja käytetään sääntökokoelmien, yritysten, myyntitilausten alkuperien ja toimitustapojen ryhmittelyyn.</span><span class="sxs-lookup"><span data-stu-id="20385-255">Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery.</span></span> <span data-ttu-id="20385-256">Jokainen JTH-suoritus on tiettyä täyttämisprofiilia varten.</span><span class="sxs-lookup"><span data-stu-id="20385-256">Every DOM run is for a specific fulfillment profile.</span></span> <span data-ttu-id="20385-257">Näin organisaatiot voivat määrittää ja suorittaa sääntöjoukkoja yritysjoukossa sellaisille tilauksille, joilla on tietyt myyntitilauksen alkuperät ja toimitustavat.</span><span class="sxs-lookup"><span data-stu-id="20385-257">In this way, organizations can define and run a set of rules for a set of legal entities, on orders that have specific sales order origins and modes of delivery.</span></span> <span data-ttu-id="20385-258">Jos siis pitää suorittaa eri sääntöjoukkoja myyntitilausten alkuperän tai toimitustavan mukaan, täyttämisprofiilit voidaan määrittää vastaavasti.</span><span class="sxs-lookup"><span data-stu-id="20385-258">Therefore, if different set of rules must be run for different sets of sales order origins or modes of delivery, the fulfillment profiles can be defined accordingly.</span></span> <span data-ttu-id="20385-259">Voit määrittää täyttämisprofiileita noudattamalla seuraavia ohjeita:</span><span class="sxs-lookup"><span data-stu-id="20385-259">To set up fulfillment profiles, follow these steps:</span></span>  
+
+    1. <span data-ttu-id="20385-260">Siirry kohtaan **Vähittäismyynti \> Jaettu tilausten hallinta \> Asetukset \> Täyttämisprofiilit**.</span><span class="sxs-lookup"><span data-stu-id="20385-260">Go to **Retail \> Distributed order management \> Setup \> Fulfillment profiles**.</span></span>
+    2. <span data-ttu-id="20385-261">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="20385-261">Select **New**.</span></span>
+    3. <span data-ttu-id="20385-262">Kirjoita arvot **Profiili**- ja **Kuvaus**-kenttiin.</span><span class="sxs-lookup"><span data-stu-id="20385-262">Enter values in the **Profile** and **Description** fields.</span></span>
+    4. <span data-ttu-id="20385-263">Määritä **Automaattinen tuloksen käyttö** -asetus.</span><span class="sxs-lookup"><span data-stu-id="20385-263">Set the **Auto apply result** option.</span></span> <span data-ttu-id="20385-264">Jos määrität tämän asetuksen arvoksi **Kyllä**, profiilin JTH-ajon tulokset kohdistetaan automaattisesti myyntitilauksen riveille.</span><span class="sxs-lookup"><span data-stu-id="20385-264">If you set this option to **Yes**, the results of the DOM run for the profile will be automatically applied to the sales order lines.</span></span> <span data-ttu-id="20385-265">Jos määrität arvoksi **Ei**, tuloksia voi tarkastella vain täyttämissuunnitelmassa.</span><span class="sxs-lookup"><span data-stu-id="20385-265">If you set it to **No**, the results can only be viewed in the fulfillment plan.</span></span> <span data-ttu-id="20385-266">Niitä ei kohdisteta myyntitilausriveille.</span><span class="sxs-lookup"><span data-stu-id="20385-266">They won't be applied to the sales order lines.</span></span>
+    5. <span data-ttu-id="20385-267">Jos haluat, että JTH-profiili suoritetaan tilauksille, joilla on kaikki myyntitilausten alkuperät (myös tilauksille, joissa myyntitilauksen alkuperää ei ole määritetty), määritä **Käsittele tilaukset, joilla on tyhjä myynnin alkuperä** -asetuksen arvoksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="20385-267">If you want the DOM profile to be run for orders that have every sales order origin, even orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**.</span></span> <span data-ttu-id="20385-268">Voit suorittaa profiilin vain joillekin myyntitilauksen alkuperille määrittämällä ne **Myynnin alkuperät** -sivulla jäljempänä esitetyllä tavalla.</span><span class="sxs-lookup"><span data-stu-id="20385-268">To run the profile for only a few sales order origins, you can define them on the **Sales origins** page, as explained later.</span></span>
+    6. <span data-ttu-id="20385-269">Valitse **Yritykset**-pikavälilehdessä **Lisää** ja sitten haluttu yritys.</span><span class="sxs-lookup"><span data-stu-id="20385-269">On the **Legal entities** FastTab, select **Add**, and then select a legal entity.</span></span>
+    7. <span data-ttu-id="20385-270">Valitse **Säännöt**-pikavälilehdessä **Lisää** ja sitten profiiliin linkitettävä sääntö.</span><span class="sxs-lookup"><span data-stu-id="20385-270">On the **Rules** FastTab, select **Add**, and then select the rule to link to the profile.</span></span>
+    8. <span data-ttu-id="20385-271">Toista kahta edellistä vaihetta, kunnes kaikki tarvittavat säännöt on liitetty profiiliin.</span><span class="sxs-lookup"><span data-stu-id="20385-271">Repeat the previous two steps until all the required rules are associated with the profile.</span></span>
+    9. <span data-ttu-id="20385-272">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="20385-272">Select **Save**.</span></span>
+    10. <span data-ttu-id="20385-273">Valitse toimintoruudun **Asetukset**-välilehdessä **Toimitustavat**.</span><span class="sxs-lookup"><span data-stu-id="20385-273">On the Action Pane, on the **Setup** tab, select **Modes of delivery**.</span></span>
+    11. <span data-ttu-id="20385-274">Valitse **Toimitustavat**-sivulla **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="20385-274">On the **Modes of delivery** page, select **New**.</span></span>
+    12. <span data-ttu-id="20385-275">Valitse yritys kentässä **Yritys**.</span><span class="sxs-lookup"><span data-stu-id="20385-275">In the **Company** field, select the legal entity.</span></span> <span data-ttu-id="20385-276">Yritysten luettelossa on vain aikaisemmin lisätyt yritykset.</span><span class="sxs-lookup"><span data-stu-id="20385-276">The list of companies is limited to the legal entities that you added earlier.</span></span>
+    13. <span data-ttu-id="20385-277">Valitse **Toimitustapa**-kentässä tähän profiiliin liitettävä toimitustapa.</span><span class="sxs-lookup"><span data-stu-id="20385-277">In the **Mode of delivery** field, select the mode of delivery to associate with this profile.</span></span> <span data-ttu-id="20385-278">Toimitustapaa ei voi liittää useisiin aktiivisiin profiileihin.</span><span class="sxs-lookup"><span data-stu-id="20385-278">A mode of delivery can't be associated with multiple active profiles.</span></span>
+    14. <span data-ttu-id="20385-279">Toista kahta edellistä vaihetta, kunnes kaikki tarvittavat toimitustavat on liitetty profiiliin.</span><span class="sxs-lookup"><span data-stu-id="20385-279">Repeat the previous two steps until all the required modes of delivery are associated with the profile.</span></span>
+    15. <span data-ttu-id="20385-280">Sulje **Toimitustavat**-sivu.</span><span class="sxs-lookup"><span data-stu-id="20385-280">Close the **Modes of delivery** page.</span></span>
+    16. <span data-ttu-id="20385-281">Valitse toimintoruudun **Asetukset**-välilehdessä **Myyntitilauksen alkuperät**.</span><span class="sxs-lookup"><span data-stu-id="20385-281">On the Action Pane, on the **Setup** tab, select **Sales order origins**.</span></span>
+    17. <span data-ttu-id="20385-282">Valitse **Myynnin alkuperät** -sivulla **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="20385-282">On the **Sales origins** page, select **New**.</span></span>
+    18. <span data-ttu-id="20385-283">Valitse yritys kentässä **Yritys**.</span><span class="sxs-lookup"><span data-stu-id="20385-283">In the **Company** field, select the legal entity.</span></span> <span data-ttu-id="20385-284">Yritysten luettelossa on vain aikaisemmin lisätyt yritykset.</span><span class="sxs-lookup"><span data-stu-id="20385-284">The list of companies is limited to the legal entities that you added earlier.</span></span>
+    19. <span data-ttu-id="20385-285">Valitse **Myynnin alkuperä** -kentässä tähän profiiliin liitettävä myynnin alkuperä.</span><span class="sxs-lookup"><span data-stu-id="20385-285">In the **Sales origin** field, select the sales origin to associate with this profile.</span></span> <span data-ttu-id="20385-286">Myynnin alkuperää ei voi liittää useisiin aktiivisiin profiileihin.</span><span class="sxs-lookup"><span data-stu-id="20385-286">A sales origin can't be associated with multiple active profiles.</span></span>
+    20. <span data-ttu-id="20385-287">Toista kahta edellistä vaihetta, kunnes kaikki tarvittavat myynnin alkuperät on liitetty profiiliin.</span><span class="sxs-lookup"><span data-stu-id="20385-287">Repeat the previous two steps until all the required sales origins are associated with the profile.</span></span>
+    21. <span data-ttu-id="20385-288">Sulje **Myynnin alkuperät** -sivu.</span><span class="sxs-lookup"><span data-stu-id="20385-288">Close the **Sales origins** page.</span></span>
+    22. <span data-ttu-id="20385-289">Määritä **Ota profiili käyttöön** -asetukseksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="20385-289">Set the **Enable profile** option to **Yes**.</span></span> <span data-ttu-id="20385-290">Jos asetuksissa on virheitä, saat varoitussanoman.</span><span class="sxs-lookup"><span data-stu-id="20385-290">If there are any errors in the setup, you receive a warning message.</span></span>
+
+## <a name="dom-processing"></a><span data-ttu-id="20385-291">JTH-käsittely</span><span class="sxs-lookup"><span data-stu-id="20385-291">DOM processing</span></span>
+
+<span data-ttu-id="20385-292">JTH suoritetaan vain erätyönä.</span><span class="sxs-lookup"><span data-stu-id="20385-292">DOM will run only in a batch job.</span></span> <span data-ttu-id="20385-293">Voit määrittää JTH-ajojen erätyön seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="20385-293">To configure the batch job for DOM runs, follow these steps.</span></span>
+
+1. <span data-ttu-id="20385-294">Siirry kohtaan **Vähittäismyynti \> Jaettu tilausten hallinta \> Eräkäsittely \> JTH-käsittelijän työasetukset**.</span><span class="sxs-lookup"><span data-stu-id="20385-294">Go to **Retail \> Distributed order management \> Batch processing \> DOM processor job setup**.</span></span>
+1. <span data-ttu-id="20385-295">Valitse **Parametrit**-pikavälilehden **Täyttämisprofiili** -kentässä profiili, jota varten JTH suoritetaan.</span><span class="sxs-lookup"><span data-stu-id="20385-295">On the **Parameters** FastTab, in the **Fulfillment profile** field, select a profile that DOM must be run for.</span></span>
+1. <span data-ttu-id="20385-296">Valitse **Suorita taustalla** -pikavälilehden **Eräryhmä**-kentässä määritetty eräryhmä.</span><span class="sxs-lookup"><span data-stu-id="20385-296">On the **Run in the background** FastTab, in the **Batch group** field, select a configured batch group.</span></span>
+1. <span data-ttu-id="20385-297">Kirjoita **Tehtävän kuvaus** -kenttään erätyön nimi.</span><span class="sxs-lookup"><span data-stu-id="20385-297">In the **Task description** field, enter a name for the batch job.</span></span>
+1. <span data-ttu-id="20385-298">Määritä **Toistuminen**-kohdassa erätyön toistuminen.</span><span class="sxs-lookup"><span data-stu-id="20385-298">Select **Recurrence**, and define the recurrence of the batch job.</span></span>
+1. <span data-ttu-id="20385-299">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="20385-299">Select **OK**.</span></span>
+
+<span data-ttu-id="20385-300">Käsittelyn aikana JTH ottaa huomioon seuraavassa kuvatut tilaukset ja tilausrivit:</span><span class="sxs-lookup"><span data-stu-id="20385-300">At the time of processing, DOM will consider the order and order lines as described here:</span></span>
+
+- <span data-ttu-id="20385-301">Myyntitilauksen alkuperään, toimitustapaan ja yritykseen liittyvät JTH-profiilissa määritetyt ehdot täyttävät tilausrivit, jotka täyttävät myös jonkin seuraavista ehdoista:</span><span class="sxs-lookup"><span data-stu-id="20385-301">Order lines that meet the criteria for sales order origins, modes of delivery, and legal entity as defined in the DOM profile, and that also meet any of these criteria:</span></span>
+
+    - <span data-ttu-id="20385-302">Ne on luotu vähittäismyyntikanavista.</span><span class="sxs-lookup"><span data-stu-id="20385-302">They are created from retail channels.</span></span>
+    - <span data-ttu-id="20385-303">JTH ei ole koskaan välittänyt niitä</span><span class="sxs-lookup"><span data-stu-id="20385-303">They have never been brokered by DOM.</span></span>
+    - <span data-ttu-id="20385-304">JTH on välittänyt niitä aiemmin, mutta ne on merkitty poikkeuksiksi ja ovat yritysten määrän raja-arvon alapuolella.</span><span class="sxs-lookup"><span data-stu-id="20385-304">They have been brokered by DOM before, but they are marked as exceptions and are below the maximum threshold for attempts.</span></span>
+    - <span data-ttu-id="20385-305">Toimitustapa ei ole nouto tai sähköinen toimitus.</span><span class="sxs-lookup"><span data-stu-id="20385-305">The mode of delivery isn't pick-up or electronic delivery.</span></span>
+    - <span data-ttu-id="20385-306">Niitä ei ole merkitty toimitusta varten.</span><span class="sxs-lookup"><span data-stu-id="20385-306">They aren't marked for delivery.</span></span>
+    - <span data-ttu-id="20385-307">Niitä ei ole manuaalisesti poissuljettu.</span><span class="sxs-lookup"><span data-stu-id="20385-307">They aren't manually excluded.</span></span>
+
+- <span data-ttu-id="20385-308">Tilaukset,jotka eivät ole pidossa.</span><span class="sxs-lookup"><span data-stu-id="20385-308">Orders that aren't on hold</span></span>
+
+<span data-ttu-id="20385-309">Sen jälkeen, kun JTH on käyttänyt sääntöjä, varaston rajoituksia ja optimointia, JTH valitsee sijainnin, joka on lähinnä asiakkaan toimitusosoitetta.</span><span class="sxs-lookup"><span data-stu-id="20385-309">After it applies the rules, inventory constraints, and optimization, DOM picks the location that is closest to the customer's delivery address.</span></span>
+
+<span data-ttu-id="20385-310">![Myyntitilauksen ehdot](./media/ordercriteria.png "Myyntitilauksen ehdot")</span><span class="sxs-lookup"><span data-stu-id="20385-310">![Sales order criteria](./media/ordercriteria.png "Sales order criteria")</span></span>
+
+## <a name="results-of-dom-runs"></a><span data-ttu-id="20385-311">JTH-suoritusten tulokset</span><span class="sxs-lookup"><span data-stu-id="20385-311">Results of DOM runs</span></span>
+
+<span data-ttu-id="20385-312">Jos täyttämisprofiiliksi valitaan **Automaattinen käyttö**, ajon tulokset kohdistetaan automaattisesti myyntitilausriveille ja täyttämissuunnitelmaa voi tarkastella erikseen.</span><span class="sxs-lookup"><span data-stu-id="20385-312">If the fulfillment profile is set to **Auto apply**, the results of the run will be automatically applied to the sales order lines, and the fulfillment plan can be viewed separately.</span></span> <span data-ttu-id="20385-313">Jos täyttämisprofiiliksi ei kuitenkaan ole määritetty **Automaattinen käyttö**, ajon tulokset näkyvät vain täyttämissuunnitelman näkymässä.</span><span class="sxs-lookup"><span data-stu-id="20385-313">However, if the fulfillment profile isn't set to **Auto apply**, the results of the run can be seen only from the fulfillment plan view.</span></span> 
+
+<span data-ttu-id="20385-314">Näet kaikki luodut täyttämissuunnitelmat seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="20385-314">To view all the fulfillment plans that are generated, follow these steps.</span></span>
+
+1. <span data-ttu-id="20385-315">Siirry kohtaan **Vähittäiskauppa \> Jaettu tilausten hallinta \> Jaettu tilausten hallinta**.</span><span class="sxs-lookup"><span data-stu-id="20385-315">Go to **Retail \> Distributed order management \> Distributed order management**.</span></span>
+2. <span data-ttu-id="20385-316">Valitse **Jaettu tilausten hallinta** -työtilassa **Täyttämissuunnitelmat**-ruutu.</span><span class="sxs-lookup"><span data-stu-id="20385-316">In the **Distributed order management** workspace, select the **Fulfillment Plans** tile.</span></span>
+3. <span data-ttu-id="20385-317">Voit tarkastella haluttua täyttämissuunnitelmaa valitsemalla sen tunnuksen.</span><span class="sxs-lookup"><span data-stu-id="20385-317">Select the ID of the relevant order fulfillment plan to view the fulfillment plan.</span></span>
+
+    <span data-ttu-id="20385-318">Täyttämissuunnitelman tilaustietojen osassa näkyvät alkuperäiset myyntitilausrivit, jotka kuuluivat ajoon.</span><span class="sxs-lookup"><span data-stu-id="20385-318">The order details section of the fulfillment plan shows the original sales order lines that were part of the run.</span></span> <span data-ttu-id="20385-319">Normaalien myyntitilausrivien kenttien lisäksi tilaustietojen osassa on myös seuraavat kolme JTH-kenttää:</span><span class="sxs-lookup"><span data-stu-id="20385-319">Besides the standard sales order line fields, the order details section also includes the following three DOM-related fields:</span></span>
+
+    - <span data-ttu-id="20385-320">**Täyttämistyyppi** – Kenttä ilmaisee, onko myyntitilausrivi kokonaan vai osittain välitetty vai onko sitä ollenkaan välitetty sijaintiin.</span><span class="sxs-lookup"><span data-stu-id="20385-320">**Fulfillment type** – This field indicates whether the sales order line is fully brokered, partially brokered, or not brokered at all to a location.</span></span>
+    - <span data-ttu-id="20385-321">**Jako** – Tämä kenttä ilmaisee, onko jokin myyntitilausrivi jaettu ja välitetty eri sijainteihin.</span><span class="sxs-lookup"><span data-stu-id="20385-321">**Split** – This field indicates whether one sales order line has been split and brokered to different locations.</span></span>
+    - <span data-ttu-id="20385-322">**Täyttämissijaintien määrä** – Tämä kenttä ilmaisee, kuinka monta täyttämisriviä luotiin yhdelle myyntitilausriville (perustuen niiden sijaintien määrään, joihin alkuperäinen myyntitilausrivi välitettiin).</span><span class="sxs-lookup"><span data-stu-id="20385-322">**Number of fulfillment locations** – This field indicates how many fulfillment lines were created for one sales order line (based on the number of locations that the original sales order line was brokered to).</span></span>
+
+    <span data-ttu-id="20385-323">Tilauksen täyttämistiedoissa näkyy alkuperäisten myyntitilausrivien määritys eri sijainteihin sekä niiden määrät.</span><span class="sxs-lookup"><span data-stu-id="20385-323">The order fulfillment details section shows the assignment of the original sales order lines to different locations, together with their quantities.</span></span>
+
+## <a name="order-line-actions-and-statuses"></a><span data-ttu-id="20385-324">Tilausrivin toiminnot ja tilat</span><span class="sxs-lookup"><span data-stu-id="20385-324">Order line actions and statuses</span></span>
+
+<span data-ttu-id="20385-325">Seuraavassa kuvataan tilausrivin asetukset.</span><span class="sxs-lookup"><span data-stu-id="20385-325">The following describes settings on the order line.</span></span> <span data-ttu-id="20385-326">Voit avata tilausrivin siirtymällä kohtaan **Vähittäismyynti \> Asiakkaat \> Kaikki myyntitilaukset**.</span><span class="sxs-lookup"><span data-stu-id="20385-326">To open the order line, go to **Retail \> Customers \> All sales orders**.</span></span>
+- <span data-ttu-id="20385-327">Jos määrität **Jätä pois JTH-käsittelystä** -asetuksen (myyntitilausrivin **Yleiset**-välilehdessä) arvoksi **Kyllä**, tilaus tai tilausrivi jätetään pois JTH-käsittelystä.</span><span class="sxs-lookup"><span data-stu-id="20385-327">If you set the **Exclude from DOM processing** option on the **General** tab of the sales order line to **Yes**, the order or order line will be excluded from DOM processing.</span></span>
+- <span data-ttu-id="20385-328">**JTH-tila**-kenttään (myyntitilausrivin **Yleiset**-välilehdessä) voidaan määrittää jokin seuraavista arvoista:</span><span class="sxs-lookup"><span data-stu-id="20385-328">The **DOM status** field on the **General** tab of the sales order line can be set to one of the following values:</span></span>
+
+    - <span data-ttu-id="20385-329">**Ei mitään** – tilausriviä ei ole koskaan välitetty.</span><span class="sxs-lookup"><span data-stu-id="20385-329">**None** – The order line has never been brokered.</span></span>
+    - <span data-ttu-id="20385-330">**Valmis** – tilausrivi on onnistuneesti välitetty ja määritetty sijaintiin.</span><span class="sxs-lookup"><span data-stu-id="20385-330">**Complete** – The order line has been successfully brokered and assigned to a location.</span></span>
+    - <span data-ttu-id="20385-331">**Poikkeus** – Tilausrivi on välitetty, mutta sitä ei voi määrittää sijaintiin.</span><span class="sxs-lookup"><span data-stu-id="20385-331">**Exception** – The order line has been brokered but can't be assigned to a location.</span></span> <span data-ttu-id="20385-332">Poikkeuksia on useita alatyyppejä, joita voidaan tarkastella JTH-työtilassa:</span><span class="sxs-lookup"><span data-stu-id="20385-332">Exceptions have multiple subtypes that can be viewed from the DOM workspace:</span></span>
+
+        - <span data-ttu-id="20385-333">**Ei käytettävissä olevaa määrää** – ei ole olemassa käytettävissä olevaa varastoa tilauksen määrittämiseksi sijainteihin.</span><span class="sxs-lookup"><span data-stu-id="20385-333">**No quantity available** – There is no available inventory to assign the order to in the locations.</span></span>
+        - <span data-ttu-id="20385-334">**Hylkäysten enimmäismäärä** – tilausrivi on saavuttanut hylkäysten määrän ylärajan.</span><span class="sxs-lookup"><span data-stu-id="20385-334">**Maximum rejections** – The order line has reached the maximum threshold for rejections.</span></span>
+        - <span data-ttu-id="20385-335">**Tietojen muutoksen ristiriita** – myyntitilausriviä on muutettu tilauksen välittämisen jälkeen.</span><span class="sxs-lookup"><span data-stu-id="20385-335">**Data modification conflict** – The sales order line has been changed since the order was brokered.</span></span> <span data-ttu-id="20385-336">Siksi täyttämissuunnitelmaa ei voi käyttää tilaukseen.</span><span class="sxs-lookup"><span data-stu-id="20385-336">Therefore, the fulfillment plan can't be applied to the order.</span></span>
+        - <span data-ttu-id="20385-337">**Tilausrivikohtainen poikkeus** – tilausrivillä on useita poikkeuksia.</span><span class="sxs-lookup"><span data-stu-id="20385-337">**Order line specific exception** – There are multiple exceptions on the order line.</span></span>
+
+- <span data-ttu-id="20385-338">Myyntitilausta syötettäessä JTH voidaan suorittaa vuorovaikutteisessa tilassa.</span><span class="sxs-lookup"><span data-stu-id="20385-338">During the sales order entry, DOM can be run in an interactive mode.</span></span> <span data-ttu-id="20385-339">Kun olet syöttämässä tilausriviä ja olet määrittänyt tuotteen ja määrän, voit valita **Päivitä rivi** ja sitten (kohdassa **JTH**) **Ehdota täyttämissijaintia**.</span><span class="sxs-lookup"><span data-stu-id="20385-339">While you're entering an order line, after you specify the product and quantity, you can select **Update line** and then, under **DOM**, select **Suggest fulfillment location**.</span></span> <span data-ttu-id="20385-340">Tällöin näet sijaintiluettelon, joka perustuu JTH-sääntöihin, jotka voivat täyttää tilausrivin määrän.</span><span class="sxs-lookup"><span data-stu-id="20385-340">You then see a list of locations that is based on DOM rules that can fulfill the quantity on the order line.</span></span> <span data-ttu-id="20385-341">Tämä luettelo on lajiteltu etäisyyden mukaan.</span><span class="sxs-lookup"><span data-stu-id="20385-341">This list is sorted by distance.</span></span> <span data-ttu-id="20385-342">Valitse sijainti määrittääksesi asianmukaisen toimipisteen ja varaston myyntitilausrivillä.</span><span class="sxs-lookup"><span data-stu-id="20385-342">Select a location to set the relevant site and warehouse on the sales order line.</span></span> <span data-ttu-id="20385-343">Jotta tätä toimintoa voisi käyttää, on oltava olemassa aktiivinen täyttämisprofiili, joka vastaa myyntirivin myynnin alkuperää ja toimitustapaa.</span><span class="sxs-lookup"><span data-stu-id="20385-343">For this functionality to work, there must be an existing, active fulfillment profile that matches the sales origin and delivery mode on the sales line.</span></span>
+- <span data-ttu-id="20385-344">Voit tarkastella JTH-ajojen myyntitilausriviä koskevia lokeja valitsemalla **Myyntitilausrivi** ja sitten kohdassa **JTH** **Näytä JTH-lokit**.</span><span class="sxs-lookup"><span data-stu-id="20385-344">To view the DOM run logs for a sales order line, select **Sales order line**, and then, under **DOM**, select **View DOM Logs**.</span></span> <span data-ttu-id="20385-345">JTH-lokeissa näkyvät kaikki JTH-ajon luomat tapahtumat ja lokit.</span><span class="sxs-lookup"><span data-stu-id="20385-345">The DOM logs show all the events and logs that were generated by the DOM run.</span></span> <span data-ttu-id="20385-346">Lokien avulla voit selvittää, miksi tietty sijainti määritettiin tietylle tilausriville ja mitä sääntöjä ja rajoituksia määrityksessä otettiin huomioon.</span><span class="sxs-lookup"><span data-stu-id="20385-346">The logs can help you understand why a specific location was assigned to the order line, and what rules and constraints were considered as a part of the assignment.</span></span> <span data-ttu-id="20385-347">**Hallinta**-välilehdessä JTH-lokeja voi tarkastella myös myyntitilauksen otsikon tasolla.</span><span class="sxs-lookup"><span data-stu-id="20385-347">On the **Manage** tab, the DOM logs are also available at the level of the sales order header.</span></span>
+
+## <a name="run-a-clean-up-job-for-dom-fulfillment-plans"></a><span data-ttu-id="20385-348">JTH-täyttämissuunnitelmien puhdistusajo</span><span class="sxs-lookup"><span data-stu-id="20385-348">Run a clean-up job for DOM fulfillment plans</span></span>
+
+<span data-ttu-id="20385-349">JTH-käsittelyn aikana luodaan täyttämissuunnitelmia.</span><span class="sxs-lookup"><span data-stu-id="20385-349">As DOM processing is run, fulfillment plans are created.</span></span> <span data-ttu-id="20385-350">Ajan kuluessa järjestelmään kertyy paljon täyttämissuunnitelmia.</span><span class="sxs-lookup"><span data-stu-id="20385-350">Over time, the system will keep numerous fulfillment plans.</span></span> <span data-ttu-id="20385-351">Voit hallita järjestelmän säilyttämien täyttämissuunnitelmien määrää määrittämällä erätyön, joka poistaa vanhoja täyttämissuunnitelma **Pidätyskausi päivinä** -arvon perusteella.</span><span class="sxs-lookup"><span data-stu-id="20385-351">To manage the number of fulfillment plans that the system keeps, you can configure a batch job that deletes older fulfillment plans, based on the **Retention period in days** value.</span></span>
+
+1. <span data-ttu-id="20385-352">Siirry kohtaan **Vähittäismyynti \> Jaettu tilausten hallinta \> Eräkäsittely \> JTH-täyttämistietojen poistotyön asetukset**.</span><span class="sxs-lookup"><span data-stu-id="20385-352">Go to **Retail \> Distributed order management \> Batch processing \> DOM fulfillment data deletion job setup**.</span></span> 
+1. <span data-ttu-id="20385-353">Valitse määritetty eräryhmä **Eräryhmä**-kentässä.</span><span class="sxs-lookup"><span data-stu-id="20385-353">In the **Batch group** field, select a configured batch group.</span></span>
+1. <span data-ttu-id="20385-354">Määritä **Toistuminen**-kohdassa erätyön toistuminen.</span><span class="sxs-lookup"><span data-stu-id="20385-354">Select **Recurrence**, and define the recurrence of the batch job.</span></span>
+1. <span data-ttu-id="20385-355">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="20385-355">Select **OK**.</span></span>
+
+## <a name="more-information"></a><span data-ttu-id="20385-356">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="20385-356">More information</span></span>
+
+<span data-ttu-id="20385-357">Seuraavat asiat on hyvä huomioida JTH-ominaisuutta käytettäessä:</span><span class="sxs-lookup"><span data-stu-id="20385-357">Here are some things to consider when you use the DOM feature:</span></span>
+
+- <span data-ttu-id="20385-358">Tällä hetkellä JTH tarkastelee vain vähittäismyynnin kanavissa luotuja tilauksia.</span><span class="sxs-lookup"><span data-stu-id="20385-358">Currently, DOM looks only at orders that are created from retail channels.</span></span> <span data-ttu-id="20385-359">Myyntilaukset tunnistetaan vähittäismyynnin myyntitilauksiksi, kun **Vähittäismyynti** -asetukseksi on määritetty **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="20385-359">Sales orders are identified as retail sales orders when the **Retail sale** option is set to **Yes**.</span></span>
+- <span data-ttu-id="20385-360">Microsoft ei ole testannut JTH-ominaisuutta edistyneen varastonhallinnan ominaisuuksien kanssa.</span><span class="sxs-lookup"><span data-stu-id="20385-360">Microsoft hasn't tested DOM with advanced warehouse management features.</span></span> <span data-ttu-id="20385-361">Asiakkaiden ja kumppanien on huolellisesti selvitettävä, onko JTH yhteensopiva heille tärkeiden edistyneen varastonhallinnan ominaisuuksien ja prosessien kanssa.</span><span class="sxs-lookup"><span data-stu-id="20385-361">Customers and partners must be careful to determine whether DOM is compatible with the advanced warehouse management capabilities and processes that are relevant to them.</span></span>
+- <span data-ttu-id="20385-362">JTH on saatavissa vain Retail-ratkaisun pilvipalveluversioon.</span><span class="sxs-lookup"><span data-stu-id="20385-362">DOM is available only on the cloud version of Retail.</span></span> <span data-ttu-id="20385-363">Sitä ei tueta paikallisissa käyttöönotoissa.</span><span class="sxs-lookup"><span data-stu-id="20385-363">It isn't supported in on-premises deployments.</span></span>
