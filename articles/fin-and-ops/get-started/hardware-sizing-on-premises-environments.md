@@ -1,330 +1,144 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="hardware-sizing-on-premises-environments.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>hardware-sizing-on-premises-environments.e242d0.4832a056a99e0f7521e022982b7db7b16d7064a3.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>4832a056a99e0f7521e022982b7db7b16d7064a3</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\fin-and-ops\get-started\hardware-sizing-on-premises-environments.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Hardware sizing requirements for on-premises environments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laitteiston kokovaatimukset paikallisissa ympäristöissä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic lists the hardware sizing requirements for an on-premises environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä ohjeaiheessa käsitellään laitteiston kokovaatimukset paikallisissa ympäristöissä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Hardware sizing requirements for on-premises environments</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laitteiston kokovaatimukset paikallisissa ympäristöissä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the <bpt id="p1">[</bpt>System requirements<ept id="p1">](system-requirements.md)</ept> and <bpt id="p2">[</bpt>Setup and deployment instructions<ept id="p2">](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md)</ept> to gain a solid understanding off the underlying infrastructure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tutustu ennen laitteiston ja infrastruktuurin koon määrittämistä paikallisiin ympäristöihin <bpt id="p1">[</bpt>järjestelmävaatimuksiin<ept id="p1">](system-requirements.md)</ept> sekä <bpt id="p2">[</bpt>asennus- ja käyttöönotto-ohjeisiin<ept id="p2">](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md)</ept>, sillä saat niiden avulla selkeän käsityksen perustana olevasta infrastruktuurista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Pay close attention to the system setup best practices for optimum performance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Perehdy huolellisesti järjestelmän asetuksen parhaisiin käytäntöihin, jotta järjestelmä toimisi mahdollisimman hyvin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet perehtynyt dokumentaatioon, voit aloittaa tapahtumien ja samanaikaisten käyttäjien määrää sekä määrittämään ympäristön koon ytimen keskimääräisen siirtomäärän perusteella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Factors that affect sizing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kokoon vaikuttavia tekijöitä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>All the factors shown in the following illustration contribute to sizing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki seuraavan kuvan tekijät vaikuttavat koon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>The more detailed information that is collected, the more precisely you can determine sizing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mitä tarkempia kerätyt tiedot ovat, sitä tarkemmin voit määrittää koon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Hardware sizing, without supporting data, is likely to be inaccurate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos laitteiston koko määritetään ilman taustatietoja, lopputulos ei ole todennäköisesti tarkka.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>The absolute minimum requirement for necessary data is the peak transaction line load per hour.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suurin tapahtumarivien määrä tunnissa on tieto, joka vähintäänkin tarvitaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Hardware sizing for on-premises environments<ept id="p1">](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Laitteiston koon määrittäminen paikallisissa ympäristöissä<ept id="p1">](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Viewed from left to right, the first and most important factor needed to accurately estimate sizing is a transaction profile or a transaction characterization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vasemmalta oikealle tarkasteltaessa tärkein tekijä, jonka avulla koko voidaan määrittää tarkasti, on tapahtumaprofiili tai tapahtuman kuvaus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>It's important to always find the peak transactional volume per hour.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">On tärkeää, että suurin tapahtumien määrä tunnissa on tiedossa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>If there are multiple peak periods, then these periods need to be accurately defined.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos kuormitushuippuja on useita, nämä jaksot on määritettävä tarkasti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>As you understand the load that impacts your infrastructure, you also need to understand more detail about these factors:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun tiedät, miten kuormitus vaikuttaa infrastruktuuriin, sinun on saatava tarkemmat tiedot myös seuraavista tekijöistä:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">**</bpt>Transactions<ept id="p1">**</ept> – Typically transactions have certain peaks throughout the day/week.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tapahtumat<ept id="p1">**</ept> – Tapahtumilla on tavallisesti tietty huippu päivän tai viikon aikana.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>This mostly depends on the transaction type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se puolestaan määräytyy lähinnä tapahtumatyypin mukaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Time and expense entries usually show peaks once per week, whereas Sales order entries often come in bulk via integration or trickle in during the day.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aika- ja tapahtumakirjauksissa huippu on yleensä kerran viikossa, kun taas myyntitilauskirjaukset tapahtuvat usein kerralla integroinnin kautta tai vähitellen päivän mittaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source><bpt id="p1">**</bpt>Number of concurrent users<ept id="p1">**</ept> – The number of concurrent users is the second most important sizing factor.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Yhtäaikaisten käyttäjien määrä<ept id="p1">**</ept> – Yhtäaikaisten käyttäjien määrä on toiseksi tärkein kokoon vaikuttava tekijä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>You cannot reliably get sizing estimates based on the number of concurrent users, so if this is the only data you have available, estimate an approximate number, and then revisit this when you have more data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kokoarvioita ei saa luotettavasti yhtäaikaisten käyttäjien määrän perusteella, joten jos sinulla on vain nämä tiedot, arvioi määrä suunnilleen ja palaa tähän kohtaan, kun sinulla on enemmän tietoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>An accurate concurrent user definition means that:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yhtäaikaisen käyttämän tarkan määritelmän mukaan</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Named users are not concurrent users.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">nimetyt käyttäjät eivät ole yhtäaikaisia käyttäjiä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Concurrent users are always a subset of named users.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">yhtäaikaiset käyttäjät ovat aina nimettyjen käyttäjien alijoukko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Peak workload defines the maximum concurrency for sizing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">suurin kuormitus määrittää suurimman yhtäaikaisten käyttäjien määrän kokoa määritettäessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Criteria for concurrent users is that the user meets all the following criteria:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yhtäaikainen käyttäjä on käyttäjä, joka täyttää kaikki seuraavat ehdot:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Logged on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">kirjautunut sisään</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Working transactions/inquiries at the time of counting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">käyttää tapahtumia tai kyselyjä laskennan aikana</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Not an idle session.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">istunto ei ole käyttämätön.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source><bpt id="p1">**</bpt>Data composition<ept id="p1">**</ept> – This is mostly about how your system will be set up and configured.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tietoja kokoonpano<ept id="p1">**</ept> – Tämä tarkoittaa lähinnä sitä, miten järjestelmä asennetaan ja määritetään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>For example, how many legal entities you will have, how many items, how many BOM levels, and how complex your security setup will be.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyse voi olla esimerkiksi yritysten, nimikkeiden ja tuoterakennetasojen määrästä sekä suojausasetusten monimutkaisuudesta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Each of those factors may have a small impact on performance, so these factors can be offset by using smart choices when it comes to infrastructure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kukin näistä tekijöistä voi vaikuttaa jonkin verran suorituskykyyn, joten älykkäät infrastruktuuriratkaisut voivat kumota näiden tekijöiden vaikutuksen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">**</bpt>Extensions<ept id="p1">**</ept> – Customizations can be simple or complex.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Laajennukset<ept id="p1">**</ept> – Mukautukset voivat olla yksinkertaisia tai monimutkaisia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>The number of customizations and the nature of complexity and usage has a varied impact on the size of the infrastructure needed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautusten määrä ja niiden monimutkaisuus ja käyttö vaikuttavat eri tavoin tarvittavan infrastruktuurin kokoon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>For complex customizations, it's advised to conduct performance evaluations to ensure that they are not only tested for efficiency but also help understand the infrastructure needs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Monimutkaisissa mukautuksissa kannattaa suorittaa suorituskykyarviointeja ja varmistaa näin teho testataan. Samalla saadaan parempi käsitys infrastruktuurin tarpeista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>This is even more critical when the extensions are not coded according to best practices for performance and scalability.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä on entistäkin tärkeämpää, kun laajennuksia ei ole koodattu suorituskyvyn ja skaalautuvuuden parhaiden käytäntöjen mukaisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source><bpt id="p1">**</bpt>Reporting and analytics<ept id="p1">**</ept> – These factors typically include running heavy queries against the various databases in the Finance and Operations database systems.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Raportointi ja analytiikka<ept id="p1">**</ept> – Nämä tekijät sisältävät yleensä raskaiden kyselyjen tekemistä useissa Finance and Operations -tietokantajärjestelmien tietokannoissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Understanding and reducing the frequency when expensive reports run will help you understand the impact of them.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tieto siitä, milloin laajoja raportteja ajetaan, ja niiden vähentäminen auttaa ymmärtämään, mikä vaikutus niillä on.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source><bpt id="p1">**</bpt>Third-party solutions<ept id="p1">**</ept> – These solutions, like ISVs, have the same implications and recommendations as extensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kolmannen osapuolen ratkaisut<ept id="p1">**</ept> – näillä ratkaisuilla, kuten riippumattomilla ohjelmistotoimittajilla, on samat vaikutukset ja suositukset kuin laajennuksilla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Sizing your Finance and Operations environment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations -ympäristön koon määrittäminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>To understand your sizing requirements, you need to know the peak volume of transactions that you need to process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sinun on tiedettävä suurin käsiteltävä tapahtumien määrä kokovaatimusten selvittämiseksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Most auxiliary systems, like Management Reporter or SSRS, are less mission critical.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Useimmat lisäjärjestelmät, kuten Management Reporter tai SSRS, eivät ole toiminnan kannalta yhtä tärkeitä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>As a result, this document focuses mostly on AOS and SQL Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vuoksi tässä asiakirjassa käsitellään lähinnä AOS-palvelinta ja SQL Serveriä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>In general, the compute tiers scale out and should be set up in an N+1 fashion, meaning if you estimate three AOS, add a fourth AOS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yleensä ottaen laskentatasot skaalautuvat ylöspäin ja ne on syytä määrittää muodossa N+1 – toisin sanoen jos arvioit tarpeeksi kolme AOS-palvelinta, lisää neljäs AOS.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>The database tier should be set up in an Always On highly-available setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietokantataso on määritettävä aina päällä olevana suuren käytettävyyden asennuksena.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>SQL Server (OLTP)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server (OLTP)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Sizing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>3K to 15K transaction lines per hour per core on DB server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3 000–15 000 tapahtumariviä/tunti/ydin tietokantapalvelimessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Typical AOS-to-SQL core ratio 3:1 for the primary SQL Server.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ensisijaisen SQL Serverin tavallinen AOS–SQL-ydinsuhde on 3:1.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Additional cores are required based on the chosen high availability configuration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisäytimiä tarvitaan valitun suuren käyttävyyden määrityksen perusteella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Processing database-heavy operations may regress this to 2:1.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Paljon tietokantoja käyttävien toimenpiteiden käsittely jo pienentää suhteeksi 2:1.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>The following factors influence variations:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavat tekijät vaikuttavat vaihteluun:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Parameter settings in use.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käytettävät parametriasetukset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Levels of extensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laajennusten tasot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Usage of additional functionality, such as database log and alerts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietojen, kuten tietokantalokin ja hälytysten, käyttö.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Extreme database logging will further reduce throughput per hour per core below 3K lines.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suuri tietokantalokiin kirjaus pienentää entisestään tunti- ja ydinkohtaisen siirtomäärän alle 3 000 riviin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Complexity of data composition – A simple chart of accounts versus a detailed fine-grained chart of accounts has implications on throughput (as an example).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietojen kokopanon monimutkaisuus – esimerkiksi yksinkertaisen tilikartan tai tarkan ja yksityiskohtaisen tilikartan valitsimen vaikuttaa siirtomäärään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>Transaction characterization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtuman kuvaus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>2 GB to 16 GB memory for each core.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2–16 Gt muistia/ydin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Auxiliary databases on DB server such as Management reporter and SSRS databases.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietokantapalvelimen lisätietokannat, kuten Management Reporter- ja SSRS-tietokannat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Temp DB = 15% of DB size, with as many files as physical processors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilapäistietokanta = 15 prosenttia tietokannan koosta, ja tiedostoja on yhtä paljon kuin fyysisiä suorittimia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>SAN size and throughput based on total concurrent transaction volume/usage.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SAN-koko ja -siirtomäärä yhtäaikaisten tapahtumien yhteismäärän ja -käytön perusteella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>High availability</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suuri käytettävyys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>We recommend always utilizing SQL Server in either a cluster or mirroring setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Serveriä kannattaa aina käyttää joko klusterina tai peilaavana asennuksena.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>The second SQL node should have the same number of cores as the primary node.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toisessa SQL-solmussa on oltava yhtä monta ydintä kuin ensisijaisessa solmussa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Active Directory Federation Services (AD FS)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Active Directory -liittoutumispalvelut (AD FS)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>For AD FS sizing, see the <bpt id="p1">[</bpt>AD FS Server Capacity documentation<ept id="p1">](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja AD FS -kokomäärityksistä on <bpt id="p1">[</bpt>AD FS:n palvelinkapasiteetin dokumentaatiossa<ept id="p1">](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>A <bpt id="p1">[</bpt>sizing spreadsheet<ept id="p1">](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)</ept> is available for planning the number of instances in your deployment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttöönoton esiintymien määrän suunnittelua varten on <bpt id="p1">[</bpt>kokotaulukko<ept id="p1">](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>AOS (Online and batch)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS (verkko ja erä)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Sizing</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koko</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Sizing by transaction volume/usage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tapahtumien määrän ja käytön mukaan tapahtuva koon määritys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>2K to 6K lines per core</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2 000–6 000 riviä/ydin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>16 GB per instance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">16 Gt/esiintymä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Standard box – 4 to 24 cores</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vakiorunko – 4–24 ydintä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>10 to 15 Enterprise users per core</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10–15 Enterprise-käyttäjää/ydin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>15 to 25 Activity users per core</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">15–25 tehtäväkäyttäjää/ydin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>25 to 50 Team members per core</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">25–50 ryhmän jäsentä/ydin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Batch</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>1 to 4 batch threads per core</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1–4 eräsäiettä/ydin</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Size based on batch window characterization</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koko perustuu eräikkunan kuvaukseen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Note that the AOS, Data Management, and Batch are on the same role in the Service Fabric.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Huomaa, että AOS, tietojen hallinta ja erä ovat samassa roolissa Service Fabricissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>You need to size for these three workloads combined, and not separate these like in Microsoft Dynamics AX 2012.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koko on määritettävä näiden kolmen toiminnon yhdistetylle kuormitukselle eikä erikseen niin kuin Microsoft Dynamics AX 2012:ssa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>The same variability factors for SQL Server apply here.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Serverin vaihtelutekijät koskevat myös näitä kokomäärityksiä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>High availability</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suuri käytettävyys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Ensure that you have at least 1 to 2 more AOS available than you estimate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varmista, että käytettävissä on vähintään 1–2 AOS-palvelinta enemmän kuin mitä arvioit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Ensure that you have at least 3 to 4 virtual hosts available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varmista, että käytettävissä on ainakin 3–4 virtuaali-isäntää.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Management reporter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>In most cases, unless used extensively, the recommended minimum requirements using two nodes should work well.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ellei käyttö ole erittäin suurta suositeltu vähimmäisvaatimus on useimmissa tapauksissa kaksi solmua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>Only in cases where there is heavy use will you need more than two nodes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vain siinä tapauksessa, että käyttö on erittäin runsasta, tarvitaan enemmän kuin kaksi solmua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Please scale as needed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skaalaa tarpeen mukaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>SQL Server Reporting Services</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server -raportointipalvelut.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>For the general availability release, only one SSRS node can be deployed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yleisesti saatavilla olevassa julkaisuversiossa voidaan ottaa käyttöön vain yksi SSRS-solmu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Monitor your SSRS node while testing and increase the number of cores available for SSRS on a need basis.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraa SSRS-solmua testauksen aikana ja lisää SSRS:n käytössä olevien ytimien määrää tarvittaessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varmista, että virtuaali-isäntään valmiiksi määritetty toissijainen solmu ei ole sama kuin SSRS VM.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä on tärkeää, jos SSRS:ää isännöivässä virtuaalikoneessa tai virtuaali-isännässä on ongelma.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>If this the case, they would need to be replaced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siinä tapauksessa ne on vaihdettava.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Environment Orchestrator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ympäristön Orchestrator-palvelu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>The Orchestrator service is the service that manages your deployment and the related communication with LCS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Orchestrator-palvelu hallitsee käyttöönottoa ja siihen liittyviä LCS-yhteyksiä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>This service is deployed as the primary Service Fabric service and requires at least three VMs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Palvelu otetaan käyttöön ensisijaisena Service Fabric -palveluna, ja sitä varten tarvitaan vähintään kolme VM-konetta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>This service is co-located with the Service Fabric orchestration services.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Palvelu on samassa sijainnissa kuin Service Fabricin Orchestration-palvelut.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>This and should be sized to the peak load of the cluster.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sen koon pitäisi perustua klusterin suurimpaan kuormitukseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>For more information, see <bpt id="p1">[</bpt>Service Fabric cluster capacity planning considerations<ept id="p1">](/azure/service-fabric/service-fabric-cluster-capacity)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisätietoja on ohjeaiheessa <bpt id="p1">[</bpt>Service Fabric -klusterin kapasiteettisuunnittelussa huomioon otettavaa<ept id="p1">](/azure/service-fabric/service-fabric-cluster-capacity)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Virtualization and oversubscription</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virtualisointi ja ylitilaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – cores, memory, and disk.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnan kannalta keskeiset palvelut, kuten AOS, on isännöitävä virtuaali-isännissä, joille on varattu omat resurssit (ytimet, muisti ja levy).</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Laitteiston kokovaatimukset paikallisissa ympäristöissä
+description: Tässä ohjeaiheessa käsitellään laitteiston kokovaatimukset paikallisissa ympäristöissä
+author: kfend
+manager: AnnBe
+ms.date: 06/23/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+ms.custom: 55651
+ms.assetid: ''
+ms.search.region: Global
+ms.author: chwolf
+ms.search.validFrom: 2016-08-30
+ms.dyn365.ops.version: Platform update 8
+ms.openlocfilehash: 4832a056a99e0f7521e022982b7db7b16d7064a3
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595490"
+---
+# <a name="hardware-sizing-requirements-for-on-premises-environments"></a><span data-ttu-id="34e03-103">Laitteiston kokovaatimukset paikallisissa ympäristöissä</span><span class="sxs-lookup"><span data-stu-id="34e03-103">Hardware sizing requirements for on-premises environments</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="34e03-104">Tutustu ennen laitteiston ja infrastruktuurin koon määrittämistä paikallisiin ympäristöihin [järjestelmävaatimuksiin](system-requirements.md) sekä [asennus- ja käyttöönotto-ohjeisiin](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md), sillä saat niiden avulla selkeän käsityksen perustana olevasta infrastruktuurista.</span><span class="sxs-lookup"><span data-stu-id="34e03-104">Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](system-requirements.md) and [Setup and deployment instructions](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) to gain a solid understanding off the underlying infrastructure.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="34e03-105">Perehdy huolellisesti järjestelmän asetuksen parhaisiin käytäntöihin, jotta järjestelmä toimisi mahdollisimman hyvin.</span><span class="sxs-lookup"><span data-stu-id="34e03-105">Pay close attention to the system setup best practices for optimum performance.</span></span>
+
+<span data-ttu-id="34e03-106">Kun olet perehtynyt dokumentaatioon, voit aloittaa tapahtumien ja samanaikaisten käyttäjien määrää sekä määrittämään ympäristön koon ytimen keskimääräisen siirtomäärän perusteella.</span><span class="sxs-lookup"><span data-stu-id="34e03-106">After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.</span></span>
+
+## <a name="factors-that-affect-sizing"></a><span data-ttu-id="34e03-107">Kokoon vaikuttavia tekijöitä</span><span class="sxs-lookup"><span data-stu-id="34e03-107">Factors that affect sizing</span></span>
+
+<span data-ttu-id="34e03-108">Kaikki seuraavan kuvan tekijät vaikuttavat koon.</span><span class="sxs-lookup"><span data-stu-id="34e03-108">All the factors shown in the following illustration contribute to sizing.</span></span> <span data-ttu-id="34e03-109">Mitä tarkempia kerätyt tiedot ovat, sitä tarkemmin voit määrittää koon.</span><span class="sxs-lookup"><span data-stu-id="34e03-109">The more detailed information that is collected, the more precisely you can determine sizing.</span></span> <span data-ttu-id="34e03-110">Jos laitteiston koko määritetään ilman taustatietoja, lopputulos ei ole todennäköisesti tarkka.</span><span class="sxs-lookup"><span data-stu-id="34e03-110">Hardware sizing, without supporting data, is likely to be inaccurate.</span></span> <span data-ttu-id="34e03-111">Suurin tapahtumarivien määrä tunnissa on tieto, joka vähintäänkin tarvitaan.</span><span class="sxs-lookup"><span data-stu-id="34e03-111">The absolute minimum requirement for necessary data is the peak transaction line load per hour.</span></span>
+
+<span data-ttu-id="34e03-112">[![Laitteiston koon määrittäminen paikallisissa ympäristöissä](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)</span><span class="sxs-lookup"><span data-stu-id="34e03-112">[![Hardware sizing for on-premises environments](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)</span></span>
+
+<span data-ttu-id="34e03-113">Vasemmalta oikealle tarkasteltaessa tärkein tekijä, jonka avulla koko voidaan määrittää tarkasti, on tapahtumaprofiili tai tapahtuman kuvaus.</span><span class="sxs-lookup"><span data-stu-id="34e03-113">Viewed from left to right, the first and most important factor needed to accurately estimate sizing is a transaction profile or a transaction characterization.</span></span> <span data-ttu-id="34e03-114">On tärkeää, että suurin tapahtumien määrä tunnissa on tiedossa.</span><span class="sxs-lookup"><span data-stu-id="34e03-114">It's important to always find the peak transactional volume per hour.</span></span> <span data-ttu-id="34e03-115">Jos kuormitushuippuja on useita, nämä jaksot on määritettävä tarkasti.</span><span class="sxs-lookup"><span data-stu-id="34e03-115">If there are multiple peak periods, then these periods need to be accurately defined.</span></span>
+
+<span data-ttu-id="34e03-116">Kun tiedät, miten kuormitus vaikuttaa infrastruktuuriin, sinun on saatava tarkemmat tiedot myös seuraavista tekijöistä:</span><span class="sxs-lookup"><span data-stu-id="34e03-116">As you understand the load that impacts your infrastructure, you also need to understand more detail about these factors:</span></span>
+
+- <span data-ttu-id="34e03-117">**Tapahtumat** – Tapahtumilla on tavallisesti tietty huippu päivän tai viikon aikana.</span><span class="sxs-lookup"><span data-stu-id="34e03-117">**Transactions** – Typically transactions have certain peaks throughout the day/week.</span></span> <span data-ttu-id="34e03-118">Se puolestaan määräytyy lähinnä tapahtumatyypin mukaan.</span><span class="sxs-lookup"><span data-stu-id="34e03-118">This mostly depends on the transaction type.</span></span> <span data-ttu-id="34e03-119">Aika- ja tapahtumakirjauksissa huippu on yleensä kerran viikossa, kun taas myyntitilauskirjaukset tapahtuvat usein kerralla integroinnin kautta tai vähitellen päivän mittaan.</span><span class="sxs-lookup"><span data-stu-id="34e03-119">Time and expense entries usually show peaks once per week, whereas Sales order entries often come in bulk via integration or trickle in during the day.</span></span>
+- <span data-ttu-id="34e03-120">**Yhtäaikaisten käyttäjien määrä** – Yhtäaikaisten käyttäjien määrä on toiseksi tärkein kokoon vaikuttava tekijä.</span><span class="sxs-lookup"><span data-stu-id="34e03-120">**Number of concurrent users** – The number of concurrent users is the second most important sizing factor.</span></span> <span data-ttu-id="34e03-121">Kokoarvioita ei saa luotettavasti yhtäaikaisten käyttäjien määrän perusteella, joten jos sinulla on vain nämä tiedot, arvioi määrä suunnilleen ja palaa tähän kohtaan, kun sinulla on enemmän tietoja.</span><span class="sxs-lookup"><span data-stu-id="34e03-121">You cannot reliably get sizing estimates based on the number of concurrent users, so if this is the only data you have available, estimate an approximate number, and then revisit this when you have more data.</span></span> <span data-ttu-id="34e03-122">Yhtäaikaisen käyttämän tarkan määritelmän mukaan</span><span class="sxs-lookup"><span data-stu-id="34e03-122">An accurate concurrent user definition means that:</span></span>
+
+    - <span data-ttu-id="34e03-123">nimetyt käyttäjät eivät ole yhtäaikaisia käyttäjiä</span><span class="sxs-lookup"><span data-stu-id="34e03-123">Named users are not concurrent users.</span></span>
+    - <span data-ttu-id="34e03-124">yhtäaikaiset käyttäjät ovat aina nimettyjen käyttäjien alijoukko</span><span class="sxs-lookup"><span data-stu-id="34e03-124">Concurrent users are always a subset of named users.</span></span> 
+    - <span data-ttu-id="34e03-125">suurin kuormitus määrittää suurimman yhtäaikaisten käyttäjien määrän kokoa määritettäessä.</span><span class="sxs-lookup"><span data-stu-id="34e03-125">Peak workload defines the maximum concurrency for sizing.</span></span>
+
+    <span data-ttu-id="34e03-126">Yhtäaikainen käyttäjä on käyttäjä, joka täyttää kaikki seuraavat ehdot:</span><span class="sxs-lookup"><span data-stu-id="34e03-126">Criteria for concurrent users is that the user meets all the following criteria:</span></span>
+
+    - <span data-ttu-id="34e03-127">kirjautunut sisään</span><span class="sxs-lookup"><span data-stu-id="34e03-127">Logged on.</span></span>
+    - <span data-ttu-id="34e03-128">käyttää tapahtumia tai kyselyjä laskennan aikana</span><span class="sxs-lookup"><span data-stu-id="34e03-128">Working transactions/inquiries at the time of counting.</span></span>
+    - <span data-ttu-id="34e03-129">istunto ei ole käyttämätön.</span><span class="sxs-lookup"><span data-stu-id="34e03-129">Not an idle session.</span></span>
+
+- <span data-ttu-id="34e03-130">**Tietoja kokoonpano** – Tämä tarkoittaa lähinnä sitä, miten järjestelmä asennetaan ja määritetään.</span><span class="sxs-lookup"><span data-stu-id="34e03-130">**Data composition** – This is mostly about how your system will be set up and configured.</span></span> <span data-ttu-id="34e03-131">Kyse voi olla esimerkiksi yritysten, nimikkeiden ja tuoterakennetasojen määrästä sekä suojausasetusten monimutkaisuudesta.</span><span class="sxs-lookup"><span data-stu-id="34e03-131">For example, how many legal entities you will have, how many items, how many BOM levels, and how complex your security setup will be.</span></span> <span data-ttu-id="34e03-132">Kukin näistä tekijöistä voi vaikuttaa jonkin verran suorituskykyyn, joten älykkäät infrastruktuuriratkaisut voivat kumota näiden tekijöiden vaikutuksen.</span><span class="sxs-lookup"><span data-stu-id="34e03-132">Each of those factors may have a small impact on performance, so these factors can be offset by using smart choices when it comes to infrastructure.</span></span>
+- <span data-ttu-id="34e03-133">**Laajennukset** – Mukautukset voivat olla yksinkertaisia tai monimutkaisia.</span><span class="sxs-lookup"><span data-stu-id="34e03-133">**Extensions** – Customizations can be simple or complex.</span></span> <span data-ttu-id="34e03-134">Mukautusten määrä ja niiden monimutkaisuus ja käyttö vaikuttavat eri tavoin tarvittavan infrastruktuurin kokoon.</span><span class="sxs-lookup"><span data-stu-id="34e03-134">The number of customizations and the nature of complexity and usage has a varied impact on the size of the infrastructure needed.</span></span> <span data-ttu-id="34e03-135">Monimutkaisissa mukautuksissa kannattaa suorittaa suorituskykyarviointeja ja varmistaa näin teho testataan. Samalla saadaan parempi käsitys infrastruktuurin tarpeista.</span><span class="sxs-lookup"><span data-stu-id="34e03-135">For complex customizations, it's advised to conduct performance evaluations to ensure that they are not only tested for efficiency but also help understand the infrastructure needs.</span></span> <span data-ttu-id="34e03-136">Tämä on entistäkin tärkeämpää, kun laajennuksia ei ole koodattu suorituskyvyn ja skaalautuvuuden parhaiden käytäntöjen mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="34e03-136">This is even more critical when the extensions are not coded according to best practices for performance and scalability.</span></span>
+- <span data-ttu-id="34e03-137">**Raportointi ja analytiikka** – Nämä tekijät sisältävät yleensä raskaiden kyselyjen tekemistä useissa Finance and Operations -tietokantajärjestelmien tietokannoissa.</span><span class="sxs-lookup"><span data-stu-id="34e03-137">**Reporting and analytics** – These factors typically include running heavy queries against the various databases in the Finance and Operations database systems.</span></span> <span data-ttu-id="34e03-138">Tieto siitä, milloin laajoja raportteja ajetaan, ja niiden vähentäminen auttaa ymmärtämään, mikä vaikutus niillä on.</span><span class="sxs-lookup"><span data-stu-id="34e03-138">Understanding and reducing the frequency when expensive reports run will help you understand the impact of them.</span></span>
+- <span data-ttu-id="34e03-139">**Kolmannen osapuolen ratkaisut** – näillä ratkaisuilla, kuten riippumattomilla ohjelmistotoimittajilla, on samat vaikutukset ja suositukset kuin laajennuksilla.</span><span class="sxs-lookup"><span data-stu-id="34e03-139">**Third-party solutions** – These solutions, like ISVs, have the same implications and recommendations as extensions.</span></span>
+
+## <a name="sizing-your-finance-and-operations-environment"></a><span data-ttu-id="34e03-140">Finance and Operations -ympäristön koon määrittäminen</span><span class="sxs-lookup"><span data-stu-id="34e03-140">Sizing your Finance and Operations environment</span></span>
+
+<span data-ttu-id="34e03-141">Sinun on tiedettävä suurin käsiteltävä tapahtumien määrä kokovaatimusten selvittämiseksi.</span><span class="sxs-lookup"><span data-stu-id="34e03-141">To understand your sizing requirements, you need to know the peak volume of transactions that you need to process.</span></span> <span data-ttu-id="34e03-142">Useimmat lisäjärjestelmät, kuten Management Reporter tai SSRS, eivät ole toiminnan kannalta yhtä tärkeitä.</span><span class="sxs-lookup"><span data-stu-id="34e03-142">Most auxiliary systems, like Management Reporter or SSRS, are less mission critical.</span></span> <span data-ttu-id="34e03-143">Tämän vuoksi tässä asiakirjassa käsitellään lähinnä AOS-palvelinta ja SQL Serveriä.</span><span class="sxs-lookup"><span data-stu-id="34e03-143">As a result, this document focuses mostly on AOS and SQL Server.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="34e03-144">Yleensä ottaen laskentatasot skaalautuvat ylöspäin ja ne on syytä määrittää muodossa N+1 – toisin sanoen jos arvioit tarpeeksi kolme AOS-palvelinta, lisää neljäs AOS.</span><span class="sxs-lookup"><span data-stu-id="34e03-144">In general, the compute tiers scale out and should be set up in an N+1 fashion, meaning if you estimate three AOS, add a fourth AOS.</span></span> <span data-ttu-id="34e03-145">Tietokantataso on määritettävä aina päällä olevana suuren käytettävyyden asennuksena.</span><span class="sxs-lookup"><span data-stu-id="34e03-145">The database tier should be set up in an Always On highly-available setup.</span></span>
+
+## <a name="sql-server-oltp"></a><span data-ttu-id="34e03-146">SQL Server (OLTP)</span><span class="sxs-lookup"><span data-stu-id="34e03-146">SQL Server (OLTP)</span></span>
+
+### <a name="sizing"></a><span data-ttu-id="34e03-147">Koko</span><span class="sxs-lookup"><span data-stu-id="34e03-147">Sizing</span></span>
+
+- <span data-ttu-id="34e03-148">3 000–15 000 tapahtumariviä/tunti/ydin tietokantapalvelimessa.</span><span class="sxs-lookup"><span data-stu-id="34e03-148">3K to 15K transaction lines per hour per core on DB server.</span></span>
+- <span data-ttu-id="34e03-149">Ensisijaisen SQL Serverin tavallinen AOS–SQL-ydinsuhde on 3:1.</span><span class="sxs-lookup"><span data-stu-id="34e03-149">Typical AOS-to-SQL core ratio 3:1 for the primary SQL Server.</span></span> <span data-ttu-id="34e03-150">Lisäytimiä tarvitaan valitun suuren käyttävyyden määrityksen perusteella.</span><span class="sxs-lookup"><span data-stu-id="34e03-150">Additional cores are required based on the chosen high availability configuration.</span></span>
+
+    - <span data-ttu-id="34e03-151">Paljon tietokantoja käyttävien toimenpiteiden käsittely jo pienentää suhteeksi 2:1.</span><span class="sxs-lookup"><span data-stu-id="34e03-151">Processing database-heavy operations may regress this to 2:1.</span></span>
+
+- <span data-ttu-id="34e03-152">Seuraavat tekijät vaikuttavat vaihteluun:</span><span class="sxs-lookup"><span data-stu-id="34e03-152">The following factors influence variations:</span></span>
+
+    - <span data-ttu-id="34e03-153">Käytettävät parametriasetukset.</span><span class="sxs-lookup"><span data-stu-id="34e03-153">Parameter settings in use.</span></span>
+    - <span data-ttu-id="34e03-154">Laajennusten tasot.</span><span class="sxs-lookup"><span data-stu-id="34e03-154">Levels of extensions.</span></span>
+    - <span data-ttu-id="34e03-155">Lisätietojen, kuten tietokantalokin ja hälytysten, käyttö.</span><span class="sxs-lookup"><span data-stu-id="34e03-155">Usage of additional functionality, such as database log and alerts.</span></span> <span data-ttu-id="34e03-156">Suuri tietokantalokiin kirjaus pienentää entisestään tunti- ja ydinkohtaisen siirtomäärän alle 3 000 riviin.</span><span class="sxs-lookup"><span data-stu-id="34e03-156">Extreme database logging will further reduce throughput per hour per core below 3K lines.</span></span>
+    - <span data-ttu-id="34e03-157">Tietojen kokopanon monimutkaisuus – esimerkiksi yksinkertaisen tilikartan tai tarkan ja yksityiskohtaisen tilikartan valitsimen vaikuttaa siirtomäärään.</span><span class="sxs-lookup"><span data-stu-id="34e03-157">Complexity of data composition – A simple chart of accounts versus a detailed fine-grained chart of accounts has implications on throughput (as an example).</span></span>
+    - <span data-ttu-id="34e03-158">Tapahtuman kuvaus.</span><span class="sxs-lookup"><span data-stu-id="34e03-158">Transaction characterization.</span></span>
+    - <span data-ttu-id="34e03-159">2–16 Gt muistia/ydin.</span><span class="sxs-lookup"><span data-stu-id="34e03-159">2 GB to 16 GB memory for each core.</span></span>
+    - <span data-ttu-id="34e03-160">Tietokantapalvelimen lisätietokannat, kuten Management Reporter- ja SSRS-tietokannat.</span><span class="sxs-lookup"><span data-stu-id="34e03-160">Auxiliary databases on DB server such as Management reporter and SSRS databases.</span></span>
+    - <span data-ttu-id="34e03-161">Tilapäistietokanta = 15 prosenttia tietokannan koosta, ja tiedostoja on yhtä paljon kuin fyysisiä suorittimia.</span><span class="sxs-lookup"><span data-stu-id="34e03-161">Temp DB = 15% of DB size, with as many files as physical processors.</span></span>
+    - <span data-ttu-id="34e03-162">SAN-koko ja -siirtomäärä yhtäaikaisten tapahtumien yhteismäärän ja -käytön perusteella.</span><span class="sxs-lookup"><span data-stu-id="34e03-162">SAN size and throughput based on total concurrent transaction volume/usage.</span></span>
+
+### <a name="high-availability"></a><span data-ttu-id="34e03-163">Suuri käytettävyys</span><span class="sxs-lookup"><span data-stu-id="34e03-163">High availability</span></span>
+
+<span data-ttu-id="34e03-164">SQL Serveriä kannattaa aina käyttää joko klusterina tai peilaavana asennuksena.</span><span class="sxs-lookup"><span data-stu-id="34e03-164">We recommend always utilizing SQL Server in either a cluster or mirroring setup.</span></span> <span data-ttu-id="34e03-165">Toisessa SQL-solmussa on oltava yhtä monta ydintä kuin ensisijaisessa solmussa.</span><span class="sxs-lookup"><span data-stu-id="34e03-165">The second SQL node should have the same number of cores as the primary node.</span></span>
+
+### <a name="active-directory-federation-services-ad-fs"></a><span data-ttu-id="34e03-166">Active Directory -liittoutumispalvelut (AD FS)</span><span class="sxs-lookup"><span data-stu-id="34e03-166">Active Directory Federation Services (AD FS)</span></span>
+
+<span data-ttu-id="34e03-167">Lisätietoja AD FS -kokomäärityksistä on [AD FS:n palvelinkapasiteetin dokumentaatiossa](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).</span><span class="sxs-lookup"><span data-stu-id="34e03-167">For AD FS sizing, see the [AD FS Server Capacity documentation](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).</span></span>
+
+<span data-ttu-id="34e03-168">Käyttöönoton esiintymien määrän suunnittelua varten on [kokotaulukko](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx).</span><span class="sxs-lookup"><span data-stu-id="34e03-168">A [sizing spreadsheet](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) is available for planning the number of instances in your deployment.</span></span>
+
+## <a name="aos-online-and-batch"></a><span data-ttu-id="34e03-169">AOS (verkko ja erä)</span><span class="sxs-lookup"><span data-stu-id="34e03-169">AOS (Online and batch)</span></span>
+
+### <a name="sizing"></a><span data-ttu-id="34e03-170">Koko</span><span class="sxs-lookup"><span data-stu-id="34e03-170">Sizing</span></span>
+
+- <span data-ttu-id="34e03-171">Tapahtumien määrän ja käytön mukaan tapahtuva koon määritys</span><span class="sxs-lookup"><span data-stu-id="34e03-171">Sizing by transaction volume/usage</span></span>
+
+    - <span data-ttu-id="34e03-172">2 000–6 000 riviä/ydin</span><span class="sxs-lookup"><span data-stu-id="34e03-172">2K to 6K lines per core</span></span>
+    - <span data-ttu-id="34e03-173">16 Gt/esiintymä</span><span class="sxs-lookup"><span data-stu-id="34e03-173">16 GB per instance</span></span>
+    - <span data-ttu-id="34e03-174">Vakiorunko – 4–24 ydintä</span><span class="sxs-lookup"><span data-stu-id="34e03-174">Standard box – 4 to 24 cores</span></span>
+    - <span data-ttu-id="34e03-175">10–15 Enterprise-käyttäjää/ydin</span><span class="sxs-lookup"><span data-stu-id="34e03-175">10 to 15 Enterprise users per core</span></span>
+    - <span data-ttu-id="34e03-176">15–25 tehtäväkäyttäjää/ydin</span><span class="sxs-lookup"><span data-stu-id="34e03-176">15 to 25 Activity users per core</span></span>
+    - <span data-ttu-id="34e03-177">25–50 ryhmän jäsentä/ydin</span><span class="sxs-lookup"><span data-stu-id="34e03-177">25 to 50 Team members per core</span></span>
+
+- <span data-ttu-id="34e03-178">Erä</span><span class="sxs-lookup"><span data-stu-id="34e03-178">Batch</span></span>
+
+    - <span data-ttu-id="34e03-179">1–4 eräsäiettä/ydin</span><span class="sxs-lookup"><span data-stu-id="34e03-179">1 to 4 batch threads per core</span></span>
+    - <span data-ttu-id="34e03-180">Koko perustuu eräikkunan kuvaukseen</span><span class="sxs-lookup"><span data-stu-id="34e03-180">Size based on batch window characterization</span></span>
+
+- <span data-ttu-id="34e03-181">Huomaa, että AOS, tietojen hallinta ja erä ovat samassa roolissa Service Fabricissa.</span><span class="sxs-lookup"><span data-stu-id="34e03-181">Note that the AOS, Data Management, and Batch are on the same role in the Service Fabric.</span></span> <span data-ttu-id="34e03-182">Koko on määritettävä näiden kolmen toiminnon yhdistetylle kuormitukselle eikä erikseen niin kuin Microsoft Dynamics AX 2012:ssa.</span><span class="sxs-lookup"><span data-stu-id="34e03-182">You need to size for these three workloads combined, and not separate these like in Microsoft Dynamics AX 2012.</span></span>
+- <span data-ttu-id="34e03-183">SQL Serverin vaihtelutekijät koskevat myös näitä kokomäärityksiä.</span><span class="sxs-lookup"><span data-stu-id="34e03-183">The same variability factors for SQL Server apply here.</span></span>
+
+### <a name="high-availability"></a><span data-ttu-id="34e03-184">Suuri käytettävyys</span><span class="sxs-lookup"><span data-stu-id="34e03-184">High availability</span></span>
+
+- <span data-ttu-id="34e03-185">Varmista, että käytettävissä on vähintään 1–2 AOS-palvelinta enemmän kuin mitä arvioit.</span><span class="sxs-lookup"><span data-stu-id="34e03-185">Ensure that you have at least 1 to 2 more AOS available than you estimate.</span></span>
+- <span data-ttu-id="34e03-186">Varmista, että käytettävissä on ainakin 3–4 virtuaali-isäntää.</span><span class="sxs-lookup"><span data-stu-id="34e03-186">Ensure that you have at least 3 to 4 virtual hosts available.</span></span>
+
+## <a name="management-reporter"></a><span data-ttu-id="34e03-187">Management Reporter</span><span class="sxs-lookup"><span data-stu-id="34e03-187">Management reporter</span></span>
+
+<span data-ttu-id="34e03-188">Ellei käyttö ole erittäin suurta suositeltu vähimmäisvaatimus on useimmissa tapauksissa kaksi solmua.</span><span class="sxs-lookup"><span data-stu-id="34e03-188">In most cases, unless used extensively, the recommended minimum requirements using two nodes should work well.</span></span> <span data-ttu-id="34e03-189">Vain siinä tapauksessa, että käyttö on erittäin runsasta, tarvitaan enemmän kuin kaksi solmua.</span><span class="sxs-lookup"><span data-stu-id="34e03-189">Only in cases where there is heavy use will you need more than two nodes.</span></span> <span data-ttu-id="34e03-190">Skaalaa tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="34e03-190">Please scale as needed.</span></span>
+
+## <a name="sql-server-reporting-services"></a><span data-ttu-id="34e03-191">SQL Server -raportointipalvelut.</span><span class="sxs-lookup"><span data-stu-id="34e03-191">SQL Server Reporting Services</span></span>
+
+<span data-ttu-id="34e03-192">Yleisesti saatavilla olevassa julkaisuversiossa voidaan ottaa käyttöön vain yksi SSRS-solmu.</span><span class="sxs-lookup"><span data-stu-id="34e03-192">For the general availability release, only one SSRS node can be deployed.</span></span> <span data-ttu-id="34e03-193">Seuraa SSRS-solmua testauksen aikana ja lisää SSRS:n käytössä olevien ytimien määrää tarvittaessa.</span><span class="sxs-lookup"><span data-stu-id="34e03-193">Monitor your SSRS node while testing and increase the number of cores available for SSRS on a need basis.</span></span> <span data-ttu-id="34e03-194">Varmista, että virtuaali-isäntään valmiiksi määritetty toissijainen solmu ei ole sama kuin SSRS VM.</span><span class="sxs-lookup"><span data-stu-id="34e03-194">Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM.</span></span> <span data-ttu-id="34e03-195">Tämä on tärkeää, jos SSRS:ää isännöivässä virtuaalikoneessa tai virtuaali-isännässä on ongelma.</span><span class="sxs-lookup"><span data-stu-id="34e03-195">This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host.</span></span> <span data-ttu-id="34e03-196">Siinä tapauksessa ne on vaihdettava.</span><span class="sxs-lookup"><span data-stu-id="34e03-196">If this the case, they would need to be replaced.</span></span>
+
+## <a name="environment-orchestrator"></a><span data-ttu-id="34e03-197">Ympäristön Orchestrator-palvelu</span><span class="sxs-lookup"><span data-stu-id="34e03-197">Environment Orchestrator</span></span>
+
+<span data-ttu-id="34e03-198">Orchestrator-palvelu hallitsee käyttöönottoa ja siihen liittyviä LCS-yhteyksiä.</span><span class="sxs-lookup"><span data-stu-id="34e03-198">The Orchestrator service is the service that manages your deployment and the related communication with LCS.</span></span> <span data-ttu-id="34e03-199">Palvelu otetaan käyttöön ensisijaisena Service Fabric -palveluna, ja sitä varten tarvitaan vähintään kolme VM-konetta.</span><span class="sxs-lookup"><span data-stu-id="34e03-199">This service is deployed as the primary Service Fabric service and requires at least three VMs.</span></span> <span data-ttu-id="34e03-200">Palvelu on samassa sijainnissa kuin Service Fabricin Orchestration-palvelut.</span><span class="sxs-lookup"><span data-stu-id="34e03-200">This service is co-located with the Service Fabric orchestration services.</span></span> <span data-ttu-id="34e03-201">Sen koon pitäisi perustua klusterin suurimpaan kuormitukseen.</span><span class="sxs-lookup"><span data-stu-id="34e03-201">This and should be sized to the peak load of the cluster.</span></span> <span data-ttu-id="34e03-202">Lisätietoja on ohjeaiheessa [Service Fabric -klusterin kapasiteettisuunnittelussa huomioon otettavaa](/azure/service-fabric/service-fabric-cluster-capacity).</span><span class="sxs-lookup"><span data-stu-id="34e03-202">For more information, see [Service Fabric cluster capacity planning considerations](/azure/service-fabric/service-fabric-cluster-capacity).</span></span>
+
+## <a name="virtualization-and-oversubscription"></a><span data-ttu-id="34e03-203">Virtualisointi ja ylitilaus</span><span class="sxs-lookup"><span data-stu-id="34e03-203">Virtualization and oversubscription</span></span>
+
+<span data-ttu-id="34e03-204">Toiminnan kannalta keskeiset palvelut, kuten AOS, on isännöitävä virtuaali-isännissä, joille on varattu omat resurssit (ytimet, muisti ja levy).</span><span class="sxs-lookup"><span data-stu-id="34e03-204">Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – cores, memory, and disk.</span></span>

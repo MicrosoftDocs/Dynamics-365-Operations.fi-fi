@@ -1,837 +1,250 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="financial-insights.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>financial-insights.ea0c66.9edcb192d2fac5acb954d8b87be691f0943e0db7.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>9edcb192d2fac5acb954d8b87be691f0943e0db7</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>23ab3c99d05869ea2c73514754608e8684697d8c</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\analytics\financial-insights.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Financial Insights</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallinnon tiedot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallinnon tiedot kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätöksiä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Financial Insights</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallinnon tiedot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source><bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Taloushallinnon tiedot<ept id="p1">**</ept> kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätöksiä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Power BI is embedded in Microsoft Dynamics 365 Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI on upotettu Microsoft Dynamics 365 Finance and Operationsiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The focus of <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> is analytical reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Taloushallinnon tiedoissa<ept id="p1">**</ept> keskitytään on analyyttiseen raportointiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Personas across an organization can view, research, understand, and act.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organisaation työntekijät voivat tarkastella tietoja, tutkia niitä, tiedostaa ne ja toimia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source><bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> combines data from the general ledger and subledgers to give a more complete picture of the financial health of an organization.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Taloushallinnon tiedot<ept id="p1">**</ept> yhdistää kirjanpidon ja alareskontran tiedot ja tuottaa niiden avulla kattavan kuvan organisaation taloudellisesta tilasta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>This document uses the following Power BI terminology:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä asiakirjassa käytetään seuraavia Power BI -termejä:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source><bpt id="p1">**</bpt>Report<ept id="p1">**</ept> – A single .pbix file that all the visuals on all tabs are saved to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Raportti<ept id="p1">**</ept> – yksi .pbix-tiedosto, johon kaikkien välilehtien visualisoinnit tallennetaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source><bpt id="p1">**</bpt>Page<ept id="p1">**</ept> – A tab in a single .pbix file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Sivu<ept id="p1">**</ept> – Yhden välilehden sisältävä .pbix-tiedosto.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Each page can contain one or more visuals.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kullakin sivulla voi olla useita visualisointeja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source><bpt id="p1">**</bpt>Visual<ept id="p1">**</ept> – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Visualisointi<ept id="p1">**</ept> – Yksi tietolähde, kuten kortti, tunnusluku, kaavio, taulukko tai raportti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>A page that has a financial statement as a visual can have no other visuals, because of the size of the data that is being reported on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos sivulla oleva visualisointi on raportti, siinä ei voi olla muita visualisointeja raportoitavien tietojen koon vuoksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Currently, <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> is used to view data for either the active legal entity or all legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällä hetkellä <bpt id="p1">**</bpt>taloushallinnon tiedoissa<ept id="p1">**</ept> voi katsella aktiivisen yrityksen ja kaikkien yritysten tietoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulevissa versioissa työtila kehittyy paikaksi, jossa voit muokata ja luoda visualisointeja Power BI:n avulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>The <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> workspace shows the same visuals as <bpt id="p2">**</bpt>Financial Insights<ept id="p2">**</ept>, but is focused on letting you view and filter the data on existing reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaikka <bpt id="p1">**</bpt>Talousjohtajan yhteenveto<ept id="p1">**</ept> -työtilassa on samat visualisoinnit <bpt id="p2">**</bpt>taloushallinnon tiedoissa<ept id="p2">**</ept>, se keskittyy ennen kaikkea aiemmin luotujen tietojen tarkasteluun ja suodattamiseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>In future releases, you will be able to add new visuals to the <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulevissa versioissa voit lisätä uusia visualisointeja <bpt id="p1">**</bpt>Taloushallinnon tiedot<ept id="p1">**</ept> -työtilaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uudet visualisointeja on ehkä mahdollista käyttää myös muissa työtiloissa, jotka keskittyvät toisiin rooleihin, kuten projekti- tai ostoreskontrapäälliköihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>The <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Talousjohtajan yhteenveto<ept id="p1">**</ept> -työtilassa on jatkossakin näkyvissä kaikkien yritysten tiedot riippumatta siitä, minkä yrityksen käyttöoikeudet roolilla on.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Finance and Operations setup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operationsin asetukset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">**</bpt>General ledger<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kirjanpito<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>The main account type and the main account categories are used to fill in appropriate default main accounts on the <bpt id="p1">**</bpt>Balance sheet<ept id="p1">**</ept> financial statement and the various <bpt id="p2">**</bpt>Income statement<ept id="p2">**</ept> financial statements in <bpt id="p3">**</bpt>Financial Insights<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Päätilityypin ja päätililuokkien avulla täytetään <bpt id="p3">**</bpt>taloushallinnon tietojen<ept id="p3">**</ept> <bpt id="p1">**</bpt>Tase<ept id="p1">**</ept>-raportin ja erilaisten <bpt id="p2">**</bpt>Tuloslaskelma<ept id="p2">**</ept>-raporttien oletuspäätilit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>On the <bpt id="p1">**</bpt>Main accounts<ept id="p1">**</ept> page, you must define your main account so that one of the following types is assigned to it:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sinun on määritettävä <bpt id="p1">**</bpt>Päätilit<ept id="p1">**</ept>-sivulla päätili, jotta siihen voidaan määrittää jokin seuraavista tyypeistä:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Revenue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntituotto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Expense</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Expense</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Assets</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttöomaisuus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Liabilities</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Velat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Equity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oma pääoma</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>Do not assign any other main account type, such as <bpt id="p1">**</bpt>Balance sheet<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Profit and Loss<ept id="p2">**</ept>, to your main accounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Älä määritä päätileille mitään muuta päätilin tyyppiä, kuten <bpt id="p1">**</bpt>Tase<ept id="p1">**</ept> tai <bpt id="p2">**</bpt>Voitto ja tappio<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Reporting can't determine the type of main account when other main account types are assigned, because they aren't granular enough.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportit eivät voi määrittää päätilin tyyppiä, kun muita päätilityyppejä on määritetty, sillä ne eivät ole riittävän yksityiskohtaisia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>The type of main account must be determined to show liabilities and revenue as positive amounts on financial reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Päätilin tyyppi on määritettävä näyttämään velat ja tuotto raporteissa positiivisina summina.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jokaiselle päätilille on määritettävä päätililuokka, sillä muuten ne eivät näy tilinpäätöksissä eivätkä sisälly muihin visualisointeihin, kuten tunnuslukuihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>The main account categories have been enhanced so that they include a display order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Päätililuokkia on parannettu siten, että sisältävät näyttöjärjestyksen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>The display order is used specifically on financial statements in <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näyttöjärjestystä käytetään nimenomaisesti <bpt id="p1">**</bpt>taloushallinnon tietojen<ept id="p1">**</ept> raporteissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>After you edit or add a new main account category, you can change the <bpt id="p1">**</bpt>Display order<ept id="p1">**</ept> value to define the order that the main account categories should be shown in on a financial statement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet muokannut päätilin luokkaa tai lisännyt uuden luokat, voit muuttaa <bpt id="p1">**</bpt>Näyttöjärjestys<ept id="p1">**</ept>-arvon määrittämään järjestyksessä, jossa päätilin luokat näytetään raportissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos useiden päätilin luokkien näyttöjärjestystä on muutettava, Avaa Excelissä -toiminto nopeuttaa muokkausta ja muutosten julkaisemista takaisin Finance and Operationsiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Entity store</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yksikkösäilö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>The data for <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> is pulled from the Entity store (<bpt id="p2">**</bpt>System administration<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Entity store<ept id="p4">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Taloushallinnon tiedoissa<ept id="p1">**</ept> olevat tiedot noudetaan yksikkösäilöstä (<bpt id="p2">**</bpt>Järjestelmänvalvoja<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Asetukset<ept id="p3">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p4">**</bpt>Yksikkösäilö<ept id="p4">**</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>If you open the <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Financial Insights<ept id="p2">**</ept> workspace, and the following warning message appears in the visuals, you must update the entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos avaat <bpt id="p1">**</bpt>Talousjohtajan yhteenveto<ept id="p1">**</ept>- tai <bpt id="p2">**</bpt>Taloushallinnon tiedot<ept id="p2">**</ept> -työtilan ja seuraava varoitussanoma avautuu visualisoinneissa, yksiköt on päivitettävä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Warning</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varoitus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>You must update the following entities to see data in the <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept> and <bpt id="p2">**</bpt>CFO overview<ept id="p2">**</ept> workspaces:</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Seuraavat yksiköt on päivitettävä, jos haluat nähdä <bpt id="p1">**</bpt>Taloushallinnon tiedot<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Talousjohtajan yhteenveto<ept id="p2">**</ept> -työtilojen tiedot:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Financial reporting transaction data version 2 (<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> This is new with version 10.0.1 and replaces the previous entity.)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tilinpäätöstapahtumien tietoversio 2 (<bpt id="p1">**</bpt>Huomautus:<ept id="p1">**</ept> Tämä on uusi versio 10.0.1 ja korvaa aiemman yksikön.)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Financial reporting transaction data</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Taloushallinnon raportoinnin tapahtumatiedot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>CustCollectionsBIMeasurements</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">CustCollectionsBIMeasurements</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>LedgerCovLiquidityMeasurement</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">LedgerCovLiquidityMeasurement</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Purchase cube</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Ostokuutio</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Sales cube</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Myyntikuutio</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>In the previous release, the LedgerActivityMeasure and VendPaymentBIMeasure entities were used for data in the <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Edellisessä versiossa LedgerActivityMeasure- ja VendPaymentBIMeasure-yksiköitä käytettiin <bpt id="p1">**</bpt>Talousjohtajan yhteenveto<ept id="p1">**</ept> -työtilan tiedoille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>However, they are no longer used in the current release.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niitä ei kuitenkaan enää käytetä nykyisessä versiossa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>You can define a recurring batch to regularly update the data in the entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää toistuvan erätyön päivittämään yksiköiden tiedot säännöllisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Because each entity is completely rebuilt during an update, select the time and frequency of entity updates carefully.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koska jokainen yksikkö muodostetaan kokonaan uudelleen päivityksen aikana, valitse yksikköpäivitysten ajankohta tai tiheys huolellisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>The primary entity that is used for financial statements is the FinancialReportingTransactionData entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ensisijainen tilinpäätöksissä käytettävä yksikkö on FinancialReportingTransactionData.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Therefore, you might decide to update that entity more often.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voitkin harkita sen päivittämistä muita useammin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Security</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suojaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Currently, the data on embedded Power BI reports can't be limited to the legal entities that the user has access to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Upotettujen Power BI -raporttien tietoja ei voi tällä hetkellä rajoittaa niihin yritykseen, joiden käyttöoikeus käyttäjällä on.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Therefore, the embedded Power BI reports are controlled through duties in the security setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vuoksi upotettuja Power BI -raportteja hallitaan suojausasetusten tehtävillä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>The duties that are defined allow access to data for either all legal entities or only the active company.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritetyt tehtävät antavat joko kaikkien yritysten tai aktiivisen yrityksen tietojen käyttöoikeuden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>The following table shows the duties that exist and the roles that they are assigned to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa taulussa on olemassa olevat velvollisuudet ja roolit, joihin ne on määritetty.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>The duties can be removed or assigned to different roles, based on your organization's requirements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Velvollisuuksia voi poistaa tai ne voidaan määrittää eri rooleille organisaation tarpeiden mukaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Duty</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulli</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Roles</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Roolit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>Decription</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>View CFO Overview workspace</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä talousjohtajan yhteenvedon työtila</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Chief Financial Officer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talousjohtaja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>This duty provides access to the CFO overview workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä velvollisuus antaa Talousjohtajan yhteenveto -työtilan käyttöoikeuden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>By default, the active company is used as a filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktiivista yritystä käytetään oletusarvoisesti suodattimena.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>However, you can add all legal entities, regardless of whether the user has access to the other legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kuitenkin lisätä kaikki yritykset riippumatta siitä, onko käyttäjällä muiden yritysten käyttöoikeutta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>View financial insights current company</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä nykyisen yrityksen taloushallinnon tiedot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Accountant</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitäjä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Accounting manager</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskentapäällikkö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Accounting supervisor</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallintopäällikkö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>Auditor</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tilintarkastaja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Budget manager</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budjettipäällikkö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Chief executive officer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pääjohtaja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Chief financial officer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Talousjohtaja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Financial controller</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Laskentatoimen controller</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>This duty provides access to Financial Insights.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä velvollisuus antaa Taloushallinnon tiedot -työtilan käyttöoikeuden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>By default, the active company is used as a filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktiivista yritystä käytetään oletusarvoisesti suodattimena.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>You can't add other legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et voi lisätä muita yrityksiä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>View financial insights cross company</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä yritystenväliset taloushallinnon tiedot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn't assigned to a role.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin versiossa 7.3 tätä velvollisuutta ei ole määritetty rooliin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>In the next release, this duty will be assigned to the Chief financial officer role.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa versiossa tämä velvollisuus määritetään talousjohtajan rooliin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>This duty provides access to the menu item for the CFO overview workspace.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä velvollisuus antaa Talousjohtajan yhteenveto -työtilan valikkovaihtoehdon käyttöoikeuden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>By default, the active company is used as a filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktiivista yritystä käytetään oletusarvoisesti suodattimena.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>However, you can add all legal entities, regardless of whether the user has access to the other legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kuitenkin lisätä kaikki yritykset riippumatta siitä, onko käyttäjällä muiden yritysten käyttöoikeutta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Financial reporting vs. Finanical insights</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallinnon raportoinnin ja taloushallinnon tietojen vertailu</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Although <bpt id="p1">**</bpt>Financial insights<ept id="p1">**</ept> contains financial statements, it isn't a replacement for Financial reporting in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaikka <bpt id="p1">**</bpt>Taloushallinnon tiedot<ept id="p1">**</ept> sisältää tilinpäätöksiä, se ei korvaa Finance and Operationsin taloushallinnon raportointia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>The default financial statements in <bpt id="p1">**</bpt>Financial insights<ept id="p1">**</ept> are limited in scope and don't include all types of financial statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Taloushallinnon tietojen<ept id="p1">**</ept> oletustilinpäätökset ovat laajuudeltaan rajoitettuja eivätkä ne sisällä kaiken tyyppisiä tilinpäätöksiä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallinnon raportointi on edelleen ensisijainen työkalu lakisääteisten tilinpäätösten suunnitteluun, luontiin ja muodostamiseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>The following comparison chart will help differentiate the two options:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraava vertailukaavio auttaa erottamaan vaihtoehdot toisistaan:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Financial Reporting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallinnon raportointi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>Financial Insights</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallinnon tiedot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source><bpt id="p1">**</bpt>Edit default reports<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Muokkaa oletusraportteja<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source><bpt id="p1">**</bpt>Create new reports<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Luo uusia raportteja<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source><bpt id="p1">**</bpt>Print reports<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Raporttien tulostaminen<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source><bpt id="p1">**</bpt>Export to Excel<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vie Exceliin<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Limited Exports raw data to Excel, not a formatted report</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoitettu raakatietojen vienti Exceliin, muotoilematon raportti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source><bpt id="p1">**</bpt>Support reporting hierarchy/Organization hierarchy<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Raportointihierarkian/organisaatiohierarkian tuki<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source><bpt id="p1">**</bpt>Report on subledger data<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Alareskontran tietojen raportti<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>Yes Limited to only vendor, customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä Rajoitettu yhteen toimittajaan, asiakkaaseen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä Toimittaja-, asiakas-, toimittaja/asiakasryhmät, toimittajan/asiakkaan osoitteet jne.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source><bpt id="p1">**</bpt>Reporting Currency<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Raportointivaluutta<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Yes Accounting currency and translate to reporting currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä Kirjanpitovaluutta ja muuntaminen raportointivaluutaksi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>No Accounting currency only</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ei Vain kirjanpitovaluutta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source><bpt id="p1">**</bpt>Security<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Suojaus<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Yes Adheres to Finance and Operations and reporting tree security</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä Finance and Operationsin ja raporttipuun suojauksen noudattaminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Limited View reports for all companies (regardless of Finance and Operations security) or only active company</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoitettu kaikkien yritysten raporttien näyttäminen (Finance and Operationsin suojauksesta riippumatta) tai vain aktiivinen yritys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source><bpt id="p1">**</bpt>Support different Chart of accounts and fiscal years<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Erilaisten tilikarttojen ja tilivuosien tuki<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source><bpt id="p1">**</bpt>report on external data<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Ulkoisten tietojen raportti<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>No</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source><bpt id="p1">**</bpt>Support consolidations<ept id="p1">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Konsolidointien tuki<ept id="p1">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Yes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kyllä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Limited Can report on multiple companies but use accounting currency only</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rajoitettu raportointi useissa yrityksissä mutta vain kirjanpitovaluutan käyttö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>In addition to the user interface in the original <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> workspace, new KPIs, charts, and financial statements are now available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alkuperäisen <bpt id="p1">**</bpt>Talousjohtajan yhteenveto<ept id="p1">**</ept> -työtilan käyttöliittymän lisäksi uudet tunnusluvut, kaaviot ja tilinpäätökset ovat käytettävissä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>The following financial statements are available:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavat tilinpäätökset ovat käytettävissä:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Trial balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pääkirja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Balance sheet</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tase</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Income statement by region</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aluekohtainen tuloslaskelma</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Income statement actual vs. budget</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuloilmoitus – todellinen vs. budjetti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Income statement with variances</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tuloslaskelma ja varianssit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>12-month trend income statement</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12 kuukauden trendin tuloslaskelma</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Expenses three-year trend</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kulujen kolmen vuoden trendi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Expenses by vendor</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajakohtaiset kulut</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Sales by customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakaskohtainen myynti</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>Edit visuals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visualisointien muokkaus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>In the initial release of <bpt id="p1">**</bpt>Financial Insights<ept id="p1">**</ept>, none of the visuals can be edited.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Taloushallinnon tietojen<ept id="p1">**</ept> ensimmäisessä versiossa visualisointeja ei voitu muokata.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>In future releases, users who have the appropriate security will be able to create new visuals, copy existing visuals, and edit visuals.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tulevissa versioissa käyttäjät, joilla on soveltuvat käyttöoikeudet, voivat luoda uusia visualisointeja, kopioida aiemmin luotuja visualisointeja ja muokata visualisointeja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Although the .pbix files that contain the reports are available as resources, we don't recommend that you edit the default reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaikka raportit sisältävät .pbix-tiedostot ovat käytettävissä resursseina, oletusraporttien muokkaamista ei suositella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Additional changes will be made to the data model, default reports, and custom financial statement visual that are used to create the financial statements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisämuutoksia tehdään tilinpäätösten luonnissa käytettävään tietomalliin, oletusraportteihin ja mukautettuun raportin visualisointiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Therefore, to take advantage of new features and changes to the data model in the next release, you will have to redo any changes that you made to the default reports through Microsoft Power BI Desktop.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jotta voisit käyttää hyväksesi seuraavan version uusia ominaisuuksia ja tietomallissa tehtyjä muutoksia, sinun olisikin tehtävä uudelleen kaikki oletusmalleihin Microsoft Power BI Desktopissa tekemäsi muutokset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Filtering</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suodatus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Users can filter the report by using the <bpt id="p1">**</bpt>Filter<ept id="p1">**</ept> pane on the left.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjät voivat suodattaa raportin vasemmalla olevan <bpt id="p1">**</bpt>Suodatus<ept id="p1">**</ept>-ruudun avulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>This pane is the same pane that is available through Power BI Desktop.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tätä samaa ruutua voi käyttää myös Power BI Desktopista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>There are various levels of filtering, some of which might not be available, depending on what you've selected on a page (tab) or whether you're using the drill-through capabilities:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suodatustasoja on useita, eivätkä kaikki ole välttämättä käytettävissä sen mukaan, mitä valintoja olet tehnyt sivulla (välilehdessä), tai oletko käyttämässä porautumistoimintoja:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source><bpt id="p1">**</bpt>Report-level filters<ept id="p1">**</ept> – These filters are applied to all visuals on all pages (tabs).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Raporttitason suodattimet<ept id="p1">**</ept> – näitä suodattimia käytetään kaikkien sivujen (välilehtien) kaikissa visualisoinneissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source><bpt id="p1">**</bpt>Page-level filters<ept id="p1">**</ept> – These filters are applied to all visuals on the active tab. These filters are applied on top of the report-level filters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Sivutason suodattimet<ept id="p1">**</ept> – Näitä suodattamia käytetään kaikissa aktiivisen välilehden visualisoinneissa. Niitä käytetään raporttitason suodattimien jälkeen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source><bpt id="p1">**</bpt>Visual-level filters<ept id="p1">**</ept> – These filters are applied only to the selected visual.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Visualisointitason suodattimet<ept id="p1">**</ept> – Näitä suodattimia käytetään vain valitussa visualisoinnissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>These filters are applied on top of the page level filters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näitä suodattimia käytetään sivutason suodattimien ohella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source><bpt id="p1">**</bpt>Drill-through filter<ept id="p1">**</ept> – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Porautumissuodatin<ept id="p1">**</ept> – Tämä suodatin suodattaa nykyiseen visualisointiin käytettävästä lähdevisualisoinnista, kun poraudut lähdevisualisoinnista nykyiseen visualisointiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Filter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suodatus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>To remove a specific filter value, select the eraser symbol next to it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit poistaa tietyn suodatusarvon valitsemalla sen vieressä pyyhinsymbolin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>Don't remove a filter by selecting the X. If you select the X, the field that you're filtering on is removed as a filter option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Älä poista suodatinta valitsemalla X. Jos valitse X, suodatettava kenttä poistetaan suodatusvaihtoehdoista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>If you accidently remove a field from the filter, close the workspace, and then reopen it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos poista kentän vahingossa suodattimesta, sulje työtila ja avaa se sitten uudelleen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>The default filter settings will be reapplied.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletussuodatusasetukset otetaan uudelleen käyttöön.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>By default, when you first open workspaces, the active legal entity is used as the report-level filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun avaat työtilan ensimmäisen kerran, aktiivista yritystä käytetään oletusarvoisesti raporttitason suodattimena.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>Depending on their security, users might be able to add other legal entities or change the default legal entity that is selected in the filter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjät voivat käyttöoikeuksiensa mukaan ehkä lisätä muita yrityksiä tai vaihtaa suodattamisessa valittuna olevaa oletusyritystä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>The <bpt id="p1">**</bpt>Fiscal calendar<ept id="p1">**</ept> filter is required so that the correct calendar is used for the visual.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kirjanpidon vuosikalenteri<ept id="p1">**</ept> -suodatin on pakollinen sen vuoksi, että visualisoinnissa käytettäisiin oikeaa kalenteria.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>By default, the report-level filter is set to the active legal entity's fiscal calendar.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raporttitason suodattimeksi on oletusarvoisesti määritetty aktiivisen yrityksen kirjanpidon vuosikalenteri.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>If you change the filter to a fiscal calendar that has a different start or end date, the beginning balances won't be included.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos vaihdat suodattimeksi kirjanpidon vuosikalenterin, joka alku- tai loppupäivämäärä on erilainen, alkusaldoja ei sisällytetä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Therefore, your <bpt id="p1">**</bpt>Balance sheet<ept id="p1">**</ept> financial statements won't show the correct balances.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vuoksi <bpt id="p1">**</bpt>Tase<ept id="p1">**</ept>-tilinpäätöksissä näkyvä saldo ei ole oikea.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>If you select an additional fiscal calendar in the filter, you will have an additional set of columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos valitse suodattimessa ylimääräisen kirjanpidon vuosikalenterin, saat käyttöösi lisää sarakkeita.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>Each additional set of columns shows the amounts for a different fiscal calendar.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kussakin lisäsarakejoukossa on kirjanpidon eri vuosikalenterin summat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>The <bpt id="p1">**</bpt>Posting layer<ept id="p1">**</ept> filter is also required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myös <bpt id="p1">**</bpt>Kirjanpitotaso<ept id="p1">**</ept>-taso on pakollinen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>By default, the filter is set to Current.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suodattimeksi on oletusarvoisesti määritetty Valittu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>You can select additional posting layers in the filter to show the aggregated amounts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit valita suodattimessa muita kirjanpitotasoja, jos haluat nähdä kootut summat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Filters are also available for the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Fiscal year<ept id="p2">**</ept> fields.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myös <bpt id="p1">**</bpt>Päivämäärä<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Tilivuosi<ept id="p2">**</ept>-kentissä on suodattimia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>Typically, these filters are applied at the page level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näitä suodattimia käytetään yleensä sivutasolla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>By default, the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> filter uses a relational date that you can change.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Päivämäärä<ept id="p1">**</ept>-kenttää oletusarvoisesti suhteellista päivämäärä, jota voi muuttaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>You can also remove the relational date filter and use the <bpt id="p1">**</bpt>Fiscal year<ept id="p1">**</ept> filter instead.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit myös poistaa suhteellisen päivämäärän suodattimen ja käyttää sen sijaan <bpt id="p1">**</bpt>Tilivuosi<ept id="p1">**</ept>-suodatinta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>Currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuutta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>All visuals that report on general ledger data show amounts in the accounting currency.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki kirjanpidon tietoja raportoivat visualisoinnit näyttävät summat kirjanpitovaluuttana.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Therefore, when you filter on the legal entity, you must be careful to include only legal entities that have the same accounting currency.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niinpä yrityksen mukaan suodatettaessa on oltava huolellinen, että vain samaa kirjanpitovaluuttaa käyttävät yritykset sisällytetään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Otherwise, you will aggregate data in different currencies.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muussa tapauksessa koottavilla tiedoilla on eri valuutta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>All visuals that report on subledger data, such as the <bpt id="p1">**</bpt>Cash flow forecast<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Top 10<ept id="p2">**</ept> visuals, show amounts in the system currency.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kaikki alareskontran tietoja raportoivat visualisoinnit näyttävät summat järjestelmän valuuttana. Tällaisia tietoja ovat esimerkiksi <bpt id="p1">**</bpt>Kassavirtaennuste<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>10 parasta<ept id="p2">**</ept> -visualisoinnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>The system currency and system exchange rate type are defined on the <bpt id="p1">**</bpt>System parameters<ept id="p1">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Järjestelmän valuutta ja järjestelmän vaihtokurssin tyyppi määritetään <bpt id="p1">**</bpt>Järjestelmän parametrit<ept id="p1">**</ept>-sivulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>The <bpt id="p1">**</bpt>Balance by bank account<ept id="p1">**</ept> visual uses amounts in the bank accounts' currency.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Saldo pankkitilin mukaan<ept id="p1">**</ept> -visualisointi käyttää summia pankkitilin valuuttana.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>Dimensions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dimensiot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>The default financial statements don't include any financial dimensions but are focused only on the main account.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletustilinpäätökset eivät sisällä taloushallinnon dimensioita vaan keskittyvät päätiliin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Support for financial dimensions will be available in future releases, when the reports become editable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taloushallinnon dimensioiden tuki on käytettävissä tulevissa versioissa, kun raportit ovat muokattavissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Organizations will then be able to filter on financial dimension values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organisaatiot sitten voivat silloin suodattaa taloushallinnon dimensioiden arvojen perusteella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>Some financial statements contain dimensions that are based on subledger transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Joissakin tilinpäätöksissä on dimensioita, jotka perustavat alareskontran tapahtumiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>The goal of the new financial statements it to enable filtering on dimensions that aren't set up as financial dimensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusien raporttien tavoitteena on mahdollistaa sellaisten dimensioiden suodattaminen, joita ei ole määritetty taloushallinnon dimensioiksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>For example, the default Expenses by vendor report lets you expand down beyond the main account, so that you can see the balances broken down by vendor.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi toimittajakohtaisten kulujen oletusraporttia voi tarkentaa päätilin ulkopuolelle, joten toimittajakohtaisesti eritellyt saldot ovat näkyvissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>The vendor isn't set up as a financial dimension.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajaa ei ole määritetty taloushallinnon dimensiona.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Instead, the system returns to the originating subledger transaction to find the vendor.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sen sijaan järjestelmä etsii toimittajan palauttamalla alkuperäisen alareskontran tapahtuman.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>The following dimensions are used on the default reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavia dimensioita käytetään oletusraporteissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>None of these dimensions are financial dimensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mikään niistä ei ole taloushallinnan dimensio.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>Vendor</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittaja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>Vendor group</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toimittajaryhmä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>Customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakas</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>Customer group</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakasryhmä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>Country/region</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Maa/alue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>State/province</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osavaltio tai provinssi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>City</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Paikkakunta</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>If you summarize transactions for multiple vendors or customers in a single voucher by using the financial journals, the data will be incorrect.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos teet useiden toimittajien tai asiakkaiden yhteenvedon yhteen tositteeseen talouskirjauskansioiden avulla, tiedot eivät ole oikein.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Reporting can't determine which vendor or customer is related to a specific ledger account in a journal entry, because that information isn't maintained anywhere.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportointi ei voi määrittää, mikä toimittaja vai asiakas liittyy tiettyyn kirjauskansioviennin kirjanpitotiliin, koska kyseistä tietoa ei ole missään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>Therefore, we do not recommend that you enter multiple vendors, customers, fixed assets, or projects in a single voucher.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vuoksi useiden toimittajien, asiakkaiden, käyttöomaisuuden tai projektien tietojen kirjaamista yhteen tositteeseen ei suositella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>Drill on data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietoihin porautuminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>Various levels of drilling are available through Power BI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI:n kautta on käytettävissä erilaisia poraustasoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Each level has a different name and different functionality.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jokaisella tasolla on oma nimi ja omat toiminnot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>You can also drill on rows and columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit porautua myös riveihin ja sarakkeisiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>This section discusses the various options by using the <bpt id="p1">**</bpt>Trial balance<ept id="p1">**</ept> financial statement as an example and showing how you can drill on the rows.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä osassa käsitellään erilaisia vaihtoehtoja käyttämällä esimerkkinä <bpt id="p1">**</bpt>Pääkirja<ept id="p1">**</ept>-raporttia ja näyttämällä, miten riveihin poraudutaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>The same functionality exists for columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeissa on samat toiminnot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>You just have to change the <bpt id="p1">**</bpt>Drill on<ept id="p1">**</ept> setting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vain <bpt id="p1">**</bpt>Poraudu<ept id="p1">**</ept>-asetus on vaihdettava.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>In the following illustration, the <bpt id="p1">**</bpt>Trial balance<ept id="p1">**</ept> statement is collapsed to the highest level of the row hierarchy, the main account type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa kuvassa <bpt id="p1">**</bpt>Pääkirja<ept id="p1">**</ept>-raportti on tiivistetty rivihierarkian ylimmälle tasolle päätilin tyyppiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>Trial Balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pääkirja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>To view the next level of the hierarchy, the main account categories, you can set the <bpt id="p1">**</bpt>Drill on<ept id="p1">**</ept> field to <bpt id="p2">**</bpt>Rows<ept id="p2">**</ept> and then select the <bpt id="p3">**</bpt>Expand<ept id="p3">**</ept> button (the third button after the Drill on field).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit tarkastella hierarkian seuraavaa tasoa eli pääkirjan luokkia, valitsemalla <bpt id="p1">**</bpt>Poraudu<ept id="p1">**</ept>-kentässä ensin <bpt id="p2">**</bpt>Rivit<ept id="p2">**</ept> ja sitten <bpt id="p3">**</bpt>Laajenna<ept id="p3">**</ept>-painikkeen (Poraudu-kentän kolmas painike).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>You now see all the main account categories expanded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näet nyt kaikki päätilin luokat laajennettuina.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Currently, Power BI doesn't let you expand only one row or column but still see all the other rows or columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI:ssä ei voi tällä hetkellä laajentaa yhtä riviä tai saraketta siten, että kaikki muut rivit tai sarakkeet olisivat näkyvissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Trial Balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pääkirja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>To expand to the main accounts for all rows, you can again use the <bpt id="p1">**</bpt>Expand<ept id="p1">**</ept> button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat laajentaa kaikkien rivien päätileihin, valitse uudelleen <bpt id="p1">**</bpt>Laajenna<ept id="p1">**</ept>-painike.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>However, to drill down to the main accounts for only one row, first select the <bpt id="p1">**</bpt>Drill down<ept id="p1">**</ept> button (the single downward-pointing arrow on the right side of the window), and then select the row to drill down on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos kuitenkin haluat porautua vain yhden rivin päätileihin, valitse ensin <bpt id="p1">**</bpt>Poraudu<ept id="p1">**</ept>-painike (alanuoli oikealla ikkunassa) ja sitten rivi, johon haluat porautua.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>The following illustration shows the result when the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> row is selected after the <bpt id="p2">**</bpt>Drill down<ept id="p2">**</ept> button is selected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavassa kuvassa näkee, mitä tapahtuu, kun <bpt id="p1">**</bpt>Myynti<ept id="p1">**</ept>-rivi on valittu <bpt id="p2">**</bpt>Poraudu<ept id="p2">**</ept>-painikkeen valinnan jälkeen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>Trial Balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pääkirja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>After you drill down on a single row, multiple clicks are required in order to return to the full trial balance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet porautunut yhteen riviin, koko pääkirjaan palaaminen edellyttää useita napsautuksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>The <bpt id="p1">**</bpt>Drill up<ept id="p1">**</ept> button (the first button after the <bpt id="p2">**</bpt>Drill<ept id="p2">**</ept> on field) drills up only in the context of the <bpt id="p3">**</bpt>Sales<ept id="p3">**</ept> category, as shown in the following illustration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Poraudu ylöspäin<ept id="p1">**</ept> -painikkeella (ensimmäinen painike <bpt id="p2">**</bpt>Poraudu<ept id="p2">**</ept>-kentän jälkeen) poraudutaan <bpt id="p3">**</bpt>Myynti<ept id="p3">**</ept>-luokassa ylöspäin seuraavan kuvan osoittamalla tavalla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>Trial Balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pääkirja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>You can continue to use the <bpt id="p1">**</bpt>Drill up<ept id="p1">**</ept> button to return to the highest level of summarization for the rows.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit palata rivien yhteenvedon korkeimmalle tasolla jatkamalla <bpt id="p1">**</bpt>Poraudu<ept id="p1">**</ept>-painikkeen käyttöä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>Power BI also has a button that lets you go to the next level in the hierarchy (the second button after the <bpt id="p1">**</bpt>Drill on<ept id="p1">**</ept> field).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI:ssä on myös painike, jolla voit siirtyä hierarkian seuraavalle tasolle (toinen painike <bpt id="p1">**</bpt>Poraudu<ept id="p1">**</ept>-kentän jälkeen).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>The effect of this button differs from the effect of the <bpt id="p1">**</bpt>Expand<ept id="p1">**</ept> button (the third button after the <bpt id="p2">**</bpt>Drill on<ept id="p2">**</ept> field), which is used to expand the hierarchy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä painikkeen vaikutus on toinen kuin <bpt id="p1">**</bpt>Laajenna<ept id="p1">**</ept>-painikkeessa (kolmas painike <bpt id="p2">**</bpt>Poraudu<ept id="p2">**</ept>-kentän jälkeen), koska sitä käytetään hierarkian laajentamiseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>When you expand the hierarchy, the hierarchy is maintained on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun laajennat hierarkian, hierarkiaa ylläpidetään raportissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>For example, as was shown earlier, if you expand on the main account type, you still see the main account type on the report.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos esimerkiksi laajennat edellä näytetyllä tavalla päätilin tyypin, näet edelleen päätilin tyypin pääraportissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>However, when you go to the next level in the hierarchy, the report no longer shows the parent in the hierarchy, as shown in the following illustration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun hierarkiassa sen sijaan siirrytään seuraavalle tasolle, raportti ei enää näytä ylätasoa hierarkiassa. (Katso seuraava kuva.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>Trial Balance</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pääkirja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>To see the transaction details behind the summarized balances, you can select some amounts to drill back into Financial and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos haluat nähdä tapahtumatiedot, joihin yhteenvetosaldot perustuvat, voit valita joitakin summia, joissa haluat porautua takaisin Financial and Operationsiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>The drill-back from the financial statements takes you to the Accounting source explorer (ASE), not to the voucher transactions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun poraudutut raporteista taaksepäin, päädyt kirjanpitolähteen hallintaan (ASE) tositetapahtumien sijaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>The ASE doesn't show just the accounting entries in the general ledger.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpitolähteen hallinta ei näytä vain kirjanpidon kirjanpitotapahtumia,</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source>Instead, it shows the details of the subledger transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">vaan näkyvissä on myös alareskontratapahtuman tiedot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>Therefore, you get much more detail about the originating transaction and can use it for analysis.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Saatkin paljon enemmän tietoja alkuperäistä tapahtumasta analyysia varten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>For example, you can see who the vendor or customer was, what the customer bought or the vendor sold, and even what project was on the transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näet esimerkiksi, kuka toimittaja tai asiakas oli, mitä asiakas osti tai toimittaja myi sekä jopa mikä oli tapahtumassa käytetty projekti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>The following filters from the financial statements are sent to the ASE, so that the ASE shows the transactions that are aggregated:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportin seuraavat suodattimet lähetetään kirjanpitolähteen hallintaan, jolloin näkyviin tulee kootut tapahtumat:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>Required fields for filtering:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pakolliset suodatuskentät:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>Legal entity</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oikeushenkilö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source>Fiscal calendar</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kirjanpidon vuosikalenteri</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>Year</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vuosi(a)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>Main account ID</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Päätilin tunnus</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>Optional fields for filtering:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valinnaiset suodatuskentät:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>Quarter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vuosineljännes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>Month</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuukausi</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>Period</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jakso</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source>If you don't expand down far enough on a row, the drill-down doesn't work.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos et laajenna rivissä riittävän pitkälle, porautuminen ei toimi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>For example, if you expand down only to the main account category, you can't drill down into the ASE on the balance, because the main account is a required field for filtering in the ASE.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos laajennat vain päätilin luokkaan, et voi porautua saldon kirjanpitolähteen hallintaan, sillä päätili on kirjanpitolähteen hallinnan pakollinen suodatuskenttä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source>If you expand down too far on a row, the additional filters on the financial statements aren't sent to the ASE.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos laajennat liian pitkälle rivillä, raporttien lisäsuodattimia ei lähetetä kirjanpitolähteen hallintaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>Therefore, you might see a difference in your numbers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vuoksi luvut voivat olla erilaisia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source>For example, if you expand down to the country or region on the rows of the Income statement by region financial statement, the country or region isn't be included as a filter in the ASE.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos esimerkiksi laajennat maahan tai alueeseen Aluekohtainen tuloslaskelma -raportin riveillä, maata tai aluetta ei sisällytetä kirjanpitolähteen hallinnan suodattimena.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>You can drill further down on the financial statement rows or columns than the ASE currently supports for filtering.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit porautua raportin riveillä tai sarakkeissa niin syvälle, että kirjanpitolähteen hallinta ei tällä hetkellä tue kyseisten tietojen suodatusta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source>Therefore, in some situations, the sum of detailed transactions in the ASE won't match the balance that you're drilling back on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niinpä joissakin tilanteissa eriteltyjen tapahtumien summa kirjanpitolähteen hallinnassa ei vastaa saldoa, johon poraudut takaisin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>This functionality will continue to be enhanced in the future.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän toiminnon kehittämistä jatketaan tulevaisuudessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>Hierarchies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hierarkiat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>The default financial statements use two hierarchies to drill and expand on the data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletusraportit käyttävät tietoihin porautumiseen ja tietojen laajentamiseen kahta hierarkiaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>One hierarchy is for the rows, and the other hierarchy is for the columns.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toinen hierarkia koskee rivejä ja toinen sarakkeita.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>Both hierarchies are predefined in the design of the financial statement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Molemmat hierarkiat on määritetty valmiiksi raportin rakenteessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>For most financial statements, the row hierarchy is <bpt id="p1">**</bpt>Main account type<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Main account categories<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Main account<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Useimmissa raporteissa rivihierarkia on <bpt id="p1">**</bpt>Päätilin tyyppi<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Päätilin luokat<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Päätili<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>However, some reports have additional fields, such as Country and Region.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Joissakin raporteissa on kuitenkin lisäkenttiä, kuten Maa ja alue.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>The additional nodes of the hierarchy are based on subledger data for each transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hierarkian lisäsolmu perustuvat kunkin tapahtuman alareskontran tietoihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source>For the columns, the hierarchy is focused on the legal entities and the fiscal periods.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sarakkeiden hierarkia keskittyy yrityksiin ja tilikausiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>For most financial statements, the column hierarchy is <bpt id="p1">**</bpt>Legal entity<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Fiscal calendar<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Fiscal year<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>Quarter<ept id="p4">**</ept> <ph id="ph4">\&gt;</ph> <bpt id="p5">**</bpt>Period<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Useimmissa raporteissa sarakehierarkia on <bpt id="p1">**</bpt>Yritys<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Kirjanpidon vuosikalenteri<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Tilivuosi<ept id="p3">**</ept> <ph id="ph3">\&gt;</ph> <bpt id="p4">**</bpt>Vuosineljännes<ept id="p4">**</ept> <ph id="ph4">\&gt;</ph> <bpt id="p5">**</bpt>Kausi<ept id="p5">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source>Currently, the financial statements don't support the organizational hierarchies, which let you aggregate data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportit eivät tällä hetkellä tue organisaatiohierarkioita, joista voisi koota tietoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>Data limitations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietojen rajoitukset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>The financial statement visuals have a limit on the number of rows that can be shown.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Raportin visualisoinneissa voi näytettävien rivien määrä on rajallinen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="364">
-          <source>Currently, the limit is set to 30,000.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällä hetkellä rajaksi on määritetty 30 000.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="365">
-          <source>If you exceed this limit, the visual will have a warning symbol to notify you about this situation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos tämä raja ylittyy, visualisointi ilmoittaa siitä varoitussymbolilla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="366">
-          <source>Data limitations</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tietojen rajoitukset</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="367">
-          <source>If the maximum is exceeded, the totals that appear on the financial statement will be incorrect, because not all the rows were loaded into the visual.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos enimmäismäärä ylitetään, raportissa näkyvät kokonaissummat ovat virheellisiä, koska kaikkia rivejä ei ole ladattu visualisointiin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="368">
-          <source>Empty rows</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tyhjät rivit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="369">
-          <source>Power BI doesn't provide an option to hide and show empty rows.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI:ssä ei ole tyhjien rivien piilottamis- ja näyttämisasetusta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="370">
-          <source>If a row doesn't have any data, the row won't appear in the visual.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos rivillä ei ole tietoja, rivi ei näy visualisoinnissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="371">
-          <source>Additional resources for Power BI</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Power BI:n lisäresurssit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="372">
-          <source>The information in the following resources isn't required in order to enable the embedded reports for the <bpt id="p1">**</bpt>CFO overview<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Financial Insights<ept id="p2">**</ept> workspace in a production environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraavissa resursseissa olevat tiedot eivät ole välttämättömiä otettaessa käyttöön upotettuja raportteja tuotantoympäristön <bpt id="p1">**</bpt>Talousjohtajan yhteenveto<ept id="p1">**</ept>- tai <bpt id="p2">**</bpt>Taloushallinnon tiedot<ept id="p2">**</ept> -työtilassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="373">
-          <source>Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports into Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niistä on kuitenkin hyötyä kehityskehyksissä ja tilanteissa, joissa halutaan upottaa omia Power BI -raportteja Finance and Operationsiin.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Taloushallinnon tiedot
+description: Taloushallinnon tiedot kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätöksiä.
+author: kweekley
+manager: AnnBe
+ms.date: 05/22/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+audience: Application User, IT Pro
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 106233
+ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
+ms.search.region: Global
+ms.author: kweekley
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 9edcb192d2fac5acb954d8b87be691f0943e0db7
+ms.sourcegitcommit: 23ab3c99d05869ea2c73514754608e8684697d8c
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595073"
+---
+# <a name="financial-insights"></a><span data-ttu-id="d6a3a-103">Taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="d6a3a-103">Financial Insights</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="d6a3a-104">**Taloushallinnon tiedot** kerää Microsoft Power BI:n avulla yhteen taloushallinnon tunnusluvut, kaaviot ja tilinpäätöksiä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-104">**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.</span></span> <span data-ttu-id="d6a3a-105">Power BI on upotettu Microsoft Dynamics 365 Finance and Operationsiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-105">Power BI is embedded in Microsoft Dynamics 365 Finance and Operations.</span></span> <span data-ttu-id="d6a3a-106">**Taloushallinnon tiedoissa** keskitytään on analyyttiseen raportointiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-106">The focus of **Financial Insights** is analytical reporting.</span></span> <span data-ttu-id="d6a3a-107">Organisaation työntekijät voivat tarkastella tietoja, tutkia niitä, tiedostaa ne ja toimia.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-107">Personas across an organization can view, research, understand, and act.</span></span> 
+
+<span data-ttu-id="d6a3a-108">**Taloushallinnon tiedot** yhdistää kirjanpidon ja alareskontran tiedot ja tuottaa niiden avulla kattavan kuvan organisaation taloudellisesta tilasta.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-108">**Financial Insights** combines data from the general ledger and subledgers to give a more complete picture of the financial health of an organization.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d6a3a-109">Tässä asiakirjassa käytetään seuraavia Power BI -termejä:</span><span class="sxs-lookup"><span data-stu-id="d6a3a-109">This document uses the following Power BI terminology:</span></span>
+> 
+> - <span data-ttu-id="d6a3a-110">**Raportti** – yksi .pbix-tiedosto, johon kaikkien välilehtien visualisoinnit tallennetaan.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-110">**Report** – A single .pbix file that all the visuals on all tabs are saved to.</span></span>
+> - <span data-ttu-id="d6a3a-111">**Sivu** – Yhden välilehden sisältävä .pbix-tiedosto.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-111">**Page** – A tab in a single .pbix file.</span></span> <span data-ttu-id="d6a3a-112">Kullakin sivulla voi olla useita visualisointeja.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-112">Each page can contain one or more visuals.</span></span>
+> - <span data-ttu-id="d6a3a-113">**Visualisointi** – Yksi tietolähde, kuten kortti, tunnusluku, kaavio, taulukko tai raportti.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-113">**Visual** – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement.</span></span> <span data-ttu-id="d6a3a-114">Jos sivulla oleva visualisointi on raportti, siinä ei voi olla muita visualisointeja raportoitavien tietojen koon vuoksi.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-114">A page that has a financial statement as a visual can have no other visuals, because of the size of the data that is being reported on.</span></span>
+
+<span data-ttu-id="d6a3a-115">Tällä hetkellä **taloushallinnon tiedoissa** voi katsella aktiivisen yrityksen ja kaikkien yritysten tietoja.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-115">Currently, **Financial Insights** is used to view data for either the active legal entity or all legal entities.</span></span> <span data-ttu-id="d6a3a-116">Tulevissa versioissa työtila kehittyy paikaksi, jossa voit muokata ja luoda visualisointeja Power BI:n avulla.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-116">In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.</span></span>
+
+<span data-ttu-id="d6a3a-117">Vaikka **Talousjohtajan yhteenveto** -työtilassa on samat visualisoinnit **taloushallinnon tiedoissa**, se keskittyy ennen kaikkea aiemmin luotujen tietojen tarkasteluun ja suodattamiseen.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-117">The **CFO overview** workspace shows the same visuals as **Financial Insights**, but is focused on letting you view and filter the data on existing reports.</span></span> <span data-ttu-id="d6a3a-118">Tulevissa versioissa voit lisätä uusia visualisointeja **Taloushallinnon tiedot** -työtilaan.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-118">In future releases, you will be able to add new visuals to the **Financial Insights** workspace.</span></span> <span data-ttu-id="d6a3a-119">Uudet visualisointeja on ehkä mahdollista käyttää myös muissa työtiloissa, jotka keskittyvät toisiin rooleihin, kuten projekti- tai ostoreskontrapäälliköihin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-119">The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers.</span></span> <span data-ttu-id="d6a3a-120">**Talousjohtajan yhteenveto** -työtilassa on jatkossakin näkyvissä kaikkien yritysten tiedot riippumatta siitä, minkä yrityksen käyttöoikeudet roolilla on.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-120">The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.</span></span>
+
+## <a name="finance-and-operations-setup"></a><span data-ttu-id="d6a3a-121">Finance and Operationsin asetukset</span><span class="sxs-lookup"><span data-stu-id="d6a3a-121">Finance and Operations setup</span></span>
+<span data-ttu-id="d6a3a-122">**Kirjanpito**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-122">**General ledger**</span></span>
+
+<span data-ttu-id="d6a3a-123">Päätilityypin ja päätililuokkien avulla täytetään **taloushallinnon tietojen** **Tase**-raportin ja erilaisten **Tuloslaskelma**-raporttien oletuspäätilit.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-123">The main account type and the main account categories are used to fill in appropriate default main accounts on the **Balance sheet** financial statement and the various **Income statement** financial statements in **Financial Insights**.</span></span>
+
+<span data-ttu-id="d6a3a-124">Sinun on määritettävä **Päätilit**-sivulla päätili, jotta siihen voidaan määrittää jokin seuraavista tyypeistä:</span><span class="sxs-lookup"><span data-stu-id="d6a3a-124">On the **Main accounts** page, you must define your main account so that one of the following types is assigned to it:</span></span>
+
+- <span data-ttu-id="d6a3a-125">Myyntituotto</span><span class="sxs-lookup"><span data-stu-id="d6a3a-125">Revenue</span></span>
+- <span data-ttu-id="d6a3a-126">Expense</span><span class="sxs-lookup"><span data-stu-id="d6a3a-126">Expense</span></span>
+- <span data-ttu-id="d6a3a-127">Käyttöomaisuus</span><span class="sxs-lookup"><span data-stu-id="d6a3a-127">Assets</span></span>
+- <span data-ttu-id="d6a3a-128">Velat</span><span class="sxs-lookup"><span data-stu-id="d6a3a-128">Liabilities</span></span>
+- <span data-ttu-id="d6a3a-129">Oma pääoma</span><span class="sxs-lookup"><span data-stu-id="d6a3a-129">Equity</span></span>
+
+<span data-ttu-id="d6a3a-130">Älä määritä päätileille mitään muuta päätilin tyyppiä, kuten **Tase** tai **Voitto ja tappio**.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-130">Do not assign any other main account type, such as **Balance sheet** or **Profit and Loss**, to your main accounts.</span></span> <span data-ttu-id="d6a3a-131">Raportit eivät voi määrittää päätilin tyyppiä, kun muita päätilityyppejä on määritetty, sillä ne eivät ole riittävän yksityiskohtaisia.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-131">Reporting can't determine the type of main account when other main account types are assigned, because they aren't granular enough.</span></span> <span data-ttu-id="d6a3a-132">Päätilin tyyppi on määritettävä näyttämään velat ja tuotto raporteissa positiivisina summina.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-132">The type of main account must be determined to show liabilities and revenue as positive amounts on financial reports.</span></span>
+
+<span data-ttu-id="d6a3a-133">Jokaiselle päätilille on määritettävä päätililuokka, sillä muuten ne eivät näy tilinpäätöksissä eivätkä sisälly muihin visualisointeihin, kuten tunnuslukuihin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-133">To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category.</span></span> <span data-ttu-id="d6a3a-134">Päätililuokkia on parannettu siten, että sisältävät näyttöjärjestyksen.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-134">The main account categories have been enhanced so that they include a display order.</span></span> <span data-ttu-id="d6a3a-135">Näyttöjärjestystä käytetään nimenomaisesti **taloushallinnon tietojen** raporteissa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-135">The display order is used specifically on financial statements in **Financial Insights**.</span></span> <span data-ttu-id="d6a3a-136">Kun olet muokannut päätilin luokkaa tai lisännyt uuden luokat, voit muuttaa **Näyttöjärjestys**-arvon määrittämään järjestyksessä, jossa päätilin luokat näytetään raportissa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-136">After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement.</span></span> <span data-ttu-id="d6a3a-137">Jos useiden päätilin luokkien näyttöjärjestystä on muutettava, Avaa Excelissä -toiminto nopeuttaa muokkausta ja muutosten julkaisemista takaisin Finance and Operationsiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-137">If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to Finance and Operations.</span></span>
+
+## <a name="entity-store"></a><span data-ttu-id="d6a3a-138">Yksikkösäilö</span><span class="sxs-lookup"><span data-stu-id="d6a3a-138">Entity store</span></span>
+<span data-ttu-id="d6a3a-139">**Taloushallinnon tiedoissa** olevat tiedot noudetaan yksikkösäilöstä (**Järjestelmänvalvoja** \> **Asetukset** \> **Yksikkösäilö**).</span><span class="sxs-lookup"><span data-stu-id="d6a3a-139">The data for **Financial Insights** is pulled from the Entity store (**System administration** \> **Setup** \> **Entity store**).</span></span> <span data-ttu-id="d6a3a-140">Jos avaat **Talousjohtajan yhteenveto**- tai **Taloushallinnon tiedot** -työtilan ja seuraava varoitussanoma avautuu visualisoinneissa, yksiköt on päivitettävä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-140">If you open the **CFO overview** or **Financial Insights** workspace, and the following warning message appears in the visuals, you must update the entities.</span></span>
+
+![Varoitus](./media/Cantdisplay.png)
+
+<span data-ttu-id="d6a3a-142">Seuraavat yksiköt on päivitettävä, jos haluat nähdä **Taloushallinnon tiedot**- ja **Talousjohtajan yhteenveto** -työtilojen tiedot:</span><span class="sxs-lookup"><span data-stu-id="d6a3a-142">You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:</span></span>
+
+- <span data-ttu-id="d6a3a-143">Tilinpäätöstapahtumien tietoversio 2 (**Huomautus:** Tämä on uusi versio 10.0.1 ja korvaa aiemman yksikön.)</span><span class="sxs-lookup"><span data-stu-id="d6a3a-143">Financial reporting transaction data version 2 (**Note:** This is new with version 10.0.1 and replaces the previous entity.)</span></span>
+- <span data-ttu-id="d6a3a-144">Taloushallinnon raportoinnin tapahtumatiedot</span><span class="sxs-lookup"><span data-stu-id="d6a3a-144">Financial reporting transaction data</span></span>
+- <span data-ttu-id="d6a3a-145">CustCollectionsBIMeasurements</span><span class="sxs-lookup"><span data-stu-id="d6a3a-145">CustCollectionsBIMeasurements</span></span>
+- <span data-ttu-id="d6a3a-146">LedgerCovLiquidityMeasurement</span><span class="sxs-lookup"><span data-stu-id="d6a3a-146">LedgerCovLiquidityMeasurement</span></span>
+- <span data-ttu-id="d6a3a-147">Ostokuutio</span><span class="sxs-lookup"><span data-stu-id="d6a3a-147">Purchase cube</span></span>
+- <span data-ttu-id="d6a3a-148">Myyntikuutio</span><span class="sxs-lookup"><span data-stu-id="d6a3a-148">Sales cube</span></span>
+
+<span data-ttu-id="d6a3a-149">Edellisessä versiossa LedgerActivityMeasure- ja VendPaymentBIMeasure-yksiköitä käytettiin **Talousjohtajan yhteenveto** -työtilan tiedoille.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-149">In the previous release, the LedgerActivityMeasure and VendPaymentBIMeasure entities were used for data in the **CFO overview** workspace.</span></span> <span data-ttu-id="d6a3a-150">Niitä ei kuitenkaan enää käytetä nykyisessä versiossa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-150">However, they are no longer used in the current release.</span></span>
+
+<span data-ttu-id="d6a3a-151">Voit määrittää toistuvan erätyön päivittämään yksiköiden tiedot säännöllisesti.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-151">You can define a recurring batch to regularly update the data in the entities.</span></span> <span data-ttu-id="d6a3a-152">Koska jokainen yksikkö muodostetaan kokonaan uudelleen päivityksen aikana, valitse yksikköpäivitysten ajankohta tai tiheys huolellisesti.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-152">Because each entity is completely rebuilt during an update, select the time and frequency of entity updates carefully.</span></span> <span data-ttu-id="d6a3a-153">Ensisijainen tilinpäätöksissä käytettävä yksikkö on FinancialReportingTransactionData.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-153">The primary entity that is used for financial statements is the FinancialReportingTransactionData entity.</span></span> <span data-ttu-id="d6a3a-154">Voitkin harkita sen päivittämistä muita useammin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-154">Therefore, you might decide to update that entity more often.</span></span>
+
+## <a name="security"></a><span data-ttu-id="d6a3a-155">Suojaus</span><span class="sxs-lookup"><span data-stu-id="d6a3a-155">Security</span></span>
+<span data-ttu-id="d6a3a-156">Upotettujen Power BI -raporttien tietoja ei voi tällä hetkellä rajoittaa niihin yritykseen, joiden käyttöoikeus käyttäjällä on.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-156">Currently, the data on embedded Power BI reports can't be limited to the legal entities that the user has access to.</span></span> <span data-ttu-id="d6a3a-157">Tämän vuoksi upotettuja Power BI -raportteja hallitaan suojausasetusten tehtävillä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-157">Therefore, the embedded Power BI reports are controlled through duties in the security setup.</span></span> <span data-ttu-id="d6a3a-158">Määritetyt tehtävät antavat joko kaikkien yritysten tai aktiivisen yrityksen tietojen käyttöoikeuden.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-158">The duties that are defined allow access to data for either all legal entities or only the active company.</span></span> <span data-ttu-id="d6a3a-159">Seuraavassa taulussa on olemassa olevat velvollisuudet ja roolit, joihin ne on määritetty.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-159">The following table shows the duties that exist and the roles that they are assigned to.</span></span> <span data-ttu-id="d6a3a-160">Velvollisuuksia voi poistaa tai ne voidaan määrittää eri rooleille organisaation tarpeiden mukaan.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-160">The duties can be removed or assigned to different roles, based on your organization's requirements.</span></span>
+
+| <span data-ttu-id="d6a3a-161">Tulli</span><span class="sxs-lookup"><span data-stu-id="d6a3a-161">Duty</span></span>                                    | <span data-ttu-id="d6a3a-162">Roolit</span><span class="sxs-lookup"><span data-stu-id="d6a3a-162">Roles</span></span> | <span data-ttu-id="d6a3a-163">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="d6a3a-163">Decription</span></span> |
+|-----------------------------------------|-------|------------|
+| <span data-ttu-id="d6a3a-164">Näytä talousjohtajan yhteenvedon työtila</span><span class="sxs-lookup"><span data-stu-id="d6a3a-164">View CFO Overview workspace</span></span>             | <span data-ttu-id="d6a3a-165">Talousjohtaja</span><span class="sxs-lookup"><span data-stu-id="d6a3a-165">Chief Financial Officer</span></span> | <span data-ttu-id="d6a3a-166">Tämä velvollisuus antaa Talousjohtajan yhteenveto -työtilan käyttöoikeuden.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-166">This duty provides access to the CFO overview workspace.</span></span> <span data-ttu-id="d6a3a-167">Aktiivista yritystä käytetään oletusarvoisesti suodattimena.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-167">By default, the active company is used as a filter.</span></span> <span data-ttu-id="d6a3a-168">Voit kuitenkin lisätä kaikki yritykset riippumatta siitä, onko käyttäjällä muiden yritysten käyttöoikeutta.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-168">However, you can add all legal entities, regardless of whether the user has access to the other legal entities.</span></span> |
+| <span data-ttu-id="d6a3a-169">Näytä nykyisen yrityksen taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="d6a3a-169">View financial insights current company</span></span> | <ul><li><span data-ttu-id="d6a3a-170">Kirjanpitäjä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-170">Accountant</span></span></li><li><span data-ttu-id="d6a3a-171">Laskentapäällikkö</span><span class="sxs-lookup"><span data-stu-id="d6a3a-171">Accounting manager</span></span></li><li><span data-ttu-id="d6a3a-172">Taloushallintopäällikkö</span><span class="sxs-lookup"><span data-stu-id="d6a3a-172">Accounting supervisor</span></span></li><li><span data-ttu-id="d6a3a-173">Tilintarkastaja</span><span class="sxs-lookup"><span data-stu-id="d6a3a-173">Auditor</span></span></li><li><span data-ttu-id="d6a3a-174">Budjettipäällikkö</span><span class="sxs-lookup"><span data-stu-id="d6a3a-174">Budget manager</span></span></li><li><span data-ttu-id="d6a3a-175">Pääjohtaja</span><span class="sxs-lookup"><span data-stu-id="d6a3a-175">Chief executive officer</span></span></li><li><span data-ttu-id="d6a3a-176">Talousjohtaja</span><span class="sxs-lookup"><span data-stu-id="d6a3a-176">Chief financial officer</span></span></li><li><span data-ttu-id="d6a3a-177">Laskentatoimen controller</span><span class="sxs-lookup"><span data-stu-id="d6a3a-177">Financial controller</span></span></li></ul> | <span data-ttu-id="d6a3a-178">Tämä velvollisuus antaa Taloushallinnon tiedot -työtilan käyttöoikeuden.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-178">This duty provides access to Financial Insights.</span></span> <span data-ttu-id="d6a3a-179">Aktiivista yritystä käytetään oletusarvoisesti suodattimena.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-179">By default, the active company is used as a filter.</span></span> <span data-ttu-id="d6a3a-180">Et voi lisätä muita yrityksiä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-180">You can't add other legal entities.</span></span> |
+| <span data-ttu-id="d6a3a-181">Näytä yritystenväliset taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="d6a3a-181">View financial insights cross company</span></span>   | <span data-ttu-id="d6a3a-182">Microsoft Dynamics 365 for Finance and Operations, Enterprise editionin versiossa 7.3 tätä velvollisuutta ei ole määritetty rooliin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-182">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn't assigned to a role.</span></span> <span data-ttu-id="d6a3a-183">Seuraavassa versiossa tämä velvollisuus määritetään talousjohtajan rooliin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-183">In the next release, this duty will be assigned to the Chief financial officer role.</span></span> | <span data-ttu-id="d6a3a-184">Tämä velvollisuus antaa Talousjohtajan yhteenveto -työtilan valikkovaihtoehdon käyttöoikeuden.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-184">This duty provides access to the menu item for the CFO overview workspace.</span></span> <span data-ttu-id="d6a3a-185">Aktiivista yritystä käytetään oletusarvoisesti suodattimena.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-185">By default, the active company is used as a filter.</span></span> <span data-ttu-id="d6a3a-186">Voit kuitenkin lisätä kaikki yritykset riippumatta siitä, onko käyttäjällä muiden yritysten käyttöoikeutta.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-186">However, you can add all legal entities, regardless of whether the user has access to the other legal entities.</span></span> |
+
+
+## <a name="financial-reporting-vs-finanical-insights"></a><span data-ttu-id="d6a3a-187">Taloushallinnon raportoinnin ja taloushallinnon tietojen vertailu</span><span class="sxs-lookup"><span data-stu-id="d6a3a-187">Financial reporting vs. Finanical insights</span></span>
+<span data-ttu-id="d6a3a-188">Vaikka **Taloushallinnon tiedot** sisältää tilinpäätöksiä, se ei korvaa Finance and Operationsin taloushallinnon raportointia.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-188">Although **Financial insights** contains financial statements, it isn't a replacement for Financial reporting in Finance and Operations.</span></span> <span data-ttu-id="d6a3a-189">**Taloushallinnon tietojen** oletustilinpäätökset ovat laajuudeltaan rajoitettuja eivätkä ne sisällä kaiken tyyppisiä tilinpäätöksiä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-189">The default financial statements in **Financial insights** are limited in scope and don't include all types of financial statements.</span></span> <span data-ttu-id="d6a3a-190">Taloushallinnon raportointi on edelleen ensisijainen työkalu lakisääteisten tilinpäätösten suunnitteluun, luontiin ja muodostamiseen.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-190">Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.</span></span>
+
+<span data-ttu-id="d6a3a-191">Seuraava vertailukaavio auttaa erottamaan vaihtoehdot toisistaan:</span><span class="sxs-lookup"><span data-stu-id="d6a3a-191">The following comparison chart will help differentiate the two options:</span></span>
+
+
+|                                                          | <span data-ttu-id="d6a3a-192">Taloushallinnon raportointi</span><span class="sxs-lookup"><span data-stu-id="d6a3a-192">Financial Reporting</span></span>                                               | <span data-ttu-id="d6a3a-193">Taloushallinnon tiedot</span><span class="sxs-lookup"><span data-stu-id="d6a3a-193">Financial Insights</span></span> |
+|----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
+| <span data-ttu-id="d6a3a-194">**Muokkaa oletusraportteja**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-194">**Edit default reports**</span></span>                                 | <span data-ttu-id="d6a3a-195">Kyllä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-195">Yes</span></span>                                                               | <span data-ttu-id="d6a3a-196">En</span><span class="sxs-lookup"><span data-stu-id="d6a3a-196">No</span></span> |
+| <span data-ttu-id="d6a3a-197">**Luo uusia raportteja**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-197">**Create new reports**</span></span>                                   | <span data-ttu-id="d6a3a-198">Kyllä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-198">Yes</span></span>                                                               | <span data-ttu-id="d6a3a-199">En</span><span class="sxs-lookup"><span data-stu-id="d6a3a-199">No</span></span> |
+| <span data-ttu-id="d6a3a-200">**Raporttien tulostaminen**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-200">**Print reports**</span></span>                                        | <span data-ttu-id="d6a3a-201">Kyllä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-201">Yes</span></span>                                                               | <span data-ttu-id="d6a3a-202">En</span><span class="sxs-lookup"><span data-stu-id="d6a3a-202">No</span></span> |
+| <span data-ttu-id="d6a3a-203">**Vie Exceliin**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-203">**Export to Excel**</span></span>                                      | <span data-ttu-id="d6a3a-204">Kyllä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-204">Yes</span></span>                                                               | <span data-ttu-id="d6a3a-205">Rajoitettu raakatietojen vienti Exceliin, muotoilematon raportti</span><span class="sxs-lookup"><span data-stu-id="d6a3a-205">Limited Exports raw data to Excel, not a formatted report</span></span> |
+| <span data-ttu-id="d6a3a-206">**Raportointihierarkian/organisaatiohierarkian tuki**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-206">**Support reporting hierarchy/Organization hierarchy**</span></span>   | <span data-ttu-id="d6a3a-207">Kyllä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-207">Yes</span></span>                                                               | <span data-ttu-id="d6a3a-208">En</span><span class="sxs-lookup"><span data-stu-id="d6a3a-208">No</span></span> |
+| <span data-ttu-id="d6a3a-209">**Alareskontran tietojen raportti**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-209">**Report on subledger data**</span></span>                             | <span data-ttu-id="d6a3a-210">Kyllä Rajoitettu yhteen toimittajaan, asiakkaaseen</span><span class="sxs-lookup"><span data-stu-id="d6a3a-210">Yes Limited to only vendor, customer</span></span>                              | <span data-ttu-id="d6a3a-211">Kyllä Toimittaja-, asiakas-, toimittaja/asiakasryhmät, toimittajan/asiakkaan osoitteet jne.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-211">Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc.</span></span> |
+| <span data-ttu-id="d6a3a-212">**Raportointivaluutta**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-212">**Reporting Currency**</span></span>                                   | <span data-ttu-id="d6a3a-213">Kyllä Kirjanpitovaluutta ja muuntaminen raportointivaluutaksi</span><span class="sxs-lookup"><span data-stu-id="d6a3a-213">Yes Accounting currency and translate to reporting currency</span></span>       | <span data-ttu-id="d6a3a-214">Ei Vain kirjanpitovaluutta</span><span class="sxs-lookup"><span data-stu-id="d6a3a-214">No Accounting currency only</span></span> |
+| <span data-ttu-id="d6a3a-215">**Suojaus**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-215">**Security**</span></span>                                             | <span data-ttu-id="d6a3a-216">Kyllä Finance and Operationsin ja raporttipuun suojauksen noudattaminen</span><span class="sxs-lookup"><span data-stu-id="d6a3a-216">Yes Adheres to Finance and Operations and reporting tree security</span></span> | <span data-ttu-id="d6a3a-217">Rajoitettu kaikkien yritysten raporttien näyttäminen (Finance and Operationsin suojauksesta riippumatta) tai vain aktiivinen yritys</span><span class="sxs-lookup"><span data-stu-id="d6a3a-217">Limited View reports for all companies (regardless of Finance and Operations security) or only active company</span></span> |
+| <span data-ttu-id="d6a3a-218">**Erilaisten tilikarttojen ja tilivuosien tuki**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-218">**Support different Chart of accounts and fiscal years**</span></span> | <span data-ttu-id="d6a3a-219">Kyllä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-219">Yes</span></span>                                                               | <span data-ttu-id="d6a3a-220">En</span><span class="sxs-lookup"><span data-stu-id="d6a3a-220">No</span></span> |
+| <span data-ttu-id="d6a3a-221">**Ulkoisten tietojen raportti**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-221">**report on external data**</span></span>                              | <span data-ttu-id="d6a3a-222">En</span><span class="sxs-lookup"><span data-stu-id="d6a3a-222">No</span></span>                                                                | <span data-ttu-id="d6a3a-223">En</span><span class="sxs-lookup"><span data-stu-id="d6a3a-223">No</span></span> |
+| <span data-ttu-id="d6a3a-224">**Konsolidointien tuki**</span><span class="sxs-lookup"><span data-stu-id="d6a3a-224">**Support consolidations**</span></span>                               | <span data-ttu-id="d6a3a-225">Kyllä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-225">Yes</span></span>                                                               | <span data-ttu-id="d6a3a-226">Rajoitettu raportointi useissa yrityksissä mutta vain kirjanpitovaluutan käyttö</span><span class="sxs-lookup"><span data-stu-id="d6a3a-226">Limited Can report on multiple companies but use accounting currency only</span></span> |
+
+<span data-ttu-id="d6a3a-227">Alkuperäisen **Talousjohtajan yhteenveto** -työtilan käyttöliittymän lisäksi uudet tunnusluvut, kaaviot ja tilinpäätökset ovat käytettävissä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-227">In addition to the user interface in the original **CFO overview** workspace, new KPIs, charts, and financial statements are now available.</span></span> <span data-ttu-id="d6a3a-228">Seuraavat tilinpäätökset ovat käytettävissä:</span><span class="sxs-lookup"><span data-stu-id="d6a3a-228">The following financial statements are available:</span></span>
+
+- <span data-ttu-id="d6a3a-229">Pääkirja</span><span class="sxs-lookup"><span data-stu-id="d6a3a-229">Trial balance</span></span>
+- <span data-ttu-id="d6a3a-230">Tase</span><span class="sxs-lookup"><span data-stu-id="d6a3a-230">Balance sheet</span></span>
+- <span data-ttu-id="d6a3a-231">Aluekohtainen tuloslaskelma</span><span class="sxs-lookup"><span data-stu-id="d6a3a-231">Income statement by region</span></span>
+- <span data-ttu-id="d6a3a-232">Tuloilmoitus – todellinen vs. budjetti</span><span class="sxs-lookup"><span data-stu-id="d6a3a-232">Income statement actual vs. budget</span></span>
+- <span data-ttu-id="d6a3a-233">Tuloslaskelma ja varianssit</span><span class="sxs-lookup"><span data-stu-id="d6a3a-233">Income statement with variances</span></span>
+- <span data-ttu-id="d6a3a-234">12 kuukauden trendin tuloslaskelma</span><span class="sxs-lookup"><span data-stu-id="d6a3a-234">12-month trend income statement</span></span>
+- <span data-ttu-id="d6a3a-235">Kulujen kolmen vuoden trendi</span><span class="sxs-lookup"><span data-stu-id="d6a3a-235">Expenses three-year trend</span></span>
+- <span data-ttu-id="d6a3a-236">Toimittajakohtaiset kulut</span><span class="sxs-lookup"><span data-stu-id="d6a3a-236">Expenses by vendor</span></span>
+- <span data-ttu-id="d6a3a-237">Asiakaskohtainen myynti</span><span class="sxs-lookup"><span data-stu-id="d6a3a-237">Sales by customer</span></span>
+
+## <a name="edit-visuals"></a><span data-ttu-id="d6a3a-238">Visualisointien muokkaus</span><span class="sxs-lookup"><span data-stu-id="d6a3a-238">Edit visuals</span></span>
+<span data-ttu-id="d6a3a-239">**Taloushallinnon tietojen** ensimmäisessä versiossa visualisointeja ei voitu muokata.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-239">In the initial release of **Financial Insights**, none of the visuals can be edited.</span></span> <span data-ttu-id="d6a3a-240">Tulevissa versioissa käyttäjät, joilla on soveltuvat käyttöoikeudet, voivat luoda uusia visualisointeja, kopioida aiemmin luotuja visualisointeja ja muokata visualisointeja.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-240">In future releases, users who have the appropriate security will be able to create new visuals, copy existing visuals, and edit visuals.</span></span> <span data-ttu-id="d6a3a-241">Vaikka raportit sisältävät .pbix-tiedostot ovat käytettävissä resursseina, oletusraporttien muokkaamista ei suositella.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-241">Although the .pbix files that contain the reports are available as resources, we don't recommend that you edit the default reports.</span></span> <span data-ttu-id="d6a3a-242">Lisämuutoksia tehdään tilinpäätösten luonnissa käytettävään tietomalliin, oletusraportteihin ja mukautettuun raportin visualisointiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-242">Additional changes will be made to the data model, default reports, and custom financial statement visual that are used to create the financial statements.</span></span> <span data-ttu-id="d6a3a-243">Jotta voisit käyttää hyväksesi seuraavan version uusia ominaisuuksia ja tietomallissa tehtyjä muutoksia, sinun olisikin tehtävä uudelleen kaikki oletusmalleihin Microsoft Power BI Desktopissa tekemäsi muutokset.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-243">Therefore, to take advantage of new features and changes to the data model in the next release, you will have to redo any changes that you made to the default reports through Microsoft Power BI Desktop.</span></span>
+
+## <a name="filtering"></a><span data-ttu-id="d6a3a-244">Suodatus</span><span class="sxs-lookup"><span data-stu-id="d6a3a-244">Filtering</span></span>
+<span data-ttu-id="d6a3a-245">Käyttäjät voivat suodattaa raportin vasemmalla olevan **Suodatus**-ruudun avulla.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-245">Users can filter the report by using the **Filter** pane on the left.</span></span> <span data-ttu-id="d6a3a-246">Tätä samaa ruutua voi käyttää myös Power BI Desktopista.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-246">This pane is the same pane that is available through Power BI Desktop.</span></span> <span data-ttu-id="d6a3a-247">Suodatustasoja on useita, eivätkä kaikki ole välttämättä käytettävissä sen mukaan, mitä valintoja olet tehnyt sivulla (välilehdessä), tai oletko käyttämässä porautumistoimintoja:</span><span class="sxs-lookup"><span data-stu-id="d6a3a-247">There are various levels of filtering, some of which might not be available, depending on what you've selected on a page (tab) or whether you're using the drill-through capabilities:</span></span>
+
+- <span data-ttu-id="d6a3a-248">**Raporttitason suodattimet** – näitä suodattimia käytetään kaikkien sivujen (välilehtien) kaikissa visualisoinneissa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-248">**Report-level filters** – These filters are applied to all visuals on all pages (tabs).</span></span>
+- <span data-ttu-id="d6a3a-249">**Sivutason suodattimet** – Näitä suodattamia käytetään kaikissa aktiivisen välilehden visualisoinneissa. Niitä käytetään raporttitason suodattimien jälkeen.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-249">**Page-level filters** – These filters are applied to all visuals on the active tab. These filters are applied on top of the report-level filters.</span></span>
+- <span data-ttu-id="d6a3a-250">**Visualisointitason suodattimet** – Näitä suodattimia käytetään vain valitussa visualisoinnissa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-250">**Visual-level filters** – These filters are applied only to the selected visual.</span></span> <span data-ttu-id="d6a3a-251">Näitä suodattimia käytetään sivutason suodattimien ohella.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-251">These filters are applied on top of the page level filters.</span></span>
+- <span data-ttu-id="d6a3a-252">**Porautumissuodatin** – Tämä suodatin suodattaa nykyiseen visualisointiin käytettävästä lähdevisualisoinnista, kun poraudut lähdevisualisoinnista nykyiseen visualisointiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-252">**Drill-through filter** – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.</span></span>
+
+![Suodatus](./media/filter.png)
+
+<span data-ttu-id="d6a3a-254">Voit poistaa tietyn suodatusarvon valitsemalla sen vieressä pyyhinsymbolin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-254">To remove a specific filter value, select the eraser symbol next to it.</span></span> <span data-ttu-id="d6a3a-255">Älä poista suodatinta valitsemalla X. Jos valitse X, suodatettava kenttä poistetaan suodatusvaihtoehdoista.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-255">Don't remove a filter by selecting the X. If you select the X, the field that you're filtering on is removed as a filter option.</span></span> <span data-ttu-id="d6a3a-256">Jos poista kentän vahingossa suodattimesta, sulje työtila ja avaa se sitten uudelleen.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-256">If you accidently remove a field from the filter, close the workspace, and then reopen it.</span></span> <span data-ttu-id="d6a3a-257">Oletussuodatusasetukset otetaan uudelleen käyttöön.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-257">The default filter settings will be reapplied.</span></span>
+
+<span data-ttu-id="d6a3a-258">Kun avaat työtilan ensimmäisen kerran, aktiivista yritystä käytetään oletusarvoisesti raporttitason suodattimena.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-258">By default, when you first open workspaces, the active legal entity is used as the report-level filter.</span></span> <span data-ttu-id="d6a3a-259">Käyttäjät voivat käyttöoikeuksiensa mukaan ehkä lisätä muita yrityksiä tai vaihtaa suodattamisessa valittuna olevaa oletusyritystä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-259">Depending on their security, users might be able to add other legal entities or change the default legal entity that is selected in the filter.</span></span>
+
+<span data-ttu-id="d6a3a-260">**Kirjanpidon vuosikalenteri** -suodatin on pakollinen sen vuoksi, että visualisoinnissa käytettäisiin oikeaa kalenteria.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-260">The **Fiscal calendar** filter is required so that the correct calendar is used for the visual.</span></span> <span data-ttu-id="d6a3a-261">Raporttitason suodattimeksi on oletusarvoisesti määritetty aktiivisen yrityksen kirjanpidon vuosikalenteri.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-261">By default, the report-level filter is set to the active legal entity's fiscal calendar.</span></span> <span data-ttu-id="d6a3a-262">Jos vaihdat suodattimeksi kirjanpidon vuosikalenterin, joka alku- tai loppupäivämäärä on erilainen, alkusaldoja ei sisällytetä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-262">If you change the filter to a fiscal calendar that has a different start or end date, the beginning balances won't be included.</span></span> <span data-ttu-id="d6a3a-263">Tämän vuoksi **Tase**-tilinpäätöksissä näkyvä saldo ei ole oikea.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-263">Therefore, your **Balance sheet** financial statements won't show the correct balances.</span></span> <span data-ttu-id="d6a3a-264">Jos valitse suodattimessa ylimääräisen kirjanpidon vuosikalenterin, saat käyttöösi lisää sarakkeita.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-264">If you select an additional fiscal calendar in the filter, you will have an additional set of columns.</span></span> <span data-ttu-id="d6a3a-265">Kussakin lisäsarakejoukossa on kirjanpidon eri vuosikalenterin summat.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-265">Each additional set of columns shows the amounts for a different fiscal calendar.</span></span>
+
+<span data-ttu-id="d6a3a-266">Myös **Kirjanpitotaso**-taso on pakollinen.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-266">The **Posting layer** filter is also required.</span></span> <span data-ttu-id="d6a3a-267">Suodattimeksi on oletusarvoisesti määritetty Valittu.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-267">By default, the filter is set to Current.</span></span> <span data-ttu-id="d6a3a-268">Voit valita suodattimessa muita kirjanpitotasoja, jos haluat nähdä kootut summat.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-268">You can select additional posting layers in the filter to show the aggregated amounts.</span></span>
+
+<span data-ttu-id="d6a3a-269">Myös **Päivämäärä**- ja **Tilivuosi**-kentissä on suodattimia.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-269">Filters are also available for the **Date** and **Fiscal year** fields.</span></span> <span data-ttu-id="d6a3a-270">Näitä suodattimia käytetään yleensä sivutasolla.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-270">Typically, these filters are applied at the page level.</span></span> <span data-ttu-id="d6a3a-271">**Päivämäärä**-kenttää oletusarvoisesti suhteellista päivämäärä, jota voi muuttaa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-271">By default, the **Date** filter uses a relational date that you can change.</span></span> <span data-ttu-id="d6a3a-272">Voit myös poistaa suhteellisen päivämäärän suodattimen ja käyttää sen sijaan **Tilivuosi**-suodatinta.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-272">You can also remove the relational date filter and use the **Fiscal year** filter instead.</span></span>
+
+## <a name="currency"></a><span data-ttu-id="d6a3a-273">Valuutta</span><span class="sxs-lookup"><span data-stu-id="d6a3a-273">Currency</span></span>
+
+<span data-ttu-id="d6a3a-274">Kaikki kirjanpidon tietoja raportoivat visualisoinnit näyttävät summat kirjanpitovaluuttana.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-274">All visuals that report on general ledger data show amounts in the accounting currency.</span></span> <span data-ttu-id="d6a3a-275">Niinpä yrityksen mukaan suodatettaessa on oltava huolellinen, että vain samaa kirjanpitovaluuttaa käyttävät yritykset sisällytetään.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-275">Therefore, when you filter on the legal entity, you must be careful to include only legal entities that have the same accounting currency.</span></span> <span data-ttu-id="d6a3a-276">Muussa tapauksessa koottavilla tiedoilla on eri valuutta.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-276">Otherwise, you will aggregate data in different currencies.</span></span>
+
+<span data-ttu-id="d6a3a-277">Kaikki alareskontran tietoja raportoivat visualisoinnit näyttävät summat järjestelmän valuuttana. Tällaisia tietoja ovat esimerkiksi **Kassavirtaennuste**- ja **10 parasta** -visualisoinnit.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-277">All visuals that report on subledger data, such as the **Cash flow forecast** and **Top 10** visuals, show amounts in the system currency.</span></span> <span data-ttu-id="d6a3a-278">Järjestelmän valuutta ja järjestelmän vaihtokurssin tyyppi määritetään **Järjestelmän parametrit**-sivulla.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-278">The system currency and system exchange rate type are defined on the **System parameters** page.</span></span>
+
+<span data-ttu-id="d6a3a-279">**Saldo pankkitilin mukaan** -visualisointi käyttää summia pankkitilin valuuttana.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-279">The **Balance by bank account** visual uses amounts in the bank accounts' currency.</span></span>
+
+## <a name="dimensions"></a><span data-ttu-id="d6a3a-280">Dimensiot</span><span class="sxs-lookup"><span data-stu-id="d6a3a-280">Dimensions</span></span>
+
+<span data-ttu-id="d6a3a-281">Oletustilinpäätökset eivät sisällä taloushallinnon dimensioita vaan keskittyvät päätiliin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-281">The default financial statements don't include any financial dimensions but are focused only on the main account.</span></span> <span data-ttu-id="d6a3a-282">Taloushallinnon dimensioiden tuki on käytettävissä tulevissa versioissa, kun raportit ovat muokattavissa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-282">Support for financial dimensions will be available in future releases, when the reports become editable.</span></span> <span data-ttu-id="d6a3a-283">Organisaatiot sitten voivat silloin suodattaa taloushallinnon dimensioiden arvojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-283">Organizations will then be able to filter on financial dimension values.</span></span>
+
+<span data-ttu-id="d6a3a-284">Joissakin tilinpäätöksissä on dimensioita, jotka perustavat alareskontran tapahtumiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-284">Some financial statements contain dimensions that are based on subledger transactions.</span></span> <span data-ttu-id="d6a3a-285">Uusien raporttien tavoitteena on mahdollistaa sellaisten dimensioiden suodattaminen, joita ei ole määritetty taloushallinnon dimensioiksi.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-285">The goal of the new financial statements it to enable filtering on dimensions that aren't set up as financial dimensions.</span></span> <span data-ttu-id="d6a3a-286">Esimerkiksi toimittajakohtaisten kulujen oletusraporttia voi tarkentaa päätilin ulkopuolelle, joten toimittajakohtaisesti eritellyt saldot ovat näkyvissä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-286">For example, the default Expenses by vendor report lets you expand down beyond the main account, so that you can see the balances broken down by vendor.</span></span> <span data-ttu-id="d6a3a-287">Toimittajaa ei ole määritetty taloushallinnon dimensiona.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-287">The vendor isn't set up as a financial dimension.</span></span> <span data-ttu-id="d6a3a-288">Sen sijaan järjestelmä etsii toimittajan palauttamalla alkuperäisen alareskontran tapahtuman.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-288">Instead, the system returns to the originating subledger transaction to find the vendor.</span></span>
+
+<span data-ttu-id="d6a3a-289">Seuraavia dimensioita käytetään oletusraporteissa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-289">The following dimensions are used on the default reports.</span></span> <span data-ttu-id="d6a3a-290">Mikään niistä ei ole taloushallinnan dimensio.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-290">None of these dimensions are financial dimensions.</span></span>
+
+- <span data-ttu-id="d6a3a-291">Toimittaja</span><span class="sxs-lookup"><span data-stu-id="d6a3a-291">Vendor</span></span>
+- <span data-ttu-id="d6a3a-292">Toimittajaryhmä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-292">Vendor group</span></span>
+- <span data-ttu-id="d6a3a-293">Asiakas</span><span class="sxs-lookup"><span data-stu-id="d6a3a-293">Customer</span></span>
+- <span data-ttu-id="d6a3a-294">Asiakasryhmä</span><span class="sxs-lookup"><span data-stu-id="d6a3a-294">Customer group</span></span>
+- <span data-ttu-id="d6a3a-295">Maa/alue</span><span class="sxs-lookup"><span data-stu-id="d6a3a-295">Country/region</span></span>
+- <span data-ttu-id="d6a3a-296">Osavaltio tai provinssi</span><span class="sxs-lookup"><span data-stu-id="d6a3a-296">State/province</span></span>
+- <span data-ttu-id="d6a3a-297">Paikkakunta</span><span class="sxs-lookup"><span data-stu-id="d6a3a-297">City</span></span>
+
+> [!IMPORTANT] 
+> <span data-ttu-id="d6a3a-298">Jos teet useiden toimittajien tai asiakkaiden yhteenvedon yhteen tositteeseen talouskirjauskansioiden avulla, tiedot eivät ole oikein.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-298">If you summarize transactions for multiple vendors or customers in a single voucher by using the financial journals, the data will be incorrect.</span></span> <span data-ttu-id="d6a3a-299">Raportointi ei voi määrittää, mikä toimittaja vai asiakas liittyy tiettyyn kirjauskansioviennin kirjanpitotiliin, koska kyseistä tietoa ei ole missään.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-299">Reporting can't determine which vendor or customer is related to a specific ledger account in a journal entry, because that information isn't maintained anywhere.</span></span> <span data-ttu-id="d6a3a-300">Tämän vuoksi useiden toimittajien, asiakkaiden, käyttöomaisuuden tai projektien tietojen kirjaamista yhteen tositteeseen ei suositella.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-300">Therefore, we do not recommend that you enter multiple vendors, customers, fixed assets, or projects in a single voucher.</span></span>
+
+## <a name="drill-on-data"></a><span data-ttu-id="d6a3a-301">Tietoihin porautuminen</span><span class="sxs-lookup"><span data-stu-id="d6a3a-301">Drill on data</span></span>
+
+<span data-ttu-id="d6a3a-302">Power BI:n kautta on käytettävissä erilaisia poraustasoja.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-302">Various levels of drilling are available through Power BI.</span></span> <span data-ttu-id="d6a3a-303">Jokaisella tasolla on oma nimi ja omat toiminnot.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-303">Each level has a different name and different functionality.</span></span> <span data-ttu-id="d6a3a-304">Voit porautua myös riveihin ja sarakkeisiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-304">You can also drill on rows and columns.</span></span> <span data-ttu-id="d6a3a-305">Tässä osassa käsitellään erilaisia vaihtoehtoja käyttämällä esimerkkinä **Pääkirja**-raporttia ja näyttämällä, miten riveihin poraudutaan.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-305">This section discusses the various options by using the **Trial balance** financial statement as an example and showing how you can drill on the rows.</span></span> <span data-ttu-id="d6a3a-306">Sarakkeissa on samat toiminnot.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-306">The same functionality exists for columns.</span></span> <span data-ttu-id="d6a3a-307">Vain **Poraudu**-asetus on vaihdettava.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-307">You just have to change the **Drill on** setting.</span></span>
+
+<span data-ttu-id="d6a3a-308">Seuraavassa kuvassa **Pääkirja**-raportti on tiivistetty rivihierarkian ylimmälle tasolle päätilin tyyppiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-308">In the following illustration, the **Trial balance** statement is collapsed to the highest level of the row hierarchy, the main account type.</span></span>
+
+![Pääkirja](./media/trial-balance.png)
+
+<span data-ttu-id="d6a3a-310">Voit tarkastella hierarkian seuraavaa tasoa eli pääkirjan luokkia, valitsemalla **Poraudu**-kentässä ensin **Rivit** ja sitten **Laajenna**-painikkeen (Poraudu-kentän kolmas painike).</span><span class="sxs-lookup"><span data-stu-id="d6a3a-310">To view the next level of the hierarchy, the main account categories, you can set the **Drill on** field to **Rows** and then select the **Expand** button (the third button after the Drill on field).</span></span> <span data-ttu-id="d6a3a-311">Näet nyt kaikki päätilin luokat laajennettuina.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-311">You now see all the main account categories expanded.</span></span> <span data-ttu-id="d6a3a-312">Power BI:ssä ei voi tällä hetkellä laajentaa yhtä riviä tai saraketta siten, että kaikki muut rivit tai sarakkeet olisivat näkyvissä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-312">Currently, Power BI doesn't let you expand only one row or column but still see all the other rows or columns.</span></span>
+
+![Pääkirja](./media/trial-balance2.png)
+
+<span data-ttu-id="d6a3a-314">Jos haluat laajentaa kaikkien rivien päätileihin, valitse uudelleen **Laajenna**-painike.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-314">To expand to the main accounts for all rows, you can again use the **Expand** button.</span></span> <span data-ttu-id="d6a3a-315">Jos kuitenkin haluat porautua vain yhden rivin päätileihin, valitse ensin **Poraudu**-painike (alanuoli oikealla ikkunassa) ja sitten rivi, johon haluat porautua.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-315">However, to drill down to the main accounts for only one row, first select the **Drill down** button (the single downward-pointing arrow on the right side of the window), and then select the row to drill down on.</span></span> <span data-ttu-id="d6a3a-316">Seuraavassa kuvassa näkee, mitä tapahtuu, kun **Myynti**-rivi on valittu **Poraudu**-painikkeen valinnan jälkeen.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-316">The following illustration shows the result when the **Sales** row is selected after the **Drill down** button is selected.</span></span>
+
+![Pääkirja](./media/trial-balance3.png)
+
+<span data-ttu-id="d6a3a-318">Kun olet porautunut yhteen riviin, koko pääkirjaan palaaminen edellyttää useita napsautuksia.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-318">After you drill down on a single row, multiple clicks are required in order to return to the full trial balance.</span></span> <span data-ttu-id="d6a3a-319">**Poraudu ylöspäin** -painikkeella (ensimmäinen painike **Poraudu**-kentän jälkeen) poraudutaan **Myynti**-luokassa ylöspäin seuraavan kuvan osoittamalla tavalla.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-319">The **Drill up** button (the first button after the **Drill** on field) drills up only in the context of the **Sales** category, as shown in the following illustration.</span></span>
+
+![Pääkirja](./media/trial-balance4.png)
+
+<span data-ttu-id="d6a3a-321">Voit palata rivien yhteenvedon korkeimmalle tasolla jatkamalla **Poraudu**-painikkeen käyttöä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-321">You can continue to use the **Drill up** button to return to the highest level of summarization for the rows.</span></span>
+
+<span data-ttu-id="d6a3a-322">Power BI:ssä on myös painike, jolla voit siirtyä hierarkian seuraavalle tasolle (toinen painike **Poraudu**-kentän jälkeen).</span><span class="sxs-lookup"><span data-stu-id="d6a3a-322">Power BI also has a button that lets you go to the next level in the hierarchy (the second button after the **Drill on** field).</span></span> <span data-ttu-id="d6a3a-323">Tämä painikkeen vaikutus on toinen kuin **Laajenna**-painikkeessa (kolmas painike **Poraudu**-kentän jälkeen), koska sitä käytetään hierarkian laajentamiseen.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-323">The effect of this button differs from the effect of the **Expand** button (the third button after the **Drill on** field), which is used to expand the hierarchy.</span></span> <span data-ttu-id="d6a3a-324">Kun laajennat hierarkian, hierarkiaa ylläpidetään raportissa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-324">When you expand the hierarchy, the hierarchy is maintained on the report.</span></span> <span data-ttu-id="d6a3a-325">Jos esimerkiksi laajennat edellä näytetyllä tavalla päätilin tyypin, näet edelleen päätilin tyypin pääraportissa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-325">For example, as was shown earlier, if you expand on the main account type, you still see the main account type on the report.</span></span> <span data-ttu-id="d6a3a-326">Kun hierarkiassa sen sijaan siirrytään seuraavalle tasolle, raportti ei enää näytä ylätasoa hierarkiassa. (Katso seuraava kuva.)</span><span class="sxs-lookup"><span data-stu-id="d6a3a-326">However, when you go to the next level in the hierarchy, the report no longer shows the parent in the hierarchy, as shown in the following illustration.</span></span>
+
+![Pääkirja](./media/trial-balance5.png)
+
+<span data-ttu-id="d6a3a-328">Jos haluat nähdä tapahtumatiedot, joihin yhteenvetosaldot perustuvat, voit valita joitakin summia, joissa haluat porautua takaisin Financial and Operationsiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-328">To see the transaction details behind the summarized balances, you can select some amounts to drill back into Financial and Operations.</span></span>
+
+<span data-ttu-id="d6a3a-329">Kun poraudutut raporteista taaksepäin, päädyt kirjanpitolähteen hallintaan (ASE) tositetapahtumien sijaan.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-329">The drill-back from the financial statements takes you to the Accounting source explorer (ASE), not to the voucher transactions.</span></span> <span data-ttu-id="d6a3a-330">Kirjanpitolähteen hallinta ei näytä vain kirjanpidon kirjanpitotapahtumia,</span><span class="sxs-lookup"><span data-stu-id="d6a3a-330">The ASE doesn't show just the accounting entries in the general ledger.</span></span> <span data-ttu-id="d6a3a-331">vaan näkyvissä on myös alareskontratapahtuman tiedot.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-331">Instead, it shows the details of the subledger transaction.</span></span> <span data-ttu-id="d6a3a-332">Saatkin paljon enemmän tietoja alkuperäistä tapahtumasta analyysia varten.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-332">Therefore, you get much more detail about the originating transaction and can use it for analysis.</span></span> <span data-ttu-id="d6a3a-333">Näet esimerkiksi, kuka toimittaja tai asiakas oli, mitä asiakas osti tai toimittaja myi sekä jopa mikä oli tapahtumassa käytetty projekti.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-333">For example, you can see who the vendor or customer was, what the customer bought or the vendor sold, and even what project was on the transaction.</span></span>
+
+<span data-ttu-id="d6a3a-334">Raportin seuraavat suodattimet lähetetään kirjanpitolähteen hallintaan, jolloin näkyviin tulee kootut tapahtumat:</span><span class="sxs-lookup"><span data-stu-id="d6a3a-334">The following filters from the financial statements are sent to the ASE, so that the ASE shows the transactions that are aggregated:</span></span>
+
+<span data-ttu-id="d6a3a-335">Pakolliset suodatuskentät:</span><span class="sxs-lookup"><span data-stu-id="d6a3a-335">Required fields for filtering:</span></span>
+
+- <span data-ttu-id="d6a3a-336">Oikeushenkilö</span><span class="sxs-lookup"><span data-stu-id="d6a3a-336">Legal entity</span></span>
+- <span data-ttu-id="d6a3a-337">Kirjanpidon vuosikalenteri</span><span class="sxs-lookup"><span data-stu-id="d6a3a-337">Fiscal calendar</span></span>
+- <span data-ttu-id="d6a3a-338">Vuosi(a)</span><span class="sxs-lookup"><span data-stu-id="d6a3a-338">Year</span></span>
+- <span data-ttu-id="d6a3a-339">Päätilin tunnus</span><span class="sxs-lookup"><span data-stu-id="d6a3a-339">Main account ID</span></span>
+
+<span data-ttu-id="d6a3a-340">Valinnaiset suodatuskentät:</span><span class="sxs-lookup"><span data-stu-id="d6a3a-340">Optional fields for filtering:</span></span>
+
+- <span data-ttu-id="d6a3a-341">Vuosineljännes</span><span class="sxs-lookup"><span data-stu-id="d6a3a-341">Quarter</span></span>
+- <span data-ttu-id="d6a3a-342">Kuukausi</span><span class="sxs-lookup"><span data-stu-id="d6a3a-342">Month</span></span>
+- <span data-ttu-id="d6a3a-343">Jakso</span><span class="sxs-lookup"><span data-stu-id="d6a3a-343">Period</span></span>
+
+<span data-ttu-id="d6a3a-344">Jos et laajenna rivissä riittävän pitkälle, porautuminen ei toimi.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-344">If you don't expand down far enough on a row, the drill-down doesn't work.</span></span> <span data-ttu-id="d6a3a-345">Jos laajennat vain päätilin luokkaan, et voi porautua saldon kirjanpitolähteen hallintaan, sillä päätili on kirjanpitolähteen hallinnan pakollinen suodatuskenttä.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-345">For example, if you expand down only to the main account category, you can't drill down into the ASE on the balance, because the main account is a required field for filtering in the ASE.</span></span>
+
+<span data-ttu-id="d6a3a-346">Jos laajennat liian pitkälle rivillä, raporttien lisäsuodattimia ei lähetetä kirjanpitolähteen hallintaan.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-346">If you expand down too far on a row, the additional filters on the financial statements aren't sent to the ASE.</span></span> <span data-ttu-id="d6a3a-347">Tämän vuoksi luvut voivat olla erilaisia.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-347">Therefore, you might see a difference in your numbers.</span></span> <span data-ttu-id="d6a3a-348">Jos esimerkiksi laajennat maahan tai alueeseen Aluekohtainen tuloslaskelma -raportin riveillä, maata tai aluetta ei sisällytetä kirjanpitolähteen hallinnan suodattimena.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-348">For example, if you expand down to the country or region on the rows of the Income statement by region financial statement, the country or region isn't be included as a filter in the ASE.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="d6a3a-349">Voit porautua raportin riveillä tai sarakkeissa niin syvälle, että kirjanpitolähteen hallinta ei tällä hetkellä tue kyseisten tietojen suodatusta.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-349">You can drill further down on the financial statement rows or columns than the ASE currently supports for filtering.</span></span> <span data-ttu-id="d6a3a-350">Niinpä joissakin tilanteissa eriteltyjen tapahtumien summa kirjanpitolähteen hallinnassa ei vastaa saldoa, johon poraudut takaisin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-350">Therefore, in some situations, the sum of detailed transactions in the ASE won't match the balance that you're drilling back on.</span></span> <span data-ttu-id="d6a3a-351">Tämän toiminnon kehittämistä jatketaan tulevaisuudessa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-351">This functionality will continue to be enhanced in the future.</span></span>
+
+## <a name="hierarchies"></a><span data-ttu-id="d6a3a-352">Hierarkiat</span><span class="sxs-lookup"><span data-stu-id="d6a3a-352">Hierarchies</span></span>
+
+<span data-ttu-id="d6a3a-353">Oletusraportit käyttävät tietoihin porautumiseen ja tietojen laajentamiseen kahta hierarkiaa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-353">The default financial statements use two hierarchies to drill and expand on the data.</span></span> <span data-ttu-id="d6a3a-354">Toinen hierarkia koskee rivejä ja toinen sarakkeita.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-354">One hierarchy is for the rows, and the other hierarchy is for the columns.</span></span> <span data-ttu-id="d6a3a-355">Molemmat hierarkiat on määritetty valmiiksi raportin rakenteessa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-355">Both hierarchies are predefined in the design of the financial statement.</span></span> <span data-ttu-id="d6a3a-356">Useimmissa raporteissa rivihierarkia on **Päätilin tyyppi** \> **Päätilin luokat** \> **Päätili**.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-356">For most financial statements, the row hierarchy is **Main account type** \> **Main account categories** \> **Main account**.</span></span> <span data-ttu-id="d6a3a-357">Joissakin raporteissa on kuitenkin lisäkenttiä, kuten Maa ja alue.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-357">However, some reports have additional fields, such as Country and Region.</span></span> <span data-ttu-id="d6a3a-358">Hierarkian lisäsolmu perustuvat kunkin tapahtuman alareskontran tietoihin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-358">The additional nodes of the hierarchy are based on subledger data for each transaction.</span></span>
+
+<span data-ttu-id="d6a3a-359">Sarakkeiden hierarkia keskittyy yrityksiin ja tilikausiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-359">For the columns, the hierarchy is focused on the legal entities and the fiscal periods.</span></span> <span data-ttu-id="d6a3a-360">Useimmissa raporteissa sarakehierarkia on **Yritys** \> **Kirjanpidon vuosikalenteri** \> **Tilivuosi** \> **Vuosineljännes** \> **Kausi**.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-360">For most financial statements, the column hierarchy is **Legal entity** \> **Fiscal calendar** \> **Fiscal year** \> **Quarter** \> **Period**.</span></span>
+
+<span data-ttu-id="d6a3a-361">Raportit eivät tällä hetkellä tue organisaatiohierarkioita, joista voisi koota tietoja.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-361">Currently, the financial statements don't support the organizational hierarchies, which let you aggregate data.</span></span>
+
+## <a name="data-limitations"></a><span data-ttu-id="d6a3a-362">Tietojen rajoitukset</span><span class="sxs-lookup"><span data-stu-id="d6a3a-362">Data limitations</span></span>
+<span data-ttu-id="d6a3a-363">Raportin visualisoinneissa voi näytettävien rivien määrä on rajallinen.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-363">The financial statement visuals have a limit on the number of rows that can be shown.</span></span> <span data-ttu-id="d6a3a-364">Tällä hetkellä rajaksi on määritetty 30 000.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-364">Currently, the limit is set to 30,000.</span></span> <span data-ttu-id="d6a3a-365">Jos tämä raja ylittyy, visualisointi ilmoittaa siitä varoitussymbolilla.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-365">If you exceed this limit, the visual will have a warning symbol to notify you about this situation.</span></span>
+
+![Tietojen rajoitukset](./media/data-limit.png)
+
+<span data-ttu-id="d6a3a-367">Jos enimmäismäärä ylitetään, raportissa näkyvät kokonaissummat ovat virheellisiä, koska kaikkia rivejä ei ole ladattu visualisointiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-367">If the maximum is exceeded, the totals that appear on the financial statement will be incorrect, because not all the rows were loaded into the visual.</span></span>
+
+### <a name="empty-rows"></a><span data-ttu-id="d6a3a-368">Tyhjät rivit</span><span class="sxs-lookup"><span data-stu-id="d6a3a-368">Empty rows</span></span>
+<span data-ttu-id="d6a3a-369">Power BI:ssä ei ole tyhjien rivien piilottamis- ja näyttämisasetusta.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-369">Power BI doesn't provide an option to hide and show empty rows.</span></span> <span data-ttu-id="d6a3a-370">Jos rivillä ei ole tietoja, rivi ei näy visualisoinnissa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-370">If a row doesn't have any data, the row won't appear in the visual.</span></span>
+
+
+## <a name="additional-resources-for-power-bi"></a><span data-ttu-id="d6a3a-371">Power BI:n lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="d6a3a-371">Additional resources for Power BI</span></span>
+
+<span data-ttu-id="d6a3a-372">Seuraavissa resursseissa olevat tiedot eivät ole välttämättömiä otettaessa käyttöön upotettuja raportteja tuotantoympäristön **Talousjohtajan yhteenveto**- tai **Taloushallinnon tiedot** -työtilassa.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-372">The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment.</span></span> <span data-ttu-id="d6a3a-373">Niistä on kuitenkin hyötyä kehityskehyksissä ja tilanteissa, joissa halutaan upottaa omia Power BI -raportteja Finance and Operationsiin.</span><span class="sxs-lookup"><span data-stu-id="d6a3a-373">Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports into Finance and Operations.</span></span>
+
+- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+
+- <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>

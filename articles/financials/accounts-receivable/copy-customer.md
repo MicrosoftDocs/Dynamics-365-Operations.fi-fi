@@ -1,192 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="copy-customer.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>copy-customer.99fcbb.7a1e6c6e3a995ad745522d58960e850d72c2ee57.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>7a1e6c6e3a995ad745522d58960e850d72c2ee57</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\accounts-receivable\copy-customer.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Copy customers by using shared number sequences</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kopioi asiakkaat käyttämällä jaettuja numerosarjoja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how to use shared number sequences to copy a customer to another legal entity but keep the same customer ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä ohjeaiheessa kerrotaan, miten jaettujen numerosarjojen avulla asiakas kopioidaan toiseen yritykseen pitäen asiakastunnus ennallaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Copy customers by using shared number sequences</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kopioi asiakkaat käyttämällä jaettuja numerosarjoja</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>You can use shared number sequences to assign customer IDs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakastunnukset voidaan määrittää jaettujen numerosarjojen avulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Shared number sequences also let you copy customers from one legal entity to another legal entity but use the same customer IDs in both legal entities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jaettujen numerosarjojen avulla voidaan kopioida asiakkaita yrityksestä toiseen ja käyttää samoja asiakastunnuksia molemmissa yrityksissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Setup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritys</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The feature is activated when you use a shared number sequence to assign customer IDs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminto on käytössä, kun asiakastunnukset määritetään jaettujen numerosarjojen avulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>You must use the same number sequence in every legal entity that you want to copy a customer to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Samaa numerosarjaa on käytettävä kaikissa yrityksissä, joihin asiakas halutaan kopioida.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>You change the customer number sequence on the <bpt id="p1">**</bpt>Accounts receivable parameters<ept id="p1">**</ept> page for each legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakkaan numerosarjan voi muuttaa kunkin yrityksen <bpt id="p1">**</bpt>Myyntireskontran parametrit<ept id="p1">**</ept> -sivulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Select <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Parameters<ept id="p2">**</ept>, and then select the <bpt id="p3">**</bpt>Number sequences<ept id="p3">**</ept> tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Myyntireskontra<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Parametrit<ept id="p2">**</ept> ja <bpt id="p3">**</bpt>Numerosarjat<ept id="p3">**</ept>-välilehti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>You can also set up customer number sequences for each customer group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakasnumerosarjat voidaan määrittää jokaiselle asiakasryhmälle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>These number sequences must also be shared.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myös nämä numerosarjat on jaettava.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>The number sequence for a customer group is used first.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakasryhmän numerosarja käytetään ensin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>If no number sequence is specified for a customer group, the number sequence that is specified on the <bpt id="p1">**</bpt>Accounts receivable parameters<ept id="p1">**</ept> page is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos asiakasryhmälle ei ole määritetty numerosarjaa, käytetään <bpt id="p1">**</bpt>Myyntireskontran parametrit<ept id="p1">**</ept> -sivulla määritettyä numerosarjaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>You can also copy customers between legal entities if you use manual customer IDs.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakkaita voidaan kopioida yritysten välillä myös käytettäessä manuaalisia asiakastunnuksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>However, if you try to copy a customer to a legal entity where the customer ID already exists, the copy process won't be started.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos asiakas yritetään kopioida yritykseen, jossa asiakastunnus on jo käytössä, kopiointiprosessia ei voi käynnistää.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Copy a customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakkaan kopioiminen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>To copy a customer, select <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>All customers<ept id="p2">**</ept> list page to open the <bpt id="p3">**</bpt>Create customer<ept id="p3">**</ept> dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakas kopioidaan valitsemalla<bpt id="p1">**</bpt>Kaikki asiakkaat<ept id="p1">**</ept> -luettelosivulla <bpt id="p2">**</bpt>Uusi<ept id="p2">**</ept>. <bpt id="p3">**</bpt>Luo asiakas<ept id="p3">**</ept> -valintaikkuna avautuu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Notice that the new customer ID isn't assigned immediately.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uutta asiakastunnusta ei määritetä heti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä toiminnallisuus eroaa Microsoft Dynamics 365 for Finance and Operations -ohjelman edellisten versioiden toiminnasta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Because you haven't yet selected the customer group, the system can't determine the correct number sequence to use.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakasryhmää ei ole vielä valittu, joten järjestelmä ei voi määrittää oikeaa käytettävää numerosarjaa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Additionally, it can't determine whether you're trying to create a new customer or copy a customer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se ei voi myöskään määrittää, halutaanko luoda uusi asiakas vai kopioida asiakas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Therefore, the customer ID isn't assigned until you select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> at the bottom of the dialog box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Siksi asiakastunnus määritetään vasta kun valitset <bpt id="p1">**</bpt>Tallenna<ept id="p1">**</ept>-vaihtoehdon valintaikkunan alareunassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>If you're creating a new customer, you can continue to fill in all the fields as you usually do.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos luot uutta asiakasta, voit jatkaa täyttämään kaikki kentät tavalliseen tapaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>When you've finished, and you select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>, you will see that the customer ID was assigned automatically.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet valmis ja valitset <bpt id="p1">**</bpt>Tallenna<ept id="p1">**</ept>, huomaat, että asiakastunnus määritettiin automaattisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Alternatively, for manual number sequences, you will see that your manual customer ID was used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos käytetään manuaalisia numerosarjoja, huomaat, että käytettiin manuaalista asiakastunnusta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>To copy a customer, in the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter one or more characters that represent the customer that you're looking for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kopioida asiakkaan syöttämällä <bpt id="p1">**</bpt>Nimi<ept id="p1">**</ept>-kenttään vähintään yhden merkin, joka edustaa etsittävää asiakasta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>A search dialog box shows a list of parties that might represent the customer that you're looking for.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hakuvalintaikkunassa näkyy luettelo, jossa etsittävä asiakas saattaa näkyä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>When you select one of the parties, additional information appears on the right side of the dialog box:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun valitset jonkun osapuolen, valintaikkunan oikealla puolella näkyy lisätietoja:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>The <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab shows the party's phone number and address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Yleistä<ept id="p1">**</ept>-välilehdessä näkyy osapuolen puhelinnumero ja osoite.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>The <bpt id="p1">**</bpt>Roles<ept id="p1">**</ept> tab shows the roles that the selected party can have and the legal entity where it has each role.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitun osapuolen mahdolliset roolit ja yritykset näkyvät <bpt id="p1">**</bpt>Roolit<ept id="p1">**</ept>-välilehdessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source><bpt id="p1">**</bpt>Tax registration ID<ept id="p1">**</ept> tab shows the tax registration IDs that are assigned to the party.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Osapuolen verotunnukset näkyvät <bpt id="p1">**</bpt>Verorekisteröintitunnus<ept id="p1">**</ept>-välilehdessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>You can copy a party only if it has a customer role, and if it has that role in a legal entity that isn't the current legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kopioida osapuolen vain, jos sen rooli on asiakas ja jos sillä on tämä rooli muussa kuin nykyisessä yrityksessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>When you find a party that meets these criteria, follow these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet löytänyt nämä ehdot täyttävän osapuolen, toimi seuraavasti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>A <bpt id="p1">**</bpt>Copy customer<ept id="p1">**</ept> option appears.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näkyviin tulee <bpt id="p1">**</bpt>Kopioi asiakas<ept id="p1">**</ept> -vaihtoehto.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>By default, this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä vaihtoehto on oletusarvoisesti <bpt id="p1">**</bpt>Ei<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>To copy the customer to the current legal entity, set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kopioida asiakkaan nykyiseen yritykseen valitsemalla <bpt id="p1">**</bpt>Kyllä<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>A <bpt id="p1">**</bpt>Legal entity<ept id="p1">**</ept> field appears.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> <bpt id="p1">**</bpt>Yritys<ept id="p1">**</ept>-kenttä tulee näkyviin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Select the legal entity to copy the customer from.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse yritys, josta asiakas kopioidaan</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>If the customer exists in only one legal entity, the field is set to that legal entity by default.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos asiakas kuuluu vain yhteen yritykseen, kenttään määritetään tämä yritys oletusarvoisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Select <bpt id="p1">**</bpt>Select<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Valitse<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>The new customer is created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi asiakas luodaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Validation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valintasäännöt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>When you copy a customer, the system tries to save the new customer information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun asiakas kopioidaan, järjestelmä yrittää tallentaa uuden asiakkaan tiedot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Validations are run to verify that the data that was copied is good.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valintasääntöjen avulla tarkistetaan, että kopioidut tiedot ovat oikein.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>You receive an error message for every validation that fails.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos valintasääntötarkistus tuottaa virheellisen tuloksen, näkyviin tulee virheilmoitus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>The error messages explain what information must be updated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virheilmoituksessa kerrotaan, mitä tietoja on päivitettävä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>The copy of the customer can't be saved until you fix all the validation errors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakkaan kopio tallennetaan vasta kun tarkistuksessa havaitut virheet on korjattu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>Copy a customer by using tax exempt number search feature</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakkaan kopioiminen käyttämällä verovapausnumeron hakua</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>You can also copy customers by using the Tax exempt number search feature that is in the <bpt id="p1">**</bpt>Registration<ept id="p1">**</ept> group on the <bpt id="p2">**</bpt>Customer<ept id="p2">**</ept> tab on the Action Pane of the <bpt id="p3">**</bpt>All customers<ept id="p3">**</ept> page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakkaat voi kopioida myös hakemalla verovapausnumeron perusteella <bpt id="p1">**</bpt>Kaikki asiakkaat<ept id="p1">**</ept>-sivun <bpt id="p2">**</bpt>Asiakas<ept id="p2">**</ept>-välilehden <bpt id="p3">**</bpt>Rekisteröinti<ept id="p3">**</ept>-ryhmän toimintoruudussa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The <bpt id="p1">**</bpt>Tax exempt number search<ept id="p1">**</ept> dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näkyviin tulevassa <bpt id="p1">**</bpt>Verovapausnumeron haku<ept id="p1">**</ept> -valintaikkunassa näkyvät verovapausnumerot, asiakastunnus, asiakkaan nimi ja yritys, jossa verovapaustunnusta käytetään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>You can copy a customer only if it's in a legal entity that isn't the current legal entity.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakas voidaan kopioida vain, jos se on muu yritys kuin nykyinen yritys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>After you select a customer that meets this criterion, follow these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun olet valinnut nämä ehdot täyttävän asiakkaan, toimi seuraavasti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>A <bpt id="p1">**</bpt>Copy customer<ept id="p1">**</ept> option appears.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näkyviin tulee <bpt id="p1">**</bpt>Kopioi asiakas<ept id="p1">**</ept> -vaihtoehto.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>By default, this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä vaihtoehto on oletusarvoisesti <bpt id="p1">**</bpt>Ei<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>To copy the customer to the current legal entity, set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit kopioida asiakkaan nykyiseen yritykseen valitsemalla <bpt id="p1">**</bpt>Kyllä<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Select <bpt id="p1">**</bpt>Select<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse <bpt id="p1">**</bpt>Valitse<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>The new customer is created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uusi asiakas luodaan.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Kopioi asiakkaat käyttämällä jaettuja numerosarjoja
+description: Tässä ohjeaiheessa kerrotaan, miten jaettujen numerosarjojen avulla asiakas kopioidaan toiseen yritykseen pitäen asiakastunnus ennallaan.
+author: mikefalkner
+manager: aolson
+ms.date: 08/31/2018
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustTable
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: mikefalkner
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556269"
+---
+# <a name="copy-customers-by-using-shared-number-sequences"></a><span data-ttu-id="9b0d7-103">Kopioi asiakkaat käyttämällä jaettuja numerosarjoja</span><span class="sxs-lookup"><span data-stu-id="9b0d7-103">Copy customers by using shared number sequences</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="9b0d7-104">Asiakastunnukset voidaan määrittää jaettujen numerosarjojen avulla.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-104">You can use shared number sequences to assign customer IDs.</span></span> <span data-ttu-id="9b0d7-105">Jaettujen numerosarjojen avulla voidaan kopioida asiakkaita yrityksestä toiseen ja käyttää samoja asiakastunnuksia molemmissa yrityksissä.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-105">Shared number sequences also let you copy customers from one legal entity to another legal entity but use the same customer IDs in both legal entities.</span></span>
+
+## <a name="setup"></a><span data-ttu-id="9b0d7-106">Määritys</span><span class="sxs-lookup"><span data-stu-id="9b0d7-106">Setup</span></span>
+
+<span data-ttu-id="9b0d7-107">Toiminto on käytössä, kun asiakastunnukset määritetään jaettujen numerosarjojen avulla.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-107">The feature is activated when you use a shared number sequence to assign customer IDs.</span></span> <span data-ttu-id="9b0d7-108">Samaa numerosarjaa on käytettävä kaikissa yrityksissä, joihin asiakas halutaan kopioida.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-108">You must use the same number sequence in every legal entity that you want to copy a customer to.</span></span> <span data-ttu-id="9b0d7-109">Asiakkaan numerosarjan voi muuttaa kunkin yrityksen **Myyntireskontran parametrit** -sivulla.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-109">You change the customer number sequence on the **Accounts receivable parameters** page for each legal entity.</span></span> <span data-ttu-id="9b0d7-110">Valitse **Myyntireskontra** \> **Parametrit** ja **Numerosarjat**-välilehti.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-110">Select **Accounts receivable** \> **Parameters**, and then select the **Number sequences** tab.</span></span>
+
+<span data-ttu-id="9b0d7-111">Asiakasnumerosarjat voidaan määrittää jokaiselle asiakasryhmälle.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-111">You can also set up customer number sequences for each customer group.</span></span> <span data-ttu-id="9b0d7-112">Myös nämä numerosarjat on jaettava.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-112">These number sequences must also be shared.</span></span> <span data-ttu-id="9b0d7-113">Asiakasryhmän numerosarja käytetään ensin.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-113">The number sequence for a customer group is used first.</span></span> <span data-ttu-id="9b0d7-114">Jos asiakasryhmälle ei ole määritetty numerosarjaa, käytetään **Myyntireskontran parametrit** -sivulla määritettyä numerosarjaa.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-114">If no number sequence is specified for a customer group, the number sequence that is specified on the **Accounts receivable parameters** page is used.</span></span>
+
+<span data-ttu-id="9b0d7-115">Asiakkaita voidaan kopioida yritysten välillä myös käytettäessä manuaalisia asiakastunnuksia.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-115">You can also copy customers between legal entities if you use manual customer IDs.</span></span> <span data-ttu-id="9b0d7-116">Jos asiakas yritetään kopioida yritykseen, jossa asiakastunnus on jo käytössä, kopiointiprosessia ei voi käynnistää.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-116">However, if you try to copy a customer to a legal entity where the customer ID already exists, the copy process won't be started.</span></span>
+
+## <a name="copy-a-customer"></a><span data-ttu-id="9b0d7-117">Asiakkaan kopioiminen</span><span class="sxs-lookup"><span data-stu-id="9b0d7-117">Copy a customer</span></span>
+
+<span data-ttu-id="9b0d7-118">Asiakas kopioidaan valitsemalla**Kaikki asiakkaat** -luettelosivulla **Uusi**. **Luo asiakas** -valintaikkuna avautuu.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-118">To copy a customer, select **New** on the **All customers** list page to open the **Create customer** dialog box.</span></span> <span data-ttu-id="9b0d7-119">Uutta asiakastunnusta ei määritetä heti.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-119">Notice that the new customer ID isn't assigned immediately.</span></span> <span data-ttu-id="9b0d7-120">Tämä toiminnallisuus eroaa Microsoft Dynamics 365 for Finance and Operations -ohjelman edellisten versioiden toiminnasta.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-120">This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="9b0d7-121">Asiakasryhmää ei ole vielä valittu, joten järjestelmä ei voi määrittää oikeaa käytettävää numerosarjaa.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-121">Because you haven't yet selected the customer group, the system can't determine the correct number sequence to use.</span></span> <span data-ttu-id="9b0d7-122">Se ei voi myöskään määrittää, halutaanko luoda uusi asiakas vai kopioida asiakas.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-122">Additionally, it can't determine whether you're trying to create a new customer or copy a customer.</span></span> <span data-ttu-id="9b0d7-123">Siksi asiakastunnus määritetään vasta kun valitset **Tallenna**-vaihtoehdon valintaikkunan alareunassa.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-123">Therefore, the customer ID isn't assigned until you select **Save** at the bottom of the dialog box.</span></span>
+
+<span data-ttu-id="9b0d7-124">Jos luot uutta asiakasta, voit jatkaa täyttämään kaikki kentät tavalliseen tapaan.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-124">If you're creating a new customer, you can continue to fill in all the fields as you usually do.</span></span> <span data-ttu-id="9b0d7-125">Kun olet valmis ja valitset **Tallenna**, huomaat, että asiakastunnus määritettiin automaattisesti.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-125">When you've finished, and you select **Save**, you will see that the customer ID was assigned automatically.</span></span> <span data-ttu-id="9b0d7-126">Jos käytetään manuaalisia numerosarjoja, huomaat, että käytettiin manuaalista asiakastunnusta.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-126">Alternatively, for manual number sequences, you will see that your manual customer ID was used.</span></span>
+
+<span data-ttu-id="9b0d7-127">Voit kopioida asiakkaan syöttämällä **Nimi**-kenttään vähintään yhden merkin, joka edustaa etsittävää asiakasta.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-127">To copy a customer, in the **Name** field, enter one or more characters that represent the customer that you're looking for.</span></span> <span data-ttu-id="9b0d7-128">Hakuvalintaikkunassa näkyy luettelo, jossa etsittävä asiakas saattaa näkyä.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-128">A search dialog box shows a list of parties that might represent the customer that you're looking for.</span></span> <span data-ttu-id="9b0d7-129">Kun valitset jonkun osapuolen, valintaikkunan oikealla puolella näkyy lisätietoja:</span><span class="sxs-lookup"><span data-stu-id="9b0d7-129">When you select one of the parties, additional information appears on the right side of the dialog box:</span></span>
+
+- <span data-ttu-id="9b0d7-130">**Yleistä**-välilehdessä näkyy osapuolen puhelinnumero ja osoite.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-130">The **General** tab shows the party's phone number and address.</span></span>
+- <span data-ttu-id="9b0d7-131">Valitun osapuolen mahdolliset roolit ja yritykset näkyvät **Roolit**-välilehdessä.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-131">The **Roles** tab shows the roles that the selected party can have and the legal entity where it has each role.</span></span>
+- <span data-ttu-id="9b0d7-132">Osapuolen verotunnukset näkyvät **Verorekisteröintitunnus**-välilehdessä.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-132">**Tax registration ID** tab shows the tax registration IDs that are assigned to the party.</span></span>
+
+<span data-ttu-id="9b0d7-133">Voit kopioida osapuolen vain, jos sen rooli on asiakas ja jos sillä on tämä rooli muussa kuin nykyisessä yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-133">You can copy a party only if it has a customer role, and if it has that role in a legal entity that isn't the current legal entity.</span></span> <span data-ttu-id="9b0d7-134">Kun olet löytänyt nämä ehdot täyttävän osapuolen, toimi seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-134">When you find a party that meets these criteria, follow these steps.</span></span>
+
+1. <span data-ttu-id="9b0d7-135">Näkyviin tulee **Kopioi asiakas** -vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-135">A **Copy customer** option appears.</span></span> <span data-ttu-id="9b0d7-136">Tämä vaihtoehto on oletusarvoisesti **Ei**.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-136">By default, this option is set to **No**.</span></span> <span data-ttu-id="9b0d7-137">Voit kopioida asiakkaan nykyiseen yritykseen valitsemalla **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-137">To copy the customer to the current legal entity, set the option to **Yes**.</span></span> 
+2. <span data-ttu-id="9b0d7-138"> **Yritys**-kenttä tulee näkyviin.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-138">A **Legal entity** field appears.</span></span> <span data-ttu-id="9b0d7-139">Valitse yritys, josta asiakas kopioidaan</span><span class="sxs-lookup"><span data-stu-id="9b0d7-139">Select the legal entity to copy the customer from.</span></span> <span data-ttu-id="9b0d7-140">Jos asiakas kuuluu vain yhteen yritykseen, kenttään määritetään tämä yritys oletusarvoisesti.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-140">If the customer exists in only one legal entity, the field is set to that legal entity by default.</span></span>
+3. <span data-ttu-id="9b0d7-141">Valitse **Valitse**.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-141">Select **Select**.</span></span> <span data-ttu-id="9b0d7-142">Uusi asiakas luodaan.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-142">The new customer is created.</span></span>
+
+## <a name="validation"></a><span data-ttu-id="9b0d7-143">Valintasäännöt</span><span class="sxs-lookup"><span data-stu-id="9b0d7-143">Validation</span></span>
+
+<span data-ttu-id="9b0d7-144">Kun asiakas kopioidaan, järjestelmä yrittää tallentaa uuden asiakkaan tiedot.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-144">When you copy a customer, the system tries to save the new customer information.</span></span> <span data-ttu-id="9b0d7-145">Valintasääntöjen avulla tarkistetaan, että kopioidut tiedot ovat oikein.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-145">Validations are run to verify that the data that was copied is good.</span></span> <span data-ttu-id="9b0d7-146">Jos valintasääntötarkistus tuottaa virheellisen tuloksen, näkyviin tulee virheilmoitus.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-146">You receive an error message for every validation that fails.</span></span> <span data-ttu-id="9b0d7-147">Virheilmoituksessa kerrotaan, mitä tietoja on päivitettävä.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-147">The error messages explain what information must be updated.</span></span> <span data-ttu-id="9b0d7-148">Asiakkaan kopio tallennetaan vasta kun tarkistuksessa havaitut virheet on korjattu.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-148">The copy of the customer can't be saved until you fix all the validation errors.</span></span>
+
+## <a name="copy-a-customer-by-using-tax-exempt-number-search-feature"></a><span data-ttu-id="9b0d7-149">Asiakkaan kopioiminen käyttämällä verovapausnumeron hakua</span><span class="sxs-lookup"><span data-stu-id="9b0d7-149">Copy a customer by using tax exempt number search feature</span></span>
+
+<span data-ttu-id="9b0d7-150">Asiakkaat voi kopioida myös hakemalla verovapausnumeron perusteella **Kaikki asiakkaat**-sivun **Asiakas**-välilehden **Rekisteröinti**-ryhmän toimintoruudussa.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-150">You can also copy customers by using the Tax exempt number search feature that is in the **Registration** group on the **Customer** tab on the Action Pane of the **All customers** page.</span></span> <span data-ttu-id="9b0d7-151">Näkyviin tulevassa **Verovapausnumeron haku** -valintaikkunassa näkyvät verovapausnumerot, asiakastunnus, asiakkaan nimi ja yritys, jossa verovapaustunnusta käytetään.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-151">The **Tax exempt number search** dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used.</span></span> <span data-ttu-id="9b0d7-152">Asiakas voidaan kopioida vain, jos se on muu yritys kuin nykyinen yritys.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-152">You can copy a customer only if it's in a legal entity that isn't the current legal entity.</span></span> <span data-ttu-id="9b0d7-153">Kun olet valinnut nämä ehdot täyttävän asiakkaan, toimi seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-153">After you select a customer that meets this criterion, follow these steps.</span></span>
+
+1. <span data-ttu-id="9b0d7-154">Näkyviin tulee **Kopioi asiakas** -vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-154">A **Copy customer** option appears.</span></span> <span data-ttu-id="9b0d7-155">Tämä vaihtoehto on oletusarvoisesti **Ei**.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-155">By default, this option is set to **No**.</span></span> <span data-ttu-id="9b0d7-156">Voit kopioida asiakkaan nykyiseen yritykseen valitsemalla **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-156">To copy the customer to the current legal entity, set the option to **Yes**.</span></span> 
+2. <span data-ttu-id="9b0d7-157">Valitse **Valitse**.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-157">Select **Select**.</span></span> <span data-ttu-id="9b0d7-158">Uusi asiakas luodaan.</span><span class="sxs-lookup"><span data-stu-id="9b0d7-158">The new customer is created.</span></span>
