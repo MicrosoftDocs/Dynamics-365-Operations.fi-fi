@@ -1,513 +1,196 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="pos-screen-layouts.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>pos-screen-layouts.280407.e9536563ce7ddfc4aef54ae05267316ea8139263.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>e9536563ce7ddfc4aef54ae05267316ea8139263</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>e2fb0846fcc6298050a0ec82c302e5eb5254e0b5</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/27/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\pos-screen-layouts.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Screen layouts for the point of sale (POS)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytön asettelut myyntipisteeseen (POS)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides information about screen layouts for Microsoft Dynamics 365 for Retail point of sale (POS) experiences.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS -käyttöliittymistä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Screen layouts for the point of sale (POS)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytön asettelut myyntipisteeseen (POS)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides information about screen layouts for Microsoft Dynamics 365 for Retail point of sale (POS) experiences.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS -käyttöliittymistä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The Retail POS user interface (UI) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and/or users.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail POS:n käyttöliittymät (UI) voidaan määrittää käyttäen visuaalisten profiilien ja näyttöasettelujen yhdistelmää, jotka on määritetty myymälöille, kassakoneille ja/tai käyttäjille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The following illustration shows the relationships among the various entities that make up the configurable aspects of the POS UI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Seuraava kuva esittää eri yksiköiden suhteita, jotka muodostavat määriteltäviä aspekteja POS-käyttöliittymien välillä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>POS screen layout entities</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS-näytön asettelun yksikkö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Visual profile</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visuaalinen profiili</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Visual profiles are assigned to registers, and they specify the visual elements that are register-specific and shared across users.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään määrittämään visuaalisia elementtejä, jotka ovat kassakonekohtaisia ja kaikille työntekijöille jaettuja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Every user who signs in to the register sees the same theme, colors, and images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jokainen käyttäjä, joka kirjautuu kassakoneeseen, näkee samat teemat, värit ja kuvat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>POS welcome screen with Light theme</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipisteen (POS) vaalea Tervetuloa-teema</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>POS Transaction screen with Dark theme</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipisteen (POS) tapahtuman näytössä tumma teema</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source><bpt id="p1">**</bpt>Profile number<ept id="p1">**</ept> – The profile number is the unique identifier of the visual profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Profiilinumero<ept id="p1">**</ept> – profiilinumero on visuaalisen profiilin yksilöivä tunnus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source><bpt id="p1">**</bpt>Description<ept id="p1">**</ept> – You can specify a meaningful name that will help identify the correct profile for your situation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kuvaus<ept id="p1">**</ept> – kuvauksen avulla voit määrittää kuvaavan nimen, joka auttaa tunnistamaan oikean profiilin tilanteen mukaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source><bpt id="p1">**</bpt>Theme<ept id="p1">**</ept> – You can select between the Light and Dark application themes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Teema<ept id="p1">**</ept> – käyttäjät voivat valita vaalean tai tumman sovellusteeman.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>The theme affects the font and background colors throughout the application.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Teema vaikuttaa koko sovelluksen fontin ja taustan väreihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">**</bpt>Accent color<ept id="p1">**</ept> – The accent color is used throughout the POS to differentiate or highlight specific visual elements, such as tiles, command buttons, and hyperlinks.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Korostuksen väri<ept id="p1">**</ept> – korostuksen värejä käytetään koko myyntipisteessä erottamaan tai korostamaan tiettyjä visuaalisia elementtejä, kuten ruutuja, painikkeita tai hyperlinkkejä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Typically, these elements are actionable.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nämä elementit ovat yleensä toimintoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source><bpt id="p1">**</bpt>Header color<ept id="p1">**</ept> – You can configure the color of the page header to meet the retailer's branding requirements.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Otsikon väri<ept id="p1">**</ept> – voit määrittää sivun ylätunnisteen värin jälleenmyyjän brändivaatimusten täyttämiseksi.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>This feature is available only in Microsoft Dynamics 365 for Retail version 1611.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Tämä ominaisuus on saatavana vain Microsoft Dynamics 365 for Retailin versiossa 1611.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source><bpt id="p1">**</bpt>Show date/time<ept id="p1">**</ept> – When enbled, the current date and time will be displayed in the POS header.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>Näytä päivämäärä/aika<ept id="p1">**</ept> – Kun käytössä, kuluva päivämäärä ja kellonaika tulevat näkyviin POS-otsikkoon.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source><bpt id="p1">**</bpt>Login backgrounds<ept id="p1">**</ept> – You can specify a background image for the sign-in screen.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kirjautumisen tausta<ept id="p1">**</ept> – käyttäjät voivat määrittää kirjautumisnäytön taustakuvan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>The file size of background images should be kept as small as possible, because storing and loading large files can affect application behavior and performance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Taustakuvan tiedostokoko on pidettävä mahdollisimman pienenä, koska suurien tiedostojen tallentaminen ja lataaminen voivat vaikuttaa sovelluksen toimintaan ja suorituskykyyn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source><bpt id="p1">**</bpt>Application background<ept id="p1">**</ept> – You can specify a background image that is used instead of the solid theme color throughout the application.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Sovelluksen tausta<ept id="p1">**</ept> – Käyttäjät voivat määrittää myös yhtenäisen taustakuvan käytettäväksi koko sovelluksessa yhtenäisen teemavärin sijaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>As for login backgrounds, the file size should be kept as small as possible.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sisäänkirjautumisen taustat tulisi pitää mahdollisimman pieninä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Screen layouts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytön asettelut</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Screen layout configurations determine the actions, content, and placement of UI controls on the POS welcome screen and <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien toiminnot, sisällön ja sijoittelut myyntipisteen Tervetuloa-näytössä ja <bpt id="p1">**</bpt>tapahtuma<ept id="p1">**</ept>-näytössä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>POS Screen layout view</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipisteen näytön asettelun näkymä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source><bpt id="p1">**</bpt>Welcome screen<ept id="p1">**</ept> – In most cases, the welcome screen is the page that users see when they first sign in to the POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tervetuloa-näyttö<ept id="p1">**</ept> – Tervetuloa-näyttö on yleensä sivu, jonka käyttäjät näkevät, kun he ensin kirjautuvat myyntipisteeseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>The welcome screen can consist of a branding image and button grids that provide access to POS operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tervetuloa-näyttö voi koostua tavaramerkin kuvasta painikeruudukoista, jotka tarjoavat pääsyn myyntipisteen toimintoihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Typically, operations that aren't specific to the current transaction are put on this screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Toiminnot, jotka eivät liity nykyiseen tapahtumaan sijoitetaan yleensä tähän näyttöön.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>POS welcome screen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipisteen aloitusnäyttö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source><bpt id="p1">**</bpt>Transaction screen<ept id="p1">**</ept> – The <bpt id="p2">**</bpt>Transaction<ept id="p2">**</ept> screen is the main screen in the POS for processing sales transactions and orders.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tapahtumanäyttö<ept id="p1">**</ept> – <bpt id="p2">**</bpt>Tapahtumanäyttö<ept id="p2">**</ept> – on POS-sovelluksen päänäyttö myyntitapahtumien ja tilausten käsittelyyn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>The content and layout are configured by using the screen layout designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sisältö ja asettelu on määritetty näytön asettelun suunnittelutoiminnon avulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>POS Transaction screen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipisteen tapahtumanäyttö</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">**</bpt>Default start screen<ept id="p1">**</ept> – Some retailers prefer that cashiers go directly to the <bpt id="p2">**</bpt>Transaction<ept id="p2">**</ept> screen after sign-in.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Oletusaloitusnäyttö<ept id="p1">**</ept> – jotkin vähittäismyyjät haluavat, että kassa siirtyy suoraan <bpt id="p2">**</bpt>Tapahtumanäyttöön<ept id="p2">**</ept> kirjautumisen jälkeen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The <bpt id="p1">**</bpt>Default start screen<ept id="p1">**</ept> setting lets you specify the default screen that appears after sign-in for each screen layout.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Oletusarvoisen aloitusnäytön<ept id="p1">**</ept> asetuksien avulla voit määrittää oletusarvoisen näytön, joka näkyy kirjautumisen jälkeen kussakin näyttöasettelussa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Assignment</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Liitos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Screen layouts can be assigned at the store, register, or user level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytön asettelut voidaan määrittää myymälän, kassakoneen tai käyttäjän tasolla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>The user assignment overrides the register and store assignments, and the register assignment overrides the store assignment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttäjän määritys korvaa kassakoneen ja myymälän määritykset, ja kassakoneen määritys korvaa myymälän määrityksen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>In a simple scenario where all users use the same layout, regardless of register or role, the screen layout can be set only at the store level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Yksinkertaisessa tilanteessa, jossa kaikki käyttäjät käyttävät samaa asettelua riippumatta kassakoneesta tai roolista, näytön asettelu voidaan määrittää vain myymälätasolla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>In scenarios where specific registers or users require specialized layouts, those layouts can be assigned.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skenaarioissa, jossa tietyt kassakoneet tai käyttäjät vaativat erityisiä asetteluita, nuo asettelut voidaan määritellä asianmukaisesti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Layout sizes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asettelukoot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Most aspects of the POS UI are responsive, and the layout is automatically resized and adjusted based on the screen size and orientation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suurin osa POS-käyttöliittymän aspekteista on herkästi reagoivia ja asettelu säätyy automaattisesti näytön koon ja suunnan perusteella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>However, the POS <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen must be configured for every screen resolution that is expected.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuitenkin myyntipisteessä <bpt id="p1">**</bpt>Tapahtuma<ept id="p1">**</ept>-ruutu on määritettävä jokaisen tarvittavan näytöntarkkuuden mukaan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>At startup, the POS application automatically selects the closest layout size that is configured for the device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käynnistettäessä POS-sovellus valitsee automaattisesti lähimmän laitteeseen määritellyn asettelun koon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>A screen layout can also contain configurations for both landscape and portrait modes, and for both full-size and compact devices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytön asettelu voi sisältää myös sekä vaaka- että pystytilat sekä täysikokoisen ja tiivistetyn konfiguraatiot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Therefore, users can be assigned to a single screen layout that works across various sizes and form factors that are used in the store.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämän vuoksi käyttäjät voidaan määrittää yhteen näyttöasetteluun, joka toimii myymälän erikokoissa ja erityyppisissä laitteissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>POS layout sizes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipisteen asettelukoot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source><bpt id="p1">**</bpt>Name<ept id="p1">**</ept> – You can enter a meaningful name to identify the screen size.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Nimi<ept id="p1">**</ept> – Määritä kuvaava nimi, joka yksilöi näytön koon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source><bpt id="p1">**</bpt>Layout type<ept id="p1">**</ept> – The POS application can show its UI in various modes to provide the best user experience on a given device.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Asettelutyyppi<ept id="p1">**</ept> – POS-sovelluksessa voidaan näyttää sen käyttöliittymän erilaisia tiloja, että voidaan taata paras mahdollinen käyttäjäkokemus tietyllä laitteella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source><bpt id="p1">**</bpt>Modern POS – Full<ept id="p1">**</ept> – Full layouts are typically best for larger displays, such as desktop monitors and tablets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Modern POS – täydellinen<ept id="p1">**</ept> – täydelliset asettelut ovat yleensä parhaimmillaan suurissa näytöissä kuten PC-näytöissä tai tableteissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>You can select the UI elements to include, specify the size and placement of those elements, and configure their detailed properties.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit valita haluamasi asettelun käyttöliittymäelementit, määrittää elementtien koon ja sijoittelun sekä elementtien yksityiskohtaiset ominaisuudet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>Full layouts support both portrait and landscape configurations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täydelliset asettelut tukevat sekä vaaka- että pystykokoonpanoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source><bpt id="p1">**</bpt>Modern POS – Compact<ept id="p1">**</ept> – Compact layouts are typically best for phones and small tablets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Modern POS – kompakti<ept id="p1">**</ept> – kompaktit asettelut sopivat parhaiten puhelimiin ja pieniin tabletteihin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>The design possibilities for compact devices are limited.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompaktien laitteiden suunnittelumahdollisuudet ovat rajalliset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>You can configure the columns and fields for the receipt and totals panels.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää kuitti- ja summaruutujen sarakkeet ja kentät.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source><bpt id="p1">**</bpt>Width/Height<ept id="p1">**</ept> – These values represent the effective screen size, in pixels, that is expected for the layout.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Leveys ja korkeus<ept id="p1">**</ept> – arvot edustavat kuvapisteinä tehokasta näytön kokoa, joka vaaditaan asetteluun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Remember that some operating systems use scaling for high-resolution displays.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muista, että jotkin käyttöjärjestelmät käyttävät skaalausta korkean resoluution näytöissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>You can learn the layout size that is required for a POS screen by viewing the resolution in the app.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Löydät vaaditun asettelun koon, jota POS-näytön tarkkuus vaatii tarkastelemalla resoluutiota sovelluksessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Start the POS, and go to <bpt id="p1">**</bpt>Settings <ph id="ph1">\&gt;</ph> Session information<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käynnistä Myyntipiste ja siirry <bpt id="p1">**</bpt>Asetukset <ph id="ph1">\&gt;</ph> Istuntotietoja<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>POS shows the screen layout that is currently loaded, the layout size, and the resolution of the app window.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS näyttää tällä hetkellä ladatun näyttöasettelun, asettelun koon ja sovellusikkunan resoluution.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>POS layout sizes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipisteen asettelukoot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>Button grids</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Painikeruudukot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>For each layout size in a screen layout, you can configure and assign button grids for the POS welcome screen and <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit konfiguroida ja määrittää painikeruudukoiden POS-Tervetuloa-näytön ja <bpt id="p1">**</bpt>Tapahtuma<ept id="p1">**</ept>-näytön asettelun kullekin koolle näyttöasettelussa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Button grids for the welcome screen are automatically laid out from left to right, from the lowest number (Welcome screen 1) to the highest number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tervetuloa-näytön painikeruudukot on aseteltu automaattisesti vasemmalta oikealle, pienimmästä numerosta (Tervetuloa-näyttö 1) suurimpaan numeroon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>In Full POS layouts, the placement of button grids is specified in the screen layout designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koko myyntipisteen asetteluissa painikeruudukoiden sijoittelu on määritetty näytön asettelun suunnittelutyökalussa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>In Compact POS layouts, the button grids are automatically laid out from top to bottom, from the lowest number (Transaction screen 1) to the highest number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompakteissa myyntipisteiden asetteluissa painikeruudukot on aseteltu automaattisesti ylhäältä alas, pienimmästä numerosta (Tervetuloa-näyttö 1) suurimpaan numeroon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>They can be accessed on the <bpt id="p1">**</bpt>Actions<ept id="p1">**</ept> menu.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Niitä voidaan käyttää <bpt id="p1">**</bpt>Toimenpiteet<ept id="p1">**</ept>-valikossa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Compact layout button grids</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompaktit asettelun painikeruudukot</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Images</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuvat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>For each layout size in a screen layout, you can specify images to include in the POS UI.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää kutakin näyttöasettelun kokoa varten kuvat, jotka sisällytetään POS-käyttöliittymään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>For Full POS layouts, a single image can be specified for the welcome screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POS-sovelluksen koko asetteluissa Tervetuloa-näyttöön voidaan määrittää yksi kuva.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>This image appears as the first UI element on the left.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuva näkyy käyttöliittymän ensimmäisenä elementtinä vasemmalla puolella.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>On the <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen, images can be used as tab images or as a logo.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tapahtuma<ept id="p1">**</ept>-näytössä kuvia voidaan käyttää välilehden kuvina tai logoina.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Compact POS layouts don't use these images.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompaktit myyntipisteen asettelut eivät käytä näitä kuvia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Screen layout designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytön asettelun suunnittelutoiminto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>The screen layout designer lets you configure various aspects of the POS <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen for each layout size, in both portrait and landscape modes, and for both Full and Compact layouts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytön asettelun suunnittelutoiminnon avulla voit määrittää myyntipisteen <bpt id="p1">**</bpt>Tapahtuma<ept id="p1">**</ept>-näytön eri puolia asettelun kullekin koolle sekä pysty- että vaaka-asennossa, ja sekä kokonaisissa että tiivistetyissä asetteluissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>The screen layout designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytön asettelun suunnittelutoiminto käyttää ClickOnce-käyttöönottoteknologiaa lataamaan, asentamaan ja käynnistämään sovelluksen uusimman version aina, kun se avataan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>Be sure to check the browser requirements for ClickOnce.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muista tarkistaa ClickOnce-käyttöönottoteknologiaa koskevat selainvaatimukset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Some browsers, such as Google Chrome, require extensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jotkut selaimet, kuten Google Chrome, edellyttävät laajennuksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>You must configure a screen layout for each layout size that is defined and that is used by the POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä näyttöasettelu kullekin asettelukoolle, joka on määritetty ja jota käytetään myyntipisteessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>Full layout designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Täysi asettelun suunnittelutoiminto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>The Full layout designer lets users drag UI controls onto the POS <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen and configure the settings of those controls.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Koko asettelun suunnittelutoiminnon avulla käyttäjät voivat vetää POS-käyttöliittymän ohjausobjekteja <bpt id="p1">**</bpt>tapahtuma<ept id="p1">**</ept>-näyttöön ja määrittää näiden ohjainten asetuksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>POS Full layout designer (landscape mode)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipisteen asettelun täysi suunnittelutoiminto (vaaka-tila)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source><bpt id="p1">**</bpt>Import layout/Export layout<ept id="p1">**</ept> – You can export and import POS screen layout designs as XML files, so that you can easily reuse and share them across environments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Tuo asettelu ja Vie asettelu<ept id="p1">**</ept> – voit viedä ja tuoda myyntipisteen näytön asettelun suunnitelmat XML-tiedostoina, jotta voit käyttää niitä uudelleen ja jakaa ympäristöissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>It's important that you import layout designs for the correct layout sizes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">On tärkeää, että tuot asettelusuunnitelmista oikean kokoiset asettelumallit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Otherwise, UI elements might not fit correctly on the screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muussa tapauksessa käyttöliittymän osat eivät ehkä näy oikein näytössä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source><bpt id="p1">**</bpt>Landscape/Portrait<ept id="p1">**</ept> – If the POS device lets users switch between landscape and portrait modes, you must define a screen layout for each mode.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Vaaka/pysty<ept id="p1">**</ept> – Mikäli käyttäjät voivat käyttää myyntipisteen laitteen avulla sekä vaaka- että pystymallia, näyttöasettelu on määritettävä kullekin tilalle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>The POS automatically detects screen rotation and shows the correct layout.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipiste tunnistaa automaattisesti näytön suunnan ja näyttää oikean asettelun.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source><bpt id="p1">**</bpt>Layout grid<ept id="p1">**</ept> – The POS layout designer uses a 4-pixel grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Asetteluruudukko<ept id="p1">**</ept> – Myyntipisteen asettelun suunnittelutoiminto käyttää 4-kuvapisteen ruudukkoa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>UI controls "snap" to the grid to help you correctly align the content.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Käyttöliittymän ohjaus ”Kohdista” auttaa sinua sijoittamaan sisällön oikein ruudukkoon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source><bpt id="p1">**</bpt>Designer zoom<ept id="p1">**</ept> – You can zoom the designer view in and out to better view the content on the POS screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Suunnittelijazoomaus<ept id="p1">**</ept> – voit suurentaa tai pienentää kohdetta suunnittelutyökalulla tarkastellaksesi paremmin sisältöä POS-näytössä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>This feature is useful when the screen resolution on the POS differs greatly from the resolution of the screen that is used in the designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä ominaisuus on hyödyllinen, kun näytön resoluutio myyntipisteessä eroaa suuresti suunnittelussa käytetyn näytön tarkkuudesta.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source><bpt id="p1">**</bpt>Show/hide navigation bar<ept id="p1">**</ept> – For Full POS layouts, you can select whether the left navigation bar is visible on the <bpt id="p2">**</bpt>Transaction<ept id="p2">**</ept> screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Näytä tai piilota siirtymispalkki<ept id="p1">**</ept> – koko myyntipisteen asetteluja varten voit valita, näkyykö vasen siirtymispalkki <bpt id="p2">**</bpt>Tapahtuma<ept id="p2">**</ept>-näytössä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>This feature is helpful for displays that have a lower resolution.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä toiminto on hyödyllinen näytöissä, joissa on pienempi tarkkuus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>To set the visibility, right-click the navigation bar in the designer, and select or clear the <bpt id="p1">**</bpt>Always visible<ept id="p1">**</ept> check box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Määritä näkyvyys hiiren kakkospainikkeella suunnittelutyökalun siirtymispalkissa ja valitse tai poista <bpt id="p1">**</bpt>Aina näkyvissä<ept id="p1">**</ept> -valintaruutu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>If the navigation bar is hidden, POS users can still access it by using the menu in the upper left.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jos siirtymispalkki on piilotettu, myyntipisteen käyttäjät voivat löytää sen vasemman yläkulman valikon avulla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>Show/hide navigation bar</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytä / piilota siirtymispalkki</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source><bpt id="p1">**</bpt>POS controls<ept id="p1">**</ept> – The POS layout designer supports the following controls.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Myyntipisteen ohjaimet<ept id="p1">**</ept> – Myyntipisteen asettelun suunnittelutoiminto tukee seuraavia ohjaimia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>You can configure many controls by right-clicking and using the shortcut menu.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää useita ohjausobjekteja ja napsauttamalla hiiren oikealla painikkeella ja käyttämällä pikavalikkoa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>POS UI controls</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipisteen käyttöliittymän ohjausobjektit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source><bpt id="p1">**</bpt>Number pad<ept id="p1">**</ept> – The number pad is the main mechanism for user input on the POS <bpt id="p2">**</bpt>Transaction<ept id="p2">**</ept> screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Numeronäppäimistö<ept id="p1">**</ept> – Numeronäppäimistö on tärkein syöttötapa myyntipisteen <bpt id="p2">**</bpt>Tapahtuma<ept id="p2">**</ept>-näytössä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>You can configure the control so that the full number pad is shown.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää hallinnan siten, että koko numeronäppäimistö on näkyvissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>This option is ideal for touchscreen devices.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tämä valinta on ihanteellinen kosketusnäyttölaitteille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Alternatively, you can configure it so that only the input field is shown.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vaihtoehtoisesti voit määrittää sen niin, että vain syöttökenttä näytetään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>In this case, a physical keyboard is used for input.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tällöin fyysistä näppäimistöä käytetään tietojen syöttämiseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>The number pad settings are available only for Full layouts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Numeronäppäimistön asetukset ovat käytettävissä vain täydellisessä asettelussa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>For Compact layouts, the full number pad is always shown on the <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tiiviissä asetteluissa koko numeronäppäimistö näkyy aina <bpt id="p1">**</bpt>Tapahtuma<ept id="p1">**</ept>-näytössä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source><bpt id="p1">**</bpt>Totals panel<ept id="p1">**</ept> – You can configure the totals panel in either one column or two columns, to show values such as the line count, discount amount, charges, subtotal, and tax.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Summapaneeli<ept id="p1">**</ept> - Summapaneeliin voidaan määrittää joko yksi tai kaksi saraketta näyttämään arvot kuten rivin määrä, alennussumma, kulut, välisumma ja ALV.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Compact layouts support only a single column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tiivistetyt asettelut tukevat ainoastaan yksittäisiä sarakkeita.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source><bpt id="p1">**</bpt>Receipt panel<ept id="p1">**</ept> – The receipt panel contains the sales lines, payment lines, and delivery information for the products and services that are processed in the POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kuittiruutu<ept id="p1">**</ept> – Kuittiruutu sisältää myyntirivit, maksurivit ja toimitustiedot myyntipisteessä käsitellyille tuotteille ja palveluille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>You can specify columns, widths, and placement.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää sarakkeet, leveydet ja sijainnit.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>In Compact layouts, you can also configure additional information that appears in the row under the main line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tiivistetyissä asetteluissa voit myös määrittää tiivistettyjä asetteluja, jotka näkyvät päärivin alla olevalla rivillä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source><bpt id="p1">**</bpt>Customer card<ept id="p1">**</ept> – The customer card shows information about the customer who is associated with the current transaction.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Asiakaskortti<ept id="p1">**</ept> – Asiakaskortti näyttää tämänhetkiseen tapahtumaan liittyvän asiakkaan tietoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>You can configure the customer card to hide or show additional information.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Asiakaskortti voidaan määrittää näyttämään tai piilottamaan lisätiedot.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source><bpt id="p1">**</bpt>Tab control<ept id="p1">**</ept> – You can add the tab control to a screen layout, and then put other controls, such as the number pad, customer card, or button grids, in it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Välilehtiohjausobjekti<ept id="p1">**</ept> – Välilehtiohjausobjekti voidaan sijoittaa näyttöasetteluun, ja muut ohjausobjektit, kuten numeronäppäimistö, asiakaskortti ja painikeruudukko voidaan sijoittaa välilehden sisään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>The tab control is a container that helps you fit more content on the screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välilehtiohjausobjekti on säilö, joka auttaa sinua mahduttamaan enemmän sisältöä näyttöön.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>The tab control is available only for Full layouts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välilehtiohjausobjekti on käytettävissä vain täydellisissä asetteluissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source><bpt id="p1">**</bpt>Image<ept id="p1">**</ept> – You can use the image control to show the store's logo or another branding image on the <bpt id="p2">**</bpt>Transaction<ept id="p2">**</ept> screen.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kuva<ept id="p1">**</ept> – Kuva-ohjausobjektia voidaan käyttää näyttämään myymälän logo tai muu brändikuva <bpt id="p2">**</bpt>Tapahtuma<ept id="p2">**</ept>-näytössä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>The image control is available only for Full layouts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuva-ohjausobjekti on käytettävissä vain täydellisissä asetteluissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source><bpt id="p1">**</bpt>Recommended products<ept id="p1">**</ept> – If the recommended products control is configured for the environment, it shows product suggestions, based on machine learning.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Suositellut tuotteet<ept id="p1">**</ept> – Jos tämä on määritetty ympäristöön, Suositellut tuotteet -ohjausobjekti näyttää tuote-ehdotuksia koneoppimiseen perustuen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source><bpt id="p1">**</bpt>Custom control<ept id="p1">**</ept> – The custom control acts as a placeholder in the screen layout and lets you reserve space for custom content.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Mukautettu ohjausobjekti<ept id="p1">**</ept> – Mukautettu ohjausobjekti toimii näytössä paikkamerkkinä varaamassa tilaa mukautetulle sisällölle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>The custom control is available only for Full layouts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mukautettu ohjausobjekti on käytettävissä vain täydellisissä asetteluissa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>Compact layout designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompakti näytön asettelun suunnittelutoiminto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Like the Full layout designer, the Compact layout designer lets you configure the POS screen layout for phones and small tablets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kuten täyden asettelun suunnittelutoiminnonkin, kompaktin suunnittelutoiminnon avulla voit määrittää myyntipisteen näyttöasettelun puhelimille ja pienille tableteille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>However, in this case, the layout itself is fixed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tässä tapauksessa itse asettelu on korjattu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>You can configure the controls in the layout by right-clicking and using the shortcut menu.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit määrittää useita asetteluohjausobjekteja ja napsauttamalla hiiren oikealla painikkeella ja käyttämällä pikavalikkoa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>However, you can't use drag-and-drop operations for additional content.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Et kuitenkaan voi käyttää vedä ja pudota -toimintoja ylimääräistä sisältöä varten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Compact layout designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kompakti näytön asettelun suunnittelutoiminto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Button grid designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Painikeruudukon suunnittelutoiminto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>The button grid designer lets you configure button grids that can be used on the POS welcome screen and <bpt id="p1">**</bpt>Transaction<ept id="p1">**</ept> screen for both Full and Compact layouts.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita, joita käytetään myyntipisteen Tervetuloa-näytössä ja <bpt id="p1">**</bpt>Tapahtuma<ept id="p1">**</ept>-näytön täydellisille sekä kompakteille asetteluille.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>The same button grid can be used across layouts and layout types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Samaa painikeruudukkoa voidaan käyttää eri asetteluissa ja asettelutyypeissä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>Like the screen layout designer, the button grid designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näytön asettelun suunnittelutoiminto käyttää ClickOnce-käyttöönottoteknologiaa lataamaan, asentamaan ja käynnistämään sovelluksen uusimman version aina, kun se avataan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Be sure to check the browser requirements for ClickOnce.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Muista tarkistaa ClickOnce-käyttöönottoteknologiaa koskevat selainvaatimukset.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Some browsers, such as Google Chrome, require extensions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jotkut selaimet, kuten Google Chrome, edellyttävät laajennuksia.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Button grid designer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Painikeruudukon suunnittelutoiminto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source><bpt id="p1">**</bpt>New button<ept id="p1">**</ept> – Click to add a new button to the button grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Uusi painike<ept id="p1">**</ept> – Napsauttamalla tätä voit lisätä uuden painikkeen painikeruudukkoon.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>By default, new buttons appear in the upper-left corner of the grid.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Oletusarvoisesti uudet painikkeet ovat ruudukon vasemmassa yläkulmassa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>However, you can arrange buttons by dragging them in the layout.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voit järjestää painikkeiden asettelua vetämällä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>The contents of the button grid can overlap.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Painikeruudukon sisältö saattaa mennä päällekkäin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>When you arrange buttons, make sure that they don't hide other buttons.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Järjestellessäsi painikkeita varmista, että ne eivät piilota muita painikkeita.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source><bpt id="p1">**</bpt>New design<ept id="p1">**</ept> – Click to automatically set up a button grid layout by specifying the number of buttons per row and column.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Uusi suunnitelma<ept id="p1">**</ept> – Napsauttamalla tätä voit määrittää automaattisesti painikeruudukon määrittämällä painikkeiden määrän riviä ja sarakkeita kohti.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source><bpt id="p1">**</bpt>Button properties<ept id="p1">**</ept> – You can configure button properties by right-clicking the button and using the shortcut menu.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Painikkeen ominaisuudet<ept id="p1">**</ept> – Voit määrittää painikeominaisuudet painamalla hiiren kakkospainiketta ja käyttämällä pikavalikkoa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Some button grid settings apply only to Enterprise POS, not to Retail Modern POS or Cloud POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jotkin painikeruudukon asetukset vaikuttavat vain yrityksen myyntipisteeseen eivätkä myyntipisteen Retail Modern POS- tai Cloud POS -sovellukseen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Button grid button properties</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Painikeruudukon painikeominaisuudet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source><bpt id="p1">**</bpt>Action<ept id="p1">**</ept> – In the list of applicable POS operations, select the operation that is invoked when the button is clicked in the POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Toiminnot<ept id="p1">**</ept> – käytettäessä myyntipisteen toimintoja valitse listasta toiminto, joka suoritetaan, kun painiketta napsautetaan myyntipisteessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>For the list of supported POS operations, see <bpt id="p1">[</bpt>POS operations, online and offline<ept id="p1">](pos-operations.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Näet myyntipisteen tuettujen toimintojen luettelon kohdasta <bpt id="p1">[</bpt>Myyntipisteen toimintoja, online ja offline<ept id="p1">](pos-operations.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source><bpt id="p1">**</bpt>Action parameters<ept id="p1">**</ept> – Some POS operations use additional parameters when they are invoked.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Toiminnon parametrit<ept id="p1">**</ept> – Jotkin myyntipisteen toiminnoista käyttävät lisäparametreja, kun ne käynnistetään.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>For example, for the Add product operation, users can specify the product to add.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkiksi työvaiheelle Lisää tuote käyttäjät voivat määrittää lisättävän tuotteen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source><bpt id="p1">**</bpt>Button text<ept id="p1">**</ept> – Specify the text that appears on the button in the POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Painikkeen teksti<ept id="p1">**</ept> – Määritä teksti, joka näkyy myyntipisteen painikkeessa.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source><bpt id="p1">**</bpt>Hide button text<ept id="p1">**</ept> – Use this check box to hide or show the button text.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Piilota painikkeen teksti<ept id="p1">**</ept> – Tämän valintaruudun avulla voit näyttää tai piilottaa painikkeen tekstin.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Button text is often hidden for small buttons that show only an icon.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Painikkeiden teksti piilotetaan usein pienissä painikkeissa, joista näkyy vain kuvake.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source><bpt id="p1">**</bpt>Tooltip<ept id="p1">**</ept> – Specify additional Help text that appears when users mouse over the button.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Työkaluvihje<ept id="p1">**</ept> – Määritä näytettävä lisäohjeteksti, joka näkyy, kun käyttäjä vie hiiren painikkeen päälle.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source><bpt id="p1">**</bpt>Size in columns/Size in rows<ept id="p1">**</ept> – You can specify how tall and wide the button is.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Sarakkeiden koko / rivien koko<ept id="p1">**</ept> – Voit määrittää, kuinka pitkä ja leveä painike on.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>POS button sizes in rows and columns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Myyntipisteen painikkeiden koot riveillä ja sarakkeissa</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source><bpt id="p1">**</bpt>Custom font<ept id="p1">**</ept> – When you select the <bpt id="p2">**</bpt>Enable custom font for POS<ept id="p2">**</ept> check box, you can specify a font other than the default system font for the POS.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Mukautettu fontti<ept id="p1">**</ept> – Kun valitset <bpt id="p2">**</bpt>Ota käyttöön mukautettu fontti myyntipisteelle<ept id="p2">**</ept> -valintaruudun, voit määrittää jonkun muun kuin järjestelmän oletusfontin myyntipisteessä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source><bpt id="p1">**</bpt>Custom theme<ept id="p1">**</ept> – By default, POS buttons use the accent color from the visual profile.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Mukautettu teema<ept id="p1">**</ept> – Oletusarvoisesti myyntipisteen painikkeissa käytetään visuaalisen profiilin korostusväriä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>When you select the <bpt id="p1">**</bpt>Use custom theme<ept id="p1">**</ept> check box, you can specify additional colors.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kun valitset <bpt id="p1">**</bpt>Käytä mukautettua teemaa<ept id="p1">**</ept> -valintaruudun, voit määrittää muita värejä.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>Retail Modern POS and Cloud POS use only the <bpt id="p1">**</bpt>Back color<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Font color<ept id="p2">**</ept> values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retail Modern POS ja Cloud POS käyttävät vain <bpt id="p1">**</bpt>Taustaväri<ept id="p1">**</ept>- ja <bpt id="p2">**</bpt>Fontin väri<ept id="p2">**</ept> -arvoja.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source><bpt id="p1">**</bpt>Button image<ept id="p1">**</ept> – Buttons can include images or icons.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Painikkeen kuva<ept id="p1">**</ept> – painikkeet voivat sisältää kuvia tai kuvakkeita.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Select among the available images that are specified at <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> POS setup <ph id="ph3">\&gt;</ph> POS <ph id="ph4">\&gt;</ph> Images<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valitse käytettävissä olevista kuvista, jotka on määritetty kohdassa <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph>Kanavan asetukset <ph id="ph2">\&gt;</ph> Myyntipisteen asetukset <ph id="ph3">\&gt;</ph> Myyntipisteen <ph id="ph4">\&gt;</ph> kuvia<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>Example button grid in the POS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Esimerkki painikeruudukosta myyntipisteessä</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lisäresurssit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source><bpt id="p1">[</bpt>Install the Retail POS Layout designer<ept id="p1">](install-pos-layout-designer.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Retail POS:n asettelun suunnittelutoiminnon asentaminen<ept id="p1">](install-pos-layout-designer.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Näytön asettelut myyntipisteeseen (POS)
+description: Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS -käyttöliittymistä.
+author: jblucher
+manager: AnnBe
+ms.date: 05/20/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+ms.search.form: RetailTillLayout
+audience: Application user
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: 90573
+ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: jeffbl
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607032"
+---
+# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Näytön asettelut myyntipisteeseen (POS)
+
+[!include [banner](includes/banner.md)]
+
+Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS -käyttöliittymistä.
+
+Retail POS:n käyttöliittymät (UI) voidaan määrittää käyttäen visuaalisten profiilien ja näyttöasettelujen yhdistelmää, jotka on määritetty myymälöille, kassakoneille ja/tai käyttäjille.
+
+Seuraava kuva esittää eri yksiköiden suhteita, jotka muodostavat määriteltäviä aspekteja POS-käyttöliittymien välillä.
+
+![POS-näytön asettelun yksikkö](../retail/media/POS-layout-configuration-entities-diagram.png)
+
+## <a name="visual-profile"></a>Visuaalinen profiili
+
+Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään määrittämään visuaalisia elementtejä, jotka ovat kassakonekohtaisia ja kaikille työntekijöille jaettuja. Jokainen käyttäjä, joka kirjautuu kassakoneeseen, näkee samat teemat, värit ja kuvat.
+
+![Myyntipisteen (POS) vaalea Tervetuloa-teema](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
+
+![Myyntipisteen (POS) tapahtuman näytössä tumma teema](../retail/media/POS-Transaction-Screen-with-Dark-theme.png)
+
+- **Profiilinumero** – profiilinumero on visuaalisen profiilin yksilöivä tunnus.
+- **Kuvaus** – kuvauksen avulla voit määrittää kuvaavan nimen, joka auttaa tunnistamaan oikean profiilin tilanteen mukaan.
+- **Teema** – käyttäjät voivat valita vaalean tai tumman sovellusteeman. Teema vaikuttaa koko sovelluksen fontin ja taustan väreihin.
+- **Korostuksen väri** – korostuksen värejä käytetään koko myyntipisteessä erottamaan tai korostamaan tiettyjä visuaalisia elementtejä, kuten ruutuja, painikkeita tai hyperlinkkejä. Nämä elementit ovat yleensä toimintoja.
+- **Otsikon väri** – voit määrittää sivun ylätunnisteen värin jälleenmyyjän brändivaatimusten täyttämiseksi. Tämä ominaisuus on saatavana vain Microsoft Dynamics 365 for Retailin versiossa 1611.
+- **Näytä päivämäärä/aika** – Kun käytössä, kuluva päivämäärä ja kellonaika tulevat näkyviin POS-otsikkoon.
+- **Kirjautumisen tausta** – käyttäjät voivat määrittää kirjautumisnäytön taustakuvan. Taustakuvan tiedostokoko on pidettävä mahdollisimman pienenä, koska suurien tiedostojen tallentaminen ja lataaminen voivat vaikuttaa sovelluksen toimintaan ja suorituskykyyn.
+- **Sovelluksen tausta** – Käyttäjät voivat määrittää myös yhtenäisen taustakuvan käytettäväksi koko sovelluksessa yhtenäisen teemavärin sijaan. Sisäänkirjautumisen taustat tulisi pitää mahdollisimman pieninä.
+
+## <a name="screen-layouts"></a>Näytön asettelut
+
+Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien toiminnot, sisällön ja sijoittelut myyntipisteen Tervetuloa-näytössä ja **tapahtuma**-näytössä.
+
+![Myyntipisteen näytön asettelun näkymä](../retail/media/POS-Screen-Layout-View.png)
+
+- **Tervetuloa-näyttö** – Tervetuloa-näyttö on yleensä sivu, jonka käyttäjät näkevät, kun he ensin kirjautuvat myyntipisteeseen. Tervetuloa-näyttö voi koostua tavaramerkin kuvasta painikeruudukoista, jotka tarjoavat pääsyn myyntipisteen toimintoihin. Toiminnot, jotka eivät liity nykyiseen tapahtumaan sijoitetaan yleensä tähän näyttöön.
+
+    ![Myyntipisteen aloitusnäyttö](../retail/media/POS-Welcome-Screen.png)
+
+- **Tapahtumanäyttö** – **Tapahtumanäyttö** – on POS-sovelluksen päänäyttö myyntitapahtumien ja tilausten käsittelyyn. Sisältö ja asettelu on määritetty näytön asettelun suunnittelutoiminnon avulla.
+
+    ![Myyntipisteen tapahtumanäyttö](../retail/media/POS-Transaction-Screen.png)
+
+- **Oletusaloitusnäyttö** – jotkin vähittäismyyjät haluavat, että kassa siirtyy suoraan **Tapahtumanäyttöön** kirjautumisen jälkeen. **Oletusarvoisen aloitusnäytön** asetuksien avulla voit määrittää oletusarvoisen näytön, joka näkyy kirjautumisen jälkeen kussakin näyttöasettelussa.
+
+### <a name="assignment"></a>Liitos
+
+Näytön asettelut voidaan määrittää myymälän, kassakoneen tai käyttäjän tasolla. Käyttäjän määritys korvaa kassakoneen ja myymälän määritykset, ja kassakoneen määritys korvaa myymälän määrityksen. Yksinkertaisessa tilanteessa, jossa kaikki käyttäjät käyttävät samaa asettelua riippumatta kassakoneesta tai roolista, näytön asettelu voidaan määrittää vain myymälätasolla. Skenaarioissa, jossa tietyt kassakoneet tai käyttäjät vaativat erityisiä asetteluita, nuo asettelut voidaan määritellä asianmukaisesti.
+
+### <a name="layout-sizes"></a>Asettelukoot
+
+Suurin osa POS-käyttöliittymän aspekteista on herkästi reagoivia ja asettelu säätyy automaattisesti näytön koon ja suunnan perusteella. Kuitenkin myyntipisteessä **Tapahtuma**-ruutu on määritettävä jokaisen tarvittavan näytöntarkkuuden mukaan.
+
+Käynnistettäessä POS-sovellus valitsee automaattisesti lähimmän laitteeseen määritellyn asettelun koon. Näytön asettelu voi sisältää myös sekä vaaka- että pystytilat sekä täysikokoisen ja tiivistetyn konfiguraatiot. Tämän vuoksi käyttäjät voidaan määrittää yhteen näyttöasetteluun, joka toimii myymälän erikokoissa ja erityyppisissä laitteissa.
+
+![Myyntipisteen asettelukoot](../retail/media/POS-Screen-Layout-Sizes.png)
+
+- **Nimi** – Määritä kuvaava nimi, joka yksilöi näytön koon.
+- **Asettelutyyppi** – POS-sovelluksessa voidaan näyttää sen käyttöliittymän erilaisia tiloja, että voidaan taata paras mahdollinen käyttäjäkokemus tietyllä laitteella.
+
+    - **Modern POS – täydellinen** – täydelliset asettelut ovat yleensä parhaimmillaan suurissa näytöissä kuten PC-näytöissä tai tableteissa. Voit valita haluamasi asettelun käyttöliittymäelementit, määrittää elementtien koon ja sijoittelun sekä elementtien yksityiskohtaiset ominaisuudet. Täydelliset asettelut tukevat sekä vaaka- että pystykokoonpanoja.
+    - **Modern POS – kompakti** – kompaktit asettelut sopivat parhaiten puhelimiin ja pieniin tabletteihin. Kompaktien laitteiden suunnittelumahdollisuudet ovat rajalliset. Voit määrittää kuitti- ja summaruutujen sarakkeet ja kentät.
+
+- **Leveys ja korkeus** – arvot edustavat kuvapisteinä tehokasta näytön kokoa, joka vaaditaan asetteluun. Muista, että jotkin käyttöjärjestelmät käyttävät skaalausta korkean resoluution näytöissä.
+
+> [!TIP]
+> Löydät vaaditun asettelun koon, jota POS-näytön tarkkuus vaatii tarkastelemalla resoluutiota sovelluksessa. Käynnistä Myyntipiste ja siirry **Asetukset \> Istuntotietoja**. POS näyttää tällä hetkellä ladatun näyttöasettelun, asettelun koon ja sovellusikkunan resoluution.
+
+![Myyntipisteen asettelukoot](../retail/media/POS-Session-Information.png)
+
+### <a name="button-grids"></a>Painikeruudukot
+
+Voit konfiguroida ja määrittää painikeruudukoiden POS-Tervetuloa-näytön ja **Tapahtuma**-näytön asettelun kullekin koolle näyttöasettelussa. Tervetuloa-näytön painikeruudukot on aseteltu automaattisesti vasemmalta oikealle, pienimmästä numerosta (Tervetuloa-näyttö 1) suurimpaan numeroon.
+
+Koko myyntipisteen asetteluissa painikeruudukoiden sijoittelu on määritetty näytön asettelun suunnittelutyökalussa.
+
+Kompakteissa myyntipisteiden asetteluissa painikeruudukot on aseteltu automaattisesti ylhäältä alas, pienimmästä numerosta (Tervetuloa-näyttö 1) suurimpaan numeroon. Niitä voidaan käyttää **Toimenpiteet**-valikossa.
+
+![Kompaktit asettelun painikeruudukot](../retail/media/Compact-View-Button-Grids.png)
+
+### <a name="images"></a>Kuvat
+
+Voit määrittää kutakin näyttöasettelun kokoa varten kuvat, jotka sisällytetään POS-käyttöliittymään. POS-sovelluksen koko asetteluissa Tervetuloa-näyttöön voidaan määrittää yksi kuva. Kuva näkyy käyttöliittymän ensimmäisenä elementtinä vasemmalla puolella. **Tapahtuma**-näytössä kuvia voidaan käyttää välilehden kuvina tai logoina. Kompaktit myyntipisteen asettelut eivät käytä näitä kuvia.
+
+### <a name="screen-layout-designer"></a>Näytön asettelun suunnittelutoiminto
+
+Näytön asettelun suunnittelutoiminnon avulla voit määrittää myyntipisteen **Tapahtuma**-näytön eri puolia asettelun kullekin koolle sekä pysty- että vaaka-asennossa, ja sekä kokonaisissa että tiivistetyissä asetteluissa. Näytön asettelun suunnittelutoiminto käyttää ClickOnce-käyttöönottoteknologiaa lataamaan, asentamaan ja käynnistämään sovelluksen uusimman version aina, kun se avataan. Muista tarkistaa ClickOnce-käyttöönottoteknologiaa koskevat selainvaatimukset. Jotkut selaimet, kuten Google Chrome, edellyttävät laajennuksia.
+
+> [!IMPORTANT]
+> Määritä näyttöasettelu kullekin asettelukoolle, joka on määritetty ja jota käytetään myyntipisteessä.
+
+### <a name="full-layout-designer"></a>Täysi asettelun suunnittelutoiminto
+
+Koko asettelun suunnittelutoiminnon avulla käyttäjät voivat vetää POS-käyttöliittymän ohjausobjekteja **tapahtuma**-näyttöön ja määrittää näiden ohjainten asetuksia.
+
+![Myyntipisteen asettelun täysi suunnittelutoiminto (vaaka-tila)](../retail/media/POS-Full-Layout-Designer-Landscape.png)
+
+- **Tuo asettelu ja Vie asettelu** – voit viedä ja tuoda myyntipisteen näytön asettelun suunnitelmat XML-tiedostoina, jotta voit käyttää niitä uudelleen ja jakaa ympäristöissä. On tärkeää, että tuot asettelusuunnitelmista oikean kokoiset asettelumallit. Muussa tapauksessa käyttöliittymän osat eivät ehkä näy oikein näytössä.
+- **Vaaka/pysty** – Mikäli käyttäjät voivat käyttää myyntipisteen laitteen avulla sekä vaaka- että pystymallia, näyttöasettelu on määritettävä kullekin tilalle. Myyntipiste tunnistaa automaattisesti näytön suunnan ja näyttää oikean asettelun.
+- **Asetteluruudukko** – Myyntipisteen asettelun suunnittelutoiminto käyttää 4-kuvapisteen ruudukkoa. Käyttöliittymän ohjaus ”Kohdista” auttaa sinua sijoittamaan sisällön oikein ruudukkoon.
+- **Suunnittelijazoomaus** – voit suurentaa tai pienentää kohdetta suunnittelutyökalulla tarkastellaksesi paremmin sisältöä POS-näytössä. Tämä ominaisuus on hyödyllinen, kun näytön resoluutio myyntipisteessä eroaa suuresti suunnittelussa käytetyn näytön tarkkuudesta.
+- **Näytä tai piilota siirtymispalkki** – koko myyntipisteen asetteluja varten voit valita, näkyykö vasen siirtymispalkki **Tapahtuma**-näytössä. Tämä toiminto on hyödyllinen näytöissä, joissa on pienempi tarkkuus. Määritä näkyvyys hiiren kakkospainikkeella suunnittelutyökalun siirtymispalkissa ja valitse tai poista **Aina näkyvissä** -valintaruutu. Jos siirtymispalkki on piilotettu, myyntipisteen käyttäjät voivat löytää sen vasemman yläkulman valikon avulla.
+
+    ![Näytä / piilota siirtymispalkki](../retail/media/Navigation-Bar.PNG)
+
+- **Myyntipisteen ohjaimet** – Myyntipisteen asettelun suunnittelutoiminto tukee seuraavia ohjaimia. Voit määrittää useita ohjausobjekteja ja napsauttamalla hiiren oikealla painikkeella ja käyttämällä pikavalikkoa.
+
+    ![Myyntipisteen käyttöliittymän ohjausobjektit](../retail/media/POS-UI-Controls.png)
+
+    - **Numeronäppäimistö** – Numeronäppäimistö on tärkein syöttötapa myyntipisteen **Tapahtuma**-näytössä. Voit määrittää hallinnan siten, että koko numeronäppäimistö on näkyvissä. Tämä valinta on ihanteellinen kosketusnäyttölaitteille. Vaihtoehtoisesti voit määrittää sen niin, että vain syöttökenttä näytetään. Tällöin fyysistä näppäimistöä käytetään tietojen syöttämiseen. Numeronäppäimistön asetukset ovat käytettävissä vain täydellisessä asettelussa. Tiiviissä asetteluissa koko numeronäppäimistö näkyy aina **Tapahtuma**-näytössä.
+    - **Summapaneeli** - Summapaneeliin voidaan määrittää joko yksi tai kaksi saraketta näyttämään arvot kuten rivin määrä, alennussumma, kulut, välisumma ja ALV. Tiivistetyt asettelut tukevat ainoastaan yksittäisiä sarakkeita.
+    - **Kuittiruutu** – Kuittiruutu sisältää myyntirivit, maksurivit ja toimitustiedot myyntipisteessä käsitellyille tuotteille ja palveluille. Voit määrittää sarakkeet, leveydet ja sijainnit. Tiivistetyissä asetteluissa voit myös määrittää tiivistettyjä asetteluja, jotka näkyvät päärivin alla olevalla rivillä.
+    - **Asiakaskortti** – Asiakaskortti näyttää tämänhetkiseen tapahtumaan liittyvän asiakkaan tietoja. Asiakaskortti voidaan määrittää näyttämään tai piilottamaan lisätiedot.
+    - **Välilehtiohjausobjekti** – Välilehtiohjausobjekti voidaan sijoittaa näyttöasetteluun, ja muut ohjausobjektit, kuten numeronäppäimistö, asiakaskortti ja painikeruudukko voidaan sijoittaa välilehden sisään. Välilehtiohjausobjekti on säilö, joka auttaa sinua mahduttamaan enemmän sisältöä näyttöön. Välilehtiohjausobjekti on käytettävissä vain täydellisissä asetteluissa.
+    - **Kuva** – Kuva-ohjausobjektia voidaan käyttää näyttämään myymälän logo tai muu brändikuva **Tapahtuma**-näytössä. Kuva-ohjausobjekti on käytettävissä vain täydellisissä asetteluissa.
+    - **Suositellut tuotteet** – Jos tämä on määritetty ympäristöön, Suositellut tuotteet -ohjausobjekti näyttää tuote-ehdotuksia koneoppimiseen perustuen.
+    - **Mukautettu ohjausobjekti** – Mukautettu ohjausobjekti toimii näytössä paikkamerkkinä varaamassa tilaa mukautetulle sisällölle. Mukautettu ohjausobjekti on käytettävissä vain täydellisissä asetteluissa.
+
+### <a name="compact-layout-designer"></a>Kompakti näytön asettelun suunnittelutoiminto
+
+Kuten täyden asettelun suunnittelutoiminnonkin, kompaktin suunnittelutoiminnon avulla voit määrittää myyntipisteen näyttöasettelun puhelimille ja pienille tableteille. Tässä tapauksessa itse asettelu on korjattu. Voit määrittää useita asetteluohjausobjekteja ja napsauttamalla hiiren oikealla painikkeella ja käyttämällä pikavalikkoa. Et kuitenkaan voi käyttää vedä ja pudota -toimintoja ylimääräistä sisältöä varten.
+
+![Kompakti näytön asettelun suunnittelutoiminto](../retail/media/Compact-Layout-Designer.png)
+
+### <a name="button-grid-designer"></a>Painikeruudukon suunnittelutoiminto
+
+Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita, joita käytetään myyntipisteen Tervetuloa-näytössä ja **Tapahtuma**-näytön täydellisille sekä kompakteille asetteluille. Samaa painikeruudukkoa voidaan käyttää eri asetteluissa ja asettelutyypeissä. Näytön asettelun suunnittelutoiminto käyttää ClickOnce-käyttöönottoteknologiaa lataamaan, asentamaan ja käynnistämään sovelluksen uusimman version aina, kun se avataan. Muista tarkistaa ClickOnce-käyttöönottoteknologiaa koskevat selainvaatimukset. Jotkut selaimet, kuten Google Chrome, edellyttävät laajennuksia.
+
+![Painikeruudukon suunnittelutoiminto](../retail/media/Button-Grid-Designer.png)
+
+- **Uusi painike** – Napsauttamalla tätä voit lisätä uuden painikkeen painikeruudukkoon. Oletusarvoisesti uudet painikkeet ovat ruudukon vasemmassa yläkulmassa. Voit järjestää painikkeiden asettelua vetämällä.
+
+    > [!IMPORTANT]
+    > Painikeruudukon sisältö saattaa mennä päällekkäin. Järjestellessäsi painikkeita varmista, että ne eivät piilota muita painikkeita.
+
+- **Uusi suunnitelma** – Napsauttamalla tätä voit määrittää automaattisesti painikeruudukon määrittämällä painikkeiden määrän riviä ja sarakkeita kohti.
+- **Painikkeen ominaisuudet** – Voit määrittää painikeominaisuudet painamalla hiiren kakkospainiketta ja käyttämällä pikavalikkoa.
+
+    > [!IMPORTANT]
+    > Jotkin painikeruudukon asetukset vaikuttavat vain yrityksen myyntipisteeseen eivätkä myyntipisteen Retail Modern POS- tai Cloud POS -sovellukseen.
+
+    ![Painikeruudukon painikeominaisuudet](../retail/media/Button-grid-button-properties.png)
+
+    - **Toiminnot** – käytettäessä myyntipisteen toimintoja valitse listasta toiminto, joka suoritetaan, kun painiketta napsautetaan myyntipisteessä.
+
+        Näet myyntipisteen tuettujen toimintojen luettelon kohdasta [Myyntipisteen toimintoja, online ja offline](pos-operations.md).
+
+    - **Toiminnon parametrit** – Jotkin myyntipisteen toiminnoista käyttävät lisäparametreja, kun ne käynnistetään. Esimerkiksi työvaiheelle Lisää tuote käyttäjät voivat määrittää lisättävän tuotteen.
+    - **Painikkeen teksti** – Määritä teksti, joka näkyy myyntipisteen painikkeessa.
+    - **Piilota painikkeen teksti** – Tämän valintaruudun avulla voit näyttää tai piilottaa painikkeen tekstin. Painikkeiden teksti piilotetaan usein pienissä painikkeissa, joista näkyy vain kuvake.
+    - **Työkaluvihje** – Määritä näytettävä lisäohjeteksti, joka näkyy, kun käyttäjä vie hiiren painikkeen päälle.
+    - **Sarakkeiden koko / rivien koko** – Voit määrittää, kuinka pitkä ja leveä painike on.
+
+        ![Myyntipisteen painikkeiden koot riveillä ja sarakkeissa](../retail/media/POS-Button-Sizes-In-Rows-And-Columns.png)
+
+    - **Mukautettu fontti** – Kun valitset **Ota käyttöön mukautettu fontti myyntipisteelle** -valintaruudun, voit määrittää jonkun muun kuin järjestelmän oletusfontin myyntipisteessä.
+    - **Mukautettu teema** – Oletusarvoisesti myyntipisteen painikkeissa käytetään visuaalisen profiilin korostusväriä. Kun valitset **Käytä mukautettua teemaa** -valintaruudun, voit määrittää muita värejä.
+
+        > [!NOTE]
+        > Retail Modern POS ja Cloud POS käyttävät vain **Taustaväri**- ja **Fontin väri** -arvoja.
+
+    - **Painikkeen kuva** – painikkeet voivat sisältää kuvia tai kuvakkeita. Valitse käytettävissä olevista kuvista, jotka on määritetty kohdassa **Retail \>Kanavan asetukset \> Myyntipisteen asetukset \> Myyntipisteen \> kuvia**.
+
+![Esimerkki painikeruudukosta myyntipisteessä](../retail/media/Example-Button-Grid-In-POS.png)
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Retail POS:n asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
