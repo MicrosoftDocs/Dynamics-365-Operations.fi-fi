@@ -1,135 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="cash-mgmt.md" target-language="fi-FI">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>cash-mgmt.938734.ace32148387b2244f4b600597f16dfd7ebc5d108.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>ace32148387b2244f4b600597f16dfd7ebc5d108</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>23ab3c99d05869ea2c73514754608e8684697d8c</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\retail\cash-mgmt.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Cash management improvements</source><target logoport:matchpercent="68" state="translated" state-qualifier="fuzzy-match">Kassanhallinnan parannukset</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic describes the cash management improvements in POS for Dynamics 365 for Retail.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tässä aiheessa kuvataan Dynamics 365 for Retail -ohjelman käteisvarojen hallinnan (POS) parannuksia.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Cash management improvements</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Kassanhallinnan parannukset</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Cash management is a key function for retailers in physical stores.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Kassanhallinta on fyysisten myymälöiden vähittäiskauppiaiden keskeinen toiminto.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Retailers want their stores to have systems that can help them provide complete traceability and accountability of cash and its movement across the different registers and cashiers in a store.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Vähittäiskauppiaat haluavat, että heidän myymälöissään on järjestelmiä, joiden avulla he voivat tarjota käteisvarojen täydellisen jäljitettävyyden ja vastuullisuuden ja niiden liikkumisen eri kassakoneissa ja kassoilla myymälässä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>They must be able to reconcile any differences and determine accountability.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Heidän on pystyttävä täsmäyttämään mahdolliset erot ja määriteltävä vastuullisuus.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Microsoft Dynamics 365 for Retail has cash management capabilities in its point of sale (POS) application.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Microsoft Dynamics 365 for Retaililla on kassanhallintatoimintoja myyntipisteen (POS) sovelluksessa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>However, in versions of Retail that are earlier than version 10.0.3, cash management functionality isn't robust enough to provide complete traceability of cash movements in stores.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Kassanhallintatoiminnot eivät kuitenkaan ole riittävän vahvoja, jotta käteisvarojen liikkeet voidaan jäljittää täydellisesti, mikäli vähittäismyyntitoiminnot ovat versiota 10.0.3 vanhempia.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Although retailers can reconcile the cash for a store, they can't precisely determine accountability in the event of a cash discrepancy.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Vaikka vähittäiskauppiaat voivat täsmäyttää myymälän käteisvarat, ne eivät voi tarkasti määrittää vastuullisuutta, jos käteisvarat poikkeavat toisistaan.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>In Microsoft Dynamics 365 for Retail version 10.0.3 and later, retailers will gain traceability for cash handling.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Microsoft Dynamics 365 for Retail 10.0.3:ssa ja uudemmissa versioissa vähittäiskauppiaat saavat jäljitettävyyden käteisen käsittelyä varten.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>As part of this traceability, retailers will be able to define safes, make two-sided cash transactions, and reconcile cash management transactions.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Osana tätä jäljitettävyyttä jälleenmyyjät voivat määrittää säilöt, tehdä kaksisuuntaisia käteistapahtumia ja täsmäyttää kassanhallintatapahtumat.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Set up traceability and define safes</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Jäljitettävyyden luonti ja säilöjen määrittäminen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>To set up the new cash management functionality, follow these steps to configure the functionality profile for stores.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Voit määrittää uudet kassanhallintatoiminnot määrittämällä myymälöiden toimintoprofiilin seuraavasti.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channel setup <ph id="ph2">\&gt;</ph> POS setup <ph id="ph3">\&gt;</ph> POS profiles <ph id="ph4">\&gt;</ph> Functionality profiles<ept id="p1">**</ept>, and select a functionality profile that is linked to the stores where you want to make the improvements for cash management available.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Siirry kohtaan <bpt id="p1">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavan asetukset <ph id="ph2">\&gt;</ph> POS-asetukset <ph id="ph3">\&gt;</ph> POS-profiilit <ph id="ph4">\&gt;</ph> Toimintoprofiilit<ept id="p1">**</ept> ja valitse toimintoprofiili, joka on linkitetty myymälöihin, joille haluat tarjota kassanhallintatoimintojen parannukset.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>On the <bpt id="p1">**</bpt>Functions<ept id="p1">**</ept> FastTab of the functionality profile, under <bpt id="p2">**</bpt>Advanced cash management<ept id="p2">**</ept>, set the <bpt id="p3">**</bpt>Enable cash traceability<ept id="p3">**</ept> option to <bpt id="p4">**</bpt>Yes<ept id="p4">**</ept>.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Valitse toimintoprofiilin <bpt id="p1">**</bpt>Toiminnot<ept id="p1">**</ept>-pikavälilehden <bpt id="p2">**</bpt>Kehittynyt käteisvarojen hallinta<ept id="p2">**</ept> -kohdassa <bpt id="p3">**</bpt>Ota käyttöön käteisen jäljitettävyys<ept id="p3">**</ept> -asetukseksi <bpt id="p4">**</bpt>Kyllä<ept id="p4">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>To set up safes, go to <bpt id="p1">**</bpt>Retail <ph id="ph1">\&gt;</ph> Channels <ph id="ph2">\&gt;</ph> Retail stores <ph id="ph3">\&gt;</ph> All retail stores<ept id="p1">**</ept>, and select a store.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Määrittääksesi säilöt, mene kohtaan <bpt id="p1">**</bpt>Vähittäismyynti <ph id="ph1">\&gt;</ph> Kanavat <ph id="ph2">\&gt;</ph> Vähittäismyymälät <ph id="ph3">\&gt;</ph> Kaikki vähittäismyymälät<ept id="p1">**</ept> ja valitse sitten myymälä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>On the <bpt id="p1">**</bpt>Stores<ept id="p1">**</ept> page, on the Action Pane, on the <bpt id="p2">**</bpt>Set up<ept id="p2">**</ept> tab, in the <bpt id="p3">**</bpt>Set up<ept id="p3">**</ept> group, select <bpt id="p4">**</bpt>Safes<ept id="p4">**</ept>.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Valitse <bpt id="p1">**</bpt>Myymälät<ept id="p1">**</ept>-sivun toimintoruudun <bpt id="p2">**</bpt>Määritä<ept id="p2">**</ept>-välilehden <bpt id="p3">**</bpt>Määritä<ept id="p3">**</ept>-ryhmässä <bpt id="p4">**</bpt>Säilöt<ept id="p4">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>By using this option, you can define and maintain multiple safes for a store.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Tämän vaihtoehdon avulla voit määrittää myymälälle useita säilöjä ja ylläpitää niitä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Before the functionality can be used, you must run the <bpt id="p1">**</bpt>1070 Channel configuration<ept id="p1">**</ept> distribution schedule job to sync these configurations to the channel database.</source><target logoport:matchpercent="101" state="translated" state-qualifier="id-match">Ennen kuin toimintoja voi käyttää, sinun on synkronoitava <bpt id="p1">**</bpt>1070-kanavakonfiguraatio<ept id="p1">**</ept> tietokantaan suorittamalla kanavamääritysten jakelun ajoitustehtävä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Additional cash management changes</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Kassanhallinnan lisämuutokset</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>In Retail version 10.0.3 and later, the following capabilities that are related to cash transactions are also provided:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Retail-versiossa 10.0.3 ja uudemmissa on myös seuraavat käteistapahtumiin liittyvät ominaisuudet:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>A user who is prompted to "declare start amount" must enter the source of cash.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Käyttäjän, jolle esitetään pyyntö "Ilmoita aloitussumma", on syötettävä käteisen lähde.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>The user can search for the available safes that are defined in the store and select the safe that the cash is being taken out of so that it can be put into the register.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Käyttäjä voi etsiä myymälästä määritettyjä käytettävissä olevia säilöjä ja valita säilön, joka on otettu pois käytöstä, jotta se voidaan kirjata rekisteriin.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>A user who does a "tender removal" operation is prompted to select, in a list of open "float entry" transactions, the transaction that the operation is being done against.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Käyttäjän, joka tekee maksuvälinepoistotoiminnon, tulee valita avointen liukuvien merkintätapahtumien luettelosta tapahtuma, johon työvaihe tehdään.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>If the corresponding float entry doesn't exist in the system, the user can create a non-linked tender removal transaction.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jos järjestelmässä ei ole vastaavaa liukuvaa merkintää, käyttäjä voi luoda ei-linkitetyn maksuvälineen poistotapahtuman.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>A "float entry" operation prompts a user to select, in a list of open "tender removal" transactions, the transaction that the float entry operation is being done against.</source><target logoport:matchpercent="86" state="translated" state-qualifier="fuzzy-match">Liukuva merkintä -toiminto kehottaa käyttäjää valitsemaan avoimen maksuvälinepoistotoiminnon luettelossa tapahtuman, johon työvaihe tehdään.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>If the corresponding tender removal doesn't exist in the system, the user can create a non-linked float entry transaction.</source><target logoport:matchpercent="96" state="translated" state-qualifier="fuzzy-match">Jos järjestelmässä ei ole vastaavaa maksuvälineen poistoa, käyttäjä voi luoda ei-linkitetyn liukuvan merkinnän tapahtuman.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>A user who makes a "safe drop" is prompted to select the safe where the cash is being dropped.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Käyttäjältä, joka tekee toimituksen kassakaappiin, kysytään, haluatko valita säilön, johon käteinen toimitetaan.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>For safes that are defined in a store, users can manage operations such as declaring the start amount, doing a float entry, doing a tender removal, and making a bank drop.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Kun säilöt on määritetty myymälässä, käyttäjät voivat hallita toimintoja, kuten määrittää aloitussumman, tehdä liukuvan merkinnän, maksuvälineen poiston ja toimituksen pankkiin.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>For users who have the appropriate user privileges, "manage shifts" operations show the cash balances of active, suspended, and blind closed shifts.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jos käyttäjällä on tarvittavat käyttöoikeudet, työvuorojen ylläpito-operaatiot näyttävät aktiivisten, keskeytettyjen ja piilotettujen suljettujen vuorojen käteissaldot.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>To reconcile the cash transactions within a shift or across shifts, select the shift to reconcile, and then select <bpt id="p1">**</bpt>Reconcile<ept id="p1">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jos haluat täsmäyttää käteistapahtumat vuoron aikana tai vuorojen välillä, valitse täsmäytettävä vuoro ja sitten <bpt id="p1">**</bpt>Täsmäytä<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>The view that is opened shows the list of reconciled and unreconciled transactions on separate tabs.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Avattava näkymä sisältää täsmäyttävien ja täsmäyttämättömien tapahtumien luettelon erillisillä välilehdillä.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>From this view, users can either select unreconciled transactions and reconcile them, or select previously reconciled transactions and unreconcile them.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Tässä näkymässä käyttäjät voivat joko valita täsmäyttämättömiä tapahtumia ja täsmäyttää ne tai valita aiemmin täsmäyttämättömät tapahtumat ja poistaa niiden täsmäytyksen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>During reconciliation, if the selected transaction doesn't balance, the user must enter a description of the reason for the unbalanced reconciliation.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Jos valitun tapahtuman saldo ei täsmää täsmäytyksen aikana, käyttäjän on kirjoitettava epätasapainoisen täsmäytyksen syyn kuvaus.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Users can select a single transaction and reconcile it with the relevant reason description as they require.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Käyttäjät voivat valita yhden tapahtuman ja täsmäyttää sen asiaankuuluvan syyn kuvauksen kanssa.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Users can continue to reconcile and unreconcile transactions until the shift is closed.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Käyttäjät voivat edelleen täsmäyttää ja purkaa tapahtumia, kunnes vuoro on suljettu.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>After a shift is closed, the transactions can't be unreconciled.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Kun vaihto on suljettu, tapahtumia ei voi täsmäyttää.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>When a user chooses to close a shift, Retail validates that there are no unreconciled cash management transactions in the shift.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Kun käyttäjä päättää vuoron sulkemisesta, Retail tarkistaa, että vuorossa ei ole täsmäyttämättömiä kassanhallintatapahtumia.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Users can't close a shift if there are unreconciled transactions.</source><target logoport:matchpercent="74" state="translated" state-qualifier="fuzzy-match">Käyttäjät eivät voi sulkea vuoroja, jos niissä on täsmäyttämättömiä tapahtumia.</target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Kassanhallinnan parannukset
+description: Tässä aiheessa kuvataan Dynamics 365 for Retail -ohjelman käteisvarojen hallinnan (POS) parannuksia.
+author: anpurush
+manager: AnnBe
+ms.date: 5/21/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2019-05-21
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: ace32148387b2244f4b600597f16dfd7ebc5d108
+ms.sourcegitcommit: 23ab3c99d05869ea2c73514754608e8684697d8c
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595204"
+---
+# <a name="cash-management-improvements"></a><span data-ttu-id="2b076-103">Kassanhallinnan parannukset</span><span class="sxs-lookup"><span data-stu-id="2b076-103">Cash management improvements</span></span>
+
+[!include [banner](includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+<span data-ttu-id="2b076-104">Kassanhallinta on fyysisten myymälöiden vähittäiskauppiaiden keskeinen toiminto.</span><span class="sxs-lookup"><span data-stu-id="2b076-104">Cash management is a key function for retailers in physical stores.</span></span> <span data-ttu-id="2b076-105">Vähittäiskauppiaat haluavat, että heidän myymälöissään on järjestelmiä, joiden avulla he voivat tarjota käteisvarojen täydellisen jäljitettävyyden ja vastuullisuuden ja niiden liikkumisen eri kassakoneissa ja kassoilla myymälässä.</span><span class="sxs-lookup"><span data-stu-id="2b076-105">Retailers want their stores to have systems that can help them provide complete traceability and accountability of cash and its movement across the different registers and cashiers in a store.</span></span> <span data-ttu-id="2b076-106">Heidän on pystyttävä täsmäyttämään mahdolliset erot ja määriteltävä vastuullisuus.</span><span class="sxs-lookup"><span data-stu-id="2b076-106">They must be able to reconcile any differences and determine accountability.</span></span>
+
+<span data-ttu-id="2b076-107">Microsoft Dynamics 365 for Retaililla on kassanhallintatoimintoja myyntipisteen (POS) sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="2b076-107">Microsoft Dynamics 365 for Retail has cash management capabilities in its point of sale (POS) application.</span></span> <span data-ttu-id="2b076-108">Kassanhallintatoiminnot eivät kuitenkaan ole riittävän vahvoja, jotta käteisvarojen liikkeet voidaan jäljittää täydellisesti, mikäli vähittäismyyntitoiminnot ovat versiota 10.0.3 vanhempia.</span><span class="sxs-lookup"><span data-stu-id="2b076-108">However, in versions of Retail that are earlier than version 10.0.3, cash management functionality isn't robust enough to provide complete traceability of cash movements in stores.</span></span> <span data-ttu-id="2b076-109">Vaikka vähittäiskauppiaat voivat täsmäyttää myymälän käteisvarat, ne eivät voi tarkasti määrittää vastuullisuutta, jos käteisvarat poikkeavat toisistaan.</span><span class="sxs-lookup"><span data-stu-id="2b076-109">Although retailers can reconcile the cash for a store, they can't precisely determine accountability in the event of a cash discrepancy.</span></span>
+
+<span data-ttu-id="2b076-110">Microsoft Dynamics 365 for Retail 10.0.3:ssa ja uudemmissa versioissa vähittäiskauppiaat saavat jäljitettävyyden käteisen käsittelyä varten.</span><span class="sxs-lookup"><span data-stu-id="2b076-110">In Microsoft Dynamics 365 for Retail version 10.0.3 and later, retailers will gain traceability for cash handling.</span></span> <span data-ttu-id="2b076-111">Osana tätä jäljitettävyyttä jälleenmyyjät voivat määrittää säilöt, tehdä kaksisuuntaisia käteistapahtumia ja täsmäyttää kassanhallintatapahtumat.</span><span class="sxs-lookup"><span data-stu-id="2b076-111">As part of this traceability, retailers will be able to define safes, make two-sided cash transactions, and reconcile cash management transactions.</span></span>
+
+## <a name="set-up-traceability-and-define-safes"></a><span data-ttu-id="2b076-112">Jäljitettävyyden luonti ja säilöjen määrittäminen</span><span class="sxs-lookup"><span data-stu-id="2b076-112">Set up traceability and define safes</span></span>
+
+<span data-ttu-id="2b076-113">Voit määrittää uudet kassanhallintatoiminnot määrittämällä myymälöiden toimintoprofiilin seuraavasti.</span><span class="sxs-lookup"><span data-stu-id="2b076-113">To set up the new cash management functionality, follow these steps to configure the functionality profile for stores.</span></span>
+
+1. <span data-ttu-id="2b076-114">Siirry kohtaan **Vähittäismyynti \> Kanavan asetukset \> POS-asetukset \> POS-profiilit \> Toimintoprofiilit** ja valitse toimintoprofiili, joka on linkitetty myymälöihin, joille haluat tarjota kassanhallintatoimintojen parannukset.</span><span class="sxs-lookup"><span data-stu-id="2b076-114">Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, and select a functionality profile that is linked to the stores where you want to make the improvements for cash management available.</span></span>
+2. <span data-ttu-id="2b076-115">Valitse toimintoprofiilin **Toiminnot**-pikavälilehden **Kehittynyt käteisvarojen hallinta** -kohdassa **Ota käyttöön käteisen jäljitettävyys** -asetukseksi **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="2b076-115">On the **Functions** FastTab of the functionality profile, under **Advanced cash management**, set the **Enable cash traceability** option to **Yes**.</span></span>
+3. <span data-ttu-id="2b076-116">Määrittääksesi säilöt, mene kohtaan **Vähittäismyynti \> Kanavat \> Vähittäismyymälät \> Kaikki vähittäismyymälät** ja valitse sitten myymälä.</span><span class="sxs-lookup"><span data-stu-id="2b076-116">To set up safes, go to **Retail \> Channels \> Retail stores \> All retail stores**, and select a store.</span></span>
+4. <span data-ttu-id="2b076-117">Valitse **Myymälät**-sivun toimintoruudun **Määritä**-välilehden **Määritä**-ryhmässä **Säilöt**.</span><span class="sxs-lookup"><span data-stu-id="2b076-117">On the **Stores** page, on the Action Pane, on the **Set up** tab, in the **Set up** group, select **Safes**.</span></span> <span data-ttu-id="2b076-118">Tämän vaihtoehdon avulla voit määrittää myymälälle useita säilöjä ja ylläpitää niitä.</span><span class="sxs-lookup"><span data-stu-id="2b076-118">By using this option, you can define and maintain multiple safes for a store.</span></span>
+4. <span data-ttu-id="2b076-119">Ennen kuin toimintoja voi käyttää, sinun on synkronoitava **1070-kanavakonfiguraatio** tietokantaan suorittamalla kanavamääritysten jakelun ajoitustehtävä.</span><span class="sxs-lookup"><span data-stu-id="2b076-119">Before the functionality can be used, you must run the **1070 Channel configuration** distribution schedule job to sync these configurations to the channel database.</span></span>
+
+## <a name="additional-cash-management-changes"></a><span data-ttu-id="2b076-120">Kassanhallinnan lisämuutokset</span><span class="sxs-lookup"><span data-stu-id="2b076-120">Additional cash management changes</span></span>
+
+<span data-ttu-id="2b076-121">Retail-versiossa 10.0.3 ja uudemmissa on myös seuraavat käteistapahtumiin liittyvät ominaisuudet:</span><span class="sxs-lookup"><span data-stu-id="2b076-121">In Retail version 10.0.3 and later, the following capabilities that are related to cash transactions are also provided:</span></span>
+
+- <span data-ttu-id="2b076-122">Käyttäjän, jolle esitetään pyyntö "Ilmoita aloitussumma", on syötettävä käteisen lähde.</span><span class="sxs-lookup"><span data-stu-id="2b076-122">A user who is prompted to "declare start amount" must enter the source of cash.</span></span> <span data-ttu-id="2b076-123">Käyttäjä voi etsiä myymälästä määritettyjä käytettävissä olevia säilöjä ja valita säilön, joka on otettu pois käytöstä, jotta se voidaan kirjata rekisteriin.</span><span class="sxs-lookup"><span data-stu-id="2b076-123">The user can search for the available safes that are defined in the store and select the safe that the cash is being taken out of so that it can be put into the register.</span></span>
+- <span data-ttu-id="2b076-124">Käyttäjän, joka tekee maksuvälinepoistotoiminnon, tulee valita avointen liukuvien merkintätapahtumien luettelosta tapahtuma, johon työvaihe tehdään.</span><span class="sxs-lookup"><span data-stu-id="2b076-124">A user who does a "tender removal" operation is prompted to select, in a list of open "float entry" transactions, the transaction that the operation is being done against.</span></span> <span data-ttu-id="2b076-125">Jos järjestelmässä ei ole vastaavaa liukuvaa merkintää, käyttäjä voi luoda ei-linkitetyn maksuvälineen poistotapahtuman.</span><span class="sxs-lookup"><span data-stu-id="2b076-125">If the corresponding float entry doesn't exist in the system, the user can create a non-linked tender removal transaction.</span></span>
+- <span data-ttu-id="2b076-126">Liukuva merkintä -toiminto kehottaa käyttäjää valitsemaan avoimen maksuvälinepoistotoiminnon luettelossa tapahtuman, johon työvaihe tehdään.</span><span class="sxs-lookup"><span data-stu-id="2b076-126">A "float entry" operation prompts a user to select, in a list of open "tender removal" transactions, the transaction that the float entry operation is being done against.</span></span> <span data-ttu-id="2b076-127">Jos järjestelmässä ei ole vastaavaa maksuvälineen poistoa, käyttäjä voi luoda ei-linkitetyn liukuvan merkinnän tapahtuman.</span><span class="sxs-lookup"><span data-stu-id="2b076-127">If the corresponding tender removal doesn't exist in the system, the user can create a non-linked float entry transaction.</span></span>
+- <span data-ttu-id="2b076-128">Käyttäjältä, joka tekee toimituksen kassakaappiin, kysytään, haluatko valita säilön, johon käteinen toimitetaan.</span><span class="sxs-lookup"><span data-stu-id="2b076-128">A user who makes a "safe drop" is prompted to select the safe where the cash is being dropped.</span></span>
+- <span data-ttu-id="2b076-129">Kun säilöt on määritetty myymälässä, käyttäjät voivat hallita toimintoja, kuten määrittää aloitussumman, tehdä liukuvan merkinnän, maksuvälineen poiston ja toimituksen pankkiin.</span><span class="sxs-lookup"><span data-stu-id="2b076-129">For safes that are defined in a store, users can manage operations such as declaring the start amount, doing a float entry, doing a tender removal, and making a bank drop.</span></span>
+- <span data-ttu-id="2b076-130">Jos käyttäjällä on tarvittavat käyttöoikeudet, työvuorojen ylläpito-operaatiot näyttävät aktiivisten, keskeytettyjen ja piilotettujen suljettujen vuorojen käteissaldot.</span><span class="sxs-lookup"><span data-stu-id="2b076-130">For users who have the appropriate user privileges, "manage shifts" operations show the cash balances of active, suspended, and blind closed shifts.</span></span>
+- <span data-ttu-id="2b076-131">Jos haluat täsmäyttää käteistapahtumat vuoron aikana tai vuorojen välillä, valitse täsmäytettävä vuoro ja sitten **Täsmäytä**.</span><span class="sxs-lookup"><span data-stu-id="2b076-131">To reconcile the cash transactions within a shift or across shifts, select the shift to reconcile, and then select **Reconcile**.</span></span> <span data-ttu-id="2b076-132">Avattava näkymä sisältää täsmäyttävien ja täsmäyttämättömien tapahtumien luettelon erillisillä välilehdillä.</span><span class="sxs-lookup"><span data-stu-id="2b076-132">The view that is opened shows the list of reconciled and unreconciled transactions on separate tabs.</span></span> <span data-ttu-id="2b076-133">Tässä näkymässä käyttäjät voivat joko valita täsmäyttämättömiä tapahtumia ja täsmäyttää ne tai valita aiemmin täsmäyttämättömät tapahtumat ja poistaa niiden täsmäytyksen.</span><span class="sxs-lookup"><span data-stu-id="2b076-133">From this view, users can either select unreconciled transactions and reconcile them, or select previously reconciled transactions and unreconcile them.</span></span>
+- <span data-ttu-id="2b076-134">Jos valitun tapahtuman saldo ei täsmää täsmäytyksen aikana, käyttäjän on kirjoitettava epätasapainoisen täsmäytyksen syyn kuvaus.</span><span class="sxs-lookup"><span data-stu-id="2b076-134">During reconciliation, if the selected transaction doesn't balance, the user must enter a description of the reason for the unbalanced reconciliation.</span></span> <span data-ttu-id="2b076-135">Käyttäjät voivat valita yhden tapahtuman ja täsmäyttää sen asiaankuuluvan syyn kuvauksen kanssa.</span><span class="sxs-lookup"><span data-stu-id="2b076-135">Users can select a single transaction and reconcile it with the relevant reason description as they require.</span></span>
+- <span data-ttu-id="2b076-136">Käyttäjät voivat edelleen täsmäyttää ja purkaa tapahtumia, kunnes vuoro on suljettu.</span><span class="sxs-lookup"><span data-stu-id="2b076-136">Users can continue to reconcile and unreconcile transactions until the shift is closed.</span></span> <span data-ttu-id="2b076-137">Kun vaihto on suljettu, tapahtumia ei voi täsmäyttää.</span><span class="sxs-lookup"><span data-stu-id="2b076-137">After a shift is closed, the transactions can't be unreconciled.</span></span>
+- <span data-ttu-id="2b076-138">Kun käyttäjä päättää vuoron sulkemisesta, Retail tarkistaa, että vuorossa ei ole täsmäyttämättömiä kassanhallintatapahtumia.</span><span class="sxs-lookup"><span data-stu-id="2b076-138">When a user chooses to close a shift, Retail validates that there are no unreconciled cash management transactions in the shift.</span></span> <span data-ttu-id="2b076-139">Käyttäjät eivät voi sulkea vuoroja, jos niissä on täsmäyttämättömiä tapahtumia.</span><span class="sxs-lookup"><span data-stu-id="2b076-139">Users can't close a shift if there are unreconciled transactions.</span></span>
