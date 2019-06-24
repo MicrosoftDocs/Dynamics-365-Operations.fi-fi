@@ -3,7 +3,7 @@ title: Määritä tilirakenteet
 description: Tässä aiheessa on tietoja tilirakenteista ja taloushallinnon dimensioista.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5fbd4b34d09b4ba8e1d34234c8e32268bba18778
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551999"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617293"
 ---
 # <a name="configure-account-structures"></a>Määritä tilirakenteet
 
@@ -70,6 +70,16 @@ Tässä yksinkertaistetussa esimerkissä kaikki arvot ja tyhjät sallitaan - sik
 
 [![Salli arvot](./media/account.png)](./media/account.png) 
 
+Sallitut arvot tulevat oletusarvon mukaan kirjauskansioon tai kirjanpidollisen jaon aloitussivulle, jos muita mahdollisia arvoja ei ole valittavissa tilirakenteen asetusten mukaan.
+
+Tässä on esimerkki **tulostilin rakenteesta**.
+
+|Päätili          | Liiketoimintayksikkö    |Osasto          | Kustannuspaikka    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | 002 | 022 | 014 |
+
+Kun kirjauskansio avataan ja valitaan tili tulosalueelta, liiketoimintayksikkö "002" -vaihtoehdon valitseminen aiheuttaa sen, että arvot 022 ja 014 ovat tilien valvonnan oletusarvoja. Tämä ongelma ilmenee myös kirjanpidollisen jaon sivulla. 
+
 ## <a name="more-than-7-criteria-needed"></a>Tarvitaan yli 7 ehtoa
 
 Jos tarvitset yli 7 ehtoa, voit jatkaa lisäämällä niitä seuraavalla rivillä. Huomaat, kun käytät **Sallitun arvon tiedot** -osaa, että **+Lisää uusi** -ehto ei ole enää aktiivinen seitsemännen ehdon syöttämisen jälkeen. Tämä johtuu monista tekijöistä, esimerkiksi: 
@@ -79,8 +89,6 @@ Jos tarvitset yli 7 ehtoa, voit jatkaa lisäämällä niitä seuraavalla rivill�
  - Käyettävyydestä  
  
 Jatkaaksesi lisäehtojen lisäämistä, valitse **Monista segmentissä** ja **Sallitut arvot -osa**. Ehdot kopioidaan uudelle riville. Voit kirjoittaa päälle tai muokata **Sallitun arvon tiedot** -osaa.
-
-(LINKKI VIDEOON, JOKA LUODAAN)
 
 ## <a name="best-practices"></a>Parhaat käytännöt
 Määrittäessäsi tilirakenteita on suositeltavia parhaita käytäntöjä. Kuitenkin nämä ovat vain ohjeita, joten kokonaisvaltainen keskustelu liiketoiminnastasi, kasvusuunnitelmasta ja huoltosuunnitelmasta tulisi olla osa tätä keskustelua.

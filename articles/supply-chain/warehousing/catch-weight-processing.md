@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 14f2c6eb3baf0de65de3b72e10b42b03a8c6b21a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6e295456838ca0195a472518b5979dfdc7819f74
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536707"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1617970"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/pivate-preview-banner.md)]
+[!include [banner](../includes/pivate-preview-banner.md)]
 
 
 ## <a name="feature-exposure"></a>Ominaisuuden näyttäminen
@@ -138,10 +138,6 @@ Todellisen painon tuotteen käsittely varastonhallinnan avulla ei tueta kaikissa
 - Todellisen painon tuotteissa ei tueta karanteenitilausten manuaalista luontia.
 - Työhön liittyvän varaston manuaalista siirtoa ei tueta todellisen painon tuotteissa.
 - Rekisterikilpien konsolidointia ei tueta todellisen painon tuotteissa.
-- Varaston varastotilan muutoksia ei tueta kausittaisen tehtävän osana todellisen painon tuotteissa.
-- Kyselyn määrittämiä varastotilan muutoksia ei tueta todellisen painon tuotteissa. (Myöskään laatutilauksen varastotilan muutoksia ei tueta.)
-- Todellisen painon tuotteiden varastotilaa ei muuttaa **Varastosaldo sijainnin mukaan** -sivulla.
-- Todellisen painon tuotteiden varastotilaa ei voi muuttaa varastosovelluksen siirtotyön osana.
 - Varaston varastotason alustamista lataamalla rekisterikilpi ei tueta todellisen painon tuotteissa.
 - Erän tasausprosesseja ei tueta todellisen painon tuotteissa.
 - Negatiivisen varastotilanteen käsittelyä ei tueta todellisen painon tuotteissa.
@@ -151,7 +147,6 @@ Todellisen painon tuotteen käsittely varastonhallinnan avulla ei tueta kaikissa
 
 - Klusterikeräilyä ei tueta todellisen painon tuotteissa.
 - Keräilyn ja pakkauksen varastokäsittelyä ei tueta todellisen painon tuotteissa.
-- Todellisen painon tuotteiden työtä ei voi viimeistellä **Työ**-sivulla.
 - Todellisen painon tuotteiden työmallissa määritetty työ voidaan suorittaa automaattisesti.
 - Työn peruuttamistoimintoa ei tueta todellisen painon tuotteissa.
 - Todellisen painon tuotteissa ei tueta sellaista manuaalista pakkausasemakäsittelyä, jossa työ on luotu konttien sulkemisen jälkeen.
@@ -163,7 +158,7 @@ Todellisen painon tuotteen käsittely varastonhallinnan avulla ei tueta kaikissa
 - Kanban-toimintoa ei tueta todellisen painon tuotteissa.
 - Todellisen painon tuotteissa sarjanumeroita ei voi rekisteröidä ennen kulutusta.
 - Rekisterikilpien peruuttamistoimintoa ei tueta todellisen painon tuotteissa.
-- Todellisen painon tuotteissa valmiiksi ilmoittaminen voidaan rekisteröidä sarjanumeron mukaan.
+- Todellisen painon tuotteissa valmiiksi ilmoittamista ei voida rekisteröidä sarjanumeron mukaan.
 
 ### <a name="transportation-management-processing"></a>Kuljetustenhallinnan käsittely
 

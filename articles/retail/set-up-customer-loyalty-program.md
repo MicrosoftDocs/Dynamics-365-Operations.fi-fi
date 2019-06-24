@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9b73c52a72c82c109a1ff874d2369ce9c0b3a6d2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 94f8cf5b5753c530c42327e251a2102b876c1c8a
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505884"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606869"
 ---
 # <a name="loyalty-overview"></a>Kanta-asiakkuuden yleiskatsaus
 
@@ -93,10 +93,10 @@ Retailin lokakuun 2018 versiossa on uusi kanta-asiakastoiminto. Jokainen uusi pa
 
     ![Kanta-asiakaskortin luonti](./media/Generate%20loyalty%20card.png "Kanta-asiakaskortin numeron luominen automaattisesti")
 
-- Ansaitut ja lunastetut kanta-asiakaspisteet tallennetaan nyt jokaiselle tapahtumalle ja myyntitilaukselle myyntiriveillä, joten sama summa voidaan hyvittää tai poistaa täyden tai osittaisen palautuksen yhteydessä. Koska pisteet ovat nähtävillä myyntirivitasolla, puhelinkeskuksen käyttäjät voivat vastata asiakkaiden kunkin rivin ansaittuja tai lunastettuja pisteitä koskeviin kysymyksiin. Ennen tätä muutosta palkkiopisteet laskettiin aina uudelleen palautusten aikana, jolloin tulokseksi saatu summa ei ollut sama kuin alkuperäinen summa, jos ansaitsemis- tai lunastussääntöjä oli muutettu. Puhelinkeskuksen käyttäjät eivät myöskään nähneet piste-erittelyä. Pisteitä voidaan tarkastella kunkin kanta-asiakaskortin **Korttitapahtumat**-lomakkeessa. Ota tämä ominaisuus käyttöön ottamalla määritys käyttöön valitsemalla **Kirjaa kanta-asiakaspisteet myyntiriviä kohti** **Vähittäismyynnin yhteiset parametrit**  > **Yleiset**-välilehdessä.
+- Ansaitut ja lunastetut kanta-asiakaspisteet tallennetaan nyt jokaiselle tapahtumalle ja myyntitilaukselle myyntiriveillä, joten sama summa voidaan hyvittää tai poistaa täyden tai osittaisen palautuksen yhteydessä. Koska pisteet ovat nähtävillä myyntirivitasolla, puhelinkeskuksen käyttäjät voivat vastata asiakkaiden kunkin rivin ansaittuja tai lunastettuja pisteitä koskeviin kysymyksiin. Ennen tätä muutosta palkkiopisteet laskettiin aina uudelleen palautusten aikana, jolloin tulokseksi saatu summa ei ollut sama kuin alkuperäinen summa, jos ansaitsemis- tai lunastussääntöjä oli muutettu. Puhelinkeskuksen käyttäjät eivät myöskään nähneet piste-erittelyä. Pisteitä voidaan tarkastella kunkin kanta-asiakaskortin **Korttitapahtumat**-lomakkeessa. Ota tämä ominaisuus käyttöön ottamalla määritys käyttöön valitsemalla **Kirjaa kanta-asiakaspisteet myyntiriviä kohti** **Vähittäismyynnin yhteiset parametrit** \> **Yleiset**-välilehdessä.
 
->[!NOTE]
-> On erittäin suositeltavaa, että tämä ominaisuus on otettu käyttöön varmistamaan, että palautusten yhteydessä oikea summa pisteitä voidaan palauttaa asiakkaalle tai poistaa häneltä.
+    > [!NOTE]
+    > On erittäin suositeltavaa, että tämä ominaisuus on otettu käyttöön varmistamaan, että palautusten yhteydessä oikea summa pisteitä voidaan palauttaa asiakkaalle tai poistaa häneltä.
 
 - Jälleenmyyjät voivat nyt määrittää muodostumiskauden kullekin palkkiopisteelle. Muodostumiskauden määritykset määrittävät keston ansaitsemispäivästä, jonka jälkeen palkkiopisteet tulevat asiakkaiden käyttöön. Muodostumattomia pisteitä voidaan tarkastella **Kanta-asiakaskortit**-sivun **Muodostumattomat pisteet** -sarakkeessa. Jälleenmyyjät voit määrittää myös kanta-asiakaskorttikohtaisen kanta-asiakaspisteiden enimmäismäärän. Tämän kentän avulla voidaan vähentää kanta-asiakkuuspetosten vaikutusta. Kun kanta-asiakaspisteitä on enimmäismäärä, käyttäjä ei voi ansaita lisää pisteitä. Jälleenmyyjä voi päättää estää kyseisten korttien käytön siihen saakka, että mahdollinen petos on tutkittu. Jos jälleenmyyjä tulee siihen tulokseen, että kyse on petoksesta, jälleenmyyjä voi asiakkaan kanta-asiakaskortin estämisen lisäksi merkitä myös asiakkaan estetyksi. Voit tehdä sen määrittämällä **Estä asiakasta liittymästä kanta-asiakasohjelmaan** -ominaisuudeksi **Kyllä** **Vähittäismyynti**-pikavälilehden **Kaikki asiakkaat** -kohdassa. Estetyille asiakkaille ei voi myöntää kanta-asiakaskorttia missään kanavassa.
 
@@ -120,31 +120,32 @@ Retailin lokakuun 2018 versiossa on uusi kanta-asiakastoiminto. Jokainen uusi pa
     ![Kanta-asiakassaldon kattamat pisteet](./media/Points%20covered%20by%20loyalty%20balance.png "Kanta-asiakaspisteiden kattaman saldon näyttäminen")
 
     ![Vanhentuvat pisteet](./media/Expiring%20points.png "Vanhentuvien pisteiden näyttäminen")
-    
 
 - Versiossa 8.1.3 on otettu käyttöön kanta-asiakaskortilla maksaminen puhelinkeskuskanavassa. Voit ottaa tämän asetuksen käyttöön luomalla kanta-asiakkuuden maksuvälinetyypin ja liittämällä sen puhelinkeskukseen. 
 
->[!NOTE]
-> Koska kanta-asiakasmaksut määritetään korttimaksuina, sinun on valittava kortti **Korttiasetukset**-sivulta. 
+    > [!NOTE]
+    > Koska kanta-asiakasmaksut määritetään korttimaksuina, sinun on valittava kortti **Korttiasetukset**-sivulta. 
 
-![Kanta-asiakaskortin asetukset](./media/LoyaltyCardSetup.png "Kanta-asiakaskortin asetukset")
+    ![Kanta-asiakaskortin asetukset](./media/LoyaltyCardSetup.png "Kanta-asiakaskortin asetukset")
 
-Kun tämä on määritetty, asiakkaat voivat lunastaa kanta-asiakkuuspisteitä puhelinkeskuksessa. Käyttökokemusta parannetaan myös näyttämällä kanta-asiakkuuspisteiden kattaman määrän, joten puhelinkeskuskäyttäjien ei tarvitse siirtyä toiseen näyttöön tarkistamaan kanta-asiakkuussaldoa.
+    Kun tämä on määritetty, asiakkaat voivat lunastaa kanta-asiakkuuspisteitä puhelinkeskuksessa. Käyttökokemusta parannetaan myös näyttämällä kanta-asiakkuuspisteiden kattaman määrän, joten puhelinkeskuskäyttäjien ei tarvitse siirtyä toiseen näyttöön tarkistamaan kanta-asiakkuussaldoa.
 
 - Monet jälleenmyyjät myöntävät kanta-asiakkuuspisteitä vain myyntitapahtumien perusteella. Asiakaskeskeiset jälleenmyyjät haluavat kuitenkin palkita asiakkaansa myös muista brändiin liittyvästä toiminnosta. He haluavat palkita verkkokyselyyn vastaamisesta, myymälävierailusta, jälleenmyyjän tykkäämisestä Facebookissa ja jälleenmyyjästä twiittaamisesta. Sitä varten jälleenmyyjä voi määrittää haluamansa määrän muita tehtävätyypin ja näille tehtäville ansaitsemissäännöt. Näkyvissä on myös Retail Serverin ohjelmointirajapinta PostNonTransactionalActivityLoyaltyPoints, joka voidaan kutsua, kun tunnistetaan tehtävä, josta asiakas saa palkinnoksi kanta-asiakkuuspisteitä. Ohjelmointirajapinta odottaa kanta-asiakaskortin tunnusta, kanavatunnusta tai muun tehtävätyypin tunnus, jotta palkittava asiakas voidaan paikantaa ja tehtävän ansaintasääntö tunnistaa. 
 
     Pisteiden myöntämisessä muille kuin tapahtumatehtäville on yleensä kaksi päävaihetta:
+
     - Todetaan, että on tapahtunut palkittava tehtävä.
     - Annetaan soveltuva määrä pisteitä palkkioksi.
 
     Ensimmäinen vaihe tapahtuu Microsoft Dynamics 365 for Retailin ulkopuolella, ja se voi olla esimerkiksi brändiä koskeva twiitti tai brändin tykkääminen Facebookissa. Kun tämä tehtävä on tunnistettu, vähittäismyyjät voivat kutsua edellä mainitun Retail Serverin ohjelmointirajapinnan ja myöntää kanta-asiakkuuspisteitä reaaliaikaisesti. Tällaisissa skenaarioissa tarkistusvaihetta ei tarvita, sillä tehtävä on tapahtunut ja sitä vastaavat pisteet on myönnettävä. Tietyissä skenaarioissa vähittäismyyjä kuitenkin haluaa tarkistaa tietueet ennen pisteiden myöntämistä. Jos vähittäismyyjä on esimerkiksi määrittänyt myymälään työpajan, johon asiakkaat voivat ilmoittautua sivustossa tai jossain muussa tapahtuman rekisteröintisovelluksessa. Kanta-asiakkuuspisteitä myönnetään kuitenkin vain osallistuville asiakkaille. Tällaisia skenaarioita varten versiossa 10.0 otettiin käyttöön **Vähittäismyynnin muun kanta-asiakastehtävätyypin rivit** -niminen tietoyksikkö. Tämän tietoyksikön avulla vähittäismyyjät voivat käyttää joko tietojen tuonti- ja vientiympäristöä (DIXF) tai OData-ohjelmointirajapintaa niiden tehtävien kirjaamiseen, joista asiakkaille myönnetään kanta-asiakkuuspisteitä. Tietoyksikkö tallentaa tehtävät **Muiden tehtävän kanta-asiakkuusrivit** -nimiseen kirjauskansioon, jossa tietoja voi tarkastella ja muokata. Kun kaikki tiedot on tarkistettu, IT-käyttäjä voi joko kirjata tehtävärivit manuaalisesti tai suorittaa **Kanta-asiakkuusrivien muun tehtävätyypin käsittely** -nimisen työ, joka kirjaa kaikki kirjaamattomat tehtävärivit ja myöntää pisteet asiakkaille ansaintasääntöjen perusteella. Edellisessä skenaariossa tapahtuman rekisteröintisovellus kutsuisi OData-ohjelmointirajapinnan lähettämään asiakastiedot Dynamics 365 for Retailiin. IT-käyttäjä voi kuitenkin kirjata vain niiden asiakkaiden tehtävärivejä, jotka osallistuivat työpajaan ja poistaa muiden asiakkaiden tehtävärivit. 
 
-> [!NOTE]
-> Järjestelmä pakottaa käyttäjät tällä hetkellä määrittämään muiden tehtävätyyppien numerosarjan, mutta se ei ole enää pakollinen vaihe tulevissa julkaisuissa. Voit määrittää numerosarjan valitsemalla **Vähittäismyynnin yhteiset parametrit > Numerosarjat** ja valitsemalla sitten **Kanta-asiakkuuden muun tehtävätyypin tunnus** -kohdan numerosarjan.
+    > [!NOTE]
+    > Järjestelmä pakottaa käyttäjät tällä hetkellä määrittämään muiden tehtävätyyppien numerosarjan, mutta se ei ole enää pakollinen vaihe tulevissa julkaisuissa. Voit määrittää numerosarjan valitsemalla **Vähittäismyynnin yhteiset parametrit** \> **Numerosarjat** ja valitsemalla sitten **Kanta-asiakkuuden muun tehtävätyypin tunnus** -kohdan numerosarjan.
 
 - Hyvän asiakaspalvelun tarjoamisen ja asiakkaiden kyselyjen tehokkaan ratkaisemisen kannalta on tärkeää, että kassoilla on asiakkaan täydellisen profiilin käyttöoikeus. Version 10.0 myötä kassat näkevät myyntipisteessä kanta-asiakkuuden historiatiedot liitetyn kanta-asiakasohjelman ja tason tietojen lisäksi.
-- Maksuton tai alennettu toimitus on yksi tärkeimmistä tekijöistä, joilla asiakkaat motivoidaan tekemään verkko-ostoksia. Jotta jälleenmyyjät voisivat määrittää toimituskampanjat, versiossa 10.0 otetaan käyttöön uudenlainen toimituksen rajaan liittyvä kampanja, jossa jälleenmyyjä määrittää raja-arvot, jonka ylitettyään asiakkaat saavat alennetun tai maksuttoman toimituksen. Esimerkiksi 35 dollaria käyttämällä saa maksuttoman kahden päivän toimituksen tai kaikki kanta-asiakkaat saavat maksuttoman kahden päivän toimituksen. Tämä ominaisuus käytätä uutta edistynyttä automaattisten kulujen ominaisuutta. Lisätietoja edistyneestä automaattisista kuluista on täällä: https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-auto-charges. Nämä edistyneet automaattiset kulut on otettava käyttöön, jotta lähetyskampanja toimisi. Ne voidaan ottaa käyttöön **Vähittäismyynnin parametrit** -sivun **Mukautetut tilaukset** -välilehdessä tai ottamalla käyttöön Käytä edistyneitä automaattisia kuluja -määrityksen. Koska vähittäismyyjä voi lisäksi määrittää monenlaisia veloituksia, kuten käsittely- tai asennusmaksuja, vähittäismyyjän on määritettävä, mikä veloitus on toimituskulu. Toimitusalennuksia käytetään vain tilausten toimituskuluihin. Määritä kulu toimituskuluksi siirtymällä **Maksukoodit**-lomakkeen valitsemalla ensin **Vähittäismyynti** > **Vähittäismyynnin IT** > **Kanavan asetukset** > **Kulut** ja sitten toivottujen kulujen Toimituskulut-valintaruudun. Siirry nyt **Vähittäismyynnin toimitusraja-alennus** -lomakkeeseen ja määritä alennus.
+- Maksuton tai alennettu toimitus on yksi tärkeimmistä tekijöistä, joilla asiakkaat motivoidaan tekemään verkko-ostoksia. Jotta jälleenmyyjät voisivat määrittää toimituskampanjat, versiossa 10.0 otetaan käyttöön uudenlainen toimituksen rajaan liittyvä kampanja, jossa jälleenmyyjä määrittää raja-arvot, jonka ylitettyään asiakkaat saavat alennetun tai maksuttoman toimituksen. Esimerkiksi 35 dollaria käyttämällä saa maksuttoman kahden päivän toimituksen tai kaikki kanta-asiakkaat saavat maksuttoman kahden päivän toimituksen. Tämä ominaisuus käytätä uutta edistynyttä automaattisten kulujen ominaisuutta. Lisätietoja [edistyneestä automaattisista kuluista](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Nämä edistyneet automaattiset kulut on otettava käyttöön, jotta lähetyskampanja toimisi. Ne voidaan ottaa käyttöön **Vähittäismyynnin parametrit** -sivun **Mukautetut tilaukset** -välilehdessä tai ottamalla käyttöön Käytä edistyneitä automaattisia kuluja -määrityksen. Koska vähittäismyyjä voi lisäksi määrittää monenlaisia veloituksia, kuten käsittely- tai asennusmaksuja, vähittäismyyjän on määritettävä, mikä veloitus on toimituskulu. Toimitusalennuksia käytetään vain tilausten toimituskuluihin. Määritä kulu toimituskuluksi siirtymällä **Maksukoodit**-lomakkeen valitsemalla ensin **Vähittäismyynti** \> **Vähittäismyynnin IT** \> **Kanavan asetukset** \> **Kulut** ja sitten toivottujen kulujen Toimituskulut-valintaruudun. Siirry nyt **Vähittäismyynnin toimitusraja-alennus** -lomakkeeseen ja määritä alennus.
+
     Tuotealennusten tavoin tämä alennus hyväksyy kaikki aiemmat vakioalennustoiminnot, kuten sen, että vähittäismyyjä voi rajoittaa näitä alennuksia kupongeilla siten, että asiakkaat saavat nämä alennukset vain kuponkia käyttämällä. Lisäksi nämä alennukset määrittää kyseisten alennusten kelpoisuuden hyödyntämällä hintaryhmätoimintoa. Vähittäismyyjä voi esimerkiksi valita näiden kampanjoiden suorittamisen vain verkkokanavissa ja/tai tiettyjen asiakasryhmien, kuten kanta-asiakkaiden, kanavissa. Kun tilausrivit, joilla on määritetty toimitustapa, vastaavat määrittyjä rajaa, toimitusalennusta käytetään ja toimitusmaksua pienennetään määritetyn alennuksen perusteella. 
 
-> [!NOTE]
-> Kausialennuksista, kuten määräalennuksesta, yksinkertaisesta alennuksesta, yhdistelmäalennuksesta ja raja-alennuksesta, poiketen toimitusalennus ei luo alennusrivejä vaan muokkaa toimitusmaksua suoraan ja liittää alennuksen nimen kulun kuvaukseen.
+    > [!NOTE]
+    > Kausialennuksista, kuten määräalennuksesta, yksinkertaisesta alennuksesta, yhdistelmäalennuksesta ja raja-alennuksesta, poiketen toimitusalennus ei luo alennusrivejä vaan muokkaa toimitusmaksua suoraan ja liittää alennuksen nimen kulun kuvaukseen.

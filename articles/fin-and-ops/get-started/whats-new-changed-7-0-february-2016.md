@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5fb6b23d11ab263ed158a0a4476f77ed22b5084
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561806"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595659"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Dynamics AX 7.0:n uudet ja muuttuneet ominaisuudet (helmikuu 2016)
 
@@ -971,7 +971,7 @@ Käytössä on parannettu vähän toimia vaativa asiakasohjelmakomponenttiasennu
 </tr>
 <tr>
 <td>Voit seurata järjestelmän kuntoa sekä selvittää virheet ja ongelmat.</td>
-<td>Tämä toiminto edellyttää <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retailia</a>.</td>
+<td>Tämä toiminto edellyttää <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack for Microsoft Dynamics AX 2012 R3 CU8 Retailia</a>.</td>
 <td>Retail-komponenttien seuranta ja vianmääritys on nyt käytettävissä LCS:n <strong>Operatiivisia tietoja</strong> -koontinäytössä.</td>
 <td><strong>Operatiivisia tietoja</strong> -koontinäyttö on pilvipohjainen seurantaportaali, jonka ansiosta SCOM (System Center Operations Manager) -infrastruktuuria ei tarvitse asentaa.</td>
 </tr>

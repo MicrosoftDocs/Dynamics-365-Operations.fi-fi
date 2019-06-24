@@ -15,12 +15,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 627b90659ce4e285667492e37be203cd9dbb7c9c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 26f7f3f11408cac387c58a5345b566ac50ed426f
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537861"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571168"
 ---
 # <a name="reverse-charge-vat"></a>Käänteinen verovelvollisuus
 
@@ -54,7 +54,7 @@ Osto- ja myyntitoimintoihin kannattaa käyttää erillisiä arvonlisäverokoodej
 <li>Luo arvonlisäverokoodi, jolla on negatiivinen arvo. Valitse <strong>Salli negatiivinen alv-prosentti</strong> -asetukseksi <strong>Kyllä</strong>.
 Tämä negatiivinen arvonlisäverokoodi on määritettävä ensin nimikkeen arvonlisäveroryhmään ja nimikkeen arvonlisäveroryhmä on sitten määritettävä nimikkeisiin, joissa on käänteinen verovelvollisuus.</li>
 </ol>
-<p>Lisätietoja on seuraavassa kohdassa Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen.</p>
+<p>Lisätietoja on seuraavassa kohdassa &quot;Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen.&quot;</p>
 </td>
 </tr>
 </tbody>

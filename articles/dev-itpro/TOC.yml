@@ -27,7 +27,7 @@
           href: dev-tools/enable-development-machine.md
         - name: 'Sovelluskehityksen ja koonnin virtuaalikoneet, jotka eivät salli järjestelmänvalvojan käyttöä – usein kysytyt kysymykset'
           href: sysadmin/VMs-no-admin-access.md
-        - name: "Paikallisten ympäristöjen nimeäminen uudelleen\_Azure DevOpsin käyttämiseksi"
+        - name: Paikallisten ympäristöjen nimeäminen uudelleen Azure DevOps -palvelun käyttämistä varten
           href: migration-upgrade/vso-machine-renaming.md
         - name: Kehityksen järjestelmävaatimukset
           href: dev-tools/development-system-requirements.md
@@ -227,8 +227,9 @@
             - name: X-luokat
               href: dev-ref/x-classes.md
     - name: Laajennettavuus
-      href: extensibility/extensibility-home-page.md
       items:
+        - name: Laajennettavuuden kotisivu
+          href: extensibility/extensibility-home-page.md
         - name: Esittely ja aloittaminen
           items:
             - name: Sovelluksen laajennettavuuspaketti
@@ -245,36 +246,38 @@
               href: extensibility/customization-overlayering-extensions.md
         - name: Uutta
           items:
-            - name: Laajennettavuuden muutokset heinäkuu 2017
-              href: extensibility/changes-july-2017.md
-            - name: Laajennettavuuden muutokset versiossa 7.3
-              href: extensibility/extensibility-changes-73.md
-            - name: Laajennettavuuden muutokset versiossa 8.0
-              href: extensibility/changes-80.md
-            - name: Laajennettavuuden muutokset versiossa 8.0.1
-              href: extensibility/extensibility-changes-801.md
-            - name: Laajennettavuuden muutokset versiossa 8.0.2
-              href: extensibility/extensibility-changes-802.md
-            - name: Laajennettavuuden muutokset versiossa 8.0.3
-              href: extensibility/extensibility-changes-803.md
-            - name: Laajennettavuuden muutokset versiossa 8.0.4
-              href: extensibility/extensibility-changes-804.md
-            - name: Laajennettavuuden muutokset versiossa 8.1
-              href: extensibility/extensibility-changes-81.md
-            - name: Laajennettavuuden muutokset versiossa 8.1.1
-              href: extensibility/extensibility-changes-811.md
-            - name: Laajennettavuuden muutokset versiossa 8.1.2
-              href: extensibility/extensibility-changes-812.md
-            - name: Laajennettavuuden muutokset versiossa 8.1.3
-              href: extensibility/extensibility-changes-813.md
-            - name: Laajennettavuuden muutokset versiossa 10.0
-              href: extensibility/extensibility-changes-10.md
-            - name: Laajennettavuuden muutokset versiossa 10.0.1
-              href: extensibility/extensibility-changes-10-1.md
-            - name: Laajennettavuuden muutokset versiossa 10.0.2
-              href: extensibility/extensibility-changes-10-2.md
+            - name: Laajennettavuuden uudet ja muuttuneet ominaisuudet
+              href: extensibility/extensibility-new.md
             - name: Laajennettavuuden muutokset versiossa 10.0.3
               href: extensibility/extensibility-changes-10-3.md
+            - name: Laajennettavuuden muutokset versiossa 10.0.2
+              href: extensibility/extensibility-changes-10-2.md
+            - name: Laajennettavuuden muutokset versiossa 10.0.1
+              href: extensibility/extensibility-changes-10-1.md
+            - name: Laajennettavuuden muutokset versiossa 10.0
+              href: extensibility/extensibility-changes-10.md
+            - name: Laajennettavuuden muutokset versiossa 8.1.3
+              href: extensibility/extensibility-changes-813.md
+            - name: Laajennettavuuden muutokset versiossa 8.1.2
+              href: extensibility/extensibility-changes-812.md
+            - name: Laajennettavuuden muutokset versiossa 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Laajennettavuuden muutokset versiossa 8.1
+              href: extensibility/extensibility-changes-81.md
+            - name: Laajennettavuuden muutokset versiossa 8.0.4
+              href: extensibility/extensibility-changes-804.md
+            - name: Laajennettavuuden muutokset versiossa 8.0.3
+              href: extensibility/extensibility-changes-803.md
+            - name: Laajennettavuuden muutokset versiossa 8.0.2
+              href: extensibility/extensibility-changes-802.md
+            - name: Laajennettavuuden muutokset versiossa 8.0.1
+              href: extensibility/extensibility-changes-801.md
+            - name: Laajennettavuuden muutokset versiossa 8.0
+              href: extensibility/changes-80.md
+            - name: Laajennettavuuden muutokset versiossa 7.3
+              href: extensibility/extensibility-changes-73.md
+            - name: Laajennettavuuden muutokset heinäkuu 2017
+              href: extensibility/changes-july-2017.md
         - name: Perusteet
           items:
             - name: Tunkeutuvat mukautukset
@@ -357,12 +360,18 @@
               href: extensibility/extensibility-attributes.md
             - name: Tärkeimmät muutokset.
               href: extensibility/breaking-changes.md
-    - name: Suoritus
+    - name: Suorituskyky
       items:
-        - name: Jäljittäminen Trace parser
+        - name: Jäljittäminen jäljityksen jäsentimen avulla
           href: perf-test/trace-trace-tutorial.md
-        - name: Suorituskyvyn SDK ja usean käyttäjän testaus Visual Studio Online -palvelun avulla
-          href: perf-test/perfsdk-tutorial.md
+        - name: 'Yhden käyttäjän testaus tehtävän tallennustoiminnon ja suorituskyvyn SDK:n avulla'
+          href: perf-test/single-user-test-perf-sdk.md
+        - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n ja paikallisen testauksen valvojan avulla'
+          href: perf-test/multi-user-testing-local-test-controller.md
+        - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n ja Azure DevOps -palvelun avulla'
+          href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+        - name: 'Vianmäärityksen opas yhden tai usean käyttäjän testausta varten suorituskyvyn SDK:n avulla'
+          href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: Suorituskyvyn SDK ja usean käyttäjän testaus paikallisissa ympäristöissä
           href: perf-test/perfsdk-tutorial-lbd.md
         - name: Ongelmien vianmääritys ja suorituskyvyn analysointi Trace parser
@@ -922,6 +931,8 @@
           href: financial/create-exchange-rate-providers.md
         - name: Vaihtokurssipalvelujen luominen Finance and Operations -versiossa 8.0
           href: financial/create-exchange-rate-8.md
+    - name: 'Tapahtumien selvittäminen käyttämällä toimintoa CustTrans::settleTransaction'
+      href: financial/settletransact-obsolete.md
 - name: Toimitusketjun kehitys
   items:
     - name: Gantt-ohjausobjektin kehitysopas
@@ -1076,7 +1087,7 @@
       items:
         - name: Koodin siirron valmistelu
           href: migration-upgrade/prepare-migration.md
-        - name: Azure DevOps -määritykset
+        - name: Azure DevOps -vastaavuuden määrittäminen
           href: migration-upgrade/configure-vso-solution.md
         - name: Mallin jako
           href: dev-tools/model-split.md
@@ -1234,7 +1245,7 @@
       href: lifecycle-services/complete-tasks-bpm.md
     - name: BPM-kirjastoissa olevien tehtäväkaavioiden käsitteleminen
       href: lifecycle-services/using-activity-diagrams.md
-    - name: BPM-kirjastojen ja Azure DevOpsin synkronoiminen
+    - name: BPM-kirjastojen ja Azure DevOps -palvelun synkronoiminen
       href: lifecycle-services/synchronize-bpm-vsts.md
     - name: Käyttäjän hyväksyntätestauskirjastojen luominen tehtäväoppaiden ja BPM-määritysten avulla
       href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1525322"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577897"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Vähittäismyyntikanavien kirjanpidon integroinnin määrittäminen
 
@@ -88,7 +88,7 @@ Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämi
         Voit muuttaa tietojen yhdistämisparametreja yhdistimen toiminnallisessa profiilissa. Voit palauttaa kirjanpitoasiakirjan toimittajan määrityksessä määritetyt oletusparametrit valitsemalla **Päivitys**.
 
         **Esimerkkejä**
-    
+
         |   | Muoto | Esimerkki |
         |---|--------|---------|
         | **ALV-prosenttiasetukset** | arvo: VATrate | 1 : 2000, 2 : 1800 |
@@ -111,7 +111,7 @@ Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämi
 4. Luo kirjanpidon yhdistinryhmiä.
 
     Kirjanpidon yhdistinryhmä yhdistää ne kirjanpidon yhdistimien toiminnalliset profiilit, jotka suorittavat samoja toimintoja ja joita käytetään samassa kirjanpidon rekisteröintiprosessin vaiheessa. Jos esimerkiksi myymälässä käytetään useita kuittitulostinmalleja, kyseisten kuittitulostimien kirjanpidon yhdistimet voidaan yhdistää kirjanpidon yhdistinryhmäksi.
-    
+
     1. Luo uusi kirjanpidon yhdistinryhmä **Kirjanpidon yhdistinryhmä** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon yhdistinryhmä**).
     2. Lisää toiminnalliset profiilit yhdistinryhmään. Valitse ensin **Toiminnalliset profiilit** -sivulla **Lisää** ja valitse sitten profiilin numero. Kullakin yhdistinryhmän kirjanpidon yhdistimellä voi olla vain yksi toiminnallinen profiili.
     3. Voit keskeyttää toiminnallisen profiilin käytön valitsemalla **Poista käytöstä** -asetukseksi **Kyllä**. Muutos koskee vain nykyistä yhdistinryhmää. Voit jatkaa saman toiminnallisen profiilin käyttöä muissa yhdistinryhmissä.
@@ -119,7 +119,7 @@ Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämi
 5. Luo kirjanpidon rekisteröintiprosessi.
 
     Rekisteröintivaiheiden järjestys ja kussakin vaiheessa käytetty yhdistinryhmä määrittävät kirjanpidon rekisteröintiprosessin.
-    
+
     1. Luo uusi tietue kirjanpidon rekisteröinnin kullekin yksilölliselle prosessille **Kirjanpidon rekisteröintiprosessi** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessi**).
     2. Lisää rekisteröintivaiheet prosessiin:
 
@@ -145,7 +145,7 @@ Määritä seuraavat asetukset ennen kirjanpidon integrointitoiminnon käyttämi
 7. Vahvista kirjanpidon rekisteröintiprosessi **Kirjanpidon rekisteröintiprosessi** -sivulla (**Vähittäismyynti \> Kanavan asetukset \> Kirjanpidon integrointi \> Kirjanpidon rekisteröintiprosessit**) valitsemalla **Vahvista**.
 
     Tämän tyyppinen vahvistus kannattaa tehdä seuraavissa tapauksissa:
-    
+
     - Uudessa rekisteröintiprosessissa sen jälkeen, kun kaikki asetukset ovat valmiita – myös silloin kun rekisteröintiprosessit määritetään myyntipisteen toiminnallisiin profiileihin ja laitteistoprofiileihin.
     - Aiemmin luodussa kirjanpidon rekisteröintiprosessissa tehtyjen muutosten jälkeen, kun kyseiset muutokset voivat aiheuttaa toisen kirjanpidon yhdistimen valinnan suorituksen aikana. (Näin voi tapahtua esimerkiksi silloin, kun kirjanpidon rekisteröintiprosessivaiheen yhdistinryhmä vaihdetaan, yhdistimen toiminnallinen profiili otetaan käyttöön yhdistinryhmässä tai yhdistimen uusi toiminnallinen profiili lisätään yhdistinryhmään.)
     - Yhdistimen teknisten profiilien laiteprofiileihin määrittämisessä tehtyjen muutosten jälkeen.

@@ -3,7 +3,7 @@ title: Taloushallinnan raportointi
 description: Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin Microsoft Dynamics 365 for Finance and Operationsissa ja miten käytät taloudellisen raportoinnin ominaisuuksia. Se sisältää kuvauksen oletusraporteista, jotka toimitetaan.
 author: aprilolson
 manager: AnnBe
-ms.date: 09/26/2018
+ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550302"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594957"
 ---
 # <a name="financial-reporting"></a>Taloushallinnan raportointi
 
@@ -64,7 +64,7 @@ Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöo
 
 | Oikeuksien otsikko                       | Kuvaus                                                             | AOT-nimi                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| Ylläpidä raportoinnin suojausta | Ylläpidä raportoinnin suojausta ja suorita hallinnollisia tehtäviä. | FinancialReportsSecurityMaintain |
+| Ylläpidä raportoinnin suojausta | Ylläpidä raportoinnin suojausta ja suorita hallinnollisia tehtäviä. | FinancialReportsSecuritySystemMaintain |
 | Ylläpidä raportteja            | Suunnittele ja ylläpidä raportteja.                                  | FinancialReportsMaintainReports  |
 | Luo raportit            | Luo ja päivitä raportit.                                 | FinancialReportsGenerateReports  |
 | Näytä raportit                | Näytä raportit.                                                 | FinancialReportsView             |

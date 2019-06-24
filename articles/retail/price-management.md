@@ -3,7 +3,7 @@ title: Vähittäismyynnin hintojen hallinta
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Retailin myyntihintojen luontiin ja hallintaan liittyviä käsitteitä.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 04/20/2018
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afa553fd0562b306f720f2a30c7f901db7ad1b3a
+ms.sourcegitcommit: 0fbfb9b0ab78c804f3931a083028d2ce313d6521
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549394"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "1594067"
 ---
 # <a name="retail-sales-price-management"></a>Vähittäismyyntihintojen hallinta
 
@@ -231,3 +231,9 @@ Lisäksi **vain** vähittäismyynnin hinnoittelumoduuli tukee seuraavia hinnoitt
 
 - Hinta perustuu tuotedimensioihin seuraavassa järjestyksessä: tarkin varianttihinta, vähiten tarkin varianttihinta ja päätuotteen hinta. Kahta tuotedimensiota (kuten väriä ja kokoa) käyttämällä määritettyä hintaa käytetään ennen hintaa, joka on määritetty käyttämällä vain yhtä tuotedimensiota (kuten kokoa).
 - Hinnoittelua ja alennuksia voidaan ohjata samalla hintaryhmällä.
+
+## <a name="pricing-api-enhancements"></a>Hinnoittelun ohjelmointirajapintaparannukset
+
+Hinta on yksi tärkeimmistä tekijöistä, jotka ohjaavat monien asiakkaiden ostopäätöksiä, ja monet asiakkaat vertailevat hintoja eri sivustoilla ennen kuin ostavat. Vähittäiskauppiaat pitävät kilpailijoitaan tiiviisti silmällä ja toteuttavat usein kampanjoita varmistaakseen, että tarjoavat kilpailukykyiset hinnat. Jotta nämä vähittäismyyjät voivat houkutella asiakkaita, on erittäin tärkeää, että tuotehaku, selaustoiminto, luettelot ja tuotetietosivut näyttävät tarkat hinnat.
+
+Tulevassa Retail-versiossa **GetActivePrices**-ohjelmointirajapinta (API) palaa hintoihin, joissa on yksinkertaisia alennuksia (esimerkiksi yksirivinen alennus, joka ei riipu muista ostoskorin nimikkeistä). Tällä tavoin näytettävät hinnat ovat lähellä todellista määrää, jonka asiakkaat maksavat nimikkeistä. Tämä ohjelmointirajapinta käsittää kaikki yksinkertaisten alennusten tyypit: kumppanuuteen, uskollisuuteen ja luetteloon perustuvat sekä kanavapohjaiset alennukset. Lisäksi ohjelmointirajapinta antaa käyttöön sovellettavien alennusten nimet ja voimassaolotiedot, jotta jälleenmyyjät voivat antaa hinnan tarkemman kuvauksen ja luoda kiireellisyyden, jos alennuksen voimassaoloaika umpeutuu pian.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a4b1cd7a02cdf4c650af50199f4425eb53cef0a8
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544906"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595392"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi
 
@@ -34,11 +34,11 @@ Seuraavissa vaiheissa kerrotaan, miten käyttäjä, jolla on järjestelmänvalvo
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
 2. Valitse Konfiguraation lähteet.
 3. Valitse Uusi.
-    * Lähdetietueella on yksilöivä nimi ja URL-osoite. Tarkista tämän sivun sisältö ja ohita tämä menettely, jos Litware, Inc. (http://www.litware.com) on jo luotu.  
+    * Lähdetietueella on yksilöivä nimi ja URL-osoite. Tarkista tämän sivun sisältö ja ohita tämä menettely, jos Litware, Inc. (https://www.litware.com) on jo luotu.  
 4. Syötä Nimi-kenttään Litware, Inc.
     * Litware, Inc.  
-5. Kirjoita Internet-osoite-kenttään http://www.litware.com.
-    * http://www.litware.com  
+5. Kirjoita Internet-osoite-kenttään https://www.litware.com.
+    * https://www.litware.com  
 6. Valitse Tallenna.
 7. Sulje sivu.
 

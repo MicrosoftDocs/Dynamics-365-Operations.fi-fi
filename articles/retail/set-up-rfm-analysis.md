@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553042"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606823"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Määritä Recency, Frequency, and Monetary (RFM) -analyysi
 
@@ -46,7 +46,7 @@ Organisaatiosi on esimerkiksi asettanut luokitukset asteikolle 1-5, jossa 5 on k
 
 Jos organisaatiosi käyttää tuloksena yhteenlaskettua lukua, yksittäiset luokitusluvut lasketaan yhteen. Saman esimerkin asiakkaalla on luokitus 13 (5 + 3 + 5).
 
-## <a name="to-set-up-rfm-analysis-for-the-customers-in-your-organization"></a>RFM-analyysin määrittäminen organisaation asiakkaille
+## <a name="set-up-rfm-analysis-for-the-customers-in-your-organization"></a>Määritä RFM-analyysi organisaation asiakkaille
 
 1. Valitse **Puhelinkeskus** \> **Kausittainen** \> **RFM-analyysi**.
 2. Valitse **RFM-analyysi**-sivulla **Uusi**. Anna RFM-määrityksen nimi **RFM-määritys**-kentässä. Esimerkiksi voisit kutsua määritelmää RFM-A:ksi

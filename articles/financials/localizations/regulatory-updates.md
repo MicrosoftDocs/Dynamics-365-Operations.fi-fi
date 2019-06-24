@@ -3,7 +3,7 @@ title: Pakolliset päivitykset
 description: Tässä ohjeaiheessa on luettelo Microsoft Dynamics 365 for Finance and Operationsin suunnitelluista ja julkaistuista pakollisista päivityksistä.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
+ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530704"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "1593340"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -52,9 +52,20 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 |      Huhtikuun 2019.          |   10.0.1      |   Saksa     |Sähköinen laskutus – asiakaslaskujen vienti xRechnung 1.1 -muodossa         |
 |      Huhtikuun 2019.          |   10.0.1      |    Iso-Britannia     |[ALV-ilmoituksen lähetyksen muutokset (digitaalinen vero)](emea-gbr-mtd-vat-integration.md)    |    
 |      Huhtikuun 2019.          |   10.0.1      |    Brasilia     |NF-e uusi NT 2018.005         |
-|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |ALV-ilmoituksen muotoilumuutokset 2019 alkaen         |
-|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |ALV-ilmoituksen muotoilu muuttuu 2019 alkaen (myynti- ja ostokirjat) 
+|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |[ALV-ilmoituksen muotoilumuutokset 2019 alkaen](rus-VAT-declaration.md) |
+|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |ALV-ilmoituksen muotoilu muuttuu 2019 alkaen (myynti- ja ostokirjat) |
+|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |Kiinteistöveroilmoitusmuutokset vuodelta 2018 |
+|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |[Omaisuusveroilmoitusmuutokset vuodelta 2019](rus-assessed-tax-declaration.md)|
+|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |Kuljetusveroilmoitusmuutokset vuodelta 2019  |
+|      Huhtikuun 2019.            |   10.0.1      | Unkari      |  Unkari: online-laskutus v. 1.1 2019 Microsoft Dynamics 365 for Finance and Operationsissa  |
 |      Toukokuun 2019.            |   10.0.2      | Brasilia      |   SPED ECD -asettelu 7   |
+|      Odottaa            |   10.0.3      | Brasilia      |   NF-e uusi NT 2018.005-v. 1,20   |
+|      Odottaa            |   10.0.3      | Brasilia      |   SPED ECD -asettelu 7   |
+|      Odottaa            |   10.0.3      | Brasilia      |   SPED ECF - Layout 5 for 2019   |
+|      Odottaa            |   10.0.3      | Liettua    |   i.SAF-raportti sallii käyttäjän määrittää järjestelmän arvon lisäverokoodit yrityksen verokoodien kanssa    |
+|      Odottaa            |   10.0.3      | Puola     |   SAF laskut (JPK_FA) v. 2 alkaen 1jul2019  |
+|      Odottaa            |   10.0.3      | Brasilia   |   ICMS:n verotusasiakirjan oikaisut mahdollistavat taulun 5.2   |
+|      Odottaa            |   10.0.3      | Brasilia    |   NF-e Decree 54.308/18 (RS)   |
 
 
 ## <a name="additional-resources"></a>Lisäresurssit

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 151b8936a46a1945e98bfe0ed040ca50c93db4b0
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544446"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595437"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Muodon päivittäminen ottamalla käyttöön sitä koskeva uusi perusversio
 
@@ -36,7 +36,7 @@ Näitä vaiheita varten on suoritettava ensin seuraavien menettelyiden vaiheet: 
 
 ## <a name="select-format-configuration-for-customization"></a>Mukautettavan muotokonfiguraation valinta
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
-    * Tässä esimerkissä malliyritys Litware, Inc. (http://www.litware.com) toimii konfiguraation lähteenä, joka tukee tietyn maan muotokonfiguraatioita sähköisille maksuille.    Malliyritys Proseware, Inc. (http://www.proseware.com) toimii kuluttajana Litware, Inc.:n toimittamalle muotokonfiguraatiolle. Proseware, Inc. käyttää muotoja tietyillä maan alueilla.  
+    * Tässä esimerkissä malliyritys Litware, Inc. (https://www.litware.com) toimii konfiguraation lähteenä, joka tukee tietyn maan muotokonfiguraatioita sähköisille maksuille.    Malliyritys Proseware, Inc. (http://www.proseware.com) toimii kuluttajana Litware, Inc.:n toimittamalle muotokonfiguraatiolle. Proseware, Inc. käyttää muotoja tietyillä maan alueilla.  
 2. Valitse Raportointikonfiguraatiot.
 3. Valitse Näytä suodattimet.
 4. Käytä seuraavia suodattimia: Anna suodattimen arvoksi Nimi-kenttään BACS (Iso-Britannia, kuvitteellinen) käyttämällä Alkaa-suodatinoperaattoria.

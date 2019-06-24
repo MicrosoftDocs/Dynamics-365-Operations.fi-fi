@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: eebb532071e7c6bae7cfae93bfe795e79bb16c63
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e327f652855f898e50f1dd853ae20f3a0ff41d9e
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564992"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606987"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Määritä optimaalinen yhdistelmä päällekkäisiä alennuksia
 
@@ -42,11 +42,11 @@ Voit luoda rajoittamattoman määrän vähittäismyynnin alennuksia yhteisille t
 
 Tässä esimerkissä tarvitaan kaksi tuotetta kunkin alennuksen saadakseen ja alennuksia ei voi yhdistää. Tässä esimerkissä alennukset ovat **Paras hinta** -alennuksia. Molemmat tuotteet oikeuttavat molempiin alennuksiin. Tässä ovat nämä kaksi alennusta.
 
-![Päällekkäisten alennusten yhdistelmä 01](./media/overlapping-discount-combo-01.jpg)
+![Esimerkki kahdesta parhaan hinnan alennuksesta](./media/overlapping-discount-combo-01.jpg)
 
 Mille tahansa kahdelle tuotteelle parempi näitä alennuksista määräytyy kummankin tuotteen hinnan perusteella. Kun molempien tuotteiden hinta on sama tai lähes sama, alennus 1 on parempi. Kun yhden tuotteen hinta on huomattavasti pienempi kuin toisen tuotteen hinta, alennus 2 on parempi. Näitä kahta alennusta voi vertailla keskenään tällä matemaattisella säännöllä.
 
-![Päällekkäisten alennusten yhdistelmä 02](./media/overlapping-discount-combo-02.jpg)
+![Alennusten arviointisääntö](./media/overlapping-discount-combo-02.jpg)
 
 > [!NOTE]
 > Kun tuotteen 1 hinta on yhtä suuri kuin kaksi kolmasosaa tuotteen 2 hinnasta, kaksi alennusta ovat yhtä suuria. Tässä esimerkissä voimassa oleva alennusprosentti alennukselle 1 vaihtelee muutamasta prosentista (kun näiden kahden tuotteen hinnat ovat kaukana toisistaan) enintään 25 prosenttiin (kun kahdella tuotteella on sama hinta). Alennuksen 2 voimassa oleva alennusprosentti on kiinteä. Se on aina 20 prosenttia. Koska alennuksen 1 voimassa oleva alennusprosentti voi olla suurempi tai pienempi kuin alennus 2, paras alennus riippuu näiden kahden alennettavan tuotteen hinnoista. Tässä esimerkissä laskutoimitukset on suoritettu nopeasti, koska käytetään vain kahta alennusta kahteen tuotteeseen. On vain kaksi mahdollista yhdistelmää: alennuksen 1 yksi käyttö tai alennuksen 2 yksi käyttö. Tässä ei tarvitse laskea permutaatioita, koska niitä ei ole. Kunkin alennuksen arvo lasketaan käyttämällä kumpaakin tuotetta ja parasta alennusta käytetään.
@@ -60,11 +60,11 @@ Seuraavaksi käytämme neljää tuotetta ja samaa kahta alennusta. Kaikki neljä
 
 Voit lukea taulukoita käyttämällä yhtä tuotetta riviltä ja yhtä tuotetta sarakkeesta. Esimerkiksi alennuksen 1 taulukossa yhdistämällä kaksi 20 dollarin tuotetta saat alennusta 10 $. Alennuksen 2 taulukossa yhdistämällä yhden 15 dollarin tuotteen ja 5 dollarin tuotteen saat alennusta 4 $.
 
-![Päällekkäisten alennusten yhdistelmä 03](./media/overlapping-discount-combo-03.jpg)
+![Esimerkki, jossa käytetään neljää tuotetta samoissa kahdessa alennuksessa](./media/overlapping-discount-combo-03.jpg)
 
 Ensin etsimme suurimman alennuksen, joka on saatavilla mille tahansa kahdelle tuotteelle käyttäen kumpaa tahansa alennusta. Nämä kaksi taulukkoa näyttävät kaikkien kahden tuotteen yhdistelmien alennussummat. Taulukoiden varjostetut osiot edustavat joko tuotteen yhdistämistä itsensä kanssa (jota ei voi tehdä) tai kahden tuotteen käänteistä yhdistämistä, joka tuottaa saman alennussumman (ja voidaan jättää huomiotta). Katsomalla taulukoita näet, että alennus 1 on kahdelle 20 dollarin tuotteelle suurin alennus, joka on saatavilla kummalla tahansa alennuksella kaikille neljälle tuotteelle. (Tämä alennus näkyy korostettuna ensimmäisessä taulukossa vihreällä.) Jäljelle jää vielä 15 ja 5 dollarin tuotteet. Katsomalla taulukoita uudelleen näet, että näille kahdelle tuotteelle alennus 1 antaa 2,50 dollarin alennuksen, kun taas alennus 2 antaa 4 dollarin alennuksen. Näin ollen voimme valita alennuksen 2. Kokonaisalennus on 14 $. Havainnollistamisen avuksi tässä on kaksi lisätaulukkoa, joissa näkyy voimassa oleva alennusprosentti kaikille mahdollisille kahden tuotteen yhdistelmille sekä alennukselle 1 että alennukselle 2. Vain puolet yhdistelmien luettelosta näytetään, koska näille kahdelle alennukselle ei ole merkitystä, missä järjestyksessä kaksi tuotetta alennetaan. Korkein tehokas alennus (25 prosenttia) on korostettu vihreällä ja pienin tehokas alennus (10 prosenttia) on korostettu punaisella.
 
-![Päällekkäisten alennusten yhdistelmä 04](./media/overlapping-discount-combo-04.jpg)
+![Kummankin alennuksen kaikkien kahden tuoteyhdistelmän todellinen alennusprosentti](./media/overlapping-discount-combo-04.jpg)
 
 > [!NOTE]
 > Kun hinnat vaihtelevat ja vähintään kaksi alennusta kilpailee, ainoa tapa varmistaa paras alennusten yhdistelmä on arvioida molemmat alennukset ja verrata niitä.
@@ -73,7 +73,7 @@ Ensin etsimme suurimman alennuksen, joka on saatavilla mille tahansa kahdelle tu
 
 Tässä osassa jatketaan edellisen osan esimerkkiä. Lisäämme enemmän tuotteita ja vielä yhden alennuksen, jolloin näemme, kuinka monta yhdistelmää pitää laskea ja verrata. Seuraavassa taulukossa on esitetty mahdollisten alennusyhdistelmien määrä tuotteen määrän kasvaessa. Taulukosta näkyy, mitä tapahtuu, kun on kaksi päällekkäistä alennusta, kuten edellisessä esimerkissä, ja kun on kolme päällekkäistä alennusta. Mahdollisten arvioitavien alennusyhdistelmien määrä ylittää määrän, jota edes nopea tietokone ei voi laskea ja verrata riittävän nopeasti vähittäismyynnin tarpeisiin.
 
-![Päällekkäisten alennusten yhdistelmä 05](./media/overlapping-discount-combo-05.jpg)
+![Mahdollisten alennusyhdistelmien määrä tuotteen määrän kasvaessa](./media/overlapping-discount-combo-05.jpg)
 
 Kun käytetään vielä suurempia määriä tai useampia päällekkäisiä alennuksia, mahdollisten alennusyhdistelmien kokonaismäärä nousee nopeasti miljooniin, ja parhaan yhdistelmän valinta kestää jo huomattavan pitkään. Vähittäismyynnin hintamoduuliin on tehty joitain optimointeja, jotta voitaisiin vähentää arvioitavien yhdistelmien määrää. Koska tapahtuman päällekkäisten alennusten määriä ja tuotemääriä ei ole rajoitettu, paljon yhdistelmiä on arvioitava aina, kun on päällekkäisiä alennuksia. Raja-arvojen luokittelumenetelmä on yksi ratkaisu tähän ongelmaan.
 
@@ -81,6 +81,6 @@ Kun käytetään vielä suurempia määriä tai useampia päällekkäisiä alenn
 
 Eksponentiaalisesti kasvavan arvioitavien yhdistelmien määrän ongelman ratkaisemiseksi on olemassa optimointi, joka laskee arvon per jaettu tuote kullekin alennukselle, joka on kohdistettu tuotejoukkoon, johon voidaan käyttää kahta tai useampaa alennusta. Viittaamme tähän arvoon jaettujen tuotteiden alennuksen **raja-arvona**. Raja-arvo on tuotemäärän nostamisen keskimääräinen kokonaisalennussumman nousu, kun jaetut tuotteet kuuluvat kunkin alennuksen piiriin. Raja-arvo lasketaan ottamalla kokonaisalennussumma (DTotal), vähentämällä alennussumma ilman jaettuja tuotteita (DMinus\\ Shared) ja jakamalla kyseinen erotus jaettujen tuotteiden määrällä (ProductsShared).
 
-![Päällekkäisten alennusten yhdistelmä 06](./media/overlapping-discount-combo-06.jpg)
+![Raja-arvon laskentakaava](./media/overlapping-discount-combo-06.jpg)
 
 Kun jaetun tuotejoukon kunkin alennuksen raja-arvo on laskettu, alennukset käytetään jaettuihin tuotteisiin järjestyksessä, läpi kaikkien tapausten, korkeimmasta raja-arvosta pienimpään raja-arvoon. Tässä menetelmässä kaikkia jäljellä olevia alennusmahdollisuuksia ei verrata aina, kun yhtä alennuksen ilmentymää käytetään. Sen sijaan päällekkäisiä alennuksia verrataan yhden kerran ja käytetään sitten järjestyksessä. Muita vertailuja ei tehdä. Voit määrittää ylärajan, joka ylitettäessä siirrytään käyttämään raja-arvomenetelmää, **Alennus**-välilehdessä **Vähittäismyynnin parametrit** -sivulla. Hyväksyttävä aika kokonaisalennuksen laskentaan vaihtelee vähittäiskaupan toimialasta riippuen. Tämä aika on yleensä kuitenkin kymmenistä millisekunneista yhteen sekuntiin.

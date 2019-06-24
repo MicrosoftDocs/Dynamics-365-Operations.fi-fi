@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9e8c16724364df4dd62150056299e818470aa63
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cd500c2880545ccae3cde7e2ead2fc5b83167d32
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553688"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595359"
 ---
 # <a name="trial-balance-financial-reports"></a>Pääkirjan talousraportit
 
@@ -106,7 +106,7 @@ Jokaisessa pääkirjan raportissa käytetään eri sarakemääritystä. Nämä s
 
 [Raporttien näyttäminen](view-financial-reports.md)
 
-[Dynamicsin talousraportointi -blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamicsin talousraportointi -blogi](https://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

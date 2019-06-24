@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df9585cfe2bc7ccc60dc69741994785869ba71b1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c9731ba47f449e037850c95a7873e1ae4551e2a9
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545922"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595520"
 ---
 # <a name="master-plans"></a>Pääsuunnitelmat
 
@@ -51,7 +51,7 @@ Alkuperäinen dynaaminen suunnitelma voidaan myös asettaa päivittymään uuden
 
 [Kattavuusasetukset](coverage-settings.md)
 
-[Pääajoituksen taktisen ja operatiivisen suunnittelun erottaminen](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[Pääajoituksen taktisen ja operatiivisen suunnittelun erottaminen](https://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
 [Pääsuunnittelu: käytetäänkö staattista ja dynaamista pääsuunnittelua vai yhtä suunnitelmaa?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
 

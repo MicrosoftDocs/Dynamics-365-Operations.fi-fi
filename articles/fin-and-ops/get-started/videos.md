@@ -3,7 +3,7 @@ title: Videoita Finance and Operations -palveluille
 description: Tällä sivulla on lueteltu Microsoftin luomat toimintaohjeita ja teknisiä keskusteluja sisältävät Dynamics 365 for Finance and Operations -videot, jotka ovat saatavilla YouTubessa ja muissa sivustoissa.
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
+ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561665"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1591545"
 ---
 # <a name="videos-for-finance-and-operations"></a>Finance and Operations -videot
 
@@ -63,8 +63,9 @@ Videot on listattu ominaisuuksien mukaan, joten selaa alaspäin nähdäksesi kai
 - [Kustannusseurannan mobiilityötila](https://youtu.be/imsuTg8rUVk)
 - [Kustannuslaskennan käytön aloittaminen](https://youtu.be/1pUDtJQZ8FU)
 - [Excelin käyttäminen kustannusanalyysissa](https://youtu.be/-HKHYdClvx8)
+- [Kulukokemus](https://youtu.be/Ocy-MsTvEE0)
 
-#### <a name="intelligence"></a>Business Intelligence
+#### <a name="intelligence"></a>Tiedot
 
 - [Oman tietokannan tuonti Dynamics 365 for Finance and Operationsiin](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Kustannustenhallinnan Power BI -sisällön käyttö Dynamics 365:ssä](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)

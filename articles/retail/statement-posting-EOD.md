@@ -16,16 +16,16 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02880edda6c34c24f8dad8cc8cbeafe215f46896
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c22137ad29bf947bc7a9e4c9a4d1332e03b1298
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541288"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606961"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tässä aiheessa kuvataan ensimmäinen joukko parannuksia, jotka on tehty laskelman kirjaamistoimintoon. Nämä parannukset ovat käytettävissä Microsoft Dynamics 365 for Finance and Operations7.3.2 -versiossa.
 
@@ -58,10 +58,10 @@ Laskelman kirjaamistoiminnon parantamisen myötä on otettu käyttöön kolme uu
 
 Lisäksi seuraavat parametrit on esitelty **Eräkäsittely**-pikavälilehdellä **Kirjaus**-välilehdellä **Vähittäismyyntiparametrit**-sivun kirjausvälilehden eräkäsittelypikavälilehdessä: 
 
-- **Rinnakkaisen laskelman kirjauksen enimmäismäärä** - Tämä kenttä määrittää useiden laskelmien kirjaamiseen käytettävien erätehtävien määrän. 
-- **Tilausten käsittelyn enimmäissäie** -Tämä kenttä edustaa laskelman kirjauksen eräajossa käytettävien säikeiden enimmäismäärää, kun halutaan luoda ja laskuttaa yhden laskelman myyntitilauksia. Laskelman kirjaus prosessissa käytettävien säikeiden kokonaismäärä lasketaan tämän parametrin arvon mukaan kerrottuna **Rinnakkaisen laskelman kirjausten enimmäismäärä**-parametrin arvolla. Tämän parametrin arvon määrittäminen liian suureksi voi vaikuttaa kielteisesti laskelman kirjausprosessin suorituskykyyn.
-- **Koontia varten sisällytettyjen tapahtuma rivien enimmäismäärä** - Tämä kenttä määrittää, montako tapahtumariviä sisällytetään yksittäiseen yhteenlaskettavaan tapahtumaan ennen uuden luomista. Yhdistetyt tapahtumat luodaan erilaisten koostekriteerien, kuten asiakkaan, liiketoiminnan päivän tai taloushallinnon dimensioiden, perusteella. On tärkeää huomata, että yksittäisen vähittäismyyntitapahtuman rivejä ei jaeta eri yhdistettyjen tapahtumien kesken. Tämä tarkoittaa, että on mahdollista, että yhdistettyjen tapahtumien rivien määrä on hieman suurempi tai pienempi niiden tekijöiden perusteella, kuten erillisten tuotteiden määrä.
-- **Säikeiden enimmäismäärä varastotapahtumien tarkistamista varten** - Tämä kenttä määrittää vähittäismyyntitapahtumien vahvistamiseen käytettävien säikeiden määrän. Retail-tapahtumien vahvistaminen on pakollinen vaihe, joka on suoritettava, ennen kuin tapahtumat voidaan noutaa lausekkeissa. Sinu on myös määritettävä uuden kirjausprosessin aikana **Lahjakorttituote** **Lahjakortti**-pikavälilehdessä **Vähittäiskaupan parametrit** -sivun **Kirjaus**-välilehdessä. Tämä on määritettävä myös silloin, kun organisaatio ei käytä lahjakortteja.
+- **Rinnakkaisen laskelman kirjauksen enimmäismäärä** – Tämä kenttä määrittää useiden laskelmien kirjaamiseen käytettävien erätehtävien määrän. 
+- **Tilausten käsittelyn enimmäissäie** – Tämä kenttä edustaa laskelman kirjauksen eräajossa käytettävien säikeiden enimmäismäärää, kun halutaan luoda ja laskuttaa yhden laskelman myyntitilauksia. Laskelman kirjaus prosessissa käytettävien säikeiden kokonaismäärä lasketaan tämän parametrin arvon mukaan kerrottuna **Rinnakkaisen laskelman kirjausten enimmäismäärä**-parametrin arvolla. Tämän parametrin arvon määrittäminen liian suureksi voi vaikuttaa kielteisesti laskelman kirjausprosessin suorituskykyyn.
+- **Koontia varten sisällytettyjen tapahtuma rivien enimmäismäärä** – Tämä kenttä määrittää, montako tapahtumariviä sisällytetään yksittäiseen yhteenlaskettavaan tapahtumaan ennen uuden luomista. Yhdistetyt tapahtumat luodaan erilaisten koostekriteerien, kuten asiakkaan, liiketoiminnan päivän tai taloushallinnon dimensioiden, perusteella. On tärkeää huomata, että yksittäisen vähittäismyyntitapahtuman rivejä ei jaeta eri yhdistettyjen tapahtumien kesken. Tämä tarkoittaa, että on mahdollista, että yhdistettyjen tapahtumien rivien määrä on hieman suurempi tai pienempi niiden tekijöiden perusteella, kuten erillisten tuotteiden määrä.
+- **Säikeiden enimmäismäärä varastotapahtumien tarkistamista varten** – Tämä kenttä määrittää vähittäismyyntitapahtumien vahvistamiseen käytettävien säikeiden määrän. Retail-tapahtumien vahvistaminen on pakollinen vaihe, joka on suoritettava, ennen kuin tapahtumat voidaan noutaa lausekkeissa. Sinu on myös määritettävä uuden kirjausprosessin aikana **Lahjakorttituote** **Lahjakortti**-pikavälilehdessä **Vähittäiskaupan parametrit** -sivun **Kirjaus**-välilehdessä. Tämä on määritettävä myös silloin, kun organisaatio ei käytä lahjakortteja.
 
 > [!NOTE]
 > Kaikki asetukset ja parametrit, jotka liittyvät laskelman kirjauksiin ja jotka on määritetty vähittäismyymälöissä ja **Vähittäismyynnin parametrit** -sivulla, liittyvät parannettuun laskelman kirjaustoimintoon.

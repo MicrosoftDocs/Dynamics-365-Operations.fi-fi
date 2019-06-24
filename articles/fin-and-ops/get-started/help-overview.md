@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
-ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
+ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1538953"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595636"
 ---
 # <a name="finance-and-operations-help-system"></a>Finance and Operations -ohjejärjestelmä
 
@@ -54,7 +54,7 @@ Voit käyttää ohjetta käyttämäsi tuotteen Ohje-ruudusta. Seuraavassa näytt
 
 ## <a name="help-on-docsmicrosoftcom"></a>Ohje osoitteessa docs.microsoft.com
 
-The docs.microsoft.com sivu ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) on Finance and OPerationsin tuoteohjeistuksen ensisijainen lähde. Sivustossa on seuraavat ominaisuudet:
+The docs.microsoft.com sivu ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) on Finance and Operationsin tuoteohjeistuksen ensisijainen lähde. Sivustossa on seuraavat ominaisuudet:
 
 - **Uusin sisältö**– sivusto on nopea ja joustava tapa luoda, toimittaa ja päivittää tuoteohjeistusta. Niinpä saatkin aina käyttöösi uusimmat tekniset tiedot.
 - **Asiantuntijoiden kirjoittama sisältö**– sivusto sisältää monipuolisesti tuoteohjeistusta, jota yhteisön jäsenet (sekä Microsoftin sisällä että ulkopuolella) voidaan täydentää.
@@ -192,7 +192,7 @@ Seuraavassa taulussa on sivustoluettelo. Jos sivuston nimen vieressä on tähti 
 | [Docs.microsoft.com](/dynamics365/)                                                            | Kaiken Dynamics 365:n tuoteohjeistuksen ylläpito tai linkitys. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsoftin maksuton eLearning-sivusto. |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Sisältää pilvipohjaista yhteistä työtilaa, jota asiakkaat ja heidän kumppaninsa voivat käyttää hallitakseen Dynamics 365 for Finance and Operations -projekteja ennen myyntiä, täytäntöönpanossa ja operaatioissa. Sivustossa on apua käyttöönoton kaikissa vaiheissa. |
-| [Tuen blogi](http://aka.ms/AXSupportBlog)                                                    | Sisältää Dynamics 365 for Finance and Operationsin tukiryhmän julkaisemia vinkkejä. |
+| [Tuen blogi](https://aka.ms/AXSupportBlog)                                                    | Sisältää Dynamics 365 for Finance and Operationsin tukiryhmän julkaisemia vinkkejä. |
 | [Docs.microsoft.com/previous versions](https://docs.microsoft.com/previous-versions/dynamics/) | Sisältää edellisten versioiden sisällön. |
 | [Dynamics-yhteisö](https://community.dynamics.com/)                                          | Ylläpitää blogeja, keskustelupalstoja ja videoita. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Sisältää arviointi- ja myyntitietoja. |

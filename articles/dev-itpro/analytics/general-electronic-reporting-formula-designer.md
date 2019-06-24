@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541265"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592657"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 
@@ -443,7 +443,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <tr>
 <td>INDEKSI (luettelo, indeksi)</td>
 <td>Tämä funktio palauttaa luettelon tietyn numeerisen indeksin perusteella valitun tietueen. Poikkeus on heitetty, jos indeksi on luettelon tietueissa olevan alueen ulkopuolella.</td>
-<td>Jos syötät tietolähteen <strong>DS</strong><strong>laskettuun kenttätyyppiin</strong> ja se sisältää lausekkeen <strong>Split ("A | B | C "," | "), 2)</strong>, ilmaisu <strong>DS.Value</strong> palauttaa tekstiarvon "B". Lauseke <strong>INDEX (SPLIT ("A | B | C "," | "), 2).Value</strong> palauttaa myös "B"-teksti arvon.</td>
+<td>Jos syötät tietolähteen <strong>DS</strong> <strong>laskettuun kenttätyyppiin</strong> ja se sisältää lausekkeen <strong>Split ("A | B | C "," | "), 2</strong>, ilmaisu <strong>DS.Value</strong> palauttaa tekstiarvon "B". Lauseke <strong>INDEX (SPLIT ("A | B | C "," | "), 2).Value</strong> palauttaa myös "B"-teksti arvon.</td>
 </tr>
 </tbody>
 </table>
@@ -624,12 +624,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <ul>
 <li>Finance and Operationsin otsikko SYS70894, jossa on seuraava teksti:
 <ul>
-<li><strong>Kielelle EN-US:</strong> &quot;Nothing to print&quot;</li>
+<li><strong>Kielelle EN-US:</strong> &quot;Ei tulostettavaa&quot;</li>
 <li><strong>Kielelle FI:</strong> &quot;Ei mitään tulostettavaa&quot;</li>
 </ul></li>
 <li>Finance and Operationsin otsikko SYS18389, jossa on seuraava teksti:
 <ul>
-<li><strong>Kielelle EN-US:</strong> Customer %1 is stopped for %2.</li>
+<li><strong>Kielelle EN-US:</strong> &quot;Asiakas %1 on pysäytetty %2.&quot;</li>
 <li><strong>Kielelle FI:</strong> Asiakas %1 on pysäytetty %2.</li>
 </ul></li>
 </ul>

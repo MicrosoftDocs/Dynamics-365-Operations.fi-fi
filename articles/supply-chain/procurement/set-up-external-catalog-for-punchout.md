@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571628"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595608"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen
 
@@ -59,8 +59,10 @@ Tämä osa sisältää lisätietoja vaiheesta 4 edellä olevassa osassa.
 4. Valitse luettelon toimittaja. **Yritykset**-luettelossa on rivi jokaiselle yritykselle, johon toimittaja on määritetty. Jotta käyttäjät voivat pyytää suoraan joidenkin yritysten toimittajan luettelon tuotteita, voit määrittää luettelon käytettävyyden **Estä käyttö** tai **Salli käyttö** -painikkeilla.
 5. Kirjoita **Oletusarvoinen vanhentuminen (päivinä)** -kenttään, montako päivää ulkoisesta luettelosta vastaanotettu tarjous on voimassa ja kuinka kauan sitä voidaan käyttää ulkoiselta toimittajalta suoritettaviin ostoihin. Kun tarjous luodaan ja noudetaan toimittajan ulkoiselta luettelosivustolta, tarjous on voimassa nykyisestä järjestelmän päivämäärästä alkaen ja voimassa tähän kenttään kirjoittamasi päivien ajan.
 6. Käynnistä hankintaluokkien määritys ulkoiseen luetteloon napauttamalla **Lisää** -painiketta. Valitse sitten Luokka-nimiluettelosta luokka. Luokkaluettelo on hankintaluokkien ylijoukko, johon toimittaja on määritetty kaikissa yrityksissä, jotka on määritetty toimittajalle.
-[!NOTE]
-Hankintakäytäntöjen avulla sallitaan tai rajoitetaan luokkien käyttöoikeuksia yrityksen ostoa tai toimintayksikön vastaanottoa varten. Siirtyminen ulkoiseen luetteloon edellyttää vähintään yhden luetteloon yhdistetyn hankintaluokan käyttöoikeuksia.
+
+    > [!NOTE]
+    > Hankintakäytäntöjen avulla sallitaan tai rajoitetaan luokkien käyttöoikeuksia yrityksen ostoa tai toimintayksikön vastaanottoa varten. Siirtyminen ulkoiseen luetteloon edellyttää vähintään yhden luetteloon yhdistetyn hankintaluokan käyttöoikeuksia.
+
 7. Määritä cXML-asetuspyyntöviesti, joka lähetetään toimittajalle. Automaattisesti luotu sanomamuoto on vähimmäismalli, joka vaaditaan, jotta voidaan aloittaa istunto. Syötä arvot tunnisteita varten.
 
 Voit milloin tahansa ladata järjestelmän luoman viestin mallin valitsemalla **Palauta viestimuoto**. 
@@ -85,7 +87,7 @@ Ohessa on kuvaus tunnisteista, jotka sisältyvät malliin:
 
 Ulkoinen elementti on lisätieto, kuten käyttäjätunnus, joka perustuu käyttäjä, jolle siirto suoritetaan. Ulkoinen elementti määritetään, kun siirto tapahtuu ja se voidaan lähettää viestin pyynnön asetussanomassa.
 Toimittajalla voi olla vaatimus ulkoisen elementin vastaanottamisesta määrityspyynnössä. Tällöin kannattaa lisätä ulkoinen elementti ulkoisten elementtien luetteloon **Viestimuoto**-osassa **Ulkoinen luettelo** -sivulla. Määritä ulkoisen elementin nimi, jonka toimittaja voi tunnistaa, ja liitä se arvoon. Arvojen vaihtoehdot ovat: käyttäjänimi, sähköposti tai satunnainen arvo.
-Lisätietoja cXML-protokollasta on osoitteessa http://cxml.org/
+Saat lisätietoja cXML-protokollasta kohdasta [cXML.org website](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Takaisinlähetysviesti
 Takaisinlähetysviesti on viesti, joka saadaan toimittajalta, kun käyttäjä kirjautuu pois ulkoisesta sivustosta ja palaa Finance and Operationsiin. Takaisinlähetysviestejä ei voi määrittää. Sanomat perustuvat cXM-protokollamääritykseen. Seuraavassa on tietoja, jotka voivat kuulua takaisinlähetysviestiin, joka vastaanotetaan ehdotusrivillä:

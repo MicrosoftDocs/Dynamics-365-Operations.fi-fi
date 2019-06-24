@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517947"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617340"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talentin integrointia Dynamics 365 for Finance and Operationsiin koskevat usein kysytyt kysymykset
 
@@ -46,7 +46,7 @@ Common Data Service -ratkaisussa ei ole tällä hetkellä taloushallinnon dimens
 
 Jos Finance and Operationsissa on sellaisia tietoja, joita ei ole Talentissa, voit linkittää järjestelmät yhteen Talentin **linkkien määrittämisen** avulla. Lisätietoja Talentin ja Finance and Operationsin välisten linkkien määrittämisestä on kohdassa [Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (31. lokakuuta 2018)](whats-new-talent-october-31.md).
 
-![](media/MapFinancialDimensions.png)
+![Määritä taloushallinnon dimensiot](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Kun tuon työntekijöitä, ne päätyvät joskus Finance and Operationsin passiivisiin työntekijöihin. Miksi?
 
@@ -60,14 +60,14 @@ Tietojen synkronointi noudattaa suoritusaikataulua. Integrointi noutaa tietueen,
 
 Kyselyn lisäasetusten avulla voit suodattaa ja muokata lähdetietoja, ennen kuin ne siirretään kohteeseen.
 
-![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Aktiivisten työntekijöiden tarkennettu kysely](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Voinko määrittää, mitkä tietyn yksikön kentät lähetetään Finance and Operationsiin?
 
 Kenttiä voi lisätä integrointitehtävään tai poistaa niitä siitä. Kaikkia Common Data Service -yksikössä olevia tietokenttiä ei täytetä Core HR:stä.
 Lisätiedot voidaan täyttää PowerAppsin kautta.
 
-![](media/SpecifyFieldsIncludedInIntegration.png)
+![Lisää tai poista kenttiä integrointitehtävään tai -tehtävästä](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-talent-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Määritän integroinnin erätyönä, mutta Talentin yhteys kohdejärjestelmään katkesi. Miten voi lähettää saman muutosjoukon kohdejärjestelmään?
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bb08833cca843c370e2c845bce56d6f5a8b5f2ed
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502727"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595336"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Talousraporttien sarakemääritykset
 
@@ -120,7 +120,7 @@ Seuraavassa taulukossa esitellään sarakkeen rajoituksen koodit.
 | ADJ                     | Rajoita sarakkeen summat kauden oikaisusummiin, jos summia ovat käytettävissä. |
 | XAD                     | Rajoita sarakkeen summat niin, että kauden oikaisusummat suljetaan pois. |
 | SS                      | Rajoita sarakkeen summat niin, että vain kirjatut tapahtumat sisällytetään, jos tapahtumia on käytettävissä. |
-| UPT                     | Rajoita sarakkeen summat niin, että vain kirjaamattomat tapahtumat sisällytetään, jos tapahtumia on käytettävissä.<blockquote>[!NOTE] Kaikki tietopalveluntarjoajat eivät tue kirjaamattomia tapahtumia. Lisätietoja on Microsoft Dynamics ERP -järjestelmän <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>tietojen integrointioppaassa</a>.</blockquote> |
+| UPT                     | Rajoita sarakkeen summat niin, että vain kirjaamattomat tapahtumat sisällytetään, jos tapahtumia on käytettävissä.<p><strong>Huomautus:</strong> Kaikki tietopalvelut eivät tue kirjaamattomia tapahtumia. Lisätietoja on Microsoft Dynamics ERP -järjestelmän <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>tietojen integrointioppaassa</a>.</p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Sarakkeen rajoittaminen raportoinnin yksikköön
 
@@ -310,7 +310,7 @@ Sarakkeen määrityksen muotoilusarakkeen tietorivien valituissa sarakkeissa kä
 | Tulostuksen hallintakoodi | Käännös                                     | Kuvaus |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Piilotettu                                     | Tämän sarakkeen summat suljetaan pois tulostettavasta raportista ja laskutoimituksista. Voit ottaa piilotetun sarakkeen mukaan laskutoimitukseen viittaamalla sarakkeeseen suoraan laskentakaavassa. Piilotettu sarake C voidaan esimerkiksi sisällyttää seuraavaan laskutoimitukseen: **B+C+D**. Piilotettua saraketta C ei kuitenkaan oteta mukaan esimerkiksi seuraavaan laskutoimitukseen: **B:D**. |
-| XCR                | Merkin muuttaminen, jos rivin tavallinen saldo on kredit | Luo budjetti tai vertaileva raportti, jossa mikä tahansa kielteinen varianssi (kuten tuoton vaje tai kulujen ylitys) on aina negatiivinen. Ota tämä koodi käyttöön **CALC**-sarakkeessa ja vaihda sarakesumman etumerkki, jos annetun rivin tavallinen saldo on kredit (kuten rivin määrityksen **Tavallinen saldo** -sarakkeen **C**-arvo määrittää).<blockquote>[!NOTE] Varmista, että <strong>YHT</strong>- ja </strong>LASK</strong>-riveille, joissa usein on kredit-saldo, syötetään rivin määrityksen <strong>Tavallinen saldo</strong> -sarakkeeseen <strong>L</strong>.</blockquote> |
+| XCR                | Merkin muuttaminen, jos rivin tavallinen saldo on kredit | Luo budjetti tai vertaileva raportti, jossa mikä tahansa kielteinen varianssi (kuten tuoton vaje tai kulujen ylitys) on aina negatiivinen. Ota tämä koodi käyttöön **CALC**-sarakkeessa ja vaihda sarakesumman etumerkki, jos annetun rivin tavallinen saldo on kredit (kuten rivin määrityksen **Tavallinen saldo** -sarakkeen **C**-arvo määrittää).<p><strong>Huomautus:</strong> Varmista, että<strong>TOT</strong>- ja </strong>CAL</strong>-riveille, joissa usein on kredit-saldo, syötetään rivin määrityksen <strong>Tavallinen saldo</strong> -sarakkeeseen <strong>C</strong>.</p> |
 | X0                 | Sarakkeen piilottaminen, jos ne ovat nollia tai tyhjiä          | Sulje **FD**-sarake pois raportista, jos sarakkeen kaikki solut ovat tyhjiä tai sisältävät vain nollia. |
 | SR                 | Estä pyöristys                               | Estä tämän sarakkeen summien pyöristys. |
 | XR                 | Piilota koonti                                 | Piilota koonti. Jos raportissa käytetään raportointipuuta, tämän sarakkeen summia ei koota vastaaviksi ylätason solmuiksi. |
@@ -546,8 +546,8 @@ Seuraavassa taulukossa näytetään tulokset, joita saadaan **Valuutan näyttö*
 | Valuutan näyttö -solu                        | Valuuttasuodatin-solu | Raportin tulos |
 |----------------------------------------------|----------------------|---------------|
 | Tapahtumavaluutta                 | **JENI**              | **6 000 Y** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat. |
-| Kirjanpitovaluutta kirjanpidosta | **JENI**              |**60 $** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat, jotka näytetään Yhdysvaltojen dollareina.<blockquote>[!NOTE] Muuntokurssina käytetään noin 100 jeniä yhtä Yhdysvaltojen dollaria kohti.</blockquote> |
-| Kirjanpitovaluutta kirjanpidosta | Tyhjä                | **2 310 $** – Tuloksessa näytetään kaikki tiedot kirjanpidossa määritetyssä kirjanpitovaluutassa.<blockquote>[!NOTE] Tämä summa on kaikkien tapahtumien summa kirjanpitovaluutassa.</blockquote> |
+| Kirjanpitovaluutta kirjanpidosta | **JENI**              |**60 $** – Tuloksessa näytetään vain jeneinä syötetyt tapahtumat, jotka näytetään Yhdysvaltojen dollareina.<p><strong>Huomautus:</strong> Muuntokurssina käytetään noin 100 jeniä yhtä Yhdysvaltojen dollaria kohti.</p> |
+| Kirjanpitovaluutta kirjanpidosta | Tyhjä                | **2 310 $** – Tuloksessa näytetään kaikki tiedot kirjanpidossa määritetyssä kirjanpitovaluutassa.<p><strong>Huomautus:</strong> Tämä summa on kaikkien tapahtumien summa kirjanpitovaluutassa.</p> |
 | Tapahtumavaluutta                 | Tyhjä                | **2 250 $** – Tuloksessa näytetään kaikki summat valuutassa, jossa tapahtuma suoritettiin. Tämä tarkoittaa sitä, että kokonaissummassa eri valuuttojen summat lasketaan yhteen. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Laskenta-sarake sarakkeen määrityksessä
@@ -565,7 +565,7 @@ Voit lisätä, vähentää, kertoa ja jakaa sarakkeita syöttämällä sarakkeid
 |----------|---------------------|-------------|
 | +        | A+C                 | Laske sarakkeen A ja sarakkeen C summa yhteen. |
 | :        | A:C A:C-D           | Lisää peräkkäiset sarakkeet toisiinsa. Esimerkiksi kaava **A:C** laskee sarakkeiden A–C summat yhteen, kun taas kaava **A:C-D** laskee sarakkeiden A–C summat yhteen ja vähentää sitten sarakkeen D summan. |
-| -        | A-C                 | Vähentää sarakkeen A arvosta sarakkeen C arvon.<blockquote>[!NOTE] Voit myös kumota sarakkeen merkit miinusmerkillä (-). Esimerkiksi <strong>-A+B</strong> lisää sarakkeen A käänteisen summan sarakkeen B summaan.</blockquote> |
+| -        | A-C                 | Vähentää sarakkeen A arvosta sarakkeen C arvon.<p><strong>Huomautus:</strong> Voit myös käyttää miinusmerkkiä (-) sarakkeen etumerkin vaihtamiseen. Esimerkiksi <strong>-A+B</strong> lisää sarakkeen A käänteisen summan sarakkeen B summaan.</p> |
 | \*       | A\*C                | Kerro sarakkeen A summa sarakkeen C summalla. |
 | /        | A/C                 | Jaa sarakkeen A summa sarakkeen C summalla. |
 

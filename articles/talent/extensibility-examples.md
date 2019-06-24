@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517878"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577792"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Laajenna Talent käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä
 
@@ -115,7 +115,7 @@ Suorita tämä PowerApps-sovellus hallintakonsolina seuraavien tehtävien suorit
 
 Tämä PowerApps-sovellus käyttää monta-moneen-yhteyksiä, joten voit käyttää sitä mallina muille skenaarioille, joissa sinun täytyy poimia useita monta-moneen-yhteyksiä vaativia tietoja.
 
-Voit ladata **Hallintakonsoli kykypoolien hallintaan** -mallin siirtymällä kohtaan [Hallintakonsoli kykypoolien hallintaan](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) Microsoft Download Centerissä.
+Voit ladata **Hallintakonsoli kykypoolien hallintaan** -mallin siirtymällä kohtaan [Hallintakonsoli kykypoolien hallintaan](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) Microsoft Download Centerissä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

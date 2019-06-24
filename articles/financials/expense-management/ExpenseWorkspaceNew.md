@@ -3,7 +3,7 @@ title: Kuluraporttien uusi toteutus
 description: Tässä ohjeaiheessa on tietoja uudelleensuunnitellusta ja uudistetuista kuluraporttikirjauksen kokemuksista Microsoft Dynamics 365 for Finance and Operations. Uusi kokemus yksinkertaistaa kuluraporttien täyttämistä ja lyhentää tarvittavaa aikaa.
 author: ryansandness
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 3039cda3f2cf9259ca06207bdf941bc6b0fb28e1
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538684"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592634"
 ---
 # <a name="expense-reports-reimagined"></a>Kuluraporttien uusi toteutus
 
@@ -46,10 +46,9 @@ Voit ottaa uuden käyttökokemuksen käyttöön käyttämällä **Ominaisuuksien
 
 ## <a name="getting-started-video-for-new-users"></a>Aloitusvideo uusille käyttäjille
 
-Voit katsella lyhyttä videota, joka sisältää kulujen syötön pääominaisuudet.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO]
 
-> [!NOTE]
-> Video ei ole vielä käytettävissä. Tämä ohjeaihe päivitetään, kun video on käytettävissä.
+[Kulukokemus Dynamics 365 for Finance and Operationsissa](https://youtu.be/Ocy-MsTvEE0) -video (näkyy ylempänä) sisältyy [Finance and Operations -soittolistaan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavilla YouTubessa.
 
 ## <a name="new-features"></a>Uudet ominaisuudet
 

@@ -44,9 +44,11 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: 'Ominaisuudet, joita ei ole otettu käyttöön paikallisissa ympäristöissä'
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations -version 10.0.4 (heinäkuu 2019) esiversio-ominaisuudet
+              href: get-started/whats-new-changed-10-0-4.md
             - name: Finance and Operations -version 10.0.3 (kesäkuu 2019) esiversio-ominaisuudet
               href: get-started/whats-new-changed-10-0-3.md
-            - name: Finance and Operations -version 10.0.2 (toukokuu 2019) esiversio-ominaisuudet
+            - name: Finance and Operations -versio 10.0.2 (toukokuu 2019)
               href: get-started/whats-new-changed-10-0-2.md
             - name: Finance and Operations -versio 10.0.1 (huhtikuu 2019)
               href: get-started/whats-new-changed-10-0-1.md
@@ -54,9 +56,11 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations -versio 8.1.3 (tammikuu 2019)
               href: get-started/whats-new-changed-8-1-3.md
+            - name: Finance and Operations platform update 28 (heinäkuu 2019) - päivityksen esiversio-ominaisuudet
+              href: get-started/whats-new-platform-update-28.md
             - name: Finance and Operations platform update 27 (kesäkuu 2019) - päivityksen esiversio-ominaisuudet
               href: get-started/whats-new-platform-update-27.md
-            - name: Finance and Operations platform update 26 (toukokuu 2019) - päivityksen esiversio-ominaisuudet
+            - name: Platform update 26 (toukokuu 2019)
               href: get-started/whats-new-platform-update-26.md
             - name: Platform update 25 (huhtikuu 2019)
               href: get-started/whats-new-platform-25.md
@@ -909,7 +913,7 @@
               href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Finance and Operations -mobiilisovelluksen kustannusseurannan työtilan käyttö
               href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
-        - name: Kulujenhallinta
+        - name: Kulujen hallinta
           href: ../financials/expense-management/expense-management.md
           items:
             - name: Kuluraporttien uusi toteutus
@@ -1185,7 +1189,7 @@
                   href: ../financials/general-ledger/round-sales-tax-payments.md
                 - name: Arvonlisäveron laskentatavat Alkuperä-kentässä
                   href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-                - name: Arvolisäverokoodien koko summan ja välin laskentavaihtoehdot
+                - name: Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
                   href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
                 - name: Toimittajalaskun arvonlisäveron laskeminen ja täsmäytys
                   href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
@@ -1261,6 +1265,8 @@
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: Alustavan budjetin luominen julkiselle sektorille
                   href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
+                - name: Budjettianalyysiraportti
+                  href: ../financials/public-sector/budget-analysis-report.md
                 - name: Julkisen sektorin budjettianalyysi
                   href: ../financials/public-sector/budget-analysis-public-sector.md
                 - name: Julkisen sektorin alustavat budjetit ja jako-osuudet
@@ -2277,6 +2283,7 @@
                   href: ../financials/localizations/rus-ledger-transactions-preview.md
                 - name: Valuuttatapahtumien vaihtokurssien määrittäminen
                   href: ../financials/localizations/rus-exchange-difference.md
+                - name: Valuutanvaihtokurssien tuominen kohdasta CBRF ../financials/general-ledger/import-currency-exchange-rates.md
             - name: Ennakonvaraajat
               href: ../financials/localizations/rus-advance-holders.md
               items:
@@ -2638,7 +2645,6 @@
                   href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
                 - name: Etujen määrittäminen
                   href: hr/localizations/noam-usa-benefit-set-up-tasks.md
-            - name: Tiheydet ja jaksot
             - name: Maksujaksojen ja maksukausien määrittäminen
               href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
             - name: Palkanlaskennan laskentatiheyksien määrittäminen
@@ -2922,6 +2928,8 @@
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
             - name: Saapuvien asiakirjojen jäsentäminen CSV-muodossa
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
+            - name: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
+              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
             - name: Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
               items:
@@ -3877,6 +3885,10 @@
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
         - name: Projektin työaikaraportin mobiilisovellus
           href: ../financials/project-management/project-timesheet.md
+        - name: Projektin työaikaraportit mobiililaitteessa
+          href: ../financials/project-management/mobile-timesheets.md
+        - name: Projektin työaikaraporttien mukautettujen kenttien toteuttaminen mobiilisovelluksessa
+          href: ../financials/project-management/custom-fields-mobile.md
     - name: Myynti ja markkinointi
       href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:
