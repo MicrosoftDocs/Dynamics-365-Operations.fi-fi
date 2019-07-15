@@ -4,13 +4,13 @@
   items:
     - name: Uudet ja muuttuneet ominaisuudet
       href: get-started/whats-new.md
-    - name: Dynamics 365 for Retail -sovelluksen version 10.0.3 esiversio-ominaisuudet
+    - name: Dynamics 365 for Retail 10.0.3 -version uudet ja muuttuneet ominaisuudet
       href: get-started/whats-new-10-0-3.md
-    - name: Dynamics 365 for Retail 10.0.2 -sovelluksen uudet ja muuttuneet ominaisuudet
+    - name: Dynamics 365 for Retail 10.0.2 -version uudet ja muuttuneet ominaisuudet
       href: get-started/whats-new-10-0-2.md
-    - name: Dynamics 365 for Retail 10.0.1 -sovelluksen uudet ja muuttuneet ominaisuudet
+    - name: Dynamics 365 for Retail 10.0.1 -version uudet ja muuttuneet ominaisuudet
       href: get-started/whats-new-10-0-1.md
-    - name: Dynamics 365 for Retail -sovelluksen uudet ja muuttuneet ominaisuudet (huhtikuu 2019)
+    - name: Dynamics 365 for Retail -version uudet ja muuttuneet ominaisuudet (huhtikuu 2019)
       href: get-started/april-whats-new.md
     - name: Ennen Retail-ratkaisun ostamista
       href: get-started/before-you-buy.md
@@ -393,7 +393,7 @@
       items:
         - name: Kassapäätetoiminnot
           href: localizations/emea-fra-cash-registers.md
-        - name: Kassapäätteiden käyttöönotto-ohjeet
+        - name: Käyttöönotto-ohjeet kassapäätteille
           href: localizations/emea-fra-deployment.md
     - name: Intia
       items:
@@ -407,11 +407,15 @@
       items:
         - name: Näyte verotusta varten olevan tulostimen integroinnista Italiassa
           href: localizations/emea-ita-fpi-sample.md
+    - name: Meksiko
+      items:
+        - name: Meksikon globaalit CFDI-laskut
+          href: ../financials/localizations/latam-mex-global-cfdi-3-3.md
     - name: Norja
       items:
         - name: Kassapäätetoiminnot
           href: localizations/emea-nor-cash-registers.md
-        - name: Kassapäätteiden käyttöönotto-ohjeet
+        - name: Käyttöönotto-ohjeet kassapäätteille
           href: localizations/emea-nor-loc-deployment-guidelines.md
     - name: Ruotsi
       items:
@@ -602,7 +606,7 @@
           href: dev-itpro/extend-metadata.md
         - name: CRT-palveluun soittaminen offline-tilassa
           href: dev-itpro/call-crt-service-offline.md
-    - name: Commerce Runtime (CRT) -laajennettavuus
+    - name: Commerce Runtime (CRT) -ratkaisun laajennettavuus
       items:
         - name: 'CRT:n arkkitehtuuri ja määrittäminen'
           href: dev-itpro/commerce-runtime-overview.md

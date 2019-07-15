@@ -997,6 +997,8 @@
               href: deployment/deploy-retail-onprem.md
         - name: Mukautettujen mallien kehitys ja käyttöönotto paikallisissa ympäristöissä
           href: deployment/develop-deploy-custom-models-on-premises.md
+        - name: PowerBI.com-integrointi paikallisiin ympäristöihin
+          href: analytics/entity-store-on-prem.md
         - name: Käänteisten välityspalvelimien määrittäminen paikallisiin ympäristöihin
           href: deployment/onprem-reverseproxy.md
         - name: Päivitysten käyttöönotto paikallisessa ympäristössä
@@ -1013,6 +1015,8 @@
           href: user-interface/client-disconnected.md
         - name: Paikallisten ympäristöjen vianmääritys
           href: deployment/troubleshoot-on-prem.md
+        - name: Varmenteiden kierrättäminen
+          href: deployment/certificate-rotation-on-prem.md
     - name: Mukautetun koodin käyttöönotto
       items:
         - name: Käyttöönotettavien pakettien luominen malleista
