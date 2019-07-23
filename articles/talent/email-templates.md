@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: b88ba4386dbf3513d75990acca1c07fa6f0dc9b0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517915"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729723"
 ---
 # <a name="email-templates"></a>Sähköpostimallit
 [!include[banner](../includes/banner.md)]
 
-Järjestelmänvalvojat voivat luoda sähköpostimallikirjaston avulla kaikille yhteisen teeman ja brändin kaikille Microsoft Dynamics 365 for Talent: Attractin kautta lähetettäville sähköposteille. Järjestelmänvalvojat voivat myös valita sähköpostisisältöjen valikoiman muiden käyttäjien käyttöön. Työhönottoryhmä voi tehostaa sähköpostien lähettämistä omassa työnkulussaan näiden mallien avulla. Jotkin Attractin sähköpostiviestit on määritetty automaattisesti lähettäviksi, ja järjestelmänvalvoja voi mukauttaa näiden viestien sisältöä sähköpostimallikirjaston avulla.
+Järjestelmänvalvojat voivat luoda sähköpostimallikirjaston avulla kaikille yhteisen teeman ja brändin kaikille Microsoft Dynamics 365 for Talent: Attractin ja Offerin kautta lähetettäville sähköposteille. Järjestelmänvalvojat voivat myös valita sähköpostisisältöjen valikoiman muiden käyttäjien käyttöön. Työhönottoryhmä voi tehostaa sähköpostien lähettämistä omassa työnkulussaan näiden mallien avulla. Jotkin sähköpostiviestit on määritetty automaattisesti lähettäviksi, ja järjestelmänvalvoja voi mukauttaa näiden viestien sisältöä sähköpostimallikirjaston avulla.
 
 > [!NOTE]
 > Jos haluat käyttää sähköpostimalleja, organisaatiossa on oltava kattava työhönottolaajennus.
@@ -37,7 +37,7 @@ Järjestelmänvalvojat voivat luoda sähköpostimallikirjaston avulla kaikille y
 
 Jos järjestelmänvalvoja haluaa luoda yhtenäisen brändin kaikelle sähköpostiviestinnälle, hänen on ensin määritettävä yleinen ylä- ja alatunniste kaikille sähköpostimalleille. Järjestelmänvalvoja voi ladata hallintakeskuksen **Sähköpostimallin asetukset** -välilehden **Ylätunniste**-osassa kuvan, jota käytetään kaikkien sähköpostiviestin ylätunnisteena tai bannerina. Kuva voi olla yrityksen logo, lomakelogo tai muu soveltuva kuva. Kuvan suositeltu leveys on 25–800 kuvapistettä ja korkeus 25–150 kuvapistettä, koska nämä mitat soveltuvat parhaiten useimpiin sähköpostiohjelmiin, kuten Microsoft Microsoft Outlookiin. Kuvan on oltava JPEG-, JPG-, PNG- tai SVG-tiedosto ja tiedoston koon on oltava alle 1 Mt. Kun kuva ladattu, ylätunnisteesta muodostuva esikatselu näytetään. Jos ylätunnisteen kuva poistettava tai vaihdettava, järjestelmänvalvoja voi tehdä sen esikatselun yläpuolella olevalla **Poista**-asetuksella.
 
-Järjestelmänvalvoja voi lisätä **Alatunniste**-osaan linkit yrityksen viestinnässä käyttämään tietosuojakäytäntöön ja käyttöehtoihin. Nämä linkit sisältyvät automaattisesti muodostettavaan alatunnisteeseen. Alatunnisteen esikatselu avautuu.
+Järjestelmänvalvoja voi lisätä **Alatunniste**-osaan linkit yrityksen viestinnässä käyttämään tietosuojakäytäntöön ja käyttöehtoihin. Nämä linkit sisältyvät automaattisesti muodostettavaan alatunnisteeseen. Alatunnisteen esikatselu avautuu. Järjestelmänvalvoja voi myös valita tietyn kielen, jolla sähköpostin alatunnisteet lähetetään sähköpostien osana. Samaa kielimääritystä käytetään myös haastattelun yhteenvetotaulun luomiseen. 
 
 Muista tallentaa muutokset, ennen kuin suljet hallintakeskuksen.
 
@@ -46,7 +46,7 @@ Muista tallentaa muutokset, ennen kuin suljet hallintakeskuksen.
 
 ## <a name="email-template-library"></a>Sähköpostimallikirjasto 
 
-Kun yleiset mallinmääritykset on tehty, järjestelmänvalvoja voi aloittaa kaikkien Attractista lähetettävien sähköpostiviestien mallien luominen ja järjestäminen. Vain järjestelmänvalvojat voivat käyttää sähköpostimallikirjastoa. Voit avata kirjaston valitsemalla pääsiirtymisvalikossa **Sähköpostimallit**-välilehden. Kirjaston luokat perustuvat erilaisiin Attractin tehtäviin, joista lähetetään sähköpostiviestejä. Näitä tehtäviä ovat esimerkiksi aikatauluttaminen, arviointi ja työn luonti. Järjestelmänvalvoja voi valita minkä tahansa luokan ja tarkastella kaikkia tehtävään liitettyjä sähköpostityyppejä. Valitse esimerkiksi **Aikatauluttaminen**, jos haluat tarkastella erilaisia sähköpostityyppejä, joita lähetetään aikataulutusprosessin aikana, ja kaikkia kuhunkin sähköpostityyppiin liittyviä malleja. Luokan jokainen aliosa vastaa sähköpostityyppiä.
+Kun yleiset mallinmääritykset on tehty, järjestelmänvalvoja voi aloittaa kaikkien Attractista ja Offerista lähetettävien sähköpostiviestien mallien luominen ja järjestäminen. Vain järjestelmänvalvojat voivat käyttää sähköpostimallikirjastoa. Voit avata kirjaston valitsemalla pääsiirtymisvalikossa **Sähköpostimallit**-välilehden. Kirjaston luokat perustuvat erilaisiin Attractin tehtäviin, joista lähetetään sähköpostiviestejä. Näitä tehtäviä ovat esimerkiksi aikatauluttaminen, arviointi sekä työn luonti ja tarjoaminen. Järjestelmänvalvoja voi valita minkä tahansa luokan ja tarkastella kaikkia tehtävään liitettyjä sähköpostityyppejä. Valitse esimerkiksi **Aikatauluttaminen**, jos haluat tarkastella erilaisia sähköpostityyppejä, joita lähetetään aikataulutusprosessin aikana, ja kaikkia kuhunkin sähköpostityyppiin liittyviä malleja. Luokan jokainen aliosa vastaa sähköpostityyppiä.
 
 Joillakin sähköpostityypeillä voi olla useita vastaanottajia. Esimerkiksi **Aikataulutus**-luokan sähköpostiviestit, jotka lähetetään, kun tarvitaan haastatteluaikataulun yhteenveto, lähetetään sekä hakijoille että haastattelijoille. Jokaisessa osassa on kaksi pääsaraketta: **Mallin otsikko** ja **Vastaanottaja**. Kukin osan rivi vastaa sähköpostityypin yhtä mallia. Aluksi jokaisen mallin rivillä on lukkokuvake. Tämä kuvake ilmaisee, että malli on Attractin vakiomalli, jota ei voi poistaa. Järjestelmänvalvoja voi käyttää kunkin mallin ellipsipainiketta (**...**) ja kopioida mallin, määrittää sen oletukseksi tai poistaa sen. Kun malli on määritetty oletusmalliksi, vaihtoehtoja on kaksi. Mallin rivin merkintä tai merkinnät ilmaisevat, kumpi vaihtoehto on käytössä.
 

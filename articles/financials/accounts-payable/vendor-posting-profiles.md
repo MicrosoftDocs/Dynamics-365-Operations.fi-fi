@@ -3,7 +3,7 @@ title: Toimittajan kirjausprofiilit
 description: Toimittajan kirjausprofiilit ohjaavat toimittajatapahtumien kirjaamista kirjanpitoon.
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e81f8b472e7ac7578c184716dcb4e5f3d7aeb65d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c3f62df7ec5627556561db950d54ff4347d2b4d6
+ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512165"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625892"
 ---
 # <a name="vendor-posting-profiles"></a>Toimittajan kirjausprofiilit
 
@@ -34,22 +34,22 @@ Toimittajan kirjausprofiilit ohjaavat toimittajatapahtumien kirjaamista kirjanpi
 <a name="vendor-posting-profiles"></a>Toimittajan kirjausprofiilit
 -----------------------
 
-Voit määrittää toimittajan kirjausprofiilin avulla kirjanpitotilejä ja asiakirja-asetuksia kaikille toimittajille, toimittajaryhmälle tai yhdelle toimittajalle. Näitä asetuksia käytetään, kun luot ostotilauksia, toimittajan laskuja ja käteismaksuja. Voit valita joissakin tapahtumissa eri kirjausprofiilin, joka ohittaa tällä sivulla tapahtumille määritetyn kirjausprofiilin. Oletuskirjausprofiili määritetään Ostoreskontran parametrit -sivun Kirjanpito ja arvonlisävero -pikavälilehdessä. Oletuskirjausprofiili sisällytetään sitten automaattisesti uusien asiakirjojen otsikkoon, jossa voit vaihtaa tarvittaessa toisen kirjausprofiilin.
+Voit määrittää toimittajan kirjausprofiilin avulla kirjanpitotilejä ja asiakirja-asetuksia kaikille toimittajille, toimittajaryhmälle tai yhdelle toimittajalle. Näitä asetuksia käytetään, kun luot ostotilauksia, toimittajan laskuja ja käteismaksuja. Voit valita joissakin tapahtumissa eri kirjausprofiilin, joka ohittaa tällä sivulla tapahtumille määritetyn kirjausprofiilin. Oletuskirjausprofiili määritetään **Ostoreskontran parametrit** -sivun **Kirjanpito ja arvonlisävero** -pikavälilehdessä. Oletuskirjausprofiili sisällytetään sitten automaattisesti uusien asiakirjojen otsikkoon, jossa voit vaihtaa tarvittaessa toisen kirjausprofiilin.
 
-Voit liittää tapahtuman kirjaustyyppejä sisältäviä kirjausprofiileja myös Tapahtuman kirjausmääritykset -sivulla. Kirjausmäärityksillä määritetään toimittajatapahtumien kirjaus kirjanpitoon kirjausprofiilien sijasta.
+Voit liittää tapahtuman kirjaustyyppejä sisältäviä kirjausprofiileja myös **Tapahtuman kirjausmääritykset** -sivulla. Kirjausmäärityksillä määritetään toimittajatapahtumien kirjaus kirjanpitoon kirjausprofiilien sijasta.
 
 ## <a name="creating-a-posting-profile"></a>Kirjausprofiilin luonti
 ### <a name="setup"></a>**Asetukset**
 
-Määritä valittua kirjausprofiilia käyttävät tapahtumien kirjaukset, joita käytetään kirjanpitotileillä. Valitse valitulle kirjausprofiilille tilikoodi ja mahdollinen tili- tai ryhmänumero. Kirjauksen aikana jokaiselle tapahtumalle sopivin kirjausprofiilin etsitään hakemalla sopivin tilikoodi-, tilinumero- tai ryhmä- ja numeroyhdistelmää seuraavassa järjestyksessä:
+Määritä valittua kirjausprofiilia käyttävät tapahtumien kirjaukset, joita käytetään kirjanpitotileillä. Valitse valitulle kirjausprofiilille tilikoodi ja mahdollinen tili- tai ryhmänumero. Kirjauksen aikana jokaiselle tapahtumalle sopivin kirjausprofiilin etsitään hakemalla sopivin tilikoodi-, tilinumero- tai ryhmä- ja numeroyhdistelmää seuraavassa järjestyksessä.
 
 | **Tilikoodi**-kentän arvo | **Tilin/ryhmän numero** -kentän arvo        | Haun prioriteetti |
 |------------------------------|---------------------------------------------|-----------------|
 | **Taulu**                    | Tietty toimittajatili                     | 1               |
-| **Ryhmä**                    | toimittajaryhmä, johon toimittaja on määritetty | 2               |
+| **Ryhmä**                    | Toimittajaryhmä, johon toimittaja on määritetty | 2               |
 | **Kaikki**                      | Tyhjä                                       | 3               |
 
-Jos haluat määrittää kaikille toimittajatapahtumille saman kirjausprofiilin, määritä vain yksi kirjausprofiili Tilikoodi-kentässä arvolla Kaikki. Määritä kirjausprofiili määrittämällä seuraavat arvot:
+Jos haluat määrittää kaikille toimittajatapahtumille saman kirjausprofiilin, määritä vain yksi kirjausprofiili **Tilikoodi**-kentässä arvolla **Kaikki**. Määritä kirjausprofiili määrittämällä seuraavat arvot.
 
 <table>
 <thead>
@@ -71,32 +71,20 @@ Jos haluat määrittää kaikille toimittajatapahtumille saman kirjausprofiilin,
 <td><strong>Tilikoodi</strong></td>
 <td>Määritä, käytetäänkö kirjausprofiilia tietyn toimittajan, toimittajaryhmän vai kaikkien toimittajien kohdalla:
 <ul>
-<li><strong>Taulu</strong> – Kirjausprofiili koskee yksittäistä toimittajaa. Valitse toimittajatili Tilin/ryhmän numero -kentässä.</li>
-<li><strong>Ryhmä</strong> – Kirjausprofiili koskee toimittajaryhmää. Valitse toimittajaryhmä Tilin/ryhmän numero -kentässä.</li>
-<li><strong>Kaikki</strong> – Kirjausprofiili koskee kaikkia toimittajia. Jätä Tilin/ryhmän numero -kenttä tyhjäksi.</li>
+<li><strong>Taulu</strong> – Kirjausprofiili koskee yksittäistä toimittajaa. Valitse toimittajatili <strong>Tilin/ryhmän numero</strong> -kentässä.</li>
+<li><strong>Ryhmä</strong> – Kirjausprofiili koskee toimittajaryhmää. Valitse toimittajaryhmä <strong>Tilin/ryhmän numero</strong> -kentässä.</li>
+<li><strong>Kaikki</strong> – Kirjausprofiili koskee kaikkia toimittajia. Jätä <strong>Tilin/ryhmän numero</strong> -kenttä tyhjäksi.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><strong>Tilin/ryhmän numero</strong></td>
-<td>Jos Taulu on valittu Tilikoodi-kentässä, valitse kirjausprofiiliin liitetyn toimittajan tilinumero. Jos Ryhmä valitaan, valitse toimittajaryhmä. Jos Kaikki on valittu, jätä tämä kenttä tyhjäksi.</td>
+<td>Jos <strong>Taulu</strong> on valittu <strong>Tilikoodi</strong>-kentässä, valitse kirjausprofiiliin liitetyn toimittajan tilinumero. Jos <strong>Ryhmä</strong> valitaan, valitse toimittajaryhmä. Jos <strong>Kaikki</strong> on valittu, jätä tämä kenttä tyhjäksi.</td>
 </tr>
 <tr class="odd">
 <td><strong>Reskontratili</strong></td>
-<td>Valitse kirjanpitotili, jota käytetään yhteenvetotilinä kirjausprofiiliin liitetyillä toimittajilla.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Seteli" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Huomautus</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Jos Kirjanpitoparametrit-sivulla valitaan Käytä kirjausmäärityksiä -asetus, yhteenvetotilin sijaista käytetään toimittajan laskutapahtuman kirjausmääritystä.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
+<td>Valitse kirjanpitotili, jota käytetään yhteenvetotilinä kirjausprofiiliin liitetyillä toimittajilla. Tämän päätilin <strong>Älä salli manuaalista määritystä</strong> -parametri merkitään. Jos poistat tämän tilin myöhemmin kirjausprofiilista, tarkista <strong>Älä salli manuaalista määritystä</strong> -asetus <strong>Päätilit</strong>-sivulla. 
+<p><strong>Huomautus:</strong>Jos <strong>Kirjanpitoparametrit</strong>-sivulla valitaan <strong>Käytä kirjausmäärityksiä</strong> -asetus, yhteenvetotilin sijaista käytetään toimittajan laskutapahtuman kirjausmääritystä.</p>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Selvitystili</strong></td>
@@ -105,24 +93,12 @@ Jos haluat määrittää kaikille toimittajatapahtumille saman kirjausprofiilin,
 <tr class="odd">
 <td><strong>Arvonlisäveron ennakkomaksut</strong></td>
 <td>Valitse arvonlisäveron tili etuajassa saatuja maksuja varten.
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Seteli" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Huomautus</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Kirjausprofiili, jota käytetään, kun maksu merkitään ennakkomaksuksi, valitaan Ostoreskontran parametrit -sivun Kirjanpito ja arvonlisävero -alueen Ennakkomaksukirjauskansion kirjausprofiili -kentässä.</td>
-</tr>
-</tbody>
-</table>
-</div></td>
+<p><strong>Huomautus:</strong> <strong>Kirjaus</strong>-profiili, jota käytetään, kun maksu merkitään ennakkomaksuksi, valitaan <strong>Ostoreskontran parametrit</strong> -sivun <strong>Kirjanpito ja arvonlisävero</strong> -alueen <strong>Ennakkomaksukirjauskansion kirjausprofiili</strong> -kentässä.</p>
+</td>
 </tr>
 <tr class="even">
 <td><strong>Saapuminen</strong></td>
-<td>Valitse se kirjanpitotili, jolle hyväksymistä odottavien toimittajan laskujen tiedot kirjataan. Tiedot tallennetaan laskurekisterikirjauskansioon. Oletetaan esimerkiksi, että käyttäjä tallentaa toimittajan laskujen perustiedot laskurekisteriin, kun laskut vastaanotetaan. Kun laskurekisteri kirjataan, tapahtumat kirjataan tässä ja Vastatili-kentässä annetulle tilille. Kun laskut hyväksytään, velka siirretään saapumistililtä toimittajan reskontratilille.</td>
+<td>Valitse se kirjanpitotili, jolle hyväksymistä odottavien toimittajan laskujen tiedot kirjataan. Tiedot tallennetaan laskurekisterikirjauskansioon. Oletetaan esimerkiksi, että käyttäjä tallentaa toimittajan laskujen perustiedot laskurekisteriin, kun laskut vastaanotetaan. Kun laskurekisteri kirjataan, tapahtumat kirjataan tässä ja <strong>Vastatili</strong>-kentässä annetulle tilille. Kun laskut hyväksytään, velka siirretään saapumistililtä toimittajan reskontratilille.</td>
 </tr>
 <tr class="odd">
 <td><strong>Vastatili</strong></td>
@@ -136,15 +112,10 @@ Jos haluat määrittää kaikille toimittajatapahtumille saman kirjausprofiilin,
 
 Määritä tapahtumille, joilla on valittu kirjausprofiili, tilitetäänkö tapahtumat automaattisesti, lasketaanko korko ja annetaanko maksukehotukset. Voit myös valita tili, jota käytetään, kun valittuun kirjausprofiiliin liittyvät tapahtumat suljetaan.
 
-Määritä kirjausprofiili määrittämällä seuraavat arvot:
+Määritä kirjausprofiili määrittämällä seuraavat arvot
 
 | Kenttä          | Kuvaus                                                                                                                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Tilitys** | Ota tämän kirjausprofiilin sisältävien tapahtumien automaattinen tilitys käyttöön valitsemalla tämä asetus. Jos tämä asetus poistetaan käytöstä, tapahtumat on tilitettävä manuaalisesti Tilitä avoimet tapahtumat -sivulla. |
+| **Tilitys** | Ota tämän kirjausprofiilin sisältävien tapahtumien automaattinen tilitys käyttöön valitsemalla tämä asetus. Jos tämä asetus poistetaan käytöstä, tapahtumat on tilitettävä manuaalisesti **Tilitä avoimet tapahtumat** -sivulla. |
 | **Peruuta**     | Valitse tämä asetus, jos haluat mahdollisuuden tämän kirjausprofiilin sisältävien tapahtumien peruuttamiseen.                                                                                                               |
 | **Sulje**      | Valitse toinen kirjausprofiili, jota siirrytään käyttämään, kun tämän kirjausprofiilin tapahtumia suljetaan. Tapahtuma katsotaan suljetuksi, kun se on selvitetty kokonaan.                                       |
-
-
-
-
-

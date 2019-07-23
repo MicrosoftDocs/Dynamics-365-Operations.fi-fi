@@ -3,7 +3,7 @@ title: Työvaiheiden ajoitus
 description: Tämä aihe sisältää yleisiä tietoja työvaiheiden ajoittamisesta. Työvaiheiden ajoitusta voidaan käyttää, kun tuotantoprosessin kestosta halutaan yleisarvio.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 298c07346427a949ffa544e66eb6b01995dadc38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9447474e0878077659a80dc49f7c7c1313db2cbe
+ms.sourcegitcommit: 8741b4b32ef32a54de3d064bf40a9c0179d4139a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560253"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "1691459"
 ---
 # <a name="operations-scheduling"></a>Työvaiheiden ajoitus
 
@@ -67,6 +67,9 @@ Työvaiheiden aikataulu vaikuttaa myös pääsuunnitteluun ja määrittää mate
 -   **käsittelemättömät tuotannot**: tuotteet, jotka on suunniteltu, julkaistu tai käynnistetty
 -   **materiaalin saatavuus**: varasto, osatuotannot, alihankkijat ja toimittajat
 -   **Kapasiteetin saatavuus**: resurssit, jotka tarvitaan tuotantoon
+
+> [!NOTE]
+> Jos käytät monisäikeistä pääsuunnittelua ja toimintojen ajoittamisesta, lopullista kapasiteettia ei oteta huomioon. 
 
 ## <a name="cancellations"></a>Peruutukset
 Kun suoritat työvaiheen ajoituksen, voit peruuttaa tiettyjä reitityksen osia. Näitä osia ovat esimerkiksi jonotusaika, asetusaika, prosessiaika, päällekkäisaika ja kuljetusajat.

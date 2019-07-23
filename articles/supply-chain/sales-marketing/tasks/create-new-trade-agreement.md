@@ -3,7 +3,7 @@ title: Luo uusi kauppasopimus
 description: Tämä menetelmä selittää, miten luodaan kauppasopimus, johon rekisteröidään tuotteen tietyn asiakkaan kanssa sovittu uusi hinta.
 author: omulvad
 manager: AnnBe
-ms.date: 11/16/2018
+ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e132cd20437b7929e81fcaa123d70bb57fb320c8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e42383b237a60d41d3b4e09ffbbe1c1bb5ebbfd7
+ms.sourcegitcommit: 33e98f89294086334fe9c0a350abb6a52ef9dacb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549264"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "1711198"
 ---
 # <a name="create-a-new-trade-agreement"></a>Luo uusi kauppasopimus
 
@@ -30,40 +30,43 @@ Tämä menetelmä selittää, miten luodaan kauppasopimus, johon rekisteröidä�
 
 
 ## <a name="create-and-post-a-new-trade-agreement-journal"></a>Luo ja kirjaa uusi kauppasopimuksen kirjauskansi
-1. Valitse Myynti ja markkinointi > Hinnat ja alennukset > Kauppasopimuksen kirjauskansiot.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.
+1. Valitse **Siirtymisruutu > Moduulit >Myynti ja markkinointi > Hinnat ja alennukset > Kauppasopimuksen kirjauskansiot**.
+2. Valitse **Uusi**.
+3. Avaa haku valitsemalla **Nimi**-kentässä avattavan valikon painike.
 4. Etsi haluamasi tietue luettelosta ja valitse se.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Valitse Rivit.
-7. Valitse Tilikoodi-kentässä Taulu.
-    * Tässä esimerkissä päivitetään tietyn asiakkaan hinta, joten sinun on valittava Taulu. Jos päivittäisit tuotteen luettelohinnan, valitsisit Kaikki, jotta uusi hinta koskisi kaikkia asiakkaita. Jos eri asiakassegmenteillä olisi eri hinta, valitsisit Ryhmä. Ryhmä-vaihtoehdon käyttö edellyttää asiakkaan hintaryhmien määrittämistä.  
-8. Avaa haku napsauttamalla Tilin valinta -kentässä avattavan valikon painiketta.
-9. Etsi haluamasi tietue luettelosta ja valitse se.
-10. Valitse Nimikekoodi-kentässä Taulu.
-    * Kun annat kauppasopimuksen tyypiksi Hinta (myynti), Nimikekoodi-kentässä valitaan vain Taulu. Tämä johtuu siitä, että hinta on absoluuttinen arvo eikä kaikilla tuotteilla tai tuoteryhmillä voi olla sama hinta.  
-11. Avaa haku napsauttamalla Nimikesuhde-kentässä avattavan valikon painiketta.
-12. Valitse luettelossa sopimukseen sisällytettävä tuote.
-    * Kirjaa muistiin valitsemasi tuotteet.  
-13. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-14. Anna Mistä-kenttään vähimmäismäärä.
-    * Jos asiakkaalla on tietty määrä, joka on tilattava ennen uuden hinnan käyttöönottoa, määrä on ilmoitettava tässä.  
-    * Määritä Mihin-kenttään arvo, jota suurempana sopimuksen hinta ei kelpaa. Jos hinnat ja alennukset perustuvat useisiin hintarajoihin, määritä kunkin hintahaarukan vähimmäis- ja enimmäismäärä Mistä- ja Mihin-kenttiin.  
-15. Anna Summa valuuttana -kenttään hinta.
-16. Anna Päivämäärästä-kenttää päivämäärä, jolloin sopimus astuu voimaan.
-17. Valitse Tallenna.
-18. Valitse Vahvista.
-19. Valitse Tarkista valitut rivit.
-20. Valitse OK.
-21. Valitse Kirjaa.
-22. Valitse OK.
+5. Valitse **toimintoruudussa** **Rivit**.
+6. Valitse **Tilikoodi**-kentässä Taulu.
+    
+    Tässä esimerkissä päivitetään tietyn asiakkaan hinta, joten sinun on valittava Taulu. Jos päivittäisit tuotteen luettelohinnan, valitsisit Kaikki, jotta uusi hinta koskisi kaikkia asiakkaita. Jos eri asiakassegmenteillä olisi eri hinta, valitsisit Ryhmä. Ryhmä-vaihtoehdon käyttö edellyttää asiakkaan hintaryhmien määrittämistä.  
+
+7. Avaa haku napsauttamalla **Tilin valinta** -kentässä avattavan valikon painiketta.
+8. Etsi haluamasi tietue luettelosta ja valitse se.
+9. Valitse **Nimikekoodi**-kentässä Taulu.
+    
+    Kun annat kauppasopimuksen tyypiksi Hinta (myynti), **Nimikekoodi**-kentässä valitaan vain Taulu. Tämä johtuu siitä, että hinta on absoluuttinen arvo eikä kaikilla tuotteilla tai tuoteryhmillä voi olla sama hinta.
+    
+10. Avaa haku napsauttamalla **Nimikkeen suhde**-kentässä avattavan valikon painiketta.
+11. Valitse luettelossa sopimukseen sisällytettävä tuote. Kirjaa muistiin valitsemasi tuotteet.  
+12. Anna **Mistä**-kenttään vähimmäismäärä.
+    - Jos asiakkaalla on tietty määrä, joka on tilattava ennen uuden hinnan käyttöönottoa, määrä on ilmoitettava tässä.  
+    - Määritä **Mihin**-kenttään arvo, jota suurempana sopimuksen hinta ei kelpaa. Jos hinnat ja alennukset perustuvat useisiin hintarajoihin, määritä kunkin hintahaarukan vähimmäis- ja enimmäismäärä **Mistä**- ja **Mihin**-kenttiin.
+13. Anna **Summa valuuttana** -kenttään hinta.
+14. Anna **Tiedot**-osan **Päivämäärästä**-kenttään päivämäärä, jolloin sopimus astuu voimaan.
+15. Valitse **Tallenna**.
+16. Valitse **Vahvista**.
+17. Valitse **Tarkista valitut rivit**.
+18. Valitse **OK**.
+19. Valitse **Kirjaa**.
+20. Valitse **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Näytä tuotteen kauppasopimukset
-1. Mene Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet.
+1. Valitse **Siirtymisruutu > Moduulit > Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet**.
 2. Etsi ja valitse luettelosta tuote, jonka hinnan päivitit.
-3. Valitse toimintoruudussa Myynti.
-4. Valitse Näytä kauppasopimukset.
-    * Tarkastele juuri luodun hinnan kauppasopimuksen tietoja.    
+3. Valitse **toimintoruudussa** **Myynti**.
+4. Valitse **Näytä kauppasopimukset**.
+    
+    Tarkastele juuri luodun hinnan kauppasopimuksen tietoja.    
+
 5. Sulje sivu.
 
 ## <a name="additional-resources"></a>Lisäresurssit

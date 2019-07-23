@@ -3,7 +3,7 @@ title: Palkanlaskennan Talent and Dayforce -integroinnin määrittäminen
 description: Tässä ohjeaiheessa kerrotaan, että kuinka konfiguroida integrointeja Microsoft Dynamics 365 for Talentin ja Ceridian Dayforcen välillä voidaksesi käsitellä palkka-ajoa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9a88bf61dbb12520b555ceb7363b1c646d95386e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517856"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702815"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen
 
@@ -54,6 +54,16 @@ Lisätietoja Azure-tallennustilien ja Azure-tallennusyhteyden yhteysmerkkijonois
 
 - [Lisätietoja Azure-tallennustileistä](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Määritä Azure-tallennustilan yhteysmerkkijonot](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+
+### <a name="technical-details-when-payroll-integration-is-enabled"></a>Tekniset tiedot, kun palkanlaskennan integrointi on otettu käyttöön
+
+Palkanlaskennan integroinnin käytöstäpoistamisella on kaksi pääasiallista vaikutusta:
+
+- Palkanlaskennan integroinnin vienti -niminen tietojen vientiprojekti luodaan. Tämä projekti sisältää palkanhallinnan integrointiin tarvittavat yksiköt ja kentät. Voit tutustua projektiin valitsemalla ensin **Järjestelmän hallinta**, sitten **Tietojen hallinta** -ruudun ja avaamalla lopuksi tietoprojektin projektiluettelosta.
+- Tämä erätyö suorittaa tietojen vientiprojektin, salaa tuloksena olevan tietopaketin ja siirtää tietopakettitiedoston SFTP-päätepisteeseen, joka on määritetty **Integroinnin määritys** -näytössä.
+
+> [!NOTE]
+> SFTP-päätepisteeseen siirretty tietopaketti salataan paketin yksilöllisellä avaimella. Avain on Azure Key Vaultissa, jota vain Ceridian voi käyttää. Tietopaketin sisällön salausta ei voi purkaa eikä sisältöä tutkia. Jos tietopaketin sisältöä on tarkasteltava, Palkanlaskennan integroinnin vienti -tietoprojekti on vietävä manuaalisesti, jonka jälkeen on ladattava ja avattava. Manuaalisessa viennissä ei käytetä salausta eikä pakettia siirretä.
 
 ## <a name="configure-your-data"></a>Määritä tietosi 
 

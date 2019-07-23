@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517939"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729700"
 ---
 # <a name="career-site-functionality-in-attract"></a>Attractin urasivuston toiminnot
 
@@ -48,11 +48,14 @@ Voit määrittää seuraavat kohdat kirjautumalla järjestelmänvalvojana Attrac
  
 Voit määrittää seuraavat kohdat kirjautumalla järjestelmänvalvojana Attractiin ja valitsemalla ensin **Asetukset**-valikossa **Hallintakeskus** ja sitten **Urasivuston hallinta** -välilehden.
 
--   **Hakukoneoptimointi** – Kun otettu käyttöön, kaikkia Attractin urasivustossa julkaistuja julkisia työpaikkoja voi hakea hakukoneilla, kuten Bingillä ja Googlella.
+-   **Hakukoneoptimointi** – Kun otettu käyttöön, kaikkia Attractin urasivustossa julkaistuja julkisia työpaikkoja voi hakea hakukoneilla, kuten Bingillä ja Googlella. 
 
     > [!NOTE] 
     > Tämän asetuksen käyttöönottamisessa ja hakutulosten näkymisessä voi olla viive, joka määräytyy käytetyn hakukoneen mukaan.
-         
+    
+-   **Ehdot** – Jos otettu käyttöön, kaikkien hakijoiden on hyväksyttävä organisaation ehdot työpaikkaa hakiessaan. Attractin järjestelmänvalvoja voi määrittää oman hyväksymistekstin ja linkin Ehdot-sivulle. 
+
+        
 ## <a name="career-site-urls"></a>Urasivuston URL-osoitteet
 
 Seuraavassa luettelossa on yleisesti käytettyjen urasivustojen URL-osoitteita ja ohjeita niiden käyttämiseen.

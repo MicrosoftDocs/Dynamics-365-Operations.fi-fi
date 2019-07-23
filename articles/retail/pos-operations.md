@@ -3,7 +3,7 @@ title: Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 description: Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 for Retailin myyntipisteen toiminnoista. Ohjeaihe määrittää, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä offline-tilassa.
 author: jblucher
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505093"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625662"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -159,10 +159,10 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 114 | Palautustapahtuma | Jatka edellistä tapahtumaa sen vastaanottonumeron avulla ja palauta jotkin sen tuotteista. | Kyllä | Kyllä | Kyllä | Kyllä§ | En |
 | 1 211 | Toimitus kassakaappiin | Suorita toimitus kassakaappiin, jossa rahat siirretään kassakoneesta kassakaappiin. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 516 | Myyntilasku | Tämän toiminnon avulla asiakas voi maksaa valitun myyntilaskun. | Kyllä | Kyllä | En | En | En |
-| 502 | Myyjä | Tämän toiminnon avulla käyttäjä voi määrittää **myynnin vastaanottajan** arvon myyntipisteen asiakastilausten myyntitilauksissa. | Kyllä | Kyllä | En | Kyllä\* | En |
-| 2 000 | Aikataulujen hallinta | Tämän toiminnon avulla käyttäjät voivat luoda, muokata ja tarkastella työntekijän aikatauluja. | Kyllä | Kyllä | Kyllä | En | En |
-| 2 001 | Aikataulupyynnöt | Tämän toiminnon avulla käyttäjä voi pyytää vapaata töistä, vaihtaa vuoroja tai tarjota vuoroa muille työntekijöille. | Kyllä | Kyllä | Kyllä | En | En |
-| 622 | Hae | Tämän toiminnon avulla käyttäjät voivat määrittää ennalta myyntipisteen painikkeita ja suorittaa hakuja nimikkeen, asiakkaan tai luokan mukaan. | Kyllä | Kyllä | Kyllä | Kyllä | En |
+| 502 | Myyjä | Tämän toiminnon avulla käyttäjä voi määrittää **myynnin vastaanottajan** arvon myyntipisteen asiakastilausten myyntitilauksissa. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
+| 2000 | Aikataulujen hallinta | Tätä toimintoa ei tueta vielä. | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| 2001 | Aikataulupyynnöt | Tätä toimintoa ei tueta vielä. | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| 622 | Etsi tilauksia | Tämän toiminnon avulla käyttäjät voivat määrittää ennalta myyntipisteen painikkeita ja suorittaa hakuja nimikkeen, asiakkaan tai luokan mukaan. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 1 213 | Hae toimitusosoitetta | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | En |
 | 709 | Valitse laiteasema | Tämän toiminnon avulla käyttäjä voi valita laiteaseman käytettävissä olevien laiteasemien luettelosta. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 637 | Määritä tapahtuman oletusmyyntiedustaja | Tämän toiminnon avulla käyttäjä voi valita jonkin provisiomyyntiryhmän (myyjät) myöhemmin lisättävien rivien oletusmyyjäksi. | Kyllä | Kyllä | En | Kyllä | En |

@@ -3,7 +3,7 @@ title: Sähköisen raportoinnin muodon suorittamisen seuraaminen suorituskykyyn 
 description: Tässä ohjeaiheessa on tietoja suorituskykyongelmien vianmäärityksestä sähköisen raportoinnin (ER) suorituskyvyn jäljitystoiminnon avulla.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/08/2019
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: aa71db2752889bc905c22bab1cf2fa46d7ee07c7
-ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
+ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
+ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576543"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "1703872"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
 
@@ -346,3 +346,29 @@ Jos käytät jotakin näistä Finance and Operations -versioista, voit analysoid
 Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aiheen aikaisemmissa jaksoissa esitetyt vaiheet.
 
 Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi. Tämä tiedosto sisältää suorituskyvyn jäljityksen PerfView-muodossa. Tämän jälkeen voit analysoida ER Format Execution -toiminnon tietoja Perxview-suorituskyvyn analysointityökalun avulla.
+
+![Suoritetun ER-muodon jäljitystiedot PerfView-muodossa](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+
+## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Tietokantakyselyjä sisältävän suorituksen jäljityksen tarkastelemisen arviointi ulkoisilla työkaluilla
+
+ER-kehykseen tehtyjen parannusten ansiosta PerfView-muodossa luotu suorituskyvyn jäljitys sisältää nyt enemmän tietoja ER-muodon suorittamisesta. Microsoft Dynamics 365 for Finance and Operations -versiossa 10.0.4 (heinäkuu 2019) tämä jäljitys voi sisältää myös tietoja suoritetuista sovellustietokannan SQL-kyselyistä.
+
+### <a name="configure-user-parameters"></a>Konfiguroi käyttäjäparametrit
+
+1. Valitse Finance and Operationsissa **Organisaation hallinto** \> **Sähköinen raportointi** \> **Määritykset**.
+2. Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.
+3. Määritä seuraavat parametrit **Käyttäjäparametrit**-valintaikkunan **Suorituksen jäljitys** -osassa:
+
+    - Valitse **Suorituksen jäljitysmuoto** -kentässä **PerfView XML**.
+    - Määritä **Kerää kyselytilastot** -asetukseksi **Kyllä**.
+    - Määritä **Jäljitä kysely** -asetukseksi **Kyllä**.
+
+    ![Käyttäjäparametrit-valintaikkuna Finance and Operationsissa](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+
+### <a name="run-the-er-format"></a>Suorita ER-muoto
+
+Luo uusi suoritusjälki [Suorita ER-muoto](#run-format) toistamalla tämän aiheen aikaisemmissa jaksoissa esitetyt vaiheet.
+
+Huomaa, että Internet-selain tarjoaa zip-tiedoston ladattavaksi. Tämä tiedosto sisältää suorituskyvyn jäljityksen PerfView-muodossa. Tämän jälkeen voit analysoida ER Format Execution -toiminnon tietoja Perxview-suorituskyvyn analysointityökalun avulla. Tämä jäljitys sisältää nyt tiedot SQL-tietokannan käytöstä ER-muodon suorittamisen aikana.
+
+![Suoritetun ER-muodon jäljitystiedot PerfView-muodossa](./media/GER-PerfTrace2-PerfViewTrace2.PNG)

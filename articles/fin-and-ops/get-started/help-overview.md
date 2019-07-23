@@ -3,7 +3,7 @@ title: Finance and Operations -ohjejärjestelmä
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 for Finance and Operationsin ohjejärjestelmän komponenttien yleiskatsauksen.
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: da5b67bd67ff1a227a5f1812d41cdad9f062dfd0
+ms.sourcegitcommit: ad4d378afd88028d2002633a3cc8a67313cbeddd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595636"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625326"
 ---
 # <a name="finance-and-operations-help-system"></a>Finance and Operations -ohjejärjestelmä
 
@@ -95,16 +95,18 @@ Ohjeaiheeseen liittyvän palautteen tai kysymyksen voi jättää sivun alaosaan.
 
     ![Julkaise kommentti](./media/feedback.png)
 
-##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Sisällön muutoksen tai lisäyksen ehdottaminen GitHubin kautta
+### <a name="contribute-to-the-documentation"></a>Dokumentaatioon osallistuminen
 
-Voit ehdottaa muutosta, jos sinulla on GitHub-tili ja jos allekirjoitat osallistujan käyttöoikeussopimuksen. Tarkistamme ehdottamasi muutokset pull-pyynnön lähettämisen jälkeen. Tarvittaessa käsittelemme ehdotuksiasi sisäisesti ja otamme sinuun yhteyttä.
+Voit osallistua Finance and Operationsin dokumentaation tekemiseen ja muokkaukseen. Voit aloitta napsauttamalla ohjeaiheessa **Muokkaa** (kynä) -painiketta tai siirtymällä tietosäilöömme osoitteessa <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>. Seuraavassa videossa osoitetaan, miten voit osallistua dokumentaation tekemiseen.
 
-Voit aloitta napsauttamalla ohjeaiheessa **Muokkaa** (kynä) -painiketta tai siirtymällä tietosäilöömme osoitteessa <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE36liB]
 
-Lisätietoja on osallistujan oppaassa: <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
+[Microsoft Dynamics 365 -dokumentaatioon osallistuminen](https://youtu.be/m5djioozRbg) -video (näytetty edellä) sisältyy [Dynamics 365:n uusien ominaisuuksien toistoluetteloon](https://www.youtube.com/playlist?list=PLcakwueIHoT-ErQZPP80qNKuEAr0wAAD9), joka on YouTubessa.
+
+Lisätietoja on osallistujan oppaassa osoitteessa <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
 
 > [!NOTE]
-> Tällä hetkellä otamme mukaan osallistujia vain englanninkieliseen sisältöjoukkoon.
+> Tällä hetkellä hyväksymme sisältöä vain englanninkieliseen sisältöön.
 
 ## <a name="task-guides"></a>Tehtäväoppaat
 

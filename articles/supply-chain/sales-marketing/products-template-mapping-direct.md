@@ -3,7 +3,7 @@ title: Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteis
 description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Salesiin.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff284585a2eb4c5cf55d2e3a3e0f317d1fb218bb
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572601"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624332"
 ---
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
 
@@ -43,7 +43,7 @@ Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Fina
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 
-Näet käytettävissä olevat mallit avaamalla [PowerApps-hallintakeskuksen](https://preview.admin.powerapps.com/dataintegration). Valitse **Projektit** ja valitse sitten julkisia malleja oikeassa yläkulmassa olevan **Uusi projekti** -kohdan avulla.
+Näet käytettävissä olevat mallit avaamalla [PowerApps-hallintakeskuksen](https://admin.powerapps.com/dataintegration). Valitse **Projektit** ja valitse sitten julkisia malleja oikeassa yläkulmassa olevan **Uusi projekti** -kohdan avulla.
 
 Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoimaan tuotteet Finance and Operationsista Salesiin.
 

@@ -3,7 +3,7 @@ title: Hakijoiden resursointi kykypoolien avulla
 description: Tässä ohjeaiheessa käsitellään Attractin kykypoolien luomista ja määrittämistä.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
+ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517861"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "1711291"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Hakijoiden resursointi kykypoolien avulla
 
@@ -110,15 +110,16 @@ Kaikilla käyttäjillä on sama hakijaprofiilien näkymä. **Profiili**-välileh
 
 - Voit tarkastella hakijan yhteystietoja. Voit myös muokata tai päivittää tietoja tarpeen mukaan **Muokkaa**-painikkeella.
 
-- Voit lisätä osaamisaluetunnisteita, jotka auttavat tunnistamaan hakijan osaamisalueet.
-
 - Voit tarkastella hakijan koko hakemushistoriaa. Näet kaikki työpaikat, joita hakija on organisaatiossa hakenut sekä kyseisten hakemusten tilan. Jos kuulut työpaikan työhönottoryhmään, voit tarkastella hakemuksen tietoja tarkemmin valitsemalla **Näytä**.
 
-- **Asiakirjat**-välilehdessä näkyy kaikki asiakirjat, jotka hakija on lisännyt profiilistaan tai työnhakuprosessien aikana. Tässä välilehdessä voi hallita esimerkiksi hakijan ansioluetteloita, saatekirjeitä ja portfoliotöitä. Tässä välilehdessä voi myös lisätä asiakirjoja.
+- **Asiakirjat**-välilehdessä näkyy kaikki asiakirjat, jotka hakija on lisännyt profiilistaan tai työnhakuprosessien aikana. Voit hallita tässä välilehdessä esimerkiksi hakijan ansioluetteloita, saatekirjeitä ja portfoliotöitä. Tässä välilehdessä voi myös lisätä asiakirjoja.
 
     Valitse tarkastelevan asiakirjan nimi asiakirjaluettelossa. Voit tarkastella Microsoft Word -asiakirjoja sovelluksessa Microsoft Office 365:n avulla. Voit myös ladata asiakirjat paikalliseen tietokoneeseen käyttämällä kussakin asiakirjassa olevaa **Lataa**-asetusta.
 
 - Hakijan LinkedIn-tiedot ovat **LinkedIn**-välilehdessä. Jos haluat käyttää tätä välilehteä, sinun on muodostettava käyttäjän asetuksissa yhteys LinkedIn-tiliin. Lisäksi ympäristössä on oltava LinkedIn Recruiter-yhteys. Lisätietoja on kohdassa [LinkedIn Recruiterin käyttö hankinnassa](./attract-linked-in-recruiter.md).
+
+> [!NOTE]
+> Vain ehdokkaat voivat päivittää osaamisalueensa, koulutushistoriansa ja työkokemuksensa.
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Hakijoiden lisääminen kykypoolista työpaikkaan
 

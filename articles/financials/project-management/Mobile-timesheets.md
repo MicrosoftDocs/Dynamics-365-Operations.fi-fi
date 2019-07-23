@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
-ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7eff0ce166785cb777fbf58ecf08ca8915be5af
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557326"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624881"
 ---
-# <a name="project-timesheets-on-a-mobile-device"></a>Projektin aikaraportit mobiililaitteessa
+# <a name="project-timesheets-on-a-mobile-device"></a>Projektin työaikaraportit mobiililaitteessa
 
 [!include [banner](../includes/banner.md)]
-
-# <a name="overview"></a>Yleiskuvaus
 
 Työntekijät voivat luoda ja lähettää mobiililaitteen **Omat aikaraportit (optimoitu mobiililaitteelle)** -toiminnolla projektin aikaraportteja, joilla he voivat kirjata tiettyyn projektiin käytetyt tunnit. Työntekijät voivat varmistaa nopean ja tarkan työtuntien kirjauksen luomalla uuden aikaraportin tai kopioimalla tiedot aiemmin luodusta aikaraportista. Jos sinut on nimetty edustajaksi, voit kirjoittaa aikaraportin myös toiselle työntekijälle. Työntekijät voivat etsiä ja valita aikaraportin suodattamalla sovelluksella projektin, resurssin tai hyväksymistilan. Lisäksi työntekijät voivat tallentaa suosikkeja, jolloin projektin ja tehtävän tiedot tallennetaan aikaraporttiin. Tallennettujen suosikkien avulla voi luoda myöhemmin aikaraportteja, mikä nopeuttaa tietojen kirjausprosessia. Mobiilisovellus ei tue taloushallinnon dimension tietojen muokkaamista tai näyttämistä. **Omat aikaraportit (optimoitu mobiililaitteelle)** -sovellusta voi käyttää mobiililaitteen selaimessa.
 
@@ -35,8 +33,7 @@ Projektipäälliköt, joilla on aikaraportin hyväksymisoikeudet, voivat tarkast
 Tämä mobiilisovelluksen iPhone-käyttö on mahdollista Dynamics 365 for Finance and Operations platform update 15:n myötä.
 Android-käyttö tulee mahdolliseksi Platform update 16:n myötä, kun se julkaistaan.
 
-<a name="create-a-project-timesheet-on-your-mobile-device"></a>Projektin aikaraportin luominen mobiililaitteessa
-------------------------------------------------
+## <a name="create-a-project-timesheet-on-your-mobile-device"></a>Projektin aikaraportin luominen mobiililaitteessa
 
 1.  Kirjoita muistiin Dynamics 365:n URL-osoite sivulta, jonka voit avata valitsemalla **Projektinhallinta ja kirjanpito** \> **Aikaraportit** \> **Omat aikaraportit (optimoitu mobiililaitteelle)**.
 
