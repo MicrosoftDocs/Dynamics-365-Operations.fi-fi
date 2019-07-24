@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577926"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624809"
 ---
 # <a name="retail-peripherals"></a>Vähittäismyynnin oheislaitteet
 
@@ -156,13 +156,13 @@ Alkuperäiset (laiteprofiilissa Laite-tyyppiä olevat) tulostimet voidaan määr
 
 ### <a name="network"></a>Verkko
 
-Verkossa käytettäviä kassoja, kuittitulostimia ja maksupäätteitä voi käyttää verkossa joko suoraan Modern POS Windowsille -sovellukselle muodostetun IPC (Interprocess Communications) -laiteaseman tai muiden Modern POS -asiakasohjelmien IIS-laiteasemien kautta.
+Verkossa käytettäviä kassoja, kuittitulostimia ja maksupäätteitä voi käyttää verkossa joko suoraan Modern POS Windowsille- ja Modern POS Androidille -sovelluksille muodostetun IPC (Interprocess Communications) -laiteaseman tai muiden Modern POS -asiakasohjelmien IIS-laiteasemien kautta.
 
 ## <a name="hardware-station-deployment-options"></a>Laiteaseman käyttöönoton asetukset
 
 ### <a name="ipc-built-in"></a>IPC (sisäänrakennettu)
 
-Laiteasema muodostetaan Modern POS Windowsille -sovellukseen. Kun haluat käyttää IPC-laiteasemaa, liitä laiteprofiili Modern POS Windowsille -sovellusta käyttävään kassakoneeseen. Luo sitten **Varattu**-tyyppinen laiteasema myymälälle, jossa kassakonetta käytetään. Kun Modern POS käynnistetään, IPC-laiteasema aktivoituu ja myyntipisteen määritetyt oheislaitteet ovat käytettävissä. Jos paikallista laitetta ei tarvita väliaikaisesti, voit poistaa laiteaseman ominaisuuksia käytöstä **laiteasemien hallintatoiminnon** avulla. Modern POS voi myös olla yhteydessä suoraan verkon oheislaitteisiin IPC-laiteaseman avulla.
+Laiteasema muodostetaan Modern POS Windowsille- ja Modern POS Androidille -sovellukseen. Kun haluat käyttää IPC-laiteasemaa, liitä laiteprofiili Modern POS Windowsille -sovellusta käyttävään kassakoneeseen. Luo sitten **Varattu**-tyyppinen laiteasema myymälälle, jossa kassakonetta käytetään. Kun Modern POS käynnistetään, IPC-laiteasema aktivoituu ja myyntipisteen määritetyt oheislaitteet ovat käytettävissä. Jos paikallista laitetta ei tarvita väliaikaisesti, voit poistaa laiteaseman ominaisuuksia käytöstä **laiteasemien hallintatoiminnon** avulla. Modern POS voi myös olla yhteydessä suoraan verkon oheislaitteisiin IPC-laiteaseman avulla.
 
 ### <a name="iis"></a>IIS
 
@@ -190,7 +190,11 @@ Laiteprofiilin laitteiden verkkosuunnittelun avulla kassat, kuittitulostimet ja 
 
 Voit määrittää verkon oheislaitteiden IP-osoitteet kahdessa kohdassa. Jos Modern POS:n Windows-asiakasohjelma käyttää yhtä verkon oheislaitejoukkoa, IP-osoitteet on määritettävä laitteille, joissa on otettu käyttöön kassakoneen toimintoruudun **IP-määritys**-valinta. Jos verkkolaitteet jaetaan myyntipisteiden kassakoneille, laiteprofiili, johon on liitetty verkkolaitteita, voidaan yhdistää suoraan jaettuihin laiteasemiin. Voit määrittää IP-osoitteet, kun valitset laiteaseman **Vähittäismyymälät**-sivulla ja määrität laiteasemaan liitetyt verkkolaitteet **Laiteasemat**-osan **IP-määritys**-valinnan avulla. Jos laiteasemissa on vain verkkolaitteita, laiteasemaa ei tarvitse ottaa käyttöön. Tällöin laiteasema vaaditaan vain, jos verkossa käytettävät laitteet ryhmitellään käsitteellisesti vähittäismyymälän sijainnin mukaan.
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloud POS, Modern POS iOS:lle ja Modern POS Androidille
+#### <a name="modern-pos-for-android"></a>Modern POS Androidille
+
+Dynamics 365 for Retail -versiosta 8.1.3 alkaen Modern POS Android -sovellus sisältää sisäisen IPC-laiteaseman. Tämä laiteasema tukee verkkotulostimien ja maksuyhdistimien välistä tiedonsiirtoa. Lisätietoja on [Android-tiedostojen Hybrid-sovellus -artikkelissa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+
+#### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS ja Modern POS iOS:lle
 
 Laiteasema sisältää logiikan, joka ohjaa fyysisesti liitettyjä ja verkossa käytettäviä oheislaitteita. Tämän vuoksi IIS-laiteasema on otettava käyttöön ja aktivoitava kaikille myyntipisteen asiakasohjelmille Modern POS Windowsille -ohjelmaa lukuun ottamatta. Näin myyntipiste voi muodostaa yhteyden oheislaitteiden kanssa huolimatta siitä, onko oheislaitteet yhdistetty fyysisesti laiteasemaan vai ovatko ne verkossa käytettävissä.
 
@@ -222,9 +226,9 @@ Seuraavassa taulukossa esitellään tuetut topologiat ja käyttöönottotilantee
 | Asiakas      | IPCL-laiteasema | IIS-laiteasema |
 |-------------|----------------------|----------------------|
 | Windows-sovellus | Kyllä                  | Kyllä                  |
-| Cloud POS   | Nro                   | Kyllä                  |
-| Android     | Nro                   | Kyllä                  |
-| iOS         | Nro                   | Kyllä                  |
+| Cloud POS   | Ei                   | Kyllä                  |
+| Android     | Kyllä                  | Kyllä                  |
+| iOS         | Ei                   | Kyllä                  |
 
 ### <a name="network-peripherals"></a>Verkon oheislaitteet
 
@@ -233,9 +237,9 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille -sovellukseen
 | Asiakas      | IPCL-laiteasema | IIS-laiteasema |
 |-------------|----------------------|----------------------|
 | Windows-sovellus | Kyllä                  | Kyllä                  |
-| Cloud POS   | Nro                   | Kyllä                  |
-| Android     | Nro                   | Kyllä                  |
-| iOS         | Nro                   | Kyllä                  |
+| Cloud POS   | Ei                   | Kyllä                  |
+| Android     | Kyllä                  | Kyllä                  |
+| iOS         | Ei                   | Kyllä                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Tuetut laitetyypit laiteaseman tyypin mukaan
 
@@ -661,14 +665,15 @@ Seuraavat oheislaitteet on testattu käyttämällä Modern POS Windowsille -sove
 
 #### <a name="printer"></a>Tulostin
 
-| Valmistaja | Malli    | Käyttöliittymä | Huomautukset                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Mukautettu    | Yhdistetty verkon välityksellä   |
-| Star         | mPOP     | OPOS      | Yhdistetty Bluetoothilla |
-| HP           | F7M67AA  | OPOS      | Powered USB             |
+| Valmistaja | Malli      | Käyttöliittymä | Huomautukset                |
+|--------------|------------|-----------|-------------------------|
+| Epson        | Tm-T88IV   | OPOS      |                         |
+| Epson        | TM-T88V    | OPOS      |                         |
+| Epson        | ePOS-Print | Mukautettu    | Yhdistetty verkon välityksellä   |
+| Star         | TSP650II   | OPOS      |                         |
+| Star         | TSP650II   | Mukautettu    | Yhdistetty verkon välityksellä   |
+| Star         | mPOP       | OPOS      | Yhdistetty Bluetoothilla |
+| HP           | F7M67AA    | OPOS      | Powered USB             |
 
 #### <a name="bar-code-scanner"></a>Viivakoodin lukulaite
 
@@ -688,11 +693,12 @@ Seuraavat oheislaitteet on testattu käyttämällä Modern POS Windowsille -sove
 
 #### <a name="payment-terminal"></a>Maksupääte
 
-| Valmistaja | Malli | Käyttöliittymä | Huomautukset                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen                                |
-| VeriFone     | MX925 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen, yhdistetty verkon tai USB:n välityksellä |
-| VeriFone     | MX915 | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen, yhdistetty verkon tai USB:n välityksellä |
+| Valmistaja | Malli        | Käyttöliittymä | Huomautukset                                                                       |
+|--------------|--------------|-----------|--------------------------------------------------------------------------------|
+| Equinox      | L5300        | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen                                |
+| VeriFone     | MX925        | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen, yhdistetty verkon tai USB:n välityksellä |
+| VeriFone     | MX915        | Mukautettu    | Vaatii maksuyhdistimen mukauttamisen, yhdistetty verkon tai USB:n välityksellä |
+| Verifone     | Katso kommentit | Adyen     | Adyen-yhdistin kaikkia [tämän](https://www.adyen.com/pos-payments/terminals) luettelon laitteita |
 
 #### <a name="cash-drawer"></a>Kassa
 

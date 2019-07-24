@@ -3,7 +3,7 @@ title: Toimittajan laskujen yleiskatsaus
 description: Tässä aiheessa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin.
 author: abruer
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b57c18b5b2cf690111511e4c5a92d51fc23dd68c
-ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
+ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
+ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1618270"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625076"
 ---
 # <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
 
@@ -91,13 +91,6 @@ Voit käyttää **Palauta toimittajalaskut** -sivua palauttaaksesi tai vapauttaa
 
 Saat käyttöösi **Palauttaa toimittajalaskut** -sivun vain, jos **Palauta käytössä olevat toimittajalaskut** -suojausvelvollisuudet ja oikeudet on määritetty itsellesi. Lisäksi **Salli toimittajalaskun palautus** -parametri **Ostoreskontran parametrit** -sivulla on otettu käyttöön.
 
-## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Työn kulun tilan nollaaminen toimittajan laskuja varten laskusta, jota ei voi palauttaa luonnokseksi
-
-Peruuttamattoman virheen vuoksi pysäytetyn työnkulun esiintymän työnkulun tila on **peruuttamaton**. Kun toimittajan laskun työnkulun tila on **peruuttamaton**, voit palauttaa sen **luonnos**-tilaan. Voit sitten muokata toimittajan laskua. Tämä toiminto on käytettävissä, jos **ominaisuuden hallinta** -sivun **toimittajan laskun työnkulun parametrin palautusluonnos** on päällä.
-
-Voit palauttaa työn kulun tilaksi **luonnos** käyttämällä **nollaa toimittajan laskujen työnkulun tila** -sivua. Voit avata sivun **Kausittainen tehtävä** -valintaikkunasta. Sivulla näkyvät kaikki toimittajalaskut, joiden työn kulun tila on **peruuttamaton** nykyisessä yrityksessä. Se näyttää myös käyttäjän, joka on lähettänyt laskut työnkulkuun sekä laskun tunnuksen, ja antaa linkin työnkulkuhistoriaan. Jos haluat palauttaa työnkulun tilaksi **luonnos**, merkitse yksi tai useampi lasku ja valitse sitten **Päivitä luonnokseen**. Kun työnkulun tila palautetaan **luonnos**-tilaan, se on muokattavissa **toimittajan lasku** -sivulla.
-
-Voit käyttää **Nollaa toimittajan laskujen työnkulun tila** -sivua vain, jos **Ylläpidä toimittajan laskun työnkulkua** suojausvelvollisuus ja **Nollaa toimittajalaskun työ** -oikeudet on osoitettu sinulle.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

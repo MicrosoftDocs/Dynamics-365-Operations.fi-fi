@@ -3,7 +3,7 @@ title: Käteisvarojen yleiskatsauksen Power BI -sisältö
 description: Tässä ohjeaiheessa käsitellään käteisvarojen yhteenvetoa ja Power BI -sisältöä. Siinä selitetään, miten sisältöön sisältyvät raportit avataan, sekä kerrotaan sisällön muodostamisessa käytetyistä tietomallista ja yksiköistä.
 author: saraschi2
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5dccb5c5c6c336607603dfc7a935c039e5ac4aa5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bff0b1b0a68eccec1cebf130bc40ec3e6d88c3a9
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568914"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702792"
 ---
 # <a name="cash-overview-power-bi-content"></a>Käteisvarojen yleiskatsauksen Power BI -sisältö
 
@@ -33,6 +33,17 @@ Tässä ohjeaiheessa käsitellään **käteisvarojen yhteenvetoa** ja Microsoft 
 
 **Käteisvarojen yhteenvedon** Power BI -sisältö luotiin henkilöille, jotka vastaavat organisaatiossa käteisvaroista. **Käteisvarojen vedon** Power BI -sisältö tuo näkyvyyttä kassavirtaan. Se sisältää myös ennusteita, jotka parantavat päätöksentekoa ja siten myös kassavirran tilaa. Voit analysoida käteisvaroja yrityksen, valuutan ja pankkitilin perusteella. Saat tällä tavoin paremman käsityksen ylijäämistä ja vajeista.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Power BI -sisällön tarkastelemiseen tarvittavat asetukset
+
+Seuraava asetus on tehtävä, jotta tiedot voidaan näyttää Power BI -visualisoinneissa **Käteisvarojen yleiskatsaus**- ja **Maksuliikenne**.
+
+1. Voit määrittää **järjestelmän valuutan** ja **järjestelmän vaihtokurssin** valitsemalla **Järjestelmän hallinta > Asetukset > Järjestelmän parametrit**.
+2. Määritä **Kirjanpitovaluutta** ja **Vaihtokurssin tyyppi** valitsemalla **Kirjanpito > Asetukset > Kirjanpito**.
+2. Määritä tapahtuma- ja kirjanpitovaluuttojen, kirjanpito- ja järjestelmävaluutan sekä kirjanpito- ja pankkivaluuttojen välillä. Tee se valitsemalla **Kirjanpito > Valuutat > Valuutan vaihtokurssit**.
+3. Määritä ja suorita kassavirtaennusteet. Lisätietoja kassavirtaennusteiden määrittämisestä on kohdassa <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+">Kassavirtaennusteet</a>. 
+4. Päivitä **LedgerCovLiquidityMeasurement**-koostemitta valitsemalla **Järjestelmän hallinta > Asetukset > Yksikkösäilö**.
+
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
 
 **Käteisvarojen yhteenvedon** Power BI -sisällön raportit näytetään **Käteisvarojen yleiskatsaus**- ja **Maksuliikenne**-työtiloissa.
@@ -42,6 +53,7 @@ Jos haluat tarkastella tietoja sisältäviä kassavirtaennusteita, ennustelaskel
 Voit lisätä esimerkinomaisesti kassavirtaennusteen esittelytietoja esittelytietomoduulin **Luo tiedot** -sivulla.  Komentosarja lisää tiedot kassavirtaennusteen taulukoihin. Tällä tavoin raporttien tarvitsemat tiedot saadaan nopeasti esille.  Tämä moduuli on käytettävissä vain, jos esittelytietopakettimalli on otettu käyttöön ympäristössä. 
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raportit, jotka sisältyvät Power BI -sisältöön
+
 Seuraavassa taulukossa on tietoja mittareista, jotka löytyvät **käteisvarojen yhteenvedon** Power BI -sisällön kultakin raporttisivulta.
 
 | Raportti                                | Sisältö |
@@ -67,5 +79,3 @@ Seuraavassa taulukossa on esitetty yksiköt, joihin **käteisvarojen yhteenvedon
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Yhteenveto saapuvasta ja lähtevästä kassavirrasta sekä saldo kunkin yrityksen kirjanpitovaluuttana |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Yhteenveto saapuvasta ja lähtevästä kassavirrasta sekä saldo kaikkien yritysten järjestelmän valuuttana |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Yhteenveto tapahtuman nettosummasta ja valuuttojen saldosta tapahtuman valuuttana |
-
-

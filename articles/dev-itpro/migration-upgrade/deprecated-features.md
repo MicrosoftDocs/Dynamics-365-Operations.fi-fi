@@ -3,7 +3,7 @@ title: Vanhentuneet tai poistetut ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.
 author: sericks007
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620642"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624904"
 ---
 # <a name="removed-or-deprecated-features"></a>Poistetut tai vanhentuneet ominaisuudet
 
@@ -40,7 +40,10 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: [Tekniset viitetiedot](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.
 
-## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 ja Platform update 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 ja Platform update 28 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Ranska: FEC-kirjanpidon tiedot XML-muodossa
 
@@ -52,17 +55,12 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut. Toiminnon poiston tavoiteajankohta on heinäkuu 2020. |
 
-=======
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 ja Platform update 28
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 ja Platform update 28 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="legacy-navigation-bar"></a>Vanha siirtymispalkin ohje
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Ylätunnisteen tasaus muihin Dynamics- ja Office-tuotteisiin. Lisätietoja on kohdassa [Päivitetty siirtymispalkki, joka kohdistuu Office-otsikkoon.](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar)
+| **Poiston tai vanhentumisen syy** | Ylätunnisteen tasaus muihin Dynamics- ja Office-tuotteisiin. Lisätietoja on kohdassa [Päivitetty siirtymispalkki, joka kohdistuu Office-otsikkoon.](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar)
 | **Onko toinen ominaisuus korvannut?**   | Uudelleen muotoiltu navigointipalkki, jossa on hakuominaisuus, otettiin käyttöön Platform Update 24:sta alkaen. |
 | **Tuotealueet, joihin vaikutetaan**         | WWW-asiakasohjelma |
 | **Käytön asetukset**              | Kaikki |
@@ -71,8 +69,6 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 ja Platform update 26
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.2 ja Platform update 26 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="legacy-default-action-behavior"></a>Vanha oletustoiminnon toiminto
 
@@ -116,9 +112,6 @@ Niiden projektiin perustuvien myyntitilausten tuki, joissa projektisopimuksella 
 | **Tila**                         | Vanhentunut: Toiminnon poiston tavoiteajankohta on vuoden 2020 huhtikuu. |
 
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 ja platform update 25
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 ja Platform update 25 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Vanhentuneet ohjelmointirajapinnat ja mahdolliset tärkeimmät muutokset
 

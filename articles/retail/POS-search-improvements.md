@@ -3,7 +3,7 @@ title: Ttuote- ja asiakashaku myyntipisteessä (POS)
 description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Microsoft Dynamics 365 for Retailin tuote- ja asiakashakuihin.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530773"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625639"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Ttuote- ja asiakashaku myyntipisteessä (POS)
 
@@ -40,7 +40,7 @@ Tuotehaku tehdään oletusarvoisesti myymälän valikoimassa. Tällaista hakua k
 Työntekijät voivat valita minkä tahansa myymälän tai hakea tuotteita kaikista myymälöistä helposti **Vaihda luettelo** -sivulla.
 
 ![Luettelon vaihtaminen](./media/Changecatalog.png "Luettelon vaihtaminen")
- 
+
 Paikallinen tuotehaku kohdistuu seuraaviin tuotteen ominaisuuksiin:
 
 - Tuotenumero
@@ -55,7 +55,7 @@ Paikallinen tuotehaku kohdistuu seuraaviin tuotteen ominaisuuksiin:
 Paikallisista tuotehaut ovat nyt käyttäjäystävällisempiä. Niihin on tehty seuraavat parannukset:
 
 - Avattavat tuote- ja asiakasvalikot on lisätty hakukenttään, jotta työntekijät voivat valita joko **tuotteen** tai **asiakkaan** ennen hakua. Oletusarvon mukaan **tuote** on valittuna seuraavan kuvan mukaisesti.
-- Useita sanoja käytettäessä (eli hakuehtoja käytettäessä) jälleenmyyjät voivat määrittää, sisältyykö hakutuloksiin kohteita, jotka vastaavat *mitä tahansa* hakuehtoja vai kohteita, jotka vastaavat *kaikkia* hakuehtoja. Tämä asetus on myyntipisteen toimintoprofiilin uudessa **Tuotehaku**-ryhmässä. Oletusarvo on **Kohdista mikä tahansa hakusana**. Tämä asetus on suositeltu asetus. **Kohdista mikä tahansa hakusana**-asetusta käytettäessä tulokseksi palautetaan kaikki tuotteet, jotka vastaavat osittain tai kokonaan vähintään yhtä hakuehtoa. Nämä tulokset järjestetään automaattisesti nousevaan järjestykseen siten, että tuotteet, jotka vastaavat parhaiten avainsanoja (kokonaan tai osittain), ovat ensimmäisenä.
+- Useita sanoja käytettäessä (eli hakuehtoja käytettäessä) jälleenmyyjät voivat määrittää, sisältyykö hakutuloksiin kohteita, jotka vastaavat *mitä tahansa* hakuehtoja vai kohteita, jotka vastaavat *kaikkia* hakuehtoja. Tämän toiminnon asetus on myyntipisteen toimintoprofiilin uudessa **Tuotehaku**-ryhmässä. Oletusarvo on **Kohdista mikä tahansa hakusana**. Tämä asetus on suositeltu asetus. **Kohdista mikä tahansa hakusana**-asetusta käytettäessä tulokseksi palautetaan kaikki tuotteet, jotka vastaavat osittain tai kokonaan vähintään yhtä hakuehtoa. Nämä tulokset järjestetään automaattisesti nousevaan järjestykseen siten, että tuotteet, jotka vastaavat parhaiten avainsanoja (kokonaan tai osittain), ovat ensimmäisenä.
 
     **Kohdista kaikki hakusanat** -asetus palauttaa vain tuotteita, jotka vastaavat kaikkia hakusanoja (kokonaan tai osittain). Tästä asetuksesta on hyötyä, kun tuotenimet ovat pitkiä ja työntekijät haluavat rajoitetumman joukon hakutuloksia. Näillä hauilla on kuitenkin kaksi rajoituista:
 
@@ -65,11 +65,20 @@ Paikallisista tuotehaut ovat nyt käyttäjäystävällisempiä. Niihin on tehty 
 - Vähittäismyyjät voivat nyt määrittää tuotehaun näyttämään hakuehdotuksia käyttäjien kirjoittaessa tuotenimiä. Tämän toiminnon uusi asetus on myyntipisteen toimintoprofiilin uudessa **Tuotehaku**-ryhmässä. Asetuksen nimi on **Näytä hakuehdotukset kirjoittamisen aikana**. Työntekijät voivat käyttää tätä toimintoa löytämään etsimänsä tuotteet nopeasti, koska koko tuotenimeä ei tarvitse kirjoittaa.
 - Tuotehaun algoritmi etsii hakusanoja nyt myös tuotteen **Hakunimi**-ominaisuudesta.
 
-    ![Tuote-ehdotukset](./media/Productsuggestions.png "Tuote-ehdotukset")
+![Tuote-ehdotukset](./media/Productsuggestions.png "Tuote-ehdotukset")
 
 ## <a name="customer-search"></a>Asiakashaku
 
-Asiakashakua käytetään asiakkaiden etsimiseen erilaisissa tarkoituksissa. Kassat voivat esimerkiksi haluta nähdä asiakkaan toivelistan tai ostohistorian, tai lisätä asiakkaan tapahtumaan. Hakualgoritmi vertaa hakusanoja seuraavissa asiakasominaisuuksissa oleviin arvoihin: nimi, sähköposti, puhelin, kanta-asiakaskortin numero, osoite ja tilinumero. Näistä nimiominaisuus on joustavin vaihtoehto, kun on kyse useiden hakusanojen hausta, sillä algoritmi palauttaa kaikki asiakkaat, jotka vastaavat jotakin haettua avainsanaa, ja asiakkaat, jotka vastaavat useimpia avainsanoja, näkyvät ensimmäisinä tuloksissa. Tämä auttaa kassoja tilanteissa, joissa he tekevät hakuja kirjoittamalla koko nimen, mutta etu- ja sulunimi vaihtuivat tietojen syöttövaiheessa. Suorituskyvyn säilyttämiseksi kaikki muut ominaisuudet säilyttävät haun avainsanojen järjestyksen, joten jos haetut avainsanat eivät ole siinä järjestyksessä, jossa tiedot tallennettiin, tuloksia ei palauteta.
+Asiakashakua käytetään asiakkaiden etsimiseen erilaisissa tarkoituksissa. Kassat voivat esimerkiksi haluta nähdä asiakkaan toivelistan tai ostohistorian, tai lisätä asiakkaan tapahtumaan. Hakualgoritmi vertaa hakuehtoja seuraavissa asiakkaan ominaisuuksissa oleviin arvoihin:
+
+- Nimi
+- Sähköpostiosoite
+- Puhelinnumero
+- Kanta-asiakaskortin numero
+- Osoite
+- Tilinumero
+
+Näistä ominaisuuksista nimi on monipuolisin vaihtoehto useiden avainsanojen hauissa, sillä algoritmi palauttaa kaikki haettuja avainsanoja vastaavat asiakkaat. Useimpia hakusanoja vastaavat asiakkaat näkyvät ensimmäisenä tuloksissa. Tämä auttaa kassoja tilanteissa, joissa he tekevät hakuja kirjoittamalla koko nimen, mutta etu- ja sukunimi vaihtuivat tietojen syöttövaiheessa. Suorituskyvyn ylläpitämiseksi kaikki muut ominaisuudet kuitenkin säilyttävät avainsanojen järjestyksen. Jos haun avainsanojen järjestys ei vastaa järjestystä, jossa tiedot on tallennettu, tulosta ei tämän vuoksi palauteta.
 
 Asiakashaut tehdään oletusarvon mukaan myymälään liitettyihin osoitekirjoihin. Tällaista hakua kutsutaan *paikalliseksi asiakashauksi*. Työntekijät voivat myös hakea asiakkaita kaikkialta. Toisin sanoen, asiakkaita voidaan etsiä yrityksen kaikista myymälöistä sekä muista yrityksistä. Tällaista hakua kutsutaan *asiakkaan etähauksi*.
 
@@ -101,3 +110,7 @@ Järjestelmänvalvoja voi määrittää hakuehdot pikavalinnoiksi avaamalla **V�
 
 > [!NOTE]
 > Valintalistaan lisättävä mukautettu ominaisuus ei vaikuta vakioasiakashaun algoritmiin. Asiakashakualgoritmi ei siis tee hakuja mukautetussa ominaisuudessa. Käyttäjät voivat käyttää mukautettua ominaisuutta haussa vain, jos kyseinen mukautettu ominaisuus on lisätty pikavalintoja tai jos oletushakualgoritmi on ohitettu.
+
+Microsoft Dynamics 365 for Retailin tulevassa versiossa jälleenmyyjät voivat määrittää myyntipisteessä oletushakutilaksi **Hae kaikista myymälöistä**. Tämä määritys voi olla hyödyllinen tilanteissa, joissa myyntipisteen ulkopuolella luotuja asiakkaita on haettava heti (esimerkiksi ennen jakelutyön ajamista). Uusi **Asiakkaan oletushakutila** -vaihtoehto on käytettävissä myyntipisteen toimintoprofiilissa. Jos sen arvoksi on määritetty **Käytössä**, oletushakutilana on **Hae kaikista myymälöistä**. Jokainen asiakashakuyritys tekee sitten reaaliaikaisen kutsun pääkonttoriin.
+
+Odottamattomat suorituskykyongelmien estämiseksi tämä määritys on piilotettu versioversiotestaukseen nimeltä **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Tämän vuoksi **Asiakkaan oletushakutila** -asetuksen näyttäminen käyttöliittymässä edellyttää, että jälleenmyyjä luo tukipalvelupyynnön käyttäjän hyväksyntätestaus- ja tuotantoympäristöjä varten. Kun pyyntö on vastaanotettu, kehitysryhmä varmistaa yhteistyössä vähittäismyyjän kanssa, että tämän testaus tapahtuu muussa kuin tuotantoympäristössä, sillä tällä tavoin voidaan arvioida suorituskyly ja ottaa käyttöön mahdollisesti tarvittavat optimoinnit.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
-ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
+ms.openlocfilehash: c249df697553cd42eccd59d3f2c3f5f083ead1cb
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576918"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624604"
 ---
 # <a name="provision-talent"></a>Talentin valmistelu
 
@@ -48,6 +48,8 @@ Kun LCS-projekti on luotu, voit valmistella Talent-sovelluksen ympäristöä var
 
 1. Valitse LCS-projektin **Talent-sovelluksen hallinta** -ruutu.
 2. Määritä, onko tämä Sandbox vai Talentin tuotantoesiintymä. Varhaisia esikatselutoimintoja voi olla käytettävissä Sandbox-esiintymissä, jotta varhainen palaute ja testaaminen olisi mahdollista. 
+    > [!NOTE]
+    > Talent-esiintymätyyppi on erillään PowerApps-ympäristön esiintymätyypistä, joka määritetään PowerAppsin hallintakeskuksesta.
 3. Valitse **Sisällytä esittelytiedot** -vaihtoehto, jos haluat ympäristösi sisältävän saman esittelytietojoukon, jota käytetään Talent Test Drive -kokemuksessa. Tämä on hyödyllistä pitkän aikavälin esittely- tai koulutusympäristöissä, eikä sitä tule koskaan käyttää tuotantoympäristöissä.  Huomaa, että tämä asetus on valittava ensimmäisen käyttöönoton yhteydessä. Et voi päivittää aiemmin luotua käyttöönottoa myöhemmin.
 4. Talent valmistellaan aina Microsoft PowerApps -ympäristössä, jotta PowerApps-integrointi ja laajennettavuus voidaan ottaa käyttöön. Lue tämän ohjeaiheen PowerApps-ympäristön valitseminen -osa, ennen kuin jatkat. Jos sinulla ei vielä ole PowerApps-ympäristöä, valitse Hallitse ympäristöjä LCS:ssä tai siirry PowerAppsin hallintakeskukseen. Noudata kohdan [PowerApps-ympäristön luominen](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment) ohjeita.
 

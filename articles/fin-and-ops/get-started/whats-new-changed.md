@@ -3,7 +3,7 @@ title: Uudet ja muuttuneet ominaisuudet
 description: Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Microsoft Dynamics 365 for Finance and Operations -versioiden uusista ominaisuuksista.
 author: josaw1
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: bc13efe11f383157338ccd6b2ae378ee1f92a698
-ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
+ms.openlocfilehash: 42c31195a0b1a785afadfefc33f5cf7e1a6fce1f
+ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1619189"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "1632002"
 ---
 # <a name="whats-new-or-changed"></a>Uudet ja muuttuneet ominaisuudet
 
@@ -63,7 +63,7 @@ Tässä taulukossa luetellaan sovelluksen tärkeimmät versiot. Lisätietoja pil
 <td>10.0.3</td>
 <td>10.0.107</td>
 <td>2019. kesäkuuta</td>
-<td><a href="whats-new-changed-10-0-3.md">Dynamics 365 for Finance and Operationsin version 10.0.3 esiversio-ominaisuudet (kesäkuu 2019)</a></td>
+<td><a href="whats-new-changed-10-0-3.md">Dynamics 365 for Finance and Operationsin version 10.0.3 uudet tai muuttuneet ominaisuudet (kesäkuu 2019)</a></td>
 </tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.2</td>
@@ -183,7 +183,7 @@ Tässä taulukossa luetellaan sovelluksen tärkeimmät versiot. Lisätietoja pil
 <td>Ympäristön update 27 -päivitys</td>
 <td>7.0.5286</td>
 <td>2019. kesäkuuta</td>
-<td><a href="whats-new-platform-update-27.md">Dynamics 365 for Finance and Operations Platform update 27:n esiversio-ominaisuudet (kesäkuu 2019)</a></td>
+<td><a href="whats-new-platform-update-27.md">Dynamics 365 for Finance and Operations platform update 27:n uudet ja muuttuneet ominaisuudet (kesäkuu 2019)</a></td>
 </tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Ympäristön update 26 -päivitys</td>

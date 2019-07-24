@@ -8,6 +8,16 @@
         - name: Talentin uudet ja muuttuneet ominaisuudet
           href: whats-new.md
           items:
+            - name: 2. heinäkuuta 2019
+              href: whats-new-talent-july-2-2019.md
+            - name: 25. kesäkuuta 2019
+              href: whats-new-talent-june-25-2019.md
+            - name: 18. kesäkuuta 2019
+              href: whats-new-talent-june-18-2019.md
+            - name: 11. kesäkuuta 2019
+              href: whats-new-talent-june-11-2019.md
+            - name: 4. kesäkuuta 2019
+              href: whats-new-talent-june-4-2019.md
             - name: 28. toukokuuta 2019
               href: whats-new-talent-may-28-2019.md
             - name: 21. toukokuuta 2019
@@ -16,26 +26,26 @@
               href: whats-new-talent-may-13-2019.md
             - name: 6. toukokuuta 2019
               href: whats-new-talent-may-6-2019.md
-            - name: 30. huhtikuuta 2019
-              href: whats-new-talent-april-30-2019.md
-            - name: 25. huhtikuuta 2019
-              href: whats-new-talent-april-25-2019.md
-            - name: 16. huhtikuuta 2019
-              href: whats-new-talent-april-16-2019.md
-            - name: 9. huhtikuuta 2019
-              href: whats-new-talent-april-9-2019.md
-            - name: 2. huhtikuuta 2019
-              href: whats-new-talent-april-2-2019.md
-            - name: 26. maaliskuuta 2019
-              href: whats-new-talent-march-26-2019.md
-            - name: 20. maaliskuuta 2019
-              href: whats-new-talent-march-20.md
-            - name: 14. maaliskuuta 2019
-              href: whats-new-talent-march-14.md
-            - name: 5. maaliskuuta 2019
-              href: whats-new-talent-march-5.md
             - name: Uutuudet-arkisto 2019
               items:
+                - name: 30. huhtikuuta 2019
+                  href: whats-new-talent-april-30-2019.md
+                - name: 25. huhtikuuta 2019
+                  href: whats-new-talent-april-25-2019.md
+                - name: 16. huhtikuuta 2019
+                  href: whats-new-talent-april-16-2019.md
+                - name: 9. huhtikuuta 2019
+                  href: whats-new-talent-april-9-2019.md
+                - name: 2. huhtikuuta 2019
+                  href: whats-new-talent-april-2-2019.md
+                - name: 26. maaliskuuta 2019
+                  href: whats-new-talent-march-26-2019.md
+                - name: 20. maaliskuuta 2019
+                  href: whats-new-talent-march-20.md
+                - name: 14. maaliskuuta 2019
+                  href: whats-new-talent-march-14.md
+                - name: 5. maaliskuuta 2019
+                  href: whats-new-talent-march-5.md
                 - name: 27. helmikuuta 2019
                   href: whats-new-talent-feb-27.md
                 - name: 14. helmikuuta 2019
@@ -102,16 +112,24 @@
           href: attract-comprehensive-hiring.md
         - name: Attractin toiminnot ja ominaisuudet
           href: attract-overview.md
+        - name: LinkedInin usein kysytyt kysymykset
+          href: attract-linkedin-faq.md
+        - name: Sähköpostiasetusten määrittäminen
+          href: attract-configure-email-settings.md
         - name: Prosessimallin luominen Attractissa
           href: Process-templates-Attract.md
-        - name: 'Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa'
+        - name: Työpaikkojen luominen ja julkaiseminen
           href: Creating-jobs-Attract.md
-        - name: Työpaikkojen julkaiseminen ulkoisille urasivustoille Attractista
+        - name: LinkedIn-integraation määrittäminen
+          href: attract-admin-linkedin.md
+        - name: Työpaikkojen julkaiseminen LinkedInissä Attractista
+          href: attract-post-jobs-to-linkedin.md
+        - name: Työpaikkojen julkaiseminen Broadbeanissa Attractista
           href: posting-jobs-external.md
-        - name: Hanki osaajia kykypoolien avulla
+        - name: Ehdokkaiden rekrytointi kykypoolien avulla
           href: attract-talent-pools.md
-        - name: Hankinta LinkedIn Recruiterin avulla
-          href: attract-linked-in-recruiter.md
+        - name: Ehdokkaiden rekrytointi LinkedIn Recruiter -ratkaisulla
+          href: attract-linkedin-recruiter.md
         - name: Työhönottoprosessien tehtävät
           href: activities-attract.md
         - name: Haastattelujen aikataulutus ja palaute
@@ -132,15 +150,31 @@
           href: Admin-Settings-Attract.md
         - name: Älykkäät suositukset
           href: Intelligent-Recommendations.md
-        - name: Osallistavan perehdyttämiskokemuksen luominen
-          href: create-onboarding-experience.md
         - name: Hakijan profiilien ja sovellusten lähteiden seuraaminen
           href: source-tracking.md
         - name: Analyysiraporttien käyttäminen työhönottoprosessin tietonäkymissä
           href: analytic-reports.md
+    - name: Uusien työntekijöiden toivottaminen tervetulleeksi Onboardilla
+      items:
+        - name: Onboardin käytön aloittaminen
+          href: create-onboarding-experience.md
+        - name: Onboard-sovelluksen hankkiminen
+          href: onboard-get-app.md
+        - name: Perehdytysoppaan luominen ja lähettäminen
+          href: onboard-create-guide.md
+        - name: Perehdytysmallin luominen
+          href: onboard-create-template.md
+        - name: Oppaiden ja mallien muokkaaminen
+          href: onboard-edit-guides-templates.md
+        - name: Sisällön jakaminen
+          href: onboard-share-template.md
+        - name: Tilan tarkastaminen
+          href: onboard-view-status.md
+        - name: Työhönottoryhmän luominen
+          href: onboard-create-team.md
     - name: 'Työvoiman hallinta Core HR:n avulla'
       items:
-        - name: Työvoiman järjestäminen
+        - name: Työvoimasi organisointi
           items:
             - name: 'Työvoiman järjestäminen osastojen, töiden ja toimien avulla'
               href: departments-jobs-positions.md
@@ -335,7 +369,7 @@
               href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Laajennettavuus
       items:
-        - name: Sisällytetty Power BI työtiloissa
+        - name: Upotettu Power BI työtiloissa
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Laajenna Talent käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä
           href: extensibility-examples.md
@@ -357,6 +391,8 @@
           href: corehr-custom-fields.md
     - name: Talentin vianmääritys
       items:
+        - name: Vianmääritys koskien työpaikkojen julkaisemista LinkedInissä
+          href: attract-troubleshoot-linkedin.md
         - name: Analyysiraportteja ei päivitetä
           href: analytic-reports-not-updated.md
         - name: PowerApps-hallintakeskuksessa ei voi luoda ympäristöä

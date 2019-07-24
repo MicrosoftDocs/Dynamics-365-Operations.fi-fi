@@ -44,9 +44,9 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: 'Ominaisuudet, joita ei ole otettu käyttöön paikallisissa ympäristöissä'
               href: get-started/features-not-implemented-on-prem.md
-            - name: Finance and Operations -version 10.0.4 (heinäkuu 2019) esiversio-ominaisuudet
+            - name: Finance and Operations -versio 10.0.4 (heinäkuu 2019)
               href: get-started/whats-new-changed-10-0-4.md
-            - name: Finance and Operations -version 10.0.3 (kesäkuu 2019) esiversio-ominaisuudet
+            - name: Finance and Operations -versio 10.0.3 (kesäkuu 2019)
               href: get-started/whats-new-changed-10-0-3.md
             - name: Finance and Operations -versio 10.0.2 (toukokuu 2019)
               href: get-started/whats-new-changed-10-0-2.md
@@ -56,9 +56,9 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations -versio 8.1.3 (tammikuu 2019)
               href: get-started/whats-new-changed-8-1-3.md
-            - name: Finance and Operations platform update 28 (heinäkuu 2019) - päivityksen esiversio-ominaisuudet
+            - name: Platform update 28 (heinäkuu 2019)
               href: get-started/whats-new-platform-update-28.md
-            - name: Finance and Operations platform update 27 (kesäkuu 2019) - päivityksen esiversio-ominaisuudet
+            - name: Platform update 27 (kesäkuu 2019)
               href: get-started/whats-new-platform-update-27.md
             - name: Platform update 26 (toukokuu 2019)
               href: get-started/whats-new-platform-update-26.md
@@ -238,8 +238,14 @@
           href: ../dev-itpro/data-entities/data-task-automation.md
         - name: Riippumattomien ohjelmistotoimittajien ratkaisujen toimittaminen yhtä versiota käyttäen
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: Regression Suite Automation Tool
-          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+        - name: Automaation testaus
+          items:
+            - name: Käyttäjän hyväksymistestien luominen ja automatisointi
+              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+            - name: Regression Suite Automation Tool -oppaan määrittäminen
+              href: get-started/hol-set-up-regression-suite-automation-tool.md
+            - name: Regression Suite Automation Tool -oppaan käyttäminen
+              href: get-started/hol-use-regression-suite-automation-tool.md
     - name: Liiketoimintatapahtumat
       href: ../dev-itpro/business-events/home-page.md
       items:
@@ -257,6 +263,10 @@
           href: ../dev-itpro/business-events/troubleshooting.md
         - name: Tapausten käyttö liiketoimintatapahtumissa
           href: ../dev-itpro/business-events/potential-use-cases.md
+        - name: Oppaat
+          items:
+            - name: Liiketoimintatapahtumien kuluttaminen Microsoft Flow'lla
+              href: ../dev-itpro/business-events/how-to/how-to-flow.md
     - name: Yhteensopivuus
       items:
         - name: Tarkistuskäytäntösäännöt
@@ -845,11 +855,11 @@
           items:
             - name: Kustannuslaskennan sanasto
               href: ../financials/cost-accounting/terms-cost-accounting.md
-            - name: Kirjanpidon kalenterit ja tilikaudet
+            - name: 'Kirjanpidon kalenterit, tilivuodet ja tilikaudet'
               href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
             - name: Taloushallinnon dimensiot
               href: ../financials/general-ledger/financial-dimensions.md
-            - name: Tilirakenteet
+            - name: Taloushallinnon dimensiot ja kirjaaminen
               href: ../financials/general-ledger/Default-dimensions.md
             - name: Taloushallinnon dimensioiden lisääminen talousjohtajan työtilaan
               href: ../financials/general-ledger/CFO-workspace.md
@@ -1080,7 +1090,9 @@
                   href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
                 - name: Tilirakenteiden luonti
                   href: ../financials/general-ledger/tasks/create-account-structures.md
-                - name: Luo jaksotusmalleja
+                - name: Taloushallinnon dimensiot ja kirjaaminen
+                  href: ../financials/general-ledger/default-dimensions.md
+                - name: Jaksotusmallien luominen
                   href: ../financials/general-ledger/tasks/create-accrual-schemes.md
                 - name: Taloushallinnon konsolidoinnit ja valuutan muunto
                   href: ../financials/general-ledger/financial-consolidations-currency-translation.md
@@ -1117,7 +1129,7 @@
                   href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
                 - name: Konsolidoinnin ja eliminoinnin yleiskatsaus
                   href: ../financials/budgeting/consolidation-elimination-overview.md
-                - name: Kirjanpidon kalenterit ja tilikaudet
+                - name: 'Kirjanpidon kalenterit, tilivuodet ja tilikaudet'
                   href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
                 - name: Tilirakenteiden konfigurointi
                   href: ../financials/general-ledger/configure-account-structures.md
@@ -1936,10 +1948,144 @@
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: Kassapäätteiden GST-veron integrointi
                   href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Osta verollinen nimike rekisteröimättömältä toimittajalta
-                  href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
-            - name: Kassapäätteiden käyttöönotto-ohjeet
-              href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+                - name: Päätietojen määrittäminen
+                  items:
+                    - name: Liiketoiminnan osa-alueen luominen
+                      href: ../financials/localizations/apac-ind-GST-create-business-vertical.md
+                    - name: Osavaltiokoodin ja territorion päivittäminen
+                      href: ../financials/localizations/apac-ind-GST-update-state-code-union-territory.md
+                    - name: GSTIN-päätunnuksen luominen
+                      href: ../financials/localizations/apac-ind-GST-create-gstin-master.md
+                    - name: GSTIN- ja viitenumeroiden sarjojen määrittäminen
+                      href: ../financials/localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
+                    - name: HSN-koodien ja palvelun kirjanpitokoodien määrittäminen
+                      href: ../financials/localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                    - name: Päätilien luominen GST-kirjaustyypille
+                      href: ../financials/localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
+                    - name: Veron tilityskauden luominen
+                      href: ../financials/localizations/apac-ind-GST-create-tax-settlement-period.md
+                    - name: GSTIN-tunnuksen liittäminen veron rekisteröintiryhmään
+                      href: ../financials/localizations/apac-ind-GST-attach-GSTIN-tax-registration-group.md
+                - name: Veroasetukset
+                  items:
+                    - name: Verokokoonpanon määrittäminen ja ottaminen käyttöön oikeushenkilöille
+                      href: ../financials/localizations/apac-ind-GST-define-tax-configuration-deploy-legal-entities.md
+                    - name: Kokoonpanon verotyyppien kartoittaminen - Mukautetut
+                      href: ../financials/localizations/apac-ind-GST-map-configuration-tax-types.md
+                    - name: Kurssi- ja prosenttitaulukoiden määrittäminen
+                      href: ../financials/localizations/apac-ind-GST-set-up-rate-percentage-tables.md
+                    - name: Arvonlisäverohierarkian ja vahvistussääntöjen määrittäminen
+                      href: ../financials/localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
+                - name: Ostotapahtuma
+                  items:
+                    - name: Ostokset rekisteröimättömiltä toimittajilta
+                      href: ../financials/localizations/apac-ind-GST-purchases-unregistered-vendor.md
+                    - name: Verollisen nimikkeen ostaminen rekisteröimättömältä toimittajalta
+                      href: ../financials/localizations/apac-ind-gst-unregistered-vendor-purchase.md
+                    - name: Ostokset rekisteröidyiltä toimittajilta
+                      href: ../financials/localizations/apac-ind-GST-purchases-registered-vendor.md
+                    - name: Alennustuotteiden ostot
+                      href: ../financials/localizations/apac-ind-GST-purchase-discounted-goods.md
+                    - name: Verovapaiden tuotteiden osto
+                      href: ../financials/localizations/apac-ind-GST-purchase-exempted-goods.md
+                    - name: Nollaverokantaisten tuotteiden osto
+                      href: ../financials/localizations/apac-ind-GST-purchase-zero-rated-goods.md
+                    - name: Muiden kuin GST-tuotteiden ostot
+                      href: ../financials/localizations/apac-ind-GST-purchase-non-gst-goods.md
+                    - name: Ostokset yhdistelmätoimittajilta
+                      href: ../financials/localizations/apac-ind-GST-purchase-from-composite-dealer.md
+                    - name: Kuljetusmaksuja sisältävien verotettavien tuotteiden ostot
+                      href: ../financials/localizations/apac-ind-GST-purchase-taxable-goods-shipping-charges.md
+                    - name: Verotettavia tuotteita sisältävän ostolaskun tarkistaminen
+                      href: ../financials/localizations/apac-ind-GST-revised-purchase-invoice-taxable-goods.md
+                    - name: Käyttöomaisuuksien ostokset
+                      href: ../financials/localizations/apac-ind-GST-purchase-fixed-asset.md
+                    - name: Hyvityslaskun luominen ostolaskulle
+                      href: ../financials/localizations/apac-ind-GST-credit-note-against-purchase-invoice.md
+                    - name: Veloituslaskun luominen ostolaskulle
+                      href: ../financials/localizations/apac-ind-GST-debit-note-against-purchase-invoice.md
+                    - name: 'Laatutilaukset, joihin liittyy otantanimikkeen hävittäminen'
+                      href: ../financials/localizations/apac-ind-GST-quality-order-involves-destruction-sampling-item.md
+                    - name: Oston palautustilaukset
+                      href: ../financials/localizations/apac-ind-GST-purchase-return-order.md
+                    - name: 'Toimittajien ennakkomaksut, joissa on käänteisiä veloituksia'
+                      href: ../financials/localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                - name: Myyntitapahtuma
+                  items:
+                    - name: Verotettavien tuotteiden myynti kuluttajille
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-consumer.md
+                    - name: Myynti rekisteröidyille asiakkaille
+                      href: ../financials/localizations/apac-ind-GST-sell-registered-customer.md
+                    - name: Vapaatekstilaskut
+                      href: ../financials/localizations/apac-ind-GST-free-text-invoices.md
+                    - name: Käänteisen veloituksen sisältävien verotettavien tuotteiden myynti
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-reverse-charge.md
+                    - name: Verovapaiden nimikkeiden myynti
+                      href: ../financials/localizations/apac-ind-GST-sales-exempted-item.md
+                    - name: Nollaverokantaisten tuotteiden myynti
+                      href: ../financials/localizations/apac-ind-GST-sell-zero-rated-goods.md
+                    - name: Muiden kuin GST-tuotteiden myynti
+                      href: ../financials/localizations/apac-ind-GST-sell-non-gst-goods.md
+                    - name: Alennuksen ja alustavan arvioinnin sisältävien verotettavien tuotteiden myynti
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-discount-provisional-assessment.md
+                    - name: Kuljetusmaksujen veroja sisältävien verotettavien tuotteiden myynti
+                      href: ../financials/localizations/apac-ind-GST-sell-taxable-goods-tax-shipping-charges.md
+                    - name: 'Myynti, jossa hinnat sisältävät ja eivät sisällä veroa'
+                      href: ../financials/localizations/apac-ind-GST-sales-prices-include-exclude-tax.md
+                    - name: Veloituslaskun luominen myyntilaskulle
+                      href: ../financials/localizations/apac-ind-GST-debit-note-against-sales-invoice.md
+                    - name: Hyvityslaskun luominen myyntilaskulle
+                      href: ../financials/localizations/apac-ind-GST-credit-note-against-sales-invoice.md
+                    - name: 'Myyntilaskut, jotka on jaettu toimitusosoitteiden perusteella'
+                      href: ../financials/localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
+                    - name: Palautustilaukset
+                      href: ../financials/localizations/apac-ind-GST-return-order-form.md
+                - name: Ulkomaiden maksutapahtumat
+                  items:
+                    - name: GST-tuotteiden tuonti
+                      href: ../financials/localizations/apac-ind-GST-import-goods-gst.md
+                    - name: GST-palveluiden tuonti
+                      href: ../financials/localizations/apac-ind-import-services-gst.md
+                    - name: Nollaverokantaisten tuotteiden vienti
+                      href: ../financials/localizations/apac-ind-GST-export-goods-zero-rated-tax.md
+                    - name: Nollaverokantaisten palveluiden vienti
+                      href: ../financials/localizations/apac-ind-GST-export-services-zero-rated-tax.md
+                - name: Varastotapahtuma
+                  items:
+                    - name: 'Varaston siirtotilaukset, joiden siirron hintaan sisältyy vero'
+                      href: ../financials/localizations/apac-ind-GST-stock-transfer-transactions.md
+                - name: Asiakasmaksutapahtuma
+                  items:
+                    - name: Verolliset ennakkomaksut
+                      href: ../financials/localizations/apac-ind-GST-advance-payment-includes-tax.md
+                    - name: 'Ennakkomaksut, jotka on selvitetty laskun kirjaamisen yhteydessä'
+                      href: ../financials/localizations/apac-ind-GST-advance-payment-settled-during-invoice-posting.md
+                    - name: Verollisen ennakkomaksun ja laskun manuaalinen selvitys
+                      href: ../financials/localizations/apac-ind-GST-manually-settle-payment-invoice-tax.md
+                    - name: Verollisten laskujen maksaminen
+                      href: ../financials/localizations/apac-ind-GST-pay-invoice-includes-tax.md
+                    - name: Verollisten ennakkomaksujen korjaaminen
+                      href: ../financials/localizations/apac-ind-GST-revise-advanced-payment-tax.md
+                    - name: Asiakkaan maksun hyvitykset
+                      href: ../financials/localizations/apac-ind-GST-customer-payment-refund.md
+                - name: Suora verotapahtuma
+                  items:
+                    - name: Sisällytä GST veroalennusten laskutoimiin
+                      href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                    - name: Sisällytä GST verojen keruun laskutoimiin
+                      href: ../financials/localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                - name: Veron summan säätö
+                  href: ../financials/localizations/apac-ind-GST-tax-adjustments.md
+                - name: Sääntöihin perustuva verojen selvitys
+                  href: ../financials/localizations/apac-ind-GST-tax-settlement.md
+                - name: Verokirjauskansion luominen
+                  href: ../financials/localizations/apac-ind-GST-tax-journal.md
+                - name: GSTR-raporttitietojen luominen veropalautuksille
+                  href: ../financials/localizations/apac-ind-GST-tax-returns.md
+                - name: Verotiedustelu
+                  href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
+                - name: Käyttöönotto-ohjeet kassapäätteille
+                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: Veromoduulin yleiskatsaus
               href: ../financials/general-ledger/tax-engine.md
               items:
@@ -2377,6 +2523,10 @@
                   href: ../financials/localizations/rus-accounting-reporting.md
                 - name: Arvioitu veroilmoitus
                   href: ../financials/localizations/rus-assessed-tax-declaration.md
+                - name: Kuljetusveroilmoitus
+                  href: ../financials/localizations/rus-transport-tax-declaration.md
+                - name: Kiinteistöveroilmoitus
+                  href: ../financials/localizations/rus-land-tax-declaration.md
             - name: Organisaation hallinto
               items:
                 - name: Osoitteeseen liittyvät verorekisteröintitiedot
@@ -2793,164 +2943,226 @@
               href: ../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/fin-and-ops/toc.json
             - name: Sovelluspaketin raporttien tietojoukkojen laajentaminen
               href: ../dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/fin-and-ops/toc.json
-            - name: Raportin valikkokohteiden laajentaminen käyttäjän navigointien uudelleenohjausta varten
+            - name: Raportin valikkokohteiden laajentaminen käyttäjän navigoinnin uudelleenohjausta varten
               href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
             - name: Mukautettujen mallien luominen liiketoiminta-asiakirjoille
               href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
-        - name: Sähköinen raportointi
+            - name: PDF-asiakirjojen esikatselu upotetun tarkasteluohjelman avulla
+              href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
+    - name: Sähköinen raportointi
+      items:
+        - name: Sähköisen raportoinnin yleiskatsaus
           href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
+        - name: Konfiguroinnit
           items:
-            - name: Sähköisen raportointikehyksen määrittäminen
-              href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
             - name: Konfiguraatioiden luonti
               href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
+            - name: Sähköisen raportointiratkaisun komponenttien valmisteleminen
               items:
-                - name: Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi
-                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Toimialuekohtaisten tietomallien suunnitteleminen
+                - name: Toimialuekohtaisen tietomallin suunnitteleminen
                   href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
+                - name: Sovelluskohtaisten metatietojen valmisteleminen
+                  items:
+                    - name: '(ER) Sovelluksen metatietojen valmisteleminen RCS:ssä käytettäviksi'
+                      href: ../dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/fin-and-ops/toc.json
+                    - name: (RCS) Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla
+                      href: ../dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/fin-and-ops/toc.json
+                    - name: (RCS) Sovelluksen metatietojen käyttäminen yhdistetyillä sovelluksilla
+                      href: ../dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/fin-and-ops/toc.json
                 - name: Mallin yhdistämismääritysten määrittäminen ja tietolähteiden valitseminen
                   href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Tietomallien yhdistäminen valittuihin tietolähteisiin
+                - name: Tietomallin kartoittaminen valittuihin tietolähteisiin
                   href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Muotokonfiguraatioiden luominen
+                - name: Muotokonfiguraation luominen
                   href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Muotojen komponenttien yhdistäminen tietomallien elementteihin
+                - name: Luodun muodon komponenttien yhdistäminen tietomallien elementteihin
                   href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Sähköisten maksuasiakirjojen luominen muotokonfiguraatioiden avulla
+            - name: Valmistellun ER-ratkaisun testaaminen kohdesovelluksessa
+              items:
+                - name: '(ER) Konfiguraatioiden tuonti RCS:stä'
+                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/fin-and-ops/toc.json
+                - name: Sähköisten maksuasiakirjojen luominen muotokonfiguraation avulla
                   href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-                - name: Muotojen päivittäminen ottamalla käyttöön uusia perusversioita
-                  href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
-                - name: Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
-                  href: ../dev-itpro/analytics/er-fillable-pdf.md
-            - name: Sähköisen raportoinnin kaavojen suunnittelutoiminto
-              href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-            - name: 'Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin'
-              href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
-            - name: Kohteet
-              href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Kohteiden määrittäminen
-                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Konfiguraatioiden suunnitteleminen raporttien luontiin Word-muodossa
-              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Konfiguraatioiden suunnitteleminen raporttien luontiin OpenXML-muodossa
+            - name: Muodon päivittäminen ottamalla käyttöön kyseisen muodon uusi perusversio
+              href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
+        - name: Sähköisen raportoinnin kaavojen suunnittelutoiminto
+          href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
+        - name: ER-mallin kartoituksen hallinta erillisissä ER-konfiguraatioissa
+          href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: Valitse tietomallin määritykset luodessasi muotoja
+          href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: Raporttien luominen lisäämällä sisältöä XML-raakatiedostona
+          href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
+        - name: (ER) Yritysten väliset tietolähteet sähköisessä raportoinnissa
+          href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
+        - name: ER-muotojen suunnitteleminen lähtevien sähköisten dokumenttien luomiseksi eri muodoissa
+          items:
+            - name: (ER) Konfiguraation suunnitteleminen raporttien luomiseksi OPENXML-muodossa
               href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Sähköisen raportoinnin muotojen muokkaaminen käyttämäll Excel-malleja
-              href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Tietomallin määrityksen valitseminen muotoja luotaessa
-              href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
-            - name: Konfiguraatioiden ja muiden komponenttien välisen riippuvuuden määrittäminen
-              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: (ER) Konfiguraatioiden suunnitteleminen raporttien luomiseksi Word-muodossa
+              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Konfiguraatioiden suunnitteleminen PDF-mallien täyttämiseksi
+              href: ../dev-itpro/analytics/er-fillable-pdf.md?toc=/fin-and-ops/toc.json
+        - name: Kuvien ja muotojen upottaminen
+          items:
+            - name: (ER) Kuvien ja muotojen upottaminen luomiisi asiakirjoihin
+              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
+            - name: Esimerkki kuvien ja muotojen upottamisesta
               items:
-                - name: Tietomallien määrittäminen käyttämään taloushallinnon dimensioita tietolähteinä
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
-                - name: Mallien yhdistäminen taloushallinnon dimensioiden käyttämiseksi tietolähteinä
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
-                - name: Raporttien määrittäminen käyttämään taloushallinnon dimensioita tietolähteinä
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
-                - name: Taloushallinnon dimensioita tietolähteinä käyttävien raporttien suorittaminen
-                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
-                - name: Muotojen luominen laskentaa ja summien tuottamista varten
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
-                - name: Laskutoimitusten määrittäminen laskentaa ja summien tuottamista varten
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
-                - name: Laskutoimitusten käyttäminen laskennan ja summien tuottamiseen
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
-                - name: Muotojen suorittaminen laskentaa ja summien tuottamista varten
-                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
-                - name: 'Muotojen suunnitteleminen, jotta sarakkeita voidaan dynaamisesti lisätä vaakasuuntaisesti laajennettavina alueina'
-                  href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-                - name: 'Muotojen suorittaminen, jotta sarakkeita voidaan dynaamisesti lisätä vaakasuuntaisesti laajennettavina alueina'
-                  href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
-                - name: Tietomallien valmisteleminen käyttämään tiedostonhallinnan tiedostoja tuotoksissa
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-                - name: 'Tietomallien laajentaminen, jotta tiedostonhallinnan tiedostoja voidaan käyttää tuotoksissa'
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-                - name: 'Muotojen luominen, jotta tiedostonhallinnan tiedostoja voidaan käyttää tuotoksissa'
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-                - name: 'Muotojen suorittaminen, jotta tiedostonhallinnan tiedostoja voidaan käyttää tuotoksissa'
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-                - name: 'Muotojen muokkaaminen ja suorittaminen, jotta tiedostonhallinnan tiedostoja voidaan käyttää tuotoksissa'
-                  href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
-                - name: 'Konfiguraatioiden suunnitteleminen, jotta upotettuja kuvia sisältäviä raportteja voidaan luoda Office-muodoissa'
+                - name: Konfiguraatioiden suunnitteleminen upotettuja kuvia sisältävien raporttien luomiseksi Office-muodoissa
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
-                - name: 'Konfiguraatioiden tarkistaminen, jotta upotettuja kuvia sisältäviä raportteja voidaan luoda Office-muodoissa'
+                - name: Konfiguraatioiden tarkastaminen upotettuja kuvia sisältävien raporttien luomiseksi Office-muodoissa
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Upotettuja kuvia sisältävien Office-muotoisten raporttien luominen
+                - name: Upotettuja kuvia sisältävien raporttien luominen Office-muodoissa
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
+        - name: Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Excel-malleja
+          href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
+        - name: Finance and Operation -versiosta riippuvaisten ER-konfiguraatioiden luominen
+          items:
+            - name: ER-konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+        - name: ER-ratkaisun suunnitteleminen taloushallinnon dimensioiden käyttämiseksi
+          items:
+            - name: Tietomallien määrittäminen käyttämään taloushallinnon dimensioita tietolähteinä
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
+            - name: Mallien yhdistäminen taloushallinnon dimensioiden käyttämiseksi tietolähteinä
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
+            - name: Raporttien määrittäminen käyttämään taloushallinnon dimensioita tietolähteinä
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
+            - name: Taloushallinnon dimensioita tietolähteinä käyttävien raporttien suorittaminen
+              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
+        - name: ER-muotojen suunnitteleminen laskennan ja yhteenlaskujen suorittamiseksi luotujen tietojen perusteella
+          items:
+            - name: Muotojen luominen laskennan ja yhteenlaskujen suorittamista varten
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
+            - name: Muodon konfigurointi laskennan ja yhteenlaskujen suorittamista varten
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
+            - name: Laskutoimitusten käyttäminen laskentaan ja yhteenlaskuihin
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
+            - name: Muotojen suorittaminen laskutoimien ja yhteenlaskujen suorittamiseksi
+              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
+        - name: Sarakkeiden lisääminen Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
+          items:
+            - name: Muotojen suunnitteleminen sarakkeiden lisäämiseksi Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
+              href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
+            - name: Muotojen suorittaminen sarakkeiden lisäämiseksi Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
+              href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
+        - name: Asiakirjojen hallintatiedostojen käyttäminen muodon tuotoksissa
+          items:
+            - name: Tietomallien valmisteleminen asiakirjojen hallintatiedostojen käyttämiseksi ER-tuotoksissa
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
+            - name: Tietomallien laajentaminen asiakirjojen hallintatiedostojen käyttämiseksi ER-tuotoksissa
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
+            - name: Muotojen luominen asiakirjojen hallintatiedostojen käyttämiseksi ER-tuotoksissa
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
+            - name: Muotojen suorittaminen asiakirjojen hallintatiedostojen käyttämiseksi ER-tuotoksissa
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
+            - name: Muotojen muokkaaminen ja suorittaminen asiakirjojen hallintatiedostojen käyttämiseksi ER-tuotoksissa
+              href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
+        - name: Sovellustietojen päivittäminen sähköisen raportoinnin avulla
+          items:
             - name: Sähköisten asiakirjojen luominen ja sovellustietojen päivittäminen
               href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
+            - name: Konfiguraatioiden tuominen sovellustietoja sisältävien asiakirjojen luontia varten
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
+            - name: Konfiguraatioiden suunnitteleminen sovellustietoja sisältävien asiakirjojen luontia varten
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
+            - name: Mallien ja yhdistämismääritysten muokkaaminen sovellustietoja sisältävien asiakirjojen luontia varten
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
+            - name: Muotojen muokkaaminen sovellustietoja sisältävien asiakirjojen luontia varten
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
+            - name: Sovellustietoja sisältävien asiakirjojen luominen
+              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
+        - name: Tietojen tuominen saapuvista tiedostoista ER-ratkaisujen avulla
+          items:
+            - name: Saapuvien asiakirjojen jäsentäminen eri muodoissa
+              href: ../dev-itpro/analytics/er-parse-incoming-documents.md?toc=/fin-and-ops/toc.json
+            - name: Tietojen tuonnin määrittäminen manuaalisesti valituista tiedostoista
               items:
-                - name: Konfiguraatioiden tuominen sovellustietoja sisältävien asiakirjojen luontia varten
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Konfiguraatioiden suunnitteleminen sovellustietoja sisältävien asiakirjojen luontia varten
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-                - name: Mallien ja yhdistämismääritysten muokkaaminen sovellustietoja sisältävien asiakirjojen luontia varten
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
-                - name: Muotojen muokkaaminen sovellustietoja sisältävien asiakirjojen luontia varten
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
-                - name: Sovellustietoja sisältävien asiakirjojen luominen
-                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
-            - name: Tulostettavien FTI-lomakkeiden luominen
-              href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
-            - name: Raporttien luominen lisäämällä sisältöä XML-raakatiedostona
-              href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
-            - name: Luotujen raporttitulosten seuraaminen ja vertaaminen perusarvoihin
-              href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
-            - name: Yritysten väliset tietolähteet sähköisessä raportoinnissa
-              href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
-            - name: Kuvien ja muotojen upottaminen luotaviin asiakirjoihin
-              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
-            - name: Konfiguraatioiden elinkaaren hallinta
-              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Konfiguraatioiden lataaminen Lifecycle Services -palveluun
-                  href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Konfiguraatioiden tuonti Lifecycle Services -palvelusta
-                  href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Sähköisen raportoinnin konfiguraatioiden tuonti sääntöjen konfigurointipalvelusta
-                  href: ../dev-itpro/analytics/rcs-download-configurations.md
-                - name: Konfiguraatioiden lataaminen Lifecycle Services -palvelusta
-                  href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
-                - name: Konfiguraatioiden tuonti
-                  href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
-            - name: Mallin yhdistämiskonfiguraatioiden hallinta
-              href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
-              items:
-                - name: Konfiguraatioiden luonti tietojen tuomiseksi ulkoisista tiedostoista
+                - name: Konfiguraatioiden luonti tietojen tuomiseksi ulkoisesta XML-tiedostosta
                   href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
-                - name: Tietojen tuonnin määrittäminen SharePointista
-                  href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
-            - name: Saapuvien asiakirjojen jäsentäminen Excel-muodossa
-              href: ../dev-itpro/analytics/parse-incoming-documents-excel.md?toc=/fin-and-ops/toc.json
-            - name: Saapuvien asiakirjojen jäsentäminen sovellustietojen päivittämistä varten
-              href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
-            - name: Saapuvien asiakirjojen jäsentäminen CSV-muodossa
-              href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-            - name: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
-              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
+            - name: Tietojen tuonnin konfiguroiminen erätilassa SharePointissa sijaitsevista tiedostoista
+              href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
+            - name: Tiedostojen tuonti XML-muodossa
+              items:
+                - name: Tiedostojen tuonti XML-muodossa valinnaisilla määritteillä
+                  href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
+                - name: ER-muotojen määrittäminen XML-muotoisten tiedostojen tuomiseksi valinnaisilla määritteillä
+                  href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
+        - name: Konfiguraation elinkaari
+          items:
+            - name: Konfiguraatioiden elinkaaren hallinta
+              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
+            - name: Konfiguraatioiden lataaminen Lifecycle Services -palveluun
+              href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
+            - name: Konfiguraatioiden tuonti Lifecycle Services -palvelusta
+              href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+            - name: Konfiguraatioiden lataaminen Lifecycle Services -palvelusta
+              href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
+            - name: Konfiguraatioiden tuonti
+              href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
+            - name: ER-konfiguraatioiden lataaminen RCS-säiliöstä
               items:
-                - name: Sähköisen raportoinnin toimintoluettelon laajentaminen
-                  href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
-                - name: Sähköisen raportointikehyksen ohjelmointirajapinnan muutokset Application update 7.3 -päivitystä varten
-                  href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
-                - name: Mukautetun tallennustilan määrittäminen luoduille asiakirjoille
-                  href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
+                - name: Konfiguraatioiden lataaminen RCS-tyypin ER-säiliöstä
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md?toc=/fin-and-ops/toc.json
+                - name: 'Konfiguraatioiden tuonti RCS:stä'
+                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md
+        - name: Sähköisten raportointiratkaisujen käyttäminen Finance and Operations -palvelussa
+          items:
+            - name: Kehyksen määrittäminen
+              items:
+                - name: Sähköisen raportointikehyksen määrittäminen
+                  href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
+                - name: Konfiguraatioiden lähteiden luominen ja merkitseminen aktiivisiksi
+                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Kohteet
+              items:
+                - name: Kohteiden yhteenveto
+                  href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
+                - name: Kohteiden määrittäminen
+                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
+            - name: Luotujen raporttien vahvistaminen automaattisesti
+              items:
+                - name: Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin
+                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
+                - name: Luotujen ER-raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
+                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
+                - name: Testauksen automatisointi sähköisen raportoinnin avulla
+                  href: ../dev-itpro/analytics/er-automate-testing.md?toc=/fin-and-ops/toc.json
+            - name: Liiketoimintaprosessien automatisointi sähköisten raportointikonfiguraatioiden avulla
+              items:
+                - name: 'Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin'
+                  href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
+                - name: Tulostettavien vapaatekstilaskujen (FTI) lomakkeiden luominen
+                  href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
+            - name: ER-muotojen suorittamisen seuraaminen suorituskykyongelmien ratkaisemiseksi
+              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+        - name: ER-kehyksen ohjelmointirajapinta
+          items:
+            - name: Sähköisen raportoinnin toimintoluettelon laajentaminen
+              href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
+            - name: Sähköisen raportointikehyksen ohjelmointirajapinnan muutokset Application update 7.3 -päivitystä varten
+              href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+            - name: Mukautetun tallennustilan sijainnin määrittäminen luoduille asiakirjoille
+              href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
         - name: Upotetut analyyttiset ratkaisut
           items:
-            - name: Sisällytetty Power BI työtiloissa
+            - name: Upotettu Power BI työtiloissa
               href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
-            - name: Power BI Embedded -integrointi
+            - name: Power BI Embedded -integraatio
               href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
-        - name: PowerBI.com-sivuston mukauttamisasetukset
+            - name: 'Analyysityötilojen valitseminen PowerBI.com:ista'
+              href: ../dev-itpro/analytics/select-analytical-workspace.md
+        - name: 'PowerBI.com:in mukauttamisasetukset'
           items:
             - name: Power BI -integroinnin kautta saatavilla olevat toiminnot ja palvelut
               href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
             - name: Power BI -raporttien kiinnittäminen työtiloihin
               href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
+            - name: Upotettujen raporttien mukauttaminen analyysityötiloissa
+              href: ../dev-itpro/analytics/customize-analytical-workspace.md
         - name: Työkalut ratkaisujen luomista ja laajentamista varten
           items:
             - name: 'Analytiikka, kootut mitat ja KPI-mallinnus'
@@ -3067,12 +3279,16 @@
               href: ../supply-chain/cost-management/adjust-hand-inventory-cost-values.md
             - name: Varastodimensiokohtaisen juoksevan keskimääräisen kustannuksen seuranta
               href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+    - name: Toimitusketju
+      href: ../supply-chain/index.md
     - name: Pääsuunnittelu
       href: ../supply-chain/master-planning/master-planning-home-page.md
       items:
         - name: Pääsuunnitelmat
           href: ../supply-chain/master-planning/master-plans.md
           items:
+            - name: Pääsuunnitelmien määrittäminen
+              href: ../supply-chain/master-planning/master-planning-setup.md
             - name: Kattavuusasetukset
               href: ../supply-chain/master-planning/coverage-settings.md
             - name: Nimikkeiden kattavuussääntöjen määrittäminen
@@ -3093,12 +3309,14 @@
               href: ../supply-chain/master-planning/action-messages.md
             - name: Pääsuunnitteluajon valvonta
               href: ../supply-chain/master-planning/tasks/monitor-master-planning-run.md
-            - name: Luo toimipisteelle aikataulu
+            - name: Aikataulun luominen toimipisteelle
               href: ../supply-chain/master-planning/tasks/create-schedule-site.md
-            - name: Luo toimipaikan suunnitelma
+            - name: Suunnitelman luominen toimipisteelle
               href: ../supply-chain/master-planning/tasks/create-plan-site.md
             - name: Kalenterit ja pääsuunnittelu
               href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
+            - name: Pääsuunnittelun suorituskyvyn parantaminen
+              href: ../supply-chain/master-planning/master-planning-performance.md
             - name: Pääsuunnitelmat ja multisite-toiminnot
               href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
@@ -3114,9 +3332,11 @@
                   href: ../supply-chain/master-planning/master-plan-bom-version-determined.md
                 - name: Hajotettu tuoterakenneversio
                   href: ../supply-chain/master-planning/master-plan-explosion-bom-version.md
-            - name: Konsernin sisäisen suunnitelman luominen
+            - name: Negatiiviset päivät ja dynaamiset negatiiviset päivät
+              href: ../supply-chain/master-planning/more-about-dynamic-negative-days.md
+            - name: Konserniyritysten välisen suunnitelman luominen
               href: ../supply-chain/master-planning/tasks/create-intercompany-plan.md
-            - name: Näytä lähtevä suunniteltu konserniyritysten välinen kysyntä
+            - name: 'Lähtevän, suunnitellun konserniyritysten välisen kysynnän tarkasteleminen'
               href: ../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md
             - name: Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa
               href: ../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md

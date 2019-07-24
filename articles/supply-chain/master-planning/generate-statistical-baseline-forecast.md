@@ -1,9 +1,9 @@
 ---
-title: Luo tilastollinen perusennuste
-description: Tässä artikkelissa annetaan tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista.
+title: Tilastollisen perusennusteen luominen
+description: Tässä ohjeaiheessa on tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 30f2ccb8c0b4d7c4755e0b8dc66539e165265090
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4bc5a38519efb6f4d242daca9aab5226c16e4ea0
+ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546314"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1729872"
 ---
-# <a name="generate-a-statistical-baseline-forecast"></a>Luo tilastollinen perusennuste
+# <a name="generate-a-statistical-baseline-forecast"></a>Tilastollisen perusennusteen luominen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa annetaan tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista. 
+Tässä ohjeaiheessa on tietoja kysynnän ennusteissa käytetyistä parametreista ja suodattimista. 
 
 Kun luot perusennusteen, määritä ensin laskennassa käytettävät parametrit ja suodattimet. Voit esimerkiksi luoda perusennusteen, joka arvioi kysyntää tietyn yrityksen edellisen vuoden tapahtumatietojen perusteella tulevalle kuukaudelle ja valitulle nimikeryhmälle. 
 
@@ -49,6 +49,9 @@ Tuotantosuunnitelmiin aiheutuvien sekaannusten välttämiseksi on mahdollista lu
 
 Perusmuotoisen kysynnän ennusteen alkamispäivämäärän ei tarvitse olla nykyinen päivä tai tuleva päivä. Määritä uusi alkupäivämäärä **Perusennusteen alkamispäivä - alkaen** -kentässä. Esimerkiksi kesäkuussa käyttäjät voivat luoda ennusteen seuraavalle vuodelle. Koska ennusteen aikajaksot historiallisen kysynnän päättymispäivän ja perusennusteen alkamispäivän välillä puuttuvat, ennusteet eivät ehkä ole oikeita. Jos käytät Microsoft Dynamics 365 for Finance and Operationsin kysynnän ennustepalvelua, voit täyttää puuttuvat kohdat neljällä tavalla. Voit valita haluamasi menetelmän määrittämällä MISSING\_VALUE\_SUBSTITUTION (Puuttuvan arvon korvaus) -parametrin **Kysynnän ennusteen parametrit** -sivulla. 
 
+> [!NOTE]
+> Puuttuvan arvon korvaus toimii vain historiallisten tietojen alkamis-ja päättymispäivämäärien välisten aukkojen tiedoissa. Se ei täytä tietoja ennen viimeisintä fyysistä tietopistettä eikä sen jälkeen, vaan se toimii olemassa olevien tietopisteiden välisenä ekstrapolaationa. 
+
 **Perusennusteen alkamispäivä**  -  **Päivämäärästä** -kenttä on määritettävä ennusteaikajakson alkuun, esimerkiksi Yhdysvalloissa sunnuntaille, jos ennusteaikajakso on viikko. Järjestelmä muokkaa automaattisesti **Perusennusteen alkamispäivä**  -  **Päivämäärästä** -kentän vastaamaan ennusteaikajakson alkua. 
 
 **Perusennusteen alkamispäivä**  -  **Päivämäärästä** -kenttään voidaan määrittää mennyt päivämäärä. On toisin sanoen mahdollista luoda kysynnän ennuste menneisyydelle. Tämä on hyödyllistä, koska sen avulla käyttäjät voivat optimoida ennustepalvelun parametrit siten, että tilastollinen menneisyydelle luotu ennuste vastaa todellista historiallista kysyntää. Käyttäjät voivat sitten jatkaa näiden parametriasetusten käyttöä luodakseen tilastollisen perusennusteen tulevaisuudelle. 
@@ -59,18 +62,19 @@ Kysynnän ennusteen luonnilla voi olla nimi ja kommentteja, jotka auttavat käyt
 
 Konsernin sisäinen suunnitteluryhmä, nimikkeen kohdistustunnukset ja muut suodattimet voidaan määrittää ennusteen luontihetkellä. Niitä voidaan käyttää parantamaan suorituskykyä tai jakamaan tiedot hallittaviin paloihin. Huomaa kuitenkin, että kysynnän ennustetta ei luoda nimikkeen kohdistusryhmän jäsenille, joita ei ole määritetty konsernin sisäiseen suunnitteluryhmään, vaikka kyseinen nimikkeen kohdistustunnus olisi valittuna kyselyssä. 
 
-**Vihje** Joskus käyttäjät saattavat saada virheitä luodessaan kysynnän ennusteita, tai kysynnän ennuste suoritetaan loppuun ilman istuntolokia. Tämän voivat aiheuttaa aiemmin ennusteen luonnissa käytetyt kyselyn ylijäämätiedot. Voit ratkaista tämän ongelman valitsemalla **Valitse** avataksesi **Kysely**-sivun, napsauta **Nollaa**, ja luo sitten perusennuste. 
+> [!TIP]
+> Joskus käyttäjät saattavat saada virheitä luodessaan kysynnän ennusteita, tai kysynnän ennuste suoritetaan loppuun ilman istuntolokia. Tämän voivat aiheuttaa aiemmin ennusteen luonnissa käytetyt kyselyn ylijäämätiedot. Voit ratkaista tämän ongelman avaamalla **Kysely**-sivun valitsemalla **Valitse**, valitsemalla **Palauta** ja luomalla sitten perusennusteen. 
 
 Jos ennustetta ei luoda isolle nimikejoukolle vaan esimerkiksi yhdelle nimikkeelle tai yhdelle nimikkeen kohdistustunnukselle kerrallaan, voit saavuttaaksesi paremman suorituskyvyn valita **Käytä pyyntö-vastaus-tilaa** -valintaruudun **Pääsuunnittelu - Asetukset - Kysynnän ennusteet**  -  **Kysynnän ennusteiden parametrit - Azuren automaattianalyysipalvelut** -välilehti.
+
+> [!NOTE]
+> Mahdollisen tyhjän ennusteen syynä voi olla historialliset tiedot, joiden on oltava pidemmältä historiallisesta ajanjaksolta (vähintään 3 aikajaksoa, jotta mallit voidaan havaita; esimerkiksi 3 vuotta kuukausiennusteessa). Voit yrittää saada paremman tuloksen muuttamalla aikavälin tarkkuutta tai suurentamalla sitä.
 
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Kysynnän ennusteiden asetukset](demand-forecasting-setup.md)
+- [Kysynnän ennusteiden asetukset](demand-forecasting-setup.md)
 
-[Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
+- [Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
 
-[Oikaistun kysynnän ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
-
-
-
+- [Oikaistun kysynnän ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
