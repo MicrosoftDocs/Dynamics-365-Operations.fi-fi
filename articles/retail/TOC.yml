@@ -4,6 +4,8 @@
   items:
     - name: Uudet ja muuttuneet ominaisuudet
       href: get-started/whats-new.md
+    - name: Dynamics 365 for Retail -sovelluksen version 10.0.5 esiversio-ominaisuudet
+      href: get-started/whats-new-10-0-5.md
     - name: Dynamics 365 for Retail 10.0.3 -version uudet ja muuttuneet ominaisuudet
       href: get-started/whats-new-10-0-3.md
     - name: Dynamics 365 for Retail 10.0.2 -version uudet ja muuttuneet ominaisuudet
@@ -253,10 +255,12 @@
       href: Order-fulfillment-overview.md
     - name: Tilauksen täyttämisen määrittäminen myymälöille
       href: Order-fulfillment-POS-setup.md
-    - name: 'Tilausilmoitusten näyttäminen POS:ssä'
+    - name: Tilausilmoitusten näyttäminen myyntipisteessä
       href: Notifications-POS.md
 - name: Palautukset
   items:
+    - name: Linkitetyt palautukset
+      href: dev-itpro/linked-refunds.md
     - name: Myymälän valikoimaan sisältymättömien tuotteiden myynti ja palauttaminen
       href: sell-return-outside-assortments.md
     - name: Palautustilaukseen liittyvän vaihdon määritys ja käsittely

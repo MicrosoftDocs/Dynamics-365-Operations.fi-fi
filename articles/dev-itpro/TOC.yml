@@ -106,10 +106,28 @@
           items:
             - name: X++-kielen opastus
               href: dev-ref/xpp-language-reference.md
-            - name: X++-muuttujat ja -tietotyypit
-              href: dev-ref/xpp-variables-data-types.md
-            - name: 'X++-lausekkeet, silmukat ja poikkeuksien käsittely'
-              href: dev-ref/xpp-statements-loops.md
+            - name: Muuttujat ja tietotyypit
+              items:
+                - name: Muuttujat
+                  href: dev-ref/xpp-variables-data-types.md
+                - name: Primitiiviset tietotyypit
+                  href: dev-ref/xpp-data-primitive.md
+                - name: Yhdistelmätietotyypit
+                  href: dev-ref/xpp-data-composite.md
+                - name: Kokoelmaluokat
+                  href: dev-ref/xpp-data-collection.md
+                - name: Laajennetut tietotyypit
+                  href: dev-ref/xpp-data-edt.md
+            - name: 'Lausekkeet, silmukat ja poikkeuksien käsittely'
+              items:
+                - name: 'Kommentit, käyttäminen ja tulostaminen'
+                  href: dev-ref/xpp-statements-loops.md
+                - name: Ehdolliset lausekkeet
+                  href: dev-ref/xpp-conditional.md
+                - name: Silmukkalauseet
+                  href: dev-ref/xpp-loops.md
+                - name: Poikkeusten käsittely
+                  href: dev-ref/xpp-exceptions.md
             - name: Yhteyden SQL-virheen X++-poikkeus
               href: dev-ref/sql-connection-error.md
             - name: X++-operaattorit
@@ -120,6 +138,8 @@
               href: dev-ref/xpp-classes-methods.md
             - name: X++-tietojen valinta ja käsittely
               href: dev-ref/xpp-data-query.md
+            - name: Tietojen käyttäminen SysDa-ohjelmointirajapinnan avulla
+              href: dev-ref/sysda.md
             - name: X++-makrot
               href: dev-ref/xpp-macros.md
             - name: X++-määriteluokat
@@ -438,6 +458,10 @@
           href: user-interface/page-layout.md
         - name: Dynamicsin symbolifontti
           href: user-interface/symbol-font.md
+        - name: Tallennetut näkymät
+          href: ../fin-and-ops/get-started/saved-views.md
+        - name: Tallennettuja näkymiä täysimääräisesti hyödyntävien lomakkeiden luominen
+          href: user-interface/understanding-saved-views.md
         - name: Mukautettuja malleja käyttävien lomakkeiden testaaminen
           href: user-interface/testing-forms-custom-patterns.md
         - name: 'Jaettavien, suojattujen URL-osoitteiden (syvien linkkien) luominen'
@@ -496,7 +520,7 @@
           href: user-interface/messaging-api-center-bar-details.md
         - name: 'Viestikeskuksen, sanomapalkin ja sanoman tietojen usein kysytyt kysymykset'
           href: user-interface/messaging-user.md
-    - name: Ensisijaisen lomakemallin ohjeet
+    - name: Lomakemallin ohjeet
       items:
         - name: Siirrettyjen lomakkeiden lomakemallit
           href: user-interface/select-form-pattern.md
@@ -647,7 +671,7 @@
           href: mobile-apps/platform/scenarios/make-field-mandatory.md
     - name: Palvelinpuolen kehityksen viite
       items:
-        - name: 'Palvelinpuolen kehitys (työtila X++ API:t)'
+        - name: Palvelinpuolen kehitys (työtila X++ -ohjelmointirajapinnat)
           href: mobile-apps/platform/mobile-workspace-server-apis.md
     - name: Asiakaspuolen kehityksen viite
       items:
@@ -1129,7 +1153,7 @@
           href: migration-upgrade/on-prem-upgrade.md
     - name: Hotfix-korjaukset
       items:
-        - name: Hotfix-korjausten lataaminen Lifecycle Servicesistä
+        - name: Hae päivitykset Lifecycle Services -palveluista
           href: migration-upgrade/download-hotfix-lcs.md
         - name: Päivitysten käyttöönotto pilviympäristöissä
           href: deployment/apply-deployable-package-system.md
@@ -1162,6 +1186,8 @@
       href: sysadmin/pre-configured-system-accounts.md
     - name: 'Vie B2B-käyttäjät Azure AD:hen'
       href: sysadmin/implement-b2b.md
+    - name: Käyttämättömän istunnon aikakatkaisun määrittäminen
+      href: sysadmin/session-idle-timeout.md
     - name: Rooliperustainen suojaus
       href: sysadmin/role-based-security.md
       items:
@@ -1310,7 +1336,9 @@
   items:
     - name: Finance and Operations- ja Lifecycle Services -tuki
       href: lifecycle-services/lcs-support.md
-    - name: Tukea 21Vianetin ylläpitämään Finance and Operationsiin Kiinassa
+    - name: Dynamics 365 -tuen yleiskatsaus
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+    - name: Tuki 21Vianetin ylläpitämään Finance and Operationsiin Kiinassa
       href: lifecycle-services/21vianet-support.md
     - name: Premier-palvelupyynnön kirjaaminen
       href: lifecycle-services/premier-support.md
