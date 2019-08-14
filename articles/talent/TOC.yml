@@ -8,6 +8,12 @@
         - name: Talentin uudet ja muuttuneet ominaisuudet
           href: whats-new.md
           items:
+            - name: 23. heinäkuuta 2019
+              href: whats-new-talent-july-24-2019.md
+            - name: 16. heinäkuuta 2019
+              href: whats-new-talent-july-16-2019.md
+            - name: 9. heinäkuuta 2019
+              href: whats-new-talent-july-9-2019.md
             - name: 2. heinäkuuta 2019
               href: whats-new-talent-july-2-2019.md
             - name: 25. kesäkuuta 2019
@@ -102,8 +108,6 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR ja Common Data Service
           href: CoreHREntities.md
-        - name: Esikatseluominaisuuksien käyttäminen
-          href: access-preview-feature.md
         - name: Talent-tuen saaminen
           href: talent-support.md
     - name: Henkilöstön palkkaaminen organisaatioon Attractin avulla
@@ -112,48 +116,68 @@
           href: attract-comprehensive-hiring.md
         - name: Attractin toiminnot ja ominaisuudet
           href: attract-overview.md
-        - name: LinkedInin usein kysytyt kysymykset
-          href: attract-linkedin-faq.md
-        - name: Sähköpostiasetusten määrittäminen
-          href: attract-configure-email-settings.md
-        - name: Prosessimallin luominen Attractissa
-          href: Process-templates-Attract.md
+        - name: Usein kysytyt kysymykset
+          items:
+            - name: LinkedIn-integroinnin usein kysytyt kysymykset
+              href: attract-linkedin-faq.md
+        - name: Järjestelmäasetusten määrittäminen
+          items:
+            - name: Määritä yrityksen tiedot
+              href: admin-settings-attract.md
+            - name: Aseta käyttöoikeudet
+              href: security-attract.md
+            - name: Hallitse ominaisuuksia
+              href: access-preview-feature.md
+            - name: Urasivuston määrittäminen
+              href: career-site.md
+            - name: Ota Broadbean-integrointi käyttöön
+              href: attract-admin-job-board-settings.md
+            - name: Sähköpostiasetusten määrittäminen
+              href: attract-configure-email-settings.md
+            - name: LinkedIn-integraation määrittäminen
+              href: attract-admin-linkedin.md
+        - name: Työhönottoprosessin luominen
+          items:
+            - name: Luo prosessimalli
+              href: process-templates-attract.md
+            - name: Työhönottoprosessien tehtävät
+              href: activities-attract.md
+            - name: Sähköpostimallit
+              href: email-templates.md
+            - name: Analyysiraporttien käyttäminen
+              href: analytic-reports.md
         - name: Työpaikkojen luominen ja julkaiseminen
-          href: Creating-jobs-Attract.md
-        - name: LinkedIn-integraation määrittäminen
-          href: attract-admin-linkedin.md
-        - name: Työpaikkojen julkaiseminen LinkedInissä Attractista
-          href: attract-post-jobs-to-linkedin.md
-        - name: Työpaikkojen julkaiseminen Broadbeanissa Attractista
-          href: posting-jobs-external.md
-        - name: Ehdokkaiden rekrytointi kykypoolien avulla
-          href: attract-talent-pools.md
-        - name: Ehdokkaiden rekrytointi LinkedIn Recruiter -ratkaisulla
-          href: attract-linkedin-recruiter.md
-        - name: Työhönottoprosessien tehtävät
-          href: activities-attract.md
-        - name: Haastattelujen aikataulutus ja palaute
-          href: interview-scheduling-feedback.md
+          items:
+            - name: Työn luominen
+              href: creating-jobs-attract.md
+            - name: Julkaise töitä LinkedIn-palveluun
+              href: attract-post-jobs-to-linkedin.md
+            - name: Työpaikkojen julkaiseminen Broadbeaniin
+              href: posting-jobs-external.md
+            - name: Sulje työ
+              href: attract-close-job.md
+        - name: Ehdokkaiden rekrytointi
+          items:
+            - name: Hanki osaajia kykypoolien avulla
+              href: attract-talent-pools.md
+            - name: Ehdokkaiden rekrytointi LinkedIn Recruiter -ratkaisulla
+              href: attract-linkedin-recruiter.md
+            - name: Ehdokaslähteiden seuraaminen
+              href: source-tracking.md
+            - name: Älykkäät suositukset
+              href: Intelligent-Recommendations.md
+        - name: Määritä haastattelut
+          items:
+            - name: Haastattelujen aikataulutus ja palaute
+              href: interview-scheduling-feedback.md
+        - name: Tee tarjous
+          items:
+            - name: Tarjoustenhallinnan määrittäminen
+              href: offer-setup.md
+            - name: 'Tarjousten luominen, hyväksyminen ja allekirjoittaminen'
+              href: creating-offers.md
         - name: Attractin laajennettavuus
           href: extensibility-attract.md
-        - name: Attractin urasivuston toiminnot
-          href: career-site.md
-        - name: Tarjoustenhallinnan määrittäminen
-          href: offer-setup.md
-        - name: 'Tarjousten luominen, hyväksyminen ja allekirjoittaminen'
-          href: creating-offers.md
-        - name: Sähköpostimallit
-          href: email-templates.md
-        - name: Käyttöoikeuksien ja roolien hallinta Attractissa
-          href: security-attract.md
-        - name: Järjestelmänvalvojan asetukset Attractissa
-          href: Admin-Settings-Attract.md
-        - name: Älykkäät suositukset
-          href: Intelligent-Recommendations.md
-        - name: Hakijan profiilien ja sovellusten lähteiden seuraaminen
-          href: source-tracking.md
-        - name: Analyysiraporttien käyttäminen työhönottoprosessin tietonäkymissä
-          href: analytic-reports.md
     - name: Uusien työntekijöiden toivottaminen tervetulleeksi Onboardilla
       items:
         - name: Onboardin käytön aloittaminen
@@ -186,6 +210,8 @@
               href: set-up-hr-parameters-across-legal-entities.md
             - name: Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen
               href: set-up-company-specific-hr-parameters.md
+            - name: Talentin päivämäärä- ja kellonaikakentät
+              href: date-time-fields-in-talent.md
             - name: Henkilöstötoiminnot – usein kysytyt kysymykset
               href: personnel-actions-faq.md
             - name: Liiketoimintaprosessien virallistaminen

@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 097147654b516db053a1a0511ca69dae93c27609
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556269"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836793"
 ---
 # <a name="copy-customers-by-using-shared-number-sequences"></a>Kopioi asiakkaat käyttämällä jaettuja numerosarjoja
 
@@ -52,7 +52,7 @@ Voit kopioida asiakkaan syöttämällä **Nimi**-kenttään vähintään yhden
 Voit kopioida osapuolen vain, jos sen rooli on asiakas ja jos sillä on tämä rooli muussa kuin nykyisessä yrityksessä. Kun olet löytänyt nämä ehdot täyttävän osapuolen, toimi seuraavasti.
 
 1. Näkyviin tulee **Kopioi asiakas** -vaihtoehto. Tämä vaihtoehto on oletusarvoisesti **Ei**. Voit kopioida asiakkaan nykyiseen yritykseen valitsemalla **Kyllä**. 
-2.  **Yritys**-kenttä tulee näkyviin. Valitse yritys, josta asiakas kopioidaan Jos asiakas kuuluu vain yhteen yritykseen, kenttään määritetään tämä yritys oletusarvoisesti.
+2. **Yritys**-kenttä tulee näkyviin. Valitse yritys, josta asiakas kopioidaan Jos asiakas kuuluu vain yhteen yritykseen, kenttään määritetään tämä yritys oletusarvoisesti.
 3. Valitse **Valitse**. Uusi asiakas luodaan.
 
 ## <a name="validation"></a>Valintasäännöt

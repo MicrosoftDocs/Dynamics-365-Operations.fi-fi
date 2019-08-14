@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e777596e1bd752db438fc3591ce1125a301f4097
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548597"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836948"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopioi toimittajat käyttämällä jaettuja numerosarjoja
 
@@ -52,7 +52,7 @@ Voit kopioida toimittajan syöttämällä **Nimi**-kenttään vähintään yh
 Voit kopioida osapuolen vain, jos sen rooli on toimittaja ja jos sillä on tämä rooli muussa kuin nykyisessä yrityksessä. Kun olet löytänyt nämä ehdot täyttävän osapuolen, toimi seuraavasti.
 
 1. Näkyviin tulee **Kopioi toimittaja** -vaihtoehto. Tämä vaihtoehto on oletusarvoisesti **Ei**. Voit kopioida toimittajan nykyiseen yritykseen valitsemalla **Kyllä**. 
-2.  **Yritys**-kenttä tulee näkyviin. Valitse yritys, josta toimittaja kopioidaan Jos toimittaja kuuluu vain yhteen yritykseen, kenttään määritetään tämä yritys oletusarvoisesti.
+2. **Yritys**-kenttä tulee näkyviin. Valitse yritys, josta toimittaja kopioidaan Jos toimittaja kuuluu vain yhteen yritykseen, kenttään määritetään tämä yritys oletusarvoisesti.
 3. Valitse **Valitse**. Uusi toimittaja luodaan.
 
 ## <a name="validation"></a>Valintasäännöt
