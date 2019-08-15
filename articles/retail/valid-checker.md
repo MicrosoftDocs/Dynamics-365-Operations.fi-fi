@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
+ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617317"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "1790418"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistaja
 
@@ -50,6 +50,7 @@ Seuraavassa kaaviossa havainnollistetaan kirjausprosessi, jossa tapahtumien yhde
 - **Asiakkaan tili** - Tarkistaa, että vähittäismyynnin transaktiotauluissa oleva asiakastili on olemassa asiakkaan alkuperäisissä tiedoissa pääkonttorissa.
 - **Rivien määrä** - Tarkistaa, että rivien määrä transaktioiden otsikkotaulussa vastaa myynnin transaktiotauluissa olevien rivien määrää.
 - **Hinta sisältää veron** – Tarkistaa, että **Hinta sisältää veron** -parametri on yhdenmukainen kaikilla tapahtumariveillä.
+- **Maksun summa** -tarkistaa, että maksut vastaavat otsikon maksuja.
 - **Bruttosumma** – Tarkistaa, että otsikon bruttosumma on sama kuin rivien nettosummien ja veron määrä laskettuna yhteen.
 - **Nettosumma** – Tarkistaa, että otsikon nettosumma on sama kuin rivien nettosummien ja veron määrä laskettuna yhteen.
 - **Liika-/alimaksu** – Tarkistaa, että otsikon bruttosumman ja maksusumman välinen ero ei ylitä määritettyä ali- ja ylimaksun enimmäismäärää.
@@ -58,6 +59,7 @@ Seuraavassa kaaviossa havainnollistetaan kirjausprosessi, jossa tapahtumien yhde
 - **Lahjakorttinimike** – Retail ei tue lahjakorttinimikkeiden palautusta. Lahjakortin saldo voidaan kuitenkin lunastaa. Kaikki lahjakorttinimikkeet, jotka on käsitelty palautusrivinä lunastusrivin sijaan, epäonnistuvat laskelman kirjausprosessissa. Lahjakorttien tarkistusprosessin avulla voidaan varmistaa, että vähittäismyyntitapahtuman taulukoiden kaikki palautuksen lahjakorttirivinimikkeet ovat lahjakortin lunastuksen rivejä.
 - **Negatiivinen hinta** – Tarkistaa, että negatiivisen hinnan tapahtumarivejä ei ole.
 - **Nimike ja variantti** – Tarkistaa, että tapahtumarivien nimikkeet ja variantit ovat nimikkeen ja variantin päätiedostossa.
+- **Veron summa** -verotietueen oikeellisuustarkistus vastaa rivien verosummia. 
 
 ## <a name="set-up-the-consistency-checker"></a>Yhdenmukaisuuden tarkistajan määrittäminen
 
