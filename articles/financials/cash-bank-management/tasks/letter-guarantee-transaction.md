@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Reasons, SalesTableListPage, SalesCreateOrder, SalesTable, BankLGRequestForm, BankLGRequestFormRequest, BankLGGuarantee, BankLGFormSubmitToBank, BankDocumentAgreementLineLookup, BankLGFormReceiveFromBank, LedgerJournalTable, LedgerJournalTransDaily, BankLGRequestFormGiveToBeneficiary, BankLGFormGiveToBeneficiary, BankLGRequestFormIncreaseValue, BankLGFormIncreaseValue, BankLGRequestFormLiquidate, BankLGFormLiquidate
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4dc6ee178121fae05d538f5103919442d91e65eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff105bdefff2ea93c853d590c77391653f50a4dc
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566107"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841990"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Takausasiakirjan tapahtuma
 
@@ -61,7 +61,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 15. Kirjoita päivämäärä Pyydetty lähetyspäivämäärä -kenttään.
 16. Kirjoita päivämäärä Vahvistettu lähetyspäivämäärä -kenttään.
 
-## <a name="process-letter-of-guaranteerequest"></a>Käsittele takausasiakirja_Pyyntö
+## <a name="process-letter-of-guarantee_request"></a>Käsittele takausasiakirja_Pyyntö
 1. Valitse toimintoruudussa Hallitse.
 2. Valitse Takausasiakirja.
 3. Valitse toimintoruudussa Takausasiakirja.
@@ -73,7 +73,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 9. Valitse OK.
 10. Sulje sivu.
 
-## <a name="process-letter-of-guaranteesubmit-to-bank"></a>Käsittele takausasiakirja_Lähetä pankille
+## <a name="process-letter-of-guarantee_submit-to-bank"></a>Käsittele takausasiakirja_Lähetä pankille
 1. Valitse Maksuliikenteen hallinta > Takausasiakirjat > Takausasiakirjat.
 2. Etsi haluamasi tietue luettelosta ja valitse se.
 3. Avaa valintaikkuna valitsemalla Lähetä pankille.
@@ -81,7 +81,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 6. Valitse OK.
 
-## <a name="process-letter-of-guaranteereceive-from-bank"></a>Käsittele takausasiakirja_Ota vastaan pankista
+## <a name="process-letter-of-guarantee_receive-from-bank"></a>Käsittele takausasiakirja_Ota vastaan pankista
 1. Avaa valintaikkuna valitsemalla Vastaanota pankilta.
 2. Kirjoita arvo Pankin rekisteröintinumero -kenttään.
     * Tarkista Kate- ja Kulu-kentissä lasketut arvot.  
@@ -93,7 +93,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
     * Tarkista kirjauskansiovientien kirjaus.  
 7. Sulje sivu.
 
-## <a name="process-letter-of-guaranteegive-to-beneficiary"></a>Käsittele takausasiakirja_Anna edunsaajalle
+## <a name="process-letter-of-guarantee_give-to-beneficiary"></a>Käsittele takausasiakirja_Anna edunsaajalle
 1. Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.
 2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 3. Valitse toimintoruudussa Hallitse.
@@ -108,7 +108,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 12. Laajenna Toiminnot-osa.
     * Vahvista Anna edunsaajalle -tietue.  
 
-## <a name="process-letter-of-guaranteeincrease-value"></a>Käsittele takausasiakirja_Kasvata arvoa
+## <a name="process-letter-of-guarantee_increase-value"></a>Käsittele takausasiakirja_Kasvata arvoa
 1. Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.
 2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 3. Valitse toimintoruudussa Hallitse.
@@ -128,7 +128,7 @@ Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 16. Valitse Rivit.
     * Tarkista kirjatut kirjauskansioviennit.  
 
-## <a name="process-letter-of-guaranteeliquidate"></a>Käsittele takausasiakirja_Realisoi
+## <a name="process-letter-of-guarantee_liquidate"></a>Käsittele takausasiakirja_Realisoi
 1. Siirry kohtaan Myyntireskontra > Tilaukset > Kaikki myyntitilaukset.
 2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
 3. Valitse toimintoruudussa Hallitse.

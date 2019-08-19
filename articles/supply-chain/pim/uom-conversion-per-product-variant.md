@@ -11,18 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 ROBOTS: noindex, nofollow
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 9d5d6fd65717cd886f1c6576aabf2bc59ca4fcaf
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 36fc98c44625cce03945d76973de67021d53353e
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1573231"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844366"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mittayksiköiden tuotevarianttikohtaiset muunnokset
 
@@ -92,4 +92,4 @@ Vapautetuilla S-, M- ja L-tuotevarianteilla on sama yksikkömuunnos laatikon ja 
 
 Jos tuotteella on useita tuotevariantteja, joilla on erilaiset yksikkömuunnokset, yksikkömuunnokset kannattaa viedä **Yksikkömuunnos**-sivulta Excel-laskentataulukkoon, päivittää sitten muunnokset ja julkaista ne lopuksi takaisin Finance and Operationsiin.
 
-Exceliin viennin ja muokkausten takaisin Finance and Operationsiin julkaisemisen asetus otetaan käyttöön **Yksikkömuunnos** -sivun toimintoruudun **Avaa Microsoft Office** -valikkovaihtoehdossa.
+Exceliin viennin ja muokkausten takaisin Finance and Operationsiin julkaisemisen asetus otetaan käyttöön **Yksikkömuunnos** -sivun toimintoruudun **Avaa Microsoft Officessa** -valikkovaihtoehdossa.

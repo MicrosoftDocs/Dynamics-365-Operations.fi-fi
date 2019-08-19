@@ -1,118 +1,83 @@
 ---
 title: Määritä konttiinpakkaus
-description: Tässä menettelyssä kuvataan, kuinka voit automatisoida kuormien konttiinpakkauksen Varastonhallinnassa.
+description: Tässä aiheessa kuvataan, kuinka voit automatisoida kuormien konttiinpakkauksen Varastonhallinnassa.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/22/19
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 56fc6adc2a0eeb5b824089ff4b1b781f3a99a34c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ba435ee145a8516391d7864bdfe338b0f3862f49
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558053"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1847204"
 ---
 # <a name="set-up-containerization"></a>Määritä konttiinpakkaus
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä kuvataan, kuinka voit automatisoida kuormien konttiinpakkauksen Varastonhallinnassa. Automaattinen konttiinpakkaus luo lähetyksille kontit ja keräilytyöt kun aalto käsitellään, ja työrivit voidaan jakaa määriin, jotka sopivat kontteihin. Tämän avulla varastotyöntekijän voivat keräillä nimikkeet suoraan valittuun konttiin. Manuaaliseen pakkauskäsittelyyn verrattuna järjestelmä automatisoi tehtäviä, kuten konttien luonnin, nimikkeiden liittämisen ja konttien sulkemisen. Tässä menettelyssä käytetään esittely-yritystä USMF, ja sen suorittaa varastopäällikkö.
+Tässä aiheessa kuvataan, kuinka voit automatisoida kuormien konttiinpakkauksen Varastonhallinnassa. Automaattinen konttiinpakkaus luo lähetyksille kontit ja keräilytyöt kun aalto käsitellään, ja työrivit voidaan jakaa määriin, jotka sopivat kontteihin. Tämän avulla varastotyöntekijän voivat keräillä nimikkeet suoraan valittuun konttiin. Manuaaliseen pakkauskäsittelyyn verrattuna järjestelmä automatisoi tehtäviä, kuten konttien luonnin, nimikkeiden liittämisen ja konttien sulkemisen. Tässä menettelyssä käytetään esittely-yritystä USMF, ja sen suorittaa varastopäällikkö.
 
 
 ## <a name="set-up-a-wave-template"></a>Aaltomallin asetuksien määrittäminen
-1. Valitse Varastonhallinta > Asetukset > Aallot > Aaltomallit.
-2. Valitse Uusi.
-3. Syötä Aaltomallin nimi -kenttään arvo.
-4. Kirjoita Aaltomallin kuvaus -kenttään arvo.
-5. Syötä tai valitse arvo Toimipaikka-kenttään.
-6. Anna tai valitse Varasto-kentässä arvo.
-7. Laajenna Menetelmät-osa.
-    * Valitut menetelmät -ruudussa näkyvät valitun aaltomallin tyypin menetelmät. Aaltomallin on sisällettävä pakkaa konttiin -menetelmä.  
-8. Etsi haluamasi tietue luettelosta ja valitse se.
-9. Kirjoita arvo Aallon vaihekoodi -kenttään.
-    * Kirjoita aaltovaiheen koodi lisätylle menetelmälle, joka voi olla mikä tahansa koodi. Voit lisätä menetelmän useammin kuin kerran ja määrittää sille eri aaltovaiheen koodit. Valitse tällöin Toistettava-asetus tälle menetelmälle Aallon käsittelymenetelmät -sivulla  
-10. Valitse Tallenna.
-11. Sulje sivu.
+1. Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Aallot > Aaltomallit**.
+2. Valitse **Uusi**.
+3. Syötä **Aaltomallin nimi** -kenttään arvo.
+4. Kirjoita **Aaltomallin kuvaus** -kenttään arvo.
+5. Syötä tai valitse arvo **Toimipaikka**-kenttään.
+6. Anna tai valitse **Varasto**-kentässä arvo.
+7. Laajenna **Menetelmät**-osa. **Valitut menetelmät** -ruudussa näkyvät valitun aaltomallin tyypin menetelmät. Aaltomallin on sisällettävä pakkaa konttiin -menetelmä.  
+8. Kirjoita arvo **Aallon vaihekoodi** -kenttään. Kirjoita aaltovaiheen koodi lisätylle menetelmälle, joka voi olla mikä tahansa koodi. Voit lisätä menetelmän useammin kuin kerran ja määrittää sille eri aaltovaiheen koodit. Valitse tällöin **Toistettava tälle menetelmälle** **Aallon käsittelymenetelmät** -sivulla.  
+9. Valitse **Tallenna**.
+10. Sulje sivu.
 
 ## <a name="set-up-a-container-type"></a>Määritä konttityyppi
-1. Valitse Varastonhallinta > Asetukset > Kontit > Konttityypit.
-    * Voit määrittää haluamasi kontit Konttityypit-sivulla. Voit määrittää konttien fyysiset dimensiot, kuten taarapainon, enimmäispainon, enimmäistilavuuden, pituuden, leveyden ja korkeuden. Tässä esimerkissä on kolmea eri kokoista laatikkoa.  
-2. Valitse Uusi.
-3. Kirjoita arvo Konttityyppi-kenttään.
-4. Syötä Taarapaino-kenttään numero.
-5. Lisää Enimmäispaino-kenttään numero.
-6. Syötä Tilavuus-kenttään numero.
-7. Lisää Pituus-kenttään numero.
-8. Kirjoita Leveys-kenttään numero.
-9. Kirjoita Korkeus-kenttään numero.
-10. Kirjoita arvo Kuvaus-kenttään.
-11. Valitse Tallenna.
-12. Valitse Uusi.
-13. Kirjoita arvo Konttityyppi-kenttään.
-14. Kirjoita arvo Kuvaus-kenttään.
-15. Syötä Taarapaino-kenttään numero.
-16. Lisää Enimmäispaino-kenttään numero.
-17. Syötä Tilavuus-kenttään numero.
-18. Lisää Pituus-kenttään numero.
-19. Kirjoita Leveys-kenttään numero.
-20. Kirjoita Korkeus-kenttään numero.
-21. Valitse Tallenna.
-22. Valitse Uusi.
-23. Kirjoita arvo Konttityyppi-kenttään.
-24. Kirjoita arvo Kuvaus-kenttään.
-25. Syötä Taarapaino-kenttään numero.
-26. Lisää Enimmäispaino-kenttään numero.
-27. Syötä Tilavuus-kenttään numero.
-28. Lisää Pituus-kenttään numero.
-29. Kirjoita Leveys-kenttään numero.
-30. Kirjoita Korkeus-kenttään numero.
-31. Valitse Tallenna.
-32. Sulje sivu.
+1. Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Kontit > Konttityypit**. Voit määrittää haluamasi kontit **Konttityypit**-sivulla. Voit määrittää konttien fyysiset dimensiot, kuten taarapainon, enimmäispainon, enimmäistilavuuden, pituuden, leveyden ja korkeuden. Tässä esimerkissä on kolmea eri kokoista laatikkoa.  
+2. Valitse **Uusi**.
+3. Kirjoita arvo **Kontin tyyppikoodi**-kenttään.
+4. Syötä **Taarapaino**-kenttään numero.
+5. Lisää **Enimmäispaino**-kenttään numero.
+6. Syötä **Tilavuus**-kenttään numero.
+7. Lisää **Pituus**-kenttään numero.
+8. Kirjoita **Leveys**-kenttään numero.
+9. Kirjoita **Korkeus**-kenttään numero.
+10. Kirjoita **Kuvaus**-kenttään arvo.
+11. Valitse **Tallenna**.
+13. Toista vaiheet 2-11 vielä kaksi kertaa, jotta voit tehdä kolme kokonaista konttityyppiä.
+14. Sulje sivu.
 
 ## <a name="set-up-a-container-group"></a>Määritä konttiryhmä
-1. Valitse Varastonhallinta > Asetukset > Kontit > Konttiryhmät.
-2. Valitse Uusi.
-    * Voit määrittää konttityyppien loogiset ryhmät. Voit määrittää kullekin ryhmälle konttien pakkausjärjestyksen ja prosenttiosuuden, jonka perusteella kontit täytetään. Nimikkeen kokodimensiota käytetään määrittämään, onko kontissa tilaa. Järjestelmä valitsee kontin, jonka kokodimensiot ovat lähimpänä nimikettä. Jos ryhmässä on useita konttityyppejä, suosittelemme, että järjestät järjestyksen koon mukaan niin, että suurin kontti on ensimmäinen, numero 1 sarjassa, ja pienin kontti on viimeinen.    
-3. Kirjoita Konttiryhmän tunnus -kenttään arvo.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Valitse Uusi.
-6. Merkitse valittu rivi luettelossa.
-7. Anna tai valitse arvo Konttityyppi -kentässä.
-8. Valitse Uusi.
-9. Merkitse valittu rivi luettelossa.
-10. Anna tai valitse arvo Konttityyppi -kentässä.
-11. Valitse Uusi.
-12. Merkitse valittu rivi luettelossa.
-13. Anna tai valitse arvo Konttityyppi -kentässä.
-14. Valitse Tallenna.
-15. Sulje sivu.
+1. Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Kontit > Konttiryhmät**.
+2. Valitse toimintoruudussa **Uusi**. Voit määrittää konttityyppien loogiset ryhmät. Voit määrittää kullekin ryhmälle konttien pakkausjärjestyksen ja prosenttiosuuden, jonka perusteella kontit täytetään. Nimikkeen kokodimensiota käytetään määrittämään, onko kontissa tilaa. Järjestelmä valitsee kontin, jonka kokodimensiot ovat lähimpänä nimikettä. Jos ryhmässä on useita konttityyppejä, suosittelemme, että järjestät järjestyksen koon mukaan niin, että suurin kontti on ensimmäinen, numero 1 sarjassa, ja pienin kontti on viimeinen.    
+3. Kirjoita **Konttiryhmän tunnus** -kenttään aiemmin luomasi arvo.
+4. Kirjoita **Kuvaus**-kenttään arvo.
+5. Toista vaiheet 2-4 kaikille kolmelle aiemmin luomallesi konttityypille.
+6. Valitse **Tallenna**.
+7. Sulje sivu.
 
 ## <a name="set-up-a-container-build-template"></a>Aseta kontin muodostusmalli
-1. Valitse Varastonhallinta > Asetukset > Kontit > Kontin rakennusmallit.
-2. Valitse Uusi.
-    * Kontin rakennusmalli perustuu suoritettavaan konttiinpakkauksen prosessiin. Kukin kontin rakennusmalli määrittää yhden konttiinpakkauksen prosessin, jota käytetään aaltomallissa. Muokkaa kyselyä -komennon avulla voit määrittää ehdot, jonka perusteella valittu malli käsitellään. Voit esimerkiksi haluta suorittaa konttiinpakkauksen vain tietyille asiakkaille, tuotteille tai varastoille, tai voit lisätä vastaavan kyselyalueen malliin. Kontin rakennusmalli linkitetään aaltomallin vaiheisiin Aallon vaihekoodi -kentän avulla. Kun aalto suoritetaan, se määrittää, mitä kontin rakennusmalleja käytetään konttiinpakkauksen aloittamiseen. Peruskyselytyyppi-kenttä määrittää pakattavat kohteet ja suodattimen perusteen.  
-3. Merkitse valittu rivi luettelossa.
-4. Kirjoita Konttimallin tunnus -kenttään arvo.
-5. Anna tai valitse Konttiryhmän tunnus -kentässä arvo.
-6. Kirjoita arvo Aallon vaihekoodi -kenttään.
-7. Merkitse Salli jaetut keräilyt -valintaruutu.
-8. Valitse Tallenna.
-9. Napsauta Säilön yhdistämisrajoitukset -kohtaa.
-    * Yhdistämislogiikan keskeytysten avulla voit määrittää sääntöjä pakkauksen kohdistusriveille konteissa. Jos esimerkiksi lisäät Nimiketunnus-kentän, kun nimikkeet on liitetty kontteihin, luodaan uusi kontti aina silloin, kun kohdataan uusi nimiketunnus. Tämä estää työntekijöitä pakkaamasta kahden eri asiakkaan kohdistusrivejä samaan konttiin.  
-10. Valitse Uusi.
-11. Valitse vaihtoehto Taulukko-kentässä.
-12. Syötä tai valitse arvo Kentän valinta -kentässä.
-13. Valitse OK.
+1. Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Kontit > Kontin rakennusmallit**.
+2. Valitse **Uusi**. Kontin rakennusmalli perustuu suoritettavaan konttiinpakkauksen prosessiin. Kukin kontin rakennusmalli määrittää yhden konttiinpakkauksen prosessin, jota käytetään aaltomallissa. **Muokkaa kyselyä** -komennon avulla voit määrittää ehdot, jonka perusteella valittu malli käsitellään. Voit esimerkiksi haluta suorittaa konttiinpakkauksen vain tietyille asiakkaille, tuotteille tai varastoille, tai voit lisätä vastaavan kyselyalueen malliin. Kontin rakennusmalli linkitetään aaltomallin vaiheisiin **Aallon vaihekoodi** -kentän avulla. Kun aalto suoritetaan, se määrittää, mitä kontin rakennusmalleja käytetään konttiinpakkauksen aloittamiseen. Peruskyselytyyppi-kenttä määrittää pakattavat kohteet ja suodattimen perusteen. 
+3. Kirjoita **Konttimallin tunnus** -kenttään arvo.
+4. Anna tai valitse **Konttiryhmän tunnus** -kentässä arvo.
+5. Kirjoita arvo **Aallon vaihekoodi** -kenttään.
+6. Merkitse **Salli jaetut keräilyt** -valintaruutu.
+7. Valitse **Tallenna**.
+8. Napsauta **Säilön yhdistämisrajoitukset** -kohtaa. Yhdistämislogiikan keskeytysten avulla voit määrittää sääntöjä pakkauksen kohdistusriveille konteissa. Jos esimerkiksi lisäät **Nimiketunnus**-kentän, kun nimikkeet on liitetty kontteihin, luodaan uusi kontti aina silloin, kun kohdataan uusi nimiketunnus. Tämä estää työntekijöitä pakkaamasta kahden eri asiakkaan kohdistusrivejä samaan konttiin.  
+9. Valitse **Uusi**.
+10. Valitse vaihtoehto **Taulukko**-kentässä.
+11. Syötä tai valitse arvo **Kentän valinta** -kentässä.
+12. Valitse **OK**.
 

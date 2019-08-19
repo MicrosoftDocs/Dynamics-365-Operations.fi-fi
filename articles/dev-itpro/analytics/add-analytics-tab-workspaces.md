@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a190e15dc304f60739c80d75222830ee737c5a32
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5cfb2377ad290bff9c50819876d79a9d4b2a73d8
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548182"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848594"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
 
@@ -45,10 +45,10 @@ Riippumatta siitä laajennatko aiemmin luodun sovellustyötilan vai otatko käyt
 4. Valinnainen: Lisää laajennuksia näkymää mukauttamalla.
 
 > [!NOTE]
-> Lisätietoja analyysiraporttien luomisesta on kohdassa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Tällä sivulla on tietoja tavoista, joilla voit luoda vaikuttavia analyysiraporttiratkaisuja.
+> Lisätietoja analyysiraporttien luomisesta on kohdassa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). Tällä sivulla on tietoja tavoista, joilla voit luoda vaikuttavia analyysiraporttiratkaisuja.
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>.pbix-tiedoston lisääminen resurssina
-Ennen aloittamista on luotava tai haettava työtilaan upotettava Power BI -raportti. Lisätietoja analyysiraporttien luomisesta on kohdassa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
+Ennen aloittamista on luotava tai haettava työtilaan upotettava Power BI -raportti. Lisätietoja analyysiraporttien luomisesta on kohdassa [Power BI Desktopin käytön aloittaminen](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
 
 Lisää .pbix-tiedosto Visual Studio -projektin artefaktina.
 

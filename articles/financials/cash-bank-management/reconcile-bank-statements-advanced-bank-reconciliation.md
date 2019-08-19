@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93b311d541ab588be82e6704dbe9ae3e43deabba
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d6fc63edd47b6067b4dc0152c62e0cd6e77acaad
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563736"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842278"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla
 
@@ -65,7 +65,7 @@ Kun vahvistus on valmis, tiliotteen tilaksi päivitetään **Vahvistettu**. Tili
 ## <a name="reconcile-the-bank-statement"></a>Täsmäytä tiliote
 Kun olet tuonut sähköisen tiliotteen ja vahvistanut sen **Tiliotteet**-sivulla, voit täsmäyttää tiliotteen **Pankkitilin täsmäytys**- ja **Pankkitilin täsmäytyksen laskentataulukko** -sivuilla. 
 
-Luo uusi täsmäytys valitsemalla **Pankkitilin täsmäytys** -sivulla **Uusi** ja valitse sitten tuodun tiliotteen pankkitili. Pankkitilillä voi olla vain yksi avoin pankkitilin täsmäytys. Katkaisupäivämäärä määrittää, mitkä tiliotteen tapahtumat ja Dynamics 365 for Operations -pankkitapahtumat sisältyvät täsmäytyksen laskentataulukkoon. Oletusarvoisesti katkaisupäivämääränä käytetään kuluvaa järjestelmäpäivämäärää, mutta voit muuttaa täsmäytyksen päivämäärän. Muut otsikkotiedot haetaan automaattisesti tiliotteesta. Tämä vaihe suoritetaan automaattisesti, jos **Täsmäytä tuonnin jälkeen** -asetukseksi oli valittu tuonnin aikana **Kyllä**. 
+Luo uusi täsmäytys valitsemalla **Pankkitilin täsmäytys** -sivulla **Uusi** ja valitse sitten tuodun tiliotteen pankkitili. Pankkitilillä voi olla vain yksi avoin pankkitilin täsmäytys. Katkaisupäivämäärä määrittää, mitkä tiliotteen tapahtumat ja Operations-pankkitapahtumat sisältyvät täsmäytyksen laskentataulukkoon. Oletusarvoisesti katkaisupäivämääränä käytetään kuluvaa järjestelmäpäivämäärää, mutta voit muuttaa täsmäytyksen päivämäärän. Muut otsikkotiedot haetaan automaattisesti tiliotteesta. Tämä vaihe suoritetaan automaattisesti, jos **Täsmäytä tuonnin jälkeen** -asetukseksi oli valittu tuonnin aikana **Kyllä**. 
 
 Avaa **Pankkitilin täsmäytyksen laskentataulukko** -sivu valitsemalla **Pankkitilin täsmäytys** -sivulla **Laskentataulukko**. Jos **Täsmäytä tuonnin jälkeen** -asetukseksi oli valittu **Kyllä**, täsmäytyksessä suoritetaan automaattisesti oletusarvoinen täsmäytyksen sääntöjoukko. Jos haluat suorittaa täsmäytyssäännöt manuaalisesti, valitse pankkitapahtumisissa käytettävät täsmäytyksen sääntöjoukot tai täsmäytyssäännöt valitsemalla **Suorita täsmäytyssäännöt**. Jos käsiteltäviä tapahtumia on paljon, voit suorittaa tämän vaiheen eräprosessina. 
 
@@ -73,17 +73,17 @@ Avaa **Pankkitilin täsmäytyksen laskentataulukko** -sivu valitsemalla **Pankki
 
 Tiliotteen tapahtumia voi täsmäyttää kolmella tavalla:
 
--   Täsmäytä tapahtumat Dynamics 365 for Operations -pankkitapahtumien kanssa.
+-   Täsmäytä tapahtumat Operations-pankkitapahtumien kanssa.
 -   Täsmäytä tapahtumat vastatiliotetapahtumien kanssa.
 -   Merkitse tapahtumat **uusiksi**, jolloin ne kirjataan myöhemmin pankkitapahtumiksi Finance and Operationsissa.
 
 Voit täsmäyttää tapahtumat manuaalisesti valitsemalla ensin tapahtumat **Tiliotteen tapahtumat** -ruudukossa, valitsemalla siten tapahtumat **Operations-pankkitapahtumat**-ruudukossa. Valitse lopuksi **Täsmäytä**. Valitut tapahtumat siirretään täsmäyttämättömien tapahtumien yläruudukoista täsmäytettyjen tapahtumien alaruudukoihin. Lisäksi täsmäytetyt ja täsmäyttämättömät kokonaissummat päivitetään. Voit käyttää Voi olla yksi yhteen-, monta yhteen- ja monta moneen -tapahtumatäsmäytyksiä. Täsmäytysten on noudatettava sääntöjä sallituista päivämääräeroista ja tapahtumatyyppien yhdistämismäärityksistä. Nämä säännöt määritetään **Maksuliikennetiedot** -sivulla.
 
-Täsmäytyksessä voi esiintyä pyöristyseroja. Voit täsmäyttää yhden tiliotteen tapahtuman ja yhden Dynamics 365 for Operations -pankkitapahtuman, jolla on pyöristyseroja, jos pyöristyserot ovat pankkitilin **Sallittu pyöristysero** -kentässä määritetyn toleranssisumman rajoissa. Summa näkyy **Oikaisusumma**-kentässä vastaavassa Dynamics 365 for Operations -pankkitapahtumassa. Kun pankkitilin täsmäytys on merkitty täsmäytetyksi, korjaukset kirjataan automaattisesti käyttämällä päätiliä, joka on määritetty liitetyssä pankkitapahtumatyypissä. Korjauksia ei tueta **Tarkistus** ja **Talletus** -asiakirjatyypeissä. 
+Täsmäytyksessä voi esiintyä pyöristyseroja. Voit täsmäyttää yhden tiliotteen tapahtuman ja yhden Operations-pankkitapahtuman, jolla on pyöristyseroja, jos pyöristyserot ovat pankkitilin **Sallittu pyöristysero** -kentässä määritetyn toleranssisumman rajoissa. Summa näkyy **Oikaisusumma**-kentässä vastaavassa Operations-pankkitapahtumassa. Kun pankkitilin täsmäytys on merkitty täsmäytetyksi, korjaukset kirjataan automaattisesti käyttämällä päätiliä, joka on määritetty liitetyssä pankkitapahtumatyypissä. Korjauksia ei tueta **Tarkistus** ja **Talletus** -asiakirjatyypeissä. 
 
 Tiliotteen vastatapahtumat täsmäytetään käyttämällä täsmäytyksen laskentataulukkoa. Tiliotteen kaksi riviä voidaan täsmäyttää, jos summat ovat vastakkaiset ja jos toinen tapahtumista on merkitty vastatapahtumaksi. Voit myös määrittää täsmäytyssäännön **Tyhjennä palautuslaskelman rivit** -toiminnolle.
 
-Operations-pankin vastatapahtumat on täsmäytettävä **Operations-pankkitapahtumat** -sivulla. Voit täsmäyttää kaksi Dynamics 365 for Operations -pankkitapahtumaa yhdessä, jos asiakirjojen pankkitili, asiakirjatyyppi ja maksuviite on sama ja jos niiden summat ovat vastakkaiset. Voit täsmäyttää myös yhden selvitetyn sekin. Tämä estää kyseisten tapahtumien näkymisen täsmäytyksen laskentataulukossa. 
+Operations-pankin vastatapahtumat on täsmäytettävä **Operations-pankkitapahtumat** -sivulla. Voit täsmäyttää kaksi Operations-pankkitapahtumaa yhdessä, jos asiakirjojen pankkitili, asiakirjatyyppi ja maksuviite on sama ja jos niiden summat ovat vastakkaiset. Voit täsmäyttää myös yhden selvitetyn sekin. Tämä estää kyseisten tapahtumien näkymisen täsmäytyksen laskentataulukossa. 
 
 Jos kyse on uusista pankista peräisin olevista tapahtumista, kuten korosta, maksuista tai kuluista, jotka eivät ole vielä Finance and Operationsissa, voit lisätä ne kirjauskansioon, joka liittyy valittuun tiliotteen täsmäytykseen. Valitse ensin täsmäyttämättömien tapahtumien **Tiliotteen tapahtumat** -ruudukossa tiliotteen tapahtuma ja sitten **Merkitse uudeksi**. Tapahtuman tilaksi on valittu **Uusi** ja tapahtuma on siirretty täsmäytettyjen tapahtumien **Tiliotteen tapahtumat** -ruudukkoon. **Uudeksi** merkityt tapahtumat kirjataan myöhemmin **Tiliote**-sivulla. 
 

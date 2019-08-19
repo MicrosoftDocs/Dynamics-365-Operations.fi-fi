@@ -3,28 +3,29 @@ title: Tietojen tuonti- ja vientityöt
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 07/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b16966fe1c3a48d772c7c9982f8802119675255f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505791"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862901"
 ---
 # <a name="data-import-and-export-jobs"></a>Tietojen tuonti- ja vientityöt
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Voit luoda ja hallita tietojen tuonti- ja vientitehtäviä Microsoft Dynamics 365 for Finance and Operationsissa käyttämällä **Tietojen hallinta** -työtilaa. Oletusarvon mukaan tietojen tuonti- ja vientiprosessi luo väliaikaisen taulun kullekin yksikölle kohdetietokantaan. Väliaikaisten taulujen avulla voit tarkistaa, puhdistaa tai muuntaa tiedot ennen niiden siirtämistä.
 
@@ -129,8 +130,8 @@ Työ voidaan suojata samaan aikaan rooli-, käyttäjä- ja yritysperusteisesti.
 ## <a name="run-the-import-or-export-job"></a>Suorita tuonti- tai vientityö
 Voit suorittaa työn kerran valitsemalla **Tuo**- tai **Vie**-painikkeen, kun olet määrittänyt työn. Voit määrittää toistuvan työn valitsemalla **Luo toistuva tietotyö**.
 
-[!NOTE]
-Tuonti- tai vientityö voidaan suorittaa asynkronisesti valitsemalla **Tuo**- tai **Vie**-painike. Asynkroninen suorittaminen käyttää Finance and Operationsin asynkronista kehystä, joka eroaa eräkehyksestä. Eräkehyksen tavoin asynkronisessa kehyksessä voi kuitenkin esiintyä rajoituksia, minkä vuoksi työtä ei ehkä suoriteta heti. Työt voidaan suorittaa myös synkronisesti valitsemalla **Tuo nyt** tai **Vie nyt**. Työ käynnistetään nyt automaattisesti, mikä on kätevää, jos asynkronointi tai erä ei käynnisty rajoittamisen vuoksi. Työt voidaan suorittaa myös eräajona valitsemalla **Suorita eräajona** -asetus. Rajoitus koskee eräresursseja, joten eräajo ei välttämättä käynnisty heti. Asynkroninen asetus on kätevä, kun käyttäjät käyttävät käyttöliittymää suoraan eivätkä ole eräaikataulutusta ymmärtäviä tehokäyttäjiä. Eräajon käyttäminen on toinen vaihtoehto, jos tuotava tai vietävä määrä on suuri. Eräajot voidaan aikatauluttaa suoritettavaksi tiettyinä eräryhminä, mikä parantaa kuormituksen hallintaa. Jos asynkronista käsittelyä ja eräajoa rajoitetaan järjestelmän suuren resurssien käyttöasteen vuoksi, ongelman voi ratkaista heti käyttämällä tuonnin tai vienti synkronista versiota. Synkroninen vaihtoehto käynnistyy heti, ja se estää käyttöliittymän käytön, sillä suoritus tapahtuu synkronisesti. Selainikkunan on pysyttävä avoimena synkronisen toiminnon ollessa kesken.
+> [!NOTE]
+> Tuonti- tai vientityö voidaan suorittaa asynkronisesti valitsemalla **Tuo**- tai **Vie**-painike. Asynkroninen suorittaminen käyttää Finance and Operationsin asynkronista kehystä, joka eroaa eräkehyksestä. Eräkehyksen tavoin asynkronisessa kehyksessä voi kuitenkin esiintyä rajoituksia, minkä vuoksi työtä ei ehkä suoriteta heti. Työt voidaan suorittaa myös synkronisesti valitsemalla **Tuo nyt** tai **Vie nyt**. Työ käynnistetään nyt automaattisesti, mikä on kätevää, jos asynkronointi tai erä ei käynnisty rajoittamisen vuoksi. Työt voidaan suorittaa myös eräajona valitsemalla **Suorita eräajona** -asetus. Rajoitus koskee eräresursseja, joten eräajo ei välttämättä käynnisty heti. Asynkroninen asetus on kätevä, kun käyttäjät käyttävät käyttöliittymää suoraan eivätkä ole eräaikataulutusta ymmärtäviä tehokäyttäjiä. Eräajon käyttäminen on toinen vaihtoehto, jos tuotava tai vietävä määrä on suuri. Eräajot voidaan aikatauluttaa suoritettavaksi tiettyinä eräryhminä, mikä parantaa kuormituksen hallintaa. Jos asynkronista käsittelyä ja eräajoa rajoitetaan järjestelmän suuren resurssien käyttöasteen vuoksi, ongelman voi ratkaista heti käyttämällä tuonnin tai vienti synkronista versiota. Synkroninen vaihtoehto käynnistyy heti, ja se estää käyttöliittymän käytön, sillä suoritus tapahtuu synkronisesti. Selainikkunan on pysyttävä avoimena synkronisen toiminnon ollessa kesken.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Vahvista, että työ suoritettiin odotetulla tavalla
 Työhistoria on käytettävissä tuonti- ja vientitöiden ongelmanratkaisuun ja tutkintaan. Historian työt on järjestetty aikajaksoille.
@@ -144,15 +145,17 @@ Kukin ajettu työ sisältää seuraavat tiedot:
 
 Suorituksen tiedoissa näkyy kunkin työn käsittelemän tietoyksikön tila. Näin löydät nopeasti seuraavat tiedot:
 
-- Käsitellyt yksiköt
-- Yksiköstä käsitellyt tietueet ja epäonnistuneiden tietueiden määrä
-- Kunkin yksikön väliaikaiset tietueet
+- Käsitellyt yksiköt.
+- Yksikölle: käsitellyt tietueet ja epäonnistuneiden tietueiden määrä.
+- Kunkin yksikön väliaikaiset tietueet.
 
 Voit ladata vientitöiden väliaikaiset tiedot tiedostona, tai voit ladata ne pakettina tuonti- ja vientitöitä varten.
 
 Voit avata suoritustiedoista suorituslokin.
 
 ## <a name="clean-up-the-staging-tables"></a>Tyhjennä väliaikaiset taulut
+Platform update 29 -versiosta alkaen tämä toiminto on vanhentunut. Tämä korvataan uudella versiolla, joka on kuvattu alla olevassa työhistorian puhdistustoiminnoissa.
+
 Väliaikaiset taulut voi tyhjentää **Tietojenhallinta**-työtilan **Tyhjennä väliaikaiset taulut** -ominaisuuden avulla. Voit valita kustakin väliaikaisesta taulusta poistettavat tietueet seuraavilla asetuksilla:
 
 - **Yksikkö** – jos tarjottuna on vain yksikkö, kaikki kyseisen yksikön väliaikaisen taulun tietueet poistetaan. Valitsemalla tämän voit tyhjentää kaikki yksikön tietoprojektien ja -töiden tiedot.
@@ -160,3 +163,37 @@ Väliaikaiset taulut voi tyhjentää **Tietojenhallinta**-työtilan **Tyhjennä 
 - **Tietoprojektit** – jos valittuna on vain tietoprojekti, kaikki valitun projektin kaikkien töiden yksiköihin kuuluvat kaikki tietueet poistetaan.
 
 Poistettavaa tietojoukkoa voi myös rajoittaa yhdistämällä asetuksia.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Työhistorian tyhjennus (saatavilla Platform update 29 -versiossa tai uudemmissa)
+
+Tietojen hallinnan työhistorian puhdistustoimintoa on käytettävä suoritushistorian ajoittaista uudelleenpuhdistusta varten. Tämä toiminto korvaa aiemman väliaikaisen taulukon puhdistustoiminnon, joka on nyt vanhentunut. Puhdistusprosessi puhdistaa seuraavat taulukot.
+
+-   Kaikki väliaikaiset taulukot
+
+-   DMFSTAGINGVALIDATIONLOG
+
+-   DMFSTAGINGEXECUTIONERRORS
+
+-   DMFSTAGINGLOGDETAIL
+
+-   DMFSTAGINGLOG
+
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+
+-   DMFEXECUTION
+
+-   DMFDEFINITIONGROUPEXECUTION
+
+Toiminnallisuutta voi käyttää kohdassa **Tietojen hallinnta \> Työhistorian tyhjennys**.
+
+### <a name="scheduling-parameters"></a>Ajoitusparametrit
+
+Kun ajoitat puhdistusprosessia, seuraavat parametrit on määritettävä, jotta voidaan määrittää puhdistuskriteerit.
+
+-   **Historian säilyttämisen päivien määrä** – tätä asetusta käytetään ohjaamaan säilytettävän suoritushistorian määrää. Tämä määritetään päivien määränä. Kun puhdistamistyö on ajoitettu toistuvaksi erätyönä, tämä asetus toimii samalla tavalla kuin jatkuvasti liikkuva ikkuna, jolloin jäljelle jää aina määritetyn päivien määrä historiaa ja loput poistetaan. Oletusarvo on 7 päivää.
+
+-   **Työn suorittamisen tuntien määrä** – puhdistettavaksi tarkoitetun historian määrästä riippuen puhdistustyön kokonaissuorituksen aika voi vaihdella muutamasta minuutista muutamiin tunteihin. Koska mainittujen taulukoiden puhdistaminen on tehtävä, kun järjestelmässä ei ole muuta tietojen hallinnan toimintaa, on tärkeää varmistaa, että puhdistustyö suoritetaan ja että se loppuu ennen liiketoiminnan aloittamista.
+
+    Maksimisuoritusaika voidaan määrittää asettamalla enimmäisraja tuntien määrälle, jonka sisällä työ on suoritettava tämän asetuksen avulla. Puhdistuslogiikka käy läpi yhden työn suorittamisen tunnuksen kerrallaan aikajärjestyksessä, ja vanhin on ensin liittyvän suoritushistorian puhdistuksessa. Se lopettaa uusien suoritustunnuksien keräilyn tyhjennystä varten, kun jäljellä oleva suorituksen kesto on viimeisen 10 % sisällä määritetystä kestosta. Joissakin tapauksissa on odotettavissa, että puhdistustyö jatkuu määritetyn enimmäisajan jälkeen. Tämä riippuu pitkälti siitä, kuinka useita tietueita on poistettava nykyiselle suoritustunnukselle, joka käynnistettiin ennen 10 prosentin raja-arvon ylittymistä. Käynnistetty tyhjennys on suoritettava tietojen eheyden varmistamiseksi, mikä tarkoittaa, että uudelleenjärjestäminen jatkuu määritetyn rajan ylittämisestä huolimatta. Kun tämä on suoritettu, uusia suoritustunnuksia ei kerätä ja tyhjennystyö on valmis. Jäljellä oleva suoritushistoria, jota ei ole puhdistettu riittävän suoritusajan puutteen vuoksi, noudetaan seuraavan kerran, kun puhdistustyö ajoitetaan. Tämän asetuksen oletus- ja minimiarvoksi määritetään 2 tuntia.
+
+-   **Toistuva erä** – puhdistustyö voidaan suorittaa kertaluontoisesti, manuaalisena suorittamisena, tai se voidaan myös ajoittaa toistuvaksi erätyöksi. Erä voidaan ajoittaa käyttämällä **Suorita taustalla** -asetuksia, joka on erätöiden vakiomääritys.

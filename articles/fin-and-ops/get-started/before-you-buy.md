@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: dc34ca33d2844eaedfa1734fe6d7c7f2ef4a622d
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: f6074906dc77f17d10cc2fb94a4ded7cb8b32f14
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595682"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850948"
 ---
 # <a name="before-you-buy"></a>Ennen ostamista
 
@@ -39,7 +39,7 @@ Voit nyt ottaa Microsoft Dynamics 365 for Finance and Operationsin käyttöön p
 
 Seuraavat seikat on otettava huomioon, kun valitset paikallisen käyttöönottovaihtoehdon:
 
-- Säädöksiin ja vaatimustenmukaisuuteen liittyvät tarpeet, jotka eivät ole käytettävissä [pilvivarmenteissa](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities).
+- Säädöksiin ja vaatimustenmukaisuuteen liittyvät tarpeet, jotka eivät ole käytettävissä pilvivarmenteissa.
 - Katkennut liiketoimintaprosessi, kun sovelluksen elinkaaren hallintaan tarvittavaa Microsoft Dynamics Lifecycle Servicesiä (LCS) käytetään heikolla internet-yhteydellä.
 - [Ominaisuudet, joita ei ole tällä hetkellä otettu käyttöön paikallisissa käyttöönotoissa](features-not-implemented-on-prem.md)
 - [Infrastruktuurin vähimmäisvaatimukset](system-requirements-on-prem.md#minimum-infrastructure-requirements)

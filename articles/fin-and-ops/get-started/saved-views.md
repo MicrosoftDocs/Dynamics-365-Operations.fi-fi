@@ -3,13 +3,12 @@ title: Tallennetut näkymät
 description: Tässä aiheessa kuvataan, miten tallennettujen näkymien toimintoja käytetään.
 author: jasongre
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,17 +16,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: ea2f2dbd615480bb76e1d04a106ae69bf6f45f4b
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: 9d19987a44c467381828acb81b6161601268d84f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620775"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863057"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
 [!include [banner](../includes/banner.md)]
-[!include [private preview banner](../includes/private-preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Johdanto
 Mukautuksella on tärkeä rooli, kun käyttäjät ja organisaatiot voivat optimoida käyttäjäkokemuksensa Microsoft Dynamics 365 for Finance and Operationsissa tarpeidensa tyydyttämiseksi. Lisätietoja mukauttamisesta on kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md).
@@ -49,13 +48,13 @@ Näkymän valitsimessa on kaksi kokovaihtoehtoa:
 
 -   **Suuret näkymävalitsimet**: Sivuilla, jotka ovat näkyvästi esillä luettelossa on suurempi näkymävalitsin muutamista syistä. Mikä tärkeintä, suuremman näkymän valitsin ilmaisee sivut, joilla näkymässä voi olla käyttäjän määrittämiä suodattimia. Koska suodattimet sisältyvät näkymään, suuremman valitsimen koko on myös oikeutettu, koska näkymien nimet ovat usein paras kuvaus näytössä näytettyjen tietojen kuvauksessa, ja oletuksena on, että käyttäjät vaihtavat näkymää useammin näillä sivutyypeillä.  
  
--   **Pienet näkymävalitsimet**: Kaikilla muilla kokosivun lomakkeilla on pienempi näyttövalitsin, joka näkyy sivun otsikon vieressä. Näillä sivuilla olevat näkymät sisältävät vain räätälöinnit (eivätkä käyttäjän määrittämiä suodattimia). Näillä sivuilla lomakkeen otsikko tai tietueen otsikko on usein tärkein tieto lomakkeen yläosassa. Pienempi koko kuvaa myös näiden sivujen odotettua pienempää näyttökertojen määrää. 
+-   **Pienet näkymävalitsimet**: Kaikilla muilla kokosivun lomakkeilla (paitsi työtiloissa ja koontinäytöissä) on pienempi näyttövalitsin, joka näkyy sivun otsikon vieressä. Näillä sivuilla olevat näkymät sisältävät vain räätälöinnit (eivätkä käyttäjän määrittämiä suodattimia). Näillä sivuilla lomakkeen otsikko tai tietueen otsikko on usein tärkein tieto lomakkeen yläosassa. Pienempi koko kuvaa myös näiden sivujen odotettua pienempää näyttökertojen määrää. 
  
 Jos napsautat näkymän nimeä, näyttöön tulee valintaikkunanäkymä, jossa näkyy käytettävissä olevien näkymien luettelo.
 
 -    **Perinteinen näkymä**: Perinteinen näkymä on sivun ulkopuolella oleva näkymä, johon ei ole kohdistettu täsmällisiä mukautuksia.  
 -    **Henkilökohtaiset näkymät**: Näkymät ilman riippulukkoja edustavat henkilökohtaisia näkymiä. Nämä ovat näkymiä, jotka joko olet luonut tai jotka järjestelmänvalvoja on antanut sinulle.  
--    **Lukitut näkymät**: Joidenkin näkymien (kuten perinteisen näkymän ja roolille julkaistujen näkymien) vieressä on lukko, joka ilmaisee, että näitä näkymiä ei voi muokata. Sivun käytön ympärillä olevat epäsuorat mukautukset tallennetaan kuitenkin automaattisesti, esimerkiksi ruudukkosarakkeen leveyden muuttaminen tai pikavälilehden laajentaminen tai kutistaminen. Voit kuitenkin tehdä henkilökohtaisen näkymän lukitun näkymän perusteella käyttämällä **Tallenna kopio** -toimintoa, jos sinulla on mukautusoikeudet.
+-    **Lukitut näkymät**: Joidenkin näkymien (kuten perinteisen näkymän ja roolille julkaistujen näkymien) vieressä on lukko, joka ilmaisee, että näitä näkymiä ei voi muokata. Sivun käyttöä vastaavat epäsuorat mukautukset tallennetaan kuitenkin automaattisesti, esimerkiksi ruudukkosarakkeen leveyden muuttaminen tai pikavälilehden laajentaminen tai kutistaminen. Voit kuitenkin tehdä henkilökohtaisen näkymän lukitun näkymän perusteella käyttämällä **Tallenna kopio** -toimintoa, jos sinulla on mukautusoikeudet.
 -    **Uudet näkymät**: Julkaistut näkymät, joita ei ole vielä avattu, rajataan näkymän nimen vasemmalla puolella olevalla sparkilla.  
 
 Jos haluat siirtyä toiseen näkymään, avaa ensin näkymävalitsin ja valitse sitten ladattava näkymä. 
@@ -75,7 +74,7 @@ Jos haluat tallentaa muutokset, toimi seuraavasti.
      3.    Valitse **Tallenna**.
 
 ## <a name="changing-the-default-view"></a>Oletusnäkymän muuttaminen
-Oletusnäkymä on näkymä, jota järjestelmä yrittää avata, kun siirryt sivulle. Määritä tämä näkymään, jota odotat käyttävän usein.  
+Oletusnäkymä on näkymä, jota järjestelmä yrittää avata, kun siirryt sivulle. Määritä tämä näkymään, jota odotat käyttäväsi useimmiten.  
 
 Voit vaihtaa sivun oletusnäkymää toimimalla seuraavasti: 
 1.  Siirry oletusnäkymään, jota käytät. 
@@ -100,14 +99,14 @@ Kaikki tähän valintaikkunaan tehdyt muutokset tulevat voimaan, kun valitset **
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Räätälöintien hallinta organisaatiotasolla näkymien avulla
 Jos haluat tietää, miten personointia hallitaan organisaation tasolla, tarkista ensin, miten personoinnin hallinta on toiminut ennen näkymiä.  
 
-Ilman näkymiä järjestelmänvalvojat käyttävät sivun personointijoukkoa käyttäjälle, käyttäjäryhmälle tai käyttäjille, jotka käyttävät mukautuslomaketta. Jos näillä käyttäjillä on mukautusoikeudet, räätälöinnit otetaan käyttöön kyseiselle sivulle. Ei kuitenkaan ollut mitään mahdollisuutta estää käyttäjiä edelleen räätälöimästä sivua, mikä tarkoitti sitä, että organisaatio ei pystynyt varmistamaan, että käyttäjillä olisi yhdenmukainen käyttöliittymä. Jos jollakin näistä käyttäjistä ei ollut mukautusoikeuksia, järjestelmänvalvojan antamia mukautuksia ei ladattu. Jos uusia käyttäjiä palkattiin organisaatioon, järjestelmänvalvojien piti ladata manuaalisesti käyttäjän personointeja. Ei ollut automaattista mekanismia, jolla voisi määrittää tietyt räätälöinnit, jotka olisivat saatavilla tietylle käyttäjälle.
+Ilman näkymiä järjestelmänvalvojat käyttävät sivun personointijoukkoa käyttäjälle, käyttäjäryhmälle tai käyttäjille mukautussivun kautta. Jos näillä käyttäjillä on mukautusoikeudet, räätälöinnit otetaan käyttöön kyseiselle sivulle. Ei kuitenkaan ollut mitään mahdollisuutta estää käyttäjiä edelleen räätälöimästä sivua, mikä tarkoitti sitä, että organisaatio ei pystynyt varmistamaan, että käyttäjillä olisi yhdenmukainen käyttöliittymä. Jos jollakin näistä käyttäjistä ei ollut mukautusoikeuksia, järjestelmänvalvojan antamia mukautuksia ei ladattu. Jos uusia käyttäjiä palkattiin organisaatioon, järjestelmänvalvojien piti ladata manuaalisesti käyttäjän personointeja. Ei ollut automaattista mekanismia, jolla voisi määrittää tietyt räätälöinnit, jotka olisivat saatavilla tietyssä roolissa oleville käyttäjille.
 
 Tallennetut näkymät -ominaisuuden avulla räätälöinnin hallinta on huomattavasti helpompaa, mikä johtuu pääasiassa mahdollisuudesta julkaista näkymiä käyttöoikeusrooleihin. Kun näkymä on julkaistu, kuka tahansa käyttäjä, jolla on kyseinen rooli, voi käyttää tätä näkymää riippumatta siitä, mikä on käyttäjän mahdollisuus mukauttaa. Vaikka jokaisella käyttäjällä on kopio julkaistusta näkymästä, jossa sivun käyttö (implisiittiset personoinnit) otetaan automaattisesti käyttöön, yksikään käyttäjä ei voi tallentaa eksplisiittisiä personointeja tai päivityksiä kyselyyn julkaistuun näkymään (mikä tarkoittaa, että julkaistut näkymät on lukittu). Lisäksi, jos uusille käyttäjille annetaan rooli, johon näkymä on julkaistu, he näkevät automaattisesti rooleihin liitetyt näkymät ilman järjestelmänvalvojan toimia. Vastaavasti jos käyttäjä muuttaa rooleja organisaatiossa, heidän vanhaan rooliinsa liittyvät näkymät eivät enää ole niiden käytettävissä. Julkaistun näkymän päivitykset voidaan jakaa helposti käyttäjille julkaisemalla näkymä uudelleen asianmukaisille käyttöoikeusrooleille.
 
 Julkaisutoiminnon avulla organisaatiot voivat määrittää heidän liiketoimintaansa varten optimoituja yrityksen vakionäkymiä, jotka on kohdistettu käyttäjille tietyissä turvallisuusrooleissa.  
 
 ## <a name="publishing-views"></a>Julkaisunäkymät
-Julkaisuprosessin aikana näkymät voidaan liittää yhteen tai useaan käyttöoikeusrooliin, mikä tarkoittaa, että kuka tahansa käyttäjä, jolla on kyseinen rooli, voi käyttää tätä näkymää, vaikka hän ei voi muokata näkymää. Tällä hetkellä vain järjestelmänvalvojilla on oikeus käyttää **Julkaisu**-toimintoa näkymän valitsimen avattavasta valikosta.  
+Julkaisuprosessin aikana näkymät voidaan liittää yhteen tai useaan käyttöoikeusrooliin, mikä tarkoittaa, että kuka tahansa käyttäjä, jolla on kyseinen rooli, voi käyttää tätä näkymää, vaikka hän ei voi muokata näkymää. Tällä hetkellä vain järjestelmänvalvojilla on **Julkaise**-toiminnon oikeudet näkymän valitsimen avattavassa valikossa, mutta tulevassa päivityksessä on uusi käyttöoikeusrooli, joka antaa julkaisuoikeudet muille luotetuille käyttäjille.  
 
 Julkaise näkymä seuraavien ohjeiden avulla: 
 1.  Luo ja tallenna sen näkymän henkilökohtainen kopio, jonka haluat julkaista. 
@@ -150,14 +149,19 @@ Kaikki tähän valintaikkunaan tehdyt muutokset tulevat voimaan, kun **Tallenna*
 
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Miten voin ottaa tallennetut näkymät käyttöön omassa ympäristössäni? 
-Jos haluat ottaa tallennetut näkymät käyttöön, järjestelmänvalvojan on tehtävä seuraavat toimet: 
-1.  Siirry **Mukautus**-sivulle käyttämällä siirtymishakua. 
-2.  Valitse **Asetukset**-välilehti.
-3.  Määritä **Ota tallennetut näkymät käyttöön** -asetukseksi **Kyllä**.
+Voit ottaa tallennetut näkymät käyttöön, kun ominaisuus on esikatselussa, toimimalla seuraavasti: 
 
-Kun tämä toiminto on otettu käyttöön, kaikki myöhemmät käyttäjäistunnot alkavat näkymien ollessa käytössä.  
+1.  **Ota pikapäivitys käyttöön**: Suorita seuraava SQL-lause: 
 
-Huomaa, että jos mukauttaminen on poistettu käytöstä ympäristössä, näkymät otetaan käyttöön, vaikka noudattaisit edellä mainittuja vaiheita. Tämä johtuu siitä, että näkymät-toiminto on rakennettu personointi-alijärjestelmän yläosaan.
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
+
+2.  **Etsi ominaisuus**: Siirry **Ominaisuuksien hallinta** -työtilaan. Jos **Tallennetut näkymät** eivät näy luettelossa, valitse **Tarkista päivitykset** -painike.   
+
+3.  **Ota ominaisuus käyttöön**: Etsi **Tallennetut näkymät** -ominaisuus ominaisuuksien luettelosta ja napsauta **Ota käyttöön nyt** -painiketta tietoruudussa.
+
+Kaikki myöhemmät käyttäjäistunnot alkavat, kun tallennetut näkymät ovat käytössä.  
+
+Huomaa, että jos mukauttaminen on poistettu käytöstä ympäristössä, näkymät poistetaan käytöstä, vaikka noudattaisit edellä mainittuja vaiheita. Tämä johtuu siitä, että näkymät-toiminto on rakennettu personointi-alijärjestelmän yläosaan.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Mitä tapahtuu olemassa oleville räätälöinteille, kun näkymät ovat käytössä? 
 Kun näkymät ovat käytössä, käyttäjän ja lomakkeen aiemmat mukautukset tallennetaan uuteen **Oma näkymä** -näkymään, joka määritetään automaattisesti oletusnäkymäksi. Tämän on tarkoitus varmistaa, että käyttökokemus on yhtenäinen sekä ennen näkymien käyttöönottoa että sen jälkeen, lukuun ottamatta lomakkeissa näkyvän näkymän valitsin-ohjausobjektia.  
@@ -166,7 +170,7 @@ Kun näkymät ovat käytössä, käyttäjän ja lomakkeen aiemmat mukautukset ta
 Näkymiä voi käyttää useimmilla, mutta ei kaikilla Finance and Operations -sivuilla. Näkymät ovat tällä hetkellä käytettävissä kaikilla koko näytön sivuilla lukuun ottamatta koontinäyttöjä ja työtiloja. Muut kuin kokonäytön sivut, joihin sisältyvät valintaikkunat, avattavat dialogit, haut ja parannetut esikatselut, eivät myöskään tue näkymiä. Lisäsivutyyppien, kuten työtilojen ja valintaikkunoiden, tuen tarkasteleminen voidaan ottaa huomioon tulevassa päivityksessä.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Kuka saa julkaista näkymiä?
-Tällä hetkellä järjestelmänvalvojat ovat ainoat käyttäjät, joilla on oikeus julkaista näkymiä.  Suunnitteilla on uusi käyttöoikeusrooli, joka antaa asiakkaille enemmän joustavuutta julkaisuihin.  
+Tällä hetkellä järjestelmänvalvojat ovat ainoat käyttäjät, joilla on oikeus julkaista näkymiä.  Tulevassa päivityksessä on suunnitteilla uusi käyttöoikeusrooli, joka antaa asiakkaille enemmän joustavuutta julkaisuihin.  
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Miksi suodattimia ei voi tallentaa tämän näkymän avulla? 
 On olemassa muutamia syitä siihen, miksi suodatin ei ehkä näy tallennettavassa näkymässä: 
@@ -179,4 +183,4 @@ On olemassa muutamia syitä siihen, miksi suodatin ei ehkä näy tallennettavass
      
   Näissä tapauksissa saat ilmoituksen, kun näkymä latautuu. Voit myös vahvistaa sen siirtymällä tähän näkymään sivun latautuessa, sillä sen pitäisi mahdollistaa näkymäkyselyn suorittaminen riippumatta.  
 
-- Kyseessä oleva sivu ei ehkä tue näkymiä oikein, sillä se voi ohittaa tarkastelukyselyn kokonaan. Ilmoita tällaisista tapauksista **Palaute**-mekanismin kautta. Pääset palautesivulle valitsemalla **Ohje ja tuki** ja sitten **Palaute**.  
+- Kyseinen sivu ei ehkä tue näkymiä oikein, sillä se saattaa ohittaa näkymäkyselyn kokonaan tai käyttää väliaikaista taulukkoa, jonka tiedot eivät ole pysyviä. 

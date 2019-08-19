@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 8427d53bac3216d362b2bf8983a847f069351b3b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8ec6268daa7c7b6c455aad571ef22c083283b5d9
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559969"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839276"
 ---
 # <a name="financial-consolidations-and-currency-translation"></a>Taloushallinnon konsolidoinnit ja valuutan muunto
 
@@ -38,7 +38,7 @@ Tämä ohjeaihe on kirjoitettu käyttäjille ja toiminnallisille konsulteille. S
 Tämä ohjeaihe on tarkoitettu taloushallinnon ja kirjanpidon käyttäjille sekä sovelluskonsulteille, jotka haluavat konsolidoida monen yrityksen tietoja ja tietoja, joissa on käytössä monta valuuttaa, Finance and Reportingin ja taloushallinnon raporttien avulla.
 
 ## <a name="approach"></a>Menetelmä
-Finance and Operations käsittelee konsolidoinnin erillisen yrityksen avulla. Tällä tavoin konsolidointi voidaan tehdä yhdessä esiintymässä samalla, kun  tietoja on mahdollista tuoda muista lähteistä. Konsolidointiprosessi on suoritettava aina, kun lähdeyrityksiin tehdään muutoksia.
+Finance and Operations käsittelee konsolidoinnin erillisen yrityksen avulla. Tällä tavoin konsolidointi voidaan tehdä yhdessä esiintymässä samalla, kun tietoja on mahdollista tuoda muista lähteistä. Konsolidointiprosessi on suoritettava aina, kun lähdeyrityksiin tehdään muutoksia.
 
 Taloushallinnon raportointi voi konsolidoida useita yrityksiä raportin laatimisen aikana. Vaikka tiedot tallennetaan tietovaraston osajoukkoon, versioidaan ja voidaan viedä, kukin lähdeyritys omistaa tietosäilön. Raportin voi suorittaa milloin tahansa vaikkapa minuutin välein. Siinä monia lisäetuja, kuten mahdollisuus porautua kaikkiin yrityksiin ja dimensioihin.
 
@@ -114,7 +114,7 @@ Myös Vie yrityksen saldot -toiminto toimii Konsolidoi verkossa -toiminnon tavoi
 Voit eliminoida konsernin sisäiset tapahtumat luomalla eliminointisäännön. Vaihtoehtoisesti voit tehdä manuaalisen eliminointimerkinnän yrityksessä, joka määritetty eliminointiyritykseksi. Jos luot eliminointisäännön, sinulla on kaksi eliminointimenetelmävaihtoehtoa: **Nettomuutos** ja **Kiinteä**.
 
 ### <a name="set-up-elimination-rules"></a>Määritä eliminointisääntöjä
-Kun määrität eliminointisääntöjä Dynamics 365 for Operationsissa, voit luoda nimenomaisesti eliminoinnissa käytettävän taloushallinnon dimension. Useimmat asiakkaat antavat tälle taloushallinnon dimensiolle nimen **Kauppakumppani** tai jotain vastaavaa. Jos et halua käyttää taloushallinnon dimensiota, varmista, että sinulla on päätilejä, joita käytetään vain konserniyritysten välisissä tapahtumissa.
+Kun määrität eliminointisääntöjä Finance and Operationsissa, voit luoda nimenomaisesti eliminoinnissa käytettävän taloushallinnon dimension. Useimmat asiakkaat antavat tälle taloushallinnon dimensiolle nimen **Kauppakumppani** tai jotain vastaavaa. Jos et halua käyttää taloushallinnon dimensiota, varmista, että sinulla on päätilejä, joita käytetään vain konserniyritysten välisissä tapahtumissa.
 
 Eliminointiasetukset ovat **Konsolidoinnit**-moduulin **Asetukset**-alueelta. Kun annat säännön kuvauksen, sinun on valittava yritys, johon eliminoinnin kirjauskansio kirjataan. Valitun yrityksissä on oltava **Käytetään taloushallinnon eliminointiprosessissa** valittuna.
 

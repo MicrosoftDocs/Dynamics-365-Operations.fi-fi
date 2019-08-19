@@ -3,14 +3,14 @@ title: Toimittajan laskujen yleiskatsaus
 description: Tässä aiheessa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin.
 author: abruer
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
-ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
+ms.openlocfilehash: c69291214796847af7169cf261865860998f0d27
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625076"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863320"
 ---
 # <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 Tässä aiheessa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin.
 
@@ -90,6 +90,13 @@ Toimittajalaskua käytettäessä sitä ei voi muokata toiselle käyttäjälle. L
 Voit käyttää **Palauta toimittajalaskut** -sivua palauttaaksesi tai vapauttaaksesi toimittajalaskut, jotka ovat olleet käytössä yli 4 tuntia, jotta niitä voidaan muokata. Voit avata sivun **Kausittainen tehtävä** -valikosta tai -ruudusta **Laskun toimittajatapahtuma**-työtilassa. Kun lasku on palautettu, se on käytettävissä muokkaamista varten **Toimittajalasku**-sivulla.
 
 Saat käyttöösi **Palauttaa toimittajalaskut** -sivun vain, jos **Palauta käytössä olevat toimittajalaskut** -suojausvelvollisuudet ja oikeudet on määritetty itsellesi. Lisäksi **Salli toimittajalaskun palautus** -parametri **Ostoreskontran parametrit** -sivulla on otettu käyttöön.
+
+## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Työn kulun tilan nollaaminen toimittajan laskuja varten laskusta, jota ei voi palauttaa luonnokseksi
+
+Peruuttamattoman virheen vuoksi pysäytetyn työnkulun esiintymän työnkulun tila on **peruuttamaton**. Kun toimittajan laskun työnkulun tila on **Peruuttamaton**, voit palauttaa sen **Luonnos**-tilaan valitsemalla **Peruuta**. Voit sitten muokata toimittajan laskua. Tämä toiminto on käytettävissä, jos **ominaisuuden hallinta** -sivun **toimittajan laskun työnkulun parametrin palautusluonnos** on päällä.
+
+Voit palauttaa työnkulun tilaksi **Luonnos** käyttämällä **Työnkulkuhistoria**-sivua. Voit avata tämän sivun **Toimittajan lasku** -kohdasta tai kohdasta **Yhteiset > Kyselee** > Työnkulku. Voit nollata työn kulun tilaksi **Luonnos**valitsemalla **Peruuta**. Voit myös nollata työn kulun tilaksi Luonnos valitsemalla **Peruuta**-toiminnon **Toimittajan lasku**- tai **Odottavat toimittajan laskut** -sivulla. Kun työnkulun tila palautetaan **luonnos**-tilaan, se on muokattavissa **toimittajan lasku** -sivulla.
+
 
 
 ## <a name="additional-resources"></a>Lisäresurssit

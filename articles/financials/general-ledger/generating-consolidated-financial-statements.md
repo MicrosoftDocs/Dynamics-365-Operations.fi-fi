@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557728"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863697"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 
@@ -49,11 +49,11 @@ Seuraavan kuvan konsolidoitu raportti näyttää, miten kutakin yritystä voi ta
 
 Voit luoda myös monitasoisen raporttipuun, joka sisältää tarvittavan määrän tasoja. Seuraavassa kuvassa on monitasoinen raporttipuun määritys, jossa koonti tapahtuu koko maailman alueiden mukaan.
 
-![Monitasoinen raporttipuun määritys aluekohtaisilla koonneilla](./media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png "Monitasoinen raporttipuun määritys aluekohtaisilla koonneilla")
+![Monitasoinen raporttipuun määritys aluekohtaisilla koonneilla](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Monitasoinen raporttipuun määritys aluekohtaisilla koonneilla")
 
 Seuraavassa kuvassa on monitasoinen raporttipuun määritys, jossa koonti tapahtuu toiminnon mukaan.
 
-![Monitasoinen raporttipuun määritys toimintokohtaisilla koonneilla](./media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png "Monitasoinen raporttipuun määritys toimintokohtaisilla koonneilla")
+![Monitasoinen raporttipuun määritys toimintokohtaisilla koonneilla](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Monitasoinen raporttipuun määritys toimintokohtaisilla koonneilla")
 
 ### <a name="viewing-companies-side-by-side"></a>Yritysten tarkastelu rinnakkain
 Monet asiakkaat käyttävät mielellään raportteja, joissa yritykset näkyvät rinnakkain ja joissa konsolidoitu kokonaissumma näkyy sarakkeessa. Tämä muoto on helppo toteuttaa raporttipuun luonnin jälkeen. Yleistasolla konsolidoitujen raporttien yritysten näyttäminen rinnakkain sisältää seuraavat vaiheet.
@@ -98,7 +98,7 @@ Anna raporttipuun määrityksessä omistusosuus **Koontiprosentti**-sarakkeessa 
 > [!NOTE]
 > Voit käyttää tätä omistusosuutta missä tahansa raporttiyksikössä myös muualla kuin yritystasolla. 
 
-![Raporttipuun määrityksen prosenttiosuuden käyttäminen](./media/Using-reporting%20tree-definition-percentage.png "Raporttipuun määrityksen prosenttiosuuden käyttäminen")
+![Raporttipuun määrityksen prosenttiosuuden käyttäminen](./media/Using-reporting-tree-definition-percentage.png "Raporttipuun määrityksen prosenttiosuuden käyttäminen")
 
 Kun raportti laaditaan, Contoso Germany -raportti näyttää 100 prosenttia myyntisummasta. 80 prosenttia tästä summasta kohdistetaan ja kootaan myynnin konsolidoidulle tasolle.
 

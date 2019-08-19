@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
-ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
+ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625869"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849506"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 
@@ -215,12 +215,12 @@ Seuraavassa taulukossa esitellään tietojenkäsittelytoiminnot, jotka ovat käy
 | TODAY () | Palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän päivämääräarvona. | |
 | NULLDATE () | Palauttaa **tyhjän** päivämäärän arvon. | |
 | NULLDATETIME () | Palauttaa **tyhjän** päivämäärän ja ajan arvon. | |
-| DATETIMEFORMAT (päivämäärä ja aika, muoto) | Muuntaa määritetyn päivämäärän ja ajan arvon tietyssä muodossa olevaksi merkkijonoksi. (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän 24.12.2015 muodossa **24-12-2015** määritetyn mukautetun muodon mukaisesti. |
-| DATETIMEFORMAT (päivämäärä ja aika, maa-asetukset) | Muuntaa määritetty päivämäärän ja ajan arvon merkkijonoksi, joka on määritetyssä muodossa ja jolla on määritetyt [maa-asetukset](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän 24.12.2015 muodossa **24.12.2015** valitun Saksan maa-asetuksen mukaisesti. |
+| DATETIMEFORMAT (päivämäärä ja aika, muoto) | Muuntaa määritetyn päivämäärän ja ajan arvon tietyssä muodossa olevaksi merkkijonoksi. (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän 24.12.2015 muodossa **24-12-2015** määritetyn mukautetun muodon mukaisesti. |
+| DATETIMEFORMAT (päivämäärä ja aika, maa-asetukset) | Muuntaa määritetty päivämäärän ja ajan arvon merkkijonoksi, joka on määritetyssä muodossa ja jolla on määritetyt [maa-asetukset](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** palauttaa nykyisen Finance and Operations -sovelluspalvelimen päivämäärän 24.12.2015 muodossa **24.12.2015** valitun Saksan maa-asetuksen mukaisesti. |
 | SESSIONTODAY () | Palauttaa nykyisen Finance and Operations -istunnon päivämäärän päivämääräarvona. | |
 | SESSIONNOW () | Palauttaa nykyisen Finance and Operations -istunnon päivämäärän ja kellonajan päivämäärän ja ajan arvona. | |
 | DATEFORMAT (päivämäärä, muoto) | Palauttaa määritetyssä muodossa olevan määritetyn päivämäärän merkkijonon esityksen. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24-12-2015** määritetyn mukautetun muodon mukaisesti. |
-| DATEFORMAT (päivämäärä, muoto, maa-asetus) | Muunna määritetty päivämäärän arvo merkkijonoksi, joka on määritetyssä muodossa ja jolla on määritetyt [maa-asetukset](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24.12.2015** valitun Saksan maa-asetuksen mukaisesti. |
+| DATEFORMAT (päivämäärä, muoto, maa-asetus) | Muunna määritetty päivämäärän arvo merkkijonoksi, joka on määritetyssä muodossa ja jolla on määritetyt [maa-asetukset](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Lisätietoja tuetuista muodoista on kohdassa [vakio](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) ja [mukautettu](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** palauttaa nykyisen Finance and Operations -istunnon päivämäärän 24.12.2015 muodossa **24.12.2015** valitun Saksan maa-asetuksen mukaisesti. |
 | DAYOFYEAR (päivämäärä) | Palauttaa tammikuun 1. päivän ja määritetyn päivämäärän välisten päivien määrän kokonaislukuna. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** palauttaa arvon **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** palauttaa arvon **1**. |
 | DAYS (päivämäärä 1, päivämäärä 2) | Palauttaa ensimmäisen ja toisen määritetyn päivämäärän välisten päivien määrän. Palauttaa positiivisen arvon, kun ensimmäinen päivämäärä on myöhemmin kuin toinen päivämäärä, palauttaa arvon **0** (nolla), kun ensimmäinen päivämäärä on sama kuin toinen päivämäärä. Palauttaa negatiivisen arvon, kun ensimmäinen päivämäärä on aikaisempi kuin toinen päivämäärä. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** palauttaa arvon **-1**. |
 
@@ -649,12 +649,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>NUMBERFORMAT (numero, muoto)</td>
-<td>Palauttaa määritetyssä muodossa olevan määritetyn numeron merkkijonomuodon. (Lisätietoja tuetuista muodoista: <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">vakio</a> ja <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">mukautettu</a>.)</td>
+<td>Palauttaa määritetyssä muodossa olevan määritetyn numeron merkkijonomuodon. (Lisätietoja tuetuista muodoista: <a href="https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx">vakio</a> ja <a href="https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx">mukautettu</a>.)</td>
 <td>Maa-asetuksella EN-US <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> palauttaa arvon <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> palauttaa arvon <strong>&quot;10&quot;</strong>.</td>
 </tr>
 <tr>
 <td>NUMBERFORMAT (numero, muoto, maa/alue)</td>
-<td>Palauttaa määritetyssä muodossa ja annetussa maa-asetuksessa olevan määritetyn numeron merkkijonon esityksen. (Lisätietoja tuetuista muodoista on kohdassa <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">vakio</a> ja <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">mukautettu</a>.)</td>
+<td>Palauttaa määritetyssä muodossa ja annetussa maa-asetuksessa olevan määritetyn numeron merkkijonon esityksen. (Lisätietoja tuetuista muodoista on kohdassa <a href="https://docs.microsoft.com/dotnet/standard/base-types/standard-numeric-format-strings">vakio</a> ja <a href="https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings">mukautettu</a>.)</td>
 <td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong>palauttaa muodon <strong>3,33</strong>, kun taas <strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> palauttaa muodon <strong>3.33</strong>.</td>
 </tr>
 <tr>

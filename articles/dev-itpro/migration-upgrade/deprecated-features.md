@@ -3,7 +3,7 @@ title: Vanhentuneet tai poistetut ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.
 author: sericks007
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624904"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863380"
 ---
 # <a name="removed-or-deprecated-features"></a>Poistetut tai vanhentuneet ominaisuudet
 
@@ -40,10 +40,32 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 
 > Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: [Tekniset viitetiedot](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.
 
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 ja Platform update 28
+## <a name="dynamics-365-for-finance-and-operations-1005-with-platform-update-29"></a>Dynamics 365 for Finance and Operations 10.0.5 ja Platform update 29
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 ja Platform update 28 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).
+> Dynamics 365 for Finance and Operations 10.0.5 ja Platform update 29 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="us-payroll-tax-updates"></a>Yhdysvaltain palkkahallinnon veropäivitykset
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Olemme poistamassa Yhdysvaltojen palkanlaskennan veropäivitysten toiminnon, koska on vähän käyttöä ja saatavilla parannettu toiminnallisuus, joka on nyt tarjolla strategisten integrointien kautta.  |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Palkanlaskenta |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: 1.10.2021 lähtien emme aio enää tarjota veropäivityksiä Yhdysvaltain palkanlaskennan asiakkaille. Toiminnallisuus säilyy tuotteessa, mutta parannukset eivät enää säilytä toimintoja ajan tasalla, ja kaikki tuoteviat arvioidaan tapaus kerrallaan. Lisätietoja on kohdassa [Veropäivitykset lopetetaan Yhdysvaltain palkanlaskennan ominaisuudesta Microsoft Dynamics 365 for Finance and Operationsista](https://aka.ms/financepayrollfaq). |
+
+
+### <a name="data-management-staging-clean-up"></a>Tiedonhallinnan valmistelun tyhjennys
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Ei vastaa kausittaisen siivouksen aikataulutukseen tarvittavia perusvaatimuksia. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä, työhistorian puhdistustoiminto lisätään kokonaisvaltaisesti skenaarioiden vaatimusten mukaan. |
+| **Tuotealueet, joihin vaikutetaan**         | Tietojen hallinta |
+| **Käytön asetukset**              | Kaikki  |
+| **Tila**                         | Vanhentunut: Toiminnon poiston tavoiteajankohta on vuoden 2020 joulukuu. |
+
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 ja Platform update 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Ranska: FEC-kirjanpidon tiedot XML-muodossa
 
@@ -1235,7 +1257,7 @@ Sites Services -palveluiden avulla voit luoda sivustoja, jotka laajentavat liike
 
 ### <a name="virtual-company-accounts"></a>Virtuaaliyritykset
 
-Dynamics AX ei enää tue virtuaaliyritystoimintoa. Virtuaaliyritystoiminnon avulla käyttäjät pystyivät määrittämään tauluja yritysjoukon jaettavaksi. Toiminnon kuvaus on artikkelissa [Yrityksen tilit ja virtuaaliyrityksen tilit](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). Toiminto ryhmittää virtuaaliyrityksille määritetyiksi tauluiksi. Virtuaaliyritykset ovat olemassa olevien "oikeiden" yritysten ryhmiä. Kyselyjä luomalla kaikki virtuaaliyrityksen yritykset voivat käyttää liitettyjen taulukokoelmien taulujen tietoja.
+Dynamics AX ei enää tue virtuaaliyritystoimintoa. Virtuaaliyritystoiminnon avulla käyttäjät pystyivät määrittämään tauluja yritysjoukon jaettavaksi. Toiminnon kuvaus on artikkelissa [Yrityksen tilit ja virtuaaliyrityksen tilit](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Toiminto ryhmittää virtuaaliyrityksille määritetyiksi tauluiksi. Virtuaaliyritykset ovat olemassa olevien "oikeiden" yritysten ryhmiä. Kyselyjä luomalla kaikki virtuaaliyrityksen yritykset voivat käyttää liitettyjen taulukokoelmien taulujen tietoja.
 
 |   |  | 
 |------------|--------------------|

@@ -3,25 +3,25 @@ title: Aseta menettelytavat hankintaluokkien hierarkioille
 description: Tämän toiminnon avulla voit määrittää säännöt luokan tuotteiden tilaamista varten.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d1fdf357466de12bd0188fc43cd266c67af762c7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 230794eacd5e9911496dd3826f08126cc21494cb
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569911"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844170"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Aseta menettelytavat hankintaluokkien hierarkioille
 
@@ -31,31 +31,24 @@ Tämän toiminnon avulla voit määrittää säännöt luokan tuotteiden tilaami
 
 
 ## <a name="find-the-procurement-policy"></a>Paikanna hankintakäytäntö
-1. Siirry kohtaan Hankinnat > Asetukset > Käytännöt > Ostokäytännöt.
-2. Napsauta hankintakäytännön USMF linkkiä.
-    * Tämä on käytäntö, johon sääntö lisätään. Käytännön on oltava aktiivinen.  
+1. Siirry siirtymisruudussa kohtaan **Moduulit > Hankinta > Asetukset > Käytännöt > Ostokäytännöt**.
+2. Napsauta hankintakäytännön USMF linkkiä. Tämä on käytäntö, johon sääntö lisätään. Käytännön on oltava aktiivinen.  
 
 ## <a name="create-a-category-access-rule"></a>Luokan käyttöoikeussäännön luominen
-1. Valitse luokan käyttöoikeuskäytäntöjen sääntö.
-    * Jos Luo käytäntösääntö -painike näkyy himmennettynä, luokan käytössä on jo aktiivinen käytäntösääntö. Tarkista voimassaolo- ja erääntymispäiväkentistä mikä säännöistä on kyseessä, valitse se ja napsauta Keskeytä käytäntösääntö -painiketta. Mitään ei tarvitse tehdä, jos Luo käytäntösääntö -painike on käytettävissä.  
-2. Valitse Luo käytäntösääntö.
-3. Syötä päivämäärä ja kellonaika Voimaantulopäivä-kenttään.
-    * Aika ei saa olla päällekkäinen toisen, aktiivisen säännön kanssa.  
-    * Valitse luokka, jota sääntö koskee. Kirjaa luokka muistiin – sitä tarvitaan myöhemmin. Kun valitset jonkin luokan, myös sen pääluokka tai -luokat lisätään myös Valitut luokat -luetteloon.  
-    * Valitse Sisällytä aliluokat -asetus, jos haluat käyttää sääntöä kaikkiin valitun luokan alaluokkiin.  
-4. ValitseLisää.
-    * Jos asetat Sisällytä yläluokka -vaihtoehdon käyttöön, pääluokalle määrittämäsi käytäntösääntö määritetään myös tämän alaluokille, jos alaluokille ei ole määritetty käytäntösääntöä.  
-5. Valitse OK.
+1. Laajenna **Käytäntösäännöt**-pikavälilehti.
+2. Valitse **Käytäntösäännön tyyppi** -luettelosta **Luokan käyttöoikeuskäytäntösääntö**. Jos **Luo käytäntösääntö** -painike näkyy himmennettynä, luokan käytössä on jo aktiivinen käytäntösääntö. Tarkista **Voimassa**- ja **Vanhentuminen**-kentistä mikä säännöistä on kyseessä, valitse se ja napsauta **Keskeytä käytäntösääntö** -painiketta. Mitään ei tarvitse tehdä, jos **Luo käytäntösääntö** -painike on käytettävissä.  
+3. Valitse **Luo käytäntösääntö**.
+4. Syötä päivämäärä ja kellonaika **Voimaantulopäivä**-kenttään. Aika ei saa olla päällekkäinen toisen, aktiivisen säännön kanssa.  
+5. Valitse luokka, jota sääntö koskee. Kirjaa luokka muistiin – sitä tarvitaan myöhemmin. Kun valitset jonkin luokan, myös sen pääluokka tai -luokat lisätään myös Valitut luokat -luetteloon. Valitse **Sisällytä aliluokat** -asetus, jos haluat käyttää sääntöä kaikkiin valitun luokan alaluokkiin.
+6. Valitse nuoli oikealle, jos haluat lisätä kohteen **Valitut luokat** -luetteloon.  
+4. Valitse **OK**. Jos asetat **Sisällytä pääsääntö** -vaihtoehdon käyttöön, pääluokalle määrittämäsi käytäntösääntö määritetään myös tämän alaluokille, jos alaluokille ei ole määritetty käytäntösääntöä.
 
 ## <a name="create-a-category-policy-rule"></a>Luokan käytäntösäännön luominen
-1. Valitse luokan käytäntösääntö
-    * Jos Luo käytäntösääntö -painike on himmennettynä, valitse aktiivinen käytäntösääntö ja napsauta Keskeytä käytäntösääntö -painiketta.  
-2. Valitse Luo käytäntösääntö.
-3. Syötä päivämäärä ja kellonaika Voimaantulopäivä-kenttään.
-4. ValitseLisää.
-5. Valitse sama luokka, jota käytit luokan käyttöoikeussäännölle.
-6. Valitse vaihtoehto Toimittajan valinta -kentässä.
-    * Valitse sääntö, joka ohjaa luokan toimittajavalintaa, kun ostoehdotuksia luodaan.  
-7. Valitse Sulje.
-    * Määrittämäsi käytäntösäännöt ovat olleet kulutustyypin ostoehdotuksille. Jos haluat määrittää täydennystyypin ostoehdotusten käytäntöjä, luo sääntö käytäntösäännön tyypille "Täydennysluokan käyttöoikeuskäytäntöjen sääntö".  
+1. Valitse **Käytäntösäännön tyyppi** -luettelosta **Luokan käytäntösääntö**. Jos **Luo käytäntösääntö** -painike on himmennettynä, valitse aktiivinen käytäntösääntö ja napsauta **Keskeytä käytäntösääntö** -painiketta.  
+2. Valitse **Luo käytäntösääntö**.
+3. Syötä päivämäärä ja kellonaika **Voimaantulopäivä**-kenttään.
+4. Valitse **Lisää**.
+5. Valitse **Luokka**-kentässä sama luokka, jota käytit **luokan käyttöoikeussäännölle**.
+6. Valitse vaihtoehto **Toimittajan valinta** -kentässä. Valitse sääntö, joka ohjaa luokan toimittajavalintaa, kun ostoehdotuksia luodaan.  
+7. Valitse **Sulje**. Määrittämäsi käytäntösäännöt ovat olleet kulutustyypin ostoehdotuksille. Jos haluat määrittää täydennystyypin ostoehdotusten käytäntöjä, luo sääntö käytäntösäännön tyypille "Täydennysluokan käyttöoikeuskäytäntöjen sääntö".  
 

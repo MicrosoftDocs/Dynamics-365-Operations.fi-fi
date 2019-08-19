@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationMatchRule
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 22104
 ms.assetid: b0705653-1fa6-4d94-9728-bcf9fb387ad1
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c6cec76ebc8328f221ecb6c30ae93716bd9bfe9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5c76b38e957c1c76a80c76782f45405573b7f191
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546498"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842607"
 ---
 # <a name="advanced-bank-reconciliation-overview"></a>Pankkitilin täsmäytyksen lisätoimintojen yhteenveto
 
@@ -41,10 +41,10 @@ Pankkitilin täsmäytyksen lisätoimintojen avulla tuodaan tiliotteita. Tuotu ti
 2.  Määritä numerosarja pankin täsmäytyksen lisätoimintoja varten. Määritä myös pankin täsmäytyssäännöt.
     -   Täsmäytyssääntö on ehtojoukko, joilla suodatetaan tiliotteen rivejä ja Microsoft Dynamics 365 for Finance and Operationsin pankkitapahtuman rivejä täsmäytysprosessin aikana. Liiketoimintakäytäntöjesi mukaan voit määrittää useita vastaavia sääntöjä automatisoidaksesi ja optimoidaksesi täsmäytysprosessin.
 
-3.  Täsmäytä tiliotteet Microsoft Dynamics 365 for Finance and Operationsin pankkitapahtumien kanssa.
+3.  Täsmäytä tiliotteet Finance and Operationsin pankkitapahtumien kanssa.
     -   Suorita täsmäytyksen kirjauskansioille automaattinen täsmäytys ja luonti.
-    -   Tarkastele rinnakkain tiliotteita ja Dynamics 365 for Finance and Operationsin pankkitapahtumia.
-    -   Kirjaa Dynamics 365 for Finance and Operationsin pankkitapahtumat automaattisesti, jos ne näkyvät tiliotteella, mutta eivät Finance and Operationsissa.
+    -   Tarkastele rinnakkain tiliotteita ja Finance and Operationsin pankkitapahtumia.
+    -   Kirjaa Finance and Operationsin pankkitapahtumat automaattisesti, jos ne näkyvät tiliotteella, mutta eivät Finance and Operationsissa.
     -   Luo täsmäytystiliote.
 
 

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be23b99ddc224328cf067fe0bf36be93fcef4337
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561459"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846027"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Projektisopimusten ja projektien synkronointi Project Service Automationista suoraan Finance and Operationsiin
 
@@ -94,8 +94,8 @@ Kun Project Service Automationin ja Finance and Operationsin välistä integroin
 ## <a name="prerequisites-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
 - Tilit on synkronoitava, ennen kuin projektit ja projektisopimukset voidaan synkronoida.
-- Lisää yhteysjoukossa kohteen **msdyn\_organizationalunits** integraatioavainkentään määritykseksi **msdyn\_name \[Name\]**. Projekti on ehkä lisättävä ensin yhteysjoukkoon. Lisätietoja on kohdassa [Tietojen integrointi Common Data Service for Apps -ratkaisuun](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
-- Lisää yhteysjoukossa kohteen **msdyn\_projects** integraatioavainkentään määritykseksi **msdynce\_projectnumber \[Project Number\]**. Projekti on ehkä lisättävä ensin yhteysjoukkoon. Lisätietoja on kohdassa [Tietojen integrointi Common Data Service for Apps -ratkaisuun](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+- Lisää yhteysjoukossa kohteen **msdyn\_organizationalunits** integraatioavainkentään määritykseksi **msdyn\_name \[Name\]**. Projekti on ehkä lisättävä ensin yhteysjoukkoon. Lisätietoja on kohdassa [Tietojen integrointi Common Data Service for Apps -ratkaisuun](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+- Lisää yhteysjoukossa kohteen **msdyn\_projects** integraatioavainkentään määritykseksi **msdynce\_projectnumber \[Project Number\]**. Projekti on ehkä lisättävä ensin yhteysjoukkoon. Lisätietoja on kohdassa [Tietojen integrointi Common Data Service for Apps -ratkaisuun](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 - Projektisopimusten ja projektien **SourceDataID**-arvoksi voidaan määrittää jokin muu arvo. Se voidaan myös poistaa yhdistämismäärityksestä. Mallin oletusarvo on **Project Service Automation**.
 - **PaymentTerms**-määritys on päivitettävä vastaamaan kelvollisia Finance and Operationsin maksuehtoja. Voit myös poistaa projektitehtävän yhdistämismäärityksestä. Oletusarvon määritys sisältää esittelytietojen oletusarvot. Seuraava taulukko sisältää Project Service Automationin arvot.
 
