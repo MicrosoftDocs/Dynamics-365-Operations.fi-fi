@@ -10,42 +10,42 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonus
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6bbd6b78d05fcc9d95f6e6409db2619a210ad760
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 788cddf4d822fe3d3d6a33e83d7b30f32f4b6b9c
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571693"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1839878"
 ---
-# <a name="set-up-bonus-depreciation"></a><span data-ttu-id="ee5e7-103">Bonuspoiston määrittäminen</span><span class="sxs-lookup"><span data-stu-id="ee5e7-103">Set up bonus depreciation</span></span>
+# <a name="set-up-bonus-depreciation"></a><span data-ttu-id="c0dbc-103">Bonuspoiston määrittäminen</span><span class="sxs-lookup"><span data-stu-id="c0dbc-103">Set up bonus depreciation</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ee5e7-104">Tässä menettelyssä kerrotaan, miten erityinen poistovähennys luodaan ja liitetään käyttöomaisuuskirjaan.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-104">This procedure shows how to create a special depreciation allowance and associate it with a fixed asset book.</span></span> <span data-ttu-id="ee5e7-105">Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
+<span data-ttu-id="c0dbc-104">Tässä menettelyssä kerrotaan, miten erityinen poistovähennys luodaan ja liitetään käyttöomaisuuskirjaan.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-104">This procedure shows how to create a special depreciation allowance and associate it with a fixed asset book.</span></span> <span data-ttu-id="c0dbc-105">Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-105">It uses the accountant role and demo data for the USMF legal entity.</span></span>
 
 
-## <a name="create-a-special-depreciation-allowance"></a><span data-ttu-id="ee5e7-106">Erityisen poistovähennyksen luominen</span><span class="sxs-lookup"><span data-stu-id="ee5e7-106">Create a special depreciation allowance</span></span>
-1. <span data-ttu-id="ee5e7-107">Siirry kohtaan Käyttöomaisuus > Asetukset > Erityinen poistovähennys.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-107">Go to Fixed assets > Setup > Special depreciation allowance.</span></span>
-2. <span data-ttu-id="ee5e7-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-108">Click New.</span></span>
-3. <span data-ttu-id="ee5e7-109">Kirjoita Erityinen poistovähennys -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-109">In the Special depreciation allowance field, type a value.</span></span>
-4. <span data-ttu-id="ee5e7-110">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-110">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="ee5e7-111">Syötä Prosentti-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-111">In the Percentage field, enter a number.</span></span>
-    * <span data-ttu-id="ee5e7-112">Määritä summa, jos prosenttia ei ole ilmoitettu.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-112">If a percentage was not indicated, set an amount.</span></span>  
+## <a name="create-a-special-depreciation-allowance"></a><span data-ttu-id="c0dbc-106">Erityisen poistovähennyksen luominen</span><span class="sxs-lookup"><span data-stu-id="c0dbc-106">Create a special depreciation allowance</span></span>
+1. <span data-ttu-id="c0dbc-107">Siirry kohtaan Käyttöomaisuus > Asetukset > Erityinen poistovähennys.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-107">Go to Fixed assets > Setup > Special depreciation allowance.</span></span>
+2. <span data-ttu-id="c0dbc-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-108">Click New.</span></span>
+3. <span data-ttu-id="c0dbc-109">Kirjoita Erityinen poistovähennys -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-109">In the Special depreciation allowance field, type a value.</span></span>
+4. <span data-ttu-id="c0dbc-110">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="c0dbc-111">Syötä Prosentti-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-111">In the Percentage field, enter a number.</span></span>
+    * <span data-ttu-id="c0dbc-112">Määritä summa, jos prosenttia ei ole ilmoitettu.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-112">If a percentage was not indicated, set an amount.</span></span>  
 
-## <a name="associate-a-special-depreciation-allowance-with-a-fixed-asset-group-book"></a><span data-ttu-id="ee5e7-113">Erityisen poistovähennyksen liittäminen käyttöomaisuusryhmän kirjaan</span><span class="sxs-lookup"><span data-stu-id="ee5e7-113">Associate a special depreciation allowance with a fixed asset group book</span></span>
-1. <span data-ttu-id="ee5e7-114">Siirry kohtaan Käyttöomaisuus > Asetukset > Käyttöomaisuusryhmät.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-114">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
-2. <span data-ttu-id="ee5e7-115">Valitse luettelosta erityiseen poistovähennykseen liitetty käyttöomaisuusryhmä.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-115">In the list, select the fixed asset group associated with the special depreciation allowance.</span></span>
-3. <span data-ttu-id="ee5e7-116">Valitse Kirjat.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-116">Click Books.</span></span>
-4. <span data-ttu-id="ee5e7-117">Valitse luettelosta erityiseen poistovähennykseen liitetty kirja.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-117">In the list, select the book that is associated with the special depreciation allowance.</span></span>
-5. <span data-ttu-id="ee5e7-118">Valitse Erityinen poistovähennys.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-118">Click Special depreciation allowance.</span></span>
-6. <span data-ttu-id="ee5e7-119">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-119">Click New.</span></span>
-7. <span data-ttu-id="ee5e7-120">Kirjoita tai valitse Erityinen poistovähennys -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-120">In the Special depreciation allowance field, enter or select a value.</span></span>
-    * <span data-ttu-id="ee5e7-121">Prosentin tai summan oletusarvo saadaan erityisen poistovähennyksen asetuksista.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-121">The default for Percentage or Amount comes from the special depreciation allowance setup.</span></span>  
-8. <span data-ttu-id="ee5e7-122">Syötä numero Prioriteetti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="ee5e7-122">In the Priority field, enter a number.</span></span>
+## <a name="associate-a-special-depreciation-allowance-with-a-fixed-asset-group-book"></a><span data-ttu-id="c0dbc-113">Erityisen poistovähennyksen liittäminen käyttöomaisuusryhmän kirjaan</span><span class="sxs-lookup"><span data-stu-id="c0dbc-113">Associate a special depreciation allowance with a fixed asset group book</span></span>
+1. <span data-ttu-id="c0dbc-114">Siirry kohtaan Käyttöomaisuus > Asetukset > Käyttöomaisuusryhmät.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-114">Go to Fixed assets > Setup > Fixed asset groups.</span></span>
+2. <span data-ttu-id="c0dbc-115">Valitse luettelosta erityiseen poistovähennykseen liitetty käyttöomaisuusryhmä.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-115">In the list, select the fixed asset group associated with the special depreciation allowance.</span></span>
+3. <span data-ttu-id="c0dbc-116">Valitse Kirjat.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-116">Click Books.</span></span>
+4. <span data-ttu-id="c0dbc-117">Valitse luettelosta erityiseen poistovähennykseen liitetty kirja.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-117">In the list, select the book that is associated with the special depreciation allowance.</span></span>
+5. <span data-ttu-id="c0dbc-118">Valitse Erityinen poistovähennys.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-118">Click Special depreciation allowance.</span></span>
+6. <span data-ttu-id="c0dbc-119">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-119">Click New.</span></span>
+7. <span data-ttu-id="c0dbc-120">Kirjoita tai valitse Erityinen poistovähennys -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-120">In the Special depreciation allowance field, enter or select a value.</span></span>
+    * <span data-ttu-id="c0dbc-121">Prosentin tai summan oletusarvo saadaan erityisen poistovähennyksen asetuksista.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-121">The default for Percentage or Amount comes from the special depreciation allowance setup.</span></span>  
+8. <span data-ttu-id="c0dbc-122">Syötä numero Prioriteetti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="c0dbc-122">In the Priority field, enter a number.</span></span>
 

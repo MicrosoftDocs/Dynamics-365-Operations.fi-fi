@@ -10,67 +10,67 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4b9ef0026129d958b4214bb6e235c288de023d10
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a4da59781f3357a6713eebba03d87c5127b8cd3b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566644"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848621"
 ---
-# <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a><span data-ttu-id="4672e-103">Siirtoasiakirjan luominen sisäiselle varastosiirrolle</span><span class="sxs-lookup"><span data-stu-id="4672e-103">Generate a transfer document for an internal inventory transfer</span></span>
+# <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a><span data-ttu-id="f79e4-103">Siirtoasiakirjan luominen sisäiselle varastosiirrolle</span><span class="sxs-lookup"><span data-stu-id="f79e4-103">Generate a transfer document for an internal inventory transfer</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="4672e-104">Tässä menettelyssä kuvataan, miten yrityksen sisäisen tavaroidensiirron siirtoasiakirjat luodaan.</span><span class="sxs-lookup"><span data-stu-id="4672e-104">This procedure shows how to create transfer documents for goods movement inside a company.</span></span> <span data-ttu-id="4672e-105">Tämä menettely on käytettävissä vain yrityksille, joiden ensisijainen osoite on Liettuassa.</span><span class="sxs-lookup"><span data-stu-id="4672e-105">This procedure is only available for legal entities with a primary address in Lithuania.</span></span> <span data-ttu-id="4672e-106">Tämä menettely luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Liettuassa.</span><span class="sxs-lookup"><span data-stu-id="4672e-106">The procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="4672e-107">"Yrityksen sisäisten tavaransiirtojen siirtoasiakirjojen määrittäminen" -menettely on suoritettava ennen, kuin suoritat tämän menettelyn.</span><span class="sxs-lookup"><span data-stu-id="4672e-107">Before you can complete this procedure, you must complete the “Set up transfer documents for goods movement inside a company” procedure.</span></span> <span data-ttu-id="4672e-108">Menettely on tarkoitettu varastokirjanpitäjille.</span><span class="sxs-lookup"><span data-stu-id="4672e-108">This procedure is intended for inventory accountants.</span></span> <span data-ttu-id="4672e-109">Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="4672e-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="f79e4-104">Tässä menettelyssä kuvataan, miten yrityksen sisäisen tavaroidensiirron siirtoasiakirjat luodaan.</span><span class="sxs-lookup"><span data-stu-id="f79e4-104">This procedure shows how to create transfer documents for goods movement inside a company.</span></span> <span data-ttu-id="f79e4-105">Tämä menettely on käytettävissä vain yrityksille, joiden ensisijainen osoite on Liettuassa.</span><span class="sxs-lookup"><span data-stu-id="f79e4-105">This procedure is only available for legal entities with a primary address in Lithuania.</span></span> <span data-ttu-id="f79e4-106">Tämä menettely luotiin käyttämällä demotietojen DEMF-yritystä niin, että yrityksen ensisijainen osoite on Liettuassa.</span><span class="sxs-lookup"><span data-stu-id="f79e4-106">The procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="f79e4-107">"Yrityksen sisäisten tavaransiirtojen siirtoasiakirjojen määrittäminen" -menettely on suoritettava ennen, kuin suoritat tämän menettelyn.</span><span class="sxs-lookup"><span data-stu-id="f79e4-107">Before you can complete this procedure, you must complete the “Set up transfer documents for goods movement inside a company” procedure.</span></span> <span data-ttu-id="f79e4-108">Menettely on tarkoitettu varastokirjanpitäjille.</span><span class="sxs-lookup"><span data-stu-id="f79e4-108">This procedure is intended for inventory accountants.</span></span> <span data-ttu-id="f79e4-109">Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="f79e4-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-transfer-order"></a><span data-ttu-id="4672e-110">Siirtotilauksen luonti</span><span class="sxs-lookup"><span data-stu-id="4672e-110">Create a transfer order</span></span>
-1. <span data-ttu-id="4672e-111">Valitse Varastonhallinta > Saapuvat tilaukset > Siirtotilaus.</span><span class="sxs-lookup"><span data-stu-id="4672e-111">Go to Inventory management > Inbound orders > Transfer order.</span></span>
-2. <span data-ttu-id="4672e-112">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="4672e-112">Click New.</span></span>
-3. <span data-ttu-id="4672e-113">Anna tai valitse Varastosta-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="4672e-113">In the From warehouse field, enter or select a value.</span></span>
-4. <span data-ttu-id="4672e-114">Anna tai valitse Varastoon-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="4672e-114">In the To warehouse field, enter or select a value.</span></span>
-5. <span data-ttu-id="4672e-115">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="4672e-115">Click Add.</span></span>
-6. <span data-ttu-id="4672e-116">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="4672e-116">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="4672e-117">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="4672e-117">In the Item number field, enter or select a value.</span></span>
+## <a name="create-a-transfer-order"></a><span data-ttu-id="f79e4-110">Siirtotilauksen luonti</span><span class="sxs-lookup"><span data-stu-id="f79e4-110">Create a transfer order</span></span>
+1. <span data-ttu-id="f79e4-111">Valitse Varastonhallinta > Saapuvat tilaukset > Siirtotilaus.</span><span class="sxs-lookup"><span data-stu-id="f79e4-111">Go to Inventory management > Inbound orders > Transfer order.</span></span>
+2. <span data-ttu-id="f79e4-112">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="f79e4-112">Click New.</span></span>
+3. <span data-ttu-id="f79e4-113">Anna tai valitse Varastosta-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="f79e4-113">In the From warehouse field, enter or select a value.</span></span>
+4. <span data-ttu-id="f79e4-114">Anna tai valitse Varastoon-kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="f79e4-114">In the To warehouse field, enter or select a value.</span></span>
+5. <span data-ttu-id="f79e4-115">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="f79e4-115">Click Add.</span></span>
+6. <span data-ttu-id="f79e4-116">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="f79e4-116">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="f79e4-117">Syötä tai valitse arvo Nimiketunnus-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f79e4-117">In the Item number field, enter or select a value.</span></span>
 
-## <a name="enter-transportation-details-for-the-transfer-order"></a><span data-ttu-id="4672e-118">Täytä siirtotilauksen kuljetustiedot</span><span class="sxs-lookup"><span data-stu-id="4672e-118">Enter transportation details for the transfer order</span></span>
-1. <span data-ttu-id="4672e-119">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="4672e-119">Click Save.</span></span>
-2. <span data-ttu-id="4672e-120">Valitse toimintoruudussa Lähetys.</span><span class="sxs-lookup"><span data-stu-id="4672e-120">On the Action Pane, click Ship.</span></span>
-3. <span data-ttu-id="4672e-121">Valitse Kuljetustiedot.</span><span class="sxs-lookup"><span data-stu-id="4672e-121">Click Transportation details.</span></span>
-4. <span data-ttu-id="4672e-122">Valitse Tulosta kuljetustiedot -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="4672e-122">Select Yes in the Print transportation details field.</span></span>
-5. <span data-ttu-id="4672e-123">Anna tai valitse Tuotteiden hyväksyjä -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="4672e-123">In the Goods issued by field, enter or select a value.</span></span>
-6. <span data-ttu-id="4672e-124">Kirjoita arvo Paketti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="4672e-124">In the Package field, type a value.</span></span>
-7. <span data-ttu-id="4672e-125">Kirjoita arvo Lastin riskitaso -kenttään.</span><span class="sxs-lookup"><span data-stu-id="4672e-125">In the Risk level of the load field, type a value.</span></span>
-8. <span data-ttu-id="4672e-126">Syötä tai valitse arvo Rahdinkuljettaja-kenttään.</span><span class="sxs-lookup"><span data-stu-id="4672e-126">In the Carrier field, enter or select a value.</span></span>
-9. <span data-ttu-id="4672e-127">Syötä tai valitse arvo Malli-kentässä.</span><span class="sxs-lookup"><span data-stu-id="4672e-127">In the Model field, enter or select a value.</span></span>
-10. <span data-ttu-id="4672e-128">Kirjoita Rekisteröintinumero-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="4672e-128">In the Registration number field, type a value.</span></span>
-11. <span data-ttu-id="4672e-129">Kirjoita Perävaunun rekisterinumero -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="4672e-129">In the Trailer registration number field, type a value.</span></span>
-12. <span data-ttu-id="4672e-130">Syötä tai valitse arvo Kuljettaja-kenttään.</span><span class="sxs-lookup"><span data-stu-id="4672e-130">In the Driver field, enter or select a value.</span></span>
-13. <span data-ttu-id="4672e-131">Kirjoita arvo Kuljettajan nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="4672e-131">In the Driver name field, type a value.</span></span>
-14. <span data-ttu-id="4672e-132">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="4672e-132">Click Save.</span></span>
-15. <span data-ttu-id="4672e-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="4672e-133">Close the page.</span></span>
+## <a name="enter-transportation-details-for-the-transfer-order"></a><span data-ttu-id="f79e4-118">Täytä siirtotilauksen kuljetustiedot</span><span class="sxs-lookup"><span data-stu-id="f79e4-118">Enter transportation details for the transfer order</span></span>
+1. <span data-ttu-id="f79e4-119">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="f79e4-119">Click Save.</span></span>
+2. <span data-ttu-id="f79e4-120">Valitse toimintoruudussa Lähetys.</span><span class="sxs-lookup"><span data-stu-id="f79e4-120">On the Action Pane, click Ship.</span></span>
+3. <span data-ttu-id="f79e4-121">Valitse Kuljetustiedot.</span><span class="sxs-lookup"><span data-stu-id="f79e4-121">Click Transportation details.</span></span>
+4. <span data-ttu-id="f79e4-122">Valitse Tulosta kuljetustiedot -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f79e4-122">Select Yes in the Print transportation details field.</span></span>
+5. <span data-ttu-id="f79e4-123">Anna tai valitse Tuotteiden hyväksyjä -kentässä arvo.</span><span class="sxs-lookup"><span data-stu-id="f79e4-123">In the Goods issued by field, enter or select a value.</span></span>
+6. <span data-ttu-id="f79e4-124">Kirjoita arvo Paketti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f79e4-124">In the Package field, type a value.</span></span>
+7. <span data-ttu-id="f79e4-125">Kirjoita arvo Lastin riskitaso -kenttään.</span><span class="sxs-lookup"><span data-stu-id="f79e4-125">In the Risk level of the load field, type a value.</span></span>
+8. <span data-ttu-id="f79e4-126">Syötä tai valitse arvo Rahdinkuljettaja-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f79e4-126">In the Carrier field, enter or select a value.</span></span>
+9. <span data-ttu-id="f79e4-127">Syötä tai valitse arvo Malli-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f79e4-127">In the Model field, enter or select a value.</span></span>
+10. <span data-ttu-id="f79e4-128">Kirjoita Rekisteröintinumero-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="f79e4-128">In the Registration number field, type a value.</span></span>
+11. <span data-ttu-id="f79e4-129">Kirjoita Perävaunun rekisterinumero -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="f79e4-129">In the Trailer registration number field, type a value.</span></span>
+12. <span data-ttu-id="f79e4-130">Syötä tai valitse arvo Kuljettaja-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f79e4-130">In the Driver field, enter or select a value.</span></span>
+13. <span data-ttu-id="f79e4-131">Kirjoita arvo Kuljettajan nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="f79e4-131">In the Driver name field, type a value.</span></span>
+14. <span data-ttu-id="f79e4-132">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="f79e4-132">Click Save.</span></span>
+15. <span data-ttu-id="f79e4-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="f79e4-133">Close the page.</span></span>
 
-## <a name="view-the-packing-slip-for-the-unposted-transfer-order"></a><span data-ttu-id="4672e-134">Näytä kirjaamattoman siirtotilauksen pakkausluettelo</span><span class="sxs-lookup"><span data-stu-id="4672e-134">View the packing slip for the unposted transfer order</span></span>
-1. <span data-ttu-id="4672e-135">Valitse Pakkausluettelo.</span><span class="sxs-lookup"><span data-stu-id="4672e-135">Click Packing slip.</span></span>
-2. <span data-ttu-id="4672e-136">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="4672e-136">Click OK.</span></span>
-3. <span data-ttu-id="4672e-137">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="4672e-137">Close the page.</span></span>
+## <a name="view-the-packing-slip-for-the-unposted-transfer-order"></a><span data-ttu-id="f79e4-134">Näytä kirjaamattoman siirtotilauksen pakkausluettelo</span><span class="sxs-lookup"><span data-stu-id="f79e4-134">View the packing slip for the unposted transfer order</span></span>
+1. <span data-ttu-id="f79e4-135">Valitse Pakkausluettelo.</span><span class="sxs-lookup"><span data-stu-id="f79e4-135">Click Packing slip.</span></span>
+2. <span data-ttu-id="f79e4-136">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f79e4-136">Click OK.</span></span>
+3. <span data-ttu-id="f79e4-137">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="f79e4-137">Close the page.</span></span>
 
-## <a name="view-the-packing-slip-for-the-posted-transfer-order"></a><span data-ttu-id="4672e-138">Näytä kirjatun siirtotilauksen pakkausluettelo</span><span class="sxs-lookup"><span data-stu-id="4672e-138">View the packing slip for the posted transfer order</span></span>
-1. <span data-ttu-id="4672e-139">Valitse toimintoruudussa Siirtotilaus.</span><span class="sxs-lookup"><span data-stu-id="4672e-139">On the Action Pane, click Transfer order.</span></span>
-2. <span data-ttu-id="4672e-140">Valitse toimintoruudussa Lähetys.</span><span class="sxs-lookup"><span data-stu-id="4672e-140">On the Action Pane, click Ship.</span></span>
-3. <span data-ttu-id="4672e-141">Valitse Siirtotilauksen lähettäminen.</span><span class="sxs-lookup"><span data-stu-id="4672e-141">Click Ship transfer order.</span></span>
-4. <span data-ttu-id="4672e-142">Valitse Yleiset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="4672e-142">Click the General tab.</span></span>
-5. <span data-ttu-id="4672e-143">Valitse vaihtoehto Päivitä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="4672e-143">In the Update field, select an option.</span></span>
-6. <span data-ttu-id="4672e-144">Valitse Yhteenveto-välilehti.</span><span class="sxs-lookup"><span data-stu-id="4672e-144">Click the Overview tab.</span></span>
-7. <span data-ttu-id="4672e-145">Kirjoita arvo Pakkausluettelo-kenttään.</span><span class="sxs-lookup"><span data-stu-id="4672e-145">In the Packing slip field, type a value.</span></span>
-8. <span data-ttu-id="4672e-146">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="4672e-146">Click OK.</span></span>
-9. <span data-ttu-id="4672e-147">Valitse toimintoruudussa Lähetys.</span><span class="sxs-lookup"><span data-stu-id="4672e-147">On the Action Pane, click Ship.</span></span>
-10. <span data-ttu-id="4672e-148">Valitse Pakkausluettelo.</span><span class="sxs-lookup"><span data-stu-id="4672e-148">Click Packing slip.</span></span>
-11. <span data-ttu-id="4672e-149">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="4672e-149">Click OK.</span></span>
+## <a name="view-the-packing-slip-for-the-posted-transfer-order"></a><span data-ttu-id="f79e4-138">Näytä kirjatun siirtotilauksen pakkausluettelo</span><span class="sxs-lookup"><span data-stu-id="f79e4-138">View the packing slip for the posted transfer order</span></span>
+1. <span data-ttu-id="f79e4-139">Valitse toimintoruudussa Siirtotilaus.</span><span class="sxs-lookup"><span data-stu-id="f79e4-139">On the Action Pane, click Transfer order.</span></span>
+2. <span data-ttu-id="f79e4-140">Valitse toimintoruudussa Lähetys.</span><span class="sxs-lookup"><span data-stu-id="f79e4-140">On the Action Pane, click Ship.</span></span>
+3. <span data-ttu-id="f79e4-141">Valitse Siirtotilauksen lähettäminen.</span><span class="sxs-lookup"><span data-stu-id="f79e4-141">Click Ship transfer order.</span></span>
+4. <span data-ttu-id="f79e4-142">Valitse Yleiset-välilehti.</span><span class="sxs-lookup"><span data-stu-id="f79e4-142">Click the General tab.</span></span>
+5. <span data-ttu-id="f79e4-143">Valitse vaihtoehto Päivitä-kentässä.</span><span class="sxs-lookup"><span data-stu-id="f79e4-143">In the Update field, select an option.</span></span>
+6. <span data-ttu-id="f79e4-144">Valitse Yhteenveto-välilehti.</span><span class="sxs-lookup"><span data-stu-id="f79e4-144">Click the Overview tab.</span></span>
+7. <span data-ttu-id="f79e4-145">Kirjoita arvo Pakkausluettelo-kenttään.</span><span class="sxs-lookup"><span data-stu-id="f79e4-145">In the Packing slip field, type a value.</span></span>
+8. <span data-ttu-id="f79e4-146">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f79e4-146">Click OK.</span></span>
+9. <span data-ttu-id="f79e4-147">Valitse toimintoruudussa Lähetys.</span><span class="sxs-lookup"><span data-stu-id="f79e4-147">On the Action Pane, click Ship.</span></span>
+10. <span data-ttu-id="f79e4-148">Valitse Pakkausluettelo.</span><span class="sxs-lookup"><span data-stu-id="f79e4-148">Click Packing slip.</span></span>
+11. <span data-ttu-id="f79e4-149">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f79e4-149">Click OK.</span></span>
 

@@ -10,49 +10,49 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a5788948c40f20e686565198c84facd68a935d9c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe29e106055177dbd12c39ee3fc9de609059f73b
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566061"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841942"
 ---
-# <a name="register-and-post-a-postdated-check-for-a-vendor"></a><span data-ttu-id="040cb-103">Rekisteröi ja kirjaa toimittajan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="040cb-103">Register and post a postdated check for a vendor</span></span>
+# <a name="register-and-post-a-postdated-check-for-a-vendor"></a><span data-ttu-id="c6598-103">Rekisteröi ja kirjaa toimittajan myöhemmäksi päivitetty sekki</span><span class="sxs-lookup"><span data-stu-id="c6598-103">Register and post a postdated check for a vendor</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="040cb-104">Voit rekisteröidä myöhemmäksi päivätyn sekin tiedot kirjauskansion tositteella, ennen kuin kirjoitat sekin toimittajalle.</span><span class="sxs-lookup"><span data-stu-id="040cb-104">You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher.</span></span> <span data-ttu-id="040cb-105">Voit myös kirjata myöhemmäksi päivätyn sekin ja luoda kirjanpitotapahtumat.</span><span class="sxs-lookup"><span data-stu-id="040cb-105">You can also post the postdated check and generate financial transactions.</span></span> <span data-ttu-id="040cb-106">Tee seuraava tehtävä, ennen kuin rekisteröit ja kirjaat toimittajalta saadun myöhemmäksi päivätyn sekin:</span><span class="sxs-lookup"><span data-stu-id="040cb-106">Before you register and post a postdated check from a vendor, complete the following task:</span></span> 
+<span data-ttu-id="c6598-104">Voit rekisteröidä myöhemmäksi päivätyn sekin tiedot kirjauskansion tositteella, ennen kuin kirjoitat sekin toimittajalle.</span><span class="sxs-lookup"><span data-stu-id="c6598-104">You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher.</span></span> <span data-ttu-id="c6598-105">Voit myös kirjata myöhemmäksi päivätyn sekin ja luoda kirjanpitotapahtumat.</span><span class="sxs-lookup"><span data-stu-id="c6598-105">You can also post the postdated check and generate financial transactions.</span></span> <span data-ttu-id="c6598-106">Tee seuraava tehtävä, ennen kuin rekisteröit ja kirjaat toimittajalta saadun myöhemmäksi päivätyn sekin:</span><span class="sxs-lookup"><span data-stu-id="c6598-106">Before you register and post a postdated check from a vendor, complete the following task:</span></span> 
 
-<span data-ttu-id="040cb-107">Määritä myöhemmäksi päivitetyt sekit Maksuliikenteen hallinta -sivulla.</span><span class="sxs-lookup"><span data-stu-id="040cb-107">Set up postdated checks in the Cash and bank management page.</span></span> 
+<span data-ttu-id="c6598-107">Määritä myöhemmäksi päivitetyt sekit Maksuliikenteen hallinta -sivulla.</span><span class="sxs-lookup"><span data-stu-id="c6598-107">Set up postdated checks in the Cash and bank management page.</span></span> 
 
 
 
-<span data-ttu-id="040cb-108">Tämä tehtäväopastuksen rooli on Rahastonhoitaja.</span><span class="sxs-lookup"><span data-stu-id="040cb-108">The role of this task guides is Treasurer.</span></span> <span data-ttu-id="040cb-109">Tässä tehtävässä käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="040cb-109">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="c6598-108">Tämä tehtäväopastuksen rooli on Rahastonhoitaja.</span><span class="sxs-lookup"><span data-stu-id="c6598-108">The role of this task guides is Treasurer.</span></span> <span data-ttu-id="c6598-109">Tässä tehtävässä käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="c6598-109">This task uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="040cb-110">Valitse Ostoreskontra > Maksut > Maksukirjauskansio</span><span class="sxs-lookup"><span data-stu-id="040cb-110">Go to Acounts payable > Payments > Payment journal</span></span>
-2. <span data-ttu-id="040cb-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="040cb-111">Click New.</span></span>
-3. <span data-ttu-id="040cb-112">Kirjoita Nimi-kenttään VendPay.</span><span class="sxs-lookup"><span data-stu-id="040cb-112">In the Name field, type 'VendPay'.</span></span>
-4. <span data-ttu-id="040cb-113">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="040cb-113">Click Lines.</span></span>
-5. <span data-ttu-id="040cb-114">Määritä Tili-kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="040cb-114">In the Account field, specify the desired values.</span></span>
-6. <span data-ttu-id="040cb-115">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="040cb-115">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="040cb-116">Syötä Debet-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="040cb-116">In the Debit field, enter a number.</span></span>
-8. <span data-ttu-id="040cb-117">Avaa haku valitsemalla Maksutapa-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="040cb-117">In the Method of payment field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="040cb-118">Valitse myöhemmäksi päivätyn sekin maksutapa</span><span class="sxs-lookup"><span data-stu-id="040cb-118">Select the method of payment for the postdated check</span></span>  
-9. <span data-ttu-id="040cb-119">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="040cb-119">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="040cb-120">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="040cb-120">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="040cb-121">Valitse Myöhemmäksi päivätyt sekit -välilehti.</span><span class="sxs-lookup"><span data-stu-id="040cb-121">Click the Postdated checks tab.</span></span>
-12. <span data-ttu-id="040cb-122">Kirjoita arvo Sekin numero -kenttään.</span><span class="sxs-lookup"><span data-stu-id="040cb-122">In the Check number field, type a value.</span></span>
-    * <span data-ttu-id="040cb-123">Anna myöhemmäksi päivätyn sekin numero tai muokkaa sitä.</span><span class="sxs-lookup"><span data-stu-id="040cb-123">Enter or modify the number of the postdated check.</span></span>  
-13. <span data-ttu-id="040cb-124">Kirjoita arvo Myöntävän pankin nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="040cb-124">In the Issuing bank name field, type a value.</span></span>
-    * <span data-ttu-id="040cb-125">anna myöntävän pankin tiedot</span><span class="sxs-lookup"><span data-stu-id="040cb-125">enter the bank details for the issuing bank.</span></span>  
-14. <span data-ttu-id="040cb-126">Valitse Luettelo-välilehti.</span><span class="sxs-lookup"><span data-stu-id="040cb-126">Click the List tab.</span></span>
-15. <span data-ttu-id="040cb-127">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="040cb-127">Click Post.</span></span>
-16. <span data-ttu-id="040cb-128">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="040cb-128">Close the page.</span></span>
-17. <span data-ttu-id="040cb-129">Valitse Myöhemmäksi päivätyt sekit -välilehti.</span><span class="sxs-lookup"><span data-stu-id="040cb-129">Click the Postdated checks tab.</span></span>
+1. <span data-ttu-id="c6598-110">Valitse Ostoreskontra > Maksut > Maksukirjauskansio</span><span class="sxs-lookup"><span data-stu-id="c6598-110">Go to Acounts payable > Payments > Payment journal</span></span>
+2. <span data-ttu-id="c6598-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="c6598-111">Click New.</span></span>
+3. <span data-ttu-id="c6598-112">Kirjoita Nimi-kenttään VendPay.</span><span class="sxs-lookup"><span data-stu-id="c6598-112">In the Name field, type 'VendPay'.</span></span>
+4. <span data-ttu-id="c6598-113">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="c6598-113">Click Lines.</span></span>
+5. <span data-ttu-id="c6598-114">Määritä Tili-kenttään haluamasi arvot.</span><span class="sxs-lookup"><span data-stu-id="c6598-114">In the Account field, specify the desired values.</span></span>
+6. <span data-ttu-id="c6598-115">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="c6598-115">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="c6598-116">Syötä Debet-kenttään numero.</span><span class="sxs-lookup"><span data-stu-id="c6598-116">In the Debit field, enter a number.</span></span>
+8. <span data-ttu-id="c6598-117">Avaa haku valitsemalla Maksutapa-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="c6598-117">In the Method of payment field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="c6598-118">Valitse myöhemmäksi päivätyn sekin maksutapa</span><span class="sxs-lookup"><span data-stu-id="c6598-118">Select the method of payment for the postdated check</span></span>  
+9. <span data-ttu-id="c6598-119">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="c6598-119">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="c6598-120">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="c6598-120">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="c6598-121">Valitse Myöhemmäksi päivätyt sekit -välilehti.</span><span class="sxs-lookup"><span data-stu-id="c6598-121">Click the Postdated checks tab.</span></span>
+12. <span data-ttu-id="c6598-122">Kirjoita arvo Sekin numero -kenttään.</span><span class="sxs-lookup"><span data-stu-id="c6598-122">In the Check number field, type a value.</span></span>
+    * <span data-ttu-id="c6598-123">Anna myöhemmäksi päivätyn sekin numero tai muokkaa sitä.</span><span class="sxs-lookup"><span data-stu-id="c6598-123">Enter or modify the number of the postdated check.</span></span>  
+13. <span data-ttu-id="c6598-124">Kirjoita arvo Myöntävän pankin nimi -kenttään.</span><span class="sxs-lookup"><span data-stu-id="c6598-124">In the Issuing bank name field, type a value.</span></span>
+    * <span data-ttu-id="c6598-125">anna myöntävän pankin tiedot</span><span class="sxs-lookup"><span data-stu-id="c6598-125">enter the bank details for the issuing bank.</span></span>  
+14. <span data-ttu-id="c6598-126">Valitse Luettelo-välilehti.</span><span class="sxs-lookup"><span data-stu-id="c6598-126">Click the List tab.</span></span>
+15. <span data-ttu-id="c6598-127">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="c6598-127">Click Post.</span></span>
+16. <span data-ttu-id="c6598-128">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="c6598-128">Close the page.</span></span>
+17. <span data-ttu-id="c6598-129">Valitse Myöhemmäksi päivätyt sekit -välilehti.</span><span class="sxs-lookup"><span data-stu-id="c6598-129">Click the Postdated checks tab.</span></span>
 

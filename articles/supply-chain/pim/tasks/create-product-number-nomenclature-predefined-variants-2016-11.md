@@ -10,51 +10,51 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResNomenclature, EcoResProductDimensionGroup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4b49e96677b94d5f669ea41861f64e62e118938c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6a2e61fd99cb80a1a9cc3d8e985fb0f14e3c2fc2
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550579"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844678"
 ---
-# <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a><span data-ttu-id="58457-103">Luo tuotenumeroiden nimikkeistö esimääritetyille tuotevarianteille</span><span class="sxs-lookup"><span data-stu-id="58457-103">Create a product number nomenclature for predefined product variants</span></span>
+# <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a><span data-ttu-id="b1673-103">Luo tuotenumeroiden nimikkeistö esimääritetyille tuotevarianteille</span><span class="sxs-lookup"><span data-stu-id="b1673-103">Create a product number nomenclature for predefined product variants</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="58457-104">Tässä oppaassa kuvataan, miten tuotenumeroiden nimikkeistö määritetään esimääritetyille tuotevarianteille ja miten se voidaan liittää asianmukaiseen tuotedimensioryhmään.</span><span class="sxs-lookup"><span data-stu-id="58457-104">This guide shows you how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group.</span></span> <span data-ttu-id="58457-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="58457-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="58457-106">Uuden tuotenumeroiden nimikkeistö on määritetty värin ja koon tuotedimensioryhmään.</span><span class="sxs-lookup"><span data-stu-id="58457-106">The new product number nomenclature is assigned to the Color and Size product dimension group.</span></span> <span data-ttu-id="58457-107">Tuotesuunnittelija tekee yleensä tämän tehtävän.</span><span class="sxs-lookup"><span data-stu-id="58457-107">This task would typically be done by a product designer.</span></span>
+<span data-ttu-id="b1673-104">Tässä oppaassa kuvataan, miten tuotenumeroiden nimikkeistö määritetään esimääritetyille tuotevarianteille ja miten se voidaan liittää asianmukaiseen tuotedimensioryhmään.</span><span class="sxs-lookup"><span data-stu-id="b1673-104">This guide shows you how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group.</span></span> <span data-ttu-id="b1673-105">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="b1673-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b1673-106">Uuden tuotenumeroiden nimikkeistö on määritetty värin ja koon tuotedimensioryhmään.</span><span class="sxs-lookup"><span data-stu-id="b1673-106">The new product number nomenclature is assigned to the Color and Size product dimension group.</span></span> <span data-ttu-id="b1673-107">Tuotesuunnittelija tekee yleensä tämän tehtävän.</span><span class="sxs-lookup"><span data-stu-id="b1673-107">This task would typically be done by a product designer.</span></span>
 
 
-## <a name="create-a-product-number-nomenclature"></a><span data-ttu-id="58457-108">Tuotenumeroiden nimikkeistön luominen</span><span class="sxs-lookup"><span data-stu-id="58457-108">Create a product number nomenclature</span></span>
-1. <span data-ttu-id="58457-109">Valitse Tuotevarianttimallin määritys.</span><span class="sxs-lookup"><span data-stu-id="58457-109">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="58457-110">Valitse Tuotenimikkeistö.</span><span class="sxs-lookup"><span data-stu-id="58457-110">Click Product nomenclature.</span></span>
-3. <span data-ttu-id="58457-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="58457-111">Click New.</span></span>
-4. <span data-ttu-id="58457-112">Kirjoita nimikenttään nimikkeistön nimi, jolla kohteena olevan tuotedimensioryhmän tunnistaa, esimerkiksi ColorSize.</span><span class="sxs-lookup"><span data-stu-id="58457-112">In the Name field, enter a nomenclature name that helps to identify the target product dimension group, for example, ColorSize..</span></span>
-5. <span data-ttu-id="58457-113">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="58457-113">In the Description field, type a value.</span></span>
-6. <span data-ttu-id="58457-114">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="58457-114">Click Add.</span></span>
-7. <span data-ttu-id="58457-115">Valitse Päätuotteen numero.</span><span class="sxs-lookup"><span data-stu-id="58457-115">Click Product master number.</span></span>
-8. <span data-ttu-id="58457-116">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="58457-116">Click Add.</span></span>
-9. <span data-ttu-id="58457-117">Valitse Tekstivakio.</span><span class="sxs-lookup"><span data-stu-id="58457-117">Click Text constant.</span></span>
-10. <span data-ttu-id="58457-118">Kirjoita arvo Teksti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="58457-118">In the Text field, type a value.</span></span>
-11. <span data-ttu-id="58457-119">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="58457-119">Click Add.</span></span>
-12. <span data-ttu-id="58457-120">Valitse Väri.</span><span class="sxs-lookup"><span data-stu-id="58457-120">Click Color.</span></span>
-13. <span data-ttu-id="58457-121">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="58457-121">Click Add.</span></span>
-14. <span data-ttu-id="58457-122">Valitse Tekstivakio.</span><span class="sxs-lookup"><span data-stu-id="58457-122">Click Text constant.</span></span>
-15. <span data-ttu-id="58457-123">Kirjoita arvo Teksti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="58457-123">In the Text field, type a value.</span></span>
-16. <span data-ttu-id="58457-124">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="58457-124">Click Add.</span></span>
-17. <span data-ttu-id="58457-125">Valitse Koko.</span><span class="sxs-lookup"><span data-stu-id="58457-125">Click Size.</span></span>
-18. <span data-ttu-id="58457-126">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="58457-126">Close the page.</span></span>
+## <a name="create-a-product-number-nomenclature"></a><span data-ttu-id="b1673-108">Tuotenumeroiden nimikkeistön luominen</span><span class="sxs-lookup"><span data-stu-id="b1673-108">Create a product number nomenclature</span></span>
+1. <span data-ttu-id="b1673-109">Valitse Tuotevarianttimallin määritys.</span><span class="sxs-lookup"><span data-stu-id="b1673-109">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="b1673-110">Valitse Tuotenimikkeistö.</span><span class="sxs-lookup"><span data-stu-id="b1673-110">Click Product nomenclature.</span></span>
+3. <span data-ttu-id="b1673-111">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="b1673-111">Click New.</span></span>
+4. <span data-ttu-id="b1673-112">Kirjoita nimikenttään nimikkeistön nimi, jolla kohteena olevan tuotedimensioryhmän tunnistaa, esimerkiksi ColorSize.</span><span class="sxs-lookup"><span data-stu-id="b1673-112">In the Name field, enter a nomenclature name that helps to identify the target product dimension group, for example, ColorSize..</span></span>
+5. <span data-ttu-id="b1673-113">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b1673-113">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="b1673-114">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b1673-114">Click Add.</span></span>
+7. <span data-ttu-id="b1673-115">Valitse Päätuotteen numero.</span><span class="sxs-lookup"><span data-stu-id="b1673-115">Click Product master number.</span></span>
+8. <span data-ttu-id="b1673-116">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b1673-116">Click Add.</span></span>
+9. <span data-ttu-id="b1673-117">Valitse Tekstivakio.</span><span class="sxs-lookup"><span data-stu-id="b1673-117">Click Text constant.</span></span>
+10. <span data-ttu-id="b1673-118">Kirjoita arvo Teksti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b1673-118">In the Text field, type a value.</span></span>
+11. <span data-ttu-id="b1673-119">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b1673-119">Click Add.</span></span>
+12. <span data-ttu-id="b1673-120">Valitse Väri.</span><span class="sxs-lookup"><span data-stu-id="b1673-120">Click Color.</span></span>
+13. <span data-ttu-id="b1673-121">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b1673-121">Click Add.</span></span>
+14. <span data-ttu-id="b1673-122">Valitse Tekstivakio.</span><span class="sxs-lookup"><span data-stu-id="b1673-122">Click Text constant.</span></span>
+15. <span data-ttu-id="b1673-123">Kirjoita arvo Teksti-kenttään.</span><span class="sxs-lookup"><span data-stu-id="b1673-123">In the Text field, type a value.</span></span>
+16. <span data-ttu-id="b1673-124">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="b1673-124">Click Add.</span></span>
+17. <span data-ttu-id="b1673-125">Valitse Koko.</span><span class="sxs-lookup"><span data-stu-id="b1673-125">Click Size.</span></span>
+18. <span data-ttu-id="b1673-126">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="b1673-126">Close the page.</span></span>
 
-## <a name="assign-the-nomenclature-to-a-product-master"></a><span data-ttu-id="58457-127">Nimikkeistön määrittäminen päätuotteelle</span><span class="sxs-lookup"><span data-stu-id="58457-127">Assign the nomenclature to a product master</span></span>
-1. <span data-ttu-id="58457-128">Valitse Tuotedimensioryhmät.</span><span class="sxs-lookup"><span data-stu-id="58457-128">Click Product dimension groups.</span></span>
-2. <span data-ttu-id="58457-129">Valitse SizeCol-tuotedimensioryhmä.</span><span class="sxs-lookup"><span data-stu-id="58457-129">Select the SizeCol product dimension group.</span></span>
-3. <span data-ttu-id="58457-130">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="58457-130">Click Edit.</span></span>
-4. <span data-ttu-id="58457-131">Valitse Käytä nimikkeistöä -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="58457-131">Select Yes in the Use nomenclature field.</span></span>
-5. <span data-ttu-id="58457-132">Syötä tai valitse arvo Tuotevariantin numeron nimikkeistö -kentässä.</span><span class="sxs-lookup"><span data-stu-id="58457-132">In the Product variant number nomenclature field, enter or select a value.</span></span>
-6. <span data-ttu-id="58457-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="58457-133">Close the page.</span></span>
+## <a name="assign-the-nomenclature-to-a-product-master"></a><span data-ttu-id="b1673-127">Nimikkeistön määrittäminen päätuotteelle</span><span class="sxs-lookup"><span data-stu-id="b1673-127">Assign the nomenclature to a product master</span></span>
+1. <span data-ttu-id="b1673-128">Valitse Tuotedimensioryhmät.</span><span class="sxs-lookup"><span data-stu-id="b1673-128">Click Product dimension groups.</span></span>
+2. <span data-ttu-id="b1673-129">Valitse SizeCol-tuotedimensioryhmä.</span><span class="sxs-lookup"><span data-stu-id="b1673-129">Select the SizeCol product dimension group.</span></span>
+3. <span data-ttu-id="b1673-130">Valitse Muokkaa.</span><span class="sxs-lookup"><span data-stu-id="b1673-130">Click Edit.</span></span>
+4. <span data-ttu-id="b1673-131">Valitse Käytä nimikkeistöä -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="b1673-131">Select Yes in the Use nomenclature field.</span></span>
+5. <span data-ttu-id="b1673-132">Syötä tai valitse arvo Tuotevariantin numeron nimikkeistö -kentässä.</span><span class="sxs-lookup"><span data-stu-id="b1673-132">In the Product variant number nomenclature field, enter or select a value.</span></span>
+6. <span data-ttu-id="b1673-133">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="b1673-133">Close the page.</span></span>
 

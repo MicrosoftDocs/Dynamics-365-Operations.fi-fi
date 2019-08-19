@@ -1,88 +1,75 @@
 ---
 title: Määritä toimittajan laskutuskäytännöt
-description: Toimittajan laskukäytännöt suoritetaan, kun toimittajan lasku kirjataan Toimittajan lasku -sivun avulla ja kun Toimittajan laskukäytäntöjen rikkeet -sivu avataan.
+description: Tässä ohjeaiheessa kerrotaan, miten voit määrittää toimittajan laskutuskäytännöt Dynamics 365 for Finance and Operationsissa.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b424eee7c91ef1085c98828c0d5e5cf674717a81
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 328aafd16496fdbb963c9aa40a5c13005be7a382
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559661"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842806"
 ---
-# <a name="set-up-vendor-invoice-policies"></a><span data-ttu-id="90514-103">Määritä toimittajan laskutuskäytännöt</span><span class="sxs-lookup"><span data-stu-id="90514-103">Set up vendor invoice policies</span></span>
+# <a name="set-up-vendor-invoice-policies"></a><span data-ttu-id="d5d6a-103">Määritä toimittajan laskutuskäytännöt</span><span class="sxs-lookup"><span data-stu-id="d5d6a-103">Set up vendor invoice policies</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="90514-104">Toimittajan laskukäytännöt suoritetaan, kun toimittajan lasku kirjataan Toimittajan lasku -sivun avulla ja kun Toimittajan laskukäytäntöjen rikkeet -sivu avataan.</span><span class="sxs-lookup"><span data-stu-id="90514-104">Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page.</span></span> <span data-ttu-id="90514-105">Voit myös määrittää toimittajan laskun työnkulun, kun haluat suorittaa toimittajan laskukäytännöt aina, kun lasku lähetetään työnkulkuun.</span><span class="sxs-lookup"><span data-stu-id="90514-105">You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow.</span></span> 
+<span data-ttu-id="d5d6a-104">Tässä ohjeaiheessa kerrotaan, miten voit määrittää toimittajan laskutuskäytännöt Dynamics 365 for Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-104">This topic explains how to set up vendor invoice policies in Dynamics 365 for Finance and Operatoins.</span></span> <span data-ttu-id="d5d6a-105">Toimittajan laskukäytännöt suoritetaan, kun toimittajan lasku kirjataan Toimittajan lasku -sivun avulla ja kun Toimittajan laskukäytäntöjen rikkeet -sivu avataan.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-105">Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page.</span></span> <span data-ttu-id="d5d6a-106">Voit myös määrittää toimittajan laskun työnkulun, kun haluat suorittaa toimittajan laskukäytännöt aina, kun lasku lähetetään työnkulkuun.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-106">You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow.</span></span> 
 
-<span data-ttu-id="90514-106">Toimittajan laskukäytännöt eivät koske laskurekisteriin tai laskukirjauskansioon luotuja laskuja.</span><span class="sxs-lookup"><span data-stu-id="90514-106">Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.</span></span> 
-
-<span data-ttu-id="90514-107">Laskun täsmäytyksen vahvistuksessa ei käytetä toimittajan laskukäytäntöjä, vaan Ostoreskontran parametrit -määritettyjä käytäntöjä.</span><span class="sxs-lookup"><span data-stu-id="90514-107">Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.</span></span>
-
-<span data-ttu-id="90514-108">Tässä tallenteessa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="90514-108">This recording uses the USMF demo company.</span></span> <span data-ttu-id="90514-109">Nämä vaiheet suorittaa ostoreskontran esimies tai laskentapäällikön rooli.</span><span class="sxs-lookup"><span data-stu-id="90514-109">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="90514-110">Varmista ennen aloittamista, että laskun täsmäytyksen konfigurointiavain on valittuna.</span><span class="sxs-lookup"><span data-stu-id="90514-110">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span>
+- <span data-ttu-id="d5d6a-107">Toimittajan laskukäytännöt eivät koske laskurekisteriin tai laskukirjauskansioon luotuja laskuja.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-107">Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.</span></span>  
+- <span data-ttu-id="d5d6a-108">Laskun täsmäytyksen vahvistuksessa ei käytetä toimittajan laskukäytäntöjä, vaan Ostoreskontran parametrit -määritettyjä käytäntöjä.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-108">Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.</span></span>  
+- <span data-ttu-id="d5d6a-109">Tässä tallenteessa käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-109">This recording uses the USMF demo company.</span></span> <span data-ttu-id="d5d6a-110">Nämä vaiheet suorittaa ostoreskontran esimies tai laskentapäällikön rooli.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-110">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="d5d6a-111">Varmista ennen aloittamista, että laskun täsmäytyksen konfigurointiavain on valittuna.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-111">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span>
 
 
-## <a name="prepare-to-create-vendor-invoice-policies"></a><span data-ttu-id="90514-111">Toimittajan laskujen käytäntöjen luomisen valmisteleminen</span><span class="sxs-lookup"><span data-stu-id="90514-111">Prepare to create vendor invoice policies</span></span>
-1. <span data-ttu-id="90514-112">Siirry kohtaan Ostoreskontra > Asetukset > Ostoreskontran parametrit.</span><span class="sxs-lookup"><span data-stu-id="90514-112">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
-2. <span data-ttu-id="90514-113">Valitse Laskun oikeellisuustarkistus -välilehti.</span><span class="sxs-lookup"><span data-stu-id="90514-113">Click the Invoice validation tab.</span></span>
-3. <span data-ttu-id="90514-114">Valitse Päivitetäänkö laskun otsikon tila automaattisesti -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="90514-114">Select or clear the Automatically update invoice header status check box.</span></span>
-4. <span data-ttu-id="90514-115">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="90514-115">Click OK.</span></span>
-5. <span data-ttu-id="90514-116">Valitse Kirjaa lasku, jossa on ristiriitoja -kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="90514-116">In the Post invoice with discrepancies field, select an option.</span></span>
-6. <span data-ttu-id="90514-117">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="90514-117">Close the page.</span></span>
-7. <span data-ttu-id="90514-118">Siirry kohtaan Ostoreskontra > Käytännön asetukset > Toimittajan laskukäytännöt.</span><span class="sxs-lookup"><span data-stu-id="90514-118">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
-8. <span data-ttu-id="90514-119">Valitse Parametrit.</span><span class="sxs-lookup"><span data-stu-id="90514-119">Click Parameters.</span></span>
-9. <span data-ttu-id="90514-120">Valitse btnAdd.</span><span class="sxs-lookup"><span data-stu-id="90514-120">Click btnAdd.</span></span>
-10. <span data-ttu-id="90514-121">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="90514-121">Close the page.</span></span>
+## <a name="prepare-to-create-vendor-invoice-policies"></a><span data-ttu-id="d5d6a-112">Toimittajan laskujen käytäntöjen luomisen valmisteleminen</span><span class="sxs-lookup"><span data-stu-id="d5d6a-112">Prepare to create vendor invoice policies</span></span>
+1. <span data-ttu-id="d5d6a-113">Siirry kohtaan **Siirtymisruutu > Moduulit > Ostoreskontra > Asetukset > Ostoreskontran parametrit**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-113">Go to **Navigation pane > Modules > Accounts payable > Setup > Accounts payable parameters**.</span></span>
+2. <span data-ttu-id="d5d6a-114">Valitse **Laskun oikeellisuustarkistus** -välilehti.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-114">Select the **Invoice validation** tab.</span></span>
+3. <span data-ttu-id="d5d6a-115">Valitse **Päivitetäänkö laskun otsikon tila automaattisesti** -valintaruutu tai poista sen valinta.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-115">Select or clear the **Automatically update invoice header** status check box.</span></span>
+4. <span data-ttu-id="d5d6a-116">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-116">Select **OK**.</span></span>
+5. <span data-ttu-id="d5d6a-117">Valitse **Kirjaa lasku, jossa on ristiriitoja** -kentässä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-117">In the **Post invoice with discrepancies** field, select an option.</span></span>
+6. <span data-ttu-id="d5d6a-118">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-118">Close the page.</span></span>
+7. <span data-ttu-id="d5d6a-119">Siirry siirtymisruudussa kohtaan **Moduulit > Ostoreskontra > Käytännön asetukset > Toimittajan laskukäytännöt**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-119">Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policies**.</span></span>
+8. <span data-ttu-id="d5d6a-120">Valitse **Parametrit**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-120">Select **Parameters**.</span></span>
+9. <span data-ttu-id="d5d6a-121">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-121">Select **Add**.</span></span>
+10. <span data-ttu-id="d5d6a-122">Palaa kotisivulle sulkemalla sivu.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-122">Close the page to return to the home page.</span></span>
 
-## <a name="create-policy-rule-types-for-vendor-invoices"></a><span data-ttu-id="90514-122">Toimittajan laskujen käytäntösääntöjen tyyppien luominen</span><span class="sxs-lookup"><span data-stu-id="90514-122">Create policy rule types for vendor invoices</span></span>
-1. <span data-ttu-id="90514-123">Siirry kohtaan Ostoreskontra > Käytännön asetukset > Toimittajan laskutuskäytännön sääntötyypit.</span><span class="sxs-lookup"><span data-stu-id="90514-123">Go to Accounts payable > Policy setup > Vendor invoice policy rule types.</span></span>
-2. <span data-ttu-id="90514-124">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="90514-124">Click New.</span></span>
-3. <span data-ttu-id="90514-125">Kirjoita arvo Säännön nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="90514-125">In the Rule name field, type a value.</span></span>
-4. <span data-ttu-id="90514-126">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="90514-126">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="90514-127">Avaa haku valitsemalla Kyselyn nimi -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="90514-127">In the Query name field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="90514-128">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="90514-128">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="90514-129">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="90514-129">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="90514-130">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="90514-130">Click Save.</span></span>
-9. <span data-ttu-id="90514-131">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="90514-131">Close the page.</span></span>
+## <a name="create-policy-rule-types-for-vendor-invoices"></a><span data-ttu-id="d5d6a-123">Toimittajan laskujen käytäntösääntöjen tyyppien luominen</span><span class="sxs-lookup"><span data-stu-id="d5d6a-123">Create policy rule types for vendor invoices</span></span>
+1. <span data-ttu-id="d5d6a-124">Siirry siirtymisruudussa kohtaan **Moduulit > Ostoreskontra > Käytännön asetukset > Toimittajan laskukäytäntösääntöjen tyypit**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-124">Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policy rule types**.</span></span>
+2. <span data-ttu-id="d5d6a-125">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-125">Select **New**.</span></span>
+3. <span data-ttu-id="d5d6a-126">Kirjoita arvot **Säännön nimi**- ja **Kuvaus**-kenttiin.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-126">In the **Rule name** and **Description** fields, type values.</span></span>
+4. <span data-ttu-id="d5d6a-127">Avaa haku valitsemalla **Kyselyn nimi**-kentässä avattavan valikon painike ja valitse haluttu tietue.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-127">In the **Query name** field, select the drop-down button to open the lookup, then selec the desired record.</span></span>
+5. <span data-ttu-id="d5d6a-128">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-128">Select **Save**.</span></span>
+6. <span data-ttu-id="d5d6a-129">Palaa kotisivulle sulkemalla sivu.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-129">Close the page to return to the home page.</span></span>
 
-## <a name="define-a-vendor-invoice-policy"></a><span data-ttu-id="90514-132">Toimittajan laskujen käytännön määrittäminen</span><span class="sxs-lookup"><span data-stu-id="90514-132">Define a vendor invoice policy</span></span>
-1. <span data-ttu-id="90514-133">Siirry kohtaan Ostoreskontra > Käytännön asetukset > Toimittajan laskukäytännöt.</span><span class="sxs-lookup"><span data-stu-id="90514-133">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
-2. <span data-ttu-id="90514-134">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="90514-134">Click New.</span></span>
-3. <span data-ttu-id="90514-135">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="90514-135">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="90514-136">Kirjoita arvo Kuvaus-kenttään.</span><span class="sxs-lookup"><span data-stu-id="90514-136">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="90514-137">Laajenna tai tiivistä Käytännön organisaatiot -osa.</span><span class="sxs-lookup"><span data-stu-id="90514-137">Expand or collapse the Policy organizations section.</span></span>
-6. <span data-ttu-id="90514-138">Valitse puussa solmu Contoso Entertainment System USA.</span><span class="sxs-lookup"><span data-stu-id="90514-138">In the tree, select 'Contoso Entertainment System USA'.</span></span>
-7. <span data-ttu-id="90514-139">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="90514-139">Click Add.</span></span>
-8. <span data-ttu-id="90514-140">Laajenna tai tiivistä Käytäntösäännöt-osa.</span><span class="sxs-lookup"><span data-stu-id="90514-140">Expand or collapse the Policy rules section.</span></span>
-9. <span data-ttu-id="90514-141">Valitse Luo käytäntösääntö.</span><span class="sxs-lookup"><span data-stu-id="90514-141">Click Create policy rule.</span></span>
-10. <span data-ttu-id="90514-142">Kirjoita Käytäntösääntö-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="90514-142">In the Policy rule description field, type a value.</span></span>
-11. <span data-ttu-id="90514-143">Valitse Suodatin.</span><span class="sxs-lookup"><span data-stu-id="90514-143">Click Filter.</span></span>
-12. <span data-ttu-id="90514-144">ValitseLisää.</span><span class="sxs-lookup"><span data-stu-id="90514-144">Click Add.</span></span>
-13. <span data-ttu-id="90514-145">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="90514-145">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="90514-146">Avaa haku valitsemalla Taulu-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="90514-146">In the Table field, click the drop-down button to open the lookup.</span></span>
-15. <span data-ttu-id="90514-147">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="90514-147">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="90514-148">Avaa haku valitsemalla Johdettu taulu -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="90514-148">In the Derived table field, click the drop-down button to open the lookup.</span></span>
-17. <span data-ttu-id="90514-149">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="90514-149">In the list, click the link in the selected row.</span></span>
-18. <span data-ttu-id="90514-150">Avaa haku valitsemalla Kenttä-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="90514-150">In the Field field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="90514-151">Kirjoita arvo Kenttä-kenttään.</span><span class="sxs-lookup"><span data-stu-id="90514-151">In the Field field, type a value.</span></span>
-20. <span data-ttu-id="90514-152">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="90514-152">Close the page.</span></span>
-21. <span data-ttu-id="90514-153">Kirjoita arvo Ehdot-kenttään.</span><span class="sxs-lookup"><span data-stu-id="90514-153">In the Criteria field, type a value.</span></span>
-22. <span data-ttu-id="90514-154">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="90514-154">Click OK.</span></span>
-23. <span data-ttu-id="90514-155">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="90514-155">Click OK.</span></span>
-24. <span data-ttu-id="90514-156">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="90514-156">Close the page.</span></span>
-25. <span data-ttu-id="90514-157">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="90514-157">Close the page.</span></span>
+## <a name="define-a-vendor-invoice-policy"></a><span data-ttu-id="d5d6a-130">Toimittajan laskujen käytännön määrittäminen</span><span class="sxs-lookup"><span data-stu-id="d5d6a-130">Define a vendor invoice policy</span></span>
+1. <span data-ttu-id="d5d6a-131">Siirry siirtymisruudussa kohtaan **Moduulit > Ostoreskontra > Käytännön asetukset > Toimittajan laskukäytännöt**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-131">Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policies**.</span></span>
+2. <span data-ttu-id="d5d6a-132">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-132">Select **New**.</span></span>
+3. <span data-ttu-id="d5d6a-133">Kirjoita arvot **Nimi**- ja **Kuvaus**-kenttiin.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-133">In the **Name** and **Description** fields, type values.</span></span>
+4. <span data-ttu-id="d5d6a-134">Laajenna tai tiivistä **Käytännön organisaatiot** -osa.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-134">Expand or collapse the **Policy organizations** section.</span></span>
+5. <span data-ttu-id="d5d6a-135">Valitse puussa solmu **Contoso Entertainment System USA**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-135">In the tree, select **Contoso Entertainment System USA**.</span></span>
+6. <span data-ttu-id="d5d6a-136">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-136">Select **Add**.</span></span>
+7. <span data-ttu-id="d5d6a-137">Laajenna tai tiivistä **Käytäntösäännöt**-osa.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-137">Expand or collapse the **Policy rules** section.</span></span>
+8. <span data-ttu-id="d5d6a-138">Valitse **Luo käytäntösääntö**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-138">Select **Create policy rule**.</span></span>
+9. <span data-ttu-id="d5d6a-139">Kirjoita **Käytäntösäännön kuvaus**-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-139">In the **Policy rule description** field, type a value.</span></span>
+10. <span data-ttu-id="d5d6a-140">Valitse **Suodata**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-140">Select **Filter**.</span></span>
+11. <span data-ttu-id="d5d6a-141">Valitse **Lisää**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-141">Select **Add**.</span></span> <span data-ttu-id="d5d6a-142">Valitse haluttu tietue.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-142">Select the desired record.</span></span>
+12. <span data-ttu-id="d5d6a-143">Valitse tai kirjoita kentissä **Taulu**, **Johdettu taulu** ja **Kenttä** arvot avattavista valikoista.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-143">In the **Table**, **Derived table**, and **Field** fields, select or enter options from the drop-down menus.</span></span>
+13. <span data-ttu-id="d5d6a-144">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-144">Close the page.</span></span>
+14. <span data-ttu-id="d5d6a-145">Kirjoita arvo **Ehdot**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-145">In the **Criteria** field, type a value.</span></span>
+15. <span data-ttu-id="d5d6a-146">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-146">Select **OK**.</span></span>
+16. <span data-ttu-id="d5d6a-147">Valitse **OK**.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-147">Select **OK**.</span></span>
+17. <span data-ttu-id="d5d6a-148">Palaa kotisivulle sulkemalla sivut.</span><span class="sxs-lookup"><span data-stu-id="d5d6a-148">Close the pages to return to the home page.</span></span>
 

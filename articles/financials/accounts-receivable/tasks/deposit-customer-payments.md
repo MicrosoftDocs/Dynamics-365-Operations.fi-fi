@@ -10,48 +10,48 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransCustPaym, CustTableLookup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f58cebce20e8516dc918e0bad1e020ffd7f791ee
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afbf74d1cf3dc87e97dda0873115b5c7fa49ca3d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565482"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834460"
 ---
-# <a name="deposit-customer-payments"></a><span data-ttu-id="f1c51-103">Talleta asiakkaan maksuja</span><span class="sxs-lookup"><span data-stu-id="f1c51-103">Deposit customer payments</span></span>
+# <a name="deposit-customer-payments"></a><span data-ttu-id="f8f12-103">Talleta asiakkaan maksuja</span><span class="sxs-lookup"><span data-stu-id="f8f12-103">Deposit customer payments</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="f1c51-104">Talleta asiakkaan maksut.</span><span class="sxs-lookup"><span data-stu-id="f1c51-104">Deposit customer payments.</span></span> <span data-ttu-id="f1c51-105">Tässä tehtävässä käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="f1c51-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="f8f12-104">Talleta asiakkaan maksut.</span><span class="sxs-lookup"><span data-stu-id="f8f12-104">Deposit customer payments.</span></span> <span data-ttu-id="f8f12-105">Tässä tehtävässä käytetään esittely-yritystä USMF.</span><span class="sxs-lookup"><span data-stu-id="f8f12-105">This task uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="f1c51-106">Siirry kohtaan Myyntireskontra > Maksut > Maksukirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="f1c51-106">Go to Accounts receivable > Payments > Payment journal.</span></span>
-2. <span data-ttu-id="f1c51-107">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="f1c51-107">Click New.</span></span>
-3. <span data-ttu-id="f1c51-108">Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="f1c51-108">In the Name field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="f1c51-109">Valitse maksukirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="f1c51-109">Select the payment journal.</span></span> 
-5. <span data-ttu-id="f1c51-110">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="f1c51-110">Click Lines.</span></span>
-6. <span data-ttu-id="f1c51-111">Valitse Tili-kentässä asiakas, jolle maksu kirjataan.</span><span class="sxs-lookup"><span data-stu-id="f1c51-111">In the Account field, select the Customer for whom you are recording the payment.</span></span>
-7. <span data-ttu-id="f1c51-112">Syötä Kredit-kenttään maksun summa.</span><span class="sxs-lookup"><span data-stu-id="f1c51-112">In the Credit field, enter the amount of the payment.</span></span>
-    * <span data-ttu-id="f1c51-113">Voit jättää summan tyhjäksi, jolloin järjestelmä laskee sen valitsemalla maksetut laskut.</span><span class="sxs-lookup"><span data-stu-id="f1c51-113">You can choose to leave the amount blank, and have the system calculate it by selecting the invoices which were paid.</span></span>  
-8. <span data-ttu-id="f1c51-114">Syötä Maksuviite-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="f1c51-114">In the Payment reference field, type a value.</span></span>
-    * <span data-ttu-id="f1c51-115">Maksuviite voi olla syöttämäsi maksun sekkinumero.</span><span class="sxs-lookup"><span data-stu-id="f1c51-115">The payment reference could be the check number for the payment you are entering.</span></span> <span data-ttu-id="f1c51-116">Maksuviite vaaditaan, jotta maksu voidaan sisällyttää talletuskuittiin.</span><span class="sxs-lookup"><span data-stu-id="f1c51-116">The payment reference is required in order to include the payment on a deposit slip.</span></span>  
-9. <span data-ttu-id="f1c51-117">Valitse Käytä talletuskuittia -kohta.</span><span class="sxs-lookup"><span data-stu-id="f1c51-117">Mark the box Use a deposit slip.</span></span>
-    * <span data-ttu-id="f1c51-118">Jos maksu halutaan sisällyttää talletukseen, muuta tämän asetuksen arvoksi Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f1c51-118">If the payment should be included in the deposit, change this setting to Yes.</span></span>  
-10. <span data-ttu-id="f1c51-119">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="f1c51-119">Click New.</span></span>
-11. <span data-ttu-id="f1c51-120">Valitse Tili-kentässä asiakas seuraa maksua varten.</span><span class="sxs-lookup"><span data-stu-id="f1c51-120">In the Account field, select the Customer for the next payment.</span></span>
-12. <span data-ttu-id="f1c51-121">Syötä Kredit-kenttään maksun summa.</span><span class="sxs-lookup"><span data-stu-id="f1c51-121">In the Credit field, enter the payment amount.</span></span>
-13. <span data-ttu-id="f1c51-122">Syötä Maksuviite-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="f1c51-122">In the Payment reference field, type a value.</span></span>
-14. <span data-ttu-id="f1c51-123">Valitse Käytä talletuskuittia -kohta.</span><span class="sxs-lookup"><span data-stu-id="f1c51-123">Mark the box Use a deposit slip.</span></span>
-15. <span data-ttu-id="f1c51-124">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="f1c51-124">Click Post.</span></span>
-    * <span data-ttu-id="f1c51-125">Maksut on kirjattava, ennen kuin talletuskuitti luodaan.</span><span class="sxs-lookup"><span data-stu-id="f1c51-125">Payments must be posted before the deposit slip can be generated.</span></span> <span data-ttu-id="f1c51-126">Näin varmistetaan, että maksut eivät muutu talletuskuitin luomisen jälkeen.</span><span class="sxs-lookup"><span data-stu-id="f1c51-126">This is to ensure that the payments don't change after the deposit slip is generated.</span></span>  
-16. <span data-ttu-id="f1c51-127">Valitse Toiminnot.</span><span class="sxs-lookup"><span data-stu-id="f1c51-127">Click Functions.</span></span>
-17. <span data-ttu-id="f1c51-128">Tulosta talletuskuitti.</span><span class="sxs-lookup"><span data-stu-id="f1c51-128">Click Deposit slip.</span></span>
-18. <span data-ttu-id="f1c51-129">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f1c51-129">Click OK.</span></span>
-    * <span data-ttu-id="f1c51-130">Ensimmäisellä sivulla luodaan talletuskuitti.</span><span class="sxs-lookup"><span data-stu-id="f1c51-130">The first page is used to create the deposit slip.</span></span>  
-19. <span data-ttu-id="f1c51-131">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f1c51-131">Click OK.</span></span>
-    * <span data-ttu-id="f1c51-132">Toisessa vaiheessa talletuskuitti tulostetaan. Tämä vaihe ei kuitenkaan ole pakollinen.</span><span class="sxs-lookup"><span data-stu-id="f1c51-132">The second step is to print the deposit slip, but this step is not required.</span></span>  
+1. <span data-ttu-id="f8f12-106">Siirry kohtaan Myyntireskontra > Maksut > Maksukirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="f8f12-106">Go to Accounts receivable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="f8f12-107">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="f8f12-107">Click New.</span></span>
+3. <span data-ttu-id="f8f12-108">Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="f8f12-108">In the Name field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="f8f12-109">Valitse maksukirjauskansio.</span><span class="sxs-lookup"><span data-stu-id="f8f12-109">Select the payment journal.</span></span> 
+5. <span data-ttu-id="f8f12-110">Valitse Rivit.</span><span class="sxs-lookup"><span data-stu-id="f8f12-110">Click Lines.</span></span>
+6. <span data-ttu-id="f8f12-111">Valitse Tili-kentässä asiakas, jolle maksu kirjataan.</span><span class="sxs-lookup"><span data-stu-id="f8f12-111">In the Account field, select the Customer for whom you are recording the payment.</span></span>
+7. <span data-ttu-id="f8f12-112">Syötä Kredit-kenttään maksun summa.</span><span class="sxs-lookup"><span data-stu-id="f8f12-112">In the Credit field, enter the amount of the payment.</span></span>
+    * <span data-ttu-id="f8f12-113">Voit jättää summan tyhjäksi, jolloin järjestelmä laskee sen valitsemalla maksetut laskut.</span><span class="sxs-lookup"><span data-stu-id="f8f12-113">You can choose to leave the amount blank, and have the system calculate it by selecting the invoices which were paid.</span></span>  
+8. <span data-ttu-id="f8f12-114">Syötä Maksuviite-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="f8f12-114">In the Payment reference field, type a value.</span></span>
+    * <span data-ttu-id="f8f12-115">Maksuviite voi olla syöttämäsi maksun sekkinumero.</span><span class="sxs-lookup"><span data-stu-id="f8f12-115">The payment reference could be the check number for the payment you are entering.</span></span> <span data-ttu-id="f8f12-116">Maksuviite vaaditaan, jotta maksu voidaan sisällyttää talletuskuittiin.</span><span class="sxs-lookup"><span data-stu-id="f8f12-116">The payment reference is required in order to include the payment on a deposit slip.</span></span>  
+9. <span data-ttu-id="f8f12-117">Valitse Käytä talletuskuittia -kohta.</span><span class="sxs-lookup"><span data-stu-id="f8f12-117">Mark the box Use a deposit slip.</span></span>
+    * <span data-ttu-id="f8f12-118">Jos maksu halutaan sisällyttää talletukseen, muuta tämän asetuksen arvoksi Kyllä.</span><span class="sxs-lookup"><span data-stu-id="f8f12-118">If the payment should be included in the deposit, change this setting to Yes.</span></span>  
+10. <span data-ttu-id="f8f12-119">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="f8f12-119">Click New.</span></span>
+11. <span data-ttu-id="f8f12-120">Valitse Tili-kentässä asiakas seuraa maksua varten.</span><span class="sxs-lookup"><span data-stu-id="f8f12-120">In the Account field, select the Customer for the next payment.</span></span>
+12. <span data-ttu-id="f8f12-121">Syötä Kredit-kenttään maksun summa.</span><span class="sxs-lookup"><span data-stu-id="f8f12-121">In the Credit field, enter the payment amount.</span></span>
+13. <span data-ttu-id="f8f12-122">Syötä Maksuviite-kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="f8f12-122">In the Payment reference field, type a value.</span></span>
+14. <span data-ttu-id="f8f12-123">Valitse Käytä talletuskuittia -kohta.</span><span class="sxs-lookup"><span data-stu-id="f8f12-123">Mark the box Use a deposit slip.</span></span>
+15. <span data-ttu-id="f8f12-124">Valitse Kirjaa.</span><span class="sxs-lookup"><span data-stu-id="f8f12-124">Click Post.</span></span>
+    * <span data-ttu-id="f8f12-125">Maksut on kirjattava, ennen kuin talletuskuitti luodaan.</span><span class="sxs-lookup"><span data-stu-id="f8f12-125">Payments must be posted before the deposit slip can be generated.</span></span> <span data-ttu-id="f8f12-126">Näin varmistetaan, että maksut eivät muutu talletuskuitin luomisen jälkeen.</span><span class="sxs-lookup"><span data-stu-id="f8f12-126">This is to ensure that the payments don't change after the deposit slip is generated.</span></span>  
+16. <span data-ttu-id="f8f12-127">Valitse Toiminnot.</span><span class="sxs-lookup"><span data-stu-id="f8f12-127">Click Functions.</span></span>
+17. <span data-ttu-id="f8f12-128">Tulosta talletuskuitti.</span><span class="sxs-lookup"><span data-stu-id="f8f12-128">Click Deposit slip.</span></span>
+18. <span data-ttu-id="f8f12-129">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f8f12-129">Click OK.</span></span>
+    * <span data-ttu-id="f8f12-130">Ensimmäisellä sivulla luodaan talletuskuitti.</span><span class="sxs-lookup"><span data-stu-id="f8f12-130">The first page is used to create the deposit slip.</span></span>  
+19. <span data-ttu-id="f8f12-131">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f8f12-131">Click OK.</span></span>
+    * <span data-ttu-id="f8f12-132">Toisessa vaiheessa talletuskuitti tulostetaan. Tämä vaihe ei kuitenkaan ole pakollinen.</span><span class="sxs-lookup"><span data-stu-id="f8f12-132">The second step is to print the deposit slip, but this step is not required.</span></span>  
 

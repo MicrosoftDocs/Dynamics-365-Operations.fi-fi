@@ -10,45 +10,45 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardWorkCell
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f7e7eb46bda13ef7e72189f921686a9889a8773c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bba9e5cb7dfddd2a80a37e7a57fdf94a91341e8f
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559068"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1843622"
 ---
-# <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a><span data-ttu-id="bf71a-103">Prosessin kanban-työn valmisteleminen kun materiaalit eivät ole käytettävissä työsolulle</span><span class="sxs-lookup"><span data-stu-id="bf71a-103">Prepare a process kanban job when materials are not available for the work cell</span></span>
+# <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a><span data-ttu-id="b5153-103">Prosessin kanban-työn valmisteleminen kun materiaalit eivät ole käytettävissä työsolulle</span><span class="sxs-lookup"><span data-stu-id="b5153-103">Prepare a process kanban job when materials are not available for the work cell</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="bf71a-104">Tässä menettelyssä keskitytään prosessin kanban-töiden valmisteluun, kun osa työsolun materiaalista ei ole valmiina. Materiaalit on siis kerättävä varastosta.</span><span class="sxs-lookup"><span data-stu-id="bf71a-104">This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse.</span></span> <span data-ttu-id="bf71a-105">Valmistele prosessin kanban-työ kun materiaalit ovat käytettävissä työsolulle -menettely on tämän menettelyn luomisen edellytys.</span><span class="sxs-lookup"><span data-stu-id="bf71a-105">The procedure "Prepare a process kanban job when materials are available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="bf71a-106">Tämä menettely on tarkoitettu koneenkäyttäjille.</span><span class="sxs-lookup"><span data-stu-id="bf71a-106">This procedure is intended for the machine operator.</span></span> <span data-ttu-id="bf71a-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="bf71a-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="b5153-104">Tässä menettelyssä keskitytään prosessin kanban-töiden valmisteluun, kun osa työsolun materiaalista ei ole valmiina. Materiaalit on siis kerättävä varastosta.</span><span class="sxs-lookup"><span data-stu-id="b5153-104">This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse.</span></span> <span data-ttu-id="b5153-105">Valmistele prosessin kanban-työ kun materiaalit ovat käytettävissä työsolulle -menettely on tämän menettelyn luomisen edellytys.</span><span class="sxs-lookup"><span data-stu-id="b5153-105">The procedure "Prepare a process kanban job when materials are available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="b5153-106">Tämä menettely on tarkoitettu koneenkäyttäjille.</span><span class="sxs-lookup"><span data-stu-id="b5153-106">This procedure is intended for the machine operator.</span></span> <span data-ttu-id="b5153-107">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="b5153-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="bf71a-108">Siirry kohtaan Tuotannonhallinta > Kanban > Prosessitöiden kanban-taulu.</span><span class="sxs-lookup"><span data-stu-id="bf71a-108">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
-2. <span data-ttu-id="bf71a-109">Avaa haku valitsemalla Työsolu-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="bf71a-109">In the Work cell field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="bf71a-110">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="bf71a-110">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="bf71a-111">Valitse työsolu 1250.</span><span class="sxs-lookup"><span data-stu-id="bf71a-111">Select work cell 1250.</span></span>  
-4. <span data-ttu-id="bf71a-112">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="bf71a-112">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="bf71a-113">Valitse kanban 000356.</span><span class="sxs-lookup"><span data-stu-id="bf71a-113">Select Kanban 000356.</span></span>  
-5. <span data-ttu-id="bf71a-114">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="bf71a-114">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="bf71a-115">Poista luettelossa rivin 4 valinta.</span><span class="sxs-lookup"><span data-stu-id="bf71a-115">In the list, deselect row 4.</span></span> <span data-ttu-id="bf71a-116">Tai valitse rivi 4, jos Käsittele prosessin kanban-työ, kun materiaalit ovat käytettävissä -tehtävä ei ole valmis.</span><span class="sxs-lookup"><span data-stu-id="bf71a-116">or Select row 4 if you haven't completed the task "Prepare a process kanban job when materials are available."</span></span>  
-6. <span data-ttu-id="bf71a-117">Ota käyttöön Keräysluettelo-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="bf71a-117">Toggle the expansion of the Picking list section.</span></span>
-    * <span data-ttu-id="bf71a-118">Jos toimituksen tilan yhteydessä on Ei kirjausta -kuvake, työsolun nimikkeestä P0002 puuttuu 48 kappaletta.</span><span class="sxs-lookup"><span data-stu-id="bf71a-118">The No entry icon in the supply status indicates that 48 ea of item P0002 are missing for the work cell.</span></span>  
+1. <span data-ttu-id="b5153-108">Siirry kohtaan Tuotannonhallinta > Kanban > Prosessitöiden kanban-taulu.</span><span class="sxs-lookup"><span data-stu-id="b5153-108">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
+2. <span data-ttu-id="b5153-109">Avaa haku valitsemalla Työsolu-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="b5153-109">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="b5153-110">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="b5153-110">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="b5153-111">Valitse työsolu 1250.</span><span class="sxs-lookup"><span data-stu-id="b5153-111">Select work cell 1250.</span></span>  
+4. <span data-ttu-id="b5153-112">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="b5153-112">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="b5153-113">Valitse kanban 000356.</span><span class="sxs-lookup"><span data-stu-id="b5153-113">Select Kanban 000356.</span></span>  
+5. <span data-ttu-id="b5153-114">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="b5153-114">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="b5153-115">Poista luettelossa rivin 4 valinta.</span><span class="sxs-lookup"><span data-stu-id="b5153-115">In the list, deselect row 4.</span></span> <span data-ttu-id="b5153-116">Tai valitse rivi 4, jos Käsittele prosessin kanban-työ, kun materiaalit ovat käytettävissä -tehtävä ei ole valmis.</span><span class="sxs-lookup"><span data-stu-id="b5153-116">or Select row 4 if you haven't completed the task "Prepare a process kanban job when materials are available."</span></span>  
+6. <span data-ttu-id="b5153-117">Ota käyttöön Keräysluettelo-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="b5153-117">Toggle the expansion of the Picking list section.</span></span>
+    * <span data-ttu-id="b5153-118">Jos toimituksen tilan yhteydessä on Ei kirjausta -kuvake, työsolun nimikkeestä P0002 puuttuu 48 kappaletta.</span><span class="sxs-lookup"><span data-stu-id="b5153-118">The No entry icon in the supply status indicates that 48 ea of item P0002 are missing for the work cell.</span></span>  
 
-## <a name="transfer-materials-to-work-cell"></a><span data-ttu-id="bf71a-119">Materiaalien siirtäminen työsoluun</span><span class="sxs-lookup"><span data-stu-id="bf71a-119">Transfer materials to work cell</span></span>
-1. <span data-ttu-id="bf71a-120">Ota käyttöön Siirtotyöt-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="bf71a-120">Toggle the expansion of the Transfer jobs section.</span></span>
-2. <span data-ttu-id="bf71a-121">Pikasuodattimen avulla voit suodattaa Nimiketunnus-kentän arvon P0002 mukaan.</span><span class="sxs-lookup"><span data-stu-id="bf71a-121">Use the Quick Filter to filter on the Item number field with a value of 'P0002'.</span></span>
-3. <span data-ttu-id="bf71a-122">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="bf71a-122">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="bf71a-123">Valitse Käynnistys.</span><span class="sxs-lookup"><span data-stu-id="bf71a-123">Click Start.</span></span>
-    * <span data-ttu-id="bf71a-124">Siirto on meneillään.</span><span class="sxs-lookup"><span data-stu-id="bf71a-124">Transfer is in progress.</span></span>  
-5. <span data-ttu-id="bf71a-125">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="bf71a-125">Click Complete.</span></span>
-    * <span data-ttu-id="bf71a-126">Nimike P0002 on nyt käytettävissä kanban-työnä keräysluettelossa.</span><span class="sxs-lookup"><span data-stu-id="bf71a-126">Item P0002 is now available in the picking list for the kanban job.</span></span> <span data-ttu-id="bf71a-127">Voit siis alkaa valmistella kanbania ja tarvittavia materiaaleja.</span><span class="sxs-lookup"><span data-stu-id="bf71a-127">This means that we can prepare the kanban with all the needed materials.</span></span>  
-6. <span data-ttu-id="bf71a-128">Valitse Valmistele.</span><span class="sxs-lookup"><span data-stu-id="bf71a-128">Click Prepare.</span></span>
-    * <span data-ttu-id="bf71a-129">Huomaa, että työn tilan kuvake osoittaa työn olevan valmis.</span><span class="sxs-lookup"><span data-stu-id="bf71a-129">Notice that an icon in the Job status indicates that the job is now ready.</span></span>  
+## <a name="transfer-materials-to-work-cell"></a><span data-ttu-id="b5153-119">Materiaalien siirtäminen työsoluun</span><span class="sxs-lookup"><span data-stu-id="b5153-119">Transfer materials to work cell</span></span>
+1. <span data-ttu-id="b5153-120">Ota käyttöön Siirtotyöt-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="b5153-120">Toggle the expansion of the Transfer jobs section.</span></span>
+2. <span data-ttu-id="b5153-121">Pikasuodattimen avulla voit suodattaa Nimiketunnus-kentän arvon P0002 mukaan.</span><span class="sxs-lookup"><span data-stu-id="b5153-121">Use the Quick Filter to filter on the Item number field with a value of 'P0002'.</span></span>
+3. <span data-ttu-id="b5153-122">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="b5153-122">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="b5153-123">Valitse Käynnistys.</span><span class="sxs-lookup"><span data-stu-id="b5153-123">Click Start.</span></span>
+    * <span data-ttu-id="b5153-124">Siirto on meneillään.</span><span class="sxs-lookup"><span data-stu-id="b5153-124">Transfer is in progress.</span></span>  
+5. <span data-ttu-id="b5153-125">Valitse Valmis.</span><span class="sxs-lookup"><span data-stu-id="b5153-125">Click Complete.</span></span>
+    * <span data-ttu-id="b5153-126">Nimike P0002 on nyt käytettävissä kanban-työnä keräysluettelossa.</span><span class="sxs-lookup"><span data-stu-id="b5153-126">Item P0002 is now available in the picking list for the kanban job.</span></span> <span data-ttu-id="b5153-127">Voit siis alkaa valmistella kanbania ja tarvittavia materiaaleja.</span><span class="sxs-lookup"><span data-stu-id="b5153-127">This means that we can prepare the kanban with all the needed materials.</span></span>  
+6. <span data-ttu-id="b5153-128">Valitse Valmistele.</span><span class="sxs-lookup"><span data-stu-id="b5153-128">Click Prepare.</span></span>
+    * <span data-ttu-id="b5153-129">Huomaa, että työn tilan kuvake osoittaa työn olevan valmis.</span><span class="sxs-lookup"><span data-stu-id="b5153-129">Notice that an icon in the Job status indicates that the job is now ready.</span></span>  
 
