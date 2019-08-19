@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be04ef2c389c15a136be3bbfd0db375cc3c1f888
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5c08145cf900a82f9c21d44ffdee0bb1f8a57d56
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553343"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743161"
 ---
 # <a name="set-up-return-reason-codes"></a>Palautusten syykoodien määrittäminen   
 
@@ -56,9 +56,9 @@ Tämän toiminnon avulla voit määrittää palautusten syykoodit, joiden avulla
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Palautuksen syykoodiryhmät (lomake)](https://technet.microsoft.com/en-us/library/hh209604\(v=ax.60\))
+[Palautuksen syykoodiryhmät (lomake)](https://technet.microsoft.com/library/hh209604\(v=ax.60\))
 
-[Palautuksen syykoodit (lomake)](https://technet.microsoft.com/en-us/library/hh227372\(v=ax.60\))
+[Palautuksen syykoodit (lomake)](https://technet.microsoft.com/library/hh227372\(v=ax.60\))
 
  
 

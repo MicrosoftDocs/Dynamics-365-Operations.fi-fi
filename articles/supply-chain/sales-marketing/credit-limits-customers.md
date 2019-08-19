@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fd7022eb1ed2671fcfc2861eb8ec7504ebf9f98
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 37e860a969d527a334af7524c70e5ea15be7801e
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551811"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742375"
 ---
 # <a name="credit-limits-for-customers"></a>Asiakkaiden luottorajat
 
@@ -93,7 +93,7 @@ Määritä verrattavat tiedot **Myyntireskontran parametrit** -lomakkeessa. Sinu
 
 **Missä asiakkaan jäljellä olevan luoton tietoja käytetään?**
 
-Tiedot asiakkaan saldosta ja jäljellä olevasta luoton määrästä lasketaan ja tallennetaan, kun luot erääntymistilannevedoksen, ja ne näytetään **Perintä**-lomakkeella. Summat, jotka näytetään **Perintä**-lomakkeella eivät välttämättä sisällä kaikkia tapahtumatehtäviä ennen uuden erääntymistilannevedoksen luontia. Lisätietoja on kohdassa [Luotto ja perintä myyntireskontrassa](https://technet.microsoft.com/en-us/library/hh209221.aspx).
+Tiedot asiakkaan saldosta ja jäljellä olevasta luoton määrästä lasketaan ja tallennetaan, kun luot erääntymistilannevedoksen, ja ne näytetään **Perintä**-lomakkeella. Summat, jotka näytetään **Perintä**-lomakkeella eivät välttämättä sisällä kaikkia tapahtumatehtäviä ennen uuden erääntymistilannevedoksen luontia. Lisätietoja on kohdassa [Luotto ja perintä myyntireskontrassa](https://technet.microsoft.com/library/hh209221.aspx).
 
 Tiedot asiakkaan saldosta ja luoton määrästä lasketaan valittujen asiakirjojen mukaan, kun myyntitilauksia, pakkausluetteloita ja asiakkaan laskuja päivitetään. Jos käsiteltävän asiakirjan summa aiheuttaa luottorajan ylittymisen, järjestelmä näyttää varoitusviestin.
 
