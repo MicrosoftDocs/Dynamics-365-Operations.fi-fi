@@ -10,37 +10,37 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f74f8e4efc4474693f0a5b543c1300c3b64ecda0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1968703c7e9662b5cccdb71d049010bb4bd4534
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563224"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836501"
 ---
-# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a><span data-ttu-id="2d52d-103">Tuoterakenteen laskeminen käyttämällä yhtä tasorakennetta (helmikuu 2016)</span><span class="sxs-lookup"><span data-stu-id="2d52d-103">Calculate a BOM by using a single level structure (February 2016)</span></span>
+# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a><span data-ttu-id="7b976-103">Tuoterakenteen laskeminen käyttämällä yhtä tasorakennetta (helmikuu 2016)</span><span class="sxs-lookup"><span data-stu-id="7b976-103">Calculate a BOM by using a single level structure (February 2016)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="2d52d-104">Tämä menettely osoittaa, miten valmiin tuotteen kustannukset lasketaan käyttämällä kustannuslaskentalomakkeeseen perustuvaa yksitasoista hajotusta.</span><span class="sxs-lookup"><span data-stu-id="2d52d-104">This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet.</span></span> <span data-ttu-id="2d52d-105">Tämä on tuoterakenteen laskentasarjan kuudes tehtävä.</span><span class="sxs-lookup"><span data-stu-id="2d52d-105">This is the sixth task in the BOM calculation series.</span></span> <span data-ttu-id="2d52d-106">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="2d52d-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="7b976-104">Tämä menettely osoittaa, miten valmiin tuotteen kustannukset lasketaan käyttämällä kustannuslaskentalomakkeeseen perustuvaa yksitasoista hajotusta.</span><span class="sxs-lookup"><span data-stu-id="7b976-104">This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet.</span></span> <span data-ttu-id="7b976-105">Tämä on tuoterakenteen laskentasarjan kuudes tehtävä.</span><span class="sxs-lookup"><span data-stu-id="7b976-105">This is the sixth task in the BOM calculation series.</span></span> <span data-ttu-id="7b976-106">Tämän tehtävän luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="7b976-106">The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="2d52d-107">Siirry Vapautetut tuotteet -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="2d52d-107">Go to Released products.</span></span>
-2. <span data-ttu-id="2d52d-108">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="2d52d-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="2d52d-109">Valitse tuotteen BOM_1.</span><span class="sxs-lookup"><span data-stu-id="2d52d-109">Select product BOM_1.</span></span>  
-3. <span data-ttu-id="2d52d-110">Valitse toimintoruudussa Hallitse kustannuksia.</span><span class="sxs-lookup"><span data-stu-id="2d52d-110">On the Action Pane, click Manage costs.</span></span>
-4. <span data-ttu-id="2d52d-111">Valitse Nimikkeen hinta.</span><span class="sxs-lookup"><span data-stu-id="2d52d-111">Click Item price.</span></span>
-5. <span data-ttu-id="2d52d-112">Valitse Laske nimikekustannus.</span><span class="sxs-lookup"><span data-stu-id="2d52d-112">Click Calculate item cost.</span></span>
-    * <span data-ttu-id="2d52d-113">Asetus ei ehkä ole päävalikossa näkyvissä, ennen kuin ellipsipainiketta (...) napsautetaan.</span><span class="sxs-lookup"><span data-stu-id="2d52d-113">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>  
-6. <span data-ttu-id="2d52d-114">Avaa haku napsauttamalla Kustannusversio-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="2d52d-114">In the Costing version field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="2d52d-115">Valitse tässä esimerkissä 10.</span><span class="sxs-lookup"><span data-stu-id="2d52d-115">For this demo, select 10.</span></span> <span data-ttu-id="2d52d-116">Tätä kustannuslaskentaversiosta käytetään myös kustannushinnan lisäämiseen osiin.</span><span class="sxs-lookup"><span data-stu-id="2d52d-116">This is the same costing version used for adding the cost price to the components.</span></span>  
-7. <span data-ttu-id="2d52d-117">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="2d52d-117">Click OK.</span></span>
-8. <span data-ttu-id="2d52d-118">Valitse Näytä laskennan tiedot.</span><span class="sxs-lookup"><span data-stu-id="2d52d-118">Click View calculation details.</span></span>
-    * <span data-ttu-id="2d52d-119">Asetus ei ehkä ole päävalikossa näkyvissä, ennen kuin ellipsipainiketta (...) napsautetaan.</span><span class="sxs-lookup"><span data-stu-id="2d52d-119">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>    <span data-ttu-id="2d52d-120">Kustannuksen kokoonpano:  •    10 johdetaan kohteesta ITEM_A, 10 kohteesta ITEM_B, 10 kohteesta BOM_2.</span><span class="sxs-lookup"><span data-stu-id="2d52d-120">Here's the composition of the cost:  •    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2.</span></span> <span data-ttu-id="2d52d-121">Tässä tapauksessa kohteen BOM_2 tietoja ei ole, koska se annettiin standardikustannuksena 10 eikä sitä saatu laskemalla.</span><span class="sxs-lookup"><span data-stu-id="2d52d-121">In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.</span></span>  <span data-ttu-id="2d52d-122">•  7 johdetaan asetusajasta, joka on vakiokustannus, ja ylimääräinen 7 johdetaan ajoaikatyövaiheesta (prosessi).</span><span class="sxs-lookup"><span data-stu-id="2d52d-122">•  7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).</span></span>  <span data-ttu-id="2d52d-123">•   Lisäksi on epäsuoria kustannuksia vastaavia summia.</span><span class="sxs-lookup"><span data-stu-id="2d52d-123">•   There are also other amounts that correspond to indirect costs.</span></span>  
-9. <span data-ttu-id="2d52d-124">@SysTaskRecorder:_RequestClose</span><span class="sxs-lookup"><span data-stu-id="2d52d-124">@SysTaskRecorder:_RequestClose</span></span>
+1. <span data-ttu-id="7b976-107">Siirry Vapautetut tuotteet -kohtaan.</span><span class="sxs-lookup"><span data-stu-id="7b976-107">Go to Released products.</span></span>
+2. <span data-ttu-id="7b976-108">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="7b976-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="7b976-109">Valitse tuotteen BOM_1.</span><span class="sxs-lookup"><span data-stu-id="7b976-109">Select product BOM_1.</span></span>  
+3. <span data-ttu-id="7b976-110">Valitse toimintoruudussa Hallitse kustannuksia.</span><span class="sxs-lookup"><span data-stu-id="7b976-110">On the Action Pane, click Manage costs.</span></span>
+4. <span data-ttu-id="7b976-111">Valitse Nimikkeen hinta.</span><span class="sxs-lookup"><span data-stu-id="7b976-111">Click Item price.</span></span>
+5. <span data-ttu-id="7b976-112">Valitse Laske nimikekustannus.</span><span class="sxs-lookup"><span data-stu-id="7b976-112">Click Calculate item cost.</span></span>
+    * <span data-ttu-id="7b976-113">Asetus ei ehkä ole päävalikossa näkyvissä, ennen kuin ellipsipainiketta (...) napsautetaan.</span><span class="sxs-lookup"><span data-stu-id="7b976-113">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>  
+6. <span data-ttu-id="7b976-114">Avaa haku napsauttamalla Kustannusversio-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="7b976-114">In the Costing version field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="7b976-115">Valitse tässä esimerkissä 10.</span><span class="sxs-lookup"><span data-stu-id="7b976-115">For this demo, select 10.</span></span> <span data-ttu-id="7b976-116">Tätä kustannuslaskentaversiosta käytetään myös kustannushinnan lisäämiseen osiin.</span><span class="sxs-lookup"><span data-stu-id="7b976-116">This is the same costing version used for adding the cost price to the components.</span></span>  
+7. <span data-ttu-id="7b976-117">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7b976-117">Click OK.</span></span>
+8. <span data-ttu-id="7b976-118">Valitse Näytä laskennan tiedot.</span><span class="sxs-lookup"><span data-stu-id="7b976-118">Click View calculation details.</span></span>
+    * <span data-ttu-id="7b976-119">Asetus ei ehkä ole päävalikossa näkyvissä, ennen kuin ellipsipainiketta (...) napsautetaan.</span><span class="sxs-lookup"><span data-stu-id="7b976-119">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>    <span data-ttu-id="7b976-120">Kustannuksen kokoonpano:  •    10 johdetaan kohteesta ITEM_A, 10 kohteesta ITEM_B, 10 kohteesta BOM_2.</span><span class="sxs-lookup"><span data-stu-id="7b976-120">Here's the composition of the cost:  •    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2.</span></span> <span data-ttu-id="7b976-121">Tässä tapauksessa kohteen BOM_2 tietoja ei ole, koska se annettiin standardikustannuksena 10 eikä sitä saatu laskemalla.</span><span class="sxs-lookup"><span data-stu-id="7b976-121">In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.</span></span>  <span data-ttu-id="7b976-122">•  7 johdetaan asetusajasta, joka on vakiokustannus, ja ylimääräinen 7 johdetaan ajoaikatyövaiheesta (prosessi).</span><span class="sxs-lookup"><span data-stu-id="7b976-122">•  7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).</span></span>  <span data-ttu-id="7b976-123">•   Lisäksi on epäsuoria kustannuksia vastaavia summia.</span><span class="sxs-lookup"><span data-stu-id="7b976-123">•   There are also other amounts that correspond to indirect costs.</span></span>  
+9. <span data-ttu-id="7b976-124">@SysTaskRecorder:_RequestClose</span><span class="sxs-lookup"><span data-stu-id="7b976-124">@SysTaskRecorder:_RequestClose</span></span>
 
