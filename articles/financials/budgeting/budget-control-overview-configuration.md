@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4dbbbdf403c3e3f7c1bfa391cc32f80505098db9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b33057bc28c1a03cb7c72e369beec4a78ff2d1a1
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568186"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834292"
 ---
 # <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus
 
@@ -36,7 +36,7 @@ Tässä artikkelissa esitellään budjetin hallinta. Artikkeli sisältää tieto
 
 Microsoft Dynamics 365 for Finance and Operationsin budjetin hallinta tukee organisaation taloudellisten resurssien hallintaa tilikarttojen, työnkulkujen, työryhmien, lähdeasiakirjojen ja -kirjauskansioiden sekä käytettävissä olevien varojen määritettävissä olevan laskelman, budjettijaksojen ja raja-arvojen avulla. Kun ohjausobjektit on määritetty, organisaatio voi suunnitella, mitata, hallita ja ennustaa taloudellisia resursseja tilikauden aikana. 
 
-Kun budjetit on hyväksytty Dynamics 365 for Finance and Operationsissa, voit luoda budjettirekisterimerkinnät budjettisuunnitelmien avulla ja tallentaa organisaation kulubudjetin. Vaihtoehtoisesti budjettirekisterimerkinnät voidaan luoda tai tuoda kolmannen osapuolen ohjelman avulla ilman budjettisuunnittelutoiminnon käyttämistä. 
+Kun budjetit on hyväksytty Finance and Operationsissa, voit luoda budjettirekisterimerkinnät budjettisuunnitelmien avulla ja tallentaa organisaation kulubudjetin. Vaihtoehtoisesti budjettirekisterimerkinnät voidaan luoda tai tuoda kolmannen osapuolen ohjelman avulla ilman budjettisuunnittelutoiminnon käyttämistä. 
 
 Kulut voidaan tallentaa päätilien ja taloushallinnon dimensioiden avulla. Koko kulubudjetin hallinta voidaan määrittää vastaamaan organisaation menetelmiä ja vaatimuksia taloushallinnon dimensioiden ja päätilien yhdistelmien ryhmittelyn avulla. 
 

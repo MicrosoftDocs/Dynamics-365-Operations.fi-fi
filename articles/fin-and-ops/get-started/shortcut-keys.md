@@ -3,7 +3,7 @@ title: Pikanäppäimet
 description: Seuraavat pikanäppäimet ovat käytössä koko Dynamics 365 for Finance and Operations-ohjelmistossa.
 author: jasongre
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
+ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561830"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1780055"
 ---
 # <a name="keyboard-shortcuts"></a>Pikanäppäimet
 
@@ -138,9 +138,13 @@ Ympäristön päivityksestä 11 lähtien käyttäjät ovat löytäneet käytett�
 | Lisää sarja rivejä valittuun joukkoon<blockquote>[!NOTE] Tämä pikanäppäin koskee ainoastaan monivalintaskenaarioita.</blockquote>         | Vaihto+Napsautus                     |
 | Siirry seuraavalle/edelliselle tietosivulle                                                                                   | Page Up / Page Down             |
 | Luo uusi rivi ruudukon alaosaan                                                                             | Alanuoli (edellisellä rivillä)  |
-| Valitse kaikki rivit tai poista ne                                                                                               | Ctrl+Vaihto+M                    |
 | Siirry ensimmäiseen tietueeseen                                                                                               | Ctrl+Home                       |
 | Siirry viimeiseen tietueeseen                                                                                                | Ctrl+End                        |
+| Valitse kaikki rivit tai poista ne                                                                                               | Ctrl+Vaihto+M                    |
+| Siirry ensimmäiselle merkitylle riville                                                                                           | Alt+Shift+M, F                    |
+| Siirry seuraavalle merkitylle riville                                                                                            | Alt+Shift+M, L                    |
+| Siirry edelliselle merkitylle riville                                                                                        | Alt+Shift+M, P                    |
+| Siirry viimeiselle merkitylle riville                                                                                           | Alt+Shift+M, N                    |
 | Suorita ruudukon oletustoiminto<blockquote>[!NOTE] Tämä pikanäppäin on käytössä, kun kohdistus on solussa, joka sisältää hyperlinkin ja kaikki kyseisen sarakkeen solut sisältävät linkkejä.</blockquote> | Enter                           |
 | Kohdistuksen siirtäminen valitun rivin ja otsikkorivin välillä                                                               | Alt+Vaihto+H                     |
 | Suurenna tai pienennä nykyistä saraketta (kohdistus otsikkorivillä)                                                  | Oikea nuoli, vasen nuoli        |

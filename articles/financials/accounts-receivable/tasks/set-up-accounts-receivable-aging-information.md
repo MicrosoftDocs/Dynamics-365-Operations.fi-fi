@@ -3,25 +3,25 @@ title: Määritä ja luo myyntireskontran erääntymistiedot
 description: Tämän ohjauksen avulla opit määrittämään erääntymiskauden ja asiakkaiden saldojen erääntymisen sekä tarkastelemaan erääntyneiden saldojen luettelon saldoja ja Perintä-sivua.
 author: mikefalkner
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fd8738cfd3466464c9fec1760e9a369ff3a4a67
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 77b5dd5feb16cc3bd6d64b6520cc47087c5b5224
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568232"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834364"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Määritä ja luo myyntireskontran erääntymistiedot
 
@@ -31,34 +31,31 @@ Tämän ohjauksen avulla opit määrittämään erääntymiskauden ja asiakkaide
 
 
 ## <a name="create-an-aging-period-definition"></a>Luo erääntymiskausien määritys.
-1. Siirry kohtaan Luotonvalvonta > Asetukset > Erääntymiskausien määritykset.
-2. Valitse Uusi.
-3. Kirjoita arvo Erääntymiskauden määritys -kenttään.
-4. Kirjoita Kuvaus-kenttään arvo.
-5. Lisää uusi erääntymiskausi valitsemalla alla oleva Lisää.
-6. Syötä Kausi-kenttään erääntymisraporteissa näkyvä kuvaus.
-7. Syötä Yksikkö-kenttään numero.
-8. Valitse vaihtoehto Aikaväli-kentässä.
-    * Kirjanpitokausi on sama kuin kirjanpitokalenterin kausi. Päivä, viikko, kuukausi, neljännesvuosi ja vuodet määrittävät aikavälin koon päivämäärätyypin mukaan. Jos valittuna on Rajoittamaton, kaikki edellistä kautta aiemmat tai edellisen kauden jälkeiset tapahtumat valitaan sen perusteella, onko kyseessä ensimmäinen vai viimeinen kausi.  
-9. Valitse vaihtoehto Erääntymisen ilmaisin -kentässä.
+1. Siirry kohtaan **Siirtymisruutu > Moduulit > Luotonvalvonta > Asetukset > Erääntymiskausien määritykset**.
+2. Valitse **Uusi**.
+3. Kirjoita arvo **Erääntymiskauden määritys** -kenttään.
+4. Kirjoita **Kuvaus**-kenttään arvo.
+5. Lisää uusi erääntymiskausi valitsemalla **Lisää alle**.
+6. Syötä **Kausi**-kenttään erääntymisraporteissa näkyvä kuvaus.
+7. Syötä **Yksikkö**-kenttään numero.
+8. Valitse vaihtoehto **Aikaväli**-kentässä. Kirjanpitokausi on sama kuin kirjanpitokalenterin kausi. Päivä, viikko, kuukausi, neljännesvuosi ja vuodet määrittävät aikavälin koon päivämäärätyypin mukaan. Jos valittuna on Rajoittamaton, kaikki edellistä kautta aiemmat tai edellisen kauden jälkeiset tapahtumat valitaan sen perusteella, onko kyseessä ensimmäinen vai viimeinen kausi.  
+9. Valitse vaihtoehto **Erääntymisen ilmaisin** -kentässä.
 10. Valitse kausi ruudukon yläosassa. Päivitä kuvaukseen erääntymiskauden määrityksen vanhimman kauden kuvaus.
-11. Syötä Kausi-kenttään erääntymiskauden uusi kuvaus.
+11. Syötä **Kausi**-kenttään erääntymiskauden uusi kuvaus.
 12. Sulje sivu.
 
 ## <a name="age-the-balances"></a>Saldojen erääntyminen
-1. Siirry kohtaan Luotonvalvonta > Kausittaiset tehtävät > Eräännytä asiakkaan saldot.
-2. Valitse Erääntymiskauden määritys -kentässä luomasi erääntymiskauden määritys.
-    * Kullakin erääntymiskauden määrityksellä voi olla yksi aktiviinen tilannevedos.  
-    * Kaikki asiakkaat käsitellään oletusarvoisesti. Voit laskea yksittäisten perintöjen asiakasjoukon tämän valinnan perusteella.  
-    * Valitse sen tapahtuman päivämäärä, jota haluat käyttää erääntymisessä.  
-    * Valitse erääntymiselle alkaen-päivämäärä. Oletusarvo on tänään. Voit kuitenkin muuttaa kentän arvoksi Valittu päivämäärä, jolloin voit valita haluamasi päivämäärän. Käytä eräkäsittelyssä kuluvaa päivämäärää.  
-3. Laajenna yritysalue. Voit valita yrityksiä tilannevedokseen. Nykyinen yritys on valittuna oletusarvoisesti.
-4. Aloita tilannevedoksen käsittely valitsemalla OK. Tähän kuluu jonkin aikaa, joten odota, kunnes liukusäädin katoaa. Tarkista sitten viestikeskuksen viestit.
+1. Siirry kohtaan **Luotonvalvonta > Kausittaiset tehtävät > Eräännytä asiakkaan saldot**.
+2. Valitse **Erääntymiskauden määritys** -kentässä luomasi erääntymiskauden määritys.
+    + Kullakin erääntymiskauden määrityksellä voi olla yksi aktiviinen tilannevedos.  
+    + Kaikki asiakkaat käsitellään oletusarvoisesti. Voit laskea yksittäisten perintöjen asiakasjoukon tämän valinnan perusteella.  
+    + Valitse sen tapahtuman päivämäärä, jota haluat käyttää erääntymisessä.  
+    + Valitse erääntymiselle alkaen-päivämäärä. Oletusarvo on tänään. Voit kuitenkin muuttaa kentän arvoksi Valittu päivämäärä, jolloin voit valita haluamasi päivämäärän. Käytä eräkäsittelyssä kuluvaa päivämäärää.  
+3. Laajenna **yrityksen** alue. Voit valita yrityksiä tilannevedokseen. Nykyinen yritys on valittuna oletusarvoisesti.
+4. Aloita tilannevedoksen käsittely valitsemalla **OK**. Tähän kuluu jonkin aikaa, joten odota, kunnes liukusäädin katoaa. Tarkista sitten viestikeskuksen viestit.
 
 ## <a name="view-the-balances-on-the-aged-balances-list-and-on-the-collection-page"></a>Saldojen tarkasteleminen erääntyneiden saldojen luettelossa ja Perintä-sivulla
-1. Siirry kohtaan Luotonvalvonta > Perintä > Erääntyneet saldot.
-    * Luettelosivulla näkyvät asiakkaan saldot. Erääntymiskuvake osoittaa vanhimman tapahtuman erääntymiskauden.  
+1. Siirry kohtaan **Luotonvalvonta > Perintä > Erääntyneet saldot**. Luettelosivulla näkyvät asiakkaan saldot. Erääntymiskuvake osoittaa vanhimman tapahtuman erääntymiskauden.  
 2. Valitse asiakas, jolla on saldo.
-3. Laajenna Erääntyminen-tietoruutua niin, että erääntyvät saldot näkyvät.
-    * Tietokentän erääntymiskauden määritys saadaan parametreissa määritetystä erääntymiskauden oletusmäärityksestä. Arvon voi muuttaa keräysvalikon avulla.  
+3. Laajenna **Erääntyminen**-tietoruutua niin, että erääntyvät saldot näkyvät. Tietokentän erääntymiskauden määritys saadaan parametreissa määritetystä erääntymiskauden oletusmäärityksestä. Arvon voi muuttaa keräysvalikon avulla.  
 

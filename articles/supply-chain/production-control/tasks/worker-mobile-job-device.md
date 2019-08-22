@@ -1,72 +1,70 @@
 ---
 title: Määritä työssä mobiililaitetta käyttävä työntekijä
-description: Tässä menettelyssä näytetään, miten työntekijän käyttäjätilille määritetään oikeat roolit, ja annetaan sitten työntekijälle mahdollisuus tehdä työnohjauksen rekisteröintejä.
+description: Tässä ohjeaiheessa kerrotaan, miten työntekijän käyttäjätilille määritetään oikeat roolit, ja annetaan sitten työntekijälle mahdollisuus tehdä työnohjauksen rekisteröintejä.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bb4d806810660e55ef13a9ff21c07e0ce194496
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a6e45ea8fdbe30436badd88d4972fda970755275
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571355"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835768"
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a>Määritä työssä mobiililaitetta käyttävä työntekijä
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä näytetään, miten työntekijän käyttäjätilille määritetään oikeat roolit, ja annetaan sitten työntekijälle mahdollisuus tehdä työnohjauksen rekisteröintejä.
+Tässä ohjeaiheessa kerrotaan, miten työntekijän käyttäjätilille määritetään oikeat roolit, ja annetaan sitten työntekijälle mahdollisuus tehdä työnohjauksen rekisteröintejä.
 
+## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a>Varmista, että työntekijälle on määritetty tietty rooli
 
-## <a name="assign-roles-to-user-account"></a>Määritä rooleja käyttäjätilille
-1. Valitse Järjestelmänhallinta > Käyttäjät > Käyttäjät.
-2. Suodata pikasuodatuksella työntekijä, jonka käyttäjätili on liitetty koneenkäyttäjän rooliin. Mallitiedoissa nimenä on Shannon.
-3. Valitse käyttäjätilitietue.
-4. Avaa käyttäjätilin tiedot napsauttamalla luettelossa valitulla rivillä Nimi-linkkiä.
-5. Valitse puussa Roolit\Koneenkäyttäjä.
-6. Sulje käyttäjätietojen tietosivu.
-7. Sulje sivu.
+Tässä esimerkissä tarkistetaan, että käyttäjälle "SHANNON" on määritetty koneoperaattorin rooli ennen työntekijätilin määrittämistä.
 
-## <a name="configure-worker-account"></a>Määritä työntekijän tili.
-1. Valitse Henkilöstöhallinto > Työntekijät > Työntekijät.
-2. Suodata pikasuodatuksella työntekijä, jonka käyttäjätili on liitetty koneenkäyttäjän rooliin. Mallitiedoissa nimenä on Shannon.
-3. Valitse käyttäjätilitietue.
-4. Avaa käyttäjätilin tiedot napsauttamalla luettelossa valitulla rivillä Nimi-linkkiä.
-5. Valitse Työsuhde-välilehti.
-6. Laajenna Aikarekisteröinti-pikavälilehti ja valitse Aktivoi rekisteröintipäätteissä.
-7. Valitse Aktivoi rekisteröintipäätteissä.
-8. Anna tai valitse Laskentaryhmä-kentässä arvo.
-9. Anna tai valitse Oletuslaskentaryhmä-kentässä arvo.
-10. Anna tai valitse Hyväksyntäryhmä-kentässä arvo.
-11. Anna tai valitse Vakioprofiili-kentässä arvo.
-12. Anna tai valitse Profiiliryhmä-kentässä arvo.
-13. Valitse OK.
-14. Anna uuden aikarekisteröinnin työntekijän nimilapun numero valitsemalla Muokkaa.
-15. Kirjoita Nimilapun tunnus -kenttään arvo.
-16. Valitse Tallenna.
-17. Käytä SaveRecord-pikavalintaa.
-18. Sulje työntekijän tietosivu.
-19. Sulje sivu.
+1. Valitse **Siirtymisruutu > Moduulit > Järjestelmänhallinta > Käyttäjät > Käyttäjät**.
+2. Etsi käyttäjä pikasuodattimesta. Syötä tässä esimerkissä arvoksi `shannon`.
+3. Valitse näyttöön tulevassa käyttäjätilissä **Käyttäjätunnus**-sarakkeessa oleva linkki.
+4. Valitse **Käyttäjän roolit** -puussa **Roolit > Koneenkäyttäjä**.
+5. Palaa kotisivulle sulkemalla **Käyttäjän tiedot**- ja **Käyttäjät**-sivut.
 
-## <a name="assign-worker-to-device-group"></a>Määritä työntekijä laiteryhmään.
-1. Valitse Tuotannonhallinta > Asetukset > Tuotannonohjaus > Konfiguroi työkortti laitteita varten.
-2. ValitseLisää.
-3. Merkitse valittu rivi luettelossa.
-4. Valitse OK.
-5. Valitse Muokkaa.
-6. Voit määrittää Tuotantoyksikkö-kentässä työntekijän oletussuodattimen. Tämä varmistaa, että vain valittujen tuotantoyksiköiden tuotantotyöt näytetään, kun työntekijä kirjautuu laitteeseen.
+## <a name="configure-worker-account"></a>Määritä työntekijän tili
+1. Siirry kohtaan **Siirtymisruutu > Moduulit > Henkilöstöhallinto > Työntekijät > Työntekijät**.
+2. Etsi käyttäjä pikasuodattimesta. Syötä tässä esimerkissä arvoksi `shannon`.
+3. Valitse näyttöön tulevassa käyttäjätilissä **Nimi**-sarakkeessa oleva linkki.
+4. Valitse**Aikarekisteröinti**-välilehti.
+5. Valitse **Aktivoi rekisteröintipäätteissä**.
+6. Valitse tai kirjoita arvot seuraaviin kenttiin:  
+
+    - **Laskentaryhmä**  
+    - **Oletuslaskentaryhmä**  
+    - **Hyväksyntäryhmä**  
+    - **Vakioprofiili**  
+    - **Profiiliryhmä**  
+
+7. Valitse **OK**.
+8. Anna uuden aikarekisteröinnin työntekijän nimilapun numero valitsemalla **Muokkaa**. Anna arvo **Nimilapun tunnus**-kentässä.
+9. Valitse **Tallenna**.
+10. Sulje **Työntekijän tiedot**- ja **Työntekijät**-sivut.
+
+## <a name="assign-worker-to-device-group"></a>Määritä työntekijä laiteryhmään
+1. Valitse **Tuotannonhallinta > Asetukset > Tuotannonohjaus > Konfiguroi työkortti laitteita varten**.
+2. Valitse **Lisää**.
+3. Valitse luettelosta haluamasi työntekijä. Valitse tässä esimerkissä **SHANNON**.
+4. Valitse **OK**.
+5. Valitse **Muokkaa**.
+6. Voit määrittää **Tuotantoyksikkö**-kentässä työntekijän oletussuodattimen. Tämä varmistaa, että vain valittujen tuotantoyksiköiden tuotantotyöt näytetään, kun työntekijä kirjautuu laitteeseen. Anna haluttu arvo.
 7. Sulje sivu.
 

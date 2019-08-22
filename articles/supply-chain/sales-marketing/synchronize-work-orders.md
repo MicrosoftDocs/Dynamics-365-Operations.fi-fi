@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5ca01b085315d916a18c512af28fc7534ce76ee8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 77358513ffdf791ab10d6efe1b84f598ffb5ec26
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536730"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1843406"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-finance-and-operations"></a>Projektin sisältävien työtilausten synkronointi Field Servicestä Finance and Operationsiin
 
@@ -34,7 +34,7 @@ Ohjeaiheessa käsitellään malleja ja taustalla olevaa tehtävää, joilla proj
 
 [![Liiketoimintaprosessien synkronointi Finance and Operationsin ja Field Servicen välillä](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
-Käytetty **Projektin työtilaukset (Field Servicestä Finance and Operationsiin)** -malli perustuu **Työtilaukset (Field Servicestä Finance and Operationsiin)** -malliin. Lisätietoja on kohdassa [Field Servicen työtilausten synkronointi Finance and Operationsin myyntitilauksiin](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+Käytetty **Projektin työtilaukset (Field Servicestä Finance and Operationsiin)** -malli perustuu **Työtilaukset (Field Servicestä Finance and Operationsiin)** -malliin. Lisätietoja on kohdassa [Field Servicen työtilausten synkronointi Finance and Operationsin myyntitilauksiin](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 Tässä ohjeaiheessa käsitellään kahden mallin eroja:
 - **Projektin työtilaukset (Field Servicestä Finance and Operationsiin)**

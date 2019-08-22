@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85cb5c5618346f1e5132f818911be21df86fbfcb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554987"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741107"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Avaa yksikön tiedot Excelissä ja päivittä ne käyttämällä Excel-lisäosaa
 
@@ -60,7 +60,7 @@ Excel-lisä lukee valitsemasi yksikön tiedot automaattisesti. Huomaa, että ty�
 
 6. Valitse **OK** ja vahvista muutos valitsemalla **Kyllä**. Excel-lisäosa käynnistetään uudelleen. Se lataa metatiedot.
 
-    **Rakenne**-painike on nyt käytettävissä. Jos Excel-lisäosassa on **Lataa sovelmat** -painike, et ehkä ole kirjautunut oikeana käyttäjänä. Lisätietoja on tämän ohjeaiheen [Vianmääritys](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) -osan Lataa sovelmat -painike on näkyvissä -kohdassa.
+    **Rakenne**-painike on nyt käytettävissä. Jos Excel-lisäosassa on **Lataa sovelmat** -painike, et ehkä ole kirjautunut oikeana käyttäjänä. Lisätietoja on tämän ohjeaiheen [Vianmääritys](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) -osan Lataa sovelmat -painike on näkyvissä -kohdassa.
 
 7. Valitse **Rakenne**. Excel-lisäosa hakee yksikön metatiedot.
 8. Valitse **Lisää taulu**. Näkyviin tulee luettelo yksiköistä. Yksiköt näytetään muodossa "Nimi – Otsikko".

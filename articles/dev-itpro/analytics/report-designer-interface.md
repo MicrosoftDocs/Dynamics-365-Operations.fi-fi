@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e9b77e2b510a72d1e3fe3c68c997d58245a86a27
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 584af514fc43a578cf1d4963868f7c0c3460f88d
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551575"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849944"
 ---
 # <a name="report-designer-interface"></a>Report Designer -ohjelman käyttöliittymä
 
@@ -49,7 +49,7 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 | Tallenna nimellä                           | Tallenna nykyinen rivin, sarakkeen, raportointipuun tai raportin määritys uudella nimellä. |
 | Ominaisuudet                        | Avaa **Ominaisuudet**-valintaikkuna, jossa voit muuttaa raportin nimen ja kuvauksen. |
 | Luo                          | Luo nykyinen raportti. Tämä komento on käytettävissä raportin määrityksestä. |
-| Tarkastele raporttia                       | Avaa luodun raportin uusin versio Dynamics 365 for Finance and Operationsissa. Tämä komento on käytettävissä raportin määrityksestä, jos luotuna on vähintään yksi raportti. |
+| Tarkastele raporttia                       | Avaa luodun raportin uusin versio Finance and Operationsissa. Tämä komento on käytettävissä raportin määrityksestä, jos luotuna on vähintään yksi raportti. |
 | Viimeisimmät raporttien määritykset         | Näytä äskettäin luotujen tai muokattujen raporttien luettelo. Tämän jälkeen voit valita raportin luettelosta. |
 | Viimeisimmät rivien määritykset            | Näytä äskettäin luotujen tai muokattujen rivien määritysten luettelo. Tämän jälkeen voit valita rivin määrityksen luettelosta. |
 | Viimeisimmät sarakkeiden määritykset         | Näytä äskettäin luotujen tai muokattujen sarakkeiden määritysten luettelo. Tämän jälkeen voit valita sarakkeen määrityksen luettelosta. |
@@ -162,7 +162,7 @@ Seuraavassa taulussa kuvataan talousraporttien suunnittelussa käytettävät val
 
 | Komento | kuvaus                                                              |
 |---------|--------------------------------------------------------------------------|
-| Ohje    | Avaa Dynamics 365 for Finance and Operationsin ohjeen talousraportoinnin aihesivu. |
+| Ohje    | Avaa Finance and Operationsin ohjeen talousraportoinnin aihesivu. |
 |         |                                                                          |
 
 ## <a name="report-designer-toolbar-buttons"></a>Report Designer -ohjelman työkalurivin painikkeet

@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: df27ff3477443611278436a680d70ea81a21763e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 253ba0bd991e8db17940d3d4b9ade599800bf924
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552598"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1843862"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Toimittajayhteistyön mobiilityötila
 
@@ -104,7 +104,7 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsi
 <li><a href="vendor-collaboration-work-external-vendors.md">Toimittajayhteistyön käyttäminen ulkoisten toimittajien kanssa</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Toimittajayhteistyön käyttäjien hallinta</a></li>
 <li><a href="set-up-maintain-vendor-collaboration.md">Toimittajayhteistyön määrittäminen ja hallinta</a></li>
-<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Toimittajayhteistyön käyttäminen Dynamics 365 for Finance and Operations -asiakkaiden kanssa</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Toimittajayhteistyön käyttäminen Finance and Operations -asiakkaiden kanssa</a></li>
 </ul></td>
 </tr>
 </tbody>

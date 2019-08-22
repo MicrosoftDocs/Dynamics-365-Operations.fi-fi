@@ -3,13 +3,13 @@ title: Videoita Finance and Operations -palveluille
 description: Tällä sivulla on lueteltu Microsoftin luomat toimintaohjeita ja teknisiä keskusteluja sisältävät Dynamics 365 for Finance and Operations -videot, jotka ovat saatavilla YouTubessa ja muissa sivustoissa.
 author: josaw1
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 5ede5bfa3b7a61461adb1514b7e96c4eba5a75c7
-ms.sourcegitcommit: fdc37a3c2ca2bac5741e7017fb225344e64f041a
+ms.openlocfilehash: d2bf2c45f6298205dbed67f6921234757a2b736a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625394"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852078"
 ---
 # <a name="videos-for-finance-and-operations"></a>Finance and Operations -videot
 
@@ -71,6 +71,8 @@ Videot on listattu ominaisuuksien mukaan, joten selaa alaspäin nähdäksesi kai
 
 #### <a name="intelligence"></a>Tiedot
 
+- [Upotetun raportin muokkaaminen analyysityötilassa](https://youtu.be/_8WlwmSggcQ)
+- [PowerBI.com-raporttien upottaminen Dynamics 365 for Finance and Operationsissa](https://youtu.be/gGWuNJDoi-M)
 - [Oman tietokannan tuonti Dynamics 365 for Finance and Operationsiin](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Kustannustenhallinnan Power BI -sisällön käyttö Dynamics 365:ssä](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 

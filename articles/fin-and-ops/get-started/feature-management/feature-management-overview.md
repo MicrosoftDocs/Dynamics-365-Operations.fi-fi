@@ -3,7 +3,7 @@ title: Ominaisuuksien hallinnan yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään ominaisuuksien hallintatoimintoa ja sen käyttöä.
 author: mikefalkner
 manager: AnnBe
-ms.date: 06/14/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d6aea8651c00b975cf158492e38bb147e908bc56
-ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
+ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "1632050"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862935"
 ---
 # <a name="feature-management-overview"></a>Ominaisuuksien hallinnan yleiskatsaus
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Ominaisuudet lisätään ja päivitetään jokaisessa Microsoft Dynamics 365 for Finance and Operations -versiossa. Ominaisuuksien hallintakokemus tarjoaa työtilan, jossa voit tarkastella kussakin julkaisussa toimitettujen ominaisuuksien luetteloa. Uudet asetukset ovat oletusarvoisesti poissa käytöstä. Työtilan avulla voit ottaa ne käyttöön ja tarkastella niiden dokumentaatiota.
 
@@ -38,7 +39,7 @@ Voit avata **Ominaisuuksien hallinnan** työtilan valitsemalla koontinäytön ha
 Ominaisuusluettelossa on seuraavat tiedot:
 
 - **Toiminnon nimi** – lisätyn ominaisuuden kuvaus.
-- **Käytössä oleva tila** – symboli ilmaisee, onko toiminto käytössä (valintamerkki), ei ole käytössä (tyhjä), on ajoitettu käyttöön (kello) tai pakollinen käytössä (lukitus). Tässä näkyvää asetusta käytetään kaikilla yrityksillä. Huomaa, että vaikka ominaisuus olisi otettu käyttöön, se on edelleen tietoturvan hallinnassa. Tämän vuoksi ominaisuus on vain niiden käyttäjien käytettävissä, joilla on käyttöoikeus rooliinsa. Se on myös vain niiden yritysten käytettävissä, joihin käyttäjällä on käyttöoikeus.
+- **Käytössä**-tila – Symboli ilmaisee, onko ominaisuus otettu käyttöön (valintamerkki), ei ole otettu käyttöön (tyhjä), on ajoitettu käyttöön (kello), on pakollisesti päällä (lukko), vaatii huomiota ennen kuin otat sen käyttöön (varoitus), tai ei voi ottaa käyttöön (X). Tässä näkyvää asetusta käytetään kaikilla yrityksillä. Huomaa, että vaikka ominaisuus olisi otettu käyttöön, se on edelleen tietoturvan hallinnassa. Tämän vuoksi ominaisuus on vain niiden käyttäjien käytettävissä, joilla on käyttöoikeus rooliinsa. Se on myös vain niiden yritysten käytettävissä, joihin käyttäjällä on käyttöoikeus.
 - **Ota käyttöön päivämäärä** – Päivämäärä, jolloin toiminto on otettu käyttöön tai on ajoitettu käyttöön.
 - **Ominaisuus lisätty** – toiminto lisättiin ympäristöön. Tämä päivämäärä syötetään automaattisesti, kun päivität ympäristöäsi kuukausittaisten julkaisujaksojen aikana.
 - **Moduuli** – moduuli, johon uusi ominaisuus vaikuttaa.
@@ -59,6 +60,10 @@ Jos ominaisuus ei ole käytössä, tietoruudussa näkyy **Ota käyttöön nyt** 
 - Valitse ominaisuus, jonka haluat ottaa käyttöön, ja valitse sitten tietoruudusta **Ota käyttöön nyt**. Toiminto on käytössä.
 
 Joitakin toimintoja ei voi poistaa käytöstä sen jälkeen, kun ne on otettu käyttöön. Jos toimintoa, jota yrität ottaa käyttöön, ei voi poistaa käytöstä, näyttöön tulee varoitus. Tässä vaiheessa voit peruuttaa toiminnon valitsemalla **Peruuta** ja jättää toiminnon pois käytöstä. Jos kuitenkin valitset **Ota käyttöön** -toiminnon ja otat sen käyttöön, et voi poistaa sitä käytöstä myöhemmin.
+
+Jotkin ominaisuudet näyttävät sanoman, jossa on lisätietoja, ennen kuin otat ne käyttöön. Nämä ominaisuudet on merkitty keltaisella varoitussymbolilla. Lue lisätiedot huolellisesti, jotta ymmärrät paremmin, mitä tapahtuu, kun ominaisuus on käytössä. Voit kuitenkin ottaa ominaisuuden käyttöön valitsemalla **Ota käyttöön**.
+
+Jotkin ominaisuudet näyttävät sanoman, että toimintoa ei voi ottaa käyttöön, ennen kuin toimia on suoritettu. Nämä ominaisuudet on merkitty punaisella X-symbolilla. Sinun on toteutettava kuvauksessa kuvatut toimet, ennen kuin ominaisuus otetaan käyttöön. Jos et esimerkiksi pysty käyttämään ominaisuutta, ennen kuin konfigurointiavain on poistettu käytöstä, sinun on ensin poistettava määritysavain käytöstä ja palattava sitten ominaisuuksien hallintaan, jotta ominaisuus otetaan käyttöön.
 
 Kun ominaisuus on otettu käyttöön, **Lisätietoja**-linkin alla tietoruudussa näkyy viesti. Tämä sanoma joko ilmaisee, että ominaisuus on otettu käyttöön tai ilmaisee päivämäärän, jolloin ominaisuus otetaan tulevaisuudessa käyttöön. Se tulee näkyviin aina, kun valitset ominaisuuden ominaisuusluettelosta.
 
@@ -84,12 +89,28 @@ Kun ominaisuus on poistettu käytöstä, **Lisätietoja**-linkin alla tietoruudu
 
 Joskus toimitetaan tärkeä toiminto, joka on otettava käyttöön automaattisesti päivityksen yhteydessä. Nämä toiminnot otetaan käyttöön automaattisesti **Ota käyttöön päivämäärä** -kentässä määritettynä päivänä. Näitä ominaisuuksia koskien tietoruudussa näkyy **Lisätietoja**-linkin alla viesti. Tämä sanoma joko ilmaisee, että ominaisuus on otettu käyttöön tai ilmaisee päivämäärän, jolloin ominaisuus otetaan käyttöön. Se tulee näkyviin aina, kun valitset ominaisuuden ominaisuusluettelosta.
 
+## <a name="enable-all-features"></a>Ota käyttöön kaikki ominaisuudet
+
+Oletusarvon mukaan kaikki ympäristöön lisätyt ominaisuudet poistetaan käytöstä. Voit ottaa käyttöön kaikki ominaisuudet valitsemalla **Ota kaikki käyttöön** -painikkeen. 
+
+Kun valitset **Ota kaikki käyttöön**, näyttöön tulee vaihtoehto, jossa on annettava seuraavat tiedot:
+- Luettelo kaikista ominaisuuksista, jotka edellyttävät vahvistusta, ennen kuin ne voidaan ottaa käyttöön. Jos haluat ottaa käyttöön luettelon ominaisuudet, valitse **Kyllä** **Ota käyttöön vahvistusta edellyttävät ominaisuudet** -painikkeessa.
+- Näytetään luettelo kaikista ominaisuuksista, joita ei voi ottaa käyttöön. Nämä ominaisuudet eivät ole käytössä.
+
+Kaikki toiminnot, jotka voidaan ottaa käyttöön, otetaan käyttöön. Jos ominaisuus on jo ajoitettu käyttöön tulevaisuudessa, aikataulu ei muutu. 
+
 ## <a name="turn-on-all-features-automatically"></a>Kaikkien toimintojen automaattinen käyttöönotto
 
 Oletusarvon mukaan kaikki ympäristöön lisätyt ominaisuudet poistetaan käytöstä, elleivät ne ole pakollisia toimintoja. Jos kuitenkin haluat ottaa kaikki uudet ominaisuudet automaattisesti käyttöön, voit muuttaa uusien ominaisuuksien lisäämisen tietoja käyttämällä työtilan otsikon alla olevaa avattavaa luetteloa.
 
 - Valitse **Kaikki uudet ominaisuudet otetaan oletusarvoisesti käyttöön**ottaaksesi automaattisesti käyttöön kaikki uudet ominaisuudet, kun ne lisätään omaan ympäristöön.
 - Valitse **Kaikki uudet ominaisuudet poistetaan oletusarvoisesti käytöstä** poistaaksesi automaattisesti käytöstä kaikki uudet ominaisuudet, kun ne lisätään omaan ympäristöön.
+
+Kun otat kaikki ominaisuudet käyttöön automaattisesti, se ottaa käyttöön kaikki ominaisuudet, jotka olisivat käytössä, kun napsautat **Ota kaikki käyttöön**-painiketta. Se ei ota käyttöön vahvistusta edellyttäviä ominaisuuksia tai ominaisuuksia, joita ei voi ottaa käyttöön, ennen kuin toimia on suoritettu.
+
+## <a name="check-for-updates"></a>Tarkista päivitysten saatavuus
+
+Ominaisuudet lisätään ympäristöösi jokaisen päivityksen jälkeen. Voit kuitenkin tarkistaa päivitykset manuaalisesti napsauttamalla **Tarkista päivitykset** -painiketta. Mikä tahansa ominaisuus, joka lisättiin järjestelmään päivityksen jälkeen, lisätään ominaisuuksien luetteloon. Jos esimerkiksi ominaisuus on otettu käyttöön julkaisun jälkeen, voit tarkistaa päivitykset ja ominaisuus lisätään luetteloon.
 
 ## <a name="assigning-roles"></a>Määrittää rooleja
 

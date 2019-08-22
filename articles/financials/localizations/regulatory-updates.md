@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
-ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
+ms.openlocfilehash: a33212acce6bf53b1077e54b9556e4d5e933519c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624308"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849329"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -59,19 +59,22 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 |      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |Kuljetusveroilmoitusmuutokset vuodelta 2019  |
 |      Huhtikuun 2019.            |   10.0.1      | Unkari      |  Unkari: online-laskutus v. 1.1 2019 Microsoft Dynamics 365 for Finance and Operationsissa  |
 |      Toukokuun 2019.            |   10.0.2      | Brasilia      |   SPED ECD -asettelu 7   |
-|      Odottaa            |   10.0.3      | Brasilia      |   NF-e uusi NT 2018.005-v. 1,20   |
-|      Odottaa            |   10.0.3      | Brasilia      |   SPED ECD -asettelu 7   |
-|      Odottaa            |   10.0.3      | Brasilia      |   SPED ECF - Layout 5 for 2019   |
-|      Odottaa            |   10.0.3      | Liettua    |   i.SAF-raportti sallii käyttäjän määrittää järjestelmän arvon lisäverokoodit yrityksen verokoodien kanssa    |
-|      Odottaa            |   10.0.3      | Puola     |   SAF laskut (JPK_FA) v. 2 alkaen 1jul2019  |
-|      Odottaa            |   10.0.3      | Brasilia   |   ICMS:n verotusasiakirjan oikaisut mahdollistavat taulun 5.2   |
-|      Odottaa            |   10.0.3      | Brasilia    |   NF-e Decree 54.308/18 (RS)   |
-  | Odottaa            |   10.0.4      | Brasilia    |   Saapuva veroasiakirja 66   |
-   | Odottaa            |   10.0.4      | Brasilia    |   NF-e ja NFC-e - päätös 13/2019 ja säädös SUCIEF 55/2019- RJ - uudet ehdot poikkeustunnisteiden tulosteessa NF-e:ssä.   |
-   | Odottaa            |   10.0.4      | Intia   |   Toimituspaikan ja osavaltion näyttäminen GST-verolaskussa  |
-   | Odottaa            |   10.0.4      | Meksiko   |  DIOT kolmannen osapuolen ilmoitus - asettelumuutokset layout 2019   |
-   | Odottaa            |   10.0.4      | Brasilia    |   NF-e ICMS-ST - SP-tilan määräys CAT 42/18 - CAT 42/18
-   | Odottaa            |   10.0.4      | Brasilia    |   NF-e Määräys 54.308/18 - RS NF   |
+|      2019. kesäkuuta            |   10.0.3      | Brasilia      |   NF-e uusi NT 2018.005-v. 1,20   |
+|      2019. kesäkuuta            |   10.0.3      | Brasilia      |   SPED ECD -asettelu 7   |
+|      2019. kesäkuuta            |   10.0.3      | Brasilia      |   SPED ECF - Layout 5 for 2019   |
+|      2019. kesäkuuta            |   10.0.3      | Liettua    |   i.SAF-raportti sallii käyttäjän määrittää järjestelmän arvon lisäverokoodit yrityksen verokoodien kanssa    |
+|      2019. kesäkuuta            |   10.0.3      | Puola     |   SAF laskut (JPK_FA) v. 2 alkaen 1jul2019  |
+|      2019. kesäkuuta            |   10.0.3      | Brasilia   |   ICMS:n verotusasiakirjan oikaisut mahdollistavat taulun 5.2   |
+|      2019. kesäkuuta            |   10.0.3      | Brasilia    |   NF-e Decree 54.308/18 (RS)   |
+  | Heinäkuu 2019            |   10.0.4      | Brasilia    |   Saapuva veroasiakirja 66   |
+   | Heinäkuu 2019            |   10.0.4      | Brasilia    |   NF-e ja NFC-e - päätös 13/2019 ja säädös SUCIEF 55/2019- RJ - uudet ehdot poikkeustunnisteiden tulosteessa NF-e:ssä.   |
+   | Heinäkuu 2019            |   10.0.4      | Intia   |   Toimituspaikan ja osavaltion näyttäminen GST-verolaskussa  |
+   | Heinäkuu 2019            |   10.0.4      | Meksiko   |  DIOT kolmannen osapuolen ilmoitus - asettelumuutokset layout 2019   |
+   | Heinäkuu 2019            |   10.0.4      | Brasilia    |   NF-e ICMS-ST - SP-tilan määräys CAT 42/18 - CAT 42/18
+   | Heinäkuu 2019            |   10.0.4      | Brasilia    |   NF-e Määräys 54.308/18 - RS NF   |
+       | Odottaa            |   10.0.5      | Brasilia    |   Sped-osallistumisen käytännön opas 1.31. Uusi ohjeistus   |
+         | Odottaa            |   10.0.5      | Brasilia    |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.00   |
+          | Odottaa            |   10.0.5      | Espanja    |   Kelpoisuussääntöjen muutos 1.10.2019 lähtien   |
    
 
 

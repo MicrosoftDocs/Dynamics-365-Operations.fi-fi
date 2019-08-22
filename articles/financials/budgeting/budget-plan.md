@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b898a908fe78b7cf12f075686e323296d0babe50
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568163"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834244"
 ---
 # <a name="budget-planning"></a>Budjettisuunnittelu
 
@@ -40,7 +40,7 @@ Tämän kurssin tavoite on tarjota Microsoft Dynamics 365 for Finance and Operat
 <a name="prerequisites"></a>Edellytykset 
 ------------------
 
-Tätä opasta varten sinulla on oltava Finance and Operations -ympäristö, jossa on Contoson esittelytiedot, ja sinun on oltava esiintymän järjestelmänvalvoja. Älä käytä selaimen yksityistä tilaa tällä kurssilla. Kirjaudu sen sijaan tarvittaessa ulos selaimen muilta tileiltä ja kirjaudu sisään Dynamics 365 for Finance and Operationsiin järjestelmänvalvojan oikeuksilla. Kun kirjaudut sisään Dynamics 365 for Finance and Operationsiin, sinun **ON** valittava Pidä minut kirjautuneena -valintaruutu. Se luo Excel-sovellukseen pysyvän esteen, jota se parhaillaan tarvitsee. Jos kirjaudut sisään Dynamics 365 for Finance and Operationsiin käyttäen jotain muuta selainta kuin Internet Exploreria, järjestelmä kehottaa sinua sisäänkirjautumaan Excel-sovelluksen kautta. Kun valitset "Kirjaudu sisään" Excel-sovelluksessa, Internet Explorer -ponnahdusikkuna avautuu ja kun kirjaudut sisään, sinun **TÄYTYY** merkitä valintaruutu "Pidä minut sisäänkirjautuneena". Jos mitään ei tapahdu, kun napsautat Excel-sovelluksen "Kirjaudu sisään" -painiketta, sitten sinun kannattaa tyhjentää Internet Explorerin väimuistin evästeet.
+Tätä opasta varten sinulla on oltava Finance and Operations -ympäristö, jossa on Contoson esittelytiedot, ja sinun on oltava esiintymän järjestelmänvalvoja. Älä käytä selaimen yksityistä tilaa tällä kurssilla. Kirjaudu sen sijaan tarvittaessa ulos selaimen muilta tileiltä ja kirjaudu sisään Finance and Operationsiin järjestelmänvalvojan oikeuksilla. Kun kirjaudut sisään Finance and Operationsiin, sinun **ON** valittava Pidä minut kirjautuneena -valintaruutu. Se luo Excel-sovellukseen pysyvän esteen, jota se parhaillaan tarvitsee. Jos kirjaudut sisään Finance and Operationsiin käyttäen jotain muuta selainta kuin Internet Exploreria, järjestelmä kehottaa sinua sisäänkirjautumaan Excel-sovelluksen kautta. Kun valitset "Kirjaudu sisään" Excel-sovelluksessa, IE -ponnahdusikkuna avautuu ja kun kirjaudut sisään, sinun **TÄYTYY** merkitä valintaruutu "Pidä minut sisäänkirjautuneena". Jos mitään ei tapahdu, kun napsautat Excel-sovelluksen "Kirjaudu sisään" -painiketta, sitten sinun kannattaa tyhjentää Internet Explorerin välimuistin evästeet.
 
 ## <a name="scenario-overview"></a>**Tilanteen yleiskuvaus**
 Julia toimii talouspäällikkönä Contoso Entertainment Systemsissä Saksassa (DEMF). Kun FY2016 lähestyy, hänen on määritettävä yrityksen budjetti tulevalle vuodelle. Budjetin valmistelu näyttää seuraavanlaiselta:

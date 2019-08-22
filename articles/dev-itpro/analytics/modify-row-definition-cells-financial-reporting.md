@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551834"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863721"
 ---
 # <a name="modify-row-definition-cells"></a>Rivin määrityksen solujen muokkaaminen
 
@@ -402,7 +402,7 @@ Joissakin kirjanpitojärjestelmissä tuetaan taloushallinnon tietojen tili- ja t
 2. Kaksoisnapsauta **Linkki taloushallinnon dimensioihin** -sarakkeen solua.
 3. Kaksoisnapsauta **Dimensiot**-valintaikkunassa dimension nimen alapuolella olevaa solua.
 4. Valitse dimension valintaikkunassa **Yksittäinen tai alue**.
-5. Syötä **Mistä**-kenttään aloittava dimensio tai hae käytettävissä olevat dimensiot valitsemalla ![Selaa](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Selaa"). Voit syöttää dimensioalueen syöttämällä lopettavan dimension **Mihin**-kenttään.
+5. Syötä **Mistä**-kenttään aloittava dimensio tai hae käytettävissä olevat dimensiot valitsemalla ![Selaa](media/browse.gif "Selaa"). Voit syöttää dimensioalueen syöttämällä lopettavan dimension **Mihin**-kenttään.
 6. Sulje dimension valintaikkuna valitsemalla **OK**. **Dimensiont**-valintaikkunassa näkyy päivitetty dimensio tai alue.
 7. Sulje **Dimensiot**-valintaikkuna valitsemalla **OK**.
 
@@ -479,7 +479,7 @@ Seuraavassa taulukossa esitellään **Dimensiot**-valintaikkunan kentät.
 
 | Nimike                | Kuvaus |
 |---------------------|-------------|
-| Yksittäinen tai alue | Syötä **Mistä**-kenttään tilin nimi tai etsi tili valitsemalla **Selaa**-painike ![Selaa](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Selaa"). Voit valita alueen syöttämällä arvon **Mihin**-kenttään tai etsimällä sen kentässä. |
+| Yksittäinen tai alue | Syötä **Mistä**-kenttään tilin nimi tai etsi tili valitsemalla **Selaa**-painike ![Selaa](media/browse.gif "Selaa"). Voit valita alueen syöttämällä arvon **Mihin**-kenttään tai etsimällä sen kentässä. |
 | Dimensioarvoyhdistelmä | Syötä **Nimi**-kenttään dimensioarvoyhdistelmän nimi. Voit luoda, muokata, kopioida tai poistaa yhdistelmän valitsemalla **Dimensioarvoyhdistelmien hallinta**. Rivin määrityksen tämän dimensioarvoyhdistelmän **Kaava**-kenttään täytetään **Linkki taloushallinnon dimensioihin** -solun kaava. |
 | Summatilit   | Syötä **Nimi**-kenttään summatilien dimensio tai etsi se kentässä. Raportin määrityksen summatilin **Kaava**-kenttään täytetään **Linkki taloushallinnon dimensioihin** -solun kaava. |
 

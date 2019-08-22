@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
-ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
+ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624809"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742630"
 ---
 # <a name="retail-peripherals"></a>Vähittäismyynnin oheislaitteet
 
@@ -192,7 +192,7 @@ Voit määrittää verkon oheislaitteiden IP-osoitteet kahdessa kohdassa. Jos Mo
 
 #### <a name="modern-pos-for-android"></a>Modern POS Androidille
 
-Dynamics 365 for Retail -versiosta 8.1.3 alkaen Modern POS Android -sovellus sisältää sisäisen IPC-laiteaseman. Tämä laiteasema tukee verkkotulostimien ja maksuyhdistimien välistä tiedonsiirtoa. Lisätietoja on [Android-tiedostojen Hybrid-sovellus -artikkelissa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+Dynamics 365 for Retail -versiosta 8.1.3 alkaen Modern POS Android -sovellus sisältää sisäisen IPC-laiteaseman. Tämä laiteasema tukee verkkotulostimien ja maksuyhdistimien välistä tiedonsiirtoa. Lisätietoja on [Android-tiedostojen Hybrid-sovellus -artikkelissa](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS ja Modern POS iOS:lle
 
@@ -541,7 +541,7 @@ Tämä määritys on yleisin perinteisissä kiinteissä myyntipisteen kassakonei
 
 4. Valitse **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulu**.
 5. Valitse **1090**-jakeluaikataulu, kun haluat synkronoida uuden laiteprofiilin myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
-6. Valitse **1040**-jakeluaikataulu, kun haluat synkronoida uuden laiteaseman myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
+6. Valitse **1070**-jakeluaikataulu, kun haluat synkronoida uuden laiteaseman myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 7. Asenna ja aktivoi Modern POS Windowsille.
 8. Käynnistä Modern POS Windowsille ja aloita yhdistettyjen oheislaitteiden käyttäminen.
 

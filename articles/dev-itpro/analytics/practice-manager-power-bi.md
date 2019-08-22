@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c526bc42595c20024016d0d7da78b8638b0daa4b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551668"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850094"
 ---
 # <a name="practice-manager-power-bi-content"></a>Käytäntöpäällikön Power BI -sisältö
 
@@ -54,7 +54,7 @@ Seuraavassa taulukossa on tietoja mittareista, jotka löytyvät **käytäntöpä
 | Ansaitun arvon menetelmä               | Kustannusten ja aikataulutehokkuuden indeksi projektin mukaan |
 | Tunnit             | <ul><li>Toteutuneet laskutettavat käyttötunnit vs. toteutuneet laskutettavat rasitetunnit vs. budjetoidut tunnit</li><li>Toteutuneet laskutettavat käyttötunnit vs. toteutuneet laskutettavat rasitetunnit projektin mukaan</li><li>Toteutuneet laskutettavat käyttötunnit vs. toteutuneet laskutettavat rasitetunnit resurssin mukaan</li><li>Toteutuneiden laskutettavien tuntien suhdeluku projektin mukaan</li><li>Toteutuneiden laskutettavien tuntien suhdeluku resurssin mukaan</li></ul> |
 
-Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI:ssä on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Pohjana olevien tietojen vientitoiminnon avulla voit viedä visualisoinnin kokoamat pohjana olevat tiedot.
+Kaikkien raporttien kaavioita ja ruutuja voi suodattaa sekä kiinnittää koontinäyttöön. Lisätietoja suodattamisesta ja kiinnittämisestä Power BI:ssä on kohdassa [Koontinäytön luominen ja määrittäminen](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Pohjana olevien tietojen vientitoiminnon avulla voit viedä visualisoinnin kokoamat pohjana olevat tiedot.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Tietomallin ja yksiköiden tiedot
 
@@ -62,7 +62,7 @@ Seuraavia tietoja käytetään **käytäntöpäällikön** Power BI -sisällön 
 
 Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat koostetut mitat.
 
-### <a name="entity-projectaccountingcubeactualhourutilization"></a>Yksikkö: ProjectAccountingCube\_ActualHourUtilization
+### <a name="entity-projectaccountingcube_actualhourutilization"></a>Yksikkö: ProjectAccountingCube\_ActualHourUtilization
 **Tietolähde:** ProjEmplTrans
 
 | Tärkeät koostemitat      | Kenttä                              | kuvaus |
@@ -70,7 +70,7 @@ Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat kooste
 | Todellinen laskutus - käyttötunnit | Sum(ActualUtilizationBillableRate) | Toteutuneiden laskutettujen käyttötuntien kokonaismäärä. |
 | Todellinen laskutus - rasitetunnit   | Sum(ActualBurdenBillableRate)      | Toteutuneen kuormituksen kokonaismäärä. |
 
-### <a name="entity-projectaccountingcubeactuals"></a>Yksikkö: ProjectAccountingCube\_Actuals
+### <a name="entity-projectaccountingcube_actuals"></a>Yksikkö: ProjectAccountingCube\_Actuals
 **Tietolähde:** ProjTransPosting
 
 | Tärkeät koostemitat | Kenttä              | kuvaus |
@@ -78,14 +78,14 @@ Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat kooste
 | Todellinen tuotto            | Sum(ActualRevenue) | Kaikkien tapahtumien kirjatun tuoton kokonaismäärä. |
 | Toteutunut kustannus               | Sum(ActualCost)    | Kaikkien tapahtumatyyppien kirjattujen kustannusten kokonaismäärä. |
 
-### <a name="entity-projectaccountingcubecustomer"></a>Yksikkö: ProjectAccountingCube\_Customer
+### <a name="entity-projectaccountingcube_customer"></a>Yksikkö: ProjectAccountingCube\_Customer
 **Tietolähde:** CustTable
 
 | Tärkeät koostemitat | Kenttä                                             | kuvaus |
 |---------------------------|---------------------------------------------------|-------------|
 | Projektien lukumäärä        | COUNTA(ProjectAccountingCube\_Projects\[PROJECTS\]) | Käytettävissä olevien projektien määrä. |
 
-### <a name="entity-projectaccountingcubeforecasts"></a>Yksikkö: ProjectAccountingCube\_Forecasts
+### <a name="entity-projectaccountingcube_forecasts"></a>Yksikkö: ProjectAccountingCube\_Forecasts
 **Tietolähde:** ProjTransBudget
 
 | Tärkeät koostemitat | Kenttä                  | kuvaus |
@@ -94,14 +94,14 @@ Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat kooste
 | Budjetoitu tuotto            | Sum(BudgetRevenue)     | Ennustetun jaksotetun tai laskutetun tuoton kokonaismäärä. |
 | Budjetoitu käyttökate       | Sum(BudgetGrossMargin) | Ennustetun kokonaistuoton summan ja ennustettujen kokonaiskustannusten summan välinen ero. |
 
-### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Yksikkö: ProjectAccountingCube\_ProjectPlanCostsView
+### <a name="entity-projectaccountingcube_projectplancostsview"></a>Yksikkö: ProjectAccountingCube\_ProjectPlanCostsView
 **Tietolähde:** Projekti
 
 | Tärkeät koostemitat | Kenttä                    | kuvaus |
 |---------------------------|--------------------------|-------------|
 | Suunniteltu kustannus              | Sum(SumOfTotalCostPrice) | Kaikkien projektitapahtumatyyppien ja suunniteltujen tehtävien kokonaiskustannushinta-arviot. |
 
-### <a name="entity-projectaccountingcubeprojects"></a>Yksikkö: ProjectAccountingCube\_Projects
+### <a name="entity-projectaccountingcube_projects"></a>Yksikkö: ProjectAccountingCube\_Projects
 **Tietolähde:** Projekti
 
 | Tärkeät koostemitat    | Kenttä | kuvaus |
@@ -112,7 +112,7 @@ Seuraavissa osissa käsitellään kussakin yksikössä käytössä olevat kooste
 | Toteutunut lasketettavien tuntien suhde  | ProjectAccountingCube\_Projects\[Projektin toteutuneet laskutettavat käyttötunnit yhteensä\] ÷ (ProjectAccountingCube\_Projects\[Projektin toteutuneet laskutettavat tunnit yhteensä\] + ProjectAccountingCube\_Projects\[Projektin toteutuneet laskutettavat rasitetunnit yhteensä\]) | Toteutuneiden laskutettavien tuntien kokonaismäärä käyttötuntien ja rasitetuntien perusteella. |
 | Ansaittu arvo                 | ProjectAccountingCube\_Projects\[Projektin suunnitellut kokonaiskustannukset\] × ProjectAccountingCube\_Projects\[Työn valmiusprosentti\] | Suunnitellut kokonaiskustannukset kerrottuna työn valmistumisprosentilla. |
 
-### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Yksikkö: ProjectAccountingCube\_TotalEstimatedCosts 
+### <a name="entity-projectaccountingcube_totalestimatedcosts"></a>Yksikkö: ProjectAccountingCube\_TotalEstimatedCosts 
 **Tietolähde:** ProjTable
 
 | Tärkeät koostemitat       | Kenttä               | kuvaus |
