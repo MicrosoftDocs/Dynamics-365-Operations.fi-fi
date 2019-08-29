@@ -3,7 +3,7 @@ title: Tervetuloa Dynamics 365 for Retail -ohjelmaan
 description: Dynamics 365 for Retail kotisivu
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572163"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874924"
 ---
 # <a name="welcome-to-dynamics-365-for-retail"></a>Tervetuloa Dynamics 365 for Retail -ohjelmaan
 
@@ -38,7 +38,7 @@ Saat lisätietoja valitsemalla ominaisuusalueen vasemmassa ruudussa.
 
 ## <a name="channel-management"></a>Kanavan hallinta
 
-Retail-kokemuksen määrittämisen yhteydessä voit päättää, miten myymälät määritetään ja konfiguroidaan. Ne voivat olla kivijalkaliikkeitä, verkkokauppoja tai puhelinkeskuksia.
+Kun määrität Retail-kokemusta, päätät, miten myymälät (perinteinen myymälä, verkkokauppa tai puhelinkeskus) konfiguroidaan.
 
 Kullakin vähittäismyymälällä voi olla omat maksutavat, toimitusmenetelmät, hintaryhmät, tulo-ja kulutilit, kassakoneet ja henkilöstö. Vähittäismyymälän luonnin jälkeen myymälälle luodaan tuotevalikoima. Voit määrittää myös myymäläkohtaiset hinnat ja alennukset, joita käytetään myymälässä oleviin tuotteisiin.
 
