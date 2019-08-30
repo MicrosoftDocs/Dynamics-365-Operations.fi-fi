@@ -1,20 +1,23 @@
 - name: Dynamics 365 for Finance and Operations
-  href: index.md
   items:
+    - name: Dynamics 365 for Finance and Operations -dokumentaatio
+      href: index.md
     - name: Aloittaminen
       items:
         - name: Ennen ostamista
-          href: get-started/before-you-buy.md
           items:
+            - name: Ennen ostamista – aloitussivu
+              href: get-started/before-you-buy.md
             - name: Kokeiluversion tilaaminen
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
             - name: Esittely-ympäristön käyttöönotto
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Pilvipalvelun ja paikallisten ominaisuuksien vertailu
               href: get-started/cloud-prem-comparison.md
-            - name: Käyttöönoton asetukset
-              href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
+            - name: Käyttöönotossa huomioitavaa
               items:
+                - name: Käyttöönoton vaihtoehdot
+                  href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
                 - name: Pilvikäyttöönotto
                   href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/fin-and-ops/toc.json
                 - name: Pilvikäyttöönottojen järjestelmävaatimukset
@@ -36,8 +39,9 @@
                 - name: Osta Finance and Operations (on-premises)
                   href: get-started/purchase-on-premises.md
         - name: Uudet ja muuttuneet ominaisuudet
-          href: get-started/whats-new-changed.md
           items:
+            - name: Uudet ja muuttuneet ominaisuudet – aloitussivu
+              href: get-started/whats-new-changed.md
             - name: 'Microsoft Dynamics AX 2009:n ja 2012:n yleisen tuen päättyminen'
               href: get-started/mainstream-support-ax-2009-2012.md
             - name: Poistetut tai vanhentuneet ominaisuudet
@@ -140,6 +144,8 @@
                   href: get-started/new-task-guides-available-february-2016.md
         - name: Käyttöliittymään tutustuminen
           items:
+            - name: Käyttöliittymäelementit
+              href: get-started/user-interface-elements.md
             - name: Helppokäyttötoiminnot
               href: get-started/accessibility-features.md
             - name: Ominaisuuksien hallinnan yleiskatsaus
@@ -197,8 +203,9 @@
         - name: Finance and Operations -videot
           href: get-started/videos.md
     - name: Käyttöönoton elinkaaren hallinta
-      href: imp-lifecycle/implementation-lifecycle.md
       items:
+        - name: Käyttöönoton elinkaaren hallinnan aloitussivu
+          href: imp-lifecycle/implementation-lifecycle.md
         - name: Finance and Operations -arkkitehtuuri
           href: imp-lifecycle/architecture-overview.md
         - name: Microsoft FastTrack for Finance and Operations
@@ -224,8 +231,9 @@
         - name: Useita LCS-projekteja ja tuotantoympäristöjä samassa Azure AD -vuokraajassa
           href: get-started/implement-multiple-projects-aad-tenant.md
     - name: Yhden version palvelupäivitykset
-      href: ../dev-itpro/lifecycle-services/oneversion-overview.md
       items:
+        - name: Yhden version palvelupäivitykset – yleiskatsaus
+          href: ../dev-itpro/lifecycle-services/oneversion-overview.md
         - name: Yhden version palvelupäivitysten usein kysytyt kysymykset
           href: get-started/one-version.md
         - name: Ohjelmiston elinkaarikäytäntö - pilvi
@@ -246,17 +254,12 @@
           href: ../dev-itpro/data-entities/data-task-automation.md
         - name: Riippumattomien ohjelmistotoimittajien ratkaisujen toimittaminen yhtä versiota käyttäen
           href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-        - name: Automaation testaus
-          items:
-            - name: Käyttäjän hyväksymistestien luominen ja automatisointi
-              href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Regression Suite Automation Tool -oppaan määrittäminen
-              href: get-started/hol-set-up-regression-suite-automation-tool.md
-            - name: Regression Suite Automation Tool -oppaan käyttäminen
-              href: get-started/hol-use-regression-suite-automation-tool.md
+        - name: Käyttäjän hyväksymistestien luominen ja automatisointi
+          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
     - name: Liiketoimintatapahtumat
-      href: ../dev-itpro/business-events/home-page.md
       items:
+        - name: Liiketoimintatapahtumien yleiskatsaus
+          href: ../dev-itpro/business-events/home-page.md
         - name: Sovellusliiketoimintatapahtumat
           href: ../dev-itpro/business-events/app-business-events.md
         - name: Työnkulun liiketoimintatapahtumat
@@ -273,22 +276,34 @@
           href: ../dev-itpro/business-events/potential-use-cases.md
         - name: Oppaat
           items:
-            - name: Liiketoimintatapahtumien kuluttaminen Microsoft Flow'lla
+            - name: Liiketoimintatapahtumat ja Microsoft Flow
               href: ../dev-itpro/business-events/how-to/how-to-flow.md
-            - name: Liiketoimintatapahtumien käyttäminen Azuren tapahtumaverkon avulla
+            - name: Liiketoimintatapahtumat ja Azuren tapahtumaruudukko
               href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
-            - name: Liiketoimintatapahtumien käyttäminen Azuren palveluväylän avulla
+            - name: Liiketoimintatapahtumat ja Azure-palveluväylä
               href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
-            - name: Kuluta työnkulun hyväksynnän liiketoimintatapahtumat
+            - name: Liiketoimintatapahtumat ja työnkulun hyväksynnät
               href: ../dev-itpro/business-events/how-to/how-to-workflow.md
-            - name: Liiketoimintatapahtumien käyttäminen Microsoft Forms Pro'lla
+            - name: Liiketoimintatapahtumat ja Microsoft Forms Pro
               href: ../dev-itpro/business-events/how-to/FormsPro.md
-    - name: Kustannushintojen hallinta
-      href: ../supply-chain/cost-management/cost-management-home-page.md
+            - name: Liiketoimintatapahtumat ja Azuren tapahtumakeskus
+              href: ../dev-itpro/business-events/how-to/event-hub.md
+    - name: Yhteensopivuus
       items:
+        - name: Tarkistuskäytäntösäännöt
+          href: ../financials/general-ledger/audit-policy-rules.md
+        - name: Tarkistuskäytäntörikkomukset ja -tapaukset
+          href: ../financials/general-ledger/audit-policy-violations-cases.md
+        - name: Tarkistuskäytäntöjen määrittäminen lähdeasiakirjoille
+          href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+    - name: Kustannushintojen hallinta
+      items:
+        - name: Kustannushintojen hallinnan aloitussivu
+          href: ../supply-chain/cost-management/cost-management-home-page.md
         - name: Standardikustannusten edellytykset
-          href: ../supply-chain/cost-management/prerequisites-standard-costs.md
           items:
+            - name: Standardikustannusten edellytykset – yleiskatsaus
+              href: ../supply-chain/cost-management/prerequisites-standard-costs.md
             - name: Standardikustannuksen muuntamisen yleiskuvaus
               href: ../supply-chain/cost-management/standard-cost-conversion-overview.md
             - name: Standardikustannuksen muuntamisen edellytys
@@ -308,8 +323,9 @@
             - name: Valmistettujen nimikkeiden vakiokustannusten ylläpitämisen valmistelu
               href: ../supply-chain/cost-management/prepare-maintain-standard-costs-manufactured-items.md
         - name: Kustannuslaskelmaversiot
-          href: ../supply-chain/cost-management/costing-versions.md
           items:
+            - name: Kustannuslaskelmaversiot – yleiskatsaus
+              href: ../supply-chain/cost-management/costing-versions.md
             - name: Kustannuslaskentalomakkeet
               href: ../supply-chain/cost-management/costing-sheets.md
             - name: Kustannusmuutosten simulointi suunniteltujen kustannusten kustannuslaskelmaversiota käyttäen
@@ -397,8 +413,9 @@
             - name: Tietojen hallintapaketin REST API -ohjelmointirajapinta
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Palvelun päätepisteet
-              href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Palvelun päätepisteiden yleiskuvaus
+                  href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
                 - name: Palvelun todennuksen vianmääritys
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: OData
@@ -414,8 +431,9 @@
         - name: Integroinnin kehitys
           items:
             - name: Tietojen integraatio tietoyksikköjen avulla
-              href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Tietojen integraatio tietoyksikköjen avulla – yleiskatsaus
+                  href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
                 - name: Tietojen siirtoyksikön kehittäminen
                   href: ../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
                 - name: Yhdistelmätietoyksiköiden kehittäminen
@@ -428,7 +446,7 @@
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: Tietojen integrointi Common Data Servicen avulla
               items:
-                - name: Tietojen integroinnin yleiskatsaus
+                - name: Tietojen integrointi Common Data Servicen avulla – yleiskatsaus
                   href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
                 - name: 'Synkroninen, kaksisuuntainen integrointi'
                   items:
@@ -448,9 +466,9 @@
                       href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
                 - name: 'Asynkroninen, yksisuuntainen integrointi'
                   items:
-                    - name: Prospektista käteiseksi
+                    - name: Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen
                       items:
-                        - name: Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen
+                        - name: Prospektista käteiseksi
                           href: ../supply-chain/sales-marketing/prospect-to-cash.md
                         - name: Asiakkaiden synkronointi suoraan Salesista Finance and Operationsin asiakkaisiin
                           href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
@@ -464,9 +482,9 @@
                           href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
                         - name: Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
                           href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                    - name: Field Service
+                    - name: Integroinnin määrittäminen Field Servicen kanssa
                       items:
-                        - name: Integroinnin määrittäminen Field Servicen kanssa
+                        - name: Integroinnin määrittäminen Field Servicen kanssa – yleiskatsaus
                           href: ../supply-chain/sales-marketing/field-service.md
                         - name: Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin
                           href: ../supply-chain/sales-marketing/field-service-product.md
@@ -486,9 +504,9 @@
                           href: ../supply-chain/sales-marketing/synchronize-warehouse.md
                         - name: Finance and Operationsin työtilausten ja projektin synkronointi Field Serviceen
                           href: ../supply-chain/sales-marketing/synchronize-work-orders.md
-                    - name: Project Service Automation
+                    - name: Project Service Automation -integroinnin määrittäminen
                       items:
-                        - name: Project Service Automation -integroinnin määrittäminen
+                        - name: Project Service Automationin yleiskatsaus
                           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
                         - name: Project Service Automation -integrointiparametrit
                           href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
@@ -507,16 +525,19 @@
         - name: Sähköiset sanomat
           href: ../financials/general-ledger/electronic-messaging.md
     - name: Tietojen hallinta
-      href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Tietojen hallinnan yleiskatsaus
+          href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
         - name: Tietoyksiköt
-          href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Tietoyksiköiden yleiskatsaus
+              href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
             - name: Konfigurointitietoprojektit
               href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
             - name: Konfigurointitietojen kopiointi yhtiöiden tai yritysten välillä
-              href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Konfigurointitietojen kopiointi – yleiskatsaus
+                  href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurointitietopaketit
                   href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Konfigurointitietopaketit (vain heinäkuun 2017 versio)
@@ -538,8 +559,9 @@
             - name: Konfigurointitietopaketit
               href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
         - name: Tietojen tuonti- ja vientityöt
-          href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Tietojen tuonti- ja vientityöt – yleiskatsaus
+              href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
             - name: Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Tietoyksiköiden kehittäminen
@@ -581,16 +603,19 @@
         - name: Tietojenhallintavirheiden kuvaukset
           href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Taloushallinto
-      href: ../financials/index.md
       items:
+        - name: Taloushallinnon kotisivu
+          href: ../financials/index.md
         - name: Ostoreskontra
-          href: ../financials/accounts-payable/accounts-payable.md
           items:
+            - name: Ostoreskontran aloitussivu
+              href: ../financials/accounts-payable/accounts-payable.md
             - name: Toimittajan laskujen yleiskatsaus
               href: ../financials/accounts-payable/vendor-invoices-overview.md
             - name: Ostoreskontran määrittäminen
-              href: ../financials/accounts-payable/accounts-payable-overview.md
               items:
+                - name: Ostoreskontran määrittäminen – yleiskatsaus
+                  href: ../financials/accounts-payable/accounts-payable-overview.md
                 - name: Laskun keskeiset tiedot ostoreskontraan toimittajalaskun avulla
                   href: ../financials/accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
                 - name: Laskun keskeiset tiedot ostoreskontraan hyväksymiskirjauskansion avulla
@@ -604,8 +629,9 @@
             - name: Kolmisuuntaiset vastaavuuskäytännöt
               href: ../financials/accounts-payable/three-way-matching-policies.md
             - name: Ostoreskontran laskujen täsmäytys
-              href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
               items:
+                - name: Ostoreskontran laskujen täsmäytys – yleiskatsaus
+                  href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
                 - name: Ostoreskontran laskujen täsmäytyksen vahvistuksen asetukset
                   href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
             - name: Toimittajan laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit
@@ -625,8 +651,9 @@
             - name: Toimittajan työnkulku
               href: ../financials/accounts-payable/vendor-workflow.md
             - name: Ristiriitojen selvittäminen laskusummien täsmäytyksen aikana
-              href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
               items:
+                - name: Ristiriitojen selvittäminen laskusummien täsmäytyksen aikana – yleiskatsaus
+                  href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
                 - name: Poikkeusten tutkiminen ja selvittäminen
                   href: ../financials/accounts-payable/tasks/research-resolve-exceptions.md
             - name: Toimittajan kirjausprofiilit
@@ -688,8 +715,9 @@
                 - name: Näytä avoimien toimittajatapahtumien listaussivu
                   href: ../financials/accounts-payable/vendor-transaction-list-page.md
         - name: Myyntireskontra
-          href: ../financials/accounts-receivable/accounts-receivable.md
           items:
+            - name: Myyntireskontran aloitussivu
+              href: ../financials/accounts-receivable/accounts-receivable.md
             - name: Hyvitykset ja perinnät myyntireskontrassa
               href: ../financials/accounts-receivable/collections-credit-accounts-receivable.md
             - name: Myyntireskontran ja luotonvalvonnan määrittäminen
@@ -783,8 +811,9 @@
                 - name: Näytä avoimien asiakastapahtumien listaussivu
                   href: ../financials/accounts-receivable/customer-transactions-list-page.md
         - name: Budjetointi
-          href: ../financials/budgeting/budgeting-overview.md
           items:
+            - name: Budjetoinnin aloitussivu
+              href: ../financials/budgeting/budgeting-overview.md
             - name: Budjetin suunnittelun yleiskatsaus
               href: ../financials/budgeting/budget-planning-overview-configuration.md
             - name: Budjetin hallinnan yleiskatsaus
@@ -808,8 +837,9 @@
             - name: Budjettisuunnittelun integrointi toisten moduulien kanssa
               href: ../financials/budgeting/budget-planning-integration-other-modules.md
         - name: Maksuliikenteen hallinta
-          href: ../financials/cash-bank-management/cash-bank-management.md
           items:
+            - name: Maksuliikenteen kotisivu
+              href: ../financials/cash-bank-management/cash-bank-management.md
             - name: Kassavirtaennusteet
               href: ../financials/cash-bank-management/cash-flow-forecasting.md
             - name: Maksuliikenteen työtila
@@ -885,8 +915,9 @@
                 - name: Pankin kirjauskansioiden yhdistelmäyksikön päivittäminen
                   href: ../financials/cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Kustannuslaskenta
-          href: ../financials/cost-accounting/cost-accounting-home-page.md
           items:
+            - name: Kustannuslaskennan aloitussivu
+              href: ../financials/cost-accounting/cost-accounting-home-page.md
             - name: Kustannuslaskennan sanasto
               href: ../financials/cost-accounting/terms-cost-accounting.md
             - name: 'Kirjanpidon kalenterit, tilivuodet ja tilikaudet'
@@ -957,9 +988,10 @@
               href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Finance and Operations -mobiilisovelluksen kustannusseurannan työtilan käyttö
               href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
-        - name: Kulujen hallinta
-          href: ../financials/expense-management/expense-management.md
+        - name: Kulujenhallinta
           items:
+            - name: Kulujenhallinnan yleiskatsaus
+              href: ../financials/expense-management/expense-management.md
             - name: Kuluraporttien uusi toteutus
               href: ../financials/expense-management/ExpenseWorkspaceNew.md
             - name: Kulujen hallinnan suunnittelu
@@ -995,8 +1027,9 @@
             - name: Henkilökohtaiset kulut kuluraportissa
               href: ../financials/expense-management/personal-expenses.md
         - name: Käyttöomaisuuserät
-          href: ../financials/fixed-assets/fixed-assets.md
           items:
+            - name: Käyttöomaisuuden aloitussivu
+              href: ../financials/fixed-assets/fixed-assets.md
             - name: Luo käyttöomaisuuserä
               href: ../financials/fixed-assets/tasks/create-fixed-asset.md
             - name: Käyttöomaisuuden lisäyksen määrittäminen
@@ -1100,15 +1133,187 @@
                 - name: Käyttöikään perustuva tasapoisto
                   href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
         - name: Kirjanpito
-          href: ../financials/general-ledger/general-ledger.md
           items:
+            - name: Kirjanpidon yleiskatsaus
+              href: ../financials/general-ledger/general-ledger.md
+            - name: Tilit
+              items:
+                - name: Jaksotuksien yleiskatsaus
+                  href: ../financials/general-ledger/accruals-overview.md
+                - name: Eliminointisäännöt
+                  href: ../financials/general-ledger/elimination-rules.md
+                - name: Tili- ja dimensioyhdistelmät
+                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                - name: Yksiköiden välisen kirjanpidon tasapainotetut kirjauskansiot
+                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
+                - name: Kirjausmääritykset
+                  href: ../financials/general-ledger/posting-definitions.md
+                - name: Kirjausmääritysesimerkkejä
+                  href: ../financials/general-ledger/example-posting-definitions.md
+                - name: Kirjanpitotilin saldot
+                  href: ../financials/general-ledger/general-ledger-account-balances.md
+                - name: Määritä taloushallinnon dimensiot
+                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
+                - name: Ylläpidä taloushallinnon dimension oletusmalleja
+                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Tilirakenteiden luonti
+                  href: ../financials/general-ledger/tasks/create-account-structures.md
+                - name: Taloushallinnon dimensiot ja kirjaaminen
+                  href: ../financials/general-ledger/default-dimensions.md
+                - name: Jaksotusmallien luominen
+                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
+                - name: Taloushallinnon konsolidoinnit ja valuutan muunto
+                  items:
+                    - name: Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
+                      href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+                    - name: Konsolidoi verkossa
+                      href: ../financials/general-ledger/consolidate-online.md
+                    - name: Konsolidoitujen raporttien laatiminen
+                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+                - name: Luo konsolidointiryhmät ja lisäkonsolidointitili
+                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
+                - name: Päätilin tyypit
+                  href: ../financials/general-ledger/main-account-types.md
+                - name: Luo päätili
+                  href: ../financials/general-ledger/tasks/create-main-account.md
+                - name: Tilikartan suunnittelu
+                  href: ../financials/general-ledger/plan-chart-of-accounts.md
+                - name: Tapahtumien selvitys kirjanpitotilien välillä
+                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+                - name: Määritä kirjanpitotilin alias
+                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
+                - name: Määritä päätilien luokat
+                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
+                - name: Kirjanpitolähteen hallinta
+                  href: ../financials/accounts-payable/accounting-source-explorer.md
+                - name: Kirjanpidolliset jaot
+                  href: ../financials/accounts-payable/accounting-distributions.md
+                - name: Kohdistusten käsittely
+                  href: ../financials/general-ledger/process-allocations.md
+                - name: Taloushallinnon dimensiot
+                  href: ../financials/general-ledger/financial-dimensions.md
+                - name: Kirjanpito- tai raportointivaluutan muuntaminen
+                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
+                - name: Konsolidointitiliryhmät ja tilit
+                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: Konsolidoinnin ja eliminoinnin yleiskatsaus
+                  href: ../financials/budgeting/consolidation-elimination-overview.md
+                - name: 'Kirjanpidon kalenterit, tilivuodet ja tilikaudet'
+                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+                - name: Tilirakenteiden konfigurointi
+                  href: ../financials/general-ledger/configure-account-structures.md
+                - name: Kaksoisvaluutta
+                  href: ../financials/general-ledger/dual-currency.md
+            - name: Kirjauskansiot ja kirjanpidot
+              items:
+                - name: Yleisen kirjauskansion käsittely
+                  href: ../financials/general-ledger/general-journal-processing.md
+                - name: Kausittaisten kirjauskansioiden kirjaaminen
+                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
+                - name: Käsittele kirjanpidon kohdistuskirjauskansio
+                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: Konsernin sisäisen kirjanpidon määritys
+                  href: ../financials/general-ledger/intercompany-accounting-setup.md
+                - name: Kirjanpidon kohdistussäännöt
+                  href: ../financials/general-ledger/ledger-allocation-rules.md
+                - name: Luo kirjauskansioiden lisäsäännöt
+                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
+                - name: Luo ja määritä lisäsääntörakenteet
+                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
+                - name: Kirjanpidon kirjauskansiotyypit
+                  href: ../financials/general-ledger/ledger-journal-types.md
+                - name: Luo ja vahvista kirjauskansiot
+                  href: ../financials/general-ledger/tasks/create-validate-journals.md
+                - name: Kirjauskansiovientien tai tapahtumien näyttäminen
+                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
+                - name: Näytä liittyvä konsernin sisäinen tosite kirjauskansiosta
+                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                - name: Kirjauskansioviennin luonti mallin avulla
+                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
+                - name: Kirjanpidon jaksotustapahtumien luominen
+                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Kirjauskansion rivien ja asiakirjojen julkaiseminen Excelistä
+                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
+                - name: Kirjauskansiovientien ja tapahtumien näyttäminen
+                  href: ../financials/general-ledger/view-journal-entries-transactions.md
+                - name: Kirjaa kirjatut kirjauskansioviennit
+                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
+                - name: Valuutan uudelleenarvostus konsolidointiyrityksessä
+                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
+                - name: Kirjanpidon ulkomaanvaluutan uudelleenarvostus
+                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: Vaihtokurssien tuonti
+                  href: ../financials/general-ledger/import-currency-exchange-rates.md
+                - name: Yksi tosite
+                  href: ../financials/general-ledger/one-voucher.md
+                - name: Tapahtuman selvitykset
+                  href: ../financials/general-ledger/ledger-settlements.md
+            - name: Kauden sulkeminen
+              items:
+                - name: Kirjanpidon sulkeminen kauden lopussa
+                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
+                - name: Tilikauden sulkemisen työtila
+                  href: ../financials/general-ledger/financial-period-close-workspace.md
+                - name: Tilikauden lopetus
+                  href: ../financials/general-ledger/year-end-close.md
+                - name: Tilikauden sulkeminen
+                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
+                - name: Tilikauden joukkosulkeminen
+                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
+            - name: Arvonlisävero
+              items:
+                - name: Arvonlisäveron yleiskatsaus
+                  href: ../financials/general-ledger/indirect-taxes-overview.md
+                - name: Marginaaliverokantaan ja laskentamenetelmiin perustuva arvonlisäveroprosentti
+                  href: ../financials/general-ledger/marginal-base-field.md
+                - name: Arvonlisäveromaksut ja pyöristyssäännöt
+                  href: ../financials/general-ledger/round-sales-tax-payments.md
+                - name: Arvonlisäveron laskentatavat Alkuperä-kentässä
+                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+                - name: Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
+                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                - name: Toimittajalaskun arvonlisäveron laskeminen ja täsmäytys
+                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: Arvonlisäveromaksun luominen
+                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
+                - name: Luo arvonlisäverotapahtumia asiakirjoihin
+                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
+                - name: Arvonlisäveron kirjanpidon kirjausryhmien määrittäminen
+                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                - name: Arvonlisäveroviranomaisten määrittäminen
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
+                - name: Määritä arvonlisäverokoodit
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
+                - name: Arvonlisäveroryhmien ja nimikkeiden arvonlisäveroryhmien määrittäminen
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                - name: Määritä arvonlisäveroilmoituksen koodit
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Määritä arvonlisäveron tilityskaudet
+                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                - name: Määritä ennakonpidätys
+                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
+                - name: Näytä kirjatut arvonlisäverotapahtumat
+                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
+            - name: Tarkastustyötila
+              items:
+                - name: Tarkistuskäytäntösäännöt
+                  href: ../financials/general-ledger/audit-policy-rules.md
+                - name: Tarkistuskäytäntörikkomukset ja -tapaukset
+                  href: ../financials/general-ledger/audit-policy-violations-cases.md
+                - name: Tarkistuskäytäntöjen määrittäminen lähdeasiakirjoille
+                  href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Julkinen sektori
+          items:
+            - name: Julkisen sektorin aloitussivu
+              href: ../financials/public-sector/public-sector-functionality.md
             - name: Julkisen sektorin toimintojen suunnittelu
               href: ../financials/public-sector/plan-public-sector-functionality.md
             - name: Maksuraporttien kansi- ja allekirjoitussivujen luominen julkiselle sektorille
               href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
             - name: Julkisen sektorin ostoreskontra
-              href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
+                - name: Julkisen sektorin ostoreskontra – yleiskatsaus
+                  href: ../financials/public-sector/accounts-payable-public-sector.md
                 - name: Julkisen sektorin ostotilauskoodit
                   href: ../financials/public-sector/purchase-order-codes-public-sector.md
                 - name: Julkisen sektorin kauppakumppanin koodin luominen ja määrittäminen
@@ -1130,8 +1335,9 @@
                 - name: Ostosopimusluokitusten määrittäminen julkiselle sektorille
                   href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
             - name: Julkisen sektorin myyntireskontra
-              href: ../financials/public-sector/accounts-receivable-public-sector.md
               items:
+                - name: Julkisen sektorin myyntireskontra – yleiskatsaus
+                  href: ../financials/public-sector/accounts-receivable-public-sector.md
                 - name: Julkisen sektorin laskutusluokat ja laskutuskoodit
                   href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
                 - name: Julkisen sektorin laskutusluokan luominen
@@ -1145,8 +1351,9 @@
                 - name: Julkisen sektorin hyvitykset
                   href: ../financials/public-sector/reimbursements-public-sector.md
             - name: Julkisen sektorin budjetointi
-              href: ../financials/public-sector/budgeting-public-sector.md
               items:
+                - name: Julkisen sektorin budjetointi – yleiskatsaus
+                  href: ../financials/public-sector/budgeting-public-sector.md
                 - name: Alkuperäisen budjetin luominen ja alustavien budjettimerkintöjen palauttaminen julkiselle sektorille
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: Alustavan budjetin luominen julkiselle sektorille
@@ -1172,8 +1379,9 @@
             - name: Julkisen sektorin käyttöomaisuuserät
               href: ../financials/public-sector/fixed-asset-public-sector.md
             - name: Julkisen sektorin kirjanpito
-              href: ../financials/public-sector/general-ledger-public-sector.md
               items:
+                - name: Julkisen sektorin kirjanpito – yleiskatsaus
+                  href: ../financials/public-sector/general-ledger-public-sector.md
                 - name: Julkisen sektorin kehittyneet kirjanpidon merkinnät
                   href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
                 - name: Julkisen sektorin lisäkirjanpitoviennin luominen
@@ -1199,8 +1407,9 @@
             - name: Varmennetyypin lisääminen julkisen sektorin toimittajalle
               href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
         - name: Taloushallinnon raportointi
-          href: ../financials/general-ledger/financial-reporting-getting-started.md
           items:
+            - name: Taloushallinnon raportoinnin yleiskatsaus
+              href: ../financials/general-ledger/financial-reporting-getting-started.md
             - name: Taloushallinnon raportoinnin yleiskatsaus
               href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
             - name: Raportin komponentit
@@ -1236,13 +1445,15 @@
         - name: Sähköiset sanomat
           href: ../financials/general-ledger/electronic-messaging.md
     - name: Maailmanlaajuinen toiminta
-      href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Maailmanlaajuisen käytön resurssit
+          href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
         - name: Pakolliset päivitykset
           href: ../financials/localizations/regulatory-updates.md
         - name: Australia
-          href: ../financials/localizations/australia.md
           items:
+            - name: Australia – yleiskatsaus
+              href: ../financials/localizations/australia.md
             - name: Liiketoimintaraportti (BAS)
               href: ../financials/localizations/apac-aus-business-activity-statement.md
             - name: Raporttiruutujen lisääminen ja liiketoimintaraportin luominen
@@ -1252,17 +1463,19 @@
             - name: Liiketoimintaraportin syykoodien määrittäminen
               href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
         - name: Itävalta
-          href: ../financials/localizations/austria.md
           items:
+            - name: Itävalta – yleiskatsaus
+              href: ../financials/localizations/austria.md
             - name: Puolen vuoden poisto lisähankinnoista
               href: ../financials/localizations/emea-aut-half-year-depreciation.md
             - name: Pakkausmateriaalimaksut
               href: ../financials/localizations/emea-aut-packing-material-fee-calculation.md
-            - name: ALV-lauseke
+            - name: ALV-ilmoitus
               href: ../financials/localizations/emea-aut-vat-statement-details.md
         - name: Belgia
-          href: ../financials/localizations/belgium.md
           items:
+            - name: Belgia – yleiskatsaus
+              href: ../financials/localizations/belgium.md
             - name: CODA-tiliote
               href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
             - name: Tapahtumien luominen ja siirtäminen BLWI-lomakkeelle
@@ -1276,13 +1489,15 @@
             - name: PRODCOM-tietojen määrittäminen ja ylläpito
               href: ../financials/localizations/emea-bel-prodcom-report.md
         - name: Brasilia
-          href: ../financials/localizations/brazil.md
           items:
+            - name: Brasilia – yleiskatsaus
+              href: ../financials/localizations/brazil.md
             - name: Lokalisoinnin laajuus
               href: ../financials/localizations/latam-bra-scope.md
             - name: Verokirjat
-              href: ../financials/localizations/latam-bra-fiscal-books.md
               items:
+                - name: Brasilian verokirjojen yleiskatsaus
+                  href: ../financials/localizations/latam-bra-fiscal-books.md
                 - name: Verokirjojen määrittäminen
                   href: ../financials/localizations/latam-bra-configure-fiscal-books.md
                 - name: ICMS-veroasiakirjat
@@ -1350,8 +1565,9 @@
                 - name: Projektin veloituslaskut
                   href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
             - name: NF-e-prosessi
-              href: ../financials/localizations/latam-bra-nf-e-process.md
               items:
+                - name: Brasilian NF-e-prosessin yleiskatsaus
+                  href: ../financials/localizations/latam-bra-nf-e-process.md
                 - name: NF-e-veroasiakirjojen automaattinen lähetys
                   href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
                 - name: Sähköpostiviestien luonti hyväksytyille NF-e-kohteille ja DANFE PDF- ja NF-e XML -tiedostojen liittäminen viesteihin
@@ -1397,8 +1613,9 @@
             - name: Laske asiakasmaksujen korot ja sakot
               href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
             - name: Verot
-              href: ../financials/localizations/latam-bra-calculate-taxes.md
               items:
+                - name: Brasilian verojen yleiskatsaus
+                  href: ../financials/localizations/latam-bra-calculate-taxes.md
                 - name: Ostotarjouksen arvonlisäveron laskenta
                   href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
                 - name: Luo veroarvio – ICMS
@@ -1444,8 +1661,9 @@
                 - name: Toimittajamaksujen ennakonpidätykset
                   href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
         - name: Kiina
-          href: ../financials/localizations/china.md
           items:
+            - name: Kiina – yleiskatsaus
+              href: ../financials/localizations/china.md
             - name: 21Vianetin ylläpitämä Finance and Operations Kiinassa
               href: ../dev-itpro/deployment/china-local-deployment.md
             - name: Tuoterakennevertailu
@@ -1485,8 +1703,9 @@
             - name: Myyntilaskujen ALV – usein kysytyt kysymykset
               href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
         - name: Tšekin tasavalta
-          href: ../financials/localizations/czech-republic.md
           items:
+            - name: Tšekin tasavalta
+              href: ../financials/localizations/czech-republic.md
             - name: Käteisalennuksen hyvityslasku
               href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
             - name: Käyttöomaisuuserät
@@ -1509,13 +1728,14 @@
               href: ../financials/localizations/emea-create-post-periodic-journals.md
             - name: Raporttien ja asiakirjojen summien esitysmuodon päivittäminen
               href: ../financials/localizations/emea-amount-printing-forms.md
-            - name: ALV-lauseke
+            - name: ALV-ilmoitus
               href: ../financials/localizations/emea-cze-vat-statement-details.md
             - name: Tilikauden lopetus
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: Tanska
-          href: ../financials/localizations/denmark.md
           items:
+            - name: Tanska – yleiskatsaus
+              href: ../financials/localizations/denmark.md
             - name: Maksukuitin muodon määrittäminen asiakastilille
               href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
             - name: Luo ja kirjaa myyntilasku julkisen sektorin asiakkaalle
@@ -1539,18 +1759,21 @@
             - name: Määritä maksutositteen muoto
               href: ../financials/localizations/tasks/set-up-payment-slip-format.md
         - name: Viro
-          href: ../financials/localizations/estonia.md
           items:
+            - name: Viro – yleiskatsaus
+              href: ../financials/localizations/estonia.md
             - name: Henkilökohtaisten tietojen pyynnöt
               href: ../financials/localizations/emea-est-personal-info.md
-            - name: ALV-lauseke
+            - name: ALV-ilmoitus
               href: ../financials/localizations/emea-est-vat-statement-details.md
         - name: Eurooppa
-          href: ../financials/localizations/europe.md
           items:
+            - name: Eurooppa – yleiskatsaus
+              href: ../financials/localizations/europe.md
             - name: Ennakonvaraajat
-              href: ../financials/localizations/emea-advance-holders.md
               items:
+                - name: Ennakonvaraajat – yleiskatsaus
+                  href: ../financials/localizations/emea-advance-holders.md
                 - name: Ennakonvaraajien tapahtumat
                   href: ../financials/localizations/emea-advance-holders-transactions.md
                 - name: Ennakkomaksu työntekijälle (Itä-Eurooppa)
@@ -1606,8 +1829,9 @@
                 - name: Toimittajien maksujen luominen ja tuonti ISO20022-maksumuodossa
                   href: ../financials/localizations/tasks/create-export-vendor-payments-iso20022-payment-format.md
             - name: Intrastat
-              href: ../financials/localizations/emea-intrastat.md
               items:
+                - name: Intrastat – yleiskatsaus
+                  href: ../financials/localizations/emea-intrastat.md
                 - name: Tapahtumien siirtäminen Intrastatiin
                   href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
                 - name: Rahtiosoitteen määrittäminen yhteisönsisäiselle tapahtumalle
@@ -1685,17 +1909,18 @@
             - name: Tilitettävien tapahtumien näyttäminen
               href: ../financials/localizations/emea-transactions-settlement-form.md
         - name: Ranska
-          href: ../financials/localizations/france.md
           items:
+            - name: Ranska – yleiskuvaus
+              href: ../financials/localizations/france.md
             - name: Julkinen sektori
               items:
                 - name: Julkisen sektorin kirjanpito
                   href: ../financials/localizations/emea-fra-public-sector-accounting.md
-                - name: Sitoumukset
+                - name: Sitoutumiset
                   href: ../financials/localizations/emea-fra-commitments-public-sector.md
                 - name: Mandats de paiement
                   href: ../financials/localizations/emea-fra-mandats-de-paiement.md
-                - name: Osto ja hankinta
+                - name: Hankinta
                   href: ../financials/localizations/emea-fra-procurement-sourcing-public-sector.md
                 - name: Titres de recette
                   href: ../financials/localizations/emea-fra-titres-de-recette-public-sector.md
@@ -1740,13 +1965,15 @@
                 - name: Käyttöönotto-ohjeet kassapäätteille
                   href: ../retail/localizations/emea-fra-deployment.md
         - name: Saksa
-          href: ../financials/localizations/germany.md
           items:
+            - name: Saksa – yleiskatsaus
+              href: ../financials/localizations/germany.md
             - name: Lisähankintojen poisto
               href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
             - name: Tarkistustiedosto
-              href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
               items:
+                - name: Saksalainen tarkistustiedosto – yleiskatsaus
+                  href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
                 - name: Tarkistustiedoston määrityksien mukauttaminen
                   href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
                 - name: Luo tarkistustiedosto
@@ -1762,8 +1989,9 @@
             - name: Sähköisten veroilmoitusten määrittäminen
               href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
         - name: Unkari
-          href: ../financials/localizations/hungary.md
           items:
+            - name: Unkari – yleiskatsaus
+              href: ../financials/localizations/hungary.md
             - name: Vaihtokurssin laskeminen
               href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
             - name: Käyttöomaisuuden poistomenetelmät
@@ -1777,8 +2005,9 @@
             - name: Tilikauden lopetus
               href: ../financials/localizations/emea-cze-hun-year-end.md
         - name: Islanti
-          href: ../financials/localizations/iceland.md
           items:
+            - name: Islanti – yleiskatsaus
+              href: ../financials/localizations/iceland.md
             - name: Toimittajatilin luominen ja laskun ilmoitusluokan liittäminen
               href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
             - name: Määritä toimittajien laskuilmoitus
@@ -1788,11 +2017,15 @@
             - name: Päivitä toimittajan laskun ilmoitukset ja luo raportti
               href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
         - name: Intia
-          href: ../financials/localizations/india.md
           items:
+            - name: Intia – yleiskatsaus
+              href: ../financials/localizations/india.md
+            - name: Intian lokalisointien laajuus
+              href: ../financials/localizations/apac-ind-scope.md
             - name: Käyttöomaisuuserät
-              href: ../financials/localizations/apac-ind-fixed-assets.md
               items:
+                - name: Intia – käyttöomaisuuden yleiskatsaus
+                  href: ../financials/localizations/apac-ind-fixed-assets.md
                 - name: Vuorokausipohjaisen kalenterin liittäminen käyttöomaisuuskirjaan
                   href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
                 - name: Laske poiston siirto
@@ -1816,8 +2049,9 @@
                 - name: Pääomanimikkeiden siirtäminen käyttöomaisuuteen
                   href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
             - name: Intian GST-vero
-              href: ../financials/localizations/apac-ind-gst.md
               items:
+                - name: Intian GST-veron yleiskatsaus
+                  href: ../financials/localizations/apac-ind-gst.md
                 - name: Intian GST-veron viiteryhmät
                   href: ../financials/localizations/apac-ind-gst-reference-groups.md
                 - name: Kassapäätteiden GST-veron integrointi
@@ -1960,22 +2194,27 @@
                   href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
                 - name: Käyttöönotto-ohjeet kassapäätteille
                   href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: Veromoduulin yleiskatsaus
-              href: ../financials/general-ledger/tax-engine.md
+            - name: Veromoduuli
               items:
-                - name: Tuonnin konfiguraatio
-                  href: ../financials/general-ledger/tax-engine-import-configuration.md
-                - name: Veromoduulin soveltuvuus
-                  href: ../financials/general-ledger/tax-engine-applicability.md
-                - name: Veromoduulin integrointi
-                  href: ../financials/general-ledger/tax-engine-integration.md
-                - name: Veromoduulin laajentaminen
-                  href: ../financials/general-ledger/extend-tax-engine-configurations.md
+                - name: Veromoduulin yleiskatsaus
+                  href: ../financials/general-ledger/tax-engine.md
+                  items:
+                    - name: Tuonnin konfiguraatio
+                      href: ../financials/general-ledger/tax-engine-import-configuration.md
+                    - name: Veromoduulin soveltuvuus
+                      href: ../financials/general-ledger/tax-engine-applicability.md
+                    - name: Veromoduulin integrointi
+                      href: ../financials/general-ledger/tax-engine-integration.md
+                    - name: Veromoduulin laajentaminen
+                      href: ../financials/general-ledger/extend-tax-engine-configurations.md
             - name: Veron raja-arvojen usein kysytyt kysymykset
               href: ../financials/localizations/apac-ind-tax-thresholds.md
+            - name: Varastosiirrot
+              href: ../financials/localizations/apac-ind-stock-transfer.md
         - name: Italia
-          href: ../financials/localizations/italy.md
           items:
+            - name: Italia – yleiskatsaus
+              href: ../financials/localizations/italy.md
             - name: ALV-lausekkeen tiedot
               href: ../financials/localizations/emea-ita-vat-statements-details.md
             - name: Mustan listan raportti
@@ -1997,8 +2236,9 @@
             - name: Ennakonpidätys
               href: ../financials/localizations/emea-ita-withholding-tax.md
         - name: Japani
-          href: ../financials/localizations/japan.md
           items:
+            - name: Japani – yleiskatsaus
+              href: ../financials/localizations/japan.md
             - name: Käyttöomaisuuden hankkiminen ja valtionavustuksen hakeminen
               href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
             - name: Käyttöomaisuuden hankinta käyttöomaisuuden käytöstäpoistositoumuksen mukaisesti
@@ -2156,8 +2396,9 @@
             - name: Käytä käyttöomaisuuserien erittelyluetteloa
               href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
         - name: Latvia
-          href: ../financials/localizations/latvia.md
           items:
+            - name: Latvia – yleiskatsaus
+              href: ../financials/localizations/latvia.md
             - name: Käyttöomaisuuden kirjanpito
               href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
             - name: Käyttöomaisuuden sijaintimuutosten seuranta
@@ -2169,8 +2410,9 @@
             - name: ALV-lausekkeen tiedot
               href: ../financials/localizations/emea-lva-vat-statement-details.md
         - name: Liettua
-          href: ../financials/localizations/lithuania.md
           items:
+            - name: Liettua – yleiskatsaus
+              href: ../financials/localizations/lithuania.md
             - name: Käyttöomaisuuden korjauserittely
               href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
             - name: Luo käyttöomaisuuden varastojen välisen siirron asiakirja
@@ -2180,8 +2422,9 @@
             - name: ALV-lausekkeen tiedot
               href: ../financials/localizations/emea-ltu-vat-statement-details.md
         - name: Malesia
-          href: ../financials/localizations/malaysia.md
           items:
+            - name: Malesia – yleiskatsaus
+              href: ../financials/localizations/malaysia.md
             - name: Luo asiakkaan kredit projektimyynnille
               href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
             - name: Luo asiakkaan debet projektimyynnille
@@ -2203,8 +2446,9 @@
             - name: Määritä GST-vapautuslausekkeet
               href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
         - name: Meksiko
-          href: ../financials/localizations/mexico.md
           items:
+            - name: Meksiko – yleiskatsaus
+              href: ../financials/localizations/mexico.md
             - name: Lokalisoinnin laajuus
               href: ../financials/localizations/latam-mex-scope.md
             - name: Inflaatio-oikaisuilmoituksen raportti
@@ -2242,30 +2486,33 @@
             - name: Toimittajien rekisteröintitunnukset
               href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
         - name: Alankomaat
-          href: ../financials/localizations/netherlands.md
           items:
+            - name: Alankomaat – yleiskatsaus
+              href: ../financials/localizations/netherlands.md
             - name: Sähköiset veroilmoitukset (EVAT)
               href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
             - name: Semansys XBRL -integraatio
               href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
         - name: Norja
-          href: ../financials/localizations/norway.md
           items:
+            - name: Norja – yleiskatsaus
+              href: ../financials/localizations/norway.md
             - name: Asiakkaan ja toimittajan maksumuodot
               href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
             - name: Asiakasmaksu maksutunnuksen perusteella
               href: ../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md
             - name: Nets-tuontimuoto
               href: ../financials/localizations/emea-nor-nets-import-format.md
-            - name: ALV-lauseke
+            - name: ALV-ilmoitus
               href: ../financials/localizations/emea-nor-sales-tax-payment-report.md
             - name: Kassapäätteet
               href: ../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json
             - name: Käyttöönotto-ohjeet kassapäätteille
               href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
         - name: Puola
-          href: ../financials/localizations/poland.md
           items:
+            - name: Puola – yleiskatsaus
+              href: ../financials/localizations/poland.md
             - name: Storno-kirjanpidon aktivointi
               href: ../financials/localizations/emea-pol-red-storno.md
             - name: Rivialennusten laskenta yksikköhinnasta
@@ -2293,8 +2540,9 @@
             - name: Liikevaihdon saldoilmoitus
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
         - name: Venäjä
-          href: ../financials/localizations/russia.md
           items:
+            - name: Venäjä – yleiskatsaus
+              href: ../financials/localizations/russia.md
             - name: Kirjanpito
               items:
                 - name: Tilien vastaavuus
@@ -2306,8 +2554,9 @@
                 - name: 'Tuo valuutanvaihtokurssit CBRF:stä'
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
             - name: Ennakonvaraajat
-              href: ../financials/localizations/rus-advance-holders.md
               items:
+                - name: Venäjän ennakonvaraajat – yleiskatsaus
+                  href: ../financials/localizations/rus-advance-holders.md
                 - name: Ennakon haltijan luominen
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Ennakkomaksun haltijoiden päivittäiset työvaiheet
@@ -2318,18 +2567,26 @@
                   href: ../financials/localizations/rus-advance-adjustment-parameters.md
                 - name: Ennakonvaraajaraportit
                   href: ../financials/localizations/rus-local-management-reports-primary-forms.md
-            - name: Pankki
+            - name: Maksuliikenne
               items:
                 - name: Pankkitilien määrittäminen
                   href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
                 - name: Maksumääräysten määritykset ja käsittely
                   href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: Kurssioikaisu
+                  href: ../financials/localizations/rus-exchange-adjustment.md
                 - name: 'Ulkomaanvaluutan myynti, ostot ja siirrot'
                   href: ../financials/localizations/rus-currency-sale-purchase.md
+                - name: Käteiskassa
+                  href: ../financials/localizations/emea-petty-cash.md
             - name: Alv
               items:
                 - name: 'Myynnin ALV:n paikallinen kirjaus'
                   href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
+                - name: Laskun käsittely ja tulostaminen
+                  href: ../financials/localizations/rus-invoice-facture-process-print.md
+                - name: Laskuversiot ja korjaavat laskut
+                  href: ../financials/localizations/rus-revise-invoice-facture.md
                 - name: "Veroedustajien arvonlisävero\_(ALV)"
                   href: ../financials/localizations/rus-tax-agent.md
                 - name: ALV-ilmoitus
@@ -2382,6 +2639,8 @@
                   href: ../financials/localizations/rus-not-valuable-assets.md
             - name: Osto- ja myyntireskontra
               items:
+                - name: Hyvityslaskun korjaukset (Venäjä)
+                  href: ../financials/localizations/rus-credit-note-correction.md
                 - name: Maksettavat laskut
                   href: ../financials/localizations/rus-invoice-payment.md
                 - name: Tilitysten dimension ohjauksen määrittäminen
@@ -2416,7 +2675,7 @@
               items:
                 - name: Aseta lykkäykset
                   href: ../financials/localizations/rus-set-up-deferrals.md
-                - name: Viittausten luominen tai muodostaminen
+                - name: Lykkäyksien luominen tai muodostaminen
                   href: ../financials/localizations/rus-create-generate-deferrals.md
                 - name: Lykkäysten kuittaus
                   href: ../financials/localizations/rus-deferral-transactions.md
@@ -2429,20 +2688,23 @@
                 - name: Lykkäysten raportointi
                   href: ../financials/localizations/rus-reporting-deferrals.md
         - name: Saudi-Arabia
-          href: ../financials/localizations/saudi-arabia.md
           items:
+            - name: Saudi-Arabia – yleiskatsaus
+              href: ../financials/localizations/saudi-arabia.md
             - name: Arvonlisävero
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Saudi-Arabian Zakat-raportointi
               href: ../financials/localizations/emea-sau-zakat-reporting.md
         - name: Singapore
-          href: ../financials/localizations/singapore.md
           items:
+            - name: Singapore – yleiskatsaus
+              href: ../financials/localizations/singapore.md
             - name: Luo GST-05-raportti
               href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
         - name: Espanja
-          href: ../financials/localizations/spain.md
           items:
+            - name: Espanja – yleiskatsaus
+              href: ../financials/localizations/spain.md
             - name: Käteisalennusten käyttö laskussa
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Vekseliasetukset
@@ -2472,8 +2734,9 @@
             - name: Erikoisviennit ja avaavat taseet
               href: ../financials/localizations/emea-esp-opening-sheets-spain.md
         - name: Ruotsi
-          href: ../financials/localizations/sweden.md
           items:
+            - name: Ruotsi – yleiskatsaus
+              href: ../financials/localizations/sweden.md
             - name: Kirjanpitotietojen vieminen tilintarkastajille (Ruotsi)
               href: ../financials/localizations/emea-swe-sie-standard-report.md
             - name: Tuontimaksumuodot
@@ -2481,13 +2744,15 @@
             - name: Kassapäätteet
               href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
         - name: Sveitsi
-          href: ../financials/localizations/switzerland.md
           items:
+            - name: Sveitsi – yleiskatsaus
+              href: ../financials/localizations/switzerland.md
             - name: Asiakasmaksujen tuonti ESR-maksumääräyksessä
               href: ../financials/localizations/emea-che-esr-customer-payments-import.md
         - name: Thaimaa
-          href: ../financials/localizations/thailand.md
           items:
+            - name: Thaimaa – yleiskatsaus
+              href: ../financials/localizations/thailand.md
             - name: Varastokorttiraportit
               href: ../financials/localizations/apac-tha-stock-card-reports.md
             - name: Verolaskun korvaus/oikaisu
@@ -2496,9 +2761,10 @@
               href: ../financials/localizations/apac-tha-unrealized-vat.md
             - name: Ennakonpidätys
               href: ../financials/localizations/apac-tha-withholding-tax.md
-        - name: Iso-Britannia
-          href: ../financials/localizations/united-kingdom.md
+        - name: Yhdistynyt kuningaskunta
           items:
+            - name: Yhdistynyt kuningaskunta – yleiskatsaus
+              href: ../financials/localizations/united-kingdom.md
             - name: Rakennustuotannon malli
               href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
             - name: Luo tilitysalennuksen hyvitys
@@ -2516,15 +2782,17 @@
             - name: 'ALV:n määrittäminen digitaaliseksi'
               href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
         - name: Yhdysvallat
-          href: ../financials/localizations/united-states.md
           items:
+            - name: Yhdysvallat – yleiskatsaus
+              href: ../financials/localizations/united-states.md
             - name: Yhdysvaltojen vuoden lopun 1099-raportointi
               href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
             - name: Julkisen sektorin 1099-lomake
               href: ../financials/localizations/noam-usa-form-1099-public-sector.md
     - name: Henkilöstöhallinto
-      href: hr/hr-landing-page.md
       items:
+        - name: Henkilöstöhallinnon yleiskatsaus
+          href: hr/hr-landing-page.md
         - name: Henkilöstöhallinnon strategian kehittäminen
           items:
             - name: Tavoitteiden luominen
@@ -2676,8 +2944,9 @@
             - name: Työntekijän vamma- ja sairaustietojen ylläpito
               href: hr/tasks/maintain-employee-injury-illness-information.md
         - name: Yhdysvaltojen palkanlaskenta
-          href: hr/localizations/noam-usa-payroll.md
           items:
+            - name: Yhdysvaltojen palkanlaskennan yleiskuvaus
+              href: hr/localizations/noam-usa-payroll.md
             - name: Palkanlaskennan asetukset
               items:
                 - name: Työntekijöiden palkanlaskennan määrittäminen
@@ -2742,14 +3011,16 @@
                   href: hr/localizations/noam-usa-payroll-data-updates.md
                 - name: Vakiomuotoiset palkanmaksuraportit
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
-    - name: Äly
-      href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
+    - name: Tiedot
       items:
+        - name: Analyysit – aloitussivu
+          href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
         - name: Tietojen käyttö ja raportointi
           href: ../dev-itpro/analytics/information-access-reporting.md?toc=/fin-and-ops/toc.json
         - name: Power BI -sisältö
-          href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
           items:
+            - name: Power BI -sisällön aloitussivu
+              href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
             - name: Todellinen vs. budjetti
               href: ../dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Edut
@@ -2763,8 +3034,9 @@
             - name: Kompensaatio ja edut
               href: ../dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Kustannuslaskenta-analyysi
-              href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Kustannuslaskenta-analyysin Power BI -sisältö
+                  href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
                 - name: Kustannuslaskenta-analyysin Power BI -sisällön suojauksen määrittäminen
                   href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Kustannushintojen hallinta
@@ -2812,8 +3084,9 @@
             - name: 'SSRS:n määrittäminen paikallisia käyttöönottoja varten'
               href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
             - name: Tulostus
-              href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Asiakirjojen tulostuksen yleiskatsaus
+                  href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
                 - name: Verkkotulostuksen käyttöönotto asentamalla asiakirjan reititysagentti
                   href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
                 - name: Asiakirjan reititysagentin päivittäminen
@@ -2910,10 +3183,8 @@
                       href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
             - name: Sähköisen raportoinnin muotojen muokkaaminen käyttämällä Excel-malleja
               href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Finance and Operation -versiosta riippuvaisten ER-konfiguraatioiden luominen
-              items:
-                - name: ER-konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa
-                  href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: ER-konfiguraatioiden riippuvuuden määrittäminen muissa komponenteissa
+              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
             - name: ER-ratkaisun suunnitteleminen taloushallinnon dimensioiden käyttämiseksi
               items:
                 - name: Tietomallien määrittäminen käyttämään taloushallinnon dimensioita tietolähteinä
@@ -3032,6 +3303,8 @@
                       href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
                 - name: Sähköisen raportoinnin muotojen suorittamisen seuraaminen suorituskykyyn liittyvien ongelmien ratkaisemiseksi
                   href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+                - name: Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
+                  href: ../dev-itpro/analytics/er-business-document-management.md?toc=/fin-and-ops/toc.json
             - name: ER-kehyksen ohjelmointirajapinta
               items:
                 - name: Sähköisen raportoinnin toimintoluettelon laajentaminen
@@ -3080,17 +3353,20 @@
               href: ../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json
             - name: Tuo oma tietokantasi
               href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
-    - name: Inventoinnin- ja varastonhallinta
-      href: ../supply-chain/inventory/inventory-home-page.md
+    - name: Varastonhallinta
       items:
-        - name: Saapumisten yhteenveto
-          href: ../supply-chain/inventory/arrival-overview.md
+        - name: Inventoinnin- ja varastonhallinta – yleiskatsaus
+          href: ../supply-chain/inventory/inventory-home-page.md
+        - name: Saapuminen
           items:
+            - name: Saapumisten yhteenveto
+              href: ../supply-chain/inventory/arrival-overview.md
             - name: Määritä nimikkeen saapumisen yhteenvedon profiili
               href: ../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md
         - name: Laadunhallinta
-          href: ../supply-chain/inventory/enable-quality-management.md
           items:
+            - name: Laadunhallinnan yleiskuvaus
+              href: ../supply-chain/inventory/enable-quality-management.md
             - name: Laadunhallintaprosessit
               href: ../supply-chain/inventory/quality-management-processes.md
             - name: Määrityksistä poikkeamisen hallinta
@@ -3156,8 +3432,9 @@
             - name: Käytettävissä olevan varaston mobiilityötila
               href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
         - name: Lähtevien käsittely
-          href: ../supply-chain/inventory/outbound-process.md
           items:
+            - name: Lähetysprosessin yleiskuvaus
+              href: ../supply-chain/inventory/outbound-process.md
             - name: Varastomäärien varaaminen
               href: ../supply-chain/inventory/reserve-inventory-quantities.md
             - name: Saman erän varaaminen myyntitilausta varten
@@ -3265,12 +3542,140 @@
               href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
             - name: Ylläpitopyyntöraportit
               href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
-    - name: Pääsuunnittelu
-      href: ../supply-chain/master-planning/master-planning-home-page.md
-      items:
-        - name: Pääsuunnitelmat
-          href: ../supply-chain/master-planning/master-plans.md
+        - name: Työtilausten määrittäminen
           items:
+            - name: 'Ylläpitotöiden tyyppiluokat ja ylläpitotöiden tyypit, ylläpitotöiden tyyppien variantit, ylläpitotöiden toimialat ja ylläpidon tarkistuslistat'
+              href: ../supply-chain/asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+            - name: Työtilauksen elinkaaren tilat
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+            - name: Työtilaustyypit
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-types.md
+            - name: Työtilauksen projektiasetukset
+              href: ../supply-chain/asset-management/setup-for-work-orders/work-order-project-setup.md
+            - name: Palvelutaso ja kuvaus
+              href: ../supply-chain/asset-management/setup-for-work-orders/service-level-and-description.md
+            - name: Ajoitettu suoritus
+              href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
+            - name: Vikojen hallinta
+              href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+        - name: Työtilaukset
+          items:
+            - name: Työtilausten esittely
+              href: ../supply-chain/asset-management/work-orders/introduction-to-work-orders.md
+            - name: Manuaalisesti luodut työtilaukset
+              href: ../supply-chain/asset-management/work-orders/manually-created-workorders.md
+            - name: Ylläpitoennusteet
+              href: ../supply-chain/asset-management/work-orders/maintenance-forecasts.md
+            - name: Osto ja hankinta
+              href: ../supply-chain/asset-management/work-orders/procurement.md
+            - name: Resurssilaskureiden manuaalinen päivitys
+              href: ../supply-chain/asset-management/work-orders/manual-update-of-asset-counters.md
+            - name: Resurssilaskureiden automaattinen päivitys
+              href: ../supply-chain/asset-management/work-orders/automatic-update-of-asset-counters.md
+            - name: Ylläpidon tarkistuslistat
+              href: ../supply-chain/asset-management/work-orders/maintenance-checklists.md
+            - name: Ylläpidon käyttökatko
+              href: ../supply-chain/asset-management/work-orders/maintenance-downtime.md
+            - name: Vian lisääminen työtilaukseen
+              href: ../supply-chain/asset-management/work-orders/add-fault-to-work-order.md
+            - name: Työtilausraportti
+              href: ../supply-chain/asset-management/work-orders/work-order-report.md
+            - name: Työtilauspoolit
+              href: ../supply-chain/asset-management/work-orders/work-order-pools.md
+            - name: Aktiiviset työtilauksen ylläpitotyöt
+              href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
+            - name: Työtilaukset ja käyttöomaisuuserät
+              href: ../supply-chain/asset-management/work-orders/work-orders-and-fixed-assets.md
+        - name: Integraatio projektinhallinnan ja kirjanpidon kanssa
+          items:
+            - name: 'Ennusteet, työtilaukset ja projektit'
+              href: ../supply-chain/asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+        - name: Ennaltaehkäisevä ja reaktiivinen ylläpito
+          items:
+            - name: Ennalta ehkäisevä ylläpito
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+            - name: Ylläpitosuunnitelmat
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+            - name: Ajoita ylläpitosuunnitelmat
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+            - name: Ylläpitokierrokset
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+            - name: Ylläpitoaikataulu
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+            - name: Ylläpitoaikataulun kustannus
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+            - name: Luo työtilauksia
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+            - name: Ylläpidon käyttökatko
+              href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+        - name: Kapasiteettisuunnittelu
+          items:
+            - name: Laske kapasiteetin kuormitus
+              href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
+            - name: Laske nimikkeen ennuste
+              href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
+        - name: Työtilausten ajoitus
+          items:
+            - name: Ylläpitotyöntekijän kalenteri ja ajoittaminen
+              href: ../supply-chain/asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+            - name: Ensisijaiset ylläpitotyöntekijät
+              href: ../supply-chain/asset-management/work-order-scheduling/preferred-maintenance-workers.md
+            - name: Ajoita työtilauksia
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-orders.md
+            - name: Työtilauksen resursointi
+              href: ../supply-chain/asset-management/work-order-scheduling/dispatch-work-order.md
+            - name: Työtilauksen ajoittaminen tiettyyn päivämäärään ja aikaan
+              href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+            - name: Ajoitetut työtilauksen ylläpitotyöt
+              href: ../supply-chain/asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+            - name: Ajoitettujen työtilausten kapasiteetin kuormituksen laskeminen
+              href: ../supply-chain/asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+        - name: Kulutus
+          items:
+            - name: Kulutuksen rekisteröinti
+              href: ../supply-chain/asset-management/consumption/register-consumption.md
+            - name: Kulutusraporttien luominen
+              href: ../supply-chain/asset-management/consumption/create-consumption-reports.md
+        - name: Takuu
+          items:
+            - name: Takuusopimus
+              href: ../supply-chain/asset-management/warranty/warranty-agreement.md
+            - name: Resurssien ja resurssityyppien takuu
+              href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
+        - name: Ylläpitobudjetit
+          items:
+            - name: Ylläpitobudjetit
+              href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
+            - name: Päivitä ylläpitobudjetit
+              href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
+        - name: Hallinta ja raportointi
+          items:
+            - name: Kustannusten ja päivämäärien hallinta
+              href: ../supply-chain/asset-management/controlling-and-reporting/cost-and-date-control.md
+            - name: Työtuntien hallinta
+              href: ../supply-chain/asset-management/controlling-and-reporting/work-hour-control.md
+            - name: Resurssivikojen kustannusten hallinta
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-cost-control.md
+            - name: Resurssien vika-analyysi
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-analysis.md
+            - name: Resurssien suorituskykyilmaisimet
+              href: ../supply-chain/asset-management/controlling-and-reporting/asset-kpis.md
+            - name: 'Nimike, missä käytetty'
+              href: ../supply-chain/asset-management/controlling-and-reporting/item-where-used.md
+            - name: Ylläpidon tila
+              href: ../supply-chain/asset-management/controlling-and-reporting/maintenance-status.md
+        - name: Tietojen hallinta
+          items:
+            - name: Kohdeyksiköt
+              href: ../supply-chain/asset-management/data-management/target-entities.md
+    - name: Pääsuunnittelu
+      items:
+        - name: Pääsuunnittelun aloitussivu
+          href: ../supply-chain/master-planning/master-planning-home-page.md
+        - name: Pääsuunnitelmat
+          items:
+            - name: Pääsuunnitelmien yleiskatsaus
+              href: ../supply-chain/master-planning/master-plans.md
             - name: Pääsuunnitelmien määrittäminen
               href: ../supply-chain/master-planning/master-planning-setup.md
             - name: Pääsuunnittelun asetusten ohjattu toiminto
@@ -3304,8 +3709,9 @@
             - name: Pääsuunnittelun suorituskyvyn parantaminen
               href: ../supply-chain/master-planning/master-planning-performance.md
             - name: Pääsuunnitelmat ja multisite-toiminnot
-              href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
               items:
+                - name: Pääsuunnittelu ja multisite-toiminnot – yleiskatsaus
+                  href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
                 - name: 'Pääsuunnittelu toimipaikan kattavuudelle, varasto pakollinen'
                   href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md
                 - name: 'Pääsuunnittelu toimipaikan kattavuudelle, varasto ei pakollinen'
@@ -3327,8 +3733,9 @@
             - name: Yhteistyö sisäisen toimitusketjun asiakkaiden kanssa
               href: ../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md
         - name: Kysynnän ennuste
-          href: ../supply-chain/master-planning/introduction-demand-forecasting.md
           items:
+            - name: Kysynnän ennustepalveluiden yleiskatsaus
+              href: ../supply-chain/master-planning/introduction-demand-forecasting.md
             - name: Kysynnän ennusteiden asetukset
               href: ../supply-chain/master-planning/demand-forecasting-setup.md
             - name: Kysynnän ennusteiden historiatietojen tuonti
@@ -3349,12 +3756,14 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Kysynnän ennusteen muokkaaminen manuaalisesti
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Mobiilisovellus
-      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+    - name: Dynamics 365 for Unified Operations Mobile -sovellus
       items:
-        - name: Käytettävissä olevat mobiilityötilat
-          href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
+        - name: Dynamics 365 for Unified Operations Mobile -sovelluksen aloitussivu
+          href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+        - name: Mobiilityötilat
           items:
+            - name: Käytettävissä olevat mobiilityötilat
+              href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
             - name: Yrityksen hakemisto
               href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: Kustannusten hallinta
@@ -3367,11 +3776,11 @@
               href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
             - name: Oma ryhmä
               href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
-            - name: Projektin mobiilisovellusten yleiskuvaus
+            - name: Project-mobiilisovellusten yleiskuvaus
               href: ../financials/project-management/project-mobile-application-overview.md
             - name: Projektin aikamerkintä
               href: ../financials/project-management/project-time-entry-mobile-workspace.md
-            - name: Projektin työaikaraportti
+            - name: Project Timesheet
               href: ../financials/project-management/project-timesheet.md
             - name: Ostotilauksen hyväksyntä
               href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
@@ -3382,8 +3791,9 @@
         - name: Mobiilityötilojen julkaiseminen
           href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
     - name: Office-integrointi
-      href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
       items:
+        - name: Office-integroinnin yleiskatsaus
+          href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
         - name: Office-integroinnin opetusohjelma
           href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
         - name: Yksikön tietojen avaaminen Excelissä ja päivittäminen Excel-lisäosan avulla
@@ -3400,26 +3810,30 @@
           href: ../dev-itpro/dev-tools/sysmailer-develop.md
         - name: Office-integroinnin vianmääritys
           href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
-    - name: Osto ja hankinta
-      href: ../supply-chain/procurement/procurement-sourcing-overview.md
+    - name: Hankinta
       items:
+        - name: Yleiskatsaus hankintaan
+          href: ../supply-chain/procurement/procurement-sourcing-overview.md
         - name: Hankinnan työnkulku
           href: ../supply-chain/procurement/procurement-sourcing-workflows.md
         - name: Hankintaluettelot
-          href: ../supply-chain/procurement/procurement-catalogs.md
           items:
+            - name: Hankintaluettelojen yleiskatsaus
+              href: ../supply-chain/procurement/procurement-catalogs.md
             - name: Luo tuotteiden hankintaluettelo
               href: ../supply-chain/procurement/tasks/create-procurement-catalog.md
             - name: Määritä hankintaluokkahierarkia
               href: ../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md
         - name: Ostoehdotukset
-          href: ../supply-chain/procurement/purchase-requisitions-overview.md
           items:
+            - name: Ostoehdotusten yleiskatsaus
+              href: ../supply-chain/procurement/purchase-requisitions-overview.md
             - name: Ostoehdotuksen työnkulku
               href: ../supply-chain/procurement/purchase-requisitions-workflow.md
         - name: Tarjouspyynnöt
-          href: ../supply-chain/procurement/request-quotations.md
           items:
+            - name: Tarjouspyyntöjen yleiskatsaus
+              href: ../supply-chain/procurement/request-quotations.md
             - name: Luo tarjouspyyntö
               href: ../supply-chain/procurement/tasks/create-request-quotation.md
             - name: 'Luo ehdotus, joka käyttää tarjouspyyntöä'
@@ -3471,8 +3885,9 @@
             - name: Toimittajan ostohyvitykset
               href: ../supply-chain/procurement/vendor-rebates.md
         - name: Ostokäytännöt
-          href: ../supply-chain/procurement/purchase-policies.md
           items:
+            - name: Ostokäytäntöjen yleiskatsaus
+              href: ../supply-chain/procurement/purchase-policies.md
             - name: Luo ostokäytännöt
               href: ../supply-chain/procurement/tasks/create-purchasing-policies.md
             - name: Aseta menettelytavat hankintaluokkahierarkioille
@@ -3530,29 +3945,33 @@
             - name: Lähetä ja hyväksy projektibudjettien versiot
               href: ../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md
     - name: Organisaation hallinto
-      href: organization-administration/organization-administration-home-page.md
       items:
+        - name: Organisaation hallinnon aloitussivu
+          href: organization-administration/organization-administration-home-page.md
         - name: Numerosarjat
-          href: organization-administration/number-sequence-overview.md
           items:
+            - name: Numerosarjojen yleiskatsaus
+              href: organization-administration/number-sequence-overview.md
             - name: Yksittäisten numerosarjojen määrittäminen
               href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
             - name: Numerosarjojen määrittäminen ohjatulla toiminnolla
               href: organization-administration/tasks/set-up-number-sequences-wizard.md
         - name: Organisaatiot ja organisaatiohierarkiat
-          href: organization-administration/organizations-organizational-hierarchies.md
           items:
+            - name: Organisaatiot ja organisaatiohierarkiat – yleiskatsaus
+              href: organization-administration/organizations-organizational-hierarchies.md
             - name: Organisaatiohierarkian suunnitteleminen
               href: organization-administration/plan-organizational-hierarchy.md
-            - name: Organisaatiohierarkian luominen
+            - name: Organisaation hierarkian luominen
               href: organization-administration/tasks/create-organization-hierarchy.md
             - name: Yritysten luominen
               href: organization-administration/tasks/create-legal-entity.md
             - name: Toimintayksiköiden luominen
               href: organization-administration/tasks/create-operating-unit.md
         - name: Yleinen osoitekirja
-          href: organization-administration/overview-global-address-book.md
           items:
+            - name: Yleisen osoitekirjan yleiskatsaus
+              href: organization-administration/overview-global-address-book.md
             - name: Yleisen osoitekirjan ja muiden osoitekirjojen suunnitteleminen
               href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
             - name: Yleisen osoitekirjan määrittäminen
@@ -3562,8 +3981,9 @@
             - name: Osoitekirjojen määrittäminen
               href: organization-administration/tasks/address-books.md
         - name: Työnkulkujärjestelmä
-          href: organization-administration/overview-workflow-system.md
           items:
+            - name: Työnkulkujärjestelmän yleiskatsaus
+              href: organization-administration/overview-workflow-system.md
             - name: Työnkulkujärjestelmän arkkitehtuuri
               href: organization-administration/workflow-system-architecture.md
             - name: Työnkulun elementit
@@ -3571,8 +3991,9 @@
             - name: Työnkulkutehtävät
               href: organization-administration/workflow-actions.md
             - name: Työnkulkujen luominen
-              href: organization-administration/create-workflow.md
               items:
+                - name: Työnkulkujen luonnin yleiskatsaus
+                  href: organization-administration/create-workflow.md
                 - name: Työnkulkuominaisuuksien määrittäminen
                   href: organization-administration/configure-workflow-properties.md
                 - name: Manuaalisten tehtävien määrittäminen
@@ -3624,8 +4045,9 @@
             - name: Työnkulun usein kysytyt kysymykset
               href: organization-administration/workflow-FAQ.md
         - name: Hälytykset
-          href: get-started/alerts-overview.md
           items:
+            - name: Hälytysten yleiskuvaus
+              href: get-started/alerts-overview.md
             - name: Hälytyssääntöjen luominen
               href: get-started/create-alerts.md
             - name: Hälytysten eräkäsittely
@@ -3633,18 +4055,21 @@
             - name: Asiakasohjelman hälytysilmoitukset sähköpostitse
               href: get-started/alert-email-notifications.md
         - name: Sähköiset allekirjoitukset
-          href: organization-administration/electronic-signature-overview.md
           items:
+            - name: Sähköisten allekirjoitusten yleiskatsaus
+              href: organization-administration/electronic-signature-overview.md
             - name: Sähköisten allekirjoitusten määrittäminen
               href: organization-administration/tasks/set-up-electronic-signatures.md
         - name: Palvelupyyntöjen hallinta
-          href: organization-administration/cases.md
           items:
+            - name: Palvelupyynnön hallinnan yleiskatsaus
+              href: organization-administration/cases.md
             - name: 'Palvelupyynnön käyttöoikeuksien, prosessien ja luokkien suunnitteleminen'
               href: organization-administration/plan-case-management.md
         - name: Tietuemallit
-          href: organization-administration/record-templates.md
           items:
+            - name: Tietuemallien yleiskatsaus
+              href: organization-administration/record-templates.md
             - name: Tietuemallin luominen
               href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
             - name: Uuden tietueen luonti tietuemallin avulla
@@ -3656,8 +4081,9 @@
         - name: Päivämäärä- ja aikatiedot sekä aikavyöhykkeet
           href: organization-administration/date-time-zones.md
     - name: Tuotannonhallinta
-      href: ../supply-chain/production-control/production-process-overview.md
       items:
+        - name: Tuotantoprosessin yleiskatsaus
+          href: ../supply-chain/production-control/production-process-overview.md
         - name: 'Monijärjestelmätilan suunnittelu: erillisen hankinnan, prosessihankinnan ja lean-hankinnan yhdistäminen'
           href: ../supply-chain/production-control/mixed-mode-plan.md
         - name: Tuotannon alihankintatyön hallinta
@@ -3721,8 +4147,9 @@
             - name: Tuotantotöiden käyttäminen
               items:
                 - name: Tuotantotilauksen elinkaaren hallinta
-                  href: ../supply-chain/production-control/create-production-orders.md
                   items:
+                    - name: Tuotantotilauksen elinkaaren yleiskatsaus
+                      href: ../supply-chain/production-control/create-production-orders.md
                     - name: Luo tuotantotilaus
                       href: ../supply-chain/production-control/tasks/create-production-order.md
                     - name: Arvioi tuotantotilaus
@@ -3782,8 +4209,9 @@
                 - name: Tuotannon kirjaus
                   href: ../supply-chain/cost-management/production-posting.md
             - name: Työajan seurannan rekisteröinti
-              href: ../supply-chain/production-control/time-attendance-registrations.md
               items:
+                - name: Työaikarekisteröinnin yleiskatsaus
+                  href: ../supply-chain/production-control/time-attendance-registrations.md
                 - name: Rekisteröinteihin perustuva palkka
                   href: ../supply-chain/production-control/pay-based-on-registrations.md
                 - name: Poissaolon rekisteröinti työajan seurannassa
@@ -3945,8 +4373,9 @@
                 - name: Tuotannon kirjaus
                   href: ../supply-chain/cost-management/production-posting.md
     - name: Tuotetietojen hallinta
-      href: ../supply-chain/pim/product-information.md
       items:
+        - name: Tuotetietojen yleiskatsaus
+          href: ../supply-chain/pim/product-information.md
         - name: Tuotetiedot
           items:
             - name: Tuotetunnukset
@@ -3972,8 +4401,9 @@
             - name: Luo markkinoille julkaistu tuote yksittäiselle yritykselle
               href: ../supply-chain/pim/tasks/create-released-product-single-company.md
             - name: Tuotteen elinkaaren tila
-              href: ../supply-chain/pim/product-lifecycle.md
               items:
+                - name: Tuotteen elinkaaren tilat – yleiskatsaus
+                  href: ../supply-chain/pim/product-lifecycle.md
                 - name: Luo uusi tuotteen elinkaaren tila
                   href: ../supply-chain/pim/tasks/new-product-lifecycle-state.md
                 - name: Luo tuotteen elinkaaren oletustila
@@ -4017,11 +4447,13 @@
             - name: Tuoterakennelaskelmat
               href: ../supply-chain/cost-management/bom-calculations.md
         - name: Tuotekonfiguraatio
-          href: ../supply-chain/pim/build-product-configuration-model.md
           items:
+            - name: Tuotemäärityksen yleiskatsaus
+              href: ../supply-chain/pim/build-product-configuration-model.md
             - name: Dimensioihin perustuvan konfiguraation luominen
-              href: ../supply-chain/pim/dimension-based-product-configuration.md
               items:
+                - name: Dimensioihin perustuvat tuotekonfiguraatiot – yleiskatsaus
+                  href: ../supply-chain/pim/dimension-based-product-configuration.md
                 - name: Tuotedimensio
                   href: ../supply-chain/pim/product-dimensions.md
                 - name: Luo dimensioihin perustuva päätuote
@@ -4041,8 +4473,9 @@
                 - name: Luo dimensioihin perustuvat konfiguraatiot
                   href: ../supply-chain/pim/tasks/create-dimension-based-configurations.md
             - name: Poissulkevan konfiguraation luominen
-              href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
               items:
+                - name: Tuotemääritysmallin määritys
+                  href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
                 - name: Tuotekonfiguraatiomallin laskennan usein kysytyt kysymykset
                   href: ../supply-chain/pim/calculate-product-configuration-models.md
                 - name: Konfiguraatiosääntö
@@ -4072,8 +4505,9 @@
                 - name: Tietojen siirtäminen tuotemalleja varten
                   href: ../supply-chain/pim/tasks/transfer-data-product-models.md
     - name: Projektinhallinta ja kirjanpito
-      href: ../financials/project-management/overview-project-management-accounting.md
       items:
+        - name: Projektinhallinnan ja kirjanpidon yleiskatsaus
+          href: ../financials/project-management/overview-project-management-accounting.md
         - name: Konsernin sisäinen laskutus
           href: ../financials/project-management/intercompany-invoicing.md
         - name: Konsernin sisäisen projektilaskutuksen määrittäminen
@@ -4099,23 +4533,25 @@
         - name: Ostotilauksen nimikkeiden vastaanottaminen nimiketarpeen perusteella
           href: ../financials/project-management/tasks/receive-items-purchase-order-item-requirement.md
         - name: Työrakenteet
-          href: ../financials/project-management/work-breakdown-structures.md
           items:
-            - name: Microsoft Project -asiakasintegrointi
+            - name: Työrakenteet – yleiskatsaus
+              href: ../financials/project-management/work-breakdown-structures.md
+            - name: Microsoft Project Client -integrointi
               href: ../financials/project-management/project-integration.md
-        - name: Projektin mobiilisovellusten yleiskuvaus
+        - name: Project-mobiilisovellusten yleiskuvaus
           href: ../financials/project-management/project-mobile-application-overview.md
         - name: Projektin aikamerkintöjen mobiilityötila
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
-        - name: Projektin työaikaraportin mobiilisovellus
+        - name: Project Timesheet -mobiilisovellus
           href: ../financials/project-management/project-timesheet.md
         - name: Projektin työaikaraportit mobiililaitteessa
           href: ../financials/project-management/mobile-timesheets.md
-        - name: Projektin työaikaraporttien mukautettujen kenttien toteuttaminen mobiilisovelluksessa
+        - name: Mukautettujen kenttien toteuttaminen Project Timesheet -mobiilisovelluksessa
           href: ../financials/project-management/custom-fields-mobile.md
     - name: Myynti ja markkinointi
-      href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:
+        - name: Myynnin ja markkinoinnin yleiskuvaus
+          href: ../supply-chain/sales-marketing/overview-sales-marketing.md
         - name: Myyntitilaukset
           items:
             - name: Luvatut tilaukset
@@ -4149,8 +4585,9 @@
             - name: Vahvista myyntitilaukset
               href: ../supply-chain/sales-marketing/tasks/confirm-sales-orders.md
         - name: Myyntisopimukset
-          href: ../supply-chain/sales-marketing/sales-agreements.md
           items:
+            - name: Myyntisopimusten yleiskatsaus
+              href: ../supply-chain/sales-marketing/sales-agreements.md
             - name: Myyntisopimusten syöttäminen
               href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
             - name: Myyntisopimusten täyttäminen
@@ -4184,13 +4621,15 @@
         - name: Uuden kauppasopimuksen luominen
           href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
     - name: Huoltohallinta
-      href: ../supply-chain/service-management/service-management-home-page.md
       items:
+        - name: Huoltohallinnan palvelut – yleiskatsaus
+          href: ../supply-chain/service-management/service-management-home-page.md
         - name: Asiakaspalvelun määrittäminen
           items:
             - name: Huoltosopimusten määrittäminen
-              href: ../supply-chain/service-management/service-agreement-groups.md
               items:
+                - name: Huoltosopimusten yleiskatsaus
+                  href: ../supply-chain/service-management/service-agreement-groups.md
                 - name: Huoltosopimusten luominen
                   href: ../supply-chain/service-management/create-service-agreements.md
                 - name: Huoltovälit
@@ -4204,13 +4643,15 @@
                 - name: Huoltomalliryhmän luominen
                   href: ../supply-chain/service-management/create-service-template-group.md
             - name: Huoltotehtävien määrittäminen
-              href: ../supply-chain/service-management/service-tasks.md
               items:
+                - name: Huoltotehtävien yleiskatsaus
+                  href: ../supply-chain/service-management/service-tasks.md
                 - name: Huoltotehtävän suhteiden luominen
                   href: ../supply-chain/service-management/create-service-task-relations.md
             - name: Huoltokohteiden määrittäminen
-              href: ../supply-chain/service-management/service-objects.md
               items:
+                - name: Huoltokohteiden yleiskatsaus
+                  href: ../supply-chain/service-management/service-objects.md
                 - name: Huoltokohteiden luominen
                   href: ../supply-chain/service-management/create-service-task-relations.md
                 - name: Varastonimikkeiden liittäminen huoltokohteisiin
@@ -4230,8 +4671,9 @@
                 - name: Mallien liittäminen huoltokohteisiin
                   href: ../supply-chain/service-management/attach-templates-service-objects.md
             - name: Huoltotilausten syykoodien määrittäminen
-              href: ../supply-chain/service-management/reason-codes-service-orders.md
               items:
+                - name: Huoltotilausten syykoodit
+                  href: ../supply-chain/service-management/reason-codes-service-orders.md
                 - name: Huoltotilauksen vaiheet
                   href: ../supply-chain/service-management/service-order-stages.md
                 - name: Huoltotilauksen vaiheiden määrittäminen
@@ -4239,8 +4681,9 @@
                 - name: Syykoodien luominen
                   href: ../supply-chain/service-management/create-reason-codes.md
             - name: Huolto- ja ylläpitosopimusten määrittäminen
-              href: ../supply-chain/service-management/service-level-agreements.md
               items:
+                - name: Palvelutasosopimusten yleiskatsaus
+                  href: ../supply-chain/service-management/service-level-agreements.md
                 - name: Ylläpitosopimuksen myyntihinnat
                   href: ../supply-chain/service-management/subscription-sales-prices.md
                 - name: Ylläpitosopimusryhmät
@@ -4254,8 +4697,9 @@
             - name: Korjausten hallinnan määrittäminen
               href: ../supply-chain/service-management/repair-management.md
             - name: Asiakaspalautusten määrittäminen
-              href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
               items:
+                - name: Asiakaspalautusten yleiskatsaus
+                  href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
                 - name: Käsittelykoodien määrittäminen
                   href: ../supply-chain/service-management/set-up-disposition-codes.md
                 - name: Palautusten syykoodien määrittäminen
@@ -4263,14 +4707,17 @@
                 - name: Palautettujen nimikkeiden poistotavan määrittäminen
                   href: ../supply-chain/service-management/specify-how-to-dispose-of-returned-items.md
         - name: Asiakaspalvelun käyttäminen
-          href: ../supply-chain/service-management/working-with-customer-service.md
           items:
+            - name: Asiakaspalvelun käyttäminen – yleiskatsaus
+              href: ../supply-chain/service-management/working-with-customer-service.md
             - name: Huoltosopimusten täyttäminen
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: Huoltosopimusten toteuttamisen yleiskuvaus
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: Sopimusten laatiminen
-                  href: ../supply-chain/service-management/service-agreements.md
                   items:
+                    - name: Huoltosopimusten laatiminen ja luominen – yleiskatsaus
+                      href: ../supply-chain/service-management/service-agreements.md
                     - name: Huoltosopimusten luominen
                       href: ../supply-chain/service-management/create-service-agreements.md
                     - name: Huollon ylläpitosopimukset
@@ -4296,8 +4743,9 @@
                     - name: Ylläpitosopimuksen myyntihintojen päivittäminen ja indeksoiminen
                       href: ../supply-chain/service-management/update-and-index-subscription-sales-prices.md
             - name: Asiakaskyselyjen käsitteleminen
-              href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
               items:
+                - name: Huoltosopimusten toteuttamisen yleiskuvaus
+                  href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
                 - name: Huoltotilauksen ajanseurannan aloittaminen ja pysäyttäminen
                   href: ../supply-chain/service-management/start-and-stop-time-recording-on-a-service-order.md
                 - name: Huoltotilauksen alkamisajan ja keston tarkasteleminen
@@ -4407,8 +4855,9 @@
                     - name: Ylläpitosopimustapahtumien laskuttaminen
                       href: ../supply-chain/service-management/invoice-subscription-transactions.md
     - name: Kuljetustenhallinta
-      href: ../supply-chain/transportation/transportation-management-overview.md
       items:
+        - name: Kuljetustenhallinnan yleiskatsaus
+          href: ../supply-chain/transportation/transportation-management-overview.md
         - name: Kuljetustenhallintamoduulit
           href: ../supply-chain/transportation/transportation-management-engines.md
         - name: Uuden kuljetuksenhallintamoduulin luominen
@@ -4420,8 +4869,9 @@
         - name: Rahdin kuljetusreittien suunnittelu
           href: ../supply-chain/transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: Kuormien suunnittelu keskusten konsolidoinnin avulla
-          href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
           items:
+            - name: Kuormien suunnittelu keskusten konsolidoinnin avulla – yleiskatsaus
+              href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
             - name: Kuormien ja lähetysten suunnittelu kuormasuunnittelun työtilassa
               href: ../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
         - name: Kontin painon ja tilavuuden sisällyttäminen kuormaan
@@ -4451,11 +4901,13 @@
         - name: Nimikkeen kuljetusrajoitteiden määrittäminen
           href: ../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md
     - name: Varastonhallinta
-      href: ../supply-chain/warehousing/warehouse-management-overview.md
       items:
+        - name: Varastonhallinnan yleiskatsaus
+          href: ../supply-chain/warehousing/warehouse-management-overview.md
         - name: Varaston konfigurointi
-          href: ../supply-chain/warehousing/warehouse-configuration.md
           items:
+            - name: Varaston konfiguroinnin yleiskatsaus
+              href: ../supply-chain/warehousing/warehouse-configuration.md
             - name: Varaston määrittäminen varaston konfigurointimallin avulla
               href: ../supply-chain/inventory/warehouse-template.md
             - name: Työn ohjaaminen työmallien ja sijaintidirektiivien avulla
@@ -4485,8 +4937,9 @@
             - name: Siirtotilausten varaston määrittäminen
               href: ../supply-chain/warehousing/transfer-orders-warehouse.md
         - name: Varaston työkäytännöt
-          href: ../supply-chain/warehousing/warehouse-work-policies.md
           items:
+            - name: Varaston työkäytännöt – yleiskatsaus
+              href: ../supply-chain/warehousing/warehouse-work-policies.md
             - name: Määritä varaston työkäytännöt
               href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
             - name: Työhön liitetyn varaston siirtäminen varastonhallinnassa
@@ -4546,8 +4999,9 @@
             - name: Varaston tunnisteiden inventointi
               href: ../supply-chain/inventory/inventory-tag-counting.md
         - name: Täydennys
-          href: ../supply-chain/warehousing/replenishment.md
           items:
+            - name: Täydennyksen yleiskatsaus
+              href: ../supply-chain/warehousing/replenishment.md
             - name: Välitön täydennys
               href: ../supply-chain/warehousing/immediate-replenishment.md
             - name: Täydennys ja otto-kanbanit
@@ -4555,8 +5009,9 @@
             - name: Määritä minimi-/maksimitäydennysprosessi
               href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
         - name: Varastointisovelluksen asentaminen ja määrittäminen
-          href: ../supply-chain/warehousing/install-configure-warehousing-app.md
           items:
+            - name: Asentaminen ja määrittäminen – yleiskatsaus
+              href: ../supply-chain/warehousing/install-configure-warehousing-app.md
             - name: Kenttien nimien määrittäminen varastointisovelluksessa
               href: ../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md
             - name: Varastotyön mobiililaitteiden määrittäminen

@@ -5,13 +5,15 @@
 - name: Paikallisten käyttöönottojen järjestelmävaatimukset
   href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json
 - name: Esittelytiedot
-  href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
   items:
+    - name: Esittelytietojen yleiskatsaus
+      href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
     - name: Esittelytietojen luominen tietopakettien avulla
       href: data-entities/generate-demo-data-packages.md
 - name: Kehitä ja mukauta
-  href: dev-tools/developer-home-page.md
   items:
+    - name: Kehitä ja mukauta – aloitussivu
+      href: dev-tools/developer-home-page.md
     - name: Sovelluspino ja palvelinarkkitehtuuri
       href: dev-tools/application-stack-server-architecture.md
     - name: Kokeiluversioiden hankkiminen
@@ -19,8 +21,9 @@
     - name: Kokeiluversioiden tilaaminen
       href: dev-tools/sign-up-preview-subscription.md
     - name: Kehitysympäristöjen käyttöönotto ja käyttö
-      href: dev-tools/access-instances.md
       items:
+        - name: Kehitysympäristöt
+          href: dev-tools/access-instances.md
         - name: Kattavien kehitysympäristöjen määrittäminen
           href: dev-tools/configure-developer-vm.md
         - name: Uusien käyttäjien luominen kehittämiskoneissa
@@ -58,8 +61,9 @@
         - name: Koodieditorin toiminnot
           href: dev-tools/code-editor.md
         - name: Mallien ja tietomallielementtien luominen
-          href: dev-tools/create-data-model-elements.md
           items:
+            - name: Mallien ja tietomallielementtien luominen – yleiskatsaus
+              href: dev-tools/create-data-model-elements.md
             - name: Laajennusten nimeämisohjeet
               href: extensibility/NamingGuidelines.md
             - name: Mallin mukauttamis- ja vanhentumistoiminnon poistaminen käytöstä
@@ -86,8 +90,6 @@
       items:
         - name: X++ ja virheenkorjausominaisuudet
           href: dev-tools/new-x-debugger-features.md
-        - name: X++-virheenkorjaus tuotantotietokantojen kopioiden perusteella
-          href: dev-tools/debug-x-issue-against-copy-of-production.md
         - name: X++-koodin virheenkorjaus
           href: dev-tools/debug-xpp.md
         - name: EventHandlerResult-luokat pyyntö- tai vastausskenaarioissa
@@ -104,7 +106,7 @@
           href: dev-ref/application-explorer-aot-properties.md
         - name: X++-kielen opastus
           items:
-            - name: X++-kielen opastus
+            - name: X++-kielen opastus – yleiskatsaus
               href: dev-ref/xpp-language-reference.md
             - name: Muuttujat ja tietotyypit
               items:
@@ -135,7 +137,19 @@
             - name: X++-operaattoreiden käsittelyjärjestys
               href: dev-ref/xpp-operator-precedence.md
             - name: X++-luokat ja -menetelmät
-              href: dev-ref/xpp-classes-methods.md
+              items:
+                - name: Luokat ja menetelmät
+                  href: dev-ref/xpp-classes-methods.md
+                - name: Periytyminen
+                  href: dev-ref/xpp-inheritance.md
+                - name: Luokan staattiset jäsenet
+                  href: dev-ref/xpp-static-classes.md
+                - name: Käyttöliittymät
+                  href: dev-ref/xpp-interfaces.md
+                - name: Kirjastot
+                  href: dev-ref/xpp-library-objects.md
+                - name: Tapahtumat
+                  href: dev-ref/xpp-events.md
             - name: X++-tietojen valinta ja käsittely
               href: dev-ref/xpp-data-query.md
             - name: Tietojen käyttäminen SysDa-ohjelmointirajapinnan avulla
@@ -149,13 +163,15 @@
             - name: X++-syntaksi
               href: dev-ref/xpp-syntax.md
     - name: 'Ohjelmointirajapinta-, luokka- ja tauluviite'
-      href: dev-ref/api-reference.md
       items:
+        - name: 'Ohjelmointirajapinta-, luokka- ja tauluresurssit'
+          href: dev-ref/api-reference.md
         - name: Käännöksenaikaiset X++-funktiot
           href: dev-ref/xpp-compile-time-functions.md
         - name: Suorituksenaikaiset X++-funktiot
-          href: dev-ref/xpp-run-time-functions.md
           items:
+            - name: Suorituksenaikaiset X++-funktioresurssit
+              href: dev-ref/xpp-run-time-functions.md
             - name: Suorituksenaikaiset X++-liiketoimintafunktiot
               href: dev-ref/xpp-business-run-time-functions.md
             - name: Suorituksenaikaiset X++-säilöfunktiot
@@ -409,8 +425,9 @@
         - name: SysTest-suodatus luokka- ja metodiattribuutteja käyttäen
           href: perf-test/systest-filtering.md
         - name: Hyväksyntätestikirjasto
-          href: perf-test/acceptance-test-library.md
           items:
+            - name: Hyväksyntätestikirjaston resurssit
+              href: perf-test/acceptance-test-library.md
             - name: Siirtymisruudun käsitteet
               href: perf-test/concepts-navigation.md
             - name: Tiedon testausmenetelmät
@@ -438,8 +455,9 @@
     - name: Paikalliset ISV-käyttöoikeudet
       href: dev-tools/isv-licensing-on-prem.md
 - name: Käyttöliittymäkehitys
-  href: user-interface/user-interface-development-home-page.md
   items:
+    - name: Käyttöliittymäkehityksen aloitussivu
+      href: user-interface/user-interface-development-home-page.md
     - name: Oppaat
       items:
         - name: Vuokrauksen maksutyyppilomakkeen muodostaminen
@@ -633,18 +651,21 @@
         - name: Työtilojen ruudun ja luettelon tallentaminen välimuistiin
           href: user-interface/tile-list-caching-workspaces.md
     - name: Tehtävien tallennustoiminto
-      href: user-interface/task-recorder.md
       items:
+        - name: Tehtävän tallennustoiminnon resurssit
+          href: user-interface/task-recorder.md
         - name: Tehtävien tallennustoiminnon pikaopas
           href: user-interface/task-recorder-quick-reference.md
         - name: Dokumentaation tai koulutuksen luominen tehtävätallenteilla
           href: user-interface/task-recorder-training-docs.md
 - name: Mobiiliympäristö
-  href: mobile-apps/platform/mobile-platform-home-page.md
   items:
+    - name: Mobiiliympäristön resurssit
+      href: mobile-apps/platform/mobile-platform-home-page.md
     - name: Aloittaminen
-      href: mobile-apps/platform/mobile-platform-getting-started.md
       items:
+        - name: Mobiiliympäristön käytön aloittaminen
+          href: mobile-apps/platform/mobile-platform-getting-started.md
         - name: Suunnitteluun ja arkkitehtuuriin liittyvää tietoa
           href: mobile-apps/platform/mobile-platform-architecture.md
         - name: Liiketoimintalogiikan tapahtumat
@@ -678,8 +699,9 @@
         - name: Asiakaspuolen suunnittelun ohjelmointirajapinnat
           href: mobile-apps/platform/scenarios/client-api-design-overview.md
         - name: Asiakkaan ohjelmointirajapinnat
-          href: mobile-apps/platform/client-apis/client-apis-reference.md
           items:
+            - name: Asiakasohjelmien ohjelmointirajapintojen aloitussivu
+              href: mobile-apps/platform/client-apis/client-apis-reference.md
             - name: PageState-luettelointi
               href: mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md
             - name: Sovellusmoduuli
@@ -843,11 +865,13 @@
             - name: ValueMetadata-tyyppi
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
 - name: Yleinen tietosuoja-asetus (GDPR)
-  href: gdpr/gdpr-guide.md
   items:
-    - name: GDPR-tietopyyntöihin vastaamisen resurssit
-      href: gdpr/gdpr-home-page.md
+    - name: Yleinen tietosuoja-asetus (GDPR) – yleiskatsaus
+      href: gdpr/gdpr-guide.md
+    - name: GDPR-tietopyyntöihin vastaaminen
       items:
+        - name: GDPR-tietopyyntöihin vastaamisen resurssit
+          href: gdpr/gdpr-home-page.md
         - name: Omaisuuserien luokittelut
           href: gdpr/gdpr-asset-classification-values.md
         - name: Henkilöhakuraportti
@@ -863,8 +887,9 @@
         - name: 'LCS:n GDPR-tietopyynnöt'
           href: gdpr/gdpr-lcs.md
 - name: Jatkuva toimitus
-  href: dev-tools/continuous-delivery-home-page.md
   items:
+    - name: Jatkuvan toimituksen aloitussivu
+      href: dev-tools/continuous-delivery-home-page.md
     - name: Kehityksen ja jatkuvan toimituksen usein kysytyt kysymykset
       href: dev-tools/continuous-delivery-faq.md
     - name: Testipakettien jättäminen pois koonnin tuotoksesta
@@ -873,6 +898,24 @@
       href: dev-tools/manage-runtime-packages.md
     - name: Automatisoidun koontiversion malliversioiden päivittäminen
       href: dev-tools/version-models-build.md
+- name: Regression Suite Automation Tool
+  items:
+    - name: Regression Suite Automation Tool – yleiskatsaus
+      href: perf-test/rsat/rsat-overview.md
+    - name: Asennus ja määrittäminen
+      href: perf-test/rsat/rsat-install-configure.md
+    - name: Testitapauksien suorittaminen
+      href: perf-test/rsat/rsat-run.md
+    - name: Odotettujen arvojen tarkistaminen
+      href: perf-test/rsat/rsat-validate-expected.md
+    - name: Testitapauksien ketjuttaminen
+      href: perf-test/rsat/rsat-chain-test-cases.md
+    - name: Johdetut testitapaukset
+      href: perf-test/rsat/rsat-derived-test-cases.md
+    - name: Parhaat käytännöt
+      href: perf-test/rsat/rsat-best-practices.md
+    - name: Vianmääritys
+      href: perf-test/rsat/rsat-troubleshooting.md
 - name: Ratkaisujen vapauttaminen Lifecycle Services -palvelun avulla
   items:
     - name: Kehittäminen ja vapauttaminen
@@ -892,8 +935,9 @@
     - name: Ratkaisutietokantojen varmuuskopiointi
       href: lcs-solutions/database-backup-lcs-solutions.md
     - name: Lokalisointi- ja säädösominaisuudet
-      href: lcs-solutions/country-region.md
       items:
+        - name: Maailmanlaajuisen käytön resurssit
+          href: lcs-solutions/country-region.md
         - name: Lokalisointiominaisuuksien luokitus
           href: lcs-solutions/classify-localization-features.md
         - name: Maa- tai aluekontekstin ottaminen käyttöön
@@ -907,8 +951,9 @@
         - name: Lakisääteisten ilmoitusten lähettäminen
           href: lcs-solutions/submit-localization-alerts.md
 - name: Taloushallinnon kehitys
-  href: financial/financial-dev-home-page.md
   items:
+    - name: Taloushallinnon kehitys – aloitussivu
+      href: financial/financial-dev-home-page.md
     - name: Taloushallinnon dimensioiden kehys
       items:
         - name: Kirjanpitotilien yhdistelmät
@@ -968,11 +1013,13 @@
     - name: Esittely-ympäristöjen käyttöönotto
       href: deployment/deploy-demo-environment.md
     - name: Pilvikäyttöönotto
-      href: deployment/cloud-deployment-overview.md
       items:
+        - name: Pilvikäyttöönoton yleiskatsaus
+          href: deployment/cloud-deployment-overview.md
         - name: Käyttöönotto itsepalveluna
-          href: deployment/infrastructure-stack.md
           items:
+            - name: Käyttöönotto itsepalveluna – yleiskatsaus
+              href: deployment/infrastructure-stack.md
             - name: Uuden ympäristön käyttöönotto
               href: deployment/deployenvironment-newinfrastructure.md
             - name: Käyttöönotto - usein kysytyt kysymykset
@@ -1000,9 +1047,10 @@
         - name: Retail-tietojen sijainti
           href: deployment/retail-data-residency.md
     - name: Paikallinen käyttöönotto
-      href: deployment/on-premises-deployment-landing-page.md
       items:
-        - name: Paikallinen käyttöönottoasetus
+        - name: Paikallisen käyttöönoton aloitussivu
+          href: deployment/on-premises-deployment-landing-page.md
+        - name: Paikallinen käyttöönotto – yleiskatsaus
           href: deployment/on-premises-overview.md
         - name: Paikallisten käyttöönottojen suunnittelu ja valmistelu
           href: deployment/plan-onprem-deployment.md
@@ -1011,8 +1059,9 @@
         - name: Paikallisten projektien määrittäminen
           href: lifecycle-services/lbd-create-lcs-on-prem-project.md
         - name: Paikallisten ympäristöjen asennus ja käyttöönotto
-          href: deployment/setup-deploy-on-premises-environments.md
           items:
+            - name: Paikallisten ympäristöjen asennus ja käyttöönotto – aloitussivu
+              href: deployment/setup-deploy-on-premises-environments.md
             - name: Paikallisten ympäristöjen käyttöönotto (Platform update 12 ja uudemmat)
               href: deployment/setup-deploy-on-premises-pu12.md
             - name: Paikallisten ympäristöjen käyttöönotto (Platform update 8 ja 11)
@@ -1031,8 +1080,14 @@
           href: deployment/on-premises-diagnostics.md
         - name: Paikallisten ympäristöjen uudelleenasennus
           href: deployment/redeploy-on-prem.md
-        - name: Paikallisen edustajan päivittäminen
-          href: lifecycle-services/update-local-agent.md
+        - name: Paikallinen edustaja
+          items:
+            - name: AD FS Office 365 -yhteensopivuus
+              href: deployment/onprem-adfscompatibility.md
+            - name: Paikallisen edustajan ennen käyttöönottoa ja sen jälkeen suoritettavat komentosarjat
+              href: lifecycle-services/pre-post-scripts.md
+            - name: Paikallisen edustajan päivittäminen
+              href: lifecycle-services/update-local-agent.md
         - name: Ympäristöjen uudelleenmääritys
           href: lifecycle-services/reconfigure-environment.md
         - name: Asiakasohjelman Internet-yhteys
@@ -1052,11 +1107,13 @@
         - name: Paketin käyttöönotto-ongelmien vianmääritys
           href: deployment/deployable-package-troubleshooting.md
 - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset'
-  href: migration-upgrade/upgrade-home-page.md
   items:
-    - name: 'AX 2012:n päivittäminen Finance and Operationsiin'
-      href: migration-upgrade/upgrade-overview-2012.md
+    - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset – resurssit'
+      href: migration-upgrade/upgrade-home-page.md
+    - name: Päivitä AX 2012 -versiosta
       items:
+        - name: 'AX 2012:n päivittäminen Finance and Operationsiin'
+          href: migration-upgrade/upgrade-overview-2012.md
         - name: AX 2012 -versiopäivitys – suunnitteleminen päivityksen analysointityökalun avulla
           href: migration-upgrade/upgrade-analyzer-tool.md
         - name: AX 2012 -päivitys – työmäärän arvioiminen koodin päivityspalvelun avulla
@@ -1095,9 +1152,10 @@
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: Budjettisuunnittelun päivitys
               href: migration-upgrade/upgrade-budget-planning.md
-    - name: "Tietojen siirtäminen\_AX 2009:stä Finance and Operationsiin"
-      href: migration-upgrade/data-migration-tool.md
+    - name: Tietojen siirtäminen AX 2009 -järjestelmästä
       items:
+        - name: "Tietojen siirtäminen\_AX 2009:stä Finance and Operationsiin"
+          href: migration-upgrade/data-migration-tool.md
         - name: "AX 2009 -siirto\_- tietojen siirtotyökalun asennus"
           href: migration-upgrade/install-dmt.md
         - name: "AX 2009 -siirto\_- määritysten luominen"
@@ -1111,8 +1169,9 @@
         - name: "AX 2009 -siirto\_- pakettien tuominen"
           href: migration-upgrade/ax2009-upgrade-import-package.md
     - name: Koodin siirto ja päivitys
-      href: migration-upgrade/code-migration-home-page.md
       items:
+        - name: Koodin siirto ja päivitys – aloitussivu
+          href: migration-upgrade/code-migration-home-page.md
         - name: Koodin siirron valmistelu
           href: migration-upgrade/prepare-migration.md
         - name: Azure DevOps -vastaavuuden määrittäminen
@@ -1135,8 +1194,6 @@
           href: migration-upgrade/versions-update-policy.md
         - name: Uusimman Platform update -päivityksen käyttöönotto ympäristöissä
           href: migration-upgrade/upgrade-latest-platform-update.md
-        - name: Dynamics AX -ympäristön päivittäminen elokuun 2016 julkaisuun
-          href: migration-upgrade/update-platform-each-release.md
         - name: Tietojen päivittäminen kehitys- tai esittely-ympäristössä
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Kehitystyökalujen päivittäminen
@@ -1172,8 +1229,9 @@
         - name: Vanhentuneet ohjelmointirajapinnat (kesäkuu 2017)
           href: migration-upgrade/deprecated-apis.md
 - name: Järjestelmän hallinta
-  href: sysadmin/system-administration-home-page.md
   items:
+    - name: Järjestelmänhallinnan aloitussivu
+      href: sysadmin/system-administration-home-page.md
     - name: Linkkien lisääminen yrityksen juridisiin ehtoihin ja tietosuojatietoihin
       href: sysadmin/legal-terms-privacy-statement.md
     - name: Käyttöoikeuskoodien ja määritysavainten raportti
@@ -1186,13 +1244,14 @@
       href: sysadmin/pre-configured-system-accounts.md
     - name: 'Vie B2B-käyttäjät Azure AD:hen'
       href: sysadmin/implement-b2b.md
-    - name: Käyttämättömän istunnon aikakatkaisun määrittäminen
-      href: sysadmin/session-idle-timeout.md
-    - name: Rooliperustainen suojaus
-      href: sysadmin/role-based-security.md
+    - name: Suojaus
       items:
+        - name: Rooliperustainen suojaus
+          href: sysadmin/role-based-security.md
         - name: Suojausarkkitehtuuri
           href: sysadmin/security-architecture.md
+        - name: Käyttämättömän istunnon aikakatkaisun määrittäminen
+          href: sysadmin/session-idle-timeout.md
         - name: Valmiit suojausraportit
           href: sysadmin/security-reports.md
         - name: Uusien käyttäjien luominen
@@ -1206,8 +1265,9 @@
         - name: Käyttäjien liittäminen käyttöoikeusrooleihin
           href: sysadmin/tasks/assign-users-security-roles.md
     - name: Eräkäsittely
-      href: sysadmin/batch-processing-overview.md
       items:
+        - name: Eräkäsittelyn yleiskatsaus
+          href: sysadmin/batch-processing-overview.md
         - name: Eräkäsittely ja eräpalvelimet
           href: sysadmin/batch-server-overview.md
         - name: Erätöiden luominen
@@ -1229,8 +1289,9 @@
         - name: Erätyön suorituksen keskeytys
           href: sysadmin/batch-abort.md
     - name: Optimointiavustaja
-      href: sysadmin/optimization-advisor-overview.md
       items:
+        - name: Optimointiavustajan yleiskuvaus
+          href: sysadmin/optimization-advisor-overview.md
         - name: Optimointiavustajan sääntöjen luominen
           href: sysadmin/create-rules-optimization-advisor.md
     - name: Raportoi tuotantokatkos
@@ -1238,8 +1299,9 @@
 - name: Lifecycle Services
   items:
     - name: Lifecycle Services -resurssit
-      href: lifecycle-services/lcs.md
       items:
+        - name: Lifecycle Services -resurssit
+          href: lifecycle-services/lcs.md
         - name: Asiakkaiden LCS
           href: lifecycle-services/lcs-works-lcs.md
         - name: Kumppanien LCS
@@ -1257,8 +1319,9 @@
     - name: Ongelmahaku
       href: lifecycle-services/issue-search-lcs.md
     - name: Määritystenhallinta
-      href: lifecycle-services/configuration-manager-lcs.md
       items:
+        - name: Määritystenhallinnan yleiskatsaus
+          href: lifecycle-services/configuration-manager-lcs.md
         - name: Määritystenhallinnan määrittäminen
           href: lifecycle-services/set-up-configuration-manager-lcs.md
     - name: Koodin päivityspalvelun määrittäminen
@@ -1298,8 +1361,9 @@
     - name: Kyselyohjeita
       href: lifecycle-services/querycookbook.md
     - name: Microsoft Dynamics 365 Translation Service
-      href: lifecycle-services/translation-service-overview.md
       items:
+        - name: Dynamics 365 Translation Servicen yleiskatsaus
+          href: lifecycle-services/translation-service-overview.md
         - name: Käyttöliittymätiedostojen kääntäminen
           href: lifecycle-services/use-translation-service.md
         - name: Dokumentointitiedostojen kääntäminen

@@ -8,6 +8,14 @@
         - name: Talentin uudet ja muuttuneet ominaisuudet
           href: whats-new.md
           items:
+            - name: 22. elokuuta 2019
+              href: whats-new-talent-august-21-2019.md
+            - name: 13. elokuuta 2019
+              href: whats-new-talent-august-15-2019.md
+            - name: 6. elokuuta 2019
+              href: whats-new-talent-august-7-2019.md
+            - name: 30. heinäkuuta 2019
+              href: whats-new-talent-july-31-2019.md
             - name: 23. heinäkuuta 2019
               href: whats-new-talent-july-24-2019.md
             - name: 16. heinäkuuta 2019
@@ -24,16 +32,16 @@
               href: whats-new-talent-june-11-2019.md
             - name: 4. kesäkuuta 2019
               href: whats-new-talent-june-4-2019.md
-            - name: 28. toukokuuta 2019
-              href: whats-new-talent-may-28-2019.md
-            - name: 21. toukokuuta 2019
-              href: whats-new-talent-may-21-2019.md
-            - name: 13. toukokuuta 2019
-              href: whats-new-talent-may-13-2019.md
-            - name: 6. toukokuuta 2019
-              href: whats-new-talent-may-6-2019.md
             - name: Uutuudet-arkisto 2019
               items:
+                - name: 28. toukokuuta 2019
+                  href: whats-new-talent-may-28-2019.md
+                - name: 21. toukokuuta 2019
+                  href: whats-new-talent-may-21-2019.md
+                - name: 13. toukokuuta 2019
+                  href: whats-new-talent-may-13-2019.md
+                - name: 6. toukokuuta 2019
+                  href: whats-new-talent-may-6-2019.md
                 - name: 30. huhtikuuta 2019
                   href: whats-new-talent-april-30-2019.md
                 - name: 25. huhtikuuta 2019
@@ -204,6 +212,8 @@
               href: departments-jobs-positions.md
             - name: Työn komponenttien määrittäminen
               href: create-job.md
+            - name: Yksinkertaistettu työntekijöiden lisääminen ja navigointi
+              href: streamlined-employee-entry.md
             - name: Osastojen luominen ja sisällyttäminen osastohierarkiaan
               href: create-department-add-department-hierarchy.md
             - name: Yritysten välisten henkilöstöhallinnon parametrien määrittäminen
