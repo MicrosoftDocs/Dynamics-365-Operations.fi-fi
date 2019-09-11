@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a3c635c32a53226da6ce72db86ee7d9d0c17bdb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 964302cb7e7835b6e619602ac7165c9e7adbcefb
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847084"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916753"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Nimikkeen uudelleenkohdistussääntöjen määrittäminen lyhyttä keräilyä varten
 
@@ -32,25 +32,20 @@ Tässä menettelyssä kuvataan, miten varastotyöntekijöille annetaan mahdollis
 
 
 ## <a name="set-up-work-exceptions"></a>Määritä työn poikkeukset
-1. Siirry kohtaan Varastonhallinta > Asetukset > Työ > Työn poikkeukset.
-2. Valitse Uusi.
-    * On mahdollista määrittää useita työn poikkeuksia, joilla on eri nimikkeen uudelleenkohdistuskäytännöt, joista varaston työntekijä voi valita käsittelyssä olevan lähetyksen tarpeisiin sopivan.  
-3. Kirjoita Työn poikkeuskoodi -kenttään arvo.
-    * Anna työn poikkeukselle nimi, joka ilmaisee, mitä varten se on. Esimerkiksi, Lyhyt keräily käsin.  
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Valitse Poikkeustyyppi-kenttään "Lyhyt keräily".
-6. Valitse Varaston oikaiseminen -valintaruutu.
-    * Tämä vaihtoehto tarkoittaa, että varaston arvoksi asetetaan automaattisesti 0 lyhyen keräilyn sijainnissa.  
-7. Syötä tai valitse arvo Oikaisutyypin oletuskoodi -kentässä.
-    * Esimerkiksi USMF-yrityksessä voit valita "Poista Res Adj Out".  
-8. Valitse Nimikkeen uudelleenkohdistus -kentässä Manuaalinen.
-    * Jos valitset asetukseksi Manuaalinen tai Automaattinen ja manuaalinen, varastotyöntekijän on voitava käyttää manuaalista uudelleenkohdistusta.  
+1. Siirry **siirtymisruudussa** kohtaan **Varastonhallinta > Asetukset > Työ-> Työn poikkeukset**.
+2. Valitse **Uusi**. On mahdollista määrittää useita työn poikkeuksia, joilla on eri nimikkeen uudelleenkohdistuskäytännöt, joista varaston työntekijä voi valita käsittelyssä olevan lähetyksen tarpeisiin sopivan.  
+3. Kirjoita **Työn poikkeuskoodi** -kenttään arvo. Anna työn poikkeukselle nimi, joka ilmaisee, mitä varten se on. Esimerkiksi, Lyhyt keräily käsin.  
+4. Kirjoita **Kuvaus**-kenttään arvo.
+5. Valitse **Poikkeustyyppi**-kenttään "Lyhyt keräily".
+6. Valitse **Varaston oikaiseminen** -valintaruutu. Tämä vaihtoehto tarkoittaa, että varaston arvoksi asetetaan automaattisesti 0 lyhyen keräilyn sijainnissa.  
+7. Syötä tai valitse arvo **Oikaisutyypin oletuskoodi** -kentässä. Esimerkiksi USMF-yrityksessä voit valita "Poista Res Adj Out".  
+8. Valitse **Nimikkeen uudelleenkohdistus** -kentässä Manuaalinen. Jos valitset asetukseksi Manuaalinen tai Automaattinen ja manuaalinen, varastotyöntekijän on voitava käyttää manuaalista uudelleenkohdistusta.  
 
 ## <a name="set-up-a-worker-to-use-manual-item-reallocation"></a>Määritä manuaalinen nimikkeiden uudelleenkohdistus työntekijän käyttöön
 1. Sulje sivu.
-2. Siirry kohtaan Varastonhallinta > Asetukset > Työntekijä.
-3. Valitse Muokkaa.
+2. Siirry **siirtymisruudussa** kohtaan **Varastonhallinta > Asetukset > Työntekijä**.
+3. Valitse **Muokkaa**.
 4. Valitse luettelosta työntekijä 24.
-5. Laajenna Työ-osa.
-6. Valitse Salli manuaalinen nimikkeen uudelleenkohdistus -kentässä Kyllä.
+5. Laajenna **Työ**-pikavälilehti.
+6. Valitse **Salli manuaalinen nimikkeen uudelleenkohdistus** -kentässä Kyllä.
 

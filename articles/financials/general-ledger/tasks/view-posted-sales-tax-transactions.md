@@ -1,9 +1,9 @@
 ---
 title: Näytä kirjatut arvonlisäverotapahtumat
-description: Voit tarkastella haluamiasi kirjattuja arvonlisäverotapahtumia eri sivuilta.
+description: Tässä ohjeaiheessa kuvataan kirjattujen arvonlisäverotapahtumien joitakin tarkastelutapoja.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,36 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c5668c1cd4325f557d83a2291c8139f65c4d170e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5a2ff8b46d20fa012cbce817ae4e95b4799149ec
+ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846196"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "1870865"
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Näytä kirjatut arvonlisäverotapahtumat
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Voit tarkastella haluamiasi kirjattuja arvonlisäverotapahtumia eri sivuilta. Tässä tehtävässä käytetään esittely-yritystä USMF.
+Tässä ohjeaiheessa kuvataan kirjattujen arvonlisäverotapahtumien joitakin tarkastelutapoja. Voit tarkastella haluamiasi kirjattuja arvonlisäverotapahtumia eri sivuilta. Tässä tehtävässä käytetään esittely-yritystä USMF.
 
-1. Valitse Vero > Kyselyt ja raportit > Arvonlisäverokyselyt > Kirjattu arvonlisävero.
-2. Valitse Näytä suodattimet.
+# <a name="posted-sales-tax-page"></a>Kirjattu arvonlisävero -sivu
+
+1. Siirry kohtaan **Siirtymisruutu > Moduulit > Vero > Kyselyt ja raportit > Arvonlisäverokyselyt > Kirjattu arvonlisävero**.
+2. Rajaa näkymä tiettyihin tapahtumiin valitsemalla **Näytä suodattimet**.
 3. Sulje sivu.
-4. Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäveron tilityskaudet.
-5. Laajenna Kausivälit-osa.
-6. Valitse haluamasi väli.
-7. Näytä valitun tilityskausivälin kirjatut arvonlisäverotapahtumat.
-8. Voit suodattaa kirjattujen arvonlisäverotapahtumien luetteloa tarkemmin.
-9. Sulje sivu.
-10. Siirry kohtaan Vero > Välilliset verot > Arvonlisävero > Arvonlisäverokoodit.
-11. Valitse toimintoruudussa Arvonlisäverokoodi.
-12. Valitse Kirjattu arvonlisävero.
+
+# <a name="sales-tax-settlement-periods-page"></a>Arvonlisäveron tilityskaudet -sivu
+
+1. Siirry kohtaan **Siirtymisruutu > Moduulit > Vero > Välilliset verot > Arvonlisävero > Arvonlisäveron tilityskaudet**.
+2. Laajenna **Kausivälit**-osa.
+3. Valitse haluamasi väli.
+4. Voit suodattaa kirjattujen arvonlisäverotapahtumien luetteloa tarkemmin.
+5. Sulje sivu.
+
+# <a name="sales-tax-codes-page"></a>Arvonlisäverokoodit-sivu
+
+1. Siirry kohtaan **Siirtymisruutu > Moduulit > Vero > Välilliset verot > Arvonlisävero > Arvonlisäverokoodit**.
+2. Valitse toimintoruudussa **Arvonlisäverokoodi**.
+3. Valitse **Kirjattu arvonlisävero**.
 

@@ -1,9 +1,9 @@
 ---
-title: Avaintiedot ostoreskontrajärjestelmään hyväksymiskirjauskansiota käyttämällä
-description: Tässä ohjauksessa opastetaan luomaan laskuja laskurekisterin avulla ja käyttämään hyväksymiskirjauskansiota kulutilien päivittämisessä.
+title: Laskun keskeiset tiedot ostoreskontraan hyväksymiskirjauskansion avulla
+description: Tässä ohjeaiheessa kerrotaan, miten luodaan laskuja laskurekisterin avulla ja käytetään hyväksymiskirjauskansiota kulutilien päivittämisessä.
 author: abruer
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,50 +16,41 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0faece510cc85fd86113d8b62d54b71f3014b1db
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: fb690769a33f88e63ab8f54cec69a5e927fd324c
+ms.sourcegitcommit: 6545bef4584d72dd7789f2d3935cf00ac8f489b0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837034"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871002"
 ---
-# <a name="key-invoice-data-into-ap-system-using-approval-journal"></a>Avaintiedot ostoreskontrajärjestelmään hyväksymiskirjauskansiota käyttämällä
+# <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a>Laskun keskeiset tiedot ostoreskontraan hyväksymiskirjauskansion avulla
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä ohjauksessa opastetaan luomaan laskuja laskurekisterin avulla ja käyttämään hyväksymiskirjauskansiota kulutilien päivittämisessä.
-
+Tässä ohjeaiheessa kerrotaan, miten luodaan laskuja laskurekisterin avulla ja käytetään hyväksymiskirjauskansiota kulutilien päivittämisessä.
 
 ## <a name="create-and-post-and-invoice"></a>Luominen, kirjaaminen ja laskuttaminen
-1. Siirry kohtaan Ostoreskontra > Laskut > Laskurekisteri.
-2. Valitse Uusi.
+1. Siirry siirtymisruudussa kohtaan **Moduulit > Ostoreskontra > Laskut > Laskurekisteri**.
+2. Valitse **Uusi**.
 3. Valitse sen laskurekisterin nimi, jota haluat käyttää.
-4. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-5. Valitse Rivit, kun haluat avata rekisterin ja syöttää kulurivejä.
-6. Valitse toimittaja. Voit esimerkiksi syöttää tai valita arvoksi US-104
-7. Kirjoita Lasku-kenttään arvo.
-8. Kirjoita Kuvaus-kenttään arvo.
-9. Syötä Kredit-kenttään numero.
-10. Avaa haku valitsemalla Hyväksynyt-kentässä avattavan valikon painike.
-11. Korosta hyväksyjä ja valitse hyväksyjä valitsemalla Valitse.
-12. Valitse Kirjaa.
-13. Sulje sivu.
-14. Sulje sivu.
+4. Valitse **Rivit**, kun haluat avata rekisterin ja syöttää kulurivejä.
+5. Valitse toimittaja. Voit esimerkiksi syöttää tai valita arvoksi `US-104`.
+6. Kirjoita **Lasku**-kenttään arvo.
+7. Kirjoita **Kuvaus**-kenttään arvo.
+8. Syötä **Kredit**-kenttään numero.
+9. Valitse **Hyväksynyt**-kentästä hyväksyjä avattavasta valikosta.
+10. Valitse **Kirjaa**.
 
 ## <a name="approve-an-invoice"></a>Laskun hyväksyminen
-1. Siirry kohtaan Ostoreskontra > Laskut > Laskun hyväksyntä.
-2. Valitse Uusi.
+1. Siirry siirtymisruudussa kohtaan **Moduulit > Ostoreskontra > Laskut > Laskun hyväksyntä**.
+2. Valitse **Uusi**.
 3. Valitse sen laskun hyväksymiskirjauskansion nimi, jota haluat käyttää.
-4. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-5. Valitse sivulla näytettävät rivit. Sivulla voit valita hyväksyttäviä laskuja.
-6. Valitse Etsi tositteet, kun haluat näyttää kaikki laskut, jotka ovat valmiita hyväksyttäväksi.
-7. Merkitse luomasi lasku.
-8. Klikkaa Valitse.
-    * Yllä valitut tositteet siirretään tähän luetteloon sen jälkeen, kun tositteet on valittu.  
-9. Valitse OK.
-10. Valitse Tilinumero-kenttä, kun haluat lisätä laskuun kulutilin.
-11. Syötä tilinumero ja siirry pois kentästä sarkainnäppäimellä. Syötä arvoksi esimerkiksi 600120.
-12. Valitse Kirjaa.
-13. Valitse Tosite, kun haluat tarkastella kirjattuja syöttöjä.
-    * Hyväksyntää odottavien laskujen tili peruutetaan ja korvataan toteutuneella kulutilillä.  
+4. Valitse sivulla näytettävät **Rivit**. Sivulla voit valita hyväksyttäviä laskuja.
+5. Valitse **Etsi tositteet**, kun haluat näyttää kaikki laskut, jotka ovat valmiita hyväksyttäväksi.
+6. Merkitse luomasi lasku ja valitse sitten **Valitse.** Yllä valitut tositteet siirretään tähän luetteloon sen jälkeen, kun tositteet on valittu.  
+7. Valitse **OK**.
+8. Valitse **Tilinumero**-kenttä, kun haluat lisätä laskuun kulutilin.
+9. Syötä tilinumero ja siirry pois kentästä sarkainnäppäimellä. Syötä arvoksi esimerkiksi `600120`.
+10. Valitse **Kirjaa**.
+11. Valitse **Tosite**, kun haluat tarkastella kirjattuja syöttöjä. Hyväksyntää odottavien laskujen tili peruutetaan ja korvataan toteutuneella kulutilillä.  
 

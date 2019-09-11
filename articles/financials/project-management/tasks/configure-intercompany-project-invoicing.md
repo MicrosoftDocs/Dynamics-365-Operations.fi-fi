@@ -1,9 +1,9 @@
 ---
 title: Konsernin sisäisen projektilaskutuksen määrittäminen
-description: Tämä menettely osoittaa, miten projektin laskutus määritetään kahden organisaation yrityksen välillä.
+description: Tässä ohjeessa kerrotaan, miten projektin laskutus määritetään kahden organisaation yrityksen välillä.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,54 +17,50 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 53871db9223eef6ba78f2e327e60f45110891478
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c89b17c09a4f145b5a4ca9cdd127b4e635447d4b
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838268"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867316"
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Konsernin sisäisen projektilaskutuksen määrittäminen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tämä menettely osoittaa, miten projektin laskutus määritetään kahden organisaation yrityksen välillä. Tässä tehtävässä käytetään USSI-tietojoukkoa.
+Tässä ohjeessa kerrotaan, miten projektin laskutus määritetään kahden organisaation yrityksen välillä. Tässä tehtävässä käytetään USSI-tietojoukkoa.
 
-1. Siirry kohtaan Ostoreskontra > Toimittajat > Kaikki toimittajat.
-2. Etsi haluamasi tietue luettelosta ja valitse se.
-3. Valitse toimintoruudussa Yleiset.
-4. Valitse Konsernin sisäinen.
-5. Ota konsernin sisäinen kauppa käyttöön valitsemalla Aktiivinen-asetukseksi Kyllä.
-6. Anna tai valitse arvo Asiakasyritys-kentässä.
-7. Anna tai valitse arvo Oma tili -kentässä.
-8. Valitse Tallenna.
-9. Sulje sivu.
-10. Sulje sivu.
-11. Valitse Projektinhallinta ja kirjanpito > Asetukset > Projektinhallinnan ja kirjanpidon parametrit.
-12. Valitse Konsernin sisäinen -välilehti.
-13. Ota konsernin sisäinen resurssien ajoitus ja aikaraportit käyttöön siirtämällä liukusäädin Kyllä-kohtaan.
-14. Merkitse valittu rivi luettelossa.
-15. Valitse Uusi.
-16. Merkitse valittu rivi luettelossa.
-17. Anna tai valitse arvo Lainaava yritys -kentässä.
-18. Valitse Jaksota tuotot -valintaruutu.
-19. Anna tai valitse arvo Oletusaikaraporttiluokka-kentässä.
-20. Anna tai valitse arvo Oletuskululuokka-kentässä.
-21. Valitse Tallenna.
-22. Sulje sivu.
-23. Valitse Projektinhallinta ja kirjanpito > Asetukset > Kirjaus > Kirjanpidon asetukset.
-24. Valitse Kirjanpitotilityypit-kentässä vaihtoehto.
-25. Valitse Uusi.
-26. Merkitse valittu rivi luettelossa.
-27. Merkitse valittu rivi luettelossa.
-28. Määritä Päätili-kenttään haluamasi arvot.
-29. Valitse Tallenna.
-30. Sulje sivu.
-31. Valitse Projektinhallinta ja kirjanpito > Asetukset > Hinnat > Siirtohinta.
-32. Valitse Uusi.
-33. Syötä päivämäärä Voimaantulopäivä-kenttään.
-34. Anna tai valitse arvo Lainaava yritys -kentässä.
-35. Valitse Siirtohintamalli-kentässä vaihtoehto.
-36. Anna Hinnoittelu-kentässä luku.
-37. Valitse Tallenna.
+1. Siirry siirtymisruudussa kohtaan **Moduulit > Ostoreskontra > Toimittajat > Kaikki toimittajat**.
+2. Etsi haluamasi tietue **Kaikki toimittajat** -luettelosta ja valitse se.
+3. Valitse toimintoruudussa **Yleiset**.
+4. Valitse **Konsernin sisäinen**.
+5. Ota konsernin sisäinen kauppa käyttöön valitsemalla **Aktiivinen**-asetukseksi **Kyllä**.
+6. Anna tai valitse arvo **Asiakasyritys**-kentässä.
+7. Anna tai valitse arvo **Oma tili** -kentässä.
+8. Valitse **Tallenna**.
+9. Palaa kotisivulle sulkemalla sivut.
+10. Valitse siirtymisruudussa **Moduulit > Projektinhallinta ja kirjanpito > Asetukset > Projektinhallinnan ja kirjanpidon parametrit**.
+11. Valitse **Konsernin sisäinen**-välilehti.
+12. Ota konsernin sisäinen resurssien ajoitus ja aikaraportit käyttöön siirtämällä liukusäädin **Kyllä**-kohtaan.
+13. Merkitse valittu rivi luettelossa.
+14. Valitse **Uusi**.
+15. Anna tai valitse arvo **Lainaava yritys** -kentässä.
+16. Valitse **Jaksota tuotot** -valintaruutu.
+17. Anna tai valitse arvo **Oletusaikaraporttiluokka**-kentässä.
+18. Anna tai valitse arvo **Oletuskululuokka**-kentässä.
+19. Valitse **Tallenna**.
+20. Sulje sivu.
+21. Siirry siirtymisruudussa kohtaan **Moduulit > Projektinhallinta ja kirjanpito > Asetukset > Kirjaus > Kirjanpidon asetukset.**
+22. Valitse **Kirjanpitotilityypit**-kentässä vaihtoehto.
+23. Valitse **Uusi**.
+24. Määritä uuden rivin **Päätili**-kenttään haluamasi arvot.
+25. Valitse **Tallenna**.
+26. Sulje sivu.
+27. Siirry siirtymisruudussa kohtaan **Moduulit > Projektinhallinta ja kirjanpito > Asetukset > Hinnat > Siirtohinta.**
+28. Valitse **Uusi**.
+29. Syötä päivämäärä **Voimaantulopäivä**-kenttään.
+30. Anna tai valitse arvo **Lainaava yritys** -kentässä.
+31. Valitse **Siirtohintamalli**-kentässä vaihtoehto.
+32. Anna **Hinnoittelu**-kentässä luku.
+33. Valitse **Tallenna**.
 

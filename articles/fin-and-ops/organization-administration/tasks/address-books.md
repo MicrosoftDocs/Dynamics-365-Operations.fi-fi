@@ -3,7 +3,7 @@ title: Konfiguroi osoitekirjat
 description: Voit määrittää tällä menettelyllä ja valinnoilla, jotka teit aiheessa Yleisen osoitekirjan ja lisäosoitekirjan määritysten suunnitteleminen, organisaatiolle lisää osoitekirjoja.
 author: kfend
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ae7d30cbc5836c47b4a68e27a7af05bd82956f70
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: f8ffba13b4a025f39b7ca26206b93a4bb646bac5
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1851892"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916680"
 ---
 # <a name="configure-address-books"></a>Konfiguroi osoitekirjat
 
@@ -32,13 +32,13 @@ Voit määrittää tällä menettelyllä ja valinnoilla, jotka teit aiheessa Yle
 Tämän tehtävän luomisessa käytetty esittely-yritys on USMF. Tämä tallenne on tarkoitettu suunnittelu- ja määritysryhmän jäsenille.
 
 
-## <a name="configure-address-books"></a>Konfiguroi osoitekirjat
-1. Valitse Organisaation hallinto > Yleinen osoitekirja > Osoitekirjat.
-2. Valitse Uusi.
-3. Kirjoita arvo Nimi-kenttään.
-4. Kirjoita arvo Kuvaus-kenttään.
-5. Valitse Tallenna.
+## <a name="configure-address-books"></a>Osoitekirjojen määrittäminen
+1. Valitse **siirtymisruudussa** **Moduulit > Organisaation hallinto > Yleinen osoitekirja > Osoitekirjat**.
+2. Valitse **Uusi**.
+3. Kirjoita arvo **Nimi**-kenttään.
+4. Kirjoita **Kuvaus**-kenttään arvo.
+5. Valitse **Tallenna**.
 6. Etsi haluamasi tietue luettelosta ja valitse se.
 7. Lisää valitut käytettävissä olevat ryhmät osoitekirjaan nuolta napsauttamalla.
-8. Valitse Tallenna.
+8. Valitse **Tallenna**.
 

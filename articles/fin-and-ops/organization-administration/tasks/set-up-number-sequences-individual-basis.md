@@ -3,7 +3,7 @@ title: Yksittäisten numerosarjojen määrittäminen
 description: Tässä ohjeaiheessa selitetään, miten numerosarjat määritetään yksittäin.
 author: sericks007
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58e69b680c006c814e9408135b6947161ad7c4f3
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738878"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886597"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Yksittäisten numerosarjojen määrittäminen
 
@@ -33,7 +33,7 @@ Tässä ohjeaiheessa selitetään, miten numerosarjat määritetään yksittäin
 2. Valitse **Numerosarja**.
 3. Kirjoita arvo **Numerosarjan koodi** -kenttään.
 4. Kirjoita arvo **Nimi**-kenttään.
-5. Valitse **Laajuuden parametrit** -pikavälilehdellä numerosarjan alue ja valitse alueen arvot avattavasta luettelosta. Laajuus määrittää mitkä organisaatiot käyttävät numerosarjaa. Lisäksi numerosarjoilla joiden alue on muu kuin **Jaettu** voi olla osia, jotka vastaavat niiden aluetta. Esimerkiksi numerosarja, jonka vaikutusalue on **Oikeushenkilö**, voi sisältää yrityssegmentin. Lisätietoja laajuuksista on [Numerosarjan esittely](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/fin-and-ops/organization-administration/number-sequence-overview.md) -kohdan ohjeaiheessa.  
+5. Valitse **Laajuuden parametrit** -pikavälilehdellä numerosarjan alue ja valitse alueen arvot avattavasta luettelosta. Laajuus määrittää mitkä organisaatiot käyttävät numerosarjaa. Lisäksi numerosarjoilla joiden alue on muu kuin **Jaettu** voi olla osia, jotka vastaavat niiden aluetta. Esimerkiksi numerosarja, jonka vaikutusalue on **Oikeushenkilö**, voi sisältää yrityssegmentin. Lisätietoja laajuuksista on [Numerosarjan esittely](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview) -kohdan ohjeaiheessa. 
 6. Laajenna **Segmentit**-osa.
     - Määritä numerosarjalle muoto lisäämällä, poistamalla ja uudelleenjärjestelemällä segmenttejä.  
     - Kaikkien alueiden numerosarjat voivat sisältää *kiinteitä segmenttejä* ja *aakkosnumeerisia segmenttejä*. Kiinteät segmentit sisältävät sarjan aakkosnumeerisia merkkejä, jotka eivät muutu. Tämän segmenttityypin avulla voit lisätä väliviivan tai muun erottimen numerosarjasegmenttien välille. Aakkosnumeeriset segmentit sisältävät yhdistelmän ristikkomerkkejä (#) ja et-merkkejä (&). Nämä merkit vastaavat kirjaimia ja numeroita, jotka kasvavat aina, kun sarjan numeroa käytetään. Käyttää ristikkomerkkiä (#) osoittamaan kasvavia numeroita ja et-merkkiä (&) osoittamaan kasvavia kirjaimia. Esimerkiksi muodon `#####_2014` avulla luodaan sarja `00001_2014`, `00002_2014` jne. Käytössä on oltava vähintään yksi aakkosnumeerinen segmentti. Alueen osat, kuten yritys tai oikeushenkilö, eivät ole pakollisia. Vaikka et sisällytä alueen segmenttejä muotoon, valitun viitteen numerot luodaan edelleen aluekohtaisesti.  

@@ -1,9 +1,9 @@
 ---
-title: Ostotilauksen nimikkeiden vastaanotto nimiketarpeen perusteella
-description: Tässä menettelyssä osoitetaan, miten ostotilauksen nimikkeet vastaanotetaan nimiketarpeesta.
+title: Ostotilauksen nimikkeiden vastaanottaminen nimiketarpeen perusteella
+description: Tässä aiheessa kerrotaan, miten ostotilauksen nimikkeet vastaanotetaan nimiketarpeesta.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,45 +16,43 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fee2c965b0c065f00564b849ec93504336fb3f60
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7afdae65c5ae7e3196c6b9f142dd87aec39b5ea3
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838244"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867292"
 ---
-# <a name="receive-items-on-purchase-order-from-item-requirement"></a>Ostotilauksen nimikkeiden vastaanotto nimiketarpeen perusteella
+# <a name="receive-items-on-purchase-order-from-item-requirement"></a>Ostotilauksen nimikkeiden vastaanottaminen nimiketarpeen perusteella
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä menettelyssä osoitetaan, miten ostotilauksen nimikkeet vastaanotetaan nimiketarpeesta.
+Tässä aiheessa kerrotaan, miten ostotilauksen nimikkeet vastaanotetaan nimiketarpeesta.
 
 Kun käytät nimiketarvetta nimiketapahtuman sijaan, voit suunnitella toimituksen niin, että se tapahtuu juuri ennen nimikkeen käyttöä, luoda ostotilauksen, sisällyttää nimikkeen kauppasopimukseen ja sisällyttää nimiketarpeen tuotannonsuunnitteluun. 
 
 Tässä tehtävässä käytetään USSI-tietojoukkoa.
 
-1. Valitse Projektinhallinta ja kirjanpito > Projektit > Kaikki projektit.
-2. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-3. Valitse toimintoruudussa Suunnitelma.
-4. Valitse Nimiketarpeet.
-5. Valitse Uusi.
-6. Merkitse valittu rivi luettelossa.
-7. Syötä tai valitse arvo Nimiketunnus-kentässä.
-8. Kirjoita numero Määrä-kenttään.
-9. Valitse Tallenna.
-10. Valitse toimintoruudussa Hallitse.
-11. Valitse Toiminnot.
-12. Valitse Luo ostotilaus.
-13. Valitse Sisällytä-valintaruutu.
-14. Anna tai valitse arvo Toimittajatili-kentässä.
-15. Valitse OK.
-16. Valitse Ostoreskontra > Ostotilaukset > Kaikki ostotilaukset.
-17. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-18. Valitse toimintoruudussa Osta.
-19. Valitse Vahvista.
-20. Valitse toimintoruudussa Vastaanota.
-21. Valitse Tuotteen vastaanotto.
-22. Merkitse valittu rivi luettelossa.
-23. Kirjoita arvo Tuotteen vastaanotto -kenttään.
-24. Valitse OK.
+1. Siirry siirtymisruudussa kohtaan **Moduulit > Projektinhallinta ja kirjanpito > Projektit > Kaikki projektit**.
+2. Valitse luettelossa valitulla rivillä oleva linkki.
+3. Valitse toimintoruudussa **Suunnitelma**.
+4. Valitse **Nimiketarpeet**.
+5. Valitse **Uusi**.
+6. Syötä tai valitse arvo uuden rivin **Nimiketunnus**-kentässä.
+7. Anna **Määrä**-kentässä numero.
+8. Valitse **Tallenna**.
+9. Valitse toimintoruudussa **Hallinta**.
+10. Valitse **Toiminnot**.
+11. Valitse **Luo ostotilaus**.
+12. Valitse **Sisällytä kaikki** -valintaruutu.
+13. Anna tai valitse arvo **Toimittajatili**-kentässä.
+14. Valitse **OK**.
+15. Siirry siirtymisruudussa kohtaan **Moduulit > Ostoreskontra > Ostotilaukset > Kaikki ostotilaukset**.
+16. Valitse luettelossa valitulla rivillä oleva linkki.
+17. Valitse toimintoruudussa **Osto**.
+18. Valitse **Vahvista**.
+19. Valitse toimintoruudussa **Vastaanota**.
+20. Valitse **Tuotteen vastaanotto**.
+21. Kirjoita arvo **Tuotteen vastaanotto** -kenttään.
+22. Valitse **OK**.
 

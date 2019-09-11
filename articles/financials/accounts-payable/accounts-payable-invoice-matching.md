@@ -1,9 +1,9 @@
 ---
-title: Ostoreskontran laskujen täsmäytys
+title: Ostoreskontran laskujen täsmäytys – yleiskatsaus
 description: Ostoreskontran laskujen täsmäytys on prosessi, jossa täsmäytetään toimittajan laskun, ostotilauksen ja tuotteen vastaanoton tiedot.
 author: abruer
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe464c714620590d77a0a5b2c2aeadb29381bf60
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: b45c6f20bf5b6fb02379f71b5806c6c147789e73
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837491"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865061"
 ---
-# <a name="accounts-payable-invoice-matching"></a>Ostoreskontran laskujen täsmäytys
+# <a name="accounts-payable-invoice-matching-overview"></a>Ostoreskontran laskujen täsmäytys – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
@@ -166,10 +166,10 @@ Samaa rivisummaa verrataan Laskusummien täsmäytyksen tiedot -sivulla kuin kaks
 Yrityksen kolmisuuntaista vastaavuutta ohjataan Ostoreskontran parametrit -sivun Rivien vastaavuuskäytäntö -kentällä. Voit valita Salli vastaavuuskäytännön ohitus -kentässä tehdyn valinnan perusteella tietyn toimittajan, nimikkeen tai nimikkeen ja toimittajan yhdistelmän kolmisuuntaisen täsmäytyksen Vastaavuuskäytäntö-sivulla ja tietyn ostotilauksen Ostotilaus-sivulla.
 
 ## <a name="charges-matching"></a> Kulujen täsmäytys
-Voit käyttää kulujen täsmäytystä varmistamaan, että kulut eivät poikkea odotetuista summista enempää kuin hyväksyttävän varianssiprosentin. Kutakin laskussa ja ostotilauksessa käytettävän kulukoodin kokonaissummaa verrataan Vertaa kulujen arvoja - lasku -sivulla, kuten seuraavassa taulussa. Jos kulukoodin täsmäytyksen sallittu toleranssi on 25 %, käyttöoikeusmaksujen koodin 99,999,999,999,99 %:n varianssia pidetään täsmäytysristiriitana.
+Voit käyttää kulujen täsmäytystä varmistamaan, että kulut eivät poikkea odotetuista summista enempää kuin hyväksyttävän varianssiprosentin. Kutakin laskussa ja ostotilauksessa käytettävän kulukoodin kokonaissummaa verrataan Vertaa kulujen arvoja - lasku -sivulla, kuten seuraavassa taulussa. Jos kulukoodin täsmäytyksen sallittu toleranssi on 25 %, käyttöoikeusmaksujen koodin 99 999 999 999,99 %:n varianssia pidetään täsmäytysristiriitana.
 
 > [!NOTE] 
-> Varianssiprosentti 99,999,999,999,99 % tarkoittaa, että ostotilaukseen perustuva odotettu summa on nolla ja että laskun toteutunut summa on nolla. 
+> Varianssiprosentti 99 999 999 999,99 % tarkoittaa, että ostotilaukseen perustuva odotettu summa on nolla ja että laskun toteutunut summa on nolla. 
 
 | Kulujen täsmäytyksen tila | Laskun kulukoodi | Todellinen laskettu kokonaisarvo | Odotettu laskettu kokonaisarvo | Varianssin määrä | Varianssiprosentti | Toleranssiprosentti |
 |----------------------|----------------------|-------------------------------|---------------------------------|-----------------|---------------------|----------------------|

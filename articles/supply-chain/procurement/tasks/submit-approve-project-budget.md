@@ -3,7 +3,7 @@ title: Lähetä ja hyväksy projektibudjetti
 description: Tämä menettely osoittaa, miten voit luoda ja lähettää projektin budjetin.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Service industries
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ffa7b4f23e63196947fef1b2180145702531e0a6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 798bbc68e625c58d56cdd769f48ba734ace1d028
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843910"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914858"
 ---
 # <a name="submit-and-approve-project-budget"></a>Lähetä ja hyväksy projektibudjetti
 
@@ -34,26 +34,26 @@ Kun luot projektibudjettia, voit antaa projektin arvioidut tuotot ja kustannukse
 
 Tämän tehtävä luotiin USSI-tietojoukkoa.
 
-1. Valitse Projektinhallinta ja kirjanpito > Projektit > Kaikki projektit.
+1. Siirry **siirtymisruudussa** kohtaan **Moduulit > Projektinhallinta ja kirjanpito > Projektit > Kaikki projektit**.
 2. Etsi haluamasi tietue luettelosta ja valitse se.
 3. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-4. Valitse toimintoruudussa Suunnitelma.
-5. Valitse Projektibudjetti.
-6. Kirjoita arvo Kuvaus-kenttään.
-7. Kustannukset-osan laajentaminen
-8. Valitse Uusi.
-9. Valitse Tapahtumatyyppi-kentässä vaihtoehto.
-10. Anna tai valitse Luokka-kentässä arvo.
-11. Anna luku Alkuperäinen budjetti -kentässä.
-12. Laajenna Tuotot-osaa.
-13. Valitse Uusi.
+4. Valitse **toimintoruudussa** **Suunnitelma**.
+5. Valitse **Projektibudjetti**.
+6. Kirjoita **Kuvaus**-kenttään arvo.
+7. Laajenna **Kustannukset**-pikavälilehti.
+8. Valitse **Uusi**.
+9. Valitse **Tapahtumatyyppi**-kentässä vaihtoehto.
+10. Anna tai valitse **Luokka**-kentässä arvo.
+11. Anna luku **Alkuperäinen budjetti** -kentässä.
+12. Laajenna **Tuotot**-pikavälilehti.
+13. Valitse **Uusi**.
 14. Merkitse valittu rivi luettelossa.
-15. Valitse Tapahtumatyyppi-kentässä vaihtoehto.
-16. Anna tai valitse Luokka-kentässä arvo.
-17. Anna luku Alkuperäinen budjetti -kentässä.
-18. Valitse Tallenna.
-19. Valitse Työnkulku.
-20. Valitse Lähetä.
-21. Kirjoita Kommentti-kenttään arvo.
-22. Valitse Lähetä.
+15. Valitse **Tapahtumatyyppi**-kentässä vaihtoehto.
+16. Anna tai valitse **Luokka**-kentässä arvo.
+17. Anna luku **Alkuperäinen budjetti** -kentässä.
+18. Valitse **Tallenna**.
+19. Valitse **Työnkulku**.
+20. Valitse **Lähetä**.
+21. Kirjoita **Kommentti**-kenttään arvo.
+22. Valitse **Lähetä**.
 

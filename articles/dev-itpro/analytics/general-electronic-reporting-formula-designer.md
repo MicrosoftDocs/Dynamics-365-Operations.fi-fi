@@ -2,8 +2,8 @@
 title: Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 description: Tässä aiheessa kerrotaan, miten kaavojen suunnittelutoimintoa käytetään sähköisessä raportoinnissa (ER).
 author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 1f6caa6afd0ce36340caf237c1acca0ea343824f
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849506"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864291"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 
@@ -113,6 +113,33 @@ ER-kaavan luontitoimintoa voidaan käyttää myös sähköisen asiakirjan luonni
 - Lauseke ottaa käyttöön (palauttamalla **TOSI**-arvon) vähintään yhden tietueen sisältävien erien tiedoston luontiprosessin.
 
 [![Tiedoston hallinta](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+
+### <a name="documents-content-control"></a>Asiakirjan sisältöohjausobjekti
+
+ER-kaavan suunnittelun avulla voidaan määrittää lausekkeita, jotka ohjaavat, mitä tietoja sijoitetaan luotuihin sähköisiin tiedostoihin suorituksen aikana. Lausekkeet voivat ottaa käyttöön muodon tiettyjen elementtien tuottamisen tai poistaa sen käytöstä käsiteltävien tietojen ja määritetyn logiikan mukaan. Nämä lausekkeet voidaan määrittää yksittäiselle muotoelementille **Toimintojen suunnitteluohjelma** -sivun **Yhdistämismääritykset**-välilehden **Käytössä**-kentässä loogisena ehtona, joka palauttaa **totuusarvon**:
+
+-   Kun **Tosi** palautetaan, nykyinen muotoelementti suoritetaan.
+-   Kun **Epätosi** palautetaan, nykyinen muotoelementti ohitetaan.
+
+Seuraavassa kuvassa näkyvät tämän tyyppiset lausekkeet (versio **11.12.11** **ISO20022 Credit transfer (NO)** -muotomäärityksestä, jonka Microsoft tarjoaa esimerkkinä). **XMLHeader**-muotokomponentti on määritetty kuvaamaan luottosiirtosanoman rakennetta seuraten ISO 20022 XML -sanomastandardeja. **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** -muotokomponentti on määritetty lisäämään luotuun viestiin **Ustrd** XML-elementin ja sijoittamaan maksusuoritustiedot ei-rakenteellisessa muodossa tekstinä seuraaviin XML-elementteihin:
+
+-   **PaymentNotes**-komponenttia käytetään maksuhuomautusten tekstin tulostukseen.
+-   **DelimitedSequence**-komponentti tulostaa pilkuilla erotetut laskunumerot, joita käytetään nykyisen luottosiirron tilittämiseen.
+
+[![Toimintojen suunnitteluohjelma](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+
+> [!NOTE]
+> **PaymentNotes**- ja **DelimitedSequence** -komponentit merkitään kysymysmerkillä. Tämä tarkoittaa, että molempien komponenttien käyttö on ehdollinen seuraavien kriteerien perusteella:
+
+-   **PaymentNotes**-komponentille määritetty **@.PaymentsNotes<>""** -lauseke mahdollistaa (palauttamalla **TOSI**) **Ustrd**-XML-elementin täyttämisen maksuhuomatusten tekstillä, kun nykyisen luottosiirron teksti ei ole tyhjä.
+
+[![Toimintojen suunnitteluohjelma](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+
+-   **DelimitedSequence**--komponentille määritetty **@.PaymentsNotes=""** -lauseke mahdollistaa (palauttamalla **TOSI**) **Ustrd**-XML-elementin täyttämisen erotettuna pilkulla laskunumerot, joita käytetään nykyisen luottosiirron tilittämiseen, kun maksuhuomautusten teksti tälle luottosiirrolle on tyhjä.
+
+[![Toimintojen suunnitteluohjelma](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+
+Tämän asetuksen perusteella kullekin velallisen maksulle **Ustrd**-XML-elementti sisältää joko maksuhuomautusten tekstin tai, kun teksti on tyhjä, tämän maksun tilittämiseen käytetyt pilkulla erotetut laskunumerot.
 
 ### <a name="basic-syntax"></a>Perussyntaksi
 

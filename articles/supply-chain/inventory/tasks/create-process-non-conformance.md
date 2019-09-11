@@ -1,9 +1,9 @@
 ---
 title: Luo ja käsittele määritysten noudattaminen
-description: Tällä menettelyllä voi hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella.
+description: Tässä aiheessa kerrotaan, miten voit hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella.
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/07/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,65 +16,54 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16ed11bce92920fe8240fc85f706a2ac6ab0a04b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4e9cf42f80ef7a4c9c5f68a308386db5835c8f2e
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572808"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916642"
 ---
 # <a name="create-and-process-a-conformance"></a>Luo ja käsittele määritysten noudattaminen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tällä menettelyllä voi hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella. Voit toistaa tallenteen USMF-esittely-yrityksessä ja käyttää ehdotettuja arvoja. Tämän menettelyn suorittaa yleensä laatuassistentti.  Edellytyksenä on suorittaa Tarkista tavaroiden laatu -tehtävätallenteen suorittaminen. Määrityksistä poikkeamisen hyväksymisen käsittely edellyttää, että tehtävätallenteen suorittajalle on määritetty Nimi-arvo Käyttäjät-sivulla. Asiakirjojen huomautusten käyttö taas edellyttää, että tiedoston käsittely on aktivoitu käyttäjäasetuksissa.
+Tässä aiheessa kerrotaan, miten voit hallita määrityksistä poikkeamisia aiemmin luodun laatutilauksen perusteella. Voit toistaa tallenteen USMF-esittely-yrityksessä ja käyttää ehdotettuja arvoja. Tämän menettelyn suorittaa yleensä laatuassistentti.  Edellytyksenä on suorittaa [Tarkista tavaroiden laatu](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) -ohjeet. Määrityksistä poikkeamisen hyväksymisen käsittely edellyttää, että tehtävätallenteen suorittajalle on määritetty Nimi-arvo Käyttäjät-sivulla. Asiakirjojen huomautusten käyttö taas edellyttää, että tiedoston käsittely on aktivoitu käyttäjäasetuksissa.
 
 
 ## <a name="select-a-quality-order"></a>Valitse laatutilaus.
-1. Valitse Laatutilaukset.
-2. Merkitse valittu rivi luettelossa.
-    * Valitse Tarkista tavaroiden laatu -tehtävätallenteessa luotu laatutilaus.  
+1. Valitse siirtymisruudussa **Moduulit > Inventoinnin- ja varastonhallinta > Kausittaiset tehtävät > Laadunhallinta > Laatutilaukset**.
+2. Valitse [Tarkista tavaroiden laatu](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) -ohjeessa luotu laatutilaus listasta.  
 
 ## <a name="create-a-nonconformance"></a>Luo määrityksistä poikkeaminen
-1. Valitse Kyselyt.
-2. Valitse Määrityksistä poikkeamiset.
-3. Valitse Uusi.
-4. Avaa haku napsauttamalla Ongelman tyyppi -kentässä avattavan valikon painiketta.
-    * Valitse tarkistuksen aikana löytynyt ongelma.  
-5. Avaa haku napsauttamalla Ongelman tyyppi -kentässä avattavan valikon painiketta.
-6. Etsi haluamasi tietue luettelosta ja valitse se.
-7. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-8. Valitse OK.
+1. Valitse toimintoruudussa **Kyselyt**.
+2. Valitse **Määrityksistä poikkeamiset**.
+3. Valitse **Uusi**.
+4. Valitse **Ongelman tyyppi** -kentän avattavasta valikosta ongelma, joka löydettiin tarkastusprosessin aikana.  
+5. Valitse **OK**.
 
 ## <a name="approvereject-a-nonconformance"></a>Hyväksy tai hylkää määrityksistä poikkeaminen
-1. Valitse Toiminnot.
-2. Valitse Hyväksy määrityksistä poikkeaminen.
-    * Hyväksy tässä esimerkissä määrityksistä poikkeamisen. Hyväksytyt määrityksistä poikkeamiset voidaan liittää liittyviin toimintoihin tallentamaan työ, joka tehdään osana määrityksistä poikkeamisen käsittelyä ja, kuten tässä työvaiheessa, korjauskäsittelyn käsittelyä.  
-3. Valitse Kyllä.
+1. Valitse **Toiminnot**.
+2. Valitse **Hyväksy määrityksistä poikkeaminen**. Hyväksy tässä esimerkissä määrityksistä poikkeamisen. Hyväksytyt määrityksistä poikkeamiset voidaan liittää liittyviin toimintoihin tallentamaan työ, joka tehdään osana määrityksistä poikkeamisen käsittelyä ja, kuten tässä ohjeaiheessa, korjauskäsittelyn käsittelyä.  
+3. Valitse **Kyllä**.
 
 ## <a name="create-a-correction-action"></a>Luo korjaustoiminto
-1. Valitse Korjaukset.
-2. Valitse Uusi.
-3. Merkitse valittu rivi luettelossa.
-4. Avaa haku napsauttamalla Henkilöstönumero-kentässä avattavan valikon painiketta.
-5. Napsauta luettelossa valitulla rivillä olevaa linkkiä.
-6. Klikkaa Valitse.
-7. Valitse Liitä.
-    * Luo korjausta koskeva huomautus. Tässä esimerkissä toimintona on yhteydenotto toimittajaan ja keskustelu määrityksistä poikkeamistapauksesta.  
-8. Valitse Uusi.
-9. Valitse Huomautus.
-    * Huomaa, että raporttiasetusten mukaan eri asiakirjatyyppejä voi tulostaa raportteihin, jotka liittyvät määrityksistä poikkeamisen hallintaan.  
-10. Kirjoita arvo Kuvaus-kenttään.
-11. Sulje sivu.
+1. Valitse **Korjaukset**.
+2. Valitse **Uusi**.
+3. Valitse uuden rivin **Henkilöstönumero**-kentästä haluamasi tietue avattavasta valikosta.
+4. Klikkaa **Valitse**.
+5. Valitse **Liitä**. Luo korjausta koskeva huomautus. Tässä esimerkissä toimintona on yhteydenotto toimittajaan ja keskustelu määrityksistä poikkeamistapauksesta.  
+6. Valitse **Uusi**.
+7. Valitse **Muistiinpano**. Raporttiasetusten mukaan eri asiakirjatyyppejä voi tulostaa raportteihin, jotka liittyvät määrityksistä poikkeamisen hallintaan.  
+8. Kirjoita **Kuvaus**-kenttään arvo.
+9. Sulje sivu.
 
 ## <a name="maintain-a-correction"></a>Ylläpidä korjausta
-1. Valitse Merkitse valmiiksi.
-2. Valitse OK.
+1. Valitse **Merkitse valmiiksi**.
+2. Valitse **OK**.
 3. Sulje sivu.
 
 ## <a name="close-a-nonconformance"></a>Sulje määrityksistä poikkeaminen
-1. Valitse Toiminnot.
-2. Valitse Sulje määrityksistä poikkeaminen.
-3. Valitse Kyllä.
-4. Sulje sivu.
-5. Sulje sivu.
+1. Valitse **Toiminnot**.
+2. Valitse **Sulje määrityksistä poikkeaminen**.
+3. Valitse **Kyllä**.
+4. Sulje sivut.
