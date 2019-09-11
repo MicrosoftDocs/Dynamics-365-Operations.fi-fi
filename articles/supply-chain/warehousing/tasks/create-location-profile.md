@@ -1,9 +1,9 @@
 ---
 title: Luo toimipaikkaprofiili
-description: Jokaisella varastosijainnilla on oltava liitetty sijaintiprofiili, joka kuvaa sijainnin ominaisuudet, kuten sen, salliiko sijainti yhdistetyt nimikkeet.
+description: Tässä ohjeaiheessa käsitellään sijaintiprofiilin luonti Dynamics 365 for Finance and Operationsissa.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,28 +17,29 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a9e1217a1105e1d53fc937f927e066e392f1ef14
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 46aa1001c21ae39c158062444303ca02c0f41a45
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847324"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866976"
 ---
-# <a name="create-a-location-profile"></a><span data-ttu-id="e6758-103">Luo toimipaikkaprofiili</span><span class="sxs-lookup"><span data-stu-id="e6758-103">Create a location profile</span></span>
+# <a name="create-a-location-profile"></a><span data-ttu-id="18177-103">Luo toimipaikkaprofiili</span><span class="sxs-lookup"><span data-stu-id="18177-103">Create a location profile</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="e6758-104">Jokaisella varastosijainnilla on oltava liitetty sijaintiprofiili, joka kuvaa sijainnin ominaisuudet, kuten sen, salliiko sijainti yhdistetyt nimikkeet.</span><span class="sxs-lookup"><span data-stu-id="e6758-104">Every location in the warehouse needs to have a location profile associated with it that describes the properties of the location, for example, whether the location allows mixed items.</span></span> <span data-ttu-id="e6758-105">Tässä menettelyssä luodaan profiili sijainnille, jossa ei vaadita rekisterikilpiohjausta.</span><span class="sxs-lookup"><span data-stu-id="e6758-105">In this procedure we’ll create a profile for a location that doesn’t require license plate control.</span></span> <span data-ttu-id="e6758-106">Ota käyttöön yhdistetyt nimikkeet ja yhdistetyt varastoinnin tilat, sekä salli inventointi.</span><span class="sxs-lookup"><span data-stu-id="e6758-106">We’ll enable mixed items, and mixed inventory statuses, and allow cycle counting.</span></span> <span data-ttu-id="e6758-107">Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="e6758-107">You can use this procedure in the USMF demo data company.</span></span>
+<span data-ttu-id="18177-104">Tässä ohjeaiheessa käsitellään sijaintiprofiilin luonti Dynamics 365 for Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="18177-104">This topic explains how to create a location profile in Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="18177-105">Jokaisella varastosijainnilla on oltava liitetty sijaintiprofiili, joka kuvaa sijainnin ominaisuudet, kuten sen, salliiko sijainti yhdistetyt nimikkeet.</span><span class="sxs-lookup"><span data-stu-id="18177-105">Every location in the warehouse needs to have a location profile associated with it that describes the properties of the location, for example, whether the location allows mixed items.</span></span> <span data-ttu-id="18177-106">Tässä menettelyssä luodaan profiili sijainnille, jossa ei vaadita rekisterikilpiohjausta.</span><span class="sxs-lookup"><span data-stu-id="18177-106">In this procedure we’ll create a profile for a location that doesn’t require license plate control.</span></span> <span data-ttu-id="18177-107">Ota käyttöön yhdistetyt nimikkeet ja yhdistetyt varastoinnin tilat, sekä salli inventointi.</span><span class="sxs-lookup"><span data-stu-id="18177-107">We’ll enable mixed items, and mixed inventory statuses, and allow cycle counting.</span></span> <span data-ttu-id="18177-108">Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="18177-108">You can use this procedure in the USMF demo data company.</span></span>
 
-1. <span data-ttu-id="e6758-108">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="e6758-108">Click New.</span></span>
-2. <span data-ttu-id="e6758-109">Kirjoita Sijainnin profiilitunnus -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="e6758-109">In the Location profile ID field, type a value.</span></span>
-3. <span data-ttu-id="e6758-110">Kirjoita arvo Nimi-kenttään.</span><span class="sxs-lookup"><span data-stu-id="e6758-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="e6758-111">Syötä tai valitse arvo Sijainnin muoto -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e6758-111">In the Location format field, enter or select a value.</span></span>
-5. <span data-ttu-id="e6758-112">Anna tai valitse Sijainnin tyyppi -kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="e6758-112">In the Location type field, enter or select a value.</span></span>
-6. <span data-ttu-id="e6758-113">Syötä tai valitse arvo Lähetys- ja vastaanottoalueen hallintaprofiilin tunnus -kenttään.</span><span class="sxs-lookup"><span data-stu-id="e6758-113">In the Dock management profile ID field, enter or select a value.</span></span>
-7. <span data-ttu-id="e6758-114">Valitse Salli yhdistetyt nimikkeet -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="e6758-114">Select Yes in the Allow mixed items field.</span></span>
-8. <span data-ttu-id="e6758-115">Valitse Salli yhdistetyt varastotilat -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="e6758-115">Select Yes in the Allow mixed  inventory statuses field.</span></span>
-9. <span data-ttu-id="e6758-116">Valitse Salli inventointi -kentässä Kyllä.</span><span class="sxs-lookup"><span data-stu-id="e6758-116">Select Yes in the Allow cycle counting field.</span></span>
-10. <span data-ttu-id="e6758-117">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="e6758-117">Click Save.</span></span>
-11. <span data-ttu-id="e6758-118">Valitse Varastonhallinta > Asetukset > Varasto > Sijaintiprofiilit.</span><span class="sxs-lookup"><span data-stu-id="e6758-118">Go to Warehouse management > Setup > Warehouse > Location profiles.</span></span>
+
+1. <span data-ttu-id="18177-109">Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Varasto > Sijaintiprofiilit**.</span><span class="sxs-lookup"><span data-stu-id="18177-109">In the navigation pane, go to **Modules > Warehouse management > Setup > Warehouse > Location profiles**.</span></span>
+2. <span data-ttu-id="18177-110">Valitse **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="18177-110">Select **New**.</span></span>
+3. <span data-ttu-id="18177-111">Kirjoita **Sijainnin profiilitunnus** -kenttään arvo.</span><span class="sxs-lookup"><span data-stu-id="18177-111">In the **Location profile ID** field, type a value.</span></span>
+4. <span data-ttu-id="18177-112">Kirjoita arvo **Nimi**-kenttään.</span><span class="sxs-lookup"><span data-stu-id="18177-112">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="18177-113">Syötä tai valitse arvo **Sijainnin muoto** -kenttään.</span><span class="sxs-lookup"><span data-stu-id="18177-113">In the **Location format** field, enter or select a value.</span></span>
+6. <span data-ttu-id="18177-114">Anna tai valitse **Sijainnin tyyppi** -kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="18177-114">In the **Location type** field, enter or select a value.</span></span>
+7. <span data-ttu-id="18177-115">Syötä tai valitse arvo **Lähetys- ja vastaanottoalueen hallintaprofiilin tunnus** -kenttään.</span><span class="sxs-lookup"><span data-stu-id="18177-115">In the **Dock management profile ID** field, enter or select a value.</span></span>
+8. <span data-ttu-id="18177-116">Valitse **Salli yhdistetyt nimikkeet** -kentässä **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="18177-116">Select **Yes** in the **Allow mixed items** field.</span></span>
+9. <span data-ttu-id="18177-117">Valitse **Salli yhdistetyt varastotilat** -kentässä **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="18177-117">Select **Yes** in the **Allow mixed inventory statuses** field.</span></span>
+10. <span data-ttu-id="18177-118">Valitse **Salli inventointi** -kentässä **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="18177-118">Select **Yes** in the **Allow cycle counting** field.</span></span>
+11. <span data-ttu-id="18177-119">Valitse **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="18177-119">Select **Save**.</span></span>
 
