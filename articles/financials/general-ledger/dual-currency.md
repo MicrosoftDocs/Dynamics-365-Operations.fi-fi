@@ -3,7 +3,7 @@ title: Kaksoisvaluutta
 description: Tässä ohjeaiheessa käsitellään kaksoisvaluuttaa eli tilannetta, jossa raportointivaluuttaa käytetään Microsoft Dynamics 365 for Finance and Operationsin toisena kirjanpitovaluuttana.
 author: kweekley
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,31 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dfd4c116552510ee42cd2f3e8a0f31100826b9d2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d5128ea9daaf22ee962ca5fc70a05cba05c7edb
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839398"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867508"
 ---
 # <a name="dual-currency"></a>Kaksoisvaluutta
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operationsin versiossa 8.1 (lokakuu 2018) käyttöönotetulla toiminnolla raportointivaluutan käyttötarkoitusta voidaan muuttaa ja sitä voidaan käyttää toisena kirjanpitovaluuttana. Tätä toimintoa kutsutaan *kaksoisvaluutaksi*. Kaksoisvaluuttamuutoksia ei voi poistaa käytöstä määritysavaimella tai parametrilla. Koska raportointivaluuttaa käytetään toisena kirjanpitovaluuttana, raportointivaluutan laskentatapa kirjauslogiikassa on muuttunut.
 
-Lisäksi useita moduuleja on täydennetty niin, että voivat seurata, raportoida ja käyttää raportointivaluuttaa erilaisissa prosesseissa. Näitä moduuleja ovat esimerkiksi seuraavat: **Kirjanpito**, **Taloushallinnan raportointi**, **Ostoreskontra**, **Myyntireskontra**, **Maksuliikenteen hallinta** ja **Käyttöomaisuuserät**. Päivityksen jälkeen Maksuliikenteen hallinta- ja Käyttöomaisuuserät-moduuleissa on suoritettava tietyt vaiheet. Lue sen vuoksi asiaan liittyvät osat huolellisesti tässä ohjeaiheessa.
+Lisäksi useita moduuleja on täydennetty niin, että voivat seurata, raportoida ja käyttää raportointivaluuttaa erilaisissa prosesseissa. Asiaankuuluvat moduulit ovat seuraavat:
+
+- Kirjanpito 
+- Taloushallinnon raportointi 
+- Ostoreskontra
+- Myyntireskontra 
+- Maksuliikenteen hallinta 
+- Käyttöomaisuuserät 
+- Konsolidoinnit
+
+Päivityksen jälkeen Maksuliikenteen hallinta- ja Käyttöomaisuuserät-moduuleissa on suoritettava tietyt vaiheet. Lue sen vuoksi asiaan liittyvät osat huolellisesti tässä ohjeaiheessa.
 
 ## <a name="posting-process"></a>Kirjausprosessi
 
@@ -75,6 +86,7 @@ Seuraavat moduulit käyttävät raportointivaluuttaa toisena kirjanpitovaluuttan
 - [Myyntireskontra](#accounts-payable-and-accounts-receivable)
 - [Maksuliikenteen hallinta](#cash-and-bank-management)
 - [Käyttöomaisuuserät](#fixed-assets)
+- [Konsolidoinnit](#consolidations)
 
 ### <a name="general-ledger"></a>Kirjanpito
 
@@ -124,6 +136,8 @@ Muutoksen voi ottaa käyttöön sarakemäärityksen **Valuutan näyttö** -asetu
 Myös poistoprosessiin on tehty merkittäviä muutoksia. Nämä muutokset edellyttävät käyttäjän toimia päivityksen jälkeen. Seuraaviin muutoksiin on ehdottomasti tutustuttava, vaikket vielä käyttäisikään Käyttöomaisuuserät-moduulia.
 
 - Tapaa, jolla poistoprosessi määrittää raportointivaluuttasumman, on muutettu. Seuraavassa skenaariossa verrataan tapaa, jolla poisto määritti aiemmin raportointivaluuttasumman, tapaan, jolla se määritetään nyt.
+
+
 
     **Poistoskenaario**
 
@@ -186,3 +200,13 @@ Myös poistoprosessiin on tehty merkittäviä muutoksia. Nämä muutokset edelly
     - Jos poistotapahtuman tyyppi on kirjattu käyttöomaisuuserän kirjauskansioon, raportointivaluuttasummat näkyvät uusissa sarakkeissa. Näitä summia voi muuttaa.
     - Jos kirjanpidon kirjanpito- ja raportointivaluutta ovat samat, summat pysyvät synkronoituina. Jos muutat **Kredit**-summaa, **Kredit raportointivaluutassa** -summa muutetaan automaattisesti sitä vastaavaksi.
     - Jos käyttöomaisuuserän kirjauskansioon on kirjattu jokin muu tapahtuman tyyppi, **Debet raportointivaluutassa**- ja **Kredit raportointivaluutassa** -summia ei näytetä koskaan ennen kirjausta eikä myöskään kirjauksen jälkeen. Kirjanpito- ja raportointivaluuttasummat on edelleen käytettävissä kirjanpitoon kirjattavassa tositteessa.
+    
+### <a name="consolidations"></a>Konsolidoinnit
+    
+Microsoft Dynamics 365 for Finance and Operations -versiossa 10.0.5 (lokakuu 2019) käyttöönotetut toiminnot mahdollistavat tämän toiminnon ominaisuuksien hallinnan kautta, joka parantaa joustavuutta konsolidointia ja kaksoisvaluuttaa varten. Voit ottaa tämän toiminnon käyttöön siirtymällä **Ominaisuuksien hallinta** -työtilaan ja valitsemalla **Ota käyttöön kaksoisvaluuttatoiminto kirjanpidon konsolidoinnissa**.
+
+Kirjanpidon konsolidoinnissa on lisätty uusi vaihtoehto, jonka mukaan lähdeyritysten kirjanpidon tai raportoinnin valuuttasummat konsolidoidaan. Jos kirjanpito- tai raportointivaluutta on sama kuin konsolidointiyrityksen kirjanpidon tai raportoinnin valuutta, summat kopioidaan suoraan eikä käännetä.
+
+-  Voit nyt valita, käytetäänkö lähdeyrityksen kirjanpitovaluuttaa vai raportointivaluuttaa konsolidointiyrityksen tapahtumavaluuttana.
+
+- Lähdeytityksen kirjanpito- tai raportointivaluutta kopioidaan suoraan konsolidointiyrityksen kirjanpidon tai raportoinnin valuuttasummiin, jos jompikumpi valuutoista on sama. Konsolidointiyrityksen kirjanpito- ja raportointivaluuttasummat lasketaan käyttämällä vaihtokurssia, jos kumpikaan valuutoista ei ole sama.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6587505fc5a729ffd82ab65aca7d5aa6ca4a265
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: db9208c8e76d963d5b8f6bee6b7c73268af68734
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837249"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867747"
 ---
 # <a name="reverse-a-vendor-payment"></a>Toimittajamaksun peruuttaminen
 
@@ -48,7 +48,7 @@ Voit tarkistaa organisaatiossasi käytössä olevan tavan **Maksuliikennetiedot*
 Jos organisaatio haluaa sekkien peruutukset kirjattavaksi heti, kun valitset **Sekit**-sivulta **Maksun mitätöinti**. Määritä **Maksuliikennetiedot**-sivulla **Käytä tarkistusprosessia maksujen palautuksissa** -asetukseksi **Ei**. **Sekit**-sivulla voit valita peruutettavan sekin ja valita sitten **Maksun mitätöinti**. Määritä sitten päivämäärä ja valitse peruutuksen syy.
 
 ## <a name="reverse-posted-checks-after-they-are-reviewed-in-the-check-reversal-journal"></a>Kirjattujen sekkien peruuttaminen, kun ne on tarkistettu sekkipalautusten kirjauskansiossa
-Jos organisaatio haluaa tarkistaa sekkien peruutukset ennen niiden kirjaamista, luo sekkipalautusten kirjauskansio ja määritä **Maksuliikennetiedot**-sivulla **Käytä tarkistusprosessia maksujen palautuksissa** -asetukseksi **Kyllä**. **Sekit**-sivulla voit valita peruutettavan sekin ja valita sitten **Maksun mitätöinti**. Määritä sitten päivämäärä ja valitse peruutuksen syy. Sinun on myös valittava kirjauskansion nimi, jotta voit luoda sekkipalautusten kirjauskansion.
+Jos organisaatio haluaa tarkistaa sekkien peruutukset ennen niiden kirjaamista, luo sekkipalautusten kirjauskansio ja määritä **Maksuliikennetiedot**-sivulla **Käytä tarkistusprosessia maksujen palautuksissa** -asetukseksi **Kyllä**. **Sekit**-sivulla voit valita peruutettavan sekin ja valita sitten **Maksun mitätöinti**. Määritä sitten päivämäärä ja valitse peruutuksen syy. Rahoituksellinen syy on määritettävä sekä Pankki-että Toimittaja-tyypeille. Sinun on myös valittava kirjauskansion nimi, jotta voit luoda sekkipalautusten kirjauskansion.
 
 ### <a name="review-a-reversal"></a>Peruutuksen tarkistaminen
 

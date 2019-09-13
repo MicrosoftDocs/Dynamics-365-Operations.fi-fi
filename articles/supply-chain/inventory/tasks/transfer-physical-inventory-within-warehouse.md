@@ -3,7 +3,7 @@ title: Fyysisen varaston siirtäminen varastossa
 description: Tässä menettelyssä käsitellään varastosiirtokirjauskansion luominen ja kirjaaminen, jotta nimikkeen siirto varastosijainnista toiseen voidaan rekisteröidä.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7344bfa3be0d7345d3ac68202c7bc26bcac8ebb9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7715c8e7a56703993e8512af03f2ab8d6802a987
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845254"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916573"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Fyysisen varaston siirtäminen varastossa
 
@@ -32,40 +32,30 @@ Tässä menettelyssä käsitellään varastosiirtokirjauskansion luominen ja kir
 
 
 ## <a name="create-an-inventory-transfer-journal"></a>Luo varastosiirtokirjauskansio
-1. Valitse Siirrä.
-2. Valitse Uusi.
-3. Syötä tai valitse arvo Nimi-kenttään.
-4. Valitse OK.
-    * Kunkin kirjauskansion rivin määrittämiseen on lähtö- ja kohdedimensioasetus. Ne ovat välttämättömiä tässä kirjauskansiotyypissä. Voit siirtää nimikkeitä sijainteihin eri säännöillä. Tässä esimerkissä nimike siirretään samassa varastossa rekisterikilvellä ohjatusta sijainnista sijaintiin, jota ei ohjata rekisterikilvellä.   
+1. Siirry **siirtymisruudussa** kohtaan **Varastonhallinta > Kirjauskansioviennit > Nimikkeet > Siirto**.
+2. Valitse **Uusi**.
+3. Anna tai valitse arvo **Nimi**-kentässä.
+4. Valitse **OK**. Kunkin kirjauskansion rivin määrittämiseen on lähtö- ja kohdedimensioasetus. Ne ovat välttämättömiä tässä kirjauskansiotyypissä. Voit siirtää nimikkeitä sijainteihin eri säännöillä. Tässä esimerkissä nimike siirretään samassa varastossa rekisterikilvellä ohjatusta sijainnista sijaintiin, jota ei ohjata rekisterikilvellä.   
 
-## <a name="create-journal-lines"></a>Tämän kirjauskansion rivit
-1. Valitse Uusi.
-2. Syötä tai valitse arvo Nimiketunnus-kentässä.
-    * Jos käytössä on USMF, voit valita A0001.  
-3. Anna tai valitse Toimipaikasta-kentässä arvo.
-    * Jos käytössä on USMF, voit valita 2.  
-4. Anna tai valitse Toimipaikkaan-kentässä arvo.
-    * Jos käytössä on USMF, voit valita 2.  
-5. Anna tai valitse Varastosta-kentässä arvo.
-    * Jos käytössä on USMF, voit valita 24.  
-6. Anna tai valitse Varastoon-kentässä arvo.
-    * Jos käytössä on USMF, voit valita 24.  
-7. Anna tai valitse Lähtösijainti -kentässä arvo.
-    * Jos käytössä on USMF, voit valita FL-001.  
-8. Anna tai valitse Kohdesijainti-kentässä arvo.
-    * Jos käytössä on USMF, voit valita BULK-001.  
-9. Kirjoita numero Määrä-kenttään.
-10. Valitse Varastodimensiot-välilehti.
-11. Anna tai valitse Rekisterikilpi-kentässä arvo.
-    * Jos käytössä on USMF, voit valita 24.  
-12. Valitse Tallenna.
+## <a name="create-journal-lines"></a>Luo kirjauskansion rivejä
+1. Valitse **Kirjauskansion rivit** -pikavälilehdessä **Uusi**.
+2. Syötä tai valitse arvo **Nimiketunnus**-kentässä. Jos käytössä on USMF, voit valita A0001.  
+3. Anna tai valitse **Toimipaikasta**-kentässä arvo. Jos käytössä on USMF, voit valita 2.  
+4. Anna tai valitse **Toimipaikkaan**-kentässä arvo. Jos käytössä on USMF, voit valita 2.  
+5. Anna tai valitse **Varastosta**-kentässä arvo. Jos käytössä on USMF, voit valita 24.  
+6. Anna tai valitse **Varastoon**-kentässä arvo. Jos käytössä on USMF, voit valita 24.  
+7. Anna tai valitse **Lähtösijainti** -kentässä arvo. Jos käytössä on USMF, voit valita FL-001.  
+8. Anna tai valitse **Kohdesijainti**-kentässä arvo. Jos käytössä on USMF, voit valita BULK-001.  
+9. Anna **Määrä**-kentässä numero.
+10. Valitse **Rivin tiedot** -pikavälilehdessä **Varastodimensiot** -välilehti.
+11. Kirjoita tai valitse arvo **Varastodimensioista**-kohdan **Rekisterikilpi**-kenttään. Jos käytössä on USMF, voit valita 24.  
+12. Valitse **Tallenna**.
 
 ## <a name="post-the-inventory-transfer-journal"></a>Kirjaa varastosiirtokirjauskansio
-1. Valitse Kirjaa.
-2. Valitse OK.
+1. Valitse **toimintoruudussa** **Kirjaa**.
+2. Valitse **OK**.
 
 ## <a name="view-inventory-transactions"></a>Näytä varastotapahtumat
-1. Valitse Varasto.
-2. Valitse Tapahtumat.
-    * Tässä on näkyvissä tapahtumat, jotka luotiin kirjauskansioon kirjattaessa.  
+1. Valitse **Varasto**.
+2. Valitse **Tapahtumat**. Tässä on näkyvissä tapahtumat, jotka luotiin kirjauskansioon kirjattaessa.  
 

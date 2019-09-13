@@ -3,7 +3,7 @@ title: Luo toimintayksikkö
 description: Toimintayksikkö on organisaatio, jota käytetään jakamaan liiketoiminnan taloudellisten resurssien hallinta ja operationaaliset prosessit.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef03329cfe477256cfbe1dde1dc18df52137286f
-ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
+ms.openlocfilehash: 164b347e1c929f60762793799a500a7203f0f72f
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755566"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874900"
 ---
 # <a name="create-an-operating-unit"></a>Luo toimintayksikkö
 
@@ -40,5 +40,5 @@ Toimintayksikkö on organisaatio, jota käytetään jakamaan liiketoiminnan talo
     + Määritä osoitetiedot, kuten katuosoite ja -numero, postinumero ja postitoimipaikka. Anna uusi osoitetietue valitsemalla **Lisää** tai muokkaa aiemmin luotua osoitetietuetta valitsemalla Muokkaa.   
     + Laajenna **Yhteystiedot**-osa tarvittaessa.  
     + Ilmoita viestintämenetelmien tiedot, kuten sähköpostiosoitteet, URL-osoitteet ja puhelinnumerot. Voit syöttää uuden viestintätietueen valitsemalla Uusi. Voit muokata aiemmin luodut viestintätietue valitsemalla **Lisäasetukset > Lisäasetukset**.   
-6. Valitse **Tallenna**.
-
+6. Voit halutessasi muuttaa **Toimintayksikön numero** -asetusta tarpeen mukaan. Huomaa, että tämä numero on vastaavan **Osapuoli**-tietueen yksilöivä tunnus, eikä se voi olla sama kuin mikä tahansa muu toimintayksikkö.
+7. Valitse **Tallenna**.

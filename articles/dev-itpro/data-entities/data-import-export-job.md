@@ -1,9 +1,9 @@
 ---
-title: Tietojen tuonti- ja vientityöt
+title: Tietojen tuonti- ja vientityöt – yleiskatsaus
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b16966fe1c3a48d772c7c9982f8802119675255f
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: cbd8d305920262ed48c62f13aa86f903a6b16d0a
+ms.sourcegitcommit: e552111e148a80544a3468da60ea0464f02a658d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862901"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "1875317"
 ---
-# <a name="data-import-and-export-jobs"></a>Tietojen tuonti- ja vientityöt
+# <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -184,7 +184,7 @@ Tietojen hallinnan työhistorian puhdistustoimintoa on käytettävä suoritushis
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-Toiminnallisuutta voi käyttää kohdassa **Tietojen hallinnta \> Työhistorian tyhjennys**.
+Toiminnon on oltava käytössä ominaisuuksien hallinnassa, ja sen jälkeen sitä voi käyttää kohdassa **Tietojen hallinta \> Työhistorian tyhjennys**.
 
 ### <a name="scheduling-parameters"></a>Ajoitusparametrit
 

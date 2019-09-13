@@ -3,7 +3,7 @@ title: Työnkulun työnimikkeiden delegointi
 description: Jos aiot olla poissa toimistosta tai et voi muutoin käsitellä työnimikkeitä, voit delegoida tai määrittää työnimikkeesi uudelleen muille käyttäjille.
 author: jasongre
 manager: AnnBe
-ms.date: 04/09/2019
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: feace647d7acef6abf86b13fcb8019c622c55ff6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 44dc747543e32b54729d12c89a401b0187e25a61
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509449"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916412"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Työnkulun työnimikkeiden delegointi
 
@@ -36,17 +36,16 @@ Yksittäinen työnimike voidaan delegoida valitsemalla **delegoida**-asetus **ty
 Jos aiot olla poissa toimistosta tai et muuten ole käytettävissä tiettynä aikana, voit siirtää uusia työnimikkeitä automaattisesti muille käyttäjille käyttämällä **Käyttäjäasetukset**-sivua.
 
 ### <a name="set-up-automatic-delegation"></a>Automaattisen delegoinnin määrittäminen
-1. Valitse Yleinen > Asetukset > Käyttäjän asetukset.
-2. Valitse Työnkulku-välilehti.
-    * Varmista, että Delegointi-osa on laajennettu.    Luo delegointisäännöt määrittämään, milloin tietyt työnimiketyypit delegoidaan. Tällä tavoin voit määrittää järjestelmän delegoimaan työnimikkeesi automaattisesti muille käyttäjille. Luo delegointisääntö seuraavien ohjeiden avulla.  
-3. ValitseLisää.
-4. Valitse Vaikutusalue-kentässä vaihtoehto.
-    * Kaikki – delegoi kaikki sinulle määritetyt työnimikkeet.    Moduuli – Delegoi vain tiettyyn työnkulkutyyppiin liittyvät työnimikkeet. Jos valitset tämän vaihtoehdon, työnkulkutyyppi on valittava Nimi-kentässä.    Työnkulku – Delegoi vain tiettyyn työnkulkuun liittyvät työnimikkeet. Jos valitset tämän vaihtoehdon, työnkulku on valittava Nimi-kentässä.  
-5. Valitse Delegoi-kentässä käyttäjä, jolle työnimikkeet delegoidaan.
-    * Määritä Alkamispäivämäärä ja -kellonaika- ja Päättymispäivämäärä ja -kellonaika -kenttien avulla, milloin haluat delegoida työnimikkeet automaattisesti.  
-6. Anna päivämäärä ja kellonaika Aloituspäivämäärä ja -kellonaika -kentässä.
-7. Anna päivämäärä ja kellonaika Päättymispäivämäärä ja -kellonaika -kentässä.
-8. Aktivoi tämä delegointisääntö valitsemalla Käytössä-valintaruutu.
-    * Jos Moduuli on valittu vaikutusalueeksi, moduuli on valittava myös Nimi-kentässä.    Jos Työnkulku on valittu vaikutusalueeksi, tietty työnkulku on valittava delegoitavaksi myös Nimi-kentässä.  
-9. Selitä Kommentti-kentässä, miksi delegoit työnimikkeet.
+1. Valitse **Yhteiset > Asetukset > Käyttäjän asetukset**.
+2. Valitse **Työnkulku**-väli lehti. Varmista, että Delegointi-osa on laajennettu. Luo delegointisäännöt määrittämään, milloin tietyt työnimiketyypit delegoidaan. Tällä tavoin voit määrittää järjestelmän delegoimaan työnimikkeesi automaattisesti muille käyttäjille. Luo delegointisääntö seuraavien ohjeiden avulla.  
+3. Valitse **Lisää**.
+4. Valitse **Vaikutusalue**-kentässä vaihtoehto.
+    - Kaikki – delegoi kaikki sinulle määritetyt työnimikkeet.
+    - Moduuli – Delegoi vain tiettyyn työnkulkutyyppiin liittyvät työnimikkeet. Jos valitset tämän vaihtoehdon, työnkulkutyyppi on valittava Nimi-kentässä.
+    - Työnkulku – Delegoi vain tiettyyn työnkulkuun liittyvät työnimikkeet. Jos valitset tämän vaihtoehdon, työnkulku on valittava Nimi-kentässä.  
+5. Valitse **Delegoi**-kentässä käyttäjä, jolle työnimikkeet delegoidaan. Määritä Alkamispäivämäärä ja -kellonaika- ja Päättymispäivämäärä ja -kellonaika -kenttien avulla, milloin haluat delegoida työnimikkeet automaattisesti.  
+6. Anna päivämäärä ja kellonaika **Aloituspäivämäärä ja -kellonaika** -kentässä.
+7. Anna päivämäärä ja kellonaika **Päättymispäivämäärä ja -kellonaika** -kentässä.
+8. Aktivoi tämä delegointisääntö valitsemalla **Käytössä**-valintaruutu. Jos **Moduuli** on valittu vaikutusalueeksi, moduuli on valittava myös Nimi-kentässä. Jos **Työnkulku** on valittu vaikutusalueeksi, tietty työnkulku on valittava delegoitavaksi myös Nimi-kentässä.  
+9. Selitä **Kommentti**-kentässä, miksi delegoit työnimikkeet.
 

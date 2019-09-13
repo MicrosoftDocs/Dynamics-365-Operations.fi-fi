@@ -3,7 +3,7 @@ title: Vanhentuneet tai poistetut ominaisuudet
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.
 author: sericks007
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 4aad4f2cf42b72256b5c4727bfd145d16af033ed
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863380"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867098"
 ---
 # <a name="removed-or-deprecated-features"></a>Poistetut tai vanhentuneet ominaisuudet
 
@@ -157,6 +157,17 @@ Niiden projektiin perustuvien myyntitilausten tuki, joissa projektisopimuksella 
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: Varoituksesta tulee käännösvirhe Platform update 26 -versiossa. |
+
+## <a name="dynamics-365-for-finance-and-operations-1000-with-platform-update-24"></a>Dynamics 365 for Finance and Operations 10.0.0 ja platform update 24
+
+### <a name="renaming-released-products"></a>Julkaistujen tuotteiden uudelleennimeäminen 
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Kun muutat vapautetun tuotteen Itemid-tunnusta **Nimeä perusavain uudelleen** -toiminnon avulla, vain suorat viiteavainviitteet päivitetään. Kaikki muut viittaukset vapautettuun tuotteeseen, esimerkiksi tuotantotilauksista, säilyttävät vanhan ItemId-arvon. Tämän seurauksena voi olla epäyhtenäisiä tietoja, jotka lopulta estävät liiketoimintaprosesseja. |
+| **Onko toinen ominaisuus korvannut?**   | Nro |
+| **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta |
+| **Käytön asetukset**              | Kaikki  |
+| **Tila**                         | Poistettu versiosta Dynamics 365 for Finance and Operations 10.0.0 platform update 24 alkaen. Poikkeustapauksissa, esimerkiksi palautettaessa vapautetun tuotteen aiemman perusavaimen nimeä, on mahdollista pyytää Microsoftia poistamaan tämä rajoitus tilapäisesti vapautettujen tuotteiden perusavaimen uudelleennimeämisestä. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 ja platform update 23

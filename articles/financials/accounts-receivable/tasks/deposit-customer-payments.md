@@ -3,7 +3,7 @@ title: Talleta asiakkaan maksuja
 description: Talleta asiakkaan maksut.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: afbf74d1cf3dc87e97dda0873115b5c7fa49ca3d
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 595d1b609ae83af8f1581caeff9ef7d3892a6207
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834460"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867771"
 ---
 # <a name="deposit-customer-payments"></a>Talleta asiakkaan maksuja
 
@@ -29,29 +29,22 @@ ms.locfileid: "1834460"
 
 Talleta asiakkaan maksut. Tässä tehtävässä käytetään esittely-yritystä USMF.
 
-1. Siirry kohtaan Myyntireskontra > Maksut > Maksukirjauskansio.
-2. Valitse Uusi.
-3. Avaa haku valitsemalla Nimi-kentässä avattavan valikon painike.
-4. Valitse maksukirjauskansio. 
-5. Valitse Rivit.
-6. Valitse Tili-kentässä asiakas, jolle maksu kirjataan.
-7. Syötä Kredit-kenttään maksun summa.
-    * Voit jättää summan tyhjäksi, jolloin järjestelmä laskee sen valitsemalla maksetut laskut.  
-8. Syötä Maksuviite-kenttään arvo.
-    * Maksuviite voi olla syöttämäsi maksun sekkinumero. Maksuviite vaaditaan, jotta maksu voidaan sisällyttää talletuskuittiin.  
-9. Valitse Käytä talletuskuittia -kohta.
-    * Jos maksu halutaan sisällyttää talletukseen, muuta tämän asetuksen arvoksi Kyllä.  
-10. Valitse Uusi.
-11. Valitse Tili-kentässä asiakas seuraa maksua varten.
-12. Syötä Kredit-kenttään maksun summa.
-13. Syötä Maksuviite-kenttään arvo.
-14. Valitse Käytä talletuskuittia -kohta.
-15. Valitse Kirjaa.
-    * Maksut on kirjattava, ennen kuin talletuskuitti luodaan. Näin varmistetaan, että maksut eivät muutu talletuskuitin luomisen jälkeen.  
-16. Valitse Toiminnot.
-17. Tulosta talletuskuitti.
-18. Valitse OK.
-    * Ensimmäisellä sivulla luodaan talletuskuitti.  
-19. Valitse OK.
-    * Toisessa vaiheessa talletuskuitti tulostetaan. Tämä vaihe ei kuitenkaan ole pakollinen.  
+1. Siirry kohtaan **Siirtymisruutu > Moduulit > Myyntireskontra > Maksut > Maksukirjauskansio**.
+2. Valitse **Uusi**.
+3. Valitse avattavasta **Nimi**-kentästä **CustPay**.
+4. Valitse **Rivit**.
+5. Valitse **Tili**-kentässä asiakas, jolle maksu kirjataan.
+6. Syötä **Kredit**-kenttään maksun summa. Voit jättää summan tyhjäksi, jolloin järjestelmä laskee sen valitsemalla maksetut laskut.  
+7. Syötä **Maksuviite**-kenttään arvo. Maksuviite voi olla syöttämäsi maksun sekkinumero. Maksuviite vaaditaan, jotta maksu voidaan sisällyttää talletuskuittiin.  
+8. Valitse Käytä talletuskuittia -kohta. Jos maksu halutaan sisällyttää talletukseen, muuta tämän asetuksen arvoksi Kyllä.  
+9. Valitse **Uusi**.
+10. Valitse **Tili**-kentässä asiakas seuraa maksua varten.
+11. Syötä **Kredit**-kenttään maksun summa.
+12. Syötä **Maksuviite**-kenttään arvo.
+13. Valitse **Käytä talletuskuittia** -kohta.
+14. Valitse **Kirjaa**. Maksut on kirjattava, ennen kuin talletuskuitti luodaan. Näin varmistetaan, että maksut eivät muutu talletuskuitin luomisen jälkeen.  
+15. Valitse **Toiminnot**.
+16. Valitse **Talletuskuitti**.
+17. Valitse **OK**. Ensimmäisellä sivulla luodaan talletuskuitti.  
+18. Valitse **OK**. Toisessa vaiheessa talletuskuitti tulostetaan. Tämä vaihe ei kuitenkaan ole pakollinen.  
 

@@ -3,7 +3,7 @@ title: Ominaisuuksien hallinnan yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään ominaisuuksien hallintatoimintoa ja sen käyttöä.
 author: mikefalkner
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 6aeb5383520f799223d62420f6e0c1079c6c961f
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862935"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887108"
 ---
 # <a name="feature-management-overview"></a>Ominaisuuksien hallinnan yleiskatsaus
 
@@ -103,8 +103,9 @@ Kaikki toiminnot, jotka voidaan ottaa käyttöön, otetaan käyttöön. Jos omin
 
 Oletusarvon mukaan kaikki ympäristöön lisätyt ominaisuudet poistetaan käytöstä, elleivät ne ole pakollisia toimintoja. Jos kuitenkin haluat ottaa kaikki uudet ominaisuudet automaattisesti käyttöön, voit muuttaa uusien ominaisuuksien lisäämisen tietoja käyttämällä työtilan otsikon alla olevaa avattavaa luetteloa.
 
-- Valitse **Kaikki uudet ominaisuudet otetaan oletusarvoisesti käyttöön**ottaaksesi automaattisesti käyttöön kaikki uudet ominaisuudet, kun ne lisätään omaan ympäristöön.
-- Valitse **Kaikki uudet ominaisuudet poistetaan oletusarvoisesti käytöstä** poistaaksesi automaattisesti käytöstä kaikki uudet ominaisuudet, kun ne lisätään omaan ympäristöön.
+- Valitse **Ota uudet ominaisuudet automaattisesti käyttöön** ottaaksesi automaattisesti käyttöön kaikki uudet ominaisuudet, kun ne lisätään omaan ympäristöön.
+- Valitse **Älä ota uusia ominaisuuksia automaattisesti käyttöön** ottaaksesi automaattisesti pois käytöstä kaikki uudet ominaisuudet, kun ne lisätään omaan ympäristöön.
+
 
 Kun otat kaikki ominaisuudet käyttöön automaattisesti, se ottaa käyttöön kaikki ominaisuudet, jotka olisivat käytössä, kun napsautat **Ota kaikki käyttöön**-painiketta. Se ei ota käyttöön vahvistusta edellyttäviä ominaisuuksia tai ominaisuuksia, joita ei voi ottaa käyttöön, ennen kuin toimia on suoritettu.
 

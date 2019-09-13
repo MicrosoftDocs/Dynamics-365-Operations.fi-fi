@@ -3,7 +3,7 @@ title: Todellisen painon tuotteen käsittely varastonhallinnan avulla
 description: Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ tehdään varastossa.
 author: perlynne
 manager: AnnBe
-ms.date: 03/18/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ed588ea28bec3e734f9648c1fbd7551ab0b3cdda
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836107"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887132"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
 
@@ -136,7 +136,6 @@ Todellisen painon tuotteen käsittely varastonhallinnan avulla ei tueta kaikissa
 
 - Todellisen painon tuotteissa ei tueta karanteenitilausten manuaalista luontia.
 - Työhön liittyvän varaston manuaalista siirtoa ei tueta todellisen painon tuotteissa.
-- Rekisterikilpien konsolidointia ei tueta todellisen painon tuotteissa.
 - Varaston varastotason alustamista lataamalla rekisterikilpi ei tueta todellisen painon tuotteissa.
 - Erän tasausprosesseja ei tueta todellisen painon tuotteissa.
 - Negatiivisen varastotilanteen käsittelyä ei tueta todellisen painon tuotteissa.
@@ -147,7 +146,6 @@ Todellisen painon tuotteen käsittely varastonhallinnan avulla ei tueta kaikissa
 - Klusterikeräilyä ei tueta todellisen painon tuotteissa.
 - Keräilyn ja pakkauksen varastokäsittelyä ei tueta todellisen painon tuotteissa.
 - Todellisen painon tuotteiden työmallissa määritetty työ voidaan suorittaa automaattisesti.
-- Työn peruuttamistoimintoa ei tueta todellisen painon tuotteissa.
 - Todellisen painon tuotteissa ei tueta sellaista manuaalista pakkausasemakäsittelyä, jossa työ on luotu konttien sulkemisen jälkeen.
 - Kappalekohtaista lukutoimintoa ei tueta todellisen painon tuotteissa.
  
