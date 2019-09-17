@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
+ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577792"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1781439"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Laajenna Talent käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä
 
@@ -101,24 +101,15 @@ Tämä malli voidaan laajentaa käytettäväksi missä tahansa SharePoint-integr
 
 Voit ladata **Työnkulku – SharePoint-integrointi** -mallin Microsoft Download Centerin kohdassa [Työnkulku – SharePoint-integrointi](https://go.microsoft.com/fwlink/?linkid=2082109).
 
-## <a name="admin-console-to-manage-talent-pools"></a>Hallintakonsoli kykypoolien hallintaan
+## <a name="referral-app"></a>Suositussovellus
+Voit lisätä ehdokkaita jaettuun kykypooliin suositussovelluksella. Suosittelija voi antaa **etunimen**, **sukunimen**, **sähköpostin** ja **Linkedlnin URL-osoitteen**, kun ehdokas lähetetään. Ehdokkaan lähteen metatiedot täytetään sitten suosittelijan tiedoilla.
 
-Kun otat käyttöön LinkedIn-integroinnin, Attract luo automaattisesti LinkedIn-kykypoolin. Kun rekrytoija lähettää InMail-viestin rekrytoitavan kanssa LinkedIn kautta, Attract luo profiilin rekrytoitavalle ja rekrytoitava tulee jäsenenä LinkedIn-kykypooliin. Tämä PowerApps-sovellus on hyödyllinen järjestettäessä ehdokkaita osaamisryhmiin taitojen perusteella.
+Voit upottaa tämän sovelluksen työntekijän itsepalveluun suositusten lähettämistä varten tai voit käyttää sitä linkkinä yritysportaalissa ja suorittaa sen itsenäisenä sovelluksena.
 
-Suorita tämä PowerApps-sovellus hallintakonsolina seuraavien tehtävien suorittamiseksi:
-
-- Listaa ehdokkaat kykypooliin
-- Hakijoiden lisääminen ja poistaminen kykypoolista
-- Siirrä ehdokkaita yhdestä kykypoolista toiseen
-- Päätä, ovatko ehdokkaat jo osa kykypoolia ennen niiden siirtämistä
-- Tarkista ehdokkaiden taidot ennen niiden siirtämistä muihin kykypooleihin
-
-Tämä PowerApps-sovellus käyttää monta-moneen-yhteyksiä, joten voit käyttää sitä mallina muille skenaarioille, joissa sinun täytyy poimia useita monta-moneen-yhteyksiä vaativia tietoja.
-
-Voit ladata **Hallintakonsoli kykypoolien hallintaan** -mallin siirtymällä kohtaan [Hallintakonsoli kykypoolien hallintaan](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) Microsoft Download Centerissä.
+Lataa **suositussovellus** siirtymällä [Dynamics 365 for Talent -laajennusratkaisu: suositussovellukseen](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) Microsoft Download Centerissä. Voit tuoda tämän sovelluksen ja mukauttaa sen lisäämään lisätoimintoja.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
 
-[Sovelluksen siirtäminen vuokraajien ja ympäristöjen kesken](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
+[Sovelluksen siirtäminen vuokraajien ja ympäristöjen kesken](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

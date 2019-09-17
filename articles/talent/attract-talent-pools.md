@@ -1,6 +1,6 @@
 ---
-title: Hakijoiden resursointi kykypoolien avulla
-description: Tässä ohjeaiheessa käsitellään Attractin kykypoolien luomista ja määrittämistä.
+title: Ehdokkaiden rekrytointi Microsoft Dynamics 365 for Talent - Attractin kykypoolien avulla
+description: Tässä ohjeaiheessa käsitellään kykypoolien luontia ja määrittämistä Microsoft Dynamics 365 for Talent - Attractissa.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/28/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
-ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
+ms.openlocfilehash: 98b93f69c4f4c8ca6c9a0fc2530578afed4b967c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "1711291"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741864"
 ---
-# <a name="source-candidates-by-using-talent-pools"></a>Hakijoiden resursointi kykypoolien avulla
+# <a name="source-candidates-with-talent-pools"></a>Hanki osaajia kykypoolien avulla
 
 [!include[banner](../includes/banner.md)]
 
@@ -79,7 +79,7 @@ Kykypoolin omistaja ja sen osallistujat voivat lisätä hakijoita pooliin, tarka
 ## <a name="search-and-view-candidate-profiles"></a>Hakijaprofiilien hakeminen ja tarkasteleminen
 
 > [!NOTE] 
-> Tämä ominaisuus on tällä hetkellä vain esiversiossa. Voit halutessasi kokeilla sitä [ottamalla sen käyttöön Attractin järjestelmänvalvojan asetuksissa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> Tämä ominaisuus on tällä hetkellä vain esiversiossa. Voit halutessasi kokeilla sitä [ottamalla sen käyttöön Attractin järjestelmänvalvojan asetuksissa](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). 
 
 Kykypoolien avulla voit tarkastella ehdokkaan profiilia, LinkedIn-tietoja, liittyviä asiakirjoja ja sovellushistoriaa. Voit tehdä haun mihin tahansa kykypooliin lisätystä ehdokkaiden tietokannasta, mukaan lukien suljetut ja aktiiviset hakijat.
 
@@ -116,7 +116,7 @@ Kaikilla käyttäjillä on sama hakijaprofiilien näkymä. **Profiili**-välileh
 
     Valitse tarkastelevan asiakirjan nimi asiakirjaluettelossa. Voit tarkastella Microsoft Word -asiakirjoja sovelluksessa Microsoft Office 365:n avulla. Voit myös ladata asiakirjat paikalliseen tietokoneeseen käyttämällä kussakin asiakirjassa olevaa **Lataa**-asetusta.
 
-- Hakijan LinkedIn-tiedot ovat **LinkedIn**-välilehdessä. Jos haluat käyttää tätä välilehteä, sinun on muodostettava käyttäjän asetuksissa yhteys LinkedIn-tiliin. Lisäksi ympäristössä on oltava LinkedIn Recruiter-yhteys. Lisätietoja on kohdassa [LinkedIn Recruiterin käyttö hankinnassa](./attract-linked-in-recruiter.md).
+- Hakijan LinkedIn-tiedot ovat **LinkedIn**-välilehdessä. Jos haluat käyttää tätä välilehteä, sinun on muodostettava käyttäjän asetuksissa yhteys LinkedIn-tiliin. Lisäksi ympäristössä on oltava LinkedIn Recruiter-yhteys. Lisätietoja on kohdassa [LinkedIn Recruiterin käyttö hankinnassa](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Vain ehdokkaat voivat päivittää osaamisalueensa, koulutushistoriansa ja työkokemuksensa.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617340"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742703"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talentin integrointia Dynamics 365 for Finance and Operationsiin koskevat usein kysytyt kysymykset
 
@@ -38,7 +38,7 @@ Attractin ja Onboardin osalta kaikki tiedot ovat alkuperäisiä Common Data Serv
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Voinko luoda uuden yhdistämismäärityksen ilman mallia?
 
-Mallien avulla pääsee alkuun. Voit luoda oman mallin, mutta integrointiprojektia luotaessa tarvitaan aina malli. Lisätietoja tietojen integrointiohjelmasta, malleista ja projekteista on kohdassa [Tietojen integrointi Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) -ratkaisuun.
+Mallien avulla pääsee alkuun. Voit luoda oman mallin, mutta integrointiprojektia luotaessa tarvitaan aina malli. Lisätietoja tietojen integrointiohjelmasta, malleista ja projekteista on kohdassa [Tietojen integrointi Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator) -ratkaisuun.
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Voinko määrittää taloushallinnon dimensiot siirtymään Talentin ja Finance and Operationsin välillä?
 
@@ -133,7 +133,7 @@ Integrointi Finance and Operationsiin tapahtuu kahdessa vaiheessa. Tarkista ensi
 
 Jos tiedot eivät näy odotetusti Common Data Servicessä, tarkista, että yksikön integrointia tuetaan. Jos Common Data Serviceen halutaan sisällyttää lisätietoja, se edellyttää muutosta Microsoftin puolella.
 
-Jos yksikköä tuetaan ja tiedot ovat käytettävissä Common Data Servicessä, tarkista, että yhdistämismääritys on oikein tietojen integrointiohjelmassa. Jos integrointiohjelman yhdistämismääritys näyttää olevan kunnossa, varmista seuraavaksi, että tietojen hallintatyöt on suoritettu. Erätöitä suoritettaessa voi tapahtua virheitä. Lisätietoja tietojen hallinnasta on kohdassa [Tietojen hallinta](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Jos yksikköä tuetaan ja tiedot ovat käytettävissä Common Data Servicessä, tarkista, että yhdistämismääritys on oikein tietojen integrointiohjelmassa. Jos integrointiohjelman yhdistämismääritys näyttää olevan kunnossa, varmista seuraavaksi, että tietojen hallintatyöt on suoritettu. Erätöitä suoritettaessa voi tapahtua virheitä. Lisätietoja tietojen hallinnasta on kohdassa [Tietojen hallinta](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Työntekijöiden osoitteet ovat virheellisiä Finance and Operationsiin tuonnin jälkeen. Mitä minun pitäisi tehdä?
 
@@ -145,7 +145,7 @@ Tarkista Talentin toteutuksen aikana, että Talentissa ja Finance and Operations
 
 Varmista, että valitset yhteyksiä luotaessa Dynamics 365 for Finance and Operationsin (tällä hetkellä esiversio) ja Common Data Servicen.
 
-## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Saan työsuhteita synkronoitaessa virheen, jonka mukaan CompanyInfo_FK ei ole olemassa tai kentän Työsuhteen päättymispäivämäärä arvoa 31.12.2154 23:59:59 ei löydy liittyvästä taulusta Työsuhde. Mitä minun pitäisi tehdä?
+## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Saan työsuhteita synkronoitaessa virheen, jonka mukaan CompanyInfo_FK ei ole olemassa tai kentän Työsuhteen päättymispäivämäärä arvoa 31.12.2154 23:59:59 ei löydy liittyvästä taulusta Työsuhde. Mitä minun pitäisi tehdä?
 
 Varmista, että yhdistämismääritys tehdään oikeisiin yrityksiin. Yrityksen synkronointi ei sisälly oletusmalliin, joten oletuksena on, että jokainen Talentissa ja Common Data Servicessä oleva yritys on myös Finance and Operationsissa.
 Varmista myös, että valitset liitetylle yhteysjoukolle oikeat yritykset.
@@ -160,12 +160,12 @@ Päivitä Finance and Operationsin tietoyksiköt valitsemalla **Tietojenhallinta
 
 - Tietojen integrointiohjelma: 
 
-  - [Integroi tiedot kohteeseen Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Integroi tiedot kohteeseen Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
-  - [Tietojen integrointiohjelman virheiden hallinta ja vianmääritys](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+  - [Tietojen integrointiohjelman virheiden hallinta ja vianmääritys](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Järjestelmän muodostamien lokien DSR-pyyntöihin vastaaminen PowerAppsissa, Microsoft Flowssa ja Common Data Servicessä](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Järjestelmän muodostamien lokien DSR-pyyntöihin vastaaminen PowerAppsissa, Microsoft Flowssa ja Common Data Servicessä](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Tietojen hallinta:
 
-  - [Tietojen hallinta](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Tietojen hallinta](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)

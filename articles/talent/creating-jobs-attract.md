@@ -3,7 +3,7 @@ title: Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa
 description: Tässä ohjeaiheessa käsitellään työn elementtejä Attractissa. Siinä käsitellään myös työn luomista.
 author: hasrivas
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
+ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517884"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "1773250"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa
+# <a name="create-a-job"></a>Työn luominen
 
 [!include [banner](includes/banner.md)]
 
@@ -81,33 +81,6 @@ Lisätietoja työpaikkailmoituksista on kohdassa [Attractin urasivuston toiminno
 > [!NOTE]
 > Työpaikkailmoitustoiminto on käytettävissä vain Attractin kattavan työhönottolaajennusta käytettäessä.
 
-### <a name="posting-jobs-to-linkedin"></a>Työpaikkojen julkaisu LinkedInissä 
-
-Ennen työpaikan julkaisua Attractista LinkedIniin järjestelmänvalvojan on lisättävä LinkedIn-yritystunnus ja LinkedIn-yritysnimi **hallinta-asetuksissa**. LinkedIn-yritystunnus on pakollinen, sillä sen avulla voidaan varmistaa, että Attractista julkaistut työpaikat määritetään oikealle yrityssivulle.
-
-LinkedIn-yritystunnus on numerojono, jolla yritys tunnistetaan yksilöivästi LinkedInissä. Lisätietoja LinkedIn-yritystunnuksen löytämisestä on kohdassa [LinkedIn-sivusto](https://aka.ms/findID).
-
-Päivitä LinkedIn-yritys valitsemalla **Hallintakeskus** **Asetukset**-valikossa (hammasrataskuvake) ja valitse sitten **LinkedIn-integrointi**-välilehti. Anna **Muodosta yhteys LinkedIniin** -osassa LinkedIn-yritysnimi ja -yritystunnus. Tallenna sitten asetukset.
-
-> [!NOTE]
-> Työpaikan julkaisuprosessissa LinkedIniin on otettava huomioon neljä tärkeää seikkaa.
-> 1. LinkedIniin julkaistavat työpaikat julkaistaan rajoitetun luettelon työpaikkoina. Rajoitetun luettelon työpaikkoja ei voi markkinoida koko LinkedIn-sivustossa. Jos haluat markkinoida LinkedIniin Attractista julkaistua rajoitetun luettelon työpaikkaa, ota työpaikan paketointi käyttöön LinkedInissä. Lisätietoja on seuraavissa linkeissä. Voit pyytää lisätietoja myös LinkedInin tuesta.
->
->    [Rajoitettujen luetteloiden vertailu työpaikkojen paketoinnin Premium-työpaikkoihin](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
->
->    [Usein kysyttyjä kysymyksiä työpaikan paketoinnista](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
->
-> 1. Kun Attract julkaisee työpaikkoja LinkedIniin, se välittää työpaikkaan liittyvän Microsoft 365 -organisaation nimen. LinkedIn linkittää työpaikat LinkedInin puoleiseen yritykseen välitetyn organisaation nimen perusteella. Jos työpaikka on väärän yrityksen luettelossa LinkedInissä, tarkista, että Microsoft 365 -organisaation nimi vastaa yrityksen nimeä LinkedInissä.  
->
->    [Osoitteen, yhteyshenkilöiden ja muiden tietojen muuttaminen](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
->
->    Jos tämän vaiheen jälkeen ilmenee ongelmia, ota yhteys LinkedInin tukeen. 
-> 
-> 1. LinkedIniin julkaistut työpaikat näkyvät julkaistuna LinkedIn-sivustossa. Työpaikkojen julkaisemiseen LinkedInissä ei ole testiympäristöä. 
->
-> 1. Voi kestää jopa 24 tuntia, ennen kuin LinkedIniin julkaistut työpaikat näkyvät ehdokkaille LinkedInissä. Tämä johtuu LinkedInin erätyönä tapahtuvasta julkaisuprosessista.
-
-
 ## <a name="activate"></a>Aktivoi
 
 Kun työ on aktivoitu, se voidaan julkaista. Siihen voidaan myös lisätä potentiaalisia ehdokkaita ja hakijoita. Potentiaalisten ehdokkaiden työhön lisäämisen asetus määritetään työhönottoprosessin Potentiaalinen ehdokas -tehtävässä.
@@ -142,7 +115,7 @@ Jos käyttäjä muokkaa työtä sen jälkeen, kun se on hyväksytty mutta ei akt
 Hyväksyjiksi merkityt henkilöt saavat Attractissa ilmoituksen ja sähköposti-ilmoituksen, jossa kerrotaan, että heillä on hyväksyttävä kohde.  Hyväksyjät voivat valita sähköpostiviestissä olevan linkin, jolloin työ avautuu. He voivat tarkastella tietoja ja joko hyväksyä tai hylätä sen. Kun työn tilaksi on määritetty **Hyväksytty** tai **Hylätty**, lähettäjälle lähetetään ilmoitus Attractissa sekä sähköpostitse. Hyväksyjät saavat myös muistutussähköpostiviestin, jos he eivät vastaa hyväksyntäpyyntöön 24 tunnin kuluessa.
 
 > [!NOTE]
-> Voit luoda mukautettuja sähköpostimalleja hyväksyntäsähköposteja varten. Lisätietoja on kohdassa [Sähköpostimallien luominen ja hallinta](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
+> Voit luoda mukautettuja sähköpostimalleja hyväksyntäsähköposteja varten. Lisätietoja on kohdassa [Sähköpostimallien luominen ja hallinta](https://docs.microsoft.com/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Työn luominen
 

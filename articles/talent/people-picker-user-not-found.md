@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d5a2c61fc21578d1db4c1bf0c3dfaf0c7a93298c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517890"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742746"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Azure Active Directory -käyttäjiä ei löydetä henkilöiden valitsimessa
 
@@ -36,9 +36,9 @@ Tietyt vuokraajan kelvolliset Microsoft Azure Active Directory (Azure AD) -käyt
 
 Tietyn tyyppisiä käyttäjiä ei tueta tällä hetkellä Attract- ja Onboard-sovelluksissa. Varmista, että käyttäjä ei ole Azure AD:n yritysten välinen vieraileva käyttäjä. Käyttäjätyyppiä koskeva tiedot sijaitsevat Azure-portaalini Azure Active Directory -lehdessä.
 
-Lisätietoja yritysten välisestä Azuresta on kohdassa [Vierailevan käyttäjän käyttöoikeudet yritysten välisessä Azure Active Directoryssa](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).
+Lisätietoja yritysten välisestä Azuresta on kohdassa [Vierailevan käyttäjän käyttöoikeudet yritysten välisessä Azure Active Directoryssa](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
-Tietyillä muilla kuin yritysten välisillä käyttäjillä **Käyttäjä**-objektin käyttäjätyyppiominaisuus voi olla vaillinainen. Se voidaan tarkistaa ja korjata Azure AD Powershell -moduulissa. Lisätietoja on kohdassa [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+Tietyillä muilla kuin yritysten välisillä käyttäjillä **Käyttäjä**-objektin käyttäjätyyppiominaisuus voi olla vaillinainen. Se voidaan tarkistaa ja korjata Azure AD Powershell -moduulissa. Lisätietoja on kohdassa [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
 
 ## <a name="resolution"></a>Ratkaisu
 

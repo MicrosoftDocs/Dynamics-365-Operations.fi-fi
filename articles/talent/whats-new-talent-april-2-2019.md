@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: andreabichsel
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8f488b0bf844fc04f07fedfa447073cdeabacc15
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f224114b132ae54dddb7766268c1fc5ec49e109d
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517871"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795241"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-2-2019"></a>Dynamics 365 for Talent -sovelluksen uudet tai muuttuneet ominaisuudet (2.4.2019)
 
@@ -57,13 +57,13 @@ Attractissa ja Onboardissa loppukäyttäjien kirjaamat ongelmat Ilmoita ongelmas
 Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2216.
 
 ### <a name="platform-update-25"></a>Ympäristön update 25 -päivitys
-Lisätietoja Platform update 25:stä on artikkelissa [Dynamics 365 for Finance and Operations platform update 25:n esiversio-ominaisuudet (huhtikuu 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+Lisätietoja Platform update 25:stä on artikkelissa [Dynamics 365 for Finance and Operations platform update 25:n esiversio-ominaisuudet (huhtikuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Kompensaation lisäsuojaus (kiinteä ja muuttuva)
 Monissa yrityksissä etuuspäälliköillä on ehkä vain määrättyjen kompensaatiotietueiden käyttöoikeus. Ne voivat olla johtajien tai alueellisten työntekijöiden tietueita. Tämä muutoksen ansiosta henkilöstöhallinto voi hallita ja ylläpitää organisaation erilaisten työntekijäryhmien kompensaatiosuunnitelmia. Voit määrittää käyttöoikeusrooleja kiinteille ja muuttuville suunnitelmille. Nämä käyttöoikeusroolit määrittävät käyttöoikeudet suunnitelmiin ja liittyviin työntekijätietoihin, kuten palkan tai bonuksen tietueisiin, jotta vain nämä roolit voivat käsitellä työntekijäryhmien kompensaatioita.
 
 ### <a name="upgrade-to-common-data-service"></a>Päivitä Common Data Serviceen
-Common Data Serviceen päivityksen määräajat lähestyvät nopeasti. Kirjaudu PowerApps-hallintakeskukseen ja tarkista, onko tietokanta päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Common Data Serviceen päivityksen määräajat lähestyvät nopeasti. Kirjaudu PowerApps-hallintakeskukseen ja tarkista, onko tietokanta päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Esiversiossa
 

@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: ebc82ada31d2803800358cd9aecfe389ada8f0dc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2cfa180f992a4f7a9b2e21e0fb3e0845c7546c94
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517928"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742711"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Hakijan profiilien ja sovellusten lähteiden seuraaminen 
+# <a name="track-candidate-sources"></a>Ehdokaslähteiden seuraaminen
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE] 
-> Tässä ohjeaiheessa mainitut toiminnot ovat saatavilla ennakkoversion osana. Sisältö ja toiminnot voivat muuttua. Voit käyttää tätä toimintoa pyytämällä järjestelmänvalvojaa ottamaan sen käyttöön Attractin **järjestelmänvalvojan asetuksissa**. Tuleva julkaisu tarjoaa lähdeseurantaraportteja. Lisätietoja on kohdassa [Talentin esiversiotoimintojen käyttö](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature).
+> Tässä ohjeaiheessa mainitut toiminnot ovat saatavilla ennakkoversion osana. Sisältö ja toiminnot voivat muuttua. Voit käyttää tätä toimintoa pyytämällä järjestelmänvalvojaa ottamaan sen käyttöön Attractin **järjestelmänvalvojan asetuksissa**. Tuleva julkaisu tarjoaa lähdeseurantaraportteja. Lisätietoja on kohdassa [Talentin esiversiotoimintojen käyttö](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 Kun hakijat hakevat työtä, Attract seuraa automaattisesti sovellustensa lähdettä ja antaa sinulle arvokasta tietoa, jonka avulla voit kohdistaa rekrytointityösi. Rekrytoijat ja rekrytointipäälliköt voivat myös valita sovelluslähteen samalla, kun lisäät hakijan manuaalisesti työ- tai lahjakkuusalueelle.
 
 Voit tarkastella sovelluksen lähdettä sovelluksen toiminnan yksityiskohdissa **Tehtävä**-välilehdellä samoin kuin sovellushistoria kohdassa **Profiili** kykypooleissa. Löydät hakijan profiililähteen hakijan tiedoista kohdasta **Profiili** sekä sovellusten ja kykypoolien välilehdeltä.
 
 > [!NOTE] 
-> Prosessimallit löytyvät kohdasta [Kattava työhönottolaajennus](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> Prosessimallit löytyvät kohdasta [Kattava työhönottolaajennus](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 
 ## <a name="pre-configured-sources"></a>Ennalta määritetyt lähteet
 
@@ -93,7 +93,7 @@ Oletuslähteiden luettelo sisältää yleisiä sovelluslähteitä. Joillakin lä
 
 ## <a name="customize-the-source-list"></a>Lähdeluettelon mukauttaminen 
 
-Voit laajentaa lähdeluetteloa lisäämällä muita sovelluslähteitä. Voit mukauttaa tätä luetteloa noudattamalla ohjeita kohdassa [Vaihtoehtoasetusten määrittäminen Attractissa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Muokkaa **TalentSource**-yksikköä sisällyttääksesi muita lähteitä. 
+Voit laajentaa lähdeluetteloa lisäämällä muita sovelluslähteitä. Voit mukauttaa tätä luetteloa noudattamalla ohjeita kohdassa [Vaihtoehtoasetusten määrittäminen Attractissa](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Muokkaa **TalentSource**-yksikköä sisällyttääksesi muita lähteitä. 
 
 Voit välttää käyttöliittymän (UI) negatiivista vaikutusta muokkaamalla tai poistamalla **TalentCategory** valintalistojen arvoja (ei nimiä) seuraaviin tarkoituksiin:
 
