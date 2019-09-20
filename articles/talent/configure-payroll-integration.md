@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702815"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742908"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen
 
@@ -52,8 +52,8 @@ Kun integrointi otetaan käyttöön, tietojen viennin paketti ja tiedostot luoda
 
 Lisätietoja Azure-tallennustilien ja Azure-tallennusyhteyden yhteysmerkkijonoista seuraavissa Azure-aiheissa:
 
-- [Lisätietoja Azure-tallennustileistä](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Määritä Azure-tallennustilan yhteysmerkkijonot](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+- [Lisätietoja Azure-tallennustileistä](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Määritä Azure-tallennustilan yhteysmerkkijonot](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Tekniset tiedot, kun palkanlaskennan integrointi on otettu käyttöön
 
@@ -123,10 +123,10 @@ Dayforce luo seuraavat vähennykset, jotka perustuvat palkanlaskennan vaikutukse
 
 Lisätietoja etuohjelman määrittämisestä ja hallitsemisesta seuraavissa aiheissa:
 
-- [Työsuhde-etuohjelman toteuttaminen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Luo uusi etu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Määritä edun oikeutussäännöt ja -käytännöt](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Rekisteröi etuja työntekijöille ja poista niitä](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Työsuhde-etuohjelman toteuttaminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Luo uusi etu](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Määritä edun oikeutussäännöt ja -käytännöt](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Rekisteröi etuja työntekijöille ja poista niitä](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompensaatio 
 
@@ -136,20 +136,20 @@ Dayforce käyttää kompensaatiotietoja laskeakseen työntekijän tunti- tai vuo
 
 Katso lisätietoja kompensaatiosuunnitelmista seuraavista ohjeaiheista:
 
-- [Kiinteiden kompensaatiosuunnitelmien luominen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Muuttuvien kompensaatiosuunnitelmien luominen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Palkka- ja kompensaatiorakenteen ja -suunnitelmien kehittäminen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Kompensaation käsittely](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
-- [Kompensaatioprosessin määrittäminen ja tulosten laskeminen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Työntekijän rekisteröiminen kiinteän kompensaation suunnitelmaan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Työntekijän rekisteröiminen muuttuvan kompensaation suunnitelmaan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Kiinteiden kompensaatiosuunnitelmien luominen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Muuttuvien kompensaatiosuunnitelmien luominen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Palkka- ja kompensaatiorakenteen ja -suunnitelmien kehittäminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Kompensaation käsittely](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+- [Kompensaatioprosessin määrittäminen ja tulosten laskeminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Työntekijän rekisteröiminen kiinteän kompensaation suunnitelmaan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Työntekijän rekisteröiminen muuttuvan kompensaation suunnitelmaan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Työt 
 
 Työ sisältää tehtäviä ja vastuita, joita työn suorittajalta edellytetään. Lisätietoja on seuraavissa aiheissa:
 
-- [Työn komponenttien määrittäminen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-job)
-- [Määritä uudet työt](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Työn komponenttien määrittäminen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
+- [Määritä uudet työt](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Toimet
 
@@ -173,8 +173,8 @@ Mikäli useita toimia samalla osastolla liittyy samaan työhön, ne yhdistetää
 
 Lisätietoja on seuraavissa aiheissa:
 
-- [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Toimien määritys](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Toimien määritys](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Osastot
 
@@ -182,8 +182,8 @@ Osasto on toimintayksikkö, joka vastaa organisaation luokkaa tai liiketoiminta-
 
 Lisätietoja on seuraavissa aiheissa:
 
-- [Osaston luominen ja liittäminen osastohierarkiaan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Määritä uudet osastot](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Osaston luominen ja liittäminen osastohierarkiaan](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Määritä uudet osastot](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Maksujaksot ja maksukaudet
 

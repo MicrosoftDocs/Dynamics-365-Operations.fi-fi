@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d69294b64c841c5486d694b129cf6c0f26fd93fd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d316aff83bd9f60f054a970e223777db5e214adb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517910"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741624"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-20-2019"></a>Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (20. maaliskuuta 2019)
 
@@ -46,7 +46,7 @@ Jos ehdokas unohtaa sen yhteisöpalvelun tunnistiedot, jonka avulla hän haki ty
 Aiemmin ulkoiset ehdokkaat näkivät työhön ottavan esimiehen tai muun työhönottajan nimen. Tämä ongelma on korjattu. Nyt vain sisäiset ehdokkaat näkevät työn työhönottoryhmän jäsenet. Sisäisten ehdokkaiden on nyt myös helpompi tarkastella vain sisäisiä töitä ja hakea niitä. Kun ehdokas yrittää käyttää linkkiä ja tarkastella sisäistä työtä tai hakea sitä, heidän on tehtävä todennus Azure Active Directory -tunnistetietojen avulla. Sisäiset ehdokkaat voivat myös ottaa yhteyttä työhönottoryhmän jäseniin ja osoittaa kiinnostuksensa työtä kohtaan tai pyytää siitä lisätietoja. Tämä ominaisuus on käytettävissä kaikille vain sisäisille ehdokkaille tarkoitetuille töille. Lisätietoja on kohdassa [Attractin urasivuston toiminnot](./career-site.md).
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Hopeamitalistien määrittäminen niin, että korkeamman arvon hakijat määritetään tulevia toimia varten
-Työhön ottavat esimiehet ja muut työhönottajat pitävat usein listaa hakijoista, jotka ovat sopivia toimeen, mutta joita ei voi harkita työhön, koska toimi on jo täytetty. Tällaiset hakijat, joita kutsutaan hopeamitalisteiksi, ovat tärkeitä, koska heitä voidaan käyttää seuraavan kerran saman tyyppisen toimen avautuessa. Attractin avulla työhön ottavat esimiehet ja muut työhönottajat voivat nyt määrittää hopeamitalisteja hakijaluetteloihin, jos hakija on edennyt tarjousvaiheeseen. Hopeamitalistimääritys näkyy työn hakijaluettelossa sekä kykypoolinäkymässä, kun nämä hakijat ovat työhön ottavan esimiehen tai muun työhönottajan minkä tahansa poolin jäseniä. Lisäksi määritys näkyy työhistoriassa ehdokkaan kykypoolin profiilin osana. Voit esikatsella tätä toimintoa, jos järjestelmänvalvoja ottaa sen käyttöön [hallintakeskuksen ominaisuuksien hallinnan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature) avulla.
+Työhön ottavat esimiehet ja muut työhönottajat pitävat usein listaa hakijoista, jotka ovat sopivia toimeen, mutta joita ei voi harkita työhön, koska toimi on jo täytetty. Tällaiset hakijat, joita kutsutaan hopeamitalisteiksi, ovat tärkeitä, koska heitä voidaan käyttää seuraavan kerran saman tyyppisen toimen avautuessa. Attractin avulla työhön ottavat esimiehet ja muut työhönottajat voivat nyt määrittää hopeamitalisteja hakijaluetteloihin, jos hakija on edennyt tarjousvaiheeseen. Hopeamitalistimääritys näkyy työn hakijaluettelossa sekä kykypoolinäkymässä, kun nämä hakijat ovat työhön ottavan esimiehen tai muun työhönottajan minkä tahansa poolin jäseniä. Lisäksi määritys näkyy työhistoriassa ehdokkaan kykypoolin profiilin osana. Voit esikatsella tätä toimintoa, jos järjestelmänvalvoja ottaa sen käyttöön [hallintakeskuksen ominaisuuksien hallinnan](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) avulla.
 
 ### <a name="add-applicants-to-talent-pools"></a>Hakijoiden lisääminen kykypooleihin
 Hakijoita on nyt aiempaa helpompi lisätä kykypooleihin, koska uusi toiminto näkyy hakijaluettelossa. Työhön ottava esimies tai muu työhönottaja voi valita kykypooliluettelosta valitsemalla **Lisää kykypooliin** -kuvakkeen. Tämän jälkeen hakijoiden lisääminen kykypooleihin on helppoa työn hakijaluettelosta.
@@ -58,7 +58,7 @@ Asiakaspalautteen perusteella työhönottajat voivat nyt määrittää, onko ans
 Ehdokkaat, joilla on jo päivitetty profiili LinkedInissä, voivat hakea töitä vain yhdellä napsautuksella kyseisen profiilin kautta.
 
 ### <a name="track-how-a-candidate-profile-originated-in-the-system-and-where-your-applicants-discover-the-jobs-they-applied-for"></a>Seuraa, miten ehdokasprofiili on tullut järjestelmään ja mistä ehdokkaat löytävät työt, joihin he hakevat
-Voit nyt katsoa, miten tietyn ehdokkaan profiili on saatu Attractiin, etsimällä profiilin lähteen ehdokkaan tiedoista hakemuksen tai kykypoolin profiilin **Profiili**-sivulla. Vastaavasti voit katsoa, miten hakija on löytänyt työn. Etsi hakemuksen lähde hakemuksen aktiviteettisyötteen **Hakemuksen aktiviteetti** -kohdasta. Nämä tiedot ovat käytettävissä myös kykypoolin profiilin työhistoriassa. Kun työnön ottavat esimiehet tai työhönottajat lisäävät ehdokkaita manuaalisesti, he näkevät kehotteen, jossa pyydetään määrittämään hakemuksen tai ehdokkaan profiilin lähde. Kun ehdokas hakee työtä ensimmäistä kertaa, hänen profiilin lähteensä on sama kuin hakemuksen lähde. Voit esikatsella tätä toimintoa, jos järjestelmänvalvoja ottaa sen käyttöön [hallintakeskuksen ominaisuuksien hallinnan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature) avulla. Huomaa, että olemassa olevilla ehdokkailla ja hakijoilla ei ole lähtetietoja. Työnöhottajat voivat kuitenkin lisätä nämä tiedot manuaalisesti.
+Voit nyt katsoa, miten tietyn ehdokkaan profiili on saatu Attractiin, etsimällä profiilin lähteen ehdokkaan tiedoista hakemuksen tai kykypoolin profiilin **Profiili**-sivulla. Vastaavasti voit katsoa, miten hakija on löytänyt työn. Etsi hakemuksen lähde hakemuksen aktiviteettisyötteen **Hakemuksen aktiviteetti** -kohdasta. Nämä tiedot ovat käytettävissä myös kykypoolin profiilin työhistoriassa. Kun työnön ottavat esimiehet tai työhönottajat lisäävät ehdokkaita manuaalisesti, he näkevät kehotteen, jossa pyydetään määrittämään hakemuksen tai ehdokkaan profiilin lähde. Kun ehdokas hakee työtä ensimmäistä kertaa, hänen profiilin lähteensä on sama kuin hakemuksen lähde. Voit esikatsella tätä toimintoa, jos järjestelmänvalvoja ottaa sen käyttöön [hallintakeskuksen ominaisuuksien hallinnan](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) avulla. Huomaa, että olemassa olevilla ehdokkailla ja hakijoilla ei ole lähtetietoja. Työnöhottajat voivat kuitenkin lisätä nämä tiedot manuaalisesti.
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
 

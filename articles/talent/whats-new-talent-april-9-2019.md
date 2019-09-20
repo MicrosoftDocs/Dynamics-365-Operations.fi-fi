@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 25ef0d49c2600833aefa84d404e00c0c57cfbf52
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517873"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856421"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Dynamics 365 for Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 9, 2019)
 
@@ -37,10 +37,10 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 for Talentin uusia tai muuttune
 Attract and Onboardissa ongelmat, jotka käyttävät raporttia käyttävien loppukäyttäjien kirjaamia ongelmia, luovat nyt automaattisesti tukikysymyksiä asiakkaan LCS-hankkeeseen. Järjestelmänvalvojat voivat sitten tarkistaa ongelmat ja lähettää ne Microsoftille tarpeen mukaan. Tämä vastaa sitä, miten Core HR käsittelee loppukäyttäjän tukitapauksia.
 
 ### <a name="relevance-search"></a>Osuvuushaku
-Kykyreserveistä voit etsiä tiettyjä osaamisalueita, nimiä ja koulutustietoja koko hakijatietokannasta. Sinun ei enää tarvitse määrittää sitä hakijan profiilin osaa, jonka haluat etsiä. Attract tekee hakuja koko profiilista ja korostaa kaikki löydetyt osumat. Attract hakee myös kaikki hakijan käytettävissä olevat asiakirjat ja luokittelee älykkäästi hakutulokset. Lisäksi voit suodattaa tulokset lähteen mukaan tai sen mukaan ovatko ne toisarvoisia. Lisätietoja on kohdassa [Hae ja katso hakijaprofiilit](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
+Kykyreserveistä voit etsiä tiettyjä osaamisalueita, nimiä ja koulutustietoja koko hakijatietokannasta. Sinun ei enää tarvitse määrittää sitä hakijan profiilin osaa, jonka haluat etsiä. Attract tekee hakuja koko profiilista ja korostaa kaikki löydetyt osumat. Attract hakee myös kaikki hakijan käytettävissä olevat asiakirjat ja luokittelee älykkäästi hakutulokset. Lisäksi voit suodattaa tulokset lähteen mukaan tai sen mukaan ovatko ne toisarvoisia. Lisätietoja on kohdassa [Hae ja katso hakijaprofiilit](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
 
 ### <a name="prospect-recommendations"></a>Prospektisuositukset
-Attract voi auttaa käynnistämään työn hankinnan heti, kun aktivoit sen tekemällä älykkäitä ehdotuksia organisaation ehdokastietokannasta. Suosituksiin sisältyy taitoja ja koulutusta koskevia tietoja, jotka on tunnistettu etsimällä merkityksellisiä näkymiä. Nämä suositukset näkyvät **Prospekti**-välilehdellä työn alla, jos otat sen käyttöön työhönottoprosessin aikana. Lisätietoja on kohdassa [Prospektisuositukset](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
+Attract voi auttaa käynnistämään työn hankinnan heti, kun aktivoit sen tekemällä älykkäitä ehdotuksia organisaation ehdokastietokannasta. Suosituksiin sisältyy taitoja ja koulutusta koskevia tietoja, jotka on tunnistettu etsimällä merkityksellisiä näkymiä. Nämä suositukset näkyvät **Prospekti**-välilehdellä työn alla, jos otat sen käyttöön työhönottoprosessin aikana. Lisätietoja on kohdassa [Prospektisuositukset](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
 
 ### <a name="interviewer-availability-statuses"></a>Haastattelijan käytettävyystilat
 Haastatteluaikataulujen tekijät voivat pian tarkastella haastattelijoiden **Poissa toimistosta, työskentelee muualla** -tiloja, jotta voivat suunnitella aikatauluja, jotka saattavat toimia haastattelijoille paremmin.

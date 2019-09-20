@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620617"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741749"
 ---
 # <a name="intelligent-recommendations"></a>Älykkäät suositukset
 
@@ -32,7 +32,7 @@ ms.locfileid: "1620617"
 Koneoppiminen voi auttaa työhönottajia ja työhön ottavia esimiehiä tunnistamaan toimeen parhaiten sopivat hakijat nopeasti. Lisäksi potentiaaliset ehdokkaat voivat löytää sen avulla heidän profiiliinsa ja kiinnostuksen kohteisiin parhaiten sopivan toimen. Kun ominaisuuksia käytetään ja niistä annetaan palautetta, suositukset paranevat.
 
 > [!NOTE] 
-> - Älykkäät suositustoiminnot ovat käytettävissä vain [kattavan työhönottolaajennuksen kanssa](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Älykkäät suositustoiminnot ovat käytettävissä vain [kattavan työhönottolaajennuksen kanssa](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 > - Tässä ohjeaiheessa mainitut toiminnot ovat saatavilla ennakkoversion osana. Sisältö ja toiminnot voivat muuttua. Voit käyttää tätä toimintoa pyytämällä järjestelmänvalvojaa ottamaan sen käyttöön Attractin **hallintakeskuksessa**. Määritä asetusten **Ehdokkaan suositus**, **Työn suositus** ja **Prospektisuositukset** arvoksi  **Käytössä**. Lisätietoja on kohdassa [Talentin esiversiotoimintojen käyttö](./access-preview-feature.md). 
 
 

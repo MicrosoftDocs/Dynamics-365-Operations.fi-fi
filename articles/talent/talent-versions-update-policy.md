@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ea8b7485b142245a359648a2a85d2a3e2a6d6629
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6c881bf25e7145228ccf7ef73a7ef3637c115a49
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517909"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741772"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Talentin järjestelmävaatimukset ja päivityskäytäntö
 
@@ -64,10 +64,10 @@ Voit ladata PDF-tiedoston maista, alueista ja kielistä, joita Talent tukee kohd
 > [!NOTE]
 > Kun käyttöliittymä on lokalisoitu muille kielille, kaikki käyttäjätiedot tallennetaan kielellä, jolla ne on kirjoitettu. Voit luoda sähköposteja ja malleja muilla kielillä, mutta tiedot, kuten aikataulun tiedot, ovat tällä hetkellä käytettävissä vain englanniksi.
 
-Jos olet kehittäjä, joka on kiinnostunut maa- tai aluekohtaisten mukautusten luonnista, tai kun luot ratkaisun maalle tai alueelle, jota Microsoft ei tällä hetkellä tue, Katso lisätietoja kohdasta [Globalisaatio](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+Jos olet kehittäjä, joka on kiinnostunut maa- tai aluekohtaisten mukautusten luonnista, tai kun luot ratkaisun maalle tai alueelle, jota Microsoft ei tällä hetkellä tue, Katso lisätietoja kohdasta [Globalisaatio](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
 ## <a name="update-policy"></a>Päivityskäytäntö
 
 Microsoft Dynamics 365 for Talent on pilvipalvelu. Dynamics 365 for Talentin päivitykset ovat jatkuvia ja Microsoft ottaa ne käyttöön automaattisesti.
 
-Päivitykset julkaistaan säännöllisesti, ja ne tehdään kaikkiin ympäristöihin. Dynamics 365 for Talentia tuetaan [Microsoft-tuen elinkaarikäytännön](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft-tuen elinkaari") mukaisesti, joka ilmaisee yhdenmukaisen ja ennakoitavan ohjeistuksen tuotetuen saatavuudesta.
+Päivitykset julkaistaan säännöllisesti, ja ne tehdään kaikkiin ympäristöihin. Dynamics 365 for Talentia tuetaan [Microsoft-tuen elinkaarikäytännön](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft-tuen elinkaari") mukaisesti, joka ilmaisee yhdenmukaisen ja ennakoitavan ohjeistuksen tuotetuen saatavuudesta.

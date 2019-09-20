@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517935"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741887"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (5. maaliskuuta 2019)
 
@@ -43,10 +43,10 @@ Attractissa on useita kenttiä, jotka ovat Common Data Servicen asetusjoukkoja. 
 ## <a name="changes-in-onboarding"></a>Onboardingin muutokset
 
 ### <a name="private-preview-for-onboard-teams"></a>Onboard-ryhmien yksityinen esiversio
-Malleja on nyt helppo jakaa ja niitä voi käyttää kätevästi koko organisaatiossa. Lisätietoja on kohdassa [Parhaiden käytäntöjen jakaminen organisaatiossa Onboard-ryhmien avulla](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
+Malleja on nyt helppo jakaa ja niitä voi käyttää kätevästi koko organisaatiossa. Lisätietoja on kohdassa [Parhaiden käytäntöjen jakaminen organisaatiossa Onboard-ryhmien avulla](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
 
 ### <a name="private-preview-for-assignee-placeholders"></a>Vastuuhenkilöiden paikkamerkkien yksityinen esiversio
-Voit täydentää malleja määrittämällä tehtäviä rooleille henkilöiden sijaan. Roolit määritetään sitten henkilöille oppaan luonnin yhteydessä. Lisätietoja on kohdassa [Oppaan hallinnan sujuvoittaminen määrittämällä tehtäviä rooleille](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
+Voit täydentää malleja määrittämällä tehtäviä rooleille henkilöiden sijaan. Roolit määritetään sitten henkilöille oppaan luonnin yhteydessä. Lisätietoja on kohdassa [Oppaan hallinnan sujuvoittaminen määrittämällä tehtäviä rooleille](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
 
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 **Koontiversio 8.1.2178**
@@ -71,7 +71,7 @@ Tämän muutoksen ansiosta palkanlaskentakenttien arvot palautuvat nyt nykyisiin
 Tässä julkaisussa on muita vähäisiä ohjelmakorjauksia.
 
 ### <a name="upgrade-to-common-data-service"></a>Päivitä versioon Common Data Service
-Common Data Service -versioon tapahtuvan päivityksen määräajat lähestyvät nopeasti. Kirjaudu PowerApps-hallintakeskukseen ja tarkista, onko tietokanta päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Common Data Service -versioon tapahtuvan päivityksen määräajat lähestyvät nopeasti. Kirjaudu PowerApps-hallintakeskukseen ja tarkista, onko tietokanta päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Tulossa pian
 
@@ -79,4 +79,4 @@ Common Data Service -versioon tapahtuvan päivityksen määräajat lähestyvät 
 Monissa organisaatioissa etuuspäälliköt voivat käyttää vain tiettyjä kompensaatiotietueita, kuten johtajien tai alueellisten työntekijöiden tietueita. Tämä muutoksen ansiosta voit hallita ja ylläpitää organisaation erilaisten työntekijäryhmien kompensaatiosuunnitelmia. Kiinteille ja muuttuville suunnitelmille voidaan määrittää käyttöoikeusrooleja, jotka määrittävät kyseisten suunnitelmien ja niihin liittyvien työntekijätietojen, kuten palkkatietojen tai bonustietueiden, käyttöoikeuden. Vain roolit, joilla on tietty käyttöoikeus, voivat käsitellä kyseisten työntekijöiden kompensaatiota.
 
 ###  <a name="platform-update-24"></a>Ympäristön update 24 -päivitys
-Lisätietoja Platform update 24:stä on kohdassa [Finance and Operations Platform update 24:n (maaliskuu 2019) uudet ja muuttuneet ominaisuudet](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Lisätietoja Platform update 24:stä on kohdassa [Finance and Operations Platform update 24:n (maaliskuu 2019) uudet ja muuttuneet ominaisuudet](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

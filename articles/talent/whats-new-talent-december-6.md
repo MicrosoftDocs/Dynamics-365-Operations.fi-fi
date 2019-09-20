@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 80d62492d58a436c15fac82df0d000ab9efa6ea5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f3d53440c5d19dd52fbab17305c3e99a73e570be
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517944"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742583"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (6. joulukuuta 2018)
 
@@ -62,7 +62,7 @@ Platform Update 22 -päivityksestä lähtien suodatinruudun ja ruudukon sarakkee
 
 ### <a name="configure-uk-payroll-integration-between-talent-and-dayforce"></a>Talentin ja Dayforcen välisen Ison-Britannian palkanlaskennan integroinnin määrittäminen
 
-Microsoft Dynamics 365 for Talentin ja Ceridian Dayforcen integraation esiversio on saatavilla Isossa-Britanniassa. Lisätietoja on kohdassa [Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/configure-payroll-integration).
+Microsoft Dynamics 365 for Talentin ja Ceridian Dayforcen integraation esiversio on saatavilla Isossa-Britanniassa. Lisätietoja on kohdassa [Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
 
 ## <a name="coming-soon"></a>Tulossa pian
 

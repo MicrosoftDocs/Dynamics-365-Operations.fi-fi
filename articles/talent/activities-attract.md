@@ -1,9 +1,9 @@
 ---
-title: Prosessien tehtävät
-description: Tässä ohjeaiheessa on tietoja erityyppisistä tehtävistä, joita voidaan käyttää työhönottoprosessissa.
+title: Microsoft Dynamics 365 for Talent - Attractin prosessien tehtävät
+description: Tässä ohjeaiheessa on tietoja erityyppisistä tehtävistä, joita voidaan käyttää Microsoft Dynamics 365 for Talent - Attractin työhönottoprosessissa.
 author: hasrivas
 manager: AnnBe
-ms.date: 04/10/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c975b95e4195c795ec4c816b1f3a50461715feea
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517934"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739709"
 ---
-# <a name="activities-in-the-hiring-processes"></a>Työhönottoprosessien tehtävät
+# <a name="activities-in-hiring-processes"></a>Työhönottoprosessien tehtävät
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,6 +37,9 @@ Tehtävät voidaan lisätä työhönottoprosessin osaksi Microsoft Dynamics 365 
 ## <a name="prospect-activity"></a>Potentiaalinen ehdokas -tehtävä
 
 Potentiaalinen ehdokas -tehtävä määrittää, voidaanko potentiaaliset ehdokkaat lisätä työhön. Potentiaaliset ehdokkaat voidaan oletusarvoisesti lisätä työhön. Voit poistaa Potentiaalinen ehdokas -tehtävän käytöstä valitsemalla **Ota potentiaaliset ehdokkaat käyttöön** -asetukseksi **Ei käytössä**. Kun Potentiaalinen ehdokas -tehtävä on otettu käyttöön, rekrytointipäälliköt voivat lisätä ja tarkastella potentiaalisia ehdokkaita työn kohdalla näkyvässä **Potentiaalinen ehdokas** -välilehdessä.
+
+> [!NOTE]
+> Voit sallia ehdokkaiden lisäämisen työhön LinkedInistä määrittämällä **Ota potentiaaliset ehdokkaat käyttöön** -asetukseksi **Käytössä**.
 
 ## <a name="application-activity"></a>Hakemus-tehtävä
 

@@ -1,6 +1,6 @@
 ---
-title: Attractin järjestelmänvalvojan asetukset
-description: Tässä ohjeaiheessa käsitellään toimintojen käyttöönottoa Attractissa organisaatioiden ja käyttäjien osalta.
+title: Yrityksen tietojen määrittäminen Microsoft Dynamics 365 for Talent - Attractissa
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent - Attractin yritystietojen ja brändäyksen määrittämistä.
 author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0de215103306ef7115ba390b1b4855179979c77b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c5b051497777a01ab304736f1d454391b5d98e63
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517937"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739561"
 ---
-# <a name="admin-settings-in-attract"></a>Järjestelmänvalvojan asetukset Attractissa
+# <a name="configure-company-information"></a>Määritä yrityksen tiedot
 [!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent: Attractin hallintakeskus sisältää Attract-sovelluksen määritysvaihtoehdot, integrointivaihtoehdot ja asetusvaihtoehdot.
@@ -36,7 +36,7 @@ Kirjoita yrityksen näyttönimi ja lisää yrityksen logo. Näyttönimeä ja log
 
 ## <a name="linkedin-integration"></a>LinkedIn-integrointi
 
-Voit määrittää integraation LinkedIn Recruiter System Connect (RSC) -työkalulla. Kun olet muodostanut LinkedIn-yhteyden LinkedIn-tunnistetiedoilla, voit synkronoida ehdokkaan LinkedIn-profiilin, hakemukset, haastattelun palautteen ja työhönottoryhmän muistiinpanot. Täysi LinkedIn Recruiter -käyttöoikeus on pakollinen. Lisätietoja LinkedIn Recruiter -työkalusta, katso [Recruiter System Connect (RSC) – usein kysytyt kysymykset](https://www.linkedin.com/help/recruiter/answer/90483).
+Voit määrittää integraation LinkedIn Recruiter System Connect(RSC) -työkalulla. Kun olet muodostanut LinkedIn-yhteyden LinkedIn-tunnistetiedoilla, voit synkronoida ehdokkaan LinkedIn-profiilin, hakemukset, haastattelun palautteen ja työhönottoryhmän muistiinpanot. Täysi LinkedIn Recruiter -käyttöoikeus on pakollinen. Lisätietoja LinkedIn Recruiter -työkalusta, katso [Recruiter System Connect (RSC) – usein kysytyt kysymykset](https://www.linkedin.com/help/recruiter/answer/90483).
 
 ## <a name="user-permissions"></a>Käyttöoikeudet
 

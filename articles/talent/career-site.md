@@ -1,6 +1,6 @@
 ---
-title: Attractin urasivuston toiminnot
-description: Tässä ohjeaineessa on Attractin ehdokkaalle tarkoitetun urasivustotoimintojen yleiskatsaus.
+title: Urasivuston määrittäminen Microsoft Dynamics 365 for Talent - Attractissa
+description: Tässä ohjeaiheessa on yleiskatsaus Microsoft Dynamics 365 for Talent - Attractin ehdokkaan käytössä olevasta urasivustotoiminnosta.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729700"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739768"
 ---
-# <a name="career-site-functionality-in-attract"></a>Attractin urasivuston toiminnot
+# <a name="set-up-your-career-site"></a>Urasivuston määrittäminen
 
 [!include[banner](../includes/banner.md)]
 
@@ -131,7 +131,7 @@ Voit auttaa ehdokkaita hakemaan toimia määrittämällä Attractin niin, että 
 1. Kirjaudu Attractiin järjestelmänvalvojana.
 2. Valitse **Asetukset**-painike (rataskuvake) sivun oikeassa yläkulmassa ja valitse sitten **Hallintakeskus**.
 3. Valitse **LinkedIn-integrointi**-välilehti ja muodosta yhteys LinkedInin työhönottajan tiliin.
-4. Valitse **LinkedIn Recruiter System Connect -integrointi** -osassa **Käytössä** **Hae LinkedInin kautta** -asetusta varten.
+4. Valitse **LinkedIn Recruiter System Connect-integrointi** -osassa **Käytössä** **Hae LinkedInin kautta** -asetusta varten.
 
 Kun olet ottanut asetuksen käyttöön, ehdokkaat voivat hakea käyttämällä olemassa olevan LinkedIn-profiilin tietojen avulla. Kun ehdokkaat hakevat töitä valitsemalla **Hae LinkedInin kautta** -painikkeen, heitä pyydetään tekemään todennus LinkedInin avulla, jos he eivät ole kirjautuneena sisään. Kun he ovat tehneet todennuksen, LinkedIn-profiili korvaa aiemmin määritetyt profiilin tiedot hakemuksen sivulla. Ehdokkaat voivat muokata tietoja tarvittaessa. Tämän jälkeen he voivat lähettää sovelluksen. Jos ehdokas siirtyy pois sivulta eikä hae työtä, heidän profiilinsa tietoja ei päivitetä Attractiin.
 
