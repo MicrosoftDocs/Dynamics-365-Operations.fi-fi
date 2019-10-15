@@ -1,5 +1,5 @@
 - name: Dynamics 365 for Talent
-  href: index.md
+  href: index.yml
   items:
     - name: Aloittaminen
       items:
@@ -8,6 +8,14 @@
         - name: Talentin uudet ja muuttuneet ominaisuudet
           href: whats-new.md
           items:
+            - name: 1. lokakuuta 2019
+              href: whats-new-talent-october-1-2019.md
+            - name: 17. syyskuuta 2019
+              href: whats-new-talent-september-17-2019.md
+            - name: 10. syyskuuta 2019
+              href: whats-new-talent-september-12-2019.md
+            - name: 27. elokuuta 2019
+              href: whats-new-talent-august-28-2019.md
             - name: 22. elokuuta 2019
               href: whats-new-talent-august-21-2019.md
             - name: 13. elokuuta 2019
@@ -24,16 +32,16 @@
               href: whats-new-talent-july-9-2019.md
             - name: 2. heinäkuuta 2019
               href: whats-new-talent-july-2-2019.md
-            - name: 25. kesäkuuta 2019
-              href: whats-new-talent-june-25-2019.md
-            - name: 18. kesäkuuta 2019
-              href: whats-new-talent-june-18-2019.md
-            - name: 11. kesäkuuta 2019
-              href: whats-new-talent-june-11-2019.md
-            - name: 4. kesäkuuta 2019
-              href: whats-new-talent-june-4-2019.md
-            - name: Uutuudet-arkisto 2019
+            - name: Uudet ominaisuudet -arkisto 2019
               items:
+                - name: 25. kesäkuuta 2019
+                  href: whats-new-talent-june-25-2019.md
+                - name: 18. kesäkuuta 2019
+                  href: whats-new-talent-june-18-2019.md
+                - name: 11. kesäkuuta 2019
+                  href: whats-new-talent-june-11-2019.md
+                - name: 4. kesäkuuta 2019
+                  href: whats-new-talent-june-4-2019.md
                 - name: 28. toukokuuta 2019
                   href: whats-new-talent-may-28-2019.md
                 - name: 21. toukokuuta 2019
@@ -116,7 +124,7 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR ja Common Data Service
           href: CoreHREntities.md
-        - name: Talent-tuen saaminen
+        - name: Talent-tuen hankkiminen
           href: talent-support.md
     - name: Henkilöstön palkkaaminen organisaatioon Attractin avulla
       items:
@@ -407,7 +415,7 @@
       items:
         - name: Upotettu Power BI työtiloissa
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Laajenna Talent käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä
+        - name: Talentin laajentaminen käyttämällä PowerAppsia ja Microsoft Flowta – esimerkkitapauksia
           href: extensibility-examples.md
         - name: Mobiilisovellus
           items:
@@ -427,9 +435,11 @@
           href: corehr-custom-fields.md
     - name: Talentin vianmääritys
       items:
-        - name: Vianmääritys koskien työpaikkojen julkaisemista LinkedInissä
+        - name: Optimoi suorituskyky automaattisilla tyhjennystehtävillä
+          href: talent-batch-history-cleanup.md
+        - name: Työpaikkojen LinkedInissä julkaisemisen vianmääritys
           href: attract-troubleshoot-linkedin.md
-        - name: Analyysiraportteja ei päivitetä
+        - name: Analytiikkaraportteja ei päivitetä
           href: analytic-reports-not-updated.md
         - name: PowerApps-hallintakeskuksessa ei voi luoda ympäristöä
           href: create-envi-powerapps-admin-ctr.md

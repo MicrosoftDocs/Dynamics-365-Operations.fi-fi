@@ -1,2 +1,2 @@
 > [!NOTE]
-> <span data-ttu-id="b64d0-101">Tämä ohjeaihe koskee sekä Dynamics 365 for Finance and Operationsia että Dynamics 365 for Retailia.</span><span class="sxs-lookup"><span data-stu-id="b64d0-101">This topic applies to both Dynamics 365 for Finance and Operations and to Dynamics 365 for Retail.</span></span> 
+> <span data-ttu-id="62514-101">Tämä ohjeaihe koskee ohjelmia Finance, Supply Chain Management ja Retail.</span><span class="sxs-lookup"><span data-stu-id="62514-101">This topic applies to Finance, Supply Chain Management, and Retail.</span></span> 

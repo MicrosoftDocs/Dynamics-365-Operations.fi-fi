@@ -1,0 +1,2 @@
+ [!IMPORTANT]
+> <span data-ttu-id="f942f-101">Kohdistetut käyttäjät saavat tässä ohjeaiheessa mainitut toiminnot käyttöönsä yksityisen ennakkoversion osana.</span><span class="sxs-lookup"><span data-stu-id="f942f-101">Functionality noted in this topic is available to targeted users as part of a private preview release.</span></span> <span data-ttu-id="f942f-102">Sisältö ja toiminnot voivat muuttua.</span><span class="sxs-lookup"><span data-stu-id="f942f-102">The content and the functionality are subject to change.</span></span> 
