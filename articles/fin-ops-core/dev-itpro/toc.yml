@@ -1,0 +1,1628 @@
+- name: Finance and Operationsin kehittäminen ja hallinta
+  items:
+    - name: Finance and Operationsin kehittäminen ja hallinta
+      items:
+        - name: Finance and Operationsin kehittäminen ja hallinta
+          href: index.md
+        - name: Uudet ja muuttuneet ominaisuudet
+          items:
+            - name: 'Platform update 30:n esikatseluominaisuudet (marraskuu 2019)'
+              href: ../fin-ops/get-started/whats-new-platform-update-30.md
+            - name: Platform update 29 (lokakuu 2019)
+              href: ../fin-ops/get-started/whats-new-platform-update-29.md
+            - name: Platform update 28 (heinäkuu 2019)
+              href: ../fin-ops/get-started/whats-new-platform-update-28.md
+            - name: Platform update 27 (kesäkuu 2019)
+              href: ../fin-ops/get-started/whats-new-platform-update-27.md
+            - name: Platform update 26 (toukokuu 2019)
+              href: ../fin-ops/get-started/whats-new-platform-update-26.md
+            - name: Platform update 25 (huhtikuu 2019)
+              href: ../fin-ops/get-started/whats-new-platform-25.md
+            - name: Platform update 24 (maaliskuu 2019)
+              href: ../fin-ops/get-started/whats-new-platform-update-24.md
+            - name: Platform update 23 (tammikuu 2019)
+              href: ../fin-ops/get-started/whats-new-platform-update-23.md
+            - name: Platform update 22 (joulukuu 2018)
+              href: ../fin-ops/get-started/whats-new-platform-update-22.md
+            - name: Platform update 21 (marraskuu 2018)
+              href: ../fin-ops/get-started/whats-new-platform-update-21.md
+            - name: Platform update 20 (syyskuu 2018)
+              href: ../fin-ops/get-started/whats-new-platform-update-20.md
+            - name: Platform update 15 (maaliskuu 2018)
+              href: ../fin-ops/get-started/whats-new-platform-update-15.md
+        - name: Liiketoimintatapahtumat
+          items:
+            - name: Liiketoimintatapahtumien yleiskatsaus
+              href: business-events/home-page.md
+            - name: Sovellusliiketoimintatapahtumat
+              href: business-events/app-business-events.md
+            - name: Työnkulun liiketoimintatapahtumat
+              href: business-events/business-events-workflow.md
+            - name: Hälytykset liiketoimintatapahtumina
+              href: business-events/alerts-business-events.md
+            - name: Liiketoimintatapahtumat Microsoft Flowssa
+              href: business-events/business-events-flow.md
+            - name: Liiketoimintatapahtumien kehitysdokumentaatio
+              href: business-events/business-events-dev-doc.md
+            - name: Liiketoimintatapahtumien vianmääritys
+              href: business-events/troubleshooting.md
+            - name: Tapausten käyttö liiketoimintatapahtumissa
+              href: business-events/potential-use-cases.md
+            - name: Oppaat
+              items:
+                - name: Liiketoimintatapahtumat ja Microsoft Flow
+                  href: business-events/how-to/how-to-flow.md
+                - name: Liiketoimintatapahtumat ja Azuren tapahtumaruudukko
+                  href: business-events/how-to/how-to-eventgrid.md
+                - name: Liiketoimintatapahtumat ja Azure-palveluväylä
+                  href: business-events/how-to/how-to-servicebus.md
+                - name: Liiketoimintatapahtumat ja työnkulun hyväksynnät
+                  href: business-events/how-to/how-to-workflow.md
+                - name: Liiketoimintatapahtumat ja Microsoft Forms Pro
+                  href: business-events/how-to/FormsPro.md
+                - name: Liiketoimintatapahtumat ja Azuren tapahtumakeskus
+                  href: business-events/how-to/event-hub.md
+        - name: Jatkuva toimitus
+          items:
+            - name: Jatkuvan toimituksen aloitussivu
+              href: dev-tools/continuous-delivery-home-page.md
+            - name: Kehityksen ja jatkuvan toimituksen usein kysytyt kysymykset
+              href: dev-tools/continuous-delivery-faq.md
+            - name: Testipakettien jättäminen pois koonnin tuotoksesta
+              href: dev-tools/exclude-test-packages.md
+            - name: Kolmannen osapuolen mallien ja suorituspalvelupakettien hallinta lähteenhallinnan avulla
+              href: dev-tools/manage-runtime-packages.md
+            - name: Automatisoidun koontiversion malliversioiden päivittäminen
+              href: dev-tools/version-models-build.md
+        - name: Tietojen integrointi
+          items:
+            - name: Tietojen integrointistrategian (tuonti/vienti) valitseminen
+              href: data-entities/integration-overview.md
+            - name: Tietojen integroinnin ohjelmointirajapinnat
+              items:
+                - name: Tietojen hallintapaketin REST API -ohjelmointirajapinta
+                  href: data-entities/data-management-api.md
+                - name: Palvelun päätepisteet
+                  items:
+                    - name: Palvelun päätepisteiden yleiskuvaus
+                      href: data-entities/services-home-page.md
+                    - name: Palvelun todennuksen vianmääritys
+                      href: data-entities/troubleshoot-service-authentication.md
+                - name: OData
+                  href: data-entities/odata.md
+                - name: Mukautettu palvelukehitys
+                  href: data-entities/custom-services.md
+                - name: Toistuvat integroinnit
+                  href: data-entities/recurring-integrations.md
+                - name: Palvelujen testaaminen kolmannen osapuolen apuohjelmien avulla
+                  href: data-entities/third-party-service-test.md
+            - name: Finance and Operations Connector
+              href: data-entities/fin-ops-connector.md
+            - name: Integroinnin kehitys
+              items:
+                - name: Tietojen integraatio tietoyksikköjen avulla
+                  items:
+                    - name: Tietojen integraatio tietoyksikköjen avulla – yleiskatsaus
+                      href: data-entities/data-management-integration-data-entity.md
+                    - name: Tietojen siirtoyksikön kehittäminen
+                      href: data-entities/develop-entity-for-data-migration.md
+                    - name: Yhdistelmätietoyksiköiden kehittäminen
+                      href: data-entities/develop-composite-data-entities.md
+                    - name: Määritä yritysten välinen taloustietojen jakaminen
+                      href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
+                    - name: Tietuemallien luonti tietojen kirjaamista varten
+                      href: data-entities/tasks/create-record-template-facilitate-data-entry.md
+                    - name: Tietueiden luonti tietuemallien avulla
+                      href: data-entities/tasks/use-record-template-new-record.md
+                - name: Tietojen integrointi Common Data Servicen avulla
+                  items:
+                    - name: Tietojen integrointi Common Data Servicen avulla – yleiskatsaus
+                      href: data-entities/data-integration-cds.md
+                    - name: 'Synkroninen, kaksisuuntainen integrointi'
+                      items:
+                        - name: Lähes reaaliaikainen tietojen integrointi
+                          href: data-entities/dual-write-overview.md
+                        - name: Organisaatiohierarkia Common Data Servicessä
+                          href: data-entities/dual-write-organization.md
+                        - name: Yrityskonsepti Common Data Servicessä
+                          href: data-entities/dual-write-company.md
+                        - name: Integroidut asiakkaan päätiedot
+                          href: data-entities/dual-write-customer.md
+                        - name: Yhtenäinen tuotekokemus
+                          href: data-entities/dual-write-product.md
+                        - name: Integroidut toimittajan päätiedot
+                          href: data-entities/dual-write-vendor.md
+                        - name: Integroidut toimipaikat ja varastot
+                          href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: Ensimmäinen synkronointi
+                          href: data-entities/dual-write-initial.md
+                        - name: Tietojen integroinnin vianmääritys
+                          href: data-entities/dual-write-troubleshooting.md
+                    - name: 'Asynkroninen, yksisuuntainen integrointi'
+                      items:
+                        - name: Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen
+                          items:
+                            - name: Prospektista käteiseksi
+                              href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                            - name: Asiakkaiden synkronointi suoraan Salesista Finance and Operationsin asiakkaisiin
+                              href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                            - name: Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
+                              href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                            - name: Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin
+                              href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                            - name: Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Finance and Operationsiin
+                              href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                            - name: Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä
+                              href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                            - name: Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
+                              href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                        - name: Integroinnin määrittäminen Field Servicen kanssa
+                          items:
+                            - name: Integroinnin määrittäminen Field Servicen kanssa – yleiskatsaus
+                              href: ../../supply-chain/sales-marketing/field-service.md
+                            - name: Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin
+                              href: ../../supply-chain/sales-marketing/field-service-product.md
+                            - name: Field Servicen työtilausten synkronointi Finance and Operationsin myyntitilauksiin
+                              href: ../../supply-chain/sales-marketing/field-service-work-order.md
+                            - name: Field Servicen sopimuslaskujen synkronointi Finance and Operationsin vapaatekstilaskuihin
+                              href: ../../supply-chain/sales-marketing/field-service-invoice.md
+                            - name: Field Servicen varastosiirtojen ja oikaisujen synkronointi Finance and Operationsiin
+                              href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                            - name: Finance and Operationsin varastotasotietojen synkronointi Field Serviceen
+                              href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                            - name: Finance and Operationsin tuotteiden ja varastoyksiköiden synkronointi Field Serviceen
+                              href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                            - name: Finance and Operationsin projektiluetteloiden synkronointi Field Serviceen
+                              href: ../../supply-chain/sales-marketing/synchronize-project-list.md
+                            - name: Finance and Operationsin fyysisten varastojen synkronointi Field Serviceen
+                              href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
+                            - name: Finance and Operationsin työtilausten ja projektin synkronointi Field Serviceen
+                              href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
+                        - name: Project Service Automation -integroinnin määrittäminen
+                          items:
+                            - name: Project Service Automationin yleiskatsaus
+                              href: ../../finance/project-management/PSA-integration.md
+                            - name: Project Service Automation -integrointiparametrit
+                              href: ../../finance/project-management/PSA-parameters.md
+                            - name: Projektisopimusten ja projektien synkronointi
+                              href: ../../finance/project-management/project-contracts-templates.md
+                            - name: Projektitehtävien synkronointi
+                              href: ../../finance/project-management/project-tasks-template.md
+                            - name: Projektin kululuokkien synkronointi
+                              href: ../../finance/project-management/project-categories-templates.md
+                            - name: Projektin arvioiden synkronointi projektin ennusteisiin
+                              href: ../../finance/project-management/project-estimates-templates.md
+                            - name: Projektin toteutuneiden tietojen synkronointi projektin integrointikirjauskansioon
+                              href: ../../finance/project-management/project-actuals-templates.md
+            - name: Ulkoisten verkkopalveluiden käyttö
+              href: data-entities/consume-external-web-service.md
+            - name: Sähköiset sanomat
+              href: ../../finance/general-ledger/electronic-messaging.md
+        - name: Tietojen hallinta
+          items:
+            - name: Tietojen hallinnan yleiskatsaus
+              href: data-entities/data-entities-data-packages.md
+            - name: Tietoyksiköt
+              items:
+                - name: Tietoyksiköiden yleiskatsaus
+                  href: data-entities/data-entities.md
+                - name: Konfigurointitietoprojektit
+                  href: data-entities/configuration-data-projects.md
+                - name: Konfigurointitietojen kopiointi yhtiöiden tai yritysten välillä
+                  items:
+                    - name: Konfigurointitietojen kopiointi – yleiskatsaus
+                      href: data-entities/copy-configuration.md
+                    - name: Konfigurointitietopaketit
+                      href: data-entities/configuration-data-packages.md
+                    - name: Konfigurointitietopaketit (vain heinäkuun 2017 versio)
+                      href: data-entities/configuration-data-packages.md
+                    - name: Määritä yksikkösäilö saataville Data Lake -säilönä
+                      href: data-entities/entity-store-data-lake.md
+                - name: Konfigurointitietomallit
+                  href: data-entities/configuration-data-templates.md
+                - name: Muutosten seuranta yksikköön
+                  href: data-entities/entity-change-track.md
+                - name: Tietojen etsiminen vakiotietoyksiköistä
+                  href: data-entities/data-entities-report.md
+                - name: Useita laskentataulukoita sisältävät tietomallit
+                  href: data-entities/excel-template-multiple.md
+                - name: Muutosten seurannan ottaminen käyttöön yksiköille
+                  href: data-entities/entity-change-track.md
+                - name: Konfigurointiavaimet ja tietoyksiköt
+                  href: data-entities/config-key-entities.md
+                - name: Konfigurointitietopaketit
+                  href: data-entities/configuration-data-packages.md
+            - name: Tietojen tuonti- ja vientityöt
+              items:
+                - name: Tietojen tuonti- ja vientityöt – yleiskatsaus
+                  href: data-entities/data-import-export-job.md
+                - name: Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
+                  href: data-entities/tips-tricks-import-general-journal-entity.md
+            - name: Tietoyksiköiden kehittäminen
+              items:
+                - name: Tietoyksiköiden suunnittelun periaatteet ja parhaat käytännöt
+                  href: dev-tools/design-best-practices.md
+                - name: Uusien tietoyksiköiden luominen
+                  href: data-entities/build-consuming-data-entities.md
+                - name: Tietoyksiköiden ominaisuudet
+                  href: data-entities/behavioral-properties-data-entities.md
+                - name: Laskettavien sarakkeiden ja virtuaalikenttien luominen
+                  href: data-entities/data-entity-computed-columns-virtual-fields.md
+                - name: Yritystenvälinen toiminta
+                  href: data-entities/cross-company-behavior.md
+                - name: Maa-/aluekoodien käsitteleminen
+                  href: data-entities/countryregion-codes-configuration-keys.md
+                - name: Periytyvyysmallit
+                  href: data-entities/support-super-type-sub-type.md
+                - name: Ohjatun tietoyksikkötoiminnon säännöt
+                  href: data-entities/data-entity-wizard-rules.md
+                - name: Metatietojen ominaisuudet
+                  href: data-entities/behavioral-properties-data-entities.md
+                - name: 'Tarkistukset, oletukset ja yhdistämättömät kentät'
+                  href: data-entities/validations-defaults-unmapped-fields.md
+                - name: Suojaus ja tietoyksiköt
+                  href: data-entities/security-data-entities.md
+                - name: Kolmannen osapuolen palvelun testausapuohjelmien käyttäminen
+                  href: data-entities/third-party-service-test.md
+                - name: Taloushallinnon dimensiot näyttävien vain luku -tyyppisten yksiköiden luominen
+                  href: financial/read-only-entity-financial.md
+            - name: Tuo oma tietokantasi
+              href: analytics/export-entities-to-your-own-database.md
+            - name: Yksikkösäilön automaattinen päivitys
+              href: analytics/automated-entity-store-refresh.md
+            - name: Tietotehtävän automaatio
+              href: data-entities/data-task-automation.md
+            - name: Tietojen tarkistuksen tarkistusluettelon työtila
+              href: user-interface/data-validation-workspace.md
+            - name: Tietojenhallintavirheiden kuvaukset
+              href: data-entities/dm-error-descriptions.md
+        - name: Tietokannan siirtotoiminnot
+          items:
+            - name: Yleiskatsaus
+              href: database/dbmovement-operations.md
+            - name: Pika-aloitusoppaat
+              items:
+                - name: Tietokannan päivittäminen
+                  href: database/database-refresh.md
+                - name: Tietokannan vieminen
+                  href: database/export-database.md
+                - name: Tietokannan tuominen
+                  href: database/import-database.md
+                - name: Tietokannan tietyn ajankohdan palautus
+                  href: database/database-point-in-time-restore.md
+            - name: Oppaat
+              items:
+                - name: Koulutustarkoitusten päivittäminen
+                  href: database/dbmovement-scenario-general-refresh.md
+                - name: Virheenkorjaus tuotantotietokannan kopion perusteella
+                  href: database/dbmovement-scenario-debugdiag.md
+                - name: Vie kopio vakiokäyttäjän hyväksyntätestin (UAT) tietokannasta
+                  href: database/dbmovement-scenario-exportuat.md
+                - name: Golden-määrityksen kampanja
+                  href: database/dbmovement-scenario-goldenconfig.md
+                - name: Destruktiivinen testaus
+                  href: database/dbmovement-scenario-destructivetests.md
+        - name: Esittelytiedot
+          items:
+            - name: Esittelytietojen yleiskatsaus
+              href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
+            - name: Esittelytietojen luominen tietopakettien avulla
+              href: data-entities/generate-demo-data-packages.md
+        - name: Käyttöönotto
+          items:
+            - name: Esittely-ympäristöjen käyttöönotto
+              href: deployment/deploy-demo-environment.md
+            - name: Pilvikäyttöönotto
+              items:
+                - name: Pilvikäyttöönoton yleiskatsaus
+                  href: deployment/cloud-deployment-overview.md
+                - name: Käyttöönotto itsepalveluna
+                  items:
+                    - name: Käyttöönotto itsepalveluna – yleiskatsaus
+                      href: deployment/infrastructure-stack.md
+                    - name: Uuden ympäristön käyttöönotto
+                      href: deployment/deployenvironment-newinfrastructure.md
+                    - name: Käyttöönotto - usein kysytyt kysymykset
+                      href: deployment/deploymentFAQ.md
+                    - name: Itsepalvelukäyttöönoton tunnetut ongelmat
+                      href: deployment/known-issues-new-deployment-experience.md
+                    - name: Käyttöönottojen ylläpitotoiminnot
+                      href: deployment/maintenanceoperationsguide-newinfrastructure.md
+                    - name: Päivitä ympäristö
+                      href: deployment/updateenvironment-newinfrastructure.md
+                    - name: Itsepalvelun kautta käyttöönotettujen ympäristöjen vianmääritys
+                      href: deployment/troubleshoot-newinfrastructure.md
+                - name: Azure Resource Manager -perehdytyksen suorittaminen
+                  href: deployment/arm-onboarding.md
+                - name: Azure ExpressRoute ja Finance and Operations
+                  href: deployment/expressroute.md
+                - name: Finance and Operations -arkkitehtuuri
+                  href: ../fin-ops/imp-lifecycle/architecture-overview.md
+                - name: Päivitysten käyttöönotto pilviympäristöissä
+                  href: deployment/apply-deployable-package-system.md
+                - name: Päivitysten ja laajennusten kohdistaminen pilvessä ylläpidetyn Retail-kanavan osiin
+                  href: deployment/Update-retail-channel.md
+                - name: Alusta Retail Cloud Scale Unit
+                  href: deployment/Initialize-Retail-Channels.md
+                - name: Retail-tietojen sijainti
+                  href: deployment/retail-data-residency.md
+            - name: Paikallinen käyttöönotto
+              items:
+                - name: Paikallisen käyttöönoton aloitussivu
+                  href: deployment/on-premises-deployment-landing-page.md
+                - name: Paikallinen käyttöönotto – yleiskatsaus
+                  href: deployment/on-premises-overview.md
+                - name: Paikallisten käyttöönottojen suunnittelu ja valmistelu
+                  href: deployment/plan-onprem-deployment.md
+                - name: Laitteiston kokovaatimukset
+                  href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                - name: Paikallisten projektien määrittäminen
+                  href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                - name: Paikallisten ympäristöjen asennus ja käyttöönotto
+                  items:
+                    - name: Paikallisten ympäristöjen asennus ja käyttöönotto – aloitussivu
+                      href: deployment/setup-deploy-on-premises-environments.md
+                    - name: Paikallisten ympäristöjen käyttöönotto (Platform update 12 ja uudemmat)
+                      href: deployment/setup-deploy-on-premises-pu12.md
+                    - name: Paikallisten ympäristöjen käyttöönotto (Platform update 8 ja 11)
+                      href: deployment/setup-deploy-on-premises-pu8-pu11.md
+                    - name: Vähittäismyyntikanavan komponenttien asennusohjeet paikallisessa ympäristössä
+                      href: deployment/deploy-retail-onprem.md
+                - name: Mukautettujen mallien kehitys ja käyttöönotto paikallisissa ympäristöissä
+                  href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: PowerBI.com-integrointi paikallisiin ympäristöihin
+                  href: analytics/entity-store-on-prem.md
+                - name: Käänteisten välityspalvelimien määrittäminen paikallisiin ympäristöihin
+                  href: deployment/onprem-reverseproxy.md
+                - name: Päivitysten käyttöönotto paikallisessa ympäristössä
+                  href: deployment/apply-updates-on-premises.md
+                - name: Paikallisten ympäristöjen diagnostiikka
+                  href: deployment/on-premises-diagnostics.md
+                - name: Paikallisten ympäristöjen uudelleenasennus
+                  href: deployment/redeploy-on-prem.md
+                - name: Paikallinen edustaja
+                  items:
+                    - name: AD FS Office 365 -yhteensopivuus
+                      href: deployment/onprem-adfscompatibility.md
+                    - name: Paikallisen edustajan ennen käyttöönottoa ja sen jälkeen suoritettavat komentosarjat
+                      href: lifecycle-services/pre-post-scripts.md
+                    - name: Paikallisen edustajan päivittäminen
+                      href: lifecycle-services/update-local-agent.md
+                - name: Ympäristöjen uudelleenmääritys
+                  href: lifecycle-services/reconfigure-environment.md
+                - name: Asiakasohjelman Internet-yhteys
+                  href: user-interface/client-disconnected.md
+                - name: Paikallisten ympäristöjen vianmääritys
+                  href: deployment/troubleshoot-on-prem.md
+                - name: Varmenteiden kierrättäminen
+                  href: deployment/certificate-rotation-on-prem.md
+            - name: Mukautetun koodin käyttöönotto
+              items:
+                - name: Käyttöönotettavien pakettien luominen malleista
+                  href: deployment/create-apply-deployable-package.md
+                - name: Käyttöönotettavien pakettien asentaminen komentoriviltä
+                  href: deployment/install-deployable-package.md
+                - name: Paketin asennuksen poistaminen
+                  href: deployment/uninstall-deployable-package.md
+                - name: Paketin käyttöönotto-ongelmien vianmääritys
+                  href: deployment/deployable-package-troubleshooting.md
+        - name: Kehittäminen ja mukauttaminen
+          items:
+            - name: Kehittäminen ja mukauttaminen – aloitussivu
+              href: dev-tools/developer-home-page.md
+            - name: Sovelluspino ja palvelinarkkitehtuuri
+              href: dev-tools/application-stack-server-architecture.md
+            - name: Kokeiluversioiden hankkiminen
+              href: dev-tools/get-evaluation-copy.md
+            - name: Kokeiluversioiden tilaaminen
+              href: dev-tools/sign-up-preview-subscription.md
+            - name: Kehitysympäristöjen käyttöönotto ja käyttö
+              items:
+                - name: Kehitysympäristöt
+                  href: dev-tools/access-instances.md
+                - name: Kattavien kehitysympäristöjen määrittäminen
+                  href: dev-tools/configure-developer-vm.md
+                - name: Uusien käyttäjien luominen kehittämiskoneissa
+                  href: dev-tools/enable-development-machine.md
+                - name: 'Sovelluskehityksen ja koonnin virtuaalikoneet, jotka eivät salli järjestelmänvalvojan käyttöä – usein kysytyt kysymykset'
+                  href: sysadmin/VMs-no-admin-access.md
+                - name: Paikallisten ympäristöjen nimeäminen uudelleen Azure DevOps -palvelun käyttämistä varten
+                  href: migration-upgrade/vso-machine-renaming.md
+                - name: Kehityksen järjestelmävaatimukset
+                  href: dev-tools/development-system-requirements.md
+            - name: 'Versionhallinta, metatietojen haku ja siirtyminen'
+              href: dev-tools/version-control-metadata-navigation.md
+            - name: Kuljetuskaluston hallinnan esimerkkisovellus
+              items:
+                - name: Kuljetuskaluston hallinnan esimerkkisovelluksen kattava skenaario
+                  href: dev-tools/fleet-management-sample.md
+                - name: Kuljetuskaluston hallinnan esimerkkisovellus
+                  href: dev-tools/introduction-fleet-management-sample.md
+            - name: Visual Studio -työkalut
+              items:
+                - name: Kehitystyökalut
+                  href: dev-tools/development-tools-overview.md
+                - name: Kehitystyökalujen opetusohjelma
+                  href: dev-tools/introduction-visual-studio.md
+                - name: Sovelluksen tarkistustyökalu
+                  items:
+                    - name: 'BaseX:n asentaminen sovelluksen tarkistustyökalua varten'
+                      href: dev-tools/install-basex.md
+                - name: Sovellusten hallinta
+                  href: dev-tools/application-explorer.md
+                - name: Projektien muodostaminen ja virheenkorjaus
+                  href: dev-tools/build-debug-project.md
+                - name: Koontitoiminnot
+                  href: dev-tools/build-operations.md
+                - name: Koodieditorin toiminnot
+                  href: dev-tools/code-editor.md
+                - name: Mallien ja tietomallielementtien luominen
+                  items:
+                    - name: Mallien ja tietomallielementtien luominen – yleiskatsaus
+                      href: dev-tools/create-data-model-elements.md
+                    - name: Laajennusten nimeämisohjeet
+                      href: extensibility/NamingGuidelines.md
+                    - name: Mallin mukauttamis- ja vanhentumistoiminnon poistaminen käytöstä
+                      href: dev-tools/lock-models.md
+                - name: Mukautusten analyysiraportti
+                  href: dev-tools/customization-analysis-report.md
+                - name: Elementin suunnittelutoiminnot
+                  href: dev-tools/element-designers.md
+                - name: Elementin käytön määrittelykomennot
+                  href: dev-tools/element-usage.md
+                - name: Mallien vienti ja tuonti
+                  href: dev-tools/models-export-import.md
+                - name: Metatietojen etsintä Visual Studiossa
+                  href: dev-tools/metadata-search-visual-studio.md
+                - name: Mallit ja paketit
+                  href: dev-tools/models.md
+                - name: Finance and Operations -projektityyppi
+                  href: dev-tools/projects.md
+                - name: Työkaluapuohjelmat Visual Studiolle
+                  href: dev-tools/developer-tools-add-ins.md
+                - name: Visual Studio -kehitystyökalujen päivittäminen
+                  href: dev-tools/update-development-tools.md
+            - name: X++-ohjelmointikieli
+              items:
+                - name: X++ ja virheenkorjausominaisuudet
+                  href: dev-tools/new-x-debugger-features.md
+                - name: X++-koodin virheenkorjaus
+                  href: dev-tools/debug-xpp.md
+                - name: EventHandlerResult-luokat pyyntö- tai vastausskenaarioissa
+                  href: dev-tools/event-handler-result-class.md
+                - name: 'Liiketoimintalogiikan kirjoittaminen C#- ja X++-lähdekoodilla'
+                  href: dev-tools/write-business-logic.md
+                - name: X++-koodin muutokset ja X++-kääntäjä
+                  href: dev-tools/programming-language-support.md
+                - name: 'C#:n LINQ-palvelu'
+                  href: dev-tools/linq-provider-c.md
+                - name: Parhaita käytäntöjä koskevien sääntöjen kirjoittaminen
+                  href: dev-tools/author-best-practice-rules.md
+                - name: Sovellusten hallinnan ominaisuudet
+                  href: dev-ref/application-explorer-aot-properties.md
+                - name: X++-kielen opastus
+                  items:
+                    - name: X++-kielen opastus – yleiskatsaus
+                      href: dev-ref/xpp-language-reference.md
+                    - name: Muuttujat ja tietotyypit
+                      items:
+                        - name: Muuttujat
+                          href: dev-ref/xpp-variables-data-types.md
+                        - name: Primitiiviset tietotyypit
+                          href: dev-ref/xpp-data-primitive.md
+                        - name: Yhdistelmätietotyypit
+                          href: dev-ref/xpp-data-composite.md
+                        - name: Kokoelmaluokat
+                          href: dev-ref/xpp-data-collection.md
+                        - name: Laajennetut tietotyypit
+                          href: dev-ref/xpp-data-edt.md
+                    - name: 'Lausekkeet, silmukat ja poikkeuksien käsittely'
+                      items:
+                        - name: 'Kommentit, käyttäminen ja tulostaminen'
+                          href: dev-ref/xpp-statements-loops.md
+                        - name: Ehdolliset lausekkeet
+                          href: dev-ref/xpp-conditional.md
+                        - name: Silmukkalauseet
+                          href: dev-ref/xpp-loops.md
+                        - name: Poikkeusten käsittely
+                          href: dev-ref/xpp-exceptions.md
+                    - name: Yhteyden SQL-virheen X++-poikkeus
+                      href: dev-ref/sql-connection-error.md
+                    - name: X++-operaattorit
+                      href: dev-ref/xpp-operators.md
+                    - name: X++-operaattoreiden käsittelyjärjestys
+                      href: dev-ref/xpp-operator-precedence.md
+                    - name: X++-luokat ja -menetelmät
+                      items:
+                        - name: Luokat ja menetelmät
+                          href: dev-ref/xpp-classes-methods.md
+                        - name: Periytyminen
+                          href: dev-ref/xpp-inheritance.md
+                        - name: Luokan staattiset jäsenet
+                          href: dev-ref/xpp-static-classes.md
+                        - name: Käyttöliittymät
+                          href: dev-ref/xpp-interfaces.md
+                        - name: Kirjastot
+                          href: dev-ref/xpp-library-objects.md
+                        - name: Tapahtumat
+                          href: dev-ref/xpp-events.md
+                    - name: X++-tietojen valinta ja käsittely
+                      href: dev-ref/xpp-data-query.md
+                    - name: Tietojen käyttäminen SysDa-ohjelmointirajapinnan avulla
+                      href: dev-ref/sysda.md
+                    - name: X++-makrot
+                      href: dev-ref/xpp-macros.md
+                    - name: X++-määriteluokat
+                      href: dev-ref/xpp-attribute-classes.md
+                    - name: 'X++- ja C#-kielen vertailu'
+                      href: dev-ref/xpp-cs-comparison.md
+                    - name: X++-syntaksi
+                      href: dev-ref/xpp-syntax.md
+            - name: 'Ohjelmointirajapinta-, luokka- ja tauluviite'
+              items:
+                - name: 'Ohjelmointirajapinta-, luokka- ja tauluresurssit'
+                  href: dev-ref/api-reference.md
+                - name: Käännöksenaikaiset X++-funktiot
+                  href: dev-ref/xpp-compile-time-functions.md
+                - name: Suorituksenaikaiset X++-funktiot
+                  items:
+                    - name: Suorituksenaikaiset X++-funktioresurssit
+                      href: dev-ref/xpp-run-time-functions.md
+                    - name: Suorituksenaikaiset X++-liiketoimintafunktiot
+                      href: dev-ref/xpp-business-run-time-functions.md
+                    - name: Suorituksenaikaiset X++-säilöfunktiot
+                      href: dev-ref/xpp-container-run-time-functions.md
+                    - name: Suorituksenaikaiset X++-muuntofunktiot
+                      href: dev-ref/xpp-conversion-run-time-functions.md
+                    - name: Suorituksenaikaiset X++-päivämääräfunktiot
+                      href: dev-ref/xpp-date-run-time-functions.md
+                    - name: Suorituksenaikaiset X++-matematiikkafunktiot
+                      href: dev-ref/xpp-math-run-time-functions.md
+                    - name: Suorituksenaikaiset X++-reflektiofunktiot
+                      href: dev-ref/xpp-reflection-run-time-functions.md
+                    - name: Suorituksenaikaiset X++-istuntofunktiot
+                      href: dev-ref/xpp-session-run-time-functions.md
+                    - name: Suorituksenaikaiset X++-merkkijonofunktiot
+                      href: dev-ref/xpp-string-run-time-functions.md
+                - name: Järjestelmätaulut
+                  href: dev-ref/system-tables.md
+                - name: Järjestelmäluokat
+                  items:
+                    - name: A-luokat
+                      href: dev-ref/a-classes.md
+                    - name: B-luokat
+                      href: dev-ref/b-classes.md
+                    - name: C-luokat
+                      href: dev-ref/c-classes.md
+                    - name: D-luokat
+                      href: dev-ref/d-classes.md
+                    - name: E-luokat
+                      href: dev-ref/e-classes.md
+                    - name: F-luokat (FieldBinding–FormBuildAnimateControl)
+                      href: dev-ref/fieldbinding-classes.md
+                    - name: F-luokat (FormBuildButtonControl–FormBuildFastTabSummarySeparator)
+                      href: dev-ref/formbuildbuttoncontrol-classes.md
+                    - name: F-luokat (FormBuildFilterPaneControl–FormBuildRealControl)
+                      href: dev-ref/formbuildfilterpanecontrol-classes.md
+                    - name: F-luokat (FormBuildReferenceControl–FormButtonSeparatorControl)
+                      href: dev-ref/formbuildreferencecontrol-classes.md
+                    - name: F-luokat (FormChangeTracker to FormControlEventArgs)
+                      href: dev-ref/formchangetracker-classes.md
+                    - name: F-luokat (FormDataObject–FormFastTabHeaderControl)
+                      href: dev-ref/formdataobject-classes.md
+                    - name: F-luokat (FormFastTabSummarySeparator–FormGridControl)
+                      href: dev-ref/formfasttabsummaryseparator-classes.md
+                    - name: F-luokat (FormGroupControl–FormIntControl)
+                      href: dev-ref/formgroupcontrol-classes.md
+                    - name: F-luokat (FormListBoxControl–FormNotifyEventArgs)
+                      href: dev-ref/formlistboxcontrol-classes.md
+                    - name: F-luokat (FormObject–FormRealControl)
+                      href: dev-ref/formobject-classes.md
+                    - name: F-luokat (FormReferenceControl–FormStringControl)
+                      href: dev-ref/formreferencecontrol-classes.md
+                    - name: F-luokat (FormTabControl–FormWindowControl)
+                      href: dev-ref/formtabcontrol-classes.md
+                    - name: G-luokat
+                      href: dev-ref/g-classes.md
+                    - name: H-luokat
+                      href: dev-ref/h-classes.md
+                    - name: I-luokat
+                      href: dev-ref/i-classes.md
+                    - name: J-luokat
+                      href: dev-ref/j-classes.md
+                    - name: K-luokat
+                      href: dev-ref/k-classes.md
+                    - name: L-luokat
+                      href: dev-ref/l-classes.md
+                    - name: M-luokat
+                      href: dev-ref/m-classes.md
+                    - name: N-luokat
+                      href: dev-ref/n-classes.md
+                    - name: O-luokat
+                      href: dev-ref/o-classes.md
+                    - name: P-luokat
+                      href: dev-ref/p-classes.md
+                    - name: Q-luokat
+                      href: dev-ref/q-classes.md
+                    - name: R-luokat
+                      href: dev-ref/r-classes.md
+                    - name: S-luokat
+                      href: dev-ref/s-classes.md
+                    - name: T-luokat
+                      href: dev-ref/t-classes.md
+                    - name: U-luokat
+                      href: dev-ref/u-classes.md
+                    - name: V-luokat
+                      href: dev-ref/v-classes.md
+                    - name: W-luokat
+                      href: dev-ref/w-classes.md
+                    - name: X-luokat
+                      href: dev-ref/x-classes.md
+            - name: Laajennettavuus
+              items:
+                - name: Laajennettavuuden kotisivu
+                  href: extensibility/extensibility-home-page.md
+                - name: Esittely ja aloittaminen
+                  items:
+                    - name: Sovelluksen laajennettavuuspaketti
+                      href: extensibility/extensibility-roadmap.md
+                    - name: Laajennettavuuspyynnöt
+                      href: extensibility/extensibility-requests.md
+                    - name: Laajennettavuus – usein kysytyt kysymykset
+                      href: extensibility/app-sealing-faq.md
+                    - name: Siirtyminen lisäyksistä laajennuksiin
+                      href: extensibility/migrate-overlayer-extension.md
+                    - name: Mallielementtien mukauttaminen laajennuksella (opetusohjelma)
+                      href: extensibility/customize-model-elements-extensions.md
+                    - name: Mukauttaminen laajennuksella ja lisäyksillä
+                      href: extensibility/customization-overlayering-extensions.md
+                - name: Uutta
+                  items:
+                    - name: Laajennettavuuden uudet ja muuttuneet ominaisuudet
+                      href: extensibility/extensibility-new.md
+                    - name: Laajennettavuuden muutokset versiossa 10.0.3
+                      href: extensibility/extensibility-changes-10-3.md
+                    - name: Laajennettavuuden muutokset versiossa 10.0.2
+                      href: extensibility/extensibility-changes-10-2.md
+                    - name: Laajennettavuuden muutokset versiossa 10.0.1
+                      href: extensibility/extensibility-changes-10-1.md
+                    - name: Laajennettavuuden muutokset versiossa 10.0
+                      href: extensibility/extensibility-changes-10.md
+                    - name: Laajennettavuuden muutokset versiossa 8.1.3
+                      href: extensibility/extensibility-changes-813.md
+                    - name: Laajennettavuuden muutokset versiossa 8.1.2
+                      href: extensibility/extensibility-changes-812.md
+                    - name: Laajennettavuuden muutokset versiossa 8.1.1
+                      href: extensibility/extensibility-changes-811.md
+                    - name: Laajennettavuuden muutokset versiossa 8.1
+                      href: extensibility/extensibility-changes-81.md
+                    - name: Laajennettavuuden muutokset versiossa 8.0.4
+                      href: extensibility/extensibility-changes-804.md
+                    - name: Laajennettavuuden muutokset versiossa 8.0.3
+                      href: extensibility/extensibility-changes-803.md
+                    - name: Laajennettavuuden muutokset versiossa 8.0.2
+                      href: extensibility/extensibility-changes-802.md
+                    - name: Laajennettavuuden muutokset versiossa 8.0.1
+                      href: extensibility/extensibility-changes-801.md
+                    - name: Laajennettavuuden muutokset versiossa 8.0
+                      href: extensibility/changes-80.md
+                    - name: Laajennettavuuden muutokset versiossa 7.3
+                      href: extensibility/extensibility-changes-73.md
+                    - name: Laajennettavuuden muutokset heinäkuu 2017
+                      href: extensibility/changes-july-2017.md
+                - name: Perusteet
+                  items:
+                    - name: Tunkeutuvat mukautukset
+                      href: extensibility/intrusive-customizations.md
+                    - name: Luokan laajennusmalli
+                      href: extensibility/class-extensions.md
+                    - name: Luokan laajennus menetelmän paketoinnin ja komentoketjun kautta
+                      href: extensibility/method-wrapping-coc.md
+                    - name: Laajennusten nimeämisohjeet
+                      href: extensibility/naming-guidelines-extensions.md
+                    - name: 'Mallien rajoitusten höllentäminen, jotta lisääminen voidaan refaktoroida laajennuksiin'
+                      href: extensibility/refactoring-over-layering.md
+                - name: Laajennusten luonti
+                  items:
+                    - name: 'Arvojen lisääminen enums:iin'
+                      href: extensibility/add-enum-value.md
+                    - name: Laajennettujen tietotyyppien muokkaaminen
+                      href: extensibility/modify-edt.md
+                    - name: Valmiiden menetelmien aliluokkien rekisteröinti
+                      href: extensibility/register-subclass-factory-methods.md
+                    - name: Vastaaminen käyttämällä kohdetta EventHandlerResult
+                      href: extensibility/respond-event-handler-result.md
+                    - name: RunBase-luokan laajentaminen
+                      href: extensibility/extend-runbase-class.md
+                    - name: Sovelluksen käynnistyksen mukauttaminen valtuutettujen viittausten avulla
+                      href: extensibility/startup-customizations.md
+                    - name: Taulussa olevien kenttien muokkaaminen
+                      href: extensibility/modify-existing-field.md
+                    - name: Kenttien lisääminen tauluihin
+                      href: extensibility/add-field-extension.md
+                    - name: Indeksien lisääminen tauluihin
+                      href: extensibility/add-index.md
+                    - name: Suhteiden lisääminen tauluihin
+                      href: extensibility/add-relation.md
+                    - name: Taulun ominaisuuksien muokkaaminen
+                      href: extensibility/modify-properties.md
+                    - name: Menetelmien lisääminen tauluihin
+                      href: extensibility/add-method-table.md
+                    - name: Liiketoimintatehtävien suorittaminen taulun tietueiden koko elinkaaren ajan
+                      href: extensibility/subscribe-table-events.md
+                    - name: Tietolähteiden lisääminen lomakkeisiin
+                      href: extensibility/add-datasource.md
+                    - name: Lomakkeen otsikkojen muuttaminen
+                      href: extensibility/change-caption-form.md
+                    - name: Lomakkeen ohjausobjektien ominaisuuksien muokkaaminen
+                      href: extensibility/modify-control-properties.md
+                    - name: Numerosarja-alueen laajentaminen
+                      href: extensibility/extend-number-sequence-scope.md
+                    - name: Uusien varastodimensioiden lisääminen
+                      href: extensibility/inventory-dimensions.md
+                    - name: Hinnan ja alennusten laajennettavuus
+                      href: extensibility/pricing-app73.md
+                    - name: Taulumäärityksen laajennus
+                      href: extensibility/map-extensions.md
+                    - name: Käyttöliittyminä käytettävät laajennetut taulumääritykset
+                      href: extensibility/maps-as-interfaces.md
+                    - name: Versionhallinnassa käytettävät laajennetut taulumääritykset
+                      href: extensibility/maps-with-versioning.md
+                    - name: Valittujen tietotyyppien desimaalitarkkuuden laajentaminen
+                      href: extensibility/decimal-point-precision.md
+                - name: Laajennettavien ratkaisujen luominen
+                  items:
+                    - name: Laajennettavissa olevan koodin kirjoittaminen
+                      href: extensibility/writing-extensible-code.md
+                    - name: Luokat
+                      href: extensibility/extensible-classes.md
+                    - name: Metodit
+                      href: extensibility/extensible-methods.md
+                    - name: Lomakkeet
+                      href: extensibility/extensible-forms.md
+                    - name: Laajennetut tietotyypit
+                      href: extensibility/extensible-edts.md
+                    - name: Laajennettavissa olevat valintalistat
+                      href: extensibility/extensible-enums.md
+                    - name: Siirrot
+                      href: extensibility/extensible-code-delegates.md
+                    - name: Taulut
+                      href: extensibility/extensible-tables.md
+                    - name: Menetelmien laajennettavuusmääritteet
+                      href: extensibility/extensibility-attributes.md
+                    - name: Tärkeimmät muutokset.
+                      href: extensibility/breaking-changes.md
+            - name: Suorituskyky
+              items:
+                - name: Jäljittäminen jäljityksen jäsentimen avulla
+                  href: perf-test/trace-trace-tutorial.md
+                - name: 'Yhden käyttäjän testaus tehtävän tallennustoiminnon ja suorituskyvyn SDK:n avulla'
+                  href: perf-test/single-user-test-perf-sdk.md
+                - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n ja paikallisen testauksen valvojan avulla'
+                  href: perf-test/multi-user-testing-local-test-controller.md
+                - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n ja Azure DevOps -palvelun avulla'
+                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: 'Vianmäärityksen opas yhden tai usean käyttäjän testausta varten suorituskyvyn SDK:n avulla'
+                  href: perf-test/troubleshoot-perf-sdk-user-testing.md
+                - name: Suorituskyvyn SDK ja usean käyttäjän testaus paikallisissa ympäristöissä
+                  href: perf-test/perfsdk-tutorial-lbd.md
+                - name: Ongelmien vianmääritys ja suorituskyvyn analysointi Trace parser
+                  href: perf-test/trace-parser.md
+                - name: Suorituskyvyn ajastin
+                  href: perf-test/performance-timer.md
+            - name: Tuen testaaminen Visual Studiossa
+              items:
+                - name: Testaus ja tarkistukset
+                  href: perf-test/testing-validation.md
+                - name: Testiprojektit Visual Studiossa
+                  href: perf-test/testing-support.md
+                - name: Jatkuvaa koonnin ja testauksen automaatiota tukevien ympäristöjen käyttöönotto
+                  href: perf-test/continuous-build-test-automation.md
+                - name: SysTest-suodatus luokka- ja metodiattribuutteja käyttäen
+                  href: perf-test/systest-filtering.md
+                - name: Hyväksyntätestikirjasto
+                  items:
+                    - name: Hyväksyntätestikirjaston resurssit
+                      href: perf-test/acceptance-test-library.md
+                    - name: Siirtymisruudun käsitteet
+                      href: perf-test/concepts-navigation.md
+                    - name: Tiedon testausmenetelmät
+                      href: perf-test/test-data-methods.md
+                    - name: Hyväksyntätestauskirjaston entiteetit
+                      href: perf-test/concepts-entities.md
+                    - name: Hyväksyntätestikirjaston komennot
+                      href: perf-test/concepts-commands.md
+                    - name: Hyväksyntätestikirjaston luojat
+                      href: perf-test/concepts-creators.md
+                    - name: Hyväksyntätestikirjaston kyselyt
+                      href: perf-test/concepts-queries.md
+                    - name: Määritysluokat
+                      href: perf-test/concepts-specifications.md
+                    - name: Hyväksymistestikirjastokoodin luomisen ohjattu toiminto
+                      href: perf-test/code-generation-wizard.md
+                    - name: Hyväksymistestikirjaston parhaat käytännöt
+                      href: perf-test/atl-best-practices.md
+                    - name: Usein kysytyt kysymykset
+                      href: perf-test/atl-faq.md
+            - name: Voimassaolopäivä
+              href: dev-tools/date-effectivity.md
+            - name: ISV-käyttöoikeudet
+              href: dev-tools/isv-licensing.md
+            - name: Paikalliset ISV-käyttöoikeudet
+              href: dev-tools/isv-licensing-on-prem.md
+        - name: Yleinen tietosuoja-asetus (GDPR)
+          items:
+            - name: Yleinen tietosuoja-asetus (GDPR) – yleiskatsaus
+              href: gdpr/gdpr-guide.md
+            - name: GDPR-tietopyyntöihin vastaaminen
+              items:
+                - name: GDPR-tietopyyntöihin vastaamisen resurssit
+                  href: gdpr/gdpr-home-page.md
+                - name: Omaisuuserien luokittelut
+                  href: gdpr/gdpr-asset-classification-values.md
+                - name: Henkilöhakuraportti
+                  href: gdpr/gdpr-person-search-report.md
+                - name: Henkilöhakuraportin laajentaminen
+                  href: gdpr/gdpr-extend-person-search-report.md
+                - name: Luottamuksellisten tietojen käytön hallinta
+                  href: gdpr/gdpr-auditing-sensitive-data.md
+                - name: Henkilötietopyyntöihin vastaaminen Talentilla
+                  href: gdpr/respond-dsr-request-talent.md
+                - name: 'Henkilötietopyyntöihin vastaaminen AX 2012:ssa'
+                  href: gdpr/gdpr-ax2012.md
+                - name: 'LCS:n GDPR-tietopyynnöt'
+                  href: gdpr/gdpr-lcs.md
+        - name: Lifecycle Services
+          items:
+            - name: Resurssit Lifecycle Services -portaalia varten
+              items:
+                - name: Lifecycle Services -resurssit
+                  href: lifecycle-services/lcs.md
+                - name: Asiakkaiden LCS
+                  href: lifecycle-services/lcs-works-lcs.md
+                - name: Kumppanien LCS
+                  href: lifecycle-services/getting-started-lcs.md
+                - name: Uutta
+                  href: lifecycle-services/whats-new-lcs.md
+                - name: Tunnetut ongelmat
+                  href: lifecycle-services/known-issues.md
+            - name: Lifecycle Services -käyttöopas
+              href: lifecycle-services/lcs-user-guide.md
+            - name: Tilauksen arviointityökalu
+              href: lifecycle-services/subscription-estimator.md
+            - name: Suojauksen määrittäminen
+              href: lifecycle-services/configure-lcs-security.md
+            - name: Ongelmahaku
+              href: lifecycle-services/issue-search-lcs.md
+            - name: Määritystenhallinta
+              items:
+                - name: Määritystenhallinnan yleiskatsaus
+                  href: lifecycle-services/configuration-manager-lcs.md
+                - name: Määritystenhallinnan määrittäminen
+                  href: lifecycle-services/set-up-configuration-manager-lcs.md
+            - name: Koodin päivityspalvelun määrittäminen
+              href: lifecycle-services/configure-execute-code-upgrade.md
+            - name: Metodologioiden luominen tai päivittäminen
+              href: lifecycle-services/create-methodology.md
+            - name: Liiketoimintaprosessien mallintaja
+              href: lifecycle-services/bpm-overview.md
+            - name: Liiketoimintaprosessien mallintajan liiketoimintaprosessikirjastot
+              href: lifecycle-services/business-process-libraries-business-process-modeler.md
+            - name: 'Liiketoimintaprosessien mallintajan kirjastojen luominen, muokkaaminen ja selaaminen'
+              href: lifecycle-services/creating-editing-browsing.md
+            - name: Tehtävien suorittaminen liiketoimintaprosessien mallintajassa
+              href: lifecycle-services/complete-tasks-bpm.md
+            - name: BPM-kirjastoissa olevien tehtäväkaavioiden käsitteleminen
+              href: lifecycle-services/using-activity-diagrams.md
+            - name: BPM-kirjastojen ja Azure DevOps -palvelun synkronoiminen
+              href: lifecycle-services/synchronize-bpm-vsts.md
+            - name: Käyttäjän hyväksyntätestauskirjastojen luominen tehtäväoppaiden ja BPM-määritysten avulla
+              href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+            - name: Liiketoimintaprosessien mallintajan vuokaaviot
+              href: lifecycle-services/flowcharts-business-process-modeler.md
+            - name: Mukautettujen liiketoimintaprosessien lataaminen liiketoimintaprosessien mallintajaan
+              href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: Valvonta ja diagnostiikka
+              href: lifecycle-services/monitoring-diagnostics.md
+            - name: Ympäristöpalvelujen käynnistäminen uudelleen
+              href: lifecycle-services/restart-environment-services.md
+            - name: Raportoi tuotantokatkos
+              href: lifecycle-services/report-production-outage.md
+            - name: Käyttäjien sisäänkirjautumisten seuraaminen
+              href: lifecycle-services/user-logins.md
+            - name: Resurssikirjasto
+              href: lifecycle-services/asset-library.md
+            - name: "Suorituskykyongelmien ratkaiseminen\_LCS-työkaluilla"
+              href: lifecycle-services/performancetroubleshooting.md
+            - name: Kyselyohjeita
+              href: lifecycle-services/querycookbook.md
+            - name: Microsoft Dynamics 365 Translation Service
+              items:
+                - name: Dynamics 365 Translation Servicen yleiskatsaus
+                  href: lifecycle-services/translation-service-overview.md
+                - name: Käyttöliittymätiedostojen kääntäminen
+                  href: lifecycle-services/use-translation-service.md
+                - name: Dokumentointitiedostojen kääntäminen
+                  href: lifecycle-services/use-translation-service-ua.md
+                - name: Käännösmuistitiedostot
+                  href: lifecycle-services/use-translation-service-tm.md
+        - name: Mobiiliympäristö
+          items:
+            - name: Mobiiliympäristön resurssit
+              href: mobile-apps/platform/mobile-platform-home-page.md
+            - name: Aloittaminen
+              items:
+                - name: Mobiiliympäristön käytön aloittaminen
+                  href: mobile-apps/platform/mobile-platform-getting-started.md
+                - name: Suunnitteluun ja arkkitehtuuriin liittyvää tietoa
+                  href: mobile-apps/platform/mobile-platform-architecture.md
+                - name: Liiketoimintalogiikan tapahtumat
+                  href: mobile-apps/platform/business-logic-events-overview.md
+                - name: Sivusuunnittelun ohjeet
+                  href: mobile-apps/platform/page-design-guidelines.md
+                - name: Toimintojen suunnittelun ohjeet
+                  href: mobile-apps/platform/action-design-guidelines.md
+                - name: Lomakkeiden suunnitteluvaatimukset
+                  href: mobile-apps/platform/form-design-requirements.md
+            - name: Yleiset tehtävät
+              items:
+                - name: Työtilojen määrittäminen SysAppWorkspace-luokan avulla
+                  href: mobile-apps/platform/scenarios/mobile-workspace-configuration.md
+                - name: Mobiilisovelluksen sivuilla olevien kenttien muuttaminen napsautettaviksi
+                  href: mobile-apps/platform/scenarios/make-workspace-field-clickable.md
+                - name: Määrien näyttäminen kentissä
+                  href: mobile-apps/platform/scenarios/display-count-workspace.md
+                - name: Mobiilityötilojen suojaaminen
+                  href: mobile-apps/platform/scenarios/secure-mobile-workspace.md
+                - name: Mobiilityötilojen lokalisointi
+                  href: mobile-apps/platform/scenarios/localize-workspaces-on-server.md
+                - name: Kenttien muuttaminen pakollisiksi työtilaluokkien avulla
+                  href: mobile-apps/platform/scenarios/make-field-mandatory.md
+            - name: Palvelinpuolen kehityksen viite
+              items:
+                - name: Palvelinpuolen kehitys (työtila X++ -ohjelmointirajapinnat)
+                  href: mobile-apps/platform/mobile-workspace-server-apis.md
+            - name: Asiakaspuolen kehityksen viite
+              items:
+                - name: Asiakaspuolen suunnittelun ohjelmointirajapinnat
+                  href: mobile-apps/platform/scenarios/client-api-design-overview.md
+                - name: Asiakkaan ohjelmointirajapinnat
+                  items:
+                    - name: Asiakasohjelmien ohjelmointirajapintojen aloitussivu
+                      href: mobile-apps/platform/client-apis/client-apis-reference.md
+                    - name: PageState-luettelointi
+                      href: mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md
+                    - name: Sovellusmoduuli
+                      href: mobile-apps/platform/client-apis/modules/services-application.md
+                    - name: Moduulin lykkääminen
+                      href: mobile-apps/platform/client-apis/modules/defer.md
+                    - name: Tapahtumamoduuli
+                      href: mobile-apps/platform/client-apis/modules/event-ievent.md
+                    - name: Työnohjausmoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md
+                    - name: Konttimoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md
+                    - name: Kenttämoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md
+                    - name: Tiedoston lataaja -moduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader.md
+                    - name: Ryhmämoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-group-igroup.md
+                    - name: Hyperlinkkimoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink.md
+                    - name: Kuvamoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md
+                    - name: Syötemoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol.md
+                    - name: Luettelomoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-list-ilist.md
+                    - name: Hakumoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup.md
+                    - name: Monihakumoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup.md
+                    - name: Sivumoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-ipage.md
+                    - name: Sivulinkkimoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md
+                    - name: Osamoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md
+                    - name: Palvelumoduuli
+                      href: mobile-apps/platform/client-apis/modules/services-business-logic-services.md
+                    - name: Arvomoduuli
+                      href: mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md
+                    - name: Sovellustyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/services-application-iapplication.md
+                    - name: ApplicationMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata.md
+                    - name: AsyncService-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice.md
+                    - name: CacheService-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice.md
+                    - name: CompleteEventArgs-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs.md
+                    - name: ContainerControl-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md
+                    - name: ContainerControlDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md
+                    - name: ContainerControlMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md
+                    - name: ControlMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md
+                    - name: DataService-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md
+                    - name: Lykätty tyyppi<T>
+                      href: mobile-apps/platform/client-apis/interfaces/defer-ideferred.md
+                    - name: Suunnittelutyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md
+                    - name: EventHook-tyyppi<T>
+                      href: mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md
+                    - name: Kentän tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md
+                    - name: FieldDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign.md
+                    - name: FieldMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata.md
+                    - name: FileUploader-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader.md
+                    - name: FileUploaderDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign.md
+                    - name: FileUploaderMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md
+                    - name: GenericValue-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md
+                    - name: getDataSource-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md
+                    - name: Ryhmän tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md
+                    - name: GroupDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign.md
+                    - name: GroupMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata.md
+                    - name: HyperLink-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink.md
+                    - name: HyperLinkDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign.md
+                    - name: HyperLinkMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md
+                    - name: Kuvatyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage.md
+                    - name: ImageDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign.md
+                    - name: ImageMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagemetadata.md
+                    - name: InputControl-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md
+                    - name: InputControlDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md
+                    - name: InputControlMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md
+                    - name: Luettelotyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist.md
+                    - name: ListDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign.md
+                    - name: ListMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata.md
+                    - name: Hakutyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup.md
+                    - name: LookupDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign.md
+                    - name: LookupMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md
+                    - name: MetadataService-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice.md
+                    - name: MultiLookup-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup.md
+                    - name: MultiLookupDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md
+                    - name: MultiLookupMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md
+                    - name: NavigationArgs-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md
+                    - name: NumberSequenceConfig-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md
+                    - name: Sivutyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md
+                    - name: PageData-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md
+                    - name: PageLink-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink.md
+                    - name: PageLinkDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md
+                    - name: PageLinkMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md
+                    - name: PageMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata.md
+                    - name: PageOptions-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions.md
+                    - name: PageSubmitArgs-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs.md
+                    - name: PageTarget-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget.md
+                    - name: Osatyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart.md
+                    - name: PartDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md
+                    - name: PartMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md
+                    - name: Rivityyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md
+                    - name: Arvotyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md
+                    - name: ValueDesign-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
+                    - name: ValueMetadata-tyyppi
+                      href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Regression Suite Automation Tool
+          items:
+            - name: Regression Suite Automation Tool – yleiskatsaus
+              href: perf-test/rsat/rsat-overview.md
+            - name: Asennus ja määrittäminen
+              href: perf-test/rsat/rsat-install-configure.md
+            - name: Tietoriippumaaton testaaminen Regression Suite Automation Toolilla
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+            - name: Testitapausten suorittaminen
+              href: perf-test/rsat/rsat-run.md
+            - name: Odotettujen arvojen tarkistaminen
+              href: perf-test/rsat/rsat-validate-expected.md
+            - name: Testitapausten ketjuttaminen
+              href: perf-test/rsat/rsat-chain-test-cases.md
+            - name: Johdetut testitapaukset
+              href: perf-test/rsat/rsat-derived-test-cases.md
+            - name: Regression Suite Automation Tool -oppaan käyttäminen
+              href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
+            - name: Parhaat käytännöt
+              href: perf-test/rsat/rsat-best-practices.md
+            - name: Vianmääritys
+              href: perf-test/rsat/rsat-troubleshooting.md
+        - name: Ratkaisujen vapauttaminen Lifecycle Services -portaalin avulla
+          items:
+            - name: Kehittäminen ja vapauttaminen
+              href: lcs-solutions/lcs-solutions-app-source.md
+            - name: Väliaikainen tallennus ja julkaiseminen
+              href: lcs-solutions/marketing-content-lcs-solutions.md
+            - name: Metodologioiden lisääminen
+              href: lcs-solutions/methodologies-lcs-solutions.md
+            - name: Liiketoimintaprosessien mallintajakirjastojen määrittäminen
+              href: lcs-solutions/business-process-modeler-libraries-lcs-solutions.md
+            - name: Koodin siirto
+              href: lcs-solutions/code-migration-lcs-solutions.md
+            - name: Sovellusten vahvistaminen
+              href: lcs-solutions/app-validation-lcs-solutions.md
+            - name: Tietopakettien käsittely ja kuluttaminen
+              href: lcs-solutions/process-data-packages-lcs-solutions.md
+            - name: Ratkaisutietokantojen varmuuskopiointi
+              href: lcs-solutions/database-backup-lcs-solutions.md
+            - name: Lokalisointi- ja säädösominaisuudet
+              items:
+                - name: Maailmanlaajuisen käytön resurssit
+                  href: lcs-solutions/country-region.md
+                - name: Lokalisointiominaisuuksien luokitus
+                  href: lcs-solutions/classify-localization-features.md
+                - name: Maa- tai aluekontekstin ottaminen käyttöön
+                  href: lcs-solutions/apply-country-context.md
+                - name: Lakisääteiset varmennetiedot ominaisuuden otsikoissa
+                  href: lcs-solutions/regulatory-certifications.md
+                - name: Pakolliset päivitykset
+                  href: lcs-solutions/regulatory-watch-communication.md
+                - name: Lokalisointimallien erottaminen
+                  href: lcs-solutions/separate-localization-models.md
+                - name: Lakisääteisten ilmoitusten lähettäminen
+                  href: lcs-solutions/submit-localization-alerts.md
+        - name: Tuki
+          items:
+            - name: Finance and Operations- ja Lifecycle Services -tuki
+              href: lifecycle-services/lcs-support.md
+            - name: Dynamics 365 -tuen yleiskatsaus
+              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/dev-itpro/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+            - name: Tuki 21Vianetin ylläpitämään Finance and Operationsiin Kiinassa
+              href: lifecycle-services/21vianet-support.md
+            - name: Pyyntöjen lähettäminen Dynamics Service -kehitysryhmälle
+              href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+            - name: Finance and Operationsin teknisen tuen määrittäminen
+              href: lifecycle-services/support-experience.md
+            - name: Suunniteltu ylläpitoajankohta - usein kysytyt kysymykset
+              href: lifecycle-services/planned-maintenance-window-faq.md
+            - name: Pilvipalvelut ja huolto
+              href: lifecycle-services/cloud-operations-servicing.md
+            - name: Finance and Operations -tukikokemusten hallinta
+              href: lifecycle-services/cloud-powered-support-lcs.md
+        - name: Järjestelmän hallinta
+          items:
+            - name: Järjestelmänhallinnan aloitussivu
+              href: sysadmin/system-administration-home-page.md
+            - name: Yrityksen juridisiin ehtoihin ja tietosuojatietoihin johtavien linkkien lisääminen
+              href: sysadmin/legal-terms-privacy-statement.md
+            - name: Käyttöoikeuskoodien ja määritysavainten raportti
+              href: sysadmin/license-codes-configuration-keys-report.md
+            - name: Yritystenvälinen tietojen jakaminen
+              href: sysadmin/cross-company-data-sharing.md
+            - name: Ylläpitotila
+              href: sysadmin/maintenance-mode.md
+            - name: Esimääritetyt järjestelmätilit
+              href: sysadmin/pre-configured-system-accounts.md
+            - name: 'Vie B2B-käyttäjät Azure AD:hen'
+              href: sysadmin/implement-b2b.md
+            - name: Suojaus
+              items:
+                - name: Rooliperustainen suojaus
+                  href: sysadmin/role-based-security.md
+                - name: Suojausarkkitehtuuri
+                  href: sysadmin/security-architecture.md
+                - name: Käyttämättömän istunnon aikakatkaisun määrittäminen
+                  href: sysadmin/session-idle-timeout.md
+                - name: Valmiit suojausraportit
+                  href: sysadmin/security-reports.md
+                - name: Uusien käyttäjien luominen
+                  href: sysadmin/tasks/create-new-users.md
+                - name: Käyttäjien joukkotuonti
+                  href: sysadmin/tasks/import-bulk-users.md
+                - name: Tehtävien eriyttämisen määrittäminen
+                  href: sysadmin/tasks/set-up-segregation-duties.md
+                - name: Tehtävien eriyttämisen ristiriitojen tunnistaminen ja ratkaiseminen
+                  href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
+                - name: Käyttäjien liittäminen käyttöoikeusrooleihin
+                  href: sysadmin/tasks/assign-users-security-roles.md
+            - name: Eräkäsittely
+              items:
+                - name: Eräkäsittelyn yleiskatsaus
+                  href: sysadmin/batch-processing-overview.md
+                - name: Eräkäsittely ja eräpalvelimet
+                  href: sysadmin/batch-server-overview.md
+                - name: Erätöiden luominen
+                  href: sysadmin/tasks/create-batch-job.md
+                - name: Erätyön kopiointi
+                  href: sysadmin/copy-batch-job.md
+                - name: Aktiiviset eräjaksot
+                  href: sysadmin/activeperiod.md
+                - name: Erien hallinnan käyttöoikeusrooli
+                  href: sysadmin/runby.md
+                - name: Erätyö SQL-indeksin eheyttämisen käsittelemistä varten
+                  href: sysadmin/batch-job-SQL-defragmentation.md
+                - name: Määritä eräajon hälytyksiä
+                  href: sysadmin/alerts.md
+                - name: Laajennetut erälomakkeet
+                  href: sysadmin/enhanced-forms.md
+                - name: Tyhjennä erätöiden historia
+                  href: sysadmin/batch-history-cleanup.md
+                - name: Erätyön suorituksen keskeytys
+                  href: sysadmin/batch-abort.md
+            - name: Optimointiavustaja
+              items:
+                - name: Optimointiavustajan yleiskuvaus
+                  href: sysadmin/optimization-advisor-overview.md
+                - name: Optimointiavustajan sääntöjen luominen
+                  href: sysadmin/create-rules-optimization-advisor.md
+            - name: Tuotantokatkoksesta ilmoittaminen
+              href: lifecycle-services/report-production-outage.md
+        - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset'
+          items:
+            - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset – resurssit'
+              href: migration-upgrade/upgrade-home-page.md
+            - name: Päivitä AX 2012 -versiosta
+              items:
+                - name: 'AX 2012:n päivittäminen Finance and Operationsiin'
+                  href: migration-upgrade/upgrade-overview-2012.md
+                - name: AX 2012 -versiopäivitys – suunnitteleminen päivityksen analysointityökalun avulla
+                  href: migration-upgrade/upgrade-analyzer-tool.md
+                - name: AX 2012 -päivitys – työmäärän arvioiminen koodin päivityspalvelun avulla
+                  href: migration-upgrade/analyze-code-upgrade.md
+                - name: AX 2012 -päivitys – esittely-ympäristön käyttöönotto analysointia varten
+                  href: migration-upgrade/analysis-sandbox.md
+                - name: AX 2012 -päivitys – tietojen päivitys kehitysympäristöissä
+                  href: migration-upgrade/data-upgrade-2012.md
+                - name: AX 2012 -päivitys – päivitystä edeltävä tarkistusluettelo tietojen päivitystä varten
+                  href: migration-upgrade/prepare-data-upgrade.md
+                - name: AX 2012 -päivitys – tietojen päivitys sandbox-ympäristöissä
+                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: AX 2012 -päivitys – valmistelusiirron testaaminen
+                  href: migration-upgrade/upgrade-cutover-testing.md
+                - name: AX 2012 -päivitys – päivityksen jälkeiset tehtävät
+                  href: migration-upgrade/app-validation-process.md
+                - name: AX 2012 -päivitys – toimintotestauksen suorittaminen hyväksytysti
+                  href: migration-upgrade/upgrade-functional-validation.md
+                - name: AX 2012 -päivitys – käyttöönoton valmistelu
+                  href: migration-upgrade/upgrade-go-live-prep.md
+                - name: AX 2012 -päivitys – käyttöönotto
+                  href: migration-upgrade/2012-upgrade-cutover.md
+                - name: 'Muutokset, jotka vaikuttavat AX 2012:n päivitykseen'
+                  items:
+                    - name: Tilikartan erottimen muuttaminen yksilöiväksi
+                      href: migration-upgrade/chart-accounts-delimiter-unique.md
+                    - name: Yhden tositteen kirjauskansioiden ja valuutan uudelleenarvostusten päivittäminen
+                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
+                    - name: Projektiresurssin ajoituksen tietomalli
+                      href: migration-upgrade/data-model-changes-resource-management.md
+                    - name: Työnkulun alijärjestelmän muutokset
+                      href: migration-upgrade/workflow-subsystem.md
+                    - name: Koostemallien käyttö analysoinnissa kuutioiden sijaan
+                      href: migration-upgrade/in-memory-real-time-aggregate-models.md
+                    - name: Päivitettyjen myyntikuutioiden siirtäminen yksikkösäilöön
+                      href: migration-upgrade/migrate-upgraded-cube-entity-store.md
+                    - name: Budjettisuunnittelun päivitys
+                      href: migration-upgrade/upgrade-budget-planning.md
+            - name: Tietojen siirtäminen AX 2009 -järjestelmästä
+              items:
+                - name: "Tietojen siirtäminen\_AX 2009:stä Finance and Operationsiin"
+                  href: migration-upgrade/data-migration-tool.md
+                - name: "AX 2009 -siirto\_- tietojen siirtotyökalun asennus"
+                  href: migration-upgrade/install-dmt.md
+                - name: "AX 2009 -siirto\_- määritysten luominen"
+                  href: migration-upgrade/generate-maps.md
+                - name: "AX 2009 -siirto\_- mallien luominen"
+                  href: migration-upgrade/create-package-templates-dmt.md
+                - name: "AX 2009 -siirto\_- siirtoryhmien luominen"
+                  href: migration-upgrade/create-definition.md
+                - name: "AX 2009 -siirto\_- pakettien vieminen"
+                  href: migration-upgrade/ax2009-upgrade-export-package.md
+                - name: "AX 2009 -siirto\_- pakettien tuominen"
+                  href: migration-upgrade/ax2009-upgrade-import-package.md
+            - name: Koodin siirto ja päivitys
+              items:
+                - name: Koodin siirto ja päivitys – aloitussivu
+                  href: migration-upgrade/code-migration-home-page.md
+                - name: Koodin siirron valmistelu
+                  href: migration-upgrade/prepare-migration.md
+                - name: Azure DevOps -vastaavuuden määrittäminen
+                  href: migration-upgrade/configure-vso-solution.md
+                - name: Mallin jako
+                  href: dev-tools/model-split.md
+                - name: Mallien välisten riippuvuuksien ratkaiseminen valtuutettujen viittausten avulla
+                  href: migration-upgrade/delegates-migration.md
+            - name: Päivittäminen viimeisimpään päivitykseen (pilvi)
+              items:
+                - name: Uusimpaan päivitykseen siirtyminen
+                  href: migration-upgrade/upgrade-latest-update.md
+                - name: Polut yhteen versioon
+                  items:
+                    - name: Itsepalvelupäivitys uusimpaan versioon
+                      href: migration-upgrade/self-service-upgrade.md
+                    - name: Uudelleenmuodostus ja päivitys uusimpaan versioon
+                      href: migration-upgrade/appupdate-80-81.md
+                - name: Ohjelmiston elinkaarikäytäntö ja pilviversiot
+                  href: migration-upgrade/versions-update-policy.md
+                - name: Uusimman Platform update -päivityksen käyttöönotto ympäristöissä
+                  href: migration-upgrade/upgrade-latest-platform-update.md
+                - name: Tietojen päivittäminen kehitys- tai esittely-ympäristössä
+                  href: migration-upgrade/upgrade-data-to-latest-update.md
+                - name: Kehitystyökalujen päivittäminen
+                  href: dev-tools/update-development-tools.md
+                - name: Koodin kääntämisen suunnittelu viimeisimmän päivityksen perusteella ja kääntämiseen valmistautuminen
+                  href: migration-upgrade/compile-considerations.md
+            - name: Päivittäminen viimeisimpään päivitykseen (paikallinen)
+              items:
+                - name: Päivitysten käyttöönotto paikallisissa ympäristöissä
+                  href: deployment/apply-updates-on-premises.md
+                - name: Paikallisen ympäristön uudelleenasennus
+                  href: deployment/redeploy-on-prem.md
+                - name: 'Suora paikallisen 7.x:n päivittäminen 8.1:een'
+                  href: migration-upgrade/on-prem-upgrade.md
+            - name: Hotfix-korjaukset
+              items:
+                - name: Hae päivitykset Lifecycle Services -palveluista
+                  href: migration-upgrade/download-hotfix-lcs.md
+                - name: Päivitysten käyttöönotto pilviympäristöissä
+                  href: deployment/apply-deployable-package-system.md
+                - name: Metatietojen hotfix-korjausten asentaminen kehitysympäristöihin
+                  href: migration-upgrade/install-metadata-hotfix-package.md
+                - name: Reporting Services -korjauspäivitykset kattavissa ympäristöissä
+                  href: migration-upgrade/patch-reporting-service-environment.md
+                - name: Visual Studio -kehitystyökalujen päivittäminen
+                  href: dev-tools/update-development-tools.md
+            - name: Vanhentumiset
+              items:
+                - name: Poistetut tai vanhentuneet ominaisuudet
+                  href: migration-upgrade/deprecated-features.md
+                - name: Menetelmien ja metatietojen elementtien poisto
+                  href: migration-upgrade/deprecation-deletion-apis.md
+                - name: Vanhentuneet ohjelmointirajapinnat
+                  href: migration-upgrade/deprecated-apis.md
+        - name: Käyttöliittymäkehitys
+          items:
+            - name: Käyttöliittymäkehityksen aloitussivu
+              href: user-interface/user-interface-development-home-page.md
+            - name: Oppaat
+              items:
+                - name: Vuokrauksen maksutyyppilomakkeen muodostaminen
+                  href: user-interface/build-rental-charge-type-form.md
+                - name: Asiakaslomakkeen muodostaminen
+                  href: user-interface/build-customer-form.md
+                - name: Siirtymisen muodostaminen
+                  href: user-interface/build-navigation.md
+                - name: Työtilojen muodostaminen
+                  href: user-interface/build-workspace.md
+            - name: Lomakkeet
+              items:
+                - name: Siirtymisruudun käsitteet
+                  href: user-interface/page-navigation.md
+                - name: Sivuasettelu WWW-asiakasohjelmassa
+                  href: user-interface/page-layout.md
+                - name: Dynamicsin symbolifontti
+                  href: user-interface/symbol-font.md
+                - name: Tallennetut näkymät
+                  href: ../fin-ops/get-started/saved-views.md
+                - name: Tallennettuja näkymiä täysimääräisesti hyödyntävien lomakkeiden luominen
+                  href: user-interface/understanding-saved-views.md
+                - name: Mukautettuja malleja käyttävien lomakkeiden testaaminen
+                  href: user-interface/testing-forms-custom-patterns.md
+                - name: 'Jaettavien, suojattujen URL-osoitteiden (syvien linkkien) luominen'
+                  href: user-interface/create-deep-links.md
+                - name: 'Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttöomaisuudet'
+                  href: user-interface/enable-accessibility.md
+                - name: Kenttien kuvausten mukauttaminen
+                  href: user-interface/customize-field-help.md
+            - name: Ohjausobjektit
+              items:
+                - name: Toiminnon ohjausobjektit
+                  href: user-interface/action-controls.md
+                - name: Syötteen ohjausobjektit ja ruudukon sarakekoot
+                  href: user-interface/sizing-input-controls-grid-columns.md
+                - name: Hakemistopolun valintaruutujen tuki
+                  href: user-interface/check-box-tree-controls.md
+                - name: Suodatusasetukset
+                  href: user-interface/filtering.md
+                - name: PowerApps-isännän ohjausobjekti
+                  href: user-interface/powerapps-host-control.md
+            - name: Ikkunoiden hallinta
+              items:
+                - name: Pikavalikkokoodin siirtäminen
+                  href: migration-upgrade/code-migration-context-menus.md
+                - name: Siirron kaksoisnapsautuslogiikka
+                  href: migration-upgrade/code-migration-double-click.md
+                - name: Hakujen kontekstitietojen kirjaaminen
+                  href: user-interface/contextual-data-entry-lookups.md
+                - name: HierarchyViewer-ohjausobjekti
+                  href: user-interface/hierarchy-viewer-control.md
+                - name: Haun ohjausobjektit
+                  href: user-interface/lookups-controls.md
+                - name: Tiedostojen lataamisen ohjausobjekti
+                  href: user-interface/file-upload-control.md
+                - name: Järjestelmän määrittämät painikkeet
+                  href: user-interface/system-defined-buttons.md
+                - name: Sivulla tai ruudukossa olevat kuvat
+                  href: user-interface/images-form-grid.md
+                - name: 'Syötön, taulun ja ruudukon ohjausobjektien fontti ja taustavärit'
+                  href: user-interface/specify-color-font-background-controls.md
+                - name: Oikealta vasemmalle -kielituki ja kaksisuuntainen teksti
+                  href: user-interface/bidirectional-support.md
+                - name: Työtilaruutujen luontikuvakkeet
+                  href: user-interface/create-icons-workspace-tiles.md
+                - name: Laajennettavien ohjausobjektien julkiset JavaScript-ohjelmointirajapinnat
+                  href: user-interface/public-javascript-apis.md
+                - name: Tarkistusluettelon hallinta
+                  href: user-interface/control-checklist.md
+            - name: Sanomat
+              items:
+                - name: Kuvatekstitoiminto
+                  href: user-interface/feature-callouts.md
+                - name: Liukusäädin ja MessageBox-valintaikkunat
+                  href: user-interface/slider-messagebox.md
+                - name: 'Viestikeskus, sanomapalkki ja sanoman tietojen ohjelmointirajapinta'
+                  href: user-interface/messaging-api-center-bar-details.md
+                - name: 'Viestikeskuksen, sanomapalkin ja sanoman tietojen usein kysytyt kysymykset'
+                  href: user-interface/messaging-user.md
+            - name: Lomakemallin ohjeet
+              items:
+                - name: Siirrettyjen lomakkeiden lomakemallit
+                  href: user-interface/select-form-pattern.md
+                - name: Lomaketyylit ja -mallit
+                  href: user-interface/form-styles-patterns.md
+                - name: Lomakemalleja tukevat Visual Studio -apuohjelmat
+                  href: user-interface/form-pattern-add-ins.md
+            - name: Lomakemallit
+              items:
+                - name: Yleiset lomakeohjeet
+                  href: user-interface/general-form-guidelines.md
+                - name: Tietojen päälomakemalli
+                  href: user-interface/details-master-form-pattern.md
+                - name: Tietojen tapahtumalomakemalli
+                  href: user-interface/details-transaction-form-pattern.md
+                - name: Lomakeosan osioluettelon lomakemallit
+                  href: user-interface/section-list-form-pattern.md
+                - name: Luettelosivun lomakemalli
+                  href: user-interface/list-page-form-pattern.md
+                - name: Yksinkertainen tietolomakemalli
+                  href: user-interface/simple-details-form-pattern.md
+                - name: Yksinkertainen luettelo- ja tietolomakemalli
+                  href: user-interface/simple-list-details-form-pattern.md
+                - name: Yksikertainen luettelolomakemalli
+                  href: user-interface/simple-list-form-pattern.md
+                - name: Sisällysluettelon lomakemalli
+                  href: user-interface/table-of-contents-form-pattern.md
+                - name: Tehtävän kaksinkertainen lomakemalli
+                  href: user-interface/task-double-form-pattern.md
+                - name: Tehtävän yksinkertainen lomakemalli
+                  href: user-interface/task-single-form-pattern.md
+                - name: Lomakemallin ohjattu määrittäminen
+                  href: user-interface/wizard-form-pattern.md
+                - name: Työtilan lomakemalli
+                  href: user-interface/workspace-form-pattern.md
+            - name: Toissijaiset lomakemallit
+              items:
+                - name: Lisävalinnan lomakemalli
+                  href: user-interface/advanced-selection-form-pattern.md
+                - name: Valintaikkunan lomakemalli
+                  href: user-interface/dialog-form-pattern.md
+                - name: Pudota valintaikkuna -lomakemalli
+                  href: user-interface/drop-dialog-form-pattern.md
+                - name: Hakulomakemalli
+                  href: user-interface/lookup-form-pattern.md
+                - name: Tietoruudun lomakemallit
+                  href: user-interface/factbox-form-patterns.md
+            - name: Alimallit
+              items:
+                - name: Mukautetun suodatinryhmän alimalli
+                  href: user-interface/custom-filter-group-subpattern.md
+                - name: Dimensiomerkinnän ohjausobjektin alimalli
+                  href: financial/dimension-entry-control-subpattern.md
+                - name: Dimensiolausekkeen muodostimen alimalli
+                  href: financial/dimension-expression-builder-subpattern.md
+                - name: Kenttien ja kenttäryhmien alimalli
+                  href: user-interface/fields-field-groups-subpattern.md
+                - name: Suodattimien ja työkalurivin alimallit
+                  href: user-interface/filters-toolbar-subpattern.md
+                - name: Tekstintäytön alimalli
+                  href: user-interface/fill-text-subpattern.md
+                - name: Vaakasuuntaisten kenttien ja painikeryhmien alimalli
+                  href: user-interface/horizontal-fields-buttons-group-subpattern.md
+                - name: Kuvan esikatselun alimalli
+                  href: user-interface/image-preview-subpattern.md
+                - name: Luettelopaneelin alimalli
+                  href: user-interface/list-panel-subpattern.md
+                - name: Sisäkkäinen yksinkertainen luettelon ja tietojen alimalli
+                  href: user-interface/nested-simple-list-details-subpattern.md
+                - name: Osiokaavion lomakemalli
+                  href: user-interface/section-chart-form-pattern.md
+                - name: Osion Power BI -alimalli
+                  href: user-interface/section-powerbi-subpattern.md
+                - name: Osion liittyvien linkkien alimalli
+                  href: user-interface/section-related-links-subpattern.md
+                - name: Osion pinotun kaavion alimalli
+                  href: user-interface/section-stacked-chart-subpattern.md
+                - name: Osion välilehtiä sisältävän luettelon alimalli
+                  href: user-interface/section-tabbed-list-subpattern.md
+                - name: Osion ruutujen alimalli
+                  href: user-interface/section-tiles-subpattern.md
+                - name: Taulukkokenttien alimalli
+                  href: user-interface/tabular-fields-subpattern.md
+                - name: Työkalurivin ja kenttien alimalli
+                  href: user-interface/toolbar-fields-subpattern.md
+                - name: Työkalurivin ja luettelon alimalli
+                  href: user-interface/toolbar-list-subpattern.md
+                - name: Työtilasivun suodatinryhmän alimalli
+                  href: user-interface/workspace-filter-group-subpattern.md
+            - name: Ohjausobjektin laajennettavuus
+              items:
+                - name: Laajennettavien ohjausobjektien muodostaminen
+                  href: user-interface/build-extensible-control.md
+                - name: Laajennettavien ohjausobjektien pikanäppäimet
+                  href: user-interface/keyboard-shortcuts-controls.md
+                - name: Laajennettavan ohjausobjektin ohjelmointiviite
+                  href: user-interface/extensible-control-programming-reference.md
+                - name: Ohjausobjektin laajennettavuus
+                  href: user-interface/control-extensibility.md
+                - name: Lokalisoitavien etikettien luominen
+                  href: user-interface/create-localizable-labels-client.md
+                - name: Laajennettavan ohjausobjektin asetteluohjeet
+                  href: user-interface/extensible-controls-layout.md
+                - name: Tehtävien tallennustoiminnon ohjausobjektille luoman tekstin hallinta
+                  href: user-interface/task-recorder-control-text.md
+            - name: Työtilojen muodostaminen
+              items:
+                - name: Toiminnallisten työtilojen muodostaminen
+                  href: user-interface/build-workspaces.md
+                - name: Työtilojen ruudun ja luettelon tallentaminen välimuistiin
+                  href: user-interface/tile-list-caching-workspaces.md
+            - name: Tehtävien tallennustoiminto
+              items:
+                - name: Tehtävän tallennustoiminnon resurssit
+                  href: user-interface/task-recorder.md
+                - name: Tehtävien tallennustoiminnon pikaopas
+                  href: user-interface/task-recorder-quick-reference.md
+                - name: Dokumentaation tai koulutuksen luominen tehtävätallenteiden perusteella
+                  href: user-interface/task-recorder-training-docs.md
+    - name: Dynamics 365 Supply Chain Management
+      href: ../../supply-chain/index.md
+    - name: Dynamics 365 Finance
+      href: ../../finance/index.md
+    - name: Dynamics 365 Retail
+      href: ../../retail/index.md

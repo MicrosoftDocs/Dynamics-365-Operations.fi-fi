@@ -1,6 +1,6 @@
 ---
 title: Palauta nimikkeitä useista eri asiakkaan ostotilauksista ja laskuista
-description: Tässä aiheessa kuvataan ohjelman Microsoft Dynamics 365 for Retail toiminnallisuus, joka mahdollistaa palautukset useista eri asiakkaan ostotilauksista ja laskuista.
+description: Tässä aiheessa kuvataan Dynamics 365 Retailin toiminnallisuus, joka mahdollistaa palautukset useista eri asiakkaan ostotilauksista ja laskuista.
 author: josaw1
 manager: AnnBe
 ms.date: 03/05/2019
@@ -18,21 +18,21 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c201311028b11121d626e93859a2b98497c047d1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 25a1081e5f903076e23089c41dda7437f8a70124
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565297"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017986"
 ---
-# <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Palauta nimikkeitä useista eri asiakkaan ostotilauksista ja laskuista
+# <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Nimikkeiden palauttaminen useista eri asiakkaan ostotilauksista ja laskuista
 
 [!include [banner](includes/banner.md)]
 
 
-Dynamics 365 for Finance and Operations -ohjelman versiossa 10.0 palautuksia voidaan tehdä useista ostotilauksista ja laskuista, kun versiota 10.0 edeltävissä ohjelmaversioissa palautuksia voitiin käsitellä ainoastaan yksi lasku kerrallaan. 
+Palautuksia voidaan tehdä useista eri asiakkaan ostotilauksista ja laskuista. 
 
-## <a name="configure-retail-to-support-returns-across-multiple-customer-order-and-invoices"></a>Konfiguroi Retail tukemaan palautuksia useista asiakkaan ostotilauksista ja laskuista.
+## <a name="configure-retail-to-support-returns-across-multiple-customer-order-and-invoices"></a>Määritä Retail tukemaan palautuksia useista asiakkaan ostotilauksista ja laskuista.
 
 1. Siirry kohtaan **Vähittäismyynnin parametrit \> Asiakastilaukset**.
 1. Ota käyttöön **Mahdollista palautukset useille ostotilauksille** -parametri. 

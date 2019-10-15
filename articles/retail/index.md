@@ -1,6 +1,6 @@
 ---
-title: Tervetuloa Dynamics 365 for Retail -ohjelmaan
-description: Dynamics 365 for Retail kotisivu
+title: Dynamics 365 Retailin ohjeresurssit
+description: Dynamics 365 Retailin aloitussivu
 author: josaw1
 manager: AnnBe
 ms.date: 08/14/2019
@@ -18,27 +18,30 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
-ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
+ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "1874924"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278103"
 ---
-# <a name="welcome-to-dynamics-365-for-retail"></a>Tervetuloa Dynamics 365 for Retail -ohjelmaan
+# <a name="help-resources-for-dynamics-365-retail"></a>Dynamics 365 Retailin ohjeresurssit
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail on kattava vähittäismyyntiratkaisu, jonka avulla kaupankäynti on yhtenäistä kaikissa kanavissa. Se käsittää myynnin, mobiilikäytön, tiedot ja tuottavuuden. Näiden avulla vähittäismyyjät ja työntekijät voivat saada enemmän aikaan pilvipalvelun ja mobiilikäytön avulla. Retail sisältää useiden eri liiketoimintaprosessien kattavan tuen. Prosesseihin kuuluvat esimerkiksi myynninedistämistapahtuman, varaston ja kanavien hallinnan ominaisuudet. Se mahdollistaa myös kokonaisvaltaiset asiakaskokemukset kaikilla kosketuspisteillä.
-
-> [!NOTE]
-> Dynamics 365 for Retail -ohjelma liittyy läheisesti Dynamics 365 for Finance and Operations- ja Dynamics 365 for Talent -ohjelmaan. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteessa. Tällöin aiheissa, jotka liittyvät ensisijaisesti Retail, tuotteen nimi on Microsoft Dynamics 365 for Retail; aiheissa, jotka liittyvät ensisijaisesti ydintuotteeseen (Finance and Operations), tuotteen nimi on Microsoft Dynamics 365 for Finance and Operations; aiheissa, jotka liittyvät ensisijaisesti henkilöstöresursseihin, tuotteen nimi on Dynamics 365 for Talent.
+Microsoft Dynamics 365 Retail on kattava vähittäismyyntiratkaisu, jonka avulla kaupankäynti on yhtenäistä kaikissa kanavissa. Se käsittää myynnin, mobiilikäytön, tiedot ja tuottavuuden. Näiden avulla vähittäismyyjät ja työntekijät voivat saada enemmän aikaan pilvipalvelun ja mobiilikäytön avulla. Retail sisältää useiden eri liiketoimintaprosessien kattavan tuen. Prosesseihin kuuluvat esimerkiksi myynninedistämistapahtuman, varaston ja kanavien hallinnan ominaisuudet. Se mahdollistaa myös kokonaisvaltaiset asiakaskokemukset kaikilla kosketuspisteillä.
 
 Saat lisätietoja valitsemalla ominaisuusalueen vasemmassa ruudussa.
 
+## <a name="dynamics-365-commerce-preview"></a>Dynamics 365 Commerce (kokeilu)
+
+Dynamics 365 Commerce – perustuu hyväksi todettuihin Dynamics 365 Retail -ominaisuuksiin – tarjoaa kattavan omnikanavaratkaisun, jossa yhdistyvät taustajärjestelmän, myymälän ja digitaaliset kokemukset. Commerce on saatavilla kokeiluversiona nyt. Nykyiset Dynamics 365 Retail -asiakkaat voivat päivittää Commerceen, kun se tulee yleisesti saataville.
+
+Lisätietoja Dynamics 365 Commercesta esitetään [Dynamics 365 Commercen ohjeresurssien](../commerce/index.md) sivulla.
+
 ## <a name="channel-management"></a>Kanavan hallinta
 
-Kun määrität Retail-kokemusta, päätät, miten myymälät (perinteinen myymälä, verkkokauppa tai puhelinkeskus) konfiguroidaan.
+Kun määrität Retail Experienceä, päätät, miten myymälät (perinteinen myymälä, verkkokauppa tai puhelinkeskus) konfiguroidaan.
 
 Kullakin vähittäismyymälällä voi olla omat maksutavat, toimitusmenetelmät, hintaryhmät, tulo-ja kulutilit, kassakoneet ja henkilöstö. Vähittäismyymälän luonnin jälkeen myymälälle luodaan tuotevalikoima. Voit määrittää myös myymäläkohtaiset hinnat ja alennukset, joita käytetään myymälässä oleviin tuotteisiin.
 
@@ -78,8 +81,8 @@ Voit määrittää useita osia, joiden avulla määritetään myymälän, myymä
 
 Jos sinua on pyydetty mukauttamaan ympäristöä tai jos järjestelmän käyttöönotto ja ylläpito on vastuullasi, tutustu Retail-sovellusta koskevaan kehittäjien ja järjestelmänvalvojan sisältöön sekä yleiseen sisältöön.
 
-- [Dynamics 365 for Retail IT-asiantuntijoille ja kehittäjille](dev-itpro/dev-retail-home-page.md)
-- [Dynamics 365 for Finance and Operations -ohjelman kehittäminen ja ylläpito](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 Retail IT-asiantuntijoille ja kehittäjille](dev-itpro/dev-retail-home-page.md)
+- [Dynamics 365 Finance -ohjelman kehittäminen ja ylläpito](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
