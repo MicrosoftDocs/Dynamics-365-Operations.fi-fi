@@ -1,6 +1,6 @@
 ---
-title: PowerApps-sovellusten upottaminen Core HR:ään
-description: Tässä ohjeaihe on ratkaisu ongelmalle, jossa PowerApps-valikkovaihtoehto on kadonnut järjestelmänhallintamoduulista.
+title: PowerApps-sovellusten upottaminen Dynamics 365 – Core HR:ssä
+description: Tässä ohjeaiheessa käsitellään tapaa, jolla ratkaistaan ongelma, jossa PowerApps-valikkovaihtoehto on kadonnut järjestelmänhallintamoduulista.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,54 +17,54 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7c0dcdd7e2f407267cf99906b4d0b317858710af
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 4fbc24c5ceb73389b84b125eb942ac31757928aa
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742816"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008427"
 ---
-# <a name="embed-powerapps-apps-in-core-hr"></a><span data-ttu-id="d7a32-103">PowerApps-sovellusten upottaminen Core HR:ään</span><span class="sxs-lookup"><span data-stu-id="d7a32-103">Embed PowerApps apps in Core HR</span></span>
+# <a name="embed-powerapps-apps-in-core-hr"></a><span data-ttu-id="29342-103">PowerApps-sovellusten upottaminen Core HR:ssä</span><span class="sxs-lookup"><span data-stu-id="29342-103">Embed PowerApps apps in Core HR</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="d7a32-104">**Ongelma**</span><span class="sxs-lookup"><span data-stu-id="d7a32-104">**Issue**</span></span>
+<span data-ttu-id="29342-104">**Lähetä**</span><span class="sxs-lookup"><span data-stu-id="29342-104">**Issue**</span></span>
 
-<span data-ttu-id="d7a32-105">**PowerApps**-valikkovaihto on kadonnut **Järjestelmänhallinta**-moduulista.</span><span class="sxs-lookup"><span data-stu-id="d7a32-105">The **PowerApps** menu item has disappeared from the **System administration** module.</span></span>
+<span data-ttu-id="29342-105">**PowerApps**-valikkovaihtoehto on kadonnut **Järjestelmänhallinta**-moduulista.</span><span class="sxs-lookup"><span data-stu-id="29342-105">The **PowerApps** menu item has disappeared from the **System administration** module.</span></span>
 
-<span data-ttu-id="d7a32-106">**Syy**</span><span class="sxs-lookup"><span data-stu-id="d7a32-106">**Cause**</span></span>
+<span data-ttu-id="29342-106">**Syy**</span><span class="sxs-lookup"><span data-stu-id="29342-106">**Cause**</span></span>
 
-<span data-ttu-id="d7a32-107">Käyttöliittymää on muutettu ja Microsoft PowerApps sisältyy vakiomukautusmalliin.</span><span class="sxs-lookup"><span data-stu-id="d7a32-107">The user interface (UI) design has been changed, and Microsoft PowerApps is now included in the standard personalization model.</span></span>
+<span data-ttu-id="29342-107">Käyttöliittymää on muutettu ja Microsoft PowerApps sisältyy vakiomukautusmalliin.</span><span class="sxs-lookup"><span data-stu-id="29342-107">The user interface (UI) design has been changed, and Microsoft PowerApps is now included in the standard personalization model.</span></span>
 
-<span data-ttu-id="d7a32-108">**Tarkkuus**</span><span class="sxs-lookup"><span data-stu-id="d7a32-108">**Resolution**</span></span>
+<span data-ttu-id="29342-108">**Ratkaisu**</span><span class="sxs-lookup"><span data-stu-id="29342-108">**Resolution**</span></span>
 
-<span data-ttu-id="d7a32-109">PowerApps-sovellusten upotustapaa on muutettu.</span><span class="sxs-lookup"><span data-stu-id="d7a32-109">The way that PowerApps apps are embedded has been changed.</span></span> <span data-ttu-id="d7a32-110">PowerApps-sovellukset lisätään nyt mukautusmallin avulla.</span><span class="sxs-lookup"><span data-stu-id="d7a32-110">PowerApps apps are now added through the personalization model.</span></span> <span data-ttu-id="d7a32-111">Voit lisätä PowerApps-sovelluksia lähes kaikille Microsoft Dynamics 365 for Talentin sivuille.</span><span class="sxs-lookup"><span data-stu-id="d7a32-111">You can add PowerApps apps to almost all pages in Microsoft Dynamics 365 for Talent.</span></span>
+<span data-ttu-id="29342-109">PowerApps-sovellusten upotustapaa on muutettu.</span><span class="sxs-lookup"><span data-stu-id="29342-109">The way that PowerApps apps are embedded has been changed.</span></span> <span data-ttu-id="29342-110">PowerApps-sovellukset lisätään nyt mukautusmallin avulla.</span><span class="sxs-lookup"><span data-stu-id="29342-110">PowerApps apps are now added through the personalization model.</span></span> <span data-ttu-id="29342-111">Voit lisätä PowerApps-sovelluksia lähes kaikille Microsoft Dynamics 365 Talentin sivuille.</span><span class="sxs-lookup"><span data-stu-id="29342-111">You can add PowerApps apps to almost all pages in Microsoft Dynamics 365 Talent.</span></span>
 
-<span data-ttu-id="d7a32-112">Lisätietoja PowerApps-sovelluksen upottamisesta Talentissa on kohdassa [PowerApps-sovellusten upottaminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).</span><span class="sxs-lookup"><span data-stu-id="d7a32-112">For information about how to embed PowerApps apps in Talent, see [Embed PowerApps apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).</span></span>
+<span data-ttu-id="29342-112">Lisätietoja PowerApps-sovelluksen upottamisesta Talentissa on kohdassa [PowerApps-sovellusten upottaminen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).</span><span class="sxs-lookup"><span data-stu-id="29342-112">For information about how to embed PowerApps apps in Talent, see [Embed PowerApps apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).</span></span>
 
-<span data-ttu-id="d7a32-113">Jokainen ennen muutoksia sovelluksia upottanut PowerApps-asiakas olisi pitänyt päivittää uuteen malliin.</span><span class="sxs-lookup"><span data-stu-id="d7a32-113">Any PowerApps customer who embedded apps before the change should have been upgraded to the new model.</span></span>
+<span data-ttu-id="29342-113">Jokainen PowerApps-asiakas, joka on upottanut sovelluksia ennen muutosta, olisi pitänyt päivittää uuteen malliin.</span><span class="sxs-lookup"><span data-stu-id="29342-113">Any PowerApps customer who embedded apps before the change should have been upgraded to the new model.</span></span>
 
-<span data-ttu-id="d7a32-114">**PowerApps**-painike on lähes jokaisen Talent-sivun oikeassa yläkulmassa.</span><span class="sxs-lookup"><span data-stu-id="d7a32-114">The **PowerApps** button is in the upper-right corner of almost every page in Talent.</span></span> <span data-ttu-id="d7a32-115">Voit lisätä PowerApps-sovelluksen tällä painikkeella.</span><span class="sxs-lookup"><span data-stu-id="d7a32-115">You can use this button to insert a PowerApps app.</span></span>
+<span data-ttu-id="29342-114">**PowerApps**-painike on lähes jokaisen Talent-sivun oikeassa yläkulmassa.</span><span class="sxs-lookup"><span data-stu-id="29342-114">The **PowerApps** button is in the upper-right corner of almost every page in Talent.</span></span> <span data-ttu-id="29342-115">Voit lisätä PowerApps-sovelluksen tällä painikkeella.</span><span class="sxs-lookup"><span data-stu-id="29342-115">You can use this button to insert a PowerApps app.</span></span>
 
-<span data-ttu-id="d7a32-116">Esimerkki:</span><span class="sxs-lookup"><span data-stu-id="d7a32-116">Here is an example.</span></span>
+<span data-ttu-id="29342-116">Esimerkki:</span><span class="sxs-lookup"><span data-stu-id="29342-116">Here is an example.</span></span>
 
-1. <span data-ttu-id="d7a32-117">Valitse **Henkilöstön hallinta \> Linkit \> Työntekijät \> Työntekijät**.</span><span class="sxs-lookup"><span data-stu-id="d7a32-117">Go to **Personnel management \> Links \> Workers \> Employees**.</span></span>
-2. <span data-ttu-id="d7a32-118">Valitse ensin **PowerApps**-painike ja sitten **Lisää PowerApp**.</span><span class="sxs-lookup"><span data-stu-id="d7a32-118">Select the **PowerApps** button, and then select **Insert a PowerApp**.</span></span>
+1. <span data-ttu-id="29342-117">Valitse **Henkilöstön hallinta \> Linkit \> Työntekijät \> Työntekijät**.</span><span class="sxs-lookup"><span data-stu-id="29342-117">Go to **Personnel management \> Links \> Workers \> Employees**.</span></span>
+2. <span data-ttu-id="29342-118">Valitse ensin **PowerApps**-painike ja sitten **Lisää PowerApp**.</span><span class="sxs-lookup"><span data-stu-id="29342-118">Select the **PowerApps** button, and then select **Insert a PowerApp**.</span></span>
 
     ![PowerApps-painike](media/png.png)
 
-3. <span data-ttu-id="d7a32-120">Täytä **Lisää PowerApp** -valintaikkunan kentät.</span><span class="sxs-lookup"><span data-stu-id="d7a32-120">Complete the fields in the **Insert a PowerApp** dialog box.</span></span>
+3. <span data-ttu-id="29342-120">Täytä **Lisää PowerApp** -valintaikkunan kentät.</span><span class="sxs-lookup"><span data-stu-id="29342-120">Complete the fields in the **Insert a PowerApp** dialog box.</span></span>
 
     ![Lisää PowerApp -valintaikkuna](media/insert-powerapp.png)
 
-<span data-ttu-id="d7a32-122">Voit vaihtoehtoisesti noudattaa seuraavia ohjeita.</span><span class="sxs-lookup"><span data-stu-id="d7a32-122">Alternatively, follow these steps.</span></span>
+<span data-ttu-id="29342-122">Voit vaihtoehtoisesti noudattaa seuraavia ohjeita.</span><span class="sxs-lookup"><span data-stu-id="29342-122">Alternatively, follow these steps.</span></span>
 
-1. <span data-ttu-id="d7a32-123">Valitse sivun toimintoruudun **Asetukset**-välilehden **Mukauta**-ryhmässä **Mukauta tämä lomake**.</span><span class="sxs-lookup"><span data-stu-id="d7a32-123">On the page's Action Pane, on the **Options** tab, in the **Personalize** group, select **Personalize this form**.</span></span>
+1. <span data-ttu-id="29342-123">Valitse sivun toimintoruudun **Asetukset**-välilehden **Mukauta**-ryhmässä **Mukauta tämä lomake**.</span><span class="sxs-lookup"><span data-stu-id="29342-123">On the page's Action Pane, on the **Options** tab, in the **Personalize** group, select **Personalize this form**.</span></span>
 
     ![Mukauta-ryhmä Asetukset-välilehdessä](media/options.png)
 
-    <span data-ttu-id="d7a32-125">Mukauttamisen työkalurivi tulee näkyviin.</span><span class="sxs-lookup"><span data-stu-id="d7a32-125">The personalization toolbar appears.</span></span>
+    <span data-ttu-id="29342-125">Mukauttamisen työkalurivi tulee näkyviin.</span><span class="sxs-lookup"><span data-stu-id="29342-125">The personalization toolbar appears.</span></span>
 
-2. <span data-ttu-id="d7a32-126">Valitse työkalurivillä **Lisää \>PowerApp**.</span><span class="sxs-lookup"><span data-stu-id="d7a32-126">On the toolbar, select **Insert \> PowerApp**.</span></span>
+2. <span data-ttu-id="29342-126">Valitse työkalurivillä **Lisää \>PowerApp**.</span><span class="sxs-lookup"><span data-stu-id="29342-126">On the toolbar, select **Insert \> PowerApp**.</span></span>
 
     ![PowerApps-sovelluksen lisääminen mukauttamisen työkalurivin avulla](media/powerapp-bar.png)

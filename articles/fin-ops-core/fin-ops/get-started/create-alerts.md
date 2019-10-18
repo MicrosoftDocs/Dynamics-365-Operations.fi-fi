@@ -1,0 +1,85 @@
+---
+title: Hälytyssääntöjen luominen
+description: Tässä ohjeaiheessa on tietoja hälytyksistä. Siinä myös selitetään, miten luodaan sellainen hälytyssääntö, joka ilmoittaa tapahtumista, kuten saapuvasta päivämäärästä tai tapahtuvasta muutoksesta.
+author: tjvass
+manager: AnnBe
+ms.date: 09/20/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: EventCreateRule
+audience: Application user
+ms.reviewer: sericks
+ms.search.scope: Operations
+ms.search.region: Global
+ms.author: tjvass
+ms.search.validFrom: 2018-3-30
+ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: c37ddc52ef576a15dd35cc155e99821c74631a46
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2180711"
+---
+# <a name="create-alert-rules"></a><span data-ttu-id="b1e38-103">Hälytyssääntöjen luominen</span><span class="sxs-lookup"><span data-stu-id="b1e38-103">Create alert rules</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+## <a name="getting-started"></a><span data-ttu-id="b1e38-104">Aloittaminen</span><span class="sxs-lookup"><span data-stu-id="b1e38-104">Getting started</span></span>
+
+<span data-ttu-id="b1e38-105">Ennen hälytyssäännön luomista on päätettävä, milloin ja missä tilanteissa haluat vastaanottaa hälytyksiä.</span><span class="sxs-lookup"><span data-stu-id="b1e38-105">Before you set up an alert rule, decide when or in what situations you want to receive alerts.</span></span> <span data-ttu-id="b1e38-106">Kun tiedät, mistä tapahtumasta haluat ilmoituksen, voit etsiä sivun, jossa kyseisen tapahtuman aiheuttavat tiedot näkyvät.</span><span class="sxs-lookup"><span data-stu-id="b1e38-106">When you know which event you want to be notified about, find the page where the data that causes that event appears.</span></span> <span data-ttu-id="b1e38-107">Tapahtuma voi olla tietty päivämäärä tai tapahtuva muutos.</span><span class="sxs-lookup"><span data-stu-id="b1e38-107">The event can be a date that arrives or a specific change that occurs.</span></span> <span data-ttu-id="b1e38-108">Sinun onkin etsittävä sivu, jossa päivämäärä on määritetty tai jossa muuttuva kenttä tai luotu uusi tietue tulee näkyviin.</span><span class="sxs-lookup"><span data-stu-id="b1e38-108">Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears.</span></span> <span data-ttu-id="b1e38-109">Kun nämä tiedot ovat valmiina, voit luoda hälytyssäännön.</span><span class="sxs-lookup"><span data-stu-id="b1e38-109">After you have this information, you can create the alert rule.</span></span>
+
+<span data-ttu-id="b1e38-110">Hälytyssääntöä luotaessa määritetään ehdot, joiden on toteuduttava ennen hälytyksen antamista.</span><span class="sxs-lookup"><span data-stu-id="b1e38-110">When you create an alert rule, you define the criteria that must be met before an alert is triggered.</span></span> <span data-ttu-id="b1e38-111">Tämä tarkoittaa, että tietty tapahtuma esiintyy ja tietyt ehdot täyttyvät samanaikaisesti.</span><span class="sxs-lookup"><span data-stu-id="b1e38-111">You can think of criteria as a match between the occurrence of an event and the fulfillment of specific conditions.</span></span> <span data-ttu-id="b1e38-112">Tapahtuman esiintyessä järjestelmä suorittaa tarkistuksen määritettyjen ehtojen mukaisesti.</span><span class="sxs-lookup"><span data-stu-id="b1e38-112">When an event occurs, the system starts to perform a check according to the conditions that are set up.</span></span>
+
+## <a name="events"></a><span data-ttu-id="b1e38-113">Tapahtumat</span><span class="sxs-lookup"><span data-stu-id="b1e38-113">Events</span></span>
+
+<span data-ttu-id="b1e38-114">Tapahtuma, joka käynnistää hälytyssäännön, voi olla tietty päivämäärä tai tapahtuva muutos.</span><span class="sxs-lookup"><span data-stu-id="b1e38-114">The event that triggers an alert rule can be a date that arrives or a specific change that occurs.</span></span> <span data-ttu-id="b1e38-115">Käynnistää tapahtumat, jotka on määritetty **Luo hälytyssääntö** -valintaikkunan **Hälytä seuraavissa tilanteissa** -pikavälilehdessä.</span><span class="sxs-lookup"><span data-stu-id="b1e38-115">Triggers for events are defined on the **Alert me when** FastTab of the **Create alert rule** dialog box.</span></span> <span data-ttu-id="b1e38-116">Tietyn kentän käytettävissä olevat tapahtumat määräytyvät valitun käynnistimen mukaan.</span><span class="sxs-lookup"><span data-stu-id="b1e38-116">The events that are available for a particular field depend on the trigger that is selected.</span></span>
+
+<span data-ttu-id="b1e38-117">Jos esimerkiksi määrität hälytyssäännön **Alkamispäivä**-kenttään, eräpäivän tapahtumat soveltuvat.</span><span class="sxs-lookup"><span data-stu-id="b1e38-117">For example, if you're setting up an alert rule for the **Start date** field, due date events are appropriate.</span></span> <span data-ttu-id="b1e38-118">**Erääntymisaika**-tapahtumatyyppi on tämän vuoksi käytettävissä kyseisessä kentässä.</span><span class="sxs-lookup"><span data-stu-id="b1e38-118">Therefore, the **is due in** event type is available for that field.</span></span> <span data-ttu-id="b1e38-119">Eräpäivään perustuva tapahtuma ei kuitenkaan sovellu esimerkiksi **Kustannuspaikka**-kentälle.</span><span class="sxs-lookup"><span data-stu-id="b1e38-119">However, for a field such as **Cost center**, a due date event isn't appropriate.</span></span> <span data-ttu-id="b1e38-120">**Erääntymisaika**-tapahtumatyyppi ei ole tämän vuoksi käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="b1e38-120">Therefore, the **is due in** event type isn't available.</span></span> <span data-ttu-id="b1e38-121">Sen sijaan käytettävissä on **on muuttunut** -tapahtumatyyppi.</span><span class="sxs-lookup"><span data-stu-id="b1e38-121">Instead, the **has changed** event type is available.</span></span>
+
+## <a name="event-types"></a><span data-ttu-id="b1e38-122">Tapahtumatyypit</span><span class="sxs-lookup"><span data-stu-id="b1e38-122">Event types</span></span>
+
+<span data-ttu-id="b1e38-123">Mahdollisia tapahtumatyyppejä on kolme:</span><span class="sxs-lookup"><span data-stu-id="b1e38-123">Three types of events can occur:</span></span>
+
+- <span data-ttu-id="b1e38-124">**Luomis- ja poistamistyyppiset tapahtumat** – Nämä tapahtumat käynnistävät hälytyksen, kun tietue luodaan tai poistetaan.</span><span class="sxs-lookup"><span data-stu-id="b1e38-124">**Create-type and delete-type events** – These events trigger an alert when a record is created or deleted.</span></span>
+- <span data-ttu-id="b1e38-125">**Päivitystyypin tapahtumat** – Nämä tapahtumat käynnistävät hälytyksen, kun tietyn kentän tiedot muuttuvat.</span><span class="sxs-lookup"><span data-stu-id="b1e38-125">**Update-type events** – These events trigger an alert when the data in a specific field changes.</span></span>
+- <span data-ttu-id="b1e38-126">**Eräpäivätyypin tapahtumat** – Nämä tapahtumat käynnistävät hälytyksen tiettynä päivämääränä.</span><span class="sxs-lookup"><span data-stu-id="b1e38-126">**Due date-type events** – These events trigger an alert when a date arrives.</span></span>
+    
+<span data-ttu-id="b1e38-127">Käyttäjä voi käynnistää muutokset.</span><span class="sxs-lookup"><span data-stu-id="b1e38-127">Changes that occur can be initiated by a user.</span></span> <span data-ttu-id="b1e38-128">Esimerkiksi käyttäjä muuttaa ostotilauksen toimituspäivää.</span><span class="sxs-lookup"><span data-stu-id="b1e38-128">For example, a user changes the delivery date of a purchase order.</span></span> <span data-ttu-id="b1e38-129">Vaihtoehtoisest muutokset voivat tapahtua prosessin osana.</span><span class="sxs-lookup"><span data-stu-id="b1e38-129">Alternatively, changes can occur as part of a process.</span></span> <span data-ttu-id="b1e38-130">Esimerkiksi sivun **Tila**-kenttä muuttuu niin, että se vastaa järjestelmän eri prosessien elinkaarta.</span><span class="sxs-lookup"><span data-stu-id="b1e38-130">For example, the **Status** field on a page changes to reflect the life cycle of various processes in the system.</span></span>
+
+## <a name="conditions"></a><span data-ttu-id="b1e38-131">Ehdot</span><span class="sxs-lookup"><span data-stu-id="b1e38-131">Conditions</span></span>
+
+<span data-ttu-id="b1e38-132">Voit käyttää **Luo hälytyssääntö** -valintaikkunan **Hälytä seuraavasta:** -pikavälilehden ehtoja tapahtumien hälytysten ohjauksessa.</span><span class="sxs-lookup"><span data-stu-id="b1e38-132">On the **Alert me for** FastTab of the **Create alert rule** dialog box, you can use conditions to control when you're alerted about events.</span></span>
+
+<span data-ttu-id="b1e38-133">Voit esimerkiksi määrittää, että järjestelmä lähettää hälytyksen ostotilausten tilojen muuttuessa vain silloin, kun tila vastaa tiettyjä ehtoja.</span><span class="sxs-lookup"><span data-stu-id="b1e38-133">For example, you can specify that the system should alert you when the status of purchase orders changes, but only if the status matches a specific set of conditions.</span></span> <span data-ttu-id="b1e38-134">Haluat ilmoituksen etenkin silloin, kun ostotilauksen tilaksi määritetään **Vastaanotettu**.</span><span class="sxs-lookup"><span data-stu-id="b1e38-134">Specifically, you want to be alerted when the status of a purchase order is set to **Received**.</span></span> <span data-ttu-id="b1e38-135">Tilan muutos on hälytyksen laukaiseva tapahtuma.</span><span class="sxs-lookup"><span data-stu-id="b1e38-135">This change in status is the event that triggers the alert.</span></span>
+
+<span data-ttu-id="b1e38-136">Seuraavaksi päätetään, mistä ostotilauksista haluat saada hälytyksen.</span><span class="sxs-lookup"><span data-stu-id="b1e38-136">Next, you must decide which purchase orders you want to be alerted about.</span></span> <span data-ttu-id="b1e38-137">Voit esimerkiksi valita yhden seuraavista vaihtoehdoista.</span><span class="sxs-lookup"><span data-stu-id="b1e38-137">For example, you can select one of the following options.</span></span> <span data-ttu-id="b1e38-138">Nämä asetukset määrittävät hälytyssäännön ehdot.</span><span class="sxs-lookup"><span data-stu-id="b1e38-138">These options define the conditions for the alert rule.</span></span>
+
+- <span data-ttu-id="b1e38-139">**Nykyinen valittu tietue** – Saat hälytyksen, kun tietyn ostotilauksen tilaksi tulee **Vastaanotettu**.</span><span class="sxs-lookup"><span data-stu-id="b1e38-139">**Current selected record** – You receive an alert when the status of a specific purchase order changes to **Received**.</span></span>
+- <span data-ttu-id="b1e38-140">**Kaikki tietueet** – Saat hälytyksen, kun aktiivisen sivunäkymän nimikkeen ostotilauksen tila muuttuu.</span><span class="sxs-lookup"><span data-stu-id="b1e38-140">**All records** – You receive an alert when the status of a purchase order is changed for an item in the active page view.</span></span> <span data-ttu-id="b1e38-141">Voit luoda tietylle tietuejoukolle sääntöjä sivulla olevien suodatuksen lisäasetusten avulla.</span><span class="sxs-lookup"><span data-stu-id="b1e38-141">You can use the advanced filtering that is available on the page to create rules for a specific set of records.</span></span> <span data-ttu-id="b1e38-142">Voit esimerkiksi luoda hälytyksen, joka käynnistetään tietyn asiakasryhmän asiakkaiden kaikille ostotilauksille.</span><span class="sxs-lookup"><span data-stu-id="b1e38-142">For example, you can create an alert that is triggered for all purchase orders for the customers in a specific customer group.</span></span>
+    
+## <a name="expiry-of-rule"></a><span data-ttu-id="b1e38-143">Päättymissääntö</span><span class="sxs-lookup"><span data-stu-id="b1e38-143">Expiry of rule</span></span>
+
+<span data-ttu-id="b1e38-144">Määritä **Luo hälytyssääntö** -valintaikkunan **Hälytä tähän asti:** -pikavälilehdessä, miten kauan hälytyssääntö on aktiivinen.</span><span class="sxs-lookup"><span data-stu-id="b1e38-144">On the **Alert me until** FastTab of the **Create alert rule** dialog box, you can specify how long the alert rule should be active.</span></span>
+
+## <a name="alert-contents"></a><span data-ttu-id="b1e38-145">Hälytyksen sisältö</span><span class="sxs-lookup"><span data-stu-id="b1e38-145">Alert contents</span></span>
+
+<span data-ttu-id="b1e38-146">Määritä **Luo hälytyssääntö** -valintaikkunan **Hälytystapa**-pikavälilehdessä hälytyksen sanomalle aihe- ja sanomateksti.</span><span class="sxs-lookup"><span data-stu-id="b1e38-146">On the **Alert me with** FastTab of the **Create alert rule** dialog box, you can specify the subject text and message text that the alert messages should use.</span></span>
+
+## <a name="user-id"></a><span data-ttu-id="b1e38-147">Käyttäjätunnus</span><span class="sxs-lookup"><span data-stu-id="b1e38-147">User ID</span></span>
+
+<span data-ttu-id="b1e38-148">Määritä **Luo hälytyssääntö** -valintaikkunan **Hälytystapa**-pikavälilehdessä käyttäjä, joka vastaanottaa hälytyssanomat.</span><span class="sxs-lookup"><span data-stu-id="b1e38-148">On the **Alert me with** FastTab of the **Create alert rule** dialog box, you can specify which user should receive the alert messages.</span></span> <span data-ttu-id="b1e38-149">Käyttäjätunnus valitaan oletusarvoisesti.</span><span class="sxs-lookup"><span data-stu-id="b1e38-149">By default, your user ID is selected.</span></span> <span data-ttu-id="b1e38-150">Tämä asetus on rajoitettu organisaation järjestelmänvalvojien käyttöön.</span><span class="sxs-lookup"><span data-stu-id="b1e38-150">This option is restricted to organization administrators.</span></span>
+
+## <a name="create-an-alert-rule"></a><span data-ttu-id="b1e38-151">Luo hälytyssääntö</span><span class="sxs-lookup"><span data-stu-id="b1e38-151">Create an alert rule</span></span>
+
+1. <span data-ttu-id="b1e38-152">Avaa sivu, joka sisältää valvottavat tiedot.</span><span class="sxs-lookup"><span data-stu-id="b1e38-152">Open the page that contains the data to monitor.</span></span>
+2. <span data-ttu-id="b1e38-153">Valitse **Asetukset**-välilehden **Jaa**-ryhmän toimintoruudussa **Luo hälytyssääntö**.</span><span class="sxs-lookup"><span data-stu-id="b1e38-153">On the Action Pane, on the **Options** tab, in the **Share** group, select **Create alert rule**.</span></span>
+3. <span data-ttu-id="b1e38-154">Valitse **Kenttä**-kentän **Luo hälytyssääntö** -valintaikkunassa seurattava kenttä.</span><span class="sxs-lookup"><span data-stu-id="b1e38-154">In the **Create alert rule** dialog box, in the **Field** field, select the field to monitor.</span></span>
+4. <span data-ttu-id="b1e38-155">Valitse **Tapahtuma**-kentässä tapahtuman tyyppi.</span><span class="sxs-lookup"><span data-stu-id="b1e38-155">In the **Event** field, select the type of event.</span></span>
+5. <span data-ttu-id="b1e38-156">Valitse **Hälytä seuraavasta:** -pikavälilehdessä vaihtoehto.</span><span class="sxs-lookup"><span data-stu-id="b1e38-156">On the **Alert me for** FastTab, select an option.</span></span>
+6. <span data-ttu-id="b1e38-157">Jos haluat hälytyssäännön poistuvan käytöstä tiettynä päivämääränä, valitse **Hälytä tähän asti** -pikavälilehdessä päättymispäivämäärä.</span><span class="sxs-lookup"><span data-stu-id="b1e38-157">If the alert rule should become inactive on a specific date, on the **Alert me until** FastTab, select an end date.</span></span>
+7. <span data-ttu-id="b1e38-158">Hyväksy **Hälytystapa**-pikavälilehden **Aihe**-kentässä sähköpostiviestin aiheen oletusotsikko tai kirjoita uusi aihe.</span><span class="sxs-lookup"><span data-stu-id="b1e38-158">On the **Alert me with** FastTab, in the **Subject** field, accept the default subject heading for the email message, or enter a new subject.</span></span> <span data-ttu-id="b1e38-159">Tekstiä käytetään otsikkona sähköpostiviestissä jonka saat, kun hälytys laukaistaan.</span><span class="sxs-lookup"><span data-stu-id="b1e38-159">The text is used as the subject heading for the email message that you receive when an alert is triggered.</span></span>
+8. <span data-ttu-id="b1e38-160">Valitse **Sanoma**-kentässä valinnainen sanoma.</span><span class="sxs-lookup"><span data-stu-id="b1e38-160">In the **Message** field, enter an optional message.</span></span> <span data-ttu-id="b1e38-161">Tämä teksti on sanoma, jonka saat, kun hälytys laukaistaan.</span><span class="sxs-lookup"><span data-stu-id="b1e38-161">The text is used as the message that you receive when an alert is triggered.</span></span>
+9. <span data-ttu-id="b1e38-162">Tallenna asetukset ja luo hälytyssääntö valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="b1e38-162">Select **OK** to save the settings and create the alert rule.</span></span>

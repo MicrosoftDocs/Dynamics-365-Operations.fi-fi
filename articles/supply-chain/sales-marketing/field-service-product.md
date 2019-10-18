@@ -1,6 +1,6 @@
 ---
-title: Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin
-description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Field Serviceen.
+title: Supply Chain Managementin tuotteiden synkronointi Field Servicen tuotteisiin
+description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceen.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
@@ -19,40 +19,40 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 06d7ff272ecb79abded3c3d3ade1f6bc0ef1f095
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f5f6d41f3e65a3cf5b8c7c96f54b1c8c6cdfaefb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742352"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249770"
 ---
-# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a><span data-ttu-id="fff96-103">Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin</span><span class="sxs-lookup"><span data-stu-id="fff96-103">Synchronize products in Finance and Operations to products in Field Service</span></span>
+# <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a><span data-ttu-id="4fd55-103">Supply Chain Managementin tuotteiden synkronointi Field Servicen tuotteisiin</span><span class="sxs-lookup"><span data-stu-id="4fd55-103">Synchronize products in Supply Chain Management to products in Field Service</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="fff96-104">Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Field Serviceen.</span><span class="sxs-lookup"><span data-stu-id="fff96-104">This topic discusses the templates and underlying task that are used to synchronize products from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.</span></span>
+<span data-ttu-id="4fd55-104">Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Field Serviceen.</span><span class="sxs-lookup"><span data-stu-id="4fd55-104">This topic discusses the templates and underlying task that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365  Field Service.</span></span>
 
-<span data-ttu-id="fff96-105">Käytetty **Field Servicen tuotteet (Fin and Opsista Field Serviceen)** -malli perustuu Prospektista käteiseksi -ratkaisun **Tuotteet (Fin and Opsista Salesiin) – suora** -malliin.</span><span class="sxs-lookup"><span data-stu-id="fff96-105">The used **Field Service Products (Fin and Ops to Field Service)** template is based on the **Products (Fin and Ops to Sales) – Direct** template from Prospect to Cash.</span></span> <span data-ttu-id="fff96-106">Lisätietoja on kohdassa [Tuotteet (Fin and Opsista Salesiin) - suora](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).</span><span class="sxs-lookup"><span data-stu-id="fff96-106">For more information, see [Products (Fin and Ops to Sales) – Direct](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).</span></span>
+<span data-ttu-id="4fd55-105">Käytetty **Field Servicen tuotteet (Supply Chain Managementista Field Serviceen)** -malli perustuu Prospektista käteiseksi -ratkaisun **Tuotteet (Supply Chain Managementista Salesiin) – suora** -malliin.</span><span class="sxs-lookup"><span data-stu-id="4fd55-105">The used **Field Service Products (Supply Chain Management to Field Service)** template is based on the **Products (Supply Chain Management to Sales) – Direct** template from Prospect to Cash.</span></span> <span data-ttu-id="4fd55-106">Lisätietoja on kohdassa [Tuotteet (Supply Chain Managementista Salesiin) – suora](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).</span><span class="sxs-lookup"><span data-stu-id="4fd55-106">For more information, see [Products (Supply Chain Management to Sales) – Direct](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).</span></span>
 
-<span data-ttu-id="fff96-107">Tässä ohjeaiheessa käsitellään ainoastaan **Field Servicen tuotteet (Fin and Opsista Field Serviceen)**- ja**Tuotteet (Fin and Opsista Salesiin) – suora** -mallien eroja.</span><span class="sxs-lookup"><span data-stu-id="fff96-107">This topic only describes the differences between the **Field Service Products (Fin and Ops to Field Service)** and **Products (Fin and Ops to Sales) – Direct** templates.</span></span>
+<span data-ttu-id="4fd55-107">Tässä ohjeaiheessa käsitellään ainoastaan **Field Servicen tuotteet (Supply Chain Managementista Field Serviceen)**- ja**Tuotteet (Supply Chain Managementista Salesiin) – suora** -mallien eroja.</span><span class="sxs-lookup"><span data-stu-id="4fd55-107">This topic only describes the differences between the **Field Service Products (Supply Chain Management to Field Service)** and **Products (Supply Chain Management to Sales) – Direct** templates.</span></span>
 
-## <a name="templates-and-tasks"></a><span data-ttu-id="fff96-108">Mallit ja tehtävät</span><span class="sxs-lookup"><span data-stu-id="fff96-108">Templates and tasks</span></span>
+## <a name="templates-and-tasks"></a><span data-ttu-id="4fd55-108">Mallit ja tehtävät</span><span class="sxs-lookup"><span data-stu-id="4fd55-108">Templates and tasks</span></span>
 
-<span data-ttu-id="fff96-109">**Mallin nimi Tietojen integroinnissa:**</span><span class="sxs-lookup"><span data-stu-id="fff96-109">**Name of the template in Data integration:**</span></span>
+<span data-ttu-id="4fd55-109">**Mallin nimi Tietojen integroinnissa**</span><span class="sxs-lookup"><span data-stu-id="4fd55-109">**Name of the template in Data integration**</span></span>
 
-- <span data-ttu-id="fff96-110">Field Servicen tuotteet (Fin and Opsista Field Serviceen)</span><span class="sxs-lookup"><span data-stu-id="fff96-110">Field Service Products (Fin and Ops to Field Service)</span></span>
+- <span data-ttu-id="4fd55-110">Field Service -tuotteet (Supply Chain Managementista Field Serviceen)</span><span class="sxs-lookup"><span data-stu-id="4fd55-110">Field Service Products (Supply Chain Management to Field Service)</span></span>
 
-<span data-ttu-id="fff96-111">**Tehtävän nimi tietojen integrointiprojektissa:**</span><span class="sxs-lookup"><span data-stu-id="fff96-111">**Name of the task in the Data integration project:**</span></span>
+<span data-ttu-id="4fd55-111">**Tehtävän nimi tietojen integrointiprojektissa**</span><span class="sxs-lookup"><span data-stu-id="4fd55-111">**Name of the task in the Data integration project**</span></span>
 
-- <span data-ttu-id="fff96-112">Tuotteet - tuotteet</span><span class="sxs-lookup"><span data-stu-id="fff96-112">Products - Products</span></span>
+- <span data-ttu-id="4fd55-112">Tuotteet - tuotteet</span><span class="sxs-lookup"><span data-stu-id="4fd55-112">Products - Products</span></span>
 
-<span data-ttu-id="fff96-113">**Field Servicen tuotteet (Fin and Opsista Field Serviceen)** -malli sisältää yhden yhdistämismäärityksen, joka ei sisälly **Tuotteet (Fin and Opsista Salesiin) – suora** -malliin.</span><span class="sxs-lookup"><span data-stu-id="fff96-113">The **Field Service Products (Fin and Ops to Field Service)** template includes one mapping that isn't included in the **Products (Fin and Ops to Sales) – Direct** template.</span></span> <span data-ttu-id="fff96-114">Tämä yhdistämismääritys varmistaa, että vaadittu Field Service -kohtainen kenttä **Huollon tuotetyyppi** on määritetty oikein.</span><span class="sxs-lookup"><span data-stu-id="fff96-114">This mapping ensures that the required Field Service-specific field **Service Product Type** is set correctly.</span></span>
+<span data-ttu-id="4fd55-113">**Field Servicen tuotteet (Supply Chain Managementista Field Serviceen)** -malli sisältää yhden määrityksen, joka ei sisälly **Tuotteet (Supply Chain Managementista Salesiin) – suora** -malliin.</span><span class="sxs-lookup"><span data-stu-id="4fd55-113">The **Field Service Products (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Products (Supply Chain Management to Sales) – Direct** template.</span></span> <span data-ttu-id="4fd55-114">Tämä yhdistämismääritys varmistaa, että vaadittu Field Service -kohtainen kenttä **Huollon tuotetyyppi** on määritetty oikein.</span><span class="sxs-lookup"><span data-stu-id="4fd55-114">This mapping ensures that the required Field Service-specific field **Service Product Type** is set correctly.</span></span>
 
 ```
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
 ```
 
-<span data-ttu-id="fff96-115">Seuraavaa arvon määritystä käytetään.</span><span class="sxs-lookup"><span data-stu-id="fff96-115">The following value mapping is used.</span></span>
+<span data-ttu-id="4fd55-115">Seuraavaa arvon määritystä käytetään.</span><span class="sxs-lookup"><span data-stu-id="4fd55-115">The following value mapping is used.</span></span>
 
 ```
 inventory     :  690970000
@@ -60,16 +60,16 @@ nonInventory  :  690970001
 service       :  690970002 
 ```
 
-<span data-ttu-id="fff96-116">Finance and Operationsissa **Myytävät vapautetut tuotteet** -tietoyksikön **Kenttäpalvelun tuotetyyppi** -arvo lasketaan seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="fff96-116">In Finance and Operations, the **Field Service product type** value on the **Sellable released products** data entity is calculated as follows:</span></span>
+<span data-ttu-id="4fd55-116">Supply Chain Managementissa **Myytävät vapautetut tuotteet** -tietoyksikön **Kenttäpalvelun tuotetyyppi** -arvo lasketaan seuraavasti:</span><span class="sxs-lookup"><span data-stu-id="4fd55-116">In Supply Chain Management, the **Field Service product type** value on the **Sellable released products** data entity is calculated as follows:</span></span>
 
-- <span data-ttu-id="fff96-117">**Varasto:** Tuotetyyppi = tuote- ja nimikemalliryhmä, varastotuote = tosi</span><span class="sxs-lookup"><span data-stu-id="fff96-117">**Inventory:** Product type = Product and Item model group, Stocked product = True</span></span>
-- <span data-ttu-id="fff96-118">**NonInventory:** Tuotetyyppi = tuote- ja nimikemalliryhmä, varastotuote = epätosi</span><span class="sxs-lookup"><span data-stu-id="fff96-118">**NonInventory:** Product type = Product and Item model group, Stocked product = False</span></span>
-- <span data-ttu-id="fff96-119">**Huolto:** Tuotetyyppi = huolto</span><span class="sxs-lookup"><span data-stu-id="fff96-119">**Service:** Product type = Service</span></span>
+- <span data-ttu-id="4fd55-117">**Varasto:** Tuotetyyppi = tuote- ja nimikemalliryhmä, varastotuote = tosi</span><span class="sxs-lookup"><span data-stu-id="4fd55-117">**Inventory:** Product type = Product and Item model group, Stocked product = True</span></span>
+- <span data-ttu-id="4fd55-118">**NonInventory:** Tuotetyyppi = tuote- ja nimikemalliryhmä, varastotuote = epätosi</span><span class="sxs-lookup"><span data-stu-id="4fd55-118">**NonInventory:** Product type = Product and Item model group, Stocked product = False</span></span>
+- <span data-ttu-id="4fd55-119">**Huolto:** Tuotetyyppi = huolto</span><span class="sxs-lookup"><span data-stu-id="4fd55-119">**Service:** Product type = Service</span></span>
 
-## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="fff96-120">Mallin yhdistäminen tietojen integroinnin yhteydessä</span><span class="sxs-lookup"><span data-stu-id="fff96-120">Template mapping in Data integration</span></span>
+## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="4fd55-120">Mallin yhdistäminen tietojen integroinnin yhteydessä</span><span class="sxs-lookup"><span data-stu-id="4fd55-120">Template mapping in Data integration</span></span>
 
-<span data-ttu-id="fff96-121">Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="fff96-121">The following illustrations show the template mapping in Data integration.</span></span>
+<span data-ttu-id="4fd55-121">Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="4fd55-121">The following illustrations show the template mapping in Data integration.</span></span>
 
-### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a><span data-ttu-id="fff96-122">Field Servicen tuotteet (Fin and Opsista Field Serviceen): Tuotteet - Tuotteet</span><span class="sxs-lookup"><span data-stu-id="fff96-122">Field Service Products (Fin and Ops to Field Service): Products - Products</span></span>
+### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a><span data-ttu-id="4fd55-122">Field Service -tuotteet (Supply Chain Managementista Field Serviceen): Tuotteet – Tuotteet</span><span class="sxs-lookup"><span data-stu-id="4fd55-122">Field Service Products (Supply Chain Management to Field Service): Products - Products</span></span>
 
-<span data-ttu-id="fff96-123">[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSProduct.png)](./media/FSProduct.png)</span><span class="sxs-lookup"><span data-stu-id="fff96-123">[![Template mapping in Data integration](./media/FSProduct.png)](./media/FSProduct.png)</span></span>
+<span data-ttu-id="4fd55-123">[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSProduct.png)](./media/FSProduct.png)</span><span class="sxs-lookup"><span data-stu-id="4fd55-123">[![Template mapping in Data integration](./media/FSProduct.png)](./media/FSProduct.png)</span></span>
