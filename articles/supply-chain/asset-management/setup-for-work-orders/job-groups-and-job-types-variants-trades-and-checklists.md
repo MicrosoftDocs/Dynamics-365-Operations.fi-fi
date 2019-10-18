@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9efbd9651f6a2fa57e761238c6acfe6111e986e6
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874759"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249606"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Ylläpitotöiden tyyppiluokat ja ylläpitotöiden tyypit, ylläpitotöiden tyyppien variantit, ylläpitotöiden toimialat ja ylläpidon tarkistuslistat
 
@@ -225,7 +225,7 @@ Kunnossapidon tarkistusluettelomalleja voidaan käyttää yhteisenä tehtävälu
 26. Jos haluat määrittää valitun kunnossapitotyön tyypin liitteet oletusriville, valitse **Liitä asiakirjoja**. Liitteet, jotka on määritetty kunnossapitotyötyypin oletusriville, sisällytetään automaattisesti työtilausriveihin, jotka käyttävät kyseistä kunnossapitotyön tyypin oletusriviä.
 27. Valitse **Uusi** ja sitten asiakirjatyyppi.
 28. Lataa asiakirja tai tiedosto palvelimeen.
-29. Aseta kentät **Liitteet**-sivulla. Liiteasetukset käyttävät Microsoft Dynamics 365 for Finance and Operations -järjestelmän normaalia tiedoston määritystoimintoa.
+29. Aseta kentät **Liitteet**-sivulla. Liiteasetukset käyttävät normaalia tiedoston määritystoimintoa.
 30. Tallenna liite valitsemalla **Tallenna**.
 
     > [!NOTE]
@@ -261,7 +261,7 @@ Kun olet luonut tarvittavat ylläpitotyötyypin oletusyhdistelmät, voit käytt�
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Kunnossapitotöiden tyypin ennusteiden automaattinen päivitys
 
-Käyttöomaisuuden hallinnassa voit päivittää automaattisesti ylläpitotyön tyypin ennusteiden muutokset, jotka koskevat tuntikustannuksia, nimikekustannuksia ja kuluja, jotka on päivitetty Finance and Operations -järjestelmän muissa moduuleissa. Näin taataan, että kunnossapitotöiden tyypin ennusteissa käytetään aina uusimpia kustannushintoja.
+Käyttöomaisuuden hallinnassa voit päivittää automaattisesti ylläpitotyön tyypin ennusteiden muutokset, jotka koskevat tuntikustannuksia, nimikekustannuksia ja kuluja, jotka on päivitetty muissa moduuleissa. Näin taataan, että kunnossapitotöiden tyypin ennusteissa käytetään aina uusimpia kustannushintoja.
 
 1. Valitse **Resurssien hallinta** \> **Kausittainen** \> **Ennuste** \> **Päivitä ylläpitotyön tyypin ennuste**.
 2. Voit lisätä tiettyjen kunnossapitotöiden tyyppien valintoja tarpeen mukaan käyttämällä **Päivitä ylläpitotyön tyypin ennuste** -valintaikkunan **Sisällytettävät tietueet** -pikavälilehteä. Valitse **Suodatin**ja tee sitten valinnat valitsemalla **Valitse**.

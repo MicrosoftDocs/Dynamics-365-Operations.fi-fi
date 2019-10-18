@@ -1,6 +1,6 @@
 ---
 title: Resurssien hallinnan yleiskatsaus
-description: Tässä aiheessa kuvataan Dynamics 365 for Finance and Operations -ohjelman resurssien hallinnan toimintoja.
+description: Tässä aiheessa kuvataan Dynamics 365 Supply Chain Management -ohjelman resurssien hallinnan toimintoja.
 author: josaw1
 manager: AnnBe
 ms.date: 07/24/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b8a619d787a2d43e843b574edf77b3153d53005
-ms.sourcegitcommit: 829b6dc145197cc565d40469f6a1522f8dccac9f
+ms.openlocfilehash: f98185fbabefedd2a545bd1c3e15b9e180363469
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "1788277"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024703"
 ---
 # <a name="asset-management-overview"></a>Resurssien hallinnan yleiskatsaus
 
@@ -32,7 +32,7 @@ ms.locfileid: "1788277"
 [!include [banner](../includes/preview-banner.md)]
 
 
-Resurssien hallinta on kehittynyt moduuli resurssien ja kunnossapitotöiden hallintaan Microsoft Dynamics 365 for Finance and Operationsissa. Resurssien hallinta on integroitu saumattomasti useisiin Finance and Operationsin moduuleihin. 
+Resurssien hallinta on kehittynyt moduuli resurssien ja kunnossapitotöiden hallintaan Dynamics 365 Supply Chain Managementissa. Resurssien hallinta on integroitu saumattomasti useisiin Finance and Operationsin moduuleihin. 
 
 Alla oleva kuva on esimerkki liityntäkohdista muihin Finance and Operationsin moduuleihin.
 

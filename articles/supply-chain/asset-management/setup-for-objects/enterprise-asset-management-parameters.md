@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e6a2d428e433256339fff07f3805449a2604213
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 3336a3357578b25522e1ac457a48349f88b7318d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783229"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024565"
 ---
 # <a name="asset-management-parameters"></a>Resurssienhallinnan parametrit
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783229"
 
 Resurssien hallinnassa on määritettävä resursseihin, työtilauksiin ja työtilausten ajoitukseen liittyvät yleiset parametrit. Tässä ohjeaiheessa käsitellään, kuinka voit määrittää nämä parametrit. Avaa lomake valisemalla **Resurssien hallinta** > **Asetukset** > **Resurssien hallinnan parametrit**.
 
-**Ohjattu tietojen luonti**-painikkeen avulla voidaan luoda automaattisesti asetustietoja testi- tai esittelytarkoituksiin yrityksessä Dynamics 365 for Finance and Operationsissa. Lisätietoja ohjatun toiminnon käyttämisestä on kohdassa "Määritä resurssien hallinnan testitiedot".
+**Ohjattu tietojen luonti**-painikkeen avulla voidaan luoda automaattisesti asetustietoja testi- tai esittelytarkoituksiin yrityksessä Dynamics 365 Supply Chain Managementissa. Lisätietoja ohjatun toiminnon käyttämisestä on kohdassa "Määritä resurssien hallinnan testitiedot".
 
 **Resurssit**-linkki
 
@@ -57,7 +57,7 @@ Resurssien hallinnassa on määritettävä resursseihin, työtilauksiin ja työt
 - Valitse "Kyllä" **Kopioi viat** -vaihtopainikkeesta, jos haluat kopioida työtilauksiin rekisteröidyt viat automaattisesti liittyviin ylläpitopyyntöihin.  
 - **Taso**-kentässä määritetään toiminnallinen sijaintitaso, joka lisätään työtilaukseen automaattisesti, jos kaikki liittyvät työtilaustyöt viittaavat samaan toiminnalliseen sijaintiin. Jos työtilauksen työt eivät kaikki liity määritettyyn tasoon samassa toiminnallisessa sijainnissa, työtilauksen **Toiminnallinen sijainti** -kenttä jätetään tyhjäksi. Esimerkki: Jos lisäät tähän kenttään numeron "1", se on toiminnallisen sijainnin rakenteen ylin taso. Jos lisäät tähän kenttään numeron "0", et ole määrittänyt tiettyä toiminnallista sijaintitasoa, vain, että työtilauksen kaikkien työtilaustöiden on oltava yhteydessä samaan toiminnalliseen sijaintiin, jolle kyseinen toiminnallinen sijainti lisätään työtilaukseen.  
 - Työtilauksen kulutuksen kirjaamisen yhteydessä käytettävät kirjauskansiot voidaan valita**Yleiset**-pikavälilehden **Tunti**-, **Nimike**- ja **Kulu**-kentissä.  
-- Valitse **Tuotteen kielen lähde** -kentässä, mitä kieltä käytetään resurssien hallinnan raporttien tuotenimissä. Voit valita yrityksen tilille määritetyn kielen tai tällä hetkellä Dynamics 365 for Finance and Operationsiin kirjautuneena olevalle käyttäjälle määritetyn kielen.  
+- Valitse **Tuotteen kielen lähde** -kentässä, mitä kieltä käytetään resurssien hallinnan raporttien tuotenimissä. Voit valita yrityksen tilille määritetyn kielen tai tällä hetkellä kirjautuneena olevalle käyttäjälle määritetyn kielen.  
 - Valitse "Kyllä" **Reaaliaikainen päivitys** vaihtopainikkeesta, jos haluat päivittää automaattisesti muutokset työtyypin oletusarvoihin, ylläpitosuunnitelmiin ja ylläpitokierroksiin.
 > - Jos valitset "Ei", muutoksia työtyypin oletuksiin, ylläpitosuunnitelmiin ja ylläpitokierroksiin ei päivitetä automaattisesti resurssien hallinnassa.  
 > - Valitse vaihtopainikkeesta "Ei", jos synkronoitavia tietoja on paljon, esimerkiksi useita resursseja tai toiminnallisia sijainteja, jotka on määritetty huoltosuunnitelmille tai huoltokierroksille, tai suuri määrä ylläpitosuunnitelmia tai -kierroksia.  
@@ -75,7 +75,7 @@ Resurssien hallinnassa on määritettävä resursseihin, työtilauksiin ja työt
 - **Pääsuunnitelma** liittyy **Organisaation hallinto** -moduulin resursseihin. Jos valitset pääsuunnitelman tässä kentässä, voit tarkastella työtilauksiin liittyviä kapasiteettivarauksia kohdassa **Kapasiteettivaraukset** (**Organisaation hallinto** > **Resurssit** > **Resurssit** > valitse resurssi > **Resurssi**-välilehti > **Kapasiteettivaraukset**-painike). Jos jätät tämän kentän tyhjäksi, voit tarkastella työtilauksiin liittyviä kapasiteettikuormituksia kohdassa **Kapasiteetin kuormitus** (**Organisaation hallinto** \> **Resurssit** \> **Resurssit** \> valitse resurssi \> **Resurssi**-välilehti \> **Kapasiteetin kuormitus** -painike).  
 
 >[!NOTE]
->Valinta, joka koskee pääsuunnitelman käyttämistä **Resurssien hallinta** -moduulissa, ja siihen liittyvä lomake, jota käytetään saamaan yleiskatsaus kapasiteettivarauksista tai kapasiteetin kuormituksesta, on Dynamics 365 for Finance and Operationsin vakioasetus. **Pääsuunnitelma**-kentän asetuksista riippuen voit käyttää kapasiteettitietoja joko **Kapasiteettivaraukset**- tai **Kapasiteetin kuormitus** -osassa **Organisaation hallinta** -moduulissa. Ei ole mahdollista luoda asetuksia, joissa molemmissa näkymissä näkyvät kapasiteettivaraukset.  
+>Valinta, joka koskee pääsuunnitelman käyttämistä **Resurssien hallinta** -moduulissa, ja siihen liittyvä lomake, jota käytetään saamaan yleiskatsaus kapasiteettivarauksista tai kapasiteetin kuormituksesta, on vakioasetus. **Pääsuunnitelma**-kentän asetuksista riippuen voit käyttää kapasiteettitietoja joko **Kapasiteettivaraukset**- tai **Kapasiteetin kuormitus** -osassa **Organisaation hallinta** -moduulissa. Ei ole mahdollista luoda asetuksia, joissa molemmissa näkymissä näkyvät kapasiteettivaraukset.  
 
 Alla olevassa luettelomerkkiluettelossa olevat kentät liittyvät laskettuihin luokituspisteisiin, joita käytetään työtilauksen prioriteetin laskemiseen työtilauksen ajoituksessa.
 

@@ -1,6 +1,6 @@
 ---
-title: Yrityksen tietojen määrittäminen Microsoft Dynamics 365 for Talent - Attractissa
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent - Attractin yritystietojen ja brändäyksen määrittämistä.
+title: Yrityksen tietojen määrittäminen Microsoft Dynamics 365 Talent – Attractissa
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent – Attractin yritystietojen ja brändäyksen määrittämistä.
 author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c5b051497777a01ab304736f1d454391b5d98e63
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 801b90db8d70352693515b442f7a9316b447d041
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739561"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008728"
 ---
 # <a name="configure-company-information"></a>Määritä yrityksen tiedot
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attractin hallintakeskus sisältää Attract-sovelluksen määritysvaihtoehdot, integrointivaihtoehdot ja asetusvaihtoehdot.
+Microsoft Dynamics 365 Talent: Attractin hallintakeskus sisältää Attract-sovelluksen määritysvaihtoehdot, integrointivaihtoehdot ja asetusvaihtoehdot.
 
 ## <a name="company-information"></a>Yrityksen tiedot
 

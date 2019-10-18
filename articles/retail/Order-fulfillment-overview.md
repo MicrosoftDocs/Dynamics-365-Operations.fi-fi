@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b3eeda217e00b33962561bcb2ee6185275f52fe2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3b66369e57e006c9e2fe0a43e4b781c619a65c4a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556941"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025860"
 ---
 # <a name="store-order-fulfillment"></a>Myymälän tilauksen täyttäminen
 
@@ -96,7 +96,7 @@ Kun tilaus on hyväksytty, rivit voidaan valita ja niiden tilaksi voidaan merkit
 
 Keräysluettelot voidaan tulostaa myyntipisteessä, mikä auttaa työntekijöitä keräysprosessissa. Keräystä suorittava työntekijä voi kuljettaa tulostettua keräysluetteloa mukanaan, ja hän voi merkitä keräysluettelon tuotteet manuaalisesti kerätyiksi tuotteiden keräyksen yhteydessä.
 
-Keräysluettelon muoto määritetään Dynamics 365 for Retailissa, jossa se lisätään kuittiprofiiliin. Lisätietoja kuittiprofiilien määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Keräysluettelon muoto määritetään Retailissa, jossa se lisätään kuittiprofiiliin. Lisätietoja kuittiprofiilien määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 Jos rivejä on valittu ja kyseisten rivien keräysluettelo on tulostettu, niiden tilaksi päivitetään automaattisesti **Keräys**.
 
@@ -105,7 +105,7 @@ Jos rivejä on valittu ja kyseisten rivien keräysluettelo on tulostettu, niiden
 - **Tuloksena oleva tila**: keräilty tai osittain keräilty
 - **Tuloksena oleva taustajärjestelmän tila**: keräilty tai osittain keräilty
 
-Kun fyysiseen keräily on tehty, rivin tilaksi voidaan merkitä **Keräilty**. Kun rivi valitaan ja sen tilaksi merkitään **Keräilty**, tapahtuu reaaliaikainen kutsu päivittää tilausrivi Dynamics 365 for Retailissa. Kun rivin tilaksi on merkitty myyntipisteessä **Keräilty**, myös taustajärjestelmän tilaksi päivitetään **Keräilty** ja varastotapahtumat osoittavat, että tietty määrä on vähennetty.
+Kun fyysiseen keräily on tehty, rivin tilaksi voidaan merkitä **Keräilty**. Kun rivi valitaan ja sen tilaksi merkitään **Keräilty**, tapahtuu reaaliaikainen kutsu päivittää tilausrivi. Kun rivin tilaksi on merkitty myyntipisteessä **Keräilty**, myös taustajärjestelmän tilaksi päivitetään **Keräilty** ja varastotapahtumat osoittavat, että tietty määrä on vähennetty.
 
 Kun tilauksia käsitellään ajan mittaan, tietyllä rivillä voidaan käsitellä osittainen määrä. Jos rivi on valittu ja tehdään toiminto **Merkitty kerätyksi** ja jos määrä on suurempi kuin yksi, käyttäjää pyydetään ilmoittamaan määrä. Jäljellä oleva kerättävä määrä täytetään automaattisesti. Jos määritetty määrä on pienempi kuin jäljellä oleva määrä, rivin tilaksi tulee **Osittain kerätty**. Kun tilausrivi päivitetään taustajärjestelmässä, myös se ilmaisee osittain kerättyä tilaa ja varastopäivityksessä käytettyä käyttäjän antamaa määrää.
 
@@ -122,7 +122,7 @@ Tilausrivit voidaan pakata koska tahansa sen jälkeen, kun tilausrivi on hyväks
 - **Tuloksena oleva tila**: pakattu tai osittain pakattu
 - **Tuloksena oleva taustajärjestelmän tila**: toimitettu tai osittain toimitettu
 
-Tämä toiminto merkitsee rivit pakatuiksi tai osittain pakatuiksi ja tulostaa pakkausluettelon. Pakkausluettelo voidaan tulostaa ja sen avulla voidaan tarkistaa yhdessä pakatut tuotteet. Pakkausluettelon muoto määritetään Dynamics 365 for Retailissa, jossa se lisätään kuittiprofiiliin. Lisätietoja kuittiprofiilien määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Tämä toiminto merkitsee rivit pakatuiksi tai osittain pakatuiksi ja tulostaa pakkausluettelon. Pakkausluettelo voidaan tulostaa ja sen avulla voidaan tarkistaa yhdessä pakatut tuotteet. Pakkausluettelon muoto määritetään Retailissa, jossa se lisätään kuittiprofiiliin. Lisätietoja kuittiprofiilien määrittämisestä on kohdassa [Kuittimallit ja tulostaminen](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Toiminto: merkitse pakatuksi**
 

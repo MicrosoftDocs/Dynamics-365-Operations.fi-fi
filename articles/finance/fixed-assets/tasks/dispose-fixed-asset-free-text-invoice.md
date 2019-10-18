@@ -1,0 +1,43 @@
+---
+title: Käyttöomaisuuden poisto vapaatekstilaskua käyttäen
+description: Näiden ohjeiden avulla voit hankkia käyttöomaisuutta käyttöomaisuuden kirjauskansion hankintaehdotuksen avulla.
+author: saraschi2
+manager: AnnBe
+ms.date: 08/19/2019
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: knelson
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 179a6e45d57baf810068cb5c14aed670ebb94706
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2186966"
+---
+# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Käyttöomaisuuden poisto vapaatekstilaskua käyttäen
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+Näiden ohjeiden avulla voit poistaa käyttöomaisuuden käyttämällä vapaatekstilaskua.
+
+1. Siirry siirtymisruudussa kohtaan **Moduulit > Myyntireskontra > Laskut > Kaikki vapaamuotoiset laskut**.
+2. Valitse **Uusi**.
+3. Syötä tai valitse arvo **Asiakastili**-kentässä.
+4. Tarkista oletuspäivämäärä kohdaas **Lasku** ja muokkaa sitä tarvittaessa.
+5. Tarkista jäljellä olevat oletusarvoiset otsikkokentät, kuten **Valuutta**, ja muokkaa sitä tarvittaessa.
+6. Vahvista **Kuvaus** -ja **Päätili** -kentät **Laskurivit**-osassa.
+7. Tarkista oletusarvoinen **Arvonlisäveroryhmä**- ja **Nimikkeen arvonlisäveroryhmä** -kentät.
+8. Kirjoita käyttöomaisuuden **Yksikköhinta** tai **Myyntisumma**.
+9. Valitse **Rivin erittely** -osa.  
+10. Syötä tai valitse arvo **Käyttöomaisuus**-kentässä.
+11. Valitse **Kirjaa**. 
+

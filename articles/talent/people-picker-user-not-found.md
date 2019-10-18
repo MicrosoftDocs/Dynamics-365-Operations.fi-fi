@@ -1,6 +1,6 @@
 ---
 title: Käyttäjää ei löydetä henkilöiden valitsimessa Attractissa tai Onboardissa
-description: Tässä ohjeaiheessa käsitellään, miten toimitaan, kun yritysvuokraajan käyttäjät eivät näy henkilöiden valitsimessa Dynamics 365 for Talent Attract- tai Onboard-sovelluksissa.
+description: 'Tässä ohjeaiheessa käsitellään, miten toimitaan, kun yritysvuokraajan käyttäjät eivät näy henkilöiden valitsimessa Dynamics 365 Talent: Attract- tai Dynamics 365 Talent: Onboard -sovelluksissa.'
 author: andreabichsel
 manager: AnnBe
 ms.date: 01/22/2019
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 2a3c83fcc3f48aa235ffb2db2dc492b34a306c4c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742746"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024185"
 ---
-# <a name="azure-active-directory-users-not-found-in-people-picker"></a>Azure Active Directory -käyttäjiä ei löydetä henkilöiden valitsimessa
+# <a name="azure-active-directory-users-not-found-in-people-picker"></a>Azure Active Directory -käyttäjiä ei löydy People Pickerissä
 
 [!include [banner](includes/banner.md)]
 
-## <a name="issue"></a>Varasto-otto
+## <a name="issue"></a>Lähetä
 
-Tietyt vuokraajan kelvolliset Microsoft Azure Active Directory (Azure AD) -käyttäjät eivät tule näkyviin, kun heitä haetaan nimellä henkilöiden valitsimessa Dynamics 365 for Talent Attract- tai Onboard-sovelluksissa.
+Tietyt vuokraajan kelvolliset Microsoft Azure Active Directory (Azure AD) -käyttäjät eivät tule näkyviin, kun heitä haetaan nimellä henkilöiden valitsimessa Dynamics 365 Talent: Attract- tai Dynamics 365 Talent: Onboard -sovelluksissa.
 
 ## <a name="cause"></a>Syy
 

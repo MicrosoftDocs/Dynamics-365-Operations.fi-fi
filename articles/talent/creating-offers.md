@@ -1,6 +1,6 @@
 ---
 title: Tarjousten luominen, hyväksyminen ja allekirjoittaminen
-description: Tässä ohjeaiheessa käsitellään hakijalle tehtävän tarjouksen luomista, hyväksymistä ja allekirjoittamista Dynamics 365 for Talentissa.
+description: Tässä ohjeaiheessa käsitellään hakijalle tehtävän tarjouksen luomista, hyväksymistä ja allekirjoittamista Dynamics 365 Talentissa.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8c5f95f1d3be22a73cc42cb3667b793490f2a136
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: b9ccd22e218137637cc0bbde0d4ad19a28591731
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739630"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008102"
 ---
 # <a name="create-approve-and-sign-offers"></a>Tarjousten luominen, hyväksyminen ja allekirjoittaminen
 
@@ -110,7 +110,7 @@ Voit tehdä useita toimintoja, ennen kuin lähetät tarjouksen hakijalle.
 Jos Adobe Sign valittiin ensisijaiseksi sähköiseksi allekirjoitusmenetelmäksi, tarjouksen tekijöiden on yhdistettävä Adobe Sign -käyttöoikeus tässä vaiheessa. 
 
 ### <a name="docusign"></a>DocuSign
-Jos DocuSign valittiin ensisijaiseksi sähköiseksi allekirjoitusmenetelmäksi, tarjouksen tekijöiden on yhdistettävä DocuSign-käyttöoikeus. Kirjautumisen jälkeen käyttäjän DocuSign-profiiliin liitetyt oletustili ja -käyttöoikeudet on yhdistetty Talent Attractiin. 
+Jos DocuSign valittiin ensisijaiseksi sähköiseksi allekirjoitusmenetelmäksi, tarjouksen tekijöiden on yhdistettävä DocuSign-käyttöoikeus. Kirjautumisen jälkeen käyttäjän DocuSign-profiiliin liitetyt oletustili ja -käyttöoikeudet on yhdistetty Talent: Attractiin. 
 
 -  Voit tarkastella sähköpostimallia ja muokata sitä tarvittaessa.
 

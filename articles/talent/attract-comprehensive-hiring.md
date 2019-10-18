@@ -1,6 +1,6 @@
 ---
-title: Mikä Microsoft Dynamics 365 for Talent - Attractin versio
-description: Tässä ohjeaiheessa tietoja ominaisuuksista Microsoft Dynamics 365 for Talent - Attractin eri versioissa.
+title: Tietoja Microsoft Dynamics 365 Talent - Attractin versioista
+description: Tässä ohjeaiheessa tietoja Microsoft Dynamics 365 Talent – Attractin eri versioisden ominaisuuksista.
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/04/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 59ab9f418c4d9039ca08a71de0dba0f96216aabb
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 59f3e78efa8801c81dccff2f45751b47fb30481f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739704"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009943"
 ---
 # <a name="which-version-of-attract"></a>Mikä Attractin versio?
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent -versio: Sinulle sopiva Attract-versio riippuu organisaatiosi koosta ja tarpeista. Attractin perusversio sisältää toiminnallisuuden alaryhmän, joka on suunnattu pienemmille tiimeille tai organisaatioille, joissa rekrytointipäällikkö on ensisijainen käyttäjä. Voit aloittaa Attractin perusversion käyttäminen yhdellä tai useammalla lisenssillä.
+Sinulle sopiva Microsoft Dynamics 365 Talent: Attract -versio määräytyy organisaation koon ja tarpeiden mukaan. Attractin perusversio sisältää toiminnallisuuden alaryhmän, joka on suunnattu pienemmille tiimeille tai organisaatioille, joissa rekrytointipäällikkö on ensisijainen käyttäjä. Voit aloittaa Attractin perusversion käyttäminen yhdellä tai useammalla lisenssillä.
 
 Attract, jossa on kattava työhönottolaajennus, kohdistetaan keskisuuriin tai suuriin tiimeihin tai organisaatioihin, joissa rekrytoija tai lahjakkuusasiantuntija on ensisijainen käyttäjä. Kattava työhönottolaajennus edellyttää, että käyttöoikeuksia voidaan ostaa [Microsoft Dynamics 365 partner](https://dynamics.microsoft.com/partners/find-a-partner/)in kautta.
 

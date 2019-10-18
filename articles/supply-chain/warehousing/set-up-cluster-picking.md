@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 84b6d3c3caa09b9601701ca4ac1992b151c0b8d4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558997"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249747"
 ---
 [!include[banner](../includes/banner.md)]
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa kuvataan, kuinka työntekijät voivat käyttää mobiililai
 
 Kun työtilaukset on vapautettu varastoon, työntekijä voi määrittää tilaukset klusteriin mobiililaitteen avulla. Klusteri järjestää keräilytyön työntekijälle. Kun työtilaus liitetään klusteriin, työntekijän on käytettävä klusterikeräilyä kyseisen tilauksen keräilytyöhön. Työntekijä ei voi käyttää muita keräilymenetelmiä. Jos työjärjestys määritetään klusteriin vahingossa, työntekijän on pidettävä tauko rikkoakseen klusterin ja luodakseen sen sitten uudelleen.
 
-Tarvittaessa työntekijä voi siirtää klusterin toiselle työntekijälle. Tämä muuttaa klusterin tilaksi Hyväksytty. Kun hän käyttää kannettavaa laitetta ja ilmoittaa, että keräily ja hyllytys on valmis, lähetys tai kuorma on vahvistettava Dynamics 365 for Finance and Operationsin asiakasohjelmassa.
+Tarvittaessa työntekijä voi siirtää klusterin toiselle työntekijälle. Tämä muuttaa klusterin tilaksi Hyväksytty. Kun hän käyttää kannettavaa laitetta ja ilmoittaa, että keräily ja hyllytys on valmis, lähetys tai kuorma on vahvistettava asiakasohjelmassa.
 
 ## <a name="set-up-cluster-picking"></a>Määritä klusterikeräily
 

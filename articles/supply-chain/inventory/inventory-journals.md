@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7acf4e5397ee7276b0f881f4859267371266de0
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553435"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249537"
 ---
 # <a name="inventory-journals"></a>Varastokirjauskansiot
 
@@ -33,7 +33,7 @@ ms.locfileid: "1553435"
 
 Tässä ohjeaiheessa käsitellään varastokirjauskansioiden käyttämistä erityyppisten varastotilannetapahtumien kirjaamisessa.
 
-Microsoft Dynamics 365 for Finance and Operationsin varastokirjauskansioihin kirjataan erityyppisiä fyysisiä varastotapahtumia, kuten varasto-ottoja ja -vastaanottoja, varastosiirtoja, tuoterakenteiden luonteja ja fyysisen varaston täsmäytys. Kaikki varastokirjauskansioita käytetään samalla tavalla, mutta ne on jaettu eri tyyppeihin.
+Supply Chain Managementin varastokirjauskansioihin kirjataan erityyppisiä fyysisiä varastotapahtumia, kuten varasto-ottoja ja -vastaanottoja, varastosiirtoja, tuoterakenteiden luonteja ja fyysisen varaston täsmäytys. Kaikki varastokirjauskansioita käytetään samalla tavalla, mutta ne on jaettu eri tyyppeihin.
 
 ## <a name="types-of-inventory-journals"></a>Varastokirjauskansiotyypit
 Käytössä on seuraavat varastokirjauskansiotyypit:
@@ -68,7 +68,7 @@ Kun ilmoitat tuoterakenteen valmiiksi, voit luoda tuoterakennekirjauskansion. Tu
 
 ### <a name="item-arrival"></a>Nimikkeen saapuminen
 
-Voit käyttää nimikkeen saapumisen kirjauskansiota nimikkeiden vastaanoton rekisteröintiin (esimerkiksi ostotilauksista). Nimikkeen saapumisen kirjauskansio voidaan luoda osana saapumisen hallintaa **Saapumisten yhteenveto** -sivulla. Voit myös luoda kirjauskansioviennin manuaalisesti **Nimikkeen saapuminen**-sivulla. Jos otat nimikkeen saapumisen kirjauskansion nimessä käyttöön keräyssijaintien tarkistuksen, Finance and Operations etsii sijainnin vastaanotettaville nimikkeille ja, jos tilaa on, muodostaa saapuville nimikkeille sijaintikohteet.
+Voit käyttää nimikkeen saapumisen kirjauskansiota nimikkeiden vastaanoton rekisteröintiin (esimerkiksi ostotilauksista). Nimikkeen saapumisen kirjauskansio voidaan luoda osana saapumisen hallintaa **Saapumisten yhteenveto** -sivulla. Voit myös luoda kirjauskansioviennin manuaalisesti **Nimikkeen saapuminen**-sivulla. Jos otat nimikkeen saapumisen kirjauskansion nimessä käyttöön keräyssijaintien tarkistuksen, Supply Chain Management etsii sijainnin vastaanotettaville nimikkeille ja, jos tilaa on, muodostaa saapuville nimikkeille sijaintikohteet.
 
 ### <a name="production-input"></a>Tuotannon varastointi
 
@@ -103,7 +103,7 @@ Tietoyksiköt tukevat seuraavia integrointityyppejä:
 Lisätietoja on kohdassa [Tietoyksiköt](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
-> OData ei ole käytössä kaikissa varastokirjauskansioissa, joten et voi käyttää Excelin tietoyhdistintä tietojen julkaisemiseen, päivittämiseen ja takaisintuontiin Dynamics 365 for Finance and Operationsiin. 
+> OData ei ole käytössä kaikissa varastokirjauskansioissa, joten et voi käyttää Excelin tietoyhdistintä tietojen julkaisemiseen, päivittämiseen ja takaisintuontiin Supply Chain Managementiin. 
 
 Toinen kirjauskansiotietoyksiköiden välinen ero on mahdollisuus käyttää sekä ylätunniste- ja rivitiedot sisältäviä yhdistelmäyksiköitä. Tällä hetkellä yhdistelmäyksiköt ovat käytössä seuraavissa kirjauskansioissa:
 -   Varaston oikaisukirjauskansio

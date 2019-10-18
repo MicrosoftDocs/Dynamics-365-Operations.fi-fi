@@ -1,6 +1,6 @@
 ---
 title: Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
-description: Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 for Retailin myyntipisteen toiminnoista. Ohjeaihe määrittää, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä offline-tilassa.
+description: Tässä ohjeaiheessa on tietoja Dynamics 365 Retailin myyntipisteen toiminnoista. Ohjeaihe määrittää, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä offline-tilassa.
 author: jblucher
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,22 +18,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: fcb933438ec30ebe6d3b499b53e64c58ecec3626
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625662"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025307"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
 [!include [banner](includes/banner.md)]
 
-Useimmat käyttäjän myyntipisteessä tekemät toimenpiteet ovat toimintoja. Toiminnot määritetään ja niitä hallinnoidaan Microsoft Dynamics 365 for Retailin taustajärjestelmässä. Myyntipisteen painikeruudukon painikkeisiin voi lisätä useita toimintoja. Käyttäjät voivat tämän jälkeen valita painikkeita ja käynnistää toimintoja. Muut toiminnot ovat osa myyntipisteen pääsovellusta. Ne käynnistetään joko näytön painikkeiden avulla tai muiden työnkulkujen tai prosessien osana.
+Useimmat käyttäjän myyntipisteessä tekemät toimenpiteet ovat toimintoja. Toiminnot määritetään ja niitä hallinnoidaan Dynamics 365 Retailin taustajärjestelmässä. Myyntipisteen painikeruudukon painikkeisiin voi lisätä useita toimintoja. Käyttäjät voivat tämän jälkeen valita painikkeita ja käynnistää toimintoja. Muut toiminnot ovat osa myyntipisteen pääsovellusta. Ne käynnistetään joko näytön painikkeiden avulla tai muiden työnkulkujen tai prosessien osana.
 
-Seuraavassa taulukossa on tietoja Dynamics 365 for Retailin Retail Modern POS- ja Cloud POS -toiminnoista. Taulukossa määritetään myös, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä, kun myyntipiste on offline-tilassa.
+Seuraavassa taulukossa on tietoja Retail Modern POS- ja Cloud POS -toiminnoista. Taulukossa määritetään myös, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä, kun myyntipiste on offline-tilassa.
 
-Jotkin toiminnot eivät ole tällä hetkellä käytettävissä Dynamics 365 for Retailin Retail Modern POS:ssa tai Cloud POS:ssa. Jotkin toiminnot ovat paikallisia toimintoja. Ne edellyttävät lisälaajennuksia ja -konfiguraation. Joitakin Microsoft Dynamics AX 2012:n toimintoja ei tueta tällä hetkellä.
+Jotkin toiminnot eivät ole tällä hetkellä käytettävissä Retail Modern POS:ssa tai Cloud POS:ssa. Jotkin toiminnot ovat paikallisia toimintoja. Ne edellyttävät lisälaajennuksia ja -konfiguraation. Joitakin Microsoft Dynamics AX 2012:n toimintoja ei tueta tällä hetkellä.
 
 Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 
@@ -42,7 +42,7 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 - **Aloitusnäyttö** – toiminto voidaan käynnistää myyntipisteen painikeruudukoista, jotka on määritetty myyntipisteen aloitusnäytössä.
 
 > [!NOTE]
-> Alla mainitut toiminnot koskevat Dynamics 365 for Retailin uusinta versiota. Osa toiminnosta on ehkä muuttunut tai niitä ei ollut aiemmissa versioissa.
+> Alla mainitut toiminnot koskevat Retailin uusinta versiota. Osa toiminnosta on ehkä muuttunut tai niitä ei ollut aiemmissa versioissa.
 
 | Tunnus | Työvaihe | kuvaus | Painikeruudukko | Tapahtumanäyttö | Aloitusnäyttö | Käytettävissä offline-tilassa | Paikallinen |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

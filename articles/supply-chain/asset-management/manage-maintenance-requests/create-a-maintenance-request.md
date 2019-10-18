@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 03e090633276cd264ad03f561ddb425a9816357e
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847502"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024634"
 ---
 # <a name="create-maintenance-requests"></a>Luo ylläpitopyyntöjä
 
@@ -41,7 +41,7 @@ Ylläpitopyyntöjä voidaan käyttää, jos huoltotyöntekijät tai tuotannon ty
 2. Valitse **Uusi**.
 3. Valitse **Luo pyyntö** -valintaikkunan **Ylläpitopyynnön tyyppi** -kentässä ylläpitopyynnön tyyppi. Ehdotetaan oletustyyppiä.
 4. Kirjoita **kuvaus**-kenttään nimi tai otsikko, joka kuvaa lyhyesti ylläpitopyyntöä.
-5. Valitse **toiminnallinen sijainti**- ja **resurssi**-kentissä toiminnallinen sijainti tai resurssi tai toiminnallisen sijainnin ja resurssin yhdistelmä, kuten tarvitset. Voit luoda ylläpitopyynnön valitsematta resurssia, ja resurssi voidaan lisätä ylläpitopyyntöön myöhemmin. Jos kunnossapitotyöntekijä, joka on kirjautuneena Microsoft Dynamics 365 for Finance and Operationsiin, liittyy resurssiin, joka liittyy resurssiin **Resurssi**-kenttä määritetään automaattisesti.
+5. Valitse **toiminnallinen sijainti**- ja **resurssi**-kentissä toiminnallinen sijainti tai resurssi tai toiminnallisen sijainnin ja resurssin yhdistelmä, kuten tarvitset. Voit luoda ylläpitopyynnön valitsematta resurssia, ja resurssi voidaan lisätä ylläpitopyyntöön myöhemmin. Jos kirjautunut kunnossapitotyöntekijä liittyy resurssiin liittyvään resurssiin **Resurssi**-kenttä määritetään automaattisesti.
 
     Jos valittuun resurssiin on jo liitetty ylläpitopyyntö, **Luo pyyntö** -valintaikkunan yläosassa näkyy sanomapalkki, joka ilmoittaa olemassa olevan ylläpitopyynnön tunnuksesta. Sanomapalkki ilmoittaa myös, jos resurssi kuuluu takuusopimuksen piiriin.
 

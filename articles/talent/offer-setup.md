@@ -1,6 +1,6 @@
 ---
 title: Tarjoustenhallinnan määrittäminen
-description: Tässä ohjeaiheessa käsitellään tarjousten määrittämistä Talentissa.
+description: Tässä ohjeaiheessa käsitellään tarjousten määrittämistä Microsoft Dynamics 365 Talentissa.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa0e5d30c06db16e105631e492af022acfcfd66
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517889"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010841"
 ---
 # <a name="set-up-offer-management"></a>Tarjoustenhallinnan määrittäminen 
 
 [!include [banner](includes/banner.md)]
 
-Kun hakija siirretään Dynamics 365 for Talent: Attractissa tarjousvaiheeseen, sinun on varmistettava, että tarjoukset luodaan nopeasti hakijalle, hyväksytään tarvittaessa ja lähetetään hakijalle. Koska useimmat tarjoukset ovat vakiomuotoisia, ne voidaan luoda uudelleenkäytettävistä malleista. Attractissa kaikki tarjoukset kerätään tarjouspaketiksi. Se on kokoelma, jossa on vähintään yksi tarjousasiakirja. 
+Kun hakija siirretään Dynamics 365 Talent: Attractissa tarjousvaiheeseen, sinun on varmistettava, että tarjoukset luodaan nopeasti hakijalle, hyväksytään tarvittaessa ja lähetetään hakijalle. Koska useimmat tarjoukset ovat vakiomuotoisia, ne voidaan luoda uudelleenkäytettävistä malleista. Attractissa kaikki tarjoukset kerätään tarjouspaketiksi. Se on kokoelma, jossa on vähintään yksi tarjousasiakirja. 
 
 Tässä ohjeaiheessa käsitellään kaikki vaiheet, joita noudattamalla Attractin järjestelmä määrittää erilaisia tarjouspakettimalleja Attractin tarjousten hallintatoiminnossa. Jos käyttäjällä ei ole järjestelmänvalvojan rooli, hänellä ei ole näiden toimintojen käyttöoikeuksia.
 

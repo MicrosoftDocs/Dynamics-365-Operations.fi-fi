@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (14. joulukuuta 2018)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent Core HR:n uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (14. joulukuuta 2018)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent - Core HR:n uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/14/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c2d209cac52665053b664a93bfb6c35e171b0948
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 36eb5722a7bd98c404fb6c8f5bde407ab38ec28d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517877"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024019"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (14. joulukuuta 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-14-2018"></a>Dynamics 365 Talent: Core HR:n uudet tai muuttuneet ominaisuudet (14. joulukuuta 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -94,9 +94,9 @@ Kun ennustemahdollisuus julkaistaan, saldo näyttää muutokset nykyiseen poissa
 
 ## <a name="known-issue"></a>Tunnettu ongelma
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Finance and Operations -integraatiossa ilmenevät määritysvirheet
+### <a name="mapping-errors-in-the-integration-with-finance"></a>Finance-integraatiossa ilmenevät määritysvirheet
 
-Seuraavat ongelmat on havaittu nykyisessä mallissa, jolla Talent integroidaan Dynamics 365 for Finance and Operationsin kanssa. Uusi malli julkaistaan pian, ja sitä käytetään kaikissa uusissa luotavissa integraatioprojekteissa. Aiemmin luoduissa integraatioprojekteissa päivitetään tehtävän yhdistämismääritykset. Lisätietoja on seuraavassa päivitettyjen yhdistämismääritysten taulukossa. 
+Seuraavat ongelmat on havaittu nykyisessä mallissa, jolla Talent integroidaan Dynamics 365 Financein kanssa. Uusi malli julkaistaan pian, ja sitä käytetään kaikissa uusissa luotavissa integraatioprojekteissa. Aiemmin luoduissa integraatioprojekteissa päivitetään tehtävän yhdistämismääritykset. Lisätietoja on seuraavassa päivitettyjen yhdistämismääritysten taulukossa. 
 
 >[!NOTE]
 > Toimet toimien päätyöhön määrittävä tehtävä ei integroi tietoja. Tätä ongelmaa tutkitaan parhaillaan. Ongelmaa ei välttää nykyisessä yhdistämismäärityksessä. 

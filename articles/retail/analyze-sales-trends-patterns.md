@@ -1,6 +1,6 @@
 ---
 title: Myyntitrendien ja -mallien analysointi
-description: Microsoft Dynamics 365 for Retailissa voi tarkastella myyntitrendejä ja -malleja reaaliaikaisesti.
+description: Dynamics 365 Retailissa voi tarkastella myyntitrendejä ja -malleja reaaliaikaisesti.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ea5efd1fcde233145e97aea30d312bbe70b20ac
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c54e707d312d7ac3bbcad71a914e528859038a13
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557897"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025814"
 ---
 # <a name="analyze-sales-trends-and-patterns"></a>Myyntitrendien ja -mallien analysointi
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retailissa voi tarkastella myyntitrendejä ja -malleja reaaliaikaisesti.
+Dynamics 365 Retailissa voi tarkastella myyntitrendejä ja -malleja reaaliaikaisesti.
 
-Dynamics 365 for Retailissa käyttäjät voivat tarkastella myyntitrendejä ja -malleja reaaliaikaisesti organisaatiohierarkian eri tasoilla valitun ajanjakson aikana avaamalla valmiin **vuosikohtaisen kanavamyynnin** raportin. Tämän raportin voi avata seuraavista sijainneista:
+Retailissa käyttäjät voivat tarkastella myyntitrendejä ja -malleja reaaliaikaisesti organisaatiohierarkian eri tasoilla valitun ajanjakson aikana avaamalla valmiin **Vuosikohtaisen kanavamyynnin** -raportin. Tämän raportin voi avata seuraavista sijainneista:
 
 - **Vähittäismyymälän hallinta** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän hallinta** &gt; **Raportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**
 - **Vähittäismyymälän myyntitiedot** -työtila &gt; **Retail** &gt; **Kanavat** &gt; **Vähittäismyymälän myyntitiedot** &gt; **Raportit** &gt; **Vuosikohtaisen kanavamyynnin raportti**

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b6555086d6c86c17b501af9d4d8155e9c08a447
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 14b0661c4c1fa8f2bc197a8a3983b71d73199b2a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536546"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251543"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Varastotyön mobiililaitteiden määrittäminen
 
@@ -163,7 +163,7 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 </tr>
 <tr>
 <td>Siirto mallin mukaan</td>
-<td>Siirrä nimikkeet yhdestä toimipaikasta toiseen puoliautomaattisella tavalla. Työntekijä valitsee sijainnin, josta nimikkeet siirretään, ja Finance and Operations määrittää sijaintidirektiivin avulla, minne ne siirretään.</td>
+<td>Siirrä nimikkeet yhdestä toimipaikasta toiseen puoliautomaattisella tavalla. Työntekijä valitsee sijainnin, josta nimikkeet siirretään, ja järjestelmä määrittää sijaintidirektiivin avulla, minne ne siirretään.</td>
 </tr>
 <tr>
 <td>Varastosiirto</td>
@@ -207,12 +207,12 @@ Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkov
 </thead>
 <tbody>
 <tr class="odd">
-<td>Ei mitään</td>
+<td>Ei mikään</td>
 <td>Tämä oletusarvo ei käsittele työtä.</td>
 </tr>
 <tr class="even">
 <td>Järjestelmäohjattu</td>
-<td>Microsoft Dynamics 365 for Finance and Operations ohjaa työn tyyppiä, joka on määritetty työntekijälle ja järjestystä, jossa työntekijä suorittaa työn. Kun valitset tämän vaihtoehdon, voit valita toimintoruudussa <strong>Järjestelmäohjattu työ</strong> avataksesi <strong>Järjestelmäohjattu lajittelujärjestys</strong> -sivun, jossa voit määrittää työn lajittelukriteerit. Lajitteluehto hallitsee järjestystä, jossa työntekijä suorittaa työn. Voit luoda tarvitsemasi määrän kriteereitä.</td>
+<td>Supply Chain Management ohjaa työn tyyppiä, joka on määritetty työntekijälle, ja järjestystä, jossa työntekijä suorittaa työn. Kun valitset tämän vaihtoehdon, voit valita toimintoruudussa <strong>Järjestelmäohjattu työ</strong> avataksesi <strong>Järjestelmäohjattu lajittelujärjestys</strong> -sivun, jossa voit määrittää työn lajittelukriteerit. Lajitteluehto hallitsee järjestystä, jossa työntekijä suorittaa työn. Voit luoda tarvitsemasi määrän kriteereitä.</td>
 </tr>
 <tr class="odd">
 <td>Käyttäjäohjattu</td>
@@ -224,7 +224,7 @@ Varastotöitä luovien valikkovaihtoehtojen lisäksi voit määrittää valikkov
 </tr>
 <tr class="odd">
 <td>Järjestelmän ryhmittely</td>
-<td>Microsoft Dynamics 365 for Finance and Operations ryhmittelee työntekijän työn määritetyn kentän perusteella. Esimerkiksi keräilytyö ryhmitellään, kun työntekijä skannaa lähetyksen tunnuksen, kuorman tunnuksen tai minkä tahansa arvon, joka voi linkittää jokaisen työyksikön. Jos valitset tämän vaihtoehdon, seuraavat vaihtoehdot ovat käytettävissä:
+<td>Supply Chain Management ryhmittelee työntekijän työn määritetyn kentän perusteella. Esimerkiksi keräilytyö ryhmitellään, kun työntekijä skannaa lähetyksen tunnuksen, kuorman tunnuksen tai minkä tahansa arvon, joka voi linkittää jokaisen työyksikön. Jos valitset tämän vaihtoehdon, seuraavat vaihtoehdot ovat käytettävissä:
 <ul>
 <li><strong>Järjestelmän ryhmittelykenttä</strong> – Valitse kenttä, jonka työntekijä skannaa työn ryhmittelemiseksi.</li>
 <li><strong>Järjestelmän ryhmittelyotsikko</strong> – Anna teksti, joka opastaa työntekijää, mitä hänen pitää skannata työn ryhmittelemiseksi.</li>
@@ -245,7 +245,7 @@ Tämä on hyödyllinen vaihtoehto esimerkiksi silloin, kun useita kuormalavoja a
 </tr>
 <tr class="even">
 <td>Inventoinnin ryhmittely</td>
-<td>Työntekijä valitsee vyöhykkeen, työpoolin tai sijainnin ja Microsoft Dynamics 365 for Finance and Operations määrittää työn valinnan perusteella. Jos valitset tämän vaihtoehdon, voit valita toimintoruudusta myös <strong>Inventointi</strong>-vaihtoehdon määrittääksesi lisätiedot ja sen, kuinka monta kertaa työntekijän on toistettava laskenta, jos ero löydetään.</td>
+<td>Työntekijä valitsee vyöhykkeen, työpoolin tai sijainnin ja Supply Chain Management määrittää työn valinnan perusteella. Jos valitset tämän vaihtoehdon, voit valita toimintoruudusta myös <strong>Inventointi</strong>-vaihtoehdon määrittääksesi lisätiedot ja sen, kuinka monta kertaa työntekijän on toistettava laskenta, jos ero löydetään.</td>
 </tr>
  <tr class="odd">
 <td>Kuljetuksen kuormaus</td>
@@ -333,7 +333,7 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="odd">
 <td>Ryhmä pantu pois</td>
-<td>Valitse tämä vaihtoehto, jos haluat ryhmitellä hyllytystyöt. Tämä vaihtoehto on käytettävissä, kun joko työntekijä tai Microsoft Dynamics 365 for Finance and Operations ryhmitteli työn. Kun työntekijä on saanut ryhmän kaikki keräilytyöt valmiiksi, samaan ryhmään luodaan hyllytystyö.</td>
+<td>Valitse tämä vaihtoehto, jos haluat ryhmitellä hyllytystyöt. Tämä vaihtoehto on käytettävissä, kun joko työntekijä tai Supply Chain Management on ryhmitellyt työn. Kun työntekijä on saanut ryhmän kaikki keräilytyöt valmiiksi, samaan ryhmään luodaan hyllytystyö.</td>
 </tr>
 <tr class="even">
 <td>Varasto-oikaisutyypit</td>
@@ -366,11 +366,11 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="even">
 <td>Järjestelmän ryhmittelykenttä</td>
-<td>Valitse kenttä, joka määrittää, miten Microsoft Dynamics 365 for Finance and Operations ryhmittelee keräilytyön työntekijöille. Esimerkiksi jos valitset <strong>ShipmentId</strong>-kentän, työntekijä skannaa lähetystunnuksen keräilytyön ryhmittelemiseksi. Tämän jälkeen kaikki lähetyksen työt on määritetty työntekijälle. Tämä kenttä edellyttää, että luot valikkovaihtoehdon, jolla voi käyttää aiemmin luotua järjestelmän ryhmittelemää työtä. Kirjoita teksti myös <strong>Järjestelmän ryhmittelyotsikko</strong> -kenttään, jotta työntekijä tietää, mitä pitää skannata.</td>
+<td>Valitse kenttä, joka määrittää, miten Supply Chain Management ryhmittelee keräilytyön työntekijälle. Esimerkiksi jos valitset <strong>ShipmentId</strong>-kentän, työntekijä skannaa lähetystunnuksen keräilytyön ryhmittelemiseksi. Tämän jälkeen kaikki lähetyksen työt on määritetty työntekijälle. Tämä kenttä edellyttää, että luot valikkovaihtoehdon, jolla voi käyttää aiemmin luotua järjestelmän ryhmittelemää työtä. Kirjoita teksti myös <strong>Järjestelmän ryhmittelyotsikko</strong> -kenttään, jotta työntekijä tietää, mitä pitää skannata.</td>
 </tr>
 <tr class="odd">
 <td>Järjestelmän ryhmittelyotsikko</td>
-<td>Kirjoita teksti, jossa työntekijälle kerrotaan skannattavat tiedot, kun Microsoft Dynamics 365 for Finance and Operations ryhmittelee keräilytyön. Jos esimerkiksi käytät <strong>ShipmentId</strong>-kenttää keräilytöiden ryhmittelemiseen lähetyksen mukaan, voit kirjoittaa kenttään <strong>Lähetyksen tunnus</strong>. Tämä kenttä edellyttää, että luot valikkovaihtoehdon, jolla voi käyttää aiemmin luotua järjestelmän ryhmittelemää työtä. Sinun on myös valittava ryhmittelykenttä <strong>Järjestelmän ryhmittelykenttä</strong> -kentästä.</td>
+<td>Kirjoita teksti, jossa työntekijälle kerrotaan skannattavat tiedot, kun Supply Chain Management ryhmittelee keräilytyön. Jos esimerkiksi käytät <strong>ShipmentId</strong>-kenttää keräilytöiden ryhmittelemiseen lähetyksen mukaan, voit kirjoittaa kenttään <strong>Lähetyksen tunnus</strong>. Tämä kenttä edellyttää, että luot valikkovaihtoehdon, jolla voi käyttää aiemmin luotua järjestelmän ryhmittelemää työtä. Sinun on myös valittava ryhmittelykenttä <strong>Järjestelmän ryhmittelykenttä</strong> -kentästä.</td>
 </tr>
 <tr class="even">
 <td>Käytä oletustietoja</td>
@@ -386,13 +386,13 @@ Seuraavassa taulussa kuvataan nämä asetukset.
 </tr>
 <tr class="odd">
 <td>Työmallin koodi</td>
-<td>Valitse työmalli, joka synnyttää prosessin työn. Esimerkiksi jos vastaanotat nimikkeen ostotilaukselle, hyllytystyö luodaan työmallin perusteella. Jos et valitse työmallia, Microsoft Dynamics 365 for Finance and Operations määrittää kyselyehtoperustaiset mallit. Katso lisätietoja työmalleista artikkelista <a href="control-warehouse-location-directives.md">Varastotyön hallinta työmalleilla ja sijaintidirektiiveillä</a>.</td>
+<td>Valitse työmalli, joka synnyttää prosessin työn. Esimerkiksi jos vastaanotat nimikkeen ostotilaukselle, hyllytystyö luodaan työmallin perusteella. Jos et valitse työmallia, Supply Chain Management määrittää kyselyehtoperustaiset mallit. Katso lisätietoja työmalleista artikkelista <a href="control-warehouse-location-directives.md">Varastotyön hallinta työmalleilla ja sijaintidirektiiveillä</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Edellytä, että työntekijät vahvistavat tuotteen, sijainnin tai määrän nimikkeitä keräillessään.
-Voit määrittää työn vahvistukset, jotka edellyttävät, että työntekijän käyttää mobiililaitetta sijainnin tai määrän rekisteröintiin suorittaessaan työtä varastossa. Työn vahvistusten avulla voidaan varmistaa, että työntekijä on oikeassa sijainnissa tai käsittelee oikeaa nimikkeiden määrää. Voit myös antaa Microsoft Dynamics 365 for Finance and Operationsin automaattisesti vahvistaa työntekijän rekisteröinnin. Jos otat käyttöön automaattisen vahvistuksen, et voi edellyttää vahvistuksia sijainnille tai määrälle. Työn vahvistukset sisältävät myös tuotteita ja tuotevariantteja. Voit myös rekisteröidä vahvistuksia lukemalla viivakoodin. Vahvistaaksesi tuotteita ja tuotevariantteja, sinun on syötettävä tuotteen tai tuotevariantin tunnus. Tunnus voi olla tuotetunnus, tuotehaun tunnus, ulkoinen tunnus, GTIN-koodi tai viivakoodi. Kun olet kirjoittanut tunnuksen tai skannannut viivakoodin, tuotevariantin dimensiot näkyvät mobiililaitteessa. 
+Voit määrittää työn vahvistukset, jotka edellyttävät, että työntekijän käyttää mobiililaitetta sijainnin tai määrän rekisteröintiin suorittaessaan työtä varastossa. Työn vahvistusten avulla voidaan varmistaa, että työntekijä on oikeassa sijainnissa tai käsittelee oikeaa nimikkeiden määrää. Voit myös antaa Supply Chain Managementin automaattisesti vahvistaa työntekijän rekisteröinnin. Jos otat käyttöön automaattisen vahvistuksen, et voi edellyttää vahvistuksia sijainnille tai määrälle. Työn vahvistukset sisältävät myös tuotteita ja tuotevariantteja. Voit myös rekisteröidä vahvistuksia lukemalla viivakoodin. Vahvistaaksesi tuotteita ja tuotevariantteja, sinun on syötettävä tuotteen tai tuotevariantin tunnus. Tunnus voi olla tuotetunnus, tuotehaun tunnus, ulkoinen tunnus, GTIN-koodi tai viivakoodi. Kun olet kirjoittanut tunnuksen tai skannannut viivakoodin, tuotevariantin dimensiot näkyvät mobiililaitteessa. 
 
 Seuraavassa taulukossa on kuvattu eri työtyypit, joiden kanssa työn vahvistuksia voi käyttää.
 

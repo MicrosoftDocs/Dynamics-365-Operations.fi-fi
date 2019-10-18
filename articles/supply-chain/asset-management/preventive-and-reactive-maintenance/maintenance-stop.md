@@ -3,7 +3,7 @@ title: Ylläpidon käyttökatko
 description: Tässä ohjeaiheessa kerrotaan ylläpidon käyttökatkosta resurssien hallinnassa.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a831d56116c57b640993162473e74e5ce181f09c
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875621"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922180"
 ---
 # <a name="maintenance-downtime"></a>Ylläpidon käyttökatko
-
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,12 +43,12 @@ Kun kunnossapitoseisokkirekisteröinnissä on valittu käyttöomaisuudet, kaikki
 
 ## <a name="maintenance-downtime-activities"></a>Ylläpidon käyttökatkon tehtävät
 
-Voit avata luettelon kaikista huoltoseisokkitehtävistä ja tarkastella joitakin toimintoihin liittyviä tietoja valitsemalla **Resurssien hallinta** > **Yhteiset** > **Ylläpidon käyttökatkojen toiminnot** > **Kaikki ylläpidon käyttökatkojen toiminnot**. Avaa tietonäkymä napsauttamalla **Ylläpidon käyttökatkojen toiminnot** -sarakkeen linkkiä.
+Voit avata luettelon kaikista huoltoseisokkitehtävistä ja tarkastella joitakin toimintoihin liittyviä tietoja valitsemalla **Resurssien hallinta** > **Yhteiset** > **Ylläpidon käyttökatkojen toiminnot** > **Kaikki ylläpidon käyttökatkojen toiminnot**. Avaa tietonäkymä napsauttamalla **Ylläpidon käyttökatkojen toiminnot** -sarakkeen linkkiä. Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -luettelosta.
 
 ![Kuva 1](media/19-preventive-maintenance.png)
 
 
-## <a name="create-a-maintenance-downtime-registration"></a>Kunnossapitoseisokkien rekisteröinnin luominen
+## <a name="create-a-maintenance-downtime-activity"></a>Kunnossapitoseisokkien toiminnon luominen
 
 1. Valitse **Resurssien hallinta** > **Yhteiset** > **Ylläpidon käyttökatkojen toiminnot** > **Kaikki ylläpidon käyttökatkojen toiminnot** tai **Aktiiviset ylläpidon käyttökatkojen toiminnot**.
 
@@ -61,9 +60,11 @@ Voit avata luettelon kaikista huoltoseisokkitehtävistä ja tarkastella joitakin
 
 5. Valitse **Ylläpidon käyttökatkojen toimintojen resurssit** -pikavälilehdessä > **Lisää rivi**, jos haluat lisätä käyttöomaisuudet yksi kerrallaan huoltoseisokkitoimintoon.
 
-6. Valitse **Tallenna**, kun kaikki käyttöomaisuudet on lisätty.
+6. Valitse **Tallenna**, kun kaikki käyttöomaisuudet on lisätty. Alla olevassa kuvassa on esimerkki huoltoseisokkien toiminnoista ja niihin liittyvistä käyttöomaisuuksista ja kunnossapitotöistä.
 
 7. Valittuihin käyttö kohteisiin liittyvät työtilauksen ylläpitotyöt ja avointen kunnossapitoaikataulujen rivit näkyvät **Tuloksena olevat työtilauksen ylläpitotyöt**- ja **Ylläpitoaikataulun rivit** -pikavälilehdissä. **Yleiset**-pikavälilehden > **Työtilaukset**-ryhmän > **Ylläpitoennusteen tunnit** -kentässsä ja **Yleiset**-pikavälilehden > **Ylläpitoaikataulu** -ryhmän > **Ylläpitoennusteen tunnit** -kentässä näkyy työtilausten ylläpitotöiden ja ylläpitoaikataulurivien ennustettujen tuntien kokonaismäärän.
+
+Alla olevassa kuvassa on esimerkki **Ylläpidon käyttökatkon tehtävät** -tietonäkymästä.
 
 ![Kuva 2](media/20-preventive-maintenance.png)
 
@@ -74,7 +75,7 @@ Voit avata luettelon kaikista huoltoseisokkitehtävistä ja tarkastella joitakin
 
 9. **Laske kapasiteetin kuormitus** -valintaikkunassa muokkaa aloitus- ja loppuaikoja tarvittaessa ja valitse, haluatko sisällyttää työtilaukset ja ylläpitosuunnitelmat laskentaan. **Taso** -kentän avulla voit määrittää, miten yksityiskohtaisen kapasiteetin kuormituksen laskennasta haluat liittyen toiminnallisiin sijainteihin. Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoineen toiminnallinen sijaintirakenne, kaikki toimintosijainnin resurssit, jotka on valittu huoltoseisokkitoiminnossa, näkyvät ylimmällä tasolla, joten rivin tunnit voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista. Jos lisäät arvon "0" **Taso**-kenttään, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki kapasiteetin kuormituksen rivit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät.
 
-10. Aloita laskenta valitsemalla **OK**. Tuntien kokonaismäärä näkyy **Kapasiteetin kuormitus** -yhteenvedossa. Valitse **Kapasiteetin kuormitus** -välilehden **Ryhmittely...** -toimintoruuturyhmissä asiaankuuluvat painikkeita saadaksesi tarkemman yhteenvedon ennustettujen tuntien kohdistuksesta.
+10. Aloita laskenta valitsemalla **OK**. Tuntien kokonaismäärä näkyy **Kapasiteetin kuormitus** -yhteenvedossa. Valitse **Kapasiteetin kuormitus** -välilehden **Ryhmittely...** -toimintoruuturyhmissä asiaankuuluvat painikkeita saadaksesi tarkemman yhteenvedon ennustettujen tuntien kohdistuksesta. Alla oleva kuva näyttää **Kapasiteetin kuormitus** -laskennan tulokset.
 
 ![Kuva 3](media/21-preventive-maintenance.png)
 
@@ -91,7 +92,7 @@ Voit avata luettelon kaikista huoltoseisokkitehtävistä ja tarkastella joitakin
 
 15. **Laske nimikkeen ennuste** -valintaikkunassa muokkaa aloitus- ja loppuaikoja tarvittaessa ja valitse, haluatko sisällyttää työtilaukset ja ylläpitosuunnitelmat laskentaan. **Taso** -kentän avulla voit määrittää, miten yksityiskohtaisen kapasiteetin kuormituksen laskennasta haluat liittyen toiminnallisiin sijainteihin. Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoineen toiminnallinen sijaintirakenne, kaikki toimintosijainnin resurssit, jotka on valittu huoltoseisokkitoiminnossa, näkyvät ylimmällä tasolla, joten rivin tunnit voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista. Jos lisäät arvon "0" **Taso**-kenttään, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki kapasiteetin kuormituksen rivit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät.
 
-16. Aloita laskenta valitsemalla **OK**. Nimike-ennusteiden kokonaismäärä näkyy **Nimike-ennuste** -yhteenvedossa. Valitse **Nimike-ennuste** -välilehden **Ryhmittely...** -toimintoruuturyhmissä asiaankuuluvat painikkeita saadaksesi tarkemman yhteenvedon ennustettujen nimikkeiden kohdistuksesta.
+16. Aloita laskenta valitsemalla **OK**. Nimike-ennusteiden kokonaismäärä näkyy **Nimike-ennuste** -yhteenvedossa. Valitse **Nimike-ennuste** -välilehden **Ryhmittely...** -toimintoruuturyhmissä asiaankuuluvat painikkeita saadaksesi tarkemman yhteenvedon ennustettujen nimikkeiden kohdistuksesta. Alla olevassa kuvassa on **Nimike-ennuste** -laskennan tuloksista.
 
 ![Kuva 4](media/22-preventive-maintenance.png)
 

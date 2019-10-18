@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b7c36553c9ad5bf4b061285d617be85ce77d0fcd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e6d4e9a3ac5635e292b20eba60fe4f010562fdba
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552644"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250092"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimensioiden ja tuotevarianttien oletustilausasetukset
 
@@ -32,7 +32,7 @@ ms.locfileid: "1552644"
 
 [!include [retail name](../includes/retail-name.md)]
 
-Tilauksen oletusasetukset Microsoft Dynamics 365 for Finance and Operationsissa määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä. Tilauksen oletusasetuksia käytetään luotaessa ostotilauksia, myyntitilauksia, siirtotilauksia, varaston kirjauskansioita ja suunniteltujen tilausten luonnin pääsuunnittelussa. Tilauksen oletusasetukset voivat olla nimikekohtaisia, toimipaikkakohtaisia, tuotevarianttikohtaisia tai tuotedimensiokohtaisia.
+Tilauksen oletusasetukset Dynamics 365 Supply Chain Managementissa määrittävät toimipaikan ja varaston, josta nimikkeet ovat lähtöisin tai säilytetään, minimi-, maksimi-, monikerta- ja vakiomäärät, joita käytetään kaupankäynnissä tai varastonhallinnassa, sekä läpimenoaikojen, lopetusmerkin ja luvattujen tilausten menetelmässä. Tilauksen oletusasetuksia käytetään luotaessa ostotilauksia, myyntitilauksia, siirtotilauksia, varaston kirjauskansioita ja suunniteltujen tilausten luonnin pääsuunnittelussa. Tilauksen oletusasetukset voivat olla nimikekohtaisia, toimipaikkakohtaisia, tuotevarianttikohtaisia tai tuotedimensiokohtaisia.
 
 Voit määrittää nimiketilausten oletusasetukset **Tilauksen oletusasetukset** -sivulla. Voit avata sivun kohdassa **Tuotetietojen hallinta** &gt; **Tuotteet** &gt; **Vapautetut tuotteet** &gt; **Valitse vapautettu tuote** &gt; **Suunnitelma**- tai **Varastonhallinta** -toimintoruutu &gt; **Tilausasetukset** &gt; **Tilauksen oletusasetukset**.
 
@@ -74,7 +74,7 @@ Varaston oletusasetukset ovat voimassa myös luotaessa:
 -   Suunnitellut tuotantotilaukset
 
 ## <a name="full-definition-of-a-released-product"></a>Vapautetun tuotteen koko määritys
-Kun luot tapahtumaa, vapautetun tuotteen koko määritelmä on määritettävä rivillä, ennen kuin Finance and Operations yrittää tunnistaa tilauksen oletusasetukset. Vapautetun tuotteen koko määritelmä tarkoittaa sitä, että nimikenumero ja kaikki aktiiviset tuotedimensiot, kuten konfiguraatio, koko, tyyli ja väri on määritetty tapahtumassa. Esimerkiksi jos luot ostotilausrivin vapautetulle tuotevariantille manuaalisesti, sinun on määritettävä kaikki vaaditut tuotedimensiot ennen toimipaikan, varaston, määrän ja läpimenoajan näkymistä oletusarvoisesti tilausrivillä. 
+Kun luot tapahtumaa, vapautetun tuotteen koko määritelmä on määritettävä rivillä, ennen kuin Supply Chain Management yrittää tunnistaa tilauksen oletusasetukset. Vapautetun tuotteen koko määritelmä tarkoittaa sitä, että nimikenumero ja kaikki aktiiviset tuotedimensiot, kuten konfiguraatio, koko, tyyli ja väri on määritetty tapahtumassa. Esimerkiksi jos luot ostotilausrivin vapautetulle tuotevariantille manuaalisesti, sinun on määritettävä kaikki vaaditut tuotedimensiot ennen toimipaikan, varaston, määrän ja läpimenoajan näkymistä oletusarvoisesti tilausrivillä. 
 
 Kaikkia tilauksen oletusasetusparametreja ei käytetä luotaessa tilausta tai kirjauskansion rivejä. Määrät ja läpimenoaikojen näytetään vain oletusarvon mukaan. Esimerkiksi kun lasketaan kirjauskansion riviä, vain toimipaikka ja varasto näytetään oletuksena, kun rivi luodaan. Luonnollisesti määrien oletusarvojen määrityksiä tai tarkistuksia useista nimikkeitä tai minimeistä ei suoriteta, kun rivi luodaan tai kun päiväkirjaan kirjataan. 
 
@@ -97,7 +97,7 @@ Voit määrittää yksittäisille vapautetuille tuotteille yleiset tilausasetuks
 
 Voit luoda sivuston toimipaikkakohtaiset tilausasetukset valitsemalla **Uusi**. **Tietonäkymä**-kohdassa täytä toimipaikka **Asetukset käytössä** &gt; **Toimipaikka**-kentässä. **Ruudukkonäkymä**-kohdassa täytä toimipaikka **Toimipaikka** -sarakkeeseen. Uusi sääntö saa automaattisesti uuden luokitusarvon, joka on suurempi kuin nolla. Voit luoda niin monta toimipaikkakohtaista sääntöä kuin on tarpeen ja määrittää toimipaikkakohtaisille säännöille saman luokituksen mallintaaksesi, että ne ovat yhtä tärkeitä. 
 
-Jos olet **Tietonäkymä**-kohdassa et saat nimikkeelle luotujen sääntöjen yhteenvetoa. Yleisiä tietoja saat **Näytä/piilota luettelo** -painikkeella. Kun tilausrivi luodaan eikä sille anneta toimipaikkaa, Finance and Operations etsii sääntöä, jossa toimipaikkaa ei ole määritetty. Tämä voi auttaa määrittämään tilausrivin oletustoimipaikan. Tätä toimipaikkaa käytetään etsittäessä toimipaikkakohtaista sääntöä, johon oletusvarasto on voitu määrittää. Tätä varastoa käytetään tilausrivillä.
+Jos olet **Tietonäkymä**-kohdassa et saat nimikkeelle luotujen sääntöjen yhteenvetoa. Yleisiä tietoja saat **Näytä/piilota luettelo** -painikkeella. Kun tilausrivi luodaan eikä sille anneta toimipaikkaa, Supply Chain Management etsii sääntöä, jossa toimipaikkaa ei ole määritetty. Tämä voi auttaa määrittämään tilausrivin oletustoimipaikan. Tätä toimipaikkaa käytetään etsittäessä toimipaikkakohtaista sääntöä, johon oletusvarasto on voitu määrittää. Tätä varastoa käytetään tilausrivillä.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Tuotedimension erityistilausasetukset
 
@@ -134,7 +134,7 @@ Voit luoda seuraavat Tilauksen oletusasetusten säännöt.
 
 Kahdella vanhojen versioiden lopettamissäännöllä on sama luokittelu, eli ne ovat yhtä tärkeitä. Kummallakin on korkeampi luokitus kuin konfiguraation C1 säännöllä, mikä tarkoittaa, että ne ohittavat konfiguraation C1 säännön. 
 
-Tässä esimerkissä selitetään luokituksen tarve. Jos ostotilaus luodaan konfiguraatiolle C1 ja versiolle R2 ja luokitus puuttuu, kaksi R2 ja C1 -konfiguraatiolle määritettyä sääntöä ovat moniselitteisiä. Moniselitteisyyden ratkaisemiseksi Finance and Operations etsii sääntöjä laskevassa luokitusjärjestyksessä ja käyttää ensimmäistä käytettävissä olevaa sääntöä. Tässä esimerkissä, luotaessa ostotilausriviä konfiguraatiolle C1 ja versiolle R2, käyttäjä saa varoitusviestin, että nimike on pidossa ja tämä aiheutuu version arvosta. Jos konfiguraatiota koskeva luokitus on korkeampi kuin version sääntö, konfiguraation C1 ja version R2 ostotilausrivin luominen on onnistunut eikä "nimike on pidossa" viestiä anneta käyttäjälle. 
+Tässä esimerkissä selitetään luokituksen tarve. Jos ostotilaus luodaan konfiguraatiolle C1 ja versiolle R2 ja luokitus puuttuu, kaksi R2 ja C1 -konfiguraatiolle määritettyä sääntöä ovat moniselitteisiä. Supply Chain Management ratkaisee moniselitteisyyden etsimällä sääntöjä laskevassa luokitusjärjestyksessä ja käyttää ensimmäistä käytettävissä olevaa sääntöä. Tässä esimerkissä, luotaessa ostotilausriviä konfiguraatiolle C1 ja versiolle R2, käyttäjä saa varoitusviestin, että nimike on pidossa ja tämä aiheutuu version arvosta. Jos konfiguraatiota koskeva luokitus on korkeampi kuin version sääntö, konfiguraation C1 ja version R2 ostotilausrivin luominen on onnistunut eikä "nimike on pidossa" viestiä anneta käyttäjälle. 
 
 Ota huomioon seuraavat tilauksen oletusasetusten säännöt.
 

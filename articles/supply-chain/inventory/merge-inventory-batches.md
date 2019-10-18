@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d969fcc59af87da3921225974ebc2ae41d9fa1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572831"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250987"
 ---
 # <a name="merge-inventory-batches"></a>Yhdistä varastoerät
 
@@ -89,7 +89,7 @@ Ei, voit yhdistää vain eriä, joilla on sama toimipaikka ja varaston varastodi
 Et, voit yhdistää vain erien täyden määrän. Eräyhdistämistoiminto on tarkoitettu varasto-ominaisuudeksi (ei tuotanto-ominaisuudeksi).
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Mitä jos erillä on erilaiset erämääritearvot?
-Kun valitset tiettyyn erään yhdistettävät lähde-erät, Finance and Operations tarkistaa, onko kaikilla erillä samat ominaisuudet tai määritearvot. Kun määritteen arvo on sama, yhdistetylle erälle ehdotetaan arvoa. Tätä arvoa voi muuttaa. Yhdistetyn erän toisistaan poikkeavat määritearvot jätetään tyhjiksi. Voit lisätä nämä arvot manuaalisesti. Jos määritearvon erämääritetyyppi on kokonaisluku tai murtoluku, eivätkä arvot ole samoja kaikille lähde-erille, arvo lasketaan käyttämällä painotettua keskiarvoa. Laskettu arvo pyöristetään ylös- tai alaspäin lähimpään lisäykseen. Jos lähde-erän arvo on tyhjä, erää ja sen määrää ei sisällytetä laskentaan. **Esimerkki** Seuraavissa esimerkeissä kuvataan painotetun keskiarvon laskenta yhdistetylle erälle. Kahdella lähde-erällä on tyhjä arvo erämääritetyypille, joka on kokonaisluku. Seuraava määrite on liitetty lähde-eriin.
+Kun valitset tiettyyn erään yhdistettävät lähde-erät, Supply Chain Management tarkistaa, onko kaikilla erillä samat ominaisuudet tai määritearvot. Kun määritteen arvo on sama, yhdistetylle erälle ehdotetaan arvoa. Tätä arvoa voi muuttaa. Yhdistetyn erän toisistaan poikkeavat määritearvot jätetään tyhjiksi. Voit lisätä nämä arvot manuaalisesti. Jos määritearvon erämääritetyyppi on kokonaisluku tai murtoluku, eivätkä arvot ole samoja kaikille lähde-erille, arvo lasketaan käyttämällä painotettua keskiarvoa. Laskettu arvo pyöristetään ylös- tai alaspäin lähimpään lisäykseen. Jos lähde-erän arvo on tyhjä, erää ja sen määrää ei sisällytetä laskentaan. **Esimerkki** Seuraavissa esimerkeissä kuvataan painotetun keskiarvon laskenta yhdistetylle erälle. Kahdella lähde-erällä on tyhjä arvo erämääritetyypille, joka on kokonaisluku. Seuraava määrite on liitetty lähde-eriin.
 
 | Ominaisuus | Minimi | Lisäys | Maksimi |
 |-----------|---------|-----------|---------|

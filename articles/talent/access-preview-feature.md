@@ -1,6 +1,6 @@
 ---
-title: Esiversio-ominaisuuksien käyttö Microsoft Dynamics 365 for Talentissa
-description: Tässä aiheessa kuvataan, kuinka järjestelmänvalvoja voi ottaa käyttöön esiversio-ominaisuudet Microsoft Dynamics 365 for Talentissa. Siinä listataan myös ominaisuudet, jotka ovat tällä hetkellä käytössä esikatselua varten.
+title: Esiversio-ominaisuuksien käyttö Microsoft Dynamics 365 Talentissa
+description: Tässä aiheessa kuvataan, kuinka järjestelmänvalvoja voi ottaa käyttöön esiversio-ominaisuudet Microsoft Dynamics 365 Talentissa. Siinä listataan myös ominaisuudet, jotka ovat tällä hetkellä käytössä esikatselua varten.
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 6a5aa8d6ea72ec3d3910edea291c4340ab607326
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: e607c2ba4b544d60c97d98bd49b07d912d83ebc6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739584"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008699"
 ---
 # <a name="manage-preview-features"></a>Esiversiontoimintojen hallinta
 
 [!include[banner](../includes/banner.md)]
 
-Parannamme jatkuvasti henkilöstöresurssien hallinnan (HCM) ominaisuuksia Microsoft Dynamics 365 for Talentissa ja haluamme tarjota ne asiakkaillemme mahdollisimman pian. Järjestelmänvalvojat voivat tarkastella ja käyttää esiversio-ominaisuuksia ympäristöissään. Nämä ominaisuudet ovat lähes valmiita yleiseen käyttöön ja ne ovat läpäisseet laajan testauksen. Haluamme saada vielä viimeisen asiakaspalautekierroksen, ennen kuin hyväksymme ominaisuudet yleisesti saataville.
+Parannamme jatkuvasti henkilöstöresurssien hallinnan (HCM) ominaisuuksia Microsoft Dynamics 365 Talentissa ja haluamme tarjota ne asiakkaillemme mahdollisimman pian. Järjestelmänvalvojat voivat tarkastella ja käyttää esiversio-ominaisuuksia ympäristöissään. Nämä ominaisuudet ovat lähes valmiita yleiseen käyttöön ja ne ovat läpäisseet laajan testauksen. Haluamme saada vielä viimeisen asiakaspalautekierroksen, ennen kuin hyväksymme ominaisuudet yleisesti saataville.
 
-Tässä aiheessa kuvataan, kuinka voit ottaa käyttöön esiversio-ominaisuudet. Siinä listataan myös ominaisuudet, jotka ovat tällä hetkellä saatavilla esikatselua varten. Tätä luetteloa päivitetään sitä mukaa, kun ominaisuuksia julkaistaan yleiseen käyttöön ja uusia ominaisuuksia tuodaan esikatseltavaksi. Erillistä ilmoitusta ei anneta, kun uusia ominaisuuksia julkaistaan esikatseluun. Ominaisuudet tuodaan vain käyttäjien saataville. Lisätietoja Talentin uusista ominaisuuksista on kohdassa [Uudet tai muuttuneet ominaisuudet Dynamics 365 for Talentissa](./whats-new.md)ja [Dynamics 365- ja Power Platform -julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes) -kohdissa.
+Tässä aiheessa kuvataan, kuinka voit ottaa käyttöön esiversio-ominaisuudet. Siinä listataan myös ominaisuudet, jotka ovat tällä hetkellä saatavilla esikatselua varten. Tätä luetteloa päivitetään sitä mukaa, kun ominaisuuksia julkaistaan yleiseen käyttöön ja uusia ominaisuuksia tuodaan esikatseltavaksi. Erillistä ilmoitusta ei anneta, kun uusia ominaisuuksia julkaistaan esikatseluun. Ominaisuudet tuodaan vain käyttäjien saataville. Lisätietoja Talentin uusista ominaisuuksista on kohdassa [Uudet tai muuttuneet ominaisuudet Dynamics 365 Talentissa](./whats-new.md)ja [Dynamics 365- ja Power Platform -julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes) -kohdissa.
 
 ## <a name="enable-or-disable-preview-features"></a>Esiversio-ominaisuuksien ottaminen käyttöön tai poistaminen käytöstä
 
@@ -42,7 +42,7 @@ Jos haluat käyttää esikatselutoimintoja, sinun on ensin otettava ne käyttö�
 
 ### <a name="attract"></a>Kerätä
 
-1. Kirjaudu Microsoft Dynamics 365 for Talent: Attractiin.
+1. Kirjaudu Microsoft Dynamics 365 Talent: Attractiin.
 2. Valitse **Asetukset**-valikossa (hammasrataskuvake) oikeassa alakulmassa **Hallintakeskus**.
 3. Valitse **Ominaisuuksien hallinta** -välilehdestä kohdan **Esiversio-ominaisuudet** vieressä oleva vaihtoehto siten, että se muuttuu siniseksi ja siinä lukee **Päällä**.
 
@@ -69,7 +69,7 @@ Jos haluat käyttää esikatselutoimintoja, sinun on ensin otettava ne käyttö�
 
 ### <a name="onboard"></a>Perehdytys
 
-Microsoft Dynamics 365 for Talentissa ei ole tällä hetkellä käytettävissä esikatselutoimintoja kohteelle: Onboard
+Microsoft Dynamics 365 Talent: Onboardissa ei ole tällä hetkellä käytettävissä esiversiotoimintoja.
 
 ## <a name="features-that-are-currently-in-preview"></a>Tämänhetkiset esiversio-ominaisuudet
 

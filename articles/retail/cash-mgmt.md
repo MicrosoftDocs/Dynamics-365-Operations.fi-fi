@@ -1,6 +1,6 @@
 ---
 title: Kassanhallinnan parannukset
-description: Tässä aiheessa kuvataan Dynamics 365 for Retail -ohjelman käteisvarojen hallinnan (POS) parannuksia.
+description: Tässä aiheessa kuvataan Dynamics 365 Retail -ohjelman käteisvarojen hallinnan (POS) parannuksia.
 author: anpurush
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 845cba3b536b0f800b7c7c4eecee46a068ca8cff
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 49d70a8d983bf3475e01f8fcb80d569b13568485
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1630050"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019528"
 ---
 # <a name="cash-management-improvements"></a>Kassanhallinnan parannukset
 
@@ -32,9 +32,11 @@ ms.locfileid: "1630050"
 
 Kassanhallinta on fyysisten myymälöiden vähittäiskauppiaiden keskeinen toiminto. Vähittäiskauppiaat haluavat, että heidän myymälöissään on järjestelmiä, joiden avulla he voivat tarjota käteisvarojen täydellisen jäljitettävyyden ja vastuullisuuden ja niiden liikkumisen eri kassakoneissa ja kassoilla myymälässä. Heidän on pystyttävä täsmäyttämään mahdolliset erot ja määriteltävä vastuullisuus.
 
-Microsoft Dynamics 365 for Retaililla on kassanhallintatoimintoja myyntipisteen (POS) sovelluksessa. Kassanhallintatoiminnot eivät kuitenkaan ole riittävän vahvoja, jotta käteisvarojen liikkeet voidaan jäljittää täydellisesti, mikäli vähittäismyyntitoiminnot ovat versiota 10.0.3 vanhempia. Vaikka vähittäiskauppiaat voivat täsmäyttää myymälän käteisvarat, ne eivät voi tarkasti määrittää vastuullisuutta, jos käteisvarat poikkeavat toisistaan.
 
-Microsoft Dynamics 365 for Retail 10.0.3:ssa ja uudemmissa versioissa vähittäiskauppiaat saavat jäljitettävyyden käteisen käsittelyä varten. Osana tätä jäljitettävyyttä jälleenmyyjät voivat määrittää säilöt, tehdä kaksisuuntaisia käteistapahtumia ja täsmäyttää kassanhallintatapahtumat.
+Microsoft Dynamics 365 Retaililla on kassanhallintatoimintoja myyntipisteen (POS) sovelluksessa. Kassanhallintatoiminnot eivät kuitenkaan ole riittävän vahvoja, jotta käteisvarojen liikkeet voidaan jäljittää täydellisesti, mikäli vähittäismyyntitoiminnot ovat versiota 10.0.3 vanhempia. Vaikka vähittäiskauppiaat voivat täsmäyttää myymälän käteisvarat, ne eivät voi tarkasti määrittää vastuullisuutta, jos käteisvarat poikkeavat toisistaan.
+
+
+Retailin versiossa 10.0.3 ja sitä uudemmissa versioissa vähittäiskauppiaat saavat jäljitettävyyden käteisen käsittelyä varten. Osana tätä jäljitettävyyttä jälleenmyyjät voivat määrittää säilöt, tehdä kaksisuuntaisia käteistapahtumia ja täsmäyttää kassanhallintatapahtumat.
 
 ## <a name="set-up-traceability-and-define-safes"></a>Jäljitettävyyden luonti ja säilöjen määrittäminen
 

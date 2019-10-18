@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bcc5989edd9913fce414c0c24068f111d8c1aeb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 27870fe6172479b891b885d9e84ca10b250e3399
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553624"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019503"
 ---
-# <a name="manage-retail-product-categories-and-products"></a>Vähittäismyynnin tuoteluokkien ja tuotteiden hallinta
+# <a name="manage-retail-product-categories-and-products"></a>Retail-tuoteluokkien ja tuotteiden hallinta
 
 [!include [banner](./includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan parannetusta tavasta hallita vähittäismyynnin tuoteluokkia ja tuotteita Microsoft Dynamics 365 for Retailissa. Myynninedistämispäälliköt näkevät näiden parannusten avulla tuoteominaisuuksien rakenteen, jonka vähittäismyynnin tuotehierarkia ja vapautetut tuotetiedot jakavat.
+Tässä ohjeaiheessa kerrotaan parannetusta tavasta hallita Dynamics 365 Retailin tuoteluokkia ja tuotteita. Myynninedistämispäälliköt näkevät näiden parannusten avulla tuoteominaisuuksien rakenteen, jonka tuotehierarkia ja vapautetut tuotetiedot jakavat.
 
-Saat lisätietoja vähittäismyynnin tuoteluokkien hallinnasta valitsemalla **Luokka- ja tuotehallinta** -työtilassa **Vähittäismyynnin tuotehierarkia** -ruudun.
+Saat lisätietoja tuoteluokkien hallinnasta valitsemalla **Luokka- ja tuotehallinta** -työtilassa **Vähittäismyynnin tuotehierarkia** -ruudun.
 
-Kiinnitä huomiota avautuvan **Vähittäismyynnin tuotehierarkia** -sivun parannuksiin. Aiemmissa Retail-versioissa tuotteen ominaisuudet jaettiin *tuotteen perusominaisuuksiin* ja *vähittäismyyntituotteen tuotteenominaisuuksiin* niiden käyttöalueen mukaan. Vähittäismyyntituotteen ominaisuuksien käyttöalue on *yleinen*. Toisin sanoen tietyn vähittäismyyntituotteen ominaisuuden arvot jaetaan kaikissa yrityksissä. Tuotteen perusominaisuudet ovat sen sijaan *yrityskohtaisia*. Toisin sanoen tietyn tuotteen perusominaisuuden arvo voi vaihdella yrityksissä kun yrityksen yksittäisten liiketoimintatarpeiden perusteella.
+Kiinnitä huomiota avautuvan **Vähittäismyynnin tuotehierarkia** -sivun parannuksiin. Aiemmissa Retail-versioissa tuotteen ominaisuudet jaettiin *tuotteen perusominaisuuksiin* ja *vähittäismyyntituotteen tuotteenominaisuuksiin* niiden käyttöalueen mukaan. Vähittäismyyntituotteen ominaisuuksien käyttöalue on *yleinen*. Toisin sanoen tietyn tuoteominaisuuden arvot jaettiin kaikkiin yrityksiin. Tuotteen perusominaisuudet ovat sen sijaan *yrityskohtaisia*. Toisin sanoen tietyn tuotteen perusominaisuuden arvo voi vaihdella yrityksissä kun yrityksen yksittäisten liiketoimintatarpeiden perusteella.
 
-Parannetussa vähittäismyynnin tuoteluokkarakenteessa tuotteen ominaisuudet erotetaan loogisesti sen perusteella, miten niitä voi käyttää ryhmässä, jotta ne vastaavat vapautettujen tuotetietojen lomakerakennetta.
+Parannetussa tuoteluokkarakenteessa tuotteen ominaisuudet erotetaan loogisesti sen perusteella, miten niitä voi käyttää ryhmässä, jotta ne vastaavat vapautettujen tuotetietojen lomakerakennetta.
 
 ![Kenttien ryhmittely ominaisuuksien käyttöalueen perusteella](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
@@ -50,7 +50,7 @@ Voit hallita tietyn yrityksen ominaisuuksia valitsemalla **Näytä tietyssä yri
 
 ![Näyttäminen tai muokkaaminen tietyssä yrityksessä](media/ToggleToEditForAllLegalEntities.PNG)
 
-Parannetussa vähittäismyynnin tuoteluokkarakenteessa myynninedistämispäällikkö voi nyt myös määrittää oletusarvot lisätuoteominaisuusjoukolle yksittäisellä luokkatasolla. Kun tuotteet sitten luodaan, ne perivät tuoteominaisuuksiensa oletusarvot sen perusteella, mitä on kyseisten ominaisuuksien liitos yksittäiseen vähittäismyynnin tuotehierarkialuokkaan. Näitä perittyjä tuoteominaisuuksia voidaan myös muokata kunkin tuotteen kohdalla siten, että ne vastaavat yksittäisiä liiketoimintatarpeita.
+Parannetussa vähittäismyynnin tuoteluokkarakenteessa myynninedistämispäällikkö voi nyt myös määrittää oletusarvot lisätuoteominaisuusjoukolle yksittäisellä luokkatasolla. Kun tuotteet sitten luodaan, ne perivät tuoteominaisuuksiensa oletusarvot sen perusteella, mikä on kyseisten ominaisuuksien liitos yksittäiseen tuotehierarkialuokkaan. Näitä perittyjä tuoteominaisuuksia voidaan myös muokata kunkin tuotteen kohdalla siten, että ne vastaavat yksittäisiä liiketoimintatarpeita.
 
 ## <a name="selecting-properties-to-update-products-on-the-retail-product-hierarchy-page"></a>Vähittäismyynnin tuotehierarkiasivulla päivitettävien tuoteominaisuuksien valinta
 

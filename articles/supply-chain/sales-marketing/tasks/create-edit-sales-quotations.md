@@ -3,7 +3,7 @@ title: Myyntitarjousten luonti ja muokkaus
 description: Tässä menettelyssä käsitellään, miten myyntitarjous luodaan ja päivitetään.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f66ec29cc0afd6e1ba5a65b241e3aac42a3c59b5
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2e9db489383d9c6ef05bc25d190d380b3150d311
+ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835627"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "1995001"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Myyntitarjousten luonti ja muokkaus
 
@@ -31,49 +31,42 @@ Tässä menettelyssä käsitellään, miten myyntitarjous luodaan ja päivitetä
 
 
 ## <a name="create-a-sales-quotation"></a>Luo myyntitarjous
-1. Valitse Myynti ja markkinointi > Myyntitarjoukset > Kaikki tarjoukset.
-2. Valitse Uusi.
-3. Valitse Tilityyppi-kentässä Prospekti.
-4. Anna tai valitse Prospekti-kentässä arvo.
-5. Laajenna Yleiset-osa.
-    * Koska valitsit tarjouksen luomisen Myynti ja markkinointi -alueelta, tyypiksi määritettiin automaattisesti Myyntitarjous. Jos haluat luoda projektitarjouksen, tee se Projektinhallinta ja kirjanpito -moduulissa.   
-6. Valitse OK.
-    * Tarjousrivin kentät ja toiminnot muistuttavat myyntitilausrivin kenttiä ja toimintoja.   Myyntitilausten tavoin tarjoukset voidaan luoda tietylle nimikkeelle tai, jos nimiketunnusta ei tiedetä tai sitä ei ole tarjouksen luontiaikana, ne voidaan luoda myyntiluokalle.  
-7. Anna tai valitse Nimike-kentässä arvo.
-8. Kirjoita Nimike-kenttään arvo.
-9. Sulje sivu.
-10. Kirjoita numero Määrä-kenttään.
-    * Jos rivillä valitulla nimikkeellä on voimassaolevia sopimuksia, sovellettava hinta ja alennukset kopioidaan automaattisesti tarjousriville. Varmista, että Yksikköhinta-kentässä on arvo. Voit halutessasi antaa myös alennusarvot.  
-11. Valitse Tallenna.
-12. Valitse toimintoruudussa Myyntitarjous.
-13. Valitse Summat.
-14. Valitse OK.
-15. Valitse myyntitarjousrivi.
-16. Valitse Hinnat.
-    * Voit kokeilla Suorita hintasimulaatio -sivulla tarjouksen odotetun tuoton tai kannattavuuden säätämistä halutun yksikköhinnan, alennussumman, alennusprosentin, kokonaissumman, marginaalin tai katetuottoprosentin perusteella.   Kun olet tyytyväinen tavoitelukuihin, käytä ehdotusta tarjousrivillä, jolloin sen hintaan liittyvät kentät päivitetään vastaavasti.  
-    * Voit luoda niin monta hintasimulointia kuin haluat. Uusi valitset Uusi, nykyisen tarjousrivin hintaehdot kopioidaan sivulle. Voit sitten muokata minkä tahansa hintaan liittyvän kentän arvoja tavoitearvoiksi. Yhden kentän muuttaminen käynnistää kaikkien muiden kenttien uudelleenlaskennan. Jotta järjestelmä voisi laskea myyntikatteen ja katetuottoprosentin, tuotteen yksikkökustannus on tiedettävä. Simuloidut hinnat -välilehdessä on tarkat tiedot alkuperäisistä hinnoista, ehdotetuista muutoksista ja niiden vaikutuksesta tarjouksen summiin.   Yleisesti ottaen järjestelmä laskee arvon uudelleen ja lisää uuden arvon Yksikköhinta-kenttään, kun simulointi määrittää, että tarjousrivillä on käytettävä uutta summaa. Jos simulointi perustuu uuteen marginaaliin tai uuteen katetuottoprosenttiin, vain Nettosumma-kenttä päivitetään ja Yksikköhinta on tyhjä. Kummassakin tapauksessa tarjousrivillä ennen simulointia olleet alennukset poistetaan.  
-17. Sulje sivu.
-18. Valitse toimintoruudussa Tarjous.
-19. Valitse Lähetä tarjous.
-20. Valitse Tulosta tarjous -kentässä Kyllä.
-21. Valitse OK.
-    * Raportin luontiin voi kulua useita minuutteja. Älä sulje sivu, ennen kuin raportti on valmis.  
-22. Sulje sivu.
+1. Valitse **Siirtymisruutu > Moduulit > Myynti ja markkinointi > Myyntitarjoukset > Kaikki tarjoukset**.
+2. Valitse **Uusi**.
+3. Valitse **Tilityyppi**-kentässä Prospekti.
+4. Anna tai valitse **Prospekti**-kentässä arvo.
+5. Laajenna **Yleiset**-osa. Koska valitsit tarjouksen luomisen Myynti ja markkinointi -alueelta, tyypiksi määritettiin automaattisesti Myyntitarjous. Jos haluat luoda projektitarjouksen, tee se **Projektinhallinta ja kirjanpito** -moduulissa.
+6. Valitse **OK**. Tarjousrivin kentät ja toiminnot muistuttavat myyntitilausrivin kenttiä ja toimintoja.   Myyntitilausten tavoin tarjoukset voidaan luoda tietylle nimikkeelle tai, jos nimiketunnusta ei tiedetä tai sitä ei ole tarjouksen luontiaikana, ne voidaan luoda myyntiluokalle.     
+7. Anna tai valitse **Nimike**-kentässä arvo.
+8. Kirjoita arvo **Toimipaikka**-kenttään.
+9. Anna **Määrä**-kentässä numero. Jos rivillä valitulla nimikkeellä on voimassaolevia sopimuksia, sovellettava hinta ja alennukset kopioidaan automaattisesti tarjousriville. Varmista, että Yksikköhinta-kentässä on arvo. Voit halutessasi antaa myös alennusarvot. 
+10. Valitse **Tallenna**.
+11. Valitse **toimintoruudussa** **Myyntitarjous**.
+12. Valitse **Summat**.
+13. Valitse **OK**.
+14. Valitse myyntitarjousrivi.
+15. Valitse **toimintoruudussa** **Tarjous**.
+16. Valitse **Hintasimulaatio**.
+    - Voit kokeilla **Suorita hintasimulaatio** -sivulla tarjouksen odotetun tuoton tai kannattavuuden säätämistä halutun yksikköhinnan, alennussumman, alennusprosentin, kokonaissumman, marginaalin tai katetuottoprosentin perusteella. Kun olet tyytyväinen tavoitelukuihin, käytä ehdotusta tarjousrivillä, jolloin sen hintaan liittyvät kentät päivitetään vastaavasti.  
+    - Voit luoda niin monta hintasimulointia kuin haluat. Uusi valitset **Uusi**, nykyisen tarjousrivin hintaehdot kopioidaan sivulle. Voit sitten muokata minkä tahansa hintaan liittyvän kentän arvoja tavoitearvoiksi. Yhden kentän muuttaminen käynnistää kaikkien muiden kenttien uudelleenlaskennan. Jotta järjestelmä voisi laskea myyntikatteen ja katetuottoprosentin, tuotteen yksikkökustannus on tiedettävä. Simuloidut hinnat -välilehdessä on tarkat tiedot alkuperäisistä hinnoista, ehdotetuista muutoksista ja niiden vaikutuksesta tarjouksen summiin. Yleisesti ottaen järjestelmä laskee arvon uudelleen ja lisää uuden arvon Yksikköhinta-kenttään, kun simulointi määrittää, että tarjousrivillä on käytettävä uutta summaa. Jos simulointi perustuu uuteen marginaaliin tai uuteen katetuottoprosenttiin, vain Nettosumma-kenttä päivitetään ja Yksikköhinta on tyhjä. Kummassakin tapauksessa tarjousrivillä ennen simulointia olleet alennukset poistetaan.
+17. Valitse **toimintoruudussa** **Tarjous**.
+18. Valitse **Lähetä tarjous**.
+19. Valitse **Tulosta tarjous** -kentässä Kyllä.
+20. Valitse **OK**. Raportin luontiin voi kulua useita minuutteja. Älä sulje sivu, ennen kuin raportti on valmis.
 
 ## <a name="update-a-sales-quotation"></a>Päivitä myyntitarjous
-1. Valitse toimintoruudussa Seuranta.
-2. Valitse Muunna asiakkaaksi.
-3. Kirjoita arvo Asiakastili-kenttään.
-4. Valitse Tarkista.
-    * Varmista, että näyttöön avautuu sanoma, jonka mukaan antamasi tilinumero on vapaa käytettäväksi.  
-5. Valitse OK.
-    * Järjestelmä on nyt luonut uuden asiakastilin tarjouksen prospektille.  
-6. Sulje sivu.
-7. Valitse toimintoruudussa Seuranta.
-8. Valitse Vahvista.
-9. Anna tai valitse Syy-kentässä arvo.
-10. Valitse OK.
-11. Valitse toimintoruudussa Yleiset.
-12. Valitse Myyntitilaukset.
-13. Sulje sivu.
+1. Valitse **Siirtymisruutu > Moduulit > Myynti ja markkinointi > Myyntitarjoukset > Kaikki tarjoukset**.
+2. Valitse **toimintoruudussa** **Seuranta**.
+3. Valitse **Muunna asiakkaaksi**.
+4. Kirjoita arvo **Asiakastili**-kenttään.
+5. Valitse **Tarkista**. Varmista, että näyttöön avautuu sanoma, jonka mukaan antamasi tilinumero on vapaa käytettäväksi.  
+6. Valitse **OK**. Järjestelmä on nyt luonut uuden asiakastilin tarjouksen prospektille.  
+7. Sulje sivu.
+8. Valitse **toimintoruudussa** **Seuranta**.
+9. Valitse **Vahvista**.
+10. Anna tai valitse **Syy**-kentässä arvo.
+11. Valitse **OK**.
+12. Valitse **toimintoruudussa** **Yleiset**.
+13. Valitse **Myyntitilaukset**.
+14. Sulje sivu.
 

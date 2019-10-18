@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07fbc5fea1fd44769a29bcc40297ffd02812a1e5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555152"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248977"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Yhteistyö toimittajien kanssa toimittajaportaalissa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä Toimittajaportaalissa yhteistyötä ulkoisten toimittajien kanssa ostotilauksen vahvistusprosessin aikana. Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita.
+Tässä aiheessa kuvataan, miten ostoedustajat voivat tehdä Toimittajaportaalissa yhteistyötä ulkoisten toimittajien kanssa ostotilauksen vahvistusprosessin aikana. Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja toukokuun 2016 versioita.
 
-Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita. Toimittajaportaalin toiminnot on korvattu laajennetulla toimittajayhteistyötoiminnallisuudella Dynamics 365 for Operationsin versiossa 1611. Lisätietoja siitä uudesta toimittajayhteistyötoiminnosta on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).  
+Tämän aiheen tiedot koskevat vain Dynamics AX:n helmikuun 2016 ja 2016 toukokuun versioita. Lisätietoja siitä uudesta toimittajayhteistyötoiminnosta on kohdassa [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).  
 
 Toimittajaportaali on tarkoitettu toimittajille, joilla ei ole sähköisten tietojen vaihdon (EDI) Microsoft Dynamics AX -integrointia ostotilausten tietojen vaihtoa varten. Portaalissa ostoedustajat voivat lähettää ostotilauksen toimittajalle ja vastaanottaa Vahvistettu- tai Hylätty-vastauksen suoraan Dynamics AX:ään.  
 

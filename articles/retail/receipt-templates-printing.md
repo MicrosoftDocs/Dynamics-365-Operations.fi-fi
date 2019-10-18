@@ -1,6 +1,6 @@
 ---
 title: Määritä ja suunnittele vastaanottoluetteloiden muodot
-description: Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittää, miten kuitit, laskut ja muut asiakirjat tulostetaan. Microsoft Dynamics 365 for Retail sisältää lomakkeen asettelun suunnittelutoiminnon, jolla voit helposti luoda ja muokata erilaisia lomakkeen asetteluja.
+description: Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittää, miten kuitit, laskut ja muut asiakirjat tulostetaan. Dynamics 365 Retail sisältää lomakkeen asettelun suunnittelutoiminnon, jolla voit helposti luoda ja muokata erilaisia lomakkeen asetteluja.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eb85752b53d0d48f07bfed9423637cb6c646ab61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553065"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025122"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Määritä ja suunnittele vastaanottoluetteloiden muodot
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittää, miten kuitit, laskut ja muut asiakirjat tulostetaan. Microsoft Dynamics 365 for Retail sisältää lomakkeen asettelun suunnittelutoiminnon, jolla voit helposti luoda ja muokata erilaisia lomakkeen asetteluja.
+Tässä aiheessa kerrotaan, miten voit lomakeasetteluja muokkaamalla määrittää, miten kuitit, laskut ja muut asiakirjat tulostetaan. Dynamics 365 Retail sisältää lomakkeen asettelun suunnittelutoiminnon, jolla voit helposti luoda ja muokata erilaisia lomakkeen asetteluja.
 
 > [!IMPORTANT]
 > Sinun on määritettävä lomakkeiden asettelut ja kuittiprofiilit kuittien ja muiden asiakirjojen tulostamiseksi Retail Modern POS:ssa ja Cloud POS:ssa. Voit sisällyttää kuittiprofiiliin useita lomakeasetteluita. Voit sitten määrittää kuittiprofiilin tulostimeen laitteistoprofiilia muuttamalla.
@@ -55,7 +55,7 @@ Lomakkeen asettelun suunnittelutoiminnon avulla voit luoda lomakkeen asettelun g
 2. Valitse **Kuitin muoto** -sivulla lomakeasettelu ja napsauta sitten **Suunnittelutoiminto**.
 3. Valitse **Suorita** aloittaaksesi Retail-suunnittelutoiminnon isännän asennus.
 4. Napsauta Internet Explorer -ikkunan alaosassa näkyvällä ilmoitusrivillä **Avaa** aloittaaksesi yhden napsautuksen suunnittelutoiminnon asennuksen. (Ilmoitusrivi saattaa näkyä eri kohdassa muissa selaimissa.) Edistymisen ilmaisin näyttää asennusprosessin edistymisen tilanteen.
-5. Kun asennus on päättynyt, anna Dynamics 365 for Retailin käyttäjänimesi ja salasanasi ja aloita sitten suunnittelutoiminto valitsemalla **Kirjaudu sisään**.
+5. Kun asennus on valmis, anna Retail-käyttäjänimesi ja salasanasi ja käynnistä suunnittelutoiminto valitsemalla **Kirjaudu sisään**.
 6. Kun tunnistetietosi on tarkistettu ja suunnittelutoiminta alkaa, voit aloittaa kuitin asettelun suunnittelun tai aiemmin luodun asettelun muokkaamisen.
 7. Jos haluat luoda lomakkeen elementit, valitse **Ylätunniste-**, **Rivit-**, tai **Alatunniste**-osio ja vedä sitten elementti tästä osiosta työtilaan. Useimmat elementit sisältävät muuttujia, jotka täytetään automaattisesti tietokannan tiedoilla. Muut osat, kuten **Teksti**, mahdollistavat mukautetun tekstin kirjoittamisen kuitille.
 

@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548995"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250139"
 ---
 # <a name="onboard-vendors"></a>Toimittajien aktivointi
 [!include [banner](../includes/banner.md)]
 
 ---
 
-Uudet toimittajat voidaan aktivoida ja rekisteröidä toimittajiksi Microsoft Dynamics 365 for Finance and Operationsissa toimittajaa edustavalta henkilöltä kerättävien tietojen perusteella.
+Uudet toimittajat voidaan aktivoida ja rekisteröidä toimittajiksi Microsoft Dynamics 365 Supply Chain Managementissa toimittajaa edustavalta henkilöltä kerättävien tietojen perusteella.
 
 Prosessissa on seuraavat vaiheet, joissa eri roolit suorittavat järjestelmän tehtäviä.
 
 1. **OData-tietojenhallinta** – yksikön tuonti – Alkuperäinen pyyntö on mahdollisen toimittajan rekisteröintipyyntö. Yleensä tämä pyyntö tulee lähteestä, kuten nimettömän käytön sallivasta asiakkaan ylläpitämästä sivustosta. Toimittajat voivat rekisteröityä antamalla perustiedot, kuten toimittajan nimen, perustelut ja organisaatiotunnuksen sekä yhteyshenkilön nimen ja sähköpostiosoitteen. Pyynnöt tuodaan tiedonhallintaliittymään kautta.
-2. **Mahdollisen toimittajan rekisteröintipyyntö -luettelosivu** – Hankinta-asiantuntija päättää mahdollisen toimittajan rekisteröintipyynnössä annettujen tietojen perusteella aktivoidaanko toimittaja. Hankinta-ammattilainen tarkastelee saapuvaa pyyntöä Finance and Operationsin **Mahdollisen toimittajan rekisteröintipyynnöt** -luettelosivulla.
+2. **Mahdollisen toimittajan rekisteröintipyyntö -luettelosivu** – Hankinta-asiantuntija päättää mahdollisen toimittajan rekisteröintipyynnössä annettujen tietojen perusteella aktivoidaanko toimittaja. Hankinta-ammattilainen tarkastelee saapuvaa pyyntöä **Mahdollisen toimittajan rekisteröintipyynnöt** -luettelosivulla.
 3. **Käyttäjien varaustyönkulku** – Kun hankinta-ammattilainen on tarkistanut saapuvan pyynnön tiedot ja päättänyt jatkaa aktivointiprosessia, käyttäjäpyynnön työnkulku valmistelee uuden käyttäjän ja lähettää sähköpostikutsun, jonka avulla yhteyshenkilö voidaan hyväksyä Microsoft Dynamics 365:n todennetuksi käyttäjäksi.
-4. **Ohjattu toimittajan rekisteröintitoiminto** – Toimittajan yhteyshenkilö kirjautuu Finance and Operationsiin uudella käyttäjätilillä. Yhteyshenkilö suorittaa ohjatun toimittajan rekisteröintitoiminnon loppuun ja antaa esimerkiksi seuraavat tiedot: osoitteet, liiketoimintatiedot, hankintaluokat ja kyselylomakkeen vastaukset.
+4. **Ohjattu toimittajan rekisteröintitoiminto** – Toimittajan yhteyshenkilö kirjautuu sisään uudella käyttäjätilillä. Yhteyshenkilö suorittaa ohjatun toimittajan rekisteröintitoiminnon loppuun ja antaa esimerkiksi seuraavat tiedot: osoitteet, liiketoimintatiedot, hankintaluokat ja kyselylomakkeen vastaukset.
 5. **Hyväksyntätyönkulku** – Rekisteröintitiedot sisältävä toimittajapyyntö luodaan. Toimittajapyyntö lähetetään työnkulkuun, jossa se reititetään tarkistettavaksi ja hyväksyttäväksi.
 6. **Toimittajan päätietojen luonti ja käyttäjäroolin muokkaus** – Hyväksytylle toimittajapyynnölle luodaan toimittajatietue. Toimittajan yhteyshenkilön käyttäjätilille joko myönnetään käyttöoikeus toimittajayhteistyötä varten tai tili poistetaan käytöstä.
 
@@ -45,14 +45,14 @@ Seuraavassa taulukossa on prosessiin liittyvät vaiheet ja roolit.
 |--------------------------|---|---|---|---|---|---|
 | System                   | Uutta toimittajaa koskeva pyyntö tuodaan. | | | | | Toimittajatietue luodaan, kun toimittajapyyntö on hyväksytty. |
 | Hankinta-asiantuntija | | Aloita aktivointiprosessi. | | | Tarkista toimittajapyyntö ja joko hyväksy tai hylkää se. | |
-| Järjestelmänvalvoja            | | | Luo käyttäjä Finance and Operationsissa ja Microsoft Azuressa. | | | |
+| Järjestelmänvalvoja            | | | Luo käyttäjä Supply Chain Managementissa ja Microsoft Azuressa. | | | |
 | Toimittajan yhteyshenkilö    | | | Lähetä sähköposti yhteyshenkilölle. | Rekisteröi toimittajan tiedot. | | |
 
-Toimittajan aktivointiprosessi esitellään nopeasti tässä lyhyessä YouTube-videossa: [Uuden toimittajan perehdytys Dynamics 365 for Finance and Operationsissa](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+Toimittajan aktivointiprosessi esitellään nopeasti tässä lyhyessä YouTube-videossa: [Uuden toimittajan aktivointi Finance and Operationsissa](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Mahdollisen toimittajan rekisteröintipyynnön tuominen
 
-Mahdollisen toimittajan rekisteröintipyyntö on Finance and Operationsin yksikkö. Voit määrittää järjestelmän tuomaan tietoja tämän yksikön kautta. 
+Mahdollisen toimittajan rekisteröintipyyntö on Supply Chain Managementin yksikkö. Voit määrittää järjestelmän tuomaan tietoja tämän yksikön kautta. 
 
 Seuraavassa, tuotavassa taulukossa on tähän yksikköön sisältyvät tiedot.
 
@@ -65,18 +65,18 @@ Seuraavassa, tuotavassa taulukossa on tähän yksikköön sisältyvät tiedot.
 | Yhteyshenkilön etunimi  | Sen henkilön etunimi, joka kutsutaan rekisteröimään toimittajan tiedot. |
 | Yhteyshenkilön toinen nimi. | Sen henkilön toinen nimi, joka kutsutaan rekisteröimään toimittajan tiedot. |
 | Yhteyshenkilön sukunimi   | Sen henkilön sukunimi, joka kutsutaan rekisteröimään toimittajan tiedot. |
-| Yhteyshenkilön sähköpostiosoite       | Sähköpostiosoite, jolla uusi käyttäjä luodaan Finance and Operationsissa ja joka rekisteröidään vuokraajan Azure Active Directory (Azure AD) -tilillä. |
+| Yhteyshenkilön sähköpostiosoite       | Sähköpostiosoite, jolla uusi käyttäjä luodaan Supply Chain Managementissa ja joka rekisteröidään vuokraajan Azure Active Directory (Azure AD) -tilillä. |
 | Lähetyspäivämäärä               | Päivämäärä, jolloin tarjouspyyntö luotiin ulkoisessa järjestelmässä. |
-| Oikeushenkilö                 | Yritys, jonka toimittajaksi toimittaja haluaa tulla. Tämän arvon on oltava Finance and Operationsiin rekisteröity yrityksen koodi. Jos arvoa ei saada tuontiprosessin kautta, käytetään hankintaparametreista saatavaa arvoa. |
+| Oikeushenkilö                 | Yritys, jonka toimittajaksi toimittaja haluaa tulla. Tämän arvon on oltava Supply Chain Managementiin rekisteröity yrityksen koodi. Jos arvoa ei saada tuontiprosessin kautta, käytetään hankintaparametreista saatavaa arvoa. |
 | Toimittajan tyyppi                  | Toimittaja voi olla organisaatio tai henkilö. Toimittaja tyyppi määrittää, miten toimittaja luodaan lopuksi. |
 
 Kun mahdollisen toimittajan rekisteröintipyyntö on tuotu, se näkyy **Mahdollisen toimittajan rekisteröintipyyntö** -luettelosivulla. Hankinta-asiantuntija voi kutsua käyttäjän tältä luettelosivulta. Käyttäjän valmisteluun liittyvä käyttäjäpyyntö lähetetään työnkulkuun.
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Mahdollisen toimittajan käyttäjäpyynnön lähettäminen
 
-Mahdollisen toimittajan käyttäjäpyynnön tarkoitus on valmistella alkuperäisen pyynnön lähettänyt käyttäjä siten, että kyseinen käyttäjä voi kirjautua Finance and Operationsiin mahdollisen toimittajan rekisteröintipyynnössä ilmoitetulla sähköpostitilillä.
+Mahdollisen toimittajan käyttäjäpyynnön tarkoitus on valmistella alkuperäisen pyynnön lähettänyt käyttäjä siten, että kyseinen käyttäjä voi kirjautua Supply Chain Managementiin mahdollisen toimittajan rekisteröintipyynnössä ilmoitetulla sähköpostitilillä.
 
-Käyttäjäpyynnön työnkulku käsittelee mahdollisen toimittajan käyttäjäpyynnön. Tämä työnkulku siirtää tietoja Azure AD B2B -yhteiskäytön avulla. Se luo Finance and Operationsiin käyttäjän, jolla on soveltuvat käyttöoikeudet.
+Käyttäjäpyynnön työnkulku käsittelee mahdollisen toimittajan käyttäjäpyynnön. Tämä työnkulku siirtää tietoja Azure AD B2B -yhteiskäytön avulla. Se luo Supply Chain Managementiin käyttäjän, jolla on asiaankuuluvat suojausasetukset.
 
 Uusille käyttäjille määritetään seuraavat käyttöoikeusroolit:
 
@@ -89,7 +89,7 @@ Lisätietoja sähköpostin määrityksistä ja yleisesti työnkulusta on käytt�
 
 ## <a name="vendor-registration"></a>Toimittajan rekisteröinti
 
-Mahdollisen toimittajan Finance and Operationsin kirjautuva käyttäjä näkee ohjatun toimittajan rekisteröintitoiminnon ensimmäisen sivun, jossa käyttäjä voi antaa toimittajan tiedot.
+Mahdollisen toimittajan Supply Chain Managementiin kirjautuva käyttäjä näkee ohjatun toimittajan rekisteröintitoiminnon ensimmäisen sivun, jossa hän voi antaa toimittajan tiedot.
 
 Ohjattu toiminto vastaa toimittajapyynnön määritystä. Maa tai alue, jossa toimittaja harjoittaa liiketoimintaa, määrittää, mitä tietoja ohjatussa toiminnossa kysytään ja mitkä tiedot ovat pakollisia.
 
@@ -119,7 +119,7 @@ Toimittajapyyntöjä voi käyttää **Toimittajayhteistyön käyttäjäpyynnöt*
 
 Toimittajapyyntö sisältää mahdollisen toimittajakäyttäjän ohjatussa toimittajan rekisteröintitoiminnossa antamat tiedot.
 
-Pyynnön ansiosta voit tarkastella toimittajan tietoja ja päättää, tuleeko toimittajassa rekisteröity toimittaja Finance and Operationsissa.
+Pyynnön ansiosta voit tarkastella toimittajan tietoja ja päättää, tuleeko toimittajasta rekisteröity toimittaja .
 
 Toimittajapyyntö on lähetettävä työnkulkuun ja se on reititettävä soveltuville tarkistajille ja hyväksyjille. Perustietoja työnkulkujen määrittämisestä on kohdassa [Hankinnan työnkulut](procurement-sourcing-workflows.md).
 
@@ -141,7 +141,7 @@ Toimittajapyynnön hyväksymisen jälkeen luodaan toimittajatili. Alkuperäisen 
 
 Valitse toimittajaryhmä ennen toimittajapyynnön hyväksymistä valitsemalla **Uusi toimittaja** -sivun **Yleiset**-pikavälilehdessä **Toimittajaryhmä**.
 
-Jos mahdollisella toimittajakäyttäjällä on oltava Finance and Operationsin käyttöoikeus toimittajaa edustavana toimittajayhteistyökäyttäjänä, määritä toimittajayhteistyön käyttöoikeudeksi **Kyllä**. Jos haluat poistaa käytöstä käyttäjätilin, jolla mahdollinen toimittaja rekisteröityi, määritä käyttöoikeusasetukseksi **Ei**.
+Jos mahdollisella toimittajakäyttäjällä on oltava Supply Chain Managementin käyttöoikeus toimittajaa edustavana toimittajayhteistyökäyttäjänä, määritä toimittajayhteistyön käyttöoikeudeksi **Kyllä**. Jos haluat poistaa käytöstä käyttäjätilin, jolla mahdollinen toimittaja rekisteröityi, määritä käyttöoikeusasetukseksi **Ei**.
 
 Jos toimittajayhteistyön käyttöoikeudeksi on määritetty **Kyllä** toimittajapyyntöä hyväksyttäessä, lähetetään pyyntö käyttäjän roolien muokkaamisesta vastaamaan **Ulkoiset roolit** -kohdan **Toimittaja**-tyypille määritettyjä rooleja. Jos käyttöoikeudeksi on valittu tässä kohdassa **Ei**, käyttäjän poistamista käytöstä pyydetään, kun toimittajapyyntö hyväksytään. Siinä tapauksessa on määritettävä käyttäjän käytöstäpoistamisen työnkulku.
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ec1edb861619bae2ae3c211720b55e170b83ec9
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: ec51c1a500b5c9ff2c363cfb69cc1d404e939df9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916619"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250642"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Muuta ennustetta manuaalisesti
 
@@ -41,5 +41,5 @@ Tässä menettelyssä kerrotaan, miten nimikkeen ennustetta muokataan. Tämän m
 
 ## <a name="modify-the-forecast-in-excel"></a>Ennusteen muokkaaminen Excelissä
 1. Valitse **Avaa** Microsoft Officessa.
-2. Valitse **Muokkaa kysynnän ennustetta** Excelissä. Excelissä voit lisätä, poistaa ja muokata kysynnän ennusterivejä. Jos et näe tietoja Excelissä, kirjaudu Microsoft Dynamics 365 for Finance and Operations, Enterprise editioniin niin, että Pidä minut kirjautuneena -asetus on käytössä. Sinun on myös luotettava tietoyhteyssovellukseen.  
+2. Valitse **Muokkaa kysynnän ennustetta** Excelissä. Excelissä voit lisätä, poistaa ja muokata kysynnän ennusterivejä. Jos et näe tietoja Excelissä, kirjaudu sisään niin, että Pidä minut kirjautuneena -asetus on käytössä. Sinun on myös luotettava tietoyhteyssovellukseen.  
 

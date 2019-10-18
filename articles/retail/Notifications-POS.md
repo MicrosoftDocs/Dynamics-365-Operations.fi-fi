@@ -17,18 +17,19 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 57f4b58a11606a1193a1124a426c837ddfab9533
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577977"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023698"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Tilausilmoitusten näyttäminen myyntipisteessä (POS)
 
 [!include [banner](includes/banner.md)]
 
-Nykyaikaisessa vähittäismyyntiympäristössä myyjillä on monenlaisissa tehtäviä, kuten asiakaspalvelua, tapahtumien kirjaamista, inventointia ja tilausten vastaanottamista myymälässä. Myyntipisteen asiakasohjelma auttaa myyjiä tekemään nämä tehtävät ja paljon muuta yhdessä sovelluksessa. Koska myyjien on tehtävä päivän aikana monenlaisia tehtäviä, heille on ehkä erikseen ilmoitettava, jos heidän on hoidettava jokin tehtävä. Myyntipisteen ilmoituskehikko ratkaisee tämän ongelman niin, että jälleenmyyjät voivat määrittää roolipohjaisia ilmoituksia. Nämä ilmoitukset voidaan määrittää vain myyntipistetoimintoihin Microsoft Dynamics 365 for Retailin sovelluspäivityksellä 5.
+Nykyaikaisessa vähittäismyyntiympäristössä myyjillä on monenlaisissa tehtäviä, kuten asiakaspalvelua, tapahtumien kirjaamista, inventointia ja tilausten vastaanottamista myymälässä. Myyntipisteen asiakasohjelma auttaa myyjiä tekemään nämä tehtävät ja paljon muuta yhdessä sovelluksessa. Koska myyjien on tehtävä päivän aikana monenlaisia tehtäviä, heille on ehkä erikseen ilmoitettava, jos heidän on hoidettava jokin tehtävä. Myyntipisteen ilmoituskehikko ratkaisee tämän ongelman niin, että jälleenmyyjät voivat määrittää roolipohjaisia ilmoituksia. Nämä ilmoitukset voidaan määrittää vain myyntipistetoimintoihin Dynamics 365 for Retailin sovelluspäivityksellä 5.
+
 
 Tällä hetkellä järjestelmä näyttää vain tilausten täyttämistoimintojen ilmoitukset. Koska kehikko on kuitenkin suunniteltu laajennettavaksi, kehittäjät voivat jatkossa kirjoittaa ilmoituskäsittelijän mille tahansa toiminnolle ja näyttää kyseisen toiminnon ilmoitukset myyntipisteessä.
 
@@ -68,7 +69,8 @@ Seuraavassa kuvassa on live-sisällön asetukset painikeruudukon suunnittelutoim
 
 ![Painikeruudukon suunnittelutoiminnon Live-sisällön asetukset](./media/ButtonGridDesigner.png "Painikeruudukon suunnittelutoiminnon Live-sisällön asetukset")
 
-Jos haluat näyttää ilmoitusten määrän painikkeessa, varmista, että oikea näyttöasettelu päivitetään. Voit määrittää POS-sovelluksen käyttämän näytön asettelun valitsemalla **Asetukset**-kuvakkeen oikeasta yläkulmasta ja huomaamalla **Näytön asettelun tunnuksen** ja **Asettelun tarkkuuden**. Nyt käytettäessä Edge-selainta, siirry**Näytön asettelu** -sivulle Dynamics 365 for Finance and Operationsissa, etsi **Näytön asettelun tunnus** ja **Asettelun resoluutio**, jotka on tunnistettu edellä ja valitse**Ota käyttöön Live-sisältö** -valintaruutu. Siirry **Vähittäismyynti \> Vähittäismyynnin IT \> Jakeluaikataulu** ja suorita 1090 (Rekisterit) -työ, joka synkronoi asettelun muutokset.
+Jos haluat näyttää ilmoitusten määrän painikkeessa, varmista, että oikea näyttöasettelu päivitetään. Voit määrittää POS-sovelluksen käyttämän näytön asettelun valitsemalla **Asetukset**-kuvakkeen oikeasta yläkulmasta ja huomaamalla **Näytön asettelun tunnuksen** ja **Asettelun tarkkuuden**. Nyt käytettäessä Edge-selainta, siirry **Näytön asettelu** -sivulle, etsi **Näytön asettelun tunnus** ja **Asettelun resoluutio**, jotka on tunnistettu edellä ja valitse **Ota käyttöön Live-sisältö** -valintaruutu. Siirry **Vähittäismyynti \> Vähittäismyynnin IT \> Jakeluaikataulu** ja suorita 1090 (Rekisterit) -työ, joka synkronoi asettelun muutokset.
+
 
 ![Etsi POS-sovelluksen käyttämä näytön asettelu](./media/Choose_screen_layout.png "Etsi näytön asettelu ")
 

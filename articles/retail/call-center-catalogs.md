@@ -1,6 +1,6 @@
 ---
 title: Puhelinkeskuksen luettelot
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Retailin luetteloiden puhelinkeskusta koskevia toimintoja.
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 Retailin luetteloiden puhelinkeskusta koskevia toimintoja.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2ad50be1394daf5bffa6391d2f56340aad14120b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562738"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023656"
 ---
 # <a name="call-center-catalogs"></a>Puhelinpalvelukeskuksen luettelot
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Retailin puhelinkeskusta koskevat, luettelotoimintoihin linkittyvät toiminnot.
+Tässä artikkelissa käsitellään Dynamics 365 Retailin puhelinkeskusta koskevat, luettelotoimintoihin linkittyvät toiminnot.
 
-Dynamics 365 for Retailin luettelo-ominaisuuksia voidaan käyttää useita tarkoituksia varten. Alunperin luettelo-ominaisuudet tukivat sähköisen kaupankäynnin integrointeja kolmannelle osapuolelle. Luettelon asetukset sallivat yritysten luoda tuotteiden ja määritteiden ryhmittelyjä, jotka voitiin julkaista ulkoisesti sähköisen kaupankäynnin kolmannen osapuolen ratkaisun käyttöön.
+Retailin luettelo-ominaisuuksia voidaan käyttää useita tarkoituksia varten. Alunperin luettelo-ominaisuudet tukivat sähköisen kaupankäynnin integrointeja kolmannelle osapuolelle. Luettelon asetukset sallivat yritysten luoda tuotteiden ja määritteiden ryhmittelyjä, jotka voitiin julkaista ulkoisesti sähköisen kaupankäynnin kolmannen osapuolen ratkaisun käyttöön.
 
-Kun puhelinkeskuskanavan tuki lisättiin Dynamics 365 for Retailiin, luettelo-ominaisuus laajennettiin lisäämään ominaisuuksia, jotka tukevat perinteisen suoraan asiakkaille suunnattujen markkinointiluetteloiden ominaisuuksia ja hallintaa. Suoraan asiakkaille -yritys usein tuottaa tulostettuja luetteloita, jotka sitten lähetetään yhdelle tai useammalle asiakassegmentille. Nämä luettelot sisältävät yleensä tiettyjä kampanjoita tai tarjouksia, jotka voi käyttää vain, jos asiakas antaa luettelon tunnuskoodin tilauksen yhteydessä.
+Kun puhelinkeskuskanavan tuki lisättiin Retailiin, luettelokäsite laajennettiin lisäämään ominaisuuksia, jotka tukevat perinteisen suoraan asiakkaille suunnattujen markkinointiluetteloiden ominaisuuksia ja hallintaa. Suoraan asiakkaille -yritys usein tuottaa tulostettuja luetteloita, jotka sitten lähetetään yhdelle tai useammalle asiakassegmentille. Nämä luettelot sisältävät yleensä tiettyjä kampanjoita tai tarjouksia, jotka voi käyttää vain, jos asiakas antaa luettelon tunnuskoodin tilauksen yhteydessä.
 
-Suoraan asiakkaille -markkinointiyritykset ovat hyvin keskittyneitä seuraamaan reaktioita näihin luetteloihin sen varmistamiseksi, että kustannukset luetteloiden tuottamiseen ja postitukseen ovat hyväksyttävät. Vastauksen seuraamiseksi koodi perinteisesti tulostetaan luettelon takaosaan ja tätä koodia on pyydetty ja käytetty, kun luettelon vastaanottaja soittaa tilatakseen puhelimitse (tai nykyään perinteisesti koodi voidaan kirjoittaa, kun asiakas tekee tilauksen verkkokaupassa). Vaikka eri toimialoilla tätä luettelon seurantakoodia kutsutaan eri nimillä (mukaan lukien avainkoodi, tarjouskoodi, luettelokoodi, lähdekoodi), kutsumme koodia Dynamics 365 for Retailissa nimellä **Lähdekoodin tunnus**.
+Suoraan asiakkaille -markkinointiyritykset ovat hyvin keskittyneitä seuraamaan reaktioita näihin luetteloihin sen varmistamiseksi, että kustannukset luetteloiden tuottamiseen ja postitukseen ovat hyväksyttävät. Vastauksen seuraamiseksi koodi perinteisesti tulostetaan luettelon takaosaan ja tätä koodia on pyydetty ja käytetty, kun luettelon vastaanottaja soittaa tilatakseen puhelimitse (tai nykyään perinteisesti koodi voidaan kirjoittaa, kun asiakas tekee tilauksen verkkokaupassa). Vaikka eri toimialoilla tätä luettelon seurantakoodia kutsutaan eri nimillä (mukaan lukien avainkoodi, tarjouskoodi, luettelokoodi, lähdekoodi), kutsumme koodia Retailissa nimellä **Lähdekoodin tunnus**.
 
 ## <a name="basic-catalog-setup"></a>Luettelon perusasetukset
 
@@ -92,7 +92,7 @@ Määritettäessä tuotteita luettelossa käytä **Tuotesivun asettelu** -toimen
 
 ## <a name="catalog-requests"></a>Luettelopyynnöt
 
-Kun luettelot määritetään ja julkaistaan Dynamics 365 for Retailissa, **Lähetä luettelo** -toimintoa voidaan käyttää. Tämä toiminto on käytössä **Asiakashaku**- ja **Asiakaspalvelu**-sivuilla. Valittuasi asiakastietueen kautta **Asiakashaku**-sivulla tai tarkastellessasi valitun asiakkaan tiliä **Asiakaspalvelu**-sivulla, käyttäjät voivat valita **Lähetä luettelo** -vaihtoehdon, joka avautuu valintaikkunassa, jossa käyttäjä voi valita kaikkien julkaistujen ja aktiivisten luetteloiden listasta. Käyttäjä voi valita luettelon ja määrän ja tietyn lähetettävän lähdekoodin tunnuksen. Kun napsautetaan **Lähetä**-painiketta, pyyntö on tallennettu, jonka jälkeen sitä voidaan hallita tulostamalla **Luettelopyynnöt**-raportti. Tämä raportti löytyy valitsemalla **Vähittäismyynti** \> **Puhelinkeskuksen raportit** \> **Luettelopyynnöt-raportti**. Se sisältää kaikki luettelopyynnöt, kuten asiakkaan nimen ja osoitteen tiedot luetteloa pyytäneeltä asiakkaalta. Tätä raporttia voidaan käyttää sisäisesti tai tiedot voidaan lähettää kolmannelle osapuolelle tukien ulkoisia prosesseja luettelon lähettämiseksi fyysisesti asiakkaalle.
+Kun luettelot määritetään ja julkaistaan Retailissa, **Lähetä luettelo** -toimintoa voidaan käyttää. Tämä toiminto on käytössä **Asiakashaku**- ja **Asiakaspalvelu**-sivuilla. Valittuasi asiakastietueen kautta **Asiakashaku**-sivulla tai tarkastellessasi valitun asiakkaan tiliä **Asiakaspalvelu**-sivulla, käyttäjät voivat valita **Lähetä luettelo** -vaihtoehdon, joka avautuu valintaikkunassa, jossa käyttäjä voi valita kaikkien julkaistujen ja aktiivisten luetteloiden listasta. Käyttäjä voi valita luettelon ja määrän ja tietyn lähetettävän lähdekoodin tunnuksen. Kun napsautetaan **Lähetä**-painiketta, pyyntö on tallennettu, jonka jälkeen sitä voidaan hallita tulostamalla **Luettelopyynnöt**-raportti. Tämä raportti löytyy valitsemalla **Vähittäismyynti** \> **Puhelinkeskuksen raportit** \> **Luettelopyynnöt-raportti**. Se sisältää kaikki luettelopyynnöt, kuten asiakkaan nimen ja osoitteen tiedot luetteloa pyytäneeltä asiakkaalta. Tätä raporttia voidaan käyttää sisäisesti tai tiedot voidaan lähettää kolmannelle osapuolelle tukien ulkoisia prosesseja luettelon lähettämiseksi fyysisesti asiakkaalle.
 
 ## <a name="additional-features"></a>Lisätoiminnot
 

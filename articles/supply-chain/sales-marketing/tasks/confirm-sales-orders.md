@@ -3,7 +3,7 @@ title: Vahvista myyntitilaukset
 description: Seuraavassa menettelyssä selvitetään, miten myyntitilaukset vahvistetaan.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c01c5e070954b3791df3cb67ba7c4f4ec79e3003
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f9274a90ffbf6e5703d3ed97a8b974227b25c2a0
+ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833975"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "1924375"
 ---
 # <a name="confirm-sales-orders"></a>Vahvista myyntitilaukset
 
@@ -31,41 +31,36 @@ Seuraavassa menettelyssä selvitetään, miten myyntitilaukset vahvistetaan. Nä
 
 
 ## <a name="confirm-a-single-sales-order"></a>Vahvista yksi myyntitilaus
-1. Siirry kohtaan Myynti ja markkinointi > Myyntitilaukset > Kaikki myyntitilaukset.
+1. Valitse **Siirtymisruutu > Moduulit > Myynti ja markkinointi > Myyntitilaukset > Kaikki myyntitilaukset**.
 2. Etsi ja valitse luettelosta vahvistettava tilaus.
 3. Avaa valittu tilaus napsauttamalla myyntitilauksen numeron linkkiä.
-4. Valitse toimintoruudussa Myynti.
-5. Valitse Vahvista myyntitilaus.
-6. Laajenna tai tiivistä Parametrit-osa.
-    * Varmista, että kirjauksen Kyllä-kenttä on aktiivinen.  
-7. Valitse Tulosta vahvistus -vaihtoehdoksi Kyllä.
-    * Tarkista luottoraja -kenttä määrittää menetelmän, jolla asiakkaan jäljellä oleva luotto lasketaan. Oletusarvoisesti se kopioidaan Myyntireskontran parametrit -sivulta. Jos haluat ohittaa luottorajatarkistuksen tietyn myyntitilauksen vahvistuksessa, valitse Tarkista luottoraja -arvoksi Ei mitään. Muista kuitenkin, että vaikka tämän kentän arvo on Ei mitään, luottorajatarkistus suoritetaan, jos asiakkaan päätiedoissa on valittu Pakollinen luottoraja -vaihtoehto.  
-8. Valitse OK.
-9. Valitse Kyllä.
+4. Valitse **toimintoruudussa** **Myynti**.
+5. Valitse **Vahvista myyntitilaus**.
+6. Laajenna **Parametrit**-osa. Varmista, että **Kirjaus**-asetukseksi on valittu Kyllä.  
+7. Valitse **Tulosta vahvistus** -vaihtoehdoksi Kyllä. **Tarkista luottoraja** -kenttä määrittää menetelmän, jolla asiakkaan jäljellä oleva luotto lasketaan. Oletusarvoisesti se kopioidaan Myyntireskontran parametrit -sivulta. Jos haluat ohittaa luottorajatarkistuksen tietyn myyntitilauksen vahvistuksessa, valitse **Tarkista luottoraja** -arvoksi Ei mitään. Muista kuitenkin, että vaikka tämän kentän arvo on Ei mitään, luottorajatarkistus suoritetaan, jos asiakkaan päätiedoissa on valittu **Pakollinen luottoraja** -vaihtoehto. 
+8. Valitse **OK**.
+9. Valitse **Kyllä**.
 10. Sulje sivu.
-11. Valitse toimintoruudussa Asetukset.
-12. Valitse Vaihda näkymä.
-13. Valitse Otsikkonäkymä.
-    * Kun tilaus on vahvistettu, asiakirjan tilaksi määritetään Vahvistus.  
-14. Valitse toimintoruudussa Myynti.
-15. Valitse Myyntitilausvahvistus.
+11. Valitse **toimintoruudussa** **Asetukset**.
+12. Valitse **Vaihda näkymä**.
+13. Valitse **Otsikkonäkymä**. Kun tilaus on vahvistettu, **asiakirjan tilaksi** määritetään Vahvistus. 
+14. Valitse **toimintoruudussa** **Myynti**.
+15. Valitse **Myyntitilausvahvistus**.
 16. Sulje sivu.
 
 ## <a name="confirm-multiple-sales-orders-at-once"></a>Vahvista useita myyntitilauksia samanaikaisesti
-1. Valitse Myynti ja markkinointi > Myyntitilaukset > Tilausvahvistus > Vahvista myyntitilaus.
-2. Klikkaa Valitse.
-3. Etsi ja valitse Alueet-välilehdessä tietue, joka viittaa Asiakastili-kenttään.
-4. Avaa haku valitsemalla Ehdot-kentässä avattavan valikon painike.
-5. Etsi ja valitse luettelosta asiakastili, jossa on useita tilauksia, jotka haluat joukkovahvistaa.
-    * Jos käytössä on USMF, voit valita tilin US-027.  
-6. Valitse OK.
-    * Yhteenveto-välilehdessä on luettelo kyselyehtoja vastaavista tilauksista. Ne sisältyvät vahvistukseen.  
-    * Päivitysyhteenveto mille: -kenttä määrittää parametrin, jonka mukaan useista tilauksista tehdään yhteenveto yhteen vahvistusasiakirjaan. Oletusarvoisesti asetus kopioidaan Myyntireskontran parametrit -sivun Päivitysyhteenvedon oletusarvot -asetuksesta.  
-7. Valitse Päivitysyhteenveto mille: -kentässä Tilaus.
-    * Yhteenvetopäivitysten luontiin tarvitaan ainakin parametrit Laskutustili ja Valuutta. Näin ollen yhteenvetopäivityksiä, joissa on eri laskutustilit ja valuutat, ei sallita. Yhteenvedon päivitysparametrit -sivulla voi määrittää lisäparametreja. Sivun voi avata Myyntireskontran parametrit -sivulta.  
-8. Avaa haku napsauttamalla Myyntitilaus-kentässä avattavan valikon painiketta.
+1. Valitse **Myynti ja markkinointi > Myyntitilaukset > Tilausvahvistus > Vahvista myyntitilaus**.
+2. Klikkaa **Valitse**.
+3. Etsi ja valitse **Alueet**-välilehdessä tietue, joka viittaa **Asiakastili**-kenttään.
+4. Avaa haku valitsemalla **Ehdot**-kentässä avattavan valikon painike.
+5. Etsi ja valitse luettelosta asiakastili, jossa on useita tilauksia, jotka haluat joukkovahvistaa. Jos käytössä on USMF, voit valita tilin US-027.  
+6. Valitse **OK**.
+    - **Yhteenveto**-välilehdessä on luettelo kyselyehtoja vastaavista tilauksista. Ne sisältyvät vahvistukseen.  
+    - **Päivitysyhteenveto mille:** -kenttä määrittää **Parametrit** -osassa parametrin, jonka mukaan useista tilauksista tehdään yhteenveto yhteen vahvistusasiakirjaan. Oletusarvoisesti asetus kopioidaan **Myyntireskontran parametrit** -sivun **Päivitysyhteenvedon oletusarvot** -asetuksesta.  
+7. Valitse **Päivitysyhteenveto mille:** -kentässä Tilaus. Yhteenvetopäivitysten luontiin tarvitaan ainakin parametrit **Laskutustili** ja **Valuutta**. Näin ollen yhteenvetopäivityksiä, joissa on eri laskutustilit ja valuutat, ei sallita. **Yhteenvedon päivitysparametrit** -sivulla voi määrittää lisäparametreja. Sivun voi avata **Myyntireskontran parametrit** -sivulta. 
+8. Avaa haku napsauttamalla **Myyntitilaus**-kentässä avattavan valikon painiketta.
 9. Valitse luettelossa tilausnumero, jonka haluat yhteenvetotilaukseksi.
-10. Valitse Järjestä.
-11. Valitse OK.
-12. Valitse OK.
+10. Valitse **Järjestä**.
+11. Valitse **OK**.
+12. Valitse **OK**.
 

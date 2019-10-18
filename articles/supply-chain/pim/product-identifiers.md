@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546222"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250596"
 ---
 # <a name="product-identifiers"></a>Tuotetunnukset 
 
@@ -36,13 +36,13 @@ Kun käsittelet tuotteita Microsoft Dynamics ERP:n tai Microsoft Dynamics CRM:n 
 
 ## <a name="unique-product-numberproduct-id"></a>Yksilöivä tuotenumero tai tuotetunnus
 
-Microsoft Dynamics 365 for Finance and Operationsissa tuotteen ensisijainen tunniste on tuotenumero (joka on sama kuin yksilöivä tuotetunnus). Numerosarja voi muodostaa numeron automaattisesti tai se voidaan liittää tuotteeseen manuaalisesti. Tuotevarianttien numerot voidaan määrittää tuotenimikkeistömallin kautta.
+Dynamics 365 Supply Chain Managementissa tuotteen ensisijainen tunniste on tuotenumero (joka on sama kuin yksilöivä tuotetunnus). Numerosarja voi muodostaa numeron automaattisesti tai se voidaan liittää tuotteeseen manuaalisesti. Tuotevarianttien numerot voidaan määrittää tuotenimikkeistömallin kautta.
 
-Tuotenumeroa ei usein ole luotu alun perin Finance and Operations -sovelluksessa. Sen sijaan se liitetään tuotteen elinkaaren hallinta (PLM)- tai tuotteen tiedonhallinta (PDM) -järjestelmään. Tässä tapauksessa tietoyksiköitä käytetään tuotteiden ja tuotevarianttien tuonnissa. Finance and Operations käyttää tämän jälkeen numeroita kaikissa toiminnoissa.
+Tuotenumeroa ei usein ole luotu alun perin Dynamics 365 Supply Chain Management -sovelluksessa. Sen sijaan se liitetään tuotteen elinkaaren hallinta (PLM)- tai tuotteen tiedonhallinta (PDM) -järjestelmään. Tässä tapauksessa tietoyksiköitä käytetään tuotteiden ja tuotevarianttien tuonnissa. Supply Chain Management käyttää sitten numeroita kaikissa toiminnoissa.
 
-Kiinnitä erityistä huomiota tuotetunnuksiin Finance and Operationsin käyttöönoton yhteydessä. Hyvä numerointijärjestelmä parantaa logistiikkaprosesseja ja auttaa estämään virheitä. Hyvässä tuotetunnuksessa on enintään 15 merkkiä. Merkkejä tulisi olla alle 10 ja luokittelevia merkkejä enintään viisi. Voit käyttää hakunimiä, mikä sallii pikahakujen käytön. Haun nimi on lisänimi, joka edustaa tuotteen luokituksia.
+Kiinnitä erityistä huomiota tuotenumeroihin Supply Chain Managementin käyttöönoton yhteydessä. Hyvä numerointijärjestelmä parantaa logistiikkaprosesseja ja auttaa estämään virheitä. Hyvässä tuotetunnuksessa on enintään 15 merkkiä. Merkkejä tulisi olla alle 10 ja luokittelevia merkkejä enintään viisi. Voit käyttää hakunimiä, mikä sallii pikahakujen käytön. Haun nimi on lisänimi, joka edustaa tuotteen luokituksia.
 
-Kun käytät Common Data Serviceä (CDS), Finance and Operationsin tuotetunnus on myös CDS:n tuotetunnus. Tuotevariantit synkronoidaan CDS:n kanssa erillisinä tuotteina.
+Kun käytät Common Data Servicea, Supply Chain Managementissa oleva tuotenumero on tuotenumero myös Common Data Servicessa. Tuotevariantit synkronoidaan Common Data Servicen kanssa erillisinä tuotteina.
 
 ## <a name="item-number-and-product-dimensions"></a>Nimikenumero ja tuotedimensiot
 
@@ -56,19 +56,19 @@ Haun ja suodatuksen voi tehdä myös tuotenumeron, tuotteen nimen ja kuvauksen s
 
 ## <a name="product-name-and-description"></a>Tuotteen nimi ja kuvaus
 
-Tuotteen nimi ja kuvaus ovat tuotteen selkokielisiä tunnisteita, joita voidaan ylläpitää useilla kielillä. Finance and Operations -asiakasohjelma näyttää oletusarvoisesti kaikki tuotetiedot oletusyrityksen kielellä, ei käyttäjän kielellä. Käännettyjä tuotenimiä ja kuvauksia käytetään kuitenkin kaikessa asiakkaiden ja toimittajien kanssa käytävässä viestinnässä. Käännökset perustuvat asiakas- ja toimittajatilien kielikoodiin.
+Tuotteen nimi ja kuvaus ovat tuotteen selkokielisiä tunnisteita, joita voidaan ylläpitää useilla kielillä. Supply Chain Management -asiakasohjelma näyttää oletusarvoisesti kaikki tuotetiedot oletusyrityksen kielellä, ei käyttäjän kielellä. Käännettyjä tuotenimiä ja kuvauksia käytetään kuitenkin kaikessa asiakkaiden ja toimittajien kanssa käytävässä viestinnässä. Käännökset perustuvat asiakas- ja toimittajatilien kielikoodiin.
 
 Tuotevarianttien tuotteiden nimet voidaan luoda tuotenimikkeistömallin kautta. Koska tuotenimien ei tarvitse olla yksilöiviä, useilla tuotteilla voi olla sama nimi.
 
 ## <a name="product-and-item-search-names"></a>Tuotteiden ja nimikkeiden hakujen nimet
 
-Finance and Operations tarjoaa toissijaisen haun nimen tuotteille ja myös nimikkeille (vapautetut tuotteet). Tämän hakunimen ei tarvitse olla yksilöivä ja sitä voi muuttaa tuotteen tai tuotevariantin luonnin jälkeen. Tuoteluokittain tapahtuvaa hakua varten on suositeltavaa käyttää hakunimeä. Hakunimien avulla tehdä pikahakuja etenkin myynti- ja ostoprosesseissa.
+Supply Chain Management tarjoaa toissijaisen haun nimen tuotteille ja myös nimikkeille (vapautetut tuotteet). Tämän hakunimen ei tarvitse olla yksilöivä ja sitä voi muuttaa tuotteen tai tuotevariantin luonnin jälkeen. Tuoteluokittain tapahtuvaa hakua varten on suositeltavaa käyttää hakunimeä. Hakunimien avulla tehdä pikahakuja etenkin myynti- ja ostoprosesseissa.
 
 Hakunimi voi sisältää myös asiakkaan tai toimittajan tuotetunnuksen tai jonkin muun ulkoisen tuotetunnuksen, jos kyseinen ulkoinen tunnus on tuotteen ensisijainen hakuehto.
 
 ## <a name="external-product-identifiers-customer-and-vendor-identifiers"></a>Ulkoiset tuotetunnukset (asiakkaan ja toimittajan tunnukset)
 
-Voit ylläpitää vapautettujen tuotteiden niitä nimikenumeroita, nimikkeiden nimiä ja nimikkeiden kuvauksia, joita asiakas tai toimittaja käyttää. Viitteet näkyvät ulkoisissa asiakirjoissa, kuten myynti- ja ostotilauksissa sekä pakkausluetteloissa ja laskuissa. Finance and Operations -sovelluksen nykyisessä versiossa ulkoiset viitteet eivät näy ydintoimintojen sivuilla. Ainoa poikkeus on toimittajan nimiketunnus. Tämä numero näkyy **Tuotetiedot**-valintaikkunassa, jos vapautetulle tuotteelle on määritetty oletustoimittaja.
+Voit ylläpitää vapautettujen tuotteiden niitä nimikenumeroita, nimikkeiden nimiä ja nimikkeiden kuvauksia, joita asiakas tai toimittaja käyttää. Viitteet näkyvät ulkoisissa asiakirjoissa, kuten myynti- ja ostotilauksissa sekä pakkausluetteloissa ja laskuissa. Nykyisessä Supply Chain Management -versiossa ulkoiset viitteet eivät näy ydintoimintojen sivuilla. Ainoa poikkeus on toimittajan nimiketunnus. Tämä numero näkyy **Tuotetiedot**-valintaikkunassa, jos vapautetulle tuotteelle on määritetty oletustoimittaja.
 
 Voit ylläpitää ulkoisia tuotetunnisteita vapautetun tuotteen, vapautetun tuotevariantin, asiakkaan tai asiakas sekä sekä toimittajan tai toimittajaryhmän perusteella.
 
@@ -77,7 +77,7 @@ Seuraa **Vapautetut tuotteet** -sivulla jotakin näistä vaiheista.
 - Valitse asiakkaille **Liittyvät tiedot** -ryhmän **Myynti**-välilehdessä **Ulkoinen nimikekuvaus**.
 - Valitse toimittajille **Liittyvät tiedot** -ryhmän **Osto**-välilehdessä **Ulkoinen nimikekuvaus**.
 
-Voit liittää **Ulkoiset nimikekuvaukset** -sivulla asiakkaan tai toimittajan nimikenumeron vapautettuun tuotteeseen. Tämä liitos on tehtävä jokaiselle yritykselle. Seuraavat tiedot voidaan kerätä. Finance and Operationsin nykyisen version etiketit ovat hieman harhaanjohtavia. Näitä otsikoita saatetaan kuitenkin muuttaa tulevassa versiossa.
+Voit liittää **Ulkoiset nimikekuvaukset** -sivulla asiakkaan tai toimittajan nimikenumeron vapautettuun tuotteeseen. Tämä liitos on tehtävä jokaiselle yritykselle. Seuraavat tiedot voidaan kerätä. Nykyisen Supply Chain Management -version etiketit ovat valitettavasti hieman harhaanjohtavia. Näitä otsikoita saatetaan kuitenkin muuttaa tulevassa versiossa.
 
 | Kenttä | Vastaavat asiakastiedot | Vastaavat toimittajatiedot |
 |-------|------------------------------------|----------------------------------|
@@ -104,15 +104,15 @@ Voit ylläpitää viivakoodeja valitsemalla **Vapautetut tuotteet** -sivun **Var
 
 Sähköisessä kaupankäynnissä on tärkeää, että kaikki osapuolet puhuvat samaa kieltä ja viittaavat tuotteisiin samoilla tunnuksilla. Tämän vuoksi joillakin toimialoilla on käytössä [GTIN](https://www.gs1.org/id-keys/gtin), mikä on yleinen GS1:n edistämä nimiketunnusjärjestelmä.
 
-Finance and Operations -sovelluksessa GTIN-koodia kannattaa ylläpitää viivakoodina. Voit kuitenkin ylläpitää sitä myös **Nimike - GTIN** -sivulla. Voit avata tämän sivun valitsemalla **Vapautetut tuotteet** -sivun **Varastonhallinta**-välilehden **Varasto**-ryhmässä **GTIN-koodit**. Huomaa, että GTIN-koodia ei ylläpidetä yleisenä numerona. Sen sijaan sitä ylläpitää yritys.
+Suosittelemme säilyttämään GTIN:n viivakoodina. Voit kuitenkin ylläpitää sitä myös **Nimike - GTIN** -sivulla. Voit avata tämän sivun valitsemalla **Vapautetut tuotteet** -sivun **Varastonhallinta**-välilehden **Varasto**-ryhmässä **GTIN-koodit**. Huomaa, että GTIN-koodia ei ylläpidetä yleisenä numerona. Sen sijaan sitä ylläpitää yritys.
 
-Finance and Operations -sovelluksessa määritetään varastotoimintojen pakkausvariantit määrittämällä tietty mittayksikkö. Esimerkiksi nimike voidaan tallentaa kappaleina, kuuden kappaleen nippuina, 18 kappaleen lokeroissa tai kokonaisina kuormalavoina. Jokaiselle pakkausvariantille määritetään mittayksikkö. Koska GTIN liittyy yleensä tuotteen pakkausyksikköön, **Nimike - GTIN** -sivulla voi ylläpitää tuotteen ja mittayksikön useita GTIN-koodeja. Voit kuitenkin käyttää samaa GTIN-koodia vain kerran yrityksen eri nimikkeissä tai tuotevarianteissa.
+Supply Chain Managementissa määrität varastotoimintojen pakkausvariantit määrittämällä tietyn mittayksikön. Esimerkiksi nimike voidaan tallentaa kappaleina, kuuden kappaleen nippuina, 18 kappaleen lokeroissa tai kokonaisina kuormalavoina. Jokaiselle pakkausvariantille määritetään mittayksikkö. Koska GTIN liittyy yleensä tuotteen pakkausyksikköön, **Nimike - GTIN** -sivulla voi ylläpitää tuotteen ja mittayksikön useita GTIN-koodeja. Voit kuitenkin käyttää samaa GTIN-koodia vain kerran yrityksen eri nimikkeissä tai tuotevarianteissa.
 
 Voit ylläpitää **GTIN-koodeja** valitsemalla **Vapautetut tuotteet** -sivun **Varastonhallinta**-välilehden **Varasto**-ryhmässä **GTIN**.
 
 ## <a name="external-codes"></a>Ulkoiset koodit
 
-Ulkoiset koodit voidaan määrittää useille yksiköille Finance and Operations -sovelluksessa. Voit esimerkiksi määrittää ulkoiset koodit, jotka yksilöivät tuotteet ja vapautetut tuotteet. Näillä ulkoisilla koodeilla voidaan liittää tilastotietojen koodeja tai arvonlisäverokoodeja vapautettuihin tuotteisiin ja vapautettuihin tuotevariantteihin. Ulkoiset koodit on määritetty yrityksen ja koodityypin mukaan. Ne on voitava yksilöidä yrityksen, koodityypin ja tauluviitteen mukaan.
+Ulkoisia koodia voidaan määrittää useille yksiköille. Voit esimerkiksi määrittää ulkoiset koodit, jotka yksilöivät tuotteet ja vapautetut tuotteet. Näillä ulkoisilla koodeilla voidaan liittää tilastotietojen koodeja tai arvonlisäverokoodeja vapautettuihin tuotteisiin ja vapautettuihin tuotevariantteihin. Ulkoiset koodit on määritetty yrityksen ja koodityypin mukaan. Ne on voitava yksilöidä yrityksen, koodityypin ja tauluviitteen mukaan.
 
 Ulkoisten koodien avulla tehtävään tuotehakuun ei ole valitettavasti mitään vakiotoimintoa.
 
@@ -136,13 +136,13 @@ Ulkoisten koodien avulla tehtävään tuotehakuun ei ole valitettavasti mitään
 
 ### <a name="product-and-item-number-sequences"></a>Tuotteen ja nimikkeen numerosarjat
 
-Finance and Operations -sovelluksessa voi määrittää seuraavat kaksi erilaista numerosarjaa:
+Voit määrittää kaksi eri numerosarjaa:
 
 - Yleisen tuotetunnuksen **Tuotetunnus**-numerojärjestys.
 - Yrityskohtaisen nimiketunnuksen **Nimiketunnus**-numerosarja
 
 > [!NOTE]
-> Käytä nimiketunnusta erillisenä tunnisteena vain, kun siirrät eri yrityksiä sellaisista erillistä lähteistä, joissa on ollut erilaiset numerointijärjestelmät. Yritä aina käyttää tuotetunnistetta, joka on yksilöivä kaikissa yrityksissä. Valitse tämän vuoksi **Nimiketunnus**-numerosarjan **Manuaalinen**-asetukseksi **Kyllä**. Näin nimikenumero seuraa tuotenumeroa luonnin yhteydessä. Jos Finance and Operations ei ole uusien tuotenumeroiden johtava järjestelmä, määritä **Manuaalinen**-vaihtoehdon arvoksi **Kyllä** sekä **nimikenumeron** että **tuotenumeron** numerosarjoille.
+> Käytä nimiketunnusta erillisenä tunnisteena vain, kun siirrät eri yrityksiä sellaisista erillistä lähteistä, joissa on ollut erilaiset numerointijärjestelmät. Yritä aina käyttää tuotetunnistetta, joka on yksilöivä kaikissa yrityksissä. Valitse tämän vuoksi **Nimiketunnus**-numerosarjan **Manuaalinen**-asetukseksi **Kyllä**. Näin nimikenumero seuraa tuotenumeroa luonnin yhteydessä. Jos Supply Chain Management ei ole uusien tuotenumeroiden johtava järjestelmä, määritä **Manuaalinen**-vaihtoehdon arvoksi **Kyllä** sekä **nimikenumeron** että **tuotenumeron** numerosarjoille.
 
 Kun luot tuotteita **Vapautetut tuotteet V2** -yksiköllä, useat asetukset voivat vaikuttaa siihen, miten tuote- ja nimiketunnus luodaan numerosarjojen avulla:
 
@@ -180,7 +180,7 @@ Määritä ympäristö näiden ohjeiden avulla.
 
 4. Kun olet määrittänyt tuotetunnisteen koodityypit, voit luoda tunnisteita yleisessä taulussa aloittamalla **Luo tuoteyksikön tunnisteet** -työn **Tuoteyksikön tunnistekoodit** -sivulla. Tämä työ on suoritettava eränä. Tämä työ on määritettävä kausittaiseksi erätyöksi, jotta tauluun lisätään tietoja uusien tapahtumien mukaan.
 
-Voit nyt käyttää **Tuoteyksikön common data service -tunnisteen yksikkö**-, **Tuoteyksikön tunnistekoodi** ja **Tuoteyksikön tunnisteen vaikutusalue** -tietoyksiköitä ja viedä niiden avulla tunnisteita mihin tahansa kohdejärjestelmään.
+Voit nyt käyttää **Tuoteyksikön Common Data Service -tunnisteen yksikkö**-, **Tuoteyksikön tunnistekoodi** ja **Tuoteyksikön tunnisteen vaikutusalue** -tietoyksiköitä ja viedä niiden avulla tunnisteita mihin tahansa kohdejärjestelmään.
 
 ## <a name="related-topic"></a>Liittyvä aihe
 

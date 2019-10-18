@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 07eea8fd7af4da611b4bd0c9340923f8894fab2c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9f36da025528272b1a95456acf597dd5d923819
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1526012"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025169"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Otsikon kulujen jakaminen suhteellisesti vastaaville myyntiriveille
 
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään otsikkotason automaattisten kulujen ryhmittämistoimintoa ja niiden jakamista suhteellisti vähittäismyyntiriveille. Tätä toimintoa voi käyttää tapahtumissa, josta on luotu myyntipisteessä Microsoft Dynamics 365 for Retailin versiolla 10.0.1 ja myynneissä, jotka on luotu puhelinkeskuksessa Microsoft Dynamics 365 for Retailin versiolla 10.0.2.
+Tässä ohjeaiheessa käsitellään otsikkotason automaattisten kulujen ryhmittämistoimintoa ja niiden jakamista suhteellisti vähittäismyyntiriveille. Tätä toimintoa voi käyttää tapahtumissa, josta on luotu myyntipisteessä Retail-versiolla 10.0.1 ja myynneissä, jotka on luotu puhelinkeskuksessa Retail-versiolla 10.0.2.
 
 Tämä toiminto on käytettävissä vain, jos [automaattiset etukäteisveloitukset](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) on otettu käyttöön **Vähittäismyynnin parametrit** -sivun asetuksella. Automaattisten kulujen laajennettua laskentamenetelmään voidaan lisäksi käyttää vain vähittäismyyntitilauksissa, jotka on luotu vähittäismyyntikanavissa (myyntipiste, puhelinkeskus ja Dynamicsin sähköinen kaupankäyntiympäristö).
 
 Tämän uuden toiminnon avulla organisaatiot voivat laskea ja kohdistaa otsikkotason automaattiset kulut entistä joustavammin vähittäismyyntitapahtumiin.
 
-Versiota 10.0.1 edeltävissä Microsoft Dynamics 365 for Retailin versioissa otsikkotason automaattiset kulut, joilla on tietty toimitustapasuhde, laskettiin vain, kun myyntitilauksen otsikossa oli vastaava toimitustapa.
+Retail-versiota 10.0.1 edeltävissä versioissa otsikkotason automaattiset kulut, joilla on tietty toimitustapasuhde, lasketaan vain, kun myyntitilauksen otsikossa on vastaava toimitustapa.
 
 Esimerkki: Otsikkotason automaattiset kulut on määritetty toimitustavoille **99** ja **11**. Myyntitilaus luodaan, ja tilauksessa otsikossa toimitustavaksi on määritetty **99**. Osa myyntiriveistä on kuitenkin määritetty siten, että niiden toimitukseen käytetään toimitustapaa **11**. Tässä tapauksessa vain toimitustapaan **99** linkitetyt otsikkotason kulut otetaan huomioon ja kohdistetaan myyntitilaukseen.
 
-Dynamics 365 for Retailissa otsikkotason kuluilla on lisäominaisuus, jonka avulla voi määrittää tilauksenarvoon perustuvan [maksutasomäärityksen](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery). Esimerkki: Jos tilauksen arvo 50,00–200,00 $, organisaatio voi veloittaa rahtikuluina 5,00 $. Jos tilauksen arvo on kuitenkin 200,01–500,00 $, rahtikulut voivat olla 4,00 $.
+Retailissa otsikkotason kuluilla on lisäominaisuus, jonka avulla voi määrittää tilauksen arvoon perustuvan [maksutasomäärityksen](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery). Esimerkki: Jos tilauksen arvo 50,00–200,00 $, organisaatio voi veloittaa rahtikuluina 5,00 $. Jos tilauksen arvo on kuitenkin 200,01–500,00 $, rahtikulut voivat olla 4,00 $.
 
 Osa organisaatioista haluaa käyttää otsikkotason kuluista saatavat maksutasolaskennan edut. Jos skenaario kuitenkin sisältää toimitustapayhdistelmän, nämä organisaatiot haluavat myös varmistaa, että laskettavat kulut perustuvat kullakin myyntirivillä määritettyyn toimitustapaan.
 

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (6. joulukuuta 2018)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent Core HR:n uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (6. joulukuuta 2018)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent - Core HR:n uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f3d53440c5d19dd52fbab17305c3e99a73e570be
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 73e0875c3e072bc29050a096888459c6e4bb1b7b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742583"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025953"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (6. joulukuuta 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-6-2018"></a>Dynamics 365 Talent: Core HR:n uudet tai muuttuneet ominaisuudet (6. joulukuuta 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "1742583"
 Tässä ohjeaiheessa käsitellään Core HR -ohjelman uusia tai muuttuneita ominaisuuksia.
 
 
-## <a name="platform-update-22"></a>Ympäristön update 22 -päivitys
+## <a name="platform-update-22-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 22
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Enintään 1 miljoonan rivin vienti Exceliin
 
@@ -42,7 +42,7 @@ Vie Exceliin -toiminto voidaan nyt määrittää siten, että käyttäjät saava
 
 ### <a name="restyled-personalization-toolbar"></a>Uudelleenmuotoiltu mukauttamisen työkalurivi
 
-Mukauttamisen työkalurivi on muotoiltu uudelleen Platform Update 22 -päivityksessä, mikä helpottaa käyttäjien Talent-kokemuksen mukauttamista. Seuraavat muutokset on tehty: 
+Mukauttamisen työkalurivi on muotoiltu uudelleen Finance and Operationsin käyttöympäristöpäivityksessä 22, mikä auttaa käyttäjiä mukauttamaan omaa Talent-kokemustaan. Seuraavat muutokset on tehty: 
 
 -  Kunkin mukauttamistyökalun nimi ja kuvake on nyt näkyvissä, joten käyttäjien on helpompi ja nopeasti tunnistaa työkalu, jota he haluavat käyttää.
 -  Myös nykyisen työkalun käytön ohjeet ovat nyt näkyvissä, mikä auttaa käyttäjiä ymmärtämään tehtäviä mukauttamisia.  
@@ -50,19 +50,19 @@ Mukauttamisen työkalurivi on muotoiltu uudelleen Platform Update 22 -päivityks
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>On yksi seuraavista: -suodattimen käytön optimointi
 
-On yksi seuraavista: -suodatinoperaattoria voi käyttää useimmissa kentissä suodatinruutua ja ruudukon otsikon avattavia luetteloita käytettäessä. Tämän operaattorin avulla käyttäjä voi suodattaa kenttää useiden arvojen perusteella. On yksi seuraavista: -operaattorin uusi parannettu käyttökokemus on saatavana Platform Update 22 -päivityksessä. Lisätietoja on kohdassa [On yksi seuraavista: -suodattimen käytön optimointi](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+On yksi seuraavista: -suodatinoperaattoria voi käyttää useimmissa kentissä suodatinruutua ja ruudukon otsikon avattavia luetteloita käytettäessä. Tämän operaattorin avulla käyttäjä voi suodattaa kenttää useiden arvojen perusteella. "On yksi seuraavista:" -operaattorin uusi parannettu käyttökokemus on käytettävissä Finance and Operationsin käyttöympäristöpäivityksessä 22. Lisätietoja on kohdassa [On yksi seuraavista: -suodattimen käytön optimointi](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Excelin luetteloiden liittäminen suodatinkenttään on yksi seuraavista: -operaattorilla
 
 Käyttäjillä voi olla joissakin tehtävissä Excelissä arvoluettelo, jota he haluavat käyttää tietojen suodattamiseen Talentissa. Henkilöstöhallinnon käyttäjä on ehkä voinut tunnistaa raportissa työntekijäjoukon, johon on tutustuttava tarkemmin järjestelmässä. Niinpä olisi kätevää, jos kyseinen käyttäjä voisi kopioida luettelon suoraan Excelistä Talentin suodatinkenttään.
 
-Platform Update 22 -päivityksestä lähtien suodatinruudun ja ruudukon sarakkeen suodatuksen on yksi seuraavista: -operaattori tunnistaa nyt Excelistä kopioidut luettelot, joten ne voidaan liittää suoraan suodatinkenttään. Tähän sisältyy kokoelma arvo, jotka on kopioitu Excelin eri riveiltä ja sarakkeilta. Lisätietoja tästä toiminnosta on kohdassa [Excelin luetteloiden liittäminen suodatinkenttään on yksi seuraavista: -operaattorilla](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Finance and Operations -käyttöympäristöpäivityksestä 22 lähtien suodatinruudun ja ruudukon sarakkeen suodatuksen "on yksi seuraavista:" -operaattori tunnistaa nyt Excelistä kopioidut luettelot, joten ne voidaan liittää suoraan suodatinkenttään. Tähän sisältyy kokoelma arvo, jotka on kopioitu Excelin eri riveiltä ja sarakkeilta. Lisätietoja tästä toiminnosta on kohdassa [Excelin luetteloiden liittäminen suodatinkenttään on yksi seuraavista: -operaattorilla](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>Esiversiossa
 
 ### <a name="configure-uk-payroll-integration-between-talent-and-dayforce"></a>Talentin ja Dayforcen välisen Ison-Britannian palkanlaskennan integroinnin määrittäminen
 
-Microsoft Dynamics 365 for Talentin ja Ceridian Dayforcen integraation esiversio on saatavilla Isossa-Britanniassa. Lisätietoja on kohdassa [Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
+Talentin ja Ceridian Dayforcen välisen integraation esiversio on saatavilla Isossa-Britanniassa. Lisätietoja on kohdassa [Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
 
 ## <a name="coming-soon"></a>Tulossa pian
 
@@ -90,9 +90,9 @@ Tehdyt muutokset korjaavat liiteongelmat. Kun työntekijään lisätään uusi l
 
 ## <a name="known-issues"></a>Tunnetut ongelmat
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Finance and Operations -integraatiossa ilmenevät määritysvirheet
+### <a name="mapping-errors-in-the-integration-with-finance"></a>Finance-integraatiossa ilmenevät määritysvirheet
 
-Seuraavat ongelmat on havaittu nykyisessä mallissa, jolla Talent integroidaan Finance and Operationsin kanssa. Uusi malli julkaistaan pian, ja sitä käytetään kaikissa uusissa luotavissa integraatioprojekteissa. Aiemmin luoduissa integraatioprojekteissa päivitetään tehtävän yhdistämismääritykset. Lisätietoja on seuraavassa päivitettyjen yhdistämismääritysten taulukossa. 
+Seuraavat ongelmat on havaittu nykyisessä mallissa, jolla Talent integroidaan Finance kanssa. Uusi malli julkaistaan pian, ja sitä käytetään kaikissa uusissa luotavissa integraatioprojekteissa. Aiemmin luoduissa integraatioprojekteissa päivitetään tehtävän yhdistämismääritykset. Lisätietoja on seuraavassa päivitettyjen yhdistämismääritysten taulukossa. 
 
 >[!NOTE]
 > Toimet toimien päätyöhön määrittävä tehtävä ei integroi tietoja. Tätä ongelmaa tutkitaan parhaillaan. Ongelmaa ei välttää nykyisessä yhdistämismäärityksessä. 

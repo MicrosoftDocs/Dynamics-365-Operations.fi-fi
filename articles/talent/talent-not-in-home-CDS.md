@@ -1,6 +1,6 @@
 ---
 title: Talent ei näy Microsoft Dynamics -sovellusten yhteydessä (Common Data Service 1.0)
-description: Tässä ohjeaiheessa kerrotaan, mitä on tehtävä, jos asiakas ei näe Microsoft Dynamics 365 for Talent -sovellusta muiden Microsoft Dynamics 365 -sovellusten joukossa.
+description: Tässä ohjeaiheessa kerrotaan, mitä on tehtävä, jos asiakas ei näe Microsoft Dynamics 365 Talent -sovellusta muiden Microsoft Dynamics 365 -sovellusten joukossa.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ad5add2b572ccb6bff175806b965f63b53986152
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 956af80a8ab2f454d9f523d3c74dda754ef0f793
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517943"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009373"
 ---
 # <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a>Talent ei näy Microsoft Dynamics -sovellusten yhteydessä (Common Data Service 1.0)
 
@@ -30,13 +30,13 @@ ms.locfileid: "1517943"
 
 **Varasto-otto**
 
-Asiakas ei näe Microsoft Dynamics 365 for Talent -sovellusta muiden Microsoft Dynamics 365 -sovellusten joukossa.
+Asiakas ei näe Microsoft Dynamics 365 Talent -sovellusta muiden Microsoft Dynamics 365 -sovellusten joukossa.
 
 **Tarkkuus**
 
 Käyttäjä on lisättävä ympäristön tekijän rooliin Microsoft PowerAppsin ympäristössä.
 
-1. Järjestelmänvalvoja, jolla on PowerApps -palvelupaketin 2 käyttöoikeus, on avattava [PowerAppsin hallintaportaali](https://preview.admin.powerapps.com/).
+1. Järjestelmänvalvoja, jolla on PowerApps-palvelupaketin 2 käyttöoikeus, on avattava [PowerAppsin hallintaportaali](https://preview.admin.powerapps.com/).
 2. Valitse ensin **Ympäristöt** ja sitten oikea Talentin ympäristö.
 3. Valitse **Ympäristöroolit**-välilehden **Suojaus**-välilehdessä **Ympäristön tekijä**.
 

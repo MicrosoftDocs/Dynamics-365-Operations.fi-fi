@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7f785b0935b952d6de68fd120a3639077ad124bd
-ms.sourcegitcommit: c0b581e4c647b6c47bc14d1d7bfe267832afecba
+ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1913083"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024657"
 ---
 # <a name="register-consumption"></a>Kulutuksen rekisteröinti
 
@@ -93,5 +93,5 @@ Kun teet kulutusmerkintöjä, eri rekisteröintityyppeihin liittyvät taloushall
 *Nimikerekisteröinnit* : Ensin lisätään kirjauskansion otsikon taloushallinnon dimensiot, jos sellaisia on. Sitten lisätään liittyvän työtilausprojektin taloushallinnon dimensiot. Seuraavaksi lisätään toimipaikan taloushallinnon dimensiot. Lopuksi lisätään nimikkeen taloushallinnon dimensiot.
 
 >[!NOTE]
->Kaikkien kolmen kirjaustyypin osalta taloushallinnon dimensioyhdistelmä tarkistetaan ja virheelliset yhdistelmät poistetaan. Tämä on vakioasetus Dynamics 365 for Finance and Operationsissa.
+>Kaikkien kolmen kirjaustyypin osalta taloushallinnon dimensioyhdistelmä tarkistetaan ja virheelliset yhdistelmät poistetaan. Tämä on vakiomenettely Finance and Operationsissa.
 

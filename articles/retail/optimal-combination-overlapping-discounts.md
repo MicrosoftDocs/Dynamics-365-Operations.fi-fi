@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 00d7457b13e6633c9285a1fc43b8f6dd60dae9ae
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 555098a7d11cb0b4c0f90357ff260598e80108f5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836529"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017917"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Määritä optimaalinen yhdistelmä päällekkäisiä alennuksia
 
@@ -32,7 +32,7 @@ ms.locfileid: "1836529"
 
 Kun alennukset menevät päällekkäin, sinun on määritettävä alennuksien yhdistelmä, joka tuottaa pienimmän tapahtumasumman tai suurimman kokonaisalennuksen. Kun alennuksen määrä vaihtelee ostettujen tuotteiden hinnan mukaan (kuten yleisessä vähittäismyynnin Osta 1, saat toisen X prosentin alennuksella -alennuksessa), tästä prosessista tulee yhdistelmäoptimoinnin ongelma.
 
-Tämä artikkeli koskee Microsoft Dynamics AX 2012 R3 -versiota, jossa KB 3105973 (julkaistu 2. marraskuuta 2015) tai uudempaa, Microsoft Dynamics 365 for Retailia. Päällekkäisten alennusten käyttöä varten on otettu menetelmä, jolla voidaan määrittää päällekkäisten alennusten yhdistelmän käyttö mahdollisimman nopeasti. Kutsumme tätä uutta menetelmää **rajan-arvojen luokitteluksi**. Raja-arvojen luokittelua käytetään silloin kun aika, joka vaaditaan mahdollisten päällekkäisten alennusten yhdistelmien arvioimiseen, ylittää raja-arvon, joka määritetään **Vähittäismyynnin parametrit** -sivulla. Raja-arvon luokittelumenetelmässä arvo lasketaan kullekin päällekkäiselle alennukselle käyttämällä jaettujen tuotteiden alennuksen arvoa. Sitten päällekkäisiä alennuksia käytetään suurimmasta suhteellisesta arvosta pienimpään suhteelliseen arvoon. Lisätietoja tästä uudesta menetelmästä on jäljempänä tässä artikkelissa olevassa Raja-arvo-osassa. Raja-arvon luokittelua ei käytetä, kun tuotteen alennussummat eivät vaikuta tapahtuman toisiin tuotteisiin. Tätä menetelmää ei käytetä esimerkiksi kahden yksinkertaisen alennuksen tapauksessa tai yksinkertaisen määräalennuksen yhteydessä.
+Tämä artikkeli koskee Microsoft Dynamics AX 2012 R3 -versiota, jossa KB 3105973 (julkaistu 2. marraskuuta 2015) tai uudempaa, Dynamics 365 Retailia. Päällekkäisten alennusten käyttöä varten on otettu menetelmä, jolla voidaan määrittää päällekkäisten alennusten yhdistelmän käyttö mahdollisimman nopeasti. Kutsumme tätä uutta menetelmää **rajan-arvojen luokitteluksi**. Raja-arvojen luokittelua käytetään silloin kun aika, joka vaaditaan mahdollisten päällekkäisten alennusten yhdistelmien arvioimiseen, ylittää raja-arvon, joka määritetään **Vähittäismyynnin parametrit** -sivulla. Raja-arvon luokittelumenetelmässä arvo lasketaan kullekin päällekkäiselle alennukselle käyttämällä jaettujen tuotteiden alennuksen arvoa. Sitten päällekkäisiä alennuksia käytetään suurimmasta suhteellisesta arvosta pienimpään suhteelliseen arvoon. Lisätietoja tästä uudesta menetelmästä on jäljempänä tässä artikkelissa olevassa Raja-arvo-osassa. Raja-arvon luokittelua ei käytetä, kun tuotteen alennussummat eivät vaikuta tapahtuman toisiin tuotteisiin. Tätä menetelmää ei käytetä esimerkiksi kahden yksinkertaisen alennuksen tapauksessa tai yksinkertaisen määräalennuksen yhteydessä.
 
 ## <a name="discount-examples"></a>Esimerkkejä alennuksista
 

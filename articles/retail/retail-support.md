@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Retail -tuen saaminen
-description: Tässä artikkelissa kerrotaan, miten saat Microsoft Dynamics 365 for Retailia koskevia ohjeita.
+title: Dynamics 365 Retail -tuen saaminen
+description: Tässä artikkelissa kerrotaan, miten saat Microsoft Dynamics 365 Retailia koskevaa apua.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 225b39bb03fa3bbd0b3c3a24e4eb09a114d01904
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577841"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025003"
 ---
-# <a name="get-support-for-dynamics-365-for-retail"></a>Dynamics 365 for Retail -tuen saaminen
+# <a name="get-support-for-dynamics-365-retail"></a>Dynamics 365 Retail -tuen saaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kerrotaan, miten saat Dynamics 365 for Retailia koskevia ohjeita.
+Tässä artikkelissa kerrotaan, miten saat Dynamics 365 Retailia koskevia ohjeita.
 
 ## <a name="contact-support"></a>Ota yhteyttä tukeen
 
@@ -48,7 +48,7 @@ Voit saada Retail-tukea käyttämällä seuraavan taulukon resursseja. Nämä re
 <tbody>
 <tr>
 <td>Kysy yhteisöltä.</td>
-<td>Siirry <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retailin</a> yhteisösivulle, jossa Dynamics-yhteisö auttaa löytämään vastauksia kysymyksiisi.</td>
+<td>Siirry <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retailin</a> yhteisösivulle, jossa Dynamics-yhteisö auttaa löytämään vastauksia kysymyksiisi.</td>
 </tr>
 <tr>
 <td>Käytä Ongelmahaku-työkalua.</td>
@@ -74,7 +74,7 @@ Voit saada Retail-tukea käyttämällä seuraavan taulukon resursseja. Nämä re
 Jos tekniset kysymykset liittyvät CustomerSourceen kirjautumiseen, e-learning-kursseihin, hakuun, tietämyskantaan, tietojen lataamiseen sekä sivu- tai järjestelmävirheisiin, siirry <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">sivustotukeen</a>.</td>
 </tr>
 <tr>
-<td>Pyydä apua Retail- tai Finance and Operations -lisensointia koskevissa kysymyksissä.</td>
+<td>Vastauksia kysymyksiin lisensoinnista.</td>
 <td>Ota yhteys kumppaniin, suurasiakasjälleenmyyjään tai Microsoftin myyntiedustajan.</td>
 </tr>
 <tr>
