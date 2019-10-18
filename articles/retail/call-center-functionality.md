@@ -1,6 +1,6 @@
 ---
 title: Puhelukeskuksen myyntitoiminnot
-description: Tässä ohjeaiheessa on Microsoft Dynamics 365 for Retailin puhelinkeskuksen myyntitoimintojen yleiskatsaus.
+description: Tässä ohjeaiheessa on Dynamics 365 Retailin puhelinkeskuksen myyntitoimintojen yleiskatsaus.
 author: josaw1
 manager: AnnBe
 ms.date: 04/03/2018
@@ -19,51 +19,53 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8b78762ce70b318e1f77e1e49ffaa7b72f01667f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549477"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025768"
 ---
-# <a name="call-center-sales-functionality"></a><span data-ttu-id="fc069-103">Puhelupalvelukeskuksen myyntitoiminnot</span><span class="sxs-lookup"><span data-stu-id="fc069-103">Call center sales functionality</span></span>
+# <a name="call-center-sales-functionality"></a><span data-ttu-id="54a1a-103">Puhelupalvelukeskuksen myyntitoiminnot</span><span class="sxs-lookup"><span data-stu-id="54a1a-103">Call center sales functionality</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="fc069-104">Dynamics 365 for Retailissa puhelinpalvelukeskus on vähittäismyynnin kanava, joka voidaan määrittää sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="fc069-104">In Dynamics 365 for Retail, a call center is a type of Retail channel that can be defined in the application.</span></span> <span data-ttu-id="fc069-105">Määrittämällä tietyn kanavan kaikille puhelinkeskusyksiköillesi järjestelmä voi liittää tietyt oletustiedot ja tilauksen käsittelyn oletusarvot myyntitilauksiin, jotka puhelinkeskuskanavan käyttäjä on luonut.</span><span class="sxs-lookup"><span data-stu-id="fc069-105">Defining a specific channel for your call center entities allows the system to tie specific data defaults and order processing defaults to sales orders created by a user of the call center channel.</span></span>
 
-<span data-ttu-id="fc069-106">Puhelinkeskuksen ominaisuuksia ovat tarkennettu vähittäismyyntihinta ja alennukset, luettelot, lahjakortit, kanta-asiakasohjelmat ja kupongit.</span><span class="sxs-lookup"><span data-stu-id="fc069-106">Call center features include advanced retail price and promotions, catalogs, gift cards, loyalty programs, and coupons.</span></span> <span data-ttu-id="fc069-107">Puhelinkeskuksen tilauksia toimittaa myös myyntipistesovellus (POS) ristikanavatilauksen tukemiseksi.</span><span class="sxs-lookup"><span data-stu-id="fc069-107">Call center orders are also leveraged by the point of sale (POS) application to support cross-channel order fulfillment scenarios.</span></span>
+<span data-ttu-id="54a1a-104">Dynamics 365 Retailissa puhelinpalvelukeskus on vähittäismyynnin kanava, joka voidaan määrittää sovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="54a1a-104">In Dynamics 365 Retail, a call center is a type of Retail channel that can be defined in the application.</span></span> <span data-ttu-id="54a1a-105">Määrittämällä tietyn kanavan kaikille puhelinkeskusyksiköillesi järjestelmä voi liittää tietyt oletustiedot ja tilauksen käsittelyn oletusarvot myyntitilauksiin, jotka puhelinkeskuskanavan käyttäjä on luonut.</span><span class="sxs-lookup"><span data-stu-id="54a1a-105">Defining a specific channel for your call center entities allows the system to tie specific data defaults and order processing defaults to sales orders created by a user of the call center channel.</span></span>
 
-<span data-ttu-id="fc069-108">On tärkeää muistaa, että vaikka puhelinkeskusmoduulia voidaan käyttää muilla aloilla vähittäismyynnin ulkopuolella, Dynamics 365 for Retailin nykyisen version puhelinkeskussovellusta ei ole vielä optimoitu käytettäväksi yritysten välisissä (B2B) tilauksen käsittelytilanteissa tai tilanteissa, joissa tilauksessa on paljon myyntirivejä.</span><span class="sxs-lookup"><span data-stu-id="fc069-108">It's important to note that while the call center module can be utilized by other industries outside of Retail, the current release of the Dynamics 365 for Retail call center application hasn't been optimized for use in business-to-business (B2B) order processing scenarios, or scenarios where orders have a large amount of sales lines.</span></span> <span data-ttu-id="fc069-109">On suositeltavaa, että käyttäjät, jotka haluavat käyttää puhelinkeskuksen ominaisuuksia tilausten käsittelyyn tavallisten kuluttajatapahtumien ulkopuolella, varaavat riittävästi aikaa puhelinkeskuksen toimintojen testaamiseen ja vahvistamiseen, jotta ne toimivat halutulla tavalla.</span><span class="sxs-lookup"><span data-stu-id="fc069-109">It's recommended that users who want to utilize the call center features for order processing outside of typical direct-to-consumer transaction processing, take adequate time to test and validate that enabling call center functionality will meet functional and performance needs.</span></span>
+<span data-ttu-id="54a1a-106">Puhelinkeskuksen ominaisuuksia ovat tarkennettu vähittäismyyntihinta ja alennukset, luettelot, lahjakortit, kanta-asiakasohjelmat ja kupongit.</span><span class="sxs-lookup"><span data-stu-id="54a1a-106">Call center features include advanced retail price and promotions, catalogs, gift cards, loyalty programs, and coupons.</span></span> <span data-ttu-id="54a1a-107">Puhelinkeskuksen tilauksia toimittaa myös myyntipistesovellus (POS) ristikanavatilauksen tukemiseksi.</span><span class="sxs-lookup"><span data-stu-id="54a1a-107">Call center orders are also leveraged by the point of sale (POS) application to support cross-channel order fulfillment scenarios.</span></span>
 
-<span data-ttu-id="fc069-110">Tilauksen luonnin tukemisen lisäksi puhelinkeskusmoduuli tarjoaa myös helppokäyttöisen asiakaspalvelusovelluksen, joka helpottaa asiakastilien paikantamista ja asiakkaan tilaustietojen ja määritteiden tarkastamista.</span><span class="sxs-lookup"><span data-stu-id="fc069-110">In addition to supporting order creation, the call center module also provides a user-friendly customer service application that makes it easier for users to locate customer accounts and review all of the related customer order data and attributes.</span></span> <span data-ttu-id="fc069-111">Asiakaspalvelunäyttö on suunniteltu siten, että käyttäjä pääsee nopeasti tarvittaviin tietoihin, joiden avulla voidaan vastata asiakkaan useimpiin tilausta koskeviin kysymyksiin.</span><span class="sxs-lookup"><span data-stu-id="fc069-111">The customer service screen is designed to enable a user to quickly access order related data that will allow them to answer the most common order-related questions received from customers.</span></span>
+<span data-ttu-id="54a1a-108">On tärkeää muistaa, että vaikka puhelinkeskusmoduulia voidaan käyttää muilla aloilla vähittäismyynnin ulkopuolella, Retailin nykyisen version puhelinkeskussovellusta ei ole vielä optimoitu käytettäväksi yritysten välisissä (B2B) tilauksen käsittelytilanteissa tai tilanteissa, joissa tilauksessa on paljon myyntirivejä.</span><span class="sxs-lookup"><span data-stu-id="54a1a-108">It's important to note that while the call center module can be utilized by other industries outside of Retail, the current release of the Retail call center application hasn't been optimized for use in business-to-business (B2B) order processing scenarios, or scenarios where orders have a large amount of sales lines.</span></span> <span data-ttu-id="54a1a-109">On suositeltavaa, että käyttäjät, jotka haluavat käyttää puhelinkeskuksen ominaisuuksia tilausten käsittelyyn tavallisten kuluttajatapahtumien ulkopuolella, varaavat riittävästi aikaa puhelinkeskuksen toimintojen testaamiseen ja vahvistamiseen, jotta ne toimivat halutulla tavalla.</span><span class="sxs-lookup"><span data-stu-id="54a1a-109">It's recommended that users who want to utilize the call center features for order processing outside of typical direct-to-consumer transaction processing, take adequate time to test and validate that enabling call center functionality will meet functional and performance needs.</span></span>
 
-<span data-ttu-id="fc069-112">Tällä sivulla on linkit asianmukaisiin dokumentteihin, jotka liittyvät Dynamics 365 for Retailin puhelinkeskusominaisuuksien määritykseen ja käyttöön.</span><span class="sxs-lookup"><span data-stu-id="fc069-112">This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features in Dynamics 365 for Retail.</span></span>
+<span data-ttu-id="54a1a-110">Tilauksen luonnin tukemisen lisäksi puhelinkeskusmoduuli tarjoaa myös helppokäyttöisen asiakaspalvelusovelluksen, joka helpottaa asiakastilien paikantamista ja asiakkaan tilaustietojen ja määritteiden tarkastamista.</span><span class="sxs-lookup"><span data-stu-id="54a1a-110">In addition to supporting order creation, the call center module also provides a user-friendly customer service application that makes it easier for users to locate customer accounts and review all of the related customer order data and attributes.</span></span> <span data-ttu-id="54a1a-111">Asiakaspalvelunäyttö on suunniteltu siten, että käyttäjä pääsee nopeasti tarvittaviin tietoihin, joiden avulla voidaan vastata asiakkaan useimpiin tilausta koskeviin kysymyksiin.</span><span class="sxs-lookup"><span data-stu-id="54a1a-111">The customer service screen is designed to enable a user to quickly access order related data that will allow them to answer the most common order-related questions received from customers.</span></span>
 
-## <a name="configure-the-call-center"></a><span data-ttu-id="fc069-113">Määritä puhelinkeskus</span><span class="sxs-lookup"><span data-stu-id="fc069-113">Configure the call center</span></span>
+<span data-ttu-id="54a1a-112">Tällä sivulla on linkit asianmukaisiin dokumentteihin, jotka liittyvät Retailin puhelinkeskusominaisuuksien määritykseen ja käyttöön.</span><span class="sxs-lookup"><span data-stu-id="54a1a-112">This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features in Retail.</span></span>
 
-[<span data-ttu-id="fc069-114">Tilaustenkäsittelyasetusten määrittäminen</span><span class="sxs-lookup"><span data-stu-id="fc069-114">Set up order processing options</span></span>](set-up-order-processing-options.md)
 
-## <a name="configure-order-processing"></a><span data-ttu-id="fc069-115">Määritä tilauksen käsittely</span><span class="sxs-lookup"><span data-stu-id="fc069-115">Configure order processing</span></span>
+## <a name="configure-the-call-center"></a><span data-ttu-id="54a1a-113">Määritä puhelinkeskus</span><span class="sxs-lookup"><span data-stu-id="54a1a-113">Configure the call center</span></span>
 
-[<span data-ttu-id="fc069-116">Petoshälytysten määrittäminen</span><span class="sxs-lookup"><span data-stu-id="fc069-116">Set up fraud alerts</span></span>](set-up-fraud-alerts.md)
+[<span data-ttu-id="54a1a-114">Tilaustenkäsittelyasetusten määrittäminen</span><span class="sxs-lookup"><span data-stu-id="54a1a-114">Set up order processing options</span></span>](set-up-order-processing-options.md)
 
-[<span data-ttu-id="fc069-117">Manuaalisten tilausten pidot</span><span class="sxs-lookup"><span data-stu-id="fc069-117">Manual Order Holds</span></span>](work-with-order-holds.md)
+## <a name="configure-order-processing"></a><span data-ttu-id="54a1a-115">Määritä tilauksen käsittely</span><span class="sxs-lookup"><span data-stu-id="54a1a-115">Configure order processing</span></span>
 
-## <a name="configure-payment-processing"></a><span data-ttu-id="fc069-118">Määritä maksun käsittely</span><span class="sxs-lookup"><span data-stu-id="fc069-118">Configure payment processing</span></span>
+[<span data-ttu-id="54a1a-116">Petoshälytysten määrittäminen</span><span class="sxs-lookup"><span data-stu-id="54a1a-116">Set up fraud alerts</span></span>](set-up-fraud-alerts.md)
 
-[<span data-ttu-id="fc069-119">Puhelinkeskuksen maksutavat</span><span class="sxs-lookup"><span data-stu-id="fc069-119">Payment methods in a call center</span></span>](work-with-payments.md)
+[<span data-ttu-id="54a1a-117">Manuaalisten tilausten pidot</span><span class="sxs-lookup"><span data-stu-id="54a1a-117">Manual Order Holds</span></span>](work-with-order-holds.md)
 
-## <a name="configure-delivery-modes"></a><span data-ttu-id="fc069-120">Määritä toimitustavat</span><span class="sxs-lookup"><span data-stu-id="fc069-120">Configure delivery modes</span></span>
+## <a name="configure-payment-processing"></a><span data-ttu-id="54a1a-118">Määritä maksun käsittely</span><span class="sxs-lookup"><span data-stu-id="54a1a-118">Configure payment processing</span></span>
 
-[<span data-ttu-id="fc069-121">Määritä puhelinkeskuksen toimitustavat ja kulut</span><span class="sxs-lookup"><span data-stu-id="fc069-121">Configure call center delivery modes and charges</span></span>](configure-call-center-delivery.md)
+[<span data-ttu-id="54a1a-119">Puhelinkeskuksen maksutavat</span><span class="sxs-lookup"><span data-stu-id="54a1a-119">Payment methods in a call center</span></span>](work-with-payments.md)
 
-## <a name="configure-direct-marketing"></a><span data-ttu-id="fc069-122">Määritä suoramarkkinointi</span><span class="sxs-lookup"><span data-stu-id="fc069-122">Configure direct marketing</span></span>
+## <a name="configure-delivery-modes"></a><span data-ttu-id="54a1a-120">Määritä toimitustavat</span><span class="sxs-lookup"><span data-stu-id="54a1a-120">Configure delivery modes</span></span>
 
-[<span data-ttu-id="fc069-123">Puhelinkeskuksen luettelot</span><span class="sxs-lookup"><span data-stu-id="fc069-123">Call center catalogs</span></span>](call-center-catalogs.md)
+[<span data-ttu-id="54a1a-121">Määritä puhelinkeskuksen toimitustavat ja kulut</span><span class="sxs-lookup"><span data-stu-id="54a1a-121">Configure call center delivery modes and charges</span></span>](configure-call-center-delivery.md)
 
-[<span data-ttu-id="fc069-124">RFM-analyysin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="fc069-124">Set up RFM analysis</span></span>](set-up-rfm-analysis.md)
+## <a name="configure-direct-marketing"></a><span data-ttu-id="54a1a-122">Määritä suoramarkkinointi</span><span class="sxs-lookup"><span data-stu-id="54a1a-122">Configure direct marketing</span></span>
 
-## <a name="configure-continuity-programs"></a><span data-ttu-id="fc069-125">Määritä jatkuvuusohjelmat</span><span class="sxs-lookup"><span data-stu-id="fc069-125">Configure continuity programs</span></span>
+[<span data-ttu-id="54a1a-123">Puhelinkeskuksen luettelot</span><span class="sxs-lookup"><span data-stu-id="54a1a-123">Call center catalogs</span></span>](call-center-catalogs.md)
 
-[<span data-ttu-id="fc069-126">Puhelinkeskuksen jatkuvuusohjelman määrittäminen</span><span class="sxs-lookup"><span data-stu-id="fc069-126">Set up a continuity program for a call center</span></span>](set-up-continuity-program.md)
+[<span data-ttu-id="54a1a-124">RFM-analyysin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="54a1a-124">Set up RFM analysis</span></span>](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a><span data-ttu-id="54a1a-125">Määritä jatkuvuusohjelmat</span><span class="sxs-lookup"><span data-stu-id="54a1a-125">Configure continuity programs</span></span>
+
+[<span data-ttu-id="54a1a-126">Puhelinkeskuksen jatkuvuusohjelman määrittäminen</span><span class="sxs-lookup"><span data-stu-id="54a1a-126">Set up a continuity program for a call center</span></span>](set-up-continuity-program.md)

@@ -1,6 +1,6 @@
 ---
 title: Warehousing-sovelluksen kenttien nimien määrittäminen
-description: Tässä ohjeaiheessa kerrotaan, miten varastosovelluksen kenttien nimet ja prioriteetit määritetään Finance and Operationsissa.
+description: Tässä ohjeaiheessa kerrotaan, miten varastosovelluksen kenttien nimet ja prioriteetit määritetään Dynamics 365 Supply Chain Managementissa.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,24 +19,24 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0162014189ed6bffb17e6718a67eecfd55c334a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548926"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251082"
 ---
-# <a name="configure-app-field-names-in-warehousing-app"></a><span data-ttu-id="fc808-103">Warehousing-sovelluksen kenttien nimien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="fc808-103">Configure app field names in Warehousing app</span></span>
+# <a name="configure-app-field-names-in-warehousing-app"></a><span data-ttu-id="f2e09-103">Warehousing-sovelluksen kenttien nimien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f2e09-103">Configure app field names in Warehousing app</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="fc808-104">Tässä ohjeaiheessa kerrotaan, miten varastosovelluksen kenttien nimet ja prioriteetit määritetään Finance and Operationsissa.</span><span class="sxs-lookup"><span data-stu-id="fc808-104">This topic describes how to define and configure warehouse app field names and priorities in Finance and Operations.</span></span> 
+<span data-ttu-id="f2e09-104">Tässä ohjeaiheessa kerrotaan, miten varastosovelluksen kenttien nimet ja prioriteetit määritetään Dynamics 365 Supply Chain Managementissa.</span><span class="sxs-lookup"><span data-stu-id="f2e09-104">This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 Supply Chain Management.</span></span> 
 
-<span data-ttu-id="fc808-105">**Huomautus:** Tämä ohjeaihe koskee varastonhallintamoduulin ominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="fc808-105">**Note:** This topic applies to features in Warehouse management.</span></span> <span data-ttu-id="fc808-106">Se ei koske inventaariohallintamoduulin ominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="fc808-106">It doesn’t apply to features in Inventory management.</span></span> <span data-ttu-id="fc808-107">Finance and Operations – varastointi on sovellus, jonka avulla voit suorittaa fyysisen varastoinnin tehtäviä.</span><span class="sxs-lookup"><span data-stu-id="fc808-107">Finance and Operations - Warehousing is an application that you can use to perform warehouse tasks.</span></span> <span data-ttu-id="fc808-108">Voit määrittää ja konfiguroida kenttien nimet, joita käytetään sovelluksessa, sekä määrittää prioriteetin, johon kenttien nimet tulisi liittää.</span><span class="sxs-lookup"><span data-stu-id="fc808-108">You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned.</span></span> <span data-ttu-id="fc808-109">Tässä ohjeaiheessa kerrotaan, miten nämä varastosovelluksen kenttien nimet ja prioriteetit määritetään ja miten niitä käytetään Finance and Operationsin varastointisovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="fc808-109">This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Finance and Operations - Warehousing.</span></span> <span data-ttu-id="fc808-110">Lisätietoja yhteyden määrittämisestä Finance and Operationsin varastointisovellukseen on oppaassa [Finance and Operationsin varastointisovelluksen asennus ja määritys](install-configure-warehousing-app.md).</span><span class="sxs-lookup"><span data-stu-id="fc808-110">For detailed information about how to configure the connection to Finance and Operations  - Warehousing, refer to the tutorial [Install and configure Finance and Operations - Warehousing](install-configure-warehousing-app.md).</span></span>
+<span data-ttu-id="f2e09-105">**Huomautus:** Tämä ohjeaihe koskee varastonhallintamoduulin ominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="f2e09-105">**Note:** This topic applies to features in Warehouse management.</span></span> <span data-ttu-id="f2e09-106">Se ei koske inventaariohallintamoduulin ominaisuuksia.</span><span class="sxs-lookup"><span data-stu-id="f2e09-106">It doesn’t apply to features in Inventory management.</span></span> <span data-ttu-id="f2e09-107">Varastointi on sovellus, jonka avulla voit suorittaa fyysisen varastoinnin tehtäviä.</span><span class="sxs-lookup"><span data-stu-id="f2e09-107">Warehousing is an application that you can use to perform warehouse tasks.</span></span> <span data-ttu-id="f2e09-108">Voit määrittää ja konfiguroida kenttien nimet, joita käytetään sovelluksessa, sekä määrittää prioriteetin, johon kenttien nimet tulisi liittää.</span><span class="sxs-lookup"><span data-stu-id="f2e09-108">You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned.</span></span> <span data-ttu-id="f2e09-109">Tässä ohjeaiheessa kerrotaan, miten nämä varastosovelluksen kenttien nimet ja prioriteetit määritetään ja miten niitä käytetään varastointisovelluksessa.</span><span class="sxs-lookup"><span data-stu-id="f2e09-109">This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Warehousing.</span></span> <span data-ttu-id="f2e09-110">Lisätietoja yhteyden määrittämisestä varastointisovellukseen on oppaassa [Varastointisovelluksen asennus ja määritys](install-configure-warehousing-app.md).</span><span class="sxs-lookup"><span data-stu-id="f2e09-110">For detailed information about how to configure the connection to FWarehousing, refer to the tutorial [Install and configure Warehousing](install-configure-warehousing-app.md).</span></span>
 
-## <a name="configure-warehouse-app-field-names"></a><span data-ttu-id="fc808-111">Warehousing-sovelluksen kenttien nimien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="fc808-111">Configure warehouse app field names</span></span>
+## <a name="configure-warehouse-app-field-names"></a><span data-ttu-id="f2e09-111">Warehousing-sovelluksen kenttien nimien määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f2e09-111">Configure warehouse app field names</span></span>
 
-<span data-ttu-id="fc808-112">Kun käytät Finance and Operationsin varastointisovellusta mobiililaitteessa, voit määrittää **Varastointisovelluksen kenttien nimet** -sivulla, miten metatiedot näytetään laitteessa.</span><span class="sxs-lookup"><span data-stu-id="fc808-112">When you use Finance and Operations - Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page.</span></span> <span data-ttu-id="fc808-113">Luo kaikkien varastoinnin mobiililaitteen työnkulussa käytettävien kenttien nimet valitsemalla uudessa Finance and Operations -yrityksessä **Luo oletusasetukset**, ja määritä sitten niihin ensisijainen syötetila ja syötteen tyyppi.</span><span class="sxs-lookup"><span data-stu-id="fc808-113">In a new company in Finance and Operations, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them.</span></span> <span data-ttu-id="fc808-114">Kun kaikkien kenttien nimet on luotu, voit valita syötteen seuraavista vaihtoehdoista.</span><span class="sxs-lookup"><span data-stu-id="fc808-114">After you have generated all field names, you can select the following input options.</span></span>
+<span data-ttu-id="f2e09-112">Jos käytät varastointisovellusta mobiililaitteessa, voit määrittää **Varastointisovelluksen kenttien nimet** -sivulla, miten metatiedot näytetään laitteessa.</span><span class="sxs-lookup"><span data-stu-id="f2e09-112">When you use Warehousing on your mobile device, you can configure how metadata should be displayed on your device on the **Warehouse app field names** page.</span></span> <span data-ttu-id="f2e09-113">Luo kaikkien varastoinnin mobiililaitteen työnkulussa käytettävien kenttien nimet valitsemalla uudessa yrityksessä **Luo oletusasetukset**, ja määritä sitten niihin ensisijainen syötetila ja syötteen tyyppi.</span><span class="sxs-lookup"><span data-stu-id="f2e09-113">In a new company, select **Create default setup** to generate all field names that will be used in the warehouse mobile device workflows, and then assign a preferred input mode and input type to them.</span></span> <span data-ttu-id="f2e09-114">Kun kaikkien kenttien nimet on luotu, voit valita syötteen seuraavista vaihtoehdoista.</span><span class="sxs-lookup"><span data-stu-id="f2e09-114">After you have generated all field names, you can select the following input options.</span></span>
 
 <table>
 <colgroup>
@@ -45,31 +45,31 @@ ms.locfileid: "1548926"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="fc808-115">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="fc808-115">Option</span></span></th>
-<th><span data-ttu-id="fc808-116">kuvaus</span><span class="sxs-lookup"><span data-stu-id="fc808-116">Description</span></span></th>
+<th><span data-ttu-id="f2e09-115">Vaihtoehto</span><span class="sxs-lookup"><span data-stu-id="f2e09-115">Option</span></span></th>
+<th><span data-ttu-id="f2e09-116">kuvaus</span><span class="sxs-lookup"><span data-stu-id="f2e09-116">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="fc808-117">Ensisijainen syöttömenetelmä</span><span class="sxs-lookup"><span data-stu-id="fc808-117">Preferred input mode</span></span></td>
-<td><span data-ttu-id="fc808-118">Tämä vaihtoehto määrittää, näytetäänkö skannauskenttä vai manuaalinen syöttökenttä valitulle kentän nimelle.</span><span class="sxs-lookup"><span data-stu-id="fc808-118">This option defines whether a scanning field or a manual entry input field should be shown for the selected field name.</span></span> <span data-ttu-id="fc808-119">Tämä on tarpeen sen erottamiseksi, jos viivakoodeja käytetään tälle kentälle.</span><span class="sxs-lookup"><span data-stu-id="fc808-119">This is useful to distinguish fields depending on if barcodes are used for the field.</span></span> <span data-ttu-id="fc808-120"><strong>Huomautus:</strong> Niille kenttien nimille, joiden ensisijainen syöttötila on <strong>Skannaus</strong>, voit syöttää tiedot manuaalisesti jos viivakoodi on vioittunut tai lukukelvoton.</span><span class="sxs-lookup"><span data-stu-id="fc808-120"><strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the barcode is unreadable or damaged.</span></span></td>
+<td><span data-ttu-id="f2e09-117">Ensisijainen syöttömenetelmä</span><span class="sxs-lookup"><span data-stu-id="f2e09-117">Preferred input mode</span></span></td>
+<td><span data-ttu-id="f2e09-118">Tämä vaihtoehto määrittää, näytetäänkö skannauskenttä vai manuaalinen syöttökenttä valitulle kentän nimelle.</span><span class="sxs-lookup"><span data-stu-id="f2e09-118">This option defines whether a scanning field or a manual entry input field should be shown for the selected field name.</span></span> <span data-ttu-id="f2e09-119">Tämä on tarpeen sen erottamiseksi, jos viivakoodeja käytetään tälle kentälle.</span><span class="sxs-lookup"><span data-stu-id="f2e09-119">This is useful to distinguish fields depending on if barcodes are used for the field.</span></span> <span data-ttu-id="f2e09-120"><strong>Huomautus:</strong> Niille kenttien nimille, joiden ensisijainen syöttötila on <strong>Skannaus</strong>, voit syöttää tiedot manuaalisesti jos viivakoodi on vioittunut tai lukukelvoton.</span><span class="sxs-lookup"><span data-stu-id="f2e09-120"><strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the barcode is unreadable or damaged.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="fc808-121">Syötetyyppi</span><span class="sxs-lookup"><span data-stu-id="fc808-121">Input type</span></span></td>
-<td><span data-ttu-id="fc808-122">Tämä vaihtoehto määrittää, mitä syötetilaa pitäisi käyttää valitulle kentän nimelle.</span><span class="sxs-lookup"><span data-stu-id="fc808-122">This option defines what input type should be used for the selected field name.</span></span> <span data-ttu-id="fc808-123">Käytettävissä on neljä asetusta:</span><span class="sxs-lookup"><span data-stu-id="fc808-123">Four options are available:</span></span>
+<td><span data-ttu-id="f2e09-121">Syötetyyppi</span><span class="sxs-lookup"><span data-stu-id="f2e09-121">Input type</span></span></td>
+<td><span data-ttu-id="f2e09-122">Tämä vaihtoehto määrittää, mitä syötetilaa pitäisi käyttää valitulle kentän nimelle.</span><span class="sxs-lookup"><span data-stu-id="f2e09-122">This option defines what input type should be used for the selected field name.</span></span> <span data-ttu-id="f2e09-123">Käytettävissä on neljä asetusta:</span><span class="sxs-lookup"><span data-stu-id="f2e09-123">Four options are available:</span></span>
 <ul>
-<li><span data-ttu-id="fc808-124"><strong>Valinta</strong> - sisältää asetusluettelon, josta voi valita.</span><span class="sxs-lookup"><span data-stu-id="fc808-124"><strong>Selection</strong> - Contains a list of options to choose from.</span></span> <span data-ttu-id="fc808-125">Tässä vaihtoehdossa kenttien nimiä ei voi muokata.</span><span class="sxs-lookup"><span data-stu-id="fc808-125">Field names with this option are not editable.</span></span></li>
-<li><span data-ttu-id="fc808-126"><strong>Päivämäärä</strong> - kenttien nimet, jotka on määritetty päivämääriksi, näyttävät päivämäärämuodon otsikon yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="fc808-126"><strong>Date</strong> - Field names specified as date will show a date format with the label.</span></span> <span data-ttu-id="fc808-127">Näin varastotyöntekijät näkevät, missä muodossa kirjoittaa päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="fc808-127">This helps warehouse workers see in which format to enter the date.</span></span> <span data-ttu-id="fc808-128">Tässä vaihtoehdossa kenttien nimiä ei voi muokata.</span><span class="sxs-lookup"><span data-stu-id="fc808-128">Field names with this option are not editable.</span></span></li>
-<li><span data-ttu-id="fc808-129"><strong>Alpha</strong> - jos tämä valitaan, laitteen näppäimistöä käytetään syötettäessä tietoja manuaalisesti sovellukseen.</span><span class="sxs-lookup"><span data-stu-id="fc808-129"><strong>Alpha</strong> - If selected, the device keyboard will be used when entering information manually in the app.</span></span> <span data-ttu-id="fc808-130">Näppäimistön käyttöä voidaan muuttaa sen mukaan, mitä laitetta käytetään.</span><span class="sxs-lookup"><span data-stu-id="fc808-130">The keyboard experience can be changed depending on which device is used.</span></span></li>
-<li><span data-ttu-id="fc808-131"><strong>Numeerinen</strong> - kentän nimille, jotka käyttävät vain numeroita, voit valita tämän vaihtoehdon näyttääksesi mukautetun numeronäppäimistön syöttökentän yhteydessä laitteen näppäimistön sijaan.</span><span class="sxs-lookup"><span data-stu-id="fc808-131"><strong>Numeric</strong> - For field names that use numeric input only, you can select this option to display a custom numeric keypad with the input field instead of the device keyboard.</span></span></li>
+<li><span data-ttu-id="f2e09-124"><strong>Valinta</strong> - sisältää asetusluettelon, josta voi valita.</span><span class="sxs-lookup"><span data-stu-id="f2e09-124"><strong>Selection</strong> - Contains a list of options to choose from.</span></span> <span data-ttu-id="f2e09-125">Tässä vaihtoehdossa kenttien nimiä ei voi muokata.</span><span class="sxs-lookup"><span data-stu-id="f2e09-125">Field names with this option are not editable.</span></span></li>
+<li><span data-ttu-id="f2e09-126"><strong>Päivämäärä</strong> - kenttien nimet, jotka on määritetty päivämääriksi, näyttävät päivämäärämuodon otsikon yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="f2e09-126"><strong>Date</strong> - Field names specified as date will show a date format with the label.</span></span> <span data-ttu-id="f2e09-127">Näin varastotyöntekijät näkevät, missä muodossa kirjoittaa päivämäärä.</span><span class="sxs-lookup"><span data-stu-id="f2e09-127">This helps warehouse workers see in which format to enter the date.</span></span> <span data-ttu-id="f2e09-128">Tässä vaihtoehdossa kenttien nimiä ei voi muokata.</span><span class="sxs-lookup"><span data-stu-id="f2e09-128">Field names with this option are not editable.</span></span></li>
+<li><span data-ttu-id="f2e09-129"><strong>Alpha</strong> - jos tämä valitaan, laitteen näppäimistöä käytetään syötettäessä tietoja manuaalisesti sovellukseen.</span><span class="sxs-lookup"><span data-stu-id="f2e09-129"><strong>Alpha</strong> - If selected, the device keyboard will be used when entering information manually in the app.</span></span> <span data-ttu-id="f2e09-130">Näppäimistön käyttöä voidaan muuttaa sen mukaan, mitä laitetta käytetään.</span><span class="sxs-lookup"><span data-stu-id="f2e09-130">The keyboard experience can be changed depending on which device is used.</span></span></li>
+<li><span data-ttu-id="f2e09-131"><strong>Numeerinen</strong> - kentän nimille, jotka käyttävät vain numeroita, voit valita tämän vaihtoehdon näyttääksesi mukautetun numeronäppäimistön syöttökentän yhteydessä laitteen näppäimistön sijaan.</span><span class="sxs-lookup"><span data-stu-id="f2e09-131"><strong>Numeric</strong> - For field names that use numeric input only, you can select this option to display a custom numeric keypad with the input field instead of the device keyboard.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="configure-warehouse-app-field-priority"></a><span data-ttu-id="fc808-132">Warehousing-sovelluksen kenttäprioriteetin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="fc808-132">Configure warehouse app field priority</span></span>
+## <a name="configure-warehouse-app-field-priority"></a><span data-ttu-id="f2e09-132">Warehousing-sovelluksen kenttäprioriteetin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="f2e09-132">Configure warehouse app field priority</span></span>
 
-<span data-ttu-id="fc808-133">**Varastosovelluksen kenttäprioriteetti** -sivulla voit määrittää kenttänimet eri prioriteettiryhmiin.</span><span class="sxs-lookup"><span data-stu-id="fc808-133">On the **Warehouse app field priority** page, you can put field names into different priority groups.</span></span> <span data-ttu-id="fc808-134">Näin voit päättää, mitä tietoja näytetään sivulla päätehtäväsivulla silloin, kun fyysisen varastoinnin työntekijät suorittavat tehtäviä sovelluksen avulla.</span><span class="sxs-lookup"><span data-stu-id="fc808-134">This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app.</span></span> <span data-ttu-id="fc808-135">Jos valitset **Luo oletusasetukset**, järjestelmä luo oletusarvoiset prioriteettiryhmät.</span><span class="sxs-lookup"><span data-stu-id="fc808-135">If you click **Create default setup**, a default set of priority groups will be generated.</span></span> <span data-ttu-id="fc808-136">On mahdollista luoda niin monta prioriteettiryhmiä kuin on tarpeen, mutta tehtäväsivulla näytetään vain kolme prioriteettiryhmää.</span><span class="sxs-lookup"><span data-stu-id="fc808-136">It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page.</span></span> <span data-ttu-id="fc808-137">Kun Finance and Operations lähettää metatietoja sovellukseen, se määrittää kunkin kentän suhteellisen prioriteetin sen prioriteettiryhmän mukaan, ja sovellus näyttää ensimmäiset kolme metatietojen sisältämää prioriteettiryhmää.</span><span class="sxs-lookup"><span data-stu-id="fc808-137">When Finance and Operations sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page.</span></span> <span data-ttu-id="fc808-138">Loput metatiedot näytetään toissijaisten tietojen sivulla.</span><span class="sxs-lookup"><span data-stu-id="fc808-138">The rest of the overflowing metadata will be displayed on a secondary details page.</span></span> <span data-ttu-id="fc808-139">Seuraavassa taulukossa on esimerkit viidestä prioriteettiryhmästä.</span><span class="sxs-lookup"><span data-stu-id="fc808-139">The following table shows an example of five priority groups.</span></span>
+<span data-ttu-id="f2e09-133">**Varastosovelluksen kenttäprioriteetti** -sivulla voit määrittää kenttänimet eri prioriteettiryhmiin.</span><span class="sxs-lookup"><span data-stu-id="f2e09-133">On the **Warehouse app field priority** page, you can put field names into different priority groups.</span></span> <span data-ttu-id="f2e09-134">Näin voit päättää, mitä tietoja näytetään sivulla päätehtäväsivulla silloin, kun fyysisen varastoinnin työntekijät suorittavat tehtäviä sovelluksen avulla.</span><span class="sxs-lookup"><span data-stu-id="f2e09-134">This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app.</span></span> <span data-ttu-id="f2e09-135">Jos valitset **Luo oletusasetukset**, järjestelmä luo oletusarvoiset prioriteettiryhmät.</span><span class="sxs-lookup"><span data-stu-id="f2e09-135">If you click **Create default setup**, a default set of priority groups will be generated.</span></span> <span data-ttu-id="f2e09-136">On mahdollista luoda niin monta prioriteettiryhmiä kuin on tarpeen, mutta tehtäväsivulla näytetään vain kolme prioriteettiryhmää.</span><span class="sxs-lookup"><span data-stu-id="f2e09-136">It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page.</span></span> <span data-ttu-id="f2e09-137">Kun järjestelmä lähettää metatietoja sovellukseen, se määrittää kunkin kentän suhteellisen prioriteetin sen prioriteettiryhmän mukaan, ja sovellus näyttää ensimmäiset kolme metatietojen sisältämää prioriteettiryhmää.</span><span class="sxs-lookup"><span data-stu-id="f2e09-137">When the system sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page.</span></span> <span data-ttu-id="f2e09-138">Loput metatiedot näytetään toissijaisten tietojen sivulla.</span><span class="sxs-lookup"><span data-stu-id="f2e09-138">The rest of the overflowing metadata will be displayed on a secondary details page.</span></span> <span data-ttu-id="f2e09-139">Seuraavassa taulukossa on esimerkit viidestä prioriteettiryhmästä.</span><span class="sxs-lookup"><span data-stu-id="f2e09-139">The following table shows an example of five priority groups.</span></span>
 
 <table>
 <colgroup>
@@ -78,71 +78,68 @@ ms.locfileid: "1548926"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="fc808-140">Prioriteettiryhmä</span><span class="sxs-lookup"><span data-stu-id="fc808-140">Priority group</span></span></th>
-<th><span data-ttu-id="fc808-141">Määritetyt kentät</span><span class="sxs-lookup"><span data-stu-id="fc808-141">Assigned fields</span></span></th>
+<th><span data-ttu-id="f2e09-140">Prioriteettiryhmä</span><span class="sxs-lookup"><span data-stu-id="f2e09-140">Priority group</span></span></th>
+<th><span data-ttu-id="f2e09-141">Määritetyt kentät</span><span class="sxs-lookup"><span data-stu-id="f2e09-141">Assigned fields</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td> <span data-ttu-id="fc808-142">Prioriteetti 10</span><span class="sxs-lookup"><span data-stu-id="fc808-142">Priority 10</span></span></td>
+<td> <span data-ttu-id="f2e09-142">Prioriteetti 10</span><span class="sxs-lookup"><span data-stu-id="f2e09-142">Priority 10</span></span></td>
 <td><ul>
-<li><span data-ttu-id="fc808-143">Nimike</span><span class="sxs-lookup"><span data-stu-id="fc808-143">Item</span></span></li>
-<li><span data-ttu-id="fc808-144">Määrä</span><span class="sxs-lookup"><span data-stu-id="fc808-144">Quantity</span></span></li>
-<li><span data-ttu-id="fc808-145">Mittayksikkö</span><span class="sxs-lookup"><span data-stu-id="fc808-145">Unit of measure</span></span></li>
+<li><span data-ttu-id="f2e09-143">Nimike</span><span class="sxs-lookup"><span data-stu-id="f2e09-143">Item</span></span></li>
+<li><span data-ttu-id="f2e09-144">Määrä</span><span class="sxs-lookup"><span data-stu-id="f2e09-144">Quantity</span></span></li>
+<li><span data-ttu-id="f2e09-145">Mittayksikkö</span><span class="sxs-lookup"><span data-stu-id="f2e09-145">Unit of measure</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td> <span data-ttu-id="fc808-146">Prioriteetti 20</span><span class="sxs-lookup"><span data-stu-id="fc808-146">Priority 20</span></span></td>
+<td> <span data-ttu-id="f2e09-146">Prioriteetti 20</span><span class="sxs-lookup"><span data-stu-id="f2e09-146">Priority 20</span></span></td>
 <td><ul>
-<li><span data-ttu-id="fc808-147">Sijainti klusterissa</span><span class="sxs-lookup"><span data-stu-id="fc808-147">Cluster position</span></span></li>
-<li><span data-ttu-id="fc808-148">Klusteri</span><span class="sxs-lookup"><span data-stu-id="fc808-148">Cluster</span></span></li>
+<li><span data-ttu-id="f2e09-147">Sijainti klusterissa</span><span class="sxs-lookup"><span data-stu-id="f2e09-147">Cluster position</span></span></li>
+<li><span data-ttu-id="f2e09-148">Klusteri</span><span class="sxs-lookup"><span data-stu-id="f2e09-148">Cluster</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td> <span data-ttu-id="fc808-149">Prioriteetti 30</span><span class="sxs-lookup"><span data-stu-id="fc808-149">Priority 30</span></span></td>
+<td> <span data-ttu-id="f2e09-149">Prioriteetti 30</span><span class="sxs-lookup"><span data-stu-id="f2e09-149">Priority 30</span></span></td>
 <td><ul>
-<li><span data-ttu-id="fc808-150">Nimikkeen kuvaus</span><span class="sxs-lookup"><span data-stu-id="fc808-150">Item description</span></span></li>
+<li><span data-ttu-id="f2e09-150">Nimikkeen kuvaus</span><span class="sxs-lookup"><span data-stu-id="f2e09-150">Item description</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td> <span data-ttu-id="fc808-151">Prioriteetti 40</span><span class="sxs-lookup"><span data-stu-id="fc808-151">Priority 40</span></span></td>
+<td> <span data-ttu-id="f2e09-151">Prioriteetti 40</span><span class="sxs-lookup"><span data-stu-id="f2e09-151">Priority 40</span></span></td>
 <td><ul>
-<li><span data-ttu-id="fc808-152">Konfiguraatio</span><span class="sxs-lookup"><span data-stu-id="fc808-152">Configuration</span></span></li>
-<li><span data-ttu-id="fc808-153">Väri</span><span class="sxs-lookup"><span data-stu-id="fc808-153">Color</span></span></li>
-<li><span data-ttu-id="fc808-154">Koko</span><span class="sxs-lookup"><span data-stu-id="fc808-154">Size</span></span></li>
-<li><span data-ttu-id="fc808-155">Tyyli</span><span class="sxs-lookup"><span data-stu-id="fc808-155">Style</span></span></li>
+<li><span data-ttu-id="f2e09-152">Konfiguraatio</span><span class="sxs-lookup"><span data-stu-id="f2e09-152">Configuration</span></span></li>
+<li><span data-ttu-id="f2e09-153">Väri</span><span class="sxs-lookup"><span data-stu-id="f2e09-153">Color</span></span></li>
+<li><span data-ttu-id="f2e09-154">Koko</span><span class="sxs-lookup"><span data-stu-id="f2e09-154">Size</span></span></li>
+<li><span data-ttu-id="f2e09-155">Tyyli</span><span class="sxs-lookup"><span data-stu-id="f2e09-155">Style</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td> <span data-ttu-id="fc808-156">Prioriteetti 50</span><span class="sxs-lookup"><span data-stu-id="fc808-156">Priority 50</span></span></td>
+<td> <span data-ttu-id="f2e09-156">Prioriteetti 50</span><span class="sxs-lookup"><span data-stu-id="f2e09-156">Priority 50</span></span></td>
 <td><ul>
-<li><span data-ttu-id="fc808-157">Paikka</span><span class="sxs-lookup"><span data-stu-id="fc808-157">Location</span></span></li>
-<li><span data-ttu-id="fc808-158">Rekisterikilpi</span><span class="sxs-lookup"><span data-stu-id="fc808-158">License plate</span></span></li>
+<li><span data-ttu-id="f2e09-157">Paikka</span><span class="sxs-lookup"><span data-stu-id="f2e09-157">Location</span></span></li>
+<li><span data-ttu-id="f2e09-158">Rekisterikilpi</span><span class="sxs-lookup"><span data-stu-id="f2e09-158">License plate</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="fc808-159">Esimerkiksi kun varastotyöntekijä suorittaa tehtävän mobiililaitteella ja jos metatiedot, jotka näytetään sovelluksessa, koostuu seuraavista kentistä:</span><span class="sxs-lookup"><span data-stu-id="fc808-159">For example, when a warehouse worker is performing a task on a mobile device, if the metadata that will be displayed in the app consists of the following fields:</span></span>
+<span data-ttu-id="f2e09-159">Esimerkiksi kun varastotyöntekijä suorittaa tehtävän mobiililaitteella ja jos metatiedot, jotka näytetään sovelluksessa, koostuu seuraavista kentistä:</span><span class="sxs-lookup"><span data-stu-id="f2e09-159">For example, when a warehouse worker is performing a task on a mobile device, if the metadata that will be displayed in the app consists of the following fields:</span></span>
 
--   <span data-ttu-id="fc808-160">Nimike</span><span class="sxs-lookup"><span data-stu-id="fc808-160">Item</span></span>
--   <span data-ttu-id="fc808-161">Määrä</span><span class="sxs-lookup"><span data-stu-id="fc808-161">Quantity</span></span>
--   <span data-ttu-id="fc808-162">Mittayksikkö</span><span class="sxs-lookup"><span data-stu-id="fc808-162">Unit of measure</span></span>
--   <span data-ttu-id="fc808-163">Nimikkeen kuvaus</span><span class="sxs-lookup"><span data-stu-id="fc808-163">Item description</span></span>
--   <span data-ttu-id="fc808-164">Koko ja sijainti</span><span class="sxs-lookup"><span data-stu-id="fc808-164">Size and Location</span></span>
+-   <span data-ttu-id="f2e09-160">Nimike</span><span class="sxs-lookup"><span data-stu-id="f2e09-160">Item</span></span>
+-   <span data-ttu-id="f2e09-161">Määrä</span><span class="sxs-lookup"><span data-stu-id="f2e09-161">Quantity</span></span>
+-   <span data-ttu-id="f2e09-162">Mittayksikkö</span><span class="sxs-lookup"><span data-stu-id="f2e09-162">Unit of measure</span></span>
+-   <span data-ttu-id="f2e09-163">Nimikkeen kuvaus</span><span class="sxs-lookup"><span data-stu-id="f2e09-163">Item description</span></span>
+-   <span data-ttu-id="f2e09-164">Koko ja sijainti</span><span class="sxs-lookup"><span data-stu-id="f2e09-164">Size and Location</span></span>
 
-<span data-ttu-id="fc808-165">Yllä olevassa taulukossa määritettyjen varastosovelluksen kenttäprioriteettien perusteella seuraavat 3 tietoriviä näytetään tehtäväsivulla:</span><span class="sxs-lookup"><span data-stu-id="fc808-165">Based on the warehouse app field priority set up in the table above, the following 3 rows of information will be displayed on the task page:</span></span>
+<span data-ttu-id="f2e09-165">Yllä olevassa taulukossa määritettyjen varastosovelluksen kenttäprioriteettien perusteella seuraavat 3 tietoriviä näytetään tehtäväsivulla:</span><span class="sxs-lookup"><span data-stu-id="f2e09-165">Based on the warehouse app field priority set up in the table above, the following 3 rows of information will be displayed on the task page:</span></span>
 
--   <span data-ttu-id="fc808-166">Rivi 1: Nimike, Määrä, Mittayksikkö</span><span class="sxs-lookup"><span data-stu-id="fc808-166">Row 1: Item, Quantity, Unit of measure</span></span>
--   <span data-ttu-id="fc808-167">Rivi 2: Nimikkeen kuvaus</span><span class="sxs-lookup"><span data-stu-id="fc808-167">Row 2: Item description</span></span>
--   <span data-ttu-id="fc808-168">Rivi 3: koko</span><span class="sxs-lookup"><span data-stu-id="fc808-168">Row 3: Size</span></span>
+-   <span data-ttu-id="f2e09-166">Rivi 1: Nimike, Määrä, Mittayksikkö</span><span class="sxs-lookup"><span data-stu-id="f2e09-166">Row 1: Item, Quantity, Unit of measure</span></span>
+-   <span data-ttu-id="f2e09-167">Rivi 2: Nimikkeen kuvaus</span><span class="sxs-lookup"><span data-stu-id="f2e09-167">Row 2: Item description</span></span>
+-   <span data-ttu-id="f2e09-168">Rivi 3: koko</span><span class="sxs-lookup"><span data-stu-id="f2e09-168">Row 3: Size</span></span>
 
-<span data-ttu-id="fc808-169">Jäljellä olevat metatiedot, esimerkiksi sijainti, ei näy tehtäväsivulla, mutta kylläkin tietosivulla.</span><span class="sxs-lookup"><span data-stu-id="fc808-169">The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page.</span></span> <span data-ttu-id="fc808-170">Lisätietoja ja esimerkkejä käyttöliittymästä saat blogikirjoituksesta [Finance and Operationsin varastointisovelluksen julkaisu](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).</span><span class="sxs-lookup"><span data-stu-id="fc808-170">To learn more and see examples of the user interface, refer to the blog post [Announcing Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).</span></span>
+<span data-ttu-id="f2e09-169">Jäljellä olevat metatiedot, esimerkiksi sijainti, ei näy tehtäväsivulla, mutta kylläkin tietosivulla.</span><span class="sxs-lookup"><span data-stu-id="f2e09-169">The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page.</span></span> <span data-ttu-id="f2e09-170">Lisätietoja ja esimerkkejä käyttöliittymästä saat blogikirjoituksesta [Finance and Operationsin varastointisovelluksen julkaisu](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).</span><span class="sxs-lookup"><span data-stu-id="f2e09-170">To learn more and see examples of the user interface, refer to the blog post [Announcing Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="fc808-171">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="fc808-171">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="f2e09-171">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="f2e09-171">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="fc808-172">Microsoft Dynamics 365 for Finance and Operationsin asentaminen ja määrittäminen – varastointi</span><span class="sxs-lookup"><span data-stu-id="fc808-172">Install and configure Microsoft Dynamics 365 for Finance and Operations – Warehousing</span></span>](install-configure-warehousing-app.md)
-
-
-
+[<span data-ttu-id="f2e09-172">Microsoft Dynamics 365 for Finance and Operationsin asentaminen ja määrittäminen – varastointi</span><span class="sxs-lookup"><span data-stu-id="f2e09-172">Install and configure Microsoft Dynamics 365 for Finance and Operations – Warehousing</span></span>](install-configure-warehousing-app.md)
