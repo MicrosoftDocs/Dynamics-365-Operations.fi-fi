@@ -1,6 +1,6 @@
 ---
 title: Puhelinkeskuksen kanavien määrittäminen
-description: Tässä ohjeaiheessa on tietoja siitä, kuinka voit käsitellä puhelinkeskusten tilauksia käyttämällä Microsoft Dynamics 365 for Retailissa.
+description: Tässä ohjeaiheessa on tietoja siitä, kuinka voit käsitellä puhelinkeskusten tilauksia käyttämällä Dynamics 365 Retailissa.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549356"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024818"
 ---
 # <a name="set-up-call-center-channels"></a>Puhelinkeskuskanavien määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Yritys voi määrittää useita puhelinkeskuskanavia Microsoft Dynamics 365 for Retailissa. Puhelinkeskukset määritetään valitsemalla **Retail** \> **Kanavat** \> **Puhelinkeskukset** \> **Kaikki puhelinkeskukset**. Ne ovat yrityskohtaisia.
+Yritys voi määrittää useita puhelinkeskuskanavia Dynamics 365 Retailissa. Puhelinkeskukset määritetään valitsemalla **Retail** \> **Kanavat** \> **Puhelinkeskukset** \> **Kaikki puhelinkeskukset**. Ne ovat yrityskohtaisia.
 
 Kun uusi puhelinkeskuskanava luodaan, sille määritetään järjestelmällisesti toimintayksikkönumero. Koska puhelinkeskukset luodaan toimintayksiköinä, käyttäjät voivat linkittää puhelinkeskuskanavat moniin Retail-ominaisuuksiin, kuten valikoimiin, luetteloihin ja tiettyihin toimitustapoihin.
 
@@ -76,6 +76,8 @@ Kun määritä puhelinkeskuskanavan, käyttäjät on linkitettävä puhelinkesku
 
 Oletusarvoisesti myyntilauksen otsikon **Vähittäismyynti**-merkintä on käytössä kaikissa puhelinkeskuksen käyttäjien luomissa tilauksissa. Tilaukset voivat sitten käyttää järjestelmän vähittäismyyntikohtaisia hinta- ja kampanja-alennusominaisuuksia.
 
-Käyttäjät, joita ei ole linkitetty puhelinkeskuskanavaan, käyttävät Microsoft Dynamics 365 for Finance and Operationsin tilaustenkäsittelyn perusominaisuuksia. Myyntitilauksen käsittelylomakkeen kautta annettavia tilauksia ei tunnisteta järjestelmällisesti vähittäismyyntitilauksiksi. Lisäksi mitkään tilauksen viimeistelyn käsittelysäännöt, vähittäismyynnin hinnoittelulogiikka tai muut tilauksen tarkistukset, jotka voidaan määrittää puhelinkeskuskanavan määrityksissä tai puhelinkeskuksen järjestelmäparametreissa, eivät koske tällaisten käyttäjien antamia tällaisia tilauksia.
+
+Käyttäjät, joita ei ole linkitetty puhelinkeskuskanavaan, käyttävät Microsoft Dynamics 365 Financen tilaustenkäsittelyn perusominaisuuksia. Myyntitilauksen käsittelylomakkeen kautta annettavia tilauksia ei tunnisteta järjestelmällisesti vähittäismyyntitilauksiksi. Lisäksi mitkään tilauksen viimeistelyn käsittelysäännöt, vähittäismyynnin hinnoittelulogiikka tai muut tilauksen tarkistukset, jotka voidaan määrittää puhelinkeskuskanavan määrityksissä tai puhelinkeskuksen järjestelmäparametreissa, eivät koske tällaisten käyttäjien antamia tällaisia tilauksia.
+
 
 Kun puhelinkeskuskanavan määritykset on tehty ja kanavan käyttäjät määritetty, varmista järjestelmä toimiminen odotetulla tavalla tarkistamalla, että kaikki pakolliset puhelinkeskuksen parametrit on määritetty kohdassa **Retail** \> **Kanavan asetukset** \> **Puhelinkeskuksen asetukset** \> **Puhelinkeskuksen parametrit**. Muista määrittää myös liittyvät numerosarjat.

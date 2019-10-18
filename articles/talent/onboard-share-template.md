@@ -1,6 +1,6 @@
 ---
-title: Sisällön jakaminen muiden osallisten kanssa Dynamics 365 for Talent - Onboardissa
-description: Tässä ohjeaiheessa käsitellään perehdytysoppaiden ja mallien jakamista muiden osallisten kanssa Microsoft Dynamics 365 for Talent - Onboard -sovelluksessa.
+title: 'Sisällön jakaminen muiden osallisten kanssa Dynamics 365 Talent: Onboardissa'
+description: 'Tässä ohjeaiheessa käsitellään perehdytysoppaiden ja mallien jakamista muiden osallisten kanssa Microsoft Dynamics 365 Talent: Onboard -sovelluksessa.'
 author: andreabichsel
 manager: ''
 ms.date: 05/20/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8524f9ec502bed829522ab90c7c7976c2814a1b6
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: d07879ff31127788ebfee5bc8b42442a26987651
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731448"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010749"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-for-talent-onboard"></a>Sisällön jakaminen muiden osallisten kanssa Dynamics 365 for Talent: Onboardissa
+# <a name="share-content-with-other-contributors"></a>Sisällön jakaminen muiden osallisten kanssa
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboardissa voi jakaa perehdytysoppaita ja malleja muiden osallisten kanssa, jotta he voivat tarkistaa asiakirjoja ja tehdä muutoksia.
+Microsoft Dynamics 365 Talent: Onboardissa voi jakaa perehdytysoppaita ja malleja muiden osallisten kanssa, jotta he voivat tarkistaa asiakirjoja ja tehdä muutoksia.
 
 ## <a name="share-an-onboarding-guide-with-other-contributors"></a>Perehdytysoppaan jakaminen muiden osallisten kanssa
 

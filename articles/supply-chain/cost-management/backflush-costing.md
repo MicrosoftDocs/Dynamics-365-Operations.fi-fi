@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 484bac74ccb498f0b006458f5e6d8fb0e9461a8f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be4dbadaeac747953af44236156453edc596fcd5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556066"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018109"
 ---
 # <a name="backflush-costing"></a>Jälkikustannuslaskenta
 
@@ -61,11 +61,11 @@ Tuotantovirrasta valmistettujen tuotteiden tuoterakennelaskelman on perustuttava
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>Laskelma, joka perustuu tuotantovirtaan
 
-Microsoft Dynamics 365 for Finance and Operationsin Lean-valmistus on reittiriippumaton. Tuotantovirrasta valmistettavien tuotteiden kustannuslaskenta voi perustua tuotantovirtaan itseensä. Ennen laskennan suorittamista on luotava kanban-sääntö, joka valmistaa tuotteen tuotantovirrasta. Jos tuotteen voi valmistaa useammasta saman sijainnin tuotantovirrasta laskentapäivänä, voit valita tuotantovirran tuoterakenteen laskelmaan. Voit määrittää oletustuotantovirran kullekin nimikkeelle **Oletustuotantovirta**-sivulla. Jos saman tuotantovirran samalle tuotteelle, joka on aktiivinen laskentapäivänä, on useita kanban-sääntöjä, laskenta valitsee ensimmäisen kanban-säännön, joka on aktiivinen laskennalla.
+Dynamics 365 Supply Chain Managementin Lean-valmistus on reittiriippumaton. Tuotantovirrasta valmistettavien tuotteiden kustannuslaskenta voi perustua tuotantovirtaan itseensä. Ennen laskennan suorittamista on luotava kanban-sääntö, joka valmistaa tuotteen tuotantovirrasta. Jos tuotteen voi valmistaa useammasta saman sijainnin tuotantovirrasta laskentapäivänä, voit valita tuotantovirran tuoterakenteen laskelmaan. Voit määrittää oletustuotantovirran kullekin nimikkeelle **Oletustuotantovirta**-sivulla. Jos saman tuotantovirran samalle tuotteelle, joka on aktiivinen laskentapäivänä, on useita kanban-sääntöjä, laskenta valitsee ensimmäisen kanban-säännön, joka on aktiivinen laskennalla.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Reittiin perustuva laskenta
 
-Reittiin perustuva laskenta on yhtä kelvollinen kuin tuotantovirtaan perustuva laskenta. Reittiin perustuva laskenta ei kuitenkaan käytä Lean-valmistuksen kustannuslaskennan toimintoja. Reitin tulisi käyttää resurssiryhmissä resurssin tarpeita. Systemaattisen varianssin välttämiseksi sen tulisi myös käyttää samoja työsoluja tai vähintään samoja kustannusluokkia. Vältä määrityksen ja määrän kustannusluokkia myös tässä tapauksessa. Ne eivät tarjoa kustannuslaskennalle Lean-valmistuksen jälkikustannuslaskentaa eritellympää tulosta. Valitse kustannuslaskennassa käytettävä vaihtoehto (tuotantovirta vai reitti) kustannuserittelyn tulosten perusteella. Lähempänä oikeaa tilannetta ja vähemmän varianssia tuottava versio on keskimäärin parempi vaihtoehto. Lean-valmistusympäristössä, jossa tuote valmistetaan yhdessä tuotantovirrassa yhden kanban-säännön alaisena, tuotantovirtaan perustuva laskenta on luultavasti tarkempi. Tuote, joka voidaan valmistaa Lean-valmistuksen ja tuotantotilausten kautta samassa toimipisteessä, tai jolla voi olla useita tuotantovirtoja tai useita kanban-sääntöjä samassa virrassa voi saada tarkempia tuloksia reittiin perustuvan laskennan perusteella, jos se on erityisesti luotu kustannuslaskentaa varten tuotannon sijaan. Tuotantovirran laskentaa on käytettävä alihankintaa sisältävien tuotteiden laskennassa. Laskentamallit alihankinnalle tuotantotilausten kautta ja alihankinnalle Lean-valmistuksessa käyttävät eri lähestymistapoja Microsoft Dynamics 365 for Finance and Operationsissa. Lean-valmistuksessa esitellään uusi kustannusryhmätyyppi, **Suora ulkoistus**, joka koskee alihankintapalveluiden laskentaa.
+Reittiin perustuva laskenta on yhtä kelvollinen kuin tuotantovirtaan perustuva laskenta. Reittiin perustuva laskenta ei kuitenkaan käytä Lean-valmistuksen kustannuslaskennan toimintoja. Reitin tulisi käyttää resurssiryhmissä resurssin tarpeita. Systemaattisen varianssin välttämiseksi sen tulisi myös käyttää samoja työsoluja tai vähintään samoja kustannusluokkia. Vältä määrityksen ja määrän kustannusluokkia myös tässä tapauksessa. Ne eivät tarjoa kustannuslaskennalle Lean-valmistuksen jälkikustannuslaskentaa eritellympää tulosta. Valitse kustannuslaskennassa käytettävä vaihtoehto (tuotantovirta vai reitti) kustannuserittelyn tulosten perusteella. Lähempänä oikeaa tilannetta ja vähemmän varianssia tuottava versio on keskimäärin parempi vaihtoehto. Lean-valmistusympäristössä, jossa tuote valmistetaan yhdessä tuotantovirrassa yhden kanban-säännön alaisena, tuotantovirtaan perustuva laskenta on luultavasti tarkempi. Tuote, joka voidaan valmistaa Lean-valmistuksen ja tuotantotilausten kautta samassa toimipisteessä, tai jolla voi olla useita tuotantovirtoja tai useita kanban-sääntöjä samassa virrassa voi saada tarkempia tuloksia reittiin perustuvan laskennan perusteella, jos se on erityisesti luotu kustannuslaskentaa varten tuotannon sijaan. Tuotantovirran laskentaa on käytettävä alihankintaa sisältävien tuotteiden laskennassa. Tuotantotilausten kautta tapahtuvat alihankinnan laskentamallit ja Lean-valmistuksen alihankinta käyttävät eri lähestymistapoja. Lean-valmistuksessa esitellään uusi kustannusryhmätyyppi, **Suora ulkoistus**, joka koskee alihankintapalveluiden laskentaa.
 
 ## <a name="material-consumption"></a>Materiaalikulutus
 Kun materiaali kulutetaan varastosta keskeneräisiin töihin, materiaalin kustannus lisätään myös keskeneräisiin töihin sen todellisen vakiokustannuksen ryhmän mukaisesti. Tämä toiminto suoritetaan seuraavissa tilanteissa:
@@ -82,7 +82,7 @@ Tuotteita vastaanotetaan tuotantovirrasta seuraavissa tilanteissa:
 Tuotantovirrasta vastaanotetut tuotteet vähennetään KET-tililtä.
 
 ## <a name="products-in-wip"></a>Keskeneräisissä töissä olevat tuotteet
-Microsoft Dynamics 365 for Finance and Operationsin Lean-valmistuksen KET-mallin avulla voit käyttää kanbanin materiaalin käsittely-yksikön tiloja keskeneräisiin töihin kuuluvan materiaalin, puolivalmiiden ja valmiiden tuotteiden hallintaan.
+Lean-valmistuksen KET-mallin avulla voit käyttää kanbanin materiaalin käsittely-yksikön tiloja keskeneräisiin töihin kuuluvan materiaalin, puolivalmiiden ja valmiiden tuotteiden hallintaan.
 
 -   **Määritetty** - Kanban voi sisältää kulutettua materiaalia, joka on laskettu keskeneräisiin töihin.
 -   **Vastaanotettu** - Jos kanban viittaa viimeisimpään tehtävään, jossa **Päivitä varasto vastaanotettaessa** -asetus on **Ei**, se ilmaisee kokonaisen materiaalin käsittely-yksikön tuotteelle tai puolivalmiille tuotteelle, jota ei ole rekisteröity varastoon.

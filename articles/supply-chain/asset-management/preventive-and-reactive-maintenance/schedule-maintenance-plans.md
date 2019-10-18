@@ -3,7 +3,7 @@ title: Ajoita ylläpitosuunnitelmat
 description: Tässä ohjeaiheessa kerrotaan ylläpitosuunnitelmien ajoittamisesta resurssien hallinnassa.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b6e5bde83474fe8971e482af518f7cee23a2220
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 698888533bf503838f455585f61cc7afc7239b05
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875626"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922042"
 ---
 # <a name="schedule-maintenance-plans"></a>Ajoita ylläpitosuunnitelmat
 
@@ -49,11 +49,11 @@ Ennaltaehkäisevän kunnossapidon ajoituksessa luodaan käyttöomaisuuksien kale
 
 - Toiminnallisten sijaintien ylläpitosuunnitelmien ajoittamiseen liittyen: Jos päivität resurssin tyyppien, valmistajien ja mallien asetukset ylläpitosuunnitelmille **Kaikki toiminnalliset sijainnit** >  **Ylläpitosuunnitelmat** -pikavälilehdessä ja olet suunnitellut kunnossapitosuunnitelmat, aiemmin luodut kyseiseen toiminnalliseen sijaintiin liittyvät kunnossapitoaikataulun merkinnät poistetaan automaattisesti. Jotta voit luoda uusia kalenterimerkintöjä, jotka vastaavat toiminnallisen sijainnin päivitettyjä ylläpitosuunnitelman asetuksia, sinun on suoritettava kyseiselle toiminnalliselle sijainnille uusi ylläpitosuunnitelman aikataulu. Lisätietoja käyttöomaisuuden tyyppien, valmistajien ja mallien määrittämisestä toiminnallisissa sijainneissa on kohdassa [Luo toiminnalliset sijainnit](../functional-locations/create-functional-locations.md).
 
->*Esimerkki:* Haluat luoda huoltosuunnitelman tiettyä toiminnallista sijaintia varten, jolloin kaikki kyseiseen toimintapaikkaan määritetyt käyttökohteet sisällytetään valittuna aikana, kun ajoitat huoltosuunnitelmaa. Tässä tapauksessa luot huoltosuunnitelman ja valitset tietyn toimintosijainnin, mutta ET lisää huoltosuunnitelmaan mitään objekteja. Tuloksena on, että kun ajoitat kyseisen ylläpitosuunnitelman, kunnossapitoaikataulurivit luodaan kaikille kyseiseen toimintapaikkaan liittyville resursseille.
+>*Esimerkki:* Haluat luoda huoltosuunnitelman tiettyä toiminnallista sijaintia varten, jolloin kaikki kyseiseen toimintapaikkaan määritetyt käyttökohteet sisällytetään valittuna aikana, kun ajoitat huoltosuunnitelmaa. Tässä tapauksessa luot huoltosuunnitelman ja valitset tietyn toimintosijainnin, mutta ET lisää huoltosuunnitelmaan mitään resursseja. Tuloksena on, että kun ajoitat kyseisen ylläpitosuunnitelman, kunnossapitoaikataulurivit luodaan kaikille kyseiseen toimintapaikkaan liittyville resursseille.
 
 - Jos teet muutoksia käyttöomaisuuden tyyppeihin, valmistajiin tai malleihin kohdassa **Resurssityypit**, muutokset vaikuttavat vain uusiin käyttöomaisuuseriin, jotka käyttävät päivitettyä käyttöomaisuuslajia. Lue lisää käyttöomaisuustyyppien määrityksestä kohdassa [Resurssityypit](../setup-for-objects/object-types.md).  
 
-5. Aloita käyttöomaisuuksien ylläpitoaikataulumerkintöjen luominen valitsemalla **OK**. Luodut merkinnät näkyvät **Kaikki ylläpitoaikataulut** -luettelosivulla.
+5. Aloita käyttöomaisuuksien ylläpitoaikataulumerkintöjen luominen valitsemalla **OK**. Luodut merkinnät näkyvät **Kaikki ylläpitoaikataulut** -luettelosivulla. Seuraavassa kuvassa on esimerkki **Ajoita ylläpitosuunnitelmat** -valintaikkunasta.
 
 ![Kuva 1](media/09-preventive-maintenance.png)
 
@@ -75,3 +75,4 @@ Tässä kuvatut esimerkit osoittavat, että kaikki käyttöomaisuuserään tehdy
 ![Kuva 3](media/11-preventive-maintenance.png)
 
 ![Kuva 4](media/12-preventive-maintenance.png)
+

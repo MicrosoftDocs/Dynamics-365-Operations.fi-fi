@@ -1,6 +1,6 @@
 ---
 title: Vähittäismyynnin hintojen hallinta
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Retailin myyntihintojen luontiin ja hallintaan liittyviä käsitteitä.
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 Retailin myyntihintojen luontiin ja hallintaan liittyviä käsitteitä.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -17,18 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 813547f522f5c69920eadf9df61e7f01b13ecd36
-ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
+ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624786"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025215"
 ---
 # <a name="retail-sales-price-management"></a>Vähittäismyyntihintojen hallinta
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja myyntihintojen luonti- ja hallintaprosessista Microsoft Dynamics 365 for Retailissa. Aiheessa keskitytään tähän prosessiin liittyviin käsitteisiin ja siihen, mitä vaikutuksia erilaisilla määritysvaihtoehdoilla on myyntihintoihin.
+Tässä ohjeaiheessa on tietoja myyntihintojen luonti- ja hallintaprosessista Dynamics 365 Retailissa. Aiheessa keskitytään tähän prosessiin liittyviin käsitteisiin ja siihen, mitä vaikutuksia erilaisilla määritysvaihtoehdoilla on myyntihintoihin.
 
 ## <a name="terminology"></a>Termit
 

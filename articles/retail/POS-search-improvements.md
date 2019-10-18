@@ -1,6 +1,6 @@
 ---
 title: Ttuote- ja asiakashaku myyntipisteessä (POS)
-description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Microsoft Dynamics 365 for Retailin tuote- ja asiakashakuihin.
+description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Dynamics 365 Retailin tuote- ja asiakashakuihin.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: 60db9e9936f7728d76f5c7a0d0c31b33477c7c61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625639"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023679"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Ttuote- ja asiakashaku myyntipisteessä (POS)
 
@@ -99,7 +99,10 @@ Perinteinen asiakashaku voi kestää kauan, koska haku kohdistuu useisiin kentti
 
 ![Asiakashaun pikavalinnat](./media/SearchShortcutsPOS.png "Asiakashaun pikavalinnat")
 
-Järjestelmänvalvoja voi määrittää hakuehdot pikavalinnoiksi avaamalla **Vähittäismyynnin parametrit** -sivun Microsoft Dynamics 365 for Finance and Operationsin ja valitsemalla sitten **Myyntipisteen hakuehdot** -välilehdessä kaikki pikavalintoina näytettävät ehdot.
+
+
+Järjestelmänvalvoja voi määrittää hakuehdot pikavalinnoiksi avaamalla **Vähittäismyynnin parametrit** -sivun Microsoft Dynamics 365 Retailin ja valitsemalla sitten **Myyntipisteen hakuehdot** -välilehdessä kaikki pikavalintoina näytettävät ehdot.
+
 
 ![Haun pikavalintojen määrittäminen](./media/ConfigureShortcutsAX.png "Haun pikavalintojen määrittäminen")
 
@@ -111,6 +114,6 @@ Järjestelmänvalvoja voi määrittää hakuehdot pikavalinnoiksi avaamalla **V�
 > [!NOTE]
 > Valintalistaan lisättävä mukautettu ominaisuus ei vaikuta vakioasiakashaun algoritmiin. Asiakashakualgoritmi ei siis tee hakuja mukautetussa ominaisuudessa. Käyttäjät voivat käyttää mukautettua ominaisuutta haussa vain, jos kyseinen mukautettu ominaisuus on lisätty pikavalintoja tai jos oletushakualgoritmi on ohitettu.
 
-Microsoft Dynamics 365 for Retailin tulevassa versiossa jälleenmyyjät voivat määrittää myyntipisteessä oletushakutilaksi **Hae kaikista myymälöistä**. Tämä määritys voi olla hyödyllinen tilanteissa, joissa myyntipisteen ulkopuolella luotuja asiakkaita on haettava heti (esimerkiksi ennen jakelutyön ajamista). Uusi **Asiakkaan oletushakutila** -vaihtoehto on käytettävissä myyntipisteen toimintoprofiilissa. Jos sen arvoksi on määritetty **Käytössä**, oletushakutilana on **Hae kaikista myymälöistä**. Jokainen asiakashakuyritys tekee sitten reaaliaikaisen kutsun pääkonttoriin.
+Retailin tulevassa versiossa jälleenmyyjät voivat määrittää myyntipisteessä oletushakutilaksi **Hae kaikista myymälöistä**. Tämä määritys voi olla hyödyllinen tilanteissa, joissa myyntipisteen ulkopuolella luotuja asiakkaita on haettava heti (esimerkiksi ennen jakelutyön ajamista). Uusi **Asiakkaan oletushakutila** -vaihtoehto on käytettävissä myyntipisteen toimintoprofiilissa. Jos sen arvoksi on määritetty **Käytössä**, oletushakutilana on **Hae kaikista myymälöistä**. Jokainen asiakashakuyritys tekee sitten reaaliaikaisen kutsun pääkonttoriin.
 
 Odottamattomat suorituskykyongelmien estämiseksi tämä määritys on piilotettu versioversiotestaukseen nimeltä **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Tämän vuoksi **Asiakkaan oletushakutila** -asetuksen näyttäminen käyttöliittymässä edellyttää, että jälleenmyyjä luo tukipalvelupyynnön käyttäjän hyväksyntätestaus- ja tuotantoympäristöjä varten. Kun pyyntö on vastaanotettu, kehitysryhmä varmistaa yhteistyössä vähittäismyyjän kanssa, että tämän testaus tapahtuu muussa kuin tuotantoympäristössä, sillä tällä tavoin voidaan arvioida suorituskyly ja ottaa käyttöön mahdollisesti tarvittavat optimoinnit.

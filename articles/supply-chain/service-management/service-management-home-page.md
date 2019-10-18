@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20751acfc012e2ac1eef99c778c5b0353baf1827
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: dd2f27c5797fbd34674e39013ed3e0e40cdb28b2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865846"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251129"
 ---
 # <a name="service-management-overview"></a>Huoltohallinnan yleiskatsaus
 
@@ -48,7 +48,7 @@ Käytä raportointityökaluja huoltotilausten marginaalien ja ylläpitosopimusta
 
 ## <a name="business-processes"></a>Liiketoimintaprosessit
 
-Seuraavassa kaaviossa on kuvattu **huoltohallinnan** korkean tason liiketoimintaprosessit, ja se näyttää, missä huoltoprosessit integroituvat muiden Microsoft Dynamics 365 for Finance and Operations -moduulien kanssa.
+Seuraavassa kaaviossa on kuvattu **huoltohallinnan** korkean tason liiketoimintaprosessit, ja se näyttää, missä huoltoprosessit integroituvat muiden moduulien kanssa.
 
 [![Huoltohallinta-moduulin liiketoimintaprosessikaavio](./media/sm_home_page.gif)](./media/sm_home_page.gif)
 

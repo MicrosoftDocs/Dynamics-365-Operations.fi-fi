@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f03b7fa073c4e5338b7b5681ba7b8c9fe00a657b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 95fe394d22f9fe81511c230a2cf7b8ddf00d896f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875624"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250826"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Työtilaukset ja käyttöomaisuuserät
 
@@ -33,7 +33,7 @@ ms.locfileid: "1875624"
 [!include [banner](../../includes/preview-banner.md)]
 
 
-Resurssien hallinnassa resurssit voivat liittyä käyttöomaisuuseriin, ja voit luoda työtilauksia kyseisille resursseille. Jos käytät tätä toimintoa, voit saada kattavan yleiskuvan käyttöomaisuudesta, siihen liittyvistä investointiprojekteista sekä **Projektinhallinta ja kirjanpito** -moduulin investointiprojekteihin rekisteröidyistä kustannuksista sekä **Käyttöomaisuuserät**-moduulissa Dynamics 365 for Finance and Operationsissa.
+Resurssien hallinnassa resurssit voivat liittyä käyttöomaisuuseriin, ja voit luoda työtilauksia kyseisille resursseille. Jos käytät tätä toimintoa, voit saada kattavan yleiskuvan käyttöomaisuuksista, niihin liittyvistä investointiprojekteista sekä **Projektinhallinta ja kirjanpito** -moduulin ja **Käyttöomaisuuserät**-moduulin investointiprojekteihin rekisteröidyistä kustannuksista.
 
 >[!NOTE]
 >**Käyttöomaisuus erän numero** -kenttä täytetään työtilauksen työprojektissa vain, jos työtilauksen työprojektin projektityypiksi on valittu "investointi".

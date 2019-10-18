@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 449a1f574cd32860cbdc2e43f21be1d3d692768f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553550"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025099"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Vähittäismyynnin kuponkien määrittäminen
 
@@ -37,10 +37,10 @@ Kukin kuponki liittyy yhteen vähittäismyynnin alennukseen. Alennukseen liitety
 
 Kupongit ovatkin siis eräänlainen ylimääräinen oikeellisuustarkistus muiden vähittäismyynnin alennusten lisäksi. Kuponki sisältää tarvittavat kuponkikoodit ja viivakoodit sekä kyseisteen koodien päivämääräalueet. Kupongissa voi olla myös valinnaisia käyttörajoituksia ja asiakkaalta edellytettäviä ominaisuuksia. Alennus ilmoittaa tuotejoukon, jota kuponki koskee. Alennusten hintaryhmät ilmoittavat asiakas-, kanava- tai luettelojoukon, jota kuponki koskee.
 
-Alennus ja kuponki luodaan kuponkia varten erikseen. Ne linkitetään sitten valitsemalla alennus Microsoft Dynamics 365 for Retailin kuponkisivulla.
+Alennus ja kuponki luodaan kuponkia varten erikseen. Sitten linkität ne valitsemalla alennuksen kuponkisivulta Retailissa.
 
 > [!NOTE]
-> Kun kuponki on linkitetty alennukseen, monet Microsoft Dynamics 365 for Retailin alennussivun kentät muuttuvat vain luku -muotoisiksi, sillä niitä hallitaan kupongin asetuksista. Niitä ovat esimerkiksi tilan ja vakiopäivämääräalueen kentät.
+> Kun kuponki on linkitetty alennukseen, monet Retailin alennussivun kentät muuttuvat Vain luku -muotoisiksi, sillä niitä hallitaan kupongin asetuksista. Niitä ovat esimerkiksi tilan ja vakiopäivämääräalueen kentät.
 
 ### <a name="limited-use-coupons"></a>Kupongit, joiden käyttö on rajoitettua
 
@@ -75,7 +75,7 @@ Ennen kuin kupongin määrittämistä on määritettävä kupongin viivakoodi ja
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Osittaisten päivitysten vaikutus kuponkeihin
 
-Kuponkitoiminto koostuu useista erillisistä Dynamics 365 for Retailin ominaisuuksista. Microsoft Dynamics 365 for Retail Headquarters (HQ) ja kanava voidaan päivittää osoittein kaikissa komponenteissa. Tämän vuoksi on tärkeää, että ymmärrät, miten osittaiset päivitykset vaikuttavat kuponkitoimintoon kokonaisuudessaan.
+Kuponkitoiminto koostuu useista erillisistä ominaisuuksista. Dynamics 365 Retail Headquarters (HQ) ja kanava voidaan päivittää osoittein kaikissa komponenteissa. Tämän vuoksi on tärkeää, että ymmärrät, miten osittaiset päivitykset vaikuttavat kuponkitoimintoon kokonaisuudessaan.
 
 - **HQ päivitetään osittain, mutta Retail-palvelinta ja POS:stä ei päivitetä.** HQ-päivityksessä kuponki- ja alennussivut päivitetään samoin kuin vähittäismyynnin hinnoitteluohjelma. Jos vain toinen kahdesta komponentista päivitetään, osa Retailin sivuista ei vastaa hinnan laskentatietoja. Niinpä alennuksia laskettaessa voi esiintyä odottamattomia laskettuja alennuksia tai virheitä.
 - **HQ päivitetään, mutta Retail-palvelinta ja POS:stä ei päivitetä (N-1).** Koska kaikkia vähittäismyymälöitä ei voi päivittää samalla kertaa, HQ kannattaa päivittää ennen myymälöiden päivitystä. N-1-skenaariossa kuponkeihin liittyvä uusi toiminto ei ole vielä päivittämättömien myymälöiden käytössä. Kuponkitoiminnossa otetaan esimerkiksi käyttöön poissulkemisrivit. Jos poissulkemisrivejä käytetään alennuksessa, aiempaa versiota käyttävät myymälät eivät voi käyttää niitä.

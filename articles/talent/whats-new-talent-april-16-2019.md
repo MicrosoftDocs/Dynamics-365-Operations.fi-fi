@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 16, 2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 16, 2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/16/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: adf8f470b00a565c62a27f857d490c6c000b21d8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 0781a479ebf37334d8eba18ea6d69d7cfb9db9ea
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517875"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024134"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-16-2019"></a>Dynamics 365 for Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 16, 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Dynamics 365 Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 16, 2019)
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="changes-in-attract"></a>Attractin muutokset
 
@@ -39,7 +39,7 @@ Voit nyt jäljittää ehdokkaisiin, avoimiin työpaikkoihin ja työsovelluksiin 
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
 
-Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboardin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.
 
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 
@@ -47,11 +47,11 @@ Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2239. Suluissa olev
 
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Kompensaatioalue, kompensaatiotaso, edunvaihtoehto ja osaamisaluetyypin Common Data Service -entiteetit, jotka on päivitetty sisältämään asiakaskentän tuen
 
-Tässä julkaisussa nämä Common Data Service -entiteetit on päivitetty sisältämään mahdollisuuden sisällyttää mukautettu kenttä, joka on lisätty Talentin (Core HR) kautta.
+Tässä julkaisussa nämä Common Data Service -entiteetit on päivitetty sisältämään mahdollisuuden sisällyttää mukautettu kenttä, joka on lisätty Talent: Core HR:n kautta.
 
 ### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Uusi Common Data Service -entiteetin tuki: kompensaation hyvityssäännöt, kompensaation muuttujasuunnitelma, muuttuva kompensaatio
 
-Tässä versiossa kompensaation hyvityssäännöt, kompensaation muuttujasuunnitelma ja muuttuvat kompensaatioentiteetit on lisätty Common Data Serviceen. Nämä entiteetit tukevat myös Talentin (Core HR) lisättyjä mukautettuja kenttiä.
+Tässä versiossa kompensaation hyvityssäännöt, kompensaation muuttujasuunnitelma ja muuttuvat kompensaatioentiteetit on lisätty Common Data Serviceen. Nämä entiteetit tukevat myös Talent: Core HR:n kautta lisättyjä mukautettuja kenttiä.
 
 ### <a name="powerbi-refresh-issues-314342"></a>PowerBI-päivitysongelmat (314342)
 
@@ -95,6 +95,6 @@ Tällä muutoksella tunnistetaan duplikaatit, kun syötät nimikenttiä, ja tila
 
 ### <a name="email-support-for-alerts"></a>Sähköpostituki hälytyksille
 
-Platform update 25:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköpostiviestejä yhteystietoihin, kun tapahtuma käynnistyy.
+Finance and Operations -käyttöympäristöpäivitys 25:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköposti-ilmoituksia yhteyshenkilöille, kun tapahtuma käynnistyy.
 
 
