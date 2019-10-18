@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 00ea121385d74b3f8992d34fb485a8232325ea3f
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2e57a410c0c7a73d8ab9e14254fe107d5e5c10db
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835739"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251618"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Myyntitilausten mobiilityötila
 
@@ -31,7 +31,7 @@ ms.locfileid: "1835739"
 
 Tässä ohjeaiheessa on tietoja **Myyntitilaukset**-mobiilityötilasta. Tämän työtilan avulla pysyt ajan tasalla myyntitilauksista milloin ja missä tahansa. 
 
-Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations Mobile -sovelluksella.
+Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations -mobiilisovelluksen kanssa.
 
 ## <a name="overview"></a>Yleiskuvaus
 **Myyntitilaukset** -mobiilin työtilan avulla voit tarkastella kunkin myyntitilauksen yksityiskohtaisia tietoja. Näihin tietoihin kuuluvat tilauksen tila, asiakkaan yhteystiedot ja tilauksen vastaanottajan yhteystiedot. **Myyntitilausten** mobiilityötilassa on pikanäyttö myyntitilauksista. Voit tarkastella myyntitilauksia asiakaskohtaisesti, näyttää kaikki myyntitilaukset tai tarkastella yksittäisen myyntitilauksen tietoja. 
@@ -83,8 +83,8 @@ Tässä näkymässä on asiakaskohtainen luettelo myyntitilauksista.
 ## <a name="prerequisites"></a>Edellytykset
 Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations 
-Jos Dynamics 365 for Finance and Operations on otettu käyttöön organisaatiossa, järjestelmänvalvojan on julkaistava **Myyntitilaukset**-mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Managementin käytön edellytykset 
+Jos Supply Chain Management on otettu käyttöön organisaatiossasi, järjestelmänvalvojan on julkaistava **Myyntitilaukset**-mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Dynamics 365 for Operationsin versio 1611 ja platform update 3 tai uudempi
 Jos organisaatiossa on otettu käyttöön Dynamics 365 for Operationsin versio 1611 ja platform update 3 tai uudempi, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
@@ -120,7 +120,7 @@ Jos organisaatiossa on otettu käyttöön Dynamics 365 for Operationsin versio 1
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
-Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
+Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)

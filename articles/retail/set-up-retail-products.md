@@ -1,6 +1,6 @@
 ---
 title: Vähittäismyyntituotteiden määrittäminen
-description: Tässä artikkelissa käsitellään vähittäiskaupan tuotteiden määrittämistä Microsoft Dynamics 365 for Retailissa.
+description: Tässä artikkelissa käsitellään vähittäiskaupan tuotteiden määrittämistä Dynamics 365 Retailissa.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,22 +19,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 991546424a95463315eaa73c2776d0defe66def5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 74fa3a87ac2993adca3edf003bbc39371ce8e289
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546253"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024772"
 ---
 # <a name="set-up-retail-products"></a>Vähittäismyyntituotteiden määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa käsitellään vähittäiskaupan tuotteiden määrittämistä Microsoft Dynamics 365 for Retailissa.
+Tässä artikkelissa käsitellään vähittäiskaupan tuotteiden määrittämistä Dynamics 365 Retailissa.
 
-Sinun on luotava ja määritettävä tuotteet Dynamics 365 for Retailissa, ennen kuin tuotteita voi tarjota myytäväksi uudelleen vähittäismyyntikanavissa. Vähittäismyynti-osiossa päätuotteeseen voidaan luoda koko organisaatiota koskevia tuotteita käyttämällä Dynamics 365 for Retailin tuotetoimintoja. Voit luoda tuotteet, määritellä tuotteen ominaisuudet ja määritteet ja liittää tuotteet vähittäismyynnin luokkahierarkioihin. Jos haluat tuoda tuotteet saataville vähittäismyyntikanavissa ja lisätä ne aktiiviseen valikoimaan, sinun täytyy vapauttaa tuotteet yrityksiin, joissa ne ovat käytettävissä. Voit määrittää tuotteet, joita myydään vähittäismyyntikanavissa, toimimalla seuraavasti.
+Sinun on luotava ja määritettävä tuotteet Dynamics 365 Retailissa, ennen kuin tuotteita voi tarjota myytäväksi uudelleen vähittäismyyntikanavissa. Retail luo organisaationlaajuiset tuotteet päätuotteessa. Voit luoda tuotteita, määrittää tuotteiden ominaisuuksia ja määritteitä sekä määrittää tuotteet vähittäismyyntiluokkahierarkioihin. Jos haluat tuoda tuotteet saataville vähittäismyyntikanavissa ja lisätä ne aktiiviseen valikoimaan, sinun täytyy vapauttaa tuotteet yrityksiin, joissa ne ovat käytettävissä. Voit määrittää tuotteet, joita myydään vähittäismyyntikanavissa, toimimalla seuraavasti.
 
-1. Määritä vähittäismyynnin tuotehierarkia. Käyttämällä Dynamics 365 for Retailin luokkahierarkiaominaisuuksia voit määrittää vähittäismyynnin luokkahierarkiat, joiden avulla voit ryhmitellä ja luokitella vähittäismyyntikanaviin jaeltavat tuotteet. Käyttäjän määrittämät ja järjestelmän määritteet voidaan määritellä luokkatasolla. Tämän jälkeen kaikki kyseiseen luokkaan määritetyt tuotteet perivät nämä määritteet. Luokkahierarkioita voidaan määritellä useita, ja kukin tuote voidaan määrittää useaan hierarkiaan. Yhden hierarkian sisällä kukin tuote voidaan kuitenkin määrittää vain yhteen luokkaan.
+1. Määritä vähittäismyynnin tuotehierarkia. Käyttämällä Retailin luokkahierarkiaominaisuuksia voit määrittää vähittäismyynnin luokkahierarkiat, joiden avulla voit ryhmitellä ja luokitella vähittäismyyntikanaviin jaeltavat tuotteet. Käyttäjän määrittämät ja järjestelmän määritteet voidaan määritellä luokkatasolla. Tämän jälkeen kaikki kyseiseen luokkaan määritetyt tuotteet perivät nämä määritteet. Luokkahierarkioita voidaan määritellä useita, ja kukin tuote voidaan määrittää useaan hierarkiaan. Yhden hierarkian sisällä kukin tuote voidaan kuitenkin määrittää vain yhteen luokkaan.
 2. Lisää tuotteita ja tuotevariantteja päätuotteeseen. Tuotteet, jotka lisätään päätuotteeseen, edustavat yleistä tuoteluetteloa. Voit lisätä tuotteita manuaalisesti yhden kerrallaan tai tuoda tuotetietoja toimittajilta.
 3. Vapauta tuotteet yrityksille. Vain tuotteet, jotka on vapautettu yrityksille, voidaan tuoda vähittäismyyntikanavien saataville. Kun määrität jotakin tuotetta ensimmäisen kerran, voit määrittää sen organisaationlaajuiselle tasolle. Tämän jälkeen voit valita yhden tai useamman yrityksen, jolle tuote vapautetaan. Tuote on tämän jälkeen usean vähittäismyyntikanavan käytettävissä organisaatiossa. Näillä toiminnoilla voit luoda yhden tuotteen kerrallaan, lisätä ja päivittää tuotemääritteitä ja -ominaisuuksia samassa paikassa ja jaella tuotteen organisaatiossa niille vähittäismyyntikanaville, joissa se on käytettävissä.
 4. Lisää tuotteet valikoimiin. Valikoiman edustaa vähittäismyyntikanavissa tarjottavien tuotteiden kokoelmaa. Voit määrittää yhden tai useamman valikoiman ja määrittää kunkin tuotteen yhteen tai useampaan valikoimaan. Jos haluat määrittää tuotteita vähittäismyyntikanaville, määritä valikoimat kyseisille vähittäismyyntikanaville. Luodessasi valikoimaa voit lisätä tuotteita, joita ei ole vielä vapautettu yritykselle. Tuotteet on kuitenkin julkaistava jollekin yritykselle, ennen kuin ne voidaan tuoda vähittäismyyntikanavien käyttöön.

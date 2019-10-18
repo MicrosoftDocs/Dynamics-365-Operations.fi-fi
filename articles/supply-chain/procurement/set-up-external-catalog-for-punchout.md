@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595608"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249381"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Siirtyminen sähköiseen hankintaan käytettyjen ulkoisten luetteloiden määrittäminen
 
@@ -37,12 +37,12 @@ Tiedonsiirron määrittääksesi toimittajan on luovutettava käyttöösi tietoj
 
 ## <a name="setting-up-an-external-catalog"></a>Ulkoisen luettelon asettaminen
 
-Ulkoisen luettelon avulla työntekijä, joka määrittää ostoehdotuksen, pitää ohjata ulkoiseen sivustoon valitsemaan tuotteita. Tuotteet, jotka työntekijä valitsee ulkoisesta luettelosta, palautetaan Dynamics 365 for Finance and Operationsiin ajan tasalla olevien hintatietojen kera, minkä jälkeen ne voidaan lisätä ostoehdotukseen. Tarkoituksena ei ole, että työntekijät voivat tehdä tilauksen ulkoisessa sivustossa. Ulkoista luetteloa määritettäessä on varmistettava, että sivuston, jota voidaan käyttää ulkoisesta luettelosta, tarkoituksena on tarjoustietojen kerääminen eikä todellisen tilauksen tekeminen.
+Ulkoisen luettelon avulla työntekijä, joka määrittää ostoehdotuksen, pitää ohjata ulkoiseen sivustoon valitsemaan tuotteita. Tuotteet, jotka työntekijä valitsee ulkoisesta luettelosta, palautetaan ajan tasalla olevien hintatietojen kera, minkä jälkeen ne voidaan lisätä ostoehdotukseen. Tarkoituksena ei ole, että työntekijät voivat tehdä tilauksen ulkoisessa sivustossa. Ulkoista luetteloa määritettäessä on varmistettava, että sivuston, jota voidaan käyttää ulkoisesta luettelosta, tarkoituksena on tarjoustietojen kerääminen eikä todellisen tilauksen tekeminen.
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Kun määrität ulkoisen toimittajan tuoteluettelon, tee seuraavat tehtävät:
 
 1. Määritä hankintaluokkahierarkia. Katso lisätietoja kohdasta [Aseta menettelytavat hankintaluokkien hierarkioille](tasks/set-up-policies-procurement-category-hierarchies.md).
-2. Rekisteröi toimittaja Finance and Operationsiin. Ennen kuin voit määrittää toimittajan ulkoisen luettelon sivustolle pääsyn konfiguraatiot, sinun on määritettävä toimittaja ja toimittajan yhteystiedot Microsoft Dynamics 365 -järjestelmässä. Lisäksi ulkoisen luettelon toimittaja on lisättävä valittuun hankintaluokkaan. Lisätietoja toimittajien rekisteröinnistä Microsoft Dynamics 365:een on kohdassa [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md). Tietoja toimittajien määrittämisestä hankintaluokkaan on kohdassa [Hyväksy toimittajia tiettyihin hankintaluokkiin](tasks/approve-vendors-specific-procurement-categories.md).
+2. Rekisteröi toimittaja Supply Chain Managementissa. Ennen kuin voit määrittää toimittajan ulkoisen luettelon sivustolle pääsyn konfiguraatiot, sinun on määritettävä toimittaja ja toimittajan yhteystiedot Microsoft Dynamics 365 -järjestelmässä. Lisäksi ulkoisen luettelon toimittaja on lisättävä valittuun hankintaluokkaan. Lisätietoja toimittajien rekisteröinnistä on kohdassa [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md). Tietoja toimittajien määrittämisestä hankintaluokkaan on kohdassa [Hyväksy toimittajia tiettyihin hankintaluokkiin](tasks/approve-vendors-specific-procurement-categories.md).
 3. Varmista, että mittayksiköt ja toimittajan käyttämä valuutta on määritetty. Mittayksikön luomista koskevia lisätietoja on kohdassa [Mittayksiköiden hallinta](../pim/tasks/manage-unit-measure.md).
 4. Konfiguroi ulkoinen toimittajaluettelo käyttämällä vaatimuksia toimittajan ulkoiselta luettelosivustolta. Lisätietoja tästä tehtävästä on kohdassa [Ulkoisen toimittajaluettelon määrittäminen](#configure-the-external-vendor-catalog).
 5. Testaa toimittajan tuoteluettelon konfiguraatiot ja tarkista, että asetukset ovat voimassa ja voit käyttää toimittajan ulkoista tuoteluetteloa. Vahvista toimenpiteet, joilla vahvistat määrittämäsi pyynnön asetussanomat, **Vahvista asetukset** -toiminnolla. Tämän sanoman pitää avata toimittajien ulkoinen luettelosivusto selainikkunaan. Vahvistettaessa et voi tilata nimikkeitä ja palveluja toimittajalta. Tilataksesi nimikkeet ja palvelut on siirryttävä toimittajaluetteloon ostoehdotuksesta.
@@ -90,9 +90,9 @@ Toimittajalla voi olla vaatimus ulkoisen elementin vastaanottamisesta määritys
 Saat lisätietoja cXML-protokollasta kohdasta [cXML.org website](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Takaisinlähetysviesti
-Takaisinlähetysviesti on viesti, joka saadaan toimittajalta, kun käyttäjä kirjautuu pois ulkoisesta sivustosta ja palaa Finance and Operationsiin. Takaisinlähetysviestejä ei voi määrittää. Sanomat perustuvat cXM-protokollamääritykseen. Seuraavassa on tietoja, jotka voivat kuulua takaisinlähetysviestiin, joka vastaanotetaan ehdotusrivillä:
+Takaisinlähetysviesti on viesti, joka saadaan toimittajalta, kun käyttäjä kirjautuu pois ulkoisesta sivustosta ja palaa Supply Chain Managementiin. Takaisinlähetysviestejä ei voi määrittää. Sanomat perustuvat cXM-protokollamääritykseen. Alla on tietoja, jotka voivat kuulua takaisinlähetysviestiin, joka vastaanotetaan ehdotusrivillä.
 
-| Toimittajalta vastaanotettu viesti | Kopioitu ostoehdotuksen riville Finance and Operationsissa|
+| Toimittajalta vastaanotettu viesti | Kopioitu ehdotusriville|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Määrä|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|Ulkoinen nimiketunnus|

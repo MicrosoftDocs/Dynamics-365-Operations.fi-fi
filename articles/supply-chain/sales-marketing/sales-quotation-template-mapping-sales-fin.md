@@ -1,6 +1,6 @@
 ---
-title: Myyntitarjouksien otsikoiden ja rivien synkronointi suoraan Salesista Finance and Operationsiin
-description: Tässä ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään synkronoimaan myyntitarjouksen otsikot ja rivit suoraan Microsoft Dynamics 365 for Salesista Microsoft Dynamics 365 for Finance and Operationsiin.
+title: Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Supply Chain Managementiin
+description: Tässä ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään synkronoimaan myyntitarjousten otsikot ja rivit suoraan Dynamics 365 Salesista Dynamics 365 Supply Chain Managementiin.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,33 +19,33 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 0894f4728d3f1df21db130cd9e87d9881726e7fa
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ddc81aa7ff462304cb6e22c919221217f7a1e019
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743368"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251244"
 ---
-# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-finance-and-operations"></a>Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Finance and Operationsiin
+# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Supply Chain Managementiin
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään synkronoimaan myyntitarjouksen otsikot ja rivit suoraan Microsoft Dynamics 365 for Salesista Microsoft Dynamics 365 for Finance and Operationsiin.
+Tässä ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään synkronoimaan myyntitarjousten otsikot ja rivit suoraan Dynamics 365 Salesista Dynamics 365 Supply Chain Managementiin.
 
 > [!NOTE]
 > Tutustu [Common Data Service for Appsin tietojen integrointiin](https://docs.microsoft.com/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
 
-Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Finance and Operations and Sales -esiintymien tietojen synkronoinnissa. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Finance and Operationsin ja Salesin välillä. Seuraavassa kuvassa kerrotaan, miten tiedot synkronoidaan Finance and Operations- ja Sales-sovelluksen välillä.
+Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Supply Chain Managementin and Salesin esiintymien tietojen synkronoinnissa. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Supply Chain Managementin ja Salesin välillä. Seuraava kuva näyttää, miten tiedot synkronoidaan Supply Chain Managementin ja Salesin välillä.
 
 [![Prospektista käteiseksi -ratkaisun tiedonkulku](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>Malli ja tehtävät
 
-Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkrontaessa myyntitarjousten otsikot ja rivit suoraan Salesista Finance and Operationsiin:
+Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoitaessa myyntitarjousten otsikot ja rivit suoraan Salesista Supply Chain Managementiin:
 
-- **Mallin nimi tietojen integroinnissa:** Myyntitarjoukset (Salesista Fin and Opsiin) – suora
+- **Mallin nimi tietojen integroinnissa:** Myyntitarjoukset (Salesista Supply Chain Managementiin) – suora
 - **Tehtävien nimet tietojen integrointiprojektissa:**
 
     - QuoteHeader
@@ -53,9 +53,9 @@ Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkrontaessa m
 
 Seuraavat synkronointitehtävät tarvitaan, ennen kuin myyntitilaukset otsikot ja rivit voidaan synkronoida:
 
-- Tuotteet (Fin and Opsista Salesiin) - suora
-- Tilit (Salesista Fin and Opsiin) - suora (jos käytössä)
-- Yhteyshenkilöistä asiakkaisiin (Salesista Fin and Opsiin) - suora (jos käytössä)
+- Tuotteet (Supply Chain Managementista Salesiin) - suora
+- Tilit (Salesista Supply Chain Managementiin) - Suora (jos käytössä)
+- Yhteyshenkilöistä asiakkaisiin (Salesista Supply Chain Managementiin) - Suora (jos käytössä)
 
 ## <a name="entity-set"></a>Yksikköjoukko
 
@@ -66,7 +66,7 @@ Seuraavat synkronointitehtävät tarvitaan, ennen kuin myyntitilaukset otsikot j
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
-Myyntitarjoukset luodaan Salesissa ja synkronoidaan Finance and Operationsiin.
+Myyntitarjoukset luodaan Salesissa ja synkronoidaan Supply Chain Managementiin.
 
 Salesin myyntitarjoukset synkronoidaan vain, jos seuraavat ehdot täyttyvät:
 
@@ -75,13 +75,13 @@ Salesin myyntitarjoukset synkronoidaan vain, jos seuraavat ehdot täyttyvät:
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Salesin ratkaisu prospektista käteiseksi
 
-**Sisältää vain ulkoisesti ylläpidettyjä tuotteita** -kenttä on lisätty **Quote**-yksikköön seuraamaan johdonmukaisesti, koostuuko myyntitarjous kokonaan ulkoisesti ylläpidetyistä tuotteista. Jos myyntitarjouksessa on vain ulkoisesti ylläpidettyjä tuotteita, tuotteita ylläpidetään Finance and Operationsissa. Tämä auttaa varmistamaan, ettet yritä synkronoida myyntitarjousrivejä sellaisten tuotteiden kanssa, joita Finance and Operations ei tunne.
+**Sisältää vain ulkoisesti ylläpidettyjä tuotteita** -kenttä on lisätty **Quote**-yksikköön seuraamaan johdonmukaisesti, koostuuko myyntitarjous kokonaan ulkoisesti ylläpidetyistä tuotteista. Jos myyntitarjouksessa on vain ulkoisesti ylläpidettyjä tuotteita, tuotteita ylläpidetään Supply Chain Managementissa. Tämä auttaa varmistamaan, ettet yritä synkronoida myyntitarjousrivejä sellaisten tuotteiden kanssa, joita Supply Chain Management ei tunne.
 
 Kaikki myyntitarjouksen tarjoustuotteet päivitetään myyntitarjouksen otsikon **Sisältää vain ulkoisesti ylläpidettyjä tuotteita** -tiedoilla. Nämä tiedot sijaitsevat **QuoteDetails**-yksikön **Tarjous sisältää vain ulkoisesti ylläpidettyjä tuotteita** -kentässä.
 
-Alennus lisätään tarjoustuotteeseen ja se synkronoidaan Finance and Operationsiin. Otsikon **Alennus**-, **Veloitukset**- ja **Vero**-kenttien hallinta perustuu Finance and Operationsin määrityksiin. Tämä määritys ei tue tällä hetkellä integrointimääritystä. Nykyisessä versiossa **Hinta**-, **Alennus**-, **Veloitus**- ja **Vero**-kenttiä ylläpidetään Finance and Operationsissa, jossa niitä myös käsitellään.
+Alennus lisätään tarjoustuotteeseen ja se synkronoidaan Supply Chain Managementiin. Otsikon **Alennus**-, **Veloitukset**- ja **Vero**-kenttien hallinta perustuu Supply Chain Managementin määrityksiin. Tämä määritys ei tue tällä hetkellä integrointimääritystä. Nykyisessä versiossa **Hinta**-, **Alennus**-, **Veloitus**- ja **Vero**-kenttiä ylläpidetään Supply Chain Managementissa, jossa niitä myös käsitellään.
 
-Seuraavat kentät ovat Salesissa vain luku -muotoisia, koska arvoja ei synkronoida Finance and Operationsiin:
+Seuraavat kentät ovat Salesissa vain luku -muotoisia, koska arvoja ei synkronoida Supply Chain Managementiin:
 
 - Myyntitarjouksen otsikon vain luku -kentät: **Alennusprosentti**, **Alennus** ja **Rahdin summa**
 - Tarjoustuotteiden vain luku -kentät: **Vero**
@@ -111,20 +111,20 @@ Seuraavat asetukset tulee päivittää ennen myyntitarjousten synkronointia.
 
 #### <a name="quoteline"></a>QuoteLine
 
-- Varmista, että Finance and Operationsin **SalesUnitSymbol**-kohdassa on vaadittu arvomääritys.
+- Varmista, että Supply Chain Managementin **SalesUnitSymbol**-kohdassa on vaadittu arvomääritys.
 - Varmista, että Salesissa on määritetty pakolliset yksiköt.
 
     **oumid.name**-kohdan malliarvoksi, jolla on arvomääritys, on määritetty **SalesUnitSymbol**.
 
-- Valinnainen: Kun lisäät seuraavat yhdistämismääritykset, voit varmistaa, että myyntitarjouksen rivit tuodaan Finance and Operationsiin, jos asiakkaalla tai tuotteella ei ole oletustietoja:
+- Valinnainen: Kun lisäät seuraavat yhdistämismääritykset, voit varmistaa, että myyntitarjouksen rivit tuodaan Supply Chain Managementiin, jos asiakkaalla tai tuotteella ei ole oletustietoja:
 
-    - **SiteId** – Toimipaikka on pakollinen, jotta tarjoukset ja myyntitilausrivit voidaan luoda Finance and Operationsissa. **SiteId**-oletusmalliarvoa ei ole.
-    - **WarehouseId** – Varasto on pakollinen, jotta tarjoukset ja myyntitilausrivit voidaan käsitellä Finance and Operationsissa. **WarehouseId**-oletusmalliarvoa ei ole.
+    - **SiteId** – Toimipaikka on pakollinen, jotta tarjoukset ja myyntitilausrivit voidaan luoda Supply Chain Managementissa. **SiteId**-oletusmalliarvoa ei ole.
+    - **WarehouseId** – Varasto on pakollinen, jotta tarjoukset ja myyntitilausrivit voidaan käsitellä Supply Chain Managementissa. **WarehouseId**-oletusmalliarvoa ei ole.
 
 ## <a name="template-mapping-in-data-integrator"></a>Mallin yhdistäminen tietojen integrointiohjelmassa
 
 > [!NOTE]
-> - **Alennus**-, **Veloitukset**- ja **Vero**-kenttien hallinta perustuu monimutkaisiin Finance and Operationsin määrityksiin. Tämä määritys ei tue tällä hetkellä integrointimääritystä. Nykyisessä versiossa **Hinta**-, **Alennus**-, **Veloitus**- ja **Vero**-kenttiä käsitellään Finance and Operationsissa.
+> - **Alennus**-, **Veloitukset**- ja **Vero**-kenttien hallinta perustuu Supply Chain Managementin monimutkaisiin määrityksiin. Tämä määritys ei tue tällä hetkellä integrointimääritystä. Nykyisessä versiossa **Hinta**-, **Alennus**-, **Veloitus**- ja **Vero**-kenttiä käsitellään Supply Chain Managementissa.
 > - **Maksuehdot**-, **Kuljetusehdot**-, **Toimitusehdot**-, **Toimitustapa**- ja **Toimitustila**-kentät eivät sisälly oletusarvoisiin yhdistämismäärityksiin. Näiden kenttien määrittämistä varten on määritettävä arvomääritys, joka koskee vain niiden organisaatioiden tietoja, joiden välillä yksikkö synkronoidaan.
 
 Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integrointiohjelmassa.

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (11.6.2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (11.6.2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/11/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b06dc0556bd1461573cd56abed602d72333a3f39
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741613"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023927"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (11.6.2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (11.6.2019)
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="changes-in-attract"></a>Attractin muutokset
 
 ### <a name="search-engine-optimization-for-job-posts"></a>Työilmoitusten hakukoneoptimointi
 
-Kun **Hakukoneoptimointi** otetaan käyttöön Dynamics 365 for Talent: Attractin hallintakeskuksessa, Attract pyytää Googlen indeksoinnin ohjelmointirajapintaa indeksoimaan verkkosivun aina, kun aktivoit ja julkaiset uuden työpaikan tai päivität aiemmin luodun työpaikan. Tällä tavoin työpaikka näkyy Googlen ja muiden hakukoneiden hakutuloksissa.
+Kun **Hakukoneoptimointi** otetaan käyttöön Dynamics 365 Talent: Attract -hallintakeskuksessa, Attract pyytää Googlen indeksoinnin ohjelmointirajapintaa indeksoimaan verkkosivun aina, kun aktivoit ja julkaiset uuden työpaikan tai päivität aiemmin luodun työpaikan. Tällä tavoin työpaikka näkyy Googlen ja muiden hakukoneiden hakutuloksissa.
 
 Vastaavasti aina, kun poistat työpaikan julkaisun, Attract ilmoittaa siitä indeksoinnin ohjelmointirajapintaan, jotta kyseinen työ, jonka julkaisu on poistettu, ei enää näy hakutuloksissa.
 
@@ -50,15 +50,15 @@ Hyväksynnät näkyvät koontinäytön **Hyväksynnät**-osassa. Hyväksyjät vo
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
 
-Tässä julkaisussa on vähäisiä Dynamics 365 for Talent: Onboardin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.
 
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 
 Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2337.
 
-### <a name="platform-update-27"></a>Ympäristön update 27 -päivitys
+### <a name="platform-update-27-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 27
 
-Lisätietoja Platform update 27:stä on artikkelissa [Dynamics 365 for Finance and Operations platform update 27:n esiversio-ominaisuudet (kesäkuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 27:stä on artikkelissa [Dynamics 365 Finance and Operations -käyttöympäristöpäivitys 27:n esikatselutoiminnot (kesäkuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>Ominaisuushallinnan työtila Talentissa
 

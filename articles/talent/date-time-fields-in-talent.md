@@ -1,6 +1,6 @@
 ---
-title: Päivämäärän ja ajan käyttäminen Microsoft Dynamics 365 for Talentissa
-description: Tietoja siitä, mitä tapahtuu, kun Päivämäärä- ja Aika-kenttiä käytetään Microsoft Dynamics 365 for Talentissa. Saat tietää, mitä on odotettavissa, kun päivämäärä- ja aikatietoja käytetään Dynamics 365 for Talentin lomakkeessa, ulkoisessa lähteessä tai Common Data Servicessä.
+title: Päivämäärän ja ajan käyttäminen Microsoft Dynamics 365 Talentissa
+description: Tietoja siitä, mitä tapahtuu, kun Päivämäärä- ja Aika-kenttiä käytetään Microsoft Dynamics 365 Talentissa. Saat tietää, mitä on odotettavissa, kun päivämäärä- ja aikatietoja käytetään Talentin lomakkeessa, ulkoisessa lähteessä tai Common Data Servicessä.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/24/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b4c652992272ed1a5aecbb4c78f0d11f077149d1
-ms.sourcegitcommit: 46bded82aa072adfedcf443629c2adc69f512c09
+ms.openlocfilehash: 1a1d1a47bfe6bd58b1e1a0d4d46c2133f3bf48ad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1791206"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2007964"
 ---
 # <a name="date-and-time-fields-in-talent"></a>Talentin päivämäärä- ja kellonaikakentät
 
 [!include [banner](includes/banner.md)]
 
-**Päivämäärä- ja Aika-** kentät ovat Dynamics 365 for Talentin peruskäsitteitä. On tärkeää ymmärtää, miten **Päivämäärä ja aika** -tietoja käytetään Dynamics 365 -lomakkeessa, Common Data Servicessä ja ulkoisissa lähteissä.
+**Päivämäärä- ja Aika-** kentät ovat Dynamics 365 Talentin peruskäsitteitä. On tärkeää ymmärtää, miten **Päivämäärä ja aika** -tietoja käytetään Dynamics 365 -lomakkeessa, Common Data Servicessä ja ulkoisissa lähteissä.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Tietoja Päivämäärä- ja Päivämäärä ja aika -tietotyyppien eroista
 

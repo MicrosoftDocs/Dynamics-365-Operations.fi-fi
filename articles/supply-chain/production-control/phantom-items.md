@@ -1,6 +1,6 @@
 ---
 title: Haamunimikkeet
-description: Tässä ohjeaiheessa kuvataan yksityiskohtaisesti, miten haamurivityyppiä voidaan käyttää tuoterakenteen riveillä ja Microsoft Dynamics 365 for Finance and Operationsin kaavassa.
+description: Tässä ohjeaiheessa kuvataan yksityiskohtaisesti, miten haamurivityyppiä voidaan käyttää tuoterakenteen riveillä ja Dynamics 365 Supply Chain Managementin kaavassa.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f01a0321740365c23cbc117be42c0a5137960af7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7c39b0ac2eb8a2293c828fee23ed6a78cb5fe2c9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843886"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250003"
 ---
 # <a name="phantom-items"></a>Haamunimikkeet
 
@@ -51,7 +51,7 @@ Näet tästä rakenteesta, että siinä ei ole osia F ja G, ja että näiden osi
 
 Toisin kuin tuotannon tuoterakenne, jossa on kaksi työvaihetaulukkoa, valmistuksen tuoterakenteessa on vain yksi työvaihetaulukko. Pakkausmateriaalin työvaihetta, joka on linkitetty osaan G, on myös laajennettu ja se kuuluu nyt tuotteen H työvaiheiden lomakkeeseen. Ensimmäinen työvaihe on sähköisen yksikön kokoonpano. Tämä järjestys on hyvän järjen mukainen, koska yksikköä käytetään seuraavassa työvaiheessa eli koneen kokoonpanossa. Viimeinen työvaihe on pakkauksen työvaihe, jossa käytetään kahta pakkausmateriaalia (C ja D).
 
-Microsoft Dynamics 365 for Finance and Operationsissa siirtyminen tuotannon tuoterakenteen ja valmistuksen tuoterakenteen välillä on mahdollista käyttämällä tuoterakenteen haamurivityyppiä. Kuten "haamu"-termi ilmaisee, osat F ja G ovat kadonneet kahden tuoterakennetyyppin välisen siirtymisen aikana. Tässä esimerkissä haamurivityyppiä sovelletaan osien F ja G tuoterakenneriveille tuotannon tuoterakenteessa. Kun luodaan tuotanto- tai erätilaus, tuotannon tuoterakenne kopioidaan tuotantoon tai erätilaukseen. Kun järjestys määritetty, tapahtuu siirtyminen tuotannon tuoterakenteesta valmistuksen tuoterakenteeseen edellisissä kuvissa näytetyn mukaisesti. Toisen kuvan työvaihetaulukossa pakkausmateriaalit C ja D ovat työvaiheen syötteitä. 
+Siirtyminen tuotannon tuoterakenteen ja valmistuksen tuoterakenteen välillä on mahdollista käyttämällä tuoterakenteen haamurivityyppiä. Kuten "haamu"-termi ilmaisee, osat F ja G ovat kadonneet kahden tuoterakennetyyppin välisen siirtymisen aikana. Tässä esimerkissä haamurivityyppiä sovelletaan osien F ja G tuoterakenneriveille tuotannon tuoterakenteessa. Kun luodaan tuotanto- tai erätilaus, tuotannon tuoterakenne kopioidaan tuotantoon tai erätilaukseen. Kun järjestys määritetty, tapahtuu siirtyminen tuotannon tuoterakenteesta valmistuksen tuoterakenteeseen edellisissä kuvissa näytetyn mukaisesti. Toisen kuvan työvaihetaulukossa pakkausmateriaalit C ja D ovat työvaiheen syötteitä. 
 
 ## <a name="multilevel-phantom-bom-structures"></a>Monitasoiset haamutuoterakenteet
 Haamurivityyppiä voidaan käyttää monitasoisissa tuoterakenteissa seuraavassa kuvassa näytetyn mukaisesti. Tässä kuvassa (a) on tuotteen H tuoterakenne ja (b) on osien E ja F sekä tuotteen G reititystaulukko. 

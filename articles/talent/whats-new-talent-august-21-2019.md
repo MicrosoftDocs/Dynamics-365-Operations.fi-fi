@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talentin uudet ja muuttuneet ominaisuudet (20. huhtikuuta 2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (20. huhtikuuta 2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f437dbbb786456cd335d5fb85e271d224e0a1383
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918198"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024065"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-20-2019"></a>Dynamics 365 for Talentin uudet ja muuttuneet ominaisuudet (20. huhtikuuta 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (20. huhtikuuta 2019)
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="changes-in-attract"></a>Attractin muutokset
 
@@ -43,11 +43,11 @@ Hylkäyksen syy ja kommentit näkyvät nyt ehdokkaan **Tehtävä**-välilehdess�
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
 
-Tässä julkaisussa on vähäisiä Dynamics 365 for Talent: Onboardin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.
 
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 
-Tässä julkaisussa on vähäisiä Dynamics 365 for Talent: Core HR:n ohjelmakorjauksia. Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2429.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Core HR:n ohjelmakorjauksia. Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2429.
 
 ### <a name="in-preview"></a>Esiversiossa
 
@@ -69,6 +69,6 @@ Uuden vaihtoehdon avulla esimiehet voit tarkastella sekä suorien että epäsuor
 
 ### <a name="coming-soon"></a>Tulossa pian
 
-#### <a name="platform-update-29"></a>Ympäristön update 29 -päivitys
+#### <a name="platform-update-29-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 29
 
-Lisätietoja Platform update 29 -päivityksestä on kohdassa [Dynamics 365 for Finance and Operations platform update 29 -esiversion toiminnot (lokakuu 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 29:stä on artikkelissa [Dynamics 365 Finance and Operations -käyttöympäristöpäivitys 29:n esikatselutoiminnot (lokakuu 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).

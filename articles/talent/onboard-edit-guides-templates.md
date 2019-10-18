@@ -1,6 +1,6 @@
 ---
-title: Perehdytysoppaiden ja mallien mukaaminen Dynamics 365 for Talent - Onboardissa
-description: Tässä ohjeaiheessa käsitellään tehtävien ja muiden tietojen lisäämistä Microsoft Dynamics 365 for Talent - Onboardin perehdytysoppaisiin ja malleihin.
+title: 'Perehdytysoppaiden ja mallien muokkaaminen Dynamics 365 Talent: Onboardissa'
+description: 'Tässä ohjeaiheessa käsitellään tehtävien ja muiden tietojen lisäämistä Microsoft Dynamics 365 Talent: Onboardin perehdytysoppaisiin ja malleihin.'
 author: andreabichsel
 manager: ''
 ms.date: 06/19/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68afc5d789d1f4af67cd2ec73eb0e073efad0761
-ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
+ms.openlocfilehash: 7803c7cd2c58b8544d2c8dd711c295d6882f9fca
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1864390"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010795"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-for-talent-onboard"></a>Perehdytysoppaiden ja mallien muokkaaminen Dynamics 365 for Talent: Onboardissa
+# <a name="edit-onboarding-guides-and-templates"></a>Perehdytysoppaiden ja mallien muokkaaminen
 
 [!include [banner](includes/banner.md)]
 
-Kun olet luonut perehdytysoppaan tai mallin Microsoft Dynamics 365 for Talent: Onboard, sinun on lisättävä johdanto, tehtävät, yhteyshenkilöt ja resurssit. Voit lisätä Onboardin perehdytysoppaisiin monipuolista sisältöä, kuten seuraavat:
+Kun olet luonut perehdytysoppaan tai mallin Microsoft Dynamics 365 Talent: Onboard, sinun on lisättävä johdanto, tehtävät, yhteyshenkilöt ja resurssit. Voit lisätä Onboardin perehdytysoppaisiin monipuolista sisältöä, kuten seuraavat:
 
 - YouTube-videot
 - Microsoft Sway -esitykset

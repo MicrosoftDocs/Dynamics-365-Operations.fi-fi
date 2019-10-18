@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bc5a38519efb6f4d242daca9aab5226c16e4ea0
-ms.sourcegitcommit: 3be8d2be6474264f0a530a052d19ea2635e269cf
+ms.openlocfilehash: 5ce8c1e7a3a4533516d8f2e2b0af46633e4c7667
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1729872"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250734"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Tilastollisen perusennusteen luominen
 
@@ -47,7 +47,7 @@ Kun ennustestrategiaksi on määritetty **Kopioi historiallisen kysynnän pääl
 
 Tuotantosuunnitelmiin aiheutuvien sekaannusten välttämiseksi on mahdollista lukita määrätty ennustejaksojen määrä. Tämä luku määritetään **Lukitusaikaraja**-kentässä. Sivulla **Oikaistu kysynnän ennuste**, lukittujen aikajaksojen kentät on poistettu käytöstä. Näin annetaan visuaalinen osoitus, että näitä arvoja ei tule muuttaa. 
 
-Perusmuotoisen kysynnän ennusteen alkamispäivämäärän ei tarvitse olla nykyinen päivä tai tuleva päivä. Määritä uusi alkupäivämäärä **Perusennusteen alkamispäivä - alkaen** -kentässä. Esimerkiksi kesäkuussa käyttäjät voivat luoda ennusteen seuraavalle vuodelle. Koska ennusteen aikajaksot historiallisen kysynnän päättymispäivän ja perusennusteen alkamispäivän välillä puuttuvat, ennusteet eivät ehkä ole oikeita. Jos käytät Microsoft Dynamics 365 for Finance and Operationsin kysynnän ennustepalvelua, voit täyttää puuttuvat kohdat neljällä tavalla. Voit valita haluamasi menetelmän määrittämällä MISSING\_VALUE\_SUBSTITUTION (Puuttuvan arvon korvaus) -parametrin **Kysynnän ennusteen parametrit** -sivulla. 
+Perusmuotoisen kysynnän ennusteen alkamispäivämäärän ei tarvitse olla nykyinen päivä tai tuleva päivä. Määritä uusi alkupäivämäärä **Perusennusteen alkamispäivä - alkaen** -kentässä. Esimerkiksi kesäkuussa käyttäjät voivat luoda ennusteen seuraavalle vuodelle. Koska ennusteen aikajaksot historiallisen kysynnän päättymispäivän ja perusennusteen alkamispäivän välillä puuttuvat, ennusteet eivät ehkä ole oikeita. Jos käytät kysynnän ennustepalvelua, voit täyttää puuttuvat kohdat neljällä tavalla. Voit valita haluamasi menetelmän määrittämällä MISSING\_VALUE\_SUBSTITUTION (Puuttuvan arvon korvaus) -parametrin **Kysynnän ennusteen parametrit** -sivulla. 
 
 > [!NOTE]
 > Puuttuvan arvon korvaus toimii vain historiallisten tietojen alkamis-ja päättymispäivämäärien välisten aukkojen tiedoissa. Se ei täytä tietoja ennen viimeisintä fyysistä tietopistettä eikä sen jälkeen, vaan se toimii olemassa olevien tietopisteiden välisenä ekstrapolaationa. 
@@ -56,7 +56,7 @@ Perusmuotoisen kysynnän ennusteen alkamispäivämäärän ei tarvitse olla nyky
 
 **Perusennusteen alkamispäivä**  -  **Päivämäärästä** -kenttään voidaan määrittää mennyt päivämäärä. On toisin sanoen mahdollista luoda kysynnän ennuste menneisyydelle. Tämä on hyödyllistä, koska sen avulla käyttäjät voivat optimoida ennustepalvelun parametrit siten, että tilastollinen menneisyydelle luotu ennuste vastaa todellista historiallista kysyntää. Käyttäjät voivat sitten jatkaa näiden parametriasetusten käyttöä luodakseen tilastollisen perusennusteen tulevaisuudelle. 
 
-Aiemmissa kysynnän ennusteen iteraatioissa tehtyjä manuaalisia oikaisuja voidaan käyttää automaattisesti uudessa perusennusteessa, jos **Siirrä manuaaliset oikaisut kysynnän ennusteeseen** -valintaruutu on valittuna. Jos tämä valintaruutu on tyhjä, manuaalisia oikaisuja ei lisätä perusennusteeseen, mutta niitä ei poisteta. Ennusteeseen tehdyt manuaaliset oikaisut voidaan poistaa vain ennusteen tuontihetkellä tyhjentämällä **Tallenna kysynnän perusennusteeseen tehdyt manuaaliset oikaisut** -valintaruutu. Manuaaliset oikaisut tallennetaan varmennushetkellä. Niinpä jos käyttäjä tekee manuaalisia oikaisuja ennusteeseen mutta ei varmenna ennustetta takaisin Finance and Operationsiin, muutokset häviävät. Lisätietoja manuaalisista oikaisuista ja miten ne toimivat on kohdassa [Oikaistun ennusteen varmennus](authorize-adjusted-forecast.md). 
+Aiemmissa kysynnän ennusteen iteraatioissa tehtyjä manuaalisia oikaisuja voidaan käyttää automaattisesti uudessa perusennusteessa, jos **Siirrä manuaaliset oikaisut kysynnän ennusteeseen** -valintaruutu on valittuna. Jos tämä valintaruutu on tyhjä, manuaalisia oikaisuja ei lisätä perusennusteeseen, mutta niitä ei poisteta. Ennusteeseen tehdyt manuaaliset oikaisut voidaan poistaa vain ennusteen tuontihetkellä tyhjentämällä **Tallenna kysynnän perusennusteeseen tehdyt manuaaliset oikaisut** -valintaruutu. Manuaaliset oikaisut tallennetaan varmennushetkellä. Niinpä jos käyttäjä tekee manuaalisia oikaisuja ennusteeseen mutta ei varmenna ennustetta takaisin Supply Chain Managementiin, muutokset häviävät. Lisätietoja manuaalisista oikaisuista ja miten ne toimivat on kohdassa [Oikaistun ennusteen varmennus](authorize-adjusted-forecast.md). 
 
 Kysynnän ennusteen luonnilla voi olla nimi ja kommentteja, jotka auttavat käyttäjiä tunnistamaan luodun ennusteen. Nämä arvot näkyvät ennusteen luontihistoriassa **Tilastollisen perusennusteen luontihistoria** -sivulla. 
 

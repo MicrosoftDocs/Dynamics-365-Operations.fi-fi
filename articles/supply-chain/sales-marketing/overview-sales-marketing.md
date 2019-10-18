@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10c8b548f2e295bf344459370ab6eecd577a0efb
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 5d55dfe26cd298372701aeb98a6aafc49977f381
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865990"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248628"
 ---
 # <a name="sales-and-marketing-overview"></a>Myynnin ja markkinoinnin yleiskuvaus
 
@@ -41,7 +41,7 @@ Myynnissä ja markkinoinnissa ensikosketus mahdollisiin asiakkaisiin voi tapahtu
 
 ### <a name="campaigns"></a>Kampanjat
 
-Kampanjan kohteena ovat ne prospektien, liidien, mahdollisuuksien ja asiakkaiden yhteyshenkilöt, jotka on valittu osallistumaan kampanjaan. Voit luoda Microsoft Dynamics 365 for Finance and Operationsissa monenlaisia kampanjoita, kuten puhelinmarkkinointi-, postitus- ja sähköpostikampanjoita, joilla asiakaspotentiaali voidaan maksimoida. Kun kampanja etenee ja saat positiivisia vastauksia, voit aloittaa myyntiprosessin niiden vastaajien kanssa, jotka vastasivat myönteisesti kampanjaan.
+Kampanjan kohteena ovat ne prospektien, liidien, mahdollisuuksien ja asiakkaiden yhteyshenkilöt, jotka on valittu osallistumaan kampanjaan. Voit luoda Supply Chain Managementissä monenlaisia kampanjoita, kuten puhelinmarkkinointi-, postitus- ja sähköpostikampanjoita, joilla asiakaspotentiaali voidaan maksimoida. Kun kampanja etenee ja saat positiivisia vastauksia, voit aloittaa myyntiprosessin niiden vastaajien kanssa, jotka vastasivat myönteisesti kampanjaan.
 
 ## <a name="sales"></a>Myynti
 Myyntitoimintoa käytetään tarjousten, lisämyynnin ja ristiin myynnin luomiseen uusille ja nykyisille asiakkaille, myyntitilausten luomiseen ja asiakkaiden myyntilaskujen luomiseen. Seuraava prosessikuva näyttää myynnin liiketoimintaprosessin. [![Myynnin liiketoimintaprosessi](./media/sales01.jpg)](./media/sales01.jpg)

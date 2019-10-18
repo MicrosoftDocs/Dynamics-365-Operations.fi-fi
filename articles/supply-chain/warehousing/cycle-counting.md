@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560655"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251520"
 ---
 # <a name="cycle-counting"></a>Inventointi
 
@@ -34,7 +34,7 @@ Tässä artikkelissa kuvataan, miten inventointia voi käyttää Varastonhallinn
 Inventointi on varastoprosessi, jota voit käyttää käytettävissä olevien varastonimikkeiden tarkastamiseen. Inventointiprosessia voidaan kuvata kolmessa vaiheessa:
 
 1.  **Inventointityön luonti** – inventointityö voidaan luoda automaattisesti nimikkeiden raja-arvoparametrien perusteella tai käyttämällä inventointisuunnitelmaa. Voit myös luoda inventointityön manuaalisesti nimikkeen tai varaston parametrien avulla **Inventointityö nimikkeen mukaan**-sivulla tai **Inventointityö sijainnin mukaan** -sivulla.
-2.  **Inventoinnin käsittely** – kun inventointityö on luotu, voit suorittaa sen laskemalla varastosijainnin nimikkeet ja kirjaamalla tuloksen Microsoft Dynamics 365 for Finance and Operationsiin mobiililaitteella. Vaihtoehtoisesti voit laskea varastosijainnin nimikkeet inventointityötä luomatta. Tätä prosessia kutsutaan nimellä *spot-inventointi*.
+2.  **Inventoinnin käsittely** – kun inventointityö on luotu, voit suorittaa sen laskemalla varastosijainnin nimikkeet ja kirjaamalla tuloksen Dynamics 365 Supply Chain Managementiin mobiililaitteella. Vaihtoehtoisesti voit laskea varastosijainnin nimikkeet inventointityötä luomatta. Tätä prosessia kutsutaan nimellä *spot-inventointi*.
 3.  **Lasketussa arvossa ilmenevien erojen selvittäminen** – inventoinnin jälkeen nimikkeillä, joiden lasketussa arvossa on eroja, työn tilana on **Odottaa tarkistusta** **Kaikki työ** -sivulla. Voit selvittää erot **Tarkistusta odottava inventointityö** -sivulla.
 
 Seuraavassa kuvassa on esitetty inventointiprosessi. ![Inventointiprosessin kulku](./media/performcyclecountinginawarehouselocation.jpg)
@@ -113,10 +113,10 @@ Voit ajoittaa inventointisuunnitelmat luomaan inventointityön heti tai säänn�
 Jos haluat luoda inventointityön manuaalisesti, voit käyttää **Inventointityö nimikkeen mukaan**- tai **Inventointityö sijainnin mukaan** -sivua. Voit määrittää luotavien inventointien enimmäismäärän. Jos esimerkiksi varastopäällikkö määrittää arvoksi **5**, inventointityö luodaan viidelle sijainnille, vaikka nimikettä on 10 eri sijainnissa. Voit myös valita työpoolin tunnuksen, johon liitetään luotavien inventointitöiden tunnukset. Kun työpoolin tunnusta käsitellään inventoinnissa, tähän työpooliin liitettyjä inventointityön tunnuksia käsitellään ryhmänä.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Inventoinnin suorittaminen mobiililaitteella
-Inventointityöt voidaan käsitellä useilla menetelmillä käyttämällä Dynamics 365 for Finance and Operationsia mobiililaitteessa:
+Inventointityöt voidaan käsitellä useilla menetelmillä käyttämällä Supply Chain Managementia mobiililaitteessa:
 
 -   **Käyttäjän ohjaama** – Työntekijä voi määrittää inventointityön tunnuksen, joka on **Avoin**-tilassa.
--   **Järjestelmän ohjaama** – Finance and Operations määrittää työntekijälle inventointityön tunnuksen.
+-   **Järjestelmän ohjaama** – Supply Chain Management määrittää työntekijälle inventointityön tunnuksen.
 -   **Inventoinnin ryhmittely** – Työntekijä voi ryhmitellä inventointitöiden tunnukset, jotka liittyvät tiettyyn sijaintiin, vyöhykkeeseen tai työpooliin.
 -   **Pistoinventointi** – Työntekijä voi laskea varastosijainnin nimikkeet milloin tahansa inventointityötä luomatta. Työntekijä suorittaa pistoinvestoinnin sijainnissa syöttämällä sijainnin tunnuksen.
 

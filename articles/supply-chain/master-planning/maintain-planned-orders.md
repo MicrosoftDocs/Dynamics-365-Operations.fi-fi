@@ -3,7 +3,7 @@ title: Ylläpidä suunniteltuja tilauksia
 description: Tämä ohjeaihe sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 10/02/2018
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf578d98abc4825c5607ec031da6ab6737c3183a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
+ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560369"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "1993437"
 ---
 # <a name="maintain-planned-orders"></a>Ylläpidä suunniteltuja tilauksia
 
@@ -32,19 +32,32 @@ ms.locfileid: "1560369"
 
 Tämä ohjeaihe sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella.
 
-Voit hallita suunniteltuja tilauksia **Pääsuunnittelu**-työtilassa, **Suunniteltu tilaus** -luettelossa tai **Suunnitellut tuotantotilaukset**-, **Suunnitellut ostotilaukset**- ja **Suunniteltu siirto** -luettelossa. Voit seurata edistymistä **Tila**-kentässä. Käytettävissä ovat seuraavat arvot:
+Voit hallita suunniteltuja tilauksia **Pääsuunnittelu**-työtilassa, **Suunniteltu tilaus** -luettelossa tai **Suunnitellut tuotantotilaukset**-, **Suunnitellut ostotilaukset**- ja **Suunniteltu siirto** -luettelossa. 
+
+## <a name="planned-order-status"></a>Suunnitellun tilauksen tila
+Voit seurata edistymistä **Tila**-kentässä. Käytettävissä ovat seuraavat arvot:
 
 -   Kun pääsuunnittelu luo suunniteltuja tilauksia, suunniteltujen tilausten tilana on **Käsittelemätön**.
 -   Jos et halua vahvistaa suunniteltua tilausta, voit asettaa sen tilaksi **Valmis**.
--   Jos haluat vahvistaa suunnitellun tilauksen, voit asettaa sen tilaksi **Hyväksytty**. Tämä tila ilmaisee, että hyväksyt suunnitellun tilauksen vahvistamisen mutta tilausta ei ole vielä vahvistettu.
+-   Jos haluat vahvistaa suunnitellun tilauksen, voit muuttaa tilaksi **Hyväksytty**. Pääsuunnittelu noudattaa suunniteltuja tilauksia, joiden tila on **Hyväksytty**, joten niitä ei muokata tai poisteta. 
 
-**Huomautus:** Hyväksytty suunniteltu tilaus siirtyy nykyisessä tilassaan seuraavaan pääsuunnittelun laskentaan. Voit vahvistaa suunnitellut tilaukset valitsemalla **Vahvista**. Voit vahvistaa seuraavat suunnitellut tilaukset:
+## <a name="firming-planned-orders"></a>Suunniteltujen tilausten vahvistaminen 
+Vahvistettaessa suunniteltuja tilauksia luodaan todelliset tilaukset. Nämä tunnetaan myös nimellä *vapautetut* tai *avoimet* tilaukset. Kun suunniteltu tilaus on vahvistettu, se siirtyy kyseisen moduulin tilausosaan.
 
--   Valittuna oleva suunniteltu tilaus.
--   Useita suunniteltuja tilauksia.
--   Suunnitellut tilaukset, jotka on luotu **Hajotus**-sivulla hajottamalla. Napsauta **Suunnitellut tilaukset**, valitse suunniteltu tilaus ja napsauta sitten **Vahvista**.
+Voit valita kaksi vahvistusvaihtoehtoa **Suunnitellut tila ukset** -sivulta:
 
-Kun suunniteltu tilaus on vahvistettu, se siirtyy kyseisen moduulin tilausosaan. 
+-   **Vahvista** – tämä vahvistaa yhden tai useita valittuja suunniteltuja tilauksia.
+-   **Vahvista kaikki** – tämä vahvistaa suodattimen kaikki suunnitellut tilaukset. Käyttämällä **Vahvista kaikki** -toimintoa sinun ei tarvitse valita suunniteltua tilausta, kaikki suodattimen sisällä olevat suunnitellut tilaukset vahvistetaan. Tämä vaihtoehto voi olla hyödyllinen, jos olet vahvistamassa suunniteltujen tilausten suurta määrää.
+
+> [!NOTE]
+> Voit **vahvistushistoriassa** jäljittää suunnitellun tilauksen, joka on vahvistettu kohdassa **Suunnitellut tilaukset -lomake > Näytä > Vahvistushistoria**.
+
+## <a name="parallelize-firming"></a>Rinnakkaisvahvistus
+Jos aiot vahvistaa useita tilauksia samalla kertaa, suorituksen rinnakkaisuus voi parantaa ajoaikaa tai suorituskykyä. Tämä vaihtoehto on käytettävissä vahvistettaessa useita suunniteltuja tilauksia joko **Vahvista**- tai **Vahvista kaikki** -toiminnolla. Seuraavat parametrit ovat käytettävissä:
+
+-   **Rinnakkainen vahvistus** – jos **Kyllä**, vahvistusprosessista tehdään rinnakkainen hyödyntämällä **Säikeiden määrä** -kohdassa määritettyä säikeiden määrää.
+-   **Säikeiden määrä** – määrittää vahvistusprosessin rinnakkaisten säikeiden määrän. Parametri näkyy vain, kun **Rinnakkainen vahvistus** -arvoksi on määritetty **Kyllä.**
+
 
 <a name="additional-resources"></a>Lisäresurssit
 --------

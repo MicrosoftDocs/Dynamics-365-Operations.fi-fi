@@ -1,6 +1,6 @@
 ---
-title: LinkedInin ja Microsoft Dynamics 365 for Talent - Attractin integroinnin vianmääritys
-description: Tässä ohjeaiheessa käsitellään sellaisten ongelmien vianmääritystä, jotka koskevat työpaikkojen julkaisua LinkedIniin Microsoft Dynamics 365 for Talent - Attractista.
+title: LinkedInin ja Microsoft Dynamics 365 Talent – Attractin integroinnin vianmääritys
+description: Tässä ohjeaiheessa käsitellään sellaisten ongelmien vianmääritystä, jotka koskevat työpaikkojen julkaisua LinkedIniin Microsoft Dynamics 365 Talent – Attractista.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/04/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 82ba7c505ba09e47f3c517c74c22e6aef7cd4e65
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 79f138ad9aeb203bce19cc93237fca96bffd015f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739354"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008217"
 ---
 # <a name="troubleshoot-integration-with-linkedin"></a>LinkedIn-integraation vianmääritys
 
 [!include [banner](../includes/banner.md)]
 
-Tee seuraavien tietojen avulla sellaisten ongelmien vianmääritys, joita voi esiintyä, kun yrität julkaista työpaikkoja LinkedIniin Microsoft Dynamics 365 for Talent: Attractista.
+Tee seuraavien tietojen avulla sellaisten ongelmien vianmääritys, joita voi esiintyä, kun yrität julkaista työpaikkoja LinkedIniin Microsoft Dynamics 365 Talent: Attractista.
 
 ## <a name="you-cant-sign-in-to-linkedin-from-attract"></a>Kirjautuminen LinkedIniin Attractista ei onnistu
 

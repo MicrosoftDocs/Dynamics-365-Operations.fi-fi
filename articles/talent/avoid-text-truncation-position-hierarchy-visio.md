@@ -1,6 +1,6 @@
 ---
 title: Tekstin katkaisemisen välttäminen toimihierarkiassa ja vienti Visioon
-description: Tässä ohjeaiheessa kerrotaan, miten voi ratkaista henkilöiden ja toimien nimien katkaisemisongelman, kun asiakkaat tarkastelevat toimihierarkiaa Microsoft Dynamics 365 for Talentissa. Tekstin katkaisemisen voi vaikeuttaa näyttökuvan ottamista hierarkiasta tai sen tulostamista.
+description: Tässä ohjeaiheessa kerrotaan, miten voi ratkaista henkilöiden ja toimien nimien katkaisemisongelman, kun asiakkaat tarkastelevat toimihierarkiaa Microsoft Dynamics 365 Talentissa. Tekstin katkaisemisen voi vaikeuttaa näyttökuvan ottamista hierarkiasta tai sen tulostamista.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 07a972bc1c6dd4076932248edb314992cb7297e5
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: e151818f29ac37ff449daaf1dc02e44b8fb317c3
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741818"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008497"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Tekstin katkaisemisen välttäminen toimihierarkiassa ja vienti Visioon
 
@@ -30,7 +30,7 @@ ms.locfileid: "1741818"
 
 **Varasto-otto**
 
-Kun asiakas tarkastelee, toimihierarkiaa Microsoft Dynamics 365 for Talentissa, henkilöiden ja toimien nimet on katkaistu. Tämän vuoksi näyttökuvan ottaminen hierarkiasta tai hierarkian tulostaminen jakamista varten voi olla hankalaa.
+Kun asiakas tarkastelee, toimihierarkiaa Microsoft Dynamics 365 Talentissa, henkilöiden ja toimien nimet on katkaistu. Tämän vuoksi näyttökuvan ottaminen hierarkiasta tai hierarkian tulostaminen jakamista varten voi olla hankalaa.
 
 ![Toimihierarkia](media/position-h.png)
 

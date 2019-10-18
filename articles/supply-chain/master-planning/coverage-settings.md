@@ -3,7 +3,7 @@ title: Kattavuusasetukset
 description: Tässä ohjeaiheessa on tietoja kattavuusasetuksista, joita pääajoitus käyttää nimiketarpeiden laskennassa.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
-ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
+ms.openlocfilehash: 3a63184852751bb65fb7e80d721f8c48fd847609
+ms.sourcegitcommit: edfd805356894710488ce07cb1c89313f448b222
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538891"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "1998968"
 ---
 # <a name="coverage-settings"></a>Kattavuusasetukset
 
@@ -49,6 +49,19 @@ Voit määrittää kattavuusasetukset useilla eri tavoilla:
 - Määritä dimensioryhmän kattavuusasetukset.
 
     Mene **Tuotetietojen hallinta &gt; Tuotteet &gt; Vapautetut tuotteet**. Napsauta **Vapautetun tuotteen tiedot** -sivulla **Yleiset**-pikavälilehden **Hallinta**-osassa **Varastodimensioryhmä**-linkkiä. Valitse **Varastodimensioryhmät** -sivulta **Kattavuussuunnitelma dimension mukaan** -valintaruutu, jotta voit luoda varastodimensioryhmän dimensiolle kattavuusasetukset. **Kattavuussuunnitelma dimension mukaan** -kentän on oltava valittuna kaikissa tuotedimensioissa, kuten konfiguraatiossa, värissä, koossa ja tyylissä.
+
+
+## <a name="coverage-codes"></a>Kattavuuskoodit
+
+Pääsuunnittelu voidaan määrittää käyttämään erilaisia täydennysmenetelmiä. Täydennysmenetelmät tai eräkoon muuttamismenetelmät ovat tekniikoita, joiden avulla järjestelmä voi määrittää ostettujen tai tuotettujen nimikkeiden eräkoon. 
+
+Kullekin täydennysmenetelmälle määritetään jokin seuraavista kattavuuskoodeista:
+
+- **Manuaalinen** – Eräkoon muuttamismenetelmä, jossa järjestelmä ei ehdota nimikkeelle osto-, siirto- tai tuotantotilauksia. Nimikkeen suunnittelija vastaa nimikkeen täydentämiseen tarvittavien tilausten luomisesta.
+- **Tarpeen mukaan** – Eräkoon muuttamismenetelmä, jossa järjestelmä nimikkeelle tarpeen mukaan suunnitellun osto-, siirto- tai tuotantotilauksen. Tätä menetelmää käytetään yleensä kalliille nimikkeille, joilla on ajoittaista kysyntää.  
+- **Kausikohtainen** – Eräkoon muuttamismenetelmä, joka yhdistää kausikohtaisen kysynnän nimikkeen yhteen tilaukseen. Tilaus suunnitellaan kauden ensimmäiselle päivälle, ja sen määrä täyttää määritetyn kauden nettotarpeet. Kausi alkaa nimikkeen ensimmäisestä kysynnästä ja kattaa määritetyn ajanjakson. Seuraava kausi alkaa nimikkeen seuraavista tarpeista.
+- **Min./Maks.** – Eräkoon muuttamismenetelmä, joka sisältää varaston täydennyksen tietylle tasolle, kun ennustettu käytettävissä oleva määrä alittaa raja-arvon. Täydennysmäärä on enimmäistason ja ennustetun käytettävissä olevan tason välinen erotus.
+
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

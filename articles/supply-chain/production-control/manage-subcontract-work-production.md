@@ -1,6 +1,6 @@
 ---
 title: Tuotannon alihankintatyön hallinta
-description: Tässä ohjeaiheessa kerrotaan, miten alihankkijatoimintoja hallitaan Microsoft Dynamics 365 for Finance and Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
+description: Tässä ohjeaiheessa kerrotaan, miten alihankkijatoimintoja hallitaan Dynamics 365 Supply Chain Managementissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ea2feccf9f74c0f035b8a46dc87eb41bdf85900a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569750"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023538"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Tuotannon alihankintatyön hallinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten alihankkijatoimintoja hallitaan Microsoft Dynamics 365 for Finance and Operationsissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
+Tässä ohjeaiheessa kerrotaan, miten alihankkijatoimintoja hallitaan Dynamics 365 Supply Chain Managementissa. Toisin sanoen siinä selitetään, miten toimittaja voi hallita tuotannon työvaiheita, jotka on kohdistettu resurssiin.
 
 [Tuotantoprosessin](production-process-overview.md) töitä voivat tehdä resurssit, joita omistaa tai hallinnoi toimittajat. Yleensä toimittajan resursseja käytetään tasaamaan jaksoittaista suurempaa kysyntää, joka ylittää yhtiön omien resurssien kapasiteetin. Toimittaja voi myös pystyä tarjoamaan erityisiä [resurssin ominaisuuksia](resource-capabilities.md) tai resursseja alempaan hintaan.  
 
@@ -40,7 +40,7 @@ Alihankintatoimintoja tai -toimenpiteitä käytettäessä ne vaikuttavat kaikkii
 
 Sisäisten resurssien kiinteä kustannushinta kohdistetaan yleensä ajanjaksolle. Sitä vastoin alihankintaresurssien kustannukset perustuvat liittyvän palvelun ostohintaan. Palvelu on määritetty toisena tuotteena ja sitä käytetään suorittamaan tietyn alihankintaoperaation hankinta- ja ostoprosesseihin.  
 
-Tällä hetkellä Microsoft Dynamics 365 for Finance and Operationsissa ei ole selkeää puolivalmisteiden käsitettä. Tuotantotilaukselle, joka edellyttää useita toimintoja muuntaakseen raaka-aineet valmiiksi tuotteeksi, valmis tuote kirjataan takaisin varastoon vain viimeisessä operaatiossa. Puolivalmiita tuotteita, jotka aiemmat toimet tuottavat, käsitellään keskeneräisenä työnä (KET), mutta niitä ei kirjata tai seurata varastossa. Vaikka voit jakaa reitit ja tuoterakenteet useisiin pienempiin yksiköihin, tämä lähestymistapa kasvattaa hallittavien tuotteiden, tuoterakenteiden ja reittien määrää.  
+Tällä hetkellä Supply Chain Managementissa ei ole selkeää puolivalmisteiden käsitettä. Tuotantotilaukselle, joka edellyttää useita toimintoja muuntaakseen raaka-aineet valmiiksi tuotteeksi, valmis tuote kirjataan takaisin varastoon vain viimeisessä operaatiossa. Puolivalmiita tuotteita, jotka aiemmat toimet tuottavat, käsitellään keskeneräisenä työnä (KET), mutta niitä ei kirjata tai seurata varastossa. Vaikka voit jakaa reitit ja tuoterakenteet useisiin pienempiin yksiköihin, tämä lähestymistapa kasvattaa hallittavien tuotteiden, tuoterakenteiden ja reittien määrää.  
 
 Tuotannon alihankintatyön mallintamiseen on kaksi tapaa. Nämä menetelmät eroavat siinä, miten alihankinnan prosessi voidaan mallintaa, miten puolivalmisteet esitetään prosessissa ja miten kustannusseuranta on hallittu.
 
