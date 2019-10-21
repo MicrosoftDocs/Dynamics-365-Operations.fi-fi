@@ -1,6 +1,6 @@
 ---
 title: Myynti- ja marginaalisuoritusten valvonta
-description: Microsoft Dynamics 365 for Retailissa voi valvoa myynnin ja katetuoton kehitystä reaaliaikaisesti.
+description: Dynamics 365 Retailissa voi valvoa myynnin ja katetuoton kehitystä reaaliaikaisesti.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46ecefdd15a3a208588aaf630571764047464cdb
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555647"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018061"
 ---
 # <a name="monitor-sales-and-margin-performance"></a>Myynnin ja katteen kehittymisen seuranta
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retailissa voi valvoa myynnin ja katetuoton kehitystä reaaliaikaisesti.
+Dynamics 365 Retailissa voi valvoa myynnin ja katetuoton kehitystä reaaliaikaisesti.
 
-Dynamics 365 for Retailissa käyttäjät voivat valvoa myynnin ja katetuoton kehittymistä reaaliaikaisesti organisaatiohierarkian eri tasoilla seuraavissa dimensioissa:
+Retailissa käyttäjät voivat valvoa myynnin ja katetuoton kehittymistä reaaliaikaisesti organisaatiohierarkian eri tasoilla seuraavissa dimensioissa:
 
 - Tuotteet
 - Luokat

@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27f574be865ca5f7474e11c7aae1a110f66298c8
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 944d43279a6753b73b9dfe89429b2c9d6c80b5df
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865469"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250780"
 ---
 # <a name="inventory-management-overview"></a>Inventoinnin- ja varastonhallinta – yleiskatsaus
 
@@ -57,6 +57,4 @@ Lisätietoja on kohdassa [Kustannushintojen hallinnan varastokirjanpito](../cost
 Mielipiteitä, uutisia ja muita varastonhallintaa ja muita ratkaisuja koskevat tiedot ovat kohdista [Dynamics AX:n valmistuksen tutkimus- ja kehitysryhmän blogi](https://blogs.msdn.microsoft.com/axmfg) ja [Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogi](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Tehtäväoppaat
-Finance and Operationsin tehtäväoppaissa on lisäohjeita. Voit avata tehtäväoppaan napsauttamalla **Ohje**-painiketta millä tahansa sivulla.
-
-
+Lisäohjeita on saatavilla tehtävän ohjauksina. Voit avata tehtäväoppaan napsauttamalla **Ohje**-painiketta millä tahansa sivulla

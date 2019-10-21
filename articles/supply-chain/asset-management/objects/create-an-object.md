@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f15c6c5ccdcddebe7aa428cff48ca6e3b120d7f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: bd963caed7f49db5dd7550dd30c3f831318d2b7a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783237"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250895"
 ---
 # <a name="create-an-asset"></a>Luo resurssi
 
@@ -63,12 +63,12 @@ Voit muokata **Resurssin valmistaja**- ja **resurssin malli** -kenttien tietoja 
 
 ## <a name="asset"></a>Varat
 
-Voit valita resurssille kohteen **Resurssi**. Resurssin valinta määrittää, mitä kalenteria työtilausten ajoituksessa käytetään. Resurssien valintaa käytetään usein käyttöomaisuudelle. Dynamics 365 for Finance and Operationsissa resurssit ja resurssiryhmät määritetään kohdassa **Organisaation hallinta** >  **Resurssit** >  **Resurssiryhmät** tai **Resurssit**.
+Voit valita resurssille kohteen **Resurssi**. Resurssin valinta määrittää, mitä kalenteria työtilausten ajoituksessa käytetään. Resurssien valintaa käytetään usein käyttöomaisuudelle. Resurssit ja resurssiryhmät määritetään valitsemalla **Organisaation hallinta** > **Resurssit** > **Resurssiryhmät** tai **Resurssit**.
 
 **Käyttöomaisuuserän numero** -kentässä voidaan valita käyttöomaisuuserä, joka liittyy resurssiin. Tämä on merkityksellistä, jos resurssi liittyy investointiprojektiin.
 
 - Jos resurssi liittyy käyttöomaisuuteen, voit luoda työtilauksen tyypin, jota käytetään investointiprojektiin liittyvissä työtilauksissa. 
-- Resurssin käyttöomaisuutta koskevat tiedot liittyvät **Käyttöomaisuuserät**-moduuliin Dynamics 365 for Finance and Operationsissa. Tämä tarkoittaa sitä, että kohdassa **Käyttöomaisuuserät** >  **Käyttöomaisuuserät** >  **Käyttöomaisuuserät** voit saada yleiskatsauksen resurssien hallinnan projekteihin, jotka voivat liittyä käyttöomaisuuserään valitsemalla resurssin luettelosta ja tarkastelemalla sisältöä **Aiheeseen liittyvät tiedot**-ruudun **Liittyvät projektit** -osassa.
+- Resurssin käyttöomaisuutta koskevat tiedot liittyvät **Käyttöomaisuuserät**-moduuliin Dynamics 365 Supply Chain Managementissa. Tämä tarkoittaa sitä, että kohdassa **Käyttöomaisuuserät** >  **Käyttöomaisuuserät** >  **Käyttöomaisuuserät** voit saada yleiskatsauksen resurssien hallinnan projekteihin, jotka voivat liittyä käyttöomaisuuserään valitsemalla resurssin luettelosta ja tarkastelemalla sisältöä **Aiheeseen liittyvät tiedot**-ruudun **Liittyvät projektit** -osassa.
 
 
 ## <a name="details"></a>Yksityiskohdat

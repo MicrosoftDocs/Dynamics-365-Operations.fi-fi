@@ -1,6 +1,6 @@
 ---
 title: Lean-valmistuksen yleiskatsaus
-description: Tässä artikkelissa on yleiskatsaus ja kuvaus Dynamics 365 for Finance and Operationsin Lean-valmistuksen toiminnoista.
+description: Tässä artikkelissa on yleiskatsaus ja kuvaus Dynamics 365 Supply Chain Managementin Lean-valmistuksen toiminnoista.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,29 +19,29 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6db940548018c9d6bbb31891c21f7c334ba8956
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d338318d3f7a1b56fe98e5c093ccbe795bd8de44
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562389"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250069"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean-valmistuksen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on yleiskatsaus ja kuvaus Microsoft Dynamics 365 for Finance and Operationsin Lean-valmistuksen toiminnoista.
+Tässä artikkelissa on yleiskatsaus ja kuvaus Dynamics 365 Supply Chain Managementin Lean-valmistuksen toiminnoista.
 
 Lean-valmistus sisältää työkaluja lean-työvaiheiden mallintamiseen. Nämä työkalut tukevat seuraavia käsitteitä ja liiketoiminnan tehtäviä sekä edistävät niitä:
 -   Lean-valmistuksen perustan luonti mallintamalla tuotanto- ja logistiikkaprosessit tuotantovirroiksi.
 -   Lean-imujärjestelmän toteutus käyttämällä kanbaneja ilmaisemaan kysynnän vaatimuksia.
 -   Kanban-töiden valvonta ja ylläpito.
 
-Finance and Operationsin lean-valmistuksen arkkitehtuuri koostuu tuotantovirroista, tehtävistä ja kanban-säännöistä. Nämä rakenteet on integroitu kokonaisuudessaan Finance and Operationsin prosesseihin. Voit käyttää lean-valmistusta yhdistelmätuotantoympäristössä, joka yhdistää erilaiset toimitus-, tuotanto- ja hankintastrategiat. Näitä strategioita ovat tuotantotilaukset, prosessiteollisuuden erätilaukset, ostotilaukset ja siirtotilaukset.
+Lean-valmistuksen arkkitehtuuri koostuu tuotantovirroista, tehtävistä ja kanban-säännöistä. Nämä rakenteet on integroitu kokonaisuudessaan Supply Chain Managementin prosesseihin. Voit käyttää lean-valmistusta yhdistelmätuotantoympäristössä, joka yhdistää erilaiset toimitus-, tuotanto- ja hankintastrategiat. Näitä strategioita ovat tuotantotilaukset, prosessiteollisuuden erätilaukset, ostotilaukset ja siirtotilaukset.
 
 | **Tärkeä**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Voit käyttää Finance and Operationsia kanbaneja sisältävän lean-tuotannon toteutuksen tukena. Lean-periaatteiden onnistunut käyttöönotto kuitenkin määräytyy käytettyjen sisäisten liiketoimintaprosessien sekä varsinaisten tuotanto-olosuhteiden ja ympäristön mukaan. |
+| Voit käyttää Supply Chain Managementia kanbaneja sisältävän lean-tuotannon toteutuksen tukena. Lean-periaatteiden onnistunut käyttöönotto kuitenkin määräytyy käytettyjen sisäisten liiketoimintaprosessien sekä varsinaisten tuotanto-olosuhteiden ja ympäristön mukaan. |
 
 ## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a> Tuotanto- ja logistiikkaprosessien mallintaminen tuotantovirtoina
 Voit luoda perustan lean-valmistukselle mallintamalla tuotanto- ja logistiikkaprosessit tuotantovirroiksi. Se muodostuu seuraavista tehtävistä:
@@ -69,8 +69,8 @@ Seuraavassa luettelossa käsitellään erikoistuneita kanban-tauluja:
 -   Siirtotöiden Kanban-taulu – Nykyisten siirtotöiden yhteenveto. Voit päivittää ja rekisteröidä keräysluetteloita, aloittaa ja päättää siirtotöitä sekä suorittaa muita tehtäviä.
 -   Prosessitöiden kanban-taulu – Taulu on suunniteltu tukemaan normaalia tuotantovirtaa sekä antamaan yleiskuva yhden tai usean työsolun tämän hetkisestä tilanteesta. Tässä taulussa kanbaneja voidaan priorisoida, kerätä tai valmistaa. Taulu on myös suunniteltu tukemaan kanbanien ilmoittamista viivakoodien avulla.
 
-## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>Kanban-työt ja integrointi Finance and Operationsin prosesseihin
-Kanban-työt on integroitu täysin Finance and Operationsin varastotapahtumien nykyisiin prosesseihin.
+## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-työt ja integrointi Supply Chain Management -prosesseihin
+Kanban-työt on integroitu täysin Supply Chain Managementin varastotapahtumien nykyisiin prosesseihin.
 -   Voit täydentää keräystehtävillä kanban-töiden vaatimusten täyttämiseen käytettäviä materiaaleja.
 -   Voit tulostaa kanbanien käyttöä tukevia kanban-kortteja, kiertäviä kanban-kortteja ja keräysluetteloita. Näitä asiakirjoja käytetään kuvaamaan, jäljittämään ja rekisteröimään kanban-töitä varastossa ja tuotannossa.
 -   Voit rekisteröidä varaston keräys- ja siirtotehtävät skannaamalla viivakoodit.

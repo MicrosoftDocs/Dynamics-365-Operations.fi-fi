@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40539d649d3ee43fea8dc71f608dd6281d1c0e39
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553996"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251681"
 ---
 # <a name="transportation-management-engines"></a>Kuljetuksenhallinnan moduulit
 
@@ -31,15 +31,15 @@ ms.locfileid: "1553996"
 
 Kuljetuksenhallinnan moduulit määrittävät logiikan, jota käytetään kuljetushintojen luomiseen ja käsittelemiseen Kuljetuksenhallinnassa. 
 
-Kuljetuksen hallintamoduuli laskee tehtäviä, kuten rahdinkuljettajan kuljetushinnan. Moduuli mahdollistaa laskentastrategioiden muuttamisen ajonaikana Microsoft Dynamics 365 for Finance and Operationsin tietojen perusteella. Kuljetuksen hallintamoduuli muistuttaa laajennusta, joka liittyy tietyn rahdinkuljettajan sopimukseen.
+Kuljetuksen hallintamoduuli laskee tehtäviä, kuten rahdinkuljettajan kuljetushinnan. Moduulijärjestelmän ansiosta voit muuttaa laskentastrategioita suorituksen aikana Supply Chain Managementin tietojen perusteella. Kuljetuksen hallintamoduuli muistuttaa laajennusta, joka liittyy tietyn rahdinkuljettajan sopimukseen.
 
 ## <a name="what-engines-are-available"></a>Mitä laskentoja on käytettävissä?
-Seuraavassa taulukossa on kuvattu Microsoft Dynamics 365 for Finance and Operationsissa käytettävissä olevat kuljetuksenhallintamoduulit.
+Seuraavassa taulukossa on kuvattu käytettävissä olevat kuljetuksenhallintamoduulit.
 
-| Kuljetuksenhallinnan moduuli | kuvaus                                                                                                                                                                                                                                                                                                                 |
+| Kuljetuksenhallinnan moduuli | Kuvaus                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Hinnan laskenta**                  | Laskee hinnat.                                                                                                                                                                                                                                                                                                           |
-| **Yleinen laskenta**               | Yksinkertaiset muiden moduulien käyttämät apumoduulit, jotka eivät edellytä tietoja Microsoft Dynamics 365 for Finance and Operationsista. Sellainen on esimerkiksi jako-osuuden laskenta. Jako-osuuden laskentojen avulla vähennetään tiettyjen tilausten ja rivien lopullisia kuljetuskustannuksia dimensioiden, kuten volyymin ja painon, perusteella. |
+| **Yleinen laskenta**               | Yksinkertaiset muiden moduulien käyttämät apumoduulit, jotka eivät edellytä tietoja Supply Chain Managementista, esimerkiksi jako-osuuden laskenta. Jako-osuuden laskentojen avulla vähennetään tiettyjen tilausten ja rivien lopullisia kuljetuskustannuksia dimensioiden, kuten volyymin ja painon, perusteella. |
 | **Kilometrien laskenta**               | Laskee kuljetusetäisyyden.                                                                                                                                                                                                                                                                                     |
 | **Siirtoajan laskenta**          | Laskee ajan, joka tarvitaan alusta loppuun kulkemiseen.                                                                                                                                                                                                                                       |
 | **Vyöhykkeen laskenta**                  | Laskee valitun osoitteen perusteella alueen ja laskee alueiden määrän, jotka on ylitettävä siirryttäessä osoitteesta A osoitteeseen B.                                                                                                                                                                    |
@@ -62,23 +62,23 @@ Useimmissa tapauksissa voit konfiguroida alustustiedot valitsemalla **Parametrit
 |          Parametri           |                                                                                  Kuvaus                                                                                  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  <em>RateBaseAssigner</em>   | .NET-tyyppi, joka tulkitsee hintaan perustuvat määritystiedot tietylle skeemalle. Parametriarvon syntaksi koostuu kahdesta pystyviivalla erotetusta segmentistä ( |
-|  <em>MileageEngineCode</em>  |                       Kilometrien laskennan koodi, joka tunnistaa kilometrien laskentatietueen Microsoft Dynamics 365 for Finance and Operations -tietokannassa.                        |
-| <em>Jako-osuuden laskenta</em> |                        Yleinen jako-osuuden laskennan yksilöivä koodi Microsoft Dynamics 365 for Finance and Operationsin tietokannassa.                        |
+|  <em>MileageEngineCode</em>  |                       Kilometrien laskennan koodi, joka tunnistaa kilometrien laskentatietueen tietokannassa.                        |
+| <em>Jako-osuuden laskenta</em> |                        Yleinen jako-osuuden laskennan yksilöivä koodi tietokannassa.                        |
 
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Metatietojen käyttö kuljetuksen hallintalaskuihin
 ----------------------------------------------------------
 
-Kuljetuksenhallinnan moduulit, jotka perustuvat Dynamics 365 for Finance and Operationsissa määriteltyihin tietoihin, saattavat käyttää erilaisia tietomalleja. Kuljetuksen hallintajärjestelmä mahdollistaa, että erilaiset kuljetuksen hallintamoduulit voivat käyttää samoja yleisiä fyysisiä tietokantatauluja. Varmistaaksesi, että ajoaikainen moottorin tietojen tulkinta on täsmällistä, voit määrittää metatiedot tietokannan taulukoihin. Tämä vähentää uusien kuljetuksenhallintamoduulien rakentamiskustannuksia, koska Dynamics 365 for Operations ei vaadi lisärakenteita tauluille ja lomakkeille.
+Kuljetuksenhallinnan moduulit, jotka perustuvat Supply Chain Managementissa määriteltyihin tietoihin, saattavat käyttää erilaisia tietomalleja. Kuljetuksen hallintajärjestelmä mahdollistaa, että erilaiset kuljetuksen hallintamoduulit voivat käyttää samoja yleisiä fyysisiä tietokantatauluja. Varmistaaksesi, että ajoaikainen moottorin tietojen tulkinta on täsmällistä, voit määrittää metatiedot tietokannan taulukoihin. Tämä vähentää uusien kuljetuksenhallintamoduulien rakentamiskustannuksia, koska Operations ei vaadi lisärakenteita tauluille ja lomakkeille.
 
 ## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Mitä voidaan käyttää hakutietona hintalaskelmissa?
-Microsoft Dynamics 365 for Finance and Operationsissa hintojen laskentaan käytettyjä tietoja hallitaan metatietomäärityksellä. Esimerkiksi jos haluat etsiä postinumeroihin perustuvia hintoja, sinun on määritettävä metatiedot, jotka perustuvat postinumeron hakutyyppiin.
+Hintojen laskentaan käyttämiäsi tietoja hallitaan metatietomäärityksellä. Esimerkiksi jos haluat etsiä postinumeroihin perustuvia hintoja, sinun on määritettävä metatiedot, jotka perustuvat postinumeron hakutyyppiin.
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Kaikki moduulin konfiguraatiot vaativat metatiedot?
 Ei, kuljetuksen hallintamoduulit, joita käytetään hinnan laskemiseen ulkoisista järjestelmistä vaadittavien tietojen noutamiseen, eivät tarvitse metatietoja. Näiden moduulien hintatiedot voidaan noutaa ulkoisista rahdinkuljettajien järjestelmistä tavallisesti verkkopalvelun kautta. Voit käyttää esimerkiksi kilometrien laskentaa, joka noutaa tiedot suoraan Bing-kartoista, joten et tarvitse metatietoja tälle moduulille.
 
 | **Huomautus**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Finance and Operationsin mukana toimitettavat kuljetuksen hallintamoduulit käyttävät sovelluksesta noudettavia tietoja. Ulkoisiin järjestelmiin liittyvät moduulit eivät sisälly Dynamics 365 for Operations -järjestelmään. Ohjelmaperustaisen laajennettavuusmallin avulla voit rakentaa laajennuksia käyttämällä Microsoft Dynamics 365 for Finance and Operationsin Visual Studio -työkaluja. |
+| Supply Chain Managementin mukana toimitettavat kuljetuksen hallintamoduulit käyttävät sovelluksesta noudettavia tietoja. Ulkoisiin järjestelmiin liittyvät moduulit eivät sisälly Operationsiin. Moduuleihin perustuvan laajennettavuusmallin avulla voit kuitenkin rakentaa laajennuksia käyttämällä Visual Studio-työkaluja. |
 
 ## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>MIten määritän kuljetuksen hallinnan moduulin metatiedot?
 Kuljetuksenhallintamoduulin metatiedot määritetään eri tavalla eri tyyppisille moduuleille.
@@ -99,8 +99,3 @@ Kuljetuksenhallintamoduulin metatiedot määritetään eri tavalla eri tyyppisil
 | 3        | Kohteen alkupostinumero | Määritys | merkkijono    | Postinumero    | Valittu  |
 | 4        | Kohteen loppupostinumero   | Määritys | merkkijono    | Postinumero    | Valittu  |
 | 5        | Kohdemaa           | Määritys | merkkijono    | Maa/alue |           |
-
-
-
-
-

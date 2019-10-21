@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572022"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248872"
 ---
 # <a name="purchase-requisition-overview"></a>Ostoehdotusten yleiskatsaus
 
@@ -38,7 +38,7 @@ Kun ostoehdotus on hyväksytty, sitä voidaan käyttää ostotilauksen luomiseen
 ## <a name="creating-purchase-requisitions"></a>Ostoehdotuksien luominen
 Voit luoda ostoehdotuksen **Omat ostoehdotukset** -sivulla ja valita tarvitsemasi nimikkeet ja palvelut. Voit valita nimikkeet tuotteiden hankintaluettelosta, jonka organisaatiosi on luonut, tai voit pyytää nimikkeet, joita ei löydy luettelosta, valitsemalla hankintaluokan ja kirjoittamalla tuotteen tiedot.  
 
-Ennen kuin ostoehdotus voidaan lähettää tarkistettavaksi, työnkulut on määritettävä Microsoft Dynamics 365 for Finance and Operationsissa. Työnkulun avulla voit siirtää ostoehdotuksen tarkistusprosessin läpi alkuperäisestä **Luonnos**-tilasta lopulliseen **Hyväksytty**-tilaan.
+Ennen kuin ostoehdotus voidaan lähettää tarkistettavaksi, työnkulut on määritettävä. Työnkulun avulla voit siirtää ostoehdotuksen tarkistusprosessin läpi alkuperäisestä **Luonnos**-tilasta lopulliseen **Hyväksytty**-tilaan.
 
 ### <a name="purchase-requisition-statuses"></a>Ostoehdotusten tilat
 
@@ -141,7 +141,7 @@ Hankintakäytännöissä voit hallita ostoehdotusten tarkoituksia, jotka ovat k�
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Ehdotukset, joiden tarkoituksena on kulutus
 
-Ehdotus, jonka tarkoitus on kulutus esittää tarpeen nimikkeille tai palveluille, joita organisaatiosi käyttää sisäisesti. Tämän tyyppisellä ehdotuksella luotu kysyntä täytetään aina ostotilauksella. Jos Microsoft Dynamics 365 for Finance and Operations on määritetty luomaan ostotilaukset automaattisesti, ostotilaukset luodaan, kun ostoehdotus on hyväksytty.
+Ehdotus, jonka tarkoitus on kulutus esittää tarpeen nimikkeille tai palveluille, joita organisaatiosi käyttää sisäisesti. Tämän tyyppisellä ehdotuksella luotu kysyntä täytetään aina ostotilauksella. Jos Supply Chain Management on määritetty luomaan ostotilauksia automaattisesti, ostotilaukset luodaan, kun ostoehdotus hyväksytään.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Ehdotukset, joiden tarkoitus täydennys
 

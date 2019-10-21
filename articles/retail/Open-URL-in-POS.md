@@ -1,6 +1,6 @@
 ---
 title: URL-linkin avaaminen POS-sovelluksessa
-description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Microsoft Dynamics 365 for Retailin tuote- ja asiakashakuihin.
+description: Tämä ohjeaihe sisältää yleiskatsauksen parannuksista, jotka on tehty Dynamics 365 Retailin tuote- ja asiakashakuihin.
 author: AamirAllaq
 manager: AnnBe
 ms.date: 01/28/2019
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 729caf9fad9097a3ecbf7d546c8f8a96f67aec92
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 406dad1709dc837f7f87817241d7062f6b08d8fd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845677"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025883"
 ---
 # <a name="open-url-in-pos"></a>URL-osoitteen avaaminen POS:ssä
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kerrotaan, miten Retail POS:ssä voi määrittää painikkeen avaaman URL-osoitteen. Tätä ominaisuutta varten ei tarvitse muokata koodia ja sen voi määrittää myös henkilö, jolla ei ole kehittäjän roolia. Tämä ominaisuus on käytettävissä osana Dynamics 365 for Finance and Operations 8.1.3 -versiota (koontiversio 8.1.227.10014) ja sitä uudempaa versiota. 
+Tässä aiheessa kerrotaan, miten Retail POS:ssä voi määrittää painikkeen avaaman URL-osoitteen. Tätä ominaisuutta varten ei tarvitse muokata koodia ja sen voi määrittää myös henkilö, jolla ei ole kehittäjän roolia. 
 
 Tällä ominaisuudella voi määrittää POS:n painikkeen avaamaan URL-osoitteen käyttämällä painikeruudukon suunnittelutoimintoa. Ominaisuutta tuetaan tällä hetkellä seuraavissa määrityksissä:
 

@@ -1,6 +1,6 @@
 ---
 title: Yksinkertaistettu työntekijöiden lisääminen ja navigointi
-description: Työntekijöiden tietomerkinnät Dynamics 365 for Talentissa on laajennettu sallimaan kaikkien työntekijöiden (entiset, aktiiviset ja tulevat) merkinnät. Yksinkertaistettu/konsolidoitu siirtymismalli on päivitetty etsimään nopeasti aiheeseen liittyviä tietoja sekä näyttämään ja tekemään tarvittavat päivitykset.
+description: Työntekijöiden tietomerkinnät Dynamics 365 Talentissa on laajennettu sallimaan kaikkien työntekijöiden (entiset, aktiiviset ja tulevat) merkinnät. Yksinkertaistettu/konsolidoitu siirtymismalli on päivitetty etsimään nopeasti aiheeseen liittyviä tietoja sekä näyttämään ja tekemään tarvittavat päivitykset.
 author: andreabichsel
 manager: AnnBe
 ms.date: 08/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: be0253ffc4396f36050ef02c51a20d378e44473d
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918197"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009419"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Yksinkertaistettu työntekijöiden lisääminen ja navigointi
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Talentissa työntekijä- ja työsuhdemerkinnät voidaan tehdä tehokkaasti. Voit päivittää nopeasti entisten, aktiivisten ja tulevien työntekijöiden ja alihankkijoiden työhistoriatiedot.
+Dynamics 365 Talentissa työntekijä- ja työsuhdemerkinnät voidaan tehdä tehokkaasti. Voit päivittää nopeasti entisten, aktiivisten ja tulevien työntekijöiden ja alihankkijoiden työhistoriatiedot.
 
 Voit myös ottaa käyttöön yksinkertaistetun siirtymiskokemuksen, jolla liittyvät tiedot löydetään ja tarvittavat muutokset voidaan tehdä nopeasti. Tämä toiminto on nyt käytettävissä eristysympäristöissä. Ota tämä toiminto käyttöön valitsemalla **Järjestelmän hallinta > Linkit > Asetukset > Järjestelmän parametrit > Esiversio-ominaisuudet**. Valitse **Laajennettu työntekijälomake ja siirtyminen**. Nämä muutokset otetaan nyt käyttöön kaikille käyttäjille. Voit poistaa tämän asetuksen käytöstä milloin tahansa.
 

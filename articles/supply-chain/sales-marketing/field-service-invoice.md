@@ -1,6 +1,6 @@
 ---
-title: Field Servicen sopimuslaskujen synkronointi Finance and Operationsin vapaatekstilaskuihin
-description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Microsoft Dynamics 365 for Field Servicen sopimuslaskut synkronoidaan Microsoft Dynamics 365 for Finance and Operationsiin vapaatekstilaskuihin.
+title: Field Servicen sopimuslaskujen synkronointi Supply Chain Managementin vapaatekstilaskuihin
+description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Field Servicen sopimuslaskut synkronoidaan Dynamics 365 Supply Chain Managementiin vapaatekstilaskuihin.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2018
@@ -19,46 +19,46 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 55301ba39dd28fbae5b6c21b1da3c3d9cf6afd8a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ca0014dc8bc1c70670a3cf85527eee0ef44865f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560160"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249862"
 ---
-# <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-finance-and-operations"></a>Field Servicen sopimuslaskujen synkronointi Finance and Operationsin vapaatekstilaskuihin
+# <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Field Servicen sopimuslaskujen synkronointi Supply Chain Managementin vapaatekstilaskuihin
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Microsoft Dynamics 365 for Field Servicen sopimuslaskut synkronoidaan Microsoft Dynamics 365 for Finance and Operationsiin vapaatekstilaskuihin.
+Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Field Servicen sopimuslaskut synkronoidaan Dynamics 365 Supply Chain Managementiin vapaatekstilaskuihin.
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 
-Field Servicen sopimuslaskut synkronoidaan Finance and Operationsin vapaatekstilaskuihin seuraavien mallien ja taustalla olevien tehtävien avulla.
+Field Servicen sopimuslaskut synkronoidaan Supply Chain Managementin vapaatekstilaskuihin seuraavien mallien ja taustalla olevien tehtävien avulla.
 
-**Mallin nimi Tietojen integroinnissa:**
+**Mallin nimi Tietojen integroinnissa**
 
-- Sopimuslaskut (Field Servicestä Fin and Opsiin)
+- Sopimuslaskut (Field Servicesta Supply Chain Managementiin)
 
-**Tehtävien nimet tietojen integrointiprojektissa:**
+**Tietojen integrointiprojektin tehtävien nimet**
 
 - Laskun ylätunnisteet
 - Laskurivit
 
 Seuraavat synkronointi tarvitaan, ennen kuin sopimuslaskut voidaan synkronoida:
 
-- Tilit (Salesista Fin and Opsiin) – suora
+- Asiakkaat (Salesista Supply Chain Managementiin) - suora
 
 ## <a name="entity-set"></a>Yksikköjoukko
 
-| Field Service  | Finance and Operations                 |
+| Field Service  | Toimitusketjun hallinta                 |
 |----------------|----------------------------------------|
 | laskut       | CDS-asiakkaan vapaatekstilaskujen otsikot |
 | invoicedetails | CDS-asiakkaan vapaatekstilaskujen rivit   |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
-Field Servicen sopimukset luodut laskut voidaan synkronoida Finance and Operationsiin Common Data Service (CDS) -palvelun tietojen integrointiprojektina. Näiden laskujen päivitykset synkronoidaan Finance and Operationsin vapaatekstilaskuihin, jos vapaatekstilaskun kirjanpidollinen tila on **Käsittelyssä**. Sen jälkeen kun vapaatekstilasku on kirjattu Finance and Operationsissa ja kirjanpidolliseksi tilaksi on päivitetty **Valmis**, päivityksiä ei voi enää synkronoida Field Servicestä.
+Field Servicen sopimukset luodut laskut voidaan synkronoida Supply Chain Managementiin Common Data Service -palvelun tietojen integrointiprojektina. Näiden laskujen päivitykset synkronoidaan Supply Chain Managementin vapaatekstilaskuihin, jos vapaatekstilaskun kirjanpidollinen tila on **Käsittelyssä**. Sen jälkeen kun vapaatekstilasku on kirjattu Supply Chain Managementissa ja kirjanpidolliseksi tilaksi on päivitetty **Valmis**, päivityksiä ei voi enää synkronoida Field Servicestä.
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM -ratkaisu
 
@@ -66,18 +66,18 @@ Field Servicen sopimukset luodut laskut voidaan synkronoida Finance and Operatio
 
 **On peräisin sopimuksesta** -kenttä on lisätty **Laskurivi**-yksikköön. Tämän kentän avulla voi varmistaa, että vain sopimuksesta luodut laskurivit synkronoidaan. Arvo on **tosi**, jos laskurivi on peräisin sopimuksesta.
 
-**Laskun päivämäärä** on pakollinen kenttä Finance and Operationsissa. Tämän vuoksi kentässä on Field Service -arvo ennen synkronointia. Seuraava logiikka lisättiin, jotta tämä vaatimus toteutuisi:
+**Laskun päivämäärä** on pakollinen kenttä Supply Chain Managementissa. Tämän vuoksi kentässä on Field Service -arvo ennen synkronointia. Seuraava logiikka lisättiin, jotta tämä vaatimus toteutuisi:
 
 - Jos **Laskun päivämäärä** -kenttä on tyhjä **Lasku**-yksikössä (eli siinä ei ole arvoa), siksi määritetään se kuluva päivä, jolloin sopimuksesta peräisin oleva laskurivi lisätään.
 - Käyttäjä voi muuttaa **Laskun päivämäärä** -kenttää. Kun käyttäjä kuitenkin yrittää tallentaa sopimuksesta peräisin olevan laskun, hänen vastaanottaa liiketoimintaprosessin virheen, jos laskun **Laskun päivämäärä** -kenttä on tyhjä.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
-### <a name="in-finance-and-operations"></a>Finance and Operationsissa
+### <a name="in-supply-chain-management"></a>Supply Chain Managementiin
 
-Laskun alkuperä on määritettävä integraatiota varten, jotta Finance and Operationsin Field Servicen sopimuslaskuista luodut vapaatekstilaskut voidaan erottaa. Kun laskun alkuperän tyyppi on **Sopimuksen laskun integrointi**, **Ulkoisen laskun numero** -kenttä näkyy **Myyntilasku**-ylätunnisteessa.
+Laskun alkuperä on määritettävä integraatiota varten, jotta Supply Chain Managementiin Field Servicen sopimuslaskuista luodut vapaatekstilaskut voidaan erottaa. Kun laskun alkuperän tyyppi on **Sopimuksen laskun integrointi**, **Ulkoisen laskun numero** -kenttä näkyy **Myyntilasku**-ylätunnisteessa.
 
-Sen lisäksi että **Ulkoisen laskun numero** näkyy ylätunnisteessa, sen tietojen avulla voidaan varmistaa, että Field Servicen sopimuslaskuista luodut laskut suodatetaan pois synkronoitaessa laskuja Finance and Operationsista Field Serviceeen.
+Sen lisäksi että **Ulkoisen laskun numero** näkyy ylätunnisteessa, sen tietojen avulla voidaan varmistaa, että Field Servicen sopimuslaskuista luodut laskut suodatetaan pois synkronoitaessa laskuja Supply Chain Managementista Field Serviceeen.
 
 1. Valitse **Myyntireskontra** \> **Asetukset** \> **Laskun alkuperän koodit**.
 2. Luo uusi laskun alkuperä valitsemalla **Uusi**.
@@ -91,7 +91,7 @@ Sen lisäksi että **Ulkoisen laskun numero** näkyy ylätunnisteessa, sen tieto
 
 Tehtävä: **Laskurivit**  
 
-Varmista, että Finance and Operationsin kentän **Päätilin näyttöarvon** oletusarvo päivitetään vastaamaan haluttua arvoa.
+Varmista, että Supply Chain Managementin kentän **Päätilin näyttöarvon** oletusarvo päivitetään vastaamaan haluttua arvoa.
 
 Oletusmallin arvo on **401100**.
 
@@ -99,10 +99,10 @@ Oletusmallin arvo on **401100**.
 
 Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä.
 
-### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-headers"></a>Sopimuslaskut (Field Servicestä Fin and Opsiin): Laskuotsikot
+### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Sopimuslaskut (Field Servicesta Supply Chain Managementiin): Laskujen otsikot
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
-### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Sopimuslaskut (Field Servicestä Fin and Opsiin): Laskurivit
+### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Sopimuslaskut (Field Servicesta Supply Chain Managementiin): Laskurivit
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)

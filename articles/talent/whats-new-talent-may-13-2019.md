@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (13. toukokuuta 2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (13. toukokuuta 2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/13/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ffeeb3e2f5279a84c4c060b04fe46836b778f6c5
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 42feeb044d0a4cd25faf2d74863aa4e948c200fd
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856445"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008811"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-13-2019"></a>Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (13. toukokuuta 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-may-13-2019"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (13. toukokuuta 2019)
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="coming-soon-in-attract"></a>Tulossa pian Attractiin
 
@@ -39,7 +39,7 @@ Hyväksynnät näkyvät koontinäytön **Hyväksynnät**-osassa. Hyväksyjät vo
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
 
-Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboardin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.
 
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 

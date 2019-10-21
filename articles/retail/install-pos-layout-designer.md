@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 98784c11c7393bb4c3e022d5bff4cca2daa1636e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572077"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025442"
 ---
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Retail point of salen (POS) asettelun suunnittelutoiminnon asentaminen
 
@@ -36,11 +36,11 @@ MPOS tai Cloud POS  -käyttöliittymän graafinen rakenne määräytyy kassan as
 
 ## <a name="install-the-one-click-designer"></a>Asenna yhden napsautuksen suunnittelutoiminto
 
-1. Valitse Microsoft Dynamics 365 for Retailin vasemmassa yläkulmassa olevasta valikosta **Vähittäismyynti** **ja kauppa** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **Myyntipiste** &gt; **Näytön asettelut**.
+1. Valitse Retailin vasemmassa yläkulmassa olevasta valikosta **Vähittäismyynti** **ja kauppa** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **Myyntipiste** &gt; **Näytön asettelut**.
 2. Valitse asettelu, jonka sovellustyyppi on **Modern POS Windowsille** tai **Vähittäismyynnin pilvimyyntipiste**, ja valitse sitten **asettelun suunnittelutoiminto**.
 3. Napsauta Internet Explorer -ikkunan alaosassa näkyvällä ilmoitusrivillä **Avaa** aloittaaksesi yhden napsautuksen suunnittelutoiminnon asennuksen. (Ilmoitusrivi saattaa näkyä eri kohdassa muissa selaimissa.)
 4. **Sovellus suoritetaan - suojauksen varoitus** viesti tulee näkyviin, valitse **suorita** joka asentaa vähittäismyynnin suunnittelutyökalun isännän. Edistymisen ilmaisin näyttää asennusprosessin edistymisen tilanteen.
-5. Kun asennus on päättynyt, anna Microsoft Dynamics 365 for Retailin käyttäjänimesi ja salasanasi **Kirjaudu sisään** -sivulla ja aloita sitten suunnittelutoiminto valitsemalla **Kirjaudu sisään**.
+5. Kun asennus on päättynyt, anna Retailin käyttäjänimesi ja salasanasi **Kirjaudu sisään** -sivulla ja aloita sitten suunnittelutoiminto valitsemalla **Kirjaudu sisään**.
 6. Kun tunnistetietosi on tarkistettu ja suunnittelutoiminta alkaa, voit aloittaa oman asettelun suunnittelun tai aiemmin luodun asettelun muokkaamisen.
 
     [![Asettelu yhdenklikkauksen suunnitteluohjelmassa](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -52,11 +52,11 @@ MPOS tai Cloud POS  -käyttöliittymän graafinen rakenne määräytyy kassan as
     **Ratkaisut:**
 
     - Tarkista Internet Explorerissa, että ponnahdussanoman esto on poistettu käytöstä tälle sivustolle. Valitse **Asetukset** &gt; **Vaihtoehdot** &gt; **Tietosuoja** &gt; **Etsi ponnahdussanoman esto** ja muuta asetusta, jos se on pakollinen.
-    - Lisää Internet Explorerissa Dynamics 365 for Retailin URL-osoite luotettuihin sivustoihin. Valitse **Asetukset** &gt; **vaihtoehdot** &gt; **suojaus** &gt; **Luotettavat sivustot** &gt; **sivustot** &gt; **Lisää**.
+    - Lisää Internet Explorerissa Retailin URL-osoite luotettuihin sivustoihin. Valitse **Asetukset** &gt; **vaihtoehdot** &gt; **suojaus** &gt; **Luotettavat sivustot** &gt; **sivustot** &gt; **Lisää**.
 
 - Ohjelma ei käynnisty ja ohjeiden mukaisesti voit ottaa yhteyttä toimittajaan.
 
-    **Ratkaisu:** Lisää Internet Explorerissa Dynamics 365 for Retailin URL-osoite luotettuihin sivustoihin. Valitse **asetukset** &gt; **vaihtoehdot** &gt; **suojaus** &gt; **Luotetut sivustot** &gt; **sivustot** &gt; **Lisää**.
+    **Ratkaisu:** Lisää Internet Explorerissa Retailin URL-osoite luotettuihin sivustoihin. Valitse **asetukset** &gt; **vaihtoehdot** &gt; **suojaus** &gt; **Luotetut sivustot** &gt; **sivustot** &gt; **Lisää**.
 
 **Tunnettu ongelma:** suunnittelu ei toimi oikein Google Chrome- eikä Firefox-selaimessa. Ratkaisemme parhaillaan tätä ongelma.
 

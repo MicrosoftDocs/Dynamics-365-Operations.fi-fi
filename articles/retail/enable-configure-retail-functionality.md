@@ -1,6 +1,6 @@
 ---
 title: Alusta Retail-ympäristöissä alkutiedot
-description: Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Microsoft Dynamics 365 for Retailin alustusprosessia.
+description: Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Dynamics 365 Retailin alustusprosessia.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 49b21d81437ebd7cc55076444ee71ae1143bfac0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556895"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025513"
 ---
 # <a name="initialize-seed-data-in-new-retail-environments"></a>Alkutietojen alustaminen uusissa Retail-ympäristöissä
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Microsoft Dynamics 365 for Retailin alustusprosessia.
+Tässä artikkeli kerrotaan tiedoista, jotka on luotu osana Dynamics 365 Retailin alustusprosessia.
 
 Kun Retail-sovellus on otettu käyttöön Microsoft Dynamics Lifecycle Servicesin (LCS) kautta, sinun on alustettava vähittäismyyntikonfiguraatio luodaksesi peruskonfiguraation tiedot.
 
@@ -39,7 +39,7 @@ Kun Retail-sovellus on otettu käyttöön Microsoft Dynamics Lifecycle Servicesi
 
 Alusta vähittäismyyntikonfiguraatio noudattamalla seuraavia vaiheita:
 
-1. Käynnistä Dynamics 365 for Retail-työasema.
+1. Käynnistä Retail-asiakasohjelma.
 2. Valitse **Vähittäismyynti** &gt; **Pääkonttorin asetukset** &gt; **Parametrit** &gt; **Vähittäismyyntiparametrit**.
 3. Napsauta **Alusta**.
 
@@ -57,7 +57,7 @@ Alustaminen luo seuraavat oletusmääritystiedot:
 - Yksikön tarkistusmallit
 - Erätyö Commerce Data Exchange -palvelun historiatietojen tyhjentämiseen
 
-Lisäksi maksukorttiyrityksiin (PCI) liittyvät lokiinkirjaukset ovat käytössä Dynamics 365 for Retailin tietokannassa.
+Lisäksi maksukorttiyrityksiin (PCI) liittyvät lokiinkirjaukset ovat käytössä Retailin tietokannassa.
 
 > [!NOTE]
 > Retail-ajastus voidaan määrittää erikseen. Tämä vaihtoehto mahdollistaa Retail-ajastuksen määrityksen sen oletusasetuksille.

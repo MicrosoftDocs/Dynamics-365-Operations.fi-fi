@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 551a8408aa730bc1916f1c57b7cfd773966ce8bf
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c5da94e02b2381bbd058221567172cd428931c45
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606800"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024680"
 ---
 # <a name="store-inventory-management"></a>Myymälän varastonhallinta
 
 [!include [banner](includes/banner.md)]
 
-Kun varastoa käsitellään Dynamics 365 for Retailissa ja käytössä on myyntipistesovellus, on tärkeää muistaa, että myyntipiste tukee vain rajoitetusti varastodimensioita ja tiettyjä varastonimiketyyppejä.
+Kun varastoa käsitellään Dynamics 365 Retailissa ja käytössä on myyntipistesovellus, on tärkeää muistaa, että myyntipiste tukee vain rajoitetusti varastodimensioita ja tiettyjä varastonimiketyyppejä.
 
 Myyntipisteratkaisu ei tue seuraavia nimikemäärityksiä:
 
@@ -56,7 +56,7 @@ Myyntipisteratkaisu tukee rajoitetusti seuraavia dimensioita. Rajoitettu tuki il
 
 ## <a name="purchase-orders"></a>Ostotilaukset
 
-Ostotilaukset luodaan pääkonttorilla. Jos vähittäismyynnin varasto sisältyy ostotilauksen otsikkoon, tilaus voidaan vastaanottaa myymälään käyttämällä Modern POS- tai Cloud POS-toimintoja Microsoft Dynamics 365 for Retailissa **Poiminta / vastaanottaminen** -toiminnolla. Kun myymälälle vastaanotetut määrät on syötetty ostotilausasiakirjan myyntipisteen **vastaanota nyt** -kenttään, ne voidaan tallentaa paikallisesti tai sitoa. Näiden tietojen tallentaminen paikallisesti ei vaikuta varastossa olevaan varastoon. Tallentaminen on tehtävä vain, jos käyttäjä ei ole valmis kirjaamaan vastaanottoa HQ-järjestelmään ja tarvitsee vain tavan tallentaa tilapäisesti aiemmin kirjoitetut **Vastaanota tiedot nyt** -tiedot. Tällöin vastaanottotiedot tallennetaan paikallisesti käyttäjän kanavatietokantaan. Kun asiakirja on käsitelty **Toimitus**-valinnalla, **Vastaanota nyt** -tiedot lähetetään HQ-kohteeseen ja ostotilauksen vastaanotto kirjataan. 
+Ostotilaukset luodaan pääkonttorilla. Jos vähittäismyynnin varasto sisältyy ostotilauksen otsikkoon, tilaus voidaan vastaanottaa myymälään käyttämällä Modern POS:ää (MPOS) tai Cloud POS:ää **Keräys/vastaanotto** -toiminnolla. Kun myymälälle vastaanotetut määrät on syötetty ostotilausasiakirjan myyntipisteen **vastaanota nyt** -kenttään, ne voidaan tallentaa paikallisesti tai sitoa. Näiden tietojen tallentaminen paikallisesti ei vaikuta varastossa olevaan varastoon. Tallentaminen on tehtävä vain, jos käyttäjä ei ole valmis kirjaamaan vastaanottoa HQ-järjestelmään ja tarvitsee vain tavan tallentaa tilapäisesti aiemmin kirjoitetut **Vastaanota tiedot nyt** -tiedot. Tällöin vastaanottotiedot tallennetaan paikallisesti käyttäjän kanavatietokantaan. Kun asiakirja on käsitelty **Toimitus**-valinnalla, **Vastaanota nyt** -tiedot lähetetään HQ-kohteeseen ja ostotilauksen vastaanotto kirjataan. 
 
 ## <a name="transfer-orders"></a>Siirtotilaukset
 

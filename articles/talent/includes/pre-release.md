@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Tämä ominaisuus on käytettävissä Platform update 15 (7.0.4841) -versiossa tai uudemmassa. Tämä päivitys on tällä hetkellä tietyn asiakasryhmän saatavilla ja tulee kaikkien käyttäjien saataville kesäkuussa 2018.
+> Tämä toiminto on saatavilla Finance and Operationsiin Platform update 15:sta (7.0.4841) alkaen. Tämä päivitys on tällä hetkellä tietyn asiakasryhmän saatavilla ja tulee kaikkien käyttäjien saataville kesäkuussa 2018.

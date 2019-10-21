@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2276f5296a77d620e0084c0247b1e25071fe029
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: bb5255236fc48132d4d68dc6f515f32e7ec71dae
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865277"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248839"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Tarjouspyynnöt – yleiskatsaus
 
@@ -48,16 +48,13 @@ Voit luoda tarjouspyyntötapauksen suunnitelluista tilauksista, ostoehdotuksesta
 
 Kun olet valmistellut tarjouspyyntötapauksen ja lisännyt toimittajat, valitse tarjouspyyntötapauksessa **Lähetä** (**Lähetä ja julkaise** julkisella sektorilla). Tarjouspyynnön kirjauskansio luodaan jokaiselle toimittajalle, jolle lähetät tarjouspyynnön. Voit määrittää Lähetä-toiminnon tulostusasetukset joko tulostamaan raportin jokaisesta toimittajasta arkistoon vai lähettämään raportin kunkin toimittajan sähköpostiosoitteeseen. Voit lisäksi luoda kunkin toimittajan tarjouspyynnön kirjauskansiossa raportin, jonka voit lähettää toimittajalle tai lähettää sen myöhemmin uudelleen. Voit myös määrittää Lähetä-toiminnon luomaan vastauslomakkeen, jonka toimittaja voi täyttää.
 
-Tässä aiheessa käsitellään tarjouspyyntöjen käsittelyprosessi silloin, kun toimittajayhteistyö ei ole käytössä. Jos järjestelmä on määritetty toimittajayhteistyötä varten, toimittajat voivat antaa tarjouksia suoraan Microsoft Dynamics 365 for Finance and Operationsissa. Lisätietoja on kohdassa [Toimittajayhteistyö asiakkaisen kanssa](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) ja [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).
+Tässä aiheessa käsitellään tarjouspyyntöjen käsittelyprosessi silloin, kun toimittajayhteistyö ei ole käytössä. Jos järjestelmä on määritetty toimittajayhteistyötä varten, toimittajat voivat antaa tarjouksia suoraan Supply Chain Managementissa. Lisätietoja on kohdassa [Toimittajayhteistyö asiakkaisen kanssa](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) ja [Toimittajayhteistyö ulkoisten toimittajien kanssa](vendor-collaboration-work-external-vendors.md).
 
 Jos tarjouspyyntöä on muutettava lähettämisen jälkeen, voit lähettää tarjouspyynnön uudelleen toimittajille, kun olet käyttänyt kahta muutostoimintoa: luontia ja viimeistelyä.+
 
 Sähköpostitse vastaanotettavat tarjoukset voidaan käsitellä **Tarjouspyynnöt**-sivulla.
 
 Jos tietyltä toimittajalta tarvitaan vastauksen toinen iteraatio, valitse **Tarjouspyyntö**-sivulla **Palauta**. Palautustoiminto luo uuden kirjauskansion ja raportin, joka tulostetaan, arkistoidaan ja lähetetään tulostusasetusten mukaisesti.
-
-> [!NOTE]
-> **Tarjouspyyntö**-sivun nimi on muuttunut. Dynamics 365 for Finance and Operationsin aiemmissa versioissa tämän sivun nimi oli **Tarjouspyyntöjen vastaus**.
 
 Jos olet lisännyt tarjouspyyntötapahtumaan pisteytysehtoja, tarjouspyynnössä on pisteytyspaneeli, johon voit lisätä pisteet. Kokonaispisteytys näkyy tarjouspyynnössä ja vertailtaessa vastauksia **Vertaa vastauksia** -sivulla. Voit verrata **Vertaa vastauksia** -sivulla myös muita vastaustietoja, kuten rivihintaa, toimituspäivämäärää ja kokonaishintaa.
 

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 47829a6fcae37e03510929dc46b942455016df0b
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 829fa771003de7759b237d4499aa038040b46a3f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577866"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018035"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Monikanavaiset edistyneet automaattiset kulut
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa on tietoja edistyneiden automaattisten kulujen määrittäm
 
 Kun edistyneet automaattiset kuluominaisuudet on otettu käyttöön, missä tahansa tuetussa Retail-kanavassa (POS, puhelinkeskus tai online) luoduissa tilauksissa voi käyttää [automaattisten kulujen](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) määrityksiä, jotka on määritetty ERP-sovelluksessa otsikko- ja rivitason kuluille.
 
-Dynamics 365 for Retailin versiota 10.0 edeltävissä versioissa [automaattisen kulun](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) määrityksiä voitiin käyttää vain sähköinen kaupankäynti- ja puhelinkeskuskanavissa. Versiosta 10.0 alkaen myyntipisteessä luoduissa tilauksissa voidaan käyttää automaattisten kulujen määrityksiä. Tällöin tavoin sekalaiset lisäkulut voi lisätä järjestelmällisesti myyntitapahtumiin.
+Retailin versiota 10.0 edeltävissä versioissa [automaattisen kulun](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) määrityksiä voitiin käyttää vain sähköinen kaupankäynti- ja puhelinkeskuskanavissa. Versiosta 10.0 alkaen myyntipisteessä luoduissa tilauksissa voidaan käyttää automaattisten kulujen määrityksiä. Tällöin tavoin sekalaiset lisäkulut voi lisätä järjestelmällisesti myyntitapahtumiin.
 
 Kun käytössä on versiota 10.0 edeltävä versio, myyntipistekäyttäjää pyydetään lisäämään toimitusmaksu manuaalisesti myyntipisteen Lähetä kaikki- tai Lähetä valitut -tapahtuma. Vaikka sovelluksen muiden kulujen toimintoja käytetään kulujen kirjoittamiseen tilaukseen, mikään järjestelmällinen laskenta ei ole käytettävissä, sillä laskenta määrittää kulujen arvon käyttäjän antamien tietojen perusteella. Kulut voidaan lisätä vain yhtä lähetykseen liittyvänä kulukoodina eikä niitä voi juurikaan muokata tai muuttaa myyntipisteessä sen jälkeen, kun ne on luotu.
 

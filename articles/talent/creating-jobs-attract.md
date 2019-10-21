@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
-ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
+ms.openlocfilehash: 64871eb5f7175701cfe1c9fefcc04b9da488748b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773250"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008452"
 ---
 # <a name="create-a-job"></a>Työn luominen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään työn elementtejä Microsoft Dynamics 365 for Talent: Attractissa. Siinä käsitellään myös työn luomista.
+Tässä ohjeaiheessa käsitellään työn elementtejä Microsoft Dynamics 365 Talent: Attractissa. Siinä käsitellään myös työn luomista.
 
 ## <a name="job-creation"></a>Työn luonti
 
@@ -74,7 +74,7 @@ Lisätietoja työhönottoprosessiin lisättävistä tehtävistä on kohdassa [Ty
 
 ## <a name="postings"></a>Kirjaukset
 
-Kun työ on aktivoitu, se voidaan julkaista. Vain työhönottajat ja järjestelmänvalvojat voivat julkaista töitä. Työ voidaan julkaista joko Talent Careers -sivustossa (Microsoft Dynamics 365 for Talentin urasivustossa) tai LinkedInissä. Attract-ryhmä tekee jatkuvasti yhteistyötä työpaikkailmoitussivujen kanssa. Tämä luettelo tulee laajenemaan ajan mittaan. Kun työ on julkaistu vain sisäiseksi, ehdokkailla on oltava AAD-tili, jotta he voivat tarkastella työtä ja hakea sitä. Jos työ on julkinen, ehdokkaat voivat tarkastella ja hakea sitä minkä tahansa todennusvaihtoehdon avulla. 
+Kun työ on aktivoitu, se voidaan julkaista. Vain työhönottajat ja järjestelmänvalvojat voivat julkaista töitä. Työ voidaan julkaista joko Talent Careers -sivustossa (Dynamics 365 Talentin urasivusto) tai LinkedInissä. Attract-ryhmä tekee jatkuvasti yhteistyötä työpaikkailmoitussivujen kanssa. Tämä luettelo tulee laajenemaan ajan mittaan. Kun työ on julkaistu vain sisäiseksi, ehdokkailla on oltava AAD-tili, jotta he voivat tarkastella työtä ja hakea sitä. Jos työ on julkinen, ehdokkaat voivat tarkastella ja hakea sitä minkä tahansa todennusvaihtoehdon avulla. 
 
 Lisätietoja työpaikkailmoituksista on kohdassa [Attractin urasivuston toiminnot](career-site.md).
 

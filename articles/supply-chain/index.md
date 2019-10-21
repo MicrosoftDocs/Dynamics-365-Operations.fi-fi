@@ -1,9 +1,9 @@
 ---
-title: Toimitusketjun hallinnan kotisivu
-description: Tällä sivulla on luettelo Microsoft Dynamics 365 for Finance and Operations -ohjelman toimitusketjun hallintaa koskevista ohjeaiheista ja muista resursseista.
-author: ShylaThompson
+title: Supply Chain Managementin ohjeresurssit
+description: Tällä sivulla on luettelo Supply Chain Managementin toimintoja koskevista ohjeaiheista ja muista resursseista.
+author: josaw1
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557589"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278321"
 ---
-# <a name="supply-chain-management-home-page"></a>Toimitusketjun hallinnan kotisivu
+# <a name="help-resources-for-supply-chain-management"></a>Supply Chain Managementin ohjeresurssit
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations -ohjelman toimitusketjun hallintaa koskevista ohjeaiheista ja muista resursseista. 
+Tässä aiheessa on luettelo Dynamics 365 Supply Chain Management -ohjelman ohjeaiheista ja muista resursseista. 
 
 ## <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 <a href="https://roadmap.dynamics.com/">Dynamics 365 Tiekartta -sivustolla</a> on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista. 
@@ -38,8 +38,9 @@ Tässä aiheessa on luettelo Microsoft Dynamics 365 for Finance and Operations -
 
 Saat lisätietoja valitsemalla ominaisuusalueen.
 
+- [Resurssien hallinta](asset-management/index.md)
 - [Kustannuslaskenta](../financials/cost-accounting/cost-accounting-home-page.md)
-- [Kustannusten hallinta](cost-management/cost-management-home-page.md)  
+- [Kustannushintojen hallinta](cost-management/cost-management-home-page.md)  
 - [Varastoinninhallinta](inventory/inventory-home-page.md)
 - [Pääsuunnittelu](master-planning/master-planning-home-page.md)
 - [Hankinta](procurement/procurement-sourcing-overview.md)
@@ -49,6 +50,10 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 - [Huollon hallinta](service-management/service-management-home-page.md)
 - [Kuljetustenhallinta](transportation/transportation-management-overview.md)
 - [Varastonhallinta](warehousing/warehouse-configuration.md)
+
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
+
+Lisätietoja Dynamics 365 Financesta esitetään [Dynamics 365 Financen ohjeresurssien](../finance/index.md) sivulla.
 
 ## <a name="videos"></a>Videot
 
@@ -113,6 +118,6 @@ Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -s
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Varaston liikkuvuus helpottuu Microsoft Dynamics 365 for Finance and Operations -ohjelman avulla</a>
 
 ## <a name="elearning-courses"></a>eLearning-kurssit
-Tietoja Microsoft Dynamics 365 for Finance and Operations -koulutuksesta on <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Microsoft Dynamics -oppimisportaalissa</a>. (CustomerSource -käyttäjätili tarvitaan) 
+Tietoja Dynamics 365 -koulutuksesta esitetään <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics -oppimisportaalissa</a>. (CustomerSource-käyttäjätili tarvitaan) 
 
 

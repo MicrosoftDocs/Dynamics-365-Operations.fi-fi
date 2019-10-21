@@ -1,13 +1,13 @@
 ---
-title: Laajenna Talent käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä
-description: Tässä ohjeaiheessa käsitellään Microsoft PowerAppsia ja Microsoft Flow'ta käyttäviä Microsoft Dynamics 365 for Talentin laajennusesimerkkejä.
+title: Laajenna Talentia käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä
+description: Tässä ohjeaiheessa käsitellään Microsoft PowerAppsia ja Microsoft Flow'ta käyttäviä Microsoft Dynamics 365 Talentin laajennusesimerkkejä.
 author: negudava
 manager: Annbe
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
+ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
-ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
+ms.openlocfilehash: 7bc3a18327f2d32770176eddcb7200681f0fb0da
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "1781439"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008056"
 ---
-# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Laajenna Talent käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä
+# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Laajenna Talentia käyttämällä PowerApps- ja Microsoft Flow -esimerkkejä
 
-Tässä ohjeaiheessa käsitellään Microsoft PowerAppsia ja Microsoft Flow'ta käyttäviä Microsoft Dynamics 365 for Talentin laajennusesimerkkejä. Voit tuoda kumpaankin esimerkkiin liitetyt ratkaisupaketin PowerApps-ympäristöön. Voit sitten käyttää paketteja joka ohjeena tai lähtökohtana, jonka avulla toteutat organisaatioon sopivia skenaarioita.
+Tässä ohjeaiheessa käsitellään Microsoft PowerAppsia ja Microsoft Flow'ta käyttäviä Microsoft Dynamics 365 Talentin laajennusesimerkkejä. Voit tuoda kumpaankin esimerkkiin liitetyt ratkaisupaketin PowerApps-ympäristöön. Voit sitten käyttää paketteja joka ohjeena tai lähtökohtana, jonka avulla toteutat organisaatioon sopivia skenaarioita.
 
 > [!IMPORTANT]
 > Jos haluat käyttää tässä ohjeaiheessa kuvattuja malleja ja sovellusta sellaisenaan, varmista testaamalla, että ne kattavat kaikki toteutukseen kuuluvat skenaariot.
@@ -36,7 +36,7 @@ Tässä ohjeaiheessa käsitellään Microsoft PowerAppsia ja Microsoft Flow'ta k
 ## <a name="prerequisites"></a>Edellytykset
 
 - Pakettien tuontia varten käyttäjät tarvitsevat **Ympäristön tekijä** -käyttöoikeuden.
-- Sovellusten vientiä ja tuontia varten käyttäjillä on oltava PowerApps-palvelupaketin käyttöoikeus tai PowerApps -palvelupaketin 2 kokeiluversion käyttöoikeus.
+- Sovellusten vientiä ja tuontia varten käyttäjillä on oltava PowerApps-palvelupaketin 2 käyttöoikeus tai PowerApps -palvelupaketin 2 kokeiluversion käyttöoikeus.
 
 ## <a name="flow--form-connect"></a>Työnkulku – lomakeyhteys
 
@@ -79,7 +79,7 @@ Voit ladata **Office 365 -integrointi** -sovelluksen ja mukautetun yksikköraken
 
 Tämä malli voidaan laajentaa seuraamaan ehdokasvaiheen muutoksia koko rekrytointiprosessin ajan sekä lähettämään ilmoitukset työhönottoryhmälle ja ehdokkaalle.
 
-Yleisesti ottaen työnkulut voidaan määrittää lähettämään Common Data Serviceen tallennettuihin yksiköihin ilmoitukset Core HR:n, Attractin tai Dynamics 365 Talent: Onboardin tapahtumista.
+Yleisesti ottaen työnkulut voidaan määrittää lähettämään Common Data Serviceen tallennettuihin yksiköihin ilmoitukset Core HR:n, Attractin tai Onboardin tapahtumista.
 
 Voit ladata **Työnkulku – sähköposti-ilmoitus** mallin Microsoft Download Centerin kohdassa [Työnkulku – sähköposti-ilmoitus](https://go.microsoft.com/fwlink/?linkid=2082103).
 
@@ -106,7 +106,7 @@ Voit lisätä ehdokkaita jaettuun kykypooliin suositussovelluksella. Suosittelij
 
 Voit upottaa tämän sovelluksen työntekijän itsepalveluun suositusten lähettämistä varten tai voit käyttää sitä linkkinä yritysportaalissa ja suorittaa sen itsenäisenä sovelluksena.
 
-Lataa **suositussovellus** siirtymällä [Dynamics 365 for Talent -laajennusratkaisu: suositussovellukseen](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) Microsoft Download Centerissä. Voit tuoda tämän sovelluksen ja mukauttaa sen lisäämään lisätoimintoja.
+Lataa **suositussovellus** siirtymällä [Dynamics 365 Talent -laajennusratkaisu: suositussovellukseen](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) Microsoft Download Centerissä. Voit tuoda tämän sovelluksen ja mukauttaa sen lisäämään lisätoimintoja.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

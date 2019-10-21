@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent -sovelluksen uudet tai muuttuneet ominaisuudet (2.4.2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 2, 2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/02/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f224114b132ae54dddb7766268c1fc5ec49e109d
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 9cc45a3ed468541fc0a5c8e80e745854148165e4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795241"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026069"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-2-2019"></a>Dynamics 365 for Talent -sovelluksen uudet tai muuttuneet ominaisuudet (2.4.2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Dynamics 365 Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 2, 2019)
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="changes-in-attract"></a>Attractin muutokset
 
@@ -46,7 +46,7 @@ Voit mukauttaa hyväksynnän sähköpostiviestien sisältöä uusien mallien avu
 **Asiakirjat**-välilehden parannukset hakemuksissa ja kykypoolin profiileissa näyttävät nyt sekä tiedostonimen että -tyypin.
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
-Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboardin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.
 
 ## <a name="coming-soon-attract-and-onboard"></a>Tulossa (Attract ja Onboard)
 
@@ -56,14 +56,14 @@ Attractissa ja Onboardissa loppukäyttäjien kirjaamat ongelmat Ilmoita ongelmas
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2216.
 
-### <a name="platform-update-25"></a>Ympäristön update 25 -päivitys
-Lisätietoja Platform update 25:stä on artikkelissa [Dynamics 365 for Finance and Operations platform update 25:n esiversio-ominaisuudet (huhtikuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+### <a name="platform-update-25-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 25
+Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 25:stä on artikkelissa [Dynamics 365 for Finance and Operations -käyttöympäristöpäivitys 25:n esikatselutoiminnot (huhtikuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Kompensaation lisäsuojaus (kiinteä ja muuttuva)
 Monissa yrityksissä etuuspäälliköillä on ehkä vain määrättyjen kompensaatiotietueiden käyttöoikeus. Ne voivat olla johtajien tai alueellisten työntekijöiden tietueita. Tämä muutoksen ansiosta henkilöstöhallinto voi hallita ja ylläpitää organisaation erilaisten työntekijäryhmien kompensaatiosuunnitelmia. Voit määrittää käyttöoikeusrooleja kiinteille ja muuttuville suunnitelmille. Nämä käyttöoikeusroolit määrittävät käyttöoikeudet suunnitelmiin ja liittyviin työntekijätietoihin, kuten palkan tai bonuksen tietueisiin, jotta vain nämä roolit voivat käsitellä työntekijäryhmien kompensaatioita.
 
 ### <a name="upgrade-to-common-data-service"></a>Päivitä Common Data Serviceen
-Common Data Serviceen päivityksen määräajat lähestyvät nopeasti. Kirjaudu PowerApps-hallintakeskukseen ja tarkista, onko tietokanta päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Common Data Serviceen päivityksen määräajat lähestyvät nopeasti. Kirjaudu sisään PowerApps-hallintakeskukseen ja tarkista, onko tietokantasi päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Esiversiossa
 
@@ -79,4 +79,4 @@ Organisaatiot saattavat vaatia syykoodien asettamista tietylle lomalajeille, kun
 Tällä muutoksella tunnistetaan duplikaatit, kun syötät nimikenttiä, ja tila näyttää löytyneiden kopioiden määrän. Voit valita uuden sivun sisältävän linkin arvioidaksesi, käytetäänkö tunnistettua vastausta. Tietojen syöttämisen keskeyttämisen välttämiseksi kaksoiskappale ei avaudu automaattisesti.
 
 ###  <a name="email-support-for-alerts"></a>Sähköpostituki hälytyksille
-Platform update 25:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköpostiviestejä yhteystietoihin, kun tapahtuma käynnistyy. 
+Finance and Operations -käyttöympäristöpäivitys 25:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköposti-ilmoituksia yhteyshenkilöille, kun tapahtuma käynnistyy. 

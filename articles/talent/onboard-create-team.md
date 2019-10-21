@@ -1,6 +1,6 @@
 ---
-title: Työhönottoryhmän luominen Dynamics 365 for Talent - Onboardin avulla
-description: Tässä ohjeaiheessa käsitellään perehdytysryhmien luontia Microsoft Dynamics 365 for Talent - Onboard -sovelluksella.
+title: 'Työhönottoryhmän luominen Dynamics 365 Talent: Onboardin avulla'
+description: 'Tässä ohjeaiheessa käsitellään perehdytysryhmien luontia Microsoft Dynamics 365 Talent: Onboard -sovelluksella.'
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 996fc42881ce708992614c58877927e03bbf78bf
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: b22bf5fb5b2a2756684304d1cb26c0f8a7419c00
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731450"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010818"
 ---
-# <a name="create-a-hiring-team-by-using-dynamics-365-for-talent-onboard"></a>Työhönottoryhmän luominen Dynamics 365 for Talent: Onboardin avulla
+# <a name="create-a-hiring-team-by-using-onboard"></a>Työhönottoryhmän luominen Onboardin avulla
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboardissa voi luoda työhönottoryhmiä. Voit sitten määrittää perehdytysoppaita ja malleja kullekin ryhmälle.
+Microsoft Dynamics 365 Talent: Onboardissa voi luoda työhönottoryhmiä. Voit sitten määrittää perehdytysoppaita ja malleja kullekin ryhmälle.
 
 ## <a name="create-a-hiring-team"></a>Työhönottoryhmän luominen
 

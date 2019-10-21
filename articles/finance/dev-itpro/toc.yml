@@ -1,0 +1,1620 @@
+- name: Finance and Operationsin kehittäminen ja hallinta
+  href: ../../dev-itpro/index.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Uudet ja muuttuneet ominaisuudet
+  items:
+    - name: 'Platform update 30:n esikatseluominaisuudet (marraskuu 2019)'
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-30.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 29 (lokakuu 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-29.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 28 (heinäkuu 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-28.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 27 (kesäkuu 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-27.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 26 (toukokuu 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-26.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 25 (huhtikuu 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-25.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 24 (maaliskuu 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-24.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 23 (tammikuu 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-23.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 22 (joulukuu 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-22.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 21 (marraskuu 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-21.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 20 (syyskuu 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-20.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 15 (maaliskuu 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-15.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Liiketoimintatapahtumat
+  items:
+    - name: Liiketoimintatapahtumien yleiskatsaus
+      href: ../../dev-itpro/business-events/home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Sovellusliiketoimintatapahtumat
+      href: ../../dev-itpro/business-events/app-business-events.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Työnkulun liiketoimintatapahtumat
+      href: ../../dev-itpro/business-events/business-events-workflow.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Hälytykset liiketoimintatapahtumina
+      href: ../../dev-itpro/business-events/alerts-business-events.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Liiketoimintatapahtumat Microsoft Flowssa
+      href: ../../dev-itpro/business-events/business-events-flow.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Liiketoimintatapahtumien kehitysdokumentaatio
+      href: ../../dev-itpro/business-events/business-events-dev-doc.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Liiketoimintatapahtumien vianmääritys
+      href: ../../dev-itpro/business-events/troubleshooting.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tapausten käyttö liiketoimintatapahtumissa
+      href: ../../dev-itpro/business-events/potential-use-cases.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Oppaat
+      items:
+        - name: Liiketoimintatapahtumat ja Microsoft Flow
+          href: ../../dev-itpro/business-events/how-to/how-to-flow.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Liiketoimintatapahtumat ja Azuren tapahtumaruudukko
+          href: ../../dev-itpro/business-events/how-to/how-to-eventgrid.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Liiketoimintatapahtumat ja Azure-palveluväylä
+          href: ../../dev-itpro/business-events/how-to/how-to-servicebus.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Liiketoimintatapahtumat ja työnkulun hyväksynnät
+          href: ../../dev-itpro/business-events/how-to/how-to-workflow.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Liiketoimintatapahtumat ja Microsoft Forms Pro
+          href: ../../dev-itpro/business-events/how-to/FormsPro.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Liiketoimintatapahtumat ja Azuren tapahtumakeskus
+          href: ../../dev-itpro/business-events/how-to/event-hub.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Jatkuva toimitus
+  items:
+    - name: Jatkuvan toimituksen aloitussivu
+      href: ../../dev-itpro/dev-tools/continuous-delivery-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kehityksen ja jatkuvan toimituksen usein kysytyt kysymykset
+      href: ../../dev-itpro/dev-tools/continuous-delivery-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Testipakettien jättäminen pois koonnin tuotoksesta
+      href: ../../dev-itpro/dev-tools/exclude-test-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kolmannen osapuolen mallien ja suorituspalvelupakettien hallinta lähteenhallinnan avulla
+      href: ../../dev-itpro/dev-tools/manage-runtime-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Automatisoidun koontiversion malliversioiden päivittäminen
+      href: ../../dev-itpro/dev-tools/version-models-build.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Tietojen integrointi
+  items:
+    - name: Tietojen integrointistrategian (tuonti/vienti) valitseminen
+      href: ../../dev-itpro/data-entities/integration-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tietojen integroinnin ohjelmointirajapinnat
+      items:
+        - name: Tietojen hallintapaketin REST API -ohjelmointirajapinta
+          href: ../../dev-itpro/data-entities/data-management-api.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Palvelun päätepisteet
+          items:
+            - name: Palvelun päätepisteiden yleiskuvaus
+              href: ../../dev-itpro/data-entities/services-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Palvelun todennuksen vianmääritys
+              href: ../../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: OData
+          href: ../../dev-itpro/data-entities/odata.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mukautettu palvelukehitys
+          href: ../../dev-itpro/data-entities/custom-services.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Toistuvat integroinnit
+          href: ../../dev-itpro/data-entities/recurring-integrations.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Palvelujen testaaminen kolmannen osapuolen apuohjelmien avulla
+          href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Finance and Operations Connector
+      href: ../../dev-itpro/data-entities/fin-ops-connector.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Integroinnin kehitys
+      items:
+        - name: Tietojen integraatio tietoyksikköjen avulla
+          items:
+            - name: Tietojen integraatio tietoyksikköjen avulla – yleiskatsaus
+              href: ../../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tietojen siirtoyksikön kehittäminen
+              href: ../../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Yhdistelmätietoyksiköiden kehittäminen
+              href: ../../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Määritä yritysten välinen taloustietojen jakaminen
+              href: ../../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tietuemallien luonti tietojen kirjaamista varten
+              href: ../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tietueiden luonti tietuemallien avulla
+              href: ../../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tietojen integrointi Common Data Servicen avulla
+          items:
+            - name: Tietojen integrointi Common Data Servicen avulla – yleiskatsaus
+              href: ../../dev-itpro/data-entities/data-integration-cds.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Synkroninen, kaksisuuntainen integrointi'
+              items:
+                - name: Lähes reaaliaikainen tietojen integrointi
+                  href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Organisaatiohierarkia Common Data Servicessä
+                  href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Yrityskonsepti Common Data Servicessä
+                  href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Integroidut asiakkaan päätiedot
+                  href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Yhtenäinen tuotekokemus
+                  href: ../../dev-itpro/data-entities/dual-write-product.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Integroidut toimittajan päätiedot
+                  href: ../../dev-itpro/data-entities/dual-write-vendor.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Integroidut toimipaikat ja varastot
+                  href: ../../dev-itpro/data-entities/dual-write-sites-and-warehouses.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Ensimmäinen synkronointi
+                  href: ../../dev-itpro/data-entities/dual-write-initial.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Tietojen integroinnin vianmääritys
+                  href: ../../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Asynkroninen, yksisuuntainen integrointi'
+              items:
+                - name: Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen
+                  items:
+                    - name: Prospektista käteiseksi
+                      href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Asiakkaiden synkronointi suoraan Salesista Finance and Operationsin asiakkaisiin
+                      href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
+                      href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin
+                      href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Finance and Operationsiin
+                      href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Myyntitilausten synkronointi suoraan Salesin ja Finance and Operationsin välillä
+                      href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
+                      href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Integroinnin määrittäminen Field Servicen kanssa
+                  items:
+                    - name: Integroinnin määrittäminen Field Servicen kanssa – yleiskatsaus
+                      href: ../../supply-chain/sales-marketing/field-service.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin
+                      href: ../../supply-chain/sales-marketing/field-service-product.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Field Servicen työtilausten synkronointi Finance and Operationsin myyntitilauksiin
+                      href: ../../supply-chain/sales-marketing/field-service-work-order.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Field Servicen sopimuslaskujen synkronointi Finance and Operationsin vapaatekstilaskuihin
+                      href: ../../supply-chain/sales-marketing/field-service-invoice.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Field Servicen varastosiirtojen ja oikaisujen synkronointi Finance and Operationsiin
+                      href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Finance and Operationsin varastotasotietojen synkronointi Field Serviceen
+                      href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Finance and Operationsin tuotteiden ja varastoyksiköiden synkronointi Field Serviceen
+                      href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Finance and Operationsin projektiluetteloiden synkronointi Field Serviceen
+                      href: ../../supply-chain/sales-marketing/synchronize-project-list.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Finance and Operationsin fyysisten varastojen synkronointi Field Serviceen
+                      href: ../../supply-chain/sales-marketing/synchronize-warehouse.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Finance and Operationsin työtilausten ja projektin synkronointi Field Serviceen
+                      href: ../../supply-chain/sales-marketing/synchronize-work-orders.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Project Service Automation -integroinnin määrittäminen
+                  items:
+                    - name: Project Service Automationin yleiskatsaus
+                      href: ../../financials/project-management/PSA-integration.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Project Service Automation -integrointiparametrit
+                      href: ../../financials/project-management/PSA-parameters.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Projektisopimusten ja projektien synkronointi
+                      href: ../../financials/project-management/project-contracts-templates.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Projektitehtävien synkronointi
+                      href: ../../financials/project-management/project-tasks-template.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Projektin kululuokkien synkronointi
+                      href: ../../financials/project-management/project-categories-templates.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Projektin arvioiden synkronointi projektin ennusteisiin
+                      href: ../../financials/project-management/project-estimates-templates.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Projektin toteutuneiden tietojen synkronointi projektin integrointikirjauskansioon
+                      href: ../../financials/project-management/project-actuals-templates.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Ulkoisten verkkopalveluiden käyttö
+      href: ../../dev-itpro/data-entities/consume-external-web-service.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Sähköiset sanomat
+      href: ../../financials/general-ledger/electronic-messaging.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Tietojen hallinta
+  items:
+    - name: Tietojen hallinnan yleiskatsaus
+      href: ../../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tietoyksiköt
+      items:
+        - name: Tietoyksiköiden yleiskatsaus
+          href: ../../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurointitietoprojektit
+          href: ../../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurointitietojen kopiointi yhtiöiden tai yritysten välillä
+          items:
+            - name: Konfigurointitietojen kopiointi – yleiskatsaus
+              href: ../../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Konfigurointitietopaketit
+              href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Konfigurointitietopaketit (vain heinäkuun 2017 versio)
+              href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Määritä yksikkösäilö saataville Data Lake -säilönä
+              href: ../../dev-itpro/data-entities/entity-store-data-lake.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurointitietomallit
+          href: ../../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Muutosten seuranta yksikköön
+          href: ../../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tietojen etsiminen vakiotietoyksiköistä
+          href: ../../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Useita laskentataulukoita sisältävät tietomallit
+          href: ../../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Muutosten seurannan ottaminen käyttöön yksiköille
+          href: ../../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurointiavaimet ja tietoyksiköt
+          href: ../../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurointitietopaketit
+          href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tietojen tuonti- ja vientityöt
+      items:
+        - name: Tietojen tuonti- ja vientityöt – yleiskatsaus
+          href: ../../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
+          href: ../../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tietoyksiköiden kehittäminen
+      items:
+        - name: Tietoyksiköiden suunnittelun periaatteet ja parhaat käytännöt
+          href: ../../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uusien tietoyksiköiden luominen
+          href: ../../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tietoyksiköiden ominaisuudet
+          href: ../../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Laskettavien sarakkeiden ja virtuaalikenttien luominen
+          href: ../../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Yritystenvälinen toiminta
+          href: ../../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Maa-/aluekoodien käsitteleminen
+          href: ../../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Periytyvyysmallit
+          href: ../../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Ohjatun tietoyksikkötoiminnon säännöt
+          href: ../../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Metatietojen ominaisuudet
+          href: ../../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Tarkistukset, oletukset ja yhdistämättömät kentät'
+          href: ../../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Suojaus ja tietoyksiköt
+          href: ../../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kolmannen osapuolen palvelun testausapuohjelmien käyttäminen
+          href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Taloushallinnon dimensiot näyttävien vain luku -tyyppisten yksiköiden luominen
+          href: ../../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tuo oma tietokantasi
+      href: ../../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Yksikkösäilön automaattinen päivitys
+      href: ../../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tietotehtävän automaatio
+      href: ../../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tietojen tarkistuksen tarkistusluettelon työtila
+      href: ../../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tietojenhallintavirheiden kuvaukset
+      href: ../../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Tietokannan siirtotoiminnot
+  items:
+    - name: Yleiskatsaus
+      href: ../../dev-itpro/database/dbmovement-operations.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Pika-aloitusoppaat
+      items:
+        - name: Tietokannan päivittäminen
+          href: ../../dev-itpro/database/database-refresh.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tietokannan vieminen
+          href: ../../dev-itpro/database/export-database.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tietokannan tuominen
+          href: ../../dev-itpro/database/import-database.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tietokannan tietyn ajankohdan palautus
+          href: ../../dev-itpro/database/database-point-in-time-restore.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Oppaat
+      items:
+        - name: Koulutustarkoitusten päivittäminen
+          href: ../../dev-itpro/database/dbmovement-scenario-general-refresh.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Virheenkorjaus tuotantotietokannan kopion perusteella
+          href: ../../dev-itpro/database/dbmovement-scenario-debugdiag.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Vie kopio vakiokäyttäjän hyväksyntätestin (UAT) tietokannasta
+          href: ../../dev-itpro/database/dbmovement-scenario-exportuat.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Golden-määrityksen kampanja
+          href: ../../dev-itpro/database/dbmovement-scenario-goldenconfig.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Destruktiivinen testaus
+          href: ../../dev-itpro/database/dbmovement-scenario-destructivetests.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Esittelytiedot
+  items:
+    - name: Esittelytietojen yleiskatsaus
+      href: ../../fin-and-ops/get-started/demo-data.md?toc=/dynamics365/unified-operations/financials/toc.json?toc=/dev-itpro/toc.json
+    - name: Esittelytietojen luominen tietopakettien avulla
+      href: ../../dev-itpro/data-entities/generate-demo-data-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Käyttöönotto
+  items:
+    - name: Esittely-ympäristöjen käyttöönotto
+      href: ../../dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Pilvikäyttöönotto
+      items:
+        - name: Pilvikäyttöönoton yleiskatsaus
+          href: ../../dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Käyttöönotto itsepalveluna
+          items:
+            - name: Käyttöönotto itsepalveluna – yleiskatsaus
+              href: ../../dev-itpro/deployment/infrastructure-stack.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Uuden ympäristön käyttöönotto
+              href: ../../dev-itpro/deployment/deployenvironment-newinfrastructure.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Käyttöönotto - usein kysytyt kysymykset
+              href: ../../dev-itpro/deployment/deploymentFAQ.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Itsepalvelukäyttöönoton tunnetut ongelmat
+              href: ../../dev-itpro/deployment/known-issues-new-deployment-experience.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Käyttöönottojen ylläpitotoiminnot
+              href: ../../dev-itpro/deployment/maintenanceoperationsguide-newinfrastructure.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Päivitä ympäristö
+              href: ../../dev-itpro/deployment/updateenvironment-newinfrastructure.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Itsepalvelun kautta käyttöönotettujen ympäristöjen vianmääritys
+              href: ../../dev-itpro/deployment/troubleshoot-newinfrastructure.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Azure Resource Manager -perehdytyksen suorittaminen
+          href: ../../dev-itpro/deployment/arm-onboarding.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Azure ExpressRoute ja Finance and Operations
+          href: ../../dev-itpro/deployment/expressroute.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Finance and Operations -arkkitehtuuri
+          href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Päivitysten käyttöönotto pilviympäristöissä
+          href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Päivitysten ja laajennusten kohdistaminen pilvessä ylläpidetyn Retail-kanavan osiin
+          href: ../../dev-itpro/deployment/Update-retail-channel.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Alusta Retail Cloud Scale Unit
+          href: ../../dev-itpro/deployment/Initialize-Retail-Channels.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Retail-tietojen sijainti
+          href: ../../dev-itpro/deployment/retail-data-residency.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Paikallinen käyttöönotto
+      items:
+        - name: Paikallisen käyttöönoton aloitussivu
+          href: ../../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paikallinen käyttöönotto – yleiskatsaus
+          href: ../../dev-itpro/deployment/on-premises-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paikallisten käyttöönottojen suunnittelu ja valmistelu
+          href: ../../dev-itpro/deployment/plan-onprem-deployment.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Laitteiston kokovaatimukset
+          href: ../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dynamics365/unified-operations/financials/toc.json?toc=/dev-itpro/toc.json
+        - name: Paikallisten projektien määrittäminen
+          href: ../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paikallisten ympäristöjen asennus ja käyttöönotto
+          items:
+            - name: Paikallisten ympäristöjen asennus ja käyttöönotto – aloitussivu
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-environments.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Paikallisten ympäristöjen käyttöönotto (Platform update 12 ja uudemmat)
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Paikallisten ympäristöjen käyttöönotto (Platform update 8 ja 11)
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Vähittäismyyntikanavan komponenttien asennusohjeet paikallisessa ympäristössä
+              href: ../../dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mukautettujen mallien kehitys ja käyttöönotto paikallisissa ympäristöissä
+          href: ../../dev-itpro/deployment/develop-deploy-custom-models-on-premises.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: PowerBI.com-integrointi paikallisiin ympäristöihin
+          href: ../../dev-itpro/analytics/entity-store-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Käänteisten välityspalvelimien määrittäminen paikallisiin ympäristöihin
+          href: ../../dev-itpro/deployment/onprem-reverseproxy.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Päivitysten käyttöönotto paikallisessa ympäristössä
+          href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paikallisten ympäristöjen diagnostiikka
+          href: ../../dev-itpro/deployment/on-premises-diagnostics.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paikallisten ympäristöjen uudelleenasennus
+          href: ../../dev-itpro/deployment/redeploy-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paikallinen edustaja
+          items:
+            - name: AD FS Office 365 -yhteensopivuus
+              href: ../../dev-itpro/deployment/onprem-adfscompatibility.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Paikallisen edustajan ennen käyttöönottoa ja sen jälkeen suoritettavat komentosarjat
+              href: ../../dev-itpro/lifecycle-services/pre-post-scripts.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Paikallisen edustajan päivittäminen
+              href: ../../dev-itpro/lifecycle-services/update-local-agent.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Ympäristöjen uudelleenmääritys
+          href: ../../dev-itpro/lifecycle-services/reconfigure-environment.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Asiakasohjelman Internet-yhteys
+          href: ../../dev-itpro/user-interface/client-disconnected.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paikallisten ympäristöjen vianmääritys
+          href: ../../dev-itpro/deployment/troubleshoot-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Varmenteiden kierrättäminen
+          href: ../../dev-itpro/deployment/certificate-rotation-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Mukautetun koodin käyttöönotto
+      items:
+        - name: Käyttöönotettavien pakettien luominen malleista
+          href: ../../dev-itpro/deployment/create-apply-deployable-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Käyttöönotettavien pakettien asentaminen komentoriviltä
+          href: ../../dev-itpro/deployment/install-deployable-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paketin asennuksen poistaminen
+          href: ../../dev-itpro/deployment/uninstall-deployable-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paketin käyttöönotto-ongelmien vianmääritys
+          href: ../../dev-itpro/deployment/deployable-package-troubleshooting.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Kehittäminen ja mukauttaminen
+  items:
+    - name: Kehittäminen ja mukauttaminen – aloitussivu
+      href: ../../dev-itpro/dev-tools/developer-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Sovelluspino ja palvelinarkkitehtuuri
+      href: ../../dev-itpro/dev-tools/application-stack-server-architecture.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kokeiluversioiden hankkiminen
+      href: ../../dev-itpro/dev-tools/get-evaluation-copy.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kokeiluversioiden tilaaminen
+      href: ../../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kehitysympäristöjen käyttöönotto ja käyttö
+      items:
+        - name: Kehitysympäristöt
+          href: ../../dev-itpro/dev-tools/access-instances.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kattavien kehitysympäristöjen määrittäminen
+          href: ../../dev-itpro/dev-tools/configure-developer-vm.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uusien käyttäjien luominen kehittämiskoneissa
+          href: ../../dev-itpro/dev-tools/enable-development-machine.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Sovelluskehityksen ja koonnin virtuaalikoneet, jotka eivät salli järjestelmänvalvojan käyttöä – usein kysytyt kysymykset'
+          href: ../../dev-itpro/sysadmin/VMs-no-admin-access.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paikallisten ympäristöjen nimeäminen uudelleen Azure DevOps -palvelun käyttämistä varten
+          href: ../../dev-itpro/migration-upgrade/vso-machine-renaming.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kehityksen järjestelmävaatimukset
+          href: ../../dev-itpro/dev-tools/development-system-requirements.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: 'Versionhallinta, metatietojen haku ja siirtyminen'
+      href: ../../dev-itpro/dev-tools/version-control-metadata-navigation.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kuljetuskaluston hallinnan esimerkkisovellus
+      items:
+        - name: Kuljetuskaluston hallinnan esimerkkisovelluksen kattava skenaario
+          href: ../../dev-itpro/dev-tools/fleet-management-sample.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kuljetuskaluston hallinnan esimerkkisovellus
+          href: ../../dev-itpro/dev-tools/introduction-fleet-management-sample.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Visual Studio -työkalut
+      items:
+        - name: Kehitystyökalut
+          href: ../../dev-itpro/dev-tools/development-tools-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kehitystyökalujen opetusohjelma
+          href: ../../dev-itpro/dev-tools/introduction-visual-studio.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sovelluksen tarkistustyökalu
+          items:
+            - name: 'BaseX:n asentaminen sovelluksen tarkistustyökalua varten'
+              href: ../../dev-itpro/dev-tools/install-basex.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sovellusten hallinta
+          href: ../../dev-itpro/dev-tools/application-explorer.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Projektien muodostaminen ja virheenkorjaus
+          href: ../../dev-itpro/dev-tools/build-debug-project.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Koontitoiminnot
+          href: ../../dev-itpro/dev-tools/build-operations.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Koodieditorin toiminnot
+          href: ../../dev-itpro/dev-tools/code-editor.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mallien ja tietomallielementtien luominen
+          items:
+            - name: Mallien ja tietomallielementtien luominen – yleiskatsaus
+              href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennusten nimeämisohjeet
+              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Mallin mukauttamis- ja vanhentumistoiminnon poistaminen käytöstä
+              href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mukautusten analyysiraportti
+          href: ../../dev-itpro/dev-tools/customization-analysis-report.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Elementin suunnittelutoiminnot
+          href: ../../dev-itpro/dev-tools/element-designers.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Elementin käytön määrittelykomennot
+          href: ../../dev-itpro/dev-tools/element-usage.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mallien vienti ja tuonti
+          href: ../../dev-itpro/dev-tools/models-export-import.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Metatietojen etsintä Visual Studiossa
+          href: ../../dev-itpro/dev-tools/metadata-search-visual-studio.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mallit ja paketit
+          href: ../../dev-itpro/dev-tools/models.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Finance and Operations -projektityyppi
+          href: ../../dev-itpro/dev-tools/projects.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Työkaluapuohjelmat Visual Studiolle
+          href: ../../dev-itpro/dev-tools/developer-tools-add-ins.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Visual Studio -kehitystyökalujen päivittäminen
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: X++-ohjelmointikieli
+      items:
+        - name: X++ ja virheenkorjausominaisuudet
+          href: ../../dev-itpro/dev-tools/new-x-debugger-features.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: X++-koodin virheenkorjaus
+          href: ../../dev-itpro/dev-tools/debug-xpp.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: EventHandlerResult-luokat pyyntö- tai vastausskenaarioissa
+          href: ../../dev-itpro/dev-tools/event-handler-result-class.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Liiketoimintalogiikan kirjoittaminen C#- ja X++-lähdekoodilla'
+          href: ../../dev-itpro/dev-tools/write-business-logic.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: X++-koodin muutokset ja X++-kääntäjä
+          href: ../../dev-itpro/dev-tools/programming-language-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'C#:n LINQ-palvelu'
+          href: ../../dev-itpro/dev-tools/linq-provider-c.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Parhaita käytäntöjä koskevien sääntöjen kirjoittaminen
+          href: ../../dev-itpro/dev-tools/author-best-practice-rules.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sovellusten hallinnan ominaisuudet
+          href: ../../dev-itpro/dev-ref/application-explorer-aot-properties.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: X++-kielen opastus
+          items:
+            - name: X++-kielen opastus – yleiskatsaus
+              href: ../../dev-itpro/dev-ref/xpp-language-reference.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Muuttujat ja tietotyypit
+              items:
+                - name: Muuttujat
+                  href: ../../dev-itpro/dev-ref/xpp-variables-data-types.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Primitiiviset tietotyypit
+                  href: ../../dev-itpro/dev-ref/xpp-data-primitive.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Yhdistelmätietotyypit
+                  href: ../../dev-itpro/dev-ref/xpp-data-composite.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Kokoelmaluokat
+                  href: ../../dev-itpro/dev-ref/xpp-data-collection.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Laajennetut tietotyypit
+                  href: ../../dev-itpro/dev-ref/xpp-data-edt.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Lausekkeet, silmukat ja poikkeuksien käsittely'
+              items:
+                - name: 'Kommentit, käyttäminen ja tulostaminen'
+                  href: ../../dev-itpro/dev-ref/xpp-statements-loops.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Ehdolliset lausekkeet
+                  href: ../../dev-itpro/dev-ref/xpp-conditional.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Silmukkalauseet
+                  href: ../../dev-itpro/dev-ref/xpp-loops.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Poikkeusten käsittely
+                  href: ../../dev-itpro/dev-ref/xpp-exceptions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Yhteyden SQL-virheen X++-poikkeus
+              href: ../../dev-itpro/dev-ref/sql-connection-error.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: X++-operaattorit
+              href: ../../dev-itpro/dev-ref/xpp-operators.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: X++-operaattoreiden käsittelyjärjestys
+              href: ../../dev-itpro/dev-ref/xpp-operator-precedence.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: X++-luokat ja -menetelmät
+              items:
+                - name: Luokat ja menetelmät
+                  href: ../../dev-itpro/dev-ref/xpp-classes-methods.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Periytyminen
+                  href: ../../dev-itpro/dev-ref/xpp-inheritance.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Luokan staattiset jäsenet
+                  href: ../../dev-itpro/dev-ref/xpp-static-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Käyttöliittymät
+                  href: ../../dev-itpro/dev-ref/xpp-interfaces.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Kirjastot
+                  href: ../../dev-itpro/dev-ref/xpp-library-objects.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Tapahtumat
+                  href: ../../dev-itpro/dev-ref/xpp-events.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: X++-tietojen valinta ja käsittely
+              href: ../../dev-itpro/dev-ref/xpp-data-query.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tietojen käyttäminen SysDa-ohjelmointirajapinnan avulla
+              href: ../../dev-itpro/dev-ref/sysda.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: X++-makrot
+              href: ../../dev-itpro/dev-ref/xpp-macros.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: X++-määriteluokat
+              href: ../../dev-itpro/dev-ref/xpp-attribute-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'X++- ja C#-kielen vertailu'
+              href: ../../dev-itpro/dev-ref/xpp-cs-comparison.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: X++-syntaksi
+              href: ../../dev-itpro/dev-ref/xpp-syntax.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: 'Ohjelmointirajapinta-, luokka- ja tauluviite'
+      items:
+        - name: 'Ohjelmointirajapinta-, luokka- ja tauluresurssit'
+          href: ../../dev-itpro/dev-ref/api-reference.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Käännöksenaikaiset X++-funktiot
+          href: ../../dev-itpro/dev-ref/xpp-compile-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Suorituksenaikaiset X++-funktiot
+          items:
+            - name: Suorituksenaikaiset X++-funktioresurssit
+              href: ../../dev-itpro/dev-ref/xpp-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Suorituksenaikaiset X++-liiketoimintafunktiot
+              href: ../../dev-itpro/dev-ref/xpp-business-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Suorituksenaikaiset X++-säilöfunktiot
+              href: ../../dev-itpro/dev-ref/xpp-container-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Suorituksenaikaiset X++-muuntofunktiot
+              href: ../../dev-itpro/dev-ref/xpp-conversion-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Suorituksenaikaiset X++-päivämääräfunktiot
+              href: ../../dev-itpro/dev-ref/xpp-date-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Suorituksenaikaiset X++-matematiikkafunktiot
+              href: ../../dev-itpro/dev-ref/xpp-math-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Suorituksenaikaiset X++-reflektiofunktiot
+              href: ../../dev-itpro/dev-ref/xpp-reflection-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Suorituksenaikaiset X++-istuntofunktiot
+              href: ../../dev-itpro/dev-ref/xpp-session-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Suorituksenaikaiset X++-merkkijonofunktiot
+              href: ../../dev-itpro/dev-ref/xpp-string-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Järjestelmätaulut
+          href: ../../dev-itpro/dev-ref/system-tables.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Järjestelmäluokat
+          items:
+            - name: A-luokat
+              href: ../../dev-itpro/dev-ref/a-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: B-luokat
+              href: ../../dev-itpro/dev-ref/b-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: C-luokat
+              href: ../../dev-itpro/dev-ref/c-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: D-luokat
+              href: ../../dev-itpro/dev-ref/d-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: E-luokat
+              href: ../../dev-itpro/dev-ref/e-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FieldBinding–FormBuildAnimateControl)
+              href: ../../dev-itpro/dev-ref/fieldbinding-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormBuildButtonControl–FormBuildFastTabSummarySeparator)
+              href: ../../dev-itpro/dev-ref/formbuildbuttoncontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormBuildFilterPaneControl–FormBuildRealControl)
+              href: ../../dev-itpro/dev-ref/formbuildfilterpanecontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormBuildReferenceControl–FormButtonSeparatorControl)
+              href: ../../dev-itpro/dev-ref/formbuildreferencecontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormChangeTracker to FormControlEventArgs)
+              href: ../../dev-itpro/dev-ref/formchangetracker-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormDataObject–FormFastTabHeaderControl)
+              href: ../../dev-itpro/dev-ref/formdataobject-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormFastTabSummarySeparator–FormGridControl)
+              href: ../../dev-itpro/dev-ref/formfasttabsummaryseparator-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormGroupControl–FormIntControl)
+              href: ../../dev-itpro/dev-ref/formgroupcontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormListBoxControl–FormNotifyEventArgs)
+              href: ../../dev-itpro/dev-ref/formlistboxcontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormObject–FormRealControl)
+              href: ../../dev-itpro/dev-ref/formobject-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormReferenceControl–FormStringControl)
+              href: ../../dev-itpro/dev-ref/formreferencecontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-luokat (FormTabControl–FormWindowControl)
+              href: ../../dev-itpro/dev-ref/formtabcontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: G-luokat
+              href: ../../dev-itpro/dev-ref/g-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: H-luokat
+              href: ../../dev-itpro/dev-ref/h-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: I-luokat
+              href: ../../dev-itpro/dev-ref/i-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: J-luokat
+              href: ../../dev-itpro/dev-ref/j-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: K-luokat
+              href: ../../dev-itpro/dev-ref/k-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: L-luokat
+              href: ../../dev-itpro/dev-ref/l-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: M-luokat
+              href: ../../dev-itpro/dev-ref/m-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: N-luokat
+              href: ../../dev-itpro/dev-ref/n-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: O-luokat
+              href: ../../dev-itpro/dev-ref/o-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: P-luokat
+              href: ../../dev-itpro/dev-ref/p-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Q-luokat
+              href: ../../dev-itpro/dev-ref/q-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: R-luokat
+              href: ../../dev-itpro/dev-ref/r-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: S-luokat
+              href: ../../dev-itpro/dev-ref/s-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: T-luokat
+              href: ../../dev-itpro/dev-ref/t-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: U-luokat
+              href: ../../dev-itpro/dev-ref/u-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: V-luokat
+              href: ../../dev-itpro/dev-ref/v-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: W-luokat
+              href: ../../dev-itpro/dev-ref/w-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: X-luokat
+              href: ../../dev-itpro/dev-ref/x-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Laajennettavuus
+      items:
+        - name: Laajennettavuuden kotisivu
+          href: ../../dev-itpro/extensibility/extensibility-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Esittely ja aloittaminen
+          items:
+            - name: Sovelluksen laajennettavuuspaketti
+              href: ../../dev-itpro/extensibility/extensibility-roadmap.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuspyynnöt
+              href: ../../dev-itpro/extensibility/extensibility-requests.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuus – usein kysytyt kysymykset
+              href: ../../dev-itpro/extensibility/app-sealing-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Siirtyminen lisäyksistä laajennuksiin
+              href: ../../dev-itpro/extensibility/migrate-overlayer-extension.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Mallielementtien mukauttaminen laajennuksella (opetusohjelma)
+              href: ../../dev-itpro/extensibility/customize-model-elements-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Mukauttaminen laajennuksella ja lisäyksillä
+              href: ../../dev-itpro/extensibility/customization-overlayering-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uutta
+          items:
+            - name: Laajennettavuuden uudet ja muuttuneet ominaisuudet
+              href: ../../dev-itpro/extensibility/extensibility-new.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 10.0.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-3.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 10.0.2
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-2.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 10.0.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-1.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 10.0
+              href: ../../dev-itpro/extensibility/extensibility-changes-10.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 8.1.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-813.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 8.1.2
+              href: ../../dev-itpro/extensibility/extensibility-changes-812.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 8.1.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-811.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 8.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-81.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 8.0.4
+              href: ../../dev-itpro/extensibility/extensibility-changes-804.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 8.0.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-803.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 8.0.2
+              href: ../../dev-itpro/extensibility/extensibility-changes-802.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 8.0.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-801.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 8.0
+              href: ../../dev-itpro/extensibility/changes-80.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset versiossa 7.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-73.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavuuden muutokset heinäkuu 2017
+              href: ../../dev-itpro/extensibility/changes-july-2017.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Perusteet
+          items:
+            - name: Tunkeutuvat mukautukset
+              href: ../../dev-itpro/extensibility/intrusive-customizations.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Luokan laajennusmalli
+              href: ../../dev-itpro/extensibility/class-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Luokan laajennus menetelmän paketoinnin ja komentoketjun kautta
+              href: ../../dev-itpro/extensibility/method-wrapping-coc.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennusten nimeämisohjeet
+              href: ../../dev-itpro/extensibility/naming-guidelines-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Mallien rajoitusten höllentäminen, jotta lisääminen voidaan refaktoroida laajennuksiin'
+              href: ../../dev-itpro/extensibility/refactoring-over-layering.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Laajennusten luonti
+          items:
+            - name: 'Arvojen lisääminen enums:iin'
+              href: ../../dev-itpro/extensibility/add-enum-value.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettujen tietotyyppien muokkaaminen
+              href: ../../dev-itpro/extensibility/modify-edt.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Valmiiden menetelmien aliluokkien rekisteröinti
+              href: ../../dev-itpro/extensibility/register-subclass-factory-methods.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Vastaaminen käyttämällä kohdetta EventHandlerResult
+              href: ../../dev-itpro/extensibility/respond-event-handler-result.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: RunBase-luokan laajentaminen
+              href: ../../dev-itpro/extensibility/extend-runbase-class.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Sovelluksen käynnistyksen mukauttaminen valtuutettujen viittausten avulla
+              href: ../../dev-itpro/extensibility/startup-customizations.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Taulussa olevien kenttien muokkaaminen
+              href: ../../dev-itpro/extensibility/modify-existing-field.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Kenttien lisääminen tauluihin
+              href: ../../dev-itpro/extensibility/add-field-extension.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Indeksien lisääminen tauluihin
+              href: ../../dev-itpro/extensibility/add-index.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Suhteiden lisääminen tauluihin
+              href: ../../dev-itpro/extensibility/add-relation.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Taulun ominaisuuksien muokkaaminen
+              href: ../../dev-itpro/extensibility/modify-properties.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Menetelmien lisääminen tauluihin
+              href: ../../dev-itpro/extensibility/add-method-table.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Liiketoimintatehtävien suorittaminen taulun tietueiden koko elinkaaren ajan
+              href: ../../dev-itpro/extensibility/subscribe-table-events.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tietolähteiden lisääminen lomakkeisiin
+              href: ../../dev-itpro/extensibility/add-datasource.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Lomakkeen otsikkojen muuttaminen
+              href: ../../dev-itpro/extensibility/change-caption-form.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Lomakkeen ohjausobjektien ominaisuuksien muokkaaminen
+              href: ../../dev-itpro/extensibility/modify-control-properties.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Numerosarja-alueen laajentaminen
+              href: ../../dev-itpro/extensibility/extend-number-sequence-scope.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Uusien varastodimensioiden lisääminen
+              href: ../../dev-itpro/extensibility/inventory-dimensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hinnan ja alennusten laajennettavuus
+              href: ../../dev-itpro/extensibility/pricing-app73.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Taulumäärityksen laajennus
+              href: ../../dev-itpro/extensibility/map-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Käyttöliittyminä käytettävät laajennetut taulumääritykset
+              href: ../../dev-itpro/extensibility/maps-as-interfaces.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Versionhallinnassa käytettävät laajennetut taulumääritykset
+              href: ../../dev-itpro/extensibility/maps-with-versioning.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Valittujen tietotyyppien desimaalitarkkuuden laajentaminen
+              href: ../../dev-itpro/extensibility/decimal-point-precision.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Laajennettavien ratkaisujen luominen
+          items:
+            - name: Laajennettavissa olevan koodin kirjoittaminen
+              href: ../../dev-itpro/extensibility/writing-extensible-code.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Luokat
+              href: ../../dev-itpro/extensibility/extensible-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Metodit
+              href: ../../dev-itpro/extensibility/extensible-methods.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Lomakkeet
+              href: ../../dev-itpro/extensibility/extensible-forms.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennetut tietotyypit
+              href: ../../dev-itpro/extensibility/extensible-edts.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Laajennettavissa olevat valintalistat
+              href: ../../dev-itpro/extensibility/extensible-enums.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Siirrot
+              href: ../../dev-itpro/extensibility/extensible-code-delegates.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Taulut
+              href: ../../dev-itpro/extensibility/extensible-tables.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Menetelmien laajennettavuusmääritteet
+              href: ../../dev-itpro/extensibility/extensibility-attributes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tärkeimmät muutokset.
+              href: ../../dev-itpro/extensibility/breaking-changes.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Suorituskyky
+      items:
+        - name: Jäljittäminen jäljityksen jäsentimen avulla
+          href: ../../dev-itpro/perf-test/trace-trace-tutorial.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Yhden käyttäjän testaus tehtävän tallennustoiminnon ja suorituskyvyn SDK:n avulla'
+          href: ../../dev-itpro/perf-test/single-user-test-perf-sdk.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n ja paikallisen testauksen valvojan avulla'
+          href: ../../dev-itpro/perf-test/multi-user-testing-local-test-controller.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n ja Azure DevOps -palvelun avulla'
+          href: ../../dev-itpro/perf-test/multi-user-testing-perfsdk-azuredevops.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Vianmäärityksen opas yhden tai usean käyttäjän testausta varten suorituskyvyn SDK:n avulla'
+          href: ../../dev-itpro/perf-test/troubleshoot-perf-sdk-user-testing.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Suorituskyvyn SDK ja usean käyttäjän testaus paikallisissa ympäristöissä
+          href: ../../dev-itpro/perf-test/perfsdk-tutorial-lbd.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Ongelmien vianmääritys ja suorituskyvyn analysointi Trace parser
+          href: ../../dev-itpro/perf-test/trace-parser.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Suorituskyvyn ajastin
+          href: ../../dev-itpro/perf-test/performance-timer.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tuen testaaminen Visual Studiossa
+      items:
+        - name: Testaus ja tarkistukset
+          href: ../../dev-itpro/perf-test/testing-validation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Testiprojektit Visual Studiossa
+          href: ../../dev-itpro/perf-test/testing-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Jatkuvaa koonnin ja testauksen automaatiota tukevien ympäristöjen käyttöönotto
+          href: ../../dev-itpro/perf-test/continuous-build-test-automation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: SysTest-suodatus luokka- ja metodiattribuutteja käyttäen
+          href: ../../dev-itpro/perf-test/systest-filtering.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Hyväksyntätestikirjasto
+          items:
+            - name: Hyväksyntätestikirjaston resurssit
+              href: ../../dev-itpro/perf-test/acceptance-test-library.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Siirtymisruudun käsitteet
+              href: ../../dev-itpro/perf-test/concepts-navigation.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tiedon testausmenetelmät
+              href: ../../dev-itpro/perf-test/test-data-methods.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hyväksyntätestauskirjaston entiteetit
+              href: ../../dev-itpro/perf-test/concepts-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hyväksyntätestikirjaston komennot
+              href: ../../dev-itpro/perf-test/concepts-commands.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hyväksyntätestikirjaston luojat
+              href: ../../dev-itpro/perf-test/concepts-creators.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hyväksyntätestikirjaston kyselyt
+              href: ../../dev-itpro/perf-test/concepts-queries.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Määritysluokat
+              href: ../../dev-itpro/perf-test/concepts-specifications.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hyväksymistestikirjastokoodin luomisen ohjattu toiminto
+              href: ../../dev-itpro/perf-test/code-generation-wizard.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hyväksymistestikirjaston parhaat käytännöt
+              href: ../../dev-itpro/perf-test/atl-best-practices.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Usein kysytyt kysymykset
+              href: ../../dev-itpro/perf-test/atl-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Voimassaolopäivä
+      href: ../../dev-itpro/dev-tools/date-effectivity.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: ISV-käyttöoikeudet
+      href: ../../dev-itpro/dev-tools/isv-licensing.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Paikalliset ISV-käyttöoikeudet
+      href: ../../dev-itpro/dev-tools/isv-licensing-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Yleinen tietosuoja-asetus (GDPR)
+  items:
+    - name: Yleinen tietosuoja-asetus (GDPR) – yleiskatsaus
+      href: ../../dev-itpro/gdpr/gdpr-guide.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: GDPR-tietopyyntöihin vastaaminen
+      items:
+        - name: GDPR-tietopyyntöihin vastaamisen resurssit
+          href: ../../dev-itpro/gdpr/gdpr-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Omaisuuserien luokittelut
+          href: ../../dev-itpro/gdpr/gdpr-asset-classification-values.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Henkilöhakuraportti
+          href: ../../dev-itpro/gdpr/gdpr-person-search-report.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Henkilöhakuraportin laajentaminen
+          href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Luottamuksellisten tietojen käytön hallinta
+          href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Henkilötietopyyntöihin vastaaminen Talentilla
+          href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Henkilötietopyyntöihin vastaaminen AX 2012:ssa'
+          href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'LCS:n GDPR-tietopyynnöt'
+          href: ../../dev-itpro/gdpr/gdpr-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Lifecycle Services
+  items:
+    - name: Resurssit Lifecycle Services -portaalia varten
+      items:
+        - name: Lifecycle Services -resurssit
+          href: ../../dev-itpro/lifecycle-services/lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Asiakkaiden LCS
+          href: ../../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kumppanien LCS
+          href: ../../dev-itpro/lifecycle-services/getting-started-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uutta
+          href: ../../dev-itpro/lifecycle-services/whats-new-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tunnetut ongelmat
+          href: ../../dev-itpro/lifecycle-services/known-issues.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Lifecycle Services -käyttöopas
+      href: ../../dev-itpro/lifecycle-services/lcs-user-guide.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tilauksen arviointityökalu
+      href: ../../dev-itpro/lifecycle-services/subscription-estimator.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Suojauksen määrittäminen
+      href: ../../dev-itpro/lifecycle-services/configure-lcs-security.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Ongelmahaku
+      href: ../../dev-itpro/lifecycle-services/issue-search-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Määritystenhallinta
+      items:
+        - name: Määritystenhallinnan yleiskatsaus
+          href: ../../dev-itpro/lifecycle-services/configuration-manager-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Määritystenhallinnan määrittäminen
+          href: ../../dev-itpro/lifecycle-services/set-up-configuration-manager-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Koodin päivityspalvelun määrittäminen
+      href: ../../dev-itpro/lifecycle-services/configure-execute-code-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Metodologioiden luominen tai päivittäminen
+      href: ../../dev-itpro/lifecycle-services/create-methodology.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Liiketoimintaprosessien mallintaja
+      href: ../../dev-itpro/lifecycle-services/bpm-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Liiketoimintaprosessien mallintajan liiketoimintaprosessikirjastot
+      href: ../../dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: 'Liiketoimintaprosessien mallintajan kirjastojen luominen, muokkaaminen ja selaaminen'
+      href: ../../dev-itpro/lifecycle-services/creating-editing-browsing.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tehtävien suorittaminen liiketoimintaprosessien mallintajassa
+      href: ../../dev-itpro/lifecycle-services/complete-tasks-bpm.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: BPM-kirjastoissa olevien tehtäväkaavioiden käsitteleminen
+      href: ../../dev-itpro/lifecycle-services/using-activity-diagrams.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: BPM-kirjastojen ja Azure DevOps -palvelun synkronoiminen
+      href: ../../dev-itpro/lifecycle-services/synchronize-bpm-vsts.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Käyttäjän hyväksyntätestauskirjastojen luominen tehtäväoppaiden ja BPM-määritysten avulla
+      href: ../../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Liiketoimintaprosessien mallintajan vuokaaviot
+      href: ../../dev-itpro/lifecycle-services/flowcharts-business-process-modeler.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Mukautettujen liiketoimintaprosessien lataaminen liiketoimintaprosessien mallintajaan
+      href: ../../dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Valvonta ja diagnostiikka
+      href: ../../dev-itpro/lifecycle-services/monitoring-diagnostics.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Ympäristöpalvelujen käynnistäminen uudelleen
+      href: ../../dev-itpro/lifecycle-services/restart-environment-services.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Raportoi tuotantokatkos
+      href: ../../dev-itpro/lifecycle-services/report-production-outage.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Käyttäjien sisäänkirjautumisten seuraaminen
+      href: ../../dev-itpro/lifecycle-services/user-logins.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Resurssikirjasto
+      href: ../../dev-itpro/lifecycle-services/asset-library.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: "Suorituskykyongelmien ratkaiseminen\_LCS-työkaluilla"
+      href: ../../dev-itpro/lifecycle-services/performancetroubleshooting.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kyselyohjeita
+      href: ../../dev-itpro/lifecycle-services/querycookbook.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Microsoft Dynamics 365 Translation Service
+      items:
+        - name: Dynamics 365 Translation Servicen yleiskatsaus
+          href: ../../dev-itpro/lifecycle-services/translation-service-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Käyttöliittymätiedostojen kääntäminen
+          href: ../../dev-itpro/lifecycle-services/use-translation-service.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Dokumentointitiedostojen kääntäminen
+          href: ../../dev-itpro/lifecycle-services/use-translation-service-ua.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Käännösmuistitiedostot
+          href: ../../dev-itpro/lifecycle-services/use-translation-service-tm.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Mobiiliympäristö
+  items:
+    - name: Mobiiliympäristön resurssit
+      href: ../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Aloittaminen
+      items:
+        - name: Mobiiliympäristön käytön aloittaminen
+          href: ../../dev-itpro/mobile-apps/platform/mobile-platform-getting-started.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Suunnitteluun ja arkkitehtuuriin liittyvää tietoa
+          href: ../../dev-itpro/mobile-apps/platform/mobile-platform-architecture.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Liiketoimintalogiikan tapahtumat
+          href: ../../dev-itpro/mobile-apps/platform/business-logic-events-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sivusuunnittelun ohjeet
+          href: ../../dev-itpro/mobile-apps/platform/page-design-guidelines.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Toimintojen suunnittelun ohjeet
+          href: ../../dev-itpro/mobile-apps/platform/action-design-guidelines.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lomakkeiden suunnitteluvaatimukset
+          href: ../../dev-itpro/mobile-apps/platform/form-design-requirements.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Yleiset tehtävät
+      items:
+        - name: Työtilojen määrittäminen SysAppWorkspace-luokan avulla
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/mobile-workspace-configuration.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mobiilisovelluksen sivuilla olevien kenttien muuttaminen napsautettaviksi
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/make-workspace-field-clickable.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Määrien näyttäminen kentissä
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/display-count-workspace.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mobiilityötilojen suojaaminen
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/secure-mobile-workspace.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mobiilityötilojen lokalisointi
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/localize-workspaces-on-server.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kenttien muuttaminen pakollisiksi työtilaluokkien avulla
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/make-field-mandatory.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Palvelinpuolen kehityksen viite
+      items:
+        - name: Palvelinpuolen kehitys (työtila X++ -ohjelmointirajapinnat)
+          href: ../../dev-itpro/mobile-apps/platform/mobile-workspace-server-apis.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Asiakaspuolen kehityksen viite
+      items:
+        - name: Asiakaspuolen suunnittelun ohjelmointirajapinnat
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/client-api-design-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Asiakkaan ohjelmointirajapinnat
+          items:
+            - name: Asiakasohjelmien ohjelmointirajapintojen aloitussivu
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/client-apis-reference.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PageState-luettelointi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Sovellusmoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/services-application.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Moduulin lykkääminen
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/defer.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tapahtumamoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Työnohjausmoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Konttimoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Kenttämoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tiedoston lataaja -moduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ryhmämoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-group-igroup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hyperlinkkimoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Kuvamoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Syötemoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Luettelomoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-list-ilist.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hakumoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Monihakumoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Sivumoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-ipage.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Sivulinkkimoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Osamoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Palvelumoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/services-business-logic-services.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Arvomoduuli
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Sovellustyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplication.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ApplicationMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: AsyncService-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: CacheService-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: CompleteEventArgs-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ContainerControl-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ContainerControlDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ContainerControlMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ControlMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: DataService-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Lykätty tyyppi<T>
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/defer-ideferred.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Suunnittelutyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: EventHook-tyyppi<T>
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Kentän tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: FieldDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: FieldMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: FileUploader-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: FileUploaderDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: FileUploaderMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: GenericValue-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: getDataSource-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ryhmän tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: GroupDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: GroupMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: HyperLink-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: HyperLinkDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: HyperLinkMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Kuvatyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ImageDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ImageMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagemetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: InputControl-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: InputControlDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: InputControlMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Luettelotyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ListDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ListMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hakutyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: LookupDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: LookupMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: MetadataService-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: MultiLookup-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: MultiLookupDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: MultiLookupMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: NavigationArgs-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: NumberSequenceConfig-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Sivutyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PageData-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PageLink-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PageLinkDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PageLinkMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PageMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PageOptions-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PageSubmitArgs-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PageTarget-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Osatyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PartDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: PartMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Rivityyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Arvotyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ValueDesign-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: ValueMetadata-tyyppi
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Regression Suite Automation Tool
+  items:
+    - name: Regression Suite Automation Tool – yleiskatsaus
+      href: ../../dev-itpro/perf-test/rsat/rsat-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Asennus ja määrittäminen
+      href: ../../dev-itpro/perf-test/rsat/rsat-install-configure.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tietoriippumaaton testaaminen Regression Suite Automation Toolilla
+      href: ../../fin-and-ops/get-started/recommendation-data-agnostic-testing-rsat.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Testitapausten suorittaminen
+      href: ../../dev-itpro/perf-test/rsat/rsat-run.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Odotettujen arvojen tarkistaminen
+      href: ../../dev-itpro/perf-test/rsat/rsat-validate-expected.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Testitapausten ketjuttaminen
+      href: ../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Johdetut testitapaukset
+      href: ../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Regression Suite Automation Tool -oppaan käyttäminen
+      href: ../../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Parhaat käytännöt
+      href: ../../dev-itpro/perf-test/rsat/rsat-best-practices.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Vianmääritys
+      href: ../../dev-itpro/perf-test/rsat/rsat-troubleshooting.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Ratkaisujen vapauttaminen Lifecycle Services -portaalin avulla
+  items:
+    - name: Kehittäminen ja vapauttaminen
+      href: ../../dev-itpro/lcs-solutions/lcs-solutions-app-source.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Väliaikainen tallennus ja julkaiseminen
+      href: ../../dev-itpro/lcs-solutions/marketing-content-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Metodologioiden lisääminen
+      href: ../../dev-itpro/lcs-solutions/methodologies-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Liiketoimintaprosessien mallintajakirjastojen määrittäminen
+      href: ../../dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Koodin siirto
+      href: ../../dev-itpro/lcs-solutions/code-migration-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Sovellusten vahvistaminen
+      href: ../../dev-itpro/lcs-solutions/app-validation-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tietopakettien käsittely ja kuluttaminen
+      href: ../../dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Ratkaisutietokantojen varmuuskopiointi
+      href: ../../dev-itpro/lcs-solutions/database-backup-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Lokalisointi- ja säädösominaisuudet
+      items:
+        - name: Maailmanlaajuisen käytön resurssit
+          href: ../../dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lokalisointiominaisuuksien luokitus
+          href: ../../dev-itpro/lcs-solutions/classify-localization-features.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Maa- tai aluekontekstin ottaminen käyttöön
+          href: ../../dev-itpro/lcs-solutions/apply-country-context.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lakisääteiset varmennetiedot ominaisuuden otsikoissa
+          href: ../../dev-itpro/lcs-solutions/regulatory-certifications.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Pakolliset päivitykset
+          href: ../../dev-itpro/lcs-solutions/regulatory-watch-communication.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lokalisointimallien erottaminen
+          href: ../../dev-itpro/lcs-solutions/separate-localization-models.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lakisääteisten ilmoitusten lähettäminen
+          href: ../../dev-itpro/lcs-solutions/submit-localization-alerts.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Tuki
+  items:
+    - name: Finance and Operations- ja Lifecycle Services -tuki
+      href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Dynamics 365 -tuen yleiskatsaus
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+    - name: Tuki 21Vianetin ylläpitämään Finance and Operationsiin Kiinassa
+      href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Premier-palvelupyynnön kirjaaminen
+      href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Pyyntöjen lähettäminen Dynamics Service -kehitysryhmälle
+      href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Finance and Operationsin teknisen tuen määrittäminen
+      href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Suunniteltu ylläpitoajankohta - usein kysytyt kysymykset
+      href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Pilvipalvelut ja huolto
+      href: ../../dev-itpro/lifecycle-services/cloud-operations-servicing.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Finance and Operations -tukikokemusten hallinta
+      href: ../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Järjestelmän hallinta
+  items:
+    - name: Järjestelmänhallinnan aloitussivu
+      href: ../../dev-itpro/sysadmin/system-administration-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Yrityksen juridisiin ehtoihin ja tietosuojatietoihin johtavien linkkien lisääminen
+      href: ../../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Käyttöoikeuskoodien ja määritysavainten raportti
+      href: ../../dev-itpro/sysadmin/license-codes-configuration-keys-report.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Yritystenvälinen tietojen jakaminen
+      href: ../../dev-itpro/sysadmin/cross-company-data-sharing.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Ylläpitotila
+      href: ../../dev-itpro/sysadmin/maintenance-mode.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Esimääritetyt järjestelmätilit
+      href: ../../dev-itpro/sysadmin/pre-configured-system-accounts.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: 'Vie B2B-käyttäjät Azure AD:hen'
+      href: ../../dev-itpro/sysadmin/implement-b2b.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Suojaus
+      items:
+        - name: Rooliperustainen suojaus
+          href: ../../dev-itpro/sysadmin/role-based-security.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Suojausarkkitehtuuri
+          href: ../../dev-itpro/sysadmin/security-architecture.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Käyttämättömän istunnon aikakatkaisun määrittäminen
+          href: ../../dev-itpro/sysadmin/session-idle-timeout.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Valmiit suojausraportit
+          href: ../../dev-itpro/sysadmin/security-reports.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uusien käyttäjien luominen
+          href: ../../dev-itpro/sysadmin/tasks/create-new-users.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Käyttäjien joukkotuonti
+          href: ../../dev-itpro/sysadmin/tasks/import-bulk-users.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tehtävien eriyttämisen määrittäminen
+          href: ../../dev-itpro/sysadmin/tasks/set-up-segregation-duties.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tehtävien eriyttämisen ristiriitojen tunnistaminen ja ratkaiseminen
+          href: ../../dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Käyttäjien liittäminen käyttöoikeusrooleihin
+          href: ../../dev-itpro/sysadmin/tasks/assign-users-security-roles.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Eräkäsittely
+      items:
+        - name: Eräkäsittelyn yleiskatsaus
+          href: ../../dev-itpro/sysadmin/batch-processing-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Eräkäsittely ja eräpalvelimet
+          href: ../../dev-itpro/sysadmin/batch-server-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Erätöiden luominen
+          href: ../../dev-itpro/sysadmin/tasks/create-batch-job.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Erätyön kopiointi
+          href: ../../dev-itpro/sysadmin/copy-batch-job.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Aktiiviset eräjaksot
+          href: ../../dev-itpro/sysadmin/activeperiod.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Erien hallinnan käyttöoikeusrooli
+          href: ../../dev-itpro/sysadmin/runby.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Erätyö SQL-indeksin eheyttämisen käsittelemistä varten
+          href: ../../dev-itpro/sysadmin/batch-job-SQL-defragmentation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Määritä eräajon hälytyksiä
+          href: ../../dev-itpro/sysadmin/alerts.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Laajennetut erälomakkeet
+          href: ../../dev-itpro/sysadmin/enhanced-forms.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tyhjennä erätöiden historia
+          href: ../../dev-itpro/sysadmin/batch-history-cleanup.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Erätyön suorituksen keskeytys
+          href: ../../dev-itpro/sysadmin/batch-abort.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Optimointiavustaja
+      items:
+        - name: Optimointiavustajan yleiskuvaus
+          href: ../../dev-itpro/sysadmin/optimization-advisor-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Optimointiavustajan sääntöjen luominen
+          href: ../../dev-itpro/sysadmin/create-rules-optimization-advisor.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tuotantokatkoksesta ilmoittaminen
+      href: ../../dev-itpro/lifecycle-services/report-production-outage.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset'
+  items:
+    - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset – resurssit'
+      href: ../../dev-itpro/migration-upgrade/upgrade-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Päivitä AX 2012 -versiosta
+      items:
+        - name: 'AX 2012:n päivittäminen Finance and Operationsiin'
+          href: ../../dev-itpro/migration-upgrade/upgrade-overview-2012.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -versiopäivitys – suunnitteleminen päivityksen analysointityökalun avulla
+          href: ../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -päivitys – työmäärän arvioiminen koodin päivityspalvelun avulla
+          href: ../../dev-itpro/migration-upgrade/analyze-code-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -päivitys – esittely-ympäristön käyttöönotto analysointia varten
+          href: ../../dev-itpro/migration-upgrade/analysis-sandbox.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -päivitys – tietojen päivitys kehitysympäristöissä
+          href: ../../dev-itpro/migration-upgrade/data-upgrade-2012.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -päivitys – päivitystä edeltävä tarkistusluettelo tietojen päivitystä varten
+          href: ../../dev-itpro/migration-upgrade/prepare-data-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -päivitys – tietojen päivitys sandbox-ympäristöissä
+          href: ../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -päivitys – valmistelusiirron testaaminen
+          href: ../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -päivitys – päivityksen jälkeiset tehtävät
+          href: ../../dev-itpro/migration-upgrade/app-validation-process.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -päivitys – toimintotestauksen suorittaminen hyväksytysti
+          href: ../../dev-itpro/migration-upgrade/upgrade-functional-validation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -päivitys – käyttöönoton valmistelu
+          href: ../../dev-itpro/migration-upgrade/upgrade-go-live-prep.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012 -päivitys – käyttöönotto
+          href: ../../dev-itpro/migration-upgrade/2012-upgrade-cutover.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Muutokset, jotka vaikuttavat AX 2012:n päivitykseen'
+          items:
+            - name: Tilikartan erottimen muuttaminen yksilöiväksi
+              href: ../../dev-itpro/migration-upgrade/chart-accounts-delimiter-unique.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Yhden tositteen kirjauskansioiden ja valuutan uudelleenarvostusten päivittäminen
+              href: ../../dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Projektiresurssin ajoituksen tietomalli
+              href: ../../dev-itpro/migration-upgrade/data-model-changes-resource-management.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Työnkulun alijärjestelmän muutokset
+              href: ../../dev-itpro/migration-upgrade/workflow-subsystem.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Koostemallien käyttö analysoinnissa kuutioiden sijaan
+              href: ../../dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Päivitettyjen myyntikuutioiden siirtäminen yksikkösäilöön
+              href: ../../dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Budjettisuunnittelun päivitys
+              href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tietojen siirtäminen AX 2009 -järjestelmästä
+      items:
+        - name: "Tietojen siirtäminen\_AX 2009:stä Finance and Operationsiin"
+          href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: "AX 2009 -siirto\_- tietojen siirtotyökalun asennus"
+          href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: "AX 2009 -siirto\_- määritysten luominen"
+          href: ../../dev-itpro/migration-upgrade/generate-maps.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: "AX 2009 -siirto\_- mallien luominen"
+          href: ../../dev-itpro/migration-upgrade/create-package-templates-dmt.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: "AX 2009 -siirto\_- siirtoryhmien luominen"
+          href: ../../dev-itpro/migration-upgrade/create-definition.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: "AX 2009 -siirto\_- pakettien vieminen"
+          href: ../../dev-itpro/migration-upgrade/ax2009-upgrade-export-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: "AX 2009 -siirto\_- pakettien tuominen"
+          href: ../../dev-itpro/migration-upgrade/ax2009-upgrade-import-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Koodin siirto ja päivitys
+      items:
+        - name: Koodin siirto ja päivitys – aloitussivu
+          href: ../../dev-itpro/migration-upgrade/code-migration-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Koodin siirron valmistelu
+          href: ../../dev-itpro/migration-upgrade/prepare-migration.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Azure DevOps -vastaavuuden määrittäminen
+          href: ../../dev-itpro/migration-upgrade/configure-vso-solution.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mallin jako
+          href: ../../dev-itpro/dev-tools/model-split.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mallien välisten riippuvuuksien ratkaiseminen valtuutettujen viittausten avulla
+          href: ../../dev-itpro/migration-upgrade/delegates-migration.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Päivittäminen viimeisimpään päivitykseen (pilvi)
+      items:
+        - name: Uusimpaan päivitykseen siirtyminen
+          href: ../../dev-itpro/migration-upgrade/upgrade-latest-update.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Polut yhteen versioon
+          items:
+            - name: Itsepalvelupäivitys uusimpaan versioon
+              href: ../../dev-itpro/migration-upgrade/self-service-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Uudelleenmuodostus ja päivitys uusimpaan versioon
+              href: ../../dev-itpro/migration-upgrade/appupdate-80-81.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Ohjelmiston elinkaarikäytäntö ja pilviversiot
+          href: ../../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uusimman Platform update -päivityksen käyttöönotto ympäristöissä
+          href: ../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tietojen päivittäminen kehitys- tai esittely-ympäristössä
+          href: ../../dev-itpro/migration-upgrade/upgrade-data-to-latest-update.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kehitystyökalujen päivittäminen
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Koodin kääntämisen suunnittelu viimeisimmän päivityksen perusteella ja kääntämiseen valmistautuminen
+          href: ../../dev-itpro/migration-upgrade/compile-considerations.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Päivittäminen viimeisimpään päivitykseen (paikallinen)
+      items:
+        - name: Päivitysten käyttöönotto paikallisissa ympäristöissä
+          href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Paikallisen ympäristön uudelleenasennus
+          href: ../../dev-itpro/deployment/redeploy-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Suora paikallisen 7.x:n päivittäminen 8.1:een'
+          href: ../../dev-itpro/migration-upgrade/on-prem-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Hotfix-korjaukset
+      items:
+        - name: Hae päivitykset Lifecycle Services -palveluista
+          href: ../../dev-itpro/migration-upgrade/download-hotfix-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Päivitysten käyttöönotto pilviympäristöissä
+          href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Metatietojen hotfix-korjausten asentaminen kehitysympäristöihin
+          href: ../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Reporting Services -korjauspäivitykset kattavissa ympäristöissä
+          href: ../../dev-itpro/migration-upgrade/patch-reporting-service-environment.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Visual Studio -kehitystyökalujen päivittäminen
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Vanhentumiset
+      items:
+        - name: Poistetut tai vanhentuneet ominaisuudet
+          href: ../../dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Menetelmien ja metatietojen elementtien poisto
+          href: ../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Vanhentuneet ohjelmointirajapinnat
+          href: ../../dev-itpro/migration-upgrade/deprecated-apis.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Käyttöliittymäkehitys
+  items:
+    - name: Käyttöliittymäkehityksen aloitussivu
+      href: ../../dev-itpro/user-interface/user-interface-development-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Oppaat
+      items:
+        - name: Vuokrauksen maksutyyppilomakkeen muodostaminen
+          href: ../../dev-itpro/user-interface/build-rental-charge-type-form.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Asiakaslomakkeen muodostaminen
+          href: ../../dev-itpro/user-interface/build-customer-form.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Siirtymisen muodostaminen
+          href: ../../dev-itpro/user-interface/build-navigation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Työtilojen muodostaminen
+          href: ../../dev-itpro/user-interface/build-workspace.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Lomakkeet
+      items:
+        - name: Siirtymisruudun käsitteet
+          href: ../../dev-itpro/user-interface/page-navigation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sivuasettelu WWW-asiakasohjelmassa
+          href: ../../dev-itpro/user-interface/page-layout.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Dynamicsin symbolifontti
+          href: ../../dev-itpro/user-interface/symbol-font.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tallennetut näkymät
+          href: ../../fin-and-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tallennettuja näkymiä täysimääräisesti hyödyntävien lomakkeiden luominen
+          href: ../../dev-itpro/user-interface/understanding-saved-views.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Mukautettuja malleja käyttävien lomakkeiden testaaminen
+          href: ../../dev-itpro/user-interface/testing-forms-custom-patterns.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Jaettavien, suojattujen URL-osoitteiden (syvien linkkien) luominen'
+          href: ../../dev-itpro/user-interface/create-deep-links.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Lomakkeiden, tuotteiden ja ohjausobjektien helppokäyttöomaisuudet'
+          href: ../../dev-itpro/user-interface/enable-accessibility.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kenttien kuvausten mukauttaminen
+          href: ../../dev-itpro/user-interface/customize-field-help.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Ohjausobjektit
+      items:
+        - name: Toiminnon ohjausobjektit
+          href: ../../dev-itpro/user-interface/action-controls.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Syötteen ohjausobjektit ja ruudukon sarakekoot
+          href: ../../dev-itpro/user-interface/sizing-input-controls-grid-columns.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Hakemistopolun valintaruutujen tuki
+          href: ../../dev-itpro/user-interface/check-box-tree-controls.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Suodatusasetukset
+          href: ../../dev-itpro/user-interface/filtering.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: PowerApps-isännän ohjausobjekti
+          href: ../../dev-itpro/user-interface/powerapps-host-control.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Ikkunoiden hallinta
+      items:
+        - name: Pikavalikkokoodin siirtäminen
+          href: ../../dev-itpro/migration-upgrade/code-migration-context-menus.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Siirron kaksoisnapsautuslogiikka
+          href: ../../dev-itpro/migration-upgrade/code-migration-double-click.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Hakujen kontekstitietojen kirjaaminen
+          href: ../../dev-itpro/user-interface/contextual-data-entry-lookups.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: HierarchyViewer-ohjausobjekti
+          href: ../../dev-itpro/user-interface/hierarchy-viewer-control.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Haun ohjausobjektit
+          href: ../../dev-itpro/user-interface/lookups-controls.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tiedostojen lataamisen ohjausobjekti
+          href: ../../dev-itpro/user-interface/file-upload-control.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Järjestelmän määrittämät painikkeet
+          href: ../../dev-itpro/user-interface/system-defined-buttons.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sivulla tai ruudukossa olevat kuvat
+          href: ../../dev-itpro/user-interface/images-form-grid.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Syötön, taulun ja ruudukon ohjausobjektien fontti ja taustavärit'
+          href: ../../dev-itpro/user-interface/specify-color-font-background-controls.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Oikealta vasemmalle -kielituki ja kaksisuuntainen teksti
+          href: ../../dev-itpro/user-interface/bidirectional-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Työtilaruutujen luontikuvakkeet
+          href: ../../dev-itpro/user-interface/create-icons-workspace-tiles.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Laajennettavien ohjausobjektien julkiset JavaScript-ohjelmointirajapinnat
+          href: ../../dev-itpro/user-interface/public-javascript-apis.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tarkistusluettelon hallinta
+          href: ../../dev-itpro/user-interface/control-checklist.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Sanomat
+      items:
+        - name: Kuvatekstitoiminto
+          href: ../../dev-itpro/user-interface/feature-callouts.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Liukusäädin ja MessageBox-valintaikkunat
+          href: ../../dev-itpro/user-interface/slider-messagebox.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Viestikeskus, sanomapalkki ja sanoman tietojen ohjelmointirajapinta'
+          href: ../../dev-itpro/user-interface/messaging-api-center-bar-details.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Viestikeskuksen, sanomapalkin ja sanoman tietojen usein kysytyt kysymykset'
+          href: ../../dev-itpro/user-interface/messaging-user.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Lomakemallin ohjeet
+      items:
+        - name: Siirrettyjen lomakkeiden lomakemallit
+          href: ../../dev-itpro/user-interface/select-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lomaketyylit ja -mallit
+          href: ../../dev-itpro/user-interface/form-styles-patterns.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lomakemalleja tukevat Visual Studio -apuohjelmat
+          href: ../../dev-itpro/user-interface/form-pattern-add-ins.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Lomakemallit
+      items:
+        - name: Yleiset lomakeohjeet
+          href: ../../dev-itpro/user-interface/general-form-guidelines.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tietojen päälomakemalli
+          href: ../../dev-itpro/user-interface/details-master-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tietojen tapahtumalomakemalli
+          href: ../../dev-itpro/user-interface/details-transaction-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lomakeosan osioluettelon lomakemallit
+          href: ../../dev-itpro/user-interface/section-list-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Luettelosivun lomakemalli
+          href: ../../dev-itpro/user-interface/list-page-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Yksinkertainen tietolomakemalli
+          href: ../../dev-itpro/user-interface/simple-details-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Yksinkertainen luettelo- ja tietolomakemalli
+          href: ../../dev-itpro/user-interface/simple-list-details-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Yksikertainen luettelolomakemalli
+          href: ../../dev-itpro/user-interface/simple-list-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sisällysluettelon lomakemalli
+          href: ../../dev-itpro/user-interface/table-of-contents-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tehtävän kaksinkertainen lomakemalli
+          href: ../../dev-itpro/user-interface/task-double-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tehtävän yksinkertainen lomakemalli
+          href: ../../dev-itpro/user-interface/task-single-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lomakemallin ohjattu määrittäminen
+          href: ../../dev-itpro/user-interface/wizard-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Työtilan lomakemalli
+          href: ../../dev-itpro/user-interface/workspace-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Toissijaiset lomakemallit
+      items:
+        - name: Lisävalinnan lomakemalli
+          href: ../../dev-itpro/user-interface/advanced-selection-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Valintaikkunan lomakemalli
+          href: ../../dev-itpro/user-interface/dialog-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Pudota valintaikkuna -lomakemalli
+          href: ../../dev-itpro/user-interface/drop-dialog-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Hakulomakemalli
+          href: ../../dev-itpro/user-interface/lookup-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tietoruudun lomakemallit
+          href: ../../dev-itpro/user-interface/factbox-form-patterns.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Alimallit
+      items:
+        - name: Mukautetun suodatinryhmän alimalli
+          href: ../../dev-itpro/user-interface/custom-filter-group-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Dimensiomerkinnän ohjausobjektin alimalli
+          href: ../../dev-itpro/financial/dimension-entry-control-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Dimensiolausekkeen muodostimen alimalli
+          href: ../../dev-itpro/financial/dimension-expression-builder-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kenttien ja kenttäryhmien alimalli
+          href: ../../dev-itpro/user-interface/fields-field-groups-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Suodattimien ja työkalurivin alimallit
+          href: ../../dev-itpro/user-interface/filters-toolbar-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tekstintäytön alimalli
+          href: ../../dev-itpro/user-interface/fill-text-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Vaakasuuntaisten kenttien ja painikeryhmien alimalli
+          href: ../../dev-itpro/user-interface/horizontal-fields-buttons-group-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kuvan esikatselun alimalli
+          href: ../../dev-itpro/user-interface/image-preview-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Luettelopaneelin alimalli
+          href: ../../dev-itpro/user-interface/list-panel-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sisäkkäinen yksinkertainen luettelon ja tietojen alimalli
+          href: ../../dev-itpro/user-interface/nested-simple-list-details-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Osiokaavion lomakemalli
+          href: ../../dev-itpro/user-interface/section-chart-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Osion Power BI -alimalli
+          href: ../../dev-itpro/user-interface/section-powerbi-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Osion liittyvien linkkien alimalli
+          href: ../../dev-itpro/user-interface/section-related-links-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Osion pinotun kaavion alimalli
+          href: ../../dev-itpro/user-interface/section-stacked-chart-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Osion välilehtiä sisältävän luettelon alimalli
+          href: ../../dev-itpro/user-interface/section-tabbed-list-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Osion ruutujen alimalli
+          href: ../../dev-itpro/user-interface/section-tiles-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Taulukkokenttien alimalli
+          href: ../../dev-itpro/user-interface/tabular-fields-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Työkalurivin ja kenttien alimalli
+          href: ../../dev-itpro/user-interface/toolbar-fields-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Työkalurivin ja luettelon alimalli
+          href: ../../dev-itpro/user-interface/toolbar-list-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Työtilasivun suodatinryhmän alimalli
+          href: ../../dev-itpro/user-interface/workspace-filter-group-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Ohjausobjektin laajennettavuus
+      items:
+        - name: Laajennettavien ohjausobjektien muodostaminen
+          href: ../../dev-itpro/user-interface/build-extensible-control.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Laajennettavien ohjausobjektien pikanäppäimet
+          href: ../../dev-itpro/user-interface/keyboard-shortcuts-controls.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Laajennettavan ohjausobjektin ohjelmointiviite
+          href: ../../dev-itpro/user-interface/extensible-control-programming-reference.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Ohjausobjektin laajennettavuus
+          href: ../../dev-itpro/user-interface/control-extensibility.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lokalisoitavien etikettien luominen
+          href: ../../dev-itpro/user-interface/create-localizable-labels-client.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Laajennettavan ohjausobjektin asetteluohjeet
+          href: ../../dev-itpro/user-interface/extensible-controls-layout.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tehtävien tallennustoiminnon ohjausobjektille luoman tekstin hallinta
+          href: ../../dev-itpro/user-interface/task-recorder-control-text.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Työtilojen muodostaminen
+      items:
+        - name: Toiminnallisten työtilojen muodostaminen
+          href: ../../dev-itpro/user-interface/build-workspaces.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Työtilojen ruudun ja luettelon tallentaminen välimuistiin
+          href: ../../dev-itpro/user-interface/tile-list-caching-workspaces.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tehtävien tallennustoiminto
+      items:
+        - name: Tehtävän tallennustoiminnon resurssit
+          href: ../../dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tehtävien tallennustoiminnon pikaopas
+          href: ../../dev-itpro/user-interface/task-recorder-quick-reference.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Dokumentaation tai koulutuksen luominen tehtävätallenteiden perusteella
+          href: ../../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/financials/toc.json

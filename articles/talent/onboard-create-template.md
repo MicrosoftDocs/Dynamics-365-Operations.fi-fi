@@ -1,6 +1,6 @@
 ---
-title: Perehdytysmallin luominen Dynamics 365 for Talent - Onboardin avulla
-description: Tässä ohjeaiheessa käsitellään uusien työntekijöiden perehdytysmalliin luontia Microsoft Dynamics 365 for Talent - Onboard -sovelluksen avulla. Tämä tehtävä on välttämättömän ensimmäinen vaihe henkilöstöresurssien hallinnan strategiassa joka alkaa työhön ottamisella ja päättyy eläköitymiseen.
+title: 'Perehdytysmallin luominen Dynamics 365 Talent: Onboardin avulla'
+description: 'Tässä ohjeaiheessa käsitellään uusien työntekijöiden perehdytysmalliin luontia Microsoft Dynamics 365 Talent: Onboard -sovelluksen avulla. Tämä tehtävä on välttämättömän ensimmäinen vaihe henkilöstöresurssien hallinnan strategiassa joka alkaa työhön ottamisella ja päättyy eläköitymiseen.'
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c53c24b2913e3ca30cfc6491556b49d5d9230128
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 63f13380f3d2c31c4cc9009142f320ad8a41e8ee
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731455"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009874"
 ---
-# <a name="create-an-onboarding-template-by-using-dynamics-365-for-talent-onboard"></a>Perehdytysmallin luominen Dynamics 365 for Talent: Onboardin avulla
+# <a name="create-an-onboarding-template"></a>Perehdytysmallin luominen
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboardissa on erilaisia malleja, joiden avulla voi luoda perehdytysoppaan mahdollisimman nopeasti. Voit käyttää yhtä tai useita näistä malleista tai voit sitten luoda omia malleja. Onboardissa on näyteteksti, jota voit käyttää, kun luot omia malleja. Tämän vuoksi prosessi ei ole hankala, vaikka aloittaisit alusta.
+Microsoft Dynamics 365 Talent: Onboardissa on erilaisia malleja, joiden avulla voi luoda perehdytysoppaan mahdollisimman nopeasti. Voit käyttää yhtä tai useita näistä malleista tai voit sitten luoda omia malleja. Onboardissa on näyteteksti, jota voit käyttää, kun luot omia malleja. Tämän vuoksi prosessi ei ole hankala, vaikka aloittaisit alusta.
 
 ## <a name="create-an-onboarding-template-from-an-existing-template"></a>Perehdytysmallin luominen aiemmin luodusta mallista
 

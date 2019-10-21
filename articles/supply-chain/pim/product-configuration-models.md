@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d908b9e58da06646e07ddc5fc4d937cc1f1849cd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 883337979201b3059b301b7aebf9952a70016989
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563594"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250619"
 ---
 # <a name="product-configuration-models-overview"></a>Tuotekonfiguraatiomallien yleiskatsaus
 
@@ -118,7 +118,7 @@ Jos määritetyyppinä on <strong>Totuusarvo</strong>, <strong>Kokonaisluku</str
 </tr>
 </tbody>
 </table>
-Järjestelmän määrittämä taulurajoitus vastaa Finance and Operations -taulun määritetyypin ja kentän yhdistämismääritystä. Järjestelmän määrittämä taulurajoitus linkittää dynaamisesti määritetyypin kenttään. Linkin avulla tuotekonfiguraatiomallin määrite vastaa Finance and Operations -taulun kentän tietoja.</td>
+Järjestelmän määrittämä taulurajoitus vastaa Finance and Operations -taulun määritetyypin ja kentän yhdistämismääritystä. Järjestelmän määrittämä taulurajoitus linkittää dynaamisesti määritetyypin kenttään. Linkin avulla tuotekonfiguraatiomallin määrite vastaa Supply Chain Management -taulun kentän tietoja.</td>
 </tr>
 <tr class="odd">
 <td>Laskelmat</td>

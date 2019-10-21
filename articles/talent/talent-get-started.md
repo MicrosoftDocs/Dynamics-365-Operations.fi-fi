@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 0993119de785d5e3826075778c018bdfa50071e2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517927"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024242"
 ---
 # <a name="get-started-with-talent"></a>Talentin käytön aloittaminen
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talentin käyttöliittymän muokkaaminen ja asetusten määrittäminen on helppoa. Näin saat ohjelmiston vastaamaan paremmin yrityksen tarpeita. Tämä ohjeaihe sisältää linkkejä ohjeaiheisiin, jotka sisältävät tietoja käyttöliittymän mukauttamisesta haluamiesi asetusten perusteella. Ohjeaihe sisältää myös linkkejä tietoihin, joiden avulla voit etsiä tietoja järjestelmästä tehokkaasti ja tarkasti. 
+Microsoft Dynamics 365 Talentin käyttöliittymän muokkaaminen ja asetusten määrittäminen on helppoa. Näin saat ohjelmiston vastaamaan paremmin yrityksen tarpeita. Tämä ohjeaihe sisältää linkkejä ohjeaiheisiin, jotka sisältävät tietoja käyttöliittymän mukauttamisesta haluamiesi asetusten perusteella. Ohjeaihe sisältää myös linkkejä tietoihin, joiden avulla voit etsiä tietoja järjestelmästä tehokkaasti ja tarkasti. 
 
 > [!NOTE] 
-> Seuraavat kolme tuotetta liittyvät toisiinsa läheisesti: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail ja Dynamics 365 for Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteissa. Tällöin aiheissa, jotka liittyvät ensisijaisesti Retail, tuotteen nimi on Dynamics 365 for Retail. Aiheissa, jotka liittyvät ensisijaisesti Talentiin, tuotteen nimi on Dynamics 365 for Talent. Ja aiheissa, jotka liittyvät ensisijaisesti ydintuotteeseen, tuotteen nimi on Dynamics 365 for Finance and Operations. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
+> Seuraavat kolme tuotetta liittyvät toisiinsa läheisesti: Dynamics 365 Finance, Dynamics 365 Retail ja Dynamics 365 Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteessa. Tällöin aiheissa, jotka liittyvät ensisijaisesti Retail, tuotteen nimi on Dynamics 365 Retail. Aiheissa, jotka liittyvät ensisijaisesti Talentiin, tuotteen nimi on Dynamics 365 Talent. Ja aiheissa, jotka liittyvät ensisijaisesti ydintuotteeseen, tuotteen nimi on Dynamics 365 Finance. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
 ## <a name="personalizing-talent"></a>Talentin mukauttaminen 
-Seuraavissa ohjeaiheissa näytetään, miten Dynamics 365 for Talentin useat toiminnot määritetään niin, että työt saadaan tehtyä helpommin ja ajoissa. 
+Seuraavissa ohjeaiheissa näytetään, miten Talentin useat toiminnot määritetään niin, että työt saadaan tehtyä helpommin ja ajoissa. 
 
 -   [Käyttäjäkokemuksen mukauttaminen](../fin-and-ops/get-started/personalize-user-experience.md) - Tässä ohjeaiheessa kerrotaan, miten Talentin voi mukauttaa ja miten tuotteen osat otetaan käyttöön haluttujen asetusten mukaisesti.
 
@@ -51,7 +51,7 @@ Seuraavissa ohjeaiheissa kerrotaan, miten tietoja etsitään nopeasti hakujen ja
 
 -   [Suodatuksen ja kyselysyntaksin lisäasetukset](../fin-and-ops/get-started/advanced-filtering-query-options.md) - Tässä ohjeaiheessa kerrotaan suodatus- ja kyselyvaihtoehdot, jotka ovat käytettävissä, kun käytät Lisäsuodatus/-lajittelu-valintaikkunan vastaavuusoperaattoria
 
--   [Siirtymishaku](../fin-and-ops/get-started/navigation-search.md) - Tässä ohjeaiheessa kerrotaan, miten sivujen välillä voi siirtyä hakutoiminnon avulla. Talent-sovellus sisältää useita alueita ja sivuja erilaisten tehtävien suorittamista varten. Siirtymishakutoiminnon avulla voit etsiä tehtävien suorittamisessa tarvittavat sivut helposti. 
+-   [Siirtymishaku](../fin-and-ops/get-started/navigation-search.md) - Tässä ohjeaiheessa kerrotaan, miten sivujen välillä voi siirtyä hakutoiminnon avulla. Talent sisältää useita alueita ja sivuja erilaisten tehtävien suorittamista varten. Siirtymishakutoiminnon avulla voit etsiä tehtävien suorittamisessa tarvittavat sivut helposti. 
 
 -   [Toimintohaku](../fin-and-ops/get-started/action-search.md) - Tässä ohjeaiheessa kerrotaan toimintohakuominaisuudesta. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla. Tuotteen sivuilla näytetään ensisijaisesti toimintoruutujen komennot sekä vakiotoimintoruudussa, joka näkyy sivun yläreunassa, että työkalupalkeissa, jotka näkyvät sivun eri osissa.
 
@@ -61,7 +61,7 @@ Seuraavissa ohjeaiheissa kerrotaan, miten tietoja etsitään nopeasti hakujen ja
 [Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80) -sivustossa on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
 
 ### <a name="blogs"></a>Blogit
-Ratkaisuja koskevia mielipiteitä, uutisia ja muita ostoreskontraa koskevia tietoja on kohdassa [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
+Ratkaisuja koskevia mielipiteitä, uutisia ja muita ostoreskontraa koskevia tietoja on kohdassa [Dynamics 365 Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
 
 ### <a name="videos"></a>Videot
 Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) ohjevideoihin.

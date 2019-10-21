@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c9392263e8c113c541b64e8e79853520a13d11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517854"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026253"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Aikatauluta ja jaa kyselylomakkeita
 
@@ -83,7 +83,7 @@ Voit määrittää kyselylomakkeen aikataulun suunnittelutyypit **Kyselylomakkei
 
 Viitetyyppien avulla voit syöttää vastaajille ehdot, jotka valitsisit kyselylomakkeen ajoittamisen yhteydessä. 
 
-Määritä kyselylomakkeen viitetyypit **Viitetyypit**-sivulla. Kukin viitetyyppi vastaa Microsoft Dynamics 365 for Finance and Operationsin taulua. Voit määrittää kyselylomakkeen aikataulujen luomisen yhteydessä yksittäisiä tietueita tauluun tai tietuealueen. Tietueet tai tietuealue liitetään kyselylomakkeeseen. 
+Määritä kyselylomakkeen viitetyypit **Viitetyypit**-sivulla. Kukin viitetyyppi vastaa Microsoft Dynamics 365 Financen taulua. Voit määrittää kyselylomakkeen aikataulujen luomisen yhteydessä yksittäisiä tietueita tauluun tai tietuealueen. Tietueet tai tietuealue liitetään kyselylomakkeeseen. 
 
 Esimerkiksi Kurssit-taulussa voit määrittää kurssin, jota kyselylomake koskee. Kun määrität Kurssit-taulun viitteen, osa **Kurssit**-sivun kentistä ja painikkeista ovat käytettävissä.
 

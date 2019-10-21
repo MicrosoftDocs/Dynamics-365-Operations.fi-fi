@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1aaae7a276d098587b5b9c73e433694e3a6f9bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554336"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248909"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Tuotteen vastaanotto ostotilausten perusteella
 
@@ -52,7 +52,7 @@ Voit luoda ostotilausrivejä, joissa **Uusi käyttöomaisuus** -vaihtoehto on ot
 
 Voit valita useita tilauksia ja käsitellä kyseisten tilausten vastaanoton yhdessä. Tätä menetelmää ei käytetä usein, mutta sen käyttöä kannattaa harkita, jos toimittaja on konsolidoinut lähetykset yhdeksi kuormaksi. Kun oston tuote vastaanotetaan, käytössä on toiminto yhteenvetopäivitysten tekemiseen. Yhteenvetopäivityksissä voit kirjata yhden toimittajan pakkausluettelon useisiin ostotilauksiin.  
 
-Ostotilauksia voi luoda myyntitilauksessa, jossa on valittu **Suoratoimitus**-vaihtoehto. Kun suoratoimitusta käytetään, tuotteet eivät saavu koskaan varastoon vaan ne lähetetään suoraan toimittajalta asiakkaalle. Tässä tapauksessa vastaanotto kirjataan yleensä suoraan ostotilaukseen. Vastaanotto voidaan tehdä automaattisesti, esimerkiksi integroimalla sähköinen tiedonsiirto (EDI) toimittajan kanssa. Jos ostotilaus on sen sijaan konsernin sisäinen ostotilaus, Microsoft Dynamics 365 for Finance and Operations voi automatisoida konsernin sisäisen myyntitilauksen vastaanoton lähetyksen yhteydessä. Suoratoimitusta käytettäessä tuotteet lasketaan edelleen varastoksi, vaikka ne eivät fyysisesti saavu varastoon. Kun tuotteen vastaanotto sitten rekisteröidään ostotilaukseen, myyntitilaus päivitetään automaattisesti pakkausluettelolla, jolloin varaston kokonaismuutos on 0 (nolla). Suoratoimitusskenaarioissa ei pidä edellyttää ennakkorekisteröintiä. Jos käytät varastoja, joissa varastonhallinta on otettu käyttöön, voit kiertää rekisterikilven rekisteröintivaatimuksen määrittämällä virtuaalisen varaston. Tämä varasto määritetään tuotteen **Suoratoimituksen varasto** -kentässä. 
+Ostotilauksia voi luoda myyntitilauksessa, jossa on valittu **Suoratoimitus**-vaihtoehto. Kun suoratoimitusta käytetään, tuotteet eivät saavu koskaan varastoon vaan ne lähetetään suoraan toimittajalta asiakkaalle. Tässä tapauksessa vastaanotto kirjataan yleensä suoraan ostotilaukseen. Vastaanotto voidaan tehdä automaattisesti, esimerkiksi integroimalla sähköinen tiedonsiirto (EDI) toimittajan kanssa. Jos ostotilaus on sen sijaan konsernin sisäinen ostotilaus, Supply Chain Management automatisoi konsernin sisäisen myyntitilauksen vastaanoton lähetyksen yhteydessä. Suoratoimitusta käytettäessä tuotteet lasketaan edelleen varastoksi, vaikka ne eivät fyysisesti saavu varastoon. Kun tuotteen vastaanotto sitten rekisteröidään ostotilaukseen, myyntitilaus päivitetään automaattisesti pakkausluettelolla, jolloin varaston kokonaismuutos on 0 (nolla). Suoratoimitusskenaarioissa ei pidä edellyttää ennakkorekisteröintiä. Jos käytät varastoja, joissa varastonhallinta on otettu käyttöön, voit kiertää rekisterikilven rekisteröintivaatimuksen määrittämällä virtuaalisen varaston. Tämä varasto määritetään tuotteen **Suoratoimituksen varasto** -kentässä. 
 
 Kun tuotteen vastaanotto on käsitelty ostotilauksessa, ostotilauksen tilaksi valitaan **Vastaanotettu**. Se ilmaisee, että tilauksen lasku voidaan käsitellä. Voit tarkastella jo vastaanotettujen tuotteiden tietoja **Tuotteen vastaanoton kirjauskansiot** -sivulla.  
 

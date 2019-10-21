@@ -3,7 +3,7 @@ title: Ennusteet, työtilaukset ja projektit
 description: Tässä ohjeaiheessa selitetään ennusteiden ja työtilausten integrointi resurssien hallinnan Projektinhallinta ja kirjanpito -moduulin kanssa.
 author: josaw1
 manager: AnnBe
-ms.date: 08/16/2019
+ms.date: 08/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e986d139ac9d0a7729bb9787f05332bcc09f59b
-ms.sourcegitcommit: 109a6ef2d20758dc4a25c51b11e22dd2214a1cc4
+ms.openlocfilehash: cc1992326c448ee8dc30a9ad8f8f538ebea83e54
+ms.sourcegitcommit: f853c8d46ffc8e578387bac4cd48a948916983ef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1886813"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "2002381"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Ennusteet, työtilaukset ja projektit
 
@@ -31,21 +31,24 @@ ms.locfileid: "1886813"
 
 [!include [banner](../../includes/preview-banner.md)]
 
-Resurssien hallinnassa integrointi **Projektinhallinta ja kirjanpito** -moduuliin tehdään, jotta voidaan optimoida kustannusten hallinta, jonka avulla käyttäjät voivat seurata kustannuksia huoltotyön tyyppien ennusteissa ja työtilaustöissä.
+Resurssien hallinnassa integrointi **Projektinhallinta ja kirjanpito** -moduuliin auttaa optimoimaan kustannusten hallinnan, jolloin käyttäjät voivat seurata kustannuksia huoltotyön tyyppien ennusteissa ja työtilaustöissä.
 
 Kunnossapitotöiden tyyppien ennusteiden seuraamista varten on tehtävä kaksi asetusta:
 
-1. Valitse projekti kohdassa **Resurssien hallinta** > **Asetukset** > **Resurssienhallinnan parametrit** > **Resurssit** -linkki > **Projekti** -pikavälilehti > **Ylläpitoennusteen projekti** -kenttä.
+1. Valitse projekti kohdassa **Resurssien hallinta** > **Asetukset** > **Resurssienhallinnan parametrit** ja sitten kohdassa **Resurssit** -välilehti > **Projekti**-pikavälilehdessä **Ylläpitoennusteen projekti** -kentässä.
 
-2. Kun **Ylläpitotyön tyyppien oletus** -kohdassa luot ylläpitotyötyypin oletusrivin, riville luodaan automaattisestitehtävänumero (**Resirssien hallinta** > **Asetukset** > **työt** > **Ylläpitotyön tyyppien oletukset**).
+2. Kun **Ylläpitotyön tyyppien oletus** -kohdassa luot ylläpitotyötyypin oletusrivin, riville luodaan automaattisesti tehtävänumero (**Resurssien hallinta** > **Asetukset** > **Työt** > **Ylläpitotyön tyyppien oletukset**).
 
-Kunnossapitotöiden tyypin ennusteissa on kaksi tarkoitusta: voit jäljittää ylläpitotyön tyyppien ennusteiden kustannukset **Projektinhallinta ja kirjanpito** -moduulissa. Lisäksi ennusteet siirretään automaattisesti työtilauksen työn projektiin, kun valitset kunnossapitotyön tyypin työtilaustyölle.
+Kunnossapitotöiden tyypin ennusteita käytetään kahteen tarkoitukseen: 
 
-Jotta työtilausten töiden kustannukset voidaan jäljittää, on ensin määritettävä työtilausprojektit. Toimenpiteen kuvaus on kohdassa [Työtilauksen projektin määritys](../setup-for-work-orders/work-order-project-setup.md).
+- Voit jäljittää kunnossapidon työtyypin ennusteiden kustannuksia **Projektinhallinta ja kirjanpito** -moduulissa. 
+- Ennusteet siirretään automaattisesti työtilauksen työn projektiin, kun valitset kunnossapitotyön tyypin työtilaustyölle.
+
+Jotta työtilausten töiden kustannukset voidaan jäljittää, on ensin määritettävä työtilausprojektit. Lisätietoja on kohdassa [Työtilauksen projektin määritys](../setup-for-work-orders/work-order-project-setup.md).
 
 ## <a name="work-order-job-projects"></a>Työtilauksen työn projektit
 
-Kun työtilaukseen luodaan työtilaustyö, työtilausprojekti määräytyy pääprojektin asetusten mukaan:**Resurssien hallinta** > **Asetukset** > **Työtilaukset** > **Projektiasetukset.**
+Kun työtilaukseen luodaan työtilaustyö, työtilausprojekti määräytyy pääprojektin asetusten mukaan **Työtilauksen projektiasetukset** -sivulla (**Resurssien hallinta** > **Asetukset** > **Työtilaukset** > **Projektiasetukset**).
 
 Työtilauksen työprojektit luodaan seuraavien työtilaustietojen yhdistelmän avulla:
 
@@ -54,36 +57,37 @@ Työtilauksen työprojektit luodaan seuraavien työtilaustietojen yhdistelmän a
 - Työtilaustyön käyttöomaisuuteen liittyvä resurssityyppi  
 - Työtilaukseen määritetty odotettu alkamis- ja loppumisaika  
 
-On mahdollista, että kaikkia edellä mainittuja tietoja ei löydy työtilauksesta. Näin ollen työtilauksen pääprojektin haku tehdään käyttämällä käytettävissä olevaa tietoyhdistelmää ja valitsemalla projektitunnus, joka vastaa työtilauksen tietoja.
+Joitakin näistä tiedoista ei ehkä löydy työtilauksesta. Näin ollen työtilauksen pääprojektin haku tehdään käyttämällä käytettävissä olevaa tietoyhdistelmää ja valitsemalla projektitunnus, joka vastaa työtilauksen tietoja.
 
-Esimerkki: Alla olevassa kuvassa käyttöomaisuuden tyypin "Truck Engine" määritys tarkoittaa, että jokainen kyseiselle käyttöomaisuustyypille luotu työtilaustyö on projektitunnuksen "000186" aliprojekti.
+Esimerkiksi seuraavassa kuvassa **Truck Engine** -käyttöomaisuustyypin määritystavan vuoksi jokainen työtilaustyö, joka luodaan **Truck Engine** -käyttöomaisuustyypillä, on projektitunnuksen 000186 aliprojekti.
 
 ![Kuva 1](media/01-integration-to-pma.png)
 
-Työtilaustyön projektitunnuksen ja siihen liittyvän tehtävän numeron (**Resurssien hallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** > valitse työtilaus luettelosta > **rivin tiedot** -pikavälilehti > **Projektitunnus** -kenttä **Tehtävän numero** -kenttä) tarkoitus on seurata työtilaustyöhön liittyviä kustannuksia ja työtilaustyölle valittua käyttöomaisuutta **Projektinhallinta ja kirjanpito** -moduulissa. 
+Työtilaustyön projektitunnuksen ja siihen liittyvän tehtävän numeron tarkoitus on jäljittää työtilaustyöhön liittyvät kustannukset ja sille valittu käyttöomaisuuserä **Projektinhallinta ja kirjanpito** -moduulissa. (Voit tarkastella projektin tunnusta ja tehtävän numeroa valitsemalla **Resurssien hallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** ja valitsemalla sitten työtilauksen. **Rivin tiedot**-pikavälilehdessä **Projektitunnus**-kentässä näkyy projektin tunnus, ja **Tehtävän numero** -kentässä näkyy tehtävä numero.) Lisätietoja käyttöomaisuuden hallinnan kustannusten hallinnasta on kohdassa [Kustannusten ja päivämäärien hallinta](../controlling-and-reporting/cost-and-date-control.md).
 
-Alla olevassa kuvassa näkyy graafinen yleiskatsaus työtilausprojekteista ja niihin liittyvistä projektitehtävistä.
+Seuraavassaolevassa kuvassa näkyy graafinen yleiskatsaus työtilausprojekteista ja niihin liittyvistä projektitehtävistä.
 
 ![Kuva 2](media/02-integration-to-pma.png)
 
-Kun työtilaukseen luodaan uusi työtilaustyö, työtilausprojekti luodaan automaattisesti työlle. Työtilaus työhön liittyvän käyttöomaisuuserän taloushallinnon dimensiot siirretään automaattisesti työtilausprojektiin. Työtilaustyölle luodulle projektitehtävälle on liitetty siihen liittyviä tietoja, jotka koskevat kunnossapitotöiden tyyppiä, kunnossapitotöiden tyypin varianttia ja kauppaa. Näistä tiedoista on hyötyä esimerkiksi silloin, kun luot ostotilauksen työtilauksesta ( katso [Hankinta](../work-orders/procurement.md)) tai jos käytät **Projektinhallinta ja kirjanpito** -moduulia ajan rekisteröintiä varten.  
+Kun työtilaukseen luodaan uusi työtilaustyö, työtilausprojekti luodaan automaattisesti työlle. Työtilaus työhön liittyvän käyttöomaisuuserän taloushallinnon dimensiot siirretään automaattisesti työtilausprojektiin.
 
-Jos käyttöomaisuus on asennettu toiminnallisessa sijainnissa ja kyseinen käyttöomaisuuserä on myöhemmin asennettu toiseen toimintosijaintiin, uuteen toimintosijaintiin liittyvät taloushallinnon dimensiot päivitetään automaattisesti käyttöomaisuuserälle. Kun luot käyttöomaisuudelle työtilaustyön, työtilaustyön työtilausprojekti saa automaattisesti käyttöomaisuus erään liittyvät taloushallinnon dimensiot. Tämä tarkoittaa, että kun käytät toiminnallisia sijainteja, kustannuksia voidaan aina seurata niissä toiminnallisissa sijainneissa, joissa käyttöomaisuuserä on asennettuna tiettynä aikana. Taloushallinnon dimensioiden automaattinen päivitys varmistaa projektinhallinnan ja raportoinnin kustannusten täydellisen jäljitettävyyden.  
+Työtilaustyölle luodulle projektitehtävälle on liitetty siihen liittyviä tietoja. Nämä tiedot koskevat kunnossapitotöiden tyyppiä, kunnossapitotöiden tyypin varianttia ja kauppaa. Näistä tiedoista on hyötyä esimerkiksi silloin, kun luot ostotilauksen työtilauksesta ( katso [Hankinta](../work-orders/procurement.md)) tai jos käytät **Projektinhallinta ja kirjanpito** -moduulia ajan rekisteröintiä varten.
 
+Jos käyttöomaisuus on asennettu toiminnallisessa sijainnissa, mutta kyseinen käyttöomaisuuserä on myöhemmin asennettu toiseen toimintosijaintiin, uuteen toimintosijaintiin liittyvät taloushallinnon dimensiot päivitetään automaattisesti käyttöomaisuuserälle. Kun luot käyttöomaisuudelle työtilaustyön, työtilaustyön työtilausprojekti saa automaattisesti käyttöomaisuuserään liittyvät taloushallinnon dimensiot. Tämä tarkoittaa, että kun käytät toiminnallisia sijainteja, kustannuksia voidaan aina seurata niissä toiminnallisissa sijainneissa, joissa käyttöomaisuuserä on asennettuna tiettynä aikana. Taloushallinnon dimensioiden automaattinen päivitys auttaa varmistamaan projektinhallinnan ja raportoinnin kustannusten täydellisen jäljitettävyyden.
 
 ## <a name="work-order-projects-work-order-lifecycle-states-project-stages-and-project-types"></a>Työtilausprojektit, työtilausten elinkaaritilat, projektin vaiheet ja projektityypit
 
-Voit varmistaa työtilausten elinkaaritilojen ja niihin liittyvien projektivaiheiden oikean käytön harkitsemalla riippuvuuksia suhteessa **Projektinhallinta ja kirjanpito** -moduuliin:
+Voit auttaa varmistamaan työtilausten elinkaaritilojen ja niihin liittyvien projektivaiheiden oikean käytön harkitsemalla riippuvuuksia suhteessa **Projektinhallinta ja kirjanpito** -moduuliin:
 
-- **Projektinhallinta ja kirjanpito** -moduulissa projektin vaiheet määritetään **Projektinhallinnan ja kirjanpidon parametrit** asetuksissa määritetyille projektityypeille.  
-- Muista **Projektinhallinnan ja kirjanpidon parametrit** -asetuksissa valita haluamasi projektivaiheen valintaruudut kaikille projektityypeille, joita aiot käyttää. Alla olevassa kuvassa on viisi vaihetta **Luotu** - **Arvioitu** - **Ajoitettu** - **Käynnissä** - **Valmis** valittu projektityypeille "Aika ja materiaali" sekä "Sisäinen". Nämä viisi vaihetta koskevat sekä sisäisiä ylläpitotöitä että palveluhuoltotöitä.  
-- **Resurssien hallinnassa** projektityypit määritetään projektiryhmien mukaan, jotka määritetään **Työtilauksen projektiasetukset** -lomakkeessa > **Projektiryhmä**-linkin kautta.  
-- **Työtilauksen projektiasetukset** -asetusten projektiryhmien asetuksia käytetään luotaessa työtilauksia. Kun työtilaus luodaan, työtilausprojekti luodaan automaattisesti työtilaukselle.  
-- Työtilauksen elinkaaritiloilla on oltava siihen liittyvä projektivaihe.  
-- Työtilauksen elinkaaren tilaan liittyvä projektin vaihe on määritettävä työtilausprojektissa määritetyn projektiryhmän aktiiviseksi vaiheeksi. Työtilausprojekti luodaan automaattisesti työtilaukseen.  
-- Kun luot uuden työtilauksen, työtilausprojektin automaattinen kohdistus perustuu **Työtilauksen projektiasetukset** -kohdan asetuksiin (**Resurssien hallinta** > **Asetukset** > **Työtilaukset** > **Projektiasetukset**).  
+- **Projektinhallinta ja kirjanpito** -moduulissa projektin vaiheet määritetään **Projektinhallinnan ja kirjanpidon parametrit** -sivulla määritetyille projektityypeille.  
+- Muista **Projektinhallinnan ja kirjanpidon parametrit** -asetuksissa valita haluamasi projektivaiheiden valintaruudut kaikille projektityypeille, joita aiot käyttää. Seuraavissa kuvissa viisi vaihetta (**Luotu**, **Arvioitu**, **Ajoitettu**, **Käynnissä**, **Valmis**) on valittu projektityypeille **Aika ja materiaali** sekä **Sisäinen**. Nämä viisi vaihetta koskevat sekä sisäisiä ylläpitotöitä että palveluhuoltotöitä.
+- **Resurssien hallinta** -moduulissa projektityypit määritetään projektiryhmien mukaan, jotka määritetään **Työtilauksen projektinasetukset** -sivun **Projektiryhmä** -välilehdessä (**Resurssien hallinta** > **Asetukset** > **Työtilaukset** > **Projektiasetukset**).  
+- **Työtilauksen projektiasetukset** -sivulla määritettyjä projektiryhmien asetuksia käytetään luotaessa työtilauksia. Kun työtilaus luodaan, työtilausprojekti luodaan automaattisesti työtilaukselle.  
+- Kullakin työtilauksen elinkaaritilalla on oltava siihen liittyvä projektivaihe.  
+- Työtilauksen elinkaaren tilaan liittyvä projektin vaihe on määritettävä työtilausprojektissa määritetyn projektiryhmän aktiiviseksi vaiheeksi. Työtilausprojekti luodaan automaattisesti työtilaukseen.
+- Kun luot uuden työtilauksen, työtilausprojektin automaattinen kohdistus perustuu **Työtilauksen projektiasetukset** -sivun asetuksiin.  
 
-Alla olevissa kuvissa näkyvät työtilauksen projektiryhmien, liittyvien projektityyppien, projektin vaiheiden ja työtilausten elinkaaritilojen väliset kytkennät.  
+Alla olevissa kuvissa näkyvät työtilauksen projektiryhmien, liittyvien projektityyppien, projektin vaiheiden ja työtilausten elinkaaritilojen väliset kytkennät.
 
 ![Kuva 3](media/03-integration-to-pma.png)
 
@@ -91,9 +95,9 @@ Alla olevissa kuvissa näkyvät työtilauksen projektiryhmien, liittyvien projek
 
 ![Kuva 5](media/05-integration-to-pma.png)
 
-Katso [Työtilausprojektin asetukset](../setup-for-work-orders/work-order-project-setup.md) -kohta työtilausprojektien määrittämistä varten sekä [Työtilauksen elinkaaren tilat](../setup-for-work-orders/work-order-lifecycle-states.md) koskien työtilausten elinkaaritilojen luomista.
+Lisätietoja työtilausprojektien määrittämisestä on kohdassa [Työtilausprojektin asetukset](../setup-for-work-orders/work-order-project-setup.md). Lisätietoja työtilausten elinkaaritilojen luomisesta on kohdassa [Työtilauksen elinkaaren tilat](../setup-for-work-orders/work-order-lifecycle-states.md).
 
-Alla olevassa kuvassa esitetään graafinen yleiskatsaus eri projekteista, jotka luodaan **Resurssien hallinta**- moduulissa, jotta saadaan integrointi **Projektinhallinta ja kirjanpito** -moduuliin sekä työprosessit, joihin projektit liittyvät.
+Seuraavassa kuvassa on graafinen yleiskatsaus eri projekteista, jotka on luotu **Resurssien hallinta** -moduulissa, jotta integrointi **Projektinhallinta ja kirjanpito** -moduuliin voidaan ottaa käyttöön. Siinä näkyvät myös työprosessit, joihin projektit liittyvät.
 
 ![Kuva 6](media/06-integration-to-pma.png)
 

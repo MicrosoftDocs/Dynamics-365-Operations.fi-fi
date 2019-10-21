@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547672"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249386"
 ---
 # <a name="set-up-vendor-accounts"></a>Toimittajatilien asettaminen
 
@@ -60,13 +60,13 @@ Voit tallentaa toimittajalle yhteyshenkilöitä. Yhteyshenkilöitä voidaan sitt
 
 Toimittajan yhteyshenkilöitä voit lisätä **Kaikki toimittajat** -sivulla, napsauttamalla **Toimittaja**-välilehden **Asetukset**-ryhmässä **Yhteyshenkilöt** &gt; **Lisää yhteyshenkilöitä**.  
 
-Voit luoda uuden toimittajan alusta alkaen. Vaihtoehtoisesti, voit kopioida tiedot toisesta henkilöstä, joka on jo rekisteröity Microsoft Dynamics 365 for Finance and Operationsiin, ja muokata tietoja tarpeen mukaisesti.  
+Voit luoda uuden toimittajan alusta alkaen. Vaihtoehtoisesti, voit kopioida tiedot toisesta henkilöstä, joka on jo rekisteröity Supply Chain Managementiin, ja muokata tietoja tarvittaessa.  
 
 **Huomautus:** Yhteyshenkilön lisääminen toimittajalle ei ole sama asia kuin toimittajan yhteystietojen lisääminen. Vaikka voitkin lisätä toimittajalle yleisiä yhteystietoja, sinulla voi myös olla useita, tiettyjä henkilöitä, jotka ovat yhteyshenkilöitäsi kyseisessä yrityksessä, ja kaikilla heillä on omat yhteystietonsa.  
 
 Et voi poistaa yhteyshenkilötietuetta, jos yhteyshenkilöön viitataan asiakirjassa. Sen sijaan voit poistaa yhteyshenkilön aktivoinnin.  
 
-Voit lisätä toimittajan yhteyshenkilöitä omiin Microsoft Office 365 -yhteystietoihisi. Sinun on kuitenkin ensin määritettävä Finance and Operationsin ja Office 365:n välinen synkronointi sekä Microsoft Exchange Serverin synkronoinnissa että ohjatussa Microsoft Outlook -asennustoiminnossa.
+Voit lisätä toimittajan yhteyshenkilöitä omiin Microsoft Office 365 -yhteystietoihisi. Sinun on kuitenkin ensin määritettävä Supply Chain Managementin ja Office 365:n välinen synkronointi sekä Microsoft Exchange Serverin synkronoinnissa että ohjatussa Microsoft Outlook -asennustoiminnossa.
 
 ## <a name="vendors-in-different-legal-entities"></a>Toimittajat eri yrityksissä
 Jos toimittaja on rekisteröity vain yhteen yritykseen organisaatiossasi ja toisen yrityksen on rekisteröitävä sama toimittaja, voit käyttää **Lisää toimittaja toiseen yritykseen** -sivun avulla, jossa voit määrittää toimittajalle liikesuhteen toisen yrityksen kanssa. Sinun on valittava toimittajalle toimittajaryhmä, valuutta ja pidon tila valitussa yrityksessä.  

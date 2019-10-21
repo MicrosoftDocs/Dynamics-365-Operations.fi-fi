@@ -3,7 +3,7 @@ title: Tuotantoprosessin yleiskatsaus
 description: Tässä ohjeaiheessa on yleiskuvaus tuotantoprosesseista. Artikkelissa kuvataan tuotantotilausten, erätilausten ja kanbanien vaiheita tilauksen luonnista tilikauden sulkemiseen.
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd529afa5d8117e01784ed267709e1ac8c43290d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5b586a02d79fbbee698f32ab2ace3f86e7262fa7
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546660"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250012"
 ---
 # <a name="production-process-overview"></a>Tuotantoprosessin yleiskatsaus
 
@@ -36,12 +36,12 @@ Tuotteiden tuotanto, jota kutsutaan toisinaan myös tuotannon elinkaareksi, noud
 
 **Tuotannonhallinta**-moduuli on linkitetty muihin moduuleihin, joita ovat esimerkiksi **Tuotetietojen hallinta**, **Varastonhallinta**, **Kirjanpito**, **Varastonhallinta**, **Projektikirjanpito** ja **Organisaation hallinto**. Tämä integrointi tukee nimikkeen valmistamisessa vaadittavien tietojen kulkua.  
 
-Tuotantoprosessiin vaikuttavat yleensä sille valitut kustannuslaskenta- ja varastonarvostusmenetelmät. Finance and Operations tukee sekä todellisten kustannusten (\[FIFO\], \[LIFO\], liukuva keskiarvo ja kausittainen painotettu keskiarvo) että standardikustannusten laskentamenetelmiä. Lean-valmistus toteutetaan jälkikustannusperiaatteella.  
+Tuotantoprosessiin vaikuttavat yleensä sille valitut kustannuslaskenta- ja varastonarvostusmenetelmät. Supply Chain Management tukee sekä todellisten kustannusten (\[FIFO\], \[LIFO\], liukuva keskiarvo ja kausittainen painotettu keskiarvo) että standardikustannusten laskentamenetelmiä. Lean-valmistus toteutetaan jälkikustannusperiaatteella.  
 
 Kustannusten mittaustavan valinta määrittää myös materiaalien ja resurssien kulutusta koskevat raportointivaatimukset tuotantoprosessin aikana. Yleensä todellisten kustannusten menetelmät edellyttävät tarkkaa raportointia työn tasolla, kun taas kausittaisissa kustannusten laskumenetelmissä materiaalien ja resurssien kulutus voidaan raportoida yleisemmällä tasolla.
 
 ## <a name="mixed-mode-manufacturing"></a>Monen tilan tuotanto
-Eri tuotteet ja tuotantotopologiat edellyttävät erilaisten tilaustyyppien käyttöä. Finance and Operationsissa eri tilaustyyppejä voi käyttää yhdistetyssä tilassa. Toisin sanoen kaikki tilaustyypit voivat tapahtua yhden valmiin tuotteen valmistuksessa alusta loppuun.
+Eri tuotteet ja tuotantotopologiat edellyttävät erilaisten tilaustyyppien käyttöä. Supply Chain Managementissa eri tilaustyyppejä voi käyttää monissa tiloissa. Toisin sanoen kaikki tilaustyypit voivat tapahtua yhden valmiin tuotteen valmistuksessa alusta loppuun.
 
 -   **Tuotantotilaus** – Tämä on perinteinen tilaustyyppi, jolla tiettyä tuotetta tai tuotevarianttia valmistetaan tietty määrä määrättynä päivämääränä. Tuotantotilaukset perustuvat tuoterakenteisiin ja reitityksiin.
 -   **Erätilaus** – Tätä tilaustyyppiä käytetään prosessiteollisuudessa ja erillisissä prosesseissa, joissa tuotannon muunto perustuu tiettyyn kaavaan tai joissa rinnakkais- ja sivutuotteet voivat olla lopputuotteita päätuotteen lisäksi tai sijasta. Erätilauksissa käytetään **Resepti**-tyyppisiä tuoterakenteita ja reitityksiä.

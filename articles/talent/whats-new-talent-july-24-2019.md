@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talentin uudet ja muuttuneet ominaisuudet (23.7.2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (23.7.2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/23/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d631a2a2be4809352c31f2a8c47ea49823233b30
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 428e862b84a17f0d50edf034b4cc836e5ae7710d
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856398"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010265"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-23-2019"></a>Dynamics 365 for Talentin uudet ja muuttuneet ominaisuudet (23.7.2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-july-23-2019"></a>Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (23.7.2019)
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="changes-in-attract"></a>Attractin muutokset
 
@@ -46,7 +46,7 @@ Kun uusia tuoteominaisuuksia suunnitellaan tai esiversion toimintoja lähetetä�
 Hyväksynnät näkyvät koontinäytön **Hyväksynnät**-osassa. Hyväksyjät voivat tarkistaa **Vastuualueensa** hyväksynnät, jolloin työn tunnus, otsikko, muut hyväksyjät ja määritetty päivämäärä näkyvät. Käyttäjät, jotka lähettävät työn hyväksyttäväksi, voivat tarkastella töitään kohdassa **Mitä olet pyytänyt**, joka näyttää hyväksyjät, joiden on vielä hyväksyttävä lähetetty työ.
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
-Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboardin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.
 
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2394.
@@ -75,6 +75,6 @@ Uuden vaihtoehdon avulla esimiehet voit tarkastella sekä suorien että epäsuor
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Kanadan ja Kaakkois-Aasian alueellinen tuki
 
-Olemme iloisia, kun voimme ilmoittaa, että Kanadan ja Kaakkois-Aasian alueet ovat käytettävissä Microsoft Dynamics 365 for Talentissa 1.8.2019. Tämän muutoksen myötä voi luoda ympäristöjä Kanadan ja Aasian alueilla, ja kaikkia Talent-tietoja säilytetään yksinomaan näillä alueilla. Voit luoda ympäristön näillä uusilla alueilla valitsemalla sijainnin Uusi ympäristö -valintaikkunassa ja käyttämällä tätä ympäristöä Talentin valmisteluun LCS:ssä, kuten on kuvattu kohdassa [Talentin valmistelu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Voimme ylpeänä ilmoittaa, että Kanadan ja Kaakkois-Aasian alueet ovat käytettävissä Talentissa 1. elokuuta 2019. Tämän muutoksen myötä voi luoda ympäristöjä Kanadan ja Aasian alueilla, ja kaikkia Talent-tietoja säilytetään yksinomaan näillä alueilla. Voit luoda ympäristön näillä uusilla alueilla valitsemalla sijainnin Uusi ympäristö -valintaikkunassa ja käyttämällä tätä ympäristöä Talentin valmisteluun LCS:ssä, kuten on kuvattu kohdassa [Talentin valmistelu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
 Tietojen siirto muiden alueiden aiemmin luoduista projekteista Kanadan ja Aasian alueille ei tueta. Vain uusia projekteja voi valmistella näillä uusilla tuetuilla alueilla.

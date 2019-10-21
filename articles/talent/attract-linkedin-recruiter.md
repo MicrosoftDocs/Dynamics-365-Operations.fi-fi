@@ -1,6 +1,6 @@
 ---
-title: Ehdokkaiden rekrytointi LinkedIn Recruiterilla Microsoft Dynamics 365 for Talent - Attractissa
-description: Rekrytoi ehdokkaita työpaikkaan LinkedIn Recruiterin avulla käyttämällä Microsoft Dynamics 365 for Talent - Attractin LinkedIn-integraatiota.
+title: Ehdokkaiden rekrytointi LinkedIn Recruiterilla Microsoft Dynamics 365 Talent – Attractissa
+description: Rekrytoi ehdokkaita työpaikkaan LinkedIn Recruiterin avulla käyttämällä Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraatiota.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -19,17 +19,17 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 14aba16fa81a8f25d0f88247319254407d428b2a
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 366dc2be6e35098dba4b26a34bb75a84913549f5
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739446"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008567"
 ---
 # <a name="source-candidates-with-linkedin-recruiter"></a>Ehdokkaiden rekrytointi LinkedIn Recruiter -ratkaisulla
 [!include[banner](../includes/banner.md)]
 
-LinkedIn on maailman suurin verkossa toimiva asiantuntijaverkosto, jonka avulla koko maailman parhaat osaajat ovat käytettävissä. Microsoft Dynamics 365 for Talent: Attractin avulla voit rekrytoida ehdokkaita suoraan LinkedInistä. Niinpä sopivien osaajien löytäminen avoimiin työpaikkoihin on helpompaa kuin koskaan. Kun olet muodostanut LinkedIn-yhteyden Attractin kautta, voit tarkastella työpaikkaan sopivia mahdollisia LinkedIn-ehdokkaita ja viedä heidät Attractiin yhdellä napsautuksella.
+LinkedIn on maailman suurin verkossa toimiva asiantuntijaverkosto, jonka avulla koko maailman parhaat osaajat ovat käytettävissä. Microsoft Dynamics 365 Talent: Attractin avulla voit rekrytoida ehdokkaita suoraan LinkedInistä. Niinpä sopivien osaajien löytäminen avoimiin työpaikkoihin on helpompaa kuin koskaan. Kun olet muodostanut LinkedIn-yhteyden Attractin kautta, voit tarkastella työpaikkaan sopivia mahdollisia LinkedIn-ehdokkaita ja viedä heidät Attractiin yhdellä napsautuksella.
 
 Jos tämä toiminto ei näytä olevan käytössä, ota yhteys järjestelmänvalvojaan. Ennen kuin LinkedIn Recruiteria voi käyttää Attractista, järjestelmänvalvojan on [LinkedIn-integraatio](./attract-admin-linkedin.md). Voit sitten määrittää LinkedIn Recruiter -yhteyden ja aloittaa ehdokkaiden etsimisen.
 

@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talentin uudet ja muuttuneet ominaisuudet (4.6.2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (4.6.2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/04/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e19e5d3f1cb2305e5a4153de3e4d0e8f4c7d31ac
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 32b168eca210b1371db129c05f7035237eb35c38
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856326"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008981"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-4-2019"></a>Dynamics 365 for Talentin uudet ja muuttuneet ominaisuudet (4.6.2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-4-2019"></a>Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (4.6.2019)
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="changes-in-attract"></a>Attractin muutokset
 
-Tässä julkaisussa on vähäisiä Dynamics 365 for Talent: Attractin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Attractin ohjelmakorjauksia.
 
 ## <a name="coming-soon-in-attract"></a>Tulossa pian Attractiin
 
@@ -43,7 +43,7 @@ Hyväksynnät näkyvät koontinäytön **Hyväksynnät**-osassa. Hyväksyjät vo
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
 
-Tässä julkaisussa on vähäisiä Dynamics 365 for Talent: Onboardin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.
 
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 
@@ -67,7 +67,7 @@ Mahdollisuus seurata työntekijöiden poissaoloja ja ymmärtää, kuinka poissao
 
 ### <a name="deleting-a-record-from-talent-doesnt-remove-the-record-from-common-data-service"></a>Tietueen poistaminen Talentista ei poista sitä Common Data Servicestä
 
-Talent Core HR:stä poistetut tietueet poistetaan nyt myös Common Data Servicestä.
+Talent: Core HR:stä poistetut tietueet poistetaan nyt myös Common Data Servicestä.
 
 ### <a name="variable-compensation-plan-valid-fromto-dates-arent-being-honored"></a>Muuttuvan kompensaatiosuunnitelman alkamis- ja päättymispäiviä ei noudateta
 

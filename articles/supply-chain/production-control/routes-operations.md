@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522194"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249957"
 ---
 # <a name="routes-and-operations"></a>Reitit ja työvaiheet
 
@@ -35,7 +35,7 @@ Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista. Reitit
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaiheiden järjestyksen. Reititys määrittää myös jokaisen työvaiheen vaaditut operatiiviset resurssit, työvaiheen asetukseen ja ajoon kuluvan ajan ja kustannusten laskentatavan. Samaa reititystä voi käyttää useiden tuotteiden tuotannossa. Kullekin tuotteelle tai tuotevariantille voi kuitenkin luoda myös yksilöllisen reitityksen. Tietyllä tuotteella voi myös olla useita reitityksiä. Tällöin käytettävä reititys vaihtelee usein sen mukaan, miten paljon tuotetta valmistetaan. Microsoft Dynamics 365 for Finance and Operationsin reitityksen määritys sisältää neljä seuraavaa erillistä elementtiä, jotka yhdessä muodostavat tuotantoprosessin:
+Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaiheiden järjestyksen. Reititys määrittää myös jokaisen työvaiheen vaaditut operatiiviset resurssit, työvaiheen asetukseen ja ajoon kuluvan ajan ja kustannusten laskentatavan. Samaa reititystä voi käyttää useiden tuotteiden tuotannossa. Kullekin tuotteelle tai tuotevariantille voi kuitenkin luoda myös yksilöllisen reitityksen. Tietyllä tuotteella voi myös olla useita reitityksiä. Tällöin käytettävä reititys vaihtelee usein sen mukaan, miten paljon tuotetta valmistetaan. Finance and Operationsin reitityksen määritys sisältää neljä seuraavaa erillistä elementtiä, jotka yhdessä muodostavat tuotantoprosessin:
 
 -   **Reititys** – Reititys määrittää tuotantoprosessin rakenteen. Toisin sanoen se määrittää työvaiheiden järjestyksen.
 -   **Työvaihe** – Työvaihe tunnistaa reitissä nimetyn vaiheen, kuten **kokoonpanon**. Sama työvaihe voi esiintyä useissa reitityksissä ja sillä voi olla useita työvaihenumeroita.
@@ -43,7 +43,7 @@ Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaih
 -   **Reititysversio** – Reititysversio määrittää reitityksen, jota käytetään tuotteen tai tuotevariantin tuottamisessa. Reititysversio mahdollistaa reititysten käyttämisen uudelleen tuotteissa tai reitityksen muuttamisen ajan kuluessa. Reititysversiot mahdollistavat myös eri reititysten käyttämisen saman tuotteen tuottamisessa. Tällöin käytettävä reititys riippuu eri tekijöistä, kuten sijainnista ja tuotettavasta määrästä.
 
 ## <a name="routes"></a>Reititykset
-Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa käytettävien työvaiheiden järjestyksen. Jokaiselle työvaiheelle määritetään työvaihenumero ja seuraava työvaihe. Työvaiheiden järjestys muodostaa reittiverkoston, joka voidaan esittää suunnatussa kaaviossa, jolla on vähintään yksi aloituspiste ja yksi päätepiste. Finance and Operationsissa reititykset erotetaan toisistaan rakennetyypin perusteella. Reititystyypit ovat yksinkertainen reititys ja reittiverkosto. Tuotannonohjauksen parametrien avulla voi määrittää, ovatko käytössä ainoastaan yksinkertaiset reititykset vai myös monimutkaisemmat reittiverkostot.
+Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa käytettävien työvaiheiden järjestyksen. Jokaiselle työvaiheelle määritetään työvaihenumero ja seuraava työvaihe. Työvaiheiden järjestys muodostaa reittiverkoston, joka voidaan esittää suunnatussa kaaviossa, jolla on vähintään yksi aloituspiste ja yksi päätepiste. Supply Chain Managementissa reititykset erotetaan toisistaan rakennetyypin perusteella. Reititystyypit ovat yksinkertainen reititys ja reittiverkosto. Tuotannonohjauksen parametrien avulla voi määrittää, ovatko käytössä ainoastaan yksinkertaiset reititykset vai myös monimutkaisemmat reittiverkostot.
 
 ### <a name="simple-routes"></a>Yksinkertaiset reititykset
 
@@ -51,7 +51,7 @@ Yksinkertaiset reititykset ovat peräkkäisiä. Reitityksellä on vain yksi aloi
 
 [![Yksinkertainen reititys](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Jos tuotannonhallinnan parametreissa otetaan käyttöön vain yksinkertaiset reititykset, Finance and Operations luo automaattisesti työvaihenumerot (10, 20, 30 jne.) reitityksen määrittämisen yhteydessä.
+Jos tuotannonhallinnan parametreissa otetaan käyttöön vain yksinkertaiset reititykset, Supply Chain Management luo automaattisesti työvaihenumerot (10, 20, 30 jne.) reitityksen määrittämisen yhteydessä.
 
 ### <a name="route-networks"></a>Reittiverkostot
 
@@ -85,7 +85,7 @@ Kukin reititys voidaan hyväksyä erikseen tai jättää hyväksymättä. Huomaa
 Jos ylläpidät lokia, johon tallennetaan kunkin reitityksen hyväksyjä, voit vaatia reitityksen hyväksynnästä sähköiset allekirjoitukset. Käyttäjien on tällöin vahvistettava henkilöllisyytensä [sähköisen allekirjoituksen](../../fin-and-ops/organization-administration/electronic-signature-overview.md) avulla.
 
 ## <a name="operations"></a>Operations
-Työvaihe on tuotantoprosessin vaihe. Finance and Operationsissa jokaiselle työvaiheelle annetaan tunnus ja yksinkertainen kuvaus. Seuraavissa taulukoissa esitellään tyypilliset esimerkit konepajan työvaiheista.
+Työvaihe on tuotantoprosessin vaihe. Jokaisella työvaiheella on tunnus ja yksinkertainen kuvaus. Seuraavissa taulukoissa esitellään tyypilliset esimerkit konepajan työvaiheista.
 
 | Työvaihe  | kuvaus        |
 |------------|--------------------|
@@ -126,7 +126,7 @@ Työvaihesuhteiden avulla reititysten määrittäminen on joustavaa. Oletusomina
 
 ### <a name="modifying-product-specific-routes"></a>Tuotekohtaisten reititysten muokkaaminen
 
-Kun avaat **Reititys**-sivun **Vapautetun tuotteen tiedot** -sivulla, sivulla näkyvät valittuun vapautettuun tuotteeseen liittyvät reititysversiot. Tässä kontekstissa Finance and Operations näyttää jokaisen työvaiheen operationaaliset ominaisuudet reititysversiota parhaiten vastaavasta työvaihesuhteesta. Työvaiheluettelo sisältää työvaihesuhteen **Nimikekoodi**- ja **Reitityskoodi**-ominaisuudet. Tämän vuoksi määritetään, mikä työvaihesuhde näytetään.  
+Kun avaat **Reititys**-sivun **Vapautetun tuotteen tiedot** -sivulla, sivulla näkyvät valittuun vapautettuun tuotteeseen liittyvät reititysversiot. Tässä kontekstissa Supply Chain Management näyttää jokaisen työvaiheen toiminalliset ominaisuudet reititysversiota parhaiten vastaavasta työvaihesuhteesta. Työvaiheluettelo sisältää työvaihesuhteen **Nimikekoodi**- ja **Reitityskoodi**-ominaisuudet. Tämän vuoksi määritetään, mikä työvaihesuhde näytetään.  
 
 **Reititys**-sivulla voi muokata työvaiheen operationaalisia ominaisuuksia, kuten ajoaika ja kustannusluokat. Muutokset tallennetaan työvaihesuhteeseen, joka liittyy reititykseen ja vapautettuun tuotteeseen, johon nykyisessä reititysversiossa viitataan. Jos näytettävä työvaihesuhde ei liity reititykseen ja vapautettuun tuotteeseen, järjestelmä luo työvaihesuhteesta kopion ennen muutosten tallentamista. Tämä kopio *on* liittyy reititykseen ja vapautettuun tuotteeseen. Tämän vuoksi muutokset eivät vaikuta muihin reitityksiin tai vapautettuihin tuotteisiin. Voit varmistaa **Reititys**-sivulla muokattavan työvaihesuhteen **Nimikekoodi**- ja **Reitityskoodi**-kentän avulla.  
 
@@ -149,9 +149,9 @@ Jos yrityksesi käyttää vakiotyövaiheita ja toimintaparametrit ovat samat kai
 
 ### <a name="applying-operation-relations"></a>Työvaihesuhteiden käyttäminen
 
-Joissakin tapauksissa Finance and Operationsin on löydettävä työvaiheen toiminnalliset ominaisuudet. Jos esimerkiksi luodaan ostotilaus, kunkin työvaiheen operationaaliset ominaisuudet on kopioitava työvaihesuhteista tuotantoreititykseen. Näissä tilanteissa Finance and Operations hakee liittyviä työvaihesuhteita aina yksityiskohtaisimmista yhdistelmistä vähemmän yksityiskohtaisiin yhdistelmiin.  
+Joissakin tapauksissa Supply Chain Managementin on löydettävä työvaiheen toiminnalliset ominaisuudet. Jos esimerkiksi luodaan ostotilaus, kunkin työvaiheen operationaaliset ominaisuudet on kopioitava työvaihesuhteista tuotantoreititykseen. Näissä tilanteissa Supply Chain Management hakee liittyviä työvaihesuhteita aina yksityiskohtaisimmista yhdistelmistä vähemmän yksityiskohtaisiin yhdistelmiin.  
 
-Kun Finance and Operations hakee vapautetulle tuotteelle soveltuvinta työvaihesuhdetta, työvaihesuhdetta, joka vastaa vapautetun tuotteen nimikkeen tunnusta, pidetään ensisijaisena verrattuna työsuhteeseen, joka vastaa nimikeryhmän tunnusta. Vastaavasti työvaihesuhdetta, joka vastaa nimikeryhmän tunnusta, pidetään ensisijaisena verrattuna oletustyövaihesuhteeseen. Haku tehdään seuraavassa järjestyksessä:
+Kun Supply Chain Management hakee vapautetulle tuotteelle soveltuvinta työvaihesuhdetta, työvaihesuhdetta, joka vastaa vapautetun tuotteen nimikkeen tunnusta, pidetään ensisijaisena verrattuna työsuhteeseen, joka vastaa nimikeryhmän tunnusta. Vastaavasti työvaihesuhdetta, joka vastaa nimikeryhmän tunnusta, pidetään ensisijaisena verrattuna oletustyövaihesuhteeseen. Haku tehdään seuraavassa järjestyksessä:
 
 1.  **Nimikekoodi**=**taulukko** ja **nimikesuhde**=&lt;nimikkeen tunnus&gt;
 2.  **Nimikekoodi**=**ryhmä** ja **nimikesuhde**=&lt;nimikeryhmän tunnus&gt;
@@ -198,7 +198,7 @@ Liiketoimintatarpeiden perusteella voit mahdollisesti vähentää työtä, joka 
 
 ### <a name="making-routes-independent-of-resources"></a>Reittien määrittäminen resursseista riippumattomiksi
 
-Useissa järjestelmissä operatiivinen resurssi tai resurssiryhmä, joka suorittaa työvaiheen, on määritettävä reitityksessä. Finance and Operationsissa voit kuitenkin määrittää vaatimusjoukon, joka operatiivisten resurssien on täytettävä, jotta niitä voidaan käyttää työvaiheessa. Tämän vuoksi tiettyä operatiivista resurssia tai resurssiryhmää, jota tullaan käyttämään, ei tarvitse määrittää ennen työvaiheen ajoittamista. Tämä toiminto on erityisen hyödyllinen silloin, kun useat työntekijät tai koneet voivat suorittaa saman työvaiheen.  
+Useissa järjestelmissä operatiivinen resurssi tai resurssiryhmä, joka suorittaa työvaiheen, on määritettävä reitityksessä. Supply Chain Managementissa voit kuitenkin määrittää joukon vaatimuksia, jotka operatiivisen resurssin on täytettävä, jotta sitä voidaan käyttää työvaiheessa. Tämän vuoksi tiettyä operatiivista resurssia tai resurssiryhmää, jota tullaan käyttämään, ei tarvitse määrittää ennen työvaiheen ajoittamista. Tämä toiminto on erityisen hyödyllinen silloin, kun useat työntekijät tai koneet voivat suorittaa saman työvaiheen.  
 
 Voit määrittää esimerkiksi, että työvaihe vaatii operatiivisen resurssin, jonka tyyppi on **Kone** ja jonka **leimauskapasiteetti** on 20 tonnia. Ajoitusmoduuli ratkaisee nämä vaatimukset tietyn operatiivisen resurssin tai resurssiryhmän osalta, kun työvaihe ajoitetaan. Joustavuus paranee, koska voit määrittää nämä vaatimukset sen sijaan, että työvaihe olisi sidottava tiettyyn koneeseen. Lisäksi ylläpito on helpompaa, kun resursseja siirretään tai uusia resursseja lisätään.  
 

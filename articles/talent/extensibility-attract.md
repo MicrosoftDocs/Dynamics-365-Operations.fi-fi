@@ -1,6 +1,6 @@
 ---
 title: Attractin laajennettavuus
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 for Talent - Attract -sovelluksen laajentamista Microsoft Power -ympäristön avulla.
+description: 'Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent: Attract -sovelluksen laajentamista Microsoft Power -ympäristön avulla.'
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/18/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795217"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026230"
 ---
 # <a name="extensibility-in-attract"></a>Attractin laajennettavuus
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent perustuu Common Data Service -ympäristöön, ja sitä voidaan laajentaa eri tavoin Microsoft Power Platformin ja Common Data Servicein toimintojen avulla. Niinpä voit määrittää ja mukauttaa järjestelmää Microsoft PowerAppsin ja Microsoft Flow'n avulla. Saat lisää analyysitietoja henkilöistä Microsoft Power BI:n avulla. Lisäksi uudet mukautetut tehtävät, kuten PowerApps- ja verkkosisältö (iframe) -tehtävät, auttavat mukauttamaan työhönottoprosessia entisestään. Voit muokata työhönottoprosessia näiden tehtävien avulla liiketoiminnan tarpeita ja prosesseja vastaaviksi. Voit myös varmistaa, että sekä työhönottoryhmällä että hakijoilla on saumaton ja mukautettu kokemus.
+Microsoft Dynamics 365 Talent perustuu Common Data Serviceen, ja sitä voidaan laajentaa eri tavoin Microsoft Power Platformin ja Common Data Servicein toimintojen avulla. Niinpä voit määrittää ja mukauttaa järjestelmää Microsoft PowerAppsin ja Microsoft Flow'n avulla. Saat lisää analyysitietoja henkilöistä Microsoft Power BI:n avulla. Lisäksi uudet mukautetut tehtävät, kuten PowerApps- ja verkkosisältö (iframe) -tehtävät, auttavat mukauttamaan työhönottoprosessia entisestään. Voit muokata työhönottoprosessia näiden tehtävien avulla liiketoiminnan tarpeita ja prosesseja vastaaviksi. Voit myös varmistaa, että sekä työhönottoryhmällä että hakijoilla on saumaton ja mukautettu kokemus.
 
 ## <a name="extending-option-sets-in-attract"></a>Attractin asetusjoukkojen laajentaminen
 
@@ -54,7 +54,7 @@ Microsoft Dynamics 365 for Talent perustuu Common Data Service -ympäristöön, 
 12. Valitse **Tallenna**.
 13. Valitse sivun yläosassa **Julkaise**.
 
-## <a name="take-advantage-of-the-microsoft-power-platform"></a>Microsoft Powerin hyödyntäminen 
+## <a name="take-advantage-of-the-microsoft-power-platform"></a>Hyödynnä Microsoft Power Platformia 
 
 Koska kaikki Attractin tiedot ovat Common Data Servicessä, voit sisällyttää omat liiketoimintatarpeet Attractiin Microsoft Power Platformin työkaluilla.
 

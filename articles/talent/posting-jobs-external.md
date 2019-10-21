@@ -1,6 +1,6 @@
 ---
-title: Työpaikkailmoitusten julkaiseminen Attractista ulkoisille urasivustoille
-description: Tässä ohjeaiheessa kerrotaan, miten voit Dynamics 365 for Talent - Attractista julkaista töitä ulkoisille työhönoton sivustoille.
+title: Työpaikkojen julkaiseminen ulkoisille urasivustoille Attractista
+description: 'Tässä ohjeaiheessa kerrotaan, miten voit Dynamics 365 Talent: Attractista julkaista töitä ulkoisille työhönoton sivustoille.'
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 936ff85a4dabb715cb83b875a5c58c9fb7a0ac26
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 919cec773d5e57e8f5429e31872db7ed658e969b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739814"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008079"
 ---
 # <a name="post-jobs-to-broadbean"></a>Työpaikkojen julkaiseminen Broadbeaniin
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract auttaa palkkaamaan työntekijöitä mahdollistamalla työpaikkojen julkaisemisen suoraan Attractista Broadbeaniin. Kun olet [luonut työpaikan](./creating-jobs-attract.md), sinun tarvitsee vain napsauttaa painiketta, jonka jälkeen työpaikka on työpaikan kaikkien mahdollisten ehdokkaiden nähtävillä Broadbeanissa.
+Microsoft Dynamics 365 Talent: Attract auttaa palkkaamaan työntekijöitä mahdollistamalla työpaikkojen julkaisemisen suoraan Attractista Broadbeaniin. Kun olet [luonut työpaikan](./creating-jobs-attract.md), sinun tarvitsee vain napsauttaa painiketta, jonka jälkeen työpaikka on työpaikan kaikkien mahdollisten ehdokkaiden nähtävillä Broadbeanissa.
 
 Työpaikkojen julkaisemista varten Broadbeanissa tarvitaan soveltuva Broadbean-käyttöoikeus. Broadbean sisältää erilaisia tuotteita ja suunnitelmia. Jos haluat lisätietoja Broadbeanin käyttöoikeuksista ja hinnoittelusta, [ota yhteys Broadbeaniin](https://www.broadbean.com/contact-us/).
 

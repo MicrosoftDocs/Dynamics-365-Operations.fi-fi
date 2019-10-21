@@ -1,6 +1,6 @@
 ---
-title: Finance and Operationsin tuotteiden ja varastoyksiköiden synkronointi Field Serviceen
-description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Microsoft Dynamics 365 for Finance and Operationsin varastoyksiköstä Microsoft Dynamics 365 for Field Serviceen.
+title: Tuotteiden ja varastoyksiköiden synkronointi Supply Chain Managementista Field Serviceen
+description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementin varastoyksiköstä Dynamics 365 Field Serviceen.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -19,38 +19,38 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 78e8d8fa609b015cf2fceaf498279fe091325dbb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8b65e9640106c5d351270074e39c121e70917228
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835691"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251221"
 ---
-# <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Finance and Operationsin tuotteiden ja varastoyksiköiden synkronointi Field Serviceen
+# <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a>Tuotteiden ja varastoyksiköiden synkronointi Supply Chain Managementista Field Serviceen
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Microsoft Dynamics 365 for Finance and Operationsin varastoyksiköstä Microsoft Dynamics 365 for Field Serviceen.
+Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementin varastoyksiköstä Dynamics 365 Field Serviceen.
 
-[![Liiketoimintaprosessien synkronointi Finance and Operationsin ja Field Servicen välillä](./media/FSProductsOW.png)](./media/FSProductsOW.png)
+[![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-Käytetty **Field Service -tuotteet, joissa varastoyksikkö (Fin and Opsista Field Serviceen)** -malli perustuu **Field Servicen tuotteet (Fin and Opsista Field Serviceen)** -malliin. Lisätietoja on kohdassa [Field Service -tuotteet (Finance and Operationsista Field Serviceen)](field-service-product.md).
+Käytetty **Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Field Serviceen)** -malli perustuu **Field Service -tuotteet (Supply Chain Managementista Field Serviceen)** -malliin. Lisätietoja on kohdassa [Field Service -tuotteet (Supply Chain Managementista Field Serviceen)](field-service-product.md).
 
 Tässä ohjeaiheessa käsitellään kahden mallin eroja: 
-- **Field Service -tuotteet, joissa varastoyksikkö (Fin and Opsista Salesiin)**
-- **Field Servicen tuotteet (Fin and Opsista Field Serviceen)** 
+- **Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Salesiin)**
+- **Field Service -tuotteet (Supply Chain Managementista Field Serviceen)** 
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 
 **Mallin nimi Tietojen integroinnissa:**
 
-- Field Service -tuotteet, joissa varastoyksikkö (Fin and Opsista Salesiin)
+- Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Salesiin)
 
 **Tehtävän nimi tietojen integrointiprojektissa:**
 
 - Tuotteet
 
-**Field Service -tuotteet, joissa varastoyksikkö (Fin and Opsista Field Serviceen)** -malli sisältää yhden yhdistämismäärityksen, jota ei ole **Field Servicen tuotteet (Fin and Opsista Field Serviceen)** -mallissa. Tämä yhdistämismääritys varmistaa, että varastotason synkronointiin tarvittava varastoyksikkö on mukana.
+**Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Field Serviceen)** -malli sisältää yhden yhdistämismäärityksen, joka ei sisälly **Field Service -tuotteet (Supply Chain Managementista Field Serviceen)** -malliin. Tämä yhdistämismääritys varmistaa, että varastotason synkronointiin tarvittava varastoyksikkö on mukana.
 
 ```
 INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryunit.name [Inventory Unit(Name)] 
@@ -60,6 +60,6 @@ INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryuni
 
 Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä.
 
-### <a name="field-service-products-with-inventory-unit-fin-and-ops-to-field-service-products"></a>Field Service -tuotteet, joissa varastoyksikkö (Fin and Opsista Field Serviceen): tuotteet
+### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a>Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Field Serviceen): Tuotteet
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSProduct1.png)](./media/FSProduct1.png)

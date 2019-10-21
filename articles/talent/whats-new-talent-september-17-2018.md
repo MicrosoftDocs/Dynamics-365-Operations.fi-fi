@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (17. syyskuuta 2018)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent Core HR:n uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (17. syyskuuta 2018)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent - Core HR:n uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 213324f9074f88d9fdc8efdfa46bc3ed7817d1e8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 558c2cdb4addce54af937ff862535d65f1ebd602
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517922"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026026"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a>Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (17. syyskuuta 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-september-17-2018"></a>Dynamics 365 Talent: Core HR:n uudet tai muuttuneet ominaisuudet (17. syyskuuta 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -37,13 +37,13 @@ Tässä ohjeaiheessa käsitellään Core HR -ohjelman uusia tai muuttuneita omin
 
 Lomasuunnitelmiin on lisätty uusi jaksotustyyppi. Jaksotusaikataulu voi nyt perustua palvelukuukausiin tai työtunteihin. Lisätietoja on kohdassa [Jaksotettu poissaolo työtuntien mukaan](leave-accrue-hours-worked.md).
 
-## <a name="platform-update-18"></a>Ympäristöpäivitys 18
+## <a name="platform-update-18-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 18
 
-Ympäristöpäivitys 18 on nyt osa Talent-versiota. 
+Finance and Operations -käyttömpäristöpäivitys 18 on nyt osa Talent-versiota. 
 
 -   Pakolliset ja muut kentät voidaan piilottaa mukautuksen kautta. Käyttäjä voi näin luoda yksinkertaistetun kokemuksen, jossa liiketoimintalogiikan oletusarvojen mukaan määritettyjä pakollisia kenttiä ei näytetä. Pakolliset piilotetut kentät näkyvät myös tilapäisesti, jos ne ovat tyhjiä, kun yritetään tallennusta.
 
--   Ympäristöpäivityksessä 18 Talent-verkkoasiakasohjelma kohdistaa nyt sen visuaaliset elementit Microsoft Fluent Designin kanssa.
+-   Finance and Operations -käyttöympäristöpäivityksessä 18 Talent-verkkoasiakasohjelma kohdistaa nyt sen visuaaliset elementit Microsoft Fluent Designin kanssa.
 
     -   Kun kentät ovat "Luku-tilassa", voit siirtyä muokkaukseen valitsemalla kentissä muokkausvaihtoehdon.
 

@@ -1,6 +1,6 @@
 ---
-title: Sähköpostiasetusten määrittäminen Microsoft Dynamics 365 for Talent - Attractissa
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamcis 365 for Talent - Attractista lähetettävien sähköpostien asetusten määrittämistä.
+title: Sähköpostiasetusten määrittäminen Microsoft Dynamics 365 Talent – Attractissa
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent - Attractista lähetettävien sähköpostien asetusten määrittämistä.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/04/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a8cf59064dd2f66ee50a0b0566aa712ba1f72dea
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: c891a36f01d36774bd921475fa5995d207cd2d51
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739492"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008659"
 ---
 # <a name="configure-email-settings"></a>Sähköpostiasetusten määrittäminen
 
 [!include[banner](../includes/banner.md)]
 
-Brändisi kasvattaa luottamusta ja auttaa luomaan suhteen ehdokkaisiin, ennen kuin he hakeva työpaikkaa. Positiivinen mielikuva brändistä houkuttelee parhaat työhakijat ja parantaa nykyisten työntekijöiden uskollisuutta. Microsoft Dynamics 365 for Talent: Attractin avulla voit määrittää sähköpostit yrityksen brändin mukaisiksi. Tällä tavoin työpaikkaa hakevien kokemus pysyy yhtenäisenä koko hakuprosessin ajan.
+Brändisi kasvattaa luottamusta ja auttaa luomaan suhteen ehdokkaisiin, ennen kuin he hakeva työpaikkaa. Positiivinen mielikuva brändistä houkuttelee parhaat työhakijat ja parantaa nykyisten työntekijöiden uskollisuutta. Microsoft Dynamics 365 Talent: Attractin avulla voit määrittää sähköpostit yrityksen brändin mukaisiksi. Tällä tavoin työpaikkaa hakevien kokemus pysyy yhtenäisenä koko hakuprosessin ajan.
 
 Attractin avulla voi tehdä seuraavat toimet:
 

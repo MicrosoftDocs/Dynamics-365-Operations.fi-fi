@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35ec47a13d9119c755702e019d09c76e1281b4a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549310"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250207"
 ---
 # <a name="activity-based-subcontracting"></a>Toimintoperusteinen alihankinta
 
@@ -32,7 +32,7 @@ ms.locfileid: "1549310"
 
 Tässä aiheessa kuvataan yksityiskohtaisesti, miten alihankintatoimintoja voi käyttää lean-valmistuksen tuotantovirrassa.
 
-Microsoft Dynamics 365 for Finance and Operationsissa on kaksi lähestymistapaa alihankintaan: tuotantotilaukset ja lean-valmistus. Lean-valmistuksen lähestymistavassa alihankintatyö on mallinnettu palveluna, joka liittyy tuotantovirran tehtävään. Kustannusryhmän tyyppi, jonka nimi on **Suora ulkoistaminen** on otettu käyttöön, ja alihankinnan palvelut eivät enää kuulu tuoterakenteeseen (BOM). Lean-valmistuksen kustannuslaskennan ratkaisuun on täysin integroitu alihankintatöiden kustannuslaskenta.
+Microsoft Dynamics 365 Supply Chain Managementissa on kaksi lähestymistapaa alihankintaan: tuotantotilaukset ja lean-valmistus. Lean-valmistuksen lähestymistavassa alihankintatyö on mallinnettu palveluna, joka liittyy tuotantovirran tehtävään. Kustannusryhmän tyyppi, jonka nimi on **Suora ulkoistaminen** on otettu käyttöön, ja alihankinnan palvelut eivät enää kuulu tuoterakenteeseen (BOM). Lean-valmistuksen kustannuslaskennan ratkaisuun on täysin integroitu alihankintatöiden kustannuslaskenta.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Tuotantovirrat, joihin liittyy alihankkijoita
 Tuotantovirran perusperiaate ei muutu, kun tehtävät hoidetaan alihankintana. Materiaali virtaa edelleen sijaintien välillä prosessitoiminnot muuntavat materiaalia tuotteiksi ja siirtotehtävät siirtävät materiaaleja tai tuotteita paikasta toiseen. Voit mallintaa sijainteja ja työolut toimittajan hallitaan määrittämällä toimittajatilin varastoon tai resurssin resurssiryhmään.  
@@ -102,7 +102,7 @@ Usein kuljetusta pidetään tuottamattomana ja ajatellaan, että se ei tuo lisä
 
 Lean-valmistuksen toimintoperusteisen alihankinnan avulla voit integroida rahdinkuljettajat ja kuljetuspalveluiden tarjoajat, jotka siirtävät materiaaleja ja tuotteita tuotantovirran sijaintien välillä. Mallintamalla siirtotehtävän voit määrittää rahdinkuljettajan tai toimittajan. Siirtotehtävä/-työ perustuu palveluun ja ostosopimukseen, ja voit luoda ostotilauksia ja vastaanoton ohjeita töiden varsinaisen siirron perusteella. Tämä toiminto on sama kuin alihankintaprosessin tehtävien toiminnallisuus.  
 
-Siksi Dynamics 365 for Finance and Operations tukee nyt tuoterakennelaskentaa, joka sisällyttää kuljetuspalvelut, liittyvien ostotilausten luonnin, integroidun vastaanoton rekisteröinnin ja kuljetuspalveluiden kustannusten integroinnin tuotantovirran kustannuslaskentaan.
+Siksi Supply Chain Management tukee nyt tuoterakennelaskentaa, joka sisällyttää kuljetuspalvelut, liittyvien ostotilausten luonnin, integroidun vastaanoton rekisteröinnin ja kuljetuspalveluiden kustannusten integroinnin tuotantovirran kustannuslaskentaan.
 
 
 

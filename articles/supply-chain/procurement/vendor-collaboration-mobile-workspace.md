@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 253ba0bd991e8db17940d3d4b9ade599800bf924
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2c2ba1f23cc068daf20474f05519c3c6865fd183
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843862"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250253"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Toimittajayhteistyön mobiilityötila
 
@@ -30,10 +30,10 @@ ms.locfileid: "1843862"
 
 Tässä ohjeaiheessa on tietoja **toimittajayhteistyön** mobiilityötilasta. Työtilan avulla toimittajat pysyvät ajan tasalla ostotilauksia, jotka on lähetetty heille hyväksyttäväksi. He voivat myös tarkastella uusia ja päivitettyjä ostotilauksia ja yhteyshenkilöitä koskevia tietoja.
 
-Tätä mobiilityötilaa on tarkoitettu käytettäväksi Microsoft Dynamics 365 for Unified Operations Mobile -sovelluksella.
+Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations -mobiilisovelluksen kanssa.
 
 ## <a name="overview"></a>Yleiskuvaus 
-**Toimittajayhteistyön** mobiilityötila pitää toimittajat ajan tasalla uusista ostotilauksista, jotta he voivat tarkastella ostotilauksia ja sitten vastata niihin Microsoft Dynamics 365 for Finance and Operationsin verkkoasiakasohjelmassa. 
+**Toimittajayhteistyö**-mobiilityötila pitää toimittajat ajan tasalla uusista ostotilauksista, jotta he voivat tarkastella ostotilauksia ja sitten vastata niihin verkkoasiakasohjelmassa. 
 
 >[!NOTE]
 > Huomautus: mobiilityötilaa tulee käyttää täydennyksenä toimittajayhteistyön web-liittymään, ei sen sijasta. 
@@ -59,8 +59,8 @@ WWW-asiakasohjelman toimittajayhteistyön web-liittymää käytetään uusien yh
 ## <a name="prerequisites"></a>Edellytykset
 Edellytykset vaihtelevat sen mukaan, mikä Microsoft Dynamics 365 -versio on otettu käyttöön organisaatiossa.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations 
-Jos Microsoft Dynamics 365 for Finance and Operations on otettu käyttöön organisaatiossa, järjestelmänvalvojan on julkaistava **Toimittajayhteistyö**-mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Managementin käytön edellytykset
+Jos Supply Chain Management on otettu käyttöön organisaatiossasi, järjestelmänvalvojan on julkaistava **Toimittajayhteistyö**-mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611 ja Platform update 3 tai uudempi
 Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsin versio 1611 ja Platform update 3 tai uudempi, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
@@ -104,7 +104,7 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsi
 <li><a href="vendor-collaboration-work-external-vendors.md">Toimittajayhteistyön käyttäminen ulkoisten toimittajien kanssa</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Toimittajayhteistyön käyttäjien hallinta</a></li>
 <li><a href="set-up-maintain-vendor-collaboration.md">Toimittajayhteistyön määrittäminen ja hallinta</a></li>
-<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Toimittajayhteistyön käyttäminen Finance and Operations -asiakkaiden kanssa</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Toimittajayhteistyön käyttäminen Supply Chain Managements -asiakkaiden kanssa</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -112,7 +112,7 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsi
 
 ## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
 
-Lataa ja asenna Dynamics 365 for Unified Operations -mobiilisovellus:
+Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 
 -   [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)

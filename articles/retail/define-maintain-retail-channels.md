@@ -1,6 +1,6 @@
 ---
 title: Vähittäismyyntikanavien määrittäminen ja ylläpitäminen
-description: Tämä ohjeaihe sisältää perinteisten myymälöiden määrittämisprosessin yleiskatsauksen. Perinteisiä myymälöitä kutsutaan Microsoft Dynamics 365 for Retailissa vähittäismyymälöiksi. Artikkeli sisältää myös tietoja tehtävistä, jotka on suoritettava ennen vähittäismyymälän määrittämistä ja sen jälkeen.
+description: Tämä ohjeaihe sisältää perinteisten myymälöiden määrittämisprosessin yleiskatsauksen. Perinteisiä myymälöitä kutsutaan Dynamics 365 Retailissa vähittäismyymälöiksi. Artikkeli sisältää myös tietoja tehtävistä, jotka on suoritettava ennen vähittäismyymälän määrittämistä ja sen jälkeen.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/14/2017
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 53ba6cdb2378ce9011c6e7e3ce4e67c789adb1e6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560346"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019367"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Vähittäismyyntikanavien määrittäminen ja ylläpitäminen
 
 [!include [banner](includes/banner.md)]
 
-Tämä ohjeaihe sisältää perinteisten myymälöiden määrittämisprosessin yleiskatsauksen. Perinteisiä myymälöitä kutsutaan Microsoft Dynamics 365 for Retailissa vähittäismyymälöiksi. Artikkeli sisältää myös tietoja tehtävistä, jotka on suoritettava ennen vähittäismyymälän määrittämistä ja sen jälkeen.
+Tämä ohjeaihe sisältää perinteisten myymälöiden määrittämisprosessin yleiskatsauksen. Perinteisiä myymälöitä kutsutaan Dynamics 365 Retailissa vähittäismyymälöiksi. Artikkeli sisältää myös tietoja tehtävistä, jotka on suoritettava ennen vähittäismyymälän määrittämistä ja sen jälkeen.
 
-Dynamics 365 for Retail tukee useita vähittäismyynnin kanavia, kuten verkkokauppoja, verkkokauppoja, puhelinkeskuksia ja perinteisiä myymälöitä. Perinteistä myymälöitä kutsutaan vähittäismyymäläksi. Jokaisella vähittäismyymälällä voi olla omat maksuvälineet, hintaryhmät, kassakoneet, tulo- ja kulutilit sekä oma henkilökunta. Vähittäismyymälälle on määritettävä kaikki edellä luetellut elementit, ennen kuin se voidaan luoda. Kun olet luonut vähittäismyymälän, voit määrittää myymälän tuotteet. Voit myös liittää työntekijät, kassapäätteet ja asiakkaat myymälään. Lopuksi lisäät uuden myymälän organisaatiohierarkiaan.
+Retail tukee useita vähittäismyynnin kanavia, kuten verkkokauppoja, puhelinkeskuksia ja perinteisiä kauppoja. Perinteistä myymälöitä kutsutaan vähittäismyymäläksi. Jokaisella vähittäismyymälällä voi olla omat maksuvälineet, hintaryhmät, kassakoneet, tulo- ja kulutilit sekä oma henkilökunta. Vähittäismyymälälle on määritettävä kaikki edellä luetellut elementit, ennen kuin se voidaan luoda. Kun olet luonut vähittäismyymälän, voit määrittää myymälän tuotteet. Voit myös liittää työntekijät, kassapäätteet ja asiakkaat myymälään. Lopuksi lisäät uuden myymälän organisaatiohierarkiaan.
 
 ## <a name="setting-up-retail-stores"></a>Vähittäismyynnin varastojen määrittäminen
 
-Ennen kuin voit määrittää vähittäismyymälän Dynamics 365 for Retailissa, sinun on suoritettava edellytettäviä toimia. Tämän jälkeen voit luoda vähittäismyymälän ja lisätä tiedot.
+Ennen kuin voit määrittää vähittäismyymälän Retailissa, sinulta edellytetään joidenkin tehtävien suorittamista. Tämän jälkeen voit luoda vähittäismyymälän ja lisätä tiedot.
 
 ### <a name="prerequisites"></a>Edellytykset
 
@@ -55,7 +55,7 @@ Ennen kuin voit määrittää vähittäismyymälän, sinun on suoritettava seura
 11. Henkilökunnan jäsenten määrittäminen.
 
     > [!NOTE]
-    > Määritä myös työntekijöille soveltuvat käyttöoikeudet, joiden avulla he voivat kirjautua Dynamics 365 for Retail for Retail POS -järjestelmään ja suorittaa siellä tehtäviä.
+    > Määritä myös työntekijöille soveltuvat käyttöoikeudet, joiden avulla he voivat kirjautua Retail POS -järjestelmään ja suorittaa siellä tehtäviä.
 
 12. Määritä myymälään liitettävät Retail POS -profiilit. Tämä tehtävä sisältää useita tehtäviä, kuten kassapäätteiden määrittäminen, offline profiilien määrittäminen ja kuitin muodon ja profiilien määrittäminen.
 

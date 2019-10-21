@@ -1,6 +1,6 @@
 ---
 title: Puhelukeskuksen myyntitoiminnot
-description: Tässä ohjeaiheessa on Microsoft Dynamics 365 for Retailin puhelinkeskuksen myyntitoimintojen yleiskatsaus.
+description: Tässä ohjeaiheessa on Dynamics 365 Retailin puhelinkeskuksen myyntitoimintojen yleiskatsaus.
 author: josaw1
 manager: AnnBe
 ms.date: 04/03/2018
@@ -19,26 +19,28 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8b78762ce70b318e1f77e1e49ffaa7b72f01667f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549477"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025768"
 ---
 # <a name="call-center-sales-functionality"></a>Puhelupalvelukeskuksen myyntitoiminnot
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Retailissa puhelinpalvelukeskus on vähittäismyynnin kanava, joka voidaan määrittää sovelluksessa. Määrittämällä tietyn kanavan kaikille puhelinkeskusyksiköillesi järjestelmä voi liittää tietyt oletustiedot ja tilauksen käsittelyn oletusarvot myyntitilauksiin, jotka puhelinkeskuskanavan käyttäjä on luonut.
+
+Dynamics 365 Retailissa puhelinpalvelukeskus on vähittäismyynnin kanava, joka voidaan määrittää sovelluksessa. Määrittämällä tietyn kanavan kaikille puhelinkeskusyksiköillesi järjestelmä voi liittää tietyt oletustiedot ja tilauksen käsittelyn oletusarvot myyntitilauksiin, jotka puhelinkeskuskanavan käyttäjä on luonut.
 
 Puhelinkeskuksen ominaisuuksia ovat tarkennettu vähittäismyyntihinta ja alennukset, luettelot, lahjakortit, kanta-asiakasohjelmat ja kupongit. Puhelinkeskuksen tilauksia toimittaa myös myyntipistesovellus (POS) ristikanavatilauksen tukemiseksi.
 
-On tärkeää muistaa, että vaikka puhelinkeskusmoduulia voidaan käyttää muilla aloilla vähittäismyynnin ulkopuolella, Dynamics 365 for Retailin nykyisen version puhelinkeskussovellusta ei ole vielä optimoitu käytettäväksi yritysten välisissä (B2B) tilauksen käsittelytilanteissa tai tilanteissa, joissa tilauksessa on paljon myyntirivejä. On suositeltavaa, että käyttäjät, jotka haluavat käyttää puhelinkeskuksen ominaisuuksia tilausten käsittelyyn tavallisten kuluttajatapahtumien ulkopuolella, varaavat riittävästi aikaa puhelinkeskuksen toimintojen testaamiseen ja vahvistamiseen, jotta ne toimivat halutulla tavalla.
+On tärkeää muistaa, että vaikka puhelinkeskusmoduulia voidaan käyttää muilla aloilla vähittäismyynnin ulkopuolella, Retailin nykyisen version puhelinkeskussovellusta ei ole vielä optimoitu käytettäväksi yritysten välisissä (B2B) tilauksen käsittelytilanteissa tai tilanteissa, joissa tilauksessa on paljon myyntirivejä. On suositeltavaa, että käyttäjät, jotka haluavat käyttää puhelinkeskuksen ominaisuuksia tilausten käsittelyyn tavallisten kuluttajatapahtumien ulkopuolella, varaavat riittävästi aikaa puhelinkeskuksen toimintojen testaamiseen ja vahvistamiseen, jotta ne toimivat halutulla tavalla.
 
 Tilauksen luonnin tukemisen lisäksi puhelinkeskusmoduuli tarjoaa myös helppokäyttöisen asiakaspalvelusovelluksen, joka helpottaa asiakastilien paikantamista ja asiakkaan tilaustietojen ja määritteiden tarkastamista. Asiakaspalvelunäyttö on suunniteltu siten, että käyttäjä pääsee nopeasti tarvittaviin tietoihin, joiden avulla voidaan vastata asiakkaan useimpiin tilausta koskeviin kysymyksiin.
 
-Tällä sivulla on linkit asianmukaisiin dokumentteihin, jotka liittyvät Dynamics 365 for Retailin puhelinkeskusominaisuuksien määritykseen ja käyttöön.
+Tällä sivulla on linkit asianmukaisiin dokumentteihin, jotka liittyvät Retailin puhelinkeskusominaisuuksien määritykseen ja käyttöön.
+
 
 ## <a name="configure-the-call-center"></a>Määritä puhelinkeskus
 

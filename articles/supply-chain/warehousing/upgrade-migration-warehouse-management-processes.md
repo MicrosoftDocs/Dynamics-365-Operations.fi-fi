@@ -1,5 +1,5 @@
 ---
-title: Päivitä varastonhallinnan prosessit Microsoft Dynamics AX 2012:sta Finance and Operationsiin
+title: Varastonhallinnan päivittäminen Microsoft Dynamics AX 2012:sta Supply Chain Managementiin
 description: Tämä aihe on yleiskatsaus tuote- ja varastonhallinnan siirtovaihtoehdoista.
 author: perlynne
 manager: AnnBe
@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c3dcb75653743d0d135eda197c6330f3ee9c5383
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554043"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251428"
 ---
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Päivitä varastonhallinnan prosessit Microsoft Dynamics AX 2012:sta Finance and Operationsiin
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Varastonhallinnan päivittäminen Microsoft Dynamics AX 2012:sta Supply Chain Managementiin 
 
 
 [!include [banner](../includes/banner.md)]
 
-Tämä ohjeaihe sisältää yhteenvedon Microsoft Dynamics AX 2012 R3:n (jossa WMSII-moduuli) päivittämisestä Microsoft Dynamics 365 for Finance and Operationsiin.
+Tämä ohjeaihe sisältää yhteenvedon Microsoft Dynamics AX 2012 R3:n (jossa on WMSII-moduuli) päivittämisestä Supply Chain Managementiin.
 
-Finance and Operations ei enää tue vanhaa **WMSII**-moduulia, joka on peräisin Microsoft Dynamics AX 2012:sta. Sen sijaan voit käyttää **Varastonhallinta**-moduulia. WMSII-moduulissa Sijainti- ja Kuormalavan tunnus -varastodimensiot voidaan valita kirjanpitovarastoa varten, mutta Kuormalavan tunnus -varastodimensiota ei voida käyttää kirjanpitovarastoon Finance and Operationsissa.
+Supply Chain Management ei enää tue vanhaa **WMSII**-moduulia, joka on peräisin Microsoft Dynamics AX 2012:sta. Sen sijaan voit käyttää **Varastonhallinta**-moduulia. WMSII-moduulissa Sijainti- ja Kuormalavan tunnus -varastodimensiot voidaan valita kirjanpitovarastoa varten, mutta Kuormalavan tunnus -varastodimensiota ei voida käyttää kirjanpitovarastoon Supply Chain Managementissa.
 
 Päivityksen aikana kaikki Kuormalavatunnus-varastodimensiota käyttävään varastodimensioryhmään liittyvät tuotteet tunnistetaan ja merkitään lukituksi eikä niitä käsitellä päivitystä varten.
 
-## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Finance and Operationsin päivittäminen, kun AX 2012 R3 WMSII on käytössä
+## <a name="upgrading-to-supply-chain-management-when-ax-2012-r3-wmsii-is-used"></a>Päivittäminen Supply Chain Managementiin, kun AX 2012 R3 WMSII on käytössä
 Päivityksen jälkeen voit kuitenkin käyttää asetuksia **Vaihda nimikkeen varastodimensioryhmä** -lomakkeessa ja poistaa käyttöeston tuotteista, jotka on estetty päivityksen aikana. Sen jälkeen voit käsitellä näiden tuotteiden tapahtumia.
 
-### <a name="enabling-items-in-finance-and-operations"></a>Nimikkeiden ottaminen käyttöön Finance and Operations
-Tämä muutos on tarpeen, koska Finance and Operationsissa nimikkeiden seuranta on osa varastonhallintaprosesseja. Näissä prosesseissa kaikki varastot ja niiden sijainnit pitää liittää sijainnin profiiliin. Jos haluat käyttää varaston hallintaprosesseja, seuraavat tiedot on määritettävä:
+### <a name="enabling-items-in-supply-chain-management"></a>Nimikkeiden ottaminen käyttöön Supply Chain Managementissa 
+Tämä muutos on pakollinen, koska FinanceSupply Chain Managementissa nimikkeiden seuranta on osa varastonhallintaprosesseja. Näissä prosesseissa kaikki varastot ja niiden sijainnit pitää liittää sijainnin profiiliin. Jos haluat käyttää varaston hallintaprosesseja, seuraavat tiedot on määritettävä:
 -   Kaikkien kohteiden ja varastojen on oltava käytössä varastonhallintaprosesseja varten 
 -   Aiemmin vapautetut tuotteet täytyy liittää varastodimensioryhmään, joka käyttää varaston hallintaprosesseja 
 

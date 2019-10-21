@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 00ce4a31c0b0f466911658c79f6e32788273c127
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a7168d13ef0b24d06aa28fbbc22bbb4e6093df24
+ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833999"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "1994907"
 ---
 # <a name="manage-order-holds"></a>Tilausten pidon hallinta
 
@@ -33,45 +33,40 @@ Voit suorittaa tämän menettelyn esittely-yrityksen USMF kanssa tai käyttää 
 
 
 ## <a name="set-up-order-holds"></a>Tilauksen pitojen määrittäminen
-1. Valitse Myynti ja markkinointi > Asetukset > Myyntitilaukset > Tilauksen pitokoodit.
-2. Valitse Uusi.
-3. Kirjoita arvo Pitokoodi-kenttään.
-    * Kirjoita esimerkiksi Uusintapuhelu.  
-4. Kirjoita arvo Kuvaus-kenttään.
-    * Esimerkki: Tilaus odottaa asiakkaan uusintapuhelua.  
-    * Voit halutessasi poistaa fyysiset varaukset tilauksesta valitsemalla Poistetut varaukset -valintaruudun, kun tämä pitokoodi lisätään.  
-5. Valitse Tallenna.
+1. Valitse **Siirtymisruutu > Moduulit > Myynti ja markkinointi > Asetukset > Myyntitilaukset > Tilauksen pitokoodit**.
+2. Valitse **Uusi**.
+3. Kirjoita arvo **Pitokoodi**-kenttään. Kirjoita esimerkiksi Uusintapuhelu.  
+4. Kirjoita **Kuvaus**-kenttään arvo.
+    - Esimerkki: Tilaus odottaa asiakkaan uusintapuhelua.  
+    - Voit halutessasi poistaa fyysiset varaukset tilauksesta valitsemalla **Poista varaukset** -valintaruudun, kun tämä pitokoodi lisätään.  
+5. Valitse **Tallenna**.
 
 ## <a name="place-order-on-hold"></a>Tilauksen asettaminen pitoon
-1. Siirry kohtaan Myynti ja markkinointi > Myyntitilaukset > Kaikki myyntitilaukset.
-2. Valitse Uusi.
-3. Syötä tai valitse arvo Asiakastili-kentässä.
-4. Valitse OK.
-5. Syötä tai valitse arvo Nimiketunnus-kentässä.
-6. Kirjoita numero Määrä-kenttään.
-7. Valitse toimintoruudussa Myyntitilaus.
-8. Valitse Tilausten pidot.
-9. Valitse Uusi.
-10. Valitse Pitokoodi-kentässä edellisessä alitehtävässä luotu koodi.
-11. Valitse Tallenna.
+1. Valitse **Siirtymisruutu > Moduulit > Myynti ja markkinointi > Myyntitilaukset > Kaikki myyntitilaukset**.
+2. Valitse **Uusi**.
+3. Syötä tai valitse arvo **Asiakastili**-kentässä.
+4. Valitse **OK**.
+5. Syötä tai valitse arvo **Nimiketunnus**-kentässä.
+6. Anna **Määrä**-kentässä numero.
+7. Valitse **toimintoruudussa** **Myyntitilaus**.
+8. Valitse **Tilausten pidot**.
+9. Valitse **Uusi**.
+10. Valitse **Pitokoodi**-kentässä edellisessä alitehtävässä luotu koodi.
+11. Valitse **Tallenna**.
 12. Sulje sivu.
-13. Siirry kohtaan Myynti ja markkinointi > Myyntitilaukset > Kaikki myyntitilaukset.
-14. Merkitse valittu rivi luettelossa.
-    * Tällä hetkellä pidossa olevien tilausten Älä käsittele- ja Pito-kentät on merkitty.    
-15. Valitse toimintoruudussa Kerää ja pakkaa.
+13. Siirry kohtaan **Myynti ja markkinointi > Myyntitilaukset > Kaikki myyntitilaukset**.
+14. Merkitse valittu rivi luettelossa. Tällä hetkellä pidossa olevien tilausten Älä käsittele- ja Pito-kentät on merkitty.
+15. Valitse toimintoruudussa **Kerää ja pakkaa**.
 
 ## <a name="manage-order-holds"></a>Tilausten pidon hallinta
-1. Valitse Myynti ja markkinointi > Myyntitilaukset > Avoimet tilaukset > Tilausten pidot.
-    * Tilausten pidot -sivu on kuin eräänlainen työtila, jossa on yhteenveto kaikista nykyisistä ja käsitellyistä pidoista ja jossa voit käsitellä niitä ja liitettyjä myyntitilauksia.      
+1. Valitse **Myynti ja markkinointi > Myyntitilaukset > Avoimet tilaukset > Tilausten pidot**. **Tilausten pidot** -sivu on kuin eräänlainen työtila, jossa on yhteenveto kaikista nykyisistä ja käsitellyistä pidoista ja jossa voit käsitellä niitä ja liitettyjä myyntitilauksia.     
 2. Merkitse valittu rivi luettelossa.
-3. Valitse toimintoruudussa Pidä uloskuittaus.
-4. Valitse Kuittaa ulos.
-5. Poista valitun rivin merkintä luettelossa.
-    * Käyttäjätunnuksesi näkyy nyt uloskuittauksen kentässä.   
-6. Valitse Poista uloskuittaus.
-7. Valitse toimintoruudussa Vapauta pito.
-    * Kun olet valmis poistamaan pidon ja sallimaan tilauksen käsittelyn tilauksen täyttämisen seuraavaan vaiheeseen, pito on vapautettava. Voit tilausta ei tarvitse muuttaa, voi suorittaa Vapauta pidot -toiminnon. Käytä kuitenkin Vapauta ja muokkaa -toimintoa, jos tilaus on päivitettävä vapautuksen yhteydessä.      
-    * Vapauta ja lähetä -toiminto on käytettävissä vain, kun käytät Puhelinkeskus-toimintoa.  
-8. Valitse Vapauta pidot.
-    * Tilauksen pito on nyt vapautettu ja se on poistettu aktiivisten pitojen luettelosta. Jos haluat nähdä kaikki pidot tai niiden alijoukot tietyn tilaan mukaan, muuta Näytä-kentän arvoa.     
+3. Valitse **toimintoruudussa** **Pidä uloskuittaus**.
+4. Valitse **Kuittaa ulos**.
+5. Poista valitun rivin merkintä luettelossa. Käyttäjätunnuksesi näkyy nyt **Uloskuittaus**-kentässä.   
+6. Valitse **Poista uloskuittaus**.
+7. Valitse **toimintoruudussa** **Vapauta pito**.
+    - Kun olet valmis poistamaan pidon ja sallimaan tilauksen käsittelyn tilauksen täyttämisen seuraavaan vaiheeseen, pito on vapautettava. Voit tilausta ei tarvitse muuttaa, voi suorittaa Vapauta pidot -toiminnon. Käytä kuitenkin Vapauta ja muokkaa -toimintoa, jos tilaus on päivitettävä vapautuksen yhteydessä.      
+    - **Vapauta ja lähetä** -toiminto on käytettävissä vain, kun käytät Puhelinkeskus-toimintoa.  
+8. Valitse **Vapauta pidot**. Tilauksen pito on nyt vapautettu ja se on poistettu aktiivisten pitojen luettelosta. Jos haluat nähdä kaikki pidot tai niiden alijoukot tietyn tilaan mukaan, muuta Näytä-kentän arvoa.     
 

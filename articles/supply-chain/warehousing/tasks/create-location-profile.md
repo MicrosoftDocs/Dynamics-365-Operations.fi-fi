@@ -1,6 +1,6 @@
 ---
 title: Luo toimipaikkaprofiili
-description: Tässä ohjeaiheessa käsitellään sijaintiprofiilin luonti Dynamics 365 for Finance and Operationsissa.
+description: Tässä ohjeaiheessa käsitellään sijaintiprofiilin luonti Dynamics 365 Supply Chain Managementissa.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/29/2019
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46aa1001c21ae39c158062444303ca02c0f41a45
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 36bad7424ac247b8fd9a819928837de619e9e258
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1866976"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026782"
 ---
 # <a name="create-a-location-profile"></a>Luo toimipaikkaprofiili
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Tässä ohjeaiheessa käsitellään sijaintiprofiilin luonti Dynamics 365 for Finance and Operationsissa. Jokaisella varastosijainnilla on oltava liitetty sijaintiprofiili, joka kuvaa sijainnin ominaisuudet, kuten sen, salliiko sijainti yhdistetyt nimikkeet. Tässä menettelyssä luodaan profiili sijainnille, jossa ei vaadita rekisterikilpiohjausta. Ota käyttöön yhdistetyt nimikkeet ja yhdistetyt varastoinnin tilat, sekä salli inventointi. Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.
+Tässä ohjeaiheessa käsitellään sijaintiprofiilin luonti Dynamics 365 Supply Chain Managementissa. Jokaisella varastosijainnilla on oltava liitetty sijaintiprofiili, joka kuvaa sijainnin ominaisuudet, kuten sen, salliiko sijainti yhdistetyt nimikkeet. Tässä menettelyssä luodaan profiili sijainnille, jossa ei vaadita rekisterikilpiohjausta. Ota käyttöön yhdistetyt nimikkeet ja yhdistetyt varastoinnin tilat, sekä salli inventointi. Voit käyttää tätä menettelyä USMF:n esittely-yrityksessä.
 
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Varastonhallinta > Asetukset > Varasto > Sijaintiprofiilit**.

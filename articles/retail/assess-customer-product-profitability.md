@@ -1,6 +1,6 @@
 ---
 title: Asiakkaiden ja tuotteiden tuottavuuden arviointi
-description: Tässä artikkelissa kerrotaan, miten voit muistiin sisältyvän ja reaaliaikaisen analytiikan avulla käsitellä ja kerätä asiakkaisiin sekä tuotteiden kannattavuuteen liittyviä tietoja Microsoft Dynamics 365 for Retail -tiedoista.
+description: Tässä artikkelissa kerrotaan, miten voit muistiin sisältyvän ja reaaliaikaisen analytiikan avulla käsitellä ja kerätä asiakkaisiin sekä tuotteiden kannattavuuteen liittyviä tietoja Dynamics 365 Retail -tiedoista.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 28d4eeaa3fcae33f817690ad496b4b123a5838ce
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5a9bebf948bd4602556f70a5a79690621a03261e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561361"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023587"
 ---
 # <a name="assess-customer-and-product-profitability"></a>Asiakkaiden ja tuotteiden kannattavuuden arviointi
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa kerrotaan, miten voit muistiin sisältyvän ja reaaliaikaisen analytiikan avulla käsitellä ja kerätä asiakkaisiin sekä tuotteiden kannattavuuteen liittyviä tietoja Microsoft Dynamics 365 for Retail -tiedoista.
+Tässä artikkelissa kerrotaan, miten voit muistiin sisältyvän ja reaaliaikaisen analytiikan avulla käsitellä ja kerätä asiakkaisiin sekä tuotteiden kannattavuuteen liittyviä tietoja Dynamics 365 Retail -tiedoista.
 
-Käyttäjät voivat tutkia Dynamics 365 for Retailin osana myös parhaiden asiakkaiden (10 - 100) tuottavuutta eri organisaatiohierarkian tasoilla perustuen yhteen seuraavista ehdoista:
+Käyttäjät voivat tutkia Retailin osana myös parhaiden asiakkaiden (10–100) tuottavuutta eri organisaatiohierarkian tasoilla jonkin seuraavan ehdon perusteella:
 
 - Myyntisumma
 - Määrä

@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f740ab481b8663ecc29169eee1ead5ff23bb3f5
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866134"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251463"
 ---
 # <a name="replenishment-overview"></a>Täydennys – yleiskatsaus
 
@@ -55,7 +55,7 @@ Kysynnän täydennystä tuetaan myyntitilauksissa, siirtotilauksissa, tuotantoti
 ## <a name="minmax-replenishment"></a>Vähimmäis- tai enimmäistäydennys
 Vähimmäis- tai enimmäistäydennyksessä varastoa täydennetään niin, että on määritettyjen vähimmäis- ja enimmäisrajojen välillä. Yleensä tämä prosessi tapahtuu kerran päivässä, mikä auttaa varmistamaan, että kaikki keräilysijainnit on täytetty enimmäistasolle ennen keräilyn aloittamista. 
 
-Vähimmäis- ja enimmäissummat määritetään täydennysmallissa. Monet muut mallin asetukset muistuttavat aallon kysynnän täydennyksessä käytettäviä malleja. Mallissa on oltava yksi rivi kullekin nimikkeelle ja sijainnille. Kun täydennys suoritetaan käyttämällä erätyötä, Microsoft Dynamics 365 for Finance and Operations tarkistaa täydennyksen tarpeen siinä järjestyksessä, johon rivit on järjestetty. 
+Vähimmäis- ja enimmäissummat määritetään täydennysmallissa. Monet muut mallin asetukset muistuttavat aallon kysynnän täydennyksessä käytettäviä malleja. Mallissa on oltava yksi rivi kullekin nimikkeelle ja sijainnille. Kun suoritat täydennyksen käyttämällä erätyötä, järjestelmä tarkistaa täydennyksen tarpeen siinä järjestyksessä, johon rivit on järjestetty. 
 
 Huomaa, vähimmäis- ja enimmäistäydennysstrategia ei voi täydentää tyhjää sijaintia, ellei sijaintia ole määritetty nimikkeen kiinteästi sijainniksi. Jos täydennettävä sijainti ei ole kiinteä sijainti, järjestelmä ei voi määrittää täydennettävää nimikettä. Niinpä ennen täydennystä tarvitaan ainakin varastosaldo.
 

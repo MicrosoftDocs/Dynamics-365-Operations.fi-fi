@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b42f86fc243312d18654b1a048f9dffb29afd187
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afd4509bc9bdff345e48a590a12cc84ae25aebb8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550067"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018428"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Luo ja suorita valmiit raportit
 
@@ -43,7 +43,7 @@ Tämän tallenteen luomisessa käytetty demotietojen yritys on USRT. Tämä tall
 5. Kirjoita päivämäärä Päivämäärään-kenttään.
 6. Avaa haku valitsemalla Kanava-kentässä avattavan valikon painike.
 7. Valitse puussa solmu Contoso Retail\Contoso Retail USA\Central\Houston.
-    * Tässä näkyy vähittäismyynnin raportoinnin merkityksen vähittäismyynnin oletusorganisaatiohierarkia.   Valitse Organisaation hallinto >Organisaatiot > Organisaatiohierarkian tarkoitukset ja valitse Vähittäismyynnin raportointi. Valitse Määritetyt hierarkiat -kohdassa sen hierarkian nimi, jonka oletussarake on valittuna.      Vähittäismyymälät alueen mukaan -kohta on vähimmäismyynnin raportoinnin tarkoituksen oletusorganisaatiohierarkia esittelytiedoissa (joita käytetään tämän tehtävän tallenteessa).     
+    * Tässä näkyy vähittäismyynnin raportoinnin merkityksen vähittäismyynnin oletusorganisaatiohierarkia.   Valitse Organisaation hallinto > Organisaatiot > Organisaatiohierarkian tarkoitukset ja valitse Vähittäismyynnin raportointi. Valitse Määritetyt hierarkiat -osiosta sen hierarkian nimi, jonka Oletus-sarake on valittuna. Vähittäismyymälät alueen mukaan -kohta on vähimmäismyynnin raportoinnin tarkoituksen oletusorganisaatiohierarkia esittelytiedoissa (joita käytetään tämän tehtävän tallenteessa).     
 8. Valitse OK.
 9. Valitse vaihtoehto Näytä-kentässä.
 10. Valitse vaihtoehto Peruste-kentässä.
@@ -55,7 +55,7 @@ Tämän tallenteen luomisessa käytetty demotietojen yritys on USRT. Tämä tall
 3. Kirjoita päivämäärä Päivämäärään-kenttään.
 4. Avaa haku valitsemalla Kanava-kentässä avattavan valikon painike.
 5. Valitse puussa solmu Contoso Retail\Contoso Retail USA\West\Seattle.
-    * Tässä näkyy vähittäismyynnin raportoinnin merkityksen vähittäismyynnin oletusorganisaatiohierarkia.   Valitse Organisaation hallinto >Organisaatiot > Organisaatiohierarkian tarkoitukset ja valitse Vähittäismyynnin raportointi. Valitse Määritetyt hierarkiat -kohdassa sen hierarkian nimi, jonka oletussarake on valittuna.      Vähittäismyymälät alueen mukaan -kohta on vähimmäismyynnin raportoinnin tarkoituksen oletusorganisaatiohierarkia esittelytiedoissa (joita käytetään tämän tehtävän tallenteessa).     
+    * Tässä näkyy vähittäismyynnin raportoinnin merkityksen vähittäismyynnin oletusorganisaatiohierarkia.   Valitse Organisaation hallinto > Organisaatiot > Organisaatiohierarkian tarkoitukset ja valitse Vähittäismyynnin raportointi. Valitse Määritetyt hierarkiat -osiosta sen hierarkian nimi, jonka Oletus-sarake on valittuna. Vähittäismyymälät alueen mukaan -kohta on vähimmäismyynnin raportoinnin tarkoituksen oletusorganisaatiohierarkia esittelytiedoissa (joita käytetään tämän tehtävän tallenteessa).     
 6. Valitse OK.
 7. Valitse OK.
 

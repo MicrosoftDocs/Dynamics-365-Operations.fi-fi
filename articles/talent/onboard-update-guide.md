@@ -1,6 +1,6 @@
 ---
-title: Perehdytysoppaiden päivittäminen Dynamics 365 for Talent - Onboardissa
-description: Tässä ohjeaiheessa käsitellään perehdytysoppaiden päivittämistä Microsoft Dynamics 365 for Talent - Onboardissa ja muutosten siirtämistä aiemmin luotuihin oppaisiin.
+title: 'Perehdytysoppaiden päivittäminen Dynamics 365 Talent: Onboardissa'
+description: 'Tässä ohjeaiheessa käsitellään perehdytysoppaiden päivittämistä Microsoft Dynamics 365 Talent: Onboardissa ja muutosten siirtämistä aiemmin luotuihin oppaisiin.'
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d2be450685724510db2f0fd2af8545f8f40278e7
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731454"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010726"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-for-talent-onboard"></a>Perehdytysoppaiden päivittäminen Dynamics 365 for Talent: Onboardissa
+# <a name="update-onboarding-guides"></a>Perehdytysoppaiden päivittäminen
 
 [!include [banner](includes/banner.md)]
 
-Jos perehdytysoppaisiin on tehtävä muutoksia Microsoft Dynamics 365 for Talent: Onboardissa, voit päivittää ne ja siirtää muutokset, vaikka oppaat olisi jo lähetetty. Perehdytysoppaan voi päivittää kahdella tavalla:
+Jos perehdytysoppaisiin on tehtävä muutoksia Microsoft Dynamics 365 Talent: Onboardissa, voit päivittää ne ja siirtää muutokset, vaikka oppaat olisi jo lähetetty. Perehdytysoppaan voi päivittää kahdella tavalla:
 
 - Muokkaa perehdytysopasta suoraan ja tallenna tekemäsi muutokset.
 - Muokkaa perehdytysmallia ja siirrä sitten muutokset kaikkiin siitä luotuihin perehdytysoppaisiin.

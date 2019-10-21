@@ -1,6 +1,6 @@
 ---
 title: Retail Modern POS:n (MPOS) ja Cloud POS:n demotietojen näyttöasettelut
-description: Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 for Retail -sovelluksen myyntipisteiden käyttökokemusten demotietojoukon näyttöasetteluista.
+description: Tässä ohjeaiheessa on tietoja Dynamics 365 Retail -sovelluksen myyntipisteiden käyttökokemusten demotietojoukon näyttöasetteluista.
 author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c8d2fac82541b768f8e0a31049177bdc1262d44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570640"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019321"
 ---
 # <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Retail Modern POS:n (MPOS) ja Cloud POS:n demotietojen näyttöasettelut
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 for Retail -sovelluksen myyntipisteiden käyttökokemusten demotietojoukon näyttöasetteluista.
+Tässä ohjeaiheessa on tietoja Dynamics 365 Retail -sovelluksen myyntipisteiden käyttökokemusten demotietojoukon näyttöasetteluista.
 
 ## <a name="overview"></a>Yleiskuvaus
 
@@ -40,7 +40,7 @@ Retail-demotietoihin sisältyvissä mallinäyttöasetteluissa on sisältöä, jo
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Näyttöasettelun tunnuksen rakenne
 
-Retail-sovelluksen näyttöasettelut ovat kohdassa **Retail** \> **Kanavan asetukset** \> **Myyntipisteen asetukset** \> **Myyntipiste** \> **Näyttöasetukset**.
+Siirry näytön asetteluihin valitsemalla **Retail** \> **Kanavan asetukset** \> **Myyntipisteen asetukset** \> **Myyntipiste** \> **Näytön asettelut**.
 
 ![Retail-sovelluksen näyttöasettelut](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,7 +107,7 @@ Seuraavassa taulukossa ovat tavallisissa näyttöjen resoluutioissa käytettävi
 \* Nämä asettelujen lisäkoot ovat käytettävissä vain Adventure Works- ja Fabrikam-asetteluissa.
 
 > [!TIP]
-> Myyntipiste valitsee automaattisesti asettelujen koot sen mukaan, mikä käytettävissä oleva koko on lähimpänä nykyisen sovellusikkunan näytön resoluutiota. Voit etsiä Retail Modern POS (MPOS)- tai Retail Cloud CPOS (CPOS) -sovelluksessa tällä hetkellä käytössä olevan näyttöasettelun tunnuksen ja näytön resoluution avaamalla **Asetukset**-sivun ja siirtymällä **Istunnon tiedot** -osaan. Voit tarkastella myös nykyisen sovelluksen tai selainkehyksen todellista ikkunan resoluutiota. Kun nämä tiedot ovat käytettävissä, löydät Retail-sovelluksen asettelun sisällön lähteen valitsemalla **Kanavan asetukset** \> **POS-asetukset** \> **Myyntipiste** \> **Näyttöasettelut**.
+> Myyntipiste valitsee automaattisesti asettelujen koot sen mukaan, mikä käytettävissä oleva koko on lähimpänä nykyisen sovellusikkunan näytön resoluutiota. Voit etsiä Retail Modern POS (MPOS)- tai Retail Cloud CPOS (CPOS) -sovelluksessa tällä hetkellä käytössä olevan näyttöasettelun tunnuksen ja näytön resoluution avaamalla **Asetukset**-sivun ja siirtymällä **Istunnon tiedot** -osaan. Voit tarkastella myös nykyisen sovelluksen tai selainkehyksen todellista ikkunan resoluutiota. Kun nämä tiedot ovat käytettävissä, löydät asettelun sisällön lähteen valitsemalla **Kanavan asetukset** \> **POS-asetukset** \> **Myyntipiste** \> **Näytön asettelut**.
 
 ![Näyttöasettelut ja asettelun resoluutiot/koot Retail-ohjelmassa ja myyntipisteessä](../retail/media/demo-screen-layouts-fig-3-1.png)
 

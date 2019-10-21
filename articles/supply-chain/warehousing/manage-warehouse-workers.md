@@ -1,6 +1,6 @@
 ---
 title: Varastotyöntekijöiden hallinta
-description: Tässä artikkelissa kuvataan, miten voit hyödyntää Dynamics 365 for Finance and Operationsia työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
+description: Tässä artikkelissa kuvataan, miten voit hyödyntää Dynamics 365 Supply Chain Managementin varastosovellusta työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f0de87e10f9213838dd5e5436b8b5699b19547bf
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572555"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018618"
 ---
 # <a name="manage-warehouse-workers"></a>Varastotyöntekijöiden hallinta
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kuvataan, miten voit hyödyntää Microsoft Dynamics 365 for Finance and Operationsia työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
+Tässä artikkelissa kuvataan, miten voit hyödyntää Dynamics 365 Supply Chain Managementin varastosovellusta työntekijöiden varastoissasi tekemän työn ohjaamiseen ja valvontaan.
 
 Jos käytät tätä toimintoa varastonhallinnassa, kaikkiin varastotyöntekijöiden toimintoihin viitataan *työnä*. Työ, kuten käsillä olevan varaston keräily, siirtäminen ja laskeminen tallennetaan mobiililaitteiden avulla. Ennen kuin varastotyöntekijä voi suorittaa työn, hänen on oltava liitettynä työntekijään Henkilöstöhallinnossa. Jokaiseen **Työntekijä**-tiliin voi olla liitettynä useita varastotyökäyttäjiä. Nämä työn käyttäjät voivat työskennellä eri varastoissa ja heillä voi olla eritasoinen pääsy erilaisiin mobiililaitteen valikkoihin. Voit ajatella varastotyön käyttäjiä useina valitun työntekijän kirjautumisina. Kullakin työntekijällä on oletusvarasto, ja määrätyt työnkulut näkyvät kyseiselle työn käyttäjälle saatavilla olevien valikkovaihtoehtojen kautta. 
 

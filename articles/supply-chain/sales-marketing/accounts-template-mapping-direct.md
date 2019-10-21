@@ -1,6 +1,6 @@
 ---
-title: Sales-asiakkaiden synkronointi suoraan Finance and Operations -asiakkaisiin
-description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tilejä synkronoidaan Microsoft Dynamics 365 for Salesista Microsoft Dynamics 365 for Finance and Operationsiin.
+title: Tilien synkronointi suoraan Salesin tuotteista Supply Chain Managementin asiakkaisiin
+description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tilejä synkronoidaan suoraan Dynamics 365 Salesista Supply Chain Managementiin.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,25 +19,25 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 036389a1a52fdf15b73ab90c0a37108871a1a15e
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 4624f7e31c6dca616ff4ee824453b8971c1865e7
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743345"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249885"
 ---
-# <a name="synchronize-accounts-directly-from-sales-to-customers-in-finance-and-operations"></a>Asiakkaiden synkronointi suoraan Salesista Finance and Operationsin asiakkaisiin
+# <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Tilien synkronointi suoraan Salesin tuotteista Supply Chain Managementin asiakkaisiin
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Tutustu [Common Data Service for Appsin tietojen integrointiin](https://docs.microsoft.com/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
 
-Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tilejä synkronoidaan suoraan Microsoft Dynamics 365 for Salesista Microsoft Dynamics 365 for Finance and Operationsiin.
+Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tilejä synkronoidaan suoraan Dynamics 365 Salesista Dynamics 365 Supply Chain Managementiin.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
 
-Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Finance and Operations and Sales -esiintymien tietojen synkronoinnissa.  Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Finance and Operationsin ja Salesin välillä. Seuraavassa kuvassa kerrotaan, miten tiedot synkronoidaan Finance and Operations- ja Sales-sovelluksen välillä.
+Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Supply Chain Managementin and Salesin esiintymien tietojen synkronoinnissa.  Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Supply Chain Managementin ja Salesin välillä. Seuraava kuva näyttää, miten tiedot synkronoidaan Supply Chain Managementin ja Salesin välillä.
 
 [![Prospektista käteiseksi -ratkaisun tiedonkulku](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -45,7 +45,7 @@ Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Fina
 
 Näet käytettävissä olevat mallit avaamalla [PowerApps-hallintakeskuksen](https://preview.admin.powerapps.com/dataintegration). Valitse **Projektit** ja valitse sitten julkisia malleja oikeassa yläkulmassa olevan **Uusi projekti** -kohdan avulla.
 
-Seuraava mallia ja sen taustalla olevaa tehtävää käytetään synkronoimaan tilit Sales-sovelluksesta Finance and Operations -sovellukseen:
+Seuraavaa mallia ja sen taustalla olevaa tehtävää käytetään synkronoimaan tilit Salesista Supply Chain Managementiin:
 
 - **Mallin nimi tietojen integroinnissa:** tilit (Salesista Fin and Opsiin) – suora
 - **Projektin tehtävän nimi:** tilit – asiakkaat
@@ -54,13 +54,13 @@ Synkronointitehtävät on suoritettava, ennen kuin tilin ja asiakkaan synkronoin
 
 ## <a name="entity-set"></a>Yksikköjoukko
 
-| Myynti    | Finance and Operations |
+| Myynti    | Toimitusketjun hallinta |
 |----------|------------------------|
 | Tilit | Asiakkaat V2           |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
-Summia hallitaan Salesissa ja synkronoidaan Finance and Operationsiin asiakkaina. Näiden asiakkaiden **On ulkoisesti ylläpidetty** -ominaisuuden arvoksi on määritetty **Kyllä**, jotta Salesista peräisin olevia asiakkaita voidaan jäljittää. Näitä tietoja käytetään suodattamaan Salesiin synkronoitavat laskut laskutuksen aikana.
+Tilejä hallitaan Salesista ja synkronoidaan Supply Chain Managementiin asiakkaina. Näiden asiakkaiden **On ulkoisesti ylläpidetty** -ominaisuuden arvoksi on määritetty **Kyllä**, jotta Salesista peräisin olevia asiakkaita voidaan jäljittää. Näitä tietoja käytetään suodattamaan Salesiin synkronoitavat laskut laskutuksen aikana.
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Salesin ratkaisu prospektista käteiseksi
 
@@ -72,21 +72,21 @@ Kun Salesin integrointiratkaisua käytetään, päivityskomentosarja määrittä
 
 ## <a name="preconditions-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
-- **CustomerGroupId**-yhdistämismääritys on päivitettävä Finance and Operationsin kelvolliseksi arvoksi. Voit määrittää oletusarvon. Vaihtoehtoisesti voit määrittää arvon arvomäärityksellä.
+- **CustomerGroupId**-yhdistämismääritys on päivitettävä Supply Chain Managementin kelvolliseksi arvoksi. Voit määrittää oletusarvon. Vaihtoehtoisesti voit määrittää arvon arvomäärityksellä.
 
     Oletusmallin arvo on **10**.
 
-- Kun seuraavat yhdistämismääritykset lisätään, Finance and Operationsissa tarvitaan vähemmän manuaalisia päivityksiä. Voit käyttää oletusarvoa tai arvomääritystä, kuten **Maa tai alue** tai **Paikkakunta**.
+- Kun seuraavat yhdistämismääritykset lisätään, Supply Chain Managementissa tarvitaan vähemmän manuaalisia päivityksiä. Voit käyttää oletusarvoa tai arvomääritystä, kuten **Maa tai alue** tai **Paikkakunta**.
 
-    - **SiteId** – Toimipaikka on pakollinen, jotta tarjoukset ja myyntitilausrivit voidaan luoda Finance and Operationsissa. Oletustoimipaikka voidaan ottaa joko tuotteesta tai tilauksen otsikossa olevasta asiakkaasta.
+    - **SiteId** – Toimipaikka on pakollinen, jotta tarjoukset ja myyntitilausrivit voidaan luoda Supply Chain Managementissa. Oletustoimipaikka voidaan ottaa joko tuotteesta tai tilauksen otsikossa olevasta asiakkaasta.
 
         Oletusmallin arvo on **1**.
 
-    - **WarehouseId** – Varasto on pakollinen, jotta tarjoukset ja myyntitilausrivit voidaan käsitellä Finance and Operationsissa. Oletusvarasto voidaan ottaa Finance and Operationsissa joko tuotteesta tai tilauksen otsikossa olevasta asiakkaasta.
+    - **WarehouseId** – Varasto on pakollinen, jotta tarjoukset ja myyntitilausrivit voidaan käsitellä Supply Chain Managementissa. Oletusvarasto voidaan ottaa Supply Chain Managementissa joko tuotteesta tai tilauksen otsikossa olevasta asiakkaasta.
 
         Oletusmallin arvo on **13**.
 
-    - **LanguageId** – Kieli on pakollinen, jotta tarjoukset ja myyntitilaukset voidaan luoda Finance and Operationsissa. Oletusarvoisesti käytetään asiakkaan tilausotsikon kieltä.
+    - **LanguageId** – Kieli on pakollinen, jotta tarjoukset ja myyntitilaukset voidaan luoda Supply Chain Managementissa. Oletusarvoisesti käytetään asiakkaan tilausotsikon kieltä.
 
         Oletusmallin arvo on **fi-fi**.
 
@@ -98,7 +98,7 @@ Kun Salesin integrointiratkaisua käytetään, päivityskomentosarja määrittä
 Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä. 
 
 > [!NOTE]
-> Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Finance and Operationsiin.
+> Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Supply Chain Managementiin.
 
 ![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
@@ -107,11 +107,11 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 [Prospektista käteiseksi](prospect-to-cash.md)
 
-[Sales-asiakkaiden synkronointi suoraan Finance and Operations -asiakkaisiin](accounts-template-mapping-direct.md)
+[Tilien synkronointi suoraan Salesin tuotteista Supply Chain Managementin asiakkaisiin](accounts-template-mapping-direct.md)
 
-[Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](contacts-template-mapping-direct.md)
+[Salesin yhteyshenkilöiden synkronointi suoraan Supply Chain Managementin yhteyshenkilöihin tai asiakkaisiin](contacts-template-mapping-direct.md)
 
-[Myyntitilauksien otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](sales-order-template-mapping-direct-two-ways.md)
+[Myyntitilausten otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin](sales-order-template-mapping-direct-two-ways.md)
 
-[Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](sales-invoice-template-mapping-direct.md)
+[Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin](sales-invoice-template-mapping-direct.md)
 

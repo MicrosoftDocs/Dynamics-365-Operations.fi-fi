@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 85950a1413cfd8745bb78a52eb9f7c81b8976605
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 51f8102afc28b3836d5fee13aa1e950351af3c4f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517885"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008364"
 ---
 # <a name="formalize-business-processes"></a>Liiketoimintaprosessien virallistaminen
 
@@ -43,7 +43,7 @@ Jokaiselle prosessille voidaan määrittää prosessin omistaja. Prosessin omist
 Prosessin omistaja ei voi luoda uusia liiketoimintaprosesseja tai liiketoimintaprosessin malleja tai poistaa aktiivista liiketoimintaprosessia tai liiketoimintaprosessin malleja.
 
 ## <a name="tasks"></a>Tehtävät
-Liiketoimintaprosessi koostuu tavallisesti useista tehtävistä. Jotkin tehtävät voidaan tehdä valmiiksi Dynamics 365 for Talentissa[?]. Tällainen tehtävä on esimerkiksi sisäisen kurssivalikoiman arviointi. Tässä tapauksessa vaihtoehto on valittuna **Tehtävälinkki** -kentässä. Muut tehtävät saattavat sisältää verkkosivuston sivujen tarkastelun tai täyttämisen. Tässä tapauksessa **URL** on valittu **Tehtävälinkki** -kentässä ja Internet-osoite voidaan syöttää. Voit antaa sekä ulkoisten että sisäisten sivustojen URL-osoitteita. Voit luoda tehtäviä myös manuaalisesti suoritettaville tehtäville, kuten kaikkien rakenteiden helppokäyttöisyyden arviointi. Tässä tapauksessa tehtävän linkki ei ole pakollinen. Tämän joustavuuden ansiosta voit seurata useita erilaisia tehtäviä kattavana prosessina.
+Liiketoimintaprosessi koostuu tavallisesti useista tehtävistä. Jotkin tehtävät voidaan tehdä valmiiksi Dynamics 365 Talentissa. Tällainen tehtävä on esimerkiksi sisäisen kurssivalikoiman arviointi. Tässä tapauksessa vaihtoehto on valittuna **Tehtävälinkki** -kentässä. Muut tehtävät saattavat sisältää verkkosivuston sivujen tarkastelun tai täyttämisen. Tässä tapauksessa **URL** on valittu **Tehtävälinkki** -kentässä ja Internet-osoite voidaan syöttää. Voit antaa sekä ulkoisten että sisäisten sivustojen URL-osoitteita. Voit luoda tehtäviä myös manuaalisesti suoritettaville tehtäville, kuten kaikkien rakenteiden helppokäyttöisyyden arviointi. Tässä tapauksessa tehtävän linkki ei ole pakollinen. Tämän joustavuuden ansiosta voit seurata useita erilaisia tehtäviä kattavana prosessina.
 
 Tehtävät voidaan määrittää joko toimelle tai tietylle työntekijälle. Esimerkiksi etupäällikkö suorittaa aina vakuutusmaksujen tarkistukset. Tämän takia kun luot tätä tehtävää, valitse ensin **Toimi** **Toimeksiantotyyppi** -kentästä ja sitten **Etuuspäällikkö** **toimiluettelosta**. Kun prosessi alkaa, tehtävä määritetään **etuuspäällikkönä** toimivalle työntekijälle. Voidaksesi määrittää tehtävän tietylle työntekijälle valitse **Työntekijä** **Määrityksen tyyppi** -kentässä ja valitse sitten henkilö.
 

@@ -1,6 +1,6 @@
 ---
 title: Toimittajayhteistyö asiakkaiden kanssa
-description: Tässä aiheessa kuvataan, miten voit käyttää ostotilauksia toimittajayhteistyön avulla Microsoft Dynamics 365 for Finance and Operationsissa ja valvoa tavaralähetysvarastoa.
+description: Tässä aiheessa kuvataan, miten voit käyttää ostotilauksia ja valvoa tavaralähetysvarastoa toimittajayhteistyön avulla.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bd3967da105b3cec4a722ee8e04fac13c798feec
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e968a57c09837a5cfa5a0476426a274021122959
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567581"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250116"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Toimittajayhteistyö asiakkaiden kanssa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa Microsoft Dynamics 365 for Finance and Operationsissa. Toimittajat voivat suorittaa liiketoimintaprosessien sarjan seuraavista työtiloista:
+Tässä aiheessa kuvataan, miten voit käyttää toimittajayhteistyötä työskennelläksesi asiakkaiden kanssa Microsoft Dynamics 365 Supply Chain Managementissa. Toimittajat voivat suorittaa liiketoimintaprosessien sarjan seuraavista työtiloista:
 
 - **Ostotilauksen vahvistus** – ostotilausten seuranta ja niihin vastaaminen.
 - **Toimittajan tarjoukset** – tarjouspyyntöjen tarkastelu ja niihin vastaaminen tekemällä tarjouksia.

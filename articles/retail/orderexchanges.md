@@ -1,6 +1,6 @@
 ---
 title: Palautustilauksen vaihdon määritys ja käsittely
-description: Tässä ohjeaiheessa kerrotaan, miten vaihto palautuksen yhteydessä konfiguroidaan ohjelmassa Microsoft Dynamics 365 for Retail.
+description: Tässä ohjeaiheessa kerrotaan, miten vaihto palautuksen yhteydessä konfiguroidaan ohjelmassa Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ce327a918159771df0acab276b1169d2ad77825
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561384"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025376"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Palautustilaukseen liittyvän vaihdon määritys ja käsittely
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retailin aiemmissa versioissa asiakastilausten palautukset käsiteltiin käyttämällä palautustilauksen asiakirjaa Retail Headquarters -ohjelmassa. Palautustilauksen asiakirjaa voidaan kuitenkin käyttää vain palautettavien tuotteiden käsittelyyn. Palautetut tuotteet on merkitty palautustilauksen riveille negatiivisena määränä. Sen sijaan myynti on merkitty on positiivisena määränä. Palautustilauksen asiakirja ei kuitenkaan tue positiivisia määriä. Tämän rajoituksen vuoksi Retailin aiemmat versiot eivät tukeneet tilanteita, joissa tuotteita vaihdettiin käyttämällä palautustilauksen asiakirjaa.
+Dynamics 365 Retailin aiemmissa versioissa asiakastilausten palautukset käsiteltiin käyttämällä palautustilauksen asiakirjaa Retail Headquarters -ohjelmassa. Palautustilauksen asiakirjaa voidaan kuitenkin käyttää vain palautettavien tuotteiden käsittelyyn. Palautetut tuotteet on merkitty palautustilauksen riveille negatiivisena määränä. Sen sijaan myynti on merkitty on positiivisena määränä. Palautustilauksen asiakirja ei kuitenkaan tue positiivisia määriä. Tämän rajoituksen vuoksi Retailin aiemmat versiot eivät tukeneet tilanteita, joissa tuotteita vaihdettiin käyttämällä palautustilauksen asiakirjaa.
 
 Toiminto on nyt lisätty tukemaan tilanteita, joissa palautustilauksiin liittyy tuotteiden vaihto. Nyt Retail käyttää palautustilauksen asiakirjan sijaan myyntitilauksen asiakirjaa käsittelemään tämäntyyppisiä tapahtumia.
 

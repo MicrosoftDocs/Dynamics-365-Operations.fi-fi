@@ -1,6 +1,6 @@
 ---
 title: Kuljetustenhallinnan yleiskatsaus
-description: Tässä ohjeaiheessa on Microsoft Dynamics 365 for Finance and Operationsin kuljetustenhallinnan toimintojen yleiskatsaus.
+description: Tässä ohjeaiheessa on Finance and Operationsin kuljetustenhallinnan toimintojen yleiskatsaus.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 918167a3ab72b3d3665cf710d8e509417b94a056
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d976ec4d3c294f0ce8e9732b21b9a429f1e47315
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561156"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2027058"
 ---
 # <a name="transportation-management-overview"></a>Kuljetustenhallinnan yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on Microsoft Dynamics 365 for Finance and Operationsin kuljetustenhallinnan toimintojen yleiskatsaus.
+Tässä ohjeaiheessa on Finance and Operationsin kuljetustenhallinnan toimintojen yleiskatsaus.
 
-Kuljetustenhallinnan avulla voit hallita yrityksen kuljetuksia sekä määrittää toimittajan ja reititysratkaisut lähteville ja saapuville tilauksille. Voit esimerkiksi tunnistaa nopeimman reitin tai edullisimman hinnan lähetykselle. Seuraavassa taulukossa kuvataan Microsoft Dynamics 365 for Finance and Operationsin kuljetustenhallinnan tärkeimmät käyttöskenaariot.
+Kuljetustenhallinnan avulla voit hallita yrityksen kuljetuksia sekä määrittää toimittajan ja reititysratkaisut lähteville ja saapuville tilauksille. Voit esimerkiksi tunnistaa nopeimman reitin tai edullisimman hinnan lähetykselle. Seuraavassa taulukossa kuvataan kuljetustenhallinnan tärkeimmät käyttöskenaariot.
 
 <table>
 <colgroup>

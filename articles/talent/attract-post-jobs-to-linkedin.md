@@ -1,6 +1,6 @@
 ---
-title: Työpaikkojen julkaiseminen LinkedInissä Microsoft Dynamics 365 for Talent - Attractista
-description: Tässä ohjeaiheessa kerrotaan, miten voit julkaista työpaikkoja Dynamics 365 for Talent - Attractista LinkedIniin.
+title: Työpaikkojen julkaiseminen LinkedInissä Microsoft Dynamics 365 Talent – Attractista
+description: Tässä ohjeaiheessa kerrotaan, miten voit julkaista työpaikkoja Dynamics 365 Talent – Attractista LinkedIniin.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: f2109f5e90321598eb2317140eef6bcd86ab82f5
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 014202ca49e5bd6204d450b2a43c7372ed84ff33
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756173"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008240"
 ---
 # <a name="post-jobs-to-linkedin"></a>Julkaise töitä LinkedIn-palveluun
 
 [!include [banner](../includes/banner.md)]
 
-LinkedIn on suurin verkossa toimiva asiantuntijaverkosto, jonka avulla koko maailman parhaat osaajat ovat käytettävissä. Microsoft Dynamics 365 for Talent: Attract auttaa palkkaamaan työntekijöitä mahdollistamalla työpaikkojen julkaisemisen suoraan Attractista LinkedIniin.
+LinkedIn on suurin verkossa toimiva asiantuntijaverkosto, jonka avulla koko maailman parhaat osaajat ovat käytettävissä. Microsoft Dynamics 365 Talent: Attract auttaa rekrytoimaan työntekijöitä mahdollistamalla työpaikkojen julkaisemisen suoraan Attractista LinkedIniin.
 
 Voit julkaista Attractista rajoitettuja listauksia LinkedIniin ilman lisäkustannuksia. Näitä listauksia voi käyttää vain LinkedIn-ohjelmistokumppaneiden, kuten Attractin, kautta. Ne eivät näy yrityksen LinkedIn-sivun **Urat**-paneelissa, koska vain maksetut ilmoitukset näkyvät siellä. Ne kuitenkin näkyvät, kun mahdolliset ehdokkaat tarkastelevat kaikkia vapaita työpaikkoja. Rajoitetut listaukset näkyvät myös LinkedInin työpaikkojen hauissa.
 

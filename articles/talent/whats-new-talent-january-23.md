@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (23. tammikuuta 2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent Core HR:n uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (23. tammikuuta 2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent - Core HR:n uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 01/23/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4e492095d5269ec81c0c22145b7af356937c256b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f1983d5a58fb2e6b1984727e1d7b44803b94cdce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742513"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023973"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-january-23-2019"></a>Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (23. tammikuuta 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-january-23-2019"></a>Dynamics 365 Talent: Core HRin uudet tai muuttuneet ominaisuudet (23. tammikuuta 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -53,5 +53,5 @@ Kun toimen työtä muutetaan, työkentät palautuvat toimeen. Avautuva ilmoitus 
 ### <a name="probation-period-and-calendar-are-not-displayed-for-future-hired-employees"></a>Koeaikaa ja kalenteria ei näytetä tulevaisuudessa palkatuille työntekijöille.
 Tällä muutoksella **Koeaika**- ja **Kalenteri**-kentät on lisätty **Muutosten hallinta** -sivulla, mikä mahdollistaa tietojen antamisen tuleville ja entisille työntekijöille.
 
-### <a name="platform-update-23"></a>Ympäristön update 23 -päivitys
-Platform update 23 sisältää pieniä ohjelmavirhekorjauksia. Lisätietoja on kohdassa [Dynamics 365 for Finance and Operations platform update 23:n uudet tai muuttuneet ominaisuudet (tammikuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+### <a name="platform-update-23-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 23
+Finance and Operationsin käyttöympäristöpäivitys 23 sisältää pieniä ohjelmavirhekorjauksia. Lisätietoja on kohdassa [Dynamics 365 Finance and Operations platform update 23:n uudet tai muuttuneet ominaisuudet (tammikuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

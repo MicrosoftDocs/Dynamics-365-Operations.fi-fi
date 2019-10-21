@@ -1,6 +1,6 @@
 ---
 title: Talentin järjestelmävaatimukset ja päivityskäytäntö
-description: Tässä ohjeaiheessa kerrotaan Dynamics 365 for Talentin järjestelmävaatimuksista. Lisäksi siinä käsitellään päivityskäytäntö.
+description: Tässä ohjeaiheessa kerrotaan Dynamics 365 Talentin järjestelmävaatimuksista. Lisäksi siinä käsitellään päivityskäytäntö.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/02/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6c881bf25e7145228ccf7ef73a7ef3637c115a49
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741772"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024157"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Talentin järjestelmävaatimukset ja päivityskäytäntö
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 for Talent -vaatimukset, kuten Attract, Onboard ja Core HR. Siinä esitellään myös Talentin käytettävissä olevat maat ja alueet sekä tiedot kielistä ja lokalisoinnissa Talentia koskevia tietoja varten. Lisäyksissä tämä ohjeaihe sisältää Talentin päivityskäytännön.
+Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 Talent -vaatimukset, kuten Attract, Onboard ja Core HR. Siinä esitellään myös Talentin käytettävissä olevat maat ja alueet sekä tiedot kielistä ja lokalisoinnissa Talentia koskevia tietoja varten. Lisäyksissä tämä ohjeaihe sisältää Talentin päivityskäytännön.
 
 ## <a name="supported-web-browsers"></a>Tuetut selaimet
 
-Microsoft Dynamics 365 for Talent in verkkosovellus voidaan suorittaa seuraavissa selaimissa, joita käytetään määritetyissä käyttöjärjestelmissä: 
+Microsoft Dynamics 365 Talent toimii kaikilla seuraavilla verkkoselaimilla, joita käytetään määritetyissä käyttöjärjestelmissä: 
 
 *   Microsoft Edge (uusin saatavana oleva versio) Windows 10 -käyttöjärjestelmässä
 *   Internet Explorer 11 Windows 10-, Windows 8.1- tai Windows 7 -käyttöjärjestelmässä
@@ -46,11 +46,11 @@ Ohjelmistovalmistajien sivustot sisältävät tietoja kunkin selaimen uusimmasta
 > * Työnkulkueditori käynnistetään ClickOnce-sovelluksena. Vain Microsoft Edge ja Internet Explorer (tuetuissa Microsoft Windows -versioissa) tukevat ClickOnce-sovelluksia. Työnkulkueditorin ClickOnce-sovellus vaatii 64-bittisen käyttöjärjestelmän.
 > * PDF-tiedostojen esikatseluun suosittelemme modernia verkkoselainta, kuten Microsoft Edgeä (uusin julkinen versio) Windows 10 -käyttöjärjestelmässä tai Google Chromea (uusin julkinen versio) Windows 10-, Windows 8.1-, Windows 8- tai Windows 7 -käyttöjärjestelmässä tai Google Nexus 10 -tabletissa.
 >   Verkon vaatimukset
-> * Dynamics 365 for Talent on suunniteltu verkkoihin, joiden viive on enintään 250–300 millisekuntia (ms). Tämä viive on selaimen asiakasohjelman ja Dynamics 365 for Talentia isännöivän Microsoft Azure -palvelinkeskuksen välillä. On suositeltavaa testata verkon viive osoitteessa [www.azurespeed.com](https://www.azurespeed.com "Azuren viivetesti").
-> * Dynamics 365 for Talentin kaistanleveyden vaatimukset riippuvat skenaariostasi. Yleisimmät tilanteet vaativat yli 50 kilotavua sekunnissa (KBps) kaistanleveyttä.
+> * Dynamics 365 Talent on suunniteltu verkkoihin, joiden viive on enintään 250–300 millisekuntia (ms). Tämä viive on selaimen asiakasohjelman ja Talentia isännöivän Microsoft Azure -palvelinkeskuksen välillä. On suositeltavaa testata verkon viive osoitteessa [www.azurespeed.com](https://www.azurespeed.com "Azuren viivetesti").
+> * Talentin kaistanleveyden vaatimukset riippuvat skenaariostasi. Yleisimmät tilanteet vaativat yli 50 kilotavua sekunnissa (KBps) kaistanleveyttä.
 > 
 > [!WARNING]
-> Älä laske kaistanleveysvaatimuksia asiakkaan sijainnista kertomalla käyttäjien määrä kaistanleveyden vähimmäisvaatimuksella. Tietyn sijainnin samanaikainen käyttö on hyvin vaikea laskea. Asiakkaat, jotka ovat huolissaan kaistanleveyden vaatimuksista voivat käyttää Dynamics 365 for Talentin kokeiluversiota.
+> Älä laske kaistanleveysvaatimuksia asiakkaan sijainnista kertomalla käyttäjien määrä kaistanleveyden vähimmäisvaatimuksella. Tietyn sijainnin samanaikainen käyttö on hyvin vaikea laskea. Asiakkaat, jotka ovat huolissaan kaistanleveyden vaatimuksista voivat käyttää Talentin kokeiluversiota.
 
 ## <a name="supported-microsoft-office-applications"></a>Tuetut Microsoft Office -sovellukset
 
@@ -68,6 +68,6 @@ Jos olet kehittäjä, joka on kiinnostunut maa- tai aluekohtaisten mukautusten l
 
 ## <a name="update-policy"></a>Päivityskäytäntö
 
-Microsoft Dynamics 365 for Talent on pilvipalvelu. Dynamics 365 for Talentin päivitykset ovat jatkuvia ja Microsoft ottaa ne käyttöön automaattisesti.
+Talent on pilvipalvelu. Talentin päivitykset ovat jatkuvia ja Microsoft ottaa ne käyttöön automaattisesti.
 
-Päivitykset julkaistaan säännöllisesti, ja ne tehdään kaikkiin ympäristöihin. Dynamics 365 for Talentia tuetaan [Microsoft-tuen elinkaarikäytännön](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft-tuen elinkaari") mukaisesti, joka ilmaisee yhdenmukaisen ja ennakoitavan ohjeistuksen tuotetuen saatavuudesta.
+Päivitykset julkaistaan säännöllisesti, ja ne tehdään kaikkiin ympäristöihin. Talentia tuetaan [Microsoft-tuen elinkaarikäytännön](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft-tuen elinkaari mukaisesti"), joka tarjoaa yhdenmukaisia ja ennakoitavia ohjeita tuotetuen saatavuudesta.

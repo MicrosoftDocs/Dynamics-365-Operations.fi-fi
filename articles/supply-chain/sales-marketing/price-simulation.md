@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe8c4bc8f2efb06de4cb6fd727df93ba1a5d14bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554641"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251338"
 ---
 # <a name="price-simulation"></a>Hintasimulointi
 
@@ -51,7 +51,7 @@ Jotta alennukset ja hinnat varmasti lasketaan oikein, alennuksia sisältävien t
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Kauppasopimusten alennustyypit
 
-Microsoft Dynamics 365 for Finance and Operationsin kauppasopimuksissa voi olla neljänlaisia hinnanalennuksia. Nämä alennukset voidaan määrittää eri nimikkeille, asiakkaille tai hintaryhmille ja niitä voidaan rajoittaa päivämäärän mukaan. Laskuvirheiden välttämiseksi kauppasopimukset on otettava huomioon hintasimulointeja suoritettaessa. Kauppasopimusten neljä alennustyyppiä:
+Supply Chain Managementin kauppasopimuksissa voi olla neljäntyyppisiä hinnanalennuksia. Nämä alennukset voidaan määrittää eri nimikkeille, asiakkaille tai hintaryhmille ja niitä voidaan rajoittaa päivämäärän mukaan. Laskuvirheiden välttämiseksi kauppasopimukset on otettava huomioon hintasimulointeja suoritettaessa. Kauppasopimusten neljä alennustyyppiä:
 
 -   **Myyntihinta** – Nimikkeille voidaan määrittää eri myyntihinta. Kun tarjousrivit luodaan, ohjelma hakee nimikkeelle oikean hinnan ja siirtää sen tarjousriveille. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, ei vaikuta hintasimulointiin. Tarjousrivillä käytettävä myyntihinta vastaa kauppasopimusta.
 -   **Rivialennus** – Nimikkeille määritetään erikoisalennukset tilatun määrän mukaan. Rivialennus vähennetään tavallisesti rivisummista ennen hintasimuloinnin suorittamista. Tämän vuoksi kauppasopimus, jossa on tällainen alennus, vaikuttaa hintasimulointiin.

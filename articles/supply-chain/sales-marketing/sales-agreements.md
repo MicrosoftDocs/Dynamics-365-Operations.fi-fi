@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14801f3aa486da3af252695a3e2ccd58c0e9059
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 37378b85b90f91c74da717f0a25c1847ac0b1598
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865966"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251290"
 ---
 # <a name="sales-agreements-overview"></a>Myyntisopimukset – yleiskatsaus
 
@@ -99,14 +99,14 @@ Jos olet luonut (vapautetun) myyntitilauksen myyntisopimuksesta, joitakin myynti
 | Määrä                                                          | Jos määrittämäsi määrä ylittää sellaisella myyntisopimuksen rivillä määritetyn määrän, jossa **Maksimi pakotetaan** -valintaruutu on valittuna, näyttöön tulee sanomaruutu, joka kysyy, haluatko tallentaa muutetun määrän. Valitsemalla **Kyllä** voit poistaa linkin myyntisopimuksen riviin ja laskea hinnan uudelleen. Valitsemalla **Ei** voit poistaa linkin myyntisopimuksen riviin laskematta hintaa uudelleen.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Myyntisopimuksesta tilatun nimikkeen palauttaminen
-Kun asiakas palauttaa tuotteen, joka oli tilattu myyntisopimuksen kautta, Microsoft Dynamics 365 for Finance and Operations voi löytää liittyvän myyntisopimuksen ja päivittää sen automaattisesti vastaamaan muuttunutta määrää tai summaa. Luomalla myyntisopimukseen linkitettyyn alkuperäiseen myyntitilaukseen perustuvan palautustilauksen muodostat suhteen myyntisopimuksen sitoumuksen, myyntitilausrivin ja palautustilauslaskun välille.  
+Kun asiakas palauttaa tuotteen, joka on tilattu myyntisopimuksen kautta, Supply Chain Management voi etsiä liittyvän myyntisopimuksen sitoumuksen ja päivittää sen automaattisesti vastaamaan muuttunutta määrää tai summaa. Luomalla myyntisopimukseen linkitettyyn alkuperäiseen myyntitilaukseen perustuvan palautustilauksen muodostat suhteen myyntisopimuksen sitoumuksen, myyntitilausrivin ja palautustilauslaskun välille.  
 
 Jos et halua vähentää palautettua nimikemäärää myyntisopimuksen sitoumuksesta, **Palautustilaus**-sivun **Poista linkki** -ohjausobjektilla voit poistaa palautustilauksen ja myyntisopimuksen sitoumuksen välisen linkin. Jos haluat muodostaa linkin uudelleen myöhemmin, valitse **Luo linkki**.  
 
 **Huomautus:** Palautustilaus voidaan linkittää vain yhteen myyntisopimukseen. Jos asiakas palauttaa useita tuotteita, jotka on tilattu usean myyntisopimuksen kautta, sinun on luotava uusi palautustilaus kullekin tuotteelle ja linkki vastaavaan myyntisopimukseen.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automaattinen haku myyntisopimuksia varten
-Joissakin tilanteissa, joissa myyntitilauksia luodaan epäsuorasti, esimerkiksi luodessasi hyvityslaskua tai konsernin sisäisiä myyntitilauksia, voit määrittää, hakeeko Microsoft Dynamics 365 for Finance and Operations automaattisesti käyttökelpoisia myyntisopimuksia.
+Joissakin tilanteissa, joissa myyntitilauksia luodaan epäsuorasti, esimerkiksi luodessasi hyvityslaskua tai konsernin sisäisiä myyntitilauksia, voit määrittää, hakeeko järjestelmä automaattisesti käyttökelpoisia myyntisopimuksia.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Taloushallinnon dimensiot myyntisopimuksissa
 Voit kopioida taloushallinnon dimensiot joko asiakirjojen ylätunnisteisiin tai myyntisopimusten yksittäisille riveille. Sopimuksen otsikon tai sopimusrivin dimensioita voi muuttaa milloin tahansa. Tässä tapauksessa dimensiot kopioidaan automaattisesti vapautustilausten otsikkoon tai vapautusriville.

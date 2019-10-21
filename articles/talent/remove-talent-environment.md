@@ -1,6 +1,6 @@
 ---
 title: Poista Talent-ympäristöt
-description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin testi- tai tuotantoympäristön poistoprosessista.
+description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Talentin testi- tai tuotantoympäristön poistoprosessista.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/20/2017
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 904c8eb1254a65e1627c33f14488a1a8e12f7c2b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517901"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010612"
 ---
 # <a name="remove-talent-environments"></a>Talent-ympäristöjen poistaminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 for Talentin testi- tai tuotantoympäristön poistoprosessista.
+Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Talentin testi- tai tuotantoympäristön poistoprosessista.
 
 ## <a name="removing-a-test-drive-environment"></a>Testiympäristön poistaminen
 
@@ -45,12 +45,12 @@ Aiemmin luotu testausympäristö poistetaan. Kun se on poistettu, voit tilata uu
 
 Ohjeaiheessa oletetaan, että olet ostanut Talentin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. 
 
-Koska yksi Talent-ympäristö toimii yhden PowerApps-ympäristön sisällä, huomioon on otettava kaksi vaihtoehtoa. Ensimmäinen vaihtoehto poistaa koko PowerApps-ympäristön ja toinen vaihtoehto vain Talent-sovelluksen. Ensimmäinen vaihtoehto on ensisijainen, jos olet luonut PowerApps-ympäristön nimenomaan Talentin valmistelua varten ja olet vasta aloittanut käyttöönoton tai sinulla ei ole muodostettuja integraatioita. Toista vaihtoehtoa voi käyttää silloin, kun olet muodostanut PowerApps-ympäristön, johon täytettyjä monipuolisia tietoja hyödynnetään PowerApps- ja Flow-ratkaisuissa.
+Koska yksi Talent-ympäristö toimii yhden PowerApps-ympäristön sisällä, huomioon on otettava kaksi vaihtoehtoa. Ensimmäinen vaihtoehto poistaa koko PowerApps-ympäristön, ja toinen vaihtoehto vain Talent-sovelluksen. Ensimmäinen vaihtoehto on parempi, jos olet luonut PowerApps-ympäristön nimenomaan Talentin valmistelua varten ja olet vasta aloittanut käyttöönoton tai sinulla ei ole muodostettuja integraatioita. Toinen vaihtoehto on parempi, kun olet muodostanut PowerApps-ympäristön, johon täytettyjä monipuolisia tietoja hyödynnetään PowerApps- ja Flow-ratkaisuissa.
 
 > [!Important]
 > Varmista ennen PowerApps-ympäristön poistamista, että sitä ei käytetä monipuolisissa tietojen integroinneissa Talent-sovelluksen ulkopuolella. Huomaa myös, että PowerApps-oletusympäristöjä ei voi poistaa. 
 
-Koko PowerApps-ympäristön sekä Talentin että siihen liittyvät sovellukset ja työnkulut:
+Koko PowerApps-ympäristön poistaminen, mukaan lukien Talent ja siihen liittyvät sovellukset ja työnkulut:
 
 1. Siirry [PowerApps-hallintakeskukseen](https://admin.businessplatform.microsoft.com/).
 2. Valitse **Ympäristö**.

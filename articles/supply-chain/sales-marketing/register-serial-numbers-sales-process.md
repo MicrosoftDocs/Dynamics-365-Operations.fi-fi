@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46aa4378a5b106d5717e0c841f2f7c9d6629489e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555035"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251313"
 ---
 # <a name="register-serial-numbers-in-the-sales-process"></a>Sarjanumeroiden rekisteröinti myyntiprosessissa
 
@@ -34,9 +34,9 @@ ms.locfileid: "1555035"
 
 Tässä ohjeaiheessa kerrotaan, kuinka voit rekisteröidä sarjanumeroita pakkausluetteloihin tai laskuihin myyntiprosessin aikana. Toiminto on hyödyllinen yrityksille, jotka haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille.
 
-Monet yritykset haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille. Näissä tilanteissa Microsoft Dynamics 365 for Finance and Operationsin avulla on sarja numerot on mahdollista rekisteröidä pakkausluetteloiden tai laskujen perusteella tuotteita myytäessä. Jos tuotteet myöhemmin palautettaisiinkin, voit jäljittää kunkin tuotteen laskuun ja määrittää, oletko myynyt tuotteen, ja ovatko huolto- ja takuuvelvoitteet voimassa.
+Monet yritykset haluavat kerätä sarjanumeroita ainoastaan huolto- ja takuutarkoituksessa, eikä niiden tarvitse ylläpitää sarjanumeroita varaston vastaanotoille tai otoille. Näissä tilanteissa voit rekisteröidä pakkausluetteloissa tai laskuissa olevat sarjanumerot, kun tuotteita myydään. Jos tuotteet myöhemmin palautettaisiinkin, voit jäljittää kunkin tuotteen laskuun ja määrittää, oletko myynyt tuotteen, ja ovatko huolto- ja takuuvelvoitteet voimassa.
 
-Sinun on otettava käyttöön sarjanumerot myyntiprosessille **Seurantadimensioryhmät**-sivulla valitsemalla **Aktiivinen myyntiprosessissa** -valintaruutu. Tämän jälkeen ovat vuorossa seuraavat Microsoft Dynamics 365 for Finance and Operationsin tapahtumat:
+Sinun on otettava käyttöön sarjanumerot myyntiprosessille **Seurantadimensioryhmät**-sivulla valitsemalla **Aktiivinen myyntiprosessissa** -valintaruutu. Seuraavat tapahtumat tapahtuvat Supply Chain Managementissa:
 -   **Sarjanumerot**-pikavälilehden **Sarjanumeroiden hallinta** -asetus valitaan. Kun tämä asetus on valittuna, sinun on rekisteröitävä pakkausluettelon tai laskun kunkin nimikkeen sarjanumero.
 -   Kaikki sarjanumeroiden seurantadimensioryhmän valinnat poistetaan lukuun ottamatta **Tyhjä varasto-otto sallitaan** -asetusta. Voit valita **Tyhjä varasto-otto sallitaan** -asetuksen, jos haluat ohittaa sarjanumeroiden hallinta, jotta tuotteet voi pakata ja laskuttaa ilman sarjanumeroiden rekisteröintiä.
 

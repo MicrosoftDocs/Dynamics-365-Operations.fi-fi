@@ -1,6 +1,6 @@
 ---
 title: Myy ja palauta tuotteet, jotka eivät kuulu myymälän on valikoimaan
-description: Dynamics 365 for Retailissa voi myydä ja palauttaa valikoiman ulkopuolisia tuotteita.
+description: Dynamics 365 Retailissa voi myydä ja palauttaa valikoiman ulkopuolisia tuotteita.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ae6bac983ddb4d4a217fe83c8f68c5a87ccd6a47
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567905"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024934"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Myy ja palauta tuotteet, jotka eivät kuulu myymälän on valikoimaan
 
@@ -37,7 +37,7 @@ Seuraavassa on joitakin tyypillisiä skenaarioita:
 + Jälleenmyyjällä ei ole tiettyjä tuotteita myymälässä tai varastossa, mutta tuotteita on muissa myymälöissä. Myymäläpäällikkö voi auttaa asiakasta tuotteiden haussa tai selaamisessa toisessa myymälässä, lisätä ne ostoskoriin ja jättää tilauksen valitsemalla toimitusmenetelmän.
 + Jälleenmyyjällä on useita myymälöitä ja tietyssä kaupungissa tai postinumeroalueella eikä halua pakottaa asiakkaita palauttamaan tuotteita samaan myymälään josta ne ostettiin. Sen sijaan asiakkaat voivat palauttaa tuotteet mihin tahansa myymälään.
 
-Nämä yleiset skenaariota ovat jälleenmyyjien käytössä Dynamics 365 for Retailissa. Retailin ominaisuudet:
+Nämä yleiset skenaariot ovat jälleenmyyjien käytettävissä Retailissa. Retailin ominaisuudet:
 
 + Tuotteiden haku tai selaaminen toisissa myymälöissä
 + Kaikkien julkaistujen tuotteiden haku tai selaaminen.

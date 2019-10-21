@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talentin uudet ja muuttuneet ominaisuudet (6. huhtikuu 2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (6. huhtikuuta 2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/6/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 90bac5aa9565549b2e257b0f6804a1bad53f2e9a
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: b642b5745daa6aa06450cf82abee2c51c60ff9a6
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867676"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024042"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-6-2019"></a>Dynamics 365 for Talentin uudet ja muuttuneet ominaisuudet (6. huhtikuu 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-august-6-2019"></a>Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (6. huhtikuuta 2019)
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="changes-in-attract"></a>Attractin muutokset
 
@@ -37,7 +37,7 @@ Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Attractin ohjelmakorjauk
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
 
-Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboardin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.
 
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 
@@ -59,6 +59,6 @@ Uuden vaihtoehdon avulla esimiehet voit tarkastella sekä suorien että epäsuor
 
 ## <a name="coming-soon"></a>Tulossa pian
 
-### <a name="platform-update-29"></a>Ympäristön update 29 -päivitys
+### <a name="platform-update-29-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 29
 
-Lisätietoja Platform update 29 -päivityksestä on kohdassa [Dynamics 365 for Finance and Operations platform update 29 -esiversion toiminnot (lokakuu 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 29:stä on artikkelissa [Dynamics 365 Finance and Operations -käyttöympäristöpäivitys 29:n esikatselutoiminnot (lokakuu 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).

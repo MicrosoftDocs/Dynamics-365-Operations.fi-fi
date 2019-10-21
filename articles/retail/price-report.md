@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 72f4d248f3ac49bbfd8e5a7a12352d92b89bb0eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb02bdeca2d71d84ebdddfd16d471a532823e42
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564944"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025192"
 ---
 # <a name="retail-price-reports"></a>Vähittäismyyntihintaraportit
 
 [!include [banner](includes/banner.md)]
 
 
-Jotta hinnat olisivat kilpailukykyisiä, vähittäismyyjät muuttavat usein tuotteiden hintoja. Myymäläpäälliköt haluavat, että pääsevät helposti käsiksi äskettäisiin tau tuleviin hintamuutoksiin, jotta he voivat suunnitella tarvittavat resurssit myymälän hyllyissä näkyvien hintalappujen päivittämiseen. Dynamics 365 for Retailin versiossa 10.0 myymäläpäällikkö voi avata **Hinta**-raportin valitsemalla **Kaikki vähittäismyymälät \> Myymälä \> Hintaraportti** ja tarkastelemalla myymälään liitettyjen tuotteiden päivitettyjä hintoja. 
+Jotta hinnat olisivat kilpailukykyisiä, vähittäismyyjät muuttavat usein tuotteiden hintoja. Myymäläpäälliköt haluavat, että pääsevät helposti käsiksi äskettäisiin tau tuleviin hintamuutoksiin, jotta he voivat suunnitella tarvittavat resurssit myymälän hyllyissä näkyvien hintalappujen päivittämiseen. Retailin versiossa 10.0 myymäläpäällikkö voi avata **Hinta**-raportin valitsemalla **Kaikki vähittäismyymälät \> Myymälä \> Hintaraportti ja** tarkastelemalla myymälään liitettyjen tuotteiden päivitettyjä hintoja. 
 
 Hintaraportti voidaan ottaa käyttöön, kun **Ota vähittäismyymälän hintaraportti käyttöön** -parametrin on oltava käytössä. Tämä parametri sijaitsee **Vähittäismyynnin parametrit \> Alennukset \> Muut**-välilehdessä. Kun **Hintaraportti**-sivu avataan, avautuvassa valintaikkunassa on useita määrityksiä. Käytettävissä olevat määritykset on lueteltu seuraavaksi.
 

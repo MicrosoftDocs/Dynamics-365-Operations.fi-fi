@@ -1,6 +1,6 @@
 ---
-title: Broadbean-integroinnin ottaminen käyttöön Microsoft Dynamics 365 for Talent - Attractissa
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent - Attractin määrittämistä julkaisemaan työpaikat ulkopuolisissa työpaikkailmoitussivustoissa, kuten Broadbeanissa.
+title: Broadbean-integroinnin ottaminen käyttöön Microsoft Dynamics 365 Talent – Attractissa
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent – Attractin määrittämistä julkaisemaan työpaikat ulkopuolisissa työpaikkailmoitussivustoissa, kuten Broadbeanissa.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2334c2bd0edccf3000f8d91651afafd4619ad0b8
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 808f91fb4b68ba9b5cee54d86423d23232df23a4
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739676"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008590"
 ---
 # <a name="enable-broadbean-integration"></a>Ota Broadbean-integrointi käyttöön
 
 [!include[banner](../includes/banner.md)]
 
-Haluat saada työpaikkailmoituksesi mahdollisimman monen pätevän ehdokkaan näkyville kuin mahdollista. Työhönoton sivustot, kuten Broadbean, voi auttaa saavuttamaan tämän tavoitteen. Microsoft Dynamics 365 for Talent: Attractin avulla voit nyt julkaista työpaikkoja Broadbeanissa, ja Microsoft tarjoaa koko ajan uusia mahdollisuuksia tällä alueella.
+Haluat saada työpaikkailmoituksesi mahdollisimman monen pätevän ehdokkaan näkyville kuin mahdollista. Työhönoton sivustot, kuten Broadbean, voi auttaa saavuttamaan tämän tavoitteen. Microsoft Dynamics 365 Talent: Attractin avulla voit nyt julkaista työpaikkoja Broadbeanissa, ja Microsoft tarjoaa koko ajan uusia mahdollisuuksia tällä alueella.
 
 > [!NOTE]
 > - Voit julkaista töitä ulkoisille sivustoille vain jos sinulla on [kattava työhönottolaajennus](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).

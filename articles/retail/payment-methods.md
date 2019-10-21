@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 60f0a2e5fa2dc2bc37a04b159a4834a52117893d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 65b59e1cc215d582fdaf02ff4746fe2158ace76e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559601"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025353"
 ---
 # <a name="payment-methods"></a>Maksutavat
 
@@ -32,7 +32,7 @@ ms.locfileid: "1559601"
 
 Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä, kun järjestelmä on määritetty. Tässä artikkelissa kuvataan määritettävissä olevat maksutyypit ja niiden määrittämisessä vaadittava prosessi.
 
-Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja myymistään tuotteista ja palveluista. Käteinen on yleisin maksutapa, mutta vähittäismyyjät voivat myös vastaanottaa maksuja sekkeinä, maksukorteilla, lahjakorteilla ja niin edelleen. Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä Dynamics 365 for Retailissa, kun järjestelmä määritetään. Seuraavassa taulukossa kuvaillaan kaikki maksutavat, jotka ovat määritettävissä Dynamics 365 for Retailissa:
+Vähittäismyyjät voivat hyväksyä useantyyppisiä maksutapoja myymistään tuotteista ja palveluista. Käteinen on yleisin maksutapa, mutta vähittäismyyjät voivat myös vastaanottaa maksuja sekkeinä, maksukorteilla, lahjakorteilla ja niin edelleen. Jokainen vähittäismyyjän hyväksymä maksutapa on määritettävä Dynamics 365 Retailissa, kun järjestelmä määritetään. Seuraavassa taulukossa kuvaillaan kaikki maksutavat, jotka ovat määritettävissä:
 
 - **Käteinen** – Valuutan fyysisessä muodossa oleva raha, kuten setelit ja kolikot. Tämä valuutta voi olla joko yrityksen valuutta tai myymälän paikallinen valuutta.
 - **Sekki** – Siirrettävissä oleva maksuväline, jonka mukaan tiettynä valuuttana maksetaan tietty summa määritetystä pankista. Sekki on yleensä voimassa rajattoman ajan tai kuusi kuukautta sen antopäivämäärästä, ellei toisin ole määritetty. Voimassaoloaika vaihtelee sekin maksavasta pankista riippuen. Erilaisia sekkityyppejä ovat esimerkiksi määrännäissekit, avoimet sekit, haltijasekit ja sekä sekit, joita ei voida siirtää toiselle. Voit määrittää sekit maksutavaksi kullekin myymälälle erikseen. Sekit voi hyväksyä valuuttana, joka määritetään joko yritystasolla tai myymälän tasolla. Sekit on määritettävä maksutavaksi ennen kuin myymälä voi vastaanottaa maksuja sekkeinä.

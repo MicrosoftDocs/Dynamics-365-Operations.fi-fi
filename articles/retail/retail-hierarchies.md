@@ -1,6 +1,6 @@
 ---
 title: Vähittäismyyntihierarkiat
-description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Retailin jälleenmyyntihierarkioita.
+description: Tässä artikkelissa käsitellään Dynamics 365 Retailin jälleenmyyntihierarkioita.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 198c8da336f3e225c5d6da2eb02c86581dc9b4d6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cb383c5bc5ad5d641db6f30e915ea43ba5980005
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568019"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025074"
 ---
 # <a name="retail-hierarchies"></a>Vähittäismyyntihierarkiat
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa käsitellään Microsoft Dynamics 365 for Retailin jälleenmyyntihierarkioita.
+Tässä artikkelissa käsitellään Dynamics 365 Retailin jälleenmyyntihierarkioita.
 
 Voit luoda vähittäismyyntiluokan hierarkian, jonka avulla voit järjestää vähittäismyyntikanavissa myymiäsi tuotteita. Vähittäismyynnin tuotehierarkioiden avulla voit luokitella tai ryhmitellä tuotteita. Tuotteiden avulla voit luoda edelleen tuotevalikoimia ja asiakkaiden kanta-asiakasohjelmia. Voit myös määrittää tuotteiden määritteitä ja ominaisuuksia sekä hinnoittelurakenteen, sisällyttää tuotteita kampanjoihin ja käyttää niitä raportoinnissa. Voit luoda yhden vähittäismyynnin luokkahierarkian edustamaan kaikkia organisaatiosi tuotteita ja luokkia ja käyttää sitten tätä luokkahierarkiaa useisiin tarkoituksiin. Voit myös vaihtoehtoisesti luoda useita vähittäismyynnin luokkahierarkioita erikoistarkoituksiin, kuten tuotekampanjoihin. Vähittäismyynnin tuotehierarkiaa luotaessa on määritettävä luokkahierarkian tarkoituksen määrittävä luokkahierarkian tyyppi. Esimerkiksi kun tuotteita selataan luokittain verkossa tai myyntipisteissä, viittaukset koskevat vain tuotehierarkioita, joiden tyypiksi on määritetty **Vähittäismyynnin siirtymishierarkia**.
 

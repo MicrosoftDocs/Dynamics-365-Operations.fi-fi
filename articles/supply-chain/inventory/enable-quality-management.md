@@ -1,6 +1,6 @@
 ---
 title: Laadunhallinnan yleiskuvaus
-description: Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 for Finance and Operationsin laadunhallinnan avulla voidaan parantaa toimitusketjun tuotteiden laatua.
+description: Tässä ohjeaiheessa kerrotaan, miten Dynamics 365 Supply Chain Managementin laadunhallinnan avulla voidaan parantaa toimitusketjun tuotteiden laatua.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
@@ -19,24 +19,24 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1630d13437d7e930fdf32ed5fdc61fc62bc33817
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557497"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249574"
 ---
 # <a name="quality-management-overview"></a>Laadunhallinnan yleiskuvaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 for Finance and Operationsin laadunhallinnan avulla voidaan parantaa toimitusketjun tuotteiden laatua.
+Tässä ohjeaiheessa kerrotaan, miten Dynamics 365 Supply Chain Managementin laadunhallinnan avulla voidaan parantaa toimitusketjun tuotteiden laatua.
 
-Laadunhallinnan avulla voit hallita määrityksestä poikkeavien tuotteiden käsittelyaikaa niiden lähtöpisteestä riippumatta. Koska vianmääritystyypit linkitetty korjausraportointiin, Microsoft Dynamics 365 for Finance and Operations voi ajoittaa ongelmien korjaustehtävät ja estää ongelmien toistuminen.
+Laadunhallinnan avulla voit hallita määrityksestä poikkeavien tuotteiden käsittelyaikaa niiden lähtöpisteestä riippumatta. Koska vianmääritystyypit linkitetään korjausraportointiin, Finance and Operations voi ajoittaa ongelmien korjaustehtävät ja estää ongelmien toistuminen.
 
 Määrityksistä poikkeamisen hallintatoiminnon lisäksi laadunhallinta sisältää toiminnon ongelmien seuraamiseen ongelmantyypin perusteella (myös sisäiset ongelmat) sekä lyhyt- tai pitkäaikaisen ratkaisun tunnistamiseen. Suorituskykyilmaisimia (KPI) koskevat tilastot antavat tietoja aiemmista määrityksistä poikkeamiseen liittyvistä ongelmista ja niiden korjaamiseen käytetyistä ratkaisuista. Voit tarkistaa historiallisten tietojen avulla, kuinka tehokkaita aiemmat laatutoimet ovat olleet, ja määrittää, mitkä toimet soveltuvat jatkossa käytettäviksi.
 
-Kun määrität laatuliitoksen, Finance and Operations voi luoda liiketoiminnan eri prosesseille, tapahtumille ja ehdoille laatutilauksia. Laatuliitos voi koskea tiettyä nimikettä, tiettyä nimikeryhmää tai kaikkia nimikkeitä.
+Kun määrität laatuliitoksen, Supply Chain Management voi luoda liiketoiminnan eri prosesseille, tapahtumille ja ehdoille laatutilauksia. Laatuliitos voi koskea tiettyä nimikettä, tiettyä nimikeryhmää tai kaikkia nimikkeitä.
 
 ## <a name="examples-of-the-use-of-quality-management"></a>Esimerkkejä laadunhallinnan käytöstä
 Laadunhallinta on joustavaa ja se voidaan toteuttaa eri tavoin vastaamaan toimitusketjun työvaiheiden tiettyjen tasojen vaatimuksia. Seuraavassa esimerkissä käsitellään näiden ominaisuuksien mahdollisia käyttötapoja:

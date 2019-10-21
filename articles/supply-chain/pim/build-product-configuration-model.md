@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b50aa1df7a169e71d3e2e477bd1515d70cedccab
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865373"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249491"
 ---
 # <a name="product-configuration-overview"></a>Tuotemääritys – yleiskatsaus
 
@@ -60,6 +60,9 @@ Tuotemääritysmalli koostuu yhdestä tai useammasta toisiinsa alikomponenttisuh
 
 Kullakin komponentilla on yksi tai useampia määritteitä, joiden mukaan sen ominaisuudet tunnistetaan. Käyttäjät valitsevat nämä määritteet määritysprosessin aikana. Määritteet ohjaavat sekä komponenttien välisiä että komponenttien sisäisiä suhteita niiden rajoitteisiin tai laskelmiin sisällyttämisen kautta. Tuoterakenteen riveillä käyttöön otettujen ehtojen kautta määritteitä voidaan käyttää määrittämään fyysiset osat, joista konfiguroitu tuote tulee koostumaan. Määrite voi lisäksi ohjata tuoterakenteen rivin ominaisuutta yhdistämismekanismin kautta. Samanlainen toiminne on olemassa reititykselle koskien sekä sisällyttämistä että ominaisuuksien määrittämistä.
 
+>[!NOTE]
+> Vältä määritetyyppejä luotaessa suurinumeroisia määritetyypin toimialueen arvoja. Se voi nimittäin hidastaa tuotekonfigurointia. 
+
 ### <a name="expression-constraints"></a>Lausekerajoitukset
 
 Poissulkevan tuotemääritysmallin käyttö viittaa siihen, että on olemassa rajoituksia, kun käyttäjä valitsee arvoja eri määritteille. Näitä rajoitteita voidaan toteuttaa lausekerajoituksina käyttämällä Optimization Modeling Language (OML) -kieltä. Vaihtoehtoisesti rajoitteet voidaan toteuttaa taulurajoituksen muodossa.
@@ -70,7 +73,7 @@ Taulukon rajoitukset voivat olla joko käyttäjän tai järjestelmän määritt�
 
 Käyttäjän määrittämän taulurajoituksen rakentaa käyttäjä. Käyttäjä valitsee määritetyyppien yhdistelmän kuvaamaan taulukon sarakkeita ja syöttää sitten arvot valittujen määritetyyppien toimialueilta muodostamaan taulurajoituksen rivit.  
 
-Järjestelmän määrittämä taulurajoitus määritetään valitsemalla viitteenä käytettävä Microsoft Dynamics 365 for Finance and Operations -taulukko ja valitsemalla sitten tästä taulukosta kentät, jotka muodostavat rajoituksen sarakkeet. Taulurajoituksen rivit ovat Finance and Operations -taulukossa määrityshetkellä olevat rivit.  
+Järjestelmän määrittämä taulurajoitus määritetään valitsemalla viitteenä käytettävä taulu ja valitsemalla sitten tästä taulusta kentät, jotka muodostavat rajoituksen sarakkeet. Taulurajoituksen rivit ovat Finance and Operations -taulukossa määrityshetkellä olevat rivit.  
 
 Taulurajoitus sisällytetään tuotemääritysmalliin viittaamalla taulurajoituksen määritykseen ja yhdistämällä mallin asiaankuuluvat määritteet taulurajoituksen sarakkeisiin.
 

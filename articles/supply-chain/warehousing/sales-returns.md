@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1f5658de1da8a0b6c36d99e4bb9cf401c09ad0b
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559145"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249793"
 ---
 # <a name="sales-returns"></a>Myyntipalautukset
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559145"
 
 Tässä aiheessa on tietoja palautustilausten prosessista. Se sisältää tietoja asiakaspalautuksista ja niiden vaikutuksesta kustannuslaskentaan ja käytettävissä olevan varaston määriin.
 
-Asiakas voi palauttaa nimikkeitä useista syistä. Nimike saattaa olla viallinen tai se ei ehkä täytä asiakkaan odotuksia. Palautusprosessi alkaa, kun asiakas lähettää nimikkeen palautuspyynnön. Kun asiakkaan pyyntö on vastaanotettu, palautustilaus luodaan Microsoft Dynamics 365 for Finance and Operationsissa.
+Asiakas voi palauttaa nimikkeitä useista syistä. Nimike saattaa olla viallinen tai se ei ehkä täytä asiakkaan odotuksia. Palautusprosessi alkaa, kun asiakas lähettää nimikkeen palautuspyynnön. Kun asiakkaan pyyntö on vastaanotettu, palautustilaus luodaan.
 
 ## <a name="return-order-process"></a>Palautustilausten prosessi
 Seuraavassa kuvassa on yhteenveto palautustilausten prosessista.  
@@ -281,7 +281,7 @@ Tähän tilanteeseen liittyy kaksi saman organisaation yritystä seuraavan kuvan
 
 ![Yksinkertainen konsernin sisäinen palautus](./media/SalesReturn07.png)
 
-Tilaus-toimitusketjun voi muodostaa, kun toimittajan palautustilaus luodaan ostavassa yrityksessä tai asiakkaan palautustilaus luodaan myyjäyrityksessä. Finance and Operations luo vastaavan tilauksen toiseen yritykseen ja varmistaa, että toimittajan palautustilauksen otsikko- ja rivitiedot vastaavat asiakkaan palautustilauksen asetuksia. Luotu palautustilaus joko sisältää tai jättää pois viittauksen (**Etsi myyntitilaus**) olemassa olevaan asiakkaan laskuun. Kummankin tilauksen pakkausluettelo ja lasku voidaan käsitellä erikseen. Sinun ei tarvitse luoda pakkausluetteloa toimittajan palautustilaukselle ennen kuin luot pakkausluettelon asiakkaan palautustilaukselle.
+Tilaus-toimitusketjun voi muodostaa, kun toimittajan palautustilaus luodaan ostavassa yrityksessä tai asiakkaan palautustilaus luodaan myyjäyrityksessä. Järjestelmä luo vastaavan tilauksen toiseen yritykseen ja varmistaa, että toimittajan palautustilauksen otsikko- ja rivitiedot vastaavat asiakkaan palautustilauksen asetuksia. Luotu palautustilaus joko sisältää tai jättää pois viittauksen (**Etsi myyntitilaus**) olemassa olevaan asiakkaan laskuun. Kummankin tilauksen pakkausluettelo ja lasku voidaan käsitellä erikseen. Sinun ei tarvitse luoda pakkausluetteloa toimittajan palautustilaukselle ennen kuin luot pakkausluettelon asiakkaan palautustilaukselle.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Suoratoimitettavat palautukset kolmen osapuolen kesken
 

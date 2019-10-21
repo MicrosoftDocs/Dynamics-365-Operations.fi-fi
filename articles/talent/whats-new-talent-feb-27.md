@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (27. helmikuuta 2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (27. helmikuuta 2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/27/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f175c6e60cf87c7dcbde0eaf35357130fa035712
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517886"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023996"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Dynamics 365 for Talentin uudet tai muuttuneet ominaisuudet (27. helmikuuta 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (27. helmikuuta 2019)
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="changes-in-attract"></a>Attractin muutokset
 
@@ -37,7 +37,7 @@ Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Attractin ohjelmakorjauk
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
 
-Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboardin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.
 
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 
@@ -77,9 +77,9 @@ Tämä julkaisu sisältää muita vähäisiä ohjelmavirhekorjauksia.
 
 Monissa yrityksissä etuuspäälliköillä on ehkä vain tiettyjen kompensaatiotietueiden käyttöoikeus. Ne voivat olla johtajien tai alueellisten työntekijöiden tietueita. Tämä muutoksen ansiosta henkilöstöhallinto voi hallita ja ylläpitää organisaatio erilaisten työntekijäryhmien kompensaatiosuunnitelmia. Kiinteille ja muuttuville suunnitelmille määritettävät käyttöoikeusroolit määrittävät kyseisten suunnitelmien ja niihin liittyvien työntekijätietojen (kuten palkkatietojen ja bonustietueiden) käyttöoikeuden. Vain roolit, joilla on määritetty käyttöoikeus, voivat käsitellä kyseisten työntekijöiden kompensaatiota.
 
-### <a name="platform-update-24"></a>Ympäristön update 24 -päivitys
+### <a name="platform-update-24-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 24
 
-Lisätietoja Microsoft Dynamics 365 for Finance and Operations Platform update 24:stä (maaliskuu 2019) on kohdassa [Finance and Operations Platform update 24:n esiversio-ominaisuudet(maaliskuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Lisätietoja Microsoft Dynamics 365 Finance and Operations -käyttöympäristöpäivitys 24:stä (maaliskuu 2019) on kohdassa [Finance and Operations -käyttöympäristöpäivityksen 24:n esikatselutoiminnot (maaliskuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Työntekijän kiinteään kompensaation antaminen tulevien toimimääritysten käyttöön
 
@@ -87,10 +87,10 @@ Organisaatioon liittyvien työntekijöiden aloituspäivämäärä on tyypillises
 
 ## <a name="known-issues"></a>Tunnetut ongelmat
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Core HR -integrointimallin muutokset (Talent Common Data Service Finance and Operationsiin)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance"></a>Core HR -integrointimallin muutokset (Talent Common Data Servicesta Financeen)
 Core HR:n malli on päivitetty lisäkyselymalliin. Tämän vuoksi lisäkysely on oletusarvoisesti käytettävissä tällä mallilla luoduissa projekteissa. Lisäksi mahdolliset yhdistämistoiminnot näkyvät vain lisäkyselyeditorissa. (Oletusmääritystoiminnot näkyvät yhdistämismäärityksissä muodossa FN.)
 
-Lisätietoja yhdistämismääritysvirheistä on kohdassa [Dynamics 365 for Talent Core HR:n uudet ja muuttuneet ominaisuudet (14. joulukuuta 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+Lisätietoja yhdistämismääritysvirheistä on kohdassa [Dynamics 365 Talent: Core HR:n uudet ja muuttuneet ominaisuudet (14. joulukuuta 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
 Voit käyttää uutta mallia luomalla uuden projektin ja valitsemalla uuden Talent-integrointimallin.
 

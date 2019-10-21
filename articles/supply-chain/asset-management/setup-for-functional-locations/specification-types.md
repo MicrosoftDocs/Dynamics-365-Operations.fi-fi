@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b3247f693f5934b3fbf83b7b831c7ed221514cb
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 067d1085d9afa04cb76b78393a8a8b9834ce4d8c
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783230"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250941"
 ---
 # <a name="maintenance-attribute-types"></a>Ylläpidon määritetyypit
 
@@ -42,10 +42,10 @@ Määritteet, jotka voit määrittää, vaihtelevat elementin mukaan. Jos kysees
 
 ## <a name="create-attribute-types"></a>Luo ominaisuustyypit
 
-Voit luoda omia määritetyyppejä. Lisäksi voit siirtää tuotedimensiot Microsoft Dynamics 365 for Finance and Operationsista **Määritetyypit**-sivulle.
+Voit luoda omia määritetyyppejä. Lisäksi voit siirtää tuotedimensiot **Määritetyypit**-sivulle.
 
 1. Valitse **Resurssien hallinta** \> **Asetukset** \> **Määritetyypit**.
-2. Kun määrität määrit tyyppejä ensimmäistä kertaa, valitse **Luo tuote dimensiot**, jos haluat siirtää vakio Finance and Operationsin tuotedimensiot automaattisesti.
+2. Kun määrität määritetyyppejä ensimmäistä kertaa, valitse **Luo tuotedimensiot** siirtääksesi vakiotuotedimensiot automaattisesti.
 3. Luo uusi määritetyyppi valitsemalla **Uusi**.
 4. Kirjoita **Määritetyyppi**-kenttään määritetyypin nimi.
 5. Syötä **Kuvaus**-kenttään kuvaus.

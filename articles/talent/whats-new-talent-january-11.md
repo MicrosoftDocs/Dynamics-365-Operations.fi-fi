@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (11. tammikuuta 2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent Core HR:n uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (11. tammikuuta 2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent - Core HR:n uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 01/11/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e6a89ba455acbed9724da6826ac4d41c6a481490
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 38be1da69d8443fd76a81f439f000602ddb75bab
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517868"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010380"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-january-11-2019"></a>Dynamics 365 for Talent Core HR:n uudet tai muuttuneet ominaisuudet (11. tammikuuta 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-january-11-2019"></a>Dynamics 365 Talent: Core HRin uudet tai muuttuneet ominaisuudet (11. tammikuuta 2019)
 
 [!include [banner](includes/banner.md)]
 

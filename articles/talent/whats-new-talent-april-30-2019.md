@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 30, 2019)
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+title: Dynamics 365 Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 30, 2019)
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/30/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 112146ac46193e37b33bf429dc5a359f8cfaca94
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 38158948dbcf8966edf49bcce5b1e5da7eddb8dc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505368"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026032"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-30-2019"></a>Dynamics 365 for Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 30, 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-30-2019"></a>Dynamics 365 Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 30, 2019)
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talentin uusia tai muuttuneita ominaisuuksia.
+Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
 ## <a name="changes-in-attract"></a>Attractin muutokset
 
@@ -37,7 +37,7 @@ Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Attractin ohjelmakorjauk
 
 ## <a name="changes-in-onboard"></a>Onboardin muutokset
 
-Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboardin ohjelmakorjauksia.
+Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauksia.
 
 ## <a name="changes-in-core-hr"></a>Core HR:n muutokset
 
@@ -100,4 +100,4 @@ Mahdollisuus seurata työntekijöiden aikaa ja ymmärtää, kuinka aikaa lasketa
 
 ### <a name="email-support-for-alerts"></a>Sähköpostituki hälytyksille
 
-Platform update 26:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköpostiviestejä yhteystietoihin, kun tapahtuma käynnistyy.
+Finance and Operations -käyttöympäristöpäivitys 26:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköposti-ilmoituksia yhteyshenkilöille, kun tapahtuma käynnistää ilmoituksia.

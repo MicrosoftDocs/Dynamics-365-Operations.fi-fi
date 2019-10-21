@@ -1,6 +1,6 @@
 ---
-title: Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin
-description: Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla Microsoft Dynamics 365 for Salesin Yhteyshenkilö (yhteyshenkilöt)- ja Yhteyshenkilöt (asiakkaat) -yksiköt synkronoidaan Microsoft Dynamics 365 for Finance and Operationsiin.
+title: Salesin yhteyshenkilöiden synkronointi suoraan Supply Chain Managementin yhteyshenkilöihin tai asiakkaisiin
+description: Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla Yhteyshenkilö (yhteyshenkilöt)- ja Yhteyshenkilöt (asiakkaat) -yksiköt synkronoidaan Dynamics 365 Salesista Dynamics 365 Supply Chain Managementiin.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,25 +19,25 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: fbc75702c9db1e877addc4605dcb444c344dfa5c
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 7d3a4602a3d8462666dfcb26b97a4f652891f7bc
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742444"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249966"
 ---
-# <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-finance-and-operations"></a>Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin
+# <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Salesin yhteyshenkilöiden synkronointi suoraan Supply Chain Managementin yhteyshenkilöihin tai asiakkaisiin
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Tutustu [Common Data Service for Appsin tietojen integrointiin](https://docs.microsoft.com/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
 
-Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla Microsoft Dynamics 365 for Salesin Yhteyshenkilö (yhteyshenkilöt)- ja Yhteyshenkilöt (asiakkaat) -yksiköt synkronoidaan suoraan Microsoft Dynamics 365 for Finance and Operationsiin.
+Ohjeaiheessa käsitellään malleja ja tehtäviä, joilla Yhteyshenkilö (yhteyshenkilöt)- ja Yhteyshenkilöt (asiakkaat) -yksiköt synkronoidaan suoraan Dynamics 365 Salesista Dynamics 365 Supply Chain Managementiin.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
 
-Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Finance and Operations and Sales -esiintymien tietojen synkronoinnissa. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Finance and Operationsin ja Salesin välillä. Seuraavassa kuvassa kerrotaan, miten tiedot synkronoidaan Finance and Operations- ja Sales-sovelluksen välillä.
+Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Supply Chain Managementin and Salesin esiintymien tietojen synkronoinnissa. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Supply Chain Managementin ja Salesin välillä. Seuraava kuva näyttää, miten tiedot synkronoidaan Supply Chain Managementin ja Salesin välillä.
 
 [![Prospektista käteiseksi -ratkaisun tiedonkulku](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -45,47 +45,47 @@ Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Fina
 
 Näet käytettävissä olevat mallit avaamalla [PowerApps-hallintakeskuksen](https://preview.admin.powerapps.com/dataintegration). Valitse **Projektit** ja valitse sitten julkisia malleja oikeassa yläkulmassa olevan **Uusi projekti** -kohdan avulla.
 
-Seuraavia malleja ja niiden taustalla olevia tehtäviä käytetään synkronoimaan Salesin yhteyshenkilön (yhteyshenkilöt) yksiköt Finance and Operationsin yhteyshenkilön (asiakkaat) yksikköön:
+Seuraavia malleja ja niiden taustalla olevia tehtäviä käytetään synkronoimaan Salesin Yhteyshenkilö (Yhteyshenkilöt) -yksiköt Supply Chain Managementin Yhteyshenkilö (Asiakkaat) -yksikköön.
 
-- **Mallien nimet tietojen integroinnissa:**
+- **Mallien nimet tietojen integroinnissa**
 
-    - Yhteyshenkilöt (Salesista Fin and Opsiin) - suora
-    - Yhteyshenkilöistä asiakkaaseen (Salesista Fin and Opsiin) - suora
+    - Yhteyshenkilöt (Salesista Supply Chain Managementiin) – suora
+    - Yhteyshenkilöistä asiakkaaseen (Salesista Supply Chain Managementiin) - suora
 
-- **Tehtävien nimet tietojen integrointiprojektissa:**
+- **Tietojen integrointiprojektin tehtävien nimet**
 
     - Yhteyshenkilöt
     - Yhteyshenkilö asiakkaaseen
 
-Seuraava synkronointitehtävä on tehtävä ennen yhteyshenkilön synkronointia: tilit (Salesista Fin and Opsiin)
+Seuraava synkronointitehtävä on tehtävä ennen yhteyshenkilön synkronointia: tilit (Salesista Supply Chain Managementiin)
 
 ## <a name="entity-sets"></a>Yksikköjoukot
 
-| Myynti    | Finance and Operations |
+| Myynti    | Toimitusketjun hallinta |
 |----------|------------------------|
 | Yhteyshenkilöt | CDS-yhteyshenkilöt           |
 | Yhteyshenkilöt | Asiakkaat V2           |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
-Yhteyshenkilöitä hallitaan Salesissa ja ne synkronoidaan Finance and Operationsiin.
+Yhteyshenkilöitä hallitaan Salesista ja synkronoidaan Supply Chain Managementiin.
 
-Salesin yhteyshenkilöstä voi tulla Finance and Operationsin yhteyshenkilö tai asiakas. Järjestelmä etsii Sales-sovelluksesta seuraavat ominaisuudet ja määrittää synkronoidaanko Salesin yhteyshenkilö Finance and Operationsiin yhteyshenkilönä vai asiakkaana:
+Salesin yhteyshenkilöstä voi tulla Supply Chain Managementin yhteyshenkilö tai asiakas. Järjestelmä etsii Salesista seuraavat ominaisuudet ja määrittää synkronoidaanko Salesin yhteyshenkilö Supply Chain Managementiin yhteyshenkilönä vai asiakkaana:
 
-- **Synkronointi asiakkaaksi Finance and Operationsissa:** yhteyshenkilöt, joiden **On aktiivinen asiakas** -asetuksena on **Kyllä**
-- **Synkronointi yhteyshenkilöksi Finance and Operationsissa:** Yhteyshenkilöt, joiden **On aktiivinen asiakas** -asetuksena on **Ei** ja **Yritys** (päätili tai asiakas) viittaa tiliin (eikä yhteyshenkilöön)
+- **Synkronointi Supply Chain Managementin asiakkaaseen:** yhteyshenkilöt, joiden **On aktiivinen asiakas** -asetuksena on **Kyllä**
+- **Synkronointi Supply Chain Managementin yhteyshenkilöön:** Yhteyshenkilöt, joiden **On aktiivinen asiakas** -asetuksena on **Ei** ja **Yritys** (päätili tai yhteyshenkilö) viittaa tiliin (eikä yhteyshenkilöön)
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Salesin ratkaisu prospektista käteiseksi
 
-Uusi **On aktiivinen asiakas** -kenttä on lisätty yhteyshenkilöön. Tämän kentän avulla erotetaan yhteyshenkilöt, joilla on myyntitehtävä, ja ne, joilla ei sitä ole. **On aktiivinen asiakas** -asetuksena on **Kyllä** vain yhteyshenkilöille, joilla on liittyviä tarjouksia, tilauksia tai laskuja. Vain nämä yhteyshenkilöt synkronoidaan Finance and Operationsiin asiakkaina.
+Uusi **On aktiivinen asiakas** -kenttä on lisätty yhteyshenkilöön. Tämän kentän avulla erotetaan yhteyshenkilöt, joilla on myyntitehtävä, ja ne, joilla ei sitä ole. **On aktiivinen asiakas** -asetuksena on **Kyllä** vain yhteyshenkilöille, joilla on liittyviä tarjouksia, tilauksia tai laskuja. Vain nämä yhteyshenkilöt synkronoidaan Supply Chain Managementiin asiakkaina.
 
-Uusi **IsCompanyAnAccount**-kenttä on lisätty yhteyshenkilöön. Tämä kenttä osoittaa, onko yhteyshenkilö linkitetty **Tili**-tyypin yritykseen (päätili tai yhteyshenkilö). Näillä tiedoilla tunnistetaan yhteyshenkilöt, jotka on synkronoitava Finance and Operationsiin yhteyshenkilöinä.
+Uusi **IsCompanyAnAccount**-kenttä on lisätty yhteyshenkilöön. Tämä kenttä osoittaa, onko yhteyshenkilö linkitetty **Tili**-tyypin yritykseen (päätili tai yhteyshenkilö). Näillä tiedoilla tunnistetaan yhteyshenkilöt, jotka on synkronoitava Supply Chain Managementiin yhteyshenkilöinä.
 
 Uusi **Yhteyshenkilön numero** -kenttä on lisätty yhteyshenkilöön, jotta integroinnin luonnollinen ja yksilöllinen avain voidaan taata. Kun uusi yhteyshenkilö luodaan, **Yhteyshenkilön numero** -arvo luodaan automaattisesti numerosarjan avulla. Arvossa on ensimmäisenä **CON**, sitten kasvava numerosarja ja lopuksi kuusimerkkinen loppuliite. Esimerkki: **CON-01000-BVRCPS**
 
 Kun Salesin integrointiratkaisu otetaan käyttöön, päivitetty komentosarja määrittää aiemmin luotujen yhteyshenkilöiden **Yhteyshenkilön numero** -kentän käyttämällä edellä mainittua numerosarjaa. Päivityskomentosarja määrittää myös **On aktiivinen asiakas** -kentän arvoksi **Kyllä** kaikille yhteyshenkilöille, joilla on myyntitehtävä.
 
-## <a name="in-finance-and-operations"></a>Finance and Operationsissa
+## <a name="in-supply-chain-management"></a>Supply Chain Managementiin
 
 Yhteyshenkilöt merkitään **IsContactPersonExternallyMaintained**-ominaisuudella. Tämä ominaisuus osoittaa, että kyseistä yhteyshenkilöä ylläpidetään ulkoisesti. Tässä tapauksessa ulkoisesti ylläpidettyjä yhteyshenkilöitä ylläpidetään Salesissa.
 
@@ -93,21 +93,21 @@ Yhteyshenkilöt merkitään **IsContactPersonExternallyMaintained**-ominaisuudel
 
 ### <a name="contact-to-customer"></a>Yhteishenkilöstä asiakkaaseen
 
-- **CustomerGroup** tarvitaan Finance and Operationsissa. Voit estää synkronointivirheet määrittämällä yhdistämismäärityksen oletusarvon. Oletusarvo käytetään, jos kenttä on tyhjä Salesissa.
+- **CustomerGroup** on pakollinen Supply Chain Managementissa. Voit estää synkronointivirheet määrittämällä yhdistämismäärityksen oletusarvon. Oletusarvo käytetään, jos kenttä on tyhjä Salesissa.
 
     Oletusmallin arvo on **10**.
 
-- Kun seuraavat yhdistämismääritykset lisätään, Finance and Operationsissa tarvitaan vähemmän manuaalisia päivityksiä. Voit käyttää oletusarvoa tai arvomääritystä, kuten **Maa tai alue** tai **Paikkakunta**.
+- Kun seuraavat yhdistämismääritykset lisätään, Supply Chain Managementissa tarvitaan vähemmän manuaalisia päivityksiä. Voit käyttää oletusarvoa tai arvomääritystä, kuten **Maa tai alue** tai **Paikkakunta**.
 
-    - **SiteId** – oletustoimipaikka voidaan määrittää myös Finance and Operationsin tuotteissa. Toimipaikka on pakollinen, jotta tarjoukset ja myyntitilaukset voidaan luoda Finance and Operationsissa.
+    - **SiteId** – oletustoimipaikka voidaan määrittää myös Supply Chain Managementin tuotteissa. Toimipaikka on pakollinen, jotta tarjoukset ja myyntitilaukset voidaan luoda Supply Chain Managementissa.
 
         Mallin **SiteId** arvoa ei ole määritetty.
 
-    - **WarehouseId** – oletusvarasto voidaan määrittää myös Finance and Operationsin tuotteissa. Varasto on pakollinen, jotta tarjoukset ja myyntitilaukset voidaan luoda Finance and Operationsissa.
+    - **WarehouseId** – Oletusvarasto voidaan määrittää myös Supply Chain Managementin tuotteissa. Varasto on pakollinen, jotta tarjoukset ja myyntitilaukset voidaan luoda Supply Chain Managementissa.
 
         Mallin **WarehouseId** arvoa ei ole määritetty.
 
-    - **LanguageId** – Kieli on pakollinen, jotta tarjoukset ja myyntitilaukset voidaan luoda Finance and Operationsissa.
+    - **LanguageId** – Kieli on pakollinen, jotta tarjoukset ja myyntitilaukset voidaan luoda Supply Chain Managementissa.
     
         Oletusmallin arvo on **fi-fi**.
 
@@ -116,7 +116,7 @@ Yhteyshenkilöt merkitään **IsContactPersonExternallyMaintained**-ominaisuudel
 Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä. 
 
 > [!NOTE]
-> Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Finance and Operationsiin.
+> Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Supply Chain Managementiin.
 
 ### <a name="contact-to-contact"></a>Yhteyshenkilöstä yhteyshenkilöön
 
@@ -131,12 +131,12 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 [Prospektista käteiseksi](prospect-to-cash.md)
 
-[Sales-asiakkaiden synkronointi suoraan Finance and Operations -asiakkaisiin](accounts-template-mapping-direct.md)
+[Tilien synkronointi suoraan Salesin tuotteista Supply Chain Managementin asiakkaisiin](accounts-template-mapping-direct.md)
 
-[Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin](products-template-mapping-direct.md)
+[Supply Chain Managementin tuotteiden synkronointi suoraan Salesin tuotteisiin](products-template-mapping-direct.md)
 
-[Myyntitilauksien otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](sales-order-template-mapping-direct-two-ways.md)
+[Myyntitilausten otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin](sales-order-template-mapping-direct-two-ways.md)
 
-[Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](sales-invoice-template-mapping-direct.md)
+[Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin](sales-invoice-template-mapping-direct.md)
 
 

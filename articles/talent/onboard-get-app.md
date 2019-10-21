@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Talent - Onboard -sovelluksen hankkiminen
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent - Onboard -sovelluksen itsenäisen version tai kattavan työhönottolaajennuksen sisältävän version hankkimista.
+title: 'Dynamics 365 Talent: Onboard -sovelluksen hankkiminen'
+description: 'Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent: Onboard -sovelluksen itsenäisen version tai kattavan työhönottolaajennuksen sisältävän version hankkimista.'
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,30 +16,30 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: e83bbd71089b145c6c99780ea9516793c5238b33
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 7bf2e421445e5ca92e995ef581bf61c7978746d2
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731456"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010772"
 ---
-# <a name="get-the-dynamics-365-for-talent-onboard-app"></a>Dynamics 365 for Talent: Onboard -sovelluksen hankkiminen
+# <a name="get-the-dynamics-365-talent-onboard-app"></a>Dynamics 365 Talent: Onboard -sovelluksen hankkiminen
 
 [!include [banner](includes/banner.md)]
 
-Voit katsoa demon ja kokeilla Microsoft Dynamics 365 for Talent: Onboard -sovellusta maksutta [Onboard-tuotesivulta](https://dynamics.microsoft.com/talent/onboard/).
+Voit katsoa demon ja kokeilla Microsoft Dynamics 365 Talent: Onboard -sovellusta maksutta [Onboard-tuotesivulta](https://dynamics.microsoft.com/talent/onboard/).
 
 > [!NOTE]
 > Maksuton kokeilu edellyttää yrityssähköpostitiliä.
 
-Voit ostaa Onboard-tilauksen joko itsenäisenä sovelluksena tai Dynamics 365 for Talentin osana. Talent on kattava henkilöstöresurssien hallintajärjestelmä, joka sisältää Dynamics 365 for Talent: Attractin, Onboardin ja Core HR:n. Lisätietoja Onboardin ostamisesta on [Onboard-tuotesivulla](https://dynamics.microsoft.com/talent/onboard/).
+Voit ostaa Onboard-tilauksen joko itsenäisenä sovelluksena tai Dynamics 365 Talentin osana. Talent on kattava henkilöstöresurssien hallintajärjestelmä, joka sisältää Dynamics 365 Talent: Attractin, Onboardin ja Core HR:n. Lisätietoja Onboardin ostamisesta on [Onboard-tuotesivulla](https://dynamics.microsoft.com/talent/onboard/).
 
 Microsoft 365:n sähköpostiosoite ja salasana määritetään kokeilu- tai ostoprosessin aikana. Muista kirjoittaa nämä arvot muistiin.
 
 > [!WARNING]
 > Et voi siirtää kokeiluversiosta maksettuun tilausympäristöön. <!--Reviewers: please verify.-->
 
-Lisätietoja Talentin uusista ominaisuuksista on kohdassa [Uudet tai muuttuneet ominaisuudet Dynamics 365 for Talentissa](./whats-new.md)ja [Dynamics 365- ja Power Platform -julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index). Jos haluat Onboardin uusien toimintojen esiversion, lisätietoja on kohdassa [Talentin esiversiotoimintojen käyttäminen](./access-preview-feature.md).
+Lisätietoja Talentin uusista ominaisuuksista on kohdassa [Uudet tai muuttuneet ominaisuudet Dynamics 365 Talentissa](./whats-new.md)ja [Dynamics 365- ja Power Platform -julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index). Jos haluat Onboardin uusien toimintojen esiversion, lisätietoja on kohdassa [Talentin esiversiotoimintojen käyttäminen](./access-preview-feature.md).
 
 Jos olet IT-ammattilainen ja haluat lisätietoja Onboard-sovelluksen kahden version valmistelemisesta, lisätietoja on kohdassa [Onboard-sovelluksen valmisteleminen](./modular-app-tech-faq.md).
 

@@ -1,6 +1,6 @@
 ---
-title: Finance and Operationsin varastotasotietojen synkronointi Field Serviceen
-description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Microsoft Dynamics 365 for Finance and Operationsin varastotasotiedot synkronoidaan Microsoft Dynamics 365 for Field Serviceen.
+title: Varastotasotietojen synkronointi Supply Chain Managementista Field Serviceen
+description: Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varastotasotiedot synkronoidaan Dynamics 365 Field Serviceen.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 05/07/2019
@@ -19,37 +19,37 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b56eb545f87c31ef30d6a897f48539068583486
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: eefbfd1f8d7aa73cbb3330433b08efd889232818
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843430"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251198"
 ---
-# <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Finance and Operationsin varastotasotietojen synkronointi Field Serviceen 
+# <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Varastotasotietojen synkronointi Supply Chain Managementista Field Serviceen 
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Microsoft Dynamics 365 for Finance and Operationsin varastotasotiedot synkronoidaan Microsoft Dynamics 365 for Field Serviceen.
+Tässä ohjeaiheessa käsitellään malleja ja taustalla olevia tehtäviä, joilla Dynamics 365 Supply Chain Managementin varastotasotiedot synkronoidaan Dynamics 365 Field Serviceen.
 
-[![Liiketoimintaprosessien synkronointi Finance and Operationsin ja Field Servicen välillä](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
-Seuraavalla mallilla ja taustalla olevilla tehtävillä synkronoidaan Microsoft Dynamics 365 for Finance and Operationsin käsillä olevat varastotasot synkronoidaan Microsoft Dynamics 365 for Field Serviceen.
+Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoitaessa käsillä olevia varastotasoja Supply Chain Managementista Field Serviceen.
 
 **Tietojen integroinnin malli**
-- Tuotevarasto (Fin and Opsista Field Serviceen)
+- Tuotevarasto (Supply Chain Managementista Field Serviceen)
   
 **Tietojen integrointiprojektin tehtävä**
 - Tuotevarasto
 
 Seuraavat synkronointitehtävät tarvitaan, ennen kuin varastotasot voidaan synkronoida:
-- Varastot (Fin and Opsista Field Serviceen) 
-- Field Service -tuotteet, joissa varastoyksikkö (Fin and Opsista Salesiin) 
+- Varastot (Supply Chain Managementista Field Serviceen) 
+- Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Salesiin) 
 
 ## <a name="entity-set"></a>Yksikköjoukko
 
-| Field Service                      | Finance and Operations                 |
+| Field Service                      | Toimitusketjun hallinta                |
 |------------------------------------|----------------------------------------|
 | msdynce_externalproductinventories | Käytettävissä oleva CDS-varasto varaston mukaan     |
 
@@ -61,17 +61,17 @@ Valittujen tuotteiden varastotasotiedot lähetetään Finance and Operationsista
 
 Nämä tiedot tallennetaan kullekin vapautetulle tuotteelle jokaisessa varastossa. Lisäksi ne synkronoidaan muutosten seurannan perusteella, kun varastotaso muuttuu.
 
-Field Servicessa integrointiratkaisu luo muutokselle varastokirjauskansiot, jotta Field Servicen tasot saadaan vastaamaan Finance and Operationsin tasoja.
+Field Servicessa integrointiratkaisu luo muutokselle varastokirjauskansiot, jotta Field Servicen tasot saadaan vastaamaan Supply Chain Managementin tasoja.
 
-Finance and Operations toimii päävarastotasona. Tämän vuoksi on tärkeää, että työtilausten, siirtojen ja oikaisujen integrointi Field Servicestä Finance and Operationsiin määritetään, jos tätä toimintoa käytetään Field Servicessä yhdessä Finance and Operationsin varastotasojen kanssa.
+Supply Chain Management toimii päävarastotasona. Tämän vuoksi on tärkeää, että työtilausten, siirtojen ja oikaisujen integrointi Field Servicesta Supply Chain Managementiin määritetään, jos tätä toimintoa käytetään Field Servicessa yhdessä Supply Chain Managementin varastotasojen synkronoinnin kanssa.
 
-Jos tuotteiden ja varastojen varastotasoja hallitaan Finance and Operationsista, niitä voidaan hallita kyselyn ja suodatuksen lisäasetuksilla (Power Query).
+Jos tuotteiden ja varastojen varastotasoja hallitaan Supply Chain Managementista, niitä voidaan hallita kyselyn ja suodatuksen lisäasetuksilla (Power Query).
 
 > [!NOTE]
-> Field Servicessä voi luoda useita varastoja (kun **Ylläpidetään ulkoisesti = Ei**) ja ne voi sitten yhdistää yhteen varastoon Finance and Operationsissa kyselyn ja suodatuksen lisäasetustoiminnolla. Tämä menettelyä käytetään tilanteissa, joissa Field Servicellä halutaan hallita tarkkaa varastotasoa ja joissa vain päivitykset lähetetään Finance and Operationsiin. Tässä tapauksessa Field Service ei saa varastotasopäivityksiä Finance and Operationsista. Lisätietoja on kohdissa [Field Servicen varasto-oikaisujen synkronointi Finance and Operationsiin](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) ja [Field Servicen työtilausten synkronointi projekteihin Finance and Operationsissa linkitettyihin myyntitilauksiin](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Field Servicessä voi luoda useita varastoja (kun **Ylläpidetään ulkoisesti = Ei**) ja ne voi sitten yhdistää yhteen varastoon Supply Chain Managementissa kyselyn ja suodatuksen lisäasetustoiminnolla. Tämä menettelyä käytetään tilanteissa, joissa Field Servicella halutaan hallita tarkkaa varastotasoa ja joissa vain päivitykset lähetetään Supply Chain Managementiin. Tässä tapauksessa Field Service ei saa varastotasopäivityksiä Supply Chain Managementista. Lisätietoja on kohdissa [Varasto-oikaisujen synkronointi Field Servicesta Supply Chain Managementiin](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) ja [Field Servicen työtilausten synkronointi projekteihin linkitettyihin myyntitilauksiin Supply Chain Managementissa](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM -ratkaisu
-Uutta **Ulkoinen tuotevarasto** -yksikköä käytetään integroinnissa vain taustatoiminnossa. Tämä entiteetti vastaanottaa integroinnissa varastotasoarvot Finance and Operationsista ja muuntaa sitten nämä arvot manuaalisiksi varastokirjauskansioksi, joka puolestaan muuttaa varastotuotteet varastossa.
+Uutta **Ulkoinen tuotevarasto** -yksikköä käytetään integroinnissa vain taustatoiminnossa. Tämä entiteetti vastaanottaa integroinnissa varastotasoarvot Supply Chain Managementista ja muuntaa sitten nämä arvot manuaalisiksi varastokirjauskansioksi, joka puolestaan muuttaa varastotuotteet varastossa.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
@@ -84,10 +84,10 @@ Jotta projekti toimisi, on varmistettava, että integrointiavain päivitetään 
       - msdynce_warehouseid (Warehouse ID)
       
 ### <a name="data-integration-project"></a>Tietojen integrointiprojekti
-Voit käyttää kyselyn ja suodatuksen lisäasetusten suodattimia siten, että vain tietyt tuotteet ja varastot lähettävät varastotasotietoja Finance and Operationsista Field Serviceen.
+Voit käyttää kyselyn ja suodatuksen lisäasetusten suodattimia siten, että vain tietyt tuotteet ja varastot lähettävät varastotasotietoja Supply Chain Managementista Field Serviceen.
 
 ## <a name="template-mapping-in-data-integration"></a>Mallin yhdistäminen tietojen integroinnin yhteydessä
 
-### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>Tuotevarasto (Fin and Opsista Field Serviceen): tuotevarasto
+### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Tuotevarasto (Supply Chain Managementista Field Serviceen): Tuotevarasto
 
 [![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

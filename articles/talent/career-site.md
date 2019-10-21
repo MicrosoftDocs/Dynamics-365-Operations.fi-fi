@@ -1,6 +1,6 @@
 ---
-title: Urasivuston määrittäminen Microsoft Dynamics 365 for Talent - Attractissa
-description: Tässä ohjeaiheessa on yleiskatsaus Microsoft Dynamics 365 for Talent - Attractin ehdokkaan käytössä olevasta urasivustotoiminnosta.
+title: Urasivuston määrittäminen Microsoft Dynamics 365 Talent – Attractissa
+description: Tässä ohjeaineessa on Microsoft Dynamics 365 Talent – Attractin ehdokkaalle tarkoitetun urasivustotoimintojen yleiskatsaus.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ec5fe31c6547b008b29e656729c35863d90bffc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739768"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026276"
 ---
 # <a name="set-up-your-career-site"></a>Urasivuston määrittäminen
 
 [!include[banner](../includes/banner.md)]
 
-Tässä ohjeaineessa on Microsoft Dynamics 365 for Talent: Attractin ehdokkaalle tarkoitetun urasivustotoimintojen yleiskatsaus. Siinä käsitellään myös toiminnon määrittäminen.
+Tässä ohjeaiheessa on yleiskatsaus Microsoft Dynamics 365 Talent: Attractin ehdokkaan käytössä olevasta urasivustotoiminnosta. Siinä käsitellään myös toiminnon määrittäminen.
 
 Attractissa on yksi urasivusto vuokraajan kullekin ympäristölle. Jos organisaatiossa on esimerkiksi kehitysympäristö ja testiympäristö, sekä kehitys- että testiympäristölle valmistellaan oma urasivusto. Kumpikin urasivusto on täysin eristetty ja kummassakin oma todennusmekanismi. Urasivustot eivät jaa töitä eivätkä hakijaprofiileja keskenään.
 
@@ -62,7 +62,7 @@ Seuraavassa luettelossa on yleisesti käytettyjen urasivustojen URL-osoitteita j
 
 -   **Urasivuston aloitussivun URL-osoite** – voit tarkastella urasivuston aloitussivun URL-osoitetta kirjautumalla Attractiin järjestelmänvalvojana, valitsemalla **Hallintakeskus** **Asetukset**-valikossa ja valitsemalla sitten **Urasivuston hallinta** -välilehden.
 
--   **Yksittäisen työpaikkailmoituksen käyttämisen URL-osoite** – Kun [teet ulkoisen työpaikkailmoituksen](Creating-jobs-Attract.md#postings) ensimmäisen kerran, voit kopioida **Käytä**-linkin Attract-sovelluksesta. Tämän linkin URL-osoitteen muoto on seuraavanlainen: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+-   **Yksittäisen työpaikkailmoituksen käyttämisen URL-osoite** – Kun [teet ulkoisen työpaikkailmoituksen](Creating-jobs-Attract.md#postings) ensimmäisen kerran, voit kopioida **Käytä**-linkin Attractista. Tämän linkin URL-osoitteen muoto on seuraavanlainen: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
 -   **Yksittäisen työpaikkailmoituksen URL-osoite** – Työpaikkailmoituksen URL-osoite on käytön URL-osoitteen alimerkkijono. Se sisältää työnumerosta oikealle kaikki merkkijonon tiedot. Niinpä edellisessä Käytä-linkin URL-osoitteessa työpaikkailmoituksen URL-osoite on [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e).
 

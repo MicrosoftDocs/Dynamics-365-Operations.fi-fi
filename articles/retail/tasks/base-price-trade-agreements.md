@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8138b6144cc6ba09834f2bfb61cc7334767307d6
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 45d3d962958d0487c9e65910a2dce24097a83773
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916550"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017755"
 ---
 # <a name="base-price-and-trade-agreements"></a>Perushinta ja kauppasopimukset
 
@@ -56,7 +56,7 @@ Tässä menettelyssä esitellään kanavakohtaisen myyntihinnan kauppasopimusten
 24. Valitse **Luo kauppasopimukset**.
 25. Valitse **Uusi**.
 26. Avaa haku valitsemalla **Nimi**-kentässä avattavan valikon painike.
-27. Valitse luettelosta Vähittäismyynti. Esittelytiedoissa Vähittäismyynti-kirjauskansion nimi on Hinta (myynti) -suhteen oletusarvo. Tämä tarkoittaa sitä, että kaikkien uusien rivien oletusarvoina käytetään myyntihinnan kauppasopimuksia.  
+27. Valitse luettelossa **Vähittäismyynti**. Esittelytiedoissa **Vähittäismyynti**-kirjauskansion nimi on **Hinta (myynti)** -suhteen oletusarvo. Tämä tarkoittaa sitä, että kaikkien uusien rivien oletusarvoina käytetään myyntihinnan kauppasopimuksia.  
 28. Valitse **toimintoruudussa** **Rivit**.
 29. Valitse **Tilikoodi**-kentässä Ryhmä.
 30. Avaa haku napsauttamalla **Tilin valinta** -kentässä avattavan valikon painiketta.

@@ -1,6 +1,6 @@
 ---
 title: Käyttöoikeuksien ja roolien hallinta Attractissa
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent - Attractin käyttöoikeusrooleja.
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent - Attractin käyttöoikeusrooleja.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3f804b5f79b813cf504c3deb4a95e678c6fcbf87
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ad94a7511afef0c68fb8f2a70402babb80b0f9ad
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739837"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024191"
 ---
 # <a name="set-user-permissions"></a>Aseta käyttöoikeudet
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract käyttää roolipohjaisia käyttöoikeuksia. Käyttöoikeuksia ei siis myönnetä yksittäisille käyttäjille vaan käyttöoikeusrooleille, joita määritetään käyttäjille. Käyttäjä, jolle on määritetty käyttöoikeusrooli, saa kyseiseen rooliin liitetyt käyttöoikeudet.
+Microsoft Dynamics 365 Talent: Attract käyttää rooleihin perustuvia käyttöoikeuksia. Käyttöoikeuksia ei siis myönnetä yksittäisille käyttäjille vaan käyttöoikeusrooleille, joita määritetään käyttäjille. Käyttäjä, jolle on määritetty käyttöoikeusrooli, saa kyseiseen rooliin liitetyt käyttöoikeudet.
 
 Attractissa viisi peruskäyttäjäroolia:
 
@@ -52,7 +52,7 @@ Seuraavissa osissa kutakin roolia käsitellään yleistasolla. Ohjeaiheessa jäl
 
 ## <a name="administrator"></a>Järjestelmänvalvoja
 
-Käyttäjät, joille on määritetty järjestelmänvalvojan rooli, voivat käyttää ja muuttaa kaikkia Attractin tietoja. Järjestelmänvalvojat voit luoda, lukea, päivittää ja poistaa tietoja. Heillä on myös hallintakeskuksen käyttöoikeus, ja he voivat määrittää sillä Attract-sovelluksen asetukset ja määrittää käyttäjätietoja. On suositeltavaa, että ainakin yhdelle henkilölle määritettään järjestelmänvalvojan rooli. Microsoft PowerAppsin ympäristön järjestelmänvalvoja määritetään oletusarvoisesti Attractin järjestelmänvalvojaksi. Jos rekisteröidyit Attractin kokeiluversioon, sinulle on määritetty järjestelmänvalvojan rooli automaattisesti. Tällä hetkellä töiden luontia varten järjestelmänvalvojan roolin lisäksi käyttäjällä on oltava joko työhönottajan tai työhön ottavan esimiehen rooli.
+Käyttäjät, joille on määritetty järjestelmänvalvojan rooli, voivat käyttää ja muuttaa kaikkia Attractin tietoja. Järjestelmänvalvojat voit luoda, lukea, päivittää ja poistaa tietoja. Heillä on myös pääsy hallintakeskukseen, josta he voivat muokata Attract-asetuksia ja määrittää käyttäjätietoja. On suositeltavaa, että ainakin yhdelle henkilölle määritettään järjestelmänvalvojan rooli. Microsoft PowerAppsin ympäristön järjestelmänvalvoja määritetään oletusarvoisesti Attractin järjestelmänvalvojaksi. Jos rekisteröidyit Attractin kokeiluversioon, sinulle on määritetty järjestelmänvalvojan rooli automaattisesti. Tällä hetkellä töiden luontia varten järjestelmänvalvojan roolin lisäksi käyttäjällä on oltava joko työhönottajan tai työhön ottavan esimiehen rooli.
 
 ## <a name="hiring-manager"></a>Työhön ottava esimies
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent - Attractin LinkedIn-integraation määrittäminen
-description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 for Talent - Attractin LinkedIn-integraation määrittämistä siten, että työpaikkoja on helppo julkaista LinkedIniin Attractista ja että työhönottajat voivat synkronoida työhönottotiedot ehdokkaan LinkedIn-profiilin kanssa.
+title: Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraation määrittäminen
+description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraation määrittämistä siten, että työpaikkoja on helppo julkaista LinkedIniin Attractista ja että työhönottajat voivat synkronoida työhönottotiedot ehdokkaan LinkedIn-profiilin kanssa.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8e42ec7d0bb74089b4e915b5a30277401e694cf9
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 6b86cafdf364f2de051f3d8ceab7413c2c13c3a5
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756219"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009966"
 ---
 # <a name="set-up-linkedin-integration"></a>LinkedIn-integraation määrittäminen
 
 [!include[banner](../includes/banner.md)]
 
-Auta työnottajia ja työhön ottavia esimiehiä rekrytoimaan parhaita osaajia määrittämällä LinkedInin integraatio Microsoft Dynamics 365 for Talent: Attractin kanssa. Attractin avulla voit julkaista työpaikkoja suoraan maailman suurimpaan verkossa toimivaan asiantuntijaverkostoon, LinkedIniin.
+Auta työnottajia ja työhön ottavia esimiehiä rekrytoimaan parhaita osaajia määrittämällä LinkedInin integraatio Microsoft Dynamics 365 Talent: Attractin kanssa. Attractin avulla voit julkaista työpaikkoja suoraan maailman suurimpaan verkossa toimivaan asiantuntijaverkostoon, LinkedIniin.
 
 Attractista LinkedIniin julkaistavat työpaikat ovat rajoitetun listauksen työpaikkoja, jotka yritys voi julkaista ilman lisäkustannuksia. Näitä listauksia voi käyttää vain LinkedIn-ohjelmistokumppaneiden, kuten Attractin, kautta. Ne eivät näy yrityksen LinkedIn-sivun **Urat**-paneelissa, koska vain maksetut ilmoitukset näkyvät siellä. Ne kuitenkin näkyvät, kun mahdolliset ehdokkaat tarkastelevat kaikkia vapaita työpaikkoja. Rajoitetut listaukset näkyvät myös LinkedInin työpaikkojen hauissa.
 

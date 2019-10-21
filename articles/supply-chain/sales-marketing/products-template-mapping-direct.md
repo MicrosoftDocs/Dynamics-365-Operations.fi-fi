@@ -1,6 +1,6 @@
 ---
-title: Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
-description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Salesiin.
+title: Supply Chain Managementin tuotteiden synkronointi suoraan Salesin tuotteisiin
+description: Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementista Dynamics 365 Salesiin.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/10/2019
@@ -19,25 +19,25 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b4a6fab3a4831bc3d18313b351e453c615788843
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 38f0db7db0cc4f65d46cd241f75a7274f19f62cf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742421"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251382"
 ---
-# <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
+# <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Supply Chain Managementin tuotteiden synkronointi suoraan Salesin tuotteisiin
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Tutustu [Common Data Service for Appsin tietojen integrointiin](https://docs.microsoft.com/powerapps/administrator/data-integrator), ennen kuin käytät ratkaisua, jolla prospekti muuttuu kannattavaksi asiakkaaksi.
 
-Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan suoraan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Salesiin.
+Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan suoraan Dynamics 365 Supply Chain Managementista Dynamics 365 Salesiin.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
 
-Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Finance and Operations and Sales -esiintymien tietojen synkronoinnissa. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Finance and Operationsin ja Salesin välillä. Seuraavassa kuvassa kerrotaan, miten tiedot synkronoidaan Finance and Operations- ja Sales-sovelluksen välillä.
+Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Supply Chain Managementin and Salesin esiintymien tietojen synkronoinnissa. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Supply Chain Managementin ja Salesin välillä. Seuraava kuva näyttää, miten tiedot synkronoidaan Supply Chain Managementin ja Salesin välillä.
 
 [![Prospektista käteiseksi -ratkaisun tiedonkulku](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -45,22 +45,22 @@ Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Fina
 
 Näet käytettävissä olevat mallit avaamalla [PowerApps-hallintakeskuksen](https://admin.powerapps.com/dataintegration). Valitse **Projektit** ja valitse sitten julkisia malleja oikeassa yläkulmassa olevan **Uusi projekti** -kohdan avulla.
 
-Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoimaan tuotteet Finance and Operationsista Salesiin.
+Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoimaan tuotteet Supply Chain Managementista Salesiin.
 
-- **Mallin nimi tietojen integroinnissa:** Tuotteet (Fin and Opsista Salesiin) – suora
+- **Mallin nimi tietojen integroinnissa:** Tuotteet (Supply Chain Managementista Salesiin) – suora
 - **Tehtävän nimi tietojen integrointiprojektissa:** Tuotteet
 
 Synkronointitehtävät on suoritettava, ennen kuin tuotteen synkronointi on mahdollista.
 
 ## <a name="entity-set"></a>Yksikköjoukko
 
-| Finance and Operations     | Myynti    |
+| Toimitusketjun hallinta    | Myynti    |
 |----------------------------|----------|
 | Myytävät vapautetut tuotteet | Tuotteet |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
-Tuotteita hallitaan Finance and Operationsissa ja synkronoidaan Salesiin. **Myytävät vapautetut tuotteet** -tietoyksikkö Finance and Operationsissa vie vain tuotteet, jotka ovat *myytävissä*. Myytävissä olevat tuotteet ovat tuotteita, joille on määritetty tiedot myyntitilauksessa käyttämistä varten. Samoja sääntöjä käytetään, kun tuote tarkistetaan **Vapautettu tuote** -sivun **Vahvista**-toiminnon avulla.
+Tuotteita hallitaan Supply Chain Managementissa ja synkronoidaan Salesiin. **Myytävät vapautetut tuotteet** -tietoyksikkö Supply Chain Managementissa vie vain tuotteet, jotka ovat *myytävissä*. Myytävissä olevat tuotteet ovat tuotteita, joille on määritetty tiedot myyntitilauksessa käyttämistä varten. Samoja sääntöjä käytetään, kun tuote tarkistetaan **Vapautettu tuote** -sivun **Vahvista**-toiminnon avulla.
 
 Tuotenumeroa käytetään avaimena. Tämän vuoksi jokaisella tuotevariantilla on oltava yksilöivä tuotetunnus, kun tuotevariantit synkronoidaan Salesiin.
 
@@ -68,13 +68,13 @@ Tuotenumeroa käytetään avaimena. Tämän vuoksi jokaisella tuotevariantilla o
 
 Salesissa tuotteisiin on lisätty uusi **On ulkoisesti ylläpidetty** -kenttä ilmaisemaan, että annettua tuotetta ylläpidetään ulkoisesti. Arvoksi valitaan oletusarvoisesti **Kyllä** Salesiin tuonnin aikana. Käytettävissä ovat seuraavat arvot:
 
-- **Kyllä** – tuote on peräisin Finance and Operationsista eikä sitä voi muokata Salesissa.
+- **Kyllä** – Tuote on peräisin Supply Chain Managementista eikä sitä voi muokata Salesissa.
 - **Ei** – tuote kirjataan suoraan Salesissa.
 - **(Tyhjä)** – tuote sijaitsi Salesissa ennen Prospektista käteiseksi -ratkaisun käyttöönottoa.
 
-**On ulkoisesti ylläpidetty** -kentän avulla voidaan varmistaa, että vain sellaiset tarjoukset ja myyntitilaukset, joissa on ulkoisesti ylläpidettyjä tuotteita, synkronoidaan Finance and Operationsiin.
+**On ulkoisesti ylläpidetty** -kenttä auttaa varmistamaan, että Supply Chain Managementiin synkronoidaan vain tarjoukset ja myyntitilaukset, joissa on ulkoisesti ylläpidettyjä tuotteita.
 
-Ulkoisesti ylläpidetyt tuotteet lisätään automaattisesti ensimmäiseen samaa valuuttaa käyttävään ja voimassa olevaan hinnastoon. Hinnastot järjestetään aakkosjärjestykseen nimen mukaan. Tuotteen Finance and Operationsin myyntihintaa käytetään hinnaston hintana. Tämän vuoksi Salesissa on oltava hinnasto jokaiselle Finance and Operationsin tuotteen myyntivaluutalle. Vapautettujen myytävien tuotteiden valuutta on määritetty sen yrityksen tilivaluutaksi, josta tuote viedään.
+Ulkoisesti ylläpidetyt tuotteet lisätään automaattisesti ensimmäiseen samaa valuuttaa käyttävään ja voimassa olevaan hinnastoon. Hinnastot järjestetään aakkosjärjestykseen nimen mukaan. Tuotteen Supply Chain Managementin myyntihintaa käytetään hinnaston hintana. Tämän vuoksi Salesissa on oltava hinnasto jokaiselle Supply Chain Managementin tuotteen myyntivaluutalle. Vapautettujen myytävien tuotteiden valuutta on määritetty sen yrityksen tilivaluutaksi, josta tuote viedään.
 
 > [!NOTE]
 > - Tuotteen synkronointi ei onnistu, jos hinnastossa ei ole vastaavaa valuuttaa.
@@ -82,18 +82,18 @@ Ulkoisesti ylläpidetyt tuotteet lisätään automaattisesti ensimmäiseen samaa
 
 ## <a name="preconditions-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
-- Täytä Finance and Operationsin aiemmin luotujen tuotteiden erillisen tuotteen taulu ennen ensimmäistä synkronointia. Aiemmin luotuja tuotteita ei synkronoida, ennen kuin tämä työ on valmis.
+- Täytä Supply Chain Managementin aiemmin luotujen tuotteiden erillisen tuotteen taulu ennen ensimmäistä synkronointia. Aiemmin luotuja tuotteita ei synkronoida, ennen kuin tämä työ on valmis.
 
-    1. Etsi **Täytä erillisen tuotteen taulu** Finance and Operationsin hakutoiminnolla.
+    1. Etsi **Täytä erillisen tuotteen taulu** Supply Chain Managementin hakutoiminnolla.
     2. Suorita työ valitsemalla **Täytä erillisen tuotteen taulu**. Tämän työn voi suorittaa vain kerran.
 
-- Varmista, että Finance and Operationsin ja Salesin välillä on myynnin mittayksikön arvokartta **SalesUnitSymbol**- ja **DefaultUnit (Name)**-kohteen väliselle yhdistämismääritykselle.
+- Varmista, että Supply Chain Managementin ja Salesin välillä on myynnin mittayksikön arvokartta **SalesUnitSymbol**- ja **DefaultUnit (Name)**-kohteen väliselle yhdistämismääritykselle.
 - Päivitä **yksikköryhmän** (**defaultuomscheduleid.name**) arvomääritys siten, että se vastaa Salesin **yksikköryhmiä**.
 
     Oletusmallin arvo on **Oletusyksikkö**.
 
-- Varmista, että kaikkien Finance and Operationsin tuotteiden myynnin mittayksiköt ovat Salesissa.
-- Varmista, että Salesissa on hinnasto jokaiselle Finance and Operationsin tuotteen myyntivaluutalle.
+- Varmista, että kaikkien Supply Chain Managementin tuotteiden myynnin mittayksiköt ovat Salesissa.
+- Varmista, että Salesissa on hinnasto jokaiselle Supply Chain Managementin tuotteen myyntivaluutalle.
 - Kun tuotteet luodaan Salesissa, niiden tila on **Luonnos** tai **Aktiivinen**. Toimintaa ohjataan Salesissa kohdassa **Asetukset** > **Hallinto** > **Järjestelmäasetukset** > **Sales**.
 
     Tuotteet, joiden tila on **Luonnos** luomisen jälkeen, on aktivoitava ennen tarjouksiin tai myyntitilauksiin lisäämistä.
@@ -103,7 +103,7 @@ Ulkoisesti ylläpidetyt tuotteet lisätään automaattisesti ensimmäiseen samaa
 Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä. 
 
 > [!NOTE]
-> Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Finance and Operationsiin.
+> Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Supply Chain Managementiin.
 
 ![Mallin yhdistäminen tietojen integrointiohjelmassa](./media/products-direct-template-mapping-data-integrator-1.png)
 
@@ -112,13 +112,13 @@ Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 [Prospektista käteiseksi](prospect-to-cash.md)
 
-[Sales-asiakkaiden synkronointi suoraan Finance and Operations -asiakkaisiin](accounts-template-mapping-direct.md)
+[Tilien synkronointi suoraan Salesin tuotteista Supply Chain Managementin asiakkaisiin](accounts-template-mapping-direct.md)
 
-[Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](contacts-template-mapping-direct.md)
+[Salesin yhteyshenkilöiden synkronointi suoraan Supply Chain Managementin yhteyshenkilöihin tai asiakkaisiin](contacts-template-mapping-direct.md)
 
-[Myyntitilauksien otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](sales-order-template-mapping-direct-two-ways.md)
+[Myyntitilausten otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin](sales-order-template-mapping-direct-two-ways.md)
 
-[Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](sales-invoice-template-mapping-direct.md)
+[Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin](sales-invoice-template-mapping-direct.md)
 
 
 

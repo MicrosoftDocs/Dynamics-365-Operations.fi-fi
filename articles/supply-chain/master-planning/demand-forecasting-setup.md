@@ -3,7 +3,7 @@ title: Kysynnän ennusteiden asetukset
 description: Tässä ohjeaiheessa kuvataan asetustehtävät, jotka sinun on suoritettava kysynnän ennusteita valmistellessasi.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/16/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59fb8938720ce1634735dd728eee3874660a4289
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cdfc5eda1ebf78abe823908324ed9c35215e562e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551949"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249561"
 ---
 # <a name="demand-forecasting-setup"></a>Kysynnän ennusteiden asetukset
 
@@ -42,9 +42,9 @@ Nimikkeen ja sen dimensioiden on oltava osa vain yhtä nimikkeen kohdistustunnus
 Varastointiyksikkö (SKU) lisätään nimikkeen kohdistustunnukselle kohdassa **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennuste** &gt; **Nimikkeen kohdistustunnukset**. Määritä nimike kohdistustunnukselle **Määritä nimikkeet** -sivulla.
 
 ## <a name="intercompany-planning-groups"></a>Konsernin sisäiset suunnitteluryhmät
-Kysynnän ennusteet luovat kaikki yritykset kattavia ennusteita. Microsoft Dynamics 365 for Finance and Operationsissa yritykset, joiden suunnittelu suoritetaan yhdessä, ryhmitetään yhdeksi konsernin sisäiseksi suunnitteluryhmäksi. Määritelläksesi yrityskohtaisesti mitkä nimikkeen kohdistustunnukset tulisi ottaa huomioon kysynnän ennusteissa, liitä nimikkeen kohdistustunnus konsernin suunnitteluryhmän jäseneen menemällä kohtaan **Pääsuunnittelu** &gt; **Asetukset** &gt; **Konsernin sisäiset suunnitteluryhmät**. 
+Kysynnän ennusteet luovat kaikki yritykset kattavia ennusteita. Dynamics 365 Supply Chain Managementissa yritykset, joiden suunnittelu suoritetaan yhdessä, ryhmitetään yhdeksi konsernin sisäiseksi suunnitteluryhmäksi. Määritelläksesi yrityskohtaisesti mitkä nimikkeen kohdistustunnukset tulisi ottaa huomioon kysynnän ennusteissa, liitä nimikkeen kohdistustunnus konsernin suunnitteluryhmän jäseneen menemällä kohtaan **Pääsuunnittelu** &gt; **Asetukset** &gt; **Konsernin sisäiset suunnitteluryhmät**. 
 
-Jos nimikkeen kohdistustunnuksia ei ole määritetty konsernin sisäisen suunnitteluryhmän jäsenille, kysynnän ennuste lasketaan oletusarvoisesti kaikille niille nimikkeille, jotka on määritetty kaikkiin nimikkeen kohdistustunnuksiin kaikista Finance and Operations -yrityksistä. Lisäsuodatusvaihtoehtoja yrityksille ja nimikkeen kohdistustunnuksille löytyy **Luo tilastollinen perusennuste** -sivulta. 
+Jos nimikkeen kohdistustunnuksia ei ole määritetty konsernin sisäisen suunnitteluryhmän jäsenille, kysynnän ennuste lasketaan oletusarvoisesti kaikille niille nimikkeille, jotka on määritetty kaikkiin nimikkeen kohdistustunnuksiin kaikista yrityksistä. Lisäsuodatusvaihtoehtoja yrityksille ja nimikkeen kohdistustunnuksille löytyy **Luo tilastollinen perusennuste** -sivulta. 
 
 Tarkista nimikkeiden ennustettu lukumäärä. Tarpeettomat nimikkeet saattavat aiheuttaa lisäkustannuksia käyttäessäsi Microsoft Azure automaattianalyysipalvelua.
 
@@ -55,7 +55,7 @@ Kysynnän ennusteet luovat ennusteet lukumäärinä. Näin ollen mittayksikkö, 
 
 Kysynnän ennusteita voidaan käyttää ennustamaan sekä riippuvaista että riippumatonta kysyntää. Jos esimerkiksi vain **Myyntitilaus**-valintaruutu on valittuna ja jos kaikki kysynnän ennusteessa huomioitavat nimikkeet ovat myytäviä nimikkeitä, järjestelmä laskee riippumattoman kysynnän. Tärkeitä alikomponentteja voidaan kuitenkin lisätä nimikkeen kohdistustunnuksille ja sisällyttää kysynnän ennusteisiin. Tässä tapauksessa, jos **Tuotantolinja**-valintaruutu on valittuna, lasketaan riippuvainen ennuste. 
 
-Perusennuste voidaan luoda Finance and Operationsissa kahdella tavalla. Voit käyttää ennustemalleja historiallisten tietojen päällä, tai voit vain kopioida historialliset tiedot ennusteeseen. **Kysynnän luontistrategia** -kentässä voit tehdä valinnan näiden kahden menetelmän välillä. Käytä ennustemalleja valitsemalla **Azuren automaattianalyysipalvelu**. 
+Perusennuste voidaan luoda kahdella tavalla. Voit käyttää ennustemalleja historiallisten tietojen päällä, tai voit vain kopioida historialliset tiedot ennusteeseen. **Kysynnän luontistrategia** -kentässä voit tehdä valinnan näiden kahden menetelmän välillä. Käytä ennustemalleja valitsemalla **Azuren automaattianalyysipalvelu**. 
 
 Napsauttamalla **Ennustedimensiot** sivun **Kysynnän ennusteen parametrit** vasemmassa ruudussa, voit myös valita kysynnän ennusteen luonnissa käytettävän ennustedimensioiden joukon. Ennustedimensio osoittaa ennusteelle määritetyn erittelytason. Yritys, toimipaikka ja nimikkeen kohdistustunnus ovat pakollisia ennustedimensioita, mutta voit myös luoda ennusteita varastossa, varaston tilan, asiakasryhmän, asiakastilin, maan/alueen, osavaltion ja nimikkeen sekä kaikkien nimikedimensioiden tasoilla. 
 
@@ -63,7 +63,7 @@ Voit missä tahansa vaiheessa lisätä ennustedimensioita kysynnän ennusteissa 
 
 Kaikki nimikkeet eivät toimi samalla tavalla kysynnän ennusteiden näkökulmasta. Samanlaisia nimikkeitä voidaan ryhmittää yhteen nimikkeen kohdistustunnukseen ja tapahtumatyypin ja ennustemenetelmän asetusten kaltaisille parametreille voidaan määrittää asetuksia nimikkeen kohdistustunnuskohtaisesti. Valitse **Kysynnän ennusteen parametrit** -sivun vasemmanpuoleisesta ruudusta **Nimikkeen kohdistustunnukset**. 
 
-Finance and Operations käyttää automaattianalyysipalveluiden verkkopalvelua ennusteen luomiseen. Muodosta yhteys palveluun antamalla Finance and Operationsille seuraavat tiedot Microsoft Azuren automaattianalyysipalveluun kirjautumista varten:
+Supply Chain Management käyttää automaattianalyysipalveluiden verkkopalvelua ennusteen luomiseen. Muodosta yhteys palveluun antamalla seuraavat tiedot Microsoft Azuren automaattianalyysistudioon kirjautumista varten:
 
 -   Verkkopalvelun ohjelmointirajapinta- (API)-avain
 -   Verkkopalvelun päätepisteen URL-osoite
@@ -72,10 +72,23 @@ Finance and Operations käyttää automaattianalyysipalveluiden verkkopalvelua e
 
 **Huomautus:** Azuren tallennustilin nimi ja avain tarvitaan vain, jos käytät mukautettua tallennustiliä. Jos käytät paikallista versiota, sinulla on oltava mukautettu tallennustili Azuressa niin, että automaattianalyysipalvelu voi käyttää historiallisia tietoja. 
 
-Voit käyttää omaa palveluasi kysynnän ennusteiden luomiseen automaattianalyysipalvelun tai Finance and Operationsin kysynnän ennusteiden luomisen kokeilujen avulla. Ohjeet Dynamics 365 for Finance and Operationsin kysynnän ennusteiden luomisen kokeilujen käyttämiseen verkkopalveluna löytyy Finance and Operationsista. Valitse **Kysynnän ennusteen parametrit** -sivulla **Azuren automaattianalyysipalvelut** -välilehti.
+Voit käyttää omaa palveluasi kysynnän ennusteiden luomiseen automaattianalyysistudion tai Supply Chain Managementin kysynnän ennusteiden luomisen kokeilujen avulla. Finance and Operationsisssa on ohjeita kysynnän ennusteiden luomiskokeilujen käyttöönottamisesta verkkopalveluna. Valitse **Kysynnän ennusteen parametrit** -sivulla **Azuren automaattianalyysipalvelut** -välilehti.
 
-## <a name="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service"></a>Finance and Operationsin kysynnän ennusteiden automaattianalyysipalvelun asetukset
-Jos haluat tarkastella parametreja, jotka voidaan määrittää Finance and Operationsin kysynnän ennusteiden automaattianalyysipalveluille, siirry kohtaan **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennuste** &gt; **Ennustealgoritmin parametrit**. **Ennustealgoritmin parametrit** sivu näyttää parametrien oletusarvot. Voit korvata nämä parametrit **Kysynnän ennusteen parametrit** -sivulla. Korvaa parametrit yleisesti **Yleinen** -välilehdessä, tai nimikkeen kohdistustunnuskohtaisesti **Nimikkeen kohdistustunnus** -välilehdessä. Nimikkeen kohdistustunnuksella korvattavat parametrit vaikuttavat vain kyseiseen nimikkeen kohdistustunnukseen määritettyjen nimikkeiden ennusteisiin.
+## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>Kysynnän ennusteiden automaattianalyysipalveluiden asetukset
+Jos haluat tarkastella parametreja, jotka voidaan määrittää kysynnän ennustepalvelulle, valitse **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennuste** &gt; **Ennustealgoritmin parametrit**. **Ennustealgoritmin parametrit** sivu näyttää parametrien oletusarvot. Voit korvata nämä parametrit **Kysynnän ennusteen parametrit** -sivulla. Korvaa parametrit yleisesti **Yleinen** -välilehdessä, tai nimikkeen kohdistustunnuskohtaisesti **Nimikkeen kohdistustunnus** -välilehdessä. Nimikkeen kohdistustunnuksella korvattavat parametrit vaikuttavat vain kyseiseen nimikkeen kohdistustunnukseen määritettyjen nimikkeiden ennusteisiin.
+
+### <a name="forecast-algorithm-parameters"></a>Ennustealgoritmin parametrit
+
+Voit määrittää **Kohdistustunnukset**-välilehdessä kunkin kohdistustunnuksen **Ennustealgoritmin parametrit**. Valittavissa ovat seuraavat vaihtoehdot.
+- **Luotettavuustasoprosentti**: Luottamusväli koostuu arvoalueesta, joka toimii hyvinä ennusteina kysynnän ennusteelle. 95 prosentin luotettavuustasoprosentti osoittaa, että on 5 prosentin riski siitä, että tuleva kysyntä on luottamusvälin ulkopuolella.
+- **Pakota kausivaihtelu**: Määrittää, pakotetaanko malli käyttämään tietyn kausivaihtelutyyppiä. Koskee vain vaihtoehtoja ARIMA ja ETS. Vaihtoehdot: AUTO(oletus), NONE, ADDITIVE, MULTIPLICATIVE.
+- **Ennustemalli**: vaihtoehdot: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, ALL. Valitse parhaiten sopiva malli käyttämällä **ALL**-vaihtoehtoa.
+- **Ennusteen enimmäisarvo**: Määrittää ennusteissa käytettävän enimmäisarvon. Muoto: +1E[n] tai numeerinen vakio.
+- **Ennusteen vähimmäisarvo**: Määrittää ennusteissa käytettävän vähimmäisarvon. Muoto: -1E[n] tai numeerinen vakio.
+- **Puuttuvan arvon korvaus**: Määrittää, miten historiallisten tietojen aukot täytetään. Vaihtoehdot: numeerinen arvo, KESKIARVO, EDELLINEN, INTERPOLOI LINEAARINEN, INTERPOLOI POLYNOMINEN.
+- **Puuttuvan arvon korvausalue**: Määrittää, koskeeko arvon korvaus vain kunkin yksittäisen rakeisuusmääritteen päivämääräaluetta vai koko tietojoukkoa. Vaihtoehdot: GRANULARITY_ATTRIBUTE(oletus), GLOBAL.
+- **Kausivaihtelun vihje**: Anna ennustemallia varten kausivaihtelutietojen vihje ennusteen tarkkuuden parantamiseksi. Muoto: kokonaisluku, joka kuvaa niiden jaksojen pituutta, jolloin kysyntäkuvio toistuu. Syötä esimerkiksi luku 6, jos tiedot toistuvat kuuden kuukauden välein.
+- **Testijoukon koon prosenttiosuus**: Historiatietojen prosenttiosuus käytettäväksi testiaineistona ennusteen tarkkuuden laskennassa. 
 
 <a name="additional-resources"></a>Lisäresurssit
 --------

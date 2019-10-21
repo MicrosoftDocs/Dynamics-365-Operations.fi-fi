@@ -1,6 +1,6 @@
 ---
 title: Toimintojen hallinta
-description: Tässä ohjeaiheessa selitetään Microsoft Dynamics 365 for Retailin valikoimien hallinnan peruskäsitteitä ja pohditaan projektin käyttöönottovaihtoehtoja.
+description: Tässä ohjeaiheessa selitetään Dynamics 365 Retailin valikoimien hallinnan peruskäsitteitä ja pohditaan projektin käyttöönottovaihtoehtoja.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4652641be0a1edaac919d36c7f127cd62c355a57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558825"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025837"
 ---
 # <a name="assortment-management"></a>Valikoiman hallinta
 
@@ -28,7 +28,7 @@ ms.locfileid: "1558825"
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Microsoft Dynamics 365 for Retailissa on *valikoimia*, joilla voi hallita tuotteiden saatavuutta eri kanavissa. Valikoimat määrittävät, mitkä tuotteet ovat saatavana tietyissä myymälöissä tiettyinä aikoina.
+Dynamics 365 Retailissa on *valikoimia*, joilla voi hallita tuotteiden saatavuutta eri kanavissa. Valikoimat määrittävät, mitkä tuotteet ovat saatavana tietyissä myymälöissä tiettyinä aikoina.
 
 Retailissa valikoimaan yhdistetään vähintään yksi kanava (tai kanavaryhmä organisaatiohierarkioita käytettäessä) vähintään yhteen tuotteeseen (tai tuoteryhmiään luokkahierarkioita käytettäessä).
 

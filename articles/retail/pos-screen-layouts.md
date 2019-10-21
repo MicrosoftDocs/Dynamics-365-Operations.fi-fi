@@ -1,6 +1,6 @@
 ---
 title: Näytön asettelut myyntipisteeseen (POS)
-description: Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS -käyttöliittymistä.
+description: Tässä aiheessa on tietoja Dynamics 365 Retail POS -käyttöliittymistä.
 author: jblucher
 manager: AnnBe
 ms.date: 05/20/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1607032"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025266"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Näytön asettelut myyntipisteeseen (POS)
 
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa on tietoja Microsoft Dynamics 365 for Retail POS -käyttöliittymistä.
+Tässä aiheessa on tietoja Dynamics 365 Retail POS -käyttöliittymistä.
 
 Retail POS:n käyttöliittymät (UI) voidaan määrittää käyttäen visuaalisten profiilien ja näyttöasettelujen yhdistelmää, jotka on määritetty myymälöille, kassakoneille ja/tai käyttäjille.
 
@@ -50,7 +50,7 @@ Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään mä�
 - **Kuvaus** – kuvauksen avulla voit määrittää kuvaavan nimen, joka auttaa tunnistamaan oikean profiilin tilanteen mukaan.
 - **Teema** – käyttäjät voivat valita vaalean tai tumman sovellusteeman. Teema vaikuttaa koko sovelluksen fontin ja taustan väreihin.
 - **Korostuksen väri** – korostuksen värejä käytetään koko myyntipisteessä erottamaan tai korostamaan tiettyjä visuaalisia elementtejä, kuten ruutuja, painikkeita tai hyperlinkkejä. Nämä elementit ovat yleensä toimintoja.
-- **Otsikon väri** – voit määrittää sivun ylätunnisteen värin jälleenmyyjän brändivaatimusten täyttämiseksi. Tämä ominaisuus on saatavana vain Microsoft Dynamics 365 for Retailin versiossa 1611.
+- **Otsikon väri** – voit määrittää sivun ylätunnisteen värin jälleenmyyjän brändivaatimusten täyttämiseksi. Tämä ominaisuus on saatavana vain Retailin versiossa 1611.
 - **Näytä päivämäärä/aika** – Kun käytössä, kuluva päivämäärä ja kellonaika tulevat näkyviin POS-otsikkoon.
 - **Kirjautumisen tausta** – käyttäjät voivat määrittää kirjautumisnäytön taustakuvan. Taustakuvan tiedostokoko on pidettävä mahdollisimman pienenä, koska suurien tiedostojen tallentaminen ja lataaminen voivat vaikuttaa sovelluksen toimintaan ja suorituskykyyn.
 - **Sovelluksen tausta** – Käyttäjät voivat määrittää myös yhtenäisen taustakuvan käytettäväksi koko sovelluksessa yhtenäisen teemavärin sijaan. Sisäänkirjautumisen taustat tulisi pitää mahdollisimman pieninä.

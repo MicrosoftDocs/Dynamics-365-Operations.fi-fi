@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 00facce5913fb82f67c5844d74d29032735db707
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d95429dde38a7a528b1c1d9036194a3bf8e6f986
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506100"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009442"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Yrityskohtaisten henkilöstöhallinnon (HR) parametrien määrittäminen
 
@@ -34,7 +34,7 @@ Jotkin henkilöstöhallinnon (HR) parametrien asetukset ovat yhteisiä eri yrity
 Henkilöstöhallinto (HR)-parametrien määrittämiseen käytetään kahta sivua. Käytä yhtiöiden kesken jaettujen parametrien määrittämiseen **Henkilöstöhallinnon jaetut parametrit** -sivua. Käytä yhtiökohtaisten (ts. asetukset koskevat yhtä yhtiötä) parametrien määrittämiseen **Henkilöstöparametrit**-sivua. **Henkilöstöparametrit**-sivulla asetukset jaetaan kuudelle välilehdelle:
 
 -   Yleiset
--   Työhönotto – ei sisälly Dynamics 365 for Talentiin
+-   Työhönotto – ei sisälly Dynamics 365 Talentiin
 -   Kompensaatio
 -   Numerosarjat
 -   Perhe ja sairauspoissaolon säädös (FMLA)
@@ -49,7 +49,7 @@ Kukin välilehti sisältää yksittäistä yhtiötä koskevia tietoja. **Yleinen
 ### <a name="previously-released-functionality"></a>Aiemmin julkaistu toiminto
 **Numerojärjestys**-välilehden asetukset määrittävät numerosarjat, joita käytetään tunnusten määrittämiseen automaattisesti nimikkeille henkilöstöhallinnossa, kuten sovelluksille, poissaolomerkinnöille, kompensaatioprosessin tuloksille, tapausnumeroille, kursseille ja kurssien työjärjestyksille. Jos haluat ylläpitää numerosarjaviitteitä ja koodeja, käytä **Numerojärjestykset**-luettelosivua (valitse **Organisaation hallinto** &gt; **Numerojärjestykset** &gt; **Numerojärjestykset**).
 
-### <a name="if-youre-using-dynamics-365-for-talent"></a>Jos käytät Dynamics 365 for Talentia
+### <a name="if-youre-using-dynamics-365-talent"></a>Jos käytät Dynamics 365 Talentia
 **Numerojärjestys**-välilehden asetukset määrittävät numerosarjat, joita käytetään tunnusten määrittämiseen automaattisesti nimikkeille henkilöstöhallinnossa, kuten sovelluksille, poissaolomerkinnöille, kompensaatioprosessin tuloksille, tapausnumeroille, kursseille ja kurssien työjärjestyksille. Jos haluat ylläpitää numerosarjaviitteitä ja koodeja, käytä **Numerojärjestykset** -luettelosivua (valitse **Järjestelmän hallinto** &gt; **Linkit-välilehti** &gt; **Numerojärjestykset** &gt; **Numerojärjestykset**). 
 
 **FMLA**-välilehden asetuksissa määritetään, montako tuntia työntekijän on työskenneltävä saadakseen oikeuden FMLA-etuihin, oikeuteen vaadittavan työsuhteen pituuden, ja työsuhteen alkamispäivän, jota käytetään määrittämään työsuhteen pituus. Asetukset määrittävät myös FMLA-tuntien määrän, joihin työntekijällä on oikeus, ja FMLA-lomakalenterin, jota käytetään työntekijöiden käyttämien FMLA-tuntien määrän laskemisessa. **FMLA**-välilehti koskee vain yhdysvaltalaisia yrityksiä. 

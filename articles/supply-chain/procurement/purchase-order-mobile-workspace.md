@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 75a38b99fe0aee7d4dd386191be236e54097e867
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561260"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249422"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Ostotilauksen hyväksymisen mobiilityötila
 
@@ -35,13 +35,13 @@ Tässä ohjeaiheessa on tietoja **ostotilausten hyväksymisen** mobiilityötilas
 ## <a name="overview"></a>Yleiskuvaus 
 Hyväksymistä edellyttävät ostotilaukset läpäisevät hyväksymistyönkulun. Työnkulussa voi olla erilaisia vaiheita, jotka edellyttävät vähintään yhden henkilön tekemiä toimia. Henkilön on ehkä esimerkiksi suoritettava tehtävä loppuun tai hyväksyttävä ostotilaus. 
 
-**Ostotilauksen hyväksymisen** työtilassa on helppo tarkastella ostotilauksia ja reagoida niihin mobiililaitteessa. Työtilassa voi tehdä myös samoja toimia kuin Microsoft Dynamics 365 for Finance and Operationsin verkkoasiakasohjelmassa.
+**Ostotilauksen hyväksymisen** työtilassa on helppo tarkastella ostotilauksia ja reagoida niihin mobiililaitteessa. Työtilassa voi tehdä myös samoja toimia kuin verkkoasiakasohjelmassa.
 
 ## <a name="prerequisites"></a>Edellytykset
-Edellytykset vaihtelevat sen mukaan, mikä Finance and Operationsin versio on otettu käyttöön organisaatiossa.
+Edellytykset vaihtelevat sen mukaan, mikä Supply Chain Management -versio on otettu käyttöön organisaatiossasi.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Finance and Operations 
-Jos Microsoft Dynamics 365 for Finance and Operations on otettu käyttöön organisaatiossa, järjestelmänvalvojan on julkaistava **Ostotilauksen hyväksyntä** -mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Managementin käytön edellytykset 
+Jos Finance and Operations on otettu käyttöön organisaatiossasi, järjestelmänvalvojan on julkaistava **Ostotilauksen hyväksyntä** -mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611 ja Platform update 3 tai uudempi
 Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsin versio 1611 ja Platform update 3 tai uudempi, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 
@@ -75,7 +75,7 @@ Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsi
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Mobiilisovelluksen lataaminen ja asentaminen
-Lataa ja asenna Microsoft Dynamics 365 for Unified Operations Mobile -sovellus:
+Finance and Operations -mobiilisovelluksen lataaminen ja asentaminen:
 
 - [Android-puhelimet](https://go.microsoft.com/fwlink/?linkid=850662)
 - [IPhone-puhelimet](https://go.microsoft.com/fwlink/?linkid=850663)

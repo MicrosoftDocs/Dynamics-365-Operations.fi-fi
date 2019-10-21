@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7024104dfc76a33735199ad0871fe7ce29f8e011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570385"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248924"
 ---
 # <a name="purchase-agreements"></a>Ostosopimukset
 
@@ -78,7 +78,7 @@ Kun vahvistat ostosopimuksen, sen uusin versio tallennetaan historiataulukkoon. 
 Kun luot ostotilauksen, voit käyttää siinä ostosopimusta. Sopimusehtojen tiedot, kuten maksuehdot, toimitusajat ja toimitusosoite, kopioidaan sitten ostotilauksen otsikkoon. Jos ostotilauksessa on vähintään yksi sopimuksen kattaman tuotteen tai luokan rivi, kyseisillä riveillä käytetään ostosopimuksen hintoja ja alennuksia. Tilausrivin summa tai määrä vaikuttaa ostosopimuksen sitoumuksen täytäntöönpanoon. Sama ostotilaus voi sisältää sekä rivejä, jotka eivät liity ostosopimukseen, että rivejä, jotka ovat sitoutuneet ostosopimukseen.  
 
 Voit valita ostosopimuksen vain, kun olet luomassa ostotilausta. Et voi valita ostosopimusta, kun ostotilaus on luotu.  
-Joissakin tilanteissa, joissa ostotilaukset luodaan epäsuorasti, voit määrittää, hakeeko Finance and Operations automaattisesti käytettävää ostosopimusta. Voit esimerkiksi toimia näin, kun vahvistat automaattisesti suunniteltuja ostotilauksia tai luot ostotilauksia, jotka perustuvat myyntitilauksiin.
+Joissakin tilanteissa, joissa ostotilaukset luodaan epäsuorasti, voit määrittää, hakeeko Supply Chain Management automaattisesti käytettävää ostosopimusta. Voit esimerkiksi toimia näin, kun vahvistat automaattisesti suunniteltuja ostotilauksia tai luot ostotilauksia, jotka perustuvat myyntitilauksiin.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Ostosopimukset ja konsernin sisäinen kauppa
 Yhtiöiden väliset jäljityssuhteet voidaan luoda toimittajan tilien ja asiakkaan tilien välille, kun ne ovat eri oikeushenkilöitä. Kun myyntitilaus tai ostotilaus luodaan yhdelle osapuolelle, luodaan myös konsernin sisäinen tilausketju. Tilausketjussa myyntitilaus ja ostotilaus on luotu soveltuville yrityksille.  

@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546706"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250189"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Toimittajayhteistyö ulkoisten toimittajien kanssa
 
 [!include [banner](../includes/banner.md)]
 
-**Toimittajayhteistyö**-moduuli on tarkoitettu toimittajille, joilla ei ole sähköisten tietojen vaihdon (EDI) Microsoft Dynamics 365 for Finance and Operations -integrointia. Toimittajat voivat käsitellä siinä ostotilauksia, laskuja, tavaralähetysvaraston tietoja ja tarjouspyyntöjä. Lisäksi he voivat käyttää joitakin osia toimittajan päätiedoista. Tässä aiheessa selitetään, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa, jotka käsittelevät toimittajayhteistyöliittymässä ostotilauksia, tarjouspyyntöjä ja tavaralähetysvarastoja. Siinä selitetään myös, miten toimittajayhteistyö voidaan ottaa käyttöön tietylle toimittajalle ja miten kaikkien määritetään tiedot, jotka kaikki toimittajat näkevät, kun he vastaavat ostotilaukseen.
+**Toimittajayhteistyö**-moduuli on tarkoitettu toimittajille, joilla ei ole sähköisten tietojen vaihdon (EDI) Microsoft Dynamics 365 Supply Chain Management -integrointia. Toimittajat voivat käsitellä siinä ostotilauksia, laskuja, tavaralähetysvaraston tietoja ja tarjouspyyntöjä. Lisäksi he voivat käyttää joitakin osia toimittajan päätiedoista. Tässä aiheessa selitetään, miten voit tehdä yhteistyötä ulkoisten toimittajien kanssa, jotka käsittelevät toimittajayhteistyöliittymässä ostotilauksia, tarjouspyyntöjä ja tavaralähetysvarastoja. Siinä selitetään myös, miten toimittajayhteistyö voidaan ottaa käyttöön tietylle toimittajalle ja miten kaikkien määritetään tiedot, jotka kaikki toimittajat näkevät, kun he vastaavat ostotilaukseen.
 
 Lisätietoja siitä, mitä ulkoiset toimittajat voivat tehdä toimittajan toimittajayhteistyöliittymällä, on kohdassa [Toimittajayhteistyö asiakkaiden kanssa](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Tämän ohjeaiheen toimittajayhteistyön tiedot koskevat vain Finance and Operationsin nykyistä versiota. Microsoft Dynamics AX 7.0 (helmikuu 2016)- ja Microsoft Dynamics AX 7.0.1 (toukokuu 2016) -versioissa yhteistyö toimittajien kanssa tapahtuu **Toimittajaportaali**-moduulissa. Lisätietoja **Toimittajaportaali**-moduulista on kohdassa [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md).
+> Tämän ohjeaiheen toimittajayhteistyön tiedot koskevat vain Supply Chain Managementin nykyistä versiota. Microsoft Dynamics AX 7.0 (helmikuu 2016)- ja Microsoft Dynamics AX 7.0.1 (toukokuu 2016) -versioissa yhteistyö toimittajien kanssa tapahtuu **Toimittajaportaali**-moduulissa. Lisätietoja **Toimittajaportaali**-moduulista on kohdassa [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md).
 
 Lisätietoja siitä, kuinka toimittajat voivat käyttää toimittajayhteistyötä laskutusprosesseissa, on kohdassa [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Tietoja siitä, miten uusia toimittajayhteistyön käyttäjiä voidaan valmistella, on kohdassa [Toimittajayhteistyön käyttäjien hallinta](manage-vendor-collaboration-users.md).
 
@@ -51,7 +51,7 @@ Jos sanomat on lisättävä useammalla kielellä, luo erilliset sanomat ja mää
 
 ## <a name="setting-the-vendor-collaboration-options-for-a-specific-vendor"></a>Toimittajayhteistyön asetusten määrittäminen tietylle toimittajalle
 
-Järjestelmänvalvoja määrittää Finance and Operationsin toimittajayhteistyön yleiset asetukset, kuten käyttöoikeudet, jotka kaikilla kanssasi yhteistyötä tekevillä toimittajilla on. On kuitenkin myös joitakin toimittajatilikohtaisia asetuksia. Sinun onkin määritettävä nämä asetukset.
+Järjestelmänvalvoja määrittää toimittajayhteistyön yleiset asetukset, kuten käyttöoikeusroolit, jotka kaikilla kanssasi yhteistyötä tekevillä toimittajilla on. On kuitenkin myös joitakin toimittajatilikohtaisia asetuksia. Sinun onkin määritettävä nämä asetukset.
 
 - Toimittajayhteistyön käyttöönotto.
 - Määritä, näkeekö toimittaja hintatiedot.
@@ -71,7 +71,7 @@ Voit jakaa ostotilausten hintatiedot toimittajayhteistyöliittymässä valitsema
 
 ### <a name="sending-a-po-to-a-vendor"></a>Ostotilauksen lähettäminen toimittajalle
 
-Ostotilaukset laaditaan Finance and Operationsissa. Kun ostotilauksen tilana on **Hyväksytty**, se lähetetään toimittajalle valitsemalla **Ostotilaus**-sivulla **Lähetä vahvistettavaksi**. Ostotilauksen tila tulee sitten **Ulkoisessa tarkistuksessa**. Kun ostotilaus on lähetetty, toimittaja näkee sen **Tarkistettavat ostotilaukset** -sivulla toimittajayhteistyöliittymässä. Toimittaja voi hyväksyä ostotilauksen, hylätä sen tai ehdottaa siihen muutoksia. Toimittaja voi myös lisätä esimerkiksi ostotilaukseen tehtäviä muutoksia koskevia kommentteja. Jos haluat kiinnittää toimittajan huomion uuteen ostotilaukseen, voit myös lähettää ostotilauksen sähköpostitse tulostuksenhallintajärjestelmässä.
+Ostotilaukset laaditaan Supply Chain Managementissa. Kun ostotilauksen tilana on **Hyväksytty**, se lähetetään toimittajalle valitsemalla **Ostotilaus**-sivulla **Lähetä vahvistettavaksi**. Ostotilauksen tila tulee sitten **Ulkoisessa tarkistuksessa**. Kun ostotilaus on lähetetty, toimittaja näkee sen **Tarkistettavat ostotilaukset** -sivulla toimittajayhteistyöliittymässä. Toimittaja voi hyväksyä ostotilauksen, hylätä sen tai ehdottaa siihen muutoksia. Toimittaja voi myös lisätä esimerkiksi ostotilaukseen tehtäviä muutoksia koskevia kommentteja. Jos haluat kiinnittää toimittajan huomion uuteen ostotilaukseen, voit myös lähettää ostotilauksen sähköpostitse tulostuksenhallintajärjestelmässä.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Toimittajan tekemä ostotilauksen hyväksyntä ja vahvistaminen
 
@@ -92,13 +92,13 @@ Seuraavassa taulukossa on tyypillinen tietojen vaihto sen mukaan, miten toimitta
 </thead>
 <tbody>
 <tr class="even">
-<td>Toimittaja <strong>hyväksyy</strong> tilauksen ja Finance and Operations on määritetty vahvistamaan automaattisesti toimittajan hyväksymät ostotilaukset.</td>
+<td>Toimittaja <strong>hyväksyy</strong> tilauksen ja Supply Chain Management on määritetty vahvistamaan automaattisesti toimittajan hyväksymät ostotilaukset.</td>
 <td>Tilauksen tilaksi päivitetään <strong>Vahvistettu</strong> . Jos tilausta ei voi jostain syystä päivittää, toimittajan vastaukseksi kirjataan silti <strong>Hyväksytty</strong> mutta ostotilauksen tila on edelleen <strong>Ulkoisessa tarkistuksessa</strong>. 
 
 Toimittajalle lähetetyn ostotilauksen, jonka tila on <strong>Ulkoisessa tarkistuksessa</strong>, riveille päivitetään vahvistetut toimituspäivämäärät. Tämä päivitys käynnistää uuden version, joka tilaksi määritetään automaattisesti <strong>Vahvistettu</strong>. Kun ostotilaus on vahvistettu, se näkyy toimittajayhteistyöliittymässä.</td>
 </tr>
 <tr class="odd">
-<td>Toimittaja <strong>hyväksyy</strong> tilauksen, mutta Finance and Operationsia ei ole määritetty vahvistamaan automaattisesti toimittajan hyväksymiä ostotilauksia.</td>
+<td>Toimittaja <strong>hyväksyy</strong> tilauksen, mutta Supply Chain Managementia ei ole määritetty vahvistamaan automaattisesti toimittajan hyväksymiä ostotilauksia.</td>
 <td>Toimittajan vastaukseksi tallennetaan <strong>Hyväksytty</strong>, mutta ostotilaus jää <strong>Ulkoisessa tarkistuksessa</strong> -tilaan.
 
 Toimittajalle lähetetyn ostotilauksen, jonka tila on <strong>Ulkoisessa tarkistuksessa</strong>, riveille päivitetään vahvistetut toimituspäivämäärät. Tämä päivitys käynnistää uuden version, joka tilaksi määritetään automaattisesti <strong>Ulkoisessa tarkistuksessa</strong>. Voit sitten vahvistaa ostotilauksen manuaalisesti.</td>
@@ -180,14 +180,14 @@ Alla olevassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotila
 
 | Toiminto | Tila ja versio |
 |--------|--------------------|
-| Ensimmäinen ostotilauksen versio luodaan Finance and Operationsissa. | Tilana on **Hyväksytty**. |
+| Ensimmäinen ostotilauksen versio luodaan Supply Chain Managementissa. | Tilana on **Hyväksytty**. |
 | Ostotilaus lähetetään toimittajalle. | Versio rekisteröidään toimittajayhteistyöliittymään, ja tilaksi vaihtuu **Ulkoisessa tarkistuksessa**. |
 | Toimittaja lähettää **Hyväksytään muutosten kera** -vastauksen. | Tilana on edelleen **Ulkoisessa tarkistuksessa**. |
 | Teet joitakin toimittajan pyytämiä muutoksia. | Tilaksi muuttuu **Hyväksytty**. |
 | Lähetät ostotilauksen uuden version toimittajalle. | Uusi versio rekisteröidään toimittajayhteistyöliittymään, ja tilaksi vaihtuu **Ulkoisessa tarkistuksessa**. |
 | Toimittaja hyväksyy ostotilauksen uuden version. | Tila on edelleen **Ulkoisessa tarkistuksessa**, ellei toimittajatiliä ei ole määritetty siirtämään ostotilauksia automaattisesti **Vahvistettu**-tilaan, kun toimittaja hyväksyy ne. |
 
-Toimittajien ei tarvitse vahvistaa ostotilausta toimittajayhteistyöliittymässä. He voivat lähettää myös sähköpostiviestin tai ilmoittaa ostotilauksen hyväksymisestä muiden kanavien kautta. Voit sitten vahvistaa tilauksen manuaalisesti Finance and Operationsissa. Saat siinä tapauksessa varoituksen, joka ilmoittaa, että tilauta vahvistetaan, vaikka toimittaja ei ole vastannut siihen. Ostotilaus näkyy tämän jälkeen vahvistushistoriassa avoimena vahvistettuna tilauksena, johon ei ole vastattu. Toimittaja ei voi enää vahvistaa tai hylätä ostotilausta.
+Toimittajien ei tarvitse vahvistaa ostotilausta toimittajayhteistyöliittymässä. He voivat lähettää myös sähköpostiviestin tai ilmoittaa ostotilauksen hyväksymisestä muiden kanavien kautta. Voit sitten vahvistaa tilauksen manuaalisesti. Saat siinä tapauksessa varoituksen, joka ilmoittaa, että tilauta vahvistetaan, vaikka toimittaja ei ole vastannut siihen. Ostotilaus näkyy tämän jälkeen vahvistushistoriassa avoimena vahvistettuna tilauksena, johon ei ole vastattu. Toimittaja ei voi enää vahvistaa tai hylätä ostotilausta.
 
 > [!NOTE]
 > Muissa Finance and Operationsin prosesseissa käytettävissä oleva ostotilauksen versio on aina uusin versio, vaikka kyseistä versiota ei olisi vielä rekisteröity toimittajayhteistyöliittymässä.
@@ -200,7 +200,7 @@ Seuraavassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotilaus
 
 | Toimenpide | Tila ja versio |
 |--------|--------------------|
-| Ensimmäinen ostotilauksen versio luodaan Finance and Operationsissa. | Tilana on **Luonnos**. |
+| Ensimmäinen ostotilauksen versio luodaan Supply Chain Managementissa. | Tilana on **Luonnos**. |
 | Ostotilaus lähetetään hyväksyntäprosessiin. (Hyväksyntäprosessi on sisäinen prosessi, johon toimittaja ei osallistu.) | Tila vaihtuu **Luonnos**-tilasta **Tarkistuksessa**-tilan kautta **Hyväksyminen**-tilaan, jos ostotilausta ei hylätä hyväksymisprosessin aikana. Hyväksytty ostotilaus rekisteröidään versiona. | 
 | Ostotilaus lähetetään toimittajalle. | Versio rekisteröidään toimittajayhteistyöliittymään, ja tilaksi vaihtuu **Ulkoisessa tarkistuksessa**. |
 | Ostotilaus päivitetään tekemällä joitakin toimittajan pyytämiä muutoksia vastauksessa manuaalisesti tai **Käsittele ostotilauksen päivitys** -toiminnolla. | Tilaksi palautuu **Luonnos**. |
@@ -237,13 +237,13 @@ Tässä osassa käsitellään asiakkaiden ja toimittajien välistä viestintää
 
 ## <a name="public-sector-extensions"></a>Julkisen sektorin laajennukset
 
-Julkisen sektorin laajennetut toiminnot sallivat tarjouspyyntötapauksen lähettämisen toimittajille ja sen julkaisemisen. Kun tarjouspyyntö julkaistaan, kuka tahansa tietoja pyytävä voi tarkastella työtä, joka vastaa useimpia julkisen sektorin säädöksiä. Kaikki käytettävissä olevat työt näkyvät **Avaa julkaistut tarjouspyynnöt** -luettelosivulla. Peruutettuja, odottavia tai valittuja tarjouspyyntöjä voi tarkastella **Suljetut julkaistut tarjouspyynnöt** -luettelosivulla. Näitä asiakirjoja voi tarkastella myös Finance and Operationsin ulkopuolisessa sivustossa seuraavien tietoyksiköiden integraation ansiosta:
+Julkisen sektorin laajennetut toiminnot sallivat tarjouspyyntötapauksen lähettämisen toimittajille ja sen julkaisemisen. Kun tarjouspyyntö julkaistaan, kuka tahansa tietoja pyytävä voi tarkastella työtä, joka vastaa useimpia julkisen sektorin säädöksiä. Kaikki käytettävissä olevat työt näkyvät **Avaa julkaistut tarjouspyynnöt** -luettelosivulla. Peruutettuja, odottavia tai valittuja tarjouspyyntöjä voi tarkastella **Suljetut julkaistut tarjouspyynnöt** -luettelosivulla. Näitä asiakirjoja voi tarkastella myös Supply Chain Managementin ulkopuolisessa sivustossa seuraavien tietoyksiköiden integraation ansiosta:
 
 - Julkaistut tarjouspyynnöt
 - Julkaistut tarjouspyyntöjen rivit
 - Julkaistujen tarjouspyyntöjen otsikoiden liitteet
 
-Näiden yksiköiden kautta avoimet ja suljetut työt ovat sellaisten henkilöiden nähtävissä, jotka eivät ole Finance and Operationsin käyttäjiä mutta joilla on ulkoisen sivuston anonyymi käyttöoikeus. Tarjouspyyntöprosessin parametrit määrittävä käyttäjä voi lisäksi määrittää sähköpostimallin laajennetulla **Lähetä ja julkaise** -toiminnolla. Kun hankinta-asiantuntija luo sitten tarjouspyyntötapauksen, hänen on valittava sähköpostimalli, joka lähettää tarvittavat tiedot tarjouspyyntötapauksen toimittajille. 
+Näiden yksiköiden kautta avoimet ja suljetut työt ovat sellaisten henkilöiden nähtävissä, jotka eivät ole Supply Chain Managementin käyttäjiä, mutta joilla on ulkoisen sivuston anonyymi käyttöoikeus. Tarjouspyyntöprosessin parametrit määrittävä käyttäjä voi lisäksi määrittää sähköpostimallin laajennetulla **Lähetä ja julkaise** -toiminnolla. Kun hankinta-asiantuntija luo sitten tarjouspyyntötapauksen, hänen on valittava sähköpostimalli, joka lähettää tarvittavat tiedot tarjouspyyntötapauksen toimittajille. 
 
 Tarjouspyyntöprosessin parametrit määrittävä käyttäjä voi luoda useita sähköpostimalleja. Näissä sähköpostimalleissa voi olla sekä staattista tekstiä että seuraavat korvattavat tunnisteet. Tunnisteet korvataan tilannekohtaisilla arvoilla sähköpostia luotaessa.
 

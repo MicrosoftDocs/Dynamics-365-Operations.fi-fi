@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742630"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025050"
 ---
 # <a name="retail-peripherals"></a>Vähittäismyynnin oheislaitteet
 
@@ -116,9 +116,9 @@ Maksulaitteen tuki otetaan käyttöön maksuyhdistimen kautta. Maksulaitteet voi
 
 ### <a name="opos"></a>OPOS
 
-Jotta suurinta osaa laitteista voidaan käyttää Microsoft Dynamics 365 for Retailin kanssa, myyntipistetoimialan OLE-standardi on ensisijainen oheislaiteympäristö, jota tuetaan Microsoft Dynamics 365 for Retailissa. Myyntipisteen OLE-standardin tuottaja on National Retail Federation (NRF), joka tekee toimialakohtaisia tietoliikenneprotokollia vähittäismyynnin oheislaitteille. OPOS on myyntipisteen OLE-standardin laajalti hyväksytty toteutus. OPOS kehitettiin 1990-luvun puolivälissä, jonka jälkeen sitä on päivitetty useita kertoja. OPOS tarjoaa laiteohjainarkkitehtuurin, jonka avulla myyntipisteen laite on helppo integroida Windows-pohjaisiin myyntipistejärjestelmiin. OPOS-ohjausobjektit hoitavat viestinnän yhteensopivan laitteen ja myyntipisteohjelmiston välillä. OPOS-ohjaus sisältää seuraavat kaksi osaa:
+Jotta suurinta osaa laitteista voidaan käyttää Retailin kanssa, myyntipistetoimialan OLE-standardi on ensisijainen oheislaiteympäristö, jota tuetaan. Myyntipisteen OLE-standardin tuottaja on National Retail Federation (NRF), joka tekee toimialakohtaisia tietoliikenneprotokollia vähittäismyynnin oheislaitteille. OPOS on myyntipisteen OLE-standardin laajalti hyväksytty toteutus. OPOS kehitettiin 1990-luvun puolivälissä, jonka jälkeen sitä on päivitetty useita kertoja. OPOS tarjoaa laiteohjainarkkitehtuurin, jonka avulla myyntipisteen laite on helppo integroida Windows-pohjaisiin myyntipistejärjestelmiin. OPOS-ohjausobjektit hoitavat viestinnän yhteensopivan laitteen ja myyntipisteohjelmiston välillä. OPOS-ohjaus sisältää seuraavat kaksi osaa:
 
-- **Ohjausobjekti** – Laiteluokan (kuten rivinäytön) ohjausobjekti sisältää ohjelman liittymän. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) tarjoaa vakiojoukon OPOS-ohjausobjekteja, jota kutsutaan myös yhteisiksi ohjausobjekteiksi (CCO). Yhteisten ohjausobjektien avulla voidaan testata Microsoft Dynamics 365 for Retailin myyntipisteen komponentti. Testaamisen avulla voidaan varmistaa, että jos Microsoft Dynamics 365 for Retail tukee laiteluokkaa OPOS:n kautta, useita laitetyyppejä voidaan tukea, jos valmistaja tarjoaa OPOS:lle muodostetun palveluobjektin. Jokaista laitetyyppiä ei tarvitse testata eksplisiittisesti.
+- **Ohjausobjekti** – Laiteluokan (kuten rivinäytön) ohjausobjekti sisältää ohjelman liittymän. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) tarjoaa vakiojoukon OPOS-ohjausobjekteja, jota kutsutaan myös yhteisiksi ohjausobjekteiksi (CCO). Retailin myyntipisteen komponentti testataan yhteisten ohjausobjektien avulla. Testaamisen avulla voidaan varmistaa, että jos Retail tukee laiteluokkaa OPOS:n kautta, useita laitetyyppejä voidaan tukea, jos valmistaja tarjoaa OPOS:lle muodostetun palveluobjektin. Jokaista laitetyyppiä ei tarvitse testata eksplisiittisesti.
 - **Palveulobjekti** – Palveluobjekti mahdollistaa ohjausobjektin ja laitteen välisen yhteydenpidon. Laitteen valmistaja tarjoaa yleensä laitteen palveluobjektin. Joissakin tapauksissa palveluobjekti on kuitenkin ladattava valmistajan sivustosta. Saatavana voi olla esimerkiksi uudempi palveluobjekti. Valmistajan sivuston osoite löytyy laitteen dokumentaatiosta.
 
 [![Ohjausobjekti ja palveluobjekti](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -126,7 +126,7 @@ Jotta suurinta osaa laitteista voidaan käyttää Microsoft Dynamics 365 for Ret
 Myyntipisteen OLE:n OPOS-toteutuksen tuki auttaa varmistamaan, että laitteiden valmistajat ja myyntipisteen julkaisijat ottavat standardin käyttöön oikein. Myyntipisteiden järjestelmät ja tuetut laitteet voivat toimia yhdessä, vaikka niitä ei olisi aiemmin testattu yhdessä.
 
 > [!NOTE]
-> OPOS-tuki ei takaa sitä, että kaikkia OPOS-ohjaimen sisältäviä laitteita tuetaan. Microsoft Dynamics 365 for Retailin on ensin tuettava tätä laitetyyppiä tai -luokkaa OPOS:n kautta. Lisäksi palveluobjekteja ei ehkä aina ole päivitetty uusimman ohjausobjektiversion mukaisesti. Ota huomioon, että yleensä palveluobjektien laatu vaihtelee.
+> OPOS-tuki ei takaa sitä, että kaikkia OPOS-ohjaimen sisältäviä laitteita tuetaan. Retailin on ensin tuettava tätä laitetyyppiä tai -luokkaa OPOS:n kautta. Lisäksi palveluobjekteja ei ehkä aina ole päivitetty uusimman ohjausobjektiversion mukaisesti. Ota huomioon, että yleensä palveluobjektien laatu vaihtelee.
 
 ### <a name="windows"></a>Windows
 
@@ -136,7 +136,7 @@ Kuitin tulostaminen myyntipisteessä on optimoitu OPOS:ia varten. OPOS-tulostami
 - Laitteet, jotka on yhdistetty tulostimen kautta (ketjutettu), eivät ehkä toimi oikein Windows-ohjainten kanssa. Esimerkiksi kassa ei ehkä avaudu tai luettelotulostin ei tulosta sanoja odotetulla tavalla.
 - OPOS tukee myös laajempaa vähittäiskaupan kuittitulostimille määritettyä muuttujajoukkoa, kuten paperin leikkaamista ja luettelon tulostamista.
 
-Jos OPOS-ohjausobjektit ovat käytettävissä käyttämässäsi Windows-tulostimessa, tulostin todennäköisesti toimii oikein Microsoft Dynamics 365 for Retailin kanssa.
+Jos OPOS-ohjausobjektit ovat käytettävissä käyttämässäsi Windows-tulostimessa, tulostin todennäköisesti toimii oikein Retailin kanssa.
 
 ### <a name="universal-windows-platform"></a>Universaali Windows-ympäristö
 
@@ -192,7 +192,7 @@ Voit määrittää verkon oheislaitteiden IP-osoitteet kahdessa kohdassa. Jos Mo
 
 #### <a name="modern-pos-for-android"></a>Modern POS Androidille
 
-Dynamics 365 for Retail -versiosta 8.1.3 alkaen Modern POS Android -sovellus sisältää sisäisen IPC-laiteaseman. Tämä laiteasema tukee verkkotulostimien ja maksuyhdistimien välistä tiedonsiirtoa. Lisätietoja on [Android-tiedostojen Hybrid-sovellus -artikkelissa](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+Retail-versiosta 8.1.3 alkaen Modern POS Android -sovellus sisältää sisäisen IPC-laiteaseman. Tämä laiteasema tukee verkkotulostimien ja maksuyhdistimien välistä tiedonsiirtoa. Lisätietoja on [Android-tiedostojen Hybrid-sovellus -artikkelissa](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS ja Modern POS iOS:lle
 
@@ -526,7 +526,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille -sovellukseen
 Lisätietoja laiteprofiilien luomisesta on kohdassa [Kanava-asiakasohjelmien, kuten kassakoneiden ja laiteasemien, määrittäminen ja ylläpitäminen](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> Laiteaseman profiilia ei käytetä enää Microsoft Dynamics 365 for Retailin versiossa 1611. Laiteaseman profiilia varten määrittämäsi määritteet ovat nyt osa laiteasemaa.
+> Laiteaseman profiilia ei käytetä enää Retail-versiossa 1611. Laiteaseman profiilia varten määrittämäsi määritteet ovat nyt osa laiteasemaa.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS Windowsille ja IPC-laiteasema (sisäänrakennettu)
 

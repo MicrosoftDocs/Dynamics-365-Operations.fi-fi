@@ -1,6 +1,6 @@
 ---
 title: Jaetun tilausten hallinnan (JTH) kustannusten määrittäminen
-description: Tässä aiheessa kuvataan Microsoft Dynamics 365 for Retail -sovelluksen jaetun tilausten hallinnan (JTH) toimintojen kustannusten määrittämistä.
+description: Tässä aiheessa kuvataan Dynamics 365 Retail -sovelluksen jaetun tilausten hallinnan (JTH) toimintojen kustannusten määrittämistä.
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80e7a033467c3d94d55f06daa05f99bd27e19a29
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: b5e3e1997f3d3b61b7b3c7486f5531e386293537
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606776"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019436"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>Jaetun tilausten hallinnan (JTH) kustannusten määrittäminen
 
@@ -31,7 +31,7 @@ ms.locfileid: "1606776"
 
 Organisaatiot käyttävät useita kustannuskomponentteja tilauksen täyttämisen optimaalisen sijainnin määrittämisessä. Kustannuskomponentteja ovat esimerkiksi lähetys-, käsittely- ja pakkauskustannukset. Näiden kustannusten yhteenlaskettu kustannus määrittää tilauksen täyttämissijainnin.
 
-Kun Microsoft Dynamics 365 for Retail -sovelluksen jaetun tilausten hallinnan (JTH) ensimmäinen iteraatio optimoi tilausten määrityksen täyttämissijainteihin, se otetaan huomioon vain etäisyytenä. Vaikka etäisyys voi korreloida kustannuksen kanssa, se ei ole sama kuin kustannus. Esimerkiksi lähetystapa yön yli maksaa enemmän kuin kolmen tai seitsemän päivän lähetys samalla etäisyydellä.
+Kun Dynamics 365 Retail -sovelluksen jaetun tilausten hallinnan (JTH) ensimmäinen iteraatio optimoi tilausten määrityksen täyttämissijainteihin, se otetaan huomioon vain etäisyytenä. Vaikka etäisyys voi korreloida kustannuksen kanssa, se ei ole sama kuin kustannus. Esimerkiksi lähetystapa yön yli maksaa enemmän kuin kolmen tai seitsemän päivän lähetys samalla etäisyydellä.
 
 Kustannusten määritystoiminnon avulla jälleenmyyjät voivat määrittää lisäkustannuskomponentteja, jotka lasketaan ja otetaan huomioon tilausrivien toteuttamisessa käytettävän optimaalisen sijainnin määrittämisessä.
 

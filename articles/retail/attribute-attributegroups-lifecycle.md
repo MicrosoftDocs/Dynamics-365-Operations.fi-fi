@@ -19,18 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c642e4f1b29ac21b6736e770c84f343e9265961d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606892"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023633"
 ---
 # <a name="attributes-and-attribute-groups"></a>Määritteet ja määriteryhmät
 
 [!include [banner](includes/banner.md)]
 
-*Määritteiden* avulla voidaan täydentää tuotteen ja sen ominaisuuksien kuvausta käyttäjän määrittämien kenttien avulla. (Näitä kenttiä ovat esimerkiksi **Muistin koko**, **Kiintolevyn kapasiteetti** ja **Energy Star -merkinnän mukainen**). Microsoft Dynamics 365 for Finance and Operationsissa määritteitä voidaan liittää erilaisiin vähittäismyynnin yksiköihin, kuten tuotekategorioihin ja vähittäismyyntikanaviin, ja niille voidaan asettaa oletusarvoja. Tuotteet perivät sitten määritteet ja oletusarvot, kun ne liitetään tuoteluokkiin tai vähittäismyyntikanaviin. Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, vähittäismyyntikanavan tasolla tai vähittäismyyntiluettelossa.
+*Määritteiden* avulla voidaan täydentää tuotteen ja sen ominaisuuksien kuvausta käyttäjän määrittämien kenttien avulla. (Näitä kenttiä ovat esimerkiksi **Muistin koko**, **Kiintolevyn kapasiteetti** ja **Energy Star -merkinnän mukainen**). Määritteitä voidaan liittää erilaisiin Retail-yksiköihin, kuten tuoteluokkiin ja vähittäismyyntikanaviin, ja niille voidaan määrittää oletusarvoja. Tuotteet perivät sitten määritteet ja oletusarvot, kun ne liitetään tuoteluokkiin tai vähittäismyyntikanaviin. Oletusarvot voidaan ohittaa yksittäisen tuotteen tasolla, vähittäismyyntikanavan tasolla tai vähittäismyyntiluettelossa.
+
 
 Tavallisella televisiotuotteella voi olla esimerkiksi seuraavat määritteet.
 
@@ -53,7 +54,7 @@ Tavallisella televisiotuotteella voi olla esimerkiksi seuraavat määritteet.
 
 ## <a name="attributes-and-attribute-types"></a>Määritteet ja määritetyypit
 
-Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkälaista tietoa voi lisätä tiettyyn määritteeseen. Finance and Operations tukee tällä hetkellä seuraavia määritetyyppejä:
+Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkälaista tietoa voi lisätä tiettyyn määritteeseen. Seuraavia määritetyyppejä tuetaan:
 
 - **Valuutta** – Tämä tyyppi tukee valuutta-arvoja. Se voidaan sitoa (eli se voi tukea arvoaluetta) tai se voidaan jättää avoimeksi.
 - **DateTime** – Tämä tyyppi tukee päivämäärä- ja aika-arvoja. Se voidaan sitoa tai jättää avoimeksi.
@@ -63,9 +64,9 @@ Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkäla
 - **Totuusarvo** – Tämä tyyppi tukee binaariarvoa (**tosi** tai **epätosi**).
 - **Viite** – Tämä tyyppi viittaa muihin määritteisiin.
 
-### <a name="set-up-attribute-types-in-finance-and-operations"></a>Määritetyyppien määrittäminen Finance and Operationsissa
+### <a name="set-up-attribute-types"></a>Määritä määritetyypit
 
-1. Kirjaudu Finance and Operations -tausta-asiakasohjelmaan vähittäismyynnin myynninedistämispäällikkönä.
+1. Kirjaudu tausta-asiakasohjelmaan vähittäismyynnin myynninedistämispäällikkönä.
 2. Valitse **Tuotetietojen hallinta** &gt; **Asetukset** &gt; **Luokat ja määritteet** &gt; **Määritetyypit**.
 3. Luo kaksi **Teksti**-tyyppistä määritetyyppiä, valitse **Kiinteä luettelo** -asetukseksi **Kyllä** ja lisää sitten arvoluettelo:
 
@@ -74,7 +75,7 @@ Määritteet perustuvat *määritetyyppeihin*. Määritetyyppi osoittaa minkäla
 
 ![Määritetyypit](media/AttributeType.png)
 
-### <a name="set-up-an-attribute-in-finance-and-operations"></a>Määritteen määrittäminen Finance and Operationsissa
+### <a name="set-up-an-attribute"></a>Määritteen määrittäminen
 
 1. Kirjaudu tausta-asiakasohjelmaan vähittäismyynnin myynninedistämispäällikkönä.
 2. Valitse **Tuotetietojen hallinta** &gt; **Asetukset** &gt; **Luokat ja määritteet** &gt; **Määritteet**.
@@ -101,13 +102,13 @@ Muut **Määritteet**-sivun määritteen metatietoasetukset:
 - Ohita kirjainkoko ja muoto
 - Täysi vastaavuus
 
-Nämä asetukset oli tarkoitettu alun perin verkkokaupan hakutoimintojen parantamista varten. Vaikka verkkokauppa ei ole heti käytettävissä Finance and Operationsissa, se sisältää eCommerce Publishing Software Development Kitin (SDK). Asiakkaat voivat viedä tuotteita tämän SDK:n avulla valitsemaansa hakuindeksiin. Vaikka tuotetiedot tuodaan, asiakkaiden on silti voitava erottaa toisistaan haettavissa olevat tiedot, tiedot, joissa voidaan tehdä hakuja ja niin edelleen. Tällä tavoin voidaan luoda optimaalinen indeksi, jolla voi varmistaa, että vain *heidän mielestään* indeksoitavat määritteet indeksoidaan.
+Nämä asetukset oli tarkoitettu alun perin verkkokaupan hakutoimintojen parantamista varten. Vaikka verkkokauppa ei ole heti käytettävissä Retailissa, se sisältää eCommerce Publishing Software Development Kitin (SDK). Asiakkaat voivat viedä tuotteita tämän SDK:n avulla valitsemaansa hakuindeksiin. Vaikka tuotetiedot tuodaan, asiakkaiden on silti voitava erottaa toisistaan haettavissa olevat tiedot, tiedot, joissa voidaan tehdä hakuja ja niin edelleen. Tällä tavoin voidaan luoda optimaalinen indeksi, jolla voi varmistaa, että vain *heidän mielestään* indeksoitavat määritteet indeksoidaan.
 
 Lisätietoja edellä mainittujen asetusten tarkoituksesta on kohdassa [SharePoint Server 2013 -hakumallin yleiskatsaus](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Määritteiden suodatusasetukset
 
-Voit määrittää määritteiden suodatusasetuksissa, miten määritteiden suodattimet näytetään vähittäismyynnin myyntipisteessä. Voit käyttää määritteen suodatusasetuksia valitsemalla Finance and Operationsin **Määritteet**-sivulla ensin määritteen ja sitten toimintoruudussa **Suodatusasetukset**.
+Voit määrittää määritteiden suodatusasetuksissa, miten määritteiden suodattimet näytetään vähittäismyynnin myyntipisteessä. Voit käyttää määritteen suodatusasetuksia valitsemalla **Määritteet**-sivulla ensin määritteen ja sitten toimintoruudussa **Suodatusasetukset**.
 
 **Suodatuksen näyttöasetukset** -sivulla on seuraavat kentät:
 
@@ -233,7 +234,7 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
     - Kanavan tuotemääritteet
 
     > [!NOTE]
-    > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
+    > Jos jaettu tuotemedia ja jaettuja tuotemääritteitä luodaan, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
 
 ![Luettelon tuotemääriteryhmät](media/CatalogProdAttrValues.png)
 
@@ -255,4 +256,4 @@ Yksittäisten tuotteiden määritteiden oletusarvot voidaan ohittaa tuotetasolla
     - Kanavan tuotemääritteet
 
     > [!NOTE]
-    > Jos Finance and Operationsissa luodaan jaettu tuotemedia ja jaettuja tuotemääritteitä, niitä käytetään kaikkiin vähittäismyyntituotteisiin.
+    > Jos jaettu tuotemedia ja jaettuja tuotemääritteitä luodaan, niitä käytetään kaikkiin vähittäismyyntituotteisiin.

@@ -1,6 +1,6 @@
 ---
-title: Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
-description: Tässä ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään synkronoimaan myyntilaskujen otsikot ja rivit suodaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Salesiin.
+title: Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin
+description: Tässä ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään synkronoimaan myyntilaskujen otsikot ja rivit suoraan Dynamics 365 Supply Chain Managementista Dynamics 365 Salesiin.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -19,22 +19,22 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70fc842463254b02d812447f93970a9da676057d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 94442eb11aac3faf8a412944617686853a12128d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552927"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251658"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään synkronoimaan myyntilaskujen otsikot ja rivit suodaan Microsoft Dynamics 365 for Finance and Operationsista Microsoft Dynamics 365 for Salesiin.
+Tässä ohjeaiheessa käsitellään malleja ja niiden taustalla olevia tehtäviä, joita käytetään synkronoimaan myyntilaskujen otsikot ja rivit suoraan Dynamics 365 Supply Chain Managementista Dynamics 365 Salesiin.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Prospektista käteiseksi -ratkaisun tiedonkulku
 
-Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Finance and Operations and Sales -esiintymien tietojen synkronoinnissa. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Finance and Operationsin ja Salesin välillä. Seuraavassa kuvassa kerrotaan, miten tiedot synkronoidaan Finance and Operations- ja Sales-sovelluksen välillä.
+Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Supply Chain Managementin and Salesin esiintymien tietojen synkronoinnissa. Tietojen integrointitoiminnon prospektista käteiseksi -mallit mahdollistavat tilien, yhteyshenkilöiden, tuotteiden, myyntitarjousten, myyntitilausten ja myyntilaskujen tietojen kulun Finance and Operationsin ja Salesin välillä. Seuraava kuva näyttää, miten tiedot synkronoidaan Supply Chain Managementin ja Salesin välillä.
 
 [![Prospektista käteiseksi -ratkaisun tiedonkulku](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -52,30 +52,30 @@ Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoimaan m
 
 Seuraavat synkronointitehtävät tarvitaan, ennen kuin myyntilaskujen otsikot ja rivit voidaan synkronoida:
 
-- Tuotteet (Fin and Opsista Salesiin) - suora
-- Tilit (Salesista Fin and Opsiin) - suora (jos käytössä)
-- Yhteyshenkilöt (Salesista Fin and Opsiin) - suora (jos käytössä)
-- Myyntitilauksen otsikko ja rivit (Fin and Opsista Salesiin) - suora
+- Tuotteet (Supply Chain Managementista Salesiin) - suora
+- Tilit (Salesista Supply Chain Managementiin) - Suora (jos käytössä)
+- Yhteyshenkilöt (Salesista Supply Chain Managementiin) - Suora (jos käytössä)
+- Myyntitilauksen otsikko ja rivit (Supply Chain Managementista Salesiin) - Suora
 
 ## <a name="entity-set"></a>Yksikköjoukko
 
-| Finance and Operations                               | Myynti          |
+| Toimitusketjun hallinta                              | Myynti          |
 |------------------------------------------------------|----------------|
 | Ulkoisesti ylläpidettyjen asiakkaiden myyntilaskujen otsikot | Laskut       |
 | Ulkoisesti ylläpidettyjen asiakkaiden myyntilaskun rivit   | InvoiceDetails |
 
 ## <a name="entity-flow"></a>Yksikön työnkulku
 
-Myyntilaskut luodaan Finance and Operationsissa ja synkronoidaan Salesiin.
+Myyntilaskut luodaan Supply Chain Managementissa ja synkronoidaan Salesiin.
 
 > [!NOTE]
-> Tällä hetkellä myyntilaskun otsikon kuluihin liittyviä veroja ei synkronoida Finance and Operationsista Salesiin. Sales ei tue verotietoja otsikkotasolla. Sen sijaan rivitason kuluihin liittyvä vero sisällytetään synkronointiin.
+> Tällä hetkellä myyntilaskun otsikon kuluihin liittyviä veroja ei synkronoida Supply Chain Managementista Salesiin. Sales ei tue verotietoja otsikkotasolla. Sen sijaan rivitason kuluihin liittyvä vero sisällytetään synkronointiin.
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Salesin ratkaisu prospektista käteiseksi
 
 - **Laskun numero** -kenttä on lisätty **Lasku**-yksikköön. Se näkyy sivulla.
-- **Myyntitilaus**-sivun **Luo lasku** -painike on piilotettu, koska laskut luodaan Finance and Operationsissa, josta ne synkronoidaan Salesiin. **Lasku**-sivua ei voi muokata, sillä laskut synkronoidaan Finance and Operationsista.
-- **Myyntitilauksen tila** -arvo muuttuu automaattisesti **Laskutettu**-tilaksi, kun liittyvä lasku on synkronoitu Finance and Operationsista Salesiin. Lisäksi laskun omistajaksi määritetään sen myyntitilauksen omistaja, josta lasku on muodostettu. Tämän vuoksi myyntitilauksen omistaja voi tarkastella laskua.
+- **Myyntitilaus**-sivun **Luo lasku** -painike on piilotettu, koska laskut luodaan Supply Chain Managementissa, josta ne synkronoidaan Salesiin. **Lasku**-sivua ei voi muokata, sillä laskut synkronoidaan Supply Chain Managementista.
+- **Myyntitilauksen tila** -arvo muuttuu automaattisesti **Laskutettu**-tilaksi, kun liittyvä lasku on synkronoitu Supply Chain Managementista Salesiin. Lisäksi laskun omistajaksi määritetään sen myyntitilauksen omistaja, josta lasku on muodostettu. Tämän vuoksi myyntitilauksen omistaja voi tarkastella laskua.
 
 ## <a name="preconditions-and-mapping-setup"></a>Edellytykset ja yhdistämismääritykset
 
@@ -103,7 +103,7 @@ Siirry kohtaan **Asetukset** > **Hallinto** > **Järjestelmäasetukset** > **Sal
 #### <a name="salesinvoiceline-task"></a>SalesInvoiceLine -tehtävä
 
 - Varmista, että **Mittayksikkö**-kohdalla on pakollinen yhdistämismääritys.
-- Varmista, että Finance and Operationsin **SalesUnitSymbol**-kohdassa on vaadittu arvomääritys.
+- Varmista, että Supply Chain Managementin **SalesUnitSymbol**-kohdassa on vaadittu arvomääritys.
 
     **SalesUnitSymbol**-kohdan malliarvoksi, jolla on arvomääritys, on määritetty **Quantity\_UOM**.
 
@@ -115,7 +115,7 @@ Siirry kohtaan **Asetukset** > **Hallinto** > **Järjestelmäasetukset** > **Sal
 Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä. 
 
 > [!NOTE]
-> Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Finance and Operationsiin.
+> Yhdistämismääritys osoittaa, minkä kentän tiedot synkronoidaan Salesista Supply Chain Managementiin.
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
@@ -131,16 +131,10 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 [Prospektista käteiseksi](prospect-to-cash.md)
 
-[Sales-asiakkaiden synkronointi suoraan Finance and Operations -asiakkaisiin](accounts-template-mapping-direct.md)
+[Tilien synkronointi suoraan Salesin tuotteista Supply Chain Managementin asiakkaisiin](accounts-template-mapping-direct.md)
 
-[Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin](products-template-mapping-direct.md)
+[Supply Chain Managementin tuotteiden synkronointi suoraan Salesin tuotteisiin](products-template-mapping-direct.md)
 
-[Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin](contacts-template-mapping-direct.md)
+[Salesin yhteyshenkilöiden synkronointi suoraan Supply Chain Managementin yhteyshenkilöihin tai asiakkaisiin](contacts-template-mapping-direct.md)
 
-[Myyntitilauksien otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin](sales-order-template-mapping-direct-two-ways.md)
-
-
-
-
-
-
+[Myyntitilausten otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin](sales-order-template-mapping-direct-two-ways.md)

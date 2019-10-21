@@ -1,6 +1,6 @@
 ---
 title: Vähittäismyyntikanavien kirjanpidon integroinnin yleiskatsaus
-description: Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 for Retailin kirjanpidoin integrointitoiminnoista.
+description: Tämä ohjeaihe on yleiskatsaus Dynamics 365 Retailin kirjanpidoin integrointitoiminnoista.
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516235"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025404"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Vähittäismyyntikanavien kirjanpidon integroinnin yleiskatsaus
 
@@ -30,13 +30,13 @@ ms.locfileid: "1516235"
 
 ## <a name="introduction"></a>Johdanto
 
-Tämä ohjeaihe on yleiskatsaus Microsoft Dynamics 365 for Retailin kirjanpidoin integrointitoiminnoista. Kirjanpidon integrointi sisältää sellaisten erilaisten kirjanpidon laitteiden ja palvelujen integroinnin, joilla kirjanpidon rekisteröinti voidaan ottaa vähittäismyynnissä käyttöön paikallisten, vähittäismyyntialan veropetoksia estävän kirjanpitolainsäädännön mukaisesti. Kirjanpidon integraatiota voidaan esimerkiksi seuraavissa tyypillisissä skenaarioissa:
+Tämä ohjeaihe on yleiskatsaus Dynamics 365 Retailin kirjanpidoin integrointitoiminnoista. Kirjanpidon integrointi sisältää sellaisten erilaisten kirjanpidon laitteiden ja palvelujen integroinnin, joilla kirjanpidon rekisteröinti voidaan ottaa vähittäismyynnissä käyttöön paikallisten, vähittäismyyntialan veropetoksia estävän kirjanpitolainsäädännön mukaisesti. Kirjanpidon integraatiota voidaan esimerkiksi seuraavissa tyypillisissä skenaarioissa:
 
 - Myynnin rekisteröinti kirjanpidon laitteessa, joka on liitetty Retail POS:ään, kuten kuittitulostimeen, ja verokuitin tulostaminen asiakkaalle.
 - Retail POS:ssä suoritettuun myyntiin ja palautuksiin liittyvien tietojen lähettäminen turvallisesti ulkoiseen, veroviranomaisen ylläpitämään verkkopalveluun.
 - Myynnin tapahtumatietojen muuttamattomuuden takaaminen digitaalisella allekirjoituksella.
 
-Retailin kirjanpidon integrointitoiminto on kehikko, joka muodostaa yhteisen ratkaisun Retail POS:n sekä kirjanpidoin laitteiden ja palvelujen kehittämiselle ja mukauttamiselle edelleen. Toiminto sisältää myös kirjanpidon integrointimalleja, jotka tukevat tiettyjen maiden tai alueiden vähittäismyynnin perusskenaariota ja joita voi käyttää tiettyjen kirjanpidon laitteiden tai palvelujen kanssa. Kirjanpidon integrointimalli koostuu useista Retail-osien laajennuksista, ja se sisältyy Retail SDK:hon. Lisätietoja Retail SDK:ssa olevista kirjanpidon integrointimalleista on kohdassa [Retail SDK:n kirjanpidon integrointimallit](#fiscal-integration-samples-in-the-retail-sdk). Lisätietoja Retail SDK:n asentamisesta ja käytöstä on kohdassa [Retail SDK:n yleiskatsaus](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Kirjanpidon integrointitoiminto on kehikko, joka muodostaa yhteisen ratkaisun Retail POS:n sekä kirjanpidoin laitteiden ja palvelujen kehittämiselle ja mukauttamiselle edelleen. Toiminto sisältää myös kirjanpidon integrointimalleja, jotka tukevat tiettyjen maiden tai alueiden vähittäismyynnin perusskenaariota ja joita voi käyttää tiettyjen kirjanpidon laitteiden tai palvelujen kanssa. Kirjanpidon integrointimalli koostuu useista Retail-osien laajennuksista, ja se sisältyy SDK:hon. Lisätietoja kirjanpidon integroinnin esimerkeistä on kohdassa [Kirjanpidon integroinnin esimerkit – Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Lisätietoja Retail SDK:n asentamisesta ja käytöstä on kohdassa [Retail SDK:n yleiskatsaus](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Jos haluat tukea skenaarioita, joita kirjanpidon integrointimalli ei tue, integroida Retail POS:n muiden kirjanpidon laitteiden ja palvelujen kanssa tai ottaa huomioon muiden maiden tai alueiden vaatimukset, sinun on joko laajennettava nykyistä kirjanpidon integrointimallia tai luotava uusi malli käyttämällä nykyistä mallia esimerkkinä.
 
@@ -132,7 +132,7 @@ Kirjanpidon integrointitoiminto tukee tiettyä integroidun kirjanpidon laitetta 
 
 ## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Retail SDK:n kirjanpidon integrointimallit
 
-Seuraavat kirjanpidon integrointimallit ovat käytettävissä Retailin kanssa julkaistavassa Retail SDK:ssa:
+Seuraavat kirjanpidon integrointimallit ovat käytettävissä Retail SDK:ssa:
 
 - [Näyte verotusta varten olevan tulostimen integroinnista Italiassa](emea-ita-fpi-sample.md)
 - [Näyte verotusta varten olevan tulostimen integroinnista Puolassa](emea-pol-fpi-sample.md)
