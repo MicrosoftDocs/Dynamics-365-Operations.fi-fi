@@ -40,8 +40,10 @@
               href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/finance/toc.json
             - name: Käyttöönotossa huomioitavaa
               items:
-                - name: Käyttöönoton vaihtoehdot
+                - name: Käyttöönoton asetukset
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/finance/toc.json
+                - name: Pilvipalvelun ja paikallisten ominaisuuksien vertailu
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/finance/toc.json
                 - name: Pilvikäyttöönotto
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Pilvikäyttöönottojen järjestelmävaatimukset
@@ -60,16 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Uudet ja muuttuneet ominaisuudet
               items:
-                - name: Uudet ja muuttuneet ominaisuudet – aloitussivu
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations -sovellusten version 10.0.6 (marraskuu 2019) esiversiotoiminnot
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations -sovellukset 10.0.5 (lokakuu 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations 10.0.4 (heinäkuu 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/finance/toc.json
-                - name: 'Finance and Operations, Enterprise Edition 7.3'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
+                - name: Finance-sovelluksen version 10.0.7 esikatselutoiminnot (tammikuu 2020)
+                  href: get-started/whats-new-changed-10-0-7.md
+                - name: Finance-sovelluksen versio 10.0.6 (marraskuu 2019)
+                  href: get-started/whats-new-finance-10-0-6.md
+                - name: Edellisten versioiden uudet ja muuttuneet ominaisuudet
+                  items:
+                    - name: Finance and Operationsin aloitussivun uudet ominaisuudet ja muutokset
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+                    - name: Finance and Operations -sovellukset 10.0.5 (lokakuu 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/finance/toc.json
+                    - name: Finance and Operations 10.0.4 (heinäkuu 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Finance and Operations, Enterprise Edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
                 - name: 'AX 2012 -ominaisuudet, joita on lykätty'
@@ -194,7 +200,7 @@
               items:
                 - name: Ostoreskontran määrittäminen – yleiskatsaus
                   href: accounts-payable/accounts-payable-overview.md
-                - name: Laskun keskeiset tiedot ostoreskontraan toimittajalaskun avulla
+                - name: Laskun keskeiset tiedot ostoreskontraan toimittajan laskun avulla
                   href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
                 - name: Laskun keskeiset tiedot ostoreskontraan hyväksymiskirjauskansion avulla
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
@@ -306,6 +312,12 @@
               href: accounts-receivable/tasks/review-collections-information.md
             - name: Tuottokirjausten yleiskatsaus
               href: accounts-receivable/revenue-recognition-overview.md
+            - name: Tuottokirjauksen määritys
+              href: accounts-receivable/revenue-recognition-setup.md
+            - name: Siirretyn tuoton kirjaus
+              href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
+            - name: Tuottokirjaus myyntitilauksiin
+              href: accounts-receivable/revenue-recognition-so-basics.md
             - name: Toistuvien laskujen määrittäminen ja käsittely
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Tekstimuotoisten laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit
@@ -736,6 +748,8 @@
                   href: general-ledger/posting-definitions.md
                 - name: Kirjausmääritysesimerkkejä
                   href: general-ledger/example-posting-definitions.md
+                - name: Oletusarvoisten kuvausten määrittäminen automaattiselle kirjaukselle
+                  href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
                 - name: Kirjanpitotilin saldot
                   href: general-ledger/general-ledger-account-balances.md
                 - name: Määritä taloushallinnon dimensiot
@@ -794,6 +808,8 @@
                   href: general-ledger/general-journal-processing.md
                 - name: Kausittaisten kirjauskansioiden kirjaaminen
                   href: general-ledger/tasks/post-periodic-journals.md
+                - name: Käänteinen kirjauskansion kirjaus
+                  href: general-ledger/reverse-journal-posting.md
                 - name: Käsittele kirjanpidon kohdistuskirjauskansio
                   href: general-ledger/tasks/process-ledger-allocation-journal.md
                 - name: Konsernin sisäisen kirjanpidon määritys
@@ -856,8 +872,12 @@
                   href: general-ledger/sales-tax-calculation-methods-origin-field.md
                 - name: Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
                   href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
-                - name: Toimittajalaskun arvonlisäveron laskeminen ja täsmäytys
+                - name: Yleisten kirjauskansioiden rivien arvonlisäveron laskeminen
+                  href: general-ledger/sales-tax-calculation-on-general-journal.md
+                - name: Toimittajan laskun arvonlisäveron laskeminen ja täsmäytys
                   href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                - name: Ota käyttöön viivästetty verolaskelma kirjauskansiossa
+                  href: general-ledger/enable-delayed-tax-calculation.md
                 - name: Arvonlisäveromaksun luominen
                   href: general-ledger/tasks/create-sales-tax-payment.md
                 - name: Luo arvonlisäverotapahtumia asiakirjoihin
@@ -940,6 +960,10 @@
               href: public-sector/plan-public-sector-functionality.md
             - name: Maksuraporttien kansi- ja allekirjoitussivujen luominen julkiselle sektorille
               href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
+            - name: Ennusteen toimen jakelu
+              href: public-sector/forecast-positions.md
+            - name: Julkisen sektorin ennusteiden toimiraportit
+              href: public-sector/forecast-position-reports.md
             - name: Julkisen sektorin ostoreskontra
               items:
                 - name: Julkisen sektorin ostoreskontra – yleiskatsaus
@@ -1016,6 +1040,8 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Julkisen sektorin lisäkirjanpitoviennin luominen
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+                - name: Käteisvarojen hallinnan rajojen käyttäminen
+                  href: public-sector/cash-control.md
                 - name: Julkisen sektorin tilinpäätöksen käsittely
                   href: public-sector/year-end-processing-public-sector.md
                 - name: Julkisen sektorin johdetut taloushallinnon hierarkiat
@@ -1214,6 +1240,8 @@
                   href: localizations/latam-bra-sped-ecd.md
                 - name: SPED-Reinf-veroilmoitus
                   href: localizations/latam-bra-sped-reinf.md
+                - name: SPED - tilivuoden päätös 13/2019 RJ
+                  href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: Yritysten parametrit
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: Yrityksen parametrien määrittäminen
@@ -1863,8 +1891,12 @@
                   href: localizations/emea-ita-packing-slip.md
                 - name: Arvonlisäverokirjat
                   href: localizations/emea-ita-fiscal-books.md
+                - name: 'ALV:n hallinta ja raportointi verotusajankohdan päivämäärän mukaan (ALV-rekisterin päivämäärä)'
+                  href: localizations/emea-ita-vat-management.md
                 - name: Julkishallinnon kirjoittamien laskujen jaettu maksu
                   href: localizations/emea-ita-split-payment-invoices-issued-public-administration.md
+                - name: Hyvityslaskutus (Italia)
+                  href: localizations/emea-ita-credit-invoicing.md
                 - name: Ennakonpidätys
                   href: localizations/emea-ita-withholding-tax.md
             - name: Japani
@@ -2121,7 +2153,7 @@
                   href: localizations/netherlands.md
                 - name: Sähköiset veroilmoitukset (EVAT)
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
-                - name: Semansys XBRL -integraatio
+                - name: Semansys XBRL -integrointi
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
             - name: Norja
               items:
@@ -2221,9 +2253,11 @@
                       href: localizations/rus-VAT-declaration.md
                     - name: 'Myyntikirjanpito, ostokirjanpito ja laskutuskirjauskansiot'
                       href: localizations/rus-sales-books-purchase-books.md
+                    - name: Ennakkomaksujen hallinta
+                      href: localizations/rus-prepayments-management.md
                 - name: Käyttöomaisuuserät
                   items:
-                    - name: Käyttöomaisuuden hallinta
+                    - name: Käyttöomaisuuserien hallinta
                       href: localizations/rus-fixed-assets.md
                     - name: Käyttöomaisuuserien määrittäminen
                       href: localizations/rus-set-up-fixed-assets.md
@@ -2277,6 +2311,8 @@
                       href: ../supply-chain/localizations/rus-goods-transit-postponed.md
                     - name: Kassavirran hallinta
                       href: localizations/rus-cash-flow.md
+                    - name: Muiden kulujen kohdistaminen suhteessa painoon ja tilavuuteen
+                      href: localizations/rus-miscellaneous-charges.md
                 - name: Raportointi
                   items:
                     - name: Taloushallinnon raportointi
@@ -2879,7 +2915,7 @@
               items:
                 - name: Upotettu Power BI työtiloissa
                   href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/finance/toc.json
-                - name: Power BI Embedded -integraatio
+                - name: Power BI Embedded -integrointi
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/finance/toc.json
                 - name: Upotettujen raporttien mukauttaminen analyysityötiloissa
                   href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/finance/toc.json

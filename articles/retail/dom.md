@@ -3,7 +3,7 @@ title: Jaettu tilausten hallinta (JTH)
 description: Tässä aiheessa kuvataan Dynamics 365 Retail -ohjelman jaetun tilausten hallinnan (JTH) toimintoja.
 author: josaw1
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fee0d9257af86a734a60b469db3a006435f1d3d2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
+ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023416"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578481"
 ---
 # <a name="distributed-order-management-dom"></a>Jaettu tilausten hallinta (JTH)
 
@@ -94,6 +94,7 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
         - **Täytetäänkö osittaiset rivit?** – Jos tämä asetus on **Kyllä**, JTH voi täyttää vain osan tilausrivien määristä. Osittainen täyttäminen saavutetaan jakamalla tilausrivi.
         - **Täytä tilaus vain yhdestä sijainnista** – Jos tämä asetus on **Kyllä**, JTH varmistaa, että tilauksen kaikki rivit täytetään yhdestä sijainnista.
 
+
         Seuraavassa taulukossa kuvataan toimintaa, kun määritetään näiden parametrien yhdistelmiä.
 
         |      | Täytä osittaistilaukset | Täytä osittaiset rivit | Täytä tilaus vain yhdestä sijainnista | Kuvaus |
@@ -108,21 +109,24 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
         | 8    | Kyllä                    | Ei                    | Ei                                   | Tilauksesta voidaan täyttää vain muutama rivi, mutta yksittäisiä rivejä ei voida toteuttaa vain osittain, ja eri tilausrivit voidaan täyttää useammasta kuin yhdestä sijainnista JTH-suoritusesiintymän yhteydessä. |
         | 9\*  | Ei                     | Ei käytettävissä        | Kyllä                                  | Kaikki tilausrivit on täytettävä ja ne on täytettävä vain yhdestä sijainnista. |
 
-        \*Jos **Täytä osittaistilaukset** -asetukseksi määritetään **Ei**, **Täytä osittaiset rivit** -asetuksen arvona pidetään aina arvoa **Ei** riippumatta siitä, mikä arvo asetukseen on määritetty.
+        \* Jos **Täytä osittaistilaukset** -asetukseksi määritetään **Ei**, **Täytä osittaiset rivit** -asetuksen arvona on aina arvo **Ei** riippumatta siitä, mikä arvo asetukseen on määritetty.
 
-    - **Offline-täyttämisen sijaintisääntö** – Tämän säännön avulla organisaatiot voivat määrittää sijainnin tai sijaintiryhmän offline-sijainniksi tai JTH:n ulkopuolelle, jotta tilauksia ei voi määrittää täytettäväksi kyseisestä sijainnista.
+> [!NOTE]
+> Retail-sovelluksen versiossa 10.0.5 **Täytä tilaus vain yhdestä sijainnista** -kohdan arvoksi muutettiin **Täyttämissijaintien enimmäismäärä**. Sen sijaan, että käyttäjä voi määrittää tilausten täyttämisen vain yhdestä sijainnista tai niin useasta sijainnista kuin mahdollista, käyttäjät voivat nyt määrittää, voidaanko tilaus täyttää tietystä sijaintijoukosta (enintään 5 sijaintia) tai niin useasta sijainnista kuin on mahdollista. Tämä mahdollistaa aiempaa joustavamman tilauksen täyttämissijaintien määrän määrittämisen.
+
+   - **Offline-täyttämisen sijaintisääntö** – Tämän säännön avulla organisaatiot voivat määrittää sijainnin tai sijaintiryhmän offline-sijainniksi tai DOM:n ulkopuolelle, jotta tilauksia ei voi määrittää täytettäväksi näistä sijainneista.
     - **Hylkäysten enimmäismäärän sääntö** – Tämän säännön avulla organisaatiot voivat määrittää hylkäyksille raja-arvon. Kun raja-arvo saavutetaan, JTH-käsittelijä merkitsee tilauksen vai tilausrivin poikkeukseksi ja jättää sen jatkokäsittelyn ulkopuolelle.
 
         Sen jälkeen, kun tilausrivit on määritetty sijaintiin, sijainti voi hylätä määritetyn tilausrivin, koska se ei jostakin syystä pysty täyttämään tilausriviä. Hylätyt rivit merkitään poikkeukseksi ja palautetaan takaisin pooliin seuraavaa suorituskertaa varten. Seuraavan ajon aikana JTH yrittää määrittää hylätyn rivin toiseen sijaintiin. Myös uusi sijainti voi hylätä määritetyn tilausrivin. Tämä määrittämisen ja hylkäämisen sykli voi tapahtua useita kertoja. Kun hylkäysten määrä ylittää määritetyn raja-arvon, JTH merkitsee tilausrivin pysyväksi poikkeukseksi eikä enää ota kyseistä tilausriviä määritettäväksi. JTH ottaa tilausrivin uudelleen määritettäväksi vain, jos käyttäjä nollaa tilausrivin tilan manuaalisesti.
 
-    - **Enimmäisetäisyyssääntö** – Tämä säännön avulla organisaatiot voivat määrittää enimmäisetäisyyden tilauksen täyttävälle sijainnille tai sijaintiryhmälle. Jos sijainnille on määritetty päällekkäisiä enimmäisetäisyyssääntöjä, JTH käyttää pienintä sijainnille määritettyä enimmäisetäisyyttä.
+   - **Enimmäisetäisyyssääntö** – Tämä säännön avulla organisaatiot voivat määrittää enimmäisetäisyyden tilauksen täyttävälle sijainnille tai sijaintiryhmälle. Jos sijainnille on määritetty päällekkäisiä enimmäisetäisyyssääntöjä, JTH käyttää pienintä sijainnille määritettyä enimmäisetäisyyttä.
     - **Tilausten enimmäismäärän sääntö** – Tämän säännön avulla organisaatiot voivat määrittää tilausten enimmäismäärän, jonka sijainti tai sijaintiryhmä voi käsitellä kalenteripäivän aikana. Jos sijainnille määritetään tilausten enimmäismäärä yhden päivän aikana, JTH ei määritä uusia tilauksia kyseiseen sijaintiin kyseisen kalenteripäivän aikana.
 
-    Seuraavassa on lueteltu yleisiä määritteitä, joita voidaan määrittää edellä esitellyille sääntötyypeille:
+   Seuraavassa on lueteltu yleisiä määritteitä, joita voidaan määrittää edellä esitellyille sääntötyypeille:
 
-    - **Aloituspäivä** ja **Päättymispäivä** – Jokaiselle säännölle voidaan määrittää päivämääräväli voimassaoloajaksi näiden kenttien avulla.
-    - **Ei käytössä** – Vain ne säännöt, joiden arvo tässä kentässä on **Ei**, otetaan huomioon JTH-suorituksessa.
-    - **Tiukka rajoitus** – Sääntö voidaan määrittää tiukaksi rajoitukseksi tai ei-tiukaksi rajoitukseksi. Kukin JTH-suoritus käy läpi kaksi toistoa. Ensimmäisessä toistossa jokaista sääntöä pidetään tiukkana rajoituksena riippumatta tämän kentän arvosta. Toisin sanoen kaikki säännöt ovat käytössä. Ainoa poikkeus on **Sijainnin prioriteetti** -sääntö. Toisessa toistossa säännöt, joita ei ole määritetty tiukoiksi rajoituksiksi, poistetaan, ja tilauksille tai tilausriveille, joille ei määritetty sijaintia kaikkia sääntöjä käytettäessä, määritetään sijainnit.
+   - **Aloituspäivä** ja **Päättymispäivä** – Jokaiselle säännölle voidaan määrittää päivämääräväli voimassaoloajaksi näiden kenttien avulla.
+   - **Ei käytössä** – Vain ne säännöt, joiden arvo tässä kentässä on **Ei**, otetaan huomioon JTH-suorituksessa.
+   - **Tiukka rajoitus** – Sääntö voidaan määrittää tiukaksi rajoitukseksi tai ei-tiukaksi rajoitukseksi. Kukin JTH-suoritus käy läpi kaksi toistoa. Ensimmäisessä toistossa jokaista sääntöä pidetään tiukkana rajoituksena riippumatta tämän kentän arvosta. Toisin sanoen kaikki säännöt ovat käytössä. Ainoa poikkeus on **Sijainnin prioriteetti** -sääntö. Toisessa toistossa säännöt, joita ei ole määritetty tiukoiksi rajoituksiksi, poistetaan, ja tilauksille tai tilausriveille, joille ei määritetty sijaintia kaikkia sääntöjä käytettäessä, määritetään sijainnit.
 
 10. Täyttämisprofiileja käytetään sääntökokoelmien, yritysten, myyntitilausten alkuperien ja toimitustapojen ryhmittelyyn. Jokainen JTH-suoritus on tiettyä täyttämisprofiilia varten. Näin organisaatiot voivat määrittää ja suorittaa sääntöjoukkoja yritysjoukossa sellaisille tilauksille, joilla on tietyt myyntitilauksen alkuperät ja toimitustavat. Jos siis pitää suorittaa eri sääntöjoukkoja myyntitilausten alkuperän tai toimitustavan mukaan, täyttämisprofiilit voidaan määrittää vastaavasti. Voit määrittää täyttämisprofiileita noudattamalla seuraavia ohjeita:  
 

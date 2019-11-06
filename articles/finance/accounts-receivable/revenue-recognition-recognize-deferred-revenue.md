@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 244321e1eb246c46260326a8892924d9d9da75d3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175915"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570353"
 ---
 # <a name="recognize-deferred-revenue"></a>Siirretyn tuoton kirjaus
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Tuoton kirjaustoimintoa ei voi vielä ottaa käyttöön ominaisuuksien hallinnan avulla. Tällä hetkellä se on otettava käyttöön konfigurointiavainten avulla.
+> Tuoton kirjaustoimintoa ei voi ottaa käyttöön ominaisuuksien hallinnan avulla. Tällä hetkellä se on otettava käyttöön konfigurointiavainten avulla.
 
 Tässä ohjeaiheessa kuvataan tuottokirjausaikataulun tuottokirjausprosessi. Kun myyntitilauksen lasku on kirjattu, kullekin myyntitilausriville, jolla on tuottoaikataulu, luodaan tuottokirjausaikataulu. Rivin tuottoaikataulua käytetään sen määrittämiseen, siirretäänkö rivin tuotto.
 

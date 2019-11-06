@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4193edf526c3c17be4706a4394956b9c3718068d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ce6ce9c3c08a165ca19eb8d83643fd87b970f1ca
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184183"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658733"
 ---
 # <a name="accounts-payable-home-page"></a>Ostoreskontran aloitussivu
 
@@ -31,15 +31,15 @@ ms.locfileid: "2184183"
 
 Tässä aiheessa on yleiskuvaus ostoreskontrasta. 
 
-Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta. Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla. Voit automatisoida tarkistusprosessin laskun täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla, jolloin tietyt ehdot täyttävät laskut hyväksytään automaattisesti ja muut laskut merkitään valtuutetun käyttäjän tarkistettavaksi.
+Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköisesti tietoyksikön kautta. Sen jälkeen kun laskut on syötetty tai vastaanotettu, voit tarkistaa ja hyväksyä laskut laskujen hyväksymiskirjauskansion avulla tai **Toimittajan lasku** -sivulla. Voit automatisoida tarkistusprosessin laskun täsmäytyksen, toimittajan laskutuskäytäntöjen ja työnkulun avulla. Tämän jälkeen tietyt ehdot täyttävät laskut hyväksytään automaattisesti ja muut laskut merkitään valtuutetun käyttäjän tarkistettavaksi.
 
 **Liiketoimintaprosessit**
 
-[![Liiketoimintaprosessi](./media/AP-process.PNG)](./media/AP-process.PNG)
+[![Liiketoimintaprosessikaavio](./media/AP-process.PNG)](./media/AP-process.PNG)
 
 ## <a name="set-up-accounts-payable"></a>Ostoreskontran asetukset
 
-Määritä toimittajaryhmiä, toimittajia, kirjausprofiileja, erilaisia maksuvaihtoehtoja sekä toimittajia koskevia parametreja, hintoja, toimituksia ja kohteita, velkakirjoja ja muun tyyppisiä ostoreskontran tietoja. 
+Määritä toimittajaryhmät, toimittajat, kirjausprofiilit ja erilaiset maksuvaihtoehdot sekä toimittajia, kuluja, toimituksia ja kohteita sekä velkakirjoja ja muun tyyppisiä ostoreskontran tietoja koskevat parametrit. 
 
 [Ostoreskontran määrittäminen](accounts-payable-overview.md)
 
