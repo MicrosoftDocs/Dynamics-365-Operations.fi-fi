@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> <span data-ttu-id="d97f6-101">Tämä ohjeaihe koskee Dynamics 365 Retailia ja Dynamics 365 Commercea (kokeilu).</span><span class="sxs-lookup"><span data-stu-id="d97f6-101">This topic applies to Dynamics 365 Retail and Dynamics 365 Commerce (Preview).</span></span>
+> <span data-ttu-id="c758a-101">Tämä ohjeaihe koskee [Dynamics 365 Retail](../index.md)- ja [Dynamics 365 Commerce (esikatselu) -sovellusta](../../commerce/index.md).</span><span class="sxs-lookup"><span data-stu-id="c758a-101">This topic applies to [Dynamics 365 Retail](../index.md) and [Dynamics 365 Commerce (Preview)](../../commerce/index.md).</span></span>
