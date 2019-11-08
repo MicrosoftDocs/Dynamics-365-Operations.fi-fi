@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c24ce4dab179f439521c22e196b0b190821bc60f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 735f2d3d2f95185e886321c043cebcb6692fe8b1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561407"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570837"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO-merkintä ja fyysinen arvo
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 FIFO (First In, First Out) on varastomalli, jossa ensimmäiset vastaanotot otetaan varastosta ensin. Rahoituksellisesti päivitetyt varasto-otot täsmäytetään ensimmäisiä rahoituksellisesti päivitettyjä varastovastaanottoja vasten varastotapahtuman rahoituspäivämäärän perusteella. 
 
@@ -54,7 +52,9 @@ Tässä esimerkissä nimikemalliryhmää ei ole merkitty sisällyttämään fyys
 -   5b. Rahoituksellinen varasto-otto, jossa määrä on 1 ja kappaleen kustannushinta 20,00 Yhdysvaltain dollaria (USD) (rahoituksellisesti päivitettyjen tapahtumien keskiarvo).
 -   6. Varaston sulkeminen on suoritettu. FIFO-menetelmään perustuen ensimmäinen rahoituksellisesti päivitetty varasto-otto täsmäytetään ensimmäisen rahoituksellisesti päivitetyn vastaanoton kanssa. Varasto-ottotapahtumalle tehdään –10,00 Yhdysvaltain dollarin (USD) oikaisu.
 
-Uusi keskimääräinen kustannushinta vastaa rahoituksellisesti päivitettyjen tapahtumien keskiarvoa. Seuraavissa kuvissa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus ei ole käytössä. ![FIFO - fyysistä arvoa ei sisällytetä](./media/fifowithoutincludephysicalvalue.gif) 
+Uusi keskimääräinen kustannushinta vastaa rahoituksellisesti päivitettyjen tapahtumien keskiarvoa. Seuraavissa kuvissa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus ei ole käytössä. 
+
+![FIFO - fyysistä arvoa ei sisällytetä](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Kaavion selite**
 
@@ -84,7 +84,9 @@ Jos **Sisällytä fyysinen arvo** -valintaruutu on valittuna nimikkeen **nimikem
 -   6a. Varaston fyysinen varastostaotto määrälle 1 yksikkökustannushintaan 21,25 USD.
 -   7. Varaston sulkeminen on suoritettu. FIFO-menetelmän perusteella ensimmäinen rahoituksellinen varasto-ottotapahtuma oikaistaan tai täsmäytetään ensimmäisen päivitetyn vastaanoton kanssa huolimatta siitä, onko se rahoituksellinen vai fyysinen.
 
-Tapahtuma 5b täsmäytetään vastaanottotapahtuman 1b kanssa. Tälle varasto-ottotapahtumalle tehdään –11,25 Yhdysvaltain dollarin (USD) oikaisu. Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus on käytössä. ![FIFO - fyysinen arvo sisällytetään](./media/fifowithincludephysicalvalue.gif) 
+Tapahtuma 5b täsmäytetään vastaanottotapahtuman 1b kanssa. Tälle varasto-ottotapahtumalle tehdään –11,25 Yhdysvaltain dollarin (USD) oikaisu. Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistamme FIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus on käytössä. 
+
+![FIFO - fyysinen arvo sisällytetään](./media/fifowithincludephysicalvalue.gif) 
 
 **Kaavion selite**
 
@@ -114,7 +116,9 @@ Merkintä on prosessi, jonka avulla voit linkittää (eli merkitä) varaston ott
 -   6a. Varaston fyysinen varastostaotto määrälle 1 yksikkökustannushintaan 21,25 USD.
 -   7. Varaston sulkeminen on suoritettu. Koska taloudellisesti päivitetty FIFO-tapahtuma on merkitty vastaanottoon, nämä tapahtumat täsmäytetään toisiaan vasten, eikä oikaisua tehdä.
 
-Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistetaan FIFO-varastomallin käyttämisen vaikutus tähän tapahtumien sarjaan kun merkintä varasto-ottojen ja vastaanottojen välillä on käytössä. ![FIFO merkinnän kanssa](./media/fifowithmarking.gif) 
+Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistetaan FIFO-varastomallin käyttämisen vaikutus tähän tapahtumien sarjaan kun merkintä varasto-ottojen ja vastaanottojen välillä on käytössä. 
+
+![FIFO merkinnän kanssa](./media/fifowithmarking.gif) 
 
 **Kaavion selite**
 

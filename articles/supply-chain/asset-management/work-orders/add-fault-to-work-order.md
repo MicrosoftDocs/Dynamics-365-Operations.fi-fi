@@ -3,7 +3,7 @@ title: Vian lisääminen työtilaukseen
 description: Tässä aiheessa kuvataan, miten vikamerkinnät lisätään työtilauksiin käyttöomaisuuden hallinnassa.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,41 +16,42 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7c86973ca44d9113d14e180e27cc51343da5d2c0
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 2b58cc31578d7bb102c6b5aa8b4ce2d6cfe8c893
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875635"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626198"
 ---
 # <a name="add-fault-to-work-order"></a>Vian lisääminen työtilaukseen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
-Voit lisätä vikasuunnittelijassa vikamäärityksiä työtilaukseen. Työtilauksessa valitulla käyttöomaisuuserällä on oltava käyttöomaisuustyypit, joihin on liitetty yksi tai useita vikatietueita. Lisätietoja määrityksestä on kohdassa [Vikojen hallinta](../setup-for-work-orders/fault-management.md).
+Voit lisätä vikasuunnittelijassa määritettyjä vikamäärityksiä työtilaukseen. Vähintään yhden vikatietueen on liityttävä työtilauksessa valitussa resurssissa käytettyihin resurssityyppeihin. Lisätietoja määrityksestä esitetään kohdassa [Vikojen hallinta](../setup-for-work-orders/fault-management.md).
 
-1. Valitse **Resurssien hallinta** >  **yhteiset** >  **työtilaukset** >  **kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssienhallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
-2. Valitse luettelosta työtilaus, johon haluat tehdä vikamerkinnän, ja valitse **Resurssin vika**.
+2. Valitse työtilaus, jolle vikarekisteröinti tehdään ja valitse sitten **Resurssin vika** **Resurssi**-ryhmän **Työtilaus**-välilehden toimintoruudussa.
 
-3. Valitse **Oireet** -pikavälilehdessä **Lisää rivi**. **Vika**-kenttään syötetään automaattisesti vian järjestysnumero.
+3. Valitse **Oireet**-pikavälilehdessä **Lisää rivi**. **Vika**-kenttään syötetään automaattisesti vian järjestysnumero.
 
-4. Valitse asiaankuuluva oire **vian oire** -kentästä.
+4. Valitse asiaankuuluva oire **Vian oire** -kentässä.
 
-5. Valitse **Vika-alue** ja **Vikatyyppi**.
+5. Valitse asianmukaiset arvot kentissä **Vika-alue** ja **Vikatyyppi**.
 
-6. **Vian päivämäärä** -kenttään valitaan automaattisesti nykyinen päivämäärä. Voit muuttaa päivämäärää tarpeen mukaan.
+6. **Vian päivämäärä** -kenttään valitaan automaattisesti nykyinen päivämäärä. Voit valita tarpeen mukaan eri päivämäärän.
 
-7. Lisää **Valitun oireen syyt** -pikavälilehdessä rivi, joka kuvaa ongelman syytä.
+7. Lisää **Valitun oireen syyt** -pikavälilehdessä rivi kuvaamaan ongelman syytä.
 
-8. Lisää **Valitun oireen korjaukset** -pikavälilehdessä rivi, joka kuvaa ongelman mahdollista ratkaisua.
+8. Lisää **Valitun oireen korjaukset** -pikavälilehdessä rivi kuvaamaan mahdollista ratkaisua ongelmaan.
 
 9. Valitse **Tallenna**.
+
+Alla olevassa kuvassa näkyy esimerkki vikarekisteröinnistä.
 
 ![Kuva 1](media/19-work-orders.png)
 
@@ -59,23 +60,23 @@ Voit lisätä vikasuunnittelijassa vikamäärityksiä työtilaukseen. Työtilauk
 
 **Resurssin viat** -luettelossa voit saada yleiskuvan kaikista omaisuuteen rekisteröidyistä virheistä.
 
-Valitse **Resurssien hallinta** > **Kyselyt** > **Resurssin vika** > **Resurssin viat** avatksesi listan.
+**Resurssin viat** -luettelosivulla voit saada yleiskuvan kaikista resursseihin rekisteröidyistä virheistä. Avaa sivu valitsemalla **Resurssien hallinta** > **Kyselyt** > **Resurssin vika** > **Resurssin viat**.
 
 
 ## <a name="print-asset-fault-report"></a>Tulosta resurssin vikaraportti
 
-**Kaikki resurssit** luettelosivulla voit tulostaa omaisuusvikaraportin, jossa näkyvät kaikki vikamerkinnät sekä graafisen yhteenvedon vikatilastoista.
+**Kaikki resurssit** luettelosivulla voit tulostaa omaisuusvikaraportin, jossa näkyvät kaikki vikarekisteröinnit sekä graafisen yhteenveto vikatilastoista.
 
-1. Valitse **Resurssien hallinta**  >  **Yhteiset**  >  **Resurssit**  >  **Kaikki resurssit**.
+1. Valitse **Resurssienhallinta** > **Yhteiset** > **Resurssit** > **Kaikki resurssit**.
 
-2. Valitse **Resurssit**-luettelosta resurssi, jolle haluat tulostaa vikaraportin.
+2. Valitse resurssi, jolle tulostetaan vikaraportti.
 
-3. Valitse **Yleiset**-välilehden **Raportit**-osassa **Resurssin vika**.
+3. Valitse toimintoruudun **Yleinen**-välilehden **Raportit**-ryhmässä **Resurssin vika**.
 
-4. Lisää tietty kausi tai valitse vikatyyppi.
+4. Syötä tietty kausi tai valitse vikatyyppi.
 
 5. Tulosta raportti valitsemalla **OK**.
 
 >[!NOTE]
->Voit myös tulostaa useiden resurssien tai resurssityyppien vikaraportin valitsemalla **Resurssien hallinta** > **Raportit** > **Resurssit** > **Resurssin vika**.
+>Voit tulostaa useiden resurssien tai resurssityyppien vikaraportin valitsemalla **Resurssien hallinta** > **Raportit** > **Resurssit** > **Resurssin vika**.
 

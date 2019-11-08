@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 29f9975d8270b3f79d0aac0c62609b4a9c71ae89
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 322e3ac6f7c37fffdd4d59ed86bccec10559f4b9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874621"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569774"
 ---
 # <a name="work-order-project-setup"></a>Työtilauksen projektiasetukset
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 **Resurssien hallinta** -moduulissa jokaiselle työtilaustyölle tarvitaan projektisuhde. Työtilaustyöhön liittyvän projektin avulla voit jäljittää eri projektien, jotka liittyvät omaisuuden hallintaan, kustannuksia, kuten sisäisiä ylläpitoprojekteja, huoltohallinnan projekteja ja investointiprojekteja. 
 
@@ -72,7 +72,7 @@ Nämä asetukset mahdollistavat täydellisen integroinnin **Projektinhallinta ja
 
     Oletusarvon mukaan aloituspäivämäärä on päivämäärä, jolloin työtilausprojekti lisätään sivulle. Sen hallinnassa on **Voimassa alkaen** -kenttä, joka on oletusarvoisesti piilotettu. Jos haluat näyttää **Voimassa alkaen** -kentän, valitse **Näytä** \> **Kaikki**. Tämän jälkeen voit käyttää **Voimassa alkaen** -kenttää yhdessä **Päättymispäivämäärä**-kentän kanssa määrittämään rajoitetun voimassaoloajan työtilausprojektille.
 
-    ![Kuva 1](media/17-setup-for-work-orders.png)
+    ![Työtilausten projektinmäärityssivu](media/17-setup-for-work-orders.png)
 
 6. Valitse **Projektiryhmä**-välilehdellä **Lisää**.
 7. Valitse **Työtilaustyyppi**-kentässä työtilauksen tyyppi.
@@ -80,7 +80,7 @@ Nämä asetukset mahdollistavat täydellisen integroinnin **Projektinhallinta ja
 9. Valitse **Projektiryhmä**-kentästä projektiryhmä, joka liittyy työtilaustyyppiin. Esimerkiksi **Ennalta ehkäisevä ylläpito** -niminen työtilaustyyppi voi liittyä projektiryhmään, jonka nimi **Enn. ylläp.** tai **Sisäinen.** Vaihtoehtoisesti **Investointi**-työtilaustyyppi, jota käytetään investointeihin ja käyttöomaisuuteen liittyviin työtilauksiin, voidaan liittää projektiryhmään, jonak nimi on **Investoi** tai **Investointi**.
 10. Valitse **Tallenna**.
 
-![Kuva 2](media/18-setup-for-work-orders.png)
+![Työtilausten projektinmäärityssivu, Työtilauksen lisääminen](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Aina, kun työtilausrivi luodaan, käyttöomaisuuden hallinta etsii projektiryhmää, joka liittyy työtilaustyön projektiin. Haku perustuu tässä ohjeaiheessa kuvattuihin asetuksiin. Jokaisella projektiryhmällä on siihen liittyvä projektityyppi. Projektiryhmät, joissa on **Aika ja materiaali**- tai **Kiinteähintainen** projektityyppi, ovat kelvollisia vain asiakastiliin liittyvissä resursseissa.

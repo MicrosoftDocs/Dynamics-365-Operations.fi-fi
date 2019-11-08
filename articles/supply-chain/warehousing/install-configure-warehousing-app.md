@@ -1,6 +1,6 @@
 ---
 title: Varastointisovelluksen asentaminen ja määrittäminen – yleiskatsaus
-description: Tässä ohjeaiheessa kerrotaan, miten asennat ja määrität Dynamics 365 Supply Chain Managementin varastointisovelluksen.
+description: Tässä ohjeaiheessa kerrotaan, miten asennat ja määrität Dynamics 365 for Finance and Operationsin varastointisovelluksen.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b8eb8dee88d8664391d2dcf485dff9dee4722cac
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
+ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251497"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2548965"
 ---
 # <a name="install-and-configure-the-warehousing-app-overview"></a>Varastointisovelluksen asentaminen ja määrittäminen – yleiskatsaus
 
@@ -35,7 +35,7 @@ ms.locfileid: "2251497"
 > Tässä ohjeaiheessa käsitellään pilvikäyttöönottojen varastoinnin määrittämistä. Lisätietoja varastoinnin määrittämisestä paikallisissa käyttöönotoissa on kohdassa [Varastointi paikallisissa käyttöönottoja](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
-Tässä ohjeaiheessa kerrotaan, miten asennat ja määrität Dynamics 365 Supply Chain Managementin varastointisovelluksen.
+Tässä ohjeaiheessa kerrotaan, miten asennat ja määrität Dynamics 365 for Finance and Operationsin varastointisovelluksen.
 
 Varastosovellus on saatavilla Google Play Storesta ja Windows Storesta. Dynamics 365 Supply Chain Managementin nykyiselle versiolle tämä sovellus on saatavana erillisenä komponenttina, joka tarkoittaa itsenäistä käyttöönottoa sellaisissa laitteissa, joita käytetään fyysisen varastoinnin tehtävissä. Jotta voisit käyttää sovellusta, sinun on ladattava sovellus kuhunkin laitteeseen ja määrittää se muodostamaan yhteys Supply Chain Management -ympäristöösi. Tässä aiheessa kuvataan, miten sovellus asennetaan laitteisiin. Artikkelissa kerrotaan myös, miten voit määrittää sovelluksen yhteyden Supply Chain Management -ympäristöösi.
 

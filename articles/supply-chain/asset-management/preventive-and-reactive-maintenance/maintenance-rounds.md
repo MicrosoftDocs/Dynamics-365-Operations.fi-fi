@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 4c9a2fee7d43142f8bb17f4e819c9949a2a20c41
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922019"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570027"
 ---
 # <a name="maintenance-rounds"></a>Ylläpitokierrokset
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 **Resurssien hallinnassa** huoltokierroksia voidaan luoda eri resursseille, joihin on suoritettava samanlainen tehtävä säännöllisin väliajoin. Esimerkiksi voitelutyöt tai turvatarkastustyöt, jotka on suoritettava useilla koneilla samalla aikavälillä. Ensimmäinen vaihe on huoltokierroksen luominen, mukaan lukien käyttökohteet, jotka edellyttävät samaa kunnossapitotyötä. Seuraavaksi ajoitat huoltokierrokset. Kun kunnossapitokierrosten aikataulu on tehty, kaikki kierrokseen liittyvät työtietueet näkyvät kohdassa **Kaikki huoltoaikataulu** ja **Avoimet ylläpitoaikataulurivit**.
 

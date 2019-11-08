@@ -3,7 +3,7 @@ title: Finance and Operations- sovellusten tai Lifecycle Servicesin (LCS) tuki
 description: Tässä aiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta.
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af4cbbd0f594b07e791d6ab7a5ac4dc58b97e1de
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: c36adc1f754c918a9fdf8410572f3199cdb63766
+ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537047"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2577493"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations- sovellusten tai Lifecycle Servicesin (LCS) tuki
 
@@ -91,5 +91,5 @@ Jos tekniset kysymykset liittyvät CustomerSourceen, kirjautumiseen tai sen käy
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Dynamics 365 Retail -tuen saaminen](../../../retail/retail-support.md)
 - [Dynamics 365 Talent -tuen saaminen](../../../talent/talent-support.md)
-- Lisätietoja Microsoft Dynamics tukivalikoimasta on kohdassa [Microsoft Dynamics Online -tuki](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
+- Lisätietoja Microsoft Dynamics tukivalikoimasta esitetään kohdassa [Finance and Operations -sovellusten tukikokemusten hallinta](cloud-powered-support-lcs.md).
 
