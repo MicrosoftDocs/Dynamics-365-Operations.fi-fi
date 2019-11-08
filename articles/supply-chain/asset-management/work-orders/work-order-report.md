@@ -3,7 +3,7 @@ title: Työtilausraportti
 description: Tässä ohjeaiheessa kerrotaan työtilausraporteista resurssien hallinnassa.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,41 +16,38 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d2843a57aad7cc8525a689d4643875970849e31
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 6eb5c5156898fc826376ae35745ff4a7451d00c6
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875623"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626382"
 ---
-# <a name="work-order-report"></a><span data-ttu-id="88cbf-103">Työtilausraportti</span><span class="sxs-lookup"><span data-stu-id="88cbf-103">Work order report</span></span>
-
+# <a name="work-order-report"></a><span data-ttu-id="00366-103">Työtilausraportti</span><span class="sxs-lookup"><span data-stu-id="00366-103">Work order report</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
+<span data-ttu-id="00366-104">Voit luoda työtilausraportin, jossa näkyy yksityiskohtaisia tietoja yhdestä tai useammasta valitsemastasi työtilauksesta.</span><span class="sxs-lookup"><span data-stu-id="00366-104">You can generate a work order report that shows detailed information about one or more work orders that you select.</span></span>
 
-<span data-ttu-id="88cbf-104">Voit luoda työtilausraportin, jossa näkyy yksityiskohtaisia tietoja työtilauksesta.</span><span class="sxs-lookup"><span data-stu-id="88cbf-104">You can generate a work order report that shows detailed information about a work order.</span></span> <span data-ttu-id="88cbf-105">Voit valita yhden tai useita työtilauksia, jotka näytetään raportissa.</span><span class="sxs-lookup"><span data-stu-id="88cbf-105">It is possible to select one or several work orders to be displayed in the report.</span></span>
+1. <span data-ttu-id="00366-105">Valitse **Resurssienhallinta** > **Raportit** > **Työtilaukset** > **Työtilausraportti**.</span><span class="sxs-lookup"><span data-stu-id="00366-105">Select **Asset management** > **Reports** > **Work orders** > **Work order report**.</span></span>
 
-1. <span data-ttu-id="88cbf-106">Valitse **Resurssien hallinta** > **Raportit** > **Työtilaukset** > **Työtilausraportti**.</span><span class="sxs-lookup"><span data-stu-id="88cbf-106">Click **Asset management** > **Reports** > **Work orders** > **Work order report**.</span></span>
+2. <span data-ttu-id="00366-106">Valitse vaihtopainikkeissa "kyllä"/"ei" tarpeen mukaan määrittääksesi raporttiin sisällytettävät tiedot.</span><span class="sxs-lookup"><span data-stu-id="00366-106">Select "Yes"/"No" on the toggle buttons as you require, to determine the details to be included in the report.</span></span>  
+    - <span data-ttu-id="00366-107">Voit valita **Tulostusasetukset**-osassa, haluatko sisällyttää tulostukseen liitteet liittyvän ylläpitotöiden tyypin määrityksestä.</span><span class="sxs-lookup"><span data-stu-id="00366-107">In the **Print settings** section, you can select whether to include attachments from the setup of the related maintenance job type.</span></span>
 
-2. <span data-ttu-id="88cbf-107">Valitse vaihtopainikkeissa "kyllä"/"ei" ja täytä kentät tarpeen mukaan, määrittääksesi raporttiin sisällytettävät tiedot.</span><span class="sxs-lookup"><span data-stu-id="88cbf-107">Select "Yes"/"No" on the toggle buttons and fill out fields as required, to determine the details to be included in the report.</span></span>  
-  <span data-ttu-id="88cbf-108">a.</span><span class="sxs-lookup"><span data-stu-id="88cbf-108">a.</span></span> <span data-ttu-id="88cbf-109">Voit valita **Tulostusasetukset**-osassa, haluatko sisällyttää tulostukseen liitteet liittyvästä kunnossapitotöiden tyypin asetuksista.</span><span class="sxs-lookup"><span data-stu-id="88cbf-109">In the **Print settings** section, you can select if you want to include attachments from the related maintenance job type setup in the print.</span></span>
+3. <span data-ttu-id="00366-108">Voit suodattaa raportin sisällön**Työtilaus**-kentän mukaan **Sisällytettävät tietueet** -pikavälilehdessä.</span><span class="sxs-lookup"><span data-stu-id="00366-108">On the **Records to include** FastTab, you can filter the contents of the report by **Work order**.</span></span>
 
-3. <span data-ttu-id="88cbf-110">Voit suodattaa raportin sisällön**Työtilaus**-kentän mukaan **Sisällytettävät tietueet** -pikavälilehdessä.</span><span class="sxs-lookup"><span data-stu-id="88cbf-110">On the **Records to include** FastTab, you can filter the contents of the report by **Work order**.</span></span>
+4. <span data-ttu-id="00366-109">**Suorita taustalla** -pikavälilehdessä voit määrittää työtilausraportin luonnin erätyönä tarpeen mukaan.</span><span class="sxs-lookup"><span data-stu-id="00366-109">On the **Run in the background** FastTab, you can set up generation of the work order report as a batch job, as you require.</span></span>
 
-4. <span data-ttu-id="88cbf-111">Voit tarvittaessa määrittää työtilausraportin luonnin erätyönä täyttämällä kentät **Suorita taustalla** -pikavälilehdessä.</span><span class="sxs-lookup"><span data-stu-id="88cbf-111">If required, you can set up work order report generation as a batch job by filling out the fields on the **Run in the background** FastTab.</span></span>
+5. <span data-ttu-id="00366-110">Luo raportti valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="00366-110">Select **OK** to generate the report.</span></span>
 
-5. <span data-ttu-id="88cbf-112">Luo raportti valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="88cbf-112">Click **OK** to generate the report.</span></span>
-
-<span data-ttu-id="88cbf-113">Alla näkyy esimerkki siitä, miten parametrit voidaan määrittää, sekä siihen liittyvä työtilausraportti.</span><span class="sxs-lookup"><span data-stu-id="88cbf-113">Below you see an example of how parameters can be set up, and the related work order report.</span></span>
+<span data-ttu-id="00366-111">Seuraavassa kuvassa esitetään esimerkki raporttiparametrien määrityksestä.</span><span class="sxs-lookup"><span data-stu-id="00366-111">The following illustration shows an example of how the report parameters can be set up.</span></span>
 
 ![Kuva 1](media/20-work-orders.png)
 
+<span data-ttu-id="00366-113">Seuraavassa kuvassa esitetään esimerkki työtilausraportista, joka luodaan kyseisen määrityksen perusteella.</span><span class="sxs-lookup"><span data-stu-id="00366-113">The following illustration shows an example of a work order report that is generated based on that setup.</span></span>
 
 ![Kuva 2](media/21-work-orders.png)
-
 

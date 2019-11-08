@@ -1,5 +1,5 @@
 ---
-title: Luo muotoja tiedostonhallinnan tiedostojen käyttämiseksi ER-tuotoksissa
+title: ER Tiedostojenhallinnan tiedostojen käyttö muodon tuloksissa (osa 3 – muodon luominen)
 description: Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa.
 author: NickSelin
 manager: AnnBe
@@ -16,107 +16,107 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05c0c4a38f34774e7018504c5e3fab834a2ec1b1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 618fabc96bdfeb0c2b577aa686702d9f1257ed70
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182528"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550714"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-3-create-format"></a><span data-ttu-id="77e4e-103">ER Tiedostojenhallinnan tiedostojen käyttö muodon tuloksissa (osa 3: muodon luominen)</span><span class="sxs-lookup"><span data-stu-id="77e4e-103">ER Use Document Management files in format outputs (Part 3: Create format)</span></span>
+# <a name="er-use-document-management-files-in-format-outputs-part-3---create-format"></a><span data-ttu-id="db607-103">ER Tiedostojenhallinnan tiedostojen käyttö muodon tuloksissa (osa 3 – muodon luominen)</span><span class="sxs-lookup"><span data-stu-id="db607-103">ER Use Document Management files in format outputs (Part 3 - Create format)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="77e4e-104">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa.</span><span class="sxs-lookup"><span data-stu-id="77e4e-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="77e4e-105">Nämä vaiheet voidaan suorittaa missä tahansa yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="77e4e-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="db607-104">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa.</span><span class="sxs-lookup"><span data-stu-id="db607-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="db607-105">Nämä vaiheet voidaan suorittaa missä tahansa yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="db607-105">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="77e4e-106">Jotta voisit suorittaa nämä toimet, sinun on ensin suoritettava "ER Käytä tiedostojen hallinta tiedostojen muotoa tulosteissa (osa 2: laajenna tietomallia)" -menettelyn vaiheet.</span><span class="sxs-lookup"><span data-stu-id="77e4e-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 2: Extend data model” procedure.</span></span>
+<span data-ttu-id="db607-106">Jotta voisit suorittaa nämä toimet, sinun on ensin suoritettava "ER Käytä tiedostojen hallinta tiedostojen muotoa tulosteissa (osa 2: laajenna tietomallia)" -menettelyn vaiheet.</span><span class="sxs-lookup"><span data-stu-id="db607-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 2: Extend data model” procedure.</span></span>
 
-<span data-ttu-id="77e4e-107">Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="77e4e-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="db607-107">Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="db607-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-format-to-process-invoices"></a><span data-ttu-id="77e4e-108">Uuden muodon luonti laskujen käsittelyä varten</span><span class="sxs-lookup"><span data-stu-id="77e4e-108">Create a format to process invoices</span></span>
-1. <span data-ttu-id="77e4e-109">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="77e4e-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="77e4e-110">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="77e4e-110">Click Reporting configurations.</span></span>
-3. <span data-ttu-id="77e4e-111">Laajenna puussa solmu "Customer invoice model".</span><span class="sxs-lookup"><span data-stu-id="77e4e-111">In the tree, expand 'Customer invoice model'.</span></span>
-4. <span data-ttu-id="77e4e-112">Valitse puusta "Customer invoice model\Customer invoice model (custom)".</span><span class="sxs-lookup"><span data-stu-id="77e4e-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
-    * <span data-ttu-id="77e4e-113">Luot muodon, jolla luodaan sähköisiä viestejä tiedostoista, jotka on liitetty myyntitilaukseen, joka liittyy sähköisesti käsiteltävään laskuun.</span><span class="sxs-lookup"><span data-stu-id="77e4e-113">You will create a format to generate electronic messages with information about any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
-5. <span data-ttu-id="77e4e-114">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="77e4e-114">Click Create configuration to open the drop dialog.</span></span>
-6. <span data-ttu-id="77e4e-115">Syötä Uusi-kenttään Muoto perustuu tietomalliin Myyntilaskumalli (mukautettu).</span><span class="sxs-lookup"><span data-stu-id="77e4e-115">In the New field, enter 'Format based on data model Customer invoice model (custom)'.</span></span>
-7. <span data-ttu-id="77e4e-116">Kirjoita Nimi-kenttään "Sähköisen laskun malliviesti".</span><span class="sxs-lookup"><span data-stu-id="77e4e-116">In the Name field, type 'Electronic invoice sample message'.</span></span>
-    * <span data-ttu-id="77e4e-117">Sähköisen laskun esimerkkisanoma</span><span class="sxs-lookup"><span data-stu-id="77e4e-117">Electronic invoice sample message</span></span>  
-8. <span data-ttu-id="77e4e-118">Anna tai valitse Tietomallin määritelmä -kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="77e4e-118">In the Data model definition field, enter or select a value.</span></span>
-    * <span data-ttu-id="77e4e-119">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="77e4e-119">InvoiceCustomer</span></span>  
-9. <span data-ttu-id="77e4e-120">Valitse Luo konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="77e4e-120">Click Create configuration.</span></span>
+## <a name="create-a-format-to-process-invoices"></a><span data-ttu-id="db607-108">Uuden muodon luonti laskujen käsittelyä varten</span><span class="sxs-lookup"><span data-stu-id="db607-108">Create a format to process invoices</span></span>
+1. <span data-ttu-id="db607-109">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="db607-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="db607-110">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="db607-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="db607-111">Laajenna puussa solmu "Customer invoice model".</span><span class="sxs-lookup"><span data-stu-id="db607-111">In the tree, expand 'Customer invoice model'.</span></span>
+4. <span data-ttu-id="db607-112">Valitse puusta "Customer invoice model\Customer invoice model (custom)".</span><span class="sxs-lookup"><span data-stu-id="db607-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+    * <span data-ttu-id="db607-113">Luot muodon, jolla luodaan sähköisiä viestejä tiedostoista, jotka on liitetty myyntitilaukseen, joka liittyy sähköisesti käsiteltävään laskuun.</span><span class="sxs-lookup"><span data-stu-id="db607-113">You will create a format to generate electronic messages with information about any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
+5. <span data-ttu-id="db607-114">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="db607-114">Click Create configuration to open the drop dialog.</span></span>
+6. <span data-ttu-id="db607-115">Syötä Uusi-kenttään Muoto perustuu tietomalliin Myyntilaskumalli (mukautettu).</span><span class="sxs-lookup"><span data-stu-id="db607-115">In the New field, enter 'Format based on data model Customer invoice model (custom)'.</span></span>
+7. <span data-ttu-id="db607-116">Kirjoita Nimi-kenttään "Sähköisen laskun malliviesti".</span><span class="sxs-lookup"><span data-stu-id="db607-116">In the Name field, type 'Electronic invoice sample message'.</span></span>
+    * <span data-ttu-id="db607-117">Sähköisen laskun esimerkkisanoma</span><span class="sxs-lookup"><span data-stu-id="db607-117">Electronic invoice sample message</span></span>  
+8. <span data-ttu-id="db607-118">Anna tai valitse Tietomallin määritelmä -kentän arvo.</span><span class="sxs-lookup"><span data-stu-id="db607-118">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="db607-119">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="db607-119">InvoiceCustomer</span></span>  
+9. <span data-ttu-id="db607-120">Valitse Luo konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="db607-120">Click Create configuration.</span></span>
 
-## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a><span data-ttu-id="77e4e-121">Muodon suunnittelu, joka täyttää liitteet viestiin MIME-muodossa</span><span class="sxs-lookup"><span data-stu-id="77e4e-121">Design a format to populate attachments into generating a message in MIME format</span></span>
-1. <span data-ttu-id="77e4e-122">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="77e4e-122">Click Designer.</span></span>
-2. <span data-ttu-id="77e4e-123">Avaa valintaikkuna valitsemalla Lisää juuri.</span><span class="sxs-lookup"><span data-stu-id="77e4e-123">Click Add root to open the drop dialog.</span></span>
-3. <span data-ttu-id="77e4e-124">Valitse puussa solmu XML\Element.</span><span class="sxs-lookup"><span data-stu-id="77e4e-124">In the tree, select 'XML\Element'.</span></span>
-4. <span data-ttu-id="77e4e-125">Kirjoita Nimi-kenttään "Lasku".</span><span class="sxs-lookup"><span data-stu-id="77e4e-125">In the Name field, type 'Invoice'.</span></span>
-    * <span data-ttu-id="77e4e-126">Lasku</span><span class="sxs-lookup"><span data-stu-id="77e4e-126">Invoice</span></span>  
-5. <span data-ttu-id="77e4e-127">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="77e4e-127">Click OK.</span></span>
-6. <span data-ttu-id="77e4e-128">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="77e4e-128">Click Add to open the drop dialog.</span></span>
-7. <span data-ttu-id="77e4e-129">Valitse puussa solmu XML\Attribute.</span><span class="sxs-lookup"><span data-stu-id="77e4e-129">In the tree, select 'XML\Attribute'.</span></span>
-8. <span data-ttu-id="77e4e-130">Syötä Nimi-kenttään "SalesOrder".</span><span class="sxs-lookup"><span data-stu-id="77e4e-130">In the Name field, type 'SalesOrder'.</span></span>
-    * <span data-ttu-id="77e4e-131">SalesOrder</span><span class="sxs-lookup"><span data-stu-id="77e4e-131">SalesOrder</span></span>  
-9. <span data-ttu-id="77e4e-132">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="77e4e-132">Click OK.</span></span>
-10. <span data-ttu-id="77e4e-133">Valitse Lisää määrite.</span><span class="sxs-lookup"><span data-stu-id="77e4e-133">Click Add Attribute.</span></span>
-11. <span data-ttu-id="77e4e-134">Syötä Nimi-kenttään "InvoiceNumber".</span><span class="sxs-lookup"><span data-stu-id="77e4e-134">In the Name field, type 'InvoiceNumber'.</span></span>
-    * <span data-ttu-id="77e4e-135">InvoiceNumber</span><span class="sxs-lookup"><span data-stu-id="77e4e-135">InvoiceNumber</span></span>  
-12. <span data-ttu-id="77e4e-136">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="77e4e-136">Click OK.</span></span>
-13. <span data-ttu-id="77e4e-137">Valitse Lisää määrite.</span><span class="sxs-lookup"><span data-stu-id="77e4e-137">Click Add Attribute.</span></span>
-14. <span data-ttu-id="77e4e-138">Kirjoita Nimi-kenttään "InvoiceAmount".</span><span class="sxs-lookup"><span data-stu-id="77e4e-138">In the Name field, type 'InvoiceAmount'.</span></span>
-    * <span data-ttu-id="77e4e-139">InvoiceAmount</span><span class="sxs-lookup"><span data-stu-id="77e4e-139">InvoiceAmount</span></span>  
-15. <span data-ttu-id="77e4e-140">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="77e4e-140">Click OK.</span></span>
-16. <span data-ttu-id="77e4e-141">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="77e4e-141">Click Add to open the drop dialog.</span></span>
-17. <span data-ttu-id="77e4e-142">Valitse puussa solmu XML\Element.</span><span class="sxs-lookup"><span data-stu-id="77e4e-142">In the tree, select 'XML\Element'.</span></span>
-18. <span data-ttu-id="77e4e-143">Kirjoita Nimi-kenttään "EnclosedDocs".</span><span class="sxs-lookup"><span data-stu-id="77e4e-143">In the Name field, type 'EnclosedDocs'.</span></span>
-    * <span data-ttu-id="77e4e-144">EnclosedDocs</span><span class="sxs-lookup"><span data-stu-id="77e4e-144">EnclosedDocs</span></span>  
-19. <span data-ttu-id="77e4e-145">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="77e4e-145">Click OK.</span></span>
-20. <span data-ttu-id="77e4e-146">Valitse puusta 'Invoice\EnclosedDocs'.</span><span class="sxs-lookup"><span data-stu-id="77e4e-146">In the tree, select 'Invoice\EnclosedDocs'.</span></span>
-21. <span data-ttu-id="77e4e-147">Valitse Lisää elementti.</span><span class="sxs-lookup"><span data-stu-id="77e4e-147">Click Add Element.</span></span>
-22. <span data-ttu-id="77e4e-148">Kirjoita Nimi-kenttään "Document".</span><span class="sxs-lookup"><span data-stu-id="77e4e-148">In the Name field, type 'Document'.</span></span>
-    * <span data-ttu-id="77e4e-149">Asiakirja</span><span class="sxs-lookup"><span data-stu-id="77e4e-149">Document</span></span>  
-23. <span data-ttu-id="77e4e-150">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="77e4e-150">Click OK.</span></span>
-24. <span data-ttu-id="77e4e-151">Valitse puusta "Invoice\EnclosedDocs\Document".</span><span class="sxs-lookup"><span data-stu-id="77e4e-151">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
-25. <span data-ttu-id="77e4e-152">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="77e4e-152">Click Add to open the drop dialog.</span></span>
-26. <span data-ttu-id="77e4e-153">Valitse puussa solmu XML\Attribute.</span><span class="sxs-lookup"><span data-stu-id="77e4e-153">In the tree, select 'XML\Attribute'.</span></span>
-27. <span data-ttu-id="77e4e-154">Kirjoita Nimi-kenttään "FileName".</span><span class="sxs-lookup"><span data-stu-id="77e4e-154">In the Name field, type 'FileName'.</span></span>
-    * <span data-ttu-id="77e4e-155">FileName</span><span class="sxs-lookup"><span data-stu-id="77e4e-155">FileName</span></span>  
-28. <span data-ttu-id="77e4e-156">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="77e4e-156">Click OK.</span></span>
-29. <span data-ttu-id="77e4e-157">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="77e4e-157">Click Add to open the drop dialog.</span></span>
-30. <span data-ttu-id="77e4e-158">Valitse puussa solmu XML\Element.</span><span class="sxs-lookup"><span data-stu-id="77e4e-158">In the tree, select 'XML\Element'.</span></span>
-31. <span data-ttu-id="77e4e-159">Kirjoita Nimi-kenttään "FileContent".</span><span class="sxs-lookup"><span data-stu-id="77e4e-159">In the Name field, type 'FileContent'.</span></span>
-    * <span data-ttu-id="77e4e-160">FileContent</span><span class="sxs-lookup"><span data-stu-id="77e4e-160">FileContent</span></span>  
-32. <span data-ttu-id="77e4e-161">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="77e4e-161">Click OK.</span></span>
-33. <span data-ttu-id="77e4e-162">Valitse puusta "Invoice\EnclosedDocs\Document\FileContent".</span><span class="sxs-lookup"><span data-stu-id="77e4e-162">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent'.</span></span>
-34. <span data-ttu-id="77e4e-163">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="77e4e-163">Click Add to open the drop dialog.</span></span>
-35. <span data-ttu-id="77e4e-164">Valitse puussa "Text\Base64".</span><span class="sxs-lookup"><span data-stu-id="77e4e-164">In the tree, select 'Text\Base64'.</span></span>
-36. <span data-ttu-id="77e4e-165">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="77e4e-165">Click OK.</span></span>
+## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a><span data-ttu-id="db607-121">Muodon suunnittelu, joka täyttää liitteet viestiin MIME-muodossa</span><span class="sxs-lookup"><span data-stu-id="db607-121">Design a format to populate attachments into generating a message in MIME format</span></span>
+1. <span data-ttu-id="db607-122">Valitse Suunnittelutoiminto.</span><span class="sxs-lookup"><span data-stu-id="db607-122">Click Designer.</span></span>
+2. <span data-ttu-id="db607-123">Avaa valintaikkuna valitsemalla Lisää juuri.</span><span class="sxs-lookup"><span data-stu-id="db607-123">Click Add root to open the drop dialog.</span></span>
+3. <span data-ttu-id="db607-124">Valitse puussa solmu XML\Element.</span><span class="sxs-lookup"><span data-stu-id="db607-124">In the tree, select 'XML\Element'.</span></span>
+4. <span data-ttu-id="db607-125">Kirjoita Nimi-kenttään "Lasku".</span><span class="sxs-lookup"><span data-stu-id="db607-125">In the Name field, type 'Invoice'.</span></span>
+    * <span data-ttu-id="db607-126">Lasku</span><span class="sxs-lookup"><span data-stu-id="db607-126">Invoice</span></span>  
+5. <span data-ttu-id="db607-127">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="db607-127">Click OK.</span></span>
+6. <span data-ttu-id="db607-128">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="db607-128">Click Add to open the drop dialog.</span></span>
+7. <span data-ttu-id="db607-129">Valitse puussa solmu XML\Attribute.</span><span class="sxs-lookup"><span data-stu-id="db607-129">In the tree, select 'XML\Attribute'.</span></span>
+8. <span data-ttu-id="db607-130">Syötä Nimi-kenttään "SalesOrder".</span><span class="sxs-lookup"><span data-stu-id="db607-130">In the Name field, type 'SalesOrder'.</span></span>
+    * <span data-ttu-id="db607-131">SalesOrder</span><span class="sxs-lookup"><span data-stu-id="db607-131">SalesOrder</span></span>  
+9. <span data-ttu-id="db607-132">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="db607-132">Click OK.</span></span>
+10. <span data-ttu-id="db607-133">Valitse Lisää määrite.</span><span class="sxs-lookup"><span data-stu-id="db607-133">Click Add Attribute.</span></span>
+11. <span data-ttu-id="db607-134">Syötä Nimi-kenttään "InvoiceNumber".</span><span class="sxs-lookup"><span data-stu-id="db607-134">In the Name field, type 'InvoiceNumber'.</span></span>
+    * <span data-ttu-id="db607-135">InvoiceNumber</span><span class="sxs-lookup"><span data-stu-id="db607-135">InvoiceNumber</span></span>  
+12. <span data-ttu-id="db607-136">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="db607-136">Click OK.</span></span>
+13. <span data-ttu-id="db607-137">Valitse Lisää määrite.</span><span class="sxs-lookup"><span data-stu-id="db607-137">Click Add Attribute.</span></span>
+14. <span data-ttu-id="db607-138">Kirjoita Nimi-kenttään "InvoiceAmount".</span><span class="sxs-lookup"><span data-stu-id="db607-138">In the Name field, type 'InvoiceAmount'.</span></span>
+    * <span data-ttu-id="db607-139">InvoiceAmount</span><span class="sxs-lookup"><span data-stu-id="db607-139">InvoiceAmount</span></span>  
+15. <span data-ttu-id="db607-140">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="db607-140">Click OK.</span></span>
+16. <span data-ttu-id="db607-141">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="db607-141">Click Add to open the drop dialog.</span></span>
+17. <span data-ttu-id="db607-142">Valitse puussa solmu XML\Element.</span><span class="sxs-lookup"><span data-stu-id="db607-142">In the tree, select 'XML\Element'.</span></span>
+18. <span data-ttu-id="db607-143">Kirjoita Nimi-kenttään "EnclosedDocs".</span><span class="sxs-lookup"><span data-stu-id="db607-143">In the Name field, type 'EnclosedDocs'.</span></span>
+    * <span data-ttu-id="db607-144">EnclosedDocs</span><span class="sxs-lookup"><span data-stu-id="db607-144">EnclosedDocs</span></span>  
+19. <span data-ttu-id="db607-145">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="db607-145">Click OK.</span></span>
+20. <span data-ttu-id="db607-146">Valitse puusta 'Invoice\EnclosedDocs'.</span><span class="sxs-lookup"><span data-stu-id="db607-146">In the tree, select 'Invoice\EnclosedDocs'.</span></span>
+21. <span data-ttu-id="db607-147">Valitse Lisää elementti.</span><span class="sxs-lookup"><span data-stu-id="db607-147">Click Add Element.</span></span>
+22. <span data-ttu-id="db607-148">Kirjoita Nimi-kenttään "Document".</span><span class="sxs-lookup"><span data-stu-id="db607-148">In the Name field, type 'Document'.</span></span>
+    * <span data-ttu-id="db607-149">Asiakirja</span><span class="sxs-lookup"><span data-stu-id="db607-149">Document</span></span>  
+23. <span data-ttu-id="db607-150">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="db607-150">Click OK.</span></span>
+24. <span data-ttu-id="db607-151">Valitse puusta "Invoice\EnclosedDocs\Document".</span><span class="sxs-lookup"><span data-stu-id="db607-151">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
+25. <span data-ttu-id="db607-152">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="db607-152">Click Add to open the drop dialog.</span></span>
+26. <span data-ttu-id="db607-153">Valitse puussa solmu XML\Attribute.</span><span class="sxs-lookup"><span data-stu-id="db607-153">In the tree, select 'XML\Attribute'.</span></span>
+27. <span data-ttu-id="db607-154">Kirjoita Nimi-kenttään "FileName".</span><span class="sxs-lookup"><span data-stu-id="db607-154">In the Name field, type 'FileName'.</span></span>
+    * <span data-ttu-id="db607-155">FileName</span><span class="sxs-lookup"><span data-stu-id="db607-155">FileName</span></span>  
+28. <span data-ttu-id="db607-156">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="db607-156">Click OK.</span></span>
+29. <span data-ttu-id="db607-157">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="db607-157">Click Add to open the drop dialog.</span></span>
+30. <span data-ttu-id="db607-158">Valitse puussa solmu XML\Element.</span><span class="sxs-lookup"><span data-stu-id="db607-158">In the tree, select 'XML\Element'.</span></span>
+31. <span data-ttu-id="db607-159">Kirjoita Nimi-kenttään "FileContent".</span><span class="sxs-lookup"><span data-stu-id="db607-159">In the Name field, type 'FileContent'.</span></span>
+    * <span data-ttu-id="db607-160">FileContent</span><span class="sxs-lookup"><span data-stu-id="db607-160">FileContent</span></span>  
+32. <span data-ttu-id="db607-161">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="db607-161">Click OK.</span></span>
+33. <span data-ttu-id="db607-162">Valitse puusta "Invoice\EnclosedDocs\Document\FileContent".</span><span class="sxs-lookup"><span data-stu-id="db607-162">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent'.</span></span>
+34. <span data-ttu-id="db607-163">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="db607-163">Click Add to open the drop dialog.</span></span>
+35. <span data-ttu-id="db607-164">Valitse puussa "Text\Base64".</span><span class="sxs-lookup"><span data-stu-id="db607-164">In the tree, select 'Text\Base64'.</span></span>
+36. <span data-ttu-id="db607-165">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="db607-165">Click OK.</span></span>
 
-## <a name="map-format-elements-to-data-model-as-data-source"></a><span data-ttu-id="77e4e-166">Yhdistä muodon elementit tietomalliin tietolähteenä</span><span class="sxs-lookup"><span data-stu-id="77e4e-166">Map format elements to data model as data source</span></span>
-1. <span data-ttu-id="77e4e-167">Valitse puusta "Invoice\SalesOrder".</span><span class="sxs-lookup"><span data-stu-id="77e4e-167">In the tree, select 'Invoice\SalesOrder'.</span></span>
-2. <span data-ttu-id="77e4e-168">Valitse Yhdistämismääritys-välilehti.</span><span class="sxs-lookup"><span data-stu-id="77e4e-168">Click the Mapping tab.</span></span>
-3. <span data-ttu-id="77e4e-169">Laajenna puussa solmu model.</span><span class="sxs-lookup"><span data-stu-id="77e4e-169">In the tree, expand 'model'.</span></span>
-4. <span data-ttu-id="77e4e-170">Valitse puussa "model\Sales order number(SalesId)".</span><span class="sxs-lookup"><span data-stu-id="77e4e-170">In the tree, select 'model\Sales order number(SalesId)'.</span></span>
-5. <span data-ttu-id="77e4e-171">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="77e4e-171">Click Bind.</span></span>
-6. <span data-ttu-id="77e4e-172">Valitse puusta "Invoice\InvoiceNumber".</span><span class="sxs-lookup"><span data-stu-id="77e4e-172">In the tree, select 'Invoice\InvoiceNumber'.</span></span>
-7. <span data-ttu-id="77e4e-173">Laajenna puussa "model\Base invoice(InvoiceBase)".</span><span class="sxs-lookup"><span data-stu-id="77e4e-173">In the tree, expand 'model\Base invoice(InvoiceBase)'.</span></span>
-8. <span data-ttu-id="77e4e-174">Valitse puusta "model\Base invoice(InvoiceBase)\Invoice number(Id)".</span><span class="sxs-lookup"><span data-stu-id="77e4e-174">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice number(Id)'.</span></span>
-9. <span data-ttu-id="77e4e-175">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="77e4e-175">Click Bind.</span></span>
-10. <span data-ttu-id="77e4e-176">Valitse puusta "Invoice\InvoiceAmount".</span><span class="sxs-lookup"><span data-stu-id="77e4e-176">In the tree, select 'Invoice\InvoiceAmount'.</span></span>
-11. <span data-ttu-id="77e4e-177">Valitse puusta "model\Base invoice(InvoiceBase)\Invoice amount(Amount)".</span><span class="sxs-lookup"><span data-stu-id="77e4e-177">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice amount(Amount)'.</span></span>
-12. <span data-ttu-id="77e4e-178">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="77e4e-178">Click Bind.</span></span>
-13. <span data-ttu-id="77e4e-179">Laajenna puussa "model\Invoice attachments".</span><span class="sxs-lookup"><span data-stu-id="77e4e-179">In the tree, expand 'model\Invoice attachments'.</span></span>
-14. <span data-ttu-id="77e4e-180">Valitse puussa "model\Invoice attachments\File content".</span><span class="sxs-lookup"><span data-stu-id="77e4e-180">In the tree, select 'model\Invoice attachments\File content'.</span></span>
-15. <span data-ttu-id="77e4e-181">Valitse puusta "Invoice\EnclosedDocs\Document\FileContent\Base64".</span><span class="sxs-lookup"><span data-stu-id="77e4e-181">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent\Base64'.</span></span>
-16. <span data-ttu-id="77e4e-182">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="77e4e-182">Click Bind.</span></span>
-17. <span data-ttu-id="77e4e-183">Valitse puussa "model\Invoice attachments\File name".</span><span class="sxs-lookup"><span data-stu-id="77e4e-183">In the tree, select 'model\Invoice attachments\File name'.</span></span>
-18. <span data-ttu-id="77e4e-184">Valitse puusta "Invoice\EnclosedDocs\Document\FileName".</span><span class="sxs-lookup"><span data-stu-id="77e4e-184">In the tree, select 'Invoice\EnclosedDocs\Document\FileName'.</span></span>
-19. <span data-ttu-id="77e4e-185">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="77e4e-185">Click Bind.</span></span>
-20. <span data-ttu-id="77e4e-186">Valitse puussa solmu "model\Invoice attachments".</span><span class="sxs-lookup"><span data-stu-id="77e4e-186">In the tree, select 'model\Invoice attachments'.</span></span>
-21. <span data-ttu-id="77e4e-187">Valitse puusta "Invoice\EnclosedDocs\Document".</span><span class="sxs-lookup"><span data-stu-id="77e4e-187">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
-22. <span data-ttu-id="77e4e-188">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="77e4e-188">Click Bind.</span></span>
-23. <span data-ttu-id="77e4e-189">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="77e4e-189">Click Save.</span></span>
-24. <span data-ttu-id="77e4e-190">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="77e4e-190">Close the page.</span></span>
+## <a name="map-format-elements-to-data-model-as-data-source"></a><span data-ttu-id="db607-166">Yhdistä muodon elementit tietomalliin tietolähteenä</span><span class="sxs-lookup"><span data-stu-id="db607-166">Map format elements to data model as data source</span></span>
+1. <span data-ttu-id="db607-167">Valitse puusta "Invoice\SalesOrder".</span><span class="sxs-lookup"><span data-stu-id="db607-167">In the tree, select 'Invoice\SalesOrder'.</span></span>
+2. <span data-ttu-id="db607-168">Valitse Yhdistämismääritys-välilehti.</span><span class="sxs-lookup"><span data-stu-id="db607-168">Click the Mapping tab.</span></span>
+3. <span data-ttu-id="db607-169">Laajenna puussa solmu model.</span><span class="sxs-lookup"><span data-stu-id="db607-169">In the tree, expand 'model'.</span></span>
+4. <span data-ttu-id="db607-170">Valitse puussa "model\Sales order number(SalesId)".</span><span class="sxs-lookup"><span data-stu-id="db607-170">In the tree, select 'model\Sales order number(SalesId)'.</span></span>
+5. <span data-ttu-id="db607-171">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="db607-171">Click Bind.</span></span>
+6. <span data-ttu-id="db607-172">Valitse puusta "Invoice\InvoiceNumber".</span><span class="sxs-lookup"><span data-stu-id="db607-172">In the tree, select 'Invoice\InvoiceNumber'.</span></span>
+7. <span data-ttu-id="db607-173">Laajenna puussa "model\Base invoice(InvoiceBase)".</span><span class="sxs-lookup"><span data-stu-id="db607-173">In the tree, expand 'model\Base invoice(InvoiceBase)'.</span></span>
+8. <span data-ttu-id="db607-174">Valitse puusta "model\Base invoice(InvoiceBase)\Invoice number(Id)".</span><span class="sxs-lookup"><span data-stu-id="db607-174">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice number(Id)'.</span></span>
+9. <span data-ttu-id="db607-175">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="db607-175">Click Bind.</span></span>
+10. <span data-ttu-id="db607-176">Valitse puusta "Invoice\InvoiceAmount".</span><span class="sxs-lookup"><span data-stu-id="db607-176">In the tree, select 'Invoice\InvoiceAmount'.</span></span>
+11. <span data-ttu-id="db607-177">Valitse puusta "model\Base invoice(InvoiceBase)\Invoice amount(Amount)".</span><span class="sxs-lookup"><span data-stu-id="db607-177">In the tree, select 'model\Base invoice(InvoiceBase)\Invoice amount(Amount)'.</span></span>
+12. <span data-ttu-id="db607-178">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="db607-178">Click Bind.</span></span>
+13. <span data-ttu-id="db607-179">Laajenna puussa "model\Invoice attachments".</span><span class="sxs-lookup"><span data-stu-id="db607-179">In the tree, expand 'model\Invoice attachments'.</span></span>
+14. <span data-ttu-id="db607-180">Valitse puussa "model\Invoice attachments\File content".</span><span class="sxs-lookup"><span data-stu-id="db607-180">In the tree, select 'model\Invoice attachments\File content'.</span></span>
+15. <span data-ttu-id="db607-181">Valitse puusta "Invoice\EnclosedDocs\Document\FileContent\Base64".</span><span class="sxs-lookup"><span data-stu-id="db607-181">In the tree, select 'Invoice\EnclosedDocs\Document\FileContent\Base64'.</span></span>
+16. <span data-ttu-id="db607-182">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="db607-182">Click Bind.</span></span>
+17. <span data-ttu-id="db607-183">Valitse puussa "model\Invoice attachments\File name".</span><span class="sxs-lookup"><span data-stu-id="db607-183">In the tree, select 'model\Invoice attachments\File name'.</span></span>
+18. <span data-ttu-id="db607-184">Valitse puusta "Invoice\EnclosedDocs\Document\FileName".</span><span class="sxs-lookup"><span data-stu-id="db607-184">In the tree, select 'Invoice\EnclosedDocs\Document\FileName'.</span></span>
+19. <span data-ttu-id="db607-185">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="db607-185">Click Bind.</span></span>
+20. <span data-ttu-id="db607-186">Valitse puussa solmu "model\Invoice attachments".</span><span class="sxs-lookup"><span data-stu-id="db607-186">In the tree, select 'model\Invoice attachments'.</span></span>
+21. <span data-ttu-id="db607-187">Valitse puusta "Invoice\EnclosedDocs\Document".</span><span class="sxs-lookup"><span data-stu-id="db607-187">In the tree, select 'Invoice\EnclosedDocs\Document'.</span></span>
+22. <span data-ttu-id="db607-188">Valitse Sido.</span><span class="sxs-lookup"><span data-stu-id="db607-188">Click Bind.</span></span>
+23. <span data-ttu-id="db607-189">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="db607-189">Click Save.</span></span>
+24. <span data-ttu-id="db607-190">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="db607-190">Close the page.</span></span>
 
