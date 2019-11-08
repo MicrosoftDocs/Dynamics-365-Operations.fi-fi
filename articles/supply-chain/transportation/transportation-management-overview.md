@@ -1,6 +1,6 @@
 ---
 title: Kuljetustenhallinnan yleiskatsaus
-description: Tässä ohjeaiheessa on Finance and Operationsin kuljetustenhallinnan toimintojen yleiskatsaus.
+description: Tässä ohjeaiheessa on Supply Chain Managementin kuljetustenhallinnan toimintojen yleiskatsaus.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d976ec4d3c294f0ce8e9732b21b9a429f1e47315
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: fa59a8e6e4744c776ec0e1dc84b1f004dbd796f6
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2027058"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653576"
 ---
 # <a name="transportation-management-overview"></a>Kuljetustenhallinnan yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa on Finance and Operationsin kuljetustenhallinnan toimintojen yleiskatsaus.
+Tässä ohjeaiheessa on Supply Chain Managementin kuljetustenhallinnan toimintojen yleiskatsaus.
 
 Kuljetustenhallinnan avulla voit hallita yrityksen kuljetuksia sekä määrittää toimittajan ja reititysratkaisut lähteville ja saapuville tilauksille. Voit esimerkiksi tunnistaa nopeimman reitin tai edullisimman hinnan lähetykselle. Seuraavassa taulukossa kuvataan kuljetustenhallinnan tärkeimmät käyttöskenaariot.
 
@@ -67,23 +67,23 @@ Kuljetustenhallinnan avulla voit hallita yrityksen kuljetuksia sekä määrittä
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-finance-and-operations"></a>Kuljetusten suunnittelu Finance and Operationsissa
+## <a name="planning-transportation-in-supply-chain-management"></a>Kuljetusten suunnittelu Supply Chain Managementissa
 Kuljetustenhallinnassa kuljetusten suunnittelu voidaan tehdä joko tilausten tai niistä luotujen lähetysten perusteella. Lähetykset tapahtuvat aina jossakin vaiheessa, mutta niitä ei tarvita kuljetusten suunnittelussa. Siirtotilaukset kuuluvat lähtevien tilausten skenaarioon, ja ne voidaan suunnitella yhdessä myyntitilausten kanssa. 
 
 ![Kuormapiirustus](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Saapuva kuljetus
-Kun tilaat nimikkeitä toimittajalta, ja nimikkeet on toimitettava varastoosi, haluat ehkä järjestää nimikkeiden kuljetuksen itse. Finance and Operations -ohjelmassa voit suunnitella saapuvan kuorman kuljetuksen ja vastaanoton. Seuraavat kuvat esittävät liiketoimintaprosessin kulkua saapuvan kuorman kuljetuksen suunnittelulle. 
+Kun tilaat nimikkeitä toimittajalta, ja nimikkeet on toimitettava varastoosi, haluat ehkä järjestää nimikkeiden kuljetuksen itse. Supply Chain Management -ohjelmassa voit suunnitella saapuvan kuorman kuljetuksen ja vastaanoton. Seuraavat kuvat esittävät liiketoimintaprosessin kulkua saapuvan kuorman kuljetuksen suunnittelulle. 
 
 ![Saapuvien kuormakuljetusten liiketoimintaprosessin työnkulku](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Lähtevä kuljetus
-Voit suunnitella ja käsitellä lähtevän kuorman tiettyjen nimikkeiden toimittamiseksi yrityksen varastosta asiakkaalle. Finance and Operations -ohjelmassa voit suunnitella lähtevän kuorman kuljetuksen ja toimituksen. Seuraavassa kuvassa on esitetty liiketoiminnan prosessin kulku lähtevien kuormien suunnittelemiseksi ja käsittelemiseksi lähetystä varten. 
+Voit suunnitella ja käsitellä lähtevän kuorman tiettyjen nimikkeiden toimittamiseksi yrityksen varastosta asiakkaalle. Supply Chain Management -ohjelmassa voit suunnitella lähtevän kuorman kuljetuksen ja toimituksen. Seuraavassa kuvassa on esitetty liiketoiminnan prosessin kulku lähtevien kuormien suunnittelemiseksi ja käsittelemiseksi lähetystä varten. 
 
 ![Lähtevien kuormien suunnittelu ja käsittely](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Kuormituksen luonti
-Finance and Operations sisältää Tilavuuteen perustuva kuormituksen luontistrategia -nimisen kuorman luontistrategian. Sen avulla voit käyttää kuormamallissa määritettyjä suurimpia korkeus- ja painoarvoja tai korvata asetukset syöttämällä uudet arvot. Jos haluat käyttää tätä strategiaa, valitse se **Kuormituksen luontistrategia** -kentässä **Asetukset**-pikavälilehdessä **Kuormituksen luonnin työtila** -sivulla. Voit lisätä myös oman kuormituksen rakennuksen strategioita luomalla uuden luokan sovellusobjektipuussa (AOT).
+Supply Chain Management sisältää Tilavuuteen perustuva kuormituksen luontistrategia -nimisen kuorman luontistrategian. Sen avulla voit käyttää kuormamallissa määritettyjä suurimpia korkeus- ja painoarvoja tai korvata asetukset syöttämällä uudet arvot. Jos haluat käyttää tätä strategiaa, valitse se **Kuormituksen luontistrategia** -kentässä **Asetukset**-pikavälilehdessä **Kuormituksen luonnin työtila** -sivulla. Voit lisätä myös oman kuormituksen rakennuksen strategioita luomalla uuden luokan sovellusobjektipuussa (AOT).
 
 
 

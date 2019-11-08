@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3d978f8b991211e477dd8f766fe67432d9d493d0
-ms.sourcegitcommit: c0b581e4c647b6c47bc14d1d7bfe267832afecba
+ms.openlocfilehash: eecfb101af9a91f515aab221181c54d53e358a68
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1913084"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652422"
 ---
 # <a name="create-consumption-reports"></a>Kulutusraporttien luominen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Kun olet luonut ja kirjannut työtilausten kulutusrekisteröinnit käyttöomaisuuden hallinnassa, käytettävissä on kaksi raporttia kulutuksen yksityiskohtien näyttämistä varten.
 
@@ -40,9 +40,14 @@ Kun työtilausten kulutus on kirjattu, voit tulostaa käyttöomaisuuden kulutusr
 
 1. Valitse **Resurssien hallinta** > **raportit** > **Resurssit** > **Resurssien kulutus**.
 
-2. Valitse **Resurssien kulutus** -valintaikkunassa parametrit ja erittelytaso, jotka haluat nähdä, valitsemalla asianmukaisissa vaihtopainikkeissa "kyllä" ja lisäämällä toiminnallisen sijainnin taso **Näytä**-osaan.
-    - **Tasot** -kentän avulla voit määrittää, miten yksityiskohtaisia resurssiriveistä haluat liittyen toiminnallisiin sijainteihin. Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoinen toiminnallinen sijaintirakenne, kaikki toimintosijainnin resurssit näkyvät ylimmällä tasolla, joten rivi voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista. Jos lisäät arvon "0" **Tasot**-kenttään, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki resurssit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät. 
-    - Valitse "kyllä" **Kaikkien aliresurssien summa** -vaihtopainikkeessa, jos haluat nähdä kunkin alakäyttöomaisuuserän summat raportissa.
+2. Valitse **Resurssien kulutus** -valintaikkunassa parametrit ja erittelytaso, jotka haluat nähdä, valitsemalla asianmukaisissa vaihtopainikkeissa **Kyllä** ja lisäämällä toiminnallisen sijainnin taso **Näytä**-osaan.
+    - **Tasot** -kentän avulla voit määrittää, miten yksityiskohtaisia resurssiriveistä haluat liittyen toiminnallisiin sijainteihin. 
+    
+        Jos esimerkiksi annat kentässä arvon "1" ja kyseessä on monitasoinen toiminnallinen sijaintirakenne, kaikki toimintosijainnin resurssit näkyvät ylimmällä tasolla, joten rivi voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista. 
+        
+        Jos annat arvon "0" **Tasot**-kentässä, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki resurssit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät. 
+        
+    - Valitse **Kyllä** **Kaikkien aliresurssien summa** -vaihtopainikkeessa, jos haluat nähdä kunkin alakäyttöomaisuuserän summat raportissa.
 
 3. Valitse päivämääräväli **Päivämäärät** -osassa.
 
@@ -59,7 +64,7 @@ Kun työtilausten kulutus on kirjattu, voit tulostaa työtilauksen kulutusraport
 
 1. Valitse **Resurssien hallinta** > **Raportit** > **Työtilaukset** > **Työtilauksen kulutus**.
 
-2. Valitse **Työtilauksen kulutus** -valintaikkunassa raporttiin sisällytettävät parametrit valitsemalla "kyllä" **Näytä**-osion asianmukaisissa vaihtopainikkeissa.
+2. Valitse **Työtilauksen kulutus**-valintaikkunassa raporttiin sisällytettävät parametrit valitsemalla **Kyllä** **Näytä**-osion asianmukaisissa vaihtopainikkeissa.
 
 3. Valitse päivämääräväli **Päivämäärät** -osassa.
 

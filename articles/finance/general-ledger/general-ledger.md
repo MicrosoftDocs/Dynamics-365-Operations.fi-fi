@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0e795e641314b4ef81f8972aadf597721995fcc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0714314b68651e4b96f83d1073c4e35f5b27b013
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186529"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551630"
 ---
-# <a name="general-ledger-overview"></a>Kirjanpidon yleiskatsaus
+# <a name="general-ledger-and-financial-reporting-overview"></a>Kirjanpidon ja talousraportoinnin yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,7 +59,7 @@ Tutustu suunniteltuihin uusiin ominaisuuksiin siirtymällä [Microsoft Dynamics 
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -blogissa](https://community.dynamics.com/365/financeandoperations/b/financials)on mielipiteitä, uutisia ja muita tietoja.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on Retail-sovellusta ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
 

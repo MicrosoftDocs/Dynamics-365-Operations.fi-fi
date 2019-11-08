@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5f1860907e3cc3c4830cc385771d5924c609ea6
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: 0734416eccf149330b390cce897d2c254f6c698b
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847525"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571619"
 ---
 # <a name="maintenance-request-reports"></a>Ylläpitopyyntöraportit
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Resurssien hallinnassa voit luoda kaksi raporttia, jotka liittyvät ylläpitopyyntöihin. Yhdessä raportissa näkyy tietoja, ja toisessa raportissa on luettelo, jota voidaan käyttää suunnitteluun ja seurantaan.
 
@@ -44,7 +44,7 @@ Resurssien hallinnassa voit luoda kaksi raporttia, jotka liittyvät ylläpitopyy
 
 Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön tiedot** -raportista.
 
-![Kuva 1](media/09-manage-maintenance-requests.png)
+![Ylläpitopyynnön tietoraportti](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Ylläpitopyyntöjen luetteloraportin luominen
 
@@ -57,4 +57,4 @@ Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön tiedot** -raportista.
 
 Seuraavassa kuvassa on esimerkki **Ylläpitopyyntöluettelo** -raportista kaikille aktiivisille yläpitopyynnöille.
 
-![Kuva 2](media/10-manage-maintenance-requests.png)
+![Ylläpitopyynnön luetteloraportti](media/10-manage-maintenance-requests.png)

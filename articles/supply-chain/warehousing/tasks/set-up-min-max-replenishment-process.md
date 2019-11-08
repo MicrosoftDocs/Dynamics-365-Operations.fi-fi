@@ -3,7 +3,7 @@ title: Määritä minimi-/maksimitäydennysprosessi
 description: Seuraavassa menettelyssä kuvataan, miten voit määrittää uuden täydennysprosessin, joka käyttää minimi-/maksimitäydennysstrategiaa.
 author: perlynne
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef3c33125850662cfb0dfba6e6349ce32ceda0af
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
+ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924444"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "2559186"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Määritä minimi-/maksimitäydennysprosessi
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Seuraavassa menettelyssä kuvataan, miten voit määrittää uuden täydennysprosessin, joka käyttää minimi-/maksimitäydennysstrategiaa. Sijainnin täydennystyö luodaan, kun varaston vähimmäistaso laskee minimitason alle. Menettelyssä näytetään myös, miten kiinteitä keräilysijainteja voi käyttää sallimaan täydennys vaikka varastosaldo laskisikin minimitason alle, ja miten täydennysprosessin voi määrittää ajettavaksi säännöllisesti eräajona. Yleensä varastopäällikkö tekee nämä tehtävät. Voit suorittaa tämän menettelyn USMF-malliyrityksessä käyttämällä muistiinpanojen esimerkkiarvoja, tai voit suorittaa sen omilla tiedoillasi. Jos käytät omia tietoja, varmista, että sinulla on varasto, jolla varastonhallintaprosessit ovat käytössä.
+Seuraavassa menettelyssä kuvataan, miten voit määrittää uuden täydennysprosessin, joka käyttää minimi-/maksimitäydennysstrategiaa. Sijainnin täydennystyö luodaan, kun varaston vähimmäistaso laskee minimitason alle. Menettelyssä näytetään myös, miten kiinteitä keräilysijainteja voi käyttää sallimaan täydennys vaikka varastosaldo laskisikin minimitason alle, ja miten täydennysprosessin voi määrittää ajettavaksi säännöllisesti eräajona. Yleensä varastopäällikkö tekee nämä tehtävät. Voit suorittaa tämän menettelyn USMF-malliyrityksessä käyttämällä alla olevia esimerkkiarvoja, tai voit suorittaa sen omilla tiedoillasi. Jos käytät omia tietoja, varmista, että sinulla on varasto, jolla varastonhallintaprosessit ovat käytössä.
 
 
 ## <a name="create-a-fixed-picking-location"></a>Luo kiinteä keräilysijainti

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8b4e783f79b02c77a27fc59c2f4be8a192f2f476
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248697"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553088"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER-mallien varmuuskopion tallennustila
 
@@ -33,7 +33,7 @@ Yrityskäyttäjät voivat määrittää [sähköisen raportoinnin (ER) kehyksen]
 
 Kukin määritetty muoto voidaan julkaista ER-ratkaisun osana. Kukin ER-ratkaisu voidaan viedä yhdestä Finance and Operationsin esiintymästä ja tuoda toiseen esiintymään.
 
-ER-kehys säilyttää nykyisen Finance and Operations -esiintymän pakolliset mallit [tiedostojen hallintakehyksessä](../../fin-and-ops/organization-administration/configure-document-management.md). ER-kehyksen asetusten perusteella Microsoft Azure Blob Storage tai Microsoft SharePoint -kansio voidaan valita mallien ensisijaiseksi fyysiseksi tallennussijainniksi. (Lisätietoja on kohdassa [ER-kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md).) DocuValue-taulu sisältää kunkin mallin yksittäisen tietueen. Kunkin tietueen **AccessInformation**-kenttä sisältää määritetyssä tallennussijainnissa sijaitsevan mallitiedoston polun.
+ER-kehys säilyttää nykyisen Finance and Operations -esiintymän pakolliset mallit [tiedostojen hallintakehyksessä](../../fin-ops/organization-administration/configure-document-management.md). ER-kehyksen asetusten perusteella Microsoft Azure Blob Storage tai Microsoft SharePoint -kansio voidaan valita mallien ensisijaiseksi fyysiseksi tallennussijainniksi. (Lisätietoja on kohdassa [ER-kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md).) DocuValue-taulu sisältää kunkin mallin yksittäisen tietueen. Kunkin tietueen **AccessInformation**-kenttä sisältää määritetyssä tallennussijainnissa sijaitsevan mallitiedoston polun.
 
 Finance and Operations -esiintymiä hallittaessa nykyinen esiintymä voidaan päättää siirtää toiseen sijaintiin. Voit esimerkiksi siirtää tuotantoesiintymän uuteen eristysympäristöön. Jos määrität ER-kehyksen tallentamaan mallit Blob-objektisäilöön, uuden eritysympäristön DocuValue-taulu viittaa tuotantoympäristön Blob-objektisäilöön. Tätä esiintymää ei kuitenkaan voi käyttää eristysympäristössä, koska siirtoprosessi ei tue artefaktien siirtoa Blob-objektisäilössä. Jos sitten yrität luoda liiketoiminta-asiakirjoja suorittamalla mallia käyttävän ER-muodon, tapahtuukin poikkeus ja saat ilmoituksen puuttuvasta mallista. Sinut myös ohjataan käyttämään ER-poistotyökalua sekä poistamaan ja tuomaan uudelleen mallin sisältävä ER-muodon määritys. Koska ER-muodon määrityksiä voi olla useita, tämä prosessi voi kestää kauan.
 

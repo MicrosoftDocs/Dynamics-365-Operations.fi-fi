@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a260be0f8659106907b26bf69bee3b33b09d0c24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181332"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578215"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Luotujen ER-raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
 
@@ -71,9 +71,6 @@ Perusrivi on lisättyyn valittuun **ER-perusrivien oppimismuoto** -muotoon, mutt
 5. Kirjoita **Kirjoita tunnus** -kenttään **1**.
 6. Määritä **Luo perusrivitiedostot** -asetukseksi **Kyllä**.
 7. Valitse **OK**.
-
-    ![Sähköisen raportin parametrit -valintaikkuna](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Näyttökuva Sähköisen raportin parametrit -valintaikkunasta")
-
 8. Valitse **Perusrivit**.
 
     ![Sähköisen raportointimuotojen perusrivit -sivu](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
@@ -140,9 +137,6 @@ Tämän esimerkin vaiheiden suorittaminen edellyttää, että suoritat ensin ohj
 
 1. Valitse **Konfiguroinnit**-sivulla **Korvaava**-pikavälilehdellä **Valitse osat**.
 2. Laajenna muoto-osapuussa ensin**Tuloste** ja sitten **Tuloste\\Asiakirja**. Valitse sitten **Tuloste\\Asiakirja\\ProcessingDateTime** -valintaruutu.
-
-    ![Valitse osat -valintaikkuna](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Näyttökuva Valitse osat -valintaikkunasta")
-
 3. Valitse **OK**.
 
 ![Sähköisen raportointimuotojen perusrivit -sivu](media/GER-BaselineSample-AddBaseline4.PNG "Näyttökuva Sähköisen raportointimuotojen perusrivit -sivusta")
@@ -162,19 +156,14 @@ Määrittämällä tietyt ER-parametrit voit piilottaa muodon sidosten korvaamis
 1. Valitse **Konfiguroinnit**-sivun toimintoruudun **Konfiguroinnit**-välilehdessä **Käyttäjän parametrit**.
 2. Määritä **Piilota perusrivivaroitukset** -asetukseksi **Kyllä** ja valitse sitten **OK**.
 
-![Käyttäjän parametrit -valintaruutu](media/GER-BaselineSample-ERUserParameters1.png "Näyttökuva Käyttäjän parametrit -valintaikkunasta")
-
 ### <a name="review-the-generated-baseline-file"></a>Luodun perusrivitiedoston tarkasteleminen
 
 1. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Konfiguraatiot**.
 2. Valitse **Perusrivit**.
 3. Valitse **Liitteet**.
-
-    ![Liitteet-sivu](media/GER-BaselineSample-AttachedBaselineFile.PNG "Näyttökuva Liitteet-sivusta")
-
     > [!NOTE]
     > Luotu tiedosto sisältää käsittelypäivämäärän ja -ajan tekstin (**"#"**) lisätyssä perusrivisäännössä määritetystä sidoksesta eikä muodon sidoksesta.
-
+    
 4. Sulje **Liitteet**-sivu.
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Suunnitellun ER-muoto suorittaminen ja tulosten analysointi lokia tarkastelemalla

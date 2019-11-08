@@ -17,18 +17,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 33e5993f57a8c0248ac2e314f91cc40a2b355858
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249422"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653461"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Ostotilauksen hyväksymisen mobiilityötila
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Tässä ohjeaiheessa on tietoja **ostotilausten hyväksymisen** mobiilityötilasta. Voit tarkastella työtilassa ostotilauksia ja vastata niihin eri toiminnoilla. Voit esimerkiksi hyväksyä tai hylätä ostotilauksen.
  
@@ -41,7 +39,7 @@ Hyväksymistä edellyttävät ostotilaukset läpäisevät hyväksymistyönkulun.
 Edellytykset vaihtelevat sen mukaan, mikä Supply Chain Management -versio on otettu käyttöön organisaatiossasi.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Supply Chain Managementin käytön edellytykset 
-Jos Finance and Operations on otettu käyttöön organisaatiossasi, järjestelmänvalvojan on julkaistava **Ostotilauksen hyväksyntä** -mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Jos Supply Chain Management on otettu käyttöön organisaatiossasi, järjestelmänvalvojan on julkaistava **Ostotilauksen hyväksyntä** -mobiilityötila. Ohjeet ovat ohjeaiheessa [Mobiilityötilan julkaiseminen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Edellytykset, jos käytössä on Microsoft Dynamics 365 for Operationsin versio 1611 ja Platform update 3 tai uudempi
 Jos organisaatiossa on otettu käyttöön Microsoft Dynamics 365 for Operationsin versio 1611 ja Platform update 3 tai uudempi, järjestelmänvalvojan on toteutettava seuraavat edellytykset. 

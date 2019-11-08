@@ -1,9 +1,9 @@
 ---
-title: Uudet ja muuttuneet ominaisuudet – aloitussivu
+title: Finance and Operationsin aloitussivun uudet ominaisuudet ja muutokset
 description: Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Finance and Operations -sovellusten uusista ominaisuuksista.
 author: josaw1
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: c2dd8093102f92391cd782cda77afb17a3560010
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7559ef3aa3ce816d375f263ff4a4e0cf3d632249
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249294"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658710"
 ---
-# <a name="whats-new-or-changed-home-page"></a>Uudet ja muuttuneet ominaisuudet – aloitussivu
+# <a name="whats-new-or-changed-in-finance-and-operations-home-page"></a>Finance and Operationsin aloitussivun uudet ominaisuudet ja muutokset
 [!include [banner](../includes/banner.md)]
 
-Tällä sivulla viittaa ohjeaiheisiin, joiden avulla saat tietoja uusimpien Finance and Operations -sovellusten uusista ominaisuuksista.
+Lokakuusta 2019 alkaen tätä sivua ei ole ylläpidetty. Tämän aiheen tiedoista ilmenee, missä esitetään tietoja ennen lokakuuta 2019 julkaistujen Finance and Operations -sovellusten ominaisuuksista.
 
 Tietoja päivittämisestä uuteen versioon on kohdassa [Uusinta päivitystä koskeva päivitysprosessi](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
@@ -49,13 +49,6 @@ Tässä taulukossa luetellaan sovelluksen tärkeimmät versiot. Lisätietoja pil
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Microsoft Dynamics 365 for Finance and Operations</td>
-<td>10.0.6</td>
-<td>10.0.234</td>
-<td>marraskuu 2019</td>
-<td><a href="whats-new-changed-10-0-6.md">Dynamics 365 for Finance and Operations -version 10.0.6 esikatselutoiminnot (marraskuu 2019)</a></td>
-</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.5</td>
@@ -183,13 +176,6 @@ Tässä taulukossa luetellaan sovelluksen tärkeimmät versiot. Lisätietoja pil
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Microsoft Dynamics 365 for Finance and Operations</td>
-<td>Ympäristön update 30 -päivitys</td>
-<td>7.0.5407</td>
-<td>marraskuu 2019</td>
-<td><a href="whats-new-platform-update-30.md">Dynamics 365 for Finance and Operations -käyttöympäristöpäivitys 30:n esikatselutoiminnot (marraskuu 2019)</a></td>
-</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Ympäristön update 29 -päivitys</td>

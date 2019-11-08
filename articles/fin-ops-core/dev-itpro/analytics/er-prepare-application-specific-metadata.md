@@ -16,14 +16,14 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c036eab38845db8427c447b27cce0be8048669fd
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 74750397dc344d74c018c27114357d3d05b95b7e
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248651"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550104"
 ---
-# <a name="prepare-application-specific-metadata-for-rcs"></a>RCS:n sovelluskohtaisten metatietojen valmisteleminen
+# <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>RCS:n ja ER:n sovelluskohtaisten metatietojen valmisteleminen
 
 [!include[banner](../includes/banner.md)]
 

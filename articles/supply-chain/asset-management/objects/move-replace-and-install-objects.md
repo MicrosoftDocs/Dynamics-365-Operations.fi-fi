@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0e6306698d351d33cae627e3741ad9a2eb6d893
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 30145a56de4f7e3dce039968791d2fc9b960077f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783249"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571527"
 ---
 # <a name="move-replace-and-install-assets"></a>Resurssien siirtäminen, korvaaminen ja asentaminen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Tässä ohjeaiheessa kerrotaan, miten resursseja siirretään, korvataan ja asennetaan resurssien hallinnassa. Voit luoda yksittäisiä resursseja, joilla ei ole suhteita muihin resursseihin, tai voit luoda resurssirakenteen, joka sisältää pääresurssin (ylätason resurssi) ja siihen liittyvät aliresurssit. Resurssien hallinnassa on kolme lähestymistapaa, joilla resurssin sijaintia siirretään ja muutetaan:
 

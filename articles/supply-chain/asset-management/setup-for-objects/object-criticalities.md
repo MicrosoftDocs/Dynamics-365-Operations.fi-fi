@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660038060826ade9301e50143e49b53ba3fcd3ab
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f96fcc7ebb8928c6d6b17b30465ad1625d9b5be4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783241"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571067"
 ---
-# <a name="asset-criticalities"></a>Resurssin kriittisyydet
+# <a name="asset-criticality-types"></a>Resurssin kriittisyystyypit
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Aiheessa selitetään resurssin kriittisyystyypit resurssien hallinnassa. Resurssin kriittisyys liittyy resursseihin ja ne siirretään työtilauksiin. Sitä ei voi muuttaa työtilauksessa. Resurssin kriittisyyttä käytetään laskettaessa työtilauksen kriittisyyttä työtilausten ajoituksessa. Toisin sanoen sen avulla lasketaan, missä määrin resurssin kunnossapitotyö vaikuttaa yrityksen tuotantoaikatauluun ja tuottavuuteen. Lisätietoja asetuksista, jotka liittyvät työtilausten ajoituksen luokituspisteiden laskentaan, on kohdassa [Resurssien hallinnan parametrit.](../setup-for-objects/enterprise-asset-management-parameters.md)
 
@@ -43,7 +43,7 @@ Voit määrittää kriittisyyden määrittämällä ensin kriittisyystyypit, joi
 4. Kirjoita **Nimi**-kenttään kriittisyystyypin nimi.
 5. Syötä **Kerroin**-kenttään kerroin. Tätä kerrointa käytetään työtilausten ajoittamisen laskennassa, kun määritetään käytettävä kriittisyystietue. (Tietuetta, jonka kerroin on korkein, käytetään aina.) Tämä asetus on merkityksellinen, jos, kuten seuraavasta kuvasta näkyy, luodaan kriittisyysrivejä, joilla on sama kriittisyysarvo.
 
-    ![Kuva 1](media/23-setup-for-objects.png)
+    ![Kriittisyyden tyyppisivu](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Määritetä resurssin kriittisyydet.
 

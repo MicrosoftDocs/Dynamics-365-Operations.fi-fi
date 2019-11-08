@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f7af87f359cfe3a606c8be857dd905bfef75e97
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: c42f259a57675c3dbac829d6d671e91982ef9011
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847456"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571688"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Luo työtilauksia ylläpitopyynnöistä
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Kun olet luonut ylläpitopyyntöjä, voit helposti muuntaa ne työtilauksiksi. Tässä aiheessa kuvataan nopein tapa käsitellä ylläpitopyyntöjä, päivittää useita ylläpitopyyntöjä samanaikaisesti ja luoda sitten työtilaus useille ylläpitopyynnöille samanaikaisesti. **Aktiiviset ylläpitopyynnöt** -tai **Omat toiminnallisen sijainnin ylläpitopyynnöt** -sivulla voit käsitellä myös yhtä ylläpitopyyntöä kerrallaan ja muuntaa yhdenylläpito pyynnön työtilaukseksi.
@@ -53,5 +53,5 @@ Kun olet luonut ylläpitopyyntöjä, voit helposti muuntaa ne työtilauksiksi. T
 
 6. Valitse **Resurssien hallinta** \> **Yhteiset** \> **Työtilaukset** \> **Kaikki työtilaukset** ja avaa uusi työtilaus.
 
-    ![Kuva 1](media/05-manage-maintenance-requests.png)
+    ![Uuden työtilauksen avaaminen](media/05-manage-maintenance-requests.png)
 

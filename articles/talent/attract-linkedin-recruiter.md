@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 366dc2be6e35098dba4b26a34bb75a84913549f5
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8f2e95e74bbc8d78ed5d970f29b61150a45c6740
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008567"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551561"
 ---
-# <a name="source-candidates-with-linkedin-recruiter"></a>Ehdokkaiden rekrytointi LinkedIn Recruiter -ratkaisulla
+# <a name="source-candidates-with-linkedin-recruiter-in-microsoft-dynamics-365-talent---attract"></a>Ehdokkaiden rekrytointi LinkedIn Recruiterilla Microsoft Dynamics 365 Talent – Attractissa
 [!include[banner](../includes/banner.md)]
 
 LinkedIn on maailman suurin verkossa toimiva asiantuntijaverkosto, jonka avulla koko maailman parhaat osaajat ovat käytettävissä. Microsoft Dynamics 365 Talent: Attractin avulla voit rekrytoida ehdokkaita suoraan LinkedInistä. Niinpä sopivien osaajien löytäminen avoimiin työpaikkoihin on helpompaa kuin koskaan. Kun olet muodostanut LinkedIn-yhteyden Attractin kautta, voit tarkastella työpaikkaan sopivia mahdollisia LinkedIn-ehdokkaita ja viedä heidät Attractiin yhdellä napsautuksella.

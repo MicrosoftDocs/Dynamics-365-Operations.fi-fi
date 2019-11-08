@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbc8e4b942c3c5307d90bfd08a33a8b27c4352d2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249724"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658807"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentaation tai koulutuksen luominen tehtävän tallennustoiminnolla
 
@@ -68,21 +68,21 @@ Pidä seuraavat tiedot mielessäsi, kun olet luomassa uutta tehtävätallennetta
 
 Tämä on muokkausruutu, joka näkyy, kun lisäät huomautuksen tallenteen luomisen yhteydessä. Syötä otsikkohuomautus **Otsikko**-ruutuun. 
 
-[![screen1](./media/screen1.png)](./media/screen1.png) 
+[![Muokkausruutu ja otsikkohuomautus](./media/screen1.png)](./media/screen1.png) 
 
 Otsikkohuomautus näyttää tältä tehtäväoppaan kuplassa. 
 
-[![screen2](./media/screen2.png)](./media/screen2.png)
+[![Otsikkohuomautuksen ulkoasu tehtäväoppaassa](./media/screen2.png)](./media/screen2.png)
 
 -   **Ilmoitukset:** Ilmoitusten huomautus tulee näkyviin tehtävän tallennustoiminnon automaattisesti luoman vaihetekstin jälkeen. Se näkyy tehtävän ohjauksessa vain, jos käyttäjä valitsee tehtävän ohjauksen kuplassa **Näytä lisää** -linkin. Voit käyttää tämän tyyppistä huomautusta kuvatessasi mitä tahansa tahansa käyttäjän vaiheen suorittamisessa tarvitsemia tietoja.
 
 Tämä on muokkausruutu, joka näkyy, kun lisäät huomautuksen tallenteen luomisen yhteydessä. Syötä ilmoitusten huomautus **Ilmoitukset**-ruutuun. 
 
-[![screen3](./media/screen3.png)](./media/screen3.png) 
+[![Muokkausruutu ja huomautus ilmoitusruudussa](./media/screen3.png)](./media/screen3.png) 
 
 Ilmoitusten huomautus näyttää tältä tehtäväoppaan kuplassa.
 
-[![screen4](./media/screen4.png)](./media/screen4.png)
+[![Ilmoitushuomautuksen ulkoasu tehtäväoppaassa](./media/screen4.png)](./media/screen4.png)
 
 -   **Tiedot-vaihe**: Nämä huomautukset luodaan napsauttamalla ohjausobjektia tai jotain lomakkeen kohtaa hiiren kakkospainikkeella &lt; **Tehtävän tallennustoiminto** &lt; **Lisää Tiedot-vaihe**. Tiedot-vaiheet näkyvät numeroituina vaiheina paikassa, johon ne lisätään, vaikka toimintoa ei olisi tallennettu käyttöliittymässä. Voit lisätä lomaketason Tiedot-vaiheen tai ohjausobjektiin liitetyn Tiedot-vaiheen. Kun Tiedot-vaihe on liitetty lomakkeeseen, tehtävän ohjauksen kupla tulee näkyviin lomakkeeseen ilman osoitinta tehtävän ohjauksen toiston aikana. Kun Tiedot-vaihe on liitetty ohjausobjektiin, tehtävän ohjauksen kupla tulee osoittaa ohjausobjektiin tehtäväoppaan toiston aikana. Ohjeruudussa näkyy Tiedot-vaiheen huomautus numeroituna vaiheena. Huomautus sisältää syöttämäsi tekstin. Käytä Tiedot-vaiheita käyttäjän valmisteluun seuraavia vaiheita varten, sovelluksen ulkopuolella tehtäviä vaiheita varten tai muihin tallenteisiin viittaamisessa (vaikka huomautuksiin ei voikaan luoda hyperlinkkejä).
 

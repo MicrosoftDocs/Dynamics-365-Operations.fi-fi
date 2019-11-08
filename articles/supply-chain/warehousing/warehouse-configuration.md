@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026713"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653415"
 ---
 # <a name="warehouse-configuration-overview"></a>Varaston konfigurointi – yleiskatsaus
 
@@ -34,7 +34,7 @@ Tässä artikkelissa kerrotaan, miten varasto määritetään. Artikkeli sisält
 **Huomautus:** Tässä artikkelissa käsitellään **Varastonhallinta** -moduulin toimintoja (varaston lisätoiminnot). Se ei koske **Inventoinnin- ja varastonhallinta** -moduulin varasto-ominaisuuksia.
 
 ## <a name="warehouse-layout"></a>Varastoasettelu
-Finance and Operationsin varastonhallintajärjestelmä mahdollistaa varastoasettelun määrittämisen joustavasti muuttuvien tarpeiden mukaan siten, että varastoa voidaan käyttää mahdollisimman tehokkaasti.
+Supply Chain Managementin varastonhallintajärjestelmä mahdollistaa varastoasettelun määrittämisen joustavasti muuttuvien tarpeiden mukaan siten, että varastoa voidaan käyttää mahdollisimman tehokkaasti.
 
 -   Voit määrittää suuren ja pienen prioriteetin varastoalueita tavaroiden optimaalisen sijoitusta varten.
 -   Voit jakaa varaston vyöhykkeisiin erilaisten varastotarpeiden mukaan, joita ovat esimerkiksi lämpötilavaatimukset tai nimikkeiden erilaiset läpimenoajat.
@@ -42,7 +42,7 @@ Finance and Operationsin varastonhallintajärjestelmä mahdollistaa varastoasett
 -   Voit ryhmittää sijainnit fyysisen kapasiteetin rajoitusasetuksilla.
 -   Voit määrittää kyselymäärityssäännöillä, miten nimikkeet varastoidaan ja kerätään.
 
-Finance and Operationsin varastonhallinnan käyttöä varten on luotava varasto ja otettava käyttöön varastonhallinnan lisä- tai erikoistoiminnot. Valitse **Varastot**-sivulla **Käytä varastonhallintaprosesseja**.
+Supply Chain Managementin varastonhallinnan käyttöä varten on luotava varasto ja otettava käyttöön varastonhallinnan lisä- tai erikoistoiminnot. Valitse **Varastot**-sivulla **Käytä varastonhallintaprosesseja**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Vyöhykeryhmät, vyöhykkeet, sijaintityypit ja sijainnit
 
@@ -54,7 +54,7 @@ Osana varastoasettelun käyttöönottoprosessia on määritettävä varaston vy�
 -   **Sijaintityypit** – Varastosijaintien looginen tai fyysinen ryhmittely. Voit esimerkiksi luoda sijaintityypin kaikille väliaikaisille sijainneille. **Varastonhallinnan parametrit** -sivun pakolliset asetukset määrittävät väliaikaisten sijaintityyppien ja lopullisen lähetyssijaintityypin määritysprosessin.
 -   **Sijainnit** – Sijaintitietojen alin taso. Sijaintien avulla voidaan seurata, mihin käytettävissä oleva varasto on varastoitu ja mistä se kerätään varastossa.
 
-Varastoasettelun määrittämistä varten luotuja yksiköitä käytetään kyselyissä, jotka määritetään työmalleissa siirtämään varaston työtilauksia. Niinpä sinun on otettava esimerkiksi vyöhykkeitä ja sijaintityyppejä määritettäessä huomioon, miten varaston eri alueita käytetään eri prosesseissa. Ota huomioon myös tietyn alueen fyysiset ominaisuudet. Joillakin alueilla voi esimerkiksi käyttää vain tietyn tyyppistä trukkia. Tai jos yrityksen tiloissa on sekä valmiita tuotteita että tuotantoa, Finance and Operations -järjestelmään kannattaa ehkä luoda yksi varasto mutta erottaa sitten nämä toiminnot luomalla kaksi vyöhykeryhmää. Anna yksiköille kuvaileva nimi, jotta ne on helppo tunnistaa, kun käytät niitä mallikyselyissä.
+Varastoasettelun määrittämistä varten luotuja yksiköitä käytetään kyselyissä, jotka määritetään työmalleissa siirtämään varaston työtilauksia. Niinpä sinun on otettava esimerkiksi vyöhykkeitä ja sijaintityyppejä määritettäessä huomioon, miten varaston eri alueita käytetään eri prosesseissa. Ota huomioon myös tietyn alueen fyysiset ominaisuudet. Joillakin alueilla voi esimerkiksi käyttää vain tietyn tyyppistä trukkia. Tai jos yrityksen tiloissa on sekä valmiita tuotteita että tuotantoa, Supply Chain Management -järjestelmään kannattaa ehkä luoda yksi varasto mutta erottaa sitten nämä toiminnot luomalla kaksi vyöhykeryhmää. Anna yksiköille kuvaileva nimi, jotta ne on helppo tunnistaa, kun käytät niitä mallikyselyissä.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Sijainnin varastointirajoitukset, sijaintiprofiilit ja kiinteät keräilysijainnit
 

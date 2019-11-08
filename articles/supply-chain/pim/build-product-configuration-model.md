@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f8e0e98cf1a953355515f9145483aed8cbaa2ad2
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249491"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653645"
 ---
 # <a name="product-configuration-overview"></a>Tuotemääritys – yleiskatsaus
 
@@ -73,7 +73,7 @@ Taulukon rajoitukset voivat olla joko käyttäjän tai järjestelmän määritt�
 
 Käyttäjän määrittämän taulurajoituksen rakentaa käyttäjä. Käyttäjä valitsee määritetyyppien yhdistelmän kuvaamaan taulukon sarakkeita ja syöttää sitten arvot valittujen määritetyyppien toimialueilta muodostamaan taulurajoituksen rivit.  
 
-Järjestelmän määrittämä taulurajoitus määritetään valitsemalla viitteenä käytettävä taulu ja valitsemalla sitten tästä taulusta kentät, jotka muodostavat rajoituksen sarakkeet. Taulurajoituksen rivit ovat Finance and Operations -taulukossa määrityshetkellä olevat rivit.  
+Järjestelmän määrittämä taulurajoitus määritetään valitsemalla viitteenä käytettävä taulu ja valitsemalla sitten tästä taulusta kentät, jotka muodostavat rajoituksen sarakkeet. Taulurajoituksen rivit ovat Supply Chain Management -taulukossa määrityshetkellä olevat rivit.  
 
 Taulurajoitus sisällytetään tuotemääritysmalliin viittaamalla taulurajoituksen määritykseen ja yhdistämällä mallin asiaankuuluvat määritteet taulurajoituksen sarakkeisiin.
 

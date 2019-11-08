@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cff84f8f6c42fd064258b8ca53e24acc8059977
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c17a0240c29dad58c958ab1ce844ee5d8384bd1f
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175398"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658926"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Määritä arvonlisäveron tilityskaudet
 
@@ -42,7 +42,7 @@ Tässä tehtävässä käytetään esittely-yritystä USMF.
 9. Syötä kausivälien yksiköiden määrä kautta kohti. Esimerkiksi neljännesvuosi sisältää 3 kuukautta.
 10. Valitse **Käytä arvonlisäveron tilitykseen eräprosessia** -valintaruutu tai poista sen valinta. Tilityskauden tilitysprosessi voidaan käsitellä taustalla erätyönä. Tätä suositellaan, jos kausiväli sisältää paljon verotapahtumia.  
     > [!NOTE]
-    > Tällä hetkellä tätä ei tueta Itävallassa, Belgiassa, Espanjassa, Italiassa, Japanissa tai Alankomaissa.
+    > Tällä hetkellä tätä ei tueta Espanjassa, Japanissa tai Alankomaissa.
 11. Valitse **Estä verotapahtumien vastakirjauksien luonti** -valintaruutu tai poista sen valinta. Järjestelmä luo oletusarvoisesti verotapahtumien vastakirjauksia selvitysprosessin aikana, mikä voi heikentää suorituskykyä, jos kausiväliin sisältyy suuri määrä verotapahtumia. Estä verotapahtumien vastakirjauksien luonti valitsemalla tämä valintaruutu.
 12. Laajenna **Kausivälit**-välilehti.
 13. Valitse **Lisää**.

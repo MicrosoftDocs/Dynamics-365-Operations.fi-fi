@@ -3,7 +3,7 @@ title: Manuaalisesti luodut työtilaukset
 description: Tässä ohjeaiheessa selitetään, miten työtilaukset luodaan manuaalisesti käyttöomaisuuden hallinnassa.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,131 +16,153 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 261448a134a7c1aacfbb4ea6f954ce03a63c23e2
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875629"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626244"
 ---
 # <a name="manually-created-work-orders"></a>Manuaalisesti luodut työtilaukset
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
-
 
 Voit luoda työtilauksia manuaalisesti kahdella tavalla:
 
-- kohdassa **Kaikki työtilaukset** ta **Aktiiviset työtilaukset**  
-- kohdassa **Kaikki ylläpitopyynnöt** tai **Aktiiviset ylläpitopyynnöt** tai **Omat toiminnallisen sijainnin ylläpitopyynnöt**  
+- Sivulla **Kaikki työtilaukset** tai **Aktiiviset työtilaukset** 
+- Sivulla **Kaikki ylläpitopyynnöt**, **Aktiiviset ylläpitopyynnöt** tai **Omat toiminnallisen sijainnin ylläpitopyynnöt** 
 
 ## <a name="create-work-order"></a>Luo työtilaus
 
-1. Valitse **Resurssien hallinta** >  **yhteiset** >  **työtilaukset** >  **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssienhallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
-2. Valitse **Uusi**-painike.
+2. Valitse **Uusi**.
 
-3. Valitse avattavasta **Luo työtilaus** -luettelosta työtilauksen tyyppi.
+3. Valitse työtilaustyyppi **Luo työtilaus**-valintaikkunan **Työtilaustyyppi**-kentässä.
 
-4. Valitse kuvaus tarvittaessa.
+4. Valitse tarvittaessa **Kuvaus**.
 
-5. Valitse työtilauksen resurssi sekä ylläpitotyön tyyppi.
+5. Valitse resurssi **Resurssi**-kentässä.
 
 >[!NOTE]
->Kun valitset resurssin, käytettävissä voi olla kolme välilehteä: **Omat resurssit** -väliehti sisältää resurssit, jotka liittyvät toiminnallisiin sijainteihin, joihin sinut voidaan (järjestelmään kirjautuneena kunnossapitotyöntekijänä) kohdistaa (määritetään kohdassa [Ylläpitotyöntekijät ja työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md)). Jos [Ylläpitotyöntekijät ja työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md) -kohdassa ei ole määritetty toiminnallisia sijainteja työntekijälle, **Omat resurssit** -välilehti ei ole näkyvissä. **Aktiiviset resurssit** -välilehti sisältää luettelon kaikista resursseista, joiden elinkaaritila on Aktiivinen. **Resurssinäkymä** -väli ehdessä näkyy puunäkymä toiminnallisista sijainneista ja näihin sijainteihin asennetuista resursseista.
+>Kun valitset resurssin, avattavassa **Resurssi**-välilehdellä voi olla käytettävissä kolme välilehteä: 
 
-6. Valitse tarvittaessa **Ylläpitotyön tyypin variantti** ja **Toimiala**.
+- **Aktiiviset resurssit** – Tämä välilehti sisältää luettelon kaikista resursseista, joiden elinkaaritila on aktiivinen. 
+- **Resurssinäkymä** – Tässä välilehdessä näkyy puunäkymä toiminnallisista sijainneista ja niihin asennetuista resursseista.
+- **Omat resurssit** – Tämä välilehti sisältää resursseja, jotka liittyvät niihin toiminnallisiin sijainteihin, joille sinut (järjestelmään kirjautunut työntekijä) voidaan kohdentaa. (Lisätietoja määrityksestä esitetään kohdassa [Ylläpitotyöntekijät ja -työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md).)Jos työntekijälle ei ole määritetty toiminnallisia sijainteja kohdassa [Ylläpitotyöntekijät ja -työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md), **Omat resurssit** -välilehti ei ole käytettävissä. 
 
-7. Jos tarpeen, voit muuttaa työtilauksen palvelutasoa **Palvelutaso**-kentässä.
+6. Valitse **Ylläpitotyön tyyppi** -kentässä ylläpitotyön tyyppi työtilaukselle.
 
-8. Valitse liittyvissä kentissä odotetut alkamis- ja päättymispäivämäärät.
+7. Valitse tarvittaessa **Ylläpitotyön tyypin variantti** ja **Toimiala**.
 
-9. Luo uusi työtilaus valitsemalla **OK**.
+8. Jos tarpeen, voit muuttaa työtilauksen palvelutasoa **Palvelutaso**-kentässä.
 
-10. Muokkaa työtilausta kohdassa **Kaikki työtilaukset** tarpeen mukaan.
+9. Valitse päivämäärät kentissä **Odotettu alku** ja **Odotettu loppu**.
 
-- **Kaikki työtilaukset** -kohdassa voit lisätä useita käyttökohteita työtilaukseen Tiedot-näkymässä lisäämällä rivejä **Työtilauksen ylläpitotyöt** -pikavälilehteen. Voit valita resurssille vain ylläpitotyölajit, jotka liittyvät käyttöomaisuuserälle määritetyn resurssityypin asetuksiin.  
-- Jos olet muuttanut käyttöomaisuuden palvelutasoa tai käyttöomaisuuden kriittisyyttä sen jälkeen, kun olet käyttänyt niitä työtilauksessa (katso lisätietoja kohdassa [Resurssien palvelutasot](../setup-for-objects/object-priorities.md) ja [Resurssien kriittisyydet](../setup-for-objects/object-criticalities.md)), työtilauksen palvelutasoa tai kriittisyyttä ei päivitetä vastaavasti.
-- Työtilauksen kriittisyys lasketaan uudelleen aina, kun työtilausivi lisätään työtilaukseen tai poistetaan siitä.
-- **Kaikki työtilaukset** -näkymän **Otsikko**-näkymän **Ajoita**-pikavälilehdessä voit valita vastuullisen huoltotyöntekijäryhmän tai vastuulisen kunnossapitotyöntekijän **Vastuullinen ryhmä**- tai **Vastuuhenkilö**-kentissä. Näitä asetuksia voidaan muuttaa niin kauan kuin työtilaus on aktiivinen – esimerkiksi silloin, kun työtilauksen elinkaaren tila muuttuu. Työtilauksen luonnin yhteydessä tehtävä automaattinen valinta perustuu **Vastaavat ylläpitotyöntekijät** -asetuksiin. Jos lisäät tai poistat työtilaustöitä työtilauksen luomisen jälkeen ja **Vastaava ryhmä** -kenttä ja **Vastuuhenkilö**-kenttä ovat tyhjiä, kun päivität työtilauksen, käyttöomaisuuden hallinta etsii mahdollisen vastineen asetuslomakkeesta vastuulliskesi huoltotyöntekijäryhmäksi tai vastaavaksi kunnossapitotyöntekijäksi. Jos **Vastuuryhmä**-kenttä tai **vastuuhenkilö**-kenttä on jo täytetty, kun päivität työtilauksen, muutoksia ei tehdä. 
+10. Luo työtilaus valitsemalla **OK**.
 
-- **Ylläpidon tila** -kohdassa saat laskennan avulla saat yleiskuvan saapuvien ja suoritettujen työtilausten kuormituksesta.  
+11. **Kaikki työtilaukset** -luettelosivulla voit muokata työtilausta tarpeen mukaan.
 
-- Lisää maantieteelliset koordinaatit työtilaustyössä valitulle käyttöomaisuudelle **Rivin tiedot** -pikavälilehden **Leveysaste**- ja **Pituusaste**-kenttien avulla.  
+Huomaa seuraavat seikat:
+
+- **Kaikki työtilaukset** -luettelosivun tietonäkymässä voit lisätä useita käyttökohteita työtilaukseen lisäämällä rivejä **Työtilauksen ylläpitotyöt** -pikavälilehteen. Resurssille voi valita vain sellaisia ylläpitotyötyyppejä, jotka on määritetty resurssille vallitulle resurssityypille.  
+
+- Jos muutat resurssin palvelutasoa tai kriittisyyttä sen jälkeen, kun resurssia on käytetty työtilauksessa, työtilauksen palvelutasoa tai kriittisyyttä ei päivitetä vastaavasti. Lisätietoja palvelutasoista ja kriittisyydestä esitetään kohdissa [Resurssien palvelutasot](../setup-for-objects/object-priorities.md) ja [Resurssien kriittisyydet](../setup-for-objects/object-criticalities.md).
+
+- Työtilauksen kriittisyys lasketaan uudelleen aina, kun työtilaustehtävä lisätään työtilaukseen tai poistetaan siitä.
+
+- Siirry **Kaikki työtilaukset** -tietonäkymän > **Otsikko**-välilehden > **Aikataulu**-pikavälilehteen, jonka kentässä **Vastuuryhmä** tai **Vastuuhenkilö** voit valita vastaavan ylläpitotyöntekijäryhmän tai vastaavan ylläpitotyöntekijän. Näitä asetuksia voi muuttaa, kun työtilaus on aktiivinen. Niitä voi muuttaa esimerkiksi, kun työtilauksen elinkaaren tila muuttuu. Työtilauksen luonnin yhteydessä tehtävä automaattinen valinta perustuu **Vastaavat ylläpitotyöntekijät** -sivun määrityksiin. Jos lisäät tai poistat työtilaustehtäviä työtilauksen luomisen jälkeen ja kentät **Vastuuryhmä** ja **Vastuuhenkilö** ovat tyhjiä, kun päivität työtilauksen, resurssienhallinta etsii määrityssivulta mahdollisen vastineen vastuulliskesi ylläpitotyöntekijäryhmäksi tai vastaavaksi ylläpitopitotyöntekijäksi. Jos kenttä **Vastuuryhmä** tai **Vastuuhenkilö** on jo määritetty, kun päivität työtilauksen, muutoksia ei tehdä. Lisätietoja vastaavista ylläpitotyöntekijöistä ja työntekijäryhmistä esitetään kohdassa [Vastaavat ylläpitotyöntekijät](../setup-for-maintenance-requests/responsible-workers.md).
+
+- [Ylläpidon tila](../controlling-and-reporting/maintenance-status.md) -sivulla voit suorittaa laskutoimituksen saadaksesi yleiskuvan saapuvien ja suoritettujen työtilausten kuormituksesta.  
+
+- **Kaikki työtilaukset**-sivun tietonäkymän **Rivitiedot**-pikavälilehdessä voit käyttää kenttiä **Leveyspiiri** ja **Pituuspiiri** lisätäksesi maantieteelliset koordinaatit työtilaustehtävässä valitulle resurssille.  
+
 
 ## <a name="create-related-work-order"></a>Luo tähän liittyvä työtilaus
 
-Voit luoda liittyvän työtilauksen aiemmin luotuun työtilaukseen, jos haluat käyttää esimerkiksi ensisijaisia ja toissijaisia työtilauksia. Uusi työtilaus perustuu aiemmin luodun työtilauksen työtilaustyöhön.
+Voit luoda työtilauksen, joka liittyy olemassa olevaan työtilaukseen. Tämä ominaisuus on käytännöllinen, jos esimerkiksi haluat käyttää ensisijaisia ja toissijaisia työtilauksia. Uusi työtilaus perustuu aiemmin luodun työtilauksen työtilaustyöhön.
 
-1. Valitse **Resurssien hallinta** >  **yhteiset** >  **työtilaukset** >  **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssienhallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
-2. Valitse työtilaus, jolle haluat tehdä liittyvän työtilauksen.
+2. Valitse työtilaus, jolle luodaan liittyvä työtilaus.
 
-3. Valitse **Liittyvä työtilaus**.
+3. Valitse toimintoruudun **Työtilaus**-välilehden **Uusi**-ryhmässä **Liittyvä työtilaus**.
 
-4. Valitse avattavasta **Luo liittyvä työtilaus** -valintaikkunasta työtilaustyö, jolle haluat luoda liittyvän työtilauksen **Työtilauksen työ** -kentässä.
+4. Valitse avattavasta **Luo liittyvä työtilaus** -valintaikkunan **Työtilaustehtävä** -kentässä työtilaustehtävä, jolle haluat luoda liittyvän työtilauksen.
 
-5. Valitse ylläpitotyön tyyppi **Ylläpitotyön tyyppi** -kentässä ja tarvittaessa liittyvä kunnossapitotöiden tyypin variantti ja toimiala **Ylläpitotyön tyypin variantti**- ja **Toimiala**-kentissä.
+5. Valitse ylläpitotyön tyyppi **Ylläpitotyön tyyppi** -kentässä.
 
-6. Jos kyseessä on ensimmäinen liittyvä työtilaus, napsauta **Uusi työtilaus** -valintanappia.
+6. Valitse **Ylläpitotyön tyypin variantti**- ja **Toimiala**-kentissä tarpeen mukaan ylläpitotyön tyypin variantti ja toimiala.
 
-7. Valitse **Työtilauksen tyyppi** ja **Kuvaus** liittyvissä kentissä.
+7. Jos tämä työtilaus on ensimmäinen valitulle työtilaukselle luotu liittyvä työtilaus, toimi seuraavasti:
+    1. Valitse **Uusi työtilaus**.
+    2. Valitse **Työtilaustyyppi**-kentässä työtilauksen tyyppi.
+    3. Syötä **Kuvaus**-kenttään kuvaus.
+    4. Muuta tarvittaessa työtilauksen palvelutasoa **Palvelutaso**-kentässä.
+    5. Valitse alkamis- ja päättymispäivämäärät kentissä **Odotettu alku** ja **Odotettu loppu**.
+    6. Valitse **OK**. Uusi liittyvä työtilaus näkyy **Kaikki työtilaukset** -luettelosivulla.  
 
-8. Jos tarpeen, muuta työtilauksen palvelutasoa **Palvelutaso**-kentässä.
+8. Jos työtilauksella, jolle luot liittyvää työtilausta, on jo liittyviä työtilauksia, lisää olemassa olevaan liittyvään työtilaukseen uusi työtilaustehtävä seuraavalla tavalla:
+    1. Valitse **Lisää liittyvään työtilaukseen**.
+    2. Valitse **Työtilaus**-kentässä se liittyvä työtilaus, jolle lisätään uusi työtilaustehtävä.
+    3. Muuta tarvittaessa työtilauksen palvelutasoa **Palvelutaso**-kentässä.
+    4. Muuta tarvittaessa odotettuja alkamis- ja päättymispäivämääriä kentissä **Odotettu alku** ja **Odotettu loppu**.
+    5. Valitse **OK**. Työtilauksen työ lisätään aiemmin luotuun työtilaukseen.
 
-9. Lisää liittyvissä kentissä odotetut alkamis- ja päättymispäivämäärät.
-
-10. Valitse **OK**. Uusi liittyvä työtilaus näkyy **Kaikki työtilaukset** -luettelossa.
-
-11. Jos luot työtilaukseen liittyvän työtilauksen, johon on jo liitetty työtilauksia, voit lisätä työtilaustyön jo liittyvään työtilaukseen. Tämän voi tehdä valitsemalla vaiheessa 6 **Lisää liittyvään työtilaukseen** -valintanappi. Tämän jälkeen voit valita liittyvän työtilauksen, johon haluat lisätä uuden työtilaustyön. Muokkaa **Palvelutaso**-, **Odotettu aloitus**- ja **Odotettuja loppu** -kenttiä tarpeen mukaan ja valitse **OK**. Työtilauksen työ lisätään aiemmin luotuun työtilaukseen.
-
+Seuraavassa kuvassa on esimerkki **Luo liittyvä työtilaus** -valintaikkunasta.
 
 ![Kuva 1](media/03-work-orders.png)
 
-**Huomautus:** Jos olet määrittänyt liittyvän työtilauspeitteen **Resurssienhallinnan parametrit** > **Työtilaukset** -linkki > **Liittyvän työtilauksen peite** -kentässä, työtilaustunnukset luodaan peitteen asetusten mukaisesti. Jos liittyvää työtilauksen peitettä ei ole määritetty, seuraavaa käytettävissä olevaa työtilaustunnusta käytetään liittyvissä työtilauksissa.
+>[!NOTE]
+>Jos olet määrittänyt liittyvän työtilauspeitteen kentässä **Resurssienhallinnan parametrit** > **Työtilaukset** > **Liittyvä työtilauspeite**, työtilaustunnukset luodaan peitemäärityksen mukaisesti. Jos liittyvää työtilauksen peitettä ei ole määritetty, seuraavaa käytettävissä olevaa työtilaustunnusta käytetään liittyvissä työtilauksissa.
 
-## <a name="copy-work-order"></a>Kopioi työtilaus
+## <a name="copy-a-work-order"></a>Työtilauksen kopiointi
 
-Uuden työtilauksen voi luoda nopeasti aiemmin luodusta työtilauksesta. Tämä työtilausten käsittelytapa eroaa ylläpitosuunnitelmiin perustuvien työtilausten luonnista. Siitä on hyötyä esimerkiksi silloin, kun työtilaus sisältää useita työtilaustöitä, joissa on erilaisia töitä, jotka on suoritettava säännöllisin väliajoin.
+Uuden työtilauksen voi luoda nopeasti aiemmin luodusta työtilauksesta. Tämä tapa käyttää työtilauksia eroaa työtilausten luomisesta [ylläpitosuunnitelmien](../preventive-and-reactive-maintenance/maintenance-plans.md) perusteella. Siitä on hyötyä, jos työtilaus esimerkiksi sisältää useita työtilaustehtäviä ja nämä eri tehtävät on suoritettava eri resursseille säännöllisin väliajoin.
 
-1. Valitse **Resurssien hallinta** >  **yhteiset** >  **työtilaukset** >  **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssienhallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
-2. Valitse työtilaus, josta haluat kopioida sisältöä.
+2. Valitse työtilaus, josta sisältöä kopioidaan.
 
-3. Valitse **Kopioi työtilaus**. Näkyviin tulee valitun työtilauksen asetukset. Voit tarvittaessa muokata joitakin kenttiä.
+3. Valitse toimintoruudun **Työtilaus**-välilehden **Uusi**-ryhmässä **Kopioi työtilaus**.
 
-4. Luo uusi työtilaus valitsemalla **OK**.
+4. Näkyviin tulee valitun työtilauksen asetukset. Voit muokata osaa kentistä tarpeen mukaan.
 
-5. Muokkaa työtilausta kohdassa **Kaikki työtilaukset** tarpeen mukaan.
+5. Luo uusi työtilaus valitsemalla **OK**.
+
+6. **Kaikki työtilaukset** -luettelosivulla voit muokata työtilausta tarpeen mukaan.
 
 >[!NOTE]
->Kun uusi työtilaus luodaan, osa tiedoista kopioidaan suoraan olemassa olevasta työtilauksesta. Ennusteita, työkaluja, ylläpidon tarkistuslistoja, toiminnallista sijaintia, osoitteita ja aikataulutusta koskevia tietoja ei kopioida, vaan ne alustetaan käyttöomaisuuden hallinnan nykyisistä asetuksista. Tämä merkitsee, että jos näihin tietoihin tehdään muutoksia ensimmäisen työtilauksen luomisajan kohdan jälkeen siihen saakka, kun työtilauksen kopio on tehty, muutokset sisällytetään uuteen työtilaukseen, jonka olet luonut. Esimerkkejä ovat ennusteiden tai päivitettyjen huoltotarkistusluetteloiden muutokset.
+>Kun uusi työtilaus luodaan, osa tiedoista kopioidaan suoraan olemassa olevasta työtilauksesta. Ennusteita, työkaluja ylläpidon tarkistuslistoja, toiminnallista sijaintia, osoitteita ja aikatauluja koskevia tietoja ei kopioida. Sen sijaan ne perustuvat resurssienhallinnan kulloisiinkin määrityksiin. Siten, jos kyseisiä tietoja on muutettu ensimmäisen työtilauksen luomisen ja työtilauksen kopioinnin välisenä aikana, muutokset sisällytetään uuteen työtilaukseen. Esimerkkejä ovat muutokset ennusteisiin ja päivitykset ylläpidon tarkistuslistoihin.
 
+Seuraavassa kuvassa on esimerkki **Kopioi työtilaus** -valintaikkunasta.
 
 ![Kuva 2](media/04-work-orders.png)
 
 
-## <a name="create-work-order-based-on-a-maintenance-request"></a>Työtilauksen luominen ylläpitopyynnön perusteella
+## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Työtilauksen luominen ylläpitopyynnön perusteella
 
-1. Valitse **Resurssien hallinta**  >  **yhteiset**  >  **Ylläpitopyynnöt**  >  **Kaikki ylläpitopyynnöt** tai **Aktiiviset ylläpitopyynnöt**.
+1. Valitse **Resurssien hallinta** > **Yhteiset** > **Ylläpitopyynnöt** > **Kaikki ylläpitopyynnöt** tai **Aktiiviset ylläpitopyynnöt**.
 
-2. Valitse ylläpitopyynnöt, joille haluat luoda työtilauksen, ja valitse sitten **Muokkaa**.
+2. Valitse ylläpitopyyntö, jolle luodaan työtilaus, ja valitse sitten **Muokkaa**.
 
-3. Valitse kohdassa **Kaikki pyynnnöt** **Työtilaus**.
+3. Valitse toimintoruudun **Ylläpitopyyntö**-välilehden **Uusi**-ryhmässä **Työtilaus**.
 
-4. Täytä avattava **Työtilaus**-luettelo. Jos kunnossapitotyön tyyppi on valittu ylläpitopyynnössä, voit tarvittaessa valita toisen kunnossapitotyön tyypin, kun luot työtilauksen.
+4. Määritä kentät **Työtilaus**-valintaikkunassa. Jos ylläpitotyön tyyppi on valittu ylläpitopyynnössä, voit tarvittaessa valita toisen kunnossapitotyön tyypin, kun luot työtilauksen.
 
-5. Valitse **OK**. Näkyviin tulee sanoma, jossa ilmoitetaan, että työtilaus on luotu.
+5. Valitse **OK**. Saat ilmoituksen työtilauksen luomisesta.
 
-6. Jos haluat nähdä, mitkä työtilaukset on liitetty ylläpitopyyntöön, valitse ylläpitopyyntö kohdassa **Kaikki ylläpitopyynnöt** tai **Aktiiviset ylläpitopyynnöt** ja valitse **Työtilaukset**-painike.
+6. Valitsemalla ylläpitopyynnön luettelosivulla **Kaikki ylläpitopyynnöt** tai **Aktiiviset ylläpitopyynnöt** voit tarkastella ylläpitopyyntöön liittyviä työtilauksia. Valitse sitten toimintoruudun **Ylläpitopyyntö**-välilehden **Näytä**-ryhmässä **Työtilaukset**.
 
+
+Seuraavassa kuvassa on esimerkki **Luo työtilaus** -valintaikkunasta.
 
 ![Kuva 3](media/05-work-orders.png)
 
 
 >[!NOTE]
->Työtilauksia voi luoda automaattisesti myös määrittämällä ylläpitosuunnitelman työt aikataulutuksen mukaan tai määrittämällä käyttöomaisuuserän huoltosuunnitelmat tai ylläpitokierrokset. **Ylläpitoaikataulu**-kohdassa lylläpitopyynnöistä uodut työtilaukset luodaan ylläpitopyynnöissä valituilla kunnossapitotöiden tyypeillä.
+>Työtilauksia voi luoda automaattisesti myös ajoittamalla ylläpitosuunnitelman töitä tai määrittämällä resurssien [ylläpitosuunnitelmien](../preventive-and-reactive-maintenance/maintenance-plans.md) tai [ylläpitokierrosten](../preventive-and-reactive-maintenance/maintenance-rounds.md) automaattinen luonti. **Kaikki ylläpitoaikataulut**-luettelosivulla ylläpitopyynnöistä luoduilla työtilauksilla on ylläpitopyynnöissä valitut ylläpitotyötyypit.
 

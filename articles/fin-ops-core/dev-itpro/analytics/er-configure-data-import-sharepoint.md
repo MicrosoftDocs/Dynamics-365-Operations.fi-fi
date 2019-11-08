@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 143cd51a3ea34a6b05da049d87819b3dfee95725
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181516"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564934"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Tietojen SharePointista tuonnin määrittäminen
 
@@ -62,9 +62,9 @@ Toista **ER -tuo tiedot Microsoft Excel -tiedostosta** -tehtäväoppaat, jotka o
 > Toimittajatapahtumien tuonnin muoto valitaan oletusmallimääritykseksi. Siksi, jos suoritat **1099-maksumallin** mallin määrityksen ja tämä mallin määritys on **Kohteeseen**-tyyppiä, mallin määritys suorittaa tätä muotoa, tuodakseen tietoja ulkoisista tiedostoista. Sitten se käyttää näitä tietoja sovellustaulujen päivittämiseen.
 
 ## <a name="configure-access-to-sharepoint-for-file-storage"></a>SharePoint-käytön määrittäminen tiedostojen tallennusta varten
-Jos haluat tallentaa sähköiset raporttitiedostot SharePoint-sijaintiin, sinun on määritettävä käyttöoikeus nykyisen yrityksen käyttämään SharePoint Server -esiintymään. Tässä esimerkissä yritys on USMF. Lisätietoja on kohdassa [SharePoint-tallennustilan määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+Jos haluat tallentaa sähköiset raporttitiedostot SharePoint-sijaintiin, sinun on määritettävä käyttöoikeus nykyisen yrityksen käyttämään SharePoint Server -esiintymään. Tässä esimerkissä yritys on USMF. Lisätietoja on kohdassa [SharePoint-tallennustilan määrittäminen](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-1. Suorita kohdan [SharePoint-tallennustilan määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) vaiheet.
+1. Suorita kohdan [SharePoint-tallennustilan määrittäminen](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) vaiheet.
 2. Avaa määritetty SharePoint-sivusto.
 3. Luo seuraavat kansiota, joihin saapuvat ER-tiedostot voidaan tallentaa:
 
@@ -80,7 +80,7 @@ Jos haluat tallentaa sähköiset raporttitiedostot SharePoint-sijaintiin, sinun 
     - Tiedostojen virhekansio – tämä kansio on tarkoitettu tiedostoille, joiden tuonti epäonnistui.
 
 4. Siirry kohtaan **Organisaation hallinto > Asiakirjojen hallinta > Asiakirjatyypit**.
-5. Luo seuraavat tiedostotyypit, joilla voi käyttää juuri luotuja SharePoint-kansioita. Lisätietoja on kohdassa [Tiedostotyyppien määrittäminen](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
+5. Luo seuraavat tiedostotyypit, joilla voi käyttää juuri luotuja SharePoint-kansioita. Lisätietoja on kohdassa [Tiedostotyyppien määrittäminen](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Tiedostotyyppi       | Ryhmä              | Paikka      | SharePoint-kansio      |
 |--------------------|--------------------|---------------|------------------------|

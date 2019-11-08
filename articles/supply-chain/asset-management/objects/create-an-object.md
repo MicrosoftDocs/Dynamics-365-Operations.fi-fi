@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd963caed7f49db5dd7550dd30c3f831318d2b7a
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 1a4759f55eceba923b47d906a764edcad34bf2f2
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250895"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571596"
 ---
 # <a name="create-an-asset"></a>Luo resurssi
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Tässä ohjeaiheessa kerrotaan, miten resurssi luodaan resurssien hallinnassa.
 

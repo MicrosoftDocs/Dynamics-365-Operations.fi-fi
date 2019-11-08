@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249606"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570998"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Ylläpitotöiden tyyppiluokat ja ylläpitotöiden tyypit, ylläpitotöiden tyyppien variantit, ylläpitotöiden toimialat ja ylläpidon tarkistuslistat
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Käyttöomaisuustyyppi on liitetty jokaiseen käyttöomaisuuserään. Käyttöomaisuustyypit määrittävät kunnossapitotöiden tyypit (ja näin ollen kunnossapitotyöt), jotka voidaan suorittaa omaisuuserille. Sinun on valittava ylläpitotyötyyppi, kun luot työtilauksen. Voit valita vain ylläpitotyölajit, jotka liittyvät käyttöomaisuuserän tyypin asetuksiin.
 
@@ -59,7 +59,7 @@ Ensin määrität tarvittavat ylläpitotöiden tyyppiluokat, ylläpitotöiden ty
 
     Kun kunnossapitotöiden tyyppiluokat on liitetty kunnossapitotyötyyppeihin, **Työlajit**-kentässä näkyy tähän kunnossapitotyötyyppiin liittyvien huoltotöiden tyyppien määrä.
 
-![Kuva 1](media/01-setup-for-work-orders.png)
+![Ylläpitotyön tyypin luokkasivu](media/01-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type-variant"></a>Luo ylläpitotyön tyypin variantti
 
@@ -73,7 +73,7 @@ Ensin määrität tarvittavat ylläpitotöiden tyyppiluokat, ylläpitotöiden ty
 
     **Tiedot**-pikavälilehden **Työtyypit**-kentässä näkyy kunnossapitotöiden tyyppien määrä, jotka on lisätty tähän kunnossapitotöiden tyyppivarianttiin.
 
-![Kuva 2](media/02-setup-for-work-orders.png)
+![Ylläpitotyön tyypin varianttisivu](media/02-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-trade"></a>Luo ylläpitotyön toimilala
 
@@ -94,7 +94,7 @@ Ensin määrität tarvittavat ylläpitotöiden tyyppiluokat, ylläpitotöiden ty
 
     **Tiedot**-pikavälilehden **Todistukset**-kentässä näkyy todistuksien määrä, jotka on lisätty tähän kunnossapitotöiden toimialaan.
 
-![Kuva 3](media/03-setup-for-work-orders.png)
+![Ylläpitotyön toimialasivu](media/03-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-variable"></a>Huollon tarkistusluettelon muuttujan luominen
 
@@ -115,7 +115,7 @@ Kun kunnossapitotyön oletustyypissä luodaan huollon tarkistusluettelon rivejä
 6. Syötä arvon kuvaus **Arvo**-kentässä.
 7. Valitse **Tulos**-kentästä rivin tulos.
 
-![Kuva 4](media/04-setup-for-work-orders.png)
+![Ylläpidon tarkistuslistan muuttujasivu](media/04-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-template"></a>Huollon tarkistusluettelon mallin luominen
 
@@ -144,7 +144,7 @@ Kunnossapidon tarkistusluettelomalleja voidaan käyttää yhteisenä tehtävälu
 
     **Tiedot**-pikavälilehden **Tarkistukset** -kentässä näkyy mallin tarkistusluettelorivien kokonaismäärä. Tämä määrä sisältää sisäkkäiset rivit kaikissa aiemmin luoduissa malleissa, joihin olet viitannut mallissa.
 
-![Kuva 5](media/05-setup-for-work-orders.png)
+![Ylläpidon tarkistuslistan mallisivu](media/05-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type"></a>Luo ylläpitotyön tyyppi
 
@@ -167,7 +167,7 @@ Kunnossapidon tarkistusluettelomalleja voidaan käyttää yhteisenä tehtävälu
 
 11. **Resurssityypit**-pikavälilehdessä voit lisätä käyttöomaisuustyyppejä ylläpitotyön tyyppiin.
 
-![Kuva 6](media/06-setup-for-work-orders.png)
+![Ylläpitotyön tyyppisivu](media/06-setup-for-work-orders.png)
 
 ## <a name="create-maintenance-job-type-default-lines-and-related-forecasts-maintenance-checklists-tools-description-and-attachments"></a>Luo kunnossapitotöiden tyypin oletusrivit ja niihin liittyvät ennusteet, ylläpidon tarkistus luettelot, työkalut, kuvaus ja liitteet
 
@@ -236,7 +236,7 @@ Kunnossapidon tarkistusluettelomalleja voidaan käyttää yhteisenä tehtävälu
 31. Jos haluat kopioida kunnossapitotyön tyypin oletusarvon toiseen kunnossapitotyön tyyppiin, valitse oletusrivi, johon haluat kopioida toisen asetuksen, valitse **Kopioi asetukset** ja valitse sitten kopioitava ylläpitotyön tyypin oletus.
 32. Jos haluat tarkastella käyttöomaisuuksien, ylläpitosuunnitelmien tai kunnossapitokierrosten luetteloita, jotka käyttävät tällä hetkellä ylläpitotyön tyypin oletusriviä, valitse rivi ja valitse sitten **Käyttäjä**.
 
-![Kuva 7](media/07-setup-for-work-orders.png)
+![Ylläpitotyön tyyppien oletussivu](media/07-setup-for-work-orders.png)
 
 Kun järjestelmä valitsee käytettävissä olevan kunnossapitotyön tyypin oletus arvon, jota käytetään työtilausrivillä, valinta perustuu käyttöomaisuuserään ja siihen liittyviin käyttöomaisuustyypin asetuksiin. Käyttöomaisuuden hallinta käy läpi kaikki kunnossapitotöiden tyypin oletustietueet, jotka liittyvät käyttöomaisuustyyppiin liittyvään ylläpitotyön tyyppiin, jotta mahdollinen vastaavuus voidaan tarkistaa. Se tarkistaa aina kaikkein erikoisimman yhdistelmän ensin. Toisin sanoen, jos haluat löytää tarkimman yhdistelmän, käyttöomaisuuden hallinta tarkistaa ensin, onko **Toimiala**-kentässä mahdollista vastinetta. Jos vastaavuutta ei löydy, se tarkistaa **Ylläpitotyön tyypin variantti** -kentän vastaavuuden. Jos vastaavuutta ei löydy, se etsii vastaavuutta **Ylläpitotyön tyyppi** -kentästä ja niin edelleen (**Toimiala**, sitten **Ylläpitotyön tyypin variantti**, **Ylläpitotyön tyyppi**, sitten **Resurssi**, sitten **Malli**, sitten **Valmistaja** ja sitten **Resurssityyppi**). Jos vastinetta ei löydy, käytetään oletustietuetta, jossa valitaan vain ylläpitotyön tyyppi.
 
@@ -257,7 +257,7 @@ Kun olet luonut tarvittavat ylläpitotyötyypin oletusyhdistelmät, voit käytt�
 4. Valitse ylläpitotöiden tyyppien yhdistelmä nähdäksesi liittyvät asetukset ylläpidon tarkistuslistoille, ennusteille ja työkaluille. **Ylläpitotyön tyyppien oletukset** -pikavälilehden **Tiedot**-osassa näkyy valittuun kunnossapitotöiden tyyppiyhdistelmään liittyvien huoltotarkistusluetteloiden, ennustettujen tuntien ja nimikkeiden jne. määrä.
 5. Voit tarkastella valitun kunnossapitotyön tyypin tietoja valitsemalla **Ylläpitotyön tyypit**.
 
-![Kuva 8](media/08-setup-for-work-orders.png)
+![Resurssien ylläpidon työtyyppisivu](media/08-setup-for-work-orders.png)
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Kunnossapitotöiden tyypin ennusteiden automaattinen päivitys
 

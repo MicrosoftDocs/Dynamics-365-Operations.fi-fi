@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f68e11a1cd14bc35282b957a4262cbecdd627b3b
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 151db9ca8a121759e39b690ec296b36a18dc1729
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790490"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571159"
 ---
-# <a name="maintenance-request-states"></a>Ylläpitopyynnön tilat
+# <a name="maintenance-request-lifecycle-states"></a>Ylläpitopyynnön elinkaaritilat
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Huoltopyynnön elinkaaritilat määrittävät vaiheet, jotka pyyntö voi käydä läpi. Esimerkkejä ovat **Luotu**, **Aktiivinen** ja **Päättynyt**. Kun ylläpitopyyntö muunnetaan työtilaukseksi, kunnossapitopyynnön elinkaaren tilaksi päivitetään **Päättynyt** tai **Suljettu**, mikä osoittaa, että ylläpitopyyntö ei ole enää aktiivinen. **Kaikki ylläpitopyynnöt** -luettelosivulla näkyvät kaikki ylläpitopyynnöt niiden elinkaaritilasta riippumatta.
@@ -51,7 +51,7 @@ Huoltopyynnön elinkaaritilat määrittävät vaiheet, jotka pyyntö voi käydä
 
 Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön elinkaaren tilat** -sivusta.
 
-![Kuva 1](media/02-setup-for-requests.png)
+![Ylläpitopyynnön elinkaaritilasivu](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Huoltopyynnön elinkaaritilat, elinkaaren tilaryhmät ja -tyypit liittyvät toisiinsa ja niitä käytetään samalla tavalla kuin työtilauksen elinkaaritiloja, elinkaaren tilaryhmiä ja -tyyppejä. 
@@ -80,4 +80,4 @@ Kun olet luonut kunnossapitopyynnöille tarvittavat elinkaaritilat, ne voidaan j
 
 Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön elinkaarimallit** -sivusta.
 
-![Kuva 2](media/06-setup-for-requests.png)
+![Ylläpitopyynnön elinkaarimallisivu](media/06-setup-for-requests.png)
