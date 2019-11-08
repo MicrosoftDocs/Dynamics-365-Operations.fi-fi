@@ -18,20 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6fad4d57b8e08c839ac0ffac2324c02304335ef
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 953c4bb17329205c5d8d14b6570a6bac152e9320
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887225"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652146"
 ---
 # <a name="schedule-work-orders"></a>Ajoita työtilauksia
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Tässä ohjeaiheessa selitetään, miten työtilaukset ajoitetaan käyttöomaisuuden hallinnassa. Työtilauksen vaadittu tuntimäärä määritetään työtilauksen töiden ennustettujen tuntien summana vähennettynä kirjattujen tuntien määrällä. Jos aikaa tarvitaan enemmän, työtilauksen ennustetta on muutettava vastaavasti. Kohdassa **Resurssien hallinta** > **yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset** voit tarkastella tai muokata työtilauksen ennusteita valitsemalla työtilauksen ja valitsemalla  **Ennuste** **Työtilaus**-välilehdessä. Kun työtilaukset on luotu ja arvioitu, seuraavaksi on kohdistettava tarvittavat kunnossapitotyöntekijät ja työkalut työtilausten suorittamista varten..
+Tässä ohjeaiheessa selitetään, miten työtilaukset ajoitetaan käyttöomaisuuden hallinnassa. 
+
+Työtilauksen vaadittu tuntimäärä määritetään ennustettujen tuntien summana vähennettynä kirjattujen tuntien määrällä. Jos aikaa tarvitaan enemmän, ennustetta on muutettava vastaavasti. Kohdassa **Resurssien hallinta** > **yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset** voit tarkastella tai muokata työtilauksen ennusteita valitsemalla työtilauksen ja valitsemalla **Ennuste** **Työtilaus**-välilehdessä. Kun työtilaukset on luotu ja arvioitu, seuraavaksi on kohdistettava tarvittavat kunnossapitotyöntekijät ja työkalut työtilausten suorittamista varten.
 
 Voidaan ajoittaa vain työtilaukset, joissa on työtilauksen elinkaaritila, joka sallii ajoituksen. Ajoitus sallitaan kohdan **Resurssien hallinta** > **Asetukset** > **Työtilaukset** > **Elinkaaren tilat** > **Yleiset** -pikavälilehti > **Salli ajoitus** -valitsin.
 
@@ -43,8 +45,8 @@ Voidaan ajoittaa vain työtilaukset, joissa on työtilauksen elinkaaritila, joka
 
 4. **Ajoita työtilaukset** -valintaikkunassa voit tarvittaessa lisätä odotettuun alkamispäivämäärään ja palvelutasoon liittyviä valintoja. Jos ajoitusprosessissa on huomioitava muiden töiden jo ajoitettujen resurssien kapasiteettirajoitukset, varmista, että **Resurssi**, **Työkalu** ja **Työntekijä**-vaihtopainikkeiksi on määritetty "Kyllä".
 
->[!NOTE]
->Jos määrität **Resurssi**-, **Työkalu**- ja **Työntekijä**-vaihtopainikkeiksi Ei, aiemmin luodut varaukset ohitetaan. Infolokissa näkyy luettelo päällekkäisistä työtilausaikatauluista, ja voit avata työtilauksen ja ajoittaa sen tarvittaessa uudelleen valitsemalla viestit.
+    [!NOTE]
+    Jos määrität **Resurssi**-, **Työkalu**- ja **Työntekijä**-vaihtopainikkeiksi Ei, aiemmin luodut varaukset ohitetaan. Infolokissa näkyy luettelo päällekkäisistä työtilausaikatauluista, ja voit avata työtilauksen ja ajoittaa sen tarvittaessa uudelleen valitsemalla viestit.
 
 5. Jos haluat lisätietoja aikataulutuksesta, valitse "Kyllä" **Yksityiskohtainen**-vaihtopainikkeessa. Tämä tarkoittaa, että työtilausten ja kunnossapitotyöntekijöiden laskettujen tulosten tiedot näkyvät infolokissa.
 
@@ -114,5 +116,7 @@ Työtilausten työntekijöiden laskennassa käytettävät luokituspisteet määr
 
 ## <a name="competencies-used-in-work-order-scheduling"></a>Työtilausten suunnittelussa käytettävät osaamistiedot
 
-Osaamisalueiden ja sertifikaattien vaatimukset voidaan määrittää ylläpitotyötyypeille (**Resurssien hallinta** > **Asetukset** > **Työt** > **ylläpitotöiden tyypit**) jaylläpitotöiden toimialoille (**Resurssien hallinta** > **Asetukset** > **Työt** > **ylläpitotyön toimiala**). Kunnossapitotöiden tyypit ja kunnossapitotöiden toimialat valitaan työtilaustöille. Jos osaamislaueet tai sertifikaatit on valittu kunnossapitotöiden tyypille tai kunnossapitotöiden toimialalle ja jos kyseistä kunnossapitotyön tyyppiä tai kunnossapitotyön toimialaa on käytetty työtilaustyössä, vain osaamisalueissa ja sertifikaateissa vastaavat huoltotyö tekijät on ajoitetaan työskentelemään työtilaukselle.
+Osaamisalueiden ja sertifikaattien vaatimukset voidaan määrittää ylläpitotyötyypeille (**Resurssien hallinta** > **Asetukset** > **Työt** > **ylläpitotöiden tyypit**) jaylläpitotöiden toimialoille (**Resurssien hallinta** > **Asetukset** > **Työt** > **Ylläpitotyön toimiala**). 
+
+Kunnossapitotöiden tyypit ja kunnossapitotöiden toimialat valitaan työtilaustöille. Jos osaamislaueet tai sertifikaatit on valittu kunnossapitotöiden tyypille tai kunnossapitotöiden toimialalle ja jos kyseistä kunnossapitotyön tyyppiä tai kunnossapitotyön toimialaa on käytetty työtilaustyössä, vain osaamisalueissa ja sertifikaateissa vastaavat huoltotyö tekijät on ajoitetaan työskentelemään työtilaukselle.
 

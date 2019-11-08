@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 956c866a6b39e2a81f085910e00d2bfe8683829c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177609"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658641"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
 
@@ -138,13 +138,19 @@ Yleisenä ohjeena voi sanoa, että kun työskentelet mobiilisuunnittelijan kanss
 
 Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka on määritetty käyttäjälle tarkistettavaksi. Voit suunnitella tämän mobiilisivun **VendMobileInvoiceAssignedToMeListPage**-sivulla. Ennen kuin suoritat nämä toimet, varmista, että vähintään yksi toimittajalasku on määritetty itsellesi tarkistettavaksi, ja että laskurivillä on kaksi jakoa. Tämä määritys täyttää tämän skenaarion vaatimukset.
 
-1.  Korvaa URL-osoitteessa valikkovaihtoehdon nimi merkkijonolla **VendMobileInvoiceAssignedToMeListPage**, jos haluat avata **Minulle määritetyt odottavat toimittajan laskut** -luettelosivun mobiiliversion **Ostoreskontra**-moduulissa. Tässä sivussa näkyvät ne laskut, jotka on järjestelmässä liitetty sinulle. Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tarvitset vain jonkin sinulle määritetyn laskun, jonka avulla voit suunnitella mobiilisivun. Käytettävissä olevat uudet sivut on suunniteltu erityisesti kehittämään mobiiliskenaarioita toimittajalaskuille. Siksi sinun on käytettävä näitä sivuja. URL-osoitteen pitäisi olla samantyyppinen seuraavan osoitteen kanssa, ja siihen siirryttyäsi sinun pitäisi nähdä oheisen kuvan mukainen sivu: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Minulle määritettyjen odottavien toimittajalaskujen luettelosivu](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  Korvaa URL-osoitteessa valikkovaihtoehdon nimi merkkijonolla **VendMobileInvoiceAssignedToMeListPage**, jos haluat avata **Minulle määritetyt odottavat toimittajan laskut** -luettelosivun mobiiliversion **Ostoreskontra**-moduulissa. Tässä sivussa näkyvät ne laskut, jotka on järjestelmässä liitetty sinulle. Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tarvitset vain jonkin sinulle määritetyn laskun, jonka avulla voit suunnitella mobiilisivun. Käytettävissä olevat uudet sivut on suunniteltu erityisesti kehittämään mobiiliskenaarioita toimittajalaskuille. Siksi sinun on käytettävä näitä sivuja. URL-osoitteen pitäisi olla samantyyppinen seuraavan osoitteen kanssa, ja siihen siirryttyäsi sinun pitäisi nähdä oheisen kuvan mukainen sivu: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
+
+    [![Minulle määritettyjen odottavien toimittajalaskujen luettelosivu](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    
 2.  Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
 3.  Valitse työtila ja sitten **Muokkaa**
 4.  Valitse **Lisää sivu** luodaksesi ensimmäisen mobiilisivun.
 5.  Kirjoita nimi, kuten **Omat toimittajalaskut** sekä kuvaus, kuten **Minulle tarkistettavaksi määritetyt toimittajalaskut**.
 6.  Valitse **Valmis**.
-7.  Valitse mobiilisivujen suunnitteluohjelmassa **Kentät**-välilehdessä **Valitse kentät**. Luettelosivun sarakkeiden tulisi olla likipitäen kuin seuraavassa kuvassa. [![Sarakkeet Minulle määritetyt odottavat toimittajan laskut -sivulla](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+7.  Valitse mobiilisivujen suunnitteluohjelmassa **Kentät**-välilehdessä **Valitse kentät**. Luettelosivun sarakkeiden tulisi olla likipitäen kuin seuraavassa kuvassa. 
+
+    [![Sarakkeet Minulle määritetyt odottavat toimittajan laskut -sivulla](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    
 8.  Lisää tarvittavat sarakkeet luettelosivulta, joka on näytettävä käyttäjille mobiilisivulla. Kentät näytetään loppukäyttäjille lisäämisjärjestyksessä. Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen. Tämän skenaarion vaatimusten mukaan seuraavat kahdeksan kenttää ovat pakollisia. Joidenkin käyttäjien mielestä kahdeksan kenttää mobiililaitteessa saattaa kuitenkin olla liikaa. Siksi näytämme vain tärkeimmät kentät mobiilissa luettelonäkymässä. Muut kentät näkyvät tietonäkymässä, jonka suunnittelemme myöhemmin. Nyt lisäämme seuraavat kentät. Napsauta plus-merkkiä (**+**) sarakkeissa lisätäksesi ne mobiilisivulle.
     - Toimittajan nimi
     - Laskun kokonaissumma
@@ -152,8 +158,10 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
     - Laskun numero
     - Laskun päivämäärä
 
-    Kun kentät on lisätty, mobiilisivun pitäisi muistuttaa seuraavaa kuvaa. 
-    [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+  Kun kentät on lisätty, mobiilisivun pitäisi muistuttaa seuraavaa kuvaa. 
+    
+   [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+
 9.  On myös lisättävä seuraavat sarakkeet nyt, että voimme ottaa työnkulkutoimintoja myöhemmin käyttöön.
     - Näytä Suorita-tehtävä
     - Näytä Delegoi-tehtävä
@@ -169,16 +177,26 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
 
 ### <a name="vendor-invoice-details"></a>Toimittajan laskun tiedot
 
-Voit suunnitella laskun tietojen sivun käyttämällä **VendMobileInvoiceHeaderDetails**-sivua. Huomaa, että riippuen järjestelmässäsi olevien laskujen määrästä tällä sivulla näytetään vanhin lasku (lasku, joka on luotu ensin). Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tässä tarvitaan vain jotkin laskutiedot, että voimme suunnitella mobiilisivun. [![Työnkulku-sivu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+Voit suunnitella laskun tietojen sivun käyttämällä **VendMobileInvoiceHeaderDetails**-sivua. Huomaa, että riippuen järjestelmässäsi olevien laskujen määrästä tällä sivulla näytetään vanhin lasku (lasku, joka on luotu ensin). Voit etsiä tietyn laskun käyttämällä suodatinta vasemmalla puolella. Kuitenkaan tässä esimerkissä ei edellytetä tiettyä laskua. Tässä tarvitaan vain jotkin laskutiedot, että voimme suunnitella mobiilisivun. 
+
+[![Työnkulku-sivu](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. Korvaa URL-osoitteessa valikkovaihtoehto nimi merkkijonolla **VendMobileInvoiceHeaderDetails**, jos haluat avata lomakkeen
+
 2. Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
+
 3. Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
+
 4. Valitse **Omat toimittajalaskut** -sivu, jonka loit aiemmin ja valitse sitten **Muokkaa**.
+
 5. Valitse **Kentät** -välilehdessä sarakkeen otsikko **Ruudukko**.
+
 6. Valitse **Ominaisuudet &gt; Lisää sivu**. **Huomautus:** Kun valitset **Ruudukko**-otsikon ja lisäät sivun, yhteys tietosivuun muodostetaan automaattisesti.
+
 7. Kirjoita sivun otsikko, esimerkiksi **Laskun tiedot** ja kuvaus, kuten **Näytä laskun otsikko ja rivitiedot**.
+
 8. Klikkaa **Valitse kentät**. Huomaa, että kentät näytetään loppukäyttäjille lisäämisjärjestyksessä. Ainoa tapa muuttaa kenttien järjestystä on valita kaikki kentät uudelleen. 
+
 9. Lisää seuraavat kentät otsikosta tämän skenaarion vaatimusten mukaan:
    - Toimittajan nimi
    - Laskun kokonaissumma
@@ -197,9 +215,13 @@ Voit suunnitella laskun tietojen sivun käyttämällä **VendMobileInvoiceHeader
     - Valmisteveron määrä
 
 11. Kun kaikki edellisten kahden vaiheen kentät on lisätty, valitse **Valmis**. Sivun tulisi olla likipitäen kuin seuraavassa kuvassa.
+    
     [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+
 12. Valitse **Valmis** poistuaksesi muokkaustilasta.
+
 13. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+
 14. Tallenna muutokset valitsemalla **Julkaise työtila**.
 
 ### <a name="workflow-actions"></a>Työnkulkutehtävät
@@ -295,12 +317,19 @@ Käytä **VendMobileInvoiceHeaderDetails**-sivua lisätäksesi työnkulkutoimint
 ### <a name="vendor-invoice-attachments"></a>Toimittajalaskujen liitteet
 
 1. Valitse **Asetukset** (ratas) -painike oikeassa yläkulmassa ja valitse sitten **Mobiilisovellus**.
+
 2. Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa.
+
 3. Valitse <strong>Laskun tiedot **-sivu, jonka loit aiemmin ja valitse sitten **Muokkaa</strong>.
+
 4. Määritä **Tiedostojen hallinta** -asetukseksi **Kyllä** alla olevan esimerkin mukaisesti. **Huomautus:** Jos ei ole liitteitä ei ole tarpeen näyttää mobiililaitteessa, voit jättää tämän vaihtoehdon arvoksi **Ei**, joka on oletusasetus.
+   
    ![Tiedoston hallinta](./media/docmanagement-216x300.png)
+
 5. Valitse **Valmis** poistuaksesi muokkaustilasta.
+
 6. Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+
 7. Tallenna muutokset valitsemalla **Julkaise työtila**.
 
 ### <a name="vendor-invoice-line-distributions"></a>Toimittajan laskujen rivijaot
@@ -311,12 +340,19 @@ Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot
 > Kun tiedämme vaatimukset, se auttaa päättämään, mitä tiettyä sivua käyttää ja miten tarkalleen optimoida käyttäjän mobiilikokemus, kun suunnittelemme tätä skenaariota. Toisessa tilanteessa käytämme toista sivua näyttämään jaot, koska skenaarioiden vaatimukset eroavat.
 
 1.  Korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin. Sivun, joka näkyy, on muistutettava seuraavaa kuvaa.
+
 [![Kaikki jaot -sivu](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+
 2.  Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
+
 3.  Valitse **Muokkaa**-painike käynnistääksesi muokkaustilan työtilassa. **Huomautus:** Näet, että kaksi uutta sivua on luotu automaattisesti. Järjestelmä luo nämä sivut, koska otit käyttöön tiedostojen hallinnan edellisessä osassa. Voit ohittaa nämä uudet sivut.
+
 4.  Valitse **Lisää sivu**.
+
 5.  Kirjoita sivun otsikko, esimerkiksi **Näytä kirjanpito**  ja kuvaus, kuten **Näytä laskun kirjanpito**.
+
 6.  Valitse **Valmis**.
+
 7.  Klikkaa **Kentät**-välilehdessä **Valitse kentät**, valitse seuraavat kentät Jaot-sivulta ja valitse sitten **Valmis**:
     1.  Summa
     2.  Valuutta
@@ -324,8 +360,11 @@ Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot
 
     > [!NOTE] 
     > Emme valinneet **Kuvaus**-saraketta jakoruudukosta, koska tämän skenaarion vaatimukset vahvistivat, että vain laajennetulle hinnalle on olemassa jako. Tämän vuoksi käyttäjä ei edellytä toista kenttää sen summan tyypin määrittämiseksi, jolle jako on. Kuitenkin seuraavassa skenaariossa me **tulemme** käyttämään tätä tietoa, koska tämän skenaarion vaatimukset määrittävät, että muuntyyppisilläkin summilla on jakoja (kuten arvonlisävero).
+
 8.  Valitse **Valmis** poistuaksesi muokkaustilasta.
+
 9.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.
+
 10. Tallenna muutokset valitsemalla **Julkaise työtila**.
 
 > [!NOTE] 
