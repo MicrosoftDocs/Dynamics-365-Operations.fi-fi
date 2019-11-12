@@ -3,7 +3,7 @@ title: Talousraporttien raportointipuiden määritykset
 description: Tässä artikkelissa on tietoja raporttipuun määrityksistä. Raportointipuun määritys on raporttiosa tai rakenneosa, joka auttaa määrittämään organisaation rakenteen ja organisaation.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8127c694d21064392b1932525a87044b9554973d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181815"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564164"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Talousraporttien raportointipuiden määritykset
 
@@ -50,7 +50,7 @@ Raportointipuun määritys sisältää sarakkeet, joita käsitellään seuraavas
 
 | Raportointipuu-sarake | Kuvaus |
 |-----------------------|-------------|
-| Yritys               | Raportointiyksikön yrityksen nimi. Arvo **@ANY**, joka määritetään tavallisesti vain yhteenvetotasolle, mahdollistaa raporttipuun käyttämisen kaikille yrityksille. Kaikille alielementeille on määritetty yritys. |
+| Yritys                | Raportointiyksikön yrityksen nimi. Arvo **\@ANY**, joka määritetään tavallisesti vain yhteenvetotasolle, mahdollistaa raporttipuun käyttämisen kaikille yrityksille. Kaikille alielementeille on määritetty yritys. |
 | Yksikön nimi             | Koodi, joka määrittää tämän raportointiyksikön graafisessa raportointipuussa. Varmista, että muodostettava yksilöllinen koodausjärjestelmä on yhdenmukainen ja että käyttäjien on helppo ymmärtää sitä. |
 | Yksikön kuvaus      | Raportointiyksikön otsikko näkyy raportin ylä- tai alatunnisteessa, jos raportin määrityksen **Ylä- ja alatunnisteet** -välilehteen syötetään **UnitDesc**-koodi. Otsikko näkyy raportin rivin kuvauksessa, jos syötät rivin määrityksen **Kuvaus**-soluun **UnitDesc**. |
 | Dimensiot            | Raportointiyksikkö, joka esittää tiedot suoraan taloushallinnon tiedoista. Se määrittää tilin ja liittyvien segmenttien loogisen asettelun ja pituudet. Kullakin raportointiyksikön rivillä on oltava dimensio tässä sarakkeessa. Voit sijoittaa dimension myös yhteenvetotietojen yksikköriville (esimerkiksi kuluille, jotka liittyvät suoraan kyseiseen yksikköön). Jos annat dimension yhteenvetotietojen yksikköriville, pääyksiköissä käytettäviä tilejä ei saa käyttää aliyksiköissä. Muussa tapauksessa summista voi tulla päällekkäisiä. |

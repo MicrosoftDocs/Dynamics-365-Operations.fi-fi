@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b13f8aba7e1d2448495f97a4772eb573e08c025
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6e69b471af0853159ba807af5f39db64dbbb04f8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874598"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569705"
 ---
-# <a name="warranty-on-assets-and-asset-types"></a>Resurssien ja resurssityyppien takuut
+# <a name="warranties-on-assets-and-asset-types"></a>Resurssien ja resurssityyppien takuut
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Tässä ohje aiheessa kerrotaan, kuinka voit määrittää resurssien ja resurssityyppien takuut resurssien hallinnassa.
@@ -50,7 +50,7 @@ Tässä ohje aiheessa kerrotaan, kuinka voit määrittää resurssien ja resurss
     > [!IMPORTANT]
     > Jos työtilauksen **Takuun alkamispäivämäärä** -kentässä on valittu päivämäärä, takuu on voimassa kyseisenä päivänä työtilaukselle. Kun luot työtilauksen, **Takuun alkamispäivämäärä** -kentän arvoksi tulee automaattisesti luontipäivämäärä. Voit kuitenkin muuttaa päivää niin, että se vastaa esimerkiksi takuusopimuksen alkamispäivämäärää.
     >
-    > ![Kuva 1](media/02-warranty.png)
+    > ![Työtilaussivu](media/02-warranty.png)
 
 > [!NOTE]
 > Kun luot työtilauksen käyttöomaisuudelle, joka kuuluu toimittajan takuun piiriin ja jos työtilauksen odotettu alkamispäivämäärä on takuukauden aikana, saat takuusopimuksesta ilmoituksen. Tämän jälkeen voit peruuttaa työtilauksen tarpeen mukaan.

@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 349f720ee4cfb612ca4f4f50a9e081f3343f756d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
+ms.sourcegitcommit: 1eaa3451275fe4223d4d25b37aaa1cd2b183e803
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188691"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2667457"
 ---
 # <a name="budgeting-overview"></a>Budjetoinnin yleiskatsaus 
 
@@ -69,6 +69,12 @@ Luo *budjettikoodit*, jotka tunnistavat tallennettavien budjettitapahtumien tyyp
 Budjettikoodeja käyttämällä luot hyväksyttyjen budjettimuutosten kirjausketjun, joka kattaa koko budjettijakson. Jos työnkulkuun on liitetty budjettikoodi, työnkulkuun otetaan käyttöön kaikki budjettirekisterin tapahtumat, joissa käytetään budjettikoodia ja työnkulun vaiheet on suoritettava ennen kuin budjettirekisterimerkintä tavoittaa **Valmis**-vaiheen.  
 
 Voit myös halutessasi määrittää *Budjetin iirtosäännöt*. Voit käyttää budjetin siirtosääntöjä valitsemalla **Käytä sääntöjä budjetin siirtoja varten** **Budjettiparametrit**-sivulla. Kun budjettisiirron säännöt ovat käytössä, jos käyttäjä luo asiakirjan käyttämällä budjettikoodia, joka on tyyppiä **Siirto**, budjettisaldoja ei päivitetä, jos budjettisiirron sääntöjä rikotaan. Voit esimerkiksi sallia Myynti- ja markkinointiosastolle budjettisiirron asiakirjat, joissa kulubudjetti siirretään päätilien välillä, mutta estää budjetin siirrot tältä osastolta tai tälle osastolle, ellei kyseisen tyyppiselle budjettitilitapahtumalle ole myönnetty työnkulun hyväksyntää.
+
+Toiminto, joka on otettu käyttöön Dynamics 365 Finance -versiossa 10.0.7 (tammikuu 2020) lisäsi budjettirekisteritapahtumien ominaisuuksia ja joustavuutta. Voit ottaa nämä parannukset käyttöön siirtymällä **Toimintojen hallinta**-työtilaan ja valitsemalla **Vain määrän budjettirekisteritapahtumat** ja/tai **Budjettirekisteritapahtumat, joiden oletusarvo perustuu määrän tyyppiin**.
+
+**Vain määrän budjettirekisteritapahtumat** -toiminnon avulla voit kirjat budjettirekisteritapahtuman vain määrämuotoisilla summilla. Voit esimerkiksi kirjata budjettimerkinnän, jonka määrä on 32 ja hinta 0, jolloin summa on myös nolla. Voit käyttää tätä määrää taloushallinnon raportin yhteydessä määräkohtaisen hinnan määrittämiseen. Ota huomioon, että tämän toiminnon yhteydessä ei päivitetty kyselyjä eikä raportteja. Se vain mahdollistaa nollamäärän kirjaamisen.
+
+**Budjettirekisteritapahtumat, joiden oletusarvo perustuu määrän tyyppiin** -toiminnon avulla budjettirekisterimerkinnän oletusarvoisena määrätyyppinä voidaan käyttää muuta kuin kulua. Budjettirekisterimerkinnän rivin oletusarvona on nyt kulu, kun päätilin tyyppinä on kulu, tuotto, kun päätilin tyyppinä on tuotto ja jälleen kulu, kun kyseessä on muu tilityyppi.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Työntilojen ja kyselysivujen käyttäminen budjetti vs. toteutunut -lukujen seurantaan
 Budjettipäällikkö voi tarkastella budjetin senhetkistä tilaa **Kirjanpitobudjetit ja ennusteet** -työtilassa. **Budjetin ylittävät kulut** ja **Budjetin alittava tuotto** -välilehdiltä löytyy pikakatsaus taloushallinnon dimensioiden yhdistelmiin, joissa tavoitebudjetteihin ei päästä tai jotka lähestyvät ko. rajaa. Voit mukauttaa näillä välilehdillä käytettävää budjetin raja-arvoprosenttia ja taloushallinnon dimensioiden joukkoa valitsemalla **Määritä oma työtila**. Voit valita **Yksikön päälliköt** nähdäksesi työntekijät, jotka ovat vastuussa tietyistä näille välilehdille valituista taloushallinnon dimensioiden yhdistelmistä. Jos esimerkiksi näet, että liiketoimintaosaston kulubudjetti on ylittämässä budjetin raja-arvoa, voit helposti löytää ja ottaa yhteyttä liiketoimintaosaston päällikköön keskustellaksesi asiasta. 

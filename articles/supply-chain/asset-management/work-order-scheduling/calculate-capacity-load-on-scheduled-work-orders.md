@@ -18,43 +18,43 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0c0dd1e306c54d3f99b86ad6f1816d5acabe6c18
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: d7684d1a4f78c95ebc7fd0a88f1c7dc7fead0303
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887156"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652100"
 ---
 # <a name="calculate-capacity-load-on-scheduled-work-orders"></a>Ajoitettujen työtilausten kapasiteetin kuormituksen laskeminen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Voit laskea ajoitettujen työtilausten kapasiteetin kuormituksen, jolloin saat yleiskuvan resurssien työkuormituksesta tietyltä kaudelta. Voit tehdä laskelmia seuraavista resursseista: Kunnossapitotyöntekijät, työntekijäryhmät, työkalut ja resurssit.
 
 1. Valitse **Resurssien hallinta** > **Kyselyt** > **Ajoitus** > **Kapasiteetin kuormitus**.
 
-2. Valitse **Laske kapasiteetin kuormitus** -valinta ikkunan **Näytä**-kentästä laskettava kuormitustyyppi: "kapasiteetti", "varattu" tai "jäljellä oleva".
+2. Valitse **Laske kapasiteetin kuormitus** -valintaikkunan **Näytä**-kentässä, minkä kuormitustyypin haluat laskea: **Kapasiteetti**, **Varattu** vai **Jäljellä oleva määrä**.
 
-3. Valitse "kyllä" **Ohita nolla** -vaihtopainikkeessa, jos et halua näyttää tuloksia, joissa on nolla.
+3. Valitse **Kyllä** **Ohita nolla** -vaihtopainikkeessa, jos et halua näyttää tuloksia, joissa on nolla.
 
-4. Valitse resurssityypit, joille haluat laskea kapasiteetin kuormituksen, valitsemalla "kyllä" asiaankuuluvissa vaihtopainikkeissa: **Työntekijä**, **Ylläpitotyöntekijäryhmä**, **Työkalu**ja **Resurssi**.
+4. Valitse resurssityypit, joille haluat laskea kapasiteetin kuormituksen, valitsemalla **Kyllä** asiaankuuluvissa vaihtopainikkeissa: **Työntekijä**, **Ylläpitotyöntekijäryhmä**, **Työkalu** ja **Resurssi**.
 
 5. Valitse aloituspäivämäärä laskennalle **Aloituspäivämäärä**-kentästä.
 
-6. Valitse **Välityyppi**-kentästä laskutoimitusten väli: päivä, viikko, kuukausi tai vuosineljännes.
+6. Valitse **Välityyppi**-kentästä laskutoimitusten väli: **Päivä**, **Viikko**, **Kuukausi** tai **Vuosineljännes**.
 
-7. Lisää **Jakson frekvenssi** -kenttään, kuinka monta aikaväliä haluat laskea. Jos esimerkiksi olet valinnut aika välityypiksi "päivä" ja lisäät tähän kenttään numeron "5", aloituspäivämäärästä lasketaan viisi päivää eteenpäin.
+7. Lisää **Jakson frekvenssi** -kenttään, kuinka monta aikaväliä haluat laskea. Jos esimerkiksi olet valinnut aika välityypiksi **Päivä** ja lisäät tähän kenttään numeron "5", aloituspäivämäärästä lasketaan viisi päivää eteenpäin.
 
 8. Aloita laskenta valitsemalla **OK**.
 
-Alla oleva kuva näyttää tuloksen, joka kattaa kolme viikkoa kuormitustyypistä "varattu".
+Alla oleva kuva näyttää tuloksen, joka kattaa kolme viikkoa kuormitustyypistä **Varattu**.
 
 ![Kuva 1](media/08-work-order-scheduling.png)
 
->[!NOTE]
->Jos laskennalle valitaan kuormitustyypit "kapasiteetti" tai "jäljellä oleva", sama tulos tulee näkyviin, jos valitun kauden resursseille ei ole tehty varauksia.
+[!NOTE]
+Jos laskennalle valitaan kuormitustyypit **Kapasiteetti** tai **Jäljellä oleva määrä**, sama tulos tulee näkyviin, jos valitun kauden resursseille ei ole tehty varauksia.
 
-Lisätietoja ylläpitoaikataulurivien kapasiteetin kuormituksen laskemisesta ja ei-ajoitetuista työtilauksista on kohdassa [Kapasiteetin kuormituksen laskeminen](../capacity-planning/calculate-capacity-load.md).
+Lisätietoja ylläpitoaikataulurivien kapasiteetin kuormituksen laskemisesta ja ajoittamattomista työtilauksista on kohdassa [Kapasiteetin kuormituksen laskeminen](../capacity-planning/calculate-capacity-load.md).
 

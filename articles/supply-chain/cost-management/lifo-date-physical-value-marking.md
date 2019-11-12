@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3913801eb35faec858ef4b8e1e5056b755054218
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: abf74841e994efc3a71ff8dde048ab9c3be934bc
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554733"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571205"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-päivämäärä, fyysinen arvo ja merkintä
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 LIFO-päivämäärä on varastomalli, joka perustuu LIFO-periaatteeseen. Varasto-otot täsmäytetään viimeisiä varastovastaanottoja vasten varastotapahtuman päivämäärän perusteella. Jos LIFO-päivämäärä on määritetty eikä ennen ottoa ei ole vastaanottoa, otto täsmäytetään oton päivämäärän jälkeen tapahtuneiden vastaanottojen mukaan. Jos samana päivänä on useita ottoja, ne täsmäytetään järjestyksessä viimeinen otto, viimeinen vastaanotto. 
 

@@ -18,37 +18,45 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7c9330cc7b3a8839d94c8945418548033254786b
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 43772903f6845409cb33c7f2a13a049a3e9aa208
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918438"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652399"
 ---
 # <a name="asset-fault-analysis"></a>Resurssien vika-analyysi
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Käyttöomaisuuden hallinnassa voit analysoida käyttöomaisuuden vikamerkintöjä, jolloin saat yleiskuvan tietyn kauden aikana rekisteröityjen vikojen kokonaismäärästä. Vikarekisteröintejä voidaan analysoida eri näkökulmista, esimerkiksi resurssien, resurssityyppien, toiminnallisten sijaintien, vian oireiden tai vikatyyppien näkökulmista.
 
 1. Valitse **Resurssien hallinta** > **Kyselyt** > **Resurssin vika** > **Resurssivikojen analyysi**.
 
-2. **Resurssin vika-analyysin laskenta** -valintaikkunassa voit määrittää **Taso** -kentän avulla, miten yksityiskohtaisia haluat käyttöomaisuusvirherivien olevan toiminnallisia sijainteja ajatellen. Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoineen toiminnallinen sijaintirakenne, kaikki toimintosijainnin resurssivikarivit näkyvät ylimmällä tasolla, joten rivin tunnit voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista. Jos lisäät arvon "0" **Taso**-kenttään, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki resurssivikarivit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät.
+2. **Resurssin vika-analyysin laskenta** -valintaikkunassa voit määrittää **Taso** -kentän avulla, miten yksityiskohtaisia haluat käyttöomaisuusvirherivien olevan toiminnallisia sijainteja ajatellen. 
+
+    Jos esimerkiksi lisäät kenttään arvon "1" ja kyseessä on monitasoineen toiminnallinen sijaintirakenne, kaikki toimintosijainnin resurssivikarivit näkyvät ylimmällä tasolla, joten rivin tunnit voidaan lisätä hierarkiassa alemmista toiminnallisista sijainneista. 
+        
+    Jos lisäät arvon "0" **Taso**-kenttään, näkyviin tulee yksityiskohtainen tulos, jossa näkyvät kaikki resurssivikarivit kaikissa niissä toiminnallisissa sijaintitasoissa, joihin ne liittyvät.
 
 3. Jos haluat rajata haun, voit valita tietyt käyttöomaisuudet, vikapäivämäärät, virheiden syyt ja vikojen korjaukset **Sisällytettävät tietueet** -pikavälilehdessä.
 
 4. Aloita laskenta valitsemalla **OK**.
 
-5. Valitse **Resurssin vika-analyysi** -välilehdestä yksi tai useita painikkeita **Ryhmittely...** -toimintoruuturyhmissä, jolloin näkyviin tulee haluamasi yksityiskohtaisuuden taso. Aktivoidut painikkeet on korostettu. Aktivoi painike tai poista se käytöstä napsauttamalla painiketta.
+5. Valitse **Resurssin vika-analyysi** -välilehdestä yksi tai useita **Ryhmittely...** -painikkeita, jolloin näkyviin tulee haluamasi yksityiskohtaisuuden taso. Aktivoidut painikkeet on korostettu. Aktivoi painike tai poista se käytöstä napsauttamalla painiketta.
 
 6. Valitse **Päivitä laskelmat**, jos haluat näyttää valintasi näytössä. 
 
 >[!NOTE]
->Joka kerta, kun aktivoit tai poistat **Ryhmittely...**-toimintoruuturyhmien painikkeita, muista napsauttaa **Päivitä laskelmat** -painiketta, kun olet muuttanut valintoja. Tämä on tarpeen, koska suuri määrä tietoja käsitellään, kun virheiden todennäköisyys lasketaan uudelleen.
+>Aina kun otat käyttöön **Ryhmittele...**-painikkeen tai poistat sellaisen käytöstä, muista napsauttaa **Päivitä laskelmat**-painiketta. Tämä on tarpeen, koska suuri määrä tietoja käsitellään, kun virheiden todennäköisyys lasketaan uudelleen.
 
-Vikamerkintöjä voi analysoida monella tavalla. Alla on esimerkkejä viidessä kuvakaappauksessa, joissa eri tietojen valinnat antavat erilaisia tietoja. Näet, miten eri valinnat tuottavat erilaisia tietoa ja yksityiskohtia, kun käyttöomaisuusvirheiden rekisteröintejä analysoidaan.
+## <a name="examples"></a>Esimerkkejä
+
+Vikamerkintöjä voi analysoida monella tavalla. Tämä osa sisältää viisi esimerkkiä siitä, miten erilaiset tietovalinnat voivat tuottaa erilaisia tietoa ja yksityiskohtia, kun käyttöomaisuusvirheiden rekisteröintejä analysoidaan.
+
+### <a name="group-by-symptoms"></a>Oireiden mukaan ryhmittely
 
 Alla olevassa kuvassa vain **Oire**-painike on valittuna.
 
@@ -57,6 +65,7 @@ Alla olevassa kuvassa vain **Oire**-painike on valittuna.
 
 ![Kuva 1](media/06-controlling-and-reporting.png)
 
+### <a name="group-by-symptoms-and-time-period"></a>Oireiden ja ajanjakson mukaan ryhmittely
 
 Alla olevassa kuvakaappauksessa lisätään **Vuosi** ja **Kuukausi**, joiden mukaan voit tarkastella vikamerkintöjä valitulta ajanjaksolta.
 
@@ -65,9 +74,13 @@ Alla olevassa kuvakaappauksessa lisätään **Vuosi** ja **Kuukausi**, joiden mu
 
 ![Kuva 2](media/07-controlling-and-reporting.png)
 
+### <a name="group-by-multiple-symptoms-and-assets"></a>Useiden oireiden ja resurssien mukaan ryhmittely
 
-- Resurssin ja resurssityypin yhdistelmää käytetään seuraavien kolmen kuvaruudun laskelmien perustana, mikä lisää yksityiskohtaisuutta.  
-- Yleisesti ottaen **Ryhmittele päivämäärän mukaan**-, **Ryhmittele resurssin mukaan**-, **Ryhmittele toiminnallisen sijainnin mukaan** toimintoruuturyhmät samoin kuin **Vika**-painike (vian tunnus) sisältävät kausia tai resurssisuhteita. **Oire**-, **Alue**-, **Tyyppi**-, **Syy**- ja **Korjaus**-painikkeet ovat luokitteluja, joita käytetään vikojen hallinnassa analysoimaan vikarekisteröintejä ja merkitsemään ongelma-alueita.  
+Resurssin ja resurssityypin yhdistelmää käytetään seuraavien kolmen kuvaruudun laskelmien perustana, mikä lisää yksityiskohtaisuutta.  
+
+Yleisesti ottaen **Ryhmittele päivämäärän mukaan**-, **Ryhmittele resurssin mukaan**-, **Ryhmittele toiminnallisen sijainnin mukaan** toimintoruuturyhmät samoin kuin **Vika**-painike (vian tunnus) sisältävät kausia tai resurssisuhteita. **Oire**-, **Alue**-, **Tyyppi**-, **Syy**- ja **Korjaus**-painikkeet ovat luokitteluja, joita käytetään vikojen hallinnassa analysoimaan vikarekisteröintejä ja merkitsemään ongelma-alueita.  
+
+**Ryhmittele oireen, resurssin ja resurssityypin mukaan**
 
 Alla olevassa kuvakaappauksessa **Resurssi** ja **Resurssityyppi** on lisätty antamaan tarkempia tietoja vikarekisteröinneistä.
 
@@ -76,6 +89,7 @@ Alla olevassa kuvakaappauksessa **Resurssi** ja **Resurssityyppi** on lisätty a
 
 ![Kuva 3](media/08-controlling-and-reporting.png)
 
+**Ryhmittele kahden oireen, resurssin ja resurssityypin mukaan**
 
 Alla olevassa kuvakaappauksessa **Alue** lisättiin **Oire**-, **Resurssi**- ja **Resurssityyppi** -yhdistelmään antamaan tarkempia tietoja vikarekisteröinneistä.
 
@@ -83,6 +97,7 @@ Alla olevassa kuvakaappauksessa **Alue** lisättiin **Oire**-, **Resurssi**- ja 
 
 ![Kuva 4](media/09-controlling-and-reporting.png)
 
+**Ryhmittele kolmen oireen, resurssin ja resurssityypin mukaan**
 
 Alla olevaan kuva kaappausruutuun lisättiin **Tyyppi**ja tässä esimerkissä näytetään tarkimmat laskennat.
  

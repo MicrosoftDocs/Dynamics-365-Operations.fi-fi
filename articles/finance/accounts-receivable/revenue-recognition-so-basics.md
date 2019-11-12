@@ -1,5 +1,5 @@
 ---
-title: Tuottokirjaus myyntitilauksiin.
+title: Tuottokirjaus myyntitilauksiin
 description: Tässä aiheessa kuvataan tuottojen myyntitilauksiin ja laskuihin kirjaamisen perustoiminto. Tuottokirjaus on käytettävissä myyntitilauksessa ja laskussa, joka luodaan myyntitilauksen perusteella.
 author: kweekley
 manager: aolson
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: f0a5e4c01b34b2adb8e7e0af967af2c2562b4d87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f7d2cfb8e58221004ae5662aae3850adc577dc88
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175916"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570307"
 ---
-# <a name="revenue-recognition-on-sales-orders"></a>Tuottokirjaus myyntitilauksiin.
+# <a name="revenue-recognition-on-sales-orders"></a>Tuottokirjaus myyntitilauksiin
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Tuoton kirjaustoimintoa ei voi vielä ottaa käyttöön ominaisuuksien hallinnan avulla. Tällä hetkellä se on otettava käyttöön konfigurointiavainten avulla.
+> Tuoton kirjaustoimintoa ei voi ottaa käyttöön ominaisuuksien hallinnan avulla. Tällä hetkellä se on otettava käyttöön konfigurointiavainten avulla.
 
 Tässä aiheessa kuvataan tuottojen myyntitilauksiin ja laskuihin kirjaamisen perustoiminto. Tuottokirjaus on käytettävissä myyntitilauksessa ja laskussa, joka luodaan myyntitilauksen perusteella. Myyntitilaus voidaan luoda myös aika- ja materiaaliprojektilla.
 

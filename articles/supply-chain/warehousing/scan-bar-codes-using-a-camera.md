@@ -1,6 +1,6 @@
 ---
-title: Viivakoodien lukeminen kameran avulla Dynamics 365 Supply Chain Managementin varastointisovelluksessa
-description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin varastointisovelluksen määrittämistä mobiililaitteella tapahtuvaa viivakoodien lukemista varten.
+title: Viivakoodien lukeminen kameran avulla Dynamics 365 for Finance and Operationsin varastointisovelluksessa
+description: Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operationsin varastointisovelluksen määrittämistä mobiililaitteella tapahtuvaa viivakoodien lukemista varten.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 58cf27a250778d68bdffa1eefa5e939276e467fc
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251454"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578146"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Viivakoodien lukeminen kameran avulla Dynamics 365 Supply Chain Managementin varastointisovelluksessa
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin varastointisovelluksen määrittämistä mobiililaitteella tapahtuvaa viivakoodien lukemista varten. 
+Tässä ohjeaiheessa käsitellään Dynamics 365 for Finance and Operationsin varastointisovelluksen määrittämistä mobiililaitteella tapahtuvaa viivakoodien lukemista varten. 
 
 ## <a name="prerequisites"></a>Edellytykset
 Tämän toiminnon käyttämiseen tarvitaan Warehousing-sovelluksen versio 1.2.0.0, ja laitteessa on oltava kamera. Kun avaat sovelluksen päivityksen jälkeen, sovellus pyytää lupaasi käyttää kameraa. Jos laiteessa ei ole kameraa, lupaa ei kysytä etkä voi käyttää kameraa skannerina. 
@@ -49,7 +49,7 @@ Kamerasivu käynnistetään jokaisella sivulla, jonka syötekentän ensisijaisek
 
 | Tehtävät ja tiedot -sivu | Kamera-sivu | 
 | :---------------------: | :--------------------: |
-| ![kamera-luetaan-esimerkki-tehtävä-tiedot-sivu](./media/camera-scanning-example-task-detail-page50.png)          | ![kamera-luetaan-esimerkki-kamera-sivu-pieni](./media/camera-scanning-example-camera-page50.png)          |
+| ![Kameranluvun esimerkkitehtävän tietosivu](./media/camera-scanning-example-task-detail-page50.png)          | ![Kameranluvun esimerkkitehtävän pienempi tietosivu](./media/camera-scanning-example-camera-page50.png)          |
 
 Kun napsautat Kamera-sivulla kamerapainiketta, se näkyy himmeänä viivakoodin tunnistusyrityksen ajan. Jos viivakoodia ei tunnisteta 5 sekunnin kuluessa, prosessi aikakatkaistaan ja kamerapainiketta voi taas käyttää. Voit sitten yrittää lukea viivakoodin uudelleen.
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8680241b1300aceda3280893982a1eff3d2e09e0
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: 9a365fb5b1e0126b9de56bcc84a14f2352208d4f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847479"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571711"
 ---
 # <a name="asset-loans"></a>Lainatut resurssit
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Jos yrityksesi saa resursseja korjaus-tai huoltotöihin joko sisäisistä sijainneista tai asiakkailta ja jos olet tilapäisesti lainannut resursseja kyseisille sijainteille tai asiakkaille, resurssien hallinta voi seurata resurssilainoja.
 
@@ -47,7 +47,7 @@ Jos yrityksesi saa resursseja korjaus-tai huoltotöihin joko sisäisistä sijain
 
 Voit tarkastella luettelosa kaikista resursseista, jotka olet lainannut muihin siajinetihin tai asiakkaille valitsemalla **Resurssien hallinta** \> **Yhteiset** \> **Resurssin laina** \> **Kaikki resurssilainat**. Jos **Päättynyt** -valintaruutu on valittuna resurssille, resurssi on rekisteröity palautetuksi yritykseesi.
 
-![Kuva 1](media/06-manage-maintenance-requests.png)
+![Ylläpitopyyntöjen hallinta](media/06-manage-maintenance-requests.png)
 
 **Aktiiviset resurssilainat** -sivulla voit tarkastella luetteloa kaikista lainavaroista, joita ei ole vielä palautettu yrityksellesi.
 

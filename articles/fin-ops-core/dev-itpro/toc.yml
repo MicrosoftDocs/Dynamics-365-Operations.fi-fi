@@ -1,12 +1,14 @@
-- name: Finance and Operationsin kehittäminen ja hallinta
+- name: Finance and Operations -sovellusten kehittäminen ja hallinta
   items:
-    - name: Finance and Operationsin kehittäminen ja hallinta
+    - name: Finance and Operations -sovellusten kehittäminen ja hallinta
       items:
-        - name: Finance and Operationsin kehittäminen ja hallinta
+        - name: Finance and Operations -sovellusten kehittäminen ja hallinta
           href: index.md
         - name: Uudet ja muuttuneet ominaisuudet
           items:
-            - name: 'Platform update 30:n esikatseluominaisuudet (marraskuu 2019)'
+            - name: 'Platform Update 31:n esikatselutoiminnot (tammikuu 2020)'
+              href: get-started/whats-new-platform-update-31.md
+            - name: Platform update 30 (marraskuu 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
             - name: Platform update 29 (lokakuu 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-29.md
@@ -62,6 +64,8 @@
                   href: business-events/how-to/FormsPro.md
                 - name: Liiketoimintatapahtumat ja Azuren tapahtumakeskus
                   href: business-events/how-to/event-hub.md
+                - name: Tilikauden sulkemisen liiketoimintatapahtumat
+                  href: business-events/how-to/period-close.md
         - name: Jatkuva toimitus
           items:
             - name: Jatkuvan toimituksen aloitussivu
@@ -80,7 +84,7 @@
               href: data-entities/integration-overview.md
             - name: Tietojen integroinnin ohjelmointirajapinnat
               items:
-                - name: Tietojen hallintapaketin REST API -ohjelmointirajapinta
+                - name: Tietojen hallintapaketin REST-ohjelmointirajapinta
                   href: data-entities/data-management-api.md
                 - name: Palvelun päätepisteet
                   items:
@@ -302,6 +306,26 @@
                   href: database/dbmovement-scenario-goldenconfig.md
                 - name: Destruktiivinen testaus
                   href: database/dbmovement-scenario-destructivetests.md
+            - name: RESTful API
+              items:
+                - name: Yleiskatsaus
+                  href: database/api/dbmovement-api-overview.md
+                - name: Versionhallinta ja tuki
+                  href: database/api/dbmovement-api-versioning-support.md
+                - name: Todennus
+                  href: database/api/dbmovement-api-authentication.md
+                - name: Rajoittaminen
+                  href: database/api/dbmovement-api-throttling.md
+                - name: Viite
+                  items:
+                    - name: Ohjelmointirajapinnan version 1 viite
+                      href: database/api/v1/dbmovement-api-v1-overview.md
+                    - name: Tietokannan varmuuskopioiden luettelo
+                      href: database/api/v1/reference-list-backups.md
+                    - name: Tietokannan päivitysten luominen
+                      href: database/api/v1/reference-create-refresh.md
+                    - name: Työvaiheen tehtävän tilan haku
+                      href: database/api/v1/reference-get-status.md
         - name: Esittelytiedot
           items:
             - name: Esittelytietojen yleiskatsaus
@@ -1213,7 +1237,7 @@
             - name: Finance and Operations- ja Lifecycle Services -tuki
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 -tuen yleiskatsaus
-              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/dev-itpro/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Tuki 21Vianetin ylläpitämään Finance and Operationsiin Kiinassa
               href: lifecycle-services/21vianet-support.md
             - name: Pyyntöjen lähettäminen Dynamics Service -kehitysryhmälle

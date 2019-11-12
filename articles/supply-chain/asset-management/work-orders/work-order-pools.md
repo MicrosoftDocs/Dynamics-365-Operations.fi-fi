@@ -3,7 +3,7 @@ title: Työtilauspoolit
 description: Tässä ohjeaiheessa kerrotaan työtilauspoolien käsittelystä resurssien hallinnassa.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,95 +16,96 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 069fa02073808fd7bbaac9bc1603e49ce4d450eb
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 161244cb4451ddc7b13b579fd02e828a61adeea4
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875631"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626359"
 ---
 # <a name="work-order-pools"></a>Työtilauspoolit
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
+Voit käyttää työtilauspooleja sellaisten työtilausten ryhmittelyyn, joilla on jotain yhteistä. Tässä on esimerkkejä asioista, joita varten voit luoda työtilauspooleja:
+
+- Työvuorot, kuten Ylläpitovuoro A tai Ylläpitovuoro B  
+
+- Osaaminen, kuten sähköasentajat tai putkimiehet  
+
+- Fyysiset sijainnit  
+
+- Aikataulut, kuten viikot tai muut ajanjaksot  
+
+Tarvittaessa voit laittaa yhden työtilauksen useaan työtilauspooliin.
 
 
-Voit käyttää työtilauspooleja sellaisten työtilausten ryhmittelyyn, joilla on jotain yhteistä. Voit esimerkiksi luoda työtilauspooleja seuraavasti:
+## <a name="create-a-work-order-pool"></a>Työtilauspoolin luominen
 
-- työnjoukkueille, esimerkiksi huoltomiehistö A, huoltomiehistö B  
+Luettelosivulla **Kaikki työtilauspoolit** tai **Aktiiviset työtilauspoolit** saat yleiskuvan työtilauspooleista ja voit luoda uusia pooleja.
 
-- osaamisille, esimerkiksi sähköasentajat tai putkimiehet  
-
-- fyysinen sijainti  
-
-- aikatauluille, esimerkiksi viikot tai muut kaudet  
-
-
-Jos tarpeen, yksi työtilaus voidaan sijoittaa moniin työtilauspooleihin.
-
-
-## <a name="create-work-order-pool"></a>Luo työtilauspooli
-
-**Kaikki työtilauspoolit**- tai **Aktiiviset työtilauspoolit**- kodissa saat yleiskuvan työtilauspooleista ja voit luoda uusia pooleja.
-
-1. Valitse **Resurssien hallinta** >  **yhteiset** >  **Työtilauspoolit** >  **Kaikki työtilauspoolit** tai **Aktiiviset työtilauspoolit**.
+1. Valitse **Resurssien hallinta** > **yhteiset** > **Työtilauspoolit** > **Kaikki työtilauspoolit** tai **Aktiiviset työtilauspoolit**.
 
 2. Valitse **Uusi**.
 
-3. Lisää työtilauspoolin tunnus **pooli**-kenttään ja nimi **Nimi**-kenttään.
+3. Kirjoita **Pooli**-kenttään työtilauspoolin tunnus.
 
-4. Valitse "kyllä" **Aktiivinen**-vaihtopainikkeen avulla osoittamaan, että työtilauspooli on aktiivinen.
+4. Anna nimi **Nimi**-kenttään.
 
-5. Valitse **Poista työtilauksen suhteet** -vaihtopainikkeessa "kyllä", jos haluat, että työtilaukset poistetaan automaattisesti työtilauspoolista.
+5. Aseta **Aktiivinen**-asetuksen arvoksi **Kyllä** ilmaisemaan, että työtilauspooli on aktiivinen.
 
-6. Valitse **Poista elinkaaren tila** -kentässä työtilauksen elinkaaritila. Esimerkiksi työtilauksen suorittamisen elinkaaritila voidaan määrittää poistamaan automaattisesti suhteet työtilauspooleihin.
+6. Aseta **Poista työtilauksen suhteet** -asetuksen arvoksi **Kyllä**, jos työtilaukset on tarkoitus poistaa automaattisesti työtilauspoolista.
 
-7. Voit aloittaa työtilausten lisäämisen työtilauspooliin heti. Valitse **Työtilaukset** -pikavälilehdessä **Lisää rivi**.
+7. Valitse **Poista elinkaaren tila** -kentässä työtilauksen elinkaaritila. Esimerkiksi työtilauksen suorittamisen elinkaaritila voidaan määrittää poistamaan automaattisesti suhteet työtilauspooleihin.
 
-8. Valitse **Työtilaus**-kentässä työtilaus. Liittyvät kentät päivittyvät automaattisesti.
+    Voit aloittaa työtilausten lisäämisen työtilauspooliin heti.
 
-9. Toista vaiheet 7-8, jos haluat lisätä uusia työtilauksia.
+8. Valitse **Työtilaukset** -pikavälilehdessä **Lisää rivi**.
 
-10. **Lajittelujärjestys**-kentässä voit määrittää, suoritetaanko työtilaukset tietyssä järjestyksessä. Voit määrittää valittujen työtilausten tietyn järjestyksen lisäämällä luvut 1, 2, 3 ja niin edelleen.
+9. Valitse **Työtilaus**-kentässä työtilaus. Liittyvät kentät päivittyvät automaattisesti.
 
-11. Napsauttamalla **Työtilaukset**-painiketta saat näkyviin luettelon kaikista työtilauspooliin sisältyvistä työtilauksista.
+10. Voit lisätä muita työtilauksia tekemällä kohtien 8–9 toimet uudelleen.
 
-12. Valitsemalla **kapasiteetin kuormitus** -painikkeen voit avata **Kapasiteetin kuormitus** -kohdan, joka laskee ja näyttää ylläpitoaikataulun, ei-ajoitettujen työtilausten ja ajoitettujen työtilausten kapasiteetin kuormituksen.
+11. Jos lisäämäsi työtilaukset on tarkoitus suorittaa tietyssä järjestyksessä, voit määrittää järjestyksen syöttämällä **Lajittelujärjestys**-kenttään numerot **1**, **2**, **3** jne.
 
-13. Valitse **Nimike-ennuste**-painike, kun avata **Nimike-ennusteen** laskeaksesi ja tarkastellaksesi nimikkeiden (varaosien ja muiden tarvittavien nimikkeiden) ennusteita, jotka liittyvät kunnossapitoaikatauluun, ei-ajoitettuihin työtilauksiin ja ajoitettuihin työtilauksiin.
+12. Voit tarkastella luetteloa kaikista työtilauspooliin kuuluvista työtilauksista valitsemalla **Työtilaukset** toimintoruudun **Työtilauspooli**-välilehden **Näytä työtilauspooliin liittyvät** -ryhmässä, jolloin **Kaikki työtilaukset** -luettelosivu avautuu.
 
-14. Avaa **Työtilauksen ostoehdotus** -luettelo napsauttamalla **Työtilauksen ostoehdotus** -painiketta, niin saat näkyviin luettelon työtilauspoolin työtilauksiin liittyvistä ostoehdotuksista.
+13. Voit laskea ylläpitoaikataulun, ajoittamattomien työtilausten ja ajoitettujen työtilausten kapasiteetin kuormituksen ja tarkastella sitä valitsemalla **Kapasiteetin kuormitus** toimintoruudun **Työtilauspooli**-välilehden **Näytä työtilauspooliin liittyvät** -ryhmässä, jolloin avautuu **Laske kapasiteetin kuormitus** -valintaikkuna.
 
-15. Avaa **Työtilauksen osto** -luettelo napsauttamalla **Työtilauksen osto** -painiketta, niin saat näkyviin luettelon työtilauspoolin työtilauksiin liittyvistä ostotilauksista.
+14. Voit laskea ylläpitoaikatauluun, ajoittamattomiin työtilauksiin ja ajoitettuihin työtilauksiin liittyvien nimikkeiden (varaosien ja muiden tarvittavien nimikkeiden) ennusteita ja tarkastella niitä valitsemalla **Nimike-ennuste** **Työtilauspooli**-välilehden **Näytä työtilauspooliin liittyvät** -ryhmässä, jolloin avautuu **Laske nimike-ennuste** -valintaikkuna.
+
+15. Voit tarkastella työtilauspoolin työtilauksiin liittyvien ostoehdotusten luetteloa valitsemalla **Työtilauksen ostoehdotus** toimintoruudun **Työtilauspooli**-välilehden **Hankinta**-ryhmässä, jolloin **Työtilauksen ostoehdotus** -luettelosivu avautuu.
+
+16. Voit tarkastella työtilauspoolin työtilauksiin liittyvien ostotilausten luetteloa valitsemalla **Työtilauksen osto** toimintoruudun **Työtilauspooli**-välilehden **Hankinta**-ryhmässä, jolloin **Työtilauksen osto** -luettelosivu avautuu.
 
 >[!NOTE]
->Kun työtilauspooli ei ole enää tarpeen työsuunnitelmasi osalta, määritä kyseisen varannon **Aktiivinen**-valintaruutuun Ei **Työtilauspooli**-luettelonäkymässä.
+>Kun työtilauspooli ei ole enää tarpeen työsuunnitelmasi osalta, määritä kyseisen poolin **Aktiivinen**-asetuksen arvoksi **Ei** **Työtilauspooli**-sivun luettelonäkymässä.
 
-Valitse **Poista työtilaussuhteet** -valintaruutu, jos haluat poistaa kaikki työtilausrivit, esimerkiksi luodaksesi tyhjän varannon, jota voit myöhemmin käyttää muissa työtilauksissa. Muista tyhjentää **Poista työtilauksen suhteet** -valintaruutu, jos haluat käyttää työtilauspoolia uusien työtilaussuhteiden luomiseen myöhemmin.
+Voit poistaa kaikki työtilausrivit asettamalla **Poista työtilaussuhteet**-asetuksen arvoksi **Kyllä**. Tämä asetus on hyödyllinen, jos esimerkiksi haluat luoda tyhjän poolin, jota voit käyttää myöhemmin muita työtilauksia varten. Kun myöhemmin olet valmis käyttämään työtilauspoolia uusien työtilaussuhteiden luomiseen, muista asettaa **Poista työtilaussuhteet** -asetuksen arvoksi **Ei**.
 
+Seuraavassa kuvassa on esimerkki **Työtilauspooli** -luettelosivusta.
 
 ![Kuva 1](media/22-work-orders.png)
 
 
-## <a name="add-work-order-to-a-work-order-pool"></a>Työtilauksen lisääminen työtilauspooliin
+## <a name="add-a-work-order-to-a-work-order-pool"></a>Työtilauksen lisääminen työtilauspooliin
 
-Kuten yllä olevassa osassa on kuvattu, voit lisätä työtilauksia työtilauspooliin, kun luot poolin. Voit myös lisätä työtilauksen työtilauspooliin jostakin **Kaikki työtilaukset** -luettelosta.
+Kuten edellisessä osassa on kuvattu, voit lisätä työtilauksia työtilauspooliin, kun luot poolin. Voit myös lisätä työtilauksia työtilauspooliin luettelosivulla **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
-1. Valitse **Resurssien hallinta** >  **yhteiset** >  **työtilaukset** >  **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse työtilaus luettelosta ja sitten toimintoruudun **Työtilaus**-välilehden **Ylläpidä**-ryhmässä **Työtilauspooli**.
 
 2. Valitse työtilaus luettelosta ja valitse sitten **Työtilauspooli.**
 
-3. Valitse **Lisää/poista** -kentässä Lisää.
+3. Valitse **Ylläpidä työtilauspoolia** -valintaikkunan **Lisää/poista**-kentässä **Lisää**.
 
 4. Valitse työtilauspooli **Pooli**-kentässä.
 
 5. Valitse **OK**.
 
-6. Kun olet lisännyt työtilauksen työtilauspooliin ja haluat sijoittaa työtilauksen poolin tiettyyn kohtaan: Avaa jokin työtilauspooli luettelosivulta, valitse pooli ja valitse **Muokkaa**ja säädä poolin työtilausten lajittelujärjestystä kohdassa **Työtilauspooli** -lomake > > **Työtilaukset**- pikavälilehti > **Lajittelujärjestys**-kenttä.
+6. Jos haluat asettaa lisäämäsi työtilaukset tiettyyn järjestykseen työtilauspoolissa, valitse pooli luettelosivulla **Kaikki työtilauspoolit** tai **Aktiiviset työtilauspoolit** ja valitse **Muokkaa**. Käytä sitten **Työtilauspooli**-sivun **Työtilaukset**-pikavälilehden **Lajittelujärjestys**-kenttää muuttaaksesi pooliin kuuluvien työtilausten lajittelujärjestystä.
 
-Jos haluat poistaa valitun työtilauksen työtilauspoolista, valitse Poista vaiheessa 3.
+Voit poistaa työtilauksen työtilauspoolista toistamalla nämä vaiheet, mutta valitsemalla **Poista** vaiheessa 3.
 

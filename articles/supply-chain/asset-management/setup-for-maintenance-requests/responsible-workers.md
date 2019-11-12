@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 432a235668bbd969f497003a98b7f66390e5308f
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 63f436ffd01ac56bb4bc0021e226dad46d7c3377
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790488"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569912"
 ---
 # <a name="responsible-maintenance-workers"></a>Vastuulliset ylläpitotyöntekijät
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Vastuulliset huoltotyöntekijät voivat liittyä resurssityyppeihin, resursseihin, toiminnallisiin sijainteihin, kunnossapitotöiden tyyppiluokkiin, kunnossapidon työtyyppeihin, kunnossapidon työn tyypin variantteihin ja toimialoihin. Niitä voidaan käyttää työtilauksiin ja ylläpitopyyntöihin, jotka ilmaisevat ensisijaisuuden työtilauksesta vastuussa oleville huoltotyöntekijöille. (Nämä kunnossapitotyöntekijät eivät kuitenkaan välttämättä ole samoja työntekijöitä, jotka on ajoitettu suorittamaan työtilauksen.) Tämän toiminnon käyttö on valinnaista. Sen avulla voidaan esimerkiksi valita vastuulliset työntekijät tai työntekijäryhmät tietyille työtyypeille tai työalueille.
 
@@ -53,4 +53,4 @@ Ennen kuin voit määrittää vastuullisia kunnossapitotyöntekijöitä, sinun o
 
 Seuraavassa kuvassa on esimerkki **Vastuulliset ylläpitotyöntekijät** -sivusta.
 
-![Kuva 1](media/08-setup-for-requests.png)
+![Vastaavien ylläpitotyöntekijöiden sivu](media/08-setup-for-requests.png)

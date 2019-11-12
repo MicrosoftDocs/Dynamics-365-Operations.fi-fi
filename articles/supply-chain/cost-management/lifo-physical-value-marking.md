@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 792ff4d7b72ce092fe1ad92e53172cf40f0ecf26
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565693"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569268"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO-merkintä ja fyysinen arvo
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 LIFO (Last in, First out) on varastomalli, jossa varastoon viimeiseksi hankittujen (uusimpien) vastaanottojen varasto-otto tapahtuu ensin. Varasto-otot täsmäytetään viimeisiä varastovastaanottoja vasten varastotapahtuman päivämäärän perusteella. 
 
@@ -56,7 +54,9 @@ Tässä esimerkissä nimikemalliryhmää ei ole merkitty sisällyttämään fyys
 -   5b. Rahoituksellinen varasto-otto, jossa määrä on 1 ja kappaleen kustannushinta 20,00 Yhdysvaltain dollaria (USD) (rahoituksellisesti päivitettyjen tapahtumien keskiarvo).
 -   6. Varaston sulkeminen on suoritettu. LIFO-menetelmään perustuen viimeinen rahoituksellisesti päivitetty varasto-otto täsmäytetään viimeistä rahoituksellisesti päivitettyä vastaanottoa vasten. Varasto-ottotapahtumalle tehdään 10,00 Yhdysvaltain dollarin (USD) oikaisu.
 
-Uusi kustannushinnan käyttökeskiarvo (15,00 USD) on laskettu taloudellisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistetaan LIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus ei ole käytössä. ![LIFO - fyysistä arvoa ei sisällytetä](./media/lifowithoutincludephysicalvalue.gif) 
+Uusi kustannushinnan käyttökeskiarvo (15,00 USD) on laskettu taloudellisesti päivitettyjen tapahtumien mukaan. Seuraavassa kuvassa havainnollistetaan LIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus ei ole käytössä. 
+
+![LIFO - fyysistä arvoa ei sisällytetä](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Kaavion selite**
 
@@ -90,7 +90,9 @@ Seuraavassa on kuvattu näitä tapahtumia:
 
 Tapahtuma 6a oikaistaan vastaanottotapahtuman 4b mukaiseksi. Järjestelmä ei täsmäytä näitä tapahtumia, koska vastaanotto päivitetään vain fyysisesti, ei rahoituksellisesti. Sen sijaan fyysiselle varasto-ottotapahtumalle kirjataan ainoastaan 8,75 Yhdysvaltain dollarin (USD) oikaisu. Tapahtuma 5b oikaistaan fyysisen vastaanottotapahtuman 3a mukaiseksi. Järjestelmä ei täsmäytä näitä tapahtumia, koska molemmat tapahtumat eivät ole rahoituksellisesti päivitettyjä. Sen sijaan tähän varasto-ottotapahtumaan tehdään vain –3,75 Yhdysvaltain dollarin (USD) negatiivinen oikaisu. Uusi kustannushinnan käyttökeskiarvo 20,00 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. 
 
-Seuraavassa kuvassa havainnollistamme LIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus on käytössä. ![LIFO - fyysinen arvo sisällytetään](./media/lifowithincludephysicalvalue.gif) 
+Seuraavassa kuvassa havainnollistamme LIFO-varastointimallia tässä tapahtumasarjassa, kun **Sisällytä fyysinen arvo** -asetus on käytössä. 
+
+![LIFO - fyysinen arvo sisällytetään](./media/lifowithincludephysicalvalue.gif) 
 
 **Kaavion selite**
 
@@ -132,7 +134,9 @@ Seuraavassa on kuvattu näitä tapahtumia:
 
 Uusi kustannushinnan käyttökeskiarvo 27,50 USD on laskettu taloudellisesti ja fyysisesti päivitettyjen tapahtumien mukaan. 
 
-Seuraavassa kuvassa havainnollistetaan LIFO-varastomallin käyttämisen vaikutus tähän tapahtumien sarjaan kun merkintä varasto-ottojen ja vastaanottojen välillä on käytössä. ![LIFO merkinnän kanssa    ](./media/lifowithmarking.gif) 
+Seuraavassa kuvassa havainnollistetaan LIFO-varastomallin käyttämisen vaikutus tähän tapahtumien sarjaan kun merkintä varasto-ottojen ja vastaanottojen välillä on käytössä. 
+
+![LIFO merkinnän kanssa    ](./media/lifowithmarking.gif) 
 
 **Kaavion selite**
 
@@ -146,7 +150,4 @@ Seuraavassa kuvassa havainnollistetaan LIFO-varastomallin käyttämisen vaikutus
 - Kukin pystysuora nuoli on merkitty järjestystunnuksella, kuten *1a*. Tunnukset ilmaisevat varastotapahtumakirjausten järjestyksen aikajanalla.
 - Varaston sulkemiset on kuvattu punaisella pystysuoralla katkoviivalla ja merkinnällä *Inventory Close*.
 - Varaston sulkemisen suorittamat selvitykset on kuvattu punaisilla katkoviivanuolilla, jotka kulkevat vinosti vastaanotosta varastostaottoon.
-
-
-
 

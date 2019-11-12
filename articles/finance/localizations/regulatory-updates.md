@@ -3,7 +3,7 @@ title: Pakolliset päivitykset
 description: Tässä ohjeaiheessa on luettelo Microsoft Dynamics 365 Financelle suunnitelluista ja julkaistuista pakollisista päivityksistä.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 10/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dc5a9669a9c6c298a4f9df52346b8a075ba177e0
-ms.sourcegitcommit: a4e1a28b4733f3356e5a2237c8ba5d93f9799391
+ms.openlocfilehash: adb88a5fb79b24a26aa2976464d3e838922322c6
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2517308"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653201"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -28,9 +28,7 @@ ms.locfileid: "2517308"
 
 Tässä ohjeaiheessa on luettelo pakollisista päivityksistä, jotka on suunniteltu ja julkaistu Dynamics 365 Financen tukemissa lokalisaatioissa. Toimitusajankohdat voivat muuttua ja ennakoidut toiminnot voivat olla erilaisia tai niitä ei ehkä julkaista. [Microsoftin käytännössä](https://go.microsoft.com/fwlink/p/?linkid=2007332) on lisätietoja. 
 
-Pakolliset päivitykset ovat toimintoja, jotka tukevat uudet tai muuttuneet maakohtaiset lainsäädännöt. Lisätietoja muista suunnitelluista tai julkaistuista maakohtaisista ominaisuuksista on seuraavissa resursseissa:
-- [Dynamics 365:n ja Power Platformin julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Microsoft Dynamics 365 for Finance and Operationsin uudet ominaisuudet](../../fin-and-ops/get-started/whats-new-changed.md)
+Pakolliset päivitykset ovat toimintoja, jotka tukevat uudet tai muuttuneet maakohtaiset lainsäädännöt. Lisätietoja muista suunnitelluista tai julkaistuista maakohtaisista ominaisuuksista on [Dynamics 365:n ja Power Platformin julkaisusuunnitelmissa](https://docs.microsoft.com/business-applications-release-notes/index).
 
 Microsoft pyrkii toteuttamaan uudet lainsäädännölliset vaatimukset mahdollisimman aikaisin. Toimituspäivämäärä riippuu lain ilmoituspäivästä, vaatimuksien saatavuudesta paikallisilta viranomaisilta, oikeellisuustarkistustyöklaujen saatavuudeta sekä muutoksen koosta ja monimutkaisuudesta.
 
@@ -44,13 +42,19 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 
 |Suunniteltu julkaisupäivämäärä|Julkaisuversio|Maa tai alue|Pakollinen päivitys|
 |--------------------|---------------|-------|-------|
-|      Elokuu 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilia      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.10    |
-|      Elokuu 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilia      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.20    |
-|      Elokuu 2019          |   10.0.6(PEAP)      | Brasilia      |   DRCST-ilmoituksen SC   |
-|      Elokuu 2019          |   10.0.6(PEAP), 10.0.5HF      | Brasilia     |   Rio de Janeiron osavaltio on ottanut uuden lainsäädännön käyttöön koskien EFD-ICMS/IPI-käytäntöä. Rio de Janeiron (RJ) täytäntöönpanon päätöslauselma 13/19 koskee erityismenettelyjä, joita sovelletaan syyttämättä jättämiseen     |
-|      Elokuu 2019          |   10.0.6(PEAP)      | Brasilia      |   Veroilmoitus CAT 42/18    |
-|      Elokuu 2019          |   10.0.6(PEAP)      | Italia      |   Arvonlisäveron hallinnan muutokset D.L.:n toimesta 119, 23. lokakuuta 2018 - Dynamics 365 for Finance and Operations v.10.0.6  |
-|      Elokuu 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japani      |   Kulutusverokannan muutos ja alennettu verokanta otetaan käyttöön    |
+|      marraskuu 2019          |   10.0.7(PEAP)      | Italia      |   Arvonlisäveron hallinnan muutokset D.L.:n toimesta 119, 23.10.2019: neljännesvuosittainen arvonlisäveroilmoitus (Lipe 2018)    |
+|      marraskuu 2019          |   10.0.7(PEAP)      | Italia      |   Retail – Asiakastietojen hallinta POS:ssä |
+|      marraskuu 2019          |   10.0.7(PEAP)      | Italia      |   Retail – Asiakastietojen tulostus verokuittiin | 
+|      marraskuu 2019          |   10.0.7(PEAP)      | Japani      |   Kulutusverokannan muutos ja alennettu verokanta otetaan käyttöön (lakun asettelut) | 
+|      marraskuu 2019          |   10.0.7(PEAP)      | Meksiko      |   Säännön 2.7.2.9 päivitys – CFDI-asiakirjan laativan tahon postinumeron aikavyöhykkeen käyttö | 
+|      marraskuu 2019          |   10.0.7(PEAP)      | Yhdistynyt kuningaskunta     |   Making Tax Digital – Arvonlisäveron palautusraportin luominen yrityksille, jotka ilmoittavat alv:n ryhmänä samassa järjestelmätietokannassa v. 10 | 
+|      Marraskuu–elokuu 2019          |   10.0.7(PEAP), 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilia      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.20    |
+|      Marraskuu–elokuu 2019          |   10.0.7(PEAP), 10.0.6      | Brasilia      |   DRCST-ilmoituksen SC   |
+|      Marraskuu–elokuu 2019          |   10.0.7(PEAP), 10.0.6      | Italia      |   Arvonlisäveron hallinnan muutokset D.L.:n toimesta 119, 23.10.2018 – Dynamics 365 for Finance and Operations  |
+|      Elokuu 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilia      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.10    |
+|      Elokuu 2019          |   10.0.6, 10.0.5HF      | Brasilia     |   Rio de Janeiron osavaltio on ottanut uuden lainsäädännön käyttöön koskien EFD-ICMS/IPI-käytäntöä. Rio de Janeiron (RJ) täytäntöönpanon päätöslauselma 13/19 koskee erityismenettelyjä, joita sovelletaan syyttämättä jättämiseen     |
+|      Elokuu 2019          |   10.0.6      | Brasilia      |   Veroilmoitus CAT 42/18    |
+|      Elokuu 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japani      |   Kulutusverokannan muutos ja alennettu verokanta otetaan käyttöön    |
 |      Elokuu - Heinäkuu 2019          |   10.0.5, 10.0.4HF, 10.0.3HF      | Espanja      |   Espanja: SII: Kelpoisuussääntöjen muutos 1. lokakuuta 2019 lähtien    |
 |      Heinäkuu 2019          |   10.0.5, 10.0.4HF, 10.0.2HF      | Brasilia      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.00  |
 |      Heinäkuu 2019          |   10.0.5      | Brasilia      |   Sped-osallistumisen käytännön opas 1.31. Uusi ohjeistus    |
@@ -66,7 +70,7 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 |      Huhtikuun 2019.          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brasilia     |   SPED ECD -asettelu 7    |
 |      Huhtikuun 2019.          |   10.0.3      | Brasilia      |   SPED ECF - Layout 5 for 2019    |
 |      Huhtikuun 2019.          |   10.0.3      | Intia      |   Veron oikaisu tullivaluuttana BOE:ssa tapahtumavaluutan käyttämisen sijaan    |
-|      Huhtikuun 2019.          |   10.0.3      | Intia      |   Veron laskeminen tullivaluuttana BOE:ssa tapahtumavaluutan käyttämisen sijaan)    |
+|      Huhtikuun 2019.          |   10.0.3      | Intia      |   Veron laskeminen tullivaluuttana BOE:ssa tapahtumavaluutan käyttämisen sijaan   |
 |      Huhtikuun 2019.          |   10.0.3, 10.02HF, 10.0.1HF      | Intia      |   IEC-numeron muodon muutos    |
 |      Huhtikuun 2019.          |   10.0.3      | Liettua      |   Liettuan i.SAF-raportti sallii käyttäjän määrittää järjestelmän arvon lisäverokoodit yrityksen verokoodien kanssa)    |
 |      Huhtikuun 2019.          |   10.0.3      | Puola      |   SAF-laskujen (JPK_FA) v.2, 1. heinäkuuta 2019 alkaen    |

@@ -3,70 +3,67 @@ title: Resurssin mittarit
 description: Tässä ohjeaiheessa kerrotaan, kuinka resurssin mittarityypit luodaan resurssien hallinnassa.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9c445832a649c4f6a6642036ecab325e8aa2079
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.search.validFrom: 2019-09-30
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: bc6b9e944a7ecf6b769a8e3c2f9b1fbafaa60734
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783245"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626105"
 ---
-# <a name="asset-measures"></a>Resurssin mittarit
+# <a name="counters"></a>Laskurit
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+Tässä ohjeaiheessa kerrotaan, kuinka resurssienhallinnassa luodaan laskurityyppejä. Laskurityyppejä käytetään resurssien laskurirekisteröintien tekemiseen esimerkiksi tuotantotuntien määrän tai resurssin tuottaman määrän osalta. Resurssityypit liittyvät laskurityyppeihin. Tämä tarkoittaa sitä, että laskuria voidaan käyttää resurssin vain, jos laskuri on määritetty resurssiin käytetylle resurssityypille.
 
-Tässä ohjeaiheessa kerrotaan, kuinka resurssin mittarityypit luodaan resurssien hallinnassa. Resurssien mittatyyppejä käytetään resurssien mittausrekisteröintien tekemiseen esimerkiksi tuotantotuntien määrän tai resurssin tuottaman määrän osalta. Resurssityypit liittyvät resurssien mitta tyyppeihin. Tämä tarkoittaa sitä, että resurssi mittaa voidaan käyttää vain, jos resurssin mitta on määritetty resurssiin käytetylle resurssityypille.
+Ennen kuin voit tehdä laskurirekisteröintejä resursseille, luo ensin ne laskurityypit, joita haluat käyttää **Laskurit**-kohdassa. Seuraavaksi voit luoda laskurirekisteröintejä kohdassa **Laskurit**. 
 
-Ennen kuin voit tehdä mittauksen rekisteröinnit resursseille, luo ensin ne resurssin mittatyypit, joita haluat käyttää **Laskurit**-kohdassa. Seuraavaksi voit luoda resurssien mittausrekisteröinnit kohdassa **Resurssin mittarit**. 
+Laskureita voidaan käyttää ylläpitosuunnitelmissa. Huoltosuunnitelman rivin tyyppi voi olla esimerkiksi Laskuri, joka liittyy esim. tuotantotuntien määrään tai tuotettuun määrään. 
 
-Resurssin mittareita voidaan käyttää huoltosuunnitelmissa. Huoltosuunnitelman rivin tyyppi voi olla esimerkiksi Laskuri, joka liittyy esim. tuotantotuntien määrään tai tuotettuun määrään. 
-
-Resurssin mittarirekisteröinti voidaan päivittää manuaalisesti tai automaattisesti tuotantotuntien tai tuotetun määrän perusteella. Resurssin mittari voidaan määrittää käyttämään yhtä kolmesta päivitysmenetelmästä (valitaan**Laskurit**-kohdan **Päivitys**-kentässä):
+Laskurirekisteröinti voidaan päivittää manuaalisesti tai automaattisesti tuotantotuntien tai tuotetun määrän perusteella. Laskuri voidaan määrittää käyttämään yhtä kolmesta päivitysmenetelmästä (valitaan **Laskurit**-kohdan **Päivitys**-kentässä):
   
-- Manuaalinen – Resurssin mittariarvot on rekisteröitävä manuaalisesti.  
+- Manuaalinen – Laskuriarvot on rekisteröitävä manuaalisesti.  
 - Tuotantotunnit – laskuri päivitetään automaattisesti tuotantotuntien määrän perusteella.  
 - Tuotantomäärä – laskuri päivitetään automaattisesti tuotetun määrän perusteella.  
 
 >[!NOTE]
->Jos käytetään tuotettua määrää, *kaikki* rekisteröidyt nimikkeet sisällytetään mittausrekisteröintiin, sekä hyvä määrä että virhemäärä. On aina mahdollista tehdä manuaalisia resurssin mittarirekisteröintejä tarvittaessa.
+>Jos käytetään tuotettua määrää, *kaikki* rekisteröidyt nimikkeet sisällytetään laskurirekisteröintiin, sekä hyvä määrä että virhemäärä. On aina mahdollista tehdä manuaalisia laskurirekisteröintejä tarvittaessa.
 
 ## <a name="create-counter-types-for-asset-counter-registrations"></a>Luo resurssilaskurien rekisteröintien laskurityypit
 
 1. Valitse **Resurssien hallinta** > **Asetukset** > **Resurssityypit** > **Laskurit**.
-2. Luo uusi resurssin mittarityyppi valitsemalla **Uusi**.
+2. Luo uusi laskurityyppi valitsemalla **Uusi**.
 3. Lisää tunnus **Laskuri**-kenttään ja laskurin nimi **Nimi**-kenttään.
-4. Valitse mittayksikkö **Yleiset**-pikavälilehden **Yksikkö**-kentässä.
-5. Valitse **Päivitys**-kentässä resurssin mittarissa käytettävä päivitystapa.
-6. Valitse **Peri laskurin arvot** vaihtopainikkeessa Kyllä, jos resurssirakenteen alatason resurssien tulisi periä automaattisesti pääresurssiin tehdyt rekisteröinnit.
-7. Valitse **Yhteenlaskettu summa**-kentässä se summausmenetelmä, jota käytetään resurssin mitassa tätä resurssin mittatyyppiä käyttäen. "Summa" on vakio valinta, jota käytetään kirjattujen arvojen jatkuvaan lisäämiseen kokonaisarvoon. "Keskiarvo"-arvoa voidaan käyttää, jos resurssin mitta on määritetty valvomaan esimerkiksi resurssin lämpötilaa, tärinää tai kulumista. 
-8. Aseta **Poikkeama yli** -kentässä ylempi taso prosentteina, jonka avulla tarkistetaan, jos manuaaliset resurssin rekisteröinnit ovat odotetun alueen sisällä. Tarkistus perustuu olemassa olevien resurssin rekisteröintien lineaariseen kasvuun.
-9. Aseta **Poikkeama alle** -kentässä alempi taso prosentteina, jonka avulla tarkistetaan, jos manuaaliset resurssin rekisteröinnit ovat odotetun alueen sisällä. Tarkistus perustuu olemassa olevien resurssin rekisteröintien lineaariseen vähenemiseen.
-10. Valitse **Tyyppi**-kentässä sanomatyyppi (ilmoitus, varoitus, virhe), joka näytetään, jos määritetyn alueen ulkopuoliset poikkeamat toteutuvat, kun teet manuaalisia resurssin mittauksen rekisteröintejä.
-11. Lisää **Resurssityypit**-pikavälilehdessä resurssityypit, joiden tulisi voida käyttää resurssin mittaria.
-12. Lisää **Liittyvät resurssin mittarit** -pikavälilehdessä resurssin mitat, jotka haluat päivittää automaattisesti, kun tämä resurssin mitta päivitetään.
+4. Valitse laskuriyksikkö **Yleiset**-pikavälilehden **Yksikkö**-kentässä.
+5. Valitse **Päivitys**-kentässä laskurissa käytettävä päivitystapa.
+6. Valitse **Peri laskurin arvot** vaihtopainikkeessa Kyllä, jos resurssirakenteen alatason resurssien tulisi periä automaattisesti pääresurssiin tehdyt laskurirekisteröinnit.
+7. Valitse **Yhteenlaskettu summa**-kentässä se summausmenetelmä, jota käytetään laskurissa tätä laskurityyppiä käyttäen. "Summa" on vakio valinta, jota käytetään kirjattujen arvojen jatkuvaan lisäämiseen kokonaisarvoon. "Keskiarvo"-arvoa voidaan käyttää, jos laskuri on määritetty valvomaan esimerkiksi resurssin lämpötilaa, tärinää tai kulumista. 
+8. Aseta **Poikkeama yli** -kentässä ylempi taso prosentteina, jonka avulla tarkistetaan, jos manuaaliset laskurirekisteröinnit ovat odotetun alueen sisällä. Tarkistus perustuu olemassa olevien laskurirekisteröintien lineaariseen kasvuun.
+9. Aseta **Poikkeama ali** -kentässä alempi taso prosentteina, jonka avulla tarkistetaan, jos manuaaliset laskurirekisteröinnit ovat odotetun alueen sisällä. Tarkistus perustuu olemassa olevien laskurirekisteröintien lineaariseen pienenemiseen.
+10. Valitse **Tyyppi**-kentässä sanomatyyppi (ilmoitus, varoitus, virhe), joka näytetään, jos määritetyn alueen ulkopuoliset poikkeamat toteutuvat, kun teet manuaalisia laskurirekisteröintejä.
+11. Lisää **Resurssityypit**-pikavälilehdessä resurssityypit, joiden tulisi voida käyttää laskuria.
+12. Lisää **Liittyvät resurssilaskurit** -pikavälilehdessä laskuri, jota haluat päivittää automaattisesti, kun tämä laskuri päivitetään.
 
 
 >[!NOTE]
->Liittyvä resurssin mittari päivitetään automaattisesti vain, jos liittyvällä resurssin mittarilla on resurssityyppi, johon se liittyy, resurssin mittauksen määrityksissä. Esimerkki: Voit määrittää resurssin mittarin Tuotantotunnit ja lisätä resurssityypin Kuorma-auton moottori. Kun tämä resurssin mittari päivitetään, liittyvään laskuriin "Öljy" päivitetään myös samat mittarin arvot. **Laskurit**-asetuksissa on Tunnit-määritys. Myös resurssin mittarille "Öljy" resurssityyppi "Kuorma-auton moottori" pitää lisätä **Resurssityypit**-pikavälilehteen , jotta resurssin mittarin suhde voidaan varmistaa. Alla olevissa näyttökuvissa on esimerkki resurssin mittarien Tunti ja Öljy määrityksistä.
+>Liittyvä laskuri päivitetään automaattisesti vain, jos liittyvällä laskurilla on resurssityyppi, johon se liittyy, laskurin määrityksissä. Esimerkki: Voit määrittää laskurin Tuotantotunnit ja lisätä resurssityypin Kuorma-auton moottori. Kun tämä laskuri päivitetään, liittyvään laskuriin "Öljy" päivitetään myös samat laskuriarvot. **Laskurit**-asetuksissa on Tunnit-määritys. Myös laskurille "Öljy" resurssityyppi "Kuorma-auton moottori" pitää lisätä **Resurssityypit**-pikavälilehteen , jotta laskurisuhde voidaan varmistaa. Alla olevissa näyttökuvissa on esimerkki laskureiden Tunti ja Öljy määrityksistä.
 
-Kun resurssityyppit lisätään resurssin mittarityyppiin kohdassa **Laskurit**, kyseinen resurssin mittari lisätään automaattisesti **Laskurit**-pikavälilehden resurssityyppeihin kohdassa [Resurssitypit](../setup-for-objects/object-types.md).
+Kun resurssityypit lisätään laskurityyppiin kohdassa **Laskurit**, kyseinen laskuri lisätään automaattisesti **Laskurit**-pikavälilehden resurssityyppeihin kohdassa [Resurssitypit](../setup-for-objects/object-types.md).
 
 ![Kuva 1](media/071-setup-for-objects.png)
-
 

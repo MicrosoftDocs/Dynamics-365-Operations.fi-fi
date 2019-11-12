@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c22137ad29bf947bc7a9e4c9a4d1332e03b1298
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 1e3fc0e8cb5c9a6cc7729dfbddd5d918a1d6bdb5
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606961"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653368"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
@@ -37,7 +37,7 @@ Oletusarvon mukaan Finance and Operations 7.3.2:n käyttöönoton yhteydessä oh
 
 Kun uusi **Vähittäismyyntilaskelmat**-määritysavain on käytössä, uusi valikkokohde nimeltä **Vähittäismyyntilaskelmat** on käytettävissä. Tämän valikkovaihtoehdon avulla voit luoda, laskea ja kirjata laskelmia manuaalisesti. Laskelmat, jotka aiheuttavat virheen eräkirjausprosessia käytettäessä, ovat myös saatavilla tämän valikkokohdan kautta. (Kun **Vähittäismyyntilaskelmat (vanha)** -määritysavain on käytössä, valikkokohteen nimi on **Avoimet laskelmat**.)
 
-Finance and Operations sisältää seuraavat oikeellisuustarkistukset, jotka liittyvät näihin määritysavaimiin:
+Retail sisältää seuraavat oikeellisuustarkistukset, jotka liittyvät näihin määritysavaimiin:
 
 - Kumpaakin määritysavainta ei voi ottaa käyttöön samanaikaisesti.
 - Samoja määritysavaimia on käytettävä kaikkiin toimintoihin, jotka suoritetaan tietyssä laskelmassa sen elinkaaren aikana (Luo, Laske, Tyhjennä, Kirjaa jne.). Et voi esimerkiksi luoda ja laskea laskelmaa, kun **Vähittäismyyntilaskelmat (vanhat)** -määritysavain on käytössä ja yrität kirjata samaa laskelmaa **Vähittäismyyntilaskelmat**-määritysavaimen ollessa käytössä.

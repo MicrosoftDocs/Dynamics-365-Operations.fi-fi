@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdfc5eda1ebf78abe823908324ed9c35215e562e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249561"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653508"
 ---
 # <a name="demand-forecasting-setup"></a>Kysynnän ennusteiden asetukset
 
@@ -72,7 +72,7 @@ Supply Chain Management käyttää automaattianalyysipalveluiden verkkopalvelua 
 
 **Huomautus:** Azuren tallennustilin nimi ja avain tarvitaan vain, jos käytät mukautettua tallennustiliä. Jos käytät paikallista versiota, sinulla on oltava mukautettu tallennustili Azuressa niin, että automaattianalyysipalvelu voi käyttää historiallisia tietoja. 
 
-Voit käyttää omaa palveluasi kysynnän ennusteiden luomiseen automaattianalyysistudion tai Supply Chain Managementin kysynnän ennusteiden luomisen kokeilujen avulla. Finance and Operationsisssa on ohjeita kysynnän ennusteiden luomiskokeilujen käyttöönottamisesta verkkopalveluna. Valitse **Kysynnän ennusteen parametrit** -sivulla **Azuren automaattianalyysipalvelut** -välilehti.
+Voit käyttää omaa palveluasi kysynnän ennusteiden luomiseen automaattianalyysistudion tai Supply Chain Managementin kysynnän ennusteiden luomisen kokeilujen avulla. Supply Chain Managementissa on ohjeita kysynnän ennusteiden luomiskokeilujen käyttöönottamisesta verkkopalveluna. Valitse **Kysynnän ennusteen parametrit** -sivulla **Azuren automaattianalyysipalvelut** -välilehti.
 
 ## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>Kysynnän ennusteiden automaattianalyysipalveluiden asetukset
 Jos haluat tarkastella parametreja, jotka voidaan määrittää kysynnän ennustepalvelulle, valitse **Pääsuunnittelu** &gt; **Asetukset** &gt; **Kysynnän ennuste** &gt; **Ennustealgoritmin parametrit**. **Ennustealgoritmin parametrit** sivu näyttää parametrien oletusarvot. Voit korvata nämä parametrit **Kysynnän ennusteen parametrit** -sivulla. Korvaa parametrit yleisesti **Yleinen** -välilehdessä, tai nimikkeen kohdistustunnuskohtaisesti **Nimikkeen kohdistustunnus** -välilehdessä. Nimikkeen kohdistustunnuksella korvattavat parametrit vaikuttavat vain kyseiseen nimikkeen kohdistustunnukseen määritettyjen nimikkeiden ennusteisiin.

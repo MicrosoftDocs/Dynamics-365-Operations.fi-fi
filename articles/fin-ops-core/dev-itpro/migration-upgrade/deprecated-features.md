@@ -3,7 +3,7 @@ title: Finance and Operationsin poistetut tai vanhentuneet toiminnot
 description: Tässä ohjeaiheessa käsitellään ominaisuuksia, jotka on poistettu tai joiden poistoa suunnitellaan.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70bb8404c5b0e2422948d0b89311c384e3686710
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181079"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658687"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Finance and Operationsin poistetut tai vanhentuneet toiminnot
 
@@ -38,13 +38,42 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 > [!NOTE]
 > Finance and Operationsin heinäkuun 2017 Platform update 8 -versiosta alkaen kunkin poistetun tai vanhentuneen toiminnon käyttöottotyyppi ilmoitetaan. Kaikki tässä aiheessa mainitut aiemmat versiot tukivat vain pilvikäyttöönottoja.
 
-> Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: [Tekniset viitetiedot](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.
+Seuraavissa raporteissa on tarkempia tietoja Finance and Operationsin objekteista: [Tekniset viitetiedot](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Voit verrata raporttien eri versioita saadaksesi lisätietoja objekteista, jotka on muutettu tai poistettu kussakin Finance and Operationsin versiossa.
 
+## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 ja Platform update 31
+
+### <a name="chinese-voucher-types-without-account-groups-selection"></a>Kiinan tositetyypit ilman tiliryhmävalintaa
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Siirrytty ominaisuuteen, jossa on tiliryhmävalinta. |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Suunnittelemme lopettavamme Kiinalaisten tositetyyppimäärityksen tukemisen ilman tiliryhmävalintaa 1.12.2020 mennessä. Lisätietoja uudesta ominaisuusrakenteessa esitetään kohdassa Uutta versiossa 10.0.7 |
 
 ## <a name="finance-and-operations-1006-with-platform-update-30"></a>Finance and Operations 10.0.6 ja Platform update 30
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.6 ja Platform update 30 on kohdistettujen käyttäjien käytettävissä esiversiojulkaisun osana. Sisältö ja toiminnot voivat muuttua. Lisätietoja ennakkojulkaisusta on kohdassa [Palvelupäivitysten saatavuus](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="dimensionhashgethashstr-_message"></a>DimensionHash.getHash(str _message)
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | SHA1:n käyttö vanhenee Windowsissa, kuten ilmenee artikkelista [Windows Enforcement of SHA1 Certificates](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Hakemus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Kehittäjien on käytettävä uutta ohjelmointirajapintaa 1.4.2020 mennessä. |
+
+### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(merkkijonoviesti)
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | SHA1:n käyttö vanhenee Windowsissa, kuten ilmenee artikkelista [Windows Enforcement of SHA1 Certificates](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä |
+| **Tuotealueet, joihin vaikutetaan**         | Ympäristö |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Kehittäjien on käytettävä uutta ohjelmointirajapintaa 1.4.2020 mennessä. |
+
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()
 
@@ -308,7 +337,7 @@ Tässä versiossa ei ole poistettu mitään ominaisuuksia tai mikään version o
 ## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise edition 7.3 ja Platform update 12
 
 ### <a name="personalized-product-recommendations"></a>Kohdennetut tuotesuositukset 
-15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja on kohdassa [Mukautetut tuotesuositukset](../../retail/personalized-product-recommendations.md).  
+15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja esitetään kohdassa [Tuotesuositusten yleiskatsaus](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -413,7 +442,7 @@ Käyttäjät voivat ladata tämän julkishallinnon portaalista.
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>Kohdennetut tuotesuositukset 
-15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja on kohdassa [Mukautetut tuotesuositukset](../../retail/personalized-product-recommendations.md).  
+15.2.2018 alkaen jälleenmyyjät eivät voi enää näyttää mukautettuja tuotesuosituksia myyntipisteen laitteessa. Lisätietoja esitetään kohdassa [Tuotesuositusten yleiskatsaus](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -445,7 +474,7 @@ Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu pai
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Sama toiminto.       |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asetuksista ja edellytyksistä on kohdassa [Microsoft Dynamics 365 for Finance and Operationsin asennus ja määritys – varastointi](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Finance and Operations – varastointi on korvannut tämän ominaisuuden. Lisätietoja asetuksista ja edellytyksistä on kohdassa [Microsoft Dynamics 365 for Finance and Operationsin asennus ja määritys – varastointi](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Tuotealueet, joihin vaikutetaan**         | Varaston hallinta, kuljetusten hallinta     |
 | **Käytön asetukset**              | Varaston mobiililaiteportaali (WMDP) oli erillinen osa, joka oli tarkoitettu paikallisesti tapahtumaan itsenäiseen käyttöönottoon.               |
 | **Tila**                         | Vanhentunut: toiminnon poiston tavoiteajankohta on vuoden 2019 4. vuosineljännes.   |
@@ -1215,7 +1244,7 @@ Tuotekonfiguraattoria käytettiin määrittämään dynaamisesti nimikkeitä myy
 |   |  |
 |------------|--------------------|
 | **Poiston tai vanhentumisen syy** | Tuotekonfiguraattori paljasti X ++-koodin loppukäyttäjille eikä sitä tueta Dynamics AX:n nykyisessä versiossa. Se on poistettu, jotta päällekkäisissä suurissa koodikannoissa ei tarvitsisi tehdä kaksinkertaista ylläpitoa.  |
-| **Onko toinen ominaisuus korvannut?**   | Kyllä. Poissulkeva konfiguraatio otettiin käyttöön Dynamics AX 2012:ssä, jossa tuotekonfiguraattorin vanhentuminen tulevissa versioissa oli jo ilmoitettu. Poissulkeva konfiguraatiomenetelmä valitaan päätuotteessa ottamaan konfiguraatio käyttöön. Lisätietoja on kohdassa [Tuotemääritysmallin luominen](../../supply-chain/pim/build-product-configuration-model.md). |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä. Poissulkeva konfiguraatio otettiin käyttöön Dynamics AX 2012:ssä, jossa tuotekonfiguraattorin vanhentuminen tulevissa versioissa oli jo ilmoitettu. Poissulkeva konfiguraatiomenetelmä valitaan päätuotteessa ottamaan konfiguraatio käyttöön. Lisätietoja on kohdassa [Tuotemääritysmallin luominen](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta, myynti ja markkinointi  |
 | **Tila**                         | Poistettu versiosta Dynamics AX 7.0 alkaen.      |
 

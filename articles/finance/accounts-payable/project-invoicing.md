@@ -3,7 +3,7 @@ title: Projektiin laskutus
 description: Tämä artikkeli sisältää aika- ja materiaaliprojektien sekä kiinteähintaisten projektien projektilaskutuksen yleiskatsauksen. Artikkelissa on tietoja myös laskuehdotuksista (alustavista laskuista), laskutuksen hallinnasta, ennakkolaskutuksesta, toimittajan laskutuksesta ja hyvityslaskuista.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d91f6b1ccc3254e2c04d24c5f9bf2014c64e50
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177608"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658617"
 ---
 # <a name="project-invoicing"></a>Projektiin laskutus
 
@@ -55,6 +55,9 @@ Voit luoda laskuehdotukset seuraaville tapahtumille:
 -   Summat, jotka asiakkaat ovat pidättäneet ennen projektilaskuja
 -   Hyvityslaskut
 -   Summat, jotka asiakas on maksanut ennen projektin alkamista
+
+> [!NOTE]
+> **Ota resurssin mukainen lajittelu käyttöön projektilaskuehdotuksen luomisessa** -toiminnon avulla projektin kirjapitäjä voi lajitella laskutettavissa olevat projektitapahtumat resurssin mukaan luodessaan uuden projektilaskuehdotuksen. Laskutettavissa olevat projektitapahtumat sisältävässä ruudukossa on erilliset kentät resurssitunnukselle ja resurssille, minkä ansiosta käyttäjä voi käyttää resurssin nimeä suodatus- ja lajitteluperusteena. Tämä toiminto on oletusarvoisesti pois käytöstä ja voidaan ottaa käyttöön kohdassa **Työtilat > Toimintojen hallinta**. Ota yhteyttä järjestelmänvalvojaasi, jos haluat ottaa tämän toiminnon käyttöön.
 
 Voit luoda laskuehdotuksen maksutapahtumat. Voit myös muokata myyntihintaa tunti-, nimike- ja maksutapahtumissa. Jos kirjaat laskuehdotuksen, päivitetyt hinnat ja tapahtumat lisätään projektiraportteihin ja tapahtumien historiatietoihin. 
 

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8d9c8afc139c96e32efb3161d35fde685b8abcc5
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 89e13179e17b7cf075d631bc65d82da5f24da624
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874667"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569843"
 ---
 # <a name="scheduled-execution"></a>Ajoitettu suoritus
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Voit määrittää ajoitetun suorituksen työtilauksen palvelutasojen avulla. (Lisätietoja työtilauksen palvelutasoista on kohdassa [Palvelutaso ja kuvaus](service-level-and-description.md).) Ajoitettu suorittaminen mahdollistaa kunnossapitotyöntekijöiden työsuunnittelun joustavuuden, sillä voit määrittää yksityiskohtaisempia tai vähemmän yksityiskohtaisia vaatimuksia sille aikavälille, jonka aikana työtilaus tulee suorittaa. Esimerkiksi huoltotyöntekijä, joka suorittaa työn valmiiksi odotettua nopeammin tuotantolaitoksessa, voi ehkä siirtyä toiseen läheiseen työhön, joka suunniteltiin nykyiselle viikolle, mutta ei välttämättä nykyiselle päivälle. Tämä lähestymistapa mahdollistaa työntekijöiden suunnittelun ja työn valmistumisen optimoinnin.
 
@@ -42,4 +42,4 @@ Työtilauksiin liittyvät ajoitetut suoritusmääritykset voivat olla yleisiä t
 5. Valitse **Ajoitettu suoritus** -kentässä aikaväli.
 6. Valitse **Tallenna**.
 
-![Kuva 1](media/20-setup-for-work-orders.png)
+![Ajoitettu suoritus](media/20-setup-for-work-orders.png)

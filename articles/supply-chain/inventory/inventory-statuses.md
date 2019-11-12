@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd86bf525ae33f78fb472e6c333083592ff8a012
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 79ddc91aa3bbe0613543595006b10e6e0bef4427
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024381"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653484"
 ---
 # <a name="inventory-statuses"></a>Varaston tilat
 
@@ -42,7 +42,7 @@ Seuraavassa on esimerkkejä tavoista, joilla voit käyttää varaston tiloja:
 
 Varaston tila on yksi varastodimensioryhmän dimensioista. Varaston tiloja voidaan luokitella käytettävissä oleviin ja ei-käytettävissä oleviin ja voit käyttää **Varaston esto** -parametria estämään nimikkeet, joilla on ei-käytettävissä oleva varaston tila. Toimituskiellossa olevien nimikkeiden katsotaan olevan osa fyysistä varastoa, eikä niitä vodai käyttää tuotantotilauksessa, myyntitilauksessa, siirtotilauksessa tai lähtevässä tapahtumassa.
 
-Voit käyttää saapuville töille varastonimikkeitä, joiden varastotila on joko käytettävissä tai ei käytettävissä. Voit luoda esimerkiksi käytettävissä oleville tilan, jonka nimi on **Valmis**, ei-käytettävissä oleville tilan, jonka nimi on **Vioittuneet** ja toimituskiellossa oleville tilan, jonka nimi on **Suljettu**. Luodessasi ostotilauksen vastaanotetuille tai palautetuille nimikkeille, jos mitkään nimikkeet ovat vahingoittuneita tai rikkoutuneita, voit muuttaa niiden varaston tilan **Vioittuneet**-ostotilauksen rivillä. Sen jälkeen, kun nimikkeet on otettu vastaan, tilaksi määritetään automaattisesti **Suljettu**. Jos luet vioittuneet nimikkeet mobiililaitteella, Finance and Operations voi käyttää sijainnin direktiivejä ja työn malleja näyttääkseen tietoja sopivasta sijainnista tai ne sijainnit, jossa voit laittaa pois nuo nimikkeet. Palautetuille nimikkeille luodaan jakelutyyppi **Varaus** **Varastotapahtumat** -lomakkeessa.
+Voit käyttää saapuville töille varastonimikkeitä, joiden varastotila on joko käytettävissä tai ei käytettävissä. Voit luoda esimerkiksi käytettävissä oleville tilan, jonka nimi on **Valmis**, ei-käytettävissä oleville tilan, jonka nimi on **Vioittuneet** ja toimituskiellossa oleville tilan, jonka nimi on **Suljettu**. Luodessasi ostotilauksen vastaanotetuille tai palautetuille nimikkeille, jos mitkään nimikkeet ovat vahingoittuneita tai rikkoutuneita, voit muuttaa niiden varaston tilan **Vioittuneet**-ostotilauksen rivillä. Sen jälkeen, kun nimikkeet on otettu vastaan, tilaksi määritetään automaattisesti **Suljettu**. Jos luet vioittuneet nimikkeet mobiililaitteella, Supply Chain Management voi käyttää sijainnin direktiivejä ja työn malleja näyttääkseen tietoja sopivasta sijainnista tai ne sijainnit, jossa voit laittaa pois nuo nimikkeet. Palautetuille nimikkeille luodaan jakelutyyppi **Varaus** **Varastotapahtumat** -lomakkeessa.
 
 Ulosmeneville töille käytetään nimikkeitä, joilla on saatavilla oleva varaston tila. Jos on nimikkeitä, joiden tila on **Rikkoutunut** ja pääsuunnittelu suoritetaan näillä nimikkeillä, niitä pidetään puuttuvina ja varasto täydennetään automaattisesti.
 

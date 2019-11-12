@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5b791fd3e060c4f4ecdb1ca599a6041d421db74
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 5b830d835d99122a8c0572481f4c229c37d97d0c
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024522"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653248"
 ---
 # <a name="asset-documents"></a>Resurssin asiakirjat
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Tässä ohjeaiheessa kerrotaan resurssien asiakirjoista resurssien hallinnassa.
 
-Resurssien hallinnassa voit määrittää asiakirjoja niin, että ne liittyvät automaattisesti esimerkiksi työtyyppeihin, resurssien valmistajiin, resurssityyppeihin tai resursseihin. Tämä toiminto on hyödyllinen, kun päivitetyt tiedostoversiot vapautetaan. Tällöin sinun on vain asetettava päivitetty asiakirja Finance and Operationsin asiakirjojen vakiosijaintiin ja liitettävä asiakirja luomaasi resurssin asiakirjatietueeseen. Päivitettyä asiakirjaa voi sitten käyttää valikkokohteissa **Kaikki resurssit**, **Aktiiviset resurssit**, **Omat aktiiviset resurssit**, **Kaikki työtilaukset** ja **Aktiivisten työtilausten työt**. Prosessi, jossa asiakirjoja liitetään resurssin asiakirjatietueeseen, käyttää asiakirjojen vakiokäsittelyjärjestelmää.
+Resurssien hallinnassa voit määrittää asiakirjoja niin, että ne liittyvät automaattisesti esimerkiksi työtyyppeihin, resurssien valmistajiin, resurssityyppeihin tai resursseihin. Tämä toiminto on hyödyllinen, kun päivitetyt tiedostoversiot vapautetaan. Tällöin sinun on vain asetettava päivitetty asiakirja Supply Chain Managementin asiakirjojen vakiosijaintiin ja liitettävä asiakirja luomaasi resurssin asiakirjatietueeseen. Päivitettyä asiakirjaa voi sitten käyttää valikkokohteissa **Kaikki resurssit**, **Aktiiviset resurssit**, **Omat aktiiviset resurssit**, **Kaikki työtilaukset** ja **Aktiivisten työtilausten työt**. Prosessi, jossa asiakirjoja liitetään resurssin asiakirjatietueeseen, käyttää asiakirjojen vakiokäsittelyjärjestelmää.
 
 **Esimerkki 1:** työtyyppiin liittyvä tiedosto voi kuvata kyseisen työlajin proseduurin.
 

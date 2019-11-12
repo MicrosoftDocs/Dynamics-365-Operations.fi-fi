@@ -3,7 +3,7 @@ title: Resurssilaskureiden manuaalinen päivitys
 description: Tässä ohjeaiheessa kuvataan resurssilaskureiden manuaalista päivitystä resurssien hallinnassa.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,47 +16,51 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e7c5ec288404c18b00f9dcd0e66f50744d0aa2f
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 3072ab204b53b16988d2973b28a697041cb84c27
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875632"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626130"
 ---
 # <a name="manual-update-of-asset-counters"></a>Resurssilaskureiden manuaalinen päivitys
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
-Laskurien avulla luodaan käyttöomaisuuserän rekisteröinnit, jotka koskevat esimerkiksi käytössä olevien tuntien määrää tai tuotettuja määriä.
+Laskureita käytetään resurssin rekisteröintien luomiseen. Nämä rekisteröinnit koskevat esimerkiksi resurssin käytössäolotunteja tai tuotettua määrää.
 
-Jos laskurille valittu laskurityyppi on asetettu perimään laskuriarvot (**Resurssien hallinta** > **Asetukset** > **Resurssityypit** > **Laskurit** > **Yleiset**-pikavälilehti > **Peri resurssilaskurin arvot** -vaihtopainikkeen arvoksi "Kyllä"), ja kun luot uuden tämän tyypin laskuririvin, samaa laskurityyppiä käyttävät kaikki alemman tason resurssit päivitetään automaattisesti.
+Laskurille valittu laskurityyppi voidaan määrittää perimään laskuriarvoja. Toisin sanoen **Peri resurssilaskurin arvot** -asetuksen arvoksi asetetaan **Kyllä** **Laskurit**-sivun **Yleistä**-pikavälilehdessä (**Resurssienhallinta** > **Asetukset** > **Resurssityypit** > **Laskurit**). Kun tässä tapauksessa luot kyseistä tyyppiä edustavan laskuririvin, jokainen samaa laskurityyppiä käyttävä alilaskuri päivitetään automaattisesti.
 
-**Kaikki resurssit** -kohdassa voit luoda käyttöomaisuuserälle tuntien tai määrien laskurimerkintöjä käyttöomaisuuserän lukemien perusteella.
+**Kaikki resurssit** -sivulla voit luoda resurssille tuntien tai määrien laskurimerkintöjä resurssin lukemien perusteella.
 
-1. Valitse **Resurssien hallinta**  >  **Yhteiset**  >  **Resurssit**  >  **Kaikki resurssit**.
+1. Valitse **Resurssienhallinta** > **Yhteiset** > **Resurssit** > **Kaikki resurssit**.
 
-2. Valitse käyttöomaisuus luettelosta ja valitse sitten **Laskurit**. **Resurssilaskurit**-lomakkeessa näkyy luettelo valitun käyttöomaisuuserän kaikista aiemmista laskurirekisteröinneistä.
+2. Valitse resurssi ja sitten toimintoruudun **Resurssi**-välilehden **Ennaltaehkäisevä**-ryhmässä **Laskurit**. **Resurssilaskurit**-sivulla näkyy luettelo valitun resurssin kaikista aiemmista laskurirekisteröinneistä.
 
-3. Luo uusi rekisteröinti valitsemalla **Uusi**. Resurssitunnus lisätään automaattisesti.
+3. Luo uusi rekisteröinti valitsemalla **Uusi**. Resurssitunnus syötetään automaattisesti **Resurssi**-kenttään.
 
-4. Valitse **Laskuri**-kentästä haluamasi laskuri. Vain käyttöomaisuuserälle valittuun käyttöomaisuuslajiin liittyvät laskurit ovat käytettävissä. Liittyvä yksikkö lisätään automaattisesti **Yksikkö**-kenttään.
+4. Valitse **Laskuri**-kentästä haluamasi laskuri. Vain resurssille valittuun resurssityyppiin liittyvät laskurit ovat vallittavissa. Liittyvä yksikkö syötetään automaattisesti **Yksikkö**-kenttään.
 
-5. Valitse laskurin rekisteröinnille päivämäärä ja aika.
+5. Valitse **Rekisteröity**-kentässä laskurirekisteröinnin päivämäärä ja aika.
 
-6. Lisää **Arvo**-kenttään numero edellisen laskurikirjauksen jälkeen tai lisää laskurin summaluku **Koostettu arvo** -kenttään.
+6. Syötä **Arvo**-kenttään edellisestä laskurirekisteröinnistä kulunut numero. Vaihtoehtoisesti voit syöttää laskurin kokonaisnumeron **Koostettu arvo** -kenttään.
 
-- Jos asennat käyttöomaisuuserään uuden laskurin fyysisesti, sinun täytyy rekisteröidä käyttöomaisuuserän muutos **Resurssilaskurit**-kohdassa. Seuraavaksi sinun on luotava kaksi kirjausriviä, joilla on samat aikaleimat, ja uuden laskurin rivillä on valittava **Laskurin nollaus** -valintaruutu. Kun luot kaksi kirjausriviä, ensimmäisen rivin on oltava korvattavien laskurien kohdalla. **Summa-** kentässä laskurin kokonaissumma on kyseisen laskurityypin kaikkien kirjattujen arvojen laskurin summa.  
-- Jos resurssin **Laskurin nollaus** -valintaruutu on valittuna käyttöomaisuuserälle käyttämällä huoltosuunnitelmaa, jonka vältyyppi on"Kerran alkaen..." tai "Kerran jälkeen...", laskuri on edelleen aktiivinen uudella laskuririvillä, koska luot erillisen laskuririvin ja aloitat alusta uuden laskurin avulla.
+Huomaa seuraavat seikat:
+
+- Jos asennat käyttöomaisuuserään uuden laskurin fyysisesti, sinun täytyy rekisteröidä käyttöomaisuuserän muutos **Resurssilaskurit**-sivulle. Seuraavaksi sinun on luotava kaksi rekisteröintiriviä, joilla on identtiset aikaleimat. Ensimmäisen rivin on oltava korvattavaa laskuria vartenn. Valitse uuteen laskuriin liittyvällä rivillä **Laskurin nollaus** -valintaruutu. **Summa**-kentässä laskurin kokonaissumma on kyseisen laskurityypin kaikkien kirjattujen arvojen laskurin summa.
+
+- Jos resurssin **Laskurin nollaus** -valintaruutu on valittuna resurssille käyttämällä ylläpitosuunnitelmaa, jonka välityyppi on"Kerran alkaen..." tai "Kerran jälkeen...", laskuri on edelleen aktiivinen uudella laskuririvillä, koska luot erillisen laskuririvin ja aloitat alusta uuden laskurin avulla.
+
+Seuraavassa kuvassa on esimerkki **Resurssilaskurit**-sivusta.
 
 ![Kuva 1](media/11-work-orders.png)
 
-
-Jos haluat tehdä laskurikirjauksia useille käyttöomaisuuserille, se voidaan tehdä kohdaas **Resurssien hallinta** > **Kyselyt** > **Resurssit** > **Resurssilaskurit.**
+**Resurssilaskurit**-sivulla (**Resurssienhallinta** > **Kyselyt** > **Resurssit** > **Resurssilaskurit**), voit tarpeen mukaan suorittaa laskurirekisteröintejä useille resursseille samanaikaisesti
 
 >[!NOTE]
->Voit määrittää alueen, joka määrittää manuaalisten laskurirekisteröintien poikkeamat, sekä sanoman tyypin, joka tulee näkyviin, jos rekisteröinnit ovat määritetyn alueen ulkopuolella. Lisätietoja laskurien määrittämisestä on kohdassa [Laskurit](../setup-for-objects/counters.md).
+>Voit määrittää välin määrittämään poikkeuksia manuaalisissa laskurirekisteröinneissä. Voit myös määrittää, minkälainen sanoma tulee näkyviin, jos rekisteröinnit poikkeavat määritetystä välistä. Lisätietoja laskureiden määrittämisestä esitetään kohdassa [Laskurit](../setup-for-objects/counters.md).
+

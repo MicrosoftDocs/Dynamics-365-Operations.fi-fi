@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 071aa79ea75e9a94187dd74dabab940e2cce0f92
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010726"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2551953"
 ---
-# <a name="update-onboarding-guides"></a>Perehdytysoppaiden päivittäminen
+# <a name="update-onboarding-guides-in-dynamics-365-talent---onboard"></a>Perehdytysoppaiden päivittäminen Dynamics 365 Talent: Onboardissa
 
 [!include [banner](includes/banner.md)]
 

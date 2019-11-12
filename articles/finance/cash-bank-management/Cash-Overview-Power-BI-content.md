@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 553a4a5d25e126923576569b48414c46aab991ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7621ca961288af81966e0ac883c6525f89960654
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177567"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553137"
 ---
 # <a name="cash-overview-power-bi-content"></a>Käteisvarojen yleiskatsauksen Power BI -sisältö
 
@@ -40,15 +40,14 @@ Seuraava asetus on tehtävä, jotta tiedot voidaan näyttää Power BI -visualis
 1. Voit määrittää **järjestelmän valuutan** ja **järjestelmän vaihtokurssin** valitsemalla **Järjestelmän hallinta > Asetukset > Järjestelmän parametrit**.
 2. Määritä **Kirjanpitovaluutta** ja **Vaihtokurssin tyyppi** valitsemalla **Kirjanpito > Asetukset > Kirjanpito**.
 2. Määritä tapahtuma- ja kirjanpitovaluuttojen, kirjanpito- ja järjestelmävaluutan sekä kirjanpito- ja pankkivaluuttojen välillä. Tee se valitsemalla **Kirjanpito > Valuutat > Valuutan vaihtokurssit**.
-3. Määritä ja suorita kassavirtaennusteet. Lisätietoja kassavirtaennusteiden määrittämisestä on kohdassa <a href="https://docs.microsoft.com/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
-">Kassavirtaennusteet</a>. 
+3. Määritä ja suorita kassavirtaennusteet. Lisätietoja kassavirtaennusteiden määrittämisestä on kohdassa [Kassavirtaennusteet](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
 4. Päivitä **LedgerCovLiquidityMeasurement**-koostemitta valitsemalla **Järjestelmän hallinta > Asetukset > Yksikkösäilö**.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
 
 **Käteisvarojen yhteenvedon** Power BI -sisällön raportit näytetään **Käteisvarojen yleiskatsaus**- ja **Maksuliikenne**-työtiloissa.
 
-Jos haluat tarkastella tietoja sisältäviä kassavirtaennusteita, ennustelaskelmaprosessi on tehtävä maksuliikenteen hallinta-alueen **Laske kassavirtaennusteet** -toiminnolla.  Tämä on suoritettava jokaiselle ennusteeseen sisältyvälle yritykselle.  Seuraavaksi on päivitettävä LedgerCovLiquidityMeasurement-koostemitta **Yksikkösäilö**-sivulla.  
+Jos haluat tarkastella tietoja sisältäviä kassavirtaennusteita, ennustelaskelmaprosessi on tehtävä maksuliikenteen hallinta-alueen **Laske kassavirtaennusteet** -toiminnolla. Tämä on suoritettava jokaiselle ennusteeseen sisältyvälle yritykselle.  Seuraavaksi on päivitettävä LedgerCovLiquidityMeasurement-koostemitta **Yksikkösäilö**-sivulla.  
 
 Voit lisätä esimerkinomaisesti kassavirtaennusteen esittelytietoja esittelytietomoduulin **Luo tiedot** -sivulla.  Komentosarja lisää tiedot kassavirtaennusteen taulukoihin. Tällä tavoin raporttien tarvitsemat tiedot saadaan nopeasti esille.  Tämä moduuli on käytettävissä vain, jos esittelytietopakettimalli on otettu käyttöön ympäristössä. 
 

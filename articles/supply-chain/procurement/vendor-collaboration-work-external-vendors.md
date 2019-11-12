@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250189"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653599"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Toimittajayhteistyö ulkoisten toimittajien kanssa
 
@@ -190,7 +190,7 @@ Alla olevassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotila
 Toimittajien ei tarvitse vahvistaa ostotilausta toimittajayhteistyöliittymässä. He voivat lähettää myös sähköpostiviestin tai ilmoittaa ostotilauksen hyväksymisestä muiden kanavien kautta. Voit sitten vahvistaa tilauksen manuaalisesti. Saat siinä tapauksessa varoituksen, joka ilmoittaa, että tilauta vahvistetaan, vaikka toimittaja ei ole vastannut siihen. Ostotilaus näkyy tämän jälkeen vahvistushistoriassa avoimena vahvistettuna tilauksena, johon ei ole vastattu. Toimittaja ei voi enää vahvistaa tai hylätä ostotilausta.
 
 > [!NOTE]
-> Muissa Finance and Operationsin prosesseissa käytettävissä oleva ostotilauksen versio on aina uusin versio, vaikka kyseistä versiota ei olisi vielä rekisteröity toimittajayhteistyöliittymässä.
+> Muissa Supply Chain Managementin prosesseissa käytettävissä oleva ostotilauksen versio on aina uusin versio, vaikka kyseistä versiota ei olisi vielä rekisteröity toimittajayhteistyöliittymässä.
 
 ### <a name="versions-and-statuses-if-you-use-change-management"></a>Versiot ja tilat, jos muutostenhallintaa käytetään
 

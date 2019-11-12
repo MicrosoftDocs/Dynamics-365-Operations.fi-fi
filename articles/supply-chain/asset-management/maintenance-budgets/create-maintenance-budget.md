@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2c748fd230796643f1ed6279743da532e7cb320
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 99f76c684150f154404cbb241daacb7a8d05f7f9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874805"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571757"
 ---
 # <a name="create-maintenance-budgets"></a>Luo ylläpitobudjetit
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 
@@ -53,7 +53,7 @@ Kunnossapitobudjetit perustuvat käyttöomaisuuden hallinnassa käytettyihin kus
     > [!NOTE]
     > Kun olet hyväksynyt ylläpitobudjetin, et voi laskea uudelleen tai muuttaa **Ylläpitobudjetin rivit** -sivun liittyviä rivejä, ellet ensin poista hyväksyntää. Voit poistaa ylläpitobudjetin hyväksynnän valitsemalla sen **Ylläpitobudjetit** -sivulta ja valitsemalla sitten **Hyväksy**. Valitse sitten **Hyväksy budjetti** -valintaikkunassa **OK**.
 
-![Kuva 1](media/01-maintenance-budgets.png)
+![Ylläpitobudjetit](media/01-maintenance-budgets.png)
 
 Voit myös luoda uuden ylläpitobudjetin kopioimalla aiemmin luodun budjetin. Valitse **Ylläpitobudjetit** -sivulla kopioitava budjetti ja valitse sitten **Kopioi**. Tästä lähestymistavasta on hyötyä, jos olet esimerkiksi luonut yhden kuukauden budjetin ja haluat kopioida sen muihin kuukausiin.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 2b755dcfbcdf41ada0302fc04f527ce7c309f4bb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186391"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553184"
 ---
 # <a name="one-voucher"></a>Yksi tosite
 
@@ -51,7 +51,7 @@ Talouskirjauskansioiden (kuten yleinen kirjauskansio, käyttöomaisuuden kirjaus
 
 ## <a name="issues-with-one-voucher"></a>Yhden tositteen toiminnallisuuden ongelmat
 
-Yhden tositteen toiminto aiheuttaa ongelmia esimerkiksi tilityksen, arvonlisäveron laskennan, tapahtuman peruutuksen, alareskontran kirjanpitoon tehtävän täsmäytyksen ja raportoinnin aikana. (Lisätietoja tilityksen aikana mahdollisesti tapahtuvista varasto-otoista on esimerkiksi kohdassa [Yksi tosite useille asiakas- tai toimittajatietueille](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) Jotta työ ja raportointi sujuu oikein, näille prosesseille ja raporteille on annettava tapahtuman tiedot. Vaikka jotkin skenaariot voivat yhä toimia oikein, useiden tapahtumien syöttäminen yhteen tositteeseen aiheuttaa usein ongelmia organisaation asetusten vuoksi.
+Yhden tositteen toiminto aiheuttaa ongelmia esimerkiksi tilityksen, arvonlisäveron laskennan, tapahtuman peruutuksen, alareskontran kirjanpitoon tehtävän täsmäytyksen ja raportoinnin aikana. (Lisätietoja tilityksen aikana mahdollisesti tapahtuvista varasto-otoista on esimerkiksi kohdassa [Yksi tosite useille asiakas- tai toimittajatietueille](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) Jotta työ ja raportointi sujuu oikein, näille prosesseille ja raporteille on annettava tapahtuman tiedot. Vaikka jotkin skenaariot voivat yhä toimia oikein, useiden tapahtumien syöttäminen yhteen tositteeseen aiheuttaa usein ongelmia organisaation asetusten vuoksi.
 
 Voit esimerkiksi kirjata seuraavan useita rivejä sisältävän tositteen.
 

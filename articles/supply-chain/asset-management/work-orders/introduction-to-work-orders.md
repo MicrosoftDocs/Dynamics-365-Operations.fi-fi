@@ -3,7 +3,7 @@ title: Työtilausten esittely
 description: Tässä aiheessa on yleiskatsaus resurssien hallinnan työtilauksiin.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,61 +16,66 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9483c50a15fca566b1f5e089297795bbbe09c042
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: b8340d3f4fd98e02e372fd5ac68f1ae107819304
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875638"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626405"
 ---
 # <a name="introduction-to-work-orders"></a>Työtilausten esittely
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-Työtilausten avulla hallitaan, annetaan tarvittavia tietoja ja rekisteröidään ylläpitotöiden kulutusta. Työtilaus voi sisältää yhden tai useita työtilaustöitä, ja yksi tai usea käyttöomaisuuserä voidaan liittää työtilaukseen. Kukin työtilausrivi määrittää käyttöomaisuuserälle ajoitetun kunnossapitotyön.
 
-Työtilaukset voidaan luoda automaattisesti tai manuaalisesti:
+Työtilausten avulla hallitaan, annetaan tarvittavia tietoja ja rekisteröidään ylläpitotöiden kulutusta. Työtilaus voi sisältää yhden tai useita työtilaustöitä, ja yksi tai usea käyttöomaisuuserä voidaan liittää työtilaukseen. Kukin työtilaustehtävä määrittää käyttöomaisuuserälle ajoitetun kunnossapitotyön.
 
-- Automaattisesti käyttämällä **Ajoita ylläpitosuunnitelmat** -lomaketta kalenteriin perustuville ylläpitosuunnitelmille, joilla on määritetty "Luo automaattisesti".  
+Työtilauksia voidaan luoda seuraavin tavoin:
 
-- Automaattisesti käyttämällä **Ajoita ylläpitokierrokset** -lomaketta ylläpitokierroksille, joilla on määritetty "Luo automaattisesti".  
+- Automaattisesti käyttämällä [Ajoita ylläpitosuunnitelmat](../preventive-and-reactive-maintenance/schedule-maintenance-plans.md) -lomaketta kalenteriin perustuvilla ylläpitosuunnitelmilla, joilla "Luo automaattisesti" -asetus on käytössä.
 
-- Luo ylläpitoaikataulusta, joka voi olla ennaltaehkäisevä kunnossapitotyö tai huoltopyyntö.  
+- Automaattisesti käyttämällä [Ajoita ylläpitokierrokset](../preventive-and-reactive-maintenance/maintenance-rounds.md) -lomaketta kalenteriin perustuvilla ylläpitokierroksilla, joilla "Luo automaattisesti" -asetus on käytössä.
 
-- Luo työtilaus manuaalisesti.  
+- Ennaltaehkäisevien kunnossapitotöiden tai huoltopyyntöjen osalta [Ylläpitoaikataulu](../preventive-and-reactive-maintenance/maintenance-schedule.md).
 
-- Luo työtilaus kohdassa **Kaikki ylläpitopyynnöt** tai **Aktiiviset ylläpitopyynnöt** tai **Omat toiminnallisen sijainnin ylläpitopyynnöt**.
+- Manuaalisesti
+
+- Sivulta **Kaikki ylläpitopyynnöt**, **Aktiiviset ylläpitopyynnöt** tai **Omat toiminnallisen sijainnin ylläpitopyynnöt**.
 
 >[!NOTE]
 >Samaan käyttöomaisuuserään liittyvät työtilaustyöt liittyvät samaan projektitunnukseen.
 
 ## <a name="all-work-orders"></a>Kaikki työtilaukset
 
-Valitse **Resurssien hallinta** > **yhteiset** > **työtilaukset** > **Kaikki työtilaukset** avataksesi luettelon. **Kaikki työtilauksen** -luettelo sisältää kaikki työtilaukset ja siinä näkyy joitakin työtilaukseen liittyviä tietoja.
+Valitse **Resurssien hallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** avataksesi **Kaikki työtilaukset** -luettelosivun. Tällä sivulla näkyvät kaikki työtilaukset ja osa niihin liittyvistä tiedoista.
+
+Seuraavassa kuvassa on esimerkki **Kaikki työtilaukset** -luettelosivusta.
 
 ![Kuva 1](media/01-work-orders.png)
 
-- Valitse **Resurssien hallinta** > **yhteiset** > **työtilaukset** >  **Aktiiviset työtilaukset** nähdäksesi aktiiviset työtilaukset listassa.
+Valitse **Resurssien hallinta** > **Yhteiset** > **Työtilaukset** >  **Aktiiviset työtilaukset** nähdäksesi luettelon vain aktiivisista työtilauksista. 
 
-- Valitse **Resurssien hallinta** > **Yhteiset** > **Työtilaukset** > **Omat toiminnallisen sijainnin tytötilausten ylläpitotyöt** nahdaksesi luettelon työtilaustöistä, jotka sisältävät toiminnallisiin sijainteihin asennettuja resursseja, joihin olet suhteessa työntekijänä (määritetään kohdassa [Ylläpitotyöntekijät ja -työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md)).
+Nähdäksesi luettelon työtilaustehtävistä, jotka sisältävät toiminnallisiin sijainteihin asennettuja resursseja, joihin sinä liityt työntekijänä, valitse **Resurssien hallinta** > **Yhteiset** > **Työtilaukset** > **Omat toiminnallisen sijainnin työtilausten ylläpitotyöt**. (Työntekijöiden ja toiminnallisten sijaintien välinen suhde määritetään **Työntekijät**-sivulla. Lisätietoja on kohdassa [Ylläpitotyöntekijät ja työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md).)
 
-- Valitse **Kaikki työtilaukset**-luettelon (ruudukkonäkymä) **Työtilaus** -sarakkeesta linkki, jos haluat tarkastella valitun tietueen Tiedot-näkymää. Avaa muokkausta varten napsauttamalla **Muokkaa**-painiketta.  
+Voit käyttää **Kaikki työtilaukset** -sivua esimerkiksi seuraavilla tavoilla:
 
-- Tiedot-näkymässä näkyvät työtilaukseen liittyvät yksityiskohtaiset tiedot.  
+- Valitse ruudukkonäkymässä sarakkeen **Työtilaus** linkki nähdäksesi valitun tietueen tietonäkymän. Valitsemalla **Muokkaa** tietue avautuu muokattavaksi.
 
-- Valitse Tiedot-näkymässä **Rivit** -linkki, jos haluat tarkastella työtilauksen työn tietoja tai valitse **Otsikko**-linkki, jos haluat nähdä työtilauksen tiedot.  
+- Tietonäkymässä näet yksityiskohtaisia työtilaukseen liittyviä tietoja.  
 
-- Näytön oikealla puolella oleva pystysuuntainen **Aiheeseen liittyviä tietoja** -ruutu sisältää muita työtilaukseen liittyviä tietoja. Laajenna ruutu, jos haluat näyttää valitun työtilauksen liittyvät tiedot.  
+- Valitse tietonäkymässä **Rivit** -välilehti, jos haluat tarkastella työtilaustehtävän tietoja, tai valitse **Otsikko**-välilehti, jos haluat tarkastella työtilauksen tietoja.  
 
+- Laajenna **Aiheeseen liittyviä tietoja** -ruutu sivun oikeassa laidassa saadaksesi lisää valittuun työtilaukseen liittyviä tietoja.
+
+Seuraavassa kuvassa on esimerkki **Kaikki työtilaukset** -tietonäkymästä.
 
 ![Kuva 2](media/02-work-orders.png)
 
 
-Toimintoruudun painikkeet on järjestetty välilehtiin. Seuraavassa on lyhyt kuvaus yrityksen resurssien hallintaan liittyvistä painikkeista:
+Toimintoruudun painikkeet on järjestetty välilehtiin. Seuraavassa taulukossa kuvataan lyhyesti resurssien hallintaan liittyvät painikkeet:
 
 
 
@@ -78,24 +83,24 @@ Toimintoruudun painikkeet on järjestetty välilehtiin. Seuraavassa on lyhyt kuv
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Muokkaa                            | Muokkaa valittua työtilausta.                                                                                                                                                                                                                                           |
 | Uusi                             | Luo uusi työtilaus.                                                                                                                                                                                                                                                  |
-| Poista                          | Poista valittu työtilaus.                                                                                                                                                                                                                                         |
+| Delete-näppäin                          | Poista valittu työtilaus.                                                                                                                                                                                                                                         |
 | Työtilauspooli                 | Lisää valittu työtilaus työtilauspooliin tai poista se työtilauspoolista.                                                                                                                                                                                           |
 | Oikaisu                          | Muuta valittujen työtilausten odotettuja alkamis- ja loppumisaikoja, palvelutasoa, vastuullista huollon työntekijää tai vastuullista kunnossapitotyöntekijäryhmää.                                                                                                                                     |
 | Tähän liittyvä työtilaus              | Luo uusi valittuun työtilaustyöhön liittyvä työtilaus. Tästä on hyötyä, jos haluat rekisteröidä ensisijaiset ja toissijaiset työtilaukset.                                                                                                                              |
-| Kopioi työtilaus                 | Luo uusi työtilaus aiemmin luodun työtilauksen perusteella.                                                                                                                                                                                                                |
-| Tapahtumahistoria                   | Katso työtilauksen kirjaushistoria.                                                                                                                                                                                                                |
-| Työtilauksen ylläpitotyön huomautukset                           | Luo työtilaukseen kuvaus tai lisää huomautuksia tai muistiinpanoja. Aloita napsauttamalla **Lisää aikaleima** -painiketta, jolloin voit lisätä muistiinpanoon käyttäjänimesi ja aikaleiman. Huomautukset näkyvät **Työtilaus**-lomakkeen **Rivin tiedot** -pikavälilehden **Kuvaus**-välilehdessä. |
-| Työkalut                           | Luo työtilaukseen tarvittavien työkalujen luettelo. työkalut määritetään resurssiena kohdassa **Organisaation hallinto** > **Yhteiset** > **Resurssit** > **Resurssit**.                                                                                                      |
-| Ylläpidon tarkistuslista           | Näytä työtilaukseen liitetyn käyttöomaisuuserän tarkistusluettelo.                                                                                                                                                                                                              |
-| Resurssin vika                     | Tarkastele tai rekisteröi käyttöomaisuus erän vikatietoja, joita käytetään vian hallinnassa.                                                                                                                                                                                        |
+| Kopioi työtilaus                 | Luo uusi työtilaus aiemmin luodun työtilauksen perusteella.                                                                                                                                                                                                               |
+| Tapahtumahistoria                   | Avaa työtilauksen rekisteröintihistoria.                                                                                                                                                                                                                |
+| Työtilauksen ylläpitotyön huomautukset                           | Luo työtilaukseen kuvaus tai lisää sitä koskevia huomautuksia tai muistiinpanoja. Aloita valitsemalla **Lisää aikaleima**, jolloin voit lisätä muistiinpanoon käyttäjänimesi ja aikaleiman. Muistiinpanot näkyvät **Työtilaus**-sivun **Rivitiedot**-pikavälilehden **Kuvaus**-välilehdessä.         |
+| Työkalut                           | Luo työtilaukseen tarvittavien työkalujen luettelo. Työkalut määritetään resursseiksi kohdassa **Organisaation hallinto** > **Resurssit** > **Resurssit**.                                                                                                      |
+| Ylläpidon tarkistuslista           | Näytä työtilaukseen liitetyn resurssin tarkistusluettelo.                                                                                                                                                                                                              |
+| Resurssin vika                     | Avaa tai rekisteröi resurssin vikatiedot. Tätä tietoa käytetään vikojen hallinnassa.                                                                                                                                                                                      |
 | Ylläpidon käyttökatko            | Määritä työtilauksen kunnossapitoseisokit.                                                                                                                                                                                                                               |
 | Kunnon arviointi            | Rekisteröi työtilauksen kunnon arviointimittaukset.                                                                                                                                                                                                             |
 | Resurssilaskurit                 | Luo tai tarkastele resurssin laskurirekisteröintejä.                                                                                                                                                                                                                     |
 | Ennuste                        | Tarkastele tai luo työtilauksen ennusteita.                                                                                                                                                                                                                               |
 | Kirjauskansiot                        | Tarkastele tai luo työtilausten kirjauskansioita. Kirjauskansion rivit voidaan kopioida ennusteista.                                                                                                                                                                                         |
-| Projektitapahtumat            | Tarkastele kaikkia käyttöomaisuudelle luotuihin työtilauksiin liittyviä kirjattuja tapahtumia.                                                                                                                                                                                             |
-| Päivitä työtilauksen tila                | Päivitä työtilauksen elinkaaren tila.                                                                                                                                                                                                                                                |
-| Elinkaaren tilan loki                       | Loki, jossa näkyvät valitun työtilauksen elinkaaritilat.                                                                                                                                                                                                                   |
+| Projektitapahtumat            | Tarkastele kaikkia resurssille luotuihin työtilauksiin liittyviä kirjattuja tapahtumia.                                                                                                                                                                                             |
+| Päivitä työtilauksen tila           | Päivitä työtilauksen elinkaaren tila.                                                                                                                                                                                                                                                |
+| Elinkaaren tilan loki                      | Tarkastele lokia, joka näyttää valitun työtilauksen elinkaaritilat.                                                                                                                                                                                                                   |
 | Resurssin tiedostot                | Näytä luettelo työtilaukseen liittyviin resursseihin liitetyistä asiakirjoista. Nämä asiakirjat määritetään kohdassa **Resurssien hallinta**  >  **Asetukset**  >  **Resurssin tiedostot**.                                                                                                 |
 | Aikataulu                        | Ajoita valitut työtilaukset.                                                                                                                                                                                                                                      |
 | Lähetys            | Ajoita valittu työtilaus yhdelle työntekijälle.                                                                                                                                                                                                                        |
@@ -109,8 +114,8 @@ Toimintoruudun painikkeet on järjestetty välilehtiin. Seuraavassa on lyhyt kuv
 | Työtilauksen kulutus          | Tulosta kulutusraportti.                                                                                                                                                                                                                                               |
 
 
-**Työtilaus**-välilehden painikkeiden **Projekti**-ryhmä liittyvät **Projektinhallinta ja kirjanpito** -moduulin ennusteisiin, kirjauskansioihin ja laskutukseen.
+Toimintoruudun **Työtilaus**-välilehden **Projekti**-ryhmän painikkeet liittyvät ennusteiden, kirjauskansioiden ja laskutuksen toimintoihin **Projektinhallinta ja kirjanpito** -moduulissa.
 
 >[!NOTE]
->Työtilaukselle luodut ennusteet voidaan sisällyttää pääajoituksen suorittamiseen käyttämällä **Resurssienhallinnan parametrit** -lomakkeessa valittua ennustemallia.
+>Voit lisätä työtilaukselle luotuja ennusteita suorittaessasi pääajoitusta käyttämällä ennustemallia, joka on valittu **Resurssienhallinnan parametrit** -sivulla.
 

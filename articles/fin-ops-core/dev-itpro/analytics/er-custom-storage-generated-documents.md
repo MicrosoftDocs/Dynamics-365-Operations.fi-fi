@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a1c41cd4440eaf70f720bfd64884e6ef4662f87a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f65118b6a7393ced9d80c30fad7540a7b27da6c7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181470"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569081"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Mukautetun tallennussijainnin määrittäminen luoduille asiakirjoille
 
@@ -56,7 +56,7 @@ Tarvitset myös tämän topologian kehitysympäristön käyttöoikeuden.
 
 ER-muodon luomien asiakirjojen reitityksen määrittämistä varten on määritettävä [ER-kohteet](electronic-reporting-destinations.md). Jokaisessa ER-kohteessa, joka on määritetty tallentamaan muodostetut asiakirjat tiedostoina, on määritettävä tiedoston hallintakehyksen asiakirjatyyppi. Eri asiakirjatyyppejä voidaan käyttää reitittämään eri ER-muotojen muodostamia asiakirjoja.
 
-1. Lisää aiemmin luodulle tai tuodulle ER-muodolle uusi [asiakirjatyyppi](../../fin-and-ops/organization-administration/configure-document-management.md). Seuraavassa kuvassa asiakirjan tyyppi on **FileX**.
+1. Lisää aiemmin luodulle tai tuodulle ER-muodolle uusi [asiakirjatyyppi](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). Seuraavassa kuvassa asiakirjan tyyppi on **FileX**.
 2. Voit erottaa tämän asiakirjatyypin muista asiakirjatyypeistä sisällyttämällä tietyn avainsanan sen nimeen. Esimerkiksi seuraavassa kuvassa nimi on **(PAIKALLINEN) kansio**.
 3. Määritä **Luokka**-kentässä **Liitä tiedosto**.
 4. Määritä **Ryhmä**-kentässä **Tiedosto**.

@@ -3,7 +3,7 @@ title: Arvonlisäveron yleiskatsaus
 description: Tämä ohjeaihe sisältää arvonlisäverojärjestelmän yleiskatsauksen. Artikkelissa esitellään arvonlisäveroasetusten elementit ja se, miten ne toimivat yhdessä.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2741eb51f93f2f0b627dd8676629077b6df0f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
+ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186460"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2666827"
 ---
 # <a name="sales-tax-overview"></a>Arvonlisäveron yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Tämä ohjeaihe sisältää arvonlisäverojärjestelmän yleiskatsauksen. Artikkelissa esitellään arvonlisäveroasetusten elementit ja se, miten ne toimivat yhdessä.
 
@@ -94,5 +92,8 @@ Yleensä ALV 2 500 olisi tilitettävä ja maksettava veroviranomaiselle laskun k
 
 Jos kuitenkin käytät suoritusperusteista arvonlisäveroa, täsmäytät veron veroviranomaiselle, kun saat maksun asiakkaalta 30.7.
 
+### <a name="postdated-check"></a>Myöhemmäksi päivätty sekki
+
+Jos käytät maksutapana myöhemmäksi päivättyä sekkiä maksun luomisen yhteydessä, pankkitiliä ei tarkisteta. Joissakin maissa ALV:stä tulee "toteutunutta" velkaa, kun maksu hyväksytään pankissa eli kun myöhemmäksi päivätty sekki tilitetään. Voit ottaa sen käyttöön valitsemalla **Toteuta ehdollinen vero, kun myöhemmäksi päivättyjä sekkejä luodaan** kohdassa **Maksuliikenteen hallinta > Asetukset > Maksuliikenteen tiedot > Myöhemmäksi päivätyt sekit**.
 
 Lisätietoja on ohjeaiheessa [Ennakonpidätyksen määrittäminen](tasks/set-up-withholding-tax.md).

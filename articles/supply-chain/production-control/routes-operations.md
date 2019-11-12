@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6ecdece43b9d609e70e385dc5c3ec70b82f582ab
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249957"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653668"
 ---
 # <a name="routes-and-operations"></a>Reitit ja työvaiheet
 
@@ -35,7 +35,7 @@ Tämä aihe sisältää yleisiä tietoja reitityksistä ja työvaiheista. Reitit
 <a name="overview"></a>Yleiskuvaus
 --------
 
-Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaiheiden järjestyksen. Reititys määrittää myös jokaisen työvaiheen vaaditut operatiiviset resurssit, työvaiheen asetukseen ja ajoon kuluvan ajan ja kustannusten laskentatavan. Samaa reititystä voi käyttää useiden tuotteiden tuotannossa. Kullekin tuotteelle tai tuotevariantille voi kuitenkin luoda myös yksilöllisen reitityksen. Tietyllä tuotteella voi myös olla useita reitityksiä. Tällöin käytettävä reititys vaihtelee usein sen mukaan, miten paljon tuotetta valmistetaan. Finance and Operationsin reitityksen määritys sisältää neljä seuraavaa erillistä elementtiä, jotka yhdessä muodostavat tuotantoprosessin:
+Reititys osoittaa tuotteen tai tuotevariantin tuottamisessa vaadittujen työvaiheiden järjestyksen. Reititys määrittää myös jokaisen työvaiheen vaaditut operatiiviset resurssit, työvaiheen asetukseen ja ajoon kuluvan ajan ja kustannusten laskentatavan. Samaa reititystä voi käyttää useiden tuotteiden tuotannossa. Kullekin tuotteelle tai tuotevariantille voi kuitenkin luoda myös yksilöllisen reitityksen. Tietyllä tuotteella voi myös olla useita reitityksiä. Tällöin käytettävä reititys vaihtelee usein sen mukaan, miten paljon tuotetta valmistetaan. Supply Chain Managementin reitityksen määritys sisältää neljä seuraavaa erillistä elementtiä, jotka yhdessä muodostavat tuotantoprosessin:
 
 -   **Reititys** – Reititys määrittää tuotantoprosessin rakenteen. Toisin sanoen se määrittää työvaiheiden järjestyksen.
 -   **Työvaihe** – Työvaihe tunnistaa reitissä nimetyn vaiheen, kuten **kokoonpanon**. Sama työvaihe voi esiintyä useissa reitityksissä ja sillä voi olla useita työvaihenumeroita.

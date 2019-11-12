@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8f4658696a2e6c2959b87aa852c25c108b9ba302
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 1776220766984339c7c289f7b55252fb0c0bb2a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024841"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570653"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Retail Modern POS:n (MPOS) kuvien määrittäminen ja hallinta
 
@@ -83,9 +83,7 @@ Seuraavissa menettelyissä on esimerkki kuvien määrittämisestä luetteloyksik
     [![Kuvat-valintaikkuna](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
-> Voit käyttää samaa menettelyä kaikille viidelle tuetulle yksikölle: Työntekijä, Asiakas, Luettelo, Luokka, ja Tuotteet. "Luettelotuotteet" (tuotteet, jotka määritetään luettelotasolla) ja "Kanavatuotteet" (tuotteet, jotka määritetään kanavatasolla) käyttävät Tuotteet-yksikölle määritettyä mediamallia. Tuotteet-mediamallissa voit valita näytettävien tuotekuvien määrän tuotekohtaisesti. Voit myös määrittää tuotteen oletuskuvan. Näin voit estää tyhjät kuvat MPOS:ssa ja hallita, mitä kuvia käytetään tuotenimikkeen oletuskuvana. Seuraavassa esimerkissä kullakin tuotteella on viisi kuvaa, ja ensimmäinen kuva määritetään oletuskuvaksi. Tuotevariantteja käsitellään samalla tavoin kuin päätuotteita. Kuvatiedostojen tiedostonimien tulee perustua tuotenumeroihin. Joitain merkkejä myös ohitetaan tiedostonimeä luotaessa. Tiedostonimi tulisi siksi tarkistaa käyttämällä **Luo kuvien URL-osoitteet Exceliin** -osiota.
->
-> [![Mediamallin määrittäminen -valintaikkuna](./media/prods.png)](./media/prods.png)
+> Voit käyttää samaa menettelyä kaikille viidelle tuetulle yksikölle: Työntekijä, Asiakas, Luettelo, Luokka, ja Tuotteet. "Luettelotuotteet" (tuotteet, jotka määritetään luettelotasolla) ja "Kanavatuotteet" (tuotteet, jotka määritetään kanavatasolla) käyttävät Tuotteet-yksikölle määritettyä mediamallia. Tuotteet-mediamallissa voit valita näytettävien tuotekuvien määrän tuotekohtaisesti. Voit myös määrittää tuotteen oletuskuvan. Näin voit estää tyhjät kuvat MPOS:ssa ja hallita, mitä kuvia käytetään tuotenimikkeen oletuskuvana. Seuraavassa esimerkissä kullakin tuotteella on viisi kuvaa, ja ensimmäinen kuva määritetään oletuskuvaksi. Tuotevariantteja käsitellään samalla tavoin kuin päätuotteita. Kuvatiedostojen tiedostonimien tulee perustua tuotenumeroihin. Joitain merkkejä myös ohitetaan tiedostonimeä luotaessa. Tiedostonimi tulisi siksi tarkistaa käyttämällä **Luo kuvien URL-osoitteet Exceliin** -osiota. Katso kohta [Korvaa käyttämällä Muokkaa Excelissä -toimintoa](#overwrite-by-using-edit-in-excel) jäljempänä tässä artikkelissa.
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Synkronointityöt mediamallin lähettämiseksi kanavapuolelle
 
@@ -110,8 +108,6 @@ Kuten opit edellisessä kohdassa, tietyn yksikön mediamalli tukee vain yhtä yh
 
     > [!IMPORTANT]
     > Aina kun mediamallia muutetaan, sinun on valittava **Luo**, ennen kuin voit käyttää Muokkaa Excelissä-toimintoa.
-
-    [![Luo kuva-URL Excel-pikavälilehteen](./media/excel1.jpg)](./media/excel1.jpg)
 
     Voit nyt esikatsella viimeisen tallennetun mediamallin perusteella luotuja kuvien URL-osoitteita.
 

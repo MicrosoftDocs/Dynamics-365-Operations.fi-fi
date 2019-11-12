@@ -1,9 +1,9 @@
 ---
-title: Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistaja
-description: Tässä aiheessa kuvataan vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistajan toiminnot ohjelmassa Dynamics 365 Retail.
+title: Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistus
+description: Tässä aiheessa kuvataan vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistuksen toiminnot ohjelmassa Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,20 +18,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b956565ac15b3d7b638cedaadc20923ee87b9c61
+ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018410"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622594"
 ---
-# <a name="retail-transaction-consistency-checker"></a>Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistaja
+# <a name="retail-transaction-consistency-checker"></a>Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistus
 
 
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-Tässä aiheessa kuvataan vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistajan toiminnot. Yhdenmukaisuuden tarkistaja tunnistaa ja osoittaa ei-yhdenmukaiset tapahtumat, ennen kuin laskelmien kirjaamisprosessi ottaa ne käsittelyyn.
+Tässä aiheessa kuvataan vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistuksen toiminnot. Yhdenmukaisuuden tarkistus tunnistaa ja osoittaa ei-yhdenmukaiset tapahtumat, ennen kuin laskelmien kirjaamisprosessi ottaa ne käsittelyyn.
 
 Kun laskelma kirjataan Retailissa, kirjaus saattaa epäonnistua vähittäismyynnin tapahtumien taulukoissa olevien epäjohdonmukaisten tietojen vuoksi. Ongelma tiedoissa saattaa johtua odottamattomista ongelmista myyntipistesovelluksessa, tai siitä, että tapahtumat on tuotu virheellisesti kolmannen osapuolen myyntipistejärjestelmistä. Nämä ristiriidat voivat näyttää esimerkiksi seuraavanlaisilta: 
 
@@ -39,11 +39,11 @@ Kun laskelma kirjataan Retailissa, kirjaus saattaa epäonnistua vähittäismyynn
 - Otsikkotaulun rivimäärä ei vastaa transaktiotaulun rivimäärää.
 - Otsikkotaulussa olevat verot eivät vastaa riveillä olevaa veron määrää. 
 
-Kun laskelmien kirjausprosessi havaitsee epäyhtenäisiä tapahtumia, luodaan yhteensopimattomia myyntilaskuja ja maksutietoja, ja koko laskelmien kirjausprosessi epäonnistuu tämän seurauksena. Laskelmien palauttaminen sellaisesta tilasta vaatii monimutkaisia tietojen korjauksia moneen transaktiotauluun. Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistaja estää tällaiset ongelmat.
+Kun laskelmien kirjausprosessi havaitsee epäyhtenäisiä tapahtumia, luodaan yhteensopimattomia myyntilaskuja ja maksutietoja, ja koko laskelmien kirjausprosessi epäonnistuu tämän seurauksena. Laskelmien palauttaminen sellaisesta tilasta vaatii monimutkaisia tietojen korjauksia moneen transaktiotauluun. Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistus estää tällaiset ongelmat.
 
-Seuraavassa kaaviossa havainnollistetaan kirjausprosessi, jossa tapahtumien yhdenmukaisuuden tarkistaja on käytössä.
+Seuraavassa kaaviossa havainnollistetaan kirjausprosessi, jossa tapahtumien yhdenmukaisuuden tarkistus on käytössä.
 
-![Laskelman kirjausprosessi, jossa vähittäismyyntitapahtumien yhdenmukaisuuden tarkistaja on käytössä](./media/validchecker.png "Laskelman kirjausprosessi, jossa vähittäismyyntitapahtumien yhdenmukaisuuden tarkistaja on käytössä")
+![Laskelman kirjausprosessi, jossa vähittäismyyntitapahtumien yhdenmukaisuuden tarkistus on käytössä](./media/validchecker.png "Laskelman kirjausprosessi, jossa vähittäismyyntitapahtumien yhdenmukaisuuden tarkistus on käytössä")
 
 **Vahvista myymälän tapahtumat** -eräprosessi tarkistaa seuraavien seikkojen yhdenmukaisuuden vähittäismyynnin transaktiotauluista.
 
@@ -59,11 +59,14 @@ Seuraavassa kaaviossa havainnollistetaan kirjausprosessi, jossa tapahtumien yhde
 - **Lahjakorttinimike** – Retail ei tue lahjakorttinimikkeiden palautusta. Lahjakortin saldo voidaan kuitenkin lunastaa. Kaikki lahjakorttinimikkeet, jotka on käsitelty palautusrivinä lunastusrivin sijaan, epäonnistuvat laskelman kirjausprosessissa. Lahjakorttien tarkistusprosessin avulla voidaan varmistaa, että vähittäismyyntitapahtuman taulukoiden kaikki palautuksen lahjakorttirivinimikkeet ovat lahjakortin lunastuksen rivejä.
 - **Negatiivinen hinta** – Tarkistaa, että negatiivisen hinnan tapahtumarivejä ei ole.
 - **Nimike ja variantti** – Tarkistaa, että tapahtumarivien nimikkeet ja variantit ovat nimikkeen ja variantin päätiedostossa.
-- **Veron summa** -verotietueen oikeellisuustarkistus vastaa rivien verosummia. 
+- **Veron summa** – Tarkistaa, että verotietueen oikeellisuustarkistus vastaa rivien verosummia.
+- **Sarjanumero** – Tarkistaa, että sarjanumero on sarjanumeroseurannassa olevien nimikkeiden tapahtumariveillä.
+- **Allekirjoita** – Tarkistaa, että määrän ja nettosumman etumerkki on sama kaikilla tapahtumariveillä.
+- **Liiketoiminnan päivämäärä** – Tarkistaa, että vähittäismyyntitapahtumien liiketoiminnan päivämäärien tilikaudet ovat avoimia.
 
-## <a name="set-up-the-consistency-checker"></a>Yhdenmukaisuuden tarkistajan määrittäminen
+## <a name="set-up-the-consistency-checker"></a>Yhdenmukaisuuden tarkistuksen määrittäminen
 
-Määritä "Vahvista myymälän tapahtumat" -eräprosessi tapahtumaan säännöllisesti paikassa **Vähittäismyynti \> Vähittäismyynnin IT \> Myyntipisteen laskenta**. Eräprosessi voidaan aikatauluttaa myymälän organisaatiohierarkian perusteella samaan tapaan kuin "Laskelman laskeminen erässä" - ja "Laskelman kirjaaminen erässä" -prosessit on määritetty. Suosittelemme määrittelemään tämän eräprosessin käynnistymään useita kertoja päivässä ja aikatauluttamaan sen siten, että se käynnistyy jokaisen P-tehtävän suorituskerran lopuksi.
+Määritä Tarkista myymälän tapahtumat -eräprosessi tapahtumaan säännöllisesti kohdassa **Vähittäismyynti \> Vähittäismyynnin IT \> Myyntipistekirjaus**. Eräprosessi voidaan aikatauluttaa myymälän organisaatiohierarkian perusteella samaan tapaan kuin "Laskelman laskeminen erässä" - ja "Laskelman kirjaaminen erässä" -prosessit on määritetty. Suosittelemme määrittelemään tämän eräprosessin käynnistymään useita kertoja päivässä ja aikatauluttamaan sen siten, että se käynnistyy jokaisen P-tehtävän suorituskerran lopuksi.
 
 ## <a name="results-of-validation-process"></a>Tarkistusprosessin tulokset
 

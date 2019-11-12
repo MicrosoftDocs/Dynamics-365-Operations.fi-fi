@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 510a36668bf131b48733e486a43f1d630ae9f3ea
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278321"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653691"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Supply Chain Managementin ohjeresurssit
 
@@ -39,7 +39,7 @@ Tässä aiheessa on luettelo Dynamics 365 Supply Chain Management -ohjelman ohje
 Saat lisätietoja valitsemalla ominaisuusalueen.
 
 - [Resurssien hallinta](asset-management/index.md)
-- [Kustannuslaskenta](../financials/cost-accounting/cost-accounting-home-page.md)
+- [Kustannuslaskenta](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Kustannushintojen hallinta](cost-management/cost-management-home-page.md)  
 - [Varastoinninhallinta](inventory/inventory-home-page.md)
 - [Pääsuunnittelu](master-planning/master-planning-home-page.md)
@@ -109,7 +109,7 @@ Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -s
 -  [Kuljetustenhallinta uudessa Microsoft Dynamics AX -ohjelmassa](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogit
-<a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX:n tuotannon tutkimus- ja kehitysryhmän blogissa </a> ja <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa </a> on useita valmistusta ja toimitusketjun hallintaa käsitteleviä aiheita. Useimmat kirjoitukset koskevat Finance and Operations -sovelluksen aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa. 
+<a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX:n tuotannon tutkimus- ja kehitysryhmän blogissa</a> ja <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogissa</a> on useita valmistusta ja toimitusketjun hallintaa käsitteleviä aiheita. Useimmat kirjoitukset koskevat aiempaa versiota, mutta samoja käsitteitä käytetään edelleen ja menettelyt ovat samanlaisia nykyisessä versiossa. 
 
 ## <a name="white-papers"></a>Tulostettavat ohjeet
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Kustannuslaskennan käytännön harjoituksia</a> 

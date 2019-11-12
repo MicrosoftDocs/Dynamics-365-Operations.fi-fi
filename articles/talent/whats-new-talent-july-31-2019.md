@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (31.7.2019)
+title: Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (30.7.2019)
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/30/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 83f3339e6cea1448f5b257acf602fe5ca3449555
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 3676a0a1fa77285d0203e8e49725cb1c1b742d39
+ms.sourcegitcommit: 029c1882bef558b6a45843548e94ab8369ed9870
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010242"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2651708"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (30.7.2019)
 
@@ -45,7 +45,7 @@ Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2409.
 
 Voimme ylpeänä ilmoittaa, että Kanadan ja Kaakkois-Aasian alueet ovat käytettävissä Talentissa 1. elokuuta 2019. Tämän muutoksen myötä voi luoda ympäristöjä Kanadan ja Aasian alueilla, ja kaikkia Talent-tietoja säilytetään yksinomaan näillä alueilla. Voit luoda ympäristön näillä uusilla alueilla valitsemalla sijainnin Uusi ympäristö -valintaikkunassa ja käyttämällä tätä ympäristöä Talentin valmisteluun LCS:ssä, kuten on kuvattu kohdassa [Talentin valmistelu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
-Tietojen siirto muiden alueiden aiemmin luoduista projekteista Kanadan ja Aasian alueille ei tueta. Vain uusia projekteja voi valmistella näillä uusilla tuetuilla alueilla.
+Tietojen siirto muiden alueiden aiemmin luoduista projekteista Kanadan ja Aasian alueille ei tueta. Näille uusille tuetuille alueille voi provisioida vain uusia projekteja.
 
 ### <a name="new-active-positions-list-page"></a>Uudet aktiiviset toimet -luettelosivu
 

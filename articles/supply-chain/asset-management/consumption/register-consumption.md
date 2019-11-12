@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024657"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653320"
 ---
 # <a name="register-consumption"></a>Kulutuksen rekisteröinti
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Kun kunnossapitotyö on suoritettu työtilaukselle, seuraavaksi tehdään kulutusrekisteröinnit ja kirjataan kirjauskansiot. Voit tehdä rekisteröintejä seuraaville kulutustyypeille: tunnit, nimikkeet ja kulut. Eri kulutustyypit rekisteröidään ja kirjataan **Työtilauksen kirjauskansiot** -sivulla. **Resurssien hallinnan** kirjauskansion asetuksia käytetään luotaessa ja kirjattaessa erillisiä tunteja, nimikkeitä ja kuluja koskevia kirjauskansioita **Projektinhallinta ja kirjanpito** -moduulissa.
 
-Voit ehkä lisätä tai poistaa työtilauksen ennusterivejä. Työtilauksen elinkaaritilan, siihen liittyvän projektityypin ja projektityyppiin liittyvien vaihesääntöjen määrittäminen määrittää, voitko lisätä tai muokata kirjauskansiorivejä. Lue lisää työtilausten elinkaaritiloista ja niihin liittyvistä projektin vaiheista kohdassa [Integrointi projektinhallintaan ja kirjanpitoon](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+Joissakin tapauksissa voit lisätä tai poistaa työtilauksen ennusterivejä. Työtilauksen elinkaaritilan, siihen liittyvän projektityypin ja projektityyppiin liittyvien vaihesääntöjen määrittäminen määrittää, voitko lisätä tai muokata kirjauskansiorivejä. Lue lisää työtilausten elinkaaritiloista ja niihin liittyvistä projektin vaiheista kohdassa [Integrointi projektinhallintaan ja kirjanpitoon](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Kirjauskansioiden automaattisen kirjauksen voi määrittää työtilauksen elinkaaritilalle. Lisätietoja on kohdassa [Työtilauksen elinkaaren tilat](../setup-for-work-orders/work-order-lifecycle-states.md).
@@ -50,10 +50,10 @@ Voit ehkä lisätä tai poistaa työtilauksen ennusterivejä. Työtilauksen elin
 
 6. Kirjaa kirjauskansion rivit valitsemalla **Kirjaa kirjauskansiot**.
 
-7. Kun olet kirjannut kulutuskirjauskansiot, voit päivittää työtilauksen elinkaaritilaksi esimerkiksi "Päättynyt". Se ilmaisee, että työtilaus on suoritettu.
+7. Kun olet kirjannut kulutuksen kirjauskansiot, voit päivittää työtilauksen elinkaaren tilan. Voit esimerkiksi päivittää työtilauksen elinkaaren tilaksi "Päättynyt", kun se on suoritettu loppuun.
 
-- Valitse **Työtilauksen kirjauskansiot** -sivun yläosassa olevasta **Näytä**-kentästä, mitä kirjauskansiorivejä haluat tarkastella: kaikki, Ei kirjattu tai Kirjattu. Kirjatuilla kirjauskansiolla on rasti **Kirjattu**-valintaruudussa.  
-- Kun nimikerivit luodaan työtilauskirjauskansiossa, nimikkeeseen liittyvät tuotedimensiot ja seurantadimensiot siirretään automaattisesti kirjauskansion riville.  
+    - Valitse **Työtilauksen kirjauskansiot** -sivun yläosassa olevasta **Näytä**-kentästä, mitä kirjauskansiorivejä haluat tarkastella: **Kaikki**, **Ei kirjattu** tai **Kirjattu**. Kirjatuilla kirjauskansiolla on rasti **Kirjattu**-valintaruudussa.  
+    - Kun nimikerivit luodaan työtilauskirjauskansiossa, nimikkeeseen liittyvät tuotedimensiot ja seurantadimensiot siirretään automaattisesti kirjauskansion riville.  
 
 Alla oleva kuvakaappaus näyttää esimerkin tunti- ja nimikerekisteröinneistä työtilaukselle kohdassa **Työtilauksen kirjauskansiot**.
 
@@ -76,7 +76,7 @@ Jos työtilaus sisältää useita työtilaustöitä, voit rekisteröidä työtun
 
 6. Lisää jaettavat työtunnit **Tunnit** -kenttään.
 
-![Kuva 2](media/02-consumption.png)
+    ![Kuva 2](media/02-consumption.png)
 
 7. Valitse **OK**.
 
@@ -88,10 +88,10 @@ Jos työtilaus sisältää useita työtilaustöitä, voit rekisteröidä työtun
 
 Kun teet kulutusmerkintöjä, eri rekisteröintityyppeihin liittyvät taloushallinnon dimensiot lisätään rekisteröinteihin tietyssä järjestyksessä. 
 
-*Tunti- ja kulurekisteröinnit* : Ensin lisätään kirjauskansion otsikon taloushallinnon dimensiot, jos sellaisia on. Seuraavaksi lisätään liittyvän työtilausprojektin taloushallinnon dimensiot. Lopuksi lisätään resurssin (työntekijän) taloushallinnon dimensiot.
+- *Tunti- ja kulurekisteröinnit* : Ensin lisätään kirjauskansion otsikon taloushallinnon dimensiot, jos sellaisia on. Seuraavaksi lisätään liittyvän työtilausprojektin taloushallinnon dimensiot. Lopuksi lisätään resurssin (työntekijän) taloushallinnon dimensiot.
 
-*Nimikerekisteröinnit* : Ensin lisätään kirjauskansion otsikon taloushallinnon dimensiot, jos sellaisia on. Sitten lisätään liittyvän työtilausprojektin taloushallinnon dimensiot. Seuraavaksi lisätään toimipaikan taloushallinnon dimensiot. Lopuksi lisätään nimikkeen taloushallinnon dimensiot.
+- *Nimikerekisteröinnit* : Ensin lisätään kirjauskansion otsikon taloushallinnon dimensiot, jos sellaisia on. Sitten lisätään liittyvän työtilausprojektin taloushallinnon dimensiot. Seuraavaksi lisätään toimipaikan taloushallinnon dimensiot. Lopuksi lisätään nimikkeen taloushallinnon dimensiot.
 
 >[!NOTE]
->Kaikkien kolmen kirjaustyypin osalta taloushallinnon dimensioyhdistelmä tarkistetaan ja virheelliset yhdistelmät poistetaan. Tämä on vakiomenettely Finance and Operationsissa.
+>Kaikkien kolmen kirjaustyypin osalta taloushallinnon dimensioyhdistelmä tarkistetaan ja virheelliset yhdistelmät poistetaan. Tämä on vakiomääritys muissa Finance and Operations -sovelluksissa.
 

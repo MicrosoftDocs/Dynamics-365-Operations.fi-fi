@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 486782968816cc585d9cf2d753f32e82f85e4f7e
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 8f3b771319eeb602a371500fdc69c68f88afe341
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874782"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571734"
 ---
 # <a name="update-maintenance-budgets"></a>Päivitä ylläpitobudjetit
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 **Ylläpitobudjetin rivit** -sivulla näkyvät kaikki budjettirivit, jotka on luotu **Ylläpitobudjetit**-sivulla valitulle budjetille. (Lisätietoja on kohdassa [Luo ylläpitobudjetit](create-maintenance-budget.md)luominen.) Voit laskea uudelleen ja oikaista kunnossapitobudjetin rivejä, kunnes ylläpitobudjetti on hyväksytty. Kun budjettikausi on kulunut ja kustannukset on kirjattu käyttöomaisuuden hallinnassa, voit myös päivittää todelliset kustannukset budjettiriveille.
 

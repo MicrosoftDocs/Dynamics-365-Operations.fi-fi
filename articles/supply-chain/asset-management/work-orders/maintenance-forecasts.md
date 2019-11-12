@@ -3,7 +3,7 @@ title: Ylläpitoennusteet
 description: Tässä ohjeaiheessa kerrotaan ylläpitoennusteista resurssien hallinnassa.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,36 +16,35 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a1596b283c3eaffca25ff7f03c722a2bcce109fb
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024496"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626290"
 ---
 # <a name="maintenance-forecasts"></a>Ylläpitoennusteet
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
-Kun luot työtilauksen, luot työtilaustyöt, joissa on vastaavat käyttöomaisuudet ja kunnossapitotyölajit. Kun huoltoennusteita sisältävä kunnossapitotöiden tyyppi valitaan, ennusteet kopioidaan automaattisesti työtilaukseen.
+Kun luot työtilauksen, luot työtilaustehtäviä, joilla on siihen liittyvät resurssit ja ylläpitotyötyypit. Kun ylläpitoennusteita sisältävä ylläpitopitotöiden tyyppi valitaan, ennusteet kopioidaan automaattisesti työtilaukseen.
 
-Voit ehkä lisätä tai poistaa työtilauksen ennusterivejä. Työtilauksen elinkaaritilan, siihen liittyvän projektityypin ja projektityyppiin liittyvien vaihesääntöjen määrittäminen määrittää, voitko lisätä tai muokata ennusterivejä. 
+Saatat voida lisätä ennusterivejä työtilaukseen tai poistaa niitä työtilauksesta. Työtilauksen elinkaaritilan, siihen liittyvän projektityypin ja projektityyppiin liittyvien vaihesääntöjen määrittäminen määrittää, voitko lisätä tai muokata ennusterivejä. Lisätietoja työtilausten elinkaaritiloista ja niihin liittyvistä projektin vaiheista on kohdassa [Ennusteet, työtilaukset ja projektit](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Valitse **Resurssien hallinta** >  **yhteiset** >  **työtilaukset** >  **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
+1. Valitse **Resurssienhallinta** > **Yhteiset** > **Työtilaukset** > **Kaikki työtilaukset** tai **Aktiiviset työtilaukset**.
 
-2. Valitse työtilaus luettelosta ja valitse sitten **Ennuste.** **Työtilauksen ylläpitoennuste** -kohdassa näytetään työtilaustyössä valitun ylläpitotyön tyypin ennusterivit.
+2. Valitse työtilaus luettelosta ja sitten toimintoruudun > **Työtilaus**-välilehden > **Projekti**-ryhmässä **Ennuste**. **Työtilauksen ylläpitoennuste** -sivulla näytetään työtilaustehtävässä valitun ylläpitotyön tyypin ennusterivit.
 
 
-## <a name="add-hours-forecast-to-a-work-order"></a>Lisää tuntiennuste työtilaukseen
+## <a name="add-an-hours-forecast-to-a-work-order"></a>Tuntiennusteen lisääminen työtilaukseen
 
-1. Valitse työtilaustyö, johon haluat lisätä ennusteen.
+1. Valitse **Työtilauksen ylläpitoennuste** -sivulla työtilaus, jolle lisätään ennuste.
 
-2. Luo uusi rivi napsauttamalla **Tunnit**-pikavälilehdellä **Lisää**.
+2. Luo uusi rivi valitsemalla **Tunnit**-pikavälilehdellä **Lisää**.
 
 3. Valitse luokka **Luokka**-kentässä.
 
@@ -54,66 +53,74 @@ Voit ehkä lisätä tai poistaa työtilauksen ennusterivejä. Työtilauksen elin
 5. Valitse **Rivin ominaisuus** -kentässä rivillä käytettävä kulutyyppi.
 
 
-## <a name="add-items-forecast-to-a-work-order"></a>Lisää nimike-ennuste työtilaukseen
+## <a name="add-an-items-forecast-to-a-work-order"></a>Nimike-ennusteen lisääminen työtilaukseen
 
-Voit lisätä nimikkeitä työtilauksen ylläpitoennusteeseen kolmella tavalla: Voit luoda rivejä nimikkeille (varaosille), jotka eivät sisälly varaosaluetteloon tai käyttöomaisuuden tuoterakenteeseen, voit valita varaosia hyväksytystä varaosaluettelosta ja voit valita nimikkeitä resurssin tuoterakenteesta.
+Työtilauksen ylläpitoennusteeseen voi lisätä nimikkeitä kolmella tavalla. Voit luoda rivejä nimikkeille (varaosille), jotka eivät sisälly varaosaluetteloon tai resurssirakenteeseen (BOM), voit valita varaosia hyväksytystä varaosaluettelosta tai voit valita nimikkeitä resurssirakenteesta.
 
-1. Valitse työtilaustyö, johon haluat lisätä ennusteen.
+- Valitse **Työtilauksen ylläpitoennuste** -sivulla työtilaus, jolle lisätään ennuste.
 
-2. Valitse **Nimikkeet**-pikavälilehti.
+- Lisää **Nimikkeet**-pikavälilehdessä nimikkeitä ylläpitoennusteeseen käyttämällä asianmukaista menetelmää.
 
-3. Valitse **Lisää**, jos haluat luoda uuden rivin varaosalle, joka ei ole varaosaluettelossa tai käyttöomaisuuden tuoterakenneluettelossa.
+Voit luoda rivin varaosalle, joka ei ole varaosaluettelossa tai resurssirakenteessa, seuraavalla tavalla:
 
-4. Valitse **Nimiketunnus**-kentässä nimike.
+1. Valitse **Lisää**.
+2. Valitse **Nimiketunnus**-kentässä nimike.
+3. Syötä määrä **Myyntimäärä**-kenttään.
+4. Valitse määrän mittayksikkö **Yksikkö**-kentästä.
+5. Valitse **Kustannushinta**- ja **Valuutta**-kenttiin asianmukaiset arvot.
+6. Valitse rivin ominaisuus kentästä **Rivin ominaisuus**.
+7. Jos haluat muuttaa nimikeriveillä näkyvien dimensioiden luetteloa, valitse **Varasto** > **Näytä dimensiot**,valitse dimensiot ja aseta sitten **Tallenna määritys** -asetuksen arvoksi **Kyllä**.
 
-5. Lisää määrä **Myyntimäärä**-kenttään ja valitse määrän yksikkö **Yksikkö** -kentässä.
+Voit lisätä varaosan hyväksytystä varaosaluettelosta seuraavasti:
 
-6. Lisää kustannushinta ja valuutta asianmukaisiin kenttiin ja valitse **Rivin ominaisuus**.
+1. Valitse **Lisää varaosia**.
+2. Valitse varaosa ja muokkaa siihen liittyviä tietoja tarpeen mukaan.
+3. Valitse **OK**.
 
-7. Jos haluat muuttaa nimikeriveillä näkyvien dimensioiden luetteloa, valitse **Varasto** > **Näytä dimensiot**, valitse dimensiot ja valitse sitten **Tallenna asetukset** -vaihtopainikkeessa Kyllä.
+Voit lisätä nimekkeen resurssirakenteesta seuraavasti:
 
-8. Jos haluat lisätä huoltoennusteeseen hyväksytyn varaosan, valitse **Lisää varaosia**, valitse varaosa, muokkaa tietoja tarvittaessa ja valitse **OK.**
+1. Valitse **Lisää resurssirakennenimikkeitä**.
+2. Valitse nimike ja muokkaa siihen liittyviä tietoja tarpeen mukaan.
+3. Valitse **OK**.
 
-9. Jos haluat lisätä käyttöomaisuuden tuoterakennenimikkeitä ennusteeseen, valitse **Lisää tuoterakennenimikkeitä**, valitse nimike, muokkaa siihen liittyviä tietoja tarvittaessa ja valitse **OK.**
-
-10. Valitse **Nimike, missä käytetty**saadaksesi yleiskatsauksen siitä, missä resurssien hallinnassa valitulla rivillä olevaa nimikettä käytetään suhteessa resursseihin, ylläpitotyötyypin oletuksiin, varaosiin ja työtilauksiin. 
+Saat yleiskatsauksen siitä, miten valitulla rivillä olevaa nimikettä käytetään resurssienhallinnassa suhteessa resursseihin, ylläpitotyötyypin oletuksiin, varaosiin ja työtilauksiin, valitse **Nimike, missä käytetty**. Lisätietoja tästä yleiskatsauksesta esitetään kohdassa [Nimike, missä käytetty](../controlling-and-reporting/item-where-used.md).
 
 
+## <a name="add-an-expense-forecast-to-a-work-order"></a>Kuluennusteen lisääminen työtilaukseen
 
-## <a name="add-expense-forecast-to-a-work-order"></a>Lisää kuluennuste työtilaukseen
+1. Valitse **Työtilauksen ylläpitoennuste** -sivulla työtilaus, jolle lisätään ennuste.
 
-1. Tässä ohjeaiheessa selitetään, kuinka voit lisätä kuluennusteen työtilaukseen. Valitse lomakkeen vasemmasta reunasta työtilaustyö, johon haluat lisätä ennusteen.
+2. Luo rivi valitsemalla **Kulu**-pikavälilehdellä **Lisää**.
 
-2. Valitse **Kulu**-pikavälilehti.
+3. Valitse luokka **Luokka**-kentässä.
 
-3. Luo uusi rivi valitsemalla **Lisää**.
+4. Anna määrä **Määrä**-kenttään.
 
-4. Valitse luokka **Luokka**-kentässä.
+5. Syötä asianmukaiset arvot kenttiin **Kustannushinta**, **Myyntivaluutta** ja **Myyntihinta**.
 
-5. Anna määrä **Määrä**-kenttään.
-
-6. Lisää kustannushinta, myyntivaluutta ja myyntihinta asianmukaisiin kenttiin.
-
-7. Valitse **Rivin ominaisuus** -kentässä rivillä käytettävä kulutyyppi.
+6. Valitse **Rivin ominaisuus** -kentässä rivillä käytettävä kulutyyppi.
 
 >[!NOTE]
->**Ylläpitoennusteen summat** -pikavälilehdessä näkyy yhteenveto kussakin välilehdessä luotujen rivien määrästä valitussa työtilaustyössä ja työtilauksessa. Voit myös tarkastella työtilaustyön ja työtilauksen ennustettujen työtuntien summaa.
+>**Ylläpitoennusteen summat** -pikavälilehdessä näkyy yhteenveto kussakin pikavälilehdessä luotujen rivien määrästä valitussa työtilaustehtävässä ja työtilauksessa. Voit myös tarkastella työtilaustyön ja työtilauksen ennustettujen työtuntien summaa.
+
+Seuraavassa kuvassa on esimerkki **Työtilauksen ylläpitoennuste** -sivusta.
 
 ![Kuva 1](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Työtilausennusteiden automaattinen päivitys
 
-Resurssien hallinnassa voit päivittää automaattisesti työtilausten ennusteiden muutokset, jotka koskevat tuntikustannuksia, nimikekustannuksia ja kuluja, jotka on päivitetty muissa moduuleissa. Näin varmistat, että viimeisimpiä kustannushintoja käytetään aina työtilausennusteissa. Samanlaisia päivityksiä voidaan tehdä myös [kunnossapitotöiden tyyppien ennusteille.](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
+Jos tuntikustannuksia, nimikekustannuksia ja kuluja päivitetään muissa Microsoft Dynamics 365 for Finance and Operations -moduuleissa, resurssienhallinnan työtilausten ennusteet voidaan päivittää automaattisesti kyseisten muutosten mukaisesti. Tämä ominaisuus auttaa varmistamaan, että työtilausennusteissa käytetään aina viimeisimpiä kustannushintoja. Samanlaisia päivityksiä voidaan tehdä myös [kunnossapitotöiden tyyppien ennusteille.](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
-1. Valitse **Resurssien hallinta** > **Kausittainen** > **Ennuste** > **Päivitä työtilauksen ennuste**.
+1. Valitse **Resurssienhallinta** > **Kausittainen** > **Ennuste** > **Päivitä työtilauksen ennuste**.
 
-2. Avattavassa **Päivitä työtilauksen ennuste** -valintaikkunassa voit lisätä tarvittaessa tiettyjä työtilauksia tai työtilaustöitä koskevia valintoja. Tee haluamasi valinnat valitsemalla **Suodata**.
+2. Voit tarvittaessa lisätä tiettyjä työtilauksia tai työtilaustehtäviä koskevia valintoja **Päivitä työtilauksen ennuste** -valintaikkunan **Sisällytettävät tietueet** -pikavälilehdessä Tee tarvittavat valinnat valitsemalla **Suodata**.
 
 3. **Suorita taustalla** -pikavälilehdessä voit määrittää automaattisen päivityksen erätyönä tarpeen mukaan.
 
 4. Käynnistä ennusteen päivitys valitsemalla **OK**.
 
 
-![Kuva 2](media/07-work-orders.png)
+Seuraavassa kuvassa on esimerkki **Päivitä työtilauksen ennuste** -valintaikkunasta.
 
+![Kuva 2](media/07-work-orders.png)

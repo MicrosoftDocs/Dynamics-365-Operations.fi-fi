@@ -1,5 +1,5 @@
 - name: Dynamics 365 for Talent
-  href: index.yml
+  href: talent-welcome.md
   items:
     - name: Aloittaminen
       items:
@@ -8,6 +8,10 @@
         - name: Talentin uudet ja muuttuneet ominaisuudet
           href: whats-new.md
           items:
+            - name: 23. lokakuuta 2019
+              href: whats-new-talent-october-23-2019.md
+            - name: 8. lokakuuta 2019
+              href: whats-new-talent-october-8-2019.md
             - name: 1. lokakuuta 2019
               href: whats-new-talent-october-1-2019.md
             - name: 17. syyskuuta 2019
@@ -150,7 +154,7 @@
               href: attract-admin-job-board-settings.md
             - name: Sähköpostiasetusten määrittäminen
               href: attract-configure-email-settings.md
-            - name: LinkedIn-integraation määrittäminen
+            - name: LinkedIn-integroinnin määrittäminen
               href: attract-admin-linkedin.md
         - name: Työhönottoprosessin luominen
           items:
@@ -391,15 +395,17 @@
               href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Integrointi
       items:
+        - name: Ohje tietojen integrointiin Dynamics 365 for Talentille
+          href: data-integration.md
+        - name: Common Data Service-integroinnin määritys
+          href: hr-common-data-service-integration.md
         - name: Integrointi Dynamics 365 for Finance and Operations -sovelluksen kanssa
           href: talent-financeandoperations-integration.md
         - name: Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen
           href: configure-payroll-integration.md
-        - name: Ohje tietojen integrointiin Dynamics 365 for Talentille
-          href: data-integration.md
         - name: Integroinnin usein kysytyt kysymykset
           href: talent-fo-integration.md
-        - name: Tietojen toistuva vienti Azure Logic Apps -ratkaisun avulla
+        - name: Tietojen toistuva vienti Azure Logic Apps -palvelun avulla
           href: tutorial-integration-recurring-export.md
         - name: Office-integrointi
           items:

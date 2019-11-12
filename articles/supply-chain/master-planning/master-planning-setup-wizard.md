@@ -3,7 +3,7 @@ title: Pääsuunnittelun asetusten ohjattu toiminto
 description: Tässä ohjeaiheessa käsitellään erilaisia pääsuunnittelun määrittämisessä käytettäviä tärkeitä strategioita ja parametreja.
 author: t-benebo
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 0310ac55d35421d8ad9080739fc5a393660ce520
-ms.sourcegitcommit: 261dc882710f29303b14f9be8a26d71d85d25345
+ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
+ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "1999531"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "2635123"
 ---
 # <a name="master-planning-setup-wizard"></a>Pääsuunnittelun asetusten ohjattu toiminto
 
 [!include [banner](../includes/banner.md)]
 
 Tässä ohjeaiheessa on opas **pääsuunnittelun asetusten ohjattuun toimintoon**. Se selittää, miten parametriehdotukset lasketaan, ja sisältää myös esimerkkejä, jotka näyttävät, miten eri yritykset määrittävät pääsunnittelun liiketoimintatarpeidensa perusteella.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+
+[Pääsuunnittelun asetusten ohjattu toiminto Dynamics 365 Supply Chain Managementissa](https://youtu.be/c-e6n-8rZb4) -video (näkyy ylempänä) sisältyy [Finance and Operations -soittolistaan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavilla YouTubessa.
+
 
 ## <a name="specific-requirements-of-your-company"></a>Yrityksesi erityisvaatimukset
 

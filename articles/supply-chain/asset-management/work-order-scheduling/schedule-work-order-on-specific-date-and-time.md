@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0f818c4c3b669cc94e37cba1e3571c57b5c0dd1b
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 634bbb4326d560848d36f579a1179187d8369087
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887362"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652031"
 ---
 # <a name="schedule-work-order-on-specific-date-and-time"></a>Työtilauksen ajoittaminen tiettyyn päivämäärään ja aikaan
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Jos työtilaus pitää ajoittaa tiettynä päivämääränä *ja* kellonaikana, voit ohittaa vakioajoitusprosessin käyttöomaisuuden hallinnassa ja luoda työtilaukselle erityisen aikataulun.
 
@@ -41,13 +41,13 @@ Jos työtilaus pitää ajoittaa tiettynä päivämääränä *ja* kellonaikana, 
 
 4. Lisää **Työtilauksen otsikko** -pikavälilehdellä alkamis- ja päättymispäivämäärät ja -ajat **Odotettu alkamispäivämäärä** -ja **Odotettu loppupäivämäärä** -kenttiin.
 
-![Kuva 1](media/05-work-order-scheduling.png)
+    ![Kuva 1](media/05-work-order-scheduling.png)
 
-5. Valitse **Yleiset**-välilehdessä **Ajoitus**, jos haluat käyttää vakioajoitusprosessia, tai valitse **Resursoi**, jos aiot ajoittaa työtilauksen tietylle työntekijälle.
+5. Valitse **Yleiset**-välilehdessä **Ajoitus**, jos haluat käyttää vakioajoitusprosessia, tai valitse **Resursoi**, jos aiot kohdentaa työtilauksen tietylle työntekijälle.
 
 6. Jos haluat ohittaa kaikki olemassa olevat kapasiteettivaraukset ja varmistaa, että työtilaus ajoitetaan odotettuun ajanjaksoon, tee valinnat alla olevan kuvan mukaan **Ajoita työtilaus** -valintaikkunan **Rajallinen kapasiteetti** -osassa. Tämä tarkoittaa, että ajoittaminen ohittaa olemassa olevat kapasiteettivaraukset, koska työtilauksen täytyy alkaa odotetusta alkamisajasta.
 
-![Kuva 2](media/06-work-order-scheduling.png)
+    ![Kuva 2](media/06-work-order-scheduling.png)
 
 7. Aloita ajoitus valitsemalla **OK**.
 

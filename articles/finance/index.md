@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b48313e93573e3214de0ee02c4894b000dc18f67
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175910"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570122"
 ---
 # <a name="financial-management-home-page"></a>Taloushallinnon kotisivu
 
@@ -69,4 +69,8 @@ Tutustu [Microsoft Dynamics 365 YouTube -kanavan](https://www.youtube.com/channe
 ### <a name="countryregion-functionality"></a>Maa/alue-toiminto
 
 Maiden/alueiden säädökset vaikuttavat veroasetuksiin ja taloushallinnon muihin alueisiin. Ohjeiden [Lokalisointi- ja säädösominaisuudet](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) -osassa on lisätietoja maa-/aluekohtaisista ominaisuuksista.
+
+### <a name="additional-content"></a>Lisää sisältöä
+
+Supply Chain Management -sovelluksen toiminto kattaa hankinnasta maksuun -prosessin osia. Niihin kuuluvat varasto-otot, tilaaminen, vastaanotto, laskutus sekä organisaation ostamien tavaroiden ja palveluiden maksaminen. Lisätietoja ostojen, varaston ja valmistuksen ominaisuuksista on [!Supply Chain Management -sovelluksen kotisivulla](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 

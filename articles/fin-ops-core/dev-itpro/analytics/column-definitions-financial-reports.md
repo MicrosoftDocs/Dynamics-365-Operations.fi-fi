@@ -3,7 +3,7 @@ title: Talousraporttien sarakemääritykset
 description: Tässä artikkelissa on tietoja sarakemäärityksistä. Sarakkeen määritys on raporttiosa tai rakenneosa, joka määrittää talousraportin kunkin sarakkeen sisällön. Kuten rivimäärityksiäkin, sarakkeiden perusmäärityksiä voi käyttää useilla raporteilla.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 76de08290058d43fbd1b4c0670db55ebcfbb8494
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 54e7d517e704b7162f3e091330a246386f0203ea
+ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174302"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2572638"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Talousraporttien sarakemääritykset
 
@@ -170,7 +170,7 @@ Voit lisätä, muokata ja poistaa raportissa sarakkeiden yläosassa näkyviä ot
 
 ### <a name="create-an-automatically-generated-header"></a>Automaattisesti luodun otsikon luominen
 
-Raportin suunnittelija voi luoda sarakeotsikoita automaattisesti automaattisen tekstin koodien perusteella. Automaattisen tekstin koodit ovat muuttujia, jotka päivitetään aina raportin luomisen yhteydessä. Mikä tahansa sarakeotsikko voi sisältää näitä koodeja. Ne määrittävät raportin muuttuvia tietoja, kuten päivämääriä ja jaksojen numeroita. Tämän vuoksi useissa raportin määrityksissä, ajanjaksoissa ja raportointipuissa voidaan käyttää yhtä sarakkeen määritystä. Koska automaattisen tekstin koodeissa käytetään sarakkeen määrityksen tietorivien kalenterin tietoja, niitä tuetaan vain **CALC**- ja **FD**-sarakkeissa. Tapa, jolla automaattisen tekstin koodi näkyy sarakeotsikon solussa, vaikuttaa siihen, miten tiedot näkyvät raportissa. Automaattisen tekstin koodeissa käytetään isoja ja pieniä kirjaimia **Sarakeotsikko**-valintaikkunassa. Tämän vuoksi teksti näkyy näin myös raportissa. Esimerkiksi vakiokalenterivuosi **@CalMonthLong** muuntaa kuukauden **7** **heinäkuuksi**. Jos raportin tekstin pitää olla isoilla kirjaimilla (esimerkiksi **HEINÄKUU**), kirjoita myös koodi isoin kirjaimin **Sarakeotsikon teksti** -ruutuun). Kirjoita esimerkiksi **@CALMONTHLONG**. Tekstissä voi käyttää sekä isoja ja pieniä kirjaimia. Voit syöttää otsikon tekstin esimerkiksi tällaisena: **Jakso @FiscalPeriod–@FiscalYear @StartDate–@EndDate**. Luotu raportin otsikko muistuttaa seuraavaa tekstiä: **Jakso 1–02 01/01/02–01/31/02**.
+Raportin suunnittelija voi luoda sarakeotsikoita automaattisesti automaattisen tekstin koodien perusteella. Automaattisen tekstin koodit ovat muuttujia, jotka päivitetään aina raportin luomisen yhteydessä. Mikä tahansa sarakeotsikko voi sisältää näitä koodeja. Ne määrittävät raportin muuttuvia tietoja, kuten päivämääriä ja jaksojen numeroita. Tämän vuoksi useissa raportin määrityksissä, ajanjaksoissa ja raportointipuissa voidaan käyttää yhtä sarakkeen määritystä. Koska automaattisen tekstin koodeissa käytetään sarakkeen määrityksen tietorivien kalenterin tietoja, niitä tuetaan vain **CALC**- ja **FD**-sarakkeissa. Tapa, jolla automaattisen tekstin koodi näkyy sarakeotsikon solussa, vaikuttaa siihen, miten tiedot näkyvät raportissa. Automaattisen tekstin koodeissa käytetään isoja ja pieniä kirjaimia **Sarakeotsikko**-valintaikkunassa. Tämän vuoksi teksti näkyy näin myös raportissa. Esimerkiksi vakiokalenterivuoden **\@CalMonthLong** muuntaa kuukauden **7** muotoon **Heinäkuu**. Jos raportin tekstin pitää olla isoilla kirjaimilla (esimerkiksi **HEINÄKUU**), kirjoita myös koodi isoin kirjaimin **Sarakeotsikon teksti** -ruutuun). Kirjoita esimerkiksi **\@CALMONTHLONG**. Tekstissä voi käyttää sekä isoja ja pieniä kirjaimia. Voit syöttää otsikon tekstin esimerkiksi tällaisena: **Period \@FiscalPeriod-\@FiscalYear from \@StartDate to \@EndDate**. Luotu raportin otsikko muistuttaa seuraavaa tekstiä: **Jakso 1–02 01/01/02–01/31/02**.
 
 > [!NOTE]
 > Joidenkin tekstien muoto, kuten pitkä päivämäärä, riippuu palvelimen alueellisista asetuksista. Voit muuttaa näitä asetuksia valitsemalla **Käynnistä**-painikkeen, **Ohjauspaneeli**-kohdan ja valitsemalla sitten **Alue ja kieli** -kohdan. Seuraavassa taulukossa luetellaan sarakeotsikoiden käytettävissä olevat automaattisen tekstin asetukset.

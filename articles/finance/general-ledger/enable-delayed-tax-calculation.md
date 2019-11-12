@@ -1,6 +1,6 @@
 ---
-title: Viivästyneen veron laskemisen ottaminen käyttöön kirjauskansiossa
-description: Tässä ohjeaiheessa tapaa, jolla **Ota käyttöön viivästyneen veron laskeminen kirjauskansiossa** -toiminnolla voi tehostaa veron laskemista, kun kirjauskansiossa on erittäin suuri määrä rivejä.
+title: Viivästyneen veron laskemisen ottaminen käyttöön kirjauskansioissa
+description: Tässä aiheessa selitetään, miten Viivästyneen veron laskeminen -toiminto otetaan käyttöön auttamaan verolaskelmien suorittamista, kun kirjauskansion rivejä on erittäin paljon.
 author: ericwang
 manager: Ann Beebe
 ms.date: 09/18/2019
@@ -18,55 +18,50 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5a8ae30a007d3e2b8b7a9bc9eb7786f6e58246d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e336be5468106007e1f5adf26bf272c88b8b413b
+ms.sourcegitcommit: bc9b65b73bf6443581c2869a9ecfd0675f0be566
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177497"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2623518"
 ---
-# <a name="enable-delayed-tax-calculation-on-journal"></a>Viivästyneen veron laskemisen ottaminen käyttöön kirjauskansiossa
+# <a name="enable-delayed-tax-calculation-on-journals"></a>Viivästyneen veron laskemisen ottaminen käyttöön kirjauskansioissa
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa tapaa, jolla **Ota käyttöön viivästyneen veron laskeminen kirjauskansiossa** -toiminnolla voi tehostaa veron laskemista, kun kirjauskansiossa on erittäin suuri määrä rivejä.
+Tässä aiheessa selitetään, miten voit viivästyttää arvonlisäveron laskemista kirjauskansioissa. Tämä ominaisuus auttaa parantamaan verolaskelmien suorittamista, kun kirjauskansion rivejä on paljon.
 
-Tällä hetkellä arvonlisäveron laskenta käynnistyy kirjauskansiossa, kun käyttäjä päivittää veroon liittyviä kenttiä, kuten arvonlisäveroryhmän tai nimikkeen arvonlisäveroryhmän. Aina kun kirjauskansion rivitasolla tehdään päivitys, kaikkien kirjauskansion rivien verosumma lasketaan uudelleen. Käyttäjä näkee tällä tavoin reaaliaikaisen lasketun verosumman, mutta seurauksena voi olla suorituskykyongelmia, jos kirjauskansiossa on erittäin paljon rivejä.
+Oletusarvoisesti kirjauskansion rivien arvonlisäverosummat lasketaan aina, kun veroihin liittyviä kenttiä päivitetään. Näitä kenttiä ovat arvonlisäveroryhmien ja nimikkeiden arvonlisäryhmien kentät. Kaikki kirjauskansiorivien päivitykset aiheuttavat verosummien uudelleenlaskennan kaikkien kirjauskansiorivien osalta. Vaikka tämä toimintatapa auttaa käyttäjiä näkemään reaaliaikaisesti laskettuja verosummia, se voi myös heikentää suorituskykyä, jos kirjauskansiorivejä on erittäin paljon.
 
-Tämä toiminto antaa mahdollisuuden ratkaista suorituskykyongelma viivästyttämällä veron laskentaa. Jos tämä ominaisuus on otettu käyttöön, verosumma lasketaan vain silloin, kun käyttäjä valitsee Arvonlisävero-komennon tai tekee kirjauksen kirjauskansioon.
+Viivästynyt veron laskenta -toiminnon avulla voit lykätä verojen laskemista kirjauskansioista, minkä vuoksi se auttaa suorituskykyongelmien ratkaisemisessa. Kun tämä toiminto on käytössä, verosummia lasketaan vain, kun käyttäjä tekee valinnan **Arvonlisävero** tai tekee kirjauksen kirjauskansioon.
 
-Käyttäjä voi ottaa parametrin käyttöön tai poistaa sen käytöstä kolmella tasolla:
-- Yrityskohtainen
-- Kirjauskansion nimen perusteella
-- Kirjauskansion otsikon perusteella
+Voit viivästyttää arvonlisäverojen laskentaa kolmella tasolla:
 
-Järjestelmän pitää kirjauskansion otsikossa olevaa parametrin arvoa lopullisena. Kirjauskansion otsikon parametrin oletusarvo saadaan kirjauskansion nimestä. Kirjauskansion nimen parametrin oletusarvo saadaan kirjanpitoparametrista kirjauskansion nimen luonnin yhteydessä.
+- Oikeushenkilö
+- Kirjauskansion nimi
+- Kirjauskansion otsikko
 
-Kirjauskansion Toteutunut arvonlisäverosumma- ja Laskettu arvonlisäveron summa -kentät piilotetaan, jos tämä parametri on otettu käyttöön. Tällä tavoin voidaan estää sekaannukset, koska ennen veron laskemisen käynnistämistä näiden kahden kentän arvo on aina 0.
+Järjestelmä kohtelee kirjauskansion otsikon asetusta ensisijaisena. Oletusarvoisesti tämä asetus perustuu kirjauskansion nimeen. Oletusarvoisesti kirjauskansion nimen asetus perustuu **Kirjanpitoparametrit**-sivun asetukseen, kun kirjauskansion nimi luodaan. Seuraavissa osissa selitetään, miten viivästetty verojen laskeminen otetaan käyttöön yritysten, kirjauskansioiden nimien ja kirjauskansioiden otsikkojen osalta.
 
-## <a name="enable-delayed-tax-calculation-by-legal-entity"></a>Yrityskohtaisen viivästyneen veron laskemisen ottaminen käyttöön
+## <a name="turn-on-delayed-tax-calculation-at-the-legal-entity-level"></a>Viivästyneen verojen laskemisen käyttöönotto yritystasolla
 
-1. Valitse **Kirjanpito > Kirjanpidon asetukset > Kirjanpitoparametrit**.
-2. Valitse **Arvonlisävero**-välilehti.
-3. Etsi **Yleiset**-välilehdessä parametri **Viivästynyt veron laskenta** ja ota parametri käyttöön tai poista se käytöstä.
+1. Siirry kohtaan **Kirjanpito \> Kirjanpidon asetukset \> Kirjanpitoparametrit**.
+2. Aseta **Arvonlisävero**-välilehden **Yleinen**-pikavälilehden **Viivästynyt veron laskenta** -asetuken arvoksi **Kyllä**.
 
-![](media/delayed-tax-calculation-gl.png)
+![Kirjanpitoparametrien kuva](media/delayed-tax-calculation-gl.png)
 
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Viivästyneen verojen laskemisen käyttöönotto kirjauskansion nimen tasolla
 
+1. Siirry kohtaan **Kirjanpito \> Kirjauskansion asetukset \> Kirjauskansioiden nimet**.
+2. Aseta **Viivästynyt veron laskenta** -asetuksen arvoksi **Kyllä** **Arvonlisävero**-osan **Yleiset**-pikavälilehdessä.
 
-## <a name="enable-delayed-tax-calculation-by-journal-name"></a>Viivästyneen veron laskemisen ottaminen käyttöön kirjauskansion nimen perusteella
+![Kirjauskansioiden nimien kuva](media/delayed-tax-calculation-journal-name.png)
 
-1. Valitse **Kirjanpito > Kirjauskansion asetukset > Kirjauskansioiden nimet**.
-2. Etsi **Yleiset**-välilehdessä parametri **Viivästynyt veron laskenta** ja ota parametri käyttöön tai poista se käytöstä.
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Viivästyneen verojen laskemisen käyttöönotto otsikkotasolla
 
-![](media/delayed-tax-calculation-journal-name.png)
-
-## <a name="enable-delayed-tax-calculation-by-journal"></a>Viivästyneen veron laskemisen ottaminen käyttöön kirjauskansion perusteella
-
-1. Valitse **Kirjanpito > Kirjauskansioviennit > Yleiset kirjauskansiot**.
+1. Siirry kohtaan **Kirjanpito \> Kirjauskansioviennit \> Yleiset kirjauskansiot**.
 2. Valitse **Uusi**.
 3. Valitse kirjauskansion nimi.
-4. Valitse **Asetukset**.
-5. Etsi parametri **Viivästynyt veron laskenta** ja ota parametri käyttöön tai poista se käytöstä.
+4. Aseta **Asetukset**-välilehden **Viivästynyt veron laskenta** -asetuksen arvoksi **Kyllä**.
 
-![](media/delayed-tax-calculation-journal-header.png)
+![Kirjauskansiosivun kuva](media/delayed-tax-calculation-journal-header.png)
