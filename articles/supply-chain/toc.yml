@@ -571,6 +571,8 @@
                   href: cost-management/inventory-close.md
                 - name: Käytettävissä olevan varaston kustannusarvojen oikaiseminen
                   href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Varaston erääntymisraportti
+                  href: cost-management/inventory-aging-report-storage.md
             - name: Valmistuksen kirjanpito
               items:
                 - name: Tuoterakennelaskelmat
@@ -868,7 +870,13 @@
                         - name: Konfiguraatioiden lataaminen RCS-tyypin ER-säiliöstä
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Konfiguraatioiden tuonti RCS:stä'
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Oppaat
+                      items:
+                        - name: Käytä sähköisen raportoinnin (ER) mallimäärityksissä JOIN-tietolähteitä saadaksesi tietoja useista sovellustaulukoista
+                          href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Maakontekstista riippuvaisten ER-mallimääritysten määrittäminen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Sähköisten raportointiratkaisujen käyttäminen Finance and Operations -palvelussa
                   items:
                     - name: Kehyksen määrittäminen
@@ -903,6 +911,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Uusien kenttien lisääminen liiketoiminta-asiakirjan malliin Microsoft Excelissä
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ER-kehyksen ohjelmointirajapinta
                   items:
                     - name: Sähköisen raportoinnin toimintoluettelon laajentaminen
@@ -1051,6 +1061,22 @@
           items:
             - name: Pääsuunnittelun aloitussivu
               href: master-planning/master-planning-home-page.md
+            - name: Suunnittelun optimointi
+              items:
+                - name: Suunnittelun optimoinnin yleiskuvaus
+                  href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: Suunnittelun optimoinnin aloittaminen
+                  href: master-planning/planning-optimization/get-started.md
+                - name: Suunnittelun optimoinnin sopivuusanalyysi
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Suodattimien käyttäminen suunnitelmaan
+                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Suunnitelman historia- ja suunnittelulokien tarkasteleminen
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Automaattinen vahvistus ja suunnittelun optimointi
+                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Suunnittelutyön peruuttaminen
+                  href: master-planning/planning-optimization/cancel-planning-job.md
             - name: Pääsuunnitelmat
               items:
                 - name: Pääsuunnitelmien yleiskatsaus
