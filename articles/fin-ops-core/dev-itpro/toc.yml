@@ -2,6 +2,8 @@
   items:
     - name: Finance and Operations -sovellusten kehittäminen ja hallinta
       items:
+        - name: Finance and Operations -sovellusten dokumentaatio
+          href: ../fin-ops/index.md
         - name: Finance and Operations -sovellusten kehittäminen ja hallinta
           href: index.md
         - name: Uudet ja muuttuneet ominaisuudet
@@ -128,16 +130,28 @@
                           href: data-entities/dual-write-overview.md
                         - name: Organisaatiohierarkia Common Data Servicessä
                           href: data-entities/dual-write-organization.md
-                        - name: Yrityskonsepti Common Data Servicessä
-                          href: data-entities/dual-write-company.md
+                        - name: Yritysten integrointi
+                          items:
+                            - name: Yrityskonsepti Common Data Servicessä
+                              href: data-entities/dual-write-company.md
+                            - name: Käynnistys yritystietoja käyttäen
+                              href: data-entities/dual-write-bootstrap.md
                         - name: Integroidut asiakkaan päätiedot
                           href: data-entities/dual-write-customer.md
+                        - name: Integroitu kirjanpito
+                          href: data-entities/dual-write-ledger.md
                         - name: Yhtenäinen tuotekokemus
                           href: data-entities/dual-write-product.md
-                        - name: Integroidut toimittajan päätiedot
-                          href: data-entities/dual-write-vendor.md
+                        - name: Toimittajien integrointi
+                          items:
+                            - name: Integroidut toimittajan päätiedot
+                              href: data-entities/dual-write-vendor.md
+                            - name: Toimittajan mallien välillä siirtyminen
+                              href: data-entities/dual-write-vendor-switch.md
                         - name: Integroidut toimipaikat ja varastot
                           href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: Integroidut verojen päätiedot
+                          href: data-entities/dual-write-tax.md
                         - name: Ensimmäinen synkronointi
                           href: data-entities/dual-write-initial.md
                         - name: Tietojen integroinnin vianmääritys
@@ -418,6 +432,8 @@
                   href: user-interface/client-disconnected.md
                 - name: Paikallisten ympäristöjen vianmääritys
                   href: deployment/troubleshoot-on-prem.md
+                - name: 'Komentosarjat, joilla voidaan ratkaista paikallisten ympäristöjen ongelmia'
+                  href: deployment/onprem-tsg-implementations.md
                 - name: Varmenteiden kierrättäminen
                   href: deployment/certificate-rotation-on-prem.md
             - name: Mukautetun koodin käyttöönotto
@@ -852,7 +868,7 @@
                       href: perf-test/concepts-navigation.md
                     - name: Tiedon testausmenetelmät
                       href: perf-test/test-data-methods.md
-                    - name: Hyväksyntätestauskirjaston entiteetit
+                    - name: Hyväksyntätestauskirjaston yksiköt
                       href: perf-test/concepts-entities.md
                     - name: Hyväksyntätestikirjaston komennot
                       href: perf-test/concepts-commands.md

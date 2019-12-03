@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51a27f5ecdb4d4903ac0b76c5682ea7f9ab0d8c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1d074b9450a4dfc72f60f97ccaf03610ce54315d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175914"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772579"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Maksuliikenteen kotisivu
 
@@ -49,7 +49,7 @@ Näitä instrumentteja ovat esimerkiksi talletuskuitit, sekit, vekselit ja velka
 ### <a name="bank-reconciliation"></a>Pankkitilin täsmäytys
 
 -   [Pankkitilin täsmäytyksen lisätoimintojen yleiskatsaus](advanced-bank-reconciliation-overview.md)
--   [Pankkitilin täsmäytyksen lisätoimintojen määrittäminen](configure-advanced-bank-reconciliation.md)
+-   [Pankkitilin täsmäytyksen lisätoimintojen asetusprosessi](configure-advanced-bank-reconciliation.md)
 -   [Pankkitilin täsmäytyksen viennin lisätoimintojen määrittäminen](set-up-advanced-bank-reconciliation-import-process.md)
 -   [Tiliotteiden täsmäytys pankkitilin täsmäytyksen lisätoiminnoilla](reconcile-bank-statements-advanced-bank-reconciliation.md)
 -   [Pankkitilin täsmäytyksen täsmäytyssääntöjen asetukset](set-up-bank-reconciliation-matching-rules.md)
@@ -57,28 +57,28 @@ Näitä instrumentteja ovat esimerkiksi talletuskuitit, sekit, vekselit ja velka
 
 ## <a name="accounts-payable-payments-and-settlements"></a>Ostoreskontran maksut ja tilitykset
 -   [Ostoreskontran keskitetyt maksut](../accounts-payable/centralized-payments-accounts-payable.md)
--   [Toimittajan laskujen luonti maksuehdotuksen avulla](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [Toimittajamaksujen luominen maksuehdotuksen avulla](../accounts-payable/create-vendor-payments-payment-proposal.md)
 -   [Käänteinen toimittajamaksu](../accounts-payable/reverse-vendor-payment.md)
 -   [Toimittajan maksut osasummalle](../accounts-payable/vendor-payments-partial-amount.md)
--   [Ennakkomaksulaskut ja ennakkomaksujen yleiskatsaus](../accounts-payable/prepayments-invoices-vs-prepayments.md)
--   [Skenaario: Toimittajan osamaksun tilittäminen ja viimeisen maksun tilittäminen kokonaan ennen alennuspäivämäärää](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [Skenaario: Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
--   [Skenaario: Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
--   [Skenaario: Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
--   [Skenaario: Alennuksen käyttäminen, kun summa on suurempi kuin toimittajan maksulle laskettu alennus](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
--   [Skenaario: Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+-   [Ennakkomaksulaskujen ja ennakkomaksujen vertailu](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [Toimittajan osamaksun ja viimeisen maksun tilittäminen kokonaan ennen alennuspäivämäärää](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [Alennuksen käyttäminen, kun alennuksen summa on suurempi kuin toimittajan maksulle laskettu alennus](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 
 ## <a name="accounts-receivable-payments-and-settlements"></a>Myyntireskontran maksut ja tilitykset
 -   [Myyntireskontran keskitetyt maksut](../accounts-receivable/centralized-payments-accounts-receivable.md)
 -   [Asiakasmaksut osasummalle](../accounts-receivable/customer-payments-partial-amount.md)
 -   [Asiakkaiden hyvittäminen](../accounts-receivable/reimburse-customers.md)
--   [Skenaario: Automaattinen tilitys ja priorisointi](../accounts-receivable/automatic-settlement-prioritization.md)
--   [Skenaario: Liian suurten maksujen käteisalennuksen käsittely](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [Skenaario: Asiakkaan osamaksun tilittäminen ja viimeisen maksun tilittäminen kokonaan ennen alennuspäivämäärää](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
--   [Skenaario: Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
--   [Skenaario: Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
--   [Skenaario: Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
--   [Skenaario: Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+-   [Automaattinen tilitys ja priorisointi](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [Liian suurten maksujen käteisalennusten käsittely](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [Asiakkaan osamaksun ja viimeisen maksun tilittäminen kokonaan ennen alennuspäivämäärää](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [Asiakkaan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [Hyvityslaskujen alennuksia sisältävän asiakkaan osamaksun tilittäminen](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [Useita alennuskausia sisältävän asiakkaan osamaksun tilittäminen](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [Useita alennuskausia kattavien useiden laskujen tilittäminen yhdellä asiakkaan maksulla](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
 
@@ -86,11 +86,11 @@ Näitä instrumentteja ovat esimerkiksi talletuskuitit, sekit, vekselit ja velka
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-Siirry [Microsoft Dynamics 365:n julkaisutietoihin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä, millaisia uusia toimintoja on suunniteltu. 
+Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä, millaisia uusia toimintoja on suunniteltu. 
 
 #### <a name="blogs"></a>Blogit
 
-[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on Retail-sovellusta ja muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja.
+[Microsoft Dynamics 365 -blogissa](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) ja [Microsoft Dynamics 365 Finance and Operations -sovelluksen taloushallinnon blogissa](https://community.dynamics.com/365/financeandoperations/b/financials) on paljon ajatuksia, uutisia ja muita tietoja.
 
 [Microsoft Dynamics Operations -kumppaniyhteisön blogista](https://community.dynamics.com/partner/b/operationspartnercommunityblog) Microsoft Dynamics -kumppanit saavat keskitetysti tietoja MBS Operations -sovelluksen uutuuksista ja suosituista aiheista.
 

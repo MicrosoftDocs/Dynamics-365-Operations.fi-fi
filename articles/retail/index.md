@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e77fd279ddec5eb02e226776eecb1223283313c3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278103"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811923"
 ---
 # <a name="help-resources-for-dynamics-365-retail"></a>Dynamics 365 Retailin ohjeresurssit
 
@@ -55,7 +55,7 @@ Lisäksi asiakkailla on useita vaihtoehtoja saavuttaa haluamansa sopivana ajanko
 
 Retail Modern Point Of Sale (MPOS) ja Cloud POS voivat käyttää useita laitteistoja ja oheislaitteita. Sekä MPOS että Cloud POS sisältävät useita käyttöliittymiä ja käyttöönoton asetuksia, joita voi käyttää erilaisissa liiketoimintaskenaarioissa.
 
-Retail-sovelluksen oheislaitesimulaattori sisältää virtuaalisen oheislaitesimulaattorin ja POS-simulaattorin. Virtuaalinen oheislaitesimulaattori tukee ensisijaisesti sellaisten skenaarioiden testaamista, joissa yleensä vaaditaan fyysisiä POS-oheislaitteita. POS-simulaattorin avulla voit testata fyysisten oheislaitteiden ja Retail-sovelluksen yhteensopivuuden ilman POS-asiakasohjelman käyttöönottoa.
+Retail-sovelluksen oheislaitesimulaattori sisältää virtuaalisen oheislaitesimulaattorin ja myyntipistesimulaattorin. Virtuaalinen oheislaitesimulaattori tukee ensisijaisesti sellaisten skenaarioiden testaamista, joissa yleensä vaaditaan fyysisiä myyntipisteoheislaitteita. Myyntipistesimulaattorin avulla voit testata fyysisten oheislaitteiden ja Retail-sovelluksen yhteensopivuuden ilman myyntipisteen asiakasohjelman käyttöönottoa.
 
 ## <a name="intelligence"></a>Tiedot
 
@@ -69,20 +69,20 @@ Retail-sovelluksen avulla voit valvoa myyntiä ja marginaalia reaaliajassa organ
 
 Sinun on luotava ja määritettävä tuotteet Retail-sovelluksessa, ennen kuin tuotteita voi tarjota myytäväksi vähittäismyyntikanavissa. Voit luoda tuotteita, määrittää tuotteiden ominaisuuksia ja määritteitä sekä määrittää tuotteet vähittäismyyntiluokkahierarkioihin. Jotta tuotteet olisivat käytettävissä vähittäismyyntikanavissa ja jotta ne voitaisiin lisätä aktiiviseen valikoimaan, tuotteet on vapautettava yrityksiin, jossa ne ovat saatavilla.
 
-Voit tehdä tuotteiden hinnanoikaisuja ja myös määrittää alennuksia, joita käytetään nimikkeeseen tai tapahtumaan POS-myyntipisteessä, puhelinkeskuksen myyntitilauksessa tai verkkotilauksessa.
+Voit tehdä tuotteiden hinnanoikaisuja ja myös määrittää alennuksia, joita käytetään nimikkeeseen tai tapahtumaan myyntipisteessä, puhelinkeskuksen myyntitilauksessa tai verkkotilauksessa.
 
-## <a name="store-operations-and-pos"></a>Myymälän toiminnot ja POS
+## <a name="store-operations-and-pos"></a>Myymälän toiminnot ja myyntipisteet
 
-MPOS on POS-sovellus tietokoneille, taulutietokoneille ja puhelimille. Myyntihenkilöstö voi käsitellä myyntitapahtumia ja asiakastilauksia, tehdä asiakashallintatehtäviä sekä suorittaa päivittäistoimintoja ja varastonhallintaa mobiililaitteilla missä tahansa myymässä ja tietokonepohjaisissa kassapäätteissä. Cloud POS on selainpohjainen POS, joka voidaan käynnistää millä tahansa vakioselaimella.
+MPOS on myyntipistesovellus tietokoneille, taulutietokoneille ja puhelimille. Myyntihenkilöstö voi käsitellä myyntitapahtumia ja asiakastilauksia, tehdä asiakashallintatehtäviä sekä suorittaa päivittäistoimintoja ja varastonhallintaa mobiililaitteilla missä tahansa myymässä ja tietokonepohjaisissa kassapäätteissä. Cloud POS on selainpohjainen myyntipiste, joka voidaan käynnistää millä tahansa vakioselaimella.
 
-Voit määrittää useita osia, joiden avulla määritetään myymälän, myymälän POS-kassakoneiden ja sellaisten vähittäismyynnin oheislaitteiden suhteet, joita nämä kassakoneet käyttävät tapahtumien käsittelyssä. Voit määrittää myös tietyn POS-esiintymän ominaisuudet. Nämä ominaisuudet sisältävät laiteprofiilin tai kassakoneessa käytettävien vähittäismyynnin oheislaitteiden asetukset, myymälän, johon kassakone on yhdistetty, ulkoasun, jonka kassakoneeseen kirjautuva käyttäjä näkee, ja kassakoneessa käyttöönotettavat toiminnot. Voit myös määrittää, voiko kassakonetta käyttää, kun yhteys on katkennut tai kun se on offline-tilassa.
+Voit määrittää useita osia, joiden avulla määritetään myymälän, myymälän myyntipisteiden kassakoneiden ja sellaisten vähittäismyynnin oheislaitteiden suhteet, joita nämä kassakoneet käyttävät tapahtumien käsittelyssä. Voit määrittää myös tietyn myyntipisteen esiintymän ominaisuudet. Nämä ominaisuudet sisältävät laiteprofiilin tai kassakoneessa käytettävien vähittäismyynnin oheislaitteiden asetukset, myymälän, johon kassakone on yhdistetty, ulkoasun, jonka kassakoneeseen kirjautuva käyttäjä näkee, ja kassakoneessa käyttöönotettavat toiminnot. Voit myös määrittää, voiko kassakonetta käyttää, kun yhteys on katkennut tai kun se on offline-tilassa.
 
 ## <a name="customize-and-administer-retail-environments"></a>Retail-ympäristöjen mukauttaminen ja hallinta
 
 Jos sinua on pyydetty mukauttamaan ympäristöä tai jos järjestelmän käyttöönotto ja ylläpito on vastuullasi, tutustu Retail-sovellusta koskevaan kehittäjien ja järjestelmänvalvojan sisältöön sekä yleiseen sisältöön.
 
-- [Dynamics 365 Retail IT-asiantuntijoille ja kehittäjille](dev-itpro/dev-retail-home-page.md)
-- [Dynamics 365 Finance -ohjelman kehittäminen ja ylläpito](../dev-itpro/dev-tools/developer-home-page.md)
+- [Retail IT-asiantuntijoille ja kehittäjille](dev-itpro/dev-retail-home-page.md)
+- [Dynamics 365 Financen kehittäminen ja ylläpito](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

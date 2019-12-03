@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5493c46183e7b599e82153f5b3ac36c81faa4955
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f850b28c4d6ed6ce13438f4de87ef0c04065c7f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174693"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770230"
 ---
 # <a name="public-sector-home-page"></a>Julkisen sektorin aloitussivu
 
@@ -43,12 +43,12 @@ Käytä Julkinen sektori -toiminnallisuutta noudattaaksesi sääntöjä, määr�
   Lisätietoja on seuraavissa aiheissa:
 
 - [Julkisen sektorin toimintojen suunnittelu](plan-public-sector-functionality.md)
-- [Julkisen sektorin ostoreskontra](accounts-payable-public-sector.md)
-- [Julkisen sektorin myyntireskontra](accounts-receivable-public-sector.md)
-- [Julkisen sektorin budjetointi](budgeting-public-sector.md)
+- [Julkisen sektorin ostoreskontra – yleiskatsaus](accounts-payable-public-sector.md)
+- [Julkisen sektorin myyntireskontra – yleiskatsaus](accounts-receivable-public-sector.md)
+- [Julkisen sektorin budjetointi – yleiskatsaus](budgeting-public-sector.md)
 - [Julkisen sektorin käyttöomaisuuserät](fixed-asset-public-sector.md)
-- [Ranskalaisiin säädöksiin liittyvät ominaisuudet](../localizations/emea-fra-public-sector-accounting.md)
-- [Julkisen sektorin kirjanpito](general-ledger-public-sector.md)
+- [Ranskan julkisen sektorin kirjanpito](../localizations/emea-fra-public-sector-accounting.md)
+- [Julkisen sektorin kirjanpito – yleiskatsaus](general-ledger-public-sector.md)
 - [Julkisen sektorin hankinnat](procurement-sourcing-public-sector.md)
 - [Julkisen sektorin käyttöoikeusroolit](security-roles-public-sector.md)
 

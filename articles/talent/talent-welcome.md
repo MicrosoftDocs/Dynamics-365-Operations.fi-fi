@@ -1,5 +1,5 @@
 ---
-title: Tervetuloa Dynamics 365 Talent -ohjelmaan
+title: Tervetuloa Dynamics 365 Talentiin
 description: Talent yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Näitä prosesseja ovat työntekijän sitouttaminen, etujen hallinta, koulutus, suorituskyvyn arvioinnit ja muutosten hallinta.
 author: andreabichsel
 manager: AnnBe
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: edc2f59752a32b9cd20902d0b7a1edfe3ba4d15b
-ms.sourcegitcommit: ff160a9f9879f3ec015ffef11fbc8b7c1b84a59d
+ms.openlocfilehash: 841ef8f2b7c319e0a6b3a9ce9a9e4959e70aa8cd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552947"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812761"
 ---
-# <a name="welcome-to-dynamics-365-talent"></a>Tervetuloa Dynamics 365 Talent -ohjelmaan
+# <a name="welcome-to-dynamics-365-talent"></a>Tervetuloa Dynamics 365 Talentiin
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 Talent yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Näitä prosesseja ovat työntekijän sitouttaminen, etujen hallinta, koulutus, suorituskyvyn tarkistukset ja muutosten hallinta. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita.
+Microsoft Dynamics 365 Talent yksinkertaistaa monia rutiininomaisia kirjanpitotehtäviä ja automatisoi monia organisaation henkilöstöön liittyviä prosesseja. Näitä prosesseja ovat työntekijän sitouttaminen, etujen hallinta, koulutus, suorituskyvyn arvioinnit ja muutosten hallinta. Se muodostaa myös kehyksen, jonka avulla henkilöstöhallinnon henkilöstö voi hallita valvottavia alueita.
 
 Voit suorittaa Talent-sovelluksessa seuraavat tehtävät:
 
@@ -53,10 +53,10 @@ Tutustu Dynamics 365 Talent -ohjelmaan katsomalla video [Kuinka päästä alkuun
 Talent-sovellusta käytettäessä voi päättää organisaation rakenteen elementtien, kuten osastojen, töiden ja toimien, avulla. Nämä ovat määritettäviä peruselementtejä. Yksittäiset työntekijät määritetään töihin liitettyihin toimiin.
 
 -   [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](departments-jobs-positions.md)
--   [Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen](set-up-company-specific-hr-parameters.md)
--   [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](set-up-hr-parameters-across-legal-entities.md) 
+-   [Yrityskohtaisten henkilöstöhallinnon (HR) parametrien määrittäminen](set-up-company-specific-hr-parameters.md)
+-   [Yritysten välisten henkilöstöhallinnon (HR) parametrien määrittäminen](set-up-hr-parameters-across-legal-entities.md) 
 -   [Henkilöstötoiminnot – usein kysytyt kysymykset](personnel-actions-faq.md)
--   [Lomien ja poissaolojen yhteenveto](leave-absence-overview.md)
+-   [Lomien ja poissaolojen hallinta](leave-absence-overview.md)
 -   [Dynamics 365 Talentin käyttö: Lomat ja poissaolot (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [Henkilöstöhallinta Dynamics 365 Talentissa (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
@@ -64,8 +64,8 @@ Talent-sovellusta käytettäessä voi päättää organisaation rakenteen elemen
 
 Talent sisältää Attractin, joka auttaa tunnistamaan, haastattelemaan ja palkkaamaan työntekijöitä, joilla on organisaation tarvitsemat taidot. Kun siirryt työhönotosta työhön palkkaamiseen, Onboard-sovellus auttaa tuomaan uuden työntekijän organisaatioon määrittämällä tarkat odotukset, antamalla aloittamiseen tarvittavat tiedot, luomalla yhteyksiä työtovereihin ja varmistamalla, että työntekijöillä on mahdollisuudet onnistua uudessa tehtävässään.  
 
-- [Attract-sovelluksen yleiskatsaus](attract-overview.md)
-- [Onboard-sovelluksen yleiskatsaus](create-onboarding-experience.md)
+- [Microsoft Dynamics 365 Talent - Attractin toiminnot ja ominaisuudet](attract-overview.md)
+- [Onboardin käytön aloittaminen](create-onboarding-experience.md)
 
 ## <a name="retain-and-motivate-employees"></a>Työntekijöiden sitouttaminen ja motivointi
 
@@ -83,16 +83,16 @@ Voit auttaa työntekijöitä saavuttamaan uratavoitteensa samalla, kun toteutat 
 
 -   [Suorituksen hallinta](performance-management-overview.md)
 -   [Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen](skills.md)
--   [Koulutuksen hallinta kurssien avulla](courses.md)
+-   [Koulutuskurssien määrittäminen](courses.md)
 -   [Työntekijöiden kehityksen hallinta Dynamics 365 Talentissa (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Etuuksien luonti ja ylläpito
 
 Henkilöstön kompensaatio voi koostua palkan ja bonusten lisäksi myös muodostetuista etupaketeista, joihin voi sisältyä sairausvakuutus- ja eläkepaketteja. Voit myös hallita etuja, kuten laina-ohjelmia, jossa yritys lainaa työntekijöilleen nimikkeitä, kuten tietokoneita ja puhelimia.
 
--   [Etuohjelman hallinta](manage-benefit-program.md)
+-   [Etuohjelman määrittäminen ja hallinta](manage-benefit-program.md)
 -   [Etuuskelpoisuuden käytännöt](benefit-eligibility-policies.md)
--   [Työntekijöille lainattujen nimikkeiden hallinta](loan-items.md)
+-   [Työntekijöille lainattujen kohteiden hallinta](loan-items.md)
 -   [Työntekijöiden etuuksien hallinta Dynamics 365 Talentissa (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Työturvallisuuden ja vaatimustenmukaisuuden ylläpito
@@ -108,5 +108,5 @@ Voit suunnitella ja hallita kyselylomakkeita, joilla voit kerätä tietoja eri t
 
 -   [Kyselylomakkeet](questionnaires.md)
 -   [Kyselylomakkeen suunnitteleminen](design-questionnaires.md)
--   [Kyselylomakkeen jakaminen ja täyttäminen](distribute-questionnaires.md)
--   [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
+-   [Kyselylomakkeiden jakelu ja aikataulutus](distribute-questionnaires.md)
+-   [Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)

@@ -62,7 +62,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
             - name: Uudet ja muuttuneet ominaisuudet
               items:
-                - name: Retail-sovelluksen version 10.0.7 esikatselutoiminnot
+                - name: Retail-sovelluksen version 10.0.7 esiversiotoiminnot
                   href: get-started/whats-new-10-0-7.md
                 - name: Retail-sovelluksen versio 10.0.6
                   href: get-started/whats-new-10-0-6.md
@@ -850,6 +850,8 @@
           items:
             - name: Kanta-asiakkuuden yleiskatsaus
               href: set-up-customer-loyalty-program.md
+            - name: Asiakashallinnan yleiskuvaus
+              href: clienteling-overview.md
         - name: Maksut
           items:
             - name: Maksutavat
@@ -1026,17 +1028,17 @@
               items:
                 - name: MPOS- ja CPOS-myyntipisteiden demotietojen näyttöasettelut
                   href: demo-data.md
-                - name: POS-näyttöasettelut
+                - name: Myyntipisteen näyttöasettelut
                   href: pos-screen-layouts.md
                 - name: 'Retail POS:n asettelun suunnittelutoiminnon asentaminen'
                   href: install-pos-layout-designer.md
                 - name: Ilmoitusasetusten valitseminen
                   href: Notifications-POS.md
-                - name: POS-sovellus ja käyttäjän kielialueasetukset
+                - name: Myyntipistesovellus ja käyttäjän kielialueasetukset
                   href: pos-application-user-language-settings.md
                 - name: 'MPOS:n kuvien määrittäminen ja hallinta'
                   href: set-up-manage-images-retail-mpos.md
-                - name: Asiakkaan kuvat POS-sovelluksessa
+                - name: Asiakasohjelman tallennekuvat myyntipisteessä
                   href: pos-image.md
             - name: Tuotesuositukset
               items:
@@ -1264,12 +1266,10 @@
               items:
                 - name: 'Retail POS:n näyttöasettelut'
                   href: pos-screen-layouts.md
-                - name: 'URL-osoitteen avaaminen POS:ssä'
+                - name: URL-osoitteen avaaminen myyntipisteessä
                   href: Open-URL-in-POS.md
-                - name: 'POS:n asettelun suunnittelutoiminnon asentaminen'
+                - name: Myyntipisteen asettelun suunnittelutoiminnon asentaminen
                   href: install-pos-layout-designer.md
-                - name: Retail Modern POS offline-tilassa
-                  href: dev-itpro/retail-modern-pos-offline.md
                 - name: POS Dual -näytön näkymän laajentaminen
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: 'Retail Modern POSin ja Cloud POS:n käynnistyksen laajennettavuus'
@@ -1332,6 +1332,8 @@
                   href: dev-itpro/trigger-example-blocking-transaction.md
                 - name: Palautuskäytännön toteuttaminen käynnistimien avulla
                   href: dev-itpro/trigger-example-return-policy.md
+                - name: Kirjaa laajennustapahtumat Application Insightsiin
+                  href: dev-itpro/commerce-application-insights.md
             - name: Sähköisen kaupankäynnin laajennettavuus
               items:
                 - name: Verkkokauppojen määrittäminen
@@ -1376,7 +1378,7 @@
                   href: dev-itpro/channel-db-extensions.md
                 - name: Mukautetun CDX-synkronoinnin käyttöönotto laajennuksen kautta
                   href: dev-itpro/cdx-extensibility.md
-                - name: 'Mukautettujen kenttien lisääminen POS:n Summat-ruutuun'
+                - name: Mukautettujen kenttien lisääminen myyntipisteen Summat-ruutuun
                   href: dev-itpro/custom-field-pos-totals.md
                 - name: Tilausmääritteiden määrittäminen ja asettaminen
                   href: dev-itpro/order-attributes.md
@@ -1392,7 +1394,7 @@
                   href: dev-itpro/pos-custom-transaction.md
                 - name: Mukautettujen sarakkeiden lisääminen myyntipisteen tapahtumaruudukkoon
                   href: dev-itpro/pos-custom-transaction-column.md
-                - name: POS-ohjelmointirajapintojen tai -toimintojen kutsuminen POS-laajennuksista
+                - name: Myyntipisteen ohjelmointirajapintojen tai -toimintojen kutsuminen myyntipistelaajennuksista
                   href: dev-itpro/pos-api-extension.md
                 - name: Retail Modern POS -käynnistimet ja tulostus
                   href: dev-itpro/pos-trigger-printing.md

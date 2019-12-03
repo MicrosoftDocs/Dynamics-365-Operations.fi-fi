@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c6a9e4dd3f3182c98a9f5491b07f8687c21e5c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184068"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772648"
 ---
 # <a name="budgeting-home-page"></a>Budjetoinnin aloitussivu
 
@@ -42,12 +42,12 @@ Sekä pitkän aikavälin strategisen suunnittelun että vuosittaisen budjetin su
 
 Erittäin korkean kypsyystason organisaatioissa voi olla käytössä organisaatiokulttuuri, jossa työntekijöille kerrotaan organisaation tavoitteista ja siitä, miten kyseisiä tavoitteita voidaan toteuttaa erilaisten käytäntöjen avulla. Tällainen käytäntö voi olla esimerkiksi verkkotapaamisten järjestäminen matkustamisen sijaan aina, kun se on mahdollista. Sovellus sisältää budjetin hallintakehikon. Sen avulla yritysjohto voi valita joko tiukan hallinnan (joka estää budjetin ylittävät kirjaukset) tai pehmeän hallinnan (jossa käyttäjiä varoitetaan budjettirahoituksen ylittymisestä, mutta käyttäjät voivat itse päättää, mitä he tekevät). Käytössä on myös juoksevat ennusteet. Juoksevassa ennusteessa todellisia kuluja verrataan säännöllisesti budjettiin, ja sen perusteella määritetään, miten yritys toimii budjettiin verrattuna. Juoksevan ennusteen perusteella voidaan tunnistaa myös trendejä. Finance and Operations tukee juoksevia ennusteita budjettisuunnitelman asiakirjan alkuperäisinä suunnittelutehtävinä. Juoksevat ennusteet voidaan tehdä rinnakkain tulevan budjettijakson suunnittelun kanssa.
 
--   [Perusbudjetointi: yleiskatsaus ja konfiguraatio](basic-budgeting-overview-configuration.md)
--   [Budjetin hallinta: yleiskatsaus ja konfiguraatio](budget-control-overview-configuration.md)
--   [Budjettisuunnittelu: yleiskatsaus ja konfiguraatio](budget-planning-overview-configuration.md)
--   [Toimien ennustus](position-forecasting.md)
+-   [Budjetoinnin yleiskatsaus](basic-budgeting-overview-configuration.md)
+-   [Budjetin hallinnan yleiskatsaus](budget-control-overview-configuration.md)
+-   [Budjetin suunnittelun yleiskatsaus](budget-planning-overview-configuration.md)
+-   [Toimien ennusteet](position-forecasting.md)
 -   [Budjettisuunnittelun perusteluasiakirjat](budget-planning-justification-docs.md)
--   [Microsoft Excelin budjettisuunnittelumallit](budget-planning-excel-templates.md)
+-   [Excelin budjettisuunnittelumallit](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budjetointityökalut
 [![Budjetointityökalut](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
