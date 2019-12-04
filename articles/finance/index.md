@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 5b5ed05e9c53b17632e94e913f7f3663676c3e91
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570122"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770571"
 ---
 # <a name="financial-management-home-page"></a>Taloushallinnon kotisivu
 
@@ -41,11 +41,11 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
         - [Kustannuslaskenta](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Kulujen hallinta](expense-management/expense-management.md)
+        - [Kulujenhallinta](expense-management/expense-management.md)
         - [Taloushallinnon raportointi](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Käyttöomaisuuserät](fixed-assets/fixed-assets.md)
-        - [Kirjanpito](general-ledger/general-ledger.md) 
-        - [Projektinhallinta](project-management/overview-project-management-accounting.md)
+        - [Kirjanpidon ja talousraportoinnin aloitussivu](general-ledger/general-ledger.md) 
+        - [Projektinhallinta ja kirjanpito](project-management/overview-project-management-accounting.md)
         - [Julkinen sektori](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -56,7 +56,7 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 ### <a name="blogs"></a>Blogit
 
 - [Microsoft Dynamics 365 -blogi](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
-- [Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials) 
+- [Financials -blogi](https://community.dynamics.com/365/financeandoperations/b/financials) 
 - [Microsoft Dynamics Operations -kumppaniyhteisön blogi](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
 
 ### <a name="task-guides"></a>Tehtäväoppaat
@@ -72,5 +72,5 @@ Maiden/alueiden säädökset vaikuttavat veroasetuksiin ja taloushallinnon muihi
 
 ### <a name="additional-content"></a>Lisää sisältöä
 
-Supply Chain Management -sovelluksen toiminto kattaa hankinnasta maksuun -prosessin osia. Niihin kuuluvat varasto-otot, tilaaminen, vastaanotto, laskutus sekä organisaation ostamien tavaroiden ja palveluiden maksaminen. Lisätietoja ostojen, varaston ja valmistuksen ominaisuuksista on [!Supply Chain Management -sovelluksen kotisivulla](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
+Supply Chain Managementin toiminnallisuus kattaa hankinnasta maksuun -prosessin osia. Niihin kuuluvat varasto-otot, tilaaminen, vastaanotto, laskutus sekä organisaation ostamien tavaroiden ja palveluiden maksaminen. Lisätietoja ostojen, varaston ja valmistuksen ominaisuuksista on [!Supply Chain Management -sovelluksen kotisivulla](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
-ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
+ms.openlocfilehash: 10d894bb65031741a5ec8365f7f8db76b58ab334
+ms.sourcegitcommit: 92322167f57b66d2accc134aaf862e6b9931ec94
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578481"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2693109"
 ---
 # <a name="distributed-order-management-dom"></a>Jaettu tilausten hallinta (JTH)
 
@@ -112,7 +112,7 @@ Seuraavassa kuvassa näkyy myyntitilauksen elinkaari JTH-järjestelmässä.
         \* Jos **Täytä osittaistilaukset** -asetukseksi määritetään **Ei**, **Täytä osittaiset rivit** -asetuksen arvona on aina arvo **Ei** riippumatta siitä, mikä arvo asetukseen on määritetty.
 
 > [!NOTE]
-> Retail-sovelluksen versiossa 10.0.5 **Täytä tilaus vain yhdestä sijainnista** -kohdan arvoksi muutettiin **Täyttämissijaintien enimmäismäärä**. Sen sijaan, että käyttäjä voi määrittää tilausten täyttämisen vain yhdestä sijainnista tai niin useasta sijainnista kuin mahdollista, käyttäjät voivat nyt määrittää, voidaanko tilaus täyttää tietystä sijaintijoukosta (enintään 5 sijaintia) tai niin useasta sijainnista kuin on mahdollista. Tämä mahdollistaa aiempaa joustavamman tilauksen täyttämissijaintien määrän määrittämisen.
+> Retail-sovelluksen versiossa 10.0.5 **Täytä tilaus vain yhdestä sijainnista** -kohdan arvoksi muutettiin **Täyttämissijaintien enimmäismäärä**. Sen sijaan, että käyttäjä voisi määrittää tilausten täyttämisen vain yhdestä sijainnista tai niin useasta sijainnista kuin mahdollista, käyttäjät voivat nyt määrittää, voidaanko tilaus täyttää tietystä sijaintijoukosta (enintään 5 sijaintia) tai niin useasta sijainnista kuin on mahdollista. Tämä mahdollistaa aiempaa joustavamman tilauksen täyttämissijaintien määrän määrittämisen.
 
    - **Offline-täyttämisen sijaintisääntö** – Tämän säännön avulla organisaatiot voivat määrittää sijainnin tai sijaintiryhmän offline-sijainniksi tai DOM:n ulkopuolelle, jotta tilauksia ei voi määrittää täytettäväksi näistä sijainneista.
     - **Hylkäysten enimmäismäärän sääntö** – Tämän säännön avulla organisaatiot voivat määrittää hylkäyksille raja-arvon. Kun raja-arvo saavutetaan, JTH-käsittelijä merkitsee tilauksen vai tilausrivin poikkeukseksi ja jättää sen jatkokäsittelyn ulkopuolelle.
@@ -179,7 +179,7 @@ Käsittelyn aikana JTH ottaa huomioon seuraavassa kuvatut tilaukset ja tilausriv
 
 Sen jälkeen, kun JTH on käyttänyt sääntöjä, varaston rajoituksia ja optimointia, JTH valitsee sijainnin, joka on lähinnä asiakkaan toimitusosoitetta.
 
-![Myyntitilauksen ehdot](./media/ordercriteria.png "Myyntitilauksen ehdot")
+![Myyntitilausten ehdot](./media/ordercriteria.png "Myyntitilausten ehdot")
 
 ## <a name="results-of-dom-runs"></a>JTH-suoritusten tulokset
 

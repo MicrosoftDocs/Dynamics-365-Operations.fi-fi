@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce6ce9c3c08a165ca19eb8d83643fd87b970f1ca
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658733"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772234"
 ---
 # <a name="accounts-payable-home-page"></a>Ostoreskontran aloitussivu
 
@@ -41,7 +41,7 @@ Voit syöttää toimittajan laskut manuaalisesti tai vastaanottaa ne sähköises
 
 Määritä toimittajaryhmät, toimittajat, kirjausprofiilit ja erilaiset maksuvaihtoehdot sekä toimittajia, kuluja, toimituksia ja kohteita sekä velkakirjoja ja muun tyyppisiä ostoreskontran tietoja koskevat parametrit. 
 
-[Ostoreskontran määrittäminen](accounts-payable-overview.md)
+[Ostoreskontran määrittäminen – yleiskatsaus](accounts-payable-overview.md)
 
 [Toimittajan laskujen kirjanpidolliset jaot ja alareskontran kirjauskansioviennit](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
@@ -51,7 +51,7 @@ Määritä toimittajaryhmät, toimittajat, kirjausprofiilit ja erilaiset maksuva
 
 Ostoreskontran avulla voit tarkastella laskuja ja toimittajille suoritettavia maksuja.
 
-[Ostoreskontran laskujen täsmäytys](accounts-payable-invoice-matching.md)
+[Ostoreskontran laskujen täsmäytys – yleiskatsaus](accounts-payable-invoice-matching.md)
 
 [Toimittajan kirjausprofiilit](vendor-posting-profiles.md)
 
@@ -61,7 +61,7 @@ Ostoreskontran avulla voit tarkastella laskuja ja toimittajille suoritettavia ma
 
 [Laskujen täsmäytys ja konsernin sisäiset ostotilaukset](invoice-matching-intercompany-purchase-orders.md)
 
-[Ristiriitojen selvittäminen laskusummien täsmäytyksen aikana](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[Ristiriitojen selvittäminen laskusummien täsmäytyksen aikana – yleiskatsaus](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
 [Toimittajan laskujen ja laskujen hyväksynnän kirjauskansioiden oletusvastatilit](default-offset-accounts-vendor-invoice-journals.md)
 
@@ -93,11 +93,11 @@ Määritä järjestelmässä määritetty maksutyyppi, kuten sekki, sähköinen 
 
 [Käteisalennuksen käyttäminen käteisalennuskauden ulkopuolella](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[Toimittajan sekkien sähköinen raportointi](electronic-reporting-sample-vendor-checks.md)
+[Toimittajan näytesekkien sähköinen raportointi](electronic-reporting-sample-vendor-checks.md)
 
 [Käänteinen toimittajamaksu](reverse-vendor-payment.md)
 
-[Ennakkomaksulaskut ja ennakkomaksujen yleiskatsaus](prepayments-invoices-vs-prepayments.md)
+[Ennakkomaksulaskujen ja ennakkomaksujen vertailu](prepayments-invoices-vs-prepayments.md)
 
 [Ostoreskontran keskitetyt maksut](centralized-payments-accounts-payable.md)
 
@@ -107,13 +107,13 @@ Seuraavissa ohjeaiheissa on tietoa tilityksistä. Tilitys tarkoittaa maksujen ti
 
 [Tilityksen määrittäminen](../cash-bank-management/configure-settlement.md)
 
-[Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[Toimittajan osamaksun tilittäminen ennen alennuspäivämäärää, kun viimeinen maksu suoritetaan alennuspäivämäärän jälkeen](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
 [Toimittajan hyvityslaskujen alennuksia sisältävän toimittajan osamaksun tilittäminen](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
 [Useita alennuskausia sisältävän toimittajan osamaksun tilittäminen](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[Toimittajan osamaksun tai viimeisen maksun tilittäminen ennen alennusta](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[Toimittajan osamaksun ja viimeisen maksun tilittäminen kokonaan ennen alennuspäivämäärää](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
 [Yksi tosite useille asiakas- tai toimittajatietueille](single-voucher-multiple-customer-vendor-records.md)
 
@@ -123,7 +123,7 @@ Seuraavissa ohjeaiheissa on tietoa tilityksistä. Tilitys tarkoittaa maksujen ti
 
 #### <a name="whats-new-and-in-development"></a>Uudet ja kehitteillä olevat toiminnot
 
-Siirry [Microsoft Dynamics 365:n julkaisutietoihin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä uudet suunnitteilla olevat toiminnot. 
+Siirry [Microsoft Dynamics 365:n julkaisusuunnitelmiin](https://go.microsoft.com/fwlink/?linkid=2010158), kun haluat nähdä uudet suunnitteilla olevat toiminnot. 
 
 #### <a name="blogs"></a>Blogit
 

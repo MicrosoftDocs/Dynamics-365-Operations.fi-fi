@@ -3,7 +3,7 @@ title: Eräseurannassa olevien nimikkeiden parannettu käsitteleminen
 description: Tässä aiheessa kuvataan parannuksia, jotka on tehty eräseurannassa olevien nimikkeiden vähittäismyynnin laskelman kirjausprosessin aikana tehtävää erien käsittelyä varten.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 11/04/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,19 +18,17 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 70d78f86f1df057d14d821a8c967e62eeeb4ff92
-ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
+ms.openlocfilehash: 5bbddf649f66ded9588cdb1e3f43c75630dc248a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622547"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770160"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Eräseurannassa olevien nimikkeiden parannettu käsitteleminen
 
 
 [!include [banner](includes/banner.md)]
-
-[!include [banner](includes/preview-banner.md)]
 
 
 Retail Point of Sale (POS) -sovelluksen myyntipisteen eränumeroita ei voi tallentaa eräseurannassa oleville nimikkeille myynnin aikana. Kun myynti kirjataan pääkonttorissa asiakastilausten tai laskelman kirjauksen avulla, Microsoft Dynamics -järjestelmä kuitenkin odottaa, että tietyissä määrityksissä on sallitut eränumerot eräseurannassa oleville nimikkeille ja että niitä käytetään laskutusprosessin aikana.

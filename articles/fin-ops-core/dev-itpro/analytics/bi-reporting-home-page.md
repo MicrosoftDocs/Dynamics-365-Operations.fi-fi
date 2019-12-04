@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92fec444834be8ca4943932730b94beb8a1902e7
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536844"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771561"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Yritystietojen ja raportoinnin aloitussivu
 
@@ -48,18 +48,18 @@ Lisätietoja on seuraavissa ohjeaiheissa:
 - [Power BI Embedded -integrointi](power-bi-embedded-integration.md)
 - [Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla](add-analytics-tab-workspaces.md)
 - [Analyysityötilojen ja raporttien suojaaminen Power BI Embeddedin avulla](secure-analytical-workspaces.md)
-- [Power BI -sisältö Finance and Operationsille](power-bi-home-page.md)
+- [Power BI -sisällön aloitussivu](power-bi-home-page.md)
 
-## <a name="business-documents-and-printing"></a>Liitetoiminta-asiakirjat ja tulostaminen
+## <a name="business-documents-and-printing"></a>Liiketoiminta-asiakirjat ja tulostaminen
 Liiketoimintatapahtumien tiedot tallennetaan ja välitetään usein raportointiratkaisujen avulla. Raportointiratkaisun onkin tämän vuoksi voitava tuottaa liiketoimintatiedot konkreettisessa muodossa käytössä olevilla laitteilla, kuten verkkotulostimilla. Liiketoiminta-asiakirjoja ovat esimerkiksi myyntilaskut ja sekit.
 
 [![Liiketoiminta-asiakirjaesimerkkejä](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
 Lisätietoja on seuraavissa ohjeaiheissa:
 
-- [Document Reporting Services -palveluiden yleiskatsaus](document-reporting-services.md)
-- [Tulostaminen Finance and Operations -sovelluksissa](print-documents.md)
-- [Verkkotulostimien käyttöönotto asentamalla asiakirjareitityksen agentti](install-document-routing-agent.md)
+- [Asiakirjojen raportointipalvelut](document-reporting-services.md)
+- [Asiakirjojen tulostuksen yleiskatsaus](print-documents.md)
+- [Verkkotulostuksen käyttöönotto asentamalla asiakirjan reititysagentti](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Sähköinen raportointi
 Sähköisellä raportointityökalulla (ER-työkalulla) voi määrittää sähköisten asiakirjojen muodot eri maiden tai alueiden lakisääteisten vaatimusten mukaisiksi. Sähköisiä raportointisovelluksia käytetään esimerkiksi tilintarkastuksessa, veroraportoinnissa ja sähköisessä laskutuksessa.
@@ -68,9 +68,9 @@ Sähköisellä raportointityökalulla (ER-työkalulla) voi määrittää sähkö
 
 Lisätietoja on seuraavissa ohjeaiheissa:
 
-- [Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
-- [Sähköisen raportoinnin määritysten elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
-- [Sähköisen raportoinnin määritysten luominen](electronic-reporting-configuration.md)
+- [Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
+- [Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Sähköisen raportoinnin (ER) määritysten luominen](electronic-reporting-configuration.md)
 
 ## <a name="financial-reporting"></a>Taloushallinnon raportointi
 Käytettävissä on taloushallinnon vakioraportteja, joissa käytetään päätilin oletusluokkia. Voit luoda tai muokata raporttien suunnitteluohjelmalla perinteisiä raportteja, kuten tuloslaskelmia ja taseita. Voit sitten jakaa tulokset organisaation muiden jäsenten kanssa. Taloushallinnon raportteja ovat esimerkiksi taseet, kassavirta ja pääkirjan yhteenveto vuosittain.
@@ -79,14 +79,14 @@ Käytettävissä on taloushallinnon vakioraportteja, joissa käytetään pääti
 
 Lisätietoja on seuraavissa ohjeaiheissa:
 
-- [Finance and Operationsin taloushallinnon raportointi](financial-reporting-intro.md)
-- [Raportin luominen](generate-financial-report.md)
+- [Taloushallinnon raportointi](financial-reporting-intro.md)
+- [Raporttien luonti](generate-financial-report.md)
 - [Raportin komponentit](financial-report-components.md)
 
 ## <a name="technical-reference-reports"></a>Teknisten tietojen raportit
 Seuraavat raportit sisältävät viitetietoja objekteista:
 
-- [Tietoyksiköiden raportti](../data-entities/data-entities-report.md)
+- [Tietojen etsiminen vakiotietoyksiköistä](../data-entities/data-entities-report.md)
 - [Käyttöoikeuskoodien ja määritysavainten raportti](../sysadmin/license-codes-configuration-keys-report.md)
-- [SQL Server Reporting Services -raportit](SSRS-report.md)
+- [Käytettävissä olevat SQL Server Reporting Servicesin (SSRS) raportit](SSRS-report.md)
 - [Työnkulkutyyppien raportti](../../fin-ops/organization-administration/workflow-types-report.md)

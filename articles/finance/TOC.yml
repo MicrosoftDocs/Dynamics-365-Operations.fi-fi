@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Kokeiluversioiden tilaaminen
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+            - name: Asiakasmaksujen tiedot (esiversio)
+              href: accounts-receivable/payment-insights-overview.md
             - name: Yhden version palvelupäivitykset
               items:
                 - name: Yhden version palvelupäivitykset – yleiskatsaus
@@ -2239,6 +2241,8 @@
                       href: localizations/rus-currency-sale-purchase.md
                     - name: Käteiskassa
                       href: localizations/emea-petty-cash.md
+                    - name: Käteisvarat – paikalliset ensisijaiset lomakkeet ja yhdistetyt raportit
+                      href: localizations/rus-local-primary-forms-and-unified-reports.md
                 - name: Alv
                   items:
                     - name: 'Myynnin ALV:n paikallinen kirjaus'
@@ -2255,6 +2259,8 @@
                       href: localizations/rus-sales-books-purchase-books.md
                     - name: Ennakkomaksujen hallinta
                       href: localizations/rus-prepayments-management.md
+                    - name: Saapuvien arvonlisäverojen palauttaminen
+                      href: localizations/rus-incoming-VAT-restoring.md
                 - name: Käyttöomaisuuserät
                   items:
                     - name: Käyttöomaisuuserien hallinta
@@ -2313,6 +2319,14 @@
                       href: localizations/rus-cash-flow.md
                     - name: Muiden kulujen kohdistaminen suhteessa painoon ja tilavuuteen
                       href: localizations/rus-miscellaneous-charges.md
+                    - name: Kolmannen osapuolen muut kulut
+                      href: localizations/rus-third-party-misc-charges.md
+                - name: Varasto
+                  items:
+                    - name: Toimittajalta matkalla olevat tavarat
+                      href: localizations/rus-goods-transit-vendor.md
+                    - name: Tulli-ilmoitusnumerot
+                      href: localizations/rus-custom-declaration-number.md
                 - name: Raportointi
                   items:
                     - name: Taloushallinnon raportointi
@@ -2335,6 +2349,8 @@
                       href: localizations/rus-officials.md
                     - name: Yrityksen osastot
                       href: localizations/rus-company-divisions.md
+                    - name: 'Venäjän osoitemuodot ja tuonti FIAS:sta'
+                      href: localizations/rus-russian-address-format-and-import-from-FIAS.md
                 - name: Lykkäykset
                   items:
                     - name: Aseta lykkäykset
@@ -2869,6 +2885,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: 'Konfiguraatioiden tuonti RCS:stä'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Oppaat
+                  items:
+                    - name: Käytä sähköisen raportoinnin (ER) mallimäärityksissä JOIN-tietolähteitä saadaksesi tietoja useista sovellustaulukoista
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                    - name: Maakontekstista riippuvaisten ER-mallimääritysten määrittäminen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
                 - name: Sähköisten raportointiratkaisujen käyttäminen Finance and Operations -palvelussa
                   items:
                     - name: Kehyksen määrittäminen
@@ -2903,6 +2925,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                    - name: Uusien kenttien lisääminen liiketoiminta-asiakirjan malliin Microsoft Excelissä
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
                 - name: ER-kehyksen ohjelmointirajapinta
                   items:
                     - name: Sähköisen raportoinnin toimintoluettelon laajentaminen
