@@ -17,44 +17,45 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d84dd9c22738a1b4fc5edb5331d4aa213b82facb
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: a6d916f87ca30aa7405a51841e56ab31bbe31ac8
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551930"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832601"
 ---
-# <a name="user-not-found-in-people-picker-in-attract-or-onboard"></a><span data-ttu-id="a616c-103">Käyttäjää ei löydetä henkilöiden valitsimessa Attractissa tai Onboardissa</span><span class="sxs-lookup"><span data-stu-id="a616c-103">User not found in People Picker in Attract or Onboard</span></span>
+# <a name="user-not-found-in-people-picker-in-attract-or-onboard"></a><span data-ttu-id="713b9-103">Käyttäjää ei löydetä henkilöiden valitsimessa Attractissa tai Onboardissa</span><span class="sxs-lookup"><span data-stu-id="713b9-103">User not found in People Picker in Attract or Onboard</span></span>
+
 [!include [banner](includes/banner.md)]
 
-## <a name="issue"></a><span data-ttu-id="a616c-104">Lähetä</span><span class="sxs-lookup"><span data-stu-id="a616c-104">Issue</span></span>
+## <a name="issue"></a><span data-ttu-id="713b9-104">Lähetä</span><span class="sxs-lookup"><span data-stu-id="713b9-104">Issue</span></span>
 
-<span data-ttu-id="a616c-105">Tietyt vuokraajan kelvolliset Microsoft Azure Active Directory (Azure AD) -käyttäjät eivät tule näkyviin, kun heitä haetaan nimellä henkilöiden valitsimessa Dynamics 365 Talent: Attract- tai Dynamics 365 Talent: Onboard -sovelluksissa.</span><span class="sxs-lookup"><span data-stu-id="a616c-105">Certain valid users in Microsoft Azure Active Directory (Azure AD) for the tenant do not appear when searching for the name in the People Picker in Dynamics 365 Talent: Attract or Dynamics 365 Talent: Onboard.</span></span>
+<span data-ttu-id="713b9-105">Tietyt vuokraajan kelvolliset Microsoft Azure Active Directory (Azure AD) -käyttäjät eivät tule näkyviin, kun heitä haetaan nimellä henkilöiden valitsimessa Dynamics 365 Talent: Attract- tai Dynamics 365 Talent: Onboard -sovelluksissa.</span><span class="sxs-lookup"><span data-stu-id="713b9-105">Certain valid users in Microsoft Azure Active Directory (Azure AD) for the tenant do not appear when searching for the name in the People Picker in Dynamics 365 Talent: Attract or Dynamics 365 Talent: Onboard.</span></span>
 
-## <a name="cause"></a><span data-ttu-id="a616c-106">Syy</span><span class="sxs-lookup"><span data-stu-id="a616c-106">Cause</span></span>
+## <a name="cause"></a><span data-ttu-id="713b9-106">Syy</span><span class="sxs-lookup"><span data-stu-id="713b9-106">Cause</span></span>
 
-<span data-ttu-id="a616c-107">Tietyn tyyppisiä käyttäjiä ei tueta tällä hetkellä Attract- ja Onboard-sovelluksissa.</span><span class="sxs-lookup"><span data-stu-id="a616c-107">Certain user types are not currently supported in Attract and Onboard.</span></span> <span data-ttu-id="a616c-108">Varmista, että käyttäjä ei ole Azure AD:n yritysten välinen vieraileva käyttäjä.</span><span class="sxs-lookup"><span data-stu-id="a616c-108">Verify that the user is not an Azure AD Business to Business (B2B) guest user.</span></span> <span data-ttu-id="a616c-109">Käyttäjätyyppiä koskeva tiedot sijaitsevat Azure-portaalini Azure Active Directory -lehdessä.</span><span class="sxs-lookup"><span data-stu-id="a616c-109">"User Type" information can be found in the Azure Active Directory blade on the Azure portal.</span></span>
+<span data-ttu-id="713b9-107">Tietyn tyyppisiä käyttäjiä ei tueta tällä hetkellä Attract- ja Onboard-sovelluksissa.</span><span class="sxs-lookup"><span data-stu-id="713b9-107">Certain user types are not currently supported in Attract and Onboard.</span></span> <span data-ttu-id="713b9-108">Varmista, että käyttäjä ei ole Azure AD:n yritysten välinen vieraileva käyttäjä.</span><span class="sxs-lookup"><span data-stu-id="713b9-108">Verify that the user is not an Azure AD Business to Business (B2B) guest user.</span></span> <span data-ttu-id="713b9-109">Käyttäjätyyppiä koskeva tiedot sijaitsevat Azure-portaalini Azure Active Directory -lehdessä.</span><span class="sxs-lookup"><span data-stu-id="713b9-109">"User Type" information can be found in the Azure Active Directory blade on the Azure portal.</span></span>
 
-<span data-ttu-id="a616c-110">Lisätietoja yritysten välisestä Azuresta on kohdassa [Vierailevan käyttäjän käyttöoikeudet yritysten välisessä Azure Active Directoryssa](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).</span><span class="sxs-lookup"><span data-stu-id="a616c-110">For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).</span></span>
+<span data-ttu-id="713b9-110">Lisätietoja yritysten välisestä Azuresta on kohdassa [Vierailevan käyttäjän käyttöoikeudet yritysten välisessä Azure Active Directoryssa](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).</span><span class="sxs-lookup"><span data-stu-id="713b9-110">For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).</span></span>
 
-<span data-ttu-id="a616c-111">Tietyillä muilla kuin yritysten välisillä käyttäjillä **Käyttäjä**-objektin käyttäjätyyppiominaisuus voi olla vaillinainen.</span><span class="sxs-lookup"><span data-stu-id="a616c-111">For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object.</span></span> <span data-ttu-id="a616c-112">Se voidaan tarkistaa ja korjata Azure AD Powershell -moduulissa.</span><span class="sxs-lookup"><span data-stu-id="a616c-112">This can be verified and fixed using the Azure AD Powershell module.</span></span> <span data-ttu-id="a616c-113">Lisätietoja on kohdassa [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).</span><span class="sxs-lookup"><span data-stu-id="a616c-113">For more information, see [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).</span></span>
+<span data-ttu-id="713b9-111">Tietyillä muilla kuin yritysten välisillä käyttäjillä **Käyttäjä**-objektin käyttäjätyyppiominaisuus voi olla vaillinainen.</span><span class="sxs-lookup"><span data-stu-id="713b9-111">For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object.</span></span> <span data-ttu-id="713b9-112">Se voidaan tarkistaa ja korjata Azure AD Powershell -moduulissa.</span><span class="sxs-lookup"><span data-stu-id="713b9-112">This can be verified and fixed using the Azure AD Powershell module.</span></span> <span data-ttu-id="713b9-113">Lisätietoja on kohdassa [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).</span><span class="sxs-lookup"><span data-stu-id="713b9-113">For more information, see [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).</span></span>
 
-## <a name="resolution"></a><span data-ttu-id="a616c-114">Ratkaisu</span><span class="sxs-lookup"><span data-stu-id="a616c-114">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="713b9-114">Ratkaisu</span><span class="sxs-lookup"><span data-stu-id="713b9-114">Resolution</span></span>
 
-<span data-ttu-id="a616c-115">Voit ratkaista ongelman seuraavien ohjeiden mukaisesti. Tarvitset kuitenkin Azure Active Directory -vuokraajan yleisen järjestelmänvalvojan käyttöoikeudet tai **User.ReadWrite.All**-käyttöoikeudet.</span><span class="sxs-lookup"><span data-stu-id="a616c-115">To complete the following steps to resolve the issue, you will need to have "Global Administrator" permissions on the Azure Active Directory tenant or permissions for **User.ReadWrite.All**.</span></span>
+<span data-ttu-id="713b9-115">Voit ratkaista ongelman seuraavien ohjeiden mukaisesti. Tarvitset kuitenkin Azure Active Directory -vuokraajan yleisen järjestelmänvalvojan käyttöoikeudet tai **User.ReadWrite.All**-käyttöoikeudet.</span><span class="sxs-lookup"><span data-stu-id="713b9-115">To complete the following steps to resolve the issue, you will need to have "Global Administrator" permissions on the Azure Active Directory tenant or permissions for **User.ReadWrite.All**.</span></span>
 
-<span data-ttu-id="a616c-116">Tarkista sen käyttäjän käyttäjätyyppi, jota ongelma koskee.</span><span class="sxs-lookup"><span data-stu-id="a616c-116">To verify the "User Type" for the affected user.</span></span>
+<span data-ttu-id="713b9-116">Tarkista sen käyttäjän käyttäjätyyppi, jota ongelma koskee.</span><span class="sxs-lookup"><span data-stu-id="713b9-116">To verify the "User Type" for the affected user.</span></span>
 
 ```
 PS C:\>Get-AzureADUser -ObjectId "testUpn@tenant.com"
 ```
-<span data-ttu-id="a616c-117">Komento palauttaa seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="a616c-117">The command returns the following information.</span></span>
+<span data-ttu-id="713b9-117">Komento palauttaa seuraavat tiedot:</span><span class="sxs-lookup"><span data-stu-id="713b9-117">The command returns the following information.</span></span>
 ```
 ObjectId                             DisplayName UserPrincipalName      UserType
 --------                             ----------- -----------------      --------
 5e8b0f4d-2cd4-4e17-9467-b0f6a5c0c4d0 New user    testUpn@tenant.com     
 ```
-<span data-ttu-id="a616c-118">Katso, mikä on käyttäjän **UserType**-ominaisuus.</span><span class="sxs-lookup"><span data-stu-id="a616c-118">Note the **UserType** property on the user.</span></span> <span data-ttu-id="a616c-119">Jos **UserType** on tyhjä eikä esimerkiksi Jäsen tai Vieras, päivitä **UserType** seuraavalla komennolla.</span><span class="sxs-lookup"><span data-stu-id="a616c-119">If the **UserType** is blank, for example not "Member" or "Guest", update the **UserType** using the following command.</span></span>
+<span data-ttu-id="713b9-118">Katso, mikä on käyttäjän **UserType**-ominaisuus.</span><span class="sxs-lookup"><span data-stu-id="713b9-118">Note the **UserType** property on the user.</span></span> <span data-ttu-id="713b9-119">Jos **UserType** on tyhjä eikä esimerkiksi Jäsen tai Vieras, päivitä **UserType** seuraavalla komennolla.</span><span class="sxs-lookup"><span data-stu-id="713b9-119">If the **UserType** is blank, for example not "Member" or "Guest", update the **UserType** using the following command.</span></span>
 
 ```
 PS C:\>Set-AzureADUser -ObjectId "testUpn@tenant.com" -UserType Member

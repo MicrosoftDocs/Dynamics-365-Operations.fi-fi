@@ -18,58 +18,58 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2aa0e5200ff2a6822e631c72124335e2dc556c14
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ed0800c4a650233190c6a33b1690790f0e2bf051
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552112"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814095"
 ---
-# <a name="create-service-task-relations"></a><span data-ttu-id="5ac24-103">Huoltotehtävän suhteiden luominen</span><span class="sxs-lookup"><span data-stu-id="5ac24-103">Create service task relations</span></span>    
+# <a name="create-service-task-relations"></a><span data-ttu-id="70b89-103">Huoltotehtävän suhteiden luominen</span><span class="sxs-lookup"><span data-stu-id="70b89-103">Create service task relations</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="5ac24-104">Voi liittää huoltotehtäviä huoltosopimuksiin tai huoltotilauksiin kuvataksesi sopimuksen tai tilauksen huoltotehtävää.</span><span class="sxs-lookup"><span data-stu-id="5ac24-104">You can associate service tasks with service agreements or service orders in order to describe the service task to be completed for the agreement or order.</span></span> <span data-ttu-id="5ac24-105">Sekä teknikot että asiakkaat näkevät nämä tiedot.</span><span class="sxs-lookup"><span data-stu-id="5ac24-105">This information is available to service technicians and customers.</span></span>
+<span data-ttu-id="70b89-104">Voi liittää huoltotehtäviä huoltosopimuksiin tai huoltotilauksiin kuvataksesi sopimuksen tai tilauksen huoltotehtävää.</span><span class="sxs-lookup"><span data-stu-id="70b89-104">You can associate service tasks with service agreements or service orders in order to describe the service task to be completed for the agreement or order.</span></span> <span data-ttu-id="70b89-105">Sekä teknikot että asiakkaat näkevät nämä tiedot.</span><span class="sxs-lookup"><span data-stu-id="70b89-105">This information is available to service technicians and customers.</span></span>
 
-## <a name="create-a-relation-with-a-service-agreement"></a><span data-ttu-id="5ac24-106">Suhteen luominen huoltosopimukseen</span><span class="sxs-lookup"><span data-stu-id="5ac24-106">Create a relation with a service agreement</span></span>
+## <a name="create-a-relation-with-a-service-agreement"></a><span data-ttu-id="70b89-106">Suhteen luominen huoltosopimukseen</span><span class="sxs-lookup"><span data-stu-id="70b89-106">Create a relation with a service agreement</span></span>
 
-1.  <span data-ttu-id="5ac24-107">Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.</span><span class="sxs-lookup"><span data-stu-id="5ac24-107">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
+1.  <span data-ttu-id="70b89-107">Valitse **Palvelunhallinta** \> **Yleinen** \> **Palvelusopimukset** \> **Palvelusopimukset**.</span><span class="sxs-lookup"><span data-stu-id="70b89-107">Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.</span></span>
 
-2.  <span data-ttu-id="5ac24-108">Valitse nykyinen huoltosopimus tai luo uusi huoltosopimus.</span><span class="sxs-lookup"><span data-stu-id="5ac24-108">Select an existing service agreement, or create a new service agreement.</span></span>
+2.  <span data-ttu-id="70b89-108">Valitse nykyinen huoltosopimus tai luo uusi huoltosopimus.</span><span class="sxs-lookup"><span data-stu-id="70b89-108">Select an existing service agreement, or create a new service agreement.</span></span>
 
-3.  <span data-ttu-id="5ac24-109">Valitse toimintoruudussa **Huoltotehtävät**-painike.</span><span class="sxs-lookup"><span data-stu-id="5ac24-109">On the Action Pane, click the **Service tasks** button.</span></span>
+3.  <span data-ttu-id="70b89-109">Valitse toimintoruudussa **Huoltotehtävät**-painike.</span><span class="sxs-lookup"><span data-stu-id="70b89-109">On the Action Pane, click the **Service tasks** button.</span></span>
 
-4.  <span data-ttu-id="5ac24-110">Paina **Huoltotehtävät**-lomakkeessa CTRL + N luodaksesi uuden rivin, ja valitse sitten huoltosopimukseen liitettävä huoltotehtävä **Huoltotehtävä**-luettelosta.</span><span class="sxs-lookup"><span data-stu-id="5ac24-110">On the **Service tasks** form, press CTRL+N to create a new line, and then select a service task from the **Service task** list to attach the service task to the service agreement.</span></span>
+4.  <span data-ttu-id="70b89-110">Paina **Huoltotehtävät**-lomakkeessa CTRL + N luodaksesi uuden rivin, ja valitse sitten huoltosopimukseen liitettävä huoltotehtävä **Huoltotehtävä**-luettelosta.</span><span class="sxs-lookup"><span data-stu-id="70b89-110">On the **Service tasks** form, press CTRL+N to create a new line, and then select a service task from the **Service task** list to attach the service task to the service agreement.</span></span>
 
-5.  <span data-ttu-id="5ac24-111">Lisää **Kuvaus** -välilehden vapaatekstikenttiin mahdolliset sisäisten tai ulkoisten huomautusten kuvaukset.</span><span class="sxs-lookup"><span data-stu-id="5ac24-111">On the **Description** tab, enter any internal or external note descriptions in the free text fields.</span></span>
+5.  <span data-ttu-id="70b89-111">Lisää **Kuvaus** -välilehden vapaatekstikenttiin mahdolliset sisäisten tai ulkoisten huomautusten kuvaukset.</span><span class="sxs-lookup"><span data-stu-id="70b89-111">On the **Description** tab, enter any internal or external note descriptions in the free text fields.</span></span>
 
-6.  <span data-ttu-id="5ac24-112">Tallenna tietue sulkemalla lomake.</span><span class="sxs-lookup"><span data-stu-id="5ac24-112">Close the form to save the record.</span></span>
+6.  <span data-ttu-id="70b89-112">Tallenna tietue sulkemalla lomake.</span><span class="sxs-lookup"><span data-stu-id="70b89-112">Close the form to save the record.</span></span>
 
-<span data-ttu-id="5ac24-113">Toista tämä toimenpide, kunnes olet luonut huoltosopimuksen kaikki tarvittavat huoltotehtäväsuhteet.</span><span class="sxs-lookup"><span data-stu-id="5ac24-113">Repeat this procedure until you have created all the necessary service task relations for the service agreement.</span></span> <span data-ttu-id="5ac24-114">Voit nyt määrittää nämä huoltotehtävät liittyville huoltoriveille.</span><span class="sxs-lookup"><span data-stu-id="5ac24-114">You can now specify these service tasks for any attached agreement lines.</span></span>
+<span data-ttu-id="70b89-113">Toista tämä toimenpide, kunnes olet luonut huoltosopimuksen kaikki tarvittavat huoltotehtäväsuhteet.</span><span class="sxs-lookup"><span data-stu-id="70b89-113">Repeat this procedure until you have created all the necessary service task relations for the service agreement.</span></span> <span data-ttu-id="70b89-114">Voit nyt määrittää nämä huoltotehtävät liittyville huoltoriveille.</span><span class="sxs-lookup"><span data-stu-id="70b89-114">You can now specify these service tasks for any attached agreement lines.</span></span>
 
-<span data-ttu-id="5ac24-115">Huoltosopimukselle luotavat huoltotehtäväsuhteet ovat käytettävissä kaikissa huoltotilauksissa, jotka liittyvät huoltosopimukseen.</span><span class="sxs-lookup"><span data-stu-id="5ac24-115">A service tasks relation that is created on a service agreement is available from all service orders that are attached to the service agreement.</span></span>
+<span data-ttu-id="70b89-115">Huoltosopimukselle luotavat huoltotehtäväsuhteet ovat käytettävissä kaikissa huoltotilauksissa, jotka liittyvät huoltosopimukseen.</span><span class="sxs-lookup"><span data-stu-id="70b89-115">A service tasks relation that is created on a service agreement is available from all service orders that are attached to the service agreement.</span></span>
 
-## <a name="create-a-relation-with-a-service-order"></a><span data-ttu-id="5ac24-116">Suhteen luominen huoltotilaukseen</span><span class="sxs-lookup"><span data-stu-id="5ac24-116">Create a relation with a service order</span></span>
+## <a name="create-a-relation-with-a-service-order"></a><span data-ttu-id="70b89-116">Suhteen luominen huoltotilaukseen</span><span class="sxs-lookup"><span data-stu-id="70b89-116">Create a relation with a service order</span></span>
 
-1.  <span data-ttu-id="5ac24-117">Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.</span><span class="sxs-lookup"><span data-stu-id="5ac24-117">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="70b89-117">Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.</span><span class="sxs-lookup"><span data-stu-id="70b89-117">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="5ac24-118">Valitse nykyinen huoltotilaus tai luo uusi huoltotilaus.</span><span class="sxs-lookup"><span data-stu-id="5ac24-118">Select an existing service order, or create a new service order.</span></span>
+2.  <span data-ttu-id="70b89-118">Valitse nykyinen huoltotilaus tai luo uusi huoltotilaus.</span><span class="sxs-lookup"><span data-stu-id="70b89-118">Select an existing service order, or create a new service order.</span></span>
 
-3.  <span data-ttu-id="5ac24-119">Valitse toimintoruudussa **Huoltotehtävät**-painike.</span><span class="sxs-lookup"><span data-stu-id="5ac24-119">On the Action Pane, click the **Service tasks** button.</span></span>
+3.  <span data-ttu-id="70b89-119">Valitse toimintoruudussa **Huoltotehtävät**-painike.</span><span class="sxs-lookup"><span data-stu-id="70b89-119">On the Action Pane, click the **Service tasks** button.</span></span>
 
-4.  <span data-ttu-id="5ac24-120">Paina **Huoltotehtävät**-lomakkeessa CTRL + N luodaksesi uuden rivin, ja valitse sitten huoltotilaukseen liitettävät huoltotehtävät **Huoltotehtävä**-luettelosta.</span><span class="sxs-lookup"><span data-stu-id="5ac24-120">From the **Service tasks** form, press CTRL+N to create a new line, and then select a service task from the **Service task** list to attach the service tasks to the service order.</span></span>
+4.  <span data-ttu-id="70b89-120">Paina **Huoltotehtävät**-lomakkeessa CTRL + N luodaksesi uuden rivin, ja valitse sitten huoltotilaukseen liitettävät huoltotehtävät **Huoltotehtävä**-luettelosta.</span><span class="sxs-lookup"><span data-stu-id="70b89-120">From the **Service tasks** form, press CTRL+N to create a new line, and then select a service task from the **Service task** list to attach the service tasks to the service order.</span></span>
 
-5.  <span data-ttu-id="5ac24-121">Lisää **Kuvaus** -välilehden vapaatekstikenttiin mahdolliset sisäisten tai ulkoisten huomautusten kuvaukset.</span><span class="sxs-lookup"><span data-stu-id="5ac24-121">On the **Description** tab, enter any internal or external note descriptions in the free text fields.</span></span>
+5.  <span data-ttu-id="70b89-121">Lisää **Kuvaus** -välilehden vapaatekstikenttiin mahdolliset sisäisten tai ulkoisten huomautusten kuvaukset.</span><span class="sxs-lookup"><span data-stu-id="70b89-121">On the **Description** tab, enter any internal or external note descriptions in the free text fields.</span></span>
 
-6.  <span data-ttu-id="5ac24-122">Tallenna tietue sulkemalla lomake.</span><span class="sxs-lookup"><span data-stu-id="5ac24-122">Close the form to save the record.</span></span>
+6.  <span data-ttu-id="70b89-122">Tallenna tietue sulkemalla lomake.</span><span class="sxs-lookup"><span data-stu-id="70b89-122">Close the form to save the record.</span></span>
 
-<span data-ttu-id="5ac24-123">Toista tämä toimenpide, kunnes olet luonut huoltotilauksen kaikki tarvittavat huoltotehtäväsuhteet.</span><span class="sxs-lookup"><span data-stu-id="5ac24-123">Repeat this procedure until you have created all the necessary service task relations for the service order.</span></span> <span data-ttu-id="5ac24-124">Kun luot huoltotilausrivejä, voit valita huoltotehtävän, jolle suhde luotiin.</span><span class="sxs-lookup"><span data-stu-id="5ac24-124">You can now select the service task for which you have created the relation when you create service order lines.</span></span>
+<span data-ttu-id="70b89-123">Toista tämä toimenpide, kunnes olet luonut huoltotilauksen kaikki tarvittavat huoltotehtäväsuhteet.</span><span class="sxs-lookup"><span data-stu-id="70b89-123">Repeat this procedure until you have created all the necessary service task relations for the service order.</span></span> <span data-ttu-id="70b89-124">Kun luot huoltotilausrivejä, voit valita huoltotehtävän, jolle suhde luotiin.</span><span class="sxs-lookup"><span data-stu-id="70b89-124">You can now select the service task for which you have created the relation when you create service order lines.</span></span>
 
-<span data-ttu-id="5ac24-125">Huoltotilaukselle luotavat huoltotehtäväsuhteet ovat käytettävissä kyseisessä huoltotilauksessa.</span><span class="sxs-lookup"><span data-stu-id="5ac24-125">Service task relations that are created on a service order are available on the specific service order.</span></span>
+<span data-ttu-id="70b89-125">Huoltotilaukselle luotavat huoltotehtäväsuhteet ovat käytettävissä kyseisessä huoltotilauksessa.</span><span class="sxs-lookup"><span data-stu-id="70b89-125">Service task relations that are created on a service order are available on the specific service order.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="5ac24-126">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="5ac24-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="70b89-126">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="70b89-126">See also</span></span>
 
-[<span data-ttu-id="5ac24-127">Huoltotehtävät </span><span class="sxs-lookup"><span data-stu-id="5ac24-127">Service tasks</span></span>](service-tasks.md)
+[<span data-ttu-id="70b89-127">Huoltotehtävien yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="70b89-127">Service tasks overview</span></span>](service-tasks.md)
 
 
   
