@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: fa2772db63332319c399999bd5f747b2ac729d9e
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: fb5073fe8db0b51c4ea378cac57097e15e88bf83
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653272"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814049"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
 
@@ -40,7 +40,7 @@ Prospektista käteiseksi -ratkaisu käyttää tietojen integrointitoimintoa Supp
 
 ## <a name="templates-and-tasks"></a>Mallit ja tehtävät
 
-Näet käytettävissä olevat mallit avaamalla [PowerApps-hallintakeskuksen](https://preview.admin.powerapps.com/dataintegration). Valitse **Projektit** ja valitse sitten julkisia malleja oikeassa yläkulmassa olevan **Uusi projekti** -kohdan avulla.
+Näet käytettävissä olevat mallit avaamalla [Power Apps-hallintakeskuksen](https://preview.admin.powerapps.com/dataintegration). Valitse **Projektit** ja valitse sitten julkisia malleja oikeassa yläkulmassa olevan **Uusi projekti** -kohdan avulla.
 
 Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoitaessa myyntilaskujen otsikot ja rivit Supply Chain Managementista Salesiin:
 
@@ -137,4 +137,4 @@ Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin y
 
 [Salesin yhteyshenkilöiden synkronointi suoraan Supply Chain Managementin yhteyshenkilöihin tai asiakkaisiin](contacts-template-mapping-direct.md)
 
-[Myyntitilausten otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin](sales-order-template-mapping-direct-two-ways.md)
+[Myyntitilausten synkronointi suoraan Salesin ja Supply Chain Managementin välillä](sales-order-template-mapping-direct-two-ways.md)

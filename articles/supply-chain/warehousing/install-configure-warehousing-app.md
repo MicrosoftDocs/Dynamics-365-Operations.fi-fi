@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
-ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
+ms.openlocfilehash: df0bc9ff2405cc2f370ea777a70e005a1ff338a0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2548965"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814947"
 ---
 # <a name="install-and-configure-the-warehousing-app-overview"></a>Varastointisovelluksen asentaminen ja määrittäminen – yleiskatsaus
 
@@ -62,15 +62,32 @@ Jotta sovellus toimisi tietyn Supply Chain Management -palvelimen kanssa, sinun 
 
 1.  Siirry selaimessa osoitteeseen <https://portal.azure.com>.
 2.  Kirjoita nimi ja salasana käyttäjälle, jolla on Azure‑tilauksen käyttöoikeus.
-3.  Valitse Azure Portalin vasemmassa siirtymisruudussa **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+3.  Valitse Azure-portaalin vasemmassa siirtymisruudussa **Azure Active Directory**.
+
+    [![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+
 4.  Varmista, että Supply Chain Management käyttää kyseistä Active Directory -esiintymää.
-5.  Valitse luettelossa **sovelluksen rekisteröinnit**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+5.  Valitse luettelossa **sovelluksen rekisteröinnit**. 
+
+    [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+
 6.  Valitse yläruudussa **Uusi rekisteröinti**. Ohjattu **Rekisteröi sovellus** -toiminto käynnistyy.
-7.  Kirjoita sovelluksen nimi ja valitse **Vain tämän organisaatiohakemiston tilit**. Valitse **Rekisteröi**.  [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
-8.  Uusi sovelluksen rekisteröinti avautuu. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+7.  Kirjoita sovelluksen nimi ja valitse **Vain tämän organisaatiohakemiston tilit**. Valitse **Rekisteröi**.  
+
+    [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+
+8.  Uusi sovelluksen rekisteröinti avautuu. 
+
+    [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+
 9.  Muista **sovelluksen tunnus**, sillä tarvitse sitä myöhemmin. **Sovelluksen tunnusta** kutsutaan myöhemmin **asiakastunnukseksi**.
-10. Valitse **Hallinta**-osiossa **Varmenne ja salaisuudet**. Valitse **Uusi asiakkaan salaisuus**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
-11. Luo avain antamalla avaimen kuvaus ja kesto **salasanojen** osiossa. Valitse **Lisää** ja kopioi avain. Tähän avaimeen viitataan myöhemmin nimellä **Asiakkaan salasana**. [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
+10. Valitse **Hallinta**-osiossa **Varmenne ja salaisuudet**. Valitse **Uusi asiakkaan salaisuus**. 
+
+    [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
+
+11. Luo avain antamalla avaimen kuvaus ja kesto **salasanojen** osiossa. Valitse **Lisää** ja kopioi avain. Tähän avaimeen viitataan myöhemmin nimellä **Asiakkaan salasana**. 
+
+    [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Supply Chain Managementin käyttäjätilin luominen ja määrittäminen
 Jotta Supply Chain Management voisi käyttää Azure AD -sovellustasi, sinun on suoritettava seuraavat määritysvaiheet:
@@ -78,28 +95,47 @@ Jotta Supply Chain Management voisi käyttää Azure AD -sovellustasi, sinun on 
 1.  Luo käyttäjä, joka vastaa varastointisovelluksen käyttäjän tunnistetietoja.
     1.  Valitse **Järjestelmän hallinta** &gt; **Yhteiset** &gt; **Käyttäjät**.
     2.  Luo uusi käyttäjä.
-    3.  Määritä Warehouse-mobiililaitteen käyttäjä, kuten seuraavassa kuvakaappauksessa. [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
+    3.  Määritä Warehouse-mobiililaitteen käyttäjä, kuten seuraavassa kuvakaappauksessa. 
+    
+        [![wh-09-add-user-security-role](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
 2.  Liitä Azure Active Directory -sovelluksesi Warehousing-sovelluksen käyttäjään.
     1.  Valitse Supply Chain Managementissa **Järjestelmän hallinta** &gt; **Asetukset** &gt; **Azure Active Directory -sovellukset**.
     2.  Luo uusi rivi.
-    3.  Anna **Asiakastunnus** (saatu edellisessä osassa), anna sille nimi ja valitse aiemmin luotu käyttäjä. Suosittelemme kaikkien laitteiden merkitsemistä niin, että voit helposti poistaa niiden Supply Chain Managementin käyttöoikeuden tällä sivulla siltä varalta, että ne ovat kadonneet. [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
+    3.  Anna **Asiakastunnus** (saatu edellisessä osassa), anna sille nimi ja valitse aiemmin luotu käyttäjä. Suosittelemme kaikkien laitteiden merkitsemistä niin, että voit helposti poistaa niiden Supply Chain Managementin käyttöoikeuden tällä sivulla siltä varalta, että ne ovat kadonneet. 
+    
+        [![wh-10-ad-applications-form](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
 ## <a name="configure-the-application"></a>Määritä sovellus
 Sinun on määritettävä sovellus laitteessa muodostaaksesi yhteyden Supply Chain Management -palvelimeen Azure AD -sovelluksen kautta. Toimi seuraavasti.
 
 1.  Siirry sovelluksessa kohtaan **Yhteysasetukset**.
-2.  Tyhjennä **Demotila**-kenttä. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+2.  Tyhjennä **Demotila**-kenttä. <br>
+
+    [![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+
 3.  Kirjoita seuraavat tiedot: 
     + **Azure Active -asiakkaan tunnus** – asiakkaan tunnus saadaan vaiheessa 9 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
     + **Azure Active directory -asiakkaan salasana** – Asiakkaan salasana saadaan vaiheessa 11 kohdassa Verkkopalvelusovelluksen luominen Active Directoryssa. 
-    + **Azure Active directory -resurssi** - Azure AD -resurssi esittää Supply Chain Managementin pääkansion URL-osoitetta. **Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
-    + **Azure Active directory -vuokraaja** - Azure AD -vuokraajaa käytetään Supply Chain Management -palvelimen kanssa: `https://login.windows.net/your-AD-tenant-ID`. Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
-    <br>**Huomautus**: Älä lopeta tätä kenttää vinoviivalla (/). 
-    + **Yritys** – Anna Supply Chain Managementin yritys, johon haluat muodostaa sovelluksella yhteyden. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
-4.  Valitse **Takaisin** -painike sovelluksen vasemmassa yläkulmassa. Sovellus muodostaa nyt yhteyden Supply Chain Management -palvelimeen ja fyysisen varaston työntekijän kirjautumisnäyttö avautuu. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+    + **Azure Active directory -resurssi** - Azure AD -resurssi esittää Supply Chain Managementin pääkansion URL-osoitetta. 
+    
+        > [!NOTE]
+        > Älä lopeta tätä kenttää vinoviivalla (/). 
 
-Lisätietoja varastointisovelluksen määrittämisestä lukemaan viivakoodeja mobiililaitteen kameralla on kohdassa [Viivakoodien lukeminen kameran avulla Dynamics 365 for Finance and Operationsin varastointisovelluksessa](scan-bar-codes-using-a-camera.md)
+    + **Azure Active directory -vuokraaja** - Azure AD -vuokraajaa käytetään Supply Chain Management -palvelimen kanssa: `https://login.windows.net/your-AD-tenant-ID`. Esimerkki: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
+    
+        > [!NOTE]
+        > Älä lopeta tätä kenttää vinoviivalla (/). 
+    
+    + **Yritys** – Anna Supply Chain Managementin yritys, johon haluat muodostaa sovelluksella yhteyden. <br>
+    
+    [![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
+
+4.  Valitse **Takaisin** -painike sovelluksen vasemmassa yläkulmassa. Sovellus muodostaa nyt yhteyden Supply Chain Management -palvelimeen ja fyysisen varaston työntekijän kirjautumisnäyttö avautuu.
+
+    [![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+
+Lisätietoja varastointisovelluksen määrittämisestä lukemaan viivakoodeja mobiililaitteen kameralla on kohdassa [Viivakoodien lukeminen kameran avulla Dynamics 365 for Finance and Operationsin varastointisovelluksessa](scan-bar-codes-using-a-camera.md).
 
 ## <a name="remove-access-for-a-device"></a>Poista laitteen käyttöoikeudet
 Jos laite katoaa tai vaarantuu, laitteen Supply Chain Managementin käyttöoikeuden on poistettava. Seuraavat vaiheet kuvaavat suositeltavaa prosessia käyttöoikeuksien poistamiseksi.

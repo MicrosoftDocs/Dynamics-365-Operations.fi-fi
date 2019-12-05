@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7b6b3cced92920ef5a253ca15793f26f244475fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186598"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771842"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Taloushallinnon konsolidoinnit ja valuutan muunto – yleiskatsaus
 
@@ -75,7 +75,7 @@ Edellisessä organisaatiorakenteessa tarvitset yrityksen Pohjois-Amerikan konsol
 
 Kun luot yrityksen, voit määrittää, käytetäänkö yritystä sekä konsolidointi- että eliminointiprosessiin tai vain toiseen prosessiin. Seuraavassa kuvassa yritystä käytetään kumpaankin prosessiin. Huomaa, ettet voi kirjata päivittäisiin kirjauskansioihin konsolidointiryrityksessä mutta voit kirjata ne eliminointiyrityksessä. Tämän vuoksi erillinen eliminointiyritys voi olla hyvä vaihtoehto.
 
-![Sekä konsolidointiin ja eliminointiin käytetty yritys](./media/sep-elimination-company.png "Sekä konsolidointiin ja eliminointiin käytetty yritys")
+![Sekä konsolidointiin että eliminointiin käytetty yritys](./media/sep-elimination-company.png "Sekä konsolidointiin että eliminointiin käytetty yritys")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Päätilit ja konsolidointitiliryhmät
 Sinun on valittava, miten tilikartat konsolidoidaan. Sinulla on konsolidointiprosessin aikana kolme vaihtoehtoa päätilien konsolidointiin.
@@ -84,14 +84,14 @@ Ensimmäinen vaihtoehto lähdeyritysten päätilien käyttäminen. Siinä tapauk
 
 Toinen vaihtoehto on oletusarvoisen konsolidointilin määrittäminen **Päätilit**-sivulla. Tili yhdistetään sitten konsolidointitiliin. Tämä vaihtoehto voi olla hyödyllinen, jos tilikarttoja on useita tai yhdistäminen on tehtävä pääkonttorin määrittämään tilikarttaan.
 
-![Päätilit-sivulla määritetty oletusarvoinen konsolidointitili](./media/main-accounts.png "Päätilit-sivulla määritetty oletusarvoinen konsolidointitili")
+![Päätilit-sivulla määritetty konsolidointitili](./media/main-accounts.png "Päätilit-sivulla määritetty konsolidointitili")
 
 Kolmas vaihtoehto on konsolidointitiliryhmien käyttäminen. Voit määrittää tarvittavan määrän konsolidointitiliryhmiä. Voit sitten yhdistää **Lisäkonsolidointitilit**-sivulla tilikartan päätilin ryhmän tarvitsemaan tiliin.
 
 ![Yhdistäminen Lisäkonsolidointitilit-sivulla](./media/additional-consolidation-accounts.png "Yhdistäminen Lisäkonsolidointitilit-sivulla")
 
 ## <a name="consolidating-online"></a>Konsolidointi verkossa
-Lisätietoja konsolidointitietojen antamisesta verkossa on kohdassa [Konsolidoi verkossa](./consolidate-online.md).
+Lisätietoja konsolidointitietojen antamisesta verkossa on kohdassa [Verkossa tapahtuva taloushallinnon konsolidointi](./consolidate-online.md).
 
 ## <a name="managing-consolidation-transactions"></a>Konsolidointitapahtumien hallinta
 Konsolidoinnin tarkasteluvaihtoehtoja on useita:
@@ -100,7 +100,7 @@ Konsolidoinnin tarkasteluvaihtoehtoja on useita:
 - Tarkastele **Pääkirja**-luettelosivua konsolidointiyrityksessä.
 - Tarkastele **Konsolidoinnit**-sivun konsolidointiluettelossa saldoja, jotka on luotu päivämäärän mukaan kunkin lähdeyrityksen jokaiselle kaudelle.
 
-    ![Konsolidoinnit-sivun konsolidointitapahtumat](./media/managing-consolidation-transactions.png "Konsolidoinnit-sivun konsolidointitapahtumat")
+    ![Konsolidointitapahtumat Konsolidoinnit-sivulla](./media/managing-consolidation-transactions.png "Konsolidointitapahtumat Konsolidoinnit-sivulla")
 
 Voit suorittaa konsolidoinnin uudelleen käsittelemällä sen. Vaihtoehtoisesti voit valita ensin **Poista tapahtumat** **Konsolidoinnit**-sivulla.
 

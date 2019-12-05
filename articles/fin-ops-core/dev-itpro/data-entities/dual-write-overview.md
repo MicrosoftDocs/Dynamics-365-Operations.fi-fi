@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d70bce4e47c05a7974c1b974fdca17682e5370aa
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550854"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772384"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Lähes reaaliaikainen tietojen integrointi Common Data Servicen kanssa
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Nykyisessä digitaalisessa maailmassa liiketoiminnan ekosysteemit käyttävät Microsoft Dynamics 365 -sovelluksia kokonaisuutena. Koska henkilöiden, asiakkaiden, operaatioiden ja esineiden internetin (IoT) laitteiden tiedot virtaavat yhteen lähteeseen, on mahdollista, että digitaaliset palautesilmukat ovat käytettävissä. Tämän kokemuksen saavuttamiseksi Finance and Operations -sovellusten ja Dynamics 365 -sovellusten välinen integrointi on välttämätöntä. Jotkin sovellukset perustuvat Common Data Serviceen. Finance and Operations -sovellusten tietojen ja Common Data Servicen integrointi antaa muille sovelluksille mahdollisuuden viestiä johdonmukaisesti ja sujuvasti Finance and Operationsin kanssa.
 
@@ -38,13 +36,16 @@ Finance and Operations -sovellukset ja Common Data Service mahdollistavat lähes
 
 ![Arkkitehtuurin yleiskuvauskaavio](media/dual-write-overview.jpg)
 
-Asiakkaille on tarjolla seuraavat arvoehdotukset:
+Käytössä on seuraavat arvoehdotukset:
 
 + [Organisaatiohierarkia Common Data Servicessa](dual-write-organization.md)
 + [Yrityksen käsite Common Data Servicessa](dual-write-company.md)
 + [Integroidut asiakkaiden päätiedot](dual-write-customer.md)
++ [Integroitu kirjanpito](dual-write-ledger.md)
++ [Yhtenäinen tuotekokemus](dual-write-product.md)
 + [Integroidut toimittajien päätiedot](dual-write-vendor.md)
-+ Yhdistetty päätuote
++ [Integroidut toimipaikat ja varastot](dual-write-sites-and-warehouses.md)
++ [Integroidut veron päätiedot](dual-write-tax.md)
 
 ## <a name="system-requirements"></a>Järjestelmävaatimukset
 

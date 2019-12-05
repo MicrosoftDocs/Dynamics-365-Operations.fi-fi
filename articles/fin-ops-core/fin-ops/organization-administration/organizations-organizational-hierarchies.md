@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a13223fb1034e5902061788cd9ea9cec55d69dc7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8c28c9e8c2573bcd82434f88daa8f9cadc946209
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190048"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812383"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Organisaatiot ja organisaatiohierarkiat – yleiskatsaus
 
@@ -67,4 +67,4 @@ Määritä organisaatiohierarkioita liiketoiminnan tarkastelemiseen ja raportoin
 
 Jokaiseen hierarkiaan liitetään tarkoitus. Hierarkian tarkoitus määrittää hierarkiaan sisällytettävät organisaatiotyypit. Tarkoitus määrittää myös käyttötilanteet, joissa hierarkiaa voidaan käyttää.
 
-Hierarkian organisaatiot voivat jakaa parametrejä, käytäntöjä ja tapahtumia. Organisaatio voi periä tai ohittaa ylätason organisaation parametrit. Jaetut perustiedot, kuten tuotteet ja osoitekirja, koskevat koko organisaatiota, mutta niitä ei voi ohittaa yksittäisissä organisaatioissa. Organisaatioiden ja hierarkioiden luominen edellyttää huolellista suunnittelua. Lisätietoja on aiheessa [Suunnittele organisaatiohierarkia](plan-organizational-hierarchy.md).
+Hierarkian organisaatiot voivat jakaa parametrejä, käytäntöjä ja tapahtumia. Organisaatio voi periä tai ohittaa ylätason organisaation parametrit. Jaetut perustiedot, kuten tuotteet ja osoitekirja, koskevat koko organisaatiota, mutta niitä ei voi ohittaa yksittäisissä organisaatioissa. Organisaatioiden ja hierarkioiden luominen edellyttää huolellista suunnittelua. Lisätietoja on kohdassa [Organisaatiohierarkian suunnitteleminen](plan-organizational-hierarchy.md).

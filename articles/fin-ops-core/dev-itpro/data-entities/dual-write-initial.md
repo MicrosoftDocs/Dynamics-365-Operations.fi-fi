@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 3110cb809558d168e9d97f640701b249caf73f6c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cf444ef1192fed3a6a49282da37374dd8c443356
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184505"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769634"
 ---
 # <a name="execution-order-for-initial-synchronization-of-finance-and-operations-apps-and-common-data-service"></a>Finance and Operations -sovellusten ja Common Data Servicen alkuperäisen synkronoinnin toteuttamisjärjestys
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Ennen kuin käytät tietojen integrointia, sinun on luotava asiakkaille, toimittajille ja yhteyshenkilöille tarvittavat alkuperäiset tiedot. Haluat esimerkiksi luoda uuden **Toimittajaryhmä**-nimikkeen ja määrittää sen **Maksuehdot**-arvoksi **Net30**. Varmista tässä tapauksessa ennen **Toimittajaryhmä**-nimikkeen luomisen yrittämistä, että **Net30** on sekä sovelluksessa että Common Data Servicessä. (Microsoft julkaisee tulevaisuudessa kaksoiskirjoitusalustan toiminnallisuuden nimeltä Alkusynkronointi. Tämä toiminto synkronoi tiedot kerran sovelluksen ja Common Data Servicen välillä osana kaksoiskirjoituksen määritystä.)
 

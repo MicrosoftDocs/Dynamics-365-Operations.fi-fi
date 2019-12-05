@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 448fceccb507bec5b60b686043a303c1997a9ac0
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 0b0be541416d2e4be78da223ec8e95c195d90bbc
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742666"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832629"
 ---
 # <a name="track-changes-in-recruiting-data"></a>Työhönoton tietojen muutosten seuraaminen
+
+[!include [banner](includes/banner.md)]
 
 Voit jäljittää ehdokkaisiin, avoimiin työpaikkoihin tai työsovelluksiin tehtyjä muutoksia käyttämällä valvonnan käsittelyä. Tämä on hyödyllistä raportointi- tai yhteensopivuussyistä.
 
@@ -31,7 +33,7 @@ Voit tarkastella jäljitettyjä tietoja Power BIssä OData-yhdistimen avulla. Li
 ## <a name="track-changes"></a>Muutosten seuranta
 Voit määrittää rekrytointitietojen muutosten seurannan seuraavasti:
 
-1. Valitse [PowerApps](https://web.powerapps.com)-ohjelmassa sopiva ympäristö.
+1. Valitse [Power Appsissa](https://web.powerapps.com) sopiva ympäristö.
 
 2. Valitse **Asetukset** (rataskuvake), valitse **Lisämukautukset** ja valitse sitten **Resurssit** **Kehittäjän resurssit** -kohdasta. 
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d461b85f89eff63c8747fb17b3ee34ebfeb2218
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 79e12f39589f9cf3f4b1515fa3ab10bb10ffb97f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185632"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770356"
 ---
 # <a name="project-management-and-accounting-overview"></a>Projektinhallinnan ja kirjanpidon yleiskatsaus
 
@@ -72,7 +72,7 @@ Lisätietoa projektisopimuksista kohdassa [Projektisopimukset](project-contracts
 
 Työrakenteen tarkkuus riippuu arvioiden ja arvioissa käytettävien seurantasojen vaaditusta tarkkuustasosta. Projektit, joissa on vähän toleranssia aikataulussa tai hinnassa lipeämiseen, edellyttävät tavallisesti yksityiskohtaisemman työnosituksen (WBS) ja ne myös edellyttävät, että työnkulkua ja kustannuksia seurataan turvallisemmin työnosituksen puitteissa. 
 
-Lisätietoja on kohdassa [Työrakenteet](work-breakdown-structures.md).
+Lisätietoja on kohdassa [Työrakenteiden yleiskatsaus](work-breakdown-structures.md).
 
 ### <a name="create-project-forecasts-and-budgets"></a>Projektibudjettien ja ennusteiden luominen
 
@@ -134,7 +134,7 @@ Projektia suoritettaessa ryhmän jäsenet tai esimies tallentavat työmäärä j
 
 WBS on kuvaus työstä, joka on suoritettava projektia varten. WBS on työtehtävien arvojärjestys. Se vastaa ei ainoastaan kuhunkin tehtävään liittyvästä työstä, mutta myös koosta, kustannuksista ja tehtävän kestosta. 
 
-Lisätietoja on kohdassa [Työrakenteet](work-breakdown-structures.md).
+Lisätietoja on kohdassa [Työrakenteiden yleiskatsaus](work-breakdown-structures.md).
 
 ### <a name="manage-project-forecasts-and-budgets"></a>Projektibudjettien ja ennusteiden hallinta
 

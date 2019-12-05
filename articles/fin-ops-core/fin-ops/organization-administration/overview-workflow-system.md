@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e5e795ca6f7831ecd3fa28be9782f0b287eea6e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190002"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812360"
 ---
 # <a name="workflow-system-overview"></a>Työnkulkujärjestelmän yleiskatsaus
 
@@ -57,18 +57,18 @@ Työnkulkujärjestelmän käyttö hyödyttää organisaatiotasi monin eri tavoin
 
 ## <a name="workflow-content"></a>Työnkulun sisältö
 
-+ [Työnkulun arkkitehtuuri](workflow-system-architecture.md)
++ [Työnkulkujärjestelmän arkkitehtuuri](workflow-system-architecture.md)
 + [Työnkulun elementit](workflow-elements.md)
-+ [Työnkulkutehtävät](workflow-actions.md)
-+ [Työnkulun luominen](create-workflow.md)
-+ [Työnkulkuominaisuuksien asetusten määrittäminen](configure-workflow-properties.md)
-+ [Manuaalisen tehtävän konfiguroiminen työnkulkuun](configure-manual-task-workflow.md)
-+ [Automaattisen tehtävän määrittäminen työnkulkuun](configure-automated-task-workflow.md)
-+ [Hyväksyntäprosessin lisääminen työnkulkuun](configure-approval-process-workflow.md)
-+ [Hyväksyntävaiheen lisääminen työnkulkuun](configure-approval-step-workflow.md)
-+ [Manuaalisen päätöksen konfiguroiminen työnkulkuun](configure-manual-decision-workflow.md)
-+ [Ehdollisen päätöksen konfiguroiminen työnkulkuun](configure-conditional-decision-workflow.md)
-+ [Rinnakkaisen tehtävän määrittäminen työnkulussa](configure-parallel-activity-workflow.md)
-+ [Määritä rinnakkainen haara työnkulussa](configure-parallel-branch-workflow.md)
-+ [Rivinimikkeen työnkulun asetusten määrittäminen](configure-line-item-workflow.md)
++ [Toiminnot hyväksyntäprosessien työnkulussa](workflow-actions.md)
++ [Työnkulkujen luonnin yleiskatsaus](create-workflow.md)
++ [Työnkulkuominaisuuksien määrittäminen](configure-workflow-properties.md)
++ [Manuaalisten tehtävien konfiguroiminen työnkulkuun](configure-manual-task-workflow.md)
++ [Automaattisten tehtävien määrittäminen työnkulkuun](configure-automated-task-workflow.md)
++ [Hyväksyntäprosessien lisääminen työnkulkuun](configure-approval-process-workflow.md)
++ [Hyväksyntävaiheiden lisääminen työnkulkuun](configure-approval-step-workflow.md)
++ [Manuaalisten päätösten konfiguroiminen työnkulkuun](configure-manual-decision-workflow.md)
++ [Ehdollisten päätösten konfiguroiminen työnkulkuun](configure-conditional-decision-workflow.md)
++ [Rinnakkaisten tehtävien määrittäminen työnkulussa](configure-parallel-activity-workflow.md)
++ [Määritä rinnakkaiset haarat työnkulussa](configure-parallel-branch-workflow.md)
++ [Rivinimikkeen työnkulkujen määrittäminen](configure-line-item-workflow.md)
 + [Työnkulun usein kysytyt kysymykset](workflow-FAQ.md)

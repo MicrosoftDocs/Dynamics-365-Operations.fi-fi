@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 2bb5dd5e29559807e40b66ad7f9c061bf510ed67
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba0d11efe868d57c74f6ae4b069d1cb8351f7213
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026138"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773054"
 ---
 # <a name="provision-talent"></a>Talentin valmistelu
 
@@ -49,12 +49,12 @@ Kun LCS-projekti on luotu, voit valmistella Talent-sovelluksen ympäristöä var
 1. Valitse LCS-projektin **Talent-sovelluksen hallinta** -ruutu.
 2. Määritä, onko tämä Sandbox vai Talentin tuotantoesiintymä. Varhaisia esikatselutoimintoja voi olla käytettävissä Sandbox-esiintymissä, jotta varhainen palaute ja testaaminen olisi mahdollista. 
     > [!NOTE]
-    > Talent-esiintymätyyppi on erillään PowerApps-ympäristön esiintymätyypistä, jonka määrität PowerApps-hallintakeskuksesta.
+    > Talent-esiintymätyyppi on erillään Microsoft Power Apps-ympäristön esiintymätyypistä, jonka määrität Power Apps-hallintakeskuksesta.
 3. Valitse **Sisällytä esittelytiedot** -vaihtoehto, jos haluat ympäristösi sisältävän saman esittelytietojoukon, jota käytetään Talent Test Drive -kokemuksessa. Tämä on hyödyllistä pitkän aikavälin esittely- tai koulutusympäristöissä, eikä sitä tule koskaan käyttää tuotantoympäristöissä.  Huomaa, että tämä asetus on valittava ensimmäisen käyttöönoton yhteydessä. Et voi päivittää aiemmin luotua käyttöönottoa myöhemmin.
-4. Talent valmistellaan aina Microsoft PowerApps -ympäristössä, jotta PowerApps-integrointi ja laajennettavuus voidaan ottaa käyttöön. Lue tämän ohjeaiheen ”PowerApps-ympäristön valitseminen” -osio ennen kuin jatkat. Jos sinulla ei vielä ole PowerApps-ympäristöä, valitse Hallitse ympäristöjä LCS:ssä tai siirry PowerApps-hallintakeskukseen. Noudata kohdan [PowerApps-ympäristön luominen](https://docs.microsoft.com/powerapps/administrator/create-environment) ohjeita.
+4. Talent valmistellaan aina Microsoft Power Apps -ympäristössä, jotta Power Apps-integrointi ja laajennettavuus voidaan ottaa käyttöön. Lue tämän ohjeaiheen ”Power Apps-ympäristön valitseminen” -osio ennen kuin jatkat. Jos sinulla ei vielä ole Power Apps-ympäristöä, valitse Hallitse ympäristöjä LCS:ssä tai siirry Power Apps-hallintakeskukseen. Noudata kohdan [Power Apps-ympäristön luominen](https://docs.microsoft.com/powerapps/administrator/create-environment) ohjeita.
 
     > [!NOTE]
-    > Aiemmin luotujen ympäristöjen tai uusien ympäristöjen luominen edellyttää, että Talent-sovelluksen valmistelevalle vuokraajan järjestelmänvalvojalle on myönnetty PowerApps P2 -käyttöoikeus. Jos organisaatiollasi ei ole PowerApps P2 -käyttöoikeutta, voit hankkia sen pilvipalveluratkaisujesi toimittajalta tai [PowerApps-hinnoittelusivulta](https://powerapps.microsoft.com/pricing/).
+    > Aiemmin luotujen ympäristöjen tai uusien ympäristöjen luominen edellyttää, että Talent-sovelluksen valmistelevalle vuokraajan järjestelmänvalvojalle on myönnetty Power Apps P2 -käyttöoikeus. Jos organisaatiollasi ei ole Power Apps P2 -käyttöoikeutta, voit hankkia sen pilvipalveluratkaisujesi toimittajalta tai [Power Apps-hinnoittelusivulta](https://powerapps.microsoft.com/pricing/).
 
 5. Valitse ympäristö, johon Talent sisällytetään.
 6. Hyväksy ehdot ja aloita käyttöönotto valitsemalla **Kyllä**.
@@ -68,19 +68,19 @@ Kun LCS-projekti on luotu, voit valmistella Talent-sovelluksen ympäristöä var
 
     > Koska Talent-tilaukseen sallitaan vain kaksi LCS-ympäristöä, voit hyödyntää myös ilmaisen 60 päivän [Talent-kokeiluympäristön](https://dynamics.microsoft.com/talent/overview/). Vaikka kokeiluympäristön pyytänyt käyttäjä omistaa ympäristön, muita käyttäjiä voidaan kutsua henkilöstöhallinnon perusversion järjestelmänhallintakokemuksen kautta. Kokeiluympäristössä on kuvitteellisia tietoja, joiden avulla ohjelmaan voi tutustua turvallisesti. Niitä ei ole tarkoitettu käytettäväksi tuotantoympäristöinä. Huomaa, että kun kokeiluympäristö vanhenee 60 päivän kuluttua, sen kaikki tiedot poistetaan eikä niitä voi palauttaa. Voit rekisteröidä uuden kokeiluympäristön, kun aiemmin luotu ympäristö vanhenee.
 
-## <a name="select-a-powerapps-environment"></a>Valitse PowerApps-ympäristö
+## <a name="select-a-power-apps-environment"></a>Valitse Power Apps-ympäristö
 
-Talent- ja PowerApps-ympäristöjen välinen integrointi sallii Talent-tietojen integroinnin ja käytön laajentamisen PowerApps-työkaluilla. PowerApps-ympäristöjen tarkoituksen ymmärtäminen auttaa sinua suunnittelemaan sovelluksia Talentin laajentamiseksi ja valitsemaan oikean ympäristön Talentia valmisteltaessa. Lisätietoja PowerApps-ympäristöistä, kuten ympäristön laajuudesta, ympäristön käytöstä sekä ympäristön luomisesta ja valitsemisesta, on kohdassa [PowerApps-ympäristöjen julkaiseminen](https://powerapps.microsoft.com/blog/powerapps-environments/). 
+Talent- ja Power Apps-ympäristöjen välinen integrointi sallii Talent-tietojen integroinnin ja käytön laajentamisen Power Apps-työkaluilla. Power Apps-ympäristöjen tarkoituksen ymmärtäminen auttaa sinua suunnittelemaan sovelluksia Talentin laajentamiseksi ja valitsemaan oikean ympäristön Talentia valmisteltaessa. Lisätietoja Power Apps-ympäristöistä, kuten ympäristön laajuudesta, ympäristön käytöstä sekä ympäristön luomisesta ja valitsemisesta, on kohdassa [Power Apps-ympäristöjen julkaiseminen](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
-Määritä seuraavien ohjeiden avulla, missä PowerApps-ympäristössä Talent otetaan käyttöön: 
+Määritä seuraavien ohjeiden avulla, missä Power Apps-ympäristössä Talent otetaan käyttöön: 
 
-1. Valitse LCS-sovelluksessa **Ympäristöjen hallinta** tai siirry suoraan PowerApps-hallintakeskukseen, jossa voit tarkastella aiemmin luotuja ympäristöjä ja luoda uusia ympäristöjä.
-2. Yksittäinen Talent-ympäristö yhdistetään yksittäiseen PowerApps-ympäristöön.
-3. PowerApps-ympäristö sisältää Talent-sovelluksen sekä vastaavat PowerApps-, Flow- ja Common Data Service -sovellukset. Jos PowerApps-ympäristö poistetaan, myös sen sovellukset poistetaan. Talent-ympäristöä valmisteltaessa voit valmistella joko **kokeilu**- tai **tuotanto**ympäristön. Valitse ympäristön tyyppi ympäristön käyttötavan perusteella. 
-4. Tietojen integrointi- ja testausstrategiat kannattaa ottaa huomioon, esimerkiksi Sandbox, hyväksyntätestaus ja tuotanto. On suositeltavaa pohtia, mitä vaikutuksia käyttöönotolla on, koska myöhemmin on hankala muuttaa PowerApps-ympäristöön yhdistettyä Talent-ympäristöä.
-5. Seuraavia PowerApps-ympäristöjä ei voi käyttää Talentissa, ja ne suodatetaan valintaluetteloista LCS:ssä:
+1. Valitse LCS-sovelluksessa **Ympäristöjen hallinta** tai siirry suoraan Power Apps-hallintakeskukseen, jossa voit tarkastella aiemmin luotuja ympäristöjä ja luoda uusia ympäristöjä.
+2. Yksittäinen Talent-ympäristö yhdistetään yksittäiseen Power Apps-ympäristöön.
+3. Power Apps-ympäristö sisältää Talent-sovelluksen sekä vastaavat Power Apps-, Power Automate- ja Common Data Service -sovellukset. Jos Power Apps-ympäristö poistetaan, myös sen sovellukset poistetaan. Talent-ympäristöä valmisteltaessa voit valmistella joko **kokeilu**- tai **tuotanto**ympäristön. Valitse ympäristön tyyppi ympäristön käyttötavan perusteella. 
+4. Tietojen integrointi- ja testausstrategiat kannattaa ottaa huomioon, esimerkiksi Sandbox, hyväksyntätestaus ja tuotanto. On suositeltavaa pohtia, mitä vaikutuksia käyttöönotolla on, koska myöhemmin on hankala muuttaa Power Apps-ympäristöön yhdistettyä Talent-ympäristöä.
+5. Seuraavia Power Apps-ympäristöjä ei voi käyttää Talentissa, ja ne suodatetaan valintaluetteloista LCS:ssä:
  
-    - **PowerApps-oletusympäristöt** - Vaikka jokainen vuokraaja valmistellaan automaattisesti PowerApps-oletusympäristössä, se ei välttämättä ole paras ympäristö Talent-sovelluksen käyttöönottoa varten, koska kaikilla vuokraajakäyttäjillä on PowerApps-ympäristön käyttöoikeus. Tuotantoympäristön tietoja voi vioittua epähuomiossa PowerApps- tai Flow-integrointien testaamisen ja tutkimisen yhteydessä.
+    - **Power Apps -oletusympäristöt** - Vaikka jokainen vuokraaja valmistellaan automaattisesti Power Apps -oletusympäristössä, se ei välttämättä ole paras ympäristö Talent-sovelluksen käyttöönottoa varten, koska kaikilla vuokraajakäyttäjillä on Power Apps -ympäristön käyttöoikeus. Tuotantoympäristön tietoja voi vioittua epähuomiossa Power Apps- tai Power Automate -integrointien testaamisen ja tutkimisen yhteydessä.
    
     - **Kokeiluympäristöt** – Näitä ympäristöjä luotaessa määritetään voimassaolon päättymispäivämäärä. Tämän jälkeen ympäristö vanhenee ja kaikki ympäristön Talent-esiintymät poistetaan automaattisesti.
    

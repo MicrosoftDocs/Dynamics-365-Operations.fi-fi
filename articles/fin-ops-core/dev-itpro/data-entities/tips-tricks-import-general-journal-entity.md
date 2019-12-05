@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 167afa70bfa35b966081709f1587d61d401d318f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184344"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769607"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
 
@@ -57,7 +57,7 @@ Seuraavissa osissa käsitellään näiden asetusten vaikutusta ja selvitetään,
 
 ### <a name="voucher-number"></a>Tositenumero
 
-- Kun käytät kirjauskansioyksikössä **Joukkoon perustuva käsittely** -asetusta, tuodun tiedoston on annettava tositenumero. Jokaiselle kirjauskansion tapahtumalle määritetään tuodusta tiedostosta saatu tositenumero, vaikka tositetta ei olisi täsmäytetty. Jos haluat käyttää joukkoon perustuvaa käsittelyä mutta haluat käyttää myös tositenumeroille määritettyä numerosarjaa, helmikuun 2016 versiossa on tätä varten hotfix-korjaus. Hotfix-korjauksen numero on 3170316, ja sen voi ladata Lifecycle Services (LCS) -palvelusta. Lisätietoja on artikkelissa [Hotfix-korjausten lataaminen Lifecycle Servicesistä](../migration-upgrade/download-hotfix-lcs.md).
+- Kun käytät kirjauskansioyksikössä **Joukkoon perustuva käsittely** -asetusta, tuodun tiedoston on annettava tositenumero. Jokaiselle kirjauskansion tapahtumalle määritetään tuodusta tiedostosta saatu tositenumero, vaikka tositetta ei olisi täsmäytetty. Jos haluat käyttää joukkoon perustuvaa käsittelyä mutta haluat käyttää myös tositenumeroille määritettyä numerosarjaa, helmikuun 2016 versiossa on tätä varten hotfix-korjaus. Hotfix-korjauksen numero on 3170316, ja sen voi ladata Lifecycle Services (LCS) -palvelusta. Lisätietoja on kohdassa [Päivitysten lataaminen Lifecycle Servicesistä (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 
     - Voit ottaa tämän toiminnon käyttöön valitsemalla siinä kirjauskansiossa, jota käytetään tuontiin, **Numeroiden kohdistus kirjauksen yhteydessä** -asetukseksi **Kyllä**.
     - Tositenumero on määritettävä edelleen tuodussa tiedostossa. Tämä numero on kuitenkin väliaikainen ja tositenumero korvaa sen, kun kirjauskansio kirjataan. Varmista, että väliaikainen tositenumero ryhmittää kirjauskansion rivit oikein. Kirjauksen aikana havaitaan esimerkiksi kolme riviä, joilla on väliaikainen tositenumero 1. Kaikkien kolmen rivin väliaikeinen tositenumero korvataan numerosarjan seuraavalla numerolla. Jos nämä kolme riviä eivät ole täsmätty vienti, tositetta ei kirjata. Jos seuraavaksi havaitaan rivejä, joiden väliaikainen tositenumero on 2, tämä numero korvataan seuraavalla numerosarjan tositenumerolla ja niin edelleen.

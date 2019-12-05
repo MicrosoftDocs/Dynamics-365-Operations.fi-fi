@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b45c6f20bf5b6fb02379f71b5806c6c147789e73
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a8e283038a0cc1c9834a827c453f2951e9e87bcf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189749"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772280"
 ---
 # <a name="accounts-payable-invoice-matching-overview"></a>Ostoreskontran laskujen täsmäytys – yleiskatsaus
 
@@ -189,7 +189,7 @@ Toimittajan laskut perustuvat usein tuotteen vastaanottoihin, jotka ilmaisevat t
 -   Anna laskun summat, jotka eivät sisältyneet alkuperäiseen ostotilaukseen, jotta laskun tiedot täsmäävät toimittajalta vastaanotettua laskua. Voit verrata ostotilausten kuluja laskujen kuluihin. Voit tarvittaessa lisätä kulut laskuihin kuluja ja kohdistaa ne laskuriveille.
 -   Tarkista ja hyväksy laskun nettoyksikköhinnan ja ostotilauksen nettoyksikköhinnan eroavaisuudet. Voit määrittää hintatoleranssin prosenttiosuudet yrityksille, toimittajille ja nimikkeille. Jos toimittajan laskun rivihinta ei ole hyväksyttävän hintatoleranssin sisällä, voit tallentaa laskun ja hyväksyä sen myöhemmin kirjattavaksi tai voit odottaa, kunnes saat korjauksen toimittajalta.
 
-Lisätietoja on ohjeaiheissa [Kolmisuuntaiset vastaavuuskäytännöt](three-way-matching-policies.md) ja [Ostoreskontran laskujen täsmäytyksen vahvistamisen määrittäminen](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
+Lisätietoja on kohdissa [Kolmisuuntaiset vastaavuuskäytännöt](three-way-matching-policies.md) ja [Ostoreskontran laskujen täsmäytyksen vahvistamisen määrittäminen](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
 
 
 

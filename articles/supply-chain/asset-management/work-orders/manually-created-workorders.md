@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 2652458a5fea9e46b8b68d3b197d2ccb1385731d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626244"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811738"
 ---
 # <a name="manually-created-work-orders"></a>Manuaalisesti luodut työtilaukset
 
@@ -70,7 +70,7 @@ Huomaa seuraavat seikat:
 
 - **Kaikki työtilaukset** -luettelosivun tietonäkymässä voit lisätä useita käyttökohteita työtilaukseen lisäämällä rivejä **Työtilauksen ylläpitotyöt** -pikavälilehteen. Resurssille voi valita vain sellaisia ylläpitotyötyyppejä, jotka on määritetty resurssille vallitulle resurssityypille.  
 
-- Jos muutat resurssin palvelutasoa tai kriittisyyttä sen jälkeen, kun resurssia on käytetty työtilauksessa, työtilauksen palvelutasoa tai kriittisyyttä ei päivitetä vastaavasti. Lisätietoja palvelutasoista ja kriittisyydestä esitetään kohdissa [Resurssien palvelutasot](../setup-for-objects/object-priorities.md) ja [Resurssien kriittisyydet](../setup-for-objects/object-criticalities.md).
+- Jos muutat resurssin palvelutasoa tai kriittisyyttä sen jälkeen, kun resurssia on käytetty työtilauksessa, työtilauksen palvelutasoa tai kriittisyyttä ei päivitetä vastaavasti. Lisätietoja palvelutasoista ja kriittisyydestä esitetään kohdissa [Resurssien palvelutasot](../setup-for-objects/object-priorities.md) ja [Resurssien kriittisyystyypit](../setup-for-objects/object-criticalities.md).
 
 - Työtilauksen kriittisyys lasketaan uudelleen aina, kun työtilaustehtävä lisätään työtilaukseen tai poistetaan siitä.
 

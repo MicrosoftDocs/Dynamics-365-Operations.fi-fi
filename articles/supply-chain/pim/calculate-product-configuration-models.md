@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00e1956950154051d4a916a013c2200029772e37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd57b702220374ef5ac48e1af7c42827a21e7517
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547098"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813590"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Tuotemääritysmallien laskelmat – usein kysytyt kysymykset
 
@@ -37,7 +37,7 @@ Laskutoimituksia on mahdollista käyttää aritmeettisiin tai loogisiin toiminto
 ## <a name="what-is-a-calculation"></a>Mikä on laskelma?
 Laskutoimitus on elementti, jota voit käyttää tuotteen kokoonpanomallissa. Laskelmat täydentävät rajoituksia mahdollistamalla arvojen laskemisen käyttämällä desimaalilukuja tuotetta määrittäessäsi. Lisäksi laskelmilla on suurempi määrä operaattoreita käytettävissä kuin rajoituksilla.  
 
-Vastaavasti kuin rajoitus, laskenta liitetään tiettyyn tuotekonfiguraatiomallin komponenttiin, eikä sitä voi käyttää uudelleen tai jakaa toisen komponentin kanssa. Tärkeä ero laskelmien ja rajoitusten välillä on, että laskelmat ovat pakottavia (yksisuuntaisia), kun taas rajoitukset ovat määrittäviä (kaksisuuntaisia). Katso lisätietoja rajoituksista kohdasta [Lausekerajoitukset ja taulukkorajoitukset](expression-constraints-table-constraints-product-configuration-models.md).  
+Vastaavasti kuin rajoitus, laskenta liitetään tiettyyn tuotekonfiguraatiomallin komponenttiin, eikä sitä voi käyttää uudelleen tai jakaa toisen komponentin kanssa. Tärkeä ero laskelmien ja rajoitusten välillä on, että laskelmat ovat pakottavia (yksisuuntaisia), kun taas rajoitukset ovat määrittäviä (kaksisuuntaisia). Lisätietoja rajoituksista on kohdassa [Tuotteen määritysmallien lausekerajoitukset ja taulukkorajoitukset](expression-constraints-table-constraints-product-configuration-models.md).  
 
 Laskenta koostuu kohdemääritteestä ja laskentakaavasta.
 
@@ -88,7 +88,7 @@ Ei. Tuotteen konfiguroinnin yhteydessä asettamasi arvot ovat käytettävät arv
 Jos poistat syötetyn arvon laskennassa, kohteen määritteen arvo poistetaan.
 
 ## <a name="why-do-i-receive-an-error-message-that-says-that-my-model-is-in-contradiction"></a>Miksi näyttöön tulee virhesanoma, jonka mukaan mallissa on ristiriita?
-Tämä sanoma tulee näkyviin, kun laskelma sisältää virheen tai vähintään yhdessä rajoituksessa on ristiriita. Katso lisätietoja ristiriidoista kohdasta [Lausekerajoitukset ja taulukkorajoitukset](expression-constraints-table-constraints-product-configuration-models.md). Tässä esitellään muutama tilanne, joissa laskelmavirheitä voi tapahtua:
+Tämä sanoma tulee näkyviin, kun laskelma sisältää virheen tai vähintään yhdessä rajoituksessa on ristiriita. Lisätietoja ristiriidoista on kohdassa [Tuotteen määritysmallien lausekerajoitukset ja taulukkorajoitukset](expression-constraints-table-constraints-product-configuration-models.md). Tässä esitellään muutama tilanne, joissa laskelmavirheitä voi tapahtua:
 
 -   Arvo jaetaan nollalla.
 -   Seuraavien kahden elementin välillä on ristiriita:

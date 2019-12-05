@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a987e75834ddde486421a425a621e66f0b6e063f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577897"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811162"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Vähittäismyyntikanavien kirjanpidon integroinnin määrittäminen
 
@@ -210,7 +210,7 @@ Kirjanpidon integroinnissa käytettävissä olevat virheen käsittelyasetukset m
 
 Kirjanpidon X/Z-raporttien suorittaminen myyntipisteestä edellyttää, että myyntipisteen asetteluun lisätään uusia painikkeita.
 
-- Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu **Painikeruudukot**-sivulla noudattamalla kohdan [Mukautetun toimintopainikkeen lisääminen myyntipisteen asetteluun Retail Headquarters -sovelluksessa](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) ohjeita.
+- Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu **Painikeruudukot**-sivulla noudattamalla kohdan [Myyntipistetoimintojen lisääminen myyntipisteasetteluihin käyttämällä painikeruudukon suunnittelutoimintoa](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) ohjeita.
 
     1. Valitse päivitettävä asettelu. 
     2. Lisää uusi painike, määritä **Tulosta kuitti X** -painikeominaisuus.
@@ -221,7 +221,7 @@ Kirjanpidon X/Z-raporttien suorittaminen myyntipisteestä edellyttää, että my
 
 Jos haluat ottaa käyttöön lykätyn tilikausirekisteröinnin manuaalisen käytön, lisää uusi painike POS-asetteluun.
 
-- Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu **Painikeruudukot**-sivulla noudattamalla kohdan [Mukautetun toimintopainikkeen lisääminen myyntipisteen asetteluun Retail Headquarters -sovelluksessa](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) ohjeita.
+- Asenna suunnitteluohjelma ja päivitä myyntipisteen asettelu **Painikeruudukot**-sivulla noudattamalla kohdan [Myyntipistetoimintojen lisääminen myyntipisteasetteluihin käyttämällä painikeruudukon suunnittelutoimintoa](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) ohjeita.
 
     1. Valitse päivitettävä asettelu.
     2. Lisää uusi painike, määritä **Viimeistele tilikausirekisteröintiprosessi** -painikeominaisuus.

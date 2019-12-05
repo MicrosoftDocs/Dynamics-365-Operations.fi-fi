@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c585bce468f87a32204893ea20ce6954e92b0e38
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8619c6cde484c41ec01e96eb4626366f1955b5d4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571803"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811819"
 ---
 # <a name="install-assets-on-functional-locations"></a>Asenna toiminnallisten sijaintien resurssit
 
@@ -31,7 +31,7 @@ ms.locfileid: "2571803"
 
  
 
-Kun olet luonut toiminnalliset sijaintirakenteet, seuraava vaihe on asentaa resurssit asiaankuuluviin toiminnallisiin sijainteihin. Tässä ohjeaiheessa kerrotaan, miten resursseja asennetaan näihin toiminnallisiin sijainteihin resurssien hallinnassa. Lisätietoja resurssien luomisesta on kohdassa [Resurssit](../objects/introduction-to-objects.md).
+Kun olet luonut toiminnalliset sijaintirakenteet, seuraava vaihe on asentaa resurssit asiaankuuluviin toiminnallisiin sijainteihin. Tässä ohjeaiheessa kerrotaan, miten resursseja asennetaan näihin toiminnallisiin sijainteihin resurssien hallinnassa. Lisätietoja resurssien luomisesta on kohdassa [Resurssien esittely](../objects/introduction-to-objects.md).
 
 Jos olet luonut resurssirakenteen, koko resurssirakenne on asennettava toiminnalliseen sijaintiin. Tämän vuoksi toiminnalliseen sijaintiin voidaan valita vain pääresursseja (ylätason resurssit, joilla ei ole pääresursseja). Kaikki liittyvät aliresurssit asennetaan myös kyseiseen toiminnalliseen sijaintiin. Kun asennat resursseja toiminnalliseen sijaintiin, toiminnallisen sijainnin taloushallinnon dimensiot voidaan siirtää niille automaattisesti toiminnalliseen sijaintiin valitun toiminnallisen sijaintityypin asetusten mukaan. Lisätietoja toiminnallisten sijaintityyppien määrittämisestä on kohdassa [Toiminnalliset sijaintityypit](../setup-for-functional-locations/functional-location-types.md).
 

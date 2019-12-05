@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 15a645c98fe38e8ddaa34c0c21581eac6636502f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190968"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811598"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)
 
@@ -30,7 +30,7 @@ ms.locfileid: "2190968"
 
 Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotka julkaistiin Microsoft Dynamics 365 for Operationsin Microsoftin (marraskuu 2016, kaikki kielet) yhdistettyyn APQC-kirjastoon. Uutta aloituskirjastoa ei ole julkaistu.
 
-(Marraskuu 2016, kaikki kielet) yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics 365 for Operationsin, Microsoft Dynamics 365 for Operationsin platform update 3:n, Microsoft Dynamics AX Platform update 2:n, Dynamics AX toukokuun 2016 päivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Uudet ja muuttuneet ominaisuudet](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
+(Marraskuu 2016, kaikki kielet) yhdistetyssä APQC-kirjastossa on tehtäväoppaita, joita on tarkoitus käyttää Microsoft Dynamics 365 for Operationsin, Microsoft Dynamics 365 for Operationsin platform update 3:n, Microsoft Dynamics AX Platform update 2:n, Dynamics AX toukokuun 2016 päivityksen ja Microsoft Dynamics AX:n helmikuun 2016 version ohjeena. Lisätietoja näistä julkaisuista on kohdassa [Finance and Operations -aloitussivun uudet ja muuttuneet toiminnot](whats-new-changed.md). Tehtäväoppaiden lokalisoidut versiot ovat käytettävissä tässä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjejärjestelmä](help-overview.md).
 
 > [!NOTE]
 > Liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (\*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics 365 for Operationsin marraskuun 2016 päivityksessä ja ettei sitä tueta Microsoft Microsoft Dynamics AX:n aiemmissa versioissa.
@@ -543,8 +543,8 @@ Tässä aiheessa on luettelo uusista tai päivitetyistä tehtäväoppaista, jotk
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Uudet tehtäväoppaat saatavilla (helmikuu 2016)](new-task-guides-available-february-2016.md)
+[Uudet tehtäväoppaat (helmikuu 2016)](new-task-guides-available-february-2016.md)
 
-[Uudet tai päivitetyt tehtäväoppaat saatavilla (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
+[Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Uudet tai päivitetyt tehtäväoppaat saatavilla (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
+[Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)](new-updated-task-guides-available-august-2016.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 9cc45a3ed468541fc0a5c8e80e745854148165e4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 86d81d60fcbc77375f3b8c525e8c084e3a3d8a99
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026069"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773690"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Dynamics 365 Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 2, 2019)
 
@@ -63,7 +63,7 @@ Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 25:stä on ar
 Monissa yrityksissä etuuspäälliköillä on ehkä vain määrättyjen kompensaatiotietueiden käyttöoikeus. Ne voivat olla johtajien tai alueellisten työntekijöiden tietueita. Tämä muutoksen ansiosta henkilöstöhallinto voi hallita ja ylläpitää organisaation erilaisten työntekijäryhmien kompensaatiosuunnitelmia. Voit määrittää käyttöoikeusrooleja kiinteille ja muuttuville suunnitelmille. Nämä käyttöoikeusroolit määrittävät käyttöoikeudet suunnitelmiin ja liittyviin työntekijätietoihin, kuten palkan tai bonuksen tietueisiin, jotta vain nämä roolit voivat käsitellä työntekijäryhmien kompensaatioita.
 
 ### <a name="upgrade-to-common-data-service"></a>Päivitä Common Data Serviceen
-Common Data Serviceen päivityksen määräajat lähestyvät nopeasti. Kirjaudu sisään PowerApps-hallintakeskukseen ja tarkista, onko tietokantasi päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Common Data Serviceen päivityksen määräajat lähestyvät nopeasti. Kirjaudu sisään Microsoft Power Apps-hallintakeskukseen ja tarkista, onko tietokantasi päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Esiversiossa
 

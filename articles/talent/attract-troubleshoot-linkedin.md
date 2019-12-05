@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: b031fd95d2e7fc8405ad96139779091e00bb4d46
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 42065f3d6b7ae9e7ad99b26c7692e41f8c36934d
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551469"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832974"
 ---
 # <a name="troubleshoot-integration-with-linkedin-and-microsoft-dynamics-365-talent---attract"></a>LinkedInin ja Microsoft Dynamics 365 Talent – Attractin integroinnin vianmääritys
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Tee seuraavien tietojen avulla sellaisten ongelmien vianmääritys, joita voi esiintyä, kun yrität julkaista työpaikkoja LinkedIniin Microsoft Dynamics 365 Talent: Attractista.
 
@@ -42,18 +42,18 @@ Jos kirjautumisessa LinkedIniin Attractista on ongelmia, yritä seuraavia toimen
 
 Jos työpaikka ei näy LinkedInissä 24 tunnin jälkeen, kokeile seuraavia toimenpiteitä:
 
-1. Varmista, että LinkedIn-yritystunnus yhdistetään LinkedIn-yrityssivulle ja että se on annettu oikein Attractin hallintakeskukseen. Lisätietoja LinkedIn-asetusten muuttamisesta hallintakeskuksessa on kohdassa [LinkedIn-integraation määrittäminen](attract-admin-linkedin.md). Lisätietoja LinkedIn-yritystunnuksista on kohdassa [LinkedIn-yritystunnuksen liittäminen LinkedIn-työpaikkailmoitussivulle – usein kysyttyjä kysymyksiä](https://www.linkedin.com/help/linkedin/answer/98972).
+1. Varmista, että LinkedIn-yritystunnus yhdistetään LinkedIn-yrityssivulle ja että se on annettu oikein Attractin hallintakeskukseen. Lisätietoja LinkedIn-asetusten muuttamisesta hallintakeskuksessa on kohdassa [Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraation määrittäminen](attract-admin-linkedin.md). Lisätietoja LinkedIn-yritystunnuksista on kohdassa [LinkedIn-yritystunnuksen liittäminen LinkedIn-työpaikkailmoitussivulle – usein kysyttyjä kysymyksiä](https://www.linkedin.com/help/linkedin/answer/98972).
 2. Tarkista työpaikan tiedot LinkedInissä ja varmista, että osoite on täydellinen. Työpaikan onnistunut julkaisu edellyttää, että LinkedInissä on ainakin työpaikan kaupunki ja maa tai alue.
 3. Varmista, että työpaikka ei ole toisen LinkedInissä julkaistun työpaikan kaksoiskappale. LinkedIn ei julkaise työpaikkoja, jotka ovat toisen rekrytoijan LinkedInin Premium-työpaikkojen tai rajoitettujen listausten kaksoiskappaleita. Varmista, ettei joku muu yrityksen työntekijä ole jo julkaissut työpaikkaa manuaalisesti.
 
 ## <a name="see-also"></a>Lisätietoja
 
-[LinkedInin usein kysytyt kysymykset](./attract-linkedin-faq.md)
+[Attractin LinkedIn-integraation usein kysytyt kysymykset](./attract-linkedin-faq.md)
 
-[Työpaikkojen julkaiseminen LinkedInissä Attractista](./attract-post-jobs-to-linkedin.md)
+[Työpaikkojen julkaiseminen LinkedInissä Microsoft Dynamics 365 Talent – Attractista](./attract-post-jobs-to-linkedin.md)
 
-[Ehdokkaiden rekrytointi LinkedIn Recruiter -ratkaisulla](./attract-linkedin-recruiter.md)
+[Ehdokkaiden rekrytointi LinkedIn Recruiterilla Microsoft Dynamics 365 Talent – Attractissa](./attract-linkedin-recruiter.md)
 
-[Työpaikkojen luominen](./creating-jobs-attract.md)
+[Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa](./creating-jobs-attract.md)
 
-[LinkedIn-integraation vianmääritys](./attract-troubleshoot-linkedin.md)
+[LinkedInin ja Microsoft Dynamics 365 Talent – Attractin integroinnin vianmääritys](./attract-troubleshoot-linkedin.md)

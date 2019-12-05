@@ -1,9 +1,9 @@
 ---
-title: Talentin järjestelmävaatimukset ja päivityskäytäntö
-description: Tässä ohjeaiheessa kerrotaan Dynamics 365 Talentin järjestelmävaatimuksista. Lisäksi siinä käsitellään päivityskäytäntö.
+title: Talentin järjestelmävaatimukset
+description: Tässä ohjeaiheessa kerrotaan Dynamics 365 Talentin järjestelmävaatimuksista.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
+ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024157"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2818476"
 ---
-# <a name="talent-system-requirements-and-update-policy"></a>Talentin järjestelmävaatimukset ja päivityskäytäntö
+# <a name="talent-system-requirements"></a>Talentin järjestelmävaatimukset
 
 [!include [banner](includes/banner.md)]
 
@@ -66,8 +66,3 @@ Voit ladata PDF-tiedoston maista, alueista ja kielistä, joita Talent tukee kohd
 
 Jos olet kehittäjä, joka on kiinnostunut maa- tai aluekohtaisten mukautusten luonnista, tai kun luot ratkaisun maalle tai alueelle, jota Microsoft ei tällä hetkellä tue, Katso lisätietoja kohdasta [Globalisaatio](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
-## <a name="update-policy"></a>Päivityskäytäntö
-
-Talent on pilvipalvelu. Talentin päivitykset ovat jatkuvia ja Microsoft ottaa ne käyttöön automaattisesti.
-
-Päivitykset julkaistaan säännöllisesti, ja ne tehdään kaikkiin ympäristöihin. Talentia tuetaan [Microsoft-tuen elinkaarikäytännön](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft-tuen elinkaari mukaisesti"), joka tarjoaa yhdenmukaisia ja ennakoitavia ohjeita tuotetuen saatavuudesta.

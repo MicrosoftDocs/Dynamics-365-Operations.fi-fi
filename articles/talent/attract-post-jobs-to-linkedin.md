@@ -1,5 +1,5 @@
 ---
-title: Työpaikkojen julkaiseminen LinkedInissä Microsoft Dynamics 365 Talent – Attractista
+title: Työpaikkojen julkaiseminen LinkedInissä Attractista
 description: Tässä ohjeaiheessa kerrotaan, miten voit julkaista työpaikkoja Dynamics 365 Talent – Attractista LinkedIniin.
 author: andreabichsel
 manager: AnnBe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: e2b8065fe2521694efb30478a5a41676cff45127
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 782a2e5de6edf0e85c4d32a0910f5f3c01981a01
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551492"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832997"
 ---
-# <a name="post-jobs-to-linkedin-from-microsoft-dynamics-365-talent---attract"></a>Työpaikkojen julkaiseminen LinkedInissä Microsoft Dynamics 365 Talent – Attractista
+# <a name="post-jobs-to-linkedin-from-attract"></a>Työpaikkojen julkaiseminen LinkedInissä Attractista
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 LinkedIn on suurin verkossa toimiva asiantuntijaverkosto, jonka avulla koko maailman parhaat osaajat ovat käytettävissä. Microsoft Dynamics 365 Talent: Attract auttaa rekrytoimaan työntekijöitä mahdollistamalla työpaikkojen julkaisemisen suoraan Attractista LinkedIniin.
 
@@ -46,7 +46,7 @@ Seuraavassa taulukossa on roolikohtaisesti toiminnot, jotka voit tehdä LinkedIn
 
 Lisätietoja näistä Attractin käyttäjärooleista on kohdassa [Suojaus ja roolien hallinta Attractissa](./security-attract.md).
 
-Jos olet järjestelmänvalvoja ja tarvitset lisätietoja LinkedInin ja Attractin integraation määrittämisestä, katso kohta [LinkedIn-integraation määrittäminen](./attract-admin-linkedin.md).
+Jos olet järjestelmänvalvoja ja tarvitset lisätietoja LinkedInin ja Attractin integraation määrittämisestä, katso kohta [Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraation määrittäminen](./attract-admin-linkedin.md).
 
 LinkedIniin julkaistut työpaikat näkyvät julkaistuna LinkedIn-sivustossa. LinkedInissä ei ole työpaikkojen julkaisun testiympäristöä. Varmista tämän vuoksi, ettet vahingossa julkaise testityöpaikkoja.
 
@@ -67,15 +67,15 @@ Kun kiinnostuneet ehdokkaat valitsevat **Näytä** ilmoituksen vieressä, he nä
 
 Kaikki Attractin kautta julkaistut työpaikkailmoitukset ovat rajoitettuja listauksia. Lisätietoja LinkedInin rajoitetuista listauksista on kohdassa [Rajoitettujen listausten vertailu työpaikkojen paketoinnin Premium-työpaikkoihin](https://www.linkedin.com/help/recruiter/answer/79049).
 
-Jos työpaikkojen julkaisemisessa LinkedIniin on ongelmia, katso kohta [LinkedIniin julkaistavien työpaikkojen vianmääritys](./attract-troubleshoot-linkedin.md).
+Jos työpaikkojen julkaisemisessa LinkedIniin on ongelmia, katso kohta [LinkedInin ja Microsoft Dynamics 365 Talent – Attractin integroinnin vianmääritys](./attract-troubleshoot-linkedin.md).
 
 ## <a name="see-also"></a>Lisätietoja
 
-[LinkedInin usein kysytyt kysymykset](./attract-linkedin-faq.md)
+[Attractin LinkedIn-integraation usein kysytyt kysymykset](./attract-linkedin-faq.md)
 
-[LinkedIn-integraation määrittäminen](./attract-admin-linkedin.md)
+[Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraation määrittäminen](./attract-admin-linkedin.md)
 
-[Työpaikkojen luominen](./creating-jobs-attract.md)
+[Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa](./creating-jobs-attract.md)
 
 [Ehdokkaiden rekrytointi LinkedIn Recruiter -ratkaisulla](./attract-linkedin-recruiter.md)
 

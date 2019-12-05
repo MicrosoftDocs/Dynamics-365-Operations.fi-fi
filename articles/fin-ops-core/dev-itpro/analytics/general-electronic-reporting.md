@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11ed2101304c4e09744bbd10e94e9cd2a8db4da5
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578238"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771070"
 ---
 # <a name="electronic-reporting-er-overview"></a>Sähköisen raportoinnin (ER) yleiskatsaus
 
@@ -71,7 +71,7 @@ Lähteviä sähköisiä asiakirjoja tukevassa mallin yhdistämismäärityksessä
 
 - Se voi käyttää eri tietotyyppejä tietomallina. Se voi käyttää esimerkiksi taulukoita, tietoyksiköitä, menetelmiä tai valintaluetteloita.
 - Se tukee käyttäjän syöttöparametreja, jotka voidaan määrittää tietomallin tietolähteiksi, kun osa tiedoista on määritettävä suorituksen aikana.
-- Se tukee tietojen muuntamista tarvittaviksi ryhmiksi. Voit myös suodattaa, lajitella ja summata tietoja sekä loogisia laskettuja kenttiä, jotka on suunniteltu Microsoft Excelin kaavoja muistuttavilla kaavoilla. Lisätietoja on ohjeaiheessa [Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)).
+- Se tukee tietojen muuntamista tarvittaviksi ryhmiksi. Voit myös suodattaa, lajitella ja summata tietoja sekä loogisia laskettuja kenttiä, jotka on suunniteltu Microsoft Excelin kaavoja muistuttavilla kaavoilla. Lisätietoja on ohjeaiheessa [Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)).
 
 
 Saapuvia sähköisiä asiakirjoja tukevassa mallin yhdistämismäärityksessä on seuraavat ominaisuudet:
@@ -362,5 +362,5 @@ Voit ottaa sähköisessä raportoinnissa automaattisesti käyttöön viimeisimp�
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Lokalisointivaatimukset – Luo sähköisen raportoinnin määritykset](electronic-reporting-configuration.md)
-- [Sähköisen raportoinnin konfiguraatioiden elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Sähköisen raportoinnin (ER) määritysten luominen](electronic-reporting-configuration.md)
+- [Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md)

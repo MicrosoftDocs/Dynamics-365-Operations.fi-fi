@@ -1,5 +1,5 @@
 ---
-title: Hakijan profiilien ja sovellusten lähteiden seuraaminen
+title: Ehdokaslähteiden seuraaminen Attractissa
 description: Tässä ohjeaiheessa kerrotaan hakijaprofiilien ja -sovellusten lähteiden seurannasta.
 author: hachandr
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5b368e97a716cd1ce4f668c2a97326877a2d3dff
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 8860f508eebc377042c4e101eeb08a14a737ba0c
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551884"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832649"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Hakijan profiilien ja sovellusten lähteiden seuraaminen
+# <a name="track-candidate-sources-in-attract"></a>Ehdokaslähteiden seuraaminen Attractissa
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 > [!NOTE] 
 > Tässä ohjeaiheessa mainitut toiminnot ovat saatavilla ennakkoversion osana. Sisältö ja toiminnot voivat muuttua. Voit käyttää tätä toimintoa pyytämällä järjestelmänvalvojaa ottamaan sen käyttöön Attractin **järjestelmänvalvojan asetuksissa**. Tuleva julkaisu tarjoaa lähdeseurantaraportteja. Lisätietoja on kohdassa [Talentin esiversiotoimintojen käyttö](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

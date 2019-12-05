@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: af2066c095c675aa0003ac2cf66bebba48a1e8a5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190853"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812502"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Mukautettujen kenttien luominen ja käsitteleminen
 
@@ -103,7 +103,7 @@ Lisäksi mukautetuista kentistä valintaluettelokenttien arvojoukon järjestyst�
 
 ### <a name="exposing-custom-fields-on-data-entities"></a>Mukautettujen kenttien tuominen tietoyksiköiden nähtäville
 
-On myös tärkeää, että tietoyksiköt voivat havaita mukautetut kentät. Tietoyksiköitä käytetään [Avaa Officessa](../../dev-itpro/office-integration/office-integration.md) -toiminnossa sekä tietojen tuonti- ja vientiskenaarioissa.
+On myös tärkeää, että tietoyksiköt voivat havaita mukautetut kentät. Tietoyksiköitä käytetään [Office-integroinnin yleiskatsaus](../../dev-itpro/office-integration/office-integration.md) -toiminnossa sekä tietojen tuonti- ja vientiskenaarioissa.
 
 Voit tuoda mukautetun kentän tietoyksikön nähtäville seuraavasti:
 

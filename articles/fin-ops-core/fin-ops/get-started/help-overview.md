@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef630ca56888eb61ab0519a29c89c3ccb2f24a87
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537829"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811669"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
@@ -82,7 +82,7 @@ Lisätietoja on [osallistujan oppaassa](https://docs.microsoft.com/en-us/contrib
 
 Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti tehtävän tai liiketoimintaprosessin eri vaiheet. Voit avata (toistaa) tehtäväoppaan Ohje-ruudusta. Kun napsautat tehtäväopasta ensimmäisen kerran, Ohje-ruutuun tulee näkyviin tehtävän vaiheittaiset ohjeet. Lokalisoidut tehtäväoppaat ovat saatavana.
 
-Microsoft toimitti tehtäväopaskirjastot, jotka kattavat Dynamics 365 for Finance and Operationsin versioon joulukuuhun 2017 kanssa. Kohdassa [Tehtäväoppaiden käyttö ohjeruudusta](help-overview.md#accessing-task-guides-from-the-help-pane) käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä.
+Microsoft toimitti tehtäväopaskirjastot, jotka kattavat Dynamics 365 for Finance and Operationsin versioon joulukuuhun 2017 kanssa. Kohdassa [Ohjejärjestelmä](help-overview.md#accessing-task-guides-from-the-help-pane) käsitellään tuotteeseen sopivan tehtäväoppaan etsimistä.
 
 ![Tehtäväoppaan lukunäkymä](./media/task-guide-ops.png)
 
@@ -144,13 +144,12 @@ Käännetyt tehtävän ohjaukset julkaistaan kirjastoissa, joiden otsikossa luke
 
 Voit luoda käyttäjille ohjeen luomalla mukautettuja tehtäväoppaita tai yhdistämällä oman sivuston Ohje-ruutuun. Lisätietoja:
 
-- [Ohjeistuksen tai koulutuksen luominen tehtävien tallennustoiminnon avulla](../../dev-itpro/user-interface/task-recorder.md).
+- [Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md)
 - [Mukautetun ohjeen luominen (raportti)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Tehtävien tallennustoiminto](../../dev-itpro/user-interface/task-recorder.md)
-- [Dokumentaation tai koulutuksen luominen tehtävätallenteiden avulla](../../dev-itpro/user-interface/task-recorder.md)
+- [Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md)
 
 Seuraavassa taulussa on sivustoluettelo. Jos sivuston nimen vieressä on tähti (\*), sivustoon on kirjauduttava palvelusopimukseen liitetyllä tilillä.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658807"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812646"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentaation tai koulutuksen luominen tehtävän tallennustoiminnolla
 
@@ -84,7 +84,7 @@ Ilmoitusten huomautus näyttää tältä tehtäväoppaan kuplassa.
 
 [![Ilmoitushuomautuksen ulkoasu tehtäväoppaassa](./media/screen4.png)](./media/screen4.png)
 
--   **Tiedot-vaihe**: Nämä huomautukset luodaan napsauttamalla ohjausobjektia tai jotain lomakkeen kohtaa hiiren kakkospainikkeella &lt; **Tehtävän tallennustoiminto** &lt; **Lisää Tiedot-vaihe**. Tiedot-vaiheet näkyvät numeroituina vaiheina paikassa, johon ne lisätään, vaikka toimintoa ei olisi tallennettu käyttöliittymässä. Voit lisätä lomaketason Tiedot-vaiheen tai ohjausobjektiin liitetyn Tiedot-vaiheen. Kun Tiedot-vaihe on liitetty lomakkeeseen, tehtävän ohjauksen kupla tulee näkyviin lomakkeeseen ilman osoitinta tehtävän ohjauksen toiston aikana. Kun Tiedot-vaihe on liitetty ohjausobjektiin, tehtävän ohjauksen kupla tulee osoittaa ohjausobjektiin tehtäväoppaan toiston aikana. Ohjeruudussa näkyy Tiedot-vaiheen huomautus numeroituna vaiheena. Huomautus sisältää syöttämäsi tekstin. Käytä Tiedot-vaiheita käyttäjän valmisteluun seuraavia vaiheita varten, sovelluksen ulkopuolella tehtäviä vaiheita varten tai muihin tallenteisiin viittaamisessa (vaikka huomautuksiin ei voikaan luoda hyperlinkkejä).
+-   **Tiedot-vaihe**: Nämä huomautukset luodaan napsauttamalla ohjausobjektia tai jotain lomakkeen kohtaa hiiren kakkospainikkeella &lt; **Tehtävän tallennustoiminto** &lt; **Lisää Tiedot-vaihe**. Tiedot-vaiheet näkyvät numeroituina vaiheina paikassa, johon ne lisätään, vaikka toimintoa ei olisi tallennettu käyttöliittymässä. Voit lisätä lomaketason Tiedot-vaiheen tai ohjausobjektiin liitetyn Tiedot-vaiheen. Kun Tiedot-vaihe on liitetty lomakkeeseen, tehtävän ohjauksen kupla tulee näkyviin lomakkeeseen ilman osoitinta tehtävän ohjauksen toiston aikana. Kun Tiedot-vaihe on liitetty ohjausobjektiin, tehtävän ohjauksen kupla tulee osoittaa ohjausobjektiin tehtäväoppaan toiston aikana. Ohjeruudussa näkyy Tiedot-vaiheen huomautus numeroituna vaiheena. Huomautus sisältää syöttämäsi tekstin. Käytä Tiedot-vaiheita käyttäjän valmisteluun seuraavia vaiheita varten, sovelluksen ulkopuolella tehtäviä vaiheita varten tai muihin tallenteisiin viittaamisessa (vaikka huomautuksiin ei voikaan luoda hyperlinkkejä).
 
 **Määritä, miten pitkä tallenteesta tulee**
 
@@ -97,7 +97,7 @@ Ilmoitusten huomautus näyttää tältä tehtäväoppaan kuplassa.
 **Päätä, missä kohtaa käyttöliittymää tallentaminen alkaa** Sivu, jolla olet tehtävätallenteen tallentamisen alkaessa, vaikuttaa siihen, millä sivulla tehtävän ohjaus näytetään. Jos haluat tehtävätallenteen olevan esimerkiksi ohjeruudussa, kun käyttäjä valitsee Kirjanpitoparametrit-sivun, sinun on aloitettava tallentaminen Kirjanpitoparametrit-sivulta. **Tallenna tallenteet .axtr-tiedostoina** Kun olet luonut tehtävätallenteen tai muokannut sitä, näkyviin tulee useita tallenteen lataus- tai tallennusvaihtoehtoja. Voit ladata tiedoston tehtävätallenteen pakettina (.axtr) tai käsittelemättömänä tallennetiedostona (.xml) tai Word-asiakirjana tai tallentaa tiedoston LCS-kirjastoon. Tehtävätallenne kannattaa aina tallentaa tehtävätallenteen pakettitiedostona (.axtr). Se helpottaa tiedoston ylläpitoa, jos menettelyitä tai huomautuksia on muutettava myöhemmin. Jos haluat noutaa tiedoston Word-asiakirjana, tallenna se myös silloin tehtävätallenteen pakettitiedostona.
 
 ## <a name="create-your-task-recording"></a>Tehtävätallenteen luominen
-Yksityiskohtaiset vaiheet ovat kohdassa [Tehtävätallenteen luominen](task-recorder.md).
+Yksityiskohtaiset vaiheet ovat kohdassa [Tehtävien tallennustoiminnon resurssit](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Microsoftin tehtävätallenteiden kopioiminen ja mukauttaminen
 Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää niitä omassa dokumentaatiossa tai koulutusmateriaaleissa. Lataa Microsoftin tehtävätallenteet seuraavien vaiheiden avulla:
@@ -115,14 +115,14 @@ Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää n
 11. Määritä tehtävätallenteen tallennustapa.
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Tehtävätallenteiden sisällyttäminen ohjeruutuun
-Voit näyttää omat mukautetut tehtävätallenteen ohjeruudussa tehtävän ohjauksina toistettavina tai tekstinä tarkasteltavina. Tallenna tehtävätallenteet ensin omaan BPM-kirjastoon ja päivitä ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään.](../../fin-ops/get-started/help-connect.md)
+Voit näyttää omat mukautetut tehtävätallenteen ohjeruudussa tehtävän ohjauksina toistettavina tai tekstinä tarkasteltavina. Tallenna tehtävätallenteet ensin omaan BPM-kirjastoon ja päivitä ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään](../../fin-ops/get-started/help-connect.md).
 
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Ohjeen yleiskatsaus](../../fin-ops/get-started/help-overview.md)
+[Ohjejärjestelmä](../../fin-ops/get-started/help-overview.md)
 
-[Yhdistämisen ohje](../../fin-ops/get-started/help-connect.md)
+[Yhdistäminen ohjejärjestelmään](../../fin-ops/get-started/help-connect.md)
 
 [Tehtävien tallennustoiminto](task-recorder.md)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 956af80a8ab2f454d9f523d3c74dda754ef0f793
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 7f0cc1c7ec1234b7eedaade0ffadb66965ed2121
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009373"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772985"
 ---
 # <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a>Talent ei näy Microsoft Dynamics -sovellusten yhteydessä (Common Data Service 1.0)
 
@@ -34,9 +34,9 @@ Asiakas ei näe Microsoft Dynamics 365 Talent -sovellusta muiden Microsoft Dynam
 
 **Tarkkuus**
 
-Käyttäjä on lisättävä ympäristön tekijän rooliin Microsoft PowerAppsin ympäristössä.
+Käyttäjä on lisättävä ympäristön tekijän rooliin Microsoft Power Appsin ympäristössä.
 
-1. Järjestelmänvalvoja, jolla on PowerApps-palvelupaketin 2 käyttöoikeus, on avattava [PowerAppsin hallintaportaali](https://preview.admin.powerapps.com/).
+1. Järjestelmänvalvoja, jolla on Power Apps-palvelupaketin 2 käyttöoikeus, on avattava [Power Appsin hallintaportaali](https://preview.admin.powerapps.com/).
 2. Valitse ensin **Ympäristöt** ja sitten oikea Talentin ympäristö.
 3. Valitse **Ympäristöroolit**-välilehden **Suojaus**-välilehdessä **Ympäristön tekijä**.
 

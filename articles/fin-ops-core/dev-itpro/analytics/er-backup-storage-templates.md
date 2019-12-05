@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553088"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771418"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER-mallien varmuuskopion tallennustila
 
 [!include [banner](../includes/banner.md)]
 
-Yrityskäyttäjät voivat määrittää [sähköisen raportoinnin (ER) kehyksen](general-electronic-reporting.md) avulla lähtevien asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisiksi. Määritetyt ER-muodot voivat luoda valmiiksi määritettyjen mallien avulla erimuotoisia lähteviä asiakirjoja, kuten Microsoft Excel -työkirjoja, Microsoft Word -asiakirjoja tai PDF-tiedostoja. Malleihin täytetään ne tiedot, joita luotavia asiakirjoja varten määritetty tiedonkulku edellyttää.
+Yrityskäyttäjät voivat määrittää [sähköisen raportoinnin (ER) yleiskatsauksen](general-electronic-reporting.md) avulla lähtevien asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisiksi. Määritetyt ER-muodot voivat luoda valmiiksi määritettyjen mallien avulla erimuotoisia lähteviä asiakirjoja, kuten Microsoft Excel -työkirjoja, Microsoft Word -asiakirjoja tai PDF-tiedostoja. Malleihin täytetään ne tiedot, joita luotavia asiakirjoja varten määritetty tiedonkulku edellyttää.
 
 Kukin määritetty muoto voidaan julkaista ER-ratkaisun osana. Kukin ER-ratkaisu voidaan viedä yhdestä Finance and Operationsin esiintymästä ja tuoda toiseen esiintymään.
 
-ER-kehys säilyttää nykyisen Finance and Operations -esiintymän pakolliset mallit [tiedostojen hallintakehyksessä](../../fin-ops/organization-administration/configure-document-management.md). ER-kehyksen asetusten perusteella Microsoft Azure Blob Storage tai Microsoft SharePoint -kansio voidaan valita mallien ensisijaiseksi fyysiseksi tallennussijainniksi. (Lisätietoja on kohdassa [ER-kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md).) DocuValue-taulu sisältää kunkin mallin yksittäisen tietueen. Kunkin tietueen **AccessInformation**-kenttä sisältää määritetyssä tallennussijainnissa sijaitsevan mallitiedoston polun.
+ER-kehys säilyttää nykyisen Finance and Operations -esiintymän pakolliset mallit [tiedostojen hallinnan määrityksen](../../fin-ops/organization-administration/configure-document-management.md) avulla. ER-kehyksen asetusten perusteella Microsoft Azure Blob Storage tai Microsoft SharePoint -kansio voidaan valita mallien ensisijaiseksi fyysiseksi tallennussijainniksi. (Lisätietoja on kohdassa [Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md).) DocuValue-taulu sisältää kunkin mallin yksittäisen tietueen. Kunkin tietueen **AccessInformation**-kenttä sisältää määritetyssä tallennussijainnissa sijaitsevan mallitiedoston polun.
 
 Finance and Operations -esiintymiä hallittaessa nykyinen esiintymä voidaan päättää siirtää toiseen sijaintiin. Voit esimerkiksi siirtää tuotantoesiintymän uuteen eristysympäristöön. Jos määrität ER-kehyksen tallentamaan mallit Blob-objektisäilöön, uuden eritysympäristön DocuValue-taulu viittaa tuotantoympäristön Blob-objektisäilöön. Tätä esiintymää ei kuitenkaan voi käyttää eristysympäristössä, koska siirtoprosessi ei tue artefaktien siirtoa Blob-objektisäilössä. Jos sitten yrität luoda liiketoiminta-asiakirjoja suorittamalla mallia käyttävän ER-muodon, tapahtuukin poikkeus ja saat ilmoituksen puuttuvasta mallista. Sinut myös ohjataan käyttämään ER-poistotyökalua sekä poistamaan ja tuomaan uudelleen mallin sisältävä ER-muodon määritys. Koska ER-muodon määrityksiä voi olla useita, tämä prosessi voi kestää kauan.
 
@@ -94,6 +94,6 @@ Finance and Operationsin versiossa 10.0.5 ER-mallien varmuuskopioinnin tallennus
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+[Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 
-[Sähköisen raportointikehyksen määrittäminen](electronic-reporting-er-configure-parameters.md)
+[Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md)

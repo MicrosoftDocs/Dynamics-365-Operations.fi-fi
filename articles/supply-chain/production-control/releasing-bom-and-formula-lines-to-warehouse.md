@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c40877bc6557a81adc5c1b8d10afbbd26322b200
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3677db634366ecfe6a26f2f5e01532ce5a087593
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249927"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815246"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Tuotantorakenne- ja reseptirivien vapauttaminen varastoon
 
@@ -31,7 +31,7 @@ ms.locfileid: "2249927"
 Tässä ohjeaiheessa käsitellään tuoterakennerivien ja reseptirivien raaka-aineiden varastoon vapauttamisprosessia. Kun vapautat tuoterakenne- tai reseptirivin varastoon, järjestelmä määrittää ensin, onko materiaalia jo saatavana työnohjauksessa tuotannon syöttösijainnissa, jossa tuotantoprosessi kuluttaa materiaalin.
 
 - Jos materiaalia on saatavana tuotannon syöttösijainnissa, se kerätään kyseisestä sijainnista heti, kun signaali materiaalin vapauttamisesta varastoon on annettu.
-- Jos materiaalia ei ole saatavana tuotannon syöttösijainnissa, materiaalin vapautus ilmaisee, että materiaali on siirrettävä varastosijainneista tuotannon syöttösijaintiin. Materiaali siirretään raaka-aineiden keräilyn varastotyön kautta. Tämän vuoksi raaka-aineiden varastoprosessit on määritettävä. Lisätietoja on kohdissa [Täydennys](../warehousing/replenishment.md) ja [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](../warehousing/control-warehouse-location-directives.md).
+- Jos materiaalia ei ole saatavana tuotannon syöttösijainnissa, materiaalin vapautus ilmaisee, että materiaali on siirrettävä varastosijainneista tuotannon syöttösijaintiin. Materiaali siirretään raaka-aineiden keräilyn varastotyön kautta. Tämän vuoksi raaka-aineiden varastoprosessit on määritettävä. Lisätietoja on kohdissa [Täydennyksen yleiskatsaus](../warehousing/replenishment.md) ja [Varastotyön valvonta työmallien ja sijaintidirektiivien avulla](../warehousing/control-warehouse-location-directives.md).
 
 ## <a name="methods-for-releasing-bom-and-formula-lines"></a>Tuoterakenne- ja reseptirivien vapauttamistavat
 

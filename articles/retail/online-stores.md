@@ -1,9 +1,9 @@
 ---
-title: Määritä verkkokaupat
-description: Tässä artikkelissa on tietoja verkkokaupoista ja niiden määrittämisestä Dynamics 365 Retailissa.
+title: Verkkokauppakanavan määrittäminen
+description: Tässä artikkelissa on tietoja verkkokauppakanavista ja niiden määrittämisestä Dynamics 365 Retailissa.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02402269a6976ff856e703cc8e94fbf0758ea771
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: e7932879aac6ea4054f6c35de99f11c2662dd472
+ms.sourcegitcommit: 595a4ec63a32bd5d4321126bda7cf72a75a930a2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017963"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "2688806"
 ---
-# <a name="set-up-online-stores"></a>Verkkokauppojen määrittäminen
+# <a name="set-up-an-online-store-channel"></a>Verkkokauppakanavan määrittäminen
 
 [!include [banner](includes/banner.md)]
 
-Tässä artikkelissa on tietoja verkkokaupoista ja niiden määrittämisestä Dynamics 365 Retailissa.
+Tässä artikkelissa on tietoja verkkokauppakanavista ja niiden määrittämisestä Dynamics 365 Retailissa.
 
 Retail tukee useita vähittäismyynnin kanavia. Vähittäismyyntikanavia ovat verkkokaupat, puhelinkeskukset ja vähittäismyymälät (eli kivijalkakaupat). Verkkokaupassa vähittäismyyjät saavat näkyvyyttä Internetissä, ja asiakkaat voivat ostaa tuotteita sekä verkkokaupasta että vähittäismyymälästä. Verkkokaupasta tuotteita ostavat asiakkaat voivat saada tuotteet kotiin toimitettuina tai noutaa ne paikallisesta myymälästä. Luot verkkokaupan Retail -asiakasohjelmassa. Verkkokauppa julkaistaan kolmannen osapuolen verkkokaupassa, joka on yhdistetty Retailiin. Kolmannen osapuolen verkkokauppa toimii verkkokauppasi edustana (käyttöliittymänä), ja voit valita haluamasi asiakkuudenhallintajärjestelmän ja käyttöliittymäominaisuudet. Käytettävissä useita tämäntyyppisiä integrointivaihtoehtoja. Verkkokaupalle määritetyt ominaisuudet ohjaavat verkkokaupan toimintoja. Esimerkki: Määrittelet siirtymisluokan hierarkian Retailissa ja määrität sen verkkokaupalle. Kun julkaiset verkkokaupan kolmannen osapuolen verkkokaupassa, siirtymisluokan hierarkia näkyy kaupan verkkoversiossa. Ostajat voivat selata verkkokauppaa ja hakea tuotteita siirtymisluokan hierarkian avulla. Jos haluat luoda verkkokaupan, sinun on määritettävä kaupalle komponentit, jotka mahdollistavat tapahtumien käsittelyn. Sinun täytyy lisätä esimerkiksi valikoimat, määritteet, maksutavat ja toimitustavat. Voit määrittää hinnat, kampanjat, alennukset, alennukset, kauppasopimukset ja lähetyksen ehtoja, jotka liittyvät Internet-kauppa. Kun olet julkaissut verkkokauppasi kolmannen osapuolen verkkokaupassa, voit luoda sille vähittäismyynnin tuoteluetteloita. Luettelon tuotteista tulee verkkokaupassa tuoteluetteloita. Kun asiakas ostaa tuotteita verkkokaupasta, saatavilla oleva varasto päivittyy ja synkronoituu asiakasohjelmassa. Lisäksi ostoille luodaan myyntitilaukset ja ne lähetetään asiakasohjelmaan tilauksen toimitusta ja käsittelyä varten.
 

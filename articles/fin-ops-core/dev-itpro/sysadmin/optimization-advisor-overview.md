@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4e47aea3a9d1ce62a85aac9a4acce398b5847f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191405"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811967"
 ---
 # <a name="optimization-advisor-overview"></a>Optimointiavustajan yleiskuvaus
 
@@ -38,7 +38,7 @@ Moduulin virheellinen määritys ja asetukset voivat vaikuttaa haitallisesti sov
 
 **Optimointityökalu**-työtila on työkalu, jolla tehokäyttäjät, yritysanalyytikot, toiminnalliset konsultit ja IT-tukitoiminnot voivat tunnistaa moduulin määrityksiin ja liiketoimintatietoihin liittyvät ongelmat. Optimointiavustaja ehdottaa moduulin määritykselle parhaat käytännöt ja tunnistaa vanhentuneet tai virheelliset liiketoimintatiedot.
 
-Optimointiavustaja suorittaa säännöllisesti parhaiden käytäntöjen säännöt. Oletussääntöjoukko on käytettävissä, mutta käyttäjät voivat luoda myös mukautuksia, riippumattomien ohjelmistotoimittajien ratkaisuja ja liiketoimintatietoja koskevia sääntöjä. Lisätietoja sääntöjen luomisesta on kohdassa [Uusien sääntöjen luominen](./create-rules-optimization-advisor.md).
+Optimointiavustaja suorittaa säännöllisesti parhaiden käytäntöjen säännöt. Oletussääntöjoukko on käytettävissä, mutta käyttäjät voivat luoda myös mukautuksia, riippumattomien ohjelmistotoimittajien ratkaisuja ja liiketoimintatietoja koskevia sääntöjä. Lisätietoja sääntöjen luomisesta on kohdassa [Optimointiavustajan sääntöjen luominen](./create-rules-optimization-advisor.md).
 
 Kun sääntörikkomus havaitaan, luotava optimointimahdollisuus tulee näkyviin **Optimointityökalu**-työtilaan. Käyttäjä voi suorittaa korjaustoiminnot suoraan **Optimointityökalu**-työtilassa.
 
@@ -92,6 +92,6 @@ Voit poistaa tiettyjen sääntöjen aktivoinnin valitsemalla ensin säännön mu
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Uusien sääntöjen luominen](./create-rules-optimization-advisor.md)
+[Optimointiavustajan sääntöjen luominen](./create-rules-optimization-advisor.md)
 
 [Dynamics 365 for Finance and Operationsin optimointineuvoja (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

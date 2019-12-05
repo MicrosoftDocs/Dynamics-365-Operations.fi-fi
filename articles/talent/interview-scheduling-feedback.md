@@ -1,5 +1,5 @@
 ---
-title: Haastattelujen aikataulutus ja palaute
+title: Hakijoiden haastattelujen ajoittaminen Attractissa
 description: Tässä ohjeaiheessa on tietoja haastattelujen aikataulutus- ja palautetehtävistä Attractissa.
 author: hasrivas
 manager: AnnBe
@@ -14,18 +14,18 @@ ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
-ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 33eba9796ca997fde4be9a46050207d313551bde
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517887"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832742"
 ---
-# <a name="interview-scheduling-and-feedback"></a>Haastattelujen aikataulutus ja palaute
+# <a name="schedule-interviews-in-attract"></a>Hakijoiden haastattelujen ajoittaminen Attractissa
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-## <a name="scheduler-activity"></a>Ajastus-tehtävä
+## <a name="scheduler-activity"></a>Ajastustehtävä
 
 Valinnaisessa ajastustehtävässä on kaksi osaa: ehdokkaan käytettävyystietojen pyytäminen ja aikataulu. Ehdokkaan käytettävyystiedot -osassa voit pyytää ehdokkaan käytettävyystietoja sähköpostitse. Aikataulu-osassa voi sopia haastattelun ajankohdan ehdokkaan ja työhönottoryhmän kesken.
 

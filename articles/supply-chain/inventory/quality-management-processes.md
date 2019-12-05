@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22372bd2d42b526d10e39174e7fb5ec5281d1b73
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 544721af404775a6d8b65628848caa84ceaebe30
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572785"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813820"
 ---
 # <a name="quality-management-processes"></a>Laadunhallintaprosessit
 
@@ -90,14 +90,14 @@ Korjauksille kannattaa määrittää yksilöllinen asiakirjatyyppi **Asiakirjaty
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Laadunhallinnan ottaminen käyttöön](enable-quality-management.md)
+[Laadunhallinnan yleiskuvaus](enable-quality-management.md)
 
-[Määrityksistä poikkeamisen hallinnan ottaminen käyttöön](enable-nonconformance-management.md)
+[Määrityksistä poikkeamisen hallinta](enable-nonconformance-management.md)
 
 [Varastoesto](inventory-blocking.md)
 
 [Karanteenitilaukset](quarantine-orders.md)
 
-[Laatutilausten määrittäminen (tehtäväopas)](tasks/set-up-quality-orders.md)
+[Määritä laatutilaukset](tasks/set-up-quality-orders.md)
 
-[Tavaroiden laadun tarkistaminen (tehtäväopas)](tasks/inspect-quality-goods.md)
+[Tarkista tavaroiden laatu](tasks/inspect-quality-goods.md)

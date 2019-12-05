@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 010d68b79300d15292dbcd4754eed8aac115cdce
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551446"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812830"
 ---
 # <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Sisällön jakaminen muiden osallisten kanssa Dynamics 365 Talent: Onboardissa
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 Talent: Onboardissa voi jakaa perehdytysoppaita ja mallej
 
 3. Jos vastaanottajien on voitava tarkistaa malli, määritä **Vastaanottaja**-kohdassa **Saavatko seuraavat käyttäjät tehdä muokkauksia?** -asetukseksi **Käytössä**. Jos vastaanottajille on ilmoitettava sähköpostitse, että jaat mallin heidän kanssaan, määritä **Lähetä sähköposti-ilmoitus vastaanottajille** -asetukseksi **Käytössä**.
 
-    [!Mallin käyttöoikeuksien ja asetusten määrittäminen](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
+    [![Mallin käyttöoikeuksien ja sähköpostiasetusten määrittäminen](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
 
 4. Anna nimi tai sähköpostiosoite ja valitse vastaanottaja avattavasta luettelosta.
 5. Voit tarkistaa tai muuttaa **Käytön hallinta** -välilehdessä, mitä vastaanottajat voivat tehdä mallille. Voit vaihtaa vastaanottajan käyttöoikeuksia valitsemalla vastaanottajan nimen vieressä olevassa avattavassa luettelossa joko **Saa katsella**, **Saa muokata** tai **Poista**.
@@ -68,6 +68,6 @@ Microsoft Dynamics 365 Talent: Onboardissa voi jakaa perehdytysoppaita ja mallej
 ### <a name="see-also"></a>Lisätietoja
 
 - [Onboard-sovelluksen kokeileminen tai ostaminen](https://dynamics.microsoft.com/talent/onboard/)
-- [Uutta](./whats-new.md)
-- [Julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Tuen saaminen](./talent-support.md)
+- [Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet](./whats-new.md)
+- [Julkaisusuunnitelmat](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft iDynamics 365 Talentin tuki](./talent-support.md)

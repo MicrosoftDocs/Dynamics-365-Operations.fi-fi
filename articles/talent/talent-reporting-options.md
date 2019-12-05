@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 50342c847200d015a66c6f22007070bb26c6caef
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: ecbeb03b535f19131ddc6649d005702876bab65c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009349"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772962"
 ---
 # <a name="reporting-options-in-talent"></a>Talentin raportointiasetukset
 
@@ -42,7 +42,7 @@ Käyttäjä ei voi mukauttaa upotettuja Microsoft Power BI -raportteja.
 
 **Ratkaisu**
 
-- Common Data Serviceen siirtyvät Core HR -tiedot voidaan raportoida PowerApps Common Data Service -liittimen välityksellä Power BI Desktopiin. Huomaa, että Common Data Service sisältää Core HR -tietojen alijoukon. Lisätietoja Power BI:stä ja koontinäytöistä on kohdassa [Power BI -raporttien ja koontinäyttöjen luominen PowerApps Common Data Servicen avulla](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi).
+- Common Data Serviceen siirtyvät Core HR -tiedot voidaan raportoida Power Apps Common Data Service -liittimen välityksellä Power BI Desktopiin. Huomaa, että Common Data Service sisältää Core HR -tietojen alijoukon. Lisätietoja Power BI:stä ja koontinäytöistä on kohdassa [Power BI -raporttien ja koontinäyttöjen luominen Power Apps Common Data Servicen avulla](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi).
 - Sähköistä raportointia (ER) voi käyttää joissakin Talentin raporteissa. Asiakaslähtöiset mukautukset voidaan tehdä ER-määritysvaihtoehtojen avulla.
 - Tiedot voidaan viedä Microsoft Exceliin tai Microsoft Wordiin käyttämällä Talentin Microsoft Office -integraation kautta tarjoamia erilaisia tietoyksiköitä.
 

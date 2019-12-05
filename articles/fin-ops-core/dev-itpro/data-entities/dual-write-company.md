@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: aa4d54fd7b3ab407751ad6ca1032d742c23eed41
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 21c2143f4fa58d51f64e349c7963cb17e04bad97
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184528"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772434"
 ---
 ## <a name="company-concept-in-common-data-service"></a>Yrityksen käsite Common Data Servicessa
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Finance and Operationsin *yritys*-käsite on sekä oikeudellinen että liiketoiminnallinen yksikkö. Se on myös tietojen suojauksen ja näkyvyyden raja. Käyttäjät työskentelevät aina yksittäisen yrityksen kontekstissa, ja suurin osa tiedoista on yrityksen omistamia.
 
@@ -60,12 +58,14 @@ Kuten edellä olevassa kuvassa näkyy, tämä 1:1-yhteys liiketoimintayksikön, 
 
 Viimeinen aihe, josta keskustellaan, on se, miten kaksoiskirjoitus määrittää, mihin omistajaryhmään sen tulisi liittää tietueita. Tätä toimintaa ohjaa cdm\_Company-tietueen **Oletusomistajaryhmä**-kenttä. Kun cdm\_Company-tietueelle on otettu käyttöön kaksoiskirjoitus, laajennus luo automaattisesti liittyvän liiketoimintayksikön ja omistajaryhmän (jos sitä ei vielä ole) ja määrittää **Oletusomistajaryhmä**-kentän. Järjestelmänvalvoja voi muuttaa kentän arvoksi eri arvon. Järjestelmänvalvoja ei kuitenkaan voi tyhjentää kenttää niin kauan kuin entiteetti on kaksoiskirjoitustilassa.
 
+> [!div class="mx-imgBorder"]
 ![Oletusomistajaryhmä-kenttä](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Yrityksen tietojen omistajuus ja esilataus
 
 Common Data Service -integrointi tuo yrityksen pariteetin käyttämällä yritystunnusta tietojen omistajuuden ilmaisemiseen. Kuten seuraavassa kuvassa näkyy, kaikkia yrityskohtaisia entiteettejä laajennetaan siten, että niillä on monta-yhteen (N:1)-suhde cdm\_Company-entiteetin kanssa.
 
+> [!div class="mx-imgBorder"]
 ![N:1-suhde yrityskohtaisen entiteetin ja cdm_Company-yksikön välillä](media/dual-write-bootstrapping.png)
 
 + Kun yritys on lisätty ja tallennettu, arvo tietueissa muuttuu vain luku -arvoksi. Siksi käyttäjien tulee varmistaa, että he valitsevat oikean yrityksen.

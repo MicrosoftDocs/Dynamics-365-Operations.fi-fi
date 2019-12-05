@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653508"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813796"
 ---
 # <a name="demand-forecasting-setup"></a>Kysynnän ennusteiden asetukset
 
@@ -70,7 +70,8 @@ Supply Chain Management käyttää automaattianalyysipalveluiden verkkopalvelua 
 -   Azuren tallennustilin nimi
 -   Azuren tallennustilin avain
 
-**Huomautus:** Azuren tallennustilin nimi ja avain tarvitaan vain, jos käytät mukautettua tallennustiliä. Jos käytät paikallista versiota, sinulla on oltava mukautettu tallennustili Azuressa niin, että automaattianalyysipalvelu voi käyttää historiallisia tietoja. 
+> [!NOTE]
+> Azuren tallennustilin nimi ja avain tarvitaan vain, jos käytät mukautettua tallennustiliä. Jos käytät paikallista versiota, sinulla on oltava mukautettu tallennustili Azuressa niin, että automaattianalyysipalvelu voi käyttää historiallisia tietoja. 
 
 Voit käyttää omaa palveluasi kysynnän ennusteiden luomiseen automaattianalyysistudion tai Supply Chain Managementin kysynnän ennusteiden luomisen kokeilujen avulla. Supply Chain Managementissa on ohjeita kysynnän ennusteiden luomiskokeilujen käyttöönottamisesta verkkopalveluna. Valitse **Kysynnän ennusteen parametrit** -sivulla **Azuren automaattianalyysipalvelut** -välilehti.
 
@@ -93,9 +94,9 @@ Voit määrittää **Kohdistustunnukset**-välilehdessä kunkin kohdistustunnuks
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Kysynnän ennusteen esittely](introduction-demand-forecasting.md)
+[Kysynnän ennustepalveluiden yleiskatsaus](introduction-demand-forecasting.md)
 
-[Tilastollisen perusennusteen luonti](generate-statistical-baseline-forecast.md)
+[Tilastollisen perusennusteen luominen](generate-statistical-baseline-forecast.md)
 
 [Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
 

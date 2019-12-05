@@ -1,5 +1,5 @@
 ---
-title: Analyysiraporttien käyttäminen Microsoft Dynamics 365 Talent – Attractissa
+title: Analyysiraporttien käyttäminen Attractissa
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent – Attractin työhönottoprosessin merkityksellisten tietojen analyysiraportteja
 author: fewatson
 manager: AnnBe
@@ -19,14 +19,16 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: 5a4d160e8c90725d5ea129a76fd48da1c5af7900
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4ae608bbca111313d8c77e63f6a7a95813f6e5cd
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551515"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833228"
 ---
-# <a name="use-analytic-reports-in-microsoft-dynamics-365-talent---attract"></a>Analyysiraporttien käyttäminen Microsoft Dynamics 365 Talent – Attractissa
+# <a name="use-analytic-reports-in-attract"></a>Analyysiraporttien käyttäminen Attractissa
+
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attractin analyyttiset raportit tarjoavat OOTB-ratkaisun työhönottoprosessin merkityksellisille tiedoille. Käytettävissä olevia ominaisuuksia ovat:
 

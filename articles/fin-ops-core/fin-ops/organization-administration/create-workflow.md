@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2168b33c8495eab61ec0c8262b042cd16420031c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a643be553f3fcdfbe53f2024982a596e498830a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190094"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811286"
 ---
 # <a name="create-workflows-overview"></a>Työnkulkujen luonnin yleiskuvaus
 
@@ -54,21 +54,21 @@ Seuraavien ohjeiden avulla voit määrittää työnkulkuprosessin ominaisuudet.
 
 1. Valitse alusta varmistaaksesi, että työnkulun elementtiä ei ole valittuna.
 2. Napsauta **Ominaisuudet** avataksesi **Ominaisuudet**-lomakkeen työnkululle.
-3. Noudata ohjeiden ohjeaiheessa [Työnkulun ominaisuuksien konfiguroiminen](configure-workflow-properties.md).
+3. Noudata ohjeaiheen [Työnkulun ominaisuuksien konfiguroiminen](configure-workflow-properties.md) menettelyjä.
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Työnkulun elementtien konfiguroiminen
 
 Määritä jokainen elementti, jonka vedit alustaan. Lisätietoja kunkin työnkulkuelementin muokkaamisesta on seuraavissa ohjeaiheissa.
 
-- [Manuaalisen tehtävän konfiguroiminen](configure-manual-task-workflow.md)
-- [Automaattisen tehtävän määrittäminen](configure-automated-task-workflow.md)
-- [Hyväksyntäprosessin konfiguroiminen](configure-approval-process-workflow.md)
-- [Hyväksyntävaiheen asetusten määrittäminen](configure-approval-step-workflow.md)
-- [Manuaalisen päätöksen asetusten määrittäminen](configure-manual-decision-workflow.md)
-- [Ehdollisen päätöksen asetusten määrittäminen](configure-conditional-decision-workflow.md)
-- [Rinnakkaisen tehtävän asetusten määrittäminen](configure-parallel-activity-workflow.md)
-- [Määritä rinnakkaishaara](configure-parallel-branch-workflow.md)
-- [Määritä rivinimikkeen työnkulku](configure-line-item-workflow.md)
+- [Manuaalisten tehtävien konfiguroiminen työnkulkuun](configure-manual-task-workflow.md)
+- [Automaattisten tehtävien määrittäminen työnkulkuun](configure-automated-task-workflow.md)
+- [Hyväksyntäprosessien lisääminen työnkulkuun](configure-approval-process-workflow.md)
+- [Hyväksyntävaiheiden lisääminen työnkulkuun](configure-approval-step-workflow.md)
+- [Manuaalisten päätösten konfiguroiminen työnkulkuun](configure-manual-decision-workflow.md)
+- [Ehdollisten päätösten konfiguroiminen työnkulkuun](configure-conditional-decision-workflow.md)
+- [Määritä rinnakkaiset haarat työnkulussa](configure-parallel-activity-workflow.md)
+- [Rinnakkaishaaran asetusten määrittäminen](configure-parallel-branch-workflow.md)
+- [Rivinimikkeen työnkulkujen määrittäminen](configure-line-item-workflow.md)
 
 ## <a name="resolve-any-errors-or-warnings"></a>Korjaa mahdolliset virheet ja varoitukset
 

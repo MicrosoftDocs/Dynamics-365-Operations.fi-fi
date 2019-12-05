@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c4636f5a023786e3871eb5d907e2e9546181827a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025266"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811777"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Näytön asettelut myyntipisteeseen (POS)
 
@@ -171,7 +171,7 @@ Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita
 
     - **Toiminnot** – käytettäessä myyntipisteen toimintoja valitse listasta toiminto, joka suoritetaan, kun painiketta napsautetaan myyntipisteessä.
 
-        Näet myyntipisteen tuettujen toimintojen luettelon kohdasta [Myyntipisteen toimintoja, online ja offline](pos-operations.md).
+        Myyntipisteen tuettujen toimintojen luettelo on kohdassa [Myyntipisteen online- ja offline-toiminnot](pos-operations.md).
 
     - **Toiminnon parametrit** – Jotkin myyntipisteen toiminnoista käyttävät lisäparametreja, kun ne käynnistetään. Esimerkiksi työvaiheelle Lisää tuote käyttäjät voivat määrittää lisättävän tuotteen.
     - **Painikkeen teksti** – Määritä teksti, joka näkyy myyntipisteen painikkeessa.
@@ -193,4 +193,4 @@ Painikkeruudukon suunnitteluohjelman avulla voit määrittää painikeruudukoita
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Retail POS:n asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)
+[Retail point of salen (POS) asettelun suunnittelutoiminnon asentaminen](install-pos-layout-designer.md)

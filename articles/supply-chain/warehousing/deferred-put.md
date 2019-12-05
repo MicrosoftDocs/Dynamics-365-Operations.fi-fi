@@ -3,7 +3,7 @@ title: Varastotyön lykätty käsittely
 description: Tässä ohjeaiheessa käsitellään toimintoja, joiden avulla varastotyön lykätty käsittely on mahdollista Dynamics 365 Supply Chain Managementissa.
 author: josaw1
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b67b3899a506c02b581d04f51691cb4408ee012e
+ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026916"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815785"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Varastotyön lykätty käsittely
 
@@ -30,7 +30,6 @@ ms.locfileid: "2026916"
 [!include [banner](../includes/pivate-preview-banner.md)]
 
 Tässä ohjeaiheessa kuvataan toimintoja, joiden avulla varastotyön lykätty käsittely on mahdollista Dynamics 365 Supply Chain Managementissa.
-
 
 Lykätyn käsittely toiminnon avulla varastotyöntekijät jatkavat työskentelyä, kun hyllytystoimintoa käsitellään taustalla. Lykätty käsittely on kätevää, kun useita työrivejä on käsiteltävä ja työntekijä voi antaa työn käsittelyn toimia asynkronisesti. Se on hyödyllinen myös silloin, kun palvelimella voi olla ad-hoc-tai suunnittelemattomia lisäyksiä käsittelyaikaan, ja lisääntynyt käsittelyaika saattaa vaikuttaa käyttäjän tuottavuuteen.
 
@@ -50,6 +49,8 @@ Käytännöt määritetään **Työn käsittelykäytännöt** -sivulla. Seuraava
 | Työn käsittelymetodi          | Menetelmä, jota käytetään työrivin käsittelyyn. Jos menetelmän arvoksi on määritetty **Välitön**, käyttäytyminen muistuttaa toimintaa, jolloin rivin käsittelyyn ei käytetä työn käsittelykäytäntöjä. Jos menetelmän arvoksi on määritetty **Lykätty**, käytetään eräkehystä käyttävää lykättyä käsittelyä. |
 | Lykätty käsittelykynnys   | Arvo **0** (nolla) tarkoittaa, että raja-arvoa ei ole. Tässä tapauksessa käytetään lykättyä käsittelyä, jos sitä voidaan käyttää. Jos tietyn raja-arvon laskenta on kynnysarvon alapuolella, käytetään Välitön-menetelmää. Muussa tapauksessa käytetään Lykätty-menetelmää, jos sitä voidaan käyttää. Myyntiin ja siirtoon liittyvän työn osalta kynnys lasketaan työhön liittyvien lähdekuormitusrivien määrän mukaan. Täydennystyötä varten raja-arvo lasketaan työrivien määräksi, joita työ täydentää. Jos määrität raja-arvoksi esimerkiksi **5** myynnille, pienemmät työt, joissa on vähemmän kuin viisi alkuperäistä lähdekuormitusriviä, eivät käytä lykättyä käsittelyä, mutta suuremmissa töissä sitä käytetään. Kynnys vaikuttaa vain, jos työn käsittelymenetelmä on **Lykätty**. |
 | Lykätty käsittelyn eräryhmä |Eräryhmä, jota käytetään käsittelyyn. |
+
+Seuraavia hyllytyksen käsittelytehtävien työtilaustyyppejä tuetaan: myyntitilaus, siirtotilauksen varasto-otto ja täydennys.
 
 ## <a name="assigning-the-work-creation-policy"></a>Työn luontikäytännön määrittäminen
 
@@ -99,7 +100,7 @@ On olemassa useita skenaarioita, joissa lykättyä hyllytystä ei käytetä, vai
 - Manuaalista työn valmistumista käytetään.
 - Työ saadaan valmiiksi automaattisen täydennyksen avulla.
 - Valvontamalleja käytetään.
-- Työ käyttää kontteja.
+
 
 ## <a name="monitoring-the-deferred-processing-tasks-from-the-outbound-work-monitoring-workspace"></a>Lähtevän työn valvonta -työtilan lykättyjen käsittelytehtävien valvominen
 

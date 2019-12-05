@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 28ed12bd8cf2df7c25e14a25465cad1229676cfd
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5849de38962967f0614ff7afd40296c0f12ff476
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551976"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812853"
 ---
 # <a name="get-the-dynamics-365-talent---onboard-app"></a>Dynamics 365 Talent: Onboard -sovelluksen hankkiminen
 
@@ -39,9 +39,9 @@ Microsoft 365:n sähköpostiosoite ja salasana määritetään kokeilu- tai osto
 > [!WARNING]
 > Et voi siirtää kokeiluversiosta maksettuun tilausympäristöön. <!--Reviewers: please verify.-->
 
-Lisätietoja Talentin uusista ominaisuuksista on kohdassa [Uudet tai muuttuneet ominaisuudet Dynamics 365 Talentissa](./whats-new.md)ja [Dynamics 365- ja Power Platform -julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index). Jos haluat Onboardin uusien toimintojen esiversion, lisätietoja on kohdassa [Talentin esiversiotoimintojen käyttäminen](./access-preview-feature.md).
+Lisätietoja Talentin uusista ominaisuuksista on kohdassa [Uudet tai muuttuneet ominaisuudet Dynamics 365 Talentissa](./whats-new.md)ja [Dynamics 365- ja Power Platform -julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index). Jos haluat Onboardin uusien toimintojen esiversion, lisätietoja on kohdassa [Microsoft Dynamics 365 Talentin esiversiotoimintojen käyttäminen](./access-preview-feature.md).
 
-Jos olet IT-ammattilainen ja haluat lisätietoja Onboard-sovelluksen kahden version valmistelemisesta, lisätietoja on kohdassa [Onboard-sovelluksen valmisteleminen](./modular-app-tech-faq.md).
+Jos olet IT-ammattilainen ja haluat lisätietoja Onboard-sovelluksen kahden version valmistelemisesta, lisätietoja on kohdassa [Dynamics 365 Talent – Onboard -sovelluksen valmisteleminen](./modular-app-tech-faq.md).
 
 ## <a name="get-started-with-onboard"></a>Onboardin käytön aloittaminen
 
@@ -89,6 +89,6 @@ Jos hyväksyit oletustoimialuenimen, kun kirjauduit Onboardiin, voit vaihtaa sen
 ### <a name="see-also"></a>Lisätietoja
 
 - [Onboard-sovelluksen kokeileminen tai ostaminen](https://dynamics.microsoft.com/talent/onboard/)
-- [Uutta](./whats-new.md)
-- [Julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Tuen saaminen](./talent-support.md)
+- [Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet](./whats-new.md)
+- [Julkaisusuunnitelmat](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft iDynamics 365 Talentin tuki](./talent-support.md)

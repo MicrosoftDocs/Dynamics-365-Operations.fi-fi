@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5b52e1765d3afbe1730e96f58b601aebccd12787
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7154a6e8aff62b1ebf79edfecb1e1b99048f7c44
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181263"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771466"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -122,7 +122,7 @@ Jos määrität **Käytössä**-kentän arvoksi **Kyllä**, tulosteen esikatselu
 
 ### <a name="power-bi-destination"></a>Power BI -kohde
 
-Kun määrität **Käytössä**-kentän arvoksi **Kyllä**, voit käyttää omaa sähköisen raportoinnin ER-konfiguraatiota tietojen siirron järjestämiseen omasta esiintymästä Microsoft Power BI -palveluihin. Siirretyt tiedostot tallennetaan Microsoft SharePoint Server -esiintymään, joka on konfiguroitu tähän tarkoitukseen. Lisätietoja on ohjeaiheessa [Financen tietojen lähettäminen Power BI:hin sähköisen raportoinnin määritysten avulla](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+Kun määrität **Käytössä**-kentän arvoksi **Kyllä**, voit käyttää omaa sähköisen raportoinnin ER-konfiguraatiota tietojen siirron järjestämiseen omasta esiintymästä Microsoft Power BI -palveluihin. Siirretyt tiedostot tallennetaan Microsoft SharePoint Server -esiintymään, joka on konfiguroitu tähän tarkoitukseen. Lisätietoja on kohdassa [Sähköisen raportoinnin määrittäminen noutamaan tietoja Power BI:hin](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > Voit ohittaa oletustoiminnan (eli määrityksen valintaikkunan) luomalla päätulostekohteelle kohdeviittauksen ja tiedostokohteen sekä poistamalla sitten kaikki kohteet käytöstä.
@@ -163,4 +163,4 @@ Edellytyksenä on, että muotoa voi käyttää ER-määrityksissä. Jos sinulla 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+[Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b23860a7eda0ec9d75cca04728b7fc11d01bf967
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023881"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812738"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (26. maaliskuuta 2019)
 
@@ -75,11 +75,11 @@ Tässä versiossa kiinteät korvaussuunnitelmat näkyvät nyt, kun käyttäjät 
 Tässä versiossa voit nyt poistaa työtietueita käyttämällä **Avaa Excelissä** -asetusta Talentissa.
 
 ### <a name="upgrade-to-common-data-service"></a>Päivitä Common Data Serviceen
-Common Data Service -versioon tapahtuvan päivityksen määräajat lähestyvät nopeasti. Kirjaudu sisään PowerApps-hallintakeskukseen ja tarkista, onko tietokantasi päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Common Data Service -versioon tapahtuvan päivityksen määräajat lähestyvät nopeasti. Kirjaudu sisään Power Apps-hallintakeskukseen ja tarkista, onko tietokantasi päivitettävä. Lisätietoja määräajoista ja päivityksen vaiheista on kohdassa [Päivittäminen Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Esiversiossa
 
-Lisätietoja esikatselutoimintojen käyttöönottamisesta kohdasta [Esikatselutoimintojen käyttö Talentissa](./access-preview-feature.md).
+Lisätietoja esikatselutoimintojen käyttöönottamisesta on kohdasta [Esikatselutoimintojen käyttö Microsoft Dynamics 365 Talentissa](./access-preview-feature.md).
 
 ### <a name="allow-reason-codes-to-be-specified-on-leave-types"></a>Syykoodit on määritettävä lomatyyppien avulla.
 Organisaatiot saattavat tarvita lisätietoja, jotka liittyvät aikakatkaisupyyntöihin. Näiden tietojen saamiseksi työntekijöiden täytyy sisällyttää syykoodi aikarajoituksiinsa. Tämän julkaisun avulla voit nyt määrittää tietyn lomalajin yhteydessä olevat syykoodit ja antaa työntekijöille mahdollisuuden valita syykoodin aikakatkaisupyynnöissään.

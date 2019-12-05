@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd2f27c5797fbd34674e39013ed3e0e40cdb28b2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 44fafe1548f97d8e4a532a17b0ca596320b5e9fb
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251129"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814993"
 ---
 # <a name="service-management-overview"></a>Huoltohallinnan yleiskatsaus
 
@@ -66,8 +66,8 @@ Seuraavassa kaaviossa on kuvattu **huoltohallinnan** korkean tason liiketoiminta
 
 Palvelunhallinta voidaan integroida seuraavien moduulien kanssa sovelluksessa:
 
-  - [Myynti ja markkinointi](../sales-marketing/overview-sales-marketing.md)
-  - [Henkilöstö](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
+  - [Myynnin ja markkinoinnin yleiskatsaus](../sales-marketing/overview-sales-marketing.md)
+  - [Henkilöstöhallinto](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
 
   
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 491024c9c3d6c7d20ef212e167ceab6abac8dac7
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537852"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812577"
 ---
 # <a name="connect-the-help-system"></a>Yhdistäminen ohjejärjestelmään
 
@@ -54,7 +54,7 @@ Toimi seuraavasti **Järjestelmän parametrit** -sivulla:
 > [!IMPORTANT]
 > Kun avaat **Ohje**-välilehden ensimmäisen kerran, sinun on muodostettava yhteys Lifecycle Services -palveluun. Valitse lomakkeen keskellä oleva linkki, odota yhteyden muodostumista, sulje valintaikkuna ja nouda **Järjestelmäparametrit**-sivu valitsemalla **OK**.
 >
-> [![Yhdistäminen LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Yhdistäminen LCS:ään")](./media/connect-to-lcs-crop.png)
+> [![Muodosta yhteys LCS:ään](./media/connect-to-lcs-crop-1024x365.png "Muodosta yhteys LCS:ään")](./media/connect-to-lcs-crop.png)
 
 1. Valitse Lifecycle Services -projekti, johon yhteys muodostetaan.
 2. Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
@@ -80,7 +80,7 @@ Voit luoda tehtäväoppaiden avulla mukautetun ohjeen tai yhdistää sivuston Oh
 
 Voit luoda oman mukautetun Finance-, Supply Chain Management- tai Retail -ohjeen luomalla sille tehtävätallenteita ja tallentamalla ne LCS:n liiketoimintaprosessien kirjastoon. Mukautettuja tehtäväoppaita ei voi luoda Talentissa.
 
-Kumppanit voivat puolestaan siirtää kirjasto yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Voit myös kopioida yhdistetyn yleisen APQC-kirjaston sekä avata oman kopion, avata tehtävätallenteet sieltä, muokata niitä ja tallentaa sitten muutetut tallenteet. Lisätietoja on artikkelissa [Ohjeistuksena tai koulutuksena käytettävien tehtävätallenteiden luominen](../../dev-itpro/user-interface/task-recorder.md).
+Kumppanit voivat puolestaan siirtää kirjasto yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Voit myös kopioida yhdistetyn yleisen APQC-kirjaston sekä avata oman kopion, avata tehtävätallenteet sieltä, muokata niitä ja tallentaa sitten muutetut tallenteet. Lisätietoja on kohdassa [Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md).
 
 ### <a name="connect-a-custom-site"></a>Mukautetun sivuston yhdistäminen
 
@@ -91,8 +91,8 @@ Microsoftilla on raportti ja näytekoodi, jossa selitetään, miten mukautettu o
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Ohjeen yleiskatsaus](help-overview.md)
+[Ohjejärjestelmä](help-overview.md)
 
-[Tehtävän tallennustoiminnon yleiskatsaus](../../dev-itpro/user-interface/task-recorder.md)
+[Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md)
 
-[Dokumentaation tai koulutuksen luominen tehtävätallenteiden avulla](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Dokumentaation tai koulutuksen luominen tehtävien tallennustoiminnolla](../../dev-itpro/user-interface/task-recorder-training-docs.md)

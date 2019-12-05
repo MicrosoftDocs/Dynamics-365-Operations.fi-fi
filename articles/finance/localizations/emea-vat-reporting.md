@@ -17,12 +17,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8f1f8ed86af5b9fcb6ede91621b9227115bd2b59
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9d307ceae85773feb58d11e575df27e74b065cd3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175743"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773446"
 ---
 # <a name="vat-reporting-for-europe"></a>ALV-raportointi Euroopassa
 
@@ -263,7 +263,7 @@ Kunkin maan ALV-ilmoituksen on täytettävä sen maan lainsäädännön vaatimuk
 |----------------|---------------------------------------------------------------------------------|
 | Itävalta        |  [ALV-ilmoituksen erittely, Itävalta](emea-aut-vat-statement-details.md)         |
 | Belgia        |                                                                                 |
-| Tšekin tasavalta |  [ALV-ilmoituksen tiedot, Tšekin tasavalta](emea-cze-vat-statement-details.md)   |
+| Tšekin tasavalta |  [Tšekin tasavallan ALV-ilmoitus](emea-cze-vat-statement-details.md)   |
 | Viro        |  [ALV-ilmoituksen erittely, Viro](emea-est-vat-statement-details.md) |
 | Suomi        |                                                                                 |
 | Saksa        |                                                                                 |

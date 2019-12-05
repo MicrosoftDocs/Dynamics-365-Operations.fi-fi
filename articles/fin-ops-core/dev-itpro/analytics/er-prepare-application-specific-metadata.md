@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74750397dc344d74c018c27114357d3d05b95b7e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 89d36c305bc9210f7906cd4288e33e5028baecdb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550104"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771257"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>RCS:n ja ER:n sovelluskohtaisten metatietojen valmisteleminen
 
@@ -43,7 +43,7 @@ Tässä merkissä käytetään RCS:ää suunnittelemaan sellainen sovelluksen ER
 > Tässä esimerkissä luodaan konfiguraatio malliyritykselle Litware, Inc. Nämä vaiheet voidaan suorittaa missä tahansa yrityksessä.
 
 1. Siirry kohtaan **Organisaation hallinto \> Työtilat \> Sähköinen raportointi**.
-2. Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) -menettely. 
+2. Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita menettely [Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md). 
 3. Valitse **Metatietojen konfiguraatiot**.
 4. Valitse **Luo konfiguraatio**.
 5. Anna avattavan luettelon **Nimi**-kentässä nimi. Kirjoita tässä esimerkissä **Ulkomaankaupan metatiedot**.
@@ -54,14 +54,14 @@ Tässä merkissä käytetään RCS:ää suunnittelemaan sellainen sovelluksen ER
     > [!NOTE]
     > Voit valita joko koko sovelluksen tai valittujen mallien tai moduulien kaikki metatiedot. Muista kummassakin tapauksessa, että seuraavat metatiedot lisätään automaattisesti: tietue-, luettelo- ja laajennetut tietotyyppi (EDT) -taulut. Jos muita metatietoja tarvitaan, ne on lisättävä manuaalisesti.
 
-Ulkomaankauppatapahtumiin liittyvät metatiedot on lisättävä ja metatietonimikkeen on valittava manuaalisesti.
+    Ulkomaankauppatapahtumiin liittyvät metatiedot on lisättävä ja metatietonimikkeen on valittava manuaalisesti.
 
 9. Valitse **Lisää tietolähde \> Taulukkotietueet**.
 10. Suodata **Nimi**-kentän **Intrastat**-arvon mukaan.
 11. Valitse **Intrastat**-taulukkotietue.
 12. Valitse **OK**.
 
-Intrastat-taulukkotietueen metatiedot on lisättävä.
+    Intrastat-taulukkotietueen metatiedot on lisättävä.
 
 13. Valitse puussa **Taulukkotietueet Intrastat \> \>Suhteet\> IntrastatCommodity (Taulukkotietueet EcoResCategory)**.
 14. Valitse **Lisää metatiedot**.
@@ -95,11 +95,11 @@ Seuraava menettely näyttää, miten RCS-käyttäjä, jolla on **Järjestelmänv
 
 Ennen kuin suoritat tämän menettelyn, seuraava menettely on viimeisteltävä ensin.
 
-- [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md)
+- [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](tasks/er-configuration-provider-mark-it-active-2016-11.md)
 - [RSC:ssä käytettävien sovelluksen metatietojen valmisteleminen](#prepare-application-metadata-that-can-be-used-in-rcs)
 
 1. Valitse **Kaikki työtilat \> Sähköinen raportointi**.
-2. Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) -menettely. 
+2. Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita menettely [Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md). 
 3. Tuo metatiedot sisältävä sovelluksen ER-metatietokonfiguraatio, joka on määritetty luomaan sähköisiä ulkomaankaupan liiketoimintatoimialueen asiakirjoja. Loit tämän ER-metatietokonfiguraation ja veit sen XML-tiedostona [RSC:ssä käytettävien sovelluksen metatietojen valmisteleminen](#prepare-application-metadata-that-can-be-used-in-rcs) -menettelynä aiemmin tässä ohjeaiheessa.
 
     1. Valitse **Metatietojen konfiguraatiot**.
@@ -201,7 +201,7 @@ Voit tarvittaessa laajentaa aiemmin luotua metatietojoukkoa sovelluksen kanssa. 
 
 Seuraava menettely näyttää, miten RCS-käyttäjä, jolla on **Järjestelmänvalvoja**- tai **Sähköisen raportoinnin kehittäjä** -rooli, voi suunnitella uuden ER-mallin yhdistämismäärityksen käyttämällä sovelluksen metatietoja. Sovelluksen metatietoja käytetään verkossa RCS:n yhdistetyllä sovelluksella. ER-näytemallin yhdistäminen määritetään käyttämään ulkomaankauppatapahtumia.
 
-[Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) -menettelyn vaiheet on suoritettava ennen tämän menettelyn suorittamista RCS:ssä. Jos et ole vielä viimeistellyt [Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla](#access-application-metadata-by-using-an-er-configuration) -menettelyä aiemmin tässä ohjeaiheessa, siirry [Dynamics 365 for Finance and Operations 8.1:n sähköisen raportoinnin tehtäväoppaat](https://go.microsoft.com/fwlink/?linkid=2082739) -sivulle ja lataa seuraavat ER-konfiguraatiotiedostot etukäteen ja tallenna ne paikallisesti: **Ulkomaankaupan metatiedot.xml**, **Ulkomaankauppamalli.xml** ja **Ulkomaankaupan yhdistäminen.xml**.
+Menettelyn [Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheet on suoritettava ennen tämän menettelyn suorittamista RCS:ssä. Jos et ole vielä viimeistellyt [Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla](#access-application-metadata-by-using-an-er-configuration) -menettelyä aiemmin tässä ohjeaiheessa, siirry [Dynamics 365 for Finance and Operations 8.1:n sähköisen raportoinnin tehtäväoppaat](https://go.microsoft.com/fwlink/?linkid=2082739) -sivulle ja lataa seuraavat ER-konfiguraatiotiedostot etukäteen ja tallenna ne paikallisesti: **Ulkomaankaupan metatiedot.xml**, **Ulkomaankauppamalli.xml** ja **Ulkomaankaupan yhdistäminen.xml**.
 
 
 ### <a name="get-required-er-configurations"></a>Tarvittavien ER-konfiguraatioiden hankkiminen

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 733ecc7cfb4fee325560f5a6fe11612bb8ba57ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653599"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815292"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Toimittajayhteistyö ulkoisten toimittajien kanssa
 
@@ -218,7 +218,7 @@ Jos käytät tavaralähetysvarastoa, toimittajat voivat tarkastella seuraavien s
 
 ## <a name="working-with-rfqs-when-you-use-vendor-collaboration"></a>Tarjouspyyntöjen käsitteleminen toimittajayhteistyötä käytettäessä
 
-Tässä osassa käsitellään asiakkaiden ja toimittajien välistä viestintää tarjouspyyntöprosessin aikana. Siinä selitetään myös, miten tiedot välitetään toimittajille. Yleiskatsaus tarjousprosessin tuesta on kohdassa [Tarjouspyynnöt](request-quotations.md).
+Tässä osassa käsitellään asiakkaiden ja toimittajien välistä viestintää tarjouspyyntöprosessin aikana. Siinä selitetään myös, miten tiedot välitetään toimittajille. Yleiskatsaus tarjousprosessin tuesta on kohdassa [Tarjouspyyntöjen yleiskatsaus](request-quotations.md).
 
 ### <a name="alternates-attachments-amendments-and-returns"></a>Vaihtoehdot, liitteet, muutokset ja palautukset
 

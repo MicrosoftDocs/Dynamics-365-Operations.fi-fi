@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177491"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770686"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidoitujen raporttien laatiminen
 
@@ -41,7 +41,7 @@ Yksinkertaisin raportteja hyödyntävä konsolidointimenetelmä on koota raportt
 
 Seuraava kuva näyttää, miten raporttien raporttipuun määrityksellä voi tunnistaa kunkin konsolidoitavan yrityksen.
 
-![Raporttipuun määritykset](./media/reporting-tree-definition.png "Raporttipuun määritykset")
+![Raportointipuun määritys](./media/reporting-tree-definition.png "Raportointipuun määritys")
 
 Seuraavan kuvan konsolidoitu raportti näyttää, miten kutakin yritystä voi tarkastella erikseen, kun raporttipuuta ja raportin määritystä käytetään yhdessä. Konsolidoidut summat näytetään yhteenvetotasolla.
 
@@ -85,7 +85,7 @@ Kun raportti laaditaan, eliminointisummat lasketaan sarakkeissa F, G ja H, ja yh
 
 Seuraavassa kuvassa on konsolidoitu raportti.
 
-![Konsolidoidun raportin tuloslaskelma](./media/consolidated-report-income-statement.png "Konsolidoidun raportin tuloslaskelma")
+![Konsolidoitu raportin tuloslaskelma](./media/consolidated-report-income-statement.png "Konsolidoitu raportin tuloslaskelma")
 
 Riippumatta siitä käytätkö tilejä, dimensioita tai molempia, eliminointimerkinnät voidaan suodattaa taloushallinnon raportoinnissa pois dimension suodatustoiminnoilla.
 
@@ -104,14 +104,14 @@ Kun raportti laaditaan, Contoso Germany -raportti näyttää 100 prosenttia myyn
 
 Jos yrityksen omistusosuus on alle 1 prosenttia, voit valita **Salli alle 1 prosentin koonti** -valintaruudun **Raporttiasetukset**-sivun **Lisäasetukset**-välilehdessä, kuten seuraavassa kuvassa. Siinä tapauksessa raporttipuun **Koontiprosentti**-sarakkeen arvoja käsitellään siten kuin ne olisivat alle 1 prosenttia. Jos esimerkiksi annat arvon **,8**, konsolidoidulle tasolle kootaan 0,8 eikä 80 prosenttia. Saat saman tuloksen myös jättävät **Salli alle 1 prosentin koonti** -valintaruudun valitsematta ja antamalla arvon **,008** **Koontiprosentti**-sarakkeessa.
 
-![Raporttiasetuksen vaihtoehdot](./media/reporting-setting-options.png "Raporttiasetuksen vaihtoehdot")
+![Raportointiasetusten vaihtoehdot](./media/reporting-setting-options.png "Raportointiasetusten vaihtoehdot")
 
 ### <a name="showing-ownership-as-a-separate-row-on-the-consolidated-report"></a>Omistajuuden näyttäminen konsolidoidun raportin erillisellä rivillä
 Toinen vaihtoehto vähemmistöosuuden näyttämiseen on tytäryhtiön 100 prosenttia raportin jokaisella rivillä mutta vähentää vähemmistöosuus nettotuotosta.
 
 Kuten seuraavassa kuvassa näytetään, vähemmistöosuuden voi laskea raporteissa käyttämällä rivimäärityksen **IF THEN ELSE** -lauseketta ja sarakerajoitusta.
 
-![Omistusosuuden näyttäminen konsolidoidun raportin erillisellä rivillä](./media/Showing-ownership-separate-row-consolidated-report.png "Omistusosuuden näyttäminen konsolidoidun raportin erillisellä rivillä")
+![Omistajuuden näyttäminen konsolidoidun raportin erillisellä rivillä](./media/Showing-ownership-separate-row-consolidated-report.png "Omistajuuden näyttäminen konsolidoidun raportin erillisellä rivillä")
 
 ## <a name="multiple-charts-of-accounts-across-legal-entities"></a>Useita yritysten välisiä tilikarttoja
 Vaikka eri yrityksillä on usein erilaiset tilikartat, niille kuitenkin halutaan muodostaa konsolidoituja raportteja. Tässä tapauksessa tiedot voidaan konsolidoida taloushallinnon raportoinnin avulla, jonka jälkeen voit laatia konsolidoituja raportteja. Yleistasolla erilaisia tilikarttoja käyttävien yritysten konsolidointi sisältää seuraavat vaiheet.
@@ -171,7 +171,7 @@ Päätilin **Taloushallinnon raportointi** -pikavälilehden **Talousraportoinnin
 - Valitse **Talousraportoinnin vaihtokurssin tyyppi** -kentässä vaihtokurssin tyyppi, joka sisältää tilillä käytettävät valuutat ja vaihtokurssit. Tätä valuutta- ja vaihtokurssitaulukkoa käytetään toteutuneisiin tietoihin taloushallinnon raportoinnissa.
 - Valitse **Valuutan muuntotyyppi** -kentässä menetelmä, jolla tilin vaihtokurssit lasketaan. Tätä valuuttamenetelmää käytetään taloushallinnon raportoinnissa sekä toteutuneissa että budjetin tiedoissa.
 
-![Taloushallinnon raportoinnin päätilit](./media/Financial-reporting-main-accounts.png "Taloushallinnon raportoinnin päätilit")
+![Talousraportoinnin päätilit](./media/Financial-reporting-main-accounts.png "Talousraportoinnin päätilit")
 
 Budjetin, budjetin hallinnan ja budjetin suunnittelun tietojen vaihtokurssin tyyppi on määritetty **Kirjanpito**-sivulla. Tästä taulukosta noudetaan vaihtokurssit ja käytettävälle tilille määritetty valuutan muuntotyyppi.
 
@@ -221,6 +221,6 @@ Jos valuuttoja käytettäessä saataisiin oikein muunnetut summat, taloushallinn
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän ohjeaiheen pääaiheessa [Taloushallinnon konsolidoinnit ja valuutan muunto](./financial-consolidations-currency-translation.md).
+Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän ohjeaiheen pääaiheessa [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](./financial-consolidations-currency-translation.md).
 
-Lisätietoja konsolidointitietojen antamisesta verkossa on kohdassa [Konsolidoi verkossa](./consolidate-online.md).
+Lisätietoja konsolidointitietojen antamisesta verkossa on kohdassa [Verkossa tapahtuva taloushallinnon konsolidointi](./consolidate-online.md).

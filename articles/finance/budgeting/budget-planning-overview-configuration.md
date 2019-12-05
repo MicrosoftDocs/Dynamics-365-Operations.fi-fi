@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ce94f3bbb988640bc53ca2170c7ed54c6c01c18
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5a33ced073394f0f3aa1b0b2e177e4608ca5bcf6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177573"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772027"
 ---
 # <a name="budget-planning-overview"></a>Budjetin suunnittelun yleiskuvaus
 
@@ -155,7 +155,8 @@ Esimerkkimallissa voidaan luoda sarakkeet edellisen vuoden myynnille, sopimuksil
 
 Voit myös määrittää, ovatko asetteluelementit (sarakkeet) muokattavissa ja asettelulle luotujen laskentataulukkomallien käytettävissä. Esimerkkimallin arviointivaiheessa käytetyssä asettelussa Ennuste-sarakkeet ovat muokattavissa, kun taas Edellisen vuoden myynti- ja Sopimukset-sarakkeet vain luku -tilassa.
 
-[!Note] Oletusarvoisesti rajoitus on 36 saraketta ellet laajenna budjetoinnin suunnittelua vaiheilla: [Laajenna budjettisuunnittelun asettelua.](./extending-budget-planning-layout.md)
+> [!NOTE] 
+> Oletusarvoisesti rajoitus on 36 saraketta ellet laajenna budjetoinnin suunnittelua kohdan [Budjettisuunnittelun asettelun laajentaminen](./extending-budget-planning-layout.md) ohjeilla.
 
 ### <a name="templates"></a>Mallit
 

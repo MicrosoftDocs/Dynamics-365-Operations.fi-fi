@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d5d878b0fe4e6b65aa2439d7ef7312eda1895823
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559026"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814924"
 ---
 # <a name="schedule-workload-capacity"></a>Kuormituskapasiteetin ajoittaminen
 
@@ -30,7 +30,7 @@ ms.locfileid: "1559026"
 
 Voit ajoittaa varastojen kuormituskapasiteettia ja myös projektin nykyistä ja tulevaa kuormitusta yksittäisten varastojen työntekijöille. Voit suunnitella kuormituksen koko varastolle tai erikseen tuleville ja lähteville työmäärille.
 
-Kyeisten varastojen pääajoitustiedot on oltava saatavilla lähtevän kuormituksen suunnittelemiseksi. Lisätietoja on kohdassa [Pääsuunnitelmat](../master-planning/master-plans.md).
+Kyeisten varastojen pääajoitustiedot on oltava saatavilla lähtevän kuormituksen suunnittelemiseksi. Lisätietoja on kohdassa [Pääsuunnitelmien yleiskatsaus](../master-planning/master-plans.md).
 
 ## <a name="schedule-and-view-workloads-for-a-warehouse"></a>Varaston kuormituksen ajoittaminen ja tarkasteleminen
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 242e9fd5fd4b22f3081367cf33ff18ff5e4174a5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026253"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814740"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Aikatauluta ja jaa kyselylomakkeita
 
@@ -54,7 +54,8 @@ Liitä kyselylomakeryhmä kyselylomakkeeseen valitsemalla **Kyselylomakkeet**-si
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Kyselylomakkeen suunnitellut vastausistunnot
 Suunnitellut vastausistunnot ovat vastaajille suunniteltuja ja valittuja kyselylomakkeita. 
 
-> **Huomautus:** Kyselylomake on määritettävä ennen suunniteltujen vastausistuntojen määrittämistä. 
+> [!NOTE]
+>   Kyselylomake on määritettävä ennen suunniteltujen vastausistuntojen määrittämistä. 
 
 Luo suunniteltu vastausistunto yksittäiselle työntekijälle **Suunniteltu vastausistunto** -sivulla Sivulla oleva luettelo sisältää kaikki suunnitellut kyselylomakkeet. 
 
@@ -108,12 +109,14 @@ Jos käytössä on suunniteltu vastausistunto, henkilölle on ilmoitettava suora
 
 **Kyselylomakkeiden aikataulut** -sivulla voidaan luoda ja lähettää sähköpostiviesti kaikille kyselylomakkeen vastaajille. Syötä sähköpostiviestin teksti **Työntekijän itsepalvelun sähköpostiosoite** -välilehdessä. Kun ajoitus on aloitettu, luo ja lähetä sähköposti vastaajille valitsemalla **Toiminnot** &gt; **Lähetä sähköposti**. Vastaajat voivat sitten kirjautua sivustoon ja täyttää kyselylomakkeen. 
 
-> **Huomautus:** IT-järjestelmänvalvojan on annettava sähköpostiasetukset **Sähköpostiparametrit**-sivulla, ennen kuin tämä toiminto otetaan käyttöön.
+> [!NOTE]
+>   IT-järjestelmänvalvojan on annettava sähköpostiasetukset **Sähköpostiparametrit**-sivulla, ennen kuin tämä toiminto otetaan käyttöön.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Ajoitetun kyselyn päättäminen
 Voit lopettaa aikataulutetun kyselylomakkeen, kun kaikki vastaajat ovat tehneet vastausistuntonsa loppuun. Kun ajoitettu kyselylomake lopetetaan, asetuksia ei enää voi kopioida uuteen aikatauluun. 
 
-> **Huomautus:** Jos vähintään yksi vastaaja ei ole täyttänyt vastauslomaketta, mutta haluat siitä huolimatta lopettaa aikataulutuksen, poista vastaajat **Suunniteltu vastausistunto** -sivun luettelosta. Sen jälkeen voit lopettaa aikataulun.
+> [!NOTE]
+>   Jos vähintään yksi vastaaja ei ole täyttänyt vastauslomaketta, mutta haluat siitä huolimatta lopettaa aikataulutuksen, poista vastaajat **Suunniteltu vastausistunto** -sivun luettelosta. Sen jälkeen voit lopettaa aikataulun.
 
 ## <a name="completing-questionnaires"></a>Kyselylomakkeiden täyttäminen
 Kun kyselylomake on suunniteltu ja jaettu, valitut vastaajat voivat täyttää sen. Voit täyttää kyselylomakkeita kahdesta käytettävissäsi olevasta sijainnista:
@@ -128,8 +131,8 @@ Kyselylomakkeet voidaan määrittää tietyille käyttäjille tai käyttäjäryh
 
 [Kyselylomakkeiden suunnitteleminen](design-questionnaires.md)
 
-[Kyselylomakkeiden käyttäminen](questionnaires.md)
+[Kyselylomakkeet](questionnaires.md)
 
-[Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
+[Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
 
 

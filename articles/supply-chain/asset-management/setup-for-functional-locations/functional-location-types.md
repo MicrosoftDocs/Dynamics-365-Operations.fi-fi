@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74ccda77a97d1e104940bb10a605d3ebbf45af75
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 0468cb0b1717b7cf0ccb391da09a4e7d788124f3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571251"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812211"
 ---
 # <a name="functional-location-types"></a>Toiminnallisen sijainnin tyypit
 
@@ -56,7 +56,7 @@ Nyt luodaan oletusarvoinen toiminnallinen sijaintityyppi, jota käytetään vain
 3. Lisää toiminnallisen sijaintityypin tunnus **Toiminnallisen sijainnin tyyppi** -kenttään ja nimi **Nimi**-kenttään.
 4. Valitse elinkaarimalli **Toiminnallisen sijainnin elinkaarimalli** -kentässä. Lisätietoja toiminnallisten sijaintien elinkaaritiloista ja elinkaarimalleista on kohdassa [Toimintosijainnin elinkaaritilat](../setup-for-functional-locations/functional-location-stages.md).
 5. Valitse "Kyllä" **Useita resursseja** -vaihtopainikkeesta, jos haluat mahdollistaa useamman resurssin asentamisen toiminnallisessa sijainnissa käyttäen tätä toiminnallisen sijainnin tyyppiä. Jos valitset vaihtoehdon "Ei", voit asentaa vain *yhden* resurssin toiminnallisessa sijainnissa käyttämällä tätä toiminnallista sijaintityyppiä.
-6. Valitse **Päivitä resurssin dimensio** -vaihtopainikkeessa "Kyllä", jos haluat, että tämän tyypin toiminnallisessa sijainnissa asennettuna olevat resurssit käyttävät automaattisesti kyseiseen toimintosijaintiin liittyviä taloushallinnon dimensioita. Tämä tarkoittaa, että jos muutat taloushallinnon dimensioita [Toiminnallinen sijainti](../functional-locations/create-functional-locations.md) -lomakkeessa ja toimintosijainnissa on käytössä toimintosijaintityyppi, jossa tämä vaihtopainike on asennossa "Kyllä", taloushallinnon dimensiot päivitetään automaattisesti kaikkiin kyseiseen toimintosijaintiin asennettuihin resursseihin.
+6. Valitse **Päivitä resurssin dimensio** -vaihtopainikkeessa "Kyllä", jos haluat, että tämän tyypin toiminnallisessa sijainnissa asennettuna olevat resurssit käyttävät automaattisesti kyseiseen toimintosijaintiin liittyviä taloushallinnon dimensioita. Tämä tarkoittaa, että jos muutat taloushallinnon dimensioita [Toiminnallisten sijaintien luominen](../functional-locations/create-functional-locations.md) -lomakkeessa ja toiminnallisessa sijainnissa on käytössä toiminnallinen sijaintityyppi, jossa tämä vaihtopainike on asennossa Kyllä, taloushallinnon dimensiot päivitetään automaattisesti kaikkiin kyseiseen toiminnalliseen sijaintiin asennettuihin resursseihin.
 7. **Resurssityyppi**-kenttää käytetään, jos haluat luoda toimintosijainnille automaattisesti *yhden* resurssin, jolla on sama tunnus ja nimi kuin luotavalla toiminnallisella sijainnilla. Tämä voi olla tarpeen esimerkiksi, jos luot staattisen funktionaalisen sijainnin, kuten rakennuksen tai putkiston. Valitse tällöin resurssityyppi, jota haluat käyttää automaattisesti luodussa resurssissa. Muista, että jos teet valinnan tässä kentässä, **Useita resursseja** -vaihtoainikkeeksi on määritettävä "Ei".
 8. Valitse **Resurssityypit**-pikavälilehdessä resurssityypit, jotka liittyvät toiminnalliseen sijaintityyppiin. Valitse **Lisää rivi** ja valitse resurssityypit. Jos lisäät resurssityypit tähän, vain näitä resurssityyppejä käyttävät resurssit voidaan asentaa toiminnalliseen sijaintiin käyttämällä tätä toimintosijaintityyppiä. Jos resurssityyppejä ei valita **resurssityypit**-pikavälilehdessä, kaikkia resurssityyppejä voidaan asentaa.
 9. Valitse **Ylläpitosuunnitelmat**-pikavälilehdessä ylläpitosuunnitelmat, jotka määritetään automaattisesti uusille toiminnallisille sijainneille käyttämällä tätä toimintosijaintityyppiä. Valitse **Lisää rivi** ja valitse ylläpitosuunnitelmat. Jos lisäät huoltosuunnitelmia tähän, vain näitä suunnitelmia voidaan käyttää toiminnallisessa sijainnissa, jotka käyttävät tätä toimintosijaintityyppiä.

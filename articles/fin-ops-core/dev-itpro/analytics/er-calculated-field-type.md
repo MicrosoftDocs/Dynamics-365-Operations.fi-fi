@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 20d48795b23628bbba2896bf48940936a25e0435
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550081"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771326"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Laskettu kenttä -tyyppisten ER-tietolähteiden parametrisoitujen kutsujen tuki
 
@@ -55,7 +55,7 @@ Lataa [Microsoft Download Centerissä](https://go.microsoft.com/fwlink/?linkid=8
 | Esimerkin ER-format-konfigurointi        | Format to learn parameterized calls.version.1.1.xml  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Kirjautuminen RCS-esiintymään
-Tällä esimerkissä luodaan määritys malliyritykselle Litware, Inc. Ensiksi on kuitenkin suoritettava RCS:ssä [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) -menettelyn vaiheet.
+Tällä esimerkissä luodaan määritys malliyritykselle Litware, Inc. Ensiksi on kuitenkin suoritettava RCS:ssä [Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) -menettelyn vaiheet.
 
 1. Valitse oletuskoontinäytössä **Sähköinen raportointi**.
 2. Valitse **Raportointikonfiguraatiot**.
@@ -75,21 +75,21 @@ Tällä esimerkissä luodaan määritys malliyritykselle Litware, Inc. Ensiksi o
 3. Valitse **Suunnittelu**.
 4. Valitse **Suunnittelu**.  
    
-Tämä ER-mallimääritys on suunniteltu seuraavia toimia varten:
+    Tämä ER-mallimääritys on suunniteltu seuraavia toimia varten:
 
-- **TaxTable**-taulussa olevan verokoodiluettelon (**Tax**-tietolähde) noutaminen.
-- **TaxTable**-taulussa olevan verotapahtumaluettelon (**Trans**-tietolähde) noutaminen:
+    - **TaxTable**-taulussa olevan verokoodiluettelon (**Tax**-tietolähde) noutaminen.
+    - **TaxTable**-taulussa olevan verotapahtumaluettelon (**Trans**-tietolähde) noutaminen:
     
-    - Noudetun tapahtumaluettelon ryhmittely (**Gr**-tietolähde) verokoodin mukaan.
-    - Ryhmitettyjen tapahtumien laskeminen verokoodikohtaisten koostettujen arvojen mukaan:
+        - Noudetun tapahtumaluettelon ryhmittely (**Gr**-tietolähde) verokoodin mukaan.
+        - Ryhmitettyjen tapahtumien laskeminen verokoodikohtaisten koostettujen arvojen mukaan:
 
-        - Veron perusarvojen summa.
-        - Veroarvojen summa.
-        - Käytetyn veroprosentin vähimmäisarvo.
+            - Veron perusarvojen summa.
+            - Veroarvojen summa.
+            - Käytetyn veroprosentin vähimmäisarvo.
 
-Tässä kokoonpanossa mallin yhdistäminen käyttää tälle mallille luotujen ja Finance and Operationsissa suoritettujen ER-muotojen perustietomallia. Tämän vuoksi **Tax**- ja **Gr**-tietolähteiden sisältö näkyy ER-muodoissa abstrakteina tietolähteinä.
+    Tässä kokoonpanossa mallin yhdistäminen käyttää tälle mallille luotujen ja Finance and Operationsissa suoritettujen ER-muotojen perustietomallia. Tämän vuoksi **Tax**- ja **Gr**-tietolähteiden sisältö näkyy ER-muodoissa abstrakteina tietolähteinä.
 
-  ![Tax- ja Gr-tietolähteet näkyvät mallimäärityksen suunnittelusivulla](media/er-calculated-field-type-01.png)
+    ![Tax- ja Gr-tietolähteet näkyvät mallimäärityksen suunnittelusivulla](media/er-calculated-field-type-01.png)
 
 5.  Sulje **Mallimäärityksen sunnittelun** sivu.
 6.  Sulje **Mallimääritys**-sivu.
@@ -97,28 +97,28 @@ Tässä kokoonpanossa mallin yhdistäminen käyttää tälle mallille luotujen j
 ### <a name="review-format"></a>Muodon tarkastelu
 
 1. Laajenna kokoonpanopuussa **Model to learn parameterized calls** -tiedoston sisältö.
-2. Valitse **Format to learn parameterized calls**.
+2. Valitse **Parametrisoitujen kutsujen oppimismuoto**.
 3. Valitse **Suunnittelu**. Tämä ER-muoto on suunniteltu seuraavia toimia varten:
 
-  - XML-muotoisen veroilmoituksen luominen.
-  - Seuraavien verotustasojen näyttäminen veroilmoituksessa: normaali, alennettu ja ei mitään.
-  - Useiden tietojen näyttäminen kustakin verotustasosta siten, että kunkin tason tiedoilla on eri numero.
+    - XML-muotoisen veroilmoituksen luominen.
+    - Seuraavien verotustasojen näyttäminen veroilmoituksessa: normaali, alennettu ja ei mitään.
+    - Useiden tietojen näyttäminen kustakin verotustasosta siten, että kunkin tason tiedoilla on eri numero.
 
-  ![Muodon suunnittelutoiminto -sivu](media/er-calculated-field-type-02.png)
+    ![Muodon suunnittelutoiminto -sivu](media/er-calculated-field-type-02.png)
 
 4. Valitse **Määritys**.
 5. Laajenna **Malli**, **Tiedot** ja **Yhteenveto**. 
 
-   Laskettu **Model.Data.Summary.Level** -kenttä sisältää lausekkeen, joka palauttaa verotustason koodin (**Normaali**, **Alennettu**, **Ei mitään** tai **Muu**) sellaisen verokoodin tekstiarvona, joka voidaan suorituksenaikaisesti noutaa **Model.Data.Summary**-tietolähteestä.
+    Laskettu **Model.Data.Summary.Level** -kenttä sisältää lausekkeen, joka palauttaa verotustason koodin (**Normaali**, **Alennettu**, **Ei mitään** tai **Muu**) sellaisen verokoodin tekstiarvona, joka voidaan suorituksenaikaisesti noutaa **Model.Data.Summary**-tietolähteestä.
 
-  ![Model to learn parameterized calls -tietomallin tiedot muodon suunnittelusivulla](media/er-calculated-field-type-03.png)
+    ![Model to learn parameterized calls -tietomallin tiedot muodon suunnittelusivulla](media/er-calculated-field-type-03.png)
 
 6. Laajenna **Model**.**Data2**.
 7. Laajenna **Model**.**Data2.Summary2**.
    
-   **Model**.**Data2.Summary2**-tietolähde on määritetty ryhmälle, jonka **Model.Data.Summary**-tietolähdetapahtuma erittelee verotustason mukaan (joka saadaan lasketusta **Model.Data.Summary.Level**-kentästä) ja laskee koosteet.
+    **Model**.**Data2.Summary2**-tietolähde on määritetty ryhmälle, jonka **Model.Data.Summary**-tietolähdetapahtuma erittelee verotustason mukaan (joka saadaan lasketusta **Model.Data.Summary.Level**-kentästä) ja laskee koosteet.
 
-  ![Model.Data2.Summary2-tietolähteen tiedot muodon suunnittelusivulla](media/er-calculated-field-type-04.png)
+    ![Model.Data2.Summary2-tietolähteen tiedot muodon suunnittelusivulla](media/er-calculated-field-type-04.png)
 
 8. Tarkista lasketut **Model**.**Data2.Level1**, **Model**.**Data2.Level2**- ja **Model**.**Data2.Level3**-kentät. **Model**.**Data2.Summary2**-tietueluettelo suodatetaan näiden laskettujen kenttien avulla palauttamaan vain tiettyä verotustasoa vastaavat tietueet.
 9. Sulje **Muodon suunnittelija** -sivu.
@@ -127,10 +127,10 @@ Tässä kokoonpanossa mallin yhdistäminen käyttää tälle mallille luotujen j
 Voit parantaa annettua muotoa lisäämällä yhden lasketun kentän suodattamaan tarvittavan verotustason sen sijaan, että käyttäisit kolmea aiemmin luotua kenttää: **Model**.**Data2.Level1**, **Model**.**Data2.Level2** ja **Model**.**Data2.Level3**. Tarvittava verotustaso voidaan määrittää sijainnissa, josta tämä uusi laskettu kenttä kutsutaan.
 
 1. Laajenna kokoonpanopuussa **Model to learn parameterized calls** -tiedoston sisältö.
-2. Valitse **Format to learn parameterized calls**.
+2. Valitse **Parametrisoitujen kutsujen oppimismuoto**.
 3. Valitse **Luo konfiguraatio**.
-4. Valitse **Derive from Name: Format to learn parameterized calls, Microsoft**.
-5. Anna **Nimi**-kentässä **Format to learn parameterized calls (mukautettu)**.
+4. Valitse **Johdettu nimestä: Parametrisoitujen kutsujen oppimismuoto, Microsoft**.
+5. Anna **Nimi**-kentässä **Parametrisoitujen kutsujen oppimismuoto (mukautettu)**.
 6. Valitse **Luo konfiguraatio**.
 
 ## <a name="configure-a-parameterized-calculated-field-that-returns-a-list-of-records"></a>Tietueluettelon palauttavan parametrisoidun lasketun kentän luominen
@@ -299,7 +299,7 @@ Kun parametrisoitu laskettu kenttä palauttaa tietueen, tämän tietueen yksitt�
 
 ## <a name="export-completed-version-of-a-derived-format"></a>Johdetun muodon valmiin version vieminen
 
-1. Valitse kokoonpanopuussa **Format to learn parameterized calls (mukautettu)**.
+1. Valitse kokoonpanopuussa **Parametrisoitujen kutsujen oppimismuoto (mukautettu)**.
 2. Valitse **Version**-pikavälilehdessä valmis versio 1.1.1.
 3. Valitse **Vaihto**.
 4. Valitse **Vie XML-tiedostona**.
@@ -309,7 +309,7 @@ Kun parametrisoitu laskettu kenttä palauttaa tietueen, tämän tietueen yksitt�
 Voit suorittaa alkuperäiset ja parannetut ER-muodot ja varmistaa tällä tavoin, että määritetyt parametrisoidut lasketut kentät toimivat oikein.
 
 ### <a name="import-er-configurations"></a>ER-konfiguraatioiden tuominen
-Voit tuoda tarkistetut kokoonpanot RCS:stä käyttämällä **RCS**-tyyppistä ER-säilöä. Jos olet jo suorittanut ohjeaiheen [Sähköisen raportoinnin konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](rcs-download-configurations.md) vaiheet, tuo aiemmin tässä aiheessa käsitellyt määritykset ympäristöön määritetyn ER-säilön avulla. Toimi muussa tapauksessa seuraavasti:
+Voit tuoda tarkistetut kokoonpanot RCS:stä käyttämällä **RCS**-tyyppistä ER-säilöä. Jos olet jo suorittanut ohjeaiheen [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti Regulatory Configuration Services (RCS) -palvelusta](rcs-download-configurations.md) vaiheet, tuo aiemmin tässä aiheessa käsitellyt määritykset ympäristöön määritetyn ER-säilön avulla. Toimi muussa tapauksessa seuraavasti:
 
 1. Valitse **DEMF**-yritys ja valitse oletuskoontinäytössä **Sähköinen raportointi**.
 2. Valitse **Raportointikonfiguraatiot**.
@@ -320,7 +320,7 @@ Voit tuoda tarkistetut kokoonpanot RCS:stä käyttämällä **RCS**-tyyppistä E
     3. Valitse ensin **Selaa** ja sitten tarvittava XML-muotoinen ER-kokoonpano.
     4. Valitse **OK**.
 
-4. Tuo RCS:stä viety **Format to learn parameterized calls (mukautettu)** -muodon valmis versio 1.1.1:
+4. Tuo RCS:stä viety **Parametrisoitujen kutsujen oppimismuoto (mukautettu)** -muodon valmis versio 1.1.1:
 
     1. Valitse **Vaihto**.
     2. Valitse **Lataa XML-tiedostosta**.
@@ -330,13 +330,13 @@ Voit tuoda tarkistetut kokoonpanot RCS:stä käyttämällä **RCS**-tyyppistä E
 ### <a name="run-er-formats"></a>ER-muotojen suorittaminen
 
 1. Laajenna kokoonpanopuussa **Model to learn parameterized calls** -tiedoston sisältö.
-2. Valitse **Format to learn parameterized calls**.
+2. Valitse **Parametrisoitujen kutsujen oppimismuoto**.
 3. Valitse ylimmässä valintanauhassa **Suorita**.
 4. Tallenna paikallisesti luotu tuotos.
-5. Valitse **Format to learn parameterized calls (mukautettu)**.
+5. Valitse **Parametrisoitujen kutsujen oppimismuoto (mukautettu)**.
 6. Valitse ylimmässä valintanauhassa **Suorita**.
 7. Tallenna luotu tuotos paikallisesti. 
 8. Vertaa luotujen tuotosten sisältöä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
-[Sähköisen raportoinnin kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)
+[Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto](general-electronic-reporting-formula-designer.md)

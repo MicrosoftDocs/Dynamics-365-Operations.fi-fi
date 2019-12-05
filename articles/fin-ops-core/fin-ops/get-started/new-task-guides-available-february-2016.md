@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b220dfc90d4b850c774ff638c5b766f650dcef9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4c912e8364a2503b98e511cbf22884528e467f0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190945"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811623"
 ---
 # <a name="new-task-guides-february-2016"></a>Uudet tehtäväoppaat (helmikuu 2016)
 
@@ -32,7 +32,7 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (helmikuu 2016)
 
-(Helmikuun 2016) yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Dynamics AX 7.0.0 -version ohjeeksi. Jos tarvitset näiden tehtäväoppaiden lokalisoituja versioita, ne ovat saatavilla (toukokuu 2016) Microsoft Dynamics AX:n yhdistetyssä APQC-kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
+(Helmikuun 2016) yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Dynamics AX 7.0.0 -version ohjeeksi. Jos tarvitset näiden tehtäväoppaiden lokalisoituja versioita, ne ovat saatavilla (toukokuu 2016) Microsoft Dynamics AX:n yhdistetyssä APQC-kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjejärjestelmä](help-overview.md).
 
 ### <a name="accounts-payable"></a>Ostoreskontra
 
@@ -643,6 +643,6 @@ Tässä aiheessa on luettelo tehtäväoppaista, jotka on julkaistu Microsoft BPM
 
 [Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Uudet tai päivitetyt tehtäväoppaat saatavilla (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
+[Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)

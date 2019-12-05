@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0aeaa1ee4c35ca42a5382b3c7ff3519cba52996c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 302ac0f456dd8a24dc02948ee657e359f5a9c844
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250527"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770332"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Projektin todellisten tietojen synkronointi Project Service Automationista suoraan projektin integroinnin kirjauskansioon Finance and Operationsiin kirjaamista varten
 
@@ -50,7 +50,7 @@ Seuraava kuva ilmaisee, miten tiedot synkronoidaan Project Service Automationin 
 
 ### <a name="template-and-tasks"></a>Malli ja tehtävät
 
-Saat käytettävissä olevat mallit käyttöösi valitsemalla Microsoft PowerAppsin hallintakeskuksessa **Projektit**. Valitse sitten julkiset mallit valitsemalla oikeassa yläkulmassa **Uusi projekti**.
+Saat käytettävissä olevat mallit käyttöösi valitsemalla Microsoft Power Appsin hallintakeskuksessa **Projektit**. Valitse sitten julkiset mallit valitsemalla oikeassa yläkulmassa **Uusi projekti**.
 
 Seuraavaa mallia ja sen taustalla olevia tehtäviä käytetään synkronoimaan projektin todelliset tiedot Project Service Automationista Financeen:
 

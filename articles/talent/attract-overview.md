@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent – Attractin toiminnot ja ominaisuudet
+title: Attractin toiminnot ja ominaisuudet
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent – Attractin työhönottoprosessin hallintatoimintoja.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c8860602bd293c158aa33ea22b5f73de15a6b6f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4186dddc471de676cc6d26050f16711f581da7ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552068"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833066"
 ---
-# <a name="microsoft-dynamics-365-talent---attract-features-and-capabilities"></a>Microsoft Dynamics 365 Talent – Attractin toiminnot ja ominaisuudet
+# <a name="attract-features-and-capabilities"></a>Attractin toiminnot ja ominaisuudet
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,4 @@ Attractiin sisältyy valmiiksi määritetty työhönottoprosessi, jossa on nelj�
 Heti kun hakija on hyväksynyt työpaikan, hänelle lähetetään sähköpostiviesti, jossa on verkkosovelluksen latauslinkki. Hakija saa sovelluksen kautta tiedot työpaikasta ja voi käyttää sitä yhteydenpitoon työhönottoryhmän kanssa. Hakija voi myös ilmoittaa sen kautta, milloin hän käytettävissä haastatteluja varten.
 
 ## <a name="analytic-reports"></a>Analyyttiset raportit
-Työhönottotiimit voivat käyttää palkkausprosessin avainmittareiden näkymiä yhteen työhön tai yhdessä kaikkien töiden kanssa [Attractin analyyttisissä raporteissa.](analytic-reports.md) Tämä ominaisuus on tällä hetkellä [esikatselussa](access-preview-feature.md) asiakkailla, joilla on [kattava palkkauslisäosa ](attract-comprehensive-hiring.md).
+Työhönottotiimit voivat käyttää palkkausprosessin avainmittareiden näkymiä yhteen työhön tai yhdessä kaikkien töiden kanssa [Attractin analyyttisissä raporteissa.](analytic-reports.md) Tämä toiminto on saatavana [esiversiona](access-preview-feature.md) niille asiakkaille, joilla on [Microsoft Dynamics 365 Talent – Attractin versio](attract-comprehensive-hiring.md).

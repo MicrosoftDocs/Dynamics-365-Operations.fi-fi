@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6da9447386e8e56e20507d985ebcdbfce934debd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181608"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771441"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Testauksen automatisointi sähköisen raportoinnin avulla
 
@@ -44,8 +44,8 @@ Lisätietoja konfiguraation lähteestä vastaanotettuun muotoon perustuvan muodo
 Tehotoimintokäyttäjät voivat laatia käyttäjän hyväksyntä- ja integrointitestauksen lähdekoodia kirjoittamatta.
 
 - Vertaa luotuja asiakirjoja pääversioihin ER-perustoiminnolla. Lisätietoja on kohdassa [Luotujen raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md)
-- Tallenna testitapauksen tehtävän tallennustoiminnolla ja sisällytä perusarviointi. Lisätietoja on kohdassa [Tehtävän tallennustoiminto](../user-interface/task-recorder.md).
-- Ryhmitä tarvittavien testiskenaarioiden testitapaukset. Lisätietoja on kohdassa [Käyttäjän hyväksyntätestauskirjastojen luominen tehtävätallenteiden ja BPM-määritysten avulla](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
+- Tallenna testitapauksen tehtävän tallennustoiminnolla ja sisällytä perusarviointi. Lisätietoja on kohdassa [Tehtävän tallennustoiminnon resurssit](../user-interface/task-recorder.md).
+- Ryhmitä tarvittavien testiskenaarioiden testitapaukset. Lisätietoja kohdassa [Käyttäjän hyväksymistestien luominen ja automatisointi](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
     - Muodosta käyttäjän hyväksyntätestien kirjastoja LCS:n liiketoimintaprosessien mallintajalla (BPM).
     - Luo Microsoft Azure DevOps Servicesissä (Azure DevOps) testisuunnitelma ja testisarjoja BPM-testikirjastojen avulla.
@@ -59,7 +59,7 @@ Tehotoimintakäyttäjät voivat suorittaa käyttäjän hyväksyntä- ja integroi
 
 Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten on toteuduttava:
 
-- Ota käyttöön testauksen automatisointia tukeva topologia. Sinulla on oltava tämän topologiaesiintymän **Järjestelmänvalvoja**-rooli. Topologian on sisällettävä tässä esimerkissä käytettävät demotiedot. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto](../perf-test/continuous-build-test-automation.md).
+- Ota käyttöön testauksen automatisointia tukeva topologia. Sinulla on oltava tämän topologiaesiintymän **Järjestelmänvalvoja**-rooli. Topologian on sisällettävä tässä esimerkissä käytettävät demotiedot. Lisätietoja on kohdassa [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto ja käyttäminen](../perf-test/continuous-build-test-automation.md).
 - Voit suorittaa käyttäjän hyväksyntä- ja integrointitestit automaattisesti asentamalla RSAT-työkalu käytössä olevaan topologiaan ja tekemällä tarvittavat määritykset. Lisätietoja RSAT-työkalun asentamisesta ja sen määrittämisestä Finance and Operations -sovelluksissa ja Azure DevOpsissa käytettäväksi on kohdassa [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Ota huomioon työkalun käytön edellytykset. Seuraavassa kuvassa on esimerkki RSAT-asetuksista. Sinisen suorakulmion sisällä ovat parametrit, jotka määrittävät Azure DevOps -käytön. Vihreän suorakulmion sisällä on parametrit, jotka määrittävät esiintymän käyttöoikeudet.
 
     ![RSAT-asetukset](media/GER-Configure.png "Näyttökuva RSAT-asetukset-valintaikkunasta")
@@ -116,7 +116,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
         | Vastatili      | GBSI OPER       |
         | Maksutapa   | Sähköinen      |
 
-    ![Toimittaja maksut -sivu](media/GER-APJournalLines.png "Näyttökuva Toimittajan maksut -sivusta")
+    ![Toimittajan maksut -sivu](media/GER-APJournalLines.png "Näyttökuva Toimittajan maksut -sivusta")
 
 ## <a name="prepare-the-er-framework-to-test-vendor-payment-processing"></a>ER-kehyksen valmisteleminen toimittajan maksujen käsittelyn testaamiseen
 
@@ -125,7 +125,7 @@ Ennen kuin voit suorittaa tämän ohjeaiheen tehtäviä, seuraavien edellytysten
 1. Valitse **Organisaation hallinto \> Sähköinen raportointi \> Sähköisen raportoinnin parametrit**.
 2. Valitse **Liitteet**-välilehden **Perusrivi**-kentässä **Tiedosto** asiakirjatyypiksi, jota tiedostonhallinta- eli DM-kehys käyttää säilyttämään perustoimintoon DM-liitteinä liittyviä tiedostoja.
 
-    ![Sähköisen raportoinnin parametrit -sivu](media/GER-ERParameters.png "Näyttökuva sähköisen raportoinnin parametrit -sivusta")
+    ![Sähköisen raportoinnin parametrit -sivu](media/GER-ERParameters.png "Näyttökuva Sähköisen raportoinnin parametrit -sivusta")
 
 ### <a name="generate-baseline-copies-of-vendor-paymentrelated-documents"></a>Toimittajan maksuihin liittyvien asiakirjojen peruskopioiden luominen
 
@@ -262,7 +262,7 @@ Tämä tehtävätallenne suorittaa seuraavat toimenpiteet:
 
     Vertailun tulokset näkyvät ER-virheenkorjauslokissa **Luotu teksti** -kentässä. **Muoto-osa**- ja **Lokimerkinnän aiheuttaneen muodon polku** -kentät viittaavat tiedosto-osaan, jolle luotua tulosta on verrattu perusriviin.
 
-    ![Sähköisen raportoinnin ajon lokit -sivun merkinnät](media/GER-ERDebugLog.png "Näyttökuva Sähköisen raportoinnin ajon lokit -sivusta")
+    ![Merkinnät Sähköisen raportoinnin ajolokit -sivulla](media/GER-ERDebugLog.png "Näyttökuva Sähköisen raportoinnin ajon lokit -sivusta")
 
 4. Nykyisen tuloksen ja perusrivin vertailu tallennetaan käyttämällä tehtävän tallennustoiminnon **Tarkista**-asetusta ja valitsemalla **Nykyinen arvo**.
 
@@ -270,7 +270,7 @@ Tämä tehtävätallenne suorittaa seuraavat toimenpiteet:
 
     Seuraava kuva osoittaa, miltä tallennetut tarkistusvaiheet näyttävät tehtävätallenteessa.
 
-    ![Tehtävätallenteen vaiheet 13 ja 15](media/GER-Recording2Review2.png "Näyttökuva tehtävätallenteen vaiheista 13 ja 15")
+    ![Tehtävätallenteen vaiheet 13–15](media/GER-Recording2Review2.png "Näyttökuva tehtävätallenteen vaiheista 13–15")
 
 ## <a name="add-the-recorded-tests-to-azure-devops"></a>Tallennettujen testien lisääminen Azure DevOpsiin
 
@@ -333,11 +333,11 @@ Huomaa, että testitapaukset suoritetaan automaattisesti sovelluksessa selainta 
 
 Suoritetun testin tulokset tallennetaan RSAT-työkaluun. Huomaa, että molemmat testit hyväksyttiin.
 
-![RSAT-työkalussa hyväksytyt testi](media/GER-RSAT-RSAT-Tests-Passed.png "Näyttökuva RSAT-työkalussa hyväksytyistä testeistä")
+![RSAT-työkalussa hyväksytyt testit](media/GER-RSAT-RSAT-Tests-Passed.png "Näyttökuva RSAT-työkalussa hyväksytyistä testeistä")
 
 Huomaa, että suoritetun testin tulokset lähetetään myös Azure DevOpsiin lisäanalyyseja varten.
 
-![Suoritetun testin tulokset Azure DevOpsissa](media/GER-RSAT-DevOps-Tests-Added.png "Näyttökuva suoritetun testin tuloksista Azure DevOpsiin")
+![Suoritetun testin tulokset Azure DevOpsissa](media/GER-RSAT-DevOps-Tests-Added.png "Näyttökuva suoritetun testin tuloksista Azure DevOpsissa")
 
 ### <a name="simulate-a-situation-where-tests-fail"></a>Testien epäonnistumistilanteen simulointi
 
@@ -368,16 +368,16 @@ Huomaa, että suoritetun testin tulokset lähetetään myös Azure DevOpsiin lis
 
 Pääset käyttämään kunkin testin tilaa. Pääset käyttämään myös suorituslokia, joten voit analysoida virheen syyt. Seuraavan kuvan suorituslokissa näkyy, että virhe johtui luodun maksutiedoston ja sen perusrivin sisällön välisestä erosta.
 
-![Virheiden analysointiin Azure DevOpsissa käytettävä suoritusloki](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Näyttökuva virheiden analysointiin Azure DevOpsissa käytettävä suoritusloki")
+![Virheiden analysointiin Azure DevOpsissa käytettävä suoritusloki](media/GER-RSAT-DevOps-Tests-Failed-Log.png "Näyttökuva virheiden analysointiin Azure DevOpsissa käytettävästä suorituslokista")
 
 Tämän vuoksi ER-muodon toimintaa voidaan arvioida osoitetulla tavalla automaattisesti käyttämällä RSAT-työkalua testausympäristönä ja tehtävän tallennustoimintoon perustuvia testitapauksia, jotka käyttävät ER-perusrivitoimintoa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Tehtävän tallennus](../user-interface/task-recorder.md)
+- [Tehtävän tallennustoiminnon resurssit](../user-interface/task-recorder.md)
 - [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357)
-- [Käyttäjän hyväksyntätestauskirjastojen luominen tehtävätallenteiden ja BPM-määritysten avulla](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
-- [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto](../perf-test/continuous-build-test-automation.md)
-- [Luotuja raporttitulosten seuraaminen ja vertaaminen ER-perusarvoihin](er-trace-reports-compare-baseline.md)
-- [ER-muodon päivittäminen ottamalla käyttöön sitä koskeva uusi perusversio](tasks/er-upgrade-format.md)
-- [Tuo ER-konfiguraatio Lifecycle Services -palvelusta](tasks/er-import-configuration-lifecycle-services.md)
+- [Käyttäjän hyväksymistestien luominen ja automatisointi](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
+- [Jatkuvaa koonnin ja testauksen automaatiota tukevien topologioiden käyttöönotto ja käyttäminen](../perf-test/continuous-build-test-automation.md)
+- [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md)
+- [ER Muodon päivittäminen ottamalla käyttöön sitä koskeva uusi perusversio](tasks/er-upgrade-format.md)
+- [ER Tuo kokoonpano Lifecycle Services -palvelusta](tasks/er-import-configuration-lifecycle-services.md)

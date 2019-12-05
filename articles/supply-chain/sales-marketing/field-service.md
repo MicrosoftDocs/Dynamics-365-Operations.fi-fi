@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 2a5c3e49f09bf4f1f90449db10d439f563ecc2c0
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: cf1c4cbc18728b6094f862792d20a893b2a8d6ea
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249832"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815269"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Integraatio Microsoft Dynamics 365 Field Servicen kanssa – yleiskatsaus
 
@@ -41,9 +41,9 @@ Field Servicen ja Supply Chain Managementin välisen integroinnin ensimmäinen v
 
 Field Servicen ja Supply Chain Managementin ensimmäisen vaiheen integrointi mahdollistaa seuraavien nimikkeiden synkronoinnin:
 
-- [Supply Chain Managementin tuotteet Field Servicen tuotetyyppitietoja sisältäviin tuotteisiin](field-service-product.md)
-- [Field Servicen työtilaukset Supply Chain Managementin myyntitilauksiin](field-service-work-order.md)
-- [Field Servicen laskut Supply Chain Managementin vapaatekstilaskuihin](field-service-invoice.md)
+- [Supply Chain Managementin tuotteiden synkronointi Field Servicen tuotteisiin](field-service-product.md)
+- [Field Servicen työtilausten synkronointi Supply Chain Managementin myyntitilauksiin](field-service-work-order.md)
+- [Field Servicen sopimuslaskujen synkronointi Supply Chain Managementin vapaatekstilaskuihin](field-service-invoice.md)
 
 Esimerkki työtilauksen synkronoimisesta Field Servicen ja Supply Chain Managementin välillä on lyhyessä YouTube-videossa [Työtilauksen synkronointi Microsoft Dynamics 365:n integroinnilla](https://www.youtube.com/watch?v=46ylO7raZAo).
 

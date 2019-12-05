@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
-ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
+ms.openlocfilehash: 16a67ef625fdde0755e96c959be1fb2989ca53b6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2666827"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770663"
 ---
 # <a name="sales-tax-overview"></a>Arvonlisäveron yleiskatsaus
 
@@ -38,7 +38,7 @@ Arvonlisäveroympäristö tukee monenlaisia välillisiä veroja, kuten arvonlis�
 
 Yksiköt, joista veroasetukset kostuvat, ja niiden väliset suhteet näkyvät seuraavassa kaaviossa.
 
-[![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Kaavio, jossa on veroasetusyksikköjen yleiskatsaus](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 Jokaiselle yrityksen kirjaamalle arvonlisäverolle on määritettävä arvolisäverokoodi. Arvonlisäverokoodi sisältää veroprosentin ja arvonlisäveron laskusäännöt. 
 
@@ -55,7 +55,7 @@ Seuraavassa taulussa käsitellään yksiköitä ja veroasetusten järjestystä.
 | Määritystapahtuma                                                  | Pakollinen/Valinnainen ja kuvaus                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Luo päätilit.                                           | Pakollinen. Ennen kuin arvonlisäveroihin liittyviä toimintoja voi määrittää, on luotava päätilit, joita yritys käyttää verojen maksamiseen ja kirjaamiseen.                                                                                                                                                                             |
-| Aseta arvonlisäveron kirjanpidon kirjausryhmät.                     | Pakollinen. Kirjanpidon kirjausryhmät määrittävät arvonlisäverojen kirjaamisen ja maksamisen päätilit.   Lisätietoja on ohjeaiheessa [Arvonlisäveron kirjanpidon kirjausryhmien määrittäminen](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
+| Aseta arvonlisäveron kirjanpidon kirjausryhmät.                     | Pakollinen. Kirjanpidon kirjausryhmät määrittävät arvonlisäverojen kirjaamisen ja maksamisen päätilit.   Lisätietoja on kohdassa [Arvonlisäveron kirjanpidon kirjausryhmien määrittäminen](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
 | Määritä arvonlisäveroviranomaiset.                                   | Pakollinen. Arvonlisäveroviranomaiset ovat yksiköitä, joille vero on ilmoitettava ja maksettava.    Lisätietoja on ohjeaiheessa [Arvonlisäveroviranomaisten määrittäminen](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Määritä arvonlisäveron tilityskaudet.                            | Pakollinen. Arvonlisäveron tilityskausissa on tiedot siitä, milloin arvonlisävero on ilmoitettava ja maksettava sekä kuinka usein se on tehtävä. Ne on liitetty arvonlisäveroviranomaiseen.                                                                                                                                                       |
 | Määritä arvonlisäveroilmoituksen koodit.                               | Valinnainen. Arvonlisäverokoodeille voidaan määrittää arvonlisäveroilmoituksen koodeja, joilla useiden arvolisäverokoodien summat ilmoitetaan yhdellä arvonlisäveroilmoituksen koodilla. Lisätietoja on ohjeaiheessa [Arvonlisäveroilmoituksen koodien määrittäminen](tasks/set-up-sales-tax-reporting-codes.md).                                         |

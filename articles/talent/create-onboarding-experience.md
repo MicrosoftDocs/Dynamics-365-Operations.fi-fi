@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8c11186ff3f95a7f1e00f9e42d7b78f5a68957b0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008125"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813934"
 ---
 # <a name="get-started-with-onboard"></a>Onboardin käytön aloittaminen
 
@@ -35,17 +35,17 @@ Onboardin avulla voit luoda nopeasti perehdytysoppaan, joka toivottaa uudet työ
 
 Lisätietoja Onboard-sovelluksen hankkimisesta ja käyttämisestä on seuraavissa ohjeaiheissa:
 
-- [Onboard-sovelluksen hankkiminen](./onboard-get-app.md)
-- [Perehdytysoppaan luominen](./onboard-create-guide.md)
-- [Perehdytysmallin luominen](./onboard-create-template.md)
-- [Perehdytysoppaiden ja mallien muokkaaminen](./onboard-edit-guides-templates.md)
-- [Sisällön jakaminen muiden osallisten kanssa](./onboard-share-template.md)
-- [Työntekijöiden tehtävien ja perehdyttämisen tilan näyttäminen](./onboard-view-status.md)
-- [Työhönottoryhmien luominen Onboardissa](./onboard-create-team.md)
+- [Dynamics 365 Talent – Onboard -sovelluksen hankkiminen](./onboard-get-app.md)
+- [Perehdytysoppaan luominen ja lähettäminen Dynamics 365 Talent – Onboardin avulla](./onboard-create-guide.md)
+- [Perehdytysmallin luominenDynamics 365 Talent – Onboardin avulla](./onboard-create-template.md)
+- [Perehdytysoppaiden ja mallien muokkaaminen Dynamics 365 Talent – Onboardissa](./onboard-edit-guides-templates.md)
+- [Sisällön jakaminen muiden osallisten kanssa Dynamics 365 Talent – Onboardissa](./onboard-share-template.md)
+- [Työntekijöiden perehdyttämisen ja tehtävien tilan näyttäminen](./onboard-view-status.md)
+- [Työhönottoryhmän luominen Dynamics 365 Talent – Onboardin avulla](./onboard-create-team.md)
 
 ## <a name="see-also"></a>Lisätietoja
 
 - [Onboard-sovelluksen kokeileminen tai ostaminen](https://dynamics.microsoft.com/talent/onboard/)
-- [Uutta](./whats-new.md)
-- [Julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Tuen saaminen](./talent-support.md)
+- [Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet](./whats-new.md)
+- [Julkaisusuunnitelmat](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft iDynamics 365 Talentin tuki](./talent-support.md)

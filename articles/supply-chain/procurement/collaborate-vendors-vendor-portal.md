@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 96cd2fc988df11c616faf06cf0905acd6b3d6dcc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248977"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813520"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Yhteistyö toimittajien kanssa toimittajaportaalissa
 
@@ -98,7 +98,7 @@ Seuraavassa taulukossa on esimerkki tila- ja versiomuutoksista, jotka ostotilaus
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Käyttöoikeuksien määrittäminen toimittajayhteistyön käyttäjille](configure-security-vendor-portal-users.md)
+[Toimittajaportaalin käyttäjäsuojaus](configure-security-vendor-portal-users.md)
 
 [Toimittajayhteistyön laskutustyötila](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
 

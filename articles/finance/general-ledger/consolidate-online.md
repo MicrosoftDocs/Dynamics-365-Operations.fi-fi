@@ -16,25 +16,25 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: eadf0af285213a972cac83d7b6fc6a47317b21bb
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551654"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770732"
 ---
 # <a name="online-financial-consolidations"></a>Verkossa tapahtuma taloushallinnon konsolidointi
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään verkossa tapahtuvia taloushallinnon konsolidointeja kirjanpidossa. Lue ennen tämän ohjeaiheen lukemista [Taloushallinnon konsolidoinnit ja valuutan muunto](financial-consolidations-currency-translation.md).
+Tässä ohjeaiheessa käsitellään verkossa tapahtuvia taloushallinnon konsolidointeja kirjanpidossa. Lue ennen tämän ohjeaiheen lukemista [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](financial-consolidations-currency-translation.md).
 
 Kun olet määrittänyt asetukset, anna konsolidointitiedot **Konsolidoi [Online]** -sivulla. Kun olet valmis käsittele konsolidointi valitsemalla **OK** tai **Erä**.
 
 ## <a name="criteria"></a>Kriteeri
 Määritä **Konsolidoi [Online]** -sivun **Kriteeri**-välilehdessä tilit, kaudet ja konsolidoitavien tietojen tyyppi.
 
-![Kriteeri-välilehti](./media/criteria-consolidate-online.png "Kriteeri-välilehti")
+![Ehdot-välilehti](./media/criteria-consolidate-online.png "Ehdot-välilehti")
 
 Välilehdessä olevien kenttien selitys:
 
@@ -67,7 +67,7 @@ Määritetystä järjestyksestä riippumatta, **Päätili** on aina ensimmäinen
 ## <a name="legal-entities"></a>Oikeushenkilöt
 Määritä **Oikeushenkilöt**-välilehdessä konsolidointiyritykseen sisällytettävät yritykset. Voit määrittää kyseisten yritysten omistajuusosuudet. Jos määritetty omistajuus on alle 100 prosenttia, määritetty prosenttiosuus kootaan konsolidointiyritykseen. **Muunnoserotusten tililaji** -kentässä valitaan mahdollisten muuntoerotusten yhteydessä päätili **Automaattisten tapahtumien tilit** -tilin asetuksista.
 
-![Oikeushenkilöt-välilehti](./media/legal-entities-cons.png "Oikeushenkilöt-välilehti")
+![Yritykset-välilehti](./media/legal-entities-cons.png "Yritykset-välilehti")
 
 ![Automaattisten tapahtumien tilit -sivu](./media/accounts-for-automatic-cons.png "Automaattisten tapahtumien tilit -sivu")
 
@@ -89,10 +89,10 @@ Lisätietoja eliminoinnista on kohdassa [Eliminointisäännöt](./elimination-ru
 - **Tapahtumapäivä** – Vaihtokurssi valitaan kunkin tapahtuman päivämäärän perusteella. Tämä vaihtoehtoa käytetään useimmiten käyttöomaisuuden kanssa ja sitä kutsutaan usein historialliseksi kurssiksi. Kurssin esikatselu ei ole näkyvissä, koska tilialueella on useita erilaisten tapahtumien kursseja.
 - **Käyttäjän määrittämä hinta** – Tässä vaihtoehdossa voit antaa haluamasi vaihtokurssin. Tämä vaihtoehto voi olla kätevä keskimääräisille vaihtokursseille tai silloin, kun konsolidoinnissa on käytössä kiinteä vaihtokurssi.
 
-![Valuutan muuntaminen -välilehti](./media/currency-translation-cons-online.png "Valuutan muuntaminen -välilehti")
+![Valuutan muuntotyyppi -välilehti](./media/currency-translation-cons-online.png "Valuutan muuntotyyppi -välilehti")
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän ohjeaiheen pääaiheessa [Taloushallinnon konsolidoinnit ja valuutan muunto](./financial-consolidations-currency-translation.md).
+Lisätietoja konsolidoinnista ja valuutan muuntamisesta on tämän ohjeaiheen pääaiheessa [Taloushallinnon konsolidointien ja valuutan muunnon yleiskatsaus](./financial-consolidations-currency-translation.md).
 
 Lisätietoja skenaarioista, joissa voidaan laatia konsolidoituja raportteja, on kohdassa [Konsolidoitujen raporttien laatiminen](./generating-consolidated-financial-statements.md).

@@ -3,7 +3,7 @@ title: Käyttäjien liittäminen käyttöoikeusrooleihin
 description: Finance and Operations -sovellusten käyttö edellyttää, että käyttäjille on määritetty käyttöoikeusroolit.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 11/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4daecc1acd589cd1656402244e5325382a407e7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e4f4ef4535de9e371829c2d86d4fdc1400510c7b
+ms.sourcegitcommit: 6aa74f66f1abd3a7977050a5339b0b17e62ff053
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180964"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "2807993"
 ---
 # <a name="assign-users-to-security-roles"></a>Käyttäjien liittäminen käyttöoikeusrooleihin
 
@@ -37,6 +37,9 @@ Muiden kuin yhteisten toimintojen käyttöä varten käyttäjät on määritett�
 5. Napsauta **Jäsenyyssäännön nimi** -luettelossa valitulla rivillä olevaa linkkiä.
 6. Valitse **Muokkaa kyselyä**. Muokkaa kyselyä tarvittaessa.  
 7. Valitse **OK**.
+8. Valitse **Suorita automaattinen roolin määritys**.
+9. Valitse **Siirtymisruutu > Moduulit > Järjestelmän hallinta > Käyttäjät > Käyttäjät** (mielellään erillisessä selaimen välilehdessä).
+10. Vahvista, että roolien määrityskysely oli oikein, tarkistamalla eri käyttäjille määritetyt roolit. Säädä ja suorita tarvittaessa uudelleen.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Sulje käyttäjät pois automaattisesta roolin määrityksestä
 1. Sulje sivu.

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a21394daeb797995418c3b139191dd700c129e12
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 3f0180f63c32f3e88d7f5e245716ccc908cc026d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019390"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811237"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Yhdistä oheislaitteet myyntipisteeseen (POS)
 
@@ -33,7 +33,7 @@ ms.locfileid: "2019390"
 Tässä aiheessa käsitellään oheislaitteiden liittämistä Retail POS:hon.
 
 > [!NOTE]
-> Lisätietoja asennusohjeista on artikkeleissa [Retail Hardware Stationin määritykset ja asennus](retail-hardware-station-configuration-installation.md) ja [Retail Modern POS:n omatoiminen lataus ja asennus sekä Modern POS- ja Cloud POS -laiteaktivointi](retail-modern-pos-device-activation.md).
+> Tarkat asennusohjeet ovat kohdissa [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md) ja [Retail Modern POS (MPOS) -ratkaisun määrittäminen, asentaminen ja aktivointi](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Tärkeimmät osat
 
@@ -139,7 +139,7 @@ Toiminnon profiili määritetään myymälätasolla. Sillä määritetään myym
 
 - **Tietokoodit**-pikavälilehti:
 
-    - Kaikki tavat, joilla tietokoodeja hallitaan myyntipisteessä. Lisätietoja on artikkelissa [Tietokoodit](info-codes-retail.md).
+    - Kaikki tavat, joilla tietokoodeja hallitaan myyntipisteessä. Lisätietoja on kohdassa [Tietokoodit ja tietokoodiryhmät](info-codes-retail.md).
 
 - **Kuitin numerointi** -pikavälilehti:
 

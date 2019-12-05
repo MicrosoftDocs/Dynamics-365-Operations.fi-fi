@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026000"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812692"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Dynamics 365 Talentin uudet tai muuttuneet ominaisuudet (20. maaliskuuta 2019)
 
@@ -43,7 +43,7 @@ Tämän toiminnon avulla hakukoneet löytävät Attractin urasivuston työilmoit
 Jos ehdokas unohtaa sen yhteisöpalvelun tunnistiedot, jonka avulla hän haki työtä avaamalla tallennetun tai ehdokkaalle sähköpostitse lähetetyn linkin avulla, he näkevät nyt vihjeen. Vihje sisältää palveluntarjoajan nimen ja käyttäjänimen (peitetty). Näin ehdokkaat voivat käyttää työhakemusta oikeiden tunnistietojen avulla.
 
 ### <a name="help-internal-candidates-explore-internal-jobs"></a>Auta sisäisiä ehdokkaita tutustumaan sisäisiin töihin
-Aiemmin ulkoiset ehdokkaat näkivät työhön ottavan esimiehen tai muun työhönottajan nimen. Tämä ongelma on korjattu. Nyt vain sisäiset ehdokkaat näkevät työn työhönottoryhmän jäsenet. Sisäisten ehdokkaiden on nyt myös helpompi tarkastella vain sisäisiä töitä ja hakea niitä. Kun ehdokas yrittää käyttää linkkiä ja tarkastella sisäistä työtä tai hakea sitä, heidän on tehtävä todennus Azure Active Directory -tunnistetietojen avulla. Sisäiset ehdokkaat voivat myös ottaa yhteyttä työhönottoryhmän jäseniin ja osoittaa kiinnostuksensa työtä kohtaan tai pyytää siitä lisätietoja. Tämä ominaisuus on käytettävissä kaikille vain sisäisille ehdokkaille tarkoitetuille töille. Lisätietoja on kohdassa [Attractin urasivuston toiminnot](./career-site.md).
+Aiemmin ulkoiset ehdokkaat näkivät työhön ottavan esimiehen tai muun työhönottajan nimen. Tämä ongelma on korjattu. Nyt vain sisäiset ehdokkaat näkevät työn työhönottoryhmän jäsenet. Sisäisten ehdokkaiden on nyt myös helpompi tarkastella vain sisäisiä töitä ja hakea niitä. Kun ehdokas yrittää käyttää linkkiä ja tarkastella sisäistä työtä tai hakea sitä, heidän on tehtävä todennus Azure Active Directory -tunnistetietojen avulla. Sisäiset ehdokkaat voivat myös ottaa yhteyttä työhönottoryhmän jäseniin ja osoittaa kiinnostuksensa työtä kohtaan tai pyytää siitä lisätietoja. Tämä ominaisuus on käytettävissä kaikille vain sisäisille ehdokkaille tarkoitetuille töille. Lisätietoja on kohdassa [Urasivuston määrittäminen Microsoft Dynamics 365 Talent – Attractissa](./career-site.md).
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Hopeamitalistien määrittäminen niin, että korkeamman arvon hakijat määritetään tulevia toimia varten
 Työhön ottavat esimiehet ja muut työhönottajat pitävat usein listaa hakijoista, jotka ovat sopivia toimeen, mutta joita ei voi harkita työhön, koska toimi on jo täytetty. Tällaiset hakijat, joita kutsutaan hopeamitalisteiksi, ovat tärkeitä, koska heitä voidaan käyttää seuraavan kerran saman tyyppisen toimen avautuessa. Attractin avulla työhön ottavat esimiehet ja muut työhönottajat voivat nyt määrittää hopeamitalisteja hakijaluetteloihin, jos hakija on edennyt tarjousvaiheeseen. Hopeamitalistimääritys näkyy työn hakijaluettelossa sekä kykypoolinäkymässä, kun nämä hakijat ovat työhön ottavan esimiehen tai muun työhönottajan minkä tahansa poolin jäseniä. Lisäksi määritys näkyy työhistoriassa ehdokkaan kykypoolin profiilin osana. Voit esikatsella tätä toimintoa, jos järjestelmänvalvoja ottaa sen käyttöön [hallintakeskuksen ominaisuuksien hallinnan](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) avulla.

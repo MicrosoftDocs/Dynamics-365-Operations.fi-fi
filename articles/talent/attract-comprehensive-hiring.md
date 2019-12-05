@@ -1,5 +1,5 @@
 ---
-title: Tietoja Microsoft Dynamics 365 Talent - Attractin versioista
+title: Attractin version valitseminen
 description: Tässä ohjeaiheessa tietoja Microsoft Dynamics 365 Talent – Attractin eri versioisden ominaisuuksista.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 54f206aed196be5bbfa0de5b632f20519c2680ea
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 701ce0d710c20deb793534581c276edf02426a4b
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550433"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833158"
 ---
-# <a name="which-version-of-microsoft-dynamics-365-talent---attract"></a>Tietoja Microsoft Dynamics 365 Talent - Attractin versioista
+# <a name="choose-a-version-of-attract"></a>Attractin version valitseminen
 
-[!include[banner](../includes/banner.md)]
+[[!include [banner](includes/banner.md)]
 
 Sinulle sopiva Microsoft Dynamics 365 Talent: Attract -versio määräytyy organisaation koon ja tarpeiden mukaan. Attractin perusversio sisältää toiminnallisuuden alaryhmän, joka on suunnattu pienemmille tiimeille tai organisaatioille, joissa rekrytointipäällikkö on ensisijainen käyttäjä. Voit aloittaa Attractin perusversion käyttäminen yhdellä tai useammalla lisenssillä.
 

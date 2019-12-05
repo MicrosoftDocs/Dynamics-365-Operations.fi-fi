@@ -3,7 +3,7 @@ title: Lähetyksen automaattiset päivitykset
 description: Tässä ohjeaiheessa on yleiskuvaus lähetysten automaattisesta päivitystoiminnosta.
 author: josaw1
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,15 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 160ad55a12d13fdb64e55effaabb1848179e71cf
-ms.sourcegitcommit: c35dfce2c0605d6f46365ce5d985c22187d21761
+ms.openlocfilehash: e42e7f19311adee7cc48f0ad0b59a4d0d54df9aa
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "1986114"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773540"
 ---
 # <a name="shipment-auto-updates"></a>Lähetyksen automaattiset päivitykset
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 Lähetyksen automaattinen päivitystoiminto päivittää automaattisesti lähetykseen liitetyt kuormarivin määrät (sekä lisäykset että vähennykset) sen jälkeen, kun kuorma on vapautettu varastoon. Toiminto on käytössä siihen asti, että lähetyksen tai kuorman kuormarivi on käsitelty aallossa. Kun toimintoa käytetään, tilauspäivitykset voivat siirtyä varastoon ilman manuaalisia toimia varastotyön luontiin saakka.

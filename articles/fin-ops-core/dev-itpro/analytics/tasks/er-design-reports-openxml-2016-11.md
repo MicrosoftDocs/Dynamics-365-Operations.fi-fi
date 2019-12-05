@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d1229c89f43f9ded955dadf2f4d87825c9ab4e71
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182574"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769852"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER OPENXML-muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)
 
@@ -36,7 +36,7 @@ Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn v
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Lataa maksujen tietomallin konfiguraatio
 1. Siirry kohtaan **siirtymisruutu > Moduulit > organisaation hallinto > Työtilat > Sähköinen raportointi**.
-2. Valitse listassa malliyrityksen konfiguraation lähde Litware, Inc. Jos lähde ei ole näkyvissä, suorita ensin [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](er-configuration-provider-mark-it-active-2016-11.md) -ohjeen vaiheet.
+2. Valitse luettelossa malliyrityksen määrityksen lähde Litware, Inc. Jos lähde ei ole näkyvissä, suorita ensin kohdan [Konfiguraation lähteiden luominen ja sen merkitseminen aktiiviseksi](er-configuration-provider-mark-it-active-2016-11.md) vaiheet.
 3. Valitse **Määritä aktiivinen**.
 4. Valitse **Säilöt**. Jos operatiivisen resurssityypin säilö on käytettävissä, valitse se. Jos säilö on käytettävissä, ohita seuraavat, uuden säilön luomista koskevat vaiheet.  
 5. Avaa valintaikkuna valitsemalla **Lisää**.
