@@ -1,0 +1,176 @@
+---
+title: Kielten lisääminen sivustoon
+description: Tässä ohjeaiheessa kerrotaan, kuinka lisäkielten tuki lisätään Microsoft Dynamics 365 Commerce -sivustoon.
+author: bicyclingfool
+manager: annbe
+ms.date: 10/31/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application user
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: StuHarg
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: 26031d386d8e332c07752d8797416491a86649a8
+ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2696804"
+---
+# <a name="add-languages-to-your-site"></a>Kielten lisääminen sivustoon
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
+Tässä ohjeaiheessa kerrotaan, kuinka lisäkielten tuki lisätään Microsoft Dynamics 365 Commerce -sivustoon.
+
+## <a name="overview"></a>Yleiskatsaus
+
+Voit lokalisoida sivuston millä tahansa kielellä, jota Dynamics 365 Commerce tukee. (Tuettujen kielten luettelo tulee näkyviin myöhemmin tässä ohjeaiheessa.) Jos haluat lisätä kielen sivustoon, kieli on ensin lisättävä sivustoon sidottuun verkkokauppaan.
+
+## <a name="add-a-language-to-an-online-store"></a>Kielen lisääminen verkkokauppaan
+
+Voit lisätä kielen verkkokauppaan seuraavasti:
+
+1. Avaa sivuston Dynamics 365 Retail -ympäristö.
+1. Siirry kohtaan **Vähittäismyynti \> Kanavat \> Verkkokaupat**. Näkyviin tulee ympäristöäsi varten määritettyjen verkkokauppojen luettelo. Vaihtoehtoisesti voit kirjoittaa hakutermiksi **verkkokaupat**.
+1. Valitse verkkokauppa, johon kieli lisätään.
+1. Valitse **Kielet**-pikavälilehdessä **Lisää**.
+1. Valitse lisättävä kieli **Kieli**-kentässä.
+
+Lisäämäsi kieli on nyt käytettävissä. Voit määrittää sivuston käyttämään sitä sivuston luontiympäristössä.
+
+### <a name="languages-that-are-supported-by-dynamics-365-commerce"></a>Kielet, joita Dynamics 365 Commerce tukee
+
+- af
+- ar
+- ar-ae
+- ar-bh
+- ar-dz
+- ar-eg
+- ar-iq
+- ar-jo
+- ar-kw
+- ar-lb
+- ar-ly
+- ar-ma
+- ar-om
+- ar-qa
+- ar-sa
+- ar-sy
+- ar-tn
+- ar-ye
+- be
+- bg
+- ca
+- cs
+- da
+- de
+- de-at
+- de-ch
+- de-li
+- de-lu
+- el
+- en-029
+- en-au
+- en-bz
+- en-ca
+- en-gb
+- en-ie
+- en-in
+- en-jm
+- en-my
+- en-nz
+- en-sg
+- en-tt
+- fi-fi
+- en-za
+- es
+- es-ar
+- es-bo
+- es-cl
+- es-co
+- es-cr
+- es-do
+- es-ec
+- es-gt
+- es-hn
+- es-mx
+- es-ni
+- es-pa
+- es-pe
+- es-pr
+- es-py
+- es-sv
+- es-tr
+- es-uy
+- es-ve
+- et
+- eu
+- fa
+- fi
+- fo
+- fr
+- fr-be
+- fr-ca
+- fr-ch
+- fr-lu
+- hi
+- h
+- hu
+- on
+- it
+- it-ch
+- ja
+- lt
+- lv
+- mk
+- ms
+- mt
+- nb-no
+- nl
+- nl-be
+- nn-no
+- pl
+- pt-br
+- ro
+- ru
+- ru-ru
+- sk
+- sl
+- sq
+- sr
+- sr-la
+- sv
+- sv-fi
+- th
+- tn
+- tr
+- uk
+- ur
+- xh
+- zh-hans
+- zh-hk
+- zh-sg
+- zu
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Logon lisääminen](add-logo.md)
+
+[Sivuston teeman valitseminen](select-site-theme.md)
+
+[Favicon-kuvakkeen lisääminen](add-favicon.md)
+
+[Tervetuloviestin lisääminen](add-welcome-message.md)
+
+[Copyright-ilmoituksen lisääminen](add-copyright-notice.md)
+
+[Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi](add-telemetry.md)
