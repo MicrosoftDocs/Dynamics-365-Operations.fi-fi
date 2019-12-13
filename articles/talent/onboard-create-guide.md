@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 3c465c667cbb8a66f301637ca620429b0ddc11c6
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: a095fe97b05898403b501763204a462ee8dcc12a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550340"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814625"
 ---
 # <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-talent---onboard"></a>Perehdytysoppaan luominen ja lähettäminen Dynamics 365 Talent: Onboardin avulla
 
@@ -119,6 +119,6 @@ Voit tallentaa perehdytysoppaan mallina. Tällä tavoin säästät aikaa, jos si
 ### <a name="see-also"></a>Lisätietoja
 
 - [Onboard-sovelluksen kokeileminen tai ostaminen](https://dynamics.microsoft.com/talent/onboard/)
-- [Uutta](./whats-new.md)
-- [Julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Tuen saaminen](./talent-support.md)
+- [Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet](./whats-new.md)
+- [Julkaisusuunnitelmat](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft iDynamics 365 Talentin tuki](./talent-support.md)

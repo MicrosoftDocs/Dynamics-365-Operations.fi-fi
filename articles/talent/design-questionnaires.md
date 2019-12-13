@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 8d94cf24040e5f653bc053f2df0a45e1afa23adc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6405b6a680f31c62e16f3bb707ec0a4ccdad3d23
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517918"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813911"
 ---
 # <a name="design-questionnaires"></a>Suunnittele kyselylomakkeita
 
@@ -110,7 +110,8 @@ Vastausryhmät ja vastaukset ovat komponentteja, jotka muodostavat kysymysten lu
 
 Vastausryhmää voit käyttää useassa saman kyselylomakkeen kysymyksessä tai useassa eri kyselylomakkeessa. 
 
-**Huomautus:** Tietojen arviointi vaikeutuu, jos täytetyissä kysymyslomakkeissa käytettyjen vastausryhmien vastausten tekstiä muokataan, eivätkä kyselylomakkeen tulokset välttämättä ole enää voimassa. Jos vastausryhmää on muutettava, kannattaa ehkä luoda uusi vastausryhmä aiemmin luodun ryhmän muuttamisen sijaan. Kysymykseen tai vastaukseen liitettyjä vastausryhmiä tai vastausryhmiä, joihin on vastattu, ei voi poistaa.
+> [!NOTE]
+> Tietojen arviointi vaikeutuu, jos täytetyissä kysymyslomakkeissa käytettyjen vastausryhmien vastausten tekstiä muokataan, eivätkä kyselylomakkeen tulokset välttämättä ole enää voimassa. Jos vastausryhmää on muutettava, kannattaa ehkä luoda uusi vastausryhmä aiemmin luodun ryhmän muuttamisen sijaan. Kysymykseen tai vastaukseen liitettyjä vastausryhmiä tai vastausryhmiä, joihin on vastattu, ei voi poistaa.
 
 ### <a name="questions"></a>Kysymykset
 
@@ -118,12 +119,16 @@ Kyselylomakkeessa on oltava kysymyksiä. Kysymykset voivat olla joko avoimia tai
 
 -   Avointen kysymysten vastauksia ei ohjata, vaan vastaajat voivat kirjoittaa vastauksensa.
 -   Monivalintakysymykset vaativat luettelon ennalta määritetyistä vastausvaihtoehdoista. Kysymysten rakenne voidaan määrittää niin, että vastaaja voi valita useita vastauksia. Kysymykset tulisi suunnitella siten, että ne houkuttelevat vastaajan antamaan yksityiskohtaisia tietoja. Kysymykset tulee linkittää vastausryhmään, joka sisältää kunkin monivalintakysymyksen vastausvaihtoehdot. 
-     -  **Huomautus:** Vastausryhmät ja vastaukset on luotava ennen monivalintakysymysten määrittämistä.
+
+    > [!NOTE]
+    > Vastausryhmät ja vastaukset on luotava ennen monivalintakysymysten määrittämistä.
 
 Kysymykset voidaan järjestää ehdolliseen kysymyshierarkiaan niin, että toissijaiset kysymykset riippuvat edellisen kysymyksen kohdalla valitusta vastauksesta. Voit kirjoittaa kysymykset ensin ja järjestää ne hierarkiaan myöhemmin.
 
 ## <a name="setting-up-questionnaires"></a>Kyselylomakkeiden määrittäminen
-**Huomautus:** Ennen kyselylomakkeen määrittämistä on määritettävä vastaukset, kysymykset ja edellytykset. 
+
+> [!NOTE]
+> Ennen kyselylomakkeen määrittämistä on määritettävä vastaukset, kysymykset ja edellytykset. 
 
 Voit määrittää kullekin kyselylomakkeelle seuraavat tiedot:
 
@@ -159,7 +164,8 @@ Voit toteuttaa seuraavat tehtävät **Kyselylomakkeet**-sivulla:
 -   poistaa ja lisätä kysymyksiä
 -   muuttaa tulosryhmiä ja järjestysnumeroa. 
 
-**Varoitus:** Ole tarkkana, kun teet muutoksia kyselylomakkeisiin, joihin on jo vastattu. Muutosten tekeminen voi vähentää tilastojen ja arviointien tarkkuutta. Vastatun kysymyksen muuttamisen sijaan kannattaa luoda uusi kysymys.
+> [!CAUTION]
+> Ole tarkkana, kun teet muutoksia kyselylomakkeisiin, joihin on jo vastattu. Muutosten tekeminen voi vähentää tilastojen ja arviointien tarkkuutta. Vastatun kysymyksen muuttamisen sijaan kannattaa luoda uusi kysymys.
 
 Seuraavia kysymystyyppejä ei voi poistaa kyselylomakkeesta:
 
@@ -177,7 +183,8 @@ Tulosryhmää käytetään pisteiden laskemisessa ja kyselylomakkeen tulosten lu
 -   Voit luoda kustakin tulosryhmästä tilastotietoja, jos haluat analysoida tuloksia.
 -   Tulosta raportti, jossa näkyvät kunkin tulosryhmän tulokset sekä valinnaiset pisteet/tekstit, jotka perustuvat samassa tulosryhmässä saatuihin pisteisiin.
 
-**Huomautus:** Seuraavat tehtävät on suoritettava ennen tulosryhmien määrittämistä:
+> [!NOTE]
+> Seuraavat tehtävät on suoritettava ennen tulosryhmien määrittämistä:
 
 -   Määritä monivalintakysymykset. Monivalintakysymysten **Kysymykset**-sivun syöttötyypiksi on määritettävä **valintaruutu**, **vaihtoehtopainike** tai **yhdistelmäruutu**.
 -   Määritä pisteet vastauksille, jotka kuuluvat kuhunkin kysymykseen liitettyyn vastausryhmään.
@@ -187,7 +194,8 @@ Voit liittää kyselylomakkeeseen kysymykset tulosryhmien avulla määrittämäl
 
 Voit määrittää useita tulosryhmiä, kun haluat arvioida vastaajien kussakin luokassa saamat pisteet. Kun kyselylomake on valmis, näkyviin tulevat kussakin tulosryhmässä saadut pisteet. 
 
-**Vihje:** Voit arvioida kyselylomakkeen käyttämällä pisteitä ilman erillisiä luokkia, kun lisäät kaikki kysymykset yhteen tulosryhmään. 
+> [!TIP]
+> Voit arvioida kyselylomakkeen käyttämällä pisteitä ilman erillisiä luokkia, kun lisäät kaikki kysymykset yhteen tulosryhmään. 
 
 Voit myös määrittää jokaiselle tulosryhmälle vähintään yhden pisteisiin perustuvan sanoman, joka lähetetään vastaajille, kun he ovat täyttäneet kyselylomakkeen. Näyttöön tuleva teksti voi vaihdella sen mukaan, mitkä pisteet vastaaja on saanut tulosryhmässä. Voit käyttää pisteisiin perustuvia sanomia, kun määrität pistevälit ja kunkin pistevälin kuvauksen. Kun vastaaja saa tiettyyn pisteväliin kuuluvan tuloksen, kyseiseen pisteväliin liittyvä teksti näkyy tulosraportissa. 
 
@@ -213,13 +221,15 @@ Seuraavassa taulussa näkyvät johtamistaidot-tulosryhmälle määritetyt pistei
 
 Voit määrittää pistevälejä ja tekstejä jokaiselle kyselylomakkeen tulosryhmälle. Kunkin vastaajan tuloksia vastaava teksti näkyy tulosryhmän kohdalla. 
 
-**Huomautus:** Voit muuttaa välejä ja tekstejä. Jos kyselylomake on täytetty, muutokset voivat aiheuttaa eroja edellisten ja uusien tulosraporttien välillä.
+> [!NOTE]
+> Voit muuttaa välejä ja tekstejä. Jos kyselylomake on täytetty, muutokset voivat aiheuttaa eroja edellisten ja uusien tulosraporttien välillä.
 
 ### <a name="conditional-question-hierarchies"></a>Ehdolliset kysymyshierarkiat
 
 Ehdolliset kysymyshierarkiat ovat valinnaisia kyselylomakkeen määrittämisen yhteydessä. 
 
-**Huomautus:** Ennen kuin voit määrittää ehdollisen kysymyshierarkian, kyselylomakkeeseen täytyy liittää kysymykset, joille on liitetty kysymysryhmät. 
+> [!NOTE]
+> Ennen kuin voit määrittää ehdollisen kysymyshierarkian, kyselylomakkeeseen täytyy liittää kysymykset, joille on liitetty kysymysryhmät. 
 
 Jos käytät ehdollisia kysymyksiä kyselylomakkeen kysymyshierarkian luomiseen, voit muodostaa järjestyksen, jossa kysymykset esitetään vastaajan kysymykseen valitseman vastauksen perusteella. Kun kysymysten järjestys perustuu vastaajan vastaukseen, voit muokata kyselylomaketta samalla, kun vastaaja täyttää sitä.
 
@@ -232,9 +242,9 @@ Vaihtoehtoisesti kyselylomakkeen voi määrittää niin, että jos vastaaja vali
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Kyselylomakkeiden käyttäminen](questionnaires.md)
+[Kyselylomakkeet](questionnaires.md)
 
-[Kyselylomakkeiden jakelu ja täyttäminen](distribute-questionnaires.md)
+[Kyselylomakkeiden jakelu ja aikataulutus](distribute-questionnaires.md)
 
-[Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
+[Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
 

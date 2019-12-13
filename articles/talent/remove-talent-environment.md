@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: bbc65a77b7c3df6545dfd7aa2109aba5c4e1b57b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010612"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773031"
 ---
 # <a name="remove-talent-environments"></a>Talent-ympäristöjen poistaminen
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Talentin testi- tai tuotan
 
 Talentin testauksen valmistelussa on 60 päivän vanhentumiskäytäntö. Testiympäristöjen omistajat voivat kuitenkin lopettaa kokeiluversion käytön aikaisemmin seuraavien vaiheiden avulla. 
 
-1. Siirry [PowerApps-hallintakeskukseen](https://admin.businessplatform.microsoft.com/).
+1. Siirry [Power Apps-hallintakeskukseen](https://admin.businessplatform.microsoft.com/).
 2. Valitse **Ympäristö**.
 3. Valitse testiympäristö, jonka nimeämiskäytäntö on seuraavanlainen: TestDrive – alias@toimialue
 4. Valitse **Poista** ja vahvista valinta. 
@@ -45,14 +45,14 @@ Aiemmin luotu testausympäristö poistetaan. Kun se on poistettu, voit tilata uu
 
 Ohjeaiheessa oletetaan, että olet ostanut Talentin pilvipalveluratkaisujen toimittajalta tai yritysarkkitehtuurisopimuksen avulla. 
 
-Koska yksi Talent-ympäristö toimii yhden PowerApps-ympäristön sisällä, huomioon on otettava kaksi vaihtoehtoa. Ensimmäinen vaihtoehto poistaa koko PowerApps-ympäristön, ja toinen vaihtoehto vain Talent-sovelluksen. Ensimmäinen vaihtoehto on parempi, jos olet luonut PowerApps-ympäristön nimenomaan Talentin valmistelua varten ja olet vasta aloittanut käyttöönoton tai sinulla ei ole muodostettuja integraatioita. Toinen vaihtoehto on parempi, kun olet muodostanut PowerApps-ympäristön, johon täytettyjä monipuolisia tietoja hyödynnetään PowerApps- ja Flow-ratkaisuissa.
+Koska yksi Talent-ympäristö toimii yhden Power Apps-ympäristön sisällä, huomioon on otettava kaksi vaihtoehtoa. Ensimmäinen vaihtoehto poistaa koko Power Apps-ympäristön, ja toinen vaihtoehto vain Talent-sovelluksen. Ensimmäinen vaihtoehto on parempi, jos olet luonut Power Apps-ympäristön nimenomaan Talentin valmistelua varten ja olet vasta aloittanut käyttöönoton tai sinulla ei ole muodostettuja integraatioita. Toinen vaihtoehto on parempi, kun olet muodostanut Power Apps -ympäristön, johon täytettyjä monipuolisia tietoja hyödynnetään Power Apps- ja Power Automate -ratkaisuissa.
 
 > [!Important]
-> Varmista ennen PowerApps-ympäristön poistamista, että sitä ei käytetä monipuolisissa tietojen integroinneissa Talent-sovelluksen ulkopuolella. Huomaa myös, että PowerApps-oletusympäristöjä ei voi poistaa. 
+> Varmista ennen Power Apps-ympäristön poistamista, että sitä ei käytetä monipuolisissa tietojen integroinneissa Talent-sovelluksen ulkopuolella. Huomaa myös, että Power Apps-oletusympäristöjä ei voi poistaa. 
 
-Koko PowerApps-ympäristön poistaminen, mukaan lukien Talent ja siihen liittyvät sovellukset ja työnkulut:
+Koko Power Apps-ympäristön poistaminen, mukaan lukien Talent ja siihen liittyvät sovellukset ja työnkulut:
 
-1. Siirry [PowerApps-hallintakeskukseen](https://admin.businessplatform.microsoft.com/).
+1. Siirry [Power Apps-hallintakeskukseen](https://admin.businessplatform.microsoft.com/).
 2. Valitse **Ympäristö**.
 3. Valitse poistettava ympäristö.
 4. Valitse **Poista** ja vahvista valinta. 
@@ -63,7 +63,7 @@ Koko PowerApps-ympäristön poistaminen, mukaan lukien Talent ja siihen liittyv�
 9. Valitse poistettava esiintymä. 
 10. Valitse **Poista esiintymä** ja vahvista valinta.  
 
-Voit poistaa Talent-ympäristön aiemmin luodusta PowerApps-ympäristöstä suorittamalla seuraavat vaiheet. Huomaa, että Talent DevOps -ryhmän tuki ja yhteydenottomahdollisuus on käytössä väliaikaisesti siihen asti, kunnes tämä toiminto on käytössä suoraan LCS-sovelluksessa.
+Voit poistaa Talent-ympäristön aiemmin luodusta Power Apps-ympäristöstä suorittamalla seuraavat vaiheet. Huomaa, että Talent DevOps -ryhmän tuki ja yhteydenottomahdollisuus on käytössä väliaikaisesti siihen asti, kunnes tämä toiminto on käytössä suoraan LCS-sovelluksessa.
 
 1. Aloita poistopyyntö ottamalla yhteyttä tukeen.
 2. Tukiryhmä tekee poistopyynnön Talent DevOps -ryhmälle. 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b01e7e8e79061c7a306f00f041413cc1c5185cfe
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2f39ce63b6d9d57e245fbdce27bd11a8cbc3eebf
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572264"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813406"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Tuotteen vastaanotto ostotilausten perusteella
 
@@ -61,9 +61,9 @@ Voit käyttää tätä sivua **Vastaanotto**-toimintoryhmän **Ostotilaus**-sivu
 
 [Ostotilausten yleiskatsaus](purchase-order-overview.md)
 
-[Ostotilauksen luonti](purchase-order-creation.md)
+[Ostotilausten luominen](purchase-order-creation.md)
 
-[Ostotilauksen hyväksyntä ja vahvistus](purchase-order-approval-confirmation.md)
+[Ostotilausten hyväksyminen ja vahvistaminen](purchase-order-approval-confirmation.md)
 
 [Toimittajan laskujen yleiskatsaus](../../financials/accounts-payable/vendor-invoices-overview.md)
 

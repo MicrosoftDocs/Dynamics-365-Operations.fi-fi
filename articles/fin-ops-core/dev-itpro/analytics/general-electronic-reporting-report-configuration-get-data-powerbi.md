@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7be41e724cb715e4b7c9077bb30d26b2bd4899dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5401f310138d19f78412dff318959414c31a191
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181907"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770020"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin
 
@@ -184,7 +184,7 @@ Valitse **Asetukset**-painike uudelle kohdetietueelle. Noudata seuraavia ohjeita
     [![Päivitetty määritys](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance"></a>Power BI -raportin käyttö Financessa
-Voit määrittää Power BI -integraation. Lisätietoja on kohdassa [Power BI -integroinnin konfiguroiminen työtiloille](configure-power-bi-integration.md).
+Voit määrittää Power BI -integraation. Lisätietoja on kohdassa [Power BI -integroinnin määrittäminen työtiloille](configure-power-bi-integration.md).
 
 1. Valitse **Sähköinen raportointi** -työtilan sivulla, joka tukee Power BI -integrointia (**Organisaation hallinto** &gt; **Työtilat** &gt; **Sähköisen raportoinnin työtila**), **Asetukset** &gt; **Avaa raporttiluettelo**.
 2. Valitse **Tuodut ja viedyt tiedot** Power BI -raportti, jonka olet luonut, jotta raportti näytetään valitun sivun toimintonimikkeenä.
@@ -194,6 +194,6 @@ Voit määrittää Power BI -integraation. Lisätietoja on kohdassa [Power BI -i
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Sähköisen raportoinnin kohteet](electronic-reporting-destinations.md)
+[Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
 
-[Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+[Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)

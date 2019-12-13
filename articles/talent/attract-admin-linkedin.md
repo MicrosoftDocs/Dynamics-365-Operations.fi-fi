@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraation määrittäminen
+title: LinkedInin ja Attractin integraation määrittäminen
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraation määrittämistä siten, että työpaikkoja on helppo julkaista LinkedIniin Attractista ja että työhönottajat voivat synkronoida työhönottotiedot ehdokkaan LinkedIn-profiilin kanssa.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5cdce69396d6972d810e65e15b27c79119a0a9e6
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4c518fb7036d44aa52c8db859ee3616fc4e58a06
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552114"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833181"
 ---
-# <a name="set-up-integration-with-linkedin-for-microsoft-dynamics-365-talent---attract"></a>Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraation määrittäminen
+# <a name="set-up-linkedin-integration-with-attract"></a>LinkedInin ja Attractin integraation määrittäminen
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Auta työnottajia ja työhön ottavia esimiehiä rekrytoimaan parhaita osaajia määrittämällä LinkedInin integraatio Microsoft Dynamics 365 Talent: Attractin kanssa. Attractin avulla voit julkaista työpaikkoja suoraan maailman suurimpaan verkossa toimivaan asiantuntijaverkostoon, LinkedIniin.
 
@@ -41,11 +41,11 @@ Attractissa on kaksi tapaa, jolla LinkedIn-integraatio auttaa rekrytoimiaan ehdo
 Kumpikin vaihtoehto määritetään hallintakeskuksen **LinkedIn-integrointi**-välilehdessä. Avaa hallintakeskus siirtymällä osoitteeseen <https://attract.talent.dynamics.com/adminsettings>.
 
 > [!NOTE]
-> LinkedIn Recruiter -integraation käyttöä varten Attractissa tarvitaan [kattava työhönottolaajennuksen](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) ja [LinkedIn Recruiterin käyttöoikeudet](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). Lisätietoja on kohdassa [Mikä Attractin versio?](./attract-comprehensive-hiring.md).
+> LinkedIn Recruiter -integraation käyttöä varten Attractissa tarvitaan [kattava työhönottolaajennuksen](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) ja [LinkedIn Recruiterin käyttöoikeudet](https://business.linkedin.com/talent-solutions/cx/17/08/recruiter-demo-fs2-k18). Lisätietoja on kohdassa [Mikä Microsoft Dynamics 365 Talent – Attractin versio?](./attract-comprehensive-hiring.md).
 
-Jos työpaikkojen julkaisemisessa LinkedIniin on ongelmia, katso kohta [LinkedIn-integraation vianmääritys](./attract-troubleshoot-linkedin.md).
+Jos työpaikkojen julkaisemisessa LinkedIniin on ongelmia, katso kohta [LinkedInin ja Microsoft Dynamics 365 Talent – Attractin integroinnin vianmääritys](./attract-troubleshoot-linkedin.md).
 
-Lisätietoja muista työpaikkojen julkaisutavoista LinkedInissä on kohdassa [LinkedInin usein kysytyt kysymykset](./attract-linkedin-faq.md).
+Lisätietoja muista työpaikkojen julkaisutavoista LinkedInissä on kohdassa [Attractin ja LinkedInin integroinnin usein kysytyt kysymykset](./attract-linkedin-faq.md).
 
 ## <a name="configure-job-posting-to-linkedin"></a>LinkedIn-työpaikkailmoituksen määrittäminen
 
@@ -98,7 +98,7 @@ Jos haluat, että työhönottajat voivat rekrytoida työntekijöitä LinkedIn Re
 
 Voit antaa ehdokkaiden hakea työpaikkoja LinkedIn-profiilien avulla. Lisätietoja Hae LinkedInin kautta -toiminnosta on kohdassa [LinkedInin monipuolinen käyttö: Hae LinkedInin kautta -toiminto](https://blog.linkedin.com/2011/07/24/apply-with-linkedin).
 
-Tämä ominaisuus on tällä hetkellä vain esiversiossa. Varmista ennen näiden vaiheiden suorittamista, että Hae LinkedInin kautta -toiminto on otettu käyttöön. Lisätietoja esiversiotoimintojen käyttöönottamisesta on kohdassa [Esiversiotoimintojen käyttö Talentissa](./access-preview-feature.md).
+Tämä ominaisuus on tällä hetkellä vain esiversiossa. Varmista ennen näiden vaiheiden suorittamista, että Hae LinkedInin kautta -toiminto on otettu käyttöön. Lisätietoja esiversiotoimintojen käyttöönottamisesta on kohdassa [Esiversiotoimintojen käyttö Microsoft Dynamics 365 Talentissa](./access-preview-feature.md).
 
 1. Valitse **Asetukset**-valikossa (hammasrataskuvake) oikeassa alakulmassa **Hallintakeskus**. Vaihtoehtoisesti voit siirtyä sivulle <https://attract.talent.dynamics.com/adminsettings>.
 2. Valitse **LinkedIn-integraatio**-välilehti.
@@ -109,12 +109,12 @@ Tämä ominaisuus on tällä hetkellä vain esiversiossa. Varmista ennen näiden
 
 ## <a name="see-also"></a>Lisätietoja
 
-[LinkedInin usein kysytyt kysymykset](./attract-linkedin-faq.md)
+[Attractin LinkedIn-integraation usein kysytyt kysymykset](./attract-linkedin-faq.md)
 
-[Työpaikkojen julkaiseminen ulkoisille sivustoille Attractista](./posting-jobs-external.md)
+[Työpaikkojen julkaiseminen ulkoisille urasivustoille Attractista](./posting-jobs-external.md)
 
-[Ehdokkaiden rekrytointi LinkedIn Recruiter -ratkaisulla](./attract-linkedin-recruiter.md)
+[Ehdokkaiden rekrytointi LinkedIn Recruiterilla Microsoft Dynamics 365 Talent – Attractissa](./attract-linkedin-recruiter.md)
 
-[Työpaikkojen luominen](./creating-jobs-attract.md)
+[Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa](./creating-jobs-attract.md)
 
-[LinkedIn-integraation vianmääritys](./attract-troubleshoot-linkedin.md)
+[LinkedInin ja Microsoft Dynamics 365 Talent – Attractin integroinnin vianmääritys](./attract-troubleshoot-linkedin.md)

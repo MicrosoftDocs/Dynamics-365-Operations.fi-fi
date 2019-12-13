@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9200b0e4bc3862abdb3ecacb6539f7ba0d619b2f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0a930b4921a29d5ce561ce0e958733f0c3261b81
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189611"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772188"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Projektikustannusten jaksottaminen ostojen vastaanotoissa
 
@@ -40,21 +40,20 @@ Contoso Consulting on aloittanut uuden pilvikehitysprojektin. Luodaan ostotilaus
 Jaksotettu kustannus on tallennettava raportoinnissa sekä taloushallinnon tasolla että projektitasolla. Tuotteen vastaanoton nimike- ja hankintaluokkien maksupäivitystä voidaan seurata. 
 
 Valitse nimikkeille **Ostoreskontran parametrit** -sivulla **Kirjaa tuotteen vastaanotot kirjanpitoon** -vaihtoehto.
-[![jaksotukset1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
+[![Ostoreskontran parametrit -sivu](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
 Valitse hankintaluokille **Luokan käytäntösääntö** -sivulla **ostokäytännöt** ja valitse sitten jokaiselle hankintaluokalle **Jaksota ostokulut vastaanoton yhteydessä** -kohta.
-[![jaksotukset2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
+[![Luokan käytäntösääntö -sivu](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
 **Kirjausasetukset**-kohdassa olevia **Ostomeno, laskuttamaton**- ja **Osto, jaksotus** -tilejä käytetään, kun tuotteen vastaanottoon liittyvät tositteen kirjataan.
-[![jaksotukset3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
 
 Käytetään samaa skenaariota ja tarkastellaan, miten tuotteen vastaanotto vaikuttaa kirjanpitoon ja projektin tietoihin. 
 
 **Vaihe 1:** Luodaan ja vahvistetaan projektille uusi ostotilaus 1 500 euroa maksaneen tietokoneen ja 150 euroa maksaneiden asennuspalveluiden oston tallentamista varten.
-[![jaksotukset4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
+[![Uuden ostotilauksen luominen](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
 Kun ostotilaus vahvistetaan, projektille luodaan sidotun kustannuksen tapahtumat. 
-[![jaksotukset5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
+[![Luodut tapahtumat](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
 > Sidotun kustannuksen tapahtumien **Tapahtuman alkuperä** -kentän arvoksi on määritetty **Ostotilaus**. Projektille ei luoda tapahtumia ostotilauksen luomisen ja vahvistamisen yhteydessä. 
@@ -62,23 +61,23 @@ Kun ostotilaus vahvistetaan, projektille luodaan sidotun kustannuksen tapahtumat
 **Vaihe 2:** Tavarat ja palvelut toimitetaan ja tuotteen vastaanotto rekisteröidään. 
 
 Tuotteen vastaanoton kirjaamisen yhteydessä luodaan tosite ja kirjataan se kirjanpitoon. Tosite veloittaa ostomenoa, laskuttamatonta tiliä, ja hyvittää jaksotusmenetelmän tiliä. 
-[![jaksotukset6](./media/accruals6-1024x214.png)](./media/accruals6.png)
+[![Tositetapahtumat](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
 > Tuotteen vastaanoton kirjaamisessa käytetään hankintaluokkien ja tuotteiden kirjausasetuksia projektiluokkien kirjausasetusten sijaan. Nämä asetukset on kohdistettava, jotta taloudellinen vaikutus ostojen jaksotukseen on oikea. 
 
 Hankintaluokat on mahdollista yhdistää projektiluokkiin **Hankintaluokka**-sivulla.
-[![jaksotukset7](./media/accruals7-1024x390.png)](./media/accruals7.png)
+[![Hankintaluokan nimi -sivu](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
 **Vaihe 3:** Luo toimittajan laskuluonnos. 
 
 Tuotteen kirjaaminen ei vaikuta projektin tietoihin. Voit välttää ongelman luomalla toimittajan luonnoslaskun myös heti oston vastaanoton kirjaamisen jälkeen. Siirry kohtaan **Ostolasku**-sivu &gt; **Lasku-välilehti** &gt; **Luo** &gt; **Lasku**. Tämä luo odottavan laskuasiakirjan, joka päivittää projektin tiedot. 
 
 Toimittajan laskuluonnoksen luominen luo odottavia projektitapahtumia. 
-[![jaksotukset8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
+[![Odottavat projektitapahtumat](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
 **Sidottu kustannus** -sivulla vaiheessa 1 luodut tietueet suljetaan. Tämän jälkeen luodaan uudet tietueet, jotka vastaavat odottavista toimittajan laskuista saatavia kustannussitoumuksia. Sidotun kustannuksen **Tapahtuman alkuperä** -kentän arvoksi määritetään **Toimittajan lasku**.
-[![jaksotukset9](./media/accruals9-1024x200.png)](./media/accruals9.png)
+[![Sidotut kustannukset -sivu](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 Toimittajan laskun tila on Odottaa niin kauan, kunnes todellinen toimittajan lasku saapuu.
 

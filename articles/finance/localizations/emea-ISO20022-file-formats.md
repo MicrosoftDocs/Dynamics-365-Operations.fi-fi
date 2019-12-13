@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4ef97d30ca2d8a9c27ce656c82d2a415682ce075
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551220"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773428"
 ---
 # <a name="import-iso20022-files"></a>ISO20022-tiedostojen tuominen
 
@@ -49,7 +49,7 @@ Pankki-ilmoitussanomien tuonti camt.054.001.002-muodossa asiakkaan maksukirjausk
 
     - Anna **Asiakkaan maksut, tilin pituus** -kentässä ISR-viitteissä tai asiakkaan automaattisessa tunnistuksessa käytettävän asiakaskoodin pituus.
     - Varmista, että asiakkaan ja laskun numerossa (numerosarjassa) käytetään vain numeroita. Muiden merkkien käyttö ei ole sallittua. Laskunumerossa ei saa olla alkunollia.
-    - Anna yrityksen pankkitilin ESR-, BESR- ja reititysnumero. Lisätietoja on [vanhassa ESR-ominaisuudessa](emea-che-esr-customer-payments-import.md), koska tarvittavat asetukset ovat vastaavanlaisia.
+    - Anna yrityksen pankkitilin ESR-, BESR- ja reititysnumero. Lisätietoja on kohdassa [ESR-asiakasmaksujen tuonti](emea-che-esr-customer-payments-import.md), koska tarvittavat asetukset ovat vastaavanlaisia.
     
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>camt.054-hyvitysilmoitustiedoston tuominen asiakkaan maksukirjauskansioon
 1. Valitse **Asiakkaan maksukirjauskansion rivit** -sivulla **Toiminnot** > **Viitesuoritusten luku**.

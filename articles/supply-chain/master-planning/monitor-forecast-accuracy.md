@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f238afadfa064e972ef11a95fdad073f63ff20c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 4cf65826279f0741ce5abc89d8f15bfec98c83ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250665"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813681"
 ---
 # <a name="monitor-forecast-accuracy"></a>Ennusteen tarkkuuden seuranta
 
@@ -44,7 +44,7 @@ Supply Chain Management laskee seuraavia ennusteen tarkkuuden tyyppejä:
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Oikaistun kysynnän ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
+[Oikaistun ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
 
 [Poista poikkeavat tiedot aiemmista tapahtumatiedoista laskettaessa ennustetarvetta](remove-historical-outliers-calculating-demand-forecast.md)
 

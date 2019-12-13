@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ce8c1e7a3a4533516d8f2e2b0af46633e4c7667
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c0d9b8708df413118d6e1c1dbe788ce4f6ed5b2f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250734"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815177"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Tilastollisen perusennusteen luominen
 
@@ -56,7 +56,7 @@ Perusmuotoisen kysynnän ennusteen alkamispäivämäärän ei tarvitse olla nyky
 
 **Perusennusteen alkamispäivä**  -  **Päivämäärästä** -kenttään voidaan määrittää mennyt päivämäärä. On toisin sanoen mahdollista luoda kysynnän ennuste menneisyydelle. Tämä on hyödyllistä, koska sen avulla käyttäjät voivat optimoida ennustepalvelun parametrit siten, että tilastollinen menneisyydelle luotu ennuste vastaa todellista historiallista kysyntää. Käyttäjät voivat sitten jatkaa näiden parametriasetusten käyttöä luodakseen tilastollisen perusennusteen tulevaisuudelle. 
 
-Aiemmissa kysynnän ennusteen iteraatioissa tehtyjä manuaalisia oikaisuja voidaan käyttää automaattisesti uudessa perusennusteessa, jos **Siirrä manuaaliset oikaisut kysynnän ennusteeseen** -valintaruutu on valittuna. Jos tämä valintaruutu on tyhjä, manuaalisia oikaisuja ei lisätä perusennusteeseen, mutta niitä ei poisteta. Ennusteeseen tehdyt manuaaliset oikaisut voidaan poistaa vain ennusteen tuontihetkellä tyhjentämällä **Tallenna kysynnän perusennusteeseen tehdyt manuaaliset oikaisut** -valintaruutu. Manuaaliset oikaisut tallennetaan varmennushetkellä. Niinpä jos käyttäjä tekee manuaalisia oikaisuja ennusteeseen mutta ei varmenna ennustetta takaisin Supply Chain Managementiin, muutokset häviävät. Lisätietoja manuaalisista oikaisuista ja miten ne toimivat on kohdassa [Oikaistun ennusteen varmennus](authorize-adjusted-forecast.md). 
+Aiemmissa kysynnän ennusteen iteraatioissa tehtyjä manuaalisia oikaisuja voidaan käyttää automaattisesti uudessa perusennusteessa, jos **Siirrä manuaaliset oikaisut kysynnän ennusteeseen** -valintaruutu on valittuna. Jos tämä valintaruutu on tyhjä, manuaalisia oikaisuja ei lisätä perusennusteeseen, mutta niitä ei poisteta. Ennusteeseen tehdyt manuaaliset oikaisut voidaan poistaa vain ennusteen tuontihetkellä tyhjentämällä **Tallenna kysynnän perusennusteeseen tehdyt manuaaliset oikaisut** -valintaruutu. Manuaaliset oikaisut tallennetaan varmennushetkellä. Niinpä jos käyttäjä tekee manuaalisia oikaisuja ennusteeseen mutta ei varmenna ennustetta takaisin Supply Chain Managementiin, muutokset häviävät. Lisätietoja manuaalisista oikaisuista ja niiden toiminnasta on kohdassa [Oikaistun ennusteen varmennus](authorize-adjusted-forecast.md). 
 
 Kysynnän ennusteen luonnilla voi olla nimi ja kommentteja, jotka auttavat käyttäjiä tunnistamaan luodun ennusteen. Nämä arvot näkyvät ennusteen luontihistoriassa **Tilastollisen perusennusteen luontihistoria** -sivulla. 
 
@@ -77,4 +77,4 @@ Jos ennustetta ei luoda isolle nimikejoukolle vaan esimerkiksi yhdelle nimikkeel
 
 - [Manuaalisten oikaisujen tekeminen perusennusteeseen](manual-adjustments-baseline-forecast.md)
 
-- [Oikaistun kysynnän ennusteen valtuuttaminen](authorize-adjusted-forecast.md)
+- [Oikaistun ennusteen valtuuttaminen](authorize-adjusted-forecast.md)

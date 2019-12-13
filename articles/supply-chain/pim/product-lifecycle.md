@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 83c523a23973f4fd146d8308fbb5ecb486224ad9
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865325"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813543"
 ---
 # <a name="product-lifecycle-state-overview"></a>Tuotteen elinkaaren tila – yleiskatsaus
 
@@ -107,9 +107,9 @@ Valitse ja päivitä vapautetut tuotteet ja tuotevariantit seuraavien ehtojen mu
 
 ## <a name="related-topics"></a>Liittyvät aiheet
 
--  [Uuden tuotteen elinkaaren tilan luominen (tehtäväopas)](tasks/new-product-lifecycle-state.md)
--  [Oletustuotteen elinkaaren tilan luominen (tehtäväopas)](tasks/default-product-lifecycle-state.md)
--  [Tuotteen elinkaaren tilan määrittäminen vapautetulle päätuotteelle (tehtäväopas)](tasks/product-lifecycle-state-released-product-master.md)
--  [Tuotteen elinkaaren tilan liittäminen vapautettuun tuotteeseen (tehtäväopas)](tasks/product-lifecycle-state-released-product.md)
--  [Vanhentuneiden tuotevarianttien etsiminen ja tuotteen elinkaaren tilan liittäminen (tehtäväopas)](tasks/obsolete-product-variants.md)
--  [Tuotteen elinkaaren tason luonti jättämään tuotteita pääsuunnittelun ulkopuolelle (tehtäväopas)](tasks/exclude-products-master-planning.md)
+-  [Luo uusi tuotteen elinkaaren tila](tasks/new-product-lifecycle-state.md)
+-  [Luo tuotteen elinkaaren oletustila](tasks/default-product-lifecycle-state.md)
+-  [Tuotteen elinkaaren tilan määrittäminen vapautetulle päätuotteelle](tasks/product-lifecycle-state-released-product-master.md)
+-  [Tuotteen elinkaaren tilan määrittäminen vapautetulle tuotteelle](tasks/product-lifecycle-state-released-product.md)
+-  [Vanhentuneiden tuotevarianttien etsiminen ja tuotteen elinkaaren tilan määrittäminen](tasks/obsolete-product-variants.md)
+-  [Tuotteen elinkaaren tason luonti jättämään tuotteita pääsuunnittelun ulkopuolelle](tasks/exclude-products-master-planning.md)

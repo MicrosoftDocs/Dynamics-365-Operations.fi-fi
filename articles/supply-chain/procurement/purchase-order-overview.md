@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8e5fd05f3114eb99b7e8b4390827d5ccd52832a
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c527735ea65dad84c5d3d405eac2ead35d3c792d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572196"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815362"
 ---
 # <a name="purchase-order-overview"></a>Ostotilausten yleiskatsaus
 
@@ -41,8 +41,8 @@ Voit tarkastella luetteloita ostotilausten eri vaiheissa **Ostotilauksen valmist
 
 Seuraavissa artikkeleissa on yhteenveto ostotilauksen vaiheista:
 
--   [Ostotilauksen luonti](purchase-order-creation.md)
--   [Ostotilauksen hyväksyntä ja vahvistus](purchase-order-approval-confirmation.md)
+-   [Ostotilausten luominen](purchase-order-creation.md)
+-   [Ostotilausten hyväksyminen ja vahvistaminen](purchase-order-approval-confirmation.md)
 -   [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
 -   [Toimittajan laskujen yleiskatsaus](../../financials/accounts-payable/vendor-invoices-overview.md)
 
@@ -82,9 +82,9 @@ Voit arvioida **Asiakirjan tila** -kentän avulla nopeasti tilauksen edistymisen
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Ostotilauksen luonti](purchase-order-creation.md)
+[Ostotilausten luominen](purchase-order-creation.md)
 
-[Ostotilauksen hyväksyntä ja vahvistus](purchase-order-approval-confirmation.md)
+[Ostotilausten hyväksyminen ja vahvistaminen](purchase-order-approval-confirmation.md)
 
 [Tuotteen vastaanotto ostotilausten perusteella](product-receipt-against-purchase-orders.md)
 

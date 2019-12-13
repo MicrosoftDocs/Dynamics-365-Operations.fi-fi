@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c36adc1f754c918a9fdf8410572f3199cdb63766
-ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
+ms.openlocfilehash: 6e62e406de5d972b3e66319cf293d3d420c69d46
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2577493"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812132"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations- sovellusten tai Lifecycle Servicesin (LCS) tuki
 
@@ -90,6 +90,6 @@ Jos tekniset kysymykset liittyvät CustomerSourceen, kirjautumiseen tai sen käy
 
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Dynamics 365 Retail -tuen saaminen](../../../retail/retail-support.md)
-- [Dynamics 365 Talent -tuen saaminen](../../../talent/talent-support.md)
+- [Microsoft iDynamics 365 Talentn tuki](../../../talent/talent-support.md)
 - Lisätietoja Microsoft Dynamics tukivalikoimasta esitetään kohdassa [Finance and Operations -sovellusten tukikokemusten hallinta](cloud-powered-support-lcs.md).
 

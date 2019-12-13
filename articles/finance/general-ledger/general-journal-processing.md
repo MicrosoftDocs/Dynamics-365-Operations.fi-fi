@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2becf8213cfa46e2c0cf0c553f0b5e503dfc3704
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570237"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771819"
 ---
 # <a name="general-journal-processing"></a>Yleisen kirjauskansion käsittely
 
@@ -85,7 +85,7 @@ Päätilin asetukset tarjoaa useita vaihtoehtoja yleisen kirjauskansion käsitte
 Kirjanpitorakenteet ja lisäsääntöjen rakenteet ovat erittäin tärkeitä sen varmistamisessa, että taloushallinnon raportoinnissa ja suorituskyvyn mittaamisessa tarvittavat tiedot ja asiakirjat kerätään kirjauskansion käsittelyn ja muun dokumentaation yhteydessä. Kirjanpitorakenteiden ja lisäsääntöjen rakenteiden ansiosta voit räätälöidä tietojen syöttörutiinin. Voit sallia tietojen syötön vain kussakin tilanteessa asianmukaisille taloushallinnon dimensioille sekä määrätä vaatimuksen siitä, että kerätään aina vaadittuja ja oikeita tietoja.
 
 Lisätietoja on seuraavissa aiheissa:
-- [Suunnittelu: tilikartta](plan-chart-of-accounts.md). 
+- [Tilikartan suunnittelu](plan-chart-of-accounts.md) 
 - [Luo kirjauskansioiden lisäsäännöt](tasks/create-advanced-rules-journals.md)
 - [Kirjauskansioviennin luonti mallin avulla](tasks/create-journal-entry-template.md)
 - [Luo ja vahvista kirjauskansiot](tasks/create-validate-journals.md)

@@ -1,6 +1,6 @@
 ---
-title: Älykkäät suositukset
-description: Tässä ohjeaiheessa käsitellään tapaa, jolla koneopetuksen avulla voidaan antaa töihin ja työnhakijoihin liittyviä suosituksia.
+title: Älykkäät suositukset Attractissa
+description: Tässä ohjeaiheessa käsitellään tapaa, jolla koneoppimisen avulla voidaan antaa töihin ja työnhakijoihin liittyviä suosituksia Microsoft Dynamics 365 Talent – Attractissa.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/16/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: fa06821c98e42dcd8590a764db9beb4a5c33fca2
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741749"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832788"
 ---
-# <a name="intelligent-recommendations"></a>Älykkäät suositukset
+# <a name="intelligent-recommendations-in-attract"></a>Älykkäät suositukset Attractissa
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Koneoppiminen voi auttaa työhönottajia ja työhön ottavia esimiehiä tunnistamaan toimeen parhaiten sopivat hakijat nopeasti. Lisäksi potentiaaliset ehdokkaat voivat löytää sen avulla heidän profiiliinsa ja kiinnostuksen kohteisiin parhaiten sopivan toimen. Kun ominaisuuksia käytetään ja niistä annetaan palautetta, suositukset paranevat.
 
 > [!NOTE] 
 > - Älykkäät suositustoiminnot ovat käytettävissä vain [kattavan työhönottolaajennuksen kanssa](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Tässä ohjeaiheessa mainitut toiminnot ovat saatavilla ennakkoversion osana. Sisältö ja toiminnot voivat muuttua. Voit käyttää tätä toimintoa pyytämällä järjestelmänvalvojaa ottamaan sen käyttöön Attractin **hallintakeskuksessa**. Määritä asetusten **Ehdokkaan suositus**, **Työn suositus** ja **Prospektisuositukset** arvoksi  **Käytössä**. Lisätietoja on kohdassa [Talentin esiversiotoimintojen käyttö](./access-preview-feature.md). 
+> - Tässä ohjeaiheessa mainitut toiminnot ovat saatavilla ennakkoversion osana. Sisältö ja toiminnot voivat muuttua. Voit käyttää tätä toimintoa pyytämällä järjestelmänvalvojaa ottamaan sen käyttöön Attractin **hallintakeskuksessa**. Määritä asetusten **Ehdokkaan suositus**, **Työn suositus** ja **Prospektisuositukset** arvoksi  **Käytössä**. Lisätietoja on kohdassa [Microsoft Dynamics 365 Talentin esiversiotoimintojen käyttö](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Ehdokkaan suositukset

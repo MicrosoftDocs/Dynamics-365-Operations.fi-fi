@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: ''
+ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
-ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
+ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2652614"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824517"
 ---
 # <a name="business-document-management-overview"></a>Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 
-Yrityskäyttäjät käyttävät [sähköisen raportoinnin (ER) kehystä](general-electronic-reporting.md) määrittääkseen lähtevien sähköisten asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisiksi. Käyttäjät voivat myös määrittää tietovirran määrittääkseen, mitkä sovellustiedot sijoitetaan luotuihin tiedostoihin. ER-kehys luo lähteviä tiedostoja Microsoft Office -muodoissa (Excel-työkirjoissa tai Word-asiakirjoissa) ennalta määritettyjen mallien avulla. Mallit täytetään tarvittavilla tiedoilla määritetyn tietovirran mukaisesti, kun vaadittavat tiedostot luodaan. Kukin konfiguroitu muoto voidaan julkaista osana ER-ratkaisua tiettyjen lähtevien tiedostojen luomista varten. Tätä kuvaa ER-muotoonfiguraatio, joka voi sisältää malleja, joiden avulla voit luoda erilaisia lähteviä asiakirjoja. Yrityskäyttäjät voivat hallita tarvittavia liikeasiakirjoja tämän kehyksen avulla.
+Yrityskäyttäjät käyttävät [sähköisen raportoinnin (ER) yleiskuvausta](general-electronic-reporting.md) määrittämään lähtevien asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisiksi. Käyttäjät voivat myös määrittää tietovirran määrittääkseen, mitkä sovellustiedot sijoitetaan luotuihin tiedostoihin. ER-kehys luo lähteviä tiedostoja Microsoft Office -muodoissa (Excel-työkirjoissa tai Word-asiakirjoissa) ennalta määritettyjen mallien avulla. Mallit täytetään tarvittavilla tiedoilla määritetyn tietovirran mukaisesti, kun vaadittavat tiedostot luodaan. Kukin konfiguroitu muoto voidaan julkaista osana ER-ratkaisua tiettyjen lähtevien tiedostojen luomista varten. Tätä kuvaa ER-muotoonfiguraatio, joka voi sisältää malleja, joiden avulla voit luoda erilaisia lähteviä asiakirjoja. Yrityskäyttäjät voivat hallita tarvittavia liikeasiakirjoja tämän kehyksen avulla.
 
 **Liiketoiminta-asiakirjojen hallinta** perustuu ER-kehykseen, ja sen avulla yrityskäyttäjät voivat muokata liiketoiminta-asiakirjamalleja Microsoft Office 365 -palvelun tai asianmukaisen Microsoft Office -työpöytäsovelluksen avulla. Asiakirjoihin tehdyt muokkaukset voivat olla liiketoiminnan asiakirjamallien muuttamista ja lisätietojen paikkamerkkien lisäämistä ilman lähdekoodin muutoksia ja uusia käyttöönottoja. Yritysasiakirjojen mallien päivittämiseksi ei tarvita tietoja ER-kehyksestä.
 
@@ -58,21 +59,17 @@ Seuraavat Excel-pohjaisten mallien raportit ovat käytettävissä julkisen esika
 
 Lisää raportteja tulee saataville. Lisäraporttien erityisilmoitukset lähetetään erikseen. 
 
-Täydellinen luettelo kaikista suunnitelluista raporteista lokakuun 2019 julkaisussa löytyy kohdasta [Määritettävien liikeasiakirjaraportointi Wordissa ja Excelissä](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
-
-# <a name="example-enable-configure-and-use-business-document-management"></a>Esimerkki: yritysasiakirjan hallinnan ottaminen käyttöön, määrittäminen ja käyttäminen
-
-Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan esimerkin.
+Täydellinen luettelo kaikista suunnitelluista raporteista lokakuun 2019 julkaisussa löytyy kohdasta [Määritettävien liikeasiakirjaraportointi Wordissa ja Excelissä](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan esimerkin.
 
 ## <a name="configure-er-parameters"></a>Konfiguroi ER-parametrit
 
-Koska yritysasiakirjan hallinta perustuu ER-kehykseen, on määritettävä ER-parametrit, jotta yritystiedostojen hallinta voidaan aloittaa. Jotta voisit tehdä tämän, sinun on määritettävä ER-parametrit kohdassa [Määritä ER-kehys](electronic-reporting-er-configure-parameters.md) kuvatulla tavalla. Lisää myös uusi konfigurointipalvelu, joka on kuvattu kohdassa [Luo konfigurointipalvelut ja merkitse ne aktiivisiksi](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+Koska yritysasiakirjan hallinta perustuu ER-kehykseen, on määritettävä ER-parametrit, jotta yritystiedostojen hallinta voidaan aloittaa. Jotta voisit tehdä tämän, sinun on määritettävä ER-parametrit kohdassa [Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md) kuvatulla tavalla. Lisää myös uusi konfigurointipalvelu, joka on kuvattu kohdassa [Luo konfigurointipalvelut ja merkitse ne aktiivisiksi](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![ER-työtila](./media/BDM-Overview-ERSetting.png)
 
 ## <a name="import-er-solutions"></a>Tuo ER-ratkaisut
 
-Sinun on tuotava yritysasiakirjojen malleja sisältäviä ER-konfiguraatioita nykyiseen esiintymään. Suorita nämä toimet lataamalla ja ja tallentamalla paikallisesti seuraavat tiedostot.
+Tämän menettelyn esimerkeissä käytetään ER-näytemäärityksiä. Nykyiseen Dynamics 365 Finance -esiintymään on tuotava ER-määrityksiä, joiden sisältämiä liiketoiminta-asiakirjamalleja voidaan muokata liiketoiminta-asiakirjojen hallinnalla. Suorita nämä toimet lataamalla ja tallentamalla paikallisesti seuraavat tiedostot.
 
 **Esimerkki ER-asiakaslaskutusratkaisusta**
 
@@ -105,7 +102,13 @@ Tuo kukin tiedosto noudattamalla seuraavia ohjeita. Tuo kunkin ER-ratkaisun ER-*
 
 ![Sähköisen raportoinnin konfiguroinnit -sivu](./media/BDM-Overview-ERSolutions.png)
 
+
+Vaihtoehtoisesti voit tuoda virallisesti julkaistut ER-muotomääritykset Microsoft Dynamics Lifecycle Servicestä (LCS). Tämän menettelyn viimeistelyä voit esimerkiksi tuoda **Vapaatekstilasku (Excel)** -ER-muotomäärityksen uusimman version. Vastaavat ER-tietomalli ja ER-mallin yhdistämismääritykset tuodaan automaattisesti.
+
+![LCS:n jaetun resurssikirjaston sisältösivu](./media/BDM-Overview-SharedAssetLibrary.png)
+
 Lisätietoja ER-määritysten tuomisesta on kohdassa [ER-konfiguraation elinkaaren hallinta](general-electronic-reporting-manage-configuration-lifecycle.md).
+
 
 ## <a name="enable-business-document-management"></a>Ota liiketoiminta-asiakirjojen hallinta käyttöön
 
@@ -118,9 +121,12 @@ Seuraavia ohjeita noudattamalla voit ottaa käyttöön yritystiedostojen hallinn
 3. Ota valittu toiminto käyttöön valitsemalla **Ota käyttöön nyt**.
 4. Voit avata uuden toiminnon päivittämällä sivun.
 
+>[!NOTE]
+> Lisäksi on otettava käyttöön **Officea muistuttava käyttöliittymäkokemus liiketoiminta-asiakirjojen hallintaan** uuden liiketoiminta-asiakirjan hallintaliittymän käyttämistä varten.
+
 ![Ominaisuushallinnan työtila](./media/BDM-Overview-FMEnabling.png)
 
-Lisätietoja uusien ominaisuuksien aktivoinnista on kohdassa [ominaisuuksien hallinnan yleiskuvaus](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Lisätietoja uusien ominaisuuksien aktivoinnista on kohdassa [ominaisuuksien hallinnan yleiskuvaus](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="configure-parameters"></a>Konfiguroi parametrit
 
@@ -137,7 +143,7 @@ Tämän tiedosto tyypin osalta on valittava seuraavat määritearvot.
 | Ryhmä               | Tiedosto                  |
 | Toimipaikka            | SharePoint            |
 
-Lisätietoja tarvittavien tiedoston hallintaparametrien ja tiedostotyyppien määrittämisestä on kohdassa [tiedostojen hallinnan määrittäminen](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+Lisätietoja tarvittavien tiedoston hallintaparametrien ja tiedostotyyppien määrittämisestä on kohdassa [tiedostojen hallinnan määrittäminen](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Määritä asiakirjojen hallinnan tiedostotyyppi](./media/BDM-Overview-DMSetting.png)
 
@@ -179,21 +185,21 @@ Seuraavia ohjeita noudattamalla voit määrittää yritystiedostojen hallinnan k
 1. Kirjaudu sisään käyttäjänä, jolla on **Käyttöoikeuksien määritys** -sivun käyttöoikeus.
 2. Siirry kohtaan **Organisaation hallinto** \> **Sähköinen raportointi** \> **Liiketoiminta-asiakirjojen hallinta**\> **Käyttöoikeuksien hallinta**.
 
-Kiinnitä huomiota ilmoitukseen, jossa kerrotaan, että liiketoimintatiedostojen hallinnan käyttöoikeuksien käyttöä ei ole otettu käyttöön tällä hetkellä.
+    Kiinnitä huomiota ilmoitukseen, jossa kerrotaan, että liiketoimintatiedostojen hallinnan käyttöoikeuksien käyttöä ei ole otettu käyttöön tällä hetkellä.
 
-![Yritysasiakirjan hallinnan käyttöoikeuskonfiguraattorin sivu](./media/BDM-Overview-TemplatesAccess1.png)
+    ![Yritysasiakirjan hallinnan käyttöoikeuskonfiguraattorin sivu](./media/BDM-Overview-TemplatesAccess1.png)
 
-Kun tämä asetus on käytössä, kaikki sellaiseen käyttöoikeusrooliin määritetyt käyttäjät, jotka on määritetty suorittamaan tehtävä **Liiketoiminta-asiakirjamallien hallinta** (AOT-nimi **ERBDManageTemplates**), voivat avata yritysasiakirjan hallinnan työtilan ja muokata mitä tahansa käytettävissä olevaa mallia.
+    Kun tämä asetus on käytössä, kaikki sellaiseen käyttöoikeusrooliin määritetyt käyttäjät, jotka on määritetty suorittamaan tehtävä **Liiketoiminta-asiakirjamallien hallinta** (AOT-nimi **ERBDManageTemplates**), voivat avata yritysasiakirjan hallinnan työtilan ja muokata mitä tahansa käytettävissä olevaa mallia.
 
-Seuraavassa kuvassa näkyy, mitä yritysasiakirjan hallinnan työtilassa on käytettävissä **Myyntireskontranhoitaja**-rooliin määritetyille käyttäjille. Nykyisten käyttöoikeuksien asetuksen avulla käyttäjä voi muokata eri toimintoalueista peräisin olevia liiketoiminta-asiakirjamalleja, kuten laskutusta, viranomaisraportointia ja maksuja.
+    Seuraavassa kuvassa näkyy, mitä yritysasiakirjan hallinnan työtilassa on käytettävissä **Myyntireskontranhoitaja**-rooliin määritetyille käyttäjille. Nykyisten käyttöoikeuksien asetuksen avulla käyttäjä voi muokata eri toimintoalueista peräisin olevia liiketoiminta-asiakirjamalleja, kuten laskutusta, viranomaisraportointia ja maksuja.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. Valitse **Käyttöoikeuksien määritys** -sivulla **Käyttöoikeuksien asetukset**.
 4. Ota **Mallien muokkauksen käyttöoikeuksien asetukset** -valintaikkunassa käyttöön **Ota määritetyt käyttöoikeudet käyttöön** -vaihtoehto.
 5. Vahvista , että yritysasiakirjan hallinnan käyttöoikeudet on otettu käyttöön valitsemalla **OK**.
 
-![Yritysasiakirjan hallinnan käyttöoikeuksien määritysten sivu](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Yritysasiakirjan hallinnan käyttöoikeuksien määritysten sivu](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Valitse **Lisää**, jos haluat määrittää uuden liiketoimintaroolin, jonka käyttöoikeuksia yritysasiakirjan hallinnan malleihin on määritettävä.
 7. Valitse **Käyttöoikeusroolit** -valintaikkunassa **Myyntireskontranhoitaja**-rooli ja vahvista roolin valinta valitsemalla **OK**.
@@ -201,11 +207,11 @@ Seuraavassa kuvassa näkyy, mitä yritysasiakirjan hallinnan työtilassa on käy
 9. Valitse **Tunnisteen tyyppi** -kentässä **Toiminnallinen alue** ja valitse **Tunnus**-kentästä **Laskutus**.
 10. Valitse **Tallenna**, jos haluat tallentaa valitun roolin määritetyt käyttöoikeudet.
 
-  Nykyiset asetukset tarkoittavat sitä, että kaikille käyttäjille, jotka on liitetty **Myyntireskontranhoitaja**-rooliin ja jotka suorittavat tehtävän **Liiketoiminta-asiakirjamallien hallinta** (AOT-nimi **ERBDManageTemplates**), ER-muotokonfigurointimallit, joiden **Toiminnallinen alue** -tunnisteen arvo on **Laskutus**, ovat käytettävissä muokattavaksi yritysasiakirjan hallinnan työtilassa.
+    Nykyiset asetukset tarkoittavat sitä, että kaikille käyttäjille, jotka on liitetty **Myyntireskontranhoitaja**-rooliin ja jotka suorittavat tehtävän **Liiketoiminta-asiakirjamallien hallinta** (AOT-nimi **ERBDManageTemplates**), ER-muotokonfigurointimallit, joiden **Toiminnallinen alue** -tunnisteen arvo on **Laskutus**, ovat käytettävissä muokattavaksi yritysasiakirjan hallinnan työtilassa.
 
 11. Vaihda **Aiheeseen liittyviä tietoja** -ruutu nykyisen sivun oikeasta reunasta. **Aiheeseen liittyviä tietoja** -ruudussa näkyy, miten konfiguroituja käyttöoikeuksia käytetään, mukaan lukien se, mitä ER-konfigurointimalleja **Myyntireskontranhoitaja**-rooliin määritetyt käyttäjät voivat käyttää.
 
-![Yritysasiakirjan hallinnan käyttöoikeuksien määritysten sivu](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Yritysasiakirjan hallinnan käyttöoikeuksien määritysten sivu](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. Valitse **Määrityskohtaiset käyttöoikeudet** -välilehdessä **Lisää**.
 13. Merkitse **Valitse määritys** -valintaikkunassa ER-muotokonfiguraatio **Intrastat-raportti**.
@@ -252,21 +258,31 @@ Seuraavia ohjeita noudattamalla voit muokata vapaatekstilaskun malleja yritysasi
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Muiden palveluiden omistamien mallien muokkauksen aloittaminen
 
-1. Valitse yritysasiakirjan hallinnan työtilassa **Asiakkaan FTI-raportti (GER)** -malli luettelosta.
-2. Valitse **Tiedot**-välilehti.
+1. Valitse liiketoiminta-asiakirjan hallintatyötilassa **Uusi asiakirja**.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate3.png)
+![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM_overview_new_template1.png)
 
-**Uusi asiakirja** -vaihtoehto on käytettävissä valitulle mallille. Tämä vaihtoehto on aina käytettävissä mallissa, joka on ER-muotokokoonpanossa, jonka tarjoaa toinen toimittaja (tässä esimerkissä **Microsoft**). Kun **Uusi asiakirja** valitaan, uusi malli on muokattavissa. Muokattu malli tallennetaan sen jälkeen uuteen ER-muotokonfiguraatioon, joka luodaan automaattisesti.
+2. Valitse asiakirja, jota haluat käyttää mallina.
+
+![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM_overview_new_template2.png)
+
+3. Valitse **Luo tiedosto**
+4. Muuta tarvittaessa muokattavan mallin otsikkoa **Otsikko**-kentässä. Tekstin avulla voit nimetä automaattisesti luotavan ER-muodon konfiguraation. Huomaa, että tämän konfiguraation luonnos (**Asiakkaan FTI-raportti (GER) Copy**), joka sisältää muokatun mallin, merkitään automaattisesti suorittamaan tämä ER-muoto nykyiselle käyttäjälle. Samaan aikaan ER-perusmuotomäärityksen ei-muokattua alkuperäistä mallia käytetään tämän ER-muodon suorittamiseen toiselle käyttäjälle.
+5. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
+6. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin huomautus.
+7. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
+
+![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM_overview_new_template3.png)
+
+**Uusi tiedosto** -vaihtoehto on aina käytettävissä siinä ER-muotomäärityksen mallissa, jonka toimittaa toinen palvelu (tässä esimerkissä Microsoft). Kun valitset **Uusi tiedosto**, näet kaikki nykyisen palvelun tai muiden palvelujen omistamat mallit. Kun olet valinnut mallin, se avautuu muokattavaksi. Muokattu malli tallennetaan sen jälkeen uuteen ER-muotokonfiguraatioon, joka luodaan automaattisesti.
 
 ### <a name="start-editing-a-template"></a>Aloita mallin muokkaus
 
-1. Valitse valitusta mallista **Uusi asiakirja**.
-2. Muuta tarvittaessa muokattavan mallin otsikkoa **Otsikko**-kentässä. Tekstin avulla voit nimetä automaattisesti luotavan ER-muodon konfiguraation. Huomaa, että tämän konfiguraation luonnos (**Asiakkaan FTI-raportti (GER) Copy**), joka sisältää muokatun mallin, merkitään automaattisesti suorittamaan tämä ER-muoto nykyiselle käyttäjälle. Samaan aikaan ER-perusmuotomäärityksen ei-muokattua alkuperäistä mallia käytetään tämän ER-muodon suorittamiseen toiselle käyttäjälle.
-3. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
-4. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin huomautus.
+1. Valitse valitusta mallista **Muokkaa tiedostoa**.
+2. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
+3. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin huomautus.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate4.png)
+    ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM_overview_new_template4.png)
 
 5. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
 
@@ -285,15 +301,15 @@ Muokkaa mallia käyttämällä Office 365 -toiminnallisuutta. Esimerkiksi Office
 1. Valitse **Avaa työpöytäsovelluksessa** -vaihtoehto, jos haluat muokata mallia Office-työpöytäsovelluksen toimintojen avulla (tässä esimerkissä Excel). Muokattava malli kopioidaan pysyvästä tallennuspaikasta yrityksen tiedostojen hallinnan parametreissa määritettyyn väliaikaiseen varastoon SharePoint-kansiona.
 2. Vahvista, että haluat avata mallin väliaikaisesta tiedostovarastoinnista Officen Excel -työpöytäsovelluksessa.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingLayout3.png)
+    ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingLayout3.png)
 
 3. Muokkaa mallia. Esimerkiksi voit muuttaa mallin otsikossa olevien kenttäkehotteiden fonttia päivittämällä värin arvosta **Musta** arvoon **Sininen**.
 
-![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout4.png)
+    ![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout4.png)
 
 4. Tallenna mallin muutokset väliaikaiseen varastoon valitsemalla Excel-työpöytäsovelluksessa **Tallenna**.
 
-![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout5.png)
+    ![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout5.png)
 
 5. Sulje Excel-työpöytäsovellus.
 6. Synkronoi väliaikainen mallisäilö pysyvään mallivarastoon valitsemalla **Synkronoi tallennettu kopio**.
@@ -307,7 +323,7 @@ Muokkaa mallia käyttämällä Office 365 -toiminnallisuutta. Esimerkiksi Office
 2. Valitse **Näytä muoto**, jos haluat tarkastella muodon nykyistä rakennetta ER-perusmuotomäärityksistä, joka on yhdenmukaistettava muokattavan mallin kanssa. 
 3. Voit sulkea ruudun valitsemalla **Piilota muoto**.
 
-![BDM-mallieditorin sivu](./media/BDM-Overview-EditingTemplate6.png)
+    ![BDM-mallieditorin sivu](./media/BDM-Overview-EditingTemplate6.png)
 
 4. Sulje **BDM-mallieditorin** sivu.
 
@@ -323,7 +339,7 @@ Päivitetty malli näkyy **Malli**-välilehdessä. Huomaa, että muokatun mallin
 4. Valitse **Moduuli - Myyntireskontra** \> **Tiedostot** \> **Vapaatekstilasku** \> **Alkuperäinen tiedosto** -taso määrittääksesi käsiteltävien laskujen vaikutusalueen.
 5. Valitse **Raportin muoto** -kentästä **Asiakkaan FTI-raportti (GER) Copy** -ER-muoto määritetylle tiedostotasolle.
 
-![Tulostuksenhallinnan asetukset -sivu](./media/BDM-Overview-TestRun1.png)
+    ![Tulostuksenhallinnan asetukset -sivu](./media/BDM-Overview-TestRun1.png)
 
 6. Voit sulkea nykyisen sivun painamalla **ESC-näppäintä**.
 7. Valitse **Tulosta** ja valitse **Valittu**.
@@ -340,9 +356,9 @@ Muokatun mallin avulla luodaan valitulle nimikkeelle vapaatekstilaskun raportti.
 3. Muuta tarvittaessa toisen version nimeä **Nimi** -kentässä ja perusta se tällä hetkellä aktiiviselle ensimmäiselle versiolle.
 4. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin huomautus tarvittaessa.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-AddRevision.png)
+    ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-AddRevision.png)
 
-Loit uuden mallin version, joka on tallennettu pysyvän mallin varastoon. Voit jatkaa nyt aktiiviseksi valitun toisen version mallin muokkaamista.
+    Loit uuden mallin version, joka on tallennettu pysyvän mallin varastoon. Voit jatkaa nyt aktiiviseksi valitun toisen version mallin muokkaamista.
 
 5. Valitse ensimmäinen versio ja valitse sitten **Määritä aktiivinen**. Voit valita toisen version aktiiviseksi, jos haluat palata kyseiseen mallin versioon.
 6. Valitse toinen versio ja valitse sitten **Poista**.
@@ -370,7 +386,7 @@ Kun muokkaat mallia nykyisen aktiivisen palveluntarjoajan omistamasta ER-muodost
 
 ## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
 
-#### <a name="i-selected-new-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Valitsin **Uusi asiakirja**, mutta sen sijaan, että avautuisi **BDM-mallieditorin** sivu Finance and Operationsissa, minut on siirretty Office 365 -verkkosivulle.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Valitsin **Muokkaa tiedostoa**, mutta sen sijaan että avautuisi Finance and Operationsin **BDM-mallieditori** -sivu, minut on siirretty Office 365 -verkkosivulle.
 Tämä on tunnettu Office 365:n uudelleenohjauksen ongelma. Näin tapahtuu, kun kirjaudut Office 365:een ensimmäisen kerran. Voit välttää tämän ongelman valitsemalla selaimesi **Takaisin**-painikkeen ja siirtymällä takaisin.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Ymmärrän, miten voit muokata mallia käyttämällä Office 365:tä ensimmäisessä sovellusistunnossa ja miten mallia käytetään toisessa sovellusistunnossa mallin säätämiseen, jotta näen, miten muutokset vaikuttavat luotuun liiketoimintaasiakirjaan. Voinko tehdä tämän Office-työpöytäsovelluksen avulla?
@@ -386,12 +402,12 @@ Kirjauduit todennäköisesti Azure AD -toimialueen nykyisen sovelluksen esiintym
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+[Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)
 
-[Suunnittele kokoonpano, jolla raportit voi luoda OPENXML-muodossa](tasks/er-design-reports-openxml-2016-11.md)
+[ER OPENXML-muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)](tasks/er-design-reports-openxml-2016-11.md)
 
 [Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja Word-muodossa](tasks/er-design-configuration-word-2016-11.md)
 
 [Kuvien ja muotojen upottaminen luomiisi asiakirjoihin ER:n avulla](electronic-reporting-embed-images-shapes.md)
 
-[Sähköisen raportoinnin määrittäminen hakemaan tiedot Power BI:hin](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+[Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin](general-electronic-reporting-report-configuration-get-data-powerbi.md)

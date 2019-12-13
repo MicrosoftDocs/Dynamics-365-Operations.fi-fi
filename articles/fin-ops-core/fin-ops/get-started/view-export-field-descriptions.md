@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 974f99632738cfc6eec5ff85965f4e9f9608a8b5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3e110c7fe6881825fe2b075c1795bc4f7e938da4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177657"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811504"
 ---
 # <a name="view-and-export-field-descriptions"></a>Kenttien kuvausten tarkasteleminen ja vieminen
 
@@ -35,7 +35,7 @@ Joillakin monimutkaisimmilla kentillä on kuvaukset. Nämä kuvaukset tulevat n�
 
 Kaikilla sivuilla ei ole kentän kuvauksia. Vain monimutkaisilla kentillä on kuvaukset; kuvauksia ei ole kentillä, joiden käyttö on selkeää. Tämän vuoksi joillakin sivuilla ei ole lainkaan kenttäkuvauksia, joillakin sivuilla on muutamia kuvauksia ja joillakin monimutkaisilla sivuilla, kuten monilla parametrisivulla, on useita kuvauksia.
 
-Voit lisätä halutessasi uusia kenttien kuvauksia ja mukauttaa valmiita kuvauksia, jos sinulla on kehitysympäristön käyttöoikeus. Voit esimerkiksi lisätä yrityskohtaiset tiedot kentän kuvaukseen. Lisätietoja on artikkelissa [Muokkaa kenttäohjetta](../../dev-itpro/user-interface/customize-field-help.md).
+Voit lisätä halutessasi uusia kenttien kuvauksia ja mukauttaa valmiita kuvauksia, jos sinulla on kehitysympäristön käyttöoikeus. Voit esimerkiksi lisätä yrityskohtaiset tiedot kentän kuvaukseen. Lisätietoja on kohdassa [Kenttien kuvausten mukauttaminen](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Lisätietoja on käyttöliittymän kenttien kuvauksissa.
 
@@ -107,4 +107,4 @@ Lisätietoja erilaisista sivujen etsimistavoista on aiemmin tässä artikkelissa
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Mukauta kenttää -ohje](../../dev-itpro/user-interface/customize-field-help.md)
+[Kenttien kuvausten mukauttaminen](../../dev-itpro/user-interface/customize-field-help.md)

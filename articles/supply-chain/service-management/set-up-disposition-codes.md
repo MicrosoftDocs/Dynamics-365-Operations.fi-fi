@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: a85f804344abec37d85e1ce15f064c8a0b901546
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743184"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813106"
 ---
 # <a name="set-up-disposition-codes"></a>Määritä käsittelykoodit 
 
@@ -32,7 +32,7 @@ ms.locfileid: "1743184"
 
 Voit määrittää käsittelykoodit, jotka määrittävät, miten asiakkaan palauttamaa nimikettä käsitellään. Luo esimerkiksi käsittelykoodi nimeltä **Korjaa ja palauta**, kun haluat osoittaa, että palautettu nimike korjataan ja palautetaan asiakkaalle. Lisää esimerkkejä käsittelykoodeista, joita käytetään yleisesti asiakkaiden palauttamissa nimikkeissä, on kohdassa [Palautettujen nimikkeiden poistotavan määrittäminen](specify-how-to-dispose-of-returned-items.md).
 
-Voit määrittää myös syykoodin, kun haluat kertoa nimikkeen palautuksen syyn. Lisätietoja syykoodeista on kohdassa [Palautusten syykoodiryhmien määrittäminen](set-up-return-reason-code.md).
+Voit määrittää myös syykoodin, kun haluat kertoa nimikkeen palautuksen syyn. Lisätietoja syykoodeista on kohdassa [Palautusten syykoodien määrittäminen](set-up-return-reason-code.md).
 
 1.  Valitse **Myynti ja markkinointi** \> **Asetukset** \> **Myyntitilaukset** \> **Palautukset** \> **Käsittelykoodit**.
 
@@ -46,7 +46,7 @@ Voit määrittää myös syykoodin, kun haluat kertoa nimikkeen palautuksen syyn
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Käsittelykoodit ja palautussyykoodit](disposition-and-return-reason-codes.md)
+[Asiakaspalautusten yleiskatsaus](disposition-and-return-reason-codes.md)
 
 [Käsittelykoodit (lomake)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 

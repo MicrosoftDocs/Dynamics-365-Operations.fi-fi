@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cce822f76323b6ce514d3793ce19f0160957e7a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558216"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813383"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Hankinnan aloitussivu
 
@@ -39,7 +39,7 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 -   [Määritä käyttöoikeudet tuotteiden tilaamiseen jonkun muun puolesta](tasks/set-up-permissions-ordering-products.md)
 
 ## <a name="requests-for-quotation"></a>Tarjouspyynnöt
--   [Tarjouspyyntö](request-quotations.md)
+-   [Tarjouspyynnöt – yleiskatsaus](request-quotations.md)
 -   [Luo tarjouspyyntö](tasks/create-request-quotation.md)
 -   [Syötä ja vertaa tarjouspyyntöjä ja myönnä sopimuksia](tasks/enter-compare-rfq-bids-award-contracts.md)
 -   [Luo tarjouspyyntöjen pisteytystapa](tasks/create-scoring-method-rfqs.md)
@@ -58,23 +58,23 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 -   [Microsoft Dynamics 365 for Finance and Operationsin saapuvan tavaralähetyksen esittelykomentosarja](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(tiedote)
 -   [Tavaralähetysvaraston valvonta toimittajayhteistyön avulla](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Yhteistyö toimittajien kanssa toimittajaportaalissa](collaborate-vendors-vendor-portal.md) (vain helmikuun ja toukokuun 2016 Dynamics AX -versiot)
--   [Käyttöoikeuksien määrittäminen toimittajaportaalin käyttäjille](configure-security-vendor-portal-users.md) (vain Finance and Operationsin toukokuun 2016 versiot)
--   [Microsoft Dynamics 365 for Finance and Operations -sovelluksen toimittajayhteistyön mobiilityötila](vendor-collaboration-mobile-workspace.md)
+-   [Toimittajaportaalin käyttäjäsuojaus](configure-security-vendor-portal-users.md) (vain Finance and Operationsin toukokuun 2016 versiot)
+-   [Toimittajayhteistyön mobiilityötila](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Tuoteluokan hallinta
--   [Tuotteiden hankintaluettelot](procurement-catalogs.md)
--   [Luo hankintaluettelo](tasks/create-procurement-catalog.md)
+-   [Hankintaluettelojen yleiskatsaus](procurement-catalogs.md)
+-   [Ostotilausten luominen](tasks/create-procurement-catalog.md)
 -   [Toimittajaluetteloiden tuominen](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blogikirjoitus)
 -   [Määritä hankintaluokkahierarkia](tasks/set-up-procurement-category-hierarchy.md)
 -   [Aseta menettelytavat hankintaluokkien hierarkioille](tasks/set-up-policies-procurement-category-hierarchies.md)
 -   [Hyväksy toimittajia tiettyihin hankintaluokkiin](tasks/approve-vendors-specific-procurement-categories.md)
 
-## <a name="procurement"></a>Hankinta
+## <a name="procurement"></a>Osto ja hankinta
 -   [Ostotilausten yleiskatsaus](purchase-order-overview.md)
 -   [Ostotilauksen luonti](purchase-order-creation.md)
--   [Ostotilauksen hyväksyntä ja vahvistus](purchase-order-approval-confirmation.md)
+-   [Ostotilausten hyväksyminen ja vahvistaminen](purchase-order-approval-confirmation.md)
 -   [Ostotilauksen luominen](tasks/create-purchase-order.md)
--   [Luo toistuva ostotilaus](tasks/create-repeat-purchase-order.md)
+-   [Toistuvan ostotilauksen luonti](tasks/create-repeat-purchase-order.md)
 -   [Ostotilauksen luominen myyntitilauksesta](../sales-marketing/tasks/create-purchase-order-sales-order.md)
 -   [Luo ostotilaus kertatoimittajalle](tasks/create-purchase-order-one-time-supplier.md)
 -   [Luo ostotilaus, jolla on toimitusaikataulu](tasks/create-purchase-order-delivery-schedule.md)
@@ -99,11 +99,8 @@ Hankinta kattaa kaikki vaiheet tuotteen tai palvelun tarpeen tunnistamisesta sen
 -   [Ostotilauksen tuotteiden vastaanoton kirjaaminen](tasks/record-receipt-goods-purchase-order.md)
 -   [Ostoehdotuksen työnkulku](purchase-requisitions-workflow.md)
 -   [Ostoehdotusten liiketoimintaprosessien työnkulun määrittäminen](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (raportti)
--   [Ostokäytännöt](purchase-policies.md)
+-   [Ostokäytäntöjen yleiskatsaus](purchase-policies.md)
 -   [Luo ostokäytännöt](tasks/create-purchasing-policies.md)
-
-
-
 
 
 

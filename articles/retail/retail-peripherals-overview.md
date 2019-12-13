@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba01f0d16341eb9b0ec0918798e458626b5ef90e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025050"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811190"
 ---
 # <a name="retail-peripherals"></a>Vähittäismyynnin oheislaitteet
 
@@ -35,11 +35,17 @@ Tässä aiheessa esitellään vähittäismyynnin oheislaitteisiin liittyvät kä
 
 ### <a name="pos-registers"></a>Kassakoneet
 
-Siirtyminen: Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **Kassakoneet**. Myyntipisteen kassakone on yksikkö, jolla määritetään tietyn myyntipisteen esiintymän ominaisuudet. Näitä ominaisuuksia ovat laiteprofiili tai kassakoneessa käytettävien vähittäismyymälän oheislaitteiden asetukset, myymälä, johon kassakone on yhdistetty, ja kyseiseen kassakoneeseen kirjautuvan käyttäjän visuaalinen kokemus.
+Siirtyminen: Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **Kassakoneet**. 
+
+Myyntipisteen kassakone on yksikkö, jolla määritetään tietyn myyntipisteen esiintymän ominaisuudet. Näitä ominaisuuksia ovat laiteprofiili tai kassakoneessa käytettävien vähittäismyymälän oheislaitteiden asetukset, myymälä, johon kassakone on yhdistetty, ja kyseiseen kassakoneeseen kirjautuvan käyttäjän visuaalinen kokemus.
 
 ### <a name="devices"></a>Laitteet
 
-Siirtyminen: Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **Laitteet**. Laite on yksikkö, joka ilmaisee myyntipisteen kassakoneeseen yhdistämismääritetyn laitteen fyysisen esiintymän. Kun laite on luotu, siitä muodostetaan yhdistämismääritys myyntipisteen kassakoneeseen. Laiteyksikkö seuraa seuraavia tietoja: myyntipisteen kassakoneen aktivoinnin ajankohta, käytettävän asiakasohjelman tyyppi ja tietyssä laitteessa käyttöönotettu sovelluspaketti. Laitteet voidaan yhdistää seuraaviin sovellustyyppeihin: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android ja Retail Modern POS – iOS.
+Siirtyminen: Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **POS-asetukset** &gt; **Laitteet**. 
+
+Laite on yksikkö, joka ilmaisee myyntipisteen kassakoneeseen yhdistämismääritetyn laitteen fyysisen esiintymän. Kun laite on luotu, siitä muodostetaan yhdistämismääritys myyntipisteen kassakoneeseen. Laiteyksikkö seuraa seuraavia tietoja: myyntipisteen kassakoneen aktivoinnin ajankohta, käytettävän asiakasohjelman tyyppi ja tietyssä laitteessa käyttöönotettu sovelluspaketti. 
+
+Laitteet voidaan yhdistää seuraaviin sovellustyyppeihin: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android ja Retail Modern POS – iOS.
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -63,11 +69,15 @@ Myyntipisteen oheislaitteet ovat laitteita, joita tuetaan eksplisiittisesti myyn
 
 ### <a name="hardware-station"></a>Laiteasema
 
-Siirtyminen: Valitse **Vähittäismyynti** &gt; **Kanavat** &gt; **Vähittäismyymälät** &gt; **Kaikki vähittäismyymälät**. Valitse ensin myymälä ja sitten **Laiteasemat**-pikavälilehti. **Laiteasema**-asetus on kanavan tason asetus, jonka avulla määritetään instanssit, joissa vähittäismyynnin oheislaitteiden logiikka otetaan käyttöön. Tätä kanavatason asetusta käytetään määritettäessä laiteaseman ominaisuudet. Sitä käytetään myös lueteltaessa Modern POS -instanssin tietyssä myymälässä käytettävissä olevat laiteasemat. Laiteasema muodostetaan Windowsin Modern POS -ohjelmaan. Laiteasema voidaan ottaa käyttöön myös itsenäisesti Microsoft Internet Information Services (IIS) -palveluiden erillisenä ohjelmana. Tällöin sitä voidaan käyttää verkon kautta.
+Siirtyminen: Valitse **Vähittäismyynti** &gt; **Kanavat** &gt; **Vähittäismyymälät** &gt; **Kaikki vähittäismyymälät**. 
+
+Valitse ensin myymälä ja sitten **Laiteasemat**-pikavälilehti. **Laiteasema**-asetus on kanavan tason asetus, jonka avulla määritetään instanssit, joissa vähittäismyynnin oheislaitteiden logiikka otetaan käyttöön. Tätä kanavatason asetusta käytetään määritettäessä laiteaseman ominaisuudet. Sitä käytetään myös lueteltaessa Modern POS -instanssin tietyssä myymälässä käytettävissä olevat laiteasemat. Laiteasema muodostetaan Windowsin Modern POS -ohjelmaan. Laiteasema voidaan ottaa käyttöön myös itsenäisesti Microsoft Internet Information Services (IIS) -palveluiden erillisenä ohjelmana. Tällöin sitä voidaan käyttää verkon kautta.
 
 ### <a name="hardware-profile"></a>Laiteprofiili
 
-Siirtyminen: Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **Myyntipisteiden asetukset** &gt; **Myyntipisteiden profiilit** &gt; **Laiteprofiilit**. Laitteistoprofiili on niiden laitteiden luettelo, jotka on määritetty myyntipisteen kassakonetta tai laiteasemaa varten. Laiteprofiili voidaan yhdistää suoraan myyntipisteen kassakoneeseen tai laiteasemaan.
+Siirtyminen: Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **Myyntipisteiden asetukset** &gt; **Myyntipisteiden profiilit** &gt; **Laiteprofiilit**. 
+
+Laitteistoprofiili on niiden laitteiden luettelo, jotka on määritetty myyntipisteen kassakonetta tai laiteasemaa varten. Laiteprofiili voidaan yhdistää suoraan myyntipisteen kassakoneeseen tai laiteasemaan.
 
 ## <a name="devices-classes"></a>Laitteiden luokat
 Myyntipisteen oheislaitteet jaetaan tavallisesti luokkiin. Tässä osassa esitellään Modern POS -sovelluksen tukemat laitteet ja laitteiden yleiskatsaus.
@@ -202,11 +212,11 @@ Laiteasema sisältää logiikan, joka ohjaa fyysisesti liitettyjä ja verkossa k
 
 ### <a name="hardware-station-installation"></a>Laiteaseman asentaminen
 
-Lisätietoja on kohdassa [Retail Hardware Station -sovelluksen määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
+Lisätietoja on kohdassa [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Moderni POS Windowsille -sovelluksen asetus ja määritys
 
-Lisätietoja on kohdassa [Retail Modern POS:n määrittäminen ja asentaminen](retail-modern-pos-device-activation.md).
+Lisätietoja on kohdassa [Retail Modern POS:n (MPOS) määrittäminen, asentaminen ja aktivointi](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-laitteen asetukset ja määrittäminen
 
@@ -523,7 +533,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille -sovellukseen
 
 ## <a name="configuration-for-supported-scenarios"></a>Tuettujen skenaarioiden määritys
 
-Lisätietoja laiteprofiilien luomisesta on kohdassa [Kanava-asiakasohjelmien, kuten kassakoneiden ja laiteasemien, määrittäminen ja ylläpitäminen](define-maintain-channel-clients-registers-hw-stations.md).
+Lisätietoja laiteprofiilien luomisesta on kohdassa [Oheislaitteiden yhdistämiseen myyntipisteeseen](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
 > Laiteaseman profiilia ei käytetä enää Retail-versiossa 1611. Laiteaseman profiilia varten määrittämäsi määritteet ovat nyt osa laiteasemaa.
@@ -566,8 +576,8 @@ Tätä määritystä voidaan käyttää kaikissa Modern POS -asiakasohjelmissa, 
 4. Valitse **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulu**.
 5. Valitse **1090**-jakeluaikataulu, kun haluat synkronoida uuden laiteprofiilin myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 6. Valitse **1040**-jakeluaikataulu, kun haluat synkronoida uuden laiteaseman myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
-7. Asenna laiteasema. Lisätietoja laiteaseman asentamisesta on kohdassa [Retail Hardware Station -sovelluksen määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
-8. Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS:n määrittäminen ja asentaminen](retail-modern-pos-device-activation.md).
+7. Asenna laiteasema. Lisätietoja laiteaseman asentamisesta on kohdassa [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
+8. Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS:n (MPOS) määrittäminen, asentaminen ja aktivointi](retail-modern-pos-device-activation.md).
 9. Kirjaudu Modern POS -sovellukseen ja valitse **Suorita muita kuin kassatoimintoja**.
 10. Käynnistä **laiteasemien hallintatoiminto**.
 11. Valitse **Hallitse**.
@@ -595,8 +605,8 @@ Tätä määritystä voidaan käyttää kaikissa Modern POS -asiakasohjelmissa, 
 5. Valitse **Vähittäismyynti** &gt; **Vähittäismyynnin IT** &gt; **Jakeluaikataulu**.
 6. Valitse **1090**-jakeluaikataulu, kun haluat synkronoida uuden laiteprofiilin myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 7. Valitse **1040**-jakeluaikataulu, kun haluat synkronoida uuden laiteaseman myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
-8. Asenna laiteasema jokaiselle vaiheissa 2 ja 3 määritetylle isäntäkoneelle. Lisätietoja laiteaseman asentamisesta on kohdassa [Retail Hardware Station -sovelluksen määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
-9. Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS:n määrittäminen ja asentaminen](retail-modern-pos-device-activation.md).
+8. Asenna laiteasema jokaiselle vaiheissa 2 ja 3 määritetylle isäntäkoneelle. Lisätietoja laiteaseman asentamisesta on kohdassa [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
+9. Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS:n (MPOS) määrittäminen, asentaminen ja aktivointi](retail-modern-pos-device-activation.md).
 10. Kirjaudu Modern POS -sovellukseen ja valitse **Suorita muita kuin kassatoimintoja**.
 11. Käynnistä **laiteasemien hallintatoiminto**.
 12. Valitse **Hallitse**.
@@ -655,7 +665,7 @@ Nykyisten suojausstandardien mukaan tuotantoympäristössä tulisi käyttää se
 
 ## <a name="peripheral-simulator"></a>Oheislaitesimulaattori
 
-Lisätietoja on kohdassa [Vähittäismyynnin oheislaitteet](dev-itpro/retail-peripheral-simulator.md).
+Lisätietoja on kohdassa [Retailin oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsoft-tested-peripheral-devices"></a>Microsoftin testaamat oheislaitteet
 
@@ -896,4 +906,4 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Retail-oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
+[Vähittäismyynnin oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)

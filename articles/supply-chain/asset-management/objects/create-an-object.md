@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4759f55eceba923b47d906a764edcad34bf2f2
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 80236da5220aa9c70d5c488c09b457a470f0225a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571596"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811846"
 ---
 # <a name="create-an-asset"></a>Luo resurssi
 
@@ -36,15 +36,15 @@ Tässä ohjeaiheessa kerrotaan, miten resurssi luodaan resurssien hallinnassa.
 1. Valitse **Resurssien hallinta** > **Yhteiset** > **resurssit** > **Kaikki resurssi** tai **Aktiiviset resurssit**.
 2. Valitse **Uusi**-painike.
 3. Lisää **Luo resursseja** -valintaikkunaan tiedot koskien **resurssia** (resurssin tunnus) ja resurssin nimeä. Valitse resurssille päivämäärä ja aika **Voimassa**-kentässä. Kyseisestä päivästä eteenpäin voit asentaa resurssin toiminnalliseen sijaintipaikkaan sekä siirtää ja korvata resurssin resurssirakenteessa.
-4. Valitse **resurssityyppi** -kentässä resurssin tyyppi (pakollinen kenttä). Valitse tarvittaessa **resurssin valmistaja** ja **resurssin malli**. Jos vain yksi tuote on määritetty, kyseinen tuote valitaan automaattisesti **resurssin valmistaja** -kentässä. **Resurssin valmistaja**- ja **resurssin malli** -kentissä käytettävissä olevat valinnat määräytyvät [resurssin valmistajan ja mallin](../setup-for-objects/product-and-model.md) asetusten mukaan.
+4. Valitse **resurssityyppi** -kentässä resurssin tyyppi (pakollinen kenttä). Valitse tarvittaessa **resurssin valmistaja** ja **resurssin malli**. Jos vain yksi tuote on määritetty, kyseinen tuote valitaan automaattisesti **resurssin valmistaja** -kentässä. **Resurssin valmistaja**- ja **Resurssin malli** -kentissä käytettävissä olevat valinnat määräytyvät [resurssin valmistajien ja mallien](../setup-for-objects/product-and-model.md) asetusten mukaan.
 5. **Ylätason resurssi** -ryhmässä **Resurssi**-kenttä on tyhjä oletusarvona. Voit tarvittaessa valita ylätason resurssin ja täyttää kaikki **Ylätason resurssi** -ryhmän kentät automaattisesti.
 >[!NOTE]  
->Kun valitset ylätason resurssin, käytettävissä on kaksi tai kolme välilehteä: **Omat resurssit** -väliehti sisältää resurssit, jotka liittyvät toiminnallisiin sijainteihin, joihin sinut voidaan (järjestelmään kirjautuneena kunnossapitotyöntekijänä) kohdistaa. Jos [Kunnossapitotyöntekijät](../setup-for-objects/workers-and-worker-groups.md) -lomakkeessa ei ole määritetty toiminnallisia sijainteja työntekijälle, **Omat resurssit** -välilehti ei ole näkyvissä. **Aktiiviset resurssit** -välilehti sisältää luettelon kaikista resursseista, joiden elinkaaritila on Aktiivinen. **Resurssinäkymä** -väli ehdessä näkyy puunäkymä toiminnallisista sijainneista ja näihin sijainteihin asennetuista resursseista.
+>Kun valitset ylätason resurssin, käytettävissä on kaksi tai kolme välilehteä: **Omat resurssit** -väliehti sisältää resurssit, jotka liittyvät toiminnallisiin sijainteihin, joihin sinut voidaan (järjestelmään kirjautuneena kunnossapitotyöntekijänä) kohdistaa. Jos [Ylläpitotyöntekijät ja työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md) -lomakkeessa ei ole määritetty toiminnallisia sijainteja ylläpitotyöntekijälle, **Omat resurssit** -välilehti ei ole näkyvissä. **Aktiiviset resurssit** -välilehti sisältää luettelon kaikista resursseista, joiden elinkaaritila on Aktiivinen. **Resurssinäkymä** -väli ehdessä näkyy puunäkymä toiminnallisista sijainneista ja näihin sijainteihin asennetuista resursseista.
 
 6. Määritetty toiminnallinen oletussijainti on ehdotettu resurssille  **Resurssi**-ryhmän **Toiminnallinen sijainti** -kentässä. Valitse tarvittaessa toinen toiminnallinen sijainti.
 
 >[!NOTE]
->Kun olet luonut resurssin, voit asentaa sen toiseen toimintosijaintiin tarvittaessa. Vain ylimmän tason resurssit (resurssit, joilla ei ole tällä hetkellä pääresurssia) voidaan asentaa toiminnallisessa sijainnissa. Tämä tarkoittaa, että asennat valittuun toimintosijaintiin ylimmän tason sekä mahdolliset aliresurssit. Lisätietoja resurssien asentamisesta toiminnallisiin sijainteihin on kohdassa [Toiminnalliset sijainnit](../functional-locations/introduction-to-functional-locations.md).
+>Kun olet luonut resurssin, voit asentaa sen toiseen toimintosijaintiin tarvittaessa. Vain ylimmän tason resurssit (resurssit, joilla ei ole tällä hetkellä pääresurssia) voidaan asentaa toiminnallisessa sijainnissa. Tämä tarkoittaa, että asennat valittuun toimintosijaintiin ylimmän tason sekä mahdolliset aliresurssit. Lisätietoja resurssien asentamisesta toiminnallisiin sijainteihin on kohdassa [Toiminnallisten sijaintien esittely](../functional-locations/introduction-to-functional-locations.md).
 
 7. Valitse **OK**.
 8. Valitse resurssi **Kaikki resurssit** -luettelosta ja valitse **Muokkaa** -painike lisätäksesi lisätietoja resurssiin.
@@ -53,15 +53,15 @@ Tässä ohjeaiheessa kerrotaan, miten resurssi luodaan resurssien hallinnassa.
 
 Funktionaalinen sijainti, johon käyttö omaisuuserä liittyy, näkyy **Toiminnallinen sijainti** -kentässä. Jos resurssi on pääresurssi, resurssiin liittyvien alitasojen määrä näkyy **Alitasot**-kentässä. Jos resurssi on luodun resurssin aliresurssi, pääresurssin tunnus määrä näkyy **Ylätaso**-kentässä.
 
-Voit muokata **Resurssin valmistaja**- ja **resurssin malli** -kenttien tietoja resurssissa, jota käytetään varaosien, vaihtoehtoisten varaosien ja työtyypin oletusarvojen hallinnassa. Lisätietoja on kohdassa [Resurssin valmistaja ja malli](../setup-for-objects/product-and-model.md). Voit myös tarvittaessa lisätä tietoja **Vuosimalli**- ja **Sarjanumero**-kenttiin.
+Voit muokata **Resurssin valmistaja**- ja **resurssin malli** -kenttien tietoja resurssissa, jota käytetään varaosien, vaihtoehtoisten varaosien ja työtyypin oletusarvojen hallinnassa. Lisätietoja on kohdassa [Resurssin valmistajat ja mallit](../setup-for-objects/product-and-model.md). Voit myös tarvittaessa lisätä tietoja **Vuosimalli**- ja **Sarjanumero**-kenttiin.
 
 **Nykyinen elinkaaren tila** -kenttää käytetään määritettäessä, onko resurssi aktiivinen vai passiivinen. Kun luot resurssin, vaiheeksi määritetään aina resurssin vaiheryhmän ensimmäinen vaihe. Kun olet valmis aktivoimaan resurssin, valitse **Päivitä resurssin tila** ja valitse se elinkaaren tila, jonka olet määrittänyt asetuksella "resurssi aktiivinen", ja valitse **OK**.
 
 **Huomautus:** Kun resurssi on asetettu tilaan "passiivinen", ei ole enää mahdollista luoda työtilauksia resurssille. Et myöskään voi ajoittaa ennaltaehkäiseviä ylläpitotöitä passiiviselle resurssille.
 
-**Palvelutaso** -ja **Kriittisyys**-kentät liittyvät resurssille luotuihin työtilauksiin. Kentissä näkyvät resurssin nykyisille asetuksille lasketut **Palvelutaso**- ja **Kriittisyys**-arvot. Lisätietoja näistä arvoista on kohdissa [Resurssin palvelutasot](../setup-for-objects/object-priorities.md) ja [Resurssin kriittisyydet](../setup-for-objects/object-criticalities.md).
+**Palvelutaso** -ja **Kriittisyys**-kentät liittyvät resurssille luotuihin työtilauksiin. Kentissä näkyvät resurssin nykyisille asetuksille lasketut **Palvelutaso**- ja **Kriittisyys**-arvot. Lisätietoja näistä arvoista on kohdissa [Resurssin palvelutasot](../setup-for-objects/object-priorities.md) ja [Resurssin kriittisyystyypit](../setup-for-objects/object-criticalities.md).
 
-## <a name="asset"></a>Varat
+## <a name="asset"></a>Resurssi
 
 Voit valita resurssille kohteen **Resurssi**. Resurssin valinta määrittää, mitä kalenteria työtilausten ajoituksessa käytetään. Resurssien valintaa käytetään usein käyttöomaisuudelle. Resurssit ja resurssiryhmät määritetään valitsemalla **Organisaation hallinta** > **Resurssit** > **Resurssiryhmät** tai **Resurssit**.
 

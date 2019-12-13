@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7134dc49c0e767d3bc4dc32e4feeb0e83a168e86
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 930c744ff2a28451d4267f060867b4b6474d45e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190922"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811575"
 ---
 # <a name="new-or-updated-task-guides-may-2016"></a>Uudet tai päivitetyt tehtäväoppaat (toukokuu 2016)
 
@@ -32,7 +32,7 @@ Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, 
 
 ## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Microsoft Dynamics AX:n yhdistetyn APQC-kirjaston tehtäväoppaat (toukokuu 2016, kaikki kielet)
 
-(Toukokuun 2016) yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Microsoft Dynamics AX toukokuun 2016 päivityksen ja Microsoft Dynamics AX helmikuun 2016 version ohjeeksi. (Helmikuun 2016) yhdistetyssä APQC-kirjastossa julkaistut tehtäväoppaiden lokalisoidut versiot ovat käytettävissä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjeen käytön aloittaminen](help-overview.md).
+(Toukokuun 2016) yhdistetyssä APQC-kirjastossa on tehtäväoppaita, jotka on tarkoitettu Microsoft Dynamics AX toukokuun 2016 päivityksen ja Microsoft Dynamics AX helmikuun 2016 version ohjeeksi. (Helmikuun 2016) yhdistetyssä APQC-kirjastossa julkaistut tehtäväoppaiden lokalisoidut versiot ovat käytettävissä kirjastossa. Lisätietoja ohjejärjestelmän yhdistämisestä tehtäväopaskirjastoon on kohdassa [Ohjejärjestelmä](help-overview.md).
 
 > [!NOTE]
 > Liiketoimintaprosessin mallintajan (BPM) riviotsikon vieressä oleva tähtimerkki (\*) ilmaisee, että kyseisen liiketoimintaprosessin tehtäväopas luotiin Dynamics AX:n toukokuun 2016 päivityksessä ja ettei sitä tueta Microsoft Dynamics AX:n aiemmissa versioissa.
@@ -191,6 +191,6 @@ Tässä artikkelissa on luettelo uusista tai päivitetyistä tehtäväoppaista, 
 
 [Uudet tehtäväoppaat (helmikuu 2016)](new-task-guides-available-february-2016.md)
 
-[Uudet tai päivitetyt tehtäväoppaat saatavilla (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
+[Uudet tai päivitetyt tehtäväoppaat (elokuu 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Uudet tai päivitetyt tehtäväoppaat (marraskuu 2016)](new-task-guides-november-2016.md)

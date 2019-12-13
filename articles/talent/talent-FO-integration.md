@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8b9fa6b8d5109f873c784d384d49f685f94da228
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 747922294eaf971795177beeb73839d453f6475a
+ms.sourcegitcommit: ae0efac749ab34d423fac44d00a597801c143fbb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622765"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "2830183"
 ---
 # <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Dynamics 365 Talentin integrointia Dynamics 365 Financeiin koskevat usein kysytyt kysymykset
 
@@ -48,7 +48,7 @@ Mallien avulla pääsee alkuun. Voit luoda oman mallin, mutta integrointiprojekt
 
 Common Data Service -ratkaisussa ei ole tällä hetkellä taloushallinnon dimensioita, joten ne eivät sisälly oletusmalliin. Tätä yksikköä suunnitellaan, mutta julkaisuajankohta ei ole tällä hetkellä tiedossa.
 
-Jos Financessa on sellaisia tietoja, joita ei ole Talentissa, voit linkittää järjestelmät yhteen Talentin **Määritä linkit** -toiminnon avulla. Lisätietoja Talentin ja Financen välisten linkkien määrittämisestä on kohdassa [Dynamics 365 Talent: Core HR:n uudet tai muuttuneet ominaisuudet (31. lokakuuta 2018)](whats-new-talent-october-31.md).
+Jos Financessa on sellaisia tietoja, joita ei ole Talentissa, voit linkittää järjestelmät yhteen Talentin **Määritä linkit** -toiminnon avulla. Lisätietoja Talentin ja Financen välisten linkkien määrittämisestä on kohdassa [Dynamics 365 Talent – Core HR:n uudet tai muuttuneet ominaisuudet (31. lokakuuta 2018)](whats-new-talent-october-31.md).
 
 ![Määritä taloushallinnon dimensiot](media/MapFinancialDimensions.png)
 
@@ -69,7 +69,7 @@ Kyselyn lisäasetusten avulla voit suodattaa ja muokata lähdetietoja, ennen kui
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Voinko määrittää, mitkä tietyn yksikön kentät lähetetään Financeen?
 
 Kenttiä voi lisätä integrointitehtävään tai poistaa niitä siitä. Kaikkia Common Data Service -yksikössä olevia tietokenttiä ei täytetä Core HR:stä.
-Lisätiedot voidaan täyttää PowerAppsin kautta.
+Lisätiedot voidaan täyttää Power Appsin kautta.
 
 ![Lisää tai poista kenttiä integrointitehtävään tai -tehtävästä](media/SpecifyFieldsIncludedInIntegration.png)
 
@@ -119,19 +119,19 @@ Jäljitä aika tietojen integrointiohjelman suoritushistoriasta ja etsi Financen
 
 1. Taltioi tehtäväindeksi tietojen integrointiohjelmasta (tässä esimerkissä se on 9).
 
-![Tehtäväindeksin taltiointi tietojen integrointiohjelmasta](media/CaptureTaskIndex.png)
+    ![Tehtäväindeksin taltiointi tietojen integrointiohjelmasta](media/CaptureTaskIndex.png)
 
 2. Jäljitä projektin suoritusaika.
 
-![Projektin suoritusajan jäljitys](media/CaptureTimeOfExecution.png)
+    ![Projektin suoritusajan jäljitys](media/CaptureTimeOfExecution.png)
 
 3. Etsi Financesta indeksi -1. Tässä esimerkissä projekti, jonka jälkiliite on 8, ja projekti, jonka indeksin suoritusaika on 0, vastaa vaiheen 2 suoritusaikaa.
 
-![Indeksin tunnistaminen](media/IdentifyIndex.png)
+    ![Indeksin tunnistaminen](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-talent-and-finance-i-dont-see-my-talent-data-in-finance-what-do-i-do"></a>Talentin tiedot eivät näy Financessa sen jälkeen, kun Talent ja Finance on integroitu. Mitä teen seuraavaksi?
 
-Integrointi Financeen tapahtuu kahdessa vaiheessa. Tarkista ensin, että Talentin tiedot on päivitetty ja käytettävissä Common Data Servicessä. Tämä synkronointi tapahtuu lähes reaaliaikaisesti, ja se voidaan tarkistaa PowerAppsissa katsomalla tietoyksiköiden tietoja.
+Integrointi Financeen tapahtuu kahdessa vaiheessa. Tarkista ensin, että Talentin tiedot on päivitetty ja käytettävissä Common Data Servicessä. Tämä synkronointi tapahtuu lähes reaaliaikaisesti, ja se voidaan tarkistaa Power Appsissa katsomalla tietoyksiköiden tietoja.
 
 ![Tiedot Common Data Servicessä](media/DataInCDS.png)
 
@@ -168,7 +168,7 @@ Päivitä Financen tietoyksiköt valitsemalla **Tietojen hallinta \> Kehikkopara
 
   - [Tietojen integrointiohjelman virheiden hallinta ja vianmääritys](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Järjestelmän muodostamien lokien DSR-pyyntöihin vastaaminen PowerAppsissa, Microsoft Flow'ssa ja Common Data Servicessa](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Järjestelmän muodostamien lokien DSR-pyyntöihin vastaaminen Power Appsissa, Microsoft Power Automatessa ja Common Data Servicessa](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Tietojen hallinta:
 

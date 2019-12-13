@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a3e2178dbc60582d6167898c4c3446feac49dd04
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024065"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814487"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (20. huhtikuuta 2019)
 
@@ -35,7 +35,7 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita 
 
 ### <a name="simplified-apply-experience-for-candidates"></a>Ehdokkaiden yksinkertaistettu hakukokemus 
 
-Julkisessa esiversiossa on nyt ehdokkaiden yksinkertaistettu hakukokemus. Kun se on otettu käyttöön, ehdokkaat voivat hakea työpaikkaa ansioluettelon avulla valitsemalla **Hae LinkedInin kautta** (jos otettu käyttöön) tai käyttämällä aiemmin luotua hakemuslomaketta. Näiden muutosten myötä ehdokkaat voivat lähettää työhakemuksensa nopeasti ilman, että heidän on juuri täytettävä kenttiä manuaalisesti. Lisätietoja tämän toiminnon käyttöön ottamisesta on kohdassa [Esiversion toimintojen ottaminen käyttöön tai poistaminen käytöstä](./access-preview-feature.md#enable-or-disable-preview-features).
+Julkisessa esiversiossa on nyt ehdokkaiden yksinkertaistettu hakukokemus. Kun se on otettu käyttöön, ehdokkaat voivat hakea työpaikkaa ansioluettelon avulla valitsemalla **Hae LinkedInin kautta** (jos otettu käyttöön) tai käyttämällä aiemmin luotua hakemuslomaketta. Näiden muutosten myötä ehdokkaat voivat lähettää työhakemuksensa nopeasti ilman, että heidän on juuri täytettävä kenttiä manuaalisesti. Lisätietoja tämän toiminnon käyttöönottamisesta on kohdassa [Esikatselutoimintojen käyttö Microsoft Dynamics 365 Talentissa](./access-preview-feature.md#enable-or-disable-preview-features).
 
 ### <a name="view-rejection-comments-as-part-of-application-activity"></a>Hylkäyksen kommenttien näyttäminen hakemustehtävän osana.
 

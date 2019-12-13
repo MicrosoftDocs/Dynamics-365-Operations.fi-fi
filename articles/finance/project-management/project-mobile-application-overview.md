@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 521fdc98c8af51f6f244f9aa606ce047d014edf1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3cb3b25503b559f21c45c0232a8c0abd3e415eb3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250435"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773619"
 ---
 # <a name="project-mobile-applications-overview"></a>Project-mobiilisovellusten yleiskuvaus
 
@@ -45,4 +45,7 @@ Omat aikaraportit (optimoitu mobiilikäyttöön) ja Omat tarkistettavat aikarapo
 
 ## <a name="for-more-information"></a>Lisätietoja
 
-Lisätietoja on kohdassa [Microsoft Dynamics 365 Project timesheet mobile application](project-timesheet.md), [projektiajan määritys]( project-time-entry-mobile-workspace.md), [projektin aikaraportit mobiililaitteessa](Mobile-timesheets.md) ja [mukautettujen kenttien toteuttaminen projektin työaikaraportti-mobiilisovelluksella](custom-fields-mobile.md).
+- [Project Timesheet -mobiilisovellus](project-timesheet.md)
+- [Projektin aikamerkintä]( project-time-entry-mobile-workspace.md)
+- [Projektin työaikaraportit mobiililaitteessa](Mobile-timesheets.md)
+- [Microsoft Dynamics 365 Project Timesheet -mobiilisovelluksen mukautettujen kenttien ottaminen käyttöön iOS:ssa ja Androidissa](custom-fields-mobile.md)

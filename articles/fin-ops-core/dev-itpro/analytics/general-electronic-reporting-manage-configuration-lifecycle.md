@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6206b3a1ac298af98e4b69b6800b9a493658c4ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ecaeb80f3cda2ee24533ed263df63cc10c5ffc65
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181286"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771093"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Sähköisen raportoinnin (ER) määritysten elinkaaren hallinta
 
@@ -33,7 +33,7 @@ Tässä ohjeaiheessa kuvataan sähköisen raportoinnin konfiguraatioiden elinkaa
 
 ## <a name="overview"></a>Yleiskuvaus
 
-Sähköinen raportointi on moduuli, joka tukee lakisääteisiä ja maakohtaisia sähköisten asiakirjojen vaatimuksia. Sähköisessä raportoinnissa oletuksena on se, että yksittäisille sähköisille asiakirjoille voidaan suorittaa seuraavat tehtävät. Lisätietoja on ohjeaiheessa [sähköisen raportoinnin yleiskuvaus](general-electronic-reporting.md).
+Sähköinen raportointi on moduuli, joka tukee lakisääteisiä ja maakohtaisia sähköisten asiakirjojen vaatimuksia. Sähköisessä raportoinnissa oletuksena on se, että yksittäisille sähköisille asiakirjoille voidaan suorittaa seuraavat tehtävät. Lisätietoja on kohdassa [Sähköisen raportoinnin (ER) yleiskuvaus](general-electronic-reporting.md).
 
 - Sähköisen asiakirjan malli suunnitteleminen:
 
@@ -87,4 +87,4 @@ Kehitysympäristössä suunnitellut sähköisen raportoinnin konfiguraatiot void
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+[Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)

@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 9d12a4d48aa369884804c2a0bce9834534b1bec6
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026230"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832858"
 ---
 # <a name="extensibility-in-attract"></a>Attractin laajennettavuus
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 Talent perustuu Common Data Serviceen, ja sitä voidaan laajentaa eri tavoin Microsoft Power Platformin ja Common Data Servicein toimintojen avulla. Niinpä voit määrittää ja mukauttaa järjestelmää Microsoft PowerAppsin ja Microsoft Flow'n avulla. Saat lisää analyysitietoja henkilöistä Microsoft Power BI:n avulla. Lisäksi uudet mukautetut tehtävät, kuten PowerApps- ja verkkosisältö (iframe) -tehtävät, auttavat mukauttamaan työhönottoprosessia entisestään. Voit muokata työhönottoprosessia näiden tehtävien avulla liiketoiminnan tarpeita ja prosesseja vastaaviksi. Voit myös varmistaa, että sekä työhönottoryhmällä että hakijoilla on saumaton ja mukautettu kokemus.
+Microsoft Dynamics 365 Talent perustuu Common Data Serviceen, ja sitä voidaan laajentaa eri tavoin Microsoft Power Platformin ja Common Data Servicein toimintojen avulla. Niinpä voit määrittää ja mukauttaa järjestelmää Microsoft Power Appsin ja Microsoft Power Automaten avulla. Saat lisää analyysitietoja henkilöistä Microsoft Power BI:n avulla. Lisäksi uudet mukautetut tehtävät, kuten Power Apps- ja verkkosisältö (iframe) -tehtävät, auttavat mukauttamaan työhönottoprosessia entisestään. Voit muokata työhönottoprosessia näiden tehtävien avulla liiketoiminnan tarpeita ja prosesseja vastaaviksi. Voit myös varmistaa, että sekä työhönottoryhmällä että hakijoilla on saumaton ja mukautettu kokemus.
 
 ## <a name="extending-option-sets-in-attract"></a>Attractin asetusjoukkojen laajentaminen
 
@@ -40,7 +40,7 @@ Microsoft Dynamics 365 Talent perustuu Common Data Serviceen, ja sitä voidaan l
 
 **Hylkäyssyy**-kenttä päivitetään seuraavien ohjeiden mukaisesti yrityskohtaisilla arvoilla.  
 
-1. Laajenna **Hylkäyssyy**-asetusjoukkoa siirtymällä [PowerAppsin hallintasivustoon](https://admin.powerapps.com).
+1. Laajenna **Hylkäyssyy**-asetusjoukkoa siirtymällä [Power Appsin hallintasivustoon](https://admin.powerapps.com).
 2. Sinua voidaan pyytää kirjautumaan tilillesi. Anna käyttäjätunnus ja salasana, jolla kirjaudut Dynamics365:een ja/tai Office365:een ja valitse sitten **Seuraava**.
 3. Valitse **Ympäristöt**-välilehdessä ympäristö, jota haluat hallita, ja siirry sitten kaksoisnapsauttamalla **Tiedot**-välilehteen.
 4. Valitse **Tiedot**-välilehdessä **Dynamics 365:n hallintakeskus**.
@@ -58,15 +58,15 @@ Microsoft Dynamics 365 Talent perustuu Common Data Serviceen, ja sitä voidaan l
 
 Koska kaikki Attractin tiedot ovat Common Data Servicessä, voit sisällyttää omat liiketoimintatarpeet Attractiin Microsoft Power Platformin työkaluilla.
 
-### <a name="powerapps"></a>PowerApps
+### <a name="power-apps"></a>Power Apps
 
-Voit luoda PowerAppsin avulla helposti sovelluksia, jotka yhdistävät Attractin tiedot ja joissa logiikka lisätään käyttämällä Microsoft Excelin lausekkeiden kaltaisia lausekkeita. PowerAppsin avulla muodostettuja sovelluksia voidaan käyttää verkossa sekä Apple iOS- ja Google Android -laitteissa.
+Voit luoda Power Appsin avulla helposti sovelluksia, jotka yhdistävät Attractin tiedot ja joissa logiikka lisätään käyttämällä Microsoft Excelin lausekkeiden kaltaisia lausekkeita. Power Appsin avulla muodostettuja sovelluksia voidaan käyttää verkossa sekä Apple iOS- ja Google Android -laitteissa.
 
-Voit esimerkiksi helpottaa työhönottajien toimintaa yliopistojen urapäivillä muodostamalla kevyen sovelluksen, jolla he voivat skannata ansioluetteloita ja syöttää työpaikkojen hakijat Attractissa. Vaihtoehtoisesti voit muodostaa sovelluksen, joka auttaa noudattamaan organisaation vaatimustenmukaisuustarpeita. Lisätietoja PowerAppsin ja sovellusten muodostamisesta sen avulla on kohdassa [Tietojen integrointi Common Data Serviceen](https://docs.microsoft.com/powerapps).
+Voit esimerkiksi helpottaa työhönottajien toimintaa yliopistojen urapäivillä muodostamalla kevyen sovelluksen, jolla he voivat skannata ansioluetteloita ja syöttää työpaikkojen hakijat Attractissa. Vaihtoehtoisesti voit muodostaa sovelluksen, joka auttaa noudattamaan organisaation vaatimustenmukaisuustarpeita. Lisätietoja Power Appsin ja sovellusten muodostamisesta sen avulla on kohdassa [Tietojen integrointi Common Data Serviceen](https://docs.microsoft.com/powerapps).
 
-### <a name="microsoft-flow"></a>Microsoft Flow 
+### <a name="microsoft-power-automate"></a>Microsoft Power Automate 
 
-Voit luoda Microsoft Flow'n avulla automatisoituja työnkulkuja, joita käytetään Attract-tietojen ohella. Voit yhdistää kätevästi satoja suosittuja sovelluksia ja palveluja koodia kirjoittamatta. Kun muodostat työnkulkuja, jotka toimivat Attractin työ-, hakija- ja hakemusyksiköiden kanssa Common Data Servicessä, voit automatisoida useita toimintoja. Esimerkki: kun hakija hyväksyy tarjouksen, perehdytysryhmälle voidaan lähettää ilmoitus tai uutiset voidaan ilmoittaa Twitterissä. Lisätietoja työnkuluista on kohdassa [Microsoft Flow'n ohjeistuksessa](https://docs.microsoft.com/flow/).
+Voit luoda Microsoft Power Automaten avulla automatisoituja työnkulkuja, joita käytetään Attract-tietojen ohella. Voit yhdistää kätevästi satoja suosittuja sovelluksia ja palveluja koodia kirjoittamatta. Kun muodostat työnkulkuja, jotka toimivat Attractin työ-, hakija- ja hakemusyksiköiden kanssa Common Data Servicessä, voit automatisoida useita toimintoja. Esimerkki: kun hakija hyväksyy tarjouksen, perehdytysryhmälle voidaan lähettää ilmoitus tai uutiset voidaan ilmoittaa Twitterissä. Lisätietoja työnkuluista on [Microsoft Power Automaten ohjeistuksessa](https://docs.microsoft.com/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
@@ -74,18 +74,18 @@ Voit muodostaa ja tarkastella Power BI:n avulla mukautettuja raportteja ja koont
 
 ### <a name="custom-activities"></a>Mukautetut tehtävät 
 
-Voit lisätä mukautettuja tehtäviä, kuten PowerApps-sovelluksia ja verkkosisällön (iframe) tehtäviä, työn prosessimallitasolla tai uuden työn luonnin aikana. Voit mukauttaa työhönottoprosessia näiden tehtävien avulla ja tuoda organisaation oman liiketoimintalogiikan Attractiin.
+Voit lisätä mukautettuja tehtäviä, kuten Power Apps-sovelluksia ja verkkosisällön (iframe) tehtäviä, työn prosessimallitasolla tai uuden työn luonnin aikana. Voit mukauttaa työhönottoprosessia näiden tehtävien avulla ja tuoda organisaation oman liiketoimintalogiikan Attractiin.
 
-#### <a name="powerapps-activity"></a>PowerApps-tehtävä 
+#### <a name="power-apps-activity"></a>Power Apps-tehtävä 
 
-PowerApps-tehtävän avulla työn tai työn prosessimallin luoja voi upottaa PowerApps-sovelluksen työhönoton työnkulkuun. Kun olet luonut ja julkaissut sovelluksen, voit lisätä sen sovellustunnuksen tehtävämäärityksissä. Voit lukea ja kirjoittaa PowerApps-sovelluksen avulla tietoja Common Data Serviceen. Voit myös linkittää sovelluksen työnkulkuun. Esimerkki: Sinulla on sovellus, jolla työhönottajat täyttävät lomakkeen puhelinhaastattelujen aikana. Voit tässä tapauksessa linkittää sovelluksen työnkulkuun, joka arvioi, voidaanko hakija siirtää eteenpäin työhakuprosessissa. Vain työhönottoryhmän jäsenet voivat tarkastella tämän tyyppistä tehtävää. Lisätietoja PowerApps-tehtävän määrittämisestä on kohdassa [Attractin tehtävät](./activities-attract.md).
+Power Apps-tehtävän avulla työn tai työn prosessimallin luoja voi upottaa Power Apps-sovelluksen työhönoton työnkulkuun. Kun olet luonut ja julkaissut sovelluksen, voit lisätä sen sovellustunnuksen tehtävämäärityksissä. Voit lukea ja kirjoittaa Power Apps-sovelluksen avulla tietoja Common Data Serviceen. Voit myös linkittää sovelluksen työnkulkuun. Esimerkki: Sinulla on sovellus, jolla työhönottajat täyttävät lomakkeen puhelinhaastattelujen aikana. Voit tässä tapauksessa linkittää sovelluksen työnkulkuun, joka arvioi, voidaanko hakija siirtää eteenpäin työhakuprosessissa. Vain työhönottoryhmän jäsenet voivat tarkastella tämän tyyppistä tehtävää. Lisätietoja Power Apps -tehtävän määrittämisestä on kohdassa [Työhönottoprosessien tehtävät](./activities-attract.md).
 
 > [!NOTE]
-> PowerApps-tehtävää voi käyttää vain kattavan työhönottolaajennuksen kanssa.
+> Power Apps-tehtävää voi käyttää vain kattavan työhönottolaajennuksen kanssa.
 
 #### <a name="web-content-iframe-activity"></a>Internet-sisältö (iframe) -tehtävä
 
-Internet-sisältö (iframe) -tehtävän avulla voi upottaa työhönottoprosessiin tai hakijaportaaliin muodostetun mukautetun verkkoratkaisun. Voit lukea tietoja suoraan Common Data Servicestä ja kirjoittaa niitä. Voit myös mukauttaa ratkaisun niin, että se käynnistää työnkulkuja tai hyödyntää Microsoft Azure -toimintoja. Lisätietoja Internet-sisältötehtävän määrittämisestä on kohdassa [Attractin tehtävät](./activities-attract.md).
+Internet-sisältö (iframe) -tehtävän avulla voi upottaa työhönottoprosessiin tai hakijaportaaliin muodostetun mukautetun verkkoratkaisun. Voit lukea tietoja suoraan Common Data Servicestä ja kirjoittaa niitä. Voit myös mukauttaa ratkaisun niin, että se käynnistää työnkulkuja tai hyödyntää Microsoft Azure -toimintoja. Lisätietoja verkkosisältötehtävän määrittämisestä on kohdassa [Työhönottoprosessien tehtävät](./activities-attract.md).
 
 > [!NOTE]
 > Internet-sisältö-tehtävää voi käyttää vain kattavan työhönottolaajennuksen kanssa.

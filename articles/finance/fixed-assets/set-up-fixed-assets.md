@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9eef9d8c58d19b05901035f4c679ee7d9902819
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177513"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771917"
 ---
 # <a name="set-up-fixed-assets"></a>Käyttöomaisuuserien määrittäminen
 
@@ -51,7 +51,7 @@ Kun olet määrittänyt poistoprofiilit, sinun on luotava käyttöomaisuuden ede
 
 Ensisijainen poistoprofiili liitetään jokaiseen kirjaan. Kirjoilla on myös vaihtoehtoinen poistoprofiili tai lisäpoistoprofiili, jos tämä profiilityyppi on käytettävissä. Jotta käyttöomaisuuskirja sisällytetään automaattisesti poiston suoritukseen, on otettava käyttöön **Laske poisto** -vaihtoehto. Jos tätä vaihtoehtoa ei ole otettu käyttöön käyttöomaisuuserälle, poistoehdotus ohittaa käyttöomaisuuden.
 
-Voit määrittää myös johdettuja kirjoja. Määritetyt johdetut tapahtumat kirjataan ensisijaisen tapahtuman täydellisenä kopiona johdettuihin kirjoihin. Tämän vuoksi johdetut tapahtumat yleensä määritetään hankinnoille ja luovutuksille eikä poistotapahtumille. Lisätietoja on ohjeaiheessa [Kirjojen määrittäminen.](tasks/set-up-value-models.md)
+Voit määrittää myös johdettuja kirjoja. Määritetyt johdetut tapahtumat kirjataan ensisijaisen tapahtuman täydellisenä kopiona johdettuihin kirjoihin. Tämän vuoksi johdetut tapahtumat yleensä määritetään hankinnoille ja luovutuksille eikä poistotapahtumille. Lisätietoja on kohdassa [Arvomallien määrittäminen](tasks/set-up-value-models.md).
 
 ## <a name="fixed-asset-posting-profiles"></a>Käyttöomaisuuserän kirjausprofiili
 

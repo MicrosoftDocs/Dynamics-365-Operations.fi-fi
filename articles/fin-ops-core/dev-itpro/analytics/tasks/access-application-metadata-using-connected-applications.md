@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a476163ba6f66ab60ed8bfea6198d02f13ac5136
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5020b523ca5d76d36f7436a8f43e8629c029e3e8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182712"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769875"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Sovelluksen metatietojen käyttäminen yhdistetyillä sovelluksilla
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava Regulatory Configuration Service (RCS) -käyttäjä voi suunnitella uuden sähköisen raportoinnin ER-mallin yhdistämisen Finance and Operationsin metatietojen avulla. Sovelluksen metatietoja käytetään verkossa RCS:n yhdistetyllä sovelluksella. ER-näytemallin yhdistäminen määritetään käyttämään ulkomaankauppatapahtumia. Näitä varten RCS-sovelluksessa on ensin suoritettava aiheessa [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet. Jos olet suorittanut aiheen [Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla](access-application-metadata-er-configuration.md) vaiheet, siirry [Esimerkki sähköisestä raportoinnista -sivulle](https://go.microsoft.com/fwlink/?linkid=862266) ja tallenna seuraavat ER-konfiguraatiot: Ulkomaankaupan metatiedot.xml, Ulkomaankauppamalli.xml ja Ulkomaankaupan yhdistäminen.xml ja suorita sitten toimenpiteen vaiheet.
+Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava Regulatory Configuration Service (RCS) -käyttäjä voi suunnitella uuden sähköisen raportoinnin ER-mallin yhdistämisen Finance and Operationsin metatietojen avulla. Sovelluksen metatietoja käytetään verkossa RCS:n yhdistetyllä sovelluksella. ER-näytemallin yhdistäminen määritetään käyttämään ulkomaankauppatapahtumia. Näitä vaiheita varten on ensin suoritettava RCS:ssä ohjeaiheessa [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet. Jos olet suorittanut aiheen [Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla](access-application-metadata-er-configuration.md) vaiheet, siirry [Esimerkki sähköisestä raportoinnista -sivulle](https://go.microsoft.com/fwlink/?linkid=862266) ja tallenna seuraavat ER-konfiguraatiot: Ulkomaankaupan metatiedot.xml, Ulkomaankauppamalli.xml ja Ulkomaankaupan yhdistäminen.xml ja suorita sitten toimenpiteen vaiheet.
 
 ## <a name="prerequisites"></a>Edellytykset
 1. Valitse **Kaikki työtilat** > **Sähköinen raportointi**. 
-2. Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](er-configuration-provider-mark-it-active-2016-11.md) -menettelyn vaiheet. 
+2. Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) -menettelyn vaiheet. 
 
 ## <a name="get-required-er-configurations"></a>Tarvittavien ER-konfiguraatioiden hankkiminen
 1. Valitse **Raportointikonfiguraatiot**. 
-2. Jos olet jo suorittanut toimenpiteen [(RCS) Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla](access-application-metadata-er-configuration.md) vaiheet, sinulla on jo tarvittavat nykyisen RCS-esiintymän ER-määritykset (ulkomaankaupan metatietojen, mallin ja yhdistämisen määritykset). Voit ohittaa tämän alitehtävän kaikki jäljellä olevat vaiheet. 
+2. Jos olet jo suorittanut toimenpiteen [Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla](access-application-metadata-er-configuration.md) vaiheet, sinulla on jo tarvittavat nykyisen RCS-esiintymän ER-määritykset (ulkomaankaupan metatietojen, mallin ja yhdistämisen määritykset). Voit ohittaa tämän alitehtävän kaikki jäljellä olevat vaiheet. 
 3. Valitse **Vaihto**. 
 4. Valitse **Lataa XML-tiedostosta**. 
 5. Valitse ensin **Selaa** ja sitten **Ulkomaankaupan metatiedot.xml** -tiedosto. 
@@ -72,8 +72,8 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 4. Valitse puussa **Ulkomaankauppamalli\Ulkomaankaupan yhdistäminen**. 
 5. Laajenna **Edellytykset**-osa. 
 
-> [!NOTE]
-> Tällä hetkellä yhdistämismääritys viittaa metatietomääritykseen. Tämän konfiguraation sovelluksen metatiedot ovat käytettävissä, kun mallin yhdistämistä suunnitellaan. 
+    > [!NOTE]
+    > Tällä hetkellä yhdistämismääritys viittaa metatietomääritykseen. Tämän konfiguraation sovelluksen metatiedot ovat käytettävissä, kun mallin yhdistämistä suunnitellaan. 
 
 6. Valitse **Suunnittelutoiminto**. 
 7. Valitse **Suunnittelutoiminto**. 
@@ -81,8 +81,8 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 9. Valitse **Lisää juuri**. 
 10. Anna tai valitse **Taulu**-kentässä arvo. 
 
-> [!NOTE]
-> Tällä hetkellä yhdistämismääritys viittaa metatietomääritykseen. Tämän konfiguraation sovelluksen metatiedot ovat käytettävissä, kun mallin yhdistämistä suunnitellaan. 
+    > [!NOTE]
+    > Tällä hetkellä yhdistämismääritys viittaa metatietomääritykseen. Tämän konfiguraation sovelluksen metatiedot ovat käytettävissä, kun mallin yhdistämistä suunnitellaan. 
 
 11. Valitse **Peruuta**. 
 12. Sulje sivu. 
@@ -92,8 +92,8 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 1. Valitse **Muokkaa**. 
 2. Valitse **MyConnectedApp**-sovellus. 
 
-> [!NOTE]
-> Tällä hetkellä yhdistämismääritys viittaa valitun yhdistetyn sovelluksen metatietoihin. Kun sama yhdistämismääritys viittaa samanaikaisesti metatietojen määritykseen ja yhdistettyyn sovellukseen, yhdistetyn sovelluksen metatietoja käytetään. 
+    > [!NOTE]
+    > Tällä hetkellä yhdistämismääritys viittaa valitun yhdistetyn sovelluksen metatietoihin. Kun sama yhdistämismääritys viittaa samanaikaisesti metatietojen määritykseen ja yhdistettyyn sovellukseen, yhdistetyn sovelluksen metatietoja käytetään. 
 
 3. Valitse **Suunnittelutoiminto**. 
 4. Valitse **Suunnittelutoiminto**. 
@@ -101,14 +101,14 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 6. Valitse **Lisää juuri**. 
 7. Anna tai valitse **Taulu**-kentässä arvo. 
 
-> [!NOTE]
-> Valittavana on nyt enemmän kuin kaksi sovellustaulukkoa, sillä tämä yhdistämismääritys käyttää siihen määritetyn yhdistetyn sovelluksen kaikkia metatietoja. 
+    > [!NOTE]
+    > Valittavana on nyt enemmän kuin kaksi sovellustaulukkoa, sillä tämä yhdistämismääritys käyttää siihen määritetyn yhdistetyn sovelluksen kaikkia metatietoja. 
 
 8. Valitse **Peruuta**. 
 9. Valitse **Vahvista**. 
 
-> [!NOTE]
-> Tietomallin elementtien ja kuvattujen nimikkeiden tietolähteiden sitominen onnistui käyttämällä tähän yhdistämismääritykseen määritetyn yhdistetyn sovelluksen metatietoja. 
+    > [!NOTE]
+    > Tietomallin elementtien ja kuvattujen nimikkeiden tietolähteiden sitominen onnistui käyttämällä tähän yhdistämismääritykseen määritetyn yhdistetyn sovelluksen metatietoja. 
 
 10. Sulje sivu. 
 11. Sulje sivu. 

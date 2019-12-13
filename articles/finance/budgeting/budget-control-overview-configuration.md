@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a06224e4babab8315ebd9de34e7ada570564e8ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 464fd211eb5417265f8c737b23456769137a7c13
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188622"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772671"
 ---
 # <a name="budget-control-overview"></a>Budjetin hallinnan yleiskatsaus
 
@@ -42,7 +42,7 @@ Kulut voidaan tallentaa päätilien ja taloushallinnon dimensioiden avulla. Koko
 
 Seuraavassa kaaviossa esitellään budjetin hallinnan sijainti tavallisen budjettijakson vaiheissa.
 
-[![BudgetingCycle](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
+[![Tyypillinen budjetointijakso](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
 
 Voit määrittää budjetin hallinnan useiden eri tekijöiden perusteella:
 

@@ -1,5 +1,5 @@
 ---
-title: Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa
+title: Työn luominen Attractissa
 description: Tässä ohjeaiheessa käsitellään työn elementtejä Attractissa. Siinä käsitellään myös työn luomista.
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: db725c230de5e3dfe971098249b280d9da47ae20
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9dcdbcea995285c879f91c0bff435103865cc10f
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551069"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832928"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa
+# <a name="create-a-job-in-attract"></a>Työn luominen Attractissa
 
 [!include [banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Jos toimien hallinta on otettu hallintakeskuksessa käyttöön, **Päivitä toim
 > [!NOTE]
 > Toimien hallinta sisältyy kattavaan työhönottolaajennukseen.
 
-Työhönottoprosessin tarjoustoiminnon asetusten mukaan toimen numeroa voi olla mahdollista käyttää tarjouksessa kahdesti. Lisätietoja on kohdassa [Työhönottoprosessi](./activities-attract.md).
+Työhönottoprosessin tarjoustoiminnon asetusten mukaan toimen numeroa voi olla mahdollista käyttää tarjouksessa kahdesti. Lisätietoja on kohdassa [Työhönottoprosessien tehtävät](./activities-attract.md).
 
 Attractiin sisältyy oletusjoukko **osaamisalueita**. Näitä osaamisalueita ehdotetaan, kun kirjoitat. Voit lisätä uusia osaamisalueita kirjoittamalla uuden osaamisalueen kenttään ja painamalla Enter-näppäintä.
 
@@ -67,7 +67,7 @@ Työhönottoryhmä voidaan päivittää sen jälkeen, kun työ on aktivoitu.
 
 Työhönottoprosessin oletustiedot perustuvat prosessimalliin, joka valittiin työtä luotaessa. Jos tiettyä mallia ei valittu tässä vaiheessa, käyttöön otetaan oletusmalli. Kun määrität työhönottoprosessia, voit lisätä tai poistaa eri vaiheita Potentiaalinen ehdokas-, Hakemus- ja Tarjous-vaiheita lukuun ottamatta. Vaikka Potentiaalinen ehdokas -vaihetta ei voi poistaa, sen voi poistaa käytöstä. Voit lisätä tai poistaa kussakin vaiheessa ennalta määritettyjä tehtäviä.
 
-Lisätietoja työhönottoprosessiin lisättävistä tehtävistä on kohdassa [Työhönottoprosessin tehtävät Attractissa](./activities-attract.md).
+Lisätietoja työhönottoprosessiin lisättävistä tehtävistä on kohdassa [Työhönottoprosessien tehtävät](./activities-attract.md).
 
 > [!NOTE]
 > Työhönottoprosessia ei voi päivittää sen jälkeen, kun työ on aktivoitu.
@@ -76,7 +76,7 @@ Lisätietoja työhönottoprosessiin lisättävistä tehtävistä on kohdassa [Ty
 
 Kun työ on aktivoitu, se voidaan julkaista. Vain työhönottajat ja järjestelmänvalvojat voivat julkaista töitä. Työ voidaan julkaista joko Talent Careers -sivustossa (Dynamics 365 Talentin urasivusto) tai LinkedInissä. Attract-ryhmä tekee jatkuvasti yhteistyötä työpaikkailmoitussivujen kanssa. Tämä luettelo tulee laajenemaan ajan mittaan. Kun työ on julkaistu vain sisäiseksi, ehdokkailla on oltava AAD-tili, jotta he voivat tarkastella työtä ja hakea sitä. Jos työ on julkinen, ehdokkaat voivat tarkastella ja hakea sitä minkä tahansa todennusvaihtoehdon avulla. 
 
-Lisätietoja työpaikkailmoituksista on kohdassa [Attractin urasivuston toiminnot](career-site.md).
+Lisätietoja työpaikkailmoituksista on kohdassa [Urasivuston määrittäminen Microsoft Dynamics 365 Talent – Attractissa](career-site.md).
 
 > [!NOTE]
 > Työpaikkailmoitustoiminto on käytettävissä vain Attractin kattavan työhönottolaajennusta käytettäessä.
@@ -90,7 +90,7 @@ Kun työ on aktivoitu, se voidaan julkaista. Siihen voidaan myös lisätä poten
 
 ## <a name="prospects-and-applicants"></a>Potentiaaliset ehdokkaat ja hakijat
 
-Potentiaalisten ehdokkaiden työhön lisäämisen asetus määritetään työhönottoprosessin [Potentiaalinen ehdokas -tehtävässä](./activities-attract.md#prospect-activity). Tämä asetus on määritettävä ennen työn aktivointia. Kun työ on aktivoitu, siihen voidaan lisätä potentiaalisia ehdokkaita ja hakijoita.
+Potentiaalisten ehdokkaiden työhön lisäämisen asetus määritetään työhönottoprosessin [Työhönottoprosessien tehtävät](./activities-attract.md#prospect-activity). Tämä asetus on määritettävä ennen työn aktivointia. Kun työ on aktivoitu, siihen voidaan lisätä potentiaalisia ehdokkaita ja hakijoita.
 
 ## <a name="approvals"></a>Hyväksymiset
 

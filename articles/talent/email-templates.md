@@ -1,5 +1,5 @@
 ---
-title: Sähköpostimallit
+title: Sähköpostimallien luonti Attractissa
 description: Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 Talent – Attractissa luotavista ja käytettävistä sähköpostimalleista.
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7174fd96e5ddc9ba5a91eb423d08afd1daa45f48
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 55c12010cfd055ee6977f50e566b70f76a2e1682
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008033"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832881"
 ---
-# <a name="email-templates"></a>Sähköpostimallit
-[!include[banner](../includes/banner.md)]
+# <a name="create-email-templates-in-attract"></a>Sähköpostimallien luonti Attractissa
+
+[!include [banner](includes/banner.md)]
 
 Järjestelmänvalvojat voivat luoda sähköpostimallikirjaston avulla kaikille yhteisen teeman ja brändin kaikille Microsoft Dynamics 365 Talent: Attractin ja Offerin kautta lähetettäville sähköposteille. Järjestelmänvalvojat voivat myös valita sähköpostisisältöjen valikoiman muiden käyttäjien käyttöön. Työhönottoryhmä voi tehostaa sähköpostien lähettämistä omassa työnkulussaan näiden mallien avulla. Jotkin sähköpostiviestit on määritetty automaattisesti lähettäviksi, ja järjestelmänvalvoja voi mukauttaa näiden viestien sisältöä sähköpostimallikirjaston avulla.
 

@@ -1,9 +1,9 @@
 ---
 title: Pääsuunnitteluajon valvonta
-description: Tuotannon suunnittelija haluaa nähdä, onko pääsuunnitteluajo käynnissä.
-author: ShylaThompson
+description: Tässä ohjeaiheessa selvitetään, miten tuotannon suunnittelija näkee, käsitelläänkö pääsuunnitteluajoa.
+author: josaw1
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,42 +16,115 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b923b215528ecceaed9b5057ddb736ec959f1d65
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d6e7fdd51670ea63efc04e883703f1763955115b
+ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845110"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "2781916"
 ---
 # <a name="monitor-a-master-planning-run"></a>Pääsuunnitteluajon valvonta
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
-Tuotannon suunnittelija haluaa nähdä, onko pääsuunnitteluajo käynnissä. Käytä menettelyn täytössä USMF-yrityksen demotietoja.
+## <a name="use-a-gantt-chart-to-visualize-master-planning-progress"></a>Pääsuunnittelun edistymisen visualisointi Gantt-kaavion avulla
 
+**Näytä pääsuunnittelun edistyminen** -sivulla pääsuunnitteluajoen historiatietoja Gantt-kaaviona. Tämän toiminnon avulla voi selvittää, kuinka kauan aikaa pääsuunnittelun eri vaiheisiin kului. Nykyisessä aktiivisessa suunnittelutyössä **Näytä pääsuunnittelun edistyminen** -sivun avulla voi seurata edistymistä ja näyttää arvioidun jäljellä olevan ajan.
 
-## <a name="run-master-planning"></a>Pääsuunnittelun suorittaminen
-1. Valitse Pääsuunnittelu.
-    * Löydät tämän oletuskoontinäytöltä.  
-2. Anna tai valitse Suunnitelma-kentässä arvo.
-    * Esimerkki: StaticPlan  
-3. Valitse Suorita.
-4. Valitse Seuraa käsittelyaikaa -kentässä Kyllä.
-    * Jos tämä kenttä on jo valittu, voit ohittaa tämän vaiheen.  
-5. Syötä Säikeiden määrä -kenttään numero.
-6. Laajenna Tietueet-kohta ja sisällytä osaan.
-7. Valitse Suodatin.
-8. Merkitse valittu rivi luettelossa.
-    * Merkitse rivi, jossa Kenttä = Nimiketunnus.  
-9. Syötä tai valitse arvo Ehdot-kenttään.
-    * Esimerkki: T0001  
-10. Valitse OK.
-11. Valitse OK.
+### <a name="turn-on-and-use-the-master-plan-progress-visualization-feature"></a>Pääsuunnittelun etenemisen visualisointitoiminnon ottaminen käyttöön ja käyttäminen
 
-## <a name="monitor-the-master-planning-run"></a>Pääsuunnitteluajon valvonta
-1. Valitse Historia.
-2. Valitse Kyselyt.
-3. Valitse Käsittelytehtävän kesto.
-4. Etsi haluamasi tietue luettelosta ja valitse se.
-    * Saat kullekin nimikkeelle yhteenvedon jokaiseen suunnitteluvaiheeseen kuluneesta ajasta.  
+Voit käyttää tätä toimintoa seuraavasti:
 
+1. Valitse **Toimintojen hallinta** -työtilan **Uusi**-lehden luettelossa **Pääsuunnittelun etenemisen visualisointi**. Jos toiminto ei ole **Uusi**-välilehdessä, tarkista myös **Ei käytössä**- ja **Kaikki**-välilehdet.
+1. Valitse **Ota käyttöön nyt**. Vaihtoehtoisesti voi valita **Aikataulu** ja valita sitten ajan, jolloin haluat ottaa toiminnon käyttöön.
+
+**Näytä pääsuunnittelun edistyminen** -sivulla voi olla näkyvissä sekä historiallisia että aktiivisia suunnittelutöitä. 
+
+Historiallisten suunnittelutöiden näyttämiseen on kaksi vaihtoehtoa. 
+
+1. Valitse ensin **Pääsuunnittelu \> Asetukset \> Suunnitelmat \> Pääsuunnitelmat** ja valitse sitten toimintoruudussa **Historia**. Kun sopiva työ on valittu, valitse ensin **Kyselyt** ja sitten **Näytä edistyminen**
+1. Valitse ensin **Pääsuunnittelu \> Työtilat \> Pääsuunnittelu** ja valitse sitten Pääsuunnittelu-ruudussa **Historia**. Kun sopiva työ on valittu, valitse ensin **Kyselyt** ja sitten **Näytä edistyminen**
+
+Aktiivisten suunnittelutöiden näyttämiseen on kaksi vaihtoehtoa. 
+1. Valitse ensin **Pääsuunnittelu \> Työtilat \> Pääsuunnittelu** ja valitse sitten toimintoruudussa **Keskeneräiset suunnitteluprosessit**. Kun sopiva työ on valittu, valitse ensin **Kyselyt** ja sitten **Näytä edistyminen**.
+1. Valitse ensin **Pääsuunnittelu \> Työtilat \> Pääsuunnittelu** ja valitse sitten Pääsuunnittelu-ruudussa **Näytä edistyminen**. Kun sopiva työ on valittu, valitse ensin **Kyselyt** ja sitten **Näytä edistyminen**
+
+Huomaa, että voit tarkastella aktiivisia töitä vain silloin, kun suunnittelutyötä käsitellään.
+
+### <a name="analyze-a-master-planning-job"></a>Pääsuunnittelun työn analysoiminen
+
+Voit laajentaa Gantt-kaavion kunkin seuraavista suunnitteluprosesseista ja tarkastella ajankäyttöön liittyviä lisätietoja:
+
+- Alustetaan
+- Poistetaan ja lisätään tietoja
+- Kattavuussuunnittelu
+- Viiveet
+- Toimintosanomat
+- Viimeistely
+- Automaattinen vahvistus
+
+Gantt-kaavio on kätevä työkalu, jos haluat tarkastella toimenpidesanomien vaikutusta.
+
+#### <a name="navigation-in-the-gantt-chart"></a>Siirtyminen Gantt-kaaviossa
+
+- Voit laajentaa valittua ryhmää ja näyttää tiedot valitsemalla plus-merkin (**+**) puunäkymässä.
+- Voit pienentää valitun ryhmän valitsemalla puunäkymässä miinus-merkin (**–**).
+- Voit käyttää näppäimistöä siirtymiseen. Voit siirtyä riviltä toiselle **ylänuoli**- ja **alanuoli**-näppäimillä. Voit laajentaa ja tiivistää ryhmiä **oikealla** ja **vasemmalla nuolinäppäimellä**.
+- Voit avata tai sulkea kaikki Gantt-kaavion tasot valitsemalla **Laajenna kaikki** tai **Tiivistä kaikki**.
+- Voit tarkastella liittyvää käsittelyaikaa pitämällä hiiren osoitinta tehtävän päällä. (Tehtävät ovat Gantt-kaavion alin taso.)
+
+#### <a name="view-an-additional-master-planning-run-to-compare-jobs"></a>Töiden vertailu näyttämällä muu pääsuunnitteluajo
+
+Valitsemalla pääsuunnittelutyön **Näytä muu pääsuunnitteluajo** -kentässä, voit tarkastella toista pääsuunnittelutyötä Gantt-kaaviossa ja vertailla töitä.
+
+#### <a name="bom-level-display"></a>Tuoterakennetason näyttö
+
+Tuoterakennetasot näytetään eri tavalla, kun kyse on kattavuuden suunnittelusta, viiveistä, toimenpiteistä ja vahvistuksesta.
+
+- **Kattavuuden suunnittelu** – Tuoterakennetasot näytetään odotetusti. Ne lasketaan ylhäältä alaspäin.
+
+    **Esimerkki:** tuoterakennetaso 0, 1, 2
+
+- **Viiveet** – Tuoterakennetasot näytetään kattavuuden suunnittelun tuoterakennetasoina –1:llä kerrottuna. (Toisin sanoen niissä on negatiivinen merkki.)
+
+    **Esimerkki:** tuoterakennetaso –2, –1, 0
+
+- **Toimenpidesanoma** – Tuoterakennetasot näytetään odotetusti. Ne lasketaan ylhäältä alaspäin.
+
+    **Esimerkki:** tuoterakennetaso 0, 1, 2
+
+- **Automaattinen vahvistus** – tuoterakennetasot näytetään 999, josta on vähennetty kattavuuden suunnittelu tuoterakennetaso.
+
+    **Esimerkki:** tuoterakennetaso 999, 998, 997
+
+Seuraavassa taulukossa on edellisten yhteenveto.
+
+| Näytettävä tuoterakennetaso | Loppunimike | Alikomponentti | Raaka-aine |
+|---|---|---|---|
+| Kattavuussuunnittelu | 0 | 1 | 2 |
+| Viiveet | 0 | –1 | –2 |
+| Toimenpidesanoma | 0 | 1 | 2 |
+| Automaattinen vahvistus | 999 | 998 | 997 |
+
+#### <a name="visualize-progress"></a>Edistymisen visualisointi
+
+Jos tarkastelet käsittelyssä olevaa pääsuunnittelutyötä, edistyminen näytetään Gantt-kaaviossa värien avulla. Seuraava värien teema on sininen. Muiden väriteemojen värit ovat erilaiset.
+
+- **Tummansininen** – valmistuneet suunnittelutehtävät.
+- **Oranssi** – käsiteltävänä oleva tehtävä.
+- **Vaaleansininen** – arvio jäljellä olevista tehtävistä.
+
+Väri näkyy vain Gantt-kaavion alimmalla tasolla. Valitsemalla **Laajenna kaikki** voit tarkastella kaikkia pääsuunnittelutyön tehtäviä. Arvio jäljellä olevista tehtävistä perustuu historiallisiin pääsuunnittelutöihin.
+
+## <a name="run-master-planning-and-track-processing-time"></a>Pääsuunnittelun suorittaminen ja käsittelyajan seuraaminen
+
+1. Valitse oletuskoontinäytössä **Pääsuunnittelu**.
+1. Anna tai valitse **Suunnitelma**-kentässä arvo.
+1. Valitse **Suorita**.
+1. Määritä **Seuraa käsittelyaikaa**-asetuksen arvoksi **Kyllä**.
+1. Syötä **Säikeiden määrä** -kenttään numero.
+1. Valitse **Sisällytettävät tietueet** -pikavälilehdessä **Suodatus**.
+1. Valitse ruudukossa rivi, jonka **Kenttä**-kentän arvona on **Nimiketunnus**.
+1. Anna **Ehdot**-kenttään arvo.
+1. Valitse **OK**.

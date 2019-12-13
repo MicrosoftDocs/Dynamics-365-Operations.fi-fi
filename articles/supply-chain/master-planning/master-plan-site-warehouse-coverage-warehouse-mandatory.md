@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c52fc9955afe2a7502d0e1f9e7cdfc5b89bbb31d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 11720b70697112085ac612fc9eded8292a68ab2d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559275"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815085"
 ---
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-mandatory"></a>Pääsuunnittelu – toimipaikan ja varaston kattavuus, varasto pakollinen
 
@@ -51,15 +51,15 @@ Seuraava kuva osoittaa, miten pääsuunnittelu etenee. Kuvassa viitataan seuraav
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Pääsuunnittelu ja multisite-toiminnot](master-plan-multisite-functionality.md)
+[Pääsuunnittelu ja multisite-toiminnot – yleiskatsaus](master-plan-multisite-functionality.md)
 
-[Pääsuunnittelu – sivuston kattavuus, varasto pakollinen](master-plan-site-coverage-warehouse-mandatory.md)
+[Pääsuunnittelu toimipaikan kattavuudelle, varasto pakollinen](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Pääsuunnittelu – sivuston kattavuus, varasto ei pakollinen](master-plan-site-coverage-warehouse-not-mandatory.md)
+[Pääsuunnittelu toimipaikan kattavuudelle, varasto ei pakollinen](master-plan-site-coverage-warehouse-not-mandatory.md)
 
-[Pääsuunnittelu – toimipaikan ja varaston kattavuus, varasto ei pakollinen](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[Toimipaikan ja varaston kattavuuden pääsuunnittelu, varasto ei pakollinen](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Pääsuunnittelu – tuoterakenneversion määrittäminen](master-plan-bom-version-determined.md)
+[Tuoterakenneversion määrittäminen](master-plan-bom-version-determined.md)
 
 
 

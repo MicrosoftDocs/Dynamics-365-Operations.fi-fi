@@ -1,5 +1,5 @@
 ---
-title: Ehdokkaiden rekrytointi LinkedIn Recruiterilla Microsoft Dynamics 365 Talent – Attractissa
+title: Ehdokkaiden rekrytointi LinkedIn Recruiterilla Attractissa
 description: Rekrytoi ehdokkaita työpaikkaan LinkedIn Recruiterin avulla käyttämällä Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraatiota.
 author: andreabichsel
 manager: AnnBe
@@ -19,15 +19,16 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8f2e95e74bbc8d78ed5d970f29b61150a45c6740
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551561"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833043"
 ---
-# <a name="source-candidates-with-linkedin-recruiter-in-microsoft-dynamics-365-talent---attract"></a>Ehdokkaiden rekrytointi LinkedIn Recruiterilla Microsoft Dynamics 365 Talent – Attractissa
-[!include[banner](../includes/banner.md)]
+# <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Ehdokkaiden rekrytointi LinkedIn Recruiterilla Attractissa
+
+[!include [banner](includes/banner.md)]
 
 LinkedIn on maailman suurin verkossa toimiva asiantuntijaverkosto, jonka avulla koko maailman parhaat osaajat ovat käytettävissä. Microsoft Dynamics 365 Talent: Attractin avulla voit rekrytoida ehdokkaita suoraan LinkedInistä. Niinpä sopivien osaajien löytäminen avoimiin työpaikkoihin on helpompaa kuin koskaan. Kun olet muodostanut LinkedIn-yhteyden Attractin kautta, voit tarkastella työpaikkaan sopivia mahdollisia LinkedIn-ehdokkaita ja viedä heidät Attractiin yhdellä napsautuksella.
 
@@ -100,12 +101,12 @@ Jos ehdokkaat hyväksyvät LinkedIn-profiiliinsa jakamisen organisaation käytt�
 
 ## <a name="see-also"></a>Lisätietoja
 
-[LinkedInin usein kysytyt kysymykset](./attract-linkedin-faq.md)
+[Attractin LinkedIn-integraation usein kysytyt kysymykset](./attract-linkedin-faq.md)
 
-[LinkedIn-integraation määrittäminen](./attract-admin-linkedin.md)
+[Microsoft Dynamics 365 Talent – Attractin LinkedIn-integraation määrittäminen](./attract-admin-linkedin.md)
 
-[Työpaikkojen luominen](./creating-jobs-attract.md)
+[Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa](./creating-jobs-attract.md)
 
-[Työpaikkojen julkaiseminen LinkedInissä Attractista](./attract-post-jobs-to-linkedin.md)
+[Työpaikkojen julkaiseminen LinkedInissä Microsoft Dynamics 365 Talent – Attractista](./attract-post-jobs-to-linkedin.md)
 
-[LinkedIn-integraation vianmääritys](./attract-troubleshoot-linkedin.md)
+[LinkedInin ja Microsoft Dynamics 365 Talent – Attractin integroinnin vianmääritys](./attract-troubleshoot-linkedin.md)

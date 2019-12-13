@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f65118b6a7393ced9d80c30fad7540a7b27da6c7
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569081"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771395"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Mukautetun tallennussijainnin määrittäminen luoduille asiakirjoille
 
@@ -54,7 +54,7 @@ Tarvitset myös tämän topologian kehitysympäristön käyttöoikeuden.
 
 ## <a name="create-a-new-document-type"></a>Uuden tiedostotyypin luominen
 
-ER-muodon luomien asiakirjojen reitityksen määrittämistä varten on määritettävä [ER-kohteet](electronic-reporting-destinations.md). Jokaisessa ER-kohteessa, joka on määritetty tallentamaan muodostetut asiakirjat tiedostoina, on määritettävä tiedoston hallintakehyksen asiakirjatyyppi. Eri asiakirjatyyppejä voidaan käyttää reitittämään eri ER-muotojen muodostamia asiakirjoja.
+ER-muodon luomien asiakirjojen reitityksen määrittämistä varten on määritettävä [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md). Jokaisessa ER-kohteessa, joka on määritetty tallentamaan muodostetut asiakirjat tiedostoina, on määritettävä tiedoston hallintakehyksen asiakirjatyyppi. Eri asiakirjatyyppejä voidaan käyttää reitittämään eri ER-muotojen muodostamia asiakirjoja.
 
 1. Lisää aiemmin luodulle tai tuodulle ER-muodolle uusi [asiakirjatyyppi](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). Seuraavassa kuvassa asiakirjan tyyppi on **FileX**.
 2. Voit erottaa tämän asiakirjatyypin muista asiakirjatyypeistä sisällyttämällä tietyn avainsanan sen nimeen. Esimerkiksi seuraavassa kuvassa nimi on **(PAIKALLINEN) kansio**.
@@ -173,5 +173,5 @@ public DocuRef insertFile(
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Sähköisen raportoinnin kohteet](electronic-reporting-destinations.md)
-- [Laajennettavuuden aloitussivu](../extensibility/extensibility-home-page.md)
+- [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md)
+- [Laajennettavuuden kotisivu](../extensibility/extensibility-home-page.md)

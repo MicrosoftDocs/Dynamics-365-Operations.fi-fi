@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c78fc1f2f1bb08d01828a8b71ad5d3c16ad31b86
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 98c84e987c40adf136d0240117f7b0f119bf2f59
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278374"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811114"
 ---
 # <a name="product-recommendations-on-pos"></a>Myyntipisteen tuotesuositukset
 
@@ -40,13 +40,13 @@ Tuotteen suosituksia on käytössä seuraavissa myyntipisteskenaarioissa. Ne ova
 
 1. **Tuotteen tiedot** -sivulla:
 
-    - • Jos myymälän päällikkö käy **Tuotteen tiedot** -sivulla tarkastelleessaan aiempia tapahtumia eri kanavissa, suosituspalvelu ehdottaa muita nimikkeitä, jotka todennäköisesti voi ostaa yhdessä.
+    - Jos myyjä käy **Tuotteen tiedot** -sivulla tarkastellessaan aiempia tapahtumia eri kanavissa, suosituspalvelu ehdottaa muita nimikkeitä, jotka todennäköisesti voi ostaa yhdessä.
 
     [![Tuotetiedot-sivun suositukset](./media/proddetails.png)](./media/proddetails.png)
 
 2. **Tapahtuma**-sivulla:
 
-    - • Suositusmoduuli ehdottaa nimikkeitä, jotka perustuvat niiden korissa olevien nimikkeiden luetteloon, jotka ostetaan usein yhdessä.
+    - Suositusmoduuli ehdottaa nimikkeitä, jotka perustuvat niiden korissa olevien nimikkeiden luetteloon, jotka ostetaan usein yhdessä.
 
     > [!NOTE]
     > Jotta suositukset voitaisiin näyttää **Tapahtuma**-sivulla, vähittäismyyjän pitää päivittää näytön asettelu Dynamics 365 for Retailissa. **Suositukset**-ohjausobjekti on pudotettava **Tapahtuma**-sivulle.
@@ -69,10 +69,12 @@ Voit määrittää tuotesuositukset noudattamalla seuraavia ohjeita:
 
 - Valitse **Vähittäismyynnin parametrit** \> **Suositusluettelot** \> **Poista tuotesuositukset käytöstä** ja suorita **Yleinen konfiguraatiotyö \[9999\]**. 
 - Jos lisäsit **suositusten ohjausobjektin** tapahtumanäyttöön **näytön asettelun suunnittelutoiminnolla**, poista myös se.
-- Jos sinulla on lisäkysymyksiä, tutustu [suositusten usein kysyttyihin kysymyksiin](../commerce/faq-recommendations.md) saadaksesi lisätietoja.
+- Jos sinulla on lisäkysymyksiä, lisätietoja kohdassa [Tuotesuositusten usein kysytyt kysymykset](../commerce/faq-recommendations.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Ehdotusohjausobjektin lisääminen tapahtumasivulle POS-laitteessa](add-recommendations-control-pos-screen.md)
+[Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle](add-recommendations-control-pos-screen.md)
+
 [Tuotesuositusten yleiskatsaus](../commerce/product-recommendations.md)
+
 [Ota tuotesuositukset käyttöön](../commerce/enable-product-recommendations.md) 

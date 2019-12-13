@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: b5c54d921e2955bc866ffd1ca516169790d33127
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c8655af567ef56c535ce0e43cb76c28c58dc1eb3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024227"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814602"
 ---
 # <a name="questionnaires"></a>Kyselylomakkeet
 
@@ -44,7 +44,7 @@ Seuraavassa taulukossa on linkkejä kyselylomakkeen ydintehtävien lisätietoihi
 | Aihe| kuvaus|
 |------|------------|
 | [Lomakkeen suunnitteleminen](design-questionnaires.md)  | Tämä artikkeli sisältää tietoja kyselylomakkeen suunnittelemisesta. Suunnitteluprosessi sisältää edellytysten, vastausten ja kysymysten määrittämisen sekä niiden yhdistämisen kyselylomakkeessa. |
-| [Kyselylomakkeen jakaminen ja täyttäminen](distribute-questionnaires.md)  | Tässä artikkelissa on tietoja kyselylomakkeen jakamisesta vastaajille ja kyselylomakkeiden täyttämisestä.                                                                       |
+| [Kyselylomakkeiden jakelu ja aikataulutus](distribute-questionnaires.md)  | Tässä artikkelissa on tietoja kyselylomakkeen jakamisesta vastaajille ja kyselylomakkeiden täyttämisestä.                                                                       |
 | [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md) | Tässä artikkelissa on tietoja siitä, miten täytettyjen kyselylomakkeiden tuloksia tarkastellaan ja miten ne arvioidaan.                                                                                        |
 
 
@@ -54,7 +54,7 @@ Seuraavassa taulukossa on linkkejä kyselylomakkeen ydintehtävien lisätietoihi
 
 [Kyselylomakkeiden suunnitteleminen](design-questionnaires.md)
 
-[Kyselylomakkeiden jakelu ja täyttäminen](distribute-questionnaires.md)
+[Kyselylomakkeiden jakelu ja aikataulutus](distribute-questionnaires.md)
 
-[Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
+[Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen](evaluate-questionnaire-results.md)
 

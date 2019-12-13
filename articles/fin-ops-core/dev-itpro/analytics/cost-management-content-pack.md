@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd76fc771c370d8d769a97d3b33003f632717f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174187"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771514"
 ---
 # <a name="cost-management-power-bi-content"></a>Kustannushallinnan Power BI -sisältöpaketti
 
@@ -37,7 +37,7 @@ ms.locfileid: "2174187"
 > [!NOTE]
 > Tässä ohjeaiheessa käsitelty **kustannushintojen hallinnan** Power BI -sisältö koskee versiota Dynamics 365 Finance and Operations 8.0.
 > 
-> AppSource-sivustoon julkaistu **kustannushintojen hallinnan** Power BI -sisältöpaketti on vanhentunut. Lisätietoja tästä vanhentumisesta on kohdassa [AppSource-sivustoon julkaistut Power BI -sisältöpaketit](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> AppSource-sivustoon julkaistu **kustannushintojen hallinnan** Power BI -sisältöpaketti on vanhentunut. Lisätietoja tästä vanhentumisesta on kohdassa [Finance and Operationsin poistetut tai vanhentuneet toiminnot](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Tämä Power BI -sisältö antaa luokitellun muodon, joka auttaa seuraamaan varastojen toimintaa ja visualisoimaan niiden kautta kulkevat kustannusvirrat. Saat johdon tarvitsemia tietoja esimerkiksi kiertonopeudesta, ajasta päivinä, jonka varasto on käytettävissä, tarkkuudesta ja ABC-luokittelusta valitsemallasi koostetasolla (yritys, nimike, nimikeryhmä tai toimipaikka). Näitä tietoja voidaan käyttää myös raportin eriteltynä täydennyksenä.
 

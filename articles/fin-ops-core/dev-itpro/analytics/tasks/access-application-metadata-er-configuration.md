@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2bfe007995c894d6cc86d07ef2b52da65e32e950
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aa8444b081650e3d375e6f28f47866c8d4853721
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182735"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772460"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava Regulatory Configuration Service (RCS) -käyttäjä voi suunnitella uuden sähköisen raportoinnin ER-mallin yhdistämisen sovelluksen metatietojen avulla. Sovelluksen metatietoja käytetään ER-metatietokonfiguraatiolla, joka sisältää ulkomaankauppatapahtumien käyttöön tarkoitetun metatietojen näytejoukon. Näitä varten RCS-sovelluksessa on ensin suoritettava aiheessa [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet. Seuraavaksi on suoritettava vaiheet, jotka on käsitelty aiheessa [(ER) RCS:ssä käytettävien sovelluksen metatietojen valmistelu](prepare-application-metadata-rcs.md).
+Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava Regulatory Configuration Service (RCS) -käyttäjä voi suunnitella uuden sähköisen raportoinnin ER-mallin yhdistämisen sovelluksen metatietojen avulla. Sovelluksen metatietoja käytetään ER-metatietokonfiguraatiolla, joka sisältää ulkomaankauppatapahtumien käyttöön tarkoitetun metatietojen näytejoukon. Näitä varten RCS-sovelluksessa on ensin suoritettava aiheessa [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet. Seuraavaksi on suoritettava vaiheet, jotka on käsitelty aiheessa [RCS:ssä käytettävien sovelluksen metatietojen valmistelu](prepare-application-metadata-rcs.md).
 
 ## <a name="prerequisites"></a>Edellytykset
 1. Valitse **Kaikki työtilat** > **Sähköinen raportointi**. 
@@ -35,7 +35,7 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 
 ## <a name="import-metadata-configuration"></a>Metatietokonfiguraation tuominen 
 1. Valitse **metatietojen konfiguraatiot**. 
-2. Tuo metatiedot sisältävä ER-metatietokonfiguraatio, joka on määritetty luomaan sähköisiä ulkomaankaupan asiakirjoja. Tämä ER-metatietokonfiguraatio on viety XML-tiedostona samalla, kun toimenpiteen [(ER) Sovelluksen metatietojen valmisteleminen RCS:ssä käytettäviksi](prepare-application-metadata-rcs.md) vaiheita suoritetaan. 
+2. Tuo metatiedot sisältävä ER-metatietokonfiguraatio, joka on määritetty luomaan sähköisiä ulkomaankaupan asiakirjoja. Tämä ER-metatietokonfiguraatio on viety XML-tiedostona samalla, kun toimenpiteen [Sovelluksen metatietojen valmisteleminen RCS:ssä käytettäviksi](prepare-application-metadata-rcs.md) vaiheita suoritetaan. 
 3. Valitse **Vaihto**. 
 4. Valitse **Lataa XML-tiedostosta**. 
 5. Valitse ensin **Selaa** ja sitten Ulkomaankaupan metatiedot.xml-tiedosto. 

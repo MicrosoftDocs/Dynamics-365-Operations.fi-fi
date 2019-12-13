@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 45c0e3b569ca733ae3b70187633d2e84db5ecd87
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578215"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771163"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Luotujen ER-raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
 
@@ -113,14 +113,14 @@ Tämän esimerkin vaiheiden suorittaminen edellyttää, että suoritat ensin ohj
 13. Valitse ensin **Tallenna** ja sitten **Testi**.
 14. Testaa määritetty lauseke uudelleen valitsemalla **Testi** uudelleen.
 
-    ![Reseptien suunnittelu -sivu](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Näyttökuva Reseptien suunnittelu -sivusta")
+    ![Reseptien suunnittelu -sivu.](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Näyttökuva Reseptien suunnittelu -sivusta")
 
     > [!NOTE]
     > **Testin tulos** -välilehdestä havaitaan, että määritetty lauseke palauttaa eri päivämäärä- ja aika-arvon aina, kun se kutsutaan.
 
 15. Sulje **Reseptien suunnittelu** -sivu ja valitse sitten **Tallenna**.
 
-    ![Muodon suunnittelija -sivu](media/GER-BaselineSample-FormatMappingDesign2.PNG "Näyttökuva Muodon suunnittelija -sivusta")
+    ![Muodon suunnittelutoiminto -sivu](media/GER-BaselineSample-FormatMappingDesign2.PNG "Näyttökuva Muodon suunnittelija -sivusta")
 
 16. Sulje **Muodon suunnittelija** -sivu.
 
@@ -195,7 +195,7 @@ Viedyt perusriviasetukset voidaan viedä toiseen ympäristöön. Ympäristö on 
 
 Voit tuoda perusriviasetukset paikallisesti tallennetusta XML-tiedostosta valitsemalla XML-tiedoston valitsemalla **Sähköisen raportointimuotojen perusrivit** -sivulla ensin **Tuo** ja sitten **Selaa**.
 
-![Tuo perusriviasetukset -valintaikkuna](media/GER-BaselineSample-ImportBaseline1.PNG "Näyttökuva Tuo perusriviasetukset -valintaikkunasta")
+![Tuo perustason asetukset -valintaikkuna](media/GER-BaselineSample-ImportBaseline1.PNG "Näyttökuva Tuo perusriviasetukset -valintaikkunasta")
 
 Voit tuoda perusriviasetukset Microsoft SharePoint Serveriin tallennetusta XML-tiedostosta nykyisten tiedoston hallinta-asetusten ja valitun asiakirjatyypin perusteella valitsemalla **Sähköisen raportointimuotojen perusrivit** -sivulla **Tuo lähteestä**. Valitse sitten asiakirjatyyppi ja XML-tiedosto. SharePoint-kansion käyttämiseen tarvittava asiakirjatyyppi on määritettävä etukäteen.
 
@@ -206,5 +206,5 @@ Voit tuoda perusriviasetukset Microsoft SharePoint Serveriin tallennetusta XML-t
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [Seuraa luotuja raporttituloksia ja vertaa niitä perusarvoihin](er-trace-reports-compare-baseline.md)
-- [Tehtävän tallennus](../user-interface/task-recorder.md)
+- [Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin](er-trace-reports-compare-baseline.md)
+- [Tehtävän tallennustoiminnon resurssit](../user-interface/task-recorder.md)

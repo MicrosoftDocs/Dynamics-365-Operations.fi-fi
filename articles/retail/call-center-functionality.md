@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 2e44770af4a30f539e56d38b21c897cacd2707e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025768"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812336"
 ---
 # <a name="call-center-sales-functionality"></a>Puhelupalvelukeskuksen myyntitoiminnot
 
@@ -44,17 +44,17 @@ Tällä sivulla on linkit asianmukaisiin dokumentteihin, jotka liittyvät Retail
 
 ## <a name="configure-the-call-center"></a>Määritä puhelinkeskus
 
-[Tilaustenkäsittelyasetusten määrittäminen](set-up-order-processing-options.md)
+[Puhelinkeskuskanavien määrittäminen](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Määritä tilauksen käsittely
 
-[Petoshälytysten määrittäminen](set-up-fraud-alerts.md)
+[Puhelinkeskuksen petosilmoitusten määrittäminen ja niiden käyttäminen](set-up-fraud-alerts.md)
 
-[Manuaalisten tilausten pidot](work-with-order-holds.md)
+[Puhelinkeskustilausten pidon määrittäminen ja käyttäminen](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Määritä maksun käsittely
 
-[Puhelinkeskuksen maksutavat](work-with-payments.md)
+[Puhelinkeskusten maksutavat](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Määritä toimitustavat
 
@@ -62,10 +62,10 @@ Tällä sivulla on linkit asianmukaisiin dokumentteihin, jotka liittyvät Retail
 
 ## <a name="configure-direct-marketing"></a>Määritä suoramarkkinointi
 
-[Puhelinkeskuksen luettelot](call-center-catalogs.md)
+[Puhelinpalvelukeskuksen luettelot](call-center-catalogs.md)
 
-[RFM-analyysin määrittäminen](set-up-rfm-analysis.md)
+[RFM-analyysin (äskettäisyys, toistuvuus ja rahallinen arvo) määrittäminen](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Määritä jatkuvuusohjelmat
 
-[Puhelinkeskuksen jatkuvuusohjelman määrittäminen](set-up-continuity-program.md)
+[Jatkuvuusohjelmien määrittäminen puhelinkeskuksille](set-up-continuity-program.md)

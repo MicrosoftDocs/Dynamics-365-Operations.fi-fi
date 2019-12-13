@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: 6ed1e4afcaeee03474d4c0ce20ac7864fb11ce78
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5538aef6599eeffee6d9b075f1b9630d55cf982a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551769"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812715"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-july-2018"></a>Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (heinäkuu 2018)
 
@@ -31,11 +31,11 @@ ms.locfileid: "2551769"
 
 Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent: Core HRin uusia tai muuttuneita ominaisuuksia.
 
-## <a name="powerapps-personalization"></a>PowerAppsin mukauttaminen
+## <a name="power-apps-personalization"></a>Power Appsin mukauttaminen
 
-Talent tukee integrointia Microsoft PowerApps -palvelun kanssa. PowerApps sallii kehittäjien ja muiden kuin teknisten käyttäjien muokata yrityssovelluksia mobiililaitteille, tableteille ja verkkoon ilman, että heidän tarvitsee kirjoittaa koodia. Sovellukset, joita sinä, organisaatiosi tai laajempi ekosysteemi kehittää PowerAppsin avulla, voidaan upottaa Talent-asiakasohjelmaan tuotteen toimintojen laajentamiseksi. Voit esimerkiksi luoda sovelluksen, joka täydentää Talent -sovellusta toisesta järjestelmästä haetuilla tiedoilla.
+Talent tukee integrointia Microsoft Power Apps -palvelun kanssa. Power Apps sallii kehittäjien ja muiden kuin teknisten käyttäjien muokata yrityssovelluksia mobiililaitteille, tableteille ja verkkoon ilman, että heidän tarvitsee kirjoittaa koodia. Sovellukset, joita sinä, organisaatiosi tai laajempi ekosysteemi kehittää Power Appsin avulla, voidaan upottaa Talent-asiakasohjelmaan tuotteen toimintojen laajentamiseksi. Voit esimerkiksi luoda sovelluksen, joka täydentää Talent -sovellusta toisesta järjestelmästä haetuilla tiedoilla.
 
-Lisätietoja on kohdassa [PowerApps-sovellusten upottaminen](../fin-and-ops/get-started/embed-power-apps.md).
+Lisätietoja on kohdassa [Power Apps-sovellusten upottaminen](../fin-and-ops/get-started/embed-power-apps.md).
 
 ## <a name="ceridian-payroll-integration"></a>Ceridian-palkanlaskennan integrointi
 
@@ -46,7 +46,7 @@ Talentin ja Ceridian Dayforcen välinen integraatio on nyt saatavilla Yhdysvallo
 - Palkanlaskentatietoja, kuten maksujaksot, maksukaudet ja ansiokoodit
 - Työntekijän tiedot
 
-Lisätietoja kohdasta [Konfiguroi palkanlaskentaintegraatiosi](configure-payroll-integration.md).
+Lisätietoja kohdassa [Talentin ja Dayforcen välisen palkanlaskennan integroinnin määrittäminen](configure-payroll-integration.md).
 
 ## <a name="worker-tax-regions-have-been-expanded-beyond-the-us"></a>Työntekijän veroalueita on laajennettu Yhdysvaltojen ulkopuolelle
 

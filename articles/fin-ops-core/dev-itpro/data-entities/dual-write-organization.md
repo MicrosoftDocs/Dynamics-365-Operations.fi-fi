@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a12ab249129dce24cdca5e29d737fa9f68c0eac
-ms.sourcegitcommit: 6e0909e95f38b7487a4b7f68cc62b723f8b59bd4
+ms.openlocfilehash: 9efc63c385c31a6d8848d016c1a8689460908dcc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572446"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769657"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Organisaatiohierarkia Common Data Servicessa
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Koska Dynamics 365 Finance on talousjärjestelmä, *organisaatio* on keskeinen käsite ja järjestelmän asennusohjelma alkaa organisaatiohierarkian konfiguraatiosta. Yrityksen taloustietoja voidaan sitten seurata organisaatiotasolla ja millä tahansa organisaatiohierarkian tasolla.
 
@@ -46,85 +44,35 @@ Liiketoiminnan ekosysteemillä, joka koostuu Finance and Operations -sovellukses
 
 Organisaatiohierarkian entiteettien yhdistämismääritykset ovat käytettävissä yksisuuntaiseen tietojen synkronointiin Finance and Operations -sovelluksista Common Data Serviceen.
 
+## <a name="templates"></a>Mallit
+
+Tuotetiedot sisältävät kaiken tuotteeseen liittyvät tiedot ja tuotteen määrityksen, kuten tuotedimensiot tai seuranta- ja varastodimensiot. Seuraava taulukko osoittaa, miten yksikkökarttakokoelma luodaan synkronoimaan tuotteita ja liittyviä tietoja.
+
+Finance and Operations | Muut Dynamics 365 -sovellukset | Kuvaus
+-----------------------|--------------------------------|---
+Organisaatiohierarkian tarkoitukset | msdyn_internalorganizationhierarchypurposes | Tässä mallissa on yksisuuntainen Organisaatiohierarkian tarkoitus -yksikön synkronointi.
+Organisaatiohierarkian tyyppi | msdyn_internalorganizationhierarchytypes | Tässä mallissa on yksisuuntainen Organisaatiohierarkiatyyppi-yksikön synkronointi.
+Organisaatiohierarkia – julkaistu | msdyn_internalorganizationhierarchies | Tässä mallissa on yksisuuntainen Organisaatiohierarkia julkaistu -yksikön synkronointi.
+Toimintayksikkö | msdyn_internalorganizations | 
+Oikeushenkilöt | msdyn_internalorganizations | 
+Oikeushenkilöt | cdm_companies | Sisältää yrityksen (yhtiön) kaksisuuntaisen synkronoinnin.
+
+
 [!include [banner](../includes/dual-write-symbols.md)]
 
-## <a name="internal-organization-hierarchy-purpose"></a>Sisäinen organisaatiohierarkian tarkoitus
+[!include [Organization hierarchy purposes](dual-write/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
 
-Tässä mallissa on yksisuuntainen Organisaatiohierarkian tarkoitus -yksikön synkronointi Finance and Operationsista muihin Dynamics 365 -sovelluksiin.
+[!include [Organization hierarchy type](dual-write/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
 
-<!-- ![architecture image](media/dual-write-purpose.png) -->
-
-Lähdetaulu | Määritystyyppi | Kohdekenttä
----|---|---
-HIERARCHYTYPE | \> | msdyn\_hierarchypurposetypename
-HIERARCHYTYPE | \> | msdyn\_hierarchytype.msdyn\_name
-HIERARCHYPURPOSE | \>\> | msdyn\_hierarchypurpose
-IMMUTABLE | \>\> | msdyn\_immutable
-SETASDEFAULT | \>\> | msdyn\_setasdefault
-
-## <a name="internal-organization-hierarchy-type"></a>Sisäinen organisaatiohierarkian tyyppi
-
-Tässä mallissa on yksisuuntainen Organisaatiohierarkian tyyppi -yksikön synkronointi Finance and Operationsista muihin Dynamics 365 -sovelluksiin.
-
-<!-- ![architecture image](media/dual-write-type.png) -->
-
-Lähdetaulu | Määritystyyppi | Kohdekenttä
----|---|---
-NIMI | \> | msdyn\_name
-
-## <a name="internal-organization-hierarchy"></a>Sisäinen organisaatiohierarkia
-
-Tässä mallissa on yksisuuntainen Julkaistu organisaatiohierarkia -yksikön synkronointi Finance and Operationsista muihin Dynamics 365 -sovelluksiin.
-
-<!-- ![architecture image](media/dual-write-organization.png) -->
-
-Lähdetaulu | Määritystyyppi | Kohdekenttä
----|---|---
-VALIDTO | \> | msdyn\_validto
-VALIDFROM | \> | msdyn\_validfrom
-HIERARCHYTYPE | \> | msdyn\_hierarchytypename
-PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentpartyid
-CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childpartyid
-HIERARCHYTYPE | \> | msdyn\_hierarchytypeid.msdyn\_name
-CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childid.msdyn\_partynumber
-PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentid.msdyn\_partynumber
+[!include [Organization hierarchy - published](dual-write/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
 
 ## <a name="internal-organization"></a>Sisäinen organisaatio
 
 Sisäisen organisaation tiedot ovat Common Data Servicessa peräisin kahdesta yksiköstä: **toimintayksikkö** ja **yritykset**.
 
-<!-- ![architecture image](media/dual-write-operating-unit.png) -->
+[!include [Operating unit](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
 
-<!-- ![architecture image](media/dual-write-legal-entities.png) -->
+[!include [Legal entities](dual-write/LegalEntities-msdyn-internalorganizations.md)]
 
-### <a name="operating-unit"></a>Toimintayksikkö
+[!include [Legal entities](dual-write/LegalEntities-Companies.md)]
 
-Lähdetaulu | Määritystyyppi | Kohdekenttä
----|---|---
-LANGUAGEID | \> | msdyn\_languageid
-NAMEALIAS | \> | msdyn\_namealias
-NIMI | \> | msdyn\_name
-PARTYNUMBER | \> | msdyn\_partynumber
-OPERATINGUNITTYPE | \>\> | msdyn\_type
-
-### <a name="legal-entity"></a>Oikeushenkilö
-
-Lähdetaulu | Määritystyyppi | Kohdekenttä
----|---|---
-NAMEALIAS | \> | msdyn\_namealias
-LANGUAGEID | \> | msdyn\_languageid
-NIMI | \> | msdyn\_name
-PARTYNUMBER | \> | msdyn\_partynumber
-none | \>\> | msdyn\_type
-LEGALENTITYID | \> | msdyn\_companycode
-
-## <a name="company"></a>Yritys 
-
-Sisältää oikeushenkilön (yrityksen) kaksisuuntaisen synkronoinnin Finance and Operationsin ja muiden Dynamics 365 -sovellusten välillä.
-
-<!-- ![architecture image](media/dual-write-company.png) -->
-
-Lähdetaulu | Määritystyyppi | Kohdekenttä
----|---|---
-NIMI | = | cdm\_name
-LEGALENTITYID | = | cdm\_companycode

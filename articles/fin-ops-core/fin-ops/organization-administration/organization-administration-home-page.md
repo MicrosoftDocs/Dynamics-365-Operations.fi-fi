@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36784311294f80f56f680cd6d14cc989b629ba12
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b1b519d116a55c255cf90d9478ee1714de90264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177625"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811317"
 ---
 # <a name="organization-administration-home-page"></a>Organisaation hallinnon aloitussivu
 
@@ -36,7 +36,7 @@ Suuri osa tässä luetellusta sisällöstä koskee **Organisaationhallinta**-mod
 
 Numerosarjoilla luodaan luettavia, yksilöllisiä tunnisteita niitä edellyttäville päätietojen tietueille ja tapahtumatietueille. Tunnisteen vaativaa päätiedon tietuetta tai tapahtumatietuetta kutsutaan nimellä *viite*. Ennen kuin voit luoda viitteelle uusia tietueita, määritä numerosarja ja kohdista se viitteeseen.
 
-- [Numerosarjan yleiskatsaus](number-sequence-overview.md)
+- [Numerosarjojen yleiskatsaus](number-sequence-overview.md)
 - [Numerosarjojen määrittäminen ohjatulla toiminnolla](tasks/set-up-number-sequences-wizard.md) (tehtäväopas)
 - [Yksittäisten numerosarjojen määrittäminen](tasks/set-up-number-sequences-individual-basis.md) (tehtäväopas)
 
@@ -46,7 +46,7 @@ Organisaatio on joukko ihmisiä, jotka työskentelevät yhdessä liiketoimintapr
 
 Ennen kuin määrität organisaation ja organisaatiohierarkiat, varmista, että suunnittelet liiketoimintasi mallinnuksen. Organisaatiomallilla on huomattava vaikutus toteutukseen ja liiketoimintaprosesseihin.
 
-- [Organisaatiot ja organisaatiohierarkiat](organizations-organizational-hierarchies.md)
+- [Organisaatiot ja organisaatiohierarkiat – yleiskatsaus](organizations-organizational-hierarchies.md)
 - [Organisaatiohierarkian suunnitteleminen](plan-organizational-hierarchy.md)
 - [Luo organisaatiohierarkia](tasks/create-organization-hierarchy.md) (tehtäväopas)
 - [Luo yritys](tasks/create-legal-entity.md) (tehtäväopas)
@@ -58,8 +58,8 @@ Yleisen osoitekirja on keskitetty perustietojen varasto, joka on tallennettava k
 
 Kun olet luonut yleisen osoitekirjan, voit luoda tarvittavia lisäosoitekirjoja, kuten oman osoitekirjan organisaation kullekin yritykselle tai toimialalle.
 
-- [Yleinen osoitekirja](overview-global-address-book.md)
-- [Yleisen osoitekirjan ja lisäosoitekirjojen määrittämissuunnitelma](plan-configuration-global-address-book-additional-address-books.md)
+- [Yleisen osoitekirjan yleiskatsaus](overview-global-address-book.md)
+- [Yleisen osoitekirjan ja muiden osoitekirjojen suunnitteleminen](plan-configuration-global-address-book-additional-address-books.md)
 - [Yleisen osoitekirjan määrittäminen](tasks/configure-global-address-book.md)
 - [Osoitekirjat – usein kysytyt kysymykset](qa-address-books.md)
 
@@ -67,10 +67,10 @@ Kun olet luonut yleisen osoitekirjan, voit luoda tarvittavia lisäosoitekirjoja,
 
 Työnkulku on järjestelmä, jonka avulla voit luoda yksittäisiä työnkulkuja eli liiketoimintaprosesseja. Kun luot työnkulun, määrität, kuinka asiakirja kulkee tai siirtyy järjestelmässä kuvaamalla kenen on suoritettava tehtävä loppuun, tehtävä päätös tai hyväksyttävä asiakirja.
 
-- [Työnkulun yleiskatsaus](overview-workflow-system.md)
+- [Työnkulkujärjestelmän yleiskatsaus](overview-workflow-system.md)
 - [Työnkulun elementit](workflow-elements.md)
-- [Työnkulkutehtävät](workflow-actions.md)
-- [Työnkulun luominen](create-workflow.md)
+- [Toiminnot hyväksyntäprosessien työnkulussa](workflow-actions.md)
+- [Työnkulkujen luonnin yleiskatsaus](create-workflow.md)
 
 ## <a name="electronic-signatures"></a>Sähköiset allekirjoitukset
 
@@ -81,18 +81,18 @@ Voit käyttää sähköisiä allekirjoituksia kriittisissä liiketoimintaprosess
 - [Sähköisten allekirjoitusten yleiskatsaus](electronic-signature-overview.md)
 - [Sähköisten allekirjoitusten määrittäminen](tasks/set-up-electronic-signatures.md) (tehtäväopas)
 
-## <a name="case-management"></a>Palvelupyynnön hallinta
+## <a name="case-management"></a>Palvelupyyntöjen hallinta
 
 Suunnittelemalla, seuraamalla ja analysoimalla tapauksia voit luoda tehokkaita ratkaisuja, joita voidaan käyttää vastaavissa tapauksissa. Esimerkiksi kun asiakaspalveluedustajat tai henkilöhallinnon työntekijät luovat tapauksia, he löytävät tietoartikkeleista tiedot tapausten kanssa toimimiseen ja niiden ratkaisemiseen.
 
 - [Palvelupyynnön hallinnan yleiskatsaus](cases.md)
-- [Palvelupyynnön käyttöoikeuksien, prosessien ja luokkien määrittäminen](plan-case-management.md)
+- [Palvelupyyntöluokan käyttöoikeuksien, palvelupyyntöprosessien ja palvelupyyntöluokkien suunnitteleminen](plan-case-management.md)
 
 ## <a name="record-templates"></a>Tietuemallit
 
 Tietuemallien avulla voit luoda tietueita nopeammin. Voit luoda tietuemallin, jolloin usein käytettyjen kenttien arvoja ei tarvitse lisätä erikseen kussakin uudessa tietueessa.
 
-- [Tietuemallit](record-templates.md)
+- [Tietuemallien yleiskatsaus](record-templates.md)
 - [Tietuemallin luonti helpottamaan tietojen kirjaamista](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (Tehtäväopas)
 - [Uuden tietueen luonti tietuemallin avulla](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Tehtäväopas)
 

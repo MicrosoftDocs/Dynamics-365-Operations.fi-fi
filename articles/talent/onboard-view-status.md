@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: fe6da4599940a0b7812dc9d3f66157715c45f62d
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009828"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814717"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Työntekijöiden perehdyttämisen ja tehtävien tilan näyttäminen
 
@@ -54,6 +54,6 @@ Microsoft Dynamics 365 Talent: Onboardin avulla voit tarkastella, miten uudet ty
 ### <a name="see-also"></a>Lisätietoja
 
 - [Onboard-sovelluksen kokeileminen tai ostaminen](https://dynamics.microsoft.com/talent/onboard/)
-- [Uutta](./whats-new.md)
-- [Julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Tuen saaminen](./talent-support.md)
+- [Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet](./whats-new.md)
+- [Julkaisusuunnitelmat](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft iDynamics 365 Talentin tuki](./talent-support.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2922b00dffe8e99f8331d7aaa7e2f1b7dc4f9ea6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 405af4e3e122953bbfa74e7e91d2feef8f068708
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177564"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772625"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Pankkitilin täsmäytyksen lisätoimintojen määritysprosessi
 
@@ -31,7 +31,7 @@ ms.locfileid: "2177564"
 
 Voit tuoda pankkitilin täsmäytyksen lisätoimintojen avulla sähköiset tiliotteet ja täsmäyttää ne automaattisesti pankkitapahtumien kanssa Microsoft Dynamics 365 Financeissa. Tässä artikkelissa käsitellään täsmäytysprosessien määrittämistä.  
 
-Ennen kehittyneen pankin täsmäytystoiminnon käyttöä on määritettävä monta asiaa. Saat lisätietoja pankin tiliotteen tuonnin määrittämisestä ohjeaiheesta [Määritä pankin tiliotteen tuontiprosessi](set-up-advanced-bank-reconciliation-import-process.md).  Täsmäytysprosessin määrittämisen vaatimukset on kuvattu alla.
+Ennen kehittyneen pankin täsmäytystoiminnon käyttöä on määritettävä monta asiaa. Lisätietoja tiliotteen tuonnin määrittämisestä on kohdassa [Pankkitilin täsmäytyksen viennin lisätoimintojen määrittäminen](set-up-advanced-bank-reconciliation-import-process.md).  Täsmäytysprosessin määrittämisen vaatimukset on kuvattu alla.
 
 ## <a name="transaction-codes"></a>Tapahtumakoodit
 Tapahtumakoodeja voidaan käyttää osana pankkitilin täsmäytyksen vastaavuussääntöjä. Tapahtumakoodit auttavat yhdistämään vain saman tyyppisiä tapahtumia Financen ja tiliotteen välillä. Määritä tämän tyyppisen vastaavuuden määrittämiseksi ensin Financesta lähtevien pankkitapahtumien tapahtumatyypit ja yhdistä sitten nämä tyypit pankin käyttämiin tiliotteen tapahtumakoodeihin. Pankkitapahtumien tapahtumatyypit määritetään **Pankkitapahtuman tyyppi** -sivulla. Tässä määrität myös päätilin, jota käytetään kyseiseen tapahtumatyyppiin liittyvissä kirjauksissa. 

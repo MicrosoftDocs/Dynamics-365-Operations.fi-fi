@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0588ad24cb28a32557361e1a2e5391502a8b46d7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250688"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814258"
 ---
 # <a name="master-planning-home-page"></a>Pääsuunnittelun aloitussivu
 
@@ -39,9 +39,9 @@ Pääsuunnittelu laskee tarpeet ja luo suunnitellut tilaukset näiden tietojen a
 
 Kolme pääsuunnitteluprosessia ovat seuraavat:
 
--  **Pääsuunnittelu** - pääsuunnitelma laskee nettotarpeet. Se perustuu toteutuneet tämän hetkisiin tilauksiin. Tämän avulla yritykset voivat ohjata varaston täydennystä lyhyellä aikavälillä päivittäin. Pääsuunnittelua kutsutaan myös *nettotarvesuunnitelmaksi*. Lisätietoja on kohdassa [Pääsuunnitelma](master-plans.md). 
+-  **Pääsuunnittelu** - pääsuunnitelma laskee nettotarpeet. Se perustuu toteutuneet tämän hetkisiin tilauksiin. Tämän avulla yritykset voivat ohjata varaston täydennystä lyhyellä aikavälillä päivittäin. Pääsuunnittelua kutsutaan myös *nettotarvesuunnitelmaksi*. Lisätietoja on kohdassa [Pääsuunnitelmien yleiskatsaus](master-plans.md). 
 
--  **Ennusteen suunnittelu** - ennusteajoitus laskee bruttotarpeet. Se perustuu tuleviin arvioihin (tai ennusteisiin). Yritykset voivat käyttää tätä materiaalien ja kapasiteetin pitkäaikaissuunnittelussa. Lisätietoja on kohdassa [Ennusteen suunnittelu](introduction-demand-forecasting.md). 
+-  **Ennusteen suunnittelu** - ennusteajoitus laskee bruttotarpeet. Se perustuu tuleviin arvioihin (tai ennusteisiin). Yritykset voivat käyttää tätä materiaalien ja kapasiteetin pitkäaikaissuunnittelussa. Lisätietoja on kohdassa [Kysynnän ennusteen yleiskatsaus](introduction-demand-forecasting.md). 
 
 -  **Konsernin sisäinen pääsuunnittelu** - Konsernin sisäinen pääsuunnitelma laskee yritysten nettotarpeet. Se yhdistää kysynnän ja tarjonnan yritysten välillä niin lyhytaikaisen, kiinteän kysynnän ja tarjonnan kuin myös pitkäaikaisen ja suunnitellun (mutta ei vielä kiinteän) kysynnän ja tarjonnan osalta. Lisätietoja on kohdassa [Konsernin sisäinen pääsuunnittelu](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (vaatii CustomerSource-tilin). 
 
@@ -57,18 +57,18 @@ Seuraavassa oppimiskartassa on esillä tärkeitä käsitteitä ja tehtäviä, jo
 
 ## <a name="quick-links"></a>Pikalinkit
 
-- [Pääsuunnitelmat](master-plans.md)  
+- [Pääsuunnitelmien yleiskatsaus](master-plans.md)  
 - [Rajoitetun suunnitelman luominen](./tasks/constrained-plan.md)
-- [Oheistuotteiden materiaalisuunnitelman luominen](./tasks/create-material-plan-co-products.md)
-- [Pääsuunnittelu ja multisite-toiminnot](master-plan-multisite-functionality.md)
-- [Konsernin sisäisen suunnitelman luominen](./tasks/create-intercompany-plan.md)
+- [Rinnakkaistuotteiden materiaalisuunnitelman luominen](./tasks/create-material-plan-co-products.md)
+- [Pääsuunnittelu ja multisite-toiminnot – yleiskatsaus](master-plan-multisite-functionality.md)
+- [Konserniyritysten välisen suunnitelman luominen](./tasks/create-intercompany-plan.md)
 - [Kysynnän ennustepalveluiden yleiskatsaus](introduction-demand-forecasting.md)
-- [Vähennysavaimet](reduction-keys.md)
+- [Ennusteen vähennysavaimet](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Lisäresurssit
 
 ### <a name="roadmaps"></a>Tiekartat
-[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustossa on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
+[Microsoft Dynamics 365 Tiekartta](https://roadmap.dynamics.com/) -sivustolla on lisätietoja julkaistuista ja kehitteillä olevista uusista toiminnoista.
 
 ### <a name="blogs"></a>Blogit
 Pääsuunnittelua sekä muita ratkaisuja koskevia mielipiteitä, uutisia ja muita tietoja on kohdissa [Dynamics AX:n valmistuksen tutkimus- ja kehitysryhmän blogi](https://blogs.msdn.microsoft.com/axmfg) ja [Dynamics AX:n toimitusketjun hallinnan tutkimus- ja kehitysryhmän blogi](https://blogs.msdn.microsoft.com/dynamicsaxscm).

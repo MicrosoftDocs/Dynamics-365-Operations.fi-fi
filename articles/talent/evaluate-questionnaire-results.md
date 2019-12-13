@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 38b694b6dd4b1b9a198452e409bd64d7934b4685
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6be2f79d4f0c234028c0cc98b81cfa8ff4fcc992
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517932"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813980"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen
 
@@ -57,7 +57,8 @@ Kun vastaajat ovat täyttäneet kyselylomakkeen, voit tarkastella valmiiden vast
 -   **Vastausraportti** – Tämä raportti sisältää vastaajan kyselylomakkeen kuhunkin kysymykseen valitsemat vastaukset.
 -   **Väärät vastaukset** – Tämä raportti sisältää vastaajan valitsemiin vääriin vastauksiin liittyvät tiedot.
 
-**Huomautus:** **Tulosraportti** on käytettävissä vain, jos kyselylomakkeessa on käytetty tulosryhmiä ja jos **Kyselylomakkeet**-sivun **tulossivu** on valittu. **Vastausraportti** ja **väärien vastausten raportti** ovat käytettävissä vain, jos **Kyselylomakkeet**-sivun **vastausraportti** on valittu.
+> [!NOTE]
+> **Tulokset**-raportti on käytettävissä vain, jos kyselylomakkeessa on käytetty tulosryhmiä ja jos **Kyselylomakkeet**-sivun **Tulokset**-sivu on valittu. **Vastausraportti** ja **väärien vastausten raportti** ovat käytettävissä vain, jos **Kyselylomakkeet**-sivun **vastausraportti** on valittu.
 
 ## <a name="questionnaire-statistics"></a>Kyselylomakkeen tilastotiedot
 Voit käyttää kyselylomakkeen tilastotietoja, kun haluat analysoida täytettyjen kyselylomakkeiden tulokset määrittämiesi laskelmien perusteella. Voit määrittää laskelmat seuraavien tehtävien avulla.
@@ -77,7 +78,7 @@ Määrittämäsi asetukset tallennetaan ja niitä voidaan käyttää tulosten ka
 
 [Kyselylomakkeiden suunnitteleminen](design-questionnaires.md)
 
-[Kyselylomakkeiden käyttäminen](questionnaires.md)
+[Kyselylomakkeet](questionnaires.md)
 
-[Kyselylomakkeiden jakelu ja täyttäminen](distribute-questionnaires.md)
+[Kyselylomakkeiden jakelu ja aikataulutus](distribute-questionnaires.md)
 

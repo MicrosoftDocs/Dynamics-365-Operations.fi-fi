@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1643e7fb3128faf6ad638d4cdad313b3667463b1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6cdfbbd7d4f41503e97620b8738679ad572b2a4a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181677"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771234"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Seuraa luotuja raporttituloksia ja vertaa niitä perusarvoihin
 
@@ -44,10 +44,10 @@ Saat lisätietoja tästä toiminnosta toistamalla tehtäväoppaat **ER Luo rapor
 
 Tässä menettelyssä käsitellään tapaa, jolla ER-kehys määritetään keräämään tietoja ER-muodon suorittamisista ja arvioimaan sitten kyseisten suoritusten tulokset. Tämän arvioinnin yhteydessä luotuja asiakirjoja verrataan niiden perusrivitiedostoihin. Tässä esimerkissä luodaan pakollisia ER-konfiguraatioita malliyritykselle Litware, Inc. Nämä ohjeet on tarkoitettu käyttäjille, joille on määritetty järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli. Nämä vaiheet voidaan suorittaa minkä tahansa tietojoukon avulla.
 
-Tämän esimerkin vaiheiden suorittamista varten on ensin suoritettava ohjeaiheessa [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet.
+Tämän esimerkin vaiheiden suorittamista varten on ensin suoritettava ohjeaiheessa [Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet.
 
 1. Valitse **Organisaation hallinto** \> **Työtilat** \> **Sähköinen raportointi**.
-2. Tarkista **Lokalisointikonfiguroinnit**-sivun **Konfiguraation lähteet** -osassa, että näyteyrityksen Litware, Inc. konfiguraation lähde on luettelossa ja että se on merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita kohdan [Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheet.
+2. Tarkista **Lokalisointikonfiguroinnit**-sivun **Konfiguraation lähteet** -osassa, että näyteyrityksen Litware, Inc. konfiguraation lähde on luettelossa ja että se on merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita kohdan [Konfiguraation lähteiden luominen ja niiden merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) vaiheet.
 
 ### <a name="configure-document-management-parameters"></a>Tiedostonhallintaparametrien konfigurointi
 
@@ -55,7 +55,7 @@ Tämän esimerkin vaiheiden suorittamista varten on ensin suoritettava ohjeaihee
 2. Anna **Luokka**-kentässä **Liitä tiedosto**.
 3. Anna **Ryhmä**-kentässä **Tiedosto**.
 
-![Tiedostotyypit-sivu](media/GER-BaselineSample-SetupDocumentType.PNG "Näyttökuva Tiedostotyypit-sivusta")
+![Asiakirjatyypit-sivu](media/GER-BaselineSample-SetupDocumentType.PNG "Näyttökuva Tiedostotyypit-sivusta")
 
 > [!NOTE]
 > Saman niminen uusi tiedostotyyppi on määritettävä jokaiselle tietojoukolle, jossa aiot käyttää ER-perusrivitaulua.
@@ -64,11 +64,11 @@ Tämän esimerkin vaiheiden suorittamista varten on ensin suoritettava ohjeaihee
 
 1. Valitse **Sähköisen raportointi** -työtilan **Liittyvät linkit** -osassa **Sähköisen raportoinnin parametrit**.
 
-    ![Sähköinen raportointi -työtila](media/GER-BaselineSample-ERWorkspace.PNG "Näyttökuva Sähköinen raportointi -työtilasta")
+    ![Sähköisen raportoinnin työtila](media/GER-BaselineSample-ERWorkspace.PNG "Näyttökuva Sähköinen raportointi -työtilasta")
 
 2. Anna tai valitse juuri luomasi asiakirjatyyppi **Liitteet**-välilehden **Perusrivi**-kenttä.
 
-    ![Sähköisen raportoinnin parametrit -sivun Liitteet-välilehti](media/GER-BaselineSample-ERParameters.PNG "Näyttökuva Sähköinen raportoinnin parametrit -sivusta")
+    ![Sähköisen raportoinnin parametrit -sivun Liitteet-välilehti](media/GER-BaselineSample-ERParameters.PNG "Näyttökuva sähköisen raportoinnin parametreista")
 
 3. Valitse **Tallenna** ja sulje sitten **Sähköisen raportoinnin parametrit** -sivu.
 
@@ -131,7 +131,7 @@ Tässä esimerkissä luodaan yksinkertainen ER-muoto XML-tiedostojen luontia var
     2. Kirjoita **Nimi**-kenttään **Tunnus**.
     3. Valitse **OK**.
 
-    ![Muodon suunnittelija -sivu](media/GER-BaselineSample-FormatLayoutDesign.PNG "Näyttökuva Muodon suunnittelija -sivusta")
+    ![Muodon suunnittelutoiminto -sivu](media/GER-BaselineSample-FormatLayoutDesign.PNG "Näyttökuva Muodon suunnittelija -sivusta")
 
 8. Valitse **Yhdistämismääritys**-välilehdessä **Poista**.
 9. Valitse **Lisää pääkansio**.
@@ -144,7 +144,7 @@ Tässä esimerkissä luodaan yksinkertainen ER-muoto XML-tiedostojen luontia var
 11. Valitse puussa **Tuloste\\Asiakirja\\Tunnus**.
 12. Valitse ensin **Sidonta** ja sitten **Tallenna**.
 
-![Muodon suunnittelija -sivu](media/GER-BaselineSample-FormatMappingDesign.PNG "Näyttökuva Muodon suunnittelija -sivusta")
+![Muodon suunnittelutoiminto -sivu](media/GER-BaselineSample-FormatMappingDesign.PNG "Näyttökuva Muodon suunnittelija -sivusta")
 
 Määritetty muoto luo XML-tiedoston suunnitellun rakenteen perusteella. Tämä XML-tiedosto sisältää **Juuri**-elementin, jonka**Tunnus**-määrite on määritetty käyttäjän ER-ajonaikaisuus-valintaikkunaan annettavaksi arvoksi.
 
@@ -166,7 +166,7 @@ Määritetty muoto luo XML-tiedoston suunnitellun rakenteen perusteella. Tämä 
 2. Määritä **Suorita virheenkorjaustila** -asetukseksi **Kyllä**.
 3. Valitse **OK**.
 
-![Käyttäjän parametrit -valintaruutu](media/GER-BaselineSample-ERUserParameters.PNG "Näyttökuva Käyttäjän parametrit -valintaikkunasta")
+![Käyttäjän parametrit -valintaikkuna](media/GER-BaselineSample-ERUserParameters.PNG "Näyttökuva Käyttäjän parametrit -valintaikkunasta")
 
 ### <a name="add-a-new-baseline-for-designed-er-format"></a>Uuden perusrivitiedoston lisääminen suunnitellulle ER-muodolle
 
@@ -215,7 +215,7 @@ Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 5. Valitse **OK**.
 6. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Määritysten virheenkorjauslokit**.
 
-    ![Sähköisen raportoinnin ajolokit -sivu](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Näyttökuva sähköisen raportoinnin ajolokit -sivusta")
+    ![Sähköisen raportoinnin ajolokit -sivulla](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Näyttökuva Sähköisen raportoinnin ajolokit -sivusta")
 
     > [!NOTE]
     > Suorituslokissa sisältää tietoja luodun tiedoston ja määritetyn perusrivin vertailutuloksista. Tässä esimerkissä loki ilmaisee, että luotu tiedosto ja perusaikataulu ovat samanlaisia.
@@ -231,7 +231,7 @@ Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 5. Valitse **OK**.
 6. Valitse **Organisaation hallinto** \> **Sähköinen raportointi** \> **Määritysten virheenkorjauslokit**.
 
-    ![Sähköisen raportoinnin ajolokit -sivu](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Näyttökuva sähköisen raportoinnin ajolokit -sivusta")
+    ![Sähköisen raportoinnin ajolokit -sivulla](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Näyttökuva Sähköisen raportoinnin ajolokit -sivusta")
 
     > [!NOTE]
     > Suorituslokissa sisältää tietoja luodun tiedoston ja määritetyn perusrivin vertailutuloksista. Tässä esimerkissä loki ilmaisee, että luotu tiedosto ja perusaikataulu ovat erilaisia.
@@ -243,4 +243,4 @@ Perusrivi lisätään **ER-perusrivien oppimismuoto** -muotoon.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [ER-kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md)
+- [Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08141615e36c7bfe8b8a7984322dbb985568ee51
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177574"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772073"
 ---
 # <a name="budget-planning-data-allocation"></a>Budjettisuunnittelun tietojen kohdistus
 
@@ -36,28 +36,28 @@ Voit jakaa tiedot budjettisuunnitelmaan useilla eri tavoilla arvioitujen summien
 ## <a name="allocation-methods"></a>Kohdistusmenetelmät
 Kolme kohdistusmenetelmää (Kohdista kausille, Kohdista dimensioille ja Käytä kirjanpidon kohdistussääntöjä) voivat luoda budjettisuunnitelman rivejä, jotka perustuvat saman budjettisuunnitelman riveihin. Kolme muuta menetelmään (Yhdistä, Jaa ja Kopioi budjettisuunnitelmasta) voivat luoda budjettisuunnitelman rivejä muissa budjettisuunnitelmissa. Jokaiselle kuudelle kohdistusmenetelmälle voi määrittää kohdeskenaarion. Kohdeskenaario voi olla sama kuin lähdeskenaario, mutta se voi olla myös erilainen. Lisäksi voit määrittää, lisätäänkö uudet rivit budjettisuunnitelmaan vai korvataanko budjettisuunnitelman nykyiset rivit.
 
-[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+[![Kohdista kausille -kohdistusmenetelmä](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Kohdista kausille** – Kaudenkohdistusluokkaa voi käyttää kohdistettaessa lähdebudjettiskenaarion budjettisuunnitelman rivit kohdeskenaarion kausiin. Lähdesumma liitetään kohdeskenaarion useisiin riveihin kaudenkohdistusluokassa määritetyn prosenttiosuuden ja päivämäärän perusteella.         
 
-[![AllocateToDimensions](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
+[![Kohdista dimensioille -kohdistusmenetelmä](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Kohdista dimensioille** – Budjettisuunnitelman rivit kohdistetaan lähdebudjettisuunnittelun skenaariosta kohdeskenaarion yhteen tai useaan riviin valitussa budjetin kohdistusehdossa määritettyjen prosenttiosuuksien ja taloushallinnon dimensioiden perusteella.           
 
-![AggregateChart](./media/aggregatechart-300x230.png)
+![Koostekaavio](./media/aggregatechart-300x230.png)
 **Yhdistä** – Budjettisuunnitelman rivit yhdistetään liittyvien (alitason) budjettisuunnitelmien lähdebudjettiskenaariosta päätason budjettisuunnitelman kohdeskenaarioon. Tämän menetelmän avulla organisaation alemmalla tasolla valmistellut budjettisummat voidaan konsolidoida korkeammalla tasolla.          
 
-[![DistributeChart](./media/distributechart-300x230.png)](./media/distributechart.png)
+[![Jakokaavio](./media/distributechart-300x230.png)](./media/distributechart.png)
 **Jaa** – Budjettisuunnitelman rivit jaetaan päätason budjettisuunnitelman lähdebudjettisuunnittelun skenaariosta liittyvän (alitason) budjettisuunnitelmien kohdeskenaarioon liittyvien suunnitelmien organisaatioyksiköiden taloushallinnon dimensioiden perusteella. Tämän menetelmän avulla organisaation korkeammalla tasolla valmistellut budjettisummat voidaan jakaa paikallisesti tarkastelua varten.           
 
-[![LedgerAllocationRules](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
+[![Kirjanpidon kohdistussäännöt](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
 **Käytä kirjanpidon kohdistussääntöjä** – Budjettisuunnitelman rivit jaetaan lähdebudjettisuunnittelun skenaariosta kohdebudjettiskenaarioon valitun kirjanpidon kohdistussäännön perusteella. 
 
-[![CopyFromBudgetPlan](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
+[![Kopioi budjettisuunnitelmasta](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
 **Kopioi budjettisuunnitelmasta** – Budjettirivit luodaan jaon kohdistusmenetelmän tapaan kohteessa liittyvän budjettisuunnitelman rivien perusteella. Tässä menetelmässä lähdebudjettisuunnitelman ei kuitenkaan tarvitse olla päätaso, mutta se voi olla mikä tahansa budjettisuunnitelman hierarkian korkeampi taso. Tämä kohdistusmenetelmä on hyödyllinen, jos konsolidoidut summat on alun perin budjetoitu paljon korkeammalla tasolla, mutta jotka on siirrettävä organisaation alemmalle tasolle yksityiskohtaista tarkastelua ja oikaisua varten ennen ylemmän tason hyväksynnän saavuttamista.          
 
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>Kohdistusmenetelmien käyttäminen budjettisuunnitelmassa
 Voit suorittaa kohdistuksia budjettisuunnitelman sivulla, kun valitset kohdistettavat rivit ja valitset sitten **Kohdista budjetti**.
 
-[![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
+[![Kohdista budjetti -painike](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 Valitse seuraavaksi kohdistusmenetelmä. Tämän jälkeen määritetään jäljellä olevat kentät valitun menetelmän mukaan. Nämä kentät sisältävät budjettisuunnitelman tietojen lähteen ja kohteen sekä vaihtoehdon, joka mahdollistaa lähteen kertomisen määritetyllä kertoimella kohdesummien luomisen yhteydessä. Tämä yksinkertaistaa joukko-oikaisua. Voit määrittää myös **Liitä suunnitelmaan** -vaihtoehdon. Korvaa aiemmin luodut budjettisuunnitelman rivit valitsemalla **Ei** tai säilytä aiemmin luodut budjettisuunnitelman rivit ja lisää uusia rivejä kohdistetuille summille valitsemalla **Kyllä**.
 
@@ -70,7 +70,7 @@ Seuraavaksi luodaan vaiheen kohdistus **Budjettisuunnittelun konfigurointi** -si
 
 Lopuksi lisätään budjettisuunnittelun vaiheen kohdistuksen haluttuun työnkulun vaiheeseen automaattinen tehtävä. Seuraavassa esimerkissä työnkulkuun on lisätty kaksi budjettisuunnittelun vaiheen kohdistusta (näkyvät punaisina).
 
-[![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+[![Budjetin suunnitteluvaiheen kohdistukset](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
 
 
 

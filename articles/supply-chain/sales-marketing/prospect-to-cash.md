@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1a96b7cfa57ec72b25f21d94fadb2fbf9bc6ea3b
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: fb5abb983811ce736e3494bc85e8d9b23a2e373c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251351"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814072"
 ---
 # <a name="prospect-to-cash"></a>Prospektista käteiseksi
 
@@ -36,12 +36,12 @@ Lisätietoja Prospektista käteiseksi -integroinnista on lyhyessä YouTube-video
 
 Nykyisessä versiossa prospektista käteiseksi -ratkaisu mahdollistaa seuraavat suoran synkronoinnin tyypit:
 
-- [Tilien ylläpito Salesissa ja tilien synkronointi suoraan Salesista Supply Chain Managementiin](accounts-template-mapping-direct.md)
-- [Tuotteiden ylläpito Supply Chain Managementissa ja tuotteiden synkronointi suoraan Salesiin](products-template-mapping-direct.md)
-- [Yhteyshenkilöiden ylläpito Salessa ja yhteyshenkilöiden tai asiakkaiden synkronointi suoraan Supply Chain Managementiin](contacts-template-mapping-direct.md)
-- [Myyntitarjousten synkronointi suoraan Salesista Supply Chain Managementiin](sales-quotation-template-mapping-sales-fin.md)
+- [Tilien synkronointi suoraan Salesin tuotteista Supply Chain Managementin asiakkaisiin](accounts-template-mapping-direct.md)
+- [Supply Chain Managementin tuotteiden synkronointi suoraan Salesin tuotteisiin](products-template-mapping-direct.md)
+- [Salesin yhteyshenkilöiden synkronointi suoraan Supply Chain Managementin yhteyshenkilöihin tai asiakkaisiin](contacts-template-mapping-direct.md)
+- [Myyntitarjousten otsikoiden ja rivien synkronointi suoraan Salesista Supply Chain Managementiin](sales-quotation-template-mapping-sales-fin.md)
 - [Myyntitilausten synkronointi suoraan Salesin ja Supply Chain Managementin välillä](sales-order-template-mapping-direct-two-ways.md)
-- [Myyntilaskujen synkronointi suoraan Supply Chain Managementista Salesiin](sales-invoice-template-mapping-direct.md)
+- [Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Supply Chain Managementista Salesiin](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-supply-chain-management"></a>Supply Chain Managementin järjestelmävaatimukset
 Prospektista käteiseksi -integraatio tuetaan seuraavissa versioissa:

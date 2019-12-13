@@ -1,5 +1,5 @@
 ---
-title: Ehdokkaiden rekrytointi Microsoft Dynamics 365 Talent – Attractin kykypoolien avulla
+title: Hanki osaajia kykypoolien avulla Attractissa
 description: Tässä ohjeaiheessa käsitellään kykypoolien luontia ja määrittämistä Microsoft Dynamics 365 Talent – Attractissa.
 author: andreabichsel
 manager: AnnBe
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 454ba987eef924d520af17e8b9ae694fe9b82ec2
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ea10ccd5e4b1f1ffbb8f736e886240e223a4eeb3
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551115"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833018"
 ---
-# <a name="source-candidates-with-talent-pools-in-microsoft-dynamics-365-talent---attract"></a>Ehdokkaiden rekrytointi Microsoft Dynamics 365 Talent – Attractin kykypoolien avulla
+# <a name="source-candidates-with-talent-pools-in-attract"></a>Hanki osaajia kykypoolien avulla Attractissa
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 Rekrytoijat ja työhönottopäälliköt voivat järjestää hakijat Attractin kykypoolitoiminnolla. Kykypoolien avulla voi seurata kaikkia hakijoita, jotka hakevat työpaikkaa yrityksessä, sekä viestiä heidän kanssaan.
 
@@ -116,7 +115,7 @@ Kaikilla käyttäjillä on sama hakijaprofiilien näkymä. **Profiili**-välileh
 
     Valitse tarkastelevan asiakirjan nimi asiakirjaluettelossa. Voit tarkastella Microsoft Word -asiakirjoja sovelluksessa Microsoft Office 365:n avulla. Voit myös ladata asiakirjat paikalliseen tietokoneeseen käyttämällä kussakin asiakirjassa olevaa **Lataa**-asetusta.
 
-- Hakijan LinkedIn-tiedot ovat **LinkedIn**-välilehdessä. Jos haluat käyttää tätä välilehteä, sinun on muodostettava käyttäjän asetuksissa yhteys LinkedIn-tiliin. Lisäksi ympäristössä on oltava LinkedIn Recruiter-yhteys. Lisätietoja on kohdassa [LinkedIn Recruiterin käyttö hankinnassa](./attract-linkedin-recruiter.md).
+- Hakijan LinkedIn-tiedot ovat **LinkedIn**-välilehdessä. Jos haluat käyttää tätä välilehteä, sinun on muodostettava käyttäjän asetuksissa yhteys LinkedIn-tiliin. Lisäksi ympäristössä on oltava LinkedIn Recruiter-yhteys. Lisätietoja on kohdassa [Ehdokkaiden rekrytointi LinkedIn Recruiterilla Microsoft Dynamics 365 Talent – Attractissa](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Vain ehdokkaat voivat päivittää osaamisalueensa, koulutushistoriansa ja työkokemuksensa.

@@ -1,5 +1,5 @@
 ---
-title: Sähköpostiasetusten määrittäminen Microsoft Dynamics 365 Talent – Attractissa
+title: Sähköpostiasetusten määrittäminen Attractissa
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent - Attractista lähetettävien sähköpostien asetusten määrittämistä.
 author: andreabichsel
 manager: AnnBe
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a457deec757a5d5a3e01c6903b2dd7a9d975ef0b
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: c1ebfaeb2e9bc2836bb70e87afa93484c829b6cb
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551538"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833112"
 ---
-# <a name="configure-email-settings-in-microsoft-dynamics-365-talent---attract"></a>Sähköpostiasetusten määrittäminen Microsoft Dynamics 365 Talent – Attractissa
+# <a name="configure-email-settings-in-attract"></a>Sähköpostiasetusten määrittäminen Attractissa
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Brändisi kasvattaa luottamusta ja auttaa luomaan suhteen ehdokkaisiin, ennen kuin he hakeva työpaikkaa. Positiivinen mielikuva brändistä houkuttelee parhaat työhakijat ja parantaa nykyisten työntekijöiden uskollisuutta. Microsoft Dynamics 365 Talent: Attractin avulla voit määrittää sähköpostit yrityksen brändin mukaisiksi. Tällä tavoin työpaikkaa hakevien kokemus pysyy yhtenäisenä koko hakuprosessin ajan.
 

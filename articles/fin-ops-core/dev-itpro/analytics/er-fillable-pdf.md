@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13744df950040056ba03a3847d84f93e266ea6c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181447"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771303"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Sähköisen raportoinnin määritysten suunnittelu PDF-mallien täyttämiseksi
 
@@ -46,7 +46,7 @@ Ennen aloittamista sinulla on oltava jokin seuraavista käyttötyypeistä sen mu
     - Sähköisen raportoinnin toiminnallinen konsultti
     - Järjestelmänvalvoja
 
-Sinun on myös täytettävä [Luo konfiguraatiopalvelu ja merkittävä se aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md) -proseduuri.
+Sinun on myös toteutettava menettely [Konfiguraatiopalvelujen luominen ja niiden merkitseminen aktiiviseksi](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 Lopuksi sinun on ladattava seuraavat tiedostot seuraavasta [CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111) -osoitteesta.
 
@@ -300,5 +300,5 @@ Seuraavassa kuvassa näkyy esimerkki luotavan raportin toisesta sivusta.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-- [ER Suunnittele kokoonpano, jolla raportit voi luoda OPENXML-muodossa](tasks/er-design-reports-openxml-2016-11.md)
-- [Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja Microsoft WORD -muodossa](tasks/er-design-configuration-word-2016-11.md)
+- [ER OPENXML-muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)](tasks/er-design-reports-openxml-2016-11.md)
+- [Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja Word-muodossa](tasks/er-design-configuration-word-2016-11.md)

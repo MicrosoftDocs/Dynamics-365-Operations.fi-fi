@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 0f4c68acfe021e736c259e91a40ce7d43d401246
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551999"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812876"
 ---
 # <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Perehdytysoppaiden ja mallien muokkaaminen Dynamics 365 Talent: Onboardissa
 
@@ -124,7 +124,7 @@ Muutosten siirtäminen:
 
     - Lisää YouTube-video vetämällä **YouTube**-kohde muokkausalueelle, anna tehtävälle nimi ja kuvaus ja anna YouTube-videon URL-osoite.
     - Lisää Sway-esitys tai -uutiskirje vetämällä **Sway**-kohde muokkausalueelle, anna tehtävälle nimi ja kuvaus ja anna Sway-esityksen tai -uutiskirjeen upotettu URL-osoite.
-    - Lisää PowerApps-sovellus vetämällä **PowerApps**-kohde muokkausalueelle, anna tehtävän nimi ja kuvaus ja joko valitse PowerApps-sovellus tai anna PowerApps-sovelluksen tunnus.
+    - Lisää Microsoft Power Apps-sovellus vetämällä **Power Apps**-kohde muokkausalueelle, anna tehtävän nimi ja kuvaus ja joko valitse Power Apps-sovellus tai anna Power Apps-sovelluksen tunnus.
     - Lisää Microsoft Stream -video vetämällä **Microsoft Stream** -kohde muokkausalueelle, anna tehtävälle nimi ja kuvaus ja anna Microsoft Stream -videon URL-osoite.
     - Lisää Microsoft Forms -lomake vetämällä **Microsoft Forms** -kohde muokkausalueelle, anna tehtävän nimi ja kuvaus, anna Microsoft Forms -lomakkeen URL-osoite ja määritä näyttöalueen koko.
     - Lisää verkkosisältöä sisältävä iframe vetämällä **Internet-sisältö (iframe)** -kohde muokkausalueelle, anna tehtävän nimi ja kuvaus, anna verkkosisällön URL-osoite ja määritä näyttöalueen koko.
@@ -186,6 +186,6 @@ Muokkaa yhteyshenkilöä valitsemalla **Muokkaa**-painike (kynäsymboli) resurss
 ### <a name="see-also"></a>Lisätietoja
 
 - [Onboard-sovelluksen kokeileminen tai ostaminen](https://dynamics.microsoft.com/talent/onboard/)
-- [Uutta](./whats-new.md)
-- [Julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Tuen saaminen](./talent-support.md)
+- [Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet](./whats-new.md)
+- [Julkaisusuunnitelmat](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft iDynamics 365 Talentin tuki](./talent-support.md)

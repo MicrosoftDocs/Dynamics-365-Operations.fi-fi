@@ -3,7 +3,7 @@ title: Todellisen painon tuotteen käsittely varastonhallinnan avulla
 description: Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ tehdään varastossa.
 author: perlynne
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 5800f95de0ec773f40c506662a031887810b8c92
+ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887132"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2696636"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
 
@@ -181,7 +181,7 @@ Tällä hetkellä todellisen painon tunnistetoimintoa tuetaan vain seuraavien sk
 - Käsiteltäessä varastosovelluksella muutettua varastotilaa.
 - Varastosiirto tehdään varastosovelluksella.
 - Käsiteltäessä oikaisua sisään tai ulos varastosovelluksella.
-- Käsiteltäessä myynti- ja siirtotilausten keräilytyötä. (Huomaa, että todellisen painon tunnisteita ei voi kirjat tuotanto-osan keräilyä varten.)
+- Käsiteltäessä myynti-, siirto- ja tuotantorivien keräilytyötä.
 - Kerättäviä määriä vähennetään kuormariveiltä riippumatta siitä, käytetäänkö kontteja.
 - Pakattaessa tuotteita kontteihin pakkausasemalla.
 - Avattaessa kontteja uudelleen.

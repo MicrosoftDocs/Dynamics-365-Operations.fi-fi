@@ -1,5 +1,5 @@
 ---
-title: Esiversio-ominaisuuksien käyttö Microsoft Dynamics 365 Talentissa
+title: Hallitse ominaisuuksia
 description: Tässä aiheessa kuvataan, kuinka järjestelmänvalvoja voi ottaa käyttöön esiversio-ominaisuudet Microsoft Dynamics 365 Talentissa. Siinä listataan myös ominaisuudet, jotka ovat tällä hetkellä käytössä esikatselua varten.
 author: tracykeya
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 0f9a83aeea3942d3c56d32956f79490c91565e9e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551592"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833297"
 ---
-# <a name="access-preview-features-in-microsoft-dynamics-365-talent"></a>Esiversio-ominaisuuksien käyttö Microsoft Dynamics 365 Talentissa
+# <a name="manage-features"></a>Hallitse ominaisuuksia
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Parannamme jatkuvasti henkilöstöresurssien hallinnan (HCM) ominaisuuksia Microsoft Dynamics 365 Talentissa ja haluamme tarjota ne asiakkaillemme mahdollisimman pian. Järjestelmänvalvojat voivat tarkastella ja käyttää esiversio-ominaisuuksia ympäristöissään. Nämä ominaisuudet ovat lähes valmiita yleiseen käyttöön ja ne ovat läpäisseet laajan testauksen. Haluamme saada vielä viimeisen asiakaspalautekierroksen, ennen kuin hyväksymme ominaisuudet yleisesti saataville.
 
@@ -117,6 +117,6 @@ Varmista, että et sisällytä mitään henkilötietoja (eli henkilökohtaisesti
 ## <a name="see-also"></a>Lisätietoja
 
 - [Kokeile tai osta Talent-sovelluksia](https://dynamics.microsoft.com/talent/overview/)
-- [Uutta](./whats-new.md)
-- [Julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Talent-tuen saaminen](./talent-support.md)
+- [Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet](./whats-new.md)
+- [Julkaisusuunnitelmat](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Microsoft iDynamics 365 Talentin tuki](./talent-support.md)

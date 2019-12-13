@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 731b6a61bd78388f3db0a7007478e3a5e9629a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181424"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771280"
 ---
 # <a name="generate-printable-fti-forms"></a>Tulostettavien FTI-lomakkeiden luominen
 
@@ -41,7 +41,7 @@ Sen lisäksi, että voit olemassa olevan kyvyn avulla tulostaa FTI-lomakkeita k�
 Osana räätälöityä ratkaisua tulostettaviin FTI-lomakkeisiin sinun on luotava joukko ER-kokoonpanoja.
 
 ### <a name="configure-the-er-data-model"></a>ER-kohteiden tietomallien määrittäminen
-Sovelluksesi on sisällytettävä ER-kohteiden tietomallin konfiguraatio, joka sisältää tietomallin, joka kuvaa asiakkaan laskutuskauden yrityksen liiketoiminta-aluetta. Vaatimuksena on, että tietomallin nimen täytyy olla **CustomersInvoicing**. Saadaksesi lisätietoja siitä, miten suunnitella ER-tietomalleja, katso [Suunnittele sähköisen raportoinnin (ER) verkkotunnukseen perustuva tietomalli](tasks/er-design-domain-specific-data-model-2016-11.md).
+Sovelluksesi on sisällytettävä ER-kohteiden tietomallin konfiguraatio, joka sisältää tietomallin, joka kuvaa asiakkaan laskutuskauden yrityksen liiketoiminta-aluetta. Vaatimuksena on, että tietomallin nimen täytyy olla **CustomersInvoicing**. Lisätietoja ER-tietomallien suunnittelusta on kohdassa [ER Toimialuekohtaisen tietomallin suunnitteleminen](tasks/er-design-domain-specific-data-model-2016-11.md).
 
 ### <a name="configure-the-er-model-mapping"></a>ER-tietomallien kartoituksen määrittäminen
 Sovelluksessasi on oltava ER-tietomallien kartoitus CustomersInvoicing-tietomallia varten. Mallin määritys voi olla joko ER-tietomallin konfiguraatio tai ER-tietomallin kartoituksen konfiguraatio. Joka tapauksessa mallikartoituksen juuren kuvaajan nimen on oltava **FreeTextInvoice**.
@@ -62,7 +62,7 @@ Kartoituksen tulee sisältää seuraavat tietolähteet:
 
 Sovelluksen integrointi ER - kehykseen löytyy **ERPrintMgmtReportFormatSubscriber** -luokasta (ER Application Suite -integraation malli) sovelluksen lähdekoodissa.
 
-Lisätietoja ER-mallikartoitusten suunnittelusta, katso [Määritä mallikartoitus ja valitse tietolähteet sähköiseen raportointiin (ER)](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
+Lisätietoja ER-mallimääritysten suunnittelusta on kohdassa [ER-mallin yhdistämismääritysten määrittäminen ja tietolähteiden valinta niille](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
 ### <a name="configure-the-er-format"></a>ER-muodon määrittäminen
 Sovellusesiintymässäsi sinulla on oltava ER-muotokonfiguraatio, jota käytetään, kun luodaan FTI-lomakkeita. 
@@ -70,7 +70,7 @@ Sovellusesiintymässäsi sinulla on oltava ER-muotokonfiguraatio, jota käytetä
 > [!NOTE]
 > Tämä muotoiluasetus on luotava CustomersInvoicing-tietomallissa ja sen on käytettävä mallinkartoitusta, jolla on **FreeTextInvoice**-juuren kuvaaja.
 
-Lisätietoja siitä, miten konfiguroida ER-malleja, katso [Luo muotoiluasetus sähköiselle raportoinnille (ER)](tasks/er-format-configuration-2016-11.md). Lisätietoja siitä, miten suunnitella ER-malleja, joilla voi luoda raportteja OpenXML-muodossa, katso [Suunnittele asetus, jonka avulla voi luoda raportteja OpenXML-muodossa sähköiseen raportointiin (ER)](tasks/er-design-reports-openxml-2016-11.md).
+Lisätietoja ER-mallien määrittämisestä on kohdassa [ER Muotomäärityksen luominen (marraskuu 2016)](tasks/er-format-configuration-2016-11.md). Lisätietoja OpenXML-muotoisia raportteja muodostavien ER-muotojen suunnittelusta on kohdassa [ER Konfiguraation suunnitteleminen luomaan OPENXML-muotoisia raportteja (marraskuu 2016)](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="configure-print-management"></a>Tulostuksenhallinnan määrittäminen
 Voit luoda FTI-lomakkeita ER-kehyksen avulla käyttämällä ER-muotoja samalla tavalla kuin SSRS-raportteja. Voit liittää ER-mallin myyntisaamisten FTI:t , katso **Myyntisaamiset** \> **Asetukset** \> **Lomakkeet** \> **Lomakkeiden asetukset** \> **Yleinen** \> **Tulostuksen hallinta** \> **Vapaatekstilasku** \> **Alkuperäinen**. Voit yhdistää ER-muodon tiettyyn asiakkaaseen tai laskuun noudattamalla seuraavia ohjeita.
@@ -94,7 +94,7 @@ Luodaksesi FTI-lomakkeita, voit valita laskut joko alueen tai valinnan mukaan.
 
 ![Laskun esikatselu](media/FTIbyGER-InvoiceExcelPreview.png)
 
-Kun käytät ER-muotoja tulostamalla FTI-lomakkeita tällä tavalla, käytetään oletusarvoisia ER-tiedostojen kohteita. Et voi muuttaa kohdetta. Lisätietoja siitä, miten konfiguroida ER-malleja, katso [Luo muotoiluasetus sähköisen raportoinnin kohteille (ER)](electronic-reporting-destinations.md).
+Kun käytät ER-muotoja tulostamalla FTI-lomakkeita tällä tavalla, käytetään oletusarvoisia ER-tiedostojen kohteita. Et voi muuttaa kohdetta. Lisätietoja ER-muotojen ER-kohteiden määrittämisestä on kohdassa [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md).
 
 Voit myös luoda FTI-lomakkeita, kun lähetät FTI:n, laittamalla valinnan **Tulosta lasku** päälle ja laittamalla **Käytä tulostuksen hallintakohteet** pois päältä.
 
@@ -224,4 +224,4 @@ Jos organisaation sähköpostimalli on ennalta määritetty **ERFTITMP** ID-tunn
 ![Sähköposti](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Lisäresurssit
-[Sähköisen raportoinnin yleiskatsaus](general-electronic-reporting.md)
+[Sähköisen raportoinnin (ER) yleiskatsaus](general-electronic-reporting.md)

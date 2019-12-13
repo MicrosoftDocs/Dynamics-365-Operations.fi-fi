@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 6c045f82f3288dba193721dd80c90e68750af9a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 954e0669c3d24bcc20fe667c22b7dcc367aba1e7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177549"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770801"
 ---
 # <a name="overhead-calculation"></a>Yleiskustannuslaskenta
 
@@ -1411,7 +1411,7 @@ Kirjanpidossa kirjataan tyhjään kustannuspaikkatunnukseen sähkökustannus arv
 </table>
 
 > [!NOTE]
-> Tässä ohjeaiheessa esitellään, miten ensisijainen kustannuselementti, 10001 Sähkö, virtaa kustannusobjektien läpi. Tästä syystä tämä yleiskustannus kohdistetaan organisaation alimmalle tasolle. Toisin sanoen alimman tason kustannusobjektit kantavat kustannuksen. Jos tarvitset visuaalisen näkymän kustannuksen virrasta kustannusobjektien välillä, voit käyttää kustannuksen koontikäytäntösääntöjä kustannusvirran visualisointiin. Lisätietoja on kohdassa [Kustannusten koonti](cost-rollup.md).
+> Tässä ohjeaiheessa esitellään, miten ensisijainen kustannuselementti, 10001 Sähkö, virtaa kustannusobjektien läpi. Tästä syystä tämä yleiskustannus kohdistetaan organisaation alimmalle tasolle. Toisin sanoen alimman tason kustannusobjektit kantavat kustannuksen. Jos tarvitset visuaalisen näkymän kustannuksen virrasta kustannusobjektien välillä, voit käyttää kustannuksen koontikäytäntösääntöjä kustannusvirran visualisointiin. Lisätietoja on kohdassa [Kustannusten koontikäytäntö ja yleiskustannuslaskenta](cost-rollup.md).
 
 
 

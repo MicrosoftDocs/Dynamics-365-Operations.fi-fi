@@ -1,6 +1,6 @@
 ---
-title: Työpaikkojen julkaiseminen ulkoisille urasivustoille Attractista
-description: 'Tässä ohjeaiheessa kerrotaan, miten voit Dynamics 365 Talent: Attractista julkaista töitä ulkoisille työhönoton sivustoille.'
+title: Työpaikkojen julkaiseminen Broadbeanissa Attractista
+description: Tässä ohjeaiheessa kerrotaan, miten voit julkaista työpaikkoja Dynamics 365 Talent – Attractista Broadbeaniin.
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 2c822a1f799144bb9240fc0cbdeb6c5441e278af
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 41fa057606887069a9ea0f1f2178eeaff59f33ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551400"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832641"
 ---
-# <a name="post-jobs-to-external-career-sites-from-attract"></a>Työpaikkojen julkaiseminen ulkoisille urasivustoille Attractista
+# <a name="post-jobs-to-broadbean-from-attract"></a>Työpaikkojen julkaiseminen Broadbeanissa Attractista
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract auttaa palkkaamaan työntekijöitä mahdollistamalla työpaikkojen julkaisemisen suoraan Attractista Broadbeaniin. Kun olet [luonut työpaikan](./creating-jobs-attract.md), sinun tarvitsee vain napsauttaa painiketta, jonka jälkeen työpaikka on työpaikan kaikkien mahdollisten ehdokkaiden nähtävillä Broadbeanissa.
 
 Työpaikkojen julkaisemista varten Broadbeanissa tarvitaan soveltuva Broadbean-käyttöoikeus. Broadbean sisältää erilaisia tuotteita ja suunnitelmia. Jos haluat lisätietoja Broadbeanin käyttöoikeuksista ja hinnoittelusta, [ota yhteys Broadbeaniin](https://www.broadbean.com/contact-us/).
 
-Jos olet järjestelmänvalvoja ja tarvitset lisätietoja Broadbeanin integroinnista Attractiin, katso [Ulkoisten työpaikkasivustojen asetusten määrittäminen](./attract-admin-job-board-settings.md).
+Jos olet järjestelmänvalvoja ja tarvitset lisätietoja Broadbeanin integroinnista Attractiin, katso [Broadbean-integroinnin ottaminen käyttöön Microsoft Dynamics 365 Talent – Attractissa](./attract-admin-job-board-settings.md).
 
 ## <a name="post-jobs-to-broadbean"></a>Työpaikkojen julkaiseminen Broadbeaniin
 
@@ -74,7 +74,7 @@ Voit päivittää Broadbean-työpaikkailmoituksen kahdella tavalla.
 2. Valitse **Ilmoitukset**-osassa **Päivitä julkaisu** -kuvaketta, joka lähettää tiedot Broadbeaniin.
 3. Muokkaa ilmoitusta Broadbean-ikkunassa.
 
-–TAI–
+    –TAI–
 
 1. Avaa Attractissa työ, jota haluat tarkastella Broadbeanissa.
 2. Valitse **Ilmoitukset**-osasta kolme pistettä (**...**) -painike, joka vastaa Broadbeania ja valitse sitten **Näytä**.
@@ -99,6 +99,6 @@ Jos sinulla on vaikeuksia julkaista työ Broadbeanissa, yritä seuraavia vaiheit
 
 ## <a name="see-also"></a>Lisätietoja
 
-[Työpaikkojen luominen](./creating-jobs-attract.md)
+[Työpaikkojen luominen, hyväksyminen ja julkaiseminen Attractissa](./creating-jobs-attract.md)
 
-[Ulkoisten työpaikkasivustojen asetusten määrittäminen](./attract-admin-job-board-settings.md)
+[Broadbean-integroinnin ottaminen käyttöön Microsoft Dynamics 365 Talent – Attractissa](./attract-admin-job-board-settings.md)

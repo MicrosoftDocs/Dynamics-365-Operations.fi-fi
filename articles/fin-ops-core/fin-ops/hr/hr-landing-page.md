@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9db36b528de097aae613a5fbf5ee94f4cc79a0f
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: f701a61a718469023dfa57c160229108afeb421c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553160"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812433"
 ---
 # <a name="human-resources-overview"></a>Henkilöstöhallinnon yleiskatsaus
 
@@ -46,14 +46,14 @@ Voit suorittaa henkilöstöhallinnossa seuraavat tehtävät:
 Henkilöstöhallintoa käytettäessä voi päättää organisaation rakenteen elementtien, kuten osastojen, töiden ja toimien, avulla. Nämä ovat henkilöstöhallinnossa määritettäviä peruselementtejä. Yksittäiset työntekijät määritetään töihin liitettyihin toimiin.
 
 - [Työvoiman järjestäminen osastojen, töiden ja toimien avulla](../../../talent/departments-jobs-positions.md)
-- [Yrityskohtaisten henkilöstöhallinnon parametrien määrittäminen](../../../talent/set-up-company-specific-hr-parameters.md)
-- [Yritysten välisten henkilöstöhallinnon parametrien määrittäminen](../../../talent/set-up-hr-parameters-across-legal-entities.md)
+- [Yrityskohtaisten henkilöstöhallinnon (HR) parametrien määrittäminen](../../../talent/set-up-company-specific-hr-parameters.md)
+- [Yritysten välisten henkilöstöhallinnon (HR) parametrien määrittäminen](../../../talent/set-up-hr-parameters-across-legal-entities.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Työntekijöiden rekrytointi, työhönotto ja motivointi
 
 Työhönottoprojekteilla hallitaan avoimien toimien mainonnassa käytettävää sisältöä, ja ne voivat helpottaa avoimin työpaikkoihin lähettyjen hakemusten hallintaa. Voit seurata niiden avulla tietyn työhönottoprojektin työpaikkailmoituksiin saatuja vastauksiaja tai tiettyjä hakijoita sekä päivittää avoimien työpaikkojen tilatietoja. Voit myös palkata yksittäisiä hakijoita tai hallita joukkotyöhönottoprojekteja, jotka helpottavat useiden työntekijöiden palkkaamista esimerkiksi sesonkiluonteisissa tilanteissa.
 
-- [Työhönottoprosessin hallinta](manage-recruiting-process.md)
+- [Työhönottoprosessien hallinta](manage-recruiting-process.md)
 - [Joukkotyöhönottoprojektit](mass-hire-projects.md) 
 
 Henkilöstön palkkauksen jälkeen voit määrittää suunnitelmat kompensaation tehokkaaseen ja tasapuoliseen hallintaan sekä hallita nimikkeitä, kuten tietokoneita ja puhelimia, joita organisaatio lainaa työntekijöille. Voit luoda kiinteitä ja muuttuvia kompensaatiosuunnitelmia sekä määrittää säännöt, joilla käytetään kyseisen suunnitelman ehdot täyttävää kompensaatiosuunnitelmaa.
@@ -68,29 +68,29 @@ Voit auttaa työntekijöitä saavuttamaan uratavoitteensa samalla, kun toteutat 
 
 - [Suorituksen hallinta](../../../talent/performance-management-overview.md)
 - [Työvoiman taitojen ja liiketoiminnan tarpeiden kohdistaminen](../../../talent/skills.md)
-- [Koulutuksen hallinta kurssien avulla](../../../talent/courses.md)
+- [Koulutuskurssien määrittäminen](../../../talent/courses.md)
 
-## <a name="create-and-maintain-benefits"></a>Etujen luonti ja ylläpito
+## <a name="create-and-maintain-benefits"></a>Etuuksien luonti ja ylläpito
 
-Henkilöstön kompensaatio voi koostua palkan ja bonusten lisäksi myös muodostetusta etupaketista, johon voi sisältyä sairausvakuutus- ja eläkepaketteja. Voit myös hallita etuja, kuten laina-ohjelmia, jossa yritys lainaa työntekijöilleen nimikkeitä, kuten tietokoneita ja puhelimia.
+Henkilöstön kompensaatio voi koostua palkan ja bonusten lisäksi myös muodostetuista etupaketeista, joihin voi sisältyä sairausvakuutus- ja eläkepaketteja. Voit myös hallita etuja, kuten laina-ohjelmia, jossa yritys lainaa työntekijöilleen nimikkeitä, kuten tietokoneita ja puhelimia.
 
-- [Etuohjelman hallinta](../../../talent/manage-benefit-program.md)
-- [Etukelpoisuuden käytännöt](../../../talent/benefit-eligibility-policies.md)
-- [Työntekijöille lainattujen nimikkeiden hallinta](../../../talent/loan-items.md)
+- [Etuohjelman määrittäminen ja hallinta](../../../talent/manage-benefit-program.md)
+- [Etuuskelpoisuuden käytännöt](../../../talent/benefit-eligibility-policies.md)
+- [Työntekijöille lainattujen kohteiden hallinta](../../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Työturvallisuuden ja vaatimustenmukaisuuden ylläpito
 
 Microsoft Dynamics AX voi auttaa ylläpitämään turvallista ja sovellettavan lainsäädännön mukaista työympäristöä. Esimerkiksi yhdysvaltalainen Americans with Disabilities Act sekä maahanmuutto- ja kansalaisuuslait ovat tällaisia lakeja. Voit vaikkapa hallita tiettyjen töiden fyysisiä vaatimuksia ja seurata apuvälinepyyntöjä, jotka auttavat organisaatiota optimoimaan työvoiman taitojen käytön.
 
-- [I-9-lomakkeen työsuhdetarkistukset](localizations/noam-usa-form-i-9-verification.md)
-- [Americans with Disabilities Act -vammaislainsäädännön noudattaminen](localizations/noam-usa-comply-ada.md)
-- [Radiotaajuisen etätunnistuksen poissaoloajan seuraaminen](localizations/noam-usa-track-time-for-fmla.md)
+- [I-9-lomakkeen vahvistus](localizations/noam-usa-form-i-9-verification.md)
+- [ADA (Americans with Disabilities Act) -vammaislainsäädännön noudattaminen](localizations/noam-usa-comply-ada.md)
+- [FMLA (Family and Medical Leave Act) -lainsäädännön mukaisten poissaolojen seuranta](localizations/noam-usa-track-time-for-fmla.md)
 
 ## <a name="gather-information-using-questionnaires"></a>Tietojen kerääminen kyselylomakkeilla
 
 Voit suunnitella ja hallita kyselylomakkeita, joilla voit kerätä tietoja eri tarkoituksia varten. Voit suunnitella ja luoda kyselylomakkeita kyselylomaketoiminnolla. Kun kyselylomake on valmis, voit käyttää laajaa jakelua tai jakaa sen tietyille vastaajille. Kun vastaajat ovat vastanneet lomakkeen kysymyksiin, voit tarkastella ja analysoida tuloksia.
 
 - [Kyselylomakkeet](../../../talent/questionnaires.md)
-- [Kyselylomakkeen suunnitteleminen](../../../talent/design-questionnaires.md)
-- [Kyselylomakkeen jakaminen ja täyttäminen](../../../talent/distribute-questionnaires.md)
-- [Kyselylomakkeen tulosten tarkasteleminen ja arvioiminen](../../../talent/evaluate-questionnaire-results.md)
+- [Kyselylomakkeiden suunnitteleminen](../../../talent/design-questionnaires.md)
+- [Kyselylomakkeiden jakelu ja aikataulutus](../../../talent/distribute-questionnaires.md)
+- [Kyselylomakkeiden tulosten tarkasteleminen ja arvioiminen](../../../talent/evaluate-questionnaire-results.md)

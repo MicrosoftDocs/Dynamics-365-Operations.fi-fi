@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248924"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813359"
 ---
 # <a name="purchase-agreements"></a>Ostosopimukset
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä artikkelissa on tietoja ostosopimuksista. Ostosopimus on sopimus, joka velvoittaa organisaation ostamaan tietyn määrän tai tietyllä summalla, käyttämällä useita ostotilauksia jonkin ajanjakson aikana. Vastineeksi tästä sitoumuksesta, ostaja saa erityiset hinnat ja alennukset. 
 
@@ -80,6 +81,9 @@ Kun luot ostotilauksen, voit käyttää siinä ostosopimusta. Sopimusehtojen tie
 Voit valita ostosopimuksen vain, kun olet luomassa ostotilausta. Et voi valita ostosopimusta, kun ostotilaus on luotu.  
 Joissakin tilanteissa, joissa ostotilaukset luodaan epäsuorasti, voit määrittää, hakeeko Supply Chain Management automaattisesti käytettävää ostosopimusta. Voit esimerkiksi toimia näin, kun vahvistat automaattisesti suunniteltuja ostotilauksia tai luot ostotilauksia, jotka perustuvat myyntitilauksiin.
 
+## <a name="matching-policy-on-purchase-agreements"></a>Ostosopimusten vastaavuuskäytäntö
+Voit määrittää rivin vastaavuuskäytännön ostosopimuksen otsikossa. Tämä rivin vastaavuuskäytäntö noudattaa ostoreskontran parametrien rivin vastaavuuskäytäntöä, kun **Ostoreskontran parametrit** -sivun (**Hinnan ja määrän täsmäytys** -pikavälilehden) **Salli vastaavuuskäytännön ohitus** -kentän asetuksena on **Yrityksen käytäntöä suurempi**. Ostosopimukseen viittaavat asiakirjat käyttävät ostosopimuksen otsikossa määritettyä vastaavuuskäytäntöä, ellei vastaavassa nimikkeessä, nimikkeessä ja toimittajassa tai luokan ostokäytännössä ole määritetty jotain muuta.
+
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Ostosopimukset ja konsernin sisäinen kauppa
 Yhtiöiden väliset jäljityssuhteet voidaan luoda toimittajan tilien ja asiakkaan tilien välille, kun ne ovat eri oikeushenkilöitä. Kun myyntitilaus tai ostotilaus luodaan yhdelle osapuolelle, luodaan myös konsernin sisäinen tilausketju. Tilausketjussa myyntitilaus ja ostotilaus on luotu soveltuville yrityksille.  
 
@@ -93,9 +97,9 @@ Voit kopioida taloudelliset dimensiot asiakirjojen ylätunnisteisiin tai ostosop
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Uuden ostosopimuksen luominen (tehtäväopas)](tasks/create-purchase-agreement.md)
+[Luo ostosopimus](tasks/create-purchase-agreement.md)
 
-[Vapautustilauksen luominen ostosopimuksesta (tehtäväopas)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Vapautustilauksen luominen ostosopimuksesta](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

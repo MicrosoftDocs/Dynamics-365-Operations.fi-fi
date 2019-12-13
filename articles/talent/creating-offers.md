@@ -1,6 +1,6 @@
 ---
-title: Tarjousten luominen, hyväksyminen ja allekirjoittaminen
-description: Tässä ohjeaiheessa käsitellään hakijalle tehtävän tarjouksen luomista, hyväksymistä ja allekirjoittamista Dynamics 365 Talentissa.
+title: Tarjousten luominen, hyväksyminen ja allekirjoittaminen Attractissa
+description: Tässä ohjeaiheessa käsitellään hakijalle tehtävän tarjouksen luomista, hyväksymistä ja allekirjoittamista Dynamics 365 Talent – Attractissa.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: acc484ea57ce13d8a7c48a0ca7a2aa8723558dc9
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: dee545b6ca5d2791dea6609b4e1b25eba128f8b7
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551046"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832904"
 ---
-# <a name="create-approve-and-sign-offers"></a>Tarjousten luominen, hyväksyminen ja allekirjoittaminen
+# <a name="create-approve-and-sign-offers-in-attract"></a>Tarjousten luominen, hyväksyminen ja allekirjoittaminen Attractissa
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Hakijalle valmisteltava tarjouspaketti on tehtävä usein erittäin nopeasti.
 Attractin järjestelmänvalvojan määrittämien mallien käyttö nopeuttaa ja yksinkertaistaa hakijalle lähettävien tarjousten valmistelua.

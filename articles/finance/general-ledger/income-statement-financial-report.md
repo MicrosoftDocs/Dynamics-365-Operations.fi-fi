@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7c5d27d43b287aef87f5ead7f469d5465dd2dcb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6322001ea8ccbd2e06e15dc6bc8c273608de895b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177490"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771773"
 ---
 # <a name="income-statement-financial-report"></a>Tuloslaskelman talousraportti
 
@@ -63,9 +63,9 @@ Sarakemääritykset sisältävät erityppisiä sarakkeita, joissa on useita yksi
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Talousraportointi](financial-reporting-getting-started.md)
+[Taloushallinnon raportoinnin yleiskatsaus](financial-reporting-getting-started.md)
 
-[Raporttien näyttäminen](view-financial-reports.md)
+[Raporttien tarkasteleminen](view-financial-reports.md)
 
 [Dynamicsin talousraportointi -blogi](https://blogs.msdn.com/b/dynamics_financial_reporting/)
 

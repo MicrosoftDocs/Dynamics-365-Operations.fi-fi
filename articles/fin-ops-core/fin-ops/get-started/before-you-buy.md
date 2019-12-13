@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9b7cd06d820522d8db83b5b1480b95db1400e9cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f8017ab23ce77a03469a6a6c82bc22986ec4478
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191244"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812623"
 ---
 # <a name="before-you-buy"></a>Ennen ostamista
 
@@ -41,8 +41,8 @@ Seuraavat seikat on otettava huomioon, kun valitset paikallisen käyttöönottov
 
 - Säädöksiin ja vaatimustenmukaisuuteen liittyvät tarpeet, jotka eivät ole käytettävissä pilvivarmenteissa.
 - Katkennut liiketoimintaprosessi, kun sovelluksen elinkaaren hallintaan tarvittavaa Microsoft Dynamics Lifecycle Servicesiä (LCS) käytetään heikolla internet-yhteydellä.
-- [Ominaisuudet, joita ei ole tällä hetkellä otettu käyttöön paikallisissa käyttöönotoissa](features-not-implemented-on-prem.md)
-- [Infrastruktuurin vähimmäisvaatimukset](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+- [Ominaisuudet, joita ei ole otettu käyttöön paikallisissa ympäristöissä](features-not-implemented-on-prem.md)
+- [Paikallisten käyttöönottojen järjestelmävaatimukset](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
 > Microsoft Dynamics 365 for Finance and Operationsin paikallisia käyttöönottoja ei tueta missään julkisessa pilvi-infrastruktuurissa, ei myöskään Azuressa.
@@ -78,7 +78,7 @@ Microsoftin pilvipalveluratkaisujen toimittaja selvittää yhteistyössä kanssa
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Voit ostaa sen Dynamics-kumppanilta (paikallinen).
 
-Finance and Operationsin paikallisen version ostaminen edellyttää yhteistyötä kumppanin kanssa. Lisätietoja on kohdassa [Dynamics 365 for Finance and Operations (paikallinen) -sovelluksen ostaminen](purchase-on-premises.md)
+Finance and Operationsin paikallisen version ostaminen edellyttää yhteistyötä kumppanin kanssa. Lisätietoja on kohdassa [Finance and Operationsin (on-premises) ostaminen](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Tukivaihtoehdon valitseminen
 
@@ -91,7 +91,7 @@ Lisätietoja:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Neljäs vaihe: Lisätietoja FastTrackista ja käyttöönoton suunnitteleminen
 
-Microsoft FastTrack for Dynamics 365 on asiakaspalvelu, joka auttaa asiakkaita siirtymään Dynamics 365:n käyttäjiksi sujuvasti ja luottavaisesti, jotta saat liiketoiminnasta arvoa nopeammin. FastTrack-ohjelmaan osallistujat saavat ohjeita parhaista käytännöistä ja onnistuneiden käyttöönottojen suunnittelemisesta. Saat myös tietää, miten uusia käyttäjiä voidaan ottaa käyttöön ja toimintoja laajentaa – omaan tahtiisi. Saat käyttöösi myös Microsoftin tekniset resurssit, jotka ovat sitoutuneet siihen, että Dynamics 365:n käyttökokemus on onnistunut. Lisätietoja: [Microsoft FastTrack for Dynamics 365:n yleiskatsaus](fasttrack-dynamics-365-overview.md)
+Microsoft FastTrack for Dynamics 365 on asiakaspalvelu, joka auttaa asiakkaita siirtymään Dynamics 365:n käyttäjiksi sujuvasti ja luottavaisesti, jotta saat liiketoiminnasta arvoa nopeammin. FastTrack-ohjelmaan osallistujat saavat ohjeita parhaista käytännöistä ja onnistuneiden käyttöönottojen suunnittelemisesta. Saat myös tietää, miten uusia käyttäjiä voidaan ottaa käyttöön ja toimintoja laajentaa – omaan tahtiisi. Saat käyttöösi myös Microsoftin tekniset resurssit, jotka ovat sitoutuneet siihen, että Dynamics 365:n käyttökokemus on onnistunut. Lisätietoja: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md)
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Päivitys Dynamics AX 2012:sta tai siirtyminen AX 2009:stä
 

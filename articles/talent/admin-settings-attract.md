@@ -1,5 +1,5 @@
 ---
-title: Yrityksen tietojen määrittäminen Microsoft Dynamics 365 Talent – Attractissa
+title: Yrityksen tietojen määrittäminen Attractissa
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Talent – Attractin yritystietojen ja brändäyksen määrittämistä.
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7013065a9494cb407020de2ebcad4058dd57c6c4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: db3ec965f3a52810d5f310697b9ed830c3abe681
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551591"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833251"
 ---
-# <a name="configure-company-information-in-microsoft-dynamics-365-talent---attract"></a>Yrityksen tietojen määrittäminen Microsoft Dynamics 365 Talent – Attractissa
-[!include[banner](../includes/banner.md)]
+# <a name="configure-company-information-in-attract"></a>Yrityksen tietojen määrittäminen Attractissa
+
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attractin hallintakeskus sisältää Attract-sovelluksen määritysvaihtoehdot, integrointivaihtoehdot ja asetusvaihtoehdot.
 
@@ -48,11 +49,11 @@ Kun uusia ominaisuuksia lisätään, on mahdollista, että julkaistaan julkisess
 
 ## <a name="template-management"></a>Mallien hallinta
 
-Prosessimalli sisältää kaikki tehtävät, joiden on sisällyttävä työn työhönottoprosessiin. Organisaatio voi päättää, saavatko kaikki ryhmän jäsenet vai vain järjestelmänvalvojat luoda työhönottoprosessimalleja. Jos haluat antaa ryhmän jäsenille mahdollisuuden luoda omat työhönottoprosessimallit, ota Mallien hallinta -toiminnot käyttöön. Lisätietoja prosessimalleista on kohdassa [Attractin prosessimallit](./process-templates-attract.md).
+Prosessimalli sisältää kaikki tehtävät, joiden on sisällyttävä työn työhönottoprosessiin. Organisaatio voi päättää, saavatko kaikki ryhmän jäsenet vai vain järjestelmänvalvojat luoda työhönottoprosessimalleja. Jos haluat antaa ryhmän jäsenille mahdollisuuden luoda omat työhönottoprosessimallit, ota Mallien hallinta -toiminnot käyttöön. Lisätietoja prosessimalleista on kohdassa [Prosessimallin luonti Attractissa](./process-templates-attract.md).
 
 ## <a name="email-template-settings"></a>Sähköpostimallin asetukset
 
-Organisaatiot voivat luoda sähköpostimalleja erilaisia tilanteita varten. Voit valita sähköpostimalleihin sisällytettävän ylätunnistekuvan. Valittu ylätunniste näkyy sitten kaikissa sähköpostimalleissa. Voit lisätä mallin alatunnisteeseen organisaation tietosuojatiedot ja viestintää koskevat käyttöehdot. Lisätietoja on kohdassa [Attractin sähköpostimallit](./email-templates.md).
+Organisaatiot voivat luoda sähköpostimalleja erilaisia tilanteita varten. Voit valita sähköpostimalleihin sisällytettävän ylätunnistekuvan. Valittu ylätunniste näkyy sitten kaikissa sähköpostimalleissa. Voit lisätä mallin alatunnisteeseen organisaation tietosuojatiedot ja viestintää koskevat käyttöehdot. Lisätietoja on kohdassa [Sähköpostimallit](./email-templates.md).
 
 ## <a name="offer-process"></a>Tarjousprosessi
 

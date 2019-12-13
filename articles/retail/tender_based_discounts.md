@@ -3,7 +3,7 @@ title: Maksuvälineperusteiset alennukset
 description: Tässä aiheessa esitetään yleiskatsaus toimintoon, jonka avulla vähittäiskauppiaat voivat määrittää alennuksia tietyille maksuvälinetyypeille.
 author: bebeale
 manager: AnnBe
-ms.date: 10/25/19
+ms.date: 10/30/19
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 245ee647a3b86303df046fda5bba406c7a2485b5
-ms.sourcegitcommit: b0c176d5d24939307c6d0a6dbe7656007ca53710
+ms.openlocfilehash: ed17b43ac16ebcd310716271b84bbbd904a3253a
+ms.sourcegitcommit: dc31a0f0d9216aa05be76046ac7410702b20706f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "2673562"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2692220"
 ---
 # <a name="tender-based-discounts"></a>Maksuvälineperusteiset alennukset
 
@@ -35,11 +35,12 @@ Vähittäiskauppiaiden keskuudessa on yleistä julkaista yksityisiä brändätty
 
 Sellaiset kauppiaat, jotka eivät tarjoa brändättyjä luottokortteja, taas saattavat kannustaa asiakkaitaan maksamaan muilla maksuvälineillä, kuten käteisellä, lahjakorteilla tai kanta-asiakaspisteillä. Tällä tavoin kauppiaat voivat vähentää luottokorttien käsittelymaksuista aiheutuvia kuluja. Tämän vuoksi vähittäiskauppiaat saattavat tarjota alennuksia asiakkaille, jotka käyttävät näitä vaihtoehtoisia maksuvälineitä.
 
-Microsoft Dynamics365 Retailissa vähittäiskauppiaat voivat määrittää alennusprosentin, jota sovelletaan kelvollisiin riveihin, jos asiakas maksaa halutulla maksuvälineellä. Asiakas voi päättää, suorittaako hän kokonaisen vai osittaisen maksun, ja Retail määrittää asianmukaisen alennusmäärän. Huomaa, että alennus annetaan aina kelvollisten nimikkeiden hinnasta ennen veroja.
+Microsoft Dynamics 365 Retailissa jälleenmyyjät voivat määrittää alennusprosentin, jota sovelletaan kelvollisiin riveihin, jos asiakas maksaa halutulla maksuvälineellä. Asiakas voi päättää, suorittaako hän kokonaisen vai osittaisen maksun, ja Retail määrittää asianmukaisen alennusmäärän. Huomaa, että alennus annetaan aina kelvollisten nimikkeiden hinnasta ennen veroja.
 
 Maksuvälineperusteiset alennukset eivät kilpaile nimikeperusteisten alennusten, kuten kausittaisten tai manuaalisten alennusten, kanssa. Ne muodostuvat aina nimikealennusten päälle. Siten, vaikka nimikkeeseen sovellettaisiin eksklusiivista kausialennusta, maksuvälineperusteista alennusta sovelletaan edelleen kausialennuksen lisäksi. Samoin, jos tapahtumaan sovelletaan kynnysalennusta ja maksuvälineperusteinen alennus vähentää summan kynnyksen alittavaksi, kynnysalennusta sovelletaan edelleen tapahtumaan.
 
 Vaikka maksuvälineperusteiset alennukset pienentävät tapahtuman välisummaa, ne eivät vaikuta tapahtumaan sovellettaviin automaattisiin veloituksiin. Jos toimitusmaksuksi lasketaan 5 euroa, koska välisumma oli yli 100 euroa, ja maksuvälineperusteinen alennus pienentää summaa alle 100 euroon, toimitusmaksu pysyy 5 eurossa.
+
 
 > [!NOTE]
 > Maksuvälineperusteiset alennukset jaetaan suhteellisesti kelvollisille myyntiriveille, ja ne pienentävät yksittäisten rivien veroja edeltävää summaa. Jos maksuvälineelle (kuten käteiselle) määritetään useita maksuvälineperusteisia alennuksia, sovelletaan vain parasta maksuvälineperusteista alennusta.
@@ -57,6 +58,7 @@ Korttimaksujen osalta vähittäiskauppiaat voivat määrittää maksuvälineperu
 
 Tämän tilanteen ehkäisemiseksi kassavirkailija näkee asiakkaan luottokorttimaksun yhteydessä valintaikkunan, joka sisältää luettelon asiakkaalle lisäsäästöä tarjoavista luottokorteista. Kassavirkailija voi tällöin kysyä, haluaako asiakas käyttää jotakin lisäalennukseen oikeuttavista korteista. Jos kassavirkailija käyttää alennukseen oikeuttavaa korttia, maksuvälineperusteista alennusta sovelletaan tapahtumaan ja pienennetty summa näkyy maksuruudussa. Hyväksyntä koskee tällöin pienennettyä summaa. Jos asiakas syöttää kassavirkailijan valinnan vastaisen kortin, näkyviin tulee virhesanoma ja hyväksyntä mitätöidään.
 
+
 ## <a name="call-center-user-experience"></a>Puhelinkeskuksen käyttökokemus
 
 Kun käyttäjä valitsee **Valmis** puhelintilauksen aikana, näkyviin tulle **Summat**-ruutu. Tämän ruudun summissa ei alkuun näy maksuperäisiä alennuksia, koska maksutapaa ei vielä ole valittu. Jos käyttäjä valitsee **Lisää maksu** -ruudussa maksutavan, jolle maksuvälineperusteinen alennus on määritetty, maksun summa korjataan automaattisesti ottamaan alennus huomioon. Puhelinkeskuksen asiakas voi samoin kuin myyntipisteellä päättää, haluaako hän suorittaa maksun kokonaan vai osittain. Myyntitilaukseen sovelletaan maksuvälineperusteista alennusta maksetun summan perusteella.
@@ -66,7 +68,7 @@ Kun käyttäjä valitsee **Valmis** puhelintilauksen aikana, näkyviin tulle **S
 
 ## <a name="exclude-items-from-discounts"></a>Nimekkeiden ohittaminen alennuksissa
 
-Vähittäiskauppiaat jättävät usein joitakin tuotteita, kuten uusia nimikkeitä tai suosittuja nimikkeitä, pois alennusten piiristä. He voivat kuitenkin tästä huolimatta haluta myöntää maksuvälineperusteisia alennuksia. Vähittäiskauppias voi esimerkiksi määrittää Retailin siten, ettei se salli nimikeperusteisisä tai manuaalisia alennuksia. Jos asiakas kuitenkin maksaa alennukseen oikeuttavalla maksuvälineellä, Retail soveltaa edelleen maksuvälineperusteista alennusta. Vähittäiskauppias voi määrittää Retailin tällä tavalla poistamalla valinnat **Estä kaikki alennukset** ja **Estä maksuvälineperusteiset alennukset** käytöstä ja ottamalla käyttöön **Estä vähittäismyynnin alennukset** ja **Estä manuaaliset alennukset**. Nämä valinnat ovat **Julkaistut tuotteet** -sivun **Vähittäismyynti**-välilehdessä.
+Vähittäiskauppiaat jättävät usein joitakin tuotteita, kuten uusia nimikkeitä tai suosittuja nimikkeitä, pois alennusten piiristä. He voivat kuitenkin tästä huolimatta haluta myöntää maksuvälineperusteisia alennuksia. Vähittäiskauppias voi esimerkiksi määrittää Retailin siten, ettei se salli nimikeperusteisisä tai manuaalisia alennuksia. Jos asiakas kuitenkin maksaa alennukseen oikeuttavalla maksuvälineellä, Retail soveltaa edelleen maksuvälineperusteista alennusta. Jos jälleenmyyjät haluavat määrittää Retailin tällä tavoin, heidän valittava ensin **Tuotetietojen hallinta > Tuotteet > Vapautetut tuotteet**, sitten nimike ja määritettävä seuraavaksi **Vähittäismyynti**-pikavälilehdessä **Estä kaikki alennukset**- ja **Estä maksuvälineperusteiset alennukset** -asetusten arvoksi **Ei** ja **Estä vähittäismyynnin alennukset**- ja **Estä manuaaliset alennukset** -asetusten arvoksi **Kyllä**.
 
 > [!NOTE]
-> Kun **Estä kaikki alennukset** -valinta on käytössä, tuotteeseen ei sovelleta alennuksia. Ei edes maksuvälineperusteisia alennuksia.
+> Kun **Estä kaikki alennukset** -määritykseksi on valittu **Kyllä**, tuotteeseen ei sovelleta alennuksia. Ei edes maksuvälineperusteisia alennuksia.
