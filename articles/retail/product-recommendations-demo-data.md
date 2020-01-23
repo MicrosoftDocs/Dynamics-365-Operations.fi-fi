@@ -3,7 +3,7 @@ title: Omni-Channel-tuotesuositusten demotiedot
 description: Tämän asiakirjan tarkoituksena on antaa ohjeita Omni-Channel-tuotesuositusten käyttämiseen tason 1 yhden ruudun ympäristöissä käyttämällä valmiiksi täytettyjä ja mukautettavia demotietoja.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 12/1/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81af4c1bb7828c9b346a3ef514d8657e853dcefb
-ms.sourcegitcommit: c526cfd1f823df1ff33ded95e599a72f0a15cc5a
+ms.openlocfilehash: 31aa5dbd2fa814fd572024a4ae36b9d9b46a2fb0
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2225863"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872323"
 ---
 # <a name="omni-channel-product-recommendations-demo-data"></a>Omni-Channel-tuotesuositusten demotiedot
 
 Tämän asiakirjan tarkoituksena on antaa ohjeita Omni-Channel-tuotesuositusten käyttämiseen tason 1 yhden ruudun ympäristöissä käyttämällä valmiiksi täytettyjä ja mukautettavia demotietoja.
 
-Omni-Channel-tuotesuositukset tarjoavat joukon manuaalisesti koottuja tai ohjelmallisesti luotuja tuoteluetteloita järjestyksessä. Näitä luetteloita voidaan käyttää useissa skenaarioissa liiketoimintatarpeiden mukaan. Lisätietoja tuotesuositusten luetteloista on kohdassa [Tuotesuositusten yleiskatsaus](product-recommendaitons-overview.md).
+Omni-Channel-tuotesuositukset tarjoavat joukon manuaalisesti koottuja tai ohjelmallisesti luotuja tuoteluetteloita järjestyksessä. Näitä luetteloita voidaan käyttää useissa skenaarioissa liiketoimintatarpeiden mukaan. Lisätietoja tuotesuositusten luetteloista on kohdassa [Tuotesuositusten yleiskatsaus](../commerce/product-recommendations.md).
 
 Tason 2 ja sitä korkeampien Dynamics-ympäristöjen tuotesuositukset lasketaan automaattisesti asiakastietojen perusteella.
 Tuotesuositusten demotietojen käyttäminen ei poista käytöstä mitään ympäristöön lisättyä tuotesuositusten ratkaisua tai mitään sen käyttöön liittyviä kustannuksia.
@@ -68,6 +68,6 @@ Laajennus sisältää datatiedoston nimeltään RecoMockDataset.csv. Sen avulla 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Tuotesuositusten yleiskatsaus](product-recommendations-overview.md)
+[Tuotesuositusten yleiskatsaus](../commerce/product-recommendations.md)
 
-[Työympäristön suunnittelu](environment-planning.md)
+[Työympäristön suunnittelu](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)

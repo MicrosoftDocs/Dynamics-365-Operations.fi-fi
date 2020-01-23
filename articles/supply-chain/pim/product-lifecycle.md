@@ -3,7 +3,7 @@ title: Tuotteen elinkaaren tila – yleiskatsaus
 description: Tuotteen elinkaaren tila kirjaa julkaistun tuotteen tai tuotevariantin elinkaaren tilan.
 author: cvocph
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b5b0ceb1926de6efda239fdbc69fb36a9d4b28e0
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813543"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934837"
 ---
 # <a name="product-lifecycle-state-overview"></a>Tuotteen elinkaaren tila – yleiskatsaus
 
@@ -74,11 +74,7 @@ Saat lisätietoja tavoista, joilla tuotteen elinkaaren tilan avulla voidaan jät
 
 ## <a name="default-migration-import-and-export"></a>Oletusarvoinen siirto, tuonti ja vienti 
 
-Tietoyksiköt eivät tue tuotteen elinkaaren tiloja eikä elinkaaren tilaa voi määrittää muuttuvaksi tilaksi vapautettujen tuotetietoyksiköiden avulla.
-
--  Kaikkien tuotteiden ja tuotevarianttien elinkaaren tila on tyhjä aiemmista versioista siirrettäessä.  
--  Kun vapautettuja tuotteita tuodaan tietoyksikön avulla, elinkaaren oletustila otetaan käyttöön luonnin yhteydessä.  
--  Kun vapautettuja tuotevariantteja tuodaan tietoyksikön avulla, vapautetun päätuotteen elinkaaren tila tuodaan.   
+Tietoyksiköt tukevat tuotteen elinkaaren tiloja ja elinkaaren tilaa voidaan asettaa muuttuvaan tilaan joko vapautetun tuotteen tietoyksikön tai julkaisun varianttitietoyksikön kautta.
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Vanhentuneiden tuotteiden ja tuotevarianttien etsiminen 
 

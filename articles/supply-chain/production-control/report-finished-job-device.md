@@ -3,7 +3,7 @@ title: Valmiiksi ilmoittaminen rekisterikilpiohjattuun sijaintiin työkorttilait
 description: Tässä ohjeaiheessa käsitellään valmiiden tuotteiden viimeistelyprosessia, kun rekisterikilpi ohjaa sijaintia.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2019-09-06
 ms.dyn365.ops.version: AX 10.0.6
-ms.openlocfilehash: cb809e596fd6bf3030bcee460838798435512b95
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 63073035941cd2ef343c65364536fe76a9b71430
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572126"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935119"
 ---
 [!include [banner](../includes/banner.md)]
 
@@ -32,4 +32,10 @@ ms.locfileid: "2572126"
 
 Valmiiksi ilmoittamiseksi kutsuttu prosessi viimeistelee tuotantotilauksen valmiit tuotteet varastoon. Jos valmis tuote on otettu käyttöön edistyksellisiä varastoprosesseja varten, se ilmoitetaan valmiiksi tuotannon tuotossijainniksi kutsuttuun sijaintiin. Lisätietoja tuotannon tuotossijainnin määrittämisestä on kohdassa [Tuotannon tuotossijainti](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/production-output-location)
 
-Sinun täytyy valita olemassa oleva rekisterinumero suorittaaksesi tehtävän. Jos tuotannon tuotossijainti on määritetty rekisterikilvellä seurattavaksi, rekisterinumero on sisällytettävä mukaan, kun tuotannon tuotossijainti ilmoitetaan valmiiksi. **Rekisterikilpi**-kenttä näytetään **Raportointi on meneillään** -kehotteessa **Työkorttilaite**-sivulla. Kenttä näytetään **Raportointi on meneillään** -kehotteessa vain, kun raportointia suoritetaan tuotantotilauksen viimeiselle toiminnolle. Kenttä näytetään vain, jos tuotantotilauksen nimike on otettu käyttöön varastonhallintaprosessia varten. 
+Jos tuotannon tuotossijainti on rekisterikilpiohjattu, niin rekisterikilpi on annettava, kun raportoidaan valmiiksi. **Rekisterikilpi**-kenttä näytetään **Raportointi on meneillään** -kehotteessa **Työkorttilaite**-sivulla. Kenttä näkyy vain **Raportin edistyminen** -kehotteessa, kun tuotantotilauksen viimeinen työvaihe raportoidaan ja tuotantotilauksen nimike on otettu käyttöön varastonhallintaprosesseille. 
+
+Rekisterikilven tarjoamiseen on kaksi vaihtoehtoa
+- Käyttäjä valitsee olemassa olevan rekisterikilven rekisterikilpikentässä.
+- Rekisterikilpi luodaan automaattisesti numerosarjasta, ja se on oletusarvoisesti rekisterikilpikentässä.
+
+Vaihtoehto, jonka mukaan rekisterikilpi luodaan automaattisesti, määritetään valitsemalla vaihtoehto **Luo rekisterikilpi** **Määritä työkortti laitteille** -sivulla.

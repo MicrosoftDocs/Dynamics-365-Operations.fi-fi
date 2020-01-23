@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3bb61297e294aa3f2d06f542bebe29d7afae9c3b
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 6c8a583a93c2ceb70d8c3b0e0047e2bf2047b56d
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832835"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898314"
 ---
 # <a name="extend-talent-with-power-apps-and-power-automate"></a>Talentin laajentaminen Power Appsin ja Power Automaten avulla
-
-[!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään Microsoft Power Appsia ja Microsoft Power Automatea käyttäviä Microsoft Dynamics 365 Talentin laajennusesimerkkejä. Voit tuoda kumpaankin esimerkkiin liitetyt ratkaisupaketin Power Apps-ympäristöön. Voit sitten käyttää paketteja joka ohjeena tai lähtökohtana, jonka avulla toteutat organisaatioon sopivia skenaarioita.
 
@@ -108,7 +106,7 @@ Voit lisätä ehdokkaita jaettuun kykypooliin suositussovelluksella. Suosittelij
 
 Voit upottaa tämän sovelluksen työntekijän itsepalveluun suositusten lähettämistä varten tai voit käyttää sitä linkkinä yritysportaalissa ja suorittaa sen itsenäisenä sovelluksena.
 
-Lataa **suositussovellus** siirtymällä [Dynamics 365 Talent -laajennusratkaisu: suositussovellukseen](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) Microsoft Download Centerissä. Voit tuoda tämän sovelluksen ja mukauttaa sen lisäämään lisätoimintoja.
+Lataa **suositussovellus** siirtymällä [Dynamics 365 Talent -laajennusratkaisu: suositussovellukseen](https://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) Microsoft Download Centerissä. Voit tuoda tämän sovelluksen ja mukauttaa sen lisäämään lisätoimintoja.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

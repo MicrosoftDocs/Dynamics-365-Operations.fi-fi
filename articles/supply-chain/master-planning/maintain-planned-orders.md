@@ -3,7 +3,7 @@ title: Ylläpidä suunniteltuja tilauksia
 description: Tämä ohjeaihe sisältää suunniteltujen tilausten hallintaa käsitteleviä tietoja. Artikkelissa kuvataan, miten voit päivittää suunniteltujen tilausten tilan, vahvistaa ne ja suodattaa suunniteltuja tilauksia, joilla on sama tila kuin valitulla suunnitellulla tilauksella.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 11/07/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68bccb632255eac975dc150cf322d4c579ff2f24
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: ec67caf596b0efc256c957eca17a04509fe86855
+ms.sourcegitcommit: 274ff2bb6872ff714781b348b29fd9f1affff9d0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813773"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "2904033"
 ---
 # <a name="maintain-planned-orders"></a>Ylläpidä suunniteltuja tilauksia
 
@@ -39,7 +39,7 @@ Voit seurata edistymistä **Tila**-kentässä. Käytettävissä ovat seuraavat a
 
 -   Kun pääsuunnittelu luo suunniteltuja tilauksia, suunniteltujen tilausten tilana on **Käsittelemätön**.
 -   Jos et halua vahvistaa suunniteltua tilausta, voit asettaa sen tilaksi **Valmis**.
--   Jos haluat vahvistaa suunnitellun tilauksen, voit muuttaa tilaksi **Hyväksytty**. Pääsuunnittelu noudattaa suunniteltuja tilauksia, joiden tila on **Hyväksytty**, joten niitä ei muokata tai poisteta myöhemmän pääsuunnitteluajon aikana. 
+-   Jos haluat vahvistaa suunnitellun tilauksen, voit muuttaa tilaksi **Hyväksytty**. Pääsuunnittelu noudattaa suunniteltuja tilauksia, joiden tila on **Hyväksytty**, joten niitä ei muokata tai poisteta myöhemmän pääsuunnitteluajon aikana. Tämän saavuttamiseksi suunnittelulogiikka kopioi **hyväksytyt** suunnitellut tilaukset vanhasta suunnitelmaversiosta uuteen suunnitelmaversioon pääsuunnittelun aikana.
 
 ## <a name="firming-planned-orders"></a>Suunniteltujen tilausten vahvistaminen 
 Vahvistettaessa suunniteltuja tilauksia luodaan todelliset tilaukset. Nämä tunnetaan myös nimellä *vapautetut* tai *avoimet* tilaukset. Kun suunniteltu tilaus on vahvistettu, se siirtyy kyseisen moduulin tilausosaan.
@@ -58,6 +58,8 @@ Jos aiot vahvistaa useita tilauksia samalla kertaa, suorituksen rinnakkaisuus vo
 -   **Rinnakkainen vahvistus** – jos **Kyllä**, vahvistusprosessista tehdään rinnakkainen hyödyntämällä **Säikeiden määrä** -kohdassa määritettyä säikeiden määrää.
 -   **Säikeiden määrä** – määrittää vahvistusprosessin rinnakkaisten säikeiden määrän. Parametri näkyy vain, kun **Rinnakkainen vahvistus** -arvoksi on määritetty **Kyllä.**
 
+> [!NOTE]
+> **Yhdenmukaista vahvistus** -vaihtoehto näkyy vain, kun vahvistumiseen on valittu useampi kuin yksi suunniteltu tilaus.
 
 <a name="additional-resources"></a>Lisäresurssit
 --------

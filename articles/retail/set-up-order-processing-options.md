@@ -3,7 +3,7 @@ title: Puhelinkeskuksen kanavien määrittäminen
 description: Tässä ohjeaiheessa on tietoja siitä, kuinka voit käsitellä puhelinkeskusten tilauksia käyttämällä Dynamics 365 Retailissa.
 author: josaw1
 manager: AnnBe
-ms.date: 04/16/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4ebe25f91cd4228537254dc0b7891c8584981775
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024818"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934697"
 ---
 # <a name="set-up-call-center-channels"></a>Puhelinkeskuskanavien määrittäminen
 
@@ -81,3 +81,6 @@ Käyttäjät, joita ei ole linkitetty puhelinkeskuskanavaan, käyttävät Micros
 
 
 Kun puhelinkeskuskanavan määritykset on tehty ja kanavan käyttäjät määritetty, varmista järjestelmä toimiminen odotetulla tavalla tarkistamalla, että kaikki pakolliset puhelinkeskuksen parametrit on määritetty kohdassa **Retail** \> **Kanavan asetukset** \> **Puhelinkeskuksen asetukset** \> **Puhelinkeskuksen parametrit**. Muista määrittää myös liittyvät numerosarjat.
+
+> [!NOTE]
+> Jos haluat käyttää puhelinkeskustoimintoa, **usean toimitusasiakkaan** konfigurointiavain on otettava käyttöön. Tämä konfigurointiavain löytyy **Kaupan määritysavaimet** -osiosta kohdasta **Järjestelmänhallinta**\> **Asetukset** \> **Käyttöoikeuden määritys**. Tämä vaaditaan puhelinkeskuksen toiminnallisuuden vuoksi, joka suorittaa erilaisia validointeja myyntitilauksen rivitasolla määritettyjen toimitusosoitteiden perusteella. 

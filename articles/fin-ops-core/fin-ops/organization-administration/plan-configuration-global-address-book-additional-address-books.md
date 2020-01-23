@@ -3,7 +3,7 @@ title: Yleisen osoitekirjan ja lisäosoitekirjojen suunnitelma
 description: Tässä ohjeaiheessa kerrotaan, millaiset asiat pitää ottaa huomioon ja millaisia päätöksiä pitää tehdä suunnitteluprosessin aikana, ennen kuin yleinen osoitekirja ja lisäosoitekirjat määritetään.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25a99284b2773e7c9d473357356c69a39f23c92d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 89c6e71e5f537f0f9309eca1025c8e74cdce6716
+ms.sourcegitcommit: 75bbcff474cfb8d2f282be2b9d2d7984d1505fa3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190025"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883408"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Yleisen osoitekirjan ja muiden osoitekirjojen suunnitteleminen
 
@@ -35,7 +35,7 @@ Tässä ohjeaiheessa kerrotaan, millaiset asiat pitää ottaa huomioon ja millai
 
 Ennen kuin aloita yleisen osoitekirjan käsittelyn, sille on määritettävä oletusarvot. Näitä oletusarvoja käytetään sitten mahdollisissa lisäosoitekirjoissa, jotka luot.
 
-**Päätökset:**
+**Päätökset**
 
 - Missä järjestyksessä nimet näytetään **Henkilö**-tyypin osapuolitietueissa? Yksi järjestys on esimerkiksi sukunimi, toinen nimi, etunimi.
 - Poistetaanko osapuolitietueet osoitekirjasta, kun roolitietue poistetaan? Jos esimerkiksi asiakastietue poistetaan, poistetaanko myös osapuolitietue?
@@ -58,11 +58,3 @@ Kun olet luonut yleisen osoitekirjan, voit luoda tarvittavia lisäosoitekirjoja,
 **Päätös:**
 
 - Kuinka monta lisäosoitekirjaa luot?
-
-### <a name="address-book-security"></a>Osoitekirjan suojaus
-
-Voit luoda osoitekirjoja koska tahansa ja voit myös määrittää osoitekirjojen suojauksen parametrit koska tahansa. Sinun ei tarvitse määrittää osoitekirjan suojausoikeuksia, mutta jos et tee niin, organisaation kaikki työntekijät voivat tarkastella kaikkia kyseisen osoitekirjan osapuolitietueita. Voit määrittää osapuolitietueiden suojausoikeudet osoitekirjojen kautta. Suojausoikeudet perustuvat ryhmiin. Näin taataan, että vain siihen ryhmään määritetyt työntekijät, joilla on osoitekirjan käyttöoikeus, voivat tarkastella kyseisen osoitekirjan osapuolitietueita. Sinun on valittava ryhmät, joilla on kunkin osoitekirjan käyttöoikeudet. Määritä kullekin osoitekirjalle suojausoikeudet, jotka sallivat käytön tietyille ryhmille tai estävät käytön. Kun myönnät ryhmälle osoitekirjan käyttöoikeuden, kyseisen ryhmän kaikki jäsenet voivat tarkastella osoitekirjan tietueita. Jos et myönnä ryhmälle osoitekirjan käyttöoikeutta, kyseisen ryhmän jäsenet eivät voivat tarkastella osoitekirjaa tai sen sisältöä.
-
-**Päätös:**
-
-- Mitkä ryhmät saavat kunkin luomasi uuden osoitekirjan käyttöoikeudet?

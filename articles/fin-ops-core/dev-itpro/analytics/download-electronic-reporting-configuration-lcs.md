@@ -3,7 +3,7 @@ title: Lataa sähköiset raportoinnin määritykset Lifecycle Services -palvelus
 description: Tässä aiheessa neuvotaan, miten sähköisen raportoinnin (ER) konfiguraatiot ladataan Microsoft Dynamics Lifecycle Services -palvelusta (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 49785835ee2da911d7b8d1360e1c42f850f1153f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4cc14860bd969048c4378b40d97a7940a8710e89
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771490"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934651"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Sähköisen raportoinnin konfiguraatioiden lataaminen Lifecycle Services -palvelusta
 
@@ -39,7 +39,7 @@ Tässä oppaassa kuvataan uusimpien sähköisten raportoinnin (ER) konfiguraatio
     - Sähköisen raportoinnin toiminnallinen konsultti
     - Järjestelmänvalvoja
 
-2. Siirry kohtaan **Organisaation hallinto** &gt; **Sähköinen raportointi**.
+2. Valitse **Organisaation hallinto** &gt; **Työtilat** &gt; **Sähköinen raportointi**.
 3. Valitse **Konfiguraation lähteet** -osassa **Microsoft**-ruutu.
 4. Napsauta **Microsoft**-ruudussa **Säilöt**-linkkiä.
 

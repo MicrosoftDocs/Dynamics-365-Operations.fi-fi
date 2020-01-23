@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812830"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897140"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Sisällön jakaminen muiden osallisten kanssa Dynamics 365 Talent: Onboardissa
+# <a name="share-content-with-other-contributors"></a>Sisällön jakaminen muiden osallisten kanssa
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ Microsoft Dynamics 365 Talent: Onboardissa voi jakaa perehdytysoppaita ja mallej
 
 3. Jos vastaanottajien on voitava tarkistaa opas, määritä **Jaa seuraavan kanssa** -kohdassa **Saavatko seuraavat käyttäjät tehdä muokkauksia?** -asetukseksi **Käytössä**. Jos vastaanottajille on ilmoitettava sähköpostitse, että jaat oppaan heidän kanssaan, määritä **Lähetä sähköposti-ilmoitus vastaanottajille** -asetukseksi **Käytössä**.
 
-    ![[Perehdytysoppaan käyttö- ja sähköpostiasetusten määrittäminen](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+    ![[Onboarding-oppaan käyttö- ja sähköpostiasetusten määrittäminen](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
 
 4. Anna nimi tai sähköpostiosoite ja valitse vastaanottaja avattavasta luettelosta.
 5. Voit tarkistaa tai muuttaa **Käytön hallinta** -välilehdessä, mitä vastaanottajat voivat tehdä oppaalle. Voit vaihtaa vastaanottajan käyttöoikeuksia valitsemalla vastaanottajan nimen vieressä olevassa avattavassa luettelossa joko **Saa katsella**, **Saa muokata** tai **Poista**.

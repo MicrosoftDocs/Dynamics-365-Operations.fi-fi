@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: caa449feba22c5804799b5317a8e29c139cc440e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f67296797d9a671ae071a13b1bbda73cf3fc6e7f
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177494"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915174"
 ---
 # <a name="financial-reporting-overview"></a>Taloushallinnon raportoinnin yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Tässä ohjeaiheessa kerrotaan, miten löydät talousraportoinnin ja miten käytät taloudellisen raportoinnin ominaisuuksia. Se sisältää myös kuvauksen oletusraporteista, jotka toimitetaan.
 
@@ -79,6 +81,18 @@ Käyttäjät, joille on määritetty soveltuvat oikeudet ja tehtävät käyttöo
 | Näytä raportit                | Arvioi taloudellista suorituskykyä          | Ei määritetty                                                                   |
 
 Kun käyttäjä on lisätty tai rooli on muuttunut, raporttien pitäisi olla käyttäjän käytettävissä muutamassa minuutissa. **Huomautus:** järjestelmänvalvojan rooli lisätään kaikkiin rooleihin taloudellisessa raportoinnissa.
+
+## <a name="report-deletions-and-expirations"></a>Raportin poistot ja päättymiset
+Raportteja luovat käyttäjät voivat poistaa omia raporttejaan. Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat poistaa muiden raportteja. 
+
+Vanhentumispäivien käsite on otettu käyttöön 10.0.7 julkaisusta alkaen. Uusi pakollinen ominaisuus otetaan käyttöön ominaisuuden tilan toiminnot -työtilassa. Tämä ominaisuus sisältää seuraavat muutokset:
+* Äskettäin luotuihin raportteihin merkitään automaattisesti vanhenemispäivä, joka on 90 päivää siitä, kun ne on luotu
+* Kaikki olemassa olevat raportit, jotka on luotu ennen kuin ominaisuus asennettiin, saavat 90 päivän vanhentumisajan. Päivämäärä voi näkyä tyhjänä lyhyen ajan, kunnes taloushallinnon raportointipalvelu on käynnissä, raportti luodaan ja palvelu suorittaa päivityksen aiemmin luotuihin raportteihin, joiden vanhentumispäivämäärä on tyhjä. 
+* Käyttäjät, joilla on **Ylläpidä taloudellisen raportoinnin turvallisuutta** -velvollisuus, voivat käyttää tätä toimintoa. Kuka tahansa, jolla on **Ylläpidä kirjanpitoraporttia** -velvollisuus, jolle on myönnetty **Ylläpidä talousraportin vanhenemisoikeuksia**, voi myös muuttaa vanhentumisaikaa. Tällä hetkellä käytettävissä on kaksi säilytysvaihtoehtoa - 
+  * Vanhentuminen 90 päivää
+  * Asetus, joka määrittää, että raportti ei vanhene
+
+Kun on valittu vanhentumisaika, kuten 90 päivää, on valittu, aikaa myönnetään 90 päivää tästä päivästä, joka on erilainen kuin 90 päivää alkuperäisestä luontipäivämäärästä raportin luonnin aikana. 
 
 ## <a name="default-reports"></a>Oletusraportit
 Talousraportointi sisältää 22 oletusraporttia. Jokaisessa raportissa käytetään oletuspäätililuokkia. Voit käyttää näitä raportteja sellaisenaan tai omien talousraportointitarpeiden lähtökohtana. Perinteisten raporttien, kuten tuloslaskelma tai tase, lisäksi nämä oletusraportit sisältävät raportteja, jotka näyttävät millaisia raportteja voidaan luoda. 

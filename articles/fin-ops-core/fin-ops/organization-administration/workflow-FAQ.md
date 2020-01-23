@@ -3,7 +3,7 @@ title: Työnkulun usein kysytyt kysymykset
 description: Tässä ohjeaiheessa on usein kysyttyjä kysymyksiä työnkulkujärjestelmästä.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/19/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0188e8ed3cbbfd7dbccd7d13cf6129e146a919ac
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: cdddd26a662e9334f6d3c9806871df5b58ec03c7
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772694"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934906"
 ---
 # <a name="workflow-faq"></a>Työnkulun usein kysytyt kysymykset
 
@@ -37,7 +37,7 @@ Nämä ilmoitukset on tarkoitettu eri työnimikkeelle, mutta niiden samankaltais
 Työnkulun viennissä on tällä hetkellä rajoitus, joka estää työnkulkujen nimiä ylittämästä 48 merkkiä. Jos nimi on pidempi kuin 48 merkkiä, palvelin ei voi todentaa pyyntöä ja / tai estää tiedoston viemisen ilman tiedostotyyppiä. Seuraava blogikirjoitus sisältää lisätietoja [Työnkulun viennin vian määrityksestä](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting).
 
 ## <a name="can-the-submitter-of-a-workflow-also-approve-the-workflow"></a>Voiko työnkulun lähettäjä myös hyväksyä työnkulun?
-Kyllä, Työnkulun lähettäjä voi myös hyväksyä työnkulun, jos määritys sen sallii. Voit estää tämän valitsemalla kohdassa **Työnkulkuparametrit > Yleiset > Hyväksyjä > Estä lähettäjän hyväksyntä** **Kyllä**.
+Kyllä, Työnkulun lähettäjä voi myös hyväksyä työnkulun, jos määritys sen sallii. Voit estää tämän valitsemalla kohdassa **Järjestelmänhallinta > Työnkulku > Työnkulun parametrit > Yleinen > Hyväksyjä > Estä lähettäjän hyväksyntä** **Kyllä**.
 
 ## <a name="can-i-add-alerts-to-workflows-to-provide-notifications-to-users"></a>Voinko lisätä työnkulkuihin hälytyksiä toimittamaan ilmoituksia käyttäjille?
 Seuraavat seikat on otettava huomioon, kun työnkulkuihin lisätään hälytyksiä toimittamaan ilmoituksia:
@@ -51,3 +51,6 @@ Seuraavat seikat on otettava huomioon, kun työnkulkuihin lisätään hälytyksi
     - [Työnkuluissa on liiketoimintatapahtumia](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), joilla asiakas voi käynnistää työnkulut, joissa on heidän etsimänsä ilmoitukset.   
 
 Tiivistäen voi todeta, että jos käyttäjä ei saa oikeaa ilmoitusta toimintokeskuksesta, kun heille määritetään työnkulun työnimike, he voivat muodostaa lisäilmoituksia tai toisia ilmoituksia käyttämällä [työnkulun liiketoimintatapahtumia](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) yhdessä Microsoft Power Automaten kanssa.
+
+## <a name="workflow-editor-has-trouble-starting-under-adfs"></a>Työnkulkueditorissa on ongelmia käynnistettäessä ADFS:n alla 
+Kun Active Directory -liittämispalvelut (AD FS) suoritetaan päivitetyssä ympäristössä, työnkulkueditorilla saattaa olla ongelmia käynnistymisen yhteydessä. Jos näin on, varmista, että URL-osoite https://dynamicsaxworkfloweditor/ lisätään ominaisuuteen **Microsoft Dynamics 365 for Operationsin paikallinen - työnkulku - natiivisovellus** ADFS-asetuksissa.

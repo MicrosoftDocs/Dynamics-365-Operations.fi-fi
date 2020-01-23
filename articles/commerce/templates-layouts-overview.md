@@ -3,7 +3,7 @@ title: Mallit ja asettelut – yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Commercen malleja ja asetteluja.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6ce6c3021868700c632b16cce3ce66cbf37b8f96
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 4ddae5b77c36151a279a463033079099722d166e
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697793"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914838"
 ---
 # <a name="templates-and-layouts-overview"></a>Mallit ja asettelut – yleiskatsaus
 
@@ -110,3 +110,5 @@ Lisätietoja esimääritettyjen asetteluiden käyttämisen aloittamisesta on koh
 [Mallien käyttö](work-with-templates.md)
 
 [Esimääritettyjen asettelujen käyttö](work-with-layouts.md)
+
+[Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)

@@ -1,9 +1,9 @@
 ---
 title: Pääsuunnittelun suorituskyvyn parantaminen
-description: Tässä ohjeaiheessa käsitellään erilaisia asetuksia, joilla voidaan parantaa pääsuunnittelun vianmääritysongelmien suorituskykyä.
+description: Tässä ohjeaiheessa käsitellään erilaisia asetuksia, joilla voidaan parantaa pääsuunnittelun tai vianmääritysongelmien suorituskykyä.
 author: t-benebo
 manager: AnnBe
-ms.date: 05/31/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,34 +19,34 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: f0d075bbcc8a6671054f227a13c75ca7fb1e954f
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 7e8c1d7ee51eb6e335554a01fd050bd80f2a070d
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1631540"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915221"
 ---
 # <a name="improve-master-planning-performance"></a>Pääsuunnittelun suorituskyvyn parantaminen
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään erilaisia asetuksia, joilla voidaan parantaa pääsuunnittelun vianmääritysongelmien suorituskykyä. Siinä on tietoja parametreista ja asetuksista sekä suositelluista määrityksistä ja toiminnoista. Se sisältää myös yhteenvedon kaikista tärkeistä parametreista, jotka kannattaa ottaa huomioon pitkäkestoisissa pääsuunnittelutöissä.
+Tässä ohjeaiheessa käsitellään erilaisia asetuksia, joilla voidaan parantaa pääsuunnittelun tai vianmääritysongelmien suorituskykyä. Siinä on tietoja parametreista ja asetuksista sekä suositelluista määrityksistä ja toiminnoista. Se sisältää myös yhteenvedon kaikista tärkeistä parametreista, jotka kannattaa ottaa huomioon pitkäkestoisissa pääsuunnittelutöissä.
 
 Tämä ohjeaihe on tarkoitettu järjestelmänvalvojille tai IT-käyttäjille, jotka voivat tehdä vianmääritystä. Se on tarkoitettu myös tuotannon tai toimituksen suunnittelijoille, koska siinä on tietoja liiketoiminnan suunnittelutarpeisiin liittyvistä parametreista. 
 
-## <a name="parameters-that-are-related-to-master-planning-performance"></a>Pääsuunnittelun suorituskykyyn liittyvät parametrit
+## <a name="parameters-related-to-master-planning-performance"></a>Pääsuunnittelun suorituskykyyn liittyvät parametrit
 
 Eri parametrit vaikuttavat pääsuunnittelun ajoaikaan, ja ne onkin otettava huomioon.
 
 ### <a name="number-of-threads"></a>Säikeiden määrä
 
-Voit säätää **Säikeiden määrä** -parametrilla pääsuunnitteluprosessia siten, että sen suorituskyky paranee tietyn tietojoukon osalta. Se määrittää pääsuunnittelun suorittamiseen käytettävien säikeiden kokonaismäärän. Se aiheuttaa pääsuunnitteluajon rinnakkaisuuden, mikä puolestaan auttaa lyhentämään ajoaikaa. 
+Voit säätää **Säikeiden määrä** -parametrilla pääsuunnitteluprosessia siten, että sen suorituskyky paranee tietyn tietojoukon osalta. Tämä parametri määrittää pääsuunnittelun suorittamiseen käytettävien säikeiden kokonaismäärän. Se aiheuttaa pääsuunnitteluajon rinnakkaisuuden, mikä puolestaan auttaa lyhentämään ajoaikaa. 
 
 Voit määrittää **Säikeiden määrä** -parametrin **Pääsuunnitteluajo**-valintaikkunassa. Voit avata tämän valintaikkunan valitsemalla **Pääsuunnittelu \> Pääsuunnittelu \> Suorita \> Pääsuunnittelu**. Vaihtoehtoisesti voit valita **Suorita** **Pääsuunnittelu**-työtilassa. Parhaan arvon määrittäminen tälle parametrille onnistuu kokeilemalla. Voit kuitenkin laskea ensimmäisen arvon seuraavilla kaavoilla:
 
-- **Valmistusteollisuus:** säikeiden määrä = suunniteltujen tilausten määrä ÷ 1 000
-- **Muut:** säikeiden määrä = nimikkeiden määrä ÷ 1 000
+- **Valmistusteollisuus:** (säikeiden määrä) = (suunniteltujen tilausten määrä ÷ 1 000)
+- **Muut:** (Säikeiden määrä) = (Nimikkeiden määrä ÷ 1 000)
 
 Pääsuunnittelussa käytettävien aputoimintojen määrä on oltava pienempi tai yhtä suuri kuin eräpalvelimessa sallittujen säikeiden enimmäismäärä. Jos aputoimintojen määrä ylittää eräpalvelimen säikeiden määrä, lisäsäikeet eivät tee mitään.
 
@@ -59,7 +59,7 @@ Pääsuunnittelussa käytettävien aputoimintojen määrä on oltava pienempi ta
 
 Voit määrittää **Tehtävänipun tehtävien määrä** -parametrin **Pääsuunnitelman parametrit** -sivun **Yleiset**-välilehden **Suorituskyky**-osassa (**Pääsuunnittelu \> Asetukset \> Pääsuunnittelun parametrit**). Tämän parametrin paras arvo määräytyy tietojen mukaan. Tämän vuoksi aluksi kannattaa käyttää arvoa **1** ja määrittää sitten kokeilemalla asetukselle paras arvo.
 
-Yleensä tehtävien määrää kannattaa nostaa, kun nimikkeitä on erittäin paljon (satojatuhansia). Muussa tapauksessa tehtävien määrää kannattaa vähentää. Ota seuraavat seikat huomioon seuraavien toimialojen osalta:
+Yleensä tehtävien määrää kannattaa nostaa, kun nimikkeitä on erittäin paljon (satojatuhansia). Muussa tapauksessa tehtävien määrää kannattaa vähentää. Ota seuraavat suositukset huomioon seuraavien toimialojen osalta:
 
 - Vähittäis- ja jakelualoilla, joissa yksittäisiä nimikkeitä on runsaasti, aputoimintoja käytetään runsaasti, koska nimikkeiden välillä ei ole riippuvuutta. 
 - Valmistusteollisuudessa, jossa on monia tuoterakenteita ja jaettuja aliosia, käytetään vähemmän aputoimintoja, koska nimikkeiden väliset riippuvuudet voivat aiheuttaa odotusaikoja.
@@ -85,9 +85,9 @@ Voit määrittää **Välimuistin käyttö** -parametrin **Pääsuunnitelman par
 
 **Vahvistusmyyntirakenteen tilausten määrä** -parametri määrittää, kuinka monta tilausta kukin säie tai erä käsittelee yhteensä kerrallaan. Se aiheuttaa automaattisen vahvistusprosessin rinnakkaisen suorittamisen.
 
-Voit määrittää **Vahvistusmyyntirakenteen tilausten määrä** -parametrin **Pääsuunnitelman parametrit** -sivun **Yleiset**-välilehden **Suorituskyky**-osassa (**Pääsuunnittelu \> Asetukset \> Pääsuunnittelun parametrit**). Automaattinen vahvistusprosessi rinnakkainen suorittaminen perustuu yhdessä käsiteltäviin tilauksiin. Niinpä jos tämän parametrin arvoksi on määritetty esimerkiksi **50**, jokainen säie tai erätehtävä poimii kerralla 50 tilausta ja käsittelee ne yhdessä. Paras arvo kannattaa etsiä kokeilemalla. Voit kuitenkin laskea ensimmäisen arvon seuraavalla kaavalla:
+Voit määrittää **Vahvistusmyyntirakenteen tilausten määrä** -parametrin **Pääsuunnitelman parametrit** -sivun **Yleiset**-välilehden **Suorituskyky**-osassa (**Pääsuunnittelu \> Asetukset \> Pääsuunnittelun parametrit**). Automaattinen vahvistusprosessi rinnakkainen suorittaminen perustuu yhdessä käsiteltäviin tilauksiin. Esimerkiksi, jos tämän parametrin arvoksi on määritetty **50**, jokainen säie tai erätehtävä poimii kerralla 50 tilausta ja käsittelee ne yhdessä. Paras arvo kannattaa etsiä kokeilemalla. Voit kuitenkin laskea ensimmäisen arvon seuraavalla kaavalla:
 
-Tilausten myyntirakennekohtainen määrä = kysyntänimikkeiden määrä ÷ säikeiden määrä
+(Tilausten myyntirakennekohtainen määrä) = (kysyntänimikkeiden määrä ÷ säikeiden määrä)
 
 > [!NOTE]
 > Jos määrität **Vahvistusmyyntirakenteen tilausten määrä** -parametrin arvoksi **0** (nolla), rinnakkaista automaattista vahvistusprosessia ei tapahdu. Koko prosessi suoritetaan yhtenä erätehtävänä, ja niiden ajoaika on kumulatiivinen. Tämän vuoksi pääsuunnittelun ajoaika pitenee. Tämän vuoksi tämän parametrin arvo kannattaa määrittää suuremmaksi kuin **0** (nolla).
@@ -98,7 +98,7 @@ Aikarajat määrittävät, kuinka pitkälle tulevaisuuteen pääsuunnittelu lask
 
 ### <a name="actions"></a>Toimenpiteet
 
-Aikarajat sisältävät myös **Toimenpidesanoma**-parametrin. Toimenpidesanomien laskeminen pidentää pääsuunnittelun ajoaikaa. Jos toimenpidesanomia ei analysoida ja käytetä säännöllisesti (kuten päivittäin tai viikoittain), harkitse laskennan poistamista käytöstä pääsuunnitteluajon aikana. Poista laskenta käytöstä määrittämällä **Pääsuunnitelmat**-sivulla suoritettavan pääsuunnitelman (**Pääsuunnittelu \> Asetukset \> Suunnitelmat \> Pääsuunnitelmat**), **Toimenpidesanoma**-aikarajaksi **0** (nolla). Varmista myös, että **Toimenpidesanoma**-asetus on poistettu käytöstä kaikissa kattavuusryhmissä.
+Aikarajat sisältävät myös **Toimenpidesanoma**-parametrin. Toimenpidesanomien laskeminen pidentää pääsuunnittelun ajoaikaa. Jos toimenpidesanomia ei analysoida ja käytetä säännöllisesti (kuten päivittäin tai viikoittain), harkitse laskennan poistamista käytöstä pääsuunnitteluajon aikana. Voit poistaa laskennan käytöstä **Pääsuunnitelmat**-sivulla määrittämällä suoritettavan (**Pääsuunnitelman \> Määritys \> Suunnitelmat \> Pääsuunnitelmat**) **Toimenpidesanoman**-aikarajaksi **0** (nolla). Varmista myös, että **Toimenpidesanoma**-asetus on poistettu käytöstä kaikissa kattavuusryhmissä.
 
 ### <a name="futures"></a>Viivästyssanomat
 
@@ -129,6 +129,28 @@ Ota seuraavat seikat huomioon, kun tarkastelet istuntolokia:
 ## <a name="filtering-of-items"></a>Nimikkeiden suodattaminen
 
 **Pääsuunnitteluajo**-valintaikkunassa käytetyt suodattimet vaikuttavat pääsuunnitteluajon kestoon. Valitse **Pääsuunnittelu \> Pääsuunnittelu \> Suorita \> Pääsuunnittelu**. Vaihtoehtoisesti voit valita **Suorita** **Pääsuunnittelu**-työtilassa. Jos haluat jättää nimikkeet ajon ulkopuolelle, suodatus kannattaa tehdä nimikkeen elinkaaren tilan (eikä nimikenumeroiden) perusteella. Kun suodatusperusteena käytetään elinkaaren tilaan, päivitysprosessi kestää vähemmän aikaa kuin nimikenumeroiden mukaan suodatettaessa.
+
+## <a name="automatically-filter-by-items-with-direct-demand"></a>Suodata automaattisesti suoran kysynnän nimikkeiden mukaan
+
+Voit parantaa pääsuunnittelun ajoaikaa valitsemalla vain ne nimikkeet, joilla on suora kysyntä. Tätä suodatinta voi käyttää vain täydellisessä pääsuunnittelun ajossa, jossa ei ole muita suodattimia **Sisällytettävät tietueet** -kenttään. Suodattimien kanssa suoritettava pääsuunnittelu ohittaa **Suodata automaattisesti kohteet, joilla on suora kysyntä** -asetus.
+
+**Suodata automaattisesti kohteilla, joilla on suora kysyntä** -kenttä, löytyy **Pääsuunnittelun parametrit** -sivulta, ja sitä voidaan käyttää sekä esikäsittely- että jälkikäsittelyasetuksilla.
+
+### <a name="pre-processing"></a>Esikäsittely
+**Esikäsittely: Suodata automaattisesti kohteiden mukaan suoraan kysynnän** parametrilla varmistaa, että pääsuunnittelun esikäsittelyvaihe sisältää vain kohteet, jotka täyttävät vähintään yhden seuraavista ehdoista:
+  - Nimikkeellä on odotettu vastaanotto tai asia, kuten ostotilaus, myyntitilaus, tarjous, siirtotilaus tai tuotantotilaus. 
+  - Nimikkeellä on nimikekattavuus ja varmuusvarasto (pienin käytettävissä oleva varasto).
+  - Ennusteen kysyntä on tämän päivän jälkeen olemassa nimikkeelle.
+  - Ennusteen tarjonta on tämän päivän jälkeen olemassa nimikkeelle.
+  - Nimike sisältää vielä luotavan puhelinkeskusmoduulin jatkuvuusrivit.
+
+> [!NOTE]
+> Nimikkeellä, jolla on fyysisesti käytettävissä oleva varasto, ei näy tarvetapahtumaa, koska nimikkeelle ei ole kysyntää.
+
+### <a name="post-processing"></a>Jälkikäsittely
+**Jälkikäsittely: Suodata automaattisesti kohteilla, joilla on suora kysyntä** -asetus on merkityksellinen vain, jos määrität **Tuoterakenne version vaatimuksen** kattavuusryhmiin. Muussa tapauksessa parametria ei tarvitse ottaa käyttöön. 
+
+Ennen kattavuusvaihetta otetaan käyttöön esikattavuusvaihe, jonka aikana nimikkeet, joilla on kattavuus asetuksen **tuoterakenneversion vaatimus**, käsitellään uudelleen. Tämä tehdään sen varmistamiseksi, että vaaditun tuoterakenneversion nimikkeet suunnitellaan. Nimikkeille, joilla katsotaan olevan kysyntää esikäsittelyn aikana ei enää ole kysyntää ja siksi olisi jätettävä pois suunnitteluajosta.
 
 ## <a name="performance-checklist-summary"></a>Suorituskyvyn tarkistusluettelon yhteenveto
 

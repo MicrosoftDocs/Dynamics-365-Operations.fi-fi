@@ -1,9 +1,9 @@
 ---
 title: Laitteiston kokovaatimukset paikallisissa ympäristöissä
 description: Tässä ohjeaiheessa käsitellään laitteiston kokovaatimukset paikallisissa ympäristöissä
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8fa644f35a086af99cde74fd6a2062f9b59a6ff7
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812554"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870261"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Laitteiston kokovaatimukset paikallisissa ympäristöissä
 
@@ -137,7 +137,7 @@ Yleisesti saatavilla olevassa julkaisuversiossa voidaan ottaa käyttöön vain y
 
 ## <a name="environment-orchestrator"></a>Ympäristön Orchestrator-palvelu
 
-Orchestrator-palvelu hallitsee käyttöönottoa ja siihen liittyviä LCS-yhteyksiä. Palvelu otetaan käyttöön ensisijaisena Service Fabric -palveluna, ja sitä varten tarvitaan vähintään kolme VM-konetta. Palvelu on samassa sijainnissa kuin Service Fabricin Orchestration-palvelut. Sen koon pitäisi perustua klusterin suurimpaan kuormitukseen. Lisätietoja on ohjeaiheessa [Service Fabric -klusterin kapasiteettisuunnittelussa huomioon otettavaa](/azure/service-fabric/service-fabric-cluster-capacity).
+Orchestrator-palvelu hallitsee käyttöönottoa ja siihen liittyviä LCS-yhteyksiä. Palvelu otetaan käyttöön ensisijaisena Service Fabric -palveluna, ja sitä varten tarvitaan vähintään kolme VM-konetta. Palvelu on samassa sijainnissa kuin Service Fabricin Orchestration-palvelut. Sen koon pitäisi perustua klusterin suurimpaan kuormitukseen. Lisätietoja on ohjeaiheessa [Service Fabric -klusterin erillisen käyttöönoton suunnittelu ja valmistelu](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisointi ja ylitilaus
 

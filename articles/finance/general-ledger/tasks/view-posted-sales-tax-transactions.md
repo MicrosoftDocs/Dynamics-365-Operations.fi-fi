@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a2ff8b46d20fa012cbce817ae4e95b4799149ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f72f12e8afdf190865a77fc6153c0c0a111e5a7
+ms.sourcegitcommit: 2b09ad8aaaf9bc765f8abb0311a763c5e794a4d0
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175396"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2888606"
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Näytä kirjatut arvonlisäverotapahtumat
 
@@ -29,13 +29,13 @@ ms.locfileid: "2175396"
 
 Tässä ohjeaiheessa kuvataan kirjattujen arvonlisäverotapahtumien joitakin tarkastelutapoja. Voit tarkastella haluamiasi kirjattuja arvonlisäverotapahtumia eri sivuilta. Tässä tehtävässä käytetään esittely-yritystä USMF.
 
-# <a name="posted-sales-tax-page"></a>Kirjattu arvonlisävero -sivu
+## <a name="posted-sales-tax-page"></a>Kirjattu arvonlisävero -sivu
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Vero > Kyselyt ja raportit > Arvonlisäverokyselyt > Kirjattu arvonlisävero**.
 2. Rajaa näkymä tiettyihin tapahtumiin valitsemalla **Näytä suodattimet**.
 3. Sulje sivu.
 
-# <a name="sales-tax-settlement-periods-page"></a>Arvonlisäveron tilityskaudet -sivu
+## <a name="sales-tax-settlement-periods-page"></a>Arvonlisäveron tilityskaudet -sivu
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Vero > Välilliset verot > Arvonlisävero > Arvonlisäveron tilityskaudet**.
 2. Laajenna **Kausivälit**-osa.
@@ -43,7 +43,7 @@ Tässä ohjeaiheessa kuvataan kirjattujen arvonlisäverotapahtumien joitakin tar
 4. Voit suodattaa kirjattujen arvonlisäverotapahtumien luetteloa tarkemmin.
 5. Sulje sivu.
 
-# <a name="sales-tax-codes-page"></a>Arvonlisäverokoodit-sivu
+## <a name="sales-tax-codes-page"></a>Arvonlisäverokoodit-sivu
 
 1. Siirry kohtaan **Siirtymisruutu > Moduulit > Vero > Välilliset verot > Arvonlisävero > Arvonlisäverokoodit**.
 2. Valitse toimintoruudussa **Arvonlisäverokoodi**.

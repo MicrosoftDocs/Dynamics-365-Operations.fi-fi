@@ -3,7 +3,7 @@ title: Favicon-kuvakkeen lisääminen
 description: Tässä ohjeaiheessa kerrotaan, kuinka favicon-kuvake lisätään sivustoon.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58cb6c592351a96876532ef53d5d477ff93fafa1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 18e12cbe46650fcf024a56b6de9a8cb2903d2bf8
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2696988"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914568"
 ---
 # <a name="add-a-favicon"></a>Favicon-kuvakkeen lisääminen
 
@@ -64,6 +64,8 @@ Jos haluat lisätä favicon-tiedoston sivustoon, käytä samaa menetelmää, jon
 [Logon lisääminen](add-logo.md)
 
 [Sivuston teeman valitseminen](select-site-theme.md)
+
+[CSS-ohitustiedostojen parissa työskentely](css-override-files.md)
 
 [Tervetuloviestin lisääminen](add-welcome-message.md)
 

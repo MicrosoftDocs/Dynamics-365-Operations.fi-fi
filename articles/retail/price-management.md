@@ -3,7 +3,7 @@ title: Vähittäismyynnin hintojen hallinta
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Retailin myyntihintojen luontiin ja hallintaan liittyviä käsitteitä.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d8c6f8d7d368be8ffa192f8dee6b46a753b04cad
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025215"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934768"
 ---
 # <a name="retail-sales-price-management"></a>Vähittäismyyntihintojen hallinta
 
@@ -221,11 +221,11 @@ Samalla hinnoittelumoduulilla lasketaan kaikkien kanavien vähittäismyynnin hin
 
 Vähittäismyynnin hinnoittelu on suunniteltu toimimaan vähittäismyynnin yksiköiden eikä muiden kuin vähittäismyynnin yksiköiden kanssa. Se on suunniteltu nimenomaan määrittämään hinnat myymälöittäin eikä varastoittain.
 
-Vähittäismyynnin hinnoittelumoduuli ei tue seuraavia hinnoitteluominaisuuksia:
+Vähittäismyynnin hinnoittelumoduuli **ei tue** seuraavia hinnoitteluominaisuuksia:
 
-- Hinnan määrittäminen toimipaikan ja varaston varastodimensioiden avulla
-- Määritepohjainen hinnoittelu
-- Toimittajan alennuksen välitys
+- Hintojen määrittämistä toimipaikan tai toimipaikan ja varaston varastodimensioiden mukaan ei tueta. Jos määrität kauppasopimuksille vain toimipaikan dimension, vähittäismyynnin hinnoittelu ohittaa sivuston ja soveltaa kauppasopimusta kaikkiin sivustoihin. Jos määrität sekä toimipaikan että varaston, toiminta on määrittämätön/testaamaton, koska on odotettavissa, että vähittäismyyjät käyttävät myymälän hintaryhmiä kunkin myymälän/varaston hintojen hallintaan.
+- Määriteperusteista hinnoittelua ei tueta.
+- Toimittajan alennuksen läpivientiä ei tueta.
 
 Lisäksi **vain** vähittäismyynnin hinnoittelumoduuli tukee seuraavia hinnoitteluominaisuuksia:
 

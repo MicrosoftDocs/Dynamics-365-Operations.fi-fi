@@ -3,7 +3,7 @@ title: Pakolliset päivitykset
 description: Tässä ohjeaiheessa on luettelo Microsoft Dynamics 365 Financelle suunnitelluista ja julkaistuista pakollisista päivityksistä.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/23/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 480253d1401c567e27f636f8a2b19fa3937e89e5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: dc919d232f0e4f0cfbab372b9fdded2657906a1d
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770381"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934674"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -42,54 +42,42 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 
 |Suunniteltu julkaisupäivämäärä|Julkaisuversio|Maa tai alue|Pakollinen päivitys|
 |--------------------|---------------|-------|-------|
-|      marraskuu 2019          |   10.0.7(PEAP)      | Italia      |   Arvonlisäveron hallinnan muutokset D.L.:n toimesta 119, 23.10.2019: neljännesvuosittainen arvonlisäveroilmoitus (Lipe 2018)    |
-|      marraskuu 2019          |   10.0.7(PEAP)      | Italia      |   Retail – Asiakastietojen hallinta POS:ssä |
-|      marraskuu 2019          |   10.0.7(PEAP)      | Italia      |   Retail – Asiakastietojen tulostus verokuittiin | 
-|      marraskuu 2019          |   10.0.7(PEAP)      | Japani      |   Kulutusverokannan muutos ja alennettu verokanta otetaan käyttöön (lakun asettelut) | 
-|      marraskuu 2019          |   10.0.7(PEAP)      | Meksiko      |   Säännön 2.7.2.9 päivitys – CFDI-asiakirjan laativan tahon postinumeron aikavyöhykkeen käyttö | 
-|      marraskuu 2019          |   10.0.7(PEAP)      | Yhdistynyt kuningaskunta     |   Making Tax Digital – Arvonlisäveron palautusraportin luominen yrityksille, jotka ilmoittavat alv:n ryhmänä samassa järjestelmätietokannassa v. 10 | 
-|      Marraskuu–elokuu 2019          |   10.0.7(PEAP), 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilia      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.20    |
-|      Marraskuu–elokuu 2019          |   10.0.7(PEAP), 10.0.6      | Brasilia      |   DRCST-ilmoituksen SC   |
-|      Marraskuu–elokuu 2019          |   10.0.7(PEAP), 10.0.6      | Italia      |   Arvonlisäveron hallinnan muutokset D.L.:n toimesta 119, 23.10.2018 – Dynamics 365 for Finance and Operations  |
-|      Elokuu 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilia      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.10    |
-|      Elokuu 2019          |   10.0.6, 10.0.5HF      | Brasilia     |   Rio de Janeiron osavaltio on ottanut uuden lainsäädännön käyttöön koskien EFD-ICMS/IPI-käytäntöä. Rio de Janeiron (RJ) täytäntöönpanon päätöslauselma 13/19 koskee erityismenettelyjä, joita sovelletaan syyttämättä jättämiseen     |
-|      Elokuu 2019          |   10.0.6      | Brasilia      |   Veroilmoitus CAT 42/18    |
-|      Elokuu 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japani      |   Kulutusverokannan muutos ja alennettu verokanta otetaan käyttöön    |
-|      Elokuu - Heinäkuu 2019          |   10.0.5, 10.0.4HF, 10.0.3HF      | Espanja      |   Espanja: SII: Kelpoisuussääntöjen muutos 1. lokakuuta 2019 lähtien    |
-|      Heinäkuu 2019          |   10.0.5, 10.0.4HF, 10.0.2HF      | Brasilia      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.00  |
-|      Heinäkuu 2019          |   10.0.5      | Brasilia      |   Sped-osallistumisen käytännön opas 1.31. Uusi ohjeistus    |
-|      Heinäkuu 2019          |   10.0.5      | Meksiko      |   MX -CFDI 3.3 - IEPS-verotapahtumien tietojen XML-muodossa tulisi olla valinnaisia asiakasprofiilista riippuen    |
-|      Kesäkuu - Heinäkuu 2019          |   10.0.5, 10.0.3HF      | Yhdistynyt kuningaskunta      |   Making Tax Digital - petosten ehkäisyn parametrit alkuperäisestä laitteesta - 10.0.5    |
-|      Toukokuun 2019.          |   10.0.4      | Brasilia      |   Saapuva veroasiakirja 66    |
-|      Toukokuun 2019.          |   10.0.4, 10.0.3HF, 10.02HF, 10.0.1HF      | Brasilia      |   NF-e-asetus 54.308/18 - RS    |
-|      Toukokuun 2019.          |   10.0.4, 10.0.3HF, 10.0.2HF, 10.0.1HF      | Brasilia      |   NF-e ja NFC-e - Päätös 13/2019 ja säädös SUCIEF 55/2019- RJ - uudet ehdot poikkeustunnisteiden tulosteessa NF-e:ssä    |
-|      Toukokuun 2019.          |   10.0.4, 10.0.3HF      | Intia      |   Toimituspaikan ja osavaltion näyttäminen GST-verolaskussa    |
-|      Toukokuun 2019.          |   10.0.4      | Meksiko      |   DIOT kolmannen osapuolen ilmoitus - asettelumuutokset layout 2019    |
-|      Huhtikuun 2019.          |   10.0.3      | Brasilia      |   ICMS:n verotusasiakirjan oikaisut mahdollistavat taulun 5.2    |
-|      Huhtikuun 2019.          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brasilia      |   NF-e uusi NT 2018.005-v. 1,20    |
-|      Huhtikuun 2019.          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brasilia     |   SPED ECD -asettelu 7    |
-|      Huhtikuun 2019.          |   10.0.3      | Brasilia      |   SPED ECF - Layout 5 for 2019    |
-|      Huhtikuun 2019.          |   10.0.3      | Intia      |   Veron oikaisu tullivaluuttana BOE:ssa tapahtumavaluutan käyttämisen sijaan    |
-|      Huhtikuun 2019.          |   10.0.3      | Intia      |   Veron laskeminen tullivaluuttana BOE:ssa tapahtumavaluutan käyttämisen sijaan   |
-|      Huhtikuun 2019.          |   10.0.3, 10.02HF, 10.0.1HF      | Intia      |   IEC-numeron muodon muutos    |
-|      Huhtikuun 2019.          |   10.0.3      | Liettua      |   Liettuan i.SAF-raportti sallii käyttäjän määrittää järjestelmän arvon lisäverokoodit yrityksen verokoodien kanssa)    |
-|      Huhtikuun 2019.          |   10.0.3      | Puola      |   SAF-laskujen (JPK_FA) v.2, 1. heinäkuuta 2019 alkaen    |
-|      Huhtikuun 2019.          |   10.0.2      | Italia      |   Italia: "New Spesometro" (Estermetro) tukemaan tiedostojen jakamista tiedostomäärän ja tietueiden määrän rajojen mukaan    |
-|      Huhtikuun 2019.          |   10.0.1      |    Itävalta     |Retail – Kirjanpidon integrointi         |
-|      Huhtikuun 2019.          |   10.0.1      |    Eurooppa     |Sähköinen laskutus – asiakaslaskujen vienti PEPPOL BIS 3 -muodossa         |
-|      Huhtikuun 2019.          |   10.0.1      |    Eurooppa     |Sähköinen laskutus – toimittajalaskujen tuonti PEPPOL BIS 3 -muodosta         |
-|      Huhtikuun 2019.          |   10.0.1      |   Saksa     |Sähköinen laskutus – asiakaslaskujen vienti xRechnung 1.1 -muodossa         |
-|      Huhtikuun 2019.          |   10.0.1      | Unkari      |  Unkari: online-laskutus v. 1.1 2019  |
-|      Huhtikuun 2019.          |   10.0.1      | Japani      |  2019 Japanin kalenterin aikakauden muutos  |
-|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |Kiinteistöveroilmoitusmuutokset vuodelta 2018 |
-|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |[Arvioitu veroilmoitus](rus-assessed-tax-declaration.md)|
-|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |Kuljetusveroilmoitusmuutokset vuodelta 2019  |
-|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |[ALV-ilmoitus](rus-VAT-declaration.md) |
-|      Huhtikuun 2019.          |   10.0.1      |    Venäjä     |ALV-ilmoituksen muotoilu muuttuu 2019 alkaen (myynti- ja ostokirjat) |
-|      Huhtikuun 2019.          |   10.0.1      |    Yhdistynyt kuningaskunta     |[Finance and Operationsin valmistelu ALV:n MTD-integraatiota varten](emea-gbr-mtd-vat-integration.md)    |    
-|      Maaliskuun 2019.          |   10.0.0      |    Itävalta   |   Kammerumlage 2019:n muutokset (ostovero)    |
-|      Maaliskuun 2019.          |   10,0,0      |    Brasilia    |     SPED EFD -maksut – asettelu 004 ja 005  |
-|      Maaliskuun 2019.          |   10,0,0      |    Malesia     |Malesia korvaa GST-veron SST-myynti- ja palveluverolla        |
+|      Brasilia        |   2019. joulukuuta       | 10.0.8      |   Sped Fiscal-asettelu 014 |
+|      Brasilia         |   Marraskuu–elokuu 2019       | 10.0.7, 10.0.6HF, 10.0.5HF, 10.0.4HF      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.20    |
+|      Brasilia          |   Marraskuu–elokuu 2019       | 10.0.7, 10.0.6      |   DRCST-ilmoituksen SC   |
+|      Brasilia         |   Elokuu 2019       | 10.0.6HF, 10.0.5HF, 10.0.4HF      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.10    |
+|      Brasilia          |   Elokuu 2019      | 10.0.6HF, 10.0.5HF, 10.0.4HF     |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.10    |
+|      Brasilia          |   Elokuu 2019      | 10.0.6, 10.0.5HF     |   Rio de Janeiron osavaltio on ottanut uuden lainsäädännön käyttöön koskien EFD-ICMS/IPI-käytäntöä. Rio de Janeiron (RJ) täytäntöönpanon päätöslauselma 13/19 koskee erityismenettelyjä, joita sovelletaan syyttämättä jättämiseen     |
+|      Brasilia          |   Elokuu 2019      | 10.0.6        |   Veroilmoitus CAT 42/18    |
+|      Brasilia          |   Heinäkuu 2019     | 10.0.5, 10.0.4HF, 10.0.2HF      |   Uusi versio teknisistä huomautuksista NF-e: NT 2019.001 Version 1.00  |
+|      Brasilia          |   Heinäkuu 2019     | 10.0.5      |   Sped-osallistumisen käytännön opas 1.31. Uusi ohjeistus    |
+|      Brasilia          |   Toukokuun 20191.     | 10.0.4      |   Saapuva veroasiakirja 66    |
+|      Brasilia          |   Toukokuun 2019.      | 10.0.4      |   NF-e-asetus 54.308/18 - RS    |
+|      Brasilia          |   Toukokuun 2019.      | 10.0.4      |   NF-e ja NFC-e - Päätös 13/2019 ja säädös SUCIEF 55/2019- RJ - uudet ehdot poikkeustunnisteiden tulosteessa NF-e:ssä    |
+|      Intia          |   Elokuu 2019     | 10.0.6       |   Vähittäismyynti: asiakkaan rekisteröintinumeroiden hallinta myyntipisteessä Intiassa    |
+|      Intia          |   Toukokuun 2019.     | 10.0.4      |   Toimituspaikan ja osavaltion näyttäminen GST-verolaskussa    |
+|      Italia          |   2019. joulukuuta       | 10.0.8      |   Arvonlisäveron hallinnan muutokset D.L.:n toimesta 119/23 loka 2018: Vuosittainen veroviestintä |
+|      Italia         |   marraskuu 2019       | 10.0.7      |   Arvonlisäveron hallinnan muutokset D.L.:n toimesta 119, 23.10.2019: neljännesvuosittainen arvonlisäveroilmoitus (Lipe 2018)    |
+|      Italia         |   marraskuu 2019     | 10.0.7      |   Retail – Asiakastietojen hallinta POS:ssä |
+|      Italia         |   marraskuu 2019      | 10.0.7      |   Retail – Asiakastietojen tulostus verokuittiin |
+|      Italia         |   Marraskuu–elokuu 2019     | 10.0.7, 10.0.6      |   Arvonlisäveron hallinnan muutokset D.L.:n toimesta 119, 23.10.2018 – Dynamics 365 for Finance and Operations  |
+|      Italia          |   Elokuu 2019      | 10.0.6      |   ALV-rekisterin päivämäärä    |
+|      Italia          |   Elokuu 2019     | 10.0.6      |   ALV-hallinnointi ALV-rekisterin päivämäärän mukaan    |
+|      Japani          |   Joulukuu - marraskuu 2019     | 10.0.8, 10.0.7HF       |   Kulutusverokannan muutos ja alennettu verokanta otetaan käyttöön (Kulutusveroraportti) |
+|      Japani         |   marraskuu 2019      | 10.0.7       |   Kulutusverokannan muutos ja alennettu verokanta otetaan käyttöön (lakun asettelut) |
+|      Japani          |   marraskuu 2019     | 10.0.6HF     |   Kulutusverokannan muutos ja alennettu verokanta otetaan käyttöön (Kulutusveroraportti)  |
+|      Japani          |   Elokuu 2019      | 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      |   Kulutusverokannan muutos ja alennettu verokanta otetaan käyttöön    |
+|      Meksiko          |   Joulukuu - lokakuu 2019    | 10.0.8, 10.0.7HF, 10.0.6HF        |   Retail -  CFDI Global: Misc. Resol 2019 - c_CodigoPostal and Timezone |
+|     Meksiko          |   Marraskuu - syyskuu 2019       | 10.0.7, 10.0.6HF      |   Säännön 2.7.2.9 päivitys – CFDI-asiakirjan laativan tahon postinumeron aikavyöhykkeen käyttö |
+|      Meksiko           |   Joulukuu - lokakuu 2019      | 10.0.8, 10.0.7HF, 10.0.6HF     |   Koodin oikeellisuustarkistus tuote- ja palvelukatalogissa |
+|      Meksiko         |   Heinäkuu 2019     | 10.0.5      |   MX -CFDI 3.3 - IEPS-verotapahtumien tietojen XML-muodossa tulisi olla valinnaisia asiakasprofiilista riippuen    |
+|      Meksiko          |   Toukokuun 2019.     | 10.0.4      |   DIOT kolmannen osapuolen ilmoitus - asettelumuutokset layout 2019    |
+|      Puola          |   Marraskuu - lokakuu 2019     | 10.0.7, 10.0.6HF Puola     |   Pakollinen jaettu maksu - 10.0.7 |
+|      Singapore           |   2019. joulukuuta     | 10.0.7      |   GST-palautusraportit |
+|      Espanja          |   Elokuu - Heinäkuu 2019      | 10.0.5, 10.0.4 HF      |   Espanja: SII: Kelpoisuussääntöjen muutos 1. lokakuuta 2019 lähtien    |
+|      Yhdistynyt kuningaskunta          |   2019. joulukuuta       | 10.0.8      |   Tax Digital (MTD)-suostumus järjestelmänvalvojan tietojen siirtämiseen D365:n ulkopuolelle käyttämällä HMRC-integraatiota |
+|      Yhdistynyt kuningaskunta          |   marraskuu 2019     | 10.0.7     |   Making Tax Digital – Arvonlisäveron palautusraportin luominen yrityksille, jotka ilmoittavat alv:n ryhmänä samassa järjestelmätietokannassa v. 10 |
+|      Yhdistynyt kuningaskunta          |   Kesäkuu - Heinäkuu 2019      | 10.0.5     |   Making Tax Digital - petosten ehkäisyn parametrit alkuperäisestä laitteesta - 10.0.5    |
 
 
 

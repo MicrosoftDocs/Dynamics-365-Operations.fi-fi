@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: abd215243cbda68ba3f57b5fa41054a10745d11f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5f5bb3432ba3e57a4ef08dfa3c25cb61705efc33
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551023"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898755"
 ---
 # <a name="work-with-date-and-time-in-microsoft-dynamics-365-talent"></a>Päivämäärän ja ajan käyttäminen Microsoft Dynamics 365 Talentissa
-
-[!include [banner](includes/banner.md)]
 
 **Päivämäärä- ja Aika-** kentät ovat Dynamics 365 Talentin peruskäsitteitä. On tärkeää ymmärtää, miten **Päivämäärä ja aika** -tietoja käytetään Dynamics 365 -lomakkeessa, Common Data Servicessä ja ulkoisissa lähteissä.
 

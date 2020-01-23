@@ -3,7 +3,7 @@ title: Power Appsin upottaminen
 description: Tässä ohjeaiheessa käsitellään Power Appsin upottamista asiakasohjelmaan laajentamaan tuotteen toimintoja.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 755a30f89725ca0a7e1c14252984c617d6ba280e
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 8b5e64cb9ba916f9cbd628703394318b4044867b
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824490"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870238"
 ---
 # <a name="embed-microsoft-power-apps"></a>Microsoft Power Appsin upottaminen
 
@@ -55,7 +55,7 @@ Seuraavissa ohjeissa näytetään, miten Power App upotetaan verkkoasiakkaaseen.
 
     - **Nimi**-kentässä on sen painikkeen tai välilehden teksti, joka sisältää upotetun Power Appin. Power Appin nimi on usein toistettava tässä kentässä.
     - **Sovelluksen tunnus** on upotettavan Power Appin GUID-tunnus. Voit noutaa tämän arvon etsimällä Power Appin sivustossa [web.powerapps.com](https://web.powerapps.com) ja siirtymällä sitten **Sovelluksen tunnus** -kenttään **Tiedot**-kohdassa.
-    - Voit vaihtoehtoisesti valita **Anna Power App -kohteen tiedot** -kohdassa kentän, joka sisältää Power Appille syötteenä välitettävät tiedot. Lisätietoja tavoista, joilla Power App voi käyttää Finance and Operations -sovelluksista lähetettyjä tietoja, on jäljempänä tässä ohjeaiheessa kohdassa [Finance and Operations -sovellusten tietoja hyödyntävän Power Appin muodostaminen](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps).
+    - Voit vaihtoehtoisesti valita **Anna Power App -kohteen tiedot** -kohdassa kentän, joka sisältää Power Appille syötteenä välitettävät tiedot. Lisätietoja tavoista, joilla Power App voi käyttää Finance and Operations -sovelluksista lähetettyjä tietoja, on jäljempänä tässä ohjeaiheessa kohdassa [Finance and Operations -sovellusten tietoja hyödyntävän Power Appin muodostaminen](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps).
     - Valitse upotettavan Power Appin tyyppiä vastaava **sovelluksen koko**. Jos Power Apps luodaan mobiililaitteille, valitse **Ohut**. Jos Power Apps luodaan tableteille, valitse **Leveä**. Tämä varmistaa, että upotetulle Power Appille on varattu riittävästi tilaa.
     - **Yritykset**-pikavälilehdessä voi valita, mitkä yritykset voivat käyttää Power Appia. Power App näytetään oletusarvoisesti kaikille yrityksille.
 
@@ -101,7 +101,7 @@ Muokkaa upotetun Power Appin määritystä seuraavasti:
 
 Upotetun Power Appin voi tarvittaessa poistaa sivulta käyttämällä jompaakumpaa seuraavaa tapaa:
 
-- Siirry **Muokkaa Power App -sovellusta** -ruutuun tämän ohjeaiheen aiemmin käsitellyn osan [Upotetun Power Appin muokkaaminen](#editing-an-embedded-powerapp) ohjeiden avulla. Vahvista, että ruudussa on sen upotetun Power Appin tiedot, jonka haluat poistaa, ja valitse sitten **Poista**-painike.
+- Siirry **Muokkaa Power App -sovellusta** -ruutuun tämän ohjeaiheen aiemmin käsitellyn osan [Upotetun Power Appin muokkaaminen](#editing-an-embedded-power-app) ohjeiden avulla. Vahvista, että ruudussa on sen upotetun Power Appin tiedot, jonka haluat poistaa, ja valitse sitten **Poista**-painike.
 - Koska upotettu Power App on tallennettu mukautuksen tietoina, sivun mukautuksen tyhjentäminen poistaa myös kaikki sivulle upotetut Power Apps -sovellukset. Huomaa, että sivun mukautukset tyhjennetään pysyvästi. Tyhjennystä ei voi peruuttaa. Voit poistaa sivun mukautukset valitsemalla ensin **Asetukset** ja sitten **Mukauta tämä lomake**. Valitse **Hallinta**-valikossa **Tyhjennä**-painike. Kaikki tämän sivun edelliset mukautukset poistetaan, kun selain päivitetään. Lisätietoja sivujen optimoinnista mukauttamisen avulla on kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md).
 
 ## <a name="appendix"></a>Liite

@@ -3,7 +3,7 @@ title: Kysynnän ennustepalveluiden yleiskatsaus
 description: Kysynnän ennusteita käytetään ennustamaan riippumatonta kysyntää myyntitilauksista ja sidonnaista kysyntää missä tahansa myyntitilausten erotuskohdassa. Tarkennetut ennustevähennyssäännöt tarjoavat ihanteellisen ratkaisun joukkomukauttamiseen.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9280a2580d20d64f6542902aab1dbf55434bf84c
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815154"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935511"
 ---
 # <a name="demand-forecasting-overview"></a>Kysynnän ennustepalveluiden yleiskatsaus
 
@@ -32,7 +32,7 @@ ms.locfileid: "2815154"
 
 Kysynnän ennusteita käytetään ennustamaan riippumatonta kysyntää myyntitilauksista ja sidonnaista kysyntää missä tahansa myyntitilausten erotuskohdassa. Tarkennetut ennustevähennyssäännöt tarjoavat ihanteellisen ratkaisun joukkomukauttamiseen.
 
-Perusennusteen luonnissa historiallisten tapahtumien yhteenveto viedään Microsoft Azuren automaattianalyysipalveluun, jota isännöidään Azuressa. Koska tätä palvelua ei jaeta käyttäjien kesken, sitä voidaan mukauttaa alakohtaisten vaatimusten täyttämiseksi. Voit käyttää Supply Chain Managementia ennusteen visualisointiin ja muuttamiseen sekä ennusteen tarkkuutta koskevien suorituskykyilmaisimien (KPI:t) tarkastelemiseen.
+Perusennusteen luonnissa historiallisten tapahtumien yhteenveto viedään Microsoft Azuren automaattianalyysiin, jota isännöidään Azuressa. Koska tätä palvelua ei jaeta käyttäjien kesken, sitä voidaan mukauttaa alakohtaisten vaatimusten täyttämiseksi. Voit käyttää Supply Chain Managementia ennusteen visualisointiin ja muuttamiseen sekä ennusteen tarkkuutta koskevien suorituskykyilmaisimien (KPI:t) tarkastelemiseen.
 
 ## <a name="key-features-of-demand-forecasting"></a>Kysynnän ennusteen tärkeimmät ominaisuudet
 Tässä on muutamia kysynnän ennusteiden pääominaisuuksia:
@@ -51,7 +51,7 @@ Kysynnän ennusteissa käytetään kolmea pääteemaa:
 -   **Microsoft-pinon uudelleenkäyttö** – Microsoft toi markkinoille automaattianalyysialustan helmikuussa 2015. Automaattianalyysipalvelu, joka on nyt osa Cortana Analytics Suite -ohjelmistoa, tarjoaa mahdollisuuden luoda nopeasti ja helposti ennustavia analyysikokeiluja kuten kysynnän arviokokeiluja, käyttämällä algoritmeja R tai Python-ohjelmointikieltä ja yksinkertaista vedä-ja-pudota käyttöliittymää.
     -   Voit ladata kysynnän ennusteen kokeilut, muuttaa niitä niin, että ne vastaavat liiketoimintasi tarpeita, julkaista ne verkkopalvelussa Azuressa ja käyttää niitä kysynnän ennusteiden luomiseen. Kokeilut ovat ladattavissa, jos olet ostanut tuotannon suunnittelutoiminnon Supply Chain Management -tilauksen yritystason käyttäjänä.
     -   Voit ladata minkä tahansa saatavilla olevan kysynnän ennustekokeilun kohdasta [Cortana Analytics -galleria](https://gallery.cortanaanalytics.com/). Kysynnän ennusteen kokeilut integroidaan automaattisesti Supply Chain Managementiin, mutta asiakkaiden ja kumppanien on käsiteltävä niiden kokeilujen integraatiot, jotka he lataavat [Cortana Analytics -galleriasta](https://gallery.cortanaanalytics.com/). Näin ollen [Cortana Analytics -gallerian](https://gallery.cortanaanalytics.com/) kokeilujen käyttö ei ole yhtä suoraviivaista kuin Finance and Operationsin kysynnän ennusteen kokeilujen käyttö. Sinun on muokattava kokeilujen koodia niin, että ne käyttävät Finance and Operationsin ohjelmointirajapintaa.
-    -   Voit luoda omat kokeilusi Microsoft Azuren automaattianalyysipalvelussa, julkaista ne Azuren palveluissa ja käyttää niitä kysynnän ennusteiden luomiseen.
+    -   Voit luoda omat kokeilusi Microsoft Azuren automaattianalyysipalvelussa (perinteinen), julkaista ne Azuren palveluissa ja käyttää niitä kysynnän ennusteiden luomiseen.
     -   Jos et tarvitse korkeaa suorituskykyä tai jos sinun ei tarvitse käsitellä suurta tietojen määrää, voit käyttää automaattianalyysipalveluiden vapaata tasoa. Suosittelemme, että aloitat aina tältä tasolta, etenkin käyttöönotto- ja testausvaiheiden aikana. Jos tarvitset korkeampaa suorituskykyä ja lisätallennustilaa, voit käyttää automaattianalyysipalveluiden standarditasoa. Tämä taso vaatii Azure-tilauksen ja siihen liittyy lisäkustannuksia. Saat lisätietoja automaattianalyysipalveluiden hinnoittelusta kohdassa [Automaattianalyysipalveluiden hinnoittelu](https://aka.ms/machine-learning-price-info).
 -   **Ennusteen vähennys missä tahansa erotuskohdassa** – Tähän toimintoon perustuvien koontien kysynnän ennusteessa, jonka avulla voit ennustaa sekä sidonnaista että riippumatonta kysyntää missä tahansa erotuskohdassa.
 

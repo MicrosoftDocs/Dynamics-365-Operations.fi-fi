@@ -3,7 +3,7 @@ title: Manuaalisten oikaisujen tekeminen perusennusteeseen
 description: Tässä ohjeaiheessa kerrotaan, miten voit tehdä manuaalisia oikaisuja perusennusteeseen ja tarkastella ennusteen tietoja.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8897e0fe01e7ed5af9a8d5b99de6b9b4506554f1
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1c9963a54a052549a6bfeabcb3d91b7b0f3cf68e
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815131"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935413"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Manuaalisten oikaisujen tekeminen perusennusteeseen
 
@@ -70,8 +70,9 @@ Voit avata **Kysynnän ennusteen tiedot** -sivun nähdäksesi ennustetta koskevi
 
 **Huomautuksia:**
 
+-   Jos otat **Ennustemallin valinnan käyttöön kysynnän ennusteen tiedoissa** ominaisuuksien hallinnasta, voit valita ennustemallit, jotka sisällytetään historialliseen ennusteeseen **Kysynnän ennusteen tiedot** -sivulla.
 -   Sivun **Ennuste** -kohdassa näkyvä luottamusväli kuvaa luottamusvälin ylärajan ja luottamusvälin alarajan erotusta. Jos haluat nähdä ylärajan ja alarajan arvot, pidä kohdistinta **Historiallinen kysyntä ja ennuste graafisesti** -osiossa olevan kaavion yläpuolella.
--   Jos käytät kysynnän ennustamisen Microsoft Azuren automaattianalyysipalvelua, voit määrittää luotettavuustasoprosentin, joka luodulla ennusteella tulee olla. Luottamusväli koostuu arvoalueesta, joka toimii hyvinä ennusteina kysynnän ennusteelle. 95 prosentin luotettavuustasoprosentti osoittaa, että on 5 %:n riski, että kysynnän ennuste on luottamusvälin ulkopuolella.
+-   Jos käytät kysynnän ennustamisen Microsoft Azuren automaattianalyysiä, voit määrittää luotettavuustasoprosentin, joka luodulla ennusteella tulee olla. Luottamusväli koostuu arvoalueesta, joka toimii hyvinä ennusteina kysynnän ennusteelle. 95 prosentin luotettavuustasoprosentti osoittaa, että on 5 %:n riski, että kysynnän ennuste on luottamusvälin ulkopuolella.
 
 Voit myös tehdä manuaalisia oikaisuja ennusteeseen **Kysynnän ennusteen tiedot** -sivulla muokkaamalla **Ennuste**-rivin arvoja **Ennuste**-osiossa.
 
