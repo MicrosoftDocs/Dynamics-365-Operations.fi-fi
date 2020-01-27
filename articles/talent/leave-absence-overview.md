@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ebfaeb0696d7200ddf3c715f96a259b91db08e7a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3376a9aec5c0003e9cc7c076c4d221a697df61ce
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517880"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898291"
 ---
 # <a name="leave-and-absence-management"></a>Lomien ja poissaolojen hallinta
-
-[!include [banner](includes/banner.md)]
 
 **Loman ja poissaolojen hallinta** -moduuli on joustava kehys poissaolojen hallintaprosessin määrittämiselle. Loma- ja poissaolosuunnitelmat voidaan luoda määrittämään, miten työntekijöiden lomat jaksotetaan tai miten niitä heille myönnetään. Kun työntekijät ovat rekisteröityneet suunnitelmaan, työntekijät voivat lähettää lomapyyntöjä esimiesten hyväksyttäväksi. Loman seurannan avulla sekä ensimmäisen tason esimiehet että henkilöstöpäälliköt voivat nähdä, ketkä ovat parhaillaan lomalla ja kuinka paljon heillä on lomaa jäljellä.  
 

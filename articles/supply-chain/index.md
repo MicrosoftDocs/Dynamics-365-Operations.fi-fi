@@ -3,7 +3,7 @@ title: Supply Chain Managementin ohjeresurssit
 description: Tällä sivulla on luettelo Supply Chain Managementin toimintoja koskevista ohjeaiheista ja muista resursseista.
 author: josaw1
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 11/26/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4926cd63aa360c7e08a0a435f7609017f02cb229
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0b5f82d76f2e285b6318d900d41919aae14ec71a
+ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814418"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853985"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Supply Chain Managementin ohjeresurssit
 
@@ -115,7 +115,6 @@ Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -s
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Kustannuslaskennan käytännön harjoituksia</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean-valmistus: saatavuus (CTP) ja kanban-töiden ajoitus</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Tuoterakenteen laskenta kustannuslaskelmaa käyttäen</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Varaston liikkuvuus helpottuu Microsoft Dynamics 365 for Finance and Operations -ohjelman avulla</a>
 
 ## <a name="elearning-courses"></a>eLearning-kurssit
 Tietoja Dynamics 365 -koulutuksesta esitetään <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics -oppimisportaalissa</a>. (CustomerSource-käyttäjätili tarvitaan) 

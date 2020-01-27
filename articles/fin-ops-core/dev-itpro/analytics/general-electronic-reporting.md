@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771070"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933929"
 ---
 # <a name="electronic-reporting-er-overview"></a>Sähköisen raportoinnin (ER) yleiskatsaus
 
@@ -51,12 +51,12 @@ Sähköisessä raportointimoduulissa on seuraavat toiminnot:
 
 Sähköinen raportointi tukee kahdenlaisia osia: **tietomalleja** ja **muotoa**.
 
-#### <a name="data-model-components"></a>Tietomalliosat
+#### <a name="data-model-and-model-mapping-components"></a>Tietomallin ja mallin yhdistämismäärityksen osat
 
 Tietomallikomponentti on tietorakenne abstrakti kuvaus. Sen avulla tietty liiketoiminnan toimialue voidaan selittää riittävän yksityiskohtaisesti kyseisen toimialueen raportointitarpeiden mukaisesti. Tietomalliosassa on seuraavat osat:
 
-- Tietomalli joukkona toimialuekohtaisia liiketoimintayksiköitä ja rakenteeltaan hierarkkisena määrityksenä kyseisten yksiköiden välisistä suhteista.
-- Mallin yhdistämismääritykset, jotka linkittävät valitut sovelluksen tietolähteet yksittäisiin tietomallin elementteihin ja jotka määrittävät suorituksenaikaisen tiedonkulun ja säännöt liiketoiminnan tietojen täyttämiseen tietomalliosassa.
+- <a name="DataModelComponent"></a>Tietomalli joukkona toimialuekohtaisia liiketoimintayksiköitä ja rakenteeltaan hierarkkisena määrityksenä kyseisten yksiköiden välisistä suhteista.
+- <a name="ModelMappingComponent"></a>Mallin yhdistämismääritykset, jotka linkittävät valitut sovelluksen tietolähteet yksittäisiin tietomallin elementteihin ja jotka määrittävät suorituksenaikaisen tiedonkulun ja säännöt liiketoiminnan tietojen täyttämiseen tietomalliosassa.
 
 Tietomallin liiketoimintayksikkö ilmaistaan säilönä (tietue). Liiketoimintayksikön ominaisuudet esitetään tietokohteina (kentät). Kullakin tiedolla on yksilöllinen nimi, otsikko, kuvaus ja arvo. Kunkin tiedon arvo voidaan suunnitella tunnistettavaksi esimerkiksi merkkijonona, kokonaislukuna, reaalilukuna, päivämääränä, valintalistan tyyppinä tai totuusarvona. Se voi olla myös toinen tietue tai tietueluettelo.
 
@@ -81,7 +81,7 @@ Saapuvia sähköisiä asiakirjoja tukevassa mallin yhdistämismäärityksessä o
 
 Tietomallikomponentti on suunniteltu käytettäväksi kullakin liiketoiminnan toimialueella yhtenäisenä tietolähteenä raportoinnissa, joka eristää raportoinnin Finance and Operationsin tietolähteiden fyysisestä toteuttamisesta. Se kuvaa toimialuekohtaisia liiketoimintakonsepteja ja toimintoja muodossa, joka tehostaa raportointimuotojen alkusuunnittelua ja sen jälkeisestä ylläpitoa.
 
-#### <a name="format-components-for-outgoing-electronic-documents"></a>Lähtevien sähköisten asiakirjojen muotokomponentit
+#### <a name="FormatComponentOutbound"></a>Lähtevien sähköisten asiakirjojen muotokomponentit
 
 Muoto-osa on raporttitulostuksen malli, joka luodaan suorituksen aikana. Malli sisältää seuraavat elementit:
 
@@ -107,7 +107,7 @@ Seuraavassa kuvassa osoitetaan tiedonkulku näissä muodoissa.
 
 Voit suorittaa yksittäisen sähköisen raportoinnin muotomäärityksen ja luoda lähtevän sähköisen asiakirjan tunnistamalla muotomääritysten yhdistämismääritykset.
 
-#### <a name="format-components-for-incoming-electronic-documents"></a>Saapuvien sähköisten asiakirjojen muotokomponentit
+#### <a name="FormatComponentInbound"></a>Saapuvien sähköisten asiakirjojen muotokomponentit
 Muotokomponentti on saapuvan asiakirjan malli, joka tuodaan suorituksen aikana. Malli sisältää seuraavat elementit:
 
 - Muoto, joka määrittää suorituksen aikana tuodun, tietoja sisältävän saapuvan sähköisen asiakirjan rakenteen ja sisällön. Saapuva asiakirja jäsennetään muotokomponentin avulla eri muodoissa, kuten teksti- ja XML-muodossa.
@@ -144,7 +144,7 @@ Sähköisten raportointiosien käyttöoikeus määräytyy maan/alueen ISO-koodia
 
 Tietomuoto-osien eri versioilla voi olla erilaiset ISO-maa/aluekoodeja koskevat asetukset.
 
-#### <a name="configuration"></a>Määritys
+#### <a name="Configuration"></a>Määritys
 
 Sähköinen raportointimääritys on tietyn sähköisen raportointikomponentin paketoija. Kyse voi olla joko tietomallikomponentista tai muotokomponentista. Määritykset voivat sisältää sähköisen raportointikomponentin eri versioita. Kukin määritys merkitään tietyn määrityslähteen omistamaksi. Määritysten osan **Luonnos**-versiota voidaan muokata, jos kyseisten määritysten omistaja on valittu sovelluksen sähköisten raportointiasetusten aktiiviseksi lähteeksi.
 
@@ -154,13 +154,13 @@ Luodussa muotomäärityksessä on muotokomponentti. Alkuperäisten mallimäärit
 
 Sähköiset raportointimääritykset jaetaan sovelluksen yrityksille.
 
-#### <a name="provider"></a>Palvelu
+#### <a name="Provider"></a>Palvelu
 
 Sähköinen raportointipalvelu on osapuolen tunniste, jota ilmaistaan sähköisten raportointimääritysten tekijä (omistaja). Voit hallita sähköisen raportoinnin avulla määrityspalvelujen luetteloa. Sähköisille asiakirjoille Finance and Operations -ratkaisun osana julkaistujen muotomääritysten omistajaksi merkitään **Microsoftin** määrityspalvelu.
 
 Lisätietoja uuden sähköisen raportointipalvelun rekisteröimisestä on tehtäväoppaassa **ER Konfiguraation lähteen luominen ja merkitseminen aktiiviseksi** (liiketoimintaprosessin **7.5.4.3 IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen (10677)** osa).
 
-#### <a name="repository"></a>Säilö
+#### <a name="Repository"></a>Säilö
 
 Sähköiset raportointimääritykset tallennetaan sähköisen raportoinnin säilöön. Tällä hetkellä tuetaan seuraavia ER-säilötyyppejä: 
 

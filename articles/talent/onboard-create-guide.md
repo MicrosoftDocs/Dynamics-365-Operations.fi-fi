@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a095fe97b05898403b501763204a462ee8dcc12a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814625"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898245"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-talent---onboard"></a>Perehdytysoppaan luominen ja lähettäminen Dynamics 365 Talent: Onboardin avulla
+# <a name="create-and-send-an-onboarding-guide"></a>Perehdytysoppaan luominen ja lähettäminen
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +42,7 @@ Kun olet luonut perehdytysoppaan, voit lähettää sen uudelle työntekijälle. 
 
 5. Anna **Luo opas** -ikkunan **Ketä olet perehdyttämässä?** -kohdassa uuden työntekijän nimi tai sähköpostiosoite. Jos uutta työntekijää ei ole vielä lisätty järjestelmään, valitse **Lisää nyt** ja anna työntekijän tiedot.
 
-    ![[Perehdytysoppaan tietojen antaminen](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Onboarding-oppaan tietojen syöttäminen](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 6. Valitse **Milloin he aloittavat?** -kohdassa aloituspäivä.
 7. Jos perehdytysopas on lähetettävä automaattisesti uudelle työntekijälle tiettynä päivänä, varmista, että **Ajoita automaattinen lähetyspäivämäärä** -vaihtoehto on otettu käyttöön, ja valitse sitten automaattinen lähetyspäivä. Jos haluat lähettää oppaan heti, poista **Ajoita automaattinen lähetyspäivämäärä** -vaihtoehto käytöstä.
@@ -92,7 +92,7 @@ Opasta ei ole aina pakko luoda mallista. Jos haluat, voit luoda oppaan alusta al
 1. Valitse vasemmassa valikossa ensin **Oppaat** ja sitten **Lisää**-painike (plus-merkki \[**+**\]).
 2. Anna **Luo opas** -ikkunan **Ketä olet perehdyttämässä?** -kohdassa uuden työntekijän nimi tai sähköpostiosoite. Jos uutta työntekijää ei ole vielä lisätty järjestelmään, valitse **Lisää nyt** ja anna työntekijän tiedot.
 
-    ![[Perehdytysoppaan tietojen antaminen](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Onboarding-oppaan tietojen syöttäminen](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 3. Valitse **Milloin he aloittavat?** -kohdassa aloituspäivä.
 4. Jos perehdytysopas on lähetettävä automaattisesti uudelle työntekijälle tiettynä päivänä, varmista, että **Ajoita automaattinen lähetyspäivämäärä** -vaihtoehto on otettu käyttöön, ja valitse sitten automaattinen lähetyspäivä. Jos haluat lähettää oppaan heti, poista **Ajoita automaattinen lähetyspäivämäärä** -vaihtoehto käytöstä.
@@ -105,7 +105,7 @@ Voit tallentaa perehdytysoppaan mallina. Tällä tavoin säästät aikaa, jos si
 1. Valitse vasemmassa valikossa **Oppaat**.
 2. Valitse sen oppaan **Lisää**-painike (kolme pistettä \[**...**\]), josta haluat luoda mallin, ja valitse sitten **Tallenna mallina**.
 
-    ![[Perehdytysoppaan tallentaminen mallina](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
+    ![[Onboarding-oppaan tallentaminen mallina](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 
 3. Anna **Tallenna uutena mallina** -ikkunassa uuden mallin nimi ja valitse sitten **Tallenna**.
 

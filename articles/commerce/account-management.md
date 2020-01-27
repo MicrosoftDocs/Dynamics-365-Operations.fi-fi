@@ -3,7 +3,7 @@ title: Tilinhallinnan sivut ja moduulit
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen tilienhallintasivuista ja -moduuleista.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3986505a7e0e8d33d5b8ff2c06f493335731a8d9
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785375"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885806"
 ---
 # <a name="account-management-pages-and-modules"></a>Tilinhallinnan sivut ja moduulit
 
@@ -58,7 +58,7 @@ Tilaustietojen sivulla on eriteltyjä tietoja jokaisesta tilauksesta. Sitä voi 
 
 ### <a name="user-profile-page"></a>Käyttäjäprofiilisivu
 
-Käyttäjäprofiilisivulla näkyvät käyttäjätilin tiedot, kuten käyttäjän nimi ja sähköpostiosoite. Se käyttää käyttäjäprofiilimoduulia. Vaikka sähköpostiosoitetta ei voi poistaa, sitä voi muokata.
+Käyttäjäprofiilisivulla näkyvät käyttäjätilin tiedot, kuten käyttäjän nimi ja sähköpostiosoite. Se käyttää käyttäjäprofiilimoduulia. Vaikka sähköpostiosoitetta ei voi poistaa, sitä voi muokata. Käyttäjäprofiilisivulla näkyvät myös käyttäjäasetukset, joiden avulla käyttäjä voi halutessaan valita tiettyjä ominaisuuksia, kuten suositusluetteloiden mukauttamisen, tai poistaa ne käytöstä. 
 
 ### <a name="user-address-page"></a>Käyttäjän osoitteen sivu
 

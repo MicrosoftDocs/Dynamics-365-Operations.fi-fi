@@ -46,7 +46,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/retail/toc.json
                 - name: Pilvikäyttöönotto
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
-                - name: Pilvikäyttöönottojen järjestelmävaatimukset
+                - name: Retailin asiakaskomponenttien järjestelmävaatimukset
                   href: get-started/system-requirements.md
                 - name: Paikallinen käyttöönotto
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
@@ -62,20 +62,14 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
             - name: Uudet ja muuttuneet ominaisuudet
               items:
-                - name: Retail-sovelluksen version 10.0.7 esiversiotoiminnot
+                - name: Retail-sovelluksen versio 10.0.7
                   href: get-started/whats-new-10-0-7.md
                 - name: Retail-sovelluksen versio 10.0.6
                   href: get-started/whats-new-10-0-6.md
-                - name: Retail-sovelluksen versio 10.0.5
-                  href: get-started/whats-new-10-0-5.md
                 - name: Edellisten versioiden uudet ja muuttuneet ominaisuudet
                   items:
                     - name: Finance and Operationsin aloitussivun uudet ominaisuudet ja muutokset
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
-                    - name: Finance and Operations -sovellukset 10.0.5 (lokakuu 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/retail/toc.json
-                    - name: Finance and Operations 10.0.4 (heinäkuu 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/retail/toc.json
                     - name: 'Finance and Operations, Enterprise Edition 7.3'
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/retail/toc.json
                 - name: Poistetut tai vanhentuneet ominaisuudet
@@ -786,12 +780,10 @@
           items:
             - name: Tuotetietojen yleiskatsaus
               href: ../supply-chain/pim/product-information.md?toc=/dynamics365/retail/toc.json
-            - name: Retail-hierarkiat
+            - name: Vähittäismyyntihierarkiat
               href: retail-hierarchies.md
-            - name: Määritteet ja määriteryhmät
+            - name: Määritteiden ja määriteryhmien hallinta
               href: attribute-attributegroups-lifecycle.md
-            - name: Määritteiden luonti ja hallinta
-              href: create-manage-attributes.md
             - name: Vähittäismyyntituotteiden määrittäminen
               href: set-up-retail-products.md
             - name: Tuotteen luominen
@@ -1146,7 +1138,9 @@
               items:
                 - name: Kassakoneen toiminnot
                   href: localizations/emea-swe-cash-registers.md
-                - name: 'Retail POS -integrointimalli, jossa on tarkistusyksiköt'
+                - name: Tarkistusyksikön integrointimalli – Ruotsi
+                  href: localizations/emea-swe-fi-sample.md
+                - name: 'Retail POS -integrointimalli, jossa on tarkistusyksiköt (vanha)'
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Retail-tehtävät
           items:

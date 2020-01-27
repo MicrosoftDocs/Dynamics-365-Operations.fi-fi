@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8090fafc891d874c3f4fb646fe22a2b783ce37aa
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7057c5b24ee3ae03574ec106a0c7d268dfffb98e
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814832"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897186"
 ---
-# <a name="create-a-hiring-team-by-using-dynamics-365-talent---onboard"></a>Työhönottoryhmän luominen Dynamics 365 Talent: Onboardin avulla
+# <a name="create-a-hiring-team"></a>Työhönottoryhmän luominen
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +35,7 @@ Microsoft Dynamics 365 Talent: Onboardissa voi luoda työhönottoryhmiä. Voit s
 2. Valitse **Ryhmät**-kohdassa **Lisää** (plus-merkki \[**+**\]) -ruutu.
 3. Anna **Luo uusi ryhmä** -valintaikkunan **Ryhmän nimi** -kohdassa työhönottoryhmälle nimi.
 
-    ![[Uuden ryhmän luominen Onboardissa](./media/onboard-create-team.png)](./media/onboard-create-team.png)
+    ![[Uuden tiimin luominen Onboardissa](./media/onboard-create-team.png)](./media/onboard-create-team.png)
 
 4. Anna **Valitse ryhmän jäsenet** -kohdassa kunkin ryhmän jäsenen nimi tai sähköpostiosoite.
 
@@ -55,7 +55,7 @@ Microsoft Dynamics 365 Talent: Onboardissa voi luoda työhönottoryhmiä. Voit s
 
 4. Valitse kunkin ryhmälle määritettävän perehdytysoppaan valintaruutu ja valitse sitten **Lisää**.
 
-    ![[Ryhmälle lisättävien perehdytysoppaiden valitseminen](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
+    ![[Tiimiin lisättävien onboarding-oppaiden valitseminen](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
 
 ## <a name="assign-onboarding-templates-to-a-hiring-team"></a>Mallien määrittäminen työhönottoryhmälle
 
@@ -63,11 +63,11 @@ Microsoft Dynamics 365 Talent: Onboardissa voi luoda työhönottoryhmiä. Voit s
 2. Valitse ryhmä.
 3. Valitse **Mallit**-välilehdessä **Lisää malleja**.
 
-    ![[Mallien lisääminen ryhmälle](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
+    ![[Mallien lisääminen tiimiin](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
 
 4. Valitse kunkin ryhmälle määritettävän mallin valintaruutu ja valitse sitten **Lisää**.
 
-    ![[Ryhmälle lisättävien mallien valitseminen](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
+    ![[Tiimiin lisättävien mallien valitseminen](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
 
 ### <a name="see-also"></a>Lisätietoja
 

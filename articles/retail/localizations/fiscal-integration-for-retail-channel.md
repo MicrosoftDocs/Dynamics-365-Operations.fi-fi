@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7e32f408e5c68a3422906347981c6fc4a4579daf
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812304"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915244"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Vähittäismyyntikanavien kirjanpidon integroinnin yleiskatsaus
 
@@ -138,9 +138,14 @@ Seuraavat kirjanpidon integrointimallit ovat käytettävissä Retail SDK:ssa:
 - [Näyte verotusta varten olevan tulostimen integroinnista Puolassa](emea-pol-fpi-sample.md)
 - [Itävallan tilikausirekisteröintipalvelun integroinnin malli](emea-aut-fi-sample.md)
 - [Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli](emea-cze-fi-sample.md)
+- [Tarkistusyksikön integrointimalli – Ruotsi](./emea-swe-fi-sample.md)
 
 Myös seuraava kirjanpidon integrointitoiminto on käytettävissä Retail SDK:ssa, mutta se ei tällä hetkellä käytä kirjanpidon integrointikehikkoa. Tämä toiminto on tarkoitus siirtää kirjanpidon integrointikehikkoon myöhemmissä päivityksissä.
 
-- [Kassakoneen toiminnot, Ranska](emea-fra-cash-registers.md)
-- [Kassakoneen toiminnot, Norja](emea-nor-cash-registers.md)
-- [Retail POS -integrointimalli, jossa on Ruotsin tarkistusyksiköt](./retail-sdk-control-unit-sample.md)
+
+- [Digitaalinen allekirjoitus Ranskassa](emea-fra-cash-registers.md)
+- [Digitaalinen allekirjoitus Norjassa](emea-nor-cash-registers.md)
+
+Seuraava vanha kirjanpidon integrointitoiminto, joka on käytettävissä Retail SDK -versiossa, ei käytä kirjanpidon integrointikehystä, ja se poistetaan käytöstä myöhemmissä päivityksissä:
+
+- [Tarkistusyksikön integrointimalli – Ruotsi (vanha)](./retail-sdk-control-unit-sample.md)

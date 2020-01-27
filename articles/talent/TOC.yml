@@ -8,6 +8,12 @@
         - name: Talentin uudet ja muuttuneet ominaisuudet
           href: whats-new.md
           items:
+            - name: 17. joulukuuta 2019
+              href: whats-new-talent-december-17-2019.md
+            - name: 12. joulukuuta 2019
+              href: whats-new-talent-december-12-2019.md
+            - name: 3. joulukuuta 2019
+              href: whats-new-talent-december-3-2019.md
             - name: 19. marraskuuta 2019
               href: whats-new-talent-november-19-2019.md
             - name: 12. marraskuuta 2019
@@ -26,16 +32,16 @@
               href: whats-new-talent-september-17-2019.md
             - name: 10. syyskuuta 2019
               href: whats-new-talent-september-12-2019.md
-            - name: 27. elokuuta 2019
-              href: whats-new-talent-august-28-2019.md
-            - name: 22. elokuuta 2019
-              href: whats-new-talent-august-21-2019.md
-            - name: 13. elokuuta 2019
-              href: whats-new-talent-august-15-2019.md
-            - name: 6. elokuuta 2019
-              href: whats-new-talent-august-7-2019.md
             - name: Uudet ominaisuudet -arkisto 2019
               items:
+                - name: 27. elokuuta 2019
+                  href: whats-new-talent-august-28-2019.md
+                - name: 22. elokuuta 2019
+                  href: whats-new-talent-august-21-2019.md
+                - name: 13. elokuuta 2019
+                  href: whats-new-talent-august-15-2019.md
+                - name: 6. elokuuta 2019
+                  href: whats-new-talent-august-7-2019.md
                 - name: 30. heinäkuuta 2019
                   href: whats-new-talent-july-31-2019.md
                 - name: 23. heinäkuuta 2019
@@ -134,32 +140,28 @@
           href: hr-copy-instance.md
         - name: Talent-ympäristöjen poistaminen
           href: remove-talent-environment.md
-        - name: Onboard-sovelluksen valmistelu
+        - name: Hallitse ominaisuuksia
+          href: access-preview-feature.md
+        - name: Onboard-tarjonta
           href: modular-app-tech-faq.md
-        - name: PowerApps-sovellusten upottaminen
+        - name: Power Apps -sovellusten upottaminen
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Core HR ja Common Data Service
+        - name: Core HR -yksiköt Common Data Servicessä
           href: CoreHREntities.md
         - name: Talent-tuen hankkiminen
           href: talent-support.md
     - name: Henkilöstön palkkaaminen organisaatioon Attractin avulla
       items:
-        - name: Mikä Attractin versio?
+        - name: Attractin version valitseminen
           href: attract-comprehensive-hiring.md
         - name: Attractin toiminnot ja ominaisuudet
           href: attract-overview.md
-        - name: Usein kysytyt kysymykset
-          items:
-            - name: LinkedIn-integroinnin usein kysytyt kysymykset
-              href: attract-linkedin-faq.md
         - name: Järjestelmäasetusten määrittäminen
           items:
             - name: Määritä yrityksen tiedot
               href: admin-settings-attract.md
             - name: Aseta käyttöoikeudet
               href: security-attract.md
-            - name: Hallitse ominaisuuksia
-              href: access-preview-feature.md
             - name: Urasivuston määrittäminen
               href: career-site.md
             - name: Ota Broadbean-integrointi käyttöön
@@ -168,13 +170,15 @@
               href: attract-configure-email-settings.md
             - name: LinkedIn-integroinnin määrittäminen
               href: attract-admin-linkedin.md
+            - name: LinkedIn-integroinnin usein kysytyt kysymykset
+              href: attract-linkedin-faq.md
         - name: Työhönottoprosessin luominen
           items:
-            - name: Luo prosessimalli
+            - name: Luo palkkausprosessimalli
               href: process-templates-attract.md
-            - name: Työhönottoprosessien tehtävät
+            - name: Tehtävien lisääminen työhönottoprosessiin
               href: activities-attract.md
-            - name: Sähköpostimallit
+            - name: Luo sähköpostimalleja
               href: email-templates.md
             - name: Analyysiraporttien käyttäminen
               href: analytic-reports.md
@@ -197,10 +201,10 @@
             - name: Ehdokaslähteiden seuraaminen
               href: source-tracking.md
             - name: Älykkäät suositukset
-              href: Intelligent-Recommendations.md
+              href: intelligent-recommendations.md
         - name: Määritä haastattelut
           items:
-            - name: Haastattelujen aikataulutus ja palaute
+            - name: Aikatauluta haastatteluja
               href: interview-scheduling-feedback.md
         - name: Tee tarjous
           items:
@@ -433,7 +437,7 @@
       items:
         - name: Upotettu Power BI työtiloissa
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Talentin laajentaminen käyttämällä PowerAppsia ja Microsoft Flowta – esimerkkitapauksia
+        - name: Talentin laajentaminen Power Appsin ja Power Automaten avulla
           href: extensibility-examples.md
         - name: Mobiilisovellus
           items:
@@ -443,8 +447,6 @@
                   href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Oman ryhmän mobiilityötila
                   href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Mobiilityötilojen julkaiseminen
-              href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Työhönoton tietojen muutosten seuraaminen
           href: process-auditing.md
         - name: Attractin laajennettavuus

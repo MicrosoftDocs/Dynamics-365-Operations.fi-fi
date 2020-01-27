@@ -3,7 +3,7 @@ title: Kysynnän ennusteiden asetukset
 description: Tässä ohjeaiheessa kuvataan asetustehtävät, jotka sinun on suoritettava kysynnän ennusteita valmistellessasi.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/16/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f56157be8cc61486801fc4c01bb191432dd9a541
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813796"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935488"
 ---
 # <a name="demand-forecasting-setup"></a>Kysynnän ennusteiden asetukset
 
@@ -63,7 +63,7 @@ Voit missä tahansa vaiheessa lisätä ennustedimensioita kysynnän ennusteissa 
 
 Kaikki nimikkeet eivät toimi samalla tavalla kysynnän ennusteiden näkökulmasta. Samanlaisia nimikkeitä voidaan ryhmittää yhteen nimikkeen kohdistustunnukseen ja tapahtumatyypin ja ennustemenetelmän asetusten kaltaisille parametreille voidaan määrittää asetuksia nimikkeen kohdistustunnuskohtaisesti. Valitse **Kysynnän ennusteen parametrit** -sivun vasemmanpuoleisesta ruudusta **Nimikkeen kohdistustunnukset**. 
 
-Supply Chain Management käyttää automaattianalyysipalveluiden verkkopalvelua ennusteen luomiseen. Muodosta yhteys palveluun antamalla seuraavat tiedot Microsoft Azuren automaattianalyysistudioon kirjautumista varten:
+Supply Chain Management käyttää automaattianalyysipalveluiden verkkopalvelua ennusteen luomiseen. Muodosta yhteys palveluun antamalla seuraavat tiedot Microsoft Azuren automaattianalyysistudioon kirjautumista varten (perinteinen):
 
 -   Verkkopalvelun ohjelmointirajapinta- (API)-avain
 -   Verkkopalvelun päätepisteen URL-osoite
@@ -71,7 +71,7 @@ Supply Chain Management käyttää automaattianalyysipalveluiden verkkopalvelua 
 -   Azuren tallennustilin avain
 
 > [!NOTE]
-> Azuren tallennustilin nimi ja avain tarvitaan vain, jos käytät mukautettua tallennustiliä. Jos käytät paikallista versiota, sinulla on oltava mukautettu tallennustili Azuressa niin, että automaattianalyysipalvelu voi käyttää historiallisia tietoja. 
+> Azuren tallennustilin nimi ja avain tarvitaan vain, jos käytät mukautettua tallennustiliä. Jos käytät paikallista versiota, sinulla on oltava mukautettu tallennustili Azuressa niin, että automaattianalyysi voi käyttää historiallisia tietoja. 
 
 Voit käyttää omaa palveluasi kysynnän ennusteiden luomiseen automaattianalyysistudion tai Supply Chain Managementin kysynnän ennusteiden luomisen kokeilujen avulla. Supply Chain Managementissa on ohjeita kysynnän ennusteiden luomiskokeilujen käyttöönottamisesta verkkopalveluna. Valitse **Kysynnän ennusteen parametrit** -sivulla **Azuren automaattianalyysipalvelut** -välilehti.
 

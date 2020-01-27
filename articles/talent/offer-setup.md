@@ -3,7 +3,7 @@ title: Tarjoustenhallinnan määrittäminen Attractissa
 description: Tässä ohjeaiheessa käsitellään tarjousten määrittämistä Microsoft Dynamics 365 Talentissa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/04/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: bc91a83afd5ce1627376685bcf612d6998ddbc02
+ms.sourcegitcommit: 5022d63a81c3715c9a3dcf2a68217bb6b17c7805
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832719"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890552"
 ---
 # <a name="set-up-offer-management-in-attract"></a>Tarjoustenhallinnan määrittäminen Attractissa
 
@@ -45,9 +45,11 @@ Tarjouksen tiedot on tarjouspakettimallin pienin yksikkö. Tyypillinen tarjous k
 
     >[!NOTE]
     > **Tarjouksen tiedot** -sivulla on **Ehdokkaan tiedot**- ja **Työn tiedot** -osat. Attractissa on muutamia valmiita tarjouksen tietojen paikkamerkkejä.
-    
+    > 
     > Sivulla on osia, joissa tarjouksen tietojen erilaiset paikkamerkit voidaan järjestää loogisiksi ryhmiksi. Nämä osat helpottavat tarjouksen tietojen ylläpitoa ja tietojen täyttämistä tarjouksen luontiprosessin aikana.
-
+    > 
+    > Jos haluat luoda arvoluettelon paikkamerkissä, Lataa Excel-laskentataulukko, jossa paikkamerkki on sarakkeen otsikko ja valintaluettelo alapuolella olevilla riveillä. Jos samaan paikkamerkkiin viitataan toisessa tietosääntöjoukossa, varmista, että niillä on yhteiset arvot.
+    
 1.  Voit luoda uuden tarjoustieto-osan valitsemalla **Lisää osa** ja antamalla sille yksilöivä nimen.
 
 1.  Voit lisätä tarjoustietojen paikkamerkin johonkin osaan valitsemalla **Lisää tarjouksen tiedot** ja antamalla paikkamerkille yksilöivän nimen.

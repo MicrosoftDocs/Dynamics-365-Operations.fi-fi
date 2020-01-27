@@ -8,7 +8,9 @@
           href: index.md
         - name: Uudet ja muuttuneet ominaisuudet
           items:
-            - name: 'Platform Update 31:n esikatselutoiminnot (tammikuu 2020)'
+            - name: 'Platform Update 32:n esikatselutoiminnot (helmikuu 2020)'
+              href: get-started/whats-new-platform-update-32.md
+            - name: Platform update 31 (tammikuu 2020)
               href: get-started/whats-new-platform-update-31.md
             - name: Platform update 30 (marraskuu 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
@@ -34,6 +36,10 @@
               href: ../fin-ops/get-started/whats-new-platform-update-20.md
             - name: Platform update 15 (maaliskuu 2018)
               href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Edellisten versioiden uudet ja muuttuneet ominaisuudet
+              items:
+                - name: Finance and Operationsin aloitussivun uudet ominaisuudet ja muutokset
+                  href: ../fin-ops/get-started/whats-new-changed.md
         - name: Liiketoimintatapahtumat
           items:
             - name: Liiketoimintatapahtumien yleiskatsaus
@@ -410,7 +416,7 @@
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: PowerBI.com-integrointi paikallisiin ympäristöihin
                   href: analytics/entity-store-on-prem.md
-                - name: Käänteisten välityspalvelimien määrittäminen paikallisiin ympäristöihin
+                - name: Välityspalvelimien määrittäminen paikallisiin ympäristöihin
                   href: deployment/onprem-reverseproxy.md
                 - name: Päivitysten käyttöönotto paikallisessa ympäristössä
                   href: deployment/apply-updates-on-premises.md
@@ -926,6 +932,8 @@
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Tunnetut ongelmat
                   href: lifecycle-services/known-issues.md
+                - name: Lifecycle Servicesin (LCS) poistetut tai vanhentuneet ominaisuudet
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services -käyttöopas
               href: lifecycle-services/lcs-user-guide.md
             - name: Tilauksen arviointityökalu

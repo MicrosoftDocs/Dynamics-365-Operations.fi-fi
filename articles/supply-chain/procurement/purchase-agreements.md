@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: abe921b8658322bcf77aeea8fa05843e539f97f8
+ms.sourcegitcommit: 523d22f31010339b4ff5b4fbe0a75aa909843ba6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813359"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902429"
 ---
 # <a name="purchase-agreements"></a>Ostosopimukset
 
@@ -36,7 +36,14 @@ Ostosopimukset voivat koskea tiettyä määrää tuotetta, tietyn tuotteen valuu
 
 Voit luoda, hakea ja seurata **Ostosopimukset**-sivulla ostosopimuksia, jotka ovat voimassa oman organisaatiosi ja toimittajien välillä. Esimerkiksi, kun olet luonut ostosopimuksen, voit tilata suoraan siitä. Kaikilla ostosopimuksilla on voimassaoloaika, jonka määrää se henkilö, joka luo ostosopimuksen. Hankinnan toimitusajan on sijoituttava tämän voimassaoloajan päivämäärävälille.  
 
-Kun olet luonut ostosopimuksen, se tulee voimaan vasta, kun se on aktivoitu. Aktivoi ostosopimus valitsemalla **Merkitse sopimus voimassa olevaksi** -asetukseksi **Kyllä**.
+Kun olet luonut ostosopimuksen, se tulee voimaan vasta, kun se on aktivoitu. Aktivoi ostosopimus valitsemalla **Merkitse sopimus voimassa olevaksi** -asetukseksi **Kyllä**. 
+
+Voit estää ostosopimuksen käytön ja vahvistamisen merkitsemällä sopimuksen tilaksi **suljettu.** Voit silti päivittää tilaksi **Voimassa** milloin tahansa tämän muutoksen tekemisen jälkeen.
+
+## <a name="responsible-workers-on-purchase-agreements"></a>Ostosopimuksista vastaavat työntekijät
+
+Voit määrittää ensisijaisen vastuullisen työntekijän ja toissijaisen vastuullisen työntekijän ostosopimuksen luokittelussa. Nämä arvot periytyvät tuloksena olevasta ostosopimuksesta. Sinun ei tarvitse lisätä vastuullisia työntekijöitä ostosopimukseen, ja niitä voidaan muokata suoraan tapauskohtaisesti ostosopimuksen perusteella. Et voi määrittää toissijaista vastuutyöntekijää ilman ensisijaista vastuullista työntekijää, vaikka sinulla ei ole toissijaista vastuutyöntekijää. Et voi määrittää samaa työntekijää sekä ensisijaiseksi että toissijaiseksi vastuulliseksi työntekijäksi. 
+
 
 ## <a name="commitment-types"></a>Vahvistustyypit
 Jokainen rivi ostosopimuksessa velvoittaa ostamaan jotakin. Voit täyttää sitoumuksen käyttämällä useiden ostotilausten rivejä. On neljänlaisia sitoumuksia:

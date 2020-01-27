@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b3eb53943546166eee845749a070ed2fca1a03b8
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 99a7e6130d45229011a185087d4872fe34b8224a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023950"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897623"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-9-2019"></a>Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (9.7.2019)
-
-[!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita ominaisuuksia.
 
@@ -36,6 +34,7 @@ Tässä ohjeaiheessa käsitellään Dynamics 365 Talentin uusia tai muuttuneita 
 Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Attractin ohjelmakorjauksia.
 
 ### <a name="coming-soon-in-attract"></a>Tulossa pian Attractiin
+
 #### <a name="job-approvals-appear-on-the-home-page"></a>Työn hyväksynnät näkyvät aloitussivulla
 
 Hyväksynnät näkyvät koontinäytön **Hyväksynnät**-osassa. Hyväksyjät voivat tarkistaa **Vastuualueensa** hyväksynnät, jolloin työn tunnus, otsikko, muut hyväksyjät ja määritetty päivämäärä näkyvät. Käyttäjät, jotka lähettävät työn hyväksyttäväksi, voivat tarkastella töitään kohdassa **Mitä olet pyytänyt**, joka näyttää hyväksyjät, joiden on vielä hyväksyttävä lähetetty työ.
@@ -50,7 +49,7 @@ Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2374.
 
 ### <a name="platform-update-28-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 28
 
-Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 28:stä on artikkelissa [Dynamics 365 Finance and Operations -käyttöympäristöpäivitys 28:n esikatselutoiminnot (heinäkuu 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 28:stä on artikkelissa [Dynamics 365 Finance and Operations -käyttöympäristöpäivitys 28:n esikatselutoiminnot (heinäkuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### <a name="entity-support-for-custom-fields-in-common-data-service"></a>Common Data Servicen mukautettujen kenttien yksikkötuki 
 

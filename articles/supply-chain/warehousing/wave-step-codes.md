@@ -18,19 +18,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0f89c6098db9e2e3a9aa4ee3666e4b9ae608f054
-ms.sourcegitcommit: d8f1135cdbc2deca70bc4b2805a0519253c9a31f
+ms.openlocfilehash: 1a1a32495b63a5a67a49bf3b02710aba63c1e2f0
+ms.sourcegitcommit: bfd6142569196a060e3f37893c78f00c40a2a18c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "1992354"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2946187"
 ---
 # <a name="wave-step-codes"></a>Aallon vaihekoodit
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
-
-## <a name="about-wave-step-codes"></a>Tietoja aallon vaihekoodeista
 
 Aallon vaihekoodit ovat koodeja, joita käyttäjät voivat määrittää ja käyttää aaltomenetelmien tiettyjen esiintymien linkittämiseksi vastaavaan malliin. Mallit sisältävät malleja täydennykselle, konttijärjestelmälle, etikettien tulostamiselle, kuormituksen luonnille ja lajittelulle.
 
@@ -39,7 +37,7 @@ Kun aallon vaihekoodeja ei käytetä, käyttäjien on kirjoitettava vapaamuotois
 Tietyn aallon vaihetyypin aallon vaihekoodit määritetään erillisellä sivulla. Aallon vaihekoodi on valittava avattavasta luettelosta jokaiselle aaltomallin aallon vaiheen menetelmän esiintymälle, joka edellyttää aallon vaihekoodia. Avattavasta luettelosta tehty valinta korvaa syötetyn vapaamuotoisen tekstin ja auttaa vähentämään inhimillisten virheiden riskiä ja vaikutusta. Asetuskoodeja käytetään aaltomallissa oleva aallon vaiheen menetelmän linkittämiseksi menetelmän kohdemalliin.
 
 > [!NOTE]
-> Aallon vaihekoodien ominaisuuden käyttäminen on valinnaista, ja käyttö tapahtuu yrityskohtaisesti. Jos siis tietty yritys käyttää tätä ominaisuutta, kaikki kyseisen yrityksen olemassa olevat aallon vaihekoodit päivitetään uuteen rakenteeseen.
+> Aallon vaihekoodien käyttö on valinnaista. Se on käytössä koko organisaation laajuisesti kaikille yrityksille.
 
 ## <a name="setup-demo"></a>Asennuksen esittely 
 
@@ -49,20 +47,20 @@ Esittelytietojen on oltava asennettuna tätä esittelyä varten, ja sinun on kä
 
 Noudata seuraavia ohjeita ottaaksesi aallon vaihekoodien ominaisuuden käyttöön.
 
-1. Siirry kohtaan **Varastonhallinta \> Asetukset \> Varastonhallinnan parametrit**.
-2. Määritä **Yleinen**-välilehden **Aallon käsittely** -pikavälilehdessä **Ota käyttöön aallon vaihekoodit** -asetukseksi **Kyllä**.
+1. Mene **Toimintojen hallintaan**.
+2. Valitsemalla tämän voit ottaa käyttöön **Organisaation laajuisen Wave Step-koodin**.
 
-Kaikki olemassa olevat aallon vaiheiden vapaamuotoiset tekstit päivitetään uuteen rakenteeseen. Kun tämä päivitys on suoritettu yritykselle, **Ota käyttöön aallon vaihekoodit** -asetus ei ole enää käytettävissä **Varastonhallinnan parametrit** -sivulla.
+Kaikki olemassa olevat aallon vaiheiden vapaamuotoiset tekstit päivitetään uuteen rakenteeseen kaikissa yrityksissä. Kun tämä päivitys on valmis kaikille yrityksille, ominaisuus on käytössä. Jos toimintoa ei voi ottaa käyttöön yhdelle tai useammalle yritykselle, ominaisuus ei ole käytössä millekään yritykselle.
 
-Vahvistukset tehdään päivityksen aikana, ja jos päivitys epäonnistuu, näet virhesanoman. Päivitys saattaa epäonnistua seuraavien ristiriitojen takia:
+Käyttöönoton aikana validoinnit tehdään tietojen päivityksen aikana. Jos päivitys epäonnistuu, näyttöön tulee virhesanoma. Päivitys saattaa epäonnistua seuraavien ristiriitojen takia:
 
 - Sinulla on identtisiä aallon vaiheiden vapaamuotoisia tekstejä.
 - Sinulla on mukautuksia.
 - Aallon vaiheen menetelmän esiintymään on liitetty aallon vaiheen vapaamuotoinen teksti, joka ei vastaa odotettua mallityyppiä.
 
-Kun olet ratkaissut vahvistusten aikana havaitut ristiriidat, voit suorittaa päivitysprosessin uudelleen.
+Kun olet ratkaissut vahvistusten aikana havaitut ristiriidat, voit yrittää ottaa ominaisuuden uudelleen käyttöön.
 
-Kun päivitys on suoritettu onnistuneesti, **Aallon vaihekoodit** -sivu (**Varastonhallinta \> Asetukset \> Aallot \> Aallon vaihekoodit**) tulee saataville. Tällä sivulla on luettelo aallon vaihekoodeista, jotka päivitettiin, kun aallon vaiheenkoodien ominaisuus otettiin käyttöön.
+Kun ominaisuus on otettu onnistuneesti käyttöön, **Aallon vaihekoodit** -sivu (**Varastonhallinta \> Asetukset \> Aallot \> Aallon vaihekoodit**) tulee saataville. Tällä sivulla on luettelo aallon vaihekoodeista, jotka päivitettiin, kun organisaationlaajuinen aallon vaihekoodi -ominaisuus otettiin käyttöön.
 
 ### <a name="create-new-wave-step-codes"></a>Uusien aallon vaihekoodien luominen
 
@@ -94,3 +92,5 @@ Seuraava toimenpide auttaa varmistamaan, että luomasi täydennysmalli otetaan k
 4. Siirry kohtaan **Varastonhallinta \> Asetukset \> Aallot \> Aaltomallit** ja valitse aaltomalli, jota haluat käyttää.
 5. Valitse mallin **Menetelmät**-pikavälilehdestä **Täydennys**-menetelmä.
 6. Valitse **Aallon vaihekoodi** -kentästä aallon vaihekoodi, jonka valitsit täydennysmallille.
+
+Nämä vaiheet suoritetaan kullekin yritykselle.

@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812876"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897117"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Perehdytysoppaiden ja mallien muokkaaminen Dynamics 365 Talent: Onboardissa
+# <a name="edit-onboarding-guides-and-templates"></a>Perehdytysoppaiden ja mallien muokkaaminen
 
 [!include [banner](includes/banner.md)]
 
@@ -114,11 +114,11 @@ Muutosten siirtäminen:
 1. Vedä kohteita **Tehtävät**-välilehdessä oikealta muokkausalueelle.
 2. Järjestä opas osiin vetämällä **Uusi osa** -kohde muokkausalueelle ja anna osalle nimi ja valinnainen kuvaus.
 
-    ![[Uuden osan lisääminen perehdytysoppaaseen tai malliin](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
+    ![[Uuden osan lisääminen onboarding-oppaaseen tai malliin](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
 
 3. Lisää tehtäviä uudelle työntekijälle tehtäväksi vetämällä **Uusi tehtävä** -kohde muokkausalueelle ja anna tehtävälle nimi ja kuvaus.
 
-    ![[Uuden tehtävän lisääminen perehdytysoppaaseen tai malliin](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
+    ![[Uuden tehtävän lisääminen onboarding-oppaaseen tai malliin](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
 
 4. Monipuolisen sisällön lisääminen perehdytysoppaaseen:
 
@@ -129,7 +129,7 @@ Muutosten siirtäminen:
     - Lisää Microsoft Forms -lomake vetämällä **Microsoft Forms** -kohde muokkausalueelle, anna tehtävän nimi ja kuvaus, anna Microsoft Forms -lomakkeen URL-osoite ja määritä näyttöalueen koko.
     - Lisää verkkosisältöä sisältävä iframe vetämällä **Internet-sisältö (iframe)** -kohde muokkausalueelle, anna tehtävän nimi ja kuvaus, anna verkkosisällön URL-osoite ja määritä näyttöalueen koko.
 
-    ![[Monipuolisen sisällön lisääminen perehdytysoppaaseen tai malliin](./media/onboard-edit-add-rieha-Content.png)](./media/onboard-edit-add-rich-content.png)
+    ![[RTF-muotoisen sisällön lisääminen onboarding-oppaaseen tai malliin](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
 
 2. Valinnainen: määritä kunkin tehtävän oikealla puolella olevalla alueella tehtävä tietylle henkilölle tai tiettyyn rooliin, lisää määräpäivä ja yhteyshenkilö ja määritä luokan väri. Kun määrität tehtävän henkilölle tai rooliin, tehtävä luodaan kullekin henkilölle. Tämä tehtävä näkyy Onboardin **tehtävät**-valikossa.
 
@@ -148,7 +148,7 @@ Voit lisätä yhteyshenkilöitä, jotka voivat auttaa uutta työntekijää menes
 1. Valitse **Yhteyshenkilöt**-välilehdessä **Uusi yhteyshenkilö**.
 2. Anna **Lisää ryhmän jäsen** -valintaikkunassa yhteyshenkilön nimi tai sähköpostiosoite, lisää sitten lyhyt kuvaus, joka selittää, miten yhteyshenkilö voi auttaa uutta työntekijää, ja valitse lopuksi **Lisää**. 
 
-    ![[Yhteyshenkilöiden sisällön lisääminen perehdytysoppaaseen tai malliin](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
+    ![[Yhteyshenkilöiden lisääminen onboarding-oppaaseen tai malliin](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
     Vaihtoehtoisesti voit valita vähintään yhden yhteyshenkilön **Ehdotukset**-kohdassa.
 
@@ -169,7 +169,7 @@ Voit lisätä hyödyllisiä tiedostoja, karttoja ja linkkejä perehdytysoppaan *
     - Lisää linkki valitsemalla **Linkki**-välilehti, anna linkille nimi ja osoite ja valitse sitten **Lisää**.
     - Lisää kartta valitsemalla **Kartta**-välilehti, anna kartta nimi ja osoite ja valitse sitten **Lisää**. Onboard sisällyttää määritetyn osoitteen kartan.
 
-    ![[Resurssin lisääminen perehdytysoppaaseen tai malliin](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
+    ![[Resurssin lisääminen onboarding-oppaaseen tai malliin](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
 
 3. Tallenna työsi valitsemalla **Tallenna**.
 

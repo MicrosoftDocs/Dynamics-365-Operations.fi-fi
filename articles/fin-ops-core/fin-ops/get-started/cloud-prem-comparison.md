@@ -3,7 +3,7 @@ title: Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 description: Tässä aiheessa kerrotaan, mitkä ominaisuudet ovat tuettuja pilvipalvelussa ja paikallisessa asennuksessa.
 author: sericks007
 manager: AnnBe
-ms.date: 10/11/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 8fa5ff0de4e97d5dc178581f721f3a6ea72fc974
-ms.sourcegitcommit: 70c6257bd6833de3e8de34d9a7561088194e59cc
+ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
+ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573927"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935384"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 
@@ -48,7 +48,7 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 | Tietojen hallinta ja integraatio      |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Määritysperustainen laajennus                                                            | Kyllä       | En              |
 |                                      | Tietojen vienti omaan tietovarastoon                                                    | Kyllä       | Kyllä             |
-|                                      | Lisäpäivitysten vienti tietoyksikköön                                 | Kyllä       | En              |
+|                                      | Lisäpäivitysten vienti tietoyksikköön                                 | Kyllä       | Kyllä              |
 |                                      | Tietojen integroinnit                                                                         | Kyllä       | Kyllä             |
 | Tiedoston hallinta                  |                                                                                           | Kyllä       | Kyllä             |
 | Taloushallinto                 |                                                                                           | Kyllä       | Kyllä             |
@@ -148,7 +148,7 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 
 ## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
 
-Lisätietoja paikallisissa ympäristöissä käytettävissä olevista Retail-ominaisuuksista on kohdassa [Paikallisten ympäristöjen Retail-ominaisuudet](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md).
+Lisätietoja paikallisissa ympäristöissä käytettävissä olevista Retail-ominaisuuksista on kohdassa [Paikallisten ympäristöjen Retail-ominaisuudet](../../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
 

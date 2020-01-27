@@ -3,7 +3,7 @@ title: Mukautettujen sivujen määrittäminen käyttäjän sisäänkirjautumisia
 description: Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 Commercessa luodaan mukautettuja sivuja, jotka käsittelevät Azure Active Directoryn (Azure AD) kuluttajakaupan (B2C) vuokraajien mukautettuja sisäänkirjauksia.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 644d937ddd3c219ae869f22d977d2846dffc20e1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 20bfacbc2374003814e12e7737644d118d404cc0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697563"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945556"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten
 
@@ -136,11 +136,11 @@ Voit päivittää Rekisteröinti ja sisäänkirjaus -käytännön mukautetun siv
 1. Valitse aiemmin määritetyn **Rekisteröinti ja sisäänkirjaus** -käytännön siirtymisruudussa **Sivun asettelut**.
 1. Valitse **Yhtenäinen rekisteröinti tai sisäänkirjaus -sivu** -asettelu
 1. Määritä **Käytä mukautettua sivun sisältöä** -asetukseksi **Kyllä**.
-1. Syötä **Mukautetun sivun URI** -kenttään sisäänkirjauksen täydellinen URL-osoite. Sisällytä jälkiliite **?preloadscripts=true**. Kirjoita esimerkiksi **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. Syötä **Mukautetun sivun URI** -kenttään sisäänkirjauksen täydellinen URL-osoite. Sisällytä jälkiliite **?preloadscripts=true**. Syötä arvoksi esimerkiksi ``www.<my domain>.com/sign-in?preloadscripts=true``.
 1. Valitse **Sivun asettelun versio (esikatselu)** -kentässä **1.2.0**.
 1. Valitse **Paikallisen tilin rekisteröinti -sivu** -asettelu.
 1. Määritä **Käytä mukautettua sivun sisältöä** -asetukseksi **Kyllä**.
-1. Syötä **Mukautetun sivun URI** -kenttään sisäänkirjauksen täydellinen URL-osoite. Sisällytä jälkiliite **?preloadscripts=true**. Kirjoita esimerkiksi **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. Syötä **Mukautetun sivun URI** -kenttään rekisteröitymisen täydellinen URL-osoite. Sisällytä jälkiliite **?preloadscripts=true**. Syötä arvoksi esimerkiksi ``www.<my domain>.com/sign-up?preloadscripts=true``.
 1. Valitse **Sivun asettelun versio (esikatselu)** -kentässä **1.2.0**.
 1. Tee seuraavat toiminnot **Käyttäjän määritteet** -osassa:
 
@@ -156,7 +156,7 @@ Voit päivittää Profiilin muokkaus -käytännön mukautetun sivun tiedoilla se
 1. Valitse aiemmin määritetyn **Profiilin muokkaus** -käytännön siirtymisruudussa **Sivun asettelut**.
 1. Valitse **Profiilin muokkaus -sivu** -asettelu.
 1. Määritä **Käytä mukautettua sivun sisältöä** -asetukseksi **Kyllä**.
-1. Syötä **Mukautetun sivun URI** -kenttään sisäänkirjauksen täydellinen URL-osoite. Sisällytä jälkiliite **?preloadscripts=true**. Kirjoita esimerkiksi **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. Syötä **Mukautetun sivun URI** -kenttään profiilin muokkaussivun täydellinen URL-osoite. Sisällytä jälkiliite **?preloadscripts=true**. Syötä arvoksi esimerkiksi ``www.<my domain>.com/profile-edit?preloadscripts=true``.
 1. Valitse **Sivun asettelun versio (esikatselu)** -kentässä **1.2.0**.
 1. Tee seuraavat toiminnot **Käyttäjän määritteet** -osassa:
 
@@ -170,12 +170,14 @@ Voit päivittää Salasanan nollaus -käytännön mukautetun sivun tiedoilla seu
 1. Valitse aiemmin määritetyn **Salasanan nollaus** -käytännön siirtymisruudussa **Sivun asettelut**.
 1. Valitse **Uusi salasana -sivu** -asettelu.
 1. Määritä **Käytä mukautettua sivun sisältöä** -asetukseksi **Kyllä**.
-1. Syötä **Mukautetun sivun URI** -kenttään sisäänkirjauksen täydellinen URL-osoite. Sisällytä jälkiliite **?preloadscripts=true**. Kirjoita esimerkiksi **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. Syötä **Mukautetun sivun URI** -kenttään salasanan palauttamisen täydellinen URL-osoite. Sisällytä jälkiliite **?preloadscripts=true**. Syötä arvoksi esimerkiksi ``www.<my domain>.com/passwordreset?preloadscripts=true``.
 1. Valitse **Sivun asettelun versio (esikatselu)** -kentässä **1.2.0**.
 1. Valitse **Tilin tarkistus -sivu** -asettelu.
 1. Määritä **Käytä mukautettua sivun sisältöä** -asetukseksi **Kyllä**.
-1. Syötä **Mukautetun sivun URI** -kenttään sisäänkirjauksen täydellinen URL-osoite. Sisällytä jälkiliite **?preloadscripts=true**. Kirjoita esimerkiksi **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. Syötä **Mukautetun sivun URI** -kenttään salasanan palauttamisen todentamisen URL-osoite. Sisällytä jälkiliite **?preloadscripts=true**. Syötä arvoksi esimerkiksi ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
 1. Valitse **Sivun asettelun versio (esikatselu)** -kentässä **1.2.0**.
+
+
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Otsikoiden ja kuvausten oletustekstimerkkijonojen mukauttaminen
 
@@ -193,15 +195,15 @@ Kun olet päivittänyt global.json-tiedoston ja julkaissut muutokset, uusi linkk
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Verkkokaupan yleiskatsaus](online-store-overview.md)
-
-[Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
+[Toimialueen nimen määrittäminen](configure-your-domain-name.md)
 
 [Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
 
+[Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
+
 [Liitä verkkosivusto kanavaan](associate-site-online-store.md)
 
-[Toimialueen nimen määrittäminen](configure-your-domain-name.md)
+[Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 

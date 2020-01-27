@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2632632b9b21dd3a88e9a4df0e65cfd28e579d2
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697448"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945510"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
 
@@ -88,16 +88,16 @@ Jos haluat käyttää muokkausympäristöä, siirry **Sähköinen kaupankäynti*
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Verkkokaupan yleiskatsaus](online-store-overview.md)
+[Toimialueen nimen määrittäminen](configure-your-domain-name.md)
 
 [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
 [Liitä verkkosivusto kanavaan](associate-site-online-store.md)
 
-[Toimialueen nimen määrittäminen](configure-your-domain-name.md)
+[Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
+
+[Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
 
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
-
-[Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fb757672fffb56892837c066d552773908dd1ec1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: d2d64f0de5287a764cb2e40b99a08084494bf53c
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2696965"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945625"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Sisältöverkon (CDN) tuen lisääminen
 
@@ -140,16 +140,16 @@ CDN:n tulisi nyt olla määritetty niin, että sitä voi käyttää Commerce-siv
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Verkkokaupan yleiskatsaus](online-store-overview.md)
-
-[Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
+[Toimialueen nimen määrittäminen](configure-your-domain-name.md)
 
 [Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
 
+[Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
+
 [Liitä verkkosivusto kanavaan](associate-site-online-store.md)
 
-[Toimialueen nimen määrittäminen](configure-your-domain-name.md)
-
-[Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
+[Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
 [Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
+
+[Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)

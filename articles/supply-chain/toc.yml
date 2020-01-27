@@ -62,7 +62,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Uudet ja muuttuneet ominaisuudet
               items:
-                - name: Supply Chain Management -sovelluksen version 10.0.7 esikatselutoiminnot (joulukuu 2019)
+                - name: Supply Chain Management -versio 10.0.7 (joulukuu 2019)
                   href: get-started/whats-new-scm-10-0-7.md
                 - name: Supply Chain Management 10.0.6 (marraskuu 2019)
                   href: get-started/whats-new-scm-10-0-6.md
@@ -70,10 +70,6 @@
                   items:
                     - name: Finance and Operationsin aloitussivun uudet ominaisuudet ja muutokset
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Finance and Operations -sovellukset 10.0.5 (lokakuu 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Finance and Operations 10.0.4 (heinäkuu 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 'Finance and Operations, Enterprise Edition 7.3'
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Poistetut tai vanhentuneet ominaisuudet
@@ -264,7 +260,7 @@
                 - name: Resurssien luominen ostotilausten perusteella
                   href: asset-management/objects/create-objects-based-on-purchase-orders.md
                 - name: Resurssirakenne
-                  href: /asset-management/objects/object-bom.md
+                  href: asset-management/objects/object-bom.md
                 - name: Resurssin historiatapahtuma
                   href: asset-management/objects/object-timeline.md
                 - name: Resurssinäkymä
@@ -592,7 +588,7 @@
                 - name: Tuotantotilauksen kustannusanalyysi
                   href: cost-management/production-order-cost-analysis.md
                 - name: Tuotantotilauksen kustannusarvio
-                  href: /cost-management/production-order-cost-estimation.md
+                  href: cost-management/production-order-cost-estimation.md
                 - name: Tuotantotilauksen nykyisen KET-tilan näyttäminen
                   href: cost-management/tasks/view-current-wip-status-production-order.md
                 - name: 'Aktiivisten, ennakkolaskettujen ja toteutuneiden kustannusten vertaaminen tuotantotilaukseen'
@@ -1099,9 +1095,11 @@
                   href: master-planning/safety-stock-replenishment.md
                 - name: Viiveet
                   href: master-planning/delays.md
+                - name: Pääsuunnittelutyön peruuttaminen
+                  href: master-planning/cancel-master-planning-job.md
                 - name: Jäljityksen käyttö hajotuksessa
                   href: master-planning/trace-explosion.md
-                - name: Toimenpidesanomat
+                - name: Toimintosanomat
                   href: master-planning/action-messages.md
                 - name: Pääsuunnitteluajon valvonta
                   href: master-planning/tasks/monitor-master-planning-run.md
@@ -1515,6 +1513,8 @@
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Luo markkinoille julkaistu tuote yksittäiselle yritykselle
                   href: pim/tasks/create-released-product-single-company.md
+                - name: Käytä tietoyksiköitä
+                  href: pim/data-entities.md
                 - name: Tuotteen elinkaaren tila
                   items:
                     - name: Tuotteen elinkaaren tilat – yleiskatsaus
@@ -2349,6 +2349,10 @@
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                 - name: Varaston työn peruuttaminen poikkeuksien käsittelyä varten
                   href: warehousing/cancel-warehouse-work.md
+                - name: Järjestelmäohjattu klusterikeräily
+                  href: warehousing/system-directed-cluster-pick.md
+                - name: Keräilyrivin ryhmittely
+                  href: warehousing/pick-line-grouping.md
             - name: Varastoinventointi
               items:
                 - name: Varastoinventoinnin syykoodit

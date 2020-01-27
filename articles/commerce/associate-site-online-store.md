@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: bicyclingfool
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e0fad51fcb092c95103356f17618a647dd166b95
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 62d3c168967bd680b3ded56e627730324f2a5ec6
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697360"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945579"
 ---
 # <a name="associate-an-e-commerce-site-with-an-online-channel"></a>Sähköisen kaupankäynnin sivuston liittäminen verkkokanavaan
 
@@ -40,16 +40,16 @@ Kun sivusto on luotu, voit varmistaa, että se on liitetty verkkomyymälään, v
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Verkkokaupan yleiskatsaus](online-store-overview.md)
-
-[Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
+[Toimialueen nimen määrittäminen](configure-your-domain-name.md)
 
 [Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
 
-[Toimialueen nimen määrittäminen](configure-your-domain-name.md)
+[Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
+
+[Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
+
+[Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
 
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)
-
-[Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)

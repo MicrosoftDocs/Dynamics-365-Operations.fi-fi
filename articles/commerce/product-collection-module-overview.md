@@ -3,7 +3,7 @@ title: Tuotekokoelmamoduulit
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotekokoelmamoduulien yleiskatsaus.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 44f78b55b8e67b7358be75aa63c40a0147507e26
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 31307035014f2fae6146f33bc23e3e06103f82eb
+ms.sourcegitcommit: c237123ad94d9418994ac095fbd8634c05a927b1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785464"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2943260"
 ---
-# <a name="product-collection-modules"></a>Tuotekokoelmamoduulit  
+# <a name="product-collection-modules"></a>Tuotekokoelmamoduulit
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -37,18 +37,19 @@ Tuotteiden etsintätyökalu on ensisijainen työkalu, jonka avulla jälleenmyyj�
 
 Tuotekokoelmamoduulit edustavat verkkosivuston fyysisiä tuotteita ja palveluita. Tuotekokoelmamoduuli on yleensä linkitetty tietosivuun, jossa asiakkaat voivat ostaa tuotteen tai palvelun sekä saada siitä lisätietoja. 
 
-Tuotekokoelmien lähteet voivat olla kolmen tyyppisiä luetteloita:
+Tuotekokoelmien lähteet voivat olla seuraavien neljän tyyppisiä luetteloita:
 
 - Toimitukselliset luettelot tuotteista, jotka on määritetty Dynamics 365 Retailissa manuaalisesti tuotteen tai tuoteluetteloiden liittyviksi tuotteiksi.
 - Algoritmiset luettelot, kuten uusien, myydyimpien tai suosittujen tuotteiden luettelot
 - Suositusluettelot, jotka perustuvat koneoppimiseen
+- Mukautusluettelot, jotka tukevat asiakkaan yksilöllisiä tuloksia. Asiakkaiden on kirjauduttava sähköiseen Commerce-sivustoon nähdäkseen henkilökohtaiset tulokset. Vieraskäyttäjät eivät näe yksilöllisiä tuloksia. Asiakkaat voivat poistaa personoinnin käytöstä [tilinhallinta-sivulla](account-management.md).
 
 Seuraavassa kuvassa näkyvät erityyppiset tuotekokoelmat, joita käytetään sähköisen kaupankäynnin sivustossa.
 
 ![Esimerkki erityyppisistä tuotekokoelmista sähköisen kaupankäynnin sivustossa](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
-> Käytä aina tuotekokoelmamoduuleita samankaltaisten tai saman teeman omaavien tuoteryhmien kanssa.
+> Käytä aina tuotekokoelmamoduuleita samankaltaisten tuoteryhmien kanssa.
 
 ## <a name="product-collection-modules-and-types"></a>Tuotekokoelmamoduulit ja -tyypit
 
@@ -56,15 +57,15 @@ Seuraavassa taulukossa on tuotekokoelmamoduulien eri tyypit Dynamics 365 Commerc
 
 | Tuotekokoelmamoduuli  | Laji | Kuvaus |
 |----------------------------|------|-------------|
-| Luokan selaaminen            | Toimituksellinen | Tämäntyyppinen tuotekokoelmamoduuli käyttää siirtymisluokkahierarkiaa, jonka jälleenmyyjä on luonut vähittäismyyntikanavaa varten. Sen avulla näytetään selaustyönkulku tuotteille, joita tarjotaan tietyssä sivustoluokassa. |
-| Hakutulokset             | Hakukysely | Tämäntyyppinen tuotekokoelmamoduuli näyttää luettelon tuotteista, jotka parhaiten vastaavat asiakkaan syöttämiä hakukyselyitä. |
-| Liittyvät tuotteet           | Toimituksellinen | Tämäntyyppinen tuotekokoelmamoduuli näyttää luettelon tuotteista, jotka myynninedistämispäällikkö on määrittänyt Retail-sovelluksessa liittyviksi tuotteiksi tekijän valitsemaa suhdetyyppiä varten. |
-| Kuratoidut tuoteluettelot      | Toimituksellinen | Tämäntyyppisessä tuotekokoelmamoduulissa näkyvät mukautetut luettelot, jotka kauppiaat ja muokkaajat ovat luoneet Retail-sovelluksessa. |
-| Uusi                        | Algoritmi | Tämäntyyppinen tuotekokoelmamoduuli näyttää luettelon uusimmista tuotteista, jotka on lajiteltu kanaviin ja luetteloihin. |
-| Myydyin               | Algoritmi | Tämäntyyppinen tuotekokoelmamoduuli näyttää luettelon tuotteista, jotka on listattu parhaiten myyvien tuotteiden mukaan. |
-| Suosittu                   | Algoritmi | Tämäntyyppinen tuotekokoelmamoduuli näyttää luettelon annetun ajanjakson parhaiten menestyvistä tuotteista. |
-| Ostetaan usein yhdessä | Tekoäly/koneoppiminen | Tämäntyyppinen tuotekokoelmamoduuli käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan liittyviä nimikkeitä, jotka ostetaan usein yhdessä tietyn tuotteen kanssa. |
-| Ihmiset pitävät myös seuraavista           | Tekoäly/koneoppiminen | Tämäntyyppinen tuotekokoelmamoduuli käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan nimikkeitä, jotka liittyvät annettuun tuotteeseen. |
+| Luokka                   | Luokka | Tässä moduulissa on luettelo luokan tuotteista, jotka on määritetty vähittäismyyntikanavan vähittäismyyjän luoman siirtymisluokkahierarkian mukaan. |
+| Liittyvät tuotteet           | Toimituksellinen | Tämä moduuli näyttää luettelon tuotteista, jotka myynninedistämispäällikkö on määrittänyt Retail-sovelluksessa liittyviksi tuotteiksi tekijän valitsemaa suhdetyyppiä varten. |
+| Kuratoidut tuoteluettelot      | Toimituksellinen | Tämä moduuli näyttää mukautetut luettelot, jonka myyjät ja muokkaajat ovat luoneet Retail-sovelluksessa. |
+| Uusi                        | Algoritmi | Tämä moduuli näyttää luettelon uusimmista tuotteista, jotka on lajiteltu kanaviin ja luetteloihin. Tämä luettelo voi näyttää mukautettuja tuloksia kirjautuneesta käyttäjästä, jos sivuston tekijä valitsee kyseisen vaihtoehdon. |
+| Myydyin               | Algoritmi | Tämä moduuli näyttää luettelon tuotteista, jotka on järjestetty suurimman myyntimäärän mukaan. Tämä luettelo voi näyttää mukautettuja tuloksia kirjautuneesta käyttäjästä, jos sivuston tekijä valitsee kyseisen vaihtoehdon. |
+| Suosittu                   | Algoritmi | Tämä moduuli näyttää luettelon parhaiten menestyvistä tuotteista annettuna ajanjaksona. Tämä luettelo voi näyttää mukautettuja tuloksia kirjautuneesta käyttäjästä, jos sivuston tekijä valitsee kyseisen vaihtoehdon. |
+| Ostetaan usein yhdessä | Tekoäly/koneoppiminen | Tämä moduuli käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan liittyviä nimikkeitä, jotka ostetaan usein yhdessä tietyn tuotteen kanssa. Tämä luettelo voi näyttää mukautettuja tuloksia kirjautuneesta käyttäjästä, jos sivuston tekijä valitsee kyseisen vaihtoehdon. |
+| Ihmiset pitävät myös seuraavista           | Tekoäly/koneoppiminen | Tämä moduuli käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan nimikkeitä, jotka liittyvät tiettyyn tuotteeseen. Tämä luettelo voi näyttää mukautettuja tuloksia kirjautuneesta käyttäjästä, jos sivuston tekijä valitsee kyseisen vaihtoehdon. |
+| Valinnat sinulle              | Tekoäly/koneoppiminen | Tämä moduuli käyttää koneoppimista kirjautuneen käyttäjän ostomallien analysoimiseen ja antaa mukautettuja suosituksia, jotka perustuvat näihin ostotottumuksiin. Vieraskäyttäjän luettelo on kutistettu. |
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Tuotekokoelmamoduulin lisääminen luokkasivulle
 
@@ -74,7 +75,8 @@ Lisää tuotekokoelmamoduuli luokkasivulle seuraavasti.
 1. Valitse sivun jäsennyksessä **Alialatunniste**-paikka. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunassa **Kontti** ja valitse sitten **OK**.
 1. Valitse säilömoduulissa kolmen pisteen painike ja valitse sitten **Lisää moduuli**.
-1. Valitse **Lisää moduuli** -valintaikkunassa **Tuotekokoelma** ja valitse sitten **OK**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Tuotekokoelma** ja valitse sitten **OK**.  
+![Ohjattu esimerkkituotekokoelman moduulin luominen](./media/productCollectionModule.png)
 1. Määritä asetukset valitsemalla soveltuva tietolähde ja syötteet tuotekokoelmalle.
 1. Valitse tuotekokoelmamoduulin ominaisuusruudussa **Lisää tuoteluetteloon**.
 1. Valitse **Valitse tuoteluettelon määritys** -valintaikkunassa luettelon tyyppi. Syötä nimikkeiden määrä ja valitse muut vaihtoehdot, jotka luettelotyypille ovat käytettävissä. Lisätietoja tämän tyyppisistä luettelotyypeistä on seuraavassa taulukossa. 
@@ -82,15 +84,16 @@ Lisää tuotekokoelmamoduuli luokkasivulle seuraavasti.
 1. Tallenna sivu ja kirjaa se sisään.
 
 Seuraavassa taulukossa on luettelotyypit, jotka ovat valittavissa **Valitse tuoteluettelon määritys** -valintaikkunassa.
-   
-| Laji                       | Kuvaus | Yleinen käytäntö | Konteksti, joka voidaan johtaa sivukontekstista | Konteksti, jonka avulla tekijä voi ohittaa sivukontekstin |
-|----------------------------|-------------|------------------|-------------------------------------|-----------------------------------------------|
-| Tuotteet luokittain       | Luettelo tuotteista, jotka kuuluvat tiettyyn luokkaan. Tämän luokan määrittää joko sivukonteksti tai tekijän määrittämä konteksti. | Täydennetty luokkasivu, aloitussivu, kassa- ja ostoskorisivut sekä tuotesivut | Luokka | Tekijän määrittämä luokka |
-| Liittyvät tuotteet           | Luettelo tuotteista, jotka myyntipäällikkö on määrittänyt liittyviksi tuotteiksi Retail-sovelluksessa suhdetyyppiä varten. | Tuotesivut, kassa- ja ostoskorisivut, toivomuslistasivu ja asiakkaan tilin sivu | Tuote, suhdetyyppi (pakollinen)  | Tuote, suhdetyyppi |
-| Kuraattori                    | Mukautettu luettelo, jonka myyjät ja muokkaajat ovat luoneet Retail-sovelluksessa. | Täydennetty luokkasivu, aloitussivu, kassa- ja ostoskorisivut sekä tuotesivut | Ei käytettävissä | Luettelon valitsin |
-| Algoritmi                | <ul><li>**Uusi** – Luettelo uusimmista tuotteista, jotka on lajiteltu kanaviin ja luetteloihin.</li><li>**Myydyin** – Luettelo tuotteista suurimman myyntimäärän mukaan.</li><li>**Trendit** – Luettelo parhaiten menestyvistä tuotteista annettuna ajanjaksona.</li></ul> | Aloitussivu, täydennetty luokkasivu ja kassa- ja ostoskorisivut | Luokka | Tekijän määrittämä luokka |
-| Ostetaan usein yhdessä | Luettelo, joka käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan liittyviä nimikkeitä, jotka ostetaan usein yhdessä tietyn tuotteen kanssa. | Tuotesivut ja kassa- ja ostoskorisivut | Tuote, ostoskori | Sisällytä ostoskori |
-| Ihmiset pitävät myös seuraavista           | Luettelo, joka käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan nimikkeitä, jotka liittyvät tiettyyn tuotteeseen. | Tuotesivut ja kassa- ja ostoskorisivut | Tuote, ostoskori | Ei käytettävissä |
+
+| Laji                       | Kuvaus | Käyttö | Sivun konteksti | Tietty konteksti | Mukauttaminen |
+|----------------------------|-------------|-------|--------------|------------------|-----------------|
+| Tuotteet luokittain       | Luettelo tuotteista, jotka kuuluvat tiettyyn luokkaan. Tämän luokan määrittää joko sivukonteksti tai tekijän määrittämä konteksti. | Tämäntyyppistä luetteloa voidaan käyttää millä tahansa sivulla (esimerkiksi kotisivu, luokkasivu, markkinointisivu tai tuotetiedot-sivu \[PDP\]) tietyn tuoteluokan edistämiseksi. | Luokka sivuympäristöstä, jos sellainen on käytettävissä (esimerkiksi luokkasivu) | Tekijä voi tarjota tietyn luokan luettelon kontekstissa. | Ei käytettävissä |
+| Liittyvät tuotteet           | Luettelo tuotteista, jotka myyntipäällikkö on määrittänyt liittyviksi tuotteiksi suhdetyyppiä varten Retail-sovelluksessa. | Tämäntyyppistä luetteloa käytetään ensisijaisesti PDP:issä, mutta sitä voidaan käyttää millä tahansa sivulla, jos päätuote on annettu. | Tuote sivulta, suhdetyyppi (pakollinen) | Tuote voidaan valita valitsimessa, ja suhdetyyppiä käytetään. | Ei käytettävissä |
+| Kuraattori                    | Mukautettu luettelo, jonka myyjät ja muokkaajat ovat luoneet Retail-sovelluksessa. | Täydennetty luokkasivu, aloitussivu, kassa- ja ostoskorisivut sekä tuotesivut | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä |
+| Algoritmi                | <ul><li>**Uusi** – Luettelo uusimmista tuotteista, jotka on lajiteltu kanaviin ja luetteloihin.</li><li>**Myydyin** – Luettelo tuotteista suurimman myyntimäärän mukaan.</li><li>**Trendit** – Luettelo parhaiten menestyvistä tuotteista annettuna ajanjaksona.</li></ul> | Aloitussivu, täydennetty luokkasivu ja kassa- ja ostoskorisivut | Luokka sivuympäristöstä (esimerkiksi luokkasivu) | Sivuston tekijän määrittämä luokka | Tuettu |
+| Ostetaan usein yhdessä | Luettelo, joka käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan liittyviä nimikkeitä, jotka ostetaan usein yhdessä tietyn tuotteen kanssa. | Tämäntyyppinen luettelo koskee vain ostoskori-sivua. | Ostoskori | Ei käytettävissä | Tuettu |
+| Ihmiset pitävät myös seuraavista           | Luettelo, joka käyttää koneoppimista analysoidessaan kuluttajien ostomalleja ja suositellessaan nimikkeitä, jotka liittyvät tiettyyn tuotteeseen. | Tämän tyyppistä luetteloa käytetään PDP:issä näyttämään tuotteita, joita muut asiakkaat ovat ostaneet. | Tuotteen konteksti sivulta | Sivuston tekijän tarjoama tuote | Tuettu |
+| Valinnat sinulle              | Luettelo, joka määrittää asiakkaiden mieltymykset koneoppimisen avulla. | Tämäntyyppistä luetteloa voi käyttää millä tahansa sivulla. | Ei käytettävissä| Ei käytettävissä | Tuettu | 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -106,3 +109,4 @@ Seuraavassa taulukossa on luettelotyypit, jotka ovat valittavissa **Valitse tuot
 
 [Ostoruutumoduuli](add-buy-box.md)
 
+[Tuotesuositusten yleiskatsaus](product-recommendations.md)

@@ -3,7 +3,7 @@ title: Suorituksen hallinta
 description: Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa. Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 18e9606e62bc2739da99b75ab56161bd7cc7eafe
+ms.sourcegitcommit: 724b72412861d342c138a7935319da700b63c234
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590502"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2921147"
 ---
 # <a name="performance-management"></a>Suorituksen hallinta
-
-[!include [banner](includes/banner.md)]
 
 Suoritustason hallintaprosessin avulla työntekijät voivat dokumentoida suoritustasonsa ja keskustella siitä esimiestensä kanssa. Esimiehet voivat puolestaan antaa palautetta ja ohjeita työntekijöille.  
 
@@ -91,6 +89,8 @@ Yksityiskohtaisimpia arvioita varten voit noutaa aktiiviset ja valmiit tavoittee
 Myös **Osaamistiedot**-osaa voi käyttää työntekijän osaamistiedoista keskustelemiseen sekä niiden arviointiin ja luokitteluun. Lisää haluamasi määrä osaamistietoja. Määritä, onko osaamistiedot luokiteltava. 
 
 Voit luoda uusia arvioijia luomasi mallin perusteella. Sinulla voi olla malli esimerkiksi kahdenkeskisiä tapaamisia, kehityssuunnitelmia tai kausittaisia arviointeja varten. Valitse malli uuden arvioinnin luomisen yhteydessä.
+
+Tulosta arvostelut valitsemalla **Tulosta arvostelu** -painike. Jos et näe painiketta **Arvostelu**-sivulla, varmista, että olet ottanut ominaisuuden käyttöön **Ominaisuuden hallinta** -työtilassa. Lisätietoja Toimintojen hallinnasta on kohdassa [Toimintojen hallinnan yleiskuvaus](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="components-you-can-include-in-performance-reviews"></a>Suoritustasoarviointeihin lisättävissä olevat osat
 Suoritustasoarviointeihin voi lisätä erityyppisiä tietoja. Tietoja ovat esimerkiksi arvioinnin tiedot, mittaukset, tehtävät, luokitukset, kuittaukset ja liitteet.

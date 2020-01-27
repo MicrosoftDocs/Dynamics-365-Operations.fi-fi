@@ -3,7 +3,7 @@ title: Yhtenäinen tuotekokemus
 description: Tässä aiheessa käsitellään tuotetietojen integraatiota Finance and Operations -sovellusten ja Common Data Servicen välillä.
 author: t-benebo
 manager: AnnBe
-ms.date: 09/3/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: bcc2c3d2530153a225a94fa0fb3cc990abbf65b4
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7df9097feeb9566705f50f8a62809aa79dc10cd7
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769726"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914768"
 ---
 # <a name="unified-product-experience"></a>Yhtenäinen tuotekokemus
 
@@ -52,7 +52,7 @@ Tuotetiedot sisältävät kaiken tuotteeseen liittyvät tiedot ja tuotteen mää
 
 Finance and Operations | Muut Dynamics 365 -sovellukset | Kuvaus
 -----------------------|--------------------------------|---
-Vapautetut tuotteet V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails**-yksikkö sisältää ne Finance and Operations -sovellusten kentät, jotka määrittävät tuotteen ja jotka sisältävät tuotteen taloudelliset ja hallinnolliset tiedot. Yhdistämismääritykset ovat seuraavassa taulukossa.
+Vapautetut tuotteet V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails**-yksikkö sisältää ne Finance and Operations -sovellusten kentät, jotka määrittävät tuotteen ja jotka sisältävät tuotteen taloudelliset ja hallinnolliset tiedot. 
 Common Data Servicen vapautetut erilliset tuotteet | Tuote | **Tuote**-yksikön kentät määrittävät tuotteen. Se sisältää yksittäisiä tuotteita (tuotteita, joissa on alatyypin tuote) ja tuotevariantteja. Yhdistämismääritykset ovat seuraavassa taulukossa.
 Tuotenumeron viivakoodi | msdyn\_productbarcodes | Tuotteen viivakoodeja käytetään tuotteiden yksilöimiseen.
 Tilauksen oletusasetukset | msdyn\_productdefaultordersettings
@@ -74,7 +74,7 @@ Yksikkömuunnokset | msdyn_ unitofmeasureconversions
 Tuotekohtainen mittayksikön muunnos | msdyn_productspecificunitofmeasureconversion
 Tuoteluokat | msdyn_productcategories | Kukin tuoteluokka sekä tiedot sen rakenteesta ja ominaisuuksista sisältyy tuoteluokkayksikköön. 
 Tuoteluokkahierarkiat | msdyn_productcategoryhierarhies | Voit käyttää tuotehierarkioita tuotteiden luokitteluun ja ryhmittelyyn. Luokkahierarkioita voi käyttää Common Data Servicessä tuoteluokkahierarkiayksikön avulla. 
-Tuoteluokkahierarkian roolit | msdyn_productcategoryhierarchies | Tuotehierarkioita käytetään D365 Finance and Operationsin eri rooleissa. Kussakin roolissa käytettävä luokkaa määritetään tuoteluokkahierarkiayksikön avulla seuraavilla yhdistämismäärityksillä. 
+Tuoteluokkahierarkian roolit | msdyn_productcategoryhierarchies | Tuotehierarkioita käytetään D365 Finance and Operationsin eri rooleissa. Kussakin roolissa käytettävä luokkaa määritetään tuoteluokkahierarkiayksikön avulla. 
 Tuoteluokan määritykset | msdyn_productcategoryassignments | Tuote voidaan määrittää luokkaan tuoteluokan määritysyksikön avulla.
 
 ## <a name="integration-of-products"></a>Tuotteiden integrointi

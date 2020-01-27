@@ -3,12 +3,12 @@ title: Mittayksiköiden tuotevarianttikohtaiset muunnokset
 description: Tässä ohjeaiheessa käsitellään tuotevarianteille määritettäviä mittayksiköiden muunnoksia.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: josaw
@@ -17,34 +17,26 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c8181f0bda9b781a6c2b0feb0aba1beb51bfea65
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249445"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935096"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mittayksiköiden tuotevarianttikohtaiset muunnokset
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)]
-
 Tässä ohjeaiheessa käsitellään tuotevarianteille määritettäviä mittayksiköiden muunnoksia. Siinä on myös määritysesimerkki.
 
 Tämän ominaisuuden ansiosta yritykset voivat määrittää yksikkömuunnokset saman tuotteen varianttien välillä. Tässä ohjeaiheessa käytetään seuraavaa esimerkkiä. Yritys myy t-paitoja, joiden koot ovat S, M, L ja XL. T-paita määritetään tuotteena ja eri koot määritetään tuotteen variantteina. T-paidat pakataan laatikoihin. Laatikossa voi olla viisi t-paitaa, joskin XL-koossa tilaa on kuitenkin vain neljälle t-paidalle. Yritys haluaa seurata t-paitojen eri variantteja **Kappaletta**-yksikkönä, vaikka niitä myydään **Laatikot**-yksikkönä. Varastoyksikön ja myyntiyksikön välinen muunto on 1 laatikko = 5 kappaletta. XL-variantin muunto on kuitenkin 1 laatikko = 4 kappaletta.
-
-## <a name="setup"></a>Luo perustiedot
-
-Voit määrittää parametrit, jolla käytetään ominaisuutta tuotteissa, joissa **Kaikki prosessit** on otettu käyttöön, tai vain tuotteessa, joissa **Varastoprosessit** on otettu käyttöön. Määritys tehdään **Tuotetietojen hallintaparametrit** -sivun **Ota käyttöön mittayksiköiden muunnokset** -asetuksella.
 
 ### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Tuotteen varianttikohtaisen yksikkömuunnoksen määrittäminen
 
 Tuotevariantit voidaan luoda vain **Tuotteen alatyyppi**: **Päätuote** -tuotteille. Lisätietoja on kohdassa [Päätuotteen luominen](tasks/create-product-master.md).
 
 Tätä ominaisuutta ei ole otettu käyttöön tuotteille, jotka on määritetty todellisen painon prosesseille. 
-
-Ota mittayksiköiden muunnos käyttöön päätuotteen luonnin aikana valitsemalla **Ota käyttöön mittayksiköiden muunnokset** -asetus **Tuotteen tiedot** -sivulla.
 
 Kun luodaan päätuote, jolla on julkaistuja tuotevariantteja, varianttikohtaiset yksikkömuunnokset voidaan määrittää. Yksikön muunnossivun avaava valikkovaihtoehto on tuotteen tai tuotevariantin yhteydessä seuraavilla sivuilla.
 
