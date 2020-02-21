@@ -1,0 +1,8 @@
+## <a name="legal-entities-to-cdm_companies"></a><span data-ttu-id="a699b-101">Yritykset kohteeseen cdm_companies</span><span class="sxs-lookup"><span data-stu-id="a699b-101">Legal entities to cdm_companies</span></span>
+
+<span data-ttu-id="a699b-102">Tämä malli synkronoi tiedot Finance and Operations -sovellusten ja Common Data Servicen välillä.</span><span class="sxs-lookup"><span data-stu-id="a699b-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="a699b-103">Finance and Operations -kenttä</span><span class="sxs-lookup"><span data-stu-id="a699b-103">Finance and Operations field</span></span> | <span data-ttu-id="a699b-104">Määritystyyppi</span><span class="sxs-lookup"><span data-stu-id="a699b-104">Map type</span></span> | <span data-ttu-id="a699b-105">Muu Dynamics 365 -kenttä</span><span class="sxs-lookup"><span data-stu-id="a699b-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="a699b-106">Oletusarvo</span><span class="sxs-lookup"><span data-stu-id="a699b-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="a699b-107">NAME</span><span class="sxs-lookup"><span data-stu-id="a699b-107">NAME</span></span> | = | <span data-ttu-id="a699b-108">cdm_name</span><span class="sxs-lookup"><span data-stu-id="a699b-108">cdm_name</span></span> | 
+<span data-ttu-id="a699b-109">LEGALENTITYID</span><span class="sxs-lookup"><span data-stu-id="a699b-109">LEGALENTITYID</span></span> | = | <span data-ttu-id="a699b-110">cdm_companycode</span><span class="sxs-lookup"><span data-stu-id="a699b-110">cdm_companycode</span></span> | 

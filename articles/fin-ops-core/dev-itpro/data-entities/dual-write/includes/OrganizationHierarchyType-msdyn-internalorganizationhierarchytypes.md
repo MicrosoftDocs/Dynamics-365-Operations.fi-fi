@@ -1,0 +1,7 @@
+## <a name="organization-hierarchy-type-to-msdyn_internalorganizationhierarchytypes"></a><span data-ttu-id="ca2de-101">Organisaatiohierarkiatyyppi kohteeseen msdyn_internalorganizationhierarchytypes</span><span class="sxs-lookup"><span data-stu-id="ca2de-101">Organization hierarchy type to msdyn_internalorganizationhierarchytypes</span></span>
+
+<span data-ttu-id="ca2de-102">Tämä malli synkronoi tiedot Finance and Operations -sovellusten ja Common Data Servicen välillä.</span><span class="sxs-lookup"><span data-stu-id="ca2de-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="ca2de-103">Finance and Operations -kenttä</span><span class="sxs-lookup"><span data-stu-id="ca2de-103">Finance and Operations field</span></span> | <span data-ttu-id="ca2de-104">Määritystyyppi</span><span class="sxs-lookup"><span data-stu-id="ca2de-104">Map type</span></span> | <span data-ttu-id="ca2de-105">Muu Dynamics 365 -kenttä</span><span class="sxs-lookup"><span data-stu-id="ca2de-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="ca2de-106">Oletusarvo</span><span class="sxs-lookup"><span data-stu-id="ca2de-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="ca2de-107">NAME</span><span class="sxs-lookup"><span data-stu-id="ca2de-107">NAME</span></span> | > | <span data-ttu-id="ca2de-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="ca2de-108">msdyn_name</span></span> | 

@@ -1,45 +1,57 @@
-- name: Finance and Operations -sovellusten kehittäminen ja hallinta
+- name: Finance and Operations -sovellusten kehitys ja hallinnointi
   items:
-    - name: Finance and Operations -sovellusten kehittäminen ja hallinta
+    - name: Finance and Operations -sovellusten kehitys ja hallinnointi
       items:
-        - name: Finance and Operations -sovellusten dokumentaatio
+        - name: Finance and Operations -sovellusdokumentaatio
           href: ../fin-ops/index.md
-        - name: Finance and Operations -sovellusten kehittäminen ja hallinta
+        - name: Finance and Operations -sovellusten kehitys ja hallinnointi
           href: index.md
         - name: Uudet ja muuttuneet ominaisuudet
           items:
-            - name: 'Platform Update 32:n esikatselutoiminnot (helmikuu 2020)'
-              href: get-started/whats-new-platform-update-32.md
-            - name: Platform update 31 (tammikuu 2020)
-              href: get-started/whats-new-platform-update-31.md
-            - name: Platform update 30 (marraskuu 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-30.md
-            - name: Platform update 29 (lokakuu 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-29.md
-            - name: Platform update 28 (heinäkuu 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-28.md
-            - name: Platform update 27 (kesäkuu 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-27.md
-            - name: Platform update 26 (toukokuu 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-26.md
-            - name: Platform update 25 (huhtikuu 2019)
-              href: ../fin-ops/get-started/whats-new-platform-25.md
-            - name: Platform update 24 (maaliskuu 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-24.md
-            - name: Platform update 23 (tammikuu 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-23.md
-            - name: Platform update 22 (joulukuu 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-22.md
-            - name: Platform update 21 (marraskuu 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-21.md
-            - name: Platform update 20 (syyskuu 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-20.md
-            - name: Platform update 15 (maaliskuu 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-15.md
-            - name: Edellisten versioiden uudet ja muuttuneet ominaisuudet
+            - name: Finance and Operations -sovellusten uudet ja muuttuneet ominaisuudet
+              href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Platform-päivitysten uudet ja muuttuneet ominaisuudet
               items:
-                - name: Finance and Operationsin aloitussivun uudet ominaisuudet ja muutokset
-                  href: ../fin-ops/get-started/whats-new-changed.md
+                - name: Platform-päivitysten aloitussivun uudet ominaisuudet ja muutokset
+                  href: get-started/whats-new-home-page.md
+                - name: Platform update 33 (huhtikuu 2020)
+                  href: get-started/whats-new-platform-update-33.md
+                - name: Platform update 32 (helmikuu 2020)
+                  href: get-started/whats-new-platform-update-32.md
+                - name: Platform update 31 (tammikuu 2020)
+                  href: get-started/whats-new-platform-update-31.md
+                - name: Platform update 30 (marraskuu 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-30.md
+                - name: Platform update 29 (lokakuu 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-29.md
+                - name: Platform update 28 (heinäkuu 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-28.md
+                - name: Platform update 27 (kesäkuu 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-27.md
+                - name: Platform update 26 (toukokuu 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-26.md
+                - name: Platform update 25 (huhtikuu 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-25.md
+                - name: Platform update 24 (maaliskuu 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-24.md
+                - name: Platform update 23 (tammikuu 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-23.md
+                - name: Platform update 22 (joulukuu 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-22.md
+                - name: Platform update 21 (marraskuu 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-21.md
+                - name: Platform update 20 (syyskuu 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-20.md
+                - name: Platform update 15 (maaliskuu 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Poistetut tai vanhentuneet ominaisuudet
+              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: 'AX 2012 -ominaisuudet, joita on lykätty'
+              href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: 'Ominaisuudet, joita ei ole otettu käyttöön paikallisissa ympäristöissä'
+              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: 'Microsoft Dynamics AX 2009:n ja 2012:n yleisen tuen päättyminen'
+              href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Liiketoimintatapahtumat
           items:
             - name: Liiketoimintatapahtumien yleiskatsaus
@@ -104,13 +116,13 @@
                   href: data-entities/odata.md
                 - name: Mukautettu palvelukehitys
                   href: data-entities/custom-services.md
-                - name: Toistuvat integroinnit
+                - name: Toistuvat integraatiot
                   href: data-entities/recurring-integrations.md
                 - name: Palvelujen testaaminen kolmannen osapuolen apuohjelmien avulla
                   href: data-entities/third-party-service-test.md
-            - name: Finance and Operations Connector
+            - name: Finance and Operations -yhdistin
               href: data-entities/fin-ops-connector.md
-            - name: Integroinnin kehitys
+            - name: Integraation kehitys
               items:
                 - name: Tietojen integraatio tietoyksikköjen avulla
                   items:
@@ -132,36 +144,36 @@
                       href: data-entities/data-integration-cds.md
                     - name: 'Synkroninen, kaksisuuntainen integrointi'
                       items:
-                        - name: Lähes reaaliaikainen tietojen integrointi
-                          href: data-entities/dual-write-overview.md
+                        - name: Lähes reaaliaikainen tietojen integraatio
+                          href: data-entities/dual-write/dual-write-overview.md
                         - name: Organisaatiohierarkia Common Data Servicessä
-                          href: data-entities/dual-write-organization.md
+                          href: data-entities/dual-write/organization-mapping.md
                         - name: Yritysten integrointi
                           items:
-                            - name: Yrityskonsepti Common Data Servicessä
-                              href: data-entities/dual-write-company.md
+                            - name: Yrityskonsepti Common Data Servicesissä
+                              href: data-entities/dual-write/company-data.md
                             - name: Käynnistys yritystietoja käyttäen
-                              href: data-entities/dual-write-bootstrap.md
+                              href: data-entities/dual-write/bootstrap-company-data.md
                         - name: Integroidut asiakkaan päätiedot
-                          href: data-entities/dual-write-customer.md
+                          href: data-entities/dual-write/customer-mapping.md
                         - name: Integroitu kirjanpito
-                          href: data-entities/dual-write-ledger.md
+                          href: data-entities/dual-write/ledger-mapping.md
                         - name: Yhtenäinen tuotekokemus
-                          href: data-entities/dual-write-product.md
+                          href: data-entities/dual-write/product-mapping.md
                         - name: Toimittajien integrointi
                           items:
                             - name: Integroidut toimittajan päätiedot
-                              href: data-entities/dual-write-vendor.md
+                              href: data-entities/dual-write/vendor-mapping.md
                             - name: Toimittajan mallien välillä siirtyminen
-                              href: data-entities/dual-write-vendor-switch.md
+                              href: data-entities/dual-write/vendor-switch.md
                         - name: Integroidut toimipaikat ja varastot
-                          href: data-entities/dual-write-sites-and-warehouses.md
+                          href: data-entities/dual-write/sites-warehouses-mapping.md
                         - name: Integroidut verojen päätiedot
-                          href: data-entities/dual-write-tax.md
+                          href: data-entities/dual-write/tax-mapping.md
                         - name: Ensimmäinen synkronointi
-                          href: data-entities/dual-write-initial.md
+                          href: data-entities/dual-write/initial-sync.md
                         - name: Tietojen integroinnin vianmääritys
-                          href: data-entities/dual-write-troubleshooting.md
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
                     - name: 'Asynkroninen, yksisuuntainen integrointi'
                       items:
                         - name: Myyntimahdollisuudesta maksutapahtumaan -skenaarion määrittäminen
@@ -170,7 +182,7 @@
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
                             - name: Asiakkaiden synkronointi suoraan Salesista Finance and Operationsin asiakkaisiin
                               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                            - name: Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
+                            - name: Tuotteiden synkronointi suoraan Finance and Operationsista Salesin tuotteisiin
                               href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
                             - name: Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin
                               href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
@@ -180,9 +192,9 @@
                               href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
                             - name: Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
                               href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                        - name: Integroinnin määrittäminen Field Servicen kanssa
+                        - name: Integraation määrittäminen Field Servicen kanssa
                           items:
-                            - name: Integroinnin määrittäminen Field Servicen kanssa – yleiskatsaus
+                            - name: Integraation määrittäminen Field Servicen kanssa – yleiskatsaus
                               href: ../../supply-chain/sales-marketing/field-service.md
                             - name: Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin
                               href: ../../supply-chain/sales-marketing/field-service-product.md
@@ -192,17 +204,17 @@
                               href: ../../supply-chain/sales-marketing/field-service-invoice.md
                             - name: Field Servicen varastosiirtojen ja oikaisujen synkronointi Finance and Operationsiin
                               href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                            - name: Finance and Operationsin varastotasotietojen synkronointi Field Serviceen
+                            - name: Finance and Operations varastotasotietojen synkronointi Field Serviceen
                               href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
                             - name: Finance and Operationsin tuotteiden ja varastoyksiköiden synkronointi Field Serviceen
                               href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
                             - name: Finance and Operationsin projektiluetteloiden synkronointi Field Serviceen
                               href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                            - name: Finance and Operationsin fyysisten varastojen synkronointi Field Serviceen
+                            - name: Finance and Operationsin varastojen synkronointi Field Serviceen
                               href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                            - name: Finance and Operationsin työtilausten ja projektin synkronointi Field Serviceen
+                            - name: Field Servicen työtilausten ja projektin synkronointi Finance and Operationsiin
                               href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
-                        - name: Project Service Automation -integroinnin määrittäminen
+                        - name: Project Service Automation -integraation määrittäminen
                           items:
                             - name: Project Service Automationin yleiskatsaus
                               href: ../../finance/project-management/PSA-integration.md
@@ -912,7 +924,7 @@
                   href: gdpr/gdpr-extend-person-search-report.md
                 - name: Luottamuksellisten tietojen käytön hallinta
                   href: gdpr/gdpr-auditing-sensitive-data.md
-                - name: Henkilötietopyyntöihin vastaaminen Talentilla
+                - name: Henkilötietopyyntöihin vastaaminen Human Resourcesilla
                   href: gdpr/respond-dsr-request-talent.md
                 - name: 'Henkilötietopyyntöihin vastaaminen AX 2012:ssa'
                   href: gdpr/gdpr-ax2012.md
@@ -1258,25 +1270,25 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Tuki
           items:
-            - name: Finance and Operations- ja Lifecycle Services -tuki
+            - name: Tuen saaminen Finance and Operationsia ja Lifecycle Servicesiä varten
               href: lifecycle-services/lcs-support.md
             - name: Dynamics 365 -tuen yleiskatsaus
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
-            - name: Tuki 21Vianetin ylläpitämään Finance and Operationsiin Kiinassa
+            - name: 'Hanki tukea Finance and Operationsille, jota ylläpitää 21Vianet Kiinassa'
               href: lifecycle-services/21vianet-support.md
             - name: Pyyntöjen lähettäminen Dynamics Service -kehitysryhmälle
               href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-            - name: Finance and Operationsin teknisen tuen määrittäminen
+            - name: Teknisen tuen määrittäminen Finance and Operationsille
               href: lifecycle-services/support-experience.md
-            - name: Suunniteltu ylläpitoajankohta - usein kysytyt kysymykset
+            - name: Suunniteltu ylläpitoajankohta – usein kysytyt kysymykset
               href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Pilvipalvelut ja huolto
               href: lifecycle-services/cloud-operations-servicing.md
-            - name: Finance and Operations -tukikokemusten hallinta
+            - name: Finance and Operationsin tukikokemusten hallinta
               href: lifecycle-services/cloud-powered-support-lcs.md
-        - name: Järjestelmän hallinta
+        - name: Järjestelmänvalvonta
           items:
-            - name: Järjestelmänhallinnan aloitussivu
+            - name: Järjestelmänvalvonnan aloitussivu
               href: sysadmin/system-administration-home-page.md
             - name: Yrityksen juridisiin ehtoihin ja tietosuojatietoihin johtavien linkkien lisääminen
               href: sysadmin/legal-terms-privacy-statement.md
@@ -1348,7 +1360,7 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Päivitä AX 2012 -versiosta
               items:
-                - name: 'AX 2012:n päivittäminen Finance and Operationsiin'
+                - name: Päivitä AX 2012 -versiosta Finance and Operationsiin
                   href: migration-upgrade/upgrade-overview-2012.md
                 - name: AX 2012 -versiopäivitys – suunnitteleminen päivityksen analysointityökalun avulla
                   href: migration-upgrade/upgrade-analyzer-tool.md
@@ -1390,11 +1402,11 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Tietojen siirtäminen AX 2009 -järjestelmästä
               items:
-                - name: "Tietojen siirtäminen\_AX 2009:stä Finance and Operationsiin"
+                - name: Tietojen siirtäminen AX 2009 -järjestelmästä Finance and Operationsiin
                   href: migration-upgrade/data-migration-tool.md
-                - name: "AX 2009 -siirto\_- tietojen siirtotyökalun asennus"
+                - name: "AX 2009 -siirto\_– tietojen siirtotyökalun asennus"
                   href: migration-upgrade/install-dmt.md
-                - name: "AX 2009 -siirto\_- määritysten luominen"
+                - name: "AX 2009 -siirto\_– yhdistämismääritysten luominen"
                   href: migration-upgrade/generate-maps.md
                 - name: "AX 2009 -siirto\_- mallien luominen"
                   href: migration-upgrade/create-package-templates-dmt.md
@@ -1662,7 +1674,7 @@
                   href: user-interface/tile-list-caching-workspaces.md
             - name: Tehtävien tallennustoiminto
               items:
-                - name: Tehtävän tallennustoiminnon resurssit
+                - name: Tehtävien tallennustoiminnon resurssit
                   href: user-interface/task-recorder.md
                 - name: Tehtävien tallennustoiminnon pikaopas
                   href: user-interface/task-recorder-quick-reference.md
@@ -1672,5 +1684,7 @@
       href: ../../supply-chain/index.md
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
+    - name: Dynamics 365 Commerce
+      href: ../../commerce/index.md
     - name: Dynamics 365 Retail
-      href: ../../retail/index.md
+      href: ../../commerce/index.md

@@ -1,0 +1,2 @@
+> [!NOTE]
+> <span data-ttu-id="0894f-101">Tämä artikkeli koskee sekä Dynamics 365 Human Resourcesia että **Henkilöstöhallinto**-työtilaa Dynamics 365 Financessa.</span><span class="sxs-lookup"><span data-stu-id="0894f-101">This article applies to both Dynamics 365 Human Resources and the **Human resources** workspace in Dynamics 365 Finance.</span></span>

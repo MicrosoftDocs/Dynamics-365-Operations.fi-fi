@@ -1,0 +1,9 @@
+## <a name="name-affixes-to-msdyn_nameaffixes"></a><span data-ttu-id="ee83b-101">Nimien liitteet kohteeseen msdyn_nameaffixes</span><span class="sxs-lookup"><span data-stu-id="ee83b-101">Name affixes to msdyn_nameaffixes</span></span>
+
+<span data-ttu-id="ee83b-102">Tämä malli synkronoi tiedot Finance and Operations -sovellusten ja Common Data Servicen välillä.</span><span class="sxs-lookup"><span data-stu-id="ee83b-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="ee83b-103">Finance and Operations -kenttä</span><span class="sxs-lookup"><span data-stu-id="ee83b-103">Finance and Operations field</span></span> | <span data-ttu-id="ee83b-104">Määritystyyppi</span><span class="sxs-lookup"><span data-stu-id="ee83b-104">Map type</span></span> | <span data-ttu-id="ee83b-105">Muu Dynamics 365 -kenttä</span><span class="sxs-lookup"><span data-stu-id="ee83b-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="ee83b-106">Oletusarvo</span><span class="sxs-lookup"><span data-stu-id="ee83b-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="ee83b-107">AFFIX</span><span class="sxs-lookup"><span data-stu-id="ee83b-107">AFFIX</span></span> | = | <span data-ttu-id="ee83b-108">msdyn_affix</span><span class="sxs-lookup"><span data-stu-id="ee83b-108">msdyn_affix</span></span> | 
+<span data-ttu-id="ee83b-109">TYPE</span><span class="sxs-lookup"><span data-stu-id="ee83b-109">TYPE</span></span> | >< | <span data-ttu-id="ee83b-110">msdyn_affixtype</span><span class="sxs-lookup"><span data-stu-id="ee83b-110">msdyn_affixtype</span></span> | 
+<span data-ttu-id="ee83b-111">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="ee83b-111">DESCRIPTION</span></span> | = | <span data-ttu-id="ee83b-112">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="ee83b-112">msdyn_description</span></span> | 

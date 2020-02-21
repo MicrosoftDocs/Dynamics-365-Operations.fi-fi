@@ -1,0 +1,7 @@
+## <a name="configurations-to-msdyn_productconfigurations"></a><span data-ttu-id="05d75-101">Määritykset kohteeseen msdyn_productconfigurations</span><span class="sxs-lookup"><span data-stu-id="05d75-101">Configurations to msdyn_productconfigurations</span></span>
+
+<span data-ttu-id="05d75-102">Tämä malli synkronoi tiedot Finance and Operations -sovellusten ja Common Data Servicen välillä.</span><span class="sxs-lookup"><span data-stu-id="05d75-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="05d75-103">Finance and Operations -kenttä</span><span class="sxs-lookup"><span data-stu-id="05d75-103">Finance and Operations field</span></span> | <span data-ttu-id="05d75-104">Määritystyyppi</span><span class="sxs-lookup"><span data-stu-id="05d75-104">Map type</span></span> | <span data-ttu-id="05d75-105">Muu Dynamics 365 -kenttä</span><span class="sxs-lookup"><span data-stu-id="05d75-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="05d75-106">Oletusarvo</span><span class="sxs-lookup"><span data-stu-id="05d75-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="05d75-107">CONFIGURATIONID</span><span class="sxs-lookup"><span data-stu-id="05d75-107">CONFIGURATIONID</span></span> | >> | <span data-ttu-id="05d75-108">msdyn_productconfiguration</span><span class="sxs-lookup"><span data-stu-id="05d75-108">msdyn_productconfiguration</span></span> | 

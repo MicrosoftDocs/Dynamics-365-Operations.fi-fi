@@ -1,0 +1,8 @@
+## <a name="all-products-to-msdyn_globalproducts"></a><span data-ttu-id="e7c47-101">Kaikki tuotteet kohteeseen msdyn_globalproducts</span><span class="sxs-lookup"><span data-stu-id="e7c47-101">All products to msdyn_globalproducts</span></span>
+
+<span data-ttu-id="e7c47-102">Tämä malli synkronoi tiedot Finance and Operations -sovellusten ja Common Data Servicen välillä.</span><span class="sxs-lookup"><span data-stu-id="e7c47-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="e7c47-103">Finance and Operations -kenttä</span><span class="sxs-lookup"><span data-stu-id="e7c47-103">Finance and Operations field</span></span> | <span data-ttu-id="e7c47-104">Määritystyyppi</span><span class="sxs-lookup"><span data-stu-id="e7c47-104">Map type</span></span> | <span data-ttu-id="e7c47-105">Muu Dynamics 365 -kenttä</span><span class="sxs-lookup"><span data-stu-id="e7c47-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="e7c47-106">Oletusarvo</span><span class="sxs-lookup"><span data-stu-id="e7c47-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="e7c47-107">PRODUCTNAME</span><span class="sxs-lookup"><span data-stu-id="e7c47-107">PRODUCTNAME</span></span> | >> | <span data-ttu-id="e7c47-108">msdyn_productname</span><span class="sxs-lookup"><span data-stu-id="e7c47-108">msdyn_productname</span></span> | 
+<span data-ttu-id="e7c47-109">PRODUCTNUMBER</span><span class="sxs-lookup"><span data-stu-id="e7c47-109">PRODUCTNUMBER</span></span> | >> | <span data-ttu-id="e7c47-110">msdyn_productnumber</span><span class="sxs-lookup"><span data-stu-id="e7c47-110">msdyn_productnumber</span></span> | 

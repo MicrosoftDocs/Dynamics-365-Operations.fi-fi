@@ -1,0 +1,8 @@
+## <a name="payment-days-cds-to-msdyn_paymentdays"></a><span data-ttu-id="b14b9-101">Maksupäivät CDS kohteeseen msdyn_paymentdays</span><span class="sxs-lookup"><span data-stu-id="b14b9-101">Payment days CDS to msdyn_paymentdays</span></span>
+
+<span data-ttu-id="b14b9-102">Tämä malli synkronoi tiedot Finance and Operations -sovellusten ja Common Data Servicen välillä.</span><span class="sxs-lookup"><span data-stu-id="b14b9-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="b14b9-103">Finance and Operations -kenttä</span><span class="sxs-lookup"><span data-stu-id="b14b9-103">Finance and Operations field</span></span> | <span data-ttu-id="b14b9-104">Määritystyyppi</span><span class="sxs-lookup"><span data-stu-id="b14b9-104">Map type</span></span> | <span data-ttu-id="b14b9-105">Muu Dynamics 365 -kenttä</span><span class="sxs-lookup"><span data-stu-id="b14b9-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="b14b9-106">Oletusarvo</span><span class="sxs-lookup"><span data-stu-id="b14b9-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="b14b9-107">NAME</span><span class="sxs-lookup"><span data-stu-id="b14b9-107">NAME</span></span> | = | <span data-ttu-id="b14b9-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="b14b9-108">msdyn_name</span></span> | 
+<span data-ttu-id="b14b9-109">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="b14b9-109">DESCRIPTION</span></span> | = | <span data-ttu-id="b14b9-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="b14b9-110">msdyn_description</span></span> | 
