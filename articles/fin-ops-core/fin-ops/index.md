@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations -sovellusten dokumentaatio
-description: Finance and Operations -sovellusten dokumentaatio.
+title: Finance and Operations -sovellusdokumentaatio
+description: Dokumentaatio Finance and Operations -sovelluksille.
 author: robinarh
 manager: AnnBe
 ms.date: 07/25/2019
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4249f2ec09e6742c843122c189cc7db7f72d1146
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770916"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005537"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Finance and Operations -sovellusten dokumentaatio
+# <a name="finance-and-operations-application-documentation"></a>Finance and Operations -sovellusdokumentaatio
 
 [!include [banner](includes/banner.md)]
 
 Seuraavissa resursseissa on lisätietoja tavoista, joilla voit käyttää Finance and Operations -sovelluksia yrityksessäsi. Tämän ohjeaiheen resursseissa on käyttäjille, kehittäjille ja IT-ammattilaisille sopivaa sisältöä. 
 
-Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 Retail ja Talent. 
+Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 Commerce ja Dynamics 365 Human Resources. 
 
 <table>
 <colgroup>
@@ -84,9 +84,9 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 R
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Aluekohtaiset pakolliset ominaisuudet</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Henkilöstöhallinto</a></h3>
-<p><a href="../../talent/manage-benefit-program.md">Edut</a></p>
-<p><a href="../../talent/performance-management-overview.md">Työntekijän kehitys ja koulutus</a></p>
-<p><a href="../../talent/questionnaires.md">Kyselylomake</a></p>
+<p><a href="../../human-resources/hr-benefits-manage-program.md">Edut</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Työntekijän kehitys ja koulutus</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Kyselylomakkeet</a></p>
 <p><a href="hr/manage-recruiting-process.md">Työhönotto</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Yhdysvaltojen palkanlaskenta</a></p>
 
@@ -129,16 +129,17 @@ Suuri osa tästä sisällöstä koskee myös seuraavia tuotteita: Dynamics 365 R
 </td>
 <td>
 <h3>Liittyvät tuotteet</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Retail</a></h4>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
 <p><a href="../../retail/call-center-functionality.md">Puhelinkeskus</p>
 <p><a href="../../retail/define-maintain-retail-channels.md">Kanavan määrittäminen ja hallinta</p>
 <p><a href="../../retail/retail-peripherals-overview.md">MPOS ja Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Retailin kehittäminen ja hallinta</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commercen kehittäminen ja hallinta</p>
 
-<h4><a href="../../talent/index.yml">Dynamics 365 Talent</a></h4>
-<p><a href="../../talent/manage-benefit-program.md">Edut</a></p>
-<p><a href="../../talent/performance-management-overview.md">Työntekijän kehitys ja koulutus</a></p>
-<p><a href="../../talent/questionnaires.md">Kyselylomake</a></p>
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Järjestelmänvalvojan opas</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Kehittäjäopas</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Käyttöopas</a></p>
+
 
 </td>
 </tr>

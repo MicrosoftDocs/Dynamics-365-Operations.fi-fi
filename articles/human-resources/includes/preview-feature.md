@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Tässä artikkelissa mainitut toiminnot ovat käytettävissä yleisessä esikatselussa missä tahansa Sandbox- tai kokeiluversioympäristössä. Ne eivät ole käytettävissä tuotantoympäristöissä. Sisältö ja toiminnot voivat muuttua. Lisätietoja esiversiotoiminnoista on kohdassa [Ominaisuuksien hallinta](../hr-admin-manage-features.md).

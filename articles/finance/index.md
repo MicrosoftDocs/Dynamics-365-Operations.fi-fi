@@ -1,5 +1,5 @@
 ---
-title: Taloushallinnon kotisivu
+title: Financen aloitussivu
 description: Tässä aiheessa on luettelo Microsoft Dynamics 365 Finance -ohjelman taloushallinnon toimintoja koskevista ohjeaiheista ja muista resursseista.
 author: roschlom
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b5ed05e9c53b17632e94e913f7f3663676c3e91
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 797c549623a727e92a3dbe5e3457e1ddc09a5b0a
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770571"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000322"
 ---
-# <a name="financial-management-home-page"></a>Taloushallinnon kotisivu
+# <a name="finance-home-page"></a>Financen aloitussivu
 
 [!include [banner](includes/banner.md)]
 
@@ -60,7 +60,7 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 - [Microsoft Dynamics Operations -kumppaniyhteisön blogi](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
 
 ### <a name="task-guides"></a>Tehtäväoppaat
-Finance and Operationsin tehtäväoppaissa on lisäohjeita. Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.
+Finance and Operations -tehtäväoppaat sisältävät lisäohjeita. Voit avata tehtäväoppaan napsauttamalla Ohje-painiketta millä tahansa sivulla.
 
 ### <a name="videos"></a>Videot
 
