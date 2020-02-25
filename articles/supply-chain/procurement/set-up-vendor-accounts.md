@@ -3,7 +3,7 @@ title: Toimittajatilien asettaminen
 description: Tässä aiheessa kuvataan tiedot, jotka on määritettävä uutta toimittajatiliä luotaessa.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 63843381207fbe6cb72ac1b5533eda754b1ba55b
+ms.sourcegitcommit: 5457cbec3399d8ed9f87c3a9dc586173b5616c11
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249386"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012442"
 ---
 # <a name="set-up-vendor-accounts"></a>Toimittajatilien asettaminen
 
@@ -88,7 +88,7 @@ Voit asettaa toimittajan pitoon eri tapahtumatyyppien kohdalla. Valittavissa ova
 -   **Lasku**– Laskuja ei voi luoda tai kirjata toimittajalle.
 -   **Kaikki** - Toimittajan kaikki tapahtumatyypit ovat pidossa. Tapahtumatyypit sisältävät ostoehdotukset, laskut ja maksut.
 -   **Maksu** – Maksuja ei voi luoda toimittajalle.
--   **Ostoehdotus** – Vain ostoehdotuksia voidaan luoda toimittajalle. Muita tapahtumia ei voi luoda.
+-   **Ehdotus** – Ostoehdotuksia ei voi luoda toimittajalle, ja hankintarivejä, jotka on jo luotu ennen toimittajan estossa-asetusten muuttamista, ei voi muuntaa ostotilaukseksi. Toimittajan ehdotusrivit peruutetaan, jos käytäntö on määritetty luomaan ostotilaukset automaattisesti.
 -   **Ei koskaan** – Toimittajaa ei aseteta pitoon aktiivisuuden puutteen vuoksi.
 
 Kun asetat toimittajan pitoon, voit myös määrittää pidolle syyn ja päivämäärän, jona pitotila päättyy. Jos et määritä päättymispäivämäärää, toimittajan pitotila on voimassa toistaiseksi.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df158e80bd1c11832376678a631a9e0e162534ad
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: b09efeb6b5d8bd2ea452dbf7a9ddaeec2ab75c92
+ms.sourcegitcommit: 0455a024185f79ecb82df61e6d994bd71dee5c10
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915714"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "2974289"
 ---
 # <a name="FORMAT">FORMAT ER-funktio</a>
 
@@ -96,7 +96,7 @@ Jos sama raportti käsitellään asiakkaalle **Litware Retail** 17.12.2015 ja ma
 >[!NOTE]
 > Otsikoiden ER-kaavoissa käytetään seuraavaa syntaksia:
 >
-> - **Etikettejä varten Microsoft Dynamics 365 Finance -sovelluksen resursseista:** **@X**, jossa **X** on sovellusobjektipuun (AOT) etikettitunnus
+> - **Etikettejä varten Microsoft  Dynamics 365 Finance -sovelluksen resursseista**: **\@X**, jossa **X** on sovellusobjektipuun (AOT) etikettitunnus
 > - **ER-määrityksissä sijaitsevat otsikot:** **@"GER_LABEL:X"**, jossa **X** on ER-määrityksen otsikon tunnus
 
 ## <a name="additional-resources"></a>Lisäresurssit

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 654685a382ca5f3f462ad8a9c506b51b52c3758c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 026d1d743b5150f152ef70aa642dcf6841a4e398
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811646"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025801"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool -oppaan käyttäminen
 
@@ -93,7 +93,7 @@ RSAT-työkalun edellisissä versioissa arvot voitiin vahvistaa vain, jos tarkist
 
 - Avaa tällä toiminnolla **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config**-tiedosto RSAT-asennuskansiossa (esimerkiksi kansiossa **C:\\Program Files (x86)\\Regression Suite Automation Tool**) ja muuta seuraavan elementin arvo **epätosi** arvoksi **tosi**.
 
-    ```
+    ```xml
     <add key="AddOperatorFieldsToExcelValidation" value="false" />
     ```
 
@@ -136,7 +136,7 @@ Tämä toiminto luo kansion, joka sisältää suoritettujen testitapausten lokit
 
 - Avaa tällä toiminnolla **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config**-tiedosto RSAT-asennuskansiossa (esimerkiksi kansiossa **C:\\Program Files (x86)\\Regression Suite Automation Tool**) ja muuta seuraavan elementin arvo **epätosi** arvoksi **tosi**.
 
-    ```
+    ```xml
     <add key="LogGeneration" value="false" />
     ```
 
@@ -155,7 +155,7 @@ Tämä toiminto ottaa näyttökuvat tehtävätallenteen aikana suoritetuista vai
 
 - Avaa tällä toiminnolla **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config**-tiedosto RSAT-asennuskansiossa (esimerkiksi kansiossa **C:\\Program Files (x86)\\Regression Suite Automation Tool**) ja muuta seuraavan elementin arvo **epätosi** arvoksi **tosi**.
 
-    ```
+    ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
@@ -196,7 +196,7 @@ Seuraavassa kuvassa on tämän skenaarion liiketoimintaprosessit RSAT-työkaluss
 - Suorita testit uudelleen muissa kuin tason 1 ympäristöissä käyttämällä Azuren ajankohtaan perustuvaa palautusta.
 - Vaikka voit muodostaa ainutlaatuisia yhdistelmiä Excelin **SATUNNAINEN**- ja **NYT**-funktioita, sen työmäärä on huomattavan suuri. Esimerkki:
 
-    ```
+    ```Excel
     product = "AT" &TEXT(NOW(),"yyymmddhhmm")
     ```
 
@@ -227,13 +227,13 @@ RSAT voidaan kutsua **Komentokehote**-ikkunasta.
 1. Avaa **Komentokehote**-ikkuna järjestelmänvalvojana.
 2. Suorita työkalu asennushakemistosta.
 
-    ```
+    ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
     ```
 
 3. Luettele kaikki komennot.
 
-    ```
+    ```Console
     C:\Program Files (x86)\Regression Suite Automation Tool>Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe help
 
     Usage:
@@ -275,7 +275,7 @@ Seuraavassa esimerkissä käytetään yhtä **aloitus**-parametria määrittäm�
 
 Avaa integroitu Microsoft Windows PowerShell -komentosarjaympäristö (ISE) järjestelmänvalvojan tilassa ja liitä seuraava koodi **Untitled1.ps1**-nimiseen ikkunaan.
 
-```
+```powershell
 param ( [int]$start = 1, [int]$nr = 1 )
 function UpdateCustomer
 {
@@ -314,7 +314,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 Seuraavassa esimerkissä ostotilauksen tila etsitään Open Data Protocol (OData) -kutsun avulla. Jos tila ei ole **invoiced**, voit esimerkiksi kutsua laskun kirjaavan RSAT-testitapauksen.
 
-```
+```xpp
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

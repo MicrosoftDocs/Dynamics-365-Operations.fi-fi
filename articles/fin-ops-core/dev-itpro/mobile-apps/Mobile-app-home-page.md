@@ -1,9 +1,9 @@
 ---
-title: Mobiilisovelluksen kotisivu
-description: Tässä ohjeaiheessa käsitellään Finance and Operations -mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
+title: Mobiilisovelluksen aloitussivu
+description: Tässä ohjeaiheessa käsitellään Finance and Operations (Dynamics 365) -mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
 author: sericks007
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: aaff4e3b3bfb079e183a12a5a85e452eed6df51d
-ms.sourcegitcommit: e30ced8f136ef23017d2d8215a756236e42eec25
+ms.openlocfilehash: 012b51b66c831a66a54c7c868735e310f05eb8c1
+ms.sourcegitcommit: f939bc6292840e29bc0f498efc8f4641dfe8f994
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "2853929"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "2975194"
 ---
 # <a name="mobile-app-home-page"></a>Mobiilisovelluksen aloitussivu
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään Finance and Operations -mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
+Tässä ohjeaiheessa käsitellään **Finance and Operations (Dynamics 365)** -mobiilisovellusta ja annetaan linkkejä resursseihin, jotka voivat auttaa sovellukseen käyttöönotossa organisaatiossasi.
 
 <a name="overview"></a>Yleiskuvaus
 --------
@@ -80,7 +80,7 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 <tr class="odd">
 <td>1</td>
 <td>Järjestelmänvalvoja</td>
-<td>Ota Finance and Operations -sovellukset käyttöön organisaatiossasi</td>
+<td>Ota Finance and Operations -sovellus käyttöön organisaatiossasi.</td>
 <td><ul><li>Jos et ole vielä ottanut Microsoft Dynamics 365 -versiota käyttöön, lisätietoja on kohdassa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön käyttöönotto</a>.</li><li>Jos haluat tutustua käytettävissä oleviin mobiilityötilaluetteloihin, lisätietoja on ohjeaiheessa <a href="mobile-workspaces-released.md">Äskettäin vapautetut mobiilityötilat</a>.</li></ul></td>
 </tr>
 <tr class="even">
@@ -135,8 +135,8 @@ Seuraavassa taulukossa on linkkejä resursseihin, jotka auttavat ottamaan käytt
 <td>Käyttäjä</td>
 <td>Lataa ja asenna mobiilisovellus.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations -sovellus Android-laitteille</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations -sovellus iOS-laitteille</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations -sovellus Androidille</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations -sovellus iOSille</a><BR/>
 (Windows Phonea ei tueta)
 </td>
 </tr>

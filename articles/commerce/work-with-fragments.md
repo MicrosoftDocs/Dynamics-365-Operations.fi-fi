@@ -3,7 +3,7 @@ title: Katkelmien käyttäminen
 description: Tässä ohjeaiheessa kuvataan, miksi, milloin ja miten osia käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 32482538b2913e6585257bcf7a1cbe780d3cdd30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914697"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026037"
 ---
 # <a name="work-with-fragments"></a>Katkelmien käyttäminen 
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kuvataan, miksi, milloin ja miten osia käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
@@ -57,25 +57,34 @@ Seuraavassa kuvassa näkyy, kuinka osia voi käyttää jaettujen moduulin määr
 
 Voit luoda uuden osan tai tallentaa olemassa olevan osan määrityksen osana.
 
+### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Aiemmin luodun moduulin määrityksen tallentaminen osana
+
+Voit muuntaa aiemmin määritetyn moduulin uudelleenkäytettäväksi osaksi seuraavasti.
+
+1. Avaa sivu tai malli, joka sisältää osaksi muunnettavan moduulin.
+1. Valitse vasemmalla olevasta jäsennysruudusta painike, jossa on kolme pistettä (**...**) moduulin nimen vieressä. 
+1. Valitse **Jaa fragmenttina**. 
+1. Näyttöön tulee valintaikkuna. Anna osan nimi ja metatiedot.
+1. Valitse **OK**, jos haluat tallentaa moduulin määrityksen osana, joka voidaan lisätä muille sivuille.
+
+Seuraavassa kuvassa näkyy, miten moduulin konfiguraatio tallennetaan fragmenttina.
+
+![Näyttökaappaus moduulin kokoonpanon tallentamisesta fragmenttina](./media/save-as-fragment.png)
+
 ### <a name="create-a-new-fragment"></a>Uuden osan luominen
 
 Voit luoda uuden osan seuraavien vaiheiden avulla.
 
 1. Valitse vasemmanpuoleisessa siirtymisruudussa **Osat**.
 1. Valitse **Uuden sivun osa**. Näyttöön tulee valintaikkuna, jossa näkyvät kaikki käytettävissä olevat moduulityypit. Osat voi luoda mistä tahansa moduulityypistä, kuten aiemmin jo mainittiin.
-1. Valitse osalle moduulityyppi ja valitse sitten **OK**.
+1. Valitse fragmentin moduulityyppi.
 
-    > [!TIP]
-    > Kun valitset yleisen säilömoduulin tyypin, osan päivittäminen ja määrittäminen sujuu joustavasti myöhemmin.
+Seuraavassa kuvassa näkyy, mistä uusi katkelma luodaan.
 
-### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Aiemmin luodun moduulin määrityksen tallentaminen osana
+![Näyttökaappaus, jossa tulee luoda uusi fragmentti](./media/fragment-nav-menu.png)
 
-Voit muuntaa aiemmin määritetyn moduulin uudelleenkäytettäväksi osaksi seuraavasti.
-
-1. Avaa sivu tai malli, joka sisältää osaksi muunnettavan moduulin.
-1. Valitse vasemmanpuoleisessa jäsennysruudussa poistettavan moduulin nimen vieressä oleva kolmen pisteen painike (**...**) ja valitse sitten **Tallenna osana**. Näyttöön tulee valintaikkuna.
-1. Anna osan nimi ja metatiedot.
-1. Valitse **OK**, jos haluat tallentaa moduulin määrityksen osana, joka voidaan lisätä muille sivuille.
+> [!TIP]
+> Kun valitset yleisen säilömoduulin tyypin, osan päivittäminen ja määrittäminen sujuu joustavasti myöhemmin.
 
 ## <a name="add-remove-or-edit-fragments-on-a-page"></a>Osien lisääminen sivulle tai niiden poistaminen tai muokkaaminen
 
@@ -88,11 +97,15 @@ Voit lisätä osan sivulle seuraavasti.
 1. Valitse vasemmalla olevasta jäsennysruudusta säilö tai paikka, johon alimoduulit voidaan lisätä.
 1. Valitse säilön tai paikan vieressä oleva kolmen pisteen painike ja valitse sitten **Lisää osa**. Näyttöön tulee valintaikkuna.
 
+    ![Näyttökaappaus siitä, miten olemassa oleva fragmentti lisätään paikkaan tai säilöön](./media/add-fragment.png)
+ 
     > [!NOTE]
     > Jos säilö tai paikka ei tue uusia alimoduuleja, **Lisää osa** -vaihtoehto ei ole käytettävissä.
-
+    
 1. Hae valintaikkunassa lisättävä osa ja valitse se. Jos käytettävissä olevia osia ei ole näkyvissä, sinun on ehkä ensin luotava osa moduulityypistä, jota valittu säilö tai paikka tukee.
-1. Valitse **OK**, jos haluat lisätä valitun osan sivun valittuun säilöön tai paikkaan.
+1. Valitse haluamasi fragmentti lisätäksesi sen sivullasi olevaan säilöön tai paikkaan.
+
+    ![Näyttökaappaus fragmenttivalitsimen modaalisesta ikkunasta](./media/fragment-picker.png)
 
 > [!NOTE]
 > Moduulit, jotka sallitaan säilössä tai paikassa, määräytyvät sivun mallin tai moduulien omien määritysten mukaan.

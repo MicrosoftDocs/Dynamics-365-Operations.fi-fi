@@ -3,7 +3,7 @@ title: Tilinhallinnan sivut ja moduulit
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen tilienhallintasivuista ja -moduuleista.
 author: v-chgri
 manager: annbe
-ms.date: 12/02/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
-ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
+ms.openlocfilehash: 8787a7b01ecf15752569d2a3a8d7804fe492e63d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2885806"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025678"
 ---
 # <a name="account-management-pages-and-modules"></a>Tilinhallinnan sivut ja moduulit
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen tilienhallintasivuista ja -moduuleista.
@@ -40,13 +40,12 @@ Tilien hallinta viittaa sivuryhmään, jota käytetään Dynamics 365 Commercen 
 
 Tilihallinnan saapumissivulla käytetään seuraavia moduuleja:
 
-- **Sisällönsijoittelu** – Tämä moduuli on säilömoduuli, joka sisältää kaikki moduulit tilinhallinnan saapumissivulla.
-- **Tilin tervetulonimike** – Tämä moduuli sisältää tervetulosanoman tilinhallinnan sivulla. Se sisältää ylätunnisteen ja ruudun koon ominaisuudet. **Ruudun koko** -ominaisuus määrittää moduulin leveyden sisällönsijoittelumoduulissa. Arvot vaihtelevat välillä **1**–**12**, jossa **12** edustaa sisällönsijoitussäilön täyttä leveyttä.
-- **Tilin tilauksen sijoittelunimike** – Tämän moduulin avulla voit määrittää yhteenvedon käyttäjätilin tekemistä tilauksista. Se sisältää ylätunnisteen ja ruudun koon ominaisuudet sekä näkymän tietojen linkin. Näkymän tietojen linkki on määritettävä niin, että se ohjaa uudelleen tilaushistoriasivulle.
-- **Tiliprofiilin sijoittelunimike** – Tätä moduulia käytetään käyttäjäprofiilin yhteenvedon määrityksessä. Se sisältää ylätunnisteen ja ruudun koon ominaisuudet sekä näkymän tietojen linkin. Näkymän tietojen linkki on määritettävä niin, että se ohjaa uudelleen käyttäjäprofiilisivulle.
-- **Toivomuslistan nimike** – Tämän moduulin avulla määritetään asiakkaan toivomuslistan nimikkeiden yhteenveto. Se voi esimerkiksi ilmoittaa, että toivomuslistassa on 10 nimikettä. Se sisältää ylätunnisteen ja ruudun koon ominaisuudet sekä näkymän tietojen linkin. Näkymän tietojen linkki on määritettävä niin, että se ohjaa uudelleen toivomuslistasivulle.
-- **Tilin osoitteen nimike** – Tätä moduulia käytetään käyttäjän osoitteiden yhteenvedon määrityksessä. Siinä voi lukea esimerkiksi seuraava teksti: Tilillesi on lisätty 2 osoitetta. Se sisältää ylätunnisteen ja ruudun koon ominaisuudet sekä näkymän tietojen linkin. Näkymän tietojen linkki on määritettävä niin, että se ohjaa uudelleen käyttäjän osoitteen sivulle.
-- **Tilin kanta-asiakasnimike** – Tämän moduulin avulla näytetään ja linkitetään kanta-asiakasohjelman tiedot. Se sisältää ylätunnisteen ja ruudun koon ominaisuudet, näkymän tietojen linkin ja Liity jäseneksi -linkin. Näkymän tietojen linkki on määritettävä niin, että se ohjaa uudelleen kanta-asiakkuussivulle. Liity jäseneksi -linkki on määritettävä niin, että se ohjaa sivulle, jossa käyttäjät voivat liittyä kanta-asiakasohjelmaan.
+- **Säilö** – kaikki tilinhallinnan saapumissivumoduulit on sijoitettava säilöön. 
+- **Tilin tervetuloruutu** – Tämä moduuli sisältää tervetulosanoman tilinhallinnan sivulla. Se sisältää otsikon ominaisuudet.
+- **Tilin yleinen ruutu** – Tämän moduulin avulla saadaan otsikot ja linkit tilinhallintasivuille, kuten Tilaushistoria- ja Oma profiili -sivuille. Yleinen ruutumoduulin avulla voidaan määrittää minkä tahansa sivun ruutu. Fabrikamissa tätä moduulia käytetään Tilaushistoria- ja Oma profiili -sivulinkeissä tilinhallinnan saapumissivulla.
+- **Toivelistaruutu** – Tämän moduulin avulla määritetään asiakkaan toivelistan nimikkeiden yhteenveto. Se voi esimerkiksi ilmoittaa, että toivomuslistassa on 10 nimikettä. Se sisältää otsikon ja Näytä tiedot -linkin. Näytä tiedot -linkki on määritettävä niin, että se ohjaa uudelleen toivelistasivulle. 
+- **Tilin osoiteruutu** – Tätä moduulia käytetään käyttäjän osoitteiden yhteenvedon määrityksessä. Siinä voi lukea esimerkiksi seuraava teksti: Tilillesi on lisätty 2 osoitetta. Se sisältää otsikon ja Näytä tiedot -linkin. Näytä tietojen -linkki on määritettävä niin, että se ohjaa uudelleen käyttäjän osoitesivulle.
+- **Tilin kanta-asiakasruutu** – Tämän moduulin avulla näytetään ja linkitetään kanta-asiakasohjelman tiedot. Tässä ruudussa on kakis tilaa: toinen tila näyttää linkin kanta-asiakasohjelmaan liittymiseen, jos käyttäjä ei ole vielä jäsen. Toinen tila näyttää linkit kanta-asiakastietojen sivulle, kun käyttäjä on jo jäsen. Ominaisuuksia ovat otsikko, Rekisteröidy-linkki ja Näytä kanta-asiakkuus -linkki. Näytä kanta-asiakkuus -linkki on määritettävä niin, että se ohjaa uudelleen kanta-asiakkuussivulle. Rekisteröidy-linkki on määritettävä niin, että se ohjaa sivulle, jossa käyttäjät voivat liittyä kanta-asiakasohjelmaan. 
 
 ### <a name="order-history-page"></a>Tilaushistoriasivu
 
@@ -58,7 +57,7 @@ Tilaustietojen sivulla on eriteltyjä tietoja jokaisesta tilauksesta. Sitä voi 
 
 ### <a name="user-profile-page"></a>Käyttäjäprofiilisivu
 
-Käyttäjäprofiilisivulla näkyvät käyttäjätilin tiedot, kuten käyttäjän nimi ja sähköpostiosoite. Se käyttää käyttäjäprofiilimoduulia. Vaikka sähköpostiosoitetta ei voi poistaa, sitä voi muokata. Käyttäjäprofiilisivulla näkyvät myös käyttäjäasetukset, joiden avulla käyttäjä voi halutessaan valita tiettyjä ominaisuuksia, kuten suositusluetteloiden mukauttamisen, tai poistaa ne käytöstä. 
+Käyttäjäprofiilisivulla näkyvät käyttäjätilin tiedot, kuten käyttäjän nimi ja sähköpostiosoite. Se käyttää käyttäjäprofiilin tieto- ja muokkausmoduuleja. Vaikka sähköpostiosoitetta ei voi poistaa, sitä voi muokata. Käyttäjäprofiilisivulla näkyvät myös käyttäjäasetukset, joiden avulla käyttäjä voi halutessaan valita tiettyjä ominaisuuksia, kuten suositusluetteloiden mukauttamisen, tai poistaa ne käytöstä. 
 
 ### <a name="user-address-page"></a>Käyttäjän osoitteen sivu
 
@@ -70,7 +69,9 @@ Toivomuslistasivulla ovat nimikkeet, jotka on lisätty asiakkaan toivomuslistaan
 
 ### <a name="loyalty-page"></a>Kanta-asiakassivu
 
-Kanta-asiakkuussivulla asiakkaat voivat liittyä kanta-asiakasohjelmaan. Jos he ovat jo kanta-asiakasohjelman jäseniä, he voivat katsella omia tietojaan. He voivat myös tarkastella pisteitä, jotka he ovat ansainneet ja lunastaneet edellisten tapahtumien aikana.
+Kanta-asiakkuussivulla asiakkaat voivat tarkastella omia kanta-asiakastietojaan, jos he ovat jo kanta-asiakasohjelman jäseniä. He voivat myös tarkastella pisteitä, jotka he ovat ansainneet ja lunastaneet edellisten tapahtumien aikana. Sivu käyttää kanta-asiakastietomoduulia näyttämään kanta-asiakastiedot. 
+
+Kanta-asiakasohjelmaan liittymistä varten voidaan luoda markkinointisivu, jossa on kanta-asiakkaiden rekisteröitymisen ja kanta-asiakkuuden ehtojen moduulit. Jos käyttäjä ei ole kanta-asiakasohjelman jäsen, käyttäjä voi rekisteröityä näiden moduulien avulla.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

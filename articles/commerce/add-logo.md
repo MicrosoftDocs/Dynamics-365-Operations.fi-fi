@@ -3,7 +3,7 @@ title: Logon lisääminen
 description: Tässä ohjeaiheessa kerrotaan, miten logo lisätään sivustollesi Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 23bac9aae6beb59912bbc9e1f2c6958c007550b0
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914616"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025689"
 ---
 # <a name="add-a-logo"></a>Logon lisääminen
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten logo lisätään sivustollesi Microsoft Dynamics 365 Commerce -sovelluksessa.
@@ -43,7 +43,7 @@ Voit lisätä logon suoraan malliin, asetteluun tai sivulle. Tällä tavoin voit
 
 Ennen kuin voit lisätä logon sivustosi kaikille sivuille, sinun on suoritettava nämä tehtävät.
 
-1. Lataa logosi digitaaliseen resurssinhallintaan, jota voit käyttää **Resurssit**-sivulla.
+1. Lataa logo mediakirjastoon.
 1. Luo otsikko-osa. Lisätietoja osien luomisesta ja käyttämisestä on kohdassa [osien käyttäminen](work-with-fragments.md).
 1. Sisällytä otsikon osa malliin, jota sivustosi sivut käyttävät asettelu- ja moduulivaihtoehtoihin. Lisätietoja malleista on osiossa [Mallien avulla työskentely](work-with-templates.md).
 
@@ -51,13 +51,11 @@ Ennen kuin voit lisätä logon sivustosi kaikille sivuille, sinun on suoritettav
 
 Jos haluat lisätä logon sivustosi otsikko-osaan, toimi seuraavasti.
 
-1. Valitse vasemmalla olevasta siirtymisruudusta **osat** ja valitse sitten luomasi ylätunnisteen osa.
-2. Valitse **Kirjaa ulos**.
-3. Laajenna **Otsikkopaikka** ja **Logopaikka**.
-4. Valitse kolmen pisteen painike (**...**) **Logopaikalle** ja valitse sitten **Lisää moduuli**.
-5. Valitse logomoduuli.
-6. Määritä oikeanpuoleisessa ominaisuusruudussa logomoduuli, niin, että logosi näkyy siinä.
-7. Tallenna ylätunnisteosa, kirjaa se sisään ja julkaise se.
+1. Valitse vasemmanpuoleisessa siirtymisruudussa **Sivut osat**.
+1. Valitse aiemmin luomasi otsikon osa ja valitse sitten **Muokkaa**.
+1. Laajenna otsikkomoduuli.
+1. Anna logon kuva ja linkki otsikkomoduulin ominaisuusruudussa. 
+1. Tallenna otsikko-osa, lopeta sen muokkaus ja julkaise se.
 
 Kun olet julkaissut päivitetyn otsikon osan, kaikki ylätunnisteosan sisältävää mallia käyttävät sivuston sivut näyttävät logon.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 80d71d2390e7b6e39798d0f061b584ad229a2459
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 20d3da65028b455ab1602e3a8b443ea7e585b1f0
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897301"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030893"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-september-17-2018"></a>Dynamics 365 Talent - Core HR:n uudet tai muuttuneet ominaisuudet (17. syyskuuta 2018)
 
@@ -35,13 +35,13 @@ Tässä ohjeaiheessa käsitellään Core HR -ohjelman uusia tai muuttuneita omin
 
 Lomasuunnitelmiin on lisätty uusi jaksotustyyppi. Jaksotusaikataulu voi nyt perustua palvelukuukausiin tai työtunteihin. Lisätietoja on kohdassa [Jaksotettu poissaolo työtuntien mukaan](leave-accrue-hours-worked.md).
 
-## <a name="platform-update-18-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 18
+## <a name="platform-update-18-for-finance-and-operations"></a>Ympäristön päivitys 18 Finance and Operationsille
 
-Finance and Operations -käyttömpäristöpäivitys 18 on nyt osa Talent-versiota. 
+Ympäristöpäivitys 18 Finance and Operations -sovelluksille on nyt osa Talent-versiota. 
 
 -   Pakolliset ja muut kentät voidaan piilottaa mukautuksen kautta. Käyttäjä voi näin luoda yksinkertaistetun kokemuksen, jossa liiketoimintalogiikan oletusarvojen mukaan määritettyjä pakollisia kenttiä ei näytetä. Pakolliset piilotetut kentät näkyvät myös tilapäisesti, jos ne ovat tyhjiä, kun yritetään tallennusta.
 
--   Finance and Operations -käyttöympäristöpäivityksessä 18 Talent-verkkoasiakasohjelma kohdistaa nyt sen visuaaliset elementit Microsoft Fluent Designin kanssa.
+-   Ympäristöpäivityksessä 18 Finance and Operations -sovelluksille Talent-verkkoasiakasohjelma kohdistaa nyt sen visuaaliset elementit Microsoft Fluent Designin kanssa.
 
     -   Kun kentät ovat "Luku-tilassa", voit siirtyä muokkaukseen valitsemalla kentissä muokkausvaihtoehdon.
 
@@ -49,7 +49,7 @@ Finance and Operations -käyttömpäristöpäivitys 18 on nyt osa Talent-versiot
 
     -   Työtilojen ja sivujen otsikot näkyvät lihavoituna.
 
--   Hakujen korvaamattomuustoimintoa on parannettu. Lisätietoja on kohdassa [Hakujen korvaamattomuustoiminnon parantaminen](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fbusiness-applications-release-notes%2FOctober18%2Fdynamics365-finance-operations%2Fnon-replacing-lookups&data=02%7C01%7C%7Ce0b3b3bee47b4424aaa208d619ce86f2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636724772137980342&sdata=RN1qjtZSLtS010zgs0KlcwFrrB8Z7uWWGtFjdxdaamg%3D&reserved=0).
+-   Hakujen korvaamattomuustoimintoa on parannettu. Lisätietoja on kohdassa [Hakujen korvaamattomuustoiminnon parantaminen](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/non-replacing-lookups).
 
 ## <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 

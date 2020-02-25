@@ -1,5 +1,5 @@
 ---
-title: Commercen esikatseluympäristön usein kysytyt kysymykset
+title: Dynamics 365 Commerce -esikatseluympäristön usein kysytyt kysymykset
 description: Tässä aiheessa on vastauksia Microsoft Dynamics 365 Commercen esikatseluympäristöä koskeviin usein kysyttyihin kysymyksiin.
 author: v-chgri
 manager: annbe
@@ -17,16 +17,15 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 53e593931850d6b8b22bb756d5828f742416aa4d
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 061a160380e500ea52afbc35f0a95fe84d971bcf
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906090"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024749"
 ---
-# <a name="commerce-preview-environment-faq"></a>Commercen esikatseluympäristön usein kysytyt kysymykset
+# <a name="dynamics-365-commerce-preview-environment-faq"></a>Dynamics 365 Commerce -esikatseluympäristön usein kysytyt kysymykset
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Tässä aiheessa on vastauksia Microsoft Dynamics 365 Commercen esikatseluympäristöä koskeviin usein kysyttyihin kysymyksiin.
@@ -83,10 +82,10 @@ Jos kohtaat ongelmia yrittäessäsi käyttää Yammer-ryhmää, voit ottaa yhtey
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Commercen esikatseluympäristön yleiskuvaus](cpe-overview.md)
+[Dynamics 365 Commercen esikatseluympäristön yleiskuvaus](cpe-overview.md)
 
-[Commercen esikatseluympäristön valmisteleminen](provisioning-guide.md)
+[Dynamics 365 Commercen esiversioympäristön valmistelu](provisioning-guide.md)
 
-[Commercen esikatseluympäristön määrittäminen](cpe-post-provisioning.md)
+[Dynamics 365 Commercen esikatseluympäristön määrittäminen](cpe-post-provisioning.md)
 
-[Valinnaisten ominaisuuksien määrittäminen Commercen esikatseluympäristöä varten](cpe-optional-features.md)
+[Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commercen esikatseluympäristöä varten](cpe-optional-features.md)

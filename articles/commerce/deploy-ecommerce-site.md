@@ -3,7 +3,7 @@ title: Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
 description: Tässä ohjeaiheessa kerrotaan, miten uusi sähköisen kaupankäynnin vuokraaja otetaan käyttöön Microsoft Dynamics Lifecycle Services (LCS) -palvelun avulla.
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945510"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001780"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten uusi sähköisen kaupankäynnin sivusto otetaan käyttöön Microsoft Dynamics Lifecycle Services (LCS) -palvelun avulla.
 
 ## <a name="overview"></a>Yleiskatsaus
-    
+
 Microsoft Dynamics Lifecycle Services (LCS) on pilvipohjainen yhteinen työtila, jossa kumppanit ja asiakkaat voivat hallita projekteja ja ympäristöjä, katsella uusimpia tietoja Microsoft Dynamics -tuotteista ja -toiminnoista sekä luoda, seurata ja selata tukitapauksia. Sähköisen kaupankäynnin hallintatoiminnot integroidaan LCS:n kanssa.
 
 Lisätietoja LCS:stä on kohdassa [Lifecycle Services -käyttöopas](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
@@ -80,11 +80,16 @@ Kun olet kerännyt tarvittavat tiedot, alusta sähköinen kaupankäynti seuraava
 1. Täytä tarvittavat tiedot seuraavalla sivulla ja lähetä lomake. Palaat **Sähköinen kaupankäynti** -välilehteen, jossa näet, että alustus on alkanut.
 1. Jos haluat tarkastella alustuksen tilaa, valitse **Päivitä** tai palaa **Sähköinen kaupankäynti** -välilehteen myöhemmin.
     
-Kun sähköinen kaupankäynti alustetaan LCS:stä, järjestelmä valmistelee useita osia, jotka ovat pakollisia sähköisessä kaupankäynnissä, ja liittää ne ympäristöön. Kun valmistelu on tehty, **Sähköinen kaupankäynti** -välilehti **Retail-hallinta**-sivulla päivitetään vastaamaan valmistelua. Sivulla näkyvät viimeisimmät mukautuksen käyttöönotot ja muiden käynnissä olevien käyttöönottojen tila. Se sisältää myös linkit sähköisen kaupankäynnin sivustoon ja sähköisen kaupankäynnin sivuston hallintatyökalun (muokkaustyökalu).
+Kun sähköinen kaupankäynti alustetaan LCS:stä, järjestelmä valmistelee useita osia, jotka ovat pakollisia sähköisessä kaupankäynnissä, ja liittää ne ympäristöön. Kun valmistelu on tehty, **Sähköinen kaupankäynti** -välilehti **Retail-hallinta**-sivulla päivitetään vastaamaan valmistelua. Sivulla näkyvät viimeisimmät mukautuksen käyttöönotot ja muiden käynnissä olevien käyttöönottojen tila. Se sisältää myös linkit sähköisen kaupankäynnin sivustoon ja sähköisen kaupankäynnin sivustomuodostinsivulle, jolla sivut luodaan.
 
-## <a name="access-the-authoring-environment"></a>Muokkausympäristön käyttäminen
+## <a name="access-site-builder"></a>Sivustonmuodostimen käyttö
 
-Jos haluat käyttää muokkausympäristöä, siirry **Sähköinen kaupankäynti** -välilehteen **Retail-hallinta**-sivulla. Sieltä löydät linkit sähköisen kaupankäynnin sivustoon ja sivuston hallintatyökaluun.
+Kun haluat käyttää sivustonmuodostinta, siirry **Sähköinen kaupankäynti**-välilehteen LCS:n **Vähittäismyynnin hallinta** -sivu ja valitse **Sähköisen kaupankäynnin hallintatyökalu** -linkki. Sivustonmuodostimen aloitussivulla näkyy vuokraajatason näkymä. Tällä sivulla voit:
+
+- Muokata vuokraajatason asetuksia.
+- Siirry mille tahansa luomallesi sivustolle katseluoikeuksilla. 
+- Käytä tarkistustoimintoja, kuten arviointia ja raportointia.
+- Luo uusi sivusto. Lisätietoja uuden sivuston luomisesta ja käyttöönotosta on kohdassa [Luo sähköisen kaupankäynnin sivusto](create-ecommerce-site.md). 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

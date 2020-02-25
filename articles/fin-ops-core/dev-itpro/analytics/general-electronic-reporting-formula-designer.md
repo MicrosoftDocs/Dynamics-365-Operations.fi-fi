@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0028d1f64aced1bbff91b18456c81adbb95bce30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 14539ed6c00915b7d59a5a3c4870ab6d1a96ad95
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914815"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002517"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Sähköisen raportoinnin (ER) kaavojen suunnittelutoiminto
 
@@ -51,7 +51,7 @@ Voit avata **Kaavojen suunnittelutoiminto** -sivun, kun teet jonkin seuraavista 
 - Prosessin hallinnan tarkistusten ehtojen määritys
 - Prosessin hallinnan tarkistusten sanoman tekstin määritys
 
-## <a name="Binding">Tietojen sidonta</a>
+## <a name="Binding"></a>Tietojen sidonta
 
 ER-kaavojen suunnittelutoiminnon avulla voi määrittää lausekkeen, joka muuntaa tietolähteistä vastaanotetut tiedot niin, että tiedot voidaan täyttää tietojen käyttäjään seuraavalla tavalla suorituksen aikana:
 
@@ -69,7 +69,7 @@ Seuraavassa kuvassa esitellään, miten tämän tyyppistä lauseketta voidaan k�
 
 Suorituksen aikana suunniteltu kaava, `ROUND (Intrastat.AmountMST, 2)` pyöristää kunkin Intrasat-taulun tietueen **AmountMST**-kentän arvon kahteen desimaaliin. Sen jälkeen pyöristetty arvo annetaan **Veroilmoitus**-tietomallin **Transaction.InvoicedAmount**-komponentissa.
 
-## <a name="Transformation">Tietojen muotoilu</a>
+## <a name="Transformation"></a>Tietojen muotoilu
 
 ER-kaavojen suunnittelutoiminnon avulla voi määrittää lausekkeen, joka muotoilee tietolähteistä vastaanotetut tiedot niin, että tiedot voidaan lähettää sähköisen asiakirjan luonnin osana. Käytössä voi olla muotoilu, jota on käytettävä tyypillisenä muotoiluna ja jota on käytettävä kaavassa uudelleen. Siinä tapauksessa voit käyttää kyseistä muotoilua kerran muodon määrityksessä nimettynä muunnoksena, jolla on muotoilulauseke. Tämän jälkeen nimetty muunnos voidaan linkittää useisiin muotokomponentteihin, joiden tulosten on oltava luodun muotoilulausekkeen mukaisesti muotoiltuja.
 
@@ -87,7 +87,7 @@ Jos sinulla on muotoiluja, joita tulee kohdistaa yksitellen, voit käyttää muo
 
 [![Muotoilun käyttö yksittäisessä asiakirjassa](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-## <a name="Validation">Prosessinkulun hallinta</a>
+## <a name="Validation"></a>Prosessinkulun hallinta
 
 ER-kaavojen suunnittelutoimintoa voidaan käyttää määritettäessä lausekkeita, joilla hallitaan muodostettavien sähköisten asiakirjojen prosessinkulkua. Voit suorittaa seuraavat tehtävät:
 
@@ -112,7 +112,7 @@ ER-kaavan luontitoimintoa voidaan käyttää myös sähköisen asiakirjan luonni
 
 [![Prosessinkulun hallinta](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled">Asiakirjan sisältöohjausobjekti</a>
+## <a name="Enabled"></a>Asiakirjan sisältöohjausobjekti
 
 ER-kaavan suunnittelun avulla voidaan määrittää lausekkeita, jotka ohjaavat, mitä tietoja sijoitetaan luotuihin sähköisiin tiedostoihin suorituksen aikana. Lausekkeet voivat ottaa käyttöön muodon tiettyjen elementtien tuottamisen tai poistaa sen käytöstä käsiteltävien tietojen ja määritetyn logiikan mukaan. Nämä lausekkeet voidaan määrittää yksittäiselle muotoelementille **Toimintojen suunnitteluohjelma** -sivun **Yhdistämismääritykset**-välilehden **Käytössä**-kentässä. Voit kirjoittaa lausekkeet loogiseksi ehdoksi, joka palauttaa *totuusarvon*:
 
@@ -139,7 +139,7 @@ Seuraavassa kuvassa esitellään tämäntyyppisiä lausekkeita. (Esimerkkinä k�
 > 
 > Tämän asetuksen perusteella kullekin velallisen maksulle luotu **Ustrd**-XML-elementti sisältää joko maksuhuomautusten tekstin tai, kun teksti on tyhjä, tämän maksun tilittämiseen käytetyt pilkulla erotetut laskunumerot.
 
-## <a name="TestFormula">Määritettyjen kaavojen oikeellisuustarkistus</a>
+## <a name="TestFormula"></a>Määritettyjen kaavojen oikeellisuustarkistus
 
 Valitse **Kaavansuunnittelija**-sivulla **Testaa** vahvistaaksesi, miten määritetty kaava toimii.
 

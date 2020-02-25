@@ -1,9 +1,9 @@
 ---
-title: Commercen esikatseluympäristön valmisteleminen
+title: Dynamics 365 Commercen esiversioympäristön valmistelu
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit valmistella Microsoft Dynamics 365 Commercen esikatseluympäristön.
 author: psimolin
 manager: annbe
-ms.date: 01/06/2020
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,28 +18,28 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b77d2cbbc100aeae5dcd53ddbe69ff2e4435da13
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934745"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024633"
 ---
-# <a name="provision-a-commerce-preview-environment"></a>Commercen esikatseluympäristön valmisteleminen
+# <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Dynamics 365 Commercen esiversioympäristön valmistelu
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, kuinka voit valmistella Microsoft Dynamics 365 Commercen esikatseluympäristön.
+Tässä ohjeaiheessa kerrotaan, kuinka voit valmistella Dynamics 365 Commercen esikatseluympäristön.
 
-Ennen kuin aloitat, kannattaa lukaista tämän koko ohjeaiheen läpi. Näin saat käsityksen siitä, millainen prosessi on ja mitä tämä ohjeaihe sisältää.
+Ennen kuin aloitat, suosittelemme, että tarkistat tämän aiheen nopeasti, jotta saat käsityksen prosessin vaatimista aiheista.
 
 > [!NOTE]
-> Jos sinulle ei ole vielä myönnetty Dynamics 365 Commerce Preview -sovelluksen käyttöoikeutta, voit pyytää esiversion käyttöoikeuden [Commerce-sivuston](https://aka.ms/Dynamics365CommerceWebsite) avulla.
+> Jos sinulle ei ole vielä myönnetty Dynamics 365 Commerce Preview -sovelluksen käyttöoikeutta, voit pyytää esiversion käyttöoikeuden [Dynamics 365 Commerce -sivuston avulla](https://aka.ms/Dynamics365CommerceWebsite).
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Jotta voit laatia Commerce Preview -ympäristön onnistuneesti, sinun on luotava projekti, jolla on tietty tuotteen nimi ja tyyppi. Ympäristöllä ja Retail Cloud Scale Unit (RCSU) -ratkaisulla on myös joitakin tiettyjä parametreja, joita on käytettävä, kun myöhemmin valmistelet sähköistä kaupankäyntiä. Tämän ohjeaiheen ohjeissa kuvataan kaikki vaaditut vaiheet, jotka sinun on suoritettava, ja parametrit, joita sinun on käytettävä.
+Jotta voit laatia Commerce Preview -ympäristön onnistuneesti, sinun on luotava projekti, jolla on tietty tuotteen nimi ja tyyppi. Ympäristöllä ja commerce scale unit (CSU) -ratkaisulla on myös joitakin tiettyjä parametreja, joita on käytettävä, kun myöhemmin valmistelet sähköistä kaupankäyntiä. Tämän ohjeaiheen ohjeissa kuvataan kaikki tarvittavat vaiheet käyttöönoton suorittamiseksi ja parametrit, joita sinun on käytettävä.
 
 Kun olet onnistuneesti valmistellut Commercen esikatseluympäristön, sinun on suoritettava muutama valmistelun jälkeinen vaihe sen valmistelemiseksi. Jotkin vaiheet ovat valinnaisia. Tämä riippuu siitä, mitä järjestelmän alueita haluat arvioida. Voit aina suorittaa valinnaiset vaiheet myöhemmin.
 
@@ -52,69 +52,21 @@ Jos haluat lisätietoja valmistelun vaiheista tai jos kohtaat ongelmia, kerro se
 Seuraavien edellytysten on oltava käytössä, ennen kuin voit määrittää Commerce Preview -ympäristön:
 
 - Sinulla on Microsoft Dynamics Lifecycle Services -portaalin (LCS) käyttöoikeus
+- Olet aiemmin luotu Microsoft Dynamics 365 -kumppani tai -asiakas ja pystyt luomaan Dynamics 365 Commerce -projektin.
 - Sinut on hyväksytty Dynamics 365 Commerce Preview -ohjelmaan.
-- Sinulla on projektin luomisessa vaaditut **Mahdolliset myyntiä edeltävät toimet**- tai **Siirrä, luo ratkaisuja ja opi** -kohtien oikeudet.
+- Sinulla on projektin luomisessa vaaditut **Siirrä, luo ratkaisuja ja opi** -kohtien oikeudet.
 - Olet **Ympäristövastaava**- tai **Projektin omistaja** -roolin jäsen projektissa, jolle valmistelet ympäristöä.
 - Sinulla on järjestelmänvalvojan oikeudet Microsoft Azure -tilausta varten, tai ota yhteyttä tilauksen järjestelmänvalvojaan, joka voi suorittaa puolestasi järjestelmänvalvojan oikeudet vaativat kaksi vaihetta.
 - Sinulla on käytettävissä Azure Active Directory (Azure AD) -vuokralaisen tunnus.
 - Olet luonut Azure AD -käyttöoikeusryhmän, jota voidaan käyttää sähköisen kaupankäynnin järjestelmänvalvojien ryhmänä, ja sinulla on ryhmän tunnus.
 - Olet luonut Azure AD -käyttöoikeusryhmän, jota voidaan käyttää arviot ja arvostelut -moderaattorien ryhmänä, ja sinulla on ryhmän tunnus. (Tämä suojausryhmä voi olla sama kuin verkkokauppajärjestelmän järjestelmänvalvojaryhmä.)
 
-### <a name="find-your-azure-ad-tenant-id"></a>Etsi Azure AD-vuokraajan tunnus
-
-Azure AD -vuokraajasi tunnus on yleisesti yksilöllinen GUID-tunnus, joka muistuttaa tätä esimerkkiä: **72f988bf-86f1-41af-91ab-2d7cd011db47**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-the-azure-portal"></a>Azure AD -vuokraajan tunnuksen etsiminen Azure-portaalin avulla
-
-1. Kirjaudu [Azure-portaalin osoitteessa](https://portal.azure.com/).
-1. Varmista, että oikea hakemisto on valittu.
-1. Valitse vasemmalla olevasta valikosta **Azure Active Directory**.
-1. Valitse **Hallinta**-kohdasta **Ominaisuudet**. Azure AD -vuokraajan tunnus näkyy **hakemistotunnus**-kohdassa.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-openid-connect-metadata"></a>Azure AD -vuokraajan tunnuksen etsiminen OpenID Connectin metatietojen avulla
-
-Luo OpenID-URL-osoite korvaamalla **\{OMA\_TOIMIALUEESI\}**, kuten `microsoft.com`. Esimerkiksi toimialueesta `https://login.microsoftonline.com/{YOUR_DOMAIN}/.well-known/openid-configuration` tulee `https://login.microsoftonline.com/microsoft.com/.well-known/openid-configuration`.
-
-1. Siirry siihen OpenID-URL-osoitteeseen, joka sisältää toimialueesi.
-
-    Azure AD-vuokraajan tunnus näkyy usean ominaisuuden arvoissa.
-
-1. Etsi **valtuutustieto\_päätepiste** ja pura GUID-tunnus, joka näkyy heti `login.microsoftonline.com/`in jälkeen.
-
-### <a name="find-your-azure-ad-security-group-id"></a>Azure AD -suojausryhmän tunnuksen etsiminen
-
-Azure AD -suojausryhmän tunnus on tämän esimerkin kaltainen GUID: **436ea7f5-ee6c-40c1-9f08-825c5811066a**.
-
-Tässä menettelyssä oletetaan, että olet sen ryhmän jäsen, jolle yrität löytää tunnuksen.
-
-1. Avaa [Graph-työkalu](https://developer.microsoft.com/graph/graph-explorer#).
-1. Valitse **Kirjaudu sisään Microsoftin avulla** ja kirjaudu sisään tunnistetietojen avulla.
-1. Valitse vasemmalta **Näytä lisää näytteitä**.
-1. Ota oikeanpuoleisesta ruudusta käyttöön **ryhmät**.
-1. Sulje oikeanpuoleinen ruutu.
-1. Valitse **kaikki ryhmät, joihin kuulun**.
-1. Etsi **Vastauksen esikatselu** -kentästä ryhmäsi. Suojausryhmän tunnus näkyy **Tunnus**-ominaisuuden alla.
-
 ## <a name="provision-your-commerce-preview-environment"></a>Commercen esikatseluympäristön valmisteleminen
 
 Näissä ohjeissa kerrotaan, miten Commerce Preview -ympäristö tarjotaan. Kun olet suorittanut ne onnistuneesti, Commerce Preview -ympäristö on valmiina konfigurointia varten. Kaikki tässä kuvatut toiminnot tapahtuvat LCS-portaalissa.
 
 > [!IMPORTANT]
-> Esikatselun käyttö on sidottu esikatselusovelluksessa määrittämääsi LCS-tiliin ja organisaatioon. Sinun on käytettävä samaa tiliä Commerce Preview -ympäristön tarjoamiseen. Jos sinun on käytettävä Commerce Preview -ympäristössä eri LCS-tiliä tai -vuokraajaa, sinun on annettava kyseiset tiedot Microsoftille. Yhteystiedot ovat jäljempänä tämän ohjeaiheen [ Commerce Preview -ympäristön tuki](#commerce-preview-environment-support) -osiossa.
-
-### <a name="grant-access-to-e-commerce-applications"></a>Sähköisen kaupankäynnin sovellusten käyttöoikeuden myöntäminen
-
-> [!IMPORTANT]
-> Henkilön, joka kirjautuu sisään, on oltava Azure AD -vuokraaja-järjestelmänvalvoja , jolla on Azure AD -vuokraajan tunnus. Jos tätä vaihetta ei suoritettu loppuun, jäljellä olevat valmisteluvaiheet epäonnistuvat.
-
-Jos haluat valtuuttaa sähköisen kaupankäynnin sovellukset käyttämään Azure-tilausta, toimi seuraavasti.
-
-1. Kokoa URL-osoite seuraavassa muodossa:
-
-    `https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345`
-
-1. Kopioi ja liitä URL-osoite selaimeesi tai tekstieditoriin ja korvaa **\{AAD\_-\_VUOKRAAJAN\}** tunnus Azure AD -vuokraajasi tunnuksella. Avaa sitten URL-osoite.
-1. Kirjaudu sisään Azure AD -valintaikkunassa ja vahvista, että haluat myöntää **Dynamics 365 Commerce (esikatselu)** -sovellukselle tilauksesi käyttöoikeuden. Sinut ohjataan sivulle, joka osoittaa, onko toimenpide onnistunut.
+> Esikatselun käyttö on sidottu Commerce-esikatselusovelluksessa määrittämääsi LCS-tiliin ja organisaatioon. Sinun on käytettävä samaa tiliä Commerce Preview -ympäristön tarjoamiseen. Jos sinun täytyy käyttää Commerce Preview -ympäristössä eri LCS-tiliä tai -vuokraajaa, sinun on annettava kyseiset tiedot Microsoftille. Yhteystiedot ovat jäljempänä tämän ohjeaiheen [ Commerce Preview -ympäristön tuki](#commerce-preview-environment-support) -osiossa.
 
 ### <a name="confirm-that-preview-features-are-available-and-turned-on-in-lcs"></a>Tarkista, että esiversio-ominaisuudet ovat käytettävissä ja että ne on otettu käyttöön LCS:ssä
 
@@ -210,12 +162,12 @@ Seuraavassa kuvassa näkyvät toiminnot, jotka on tehtävä LCS-**resurssikirjas
 Määritä ympäristö näiden ohjeiden avulla.
 
 > [!NOTE]
-> Vaiheita 6, 7 ja/tai 8 ei ehkä tarvitse suorittaa, koska sivut, joilla on yksi vaihtoehto, ohitetaan. Kun olet **Ympäristön parametrit** -näkymässä, varmista, että teksti **Dynamics 365 Commerce (esikatselu) - esittely (10.0.6 ja Platform-päivitys 30)** näkyy suoraan **Ympäristön nimi** -kentän yläpuolella. Katso vaiheen 8 jälkeen näkyvää kuvaa.
+> Vaiheita 6, 7 ja/tai 8 ei ehkä tarvitse suorittaa, koska sivut, joilla on yksi vaihtoehto, ohitetaan. Kun olet **Ympäristön parametrit** -näkymässä, varmista, että teksti **Dynamics 365 Commerce - esittely (10.0.* x* ja Platform-päivitys *xx*)** näkyy suoraan **Ympäristön nimi** -kentän yläpuolella. Katso tiedot vaiheen 8 jälkeen näkyvästä kuvasta.
 
 1. Valitse päävalikosta **Pilvipalveluympäristöt**.
 1. Valitse **+ Lisää** lisätäksesi ympäristön.
-1. Valitse **Tuoteversio**-kentässä **10.0.6**.
-1. Valitse **Ympäristön versio** -kentässä **Platform Update 30**.
+1. Valitse **Sovelluksen versio** -kentässä uusin versio. Jos sinulla on erityinen tarve valita jokin muu sovellusversio kuin uusin versio, älä valitse vanhempaa versiota kuin **10.0.8.**
+1. Käytä **Käyttöympäristön versio** -kentässä käyttöympäristö versiota, joka valitaan automaattisesti valitsemaasi sovellusversioon. 
 
     ![Sovelluksen ja ympäristön versioiden valitseminen](./media/project1.png)
 
@@ -224,7 +176,7 @@ Määritä ympäristö näiden ohjeiden avulla.
 
     ![Ympäristötopologia 1 valitseminen](./media/project2.png)
 
-1. Valitse **Dynamics 365 Commerce (Esikatselu) - Esittely** ympäristötopologiaksi. Jos olet määrittänyt aiemmin yhden Azure-yhdistimen, sitä käytetään tässä ympäristössä. Jos olet määrittänyt useita Azure-yhdistimiä, voit valita käytettävän yhdistimen: **Itä-Yhdysvallat**, **Itä-Yhdysvallat 2**, **Länsi-Yhdysvallat**tai **Länsi-Yhdysvallat 2**. (Parhaan päästä päähän-suorituskyvyn saavuttamiseksi suosittelemme valitsemaan **Länsi-Yhdysvallat 2**.)
+1. Valitse **Dynamics 365 Commerce - Esittely** ympäristötopologiaksi. Jos olet määrittänyt aiemmin yhden Azure-yhdistimen, sitä käytetään tässä ympäristössä. Jos olet määrittänyt useita Azure-yhdistimiä, voit valita käytettävän yhdistimen: **Itä-Yhdysvallat**, **Itä-Yhdysvallat 2**, **Länsi-Yhdysvallat**tai **Länsi-Yhdysvallat 2**. (Parhaan päästä päähän-suorituskyvyn saavuttamiseksi suosittelemme valitsemaan **Länsi-Yhdysvallat 2**.)
 
     ![Ympäristötopologia 2 valitseminen](./media/project3.png)
 
@@ -241,39 +193,38 @@ Määritä ympäristö näiden ohjeiden avulla.
 
 1. Varmista ennen jatkamista, että ympäristösi tila on **Otettu käyttöön**.
 
-### <a name="initialize-rcsu"></a>RCSU:n alustaminen
+### <a name="initialize-the-commerce-scale-unit-csu"></a>Alusta Commerce Scale unit (CSU)
 
-Alusta RCSU-osoite seuraavien ohjeiden avulla.
+Alusta CSU-osoite seuraavien ohjeiden avulla.
 
 1. Valitse **Pilvipalveluympäristöt**-näkymässä luettelosta ympäristösi.
 1. Valitse oikealla olevasta ympäristön näkymästä **Täydet tiedot**. Näkyviin tulee ympäristön tietojen näkymä.
 1. Valitse **Ympäristön ominaisuudet** -kohdassa **Hallitse**.
-1. Valitse **Vähittäismyynti**-välilehdestä **Alusta**. Näkyviin tulee RCSU-alustusparametrien näkymä.
+1. Valitse **Commerce**-välilehdestä **Alusta**. Näkyviin tulee CSU-alustusparametrien näkymä.
 1. Valitse **Alue**-kohdassa **Itä-Yhdysvallat**, **Itä-Yhdysvallat 2**, **Länsi-Yhdysvallat** tai **Länsi-Yhdysvallat 2**.
-1. Valitse **Versio**-kentässä **Määritä versio** -luettelosta ja määritä sitten **9.16.19262.5** näyttöön tulevassa kentässä. Muista määrittää tarkka versio, joka on ilmoitettu tässä. Muussa tapauksessa sinun on päivitettävä RCSU oikeaan versioon myöhemmin.
+1. Valitse **Versio**-kentässä **Määritä versio** -luettelosta ja määritä sitten **9.18.20014.4** näyttöön tulevassa kentässä. Muista määrittää tarkka versio, joka on ilmoitettu tässä. Muussa tapauksessa sinun on päivitettävä RCSU oikeaan versioon myöhemmin.
 1. Ota käyttöön **Laajennuksen käyttäminen** -vaihtoehto.
 1. Valitse laajennusluettelosta **Commerce Preview -esittelyn peruslaajennus**.
 1. Valitse **Alusta**.
-1. Kun tietojen oikeellisuus on vahvistettu käyttöönoton vahvistussivulla, valitse **Kyllä**. Palaat **Vähittäismyynnin hallinta** -näkymään, jossa on valittuna **Vähittäismyynti**-välilehti. RCSU on asetettu jonoon valmistelua varten.
-1. Varmista ennen jatkamista, että RCSU:si tila on **Onnistunut**. Alustus kestää noin kahdesta viiteen tuntia.
+1. Kun tietojen oikeellisuus on vahvistettu käyttöönoton vahvistussivulla, valitse **Kyllä**. **Commercen hallinta** -näkymä tulee uudelleen näkyviin, kun **Commerce**-välilehti on valittuna. CSU on asetettu jonoon valmistelua varten.
+1. Varmista ennen jatkamista, että CSU:si tila on **Onnistunut**. Alustus kestää noin kahdesta viiteen tuntia.
 
 ### <a name="initialize-e-commerce"></a>Sähköisen kaupankäynnin alustaminen
 
 Alusta sähköinen kaupankäynti seuraavien ohjeiden avulla.
 
-1. Tarkista esikatselun suostumus **sähköisen kaupankäynnin (esikatselu)**-välilehdestä ja valitse sitten **Asetukset**.
+1. Tarkista esikatselun suostumus **sähköisen kaupankäynnin**-välilehdestä ja valitse sitten **Asetukset**.
 1. Kirjoita **Sähköisen kaupankäynnin vuokraajan nimi** -kenttään nimi. Ota huomioon, että tämä nimi näkyy joissakin sähköisen kaupankäynnin esiintymään vievissä URL-osoitteissa.
-1. Valitse **Retail Cloud Scale -yksikön nimi** -kentässä RCSU-luettelosta. (Luettelossa pitäisi olla vain yksi vaihtoehto.)
+1. Valitse **Commerce Scale -yksikön nimi** -kentässä CSU-luettelosta. (Luettelossa pitäisi olla vain yksi vaihtoehto.)
 
     **Sähköisen kaupankäynnin paikkatieto** -kenttä määritetään automaattisesti, eikä arvoa voi muuttaa.
 
 1. Jatka valitsemalla **Seuraava**.
 1. Kirjoita **Tuetut isäntänimet** -kenttään mikä tahansa kelvollinen toimialue, kuten `www.fabrikam.com`.
-1.  **AAD-suojausryhmän järjestelmänhallinta** -kenttään, kirjoita haluamasi käyttöoikeusryhmän nimen muutama ensimmäinen kirjain. Tuo hakutulokset näkyviin valitsemalla suurennuslasikuvake. Valitse luettelosta suojausryhmä.
-2.  **AAD-turvallisuusryhmä luokituksille ja arvosteluvalvoja** -kenttään, kirjoita haluamasi käyttöoikeusryhmän nimen muutama ensimmäinen kirjain. Tuo hakutulokset näkyviin valitsemalla suurennuslasikuvake. Valitse luettelosta suojausryhmä.
+1.  **AAD-suojausryhmän järjestelmänhallinta** -kenttään, kirjoita haluamasi käyttöoikeusryhmän nimen muutama ensimmäinen kirjain. Tuo hakutulokset näkyviin valitsemalla suurennuslasikuvake. Valitse luettelosta oikea suojausryhmä.
+2.  **AAD-turvallisuusryhmä luokituksille ja arvosteluvalvoja** -kenttään, kirjoita haluamasi käyttöoikeusryhmän nimen muutama ensimmäinen kirjain. Tuo hakutulokset näkyviin valitsemalla suurennuslasikuvake. Valitse luettelosta oikea suojausryhmä.
 1. Jätä **Ota luokitukset ja arvostelut -palvelu käyttöön** -asetus päälle.
-1. Jos olet jo suorittanut Microsoft Azure Active Directoryn (Azure AD) suostumusvaiheen, joka on kuvattu kohdassa Myönnä käyttöoikeudet verkkokaupan sovelluksiin, valitse valintaruutu vahvistaaksesi suostumuksesi. Jos et ole vielä suorittanut tätä vaihetta, sinun on tehtävä se ennen alustuksen jatkamista. Avaa suostumus-valintaikkuna ja suorita vaihe valitsemalla valintaruudun vieressä olevassa tekstissä oleva linkki.
-1. Valitse **Alusta**. Palaat **Vähittäismyynnin hallinta** -näkymään, jossa on valittuna **Sähköinen kaupankäynti (esiversio)**-välilehti. Sähköisen kaupankäynnin alustaminen on aloitettu.
+1. Valitse **Alusta**. **Commercen hallinta** -näkymä tulee uudelleen näkyviin, kun **e-Commerce**-välilehti on valittuna. Sähköisen kaupankäynnin alustaminen on aloitettu.
 1. Ennen kuin jatkat, odota, kunnes sähköisen kaupankäynnin alustamisen tila on **Alustaminen onnistui**.
 1. Merkitse oikeassa alakulmassa olevassa **Linkit**-kohdassa seuraavien linkkien URL-osoitteet:
 
@@ -292,13 +243,13 @@ Jatkaaksesi käyttöönotto- ja määritysprosessia Commercen esikatseluympäris
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Commercen esikatseluympäristön yleiskuvaus](cpe-overview.md)
+[Dynamics 365 Commercen esikatseluympäristön yleiskuvaus](cpe-overview.md)
 
-[Commercen esikatseluympäristön määrittäminen](cpe-post-provisioning.md)
+[Dynamics 365 Commercen esikatseluympäristön määrittäminen](cpe-post-provisioning.md)
 
-[Valinnaisten ominaisuuksien määrittäminen Commercen esikatseluympäristöä varten](cpe-optional-features.md)
+[Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commercen esikatseluympäristöä varten](cpe-optional-features.md)
 
-[Commercen esikatseluympäristön usein kysytyt kysymykset](cpe-faq.md)
+[Dynamics 365 Commerce -esikatseluympäristön usein kysytyt kysymykset](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -308,4 +259,3 @@ Jatkaaksesi käyttöönotto- ja määritysprosessia Commercen esikatseluympäris
 
 [Dynamics 365 Commerce -sivusto](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Dynamics 365 Retailin ohjeresurssit](../retail/index.md)

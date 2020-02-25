@@ -3,7 +3,7 @@ title: Moduulien käyttäminen
 description: Tässä ohjeaiheessa kuvataan, miten ja milloin moduuleja käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,18 +17,18 @@ ms.search.industry: ''
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c4161e7a40cdbbb40292a6ce9acab58347460bd
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 769d6754fa944830b989d657e0dad9cc42212932
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914791"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025876"
 ---
 # <a name="work-with-modules"></a>Moduulien käyttäminen
 
 Tässä ohjeaiheessa kuvataan, miten ja milloin moduuleja käytetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Yleiskatsaus
@@ -99,12 +99,10 @@ Seuraavissa ohjeissa kuvataan, miten sisältö ja säilömoduulit määritetää
 
 Voit määrittää sivun sisältömoduulin seuraavasti.
 
-1. Valitse vasemmanpuoleisessa jäsennysruudussa sisältömoduulin tyyppi (esimerkiksi **Ominaisuus**, **Hero** tai **Ilmoituspalkki**).
-1. Laajenna oikeanpuoleisessa ominaisuusruudussa sisäkkäiset ohjausobjektit valitsemalla ylätunnisteet ja määrittämällä vaaditut ohjausobjektin arvot.
-1. Jos ominaisuusruudussa on **Tietojen määritys** -osa, valitse ja laajenna se. Muussa tapauksessa siirry vaiheeseen 5.
-1. Jos näkyvissä on **Lisää tietolähde** -painike, valitse se ja valitse sitten lisättävät sisältönimikkeet.
-1. Anna kaikkien pakollisten tai haluttujen moduulin ohjausobjektien asetukset.
-1. Valitse **Tallenna**.
+1. Laajenna puuta vasemmalla olevassa kehysikkunassa ja valitse mikä tahansa sisältömoduuli (esimerkiksi **Ominaisuus**, **Hero** tai **Ilmoituspalkki**).
+1. Etsi oikealla olevasta ominaisuudet-ruudusta moduulin sisältö- ja asetukset-ohjausobjektit.
+1. Määritä haluamasi moduuliohjausobjektien ominaisuudet.
+1. Valitse **Tallenna** komentopalkin yläosassa. Tämä päivittää myös esikatselualustan.
 
 ### <a name="configure-a-container-module"></a>Konttimoduulin määrittäminen
 
@@ -112,7 +110,7 @@ Voit määrittää sivun säilömoduulin seuraavasti.
 
 1. Valitse sivulla oleva säilömoduuli (esimerkiksi karuselli- tai nestesäilömoduuli).
 1. Laajenna oikeanpuoleisessa ominaisuusruudussa sisäkkäiset ohjausobjektit valitsemalla ylätunnisteet ja määrittämällä vaaditut ohjausobjektin arvot.
-1. Valitse vasemmanpuoleisessa jäsennysruudussa säilön tai jonkin sen sisällä olevan paikan nimen vieressä oleva kolmen pisteen painike ja valitse sitten **Lisää moduuliin**. Lisää sitten alimoduulit valittuun säilöön. Lisätietoja on tämän ohjeaiheen edellä olevassa kohdassa [Moduulin lisääminen](#add-a-module).
+1. Valitse vasemmanpuoleisessa jäsennysruudussa säilön tai jonkin sen sisällä olevan paikan nimen vieressä oleva kolmen pisteen painike ja valitse sitten **Lisää moduuliin**. Lisää sitten alimoduulit valittuun säilöön. Lisätietoja on tämän ohjeaiheen edellä olevassa osassa [Moduulin kanssa työskenteleminen](#add-a-module).
 1. Jos pääsäilössä on useita alimoduuleja sisaruksina, voit muuttaa niiden näyttöjärjestystä pääsäilössä. Valitse moduulin kolmen pisteen painike ja käytä sitten ylä- ja alanuolipainikkeita.
 
 ## <a name="additional-resources"></a>Lisäresurssit
@@ -126,8 +124,6 @@ Voit määrittää sivun säilömoduulin seuraavasti.
 [Katkelmien käyttäminen](work-with-fragments.md)
 
 [Konttimoduulin lisääminen sivulle](add-container-module.md)
-
-[Sisällönsijoittelumoduulien lisääminen sivulla](add-content-placement-modules.md)
 
 [Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)
 

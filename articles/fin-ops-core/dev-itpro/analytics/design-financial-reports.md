@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc68289514dc3b201b423091c92fa128d3065707
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536798"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002540"
 ---
 # <a name="view-and-design-financial-reports"></a>Tarkastele ja suunnittele talousraportteja
 
@@ -197,4 +197,4 @@ Luot tässä harjoituksessa uuden raportin. Raportti on rinnakkainen osastojen t
 
 [Raporttien näyttäminen](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamicsin talousraportointi -blogi](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamicsin talousraportointi -blogi](https://blogs.msdn.com/b/dynamics_financial_reporting/)

@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb369e6d1356ba13a2310d523b671ac57b9642bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e249c7d450510a3a9a33158e9e1c33f832a1f91c
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770043"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024976"
 ---
 # <a name="product-recommendations-overview"></a>Tuotesuositusten yleiskatsaus
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Commerce -sovelluksen avulla voidaan näyttää tuotesuosituksia sähköisen kaupankäynnin sivustossa ja myyntipistelaitteessa. Tuotesuositukset ovat nimikkeitä, joista asiakas voi olla kiinnostunut. Suositukset perustuvat muiden asiakkaiden ostotrendeihin verkko- ja kivijalkamyymälöissä.
@@ -45,6 +44,7 @@ Tuotesuositukset ovat käytettävissä seuraavissa skenaarioissa:
 - **Millä tahansa sähköisen kaupankäynnin selaus- tai saapumissivulla:** Jos asiakkaat tai myyjät käyvät myymälän sivulla, suositusohjelma ehdottaa tuotteita **Uudet**-, **Myydyimmät**- ja **Suositut**-luetteloissa.
 - **Tuotetietosivu:** Jos asiakkaat tai myyjät käyvät **tuotetietosivulla**, suositusohjelma ehdottaa lisänimikkeitä, joita saatetaan haluta ostaa. Nämä nimikkeet näkyvät myös **Ihmiset pitävät myös** -luettelossa.
 - **Tapahtuma-sivu tai Kassasivu** Suositusohjelma ehdottaa nimikkeitä korin kaikkien nimikkeiden luettelon perusteella. Nämä nimikkeet näkyvät **Ostetaan usein yhdessä** -luettelossa.
+- **Henkilökohtaiset suositukset:** Jälleenmyyjät voivat tarjota kirjautuneille asiakkaille henkilökohtaisen **Poimintoja sinulle** -luettelon lisäksi uusia toimintoja, jotka mahdollistavat nykyisten luetteloskenaarioiden mukauttamisen asiakkaaseen perustuen. Lisätietoja on kohdassa ominaisuusdokumentaatio: [Ota käyttöön mukautetut suositukset.](personalized-recommendations.md)
 
 ## <a name="recommendation-service"></a>Suosituspalvelu
 
@@ -56,6 +56,10 @@ Tuotesuositukset käyttävät Suositukset-koneoppimisteknologiaa seuraavasti:
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
+
+[Ota käyttöön kohdennetut tuotesuositukset](personalized-recommendations.md)
+
+[Tuotekokoelmamoduulin yleiskuvaus](product-collection-module-overview.md)
 
 [Luo kuratoituja tuotesuositusluetteloita](create-editorial-recommendation-lists.md)
 

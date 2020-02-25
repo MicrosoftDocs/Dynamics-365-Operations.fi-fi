@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: adfb8ffce3f91c0e8e8b996c284414f5ddc1baf1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562527"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004062"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Nimikkeiden ja raaka-aineiden seuranta varastossa, tuotannossa ja myynnissä
 
@@ -44,7 +44,7 @@ Nimikkeen seuranta on liiketoimintatyökalu, joka tarjoaa näkyvyyttä toimitusk
 -   Tarkista, missä nimike tai raaka-aineet kulutetaan toisen nimikkeen tuotannossa.
 
 ## <a name="what-can-i-trace-and-are-there-any-limitations"></a>Mitä voin seurata, ja onko tähän rajoituksia?
-Voit seurata nimikkeiden ja raaka-aineiden historiallisia varastotapahtumia perustuen nimiketunnukseen ja seurantadimensioon, kuten sarjanumero, eränumero tai toimittajan eränumero. Nimikettä tai raaka-ainetta voi seurata vain, jos sille on määritetty seurantadimensio. Seuranta perustuu varastotapahtumiin, joten nimikkeiden seurantaan liittyy joitakin rajoituksia. Rajoituksia liittyy esimerkiksi projektien, käyttöomaisuuden ja vähittäismyynnin tapahtumiin. Lisäksi seurannan tiedoissa näytetään oheistuotteet, mutta ei sivutuotteita. Seuranta sisältää kaikki varastotapahtumat paikasta toiseen. Tästä syystä käyttäjät voivat pitää tietomäärää liian suurena. Kerrallaan näkyy vain yhden yrityksen seuranta. Konsernin sisäisessä kontekstissa ei ole yritystenvälisiä toimintoja. Uusi seuranta on käynnistettävä jokaiselle yritykselle, jossa nimike vastaanotetaan tai otetaan varastosta.
+Voit seurata nimikkeiden ja raaka-aineiden historiallisia varastotapahtumia perustuen nimiketunnukseen ja seurantadimensioon, kuten sarjanumero, eränumero tai toimittajan eränumero. Nimikettä tai raaka-ainetta voi seurata vain, jos sille on määritetty seurantadimensio. Seuranta perustuu varastotapahtumiin, joten nimikkeiden seurantaan liittyy joitakin rajoituksia. Rajoituksia liittyy esimerkiksi projektien, käyttöomaisuuden ja kaupan tapahtumiin. Lisäksi seurannan tiedoissa näytetään oheistuotteet, mutta ei sivutuotteita. Seuranta sisältää kaikki varastotapahtumat paikasta toiseen. Tästä syystä käyttäjät voivat pitää tietomäärää liian suurena. Kerrallaan näkyy vain yhden yrityksen seuranta. Konsernin sisäisessä kontekstissa ei ole yritystenvälisiä toimintoja. Uusi seuranta on käynnistettävä jokaiselle yritykselle, jossa nimike vastaanotetaan tai otetaan varastosta.
 
 ## <a name="what-criteria-can-i-specify-for-an-item-trace"></a>Mitä kriteereitä voin määritellä nimikeseurannalle?
 Nimikkeen seurantaan vaadittavat tiedot ovat nimiketunnus, seurantadimensio (kuten eränumero tai sarjanumero) sekä suunta. Seuraavassa taulukossa kuvataan ehdot, joita voit käyttää nimikkeen seurannassa.

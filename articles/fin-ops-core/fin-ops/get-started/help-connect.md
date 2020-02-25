@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4427388d75c1aef40a978ce35c831d5b714f2562
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812577"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006169"
 ---
 # <a name="connect-the-help-system"></a>Yhdistäminen ohjejärjestelmään
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan Finance and Operations -sovellusten, kuten Dynamics 365 Financen, Supply Chain Managementin, Retailin ja Talentin ohjejärjestelmän komponentteja. Se tarjoaa näiden komponenttien yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen luomisen yhteenvedon.
+Tässä ohjeaiheessa kuvataan Finance and Operations -sovellusten, kuten Dynamics 365 Financen, Supply Chain Managementin, Commercen ja Human Resourcesin ohjejärjestelmän komponentteja. Se tarjoaa näiden komponenttien yhdistämistapojen yleiskatsauksen ja mukautetun ohjeen luomisen yhteenvedon.
 
 ## <a name="help-architecture"></a>Ohjearkkitehtuuri
 
@@ -43,7 +43,7 @@ Seuraavassa kuvassa on osa ohjejärjestelmästä. Tuotteen ohjejärjestelmä kä
 ## <a name="connecting-the-help-system"></a>Yhteyden muodostaminen ohjejärjestelmään
 
 > [!NOTE]
-> **Tehtäväoppaat**-välilehteä ei ole tällä hetkellä Dynamics 365 Talentissa tai Retailissa. Tämän toiminnon käyttöönottamista myöhemmissä versiossa ollaan toteuttamassa. Perustoimintoja koskevat Talentin aloituskokemuksen tehtäväoppaat ovat edelleen käytettävissä. Menettelyohjeet ovat käytettävissä myös docs.microsoft.com-sivustossa sekä Retailille että Talentille.
+> **Tehtäväoppaat**-välilehteä ei ole tällä hetkellä Dynamics 365 Human Resourcesissa tai Commercessa. Tämän toiminnon käyttöönottamista myöhemmissä versiossa ollaan toteuttamassa. Perustoimintoja koskevat Human Resourcesin aloituskokemuksen tehtäväoppaat ovat edelleen käytettävissä. Menettelyohjeet ovat käytettävissä myös docs.microsoft.com-sivustossa sekä Human Resourcesille että Commercelle.
 
 Järjestelmänvalvojat voivat muodostaa **Järjestelmäparametrit**-lomakkeella yhteyden käyttöönotettaviin ohjejärjestelmän osiin.
 
@@ -60,11 +60,11 @@ Toimi seuraavasti **Järjestelmän parametrit** -sivulla:
 2. Valitse BPM-kirjastot (valitussa projektissa), josta tehtävätallenteet noudetaan.
 3. Määritä BPM-kirjastojen näyttöjärjestys. Tämä asetus määrittää, missä järjestyksessä kirjastojen tehtävätallenteet näkyvät **Ohje**-sivulla.
 
-Kun olet suorittanut nämä vaiheet, voit avata **ohjeruudun** ja valita **Tehtäväoppaat**-välilehden, jolla on näkyvissä on avointa Finance and Operations -sovelluksen sivua käsitteleviä tehtäväoppaita. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
+Kun olet suorittanut nämä vaiheet, voit avata **Ohje**-ruudun ja valita **Tehtäväoppaat**-välilehden, jolla on näkyvissä on avointa Finance and Operations -sivua käsitteleviä tehtäväoppaita. Jos tehtävän ohjauksia ei löydy, tarkenna hakua avainsanoilla.
 
 ### <a name="showing-translated-task-guides"></a>Käännettyjen tehtäväoppaiden näyttäminen
 
-Käännetyt tehtäväoppaat toimitettiin toukokuun 2016 yhdistetyssä APQC-kirjastossa ja käytön aloituskirjastossa. Jos haluat avata lokalisoidun tehtäväoppaan ohjeen Finance and Operations -sovelluksissa, varmista, että olet muodostanut yhteyden toukokuun kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**.
+Käännetyt tehtäväoppaat toimitettiin toukokuun 2016 yhdistetyssä APQC-kirjastossa ja käytön aloituskirjastossa. Jos haluat avata lokalisoidun tehtäväopasohjeen Finance and Operations -sovelluksissa, varmista, että olet muodostanut yhteyden toukokuun kirjastoon. Kullekin käyttäjälle avautuvan tehtäväoppaan kieli määräytyy kieliasetuksissa, jotka on valittu kohdassa **Asetukset** &gt; **Asetukset**.
 
 > [!NOTE]
 > Vaikka useita tehtäväoppaita on käännetty, tehtäväoppaiden nimet eivät näy tällä hetkellä asiakasohjelmassa. Lisäksi vain helmikuussa 2016 julkaistujen tehtäväoppaiden käännökset ovat saatavana toukokuun kirjastossa. Lisää käännöksiä julkaistaan päivitetyssä kirjastossa.
@@ -78,7 +78,7 @@ Voit luoda tehtäväoppaiden avulla mukautetun ohjeen tai yhdistää sivuston Oh
 
 ### <a name="create-custom-help-with-task-guides"></a>Mukautetun ohjeen luominen tehtäväoppaiden avulla
 
-Voit luoda oman mukautetun Finance-, Supply Chain Management- tai Retail -ohjeen luomalla sille tehtävätallenteita ja tallentamalla ne LCS:n liiketoimintaprosessien kirjastoon. Mukautettuja tehtäväoppaita ei voi luoda Talentissa.
+Voit luoda oman mukautetun Finance-, Supply Chain Management- tai Commerce-ohjeen luomalla sille tehtävätallenteita ja tallentamalla ne LCS:n liiketoimintaprosessien kirjastoon. Talentissa ei voi myöskään luoda mukautettuja tehtäväoppaita Human Resourcesille.
 
 Kumppanit voivat puolestaan siirtää kirjasto yrityskirjastoon ja sisällyttää sen ratkaisuun, jos se halutaan asiakkaiden käyttöön. Voit myös kopioida yhdistetyn yleisen APQC-kirjaston sekä avata oman kopion, avata tehtävätallenteet sieltä, muokata niitä ja tallentaa sitten muutetut tallenteet. Lisätietoja on kohdassa [Tehtävän tallennustoiminnon resurssit](../../dev-itpro/user-interface/task-recorder.md).
 
@@ -86,7 +86,7 @@ Kumppanit voivat puolestaan siirtää kirjasto yrityskirjastoon ja sisällyttä�
 
 Microsoftilla on raportti ja näytekoodi, jossa selitetään, miten mukautettu ohjesivusto luodaan ja yhdistetään Ohje-ruutuun. Lisätietoja:
 
-- [Finance and Operations -sovellusten mukautetun ohjeen luominen (raportti)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Luo mukautettu Ohje Finance and Operations -sovelluksille (tekninen raportti)](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [Mukautetun ohjeen GitHub-säilö](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## <a name="additional-resources"></a>Lisäresurssit

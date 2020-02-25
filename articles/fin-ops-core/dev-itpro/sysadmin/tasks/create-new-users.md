@@ -3,7 +3,7 @@ title: Uusien käyttäjien luominen
 description: Käyttäjät ovat organisaation sisäisiä käyttäjiä tai ulkoisia asiakkaita ja toimittajia, jotka tarvitsevat järjestelmän käyttöoikeuden töidensä tekemiseen.
 author: maertenm
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 02/06/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c347a34a389c32d005cc8086c4a1349ecb8a698
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 6d884dfe30be5684a90925d4d2d9ab7eebca5b44
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570518"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029806"
 ---
 # <a name="create-new-users"></a>Uusien käyttäjien luominen
 
@@ -30,9 +30,12 @@ ms.locfileid: "2570518"
 Käyttäjät ovat organisaation sisäisiä käyttäjiä tai ulkoisia asiakkaita ja toimittajia, jotka tarvitsevat järjestelmän käyttöoikeuden töidensä tekemiseen.
 
 ## <a name="associate-a-user-with-a-license-new-license-types-only"></a>Käyttäjän liittäminen käyttöoikeuteen (vain uudet käyttöoikeustyypit)
-Sellaisten asiakkaiden käyttäjiin, joilla on jokin lokakuussa 2019 lisätyistä uusista käyttöoikeustyypeistä, on liitettävä käyttöoikeus. Käyttöoikeuteen liitetyt käyttäjät lisätään roolittomina järjestelmäkäyttäjinä, kun he kirjautuvat sisään ensimmäisen kerran. Käyttäjät, joihin ei ole liitetty käyttöoikeutta, saavat varoitussanoman.
+Sellaisten asiakkaiden käyttäjiin, joilla on jokin lokakuussa 2019 lisätyistä uusista käyttöoikeustyypeistä, on liitettävä käyttöoikeus. Käyttöoikeuteen liitetyt käyttäjät lisätään roolittomina järjestelmäkäyttäjinä, kun he kirjautuvat sisään ensimmäisen kerran.
 
 Järjestelmänvalvojat voivat [määrittää käyttöoikeuksia käyttäjille](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) [Microsoft 365 -hallintakeskuksessa](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+
+## <a name="associate-an-external-user-with-a-license-new-license-types-only"></a>Ulkoisen käyttäjän liittäminen käyttöoikeuteen (vain uudet käyttöoikeustyypit)
+Sen vuokraajan ulkopuolisten käyttäjien, jolla ympäristö otettiin käyttöön, on oltava edustettuna isännän vuokraajahakemistossa (Azure Active Directory (Azure AD)), jotta käyttäjille voidaan myöntää käyttöoikeuksia. Nämä ulkoiset käyttäjät on lisättävä vuokraajalle Azure AD:ssä vieraskäyttäjinä, minkä jälkeen käyttäjille on määritettävä asianmukaiset käyttöoikeudet. Lisätietoja on kohdassa [Lisää Azure Active Directoryn B2B-yhteistyön käyttäjiä Azure-portaaliin](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="add-a-new-user"></a>Lisää uusi käyttäjä
 1. Valitse **Järjestelmänvalvojat \> Käyttäjät \> Käyttäjät**.
@@ -42,7 +45,7 @@ Järjestelmänvalvojat voivat [määrittää käyttöoikeuksia käyttäjille](ht
 5. Kirjoita käyttäjän toimialue **Toimialue**-kenttään.  
 6. Kirjoita käytättäjän alias **Alias**-kenttään.  
 7. Valitse yritys **Yritys**-kentässä. 
-8. [Määritä käyttöoikeusroolit käyttäjille](assign-users-security-roles.md) valitsemalla **Käyttäjän rooli** -pikavälilehdessä **Määritä rooleja**.
+8. Määritä käyttöoikeusroolit käyttäjille valitsemalla **Käyttäjän rooli** -pikavälilehdessä **Määritä rooleja**. Lisätietoja on kohdassa [Käyttäjien määrittäminen käyttöoikeusrooleille](assign-users-security-roles.md).
 9. Valitse **OK**.
 10. Valitse **Tallenna**.
 

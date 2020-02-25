@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 96937d48e0d1003adbc5f7fedc89b2686ace01cd
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 311042caf6a391a06c7e2d8c4c2c2f6e1f855437
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899026"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006284"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (30.7.2019)
 
@@ -41,7 +41,7 @@ Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2409.
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Kanadan ja Kaakkois-Aasian alueellinen tuki
 
-Voimme ylpeänä ilmoittaa, että Kanadan ja Kaakkois-Aasian alueet ovat käytettävissä Talentissa 1. elokuuta 2019. Tämän muutoksen myötä voi luoda ympäristöjä Kanadan ja Aasian alueilla, ja kaikkia Talent-tietoja säilytetään yksinomaan näillä alueilla. Voit luoda ympäristön näillä uusilla alueilla valitsemalla sijainnin Uusi ympäristö -valintaikkunassa ja käyttämällä tätä ympäristöä Talentin valmisteluun LCS:ssä, kuten on kuvattu kohdassa [Talentin valmistelu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Voimme ylpeänä ilmoittaa, että Kanadan ja Kaakkois-Aasian alueet ovat käytettävissä Talentissa 1. elokuuta 2019. Tämän muutoksen myötä voi luoda ympäristöjä Kanadan ja Aasian alueilla, ja kaikkia Talent-tietoja säilytetään yksinomaan näillä alueilla. Voit luoda ympäristön näillä uusilla alueilla valitsemalla sijainnin Uusi ympäristö -valintaikkunassa ja käyttämällä tätä ympäristöä Talentin valmisteluun LCS:ssä, kuten on kuvattu kohdassa [Talentin valmistelu](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Tietojen siirto muiden alueiden aiemmin luoduista projekteista Kanadan ja Aasian alueille ei tueta. Näille uusille tuetuille alueille voi provisioida vain uusia projekteja.
 

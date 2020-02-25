@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 94c782bf4fc28f2d2f34a101c3c96467ce0766f7
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 9ab26ba80ea53b4138c3aaa60f93815af64987d7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897807"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005960"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Dynamics 365 Talentin uudet ja muuttuneet ominaisuudet (20. huhtikuuta 2019)
 
@@ -67,6 +67,6 @@ Uuden vaihtoehdon avulla esimiehet voit tarkastella sekä suorien että epäsuor
 
 ### <a name="coming-soon"></a>Tulossa pian
 
-#### <a name="platform-update-29-for-finance-and-operations"></a>Finance and Operationsin käyttöympäristöpäivitys 29
+#### <a name="platform-update-29-for-finance-and-operations"></a>Ympäristön päivitys 29 Finance and Operationsille
 
-Lisätietoja Finance and Operationsin käyttöympäristöpäivitys 29:stä on artikkelissa [Dynamics 365 Finance and Operations -käyttöympäristöpäivitys 29:n esikatselutoiminnot (lokakuu 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Lisätietoja Ympäristön päivitys 29 -päivityksestä Finance and Operationsille on kohdassa [Dynamics 365 Finance and Operationsin ympäristön päivitys 29 -esiversion toiminnot (lokakuu 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).

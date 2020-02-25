@@ -1,9 +1,9 @@
 ---
 title: Tapoja lisästä sisältöä
-description: Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 Commerce -sivuston sisällön lisäämisestä ja hallinnasta.
+description: Tässä ohjeaiheessa käsitellään yleisesti sisällönhallinnan aloittamista käyttämällä Microsoft Dynamics 365 Commercen sivustonmuodostimen verkonmuokkaustyökaluja sekä annetaan joitakin asiaan liittyviä linkkejä.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,43 +17,40 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2232dc7cdd24416b0df0919b96cd5d1f8113299f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 916e28c2628613332246d19af0fae81f258404b0
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914651"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025715"
 ---
 # <a name="ways-to-add-content"></a>Tapoja lisästä sisältöä
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja Microsoft Dynamics 365 Commerce -sivuston sisällön lisäämisestä ja hallinnasta.
+Tässä ohjeaiheessa käsitellään yleisesti sisällönhallintaa käyttämällä Microsoft Dynamics 365 Commercen sivustonmuodostimen verkonmuokkaustyökaluja sekä annetaan linkkejä asiaan liittyvään ohjeistukseen.
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Sivuston ulkoasua, ulkoasua ja sisältöä voi muuttaa monella tavalla. Monet näistä muutoksista voidaan toteuttaa muiden kuin kehittäjien toimesta riippuen vaaditusta mukautustasosta. Esimerkiksi koodia ei tarvitse kirjoittaa mallien luomisessa, teemojen valitsemisessa ja moduulien valitsemisessa ja määrittämisessä. Sen sijaan kehitystaitoja vaaditaan uuden teeman tai moduulin luomisessa, koska sähköisen kaupankäynnin SDK:n ja Microsoft Dynamics Lifecycle Services (LCS) -palvelun kehitystyönkulkua on käytettävä.
+Sivuston ulkoasua, ulkoasua ja sisältöä voi muuttaa monella tavalla. Tarvittavan mukautustason mukaan monien näiden muutosten toteuttaminen on mahdollista myös muille kuin kehittäjälle käyttämällä sivustonmuodostinta, joka on Dynamics 365 Commerceen sisältävä verkonmuokkaustyökalupaketti. Sivustonmuodostimessa voi muodostaa malleja, valita teemoja sekä valita ja määrittää moduuleja koodia kirjoittamatta. Sen sijaan kehitystaitoja vaaditaan uuden teeman tai moduulin luomisessa, koska sähköisen kaupankäynnin SDK:n ja Microsoft Dynamics Lifecycle Services (LCS) -palvelun kehitystyönkulkua on käytettävä.
 
-Seuraavissa ohjeaiheissa on eriteltyjä tietoja sivuston sisällön lisäämisestä ja hallinnasta. Ne keskittyvät sivuston alueille, jotka eivät vaadi kehittäjää. Niissä kerrotaan tehtävistä, joissa tarvitaan SDK.
+Seuraavat ohjeaiheet ovat hyviä lähtökohtia, jotka auttavat ymmärtämään, miten sivuston sisältöä lisätään ja hallitaan. Useimmat mainitut ohjeaiheet keskittyvät sivuston alueille, joiden käyttöön ei tarvita kehittäjää. Joissakin käsitellään perustason sisällön muokkausta, kun taas toiset keskittyvät sivuston ylläpitotehtäviin. Kussakin ohjeaiheessa mainitaan, jos tietyt tehtävät voivat edellyttää SDK-tehtäviä. Kussakin ohjeaiheessa oletetaan, että sivusto on jo valmisteltu ja että sivuston sivustonmuodostimen työkalujen käyttöoikeus on saatu.
 
+Aloita valitsemalla jokin seuraavista ohjeaiheista.
+
+- Voit tutustua sivustonmuodostimessa ja tässä ohjeistuksessa käytettyihin sisällönhallinnan terminologiaa kohdassa [Sivumallisanasto](page-elements-overview.md).
+- Lisätietoja moduulien toiminnasta sisällönhallinnan työnkuluissa on kohdassa [Moduulien käyttäminen](work-with-modules.md).
 - Lisätietoja aiemmin luodun sivustosivun tekstin, kuvien tai videoiden muuttamisesta on kohdassa [Moduulien käsitteleminen](work-with-modules.md).
-- Jos haluat varmistaa, että verkon sisällöntuottajat voivat käyttää tuotemerkkejä, katso lisätietoja kohdasta [Mallien käsitteleminen](work-with-templates.md).
+- Lisätietoja sisällönhallinnan tehostamisesta ja joustavuuden lisäämisestä katkelmien avulla on kohdassa [Katkelmien käyttäminen](work-with-fragments.md).
+- Lisätietoja verkkosisällön tekijöiden brändinmukaisesta sisällön tuottamisesta on kohdissa [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md) ja [Mallien käyttäminen](work-with-templates.md).
 - Lisätietoja sivustosivun osien uudelleenjärjestämisestä on kohdassa [Asettelujen käsitteleminen](work-with-layouts.md).
-- Lisätietoja sivustosivujen fonttien, värien ja yleisen ulkoasun muuttamisesta on kohdassa [sivuston teeman valitseminen](select-site-theme.md).
+- Lisätietoja sivustosivujen fonttien, värien ja yleisen ulkoasun muuttamisesta on kohdassa [Sivuston teeman valitseminen](select-site-theme.md) tai [Työskentely CSS-korvaustiedostojen kanssa](css-override-files.md).
+- Lisätietoja siirtymisvaihtoehtojen järjestämisestä uudelleen tai uusien lisäämisestä on kohdassa [Sivuston selauksen mukauttaminen](customize-site-navigation.md).
+- Lisätietoja monenlaisten rinnakkaisten verkkosisällön muutosten vaiheistamisesta, esikatselemisesta ja julkaisemisesta on kohdassa [Julkaisuryhmien kanssa työskenteleminen](publish-groups.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Sivumallisanasto](page-elements-overview.md)
+[Muokkaussivun yleiskatsaus](authoring-home-overview.md)
 
 [Asiakirjan tilat ja elinkaari](document-states-overview.md)
-
-[Julkaisuryhmien kanssa työskenteleminen](publish-groups.md)
-
-[Moduulien käyttäminen](work-with-modules.md)
-
-[Katkelmien käyttäminen](work-with-fragments.md)
-
-[Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md)
-
-[Sivuston selauksen mukauttaminen](customize-site-navigation.md)

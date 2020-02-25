@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7506953c797f5a55a93f1169bf48af8b06eb440e
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 68e3f428215bdc4f9a4ce0dd69cfd4482c72fbf3
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896793"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006261"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Dynamics 365 Talent:n uudet tai muuttuneet ominaisuudet (23. lokakuuta 2019)
 
@@ -39,9 +39,9 @@ Tässä julkaisussa on vähäisiä Dynamics 365 Talent: Onboard:n ohjelmakorjauk
 
 Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2569. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin Microsoft Dynamics Lifecycle Services (LCS) -palveluissa.
 
-### <a name="platform-update-30-for-finance-and-operations-apps"></a>Finance and Operations -sovellusten Platform update 30
+### <a name="platform-update-30-for-finance-and-operations-apps"></a>Ympäristön päivitys 30 Finance and Operations -sovelluksille
 
-Lisätietoja on kohdassa [Finance and Operations -sovellusten Platform update 30:n uudet ja muuttuneet ominaisuudet (marraskuu 2019).](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30)
+Lisätietoja on kohdassa [Finance and Operations -sovellusten Platform update 30:n uudet ja muuttuneet ominaisuudet (marraskuu 2019)](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/whats-new-platform-update-30).
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>Etuuksien avoimen haun esiversiotoiminnon poistaminen
 
@@ -89,4 +89,4 @@ Katso lisätietoja Dynamics 365: vuoden 2019 julkaisuaallon 2 suunnitelman kohda
 
 Ominaisuudet lisätään ja päivitetään jokaisessa versiossa. Toiminnon hallintakokemus tarjoaa työtilan, jossa voit tarkastella kussakin julkaisussa toimitettujen toimintojen luetteloa. Uudet asetukset ovat oletusarvoisesti poissa käytöstä. Työtilan avulla voit ottaa ne käyttöön ja tarkastella niiden dokumentaatiota.
 
-Lisätietoja tulevista toimintojen hallinnan muutoksista löytyy [Toimintojen hallinnan yleiskuvauksesta](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Lisätietoja tulevista toimintojen hallinnan muutoksista löytyy [Toimintojen hallinnan yleiskuvauksesta](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).

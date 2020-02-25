@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb9c850aa045b72137b8a1d3c8cdae51cf2fd7b6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec17fc31df1daed943f9bc3f4cbe25a683c8ac7e
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843238"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026311"
 ---
 # <a name="reconcile-freight-manually"></a>Täsmäytä rahti manuaalisesti
 
@@ -37,7 +37,7 @@ Tässä menettelyssä kuvataan, miten rahti täsmäytetään manuaalisesti. Kulj
 3. Valitse luettelossa kuorma, jonka tunnus on 00006.
 
 ## <a name="create-a-carrier-invoice"></a>Luo kuljettajan lasku
-    * Jos rahti täsmäytetään manuaalisesti ja et vastaanota kuljettajan laskuja automaattisesti, voit luoda laskun rahtilaskun perusteella.  
+Jos rahti täsmäytetään manuaalisesti ja et vastaanota kuljettajan laskuja automaattisesti, voit luoda laskun rahtilaskun perusteella.  
 1. Valitse Aiheeseen liittyviä tietoja.
 2. Valitse Rahtilaskun tiedot.
 3. Valitse Luo rahtilasku.
@@ -45,7 +45,7 @@ Tässä menettelyssä kuvataan, miten rahti täsmäytetään manuaalisesti. Kulj
 5. Valitse OK.
 
 ## <a name="reconcile-the-invoice"></a>Täsmäytä lasku
-    * Kuljettajan lasku ja rahtilasku täsmäytetään rivi kerrallaan.  
+Kuljettajan lasku ja rahtilasku täsmäytetään rivi kerrallaan.  
 1. Valitse Täsmäytä rahtilaskut ja laskut.
 2. Laajenna Laskun tiedot -osa.
 3. Laajenna Täsmäyttämättömän rahtilaskun tiedot -osa.

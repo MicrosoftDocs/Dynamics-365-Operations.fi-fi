@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934883"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004016"
 ---
 # <a name="product-identifiers"></a>Tuotetunnukset 
 
@@ -88,7 +88,7 @@ Voit liittää **Ulkoiset nimikekuvaukset** -sivulla asiakkaan tai toimittajan n
 | kuvaus | Nimi, jonka asiakas liittää nimikkeeseen | Nimi, jonka toimittaja liittää nimikkeeseen |
 | Ulkoinen nimiketeksti | Asiakkaan nimikkeen kuvaus | Toimittajan nimikkeen kuvaus |
 
-Jos useat asiakkaat tai toimittajat käyttävät samoja nimikenumeroita (kuten ostoyhdistyksessä tai vähittäismyyntiryhmä voidaan tehdä), voit luoda asiakas- tai toimittajaryhmiä, jotka yksinkertaistavat ulkoisten tuotetietojen ylläpitämistä.
+Jos useat asiakkaat tai toimittajat käyttävät samoja nimikenumeroita (kuten ostoyhdistyksessä tai kaupparyhmä voidaan tehdä), voit luoda asiakas- tai toimittajaryhmiä, jotka yksinkertaistavat ulkoisten tuotetietojen ylläpitämistä.
 
 - Siirry kohtaan **Myynti** &gt; **Asetukset** &gt; **Nimikkeet** &gt; **Ulkoinen nimikekuvaus**, kun haluat luoda ja ylläpitää asiakasryhmiä ja liittyviä nimikenumeroita. Voit liittää asiakkaita ryhmään valitsemalla **Myyntireskontra** &gt; **Asiakkaat** &gt; **Kaikki asiakkaat** ja määrittämällä sitten **Oletusmyyntitilaukset**-pikavälilehdessä arvon **Nimike - asiakasryhmä** -kentässä.
 - Siirry kohtaan **Hankinta** &gt; **Asetukset** &gt; **Ulkoisten nimikekuvausten ryhmä** ja luo toimittajaryhmien liittyvät nimikenumerot ja ylläpidä niitä. Voit liittää toimittajia ryhmään valitsemalla **Ostoreskontra** &gt; **Toimittajat** &gt; **Kaikki toimittajat** ja määrittämällä sitten **Oletusostotilaukset**-pikavälilehdessä arvon **Nimike - toimittajaryhmä** -kentässä.

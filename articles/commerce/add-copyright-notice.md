@@ -3,7 +3,7 @@ title: Copyright-ilmoituksen lisääminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit lisätä sähköisen kaupankäynnin sivustoon copyright-ilmoituksen.
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914565"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025479"
 ---
 # <a name="add-a-copyright-notice"></a>Copyright-ilmoituksen lisääminen
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten voit lisätä sähköisen kaupankäynnin sivustoon copyright-ilmoituksen.
@@ -48,8 +48,8 @@ Voit lisätä copyright-ilmoituksen jokaisen tiettyä mallia käyttävän sivun 
 1. Valitse siirtymisruudussa kolmen pisteen painike (**...**) **Alatunniste**-kohdan vieressä ja valitse sitten **Lisää moduuli**.
 1. Valitse valintaikkunassa **Alatunnisteluokka** ja valitse sitten **OK**.
 1. Valitse siirtymisruudussa kolmen pisteen painike **Alatunnisteluokka**-kohdan vieressä ja valitse sitten **Lisää moduuli**.
-1. Valitse valintaikkunassa **Sisällöntäyteinen lohkonimike** ja valitse sitten **OK**.
-1. Valitse siirtymisruudussa **Sisällöntäyteinen lohkonimike**.
+1. Valitse valintaikkunassa **Tekstilohko** ja valitse sitten **OK**.
+1. Valitse siirtymisruudussa **Tekstilohko**.
 1. Lisää oikealla olevassa ominaisuusruudussa **Kappale**-kenttään copyright-sanoma. Syötä esimerkiksi teksti **(C) Fabrikam 2019**.
 1. Valitse **Tallenna**. Valitse **Kirjaa sisään** ja valitse sitten **Julkaise**.
 1. Siirry **Mallit**-kohtaan, valitse malli ja valitse sitten **Kirjaa ulos**.

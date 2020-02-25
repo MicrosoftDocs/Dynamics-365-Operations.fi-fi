@@ -3,7 +3,7 @@ title: Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 description: Tässä ohjeaiheessa on tietoja ER-kehyksen liiketoiminnan asiakirjojen hallintatoiminnon käyttämisestä.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/09/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
+ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933905"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2957364"
 ---
 # <a name="business-document-management-overview"></a>Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 
@@ -122,7 +122,7 @@ Seuraavia ohjeita noudattamalla voit ottaa käyttöön yritystiedostojen hallinn
 4. Voit avata uuden toiminnon päivittämällä sivun.
 
 >[!NOTE]
-> Lisäksi on otettava käyttöön **Officea muistuttava käyttöliittymäkokemus liiketoiminta-asiakirjojen hallintaan** uuden liiketoiminta-asiakirjan hallintaliittymän käyttämistä varten.
+> Lisätietoja uuden asiakirjan käyttöliittymän käyttämisestä liiketoiminta-asiakirjojen hallinnassa on kohdassa [Uusi asiakirjojen käyttöliittymä liiketoiminta-asiakirjojen hallinnassa](er-business-document-management-new-template-ui.md).
 
 ![Ominaisuushallinnan työtila](./media/BDM-Overview-FMEnabling.png)
 
@@ -147,7 +147,7 @@ Lisätietoja tarvittavien tiedoston hallintaparametrien ja tiedostotyyppien mä�
 
 ![Määritä asiakirjojen hallinnan tiedostotyyppi](./media/BDM-Overview-DMSetting.png)
 
-### <a name="set-up-parameters"></a>Parametrien määrittäminen
+### <a name="SetupBdmParameters">Parametrien määrittäminen</a>
 
 Liiketoiminnan asiakirjojen hallinnan perusparametrit voidaan määrittää **Liiketoiminta-asiakirjan parametrit** -sivulla. Vain tietyt käyttäjät voivat käyttää sivua. Näihin sisältyvät:
 
@@ -166,6 +166,9 @@ Seuraavien ohjeiden avulla voit määrittää perusparametrit kaikille yrityksil
 ![Liiketoiminta-asiakirjan parametrien määrittäminen](./media/BDM-Overview-BDMSetting.png)
 
 Valittu tiedostotyyppi on yrityskohtainen, ja sitä käytetään, kun käyttäjä käyttää liiketoiminnan tiedostojen hallintaa yrityksessä, jolle valittu tiedostotyyppi on määritetty. Kun käyttäjä käyttää liiketoiminnan tiedostojen hallintaa toisessa yrityksessä, käytetään samaa valittua tiedostotyyppiä, jos sellaista ei ole määritetty tälle yritykselle. Kun tiedostotyyppi on konfiguroitu, sitä käytetään **SharePoint-tiedostotyyppi** -kentässä valitun asemesta.
+
+> [!NOTE]
+> **SharePoint -asiakirjatyyppi** -parametri määrittä SharePoint -kansion väliaikaiseksi tallennuspaikaksi malleille, joita voidaan muokata Microsoft Excelillä tai Wordilla. Tämä parametri on määritettävä, jos aiot käyttää näitä Office-työpöytäsovelluksia mallien muokkaamiseen. Lisätietoja on kohdassa [Mallin muokkaaminen Office-työpöytäsovelluksessa](#EditInOfficeDesktopApp). Voit pitää tämän parametrin tyhjänä, jos aiot muokata mallia vain käyttämällä toimintoa Office 365:ssä. Lisätietoja on kohdassa [Mallin muokkaaminen Office 365:ssä](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Käyttöoikeuksien määrittäminen
 
@@ -258,23 +261,18 @@ Seuraavia ohjeita noudattamalla voit muokata vapaatekstilaskun malleja yritysasi
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Muiden palveluiden omistamien mallien muokkauksen aloittaminen
 
-1. Valitse liiketoiminta-asiakirjan hallintatyötilassa **Uusi asiakirja**.
+1. Valitse liiketoiminta-asiakirjojen hallinnan työtilassa asiakirja, jota haluat käyttää mallina.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM_overview_new_template1.png)
+![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate3.png)
 
-2. Valitse asiakirja, jota haluat käyttää mallina.
+3. Valitse **Uusi asiakirja**ja muuta tarvittaessa muokattavan mallin otsikkoa **Otsikko**-kentässä. Tekstin avulla voit nimetä automaattisesti luotavan ER-muodon konfiguraation. Huomaa, että tämän konfiguraation luonnos (**Asiakkaan FTI-raportti (GER) Copy**), joka sisältää muokatun mallin, merkitään automaattisesti suorittamaan tämä ER-muoto nykyiselle käyttäjälle. Samaan aikaan ER-perusmuotomäärityksen ei-muokattua alkuperäistä mallia käytetään tämän ER-muodon suorittamiseen toiselle käyttäjälle.
+4. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
+5. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin kommentti.
+6. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
 
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM_overview_new_template2.png)
+![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate4.png)
 
-3. Valitse **Luo tiedosto**
-4. Muuta tarvittaessa muokattavan mallin otsikkoa **Otsikko**-kentässä. Tekstin avulla voit nimetä automaattisesti luotavan ER-muodon konfiguraation. Huomaa, että tämän konfiguraation luonnos (**Asiakkaan FTI-raportti (GER) Copy**), joka sisältää muokatun mallin, merkitään automaattisesti suorittamaan tämä ER-muoto nykyiselle käyttäjälle. Samaan aikaan ER-perusmuotomäärityksen ei-muokattua alkuperäistä mallia käytetään tämän ER-muodon suorittamiseen toiselle käyttäjälle.
-5. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
-6. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin huomautus.
-7. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
-
-![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM_overview_new_template3.png)
-
-**Uusi tiedosto** -vaihtoehto on aina käytettävissä siinä ER-muotomäärityksen mallissa, jonka toimittaa toinen palvelu (tässä esimerkissä Microsoft). Kun valitset **Uusi tiedosto**, näet kaikki nykyisen palvelun tai muiden palvelujen omistamat mallit. Kun olet valinnut mallin, se avautuu muokattavaksi. Muokattu malli tallennetaan sen jälkeen uuteen ER-muotokonfiguraatioon, joka luodaan automaattisesti.
+**Uusi tiedosto** -vaihtoehto on aina käytettävissä siinä ER-muotomäärityksen mallissa, jolla ei ole uutta versiota ja jonka toimittaa kulloinenkin ja toinen palvelu (tässä esimerkissä Microsoft). Muokattu malli tallennetaan sen jälkeen uuteen ER-muotokonfiguraatioon, joka luodaan automaattisesti.
 
 ### <a name="start-editing-a-template"></a>Aloita mallin muokkaus
 
@@ -282,7 +280,7 @@ Seuraavia ohjeita noudattamalla voit muokata vapaatekstilaskun malleja yritysasi
 2. Vaihda **Nimi** -kenttään automaattisesti luotavan muokattavan mallin ensimmäisen version nimi.
 3. Vaihda **Kommentti**-kenttään automaattisesti luotavan muokattavan mallin huomautus.
 
-    ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM_overview_new_template4.png)
+    ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate5.png)
 
 5. Vahvista muokkausprosessin aloittaminen valitsemalla **OK**.
 
@@ -290,13 +288,16 @@ Seuraavia ohjeita noudattamalla voit muokata vapaatekstilaskun malleja yritysasi
 
 ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="edit-a-template-in-office-365"></a>Mallin muokkaaminen Office 365:ssä
+### <a name="EditInOffice365">Mallin muokkaaminen Office 365:ssä</a>
 
-Muokkaa mallia käyttämällä Office 365 -toiminnallisuutta. Esimerkiksi Office Onlinessa voit muuttaa mallin otsikossa olevien kenttä kehotteiden fonttia arvosta **Normaali** arvoon **Lihavoitu**. Nämä muutokset tallentuvat automaattisesti muokattavaan malliin, joka on tallennettu ER-kehikolle määritettyyn ensisijaisen perusmallin tallennustilaan (oletusarvona on Azuren blob-säilö).
+Voit muokkaa mallia Office 365:ssä. Esimerkiksi Office Onlinessa voit muuttaa mallin otsikossa olevien kenttä kehotteiden fonttia arvosta **Normaali** arvoon **Lihavoitu**. Nämä muutokset tallentuvat automaattisesti muokattavaan malliin, joka on tallennettu ensisijaisen perusmallin tallennustilaan (oletusarvona on Azuren blob-säilö). Tämä on määritetty ER-kehykselle.
 
 ![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="edit-a-template-in-the-office-desktop-application"></a>Mallin muokkaaminen Office-työpöytäsovelluksessa
+### <a name="EditInOfficeDesktopApp">Mallin muokkaaminen Office-työpöytäsovelluksessa</a>
+
+> [!NOTE]
+> Tämä toiminto on käytettävissä vain, kun **SharePoint -asiakirjatyyppi** -parametri on määritetty oikein. Lisätietoja on kohdassa [Parametrien määrittäminen](#SetupBdmParameters).
 
 1. Valitse **Avaa työpöytäsovelluksessa** -vaihtoehto, jos haluat muokata mallia Office-työpöytäsovelluksen toimintojen avulla (tässä esimerkissä Excel). Muokattava malli kopioidaan pysyvästä tallennuspaikasta yrityksen tiedostojen hallinnan parametreissa määritettyyn väliaikaiseen varastoon SharePoint-kansiona.
 2. Vahvista, että haluat avata mallin väliaikaisesta tiedostovarastoinnista Officen Excel -työpöytäsovelluksessa.
@@ -411,3 +412,4 @@ Kirjauduit todennäköisesti Azure AD -toimialueen nykyisen sovelluksen esiintym
 [Kuvien ja muotojen upottaminen luomiisi asiakirjoihin ER:n avulla](electronic-reporting-embed-images-shapes.md)
 
 [Sähköisen raportoinnin (ER) määrittäminen hakemaan tiedot Power BI:hin](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+

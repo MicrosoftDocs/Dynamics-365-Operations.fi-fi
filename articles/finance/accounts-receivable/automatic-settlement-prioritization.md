@@ -3,7 +3,7 @@ title: Automaattinen tilitys ja priorisointi
 description: Tässä ohjeaiheessa kuvataan tapahtumien tilitetään, jos Automaattinen tilitys -vaihtoehto on valittu Myyntireskontran parametrit -sivulla. Artikkelissa kerrotaan myös, miten automaattista tilitystä voi käyttää yhdessä maksun prioriteetin kanssa.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73a4403ec3265d9ab68c5cd906965a1c28ca7352
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b596557e80035e8d62d01f156a6678c75e4ae573
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189220"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000044"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automaattinen tilitys ja priorisointi
 
@@ -76,8 +76,8 @@ Jos käyttäjäkohtaista tilitysprioriteettia ei ole, tapahtumat valitaan tility
 |---------------|------------|---------|--------------------------------|------------------|---------|----------|
 | Lasku 1     | 15.8.2015  | 10 001   | 100,00                         | 100,00           | 0,00    | USD      |
 | Lasku 2     | 1.9.2015   | 10 002   | 250,00                         | 250,00           | 0,00    | USD      |
-| Lasku 3     | 15.10.2015 |         | 500,00                         | 350,00           | 150,00  | USD      |
-| Korkolasku | 15.10.2015 |         | 7:00                           | 0,00             | 0,00    | USD      |
+| Lasku 3     | 15.10.2015 |         | 500.00                         | 350.00           | 150.00  | USD      |
+| Korkolasku | 15.10.2015 |         | 7.00                           | 0,00             | 7.00    | USD      |
 
 
 

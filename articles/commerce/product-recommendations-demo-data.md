@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af8a30e69d9ed143e045950efdcece207f6da14c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6abac72b7530dc7b82c8e95faebdce791cf7dbd1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697931"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003231"
 ---
 # <a name="get-product-recommendations-using-demo-data"></a>Tuotesuositusten luonti esittelytietojen avulla
 Tämän asiakirja antaa ohjeita monikanavan tuotesuositusten käyttämiseen tason 1 yhden ruudun ympäristöissä käyttämällä valmiiksi täytettyjä ja mukautettavia esittelytietoja.
@@ -39,7 +39,7 @@ Tason 1 ympäristöjen tuotesuositukset perustuvat vain .csv-tiedoston sisältä
 Jos haluat ottaa käyttöön tuotesuositusten esittelypäivämäärän, sinun on otettava käyttöön Dynamics 365 Commerce -esikatselun esittelylaajennus kyseisessä ympäristössä. Kun näin tehdään, tuotesuositusten esittelytiedot otetaan automaattisesti käyttöön.
 
 ## <a name="default-demo-data"></a>Oletusarvoiset demotiedot
-Jokaisessa Onebox-tyyppisessä ympäristössä on valmiita tuotesuositusten demotietoja. Ne on tallennettu pilkuilla erotettuun reco_demo_data.csv-tiedostoon, joka sijaitsee samassa kansiossa kuin tämä asiakirja Retail Serverissä.
+Jokaisessa Onebox-tyyppisessä ympäristössä on valmiita tuotesuositusten demotietoja. Ne on tallennettu pilkuilla erotettuun reco_demo_data.csv-tiedostoon, joka sijaitsee samassa kansiossa kuin tämä asiakirja Commerce Scale Unitissa.
 
 Tiedot on järjestetty seuraaviin sarakkeisiin.
 

@@ -3,7 +3,7 @@ title: Hallitse luokituksia ja arvosteluja
 description: Tässä ohjeaiheessa kerrotaan, miten luokituksia ja arvosteluita hallitaan Microsoft Dynamics 365 Commercen luokitusten ja arvostelujen valvontatyökalun avulla.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9becdce5ae36ac637043b9d0febfbbff2392aa9
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698023"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027239"
 ---
 # <a name="manage-ratings-and-reviews"></a>Hallitse luokituksia ja arvosteluja
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten luokituksia ja arvosteluita hallitaan Microsoft Dynamics 365 Commercen luokitusten ja arvostelujen valvontatyökalun avulla.
@@ -39,6 +38,16 @@ Dynamics 365 Commerce käyttää Microsoft Azure Cognitive Service -palvelua arv
 - Arvostelujen valvominen vastaamalla niihin tai poistamalla ne.
 - Asiakkaan arvostelujen poistaminen asiakkaan pyynnöstä.
 - Joukkotuonnin luokitusten ja arvostelujen tiedot kaikille tuotteille Microsoft Power BI -mallissa niin, että luokitusten ja arvostelujen trendit voidaan analysoida.
+
+## <a name="access-ratings-and-reviews-moderation-features"></a>Käyttöoikeuksien luokitusten ja arviointien valvontatoiminnot
+
+Voit käyttää verkkokauppasivuston hallintatyökalun luokituksia ja arviointien valvontatoimintoja noudattamalla seuraavia ohjeita.
+
+1. Kirjaudu [Microsoft Lifecycle Servicesiin (LCS)](https://lcs.dynamics.com).
+1. Avaa projekti, joka sisältää sen ympäristön, jossa haluat alustaa sähköisen kaupankäynnin.
+1. Valitse **Ympäristöt**-osassa ympäristö.
+1. Valitse **Ympäristön ominaisuudet** -kohdassa **Vähittäiskaupan hallinta**.
+1. Valitse **Verkkokauppa**-välilehden **Linkit**-kohdassa **Verkkokauppasivuston hallintatyökalu**.
 
 ## <a name="read-a-review"></a>Arvostelun lukeminen 
 

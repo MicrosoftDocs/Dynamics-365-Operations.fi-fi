@@ -3,7 +3,7 @@ title: Karusellimoduuli
 description: Tässä ohjeaiheessa on tietoja karusellimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,25 +18,25 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c2c5adc8ab2e0330f7b07e5153fd8332ab0203e5
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: f279d7db0a92df9e64b1d3f6ca01c65ca1478d79
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785234"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025778"
 ---
 # <a name="carousel-module"></a>Karusellimoduuli
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja karusellimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Karusellimoduulia käytetään useiden kampanjanimikkeiden sijoittamisessa karuselliin, jota asiakkaat voivat selata. Se on erityinen säilömoduuli, joka isännöi muita moduuleja. Esimerkiksi jälleenmyyjä voi käyttää aloitussivulla karusellimoduulia useiden uusien tuotteiden tai kampanjoiden esittelyyn.
+Karusellimoduulia käytetään useiden kampanjanimikkeiden (mukaan lukien kuvat) sijoittamisessa kiertävään karusellibanneriin, jota asiakkaat voivat selata. Esimerkiksi jälleenmyyjä voi käyttää aloitussivulla karusellimoduulia useiden uusien tuotteiden tai kampanjoiden esittelyyn.
 
-Voit lisätä hero-ja ominaisuusmoduuleja karusellimoduulin sisälle. Karusellimoduulin ominaisuudet määrittävät, miten moduulit hahmonnetaan.
+Voit lisätä sisältölohkomoduuleja karusellimoduulin sisälle. Karusellimoduulin ominaisuudet määrittävät, miten moduulit hahmonnetaan.
 
 ## <a name="examples-of-carousel-modules-in-e-commerce"></a>Esimerkkejä sähköisen kaupankäynnin karusellimoduuleista
 
@@ -46,45 +46,39 @@ Voit lisätä hero-ja ominaisuusmoduuleja karusellimoduulin sisälle. Karusellim
 
 ## <a name="carousel-module-properties"></a>Karusellimoduulin ominaisuudet
 
-| Ominaisuuden nimi             | Arvo                                | Kuvaus |
-|---------------------------|--------------------------------------|-------------|
-| Automaattinen toisto                  | **Tosi** vai **Epätosi**                | Jos arvoksi on määritetty **Tosi**, karusellin nimikkeiden välinen siirtymä tapahtuu automaattisesti. Jos arvoksi on määritetty **Epätosi**, siirtyminen tapahtuu vain, jos asiakas siirtyy yhdestä nimikkeestä toiseen näppäimistön tai hiiren avulla. |
-| Dian vaihtoväli | Arvo sekunteina                   | Nimikkeiden välisten siirtojen aikaväli. |
-| Siirtymän animointi      | **Dia** tai **häivytys**                | Siirtymätehoste. |
-| Leveys                     | **Sisällytä säilöön** tai **Täytä näyttö** | Jos arvoksi on määritetty **Sisällytä säilöön** karusellin sisällä olevat nimikkeet ovat korkeintaan karusellin levyisiä. Jos arvoksi on määritetty **Täytä näyttö**, karusellin leveys ei rajoita leveyttä, vaan nimikkeet voivat olla koko näytön levyisiä. Voit muuttaa arvoa halutun asettelun saavuttamiseksi. |
+| Ominaisuuden nimi             | Arvo                 | Kuvaus |
+|---------------------------|-----------------------|-------------|
+| Automaattinen toisto                  | **Tosi** vai **Epätosi** | Jos arvoksi on määritetty **Tosi**, karusellin nimikkeiden välinen siirtymä tapahtuu automaattisesti. Jos arvoksi on määritetty **Epätosi**, siirtyminen tapahtuu vain, jos asiakas siirtyy yhdestä nimikkeestä toiseen näppäimistön tai hiiren avulla. |
+| Dian vaihtoväli | Arvo sekunteina    | Nimikkeiden välisten siirtojen aikaväli. |
+| Siirtymätyyppi           | **Dia** tai **häivytys** | Nimikkeiden välinen siirtymistehoste. |
+| Piilota karusellin valitsin     | **Tosi** vai **Epätosi** | Jos arvoksi on määritetty **Tosi**, karusellin valitsin ja järjestyksen osoitin piilotetaan. |
+| Salli karusellin ohittaminen    | **Tosi** vai **Epätosi** | Jos arvoksi on määritetty **Tosi**, käyttäjät voivat ohittaa karusellin. |
 
 ## <a name="add-a-carousel-module-to-a-page"></a>Karusellimoduulin lisääminen sivulle
 
 Voit lisätä karusellimoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
 1. Luo sivumalli, jonka nimi on **Karusellimalli**.
-1. Lisää karusellimoduuli oletussivun **pääpaikkaan**.
-1. Lisää hero-moduuli karusellimoduuliin.
-1. Lisää ominaisuusmoduuli karusellimoduuliin.
+1. Lisää **Teksti**-paikkaan **Oletussivu**-moduuli.
 1. Kirjaa malli sisään ja julkaise se. 
 1. Käytä juuri luotua karusellimallia, kun haluat luoda sivun nimeltä **Karusellisivu**.
-1. Lisää karusellimoduuli uuden sivun **pääpaikkaan**.
-1. Määritä karusellimoduulin **Leveys**-ominaisuudeksi **Täytä näyttö**. 
-1. Määritä **Siirtymän animointi** -ominaisuuden arvoksi **Dia**.
-1. Lisää hero-moduuli karusellimoduuliin.
-1. Lisää hero-moduuliin kuva ja otsikko ja valitse **Tallenna**.
-1. Lisää ominaisuusmoduuli karusellimoduuliin.
-1. Lisää ominaisuusmoduuliin kuva, otsikko ja tekstikappale.
+1. Lisää säilömoduuli uuden sivun **pääpaikkaan**. 
+1. Määritä oikeassa ruudussa **Leveys**-arvoksi **Täytä näyttö**.
+1. Lisää karusellimoduuli säilömoduuliin **Sivun jäsennys** -kohdassa.
+1. Lisää sisältölohko karusellimoduuliin. Määritä sisältölohkomoduuliin ominaisuudet antamalla **Otsikko**-, **Linkki**-, **Asettelu**- ja muut ominaisuudet.
+1. Lisää ja määritä toinen sisältölohkomoduuli.
+1. Määritä karusellimoduulin lisäominaisuudet tarpeen mukaan.
 1. Tallenna ja esikatsele sivu. Sivulla pitäisi näkyä karuselli, jonka sisällä on kaksi moduulia (hero- ja ominaisuusmoduuli). Voit muuttaa karuselli-, hero- ja ominaisuusmoduulien lisäominaisuuksia halutun vaikutuksen aikaansaamiseksi.
-1. Kirjaa sivu sisään ja julkaise se.
+1. Kun sivun muokkaus on valmis, julkaise se.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
 
-[Hälytysmoduuli](add-alert.md)
+[Kampanjabannerimoduuli](add-alert.md)
 
-[Sisällöntäyteinen lohkomoduuli](add-content-rich-block.md)
+[Tekstilohkomoduuli](add-content-rich-block.md)
 
-[Sisällönsijoittelumoduuli](add-content-placement-modules.md)
-
-[Omaisuusmoduuli](add-feature-module.md)
-
-[Hero-moduuli](add-hero-module.md)
+[Sisältölohkomoduuli](add-hero-module.md)
 
 [Videotoistinmoduuli](add-video-player.md)

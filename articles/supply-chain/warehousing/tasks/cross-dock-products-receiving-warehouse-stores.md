@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8e25007cc4a204aeaf73a2e819c129fa8fa29d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f38c2ad9561cc1a1c775c27aec54681124cffeec
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563386"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004085"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Tuotteiden cross-docking vastaanottaessa varastosta myymälöihin
 
@@ -31,7 +31,7 @@ Tässä menettelyssä esitellään, miten cross docking luodaan ja miten sitä k
 
 1. Siirry Kaikki ostotilaukset -kohtaan.
 2. Valitse luettelosta ostotilaus ja avaa sitten tilaus valitsemalla linkki.
-3. Valitse toimintoruudussa Vähittäismyynti.
+3. Valitse toimintoruudussa Retail ja Commerce.
 4. Valitse Cross docking.
 5. Valitse Muokkaa.
     * Luokkaa voidaan käyttää Rivit-osan nimikkeiden suodattamisessa.  

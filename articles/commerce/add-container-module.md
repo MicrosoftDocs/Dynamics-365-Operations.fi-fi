@@ -3,7 +3,7 @@ title: Konttimoduuli
 description: Tässä ohjeaiheessa on tietoja säilömoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,27 +17,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 22a09b61fbe3bd1cca96011d3fb81a12ef1bc844
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697057"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025525"
 ---
 # <a name="container-module"></a>Konttimoduuli
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on tietoja säilömoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Säilömoduuli on moduuli, joka isännöi muita moduuleja. Se on yleisin säilö, jota käytetään Dynamics 365 Commercessa. Säilömoduulin ensisijainen tarkoitus on määrittää sen sisässä olevien moduulien asettelu sille määritettyjen ominaisuuksien avulla. Nämä moduulit voivat olla rinnakkain esimerkiksi kahden, kolmen, neljän tai kuuden sarakkeen asettelussa. Ne voivat olla säilön levyisiä tai täyttää koko näytön. Jokaiseen säilömoduuliin voidaan lisätä otsikko.
+Säilömoduuli on moduuli, joka isännöi muita moduuleja. Säilömoduulin ensisijainen tarkoitus on määrittää sen sisässä olevien moduulien asettelu sille määritettyjen ominaisuuksien avulla. Nämä moduulit voivat olla rinnakkain esimerkiksi kahden, kolmen, neljän tai kuuden sarakkeen asettelussa. Ne voivat olla säilön levyisiä tai täyttää koko näytön. Jokaiseen säilömoduuliin voidaan lisätä otsikko.
 
-Konttimoduuleja on kolme vakiotyyppiä: säilö, säilö jossa on 2 paikkaa ja säilö jossa on 3 paikkaa. Näihin säilöihin voi sijoittaa minkä tyyppisiä moduuleja tahansa. Olemassa on myös erityisiä säilömoduulityyppejä, kuten karuselli, sisällöntäyteinen lohko, sisällönsijoittelu, ostoskori, kassa, ostoruutu, ylätunniste ja alatunniste. Näillä säilöillä on erityiset tarkoitukset, ja niiden sisään voi asettaa vain tietyn tyyppisiä tuettuja moduuleja.
+Tuettuja säilömoduuleja on kolme:: säilö, säilö jossa on 2 paikkaa ja säilö jossa on 3 paikkaa. Näihin säilöihin voi sijoittaa kaikenlaisia moduuleja. 
 
-On suositeltavaa sijoittaa moduulit säilön sisälle. Tällöin niiden leveydeksi voidaan määrittää säilön leveys.
+> [!NOTE] 
+> Moduulit kannattaa aina sijoittaa säilömoduulin sisällä, sillä silloin niiden leveydeksi voidaan määrittää säilön leveys.
 
 ## <a name="examples-of-container-modules-in-e-commerce"></a>Esimerkkejä sähköisen kaupankäynnin säilömoduuleista
 
@@ -98,20 +99,19 @@ Lisäominaisuuksien avulla voidaan optimoida eri näkymäporttien asettelu. Joka
 
 Voit lisätä säilön toistinmoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Luo sivumalli, jonka nimi on **Konttimalli**.
-1. Lisää säilömoduuli oletussivun **pääpaikkaan**.
-1. Lisää säilömoduulissa ominaisuusmoduuli.
-1. Kirjaa malli sisään ja julkaise se.
+1. Luo sivumalli, jonka nimi on **Konttimalli**. 
+1. Lisää **Teksti**-paikkaan **Oletussivu**-moduuli.
+1. Kun mallin muokkaus on valmis, julkaise se.
 1. Käytä juuri luotua säilömallia, kun haluat luoda sivun nimeltä **Kontin sivu**.
 1. Lisää säilömoduuli uuden sivun **pääpaikkaan**.
-1. Määritä säilömoduulin ominaisuusruudussa **Sarakkeiden määrä** -ominaisuuden arvoksi **1** ja **Leveys**-ominaisuuden arvoksi **Sisällytä säilöön**.
-1. Lisää säilömoduulissa ominaisuusmoduuli.
-1. Määritä otsikko ominaisuusmoduulin ominaisuusruudussa.
+1. Määritä säilömoduulin ominaisuusruudussa **Sarakkeiden määrä** -ominaisuuden arvoksi **1** ja **Leveys**-ominaisuuden arvoksi **Täytä säiliö**.
+1. Lisää sisältölohko karusellimoduuliin säiliömoduulissa.
+1. Määritä sisältölohkomoduulin ominaisuusruudussa otsikko, kuva ja asettelu.
 1. Tallenna ja esikatsele sivu. Näkyvissä on yksi säilömoduulin levyinen ominaisuusmoduuli.
 1. Muuta säilömoduulin ominaisuusruudussa **Sarakkeiden määrä** -ominaisuuden arvoksi **3**.
-1. Lisää säilömoduuliin kaksi ominaisuusmoduulia.
-1. Tallenna ja esikatsele sivu. Nyt näkyviin tulee kolme ominaisuusmoduulia, jotka näkyvät vierekkäin.
-1. Kun asettelu on haluttu, kuittaa sivu sisään ja julkaise se.
+1. Lisää säilömoduuliin kaksi muuta sisältölohkomoduulia.
+1. Tallenna ja esikatsele sivu. Nyt näkyviin tulee kolme sisältölohkomoduulia, jotka näkyvät vierekkäin.
+1. Kun olet tyytyväinen asetteluun, lopeta sivun muokkaus ja julkaise se.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -119,9 +119,7 @@ Voit lisätä säilön toistinmoduulin uudelle sivulle ja määrittää pakollis
 
 [Karusellimoduuli](add-carousel.md)
 
-[Sisällöntäyteinen lohkomoduuli](add-content-rich-block.md)
-
-[Sisällönsijoittelumoduuli](add-content-placement-modules.md)
+[Tekstilohkomoduuli](add-content-rich-block.md)
 
 [Ostoruutumoduuli](add-buy-box.md)
 

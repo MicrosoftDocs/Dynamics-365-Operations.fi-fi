@@ -1,5 +1,5 @@
 ---
-title: Luotonvalvonnan määrittäminen
+title: Aseta keräilyt
 description: Tässä artikkelissa kerrotaan, miten kokoelmatoiminnot määritetään.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,18 +18,30 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ed075484f79d7ef7d0d4e6d62d037bb3e9cc96f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58d3e7f66ab5816849d393098d073ea7629e6b7c
+ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177582"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013160"
 ---
-# <a name="set-up-credit-and-collections"></a>Luotonvalvonnan määrittäminen
+# <a name="set-up-collections"></a>Aseta keräilyt
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa kerrotaan, miten kokoelmatoiminnot määritetään.
+Tässä artikkelissa kerrotaan, miten kokoelmatoiminnot määritetään. Sinun on suoritettava joitakin määritysvaiheita, kun käytät kokoelmat-ominaisuutta. Käytettävissä on myös valinnaisia ominaisuuksia, kuten asiakaspooleja ja kokoelmaryhmiä. 
+
+- Erääntymiskausien määritykset
+- Erääntymistilannevedokset
+- Kirjauskansioiden nimet
+- Poistotapahtuman syykoodi
+- Perimisasiamiehet
+- Poistotili
+- NSF (Ei katetta) -tiedot
+- Outlook-asetusten määrittäminen **Perintä**-sivun käyttäjille
+- Sähköpostiosoitteet
+
+Näitä kohtia käsitellään tarkemmin koko tämän aiheen loppuosassa. 
 
 <a name="set-up-aging-period-definitions"></a>Määritä erääntymiskausimääritykset
 -------------------------------
@@ -46,7 +58,7 @@ Voit määrittää asiakaspoolit, jotka edustavat asiakasryhmiä. Voit käyttä�
 Jos organisaatiossasi on useita perimistyötä tekeviä henkilöitä, voit määrittää perimisryhmän. Voit valita ryhmän **Myyntireskontran parametrit** -sivulla. Jos et luo perimisryhmää, ryhmä luodaan automaattisesti, kun määrität perimisasiamiehet **Perimisasiamies**-sivulla.
 
 ## <a name="set-up-a-collections-case-category"></a>Perintätapausluokan määrittäminen
-Jos järjestät perimistyösi tapausten avulla, määritä tapausluokka, jonka luokkatyyppi on **Perintä**. Tätä asetusta tarvitaan vain, jos haluat käyttää tapaustoimintoa **Perintä**-sivulla.
+Järjestä perimistyösi tapausten avulla määrittämällä tapausluokka, jonka luokkatyyppi on **Perintä**. Tätä tarvitaan vain, jos haluat käyttää tapaustoimintoa **Perintä**-sivulla.
 
 ## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Kirjauskansioiden nimien määrittäminen (selvitys, poisto ja NSF)
 Määritä kirjauskansioiden nimet, joita käytetään tapahtumien käsittelyyn **Perintä**-sivulla. Tämä käsittely sisältää tapahtuman tilityksen, tapahtuman poistamisen ja ei katetta -maksun käsittelyn.
@@ -78,16 +90,19 @@ Päivitä pankkitilit siten, että niillä on oikea kirjauskansion, kun NSF-maks
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>Outlook-asetusten määrittäminen Perintä-sivun käyttäjille
 Ennen kuin työntekijät voivat luoda tehtäviä tai lähettää sähköpostiviestejä **Perintä**-sivulla, sinun on varmistettava, että **Microsoft Outlook -synkronointi** -määritysavain on valittuna ja että Outlook-synkronointi on määritetty kyseisille työntekijöille.
 
-## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Sähköposti- ja osoiteasetusten määrittäminen luotonvalvonnan yhteyshenkilöitä varten
-Määritä asiakkaan yhteyshenkilöiden sähköpostiosoitteet, jos haluat lähettää sähköpostiviestejä kyseisille yhteyshenkilöille **Perintä**-sivulta. Perinnän yhteyshenkilöä käytetään oletusyhteyshenkilönä **Perintä**-sivulla. Voit määrittää tilioteosoitteen asiakkaalle, jos tiliotteissa on käytettävä ensisijaisesta osoitteesta poikkeavaa osoitetta. 
+## <a name="set-up-email-and-addresses"></a>Sähköpostin ja osoitteiden määrittäminen
+Voit käyttää sähköpostia viestiessäsi sekä asiakkaiden että myyjien kanssa perintäongelmista sähköpostiviestien lähettämiseksi **Perintä**-sivulta. 
+
+### <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Sähköposti- ja osoiteasetusten määrittäminen luotonvalvonnan yhteyshenkilöitä varten
+Määritä asiakkaan yhteyshenkilöiden sähköpostiosoitteet, lähettääksesi sähköpostiviestejä kyseisille yhteyshenkilöille **Perintä**-sivulta. Perinnän yhteyshenkilöä käytetään oletusyhteyshenkilönä **Perintä**-sivulla. Voit määrittää tilioteosoitteen asiakkaalle, jos tiliotteissa on käytettävä ensisijaisesta osoitteesta poikkeavaa osoitetta. 
 
 Valitse asiakkaan **Luotonvalvonta**-pikavälilehden **Korko ja maksukehotus -yhteyshenkilö** -välilehdessä perimiesasiamiehen kanssa työskentelevä asiakasorganisaation henkilö. Tätä henkilöä käytetään oletusyhteyshenkilönä **Perintä**-sivulla, ja sähköpostiviestit lähetetään hänelle. 
 
 > [!NOTE] 
 > Jos asiakkaalle ei ole määritetty perinnän yhteyshenkilöä, käytetään asiakkaan ensisijaista yhteyshenkilöä. Jos ensisijaista yhteyshenkilöä ei ole määritetty, sähköpostiviestit lähetetään **Yhteyshenkilöt**-sivulla ensimmäisenä olevaan sähköpostiosoitteeseen.
 
-## <a name="set-up-email-settings-for-salespeople"></a>Sähköpostiasetusten määrittäminen myyjiä varten
-Määritä myyjien sähköpostiosoitteet, jos haluat lähettää sähköpostiviestejä myyjille **Perintä**-sivulla. Määritä kunkin provisiomyyntiryhmän kunkin myyntiedustajan sähköpostiosoite. Myyntiedustaja, jolle on valittu **Perintä**-vaihtoehto, on oletusmyyjä, jolle sähköpostiviestit lähetetään. 
+### <a name="set-up-email-settings-for-salespeople"></a>Sähköpostiasetusten määrittäminen myyjiä varten
+Määritä myyjien sähköpostiosoitteet, lähettääksesi sähköpostiviestejä myyjille **Perintä**-sivulla. Määritä kunkin provisiomyyntiryhmän kunkin myyntiedustajan sähköpostiosoite. Myyntiedustaja, jolle on valittu **Perintä**-vaihtoehto, on oletusmyyjä, jolle sähköpostiviestit lähetetään. 
 
 Jos myyntiedustajaa ei ole määritetty, käytetään asiakkaan organisaation ensisijaista myyjää. Jos ensisijaista myyjää ei ole määritetty, sähköpostiviestit lähetetään lomakkeessa ensimmäisenä olevalle myyjälle.
 

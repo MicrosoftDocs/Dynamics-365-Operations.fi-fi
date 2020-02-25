@@ -3,7 +3,7 @@ title: Osallistu käyttääksesi luokituksia ja arvosteluja
 description: Tässä ohjeaiheessa kerrotaan, miten voit käyttää luokituksia ja arvosteluja Microsoft Dynamics 365 Commerce -sivustossa.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10e3c33af232fa46df09a103b2e73eae09a909eb
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: eda7fbaeea8d3c1a07f7b43cafe44886d149a211
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697977"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027262"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Osallistu käyttääksesi luokituksia ja arvosteluja
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten voit käyttää luokituksia ja arvosteluja Microsoft Dynamics 365 Commerce -sivustossa.
@@ -36,7 +35,7 @@ Tässä ohjeaiheessa kerrotaan, miten voit käyttää luokituksia ja arvosteluja
 
 Luokitukset ja arvostelut -ratkaisu on monikanavaratkaisu, jonka voit ottaa käyttöön Dynamics 365 Commerce -sovelluksessa käyttämällä Microsoft Dynamics Lifecycle Services (LCS) -palvelua. LCS on hallintaportaali, jonka avulla jälleenmyyjät voivat hallita ympäristöjä aina valmistelusta käytöstäpoistoon asti.
 
-Jos haluat käyttää luokitukset ja arvostelut -ratkaisua Commerce-sivustossa, sinun on ensin suostuttava sen käyttöön.
+Jos haluat käyttää luokitukset ja arvostelut -ratkaisua Commerce-sivustossa, sinun on valittava luokitukset ja arvostelut verkkokauppasivuston käyttöönoton aikana Dynamics 365 Commercessa.
 
 ## <a name="opt-in-to-use-ratings-and-reviews"></a>Osallistu käyttääksesi luokituksia ja arvosteluja
 
@@ -51,6 +50,9 @@ Voit ottaa luokitukset ja arvostelut käyttöön sivustossa seuraavasti.
 
 1. Suorita sähköisen kaupankäynnin alustusprosessi loppuun.
 
+> [!NOTE] 
+> Jos olet olemassa oleva Dynamics 365 Commerce -asiakas, joka on jo ottanut käyttöön e-Commerce-sivuston ilman luokitusten ja arvostelujen käyttöä ja haluat nyt käyttää Dynamics 365 Commerce -pakkauksen luokituksia ja arvosteluja, lähetä palvelupyyntö. Lisätietoja huoltopyynnön lähettämisessä on ohjeaiheessa [Palvelupyyntöjen lähettämisprosessi](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json). 
+
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Luokitukset ja arvostelut – yleiskatsaus](ratings-reviews-overview.md)
@@ -60,3 +62,5 @@ Voit ottaa luokitukset ja arvostelut käyttöön sivustossa seuraavasti.
 [Määritä luokitukset ja arvostelut](configure-ratings-reviews.md)
 
 [Tuoteluokitusten synkronoiminen Dynamics 365 Retailissa](sync-product-ratings.md)
+
+

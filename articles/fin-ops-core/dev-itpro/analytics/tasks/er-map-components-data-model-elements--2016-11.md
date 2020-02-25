@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9a033853be17d6013daa5550ca9c061198bb0330
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 548f16034ebdf7e0f29e8e89d85aac880f6323a1
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184735"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026237"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER Luodun muodon osien yhdistäminen tietomallielementteihin (marraskuu 2016)
 
@@ -98,7 +98,7 @@ Seuraavassa menettelyssä selitetään, miten käyttäjä, jolla on joko järjes
 2. Sulje sivu.
 
 ## <a name="change-status-of-the-current-version-of-format-configuration"></a>Muotokonfiguraation nykyisen version tilan muuttaminen
-    * Seuraavissa vaiheissa muutetaan muotokonfiguraation tila Luonnos-tilasta Valmis-tilaksi. Tällöin sitä voi käyttää maksuasiakirjojen luontiin.  
+Seuraavissa vaiheissa muutetaan muotokonfiguraation tila Luonnos-tilasta Valmis-tilaksi. Tällöin sitä voi käyttää maksuasiakirjojen luontiin.  
 1. Voit muuttaa tilaa valitsemalla Muuta.
 2. Valitse Valmis.
 3. Kirjoita arvo Kuvaus-kenttään.
@@ -108,7 +108,7 @@ Seuraavassa menettelyssä selitetään, miten käyttäjä, jolla on joko järjes
     * Huomaa, että konfiguraatio tallennetaan suoritettuna versiona 1.1: tietomallin versioon 1 perustuva muodon versio 1.  
 
 ## <a name="define-effective-date-for-completed-version-of-format"></a>Muodon valmiin version voimaantulopäivämäärän määrittäminen
-    * Jokainen muotoversio voidaan määrittää käytettäväksi tietystä päivämäärästä alkaen. Kun tiettynä päivänä on useita aktiivisia muotoversioita, käyttöön valitaan uusin muoto (versionumeron perusteella). Oikean version valinnassa käytetään istunnon päivämääräarvoa.  
+Jokainen muotoversio voidaan määrittää käytettäväksi tietystä päivämäärästä alkaen. Kun tiettynä päivänä on useita aktiivisia muotoversioita, käyttöön valitaan uusin muoto (versionumeron perusteella). Oikean version valinnassa käytetään istunnon päivämääräarvoa.  
 
 ## <a name="restrict-access-to-created-format-from-companies"></a>Luodun muodon käytön rajoittaminen yrityksiltä
 1. Laajenna ISO maa-/aluekoodit -osa.

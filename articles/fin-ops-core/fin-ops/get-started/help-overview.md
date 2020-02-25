@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811669"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005700"
 ---
 # <a name="help-system"></a>Ohjejärjestelmä
 
@@ -32,9 +32,9 @@ ms.locfileid: "2811669"
 Tässä ohjeaiheessa on ohjejärjestelmän komponenttien yleiskatsaus. Kaikkien seuraavien tuotteiden jakama ohjejärjestelmä:
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 Voit käyttää ohjetta käyttämäsi tuotteen Ohje-ruudusta. 
 
@@ -73,7 +73,7 @@ Voit osallistua dokumentaation tekemiseen ja muokkaukseen. Voit aloitta napsautt
 
 [Miten osallistua Microsoft Dynamics 365 -doumentaation tekemiseen](https://youtu.be/m5djioozRbg) -video (näytetty yllä) sisältyy Microsoft Dynamics 365:n YouTube-kanavaan.
 
-Lisätietoja on [osallistujan oppaassa](https://docs.microsoft.com/en-us/contribute).
+Lisätietoja on [osallistujan oppaassa](https://docs.microsoft.com/contribute).
 
 > [!NOTE]
 > Tällä hetkellä hyväksymme sisältöä vain englanninkieliseen sisältöön.
@@ -106,12 +106,12 @@ Voit käyttää ohjesisältöä joko napsauttamalla **Ohje** (**?**) -kuvaketta 
 Voit käyttää Ohje-ruudusta asiakasohjelmaa koskevia artikkeleita. Kun avaat ohjeruudun ja valitset **Ohje**-välilehden, näkyvissä on avointa sivua käsitteleviä artikkeleita. Jos artikkeleita ei löydy, tarkenna hakua avainsanoilla. Kun napsautat artikkelia Ohje-ruudussa, selaimeen avautuu uusi välilehti, jossa artikkeli näkyy.
 
 > [!IMPORTANT]
-> Tämä osa ei koske Dynamics 365 Talentia. Talentin ohjejärjestelmä yhdistetään automaattisesti tuotteen tehtäväoppaisiin. Talentissa ei voi myöskään luoda mukautettuja tehtäväoppaita.
+> Tämä osa ei koske Dynamics 365 Human Resourcesia. Human Resourcesin ohjejärjestelmä yhdistetään automaattisesti tuotteen tehtäväoppaisiin. Human Resourcesissa ei voi myöskään luoda mukautettuja tehtäväoppaita Human Resourcesille.
 
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Tehtävän ohjauksien käyttö Ohje-ruudusta
 
-Tehtäväoppaita ei voi käyttää ohjeruudusta, ennen kuin järjestelmänvalvojan on määrittänyt asetuksia **Järjestelmän parametrit** -sivulla Finance-, Supply Chain Managment- tai Retail-sovelluksessaq.
+Tehtäväoppaita ei voi käyttää ohjeruudusta, ennen kuin järjestelmänvalvojan on määrittänyt asetuksia **Järjestelmän parametrit** -sivulla Finance-, Supply Chain Managment- tai Commerce-sovelluksessaq.
 
 > [!NOTE]
 > - Ohjeen määrittäminen edellyttää, että olet kirjautunut tilille sinä vuokraajana, jossa sovellus on otettu käyttöön.

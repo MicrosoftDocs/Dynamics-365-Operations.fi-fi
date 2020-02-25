@@ -3,7 +3,7 @@ title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta.
 author: jasongre
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac8f154fdf892553f69d135727589bf13efd6076
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935462"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029359"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -59,7 +59,8 @@ Kun käytät sovellusta, monet tehdyistä valinnoista tallennetaan helppokäytt�
 
 Implisiittiset mukautukset ovat mukautuksia, joita tehdään olemalla vuorovaikutuksessa ohjausobjektien kanssa, jotka tallentavat nykyisen näkyvän tilan.
 
-- **Ruudukon sarakkeet** – Ruudukon sarakkeen leveyttä voidaan säätää valitsemalla koon muuttamiseen tarkoitettu palkki sarakkeen otsikon vasemmalla tai oikealla puolella ja vetämällä sitä vasemmalle tai oikealle, kunnes sarake on halutun levyinen. Sovellus tallentaa sarakkeelle määritetyn leveyden. Kun sitten seuraavan kerran avaat ruudukon sisältävän sivulla, sarakkeen koko muutetaan vastaamaan kyseistä leveyttä.
+- **Ruudukon sarakkeenleveydet** – Ruudukon sarakkeen leveyttä voidaan säätää valitsemalla koon muuttamiseen tarkoitettu palkki sarakkeen otsikon vasemmalla tai oikealla puolella ja vetämällä sitä vasemmalle tai oikealle, kunnes sarake on halutun levyinen. Sovellus tallentaa sarakkeelle määritetyn leveyden. Kun sitten seuraavan kerran avaat ruudukon sisältävän sivulla, sarakkeen koko muutetaan vastaamaan kyseistä leveyttä.
+- **Ruudukon sarakkeiden yhteissummat** - (Käytettävissä vain, kun uusi ruudukko-ohjausobjekti on käytössä) voit päättää, näytetäänkö summa ruudukon minkä tahansa numeerisen sarakkeen alaosassa ja onko ruudukon alatunniste näkyvissä. Sovellus tallentaa nämä tiedot niin, että nämä asetukset muistetaan, kun seuraavan kerran avaat sivun. Lisätietoja on [Ruudukon ominaisuudet](grid-capabilities.md) -ohjeaiheessa. 
 - **Pikavälilehdet** – Joillain sivuilla on laajennettavia *pikavälilehtinä* tunnettuja osia. Sovellus tallentaa tietoja laajennetuista ja tiivistetyistä pikavälilehdistä. Kun tämän jälkeen avaat sivut, pikavälilehdet näkyvät joko laajennettuina tai tiivistettyinä sen mukaan, mitä olet valinnut sivulla edellisellä kerralla. Joissain tapauksissa voit parantaa järjestelmän suorituskykyä tiivistämällä pikavälilehden, koska sovellus ei tarvitse noutaa tietoja pikavälilehtiä varten, ennen kuin ne laajennetaan. Jäljempänä tässä aiheessa selitetään, miten voit myös muuttaa sivulla olevien pikavälilehtien järjestystä.
 - **Tietoruudut** – Osalla sivuista on **Aiheeseen liittyviä tietoja** -ruutu, jossa näkyy vain luku -tietoja, jotka liittyvät sivun kulloiseenkin aiheeseen. Kukin **Aiheeseen liittyviä tietoja** -ruudun osio on nimeltään *Tietoruutu*. Voit laajentaa tai kutistaa **Aiheeseen liittyviä tietoja**-ruudun. Voit myös laajentaa tai kutistaa yksittäisiä tietoruutuja. Sovellus tallentaa nämä asetukset. Kun seuraavan kerran avaat sivun **Aiheeseen liittyviä tietoja** -ruutu ja yksittäiset tietoruudut ovat joko laajennettuna tai kutistettuna sen mukaan, mitä olet valinnut edellisellä kerralla. Joissain tapauksissa voit parantaa järjestelmän suorituskykyä kutistamalla tietoruudun, koska sovelluksen ei tarvitse noutaa tietoja tietoruutuja varten, ennen kuin ne laajennetaan.
 - **Toimintoruudut** – *Toimintoruutu* näkyy useimmilla sivuilla yläreunan lähellä. Toimintoruudussa on painikkeita, joilla voi tehdä monia valitulla sivulla tehtäviä toimintoja. Nämä painikkeet on usein järjestetty välilehtiin. Voit "kiinnittää" koko toimintoruudun avoimeksi. Vaihtoehtoisesti se voi olla oletusarvoisesti kutistettuna. Kun tämän jälkeen avaat sivun, toimintoruutu on joko auki tai kutistettuna sen mukaan, mitä olet valinnut edellisellä kerralla. Jos olet kiinnittänyt toimintoruudun avoimeksi, näkyvissä on viimeisin käyttämäsi välilehti.
@@ -95,7 +96,7 @@ Ominaisuusikkunassa voi olla elementin mukaan myös muita mukauttamisominaisuuks
 
 Jos haluat tehdä useita muutoksia sivulle tai muutoksia, jotka eivät ole käytettävissä muiden mekanismien kautta (jos esimerkiksi haluat muuttaa elementtien järjestystä), voit käyttää **Mukauttaminen**-työkaluriviä. Voit avata **Mukauttaminen**-työkalurivin seuraavilla tavoilla:
 
-- Valitse **Mukauta tämä lomake** elementin ominaisuusikkunassa.
+- Valitse **Mukauta tämä sivu** elementin ominaisuusikkunassa.
 - Valitse **Mukauta tätä sivua** minkä tahansa sivun toimintoikkunan **Asetukset**-välilehden **Mukauttaminen**-ryhmässä.
 - Valitse **Asetukset**-painike siirtymispalkissa ja valitse sitten **Mukauta**.
 
@@ -116,7 +117,8 @@ Kun **Mukautus**-työkalurivi on auki, taustalla oleva sivu on vain luku -muodos
 - Voit poistaa elementin nykyisen sivun näppäimistön sarkaimella tehtävistä valinnoista **Ohita**-työkalulla. Kun valitset työkalurivin **Ohita**-painikkeen, kaikki tällä hetkellä ohitettavat elementit näkyvät varjostetussa säilössä. Voit lisätä kenttiä sarkainjärjestykseen ja poistaa niitä vuorovaikutteisesti.
 - Voit lisätä kentän pikavälilehtien yhteenveto-osaan käyttämällä **Näytä otsikossa**-työkalua. Kun valitset työkalurivin **Näytä otsikossa**-painikkeen, kaikki yhteenvetokentiksi valitut kentät näkyvät varjostetussa säilössä. Voit lisätä kenttiä vuorovaikutteisesti pikavälilehden yhteenvetoon ja poistaa niitä siitä valitsemalla kenttiä.
 - **Lukitse**-työkalulla voit merkitä, onko elementti muokattavaissa vai ei. Kun valitset työkalurivin **Lukitse**-painikkeen, kaikki elementit, jotka eivät tällä hetkellä ole muokattavissa, näkyvät varjostetussa säilössä. Voit sitten määrittää ne takaisin muokattaviksi. Huomaa, että jotkut kentät ovat pakollisia, eikä niiden muokkausta voi estää. Näiden kenttien vieressä on lukkokuvake.
-- **Lisää PowerApp** -painikkeella voit upottaa sivulle sovelluksen, joka on luotu Microsoft PowerAppsilla. Lisätietoja PowerApps-sovelluksen upottamisesta sivulle on kohdassa [PowerApps-sovellusten upottaminen](embed-power-apps.md).
+- Käytä **Lisää sovellus Power Appsista** -painikkeella upottaaksesi sivulle sovelluksen, joka on luotu Microsoft Power Appsilla. Lisätietoja Power Apps -sovelluksen upottamisesta sivulle on kohdassa [Power Apps -sovellusten upottaminen](embed-power-apps.md). Tämä vaihtoehto on käytettävissä vain, kun [Tallennetut näkymät](saved-views.md) -toiminto on poistettu käytöstä.  
+- Käytä **Lisää sovellus** -painiketta upottaaksesi sivulle sovelluksen, joka on joko Microsoft Power Appsin tai kolmannen osapuolen luoma. Tämä vaihtoehto on käytettävissä vain, kun [Tallennetut näkymät](saved-views.md) -toiminto on otettu käyttöön. 
 - Voit palauttaa sivun oletusasennustilaan **Tyhjennä**-työkalulla. Kaikki senhetkisen sivun mukautukset tyhjennetään. Tätä toimintoa ei voi kumota. Käytä tätä työkalua tämän vuoksi vain silloin, kun olet varma, että haluat palauttaa sivun alkuperäiset asetukset.
 - Voit ladata mukautuksen aiemmin luodusta tiedostosta käyttämällä **Tuo**-työkalua. Kun tuot sivulle mukautuksia, voit valita, lisätäänkö ne sivun mukautuksiin vai korvataanko mukautukset niillä. Tätä toimintoa ei voi kumota. Siksi sinun on manuaalisesti tyhjennettävä tai kumottava ei-toivotut muutokset, kun olet tuonut mukautuksia.
 - Voit tallentaa sivun mukautukset tiedostoon käyttämällä **Vie**-työkalua. Sitten voit jakaa mukautuksesi muiden käyttäjien kanssa. Kyseisten käyttäjien tarvitsee vain tuoda sivun mukautukset sisältävä tiedosto.
@@ -152,7 +154,7 @@ Koontinäyttö on usein ensimmäinen sivu, jonka näet, kun avaat sovelluksen. V
 Voit mukauttaa koontinäyttöä napsauttamalla jotakin ruutua hiiren kakkospainikkeella ja avata sitten ruudun ominaisuusikkunan valitsemalla **Mukauta**-vaihtoehdon.
 
 - Jos haluat piilottaa valitun ruudun tai nimetä sen uudelleen, muutos on tehtävä suoraan ominaisuusikkunassa.
-- Voit muuttaa työtilan ruutujen järjestystä valitsemalla ominaisuusikkunassa **Mukauta tämä lomake**, jolloin **mukauttamisen** työkalurivi avautuu. Voit sitten järjestää ruudut uudelleen haluamallasi tavalla **Siirrä**-työkalun avulla.
+- Voit muuttaa työtilan ruutujen järjestystä valitsemalla ominaisuusikkunassa **Mukauta tämä sivu**, jolloin **mukauttamisen** työkalurivi avautuu. Voit sitten järjestää ruudut uudelleen haluamallasi tavalla **Siirrä**-työkalun avulla.
 - Voit llisätä uuden työtilaruudun valitsemalla ominaisuusikkunassa **Lisää työtilaan**. Uusi työtilan ruutu luodaan koontinäytön alareunaan. Voit nimetä tämän uuden työtilan ruudun haluamallasi tavalla. Voit myös lisätä luetteloita, ruutuja ja linkkejä työtilaa aiemmin tämän ohjeaiheen kohdassa [Luetteloiden, ruutujen tai linkkien lisääminen työtilaan](#adding-a-tile-list-or-link-to-a-workspace) kuvatulla tavalla.
 
 ## <a name="administration-of-personalizations"></a>Mukautusten hallinta
