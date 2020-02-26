@@ -3,7 +3,7 @@ title: Suunnittelun optimoinnin aloittaminen
 description: Tässä ohjeaiheessa käsitellään suunnittelun optimointitoiminnon käytön aloittamisesta.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 37c2acb2397b2a0ad69272c0645bd200a8d7910d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 3e0371c6addc0412dc2fc105891b012941e92a06
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773947"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971461"
 ---
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
@@ -47,15 +47,17 @@ Suunnittelun optimoinnin käyttöä varten on asennettava Dynamics 365 Supply Ch
 
 1. Kirjaudu sisään LCS:ään ja avaa sopiva ympäristö.
 1. Valitse **Kaikki tiedot**.
-1. Valitse **Ylläpito** tai selaa alas **Ympäristön lisäosat** -pikavälilehteen.
+1. Vieritä alas **Ympäristön lisäosat** -pikavälilehteen.
 1. Valitse **Asenna uusi lisäosa**.
 1. Valitse **Suunnittelun optimointi**.
 1. Noudata asennusoppaan ohjeita ja hyväksy käyttöehdot.
 1. Valitse **Asenna**.
+1. **Ympäristön lisäosat** -pikavälilehdessä pitäisi näkyä, että suunnittelun optimointia asennetaan.
+1. Muutaman minuutin kuluttua arvon **Asennettaan** pitäisi muuttua arvoksi **Asennettu** (voi vaatia sivun päivityksen). Kun asennus on valmis, voit aktivoida suunnittelun optimoinnin Dynamics 365 Supply Chain Managementissa.
 
 ### <a name="planning-optimization-integration"></a>Suunnittelun optimoinnin integrointi
 
-Voit määrittää, käytetäänkö suunnittelun optimoinnin lisää pääsuunnittelussa valitsemalla **Pääsuunnittelu** \> **Asetukset** \> **Suunnittelun optimoinnin integrointi** \> **Integrointiparametrit**.
+Voit määrittää, käytetäänkö suunnittelun optimoinnin lisää pääsuunnittelussa valitsemalla **Pääsuunnittelu** \> **Asetukset** \> **Suunnittelun optimoinnin parametrit**.
 
 #### <a name="connection-status"></a>Yhteyden tila
 

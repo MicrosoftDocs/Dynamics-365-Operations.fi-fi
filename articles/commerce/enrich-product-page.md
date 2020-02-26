@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9c0f329d21cdda5c36a39a8c602d5925b720f52
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: d4c495fc6dfe4aa6561a1bb703253ef8ec71dc13
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945740"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003070"
 ---
 # <a name="enrich-a-product-page"></a>Tuotesivun täydentäminen
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten tuotesivua täydennetään Microsoft Dynamics 365 Commerce -sovelluksessa.
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Oletusarvon mukaan sivustossa käytetään yleistä sivua tuotetietojen näyttämisessä. Tämä sivu sisältää perustiedot tuotteesta ja sen myynnissä vaadittavista ohjausobjekteista. Voit kuitenkin täydentää vähittäismyyntipalvelimen tietoja tiettyä tuotetta koskevilla kuvilla tai tekstillä. Tätä prosessia kutsutaan tuotesivun täydentämiseksi.
+Oletusarvon mukaan sivustossa käytetään yleistä sivua tuotetietojen näyttämisessä. Tämä sivu sisältää perustiedot tuotteesta ja sen myynnissä vaadittavista ohjausobjekteista. Voit kuitenkin täydentää Commerce Scale Unitin tietoja tiettyä tuotetta koskevilla kuvilla tai tekstillä. Tätä prosessia kutsutaan tuotesivun täydentämiseksi.
 
-Usein tuotteita varten halutaan käyttää erityistä lisäsisältöä. Kun siirryt **Vähittäismyynti**-kohtaan muokkaustyökalussa, näkyviin tulee tuoteluettelo kanavasta, joka on liitetty sivustoon. Tässä luettelossa **Täydennetty**-sarake ilmaisee, onko tuotteen tuotesivua täydennetty. Jos sarakkeessa on valintamerkki, tuotteella on täydennetty tuotesivu. Jos valintamerkkiä ei ole, tuotteella käytetään oletustuotesivua ja -sisältöä. Voit esikatsella sekä täydennettyjä että muita kuin täydennettyjä tuotesivuja valitsemalla tuotteen nimen luettelosta.
+Usein tuotteita varten halutaan käyttää erityistä lisäsisältöä. Kun siirryt **Retail ja Commerce**-kohtaan muokkaustyökalussa, näkyviin tulee tuoteluettelo kanavasta, joka on liitetty sivustoon. Tässä luettelossa **Täydennetty**-sarake ilmaisee, onko tuotteen tuotesivua täydennetty. Jos sarakkeessa on valintamerkki, tuotteella on täydennetty tuotesivu. Jos valintamerkkiä ei ole, tuotteella käytetään oletustuotesivua ja -sisältöä. Voit esikatsella sekä täydennettyjä että muita kuin täydennettyjä tuotesivuja valitsemalla tuotteen nimen luettelosta.
 
 ## <a name="enrich-a-product-page"></a>Tuotesivun täydentäminen
 

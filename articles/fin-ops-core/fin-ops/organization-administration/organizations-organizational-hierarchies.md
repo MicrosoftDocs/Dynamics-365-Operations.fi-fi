@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c28c9e8c2573bcd82434f88daa8f9cadc946209
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fc9064f0386fe7c0f4093fc30587be4baa259eb0
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812383"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003676"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Organisaatiot ja organisaatiohierarkiat – yleiskatsaus
 
@@ -47,7 +47,7 @@ Yritys on tietyntyyppinen oikeushenkilö Tällä hetkellä yritykset ovat ainoit
 
 Toimintayksikkö on organisaatio, jota käytetään jakamaan liiketoiminnan taloudellisten resurssien hallinta ja operationaaliset prosessit. Toimintayksikön henkilöiden vastuulla on rajattujen resurssien maksimointi, prosessien tehostaminen ja suorituskyvyn raportointi.
 
-Toimintayksiköihin kuuluvat kustannuspaikat, liiketoimintayksiköt, arvovirrat, osastot ja vähittäismyyntikanavat. Seuraavassa taulukossa on lisätietoja jokaisesta toimintayksikön tyypistä:
+Toimintayksiköihin kuuluvat kustannuspaikat, liiketoimintayksiköt, arvovirrat, osastot ja kauppakanavat. Seuraavassa taulukossa on lisätietoja jokaisesta toimintayksikön tyypistä:
 
 | Toimintayksikön tyyppi | Kuvaus | Tarkoitus |
 |---------------------|-------------|---------|
@@ -55,7 +55,7 @@ Toimintayksiköihin kuuluvat kustannuspaikat, liiketoimintayksiköt, arvovirrat,
 | Liiketoimintayksikkö       | Osittain itsenäinen toimintayksikkö, joka luodaan vastaamaan yrityksen strategisiin tavoitteisiin. | Käytetään taloushallinnan raportointiin, joka perustuu toimialoihin tai tuotelinjoihin, joita organisaatio palvelee yrityksistä itsenäisenä. |
 | Arvovirta        | Toimintayksikkö, joka hallitsee yhtä tai useaa tuotantovirtaa. | Yleensä käytetään lean-valmistuksessa ohjaamaan toimintoja ja työnkulkuja, joita tarvitaan tuotteen tai palvelun tuottamiseksi kuluttajille. |
 | Osasto          | Toimintayksikkö, joka edustaa organisaation luokkaa tai toiminnallista osaa, joka suorittaa tietyn tehtävän (kuten myynti tai kirjanpito). | Käytetään toiminnallisia alueita koskevaan raportointiin. Osastolla voi olla tulos- ja tappiovastuu, ja se voi koostua ryhmästä kustannuspaikkoja. |
-| Vähittäismyyntikanava      | Toimintayksikkö, joka edustaa kivijalkaliikettä, verkkokauppaa tai online-kauppapaikkaa. | Käytetään yhden tai useamman myymälän liiketoimintaprosessien hallintaan ja operatiiviseen ohjaukseen yritysten sisällä tai niiden läpi. |
+| Commerce-kanava      | Toimintayksikkö, joka edustaa kivijalkaliikettä, verkkokauppaa tai online-kauppapaikkaa. | Käytetään yhden tai useamman myymälän liiketoimintaprosessien hallintaan ja operatiiviseen ohjaukseen yritysten sisällä tai niiden läpi. |
 
 ### <a name="teams"></a>Ryhmät
 

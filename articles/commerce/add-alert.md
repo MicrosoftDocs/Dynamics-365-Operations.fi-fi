@@ -1,9 +1,9 @@
 ---
-title: Hälytysmoduuli
-description: Tässä ohjeaiheessa on tietoja hälytysmoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
+title: Kampanjabannerimoduuli
+description: Tässä ohjeaiheessa käsitellään kampanjabannerimoduuleja ja niiden lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,55 +18,66 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 82138dd7f0934f732215f67a3726638eb87075d4
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: da5e220e4578d1064eb7b627b441d3f585b3c095
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785349"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025617"
 ---
-# <a name="alert-module"></a>Hälytysmoduuli
+# <a name="promo-banner-module"></a>Kampanjabannerimoduuli
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja hälytysmoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
+Tässä ohjeaiheessa käsitellään kampanjabannerimoduuleja ja niiden lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Hälytysmoduulia käytetään sivun sisäisten tietosanomien näyttämisessä. Hälytysmoduulit tukevat tekstisanomaa ja linkkiä. Niiden avulla voidaan näyttää koko sivustoa koskevia kampanjoita, jotka näkyvät kaikilla sähköisen kaupankäynnin sivuston sivuilla. 
+Kampanjabannerimoduuleja käytetään sivun sisäisten tietosanomien näyttämisessä. Niiden avulla voidaan näyttää koko sivustoa koskevia kampanjoita, jotka näkyvät kaikilla sähköisen kaupankäynnin sivuston sivuilla. 
 
-Hälytysmoduuleita ohjaavat sisällönhallintajärjestelmän (CMS) tiedot. Moduulit voidaan asettaa mille tahansa sivulle.
+Kampanjamoduulitmoduulit tukevat tekstisanomaa ja linkkiä. Jos kampanjabannerimoduuliin lisätään useita sanomia, siitä tulee kiertävä karusellibanneri, jossa asiakkaat voidaan kierrättää kaikki sanomat. 
 
-## <a name="examples-of-alert-modules-in-e-commerce"></a>Esimerkkejä sähköisen kaupankäynnin hälytysmoduuleista
+Kampanjabannerimoduuleita ohjaavat sisällönhallintajärjestelmän (CMS) tiedot. Moduulit voidaan asettaa mille tahansa sivulle.
 
-Hälytysmoduuleja voidaan käyttää sivuston ylätunnisteessa osoittamaan koko sivustoa koskevia kampanjoita tai sanomia. Seuraavassa on muutamia esimerkkejä:
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Esimerkkejä kampanjabannerien käytöstä sähköisessä kaupankäynnissä
+
+Kampanjabannereita voidaan käyttää sivuston ylätunnisteissa, jossa niissä voidaan näyttää koko sivustoa koskevia kampanjoita tai sanomia, kuten seuraavissa esimerkeissä.
 
 Vuosittainen alennusmyynti loppuu 10 päivän kuluttua
 
 Alennusmyynnit ennen koulujen alkamista. Osta nyt.
 
-## <a name="alert-module-properties"></a>Hälytysmoduulin ominaisuudet
+## <a name="promo-banner-module-properties"></a>Kampanjabannerimoduulin ominaisuudet
 
-| Ominaisuuden nimi  | Arvo                              | Kuvaus |
-|----------------|------------------------------------|-------------|
-| Teksti           | Teksti                               | Hälytysmoduulissa näkyvä tekstisanoma. |
-| Tekstin tasaus | **Oikealla**, **vasemmalla** tai **keskellä** | Arvo, joka määrittää, miten teksti tasataan hälytysmoduulissa. |
-| Hylkää hälytys  | **Tosi** vai **Epätosi**              | Jos arvoksi on määritetty **Tosi**, asiakas voi hylätä hälytyksen. |
-| Linkitä           | URL-osoite                                | Vapaavalintaisen linkin URL-osoite. |
+| Ominaisuuden nimi             | Value                              | Kuvaus |
+|---------------------------|------------------------------------|-------------|
+| Banneriviestit           | Teksti ja linkit                     | Teksti-ja linkkitaulukko |
+| Automaattinen toisto                  | **Tosi** vai **Epätosi**              | Arvo, joka ilmaisee kierrätetäänkö sanomia automaattisesti, jos useita sanomia on määritetty. |
+| Dian vaihtoväli | Millisekuntien (ms) määrä      | Aikaväli, jota käytetään sanomien kierrättämiseen. |
+| Salli ohittaminen             | **Tosi** vai **Epätosi**              | Jos arvoksi on määritetty **Tosi**, asiakkaat voivat hylätä hälytyksen. |
+| Näytä karusellin valitsin     | **Tosi** vai **Epätosi**              | Arvo, joka ilmaisee, näytetäänkö karusellin valitsimet, jotta asiakkaan voivat kierrättää useita bannerikohteita manuaalisesti. |
+| Tekstin tasaus            | **Oikealla**, **vasemmalla** tai **keskellä** | Tekstin kohdistus kampanjabannerimoduulissa. |
+| Linkitä                      | URL-osoite                              | Vapaavalintaisen linkin URL-osoite. |
 
-## <a name="add-an-alert-module-to-a-page"></a>Hälytysmoduulin lisääminen sivulle 
+## <a name="add-a-promo-banner-module-to-a-page"></a>Kampanjabannerimoduulin lisääminen sivulle 
 
-Voit lisätä hälytysmoduulin sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
+Voit lisätä kampanjabannerimoduulin sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Luo sivumalli, jonka nimi on **Hälytysmalli**.
-1. Lisää hälytysmoduuli oletussivun **pääpaikkaan**.
+1. Luo sivumalli, jonka nimi on **Kampanjabannerimalli**.
+1. Lisää **Oletussivu**-moduuli **Tekstiosa**-paikkaan **Sivun jäsennys** -kohdassa. 
 1. Kirjaa malli sisään ja julkaise se. 
-1. Käytä juuri luotua hälytysmallia, kun haluat luoda sivun nimeltä **Hälytyssivu**. 
-1. Lisää hälytysmoduuli uuden sivun **pääpaikkaan**.
-1. Syötä hälytysteksti hälytysmoduulin asetuksiin. Voit muokata muita ominaisuuksia, jos haluat mukauttaa hälytysmoduulia lisää.
-1. Tallenna ja esikatsele sivu. Sivun yläosassa pitäisi nyt olla hälytys, joka sisältää lisäämäsi tekstin.
-1. Kirjaa sivu sisään ja julkaise se. 
+1. Luo **Kampanjabannerisivu**-niminen sivu käyttämällä juuri luotua mallia. 
+1. Lisää säilömoduuli uuden sivun **pääpaikkaan**. 
+1. Määritä oikeassa ruudussa **Leveys**-arvoksi **Täytä säilö**.
+1. Lisää kampanjabannerimoduuli säilömoduuliin **Sivun jäsennys** -kohdassa.
+1. Lisää vähintään yksi bannerisanoma bannerimoduulin asetuksissa. Kussakin sanomassa voi olla tekstiä ja linkki. Voit mukauttaa moduulia entisestään muokkaamalla muita ominaisuuksia.
+1. Tallenna ja esikatsele sivu. Sivun yläosassa pitäisi nyt olla hälytys, joka näyttää lisäämäsi tekstin.
+1. Kun sivun muokkaus on valmis, julkaise se. 
+
+> [!NOTE]
+> Kampanjabanneria käytetään yleensä sivun ylätunniste- ja alaotsikkopaikassa.
+
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -74,12 +85,8 @@ Voit lisätä hälytysmoduulin sivulle ja määrittää pakolliset ominaisuudet 
 
 [Karusellimoduuli](add-carousel.md)
 
-[Sisällöntäyteinen lohkomoduuli](add-content-rich-block.md)
+[Tekstilohkomoduuli](add-content-rich-block.md)
 
-[Sisällönsijoittelumoduuli](add-content-placement-modules.md)
-
-[Omaisuusmoduuli](add-feature-module.md)
-
-[Hero-moduuli](add-hero-module.md)
+[Sisältölohkomoduuli](add-hero-module.md)
 
 [Videotoistinmoduuli](add-video-player.md)

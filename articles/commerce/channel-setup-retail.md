@@ -1,0 +1,184 @@
+---
+title: Vähittäismyyntikanavan määrittäminen
+description: Tässä ohjeaiheessa käsitellään uuden vähittäismyyntikanavan luomisesta Microsoft Dynamics 365 Commercessa.
+author: samjarawan
+manager: annbe
+ms.date: 01/27/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: samjar
+ms.search.validFrom: 2020-01-20
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 8ac01f36912fa5e8a09bb4f324ef272cec737aa1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002378"
+---
+# <a name="set-up-a-retail-channel"></a>Vähittäismyyntikanavan määrittäminen
+
+
+[!include [banner](includes/banner.md)]
+
+Tässä ohjeaiheessa käsitellään uuden vähittäismyyntikanavan luomisesta Microsoft Dynamics 365 Commercessa.
+
+## <a name="overview"></a>Yleiskatsaus
+
+Dynamics 365 Commerce tukee useita vähittäismyynnin kanavia. Vähittäismyyntikanavia ovat verkkokaupat, puhelinkeskukset ja vähittäismyymälät (eli kivijalkakaupat). Jokaisella vähittäismyymäläkanavalla voi olla omat maksuvälineet, hintaryhmät, kassakoneet, tulo- ja kulutilit sekä oma henkilökunta. Sinun on määritettävä kaikki nämä elementit, ennen kuin voit luoda vähittäismyymäläkanavan. 
+
+Varmista ennen vähittäismyyntikanavan luontia, että [kanavan edellytykset](channels-prerequisites.md) toteutuvat.
+
+## <a name="create-and-configure-a-new-retail-channel"></a>Uuden vähittäismyyntikanavan luominen ja määrittäminen
+
+1. Valitse siirtymisruudussa **Moduulit \> Kanavat \> Myymälät \> Kaikki myymälät**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Kirjoita **Nimi**-kenttään uuden kanavan nimi.
+1. Anna yksilöivä myymälän numero **Myymälän numero** -kenttään. Numero voi olla aakkosnumeerinen, ja siinä saa olla enintään 10 merkkiä.
+1. Anna sopiva yritys avattavassa **Yritys**-luettelossa.
+1. Anna sopiva varasto avattavassa **Varasto**-luettelossa.
+1. Valitse sopiva aikavyöhyke **Myymälän aikavyöhyke** -kentässä.
+1. Valitse myymälään sopiva arvonlisäveroryhmä avattavassa **Arvonlisäveroryhmä**-luettelossa.
+1. Valitse sopiva valuutta **Valuutta**-kentässä.
+1. Anna kelvollinen osoitekirja **Asiakkaan osoitekirja** -kentässä.
+1. Anna kelvollinen oletusasiakas **Oletusasiakas**-kentässä.
+1. Valitse toimintoprofiili tarvittaessa **Toimintoprofiili**-kentässä.
+1. Anna kelvollinen sähköpostin ilmoitusprofiili **Sähköposti-ilmoitusprofiili**-kentässä.
+1. Valitse toimintoruudussa **Tallenna**.
+
+Seuraavassa kuvassa näytetään, miten uusi vähittäismyyntikanava luodaan.
+
+![Uusi vähittäismyyntikanava](media/channel-setup-retail-1.png)
+
+Seuraavassa kuvassa on esimerkki vähittäismyyntikanavasta.
+
+![Vähittäismyyntikanavan esimerkki](media/channel-setup-retail-2.png)
+
+## <a name="other-settings"></a>Muut asetukset
+
+**Laskelma/sulkeminen**- ja **Muut**-osissa on monia määritettäviä valinnaisia asetuksia. Nämä määritykset voidaan tehdä vähittäismyymälän tarpeiden mukaan.
+
+Lisätietoja näytön oletusasettelun määrittämisestä **Näytön asettelu** -osassa on kohdassa [Näytön asettelut myyntipisteeseen (POS)](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json) ja **Laiteasema**-osan määritystiedoista on kohdassa [Retail Hardware Stationin määrittäminen ja asentaminen](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation).
+
+Seuraavassa kuvassa on esimerkki vähittäismyyntikanavan asetusten määrityksistä.
+
+![Vähittäismyyntikanavan määritysesimerkki](media/channel-setup-retail-3.png)
+
+## <a name="additional-channel-set-up"></a>Lisäkanavan määrittäminen
+
+Muita kanavaan määritettäviä kohteita on **Asetukset**-osan **toimintoruudussa**.
+
+Verkkokanavan asetuksia varten tarvittavia tehtäviä, kuten maksutapojen, kassatilityksen, toimitustapojen, tulo- ja kulutilin, osien, täytäntöönpanoryhmään määrityksen ja säilöjen määrittäminen.
+
+Seuraavassa kuvassa on erilaisia vähittäismyyntikanavan määritysvaihtoehtoja **Asetukset**-välilehdessä.
+
+![Kanavan määrittäminen](media/channel-setup-retail-4.png)
+
+### <a name="set-up-payment-methods"></a>Maksutapojen määrittäminen
+
+Voit määrittää maksutavan kullekin tässä kanavassa tuetulle maksutyypille seuraavien ohjeiden mukaisesti.
+
+1. Valitse toimintoruudussa ensin **Asetukset**-välilehti ja sitten **Maksutavat**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Valitse maksutapa siirtymisruudussa.
+1. Anna **Yleiset**-osassa **Toiminnon nimi** ja määritä muut mahdolliset asetukset.
+1. Määritä tarvittaessa maksutyypin mahdolliset lisäasetukset.
+1. Valitse toimintoruudussa **Tallenna**.
+
+Seuraavassa kuvassa näkyy esimerkki käteismaksutavasta.
+
+![Esimerkki maksutavasta](media/channel-setup-retail-5.png)
+
+### <a name="set-up-cash-declaration"></a>Kassatilityksen määrittäminen
+
+1. Valitse toimintoruudussa ensin **Asetukset**-välilehti ja sitten **Kassatilitys**.
+1. Valitse toimintoruudussa **Uusi** ja luo sitten kaikki tarvittavat **Kolikko**- ja **Seteli**-arvot.
+
+Seuraavassa kuvassa näkyy esimerkki kassatilityksestä.
+
+![Kassatilitysten määrittäminen](media/channel-setup-retail-6.png)
+
+### <a name="set-up-modes-of-delivery"></a>Määritä toimitustavat
+
+Määritetyt toimitustavat saadaan näkyviin valitsemalla **Toimitustapa** **toimintoruudun** **Asetukset**-välilehdessä.  
+
+Voit muuttaa toimitustapaa tai lisätä sen seuraavien ohjeiden mukaisesti.
+
+1. Valitse siirtymisruudussa **Moduulit \> Varastonhallinta \> Toimitustavat**.
+1. Luo uusi toimitustapa valitsemalla toimintoruudussa **Uusi** tai valitse aiemmin luotu tapa.
+1. Lisää kanava valitsemalla **Vähittäismyyntikanava**-osassa **Lisää rivi**. Kanavien lisäämistä voi yksinkertaistaa käyttämällä organisaatiosolmua sen sijaan, että kukin kanava lisättäisiin erikseen.
+
+Seuraavassa kuvassa on esimerkki toimitustavasta.
+
+![Määritä toimitustavat](media/channel-setup-retail-7.png)
+
+### <a name="set-up-incomeexpense-account"></a>Tulo- ja kulutilin määrittäminen
+
+Voit määrittää tulo- ja kulutilin noudattamalla seuraavia ohjeita.
+
+1. Valitse toimintoruudussa ensin **Asetukset**-välilehti ja sitten **Tulo- ja kulutili**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Anna nimi **Nimi**-kohdassa.
+1. Anna hakunimi **Hakunimi**-kohdassa.
+1. Anna tilityyppi **Tilityyppi**-kohdassa.
+1. Kirjoita tarpeen mukaan tekstiä seuraaviin kohtiin: **Sanomarivi 1**, **Sanomarivi 2**, **Luetteloteksti 1** ja **Luetteloteksti 2**.
+1. Anna kirjauksen tiedot **Kirjaus**-kohtaan.
+1. Valitse toimintoruudussa **Tallenna**.
+
+Seuraavassa kuvassa on esimerkki tulo- ja kulutilistä.
+
+![Tulo- ja kulutilien määrittäminen](media/channel-setup-retail-8.png)
+
+### <a name="set-up-sections"></a>Osien määrittäminen
+
+Voit määrittää osia noudattamalla seuraavia ohjeita.
+
+1. Valitse toimintoruudussa ensin **Asetukset**-välilehti ja sitten **Osat**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Anna osan numero **Osan numero** -kohtaan.
+1. Anna kuvaus **Kuvaus**-kohtaan.
+1. Anna osan koko **Osan koko** -kohtaan.
+1. Määritä tarpeen mukaan **Yleiset**- ja **Myyntitilastot**-asetukset.
+1. Valitse toimintoruudussa **Tallenna**.
+
+### <a name="set-up-a-fulfillment-group-assignment"></a>Täytäntöönpanoryhmän määrityksen määrittäminen
+
+Voit määrittää täytäntöönpanoryhmän määrityksen noudattamalla seuraavia ohjeita.
+
+1. Valitse toimintoruudussa ensin **Asetukset**-välilehti ja sitten **Täytäntöönpanoryhmän määritys**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Valitse täytäntöönpanoryhmä avattavassa **Täytäntöönpanoryhmä**-luettelossa.
+1. Anna kuvaus avattavassa **Kuvaus**-luettelossa.
+1. Valitse toimintoruudussa **Tallenna**.
+
+Seuraavassa kuvassa on esimerkki täytäntöönpanoryhmän määrityksen määrittämisestä.
+
+![Täytäntöönpanoryhmän määritysten määrittäminen](media/channel-setup-retail-9.png)
+
+### <a name="set-up-safes"></a>Säilöjen määrittäminen
+
+Voit määrittää säilöjä noudattamalla seuraavia ohjeita.
+
+1. Valitse toimintoruudussa ensin **Asetukset**-välilehti ja sitten **Säilöt**.
+1. Valitse toimintoruudussa **Uusi**.
+1. Anna säilön nimi.
+1. Valitse toimintoruudussa **Tallenna**.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Kanavien yleiskatsaus](channels-overview.md)
+
+[Kanava-asetusten edellytykset](channels-prerequisites.md)
+
+[Verkkokanavan määrittäminen](channel-setup-online.md)
+
+[Puhelinkeskuskanavan määrittäminen](channel-setup-callcenter.md)
+

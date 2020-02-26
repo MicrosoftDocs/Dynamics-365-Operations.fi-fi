@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commercein ohjeresurssit
+title: Kaupan aloitussivu
 description: Dynamics 365 Commercein aloitussivu.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,16 +19,16 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 371f85063333bec53227f9b25a5b69c2cba2e6f8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 08e6a521818c919b364033e22643b9ee4ce0ec65
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770090"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024657"
 ---
-# <a name="help-resources-for-dynamics-365-commerce"></a>Dynamics 365 Commercein ohjeresurssit
+# <a name="commerce-home-page"></a>Kaupan aloitussivu
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 
@@ -36,25 +36,24 @@ Dynamics 365 Commerce – perustuu hyväksi todettuihin Dynamics 365 Retail -omi
 
 Tässä versiossa otetaan käyttöön digitaalisen käyttökokemuksen luominen sisäänrakennetun verkkomuokkaus- ja kehitystyökalun avulla. Tämä mahdollistaa vuorovaikutteisten ja älykkäiden digitaalisten verkkomyymälöiden luomisen. Yhdistetty markkinointi ja oheislaitteeton kaupankäyntiympäristö mahdollistavat saumattoman sisällön, resurssien, kampanjoiden, varaston ja hinnoittelun hallinnan kaikissa kanavissa.
 
-- Kaikki digitaalisen kaupankäyntiympäristön muodostamista varten. Voit tehostaa liiketoimintaa ja kokonaisvaltaista kaupankäyntiratkaisua, joka skaalautuu tarpeidesi mukaan perinteisissä ja uusissa kanavissa. Sisäänrakennetut verkonmuokkaus- ja kehitystyökalut mahdollistavat vuorovaikutteisten ja älykkäiden digitaalisten verkkomyymälöiden luomisen. Yhdistetty markkinoinnin ja oheislaitteettoman kaupankäyntiympäristön avulla voi saumattomasti hallita sisältöä, resursseja, kampanjoita, varastoa ja hinnoittelua kaikissa kanavissa.
+- **Kaikki digitaalisen kaupankäyntiympäristön muodostamista varten:** Voit tehostaa liiketoimintaa ja kokonaisvaltaista kaupankäyntiratkaisua, joka skaalautuu tarpeidesi mukaan perinteisissä ja uusissa kanavissa. Sisäänrakennetut verkonmuokkaus- ja kehitystyökalut mahdollistavat vuorovaikutteisten ja älykkäiden digitaalisten verkkomyymälöiden luomisen. Yhdistetty markkinoinnin ja oheislaitteettoman kaupankäyntiympäristön avulla voi saumattomasti hallita sisältöä, resursseja, kampanjoita, varastoa ja hinnoittelua kaikissa kanavissa.
 
-- Lisää lojaaliutta ja ylitä asiakkaiden odotukset: Käytä asiakashallinnan työkaluja. Niiden avulla saat asiakkaista kokonaisvaltaisen kuvan ja voit vastata asiakkaiden tarpeisiin kaikilla tasoilla asiakasprofiilin, historian ja määritysten mukaan fyysisissä ja digitaalisissa kanavissa. Anna työntekijöille mahdollisuudet ylläpitää pitkäaikaisia suhteita tekoälyn avulla saatavilla suosituksilla, asiakastiedoilla ja kanta-asiakasohjelmilla, jotka parantavat tuotemerkin houkuttelevuutta.
+- **Lisää lojaaliutta ja ylitä asiakkaiden odotukset:** Käytä asiakashallinnan työkaluja. Niiden avulla saat asiakkaista kokonaisvaltaisen kuvan ja voit vastata asiakkaiden tarpeisiin kaikilla tasoilla asiakasprofiilin, historian ja määritysten mukaan fyysisissä ja digitaalisissa kanavissa. Anna työntekijöille mahdollisuudet ylläpitää pitkäaikaisia suhteita tekoälyn avulla saatavilla suosituksilla, asiakastiedoilla ja kanta-asiakasohjelmilla, jotka parantavat tuotemerkin houkuttelevuutta.
 
-- Joustava ja älykäs monikanavakokemus: Yhdistä fyysinen ja digitaalinen kaupankäynti tarjoamalla yhdenmukaisia kokemuksia asiakkaille pilvihaussa ja etsinnässä, tuotearvioinneissa, toivomuslistoissa, varastossa, lahjakorteissa ja kanta-asiakasohjelmissa. Asiakkaat voivat ostaa milloin, millä tavalla tahansa ja missä vai haluavat käyttämällä mitä tahansa laitetta. Samalla he voivat maksaa uusilla tavoilla ja valita tuotteille haluamansa keräily- ja toimitustavan.
+- **Joustava ja älykäs monikanavakokemus:** Yhdistä fyysinen ja digitaalinen kaupankäynti tarjoamalla yhdenmukaisia kokemuksia asiakkaille pilvihaussa ja etsinnässä, tuotearvioinneissa, toivomuslistoissa, varastossa, lahjakorteissa ja kanta-asiakasohjelmissa. Asiakkaat voivat ostaa milloin, millä tavalla tahansa ja missä vai haluavat käyttämällä mitä tahansa laitetta. Samalla he voivat maksaa uusilla tavoilla ja valita tuotteille haluamansa keräily- ja toimitustavan.
 
-- Virtaviivaista toimintoja tekoälyn avulla pilvessä: Tehosta monikanavan kaupankäyntikokemuksia ja integroituja taustatoimintoja kokonaisvaltaisella ja kontekstikohtaisella pilvitoimintojen älykkyydellä. Käytä kehittynyttä kaupankäyntiä, varastonhallintaa, jaettua tilaustenhallintaa ja hinnoittelua ja markkinointia innovaatioissa. Näin pysyt kilpailun kärjessä. Saat tietoja visualisoimalla ja analysoimalla laaja-alaisia ja yhdenmukaisia tietoja kaikilta liiketoiminnan osa-alueilta. Käytä tekoälypohjaisia teknologioita ja tarjoa käytettäviä sivustoja, suojaa liiketoimintaa maksupetoksilta ja valvo tehokkaasti käyttäjien luomaa sisältöä, kuten luokituksia ja arvosteluita. 
-
-## <a name="sign-up-for-the-preview"></a>Esiversion rekisteröiminen
-
-Siirry [Dynamics 365 Commerce (esiversio)](https://dynamics.microsoft.com/en-us/commerce/overview/) -sivulle ja täytä hakemus, jotta voit liittyä esiversioon. Nykyiset Dynamics 365 Retail -asiakkaat voivat päivittää Commerceen, kun se tulee yleisesti saataville. 
+- **Virtaviivaista toimintoja tekoälyn avulla pilvessä:** Tehosta monikanavan kaupankäyntikokemuksia ja integroituja taustatoimintoja kokonaisvaltaisella ja kontekstikohtaisella pilvitoimintojen älykkyydellä. Käytä kehittynyttä kaupankäyntiä, varastonhallintaa, jaettua tilaustenhallintaa ja hinnoittelua ja markkinointia innovaatioissa. Näin pysyt kilpailun kärjessä. Saat tietoja visualisoimalla ja analysoimalla laaja-alaisia ja yhdenmukaisia tietoja kaikilta liiketoiminnan osa-alueilta. Käytä tekoälypohjaisia teknologioita ja tarjoa käytettäviä sivustoja, suojaa liiketoimintaa maksupetoksilta ja valvo tehokkaasti käyttäjien luomaa sisältöä, kuten luokituksia ja arvosteluita. 
 
 ## <a name="core-concepts-and-tasks"></a>Keskeiset käsitteet ja tehtävät
 
 Saat lisätietoja valitsemalla ominaisuusalueen.
-- [Sähköisen kaupankäynnin arviointiympäristön määrittäminen](provisioning-guide.md)
-- [Myymälän aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
-- [Tuotesuositusten yleiskatsaus](product-recommendations.md)
-- [Luokitukset ja arvostelut – yleiskatsaus](ratings-reviews-overview.md)
-- [Mallit ja asettelut – yleiskatsaus](templates-layouts-overview.md)
-- [Sisällön lisääminen ja hallinta](add-manage-content.md)
-- [Online-kanavan laajennettavuus](e-commerce-extensibility/overview.md)
+- [Commercen esikatseluympäristön määrittäminen](provisioning-guide.md)
+- [Kaupan arkkitehtuuri](retail-components.md)
+- [Kanaviesi määrittäminen](channels-overview.md)
+- [Tuotteittesi ja palvelujesi kauppa](set-up-retail-products.md)
+- [Tilausten hallinta](Order-fulfillment-overview.md)
+- [Hallitse asiakkaitasi](set-up-customer-loyalty-program.md)
+- [Myyntitietojesi hallinta](retail-statements.md)
+- [Verkkokauppasivustosi hallinta](online-store-overview.md)
+- [Petosten torjunta](dev-itpro/DFP.md)
+- [Kaupan kehittäminen ja laajennettavuus](dev-itpro/dev-retail-home-page.md)

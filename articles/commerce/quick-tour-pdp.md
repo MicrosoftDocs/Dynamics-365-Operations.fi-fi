@@ -3,7 +3,7 @@ title: Tuotetietosivujen yleiskatsaus
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotetietosivujen (PDP:t) yleiskatsaus.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3b02d50adbfcda27d590bcb87fd9669d67d4a01c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: dbf8f4c1ea479a508f4a0294020b7201b32fe228
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697862"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025922"
 ---
 # <a name="overview-of-product-details-pages"></a>Tuotetietosivujen yleiskatsaus
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen tuotetietosivujen (PDP:t) yleiskatsaus.
@@ -45,7 +45,7 @@ PDP-sivun yläosassa on ylätunniste, joka sisältää kaikki tuoteluokat ja muu
 
 ## <a name="buy-box-module"></a>Ostoruutumoduuli
 
-PDP-sivun tärkein moduuli on ostoruutumoduuli. Siksi se on sivun pääosan ensimmäinen nimike. Ostoruutumoduuli on säilömoduuli. Se isännöi useita moduuleja, jotka sisältävät tuotetta koskevia tärkeitä tietoja. Näitä tietoja ovat esimerkiksi tuotteen nimi, tuotteen kuvat, kuvaus, hinta ja tuoteluokitukset.
+PDP:N tärkein moduuli on ostolaatikkomoduuli, joka näkyy ensimmäisenä nimikkeenä sivun pääosassa. Ostolaatikkomoduuli näyttää tärkeitä tuotetietoja, kuten tuotteen nimen, tuotteen kuvauksen, tuotteen hinnan, tuotekuvat ja tuoteluokitukset.
 
 Ostoruutumoduulin avulla asiakas voi valita tuotevaihtoehtoja (esimerkiksi koon, tyylin ja värin) ja lisätä tuotteen ostoskoriin. Sen avulla asiakas voi myös ostaa tuotteen verkosta ja noutaa sen myymälästä. Osta verkosta ja nouda myymälästä -moduulissa käytetään Bing Maps -ohjelmointirajapintojen integrointia. Sen avulla etsitään lähellä olevat myymälät tai asiakkaan määrittämässä sijainnissa olevat myymälät.
 
@@ -53,7 +53,7 @@ Ostoruutumoduuli vaatiin tuotteen tunnuksen. Tämä tunnus johdetaan sivun konte
 
 ## <a name="product-specifications-module"></a>Tuotemääritysten moduuli
 
-Tuotemääritysten moduulia voi käyttää tuotteen lisätietojen näyttämisessä. Nämä tiedot haetaan Dynamics 365 Retail -sovelluksen tuotemääritteistä. Tuotemääritysten moduulissa näytetään kaikki määritteet, joiden **käytettävissä**-ominaisuuden arvoksi on määritetty **Tosi**. Tuotemääritysten hakeminen vaatii tuotteen tunnuksen.
+Tuotemääritysten moduulia voi käyttää tuotteen lisätietojen näyttämisessä. Nämä tiedot haetaan Commerce-sovelluksen tuotemääritteistä. Tuotemääritysten moduulissa näytetään kaikki määritteet, joiden **käytettävissä**-ominaisuuden arvoksi on määritetty **Tosi**. Tuotemääritysten hakeminen vaatii tuotteen tunnuksen.
 
 ## <a name="recommendations-module"></a>Suositusten moduuli
 
@@ -62,17 +62,23 @@ Suositusten moduuli on tärkeä moduuli PDP-sivulla. Kun asiakkaat selaavat tuot
 Käytettävissä on erityyppisiä suositusluetteloita:
 
 - **Ihmiset pitävät myös** -luettelo perustuu koneoppimiseen. Se käyttää muiden asiakkaiden tapahtumahistoriaa suositusten antamiseen. Tämä luettelo on luotu suositusten palvelun avulla. Se muistuttaa Asiakkaat, jotka ostivat tämän, ostivat myös... -luetteloa. Tämän luettelon luomiseen tarvitaan tuotteen tunnus.
-- Retailin tuotteelle voidaan määrittää **Liittyvät**-luettelo. Esimerkiksi ruskealle nahkaiselle matkustusta varten tehdylle käsilaukulle voidaan määrittää Liittyvät-luettelo, joka sisältää nahkaisia tai matkustusta varten suunniteltuja käsilaukkuja. Retailissa voidaan määrittää myös muun tyyppisiä Liittyvät-luetteloita, kuten **Lisävarusteet** ja **Lisää samanlaisia**. Tämän luettelon luomiseen tarvitaan tuotteen tunnus. Jos tämä lisätään aloitussivulle, jossa sivun konteksti ei sisällä tuotteen tunnusta, luettelo on tyhjä.
+- Commercen tuotteelle voidaan määrittää **Liittyvät**-luettelo. Esimerkiksi ruskealle nahkaiselle matkustusta varten tehdylle käsilaukulle voidaan määrittää Liittyvät-luettelo, joka sisältää nahkaisia tai matkustusta varten suunniteltuja käsilaukkuja. Commercessa voidaan määrittää myös muun tyyppisiä Liittyvät-luetteloita, kuten **Lisävarusteet** ja **Lisää samanlaisia**. Tämän luettelon luomiseen tarvitaan tuotteen tunnus. Jos tämä lisätään aloitussivulle, jossa sivun konteksti ei sisällä tuotteen tunnusta, luettelo on tyhjä.
 - PDP-sivuilla voi käyttää algoritmien avulla luotuja suositusluetteloita, kuten **Suositut**, **Myydyimmät** ja **Uudet**. Vaikka nämä luettelot eivät välttämättä liity suoraan PDP-sivulla olevaan tuotteeseen, asiakkaat voivat etsiä niiden avulla heitä mahdollisesti kiinnostavia tuotteita. Tämäntyyppiset luettelot eivät edellytä tuotteen tunnusta. Nämä ovat yleisiä luetteloita, joita luodaan ostokäyttäytymisen mukaan sivustossa.
 - Toimitukselliset luettelot ovat manuaalisesti kuratoituja luetteloita. Jälleenmyyjä voi esimerkiksi päättää manuaalisesti luetteloiden sisältämät tuotteet.
 
-## <a name="ratings-and-reviews-module"></a>Luokitusten ja arvosteluiden moduuli
+## <a name="ratings-and-reviews-modules"></a>Luokitusten ja arvosteluiden moduulit
 
-Luokitukset ja arvostelut -moduulissa näkyvät muiden asiakkaiden antamat luokitukset ja arvostelut. Sen avulla asiakas voi myös kirjoittaa tuotteesta oman arvostelun. Lisäksi se sisältää histogrammin, joka ilmaisee tuotteen luokitusten kehityksen. Lisätietoja on kohdassa [Luokitusten ja arvostelujen yleiskuvaus](ratings-reviews-overview.md).
+Kolmea moduulia voidaan käyttää näyttämään ja lisäämään arvosteluja:
+
+- **Arvostelut** – Tämä moduuli näyttää muiden asiakkaiden antamat luokitukset ja arvostelut. Asiakkaat voivat lajitella ja suodattaa arvosteluja. Tämä moduuli myös sallii asiakkaiden antaa hyviä tai huonoja arvosteluja, ja raportoida asioista.
+- **Kirjoita arvostelu** -Tämä moduuli sallii asiakkaiden kirjoittaa omia arvosteluja tuotteesta.
+- **Luokitukset histogrammi** – Tämä moduuli sisältää histogrammin, joka ilmaisee tuotteen luokituskehityksen.
+
+Lisätietoja on kohdassa [Luokitusten ja arvostelujen yleiskuvaus](ratings-reviews-overview.md).
 
 ## <a name="marketing-modules"></a>Markkinointimoduulit
 
-Jos markkinointisisältö koskee vain tiettyä tuotetta, mikä tahansa markkinointimoduuli voidaan lisätä PDP-sivulle. Voit lisätä markkinointimoduuleja PDP-sivulla täydentämällä sivua. 
+Jos markkinointisisältö koskee vain tiettyä tuotetta, mikä tahansa markkinointimoduuli voidaan lisätä PDP-sivulle. Voit lisätä markkinointimoduuleja PDP-sivulla täydentämällä sivua. Lisätietoja on kohdassa [Tuotesivun täydentäminen](enrich-product-page.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -83,3 +89,5 @@ Jos markkinointisisältö koskee vain tiettyä tuotetta, mikä tahansa markkinoi
 [Ostoskorin ja maksusivun yleiskatsaus](quick-tour-cart-checkout.md)
 
 [Tilinhallintasivujen yleiskatsaus](quick-tour-account-management.md)
+
+[Tuotetietosivun täydentäminen](enrich-product-page.md)

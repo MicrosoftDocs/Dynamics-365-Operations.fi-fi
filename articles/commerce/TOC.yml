@@ -1,8 +1,8 @@
-- name: Dynamics 365 Commerce (kokeilu)
+- name: Dynamics 365 Commerce
   items:
-    - name: Dynamics 365 Commerce (kokeilu)
+    - name: Dynamics 365 Commerce
       items:
-        - name: Dynamics 365 Commerce (kokeilu)
+        - name: Dynamics 365 Commerce
           href: index.md
         - name: Aloittaminen
           items:
@@ -34,17 +34,17 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
                 - name: Käyttäjän hyväksymistestien luominen ja automatisointi
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
-            - name: Commercen esikatseluympäristön määrittäminen
+            - name: Dynamics 365 Commerce -esikatseluympäristön määrittäminen
               items:
-                - name: Commercen esikatseluympäristön yleiskuvaus
+                - name: Dynamics 365 Commerce -esikatseluympäristön yleiskuvaus
                   href: cpe-overview.md
-                - name: Commercen esikatseluympäristön valmisteleminen
+                - name: Dynamics 365 Commerce -esikatseluympäristön valmisteleminen
                   href: provisioning-guide.md
-                - name: Commercen esikatseluympäristön määrittäminen
+                - name: Dynamics 365 Commerce -esikatseluympäristön määrittäminen
                   href: cpe-post-provisioning.md
-                - name: Valinnaisten ominaisuuksien määrittäminen Commercen esikatseluympäristöä varten
+                - name: Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commerce -esikatseluympäristöä varten
                   href: cpe-optional-features.md
-                - name: Commercen esikatseluympäristön usein kysytyt kysymykset
+                - name: Dynamics 365 Commerce -esikatselunäkymän usein kysytyt kysymykset
                   href: cpe-faq.md
             - name: Käyttöönotossa huomioitavaa
               items:
@@ -55,7 +55,7 @@
                 - name: Pilvikäyttöönotto
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Pilvikäyttöönottojen järjestelmävaatimukset
-                  href: ../retail/get-started/system-requirements.md?toc=/dynamics365/commerce/toc.json
+                  href: get-started/system-requirements.md
                 - name: Paikallinen käyttöönotto
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/commerce/toc.json
                 - name: Paikallisten käyttöönottojen järjestelmävaatimukset
@@ -64,33 +64,35 @@
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Osta Finance and Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
-                - name: 21Vianetin ylläpitämät Finance and Operations -sovellukset Kiinassa
+                - name: Finance and Operations – 21Vianet vastaa sovelluksista Kiinassa
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations -sovellukset Ranskassa
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Päivitys ja N-1-tuki
               items:
                 - name: Retailin päivitys ja N-1 tuki
-                  href: ../retail/dev-itpro/overview-upgrade-n-minus1.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Vaiheittain tapahtuvan käyttöönoton (N-1) asentaminen, määrittäminen ja käyttöön siirtyminen'
-                  href: ../retail/dev-itpro/n-1-installation-configuration.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/n-1-installation-configuration.md
                 - name: Päivitä Retail-kanavan laajennus viimeisimpään Retail SDK -pakettiin
-                  href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retailSDK-update.md
             - name: Uudet ja muuttuneet ominaisuudet
               items:
-                - name: Retail-sovelluksen versio 10.0.7
-                  href: ../retail/get-started/whats-new-10-0-7.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail-sovelluksen versio 10.0.6
-                  href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/commerce/toc.json
-                - name: Edellisten versioiden uudet ja muuttuneet ominaisuudet
+                - name: Finance and Operations -sovellusten uudet ja muuttuneet ominaisuudet
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
+                - name: Commercen uudet ja muuttuneet ominaisuudet
                   items:
-                    - name: Finance and Operationsin aloitussivun uudet ominaisuudet ja muutokset
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                    - name: 'Finance and Operations, Enterprise Edition 7.3'
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/commerce/toc.json
+                    - name: Commercen aloitussivun uudet ominaisuudet ja muutokset
+                      href: get-started/whats-new-home-page.md
+                    - name: Commerce-versio 10.0.9 (huhtikuu 2020)
+                      href: get-started/whats-new-10-0-9.md
+                    - name: Commerce-versio 10.0.8 (helmikuu 2020)
+                      href: get-started/whats-new-10-0-8.md
+                    - name: Retail-versio 10.0.7 (tammikuu 2020)
+                      href: get-started/whats-new-10-0-7.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
-                    - name: Poistetut tai vanhentuneet ominaisuudet Finance and Operationsissa
+                    - name: Poistetut tai vanhentuneet Finance and Operations -ominaisuudet
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
                 - name: 'AX 2012 -ominaisuudet, joita on lykätty'
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
@@ -180,44 +182,44 @@
           items:
             - name: Arkkitehtuuri
               items:
-                - name: Retail-komponentit
-                  href: ../retail/retail-components.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail Server -arkkitehtuuri
-                  href: ../retail/dev-itpro/retail-server-architecture.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce-komponentit
+                  href: retail-components.md
+                - name: Commerce Scale Unit -arkkitehtuuri
+                  href: dev-itpro/retail-server-architecture.md
                 - name: Valitse myymälän topologia
-                  href: ../retail/dev-itpro/retail-in-store-topology.md?toc=/dynamics365/commerce/toc.json
-                - name: Commerce Data Exchangen ja vähittäismyyntikanavan tietoliikenne
-                  href: ../retail/dev-itpro/define-retail-channel-communications-cdx.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail Modern POS -arkkitehtuuri
-                  href: ../retail/dev-itpro/retail-modern-pos-architecture.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail verkkokaupan julkaisuarkkitehtuuri
-                  href: ../retail/dev-itpro/retail-online-store-publishing-architecture.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-in-store-topology.md
+                - name: Commerce Data Exchangen ja myyntikanavan tietoliikenne
+                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Modern POS -arkkitehtuuri
+                  href: dev-itpro/retail-modern-pos-architecture.md
+                - name: Verkkokaupan julkaisuarkkitehtuuri
+                  href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI -sisältö
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: PA-DSS-sertifikaatti (maksusovelluksen tietoturvastandardi)
-                  href: ../retail/dev-itpro/PA-DSS-Certification.md?toc=/dynamics365/commerce/toc.json
-                - name: Paikallisten ympäristöjen vähittäismyyntiominaisuudet
-                  href: ../retail/retail-onprem.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/PA-DSS-Certification.md
+                - name: Paikallisten ympäristöjen Commerce-ominaisuudet
+                  href: retail-onprem.md
             - name: Käyttöönotto ja hotfix-korjaukset
               items:
-                - name: Retail Store Scale Unit
-                  href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail Store Scale Unitin määrittäminen ja asentaminen
-                  href: ../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail Modern POSin määrittäminen ja asennus
-                  href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail-tilien ja -laitteiden hallinta pääkonttorista
-                  href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail POS -laitteen aktivointi
-                  href: ../retail/dev-itpro/retail-device-activation.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce Scale Unit
+                  href: dev-itpro/retail-store-system-begin.md
+                - name: Commerce Scale Unitin määrittäminen ja asentaminen
+                  href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+                - name: 'Modern POS:n määritykset ja asentaminen'
+                  href: retail-modern-pos-device-activation.md
+                - name: Tilien ja laitteiden hallinta pääkonttorista
+                  href: set-up-activation-accounts-validate-devices-hq.md
+                - name: Myyntipisteen laitteen aktivointi
+                  href: dev-itpro/retail-device-activation.md
                 - name: Pilvimyyntipisteen suojaaminen jaetuissa ympäristöissä
-                  href: ../retail/dev-itpro/secure-retail-cloud-pos.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Retail Hardware Stationin määrittäminen ja asentaminen
-                  href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail-itsepalvelukomponenttien joukkokäyttöönotto
-                  href: ../retail/dev-itpro/retail-mass-deployment.md?toc=/dynamics365/commerce/toc.json
+                  href: retail-hardware-station-configuration-installation.md
+                - name: Itsepalvelukomponenttien joukkokäyttöönotto
+                  href: dev-itpro/retail-mass-deployment.md
                 - name: Retail-komponenttien diagnostiikka- ja vianmääritystapahtumat
-                  href: ../retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Käyttöönotettavan paketin käyttäminen
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
             - name: Käyttöönoton elinkaaren hallinta
@@ -248,586 +250,726 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Useita LCS-projekteja ja tuotantoympäristöjä samassa Azure AD -vuokraajassa
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations Retail -projektien käyttöönotto
-                  href: ../retail/dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Uusien ympäristöjen, Azure DevOps -palvelun ja haarojen määrittäminen Retail-projekteille'
-                  href: ../retail/dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail-projektien koodin ja ympäristöjen päivittäminen
-                  href: ../retail/dev-itpro/updating-environments.md?toc=/dynamics365/commerce/toc.json
+                - name: Finance and Operations Commerce -projektien toteuttaminen
+                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+                - name: 'Uusien ympäristöjen, Azure DevOps -palvelun ja haarojen määrittäminen Commerce-projekteille'
+                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+                - name: Commerce-projektien koodin ja ympäristöjen päivittäminen
+                  href: dev-itpro/updating-environments.md
                 - name: Testaus ja suorituskykyongelmat
-                  href: ../retail/dev-itpro/retail-implementation-testing-performance.md?toc=/dynamics365/commerce/toc.json
-        - name: Järjestelmän hallinta
+                  href: dev-itpro/retail-implementation-testing-performance.md
+        - name: Kanaviesi määrittäminen
           items:
-            - name: Ympäristön konfiguraatio
+            - name: Kanavien yleiskatsaus
+              href: channels-overview.md
+            - name: Kanavan edellytykset
               items:
-                - name: Linkkien lisääminen organisaation juridisiin ehtoihin ja tietosuojatietoihin
-                  href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/commerce/toc.json
-                - name: Bing Mapsin hallinta
-                  href: ../retail/dev-itpro/manage-bing-maps.md?toc=/dynamics365/commerce/toc.json
-        - name: Kanavan määrittäminen ja hallinta
-          items:
-            - name: Kanavienvälinen perusmääritys
+                - name: Kanavan määrittämisen edellytykset
+                  href: channels-prerequisites.md
+                - name: Yleiset edellytykset
+                  items:
+                    - name: Organisaatiot ja organisaatiohierarkiat
+                      items:
+                        - name: Organisaatiot ja organisaatiohierarkiat – yleiskatsaus
+                          href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json
+                        - name: Organisaatiohierarkian suunnitteleminen
+                          href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json
+                        - name: Yritysten luominen
+                          href: channels-legal-entities.md
+                        - name: Organisaatiohierarkioiden määrittäminen
+                          href: channels-org-hierarchies.md
+                        - name: Toimintayksikön luominen
+                          href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json
+                        - name: Organisaatioyksiköiden välisten suhteiden määritteleminen
+                          href: tasks/design-relationships-between-organizational-units.md
+                    - name: Varaston asetukset
+                      href: channels-setup-warehouse.md
+                    - name: Arvonlisäveron asetukset
+                      items:
+                        - name: Arvonlisäveron yleiskatsaus
+                          href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
+                        - name: Arvonlisäveron laskutavat
+                          href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json
+                        - name: Arvonlisäveron määrittäminen ja ohitukset
+                          href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
+                        - name: Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
+                          href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+                    - name: Sähköposti-ilmoitusprofiilin määrittäminen
+                      href: email-notification-profiles.md
+                    - name: Numerosarjat
+                      items:
+                        - name: Numerosarjojen yleiskatsaus
+                          href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/retail/toc.json
+                        - name: Yksittäisten numerosarjojen määrittäminen
+                          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/retail/toc.json
+                        - name: Numerosarjan määrittäminen ohjatulla toiminnolla
+                          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/retail/toc.json
+                    - name: Oletusasiakkaan ja -osoitekirjan määrittäminen
+                      href: default-customer.md
+                - name: Vähittäismyyntikanavan edellytykset
+                  items:
+                    - name: Tietokoodit ja tietokoodiryhmät
+                      href: info-codes-retail.md
+                    - name: Vähittäismyynnin toimintoprofiilin luominen
+                      href: retail-functionality-profile.md
+                    - name: Luo uusi osoitekirja
+                      href: new-address-book.md
+                    - name: Näytön asettelun yleiskatsaus
+                      href: pos-screen-layouts.md
+                - name: Online-kanavan edellytykset
+                  items:
+                    - name: Luo online-toimintoprofiili
+                      href: online-functionality-profile.md
+            - name: Vähittäismyyntikanavan määrittäminen
               items:
-                - name: Alkutietojen alustaminen uusissa Retail-ympäristöissä
-                  href: ../retail/enable-configure-retail-functionality.md?toc=/dynamics365/commerce/toc.json
-                - name: Tietokoodit ja tietokoodiryhmät
-                  href: ../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json
-            - name: Myymäläkanavan hallinta
-              items:
-                - name: Vähittäismyyntikanavien määrittäminen
-                  href: ../retail/define-maintain-retail-channels.md?toc=/dynamics365/commerce/toc.json
-                - name: Myymälän aukioloaikojen luominen ja muuttaminen
-                  href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail Hardware Stationin määrittäminen ja asentaminen
-                  href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
+                - name: Vähittäismyyntikanavan määrittäminen
+                  href: channel-setup-retail.md
+                - name: Vähittäismyynnin työntekijöiden määrittäminen
+                  href: tasks/worker.md
                 - name: Modern Point of Sale (MPOS) ja pilvimyyntipiste
                   items:
                     - name: 'MPOS:n tai pilvimyyntipisteen valitseminen'
-                      href: ../retail/MPOS-or-CPOS.md?toc=/dynamics365/commerce/toc.json
+                      href: MPOS-or-CPOS.md
                     - name: Myyntipistetoiminnot verkossa ja paikallisesti
-                      href: ../retail/pos-operations.md?toc=/dynamics365/commerce/toc.json
-                    - name: 'Mukautetun Retail MPOS:n laiteaktivointi'
-                      href: ../retail/dev-itpro/retail-POS-activation-changes.md?toc=/dynamics365/commerce/toc.json
+                      href: pos-operations.md
+                    - name: 'Mukautetun Modern POS:n laiteaktivointi'
+                      href: dev-itpro/retail-POS-activation-changes.md
                     - name: 'MPOS:n ja pilvimyyntipisteen esittelytietojen näyttöasettelut'
-                      href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+                      href: demo-data.md
                     - name: Tuote- ja asiakashaku myyntipisteessä
-                      href: ../retail/POS-search-improvements.md?toc=/dynamics365/commerce/toc.json
+                      href: POS-search-improvements.md
                     - name: Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Kassanhallinnan parannukset
-                      href: ../retail/cash-mgmt.md?toc=/dynamics365/commerce/toc.json
+                      href: cash-mgmt.md
                     - name: Varastohaku myyntipisteessä
-                      href: ../retail/product-variants-POS.md?toc=/dynamics365/commerce/toc.json
+                      href: product-variants-POS.md
                     - name: Tapahtumien keskeyttäminen ja jatkaminen myyntipisteessä
-                      href: ../retail/pos-suspend-recall-transactions.md?toc=/dynamics365/commerce/toc.json
+                      href: pos-suspend-recall-transactions.md
                     - name: Myyntipisteen offline-toiminnot
-                      href: ../retail/pos-offline-functionality.md?toc=/dynamics365/commerce/toc.json
+                      href: pos-offline-functionality.md
                     - name: Vuoron ja kassan hallinta
-                      href: ../retail/shift-drawer-management.md?toc=/dynamics365/commerce/toc.json
+                      href: shift-drawer-management.md
                     - name: Lahjakortin lunastaminen
-                      href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
+                      href: dev-itpro/gift-card-cash-out.md
                     - name: Tilausten lähettäminen toisesta myymälästä
-                      href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
+                      href: charge-send.md
                     - name: Muun kuin rahdinkuljettajan toimitustapojen piilottaminen myyntipisteen lähetyksen valintaikkunassa
-                      href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
+                      href: hide-non-carrier-modes.md
                     - name: 'MPOS:n ja pilvimyyntipisteen tehtävien tallennustoiminto sekä ohje'
-                      href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
+                      href: task-recorder-retail-pos.md
                     - name: Laitteiston oheislaitteet
                       items:
-                        - name: Vähittäismyynnin oheislaitteet
-                          href: ../retail/retail-peripherals-overview.md?toc=/dynamics365/commerce/toc.json
-                        - name: Vähittäismyynnin oheislaitesimulaattori
-                          href: ../retail/dev-itpro/retail-peripheral-simulator.md?toc=/dynamics365/commerce/toc.json
+                        - name: Oheislaitteet
+                          href: retail-peripherals-overview.md
+                        - name: Oheislaitesimulaattori
+                          href: dev-itpro/retail-peripheral-simulator.md
                         - name: Oheislaitteiden yhdistäminen myyntipisteeseen
-                          href: ../retail/define-maintain-channel-clients-registers-hw-stations.md?toc=/dynamics365/commerce/toc.json
+                          href: define-maintain-channel-clients-registers-hw-stations.md
                     - name: Näytön asettelut
                       items:
                         - name: MPOS- ja CPOS-myyntipisteiden demotietojen näyttöasettelut
-                          href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+                          href: demo-data.md
                         - name: Myyntipisteen näyttöasettelut
-                          href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Retail POS:n asettelun suunnittelutoiminnon asentaminen'
-                          href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
+                          href: pos-screen-layouts.md
+                        - name: Myyntipisteen asettelun suunnittelutoiminnon asentaminen
+                          href: install-pos-layout-designer.md
                         - name: Ilmoitusasetusten valitseminen
-                          href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
+                          href: Notifications-POS.md
                         - name: Myyntipistesovellus ja käyttäjän kielialueasetukset
-                          href: ../retail/pos-application-user-language-settings.md?toc=/dynamics365/commerce/toc.json
+                          href: pos-application-user-language-settings.md
                         - name: 'MPOS:n kuvien määrittäminen ja hallinta'
-                          href: ../retail/set-up-manage-images-retail-mpos.md?toc=/dynamics365/commerce/toc.json
+                          href: set-up-manage-images-retail-mpos.md
                         - name: Asiakasohjelman tallennekuvat myyntipisteessä
-                          href: ../retail/pos-image.md?toc=/dynamics365/commerce/toc.json
+                          href: pos-image.md
                     - name: Asiakastilaukset
                       items:
                         - name: 'MPOS:n asiakastilaukset'
-                          href: ../retail/customer-orders-overview.md?toc=/dynamics365/commerce/toc.json
+                          href: customer-orders-overview.md
                         - name: Asiakkaiden yhdistelmätilaukset
-                          href: ../retail/hybrid-customer-orders.md?toc=/dynamics365/commerce/toc.json
+                          href: hybrid-customer-orders.md
                     - name: Myyjät
                       items:
                         - name: Provisioiden seuranta myyntipisteessä myyntiryhmien avulla
-                          href: ../retail/pos-sales-groups-track-commissions.md?toc=/dynamics365/commerce/toc.json
+                          href: pos-sales-groups-track-commissions.md
                     - name: Laitteen aktivointi
                       items:
                         - name: 'MPOS:n määrittäminen, asettaminen ja aktivoiminen'
-                          href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
+                          href: retail-modern-pos-device-activation.md
                         - name: Laajennetun MPOS- ja pilvimyyntipistekirjautumisen määrittäminen
-                          href: ../retail/extended-logon.md?toc=/dynamics365/commerce/toc.json
-                        - name: Retail-aktivointitilien hallinta ja laitteiden vahvistaminen
-                          href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-                    - name: Kuitit
-                      items:
-                        - name: Kuittimuotojen määrittäminen ja suunnitteleminen
-                          href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Sähköpostikuittien lähettäminen MPOS:stä'
-                          href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json
-            - name: Verkkokanavan hallinta
+                          href: extended-logon.md
+                        - name: Aktivointitilien hallinta ja laitteiden vahvistaminen
+                          href: set-up-activation-accounts-validate-devices-hq.md
+                    - name: Taloushallinnon dimensioiden luominen myyntipisteen kassapäätteille ja dimensioarvojen määrittäminen kassapäätteillä
+                      href: tasks/create-financial-dimensions-pos.md
+                    - name: Myyntipisteen käyttöoikeusryhmän luominen
+                      href: tasks/create-pos-permission-groups.md
+                    - name: Myyntipisteen visuaalisten profiilien luominen
+                      href: tasks/create-pos-visual-profile-2016-02.md
+                - name: Retail Hardware Stationin määrittäminen ja asentaminen
+                  href: retail-hardware-station-configuration-installation.md
+                - name: Kuitit
+                  items:
+                    - name: Kuittimuotojen määrittäminen ja suunnitteleminen
+                      href: receipt-templates-printing.md
+                    - name: 'Sähköpostikuittien lähettäminen Modern POS:stä (MPOS)'
+                      href: email-receipts.md
+                    - name: Kuittinumeroiden nollaaminen
+                      href: reset_receipt_number_sequence.md
+                - name: Myyntiedustajien toimintoprofiilien luominen
+                  href: tasks/configure-functionality-profile-sales-representative.md
+                - name: Taloushallinnon dimensioiden luominen vähittäismyyntikanaville ja arvojen määrittäminen myymälöille
+                  href: tasks/create-financial-dimensions-retail-channels.md
+            - name: Online-kanavan määrittäminen
               items:
-                - name: Verkkokaupan yleiskatsaus
-                  href: online-store-overview.md
-                - name: Sähköisen kaupankäynnin sivuston luominen
-                  items:
-                    - name: Toimialueen nimen määrittäminen
-                      href: configure-your-domain-name.md
-                    - name: Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
-                      href: deploy-ecommerce-site.md
-                    - name: Määritä verkkokauppakanava
-                      href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json
-                    - name: Sähköisen kaupankäynnin sivuston luominen
-                      href: create-ecommerce-site.md
-                    - name: Liitä sähköinen kaupankäyntisivusto online-kanavaan
-                      href: associate-site-online-store.md
-                    - name: Robots.txt-tiedostojen hallinta
-                      href: manage-robots-txt-files.md
-                    - name: Mukautettujen sivujen määrittäminen käyttäjän sisäänkirjautumisia varten
-                      href: custom-pages-user-logins.md
-                    - name: Sisältöverkon (CDN) tuen lisääminen
-                      href: add-cdn-support.md
-                    - name: Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto
-                      href: enable-store-detection.md
-                - name: Esimerkkisivuston yleiskatsaus
-                  items:
-                    - name: Aloitussivun yleiskatsaus
-                      href: quick-tour-home-page.md
-                    - name: Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus
-                      href: category-search-page-overview.md
-                    - name: Tuotetietosivujen yleiskatsaus
-                      href: quick-tour-pdp.md
-                    - name: Ostoskorin ja maksusivun yleiskatsaus
-                      href: quick-tour-cart-checkout.md
-                    - name: Tilinhallintasivujen yleiskatsaus
-                      href: quick-tour-account-management.md
-                - name: Sivuston asetusten hallinta
-                  items:
-                    - name: Muokkaussivun yleiskatsaus
-                      href: authoring-home-overview.md
-                    - name: Käyttäjien ja roolien hallinta
-                      href: manage-ecommerce-users-roles.md
-                    - name: Sivuston hakukoneoptimointia (SEO) koskevia tietoja
-                      href: search-engine-optimization-considerations.md
-                    - name: Sisällön suojauskäytännön (CSP) hallinta
-                      href: manage-csp.md
-                - name: Sivuston sisällön hallinta
-                  items:
-                    - name: Tapoja lisästä sisältöä
-                      href: add-manage-content.md
-                    - name: Sivumallisanasto
-                      href: page-elements-overview.md
-                    - name: Asiakirjan tilat ja elinkaari
-                      href: document-states-overview.md
-                    - name: Julkaisuryhmien kanssa työskenteleminen
-                      href: publish-groups.md
-                    - name: Sivuston brändäys ja kaupan tietojen lisääminen
-                      items:
-                        - name: Logon lisääminen
-                          href: add-logo.md
-                        - name: Sivuston teeman valitseminen
-                          href: select-site-theme.md
-                        - name: Työskentely CSS-korvaustiedostojen kanssa
-                          href: css-override-files.md
-                        - name: Favicon-kuvakkeen lisääminen
-                          href: add-favicon.md
-                        - name: Tervetuloviestin lisääminen
-                          href: add-welcome-message.md
-                        - name: Copyright-ilmoituksen lisääminen
-                          href: add-copyright-notice.md
-                        - name: Kielten lisääminen
-                          href: add-languages-to-site.md
-                        - name: Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi
-                          href: add-telemetry.md
-                    - name: Moduulit
-                      items:
-                        - name: Moduulien käyttäminen
-                          href: work-with-modules.md
-                    - name: Katkelmat
-                      items:
-                        - name: Katkelmien käyttäminen
-                          href: work-with-fragments.md
-                    - name: Mallit
-                      items:
-                        - name: Mallit ja asettelut – yleiskatsaus
-                          href: templates-layouts-overview.md
-                        - name: Mallien käyttö
-                          href: work-with-templates.md
-                        - name: Esimääritettyjen asettelujen käyttö
-                          href: work-with-layouts.md
-                    - name: Sivut
-                      items:
-                        - name: Aiemmin luodun sivuston sivun muokkaaminen
-                          href: modify-existing-page.md
-                        - name: Uuden sivuston sivun lisääminen
-                          href: add-new-page.md
-                        - name: Sivun asettelujen valitseminen
-                          href: select-page-layouts.md
-                        - name: SEO-metatietojen hallinta
-                          href: manage-seo-metadata.md
-                        - name: 'Sivun tallentaminen, esikatseleminen ja julkaiseminen'
-                          href: save-preview-publish-page.md
-                        - name: Tuotesivun täydentäminen
-                          href: enrich-product-page.md
-                        - name: Luokan saapumissivun täydentäminen
-                          href: enrich-category-page.md
-                        - name: Sivun sisällön helppokäyttöisyyden tarkistaminen
-                          href: verify-accessibility.md
-                    - name: Sivuston selaus
-                      items:
-                        - name: Sivuston selauksen mukauttaminen
-                          href: customize-site-navigation.md
-                        - name: Sivun URL-osoitteen luominen
-                          href: create-page-URL.md
-                - name: Tee sivustosi yhteensopivaksi
-                  items:
-                    - name: Yhteensopivuuden yleiskatsaus
-                      href: compliance-overview.md
-                    - name: Helppokäyttöisyyden toiminnot ja ominaisuudet
-                      href: accessibility.md
-                    - name: Evästeen yhteensopivuus
-                      href: cookie-compliance.md
-                    - name: Lisää tietosuojakäytäntösivu
-                      href: add-privacy-page.md
-                - name: Aloituspakkaus
-                  items:
-                    - name: Aloituspakkauksen yleiskatsaus
-                      href: starter-kit-overview.md
-                    - name: Konttimoduulit
-                      items:
-                        - name: Konttimoduuli
-                          href: add-container-module.md
-                    - name: Markkinointimoduulit
-                      items:
-                        - name: Hälytysmoduuli
-                          href: add-alert.md
-                        - name: Karusellimoduuli
-                          href: add-carousel.md
-                        - name: Sisällönsijoittelumoduuli
-                          href: add-content-placement-modules.md
-                        - name: Sisällöntäyteinen lohkomoduuli
-                          href: add-content-rich-block.md
-                        - name: Omaisuusmoduuli
-                          href: add-feature-module.md
-                        - name: Hero-moduuli
-                          href: add-hero-module.md
-                        - name: Videotoistinmoduuli
-                          href: add-video-player.md
-                    - name: Ylä- ja alatunnistemoduulit
-                      items:
-                        - name: Ylätunnistemoduuli
-                          href: author-header-module.md
-                        - name: Alatunnistemoduuli
-                          href: author-footer-module.md
-                    - name: Tuotetietojen sivumoduulit
-                      items:
-                        - name: Ostoruutumoduuli
-                          href: add-buy-box.md
-                    - name: Ostomoduulit
-                      items:
-                        - name: Ostoskorimoduuli
-                          href: add-cart-module.md
-                        - name: Kassamoduuli
-                          href: add-checkout-module.md
-                        - name: Tilauksen vahvistusmoduuli
-                          href: order-confirmation-module.md
-                    - name: Tilin hallintamoduulit
-                      items:
-                        - name: Tilin hallintasivut ja -moduulit
-                          href: account-management.md
-                    - name: Tuotekokoelmamoduulit
-                      items:
-                        - name: Tuotekokoelmamoduulit
-                          href: product-collection-module-overview.md
-                - name: Hae
-                  items:
-                    - name: Luokan oletussaapumis- ja oletushakutulossivu
-                      href: category-search-page-overview.md
-                    - name: Pilvipohjaisen haun yleiskatsaus
-                      href: cloud-powered-search-overview.md
-                - name: Raportointi
-                  items:
-                    - name: Verkkokanavaraporttien luominen
-                      href: generate-reports.md
-                - name: Virheen käsittely
-                  items:
-                    - name: Mukautettujen vastaussivujen luominen 4xx-/5xx-tilakoodien virheille
-                      href: build-pages-400-500-errors.md
-            - name: Puhelinkeskuksen kanavanhallinta
+                - name: Online-kanavan määrittäminen
+                  href: channel-setup-online.md
+            - name: Puhelinkeskuskanavan määrittäminen
               items:
-                - name: Puhelupalvelukeskuksen myyntitoiminnot
-                  href: ../retail/call-center-functionality.md?toc=/dynamics365/commerce/toc.json
-                - name: Puhelinkeskuskanavien määrittäminen
-                  href: ../retail/set-up-order-processing-options.md?toc=/dynamics365/commerce/toc.json
-                - name: Puhelinpalvelukeskuksen luettelot
-                  href: ../retail/call-center-catalogs.md?toc=/dynamics365/commerce/toc.json
-                - name: Toimitustapojen ja -maksujen määrittäminen
-                  href: ../retail/configure-call-center-delivery.md?toc=/dynamics365/commerce/toc.json
+                - name: Puhelinkeskuksen myyntitoiminnot
+                  href: call-center-functionality.md
+                - name: Puhelinkeskuskanavan määrittäminen
+                  href: channel-setup-callcenter.md
+                - name: Puhelinkeskuksen luettelot
+                  href: call-center-catalogs.md
+                - name: Puhelinkeskuksen tilaustenkäsittelyasetusten määrittäminen
+                  href: set-up-order-processing-options.md
+                - name: Määritä puhelinkeskuksen toimitustavat ja kulut
+                  href: configure-call-center-delivery.md
                 - name: Petoshälytysten määrittäminen ja käyttäminen
-                  href: ../retail/set-up-fraud-alerts.md?toc=/dynamics365/commerce/toc.json
+                  href: set-up-fraud-alerts.md
                 - name: Jatkuvuusohjelmien määrittäminen puhelinkeskuksille
-                  href: ../retail/set-up-continuity-program.md?toc=/dynamics365/commerce/toc.json
-                - name: Puhelinkeskustilausten pidon määrittäminen ja käyttäminen
-                  href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
-        - name: Omnikanavamääritys
+                  href: set-up-continuity-program.md
+            - name: Lisäkanavan määritykset
+              items:
+                - name: Kanavan lisääminen organisaatiohierarkiaan
+                  href: channel-add-to-org-hierarchy.md
+                - name: Edistyneet automaattiset veloitukset
+                  items:
+                    - name: Edistyneiden automaattisten veloitusten määrittäminen ja käyttäminen
+                      href: omni-auto-charges.md
+                    - name: Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille
+                      href: pro-rate-charges-matching-lines.md
+                - name: Vähittäismyymälän hallinta
+                  items:
+                    - name: Myymälän aukioloaikojen luominen ja muuttaminen
+                      href: dev-itpro/store-hours.md
+                    - name: Commerce Scale Unit
+                      href: dev-itpro/retail-store-system-begin.md
+                - name: Puhelinkeskuksen hallinta
+                  items:
+                    - name: Puhelinkeskustilausten pidon määrittäminen ja käyttäminen
+                      href: work-with-order-holds.md
+                    - name: Jatkuvuusaikataulujen määrittäminen
+                      href: tasks/define-continuity-schedules.md
+                - name: Maksut
+                  items:
+                    - name: Maksutavat
+                      href: payment-methods.md
+                    - name: Puhelinkeskusten maksutavat
+                      href: work-with-payments.md
+                    - name: 'Luottokorttien määritys, varmennus ja tietojen tarkistus'
+                      href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Myyntipisteen käteisvarojen arvojen määritys
+                      href: cash-denominations.md
+                    - name: Luottokorttien käsittelyn määrittäminen
+                      href: tasks/configure-credit-card-processing.md
+                    - name: Adyen-maksuyhdistin
+                      href: dev-itpro/adyen-connector.md
+                    - name: Online-maksuvälineiden tallentaminen Adyen-yhdistimen avulla
+                      href: dev-itpro/adyen-connector-listpi.md
+                    - name: Laskunmaksutapojen määrittäminen
+                      href: payinvoice.md
+                    - name: Maksujen kaksoiskappaleiden estäminen
+                      href: duplicate-payment-protection.md
+                    - name: Omnikanavamaksujen yleiskatsaus
+                      href: omni-channel-payments.md
+                    - name: Maksut – usein kysytyt kysymykset
+                      href: dev-itpro/payments-retail.md
+        - name: Tuotteiden ja palveluiden myynninedistäminen
           items:
-            - name: Tuotteet ja esillepano
+            - name: 'Luokat, tuotteet ja valikoimat'
               items:
                 - name: Tuotetietojen yleiskatsaus
                   href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyyntihierarkiat
-                  href: ../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json
-                - name: Määritteiden ja määriteryhmien hallinta
-                  href: ../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/commerce/toc.json
                 - name: Vähittäismyyntituotteiden määrittäminen
-                  href: ../retail/set-up-retail-products.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyyntituoteluokkien ja -tuotteiden hallinta
-                  href: ../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json
+                  href: set-up-retail-products.md
+                - name: Vähittäismyynnin tuotehierarkia
+                  items:
+                    - name: Vähittäismyyntihierarkiat
+                      href: retail-hierarchies.md
+                    - name: Uuden tuotehierarkian luominen
+                      href: create-product-hierarchy.md
+                    - name: Tuoteluokkien ja -tuotteiden hallinta
+                      href: category-management-product-creation.md
+                    - name: Myynninedistämiskohteiden lajittelujärjestyksen muuttaminen
+                      href: custom-order-categories-nav-retail-prod-hierarchy.md
                 - name: Tuotedimensiot
-                  href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json
-                - name: Valikoiman hallinta
-                  href: ../retail/assortments.md?toc=/dynamics365/commerce/toc.json
-                - name: Valikoimien määrittäminen
-                  href: ../retail/set-up-assortments.md?toc=/dynamics365/commerce/toc.json
-                - name: Viivakoodien määrittäminen
-                  href: ../retail/set-up-bar-codes.md?toc=/dynamics365/commerce/toc.json
-                - name: Viivakoodin muotojen määrittäminen
-                  href: ../retail/set-up-bar-code-masks.md?toc=/dynamics365/commerce/toc.json
-                - name: Esillepanokohteiden lajittelujärjestyksen muuttaminen
-                  href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/commerce/toc.json
+                  items:
+                    - name: Tuotedimensiot
+                      href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/retail/toc.json
+                    - name: Varianttiryhmän luominen
+                      href: create-variant-group.md
+                - name: Luo uusi tuote
+                  items:
+                    - name: Uuden tuotteen yleiskatsauksen luominen
+                      href: create-new-product.md
+                    - name: Tuoteluokkien ja -tuotteiden hallinta
+                      href: category-management-product-creation.md
+                - name: Tuotemääritteet
+                  items:
+                    - name: Määritteet ja määriteryhmät
+                      href: attribute-attributegroups-lifecycle.md
+                    - name: Kanavamääritteiden määrittäminen
+                      href: tasks/define-channel-attributes.md
+                - name: Kanavahierarkiat
+                  items:
+                    - name: Vähittäismyyntikanavan siirtymishierarkian luominen
+                      href: create-channel-hierarchy.md
+                    - name: Kanavan määrittäminen käyttämään kanavan siirtymishierarkiaa
+                      href: configure-channel-hierarchy.md
+                - name: Valikoimat
+                  items:
+                    - name: Valikoiman hallinta
+                      href: assortments.md
+                    - name: Valikoimien määrittäminen
+                      href: set-up-assortments.md
+                    - name: Valikoimien hallinta
+                      href: tasks/manage-assortments-2016-11.md
+                - name: Viivakoodit
+                  items:
+                    - name: Viivakoodien määrittäminen
+                      href: set-up-bar-codes.md
+                    - name: Viivakoodin muotojen määrittäminen
+                      href: set-up-bar-code-masks.md
             - name: Hinnoittelu ja alennukset
               items:
-                - name: Vähittäismyynnin alennukset
-                  href: ../retail/retail-discounts-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyyntihintojen hallinta
-                  href: ../retail/price-management.md?toc=/dynamics365/commerce/toc.json
+                - name: Alennukset
+                  href: retail-discounts-overview.md
+                - name: Myyntihintojen hallinta
+                  href: price-management.md
                 - name: Hintojen muutokset ja alennukset
-                  href: ../retail/price-adjustments-discounts.md?toc=/dynamics365/commerce/toc.json
-                - name: Useiden alennusten käyttäminen tuotteeseen
-                  href: ../retail/Apply-multiple-retail-discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: price-adjustments-discounts.md
+                - name: Useiden alennusten soveltaminen tuotteeseen
+                  href: apply-multiple-retail-discounts.md
                 - name: Optimaalisen päällekkäisten alennusten yhdistelmän määrittäminen
-                  href: ../retail/optimal-combination-overlapping-discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: optimal-combination-overlapping-discounts.md
                 - name: Kanavakohtaisten alennusten määrittäminen
-                  href: ../retail/define-channel-specific-discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: define-channel-specific-discounts.md
                 - name: Vähittäismyyntituotteiden alennusten estämisasetukset
-                  href: ../retail/prevent-discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: prevent-discounts.md
                 - name: Maksuvälineeseen perustuvat alennukset
-                  href: ../retail/tender_based_discounts.md?toc=/dynamics365/commerce/toc.json
+                  href: tender_based_discounts.md
                 - name: Lähetyskulujen alennusten yleiskatsaus
-                  href: ../retail/retail-shipping-discount.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyynnin kuponkien määrittäminen
-                  href: ../retail/retail-coupons.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyynnin hintaraportit
-                  href: ../retail/price-report.md?toc=/dynamics365/commerce/toc.json
-            - name: Kanta-asiakkuus
+                  href: retail-shipping-discount.md
+                - name: Kuponkien määrittäminen
+                  href: retail-coupons.md
+                - name: Hintaraportit
+                  href: price-report.md
+                - name: Kanavakohtaisten kauppasopimusten luominen
+                  href: tasks/base-price-trade-agreements.md
+                - name: Kauppasopimusten luominen luokan hinnoittelusääntöjen avulla
+                  href: tasks/category-pricing-rules-trade-agreements.md
+            - name: Suositukset
               items:
-                - name: Kanta-asiakkuuden yleiskatsaus
-                  href: ../retail/set-up-customer-loyalty-program.md?toc=/dynamics365/commerce/toc.json
-                - name: Asiakashallinnan yleiskuvaus
-                  href: ../retail/clienteling-overview.md?toc=/dynamics365/commerce/toc.json
-            - name: Maksut
+                - name: Tuotesuositusten yleiskatsaus
+                  href: product-recommendations.md
+                - name: 'ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä'
+                  href: enable-ADLS-environment.md
+                - name: Tuotesuositusluettelojen lisääminen sähköisen kaupankäynnin sivuille
+                  href: add-reco-list-to-page.md
+                - name: Ota tuotesuositukset käyttöön
+                  href: enable-product-recommendations.md
+                - name: Kohdennetut suositukset
+                  items:
+                    - name: Ota kohdennetut suositukset käyttöön
+                      href: personalized-recommendations.md
+                    - name: Kohdennetuista tuotesuosituksista kieltäytyminen
+                      href: personalization-gdpr.md
+                - name: Luo kuratoituja tuotesuositusluetteloita
+                  href: create-editorial-recommendation-lists.md
+                - name: Hallitse AI-ML-pohjaisia tuotesuositustuloksia
+                  href: modify-product-recommendation-results.md
+                - name: Tuotesuositusten luonti esittelytietojen avulla
+                  href: product-recommendations-demo-data.md
+                - name: Tuotesuositukset – usein kysytyt kysymykset
+                  href: faq-recommendations.md
+                - name: Myyntipistekokemukset
+                  items:
+                    - name: Tuotesuositukset myyntipisteessä
+                      href: product.md
+                    - name: Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle
+                      href: add-recommendations-control-pos-screen.md
+            - name: Luokitukset ja arvostelut
               items:
-                - name: Maksutavat
-                  href: ../retail/payment-methods.md?toc=/dynamics365/commerce/toc.json
-                - name: Puhelinkeskusten maksutavat
-                  href: ../retail/work-with-payments.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Luottokorttien määritys, varmennus ja tietojen tarkistus'
-                  href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
-                - name: Myyntipisteen käteisvarojen arvojen määritys
-                  href: ../retail/cash-denominations.md?toc=/dynamics365/commerce/toc.json
-                - name: Luottokorttien käsittelyn määrittäminen
-                  href: ../retail/tasks/configure-credit-card-processing.md?toc=/dynamics365/commerce/toc.json
-                - name: Dynamics 365 -maksuyhdistin Adyenia varten
-                  href: ../retail/dev-itpro/adyen-connector.md?toc=/dynamics365/commerce/toc.json
-                - name: Online-maksuvälineiden tallentaminen Adyen-yhdistimen avulla
-                  href: ../retail/dev-itpro/adyen-connector-listPI.md?toc=/dynamics365/commerce/toc.json
-                - name: Laskunmaksutapojen määrittäminen
-                  href: ../retail/payinvoice.md?toc=/dynamics365/commerce/toc.json
-                - name: Maksujen kaksoiskappaleiden estäminen
-                  href: ../retail/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
-                - name: Omnikanavamaksujen yleiskatsaus
-                  href: ../retail/omni-channel-payments.md?toc=/dynamics365/commerce/toc.json
-                - name: Maksut – usein kysytyt kysymykset
-                  href: ../retail/dev-itpro/payments-retail.md?toc=/dynamics365/commerce/toc.json
-            - name: Edistyneet automaattiset veloitukset
+                - name: Luokitukset ja arvostelut – yleiskatsaus
+                  href: ratings-reviews-overview.md
+                - name: Luokitusten ja arvostelujen käytön hyväksyminen
+                  href: opt-in-ratings-reviews.md
+                - name: Hallitse luokituksia ja arvosteluja
+                  href: manage-reviews.md
+                - name: Määritä luokitukset ja arvostelut
+                  href: configure-ratings-reviews.md
+                - name: Synkronoi tuoteluokitukset
+                  href: sync-product-ratings.md
+            - name: Varastonhallinta
               items:
-                - name: Edistyneiden automaattisten veloitusten määrittäminen ja käyttäminen
-                  href: ../retail/omni-auto-charges.md?toc=/dynamics365/commerce/toc.json
-                - name: Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille
-                  href: ../retail/pro-rate-charges-matching-lines.md?toc=/dynamics365/commerce/toc.json
-            - name: Arvonlisävero
+                - name: Varasto
+                  items:
+                    - name: Myymälän varastonhallinta
+                      href: work-with-store-inventory.md
+                    - name: Sarjoitettujen nimikkeiden käyttäminen
+                      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Tuotteiden siirto jakelukeskuksesta myymälään käyttäen ostotarjontaa
+                      href: tasks/push-products-distribution-center-store-buyers-push.md
+                    - name: Sääntöjen ja parametrien määrittäminen cross-dockingille ja ostotarjonnalle
+                      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+                - name: Ostotilaukset
+                  items:
+                    - name: Ostotilausten yleiskatsaus
+                      href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ostotilausten luominen
+                      href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
+                    - name: Tuotteen vastaanotto ostotilausten perusteella
+                      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ostotilausten hyväksyminen ja vahvistaminen
+                      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ostotilauksen hyväksymisen mobiilityötila
+                      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                    - name: Tuotepakkausten luominen ostotilauksille
+                      href: tasks/create-product-packages-purchase-orders.md
+        - name: Tilausten hallinta
+          items:
+            - name: Myyntitilaukset
               items:
-                - name: Arvonlisäveron yleiskatsaus
-                  href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Arvonlisäveron laskentatavat Alkuperä-kentässä
-                  href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json
-                - name: Arvonlisäveron määrittäminen ja ohitukset
-                  href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
-                - name: Arvonlisäverokoodien koko summan ja välin laskentavaihtoehdot
-                  href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
-            - name: Ostotilaukset
-              items:
-                - name: Ostotilausten yleiskatsaus
-                  href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Ostotilausten luominen
-                  href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
-                - name: Tuotteen vastaanotto ostotilausten perusteella
-                  href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-                - name: Ostotilausten hyväksyminen ja vahvistaminen
-                  href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
-                - name: Ostotilauksen hyväksymisen mobiilityötila
-                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
-            - name: Varasto
-              items:
-                - name: Myymälän varastonhallinta
-                  href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
-                - name: Sarjoitettujen nimikkeiden käyttäminen
-                  href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
-            - name: Laskelmat
-              items:
-                - name: Vähittäismyyntilaskelmat
-                  href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyynnin tapahtumien yhdenmukaisuuden tarkistus
-                  href: ../retail/valid-checker.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyyntitapahtuman yhdenmukaisuuden tarkistuksen sääntöjen käytöstäpoisto
-                  href: ../retail/disable-consistency-check-rule.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyyntitapahtumien muokkaaminen ja valvominen
-                  href: ../retail/edit-audit-retail-transactions.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Vähittäismyymälän laskelmien luominen, laskeminen ja kirjaaminen'
-                  href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
-                - name: Laskelmien kirjaustoimintojen parannukset
-                  href: ../retail/statement-posting-EOD.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyyntitapahtumien syötteisiin perustuvien tilausten vähittäinen luominen
-                  href: ../retail/trickle-feed.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Vähittäismyymälän laskelmien luominen, laskeminen ja kirjaaminen'
-                  href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
-                - name: Laskelmien kirjaustoimintojen parannukset
-                  href: ../retail/statement-posting-EOD.md?toc=/dynamics365/commerce/toc.json
-                - name: Eräseurannassa olevien nimikkeiden parannettu käsitteleminen
-                  href: ../retail/batch.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyyntilaskelmiin vaikuttavien vähittäismyynnin parametrien määrittäminen
-                  href: ../retail/tasks/parameter-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyyntilaskelmiin vaikuttavien maksutapa-asetusten määrittäminen
-                  href: ../retail/tasks/payment-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-                - name: Laskentatyön määrittäminen ja suorittaminen
-                  href: ../retail/tasks/run-job-calculate-statements.md?toc=/dynamics365/commerce/toc.json
-                - name: Laskelmien kirjaustyön määrittäminen ja suorittaminen
-                  href: ../retail/tasks/run-job-post-statements.md?toc=/dynamics365/commerce/toc.json
-                - name: Vähittäismyyntilaskelmiin vaikuttavien myymäläasetusten määrittäminen
-                  href: ../retail/tasks/store-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-            - name: Jaettu tilausten hallinta (JTH)
+                - name: Puhelinkeskustilauksen luominen
+                  href: tasks/create-call-center-orders.md
+            - name: Jaettu tilausten hallinta
               items:
                 - name: JTH-yleiskatsaus
-                  href: ../retail/dom.md?toc=/dynamics365/commerce/toc.json
+                  href: dom.md
                 - name: Kustannusten määritys
-                  href: ../retail/cost.md?toc=/dynamics365/commerce/toc.json
+                  href: cost.md
             - name: Tilausten täyttäminen ja käsittely
               items:
                 - name: Myymälätilauksen täyttäminen
-                  href: ../retail/Order-fulfillment-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: order-fulfillment-overview.md
                 - name: Tilauksen täyttämisen määrittäminen myymälöille
-                  href: ../retail/Order-fulfillment-POS-setup.md?toc=/dynamics365/commerce/toc.json
+                  href: order-fulfillment-pos-setup.md
                 - name: Tilausilmoitusten näyttäminen myyntipisteessä
-                  href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
+                  href: notifications-pos.md
+                - name: Jatkuvuusohjelmien myyminen ja myyntitilausten käsitteleminen
+                  href: tasks/use-continuity-program.md
             - name: Palautukset
               items:
                 - name: Linkitetyt palautukset
-                  href: ../retail/dev-itpro/linked-refunds.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/linked-refunds.md
                 - name: Myymälän valikoimaan sisältymättömien tuotteiden myynti ja palauttaminen
-                  href: ../retail/sell-return-outside-assortments.md?toc=/dynamics365/commerce/toc.json
+                  href: sell-return-outside-assortments.md
                 - name: Palautustilaukseen liittyvän vaihdon määritys ja käsittely
-                  href: ../retail/orderexchanges.md?toc=/dynamics365/commerce/toc.json
+                  href: orderexchanges.md
                 - name: Maksutapojen rajoittaminen kuitittomille palautuksille
-                  href: ../retail/payment-methods-restrictions.md?toc=/dynamics365/commerce/toc.json
-                - name: Nimikkeiden palauttaminen useista eri asiakkaan ostotilauksista ja laskuista
-                  href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json
-        - name: Luokitukset ja arvostelut
+                  href: payment-methods-restrictions.md
+                - name: Palauta nimikkeitä useista eri asiakkaan ostotilauksista ja laskuista
+                  href: multireturn.md
+                - name: Kanavan palautus- ja maksuhyvityskäytännön luominen ja päivittäminen
+                  href: refund_policy_returns.md
+        - name: Asiakkaiden hallinta
           items:
-            - name: Luokitukset ja arvostelut – yleiskatsaus
-              href: ratings-reviews-overview.md
-            - name: Osallistu käyttääksesi luokituksia ja arvosteluja
-              href: opt-in-ratings-reviews.md
-            - name: Hallitse luokituksia ja arvosteluja
-              href: manage-reviews.md
-            - name: Määritä luokitukset ja arvostelut
-              href: configure-ratings-reviews.md
-            - name: Synkronoi tuoteluokitukset Dynamics 365 Retailissa
-              href: sync-product-ratings.md
-        - name: Tuotesuositukset
-          items:
-            - name: Tuotesuositusten yleiskatsaus
-              href: product-recommendations.md
-            - name: Lisää tuotesuositusluetteloja sähköisen kaupankäynnin sivuille
-              href: add-reco-list-to-page.md
-            - name: Ota tuotesuositukset käyttöön
-              href: enable-product-recommendations.md
-            - name: Luo kuratoituja tuotesuositusluetteloita
-              href: create-editorial-recommendation-lists.md
-            - name: Hallitse AI-ML-pohjaisia tuotesuositustuloksia
-              href: modify-product-recommendation-results.md
-            - name: Tuotesuositusten luonti esittelytietojen avulla
-              href: product-recommendations-demo-data.md
-            - name: Tuotesuositukset – usein kysytyt kysymykset
-              href: faq-recommendations.md
-            - name: Myyntipistekokemukset
+            - name: Asiakashallinta
               items:
-                - name: Tuotesuositukset myyntipisteessä
-                  href: ../retail/product.md?toc=/dynamics365/commerce/toc.json
-                - name: Suositusten ohjausobjektin lisääminen myyntipistelaitteisiin
-                  href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
+                - name: Asiakashallinnan yleiskuvaus
+                  href: clienteling-overview.md
+            - name: Kanta-asiakkuus
+              items:
+                - name: Kanta-asiakkuuden yleiskatsaus
+                  href: set-up-customer-loyalty-program.md
+                - name: Määritä kanta-asiakasohjelmat
+                  href: tasks/define-loyalty-programs.md
+                - name: Määritä kanta-asiakkaan palkkiopisteet
+                  href: tasks/define-loyalty-reward-points.md
+                - name: Määritä kanta-asiakasmallit
+                  href: tasks/define-loyalty-schemes.md
+                - name: Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely
+                  href: tasks/process-loyalty-reward-point-adjustments.md
+        - name: Taloustietojen hallinta
+          items:
+            - name: Laskelmien yleiskatsaus
+              href: retail-statements.md
+            - name: Tapahtumien yhdenmukaisuuden tarkistus
+              href: valid-checker.md
+            - name: Vähittäismyyntitapahtuman yhdenmukaisuuden tarkistuksen sääntöjen käytöstäpoisto
+              href: disable-consistency-check-rule.md
+            - name: Vähittäismyyntitapahtumien muokkaaminen ja valvominen
+              href: edit-audit-retail-transactions.md
+            - name: 'Vähittäismyymälän laskelmien luominen, laskeminen ja kirjaaminen'
+              href: tasks/create-calculate-post-statement-retail-store.md
+            - name: Laskelmien kirjaustoimintojen parannukset
+              href: statement-posting-eod.md
+            - name: Vähittäismyyntitapahtumien syötteisiin perustuvien tilausten vähittäinen luominen
+              href: trickle-feed.md
+            - name: 'Vähittäismyymälän laskelmien luominen, laskeminen ja kirjaaminen'
+              href: tasks/create-calculate-post-statement-retail-store.md
+            - name: Laskelmien kirjaustoimintojen parannukset
+              href: statement-posting-eod.md
+            - name: Eräseurannassa olevien nimikkeiden parannettu käsitteleminen
+              href: batch.md
+            - name: Laskelmiin vaikuttavien Commerce-parametrien määrittäminen
+              href: tasks/parameter-configurations-retail-statements.md
+            - name: Vähittäismyyntilaskelmiin vaikuttavien maksutapa-asetusten määrittäminen
+              href: tasks/payment-configurations-retail-statements.md
+            - name: Laskentatyön määrittäminen ja suorittaminen
+              href: tasks/run-job-calculate-statements.md
+            - name: Laskelmien kirjaustyön määrittäminen ja suorittaminen
+              href: tasks/run-job-post-statements.md
+            - name: Vähittäismyyntilaskelmiin vaikuttavien myymäläasetusten määrittäminen
+              href: tasks/store-configurations-retail-statements.md
+            - name: Online-myyntien ja -maksujen kirjaaminen
+              href: tasks/posting-online-sales-payments.md
+        - name: Sähköisen kaupankäynnin sivuston hallinta
+          items:
+            - name: Verkkokaupan yleiskatsaus
+              href: online-store-overview.md
+            - name: Sähköisen kaupankäynnin sivuston luominen
+              items:
+                - name: Toimialueen nimen määrittäminen
+                  href: configure-your-domain-name.md
+                - name: Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
+                  href: deploy-ecommerce-site.md
+                - name: Määritä verkkokauppakanava
+                  href: online-stores.md
+                - name: Sähköisen kaupankäynnin sivuston luominen
+                  href: create-ecommerce-site.md
+                - name: Liitä sähköinen kaupankäyntisivusto online-kanavaan
+                  href: associate-site-online-store.md
+                - name: Robots.txt-tiedostojen hallinta
+                  href: manage-robots-txt-files.md
+                - name: Mukautettujen sivujen määrittäminen käyttäjän sisäänkirjautumisia varten
+                  href: custom-pages-user-logins.md
+                - name: Sisältöverkon (CDN) tuen lisääminen
+                  href: add-cdn-support.md
+                - name: Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto
+                  href: enable-store-detection.md
+            - name: Esimerkkisivuston yleiskatsaus
+              items:
+                - name: Aloitussivun yleiskatsaus
+                  href: quick-tour-home-page.md
+                - name: Luokan oletussaapumis- ja oletushakutulossivun yleiskatsaus
+                  href: category-search-page-overview.md
+                - name: Tuotetietosivujen yleiskatsaus
+                  href: quick-tour-pdp.md
+                - name: Ostoskorin ja maksusivun yleiskatsaus
+                  href: quick-tour-cart-checkout.md
+                - name: Tilinhallintasivujen yleiskatsaus
+                  href: quick-tour-account-management.md
+            - name: Sivuston asetusten hallinta
+              items:
+                - name: Muokkaussivun yleiskatsaus
+                  href: authoring-home-overview.md
+                - name: Käyttäjien ja roolien hallinta
+                  href: manage-ecommerce-users-roles.md
+                - name: Sivuston hakukoneoptimointia (SEO) koskevia tietoja
+                  href: search-engine-optimization-considerations.md
+                - name: Sisällön suojauskäytännön (CSP) hallinta
+                  href: manage-csp.md
+            - name: Sivuston sisällön hallinta
+              items:
+                - name: Tapoja lisästä sisältöä
+                  href: add-manage-content.md
+                - name: Sivumallisanasto
+                  href: page-elements-overview.md
+                - name: Asiakirjan tilat ja elinkaari
+                  href: document-states-overview.md
+                - name: Julkaisuryhmien kanssa työskenteleminen
+                  href: publish-groups.md
+                - name: Sivuston brändäys ja kaupan tietojen lisääminen
+                  items:
+                    - name: Logon lisääminen
+                      href: add-logo.md
+                    - name: Sivuston teeman valitseminen
+                      href: select-site-theme.md
+                    - name: Työskentely CSS-korvaustiedostojen kanssa
+                      href: css-override-files.md
+                    - name: Favicon-kuvakkeen lisääminen
+                      href: add-favicon.md
+                    - name: Tervetuloviestin lisääminen
+                      href: add-welcome-message.md
+                    - name: Copyright-ilmoituksen lisääminen
+                      href: add-copyright-notice.md
+                    - name: Kielten lisääminen
+                      href: add-languages-to-site.md
+                    - name: Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi
+                      href: add-telemetry.md
+                - name: Moduulit
+                  items:
+                    - name: Moduulien käyttäminen
+                      href: work-with-modules.md
+                - name: Katkelmat
+                  items:
+                    - name: Katkelmien käyttäminen
+                      href: work-with-fragments.md
+                - name: Mallit
+                  items:
+                    - name: Mallit ja asettelut – yleiskatsaus
+                      href: templates-layouts-overview.md
+                    - name: Mallien käyttö
+                      href: work-with-templates.md
+                    - name: Esimääritettyjen asettelujen käyttö
+                      href: work-with-layouts.md
+                - name: Sivut
+                  items:
+                    - name: Aiemmin luodun sivuston sivun muokkaaminen
+                      href: modify-existing-page.md
+                    - name: Uuden sivuston sivun lisääminen
+                      href: add-new-page.md
+                    - name: Sivun asettelujen valitseminen
+                      href: select-page-layouts.md
+                    - name: SEO-metatietojen hallinta
+                      href: manage-seo-metadata.md
+                    - name: 'Sivun tallentaminen, esikatseleminen ja julkaiseminen'
+                      href: save-preview-publish-page.md
+                    - name: Tuotesivun täydentäminen
+                      href: enrich-product-page.md
+                    - name: Luokan saapumissivun täydentäminen
+                      href: enrich-category-page.md
+                    - name: Sivun sisällön helppokäyttöisyyden tarkistaminen
+                      href: verify-accessibility.md
+                - name: Sivuston selaus
+                  items:
+                    - name: Sivuston selauksen mukauttaminen
+                      href: customize-site-navigation.md
+                    - name: Sivun URL-osoitteen luominen
+                      href: create-page-URL.md
+            - name: Tee sivustosi yhteensopivaksi
+              items:
+                - name: Yhteensopivuuden yleiskatsaus
+                  href: compliance-overview.md
+                - name: Helppokäyttöisyyden toiminnot ja ominaisuudet
+                  href: accessibility.md
+                - name: Evästeen yhteensopivuus
+                  href: cookie-compliance.md
+                - name: Lisää tietosuojakäytäntösivu
+                  href: add-privacy-page.md
+            - name: Aloituspakkaus
+              items:
+                - name: Aloituspakkauksen yleiskatsaus
+                  href: starter-kit-overview.md
+                - name: Konttimoduulit
+                  items:
+                    - name: Konttimoduuli
+                      href: add-container-module.md
+                - name: Markkinointimoduulit
+                  items:
+                    - name: Promopalkkimoduuli
+                      href: add-alert.md
+                    - name: Karusellimoduuli
+                      href: add-carousel.md
+                    - name: Tekstilohkomoduuli
+                      href: add-content-rich-block.md
+                    - name: Sisältölohkomoduuli
+                      href: add-hero-module.md
+                    - name: Videotoistinmoduuli
+                      href: add-video-player.md
+                - name: Ylä- ja alatunnistemoduulit
+                  items:
+                    - name: Ylätunnistemoduuli
+                      href: author-header-module.md
+                    - name: Alatunnistemoduuli
+                      href: author-footer-module.md
+                - name: Tuotetietojen sivumoduulit
+                  items:
+                    - name: Ostoruutumoduuli
+                      href: add-buy-box.md
+                - name: Ostomoduulit
+                  items:
+                    - name: Ostoskorimoduuli
+                      href: add-cart-module.md
+                    - name: Kassamoduuli
+                      href: add-checkout-module.md
+                    - name: Tilauksen vahvistusmoduuli
+                      href: order-confirmation-module.md
+                - name: Tilin hallintamoduulit
+                  items:
+                    - name: Tilin hallintasivut ja -moduulit
+                      href: account-management.md
+                - name: Tuotekokoelmamoduulit
+                  items:
+                    - name: Tuotekokoelmamoduulit
+                      href: product-collection-module-overview.md
+            - name: Hae
+              items:
+                - name: Luokan oletussaapumis- ja oletushakutulossivu
+                  href: category-search-page-overview.md
+                - name: Pilvipohjaisen haun yleiskatsaus
+                  href: cloud-powered-search-overview.md
+            - name: Raportointi
+              items:
+                - name: Verkkokanavaraporttien luominen
+                  href: generate-reports.md
+            - name: Virheen käsittely
+              items:
+                - name: Mukautettujen vastaussivujen luominen 4xx-/5xx-tilakoodien virheille
+                  href: build-pages-400-500-errors.md
+        - name: Petosten torjunta
+          items:
+            - name: Dynamics 365 Fraud Protection- ja Dynamics 365 Commerce -integraatio
+              href: dev-itpro/DFP.md
         - name: Seuranta ja analysointi
           items:
-            - name: Dynamics 365 Fraud Protection -integroinnin asetukset Commercelle
-              href: ../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
             - name: Myynnin ja katteen kehittymisen seuranta
-              href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
+              href: monitor-sales-margin-performance.md
             - name: Myyntitrendien ja -mallien analysointi
-              href: ../retail/analyze-sales-trends-patterns.md?toc=/dynamics365/commerce/toc.json
+              href: analyze-sales-trends-patterns.md
             - name: Myynnin suorituksen tuotekohtainen arviointi
-              href: ../retail/sales-performance-products.md?toc=/dynamics365/commerce/toc.json
+              href: sales-performance-products.md
             - name: Asiakkaiden ja tuotteiden kannattavuuden arviointi
-              href: ../retail/assess-customer-product-profitability.md?toc=/dynamics365/commerce/toc.json
+              href: assess-customer-product-profitability.md
             - name: Myymälän tuoton analysointi
-              href: ../retail/store-performance-information.md?toc=/dynamics365/commerce/toc.json
+              href: store-performance-information.md
             - name: 'RFM-analyysin (äskettäisyys, toistuvuus ja rahallinen arvo) määrittäminen'
-              href: ../retail/set-up-rfm-analysis.md?toc=/dynamics365/commerce/toc.json
+              href: set-up-rfm-analysis.md
         - name: Lokalisointi- ja säädösominaisuudet
           items:
-            - name: Vähittäismyyntikanavan kirjanpidon integroinnin yleiskatsaus
-              href: ../retail/localizations/fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
-            - name: Vähittäismyyntikanavan kirjanpidon integroinnin määrittäminen
-              href: ../retail/localizations/setting-up-fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
+            - name: Commerce-kanavan kirjanpidon integroinnin yleiskatsaus
+              href: localizations/fiscal-integration-for-retail-channel.md
+            - name: Commerce-kanavan kirjanpidon integroinnin määrittäminen
+              href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Itävalta
               items:
                 - name: Itävallan tilikausirekisteröintipalvelun integroinnin malli
-                  href: ../retail/localizations/emea-aut-fi-sample.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-aut-fi-sample.md
             - name: Itä-Eurooppa
               items:
-                - name: Retail-ennakkolaskut Itä-Eurooppaa varten
-                  href: ../retail/localizations/emea-eeu-advance-invoices-for-retail.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail-käteisvarojen hallinta Itä-Eurooppaa varten
-                  href: ../retail/localizations/emea-eeu-petty-cash-for-retail.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail-myyntilaskut ja palautuksen myyntitilaukset Itä-Euroopan maissa
-                  href: ../retail/localizations/emea-eeu-retail-invoices.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce-ennakkolaskut Itä-Eurooppaa varten
+                  href: localizations/emea-eeu-advance-invoices-for-retail.md
+                - name: Commerce-käteisvarojen hallinta Itä-Eurooppaa varten
+                  href: localizations/emea-eeu-petty-cash-for-retail.md
+                - name: Myyntilaskut ja palautuksen myyntitilaukset Itä-Euroopan maissa
+                  href: localizations/emea-eeu-retail-invoices.md
                 - name: 'Kassapäätteiden käyttöönotto-ohjeet Tšekin tasavallassa, Unkarissa ja Puolassa'
-                  href: ../retail/localizations/emea-eeu-deployment.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-eeu-deployment.md
                 - name: Näyte verotusta varten olevan tulostimen integroinnista Puolassa
-                  href: ../retail/localizations/emea-pol-fpi-sample.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-pol-fpi-sample.md
                 - name: Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli
-                  href: ../retail/localizations/emea-cze-fi-sample.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-cze-fi-sample.md
             - name: Ranska
               items:
                 - name: Kassakoneen toiminnot
-                  href: ../retail/localizations/emea-fra-cash-registers.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-fra-cash-registers.md
                 - name: Käyttöönotto-ohjeet kassapäätteille
-                  href: ../retail/localizations/emea-fra-deployment.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-fra-deployment.md
             - name: Intia
               items:
                 - name: Arvonlisäveron (GST) integrointi kassapäätteisiin
-                  href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/apac-ind-cash-registers.md
                 - name: Käyttöönotto-ohjeet kassapäätteille
-                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: "Päivitys- ja\_N-1-tuki Intiaa varten"
-                  href: ../retail/localizations/apac-ind-n-1-for-india.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/apac-ind-n-1-for-india.md
             - name: Italia
               items:
                 - name: Näyte verotusta varten olevan tulostimen integroinnista Italiassa
-                  href: ../retail/localizations/emea-ita-fpi-sample.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-ita-fpi-sample.md
             - name: Meksiko
               items:
                 - name: Meksikon globaalit CFDI-laskut
@@ -835,63 +977,15 @@
             - name: Norja
               items:
                 - name: Kassakoneen toiminnot
-                  href: ../retail/localizations/emea-nor-cash-registers.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-nor-cash-registers.md
                 - name: Käyttöönotto-ohjeet kassapäätteille
-                  href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Ruotsi
               items:
                 - name: Kassakoneen toiminnot
-                  href: ../retail/localizations/emea-swe-cash-registers.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Retail POS -integrointimalli, jossa on tarkistusyksiköt'
-                  href: ../retail/localizations/retail-sdk-control-unit-sample.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail-tehtävät
-          items:
-            - name: Kanavakohtaisten kauppasopimusten luominen
-              href: ../retail/tasks/base-price-trade-agreements.md?toc=/dynamics365/commerce/toc.json
-            - name: Kauppasopimusten luominen luokan hinnoittelusääntöjen avulla
-              href: ../retail/tasks/category-pricing-rules-trade-agreements.md?toc=/dynamics365/commerce/toc.json
-            - name: Myyntiedustajien toimintoprofiilien määrittäminen
-              href: ../retail/tasks/configure-functionality-profile-sales-representative.md?toc=/dynamics365/commerce/toc.json
-            - name: Puhelinkeskustilausten luominen
-              href: ../retail/tasks/create-call-center-orders.md?toc=/dynamics365/commerce/toc.json
-            - name: Taloushallinnon dimensioiden luominen myyntipisteen kassapäätteille ja dimensioarvojen määrittäminen kassapäätteillä
-              href: ../retail/tasks/create-financial-dimensions-pos.md?toc=/dynamics365/commerce/toc.json
-            - name: Taloushallinnon dimensioiden luominen vähittäismyyntikanaville ja dimensioarvojen määrittäminen myymälöille
-              href: ../retail/tasks/create-financial-dimensions-retail-channels.md?toc=/dynamics365/commerce/toc.json
-            - name: Myyntipisteen käyttöoikeusryhmien luominen
-              href: ../retail/tasks/create-pos-permission-groups.md?toc=/dynamics365/commerce/toc.json
-            - name: Myyntipisteen visuaalisten profiilien luominen
-              href: ../retail/tasks/create-pos-visual-profile-2016-02.md?toc=/dynamics365/commerce/toc.json
-            - name: Tuotepakkausten luominen ostotilauksille
-              href: ../retail/tasks/create-product-packages-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-            - name: Puhelinkeskuskanavien luominen ja kanavamääritteiden määrittäminen
-              href: ../retail/tasks/define-call-center-channel-channel-attributes.md?toc=/dynamics365/commerce/toc.json
-            - name: Kanavamääritteiden määrittäminen
-              href: ../retail/tasks/define-channel-attributes.md?toc=/dynamics365/commerce/toc.json
-            - name: Jatkuvuusaikataulujen määrittäminen
-              href: ../retail/tasks/define-continuity-schedules.md?toc=/dynamics365/commerce/toc.json
-            - name: Määritä kanta-asiakasohjelmat
-              href: ../retail/tasks/define-loyalty-programs.md?toc=/dynamics365/commerce/toc.json
-            - name: Määritä kanta-asiakkaan palkkiopisteet
-              href: ../retail/tasks/define-loyalty-reward-points.md?toc=/dynamics365/commerce/toc.json
-            - name: Määritä kanta-asiakasmallit
-              href: ../retail/tasks/define-loyalty-schemes.md?toc=/dynamics365/commerce/toc.json
-            - name: Organisaatioyksiköiden välisten suhteiden suunnittelu
-              href: ../retail/tasks/design-relationships-between-organizational-units.md?toc=/dynamics365/commerce/toc.json
-            - name: Valikoimien hallinta
-              href: ../retail/tasks/manage-assortments-2016-11.md?toc=/dynamics365/commerce/toc.json
-            - name: Online-myyntien ja maksujen kirjaaminen
-              href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
-            - name: Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely
-              href: ../retail/tasks/process-loyalty-reward-point-adjustments.md?toc=/dynamics365/commerce/toc.json
-            - name: Tuotteiden siirtäminen jakelukeskuksista myymälöihin ostotarjonnan kautta
-              href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md?toc=/dynamics365/commerce/toc.json
-            - name: Sääntöjen ja parametrien määrittäminen cross-dockingille ja ostotarjonnalle
-              href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
-            - name: Jatkuvuusohjelmien myyminen ja myyntitilausten käsitteleminen
-              href: ../retail/tasks/use-continuity-program.md?toc=/dynamics365/commerce/toc.json
-            - name: Vähittäismyynnin työntekijöiden määrittäminen
-              href: ../retail/tasks/worker.md?toc=/dynamics365/commerce/toc.json
+                  href: localizations/emea-swe-cash-registers.md
+                - name: 'POS-integrointimalli, jossa on tarkistusyksiköt'
+                  href: localizations/retail-sdk-control-unit-sample.md
         - name: Tiedot
           items:
             - name: Tiedot – aloitussivu
@@ -1146,7 +1240,7 @@
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?toc=/dynamics365/commerce/toc.json
                         - name: Tietueet
                           items:
-                            - name: Tallennustoiminnot
+                            - name: Tietuetoiminnot
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/commerce/toc.json
                             - name: NullContainer
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/commerce/toc.json
@@ -1412,7 +1506,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
                     - name: ER-muodon parametrien määrittäminen yrityskohtaisesti
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
-                - name: Sähköisten raportointiratkaisujen käyttäminen Finance and Operations -palvelussa
+                - name: Sähköisten raportointiratkaisujen käyttäminen Finance and Operationsissa
                   items:
                     - name: Kehyksen määrittäminen
                       items:
@@ -1430,7 +1524,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Luotujen raporttien vahvistaminen automaattisesti
                       items:
-                        - name: Luotuja raporttitulosten seuraaminen ja vertaaminen perusarvoihin
+                        - name: Luotujen raporttitulosten seuraaminen ja vertaaminen perusarvoihin
                           href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commerce/toc.json
                         - name: Luotujen ER-raporttien tulosten seuraamisen ja perusarvoihin vertaamisen parannukset
                           href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
@@ -1468,7 +1562,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: 'PowerBI.com:in mukauttamisasetukset'
               items:
-                - name: Power BI -integroinnin kautta saatavilla olevat toiminnot ja palvelut
+                - name: Power BI -integraation kautta saatavilla olevat toiminnot ja palvelut
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Power BI -raporttien kiinnittäminen työtiloihin
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
@@ -1494,11 +1588,11 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Yksikkösäilön ylläpidon jälkeisten ongelmien ratkaiseminen
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md?toc=/dynamics365/commerce/toc.json
-                - name: Työtilojen Power BI -integroinnin konfigurointi
+                - name: Työtilojen Power BI -integraation konfigurointi
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
-                - name: Oman tietokannan tuominen
+                - name: Tuo oma tietokantasi
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
-        - name: Mobiilisovellus
+        - name: Finance and Operations (Dynamics 365) -mobiilisovellus
           items:
             - name: Mobiilisovelluksen aloitussivu
               href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
@@ -1536,9 +1630,9 @@
               href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Office-integrointi
           items:
-            - name: Office-integroinnin yleiskatsaus
+            - name: Office-integraation yleiskatsaus
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/commerce/toc.json
-            - name: Office-integroinnin opetusohjelma
+            - name: Office-integraation opetusohjelma
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
             - name: Yksikön tietojen avaaminen Excelissä ja päivittäminen Excel-lisäosan avulla
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
@@ -1552,7 +1646,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: Sähköpostikokemusten kehittäminen
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
-            - name: Office-integroinnin vianmääritys
+            - name: Office-integraation vianmääritys
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/commerce/toc.json
         - name: Organisaation hallinto
           items:
@@ -1690,10 +1784,10 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: Päivämäärä- ja aikatiedot sekä aikavyöhykkeet
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
-        - name: Kehitys
+        - name: Laajennettavuus
           items:
-            - name: Kaupan kehittäminen ja laajennettavuus
-              href: ../retail/dev-itpro/dev-retail-home-page.md?toc=/dynamics365/commerce/toc.json
+            - name: Commercen kehittäminen ja laajennettavuus
+              href: dev-itpro/dev-retail-home-page.md
             - name: Online-kanavan laajennettavuus
               items:
                 - name: Online-kanavan laajennettavuuden yleiskatsaus
@@ -1718,6 +1812,8 @@
                   items:
                     - name: Moduulin määritystiedosto
                       href: e-commerce-extensibility/module-definition-file.md
+                    - name: Moduulin React-komponenttitiedosto
+                      href: e-commerce-extensibility/module-react-file.md
                     - name: Moduulin näkymätiedosto
                       href: e-commerce-extensibility/module-view-file.md
                     - name: Moduulin datatiedosto
@@ -1778,6 +1874,8 @@
                       href: e-commerce-extensibility/core-data-actions.md
                     - name: Retail Server -ohjelmointirajapintojen kutsuminen
                       href: e-commerce-extensibility/call-retail-server-apis.md
+                    - name: Retail Server -ohjelmointirajapintalaajennusten kutsuminen
+                      href: e-commerce-extensibility/call-retail-extension-api.md
                 - name: Edistyneiden tietotoimintojen aiheet
                   items:
                     - name: Tietotoimintojen ketjuttaminen
@@ -1813,161 +1911,157 @@
             - name: Retail SDK
               items:
                 - name: Retail SDK -arkkitehtuuri
-                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: 'Retail SDK:n tulevat muutokset'
-                  href: ../retail/dev-itpro/UpcomingSDKChanges.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail- ja Finance and Operations -koontiversiojärjestelmien yhdistäminen
-                  href: ../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/UpcomingSDKChanges.md
+                - name: Commerce- ja Finance and Operations -koontijärjestelmien yhdistäminen
+                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: 'Retail SDK:n laajennettavuusmallit'
-                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md?toc=/dynamics365/commerce/toc.json
-                - name: Käyttöönotettavien Retail-pakettien luominen
-                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+                - name: Käyttöönotettavien pakettien luominen
+                  href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Kehittäminen pilvi-isännöidyissä kehitysympäristöissä ilman järjestelmänvalvojan oikeuksia
-                  href: ../retail/dev-itpro/cloud-dev-box.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/cloud-dev-box.md
             - name: Myyntipisteen laajennettavuus
               items:
-                - name: 'Retail POS:n näyttöasettelut'
-                  href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
+                - name: Myyntipisteen näyttöasettelut
+                  href: pos-screen-layouts.md
                 - name: URL-osoitteen avaaminen myyntipisteessä
-                  href: ../retail/Open-URL-in-POS.md?toc=/dynamics365/commerce/toc.json
+                  href: Open-URL-in-POS.md
                 - name: Myyntipisteen asettelun suunnittelutoiminnon asentaminen
-                  href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
+                  href: install-pos-layout-designer.md
                 - name: POS Dual -näytön näkymän laajentaminen
-                  href: ../retail/dev-itpro/pos-dual-display-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Retail Modern POSin ja Cloud POS:n käynnistyksen laajennettavuus'
-                  href: ../retail/dev-itpro/modern-pos-trigger-extensibility.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-dual-display-extension.md
+                - name: 'Modern POS:n ja pilvimyyntipisteen käynnistimen laajennettavuus'
+                  href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Mukautettujen ohjausobjektien lisääminen myyntipistenäkymiin
-                  href: ../retail/dev-itpro/pos-custom-control.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-custom-control.md
                 - name: Myyntipistetoimintojen lisääminen myyntipisteasetteluihin käyttämällä painikeruudukon suunnittelutoimintoa
-                  href: ../retail/dev-itpro/add-POS-operations.md
-                - name: Retail POS -ohjelmointirajapinnat
-                  href: ../retail/dev-itpro/POS-APIs.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/add-POS-operations.md
+                - name: Myyntipisteen ohjelmointirajapinnat
+                  href: dev-itpro/POS-APIs.md
                 - name: Myyntipisteen maksulaajennus
-                  href: ../retail/dev-itpro/pos-payment-extension.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-payment-extension.md
                 - name: Ulkoisten lahjakorttien tuki
-                  href: ../retail/dev-itpro/gift-card.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/gift-card.md
                 - name: Brändäyksen luominen ja käyttäminen Retail Experience -sovelluksessa
-                  href: ../retail/dev-itpro/create-retail-experience-app.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/create-retail-experience-app.md
                 - name: POS Hybrid -sovelluksen määrittäminen Android- ja iOS-laitteessa
-                  href: ../retail/dev-itpro/hybridApp.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/hybridApp.md
                 - name: Myyntipisteen pyynnön käsittelijän ohittaminen
-                  href: ../retail/dev-itpro/pos-handler.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-handler.md
                 - name: Myyntipisteen laajennuspaketin tietojen tarkasteleminen
-                  href: ../retail/dev-itpro/view-pos-extension-package-details.md?toc=/dynamics365/commerce/toc.json
-                - name: Testien tallennustoiminto ja Regression Suite Automation Tool vähittäismyynnin pilvimyyntipistettä varten
-                  href: ../retail/dev-itpro/pos-rsat.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/view-pos-extension-package-details.md
+                - name: Testien tallennustoiminto ja Regression Suite Automation Tool pilvimyyntipistettä varten
+                  href: dev-itpro/pos-rsat.md
                 - name: Mukautettujen kenttien lisääminen myyntipisteen Summat-ruutuun
-                  href: ../retail/dev-itpro/custom-field-pos-totals.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/custom-field-pos-totals.md
                 - name: Mukautettujen ilmoitusten näyttäminen myyntipisteessä
-                  href: ../retail/dev-itpro/extend-pos-notification.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/extend-pos-notification.md
                 - name: 'MPOS:n allekirjoittaminen koodin allekirjoitusvarmenteella'
-                  href: ../retail/dev-itpro/pos-app-signing-certificate.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-app-signing-certificate.md
                 - name: Myyntipistenäkymien laajentaminen lisäämällä mukautettuja sarakkeita ja sovelluspalkin painikkeita
-                  href: ../retail/dev-itpro/pos-view-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: Mukautettujen ohjausobjektien lisääminen Retail Modern POS -tapahtumasivuille
-                  href: ../retail/dev-itpro/pos-custom-transaction.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-view-extension.md
+                - name: Mukautettujen ohjausobjektien lisääminen Modern POS -tapahtumasivuille
+                  href: dev-itpro/pos-custom-transaction.md
                 - name: Mukautettujen sarakkeiden lisääminen myyntipisteen tapahtumaruudukkoon
-                  href: ../retail/dev-itpro/pos-custom-transaction-column.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-custom-transaction-column.md
                 - name: Myyntipisteen ohjelmointirajapintojen tai -toimintojen kutsuminen myyntipistelaajennuksista
-                  href: ../retail/dev-itpro/pos-api-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail Modern POS -käynnistimet ja tulostus
-                  href: ../retail/dev-itpro/pos-trigger-printing.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-api-extension.md
+                - name: 'Modern POS:n käynnistimet ja tulostaminen'
+                  href: dev-itpro/pos-trigger-printing.md
                 - name: Mukautettujen ohjausobjektien lisääminen muihin kuin näytön suunnitteluohjelmiin perustuviin myyntipistenäkymiin
-                  href: ../retail/dev-itpro/pos-control-non-screen.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail POS -mallien suorittaminen
-                  href: ../retail/dev-itpro/pos-run-samples.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/pos-control-non-screen.md
+                - name: POS-mallien suorittaminen
+                  href: dev-itpro/pos-run-samples.md
                 - name: Laitehallinnan käyttöönotto-ohje
-                  href: ../retail/implementation-considerations-devices.md?toc=/dynamics365/commerce/toc.json
+                  href: implementation-considerations-devices.md
             - name: Hardware Stationin laajennettavuus
               items:
                 - name: Hardware Station ja laajennettavuus
-                  href: ../retail/dev-itpro/hardware-station-extensibility.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/hardware-station-extensibility.md
                 - name: Myyntipisteen integroiminen uuteen laitteeseen
-                  href: ../retail/dev-itpro/hardware-device-extension.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/hardware-device-extension.md
             - name: Retail Serverin laajennettavuus
               items:
                 - name: Retail Server OData -ohjaimen laajentaminen
-                  href: ../retail/dev-itpro/extend-retail-server-odata-controller.md?toc=/dynamics365/commerce/toc.json
-                - name: Retail Serverin WWW-ohjelmointirajapinnan ohjaimen luominen
-                  href: ../retail/dev-itpro/odata-controllers-api.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: Retail Serverin asiakkaan ja kuluttajan ohjelmointirajapinnat
-                  href: ../retail/dev-itpro/retail-server-customer-consumer-api.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-server-customer-consumer-api.md
                 - name: Oletusarvoisen Retail Server -metatietojen ohjaimen laajentaminen
-                  href: ../retail/dev-itpro/extend-metadata.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/extend-metadata.md
                 - name: CRT-palvelun kutsuminen offline-tilassa
-                  href: ../retail/dev-itpro/call-crt-service-offline.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/call-crt-service-offline.md
                 - name: Uuden Retail Server -laajennuksen luominen
-                  href: ../retail/dev-itpro/retail-server-extension.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-server-extension.md
                 - name: 'Retail Typescript ja C# proxy'
-                  href: ../retail/dev-itpro/typescript-proxy-retail-pos.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/typescript-proxy-retail-pos.md
             - name: Commerce Runtime (CRT) -ratkaisun laajennettavuus
               items:
                 - name: 'CRT:n arkkitehtuuri ja määrittäminen'
-                  href: ../retail/dev-itpro/commerce-runtime-overview.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/commerce-runtime-overview.md
                 - name: CRT-palvelut
-                  href: ../retail/dev-itpro/crt-services.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/crt-services.md
                 - name: 'CRT:n ja Retail Serverin laajennettavuus'
-                  href: ../retail/dev-itpro/commerce-runtime-extensibility.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/commerce-runtime-extensibility.md
                 - name: Asiakkaan valintatietojen lisääminen kanavatietokantoihin
-                  href: ../retail/dev-itpro/add-customer-preference-channel.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/add-customer-preference-channel.md
                 - name: Vähittäismyyntikanavien salaisuuksien hallinta
-                  href: ../retail/dev-itpro/manage-secrets.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/manage-secrets.md
                 - name: Ominaisuuksien lisääminen myyntitilauksiin
-                  href: ../retail/dev-itpro/add-properties-sales-order.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/add-properties-sales-order.md
                 - name: 'CRT:n laajennettavuus ja käynnistimet'
-                  href: ../retail/dev-itpro/commerce-runtime-extensibility-trigger.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Tapahtumien estäminen käynnistimien avulla
-                  href: ../retail/dev-itpro/trigger-example-blocking-transaction.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/trigger-example-blocking-transaction.md
                 - name: Palautuskäytännön toteuttaminen käynnistimien avulla
-                  href: ../retail/dev-itpro/trigger-example-return-policy.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/trigger-example-return-policy.md
                 - name: Kanta-asiakaslaajennus
-                  href: ../retail/dev-itpro/retail-sdk/loyalty-extension-sample.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                 - name: Pakkausluetteloiden laajennuspisteet
-                  href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Kanavatietokannan laajennukset
-                  href: ../retail/dev-itpro/channel-db-extensions.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/channel-db-extensions.md
                 - name: Mukautetun CDX-synkronoinnin käyttöönotto laajennuksen kautta
-                  href: ../retail/dev-itpro/cdx-extensibility.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/cdx-extensibility.md
                 - name: Tilausmääritteiden määrittäminen ja asettaminen
-                  href: ../retail/dev-itpro/order-attributes.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/order-attributes.md
                 - name: Asiakkaan määritteet
-                  href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/customer-attributes.md
                 - name: CRT SDK -mallit
-                  href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Kirjaa laajennustapahtumat Application Insightsiin
-                  href: ../retail/dev-itpro/commerce-application-insights.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/commerce-application-insights.md
             - name: Maksuyhdistimen laajennettavuus
               items:
                 - name: Maksun integroinnin luominen maksupäätteelle
-                  href: ../retail/dev-itpro/end-to-end-payment-extension.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/end-to-end-payment-extension.md
                 - name: Maksuyhdistimen ja maksulaitteen käyttöönotto (tulostettava ohje)
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
                 - name: Maksuyhdistimien käyttöönotto
-                  href: ../retail/dev-itpro/deploy-payment-connector.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/deploy-payment-connector.md
                 - name: Mukautettujen lokalisoitujen virhesanomien luominen maksupäätteiden laajennuksille
-                  href: ../retail/dev-itpro/payment-custom-error-messages.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/payment-custom-error-messages.md
                 - name: Windows-asennusohjelmien luominen maksuyhdistimille
-                  href: ../retail/dev-itpro/create-windows-installer-payment-connector.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/create-windows-installer-payment-connector.md
                 - name: Maksutietojen käyttö
-                  href: ../retail/payment-connector-data-fields.md?toc=/dynamics365/commerce/toc.json
+                  href: payment-connector-data-fields.md
                 - name: Kaksoismaksuilta suojauksen kytkeminen päälle maksujen yhdistäjässä
-                  href: ../retail/dev-itpro/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/duplicate-payment-protection.md
             - name: Kolmannen osapuolen sähköisen kaupankäynnin laajennettavuus
               items:
                 - name: Verkkokauppojen määrittäminen
-                  href: ../retail/dev-itpro/configure-online-store.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/configure-online-store.md
                 - name: Todennuspalvelujen määrittäminen
-                  href: ../retail/dev-itpro/configure-authentication-providers.md?toc=/dynamics365/commerce/toc.json
-                - name: Sähköinen kaupankäyntiympäristö
-                  href: ../retail/dev-itpro/ecommerce-platform.md?toc=/dynamics365/commerce/toc.json
+                  href: dev-itpro/configure-authentication-providers.md
                 - name: Sähköisen kaupankäyntiympäristön SDK
-                  href: ../retail/dev-itpro/ecommerce-platform-sdk.md?toc=/dynamics365/commerce/toc.json
-            - name: Lokalisoi Retail-laajennuksen resurssit ja etikettitiedostot
-              href: ../retail/dev-itpro/extension-resource-localization.md?toc=/dynamics365/commerce/toc.json
-    - name: Finance and Operations -sovellusten kehittäminen ja hallinnointi
+                  href: dev-itpro/ecommerce-platform-sdk.md
+            - name: Lokalisoi Commerce -laajennuksen resurssit ja etikettitiedostot
+              href: dev-itpro/extension-resource-localization.md
+    - name: Finance and Operations -sovellusten kehitys ja hallinnointi
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Retail
-      href: ../retail/index.md
+      href: index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Supply Chain Management

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db9caaa7f425133eda7a5f225b39ca52e11e0716
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835576"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025825"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Etsi sovellettavat hinnat ja alennukset
 
@@ -49,7 +49,7 @@ Menettelyssä selvitetään, miten voidaan etsiä tietyllä asiakkaalla voimassa
 10. Sulje sivu.
 
 ## <a name="find-the-applicable-discount"></a>Etsi sovellettava alennus
-    * Varmista, Asiakastili-kentässä on asiakasnumero US-001    
+Varmista, Asiakastili-kentässä on asiakasnumero US-001    
 1. Kirjoita Nimiketunnus-kenttään T0012.
     * Varmista, että Määrä-kentän arvo on 1.  
     * Seuraavat tuotteelle T0012 näytetyt hinnoittelutiedot perustuvat vähintään yhteen kauppasopimukseen: yksikköhinta on 1 000 Kanadan dollaria ja alennusprosentti 5.  

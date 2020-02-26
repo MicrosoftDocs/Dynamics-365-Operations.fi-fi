@@ -1,5 +1,5 @@
 ---
-title: Valinnaisten ominaisuuksien määrittäminen Commercen esikatseluympäristöä varten
+title: Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commercen esikatseluympäristöä varten
 description: Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää valinnaisia ominaisuuksia Microsoft Dynamics 365 Commercen esikatseluympäristössä.
 author: psimolin
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2c4872cdebc414eaa865af025237bd9e1d14bfd2
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906113"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024726"
 ---
-# <a name="configure-optional-features-for-a-commerce-preview-environment"></a>Valinnaisten ominaisuuksien määrittäminen Commercen esikatseluympäristöä varten
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commercen esikatseluympäristöä varten
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää valinnaisia ominaisuuksia Microsoft Dynamics 365 Commercen esikatseluympäristössä.
@@ -173,13 +173,13 @@ Seuraavat tunnukset korvataan arvoilla jokaisessa tuotteessa tilauksessa.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Commercen esikatseluympäristön yleiskuvaus](cpe-overview.md)
+[Dynamics 365 Commercen esikatseluympäristön yleiskuvaus](cpe-overview.md)
 
-[Commercen esikatseluympäristön valmisteleminen](provisioning-guide.md)
+[Dynamics 365 Commercen esiversioympäristön valmistelu](provisioning-guide.md)
 
-[Commercen esikatseluympäristön määrittäminen](cpe-post-provisioning.md)
+[Dynamics 365 Commercen esikatseluympäristön määrittäminen](cpe-post-provisioning.md)
 
-[Commercen esikatseluympäristön usein kysytyt kysymykset](cpe-faq.md)
+[Dynamics 365 Commerce -esikatseluympäristön usein kysytyt kysymykset](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -188,5 +188,3 @@ Seuraavat tunnukset korvataan arvoilla jokaisessa tuotteessa tilauksessa.
 [Microsoft Azure -portaali](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce -sivusto](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Dynamics 365 Retailin ohjeresurssit](../retail/index.md)

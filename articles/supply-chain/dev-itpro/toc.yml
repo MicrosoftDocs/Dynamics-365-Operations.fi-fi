@@ -76,7 +76,7 @@
       href: ../../dev-itpro/data-entities/integration-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Tietojen integroinnin ohjelmointirajapinnat
       items:
-        - name: Tietojen hallintapaketin REST API -ohjelmointirajapinta
+        - name: Tietojen hallintapaketin REST-ohjelmointirajapinta
           href: ../../dev-itpro/data-entities/data-management-api.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Palvelun päätepisteet
           items:
@@ -88,13 +88,13 @@
           href: ../../dev-itpro/data-entities/odata.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Mukautettu palvelukehitys
           href: ../../dev-itpro/data-entities/custom-services.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Toistuvat integroinnit
+        - name: Toistuvat integraatiot
           href: ../../dev-itpro/data-entities/recurring-integrations.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Palvelujen testaaminen kolmannen osapuolen apuohjelmien avulla
           href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Finance and Operations Connector
+    - name: Finance and Operations -yhdistin
       href: ../../dev-itpro/data-entities/fin-ops-connector.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Integroinnin kehitys
+    - name: Integraation kehitys
       items:
         - name: Tietojen integraatio tietoyksikköjen avulla
           items:
@@ -116,11 +116,11 @@
               href: ../../dev-itpro/data-entities/data-integration-cds.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: 'Synkroninen, kaksisuuntainen integrointi'
               items:
-                - name: Lähes reaaliaikainen tietojen integrointi
+                - name: Lähes reaaliaikainen tietojen integraatio
                   href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Organisaatiohierarkia Common Data Servicessä
                   href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                - name: Yrityskonsepti Common Data Servicessä
+                - name: Yrityskonsepti Common Data Servicesissä
                   href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Integroidut asiakkaan päätiedot
                   href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -142,7 +142,7 @@
                       href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Asiakkaiden synkronointi suoraan Salesista Finance and Operationsin asiakkaisiin
                       href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: Finance and Operationsin tuotteiden synkronointi suoraan Salesin tuotteisiin
+                    - name: Tuotteiden synkronointi suoraan Finance and Operationsista Salesin tuotteisiin
                       href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Salesin yhteyshenkilöiden synkronointi suoraan Finance and Operationsin yhteyshenkilöihin tai asiakkaisiin
                       href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -152,9 +152,9 @@
                       href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Myyntilaskujen otsikoiden ja rivien synkronointi suoraan Finance and Operationsista Salesiin
                       href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                - name: Integroinnin määrittäminen Field Servicen kanssa
+                - name: Integraation määrittäminen Field Servicen kanssa
                   items:
-                    - name: Integroinnin määrittäminen Field Servicen kanssa – yleiskatsaus
+                    - name: Integraation määrittäminen Field Servicen kanssa – yleiskatsaus
                       href: ../../supply-chain/sales-marketing/field-service.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Finance and Operationsin tuotteiden synkronointi Field Servicen tuotteisiin
                       href: ../../supply-chain/sales-marketing/field-service-product.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -164,17 +164,17 @@
                       href: ../../supply-chain/sales-marketing/field-service-invoice.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Field Servicen varastosiirtojen ja oikaisujen synkronointi Finance and Operationsiin
                       href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: Finance and Operationsin varastotasotietojen synkronointi Field Serviceen
+                    - name: Finance and Operations varastotasotietojen synkronointi Field Serviceen
                       href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Finance and Operationsin tuotteiden ja varastoyksiköiden synkronointi Field Serviceen
                       href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Finance and Operationsin projektiluetteloiden synkronointi Field Serviceen
                       href: ../../supply-chain/sales-marketing/synchronize-project-list.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: Finance and Operationsin fyysisten varastojen synkronointi Field Serviceen
+                    - name: Finance and Operationsin varastojen synkronointi Field Serviceen
                       href: ../../supply-chain/sales-marketing/synchronize-warehouse.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: Finance and Operationsin työtilausten ja projektin synkronointi Field Serviceen
+                    - name: Field Servicen työtilausten ja projektin synkronointi Finance and Operationsiin
                       href: ../../supply-chain/sales-marketing/synchronize-work-orders.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                - name: Project Service Automation -integroinnin määrittäminen
+                - name: Project Service Automation -integraation määrittäminen
                   items:
                     - name: Project Service Automationin yleiskatsaus
                       href: ../../financials/project-management/PSA-integration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -824,7 +824,7 @@
               href: ../../dev-itpro/perf-test/concepts-navigation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Tiedon testausmenetelmät
               href: ../../dev-itpro/perf-test/test-data-methods.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Hyväksyntätestauskirjaston entiteetit
+            - name: Hyväksyntätestauskirjaston yksiköt
               href: ../../dev-itpro/perf-test/concepts-entities.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Hyväksyntätestikirjaston komennot
               href: ../../dev-itpro/perf-test/concepts-commands.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -862,7 +862,7 @@
           href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Luottamuksellisten tietojen käytön hallinta
           href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Henkilötietopyyntöihin vastaaminen Talentilla
+        - name: Henkilötietopyyntöihin vastaaminen Human Resourcesilla
           href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: 'Henkilötietopyyntöihin vastaaminen AX 2012:ssa'
           href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1206,27 +1206,27 @@
           href: ../../dev-itpro/lcs-solutions/submit-localization-alerts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Tuki
   items:
-    - name: Finance and Operations- ja Lifecycle Services -tuki
+    - name: Tuen saaminen Finance and Operationsia ja Lifecycle Servicesiä varten
       href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Dynamics 365 -tuen yleiskatsaus
       href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
-    - name: Tuki 21Vianetin ylläpitämään Finance and Operationsiin Kiinassa
+    - name: 'Hanki tukea Finance and Operationsille, jota ylläpitää 21Vianet Kiinassa'
       href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Premier-palvelupyynnön kirjaaminen
       href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Pyyntöjen lähettäminen Dynamics Service -kehitysryhmälle
       href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Finance and Operationsin teknisen tuen määrittäminen
+    - name: Teknisen tuen määrittäminen Finance and Operationsille
       href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Suunniteltu ylläpitoajankohta - usein kysytyt kysymykset
+    - name: Suunniteltu ylläpitoajankohta – usein kysytyt kysymykset
       href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Pilvipalvelut ja huolto
       href: ../../dev-itpro/lifecycle-services/cloud-operations-servicing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Finance and Operations -tukikokemusten hallinta
+    - name: Finance and Operationsin tukikokemusten hallinta
       href: ../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-- name: Järjestelmän hallinta
+- name: Järjestelmänvalvonta
   items:
-    - name: Järjestelmänhallinnan aloitussivu
+    - name: Järjestelmänvalvonnan aloitussivu
       href: ../../dev-itpro/sysadmin/system-administration-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Yrityksen juridisiin ehtoihin ja tietosuojatietoihin johtavien linkkien lisääminen
       href: ../../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1298,7 +1298,7 @@
       href: ../../dev-itpro/migration-upgrade/upgrade-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Päivitä AX 2012 -versiosta
       items:
-        - name: 'AX 2012:n päivittäminen Finance and Operationsiin'
+        - name: Päivitä AX 2012 -versiosta Finance and Operationsiin
           href: ../../dev-itpro/migration-upgrade/upgrade-overview-2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: AX 2012 -versiopäivitys – suunnitteleminen päivityksen analysointityökalun avulla
           href: ../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1340,11 +1340,11 @@
               href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Tietojen siirtäminen AX 2009 -järjestelmästä
       items:
-        - name: "Tietojen siirtäminen\_AX 2009:stä Finance and Operationsiin"
+        - name: Tietojen siirtäminen AX 2009 -järjestelmästä Finance and Operationsiin
           href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: "AX 2009 -siirto\_- tietojen siirtotyökalun asennus"
+        - name: "AX 2009 -siirto\_– tietojen siirtotyökalun asennus"
           href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: "AX 2009 -siirto\_- määritysten luominen"
+        - name: "AX 2009 -siirto\_– yhdistämismääritysten luominen"
           href: ../../dev-itpro/migration-upgrade/generate-maps.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: "AX 2009 -siirto\_- mallien luominen"
           href: ../../dev-itpro/migration-upgrade/create-package-templates-dmt.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1612,7 +1612,7 @@
           href: ../../dev-itpro/user-interface/tile-list-caching-workspaces.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Tehtävien tallennustoiminto
       items:
-        - name: Tehtävän tallennustoiminnon resurssit
+        - name: Tehtävien tallennustoiminnon resurssit
           href: ../../dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Tehtävien tallennustoiminnon pikaopas
           href: ../../dev-itpro/user-interface/task-recorder-quick-reference.md?toc=/dynamics365/unified-operations/supply-chain/toc.json

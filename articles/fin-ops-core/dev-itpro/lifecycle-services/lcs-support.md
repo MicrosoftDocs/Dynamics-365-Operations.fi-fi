@@ -1,6 +1,6 @@
 ---
-title: Finance and Operations- sovellusten tai Lifecycle Servicesin (LCS) tuki
-description: Tässä aiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta.
+title: Finance and Operations -sovellusten tai elinkaaripalveluiden (LCS) tuen saaminen
+description: Tässä ohjeaiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta.
 author: kfend
 manager: AnnBe
 ms.date: 10/14/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e62e406de5d972b3e66319cf293d3d420c69d46
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8ac2cf0c2b78dd3456c5c1a69981a4e498b115ae
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812132"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005513"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations- sovellusten tai Lifecycle Servicesin (LCS) tuki
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Finance and Operations -sovellusten tai elinkaaripalveluiden (LCS) tuen saaminen
 
 [!include [banner](../includes/banner.md)]
 
-Tässä aiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta. 
+Tässä ohjeaiheessa kerrotaan Finance and Operations -sovellusten ja Microsoft Dynamics Lifecycle Servicesin (LCS) tuesta. 
 
 ## <a name="contact-support"></a>Ota yhteyttä tukeen
 
@@ -72,12 +72,12 @@ Huomautus: Myös Microsoft Premier -asiakkaat ja -kumppanit voivat lähettää P
 <td>Jos palvelupyynnön lähettämisessä Microsoftille LCS:n <strong>Tuki</strong>-ruudusta on ongelmia, kohdassa <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Yhteyden ottaminen Microsoft Business Solutions -tukeen</span></a> on lisätietoja yhteyden ottamisesta Microsoft Dynamicsin alueellisiin toimintokeskuksiin. Tukiryhmä auttaa ratkaisemaan seuraavanlaisia teknisiä ongelmia:
 <ul>
 <li>LCS:n käyttöön liittyvät virheet ja LCS:n käyttöoikeuksiin liittyvät virheet.</li>
-<li>Finance and Operations -sovellusten käyttöön liittyvät virheet.</li>
+<li>Virheet, joita tapahtuu Finance and Operations -sovellusten käytön aikana.</li>
 </ul>
 Jos tekniset kysymykset liittyvät CustomerSourceen, kirjautumiseen tai sen käyttöön, eLearning-kursseihin, hakuun, tietämyskantaan, tietojen lataamiseen sekä sivu- tai järjestelmävirheisiin, siirry <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">sivustotukeen</span></a>.</td>
 </tr>
 <tr class="odd">
-<td>Finance and Operations -sovellusten käyttöoikeuksia koskevat kysymykset.</td>
+<td>Vastauksia kysymyksiin Finance and Operations -sovellusten lisensoinnista.</td>
 <td>Ota yhteys kumppaniin, suurasiakasjälleenmyyjään tai Microsoftin myyntiedustajan.</td>
 </tr>
 <tr class="even">
@@ -90,6 +90,6 @@ Jos tekniset kysymykset liittyvät CustomerSourceen, kirjautumiseen tai sen käy
 
 ## <a name="additional-resources"></a>Lisäresurssit
 - [Dynamics 365 Retail -tuen saaminen](../../../retail/retail-support.md)
-- [Microsoft iDynamics 365 Talentn tuki](../../../talent/talent-support.md)
-- Lisätietoja Microsoft Dynamics tukivalikoimasta esitetään kohdassa [Finance and Operations -sovellusten tukikokemusten hallinta](cloud-powered-support-lcs.md).
+- [Microsoft iDynamics 365 Human Resourcesn tuki](../../../human-resources/hr-admin-troubleshooting-support.md)
+- Lisätietoja Microsoft Dynamics -tukivalikoimasta esitetään kohdassa [Finance and Operations -sovellusten tukikokemusten hallinta](cloud-powered-support-lcs.md).
 

@@ -3,7 +3,7 @@ title: Varastoesto
 description: Tässä aiheessa on yleiskatsaus varastoestosta, joka on osa Supply Chain Managementin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41fbe6e2034c0e58fc03d1dfbbd87844f3a4466
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e1a870936619d07db01d5a8fe83b3fab73693187
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814372"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971484"
 ---
 # <a name="inventory-blocking"></a>Varastoesto
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on yleiskatsaus varastoestosta, joka on osa Supply Chain Managementin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.
+Tässä aiheessa on yleiskatsaus varastoestosta, joka on osa Supply Chain Managementin laaduntarkastusprosessia. Varastoeston avulla voit estää tuotteiden käsittelyn tai kulutuksen.
 
 Voit estää varastonimikkeitä seuraavilla tavoilla:
 -   Manuaalisesti
@@ -43,6 +43,9 @@ Voit estää nimikkeen määrä luomalla tapahtuman **Varastoesto**-sivulla. Vai
 
 ## <a name="blocking-items-by-creating-a-quality-order"></a>Estä nimikkeet luomalla laatutilaus
 Voit määrittää nimikkeet, jotka on tarkistettava luomalla laatutilauksen **Laatutilaukset**-sivulla. Kun laatutilaus luodaan, nimikkeelle määritetty määrä estetään. Laatutilaukseen liitetty otantasuunitelma hallitsee ainoastaan tarkastettavien nimikkeiden määrää, ei estettyä määrää. Riippumatta määrästä, joka lähetetään tarkastettavaksi, otantasuunnitelman määritysten mukaan nimikemäärä, joka on määritetty laatutilauksessa, on määrä, joka on estetty.
+
+> [!NOTE]
+> Pääsuunnittelu ei tue sekä erän vanhentumispäivämäärää että varaston tila -ominaisuuksien estämistä. Tämä voi johtaa siihen, että käytettävissä oleva varasto suljetaan pois käytöstä, mikä voi tapahtua pääsuunnittelun aikana. On suositeltavaa käyttää eräkäsittelykoodeja varaston tilan asemesta vanhentuneiden erien estämiseen.
 
 ## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Estä nimikkeet käyttämällä laatutilauksen luovaa prosessia
 Jos laatuprosessi määrittää, että nimike on tarkastettava, nimikemäärä estetään automaattisesti. Kun laatutilaus luodaan automaattisesti, laatutilaukseen liitetty nimikeotantasuunnitelma hallitsee sekä estettyjen nimikkeiden määrää että tarkistettavien nimikkeiden määrää. Jos **Täysi esto** -asetus on valittuna **Nimikeotanta**-sivulla, koko määrä esimerkiksi ostotilausrivistä estetään riippumatta nimikeotannan määrästä tarkastuksen aikana.

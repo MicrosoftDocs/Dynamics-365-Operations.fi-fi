@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c3a2881ede53e4adfba775b9bb23071468c8f602
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024242"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006514"
 ---
 # <a name="get-started-with-talent"></a>Talentin käytön aloittaminen
 
@@ -31,7 +31,7 @@ ms.locfileid: "2024242"
 Microsoft Dynamics 365 Talentin käyttöliittymän muokkaaminen ja asetusten määrittäminen on helppoa. Näin saat ohjelmiston vastaamaan paremmin yrityksen tarpeita. Tämä ohjeaihe sisältää linkkejä ohjeaiheisiin, jotka sisältävät tietoja käyttöliittymän mukauttamisesta haluamiesi asetusten perusteella. Ohjeaihe sisältää myös linkkejä tietoihin, joiden avulla voit etsiä tietoja järjestelmästä tehokkaasti ja tarkasti. 
 
 > [!NOTE] 
-> Seuraavat kolme tuotetta liittyvät toisiinsa läheisesti: Dynamics 365 Finance, Dynamics 365 Retail ja Dynamics 365 Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteessa. Tällöin aiheissa, jotka liittyvät ensisijaisesti Retail, tuotteen nimi on Dynamics 365 Retail. Aiheissa, jotka liittyvät ensisijaisesti Talentiin, tuotteen nimi on Dynamics 365 Talent. Ja aiheissa, jotka liittyvät ensisijaisesti ydintuotteeseen, tuotteen nimi on Dynamics 365 Finance. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
+> Seuraavat kolme tuotetta liittyvät toisiinsa läheisesti: Dynamics 365 Finance, Dynamics 365 Commerce ja Dynamics 365 Talent. Samat toiminnot voivat esiintyä kaikissa kolmessa tuotteessa. Tällöin aiheissa, jotka liittyvät ensisijaisesti Commerceen, tuotteen nimi on Dynamics 365 Commerce. Aiheissa, jotka liittyvät ensisijaisesti Talentiin, tuotteen nimi on Dynamics 365 Talent. Ja aiheissa, jotka liittyvät ensisijaisesti ydintuotteeseen, tuotteen nimi on Dynamics 365 Finance. Aiheet, jotka on kirjoitettu yhdelle tuotteelle, voivat esiintyä liittyvän tuotteen samoissa toiminnoissa.
 
 ## <a name="personalizing-talent"></a>Talentin mukauttaminen 
 Seuraavissa ohjeaiheissa näytetään, miten Talentin useat toiminnot määritetään niin, että työt saadaan tehtyä helpommin ja ajoissa. 

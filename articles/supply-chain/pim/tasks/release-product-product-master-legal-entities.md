@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cc1f4a7e18b43d3ea83575eaf1de71ed3956c01f
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 25f84d960be4f4e8ff1b569d00b356390c232a2c
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844257"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003901"
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Vapauta tuote/päätuote yrityksille
 
@@ -29,7 +29,7 @@ ms.locfileid: "1844257"
 
 Tässä menettelyssä esitellään tuotteen tai päätuotteen vapautus yhteen yritykseen tai useaan yritykseen. Tämän tehtävän luomisessa käytetään esittely-tietojen yritystä USRT. Tehtävä on tarkoitettu myynninedistämispäällikölle ja tuotesuunnittelijalle.
 
-1. Valitse Vähittäismyynti ja kauppa > .. > Tuotteet luokittain.
+1. Valitse Retail ja Commerce > .. > Tuotteet luokittain.
 2. Merkitse valittu rivi luettelossa.
 3. Valitse Vapautettu tuotteet.
 4. Valitse Seuraava.

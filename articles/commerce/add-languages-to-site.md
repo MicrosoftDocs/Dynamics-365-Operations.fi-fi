@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 111bcaba971b6223f670176135574633d2f1c5ec
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914606"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001412"
 ---
 # <a name="add-languages-to-your-site"></a>Kielten lisääminen sivustoon
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, kuinka lisäkielten tuki lisätään Microsoft Dynamics 365 Commerce -sivustoon.
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Voit lokalisoida sivuston millä tahansa kielellä, jota Dynamics 365 Commerce tukee. (Tuettujen kielten luettelo tulee näkyviin myöhemmin tässä ohjeaiheessa.) Jos haluat lisätä kielen sivustoon, kieli on ensin lisättävä sivustoon sidottuun verkkokauppaan.
+Voit lokalisoida sivuston millä tahansa kielellä, jota Commerce tukee. (Tuettujen kielten luettelo tulee näkyviin myöhemmin tässä ohjeaiheessa.) Jos haluat lisätä kielen sivustoon, kieli on ensin lisättävä sivustoon sidottuun verkkokauppaan.
 
 ## <a name="add-a-language-to-an-online-store"></a>Kielen lisääminen verkkokauppaan
 
 Voit lisätä kielen verkkokauppaan seuraavasti:
 
-1. Avaa sivuston Dynamics 365 Retail -ympäristö.
-1. Siirry kohtaan **Vähittäismyynti \> Kanavat \> Verkkokaupat**. Näkyviin tulee ympäristöäsi varten määritettyjen verkkokauppojen luettelo. Vaihtoehtoisesti voit kirjoittaa hakutermiksi **verkkokaupat**.
+1. Avaa sivuston Dynamics 365 Commerce -ympäristö.
+1. Siirry kohtaan **Retail ja Commerce \> Kanavat \> Verkkokaupat**. Näkyviin tulee ympäristöäsi varten määritettyjen verkkokauppojen luettelo. Vaihtoehtoisesti voit kirjoittaa hakutermiksi **verkkokaupat**.
 1. Valitse verkkokauppa, johon kieli lisätään.
 1. Valitse **Kielet**-pikavälilehdessä **Lisää**.
 1. Valitse lisättävä kieli **Kieli**-kentässä.

@@ -3,7 +3,7 @@ title: Varastotyön valvonta työmallien ja sijaintidirektiivien avulla
 description: Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ suoritetaan varastossa.
 author: perlynne
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9a5292e88fe022482ab9c6c5a8f016745946988
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4645cf36201aa1b87c22ba4dbfb1b8d8117f425a
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026912"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3028025"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Varastotyön valvonta työmallien ja sijaintidirektiivien avulla
 
@@ -152,7 +152,7 @@ Valitse tämä vaihtoehto, jos haluat käyttää erästrategioita nimikkeille, j
 ### <a name="strategy"></a>Strategia
 
 -   **Konsolidoi** – Tätä strategiaa käytetään tietyssä sijainnissa olevien nimikkeiden konsolidoimiseen, kun vastaavat nimikkeet ovat jo käytettävissä.. Tämä toimii vain Aseta-tyyppiselle sijaintidirektiiville. Aseta-tyypin yleinen määritys on, että konsolidointi suoritetaan ensimmäisellä toimintorivillä ja seuraavalla toimintorivillä konsolidointia ei suoriteta. Tuotteiden konsolidointi tehostaa keräystä vastaisuudessa.
--   **Täsmäytä pakkausmäärä** – Tätä strategiaa käytetään varmistamaan, onko keräyssijainnille määritetty pakkausmäärä. Tämä toimii vain Kerää-tyyppiselle sijaintidirektiiville. 
+-   **Täsmäytä pakkausmäärä** – Tämä strategiaa etsii sijainnin, jossa on tarkan vaaditun määrän sisältävä rekisterikilpi. Sitä ei voi käyttää sellaisten sijaintien osalta, jotka eivät ole rekisterikilpihallittuja. Tämä strategia toimii vain Kerää-tyyppiselle sijaintidirektiiville.
 -   **FEFO-erävaraus** – Tätä strategiaa käytetään, kun varasto paikannetaan käyttämällä erän vanhentumispäivää ja se kohdistetaan erävaraukseen. Voit käyttää tämän strategian vain eränimikkeissä. Tämä toimii vain Kerää-tyyppiselle sijaintidirektiiville. 
 -   **Pyöristä kokonaiseen rekisterikilpeen** – Tätä strategiaa käytetään varastomäärän pyöristämiseen ylöspäin vastaamaan kerättäviin nimikkeisiin määritettyä rekisterikilven määrää. Tätä strategiaa voi käyttää vain Kerää-tyyppisen sijaintidirektiivin täydennystyypille. 
 -   **Tyhjä sijainti ilman saapuvia töitä** – Tätä strategiaa käytetään tyhjien sijaintien paikantamiseen. Sijainnin katsotaan olevan tyhjä, jos sillä ei ole fyysistä varastoa, eikä odotettuja saapuvia töitä. Tätä strategiaa käytetään vain Aseta-tyyppiselle sijaintidirektiiville. 

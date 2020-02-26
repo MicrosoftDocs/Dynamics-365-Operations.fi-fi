@@ -1,7 +1,7 @@
-Kun kopioit tietokantaa ympäristöstä toiseen, sinun on varmistettava kaikkien Retail-komponenttien ajantasaisuus suorittamalla ympäristön uudelleenvalmistelutyökalu, jotta kopioitu tietokanta toimisi oikein.
+Kun kopioit tietokantaa ympäristöstä toiseen, sinun on varmistettava kaikkien Commerce-komponenttien ajantasaisuus suorittamalla ympäristön uudelleenvalmistelutyökalu, jotta kopioitu tietokanta toimisi oikein.
 
 > [!IMPORTANT]
-> Suosittelemme, että suoritat tämän toimenpiteen riippumatta siitä, käytetäänkö Retail-komponentteja vai ei, koska Retail-toiminnallisuus sisältyy kaikkiin ympäristöihin. 
+> Suosittelemme, että suoritat tämän toimenpiteen riippumatta siitä, käytetäänkö Commerce-komponentteja vai ei, koska Commerce-toiminnallisuus sisältyy kaikkiin ympäristöihin. 
 
 Ennen jatkamista sinun on varmistettava, että seuraavat edellytykset täyttyvät:
 1. Jos päivität heinäkuun 2017 versioon (tunnetaan myös nimellä 7.2) 7.2.11792.56024, ota käyttöön seuraavat sovelluksen X++ -hotfix-korjaukset kohdeympäristössä ennen tietojen päivityksen suorittamista kyseisessä ympäristössä. Tämä estää tietojen päivityksen aikana tapahtuvia erilaisia virheitä:

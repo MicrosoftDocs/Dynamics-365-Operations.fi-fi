@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 8743183c46463395cad3138261860442701e0178
-ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
+ms.openlocfilehash: c5a3a90b0065f8cd076117818df810cf10202d29
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781893"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030965"
 ---
 # <a name="revenue-recognition-overview"></a>Tuottokirjausten yleiskatsaus
 
@@ -37,9 +37,9 @@ Yleensä tuoton kirjausprosessia voidaan käyttää seuraavien tehtävien suorit
 * Kohdista tuotto sen takaamiseksi, että asianmukainen tuottohinta tunnistetaan moniosaisten tilausten komponenttien arvon perusteella.
 * Siirrä tuottoa käyttäen tuottoaikataulua, joka edustaa sopimuksen voimassaoloaikaa sekä prosenttiosuuksia tuoton kirjaamiselle ajan kuluessa.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44iER]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]
 
-[Tuoton tunnistaminen Dynamics 365 Financessa](https://youtu.be/v3amIsiqvoo) -video (yllä) kuuluu YouTubessa saatavilla olevaan [Finance and Operations -toistolistaan.](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW)
+[Tuoton tunnistaminenDynamics 365 Financessa](https://youtu.be/v3amIsiqvoo) -video (yllä) kuuluu [Finance and Operations -soittolistaan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) YouTubessa.
 
 Tuoton kirjausominaisuus tarjoaa joustavan kehyksen, jonka avulla voit määrittää yrityskohtaiset säännöt, joiden avulla voidaan tunnistaa tuottohinta ja tuottoaikataulu.
 

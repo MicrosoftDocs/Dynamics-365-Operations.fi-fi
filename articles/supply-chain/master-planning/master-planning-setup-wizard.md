@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 9d7da31f2df31c7e5cbac73b3232233090ac369e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635123"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031064"
 ---
 # <a name="master-planning-setup-wizard"></a>Pääsuunnittelun asetusten ohjattu toiminto
 
@@ -32,7 +32,7 @@ ms.locfileid: "2635123"
 
 Tässä ohjeaiheessa on opas **pääsuunnittelun asetusten ohjattuun toimintoon**. Se selittää, miten parametriehdotukset lasketaan, ja sisältää myös esimerkkejä, jotka näyttävät, miten eri yritykset määrittävät pääsunnittelun liiketoimintatarpeidensa perusteella.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
 [Pääsuunnittelun asetusten ohjattu toiminto Dynamics 365 Supply Chain Managementissa](https://youtu.be/c-e6n-8rZb4) -video (näkyy ylempänä) sisältyy [Finance and Operations -soittolistaan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), joka on saatavilla YouTubessa.
 
@@ -184,7 +184,7 @@ Ohjatussa toiminnossa seuraavat arvot syötetään Contoso Manufacturerille:
 Contoso Retailer on muotialan jakeluyritys. Se käyttää pääsuunnittelua laskeakseen, milloin osto tilaukset tulisi sijoittaa sen ennustetun myynnin perusteella. Tässä muutamia sen ominaisuuksista:
 
 - Contoso Retailer ennustaa myyntiä kysynnän ennusteen avulla. Ostotilaukset suunnitellaan ennusteen mukaan.
-- Vähittäismyymälät käyttävät täydennysehdotuksia.
+- Liikkeet käyttävät täydennysehdotuksia.
 - Kaikkien nimikkeiden läpimenoaika päävarastosta kuhunkin myymälään on noin kaksi viikkoa.
 
 Ohjatussa toiminnossa seuraavat arvot syötetään Contoso Retailerille:
@@ -208,4 +208,4 @@ Ohjatussa toiminnossa seuraavat arvot syötetään Contoso Retailerille:
     - **Kysymys:** "Haluatko sisällyttää kysyntää hyväksytyistä ehdotuksista vähittäismyymälöiden täydentämiseksi?"
     - **Vastaus:** "Kyllä, kuten tässä pääsuunnitelmassa on määritelty". Syötetään **1 päivä**.
 
-    Contoso käyttää vähittäismyymälöiden hyväksyttyjä ehdotuksia luodakseen suunniteltuja ostotilauksia näiden myymälöiden täydentämiseksi. Koska pääsuunnittelu suoritetaan joka päivä, edellisen päivän ehdotukset sisällytetään suunnitteluun.
+    Contoso käyttää liikkeiden hyväksyttyjä ehdotuksia luodakseen suunniteltuja ostotilauksia näiden myymälöiden täydentämiseksi. Koska pääsuunnittelu suoritetaan joka päivä, edellisen päivän ehdotukset sisällytetään suunnitteluun.

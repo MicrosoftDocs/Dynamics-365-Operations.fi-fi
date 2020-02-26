@@ -3,7 +3,7 @@ title: Hyväksyntäprosessien lisääminen työnkulkuun
 description: Määritä hyväksyntäprosessin ominaisuudet seuraavan menettelyn avulla.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1f58e227542b1e5ca1235748d14e71bddac826ee
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811378"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983761"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Hyväksyntäprosessien lisääminen työnkulkuun
 
@@ -138,11 +138,12 @@ Voit lähettää käyttäjille ilmoituksia, kun asiakirja on hyväksytty, hylät
 
 ## <a name="specify-a-final-approver"></a> Lopullisen hyväksyjän määrittäminen
 
-Voit halutessasi määrittää lopullisen hyväksyjän skenaarioissa, joissa hyväksyjä on henkilö, joka lähetti asiakirjan hyväksyttäväksi. Määritä lopullinen hyväksyjä käymällä läpi seuraavat vaiheet.
+Voit määrittää lopullisen hyväksyjän skenaarioille, joissa hyväksyjä on asiakirjan hyväksyttäväksi lähettänyt henkilö ja asetus Estä hyväksyntä lähettäjän toimesta on käytössä. Määritä lopullinen hyväksyjä käymällä läpi seuraavat vaiheet.
 
-1. Napsauta vasemmassa ruudussa **Lisäasetukset**.
-2. Valitse **Käytä lopullista hyväksyjää** -valintaruutu.
-3. Valitse luettelosta käyttäjä, joka on lopullinen hyväksyjä.
+1. Valitse hyväksyntäelementti työnkulkueditorissa hiiren kakkospainikkeella ja valitse **Ominaisuudet**, mikä avaa **Ominaisuudet**-lomakkeen.
+2. Napsauta vasemmassa ruudussa **Lisäasetukset**.
+3. Valitse **Käytä lopullista hyväksyjää** -valintaruutu.
+4. Valitse luettelosta käyttäjä, joka on lopullinen hyväksyjä.
 
 ## <a name="set-a-time-limit"></a>Aikarajan määrittäminen
 

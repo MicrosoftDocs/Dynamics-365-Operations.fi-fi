@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 642cb5c145dec68631eb9ab27d926ba8ab75c59b
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914907"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001826"
 ---
 # <a name="customize-site-navigation"></a>Sivuston selauksen mukauttaminen
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten luodaan mukautettu online-siirtymishierarkia, jonka avulla tuotteita voidaan järjestellä Microsoft Dynamics 365 Commerce -sivuston selaamista varten.
@@ -35,11 +35,11 @@ Tässä ohjeaiheessa kerrotaan, miten luodaan mukautettu online-siirtymishierark
 
 Verkkomyymälöissä asiakkaat yleensä voivat etsiä ja selata tuotteita siirtymällä tuoteluokissa. Tätä ominaisuutta käytetään yleensä sivun yläosassa olevien välilehtien tai vasemmalla olevan siirtymispalkin avulla. Dynamics 365 Commerce -sovelluksessa voit luoda luokan siirtymisen ja eri luokkien tuotteiden hierarkiarakenteen ja hallita sitä.
 
-## <a name="create-a-retail-channel-navigation-hierarchy"></a>Vähittäismyyntikanavan siirtymishierarkian luominen
+## <a name="create-a-channel-navigation-hierarchy"></a>Luo kanavan siirtymishierarkia
 
-Voit luoda vähittäismyyntikanavan siirtymishierarkian seuraavasti.
+Voit luoda kanavan siirtymishierarkian seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti \> Tuotteet ja luokat \> Luokan ja tuotteiden hallinta**.
+1. Siirry kohtaan **Retail ja Commerce \> Tuotteet ja luokat \> Luokka- ja tuotehallinta**.
 1. Valitse **Luokan hierarkiat** ja valitse sitten **Uusi**.
 1. Anna hierarkialle nimi.
 
@@ -57,28 +57,28 @@ Oletusarvoisesti määrittämäsi luokat näkyvät sivustossa aakkosjärjestykse
 
 ## <a name="assign-a-category-hierarchy-type"></a>Määritä luokkahierarkiatyyppi
 
-1. Siirry kohtaan **Vähittäismyynti \> Tuotteet ja luokat \> Luokan ja tuotteiden hallinta**.
+1. Siirry kohtaan **Retail ja Commerce \> Tuotteet ja luokat \> Luokka- ja tuotehallinta**.
 1. Valitse **Luokkahierarkiat**.
 1. Valitse toimintoruudun **Luokkahierakia**-välilehden **Määritys**-ryhmässä **Liitä hierarkiatyyppi**.
 1. Valitse **Uusi**.
-1. Valitse **Luokkahierarkian tyyppi** -kentässä **Vähittäismyyntikanavan siirtymishierarkia**.
+1. Valitse **Luokkahierarkian tyyppi** -kentässä **Kanavan siirtymishierarkia**.
 1. Valitse **Luokkahierarkia**-kentässä aiemmin valittu kanavan siirtymishierarkia.
 
 ## <a name="publish-new-or-updated-navigation-hierarchies"></a>Uusien tai päivitettyjen siirtymishierarkioiden julkaiseminen
 
 Voit määrittää siirtymishierarkian käyttöön verkkomyymälässä seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti \> Kanavan asetukset \> Kanavan luokat ja tuotemääritteet**.
+1. Valitse **Retail ja Commerce \> Kanavan asetukset \> Kanavaluokat ja tuotemääritteet**.
 1. Valitse vasemmanpuoleisesta puusta verkkomyymälä.
 1. Valitse **Julkaise kanavan päivitykset**.
-1. Siirry kohtaan **Vähittäismyynti \> Vähittäismyynnin IT \> Jakeluaikataulu**.
+1. Mene kohtaan **Retail ja Commerce \> Retail ja Commerce IT \> Jakeluaikataulu**.
 1. Etsi luettelosta **Työ 1040** ja valitse se.
 1. Valitse **Suorita nyt**.
 1. Toista vaiheet 5 ja 6 töille 1070 ja 1150.
 
 ## <a name="show-categories-on-your-site"></a>Luokkien näyttäminen sivustossa
 
-Jos haluat näyttää luokkahierarkian verkkomyymälässä, lisää siirtymisvalikkomoduuli sopivaan sijaintiin mallissa tai osassa. Tämä siirtymisvalikkomoduuli näyttää nyt siirtymishierarkian, jos olet julkaissut vähittäismyynnin siirtymishierarkian kanavassa, johon sivusto on sidottu.
+Jos haluat näyttää luokkahierarkian verkkomyymälässä, lisää siirtymisvalikkomoduuli sopivaan sijaintiin mallissa tai osassa. Tämä siirtymisvalikkomoduuli näyttää nyt siirtymishierarkian, jos olet julkaissut siirtymishierarkian kanavassa, johon sivusto on sidottu.
 
 > [!NOTE]
 > Myymälän aloituspakettiin sisältyvän siirtymisvalikkomoduulin avulla käyttäjät voivat siirtyä vain luokissa, joissa ei ole aliluokkia. Jos asiakkaiden on voivat siirtyä luokissa, joissa on aliluokkia, mukauta siirtymisvalikkomoduulia.

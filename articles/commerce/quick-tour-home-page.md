@@ -3,7 +3,7 @@ title: Aloitussivun yleiskatsaus
 description: Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen aloitussivun yleiskatsaus.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fb42c9aa2e2ef1d620b310e9d30dbae5f84c788
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698277"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025968"
 ---
 # <a name="overview-of-the-home-page"></a>Aloitussivun yleiskatsaus
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen aloitussivun yleiskatsaus.
@@ -45,19 +45,19 @@ Aloitussivun pääosaan voi lisätä tuotteiden, luokkien tai kampanjoiden tieto
 
 - **Hero** – Yleensä pääosan yläosassa oleva ensimmäinen nimike näyttää yhden tai useita hero-kuvia. Niissä kerrotaan myymälän uusista tuotteista ja kampanjoista. Jos hero-kuvia on useita, niitä isännöidään karusellimoduulissa. Tällöin asiakkaat voivat selata niitä.
 
-    Seuraavassa kuvassa on esimerkki aloitussivusta, jossa pääosan ensimmäinen nimike on hero-moduuli, jonka nimi on **Uusi tuote**.
+    Seuraavassa kuvassa on esimerkki aloitussivusta, jossa pääosan ensimmäinen nimike on hero-sisältölohkon asettelumoduuli, jonka nimi on Uusi tuote.
 
     ![Esimerkki hero-moduulista](./media/Hero.PNG)
 
-- **Ominaisuus** – Ominaisuusmoduulia käytetään tuotteiden tai kampanjoiden markkinoinnissa kuvien ja tekstin yhdistelmän avulla. Ominaisuusmoduuleja voidaan käyttää itsenäisesti tai niitä voidaan isännöidä karusellimoduulissa.
+- **Ominaisuus** – Ominaisuussisältölohkon asettelumoduulia käytetään tuotteiden tai kampanjoiden markkinoinnissa kuvien ja tekstin yhdistelmän avulla. Ominaisuussisältöjä voidaan käyttää itsenäisesti tai niitä voidaan isännöidä karusellimoduulissa.
 
-    Seuraavassa kuvassa on aloitussivun ominaisuusmoduulien esimerkki.
+    Seuraava kuva näyttää esimerkin sisältölohkon moduulin sijoittelusta kotisivulle.
 
     ![Esimerkkejä ominaisuusmoduuleista](./media/Feature.PNG)
 
-- **Sisällönsijoittelu** – Sisällönsijoittelumoduulia käytetään useiden tuotteiden tai tuoteluokkien esittelyyn käyttämällä monisarakkeisessa asettelussa olevien kuvien ja tekstien yhdistelmää. Aiemmin tässä ohjeaiheessa olleen aloitussivun kuvassa käytettiin sisällönsijoittelumoduulia kolmisarakkeisen asettelun **Kauppa - naiset**-, **Kauppa - miehet**- ja **Kauppa - lisävarusteet** -nimikkeissä.
+- **Laatta** – Sisältölohkon asettelumoduulin laattojen asettelua käytetään useiden tuotteiden tai tuoteluokkien esittelyyn käyttämällä monisarakkeisessa asettelussa olevien kuvien ja tekstien yhdistelmää. Aiemmin tässä ohjeaiheessa olleen aloitussivun kuvassa käytettiin laattojen asettelua kolmisarakkeisen asettelun **Kauppa - naiset**-, **Kauppa - miehet**- ja **Kauppa - lisävarusteet** -nimikkeissä.
 - **Videotoistin** – Videotoistinmoduulin avulla voidaan esitellä videosisältöä aloitussivulla. Aiemmin tässä ohjeaiheessa olleen aloitussivun kuva sisältää videotoistinmoduulin.
-- **Sisällöntäyteinen lohko** – Sisällöntäyteistä lohkomoduulia voi käyttää tekstisisällön esittelyssä aloitussivulla yhden sarakkeen tai usean sarakkeen asettelussa.
+- **Tekstilohko** – Sisällöntäyteistä lohkomoduulia voi käyttää tekstisisällön esittelyssä aloitussivulla yhden sarakkeen tai usean sarakkeen asettelussa.
 - **Tuotesuositukset** – Tuotesuositusten moduuleja käytetään näytettäessä aloitussivulla luetteloita, kuten **Uudet**, **Suositut** ja **Myydyimmät**. Näissä luetteloissa näytetään tuotteet ostotrendien perusteella. Ne voidaan luoda algoritmien avulla tai niitä voi kuratoida manuaalisesti. Luetteloiden avulla asiakkaat löytävät nopeasti suosituimmat tuotteet ja voivat jatkaa ostosten tekemistä.
 
     Seuraavassa kuvassa on esimerkki aloitussivun tuotesuositusten moduuleista.

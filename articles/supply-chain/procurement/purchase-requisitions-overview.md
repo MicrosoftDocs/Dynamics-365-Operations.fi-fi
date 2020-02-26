@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bfec4660d9e6b0898cf81e1f1fdd2e4c1fdcaef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0a51d443e40dbf948a06657293dcca77dc177896
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815339"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003650"
 ---
 # <a name="purchase-requisition-overview"></a>Ostoehdotusten yleiskatsaus
 
@@ -81,7 +81,7 @@ Ostoehdotuksen yleinen tila määritetään ostoehdotusrivien tilan mukaan. Siis
 <li><strong>Tarkistuksessa</strong> – Ostoehdotusrivit on lähetetty tarkistettavaksi. Kun ostoehdotusrivin työnkulkuprosessi on valmis, rivi pysyy <strong>Tarkistuksessa</strong>-tilassa kunnes kaikki muut ostoehdotusrivit on tarkistettu.</li>
 <li><strong>Hylätty</strong> – Ostoehdotusrivin on hylätty. Hylättyjä ostoehdotuksen rivejä voidaan muokata ja lähettää uudelleen.</li>
 </ul>
-Jos lähetät hylätyn ostoehdotusrivin uudelleen, tarkistusprosessi käynnistyy uudelleen kaikille ostoehdotuksen riveille, jotka ovat yhä tarkistuksessa. <strong>Huomautus:</strong> Voit peruuttaa jo lähetetyn ostoehdotuksen. Kun peruutat ostoehdotuksen, kaikki sen ostoehdotusrivit peruutetaan samalla. Peruutetut ostoehdotusrivit on mahdollista poistaa.</td>
+Jos lähetät hylätyn ostoehdotusrivin uudelleen, tarkistusprosessi käynnistyy uudelleen kaikille ostoehdotuksen riveille, jotka ovat yhä tarkistuksessa. </br><strong>Huomautus:</strong> Voit peruuttaa jo lähetetyn ostoehdotuksen. Kun peruutat ostoehdotuksen, kaikki sen ostoehdotusrivit peruutetaan samalla. Peruutetut ostoehdotusrivit on mahdollista poistaa.</td>
 </tr>
 <tr class="odd">
 <td>Hylätty</td>
@@ -109,7 +109,7 @@ Jos lähetät hylätyn ostoehdotusrivin uudelleen, tarkistusprosessi käynnistyy
 <tr class="odd">
 <td>Peruutettu</td>
 <td>Peruutettu</td>
-<td>Ostoehdotus ja kaikki ostoehdotusrivit on peruutettu. <strong>Huomautus:</strong> Jos et enää tarvitse ostoehdotusrivillä olevaa nimikettä, ostoehdotusrivi on peruutettava, jos se on jo hyväksytty. Ainoastaan hyväksytyt ostoehdotusrivit on mahdollista peruuttaa. Jos yksikään ostoehdotusrivi on vielä tarkistettavana, ostoehdotuksen yleinen tila on <strong>Tarkistettavana</strong>. Tässä tapauksessa voit peruuttaa ostoehdotuksen ja poistaa haluamasi ostoehdotusrivin.</td>
+<td>Ostoehdotus ja kaikki ostoehdotusrivit on peruutettu.</br> <strong>Huomautus:</strong> Jos et enää tarvitse ostoehdotusrivillä olevaa nimikettä, ostoehdotusrivi on peruutettava, jos se on jo hyväksytty. Ainoastaan hyväksytyt ostoehdotusrivit on mahdollista peruuttaa. Jos yksikään ostoehdotusrivi on vielä tarkistettavana, ostoehdotuksen yleinen tila on <strong>Tarkistettavana</strong>. Tässä tapauksessa voit peruuttaa ostoehdotuksen ja poistaa haluamasi ostoehdotusrivin.</td>
 </tr>
 <tr class="even">
 <td>Suljettu</td>
@@ -156,7 +156,8 @@ Joissain tapauksissa on aloitettava tarjouspyyntöprosessi, jonka kautta tunnist
 
 Voit laittaa ostoehdotuksen pitoon valitsemalla **Pidossa**-valintaruudun **Ostoehdotuksen tiedot** -sivulla. Ostoehdotuksen käsittely voi jatkua vasta, kun poistat eston poistamalla tämän valintaruudun.  
 
-**Huomautus:** eProcurement-järjestelmässä ostoehdotuksesi tarjouspyyntö voi antaa toimittajien lisätä vaihtoehtoisia rivejä. Tässä tapauksessa hyväksytyt vaihtoehdot näkyvät ostoehdotuksessa.
+> [!NOTE]
+> eProcurement-järjestelmässä ostoehdotuksesi tarjouspyyntö voi antaa toimittajien lisätä vaihtoehtoisia rivejä. Tässä tapauksessa hyväksytyt vaihtoehdot näkyvät ostoehdotuksessa.
 
 ## <a name="demand-consolidation"></a>Kysynnän konsolidointi
 Yhdistämällä useita ostoehdotusrivejä useista ostoehdotuksista voit lisätä neuvotteluvoimaa toimittajia kohtaan ja saavuttaa paremman hinnoittelun, pienemmät lähetys- ja käsittelykustannukset ja vähentää yleiskustannuksia.  
@@ -172,7 +173,8 @@ Konsolidointiehdotus on joukko ostoehdotusrivejä, jotka on ryhmitetty niin, ett
 
 Kun olet lisännyt hankintarivejä konsolidointiehdotukseen ja tehnyt tarvitsemasi muutokset, voit luoda ostotilauksen konsolidoiduille ostoehdotusriveille.  
 
-**Huomautus:** Muutokset, jotka teet ostoehdotusriviin **Ostoehdotuksen konsolidointi** -sivulla näkyvät luomassasi ostotilauksessa. Ostoehdotuksen rivi säilyy kuitenkin muuttumattomana ehdotuksessa, jotta historiatiedot säilyvät.  
+> [!NOTE]
+> Muutokset, jotka teet ostoehdotusriviin **Ostoehdotuksen konsolidointi** -sivulla näkyvät luomassasi ostotilauksessa. Ostoehdotuksen rivi säilyy kuitenkin muuttumattomana ehdotuksessa, jotta historiatiedot säilyvät.  
 
 Voidaksesi luoda ostotilauksen ostoehdotusriveille, joille ei ole valittavissa kysynnän konsolidointia tai joita ei ole valittu konsolidointiehdotukseen on käsiteltävä manuaalisesti.
 

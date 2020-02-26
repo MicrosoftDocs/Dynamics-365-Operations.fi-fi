@@ -1,6 +1,6 @@
 ---
 title: Verkkokanavaraporttien luominen
-description: Tässä aiheessa kuvataan, miten Microsoft Dynamics 365 Retailissa luodaan raportteja verkkokanavassa.
+description: Tässä aiheessa kuvataan, miten Microsoft Dynamics 365 Commercessa luodaan raportteja verkkokanavassa.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77737c134df8f3ba598fe9026fa7c01ca9976733
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: fd40aabdf40e0f2bb257b914326df5595a0e6945
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698047"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003001"
 ---
 # <a name="generate-online-channel-reports"></a>Verkkokanavaraporttien luominen
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Tässä aiheessa kuvataan, miten Microsoft Dynamics 365 Retailissa luodaan raportteja verkkokanavassa.
+Tässä aiheessa kuvataan, miten Microsoft Dynamics 365 Commercessa luodaan raportteja verkkokanavassa.
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Voit luoda ja tarkastella useita Retail-raportteja. Ne osoittavat, miten verkkokanava toimii.
+Voit luoda ja tarkastella useita Commerce-raportteja. Ne osoittavat, miten verkkokanava toimii.
 
 ## <a name="channel-summary-report"></a>Kanavan yhteenvetoraportti
 
@@ -46,7 +46,7 @@ Voit luoda ja tarkastella useita Retail-raportteja. Ne osoittavat, miten verkkok
 
 Voit luoda **Kanavan yhteenveto** -raportin seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan yhteenveto -raportti**.
+1. Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan yhteenveto -raportti**.
 1. Syötä päivämäärä **Päivämäärästä**-kenttään.
 1. Kirjoita päivämäärä **Päivämäärään**-kenttään.
 1. Valitse **Kanava**-kentässä verkkokanava.
@@ -58,7 +58,7 @@ Voit luoda **Kanavan yhteenveto** -raportin seuraavasti.
 
 Voit luoda **Kanavan myynti vuoden mukaan** -raportin seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan myynti vuoden mukaan -raportti**.
+1. Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan vuosikohtainen myynti -raportti**.
 1. Anna vuosi **Kalenterivuodesta**-kenttään.
 1. Anna vuosi **Kalenterivuoteen**-kenttään.
 1. Valitse **Kanava**-kentässä verkkokanava.
@@ -70,7 +70,7 @@ Voit luoda **Kanavan myynti vuoden mukaan** -raportin seuraavasti.
 
 Voit luoda **Kanavan myynti tunnin mukaan** -raportin seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan myynti tunnin mukaan -raportti**.
+1. Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Kanavan tuntikohtainen myynti -raportti**.
 1. Syötä päivämäärä **Päivämäärästä**-kenttään.
 1. Kirjoita päivämäärä **Päivämäärään**-kenttään.
 1. Valitse **Kanava**-kentässä verkkokanava.
@@ -82,7 +82,7 @@ Voit luoda **Kanavan myynti tunnin mukaan** -raportin seuraavasti.
 
 Voit luoda **Parhaat asiakkaat** -raportin seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat asiakkaat -raportti**.
+1. Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat asiakkaat -raportti**.
 1. Syötä päivämäärä **Päivämäärästä**-kenttään.
 1. Kirjoita päivämäärä **Päivämäärään**-kenttään.
 1. Valitse **Kanava**-kentässä verkkokanava.
@@ -94,7 +94,7 @@ Voit luoda **Parhaat asiakkaat** -raportin seuraavasti.
 
 Voit luoda **Parhaat alennukset** -raportin seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat alennukset -raportti**.
+1. Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat alennukset -raportti**.
 1. Syötä päivämäärä **Päivämäärästä**-kenttään.
 1. Kirjoita päivämäärä **Päivämäärään**-kenttään.
 1. Valitse **Kanava**-kentässä verkkokanava.
@@ -106,7 +106,7 @@ Voit luoda **Parhaat alennukset** -raportin seuraavasti.
 
 Voit luoda **Parhaat tuotteet** -raportin seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat tuotteet -raportti**.
+1. Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Parhaat tuotteet -raportti**.
 1. Syötä päivämäärä **Päivämäärästä**-kenttään.
 1. Kirjoita päivämäärä **Päivämäärään**-kenttään.
 1. Valitse **Kanava**-kentässä verkkokanava.
@@ -118,7 +118,7 @@ Voit luoda **Parhaat tuotteet** -raportin seuraavasti.
 
 Voit luoda **Luokan myynti** -raportin seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti \> Kyselyt ja raportit \> Myyntiraportit \> Luokan myynti -raportti**.
+1. Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Luokan myyntiraportti**.
 1. Syötä päivämäärä **Päivämäärästä**-kenttään.
 1. Kirjoita päivämäärä **Päivämäärään**-kenttään.
 1. Valitse **Kanava**-kentässä verkkokanava.
@@ -126,11 +126,11 @@ Voit luoda **Luokan myynti** -raportin seuraavasti.
 
 ## <a name="organization-sales-report"></a>Organisaation myyntiraportti
 
-**Organisaation myynti** -raportti näyttää vähittäismyymälöiden suorituskyvyn organisaatioyksiköiden mukaan. Tämä raportti sisältää myynnin määrän ja summan myymälän mukaan sekä kunkin myymälän katetuoton. Organisaatioyksikkö perustuu oletusraportointihierarkiaan.
+**Organisaation myynti** -raportti näyttää myymälöiden suorituskyvyn organisaatioyksiköiden mukaan. Tämä raportti sisältää myynnin määrän ja summan myymälän mukaan sekä kunkin myymälän katetuoton. Organisaatioyksikkö perustuu oletusraportointihierarkiaan.
 
 Voit luoda **Organisaation myynti** -raportin seuraavasti.
 
-1. Siirry kohtaan **Vähittäismyynti \> Kyselyt ja raportit \> Myyntiraportit \> Organisaation myynti -raportti**.
+1. Siirry kohtaan **Retail ja Commerce \> Kyselyt ja raportit \> Myyntiraportit \> Organisaation myyntiraportti**.
 1. Syötä päivämäärä **Päivämäärästä**-kenttään.
 1. Kirjoita päivämäärä **Päivämäärään**-kenttään.
 1. Valitse **OK**.

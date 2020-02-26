@@ -10,17 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Talent
+ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 272cf991301fa5c2df8a6de3354588fc372fa92f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c2ad5f30ed0e69df1769eb0379b5da2865d4ce4f
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248730"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005606"
 ---
 # <a name="my-team-mobile-workspace"></a>Oman ryhmän mobiilityötila
 
@@ -30,7 +30,7 @@ Tässä ohjeaiheessa on tietoja **oman ryhmän** mobiilityötilasta. Esimiehet v
 
 Tämä mobiilityötila on tarkoitettu käytettäväksi Finance and Operations -mobiilisovelluksen kanssa.
 
-## <a name="overview"></a>Yleiskuvaus 
+## <a name="overview"></a>Yleiskatsaus 
 Esimiehet voit tehdä seuraavia tehtäviä **oman ryhmän** mobiilityötilassa:
 
 - Esimiehen suorista alaisista koostuvan luettelon tarkastelu.
@@ -53,11 +53,11 @@ Mobiilityötilaa ei voi käyttää, ennen kuin seuraavat edellytykset ovat kunno
 <tr class="odd">
 <td>Organisaatiossa on oltava käytössä jokin seuraavista tuotteista:
 <ul><li>Finance and Operations -sovellus</li>
-<li>Microsoft Dynamics 365 Talent</li>
+<li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Järjestelmänvalvoja</td>
-<td>Jos Finance and Operations -sovellusta ei ole vielä otettu organisaatiossa käyttöön, lisätietoja on kohdassa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön ottaminen käyttöön</a>. Jos Talentia ei ole vielä otettu organisaatiossa käyttöön, järjestelmänvalvoja voi hakea kokeiluversion <a href="https://www.microsoft.com/dynamics365/talent">Talent-sivulta</a>.
+<td>Jos Finance and Operations -sovellusta ei ole vielä otettu organisaatiossa käyttöön, lisätietoja on kohdassa <a href="../deployment/deploy-demo-environment.md">Esittely-ympäristön käyttöönotto</a>. Jos Human Resourcesia ei ole vielä otettu organisaatiossa käyttöön, järjestelmänvalvoja voi hakea kokeiluversion <a href="https://dynamics.microsoft.com/human-resources/overview/">Human Resources -sivulta</a>.
 </td>
 </tr>
 <tr class="even">

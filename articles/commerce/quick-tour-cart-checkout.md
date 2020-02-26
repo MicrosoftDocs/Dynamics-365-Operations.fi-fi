@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 347db3af36521e11dc70d5188dcc54b07efa1fbe
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 07905b9a843eb42d3031dcc80b4e185c122a9e50
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697839"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002932"
 ---
 # <a name="overview-of-cart-and-checkout-pages"></a>Ostoskori- ja kassasivun yleiskatsaus
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa on Microsoft Dynamics 365 Commercen ostoskori- ja kassasivun yleiskatsaus.
@@ -65,11 +65,11 @@ Kassasivun päätekstiosa kerää tilauksen tiedot. Näitä tietoja ovat toimitu
 
 ### <a name="shipping-address"></a>Toimitusosoite
 
-Toimitusosoite on pakollinen, jos nimikkeet on toimitettava. Kunkin alueen toimitusosoitteiden muoto voidaan määrittää Dynamics 365 Retail -sovelluksessa. Jos nimikkeet toimitetaan esimerkiksi Yhdysvaltoihin, toimitusosoitteessa on oltava katuosoite, osavaltio ja postinumero. Toimitusosoitekentille tehdään joitakin perussyötteiden tarkistuksia, kuten aakkosnumeeristen merkkien, enimmäispituuden ja numeroiden tarkistus. Vaikka osoitteen oikeellisuutta ei sinänsä tarkisteta, tämä tarkistus voidaan tehdä käyttämällä mukautettuja kolmannen osapuolen palveluita.
+Toimitusosoite on pakollinen, jos nimikkeet on toimitettava. Kunkin alueen toimitusosoitteiden muoto voidaan määrittää Dynamics 365 Commerce -sovelluksessa. Jos nimikkeet toimitetaan esimerkiksi Yhdysvaltoihin, toimitusosoitteessa on oltava katuosoite, osavaltio ja postinumero. Toimitusosoitekentille tehdään joitakin perussyötteiden tarkistuksia, kuten aakkosnumeeristen merkkien, enimmäispituuden ja numeroiden tarkistus. Vaikka osoitteen oikeellisuutta ei sinänsä tarkisteta, tämä tarkistus voidaan tehdä käyttämällä mukautettuja kolmannen osapuolen palveluita.
 
 Toimitusosoitetta käytetään kaikissa ostoskorin nimikkeissä, joille on valittu toimitusvaihtoehto. Jos käytössä on kassatyönkulku, joka sisältyy verkossa olevaan aloituspakettiin, yksittäisiä ostoskorin nimikkeitä ei voi toimittaa eri osoitteisiin. Jos tarvitset tätä ominaisuutta, se voidaan ottaa käyttöön kassamoduulien mukauttamisen avulla.
 
-Kun toimitusosoite on annettu, Dynamics 365 Commerce -verkkokaupassa käytettävissä olevat toimitustavat ovat näkyvissä. Toimitustavat ja niitä tukevat osoitteet voidaan määrittää Retail-sovelluksessa.
+Kun toimitusosoite on annettu, Dynamics 365 Commerce -verkkokaupassa käytettävissä olevat toimitustavat ovat näkyvissä. Toimitustavat ja niitä tukevat osoitteet voidaan määrittää Commerce-sovelluksessa.
 
 ### <a name="payment"></a>Maksu
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
-ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
+ms.openlocfilehash: aa60f3bc35f2bc10902da060ccacd7767bc9af8f
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935384"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005723"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Pilvipalvelun ja paikallisten ominaisuuksien vertailu
 
@@ -32,8 +32,8 @@ Tässä aiheessa esitetään vertailu pilvessä ja paikan päällä käytettävi
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
-- [Dynamics 365 Retail](cloud-prem-comparison.md#dynamics-365-retail)
-- [Dynamics 365 Talent](cloud-prem-comparison.md#dynamics-365-talent)
+- [Dynamics 365 Commerce](cloud-prem-comparison.md#dynamics-365-commerce)
+- [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources)
 
 Mukana on tietoja myös [kehitys- ja hallintaominaisuuksista](cloud-prem-comparison.md#development-and-administration-features).
 
@@ -45,8 +45,7 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 |---------------------|-----------------------------|-----------|-----------------|
 | Yhteensopivuus ja sertifiointi        |                                                                                           | Kyllä       | Kyllä             |
 |                                      | SOC 1 Type 1 -sertifikaatti                                                                | Kyllä       | Ei              |
-| Tietojen hallinta ja integraatio      |                                                                                           | Kyllä       | Kyllä             |
-|                                      | Määritysperustainen laajennus                                                            | Kyllä       | En              |
+| Tietojen hallinta ja integraatio      |                                                                                           | Kyllä       | Kyllä             
 |                                      | Tietojen vienti omaan tietovarastoon                                                    | Kyllä       | Kyllä             |
 |                                      | Lisäpäivitysten vienti tietoyksikköön                                 | Kyllä       | Kyllä              |
 |                                      | Tietojen integroinnit                                                                         | Kyllä       | Kyllä             |
@@ -146,15 +145,15 @@ Seuraavissa taulukoissa luetellaan sovellusalueet. Pilvipalvelun ja paikallisen 
 | Tuki                              |                                                                                           | Kyllä       | Kyllä             |
 |                                      | Nopea tuki Ohje ja tuki -valikon kautta                                             | Kyllä       | Ei              |
 
-## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
+## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-Lisätietoja paikallisissa ympäristöissä käytettävissä olevista Retail-ominaisuuksista on kohdassa [Paikallisten ympäristöjen Retail-ominaisuudet](../../../retail/retail-onprem.md).
+Lisätietoja paikallisissa ympäristöissä käytettävissä olevista ominaisuuksista on kohdassa [Paikallisten ympäristöjen Retail-ominaisuudet](../../../retail/retail-onprem.md).
 
-## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
+## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 
 | **Alue**         | **Ominaisuus**         | **Pilvi** | **Paikallinen** |
 |------------------|---------------------|-----------|-----------------|
-| Kaikki Talent-alueet | Kaikki Talent-ominaisuudet | Kyllä       | Ei              |
+| Kaikki henkilöstöhallinnon alueet | Kaikki henkilöstöhallinnon toiminnot | Kyllä       | Ei              |
 
 ## <a name="development-and-administration-features"></a>Kehitys- ja hallintaominaisuudet
 

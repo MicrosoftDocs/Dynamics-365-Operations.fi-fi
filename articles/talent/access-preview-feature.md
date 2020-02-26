@@ -1,12 +1,12 @@
 ---
 title: Hallitse ominaisuuksia
 description: Tässä aiheessa kuvataan, kuinka järjestelmänvalvoja voi ottaa käyttöön esiversio-ominaisuudet Microsoft Dynamics 365 Talentissa. Siinä listataan myös ominaisuudet, jotka ovat tällä hetkellä käytössä esikatselua varten.
-author: tracykeya
+author: andreabichsel
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,21 +15,21 @@ ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: trkeya
-ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.author: anbichse
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: AX 7.1.0, Talent
+ms.openlocfilehash: d818e9e04ce88e5ab285ef8176334809447fb477
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833297"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006424"
 ---
 # <a name="manage-features"></a>Hallitse ominaisuuksia
 
 [!include [banner](includes/banner.md)]
 
-Parannamme jatkuvasti henkilöstöresurssien hallinnan (HCM) ominaisuuksia Microsoft Dynamics 365 Talentissa ja haluamme tarjota ne asiakkaillemme mahdollisimman pian. Järjestelmänvalvojat voivat tarkastella ja käyttää esiversio-ominaisuuksia ympäristöissään. Nämä ominaisuudet ovat lähes valmiita yleiseen käyttöön ja ne ovat läpäisseet laajan testauksen. Haluamme saada vielä viimeisen asiakaspalautekierroksen, ennen kuin hyväksymme ominaisuudet yleisesti saataville.
+Parannamme jatkuvasti henkilöstöresurssien hallinnan (HCM) ominaisuuksia Microsoft Dynamics 365 Human Resourcesissa ja haluamme tarjota ne asiakkaillemme mahdollisimman pian. Järjestelmänvalvojat voivat tarkastella ja käyttää esiversio-ominaisuuksia ympäristöissään. Nämä ominaisuudet ovat lähes valmiita yleiseen käyttöön ja ne ovat läpäisseet laajan testauksen. Haluamme saada vielä viimeisen asiakaspalautekierroksen, ennen kuin hyväksymme ominaisuudet yleisesti saataville.
 
 Tässä aiheessa kuvataan, kuinka voit ottaa käyttöön esiversio-ominaisuudet. Siinä listataan myös ominaisuudet, jotka ovat tällä hetkellä saatavilla esikatselua varten. Tätä luetteloa päivitetään sitä mukaa, kun ominaisuuksia julkaistaan yleiseen käyttöön ja uusia ominaisuuksia tuodaan esikatseltavaksi. Erillistä ilmoitusta ei anneta, kun uusia ominaisuuksia julkaistaan esikatseluun. Ominaisuudet tuodaan vain käyttäjien saataville. Lisätietoja Talentin uusista ominaisuuksista on kohdassa [Uudet tai muuttuneet ominaisuudet Dynamics 365 Talentissa](./whats-new.md)ja [Dynamics 365- ja Power Platform -julkaisutiedot](https://docs.microsoft.com/business-applications-release-notes) -kohdissa.
 
@@ -54,50 +54,6 @@ Jos haluat käyttää esikatselutoimintoja, sinun on ensin otettava ne käyttö�
 > [!NOTE]
 > Jotkin esikatseluominaisuudet saattavat edellyttää lisämääritystä. Viimeistele sen määritys seuraamalla esikatselutoiminnon vieressä olevaa linkkiä.
 
-### <a name="core-hr"></a>Henkilöstöhallinnon perusversio
-
-1. Kirjaudu sisään Talentiin.
-2. Valitse **Järjestelmän hallinta**ja valitse sitten **Linkit**-välilehti.
-3. Valitse **Järjestelmänhallinta** -sivun **Asetukset** -kohdasta **Järjestelmän parametrit**.
-4. Valitse **Järjestelmän parametrit** -sivulla **Esikatseluominaisuudet**-välilehti.
-5. Aseta kohtaan **Kaikkien käyttäjien esikatselutila** vaihtoehto **Kyllä**, jos haluat käyttää esikatselutoimintoja.
-
-    ![Ota esiversio-ominaisuudet käyttöön Core HR:ssä](./media/corehr-enable-preview-features.png)
-
-> [!NOTE]
-> Jos et halua käyttää esikatselutoimintoja, tee samat toimet, mutta aseta kohtaan **Kaikkien käyttäjien esikatselutila** vaihtoehto **Ei** Kun esiversio-ominaisuudet poistetaan käytöstä, käyttäjät eivät voi käyttää niitä ja kyseisiin ominaisuuksiin liittyvissä prosesseissa voi esiintyä virheitä.
-
-### <a name="onboard"></a>Perehdytys
-
-Microsoft Dynamics 365 Talent: Onboardissa ei ole tällä hetkellä käytettävissä esiversiotoimintoja.
-
-## <a name="features-that-are-currently-in-preview"></a>Tämänhetkiset esiversio-ominaisuudet
-
-### <a name="attract"></a>Kerätä
-
-- [Hakijasuositus](./intelligent-recommendations.md#candidate-recommendations) – Jos työpaikkaan on yli kymmenen hakijaa tai potentiaalista ehdokasta, joilla on ansioluettelo tai täydellinen profiili, työpaikan vaatimuksia parhaiten vastaavat hakijat tulevat näkyviin kyseisen työn **Hakijat harkittavaksi** -osassa.
-- [Työsuositus](./intelligent-recommendations.md#job-recommendations) - Jos urasivustollesi on lähetetty yli kymmenen työpaikkaa, Attract tarjoaa työsuosituksia prospekteille.
-- [Broadbean-integrointi](./posting-jobs-external.md#post-jobs-to-broadbean) - Voit lähettää työpaikkoja Attractista Broadbeaniin, ulkoiseen urasivustoon. Kun olet määrittänyt tämän esikatselutoiminnon, sinun on täytettävä määritykset syöttämällä Broadbean-käyttäjänimesi, asiakastunnuksesi ja salaustunnuksesi.
-- [Analyysit](./analytic-reports.md) – Analytics Hubissa työhönottotiimit voivat tarkastella sekä yksittäisen työn keskeisiä mittareita että yhteenlaskettuja mittareita kaikkien töiden yhteydessä.
-- [EEO](./activities-attract.md) – Uudet tehtävätyypit mahdollistavat valmiiksi täytetyn lomakkeen käytön, jolla kerätään ehdokkaan Equal Employment Opportunity (EEO) - ja Office of Federal Contract Compliance Program (OFCCP) -tiedot. Ennalta määritettyä lomaketta ei voi muokata.
-- [Prospektisuositus](./intelligent-recommendations.md#prospect-recommendations) – Attract arvioi aiempia hakijoita ja nykyisiä ehdokkaita ja antaa luettelon prospekteista, jotka sopivat työhösi.
-- [Osuvuushaku](./attract-talent-pools.md#search-and-view-candidate-profiles) – Voit etsiä koko ehdokastietokannasta tiettyjä osaamisalueita, nimiä tai koulutustaustoja. Attract tekee hakuja koko profiilista ja korostaa kaikki löytämänsä osumat. Attract hakee myös kaikki hakijan käytettävissä olevat asiakirjat ja luokittelee älykkäästi hakutulokset.
-- [Tehtävän kohderyhmä](./whats-new-talent-march-20.md#setting-the-audience-on-activities) – Voit määrittää tehtävien (kuten haastattelun, aikataulun tai palautteen) kohderyhmäksi **Kaikki ehdokkaat**, **Sisäiset ehdokkaat** tai **Ulkoiset ehdokkaat**. Asiakastoiminnot, kuten YouTube-videot ja WWW-sisältö ja Microsoft Forms voidaan toimittaa kaikille ehdokkaille, vain sisäisille ehdokkaille, vain ulkoisille ehdokkaille tai työhönottoryhmälle.
-- [Käytä LinkedIniä](./career-site.md#enable-applying-for-jobs-with-linkedin-profiles) – Voit määrittää vaihtoehdon Attract-urasivustollesi, jotta työnhakijat voivat hakea LinkedInin kautta. Tämä toiminto virtaviivaistaa ehdokkaiden hakuprosessia antamalla heidän käyttää LinkedIn-profiiliaan, jotta heidän hakemuksensa täytetään automaattisesti urasivustossa.
-- [Lähdeseuranta](./source-tracking.md) – Attract seuraa hakijasovellusten lähdettä ja antaa arvokasta tietoa, jonka avulla voit kohdentaa työhönottopyrkimyksiäsi. Voit myös valita sovelluslähteen samalla, kun lisäät hakijan työ- tai lahjakkuusalueelle.
-- [Hopeamitalisti](./whats-new-talent-march-20.md#designate-silver-medalists-to-assign-high-value-applicants-for-future-positions) – Jos jotkin ehdokkaista sopivat hyvin organisaatioosi, mutta et antanut tarjousta nykyiseen paikkaan, voit määrittää heidät hopeamitalisteiksi. Tämä toiminto auttaa lyhentämään palkkausaikaa, kun seuraavan kerran vastaava paikka on tarjolla.
-
-### <a name="core-hr"></a>Henkilöstöhallinnon perusversio
-
-- [Vahvista toimihierarkian tiedot](./whats-new-talent-may-13-2019.md#new-page-to-validate-position-hierarchy-data) – Voit vahvistaa kaikkien vahingossa tuotujen kehäviitteiden johtamishierarkian.
-- [Määritä poissaolotyyppien syykoodit](./whats-new-talent-may-13-2019.md#specify-reason-codes-on-leave-types) – Voit määrittää poissaolotyyppien syykoodit.
-- [Vaadi syykoodit poissaolopyynnöille](./whats-new-talent-may-13-2019.md#require-reason-codes-for-specific-leave-types-on-time-off-requests) – Voit poissaolotyyppien syykoodien määrittämisen lisäksi vaatia syykoodeja poissaolopyyntöjä varten.
-- [Anna loma-ja poissaolotapahtumaluettelo HR:lle](./whats-new-talent-may-13-2019.md#provide-a-leave-and-absence-transaction-list-for-hr) – Voit tarkastella loma- ja poissaolotapahtumien luetteloa, jotta saat tietoja aikasaldoista.
-
-### <a name="onboard"></a>Perehdytys
-
-Tällä hetkellä ei ole käytettävissä esikatselutoimintoja kohteelle: Onboard
-
 ## <a name="feedback"></a>Palaute
 
 Haluamme kuulla kokemuksistasi näistä esikatseluominaisuuksista. Kannustamme sinua antamaan säännöllisesti palautetta, kun käytät näitä sivustoja tai muita ominaisuuksia:
@@ -106,7 +62,6 @@ Haluamme kuulla kokemuksistasi näistä esikatseluominaisuuksista. Kannustamme s
 - Ilmoita meille, mitä ominaisuuksia haluaisit tuotteeseen ja kerro, mitä muutoksia nykyisiin ominaisuuksiin pitäisi mielestäsi tehdä. Ehdota tuoteideoita seuraavilla sivustoilla:
 
     - [Attract-ideat](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
-    - [Core HR -ideat](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
     - [Onboard-ideat](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard)
 
 Varmista, että et sisällytä mitään henkilötietoja (eli henkilökohtaisesti tunnistettavia tietoja) palautteeseesi tai tuotearvioihisi. Kerättyjä tietoja voidaan analysoida tarkemmin, eikä niitä käytetä pyyntöihin vastaamiseen tietosuojalakien mukaisesti. Henkilökohtaisiin tietoihin, jotka kerätään erillään näistä ohjelmista, sovelletaan [Microsoftin tietosuojalausuntoa](https://privacy.microsoft.com/privacystatement).

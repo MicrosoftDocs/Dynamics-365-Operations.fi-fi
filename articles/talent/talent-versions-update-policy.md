@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
-ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
+ms.openlocfilehash: 509827d5736887f56e7754a0760af7dea76277f7
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2818476"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006052"
 ---
 # <a name="talent-system-requirements"></a>Talentin järjestelmävaatimukset
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 Talent -vaatimukset, kuten Attract, Onboard ja Core HR. Siinä esitellään myös Talentin käytettävissä olevat maat ja alueet sekä tiedot kielistä ja lokalisoinnissa Talentia koskevia tietoja varten. Lisäyksissä tämä ohjeaihe sisältää Talentin päivityskäytännön.
+Tässä ohjeaiheessa kuvataan Microsoft Dynamics 365 Talent -vaatimukset, kuten Attract ja Onboard. Siinä esitellään myös Talentin käytettävissä olevat maat ja alueet sekä tiedot kielistä ja lokalisoinnissa Talentia koskevia tietoja varten. Lisäyksissä tämä ohjeaihe sisältää Talentin päivityskäytännön.
 
 ## <a name="supported-web-browsers"></a>Tuetut selaimet
 

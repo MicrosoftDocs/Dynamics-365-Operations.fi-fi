@@ -3,7 +3,7 @@ title: Tuotesuositusluetteloiden lisääminen sivuille
 description: Tässä ohjeaiheessa kerrotaan, miten tuotesuositusluettelo lisätään sähköisen kaupankäynnin sivulle.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,26 +19,26 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4f2b1e9768b34d341adb3c11e475daa7a1d1882f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5c71c1cf91b1913f44546f40620aff358cf256b2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770502"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001297"
 ---
-# <a name="add-product-recommendation-lists-to-e-commerce-pages"></a>Lisää tuotesuositusluetteloja sähköisen kaupankäynnin sivuille
+# <a name="add-recommendation-lists-to-a-site"></a>Suositusluetteloiden lisääminen sivustoon
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Tässä ohjeaiheessa kerrotaan, miten tuotesuositusluettelo lisätään sähköisen kaupankäynnin sivulle.
 
-1. Valitse aiemmin luodulla sähköisen kaupankäynnin muokkaussivulla **Lisää moduuli**.
+1. Valitse aiemmin luodulla sähköisen kaupankäynnin sivustomuodostinsivulla **Lisää moduuli**.
 2. Hae **Tuotekokoelma**-moduulia.
 3. Valitse ohjatussa moduulin luomistoiminnossa sivulle lisättävä luettelo.
 4. Tallenna muutokset.
 
-Lisätietoja sivulle lisättävien luetteloiden tyypeistä on kohdassa [Tuotesuositusten yleiskuvaus](product-recommendations.md).
+Lisätietoja sivulle lisättävien luetteloiden tyypeistä on kohdassa [Tuotekokoelmamoduulin yleiskuvaus](product-collection-module-overview.md).
 
 
 ## <a name="additional-resources"></a>Lisäresurssit
@@ -50,3 +50,5 @@ Lisätietoja sivulle lisättävien luetteloiden tyypeistä on kohdassa [Tuotesuo
 [Luo kuratoituja tuotesuositusluetteloita](create-editorial-recommendation-lists.md)
 
 [Hallitse AI-ML-pohjaisia tuotesuositustuloksia](modify-product-recommendation-results.md)
+
+[Tuotekokoelmamoduulin yleiskuvaus](product-collection-module-overview.md)

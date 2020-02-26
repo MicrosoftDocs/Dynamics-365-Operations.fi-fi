@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 45a2335d7a661ddc1d8907c56ae8193387f44e26
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771395"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030863"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Mukautetun tallennussijainnin määrittäminen luoduille asiakirjoille
 
@@ -56,7 +56,7 @@ Tarvitset myös tämän topologian kehitysympäristön käyttöoikeuden.
 
 ER-muodon luomien asiakirjojen reitityksen määrittämistä varten on määritettävä [Sähköisen raportoinnin (ER) kohteet](electronic-reporting-destinations.md). Jokaisessa ER-kohteessa, joka on määritetty tallentamaan muodostetut asiakirjat tiedostoina, on määritettävä tiedoston hallintakehyksen asiakirjatyyppi. Eri asiakirjatyyppejä voidaan käyttää reitittämään eri ER-muotojen muodostamia asiakirjoja.
 
-1. Lisää aiemmin luodulle tai tuodulle ER-muodolle uusi [asiakirjatyyppi](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). Seuraavassa kuvassa asiakirjan tyyppi on **FileX**.
+1. Lisää aiemmin luodulle tai tuodulle ER-muodolle uusi [asiakirjatyyppi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). Seuraavassa kuvassa asiakirjan tyyppi on **FileX**.
 2. Voit erottaa tämän asiakirjatyypin muista asiakirjatyypeistä sisällyttämällä tietyn avainsanan sen nimeen. Esimerkiksi seuraavassa kuvassa nimi on **(PAIKALLINEN) kansio**.
 3. Määritä **Luokka**-kentässä **Liitä tiedosto**.
 4. Määritä **Ryhmä**-kentässä **Tiedosto**.
@@ -70,7 +70,7 @@ ER-muodon luomien asiakirjojen reitityksen määrittämistä varten on määrite
 
 Tarkastele **ERDocuManagement**-luokan **insertFile()**-menetelmän koodia. Huomaa, että **AttachingFile()**-tapahtuma muodostetaan, kun muodostettua tiedostoa liitetään tietueeseen.
 
-```
+```xpp
 /// <summary>
 /// Inserts file as attachment in Document Management.
 /// </summary>
@@ -131,7 +131,7 @@ public DocuRef insertFile(
     1. Tallenna muodostetut tiedostot sen palvelimen paikallisen tiedostojärjestelmän kansioon, joka suorittaa Application Object Server (AOS) -palvelun.
     2. Tallenna muodostetut tiedostot vain, kun uutta asiakirjatyyppiä (kuten **FileX**-tyyppi, jonka nimessä on avainsana (PAIKALLINEN)) käytetään liitettäessä tiedostoa tietueeseen ER-suoritustyölokissa.
 
-    ```
+    ```xpp
     class ERDocuSubscriptionSample
     {
         void new()
