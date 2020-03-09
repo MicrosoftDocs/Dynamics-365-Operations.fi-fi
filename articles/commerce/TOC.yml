@@ -70,11 +70,11 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Päivitys ja N-1-tuki
               items:
-                - name: Retailin päivitys ja N-1 tuki
+                - name: Vähittäismyynnin päivitys ja N-1 tuki
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Vaiheittain tapahtuvan käyttöönoton (N-1) asentaminen, määrittäminen ja käyttöön siirtyminen'
                   href: dev-itpro/n-1-installation-configuration.md
-                - name: Päivitä Retail-kanavan laajennus viimeisimpään Retail SDK -pakettiin
+                - name: Päivitä vähittäismyyntikanavan laajennus viimeisimpään Retail SDK -pakettiin
                   href: dev-itpro/retailSDK-update.md
             - name: Uudet ja muuttuneet ominaisuudet
               items:
@@ -166,6 +166,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
                 - name: Tallennetut näkymät
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+                - name: Ruudukon ominaisuudet
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Mukautettujen kenttien luominen ja käsitteleminen
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: PowerApps-sovellusten upottaminen
@@ -438,8 +440,6 @@
                   href: configure-call-center-delivery.md
                 - name: Petoshälytysten määrittäminen ja käyttäminen
                   href: set-up-fraud-alerts.md
-                - name: Jatkuvuusohjelmien määrittäminen puhelinkeskuksille
-                  href: set-up-continuity-program.md
             - name: Lisäkanavan määritykset
               items:
                 - name: Kanavan lisääminen organisaatiohierarkiaan
@@ -450,6 +450,12 @@
                       href: omni-auto-charges.md
                     - name: Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille
                       href: pro-rate-charges-matching-lines.md
+                - name: Jatkuvuusohjelmien hallinta
+                  items:
+                    - name: Jatkuvuusohjelmien määrittäminen puhelinkeskuksille
+                      href: set-up-continuity-program.md
+                    - name: Jatkuvuusaikataulujen määrittäminen
+                      href: tasks/define-continuity-schedules.md
                 - name: Vähittäismyymälän hallinta
                   items:
                     - name: Myymälän aukioloaikojen luominen ja muuttaminen
@@ -460,8 +466,6 @@
                   items:
                     - name: Puhelinkeskustilausten pidon määrittäminen ja käyttäminen
                       href: work-with-order-holds.md
-                    - name: Jatkuvuusaikataulujen määrittäminen
-                      href: tasks/define-continuity-schedules.md
                 - name: Maksut
                   items:
                     - name: Maksutavat
@@ -478,6 +482,8 @@
                       href: dev-itpro/adyen-connector.md
                     - name: Online-maksuvälineiden tallentaminen Adyen-yhdistimen avulla
                       href: dev-itpro/adyen-connector-listpi.md
+                    - name: Lahjakortti- ja hyvityslaskutoimintojen saumaton offline-tilaan vaihtaminen
+                      href: dev-itpro/seamless-offline-improvements.md
                     - name: Laskunmaksutapojen määrittäminen
                       href: payinvoice.md
                     - name: Maksujen kaksoiskappaleiden estäminen
@@ -494,9 +500,9 @@
                   href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Vähittäismyyntituotteiden määrittäminen
                   href: set-up-retail-products.md
-                - name: Vähittäismyynnin tuotehierarkia
+                - name: Tuotehierarkia
                   items:
-                    - name: Vähittäismyyntihierarkiat
+                    - name: Commerce-hierarkiat
                       href: retail-hierarchies.md
                     - name: Uuden tuotehierarkian luominen
                       href: create-product-hierarchy.md
@@ -624,6 +630,12 @@
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Sääntöjen ja parametrien määrittäminen cross-dockingille ja ostotarjonnalle
                       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+                    - name: Myyntipisteen saapuva varastotoiminto
+                      href: pos-inbound-inventory-operation.md
+                    - name: Myyntipisteen lähtevä varastotoiminto
+                      href: pos-outbound-inventory-operation.md
+                    - name: Vähittäismyyntikanavien varaston käytettävyyden laskeminen
+                      href: calculated-inventory-retail-channels.md
                 - name: Ostotilaukset
                   items:
                     - name: Ostotilausten yleiskatsaus
@@ -726,6 +738,18 @@
               href: tasks/store-configurations-retail-statements.md
             - name: Online-myyntien ja -maksujen kirjaaminen
               href: tasks/posting-online-sales-payments.md
+        - name: Työtekijän tehtävien hallinta
+          items:
+            - name: Tehtävien hallinnan yleiskatsaus
+              href: task-mgmt-overview.md
+            - name: Tehtävien hallinnan määrittäminen
+              href: task-mgmt-configure.md
+            - name: Tehtäväluetteloiden luominen ja tehtävien lisääminen
+              href: task-mgmt-create-lists.md
+            - name: Tehtäväluetteloiden määrittäminen myymälöille tai työntekijöille
+              href: task-mgmt-assign-lists.md
+            - name: Tehtävien hallinta myyntipisteessä
+              href: task-mgmt-pos.md
         - name: Sähköisen kaupankäynnin sivuston hallinta
           items:
             - name: Verkkokaupan yleiskatsaus
@@ -880,6 +904,8 @@
                   items:
                     - name: Ostoruutumoduuli
                       href: add-buy-box.md
+                    - name: Luokitusten ja arvosteluiden moduulit
+                      href: ratings-reviews-modules.md
                 - name: Ostomoduulit
                   items:
                     - name: Ostoskorimoduuli
@@ -1056,9 +1082,11 @@
               items:
                 - name: Asiakirjojen raportointipalveluiden yleiskatsaus
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+                - name: Tuetut fontit
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
                 - name: 'SSRS:n määrittäminen paikallisia käyttöönottoja varten'
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
-                - name: Tulostus
+                - name: Tulostetaan
                   items:
                     - name: Asiakirjojen tulostuksen yleiskatsaus
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
@@ -1834,8 +1862,6 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Moduulien esikatselu ja virheenkorjaus
                       href: e-commerce-extensibility/test-module.md
-                    - name: Moduulien virheenkorjaus
-                      href: e-commerce-extensibility/debug-modules.md
                     - name: Moduulien testaaminen vedosten avulla
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Moduulien testaaminen sivuvedosten avulla
@@ -1972,10 +1998,12 @@
                   href: dev-itpro/pos-trigger-printing.md
                 - name: Mukautettujen ohjausobjektien lisääminen muihin kuin näytön suunnitteluohjelmiin perustuviin myyntipistenäkymiin
                   href: dev-itpro/pos-control-non-screen.md
-                - name: POS-mallien suorittaminen
+                - name: Myyntipistemallien suorittaminen
                   href: dev-itpro/pos-run-samples.md
                 - name: Laitehallinnan käyttöönotto-ohje
                   href: implementation-considerations-devices.md
+                - name: Myyntipisteen ostoskorinäkymän tapahtumat ja käsittelijät
+                  href: dev-itpro/cart-view-handlers.md
             - name: Hardware Stationin laajennettavuus
               items:
                 - name: Hardware Station ja laajennettavuus
@@ -2032,6 +2060,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Kirjaa laajennustapahtumat Application Insightsiin
                   href: dev-itpro/commerce-application-insights.md
+                - name: Asynkronisten Commerce (CRT) -ohjelmointirajapintojen luominen liiketoimintalogiikalle
+                  href: dev-itpro/async-commerce-extension.md
             - name: Maksuyhdistimen laajennettavuus
               items:
                 - name: Maksun integroinnin luominen maksupäätteelle
@@ -2048,6 +2078,8 @@
                   href: payment-connector-data-fields.md
                 - name: Kaksoismaksuilta suojauksen kytkeminen päälle maksujen yhdistäjässä
                   href: dev-itpro/duplicate-payment-protection.md
+                - name: Maksun pakkauksen luominen Service Fabric -käyttöönottojen sovellusten hallintaa varten
+                  href: dev-itpro/payment-connector-package.md
             - name: Kolmannen osapuolen sähköisen kaupankäynnin laajennettavuus
               items:
                 - name: Verkkokauppojen määrittäminen
@@ -2060,8 +2092,6 @@
               href: dev-itpro/extension-resource-localization.md
     - name: Finance and Operations -sovellusten kehitys ja hallinnointi
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Dynamics 365 Retail
-      href: index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Supply Chain Management

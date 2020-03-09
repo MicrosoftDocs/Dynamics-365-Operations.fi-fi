@@ -45,7 +45,11 @@
                 - name: Platform update 15 (maaliskuu 2018)
                   href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Poistetut tai vanhentuneet ominaisuudet
-              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+              items:
+                - name: Poistetut tai vanhentuneet Platform-ominaisuudet
+                  href: get-started/removed-deprecated-features-platform-updates.md
+                - name: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
+                  href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: 'AX 2012 -ominaisuudet, joita on lykätty'
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: 'Ominaisuudet, joita ei ole otettu käyttöön paikallisissa ympäristöissä'
@@ -144,7 +148,9 @@
                       href: data-entities/data-integration-cds.md
                     - name: 'Synkroninen, kaksisuuntainen integrointi'
                       items:
-                        - name: Lähes reaaliaikainen tietojen integraatio
+                        - name: Kaksoiskirjoituksen aloitussivu
+                          href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Kaksoiskirjoituksen yleiskatsaus
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Organisaatiohierarkia Common Data Servicessä
                           href: data-entities/dual-write/organization-mapping.md
@@ -396,7 +402,7 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Päivitysten käyttöönotto pilviympäristöissä
                   href: deployment/apply-deployable-package-system.md
-                - name: Päivitysten ja laajennusten kohdistaminen pilvessä ylläpidetyn Retail-kanavan osiin
+                - name: Päivitysten ja laajennusten kohdistaminen pilvessä ylläpidetyn vähittäismyyntikanavan osiin
                   href: deployment/Update-retail-channel.md
                 - name: Alusta Retail Cloud Scale Unit
                   href: deployment/Initialize-Retail-Channels.md
@@ -940,7 +946,7 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: Kumppanien LCS
                   href: lifecycle-services/getting-started-lcs.md
-                - name: Uutta
+                - name: Lifecycle Servicesin uudet ja muuttuneet ominaisuudet
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Tunnetut ongelmat
                   href: lifecycle-services/known-issues.md
@@ -1685,6 +1691,4 @@
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../../commerce/index.md
