@@ -3,7 +3,7 @@ title: Työnkulun usein kysytyt kysymykset
 description: Tässä ohjeaiheessa on usein kysyttyjä kysymyksiä työnkulkujärjestelmästä.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdddd26a662e9334f6d3c9806871df5b58ec03c7
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: f7408424ff9344b3dcd054106f3f10b0dc1d687b
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934906"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076083"
 ---
 # <a name="workflow-faq"></a>Työnkulun usein kysytyt kysymykset
 
@@ -34,7 +34,7 @@ Kun työnimike hylätään, kyseinen työnimike valmistuu hylättynä. Toinen ty
 Nämä ilmoitukset on tarkoitettu eri työnimikkeelle, mutta niiden samankaltaisuus voi aiheuttaa hämmennystä. Pyrimme parantamaan tätä myöhemmissä julkaisuissa.
 
 ## <a name="why-are-my-workflow-exports-failing"></a>Miksi työnkulun vienti ei ole mahdollista?
-Työnkulun viennissä on tällä hetkellä rajoitus, joka estää työnkulkujen nimiä ylittämästä 48 merkkiä. Jos nimi on pidempi kuin 48 merkkiä, palvelin ei voi todentaa pyyntöä ja / tai estää tiedoston viemisen ilman tiedostotyyppiä. Seuraava blogikirjoitus sisältää lisätietoja [Työnkulun viennin vian määrityksestä](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting).
+Työnkulun viennissä on tällä hetkellä rajoitus, joka estää työnkulkujen nimiä ylittämästä 48 merkkiä. Jos nimi on pidempi kuin 48 merkkiä, palvelin ei voi todentaa pyyntöä ja / tai estää tiedoston viemisen ilman tiedostotyyppiä. Saat lisätietoja blogikirjoituksesta [Työnkulun viennin vianmääritys](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting).
 
 ## <a name="can-the-submitter-of-a-workflow-also-approve-the-workflow"></a>Voiko työnkulun lähettäjä myös hyväksyä työnkulun?
 Kyllä, Työnkulun lähettäjä voi myös hyväksyä työnkulun, jos määritys sen sallii. Voit estää tämän valitsemalla kohdassa **Järjestelmänhallinta > Työnkulku > Työnkulun parametrit > Yleinen > Hyväksyjä > Estä lähettäjän hyväksyntä** **Kyllä**.
@@ -52,5 +52,9 @@ Seuraavat seikat on otettava huomioon, kun työnkulkuihin lisätään hälytyksi
 
 Tiivistäen voi todeta, että jos käyttäjä ei saa oikeaa ilmoitusta toimintokeskuksesta, kun heille määritetään työnkulun työnimike, he voivat muodostaa lisäilmoituksia tai toisia ilmoituksia käyttämällä [työnkulun liiketoimintatapahtumia](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) yhdessä Microsoft Power Automaten kanssa.
 
-## <a name="workflow-editor-has-trouble-starting-under-adfs"></a>Työnkulkueditorissa on ongelmia käynnistettäessä ADFS:n alla 
+## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Miksi työnkulkueditori ei voi käynnistyä AD FS -palvelun avulla?
 Kun Active Directory -liittämispalvelut (AD FS) suoritetaan päivitetyssä ympäristössä, työnkulkueditorilla saattaa olla ongelmia käynnistymisen yhteydessä. Jos näin on, varmista, että URL-osoite https://dynamicsaxworkfloweditor/ lisätään ominaisuuteen **Microsoft Dynamics 365 for Operationsin paikallinen - työnkulku - natiivisovellus** ADFS-asetuksissa.
+
+## <a name="why-am-i-getting-sql-deadlocks-on-workflow-processing"></a>Miksi SQL lukkiutuu työnkulun käsittelyn aikana? 
+**Työnkulun nimikkeiden määrä erää kohti** -kentän oletusarvo on **Työnkulun parametrit** -sivulla on 0. Arvo 0 aiheuttaa sen, että oletusarvoksi muuttuu 20 nimikettä erää kohden. Ole varovainen tätä arvoa muuttaessasi, koska nimikkeiden suuri määrä erää kohti (> 40) voi aiheuttaa SQL-lukituksia.
+

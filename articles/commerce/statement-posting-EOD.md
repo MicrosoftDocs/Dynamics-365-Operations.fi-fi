@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 1e3fc0e8cb5c9a6cc7729dfbddd5d918a1d6bdb5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022410"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057252"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Laskelman kirjaamisen toiminnallisuuden parannukset
 
@@ -33,46 +33,46 @@ Tässä aiheessa kuvataan ensimmäinen joukko parannuksia, jotka on tehty laskel
 
 Oletusarvon mukaan Finance and Operations 7.3.2:n käyttöönoton yhteydessä ohjelma määritetään käyttämään vanhaa ominaisuutta laskelman kirjauksia varten. Ottaaksesi käyttöön parannetun laskelman kirjaustoiminnon sinun on otettava käyttöön sen määritysavain.
 
-- Siirry kohtaan **Järjestelmän hallinta**\> **Asetukset** \> **Käyttöoikeuden konfiguraatio**, ja poista sitten **Vähittäismyynti**-solmusta poista **Vähittäismyyntilaskelmat (vanhat)** -valintaruutu ja valitse **Vähittäismyyntilaskelmat**-valintaruutu.
+- Siirry kohtaan **Järjestelmän hallinta** \> **Asetukset** \> **Käyttöoikeuden konfiguraatio**, ja poista sitten **Vähittäismyynti ja kauppa**-solmusta poista **Laskelmat (vanhat)** -valintaruutu ja valitse **Laskelmat**-valintaruutu.
 
-Kun uusi **Vähittäismyyntilaskelmat**-määritysavain on käytössä, uusi valikkokohde nimeltä **Vähittäismyyntilaskelmat** on käytettävissä. Tämän valikkovaihtoehdon avulla voit luoda, laskea ja kirjata laskelmia manuaalisesti. Laskelmat, jotka aiheuttavat virheen eräkirjausprosessia käytettäessä, ovat myös saatavilla tämän valikkokohdan kautta. (Kun **Vähittäismyyntilaskelmat (vanha)** -määritysavain on käytössä, valikkokohteen nimi on **Avoimet laskelmat**.)
+Kun uusi **Laskelmat**-määritysavain on käytössä, uusi valikkokohde nimeltä **Laskelmat** on käytettävissä. Tämän valikkovaihtoehdon avulla voit luoda, laskea ja kirjata laskelmia manuaalisesti. Laskelmat, jotka aiheuttavat virheen eräkirjausprosessia käytettäessä, ovat myös saatavilla tämän valikkokohdan kautta. (Kun **Laskelmat (vanha)** -määritysavain on käytössä, valikkokohteen nimi on **Avoimet laskelmat**.)
 
-Retail sisältää seuraavat oikeellisuustarkistukset, jotka liittyvät näihin määritysavaimiin:
+Commerce sisältää seuraavat oikeellisuustarkistukset, jotka liittyvät näihin määritysavaimiin:
 
 - Kumpaakin määritysavainta ei voi ottaa käyttöön samanaikaisesti.
-- Samoja määritysavaimia on käytettävä kaikkiin toimintoihin, jotka suoritetaan tietyssä laskelmassa sen elinkaaren aikana (Luo, Laske, Tyhjennä, Kirjaa jne.). Et voi esimerkiksi luoda ja laskea laskelmaa, kun **Vähittäismyyntilaskelmat (vanhat)** -määritysavain on käytössä ja yrität kirjata samaa laskelmaa **Vähittäismyyntilaskelmat**-määritysavaimen ollessa käytössä.
+- Samoja määritysavaimia on käytettävä kaikkiin toimintoihin, jotka suoritetaan tietyssä laskelmassa sen elinkaaren aikana (Luo, Laske, Tyhjennä, Kirjaa jne.). Et voi esimerkiksi luoda ja laskea laskelmaa, kun **Laskelmat (vanhat)** -määritysavain on käytössä ja yrität kirjata samaa laskelmaa **Laskelmat**-määritysavaimen ollessa käytössä.
 
 > [!NOTE]
-> Suosittelemme, että käytät **Vähittäismyyntilaskelmat**-määritysavainta parannettua laskelman kirjaustoimintoa varten, ellei sinulla ole pakottava syytä **Vähittäismyyntilaskelmat (vanhat)** -määritysavaimen käyttämiseksi. Microsoft jatkaa uuden kirjaustoiminnon parantamista, joten on tärkeää, että otat sen käyttöön mahdollisimman pian. Vanhan laskelman kirjaustoiminnon poistaminen käytöstä alkaa versiossa 8.0.
+> Suosittelemme, että käytät **Laskelmat**-määritysavainta parannettua laskelman kirjaustoimintoa varten, ellei sinulla ole pakottava syytä **Laskelmat (vanhat)** -määritysavaimen käyttämiseksi. Microsoft jatkaa uuden kirjaustoiminnon parantamista, joten on tärkeää, että otat sen käyttöön mahdollisimman pian. Vanhan laskelman kirjaustoiminnon poistaminen käytöstä alkaa versiossa 8.0.
 
 ## <a name="setup"></a>Määritys
 
-Laskelman kirjaamistoiminnon parantamisen myötä on otettu käyttöön kolme uutta parametria **Laskelma**-pikavälilehdellä **Kirjaus**-välilehdellä **Vähittäismyynnin parametrit** -sivulla:
+Laskelman kirjaamistoiminnon parantamisen myötä on otettu käyttöön kolme uutta parametria **Laskelma**-pikavälilehdellä **Kirjaus**-välilehdellä **Kaupan parametrit** -sivulla:
 
 - **Poista laskelman tyhjentäminen käytöstä** – tämä vaihtoehto on käytettävissä vain vanhassa laskelman kirjaamistoiminnossa. Suosittelemme, että määrität tämän asetuksen arvoksi **Ei** estääksesi käyttäjiä tyhjentämästä laskelmia, jotka ovat osittain kirjatussa tilassa. Jos käyttäjät poistavat laskelmia, jotka ovat osittain kirjatussa tilassa, niiden tiedot korruptoituvat. Määritä tämän asetukseksi **Kyllä** vain poikkeustapauksissa.
 - **Varaston varaaminen laskennan aikana** – Suosittelemme, että käytät **Kirjaa varasto** -erätyötä varaston varaamiseen ja määrität tämän asetuksen arvoksi **Ei**. Kun tämä vaihtoehto on **Ei**, parannettu laskelman kirjaustoiminto ei luoda varaston varaustapahtumia laskennan aikana (jos tapahtumia ei ole jo luotu **Kirjaa varasto** -erätyöllä). Sen sijaan toiminto luo varaston varaustapahtumat vain kirjauksen yhteydessä. Tämän toteutustapa on valittu sillä perusteella, että laskenta- ja kirjausprosessin välinen aikaikkuna on yleensä pieni. Js haluat varata varaston laskennan yhteydessä, voit määrittää asetukseksi **Kyllä**.
 
     Vanha laskelman kirjaustoiminto varaa aina varaston laskelman laskentaprosessissa (jos varausta ei ole jo tehty **Kirjaa varasto** -erätyöllä) riippumatta tästä asetuksesta.
 
-- **Poista pakollinen laskenta käytöstä** – kun asetukseksi on määritetty **Kyllä**, laskelma jatkuu kirjausprosessin aikana, vaikka ero lasketun summan ja transaktion summan välillä ylittää rajan, joka on määritetty vähittäismyymälöiden **Laskelma**-pikavälilehdessä.
+- **Poista pakollinen laskenta käytöstä** – kun asetukseksi on määritetty **Kyllä**, laskelma jatkuu kirjausprosessin aikana, vaikka ero lasketun summan ja transaktion summan välillä ylittää rajan, joka on määritetty myymälöiden **Laskelma**-pikavälilehdessä.
 
-Lisäksi seuraavat parametrit on esitelty **Eräkäsittely**-pikavälilehdellä **Kirjaus**-välilehdellä **Vähittäismyyntiparametrit**-sivun kirjausvälilehden eräkäsittelypikavälilehdessä: 
+Lisäksi seuraavat parametrit on esitelty **Eräkäsittely**-pikavälilehdellä **Kirjaus**-välilehdellä **Kaupan parametrit** -sivun kirjausvälilehden eräkäsittelypikavälilehdessä: 
 
 - **Rinnakkaisen laskelman kirjauksen enimmäismäärä** – Tämä kenttä määrittää useiden laskelmien kirjaamiseen käytettävien erätehtävien määrän. 
 - **Tilausten käsittelyn enimmäissäie** – Tämä kenttä edustaa laskelman kirjauksen eräajossa käytettävien säikeiden enimmäismäärää, kun halutaan luoda ja laskuttaa yhden laskelman myyntitilauksia. Laskelman kirjaus prosessissa käytettävien säikeiden kokonaismäärä lasketaan tämän parametrin arvon mukaan kerrottuna **Rinnakkaisen laskelman kirjausten enimmäismäärä**-parametrin arvolla. Tämän parametrin arvon määrittäminen liian suureksi voi vaikuttaa kielteisesti laskelman kirjausprosessin suorituskykyyn.
-- **Koontia varten sisällytettyjen tapahtuma rivien enimmäismäärä** – Tämä kenttä määrittää, montako tapahtumariviä sisällytetään yksittäiseen yhteenlaskettavaan tapahtumaan ennen uuden luomista. Yhdistetyt tapahtumat luodaan erilaisten koostekriteerien, kuten asiakkaan, liiketoiminnan päivän tai taloushallinnon dimensioiden, perusteella. On tärkeää huomata, että yksittäisen vähittäismyyntitapahtuman rivejä ei jaeta eri yhdistettyjen tapahtumien kesken. Tämä tarkoittaa, että on mahdollista, että yhdistettyjen tapahtumien rivien määrä on hieman suurempi tai pienempi niiden tekijöiden perusteella, kuten erillisten tuotteiden määrä.
-- **Säikeiden enimmäismäärä varastotapahtumien tarkistamista varten** – Tämä kenttä määrittää vähittäismyyntitapahtumien vahvistamiseen käytettävien säikeiden määrän. Retail-tapahtumien vahvistaminen on pakollinen vaihe, joka on suoritettava, ennen kuin tapahtumat voidaan noutaa lausekkeissa. Sinu on myös määritettävä uuden kirjausprosessin aikana **Lahjakorttituote** **Lahjakortti**-pikavälilehdessä **Vähittäiskaupan parametrit** -sivun **Kirjaus**-välilehdessä. Tämä on määritettävä myös silloin, kun organisaatio ei käytä lahjakortteja.
+- **Koontia varten sisällytettyjen tapahtuma rivien enimmäismäärä** – Tämä kenttä määrittää, montako tapahtumariviä sisällytetään yksittäiseen yhteenlaskettavaan tapahtumaan ennen uuden luomista. Yhdistetyt tapahtumat luodaan erilaisten koostekriteerien, kuten asiakkaan, liiketoiminnan päivän tai taloushallinnon dimensioiden, perusteella. On tärkeää huomata, että yksittäisen tapahtuman rivejä ei jaeta eri yhdistettyjen tapahtumien kesken. Tämä tarkoittaa, että on mahdollista, että yhdistettyjen tapahtumien rivien määrä on hieman suurempi tai pienempi niiden tekijöiden perusteella, kuten erillisten tuotteiden määrä.
+- **Säikeiden enimmäismäärä varastotapahtumien tarkistamista varten** – Tämä kenttä määrittää tapahtumien vahvistamiseen käytettävien säikeiden määrän. Tapahtumien vahvistaminen on pakollinen vaihe, joka on suoritettava, ennen kuin tapahtumat voidaan noutaa lausekkeissa. Sinun on myös määritettävä uuden kirjausprosessin aikana **Lahjakorttituote** **Lahjakortti**-pikavälilehdessä **Kaupan parametrit** -sivun **Kirjaus**-välilehdessä. Tämä on määritettävä myös silloin, kun organisaatio ei käytä lahjakortteja.
 
 > [!NOTE]
-> Kaikki asetukset ja parametrit, jotka liittyvät laskelman kirjauksiin ja jotka on määritetty vähittäismyymälöissä ja **Vähittäismyynnin parametrit** -sivulla, liittyvät parannettuun laskelman kirjaustoimintoon.
+> Kaikki asetukset ja parametrit, jotka liittyvät laskelman kirjauksiin ja jotka on määritetty vähittäismyymälöissä ja **Commerce-parametrit**-sivulla, liittyvät parannettuun laskelman kirjaustoimintoon.
 
 ## <a name="processing"></a>Käsittely
 
-Laskelmat voidaan laskea ja kirjata eränä valikkovaihtoehtojen **Laskelmien laskenta eräajona** ja **Laskelmien kirjaaminen eräajona** avulla. Vaihtoehtoisesti laskelmat voidaan laskea manuaalisesti ja kirjata käyttämällä parannetun laskelman kirjaustoiminnon **Vähittäismyyntilaskelmat**-valikkokohteella.
+Laskelmat voidaan laskea ja kirjata eränä valikkovaihtoehtojen **Laskelmien laskenta eräajona** ja **Laskelmien kirjaaminen eräajona** avulla. Vaihtoehtoisesti laskelmat voidaan laskea manuaalisesti ja kirjata käyttämällä parannetun laskelman kirjaustoiminnon **Laskelmat**-valikkokohteella.
 
 Prosessi ja vaiheet ja laskelmien eräkirjaamista varten ovat samat kuin vanhassa laskelman kirjaustoiminnossa. Laskelmien käsittelyn taustajärjestelmään on tehty kuitenkin merkittäviä parannuksia. Nämä parannukset tekevät prosessista luotettavamman ja ne parantavat tilojen ja virhetietojen näkyvyyttä. Käyttäjät voivat siten korjaa virheiden ensisijaiset syyt ja jatkaa kirjausprosessia ilman tietojen turmeltumista ja tietojen korjailua.
 
-Seuraavissa osissa kuvataan laskelmien kirjaustoiminnon tärkeimmät parannukset, jotka näkyvät vähittäismyyntilaskelmien ja kirjattujen laskelmien käyttöliittymässä.
+Seuraavissa osissa kuvataan laskelmien kirjaustoiminnon tärkeimmät parannukset, jotka näkyvät laskelmien ja kirjattujen laskelmien käyttöliittymässä.
 
 ### <a name="status-details"></a>Tilan tiedot
 
@@ -131,7 +131,7 @@ Kootun transaktion **Myyntitilauksen tiedot** -välilehdessä näkyvät seuraava
 - **Tila** – Kootun transaktion viimeisin tila.
 - **Laskun tunnus** – Myyntilaskun tunus, kun kootun transaktion myyntitilaus laskutetaan. Jos tämä kenttä on tyhjä, myyntitilauksen laskua ei ole kirjattu.
 
-Kootun taphtuman **Tapahtuman tiedot** -välilehdessä näkyvät kaikki vähittäismyyntitapahtumat, jotka on tuotu koottuun tapahtumaan. Kootun tapahtuman kootuilla riveillä näkyvät kaikki vähittäismyyntitapahtumien kootut tietueet. Kootuilla riveillä näkyy myös tietoja, kuten nimike, malli, määrä, hinta, nettosumma, yksikkö ja varasto. Kukin koottu rivi vastaa yleisesti yhtä myyntitilausriviä.
+Kootun taphtuman **Tapahtuman tiedot** -välilehdessä näkyvät kaikki tapahtumat, jotka on tuotu koottuun tapahtumaan. Kootun tapahtuman kootuilla riveillä näkyvät kaikki tapahtumien kootut tietueet. Kootuilla riveillä näkyy myös tietoja, kuten nimike, malli, määrä, hinta, nettosumma, yksikkö ja varasto. Kukin koottu rivi vastaa yleisesti yhtä myyntitilausriviä.
 
 **Kootut tapahtumat** -sivulla voit ladata tietyn kootun tapahtuman XML:n valitsemalla **Vie myyntitilausten XML** -painikkeen. Voit korjata myyntitilauksen luomisen ja kirjaamiseen liittyviä ongelmia XML-tiedoston avulla. Lataa XML, lähetä se testiympäristöön ja tee virheenkorjaus testiympäristössä. Koottujen tapahtumien XML:n lataustoiminto ei ole käytettävissä laskelmille, jotka on kirjattu.
 
@@ -139,7 +139,7 @@ Kootun tapahtuman näkymä tarjoaa seuraavat edut:
 
 - Käyttäjä näkee kootut tapahtumat, jotka epäonnistuivat myyntitilauksen luonnin aikana, sekä myyntitilaukset, jotka epäonnistuivat laskutuksen aikana.
 - Käyttäjä näkee, kuinka tapahtumat kootaan.
-- Käyttäjällä on täydellinen kirjausketju aina vähittäismyyntitapahtumista myyntitilauksiin ja myyntilaskuihin. Tätä kirjausketjua ei ollut käytettävissä vanhassa laskelman kirjaamistoiminnossa.
+- Käyttäjällä on täydellinen kirjausketju aina tapahtumista myyntitilauksiin ja myyntilaskuihin. Tätä kirjausketjua ei ollut käytettävissä vanhassa laskelman kirjaamistoiminnossa.
 - Koottu XML-tiedosto helpottaa ongelmien tunnistamista myyntitilauksen luonnin ja laskutuksen yhteydessä.
 
 ### <a name="journal-vouchers"></a>Kirjaustositteet
@@ -159,11 +159,11 @@ Tällä hetkellä ohjelma näyttää nämä tiedot vain kirjattuja laskelmia var
 Laskelman kirjaamistoimintoon on tehty muita taustajärjestelmän parannuksia, jotka ovat näkyvissä käyttäjälle. Seuraavassa on muutamia esimerkkejä:
 
 - Kooste ei huomioi henkilöstön, päätteen ja vuoron yksiköitä. Koska koosteparametreja on vähemmän, käsiteltäviä myyntitilausrivejä on vähemmän.
-- Vähittäismyynnin tapahtumatauluissa esiintyviä lukkiutumisia on vähennetty laajennustauluilla ja vähittäismyyntitapahtumien taulujen lisäystoiminnoilla päivitystoimintojen sijaan.
+- Tapahtumatauluissa esiintyviä lukkiutumisia on vähennetty laajennustauluilla ja tapahtumien taulujen lisäystoiminnoilla päivitystoimintojen sijaan.
 - Suoritettavien erätehtävien määrä on parametroitu ja rajoitettu. Tätä määrää voidaan siten hienosäätää asiakkaan ympäristön mukaan. Vanhassa laskelman kirjaustoiminnossa luotiin samalla kertaa rajaton määrä erätehtäviä. Se aiheutti hallitsemattomia kuormia, yleiskustannuksia ja pullonkauloja eräpalvelimessa.
 - Laskelmien käsittelyn jonotus hoidetaan tehokkaasti priorisoimalla laskelmat, joissa on suurin määrä tapahtumia.
 - Eräprosessit, kuten **Laskelmien laskenta eräajona** ja **Laskelmien kirjaaminen eräajona** suoritetaan vain erätilassa. Vanhassa laskelmien kirjaamistoiminnossa käyttäjät voivat suorittaa näytä eräprosesseja vuorovaikutteisessa tilassa, joka on yksisäikeinen toiminto toisin kuin eräprosessit, jotka ovat monisäikeisiä.
-- Vanhassa laskelman kirjaustoiminnossa erätehtävän virheet asettivat koko erätyön virhetilaan. Parannetussa toiminnon erätehtävän virheet eivät aseta erätyötä virhetilaan, jos muut erätehtävät on suoritettu onnistuneesti. Sinun tulee arvioida erän suoritusajon kirjaustila käyttämällä **Vähittäismyyntilaskelmat**-sivua, jossa voit tarkastella kaikkia laskelmia, joita ei ole kirjattu virheiden vuoksi.
+- Vanhassa laskelman kirjaustoiminnossa erätehtävän virheet asettivat koko erätyön virhetilaan. Parannetussa toiminnon erätehtävän virheet eivät aseta erätyötä virhetilaan, jos muut erätehtävät on suoritettu onnistuneesti. Sinun tulee arvioida erän suoritusajon kirjaustila käyttämällä **Laskelmat**-sivua, jossa voit tarkastella kaikkia laskelmia, joita ei ole kirjattu virheiden vuoksi.
 - Vanhassa laskelman kirjaustoiminnossa laskelman virheen ensimmäinen esiintymä aiheutti koko erän epäonnistumisen. Jäljellä olevia laskelmia ei käsitelty. Parannetussa toiminnossa eräkäsittely jatkaa kaikken laskelmien käsittelyä, vaikka osa laskelmista epäonnistuu. Yksi etu on, että käyttäjät näkevät tarkasti niiden tiliotteiden määrän, joissa on virheitä. Tällöin käyttäjien ei tarvitse jäädä silmukkaan, jossa virheitä korjataan ja laskelmaprosessi suoritetaan, kunnes kaikki laskelmat on kirjattu.
 
 ## <a name="general-guidance-about-the-statement-posting-process"></a>Yleisiä ohjeita laskelman kirjausprosessia varten
@@ -172,5 +172,5 @@ Laskelman kirjaamistoimintoon on tehty muita taustajärjestelmän parannuksia, j
 - On suositeltavaa, että otat käyttöön negatiivisen fyysisen varaston nimikemalliryhmässä, jotta kirjauskokemus on saumaton. Joissakin tilanteissa negatiivisia laskelmia ei ehkä voi kirjata, ellei negatiivista fyysistä varastoa ole. Esimerkiksi teoriassa, jos varastossa on vain yksi kappale nimikettä ja sille on tehty myyntitapahtuma ja palautustapahtuma, tapahtumaan pitäisi voida kirjata, vaikka negatiivinen varasto ei ole käytössä. Koska laskelman kirjausprosessi ottaa sekä myyntitapahtuman että palautustapahtuman samaan asiakastilaukseen, ei voida kuitenkaan taata, että myyntirivi kirjataan ensin ja palautusrivi sen jälkeen. Tällöin voi ilmetä virheitä. Jos negatiivinen varasto on käytössä tässä tilanteessa, tapahtuman kirjaus ei vaikuta negatiivisesti ja järjestelmä näyttää varaston oikein.
 - On suositeltavaa käyttää koostamista laskelmia laskettaessa ja kirjattaessa. Suosittelemme siksi seuraavia asetuksia joitakin koostamisparametreja varten:
 
-    - Valitse **Vähittäismyynti** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Vähittäismyyntiparametrit**. Valitse sitten **Kirjaus**-välilehdellä **Varastopäivitys**-pikavälilehden **Erittelytaso**-kentässä **Yhteenveto**.
-    - Valitse **Vähittäismyynti** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Vähittäismyyntiparametrit**. Aseta sitten **Kirjaus**-välilehden **Koostaminen**-pikavälilehdessä **Tositetapahtumat**-asetukseksi **Kyllä**.
+    - Siirry kohtaan **Vähittäismyynti ja kauppa** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Kaupan parametrit**. Valitse sitten **Kirjaus**-välilehdellä **Varastopäivitys**-pikavälilehden **Erittelytaso**-kentässä **Yhteenveto**.
+    - Siirry kohtaan **Vähittäismyynti ja kauppa** \> **Pääkonttorin asetukset** \> **Parametrit** \> **Kaupan parametrit**. Aseta sitten **Kirjaus**-välilehden **Koostaminen**-pikavälilehdessä **Tositetapahtumat**-asetukseksi **Kyllä**.

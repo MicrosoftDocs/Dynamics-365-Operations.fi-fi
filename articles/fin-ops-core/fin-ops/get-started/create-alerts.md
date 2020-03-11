@@ -3,7 +3,7 @@ title: Hälytyssääntöjen luominen
 description: Tässä ohjeaiheessa on tietoja hälytyksistä. Siinä myös selitetään, miten luodaan sellainen hälytyssääntö, joka ilmoittaa tapahtumista, kuten saapuvasta päivämäärästä tai tapahtuvasta muutoksesta.
 author: tjvass
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c37ddc52ef576a15dd35cc155e99821c74631a46
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180711"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075921"
 ---
 # <a name="create-alert-rules"></a>Hälytyssääntöjen luominen
 
@@ -31,7 +31,11 @@ ms.locfileid: "2180711"
 
 Ennen hälytyssäännön luomista on päätettävä, milloin ja missä tilanteissa haluat vastaanottaa hälytyksiä. Kun tiedät, mistä tapahtumasta haluat ilmoituksen, voit etsiä sivun, jossa kyseisen tapahtuman aiheuttavat tiedot näkyvät. Tapahtuma voi olla tietty päivämäärä tai tapahtuva muutos. Sinun onkin etsittävä sivu, jossa päivämäärä on määritetty tai jossa muuttuva kenttä tai luotu uusi tietue tulee näkyviin. Kun nämä tiedot ovat valmiina, voit luoda hälytyssäännön.
 
-Hälytyssääntöä luotaessa määritetään ehdot, joiden on toteuduttava ennen hälytyksen antamista. Tämä tarkoittaa, että tietty tapahtuma esiintyy ja tietyt ehdot täyttyvät samanaikaisesti. Tapahtuman esiintyessä järjestelmä suorittaa tarkistuksen määritettyjen ehtojen mukaisesti.
+Hälytyssääntöä luotaessa määritetään ehdot, joiden on toteuduttava ennen hälytyksen antamista. Ehdot tarkoittavat periaatteessa sitä, että tietty tapahtuma esiintyy ja tietyt ehdot täyttyvät samanaikaisesti. Tapahtuman esiintyessä järjestelmä suorittaa tarkistuksen määritettyjen ehtojen mukaisesti.
+
+## <a name="ensure-the-alert-batch-jobs-are-running"></a>Hälytyksen erätöiden suorittamisen varmistaminen
+
+Tietojen muuttamisen erätöiden ja eräpäivän hälytysten on oltava käynnissä, jotta hälytyksen ehdot voidaan käsitellä ja ilmoitukset lähettää. Jos haluat suorittaa erätyöt, siirry kohtaan **Järjestelmän hallinta** > **Kausittaiset tehtävät** > **Hälytykset** ja lisää uusi erätyö **Muutokseen perustuvat hälytykset** ja/tai **Eräpäivän hälytykset**. Jos tarvitaan pitkään ja usein suoritettava erätyö, valitse **Toistuvuus** ja määritä **Ei päättymispäivää** -kohdan **Toistumisen kuvio** -kohdan arvoksi **Minuutit** ja **Määrä**-kohdan arvoksi **1**.
 
 ## <a name="events"></a>Tapahtumat
 
@@ -49,7 +53,7 @@ Mahdollisia tapahtumatyyppejä on kolme:
     
 Käyttäjä voi käynnistää muutokset. Esimerkiksi käyttäjä muuttaa ostotilauksen toimituspäivää. Vaihtoehtoisest muutokset voivat tapahtua prosessin osana. Esimerkiksi sivun **Tila**-kenttä muuttuu niin, että se vastaa järjestelmän eri prosessien elinkaarta.
 
-## <a name="conditions"></a>Ehdot
+## <a name="conditions"></a>Olosuhteet
 
 Voit käyttää **Luo hälytyssääntö** -valintaikkunan **Hälytä seuraavasta:** -pikavälilehden ehtoja tapahtumien hälytysten ohjauksessa.
 
@@ -70,16 +74,21 @@ Määritä **Luo hälytyssääntö** -valintaikkunan **Hälytystapa**-pikavälil
 
 ## <a name="user-id"></a>Käyttäjätunnus
 
-Määritä **Luo hälytyssääntö** -valintaikkunan **Hälytystapa**-pikavälilehdessä käyttäjä, joka vastaanottaa hälytyssanomat. Käyttäjätunnus valitaan oletusarvoisesti. Tämä asetus on rajoitettu organisaation järjestelmänvalvojien käyttöön.
+Määritä **Luo hälytyssääntö** -valintaikkunan **Hälytystapa**-pikavälilehdessä käyttäjä, joka vastaanottaa hälytyssanomat. Käyttäjätunnus valitaan oletusarvoisesti. Vain organisaation järjestelmänvalvoja voi vaihtaa hälytyksen saavaa käyttäjää.
+
+## <a name="alerts-as-business-events"></a>Hälytykset liiketoimintatapahtumina
+
+Hälytyksiä voidaan lähettää ulkoisesti liiketoimintatapahtuman kehyksen avulla. Kun luot hälytyksen, määritä **Organisaation laajuinen** -kohdan arvoksi **Ei** ja **Lähetä ulkoisesti** -kohdan arvoksi **Kyllä**. Kun hälytys käynnistää liiketoimintatapahtuman, voit käynnistää Power Automaten luoman työnkulun käyttämällä **Kun liiketoimintatapahtuma ilmenee** -käynnistimen Finance and Operations -yhdistimessä tai lähettää tapahtuman liiketoimintatapahtumien päätepisteeseen **Liiketoimintatapahtumien luettelo** -kohdan avulla.
 
 ## <a name="create-an-alert-rule"></a>Luo hälytyssääntö
 
+0. Hälytyksen erätöiden suorittamisen varmistaminen (katso yllä).
 1. Avaa sivu, joka sisältää valvottavat tiedot.
 2. Valitse **Asetukset**-välilehden **Jaa**-ryhmän toimintoruudussa **Luo hälytyssääntö**.
 3. Valitse **Kenttä**-kentän **Luo hälytyssääntö** -valintaikkunassa seurattava kenttä.
 4. Valitse **Tapahtuma**-kentässä tapahtuman tyyppi.
-5. Valitse **Hälytä seuraavasta:** -pikavälilehdessä vaihtoehto.
+5. Valitse **Hälytä seuraavasta:** -pikavälilehdessä haluttu vaihtoehto. Jos haluat lähettää hälytyksen liiketoimintatapahtumana, varmista, että **Organisaation laajuinen** -kohdan arvoksi on määritetty **Ei**.
 6. Jos haluat hälytyssäännön poistuvan käytöstä tiettynä päivämääränä, valitse **Hälytä tähän asti** -pikavälilehdessä päättymispäivämäärä.
-7. Hyväksy **Hälytystapa**-pikavälilehden **Aihe**-kentässä sähköpostiviestin aiheen oletusotsikko tai kirjoita uusi aihe. Tekstiä käytetään otsikkona sähköpostiviestissä jonka saat, kun hälytys laukaistaan.
+7. Hyväksy **Hälytystapa**-pikavälilehden **Aihe**-kentässä sähköpostiviestin aiheen oletusotsikko tai kirjoita uusi aihe. Tekstiä käytetään otsikkona sähköpostiviestissä jonka saat, kun hälytys laukaistaan. Jos haluat lähettää hälytyksen liiketoimintatapahtumana, määritä **Lähetä ulkoisesti** -kohdan arvoksi **Kyllä**.
 8. Valitse **Sanoma**-kentässä valinnainen sanoma. Tämä teksti on sanoma, jonka saat, kun hälytys laukaistaan.
 9. Tallenna asetukset ja luo hälytyssääntö valitsemalla **OK**.

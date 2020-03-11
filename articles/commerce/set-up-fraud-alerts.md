@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4ee6b128e473d0999885f1cb1b4dbb015026c4e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022407"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057206"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Puhelinkeskuksen petosilmoitusten määrittäminen ja niiden käyttäminen
 
@@ -54,6 +54,7 @@ Lopuksi **Petoksen kommenttityyppi** -kenttään määritetään asiakirjatyyppi
 Järjestelmä käyttää kahta petosehtotyyppiä määrittämään, on tilaus asetettava pitoon petostarkistusta varten.
 
 - **Staattiset petostiedot** käyttää tiettyä arvoa, kuten estettyjen puhelinnumeroiden luetteloon lisättyä puhelinnumeroa tai sähköpostiosoitetta, joka on merkitty, koska kyseistä osoitetta on tiedetty käytetyn aiemmissa vilpillisissä tapahtumissa. Voit määrittää staattiset petostiedot valitsemalla **Retail ja Commerce** \> **Kanavan asetukset** \> **Puhelinkeskuksen asetukset** \> **Petos** \> **Staattiset petostiedot**. Voit lisätä petosehdot **Staattiset petostiedot** -sivulla manuaalisesti tai tuomalla ne. Pistemäärät liitetään vilpillisiin tietoihin. Jos petostarkistustoiminto on otettu käyttöön, jokaista kirjattua myyntitilausta verrataan staattisiin tietoihin. Jos tietoja löydetään asiakkaan tilauksen otsikkoon liitetystä laskutus- tai toimitusosoitteesta tai jos tietoja löytyy johonkin myyntitilauksen riviin liitetystä toimitusosoitteesta, yksilöivien vastaavuuksien pistemäärät lasketaan yhteen ja tätä yhteenlaskettua määrää **Vähimmäispisteytys**-arvoon vertaamalla määritetään, asetetaanko tilaus pitoon.
+
 - **Petossäännöt** koostuvat käyttäjän määrittämistä muuttujista ja kyseissä muuttujissa määritetyistä ehdoista. Voit luoda sääntöjä valitsemalla **Retail ja Commerce** \> **Kananvan asetukset** \> **Puhelinkeskuksen asetukset** \> **Petos** \> **Säännöt**. Petossääntöjen avulla yritys voi määrittää useiden ehtojen arviointia varten monimutkaisen sääntöjoukon. Tämä on sääntöjoukko on monimutkaisempi kuin mitä saadaan aikaan **JA**- tai **TAI**-lausekkeita käyttämällä. Esimerkki: Käyttäjä haluaa, että petostarkistusta varten kaikki sellaisten asiakkaiden tilaukset asetetaan pitoon, jotka kuuluvat tiettyyn asiakasryhmään tai jotka tilaavat tietyn tuotteen. Tässä tapauksessa asiakkaan ja tuotteet tarkistavat ehdot määritetään **Säännöt**-sivulla JA-ehtoa käyttämällä. Tilaus asetetaan sitten pitoon vain, jos kumpikin ehto on tosi ja jos kyseiselle säännölle määritetty pisteytysarvo ja tilauksen muiden mahdollisten sääntöjen pisteytysarvo aiheuttavat sen, että tilauksen petoksen kokonaispistemäärä ylittää **Puhelinkeskuksen parametrit** -sivulla määritetyn **Vähimmäispisteytys**-arvon.
 
 > [!NOTE]

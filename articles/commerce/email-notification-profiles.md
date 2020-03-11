@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: feb28b9c801786f63282c4189d3eeb6d53ed07e1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 320f21916a5f451ebf4f21e0075017a121ba6d6a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003139"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057611"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Sähköpostin ilmoitusprofiilin määrittäminen
 
@@ -41,7 +41,7 @@ Lisätietoja sähköpostin määrittämisestä on kohdassa [Sähköpostiviestin 
 
 Luo sähköposti-ilmoitusprofiili noudattamalla seuraavia ohjeita.
 
-1. Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Vähittäismyynnin sähköposti-ilmoitusprofiili**.
+1. Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Kaupan sähköposti-ilmoitusprofiili**.
 1. Napsauta Toimintoruudussa **Uusi**.
 1. Anna **Sähköposti-ilmoitusprofiili**-kentässä profiilille nimi.
 1. Syötä **Kuvaus**-kenttään asianmukainen kuvaus.
@@ -71,16 +71,16 @@ Seuraavassa kuvassa näkyy esimerkkejä sähköpostimallin asetuksista.
 
 Voit luoda sähköpostitapahtuman seuraavien ohjeiden avulla.
 
-1. Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Vähittäismyynnin sähköposti-ilmoitusprofiili**.
+1. Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Kaupan sähköposti-ilmoitusprofiili**.
 1. Etsi haluamasi tietue luettelosta ja valitse se. 
 1. Valitse sähköpostimalliryhmän avattavasta **Sähköpostitunnus**-luettelosta.
 1. Valitse avattavasta luettelosta asianmukainen **Sähköposti-ilmoitustyyppi**.
 1. Valitse **Käytössä**-valintaruutu.
 1. Valitse toimintoruudussa **Tallenna**.
 
-Seuraavassa kuvassa näkyy esimerkkejä vähittäismyyntitapahtuman ilmoitusasetuskista.
+Seuraavassa kuvassa näkyy esimerkkejä tapahtuman ilmoitusasetuksista.
 
-![Vähittäismyyntitapahtuman ilmoitusasetukset](media/email-notification-profile.png)
+![Tapahtuman ilmoitusasetukset](media/email-notification-profile.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

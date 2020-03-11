@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 51d344d7b7a792d0cdf3eeb7f5c6e1a9b2b8bf19
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022347"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057934"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Yhdistä oheislaitteet myyntipisteeseen (POS)
 
@@ -43,7 +43,7 @@ Myymälän, myyntipisteen kassakoneiden tai myymälän kanavien sekä kyseisten 
 
 Selaus: Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavan määritys** &gt; **Myyntipisteen määritys** &gt; **Kassakoneet**.
 
-Myyntipisteen kassakone on yksikkö, jolla määritetään tietyn POS-esiintymän ominaisuudet. Näitä ominaisuuksia ovat laiteprofiili tai kassakoneessa käytettävien vähittäismyymälän oheislaitteiden asetukset, myymälä, johon kassakone on yhdistämismääritetty, ja kyseiseen kassakoneeseen kirjautuvan käyttäjän visuaalinen kokemus.
+Myyntipisteen kassakone on yksikkö, jolla määritetään tietyn POS-esiintymän ominaisuudet. Näitä ominaisuuksia ovat laiteprofiili tai kassakoneessa käytettävien oheislaitteiden asetukset, myymälä, johon kassakone on yhdistetty, ja kyseiseen kassakoneeseen kirjautuvan käyttäjän visuaalinen kokemus.
 
 ### <a name="devices"></a>Laitteet
 
@@ -67,7 +67,7 @@ Laitteistoprofiili tunnistaa myyntipisteen kassakoneeseen tai laiteasemaan liite
 
 ### <a name="hardware-station"></a>Hardware station
 
-Selaus: Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Vähittäismyymälät** &gt; **Kaikki vähittäismyymälät**. Valitse ensin myymälä ja sitten **Laiteasemat**-pikavälilehti.
+Selaus: Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymälät** &gt; **Kaikki myymälät**. Valitse ensin myymälä ja sitten **Laiteasemat**-pikavälilehti.
 
 Laiteasema on liiketoimintalogiikan esiintymä, jolla POS-oheislaitteita käytetään. Laiteasema asennetaan automaattisesti yhdessä MPOS:n kanssa. Laiteasema voidaan vaihtoehtoisesti asentaa erillisenä osana, jota MPOS tai Cloud POS käyttävät verkkopalvelusta. Laiteasema on määritettävä kanavatasolla.
 
@@ -87,7 +87,7 @@ Jos haluat liittää MPOS:n myyntipisteen oheislaitteisiin perinteistä kiinteä
 
 Synkronoi muutokset laiteprofiilin määrityksen jälkeen kanavatietokantaan käyttämällä **Kassakoneet**-jakeluaikataulua. Pääset jakeluaikatauluihin valitsemalla **Retail ja Commerce** &gt; **Retailin ja Commercen IT** &gt; **Jakeluaikataulu**. 
 
-Määritä kanavaan seuraavaksi paikallinen laiteasema. Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Vähittäismyymälät** &gt; **Kaikki vähittäismyymälät** ja sitten myymälä. 
+Määritä kanavaan seuraavaksi paikallinen laiteasema. Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymälät** &gt; **Kaikki myymälät** ja sitten myymälä. 
 
 Lisää sitten laiteasema valitsemalla **Laiteasemat**-pikavälilehdessä **Lisää**. Kirjoita kuvaus, anna isäntänimeksi **localhost** ja synkronoi sitten kanavan muutokset käyttämällä **Kanavan määritys** -jakeluaikataulua. Pääset jakeluaikatauluihin valitsemalla **Retail ja Commerce** &gt; **Retailin ja Commercen IT** &gt; **Jakeluaikataulu**. 
 
@@ -104,7 +104,7 @@ Valitse lopuksi MPOS:ssä **Valitse laiteasema** -toiminnolla **localhost**-lait
 
 Tässä skenaariossa MPOS- ja Cloud POS -asiakasohjelmat jakavat laiteaseman. Tämä skenaario edellyttää laiteaseman luontia määrittämään ladattavan paketti, portti ja laiteaseman käyttämä laiteprofiili. Pääset laiteaseman profiiliin valitsemalla **Vähittäismyynti ja kauppa** &gt; **Kanavan asetukset** &gt; **Myyntipisteen määritys** &gt; **Myyntipisteprofiilit** &gt; **Laiteaseman profiilit**. 
 
-Kun olet luonut laiteaseman profiilin, siirry tiettyyn vähittäismyyntikanavaan (**Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymälät** &gt; **Kaikki myymälät**) ja lisää uusi laiteasema. Tee tämän uuden laiteaseman yhdistämismääritys aiemmin luotuun laiteaseman profiiliin. 
+Kun olet luonut laiteasemaprofiilin, siirry tiettyyn kanavaan (**Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymälät** &gt; **Kaikki myymälät**) ja lisää uusi laiteasema. Tee tämän uuden laiteaseman yhdistämismääritys aiemmin luotuun laiteaseman profiiliin. 
 
 Anna seuraavaksi kuvaus, jonka avulla kassa tunnistaa laiteaseman. Anna **Isännän nimi** -kenttään isäntäkoneen URL-osoite seuraavassa muodossa: `https://<MachineName:Port>/HardwareStation`. (Vaihda **&lt;MachineName:Port&gt;** -kohtaan laiteaseman fyysisen koneen nimi ja laiteaseman profiilissa määritetty portti.) Jos kyse on erillisestä laite-asemasta, määritä myös sähköisen rahansiirron (EFT) päätetunnus. Tämä arvo yksilöi sen sähköisen rahansiirron päätteen, joka on liitettynä laiteasemaan, kun maksuyhdistin on yhteydessä maksupalveluun. 
 

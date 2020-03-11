@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 27066cd860d78743d5ae7c851876eb62fe019245
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e14949b871534868c42d2b26a116e10ff9f05179
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180987"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081993"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Optimointityökalun sääntöjen luominen
 
@@ -36,7 +36,7 @@ Tässä ohjeaiheessa selitetään, miten **optimointityökalun** uusia sääntö
 
 Voit luoda uuden säännön **optimointityökaluun** lisäämällä **DiagnosticRule**-määritteellä varustetun **SelfHealingRule**-abstraktiluokkaa laajentavan uuden luokan ja **IDiagnosticsRule**-liittymän toteutuksen. Luokalla on myös **DiagnosticsRuleSubscription**-määritteellä varustettu menetelmä. Yleensä se tehdään **opportunityTitle**-menetelmällä, joka käsitellään myöhemmin. Tämä uusi luokka voidaan lisätä mukautettuun malliin, joka on riippuvainen **SelfHealingRules**-mallista. Seuraavassa esimerkissä toteutetaan **RFQTitleSelfHealingRule**-niminen sääntö.
 
-```
+```xpp
 [DiagnosticsRule] 
 public final class RFQTitleSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule 
 { 
@@ -46,7 +46,7 @@ public final class RFQTitleSelfHealingRule extends SelfHealingRule implements ID
 
 **SelfHealingRule**-abstraktiluokassa on abstraktimenetelmiä, jotka on toteutettava perivissä luokissa. Ytimenä on **arviointimenetelmä**, joka palauttaa luettelon säännön tunnistamia mahdollisuuksia. Mahdollisuudet voivat olla yritys- tai järjestelmäkohtaisia.
 
-```
+```xpp
 protected List evaluate() 
 { 
     List results = new List(Types::Record); 
@@ -82,7 +82,7 @@ Mahdollisuudet voivat olla myös yritysten välisiä. Siinä tapauksessa yrityks
 
 Seuraava koodi näyttää **findRFQCasesWithEmptyTitle**-menetelmän, joka palauttaa tyhjiä otsikoita sisältävien tarjouspyyntötapausten tunnukset.
 
-```
+```xpp
 private container findRFQCasesWithEmptyTitle() 
 { 
     container result; 
@@ -115,7 +115,7 @@ private container findRFQCasesWithEmptyTitle()
 
 Seuraavassa on esimerkkitoteutus. Käsittelemättömiä merkkijonoja käytetään yksinkertaisuuden vuoksi, mutta oikea toteutus edellyttää otsikoita. 
 
-```
+```xpp
 [DiagnosticsRuleSubscription(DiagnosticsArea::SCM, 
                              'Assign titles to Request for Quotation cases', 
                              DiagnosticsRunFrequency::Daily,  
@@ -128,7 +128,7 @@ public str opportunityTitle()
 
 **opportunityDetails**-menetelmän palauttama kuvaus näkyy sivuruudussa ja siinä on lisätietoja mahdollisuudesta. Se käyttää **SelfHealingOpportunity**-argumenttia, joka on **Tiedot**-kenttä ja jolla voi antaa lisätietoja mahdollisuudesta. Esimerkissä menetelmä palauttaa tyhjän otsikon sisältävien tarjouspyyntötapausten tunnukset. 
 
-```
+```xpp
 public str opportunityDetails(SelfHealingOpportunity _opportunity) 
 { 
     str details = ''; 
@@ -153,7 +153,7 @@ Jäljellä olevat kaksi toteutettavaa menetelmää ovat **provideHealingAction**
 
 **provideHealingAction** palauttaa tosi-arvon, jos korjaustoiminto annetaan. Muussa tapauksessa palautetaan epätosi. Jos tosi palautetaan, menetelmä **performAction** on toteutettava tai tapahtuu virhe. **performAction**-menetelmä käyttää **SelfHealingOpportunity**-argumenttia, jossa tietoja voi käyttää toimintaan. Esimerkiksi toiminto avaa kohteen **PurchRFQCaseTableListPage** manuaalisesti korjattavaksi. 
 
-```
+```xpp
 public boolean providesHealingAction() 
 { 
     return true; 
@@ -172,7 +172,7 @@ Säännön tietojen mukaan automaattinen toiminto voi olla mahdollista mahdollis
 > [!NOTE]
 > Suojauksen oikea toiminta edellyttää, että valikkovaihtoehto on toimintovalikon vaihtoehto. Muut valikkovaihtoehtotyypit, kuten **Näyttövalikon vaihtoehdot** eivät toimi oikein.
 
-```
+```xpp
 public MenuName securityMenuItem() 
 { 
     return menuItemActionStr(PurchRFQCaseTitleAction); 
@@ -181,7 +181,7 @@ public MenuName securityMenuItem()
 
 Kun sääntö on käännetty, saat sen näkyviin käyttöliittymään suorittamalla seuraava työ.
 
-```
+```xpp
 class ScanNewRulesJob 
 {         
     public static void main(Args _args) 
@@ -197,7 +197,7 @@ Sääntö näkyy **Diagnostiikan vahvistussääntö** -lomakkeessa, jonka voi av
 
 Seuraavassa esimerkissä on koodikatkelma, jossa on kaikki tarvittavat menetelmät ja määritteet sisältävä sääntörunko. Se auttaa aloittamaan uusien sääntöjen kirjoittamisen. Esimerkissä käytettyjä otsikoita ja toimintovalikon vaihtoehtoja käytetään vain esittelytarkoituksessa.
 
-```
+```xpp
 [DiagnosticsRuleAttribute]
 public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
 {

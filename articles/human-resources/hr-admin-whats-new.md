@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9ae80dd92fdb0ec4b33c2e42d4b6ec264aaf62de
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: f36aba8a68ea8cc261423f79db00e175df1cf349
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008953"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075945"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Human Resourcesin uudet ja muuttuneet ominaisuudet
 
-Tarjoamme joka viikko uuden Microsoft Dynamics Human Resources -julkaisun. Tämän osan artikkeleissa eritellään kunkin viikon muutokset.
+Tarjoamme joka viikko uuden Microsoft Dynamics 365 Human Resources -julkaisun. Tämän osan artikkeleissa eritellään kunkin viikon muutokset.
 
-Katso lisätietoja Human Resourcesin tulevista ominaisuuksista tai päivitysprosessista:
+Seuraavissa artikkeleissa on lisätietoja Human Resourcesin tulevista ominaisuuksista tai päivitysprosessista:
 
 - [Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
@@ -37,6 +37,17 @@ Katso lisätietoja Human Resourcesin tulevista ominaisuuksista tai päivityspros
 
 - [Hallitse ominaisuuksia](hr-admin-manage-features.md)
 
-## <a name="whats-new-weekly-releases"></a>Uudet viikoittaiset julkaisut
+## <a name="human-resources-weekly-releases"></a>Viikoittaiset Human Resources -julkaisut
 
+Seuraavissa artikkeleissa on tietoja siitä, mitä uutta tai muutettua viikoittaisessa Human Resources -julkaisussa on.
+
+[18. helmikuuta 2020](hr-whats-new-2020-02-18.md)</br>
+[12. helmikuuta 2020](hr-whats-new-2020-02-12.md)</br>
+[7. helmikuuta 2020](hr-whats-new-2020-02-07.md)</br>
 [3. helmikuuta 2020](hr-whats-new-2020-02-03.md)
+
+## <a name="see-also"></a>Lisätietoja
+
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Päivitysprosessi](hr-admin-setup-update-process.md)</br>
+[Hallitse ominaisuuksia](hr-admin-manage-features.md)

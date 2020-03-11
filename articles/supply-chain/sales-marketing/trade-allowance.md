@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 623c25490964ccdf6abc37acaffee7ac0844cf39
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35aad9bf89ba8c1ed6451304d8fc4fc6ffa575b5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251152"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057776"
 ---
 # <a name="trade-allowance-management"></a>Myynninedistämispalkkioiden hallinta
 
 [!include [banner](../includes/banner.md)]
 
-Myynninedistämispalkkioiden hallinta auttaa yrityksiä hallitsemaan sellaisia myynninedistämisohjelmia, joissa vähittäismyynnissä asiakkaille voidaan tarjota suoritusperäisiä palkkioita määrä- ja toimintatavoitteiden perusteella. Omaisuuden toiminnot on suunniteltu yrityksille, jotka keskittyvät kattaviin voittoon myynninedistämisprosessien kautta hakeviin yrityksiin. Näitä toimintoja ovat myynninedistämisrahoituksen budjetointi ja kohdistus, korvaussopimustenmäärittäminen, vaatimusten luonti ja käsittely, maksujen käsittely ja myynninedistämisen tehokkuuden analysointi.
+Myynninedistämispalkkioiden hallinta auttaa yrityksiä hallitsemaan sellaisia myynninedistämisohjelmia, joissa asiakkaille voidaan tarjota suoritusperäisiä palkkioita määrä- ja toimintatavoitteiden perusteella. Omaisuuden toiminnot on suunniteltu yrityksille, jotka keskittyvät kattaviin voittoon myynninedistämisprosessien kautta hakeviin yrityksiin. Näitä toimintoja ovat myynninedistämisrahoituksen budjetointi ja kohdistus, korvaussopimustenmäärittäminen, vaatimusten luonti ja käsittely, maksujen käsittely ja myynninedistämisen tehokkuuden analysointi.
 
 
 Tässä ohjeaiheessa käsitellään yleisesti myynninedistämispalkkion hallintaominaisuutta ja tutustutaan tehtäviin, jotka liittyvät yleensä myynninedistämisohjelman hallintaan. Monenlaisten käyttäjätyyppien, joilla on operatiivisia ja päätökseen tekoon liittyviä vastuualueita, odotetaan käyttävän tätä toimintoa tavoitteiden saavuttamiseksi:
@@ -77,9 +77,9 @@ Kun rahoituksen määritys on tehty, kampanjasuunnittelun seuraava vaihe on kamp
 
 Myynninedistämisen palkkiosopimuksen kirjataan **Myynninedistämisen palkkiosopimukset** -sivulla. Avaa **Myynninedistämisen palkkiosopimukset** -sivu ja valitse **Myynti ja markkinointi** \> **Myynninedistämispalkkiot** \> **Myynninedistämisen palkkiosopimukset**.
 
-![Myynninedistämisen palkkiosopimukset -sivu](./media/trade-allowance-management-agreements-page.png "Myynninedistämisen palkkiosopimukset -sivu")
+![Myynninedistämispalkkiosopimukset-sivu](./media/trade-allowance-management-agreements-page.png "Myynninedistämispalkkiosopimukset-sivu")
 
-#### <a name="header"></a>Ylätunniste
+#### <a name="header"></a>Otsikko
 
 Siirry ylätunnistenäkymään valitsemalla **Ylätunniste**.
 
@@ -105,7 +105,7 @@ Siirry rivinäkymän valitsemalla seuraavaksi **Rivit**.
 
 Kun valitse myynninedistämistapahtuman ja **Summat**-välilehden, tapahtuman tiedot ovat näkyvissä.
 
-![Myynninedistämisen palkkiosopimuksen rivit](./media/trade-allowance-management-agreements-lines.png "Myynninedistämisen palkkiosopimuksen rivit")
+![Myynninedistämispalkkiosopimuksen rivit](./media/trade-allowance-management-agreements-lines.png "Myynninedistämispalkkiosopimuksen rivit")
 
 **Myynninedistämispalkkiorivit**-osassa määritetään määrä- tai summa-alueet, jotka asiakkaan on määritysten mukaan saavutettava palkkion saadakseen.
 

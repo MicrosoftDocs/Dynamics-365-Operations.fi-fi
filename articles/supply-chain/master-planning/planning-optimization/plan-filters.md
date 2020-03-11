@@ -19,17 +19,17 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9d1431cc8db6fb28d1f1ec73ee07dd15e78f82e8
-ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
+ms.openlocfilehash: ca28953846b4f1978a453d2ab2aa9759e4f45221
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945416"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076106"
 ---
+# <a name="apply-filters-to-a-plan"></a>Suodattimien käyttäminen suunnitelmaan
+
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
-
-# <a name="apply-filters-to-a-plan"></a>Suodattimien käyttäminen suunnitelmaan
 
 Kun suunnittelun optimointitoimintoa käytetään, voit käyttää suunnitelmassa suodatinta. **Suunnitelma**n suodatinta käytetään aina pääsuunnitteluajon aikana. **Suunnitelman suodattimella** voi rajoittaa suunnitelman kätevästi tiettyyn nimikeryhmään ja varmistaa, ettei muita nimikkeitä sisällytetä tuloksena olevaan pääsuunnitteluun.
 

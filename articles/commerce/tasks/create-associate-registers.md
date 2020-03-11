@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ac5135d0606ffc9816c841637aa032826f87e28
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0ac75d390b8bbb94c6e039b374b51462d348e355
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022393"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057153"
 ---
 # <a name="create-and-associate-registers"></a>Luo ja liitä rekisterit
 
@@ -30,14 +30,14 @@ ms.locfileid: "3022393"
 
 Tässä menettelyssä esitellään, miten myyntipisteen (POS) kassakone luodaan. Menettely käyttää USRT-demotietoyritystä.
 
-1. Siirry kohtaan Vähittäismyynti ja kauppa > Kanavan asetukset > Myyntipisteen asetukset > Kassakoneet.
+1. Siirry kohtaan Retail and Commerce > Kanavan asetukset > Myyntipisteen asetukset > Kassakoneet.
 2. Valitse Uusi.
 3. Kirjoita Kassakoneen numero -kenttään uuden kassakoneen tunnus.
     * Kassakoneen tunnus sisältää yleensä koodeja, joiden avulla kassakone yhdistetään myymälään, johon se kuuluu sekä sijaintiin myymälässä.  
 4. Kirjoita Nimi-kenttään kassakonetta kuvaava nimi.
 5. Syötä tai valitse arvo Myymälän numero -kentässä.
 6. Syötä tai valitse arvo Laiteprofiili-kentässä.
-    * Laiteprofiileilla määritetään vähittäismyynnin oheislaitteet, jotka liitetään kassakoneeseen, kuten käteislokero ja kuittitulostin.  
+    * Laiteprofiileilla määritetään oheislaitteet, jotka liitetään kassakoneeseen, kuten käteislokero ja kuittitulostin.  
 7. Anna tai valitse Visuaalinen profiili -kentässä arvo.
     * Visuaalisten profiilien avulla määritetään kuvat, joita käytetään myyntipisteen taustalla ja kirjautumissivulla. Niillä määritetään myös myyntipisteen teema.  
 8. Kirjoita arvo EFT:n POS-kassakoneen numero -kenttään.

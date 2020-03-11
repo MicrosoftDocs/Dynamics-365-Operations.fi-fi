@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 026d1d743b5150f152ef70aa642dcf6841a4e398
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025801"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070817"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool -oppaan käyttäminen
 
@@ -217,15 +217,15 @@ Seuraavassa kuvassa on tämän skenaarion liiketoimintaprosessit RSAT-työkaluss
 
 ## <a name="advanced-scripting"></a>Edistyneet komentosarjat
 
-### <a name="command-line"></a>Komentorivi
+### <a name="cli"></a>CLI
 
-RSAT voidaan kutsua **Komentokehote**-ikkunasta.
+RSAT voidaan kutsua **Komentokehote**- tai **PowerShell**-ikkunasta.
 
 > [!NOTE]
 > Tarkista, että **TestRoot**-ympäristömuuttujan asetukseksi on määritetty RSAT-asennuspolku. (Avaa Microsoft Windowsissa **Ohjauspaneeli**, valitse sitten **Järjestelmä ja suojaus \> Järjestelmä \> Järjestelmän lisäasetukset** ja valitse lopuksi **Ympäristömuuttujat**.)
 
-1. Avaa **Komentokehote**-ikkuna järjestelmänvalvojana.
-2. Suorita työkalu asennushakemistosta.
+1. Avaa **Komentokehote**- tai **PowerShell**-ikkuna järjestelmänvalvojana.
+2. Siirry RSAT-asennushakemistoon.
 
     ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
@@ -242,22 +242,273 @@ RSAT voidaan kutsua **Komentokehote**-ikkunasta.
         Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Path to\file.settings" command
 
     Available commands:
-        list
-        listtestsuite suite_name
-        download test_case_id output_dir
-        generate test_case_id output_dir
-        generatederived parent_test_case_id test_plan_id test_suite_id
-        generatetestonly test_case_id output_dir
-        edit excel_file
-        playback excel_file
-        playbackmany excel_file1 [excel_file2 [.. excel_fileN]]
-        playbackbyid test_case_id1 [test_case_id2 [.. test_case_idN]]
-        playbacksuite suite_name
-        clear
-        help
+        ?
         about
+        cls
+        download
+        edit
+        generate
+        generatederived
+        generatetestonly
+        generatetestsuite
+        help
+        list
+        listtestplans
+        listtestsuite
+        listtestsuitenames
+        playback
+        playbackbyid
+        playbackmany
+        playbacksuite
         quit
+        upload
+        uploadrecording
+        usage
     ```
+
+#### <a name=""></a>? 
+Näyttää kaikkien käytettävissä olevien komentojen ja niiden parametrien ohjeen.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
+
+##### <a name="optional-parameters"></a>Valinnaiset parametrit
+
+**``command``**
+
+
+Jossa ``[command]`` on yksi alla määritetyistä komennoista.
+
+
+#### <a name="about"></a>tietoja
+Näyttää nykyisen version.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
+
+#### <a name="cls"></a>cls
+Tyhjentää näytön.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
+
+
+#### <a name="download"></a>lataa
+Lataa määritetyn testitapauksen liitteet tulostushakemistoon. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``test_case_id``** - edustaa testitapauksen tunnusta.  
+**``output_dir``** - edustaa tulostushakemistoa. Hakemisto on määritettävä.
+
+##### <a name="examples"></a>Esimerkkejä
+
+``download 123 c:\temp\rsat``   
+``download 765 c:\rsat\last``
+
+
+#### <a name="edit"></a>muokkaa
+Voit avata parametritiedoston Excel-ohjelmassa ja muokata sitä.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``edit``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``excel_file``** - olemassa olevan Excel-tiedoston täydellinen polku on oltava.
+
+##### <a name="examples"></a>Esimerkkejä
+``edit c:\RSAT\TestCase_123_Base.xlsx``  
+``edit e:\temp\TestCase_456_Base.xlsx``
+
+
+#### <a name="generate"></a>luo
+Luo testisuorituksen ja parametritiedostot määritetylle testitapaukselle tulostushakemistossa.
+Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``test_case_id``** - edustaa testitapauksen tunnusta.  
+**``output_dir``** - edustaa tulostushakemistoa. Hakemisto on määritettävä.
+
+##### <a name="examples"></a>Esimerkkejä
+``generate 123 c:\temp\rsat``  
+``generate 765 c:\rsat\last``
+
+
+#### <a name="generatederived"></a>generatederived
+Luo uuden testitapauksen, joka johdetaan annetusta testitapauksesta. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``parent_test_case_id``** - edustaa päätestitapauksen tunnusta.  
+**``test_plan_id``** - edustaa testisuunnitelman tunnusta.  
+**``test_suite_id``** - edustaa testiohjelmistopaketin tunnusta.
+
+##### <a name="examples"></a>Esimerkkejä
+``generatederived 123 8901 678``
+
+
+#### <a name="generatetestonly"></a>generatetestonly
+Luo vain testisuoritustiedoston määritetylle testitapaukselle tulostushakemistossa. Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``test_case_id``** - edustaa testitapauksen tunnusta.  
+**``output_dir``** - edustaa tulostushakemistoa. Hakemisto on määritettävä.
+
+##### <a name="examples"></a>Esimerkkejä
+``generatetestonly 123 c:\temp\rsat``  
+``generatetestonly 765 c:\rsat\last``
+
+
+#### <a name="generatetestsuite"></a>generatetestsuite
+Luo määritetyn ohjelmistopaketin kaikki testitapaukset tulostushakemistoon.
+Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevien testiohjelmistopakettien hakemisessa. Käytä mitä tahansa sarakkeen arvoa **test_suite_name**-parametrina.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``test_suite_name``** - edustaa testiohjelmistopaketin nimeä.  
+**``output_dir``** - edustaa tulostushakemistoa. Hakemisto on määritettävä.
+
+##### <a name="examples"></a>Esimerkkejä
+``generatetestsuite Tests c:\temp\rsat``   
+``generatetestsuite Purchase c:\rsat\last``
+
+
+#### <a name="help"></a>ohje
+Sama kuin [?](####?) komento
+
+
+#### <a name="list"></a>luettelo
+Luettelo kaikista käytettävissä olevista testitapauksista.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
+
+
+#### <a name="listtestplans"></a>listtestplans
+Luettelo kaikista käytettävissä olevista testisuunnitelmista.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestplans``**
+
+
+#### <a name="listtestsuite"></a>listtestsuite
+Luettelo määritetyn testiohjelmistopaketin testitapauksista. Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevien testiohjelmistopakettien hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **suite_name**-parametrina.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``suite_name``** - halutun ohjelmistopaketin nimi.
+
+##### <a name="examples"></a>Esimerkkejä
+``listtestsuite "sample suite name"``  
+``listtestsuite NameOfTheSuite``
+
+
+#### <a name="listtestsuitenames"></a>listtestsuitenames
+Luettelo kaikista käytettävissä olevista testiohjelmistopaketeista.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
+
+
+#### <a name="playback"></a>toisto
+Toistaa testitapauksen Excel-tiedoston avulla.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``excel_file``** - Excel-tiedoston täydellinen polku. Tiedoston on oltava olemassa. 
+
+##### <a name="examples"></a>Esimerkkejä
+``
+playback c:\RSAT\TestCaseParameters\sample1.xlsx
+playback e:\temp\test.xlsx
+``
+
+
+#### <a name="playbackbyid"></a>playbackbyid
+Toistaa useita testitapauksia kerralla.
+Voit käyttää ``list``-komentoa kaikkien käytettävissä olevien testitapausten hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **test_case_id**-parametrina.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``test_case_id1``** - olemassa olevan testitapauksen tunnus.  
+**``test_case_id2``** - olemassa olevan testitapauksen tunnus.  
+**``test_case_idN``** - olemassa olevan testitapauksen tunnus.  
+
+##### <a name="examples"></a>Esimerkkejä
+``playbackbyid 878``  
+``playbackbyid 2345 667 135``
+
+
+#### <a name="playbackmany"></a>playbackmany
+Toistaa useita testitapauksia kerralla Excel-tiedostojen avulla.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``excel_file1``** - Excel-tiedoston täydellinen polku. Tiedoston on oltava olemassa.  
+**``excel_file2``** - Excel-tiedoston täydellinen polku. Tiedoston on oltava olemassa.  
+**``excel_fileN``** - Excel-tiedoston täydellinen polku. Tiedoston on oltava olemassa.  
+
+##### <a name="examples"></a>Esimerkkejä
+``playbackmany c:\RSAT\TestCaseParameters\param1.xlsx``  
+``playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx``
+
+
+#### <a name="playbacksuite"></a>playbacksuite
+Toistaa kaikki testitapaukset määritetystä testiohjelmistopaketista. Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevien testiohjelmistopakettien hakemisessa. Käytä mitä tahansa ensimmäisen sarakkeen arvoa **suite_name**-parametrina.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``suite_name``** - halutun ohjelmistopaketin nimi.
+
+##### <a name="examples"></a>Esimerkkejä
+``playbacksuite suiteName``  
+``playbacksuite sample_suite``
+
+
+#### <a name="quit"></a>lopeta
+Sulkee sovelluksen.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
+
+
+#### <a name="upload"></a>lataa
+Lataa kaikki määritettyyn testiohjelmistopakettiin tai määritettyihin testitapauksiin kuuluvat tiedostot.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+
+#### <a name="required-parameters"></a>Pakolliset parametrit
+**``suite_name``** - kaikki tiettyyn testiohjelmistopakettiin kuuluvat tiedostot ladataan.
+**``testcase_id``** - kaikki tiettyihin testitapauksiin kuuluvat tiedostot ladataan.
+
+##### <a name="examples"></a>Esimerkkejä
+``upload sample_suite``  
+``upload 123``  
+``upload 123 456``
+
+
+#### <a name="uploadrecording"></a>uploadrecording
+Lataa vain määritettyihin testitapauksiin kuuluvan tallennustiedoston.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+
+##### <a name="required-parameters"></a>Pakolliset parametrit
+**``testcase_id``** - määritettyihin testitapauksiin kuuluva tallennustiedosto ladataan.
+
+##### <a name="examples"></a>Esimerkkejä
+``uploadrecording 123``  
+``uploadrecording 123 456``
+
+
+#### <a name="usage"></a>käyttö
+Näyttää kaksi tapaa, joilla tätä sovellusta voi kutsua: toisessa käytetään oletusasetustiedostoa ja toinen määrittää asetustiedoston.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell -esimerkkejä
 

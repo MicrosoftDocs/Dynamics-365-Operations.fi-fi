@@ -1,9 +1,9 @@
 ---
-title: Lähes reaaliaikainen tietojen integrointi Common Data Servicen kanssa
-description: Tässä ohjeaiheessa on yleiskatsaus Finance and Operationsin ja Common Data Servicen integroinnista.
+title: Kaksoiskirjoituksen yleiskatsaus
+description: Tämä ohjeaihe sisältää kaksoiskirjoituksen yleiskatsauksen. Kaksoiskirjoitus on infrastruktuuri, joka sisältää lähes reaaliaikaisen vuorovaikutuksen Microsoft Dynamics 365:n mallipohjaisten sovellusten ja Finance and Operations -sovellusten välillä.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,59 +18,91 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1c09b0c0bb695e7695acb7a8821ffb99ae1f6f06
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 12c6a39700a260c138fab67ed370f94b3aa04213
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019762"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075981"
 ---
-# <a name="near-real-time-data-integration-with-common-data-service"></a>Lähes reaaliaikainen tietojen integrointi Common Data Servicen kanssa
+# <a name="dual-write-overview"></a>Kaksoiskirjoituksen yleiskatsaus
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
-Nykyisessä digitaalisessa maailmassa liiketoiminnan ekosysteemit käyttävät Microsoft Dynamics 365 -sovelluksia kokonaisuutena. Koska henkilöiden, asiakkaiden, operaatioiden ja esineiden internetin (IoT) laitteiden tiedot virtaavat yhteen lähteeseen, on mahdollista, että digitaaliset palautesilmukat ovat käytettävissä. Tämän kokemuksen saavuttamiseksi Finance and Operations -sovellusten ja Dynamics 365 -sovellusten välinen integrointi on välttämätöntä. Jotkin sovellukset perustuvat Common Data Serviceen. Finance and Operations -sovellusten tietojen integrointi Common Data Serviceen sallii muiden sovellusten johdonmukaisen ja sujuvan tietojenvaihdon Finance and Operationsin kanssa.
+## <a name="what-is-dual-write"></a>Mikä on kaksoiskirjoitus?
 
-Finance and Operations -sovellukset ja Common Data Service mahdollistavat lähes reaaliaikaista tietojen synkronointia Finance and Operations -sovellusten ja muiden Dynamics 365 -sovellusten välillä kaksoiskirjoituskehyksen avulla. Kattavuus on laaja ja kattaa 28 sovelluksen osa-aluetta. Tavoitteena on tarjota yksi yhdenmukainen Dynamics 365 -käyttäjäkokemus saumattomien tietovirtojen kautta, jotka yhdistävät liiketoimintaprosesseja eri sovelluksissa.
+Kaksoiskirjoitus on valmis infrastruktuuri, joka sisältää lähes reaaliaikaisen vuorovaikutuksen Microsoft Dynamics 365:n mallipohjaisten sovellusten ja Finance and Operations -sovellusten välillä. Kun asiakkaiden, tuotteiden, henkilöiden ja toimintojen tiedot siirretään sovellusten ulkopuolelle, kaikki organisaation osastot voivat käyttää niitä.
 
-![Arkkitehtuurin yleiskuvauskaavio](media/dual-write-overview.jpg)
+Kaksoiskirjoitus sisältää tiukasti yhdistetyn kaksisuuntaisen integroinnin Finance and Operations -sovellusten ja Common Data Servicen välillä. Kaikki tietojen muutokset Finance and Operations -sovelluksissa aiheuttavat kaksoiskirjoituksia Common Data Servicessä ja Common Data Servicen tietojen muutokset puolestaan kirjoituksia Finance and Operations -sovelluksissa. Tämä automatisoitu tietovirta tarjoaa integroidun käyttökokemuksen eri sovelluksissa.
 
-Käytössä on seuraavat arvoehdotukset:
+![Tietojen suhde sovellusten välillä](media/dual-write-overview.jpg)
 
-+ [Organisaatiohierarkia Common Data Servicessa](organization-mapping.md)
-+ [Yrityksen käsite Common Data Servicessa](company-data.md)
-+ [Integroidut asiakkaiden päätiedot](customer-mapping.md)
-+ [Integroitu kirjanpito](ledger-mapping.md)
-+ [Yhtenäinen tuotekokemus](product-mapping.md)
-+ [Integroidut toimittajien päätiedot](vendor-mapping.md)
-+ [Integroidut toimipaikat ja varastot](sites-warehouses-mapping.md)
-+ [Integroidut veron päätiedot](tax-mapping.md)
+Kaksoiskirjoituksissa on eri osaa: *infrastruktuuri* ja *sovellus*.
 
-## <a name="system-requirements"></a>Järjestelmävaatimukset
+### <a name="infrastructure"></a>Infrastruktuuri
 
-Synkroniset, kaksisuuntaiset, lähes reaaliaikaiset tietovirrat vaativat seuraavat versiot:
+Kaksoiskirjoituksen infrastruktuuri on laajennettavissa. Se on luotettava infrastruktuuri, joka sisältää seuraavat keskeiset ominaisuudet:
 
-+ Microsoft Dynamics 365 for Finance and Operationsin versio 10.0.4 (heinäkuu 2019) ja Platform update 28 tai uudempi
-+ Microsoft Dynamics 365 for Customer Engagement, Platform -versio 9.1 (4.2) tai uudempi
++ Sovellusten välinen synkroninen ja kaksisuuntainen tietovirta
++ Synkronisointi yhdessä toiston, pysäytyksen ja kertymän tilojen kanssa tukee järjestelmää online- ja offline-tilassa sekä asynkronisessa tilassa.
++ Mahdollisuus synkronoida alkuperäiset tiedot sovellusten välillä
++ Yhdistetty näkymä toiminto- ja virhelokeista tietojen järjestelmänvalvojille
++ Mahdollisuus määrittää mukautettuja hälytyksiä ja rajoja sekä tilata ilmoituksia
++ Intuitiivinen käyttöliittymä suodatusta ja muunnoksia varten
++ Mahdollisuus määrittää ja tarkastella entiteetin riippuvuuksia ja suhteita
++ Laajennettavuus sekä vakioentiteeteille että mukautetuille entiteeteille ja määrityksille
++ Luotettava sovelluksen elinkaaren hallinta
++ Uusien asiakkaiden valmis määrityskokemus
 
-## <a name="setup-instructions"></a>Määritysohjeet
+### <a name="application"></a>Hakemus
 
-Määritä Finance and Operations -sovellusten ja Common Data Servicen välinen integrointi noudattamalla seuraavia ohjeita.
-    
-1. Kaksoiskirjoitusjärjestelmän asennusta varten katso [vaiheittainen opas](https://aka.ms/dualwrite-docs) kaksoiskirjoituksen esiversion julkistamisessa.
-2. Lataa ja asenna ratkaisu [FIN Ops- ja CDS/CE-integraatiosta kaksoiskirjoitus-](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer-ryhmän kautta. Paketti sisältää viisi ratkaisua:
+Kaksoiskirjoitus luo vastaavuuden Finance and Operations -sovellusten käsitteiden ja Dynamics 365:n mallipohjaisten sovellusten käsitteiden välille. Tämä integraatio tukee seuraavia skenaarioita:
 
-    + Dynamics365Company
-    + CurrencyExchangeRates
-    + Dynamics365FinanceAndOperationsCommon
-    + Dynamics365FinanceCommon
-    + Dynamics365SupplyChainCommon
++ Integroidut asiakkaan päätiedot
++ Asiakkaan kanta-asiakaskorttien ja palkkiopisteiden käyttöoikeus
++ Yhtenäinen tuotteiden hallinnan kokemus
++ Tietoja organisaatiohierarkiasta
++ Integroidut toimittajan päätiedot
++ Talous- ja veroviitetietojen käyttöoikeus
++ Tarvittaessa käytettävän hinnoitteluohjelman käyttökokemus
++ Integroitu prospektista käteiseksi -käyttökokemus
++ Mahdollisuus sekä sisäisten resurssien että asiakkaan resurssien käyttämiseen kentän edustajien kautta
++ Integroitu hankinnasta maksuun -käyttökokemus
++ Asiakastietojen ja asiakirjojen integroidut aktiviteetit ja huomautukset
++ Mahdollisuus etsiä käytettävissä olevan varaston saatavuutta ja tietoja
++ Projektista käteiseksi -käyttökokemus
++ Mahdollisuus käsitellä useita osoitteita ja rooleja osapuolen käsitteen kautta
++ Yhden lähteen hallinta käyttäjille
++ Vähittäiskaupan ja markkinoinnin integroidut kanavat
++ Kampanjoiden ja alennusten näkyvyys
++ Palvelupyyntöjen toiminnot
++ Yksinkertaistetut palvelutoiminnot
 
-3. Noudata suoritusjärjestystä [alkuperäisten viitetietojen synkronoinnissa](initial-sync.md).
-4. Jos kohtaat kaksoiskirjoitussynkronoinnin ongelmia, katso [tietojen integroinnin vianetsintäopas](dual-write-troubleshooting.md).
+## <a name="top-reasons-to-use-dual-write"></a>Yleisimmät syyt kaksoiskirjoittamisen käyttämiseksi
 
-> [!IMPORTANT]
-> Et voi suorittaa kaksoiskirjoitusta ja [Prospektista käteiseksi -prosessia](../../../../supply-chain/sales-marketing/prospect-to-cash.md) rinnakkain. Jos käytössäsi on Prospektista käteiseksi -ratkaisu, sinun on poistettava sen asennus. Sinun on myös poistettava käytöstä asiakkaan ja toimittajan kaksoiskirjoitusmallit, jotka ovat osa Prospektista käteiseksi -ratkaisua.
+Kaksoiskirjoitus mahdollistaa tietojen integroinnin Microsoft Dynamics 365 -sovelluksissa Tämä luotettava kehys linkittää ympäristöt ja mahdollistaa erilaisten liiketoimintasovellusten käyttämisen yhdessä. Seuraavassa kerrotaan tärkeimmät syyt kaksoiskirjoituksen käyttämiseksi:
+
++ Kaksoiskirjoitus mahdollistaa tiiviisti yhdistetyn ja lähes reaaliaikaisen kaksisuuntaisen integroinnin Finance and Operations -sovellusten ja Dynamics 365:n mallipohjaisten sovellusten välillä. Tämä integraatio tekee Microsoft Dynamics 365:stä yhden pysähdyksen kaupan kaikille liiketoimintasovelluksille. Asiakkaat, jotka käyttävät Dynamics 365 Finance- ja Dynamics 365 Supply Chain Management -sovellusta, mutta jotka käyttävät asiakkuudenhallintaan (CRM) jotain muuta kuin Microsoftin ratkaisua, siirtyvät kohti Dynamics 365:ttä sen kaksoiskirjoitustuen vuoksi.
++ Asiakkaiden, tuotteiden, toimintojen, projektien ja esineiden internetin tiedot siirtyvät automaattisesti Common Data Serviceen kaksoiskirjoituksen kautta. Tämä yhteys on erittäin hyödyllinen yrityksille, jotka ovat kiinnostuneita Microsoft Power Platform -laajennuksista.
++ Kaksoiskirjoitusinfrastruktuuri noudattaa kooditonta / vähäisen koodin periaatetta. Vakiomuotoisten taulukosta taulukkoon -määritysten ja mukautettujen määritysten laajentamisessa ei tarvita paljon kehitystyötä.
++ Kaksoiskirjoitus tukee sekä online- että offline-tilaa. Microsoft on ainoa yritys, joka tarjoaa tukea online-ja offline-tilassa.
+
+## <a name="what-does-dual-write-mean-for-users-and-architects-of-crm-products"></a>Mitä kaksoiskirjoituds tarkoittaa CRM-tuotteiden käyttäjille ja suunnittelijoille?
+
+Kaksoiskirjoitus automatisoi tietovirran Finance and Operations -sovellusten ja Common Data Servicen välillä. Tulevissa versioissa Dynamics 365:n mallipohjaisten sovellusten käsitteet (esimerkiksi asiakas, yhteyshenkilö, tarjous ja tilaus) skaalataan keskisuurten ja suurten markkinoiden asiakkaille.
+
+Ensimmäisessä versiossa kaksoiskirjoitusratkaisut käsittelevät suurinta osaa automaatiosta. Tulevissa versioissa näistä ratkaisuista tulee osa Common Data Servicea. Common Data Servicen tulevien muutosten ymmärtäminen helpottaa työtä jatkossa. Tässä esitellään joitakin tärkeitä muutoksia:
+
++ Common Data Service sisältää uusia käsitteitä, kuten yritys ja osapuoli. Nämä käsitteet vaikuttavat kaikkiin Common Data Servicen avulla muodostettuihin sovelluksiin, kuten Dynamics 365 Sales-, Dynamics 365 Marketing-, Dynamics 365 Customer Service- ja Dynamics 365 Field Service -sovellukseen.
++ Toiminnot ja huomautukset ovat yhtenäisiä ja laajenevat tukemaan sekä C1 (järjestelmän käyttäjät)- että C2 (järjestelmän asiakkaat) -kohteita.
++ Tässä esitellään joitakin Common Data Servicen tärkeitä muutoksia:
+
+    - Desimaalitietotyyppi korvaa raha-tietotyypin.
+    - Voimassaolopäivä tukee mennyttä, nykyistä ja tulevaa päivämäärää samassa paikassa.
+    - Valuutta- ja vaihtokursseja tuetaan aiempaa enemmän ja **Vaihtokurssi**-ohjelmointirajapintaa muutetaan.
+    - Yksikkömuunnoksia tuetaan.
+
+Lisätietoja tulevista muutoksista on kohdassa [Common Data Servicen tiedot – vaihe 1 ja 2](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap).

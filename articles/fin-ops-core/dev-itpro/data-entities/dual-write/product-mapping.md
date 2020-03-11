@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a52e8f65e7e2a8d90ddf5efa47c07d6995ef645d
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
+ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019757"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3081148"
 ---
 # <a name="unified-product-experience"></a>Yhtenäinen tuotekokemus
 
@@ -109,7 +109,7 @@ Huomaa, että tuotteet synkronoidaan Finance and Operations -sovelluksista Commo
 
 Tuotedimensiot ovat ominaisuuksia, joilla voidaan tuotevariantti tunnistetaan. Neljä tuotedimensiota (väri, koko, tyyli ja konfiguraatio) yhdistetään myös Common Data Serviceen määrittämää tuotevariantteja. Seuraavassa kuvassa on Väri-tuotedimension tietomalli. Samaa mallia käytetään myös kokojen, tyylien ja konfiguraatioiden osalta. 
 
-![Tuotteiden tietomalli](media/dual-write-product-2.PNG)
+![Tuotteiden tietomalli](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +145,7 @@ Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikke
 
 Mittayksikkö ja sen muunnokset ovat käytettävissä Common Data Servicessa seuraavassa kuvassa olevan tietomallin mukaisesti.
 
-![Tuotteiden tietomalli](media/dual-write-product-3.PNG)
+![Tuotteiden tietomalli](media/dual-write-product-three.png)
 
 Mittayksikkökäsite on integroitu Finance and Operations- ja muiden Dynamics 365 -sovellusten välillä. Kullekin Finance and Operations -sovelluksen yksikköluokalle luodaan Dynamics 365 -sovelluksessa yksikköryhmä, joka sisältää yksikköluokkaan kuuluvat yksiköt. Jokaiselle yksikköryhmälle luodaan myös oletusarvoinen perusyksikkö. 
 
@@ -205,13 +205,13 @@ Dynamics 365 for Finance and Operationsin ja Common Data Servicen väliseen tuot
 
 Muiden Dynamics 365 -sovellusten käyttäjät tunnistavat tuotteen käyttöliittymässä kentän **msdyn_productnumber** mukaan. (Huomaa, että kentän otsikko on **Tuotenumero**.) Tuotelomakkeessa näkyy sekä yritys että msydn_productnumber. (productnumber)-kenttää eli tuotteen yksilöivää avainta ei kuitenkaan näytetä. 
 
-Huomaa, että jos sovellukset pohjautuvat Common Data Serviceen, erityistä huomiota on kiinnitettävä (productnumber)-kentän eli yksilöivän tuotetunnuksen käyttämiseen integrointiavaimena kentän msdyn_productnumber sijaan, sillä tämä jälkimmäinen ei ole yksilöivä. 
+Jos muodostat sovelluksia Common Data Servicessä, kiinnitä huomiota **productnumber**-kohdan (tuotteen yksilöivä tunnus) käyttämiseen integrointiavaimena. Älä käytä **msdyn_productnumber**-arvoa, koska se ei ole yksilöllinen. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Tuotteiden ensimmäinen synkronointi ja tietojen siirtäminen Common Data Servicesta Finance and Operationsiin
 
 ### <a name="initial-synchronization-of-products"></a>Tuotteiden ensimmäinen synkronointi 
 
-Kun kaksoiskirjoitus on otettu käyttöön Dynamics 365 Finance and Operations -sovellusten tuotteet synkronoidaan Common Data Serviceen ja muihin Dynamics 365 -sovelluksiin. Huomaa, että Common Data Servicessä ja muissa Dynamics 365 -sovelluksissa ennen kaksoiskirjoitusta luotuja tuotteita ei päivitetä eikä täsmäytetä Finance and Operationsin tuotetietojen kanssa.
+Kun kaksoiskirjoitus on otettu käyttöön Finance and Operations -sovellusten tuotteet synkronoidaan Common Data Serviceen ja muiden Dynamics 365:n mallipohjaisten sovellusten kanssa. Common Data Servicessä ja muissa Dynamics 365 -sovelluksissa ennen kaksoiskirjoituksen julkaisua luotuja tuotteita ei päivitetä eikä täsmäytetä Finance and Operations -sovellusten tuotetietojen kanssa.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Tuotetietojen täsmäyttäminen Finance and Operationsista ja muista Dynamics 365 -sovelluksista
 

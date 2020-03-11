@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 759869577ef30cd3f81eb74103a93cc5d1a3d608
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026060"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042847"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Luo sovellustietoja sisältäviä asiakirjoja
 
@@ -40,10 +40,14 @@ Tämä menettely on luotu käyttäjille, joille on määritetty järjestelmänva
 ## <a name="set-up-foreign-trade-parameters"></a>Määritä ulkomaankaupan parametrit
 1. Valitse Vero > Asetukset > Ulkomaankauppa > Ulkomaankaupan parametrit.
 2. Valitse Numerojärjestykset-välilehti.
-    * Intrastat-raportointiprosessin tietojen arkistointia varten on tunnistettava kunkin luodun arkiston tietueet. Sitä varten on määritettävä myös erityinen numerosarja.  
+
+    Intrastat-raportointiprosessin tietojen arkistointia varten on tunnistettava kunkin luodun arkiston tietueet. Sitä varten on määritettävä myös erityinen numerosarja.  
+
 3. Valitse Intrastat-arkiston tunnus -viite.
 4. Kirjoita arvo Numerosarjan koodi -kenttään.
-    * Anna tai valitse Numerosarjan koodi -kenttään Fore_2-arvo.  
+
+    Anna tai valitse Numerosarjan koodi -kenttään Fore_2-arvo.  
+
 5. Ratkaise muutokset numerosarjan koodissa.
 6. Valitse Tallenna.
 7. Sulje sivu.
@@ -54,18 +58,23 @@ Tämä menettely on luotu käyttäjille, joille on määritetty järjestelmänva
 3. Valitse puussa Intrastat (model)\Intrastat (format).
 4. Valitse Suorita.
 5. Kirjoita Syötä tiedostonimi -kenttään intrastat2.xml.
-    * intrastat2.xml  
 6. Valitse OK.
 
 ## <a name="review-er-format-executions-results"></a>ER-muodon suorittamisen tulosten tarkasteleminen
 Tarkista luotu XML-tiedosto.  
 1. Sulje sivu.
 2. Valitse Vero > Ilmoitukset > Ulkomaankauppa > Intrastat.
-    * Avaa tämä sähköiseen asiakirjaan sisällytetyt Intrastat-tapahtumat sisältävä lomake.  
+
+    Avaa tämä sähköiseen asiakirjaan sisällytetyt Intrastat-tapahtumat sisältävä lomake.  
+
 3. Valitse Intrastat-arkisto.
-    * Koska suoritettu ER-muoto sisältää nyt sovellustietojen päivityksen asetukset, valmiin Intrastat-raportoinnin tiedot on arkistoitu. Tämä lomake sisältää luodun arkiston otsikkotietueen.  
+
+    Koska suoritettu ER-muoto sisältää nyt sovellustietojen päivityksen asetukset, valmiin Intrastat-raportoinnin tiedot on arkistoitu. Tämä lomake sisältää luodun arkiston otsikkotietueen.  
+
 4. Valitse Erittely.
-    * Tämä lomake sisältää luodun arkiston tiedot.  
+
+    Tämä lomake sisältää luodun arkiston tiedot.  
+
 5. Sulje sivu.
 6. Sulje sivu.
 7. Sulje sivu.

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9f043d66fbd417633de71b5fa12b13b3f04e3452
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022351"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057807"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Määritä puhelinkeskuksen toimitustavat ja kulut
 
@@ -66,7 +66,7 @@ Kulut voidaan määrittää niin, että niitä käytetään tietylle toimitustav
 
 **Rivit**-osassa voit määrittää yhdet tai useammat kulut valuutan mukaan tarpeen mukaan. Kulut on linkitettävä kulukoodiin, joka määrittää tämän kulun taloushallinnon kirjaussäännöt. **Luokka**-kenttää käytetään määrittämään, miten kulut lasketaan. Esimerkiksi jos asiakkailta tulisi veloittaa 9,95 dollarin kiinteä hinta tilauksen toimittamiseksi tietyn toimitustavan mukaan, käytä **Kiinteä**-luokkaa. Jos yritys päättää laskuttaa asiakkailta prosenttiosuuden tilauksen loppusummasta toimituskulujen kattamiseksi, käytä **Prosentti**-luokkaa. Asiakkaan todelliset kulut on määritetty **Kulujen arvo** -kentässä.
 
-Vähittäismyyntiyritykset määrittävät usein kulut eri tasoille. Tällöin summa, jonka asiakkaat maksavat toimitusta varten, perustuu tilauksen arvoon. Voit määrittää kulutasot kirjoittamalla arvot **Summasta**- ja **Summaan**-kenttiin sen lisäksi, että määrität itse kulun **Kulujen arvo** -kenttään. Esimerkiksi tilauksille, joiden arvo on pienempi kuin 50 dollaria, kauppa veloittaa 5,95 dollaria maakuljetustoimituksesta. Tilauksista, joiden arvo on vähintään 50 dollaria mutta pienempi kuin 100 dollaria, myyjä veloittaa 7,95 dollaria. Lopuksi, tilauksista, joiden arvo on vähintään 100 dollaria, myyjä tarjoaa ilmaisen toimituksen. Seuraavassa kuvassa on tällaisten kulujen määritys.
+Yritykset määrittävät usein kulut eri tasoille. Tällöin summa, jonka asiakkaat maksavat toimitusta varten, perustuu tilauksen arvoon. Voit määrittää kulutasot kirjoittamalla arvot **Summasta**- ja **Summaan**-kenttiin sen lisäksi, että määrität itse kulun **Kulujen arvo** -kenttään. Esimerkiksi tilauksille, joiden arvo on pienempi kuin 50 dollaria, kauppa veloittaa 5,95 dollaria maakuljetustoimituksesta. Tilauksista, joiden arvo on vähintään 50 dollaria mutta pienempi kuin 100 dollaria, myyjä veloittaa 7,95 dollaria. Lopuksi, tilauksista, joiden arvo on vähintään 100 dollaria, myyjä tarjoaa ilmaisen toimituksen. Seuraavassa kuvassa on tällaisten kulujen määritys.
 
 ![Esimerkki: kiinteät kulut tasoittain](media/fixedtieredcharges.png)
 

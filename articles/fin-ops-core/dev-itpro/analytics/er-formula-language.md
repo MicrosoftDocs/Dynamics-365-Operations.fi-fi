@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b1c6a3f3fd5b55012d89a6c9f0bf2ed5dddd13c
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916657"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042708"
 ---
 # <a name="electronic-reporting-formula-language"></a>Sähköisen raportoinnin kaavakieli
 
@@ -154,7 +154,7 @@ ER:n avulla on mahdollista laajentaa luetteloa toiminnoista, joita käytetään 
 
 Voit luoda yhdistelmälausekkeita, jotka käyttävät eri luokkien funktioita edellyttäen, että tietotyypit vastaavat toisiaan. Kun käytät funktioita yhdessä, vastaa tulosteen tietotyyppiä yhdestä toiminnosta toisen funktion edellyttämän syötetieto tyypin mukaan. Jos esimerkiksi haluat välttää mahdollisen "luettelo-tyhjä"-virheen kentän sidonnassa ER-muotoelementtiin, yhdistä [Luettelo](er-functions-category-list.md)-luokan funktiot [loogisen](er-functions-category-logical.md)-luokan funktiolla, kuten seuraavassa esimerkissä näytetään. Tässä kaavassa käytetään [IF](er-functions-logical-if.md)-funktiota, kun testataan, onko **IntrastatTotals**-luettelo tyhjä, ennen kuin se palauttaa vaaditun koosteen arvon kyseisestä luettelosta. Jos **IntrastatTotals**-luettelo on tyhjä, kaava palauttaa arvon **0** (nolla).
 
-```
+```vb
 IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 
@@ -162,7 +162,7 @@ IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded'
 
 Usein voit saada samat tietojen muunnoksen tulokset monella tavalla käyttämällä eri luokkien tai eri toimintojen funktioita samasta luokasta. Esimerkiksi edellinen lauseke voidaan määrittää myös käyttämällä [MÄÄRÄ](er-functions-list-count.md)-funktiota [luettelo](er-functions-category-list.md)-luokasta.
 
-```
+```vb
 IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 

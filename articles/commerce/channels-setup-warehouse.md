@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fe785e3bfd503193a588958ae5df0d1c0fdb9e52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002309"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057853"
 ---
 # <a name="warehouse-set-up"></a>Varaston määrittäminen
 
@@ -59,7 +59,7 @@ Voit määrittää varaston seuraavien ohjeiden mukaisesti.
 
 1. Valitse siirtymisruudussa **Moduulit \> Retail ja Commerce \> Kanavan määritys \> Varastot**.
 1. Valitse toimintoruudussa **Uusi**.
-1. Anna **Varasto**-kentässä arvo.  Jos kyse on 1:1-yhdistämismäärityksestä vähittäismyymälään, harkitse myymälän tai alueellisen jakelukeskuksen nimen käyttämistä.
+1. Anna **Varasto**-kentässä arvo.  Jos tämä on myymälän 1:1-vastaavuus, voit käyttää myymälän nimeä tai alueellisen jakelukeskuksen nimeä.
 1. Anna **Nimi**-kenttään arvo.
 1. Valitse avattavassa **Toimipaikka**-luettelossa aiemmin luotu varaston toimipaikka.
 1. Valitse **Tyyppi**-kentässä **Oletus**.

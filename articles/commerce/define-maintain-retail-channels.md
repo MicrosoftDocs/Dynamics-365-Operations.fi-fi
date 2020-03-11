@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 63639d69af90c6aa37bbf7af7868bca71942063f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022346"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057911"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Vähittäismyyntikanavien määrittäminen ja ylläpitäminen
 
@@ -47,9 +47,9 @@ Ennen kuin voit määrittää myymälän, sinun on suoritettava seuraavat tehtä
 3. Myymälöiden numerosarjojen, myymälän laskelmien ja laskelman tositteiden määrittäminen.
 4. Commercen parametrien määritys.
 5. Määritä maksutapoja, jotka myymälä hyväksyy.
-6. Voit myös määrittää maksupalvelut prosessoimaan luottokorttitapahtumat Retail POS -kassakoneissa.
+6. Voit myös määrittää maksupalvelut prosessoimaan luottokorttitapahtumat myyntipisteen kassakoneissa.
 7. Määritä arvonlisäveroryhmät.
-8. Aseta vähittäismyyntituotteet. Tässä tehtävässä määritetään myös tuotteiden hierarkiat, tuotevariantit ja tuotevalikoimat.
+8. Määritä tuotteet. Tässä tehtävässä määritetään myös tuotteiden hierarkiat, tuotevariantit ja tuotevalikoimat.
 9. Voit määrittää tuotehintaryhmät.
 10. Tuotehinnoittelujen määritys. Tässä tehtävässä määritetään myös hinnanoikaisut, alennukset ja alennuskaudet.
 11. Henkilökunnan jäsenten määrittäminen.
@@ -87,5 +87,5 @@ Kun olet lisännyt myymälälle tietoja, päätä tehtävät lähettämällä uu
 Commerce käyttää organisaatiohierarkioita määrittämään vähittäismyynnin kanavien rakenteen. Organisaatiohierarkiat edustavat liiketoimintasi muodostavien organisaatioiden välisiä suhteita. Kun perustat kauppoja, voit lisätä ne organisaatiohierarkiaan. Myymälät jakavat sitten valikoimissa, täydennyksissä ja raportoinnissa käytettävät tiedot.
 
 > [!NOTE]
-> Jos haluat käyttää vähittäismyynnin myyntitoimintoa, **usean toimitusasiakkaan** konfigurointiavain on otettava käyttöön. Tämä konfigurointiavain löytyy **Kaupan määritysavaimet** -osiosta kohdasta **Järjestelmänhallinta**\> **Asetukset** \> **Käyttöoikeuden määritys**. Tämä vaaditaan Retailin toiminnallisuuden vuoksi, joka suorittaa erilaisia validointeja myyntitilauksen rivitasolla määritettyjen toimitusosoitteiden perusteella.
+> Jos haluat käyttää Commercen myyntitoimintoa, **usean toimitusasiakkaan** konfigurointiavain on otettava käyttöön. Tämä konfigurointiavain löytyy **Kaupan määritysavaimet** -osiosta kohdasta **Järjestelmänhallinta**\> **Asetukset** \> **Käyttöoikeuden määritys**. Tämä vaaditaan, koska myyntitilauksen rivitasolla määritettyjen toimitusosoitteiden perusteella suoritetaan erilaisia tarkistuksia.
 
