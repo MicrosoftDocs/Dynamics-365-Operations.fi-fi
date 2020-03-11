@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23e63f6b7999399fd5365c616613cbc603774d53
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: ce2192c7bc849996e08573d71d8ed43956c8fb89
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916933"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070526"
 ---
-# <span data-ttu-id="ad7be-103"><a name="MOD_97">MOD_97 ER -funktio</a></span><span class="sxs-lookup"><span data-stu-id="ad7be-103"><a name="MOD_97">MOD_97 ER function</a></span></span>
+# <span data-ttu-id="13dcb-103"><a name="MOD_97">MOD_97 ER -funktio</a></span><span class="sxs-lookup"><span data-stu-id="13dcb-103"><a name="MOD_97">MOD_97 ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ad7be-104">`MOD_97`-funktio palauttaa *merkkijono*-arvon, joka vastaa velkojan viittausta MOD97-lausekkeena määritetyn laskunumeron numeroiden perusteella.</span><span class="sxs-lookup"><span data-stu-id="ad7be-104">The `MOD_97` function returns a *String* value that represents a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</span></span>
+<span data-ttu-id="13dcb-104">`MOD_97`-funktio palauttaa *merkkijono*-arvon, joka vastaa velkojan viittausta MOD97-lausekkeena määritetyn laskunumeron numeroiden perusteella.</span><span class="sxs-lookup"><span data-stu-id="13dcb-104">The `MOD_97` function returns a *String* value that represents a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ad7be-105">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="ad7be-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="13dcb-105">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="13dcb-105">Syntax</span></span>
 
-```
+```vb
 MOD_97 (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="ad7be-106">Argumentit</span><span class="sxs-lookup"><span data-stu-id="ad7be-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="13dcb-106">Argumentit</span><span class="sxs-lookup"><span data-stu-id="13dcb-106">Arguments</span></span>
 
-<span data-ttu-id="ad7be-107">`invoice number digits`: *Merkkijono*</span><span class="sxs-lookup"><span data-stu-id="ad7be-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="13dcb-107">`invoice number digits`: *Merkkijono*</span><span class="sxs-lookup"><span data-stu-id="13dcb-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="ad7be-108">Tekstiarvo, joka edustaa laskunumeron numeroita.</span><span class="sxs-lookup"><span data-stu-id="ad7be-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="13dcb-108">Tekstiarvo, joka edustaa laskunumeron numeroita.</span><span class="sxs-lookup"><span data-stu-id="13dcb-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="ad7be-109">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="ad7be-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="13dcb-109">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="13dcb-109">Return values</span></span>
 
-<span data-ttu-id="ad7be-110">*merkkijono*</span><span class="sxs-lookup"><span data-stu-id="ad7be-110">*String*</span></span>
+<span data-ttu-id="13dcb-110">*merkkijono*</span><span class="sxs-lookup"><span data-stu-id="13dcb-110">*String*</span></span>
 
-<span data-ttu-id="ad7be-111">Tulokseksi saatava tekstiarvo.</span><span class="sxs-lookup"><span data-stu-id="ad7be-111">The resulting text value.</span></span>
+<span data-ttu-id="13dcb-111">Tulokseksi saatava tekstiarvo.</span><span class="sxs-lookup"><span data-stu-id="13dcb-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ad7be-112">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="ad7be-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="13dcb-112">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="13dcb-112">Example</span></span>
 
-<span data-ttu-id="ad7be-113">`MOD_97 ("VEND-200002")` palauttaa **"20000285"**.</span><span class="sxs-lookup"><span data-stu-id="ad7be-113">`MOD_97 ("VEND-200002")` returns **"20000285"**.</span></span>
+<span data-ttu-id="13dcb-113">`MOD_97 ("VEND-200002")` palauttaa **"20000285"**.</span><span class="sxs-lookup"><span data-stu-id="13dcb-113">`MOD_97 ("VEND-200002")` returns **"20000285"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ad7be-114">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="ad7be-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="13dcb-114">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="13dcb-114">Additional resources</span></span>
 
-[<span data-ttu-id="ad7be-115">Muut (liiketoiminnan toimialuekohtaiset) toiminnot</span><span class="sxs-lookup"><span data-stu-id="ad7be-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="13dcb-115">Muut (liiketoiminnan toimialuekohtaiset) toiminnot</span><span class="sxs-lookup"><span data-stu-id="13dcb-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)

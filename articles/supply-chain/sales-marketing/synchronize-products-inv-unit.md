@@ -19,47 +19,47 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 18bedcc99d7d70875ec363a97e4e6eccbace3a9c
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 741b823d6cc5dbd23cda4f07e463f28d6bbe77d6
+ms.sourcegitcommit: a2f9dce06322dada6b5f1c82051ef2359f8c0f12
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814174"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081861"
 ---
-# <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a><span data-ttu-id="373dd-103">Tuotteiden ja varastoyksiköiden synkronointi Supply Chain Managementista Field Serviceen</span><span class="sxs-lookup"><span data-stu-id="373dd-103">Synchronize products with inventory unit from Supply Chain Management to Field Service</span></span>
+# <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a><span data-ttu-id="f5486-103">Tuotteiden ja varastoyksiköiden synkronointi Supply Chain Managementista Field Serviceen</span><span class="sxs-lookup"><span data-stu-id="f5486-103">Synchronize products with inventory unit from Supply Chain Management to Field Service</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="373dd-104">Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementin varastoyksiköstä Dynamics 365 Field Serviceen.</span><span class="sxs-lookup"><span data-stu-id="373dd-104">This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.</span></span>
+<span data-ttu-id="f5486-104">Tässä ohjeaiheessa käsitellään malleja ja taustatehtäviä, joilla tuotteita synkronoidaan Dynamics 365 Supply Chain Managementin varastoyksiköstä Dynamics 365 Field Serviceen.</span><span class="sxs-lookup"><span data-stu-id="f5486-104">This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.</span></span>
 
-<span data-ttu-id="373dd-105">[![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span><span class="sxs-lookup"><span data-stu-id="373dd-105">[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span></span>
+<span data-ttu-id="f5486-105">[![Liiketoimintaprosessien synkronointi Supply Chain Managementin ja Field Servicen välillä](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span><span class="sxs-lookup"><span data-stu-id="f5486-105">[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)</span></span>
 
-<span data-ttu-id="373dd-106">Käytetty **Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Field Serviceen)** -malli perustuu **Field Service -tuotteet (Supply Chain Managementista Field Serviceen)** -malliin.</span><span class="sxs-lookup"><span data-stu-id="373dd-106">The used **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template is based on the **Field Service Products (Supply Chain Management to Field Service)** template.</span></span> <span data-ttu-id="373dd-107">Lisätietoja on kohdassa [Supply Chain Managementin tuotteiden synkronointi Field Servicen tuotteisiin](field-service-product.md).</span><span class="sxs-lookup"><span data-stu-id="373dd-107">For more information, see [Synchronize products in Supply Chain Management to products in Field Service](field-service-product.md).</span></span>
+<span data-ttu-id="f5486-106">Käytetty **Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Field Serviceen)** -malli perustuu **Field Service -tuotteet (Supply Chain Managementista Field Serviceen)** -malliin.</span><span class="sxs-lookup"><span data-stu-id="f5486-106">The used **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template is based on the **Field Service Products (Supply Chain Management to Field Service)** template.</span></span> <span data-ttu-id="f5486-107">Lisätietoja on kohdassa [Supply Chain Managementin tuotteiden synkronointi Field Servicen tuotteisiin](field-service-product.md).</span><span class="sxs-lookup"><span data-stu-id="f5486-107">For more information, see [Synchronize products in Supply Chain Management to products in Field Service](field-service-product.md).</span></span>
 
-<span data-ttu-id="373dd-108">Tässä ohjeaiheessa käsitellään kahden mallin eroja:</span><span class="sxs-lookup"><span data-stu-id="373dd-108">This topic only describes the differences between the two templates:</span></span> 
-- <span data-ttu-id="373dd-109">**Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Salesiin)**</span><span class="sxs-lookup"><span data-stu-id="373dd-109">**Field Service Products with Inventory unit (Supply Chain Management to Sales)**</span></span>
-- <span data-ttu-id="373dd-110">**Field Service -tuotteet (Supply Chain Managementista Field Serviceen)**</span><span class="sxs-lookup"><span data-stu-id="373dd-110">**Field Service Products (Supply Chain Management to Field Service)**</span></span> 
+<span data-ttu-id="f5486-108">Tässä ohjeaiheessa käsitellään kahden mallin eroja:</span><span class="sxs-lookup"><span data-stu-id="f5486-108">This topic only describes the differences between the two templates:</span></span> 
+- <span data-ttu-id="f5486-109">**Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Salesiin)**</span><span class="sxs-lookup"><span data-stu-id="f5486-109">**Field Service Products with Inventory unit (Supply Chain Management to Sales)**</span></span>
+- <span data-ttu-id="f5486-110">**Field Service -tuotteet (Supply Chain Managementista Field Serviceen)**</span><span class="sxs-lookup"><span data-stu-id="f5486-110">**Field Service Products (Supply Chain Management to Field Service)**</span></span> 
 
-## <a name="templates-and-tasks"></a><span data-ttu-id="373dd-111">Mallit ja tehtävät</span><span class="sxs-lookup"><span data-stu-id="373dd-111">Templates and tasks</span></span>
+## <a name="templates-and-tasks"></a><span data-ttu-id="f5486-111">Mallit ja tehtävät</span><span class="sxs-lookup"><span data-stu-id="f5486-111">Templates and tasks</span></span>
 
-<span data-ttu-id="373dd-112">**Mallin nimi Tietojen integroinnissa:**</span><span class="sxs-lookup"><span data-stu-id="373dd-112">**Name of the template in Data integration:**</span></span>
+<span data-ttu-id="f5486-112">**Mallin nimi Tietojen integroinnissa:**</span><span class="sxs-lookup"><span data-stu-id="f5486-112">**Name of the template in Data integration:**</span></span>
 
-- <span data-ttu-id="373dd-113">Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Salesiin)</span><span class="sxs-lookup"><span data-stu-id="373dd-113">Field Service Products with Inventory unit (Supply Chain Management to Sales)</span></span>
+- <span data-ttu-id="f5486-113">Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Salesiin)</span><span class="sxs-lookup"><span data-stu-id="f5486-113">Field Service Products with Inventory unit (Supply Chain Management to Sales)</span></span>
 
-<span data-ttu-id="373dd-114">**Tehtävän nimi tietojen integrointiprojektissa:**</span><span class="sxs-lookup"><span data-stu-id="373dd-114">**Name of the task in the Data integration project:**</span></span>
+<span data-ttu-id="f5486-114">**Tehtävän nimi tietojen integrointiprojektissa:**</span><span class="sxs-lookup"><span data-stu-id="f5486-114">**Name of the task in the Data integration project:**</span></span>
 
-- <span data-ttu-id="373dd-115">Tuotteet</span><span class="sxs-lookup"><span data-stu-id="373dd-115">Products</span></span>
+- <span data-ttu-id="f5486-115">Tuotteet</span><span class="sxs-lookup"><span data-stu-id="f5486-115">Products</span></span>
 
-<span data-ttu-id="373dd-116">**Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Field Serviceen)** -malli sisältää yhden yhdistämismäärityksen, joka ei sisälly **Field Service -tuotteet (Supply Chain Managementista Field Serviceen)** -malliin.</span><span class="sxs-lookup"><span data-stu-id="373dd-116">The **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Field Service Products (Supply Chain Managementto Field Service)** template.</span></span> <span data-ttu-id="373dd-117">Tämä yhdistämismääritys varmistaa, että varastotason synkronointiin tarvittava varastoyksikkö on mukana.</span><span class="sxs-lookup"><span data-stu-id="373dd-117">This mapping ensures that the Inventory unit needed for inventory level synchronization is included.</span></span>
+<span data-ttu-id="f5486-116">**Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Field Serviceen)** -malli sisältää yhden yhdistämismäärityksen, joka ei sisälly **Field Service -tuotteet (Supply Chain Managementista Field Serviceen)** -malliin.</span><span class="sxs-lookup"><span data-stu-id="f5486-116">The **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template includes one mapping that isn't included in the **Field Service Products (Supply Chain Managementto Field Service)** template.</span></span> <span data-ttu-id="f5486-117">Tämä yhdistämismääritys varmistaa, että varastotason synkronointiin tarvittava varastoyksikkö on mukana.</span><span class="sxs-lookup"><span data-stu-id="f5486-117">This mapping ensures that the Inventory unit needed for inventory level synchronization is included.</span></span>
 
-```
+```Text
 INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryunit.name [Inventory Unit(Name)] 
 ```
 
-## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="373dd-118">Mallin yhdistäminen tietojen integroinnin yhteydessä</span><span class="sxs-lookup"><span data-stu-id="373dd-118">Template mapping in Data integration</span></span>
+## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="f5486-118">Mallin yhdistäminen tietojen integroinnin yhteydessä</span><span class="sxs-lookup"><span data-stu-id="f5486-118">Template mapping in Data integration</span></span>
 
-<span data-ttu-id="373dd-119">Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="373dd-119">The following illustrations show the template mapping in Data integration.</span></span>
+<span data-ttu-id="f5486-119">Seuraavissa kuvissa on esimerkki mallin yhdistämisestä tietojen integroinnin yhteydessä.</span><span class="sxs-lookup"><span data-stu-id="f5486-119">The following illustrations show the template mapping in Data integration.</span></span>
 
-### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a><span data-ttu-id="373dd-120">Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Field Serviceen): Tuotteet</span><span class="sxs-lookup"><span data-stu-id="373dd-120">Field Service Products with Inventory unit (Supply Chain Management to Field Service): Products</span></span>
+### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a><span data-ttu-id="f5486-120">Field Service -tuotteet, joissa varastoyksikkö (Supply Chain Managementista Field Serviceen): Tuotteet</span><span class="sxs-lookup"><span data-stu-id="f5486-120">Field Service Products with Inventory unit (Supply Chain Management to Field Service): Products</span></span>
 
-<span data-ttu-id="373dd-121">[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSProduct1.png)](./media/FSProduct1.png)</span><span class="sxs-lookup"><span data-stu-id="373dd-121">[![Template mapping in Data integration](./media/FSProduct1.png)](./media/FSProduct1.png)</span></span>
+<span data-ttu-id="f5486-121">[![Mallin yhdistäminen tietojen integroinnin yhteydessä](./media/FSProduct1.png)](./media/FSProduct1.png)</span><span class="sxs-lookup"><span data-stu-id="f5486-121">[![Template mapping in Data integration](./media/FSProduct1.png)](./media/FSProduct1.png)</span></span>

@@ -18,53 +18,53 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd1290538c506cd0db6eb21a304ff9812c808f17
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 08b9727fb34210fecff31826cc1f2b8da022156b
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916450"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042455"
 ---
-# <span data-ttu-id="2df15-103"><a name="ADDDAYS">ADDDAYS ER-funktio</a></span><span class="sxs-lookup"><span data-stu-id="2df15-103"><a name="ADDDAYS">ADDDAYS ER function</a></span></span>
+# <span data-ttu-id="0446d-103"><a name="ADDDAYS">ADDDAYS ER-funktio</a></span><span class="sxs-lookup"><span data-stu-id="0446d-103"><a name="ADDDAYS">ADDDAYS ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="2df15-104">`ADDDAYS`-funktio laskee *DateTime*-arvon, joka on määritetty päivien määrä ennen määritettyä alkamispäivää tai sen jälkeen.</span><span class="sxs-lookup"><span data-stu-id="2df15-104">The `ADDDAYS` function calculates a *DateTime* value that is the specified number of days before or after a specified start date.</span></span>
+<span data-ttu-id="0446d-104">`ADDDAYS`-funktio laskee *DateTime*-arvon, joka on määritetty päivien määrä ennen määritettyä alkamispäivää tai sen jälkeen.</span><span class="sxs-lookup"><span data-stu-id="0446d-104">The `ADDDAYS` function calculates a *DateTime* value that is the specified number of days before or after a specified start date.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="2df15-105">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="2df15-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0446d-105">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="0446d-105">Syntax</span></span>
 
-```
+```vb
 ADDDAYS (datetime, days)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="2df15-106">Argumentit</span><span class="sxs-lookup"><span data-stu-id="2df15-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="0446d-106">Argumentit</span><span class="sxs-lookup"><span data-stu-id="0446d-106">Arguments</span></span>
 
-<span data-ttu-id="2df15-107">`datetime`: *DateTime*</span><span class="sxs-lookup"><span data-stu-id="2df15-107">`datetime`: *DateTime*</span></span>
+<span data-ttu-id="0446d-107">`datetime`: *DateTime*</span><span class="sxs-lookup"><span data-stu-id="0446d-107">`datetime`: *DateTime*</span></span>
 
-<span data-ttu-id="2df15-108">Päivämäärä-/aika-arvo, joka vastaa alkamispäivämäärää.</span><span class="sxs-lookup"><span data-stu-id="2df15-108">A date/time value that represents the start date.</span></span>
+<span data-ttu-id="0446d-108">Päivämäärä-/aika-arvo, joka vastaa alkamispäivämäärää.</span><span class="sxs-lookup"><span data-stu-id="0446d-108">A date/time value that represents the start date.</span></span>
 
-<span data-ttu-id="2df15-109">`days`: *Kokonaisluku*</span><span class="sxs-lookup"><span data-stu-id="2df15-109">`days`: *Integer*</span></span>
+<span data-ttu-id="0446d-109">`days`: *Kokonaisluku*</span><span class="sxs-lookup"><span data-stu-id="0446d-109">`days`: *Integer*</span></span>
 
-<span data-ttu-id="2df15-110">Päivien lukumäärä ennen tai jälkeen `datetime`.</span><span class="sxs-lookup"><span data-stu-id="2df15-110">The number of days before or after `datetime`.</span></span>
+<span data-ttu-id="0446d-110">Päivien lukumäärä ennen tai jälkeen `datetime`.</span><span class="sxs-lookup"><span data-stu-id="0446d-110">The number of days before or after `datetime`.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="2df15-111">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="2df15-111">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="0446d-111">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="0446d-111">Return values</span></span>
 
-<span data-ttu-id="2df15-112">*DateTime*</span><span class="sxs-lookup"><span data-stu-id="2df15-112">*DateTime*</span></span>
+<span data-ttu-id="0446d-112">*DateTime*</span><span class="sxs-lookup"><span data-stu-id="0446d-112">*DateTime*</span></span>
 
-<span data-ttu-id="2df15-113">Tulokseksi saatava päivämäärä-/aika-arvo.</span><span class="sxs-lookup"><span data-stu-id="2df15-113">The resulting date/time value.</span></span>
+<span data-ttu-id="0446d-113">Tulokseksi saatava päivämäärä-/aika-arvo.</span><span class="sxs-lookup"><span data-stu-id="0446d-113">The resulting date/time value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="2df15-114">Käyttöhuomautukset</span><span class="sxs-lookup"><span data-stu-id="2df15-114">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="0446d-114">Käyttöhuomautukset</span><span class="sxs-lookup"><span data-stu-id="0446d-114">Usage notes</span></span>
 
-<span data-ttu-id="2df15-115">Positiivinen arvo tuotoille `days` viittaa tulevaan päivään.</span><span class="sxs-lookup"><span data-stu-id="2df15-115">A positive value for `days` yields a future date.</span></span> <span data-ttu-id="2df15-116">Negatiivinen arvo tuottaa kuluneen päivämäärän.</span><span class="sxs-lookup"><span data-stu-id="2df15-116">A negative value yields a past date.</span></span>
+<span data-ttu-id="0446d-115">Positiivinen arvo tuotoille `days` viittaa tulevaan päivään.</span><span class="sxs-lookup"><span data-stu-id="0446d-115">A positive value for `days` yields a future date.</span></span> <span data-ttu-id="0446d-116">Negatiivinen arvo tuottaa kuluneen päivämäärän.</span><span class="sxs-lookup"><span data-stu-id="0446d-116">A negative value yields a past date.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="2df15-117">Esimerkki 1</span><span class="sxs-lookup"><span data-stu-id="2df15-117">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="0446d-117">Esimerkki 1</span><span class="sxs-lookup"><span data-stu-id="0446d-117">Example 1</span></span>
 
-<span data-ttu-id="2df15-118">`ADDDAYS (NOW(), 7)` palauttaa päivämäärän ja ajan seitsemän päivän kuluttua.</span><span class="sxs-lookup"><span data-stu-id="2df15-118">`ADDDAYS (NOW(), 7)` returns the date and time seven days in the future.</span></span>
+<span data-ttu-id="0446d-118">`ADDDAYS (NOW(), 7)` palauttaa päivämäärän ja ajan seitsemän päivän kuluttua.</span><span class="sxs-lookup"><span data-stu-id="0446d-118">`ADDDAYS (NOW(), 7)` returns the date and time seven days in the future.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="2df15-119">Esimerkki 2</span><span class="sxs-lookup"><span data-stu-id="2df15-119">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="0446d-119">Esimerkki 2</span><span class="sxs-lookup"><span data-stu-id="0446d-119">Example 2</span></span>
 
-<span data-ttu-id="2df15-120">`ADDDAYS (NOW(), -3)` palauttaa päivämäärän ja ajan kolme päivää sitten.</span><span class="sxs-lookup"><span data-stu-id="2df15-120">`ADDDAYS (NOW(), -3)` returns the date and time three days in the past.</span></span>
+<span data-ttu-id="0446d-120">`ADDDAYS (NOW(), -3)` palauttaa päivämäärän ja ajan kolme päivää sitten.</span><span class="sxs-lookup"><span data-stu-id="0446d-120">`ADDDAYS (NOW(), -3)` returns the date and time three days in the past.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="2df15-121">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="2df15-121">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="0446d-121">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="0446d-121">Additional resources</span></span>
 
-[<span data-ttu-id="2df15-122">Päivämäärä- ja aikatoiminnot</span><span class="sxs-lookup"><span data-stu-id="2df15-122">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="0446d-122">Päivämäärä- ja aikatoiminnot</span><span class="sxs-lookup"><span data-stu-id="0446d-122">Date and time functions</span></span>](er-functions-category-datetime.md)

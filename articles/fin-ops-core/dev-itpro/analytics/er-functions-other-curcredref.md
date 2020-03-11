@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5633541b1c7e25a0cfb837c4679691506806421b
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 6e684a8e063cb3c049d13005cbcf6ebbe688af00
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917002"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041489"
 ---
-# <span data-ttu-id="ecc79-103"><a name="CURCREDREF">CURCREDREF ER-funktio</a></span><span class="sxs-lookup"><span data-stu-id="ecc79-103"><a name="CURCREDREF">CURCREDREF ER function</a></span></span>
+# <span data-ttu-id="da380-103"><a name="CURCREDREF">CURCREDREF ER-funktio</a></span><span class="sxs-lookup"><span data-stu-id="da380-103"><a name="CURCREDREF">CURCREDREF ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ecc79-104">`CURCREDREF`-funktio palauttaa *merkkijono*-arvon, joka vastaa velkojan viittausta määritetyn laskunumeron numeroiden perusteella.</span><span class="sxs-lookup"><span data-stu-id="ecc79-104">The `CURCREDREF` function returns a *String* value that represents a creditor reference, based on the digits of the specified invoice number.</span></span>
+<span data-ttu-id="da380-104">`CURCREDREF`-funktio palauttaa *merkkijono*-arvon, joka vastaa velkojan viittausta määritetyn laskunumeron numeroiden perusteella.</span><span class="sxs-lookup"><span data-stu-id="da380-104">The `CURCREDREF` function returns a *String* value that represents a creditor reference, based on the digits of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ecc79-105">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="ecc79-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="da380-105">Syntaksi</span><span class="sxs-lookup"><span data-stu-id="da380-105">Syntax</span></span>
 
-```
+```vb
 CURCREDREF (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="ecc79-106">Argumentit</span><span class="sxs-lookup"><span data-stu-id="ecc79-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="da380-106">Argumentit</span><span class="sxs-lookup"><span data-stu-id="da380-106">Arguments</span></span>
 
-<span data-ttu-id="ecc79-107">`invoice number digits`: *Merkkijono*</span><span class="sxs-lookup"><span data-stu-id="ecc79-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="da380-107">`invoice number digits`: *Merkkijono*</span><span class="sxs-lookup"><span data-stu-id="da380-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="ecc79-108">Tekstiarvo, joka edustaa laskunumeron numeroita.</span><span class="sxs-lookup"><span data-stu-id="ecc79-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="da380-108">Tekstiarvo, joka edustaa laskunumeron numeroita.</span><span class="sxs-lookup"><span data-stu-id="da380-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="ecc79-109">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="ecc79-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="da380-109">Palautusarvot</span><span class="sxs-lookup"><span data-stu-id="da380-109">Return values</span></span>
 
-<span data-ttu-id="ecc79-110">*merkkijono*</span><span class="sxs-lookup"><span data-stu-id="ecc79-110">*String*</span></span>
+<span data-ttu-id="da380-110">*merkkijono*</span><span class="sxs-lookup"><span data-stu-id="da380-110">*String*</span></span>
 
-<span data-ttu-id="ecc79-111">Tulokseksi saatava tekstiarvo.</span><span class="sxs-lookup"><span data-stu-id="ecc79-111">The resulting text value.</span></span>
+<span data-ttu-id="da380-111">Tulokseksi saatava tekstiarvo.</span><span class="sxs-lookup"><span data-stu-id="da380-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ecc79-112">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="ecc79-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="da380-112">Esimerkki</span><span class="sxs-lookup"><span data-stu-id="da380-112">Example</span></span>
 
-<span data-ttu-id="ecc79-113">`CURCredRef ("VEND-200002")` palauttaa **"2200002"**.</span><span class="sxs-lookup"><span data-stu-id="ecc79-113">`CURCredRef ("VEND-200002")` returns **"2200002"**.</span></span>
+<span data-ttu-id="da380-113">`CURCredRef ("VEND-200002")` palauttaa **"2200002"**.</span><span class="sxs-lookup"><span data-stu-id="da380-113">`CURCredRef ("VEND-200002")` returns **"2200002"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="ecc79-114">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="ecc79-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="da380-114">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="da380-114">Additional resources</span></span>
 
-[<span data-ttu-id="ecc79-115">Muut (liiketoiminnan toimialuekohtaiset) toiminnot</span><span class="sxs-lookup"><span data-stu-id="ecc79-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="da380-115">Muut (liiketoiminnan toimialuekohtaiset) toiminnot</span><span class="sxs-lookup"><span data-stu-id="da380-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
