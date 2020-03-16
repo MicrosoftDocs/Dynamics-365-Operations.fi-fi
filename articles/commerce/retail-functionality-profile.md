@@ -1,6 +1,6 @@
 ---
-title: Luo vähittäismyynnin toimintoprofiili
-description: Tässä ohjeaiheessa käsitellään vähittäismyynnin toimintoprofiilin luontia Microsoft Dynamics 365 Commercessa.
+title: Vähittäismyynnin toimintoprofiilin luominen
+description: Tässä ohjeaiheessa käsitellään toimintoprofiilin luontia Microsoft Dynamics 365 Commercessa.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9fb0fd63b11e55f2b153fc9c135f148a6e343057
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002840"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057345"
 ---
-# <a name="create-a-retail-functionality-profile"></a>Luo vähittäismyynnin toimintoprofiili
+# <a name="create-a-retail-functionality-profile"></a>Vähittäismyynnin toimintoprofiilin luominen
 
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa käsitellään vähittäismyynnin toimintoprofiilin luontia Microsoft Dynamics 365 Commercessa.
+Tässä ohjeaiheessa käsitellään toimintoprofiilin luontia Microsoft Dynamics 365 Commercessa.
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Vähittäismyynnin toimintojen profiilissa on erilaisia online-kanavien asetuksia. Kunkin vähittäismyyntikanavan on määritettävä vähittäismyyntitoimintoprofiili.
+Commerce-toimintojen profiilissa on erilaisia online-kanavien asetuksia. Kunkin kanavan on määritettävä toimintoprofiili.
 
-## <a name="create-a-retail-functionality-profile"></a>Luo vähittäismyynnin toimintoprofiili
+## <a name="create-a-functionality-profile"></a>Luo toimintoprofiili
 
-Luo uusi vähittäismyynnin toimintoprofiili seuraavien ohjeiden avulla:
+Luo uusi toimintoprofiili seuraavien ohjeiden avulla:
 
 1. Siirry siirtymisruudussa kohtaan **Moduulit \> Kanavan määritys \> Myyntipisteprofiilit \> Toimintoprofiilit**.
 1. Valitse toimintoruudussa **Uusi**.
@@ -51,9 +51,9 @@ Luo uusi vähittäismyynnin toimintoprofiili seuraavien ohjeiden avulla:
 1. Muokkaa **Tietokoodit**-osassa asetuksia tarpeen mukaan.
 1. Muokkaa **Kuitin numerointi** -osassa muita asetuksia tarpeen mukaan. 
   
-Seuraavassa kuvassa on esimerkki vähittäiskaupan toimintoprofiilista.
+Seuraavassa kuvassa on esimerkki toimintoprofiilista.
   
-![Vähittäiskaupan toimintoprofiiliesimerkki](media/retail-functionality-profile.png)
+![Toimintoprofiiliesimerkki](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

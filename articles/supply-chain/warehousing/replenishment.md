@@ -3,7 +3,7 @@ title: Täydennys – yleiskatsaus
 description: Tässä ohjeaiheessa käsitellään täydennysstrategioita, joita voi käyttää varastonhallinnan toimintoja käyttävissä varastoissa.
 author: Mirzaab
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7aa17df3c3632c89f35a69022084bbd9f4171f36
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251463"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076348"
 ---
 # <a name="replenishment-overview"></a>Täydennys – yleiskatsaus
 
@@ -49,6 +49,8 @@ Sijaintidirektiiveillä määritetään, mitä sijaintia on täydennettävä. N�
 Mallin luonnin lisäksi voit määrittää joitakin täydennysasetuksia aaltomallissa. Aaltomallissa on oltava täydennysaaltovaihe, joka suoritetaan vain, jos nimikkeen kohdistus ei onnistunut. Täydennysaaltovaihe käyttää aaltovaihekoodia käytettävän täydennysmallin määrittämiseen. Täydennysaaltovaiheen lisäksi on varmistettava, että aaltomallin **Menetelmät**-kohdassa on valittu **Täydennä**. 
 
 **Täydennysmalli**-sivulla on **Salli aallon kysynnän käyttää varaamattomia määriä** -valintaruutu. Valitse tämä valintaruutu, jos haluat, että kysynnän täydennys vähentää varaamattomia määriä valitusta täydennysmallista luodusta työstä. Tämä valintaruutu on valittava jokaisessa aiemmin luodussa täydennysmallissa, jotta kysynnän täydennysmallit voisivat käyttää tätä logiikkaa. Kun kysynnän täydennys käynnistyy varastossa, se vähentää kysyntää nykyiseltä täydennystyöltä, jolla on varaamattomia määriä, jos työn alkuperä on täydennysmalleissa, joissa **Salli aallon kysynnän käyttää varaamattomia määriä** -valintaruutu on valittuna.
+
+**Täydennysyksikkö** on täydennyksen vähimmäisyksikkö. Tämän on oltava kokonaisluku, joka on yksikön kerrannainen. Järjestelmä pyöristää ylöspäin suurimpaan mahdolliseen yksikköön työtä luotaessa.
 
 Kysynnän täydennystä tuetaan myyntitilauksissa, siirtotilauksissa, tuotantotilauksissa ja kanbaneissa. 
 

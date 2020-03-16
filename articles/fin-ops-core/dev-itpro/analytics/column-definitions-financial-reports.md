@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771538"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070757"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Talousraporttien sarakemääritykset
 
@@ -120,11 +120,11 @@ Seuraavassa taulukossa esitellään sarakkeen rajoituksen koodit.
 | ADJ                     | Rajoita sarakkeen summat kauden oikaisusummiin, jos summia ovat käytettävissä. |
 | XAD                     | Rajoita sarakkeen summat niin, että kauden oikaisusummat suljetaan pois. |
 | SS                      | Rajoita sarakkeen summat niin, että vain kirjatut tapahtumat sisällytetään, jos tapahtumia on käytettävissä. |
-| UPT                     | Rajoita sarakkeen summat niin, että vain kirjaamattomat tapahtumat sisällytetään, jos tapahtumia on käytettävissä.<p><strong>Huomautus:</strong> Kaikki tietopalvelut eivät tue kirjaamattomia tapahtumia. Lisätietoja on Microsoft Dynamics ERP -järjestelmän <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>tietojen integrointioppaassa</a>.</p> |
+| UPT                     | Rajoita sarakkeen summat niin, että vain kirjaamattomat tapahtumat sisällytetään, jos tapahtumia on käytettävissä.<p><strong>Huomautus:</strong> Kaikki tietopalvelut eivät tue kirjaamattomia tapahtumia. </p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Sarakkeen rajoittaminen raportoinnin yksikköön
 
-1. Avaa raporttien suunnitteluohjelmassa sarakemääritys, jota haluat muokata.
+1. Avaa Report Designer -ohjelmassa muokattava sarakkeen määritys.
 2. Kaksoisnapsauta rajoitettavan sarakkeen **Raportoinnin yksikkö** -solua.
 3. Valitse **Raportoinnin yksikön valinta** -valintaikkunan **Raportointipuu**-luettelosta puu.
 4. Laajenna tai tiivistä yksikköluettelo, valitse raportoinnin yksikkö ja valitse sitten **OK**.

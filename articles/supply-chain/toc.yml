@@ -68,6 +68,8 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management -versio 10.0.9 (huhtikuu 2020)
+                      href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management -versio 10.0.8 (helmikuu 2020)
                       href: get-started/whats-new-scm-10-0-8.md
                     - name: Supply Chain Management -versio 10.0.7 (tammikuu 2020)
@@ -146,6 +148,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Tallennetut näkymät
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ruudukon ominaisuudet
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mukautettujen kenttien luominen ja käsitteleminen
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
                 - name: PowerApps-sovellusten upottaminen
@@ -527,6 +531,8 @@
                   href: cost-management/costing-sheets.md
                 - name: Kustannusmuutosten simulointi suunniteltujen kustannusten kustannuslaskelmaversiota käyttäen
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+                - name: Nimikehintojen vertailun varastoraportti
+                  href: cost-management/compare-item-price.md
             - name: Varastokirjanpito
               items:
                 - name: Kustannusobjektit
@@ -673,9 +679,11 @@
               items:
                 - name: Asiakirjojen raportointipalveluiden yleiskatsaus
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tuetut fontit
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'SSRS:n määrittäminen paikallisia käyttöönottoja varten'
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Tulostus
+                - name: Tulostetaan
                   items:
                     - name: Asiakirjojen tulostuksen yleiskatsaus
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
@@ -1059,8 +1067,10 @@
               href: master-planning/master-planning-home-page.md
             - name: Suunnittelun optimointi
               items:
-                - name: Suunnittelun optimoinnin yleiskuvaus
+                - name: Suunnittelun optimoinnin yleiskatsaus
                   href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: Negatiivista varastosaldoa käsitellään nollamääräisenä varastosaldona
+                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Suunnittelun optimoinnin aloittaminen
                   href: master-planning/planning-optimization/get-started.md
                 - name: Suunnittelun optimoinnin sopivuusanalyysi
@@ -2441,6 +2451,4 @@
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../commerce/index.md

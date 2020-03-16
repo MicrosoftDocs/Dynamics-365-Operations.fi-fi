@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024726"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057737"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Valinnaisten ominaisuuksien määrittäminen Dynamics 365 Commercen esikatseluympäristöä varten
 
@@ -63,8 +63,8 @@ Jos haluat arvioida digitaalisten resurssien hallintaominaisuuksia käyttämäll
 
 ### <a name="update-the-media-base-url"></a>Median URL-perusosoitteen päivittäminen
 
-1. Kirjaudu sisään Dynamics 365 Retail -järjestelmään.
-1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Vähittäismyynti \> Kanavan asetukset \> Kanavaprofiilit**.
+1. Kirjaudu sisään Dynamics 365 Commerce -järjestelmään.
+1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Kanavan asetukset \> Kanavaprofiilit**.
 1. Valitse **Muokkaa**.
 1. Mene **Profiilin ominaisuudet** -kohdan alle, korvaa **Mediapalvelimen URL-perusosoite** -ominaisuus aiemmin luodulla Median URL-perusosoite -arvolla.
 1. Valitse toinen kanava vasemmalla olevasta luettelosta **Oletuskanava**-kohdassa.
@@ -77,7 +77,7 @@ Jos haluat arvioida digitaalisten resurssien hallintaominaisuuksia käyttämäll
 > [!NOTE]
 > Tähän syötettävän SMTP-palvelimen tai sähköpostipalvelun on oltava käytettävissä ympäristössä käytettävän Azure-tilauksen avulla.
 
-1. Kirjaudu sisään Retailiin.
+1. Kirjaudu sisään Commerce-sovellukseen.
 1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Hallinta \> Asetukset \> Sähköposti \> Sähköpostiparametrit**.
 1. Kirjoita **SMTP-asetukset**-välilehden **Lähtevän postin palvelin** -kenttään SMTP-palvelimen tai sähköpostipalvelun FQDN-tai IP-osoite.
 1. Kirjoita **SMTP-porttinumero**-kenttään porttinumero. (Jos et käytä Secure Sockets Layer \[SSL\]-suojausta, oletusportin numero on **25**.)
@@ -92,7 +92,7 @@ Jos haluat arvioida digitaalisten resurssien hallintaominaisuuksia käyttämäll
 
 Jokaista tapahtumaa kohti, josta haluat lähettää sähköposteja, on päivitettävä sähköpostimalli, jossa on sallittu lähettäjän sähköpostiosoite.
 
-1. Kirjaudu sisään Retailiin.
+1. Kirjaudu sisään Commerce-sovellukseen.
 1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Organisaation hallinta \> Asetukset \> Organisaation sähköpostimallit**.
 1. Valitse **Näytä luettelo**.
 1. Luo kukin luettelossa oleva malli seuraavasti:
@@ -115,7 +115,7 @@ Haluat ehkä mukauttaa sähköpostimalleja niin, että ne käyttävät eri kuvia
     - Keräystilauksen malli
 
 1. Mukauta malleja teksti- tai HTML-editorin avulla. Katso [tuettujen tunnusten](#supported-tokens-in-the-email-template) luettelo myöhemmin tässä ohjeaiheessa.
-1. Kirjaudu sisään Retailiin.
+1. Kirjaudu sisään Commerce-sovellukseen.
 1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Organisaation hallinta \> Asetukset \> Organisaation sähköpostimallit**.
 1. Laajenna vasemmanpuoleista luetteloa, niin näet kaikki mallit.
 1. Noudata seuraavia vaiheita jokaiselle mukautettavan mallin kohdalle:

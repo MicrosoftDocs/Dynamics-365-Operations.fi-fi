@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a46ff0a1d6e29cc567a86fae60ff803a102d1a2e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3b04f78f2a8210837e16c8246609ad2fddd804f0
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181217"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071587"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Muotoilun lisäasetukset taloushallinnon raporteissa
 
@@ -216,7 +216,7 @@ Tässä esimerkissä laskentakaava **@100+@330** tarkoittaa, että rivin 100 sum
 Kun rivimäärityksen rivillä on muotoilukoodi **CAL** ja kirjoitat matemaattisen laskentakaavan **Liittyvät kaavat/rivit/yksiköt** -soluun, sinun on syötettävä myös liittyvän sarakkeen kirjain ja raportin rivi. Anna esimerkiksi **A.120** edustamaan sarakkeen A riviä 120. Voit myös käyttää ät-merkkiä (@) osoittamaan kaikki sarakkeet. Anna esimerkiksi **@120** edustamaan rivin 120 kaikkia sarakkeita. Kaikki matemaattiset laskutoimitukset, joissa ei ole sarakkeen kirjainta tai at-merkkiä (@) oletetaan olevan reaaliluku.
 
 > [!NOTE]
-> Jos käytät rivin otsikon koodia viittaamaan riviin, sarakkeen kirjain ja otsikko on erotettava pisteellä (.) (esimerkiksi **A.KÄYTTÖKATE\_A.MYYNTI**). Jos käytät ät-merkkiä (@), erotinta ei tarvita (esimerkiksi **@GROSS\_MARGIN/@SALES**).
+> Jos käytät rivin otsikon koodia viittaamaan riviin, sarakkeen kirjain ja otsikko on erotettava pisteellä (.) (esimerkiksi **A.KÄYTTÖKATE\_A.MYYNTI**). Jos käytät ät-merkkiä (@), erotinta ei tarvita (esimerkiksi **\@GROSS\_MARGIN/@SALES**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Esimerkki tiettyä saraketta koskevasta laskukaavasta
 

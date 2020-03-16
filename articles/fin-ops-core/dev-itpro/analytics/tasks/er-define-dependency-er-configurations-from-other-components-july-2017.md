@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97aedf17bb6fa67fd08497ec6e15a7c92866fa4d
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 468a2637f4a5b2b7ff3514c92c52fb26b9231bc4
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026107"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042916"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>ER-konfiguraatioiden riippuvuuden määrittäminen muihin osiin
 
@@ -140,4 +140,3 @@ Luodut konfiguraatiot poistetaan järjestelmästä ja ladataan takaisin LCS-säi
 26. Laajenna puussa Sample data model.
     * Huomaa, että Esimerkkiyhdistämismääritys-mallin yhdistämismäärityksen konfiguraatio on ladattu yhdessä valitun tietomallin konfiguraation kanssa. Nämä kaksi tiedostoa ladataan yhdessä, koska Esimerkkiyhdistämismääritys-konfiguraatio on määritetty valitun tietomallin toteutuksessa. Se on myös käytössä sovelluksessa. Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatiota ei ladattu, koska pakollisen sovellusversion ehtoja ei täytetä.   
     * Jos kirjaudut sisään Finance and Operationsiin, rekisteröit saman tarjoajan, käytät samaa LCS-projektia ja lataat saman tietomallin konfiguraation, Esimerkkiyhdistämismääritys (vaihtoehto) -konfiguraatio ladataan, kun taas Esimerkkiyhdistämismääritys-konfiguraatio ohitetaan.  
-

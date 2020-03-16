@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
-ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "2810696"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3058014"
 ---
 # <a name="one-voucher"></a>Yksi tosite
 
@@ -156,7 +156,7 @@ Organisaatiot haluavat usein kirjata kirjanpitoon yhteenvetomuodossa, jolloin ti
 
 ### <a name="settle-multiple-unposted-payments-to-the-same-invoice"></a>Tilitä useita kirjaamattomia maksuja samaan laskuun
 
-Tämä skenaariossa esiintyy yleensä vähittäismyyntiorganisaatioissa, joissa asiakkaat käyttävät ostojen maksamiseen useita maksutapoja. Tässä skenaariossa organisaation on voitava tallentaa useita kirjaamattomia maksuja ja tilittää ne myyntilaskua vastaan.
+Tämä skenaariossa esiintyy yleensä organisaatioissa, joissa asiakkaat käyttävät ostojen maksamiseen useita maksutapoja. Tässä skenaariossa organisaation on voitava tallentaa useita kirjaamattomia maksuja ja tilittää ne myyntilaskua vastaan.
 
 Uusi toiminto, joka lisättiin Microsoft Dynamics 365 for Operationsin versioon 1611 (marraskuu 2016), mahdollistaa useiden kirjaamatomien maksujen tilityksen yhteen laskuun. Useita asiakasmaksuja ei enää tarvitse syöttää yhteen tositteeseen.
 

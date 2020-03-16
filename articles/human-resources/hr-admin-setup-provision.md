@@ -3,7 +3,7 @@ title: Human Resourcesin valmisteleminen
 description: ''
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f3a7987a9b385fb6ba0294dc46b0d66be8228f06
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f105144047c64fc8e9d42da8d7525a8cc3912c33
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026264"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071611"
 ---
 # <a name="provision-human-resources"></a>Human Resourcesin valmisteleminen
 
@@ -62,9 +62,6 @@ Kun LCS-projekti on luotu, voit valmistella Human Resources -sovelluksen ympäri
 3. Valitse **Sisällytä esittelytiedot** -vaihtoehto, jos haluat ympäristösi sisältävän saman esittelytietojoukon, jota käytetään Human Resources Test Drive -kokemuksessa. Tämä on hyödyllistä pitkän aikavälin esittely- tai koulutusympäristöissä, eikä sitä tule koskaan käyttää tuotantoympäristöissä.  Huomaa, että tämä asetus on valittava ensimmäisen käyttöönoton yhteydessä. Et voi päivittää aiemmin luotua käyttöönottoa myöhemmin.
 
 4. Human Resources valmistellaan aina Microsoft Power Apps -ympäristössä, jotta Power Apps-integrointi ja laajennettavuus voidaan ottaa käyttöön. Lue tämän artikkelin ”Power Apps-ympäristön valitseminen” -osio ennen kuin jatkat. Jos sinulla ei vielä ole Power Apps-ympäristöä, valitse Hallitse ympäristöjä LCS:ssä tai siirry Power Apps-hallintakeskukseen. Noudata kohdan [Power Apps-ympäristön luominen](https://docs.microsoft.com/powerapps/administrator/create-environment) ohjeita.
-
-    > [!NOTE]
-    > Aiemmin luotujen ympäristöjen tai uusien ympäristöjen luominen edellyttää, että Human Resources -sovelluksen valmistelevalle vuokraajan järjestelmänvalvojalle on myönnetty Power Apps P2 -käyttöoikeus. Jos organisaatiollasi ei ole Power Apps P2 -käyttöoikeutta, voit hankkia sen pilvipalveluratkaisujesi toimittajalta tai [Power Apps-hinnoittelusivulta](https://powerapps.microsoft.com/pricing/).
 
 5. Valitse ympäristö, johon Human Resources sisällytetään.
 

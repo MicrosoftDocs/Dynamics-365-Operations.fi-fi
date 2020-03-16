@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac0910d213ee05a2a7a7b218a6714d4f935be16
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 8a52dbce29140591baf4be97baef237dce1f2511
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916749"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040845"
 ---
 # <a name="QRCODE">QRCODE ER -funktio</a>
 
@@ -33,7 +33,7 @@ ms.locfileid: "2916749"
 
 ## <a name="syntax"></a>Syntaksi
 
-```
+```vb
 QRCODE (text)
 ```
 
@@ -53,7 +53,7 @@ Tuloksena oleva binaarinen virta.
 
 Voit määrittää sähköisen raportoinnin (ER) muodon, joka luo lähtevän asiakirjan Microsoft Office -muodossa (Excel-työkirjat tai Word-asiakirjat) käyttämällä esimääritettyä mallia. Tämä malli saattaa sisältää **kuva**-objektin (Excel-työkirjan) tai **kuvasisällön ohjausobjektin** (Word-asiakirjan) QR-koodikuvan paikkamerkkinä. Sinun on lisättävä konfiguroituun ER-muotoon **Solu**-elementti, jota käytetään tämän paikkamerkin täyttämiseen. Jos haluat määrittää, mitä tietoja QR-koodiin tallennetaan, sinun on määritettävä sidonta tälle **solu**-elementille. Voit esimerkiksi määrittää tällaisen sidonnan siten, että se sisältää seuraavan lausekkeen:
 
-```
+```vb
 QRCODE (model.ListOfShelfLabels.LabelText)`
 ```
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 88ba96b1d9d2f722528a4a920eabe4ab64304a7a
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658641"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059425"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobiililaskujen hyväksynnät
 
@@ -54,8 +54,8 @@ Jokainen organisaatio määrittää oman toimittajan laskujen liiketoimintaprose
     -   Kuinka monta kirjanpidollista jakoa (laajennettua hintaa, arvonlisäveroa, kulua, jakoa jne.) on yhdellä laskurivillä? Käytä uudelleen 80-20-sääntöä.
     -   Onko laskuissa myös kirjanpidolliset jaot laskuotsikossa? Jos näin on, ovatko nämä kirjanpidolliset jaot on käytettävissä laitteessa?
 
-> [!NOTE]
-> Tässä ohjeaiheessa ei kerrota, kuinka muokkaa kirjanpidon jakoja, koska tätä toimintoa ei tueta tällä hetkellä mobiiliskenaarioissa.
+    > [!NOTE]
+    > Tässä ohjeaiheessa ei kerrota, kuinka muokkaa kirjanpidon jakoja, koska tätä toimintoa ei tueta tällä hetkellä mobiiliskenaarioissa.
 
 -   Haluavatko käyttäjät nähdä laskun liitteet laitteella?
 
@@ -158,9 +158,9 @@ Ensimmäinen mobiilisivu, joka tulee suunnitella, on luettelo laskuista, jotka o
     - Laskun numero
     - Laskun päivämäärä
 
-  Kun kentät on lisätty, mobiilisivun pitäisi muistuttaa seuraavaa kuvaa. 
+    Kun kentät on lisätty, mobiilisivun pitäisi muistuttaa seuraavaa kuvaa. 
     
-   [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Sivu kenttien lisäämisen jälkeen](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  On myös lisättävä seuraavat sarakkeet nyt, että voimme ottaa työnkulkutoimintoja myöhemmin käyttöön.
     - Näytä Suorita-tehtävä
@@ -247,9 +247,10 @@ Käytä **VendMobileInvoiceHeaderDetails**-sivua lisätäksesi työnkulkutoimint
     - Se piilottaa ylimääräiset työnkulkuun liittyvät sarakkeet, jotka on lisätty aiemmin mobiililuettelosivulla. Lisäsimme nämä sarakkeet, jotta sovelluksella on nämä tiedot oikeassa asiayhteydessä, jotta se voi suorittaa seuraavan vaiheen.
     - Aktiiviseen työnkulun vaiheen perusteella se käyttää logiikkaa, joka näyttää vain kyseiset toiminnot.
 
-> [!NOTE]
-> Sivujen ja muiden ohjausobjektien nimet on oltava koodissa samat kuin työtilan nimet.
+    > [!NOTE]
+    > Sivujen ja muiden ohjausobjektien nimet on oltava koodissa samat kuin työtilan nimet.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -308,6 +309,7 @@ Käytä **VendMobileInvoiceHeaderDetails**-sivua lisätäksesi työnkulkutoimint
                  },
            };
         }
+    ```
 
 2.  Lataa kooditiedoston työtilaan valitsemalla **Logiikka**-välilehti
 3.  Valitse **Valmis** poistuaksesi muokkaustilasta.
@@ -341,7 +343,7 @@ Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot
 
 1.  Korvaa valikkovaihtoehdon nimi URL-osoitteessa, kuten teit aikaisemmin. Sivun, joka näkyy, on muistutettava seuraavaa kuvaa.
 
-[![Kaikki jaot -sivu](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Kaikki jaot -sivu](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Avaa mobiilisivujen suunnitteluohjelma **Asetukset** (ratas) -painikkeesta.
 
@@ -367,16 +369,18 @@ Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot
 
 10. Tallenna muutokset valitsemalla **Julkaise työtila**.
 
-> [!NOTE] 
-> **Näytä kirjanpito** -mobiilisivua ei ole tällä hetkellä linkitetty yhteenkään tähän mennessä suunniteltuun mobiilisivuun. Koska käyttäjän pitää voida siirtyä **Näytä kirjanpito** -sivulle mobiililaitteen **Laskun tiedot** -sivulta, meidän on luotava siirtyminen **Laskun tiedot** -sivulta **Näytä kirjanpito** -sivulle. Luomme tämän siirtymisen JavaScript-lisälogiikan avulla.
+#### <a name="adding-navigation-to-view-accounting-page"></a>Navigoinnin lisääminen Kirjanpidon tarkasteleminen -sivulle
+
+**Näytä kirjanpito** -mobiilisivua ei ole tällä hetkellä linkitetty yhteenkään tähän mennessä suunniteltuun mobiilisivuun. Koska käyttäjän pitää voida siirtyä **Näytä kirjanpito** -sivulle mobiililaitteen **Laskun tiedot** -sivulta, meidän on luotava siirtyminen **Laskun tiedot** -sivulta **Näytä kirjanpito** -sivulle. Luomme tämän siirtymisen JavaScript-lisälogiikan avulla.
 
 1.  Avaa .js-tiedosto, jonka loit aiemmin ja lisää rivit, jotka näkyvät korostettuina seuraavassa koodissa. Tämä koodi tekee kaksi asiaa:
     1.  Sen avulla varmistetaan, että käyttäjät eivät voi siirtyä suoraan työtilasta **Näytä kirjanpito** -sivulle.
     2.  Se luo siirtymisen ohjausobjektin **Laskun tiedot** -sivulta **Näytä kirjanpito** -sivulle.
 
-> [!NOTE] 
-> Sivujen ja muiden ohjausobjektien nimet on oltava koodissa samat kuin työtilan nimet.
+    > [!NOTE] 
+    > Sivujen ja muiden ohjausobjektien nimet on oltava koodissa samat kuin työtilan nimet.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -439,7 +443,8 @@ Tämän skenaarion vaatimukset vahvistavat, että seillä on vain rivitason jaot
                  },
            };
         }
-
+    ```
+    
 2.  Lataa kooditiedosto työtilaan ja korvaa edellinen koodi valitsemalla **Logiikka**-välilehti
 3.  Valitse **Valmis** poistuaksesi muokkaustilasta.
 4.  Valitse **Takaisin** ja sitten **Valmis** poistuaksesi työtilasta.

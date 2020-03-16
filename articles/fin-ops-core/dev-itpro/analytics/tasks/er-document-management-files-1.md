@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026131"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042824"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER Tiedostonhallinnan tiedostojen käyttö muodon tuotoksissa (Osa 1 – Tietomallin valmisteleminen)
 
@@ -36,10 +36,14 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -v
 
 ## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Saat luettelon Microsoftin tarjoamista kokoonpanoista
 1. Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.
-    * Varmista, että Litware, Inc. -lähde on käytettävissä ja merkitty aktiiviseksi.  
+
+    Varmista, että Litware, Inc. -lähde on käytettävissä ja merkitty aktiiviseksi.  
+
 2. Valitse Litware, Inc. -tarjoaja.
 3. Valitse Säilöt.
-    * Jos säilön tyyppi "Operatiiviset resurssit" on jo olemassa, ohita tämän alitehtävän loput vaiheet.  
+
+    Jos säilön tyyppi "Operatiiviset resurssit" on jo olemassa, ohita tämän alitehtävän loput vaiheet.  
+
 4. Avaa valintaikkuna valitsemalla Lisää.
 5. Kirjoita Konfiguraatiosäilön tyyppi -kentän arvoksi Operatiiviset resurssit.
 6. Valitse Luo säilö.
@@ -51,9 +55,13 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -v
 3. Valitse Näytä suodattimet.
 4. Valitse Avaa.
 5. Valitse puussa solmu "Customer invoice model".
-    * Valitse tuotavaksi mallikonfiguraatio "Myyntilaskumalli".  
+
+    Valitse tuotavaksi mallikonfiguraatio "Myyntilaskumalli".  
+
 6. Valitse Tuo.
-    * Valitse Tuo valitulle kokoonpanoversiolle 1  
+
+    Valitse Tuo valitulle kokoonpanoversiolle 1  
+
 7. Valitse Kyllä.
 8. Sulje sivu.
 9. Sulje sivu.
@@ -65,6 +73,5 @@ Luot oman myyntilaskumallin konfiguraation johtamalla sen Microsoftin tarjoamast
 1. Avaa valintaikkuna napsauttamalla Luo konfigurointi.
 2. Kirjoita Uusi-kenttään "Derive from Name: Customer invoice model, Microsoft".
 3. Syötä Nimi-kenttään "Customer invoice model (custom)".
-    * Myyntilaskumalli (mukautettu)  
 4. Valitse Luo konfiguraatio.
 

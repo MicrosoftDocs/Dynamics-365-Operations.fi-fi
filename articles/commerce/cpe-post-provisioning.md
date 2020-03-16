@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024703"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057714"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Dynamics 365 Commercen esikatseluympäristön määrittäminen
 
@@ -35,7 +35,7 @@ Tässä ohjeaiheessa kerrotaan, kuinka voit määrittää Microsoft Dynamics 365
 
 Suorita tämän ohjeaiheen toimet vasta, kun Commercen esikatseluympäristö on valmisteltu. Katso lisätietoja Commercen esikatseluympäristön valmistelusta kohdasta [Commercen esikatseluympäristön valmisteleminen](provisioning-guide.md).
 
-Kun Commercen esikatseluympäristö on valmisteltu loppuun, lisävalmistelun jälkeiset määritysvaiheet on suoritettava, ennen kuin voit aloittaa ympäristön arvioinnin. Näiden vaiheiden suorittaminen edellyttää, että käytät Microsoft Dynamics Lifecycle Servicesiä (LCS), Dynamics 365 Commercea ja Dynamics 365 Retailis.
+Kun Commercen esikatseluympäristö on valmisteltu loppuun, lisävalmistelun jälkeiset määritysvaiheet on suoritettava, ennen kuin voit aloittaa ympäristön arvioinnin. Näiden vaiheiden suorittaminen edellyttää, että käytössä ovat Microsoft Dynamics Lifecycle Services (LCS) ja Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Ennen aloittamista
 
@@ -53,7 +53,7 @@ Kun Commercen esikatseluympäristö on valmisteltu loppuun, lisävalmistelun jä
 
 Voit liittää työntekijän identiteettisi LCS:iin noudattamalla seuraavia ohjeita.
 
-1. Valitse vasemmalla olevasta valikosta **Moduulit \> Vähittäismyynti \> Työntekijät \> Työntekijät**.
+1. Valitse vasemmalla olevasta valikosta **Moduulit \> Vähittäismyynti ja kauppa \> Työntekijät \> Työntekijät**.
 1. Etsi ja valitse luettelosta seuraava tietue: **000713 - Andrew Collette**.
 1. Valitse toimintoruudussa **Vähittäismyynti**.
 1. Valitse **Liitä aiemmin luotu tunnus**.
@@ -91,12 +91,12 @@ Voit aloittaa esikatseluruudun määrittämisen Commerce-sivustossa noudattamall
 1. Jätä **polku** -kentän arvo sellaiseksi kuin se on.
 1. Valitse **OK**. Sivuston sivuluettelo tulee näkyviin.
 
-## <a name="enable-jobs-in-retail"></a>Ota projektit käyttöön Retailissa
+## <a name="enable-jobs"></a>Töiden ottaminen käyttöön
 
-Voit ottaa käyttöön työt Retailissa seuraavien vaiheiden avulla.
+Voit ottaa käyttöön työt Commercessa seuraavien vaiheiden avulla.
 
 1. Kirjaudu sisään ympäristöön (pääkonttori).
-1. Siirry vasemmalla olevan valikon avulla kohtaan **Retail \> Kyselyt ja raportit \> Erätyöt**.
+1. Siirry vasemmalla olevan valikon avulla kohtaan **Vähittäismyynti ja kauppa \> Kyselyt ja raportit \> Erätyöt**.
 
     Tämän menettelyn jäljellä olevat vaiheet on täytettävä kunkin seuraavan työn osalta:
 
@@ -112,11 +112,11 @@ Voit ottaa käyttöön työt Retailissa seuraavien vaiheiden avulla.
     1. Valitse toimintoruudussa **Erätyö**-välilehdellä **Muuta tila**.
     1. Valitse **Odottaa** ja valitse sitten **OK**.
 
-### <a name="run-full-data-synchronization-in-retail"></a>Suorita täydellinen tietojen synkronointi Retailissa
+### <a name="run-full-data-synchronization"></a>Suorita täydellinen tietojen synkronointi
 
-Jos haluat suorittaa täyden tietojen synkronoinnin Retailissa, toimi seuraavasti.
+Jos haluat suorittaa täyden tietojen synkronoinnin Commercessa, toimi seuraavasti.
 
-1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Retail \> Headquarters-asetukset \> Retail-ajastus \> Kanavan tietokanta**.
+1. Siirry vasemmalla olevan valikon avulla kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Headquarters-asetukset \> Retail-ajastus \> Kanavan tietokanta**.
 1. Vasemmalla olevasta luettelosta valitaan **oletuskanava**. Valitse toinen käytettävissä oleva kanava. Tämä kanava on nimeltään **scXXXXXXXXX**.
 1. Valitse toimintoruudusta **Tietojen täydellinen synkronointi**.
 1. Syötä jakeluaikatauluksi **9999**.

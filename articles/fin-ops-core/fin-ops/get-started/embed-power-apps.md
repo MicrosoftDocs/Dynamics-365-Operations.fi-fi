@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 9585d5a399ebf45b0ad7640f3c4e48d8afc46cd8
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017725"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042939"
 ---
 # <a name="embed-microsoft-power-apps"></a>Microsoft Power Appsin upottaminen
 
@@ -55,7 +55,7 @@ Seuraavissa ohjeissa näytetään, miten Power Apps -sovellus upotetaan verkkoas
 
     - **Nimi**-kentässä on sen painikkeen tai välilehden teksti, joka sisältää upotetun sovelluksen. Sovelluksen nimi on usein toistettava tässä kentässä.
     - **Sovelluksen tunnus** on upotettavan sovelluksen GUID-tunnus. Voit noutaa tämän arvon etsimällä sovelluksen sivustossa [web.powerapps.com](https://web.powerapps.com) ja siirtymällä sitten **Sovelluksen tunnus** -kenttään **Tiedot**-kohdassa.
-    - Voit vaihtoehtoisesti valita **Lisää sovellukselle konteksti** -kohdassa kentän, joka sisältää sovellukselle syötteenä välitettävät tiedot. Lisätietoja tavoista, joilla sovellus voi käyttää Finance and Operations -sovelluksista lähetettyjä tietoja, on jäljempänä tässä ohjeaiheessa kohdassa [Finance and Operations -sovellusten tietoja hyödyntävän sovelluksen kehittäminen](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps).
+    - Voit vaihtoehtoisesti valita **Lisää sovellukselle konteksti** -kohdassa kentän, joka sisältää sovellukselle syötteenä välitettävät tiedot. Lisätietoja tavoista, joilla sovellus voi käyttää Finance and Operations -sovelluksista lähetettyjä tietoja, on jäljempänä tässä ohjeaiheessa kohdassa [Finance and Operations -sovelluksista lähetettyjä tietoja hyödyntävien sovellusten kehittäminen](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps).
     - Valitse upotettavan sovelluksen tyyppiä vastaava **sovelluksen koko**. Jos sovellus luodaan mobiililaitteille, valitse **Ohut**. Jos se luodaan tableteille, valitse **Leveä**. Tämä varmistaa, että upotetulle sovellukselle on varattu riittävästi tilaa.
     - **Yritykset**-pikavälilehdessä voi valita, mitkä yritykset voivat käyttää sovellusta. Oletusarvona on sovelluksen antaminen käyttöön kaikille yrityksille. Tämä vaihtoehto on käytettävissä vain, kun [Tallennetut näkymät](saved-views.md) -toiminto on poistettu käytöstä. 
 
@@ -76,7 +76,7 @@ Tärkeä osa Finance and Operations -sovellukseen upotettavan Power Apps -sovell
 
 Esimerkiksi sovelluksen OnStart-toiminnolle voi määrittää syöttötiedot Finance and Operations -sovelluksista muuttujalle seuraavalla tavalla:
 
-```
+```powerapps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
@@ -101,7 +101,7 @@ Muokkaa upotetun sovelluksen konfiguraatiota näiden vaiheiden avulla:
 
 Upotetun sovelluksen voi tarvittaessa poistaa sivulta käyttämällä jompaakumpaa seuraavaa tapaa:
 
-- Siirry **Muokkaa sovellusta** -ruutuun tämän ohjeaiheen aiemmin käsitellyn osan [Upotetun sovelluksen muokkaaminen](#editing-an-embedded-power-app) ohjeiden avulla. Vahvista, että ruudussa on sen upotetun sovelluksen tiedot, jonka haluat poistaa, ja valitse sitten **Poista**-painike.
+- Siirry **Muokkaa sovellusta** -ruutuun tämän ohjeaiheen aiemmin käsitellyn osan [Upotetun sovelluksen muokkaaminen](#editing-an-embedded-app) ohjeiden avulla. Vahvista, että ruudussa on sen upotetun sovelluksen tiedot, jonka haluat poistaa, ja valitse sitten **Poista**-painike.
 - Koska upotettu sovellus on tallennettu mukautuksen tietoina, sivun mukautuksen tyhjentäminen poistaa myös kaikki sivulle upotetut sovellukset. Huomaa, että sivun mukautukset tyhjennetään pysyvästi. Tyhjennystä ei voi peruuttaa. Voit poistaa sivun mukautukset valitsemalla ensin **Asetukset**, sitten **Mukauta tämä sivu** ja lopuksi **Tyhjennä**-painike. Kaikki tämän sivun edelliset mukautukset poistetaan, kun selain päivitetään. Lisätietoja sivujen optimoinnista mukauttamisen avulla on kohdassa [Käyttäjäkokemuksen mukauttaminen](personalize-user-experience.md).
 
 ## <a name="appendix"></a>Liite
@@ -115,7 +115,7 @@ Käyttäjät voivat upottaa sovellukset oletusarvoisesti mille tahansa sivulle j
 
 Seuraavassa esimerkissä on uusi luokka ja kaksi menetelmää, jotka tarvitaan sovellusten upottamista varten.
 
-```
+```powerapps
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
 
 public final class ClassTest_Extension

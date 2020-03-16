@@ -1,9 +1,9 @@
 ---
 title: Paikallisen käyttöönoton aloitussivu – yleiskatsaus
 description: Tässä ohjeaiheessa on tietoja paikallisia käyttöönottoja koskevasta sisällöstä sekä linkkejä tähän sisältöön.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 81698517dc501a6001f62216f3804510144c1045
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
+ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770943"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "3090586"
 ---
 # <a name="on-premises-deployment-home-page"></a>Paikallisen käyttöönoton aloitussivu
 
@@ -51,16 +51,16 @@ Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikalline
 - [Sähköisen raportoinnin (ER) konfiguraatioiden tuonti](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Asiakirjan luonti, julkaiseminen ja tulostaminen paikallisissa ympäristöissä](../analytics/printing-capabilities-on-premises.md)
 - [Välityspalvelimien määrittäminen paikallisiin ympäristöihin](onprem-reverseproxy.md)
-- [Finance and Operations -sovellusten teknisen tuen määrittäminen](../lifecycle-services/support-experience.md)
+- [Teknisen tuen määrittäminen Finance and Operations -sovelluksille](../lifecycle-services/support-experience.md)
 - [Asiakasohjelman Internet-yhteys](../user-interface/client-disconnected.md)
 - [Päivitysten käyttöönotto paikallisissa ympäristöissä](apply-updates-on-premises.md)
 - [Käyttöönotto uudelleen paikallisissa ympäristöissä](redeploy-on-prem.md)
 
-## <a name="retail"></a>Retail
-- [Paikallisten ympäristöjen Retail-ominaisuudet](../../../retail/retail-onprem.md)
+## <a name="commerce"></a>Commerce
+- [Commerce-ominaisuudet, jotka ovat käytettävissä paikallisissa käyttöönotoissa](../../../retail/retail-onprem.md)
 - [Vähittäismyyntikanavan komponenttien asennusohjeet paikallisessa ympäristössä](deploy-retail-onprem.md)
-- [Retail Modern POS:n (MPOS) määrittäminen, asentaminen ja aktivoiminen](../../../retail/retail-modern-pos-device-activation.md)
-- [Retail Store Scale Unitin määrittäminen ja asentaminen](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Modern POS:n (MPOS) määrittäminen, asettaminen ja aktivoiminen](../../../retail/retail-modern-pos-device-activation.md)
+- [Commerce Scale Unitin määrittäminen ja asentaminen](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="upgrade"></a>Päivitä
 - [Paikallisten ympäristöjen paikallinen päivitysprosessi](../migration-upgrade/on-prem-upgrade.md)

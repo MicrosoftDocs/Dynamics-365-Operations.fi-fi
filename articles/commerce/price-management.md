@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3f2616fd98b37576625d9586a1cda29ce1b89f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022437"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057484"
 ---
 # <a name="retail-sales-price-management"></a>Vähittäismyyntihintojen hallinta
 
@@ -43,23 +43,23 @@ Ohjeaiheessa käytetään seuraavia termejä.
 
 ## <a name="price-groups"></a>Hintaryhmät
 
-Hintaryhmät ovat olennaisia Commercen hinnan ja alennuksen hallinnassa. Hintaryhmien avulla hinnat ja alennukset määritetään vähittäismyynnin yksiköihin (eli kanaviin, luetteloihin, liitoksiin ja kanta-asiakkuusohjelmiin). Koska hintaryhmiä käytetään kaikessa hinnoittelussa ja alennuksissa, niiden käyttö on suunniteltava huolellisesti ennen aloittamista.
+Hintaryhmät ovat olennaisia Commercen hinnan ja alennuksen hallinnassa. Hintaryhmien avulla hinnat ja alennukset määritetään kaupan yksiköihin (eli kanaviin, luetteloihin, liitoksiin ja kanta-asiakkuusohjelmiin). Koska hintaryhmiä käytetään kaikessa hinnoittelussa ja alennuksissa, niiden käyttö on suunniteltava huolellisesti ennen aloittamista.
 
-Sellaisenaan hintaryhmä on vain nimi, kuvaus ja mahdollisesti hinnoittelun prioriteetti. Hintaryhmistä on muistettava ennen kaikkea, että niiden avulla hallitaan monesta moneen -suhteita, joita alennuksilla ja hinnoilla on vähittäismyynnin yksiköiden kanssa.
+Sellaisenaan hintaryhmä on vain nimi, kuvaus ja mahdollisesti hinnoittelun prioriteetti. Hintaryhmistä on muistettava ennen kaikkea, että niiden avulla hallitaan monesta moneen -suhteita, joita alennuksilla ja hinnoilla on kaupan yksiköiden kanssa.
 
-Seuraavassa kuvassa esitellään hintaryhmien käyttöä. Huomaa, että tässä kuvassa hintaryhmä on kirjaimellisesti hinnoittelun ja alennuksen hallinnan keskellä. Vasemmalla puolella on ne vähittäismyynnin yksiköt, joilla hintoja ja alennuksia hallitaan, kun taas todelliset hinta- ja alennustietueet ovat oikealla.
+Seuraavassa kuvassa esitellään hintaryhmien käyttöä. Huomaa, että tässä kuvassa hintaryhmä on kirjaimellisesti hinnoittelun ja alennuksen hallinnan keskellä. Vasemmalla puolella on ne kaupan yksiköt, joilla hintoja ja alennuksia hallitaan, kun taas todelliset hinta- ja alennustietueet ovat oikealla.
 
 ![Hintaryhmät](./media/PriceGroups.png "Hintaryhmät")
 
-Kun luotat hintaryhmiä, älä käytä samaa hintaryhmää useille vähittäismyynnin yksikkötyypeille. Jos teet niin, voi olla vaikea päätellä, miksi tiettyä hintaa tai alennusta käytetään tapahtumassa.
+Kun luotat hintaryhmiä, älä käytä samaa hintaryhmää useille kaupan yksikkötyypeille. Jos teet niin, voi olla vaikea päätellä, miksi tiettyä hintaa tai alennusta käytetään tapahtumassa.
 
 Kuvassa oleva punainen katkoviiva osoittaa, että Commerce ei tue asiakkaaseen suoraan perustuvaa hintaryhmää, joka Microsoft Dynamics 365:n perustoiminto. Tässä tapauksessa saat vain myyntihinnan kauppasopimukset. Jos haluat käyttää asiakaskohtaisia hintoja, hintaryhmien määrittämistä suoraan asiakkaan perusteella ei suositella. Käytä sen sijaan liitoksia.
 
-Seuraavissa osissa on lisätietoja niistä vähittäismyynnin yksiköistä, joilla voit määrittää erilliset hinnat, kun hintaryhmiä käytetään. Hintojen ja alennusten näiden kohteiden määritysten kahdessa vaiheessa. Näiden vaiheiden suorittamisjärjestyksellä ei ole merkitystä. Loogista on kuitenkin määrittää ensin yksiköiden hintaryhmät, koska tämä vaihe tehdään todennäköisesti vain kerran käyttöönoton yhteydessä. Voit sitten määrittää hintaryhmät luotaville hinnoille ja alennuksille yksi kerrallaan.
+Seuraavissa osissa on lisätietoja niistä kaupan yksiköistä, joilla voit määrittää erilliset hinnat, kun hintaryhmiä käytetään. Hintojen ja alennusten näiden kohteiden määritysten kahdessa vaiheessa. Näiden vaiheiden suorittamisjärjestyksellä ei ole merkitystä. Loogista on kuitenkin määrittää ensin yksiköiden hintaryhmät, koska tämä vaihe tehdään todennäköisesti vain kerran käyttöönoton yhteydessä. Voit sitten määrittää hintaryhmät luotaville hinnoille ja alennuksille yksi kerrallaan.
 
 ### <a name="channels"></a>Kanavat
 
-Vähittäismyyntialalla on yleistä, että eri kanavilla on eri hinta. Kanavakohtaisiin hintoihin vaikuttaa kaksi ensisijaista tekijää: kustannukset ja paikalliset markkinaolosuhteet.
+Kaupan alalla on yleistä, että eri kanavilla on eri hinta. Kanavakohtaisiin hintoihin vaikuttaa kaksi ensisijaista tekijää: kustannukset ja paikalliset markkinaolosuhteet.
 
 - **Kustannukset** – Mitä kauempana kanava on tuotteen lähteestä, sitä enemmän tuotteen varastointi maksaa. Esimerkiksi tuoretuotteiden säilyvyysaika on rajallinen ja niillä on tietyt tuotantovaatimukset (kuten kasvukausi). Talven aikana tuore salaatti maksaa enemmän pohjoisen ilmanalan kuin eteläisen ilmanalan alueilla. Jos määrität kanavien hintoja maantieteellisesti laajalla alueella, haluat todennäköisesti määrittää eri hinnat eri kanavissa.
 - **Paikallisten markkinaolosuhteet** – jos myymälällä on suora kilpailija kadun toisella puolella, se ottaa hinnat todennäköisesti herkemmin huomioon kuin myymällä, jolla ei ole lähellä suoraa kilpailijaa.
@@ -84,7 +84,7 @@ Osa vähittäismyyjistä käyttää fyysisiä tai virtuaalisia luetteloita markk
 
 ### <a name="best-practices-for-price-groups"></a>Hintaryhmien parhaat käytännöt
 
-Älä käytä hintaryhmää useille vähittäismyynnin yksikkötyypeille. Käytä sen sijaan kanavien hintaryhmiä, eri hintaryhmiä liitoksille tai kanta-asiakasohjelmille jne. Voit käyttää hintaryhmän nimessä etu- tai jälkiliitettä erottamaan ryhmä visuaalisesti käyttämistäsi erilaisista hintaryhmätyypeistä.
+Älä käytä hintaryhmää useille kaupan yksikkötyypeille. Käytä sen sijaan kanavien hintaryhmiä, eri hintaryhmiä liitoksille tai kanta-asiakasohjelmille jne. Voit käyttää hintaryhmän nimessä etu- tai jälkiliitettä erottamaan ryhmä visuaalisesti käyttämistäsi erilaisista hintaryhmätyypeistä.
 
 Vältä hintaryhmien määrittämistä suoraan asiakkaan perusteella. Käytä sen sijaan liitosta. Voit määrittää tällä tavoin asiakkaille kaikenlaisia hinta- ja alennustyyppejä pelkän myyntisopimuksen kauppasopimusten sijaan.
 
@@ -98,7 +98,7 @@ Jos haluat käyttää hintojen hinnoitteluprioriteettia, hinnoitteluprioriteetti
 
 Hinnoitteluprioriteettitoiminto otettiin käyttöön tukemaan skenaariota, jossa vähittäismyyjä haluaa käyttää korkeampia hintoja tietyssä myymäläjoukossa. Esimerkki: Vähittäismyyjä on määrittänyt aluehinnat Yhdysvaltojen itärannikolle mutta haluaa korkeammat hinnat joillekin tuotteille New York Cityn myymälöissä, koska tuotteiden myynti siellä on kalliimpaa ja/tai koska paikalliset markkinat hyväksyvät korkeammat hinnat.
 
-Kuten tämän ohjeaiheen Paras hinta -osassa kerrottiin, vähittäismyynnin hinnoittelumoduuli valitsee normaalista kahdesta hinnasta alhaisemman. Jälleenmyyjä ei tämän vuoksi yleensä voi käyttää kahdesta hinnasta korkeampaa myymälässä, jossa on sekä itärannikon että New Yorkin hintaryhmät. Ennen hinnoitteluprioriteettitoiminnon ottamisesta käyttöön jälleenmyyjä ratkaisi tämän ongelman määrittämällä hinnat jokaiselle tuotteelle kahdesti ja jättämällä molemmat hintaryhmät määrittämättä. Vaihtoehtoisesti jälleenmyyjältä oli luotava ylimääräiset hintaryhmät eristämään korkeampia hintoja käyttävät tuotteet tuotteista, joilla oli tavalliset alhaisemmat hinnat.
+Kuten tämän ohjeaiheen Paras hinta -osassa kerrottiin, hinnoittelumoduuli valitsee normaalista kahdesta hinnasta alhaisemman. Jälleenmyyjä ei tämän vuoksi yleensä voi käyttää kahdesta hinnasta korkeampaa myymälässä, jossa on sekä itärannikon että New Yorkin hintaryhmät. Ennen hinnoitteluprioriteettitoiminnon ottamisesta käyttöön jälleenmyyjä ratkaisi tämän ongelman määrittämällä hinnat jokaiselle tuotteelle kahdesti ja jättämällä molemmat hintaryhmät määrittämättä. Vaihtoehtoisesti jälleenmyyjältä oli luotava ylimääräiset hintaryhmät eristämään korkeampia hintoja käyttävät tuotteet tuotteista, joilla oli tavalliset alhaisemmat hinnat.
 
 Hinnoitteluprioriteettitoiminnon avulla jälleenmyyjä voi kuitenkin luoda myymälän hinnoille hinnoitteluprioriteetin, joka on korkeampi kuin alueellisten hintojen hinnoitteluprioriteetti. Vaihtoehtoisesti jälleenmyyjä voi luoda hinnoitteluprioriteetin vain myymälän hinnoille ja jättää alueellisille hinnoille oletushinnoitteluprioriteetti, joka on 0 (nolla). Kummatkin asetukset auttavat varmistamaan, että myymälän hintoja käytetään aina ennen alueellisia hintoja.
 
@@ -142,7 +142,7 @@ Tuotteen hinta on kätevintä määrittää suoraan tuotteessa. Tuotteessa suora
 
 Jos tuotteella on yksi hinta kaikille, perushinta on tehokkain tapa hallita kyseisen tuotteen hintaa. Vaikka käyttäisit kauppasopimuksia hintojen määrittämiseen, määrität ehkä myös tuotteen perushinnan. Jos et sitten käytä **Kaikki**-kauppasopimusta, sinulla varahinta, jota käytetään silloin, kun mitään kauppasopimusta ei käytetä.
 
-Jos vähittäismyyntikanavan valuutta ei ole sama kuin yrityksen valuutta, kyseisen kanavan perushinta määritetään käyttämällä valuutan muuntoa tuotteessa määritetyssä hinnassa.
+Jos kanavan valuutta ei ole sama kuin yrityksen valuutta, kyseisen kanavan perushinta määritetään käyttämällä valuutan muuntoa tuotteessa määritetyssä hinnassa.
 
 Vaikka hintayksikkö ei ole yleinen skenaario, hinnoittelumoduuli tukee sitä. Jos hintayksikön arvoksi on määritetty jokin muu kuin **0** (nolla), yksikkökohtainen hinta on sama kuin hinta + hintayksikkö. Jos tuotteen hinta on esimerkiksi 10,00 $ ja yksikköhinta on 50, määrältään 1:n hinta on 0,20 $0 (= 10,00 $ / 50).
 
@@ -152,7 +152,7 @@ Voit luoda kauppasopimuksen kirjauskansion avulla kullekin tuotteelle myyntihinn
 
 Myyntihinnan **Taulu**-asiakassopimus on tarkoitettu yhdelle, suoraan kauppasopimuksessa määritetylle asiakkaalle. Tämä skenaario ei ole tavallinen B2C-skenaariossa. Jos se kuitenkin tapahtuu, hinnoittelumoduuli käyttää hinnan määrityksessä **Taulu**-kauppasopimuksia.
 
-Myyntihinnan **Ryhmä**-kauppasopimus on tyyppi, jota käytetään eniten vähittäismyyntitoiminnoissa. Commercen ulkopuolella myyntihinnan **Ryhmä**-kauppasopimukset on tarkoitettu yksinkertaiselle asiakasryhmälle. Asiakasryhmän käsitettä on kuitenkin laajennettu Commercessa siten, että se on yleinen hintaryhmä. Hintaryhmä voidaan linkittää kanavaan, liitokseen, kanta-asiakasohjelmaan tai luetteloon. Lisätietoja hintaryhmistä on aiemmin tässä ohjeaiheessa Hintaryhmät-osassa.
+Myyntihinnan **Ryhmä**-kauppasopimus on tyyppi, jota käytetään eniten. Commercen ulkopuolella myyntihinnan **Ryhmä**-kauppasopimukset on tarkoitettu yksinkertaiselle asiakasryhmälle. Asiakasryhmän käsitettä on kuitenkin laajennettu Commercessa siten, että se on yleinen hintaryhmä. Hintaryhmä voidaan linkittää kanavaan, liitokseen, kanta-asiakasohjelmaan tai luetteloon. Lisätietoja hintaryhmistä on aiemmin tässä ohjeaiheessa Hintaryhmät-osassa.
 
 > [!NOTE]
 > Kauppasopimuksen hintaa käytetään aina ennen perushintaa.
@@ -211,7 +211,7 @@ Microsoft SQL Server Expressiä käytetään usein kanavatietokantoissa kustannu
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Verollisten ja verottomien hintojen vertailu
 
-Dynamics 365:ssä määritettävissä myyntihinnoissa ei määritetä, sisältääkö määritettävä hinta-arvo arvolisäveron vai ei. Tämä arvo on vain hinta. Vähittäismyyntikanavien **arvolisäveron sisältävän hinnan** asetus sallii kanavien määrittämisen siten, että hinnat joko sisältävät arvolisäverot tai eivät sisällä niitä. Tämä asetus määritetään kanavassa ja se voidaan muuttaa vaikkapa vain yhdessä yrityksessä.
+Dynamics 365:ssä määritettävissä myyntihinnoissa ei määritetä, sisältääkö määritettävä hinta-arvo arvolisäveron vai ei. Tämä arvo on vain hinta. Kanavien **arvolisäveron sisältävän hinnan** asetus sallii kanavien määrittämisen siten, että hinnat joko sisältävät arvolisäverot tai eivät sisällä niitä. Tämä asetus määritetään kanavassa ja se voidaan muuttaa vaikkapa vain yhdessä yrityksessä.
 
 Jos käsittelet sekä arvonlisäveron sisältäviä että sen pois jättäviä tyyppejä, hintojen määrittäminen oikein on tärkeää, koska asiakkaan maksama kokonaissumma muuttuu, jos kanavan **arvolisäveron sisältävän hinnan** asetusta muutetaan.
 
@@ -219,15 +219,15 @@ Jos käsittelet sekä arvonlisäveron sisältäviä että sen pois jättäviä t
 
 Samalla hinnoittelumoduulilla lasketaan kaikkien kanavien hinnat: puhelinkeskus, myymälä ja verkkokauppa. Tämä auttaa ottamaan käyttöön yhtenäiset kaupankäyntiskenaariot.
 
-Vähittäismyynnin hinnoittelu on suunniteltu toimimaan vähittäismyynnin yksiköiden eikä muiden kuin vähittäismyynnin yksiköiden kanssa. Se on suunniteltu nimenomaan määrittämään hinnat myymälöittäin eikä varastoittain.
+Hinnoittelu on suunniteltu toimimaan vähittäismyynnin yksiköiden eikä muiden kuin vähittäismyynnin yksiköiden kanssa. Se on suunniteltu nimenomaan määrittämään hinnat myymälöittäin eikä varastoittain.
 
-Vähittäismyynnin hinnoittelumoduuli **ei tue** seuraavia hinnoitteluominaisuuksia:
+Hinnoittelumoduuli **ei tue** seuraavia hinnoitteluominaisuuksia:
 
-- Hintojen määrittämistä toimipaikan tai toimipaikan ja varaston varastodimensioiden mukaan ei tueta. Jos määrität kauppasopimuksille vain toimipaikan dimension, vähittäismyynnin hinnoittelu ohittaa sivuston ja soveltaa kauppasopimusta kaikkiin sivustoihin. Jos määrität sekä toimipaikan että varaston, toiminta on määrittämätön/testaamaton, koska on odotettavissa, että vähittäismyyjät käyttävät myymälän hintaryhmiä kunkin myymälän/varaston hintojen hallintaan.
+- Hintojen määrittämistä toimipaikan tai toimipaikan ja varaston varastodimensioiden mukaan ei tueta. Jos määrität kauppasopimuksille vain toimipaikan dimension, hinnoittelumoduuli ohittaa sivuston ja soveltaa kauppasopimusta kaikkiin sivustoihin. Jos määrität sekä toimipaikan että varaston, toiminta on määrittämätön/testaamaton, koska on odotettavissa, että vähittäismyyjät käyttävät myymälän hintaryhmiä kunkin myymälän/varaston hintojen hallintaan.
 - Määriteperusteista hinnoittelua ei tueta.
 - Toimittajan alennuksen läpivientiä ei tueta.
 
-Lisäksi **vain** vähittäismyynnin hinnoittelumoduuli tukee seuraavia hinnoitteluominaisuuksia:
+Lisäksi **vain** hinnoittelumoduuli tukee seuraavia hinnoitteluominaisuuksia:
 
 - Hinta perustuu tuotedimensioihin seuraavassa järjestyksessä: tarkin varianttihinta, vähiten tarkin varianttihinta ja päätuotteen hinta. Kahta tuotedimensiota (kuten väriä ja kokoa) käyttämällä määritettyä hintaa käytetään ennen hintaa, joka on määritetty käyttämällä vain yhtä tuotedimensiota (kuten kokoa).
 - Hinnoittelua ja alennuksia voidaan ohjata samalla hintaryhmällä.

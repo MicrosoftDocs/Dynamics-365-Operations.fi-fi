@@ -1,0 +1,78 @@
+---
+title: Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (12. helmikuuta 2020)
+description: Tässä artikkelissa käsitellään Microsoft Dynamics 365 Human Resourcesin uusia tai muuttuneita toimintoja.
+author: Darinkramer
+manager: AnnBe
+ms.date: 02/07/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-human-resources
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: dkrame
+ms.search.validFrom: 2020-02-07
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 1d352cae4b49efa8c893dceed448b30460e0eda5
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.translationtype: HT
+ms.contentlocale: fi-FI
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076290"
+---
+# <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-12-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (12. helmikuuta 2020)
+
+Tässä artikkelissa käsitellään Dynamics 365 Human Resourcesin uusia tai muuttuneita toimintoja. Muutokset koskevat koontiversion numeroa 8.1.2867. Joissakin otsikoissa suluissa olevat luvut viittaavat tukinumeroihin Microsoft Dynamics Lifecycle Services (LCS) -palveluissa.
+
+## <a name="existing-entities-compfixedempls-and-hcmpersonimage-should-be-accessible-from-odata-414178"></a>Aiemmin luotuja yksiköitä CompFixedEmpls ja HcmPersonImage tulee voida käyttää ODatan avulla (414178)
+
+Tämän viikon julkaisussa **CompFixedEmpls**- ja **HcmPersonImage**-yksiköt ovat nyt julkisia ja käytettävissä ODAta:n kautta.
+
+## <a name="delete-employment-from-common-data-service-doesnt-work-when-employment-details-arent-active-403193"></a>Työsuhteen poistaminen Common Data Servicestä ei toimi, jos työsuhteen tiedot eivät ole aktiivisia (403193)
+
+Tämä muutos mahdollistaa nyt työsuhteen poistamisen Common Data Servicen kautta, kun aktiivisia työsuhteen tietoja ei ole.
+
+## <a name="course-registration-workflow-changes-status-to-complete-and-errors-after-second-approval-409749"></a>Kurssin rekisteröinnin työnkulku muuttaa tilaksi Valmis ja päättyy virheeseen sekunnin kuluttua hyväksynnästä (409749)
+
+Kurssin rekisteröitymisen työnkua on päivitetty niin, että se sallii useat hyväksyjät.
+
+## <a name="in-preview"></a>Esiversiossa
+
+Seuraavat esikatseluominaisuudet ovat käytettävissä 3. helmikuuta 2020:
+
+- Lisätietoja **Lomien ja poissaolojen esikatseluominaisuuksista** on kohdassa [Lomien ja poissaolojen esikatseluominaisuudet](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
+
+- **Etujen hallinnan esikatselu** – Lisätietoja, kuten tunnettuja ongelmia, on kohdassa [Etujen hallinnan yleiskuvaus](hr-benefits-management-overview.md).
+
+## <a name="coming-soon"></a>Tulossa pian
+
+### <a name="platform-update-32"></a>Ympäristön update 32 -päivitys 
+
+Käyttöympäristön päivitys 32 on pian saatavilla. [Lue lisätietoja käyttöympäristön päivityksestä 32 tästä](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
+
+### <a name="updated-common-data-service-solution"></a>Päivitetty Common Data Service -ratkaisu
+
+Uusi Common Data Service -ratkaisu tulee pian saataville seuraavin muutoksin:
+
+| Kuvaus | Muutos |
+| ----------------------------------------- | --- |
+| **Työn/toimen** yksikön muutokset | **Kompensaatioalue** lisätty</br>**Taloushallinnon dimensiot** lisätty |
+| **Työntekijä**-yksikön muutokset | **Nimien järjestys** lisätty</br>**Työskentelee kotoa** lisätty</br>**Kieliä** lisätty</br>**Ikälisäpäivä** lisätty</br>**Vuosipäivän päivämäärä** lisätty</br>**Alkuperäinen työsuhteen alkamispäivämäärä** lisätty |
+| **Työsuhde**-yksikön muutokset | **Taloushallinnon dimensiot** lisätty</br>**Irtisanomisen syy** lisätty</br>**Päättymispäivämäärä** nimettiin uudelleen **Siirtymäpäivästä**</br>**Koeajan päivämäärä** lisätty |
+| **Työntekijän osoite**-yksikön muutokset | **Katuosoite** lisätty</br>**Osoiterivi 1**, **Osoiterivi 2**ja **Osoiterivi 3**, jotka on merkitty poistettaviksi |
+| Uudet muuttuvat kompensaatioasetusten entiteetit | **Muuttuvan kompensaatiosuunnitelman tyyppi**</br>**Muuttuva kompensaatiosuunnitelma**</br>**Hyvityssäännöt**</br>**Muuttuvan kompensaatiosuunnitelman taso** |
+| Uusi **Työntekijäkalenterin työ**-yksikkö | **Työkalenteriyksikkö** lisätty |
+| Uusi **Palkanlaskennan toimen tiedot** -yksikkö | **Palkanlaskennan toimen tiedot** lisätty |
+| Uusi **Otsikko**-yksikkö | **Otsikko** lisätty. Uusi **Otsikko**-yksikkö sisältyy synkronointiprosessiin Human Resources- ja Common Data Service -sovellusten välillä. Siihen ei aluksi viitata **Työn sijainti**- tai **Työ**-yksiköissä. |
+
+## <a name="see-also"></a>Lisätietoja
+
+[Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Päivitysprosessi](hr-admin-setup-update-process.md)</br>
+[Hallitse ominaisuuksia](hr-admin-manage-features.md)

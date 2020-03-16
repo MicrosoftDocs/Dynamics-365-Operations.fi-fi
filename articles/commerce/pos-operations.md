@@ -3,7 +3,7 @@ title: Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 description: Tässä ohjeaiheessa on tietoja Dynamics 365 Commercein myyntipisteen toiminnoista. Ohjeaihe määrittää, missä kohdassa sovellusta toiminnot voidaan käynnistää ja ovatko ne käytettävissä offline-tilassa.
 author: jblucher
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bf67c53ffd5bd530f484b60da604fd9338c964fd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022443"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081336"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Myyntipisteen toiminnot (POS) verkossa ja paikallisesti
 
@@ -51,7 +51,9 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 135 | Lisää liitos luettelosta | Lisää liitos tapahtumaan valitsemalla se luettelosta. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 137 | Lisää liitos asiakkaaseen | Lisää liitos asiakkaaseen **Asiakastiedot**-sivulla. | En | En | En | Kyllä | En |
 | 138 | Poista asiakkaan liitos | Poista liitos **Asiakastiedot**-sivulla. | En | En | En | Kyllä | En |
-| 643 | Lisää kuponkikoodi | Lisää kuponki syöttämällä sen koodi myyntipisteessä. | Kyllä | Kyllä | En | Kyllä | En |
+| 643 | Lisää kuponkikoodi | Lisää kuponki syöttämällä sen koodi myyntipisteessä. | Kyllä | Kyllä | Ei | Kyllä | Ei |
+| 141 | Lisää otsikon kulut | Lisää muut kulut tilauksen otsikkoon. | Kyllä | Kyllä | Ei | Ei| Ei |
+| 141 | Lisää rivin kulut | Lisää muut kulut valitulle myyntiriville. | Kyllä | Kyllä | Ei | Ei| Ei |
 | 117 | Lisää kanta-asiakaskortti | Käyttäjää pyydetään syöttämään kanta-asiakaskortin numero. Se lisätään nykyiseen tapahtumaan. | Kyllä | Kyllä | En | Kyllä | En |
 | 136 | Lisää sarjanumero | Tämän toiminnon avulla käyttäjä voi määrittää valitun tuotteen sarjanumeron. | Kyllä | Kyllä | En | Kyllä | En |
 | 1 214 | Lisää toimitusosoite | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | En |
@@ -63,8 +65,9 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 1 053 | Piilotettu suljettu vuoro | Määritä nykyinen vuoro piilotetuksi suljetuksi vuoroksi ja kirjaa käyttäjä ulos. Piilotetun suljetun vuoron lisätapahtumat on suljettu. Siinä voi kuitenkin suorittaa kassatoimintoja, kuten maksuvälineen poiston ja kassan laskemisen maksuvälineittäin. | Kyllä | Kyllä | Kyllä | En | En |
 | 310 | Laske kokonaissumma | Kun alennuksen laskeminen viivästyy, tämä toiminto käynnistää nykyisen tapahtuman laskennan. | Kyllä | Kyllä | En | Kyllä | En |
 | 642 | Toteutus - kaikki tuotteet | Määritä kaikkien rivien toimitustavaksi **Nouto liikkeestä**. | Kyllä | Kyllä | En | Kyllä\* | En |
-| 641 | Toteutus - valitut tuotteet | Määritä valittujen rivien toimitustavaksi **Nouto liikkeestä**. | Kyllä | Kyllä | En | Kyllä\* | En |
-| 1 215 | Vaihda salasana | Tämän toiminnon avulla myyntipisteen käyttäjä voi vaihtaa oman salasanansa. | Kyllä | Kyllä | Kyllä | En | En |
+| 641 | Toteutus - valitut tuotteet | Määritä valittujen rivien toimitustavaksi **Nouto liikkeestä**. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
+| 647 | Muuta toimitustapaa | Muuta esimääritettyjen lähetyksen myyntirivien toimitustapaa. | Kyllä | Kyllä | Ei | Ei| Ei |
+| 1215 | Vaihda salasana | Tämän toiminnon avulla myyntipisteen käyttäjä voi vaihtaa oman salasanansa. | Kyllä | Kyllä | Kyllä | En | En |
 | 123 | Muuta mittayksikköä | Muuta valitun rivinimikkeen mittayksikkö. | Kyllä | Kyllä | En | Kyllä | En |
 | 639 | Poista tapahtuman oletusmyyntiedustaja | Poista provisiomyyntiryhmä (myyjä) tapahtumasta. | Kyllä | Kyllä | En | Kyllä | En |
 | 106 | Tyhjennä määrä | Palauta valitun rivin määräksi **1**. | Kyllä | Kyllä | En | Kyllä | En |
@@ -99,7 +102,8 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 1201 | Liukuva merkintä | Tämän toiminnon avulla käyttäjä voi lisätä rahaa nykyiseen kassaan tai vuoroon. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 1218 | Pakota oheislaitteen lukituksen poisto | Järjestelmä käyttää tätä toimintoa sisäisesti myyntipisteen oheislaitteiden lukituksen poistamiseen. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | En |
 | 520 | Lahjakortin saldo | Näytä lahjakortin saldo. | Kyllä | Kyllä | En | En | En |
-| 708 | Poista laitteen aktivointi | Poista nykyisen laitteen aktivointi niin, että sitä ei voi käyttää myyntipisteen kassakoneena. | En | En | En | En | En |
+| 708 | Poista laitteen aktivointi | Poista nykyisen laitteen aktivointi niin, että sitä ei voi käyttää myyntipisteen kassakoneena. | Ei | Ei | Ei | Ei | Ei |
+| 804 | Saapuva toiminto | Käytä saapuvan myymälän varastonhallinnan toimintoja. | Kyllä | Ei | Kyllä | Ei| Ei |
 | 517 | Tulotilit | Rahasumma, joka sijoitetaan kassaan muusta kuin myynnistä johtuvasta syystä. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 801 | Varastohaku | Haku käytettävissä tilauksessa ja luvattavissa olevat määrät (ATP) nykyisessä myymälässä ja muissa käytettävissä olevissa sijainneissa. | Kyllä | Kyllä | Kyllä | En | En |
 | 122 | Laskun kommentti | Tämän toiminnon avulla käyttäjä voi syöttää nykyistä tapahtumaa koskevan kommentin. | Kyllä | Kyllä | En | Kyllä | En |
@@ -110,11 +114,13 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 301 | Rivialennusprosentti | Kirjoita alennusprosentti tapahtuman rivinimikkeelle. Tätä toimintoa käytetään nimikkeille joista voidaan antaa alennusta, ja vain määritettyjen alennusrajojen mukaisesti. | Kyllä | Kyllä | En | Kyllä | En |
 | 703 | Lukitse kassakone | Lukitse nykyinen kassakone, jolloin sitä ei voi käyttää. Nykyistä käyttäjää ei kuitenkaan kirjata ulos. | En | En | En | Kyllä | En |
 | 701 | Kirjaudu ulos | Kirjaa nykyinen käyttäjä ulos kassakoneelta. | Kyllä | Kyllä | Kyllä | Kyllä | En |
-| 521 | Kanta-asiakaskorttien pistesaldo | Näytä määritetyn kanta-asiakaskortin pistesaldo. | Kyllä | Kyllä | En | En | En |
+| 521 | Kanta-asiakaskorttien pistesaldo | Näytä määritetyn kanta-asiakaskortin pistesaldo. | Kyllä | Kyllä | Ei | Ei | Ei |
+| 142 | Kulujen hallinta | Tarkastele ja hallitse tapahtumaa koskevia muuttuvia kuluja. | Kyllä | Kyllä | Ei | Ei| Ei |
 | 918 | Ylläpidä työvuoroja | Näytä aktiivisten, keskeytettyjen ja piilotettujen suljettujen vuorojen luettelo. | Kyllä | Kyllä | Kyllä | En | En |
 | 914 | Pienennä myyntipisteen ikkuna | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | En |
 | 1 000 | Kassan avaus | Suorita Ei myynti -toiminto ja avaa valittuna oleva kassakone. | Kyllä | Kyllä | Kyllä | Kyllä | En |
-| 928 | Tilauksen täyttäminen | Tämän toiminnon avulla käyttäjät voivat kerätä, pakata, lähettää tai peruuttaa tilauksia myymälänoutoa varten. | Kyllä | Kyllä | Kyllä | En | En |
+| 928 | Tilauksen täyttäminen | Tämän toiminnon avulla käyttäjät voivat kerätä, pakata, lähettää tai peruuttaa tilauksia myymälänoutoa varten. | Kyllä | Kyllä | Kyllä | Ei | Ei |
+| 805 | Lähtevä toiminto | Käytä lähtevien siirtotilausten siirtojen lähetysten hallinnan toimintoja. | Kyllä | Ei | Kyllä | Ei| Ei |
 | 129 | Ohita rivituotteen vero | Ohita valitun rivinimikkeen vero ja käytä toista määritettyä veroa. | Kyllä | Kyllä | En | Kyllä | En |
 | 130 | Ohita rivituotteen vero luettelosta | Ohita valitun rivinimikkeen vero ja korvaa sen verolla, jonka käyttäjä valitsee luettelosta. | Kyllä | Kyllä | En | Kyllä | En |
 | 127 | Ohita tapahtuman vero | Ohita tapahtuman vero ja käytä toista määritettyä veroa. | Kyllä | Kyllä | En | Kyllä | En |
@@ -146,7 +152,8 @@ Seuraavat sarakkeet määsittävät toimintojen käynnistyskohdan:
 | 100 | Tuotemyynti | Lisää määritetty tuote tapahtumaan. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 108 | Tuotehaku | Tämän toiminnon avulla käyttäjä voi hakea tuotteen siirtymällä tuotteen hakusivulle myyntipisteessä. | Kyllä | Kyllä | Kyllä | Kyllä | En |
 | 633 | Tarjouksen vanhentumispäivä | Tämän toiminnon avulla käyttäjä voi tarkastella myyntitarjouksen vanhentumispäivämäärää tai muokata sitä. | Kyllä | Kyllä | En | Kyllä\* | En |
-| 627 | Laske uudelleen | Laske kaikki asiakastilauksen rivit ja verot uudelleen nykyisen konfiguraation perusteella. | Kyllä | Kyllä | En | Kyllä\* | En |
+| 627 | Laske uudelleen | Laske kaikki asiakastilauksen rivit ja verot uudelleen nykyisen konfiguraation perusteella. | Kyllä | Kyllä | Ei | Kyllä\* | Ei |
+| 143 | Laske veloitukset uudelleen | Laske uudelleen tilausta koskevat automaattiset kulut. | Kyllä | Kyllä | Ei | Ei| Ei |
 | 515 | Jatka tilausta | Tämän toiminnon avulla käyttäjä voi hakea ja jatkaa asiakastilauksia ja myyntitarjouksia. | Kyllä | Kyllä | Kyllä | En | En |
 | 504 | Jatka tapahtumaa | Tämän toiminnon avulla käyttäjä voi jatkaa aiemmin keskeytetyn tapahtuman nykyisessä myymälässä. | Kyllä | Kyllä | En | Kyllä# | En |
 | 305 | Lunasta kanta-asiakkuuspisteet | Tätä toimintoa ei tueta. | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Ei käytettävissä | Kyllä |

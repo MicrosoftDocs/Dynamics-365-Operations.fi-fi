@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78043273fb98a12a8d33f7bb94ba8ad2e9fb49fb
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: c6ca9877eb172794c67ac55b8dc54ed28af9576d
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029954"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076267"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Dynamics 365 Human Resourcesin uudet tai muuttuneet ominaisuudet (7. helmikuuta 2020)
 
@@ -47,7 +47,7 @@ Seuraavat esikatseluominaisuudet ovat käytettävissä 3. helmikuuta 2020:
 
 - Lisätietoja **Lomien ja poissaolojen esikatseluominaisuuksista** on kohdassa [Lomien ja poissaolojen esikatseluominaisuudet](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-- **Etujen hallinnan esikatselu** – Lisätietoja, kuten tunnettuja ongelmia, on kohdassa [Etujen hallinnan yleiskuvaus](hr-benefits-management-overview.md).
+- **Etujen hallinnan esikatselu** – Lisätietoja esimerkiksi tunnetuista ongelmista on kohdassa [Etujen hallinnan yleiskuvaus](hr-benefits-management-overview.md).
 
 ## <a name="coming-soon"></a>Tulossa pian
 
@@ -68,5 +68,11 @@ Uusi Common Data Service -ratkaisu tulee pian saataville seuraavin muutoksin:
 | Uudet muuttuvat kompensaatioasetusten entiteetit | **Muuttuvan kompensaatiosuunnitelman tyyppi**</br>**Muuttuva kompensaatiosuunnitelma**</br>**Hyvityssäännöt**</br>**Muuttuvan kompensaatiosuunnitelman taso** |
 | Uusi **Työntekijäkalenterin työ**-yksikkö | **Työkalenteriyksikkö** lisätty |
 | Uusi **Palkanlaskennan toimen tiedot** -yksikkö | **Palkanlaskennan toimen tiedot** lisätty |
-| Uusi **Otsikko**-yksikkö | **Otsikko** lisätty. Uusi **Otsikko**-yksikkö sisällytetään henkilöstöhallinnon ja Common Data Service -järjestelmän väliseen synkronointiprosessiin, mutta siihen ei aluksi viitata **Työnnimikkeestä** tai **Työ**-yksiköistä. |
+| Uusi **Otsikko**-yksikkö | **Otsikko** lisätty. Uusi **Otsikko**-yksikkö sisältyy synkronointiprosessiin Human Resources- ja Common Data Service -sovellusten välillä. Siihen ei aluksi viitata **Työn sijainti**- tai **Työ**-yksiköissä. |
 
+## <a name="see-also"></a>Lisätietoja
+
+[Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
+[Yhteenveto Dynamics 365 Human Resourcesin vuoden 2019 julkaisuaallosta 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Päivitysprosessi](hr-admin-setup-update-process.md)</br>
+[Hallitse ominaisuuksia](hr-admin-manage-features.md)

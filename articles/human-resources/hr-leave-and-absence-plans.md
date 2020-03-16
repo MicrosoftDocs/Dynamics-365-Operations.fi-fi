@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 08fb278a3de0c06715dcd9c252ee6c21b2172cff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
+ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008923"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087297"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Loma- ja poissaolosuunnitelman luominen
 
@@ -61,8 +61,8 @@ Voit myös luoda sijaintiin perustuvia lomaetuja, kuten vain johdon etuuden tunn
 
       | Kertymäkauden perusta | Kuvaus |
       | --- | --- |
-      | Suunnitelman aloituspäivämäärä | Jaksotuskauden aloituspäivämäärä on suunnitelman käytettävissä oleva päivämäärä. |
-      | Työntekijäkohtainen päivämäärä | Jaksotuskauden alkamispäivämäärä määräytyy työntekijätapahtuman mukaan:</br><ul><li>Mukautettu (kunkin yksittäisen rekisteröinnin jaksotuspäivämäärän peruste on määritettävä)</li><li>Vuosipäivän päivämäärä</li><li>Alkuperäinen työsuhteen alkamispäivämäärä</li><li>Ikälisäpäivä</li><li>Työntekijän muutettu aloituspäivämäärä</li><li>Työntekijän aloituspäivämäärä</li></ul> |
+      | **Suunnitelman aloituspäivämäärä** | Jaksotuskauden aloituspäivämäärä on suunnitelman käytettävissä oleva päivämäärä. |
+      | **Työntekijäkohtainen päivämäärä** | Jaksotuskauden alkamispäivämäärä määräytyy työntekijätapahtuman mukaan:</br><ul><li>Mukautettu (kunkin yksittäisen rekisteröinnin jaksotuspäivämäärän peruste on määritettävä)</li><li>Vuosipäivän päivämäärä</li><li>Alkuperäinen työsuhteen alkamispäivämäärä</li><li>Ikälisäpäivä</li><li>Työntekijän muutettu aloituspäivämäärä</li><li>Työntekijän aloituspäivämäärä</li></ul> |
 
    3. Valitse vaihtoehto **Jaksotuspalkkion päivämäärä** -pudotusvalikosta:
 

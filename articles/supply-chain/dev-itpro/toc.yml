@@ -336,7 +336,7 @@
           href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Päivitysten käyttöönotto pilviympäristöissä
           href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Päivitysten ja laajennusten kohdistaminen pilvessä ylläpidetyn Retail-kanavan osiin
+        - name: Päivitysten ja laajennusten kohdistaminen pilvessä ylläpidetyn vähittäismyyntikanavan osiin
           href: ../../dev-itpro/deployment/Update-retail-channel.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Alusta Retail Cloud Scale Unit
           href: ../../dev-itpro/deployment/Initialize-Retail-Channels.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -456,8 +456,6 @@
           items:
             - name: Mallien ja tietomallielementtien luominen – yleiskatsaus
               href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Laajennusten nimeämisohjeet
-              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Mallin mukauttamis- ja vanhentumistoiminnon poistaminen käytöstä
               href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Mukautusten analyysiraportti

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 02d7e2238e58098428397121de848a1947a991ad
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: b4234ac428cc80836852d4edfb0f37098b4a1e8e
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015207"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071657"
 ---
 # <a name="credit-management-parameters-setup"></a>Luotonhallinnan parametrien määrittäminen
 
@@ -38,8 +38,8 @@ Luotonhallintaa ohjaavia parametreja voi muuttaa neljässä pikavälilehdessä: 
 - Jos **Salli myyntitilausten arvon muokkaus sen jälkeen, kun tilaus on vapautettu pidosta** -asetuksena on **Kyllä**, kirjaussäännöt on tarkistettava uudelleen, jos myyntitilauksen arvo (laajennettu hinta) on muuttunut sen jälkeen, kun myyntitilaus vapautettiin pitoluettelosta. .
 - Valitse **Peruutettujen tilausten syyt** -kentässä vapautuksen syy, jotka käytetään oletusarvoisesti, kun luotonhallinnan pidossa ollut myyntitilaus peruutettiin.
 - Jos **Tarkista asiakkaan luottoryhmän luottoraja** -asetuksena on **Kyllä**, asiakkaan luottoryhmän luottoraja tarkistetaan, kun myyntitilauksen asiakas kuuluu asiakkaan luottoryhmään. Ryhmän luottoraja tarkistetaan, minkä jälkeen tarkistetaan asiakkaan luottoraja, jos ryhmän luottoraja on riittävä.
-- Jos **Tarkista luottoraja, kun maksuehtoja suurennetaan** -asetuksena on **Kyllä**, maksuehtojen sijoitus tarkistetaan ja sen perusteella määritetään, onko myyntitilauksen maksuehdoissa eroja. Jos uusien maksuehtojen sijoitus on korkeampi kuin alkuperäisten maksuehtojen sijoitus, tilaus asetetaan luotonvalvonnan pitoon.
-- Jos **Tarkista luottoraja, kun tilitysalennus suurenee** -asetuksena on **Kyllä**, tilitysalennuksen sijoitus tarkistetaan ja sen perusteella määritetään, onko myyntitilauksen käteisalennuksissa eroja. Jos uuden käteisalennuksen sijoitus on korkeampi kuin alkuperäisen käteisalennuksen sijoitus, tilaus asetetaan luotonvalvonnan pitoon.
+- Jos **Tarkista luottoraja, kun maksuehtoja suurennetaan** -asetuksena on **Kyllä**, maksuehtojen sijoitus tarkistetaan ja sen perusteella määritetään, onko asiakkaan oletusmaksuehdoissa eroja. Jos uusien maksuehtojen sijoitus on korkeampi kuin alkuperäisten maksuehtojen sijoitus, tilaus asetetaan luotonvalvonnan pitoon.
+- Jos **Tarkista luottoraja, kun tilitysalennus suurenee** -asetuksena on **Kyllä**, tilitysalennuksen sijoitus tarkistetaan ja sen perusteella määritetään, onko asiakkaan oletuskäteisalennuksissa eroja. Jos uuden käteisalennuksen sijoitus on korkeampi kuin alkuperäisen käteisalennuksen sijoitus, tilaus asetetaan luotonvalvonnan pitoon.
 - Valitse **Muokattujen tilausten vapauttamisen syyt** -kentässä vapautuksen syy, jota käytetään oletusarvoisesti, kun muokatut tilaukset vapautetaan automaattisesti luotonvalvonnan pidosta.
 - **Luottoraja vanhentunut** -säännön toimintaa voi hallita, jos **Ohita luottorajan vanhentumisen estosääntö, kun vanhentumispäivä on tyhjä** -asetuksena on **Kyllä**. Jos asetuksena **Ei**, tilaus estetään, kun vanhentumispäivä on tyhjä.
 - Varastonhallinnassa voidaan luoda kuormia, kun myyntitilausta käsitellään. Jos **Poista estetyt kuormarivit** -asetuksena on **Ei**, myyntitilauksen rivit jätetään kuormaan, kun myyntitilaus on luottorajapidossa. Kuormaa ei voi käsitellä, kun myyntitilaus on pidossa. Jos asetuksena on **Kyllä**, myyntitilauksen rivit poistetaan kuormasta, kun myyntitilaus on luottorajapidossa. Kuorma voidaan sitten käsitellä.
