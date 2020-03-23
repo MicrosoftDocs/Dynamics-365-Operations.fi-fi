@@ -22,6 +22,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
                 - name: Päivitysten käyttöönotto pilviympäristöissä
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Päivitysten käyttöönotto paikallisissa ympäristöissä
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Määritä palvelupäivitykset
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Keskeytä palvelupäivitykset
@@ -84,12 +86,12 @@
                   items:
                     - name: Commercen aloitussivun uudet ominaisuudet ja muutokset
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce-versio 10.0.10 (toukokuu 2020)
+                      href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce-versio 10.0.9 (huhtikuu 2020)
                       href: get-started/whats-new-10-0-9.md
                     - name: Commerce-versio 10.0.8 (helmikuu 2020)
                       href: get-started/whats-new-10-0-8.md
-                    - name: Retail-versio 10.0.7 (tammikuu 2020)
-                      href: get-started/whats-new-10-0-7.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Finance and Operations -ominaisuudet
@@ -336,6 +338,8 @@
                       href: pos-operations.md
                     - name: 'Mukautetun Modern POS:n laiteaktivointi'
                       href: dev-itpro/retail-POS-activation-changes.md
+                    - name: Azure Active Directory -todennuksen ottaminen käyttöön myyntipistekirjautumisessa
+                      href: aad-pos-logon.md
                     - name: 'MPOS:n ja pilvimyyntipisteen esittelytietojen näyttöasettelut'
                       href: demo-data.md
                     - name: Tuote- ja asiakashaku myyntipisteessä
@@ -368,7 +372,9 @@
                           href: dev-itpro/retail-peripheral-simulator.md
                         - name: Oheislaitteiden yhdistäminen myyntipisteeseen
                           href: define-maintain-channel-clients-registers-hw-stations.md
-                    - name: Näytön asettelut
+                        - name: Myyntipisteen oheislaitteiden ja palvelujen kuntotarkastus
+                          href: pos-healthcheck.md
+                    - name: Näyttöasettelut
                       items:
                         - name: MPOS- ja CPOS-myyntipisteiden demotietojen näyttöasettelut
                           href: demo-data.md
@@ -516,9 +522,9 @@
                       href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/retail/toc.json
                     - name: Varianttiryhmän luominen
                       href: create-variant-group.md
-                - name: Luo uusi tuote
+                - name: Uuden tuotteen luominen
                   items:
-                    - name: Uuden tuotteen yleiskatsauksen luominen
+                    - name: Uuden tuotteen luominen Commercessa
                       href: create-new-product.md
                     - name: Tuoteluokkien ja -tuotteiden hallinta
                       href: category-management-product-creation.md
@@ -570,6 +576,8 @@
                   href: retail-shipping-discount.md
                 - name: Kuponkien määrittäminen
                   href: retail-coupons.md
+                - name: Alennusten näyttäminen myyntipisteessä
+                  href: discounts-pos.md
                 - name: Hintaraportit
                   href: price-report.md
                 - name: Kanavakohtaisten kauppasopimusten luominen
@@ -582,30 +590,30 @@
                   href: product-recommendations.md
                 - name: 'ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä'
                   href: enable-ADLS-environment.md
-                - name: Tuotesuositusluettelojen lisääminen sähköisen kaupankäynnin sivuille
-                  href: add-reco-list-to-page.md
-                - name: Ota tuotesuositukset käyttöön
+                - name: Tuotesuositusten ottaminen käyttöön
                   href: enable-product-recommendations.md
                 - name: Kohdennetut suositukset
                   items:
-                    - name: Ota kohdennetut suositukset käyttöön
+                    - name: Kohdennettujen suositusten ottaminen käyttöön
                       href: personalized-recommendations.md
                     - name: Kohdennetuista tuotesuosituksista kieltäytyminen
                       href: personalization-gdpr.md
-                - name: Luo kuratoituja tuotesuositusluetteloita
-                  href: create-editorial-recommendation-lists.md
-                - name: Hallitse AI-ML-pohjaisia tuotesuositustuloksia
+                - name: Suositusluettelojen lisääminen sähköisen kaupankäynnin sivustoon
+                  href: add-reco-list-to-page.md
+                - name: Myyntipistekokemukset
+                  items:
+                    - name: Tuotesuositusten lisääminen myyntipisteessä
+                      href: product.md
+                    - name: Suositusten lisääminen tapahtumanäyttöön
+                      href: add-recommendations-control-pos-screen.md
+                - name: AI-ML-pohjaisten tuotesuositustulosten säätäminen
                   href: modify-product-recommendation-results.md
-                - name: Tuotesuositusten luonti esittelytietojen avulla
+                - name: Kuratoitujen tuotesuositusten luominen manuaalisesti
+                  href: create-editorial-recommendation-lists.md
+                - name: Suositusten luominen esittelytietojen avulla
                   href: product-recommendations-demo-data.md
                 - name: Tuotesuositukset – usein kysytyt kysymykset
                   href: faq-recommendations.md
-                - name: Myyntipistekokemukset
-                  items:
-                    - name: Tuotesuositukset myyntipisteessä
-                      href: product.md
-                    - name: Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle
-                      href: add-recommendations-control-pos-screen.md
             - name: Luokitukset ja arvostelut
               items:
                 - name: Luokitukset ja arvostelut – yleiskatsaus
@@ -656,6 +664,8 @@
               items:
                 - name: Puhelinkeskustilauksen luominen
                   href: tasks/create-call-center-orders.md
+                - name: Toimitustavan muuttaminen myyntipisteessä
+                  href: POS-change-delivery-mode.md
             - name: Jaettu tilausten hallinta
               items:
                 - name: JTH-yleiskatsaus
@@ -764,12 +774,18 @@
                   href: online-stores.md
                 - name: Sähköisen kaupankäynnin sivuston luominen
                   href: create-ecommerce-site.md
-                - name: Liitä sähköinen kaupankäyntisivusto online-kanavaan
+                - name: Sähköisen kaupankäyntisivuston liittäminen online-kanavaan
                   href: associate-site-online-store.md
                 - name: Robots.txt-tiedostojen hallinta
                   href: manage-robots-txt-files.md
+                - name: URL-uudelleenohjausten joukkolataus palveluun
+                  href: upload-bulk-redirects.md
+                - name: Kuluttajakaupan vuokraajan määrittäminen Commercessa
+                  href: set-up-B2C-tenant.md
                 - name: Mukautettujen sivujen määrittäminen käyttäjän sisäänkirjautumisia varten
                   href: custom-pages-user-logins.md
+                - name: Useiden kuluttajakaupan vuokraajien määrittäminen Commerce-ympäristössä
+                  href: configure-multi-B2C-tenants.md
                 - name: Sisältöverkon (CDN) tuen lisääminen
                   href: add-cdn-support.md
                 - name: Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto
@@ -864,6 +880,20 @@
                       href: customize-site-navigation.md
                     - name: Sivun URL-osoitteen luominen
                       href: create-page-URL.md
+            - name: Digitaalisten resurssien hallinta
+              items:
+                - name: Digitaalisten resurssien hallinnan yleiskatsaus
+                  href: dam-overview.md
+                - name: Kuvien lataaminen palveluun
+                  href: dam-upload-images.md
+                - name: Videon lataaminen palveluun
+                  href: dam-upload-video.md
+                - name: Muiden tiedostojen kuin kuvien ja videoiden lataaminen palveluun
+                  href: dam-upload-files.md
+                - name: Kuvien rajaaminen
+                  href: dam-crop-images.md
+                - name: Kuvien tarkennuspisteiden mukauttaminen
+                  href: dam-custom-focal-point.md
             - name: Tee sivustosi yhteensopivaksi
               items:
                 - name: Yhteensopivuuden yleiskatsaus
@@ -1404,7 +1434,7 @@
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
                 - name: Sähköisen raportointimallin kartoituksen hallinta erillisissä sähköisen raportoinnin konfiguraatioissa
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
-                - name: Valitse tietomallin määritykset luodessasi muotoja
+                - name: Tietomallin määritysten valitseminen luotaessa muotoja
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/commerce/toc.json
                 - name: Raporttien luominen lisäämällä sisältöä XML-raakatiedostona
                   href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
@@ -1828,6 +1858,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Kehitysympäristöjen tiedoston (.env) määrittäminen
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Azure DevOps -koodin jakamisen määrittäminen ja pipelinen luominen
+                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Ympäristön yleiskatsaus
                   items:
                     - name: Arkkitehtuurin yleiskatsaus
@@ -1912,6 +1944,10 @@
                       href: e-commerce-extensibility/create-observable-data-action.md
                     - name: Tilan jakaminen moduulien välillä
                       href: e-commerce-extensibility/share-state-across-modules.md
+                    - name: Tietotoiminnon ohitukset
+                      href: e-commerce-extensibility/data-action-overrides.md
+                    - name: Tietotoiminnon koukut
+                      href: e-commerce-extensibility/data-action-hooks.md
                 - name: Teemojen kehittäminen
                   items:
                     - name: Teemojen yleiskatsaus
@@ -2058,10 +2094,12 @@
                   href: dev-itpro/customer-attributes.md
                 - name: CRT SDK -mallit
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
-                - name: Kirjaa laajennustapahtumat Application Insightsiin
+                - name: Laajennustapahtumien kirjaaminen Application Insightsiin
                   href: dev-itpro/commerce-application-insights.md
                 - name: Asynkronisten Commerce (CRT) -ohjelmointirajapintojen luominen liiketoimintalogiikalle
                   href: dev-itpro/async-commerce-extension.md
+                - name: Valmiiksi laajennetut sarakkeet kanavatietokannassa
+                  href: dev-itpro/extended-columns.md
             - name: Maksuyhdistimen laajennettavuus
               items:
                 - name: Maksun integroinnin luominen maksupäätteelle
