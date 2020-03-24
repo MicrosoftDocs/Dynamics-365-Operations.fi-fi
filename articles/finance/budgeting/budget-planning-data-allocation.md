@@ -3,7 +3,7 @@ title: Budjettisuunnittelun tietojen kohdistus
 description: Tässä ohjeaiheessa tietoja Microsoft Dynamics 365 Financen käytettävissä olevista kohdistustavoista ja niiden käyttämisestä.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,23 +18,26 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772073"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106879"
 ---
 # <a name="budget-planning-data-allocation"></a>Budjettisuunnittelun tietojen kohdistus
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa tietoja Microsoft Dynamics 365 Financen käytettävissä olevista kohdistustavoista ja niiden käyttämisestä.  
+Tässä ohjeaiheessa tietoja Microsoft Dynamics 365 Financen käytettävissä olevista kohdistustavoista ja niiden käyttämisestä.  
 
 Voit jakaa tiedot budjettisuunnitelmaan useilla eri tavoilla arvioitujen summien kuvaamista varten.
 
 ## <a name="allocation-methods"></a>Kohdistusmenetelmät
 Kolme kohdistusmenetelmää (Kohdista kausille, Kohdista dimensioille ja Käytä kirjanpidon kohdistussääntöjä) voivat luoda budjettisuunnitelman rivejä, jotka perustuvat saman budjettisuunnitelman riveihin. Kolme muuta menetelmään (Yhdistä, Jaa ja Kopioi budjettisuunnitelmasta) voivat luoda budjettisuunnitelman rivejä muissa budjettisuunnitelmissa. Jokaiselle kuudelle kohdistusmenetelmälle voi määrittää kohdeskenaarion. Kohdeskenaario voi olla sama kuin lähdeskenaario, mutta se voi olla myös erilainen. Lisäksi voit määrittää, lisätäänkö uudet rivit budjettisuunnitelmaan vai korvataanko budjettisuunnitelman nykyiset rivit.
+
+> [!NOTE] 
+> Koostamisessa tulee käyttää yksilöivää skenaariota, joka on eri kuin jakelussa tai muissa mukautuksissa käytetty skenaario aiemmin suoritetussa pääsuunnitelmassa.  
 
 [![Kohdista kausille -kohdistusmenetelmä](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Kohdista kausille** – Kaudenkohdistusluokkaa voi käyttää kohdistettaessa lähdebudjettiskenaarion budjettisuunnitelman rivit kohdeskenaarion kausiin. Lähdesumma liitetään kohdeskenaarion useisiin riveihin kaudenkohdistusluokassa määritetyn prosenttiosuuden ja päivämäärän perusteella.         

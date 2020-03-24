@@ -3,7 +3,7 @@ title: Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
 description: Tässä ohjeaiheessa kerrotaan, miten uusi sähköisen kaupankäynnin vuokraaja otetaan käyttöön Microsoft Dynamics Lifecycle Services (LCS) -palvelun avulla.
 author: psimolin
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d5cf2804c44e81ad135a3248d38c228148b530cc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001780"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096675"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Uuden sähköisen kaupankäynnin vuokraajan käyttöönotto
 
@@ -97,11 +97,19 @@ Kun haluat käyttää sivustonmuodostinta, siirry **Sähköinen kaupankäynti**-
 
 [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
+[Määritä verkkokauppakanava](online-stores.md)
+
 [Liitä verkkosivusto kanavaan](associate-site-online-store.md)
 
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
+[URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+
+[B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
+
 [Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
+
+[Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
 
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 

@@ -3,7 +3,7 @@ title: Poista kohdennetut suositukset
 description: Tässä ohjeaiheessa kerrotaan, miten voit antaa asiakkaiden kieltäytyä vastaanottamasta mukautettuja Microsoft Dynamics 365 Commerce -suosituksia.
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8e7b800218f68167901d86d61ae483680a04cfab
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: a6d2388e863135c2b6d51af915b606a56f0603a8
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025243"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127741"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Poista kohdennetut suositukset
 
@@ -85,12 +85,22 @@ Seuraavassa esimerkissä näkyy, miten jälleenmyyjä voi suorittaa tämän teht
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
+[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
+
 [Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
 
-[Ota käyttöön kohdennetut tuotesuositukset](personalized-recommendations.md)
+[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
 
-[Tuotesuositusluetteloiden lisääminen sivuille](add-reco-list-to-page.md)
+[Suositusluettelojen lisääminen sähköisen kaupankäynnin sivustoon](add-reco-list-to-page.md)
 
-[Suositusten paneelin lisääminen myyntipistelaitteisiin](add-recommendations-control-pos-screen.md)
+[Tuotesuositusten lisääminen myyntipisteessä](product.md)
 
-[Tuotekokoelmamoduulin yleiskuvaus](product-collection-module-overview.md)
+[Suositusten lisääminen tapahtumanäyttöön](add-recommendations-control-pos-screen.md)
+
+[AI-ML-suositusten tulosten muokkaaminen](modify-product-recommendation-results.md)
+
+[Kuratoitujen suositusten manuaalinen luominen](create-editorial-recommendation-lists.md)
+
+[Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
+
+[Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)

@@ -3,7 +3,7 @@ title: Todellisen painon tuotteen käsittely varastonhallinnan avulla
 description: Tässä ohjeaiheessa kuvataan, miten työmalleja ja sijaintidirektiivejä käytetään määrittämään, miten ja missä työ tehdään varastossa.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8bc3e3e7bea15127062edfcd362476de97bff07d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3014a7b22c47f99b5c57fd6acd9be8d89c6fb8ab
+ms.sourcegitcommit: 75974ae567bb0eacf0f65cac992b34ce5c680b93
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004108"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095794"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Todellisen painon tuotteen käsittely varastonhallinnan avulla
 
@@ -30,10 +30,10 @@ ms.locfileid: "3004108"
 
 ## <a name="feature-exposure"></a>Ominaisuuden näyttäminen
 
-Jos haluat, että varastonhallinta käsittelee todellisen painon tuotteita, voit ottaa toiminnon käyttöön käyttöoikeuden määritysavaimen avulla. (Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**. Laajenna sitten **Konfigurointiavaimet**-välilehdessä **Kauppa \> Varaston ja kuljetusten hallinta** ja valitse **Todellinen paino varastoa varten** -valintaruutu).
+Jos haluat, että varastonhallinta käsittelee todellisen painon tuotteita, voit ottaa toiminnon käyttöön käyttöoikeuden määritysavaimen avulla. Valitse **Järjestelmän hallinta \> Asetukset \> Käyttöoikeuden konfiguraatio**. Laajenna sitten **Konfigurointiavaimet**-välilehdessä **Kauppa \> Varaston ja kuljetusten hallinta** ja valitse **Todellinen paino varastoa varten** -valintaruutu.
 
 > [!NOTE]
-> Myös kohtien **Varaston ja kuljetusten hallinta** ja **Prosessijako \> Todellinen paino** käyttöoikeuksien määritysavaimien on oltava käytössä. Todellisen painon määritysavaimien määrittämistä varten myös toiminto on otettava käyttöön **Toimintojen hallinta** -työtilassa. Tärkein käyttöön otettava toiminto on **Todellisen painon tuotteen käsittely varastonhallinnan avulla**. Toinen liittyvä mutta valinnainen käyttöönotettava toiminto **Todellisen painon tuotteiden varaston tilamuutokset**. Tämä toiminto lisää varaston tilan muutosten tuen tuotteisiin, joissa voi käyttää todellista painoa.
+> Myös kohtien **Varaston ja kuljetusten hallinta** ja **Prosessijako \> Todellinen paino** käyttöoikeuksien määritysavaimien on oltava käytössä. Todellisen painon määritysavaimien määrittämistä varten myös toiminto on otettava käyttöön **Toimintojen hallinta** -työtilassa. Tärkein käyttöön otettava toiminto on **Todellisen painon tuotteen käsittely varastonhallinnan avulla**. Kaksi liittyvää, mutta valinnaista toimintoa, jotka voit ottaa käyttöön, ovat **Todellisen painon tuotteiden varaston tilamuutokset** ja **Käytä olemassa olevia todellisen painon tunnisteita, kun raportoinnin tuotantotilaukset ovat valmiita**.
 
 Kun käyttöoikeuden määritysavain on otettu käyttöön, voit valita vapautetun tuotteen luonnin yhteydessä **Todellinen paino**. Voit myös liittää vapautetun tuotteen siihen varastodimensioryhmään, jolle **Käytä varastonhallintaprosesseja** -parametri on valittu.
 
@@ -107,6 +107,7 @@ Kun nimikettä seurataan tunnisteella, käytössä on lisäksi **Lähtevän pain
 **Kun todellisen painon tunnisteseurantaa käytetään**, jokaiselle vastaanotetulle todellisen painon yksikölle on luotava tunniste ja jokaiseen tunnisteeseen on aina liitettävä paino.
 
 Esimerkki: Todellisen painon yksikkö on **laatikko** ja vastaanotetulla kuormalavalla on kahdeksan laatikkoa. Tässä tapauksessa on luotava kahdeksan yksilöivää todellisen painon tunnistetta ja kuhunkin tunnisteeseen on liitettävä paino. Saapuvan todellisen painon tunnisteen mukaan taltioidaan joko kaikkien kahdeksan laatikon paino, jonka jälkeen keskimääräinen paino jaetaan kullekin laatikolle. Vaihtoehtoisesti kullekin laatikolle voidaan taltioida yksilöivä paino.
+Kun käytät **Käytä olemassa olevia todellisen painon tunnisteita, kun raportoinnin tuotantotilaukset ovat valmiita** -toimintoa ja prosessi on otettu käyttöön mobiililaitteen valikkonimikkeen kautta, varasto päivittyy olemassa olevan todellisen painon tunnisteen tiedoilla. Tämän vuoksi varastointisovellus ei pyydä tallentamaan todellisen painon tunnisteen tietoja osana tuotantoraporttia valmiina työvaiheena.
 
 **Jos todellisen painon seurantaa ei käytetä**, paino voidaan taltioida kullekin dimensioyhdistelmälle (kuten kullekin rekisterikilvelle ja seurantadimensiolle). Vaihtoehtoisesti paino voidaan taltioida koontitason perusteella, kuten viitenä rekisterikilpenä (kuormalavana).
 

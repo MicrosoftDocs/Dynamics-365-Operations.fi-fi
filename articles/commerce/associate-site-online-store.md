@@ -3,7 +3,7 @@ title: Sähköisen kaupankäynnin sivuston liittäminen verkkokanavaan
 description: Tässä ohjeaiheessa kerrotaan, kuinka Microsoft Dynamics 365 Commerce -sivusto sidotaan yhteen tai useaan verkkomyymälään.
 author: stuharg
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: bicyclingfool
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8de02eca941054c7c43dec1c904f461da1927230
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 30a992ae5cc68173b830224ae88ac3770b414b7a
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001205"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096698"
 ---
 # <a name="associate-an-e-commerce-site-with-an-online-channel"></a>Sähköisen kaupankäynnin sivuston liittäminen verkkokanavaan
 
@@ -44,11 +44,19 @@ Kun sivusto on luotu, voit varmistaa, että se on liitetty verkkomyymälään, v
 
 [Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
 
+[Määritä verkkokauppakanava](online-stores.md)
+
 [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
+[URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+
+[B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
+
 [Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
+
+[Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
 
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 

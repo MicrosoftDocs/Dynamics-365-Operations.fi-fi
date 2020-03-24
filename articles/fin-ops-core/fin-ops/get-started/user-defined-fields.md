@@ -1,9 +1,9 @@
 ---
 title: Mukautettujen kenttien luominen ja käsitteleminen
-description: Tässä ohjeaiheessa käsitellään, miten voit luoda mukautettuja kenttiä muokataksesi sovellusta yrityksen tarpeita vastaavaksi.
+description: Tässä ohjeaiheessa käsitellään sitä, miten mukautettuja kenttiä luodaan käyttöliittymässä sovelluksen muokkaamiseksi yrityksen tarpeita vastaaviksi.
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f689bb3ec844459d1dd6e199804a30f3e0cb38bc
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812502"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112333"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Mukautettujen kenttien luominen ja käsitteleminen
 
 [!include [banner](../includes/banner.md)]
 
-Vaikka käytettävissä on useita valmiita kenttiä monenlaisten liiketoimintaprosessien hallintaa varten, joskus yritysten on seurattava myös muita tietoja järjestelmässä. Tästä syystä voit luoda mukautettuja kenttiä muokataksesi sovellusta yrityksesi tarpeita vastaavaksi, mikäli sinulla on ominaisuuden käyttöoikeudet.
+Vaikka käytettävissä on useita valmiita kenttiä monenlaisten liiketoimintaprosessien hallintaa varten, joskus yritysten on seurattava myös muita tietoja järjestelmässä. Ohjelmoijia voidaan käyttää näiden kenttien lisäämisessä laajennuksina kehittäjän työkaluihin. Mukautettujen kenttien toiminnon avulla kentät voidaan lisätä suoraan käyttöliittymästä. Näin käyttäjä voi räätälöidä sovellusta liiketoiminnan vaatimusten mukaan selaimessa.
 
-Mukautettujen kenttien lisääminen on mahdollista päivityksestä 13 eteenpäin.
+Mukautettujen kenttien lisääminen on mahdollista päivityksestä 13 eteenpäin. Vain käyttäjät, joilla on erityiset käyttöoikeudet, voivat käyttää tätä ominaisuutta.
 
 Tässä videossa näytetään, miten helppoa mukautetun kentän lisääminen sivulle on: [Mukautettujen kenttien lisääminen](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -159,3 +159,7 @@ Suorituskyvyn ja teknisten syiden vuoksi vain seuraavat ehdot täyttävät taulu
 - Taulu ei voi laajentaa toista taulua.
 - Taulua ei voi merkitä järjestelmätauluksi.
 - Taulu ei voi olla väliaikainen taulu.
+
+### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Voinko viitata mukautettuihin kenttiin kehittäjän työkaluissa?  
+
+Mukautettuja kenttiä voi hallinnoida vain käyttöliittymässä. Niihin ei voi viitata koodilla. 

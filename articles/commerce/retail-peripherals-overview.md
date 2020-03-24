@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 14c6f7aaab4c6e4f099f47210f4d89fdfcd33d79
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030840"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124402"
 ---
 # <a name="peripherals"></a>Oheislaitteet
 
 [!include[banner](includes/banner.md)]
 
-Tässä aiheessa esitellään vähittäismyymälän oheislaitteisiin liittyvät käsitteet. Artikkelissa kerrotaan, miten oheislaitteet voidaan yhdistää myyntipisteeseen, ja esitellään komponentit, jotka ovat vastuussa myyntipisteen yhteyden hallinnasta.
+Tässä aiheessa esitellään myymälän oheislaitteisiin liittyvät käsitteet. Artikkelissa kerrotaan, miten oheislaitteet voidaan yhdistää myyntipisteeseen, ja esitellään komponentit, jotka ovat vastuussa myyntipisteen yhteyden hallinnasta.
 
 ## <a name="concepts"></a>Käsitteet
 
@@ -65,7 +65,7 @@ Myyntipisteen oheislaitteet ovat laitteita, joita tuetaan eksplisiittisesti myyn
 
 ### <a name="hardware-station"></a>Hardware station
 
-Selaus: Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Vähittäismyymälät** &gt; **Kaikki vähittäismyymälät**. Valitse ensin myymälä ja sitten **Laiteasemat**-pikavälilehti. **Laiteasema**-asetus on kanavan tason asetus, jonka avulla määritetään instanssit, joissa vähittäismyynnin oheislaitteiden logiikka otetaan käyttöön. Tätä kanavatason asetusta käytetään määritettäessä laiteaseman ominaisuudet. Sitä käytetään myös lueteltaessa Modern POS -instanssin tietyssä myymälässä käytettävissä olevat laiteasemat. Laiteasema muodostetaan Windowsin Modern POS -ohjelmiin Windowsille ja Androidille. Laiteasema voidaan ottaa käyttöön myös itsenäisesti Microsoft Internet Information Services (IIS) -palveluiden erillisenä ohjelmana. Tällöin sitä käytetään verkon kautta.
+Selaus: Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavat** &gt; **Myymälät** &gt; **Kaikki myymälät**. Valitse ensin myymälä ja sitten **Laiteasemat**-pikavälilehti. **Laiteasema**-asetus on kanavan tason asetus, jota käytetään määritettäessä instanssit, joissa käytetään oheislaitteiden logiikkaa. Tätä kanavatason asetusta käytetään määritettäessä laiteaseman ominaisuudet. Sitä käytetään myös lueteltaessa Modern POS -instanssin tietyssä myymälässä käytettävissä olevat laiteasemat. Laiteasema muodostetaan Windowsin Modern POS -ohjelmiin Windowsille ja Androidille. Laiteasema voidaan ottaa käyttöön myös itsenäisesti Microsoft Internet Information Services (IIS) -palveluiden erillisenä ohjelmana. Tällöin sitä käytetään verkon kautta.
 
 ### <a name="hardware-profile"></a>Laiteprofiili
 
@@ -117,27 +117,30 @@ Maksulaitteen tuki otetaan käyttöön maksuyhdistimen kautta. Maksulaitteet voi
 ## <a name="supported-interfaces"></a>Tuetut liittymät
 ### <a name="opos"></a>OPOS
 
-Jotta suurinta osaa laitteista voidaan käyttää Commercen kanssa, myyntipistetoimialan OLE-standardi on ensisijainen oheislaiteympäristö, jota tuetaan. Myyntipisteen OLE-standardin tuottaja on National Retail Federation (NRF), joka tekee toimialakohtaisia tietoliikenneprotokollia vähittäismyynnin oheislaitteille. OPOS on myyntipisteen OLE-standardin laajalti hyväksytty toteutus. OPOS kehitettiin 1990-luvun puolivälissä, jonka jälkeen sitä on päivitetty useita kertoja. OPOS tarjoaa laiteohjainarkkitehtuurin, jonka avulla myyntipisteen laite on helppo integroida Windows-pohjaisiin myyntipistejärjestelmiin. OPOS-ohjausobjektit hoitavat viestinnän yhteensopivan laitteen ja myyntipisteohjelmiston välillä. OPOS-ohjaus sisältää seuraavat kaksi osaa:
+Jotta suurinta osaa laitteista voidaan käyttää Commercen kanssa, myyntipistetoimialan OLE-standardi on ensisijainen oheislaiteympäristö, jota tuetaan. Myyntipisteen OLE-standardin tuottaja on National Retail Federation (NRF), joka tekee toimialakohtaisia tietoliikenneprotokollia oheislaitteille. OPOS on myyntipisteen OLE-standardin laajalti hyväksytty toteutus. OPOS kehitettiin 1990-luvun puolivälissä, jonka jälkeen sitä on päivitetty useita kertoja. OPOS tarjoaa laiteohjainarkkitehtuurin, jonka avulla myyntipisteen laite on helppo integroida Windows-pohjaisiin myyntipistejärjestelmiin. OPOS-ohjausobjektit hoitavat viestinnän yhteensopivan laitteen ja myyntipisteohjelmiston välillä. OPOS-ohjaus sisältää seuraavat kaksi osaa:
 
 -   **Ohjausobjekti** – Laiteluokan (kuten rivinäytön) ohjausobjekti sisältää ohjelman liittymän. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) tarjoaa vakiojoukon OPOS-ohjausobjekteja, jota kutsutaan myös yhteisiksi ohjausobjekteiksi (CCO). Commercen myyntipisteen komponentti testataan yhteisten ohjausobjektien avulla. Testaamisen avulla voidaan varmistaa, että jos Commerce tukee laiteluokkaa OPOS:n kautta, useita laitetyyppejä voidaan tukea, jos valmistaja tarjoaa OPOS:lle muodostetun palveluobjektin. Jokaista laitetyyppiä ei tarvitse testata eksplisiittisesti.
 -   **Palveulobjekti** – Palveluobjekti mahdollistaa ohjausobjektin ja laitteen välisen yhteydenpidon. Laitteen valmistaja tarjoaa yleensä laitteen palveluobjektin. Joissakin tapauksissa palveluobjekti on kuitenkin ladattava valmistajan sivustosta. Saatavana voi olla esimerkiksi uudempi palveluobjekti. Valmistajan sivuston osoite löytyy laitteen dokumentaatiosta.
 
-[![Ohjausobjekti ja palveluobjekti](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Myyntipisteen OLE:n OPOS-toteutuksen tuki auttaa varmistamaan, että laitteiden valmistajat ja myyntipisteen julkaisijat ottavat standardin käyttöön oikein. Myyntipisteiden järjestelmät ja tuetut laitteet voivat toimia yhdessä, vaikka niitä ei olisi aiemmin testattu yhdessä. **Huomautus:** OPOS-tuki ei takaa sitä, että kaikkia kaikkia OPOS-ohjaimen sisältäviä laitteita tuetaan. Microsoft Dynamics 365 for Retailin on ensin tuettava tätä laitetyyppiä tai -luokkaa OPOS:n kautta. Lisäksi palveluobjekteja ei ehkä aina ole päivitetty uusimman ohjausobjektiversion mukaisesti. Ota huomioon, että yleensä palveluobjektien laatu vaihtelee.
+[![Ohjausobjekti ja palveluobjekti](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Myyntipisteen OLE:n OPOS-toteutuksen tuki auttaa varmistamaan, että laitteiden valmistajat ja myyntipisteen julkaisijat ottavat standardin käyttöön oikein. Myyntipisteiden järjestelmät ja tuetut laitteet voivat toimia yhdessä, vaikka niitä ei olisi aiemmin testattu yhdessä. 
+
+> [!NOTE]
+> OPOS-tuki ei takaa sitä, että kaikkia OPOS-ohjaimen sisältäviä laitteita tuetaan. Commercen on ensin tuettava tätä laitetyyppiä tai -luokkaa OPOS:n kautta. Lisäksi palveluobjekteja ei ehkä aina ole päivitetty uusimman ohjausobjektiversion mukaisesti. Ota huomioon, että yleensä palveluobjektien laatu vaihtelee.
 
 ### <a name="windows"></a>Windows
 
-Kuitin tulostaminen myyntipisteessä on optimoitu OPOS:ia varten. OPOS-tulostaminen on yleensä paljon nopeampaa kuin tulostaminen Windowsin kautta. Tämän vuoksi kannattaa käyttää OPOS:ia erityisesti vähittäiskauppaympäristöissä, joissa tulostetaan 40 sarakkeen kuitteja ja joiden tapahtuma-aikojen tulee olla lyhyitä. Useimmissa laitteissa käytetään OPOS-ohjausobjekteja. Jotkin OPOS-kuittitulostimet kuitenkin tukevat myös Windows-ohjaimia. Kun käytössä on Windows-ohjain, voit käyttää uusimpia fontteja ja yhtä verkkotulostinta useissa kassakoneissa. Windows-ohjainten käyttämisessä on kuitenkin huonoja puolia. Seuraavassa on joitakin esimerkkejä näistä huonoista puolista:
+Kuitin tulostaminen myyntipisteessä on optimoitu OPOS:ia varten. OPOS-tulostaminen on yleensä paljon nopeampaa kuin tulostaminen Windowsin kautta. Tämän vuoksi kannattaa käyttää OPOS:ia erityisesti ympäristöissä, joissa tulostetaan 40 sarakkeen kuitteja ja joiden tapahtuma-aikojen tulee olla lyhyitä. Useimmissa laitteissa käytetään OPOS-ohjausobjekteja. Jotkin OPOS-kuittitulostimet kuitenkin tukevat myös Windows-ohjaimia. Kun käytössä on Windows-ohjain, voit käyttää uusimpia fontteja ja yhtä verkkotulostinta useissa kassakoneissa. Windows-ohjainten käyttämisessä on kuitenkin huonoja puolia. Seuraavassa on joitakin esimerkkejä näistä huonoista puolista:
 
 -   Kun käytetään Windows-ohjaimia, kuvat muodostetaan ennen tulostamista. Tämän vuoksi tulostaminen on yleensä hitaampaa kuin OPOS-ohjausobjekteja käyttävissä tulostimissa.
 -   Laitteet, jotka on yhdistetty tulostimen kautta (ketjutettu), eivät ehkä toimi oikein Windows-ohjainten kanssa. Esimerkiksi kassa ei ehkä avaudu tai luettelotulostin ei tulosta sanoja odotetulla tavalla.
--   OPOS tukee myös laajempaa vähittäiskaupan kuittitulostimille määritettyä muuttujajoukkoa, kuten paperin leikkaamista ja luettelon tulostamista.
+-   OPOS tukee myös laajempaa kuittitulostimille määritettyä muuttujajoukkoa, kuten paperin leikkaamista ja luettelon tulostamista.
 -   Windows-tulostimia ei tueta IIS-laiteasemalla. 
 
 Jos OPOS-ohjausobjektit ovat käytettävissä käyttämässäsi Windows-tulostimessa, tulostin todennäköisesti toimii oikein Commercen kanssa.
 
 ### <a name="universal-windows-platform"></a>Universaali Windows-ympäristö
 
-Universaali Windows-ympäristö (UWP) liittyy vähittäiskaupan oheislaitteissa käyttövalmiiden laitteiden Windows-tukeen. Kun käyttövalmis laite yhdistetään Windows OS:n versioon, joka tukee kyseistä laitetyyppiä, laitteen ohjainta ei vaadita. Jos esimerkiksi Windows tunnistaa Bluetooth-kaiuttimen, OS tietää, että laitteen luokkatyyppi on **Kaiutin**. Tämän vuoksi laitetta käsitellään kaiuttimena. Lisäasetuksia ei vaadita. Myyntipisteiden laitteissa voidaan ottaa käyttöön useita USB-laitteita niin, että Windows tunnistaa ne HID (Human Interface Device) -laitteiksi. Windows ei ehkä kuitenkaan pysty määrittämään laitteen ominaisuuksia, koska laite ei määritä laitteen luokkaa tai tyyppiä. Windows 10 -käyttöjärjestelmässä viivakoodin ja magneettinauhan lukulaitteiden laiteluokat on lisätty. Jos siis laite ilmaisee Windows 10:lle kuuluvansa johonkin näistä luokista, Windows kuuntelee laitteen tapahtumia soveltuvina ajankohtina. Modern POS tukee universaalia Windows-ympäristöä ja skannereita. Kun se on valmis ottamaan vastaan jonkin mainitun laitteen syötteen ja yhdistetty laite kuuluu johonkin mainituista luokista, laitetta voidaan käyttää. Jos esimerkiksi UWP:n viivakoodin lukulaite kytketään Windows 10 -tietokoneeseen ja viivakoodin kirjautuminen on määritetty Modern POS -myyntipistettä varten, viivakoodin lukulaite aktivoidaan kirjautumisnäytössä. Lisäasetuksia ei vaadita. Myyntipisteen UWP-laitteiden muita luokkia lisätään Windowsiin. Nämä luokat sisältävät kassojen ja kuittitulostinten luokat. Näiden uusien laiteluokkien Modern POS -tuki on tulossa.
+Universaali Windows-ympäristö (UWP) liittyy oheislaitteissa käyttövalmiiden laitteiden Windows-tukeen. Kun käyttövalmis laite yhdistetään Windows OS:n versioon, joka tukee kyseistä laitetyyppiä, laitteen ohjainta ei vaadita. Jos esimerkiksi Windows tunnistaa Bluetooth-kaiuttimen, OS tietää, että laitteen luokkatyyppi on **Kaiutin**. Tämän vuoksi laitetta käsitellään kaiuttimena. Lisäasetuksia ei vaadita. Myyntipisteiden laitteissa voidaan ottaa käyttöön useita USB-laitteita niin, että Windows tunnistaa ne HID (Human Interface Device) -laitteiksi. Windows ei ehkä kuitenkaan pysty määrittämään laitteen ominaisuuksia, koska laite ei määritä laitteen luokkaa tai tyyppiä. Windows 10 -käyttöjärjestelmässä viivakoodin ja magneettinauhan lukulaitteiden laiteluokat on lisätty. Jos siis laite ilmaisee Windows 10:lle kuuluvansa johonkin näistä luokista, Windows kuuntelee laitteen tapahtumia soveltuvina ajankohtina. Modern POS tukee universaalia Windows-ympäristöä ja skannereita. Kun se on valmis ottamaan vastaan jonkin mainitun laitteen syötteen ja yhdistetty laite kuuluu johonkin mainituista luokista, laitetta voidaan käyttää. Jos esimerkiksi UWP:n viivakoodin lukulaite kytketään Windows 10 -tietokoneeseen ja viivakoodin kirjautuminen on määritetty Modern POS -myyntipistettä varten, viivakoodin lukulaite aktivoidaan kirjautumisnäytössä. Lisäasetuksia ei vaadita. Myyntipisteen UWP-laitteiden muita luokkia lisätään Windowsiin. Nämä luokat sisältävät kassojen ja kuittitulostinten luokat. Näiden uusien laiteluokkien Modern POS -tuki on tulossa.
 
 ### <a name="keyboard-wedge"></a>Näppäimistön kortinlukija
 
@@ -155,13 +158,13 @@ Verkossa käytettäviä kassoja, kuittitulostimia ja maksupäätteitä voi käyt
 
 ### <a name="dedicated"></a>Varattu
 
-Nykyaikaisissa POS-asiakkaissa Windowsille ja Androidille on **Erilliset** tai sisäänrakennetut laiteasemat. Nämä asiakkaat voivat kommunikoida suoraan oheislaitteiden kanssa käyttämällä sovelluksiin sisäänrakennettua liiketoimintalogiikkaa. Android- sovellus tukee vain verkkolaitteita. Lisätietoja Android-järjestelmänoheistuesta on (Määritä POS Hybrid-sovellus Androidille ja iOS:ille)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp] -artikkelissa.
+Nykyaikaisissa POS-asiakkaissa Windowsille ja Androidille on **Erilliset** tai sisäänrakennetut laiteasemat. Nämä asiakkaat voivat kommunikoida suoraan oheislaitteiden kanssa käyttämällä sovelluksiin sisäänrakennettua liiketoimintalogiikkaa. Android- sovellus tukee vain verkkolaitteita. Lisätietoja Android-järjestelmänoheistuesta on artikkelissa [POS Hybrid -sovelluksen määrittäminen Androidille ja iOS:lle](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 Kun haluat käyttää erillistä laiteasemaa, liitä laiteprofiili Modern POS Windowsia tai Android-sovellusta käyttävään kassakoneeseen. Luo sitten **Varattu**-tyyppinen laiteasema myymälälle, jossa kassakonetta käytetään. Käynnistä Modern POS -toiminto muussa kuin lokerotilassa ja ota laitteistoaseman ominaisuudet käyttöön **Hallitse laiteasemia** -toiminnon avulla. Oma laiteasema on oletusarvoisesti käytössä. Kirjaudu seuraavaksi ulos Modern POS:ista, kirjaudu takaisin sisään ja avaa vuoro. Laitteistoprofiiliin määritetyt oheislaitteet ovat käytössä. 
 
 ### <a name="shared"></a>Yhteiset ominaisuudet 
 
-Joskus kutsutaan myös IIS-laite asemaksi. IIS tarkoittaa sitä, että POS-sovellus muodostaa yhteyden laitteistoasemaan Microsoftin Internet Information Servicesin kautta. Myyntipisteen sovellus muodostaa yhteyden IIS-laiteasemaan sen tietokoneen verkkopalveluiden avulla, johon laite on yhdistetty. Kun jaettu laiteasema on käytössä, laiteasemaan yhdistettyjä vähittäismyynnin oheislaitteita voi käyttää missä tahansa sellaisessa myyntipisteen kassakoneessa, joka kuuluu samaan verkkoon kuin IIS-laiteasema. Koska vain Modern POS Windowsille ja Androidille sisältää vähittäismyynnin oheislaitteiden sisäänrakennetun tuen, kaikissa muissa Modern POS -sovelluksissa on käytettävä IIS-laiteasemaa. Näin laiteprofiilissa määritettyihin myyntipisteen oheislaitteisiin voidaan muodostaa yhteys. Tämän vuoksi kukin IIS-laiteaseman instanssi vaatii tietokoneen, jossa on käytössä verkkopalvelu ja sovellus, joka on yhteydessä laitteiden kanssa. 
+Joskus kutsutaan myös IIS-laite asemaksi. IIS tarkoittaa sitä, että POS-sovellus muodostaa yhteyden laitteistoasemaan Microsoftin Internet Information Servicesin kautta. Myyntipisteen sovellus muodostaa yhteyden IIS-laiteasemaan sen tietokoneen verkkopalveluiden avulla, johon laite on yhdistetty. Kun jaettu laiteasema on käytössä, laiteasemaan yhdistettyjä oheislaitteita voi käyttää missä tahansa sellaisessa myyntipisteen kassakoneessa, joka kuuluu samaan verkkoon kuin IIS-laiteasema. Koska vain Modern POS for Windowsille ja Androidille sisältää oheislaitteiden sisäänrakennetun tuen, kaikissa muissa Modern POS -sovelluksissa on käytettävä IIS-laiteasemaa. Näin laiteprofiilissa määritettyihin myyntipisteen oheislaitteisiin voidaan muodostaa yhteys. Tämän vuoksi kukin IIS-laiteaseman instanssi vaatii tietokoneen, jossa on käytössä verkkopalvelu ja sovellus, joka on yhteydessä laitteiden kanssa. 
 
 Jaetun laiteaseman avulla voidaan sallia useiden myyntipisteiden jakaminen oheislaitteiden kanssa tai käyttää yhdessä myyntipisteessä sidottujen tai oheislaitteiden hallinnassa. 
 
@@ -179,7 +182,7 @@ Laiteprofiilin laitteiden verkkosuunnittelun avulla kassat, kuittitulostimet ja 
 
 #### <a name="modern-pos-for-windows"></a>Modern POS Windowsille
 
-Voit määrittää verkon oheislaitteiden IP-osoitteet kahdessa kohdassa. Jos Modern POS:n Windows-asiakasohjelma käyttää yhtä verkon oheislaitejoukkoa, IP-osoitteet on määritettävä laitteille, joissa on otettu käyttöön kassakoneen toimintoruudun **IP-määritys**-valinta. Jos verkkolaitteet jaetaan myyntipisteiden kassakoneille, laiteprofiili, johon on liitetty verkkolaitteita, voidaan yhdistää suoraan jaettuihin laiteasemiin. Voit määrittää IP-osoitteet, kun valitset laiteaseman **Myymälät**-sivulla ja määrität laiteasemaan liitetyt verkkolaitteet **Laiteasemat**-osan **IP-määritys**-valinnan avulla. Jos laiteasemissa on vain verkkolaitteita, laiteasemaa ei tarvitse ottaa käyttöön. Tällöin laiteasema vaaditaan vain, jos verkossa käytettävät laitteet ryhmitellään käsitteellisesti vähittäismyymälän sijainnin mukaan.
+Voit määrittää verkon oheislaitteiden IP-osoitteet kahdessa kohdassa. Jos Modern POS:n Windows-asiakasohjelma käyttää yhtä verkon oheislaitejoukkoa, IP-osoitteet on määritettävä laitteille, joissa on otettu käyttöön kassakoneen toimintoruudun **IP-määritys**-valinta. Jos verkkolaitteet jaetaan myyntipisteiden kassakoneille, laiteprofiili, johon on liitetty verkkolaitteita, voidaan yhdistää suoraan jaettuihin laiteasemiin. Voit määrittää IP-osoitteet, kun valitset laiteaseman **Myymälät**-sivulla ja määrität laiteasemaan liitetyt verkkolaitteet **Laiteasemat**-osan **IP-määritys**-valinnan avulla. Jos laiteasemissa on vain verkkolaitteita, laiteasemaa ei tarvitse ottaa käyttöön. Tällöin laiteasema vaaditaan vain, jos verkossa käytettävät laitteet ryhmitellään käsitteellisesti myymälän sijainnin mukaan.
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS ja Modern POS iOS:lle
 
@@ -192,11 +195,11 @@ Lisätietoja on kohdassa [Laiteaseman määrittäminen ja asentaminen](retail-ha
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Moderni POS Windowsille -sovelluksen asetus ja määritys
 
-Lisätietoja on kohdassa [Retail Modern POS:n määrittäminen, asentaminen ja aktivointi](retail-modern-pos-device-activation.md).
+Lisätietoja on kohdassa [Modern POS:n (MPOS) määrittäminen, asentaminen ja aktivoiminen](retail-modern-pos-device-activation.md).
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Moderni POS Androidille ja iOS:ille -sovelluksen asetus ja määritys
 
-Katso lisätietoja (POS Hybrid -sovelluksen määrittäminen Android- ja iOS-laitteessa)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
+Katso lisätietoja kohdasta [POS Hybrid -sovelluksen määrittäminen Android- ja iOS-laitteissa](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-laitteen asetukset ja määrittäminen
 
@@ -283,14 +286,14 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille ja Androidill
 <td>Asettaja</td>
 <td><ul>
 <li>OPOS</li>
-<li>Verkkoa koskeva <strong>huomautus:</strong> Vain yksi kassa voidaan määrittää, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</li>
+<li>Verkko </br><strong>Huomautus:</strong> vain yksi kassa voidaan määrittää, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Kassa 2</td>
 <td><ul>
 <li>OPOS</li>
-<li>Verkkoa koskeva <strong>huomautus:</strong> Vain yksi kassa voidaan määrittää, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</li>
+<li>Verkko </br><strong>Huomautus:</strong> vain yksi kassa voidaan määrittää, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -333,7 +336,8 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille ja Androidill
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Kaikki Modern POS -asiakasohjelmat, joilla on sidottu jaettu IIS-laiteasema
 
-**Huomautus:** Kun IIS-laiteasema on sidottu, myyntipisteen asiakasohjelman ja laiteaseman välillä on yksi yhteen -suhde.
+> [!NOTE]
+> Kun IIS-laiteasema on sidottu, myyntipisteen asiakasohjelman ja laiteaseman välillä on yksi yhteen -suhde.
 
 <table>
 <colgroup>
@@ -373,7 +377,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille ja Androidill
 <td>Asettaja</td>
 <td><ul>
 <li>OPOS</li>
-<li>Verkkoa koskeva <strong>huomautus:</strong> Laiteprofiilille voidaan määrittää vain yksi kassa, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</li>
+<li>Verkko </br><strong>Huomautus:</strong> laiteprofiilille voidaan määrittää vain yksi kassa, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -415,7 +419,8 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille ja Androidill
 
 ### <a name="all-modern-pos-clients-shared-an-iis-hardware-station"></a>Kaikki Modern POS -asiakasohjelmat jakavat IIS-laiteaseman
 
-**Huomautus:** kun IIS-laiteasema on jaettu, useat laitteet voivat käyttää laiteasemaa samanaikaisesti. Tässä tilanteessa tulee käyttää vain seuraavan taulukon laitteita. Jos yrität jakaa laitteita, joita taulukosta ei löydy, kuten viivakoodin tai magneettinauhan lukulaitteita, tuloksena on virhe, kun useat laitteet yrittävät käyttää samaa oheislaitetta. Tulevissa versioissa tällaisen määrityksen tekeminen estetään eksplisiittisesti.
+> [!NOTE]
+> Kun IIS-laiteasema on jaettu, useat laitteet voivat käyttää laiteasemaa samanaikaisesti. Tässä tilanteessa tulee käyttää vain seuraavan taulukon laitteita. Jos yrität jakaa laitteita, joita taulukosta ei löydy, kuten viivakoodin tai magneettinauhan lukulaitteita, tuloksena on virhe, kun useat laitteet yrittävät käyttää samaa oheislaitetta. Tulevissa versioissa tällaisen määrityksen tekeminen estetään eksplisiittisesti.
 
 <table>
 <colgroup>
@@ -447,7 +452,7 @@ Verkon oheislaitteita voidaan tukea suoraan Modern POS Windowsille ja Androidill
 <td>Asettaja</td>
 <td><ul>
 <li>OPOS</li>
-<li>Verkkoa koskeva <strong>huomautus:</strong> Laiteprofiilille voidaan määrittää vain yksi kassa, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</li>
+<li>Verkko </br><strong>Huomautus:</strong> laiteprofiilille voidaan määrittää vain yksi kassa, jos kassalle on määritetty <strong>Käytä jaettua vuoroa</strong> -asetus.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -476,8 +481,12 @@ Tämä määritys on yleisin perinteisissä kiinteissä myyntipisteen kassakonei
 
 1.  Luo laiteprofiili, jossa kaikki vaaditut oheislaitteet on määritetty.
 2.  Yhdistä laiteprofiili myyntipisteen kassakoneeseen.
-3.  Luo **Varattu**-tyyppinen laiteasema vähittäismyymälälle, jossa myyntipisteen kassakonetta käytetään. Kuvaus on valinnainen. **Huomautus:** Laiteaseman muita ominaisuuksia ei tarvitse määrittää. Kaikki vaaditut tiedot, kuten laiteprofiili, saadaan kassakoneelta.
-4.  Valitse **Retail ja Commerce** &gt; **Retail IT** &gt; **Jakeluaikataulu**.
+3.  Luo **Varattu**-tyyppinen laiteasema myymälälle, jossa myyntipisteen kassakonetta käytetään. Kuvaus on valinnainen. 
+
+    > [!NOTE]
+    > Laiteaseman muita ominaisuuksia ei tarvitse määrittää. Kaikki vaaditut tiedot, kuten laiteprofiili, saadaan kassakoneelta.
+
+4.  Valitse **Vähittäismyynti ja kauppa** &gt; **Vähittäismyynnin ja kaupan IT** &gt; **Jakeluaikataulu**.
 5.  Valitse **1090**-jakeluaikataulu, kun haluat synkronoida uuden laiteprofiilin myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 6.  Valitse **1040**-jakeluaikataulu, kun haluat synkronoida uuden laiteaseman myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 7.  Asenna ja aktivoi Modern POS Windowsille.
@@ -485,29 +494,30 @@ Tämä määritys on yleisin perinteisissä kiinteissä myyntipisteen kassakonei
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS Androidille ja IPC-laiteasema (sisäänrakennettu)
 
-**Uudet 10.0.8** -Epson-verkkotulostimet ja näihin tulostimiin liitetyt kassalaatikot ovat nyt tuettuja Modern POS Android -sovelluksessa. Lisätietoja on (Määritä POS Hybrid -sovellus Androidille ja iOS:ille)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp] -artikkelissa.
+**Uudet 10.0.8** -Epson-verkkotulostimet ja näihin tulostimiin liitetyt kassalaatikot ovat nyt tuettuja Modern POS Android -sovelluksessa. Lisätietoja on artikkelissa [POS Hybrid -sovelluksen määrittäminen Android- ja iOS-laitteissa](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Kaikki Modern POS -asiakasohjelmat, joilla on sidottu jaettu IIS-laiteasema
 
 Tätä määritystä voidaan käyttää kaikissa Modern POS -asiakasohjelmissa, joilla on vain yhdessä myyntipisteen kassakoneessa käytössä oleva laiteasema. Voit tehdä nämä määritykset seuraavien vaiheiden avulla.
 
 1.  Luo laiteprofiili, jossa kaikki vaaditut oheislaitteet on määritetty.
-2.  Luo **Varattu**-tyyppinen laiteasema vähittäismyymälälle, jossa myyntipisteen kassakonetta käytetään.
+2.  Luo **Varattu**-tyyppinen laiteasema myymälälle, jossa myyntipisteen kassakonetta käytetään.
 3.  Määritä varatulle laiteasemalle seuraavat ominaisuudet:
     -   **Isännän nimi** – Sen isäntäkoneen nimi, jolla laiteasema on käynnissä. 
     
-    **Huomautus:** Cloud POS määrittää paikallisen tietokoneen, jossa Cloud POS on käynnissä, käyttämällä **localhost**-komentoa. Cloud POS:n ja laiteaseman laiteparin muodostamisessa vaaditun varmenteen tietokoneen nimenä on oltava myös Localhost. Voit välttää ongelmat, kun listaat myymälän jokaisen varatun laiteaseman instanssin vaaditulla tavalla. Jokaisen laiteaseman isännän nimen on oltava sen tietokoneen nimi, jossa laiteasema on käytössä.
+        > [!NOTE]
+        > Cloud POS määrittää paikallisen tietokoneen, jossa Cloud POS on käynnissä, käyttämällä **localhost**-komentoa. Cloud POS:n ja laiteaseman laiteparin muodostamisessa vaaditun varmenteen tietokoneen nimenä on oltava myös Localhost. Voit välttää ongelmat, kun listaat myymälän jokaisen varatun laiteaseman instanssin vaaditulla tavalla. Jokaisen laiteaseman isännän nimen on oltava sen tietokoneen nimi, jossa laiteasema on käytössä.
     
     -   **Portti** – Portti, jota laiteasema käyttää ollessaan yhteydessä Modern POS -asiakasohjelmaan.
     -   **Laiteprofiili** – Jos laiteprofiilia ei ole annettu laiteasemassa, käytetään kassakoneessa määritettyä laiteprofiilia.
     -   **EFT-myyntipisteen numero** – EFT-päätteen tunnus, jota käytetään EFT-varmennusten lähettämisen yhteydessä. Luottokortin käsittelijä toimittaa tämän tunnuksen.
     -   **Paketin nimi** – Laiteaseman paketti, jota käytetään laiteaseman käyttöönoton yhteydessä.
 
-4.  Valitse **Retail ja Commerce** &gt; **Retail IT** &gt; **Jakeluaikataulu**.
+4.  Valitse **Vähittäismyynti ja kauppa** &gt; **Vähittäismyynnin ja kaupan IT** &gt; **Jakeluaikataulu**.
 5.  Valitse **1090**-jakeluaikataulu, kun haluat synkronoida uuden laiteprofiilin myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 6.  Valitse **1040**-jakeluaikataulu, kun haluat synkronoida uuden laiteaseman myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 7.  Asenna laiteasema. Lisätietoja laiteaseman asentamisesta on kohdassa [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
-8.  Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS:n (MPOS) määrittäminen, asentaminen ja aktivointi](retail-modern-pos-device-activation.md).
+8.  Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS:n (MPOS) määrittäminen, asentaminen ja aktivoiminen](retail-modern-pos-device-activation.md).
 9.  Kirjaudu Modern POS -sovellukseen ja valitse **Suorita muita kuin kassatoimintoja**.
 10. Käynnistä **laiteasemien hallintatoiminto**.
 11. Valitse **Hallitse**.
@@ -521,7 +531,7 @@ Tätä määritystä voidaan käyttää kaikissa Modern POS -asiakasohjelmissa, 
 Tätä määritystä voidaan käyttää kaikissa Modern POS -asiakasohjelmissa, jotka jakavat laiteasemia muiden laitteiden kanssa. Voit tehdä nämä määritykset seuraavien vaiheiden avulla.
 
 1.  Luo laiteprofiili, jossa vaaditut oheislaitteet on määritetty.
-2.  Luo **Jaettu**-tyyppinen laiteasema vähittäismyymälälle, jossa myyntipisteen kassakonetta käytetään.
+2.  Luo **Jaettu**-tyyppinen laiteasema myymälälle, jossa myyntipisteen kassakonetta käytetään.
 3.  Määritä jaetulle laiteasemalle seuraavat ominaisuudet:
     -   **Isännän nimi** – Sen isäntäkoneen nimi, jolla laiteasema on käynnissä.
     -   **Kuvaus** – Teksti, jonka avulla laiteasema tunnistetaan, kuten **Palautukset** tai **Myymälän edusta**.
@@ -531,11 +541,11 @@ Tätä määritystä voidaan käyttää kaikissa Modern POS -asiakasohjelmissa, 
     -   **Paketin nimi** – Laiteaseman paketti, jota käytetään laiteaseman käyttöönoton yhteydessä.
 
 4.  Toista vaiheet 2 ja 3 jokaisen myymälässä tarvittavan laiteaseman kohdalla.
-5.  Valitse **Retail ja Commerce** &gt; **Retail IT** &gt; **Jakeluaikataulu**.
+5.  Valitse **Vähittäismyynti ja kauppa** &gt; **Vähittäismyynnin ja kaupan IT** &gt; **Jakeluaikataulu**.
 6.  Valitse **1090**-jakeluaikataulu, kun haluat synkronoida uuden laiteprofiilin myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 7.  Valitse **1040**-jakeluaikataulu, kun haluat synkronoida uuden laiteaseman myymälän kanssa. Valitse **Suorita nyt**, kun haluat synkronoida muutokset myyntipisteen kanssa.
 8.  Asenna laiteasema jokaiselle vaiheissa 2 ja 3 määritetylle isäntäkoneelle. Lisätietoja laiteaseman asentamisesta on kohdassa [Retail Hardware Stationin määrittäminen ja asentaminen](retail-hardware-station-configuration-installation.md).
-9.  Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS:n (MPOS) määrittäminen, asentaminen ja aktivointi](retail-modern-pos-device-activation.md).
+9.  Asenna ja aktivoi Modern POS. Lisätietoja Modern POS -sovelluksen asentamisesta on kohdassa [Retail Modern POS:n (MPOS) määrittäminen, asentaminen ja aktivoiminen](retail-modern-pos-device-activation.md).
 10. Kirjaudu Modern POS -sovellukseen ja valitse **Suorita muita kuin kassatoimintoja**.
 11. Käynnistä **laiteasemien hallintatoiminto**.
 
@@ -546,7 +556,8 @@ Tätä määritystä voidaan käyttää kaikissa Modern POS -asiakasohjelmissa, 
 16. Kun kaikkien tarvittujen laiteasemien kanssa on muodostettu laitepari, valitse **Sulje**.
 17. Valitse laiteaseman valintasivulla juuri valittu laiteasema ja aktivoi se. 
 
-**Huomautus:** Jos laitteet käyttävät usein eri laiteasemia, suosittelemme, että Modern POS määritetään pyytämään kassanhoitajia määrittämään laiteaseman maksuvälineprosessin alussa. Valitse **Vähittäismyynti** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Kassakoneet**. Valitse kassakone ja määritä **Valitse maksuvälinetapahtuman aikana** -valinnan arvoksi **Kyllä**. Käytä **1090**-jakeluaikataulua, kun synkronoit muutokset kanavatietokannan kanssa.
+> [!NOTE]
+> Jos laitteet käyttävät usein eri laiteasemia, suosittelemme, että Modern POS määritetään pyytämään kassanhoitajia määrittämään laiteaseman maksuvälineprosessin alussa. Valitse **Vähittäismyynti ja kauppa** &gt; **Kanavan asetukset** &gt; **Myyntipisteen asetukset** &gt; **Kassakoneet**. Valitse kassakone ja määritä **Valitse maksuvälinetapahtuman aikana** -valinnan arvoksi **Kyllä**. Käytä **1090**-jakeluaikataulua, kun synkronoit muutokset kanavatietokannan kanssa.
 
 ## <a name="extensibility"></a>Laajennettavuus
 Lisätietoja laiteaseman laajennusskenaarioista on kohdassa [Laiteaseman laajennettavuus](dev-itpro/hardware-station-extensibility.md).
@@ -554,12 +565,14 @@ Lisätietoja laiteaseman laajennusskenaarioista on kohdassa [Laiteaseman laajenn
 ## <a name="security"></a>Suojaus
 Nykyisten suojausstandardien mukaan tuotantoympäristössä tulisi käyttää seuraavia asetuksia: 
 
-**Huomautus:** Laiteaseman asennusohjelma tekee nämä rekisterimuutokset automaattisesti itsepalvelun kautta tehtävän asennuksen osana.
-
+### <a name="hardware-station-installer"></a>Laiteaseman asennusohjelma
+Laiteaseman asennusohjelma tekee nämä rekisterimuutokset automaattisesti itsepalvelun kautta tehtävän asennuksen osana.
+ 
 -   Secure Sockets Layer (SSL) on poistettava käytöstä.
 -   Vain Transport Layer Security (TLS) -versio 1.2 (tai uudempi versio) voi olla käytössä. 
 
-**Huomautus:** Oletusarvoisesti SSL ja kaikki TLS-versiot TLS 1.2 -versiota lukuun ottamatta on poistettu käytöstä. Voit muokata näitä arvoja seuraavien vaiheiden avulla:
+### <a name="ssl-and-tls"></a>SSL ja TLS
+Oletusarvoisesti SSL ja kaikki TLS-versiot TLS 1.2 -versiota lukuun ottamatta on poistettu käytöstä. Voit muokata näitä arvoja seuraavien vaiheiden avulla:
     1.  Paina Windows-näppäintä +R-kirjainta, kun haluat avata **Suorita**-ikkunan.
     2.  Kirjoita **Avaa**-kenttään **Regedit** ja valitse **OK**.
     3.  Jos **käyttäjätilien valvontasanoman** ruutu avautuu, valitse **Kyllä**.
@@ -580,10 +593,11 @@ Nykyisten suojausstandardien mukaan tuotantoympäristössä tulisi käyttää se
 -   Eri alkuperiä sisältävien resurssien jakaminen on poistettava käytöstä ja hyväksyttävät sallitut alkuperät on määritettävä.
 -   Tietokoneissa, joissa on käytössä laiteasema, tulee käyttää vain luotetun varmenteen myöntäjien varmenteita.
 
-**Huomautus:** IIS:n ja maksukorttiyhdistysten vaatimusten suojausohjeiden tarkistaminen on erittäin tärkeää.
+> [!NOTE]
+> IIS:n ja maksukorttiyhdistysten vaatimusten suojausohjeiden tarkistaminen on erittäin tärkeää.
 
 ## <a name="peripheral-simulator"></a>Oheislaitesimulaattori
-Lisätietoja on kohdassa [Retailin oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md).
+Lisätietoja on kohdassa [Commercen oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsoft-tested-peripheral-devices"></a>Microsoftin testaamat oheislaitteet
 ### <a name="ipc-built-in-hardware-station"></a>IPC-laiteasema (sisäänrakennettu)
@@ -736,7 +750,10 @@ Seuraavat oheislaitteet on testattu käyttämällä varattua (ei jaettua) IIS-la
 
 ### <a name="shared-iis-hardware-station"></a>Jaettu IIS-laiteasema
 
-Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sekä Modern POS Windowsille- ja Cloud POS -sovellusta. **Huomautus:** Vain tulostinta, maksupäätettä ja kassaa tuetaan.
+Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sekä Modern POS Windowsille- ja Cloud POS -sovellusta. 
+
+> [!NOTE]
+> Vain tulostinta, maksupäätettä ja kassaa tuetaan.
 
 #### <a name="printer"></a>Tulostin
 
@@ -793,7 +810,7 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
 **Ratkaisu:** Seuraavassa esitellään joitakin yleisiä syitä:
 
 -   Varmista, että muun laitteen ohjaimen määritysapuohjelmat on suljettu. Jos näitä apuohjelmia on auki, ne voivat estää laitteen käyttämisen Modern POS -sovellukselta tai laiteasemalta.
--   Jos vähittäismyynnin oheislaite on jaettu useiden myyntipisteiden laitteiden kanssa, varmista, että se kuuluu johonkin seuraavista luokista:
+-   Jos oheislaite on jaettu useiden myyntipisteiden laitteiden kanssa, varmista, että se kuuluu johonkin seuraavista luokista:
     -   Kassa
     -   Kuittitulostin
     -   Maksupääte
@@ -817,6 +834,6 @@ Seuraavat oheislaitteet on testattu käyttämällä jaettua IIS-laiteasemaa sek�
 <a name="additional-resources"></a>Lisäresurssit
 --------
 
-[Vähittäismyynnin oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
+[Commercen oheislaitesimulaattori](dev-itpro/retail-peripheral-simulator.md)
 
 

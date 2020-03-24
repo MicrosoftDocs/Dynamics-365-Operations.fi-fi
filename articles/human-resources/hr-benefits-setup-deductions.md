@@ -1,6 +1,6 @@
 ---
-title: Vähennysten määritys
-description: ''
+title: Vähennysten määrittäminen
+description: Microsoft Dynamics 365 Human Resourcesin vähennysten avulla voit määrittää, kuinka paljon (jos mitään) vähennetään työntekijän palkasta kunkin edun osalta.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7ee9e8f3bc0e9027e41d3aa91bd097a3f046cbb4
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: a5287161f352b386ae4e13067f40228d7c1bce62
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008904"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092726"
 ---
-# <a name="configure-deductions"></a>Vähennysten määritys
+# <a name="configure-deductions"></a>Vähennysten määrittäminen
 
 [!include [banner](includes/preview-feature.md)]
 

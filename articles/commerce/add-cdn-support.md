@@ -3,7 +3,7 @@ title: Sisältöverkon (CDN) tuen lisääminen
 description: Tässä ohjeaiheessa kuvataan, miten sisältöverkko (CDN) lisätään Microsoft Dynamics 365 Commerce -ympäristöön.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: bf5a0da2803f985e6c0c04dd9916977397173d11
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 23ac9d8844c2a8ae20bd316c40078319601a3a4d
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001619"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096722"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Sisältöverkon (CDN) tuen lisääminen
 
@@ -144,12 +144,20 @@ CDN:n tulisi nyt olla määritetty niin, että sitä voi käyttää Commerce-siv
 
 [Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
 
+[Määritä verkkokauppakanava](online-stores.md)
+
 [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
 [Liitä verkkosivusto kanavaan](associate-site-online-store.md)
 
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
 
+[URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+
+[B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
+
 [Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
+
+[Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
 
 [Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)

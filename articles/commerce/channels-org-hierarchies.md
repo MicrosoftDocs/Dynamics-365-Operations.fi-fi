@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6c19542089526c1e17fb1133d52cf042f244fb80
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 29d4b686cbb66715196fca06e4642fbb8a337ace
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002332"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113848"
 ---
 # <a name="set-up-organization-hierarchies"></a>Organisaatiohierarkioiden määrittäminen
 
@@ -31,7 +31,7 @@ ms.locfileid: "3002332"
 
 Tässä ohjeaiheessa käsitellään organisaatiohierarkioiden määrittämistä Microsoft Dynamics 365 Commercessa.
 
-## <a name="overview"></a>Yleiskatsaus
+## <a name="overview"></a>Yleiskuvaus
 
 Ennen kanavien luontia on varmistettava, että organisaatiohierarkiat on määritetty.
 
@@ -41,9 +41,9 @@ Ennen organisaatiohierarkian luomista sinun on luotava organisaatiot. Lisätieto
 
 
 Lisätietoja on seuraavissa aiheissa:
-- [Organisaatiot ja organisaatiohierarkiat – yleiskatsaus](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies)
-- [Organisaatiohierarkian suunnitteleminen](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy?toc=/dynamics365/commerce/toc.json)
-- [Organisaation hierarkian luominen](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy?toc=/dynamics365/commerce/toc.json)
+- [Organisaatiot ja organisaatiohierarkiat – yleiskatsaus](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+- [Organisaatiohierarkian suunnitteleminen](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
+- [Organisaation hierarkian luominen](../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/commerce/toc.json)
 
 ## <a name="create-an-organizational-hierarchy"></a>Organisaatiohierarkian luominen
 

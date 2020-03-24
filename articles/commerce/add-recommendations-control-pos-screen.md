@@ -1,9 +1,9 @@
 ---
-title: Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle
+title: Suositusten lisääminen tapahtumanäyttöön
 description: Tässä ohjeaiheessa kuvataan suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumanäytölle käyttämällä Microsoft Dynamics 365 Commercein näytön asettelun suunnittelutoimintoa.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d6f48197a36f633e3cd63cbad4518f53946fc7f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9117f398ee1d9edbd3aee9bed366eea225964184
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022343"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127672"
 ---
-# <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle
+# <a name="add-recommendations-to-the-transaction-screen"></a>Suositusten lisääminen tapahtumanäyttöön
 
 [!include [banner](includes/banner.md)]
 
@@ -98,6 +98,24 @@ Käytettävissä on kaksi asetusta. Valitse vaihtoehto, joka sopii parhaiten myy
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Tuotesuositukset myyntipisteessä](product.md)
+[Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
-[Tuotesuositusten yleiskatsaus](../commerce/product-recommendations.md)
+[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
+
+[Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
+
+[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
+
+[Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
+
+[Suositusluettelojen lisääminen sähköisen kaupankäynnin sivustoon](add-reco-list-to-page.md)
+
+[Tuotesuositusten lisääminen myyntipisteessä](product.md)
+
+[AI-ML-suositusten tulosten muokkaaminen](modify-product-recommendation-results.md)
+
+[Kuratoitujen suositusten manuaalinen luominen](create-editorial-recommendation-lists.md)
+
+[Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
+
+[Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)

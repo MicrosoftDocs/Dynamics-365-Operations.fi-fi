@@ -1,9 +1,9 @@
 ---
-title: Myyntipisteen tuotesuositukset
+title: Tuotesuositusten lisääminen myyntipisteessä
 description: Tässä ohjeaiheessa kuvataan myyntipisteen (POS) tuotesuositusten käyttöä.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bfb13904b774558907b29e74158b1e0a193e17cd
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 48533596c5bdc73dd8c815166e7dde0ca2f3cb4d
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057438"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127810"
 ---
-# <a name="product-recommendations-on-pos"></a>Tuotesuositukset myyntipisteessä
+# <a name="add-product-recommendations-on-pos"></a>Tuotesuositusten lisääminen myyntipisteessä
 
 [!include [banner](includes/banner.md)]
 
@@ -71,8 +71,24 @@ Voit määrittää tuotesuositukset noudattamalla seuraavia ohjeita:
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle](add-recommendations-control-pos-screen.md)
+[Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
-[Tuotesuositusten yleiskatsaus](../commerce/product-recommendations.md)
+[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
 
-[Ota tuotesuositukset käyttöön](../commerce/enable-product-recommendations.md) 
+[Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
+
+[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
+
+[Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
+
+[Suositusluettelojen lisääminen sähköisen kaupankäynnin sivustoon](add-reco-list-to-page.md)
+
+[Suositusten lisääminen tapahtumanäyttöön](add-recommendations-control-pos-screen.md)
+
+[AI-ML-suositusten tulosten muokkaaminen](modify-product-recommendation-results.md)
+
+[Kuratoitujen suositusten manuaalinen luominen](create-editorial-recommendation-lists.md)
+
+[Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
+
+[Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)

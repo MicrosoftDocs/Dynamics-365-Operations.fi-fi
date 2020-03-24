@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
-ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
+ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957364"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117334"
 ---
 # <a name="business-document-management-overview"></a>Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
+
+[!include [banner](../includes/banner.md)]
 
 Yrityskäyttäjät käyttävät [sähköisen raportoinnin (ER)](general-electronic-reporting.md) kehystä määrittääkseen lähtevien sähköisten asiakirjojen muodot eri maiden ja alueiden lakisääteisten vaatimusten mukaisiksi. Käyttäjät voivat myös määrittää tietovirran määrittääkseen, mitkä sovellustiedot sijoitetaan luotuihin tiedostoihin. ER-kehys luo lähteviä tiedostoja Microsoft Office -muodoissa (Excel-työkirjoissa tai Word-asiakirjoissa) ennalta määritettyjen mallien avulla. Mallit täytetään tarvittavilla tiedoilla määritetyn tietovirran mukaisesti, kun vaadittavat tiedostot luodaan. Kukin konfiguroitu muoto voidaan julkaista osana ER-ratkaisua tiettyjen lähtevien tiedostojen luomista varten. Tätä kuvaa ER-muotoonfiguraatio, joka voi sisältää malleja, joiden avulla voit luoda erilaisia lähteviä asiakirjoja. Yrityskäyttäjät voivat hallita tarvittavia liikeasiakirjoja tämän kehyksen avulla.
 
@@ -147,7 +149,7 @@ Lisätietoja tarvittavien tiedoston hallintaparametrien ja tiedostotyyppien mä�
 
 ![Määritä asiakirjojen hallinnan tiedostotyyppi](./media/BDM-Overview-DMSetting.png)
 
-### <a name="SetupBdmParameters">Parametrien määrittäminen</a>
+### <a name=""></a><a name="SetupBdmParameters">Parametrien määrittäminen</a>
 
 Liiketoiminnan asiakirjojen hallinnan perusparametrit voidaan määrittää **Liiketoiminta-asiakirjan parametrit** -sivulla. Vain tietyt käyttäjät voivat käyttää sivua. Näihin sisältyvät:
 
@@ -158,7 +160,7 @@ Seuraavien ohjeiden avulla voit määrittää perusparametrit kaikille yrityksil
 
 1. Kirjaudu sisään käyttäjänä, jolla on **Liiketoiminta-asiakirjan parametrit** -sivun käyttöoikeus.
 2. Siirry kohtaan **Organisaation hallinto** \> **Sähköinen raportointi** \> **Liiketoiminta-asiakirjojen hallinta**\> **Liiketoiminta-asiakirjan parametrit**.
-3.  Määritä **Liiketoiminta-asiakirjan parametrit**-sivun **Liitteet**-välilehden **SharePoint-tiedostotyyppi** -kentässä asiakirjatyyppi, jota käytetään, kun malleja tallennetaan väliaikaisesti Office-muodoissa, kun niitä muokataan Office-työpöytäsovellusten avulla. 
+3.    Määritä **Liiketoiminta-asiakirjan parametrit**-sivun **Liitteet**-välilehden **SharePoint-tiedostotyyppi** -kentässä asiakirjatyyppi, jota käytetään, kun malleja tallennetaan väliaikaisesti Office-muodoissa, kun niitä muokataan Office-työpöytäsovellusten avulla. 
 
 > [!NOTE]
 > Tätä parametria varten on käytettävissä vain tiedostotyyppejä , jotka on konfiguroitu käyttämällä SharePoint-sijaintia.
@@ -288,13 +290,13 @@ Seuraavia ohjeita noudattamalla voit muokata vapaatekstilaskun malleja yritysasi
 
 ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Mallin muokkaaminen Office 365:ssä</a>
+### <a name=""></a><a name="EditInOffice365">Mallin muokkaaminen Office 365:ssä</a>
 
 Voit muokkaa mallia Office 365:ssä. Esimerkiksi Office Onlinessa voit muuttaa mallin otsikossa olevien kenttä kehotteiden fonttia arvosta **Normaali** arvoon **Lihavoitu**. Nämä muutokset tallentuvat automaattisesti muokattavaan malliin, joka on tallennettu ensisijaisen perusmallin tallennustilaan (oletusarvona on Azuren blob-säilö). Tämä on määritetty ER-kehykselle.
 
 ![Yritystiedostojen hallinnan mallin muokkauseditori](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="EditInOfficeDesktopApp">Mallin muokkaaminen Office-työpöytäsovelluksessa</a>
+### <a name=""></a><a name="EditInOfficeDesktopApp">Mallin muokkaaminen Office-työpöytäsovelluksessa</a>
 
 > [!NOTE]
 > Tämä toiminto on käytettävissä vain, kun **SharePoint -asiakirjatyyppi** -parametri on määritetty oikein. Lisätietoja on kohdassa [Parametrien määrittäminen](#SetupBdmParameters).

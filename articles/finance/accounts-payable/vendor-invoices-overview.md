@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
-ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
+ms.openlocfilehash: 0cfa7d55f5d4d219c0bc43eb6313c0c6bd014ab6
+ms.sourcegitcommit: ac7c457bda3d8545ee8c0de45e4fcc24d677ffdc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2890324"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3133893"
 ---
 # <a name="vendor-invoices-overview"></a>Toimittajan laskujen yleiskatsaus
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Tässä aiheessa on yleistietoja toimittajan laskuista. Toimittajan laskut ovat vastaanotettujen tuotteiden ja palveluiden maksupyyntöjä. Toimittajan laskut voivat koskea juoksevia palveluita tai ne voivat perustua tiettyjen nimikkeiden ja palveluiden ostotilauksiin.
 
@@ -66,6 +67,16 @@ Voit lisätä toimittajan laskuun sellaisen rivin, jota ei ole ostotilauksessa. 
 
 Organisaatiosi saattaa hallita toimittajan laskujen tarkistusprosessia työnkulkujen avulla. Työnkulun tarkistusta voidaan edellyttää laskun ylätunnisteeseen, laskuriviin tai molempiin. Työnkulun ohjausobjekteja käytetään otsikkoon tai riviin sen perusteella, missä kohdistus on, kun valitset ohjausobjektin. **Kirjaa**-painikkeen sijaan näkyvissä on **Lähetä**-painike, jolla voit lähettää toimittajan laskun tarkistusprosessiin.
 
+### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Estetään laskua lähtemästä työnkulkuun 
+
+Seuraavilla tavoilla voi estää laskua lähtemästä työnkulkuun.
+
+- **Laskun kokonaissumma ja rekisteröity kokonaissumma eivät ole samat.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan kokonaissummat eivät ole samat. Tämän jälkeen saldot voidaan korjata ennen laskun lähettämistä työnkulkuun. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskun kokonaissumma ja rekisteröidyn laskun kokonaissumma eivät ole samat** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön. 
+
+- **Lasku sisältää kohdistamattomia kuluja.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan laskulla on kohdistamattomia kuluja. Tämän jälkeen lasku voidaan korjata ennen sen lähettämistä työnkulkuun. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos toimittajan laskussa on kohdistamattomia kuluja** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.
+
+- **Lasku sisältää saman laskunumeron kuin toinen kirjattu lasku.** Laskun lähettänyt henkilö saa hälytyksen, jonka mukaan löytyi lasku, jolla on sama numero. Tämän jälkeen lasku voidaan korjata ennen sen lähettämistä työnkulkuun. Tämä hälytys näytetään, kun Ostoreskontra-parametrin **Tarkista käytetty laskunumero** arvoksi on määritetty **Hylkää kaksoiskappale**. Tämä toiminto on käytettävissä, jos **Estä lähetys työnkulkuun, jos laskunumero on jo olemassa kirjatussa laskussa ja järjestelmää ei ole määritetty hyväksymään laskunumeroiden kaksoiskappaleita** -parametri **Toimintojen hallinta** -sivulla on otettu käyttöön.  
+
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Toimittajan laskujen täsmäytys tuotteen vastaanottoihin
 
 Voit syöttää ja tallentaa toimittajalaskujen tietoja, ja voit täsmäyttää laskurivit tuotteen vastaanottoriveihin. Voit täsmäyttää riville myös osan määristä.
@@ -77,6 +88,16 @@ Kun kirjaat laskun, jokaisen nimikkeen **Laskuttamatta**-määrä päivitetään
 Tässä vaihtoehdossa oletetaan, että vähintään yksi tuotteen vastaanotto on kirjattu ostotilaukseen. Toimittajalasku perustuu näiden tuotteiden vastaanottoihin ja vastaa niiden määriä. Laskun kirjanpitotiedot perustuvat tietoihin, jotka syötettiin laskujen kirjauksen yhteydessä.
 
 Lisätietoja on ohjeaiheessa [Toimittajan laskun kirjaaminen ja täsmäyttäminen vastaanotettuihin määriin](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md)
+
+## <a name="configure-an-automated-task-for-vendor-invoice-workflow-to-post-the-vendor-invoice-using-a-batch-job"></a>Toimittajan laskun työnkulun automaattisen tehtävän määrittäminen toimittajan laskun kirjaamiseksi erätyön avulla
+
+Voit lisätä automaattisen kirjaustehtävän toimittajan laskun työnkulkuun niin, että laskut käsitellään eränä. Kun laskut kirjataan eränä, työnkulkuprosessi jatkaa. Se ei odota, että kirjaaminen on tehty. Tämä parantaa kaikkien työnkulkuun lähetettävien tehtävien yleistä suorituskykyä.
+
+Jos haluat kirjata toimittajan laskun eränä, ota käyttöön **Toimintojen hallinta** -sivulla **Toimittajan laskun erän kirjaus** -parametri. Toimittajan laskun työnkulut määritetään siirtymällä kohtaan **Ostoreskontra > Asetukset > Ostoreskontran työnkulut**.
+
+Voit nähdä **Kirjaa toimittajan lasku erän avulla** -tehtävän työnkulun editorissa siitä huolimatta, onko toiminnon **Toimittajan laskun erän kirjaus** -parametri käytössä vai ei. Kun toiminnon parametria ei ole otettu käyttöön, **Kirjaa toimittajan lasku käyttämällä erätehtävää** -parametrin sisältävää laskua ei käsitellä työnkulussa, jos parametri ei ole käytössä. **Kirjaa toimittajan lasku erän avulla** -tehtävää ei voi käyttää samassa työnkulussa kuin automaattista **Kirjaa toimittajan laskut** -tehtävää. Lisäksi **Kirjaa toimittajan lasku erän avulla** -tehtävän tulisi olla työnkulun kokoonpanon viimeinen elementti.
+
+Voit määrittää erään sisällytettävien laskujen määrän ja odotusajan tunteina. Tämän jälkeen erä ajoitetaan uudelleen siirtymällä kohtaan **Ostoreskontra > Asetukset > Ostoreskontran parametrit > Lasku > Laskun työnkulku**. 
 
 ## <a name="working-with-multiple-invoices"></a>Useita laskujen käsittely
 
