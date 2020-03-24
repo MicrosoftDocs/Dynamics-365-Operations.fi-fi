@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 326d9375670cb4f4990a4f7070bf923a28b2c025
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177575"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106856"
 ---
 # <a name="process-collection-letters"></a>Käsittele maksukehotuksia
 
@@ -70,7 +70,11 @@ Tässä aiheessa käsitellään, miten maksukehotuksia luodaan, tulostetaan ja k
     1. Valitse asetus **Tulostettu**-kentässä.
 
 ## <a name="control-collection-letters-at-the-customer-level"></a>Maksukehotusten hallinta asiakastasolla
-Voit määrittää maksukehotukset myös asiakastasolla, jolloin kunkin tapahtuman maksukehotuskoodia seurataan. Maksukehotuksen käsittely perustuu kuitenkin yhteen asiakkaalle tallennettuun maksukehotetasoon. Yksi maksukehotus sisältää kaikki kyseisen asiakkaan erääntyneet tapahtumat. Koska eräpäivän jälkeistä maksuaikaa seurataan nyt asiakastasolla, seuraavaa maksukehotusta ei lähetetä, ennen kuin tietty määrä päiviä sarjan seuraavan maksukehotuksen eräpäivän jälkeistä maksuaika on kulunut, vaikka tapahtumat erääntyvät sen jälkeen, kun viimeisin maksukehotus on lähetetty. Tämä asetus vähentää kullekin asiakkaalle lähetettävien maksukehotusten määrää. 
+Jos maksukehotukset määritetään tapahtumatasolla, asiakkaalle voidaan luoda useita kehotuksia tapahtuman vanhentumisen perusteella. Jos tapahtuma näkyy eri kehotussarjoissa, erilliset maksukehotukset luodaan jokaiselle asiakkaan eräätyneiden tapahtumien ryhmälle. Tämän vuoksi yksittäinen asiakas saattaa vastaanottaa esimerkiksi yhden maksukehotuksen 60 päivää vanhasta tapahtumasta ja toisen maksukehotuksen tapahtumista, jotka ovat erääntyneet 90 päivää sitten. 
+
+Kukin maksukehotus liittyy myös maksukehotuskoodiin. Maksukehotuskoodi liittyy yksittäisiin tapahtumiin. Sen avulla määritetään, milloin seuraava maksukehotus luodaan kullekin tapahtumalle. Jos tapahtuma on esimerkiksi 30 päivää myöhässä, maksukehotuskoodi määrittää, että seuraava maksukehotuys lähetetään tapahtuman ollessa 60 päivää myöhässä, jos sitä ei makseta ennen tätä. 
+
+Maksukehotukset voidaan määrittää myös asiakastasolla. Tässä tapauksessa voit määrittää maksukehotukset myös asiakastasolla, jolloin kunkin tapahtuman maksukehotuskoodia seurataan. Maksukehotuksen käsittely perustuu kuitenkin yhteen asiakkaalle tallennettuun maksukehotetasoon. Yksi maksukehotus sisältää kaikki kyseisen asiakkaan erääntyneet tapahtumat. Koska eräpäivän jälkeistä maksuaikaa seurataan nyt asiakastasolla, seuraavaa maksukehotusta ei lähetetä, ennen kuin tietty määrä päiviä sarjan seuraavan maksukehotuksen eräpäivän jälkeistä maksuaika on kulunut, vaikka tapahtumat erääntyvät sen jälkeen, kun viimeisin maksukehotus on lähetetty. Tämä asetus auttaa vähentämään kullekin asiakkaalle lähetettävien maksukehotusten määrää.
 
 ### <a name="set-up-the-customer-to-control-collection-letters-at-the-customer-level"></a>Asiakkaan määrittäminen maksukehotusten hallintaan asiakastasolla
 1.  Valitse ensin **Siirtymisruutu > Moduulit > Luotonvalvonta > Asetukset > Myyntireskontran parametrit** ja sitten **Perintä**-välilehti. 

@@ -3,7 +3,7 @@ title: Määritä verkkokauppakanava
 description: Tässä artikkelissa on tietoja verkkokauppakanavista ja niiden määrittämisestä Dynamics 365 Commerceissa.
 author: kfend
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 03/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c427b0eba2120123a47f52029d70896be88b9ec0
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b719e40720b091eec879edf332ab63db710a1ebc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022451"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096891"
 ---
 # <a name="set-up-an-online-store-channel"></a>Määritä verkkokauppakanava
 
@@ -71,3 +71,27 @@ Organisaatiohierarkioita käytetään kaupan kanavien rakenteeseen ja edustamaan
 Luodessaan organisaatiohierarkian sinun on määritettävä sen tarkoitus. Tarkoitus kuvaa, kuinka hierarkiaa käytetään liiketoimintarakenteessa. Voit luoda yhden organisaatiohierarkian myymälän toimintoihin ja käyttää tätä hierarkiaa valikoimiin, täydennykseen ja raportointia varten. 
 
 Vaihtoehtoisesti voit luoda erillisen organisaatiohierarkian jokaista käyttötarkoitusta varten. Voit myös luoda useita hierarkioita samaan tarkoitukseen ja määrittää jokaiselle erillisen kanavan. Jos aiot julkaista tuoteluetteloita verkkokaupassa, sinun on vähintään lisättävä verkkokauppa organisaatiohierarkiaan valikoimia varten. Luettelon tuotteet valitaan tuotevalikoimista, jotka on määritetty verkkokauppaan. Kun luettelo on julkaistu, julkaisuprosessi vertaa verkkokauppaan liitetyn valikoiman voimassaolopäiviä luettelossa oleviin tuotteisiin selvittääkseen, mitkä tuotteet tulisi antaa saataville verkkokaupassa.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Toimialueen nimen määrittäminen](configure-your-domain-name.md)
+
+[Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
+
+[Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
+
+[Liitä verkkosivusto kanavaan](associate-site-online-store.md)
+
+[Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
+
+[URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+
+[B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
+
+[Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten](custom-pages-user-logins.md)
+
+[Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
+
+[Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
+
+[Sijaintiin perustuvan myymälän tunnistuksen käyttöönotto](enable-store-detection.md)

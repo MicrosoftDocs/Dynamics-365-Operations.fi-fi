@@ -1,6 +1,6 @@
 ---
-title: Yleiskatsaus
-description: ''
+title: Yleiskuvaus
+description: Tämä kehittäjän opas sisältää ohjelmointirajapinta- ja mukautetut kentät -viittaukset. Se sisältää myös tietoja integroinnista muihin sovelluksiin.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 995de90aa7c83b5aad35d935fe021706cf48ec4c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: e67882c47ad37805c6f6ce8051fb58363c4bcdcf
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008878"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091988"
 ---
-# <a name="overview"></a>Yleiskatsaus
+# <a name="overview"></a>Yleiskuvaus
 
 Tämä kehittäjän opas sisältää ohjelmointirajapinta- ja mukautetut kentät -viittaukset. Se sisältää myös tietoja integroinnista muihin sovelluksiin.
 
@@ -40,14 +40,14 @@ Tämä kehittäjän opas sisältää ohjelmointirajapinta- ja mukautetut kentät
 - Määritä dataintegrointi
   - [Tietojen integrointiteknologian valitseminen](hr-admin-integration-choose-technology.md)
   - [Common Data Service -integroinnin määritys](hr-admin-integration-common-data-service.md)
-  - [Financeen integroinnin määritys](hr-admin-integration-finance.md)
-  - [Dayforceen integroinnin määritys](hr-admin-integration-dayforce.md)
-  - [Toistuvien tietovientien sovelluksen luomisen](hr-admin-integration-recurring-data-export.md)
-  - Officen integrointi
-    - [Office-integroinnin opetusohjelma](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+  - [Integraation määrittäminen Financen kanssa](hr-admin-integration-finance.md)
+  - [Integraation määrittäminen Dayforcen kanssa](hr-admin-integration-dayforce.md)
+  - [Luo toistuvan tietojen viennin sovellus](hr-admin-integration-recurring-data-export.md)
+  - Luo integraatio Officen kanssa
+    - [Office-integraation opetusohjelma](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Yksikkötietojen päivittäminen Excelissä](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Avaa Excelissä -kokemusten luominen](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Office-integroinnin vianmääritys](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office-integraation vianmääritys](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - Yksikön ohjelmointirajapinnan viite
   - [Todennus](hr-developer-api-authentication.md)

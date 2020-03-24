@@ -1,6 +1,6 @@
 ---
-title: Yleiskatsaus
-description: ''
+title: Yleiskuvaus
+description: Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon määrittämisestä, työntekijöille maksettavien korvausten ja hyötyjen määrittämisestä sekä työntekijöiden hallinnasta.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c489ddaec0363a5a6d68f0464786dfbe1b0e1349
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 7bef82f83de150df69a1a001fa9c07e34270742d
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008874"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091721"
 ---
-# <a name="overview"></a>Yleiskatsaus
+# <a name="overview"></a>Yleiskuvaus
 
 Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon määrittämisestä, työntekijöille maksettavien korvausten ja hyötyjen määrittämisestä sekä työntekijöiden hallinnasta.
 
 ## <a name="set-up-human-resources"></a>Määritä henkilöstöhallinto
 
 [Määritä henkilöstöparametreja](hr-setup-parameters.md)</br>
-[Määritä henkilöstöhallinnon jaettuja parametreja](hr-setup-shared-parameters.md)</br>
+[Määritä jaetut henkilöstöhallinnon parametrit](hr-setup-shared-parameters.md)</br>
 [Määritä henkilöstöhallinnon työnkulut](hr-setup-workflows.md)</br>
-[Ymmärrä päivämäärä- ja kellonaikakentät](hr-setup-date-time-fields.md)</br>
+[Ymmärrä päivämäärä- ja kellonaikakenttiä](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>Organisaation asetusten määrittäminen
 
@@ -50,7 +50,7 @@ Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon 
 [Sähköpostiviestin määrittäminen ja lähettäminen](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json)</br>
 [Päivämäärä- ja aikatiedot sekä aikavyöhykkeet](../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json)</br>
 
-## <a name="manage-personnel"></a>Henkilöstön hallinta
+## <a name="manage-personnel"></a>Henkilökunnan hallinta
 
 [Työvoimasi organisointi](hr-personnel-departments-jobs-positions.md)</br>
 [Työn komponenttien määrittäminen](hr-personnel-jobs.md)</br>
@@ -84,8 +84,8 @@ Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon 
 [Etuuskelpoisuuden käytännöt](hr-benefits-eligibility-policies.md)</br>
 [Etuuskelpoisuusprosessi](hr-benefits-eligibility-process.md)</br>
 [Etuuskelpoisuussääntöjen ja -käytäntöjen määrittäminen](hr-benefits-define-eligibility-rules.md)</br>
-[Työsuhde-etuusohjelman toteuttaminen](hr-benefits-deliver-employee-benefits-program.md)</br>
-[Uusien etuuksien luominen](hr-benefits-create.md)</br>
+[Työsuhde-etuohjelman toteuttaminen](hr-benefits-deliver-employee-benefits-program.md)</br>
+[Uusien etujen luominen](hr-benefits-create.md)</br>
 [Rekisteröi työntekijät etuihin](hr-benefits-enroll-workers.md)</br>
 [Etuuksien päättymispäivien hallinta](hr-benefits-expiration-dates.md)</br>
 [ACA-raporttien luominen](hr-benefits-aca-reports.md)</br>
@@ -95,21 +95,21 @@ Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon 
 [Yleiskuvaus](hr-leave-and-absence-overview.md)</br>
 [Loma- ja poissaoloparametrien määrittäminen](hr-leave-and-absence-parameters.md)</br>
 [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md)</br>
-[Luo lomapyyntötyönkulku](hr-leave-and-absence-workflow.md)</br>
-[Määritä loman ja poissaolon tyypit](hr-leave-and-absence-types.md)</br>
+[Lomapyyntötyönkulun luominen](hr-leave-and-absence-workflow.md)</br>
+[Loma- ja poissaolotyyppien määrittäminen](hr-leave-and-absence-types.md)</br>
 [Loma- ja poissaolosuunnitelman luominen](hr-leave-and-absence-plans.md)</br>
 [Työntekijöiden liittäminen lomasuunnitelmaan](hr-leave-and-absence-enroll.md)</br>
-[Jaksota loma- ja poissaolosuunnitelmia](hr-leave-and-absence-accrue.md)</br>
+[Loma- ja poissaolosuunnitelmien jaksottaminen](hr-leave-and-absence-accrue.md)</br>
 [Loma- ja poissaoloanalyysien tarkasteleminen](hr-leave-and-absence-analytics.md)</br>
-[Virkavapaan ja poissaolopyyntöjen hallinta](hr-employee-self-service-manage-requests.md)</br>
-[Pyydä poissaoloaikaa](hr-employee-self-service-request-time-off.md)</br>
+[Loma- ja poissaolopyyntöjen hallinta](hr-employee-self-service-manage-requests.md)</br>
+[Pyydä vapaata](hr-employee-self-service-request-time-off.md)</br>
 [Ryhmä- ja yrityskalenterien tarkasteleminen](hr-employee-self-service-calendar.md)</br>
 
-## <a name="develop-employees"></a>Kehitä työntekijöitä
+## <a name="develop-employees"></a>Työntekijöiden kehittäminen
 
 [Suorituksen hallinnan yleiskatsaus](hr-develop-performance-management-overview.md)</br>
-[Työntekijöiden osaamisalueiden tasaaminen](hr-develop-skills.md)</br>
-[Lisää suorituskyky kirjauskansioon](hr-develop-add-performance-journal.md)</br>
+[Työntekijöiden osaamisalueiden kohdentaminen](hr-develop-skills.md)</br>
+[Lisää suorituskyvyn kirjauskansioon](hr-develop-add-performance-journal.md)</br>
 [Tavoitteen luominen](hr-develop-create-goal.md)</br>
 [Suorituskykyarvion luominen](hr-develop-create-performance-review.md)</br>
 
@@ -123,8 +123,8 @@ Dynamics 365 Human Resources -käyttöoppaassa on ohjeita henkilöstöhallinnon 
 [Näytä kyselylomakkeen tulokset](hr-learning-evaluate-questionnaire-results.md)</br>
 [Kyselylomakkeen tulosten analysointi](hr-learning-analyze-questionnaire-results.md)</br>
 [Avoimen kysymyksen luominen](hr-learning-create-open-ended-question.md)</br>
-[Monivalintakysymyksen luominen](hr-learning-create-closed-ended-question.md)</br>
-[Luo riippuvainen kysymys](hr-learning-depending-question.md)</br>
+[Suljetun kysymyksen luominen](hr-learning-create-closed-ended-question.md)</br>
+[Riippuvaisen kysymyksen luominen](hr-learning-depending-question.md)</br>
 
 
 

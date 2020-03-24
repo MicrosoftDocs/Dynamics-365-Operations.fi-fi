@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
+ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004016"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095614"
 ---
 # <a name="product-identifiers"></a>Tuotetunnukset 
 
@@ -43,9 +43,6 @@ Tuotenumeroa ei usein ole luotu alun perin Dynamics 365 Supply Chain Management 
 Kiinnitä erityistä huomiota tuotenumeroihin Supply Chain Managementin käyttöönoton yhteydessä. Hyvä numerointijärjestelmä parantaa logistiikkaprosesseja ja auttaa estämään virheitä. Hyvässä tuotetunnuksessa on enintään 15 merkkiä. Merkkejä tulisi olla alle 10 ja luokittelevia merkkejä enintään viisi. Voit käyttää hakunimiä, mikä sallii pikahakujen käytön. Haun nimi on lisänimi, joka edustaa tuotteen luokituksia.
 
 Kun käytät Common Data Servicea, Supply Chain Managementissa oleva tuotenumero on tuotenumero myös Common Data Servicessa. Tuotevariantit synkronoidaan Common Data Servicen kanssa erillisinä tuotteina.
-
-> [!NOTE]
-> Tuotenumero ei voi alkaa merkillä %.
 
 ## <a name="item-number-and-product-dimensions"></a>Nimikenumero ja tuotedimensiot
 

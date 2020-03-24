@@ -3,7 +3,7 @@ title: Project Service Automationin integrointiparametrit
 description: Tässä ohjeaiheessa kerrotaan, miten oletustiedot kirjataan, kun integroit Microsoft Dynamics 365 for Project Service Automationin Microsoft Dynamics 365 Financen kanssa.
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,20 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: f7cef5384812e0dcb7d5e084ddd7668a7687a259
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cd09dad15112fd71bfd386e0072a77a4121c96e0
+ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174843"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096248"
 ---
 # <a name="project-service-automation-integration-parameters"></a>Project Service Automation -integrointiparametrit
 
 [!include[banner](../includes/banner.md)]
 
 Voit määrittää **Project Service Automation -integrointiparametrit** -sivulla, miten oletustiedot lisätään, kun integroit Dynamics 365 Project Service Automationin Dynamics 365 Financein kanssa. Sinun on määritettävä seuraavat kentät, jotta projektit voidaan synkronoida onnistuneesti Project Service Automationista Financeen:
+
+Voit avata **Project Service Automation -integrointiparametrit** -sivun siirtymällä **Projektinhallinta ja kirjanpito** \> **Asetukset** \> **Dynamics 365 for Project Service Automation -integrointiparametrit**. 
 
 > [!NOTE]
 > - Projektitehtävän integrointi, kulutapahtumaluokat, tuntiarviot, kuluarviot ja toiminnon lukitseminen ovat käytettävissä versiossa 8.0.
