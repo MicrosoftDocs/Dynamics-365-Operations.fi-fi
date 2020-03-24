@@ -1,6 +1,6 @@
 ---
 title: MyLeaveRequests – yleiskatsaus
-description: ''
+description: Microsoft Dynamics 365 Human Resourcesin MyLeaveRequests-yksikkö sisältää luettelon lomapyynnöistä, jotka on rajattu (rajoitettu)-järjestelmään, jonka avulla käyttäjä voi tehdä kyselyitä entiteetistä.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,49 +18,49 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66f161d6736b1bb544d02871d9d51b2949b1cfa0
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 4bf3b298af9eb39e03514a4005afb43a42908e47
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008879"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092034"
 ---
-# <a name="myleaverequests-overview"></a><span data-ttu-id="45e64-102">MyLeaveRequests – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="45e64-102">MyLeaveRequests overview</span></span>
+# <a name="myleaverequests-overview"></a><span data-ttu-id="462e4-103">MyLeaveRequests – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="462e4-103">MyLeaveRequests overview</span></span>
 
-<span data-ttu-id="45e64-103">Microsoft Dynamics 365 Human Resourcesin MyLeaveRequests-yksikkö sisältää luettelon lomapyynnöistä, jotka on rajattu (rajoitettu)-järjestelmään, jonka avulla käyttäjä voi tehdä kyselyitä entiteetistä.</span><span class="sxs-lookup"><span data-stu-id="45e64-103">The MyLeaveRequests entity in Microsoft Dynamics 365 Human Resources provides the list of Leave Requests in the system, scoped (limited) to the requests accessible to the current user querying the entity.</span></span>
+<span data-ttu-id="462e4-104">Microsoft Dynamics 365 Human Resourcesin MyLeaveRequests-yksikkö sisältää luettelon lomapyynnöistä, jotka on rajattu (rajoitettu)-järjestelmään, jonka avulla käyttäjä voi tehdä kyselyitä entiteetistä.</span><span class="sxs-lookup"><span data-stu-id="462e4-104">The MyLeaveRequests entity in Microsoft Dynamics 365 Human Resources provides the list of Leave Requests in the system, scoped (limited) to the requests accessible to the current user querying the entity.</span></span>
 
-## <a name="key"></a><span data-ttu-id="45e64-104">Avain</span><span class="sxs-lookup"><span data-stu-id="45e64-104">Key</span></span>
+## <a name="key"></a><span data-ttu-id="462e4-105">Avain</span><span class="sxs-lookup"><span data-stu-id="462e4-105">Key</span></span>
 
-  | <span data-ttu-id="45e64-105">Ominaisuuden nimi</span><span class="sxs-lookup"><span data-stu-id="45e64-105">Property Name</span></span> | <span data-ttu-id="45e64-106">Tietotyyppi</span><span class="sxs-lookup"><span data-stu-id="45e64-106">Data Type</span></span> |
+  | <span data-ttu-id="462e4-106">Ominaisuuden nimi</span><span class="sxs-lookup"><span data-stu-id="462e4-106">Property Name</span></span> | <span data-ttu-id="462e4-107">Tietotyyppi</span><span class="sxs-lookup"><span data-stu-id="462e4-107">Data Type</span></span> |
   |---------------|-----------|
-  | <span data-ttu-id="45e64-107">dataAreaId</span><span class="sxs-lookup"><span data-stu-id="45e64-107">dataAreaId</span></span>    | <span data-ttu-id="45e64-108">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="45e64-108">String</span></span>    |
-  | <span data-ttu-id="45e64-109">RequestId</span><span class="sxs-lookup"><span data-stu-id="45e64-109">RequestId</span></span>     | <span data-ttu-id="45e64-110">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="45e64-110">String</span></span>    |
-  | <span data-ttu-id="45e64-111">LeaveType</span><span class="sxs-lookup"><span data-stu-id="45e64-111">LeaveType</span></span>     | <span data-ttu-id="45e64-112">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="45e64-112">String</span></span>    |
-  | <span data-ttu-id="45e64-113">LeaveDate</span><span class="sxs-lookup"><span data-stu-id="45e64-113">LeaveDate</span></span>     | <span data-ttu-id="45e64-114">Päivämäärä</span><span class="sxs-lookup"><span data-stu-id="45e64-114">Date</span></span>      |
+  | <span data-ttu-id="462e4-108">dataAreaId</span><span class="sxs-lookup"><span data-stu-id="462e4-108">dataAreaId</span></span>    | <span data-ttu-id="462e4-109">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="462e4-109">String</span></span>    |
+  | <span data-ttu-id="462e4-110">RequestId</span><span class="sxs-lookup"><span data-stu-id="462e4-110">RequestId</span></span>     | <span data-ttu-id="462e4-111">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="462e4-111">String</span></span>    |
+  | <span data-ttu-id="462e4-112">LeaveType</span><span class="sxs-lookup"><span data-stu-id="462e4-112">LeaveType</span></span>     | <span data-ttu-id="462e4-113">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="462e4-113">String</span></span>    |
+  | <span data-ttu-id="462e4-114">LeaveDate</span><span class="sxs-lookup"><span data-stu-id="462e4-114">LeaveDate</span></span>     | <span data-ttu-id="462e4-115">Päivämäärä</span><span class="sxs-lookup"><span data-stu-id="462e4-115">Date</span></span>      |
   
-## <a name="properties"></a><span data-ttu-id="45e64-115">Ominaisuudet</span><span class="sxs-lookup"><span data-stu-id="45e64-115">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="462e4-116">Ominaisuudet</span><span class="sxs-lookup"><span data-stu-id="462e4-116">Properties</span></span>
 
-  | <span data-ttu-id="45e64-116">Ominaisuuden nimi</span><span class="sxs-lookup"><span data-stu-id="45e64-116">Property Name</span></span>     | <span data-ttu-id="45e64-117">Tietotyyppi</span><span class="sxs-lookup"><span data-stu-id="45e64-117">Data Type</span></span> | <span data-ttu-id="45e64-118">Tarvitaan</span><span class="sxs-lookup"><span data-stu-id="45e64-118">Required</span></span> |
+  | <span data-ttu-id="462e4-117">Ominaisuuden nimi</span><span class="sxs-lookup"><span data-stu-id="462e4-117">Property Name</span></span>     | <span data-ttu-id="462e4-118">Tietotyyppi</span><span class="sxs-lookup"><span data-stu-id="462e4-118">Data Type</span></span> | <span data-ttu-id="462e4-119">Tarvitaan</span><span class="sxs-lookup"><span data-stu-id="462e4-119">Required</span></span> |
   |-------------------|-----------|----------|
-  | <span data-ttu-id="45e64-119">dataAreaId</span><span class="sxs-lookup"><span data-stu-id="45e64-119">dataAreaId</span></span>        | <span data-ttu-id="45e64-120">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="45e64-120">String</span></span>    | <span data-ttu-id="45e64-121">X</span><span class="sxs-lookup"><span data-stu-id="45e64-121">X</span></span>        |
-  | <span data-ttu-id="45e64-122">RequestId</span><span class="sxs-lookup"><span data-stu-id="45e64-122">RequestId</span></span>         | <span data-ttu-id="45e64-123">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="45e64-123">String</span></span>    | <span data-ttu-id="45e64-124">X</span><span class="sxs-lookup"><span data-stu-id="45e64-124">X</span></span>        |
-  | <span data-ttu-id="45e64-125">LeaveType</span><span class="sxs-lookup"><span data-stu-id="45e64-125">LeaveType</span></span>         | <span data-ttu-id="45e64-126">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="45e64-126">String</span></span>    | <span data-ttu-id="45e64-127">X</span><span class="sxs-lookup"><span data-stu-id="45e64-127">X</span></span>        |
-  | <span data-ttu-id="45e64-128">LeaveDate</span><span class="sxs-lookup"><span data-stu-id="45e64-128">LeaveDate</span></span>         | <span data-ttu-id="45e64-129">Päivämäärä</span><span class="sxs-lookup"><span data-stu-id="45e64-129">Date</span></span>      | <span data-ttu-id="45e64-130">X</span><span class="sxs-lookup"><span data-stu-id="45e64-130">X</span></span>        |
-  | <span data-ttu-id="45e64-131">ReasonCodeId</span><span class="sxs-lookup"><span data-stu-id="45e64-131">ReasonCodeId</span></span>      | <span data-ttu-id="45e64-132">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="45e64-132">String</span></span>    |          |
-  | <span data-ttu-id="45e64-133">PersonnelNumber</span><span class="sxs-lookup"><span data-stu-id="45e64-133">PersonnelNumber</span></span>   | <span data-ttu-id="45e64-134">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="45e64-134">String</span></span>    | <span data-ttu-id="45e64-135">X</span><span class="sxs-lookup"><span data-stu-id="45e64-135">X</span></span>        |
-  | <span data-ttu-id="45e64-136">RequestDate</span><span class="sxs-lookup"><span data-stu-id="45e64-136">RequestDate</span></span>       | <span data-ttu-id="45e64-137">Päivämäärä</span><span class="sxs-lookup"><span data-stu-id="45e64-137">Date</span></span>      | <span data-ttu-id="45e64-138">X</span><span class="sxs-lookup"><span data-stu-id="45e64-138">X</span></span>        |
-  | <span data-ttu-id="45e64-139">Kommentti</span><span class="sxs-lookup"><span data-stu-id="45e64-139">Comment</span></span>           | <span data-ttu-id="45e64-140">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="45e64-140">String</span></span>    |          |
-  | <span data-ttu-id="45e64-141">Tila</span><span class="sxs-lookup"><span data-stu-id="45e64-141">Status</span></span>            | <span data-ttu-id="45e64-142">Valintalista</span><span class="sxs-lookup"><span data-stu-id="45e64-142">Enum</span></span>      | <span data-ttu-id="45e64-143">X</span><span class="sxs-lookup"><span data-stu-id="45e64-143">X</span></span>        |
-  | <span data-ttu-id="45e64-144">Määrä</span><span class="sxs-lookup"><span data-stu-id="45e64-144">Amount</span></span>            | <span data-ttu-id="45e64-145">Reaaliluku</span><span class="sxs-lookup"><span data-stu-id="45e64-145">Real</span></span>      |          |
-  | <span data-ttu-id="45e64-146">HalfDayDefinition</span><span class="sxs-lookup"><span data-stu-id="45e64-146">HalfDayDefinition</span></span> | <span data-ttu-id="45e64-147">Valintalista</span><span class="sxs-lookup"><span data-stu-id="45e64-147">Enum</span></span>      |          |
+  | <span data-ttu-id="462e4-120">dataAreaId</span><span class="sxs-lookup"><span data-stu-id="462e4-120">dataAreaId</span></span>        | <span data-ttu-id="462e4-121">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="462e4-121">String</span></span>    | <span data-ttu-id="462e4-122">X</span><span class="sxs-lookup"><span data-stu-id="462e4-122">X</span></span>        |
+  | <span data-ttu-id="462e4-123">RequestId</span><span class="sxs-lookup"><span data-stu-id="462e4-123">RequestId</span></span>         | <span data-ttu-id="462e4-124">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="462e4-124">String</span></span>    | <span data-ttu-id="462e4-125">X</span><span class="sxs-lookup"><span data-stu-id="462e4-125">X</span></span>        |
+  | <span data-ttu-id="462e4-126">LeaveType</span><span class="sxs-lookup"><span data-stu-id="462e4-126">LeaveType</span></span>         | <span data-ttu-id="462e4-127">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="462e4-127">String</span></span>    | <span data-ttu-id="462e4-128">X</span><span class="sxs-lookup"><span data-stu-id="462e4-128">X</span></span>        |
+  | <span data-ttu-id="462e4-129">LeaveDate</span><span class="sxs-lookup"><span data-stu-id="462e4-129">LeaveDate</span></span>         | <span data-ttu-id="462e4-130">Päivämäärä</span><span class="sxs-lookup"><span data-stu-id="462e4-130">Date</span></span>      | <span data-ttu-id="462e4-131">X</span><span class="sxs-lookup"><span data-stu-id="462e4-131">X</span></span>        |
+  | <span data-ttu-id="462e4-132">ReasonCodeId</span><span class="sxs-lookup"><span data-stu-id="462e4-132">ReasonCodeId</span></span>      | <span data-ttu-id="462e4-133">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="462e4-133">String</span></span>    |          |
+  | <span data-ttu-id="462e4-134">PersonnelNumber</span><span class="sxs-lookup"><span data-stu-id="462e4-134">PersonnelNumber</span></span>   | <span data-ttu-id="462e4-135">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="462e4-135">String</span></span>    | <span data-ttu-id="462e4-136">X</span><span class="sxs-lookup"><span data-stu-id="462e4-136">X</span></span>        |
+  | <span data-ttu-id="462e4-137">RequestDate</span><span class="sxs-lookup"><span data-stu-id="462e4-137">RequestDate</span></span>       | <span data-ttu-id="462e4-138">Päivämäärä</span><span class="sxs-lookup"><span data-stu-id="462e4-138">Date</span></span>      | <span data-ttu-id="462e4-139">X</span><span class="sxs-lookup"><span data-stu-id="462e4-139">X</span></span>        |
+  | <span data-ttu-id="462e4-140">Kommentti</span><span class="sxs-lookup"><span data-stu-id="462e4-140">Comment</span></span>           | <span data-ttu-id="462e4-141">Merkkijono</span><span class="sxs-lookup"><span data-stu-id="462e4-141">String</span></span>    |          |
+  | <span data-ttu-id="462e4-142">Tila</span><span class="sxs-lookup"><span data-stu-id="462e4-142">Status</span></span>            | <span data-ttu-id="462e4-143">Valintalista</span><span class="sxs-lookup"><span data-stu-id="462e4-143">Enum</span></span>      | <span data-ttu-id="462e4-144">X</span><span class="sxs-lookup"><span data-stu-id="462e4-144">X</span></span>        |
+  | <span data-ttu-id="462e4-145">Määrä</span><span class="sxs-lookup"><span data-stu-id="462e4-145">Amount</span></span>            | <span data-ttu-id="462e4-146">Reaaliluku</span><span class="sxs-lookup"><span data-stu-id="462e4-146">Real</span></span>      |          |
+  | <span data-ttu-id="462e4-147">HalfDayDefinition</span><span class="sxs-lookup"><span data-stu-id="462e4-147">HalfDayDefinition</span></span> | <span data-ttu-id="462e4-148">Valintalista</span><span class="sxs-lookup"><span data-stu-id="462e4-148">Enum</span></span>      |          |
 
-## <a name="actions"></a><span data-ttu-id="45e64-148">Toimenpiteet</span><span class="sxs-lookup"><span data-stu-id="45e64-148">Actions</span></span>
+## <a name="actions"></a><span data-ttu-id="462e4-149">Toimenpiteet</span><span class="sxs-lookup"><span data-stu-id="462e4-149">Actions</span></span>
 
- | <span data-ttu-id="45e64-149">Toiminnon nimi</span><span class="sxs-lookup"><span data-stu-id="45e64-149">Action Name</span></span>                               | <span data-ttu-id="45e64-150">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="45e64-150">Description</span></span>                                     |
+ | <span data-ttu-id="462e4-150">Toiminnon nimi</span><span class="sxs-lookup"><span data-stu-id="462e4-150">Action Name</span></span>                               | <span data-ttu-id="462e4-151">Kuvaus</span><span class="sxs-lookup"><span data-stu-id="462e4-151">Description</span></span>                                     |
  |-------------------------------------------|-------------------------------------------------|
- | [<span data-ttu-id="45e64-151">lähetä</span><span class="sxs-lookup"><span data-stu-id="45e64-151">submit</span></span>](hr-developer-api-myleaverequests-submit.md)   | <span data-ttu-id="45e64-152">Lähetä pyyntö, jota työnkulku käsittelee.</span><span class="sxs-lookup"><span data-stu-id="45e64-152">Submit the request to be processed by workflow.</span></span> |
+ | [<span data-ttu-id="462e4-152">lähetä</span><span class="sxs-lookup"><span data-stu-id="462e4-152">submit</span></span>](hr-developer-api-myleaverequests-submit.md)   | <span data-ttu-id="462e4-153">Lähetä pyyntö, jota työnkulku käsittelee.</span><span class="sxs-lookup"><span data-stu-id="462e4-153">Submit the request to be processed by workflow.</span></span> |
 
-## <a name="see-also"></a><span data-ttu-id="45e64-153">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="45e64-153">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="462e4-154">Lisätietoja</span><span class="sxs-lookup"><span data-stu-id="462e4-154">See also</span></span>
 
-- [<span data-ttu-id="45e64-154">Lähetä lomapyyntö työnkulkuun</span><span class="sxs-lookup"><span data-stu-id="45e64-154">Submit a leave request to workflow</span></span>](hr-developer-api-myleaverequests-submit.md)
-- [<span data-ttu-id="45e64-155">Todennus</span><span class="sxs-lookup"><span data-stu-id="45e64-155">Authentication</span></span>](hr-developer-api-authentication.md)
+- [<span data-ttu-id="462e4-155">Lähetä lomapyyntö työnkulkuun</span><span class="sxs-lookup"><span data-stu-id="462e4-155">Submit a leave request to workflow</span></span>](hr-developer-api-myleaverequests-submit.md)
+- [<span data-ttu-id="462e4-156">Todennus</span><span class="sxs-lookup"><span data-stu-id="462e4-156">Authentication</span></span>](hr-developer-api-authentication.md)
