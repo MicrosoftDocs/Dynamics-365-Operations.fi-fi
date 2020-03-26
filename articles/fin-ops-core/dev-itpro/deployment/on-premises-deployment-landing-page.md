@@ -3,7 +3,7 @@ title: Paikallisen käyttöönoton aloitussivu – yleiskatsaus
 description: Tässä ohjeaiheessa on tietoja paikallisia käyttöönottoja koskevasta sisällöstä sekä linkkejä tähän sisältöön.
 author: sericks007
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
-ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
+ms.openlocfilehash: b251125323bb74eb8be4172cb1b143c4866a8eac
+ms.sourcegitcommit: ec4df51e17be0b2df393635605ea17250c991ee9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3090586"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "3099727"
 ---
 # <a name="on-premises-deployment-home-page"></a>Paikallisen käyttöönoton aloitussivu
 
@@ -55,8 +55,9 @@ Voit ottaa käyttöön sovellukset Dynamics 365 Finance + Operations (paikalline
 - [Asiakasohjelman Internet-yhteys](../user-interface/client-disconnected.md)
 - [Päivitysten käyttöönotto paikallisissa ympäristöissä](apply-updates-on-premises.md)
 - [Käyttöönotto uudelleen paikallisissa ympäristöissä](redeploy-on-prem.md)
+- [Saman AD FS -esiintymän käyttäminen useissa ympäristöissä](onprem-reuseadfs.md)
 
-## <a name="commerce"></a>Commerce
+## <a name="commerce"></a>Kaupankäynti
 - [Commerce-ominaisuudet, jotka ovat käytettävissä paikallisissa käyttöönotoissa](../../../retail/retail-onprem.md)
 - [Vähittäismyyntikanavan komponenttien asennusohjeet paikallisessa ympäristössä](deploy-retail-onprem.md)
 - [Modern POS:n (MPOS) määrittäminen, asettaminen ja aktivoiminen](../../../retail/retail-modern-pos-device-activation.md)

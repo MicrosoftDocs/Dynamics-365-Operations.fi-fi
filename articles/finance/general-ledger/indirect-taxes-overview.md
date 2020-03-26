@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16a67ef625fdde0755e96c959be1fb2989ca53b6
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e827ede0508d07b6800ecdc4cc99cb2b6a0bcc78
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770663"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124494"
 ---
 # <a name="sales-tax-overview"></a>Arvonlisäveron yleiskatsaus
 
@@ -46,7 +46,7 @@ Jokainen arvonlisäverokoodi on linkitettävä arvolisäveron tilityskauteen. Ar
 
 Jokainen arvonlisäverokoodi on linkitettävä myös kirjanpidon kirjausryhmään. Kirjanpidon kirjausryhmä määrittää päätilin, johon arvonlisäverokoodien summat kirjataan. 
 
-Lisäksi voidaan määrittää valinnaisia arvonlisäveroilmoituksen koodeja. Ne voidaan määrittää arvonlisäverokoodille, jotka on laskettu erilaisten summatyyppien arvonlisäverokoodeille. **Arvonlisäveromaksu koodeittain** -rapotti sisältää annetun arvolisäveron tilityskauden ja välin arvonlisäveroilmoituksen koodikohtaiset kokonaissummat 
+Lisäksi voidaan määrittää valinnaisia arvonlisäveroilmoituksen koodeja. Ne voidaan määrittää arvonlisäverokoodille, jotka on laskettu erilaisten summatyyppien arvonlisäverokoodeille. **Arvonlisäveromaksu koodeittain** -rapotti sisältää annetun arvolisäveron tilityskauden ja välin arvonlisäveroilmoituksen koodikohtaiset kokonaissummat. 
 
 Jokaisella tapahtumalla, jolle on laskettava arvonlisävero ja joka on kirjattava, on oltava arvonlisäveroryhmä ja nimikkeen arvonlisäveroryhmä. Arvonlisäveroryhmät liittyvät tapahtuman osapuoleen (kuten asiakkaaseen tai toimittajaan, kun taas nimikkeen arvonlisäveroryhmät liittyvät tapahtuman resurssiin (kuten nimikkeeseen tai hankintaluokkaan). Veroryhmät sisältävät verokoodiluettelon. Tapahtumassa käytetään verokoodeja, joka sisältyvät sekä tapahtuman arvonlisäveroryhmään että nimikkeen arvonlisäveroryhmään. 
 

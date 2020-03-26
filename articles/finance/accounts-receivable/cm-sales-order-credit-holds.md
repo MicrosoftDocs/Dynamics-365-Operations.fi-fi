@@ -1,6 +1,6 @@
 ---
-title: Myyntitilausten luottorajapidot
-description: ''
+title: Myyntitilausten luottojen pidot
+description: Tässä ohjeaiheessa käsitellään niiden sääntöjen määrittämistä, joilla myyntitilaus asetetaan luottorajapitoon.
 author: mikefalkner
 manager: AnnBe
 ms.date: 01/25/2019
@@ -9,25 +9,23 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschloma
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 8a0e006be8a72f35d6c6009ca9d67d083b8fac89
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057667"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124251"
 ---
-# <a name="credit-holds-for-sales-orders"></a>Myyntitilausten luottorajapidot
+# <a name="credit-holds-for-sales-orders"></a>Myyntitilausten luottojen pidot
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-
-Tässä ohjeaiheessa käsitellään niiden sääntöjen määrittämistä, joilla myyntitilaus asetetaan luottorajapitoon. Luotonhallinnan estosäännöt voidaan ottaa käyttöön yhden asiakkaan tai asiakasryhmän osalta.  Estosäännöt määrittävät, mihin seuraaviin tilanteisiin vastataan.
+Tässä ohjeaiheessa käsitellään niiden sääntöjen määrittämistä, joilla myyntitilaus asetetaan luottorajapitoon. Luotonhallinnan estosäännöt voidaan ottaa käyttöön yhden asiakkaan tai asiakasryhmän osalta. Estosäännöt määrittävät, mihin seuraaviin tilanteisiin vastataan.
 
 1. Erääntyneiden päivien lukumäärä
 2. Tilien tila
@@ -87,9 +85,9 @@ Avaa **Luottoraja vanhentunut** -välilehti, jos estosääntö koskee asiakkaita
    - Valitse **Kaikki**, jos sääntö koskee kaikkia asiakkaita. 
 3. Valitse **Riskiryhmä**, jos haluat rajoittaa entisestään luetteloa asiakkaista, jotka asetetaan luotonhallinnan pitoon. 
 4. Valitse määritettävän säännön tyyppi. 
-  - Luo tilauksen estävän sääntö valitsemalla **Esto**. 
-  - Valitsemalla **Poikkeus** luodaan sääntö, joka ohittaa toisen säännön tilauksen estossa. 
-6. Anna valitun estosäännön **Luottoraja vanhentunut päiviä** -arvo, jonka jälkeen tilaus asetetaan luotonhallinnan pitoon. Erääntyneiden päivien lukumäärä ilmaisee päivinä ylimääräisen eräpäivän jälkeisen maksuajan, joka lisätään päivinä luottorajan vanhentumiseen.
+   - Luo tilauksen estävän sääntö valitsemalla **Esto**. 
+   - Valitsemalla **Poikkeus** luodaan sääntö, joka ohittaa toisen säännön tilauksen estossa. 
+5. Anna valitun estosäännön **Luottoraja vanhentunut päiviä** -arvo, jonka jälkeen tilaus asetetaan luotonhallinnan pitoon. Erääntyneiden päivien lukumäärä ilmaisee päivinä ylimääräisen eräpäivän jälkeisen maksuajan, joka lisätään päivinä luottorajan vanhentumiseen.
 
 ### <a name="overdue-amount"></a>Erääntynyt summa
 
@@ -104,11 +102,10 @@ Avaa **Erääntynyt summa** -välilehti, jos estosääntö koskee asiakkaita, jo
    - Valitse **Kaikki**, jos sääntö koskee kaikkia asiakkaita. 
 3. Valitse **Riskiryhmä**, jos haluat rajoittaa entisestään luetteloa asiakkaista, jotka asetetaan luotonhallinnan pitoon. 
 4. Valitse määritettävän säännön tyyppi. 
-  - Luo tilauksen estävän sääntö valitsemalla **Esto**. 
-  - Valitsemalla **Poikkeus** luodaan sääntö, joka ohittaa toisen säännön tilauksen estossa. 
+   - Luo tilauksen estävän sääntö valitsemalla **Esto**. 
+   - Valitsemalla **Poikkeus** luodaan sääntö, joka ohittaa toisen säännön tilauksen estossa. 
 5. Anna valitun estosäännön **Erääntynyt summa** -arvo, jonka jälkeen tilaus asetetaan luotonhallinnan pitoon arviointia varten. 
-6. Valitse **Arvotyyppi**, jonka määrittämää arvon tyyppiä käytetään myös testaamaan sitä, kuinka paljon luottorajasta on käytetty. Prosenttiosuus on oltava estosäännöissä, mutta poisjätössä voi olla kiinteä summa tai prosenttiosuus
-. Raja liittyy luottorajaan.
+6. Valitse **Arvotyyppi**, jonka määrittämää arvon tyyppiä käytetään myös testaamaan sitä, kuinka paljon luottorajasta on käytetty. Prosenttiosuus on oltava estosäännöissä, mutta poisjätössä voi olla kiinteä summa tai prosenttiosuus Raja liittyy luottorajaan.
 7. Anna valitun säännön **Luottorajan raja-arvo**, jonka jälkeen asiakas asetetaan luotonhallinnan pitoon. Arvo voi olla summa tai prosenttiosuus sen mukaan, mikä arvotyyppi on valittu.
 8. Sääntö tarkistaa, että **Erääntynyt summa** ja **Luottorajan raja-arvo** on ylitetty. 
 
@@ -125,9 +122,9 @@ Valitse **Myyntitilaus**, jos estosääntö koskee myyntitilauksen arvoa.
    - Valitse **Kaikki**, jos sääntö koskee kaikkia asiakkaita. 
 3. Valitse **Riskiryhmä**, jos haluat rajoittaa entisestään luetteloa asiakkaista, jotka asetetaan luotonhallinnan pitoon. 
 4. Valitse määritettävän säännön tyyppi.  
-  - Luo tilauksen estävän sääntö valitsemalla **Esto**. 
-  - Valitsemalla **Poikkeus** luodaan sääntö, joka ohittaa toisen säännön tilauksen estossa. 
-6. Anna valitun estosäännön **Myyntitilauksen summa** -arvo, jonka jälkeen tilaus asetetaan luotonhallinnan pitoon. 
+   - Luo tilauksen estävän sääntö valitsemalla **Esto**. 
+   - Valitsemalla **Poikkeus** luodaan sääntö, joka ohittaa toisen säännön tilauksen estossa. 
+5. Anna valitun estosäännön **Myyntitilauksen summa** -arvo, jonka jälkeen tilaus asetetaan luotonhallinnan pitoon. 
 
 Myyntitilaussääntö sisältää kaikki muut säännöt ohittavan lisäasetuksen. Voit luoda poikkeuksen, joka vapauttaa myyntitilauksen ottamatta huomioon mitään muita sääntöjä, valitsemalla **Vapauta myyntitilaus** -valintaruudun poikkeusrivillä.
 
@@ -216,8 +213,8 @@ Kun olet tutustunut pidon syihin ja selvittänyt ne, voit vapauttaa myyntitilauk
 2) Valitse vapautettavaksi valitulle tilaukselle **Vapautuksen syy**.  
 3) Anna kullekin vapautettavaksi valitulle tilaukselle **Tarkistuspäivä**.  
 4) Vapauta tilaus valitsemalla toimintoruudussa **Vapauta**-valikko. Tämä valikko on käytettävissä vasta, kun tapahtumat on valittu. Käyttäjällä on kaksi vaihtoehtoa:
- - Valitse **Kirjataan**, jos haluat poistaa pidon ja kirjat asiakirjan samalla kirjausprosessilla, jota käytettiin, kun asiakirja asetettiin pitoon. Jos esimerkiksi myyntitilauksen vahvistus asetettiin pitoon, myyntitilauksen vahvistus valmistuisi vapautuksen jälkeen. Myyntitilauksen kirjauslomake avautuu, ja käyttäjä voi kirjata vahvistuksen.
- - Valitse **Kirjaamatta**, jos haluat poistaa pidon tekemättä ilman muita toimenpiteitä. Myyntitilaus voidaan kirjata manuaalisesti.
+   - Valitse **Kirjataan**, jos haluat poistaa pidon ja kirjat asiakirjan samalla kirjausprosessilla, jota käytettiin, kun asiakirja asetettiin pitoon. Jos esimerkiksi myyntitilauksen vahvistus asetettiin pitoon, myyntitilauksen vahvistus valmistuisi vapautuksen jälkeen. Myyntitilauksen kirjauslomake avautuu, ja käyttäjä voi kirjata vahvistuksen.
+   - Valitse **Kirjaamatta**, jos haluat poistaa pidon tekemättä ilman muita toimenpiteitä. Myyntitilaus voidaan kirjata manuaalisesti.
 
 ### <a name="rejecting-orders-in-the-hold-list"></a>Pitoluettelossa olevien tilausten hylkääminen
 Voit hylätä myyntitilauksen käyttämällä toimintoruudun **Hylkää**-valikkoa.

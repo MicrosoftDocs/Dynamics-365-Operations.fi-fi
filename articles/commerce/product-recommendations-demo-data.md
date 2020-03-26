@@ -1,9 +1,9 @@
 ---
-title: Tuotesuositusten luonti esittelytietojen avulla
+title: Suositusten luominen esittelytietojen avulla
 description: Tämän asiakirja antaa ohjeita monikanavan tuotesuositusten käyttämiseen tason 1 yhden ruudun ympäristöissä käyttämällä valmiiksi täytettyjä ja mukautettavia esittelytietoja.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,14 +19,17 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1456feb0665b6ec79a36a3704f17da80ffd759a0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 2e790d78b4d5216822ffda3a3895feb674876bd8
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042777"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127833"
 ---
-# <a name="get-product-recommendations-using-demo-data"></a>Tuotesuositusten luonti esittelytietojen avulla
+# <a name="create-recommendations-with-demo-data"></a>Suositusten luominen esittelytietojen avulla
+
+[!include [banner](includes/banner.md)]
+
 Tämän asiakirja antaa ohjeita monikanavan tuotesuositusten käyttämiseen tason 1 yhden ruudun ympäristöissä käyttämällä valmiiksi täytettyjä ja mukautettavia esittelytietoja.
 
 Monikanavan tuotesuositukset tarjoavat joukon manuaalisesti koottuja tai ohjelmallisesti luotuja tuoteluetteloita. Näitä luetteloita voidaan käyttää useissa skenaarioissa liiketoimintatarpeiden mukaan. Lisätietoja tuotesuositusten luetteloista on kohdassa [Tuotesuositusten yleiskatsaus](product-recommendations.md).
@@ -49,7 +52,7 @@ Tiedot on järjestetty seuraaviin sarakkeisiin.
 | OperatingUnitNumber | :heavy_check_mark: | Tietty toimintayksikön numero, jossa tuotesuositusten odotetaan näkyvän.                                        |                                                                              |
 | Luokka            |                    |    Luokka, jolle määritetty luettelo tulisi palauttaa. Jos luokkaa ei ole määritetty, luettelo koskee vain siirtymishierarkian ylätasoa.    |                                                                              |
 | SeedItemId          |                    |    Jos luettelo edellyttää alkuarvoa (RecoPeopleAlsoBuy ja RecoCart), tuote, jolle näiden luetteloiden tulisi näyttää lisätuotteita.            |                                                                              |
-| ItemIds             | :heavy_check_mark: | Yksi tai useampi tuloksena palautettava tuote, erotettu toisistaan ‘;’.-merkillä.                                                                  |                                                                              |
+| ItemIds             | :heavy_check_mark: | Yksi tai useampi tuloksena palautettava tuote, erotettu toisistaan ‘;’-merkillä.                                                                  |                                                                              |
 
 ## <a name="customize-demo-data"></a>Mukauta demotietoja
 Voit muokata oletusarvoisia esittelytietoja HQ:ssa määritettyjen tuote- ja luokkatietojen avulla. Kun .csv on päivitetty, asiakkaille palautetut tuotesuositukset päivitetään heti muutosten mukaisesti.
@@ -67,4 +70,22 @@ Laajennus sisältää datatiedoston nimeltään RecoMockDataset.csv. Sen avulla 
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
-[Työympäristön suunnittelu](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)
+[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
+
+[Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
+
+[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
+
+[Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
+
+[Suositusluettelojen lisääminen sähköisen kaupankäynnin sivustoon](add-reco-list-to-page.md)
+
+[Tuotesuositusten lisääminen myyntipisteessä](product.md)
+
+[Suositusten lisääminen tapahtumanäyttöön](add-recommendations-control-pos-screen.md)
+
+[AI-ML-suositusten tulosten muokkaaminen](modify-product-recommendation-results.md)
+
+[Kuratoitujen suositusten manuaalinen luominen](create-editorial-recommendation-lists.md)
+
+[Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)

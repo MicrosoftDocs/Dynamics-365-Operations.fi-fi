@@ -16,14 +16,16 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5e2989906c5aa3ead9e46b8ed5333e880e5cf1c6
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 10795c90cb90961c17a4326b71ed43dc72039f2b
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769944"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117422"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Tiedostojen tuonti XML-muodossa valinnaisilla määritteillä
+
+[!include [banner](../includes/banner.md)]
 
 Voit suunnitella sähköisen raportoinnin (ER) muodot jäsentämään saapuvat sähköiset asiakirjat XML-muodossa. Tietyt XML-elementtien määritteet voidaan määrittää suunnitellussa ER-muodossa valinnaisina. Sen avulla voit käsitellä saapuvia tiedostoja asianmukaisesti riippumatta siitä, onko siinä kyseiset määritteet vai ei. Sitten voit käyttää näiden tiedostojen sisältöä sovelluksen tietojen päivittämiseen.
 
@@ -52,17 +54,17 @@ Seuraavissa vaiheissa käsitellään, miten järjestelmänvalvojan tai sähköis
 7. Valitse **Lisää**.
 8. Avaa valintaikkuna valitsemalla **Uusi**.
 9. Kirjoita **Nimi**-kenttään Luettelo.
-10. Valitse **Nimiketyyppi**-kentässä **Tietueluettelo**.
-11. Valitse **Lisää**.
-12. Avaa valintaikkuna valitsemalla **Uusi**.
-13. Kirjoita **Nimi**-kenttään Koodi.
-14. Valitse **Nimiketyyppi**-kentässä **Merkkijono**.
-15. Valitse **Lisää**.
-16. Valitse **Tallenna**.
-17. Sulje sivu.
-18. Valitse **Muuta tila**.
-19. Valitse **Valmis**.
-20. Valitse **OK**.
+10.    Valitse **Nimiketyyppi**-kentässä **Tietueluettelo**.
+11.    Valitse **Lisää**.
+12.    Avaa valintaikkuna valitsemalla **Uusi**.
+13.    Kirjoita **Nimi**-kenttään Koodi.
+14.    Valitse **Nimiketyyppi**-kentässä **Merkkijono**.
+15.    Valitse **Lisää**.
+16.    Valitse **Tallenna**.
+17.    Sulje sivu.
+18.    Valitse **Muuta tila**.
+19.    Valitse **Valmis**.
+20.    Valitse **OK**.
 
 ## <a name="create-a-format-for-data-import"></a>Tietojen tuontimuodon luominen
 1. Avaa valintaikkuna valitsemalla **Luo konfigurointi**.
@@ -81,32 +83,32 @@ Seuraavissa vaiheissa käsitellään, miten järjestelmänvalvojan tai sähköis
 7. Valitse puussa **XML\Elementti**.
 8. Kirjoita **Nimi**-kenttään document.
 9. Valitse **Monimuotoisuus**-kentässä **Yksi tai useita**.
-10. Valitse **OK**.
-11. Valitse puussa **root\document**.
-12. Avaa valintaikkuna valitsemalla **Lisää**.
-13. Valitse puussa **XML\Määrite**.
-14. Kirjoita **Nimi**-kenttään id.
-15. Valitse **OK**.
-16. Valitse **Tallenna**.
+10.    Valitse **OK**.
+11.    Valitse puussa **root\document**.
+12.    Avaa valintaikkuna valitsemalla **Lisää**.
+13.    Valitse puussa **XML\Määrite**.
+14.    Kirjoita **Nimi**-kenttään id.
+15.    Valitse **OK**.
+16.    Valitse **Tallenna**.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Muodon yhdistämisen suunnitteleminen tallentamaan jäsennetty tieto tietomalliin
-1.  Valitse **Yhdistä muoto malliin**.
-2.  Valitse **Uusi**.
-3.  Anna tai valitse **Määritys**-kentän arvo.
-4.  Kirjoita **Nimi**-kenttään Yhdistäminen.
-5.  Valitse **Tallenna**.
-6.  Valitse **Suunnittelutoiminto**.
-7.  Laajenna puussa **format**.
-8.  Laajenna puussa **format\root: XML Element(root)**.
-9.  Valitse puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)**.
-10. Valitse **Sido**.
-11. Laajenna puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)**.
-12. Valitse puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)\id**.
-13. Laajenna puussa **List = format.root.document**.
-14. Valitse puussa **List = format.root.document\Code**.
-15. Valitse **Sido**.
-16. Valitse **Tallenna**.
-17. Sulje sivu.
+1.    Valitse **Yhdistä muoto malliin**.
+2.    Valitse **Uusi**.
+3.    Anna tai valitse **Määritys**-kentän arvo.
+4.    Kirjoita **Nimi**-kenttään Yhdistäminen.
+5.    Valitse **Tallenna**.
+6.    Valitse **Suunnittelutoiminto**.
+7.    Laajenna puussa **format**.
+8.    Laajenna puussa **format\root: XML Element(root)**.
+9.    Valitse puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)**.
+10.    Valitse **Sido**.
+11.    Laajenna puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)**.
+12.    Valitse puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)\id**.
+13.    Laajenna puussa **List = format.root.document**.
+14.    Valitse puussa **List = format.root.document\Code**.
+15.    Valitse **Sido**.
+16.    Valitse **Tallenna**.
+17.    Sulje sivu.
 
 ## <a name="run-format-mapping"></a>Muodon yhdistämisen suorittaminen
 1. Valitse **Suorita**.

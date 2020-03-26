@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8bef8edb46a1942d3efc325e2c437a138ad44839
-ms.sourcegitcommit: e1a55b4dc43abedf523c33ba9a8abe7b073f2ec6
+ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3083015"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113917"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Varaston saatavuuden laskeminen vähittäismyyntikanaville
 
@@ -41,7 +41,7 @@ Tässä ohjeaiheessa kerrotaan tietojen synkronointiprosesseista. Niitä voidaan
 Voit käyttää seuraavia ohjelmointirajapintoja, jos haluat näyttää tuotteen varaston saatavuuden asiakkaiden ollessa ostoksilla sähköisen kaupankäynnin sivustossa.
 
 - **GetEstimatedAvailabilty** – Käytä tätä ohjelmointirajapintaa, jos haluat hakea varaston saatavuuden nimikkeelle sähköisen kaupankäynnin kanavan varastossa tai kaikissa varastoissa, jotka on linkitetty sähköisen kaupankäynnin täyttämisryhmän kokoonpanoon. Tätä ohjelmointirajapintaa voi käyttää myös tietyn hakualueen tai -säteen varastoissa pituus- tai leveysastetietojen perusteella.
-- **ProductWarehouseInventoryAvailabilities** – Käytä tätä ohjelmointirajapintaa, jos haluat pyytää nimikkeen varastoa tietystä varastosta. Voit käyttää sitä esimerkiksi näyttämään varaston saatavuuden skenaarioissa, joissa käytetään tilauksen noutoa.
+- **GetEstimatedProductWarehouseAvailability** – Käytä tätä ohjelmointirajapintaa, jos haluat pyytää nimikkeen varastoa tietystä varastosta. Voit käyttää sitä esimerkiksi näyttämään varaston saatavuuden skenaarioissa, joissa käytetään tilauksen noutoa.
 
 > [!NOTE]
 > Nämä ohjelmointirajapinnat korvaavat **GetProductAvailabilities**- ja **GetAvailableInventoryNearby**-ohjelmointirajapinnat Dynamics 365 Retailin versiossa 10.0.7 ja vanhemmissa versioissa.

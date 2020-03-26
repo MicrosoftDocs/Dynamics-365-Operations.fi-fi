@@ -3,7 +3,7 @@ title: Mukautettujen sivujen määrittäminen käyttäjän sisäänkirjautumisia
 description: Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 Commercessa luodaan mukautettuja sivuja, jotka käsittelevät Azure Active Directoryn (Azure AD) kuluttajakaupan (B2C) vuokraajien mukautettuja sisäänkirjauksia.
 author: brianshook
 manager: annbe
-ms.date: 12/05/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fe2a716d370c350c0c7e034835ff755f1ec9c6a1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 210a7d1c2b0a9a9606723b48681cca3a50fcc05b
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001941"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096794"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Mukautettujen sivujen määrittäminen käyttäjän kirjautumisia varten
 
@@ -199,11 +199,19 @@ Kun olet päivittänyt global.json-tiedoston ja julkaissut muutokset, uusi linkk
 
 [Uuden sähköisen kaupankäynnin sivuston käyttöönotto](deploy-ecommerce-site.md)
 
+[Määritä verkkokauppakanava](online-stores.md)
+
 [Sähköisen kaupankäynnin sivuston luominen](create-ecommerce-site.md)
 
 [Liitä verkkosivusto kanavaan](associate-site-online-store.md)
 
 [Robots.txt-tiedostojen hallinta](manage-robots-txt-files.md)
+
+[URL-osoitteen uudelleenohjausten lataaminen joukkona](upload-bulk-redirects.md)
+
+[B2C-vuokraajan määrittäminen Commercessa](set-up-B2C-tenant.md)
+
+[Useiden B2C-vuokraajien määrittäminen Commerce-ympäristössä](configure-multi-B2C-tenants.md)
 
 [Sisältöverkon (CDN) tuen lisääminen](add-cdn-support.md)
 

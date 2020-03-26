@@ -3,7 +3,7 @@ title: Tallennetut näkymät
 description: Tässä aiheessa kuvataan, miten tallennettujen näkymien toimintoja käytetään.
 author: jasongre
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017701"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100305"
 ---
 # <a name="saved-views"></a>Tallennetut näkymät
 
@@ -71,7 +71,7 @@ Jos haluat tallentaa muutokset, toimi seuraavasti.
 2.  Voit muokata aiemmin luotua näkymää seuraavasti:
      1. Valitse **Tallenna**. Huomaa, että tämä toiminto ei ole käytössä lukituissa näkymissä. 
 3.  Luo uusi pyyntö:
-     1.    Valitse **Tallenna nimellä...**. 
+     1.    Valitse **Tallenna nimellä**. 
      2.    Kirjoita näkymän nimi ja (mahdollinen) kuvaus.
      3.    Valitse **Tallenna**.
 
@@ -83,9 +83,9 @@ Voit vaihtaa sivun oletusnäkymää toimimalla seuraavasti:
 2.  Avaa näkymänvalitsin valitsemalla näkymän nimi. 
 3.  Valitse **Lisää** ja **Kiinnitä oletukseksi**.  
 
-Kun luot uuden näkymän (**Tallenna nimellä...** -toiminnon avulla), voit vaihtoehtoisesti määrittää uuden näkymän oletusnäkymiksi määrittämällä **PIN-tunnuksen oletusasetukseksi** ennen näkymän tallentamista.
+Kun luot uuden näkymän (**Tallenna nimellä** -toiminnon avulla), voit vaihtoehtoisesti määrittää uuden näkymän oletusnäkymiksi määrittämällä **PIN-tunnuksen oletusasetukseksi** ennen näkymän tallentamista.
 
-Huomaa, että joissakin tapauksissa oletusnäkymään liittyvä kysely ei ole käytössä, kun siirryt sivulle ensimmäisen kerran. Jos esimerkiksi siirryt ruudun kautta sivulle, ruudun kysely suoritetaan riippumatta oletusnäkymään liittyvästä kyselystä. Jos siirryt sivulle, jonka perinteisessä näkymässä on jo määritetty kysely, alkuperäinen kysely suoritetaan alkuperäisen oletusnäkymän kyselyn sijaan. Kun näin tapahtuu, saat ilmoituksen, kun näkymä latautuu. Näkymien vaihtaminen sivun lataamisen jälkeen mahdollistaa sen, että näkymäkysely suoritetaan odotetulla tavalla.
+Huomaa, että joissakin tapauksissa oletusnäkymään liittyvä kysely ei ole käytössä, kun siirryt sivulle ensimmäisen kerran. Jos esimerkiksi siirryt ruudun kautta sivulle, ruudun kysely suoritetaan riippumatta oletusnäkymään liittyvästä kyselystä. Jos siirryt sivulle, jonka vakionäkymässä on jo määritetty kysely, alkuperäinen kysely suoritetaan oletusnäkymän kyselyn sijaan. Kun näin tapahtuu, saat ilmoituksen, kun näkymä latautuu. Näkymien vaihtaminen sivun lataamisen jälkeen mahdollistaa sen, että näkymäkysely suoritetaan odotetulla tavalla. Alkaen versiosta 10.0.10 Platform update 34 tietosanoma sisältää upotetun toiminnon, jonka avulla voit ladata oletusnäkymän kyselyn suoraan.
 
 ## <a name="managing-personal-views"></a>Henkilökohtaisten näkymien hallinta 
 **Omien näkymien hallinta** -valintaikkunan avulla voit hallita omia näkemyksiäsi ja näkymien järjestystä näkymän valitsimessa. Avaa tämä sivu napsauttamalla näkymän nimeä, jolloin näkyviin tulee avattava valikko. Valitse**Lisää** ja valitse sitten**Omien näkymien hallinta**.  

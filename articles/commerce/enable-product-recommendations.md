@@ -3,7 +3,7 @@ title: Ota tuotesuositukset käyttöön
 description: Tässä ohjeaiheessa kerrotaa, miten tekoälyn koneoppimiseen perustuvia tuotesuosituksia voidaan tehdä Microsoft Dynamics 365 Commerce -asiakkaiden käyttöä varten.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d3f1bc2526eeacb4bd6338a0679eadd95a75989
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 879fccb063ca0b74e0f022a9edf6a15f7d1311ae
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024953"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127879"
 ---
 # <a name="enable-product-recommendations"></a>Ota tuotesuositukset käyttöön
 
@@ -38,7 +38,7 @@ Ota huomioon ennen käyttöönottoa, että tuotesuosituksia tuetaan vain Commerc
 
 Katso ADLS:n käyttöönoton vaiheet kohdasta [ADLS:n käyttöönotto Dynamics 365 -ympäristössä](enable-ADLS-environment.md).
 
-Varmista myös, että RetailSale-mittarit on otettu käyttöön. Lisätietoja tästä määritysprosessista on [täällä.](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-measures)
+Varmista myös, että RetailSale-mittarit on otettu käyttöön. Lisätietoja tästä määritysprosessista on [täällä.](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)
 
 
 ## <a name="turn-on-recommendations"></a>Suositusten ottaminen käyttöön
@@ -70,13 +70,23 @@ Lisätietoja mukautettujen suositusten vastaanottamisesta on kohdassa [Mukautett
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
-[Ota käyttöön kohdennetut tuotesuositukset](personalized-recommendations.md)
+[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
 
-[Tuotesuositusluetteloiden lisääminen sivuille](add-reco-list-to-page.md)
+[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
 
-[Suositusten paneelin lisääminen myyntipistelaitteisiin](add-recommendations-control-pos-screen.md)
+[Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
 
-[Tuotekokoelmamoduulin yleiskuvaus](product-collection-module-overview.md)
+[Suositusluettelojen lisääminen sähköisen kaupankäynnin sivustoon](add-reco-list-to-page.md)
 
-[ADLS:n käyttöönotto Dynamics 365 -ympäristössä](enable-ADLS-environment.md)
+[Tuotesuositusten lisääminen myyntipisteessä](product.md)
+
+[Suositusten lisääminen tapahtumanäyttöön](add-recommendations-control-pos-screen.md)
+
+[AI-ML-suositusten tulosten muokkaaminen](modify-product-recommendation-results.md)
+
+[Kuratoitujen suositusten manuaalinen luominen](create-editorial-recommendation-lists.md)
+
+[Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
+
+[Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
 

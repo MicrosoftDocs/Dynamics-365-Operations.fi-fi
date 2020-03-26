@@ -1,9 +1,9 @@
 ---
-title: Hallitse AI-ML-pohjaisia tuotesuositustuloksia
+title: AI-ML-pohjaisten tuotesuositustulosten muokkaaminen
 description: Tässä ohjeaiheessa kerrotaan, miten yrityksen tuotesuositusten tuloksia räätälöidään tekoälyn koneoppimisen perusteella.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5da77f71fb2569adc011bb9ee9c8c795d85545f8
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 4631ef03e1d73b70d80e774d1efa4909e619bbc0
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024999"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127925"
 ---
-# <a name="manage-ai-ml-based-product-recommendation-results"></a>Hallitse AI-ML-pohjaisia tuotesuositustuloksia
+# <a name="adjust-ai-ml-based-product-recommendation-results"></a>AI-ML-pohjaisten tuotesuositustulosten muokkaaminen
 
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa kerrotaan, miten yrityksen tuotesuositusten tuloksia räätälöidään tekoälyn koneoppimisen perusteella. 
+Tässä ohjeaiheessa kerrotaan, miten yrityksen tuotesuositusten tuloksia muokataan tekoälyn koneoppimisen perusteella. 
 
 Kun tuotesuositukset on otettu käyttöön, oletusasetukset tulevat voimaan. Nämä parametrit voivat toimia erilaisissa tilanteissa. Kannattaa käyttää jonkin verran aikaa ja pohtia, miten tulokset sopivat tuotteiden myyntiin. Suosittelemme tulosten arviointia muutaman päivän ajan, ennen kuin parametreja muutetaan ennen testaamista uudelleen. 
 
@@ -102,10 +102,22 @@ Seuraavia ohjeita noudattamalla voit lisätä alkutuotteen tuloksia tai poistaa 
 
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
+[ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä](enable-adls-environment.md)
+
 [Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
 
-[Ota käyttöön kohdennetut tuotesuositukset](personalized-recommendations.md)
+[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
 
-[Tuotesuositusluetteloiden lisääminen sivuille](add-reco-list-to-page.md)
+[Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
 
-[Tuotekokoelmamoduulin yleiskuvaus](product-collection-module-overview.md)
+[Suositusluettelojen lisääminen sähköisen kaupankäynnin sivustoon](add-reco-list-to-page.md)
+
+[Tuotesuositusten lisääminen myyntipisteessä](product.md)
+
+[Suositusten lisääminen tapahtumanäyttöön](add-recommendations-control-pos-screen.md)
+
+[Kuratoitujen suositusten manuaalinen luominen](create-editorial-recommendation-lists.md)
+
+[Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
+
+[Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)

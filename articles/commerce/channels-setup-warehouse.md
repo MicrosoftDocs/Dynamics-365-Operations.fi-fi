@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057853"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113756"
 ---
 # <a name="warehouse-set-up"></a>Varaston määrittäminen
 
@@ -33,7 +33,7 @@ Tässä ohjeaiheessa käsitellään uuden kanavan kanssa käytettävän varaston
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Jokaiseen Commerce-kanavaan on liitettävä määritetty varasto. Seuraavilla menetelmillä tehdään määritykset, jotka vähintään tarvitaan Commerce-kanavan varaston määrittämiseen. Lisätietoja varaston määrittämisestä on kohdassa [Varastonhallinnan yleiskatsaus](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview).
+Jokaiseen Commerce-kanavaan on liitettävä määritetty varasto. Seuraavilla menetelmillä tehdään määritykset, jotka vähintään tarvitaan Commerce-kanavan varaston määrittämiseen. Lisätietoja varaston määrittämisestä on kohdassa [Varastonhallinnan yleiskatsaus](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="configure-a-warehouse-site"></a>Varaston toimipaikan määrittäminen
 
@@ -131,7 +131,7 @@ Seuraavassa kuvassa on määritetyn varaston tiedot.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-[Varastonhallinnan yleiskatsaus](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
+[Varastonhallinnan yleiskatsaus](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Kanavien yleiskatsaus](channels-overview.md)
 

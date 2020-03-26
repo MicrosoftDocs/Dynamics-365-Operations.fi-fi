@@ -1,6 +1,6 @@
 ---
 title: Kopioi esiintymä
-description: ''
+description: Microsoft Dynamics 365 Human Resources -tietokannan voi kopioida eristysympäristöön Microsoft Dynamics Lifecycle Servicesin (LCS) avulla.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0bbe325edb65cad0c1912e0a6ade559e5675dc58
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: bb363369994d99f358be0c23cdaf1dbc80b644e5
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008836"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092289"
 ---
 # <a name="copy-an-instance"></a>Kopioi esiintymä
 
@@ -68,7 +68,7 @@ Jos haluat suorittaa tämän tehtävän, kopioi ensin esiintymä ja kirjaudu sit
 
 4. Valitse korvattava esiintymä **Kopioi esiintymä** -tehtäväruudusta ja valitse sitten **Kopioi**. Odota, että **Kopioi tila** -kentän arvoksi päivittyy **Valmis**.
 
-   ![[Valitse korvattava esiintymä](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Valitse esiintymä, joka korvataan](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Valitse **Power Platform** ja kirjaudu Microsoft Power Platform -hallintakeskukseen.
 

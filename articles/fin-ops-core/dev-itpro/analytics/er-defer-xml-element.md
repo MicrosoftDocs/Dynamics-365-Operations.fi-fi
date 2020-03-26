@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
 ms.openlocfilehash: e9f6161186d04b690ee560dac7ee12974d070506
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 9c401a4adba260704b0b1cb9fe8e148bbb5afeed
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015200"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3120875"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>ER-muotoisten XML-elementtien suorittamisen lykkäys
 
@@ -47,7 +47,7 @@ Saat lisätietoja tästä toiminnosta suorittamalla tämän ohjeaiheen seuraavan
 
 **Lykätty suorittaminen** -vaihtoehtoa ei tueta sellaisten XML-elementtien osalta, jotka sijaitsevat muotoelementissä **Yleinen\\Tiedosto**, kun **Jaa tiedosto** -asetuksen arvona on **Kyllä**. Lisätietoja XML-tietojen jakamisesta on kohdassa [Luotujen XML-tiedostojen jakaminen tiedoston koon ja sisällön määrän perusteella](er-split-files.md).
 
-## <a name="Example"></a>Esimerkki: ER-muotoisen XML-elementin suorituksen lykkäys
+## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Esimerkki: ER-muotoisen XML-elementin suorituksen lykkäys
 
 Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan sähköisen raportoinnin toiminnallinen konsultin [rooli](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) voi määrittää ER-muodon, joka sisältää XML-elementin, jossa suoritusjärjestys eroaa muotohierarkian järjestyksestä.
 

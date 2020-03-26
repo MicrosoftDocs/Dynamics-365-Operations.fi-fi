@@ -24,6 +24,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Päivitysten käyttöönotto pilviympäristöissä
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Päivitysten käyttöönotto paikallisissa ympäristöissä
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Määritä palvelupäivitykset
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Keskeytä palvelupäivitykset
@@ -72,10 +74,12 @@
                       href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management -versio 10.0.8 (helmikuu 2020)
                       href: get-started/whats-new-scm-10-0-8.md
-                    - name: Supply Chain Management -versio 10.0.7 (tammikuu 2020)
-                      href: get-started/whats-new-scm-10-0-7.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                  items:
+                    - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
+                      href: get-started/removed-deprecated-features-scm-updates.md
+                    - name: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
+                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'AX 2012 -ominaisuudet, joita on lykätty'
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Ominaisuudet, joita ei ole otettu käyttöön paikallisissa ympäristöissä'
@@ -755,7 +759,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Sähköisen raportointimallin kartoituksen hallinta erillisissä sähköisen raportoinnin konfiguraatioissa
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Valitse tietomallin määritykset luodessasi muotoja
+                - name: Tietomallin määritysten valitseminen luotaessa muotoja
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Raporttien luominen lisäämällä sisältöä XML-raakatiedostona
                   href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
@@ -1515,7 +1519,7 @@
                   href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
                 - name: Luo tuotenumeroiden nimikkeistö määritetyille tuotevarianteille
                   href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
-                - name: Luo uusi tuote
+                - name: Uuden tuotteen luominen
                   href: pim/tasks/create-new-product.md
                 - name: Luo päätuote
                   href: pim/tasks/create-product-master.md

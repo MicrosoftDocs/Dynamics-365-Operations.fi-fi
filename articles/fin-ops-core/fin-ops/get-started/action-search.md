@@ -3,7 +3,7 @@ title: Toimintohaku
 description: Tässä artikkelissa käsitellään toimintohakutoimintoa. Toimintohaku auttaa sinua löytämään ja suorittamaan toimintoja sivulla.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d01247aa356625cb759306e5ead2afd3cdeb840f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bd4d81f010149c762dac0f4e6fa912c2e2cef072
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191313"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112165"
 ---
 # <a name="action-search"></a>Toimintohaku
 
@@ -69,6 +69,9 @@ Kirjoitit esimerkiksi **yht** **toimintohaku**-kenttään ja tarkastelet nyt tul
 Edellisessä esimerkissä toimintohakku näytti tulokset standardimuotoisesta toimintoruudusta sivun yläreunassa. Toimintohaku kuitenkin näyttää tulokset myös näkyvillä olevista työkaluriveistä, jotka sijaitsevat muissa sivun kohdissa. Esimerkiksi etsit **Käytettävissä oleva varasto** -painiketta, joka sijaitsee **Myyntitilausrivit**-pikavälilehdessä. Tässä tapauksessa tulosten luettelossa painikkeen polku (**Myyntitilausrivit** &gt; **Varasto** &gt; **Näytä**) ilmoittaa, että tämä painike sijaitsee **Näytä**-otsikossa **Varasto**-valikkopainikkeessa **Myyntitilausrivit**-pikavälilehdessä.
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+
+> [!NOTE]
+> Jotkin painikkeet eivät näy toimintohaussa. Näitä ovat valintaikkunan ja alilomakkeiden painikkeet. 
 
 ## <a name="action-search-vs-navigation-search"></a>Toimintohaku vs. siirtymishaku
 

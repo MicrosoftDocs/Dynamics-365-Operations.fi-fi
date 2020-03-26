@@ -3,7 +3,7 @@ title: Tietojen tuonti- ja vientityöt – yleiskatsaus
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b852a73268251241cd66a07d7e4f4720706c0d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184551"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124609"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
@@ -191,8 +191,11 @@ Kun ajoitat puhdistusprosessia, seuraavat parametrit on määritettävä, jotta 
 
 -   **Historian säilyttämisen päivien määrä** – tätä asetusta käytetään ohjaamaan säilytettävän suoritushistorian määrää. Tämä määritetään päivien määränä. Kun puhdistamistyö on ajoitettu toistuvaksi erätyönä, tämä asetus toimii samalla tavalla kuin jatkuvasti liikkuva ikkuna, jolloin jäljelle jää aina määritetyn päivien määrä historiaa ja loput poistetaan. Oletusarvo on 7 päivää.
 
--   **Työn suorittamisen tuntien määrä** – puhdistettavaksi tarkoitetun historian määrästä riippuen puhdistustyön kokonaissuorituksen aika voi vaihdella muutamasta minuutista muutamiin tunteihin. Koska mainittujen taulukoiden puhdistaminen on tehtävä, kun järjestelmässä ei ole muuta tietojen hallinnan toimintaa, on tärkeää varmistaa, että puhdistustyö suoritetaan ja että se loppuu ennen liiketoiminnan aloittamista.
+-   **Työn suorittamisen tuntien määrä** – puhdistettavaksi tarkoitetun historian määrästä riippuen puhdistustyön kokonaissuorituksen aika voi vaihdella muutamasta minuutista muutamiin tunteihin. Tämän parametrin arvoksi on määritettävä niiden tuntien määrä, jonka ajan työtä suoritetaan. Kun puhdistustyö on suoritettu tietylle tuntimäärälle, työ lopetetaan ja puhdistusta jatketaan, kun työ suoritetaan toistuvuusaikataulun mukaan seuraavan kerran.
 
     Maksimisuoritusaika voidaan määrittää asettamalla enimmäisraja tuntien määrälle, jonka sisällä työ on suoritettava tämän asetuksen avulla. Puhdistuslogiikka käy läpi yhden työn suorittamisen tunnuksen kerrallaan aikajärjestyksessä, ja vanhin on ensin liittyvän suoritushistorian puhdistuksessa. Se lopettaa uusien suoritustunnuksien keräilyn tyhjennystä varten, kun jäljellä oleva suorituksen kesto on viimeisen 10 % sisällä määritetystä kestosta. Joissakin tapauksissa on odotettavissa, että puhdistustyö jatkuu määritetyn enimmäisajan jälkeen. Tämä riippuu pitkälti siitä, kuinka useita tietueita on poistettava nykyiselle suoritustunnukselle, joka käynnistettiin ennen 10 prosentin raja-arvon ylittymistä. Käynnistetty tyhjennys on suoritettava tietojen eheyden varmistamiseksi, mikä tarkoittaa, että uudelleenjärjestäminen jatkuu määritetyn rajan ylittämisestä huolimatta. Kun tämä on suoritettu, uusia suoritustunnuksia ei kerätä ja tyhjennystyö on valmis. Jäljellä oleva suoritushistoria, jota ei ole puhdistettu riittävän suoritusajan puutteen vuoksi, noudetaan seuraavan kerran, kun puhdistustyö ajoitetaan. Tämän asetuksen oletus- ja minimiarvoksi määritetään 2 tuntia.
 
 -   **Toistuva erä** – puhdistustyö voidaan suorittaa kertaluontoisesti, manuaalisena suorittamisena, tai se voidaan myös ajoittaa toistuvaksi erätyöksi. Erä voidaan ajoittaa käyttämällä **Suorita taustalla** -asetuksia, joka on erätöiden vakiomääritys.
+
+> [!NOTE]
+> Jos väliaikaisen tallennuksen tauluja ei ole puhdistettu kokonaan, varmista, että puhdistustyö ajoitetaan suoritettavaksi toistuvana. Kuten edellä on kerrottu, kunkin puhdistuksen suorituksen yhteydessä työ puhdistaa niin monta suorituksen tunnusta kuin mahdollista annetun ajan puitteissa. Jotta puhdistusta voidaan jatkaa jäljellä olevissa väliaikaisen tallennuksen tietueissa, työ on ajoitettava suoritettavaksi säännöllisesti.
