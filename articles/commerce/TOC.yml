@@ -454,6 +454,8 @@
                   items:
                     - name: Edistyneiden automaattisten veloitusten määrittäminen ja käyttäminen
                       href: omni-auto-charges.md
+                    - name: Automaattisten veloitusten käyttöönotto ja määritys kanavan mukaan
+                      href: auto-charges-by-channel.md
                     - name: Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille
                       href: pro-rate-charges-matching-lines.md
                 - name: Jatkuvuusohjelmien hallinta
@@ -525,7 +527,7 @@
                 - name: Uuden tuotteen luominen
                   items:
                     - name: Uuden tuotteen luominen Commercessa
-                      href: create-new-product.md
+                      href: create-new-product-commerce.md
                     - name: Tuoteluokkien ja -tuotteiden hallinta
                       href: category-management-product-creation.md
                 - name: Tuotemääritteet
@@ -598,8 +600,6 @@
                       href: personalized-recommendations.md
                     - name: Kohdennetuista tuotesuosituksista kieltäytyminen
                       href: personalization-gdpr.md
-                - name: Suositusluettelojen lisääminen sähköisen kaupankäynnin sivustoon
-                  href: add-reco-list-to-page.md
                 - name: Myyntipistekokemukset
                   items:
                     - name: Tuotesuositusten lisääminen myyntipisteessä
@@ -944,6 +944,8 @@
                       href: add-checkout-module.md
                     - name: Tilauksen vahvistusmoduuli
                       href: order-confirmation-module.md
+                    - name: Myymälän valitsinmoduuli
+                      href: store-selector.md
                 - name: Tilin hallintamoduulit
                   items:
                     - name: Tilin hallintasivut ja -moduulit
@@ -2115,7 +2117,7 @@
                 - name: Maksutietojen käyttö
                   href: payment-connector-data-fields.md
                 - name: Kaksoismaksuilta suojauksen kytkeminen päälle maksujen yhdistäjässä
-                  href: dev-itpro/duplicate-payment-protection.md
+                  href: dev-itpro/duplicate-payments-protection.md
                 - name: Maksun pakkauksen luominen Service Fabric -käyttöönottojen sovellusten hallintaa varten
                   href: dev-itpro/payment-connector-package.md
             - name: Kolmannen osapuolen sähköisen kaupankäynnin laajennettavuus
