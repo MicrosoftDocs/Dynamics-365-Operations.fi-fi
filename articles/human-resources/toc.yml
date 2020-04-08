@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 19. maaliskuuta 2020
+          href: hr-whats-new-2020-03-19.md
         - name: 10. maaliskuuta 2020
           href: hr-whats-new-2020-03-10.md
         - name: 3. maaliskuuta 2020
@@ -539,3 +541,9 @@
               href: hr-learning-create-closed-ended-question.md
             - name: Riippuvaisen kysymyksen luominen
               href: hr-learning-depending-question.md
+        - name: Työntekijän ja esimiehen itsepalvelun määrittäminen
+          items:
+            - name: Työntekijän ja esimiehen itsepalvelun yleiskatsaus
+              href: hr-employee-manager-self-service-overview.md
+            - name: Muokkaa henkilökohtaisia tietoja
+              href: hr-employee-manager-self-service-edit-personal-information.md
