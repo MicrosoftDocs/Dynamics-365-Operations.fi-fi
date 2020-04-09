@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dedfe39a125e6aa6e9f7ffa62f0d7575153103e1
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: bcab5d27d1e5bb2f86910fe083168e7b97c52e2f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835815"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148795"
 ---
 # <a name="transfer-materials-with-kanban-jobs"></a>Materiaalien siirtäminen kanban-töiden yhteydessä
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tässä menettelyssä keskitytään otto-kanbaneihin materiaalien siirtämiseksi. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF. Tämä menettely on tarkoitettu varastotyöntekijälle.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: fb34ecc0ff5966ae09fdb00e80134a11eceb30a2
-ms.sourcegitcommit: c6be9706bca05089d4a4dc898d991410edb5c609
+ms.openlocfilehash: d62cf8be089eb8bccaf323041bf446b7f120b93f
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097457"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164532"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet, versio 10.0.8 (helmikuu 2020)
 
@@ -32,13 +32,14 @@ Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Supply Chain Managementin 
 
 - **Ennakkoverso:** Joulukuu 2019
 - **Yleinen saatavuus (oma päivitys):** Tammikuu 2020
-- **Automaattinen päivitys:** Helmikuu 2020 
+- **Automaattinen päivitys:** Helmikuu 2020
 
 ## <a name="features-included-in-this-release"></a>Tähän julkaisuun sisältyvät toiminnot
 
 Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Osa näistä toiminnoista voi sisältyä edellisiin lisäjulkaisuihin, mutta niistä ei kerrottu edellisessä *Uutuudet*-ohjeaiheessa, joten lisäämme ne tähän. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 - [Sijainnin lisävyöhyke](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+- [Liiketoiminta-asiakirjojen hallinta](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management) - Lisätietoja on kohdassa [Liiketoiminta-asiakirjojen hallinta – yleiskatsaus](../asset-management/index.md).
 - [Työn peruuttaminen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work) - Lisätietoja on kohdassa [Varastotyön peruuttaminen poikkeuksen käsittelyä varten](../warehousing/cancel-warehouse-work.md).
 - [Vaihda työpoolia työssä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
 - [Klusterisijainti täynnä](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)

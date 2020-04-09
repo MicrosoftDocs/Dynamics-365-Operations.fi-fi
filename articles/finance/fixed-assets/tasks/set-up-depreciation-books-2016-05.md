@@ -1,6 +1,6 @@
 ---
-title: Käyttöomaisuuden poistokirjojen määrittäminen (Toukokuu 2016)
-description: Tässä tehtävän ohjauksessa luodaan uusi poistokirja ja liitetään se käyttöomaisuusryhmään.
+title: Määritä poistokirjat
+description: Tämä menettely käy läpi uuden poistokirjan luomisprosessin ja liittää sen käyttöomaisuus ryhmään.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6840e211847494598a81cd3228dbd3796447e18c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 03f915fa91e0eeff2f26ab9a60bbd5118317e853
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186897"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154596"
 ---
-# <a name="set-up-depreciation-books-may-2016"></a>Käyttöomaisuuden poistokirjojen määrittäminen (Toukokuu 2016)
+# <a name="set-up-depreciation-books"></a>Määritä poistokirjat 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Tässä tehtävän ohjauksessa luodaan uusi poistokirja ja liitetään se käyttöomaisuusryhmään.  Siinä käytetään kirjanpitäjän roolia ja USMF-yrityksen esittelytietoja.
-
+Tämä menettely käy läpi uuden poistokirjan luomisprosessin ja liittää sen käyttöomaisuus ryhmään. 
 
 ## <a name="create-a-depreciation-book"></a>Poistokirjan luominen
 1. Siirry kohtaan Käyttöomaisuus > Asetukset > Poistokirjat.

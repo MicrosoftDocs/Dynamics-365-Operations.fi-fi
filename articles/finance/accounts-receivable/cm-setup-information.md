@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 65b1d1a232558efbe05e83d51706a78b12439e47
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 524ae7b3062893ed07170227ea9b8908cd5858e1
+ms.sourcegitcommit: 1fb34abfe3382bc00237a2c00184fe201c12229f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124136"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "3151294"
 ---
 # <a name="credit-management-setup"></a>Luotonhallinnan määritys 
 
@@ -40,13 +40,17 @@ Siirry kohtaan **Luotonvalvonta \> Määritys \> Luotonhallinnan työnkulut** m�
 
 Voit asettaa myyntitilauksen pitoon, jos sen maksuehdot eivät vastaa asiakkaan oletusarvoisia maksuehtoja. Joskus maksuehdot kuitenkin eroavat toisistaan, mutta ovat riittävän samankaltaiset sille, ettei tilausta haluta asettaa pitoon. Voit järjestää maksuehtoja siten, että joillakin niistä on sama järjestysnumero ja toisilla on korkeampi tai matalampi järjestysnumero.
 
-Jos maksuehtojen järjestysnumerot ovat käytössä, myyntitilaukset siirretään pitoon, jos tilauksen maksuehdot ovat järjestyksessä asiakkaan oletusmaksuehtoja korkeammalla.
+Jos maksuehtojen järjestysnumerot ovat käytössä ja jos tilauksen maksuehdot ovat järjestyksessä asiakkaan oletusmaksuehtoja korkeammalla, myyntitilaukset siirretään pitoon.
+
+Määrittääksesi maksuehtojen sijoituksen, valitse **Luotonhallinta ja perintä \> Asetukset \> Luotonhallinnan asetukset \>Maksuehtojen sijoitus**  
 
 ### <a name="ranking-settlement-discounts"></a>Tilitysalennusten järjestäminen
 
 Voit asettaa myyntitilauksen pitoon, jos sen käteisalennus ei vastaa asiakkaan oletusarvoista käteisalennusta. Joskus käteisalennukset kuitenkin eroavat toisistaan, mutta ovat riittävän samankaltaiset sille, ettei tilausta haluta asettaa pitoon. Voit järjestää käteisalennuksia siten, että joillakin niistä on sama järjestysnumero ja toisilla on korkeampi tai matalampi järjestysnumero.
 
-Jos käteisalennusten järjestysnumerot ovat käytössä, myyntitilaukset siirretään pitoon, jos tilauksen käteisalennus on järjestyksessä asiakkaan oletuskäteisalennusta korkeammalla.
+Jos käteisalennusten järjestysnumerot ovat käytössä ja jos tilauksen käteisalennus on järjestyksessä asiakkaan oletuskäteisalennusta korkeammalla, myyntitilaukset siirretään pitoon.
+
+Määrittääksesi maksuehtojen sijoituksen, valitse **Luotonhallinta ja perintä \> Asetukset \> Luotonhallinnan asetukset \>Tilitysalennusten sijoitus**  
 
 ## <a name="reasons"></a>Syyt
 
@@ -56,7 +60,7 @@ Luotonhallinnassa käytetään monenlaisia syitä:
 - Vapautuksen syyt määritetään tilaukselle, kun se vapautetaan pidosta.
 - Tilan syyt ilmaisevat, miksi asiakkaalle on määritetty tietty tilin tila.
 
-Voit määrittää syitä **Luotonhallinnan syyt** -sivulla (**Luotonhallinta \> Määritys \> Luotonhallinta \> Luotonhallinnan syyt**).
+Voit määrittää syitä **Luotto ja perintä** -sivulla (**Luotonhallinta \> Määritys \> Luotonhallinnan asetukset \> Luotonhallinnan syyt**).
 
 1. Valitse **Syyn tyyppi** -kentässä syyn tyyppi: **Pito**, **Vapautus** tai **Tila**.
 2. Syötä **Syy**-kenttään syyn nimi.
@@ -66,7 +70,7 @@ Voit määrittää syitä **Luotonhallinnan syyt** -sivulla (**Luotonhallinta \>
 
 Luotonhallintaryhmiä käytetään sellaisten asiakkaiden tai asiakasryhmien tunnistamineen, joilla on samat luotonhallinnan ominaisuudet. Luotonhallintaryhmien avulla voidaan esimerkiksi määrittää asiakkaiden estävät ja poissulkevat luotonhallintasäännöt.
 
-Voit luoda luotonhallintaryhmiä **Luotonhallintaryhmät**-sivulla (**Luotonhallinta \> Määritys> Ryhmien määritys \> Luotonhallinnan ryhmät**).
+Voit luoda luotonhallintaryhmiä **Luotonhallintaryhmät**-sivulla (**Luotto ja perintä \> Määritys> Luotohallinnan määritys \> Luotonhallinnan ryhmät**).
 
 1. Valitse **Uusi** luodaksesi rivin.
 2. Syötä ryhmälle tunnus. Tunnuksessa voi olla jopa 10 merkkiä.
@@ -78,7 +82,7 @@ Luotonhallintaryhmä osoitetaan asiakkaalle **Luotonvalvonta**-pikavälilehdess�
 
 Voit luoda tilitiloja asiakastilin luottokelpoisuuden tunnistamista varten. Voit määrittää tilan ja sen vaikutuksen laskutuksen ja toimituksen pidossa oleviin prosesseihin. Tilitiloja voi käyttää myös asiakkaan esto ääntöjen määrittämiseen.
 
-Voit luoda tilitiloja **Tilitilat**-sivulla (**Luotonhallinta \> Määritys> Ryhmien määritys \> Tilitilat**).
+Voit luoda tilitiloja **Tilitilat**-sivulla (**Luotto ja perintä \> Määritys> Luotonhallinnan määritys \> Tilitilat**).
 
 1. Lisää tilitila ja anna sille kuvaus, joka edustaa asiakkaan luottokelpoisuutta. Käytä esimerkiksi tilaa **Normaali** ilmaisemaan, että asiakkaan kelpoisuus on hyvä ja että avoimiin tilauksiin sovelletaan tavanomaista luotonhallintakäsittelyä.
 2. Valitse kentissä **Laskutus** ja **Toimitus pidossa** pidon tyyppi, joka toteutetaan niiden asiakkaiden osalta, joilla on tämä tilitila. Voit asettaa kaiken käsittelyn pitoon, asettaa pitoon vain laskujen käsittelyn tai olla asettamatta pitoon mitään käsittelyä, kun luottorajasääntöjä sovelletaan.
@@ -87,7 +91,7 @@ Voit luoda tilitiloja **Tilitilat**-sivulla (**Luotonhallinta \> Määritys> Ryh
 
 Voit määrittää pisteytysryhmiä määrittämään riskitekijöitä sekä kriteerejä, joiden perusteella niitä mitataan. Kun asiakasta koskevia tietoja käytetään pisteytysryhmässä, kullekin riskitekijälle lasketaan pistemäärä, jonka perusteella asiakas asetetaan riskiryhmään. Riskiryhmää voidaan käyttää luottokelpoisuuden tunnistamiseen ja automaattisten luottorajojen laskemiseen.
 
-Vuot luoda pisteytysryhmiä **Pisteytysryhmät** -sivulla (**Luotonhallinta \> Määritys \> Riskinmääritys \> Pisteytysryhmät**).
+Vuot luoda pisteytysryhmiä **Pisteytysryhmät**-sivulla (**Luotto ja perintä \> Määritys \> Luotonhallinnan määritys \> Riski \> Pisteytysryhmät**).
 
 1. Luo pisteytysryhmä ja anna sille nimi.
 2. Anna kuvaus tarkempia pisteytysryhmän tietoja varten.
@@ -108,11 +112,11 @@ Vuot luoda pisteytysryhmiä **Pisteytysryhmät** -sivulla (**Luotonhallinta \> M
     1. Syötä **Arvo**-kenttään se käyttäjän määrittämä arvo, joka pitäisi saada asiakastiedoista.
     2. Syötä **Pistemäärä**-kenttään se pistemäärä, joka osoitetaan, kun annettu arvo on alueella Arvosta–Arvoon.
 
-## <a name="risk-assessments"></a>Riskinarvioinnit
+## <a name="risk-classification"></a>Riskiluokittelu
 
 Voit määrittää riskinarviointeja, jotka voidaan osoittaa asiakkaille niiden riskipisteiden perusteella. Riskipisteet lasketaan vertaamalla asiakkaan tietoja kuhunkin pisteytysryhmään. Tulokset lasketaan yhteen ja kokonaispistemäärää verrataan riskiryhmän määrityksiin, jotta asiakkaan edustama riskiryhmä voidaan tunnistaa. Riskiryhmän pistemäärää käytetään sitten luotonhallinnan esto- ja poissulkemissääntöjen määrittämiseen asiakkaalle.
 
-Voit määrittää riskiryhmiä **Riskinarvioinnit** -sivulla (**Luotonhallinta \> Määritys \> Riskinmääritys \> Riskinarvioinnit**).
+Voit määrittää riskiryhmiä **Riskinarvioinnit**-sivulla (**Luotto ja perintä \> Määritys \> Luotonhallinnan määritys \> Luotto \> Riskinarvioinnit**).
 
 1. Syötä riskiryhmän tunnus.
 2. Anna kuvaus tarkempia riskiryhmän tietoja varten.
@@ -121,7 +125,7 @@ Voit määrittää riskiryhmiä **Riskinarvioinnit** -sivulla (**Luotonhallinta 
 
 ## <a name="guaranteeinsurance-types"></a>Takaus-/vakuutustyypit
 
-Voit määrittää takaus-/vakuutustyyppejä **Takaus-/vakuutustyypit**-sivulla (**Luotonhallinta \> Määritys \> Takausten/vakuutuksien määritys \> Takaus-/vakuutustyypit**).
+Voit määrittää takaus-/vakuutustyyppejä **Takaus-/vakuutustyypit**-sivulla (**Luotto ja perintä \> Määritys \> Luotonhallinnan määritys \> Vakuutukset ja takaukset \> Vakuutus ja takaustyypit**).
 
 1. Määritä takaus- tai vakuutustyyppi, joka ilmaisee takaajan tai vakuutuksenvälittäjän nimen.
 2. Anna takaajalle/vakuutuksenvälittäjälle kuvaus.
@@ -130,14 +134,14 @@ Voit määrittää takaus-/vakuutustyyppejä **Takaus-/vakuutustyypit**-sivulla 
 
 Kattavuustyyppejä voidaan käyttää vakuutuskäytäntöjen tarkempaan luokitteluun. Niitä ei voi käyttää takuiden yhteydessä.
 
-Voit lisätä kattavuustyyppejä **Kattavuustyypit**-sivulla (**Luotonhallinta \> Määritys \> Takuun/vakuutuksen määritys \> Coverage types**).
+Voit lisätä kattavuustyyppejä **Kattavuustyypit**-sivulla (**Luotto ja perintä \> Määritys \> Luotonhallinnan määritys \> Vakuutukset ja takuut määritys \> Kattavuuslajit**).
 
 1. Anna kattavuustyyppi sen kattavuustyypin määrittämiseksi, joka lisätään vakuutuksena tai takuuna.
 2. Anna kattavuustyypille kuvaus.
 
 ## <a name="automatic-credit-limits"></a>Automaattiset luottorajat
 
-Voit luoda automaattisten luottorajojen kriteerejä **Automaattiset luottorajat** -sivulla (**Luotonhallinta \> Määritys \> Riskinmääritys \> Automaattiset luottorajat**).
+Voit luoda automaattisten luottorajojen kriteerejä **Automaattiset luottorajat** -sivulla (**Luotto ja perintä \> Määritys \> Luotonhallinnan määritys \> Riski \> Automaattiset luottorajat**).
 
 1. Valitse riskiryhmä, jolle automaattinen luottoraja määritetään.
 2. Valitse automaattisen luottorajan valuutta. Voit luoda useita automaattisia luottorajoja eri valuutoissa samalle riskiryhmälle.

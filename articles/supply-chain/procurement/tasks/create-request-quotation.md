@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e35dbc489608c0aa3bfb13db5ae237f854612b1
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 954bfe3972e46eac803681a5a09e85661999f1d6
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844117"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149662"
 ---
 # <a name="create-a-request-for-quotation"></a>Luo tarjouspyyntö
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tässä menettelyssä näytetään, miten tarjouspyyntö luodaan. Se on yleensä ostoedustajan tehtävä. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi. Ennen aloittamista on määritettävä pyyntötyypit. Kun olet suorittanut tämän tehtävän ja luonut sekä lähettänyt tarjouspyynnön, voit sitten määrittää toimittajakohtaiset vastaukset, tehdä niistä vertailun ja myöntää sopimuksen.
 

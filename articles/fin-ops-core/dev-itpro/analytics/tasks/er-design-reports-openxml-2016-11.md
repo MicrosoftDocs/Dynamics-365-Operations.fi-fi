@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ea5b17873dea4508230f39ffb41a50e2f427584f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769852"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142129"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER OPENXML-muodossa luotavien raporttien määritysten suunnittelu (marraskuu 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tässä aiheessa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi luoda uuden sähköiselle raportoinnin (ER) konfiguraation, joka sisältää sähköisen asiakirjojen OPENXML-muodon luontimallin. Tätä konfiguraatiota käytetään toimittajamaksujen käsittelyyn.
 
@@ -55,7 +55,7 @@ Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn v
 3. Avaa valintaikkuna valitsemalla **Luo konfigurointi**.
 4. Kirjoita **Uusi**- kenttään arvo `Format based on data model PaymentModel`. Luo muoto, joka perustuu PaymentModel-tietomalliin.
 5. Syötä **Nimi**-kenttään `Sample worksheet report`. Laskentataulukkoraportin esimerkki  
-6. Kirjoita **Kuvaus**-kenttään `Sample worksheet report for vendors’ payments`. Toimittajamaksujen laskentataulukkoraportin esimerkki  
+6. Kirjoita **Kuvaus**-kenttään `Sample worksheet report for vendors' payments`. Toimittajamaksujen laskentataulukkoraportin esimerkki.  
 7. Anna tai valitse **Tietomallin määritelmä** -kentän arvo. Valitse **CustomerCreditTransferInitiation**-määritelmä.  
 8. Valitse **Luo konfiguraatio**.
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b048c49de7357ec1b5cbf36dd4f22a5d3efd443b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189404"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143785"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Ostoreskontran laskujen täsmäytyksen vahvistamisen määrittäminen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Varmista ennen aloittamista, että laskun täsmäytyksen konfigurointiavain on valittuna. Jos oma yrityksesi seuraa kuluja, kuten rahtia, veloituksien avulla, varmista että kulujen konfigurointiavain on valittuna.  Ostoreskontran laskujen täsmäytys on prosessi, jossa täsmäytetään toimittajan laskun, ostotilauksen ja tuotteen vastaanoton tiedot. Näissä asiakirjoissa olevia eroja kutsutaan ristiriidoiksi. Täsmäytysristiriitoja verrataan määritettyihin toleransseihin. Jos täsmäytysristiriita ylittää toleranssin prosentin tai summan, täsmäytyksen varianssin kuvakkeet näkyvät **Toimittajan lasku**-sivulla ja **Laskun täsmäytyksen tiedot** -sivulla.
 
@@ -49,7 +49,7 @@ Täsmäyksen vahvistamistyyppejä on neljä.
     * Toleranssi on esimerkiksi 5 prosenttia ja ostotilauksen laskun kokonaissumma on 100,00. Tämän vuoksi hintavastaavuuden kuvake näytetään, jos laskun kokonaissumma ylittää 105,00. Jos valitset **Onko suurempi tai pienempi kuin toleranssi** -vaihtoehdon, kuvake näkyy myös, jos laskun summa on pienempi kuin 95,00.  
 6. Anna **Laskusummien toleranssiprosentti** -kenttään hyväksyttävä prosentin varianssi. Tämä arvo on yrityksen oletusarvo. Tämä arvo voidaan ohittaa tiettyjen toimittajien osalta **Laskusummien toleranssit** -sivulla. Lisätietoja tietyn toimittajan laskusummien toleranssiprosentin ohittamisesta on jäljempänä tämän ohjeaiheen kohdassa Toimittajien laskusummien täsmäytystoleranssien määrittäminen.
 7. Määritä **Hinnan ja määrän täsmäytys**.
-8. Valitse **Rivien vastaavuuskäytäntö** -kentässä arvo, jota käytät oletusarvon mukaisena käytäntönä yritykselle, jonka kanssa työskentelet. **Ei pakollinen** tarkoittaa, että tarkistus yksittäisistä laskurivien hinnoista ostotilauksen hinnoiksi tai laskujen määristä pakkausluettelon määriksi ei ole pakollinen. **Kaksisuuntainen vastaavuus**o tarkoittaa, että laskurivien tarkistus on pakollinen, mutta vain ostotilaus ja toimittajan laskuasiakirjat ovat mukana tarkistuksessa. Tuotteen vastaanottoa ei oteta huomioon täsmäytysten tarkistuksissa. **Kolmisuuntainen vastaavuus** tarkoittaa, että laskun nettoyksikköhintaa verrataan ostotilauksen nettoyksikköhintaan ja vastaavaa tuotteen vastaanoton määrää verrataan laskun määrään.
+8. Valitse **Rivien vastaavuuskäytäntö** -kentässä arvo, jota käytät oletusarvon mukaisena käytäntönä yritykselle, jonka kanssa työskentelet. **Ei pakollinen** tarkoittaa, että tarkistus yksittäisistä laskurivien hinnoista ostotilauksen hinnoiksi tai laskujen määristä pakkausluettelon määriksi ei ole pakollinen. **Kaksisuuntainen vastaavuus** tarkoittaa, että laskurivien tarkistus on pakollinen, mutta vain ostotilaus ja toimittajan laskuasiakirjat ovat mukana tarkistuksessa. Tuotteen vastaanottoa ei oteta huomioon täsmäytysten tarkistuksissa. **Kolmisuuntainen vastaavuus** tarkoittaa, että laskun nettoyksikköhintaa verrataan ostotilauksen nettoyksikköhintaan ja vastaavaa tuotteen vastaanoton määrää verrataan laskun määrään.
 9. Voit sallia eritasoisen täsmäytyksen käytettäväksi nimikkeelle, toimittajalle, toimittajan ja nimikkeen yhdistelmällä tai ostotilausriville valitsemalla arvon **Salli vastaavuuskäytännön ohitus** -kentässä. Yritysrivin yhteensopivuuskäytäntö voidaan ohittaa tietyn toimittajan, nimikkeen tai toimittajan ja nimikkeen yhdistelmän osalta **Vastaavuuskäytäntö**-sivulla.
     * Jos käytössä on rivin kaksi- tai kolmisuuntainen vastaavuuskäytäntö, voit määrittää **Nimikkeen hintatoleranssi** -sivulla yritykselle, nimikkeille ja toimittajille hintatoleranssin prosenttiosuudet. Yrityksen oletushintatoleranssiksi määritetään yksi- ja kaksisuuntaisessa täsmäytyksessä nolla. Kun toimittajan laskuja verrataan ostotilaustietoihin, järjestelmä etsii sovellettavaa hintatoleranssin prosenttia.   
 10. Voit täsmäyttää laskujen rivinimikkeiden kokonaissummat valitsemalla arvon **Täsmäytä kokonaishinnat** -kentässä. Tällainen täsmäytys on hyödyllistä silloin, kun toimittaja lähettää useita samaa ostotilausriviä koskevia laskuja. Voit verrata laskun kunkin rivin nettosummien ja kaikkien odottavien ja aiemmin kirjattujen laskurivien hintatietoja vastaavan ostotilausrivin nettosummaan.  Vaihtoehtoja ovat **Ei mitään**, **Prosentti**, **Summa** tai **Prosentti ja summa**.

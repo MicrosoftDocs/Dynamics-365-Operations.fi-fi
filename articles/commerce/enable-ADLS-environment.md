@@ -3,7 +3,7 @@ title: ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä
 description: Tässä ohjeaiheessa selitetään, miten voit ottaa Azure Data Lake Storagen (ADLS:n) käyttöön Dynamics 365 Commerce -ympäristöä varten. Tämä on edellytys tuotesuositusten käyttöönotolle.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 553e1512ba72559923403eef741ce08222172a09
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: 3c037f5603af5af84917084eefa1edd508891c0d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127764"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154433"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä
 
@@ -95,11 +95,9 @@ Jos et ole vielä suorittanut niitä, suorita ympäristön [tuotesuositusten ja 
 
 [Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
 
-[Ota kohdennetut suositukset käyttöön](personalized-recommendations.md)
+[Kohdennettujen suositusten ottaminen käyttöön](personalized-recommendations.md)
 
 [Kohdennetuista tuotesuosituksista kieltäytyminen](personalization-gdpr.md)
-
-[Suositusluettelojen lisääminen sähköisen kaupankäynnin sivustoon](add-reco-list-to-page.md)
 
 [Tuotesuositusten lisääminen myyntipisteessä](product.md)
 

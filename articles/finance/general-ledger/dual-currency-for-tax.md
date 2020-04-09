@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1ba4d09240888f0c533fb07614e75ffecea0742c
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 863403dc3b2444f00f0cac27a494fc49d3d70de7
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124090"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161589"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Arvonlisäveron kaksoisvaluutan tuki
 [!include [banner](../includes/banner.md)]
@@ -34,7 +34,7 @@ Dynamics 365 Finance -sovelluksen kaksoisvaluuttatoiminto otettiin käyttöön v
 
 Aiemmissa versioissa tapahtumat muunnettiin raportointivaluutaksi seuraavassa järjestyksessä: 
 
-Kokonaistapahtuma laskettiin tapahtumavaluuttana > Tapahtumasumma muunnettiin kirjanpitovaluutaksi > Kirjanpitovaluuttasumma muunnettiin raportointivaluutaksi
+- Kokonaistapahtuma laskettiin tapahtumavaluuttana > Tapahtumasumma muunnettiin kirjanpitovaluutaksi > Kirjanpitovaluuttasumma muunnettiin raportointivaluutaksi
 
 Kun kaksoisvaluuttatoiminto on otettu käyttöön, tapahtumat muunnetaan raportointivaluutaksi seuraavassa järjestyksessä:
 
@@ -48,8 +48,6 @@ Kaksoisvaluutan tuen johdosta toimintojen hallinnassa on käytettävissä seuraa
 - Veron tilityksen automaattinen täsmäytys raportointivaluuttana (julkaisu versiossa 10.0.11)
 
 Arvonlisäverojen kaksoisvaluutan tuki varmistaa sen, että verot lasketaan tarkasti verovaluuttana ja että arvonlisäveron tilityksen täsmäytys lasketaan tarkasti sekä kirjanpitovaluuttana että raportointivaluuttana. 
-
-Uudet ominaisuudet ovat tällä hetkellä käytössä yksityisenä kokeiluversiona. Voit ottaa ominaisuudet käyttöön tekemällä palvelupyynnön Microsoftin vastaavissa kanavissa.
 
 ## <a name="sales-tax-conversion"></a>Arvonlisäveron muunto
 

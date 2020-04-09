@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b616998738d6b6986f157d136fc56e061900ef41
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 501936734b6ec970062d0d2cbcc8a3cdc11b934f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550529"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142360"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>ER Käytä vaakasuunnassa laajennettavia alueita sarakkeiden dynaamiseen lisäämiseen Excel-raportteihin (Osa 1 – Muodon suunnittelu)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi määrittää sähköisen raportoinnin (ER) muodon luomaan raportteja OPENXML-työkirjamuodossa (Excel), joissa pakolliset sarakkeet voi lyödä dynaamisesti vaakasuunnassa laajenevilla alueilla. Nämä vaiheet voidaan suorittaa missä tahansa yrityksessä.
 
@@ -33,9 +33,9 @@ Näiden vaiheiden edellytyksenä on seuraavien kolmen tehtäväoppaan suorittami
 
 ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi
 
-ER Taloushallinnon dimensioiden käyttö tietolähteenä (osa 1: tietomallin suunnittelu)
+ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 1: Tietomallin suunnittelu)
 
-ER Taloushallinnon dimensioiden käyttö tietolähteenä (osa 2: malliyhdistämismääritys).
+ER Taloushallinnon dimensioiden käyttö tietolähteenä (Osa 2: Mallin yhdistäminen).
 
 Sinun on myös ladattava ja tallennettava mallin paikallinen kopio malliraportin kanssa kohdasta [Mallin taloushallinnon dimensioiden verkkopalveluraportti](https://go.microsoft.com/fwlink/?linkid=862266).
 

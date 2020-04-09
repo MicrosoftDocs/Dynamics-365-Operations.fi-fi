@@ -16,69 +16,69 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f34302a32b2e06f281dc93d6df160b88ffac7123
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: fc28e9a2170929c6cd8daafd7eae54713cec36ff
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769782"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143197"
 ---
 # <a name="rcs-import-files-in-xml-format-with-optional-attributes"></a>(RCS) Tiedostojen tuonti XML-muodossa valinnaisilla määritteillä
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Seuraavissa vaiheissa käsitellään, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi suunnitella ER-muotomäärityksen tuomaan valinnaisia määritteitä sisältävän XML-muotoisia tiedostoja. Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista. Ennen kuin aloitat, lataa ja tallenna IncomingDocumentToLearnHowToHandleOptionalAttributes.xml-tiedosto paikallisesti [Microsoft Download Centeristä](https://go.microsoft.com/fwlink/?linkid=874684).
 
-1.  Valitse **Kaikki työtilat** > **Sähköinen raportointi**.
-2.  Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) -menettelyn vaiheet.
-3.  Valitse **Raportointikonfiguraatiot**.
+1.    Valitse **Kaikki työtilat** > **Sähköinen raportointi**.
+2.    Varmista, että Litware, Inc. -malliyrityksen konfiguraation lähde on käytettävissä ja merkitty **aktiiviseksi**. Jos konfiguraation lähde ei ole näkyvissä, suorita [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) -menettelyn vaiheet.
+3.    Valitse **Raportointikonfiguraatiot**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Uuden tietomallin konfiguraation luominen
-1.  Avaa valintaikkuna valitsemalla **Luo konfigurointi**.
-2.  Kirjoita **Nimi**-kenttään Xml-tiedoston tuontimalli.
-3.  Valitse **Luo konfiguraatio**.
-4.  Valitse **Suunnittelutoiminto**.
-5.  Avaa valintaikkuna valitsemalla **Uusi**.
-6.  Kirjoita **Nimi**-kenttään Juuri.
-7.  Valitse **Lisää**.
-8.  Avaa valintaikkuna valitsemalla **Uusi**.
-9.  Kirjoita **Nimi**-kenttään Luettelo.
-10. Valitse **Nimiketyyppi**-kentässä **Tietueluettelo**.
-11. Valitse **Lisää**.
-12. Avaa valintaikkuna valitsemalla **Uusi**.
-13. Kirjoita **Nimi**-kenttään Koodi.
-14. Valitse **Nimiketyyppi**-kentässä **Merkkijono**.
-15. Valitse **Lisää**.
-16. Valitse **Tallenna**.
-17. Sulje sivu.
-18. Valitse **Muuta tila**.
-19. Valitse **Valmis**.
-20. Valitse **OK**.
+1.    Avaa valintaikkuna valitsemalla **Luo konfigurointi**.
+2.    Kirjoita **Nimi**-kenttään Xml-tiedoston tuontimalli.
+3.    Valitse **Luo konfiguraatio**.
+4.    Valitse **Suunnittelutoiminto**.
+5.    Avaa valintaikkuna valitsemalla **Uusi**.
+6.    Kirjoita **Nimi**-kenttään Juuri.
+7.    Valitse **Lisää**.
+8.    Avaa valintaikkuna valitsemalla **Uusi**.
+9.    Kirjoita **Nimi**-kenttään Luettelo.
+10.    Valitse **Nimiketyyppi**-kentässä **Tietueluettelo**.
+11.    Valitse **Lisää**.
+12.    Avaa valintaikkuna valitsemalla **Uusi**.
+13.    Kirjoita **Nimi**-kenttään Koodi.
+14.    Valitse **Nimiketyyppi**-kentässä **Merkkijono**.
+15.    Valitse **Lisää**.
+16.    Valitse **Tallenna**.
+17.    Sulje sivu.
+18.    Valitse **Muuta tila**.
+19.    Valitse **Valmis**.
+20.    Valitse **OK**.
 
 ## <a name="create-a-format-for-data-import"></a>Tietojen tuontimuodon luominen
-1.  Avaa valintaikkuna valitsemalla **Luo konfigurointi**.
-2.  Kirjoita **Uusi**-kenttään Muoto perustuu tietomalliin Xml-tiedoston tuontimalli.
-3.  Kirjoita **Nimi**-kenttään Xml-tiedoston tuontimuoto.
-4.  Valitse **Tukee tietojen tuontia** -kentässä **Kyllä**.
-5.  Valitse **Luo konfiguraatio**.
+1.    Avaa valintaikkuna valitsemalla **Luo konfigurointi**.
+2.    Kirjoita **Uusi**-kenttään Muoto perustuu tietomalliin Xml-tiedoston tuontimalli.
+3.    Kirjoita **Nimi**-kenttään Xml-tiedoston tuontimuoto.
+4.    Valitse **Tukee tietojen tuontia** -kentässä **Kyllä**.
+5.    Valitse **Luo konfiguraatio**.
 
 ## <a name="design-a-format-to-parse-incoming-file-in-xml-format"></a>Muodon suunnitteleminen jäsentämään saapuvan tiedosto xml-muodossa
-1.  Valitse **Suunnittelutoiminto**.
-2.  Avaa valintaikkuna valitsemalla **Lisää juuri**.
-3.  Valitse puussa **XML\Elementti**.
-4.  Kirjoita **Nimi**-kenttään root.
-5.  Valitse **OK**.
-6.  Avaa valintaikkuna valitsemalla **Lisää**.
-7.  Valitse puussa **XML\Elementti**.
-8.  Kirjoita **Nimi**-kenttään document.
-9.  Valitse **Monimuotoisuus**-kentässä **Yksi tai useita**.
-10. Valitse **OK**.
-11. Valitse puussa **root\document**.
-12. Avaa valintaikkuna valitsemalla **Lisää**.
-13. Valitse puussa **XML\Määrite**.
-14. Kirjoita **Nimi**-kenttään ID.
-15. Valitse **OK**.
-16. Valitse **Tallenna**.
+1.    Valitse **Suunnittelutoiminto**.
+2.    Avaa valintaikkuna valitsemalla **Lisää juuri**.
+3.    Valitse puussa **XML\Elementti**.
+4.    Kirjoita **Nimi**-kenttään root.
+5.    Valitse **OK**.
+6.    Avaa valintaikkuna valitsemalla **Lisää**.
+7.    Valitse puussa **XML\Elementti**.
+8.    Kirjoita **Nimi**-kenttään document.
+9.    Valitse **Monimuotoisuus**-kentässä **Yksi tai useita**.
+10.    Valitse **OK**.
+11.    Valitse puussa **root\document**.
+12.    Avaa valintaikkuna valitsemalla **Lisää**.
+13.    Valitse puussa **XML\Määrite**.
+14.    Kirjoita **Nimi**-kenttään ID.
+15.    Valitse **OK**.
+16.    Valitse **Tallenna**.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Muodon yhdistämisen suunnitteleminen tallentamaan jäsennetty tieto tietomalliin
 1. Valitse **Yhdistä muoto malliin**.
@@ -90,15 +90,15 @@ Seuraavissa vaiheissa käsitellään, miten järjestelmänvalvojan tai sähköis
 7. Valitse **Suunnittelutoiminto**.
 8. Laajenna puussa **format**.
 9. Laajenna puussa **format\root: XML Element(root)**.
-10. Valitse puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)**.
-11. Valitse **Sido**.
-12. Laajenna puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)**.
-13. Valitse puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)\id**.
-14. Laajenna puussa **List = format.root.document**.
-15. Valitse puussa **List = format.root.document\Code**.
-16. Valitse **Sido**.
-17. Valitse **Tallenna**.
-18. Sulje sivu.
+10.    Valitse puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)**.
+11.    Valitse **Sido**.
+12.    Laajenna puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)**.
+13.    Valitse puussa **format\root: XML Element(root)\document: XML Element 1..* (tiedosto)\id**.
+14.    Laajenna puussa **List = format.root.document**.
+15.    Valitse puussa **List = format.root.document\Code**.
+16.    Valitse **Sido**.
+17.    Valitse **Tallenna**.
+18.    Sulje sivu.
  
 ## <a name="run-format-mapping"></a>Muodon yhdistämisen suorittaminen
 1. Valitse **Suorita**.

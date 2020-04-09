@@ -3,7 +3,7 @@ title: Tuotetunnukset
 description: Tässä ohjeaiheessa on tietoja erityyppisistä tuotetunnisteista ja selitetään tuotetunnisteiden lisäämiseen tuotetietoihin.
 author: cvocph
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
-ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
+ms.openlocfilehash: 0aa8baf5802ccdd9a502e2a7d291a76fc4afe932
+ms.sourcegitcommit: d91d96c98b31ae59bc82ec91efbb7da86ffb25fa
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095614"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172022"
 ---
-# <a name="product-identifiers"></a>Tuotetunnukset 
+# <a name="product-identifiers"></a>Tuotetunnukset
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ Kun käsittelet tuotteita Microsoft Dynamics ERP:n tai Microsoft Dynamics CRM:n 
 
 ## <a name="unique-product-numberproduct-id"></a>Yksilöivä tuotenumero tai tuotetunnus
 
-Dynamics 365 Supply Chain Managementissa tuotteen ensisijainen tunniste on tuotenumero (joka on sama kuin yksilöivä tuotetunnus). Numerosarja voi muodostaa numeron automaattisesti tai se voidaan liittää tuotteeseen manuaalisesti. Tuotevarianttien numerot voidaan määrittää tuotenimikkeistömallin kautta.
+Dynamics 365 Supply Chain Managementissa tuotteen ensisijainen tunniste on tuotenumero (joka on sama kuin yksilöivä tuotetunnus). Numerosarja voi muodostaa numeron automaattisesti tai liittää tuotteeseen manuaalisesti. Tuotevarianttien numerot voidaan määrittää tuotenimikkeistömallin kautta.
 
 Tuotenumeroa ei usein ole luotu alun perin Dynamics 365 Supply Chain Management -sovelluksessa. Sen sijaan se liitetään tuotteen elinkaaren hallinta (PLM)- tai tuotteen tiedonhallinta (PDM) -järjestelmään. Tässä tapauksessa tietoyksiköitä käytetään tuotteiden ja tuotevarianttien tuonnissa. Supply Chain Management käyttää sitten numeroita kaikissa toiminnoissa.
 
@@ -46,13 +46,16 @@ Kun käytät Common Data Servicea, Supply Chain Managementissa oleva tuotenumero
 
 ## <a name="item-number-and-product-dimensions"></a>Nimikenumero ja tuotedimensiot
 
-Nimiketunnus on tuotteen tunniste, jota tietty yritys käyttää. Nimikenumeron tulisi olla sama kuin tuotenumero. Jos nimikkeistö on erilainen yrityksen mukaan, tuotetta on vaikea seurata toimitusketjussa. Tällöin joudutaan myös määrittämään tuotteille uudet etiketit ja ottamaan käyttöön viiteprosessit. Tämä malli on säilytetty, koska se on yhteensopiva vanhempien versioiden kanssa (Microsoft Dynamics AX 2009 ja aiemmat versiot) Suosittelemme kuitenkin yrityskohtaisten tunnisteiden poistamista mahdollisuuksien mukaan. Ensisijaisena tunnisteena kannattaa sen sijaan käyttää yksilöivää tuotenumeroa.
+Nimiketunnus on tuotteen tunniste, jota tietty yritys käyttää. Nimikenumeron tulisi olla sama kuin tuotenumero. Jos nimikkeistö on erilainen yrityksen mukaan, tuotetta on vaikea seurata toimitusketjussa. Tällöin joudutaan myös määrittämään tuotteille uudet etiketit ja ottamaan käyttöön viiteprosessit. Tämä malli on säilytetty, koska se on yhteensopiva vanhempien versioiden kanssa (Microsoft Dynamics AX 2009 ja aiemmat versiot). Suosittelemme kuitenkin yrityskohtaisten tunnisteiden poistamista mahdollisuuksien mukaan. Ensisijaisena tunnisteena kannattaa sen sijaan käyttää yksilöivää tuotenumeroa.
 
 Lisäksi tuotevarianttia ei voi yksilöidä nimikenumeron mukaan. Tämä vaatii aina sen nimikenumeron ja kaikkien niiden tuotedimensioiden yhdistelmän, jotka on määritetty päätuotteessa. Tämä edellytys voi muuttua raskaaksi ja hidastaa tunnistamisprosesseja. Myös tästä syystä suositteleme, että nimikenumeron sijaan käytetään yksilöivää tuotenumeroa mahdollisuuksien mukaan.
 
 Useiden sivujen ensisijaiset tunnisteet ovat yhä nimikenumero ja tuotedimensiot. Tuotenumeroita voi kuitenkin käyttää hauissa. Voit muuttaa hakuvalintaa kohdassa **Myynti ja markkinointi** &gt; **Asetukset** &gt; **Haku** &gt; **Hakuparametrit** niin, että se käyttää ensisijaisessa hakustrategiassa tuotenumeroita nimikenumeroiden sijaan. Jos määrität **Ota tuotteiden haku käyttöön** -asetuksen arvoksi **Kyllä**, haku näyttää vain päätuotteet, ei tuotevariantteja. Lisätietoja on kohdassa [Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana](search-products-product-variants.md).
 
 Haun ja suodatuksen voi tehdä myös tuotenumeron, tuotteen nimen ja kuvauksen sekä tuotevariantin tuotedimension tunnusten mukaan. Kun valitset variantin, liittyvä nimiketunnus ja kaikki tuotedimension tunnukset valitaan. Tämä helpottaa oikean variantin etsimistä ja valitsemista. Tämä asetuksen käyttö on erittäin suositeltavaa, jos käytät tuotevariantteja ja yksilöivää tuotetunnusta tuotteiden ensisijaisina tunnisteina. Ainoa poikkeus voi olla muotiala, jossa liiketoimintaprosessien usein edellyttävät päätuotteen valitsemista ennen varianttia. Arvioi tämä vaihtoehto huolellisesti, ennen kuin otat numerointijärjestelmän käyttöön.
+
+> [!NOTE]
+> Tuotteen nimiketunnusta ei voi muuttaa, kun kyseiselle tuotteelle on olemassa yksi tai useampia tapahtumia.
 
 ## <a name="product-name-and-description"></a>Tuotteen nimi ja kuvaus
 
@@ -123,7 +126,7 @@ Ulkoisten koodien avulla tehtävään tuotehakuun ei ole valitettavasti mitään
 | Tuotteet V2 | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero voidaan luoda automaattisesti tuonnin yhteydessä tuotenumeron yksiköstä ja numerosarjasta riippuen. |
 | Tuotevariantit | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus | Tuotenumero voidaan luoda automaattisesti tuonnin yhteydessä tuotenimikkeistömallista riippuen. Voit kuitenkin tuoda minkä tahansa tuotenumeron. Tuotenumeron ei tarvitse noudattaa tuotenimikkeistömallin rakennetta. |
 | Tuotekäännökset | Tuotteen nimi, tuotteen kuvaus | Tuotteen nimi, tuotteen kuvaus | Tämä yksikkö korvaa minkä tahansa kielen. Huomaa, että kun yrityksen ensisijaisen kielen kuvaus on korvattu, tuotteen nimi ja kuvaus muuttuvat. |
-| Vapautetut tuotteet V2 | Nimikenumero, tuotenumero, nimikkeen haun nimi| Nimikenumero, tuotenumero, nimikkeen haun nimi, tuotteen haun nimi, tuotteen nimi | Tämä yksikkö voi olla haastava, kun numerosarjoja käytetään luotaessa uusia vapautettuja tuotteita. Sekä **nimikenumeron** että **tuotenumeron** numerosarjalla on vaikutusta. **Nimikenumeron** numerosarja on yrityskohtainen, kun taas **tuotenumeron** numerosarja on yleinen. Tämän vuoksi **Nimiketunnus**-numerosarjan käyttöä ei suositella otettaessa käyttöön uusia tuotteita. Kun yksikköä käytetään aiemmin luodun tuotteen julkaisussa, yksikölle on tietysti annettava tuotenumero. Lisätietoja on tämän ohjeaiheen Tuotteiden ja nimikkeiden numerosarjat -osassa. |
+| Vapautetun tuotteen luominen V2 | Nimikenumero, tuotenumero, nimikkeen haun nimi| Nimikenumero, tuotenumero, nimikkeen haun nimi, tuotteen haun nimi, tuotteen nimi | Tämä yksikkö voi olla haastava, kun numerosarjoja käytetään luotaessa uusia vapautettuja tuotteita. Sekä **nimikenumeron** että **tuotenumeron** numerosarjalla on vaikutusta. **Nimikenumeron** numerosarja on yrityskohtainen, kun taas **tuotenumeron** numerosarja on yleinen. Tämän vuoksi **Nimiketunnus**-numerosarjan käyttöä ei suositella otettaessa käyttöön uusia tuotteita. Kun yksikköä käytetään aiemmin luodun tuotteen julkaisussa, yksikölle on tietysti annettava tuotenumero. Lisätietoja on tämän ohjeaiheen Tuotteiden ja nimikkeiden numerosarjat -osassa. |
 | Vapautetut tuotevariantit | Nimikenumero, tuotedimensiot, tuotenumero | Tuotenumero, tuotteen haun nimi, tuotteen nimi, tuotteen kuvaus, tuotteen dimensiot | Tätä yksikköä voi käyttää **Tuotevariantit**-yksikön tapaan, kun uusia tuotteita luodaan joko tuotenimikkeistömallin seuraamista tai variantin omien tuotenumeroiden käyttämistä varten. |
 | Asiakkaiden ulkoinen nimikekuvauus | Asiakkaan nimikenumero, asiakkaan nimikkeen nimi, asiakkaan kuvaus, asiakastili | Asiakkaan nimikenumero, asiakkaan nimikkeen nimi, asiakkaan kuvaus, asiakastili | Asiakkaista koostuva ryhmä (esimerkiksi ostajayhdistys) voidaan koota yhdeksi ryhmäksi **Ulkoisen nimikekuvauksen asiakasryhmät** -yksikön avulla. |
 | Toimittajien ulkoinen nimikekuvaus | Toimittajan nimikkeen tunnus, toimittajan nimikkeen nimi, toimittajan kuvaus, toimittajatili | Toimittajan nimikkeen tunnus, toimittajan nimikkeen nimi, toimittajan kuvaus, toimittajatili | Toimittajista koostuva ryhmä (esimerkiksi myyntiyhdistys toimialan organisaatio) tai voidaan koota yhdeksi ryhmäksi **Ulkoisen nimikekuvauksen toimittajaryhmät** -yksikön avulla. |
@@ -144,7 +147,7 @@ Voit määrittää kaksi eri numerosarjaa:
 > [!NOTE]
 > Käytä nimiketunnusta erillisenä tunnisteena vain, kun siirrät eri yrityksiä sellaisista erillistä lähteistä, joissa on ollut erilaiset numerointijärjestelmät. Yritä aina käyttää tuotetunnistetta, joka on yksilöivä kaikissa yrityksissä. Valitse tämän vuoksi **Nimiketunnus**-numerosarjan **Manuaalinen**-asetukseksi **Kyllä**. Näin nimikenumero seuraa tuotenumeroa luonnin yhteydessä. Jos Supply Chain Management ei ole uusien tuotenumeroiden johtava järjestelmä, määritä **Manuaalinen**-vaihtoehdon arvoksi **Kyllä** sekä **nimikenumeron** että **tuotenumeron** numerosarjoille.
 
-Kun luot tuotteita **Vapautetut tuotteet V2** -yksiköllä, useat asetukset voivat vaikuttaa siihen, miten tuote- ja nimiketunnus luodaan numerosarjojen avulla:
+Kun luot tuotteita **Vapautetut tuotteenluonnit V2** -yksiköllä, useat asetukset voivat vaikuttaa siihen, miten tuote- ja nimiketunnus luodaan numerosarjojen avulla:
 
 - **Tuotetunnus**-numerosarjan asetukset
 - **Nimiketunnus**-numerosarjan asetukset
@@ -155,9 +158,9 @@ Seuraavassa taulukossa on yhteenveto tuonnin ja manuaalisen luonnin tulokset, ku
 
 | Tuotenumeron numerosarja | Nimikenumeron numerosarja | Nimikenumeron yhdistämismääritys | Tuotenumeron yhdistämismääritys | Yksikön tuonnin tulos | Manuaalisen luonnin tulos | Johtopäätökset |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
-| Manuaalinen = ei | Manuaalinen = ei | Ei vastaavuusmäärityksiä | Ei vastaavuusmäärityksiä | Tuotenumerot käyttävät **tuotenumeron** numerosarjaa. Nimikenumerot käyttävät **nimikenumeron** numerosarjaa. | Tuotenumerot käyttävät **tuotenumeron** numerosarjaa. Nimikenumerot käyttävät **nimikenumeron** numerosarjaa. | Näitä asetuksia voi käyttää, jos tarvitset tuotteille ja nimikkeille eri numerot. Emme kuitenkaan suosittele eri numeroita nimikkeille ja tuotteille. |
-| Manuaalinen = ei | Manuaalinen = kyllä | Luo automaattisesti | Ei vastaavuusmäärityksiä | Sekä tuote- että nimikenumeroissa käytetään **nimikenumeron** numerosarjaa. | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Näiden asetusten käyttöä ei suositella. Tuonti ja manuaalinen luonti toimivat eri tavalla. |
-| Manuaalinen = ei | Manuaalinen = kyllä | Ei vastaavuusmäärityksiä | Ei vastaavuusmäärityksiä | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Näiden asetusten käyttöä suositellaan, jos tuotteissa on oltava yhdenmukainen automaattinen numerointi riippumatta siitä, onko käytössä tuonti vai manuaalinen luonti. |
+| Manuaalinen = ei | Manuaalinen = ei | Ei vastaavuusmäärityksiä | Ei vastaavuusmäärityksiä | Tuotenumerot käyttävät **tuotenumeron** numerosarjaa. Nimikenumerot käyttävät **nimikenumeron** numerosarjaa. | Tuotenumerot käyttävät **tuotenumeron** numerosarjaa. Nimikenumerot käyttävät **nimikenumeron** numerosarjaa. | Tämän konfiguroinnin yhteydessä tuotenumerot noudattavat tuotenumerosarjaa, ja nimiketunnukset noudattavat nimiketunnusjärjestystä. Tämä määritys ei kuitenkaan toimi, jos tuotavia kohteita on useita (rivejä). |
+| Manuaalinen = ei | Manuaalinen = kyllä | Luo automaattisesti | Ei vastaavuusmäärityksiä | Sekä tuote- että nimikenumeroissa käytetään **nimikenumeron** numerosarjaa. | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Sekä tuote- että nimikenumerot seuraavat tuotenumeron numerosarjaa. Tämä on suositeltu tapa tuoda bulkkituotteet vapautetun Product Creation v2 -tietoyksikön avulla. |
+| Manuaalinen = ei | Manuaalinen = kyllä | Ei vastaavuusmäärityksiä | Ei vastaavuusmäärityksiä | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Sekä tuote- että nimikenumeroissa käytetään **tuotenumeron** numerosarjaa. | Sekä tuote- että nimikenumerot käyttävät tuotenumeron numerosarjaa. Tämä määritys ei kuitenkaan toimi, jos tuotavia kohteita on useita (rivejä). |
 | Manuaalinen = kyllä | Ei käytettävissä | Ei käytettävissä | Luo automaattisesti | Näyttöön tulee virhesanoma, jonka mukaan numerosarjaa ei löydetä. | **Nimikenumeron** numerosarjan mukaan | Tätä asetusta ei tueta tuonnin yhteydessä. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Tuoteyksikön tunniste (vie kaikki tuotetunnisteet)

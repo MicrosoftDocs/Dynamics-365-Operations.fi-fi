@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bce2674b321475bc516724f74bac2d3a648e257
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 81ebd845d9900d891b17618b3719d45060a1968f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843358"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148420"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Tilausten lähettäminen suoratoimituksina
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tässä aiheessa käsitellään, miten myyntitilaukselle luodaan suoratoimitus. Käytät suoratoimitusta, kun haluat lähettää tavarat asiakkaalle suoraan toimittajalta sen sijaan, että ne lähetettäisiin ensin omaan varastoon. Voit suorittaa tämän menettelyn esittely-yrityksen USMF kanssa tai käyttää omia tietojasi. Toisen Luo suoratoimitukset suoraan työtilasta -alitehtävän suorittaminen edellyttää, että myyntitilauksessa valitsemaasi nimikkeeseen on määritetty oletustoimittaja vapautetun päätuotteen oston pikavälilehdessä.
 

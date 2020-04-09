@@ -19,48 +19,61 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 587a9b98f28b11e303aff4b59e9726f220d956eb
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: ffd7a4c01810578b4abb6942aeff76e5147fafa9
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019753"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173036"
 ---
 # <a name="switch-between-vendor-designs"></a>Toimittajan mallien välillä siirtyminen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 ## <a name="vendor-data-flow"></a>Toimittajatietojen virta 
 
-Jos käytät muita Dynamics 365 -sovelluksia toimittajatietojen päähallintaan ja haluat eristää toimittajan tiedot asiakastiedoista, käytä tätä perustoimittajarakennetta.  
+Jos päätät käyttää **Tili**-yksikköä, kun haluat tallentaa **Organisaatio**-tyypin ja **Yhteyshenkilö**-yksikön **Henkilö**-tyypin myymälätoimittajia, määritä seuraavat työnkulut. Muussa tapauksessa tätä kokoonpanoa ei tarvita.
 
-![Toimittajan perustyönkulku](media/dual-write-vendor-data-flow.png)
- 
-Jos käytät Dynamics 365 -sovelluksia toimittajatietojen päähallintaan ja jatkat toimittajan tietojen tallentamista **Tili**-yksikköön, käytä tätä uutta laajennettua toimittajarakennetta. Tässä rakenteessa laajennetut toimittajatiedot, kuten toimittajan pidossaolotila ja toimittajan profiili, tallennetaan **toimittajat**-yksikköön Common Data Servicessa. 
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-organization-type"></a>Käytä laajennettua toimittajan rakennetta organisaatiotyypin toimittajille
 
-![Laajennettu toimittajatyönkulku](media/dual-write-vendor-detail.jpg)
- 
-Käytä laajennettua toimittajarakennetta seuraavien ohjeiden mukaisesti: 
- 
-1. **SupplyChainCommon**-ratkaisupaketti sisältää työnkulun prosessimallit, jotka näkyvät seuraavassa kuvassa.
-    > [!div class="mx-imgBorder"]
-    > ![Työnkulun prosessimallit](media/dual-write-switch-3.png)
-2. Uusien työnkulkuprosessien luominen työnkulun prosessimallien avulla: 
-    1. Luo **Toimittaja**-yksikön uusi työnkulkuprosessi käyttämällä työnkulun **Luo toimittajia tiliyksikössä** -prosessimallia ja valitse **OK**. Tämä työnkulku käsittelee **Tilli**-yksikön toimittajan luontiskenaarion.
-        > [!div class="mx-imgBorder"]
-        > ![Toimittajien luonti Tili-yksikössä](media/dual-write-switch-4.png)
-    2. Luo **Toimittaja**-yksikön uusi työnkulkuprosessi käyttämällä työnkulun **Päivitä tiliyksikkö** -prosessimallia ja valitse **OK**. Tämä työnkulku käsittelee **Tilli**-yksikön toimittajan päivitysskenaarion. 
-        > [!div class="mx-imgBorder"]
-        > ![Tiliyksikön päivittäminen](media/dual-write-switch-5.png)
-    3. Luo uusia työnkulkuprosesseja **Tilit**-yksikössä luoduista malleista. 
-        > [!div class="mx-imgBorder"]
-        > ![Toimittajien luonti toimittajat-yksikössä](media/dual-write-switch-6.png)
-        > [!div class="mx-imgBorder"]
-        > ![Toimittajat-yksikön päivittäminen](media/dual-write-switch-7.png)
-    4. Voit määrittää työnkulut tarpeen mukaan reaaliaikaisiksi tai taustatyönkuluiksi. 
-        > [!div class="mx-imgBorder"]
-        > ![Taustatyönkuluksi muuntaminen](media/dual-write-switch-8.png)
-    5. Aktivoi **Tili**- ja **Toimittaja**-yksiköissä luodut työnkulut ja aloita **Tili**-yksikön käyttäminen toimittajatietojen tallentamiseen. 
- 
+**Dynamics365FinanceExtended**-ratkaisupaketti sisältää seuraavat työnkulkuprosessin mallit. Kullekin mallille luodaan työnkulku.
+
++ Toimittajien luonti Tilit-yksikössä
++ Toimittajien luonti toimittajat-yksikössä
++ Toimittajien päivittäminen Tilit-yksikössä
++ Toimittajien päivittäminen toimittajat-yksikössä
+
+Noudata näitä vaiheita, kun haluat luoda uusia työnkulkuprosesseja työnkulun prosessimallien avulla:
+
+1. Luo uusi työnkulkuprosessi **Toimittaja**-yksikölle ja valitse **Luo toimittajia tiliyksikössä** -työnkulun prosessimalli. Valitse sitten **OK**. Tämä työnkulku käsittelee **Tilli**-yksikön toimittajan luontiskenaarion.
+
+    ![Toimittajien luonti Tilit-yksikön työnkulkuprosessissa](media/create_process.png)
+
+2. Luo uusi työnkulkuprosessi **Toimittaja**-yksikölle ja valitse **Päivitä toimittajia tiliyksikössä** -työnkulun prosessimalli. Valitse sitten **OK**. Tämä työnkulku käsittelee **Tilli**-yksikön toimittajan päivitysskenaarion.
+3. Luo uusi työnkulkuprosessi **Tili**-yksikölle ja valitse **Luo toimittajia toimittajayksikössä** -työnkulun prosessimalli.
+4. Luo uusi työnkulkuprosessi **Tili**-yksikölle ja valitse **Päivitä toimittajia toimittajayksikössä** -työnkulun prosessimalli.
+5. Voit määrittää työnkulut vaatimuksistasi riippuen joko reaaliaikaisiksi työnkuluiksi tai taustatyönkuluiksi. Jos haluat määrittää työnkulun taustatyönkuluksi, valitse **Muunna taustatyönkuluksi**.
+
+    ![Muunna taustatyönkuluksi -painike](media/background_workflow.png)
+
+6. Aktivoi **Tili**- ja **Toimittaja**-yksiköissä luodut työnkulut, jotta voit alkaa käyttää **Tili**-yksikköä **Organisaatio**-tyyppisten toimittajien tietojen tallentamiseen.
+
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-person-type"></a>Käytä laajennettua toimittajan rakennetta henkilötyypin toimittajille
+
+**Dynamics365FinanceExtended**-ratkaisupaketti sisältää seuraavat työnkulkuprosessin mallit. Kullekin mallille luodaan työnkulku.
+
++ Luo henkilötyyppisiä toimittajia toimittajayksikköön
++ Luo henkilötyyppisiä toimittajia yhteyshenkilöyksikköön
++ Päivitä henkilötyyppisiä toimittajia yhteyshenkilöyksikköön
++ Päivitä henkilötyyppisiä toimittajia toimittajayksikköön
+
+Noudata näitä vaiheita, kun haluat luoda uusia työnkulkuprosesseja työnkulun prosessimallien avulla:
+
+1. Luo uusi työnkulkuprosessi **Toimittaja**-yksikölle ja valitse **Luo henkilötyyppisiä toimittajia yhteyshenkilöyksikössä** -työnkulun prosessimalli. Valitse sitten **OK**. Tämä työnkulku käsittelee **Yhteyshenkilö**-yksikön toimittajan luontiskenaarion.
+2. Luo uusi työnkulkuprosessi **Toimittaja**-yksikölle ja valitse **Päivitä henkilötyyppisiä toimittajia yhteyshenkilöyksikössä** -työnkulun prosessimalli. Valitse sitten **OK**. Tämä työnkulku käsittelee **Yhteyshenkilö**-yksikön toimittajan päivitysskenaarion.
+3. Luo uusi työnkulkuprosessi **Yhteyshenkilö**-yksikölle ja valitse **Luo henkilötyyppisiä toimittajia yhteyshenkilöyksikössä** -työnkulun prosessimalli.
+4. Luo uusi työnkulkuprosessi **Yhteyshenkilö**-yksikölle ja valitse **Päivitä henkilötyyppisiä toimittajia yhteyshenkilöyksikössä** -työnkulun prosessimalli.
+5. Voit määrittää työnkulut vaatimuksistasi riippuen joko reaaliaikaisiksi työnkuluiksi tai taustatyönkuluiksi. Jos haluat määrittää työnkulun taustatyönkuluksi, valitse **Muunna taustatyönkuluksi**.
+6. Aktivoi **Yhteyshenkilö**- ja **Toimittaja**-yksiköissä luodut työnkulut, jotta voit alkaa käyttää **Yhteyshenkilö**-yksikköä **Henkilö**-tyyppisten toimittajien tietojen tallentamiseen.

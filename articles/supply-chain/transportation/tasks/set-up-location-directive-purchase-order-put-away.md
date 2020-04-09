@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aea3f08ea2d1bd584448c3033aea41eca2a0e3ce
-ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
+ms.openlocfilehash: 54c75696f7147a7a4eb7b9d984936af9c28ef501
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "1870913"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146212"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Määritä sijaintidirektiivi ostotilauksen poispanolle
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tässä ohjeaiheessa käsitellään, kuinka määritetään yksinkertainen sijaintidirektiivi. Näytetyssä esimerkissä luodaan sijaintidirektiivi, jolla määrätään, mihin ostotilaukseen vastaanotetut nimikkeet määritetään. Voit toistaa tämän tehtäväopastuksen mainituilla tiedoilla käyttämällä USMF-esittely-yrityksen tietoja. Edellytykset: Sinun on luotava käsittelykoodi. Tässä menettelyssä käytetään Relabel-käsittelykoodia. Jos olet luomassa sijaintidirektiivin omissa tiedoissasi, varastonhallinnan lisäasetusten on oltava määritettynä varastolle ja nimikkeille. Tämä menettely on tarkoitettu varastopäällikölle.
 
@@ -53,7 +53,7 @@ Tässä ohjeaiheessa käsitellään, kuinka määritetään yksinkertainen sijai
 4. Kirjoita arvo **Yksikkö**-kenttään. Yksikkö, jolla Määrästä ja Määrälle ilmoitetaan. Jos kenttä jätetään tyhjäksi, nimikkeen varastoyksikkö käytetään.  
 5. Valitse **Etsi määrä** -kentässä vaihtoehto.
     - Ei mitään tai rekisterikilpien määrä: kullekin rekisterikilvelle rekisteröity määrä.  
-    - Määrä, jolle määrätty yksikkö: koko rekisteröity määrä.  
+    - - Määrä, jolle määrätty yksikkö: koko rekisteröity määrä.  
     - Jäljellä oleva määrä: ostotilausriviltä vielä rekisteröitävä määrä.  
     - Odotettu määrä: ostotilausrivillä määritetty kokonaismäärä.  
 6. Valitse **Rajoita yksikön mukaan** -valintaruutu tai poista sen valinta. Jos valitset tämän vaihtoehdon ja määrität yksikön **Rajoita yksikön mukaan** -sivulla, sijaintiin voidaan määrittää vain nimikkeet, joilla on kyseinen mittayksikkö. Jos mittayksikkö on esimerkiksi kuormalava, vain kuormalavojen nimikkeet voidaan asettaa määritettyyn sijaintiin.  

@@ -3,7 +3,7 @@ title: Dokumentaation tai koulutuksen luominen tehtävän tallennustoiminnolla
 description: Tässä ohjeaiheessa kerrotaan, mitä tehtävien tallennustoiminto ja tehtäväoppaat ovat, miten tehtävätallenteita luodaan, ja miten Microsoftin tehtäväoppaita voi mukauttaa ja sisällyttää omiin ohjeisiisi.
 author: josaw1
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 268b95aad57c2e4863a3f58cd54828dbb0e09465
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 927f6475e60b5b93aac0e0c2840cb0b4fc7f0ac8
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006192"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164555"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentaation tai koulutuksen luominen tehtävän tallennustoiminnolla
 
@@ -40,8 +40,6 @@ Tässä ohjeaiheessa kerrotaan, mitä tehtävien tallennustoiminto ja tehtäväo
 Tehtävän tallennustoiminto on työkalu, jolla voi tallentaa tuotteen käyttöliittymässä suoritetut toiminnot. Kun käytät tehtävän tallennustoimintoa, kaikki palvelimen avulla käyttöliittymässä suoritettavat tehtävät, kuten arvojen lisääminen, asetusten muuttaminen ja tietojen poistaminen, tallennetaan. Kaikkia tallennettuja vaiheita kutsutaan *tehtävätallenteeksi*. Tehtävätallenteita voidaan käyttää esimerkiksi seuraavilla tavoilla:
 
 -   **Tehtävätallenteiden toistaminen tehtävän ohjauksina.** Tehtäväoppaat ovat keskeinen osa ohjeita. Tehtäväoppaissa käsitellään hallitusti, ohjatusti ja vuorovaikutteisesti liiketoimintaprosessin eri vaiheet. Käyttäjää ohjataan kunkin vaiheen suorittamisessa ponnahduskehotteen (eli kuplan) avulla. Se esiintyy kaikkialla käyttöliittymässä ja osoittaa käyttöliittymäelementin, johon käyttäjän tulee reagoida. Kupla sisältää myös tietoja siitä, miten elementtiä käytetään, kuten Napsauta tätä tai Kirjoita tähän kenttään arvo. Tehtäväopas toimii käyttäjän nykyisen tietojoukon kanssa, ja syötetyt tiedot tallennetaan käyttäjän ympäristöön.
--   **Tehtävätallenteet voidaan näyttää menettelytapavaiheina ohjeruudussa.** Voit käyttää ohjeruutua tehtävätallenteiden hakemisessa ja näyttämisessä. Voit käyttää ohjeruutua valitsemalla siirtymispalkin yläosassa olevan **?**-painikkeen tai pikanäppäimet  **Ctrl+Vaihto+?**. Tehtävätallenteen vaiheet näkyvät ohjeruudussa. Voit myös toistaa tallenteen tehtävän ohjauksena, jolloin se ohjaa sinut käyttöliittymän läpi.
--   **Tehtävätallenteet voidaan tallentaa liiketoimintaprosessien mallintajaan (BPM).** Voit tallentaa tehtävätallenteen BPM-kirjaston hierarkian riville Lifecycle Services (LCS) -palveluissa. Tallenteesta luodaan vaiheluettelo ja liiketoimintaprosessikaavio. BPM-kirjastoon tallennetut tehtävätallenteet voidaan näyttää ohjeena.
 -   **Tehtävätallenteet voidaan tallentaa Word-asiakirjoina.** Tämä mahdollistaa tulostettavien koulutusohjeiden luomisen.
 
 Voit luoda omia tehtävätallenteita, toistaa Microsoftin tehtävätallenteita tai muokata Microsoftin toimittamia tehtävätallenteita omaa konfiguraatiota vastaaviksi. Lisätietoja tehtävien tallennustoiminnosta on kohdassa [Tehtävien tallennustoiminto](task-recorder.md).
@@ -114,8 +112,7 @@ Voit ladata ja muokata Microsoftin tehtävätallenteita, kun haluat käyttää n
 10. Kun olet päässyt tallenteen toistossa loppuun, valitse näytön yläosassa olevan tehtävän tallennustoiminnon palkissa **Pysäytä**.
 11. Määritä tehtävätallenteen tallennustapa.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Tehtävätallenteiden sisällyttäminen ohjeruutuun
-Voit näyttää omat mukautetut tehtävätallenteen ohjeruudussa tehtävän ohjauksina toistettavina tai tekstinä tarkasteltavina. Tallenna tehtävätallenteet ensin omaan BPM-kirjastoon ja päivitä ohjejärjestelmän parametrit niin, että ne osoittavat BPM-kirjastoon. Lisätietoja on kohdassa [Yhteyden muodostaminen ohjejärjestelmään](../../fin-ops/get-started/help-connect.md).
+
 
 <a name="additional-resources"></a>Lisäresurssit
 --------
