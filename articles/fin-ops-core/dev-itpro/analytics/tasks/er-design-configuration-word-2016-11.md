@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 327f03435ab55551953fd998dd89c831c76c4c26
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 208b1be20a8833afbf4929a7ceda706aeb5bda3b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182597"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142083"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Suunnittele ER-konfiguraatiot voidaksesi luoda raportteja Word-muodossa
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Seuraavissa vaiheissa selitetään, miten käyttäjä, jolla on järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooli, voi määrittää sähköisen raportoinnin (ER) muotoja luomaan raportteja Microsoft Word -tiedostoina. Nämä vaiheet voidaan suorittaa GBSI-yrityksessä.
 
@@ -39,7 +39,7 @@ Nämä ohjeet koskevat toimintoa, joka lisättiin Microsoft Dynamics 365 for Ope
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>Aiemmin luodun ER-raporttimäärityksen valitseminen
-1. Siirry kohtaan **siirtymisruutu > Moduulit > organisaation hallinto > Työtilat > Sähköinen raportointi**. Varmista, että konfiguraation lähde, Litware Inc., on valittu aktiiviseksi.  
+1. Siirry kohtaan **siirtymisruutu > Moduulit > organisaation hallinto > Työtilat > Sähköinen raportointi**. Varmista, että konfiguraation lähde, Litware Inc. on valittu aktiiviseksi.  
 2. Valitse **Raportointikonfiguraatiot**. Käytämme aiemmin luotuja ER-määrityksiä, jotka on alun perin suunniteltu luomaan raportti OPENXML-muodossa.  
 3. Laajenna puussa solmu Payment model.
 4. Valitse puusta Maksumalli\Laskentataulukkoraportin esimerkki.

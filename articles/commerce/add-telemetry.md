@@ -3,7 +3,7 @@ title: Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi
 description: Tässä ohjeaiheessa kerrotaan, miten asiakaspuolen komentosarjakoodi lisätään sivustosivuille tukemaan asiakaspuolen telemetriatietojen keräämistä.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 674d00faf1b30f87a0b0062129e1b9fbff955dd4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001274"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154083"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Komentosarjakoodin lisääminen sivuston sivuihin telemetrian tukemiseksi
-
 
 [!include [banner](includes/banner.md)]
 
@@ -38,25 +37,72 @@ Web Analytics on tärkeä työkalu, kun halutaan ymmärtää, miten asiakkaat k�
 > [!NOTE]
 > Tämän ohjeaiheen ohjeet koskevat myös muita mukautettuja asiakaspuolen toimintoja, joita Microsoft Dynamics 365 Commerce ei tarjoa suoraan.
 
-## <a name="create-a-reusable-fragment-for-your-script-code"></a>Uudelleenkäytettävän osan luominen komentosarjakoodia varten
+## <a name="create-a-reusable-page-fragment-for-your-script-code"></a>Uudelleenkäytettävän sivun luominen komentosarjakoodia varten
 
-Kun olet luonut osan komentosarjakoodille, sitä voidaan käyttää uudelleen kaikilla sivuston sivuilla.
+Sivun osan avulla voit käyttää uudelleen sisäistä tai ulkoista komentosarjakoodia kaikilla sivuston sivuilla riippumatta siitä, mitä mallia ne käyttävät.
 
-1. Siirry kohtaan **Osat \> Uusi sivun osa**.
-2. Valitse **Ulkoinen komentosarja**, kirjoita osan nimi ja valitse sitten **OK**.
-3. Valitse osahierarkiassa **komentosarjan lisäystoiminto** -moduulin osan alitaso, jonka loit juuri.
-4. Lisää asiakaspuolen komentosarja oikealla olevaan ominaisuusruutuun ja määritä muut tarvittavat määritysvaihtoehdot.
+### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a>Uudelleenkäytettävän sivun luominen sisäistä komentosarjakoodia varten
 
-## <a name="add-the-fragment-to-templates"></a>Osan lisääminen malleihin
+Voit luoda uudelleenkäytettävän sivun osan sisäistä komentosarjakoodia varten sivustonmuodostimessa seuraavasti:
+
+1. Siirry kohtaan **Sivun osat** ja **Uusi**.
+1. Valitse **Uusi sivun osa** -valintaikkunassa **Sisäinen komentosarja**.
+1. Kirjoita **Sivun osan nimi** -kohtaan osan nimi ja valitse sitten **OK**.
+1. Valitse luomasi sivun osan **Oletusarvoinen sisäinen komentosarja** -moduuli.
+1. Kirjoita oikealla olevan ominaisuusruudun **Sisäinen komentosarja** -kohtaan asiakaspuolen komentosarjasi. Määritä sitten muut asetukset tarpeen mukaan.
+1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
+1. Valitse **Julkaise**.
+
+### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a>Uudelleenkäytettävän sivun luominen ulkoista komentosarjakoodia varten
+
+Voit luoda uudelleenkäytettävän sivun osan ulkoista komentosarjakoodia varten sivustonmuodostimessa seuraavasti:
+
+1. Siirry kohtaan **Sivun osat** ja **Uusi**.
+1. Valitse **Uusi sivun osa** -valintaikkunassa **Ulkoinen komentosarja**.
+1. Kirjoita **Sivun osan nimi** -kohtaan osan nimi ja valitse sitten **OK**.
+1. Valitse luomasi sivun osan **Oletusarvoinen ulkoinen komentosarja** -moduuli.
+1. Lisää ulkoisen komentosarjalähteen ulkoinen tai suhteellinen URL-osoite **Komentosarjan lähde** -kohdan oikealla puolella olevaan ominaisuusruutuun. Määritä sitten muut asetukset tarpeen mukaan.
+1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
+1. Valitse **Julkaise**.
+
+## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a>Komentosarjakoodia sisältävän sivun osan lisääminen malliin
+
+Voit lisätä sivun osan, joka sisältää komentosarjan koodin malliin sivustonmuodostimessa noudattamalla näitä vaiheita.
 
 1. Siirry **Mallit**-kohtaan ja avaa niiden sivujen malli, joihin haluat lisätä komentosarjakoodin.
-2. Laajenna vasemmanpuoleisessa ruudussa mallihierarkia, jolloin **HTML Head** -paikka.
-3. Valitse kolmen pisteen painike (**...**) **HTML Head** -paikkaa varten ja valitse sitten **Lisää osa**.
-4. Valitse komentosarjakoodille luomasi osa.
-5. Tallenna malli ja julkaise se.
+1. Laajenna vasemmanpuoleisessa ruudussa mallihierarkia, jolloin **HTML Head** -paikka.
+1. Valitse kolmen pisteen painike (**...**) **HTML Head** -paikassa ja valitse sitten **Lisää sivun osa**.
+1. Valitse komentosarjakoodille luomasi osa.
+1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
+1. Valitse **Julkaise**.
 
-> [!NOTE]
-> Kun olet valmis, sinun on julkaistava osa ja päämalli. 
+## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Ulkoisen komentosarjan tai sisäisen komentosarjan lisääminen suoraan malliin
+
+Jos haluat lisätä sisäisen tai ulkoisen komentosarjan suoraan yhden mallin hallitsemille sivuille, sinun ei tarvitse ensin luoda sivun osaa.
+
+### <a name="add-an-inline-script-directly-to-a-template"></a>Sisäisen komentosarjan lisääminen suoraan malliin
+
+Voit lisätä sisäisen komentosarjan suoraan sivustonmuodostimen malliin noudattamalla seuraavia ohjeita.
+
+1. Siirry **Mallit**-kohtaan ja avaa niiden sivujen malli, joihin haluat lisätä komentosarjakoodin.
+1. Laajenna vasemmanpuoleisessa ruudussa mallihierarkia, jolloin **HTML Head** -paikka.
+1. Valitse kolmen pisteen painike (**...**) **HTML Head** -paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Sisäinen komentosarja**.
+1. Kirjoita oikealla olevan ominaisuusruudun **Sisäinen komentosarja** -kohtaan asiakaspuolen komentosarjasi. Määritä sitten muut asetukset tarpeen mukaan.
+1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
+1. Valitse **Julkaise**.
+
+### <a name="add-an-external-script-directly-to-a-template"></a>Ulkoisen komentosarjan lisääminen suoraan malliin
+
+Voit lisätä ulkoisen komentosarjan suoraan sivustonmuodostimen malliin noudattamalla seuraavia ohjeita.
+
+1. Siirry **Mallit**-kohtaan ja avaa niiden sivujen malli, joihin haluat lisätä komentosarjakoodin.
+1. Laajenna vasemmanpuoleisessa ruudussa mallihierarkia, jolloin **HTML Head** -paikka.
+1. Valitse kolmen pisteen painike (**...**) **HTML Head** -paikassa ja valitse sitten **Lisää moduuli**.
+1. Valitse **Lisää moduuli** -valintaikkunassa **Ulkoinen komentosarja**.
+1. Lisää ulkoisen komentosarjalähteen ulkoinen tai suhteellinen URL-osoite **Komentosarjan lähde** -kohdan oikealla puolella olevaan ominaisuusruutuun. Määritä sitten muut asetukset tarpeen mukaan.
+1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
+1. Valitse **Julkaise**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
@@ -73,4 +119,3 @@ Kun olet luonut osan komentosarjakoodille, sitä voidaan käyttää uudelleen ka
 [Copyright-ilmoituksen lisääminen](add-copyright-notice.md)
 
 [Kielten lisääminen sivustoon](add-languages-to-site.md)
-
