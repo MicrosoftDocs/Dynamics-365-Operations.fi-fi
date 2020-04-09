@@ -16,62 +16,62 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 800df13e1654bc01304411bfa52f4bbd04e6589a
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042824"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142060"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a><span data-ttu-id="ec068-103">ER Tiedostonhallinnan tiedostojen käyttö muodon tuotoksissa (Osa 1 – Tietomallin valmisteleminen)</span><span class="sxs-lookup"><span data-stu-id="ec068-103">ER Use Document Management files in format outputs (Part 1 - Prepare data model)</span></span>
+# <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a><span data-ttu-id="84518-103">ER Tiedostonhallinnan tiedostojen käyttö muodon tuotoksissa (Osa 1 – Tietomallin valmisteleminen)</span><span class="sxs-lookup"><span data-stu-id="84518-103">ER Use Document Management files in format outputs (Part 1 - Prepare data model)</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ec068-104">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa.</span><span class="sxs-lookup"><span data-stu-id="ec068-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="ec068-105">Nämä vaiheet voidaan suorittaa missä tahansa yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="ec068-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="84518-104">Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän rooliin määritetty käyttäjä voi konfiguroida sähköisen raportoinnin (ER) muodon käyttämään tiedostonhallinnan tiedostoja (liitetiedostot) ER-tuotoksissa.</span><span class="sxs-lookup"><span data-stu-id="84518-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="84518-105">Nämä vaiheet voidaan suorittaa missä tahansa yrityksessä.</span><span class="sxs-lookup"><span data-stu-id="84518-105">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="ec068-106">Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista.</span><span class="sxs-lookup"><span data-stu-id="ec068-106">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.</span></span>
+<span data-ttu-id="84518-106">Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet on suoritettava ennen näiden vaiheiden suorittamista.</span><span class="sxs-lookup"><span data-stu-id="84518-106">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span>
 
-<span data-ttu-id="ec068-107">Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="ec068-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="84518-107">Nämä ohjeet koskevat toimintoa, joka lisättiin Dynamics 365 for Operations -versiossa 1611.</span><span class="sxs-lookup"><span data-stu-id="84518-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="ec068-108">Saat luettelon Microsoftin tarjoamista kokoonpanoista</span><span class="sxs-lookup"><span data-stu-id="ec068-108">Get access to the list of configurations provided by Microsoft</span></span>
-1. <span data-ttu-id="ec068-109">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="ec068-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="84518-108">Saat luettelon Microsoftin tarjoamista kokoonpanoista</span><span class="sxs-lookup"><span data-stu-id="84518-108">Get access to the list of configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="84518-109">Siirry kohtaan Organisaation hallinto > Työtilat > Sähköinen raportointi.</span><span class="sxs-lookup"><span data-stu-id="84518-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
 
-    <span data-ttu-id="ec068-110">Varmista, että Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="ec068-110">Make sure that the 'Litware, Inc.'</span></span> <span data-ttu-id="ec068-111">-lähde on käytettävissä ja merkitty aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="ec068-111">provider is available and marked as active.</span></span>  
+    <span data-ttu-id="84518-110">Varmista, että Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="84518-110">Make sure that the 'Litware, Inc.'</span></span> <span data-ttu-id="84518-111">-lähde on käytettävissä ja merkitty aktiiviseksi.</span><span class="sxs-lookup"><span data-stu-id="84518-111">provider is available and marked as active.</span></span>  
 
-2. <span data-ttu-id="ec068-112">Valitse Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="ec068-112">Select the 'Litware, Inc.'</span></span> <span data-ttu-id="ec068-113">-tarjoaja.</span><span class="sxs-lookup"><span data-stu-id="ec068-113">provider.</span></span>
-3. <span data-ttu-id="ec068-114">Valitse Säilöt.</span><span class="sxs-lookup"><span data-stu-id="ec068-114">Click Repositories.</span></span>
+2. <span data-ttu-id="84518-112">Valitse Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="84518-112">Select the 'Litware, Inc.'</span></span> <span data-ttu-id="84518-113">-tarjoaja.</span><span class="sxs-lookup"><span data-stu-id="84518-113">provider.</span></span>
+3. <span data-ttu-id="84518-114">Valitse Säilöt.</span><span class="sxs-lookup"><span data-stu-id="84518-114">Click Repositories.</span></span>
 
-    <span data-ttu-id="ec068-115">Jos säilön tyyppi "Operatiiviset resurssit" on jo olemassa, ohita tämän alitehtävän loput vaiheet.</span><span class="sxs-lookup"><span data-stu-id="ec068-115">If a repository of the 'Operations resources' type already exists, skip the remaining steps of the current sub-task.</span></span>  
+    <span data-ttu-id="84518-115">Jos säilön tyyppi "Operatiiviset resurssit" on jo olemassa, ohita tämän alitehtävän loput vaiheet.</span><span class="sxs-lookup"><span data-stu-id="84518-115">If a repository of the 'Operations resources' type already exists, skip the remaining steps of the current sub-task.</span></span>  
 
-4. <span data-ttu-id="ec068-116">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="ec068-116">Click Add to open the drop dialog.</span></span>
-5. <span data-ttu-id="ec068-117">Kirjoita Konfiguraatiosäilön tyyppi -kentän arvoksi Operatiiviset resurssit.</span><span class="sxs-lookup"><span data-stu-id="ec068-117">In the Configuration repository type field, enter 'Operations resources'.</span></span>
-6. <span data-ttu-id="ec068-118">Valitse Luo säilö.</span><span class="sxs-lookup"><span data-stu-id="ec068-118">Click Create repository.</span></span>
-7. <span data-ttu-id="ec068-119">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="ec068-119">Click OK.</span></span>
+4. <span data-ttu-id="84518-116">Avaa valintaikkuna valitsemalla Lisää.</span><span class="sxs-lookup"><span data-stu-id="84518-116">Click Add to open the drop dialog.</span></span>
+5. <span data-ttu-id="84518-117">Kirjoita Konfiguraatiosäilön tyyppi -kentän arvoksi Operatiiviset resurssit.</span><span class="sxs-lookup"><span data-stu-id="84518-117">In the Configuration repository type field, enter 'Operations resources'.</span></span>
+6. <span data-ttu-id="84518-118">Valitse Luo säilö.</span><span class="sxs-lookup"><span data-stu-id="84518-118">Click Create repository.</span></span>
+7. <span data-ttu-id="84518-119">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="84518-119">Click OK.</span></span>
 
-## <a name="get-the-customer-invoice-model-configurations-provided-by-microsoft"></a><span data-ttu-id="ec068-120">Hae Microsoftin toimittamat myyntilaskumallin konfiguraatiot</span><span class="sxs-lookup"><span data-stu-id="ec068-120">Get the Customer invoice model configurations provided by Microsoft</span></span>
-1. <span data-ttu-id="ec068-121">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="ec068-121">Click Show filters.</span></span>
-2. <span data-ttu-id="ec068-122">Käytä seuraavia suodattimia: anna suodattimeksi "Operatiivisen resurssit" Nimi-kenttään ja käytä "alkaa"-suodatinoperaattoria; kirjoita suodatinarvoksi "" Kuvaus-kenttään ja käytä "alkaa"-suodatinoperaattoria.</span><span class="sxs-lookup"><span data-stu-id="ec068-122">Apply the following filters: Enter a filter value of "Operations resources" on the "Name" field using the "begins with" filter operator; Enter a filter value of "" on the "Description" field using the "begins with" filter operator</span></span>
-3. <span data-ttu-id="ec068-123">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="ec068-123">Click Show filters.</span></span>
-4. <span data-ttu-id="ec068-124">Valitse Avaa.</span><span class="sxs-lookup"><span data-stu-id="ec068-124">Click Open.</span></span>
-5. <span data-ttu-id="ec068-125">Valitse puussa solmu "Customer invoice model".</span><span class="sxs-lookup"><span data-stu-id="ec068-125">In the tree, select 'Customer invoice model'.</span></span>
+## <a name="get-the-customer-invoice-model-configurations-provided-by-microsoft"></a><span data-ttu-id="84518-120">Hae Microsoftin toimittamat myyntilaskumallin konfiguraatiot</span><span class="sxs-lookup"><span data-stu-id="84518-120">Get the Customer invoice model configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="84518-121">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="84518-121">Click Show filters.</span></span>
+2. <span data-ttu-id="84518-122">Käytä seuraavia suodattimia: anna suodattimeksi "Operatiivisen resurssit" Nimi-kenttään ja käytä "alkaa"-suodatinoperaattoria; kirjoita suodatinarvoksi "" Kuvaus-kenttään ja käytä "alkaa"-suodatinoperaattoria.</span><span class="sxs-lookup"><span data-stu-id="84518-122">Apply the following filters: Enter a filter value of "Operations resources" on the "Name" field using the "begins with" filter operator; Enter a filter value of "" on the "Description" field using the "begins with" filter operator</span></span>
+3. <span data-ttu-id="84518-123">Valitse Näytä suodattimet.</span><span class="sxs-lookup"><span data-stu-id="84518-123">Click Show filters.</span></span>
+4. <span data-ttu-id="84518-124">Valitse Avaa.</span><span class="sxs-lookup"><span data-stu-id="84518-124">Click Open.</span></span>
+5. <span data-ttu-id="84518-125">Valitse puussa solmu "Customer invoice model".</span><span class="sxs-lookup"><span data-stu-id="84518-125">In the tree, select 'Customer invoice model'.</span></span>
 
-    <span data-ttu-id="ec068-126">Valitse tuotavaksi mallikonfiguraatio "Myyntilaskumalli".</span><span class="sxs-lookup"><span data-stu-id="ec068-126">Select the model configuration 'Customer invoice model' to import it.</span></span>  
+    <span data-ttu-id="84518-126">Valitse tuotavaksi mallikonfiguraatio "Myyntilaskumalli".</span><span class="sxs-lookup"><span data-stu-id="84518-126">Select the model configuration 'Customer invoice model' to import it.</span></span>  
 
-6. <span data-ttu-id="ec068-127">Valitse Tuo.</span><span class="sxs-lookup"><span data-stu-id="ec068-127">Click Import.</span></span>
+6. <span data-ttu-id="84518-127">Valitse Tuo.</span><span class="sxs-lookup"><span data-stu-id="84518-127">Click Import.</span></span>
 
-    <span data-ttu-id="ec068-128">Valitse Tuo valitulle kokoonpanoversiolle 1</span><span class="sxs-lookup"><span data-stu-id="ec068-128">Click Import for version 1 of the selected configuration.</span></span>  
+    <span data-ttu-id="84518-128">Valitse Tuo valitulle kokoonpanoversiolle 1</span><span class="sxs-lookup"><span data-stu-id="84518-128">Click Import for version 1 of the selected configuration.</span></span>  
 
-7. <span data-ttu-id="ec068-129">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="ec068-129">Click Yes.</span></span>
-8. <span data-ttu-id="ec068-130">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ec068-130">Close the page.</span></span>
-9. <span data-ttu-id="ec068-131">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="ec068-131">Close the page.</span></span>
-10. <span data-ttu-id="ec068-132">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="ec068-132">Click Reporting configurations.</span></span>
-11. <span data-ttu-id="ec068-133">Valitse puussa solmu "Customer invoice model".</span><span class="sxs-lookup"><span data-stu-id="ec068-133">In the tree, select 'Customer invoice model'.</span></span>
+7. <span data-ttu-id="84518-129">Valitse Kyllä.</span><span class="sxs-lookup"><span data-stu-id="84518-129">Click Yes.</span></span>
+8. <span data-ttu-id="84518-130">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="84518-130">Close the page.</span></span>
+9. <span data-ttu-id="84518-131">Sulje sivu.</span><span class="sxs-lookup"><span data-stu-id="84518-131">Close the page.</span></span>
+10. <span data-ttu-id="84518-132">Valitse Raportointikonfiguraatiot.</span><span class="sxs-lookup"><span data-stu-id="84518-132">Click Reporting configurations.</span></span>
+11. <span data-ttu-id="84518-133">Valitse puussa solmu "Customer invoice model".</span><span class="sxs-lookup"><span data-stu-id="84518-133">In the tree, select 'Customer invoice model'.</span></span>
 
-## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a><span data-ttu-id="ec068-134">Luo johdettu malli, joka tukee tiedostonhallinnan tiedostojen käyttämistä.</span><span class="sxs-lookup"><span data-stu-id="ec068-134">Create the derived model to support access to the Document Management files.</span></span>
-<span data-ttu-id="ec068-135">Luot oman myyntilaskumallin konfiguraation johtamalla sen Microsoftin tarjoamasta konfiguraatiosta.</span><span class="sxs-lookup"><span data-stu-id="ec068-135">You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft.</span></span> <span data-ttu-id="ec068-136">Tätä konfiguraatiota käytetään tiedostonhallinnan käytön toteuttamiseen ja tiedostojen saattamiseen tällä mallilla luotavien sähköisten asiakirjojen käyttöön.</span><span class="sxs-lookup"><span data-stu-id="ec068-136">You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.</span></span>  
-1. <span data-ttu-id="ec068-137">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="ec068-137">Click Create configuration to open the drop dialog.</span></span>
-2. <span data-ttu-id="ec068-138">Kirjoita Uusi-kenttään "Derive from Name: Customer invoice model, Microsoft".</span><span class="sxs-lookup"><span data-stu-id="ec068-138">In the New field, enter 'Derive from Name: Customer invoice model, Microsoft'.</span></span>
-3. <span data-ttu-id="ec068-139">Syötä Nimi-kenttään "Customer invoice model (custom)".</span><span class="sxs-lookup"><span data-stu-id="ec068-139">In the Name field, type 'Customer invoice model (custom)'.</span></span>
-4. <span data-ttu-id="ec068-140">Valitse Luo konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="ec068-140">Click Create configuration.</span></span>
+## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a><span data-ttu-id="84518-134">Luo johdettu malli, joka tukee tiedostonhallinnan tiedostojen käyttämistä.</span><span class="sxs-lookup"><span data-stu-id="84518-134">Create the derived model to support access to the Document Management files.</span></span>
+<span data-ttu-id="84518-135">Luot oman myyntilaskumallin konfiguraation johtamalla sen Microsoftin tarjoamasta konfiguraatiosta.</span><span class="sxs-lookup"><span data-stu-id="84518-135">You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft.</span></span> <span data-ttu-id="84518-136">Tätä konfiguraatiota käytetään tiedostonhallinnan käytön toteuttamiseen ja tiedostojen saattamiseen tällä mallilla luotavien sähköisten asiakirjojen käyttöön.</span><span class="sxs-lookup"><span data-stu-id="84518-136">You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.</span></span>  
+1. <span data-ttu-id="84518-137">Avaa valintaikkuna napsauttamalla Luo konfigurointi.</span><span class="sxs-lookup"><span data-stu-id="84518-137">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="84518-138">Kirjoita Uusi-kenttään "Derive from Name: Customer invoice model, Microsoft".</span><span class="sxs-lookup"><span data-stu-id="84518-138">In the New field, enter 'Derive from Name: Customer invoice model, Microsoft'.</span></span>
+3. <span data-ttu-id="84518-139">Syötä Nimi-kenttään "Customer invoice model (custom)".</span><span class="sxs-lookup"><span data-stu-id="84518-139">In the Name field, type 'Customer invoice model (custom)'.</span></span>
+4. <span data-ttu-id="84518-140">Valitse Luo konfiguraatio.</span><span class="sxs-lookup"><span data-stu-id="84518-140">Click Create configuration.</span></span>
 

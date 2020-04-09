@@ -17,26 +17,26 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d01ca4f533fb89f280712d842fc260867264ca30
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 109b9cb183040215cdc0440b869f7394d6e5e620
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838916"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150416"
 ---
-# <a name="view-cost-object-balance"></a><span data-ttu-id="f793a-103">Näytä kustannusobjektin saldo</span><span class="sxs-lookup"><span data-stu-id="f793a-103">View cost object balance</span></span>
+# <a name="view-cost-object-balance"></a><span data-ttu-id="e856c-103">Näytä kustannusobjektin saldo</span><span class="sxs-lookup"><span data-stu-id="e856c-103">View cost object balance</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f793a-104">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="f793a-104">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="f793a-105">Tämä menettely on tarkoitettu kustannusten vastuuhenkilölle.</span><span class="sxs-lookup"><span data-stu-id="f793a-105">This procedure is intended for the cost controller.</span></span>
+<span data-ttu-id="e856c-104">Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.</span><span class="sxs-lookup"><span data-stu-id="e856c-104">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="e856c-105">Tämä menettely on tarkoitettu kustannusten vastuuhenkilölle.</span><span class="sxs-lookup"><span data-stu-id="e856c-105">This procedure is intended for the cost controller.</span></span>
 
-1. <span data-ttu-id="f793a-106">Valitse Kustannuslaskenta.</span><span class="sxs-lookup"><span data-stu-id="f793a-106">Click Cost administration.</span></span>
-2. <span data-ttu-id="f793a-107">Valitse Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="f793a-107">Click Released products.</span></span>
-3. <span data-ttu-id="f793a-108">Voit suodattaa pikasuodattimella Nimiketunnus-kenttää arvon m0004 mukaan.</span><span class="sxs-lookup"><span data-stu-id="f793a-108">Use the Quick Filter to filter on the Item number field with a value of 'm0004'.</span></span>
-4. <span data-ttu-id="f793a-109">Valitse toimintoruudussa Hallitse kustannuksia.</span><span class="sxs-lookup"><span data-stu-id="f793a-109">On the Action Pane, click Manage costs.</span></span>
-5. <span data-ttu-id="f793a-110">Valitse Kustannusobjektit.</span><span class="sxs-lookup"><span data-stu-id="f793a-110">Click Cost objects.</span></span>
-6. <span data-ttu-id="f793a-111">Valitse Fyysinen määrä.</span><span class="sxs-lookup"><span data-stu-id="f793a-111">Click Physical quantity.</span></span>
-7. <span data-ttu-id="f793a-112">Valitse Dimensionäyttö.</span><span class="sxs-lookup"><span data-stu-id="f793a-112">Click Dimensions display.</span></span>
-8. <span data-ttu-id="f793a-113">Poista Sijainti-valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="f793a-113">Clear the Location check box.</span></span>
-9. <span data-ttu-id="f793a-114">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="f793a-114">Click OK.</span></span>
+1. <span data-ttu-id="e856c-106">Valitse Kustannuslaskenta.</span><span class="sxs-lookup"><span data-stu-id="e856c-106">Click Cost administration.</span></span>
+2. <span data-ttu-id="e856c-107">Valitse Vapautetut tuotteet.</span><span class="sxs-lookup"><span data-stu-id="e856c-107">Click Released products.</span></span>
+3. <span data-ttu-id="e856c-108">Voit suodattaa pikasuodattimella Nimiketunnus-kenttää arvon m0004 mukaan.</span><span class="sxs-lookup"><span data-stu-id="e856c-108">Use the Quick Filter to filter on the Item number field with a value of 'm0004'.</span></span>
+4. <span data-ttu-id="e856c-109">Valitse toimintoruudussa Hallitse kustannuksia.</span><span class="sxs-lookup"><span data-stu-id="e856c-109">On the Action Pane, click Manage costs.</span></span>
+5. <span data-ttu-id="e856c-110">Valitse Kustannusobjektit.</span><span class="sxs-lookup"><span data-stu-id="e856c-110">Click Cost objects.</span></span>
+6. <span data-ttu-id="e856c-111">Valitse Fyysinen määrä.</span><span class="sxs-lookup"><span data-stu-id="e856c-111">Click Physical quantity.</span></span>
+7. <span data-ttu-id="e856c-112">Valitse Dimensionäyttö.</span><span class="sxs-lookup"><span data-stu-id="e856c-112">Click Dimensions display.</span></span>
+8. <span data-ttu-id="e856c-113">Poista Sijainti-valintaruudun valinta.</span><span class="sxs-lookup"><span data-stu-id="e856c-113">Clear the Location check box.</span></span>
+9. <span data-ttu-id="e856c-114">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="e856c-114">Click OK.</span></span>
 
