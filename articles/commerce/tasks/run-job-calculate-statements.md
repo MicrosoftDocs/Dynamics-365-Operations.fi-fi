@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52798303ef5d96a44270f971703928d0c6c4c2c1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 973236acca0cb8c0d57171e4bb9d4daaa7faaf38
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022369"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141197"
 ---
 # <a name="configure-and-run-job-to-calculate-statements"></a>Määritä ja suorita työ laskelmien laskemiseksi
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä menettelyssä kerrotaan, miten toistuvat erätyöt määritetään ja suoritetaan, kun valitulle myymälälle tai myymäläryhmälle luodaan ja lasketaan laskelmat. Menettely käyttää esittelytietojen USRT-yritystä.
 

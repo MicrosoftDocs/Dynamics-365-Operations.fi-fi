@@ -3,7 +3,7 @@ title: Ostoruutumoduuli
 description: Tässä ohjeaiheessa on tietoja ostoruutumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 13d044a150651dd18c3a09c4db6a783fe8f42287
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025456"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154060"
 ---
 # <a name="buy-box-module"></a>Ostoruutumoduuli
 
@@ -58,7 +58,7 @@ Teemojen avulla voidaan poistaa ostoruudun tuoteominaisuuksien ja toimintojen oh
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduulit, joita voidaan käyttää ostoruutumoduulissa
 
 - **Mediavalikoima** – Tämän moduulin avulla esitellään tuotteen kuvat tuotetietosivulla. Moduuli voi tukea yhtä kuvaa tai useita kuvia. Se tukee myös pikkukuvia. Pikkukuvat voivat olla vaakasuuntaisesti (rivinä kuvan alla) tai pystysuuntaisesti (pystyrivinä kuvan vieressä). Mediavalikoimamoduuli voidaan lisätä **Media**-paikkaan ostoruutumoduulissa. Se tukee tällä hetkellä vain kuvia. 
-- **Myymälän valitsin** – Tämä moduuli näyttää luettelon lähellä olevista myymälöistä, joista nimikkeen voi noutaa. Käyttäjät voivat etsiä lähellä olevia myymälöitä antamalla sijainnin. Myymälän valitsinmoduuli on integroitu Bing Maps -geokoodauksen ohjelmointirajapintaan, jota käytetään muuntamaan sijainti leveys- ja pituusasteiksi. Bing Maps -ohjelmointirajapinnan avain on pakollinen, ja se on lisättävä Vähittäismyynnin yhteiset parametrit -sivulla Dynamics 365 Retailissa. Tämä moduuli tukee kahta ominaisuutta: **Hakusäde** ja **Käyttöehdot-linkki**. **Hakusäde**-ominaisuus määrittää myymälän hakusäteen maileina. Jos arvoa ei määritetä, käytössä on oletushakusäde 50 mailia. Jos käytössä on Bings Maps tai jokin ulkoinen palvelu, palveluehtojen linkki voidaan antaa **Käyttöehdot-linkki**-ominaisuudella. Palveluehtojen linkki on pakollinen Bing Maps -palvelussa. 
+- **Myymälän valitsin** – Tämä moduuli näyttää luettelon lähellä olevista myymälöistä, joista nimikkeen voi noutaa. Käyttäjät voivat etsiä lähellä olevia myymälöitä antamalla sijainnin. Lisätietoja tästä moduulista on kohdassa [Kaupan valitsinmoduuli](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Ostoruutumoduulin asetukset
 
@@ -92,6 +92,8 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
+
+[Myymälän valintamoduuli](store-selector.md)
 
 [Konttimoduuli](add-container-module.md)
 

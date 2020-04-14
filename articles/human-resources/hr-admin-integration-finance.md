@@ -3,7 +3,7 @@ title: Financeen integroinnin määritys
 description: Tässä artikkelissa esitellään toiminto, joka on käytettävissä Dynamics 365 Human Resourcesista ja Dynamics 365 Financesta integrointia varten.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,73 +18,75 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2e7070f627654c9eb889f3e0ee27e37681db0502
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 1558d050627c8dc64727884901ed0d0716df0c50
+ms.sourcegitcommit: f481dfd6bf93bb3e03a7bd9a765e2cfd14305d02
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008855"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3169274"
 ---
-# <a name="configure-integration-with-finance"></a>Financeen integroinnin määritys
+# <a name="configure-integration-with-finance"></a>Integraation määrittäminen Financen kanssa
 
-Tässä artikkelissa esitellään toiminto, joka on käytettävissä Dynamics 365 Human Resourcesista ja Dynamics 365 Financesta integrointia varten. Human Resourcesista Financeen -malli, joka on käytettävissä [Tietojen integrointiohjelmassa](https://docs.microsoft.com/powerapps/administrator/data-integrator), mahdollistaa työpaikkoja, toimia ja työntekijöitä koskevien tietojen virtaamisen. Tiedot virtaavat Human Resourcesista Financeen. Malli ei mahdollista tietojen takaisinvirtaamista Financesta Human Resourcesiin. 
+Integroidaksesi Dynamics 365 Human Resources -järjestelmän Dynamics 365 Financeen, voit käyttää henkilöresursseja rahoitusmalliin [Tietojen integrointiohjelmassa](https://docs.microsoft.com/powerapps/administrator/data-integrator). Henkilöstöresurssit rahoitusmalliin mahdollistavat töiden, asemien ja työntekijöiden tiedonkulun. Malli sallii tietojen kulun henkilöstöresursseista rahoitukseen, mutta se ei salli tietojen juoksuttamista henkilöstöresursseihin.
 
-![Human Resourcesista Financeen -integrointivirta](./media/TalentFinOpsFlow.png)
+![Human Resourcesista Financeen -integrointivirta](./media/hr-admin-integration-finance-flow.png)
 
-Human Resourcesista Financeen -ratkaisu tarjoaa seuraavanlaisia tietojen synkronointiratkaisuja. 
+Henkilöstöresursseista talouteen -ratkaisu tarjoaa seuraavanlaisia tietojen synkronointiratkaisuja:
 
-- Pidä työpaikat Human Resourcesissa ja synkronoi ne Human Resourcesista Financeen.
-- Pidä toimet ja toimimääritykset Human Resourcesissa ja synkronoi ne Human Resourcesista Financeen.
-- Pidä työsuhteet Human Resourcesissa ja synkronoi ne Human Resourcesista Financeen.
-- Pidä työntekijät ja työntekijöiden osoitteet Human Resourcesissa ja synkronoi ne Human Resourcesista Financeen.
+- Pidä työpaikat henkilöstöresursseissa ja synkronoi ne henkilöstöresursseista talouteen
+- Pidä toimet ja toimimääritykset Human Resourcesissa ja synkronoi ne Human Resourcesista Financeen
+- Pidä työsuhteet Human Resourcesissa ja synkronoi ne Human Resourcesista Financeen
+- Pidä työntekijät ja työntekijöiden osoitteet Human Resourcesissa ja synkronoi ne Human Resourcesista Financeen
 
 ## <a name="system-requirements-for-human-resources"></a>Human Resourcesin järjestelmävaatimukset
+
 Integrointiratkaisu edellyttää seuraavia Human Resourcesin ja Financen versioita: 
-- Dynamics 365 Human Resources Common Data Servicessä.
-- Dynamics 365 Financen versio 7.2 tai uudempi.
+
+- Dynamics 365 Human Resources, Common Data Service
+- Dynamics 365 Financen versio 7.2 tai uudempi
 
 ## <a name="template-and-tasks"></a>Malli ja tehtävät
 
-Mallia voit käyttää seuraavasti.
+Jos haluat käyttää henkilöstöresursseja talousmalliin.
+
 1. Avaa [Power Apps -hallintakeskus](https://admin.powerapps.com/). 
-1. Valitse **Projektit** ja valitse sitten julkisia malleja oikeassa yläkulmassa olevan **Uusi projekti** -kohdan avulla. Uusi projekti on luotava jokaiselle yritykselle, jonka haluat integroida Financeen.
 
-Seuraavaa mallia käytetään tietueiden synkronointiin Human Resourcesista Financeen.
+2. Valitse **Projektit** ja valitse sitten **Uusi projekti** oikeasta yläkulmasta. Luo uusi projekti jokaiselle yritykselle, jonka haluat integroida talouteen.
 
-- **Mallin nimi tietojen integroinnissa:** Human Resources (Human Resources Common Data Servicestä Financeen)
+3. Valitse **Henkilöstöhallinnon resurssit (Henkilöstöhallinto Common Data Servicestä talouteen)**, jos haluat synkronoida henkilöresursseista rahoitettavat tiedot.
 
-  > [!NOTE]
-  > Tehtävän nimi sisältää kussakin sovelluksessa käytettävät entiteetit. Lähde (Human Resources) ja kohde (Finance and Operations) on oikealla.
+Malli käyttää seuraavia taustatehtäviä tietueiden synkronointiin henkilöstöhallinnosta talouteen:
 
-Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resourcesista Financeen.
-- Työtehtävät kompensaatiotyötehtäviin
-- Osastot toimintayksiköihin
-- Työtyypit kompensaatiotyötyyppiin
-- Työt töihin
-- Työt työtietoihin
-- Toimityypit toimityyppiin
-- Toimet perustoimeen
-- Toimet toimitietoihin
-- Toimet toimien kestoihin
-- Toimet toimihierarkioihin
-- Työntekijät työntekijään
-- Työsuhteet työsuhteeseen
-- Työsuhteet työsuhdetietoihin
-- Toimen työntekijämääritys toimen työntekijämäärityksiin
-- Työntekijän osoite työntekijän postiosoitteeseen V2
+- **Työtehtävät kompensaatiotyötehtäviin**
+- **Osastot toimintayksiköihin**
+- **Työtyypit kompensaatiotyötyyppiin**
+- **Työt töihin**
+- **Työt työtietoihin**
+- **Toimityypit toimityyppiin**
+- **Toimet perustoimeen**
+- **Toimet toimitietoihin**
+- **Toimet toimien kestoihin**
+- **Toimet toimihierarkioihin**
+- **Työntekijät työntekijään**
+- **Työsuhteet työsuhteeseen**
+- **Työsuhteet työsuhdetietoihin**
+- **Toimen työntekijämääritys toimen työntekijämäärityksiin**
+- **Työntekijän osoite työntekijän postiosoitteeseen V2**
 
 ## <a name="template-mappings"></a>Mallien yhdistämismääritykset
 
+Seuraavissa mallinyhdistämistaulukoissa tehtävän nimi sisältää kussakin sovelluksessa käytettävät yksiköt. Lähde (Henkilöstöhallinto) on vasemmalla ja kohde (Talous) on oikealla.
+
 ### <a name="job-functions-to-compensation-job-function"></a>Työtehtävät kompensaatiotyötehtäviin
 
-| Common Data Service -entiteetti (lähde)                 | Finance and Operations -entiteetti (kohde) |
+| Common Data Service -entiteetti (lähde) | Talousyksikkö (kohde) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   Function Name)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | DESCRIPTION   (DESCRIPTION)                 |
 
 ### <a name="departments-to-operating-unit"></a>Osastot toimintayksiköihin
 
-| Common Data Service -entiteetti (lähde)                           | Finance and Operations -entiteetti (kohde) |
+| Common Data Service -entiteetti (lähde)           | Talousyksikkö (kohde) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NAME)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -93,7 +95,7 @@ Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resource
 
 ### <a name="job-types-to-compensation-job-type"></a>Työtyypit kompensaatiotyötyyppiin
 
-| Common Data Service -entiteetti (lähde)                   | Finance and Operations -entiteetti (kohde) |
+| Common Data Service -entiteetti (lähde)   | Talousyksikkö (kohde) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | DESCRIPTION   (DESCRIPTION)                 |
@@ -101,7 +103,7 @@ Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resource
 
 ### <a name="jobs-to-jobs"></a>Työt töihin
 
-| Common Data Service -entiteetti (lähde)                                           | Finance and Operations -entiteetti (kohde)           |
+| Common Data Service -entiteetti (lähde)                           | Talousyksikkö (kohde)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -111,18 +113,18 @@ Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resource
 
 ### <a name="jobs-to-job-detail"></a>Työt työtietoihin
 
-| Common Data Service -entiteetti (lähde)                                             | Finance and Operations -entiteetti (kohde) |
+| Common Data Service -entiteetti (lähde)                             | Talousyksikkö (kohde) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Job Type (Job Type Name))             | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_jobfunctionid.cdm_name   (Job Function (Job Function Name)) | FUNCTIONID   (FUCNTIONID)                   |
 | cdm_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                     |
 | cdm_validto (Valid To)                                        | VALIDTO (VALIDTO)                           |
-| cdm_defaultfulltimeequivalent   (Default Fulltime Equivalent)   | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)   |
+| cdm_defaultfulltimeequivalent   (Default Full-time Equivalent)   | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)   |
 
 ### <a name="position-types-to-position-type"></a>Toimityypit toimityyppiin
 
-| Common Data Service -entiteetti (lähde)                       | Finance and Operations -entiteetti (kohde) |
+| Common Data Service -entiteetti (lähde)       | Talousyksikkö (kohde) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | DESCRIPTION   (DESCRIPTION)                 |
@@ -130,13 +132,13 @@ Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resource
 
 ### <a name="job-positions-to-base-position"></a>Toimet perustoimeen
 
-| Common Data Service -entiteetti (lähde)                           | Finance and Operations -entiteetti (kohde) |
+| Common Data Service -entiteetti (lähde)           | Talousyksikkö (kohde) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Toimet toimitietoihin
 
-| Common Data Service -entiteetti (lähde)                                                      | Finance and Operations -entiteetti (kohde)       |
+| Common Data Service -entiteetti (lähde)              | Talousyksikkö (kohde)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Job Position Number)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Job (Name))                                        | JOBID (JOBID)                                    |
@@ -146,19 +148,19 @@ Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resource
 | cdm_avaialableforassignment   (Available for Assignment)                 | AVAILABLEFORASSIGNMENT   (AVAILABLEFORASSIGNMENT) |
 | cdm_validfrom   (Valid From)                                            | VALIDFROM   (VALIDFROM)                           |
 | cdm_validto (Valid To)                                                 | VALIDTO (VALIDTO)                               |
-| cdm_fulltimeequivalent   (Fulltime Equivalent)                           | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)         |
+| cdm_fulltimeequivalent   (Full-time Equivalent)                           | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)         |
 
 ### <a name="job-positions-to-position-durations"></a>Toimet toimien kestoihin
 
-| Common Data Service -entiteetti (lähde)                             | Finance and Operations -entiteetti (kohde) |
+| Common Data Service -entiteetti (lähde)             | Talousyksikkö (kohde) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number)   | POSITIONID (POSITIONID)                      |
 | Calculated   Activation (Calculated Activation) | VALIDFROM (VALIDFROM)                        |
 | Calculated   Retirement (Calculated Retirement) | VALIDTO (VALIDTO)                         |
 
-### <a name="job-positions-to-position-hiearchies"></a>Toimet toimihierarkioihin
+### <a name="job-positions-to-position-hierarchies"></a>Toimet toimihierarkioihin
 
-| Common Data Service -entiteetti (lähde)                                                                           | Finance and Operations -entiteetti (kohde) |
+| Common Data Service -entiteetti (lähde)        | Talousyksikkö (kohde) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Job Position Number)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -168,7 +170,7 @@ Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resource
 
 
 ### <a name="workers-to-worker"></a>Työntekijät työntekijään
-| Common Data Service -entiteetti (lähde)                           | Finance and Operations -entiteetti (kohde)       |
+| Common Data Service -entiteetti (lähde)           | Talousyksikkö (kohde)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
 | cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
@@ -187,7 +189,7 @@ Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resource
 
 ### <a name="employments-to-employment"></a>Työsuhteet työsuhteeseen
 
-| Common Data Service -entiteetti (lähde)                                             | Finance and Operations -entiteetti (kohde) |
+| Common Data Service -entiteetti (lähde)                             | Talousyksikkö (kohde) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -197,7 +199,7 @@ Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resource
 
 ### <a name="employments-to-employment-detail"></a>Työsuhteet työsuhdetietoihin
 
-| Common Data Service -entiteetti (lähde)                                             | Finance and Operations -entiteetti (kohde)   |
+| Common Data Service -entiteetti (lähde)                             | Talousyksikkö (kohde)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -215,16 +217,16 @@ Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resource
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Toimen työntekijämääritys toimen työntekijämäärityksiin
 
-| Common Data Service -entiteetti (lähde)                                             | Finance and Operations -entiteetti (kohde)   |
+| Common Data Service -entiteetti (lähde)                             | Talousyksikkö (kohde)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber   (Job Position Number)                   | POSITIONID(POSITIONID)                        |
 | cdm_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                       |
-| cdm_validto (Valid   To)                                        | VALIDTO (VALIDTO)                             |
+| cdm_validto (Valid To)                                        | VALIDTO (VALIDTO)                             |
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Työntekijän osoite työntekijän postiosoitteeseen V2
 
-| Common Data Service -entiteetti (lähde)                                             | Finance and Operations -entiteetti (kohde)   |
+| Common Data Service -entiteetti (lähde)                             | Talousyksikkö (kohde)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
@@ -239,9 +241,10 @@ Seuraavia taustatehtäviä käytetään tietueiden synkronointiin Human Resource
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSDESCRIPTION(ADDRESSDESCRIPTION)        |
 
 ## <a name="integration-considerations"></a>Integrointinäkökohdat
-Kun tietoja integroidaan Human Resourcesista Financeen, integroinnissa yritetään yhdistää tietueita tunnuksen perusteella. Jos vastaavuus havaitaan, Financessa olevat tiedot korvataan Human Resourcesin arvoilla. Tässä voi kuitenkin ilmetä ongelma, jos nämä tietueet ovat loogisesti erilaisia ja sama tunnus luotiin joko Human Resourcesissa tai Financessa kulloisenkin numerosarjan perusteella.
 
-Alueet, joilla tämä voi tapahtua, ovat Työntekijä, joissa vastaavuuden perusteena on henkilöstönumero, ja Toimet. Töissä ei käytetä samoja numerosarjoja. Tuloksena tästä, jos sama työtunnus havaitaan sekä Human Resourcesissa että Financessa, Human Resources -tiedot korvaavat Dynamics 365 Financen tiedot. 
+Tietojen integrointi henkilöstöhallinnosta talouteen yrittää yhdistää tietueita tunnuksen perusteella. Jos tietueet vastaavat, taloudessa olevat tiedot korvataan henkilöstöhallinnon arvoilla. Tässä voi kuitenkin ilmetä ongelma, jos nämä tietueet ovat loogisesti erilaisia ja sama tunnus luotiin joko Human Resourcesissa tai Financessa kulloisenkin numerosarjan perusteella.
+
+Tämä voi tapahtua kohteessa **Työntekijä**, jossa vastaavuuden perusteena on **henkilöstönumero** ja **Toimet**. Töissä ei käytetä samoja numerosarjoja. Tuloksena tästä, jos sama työtunnus havaitaan sekä henkilöstöhallinnossa että taloudessa, henkilöstöhallinnon tiedot korvaavat Dynamics 365 Financen tiedot. 
 
 Päällekkäisiin tunnuksiin liittyvien ongelmien ehkäisemiseksi voit joko lisätä etuliitteen [numerosarjaan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json) tai määrittää numerosarjan alkamaan sellaisesta numerosta, joka ylittää toisen järjestelmän numeroalueen. 
 
@@ -250,5 +253,3 @@ Työntekijän osoitteessa käytettävä sijaintitunnus ei ole osa numerosarjaa. 
 Seuraavassa kuvassa on esimerkki mallin yhdistämisestä tietojen integrointiohjelman yhteydessä. 
 
 ![Mallin yhdistämismääritys](./media/IntegrationMapping.png)
-
-

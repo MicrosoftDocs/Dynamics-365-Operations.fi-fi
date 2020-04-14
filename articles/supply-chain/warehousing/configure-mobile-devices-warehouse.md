@@ -3,7 +3,7 @@ title: Varastotyön mobiililaitteiden määrittäminen
 description: Tässä aiheessa kuvataan, kuinka valikkokohteet määritetään mobiililaitteella työskenteleville varaston työntekijöille.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df3968c01006d773300593b966a69b5283a889a2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4c4b131c14101722593f685cbe1133b1aa1319b0
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813037"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161825"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Varastotyön mobiililaitteiden määrittäminen
 
@@ -95,11 +95,11 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 </tr>
 <tr>
 <td>Rekisterikilven vastaanotto</td>
-<td>Vastaanota saapuva kuormitus rekisterikilven tunnuksen avulla.</td>
+<td>Vastaanota saapuva lähetysilmoitus (ASN) rekisterikilven tunnuksen avulla.</td>
 </tr>
 <tr>
 <td>Rekisterikilven vastaanotto ja poispano</td>
-<td>Vastaanota saapuva kuorma ja hyllytä se rekisterikilven tunnuksen avulla.</td>
+<td>Vastaanota ja pane pois saapuva lähetysilmoitus (ASN) rekisterikilven tunnuksen avulla.</td>
 </tr>
 <tr>
 <td>Kuorman nimikkeen vastaanotto</td>
@@ -119,7 +119,7 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 <td>Rekisteröi nimikkeen määrä rekisteröimällä palautusnumero ja aseta nimikkeet pois. Sama työntekijä suorittaa molemmat toiminnot.</td>
 </tr>
 <tr>
-<td rowspan="4">Siirtotilaus</td>
+<td rowspan="6">Siirtotilaus</td>
 <td>Siirtotilausnimikkeen vastaanotto</td>
 <td>Rekisteröi nimikkeen määrän vastaanotto ja luo hyllytystyö toiselle työntekijälle.
 
@@ -140,7 +140,15 @@ Voit määrittää valikkovaihtoehdon, joka luo työn toiselle työntekijälle, 
 <td>Rekisteröi nimikkeen määrän vastaanotto ja pane nimikkeet pois. Sama työntekijä suorittaa molemmat toiminnot.</td>
 </tr>
 <tr>
-<td rowspan="4">Tuotanto</td>
+<td>Rekisterikilven vastaanotto</td>
+<td>Vastaanota saapuva lähetysilmoitus (ASN) rekisterikilven tunnuksen avulla.</td>
+</tr>
+<tr>
+<td>Rekisterikilven vastaanotto ja poispano</td>
+<td>Vastaanota ja pane pois saapuva lähetysilmoitus (ASN) rekisterikilven tunnuksen avulla.</td>
+</tr>
+<tr>
+<td rowspan="4">Tuotantoympäristö</td>
 <td>Ilmoita valmiiksi</td>
 <td>Rekisteröi valmiin nimikkeen määrä, jonka tuotanto on valmistunut, ja luo hyllytystyö toiselle käyttäjälle. Määrä voi olla vähintään tuotantoon suunnitellun määrän osa tai koko määrä.</td>
 </tr>

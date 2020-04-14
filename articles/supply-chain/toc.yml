@@ -70,6 +70,8 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management -versio 10.0.10 (toukokuu 2020)
+                      href: get-started/whats-new-scm-10-0-10.md
                     - name: Supply Chain Management -versio 10.0.9 (huhtikuu 2020)
                       href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management -versio 10.0.8 (helmikuu 2020)

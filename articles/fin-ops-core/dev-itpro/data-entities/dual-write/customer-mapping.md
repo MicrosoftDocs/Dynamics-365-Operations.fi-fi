@@ -19,20 +19,19 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 269346d38eeb3812c352d16f9d50fbcd09307c12
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 977b74b10b4549d09a8816264f9ff603fa86e91c
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124586"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172828"
 ---
 # <a name="integrated-customer-master"></a>Integroidut asiakkaan päätiedot
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-On tyypillistä, että asiakastietueet voidaan masteroida useammassa kuin yhdessä sovelluksessa. Esimerkiksi myyntiaktiviteetti voi tuoda kaupallisia asiakastietueita myyntisovelluksen kautta, ja e-Commerce- tai vähittäismyynti voi tuoda asiakastietueita Finance and Operations -sovelluksen kautta. Riippumatta siitä, mistä asiakastietueet ovat peräisin, ne on integroitu taustalla sovellusten rajojen ja infrastruktuurin erojen välillä. Integroidut asiakkaiden päätiedot auttavat käsittelemään monimasterointiskenaarioita ja tarjoaa kattavan näkymän asiakkaasta Dynamics 365 -sovelluspakettiin.
+Asiakastietoja voidaan hallita useammassa kuin yhdessä Dynamics 365 -sovelluksessa. Esimerkiksi asiakastietue voi olla peräisin myyntitehtävästä Dynamics 365 Salesissa (mallivetoinen sovellus Dynamics 365:ssa) tai tietue voi olla peräisin Dynamics 365 Commercen (Finance and Operations -sovelluksen) Retail-toiminnosta. Riippumatta siitä, mistä asiakastiedot ovat peräisin, ne integroidaan näkymän taakse. Integroidut asiakkaan päätiedot antavat sinulle joustavuutta hallita asiakastietoja missä tahansa Dynamics 365-sovelluksessa ja tarjoaa kattavan näkymän asiakkaasta kautta koko Dynamics 365 -sovelluspaketin.
 
 ## <a name="customer-data-flow"></a>Asiakastietojen virta
 
@@ -59,7 +58,6 @@ Asiakasryhmät             | msdyn_customergroups            | Tämä malli synk
 Asiakkaan maksutapa     | msdyn_customerpaymentmethods    | Tämä malli synkronoi asiakkaan maksutavan tiedot.
 Asiakkaat V3                | tilit                        | Tämä malli synkronoi asiakkaiden päätiedot kaupallisten asiakkaiden ja organisaatioasiakkaiden tiedot.
 Asiakkaat V3                | yhteyshenkilöt                        | Tämä malli synkronoi asiakkaiden päätiedot kuluttajille ja loppukäyttäjille.
-Kanta-asiakaskortti                | msdyn_loyaltycards              | Tämä malli synkronoi asiakkaan kanta-asiakaskortin tiedot.
 Nimen jälkiliitteet                | msdyn_nameaffixes               | Tämä malli synkronoi sekä asiakkaiden että toimittajien nimen jälkiliitteiden viitetiedot.
 CDS V2 -maksupäivärivit    | msdyn_paymentdaylines           | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksusuunnitelmarivien viitetiedot.
 CDS-maksupäivät            | msdyn_paymentdays               | Tämä malli synkronoi sekä asiakkaiden että toimittajien maksupäivien viitetiedot.
@@ -78,8 +76,6 @@ Maksuehdot            | msdyn_paymentterms              | Tämä malli synkronoi
 [!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
 
 [!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
 
 [!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
 

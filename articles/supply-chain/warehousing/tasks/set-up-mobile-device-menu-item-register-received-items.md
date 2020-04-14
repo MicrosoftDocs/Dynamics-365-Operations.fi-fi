@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 599a533c90b0346637221fecc78ddd688410fb3c
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: 5783742b382c333c9ba7b60701c043c74c87c458
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914742"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148305"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Määritä mobiililaitteen valikkokohde vastaanotettujen nimikkeiden rekisteröinnille
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tässä aiheessa käsitellään mobiililaitteen valikkovaihtoehdon määrittäminen. Tällä valikkovaihtoehdolla rekisteröidään ostotilauksilla tilattujen nimikkeiden vastaanotto. 
 

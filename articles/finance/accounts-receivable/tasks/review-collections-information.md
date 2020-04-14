@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd606461b9d7198bda12e297598fae0cbf8b39a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b5cc07c5dfb2444ff086c8b1f3bcc7634d8644d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188714"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143335"
 ---
 # <a name="review-collections-information"></a>Perimistietojen tarkistaminen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tässä aiheessa käsitellään perintätietojen tarkastelemista sekä erilaisia asetusvaihtoehtoja ja perintätapahtumia. Näissä toimintaohjeissa käytetään esittely-yritystä USMF.
 
@@ -107,8 +107,8 @@ Tässä aiheessa käsitellään perintätietojen tarkastelemista sekä erilaisia
 - Päivitä asiakkaan erääntymistilannevedos käyttämällä kuluvaa päivämäärää erääntymispäivämääränä, johon tapahtumapäivämääriä verrataan. Jos erääntymistilannevedoksessa on useiden yritysten tietoja, päivitetyssä erääntymistilannevedoksessa on tietoja samoista yrityksistä. Summat tallennetaan sen yrityksen kirjanpitovaluuttaan, johon olet kirjautunut, kun päivitit erääntymistilannevedoksen.  
 - Valitse erääntymiskausimääritys. Asiakkaan erääntymistilannevedokseen liitetty erääntymiskausimääritys näytetään oletusarvoisesti. Erääntymiskausimääritys määrittää, mitkä erääntymiskaudet ja summat näytetään **Erääntyneet saldot**- ja **Luottotiedot**-tietoruuduissa.  
 - Avaa valikko, joka sisältää seuraavat vaihtoehdot:    
-  - Yritys – näytä Erääntyneet saldot- ja Luottotiedot-tietoruutujen summat yrityksen kirjanpitovaluutassa.  
-  - Asiakas – näytä Erääntyneet saldot- ja Luottotiedot-tietoruutujen summat asiakkaan valuutassa.  
+  - Yritys – Näytä Erääntyneet saldot- ja Luottotiedot-tietoruutujen summat yrityksen kirjanpitovaluutassa.  
+  - Asiakas – Näytä Erääntyneet saldot- ja Luottotiedot-tietoruutujen summat asiakkaan valuutassa.  
 - Valitse asiakkaan erääntymistilannevedoksessa ainakin yksi yritys, jonka tiedot näytetään. Luettelossa näytetään yritykset, jotka valittiin, kun erääntymistilannevedos luotiin.  
 - Näytä asiakkaan tiliote Microsoft Excel -muodossa. Voit valita tiliotteeseen sisällytettävän tapahtuma-alueen aloituspäivän ja päättää myöhemmin, sisällytetäänkö vain avoimet tapahtumat vai sekä avoimet että tilitetyt tapahtumat. Jos erääntymistilannevedoksessa on useita yrityksiä, kaikkien yritysten tapahtumat sisällytetään.  
 - Avaa **Asiakirjat**-lomake, jossa voit luoda ja muokata tiedostoja tai huomautuksia.  

@@ -1,9 +1,9 @@
 ---
-title: Tietojen integroinnin vianmääritysopas
-description: Tässä artikkelissa on vianetsintätietoja tietojen integroinnista Finance and Operations -sovellusten ja Common Data Servicen välillä.
+title: Yleinen vianmääritys
+description: Tässä artikkelissa on yleisiä vianetsintätietoja kaksoiskirjoituksen integroinnista Finance and Operations -sovellusten ja Common Data Servicen välillä.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,57 +18,98 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 87bdb72024c1c3844ff61e832a92f7edcc77c5d6
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-03-16
+ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019761"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172688"
 ---
-# <a name="troubleshooting-guide-for-data-integration"></a>Tietojen integroinnin vianmääritysopas
+# <a name="general-troubleshooting"></a>Yleinen vianmääritys
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a>Ota laajennusten seurantalokit käyttöön Common Data Servicessa ja tarkista kaksoiskirjoituksen laajennusvirheiden tiedot.
 
-Jos kaksoiskirjoituksen synkronoinnin aikana ilmenee ongelma tai virhe, tarkista jäljityslokin virheet noudattamalla näitä ohjeita.
+Tässä artikkelissa on yleisiä vianetsintätietoja kaksoiskirjoituksen integroinnista Finance and Operations -sovellusten ja Common Data Servicen välillä.
 
-1. Ennen kuin voit tarkastaa virheet, sinun on otettava käyttöön laajennuksen jäljityslokit. Lisätietoja on seuravan oppaan Näytä seurantaloki -osassa: [Laajennuksen kirjoittaminen ja rekisteröinti](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs).
+> [!IMPORTANT]
+> Jotkin tämän ohjeaiheen osoitteet saattavat edellyttää joko järjestelmänvalvojan roolia tai Microsoftin Azure Active Directory (Azure AD) -vuokralaisen järjestelmänvalvojan valtuuksia. Kussakin osassa selitetään, tarvitaanko tiettyä roolia tai tunnistetietoja.
 
-    Nyt voit tarkastaa virheet.
+## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a>Kun kaksoiskirjoituspaketti yritetään asentaa paketin käyttöönottajan avulla, käytettävissä olevia ratkaisuja ei näytetä
 
-2. Kirjaudu Microsoft Dynamics 365 Salesiin.
-3. Valitse ensin **Asetukset**-painike (rataskuvake) ja sitten **Lisäasetukset**.
-4. Valitse **Asetukset**-valikosta **Mukautus \> Laajennuksen jäljitysloki**.
-5. Näet virheen tiedot napsauttamalla tyypin nimeä **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+Jotkin paketin käyttöönottajan työkalun versiot eivät ole yhteensopivia kaksoiskirjoituksen ratkaisupaketin kanssa. Jos haluat asentaa paketin onnistuneesti, varmista, että käytössä on paketin käyttöönottajan työkalun [versio 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) tai uudempi.
 
-## <a name="inspect-dual-write-synchronization-errors"></a>Kaksoiskirjoituksen synkronointivirheiden tarkastaminen
+Kun olet asentanut paketin käyttöönottajatyökalun, asenna ratkaisupaketti noudattamalla näitä ohjeita.
 
-Tarkista testauksen aikana tapahtuvat virheet noudattamalla näitä ohjeita.
+1. Lataa uusin ratkaisupakettitiedosto kohteesta Yammer.com. Kun paketin zip-tiedosto on ladattu, napsauta sitä hiiren kakkospainikkeella ja valitse **Ominaisuudet**. Valitse **Poista esto** -valintaruutu ja valitse sitten **Käytä**. Jos et näe **Poista esto** -valintaruutua, zip-tiedosto on jo avattu ja voit ohittaa tämän vaiheen.
+
+    ![Ominaisuudet -valintaikkuna](media/unblock_option.png)
+
+2. Pura paketin zip-tiedosto ja kopioi kaikki tiedostot **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** -kansioon.
+
+    ![Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438-kansion sisältö](media/extract_package.png)
+
+3. Liitä kaikki kopioidut tiedostot paketin käyttöönottajan **Työkalu**-kansioon. 
+4. Valitse Common Data Service -ympäristö ja asenna ratkaisut suorittamalla **PackageDeployer.exe**-asiakirja.
+
+    ![Työkalut-kansion sisältö](media/paste_copied_files.png)
+
+## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a>Ota käyttöön ja tarkastele laajennuksen jäljitysloki, Common Data Servicessä, kun haluat tarkastella virheen tietoja
+
+**Jäljityslokin ottaminen käyttöön ja virheiden tarkasteleminen:** järjestelmän hallintarooli
+
+Jäljitysloki otetaan käyttöön seuraavasti.
+
+1. Kirjaudu Finance and Operations -sovellukseen, avaa **Asetukset**-sivu ja valitse sitten **Järjestelmä**-kohdasta **Hallinta**.
+2. Valitse **Hallinta**-sivulla **Järjestelmäasetukset**.
+3. Ota laajennuksen jäljitysloki käyttöön valitsemalla **Mukauttaminen**-välilehden **Laajennuksen ja mukautetun työnkulun tehtävän jäljitys**-kentästä **Kaikki**. Jos haluat kirjata jäljityslokit vain, kun poikkeuksia ilmenee, voit valita kohdan **Poikkeus** sen sijaan.
+
+
+Jäljitysloki näytetään seuraavasti.
+
+1. Kirjaudu Finance and Operations -sovellukseen, avaa **Asetukset**-sivu ja valitse sitten **Mukautus**-kohdasta **Laajennuksen jäljitysloki**.
+2. Etsi jäljityslokit, joiden **Tyyppinimi**-kentän arvoksi on määritetty **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+3. Voit tarkastella koko lokia kaksoisnapsauttamalla kohdetta ja tarkistaa sitten **Suoritus**-pikavälilehdessä **Sanomalohko**-tekstin.
+
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Virheenkorjaustilan käyttöönotto Finance and Operations -sovellusten live-synkronointiongelmien vianmäärityksessä
+
+**Virheiden tarkastelemiseen tarvittava rooli:** Järjestelmänvalvoja
+
+Sovellukseen perustuvat kaksoiskirjoitusvirheet Common Data Servicessä voivat näkyä Finance and Operations -sovelluksessa. Joissakin tapauksissa virhesanoman koko teksti ei ole käytettävissä, koska sanoma on liian pitkä tai sisältää henkilökohtaisia tunnistetietoja (PII). Noudattamalla seuraavia ohjeita voit ottaa käyttöön sanallisen kirjaamisen.
+
+1. Kaikilla Finance and Operations -sovellusten projektikokoonpanoilla on **IsDebugMode**-ominaisuus **DualWriteProjectConfiguration**-yksikössä. Avaa **DualWriteProjectConfiguration**-yksikkö käyttämällä Excel-lisäosaa.
+
+    > [!TIP]
+    > Helppo tapa avata yksikkö on ottaa **Suunnittelu**-tila käyttöön Excel-lisäosalla ja lisätä sitten taulukkoon **DualWriteProjectConfigurationEntity**. Lisätietoja kohdassa [Avaa yksikön tiedot Excelissä ja päivittä ne käyttämällä Excel-lisäosaa](../../office-integration/use-excel-add-in.md).
+
+2. Aseta **sDebugMode**-ominaisuuden arvoksi projektille **Kyllä**.
+3. Suorita virheitä tuottava skenaario.
+4. Sanalliset lokit ovat käytettävissä DualWriteErrorLog-taulussa. Voit etsiä tietoja taulukkoselaimesta käyttämällä seuraavaa URL-osoitetta (korvaa **XXX** tarvittaessa):
+
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Finance and Operations -sovelluksen virtuaalikoneen synkronointivirheiden tarkistaminen
+
+**Virheiden tarkastelemiseen tarvittava rooli:** Järjestelmänvalvoja
 
 1. Kirjaudu Microsoft Dynamics Lifecycle Servicesiin (LCS).
-2. Avaa LCS-projekti, jotta voit tehdä kaksoiskirjoitustestauksen.
-3. Valitse **Pilvipalveluympäristöt**.
-4. Luo etätyöpöytäyhteys sovelluksen virtuaalikoneeseen (VM) käyttämällä LCS:ssä näkyvää paikallista tiliä.
-5. Avaa tapahtumien katseluohjelma. 
-6. Siirry kohtaan **Sovellusten ja palveluiden lokit \> Microsoft \> Dynamics \> AX -DualWriteSync \> Toiminnassa**. Virheet ja tiedot näytetään.
+2. Avaa LCS-projekti, jonka valitsit kaksoiskirjoitustestauksen suorittamista varten.
+3. Valitse **Pilvipalveluympäristöt**-ruutu.
+4. Voit kirjautua Finance and Operations -sovelluksen virtuaalikoneeseen (VM) etätyöpöydän avulla. Käytä LCS:ssä näkyvää paikallista tiliä.
+5. Avaa tapahtumien katseluohjelma.
+6. Valitse **Sovellusten ja palveluiden lokit \> Microsoft \> Dynamics \> AX -DualWriteSync \> Toiminnassa**.
+7. Tarkista viimeaikaisten virheiden luettelo.
 
-## <a name="unlink-one-common-data-service-environment-from-the-application-and-link-another-environment"></a>Common Data Service -ympäristön linkityksen poistaminen sovelluksesta ja toisen ympäristön linkittäminen
+## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Toisen Common Data Service -ympäristön linkityksen poistaminen Finance and Operations -sovelluksesta
 
-Voit päivittää linkit seuraavien ohjeiden avulla:
+**Ympäristön linkityksen edellyttämät tunnistetiedot:** Azure AD -vuokralaisten hallinta
 
-1. Siirry sovellusympäristöön.
-2. Avaa Tietojen hallinta.
-3. Valitse **Linkki CDS for Appsiin**.
-4. Valitse kaikki suoritettavat yhdistämismääritykset ja valitse sitten **Pysäytä**.
-5. Valitse kaikki yhdistämismääritykset ja valitse sitten **Poista**.
+1. Kirjautuminen Finance and Operations -sovellukseen.
+2. Siirry kohtaan **Työtilat \> Tietojen hallinta** ja valitse **Kaksoiskirjoitus**-ruutu.
+3. Valitse kaikki käynnissä olevat yhdistämismääritykset ja valitse sitten **Pysäytä**.
+4. Valitse **Poista ympäristön linkitys**.
+5. Vahvista toiminto valitsemalla **Kyllä**.
 
-    > [!NOTE]
-    > **Poista**-vaihtoehto ei tule näkyviin, jos **CustomerV3-Account** -malli on valittuna. Tyhjennä tämän mallin valinta tarpeen mukaan. **CustomerV3-Account** on vanhempi valmisteltu malli, joka toimii Prospektista käteiseksi -ratkaisun kanssa. Koska se julkaistaan maailmanlaajuisesti, se näkyy kaikkien mallien näkymässä.
-
-6. Valitse **Poista ympäristön linkitys**.
-7. Vahvista toiminto valitsemalla **Kyllä**.
-8. Voit linkittää uuden ympäristön noudattamalla [asennusoppaan](https://aka.ms/dualwrite-docs) ohjeita.
+Nyt voit linkittää uuden ympäristön.

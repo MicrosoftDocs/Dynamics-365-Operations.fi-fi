@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6879a45dd1fcc1ba718747aaaf0d7936c2eac49f
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: c8e0288da16829c04a9b97c0a52caa8bd27cddf8
+ms.sourcegitcommit: fde8045ea49d0cf26d5e7ac5a0da5c0d3d69d5bc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087343"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166495"
 ---
 # <a name="common-data-service-entities"></a>Common Data Service -yksiköt
 
@@ -87,14 +87,19 @@ Seuraavat henkilöstöhallinnon resurssiyksiköt ovat käytettävissä Common Da
 | Toimi | cdm_jobposition |
 | Toimityyppi | cdm_positiontype |
 | Toimen työntekijän toimeksianto | cdm_positionworkerassignmentmap |
-| Työtyyppi | cdm_jobtype |
+| Toimen dimensio | cdm_jobpositiondimension|
+| Työlaji | cdm_jobtype |
 | Kieli | cdm_language |
+| Tehtävänimike | cdm_title |
+
+> [!NOTE]
+> Talous hallinnon dimensiot **Toimityypille**, **Toimen työntekijämääritykselle** ja **Työllisyydelle** tarjoavat yhdensuuntaisen integroinnin Common Data Service -järjestelmään. Taloushallinnon dimensioiden päivityksiä ei tällä hetkellä synkronoida Common Data Service -sovelluksesta Human Resources -sovellukseen. 
 
 ## <a name="leave-and-absence-entities"></a>Loman ja poissaolon kohteet
 
-| Nimi | Kokonaisuus |
+| Nimi | Yksikkö |
 | --- | --- |
-| Loman pankkitapahtuma | cdm_leavebanktransaction |
+| Lomapankkitapahtuma | cdm_leavebanktransaction |
 | Lomailmoittautuminen | cdm_leaveenrollment |
 | Lomasuunnitelma | cdm_leaveplan |
 | Lomapyyntö | cdm_leaverequest |

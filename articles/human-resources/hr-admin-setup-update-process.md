@@ -3,7 +3,7 @@ title: Päivitysprosessi
 description: Microsoft Dynamics 365 Human Resourceson todellinen ohjelmisto palveluna (SaaS), joka tarjoaa jatkuvia ja kosketusvapaita palvelupäivityksiä sovellus- ja ympäristömuutoksille.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -16,14 +16,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 267682f4497bacf70f93840a948d0e525dfa4aa1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 424027e82717b8636d59289b28978d6ce3c6db4d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092198"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154502"
 ---
 # <a name="update-process"></a>Päivitysprosessi
 
@@ -37,52 +37,39 @@ Päivitykset julkaistaan säännöllisesti kaikkiin ympäristöihin. Human Resou
 
 Human Resources -päivitykset tehdään kaikissa ympäristöissä automaattisesti. Human Resourcesiin liittyy kahdenlaisia julkaisuja:
 
-- **Palvelupäivitykset**: Viikoittaiset päivitykset, joissa on virheiden korjauksia ja uusia toimintoja. Palvelupäivityksiin kuuluvat myös soveltuvat Platform updatet, kun ne julkaistaan. Jos haluat saada käsityksen siitä, milloin Platform updatet julkaistaan, katso [Taulukko 3: Platform-julkaisut ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Viikoittaiset päivitykset julkaistaan yleensä keskiviikkoisin. Lisätietoja viikoittaisista päivityksistä esitetään kohdassa [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](https://docs.microsoft.com/dynamics365/talent/whats-new).
+- **Palvelupäivitykset**: Kahden viikon välein ilmestyvät päivitykset, joissa on virheiden korjauksia ja uusia toimintoja. Palvelupäivityksiin kuuluvat myös soveltuvat Platform updatet, kun ne julkaistaan. Jos haluat saada käsityksen siitä, milloin Platform updatet julkaistaan, katso [Taulukko 3: Platform-julkaisut ](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Kahdesti viikossa ilmestyvillä päivityksillä on vaiheittainen maailmanlaajuinen käyttöönotto alueiden välillä. Lisätietoja kahdesti viikossa ilmestyvistä päivityksistä esitetään kohdassa [Dynamics 365 Human Resourcesin uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md).
 
-    Kaikki tuetut palvelinkeskukset päivittyvät viikoittain, ellei muuta mainita. Viikoittaiset päivitykset alkavat yleensä keskiviikkoisin ja valmistuvat viimeistään sunnuntaisin. Alueet Yhdysvallat, Australia, Eurooppa, Yhdistynyt kuningaskunta ja Kanada kuuluvat viikoittaisten päivitysten piiriin. 
+    Kaikki tuetut palvelinkeskukset päivittyvät kahden viikon välein, ellei muuta mainita. Alueet Yhdysvallat, Australia, Eurooppa, Yhdistynyt kuningaskunta ja Kanada kuuluvat kahdesti viikossa ilmestyvien päivitysten piiriin. 
 
-- **Common Data Service -ratkaisujen päivitykset**: Nämä päivitykset suoritetaan noin kuuden viikon välein tarpeen mukaan. Niihin kuuluu uusia yksikköjä ja muutoksia olemassa oleviin yksikköihin Common Data Servicessä. Nämä päivitykset julkaistaan samoilla alueilla kuin viikoittaiset päivitykset, ja niiden replikointi kaikissa palvelinkeskuksissa kestää noin kuusi viikkoa. Ratkaisupäivitykset saattavat olla linjassa viikoittaisten palvelupäivitysten kanssa.
-
-Seuraavassa taulukossa esitetään esimerkkiaikataulu:
-
-| Viikko | Päivitystyyppi |
-| --- | --- |
-| 1 | Palvelupäivitys (kaikki alueet) |
-| 2 | Palvelupäivitys (kaikki alueet) + ratkaisupäivitys (viikon 1 alueet) |
-| 3 | Palvelupäivitys (kaikki alueet) + ratkaisupäivitys (viikon 2 alueet) |
-| 4 | Palvelupäivitys (kaikki alueet) + ratkaisupäivitys (viikon 3 alueet) |
-| 5 | Palvelupäivitys (kaikki alueet) + ratkaisupäivitys (viikon 4 alueet) |
-| 6 | Palvelupäivitys (kaikki alueet) + ratkaisupäivitys (viikon 5 alueet) |
-| 7 | Palvelupäivitys (kaikki alueet) + ratkaisupäivitys (viikon 6 alueet) |
-| 8 | Palvelupäivitys (kaikki alueet) |
+- **Common Data Service -ratkaisujen päivitykset**: Nämä päivitykset suoritetaan noin kuuden viikon välein tarpeen mukaan. Niihin kuuluu uusia yksikköjä ja muutoksia olemassa oleviin yksikköihin Common Data Servicessä. Nämä päivitykset julkaistaan samoilla alueilla kuin kahdesti viikossa ilmestyvät päivitykset, ja niiden replikointi kaikissa palvelinkeskuksissa kestää noin kuusi viikkoa. Ratkaisupäivitykset saattavat olla linjassa kahdesti viikossa ilmestyvien palvelupäivitysten kanssa.
 
 > [!NOTE]
 > Ratkaisupäivitykset ovat käytettävissä kaikissa palvelinkeskuksissa, kun ne on julkaistu. Jos et halua odottaa päivitysten automaattista replikointia, voit suorittaa nämä päivitykset manuaalisesti minkä tahansa palvelinkeskuksen missä tahansa ympäristössä.
 
 Tarvittaessa Human Resources tarjoaa myös seuraavanlaisia korjauksia:
 
-- **Aliversio (hotfix)**: Ohjelmakorjauksia, jotka voidaan suorittaa joko viikoittaisen palvelupäivitysjulkaisun yhteydessä tai erillään siitä
+- **Aliversio (hotfix)**: Ohjelmakorjauksia, jotka voidaan suorittaa joko kahdesti viikossa ilmestyvien palvelupäivitysjulkaisun yhteydessä tai erillään siitä
 
-- **Hätäkorjaus**: ennakoivia ja reaktiivisia hotfix-korjauksia, jotka ovat luonteeltaan erillisiä, voivat sisältää vain määritykseen tai koodiin kohdistuvia muutoksia käytössä olevan sivun ongelmien ratkaisemiseksi ja voidaan suorittaa erillään viikoittaisista palvelupäivitysjulkaisuista
+- **Hätäkorjaus**: ennakoivia ja reaktiivisia hotfix-korjauksia, jotka ovat luonteeltaan erillisiä, voivat sisältää vain määritykseen tai koodiin kohdistuvia muutoksia käytössä olevan sivun ongelmien ratkaisemiseksi ja voidaan suorittaa erillään kahdesti viikossa ilmestyvistä palvelupäivitysjulkaisuista
 
 Julkaisut tarkistetaan, testataan ja vahvistetaan sisäisessä ympäristössä. Kun koontiversiot on hyväksytty, ne otetaan käyttöön tuotannossa.
 
-## <a name="exceptions-in-2019"></a>Poikkeukset vuonna 2019
+## <a name="release-cadence-exceptions-in-2020"></a>Vapauta tahtipoikkeukset vuonna 2020
 
 Seuraavat päivämäärät ovat poikkeuksia vakiojulkaisuaikataulusta:
 
-| Päivämäärä | Kuvaus |
+| Päivämäärä | kuvaus |
 | --- | --- |
-| Marraskuun 25. päivän viikko | Ei päivityksiä |
-| Joulukuun 16. päivän viikko | Vain vähäisiä päivityksiä |
-| Joulukuun 23. päivän viikko | Ei päivityksiä |
-| Joulukuun 30. päivän viikko | Ei päivityksiä |
+| Marraskuun 23. päivän viikko | Ei päivityksiä |
+| Joulukuun 14. päivän viikko | Vain vähäisiä päivityksiä |
+| Joulukuun 21. päivän viikko | Ei päivityksiä |
+| Joulukuun 28. päivän viikko | Ei päivityksiä |
 
 ## <a name="communications"></a>Viestintä
 
 Tietoa siitä, mitä Human Resourcesin osalta suunnitellaan ja mitä siihen liittyen on julkaistu, saat seuraavista paikoista:
 
-- [Dynamics 365 Human Resourcesin toteutussuunnitelma](https://dynamics.microsoft.com/roadmap/talent/)
+- [Dynamics 365 Human Resourcesin toteutussuunnitelma](https://dynamics.microsoft.com/roadmap/human-resources/)
 
 - [Dynamics 365:n julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)
 
@@ -114,7 +101,7 @@ Kun testaat esikatseluominaisuuksia tai kokeilet uusia toimintoja, saatat löyt�
 
 ## <a name="see-also"></a>Lisätietoja
 
-- [Dynamics 365:n ja Power Platformin julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans)
-- [Dynamics 365 Human Resourcen uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)
-- [Ohjelmiston elinkaarikäytäntö](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Dynamics 365:n ja Power Platformin julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Dynamics 365 Human Resourcen uudet ja muuttuneet ominaisuudet](hr-admin-whats-new.md)</br>
+[Ohjelmiston elinkaarikäytäntö](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 

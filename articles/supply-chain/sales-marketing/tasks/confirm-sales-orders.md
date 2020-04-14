@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9274a90ffbf6e5703d3ed97a8b974227b25c2a0
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: 6383576302789d268d64edcbbe05305b03e956d0
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924375"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148698"
 ---
 # <a name="confirm-sales-orders"></a>Vahvista myyntitilaukset
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Seuraavassa menettelyssä selvitetään, miten myyntitilaukset vahvistetaan. Näet, miten yksi tilaus vahvistetaan. Näet myös, miten useita tilauksia voi vahvistaa samanaikaisesti. Yleensä myyntitilauksen käsittelijä tekee nämä tehtävät. Voit käyttää tätä menettelyä USMF-demoyrityksen tiedoilla tai omilla tiedoillasi. Varmista ennen aloittamista, että samalla asiakkaalla on useita avoimia myyntitilauksia. Jos käytössä on USMF, käytä asiakasta US-027.
 

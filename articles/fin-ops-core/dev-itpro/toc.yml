@@ -162,24 +162,52 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
                               href: data-entities/dual-write/lcs-setup.md
+                            - name: Ensimmäinen synkronointi
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: Ota kaksoiskirjoitus käyttöön nykyisissä Finance and Operations -sovelluksissa
+                              items:
+                                - name: Ota kaksoiskirjoitus käyttöön nykyisissä Finance and Operations -sovelluksissa
+                                  href: data-entities/dual-write/enable-dual-write.md
+                                - name: Järjestelmävaatimukset ja edellytykset
+                                  href: data-entities/dual-write/requirements-and-prerequisites.md
+                                - name: Ympäristöjen linkittäminen kaksoiskirjoituksen ohjatun toiminnon avulla
+                                  href: data-entities/dual-write/link-your-environment.md
+                                - name: Ota käyttöön kaksoiskirjoituksen entiteettien yhdistämismääritys
+                                  href: data-entities/dual-write/enable-entity-map.md
+                        - name: Kaksoiskirjoituksen hallinta
+                          items:
+                            - name: Entiteettien ja kenttien yhdistämismääritysten mukauttaminen
+                              href: data-entities/dual-write/customizing-mappings.md
+                            - name: Virheiden hallinta ja hälytysilmoitukset
+                              href: data-entities/dual-write/errors-and-alerts.md
+                            - name: Sovellusten elinkaaren hallinta
+                              href: data-entities/dual-write/app-lifecycle-management.md
                         - name: Käsitteiden vastaavuudet sovellusten välillä
                           items:
-                            - name: Organisaatiohierarkia Common Data Servicessä
-                              href: data-entities/dual-write/organization-mapping.md
-                            - name: Yritysten integrointi
-                              items:
-                                - name: Yrityskonsepti Common Data Servicesissä
-                                  href: data-entities/dual-write/company-data.md
-                                - name: Käynnistys yritystietoja käyttäen
-                                  href: data-entities/dual-write/bootstrap-company-data.md
                             - name: Integroidut asiakkaan päätiedot
                               href: data-entities/dual-write/customer-mapping.md
+                            - name: Toimittajien integrointi
+                              items:
+                                - name: Integroidut toimittajan päätiedot
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Toimittajan mallien välillä siirtyminen
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Kanta-asiakaskortit ja palkkiopisteet
+                              href: data-entities/dual-write/loyalty-mapping.md
                             - name: Tuoteintegrointi
                               items:
                                 - name: Yhtenäinen tuotekokemus
                                   href: data-entities/dual-write/product-mapping.md
                                 - name: Integroidut toimipaikat ja varastot
                                   href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Yritysten integrointi
+                              items:
+                                - name: Yrityskonsepti Common Data Servicesissä
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Käynnistys yritystietoja käyttäen
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Organisaatiohierarkia Common Data Servicessä
+                              href: data-entities/dual-write/organization-mapping.md
                             - name: Talous- ja verotiedot
                               items:
                                 - name: Talous- ja veroviitetietojen käyttöoikeus
@@ -188,12 +216,8 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Integroidut verojen päätiedot
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Toimittajien integrointi
-                              items:
-                                - name: Integroidut toimittajan päätiedot
-                                  href: data-entities/dual-write/vendor-mapping.md
-                                - name: Toimittajan mallien välillä siirtyminen
-                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Synkronointi Dynamics 365 Supply Chain Management -hinnoittelumoduulin kanssa tarvittaessa
+                              href: data-entities/dual-write/pricing-engine.md
                             - name: Prospektista käteiseksi kaksoiskirjoituksessa
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
                             - name: Sisäiset resurssit huoltoa varten
@@ -204,11 +228,25 @@
                           items:
                             - name: Tuki Field Service- ja Project Service Automation -ratkaisuille
                               href: data-entities/dual-write/field-service-project-service-automation.md
-                            - name: Ensimmäinen synkronointi
-                              href: data-entities/dual-write/initial-sync.md
-                            - name: Tietojen integroinnin vianmääritys
-                              href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: Integrointi Power Platformin tietojen integrointityökalulla
+                            - name: Vianmääritys
+                              items:
+                                - name: 'Varmista, että kaksoiskirjoitus on määritetty Finance and Operations -sovelluksissa ja Common Data Servicessä'
+                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                                - name: Ongelmien vianmääritys alkumäärityksen aikana
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                                - name: Ongelmien vianmääritys synkronoinnin aikana
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                                - name: Finance and Operations -sovellusten kaksoiskirjoitusmoduulin ongelmien vianmääritys
+                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                                - name: Live-synkronoinnin ongelmien vianmääritys
+                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                                - name: Ratkaisujen käyttäjien osaamistasoon liittyvien ongelmien vianmääritys
+                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                                - name: Finance and Operations -sovellusten päivityksiin liittyvien ongelmien vianmääritys
+                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                                - name: Yleinen vianmääritys
+                                  href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Power Platform -integraatio
                       items:
                         - name: Prospekteista käteiseksi -skenaarion määrittäminen
                           items:
@@ -386,12 +424,14 @@
                   href: database/api/dbmovement-api-throttling.md
                 - name: Viite
                   items:
-                    - name: Ohjelmointirajapinnan version 1 viite
+                    - name: API v1 -viite
                       href: database/api/v1/dbmovement-api-v1-overview.md
                     - name: Tietokannan varmuuskopioiden luettelo
                       href: database/api/v1/reference-list-backups.md
                     - name: Tietokannan päivitysten luominen
                       href: database/api/v1/reference-create-refresh.md
+                    - name: Tietokannan viennin luominen
+                      href: database/api/v1/reference-create-export.md
                     - name: Työvaiheen tehtävän tilan haku
                       href: database/api/v1/reference-get-status.md
         - name: Esittelytiedot
@@ -1032,9 +1072,11 @@
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Valvonta ja diagnostiikka
               href: lifecycle-services/monitoring-diagnostics.md
+            - name: Vaikutusanalyysiraportti
+              href: lifecycle-services/impact-analysis-report.md
             - name: Ympäristöpalvelujen käynnistäminen uudelleen
               href: lifecycle-services/restart-environment-services.md
-            - name: Raportoi tuotantokatkos
+            - name: Tuotantokatkoksesta ilmoittaminen
               href: lifecycle-services/report-production-outage.md
             - name: Käyttäjien sisäänkirjautumisten seuraaminen
               href: lifecycle-services/user-logins.md
@@ -1396,6 +1438,10 @@
                   href: sysadmin/create-rules-optimization-advisor.md
             - name: Tuotantokatkoksesta ilmoittaminen
               href: lifecycle-services/report-production-outage.md
+            - name: Tietokannan lokikirjauksen määrittäminen ja hallinta
+              href: sysadmin/configure-manage-database-log.md
+            - name: 'OData-metatietovälimuistin luominen AOS:n käynnistyessä'
+              href: sysadmin/odata-warmup.md
         - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset'
           items:
             - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset – resurssit'

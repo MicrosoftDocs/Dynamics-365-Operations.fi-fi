@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46dc13416aa094f33879c017c1a1815fc791409d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6287fa95b7ce7341e99d1b1a6b972db68a30398
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185103"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142161"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Määritä ER-mallin yhdistämismääritys ja valitse niille tietolähteet
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava käyttäjä voi valita sähköisen raportoinnin (ER) tietomallille tietolähteitä. Tietolähteet sidotaan valittujen tietomallien yksittäisiin komponentteihin suunnittelun yhteydessä. Tietomallin liiketoimintatiedot täytetään suorituksen aikana. Tässä esimerkissä valitaan Litware, Inc. -malliyritykselle aiemmin luodun tietomallin tietolähteet. Voit suorittaa nämä vaiheet, jos Luo uusi tietomalli -menettelyn vaiheet ovat valmiit.
 
@@ -78,7 +78,7 @@ Seuraavissa vaiheissa kerrotaan, miten järjestelmänvalvojan tai sähköisen ra
 17. Valitse puussa solmu Transactions\Voucher.
 18. Valitse Lisää tietolähde.
 19. Kirjoita Kaava-kenttään CONCATENATE(Transactions.Voucher, "-",.
-    * Kirjoita kaavan loppuun [ , “-“, ].  
+    * Kirjoita [ , “-“, ] kaavan loppuun.  
 20. Valitse puussa solmu String\TEXT.
 21. Valitse Lisää toiminto.
 22. Valitse puussa solmu Transactions\Record-ID(RecId).

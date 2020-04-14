@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
-ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
+ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3081148"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173197"
 ---
 # <a name="unified-product-experience"></a>Yhtenäinen tuotekokemus
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 Jos liiketoiminnan ekosysteemi muodostuu Dynamics 365 -sovelluksista, kuten Financesta, Supply Chain Managementista ja Salesista, yritykset käyttävät usein näitä sovelluksia tuotetietojen lähteenä. Tämä johtuu siitä, nämä sovellukset muodostavat toimivan tuoteinfrastruktuurin, jota kehittyneet hinnoittelukäsitteet ja tarkat käytettävissä olevan varaston tiedot täydentävät. Jos yritykset käyttävät ulkoista tuotteen elinkaaren hallinta- eli PLM-järjestelmää tuotetietojen lähteenä, he voivat kanavoida tuotteita Finance and Operations -sovelluksista muihin Dynamics 365 -sovelluksiin. Integroitu tuotetietomalli voidaan tuoda yhtenäisen tuotekokemuksen avulla Common Data Serviceen, jolloin kaikki sovelluksen käyttäjät, myös Power Platform -käyttäjät, voivat hyödyntää Finance and Operations -sovelluksista saatavia monipuolisia tuotetietoja.
 
@@ -52,7 +52,7 @@ Tuotteiden kaksoiskirjoituksen yksikkökartat on suunniteltu vain yksisuuntaista
 
 Tuotetiedot sisältävät kaiken tuotteeseen liittyvät tiedot ja tuotteen määrityksen, kuten tuotedimensiot tai seuranta- ja varastodimensiot. Seuraava taulukko osoittaa, miten yksikkökarttakokoelma luodaan synkronoimaan tuotteita ja liittyviä tietoja.
 
-Finance and Operations | Muut Dynamics 365 -sovellukset | Kuvaus
+Finance and Operations -sovellukset | Muut Dynamics 365 -sovellukset | kuvaus
 -----------------------|--------------------------------|---
 Vapautetut tuotteet V2 | msdyn\_sharedproductdetails | **msdyn\_sharedproductdetails**-yksikkö sisältää ne Finance and Operations -sovellusten kentät, jotka määrittävät tuotteen ja jotka sisältävät tuotteen taloudelliset ja hallinnolliset tiedot. 
 Common Data Servicen vapautetut erilliset tuotteet | Tuote | **Tuote**-yksikön kentät määrittävät tuotteen. Se sisältää yksittäisiä tuotteita (tuotteita, joissa on alatyypin tuote) ja tuotevariantteja. Yhdistämismääritykset ovat seuraavassa taulukossa.
@@ -75,7 +75,7 @@ Yksikkö | uoms
 Yksikkömuunnokset | msdyn_ unitofmeasureconversions
 Tuotekohtainen mittayksikön muunnos | msdyn_productspecificunitofmeasureconversion
 Tuoteluokat | msdyn_productcategories | Kukin tuoteluokka sekä tiedot sen rakenteesta ja ominaisuuksista sisältyy tuoteluokkayksikköön. 
-Tuoteluokkahierarkiat | msdyn_productcategoryhierarhies | Voit käyttää tuotehierarkioita tuotteiden luokitteluun ja ryhmittelyyn. Luokkahierarkioita voi käyttää Common Data Servicessä tuoteluokkahierarkiayksikön avulla. 
+Tuoteluokkahierarkiat | msdyn_productcategoryhierarhies | Tuotehierarkioiden avulla luokittelet tai ryhmittelet tuotteita. Luokkahierarkiat ovat käytettävissä Common Data Servicessä tuoteluokkahierarkiayksikön avulla. 
 Tuoteluokkahierarkian roolit | msdyn_productcategoryhierarchies | Tuotehierarkioita käytetään D365 Finance and Operationsin eri rooleissa. Kussakin roolissa käytettävä luokkaa määritetään tuoteluokkahierarkiayksikön avulla. 
 Tuoteluokan määritykset | msdyn_productcategoryassignments | Tuote voidaan määrittää luokkaan tuoteluokan määritysyksikön avulla.
 
@@ -143,7 +143,7 @@ Tilauksen oletusasetukset määrittävät toimipaikan ja varaston, josta nimikke
 
 ## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>Mittayksikkö ja mittayksikön muunnokset
 
-Mittayksikkö ja sen muunnokset ovat käytettävissä Common Data Servicessa seuraavassa kuvassa olevan tietomallin mukaisesti.
+Mittayksikkö ja sen muunnos ovat käytettävissä Common Data Servicessa seuraavassa kuvassa olevan tietomallin mukaisesti.
 
 ![Tuotteiden tietomalli](media/dual-write-product-three.png)
 
@@ -153,7 +153,7 @@ Mittayksikkökäsite on integroitu Finance and Operations- ja muiden Dynamics 36
 
 [!include [unit of measure conversions](includes/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
 
-[!include [product specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
+[!include [product-specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
 ## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-common-data-service"></a>Vastaavien yksiköiden tietojen ensimmäinen synkronointi Finance and Operationsin ja Common Data Servicen välillä
 

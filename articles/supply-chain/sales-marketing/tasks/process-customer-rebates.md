@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3a6678b09ce4011b7f80d40979209cc2f588df8
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 73bc22949d0b19fa04bf27e6fd7df7b27832795b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994931"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148581"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Luo ja käsittele asiakkaan ostohyvityksiä
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Tämä menettely ilmaisee, miten asiakkaan ostohyvityksen käsitellään vaatimuksen muodostamisesta niiden siirtämiseen jaksotuksina myyntireskontraan. Menettely selittää esimerkkien avulla, miten ostohyvitysrivien erilaiset ehdot vaikuttavat asiakkaalle hyvitettäviin lopullisiin määriin. Sinun on käytettävä USMF-demotietoyritystä ja suoritettava seuraavat tehtävät ennen opastuksen aloittamista: (1) Siirry Myyntireskontran parametrit -sivulle, laajenna ensin Hinnat-välilehti ja sitten Hintatiedot-välilehti ja tarkista lopuksi, että Ota käyttöön hintatiedot -asetukseksi on valittu Kyllä. (2) Siirry Ostohyvityssopimukset-sivulle ja valitse asiakkaan ostohyvityssopimus: USMF-000001. Jos Työnkulun hyväksyntätila -kentän asetukseksi ei ole valittu Hyväksytty, hyväksy se valitsemalla toimintoruudussa Tarkistus.
 

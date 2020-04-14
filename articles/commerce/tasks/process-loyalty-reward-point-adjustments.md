@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e767ca571255bcf583b83c6e300292552a96a38
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: bdbd9fa60fe4d000359e4695a9fb034fae3ca1b0
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022372"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140723"
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a>Kanta-asiakkuuspalkkiopisteiden oikaisujen käsittely
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tässä menettelyssä käsitellään, miten kanta-asiakaskortin tietoa voi etsiä ja miten kanta-asiakkaan palkkiopisteitä säädetään. Tämän tehtävän luomisessa käytetty USRT-yrityksen demotietoja. Tämä tehtävä on tarkoitettu Commercen toiminnoista vastaavan johtajan roolille tai asiakaspalvelupäällikön roolille.
 

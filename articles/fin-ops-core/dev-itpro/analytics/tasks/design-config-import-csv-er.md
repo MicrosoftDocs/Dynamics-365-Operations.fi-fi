@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf27590d80bbaf7749a0b6e69adc63ddcf4f9380
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c8511b83a5d327f6a1d5c9ace091eae9e546307b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185149"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142237"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>ER-konfiguraatioiden suunnitteleminen tietojen tuomiseksi ulkoisista tiedostoista CSV-muotoon
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Voit suunnitella tämän menettelyn avulla sähköisen raportoinnin (ER) konfiguraatioita, joilla tuodaan tietoja ulkoisesta tiedostosta CSV-muodossa sovellukseen. Tällä menettelyllä luodaan pakollisia ER-määrityksiä malliyritykselle Litware, Inc. Näitä vaiheita varten on suoritettava ensin ER Konfiguraation lähteen luominen ja sen merkitseminen aktiiviseksi -menettelyn vaiheet. 
 
@@ -63,7 +63,7 @@ Sinun on myös ladattava ja tallennettava paikallisesti seuraavat tiedostot: (ht
 ## <a name="review-format-settings"></a>Muotoasetusten tarkasteleminen
 1. Valitse Suunnittelutoiminto.
 2. Valitse Laajenna tai tiivistä.
-3. Vaihda Näytä tiedot käyttöön.
+3. Vaihda Näytä tiedot käyttöön
     * Suunniteltu muoto vastaa ulkoisen tiedoston odotettua rakennetta CSV-muodossa.  
 4. Valitse puussa Incoming: File\Root: Sequence.
     * Tyypin SEQUENCE juurielementin vaihtoehto Uusi rivi - Windows (CR LF) on valittu Erikoismerkit-kentässä. Tämän asetuksen perusteella jokaista jäsennystiedoston riviä pidetään erillisenä tietueena.   

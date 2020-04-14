@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aa8444b081650e3d375e6f28f47866c8d4853721
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a4c7341941df3ba7bf0a0dfeef8cb3009726838e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772460"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142705"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Sovelluksen metatietojen käyttäminen ER-konfiguraation avulla
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen raportoinnin kehittäjän roolin omaava Regulatory Configuration Service (RCS) -käyttäjä voi suunnitella uuden sähköisen raportoinnin ER-mallin yhdistämisen sovelluksen metatietojen avulla. Sovelluksen metatietoja käytetään ER-metatietokonfiguraatiolla, joka sisältää ulkomaankauppatapahtumien käyttöön tarkoitetun metatietojen näytejoukon. Näitä varten RCS-sovelluksessa on ensin suoritettava aiheessa [Konfigurointipalvelujen luominen ja merkitseminen aktiivisiksi](er-configuration-provider-mark-it-active-2016-11.md) käsitellyt vaiheet. Seuraavaksi on suoritettava vaiheet, jotka on käsitelty aiheessa [RCS:ssä käytettävien sovelluksen metatietojen valmistelu](prepare-application-metadata-rcs.md).
 
@@ -52,28 +52,28 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 7. Kirjoita **Nimi**-kenttään Juuri. 
 8. Valitse **Lisää**. 
 9. Avaa valintaikkuna valitsemalla **Uusi**. 
-10. Kirjoita **Nimi**-kenttään Tapahtuma. 
-11. Valitse **Nimiketyyppi**-kentässä **Tietueluettelo**. 
-12. Valitse **Lisää**. 
-13. Avaa valintaikkuna valitsemalla **Uusi**. 
-14. Kirjoita **Nimi**-kenttään Kauppatavarakoodi. 
-15. Valitse **Nimiketyyppi**-kentässä **Merkkijono**. 
-16. Valitse **Lisää**. 
-17. Avaa valintaikkuna valitsemalla **Uusi**. 
-18. Kirjoita **Nimi**-kenttään Laskutettu summa. 
-19. Valitse **Nimiketyyppi**-kentässä **Reaaliluku**. 
-20. Valitse **Lisää**. 
-21. Avaa valintaikkuna valitsemalla **Uusi**. 
-22. Kirjoita **Nimi**-kenttään Päivämäärä. 
-23. Valitse **Nimiketyyppi**-kentässä **Päivämäärä**. 
-24. Valitse **Lisää**. 
-25. Valitse **Juuriviite**. 
-26. Valitse **OK**. 
-27. Valitse **Tallenna**. 
-28. Sulje sivu. 
-29. Valitse **Muuta tila**. 
-30. Valitse **Valmis**. 
-31. Valitse **OK**. 
+10.    Kirjoita **Nimi**-kenttään Tapahtuma. 
+11.    Valitse **Nimiketyyppi**-kentässä **Tietueluettelo**. 
+12.    Valitse **Lisää**. 
+13.    Avaa valintaikkuna valitsemalla **Uusi**. 
+14.    Kirjoita **Nimi**-kenttään Kauppatavarakoodi. 
+15.    Valitse **Nimiketyyppi**-kentässä **Merkkijono**. 
+16.    Valitse **Lisää**. 
+17.    Avaa valintaikkuna valitsemalla **Uusi**. 
+18.    Kirjoita **Nimi**-kenttään Laskutettu summa. 
+19.    Valitse **Nimiketyyppi**-kentässä **Reaaliluku**. 
+20.    Valitse **Lisää**. 
+21.    Avaa valintaikkuna valitsemalla **Uusi**. 
+22.    Kirjoita **Nimi**-kenttään Päivämäärä. 
+23.    Valitse **Nimiketyyppi**-kentässä **Päivämäärä**. 
+24.    Valitse **Lisää**. 
+25.    Valitse **Juuriviite**. 
+26.    Valitse **OK**. 
+27.    Valitse **Tallenna**. 
+28.    Sulje sivu. 
+29.    Valitse **Muuta tila**. 
+30.    Valitse **Valmis**. 
+31.    Valitse **OK**. 
 
 ## <a name="create-model-mapping-configuration"></a>Mallin yhdistämismäärityksen luominen 
 1. Avaa valintaikkuna valitsemalla **Luo konfigurointi**. 
@@ -85,43 +85,43 @@ Seuraavissa vaiheissa selitetään, miten järjestelmänvalvojan tai sähköisen
 7. Valitse **Uusi**. 
 8. Merkitse valittu rivi luettelossa. 
 9. Valitse **Edellytysosan tyyppi** -kentässä **Konfigurointi**. 
-10. Valitse **Ulkomaankaupan metatiedot** -määritys. 
-11. Valitse **Tallenna**. 
-12. Ulkomaankaupan metatiedot -määrityksen versioon 1 lisättiin viite. Tämän konfiguraation sovelluksen metatiedot ovat käytettävissä, kun mallin yhdistämistä suunnitellaan. 
-13. Sulje sivu. 
-14. Valitse **Suunnittelutoiminto**. 
-15. Valitse **Suunnittelutoiminto**. 
-16. Valitse puussa **Dynamics 365 for Operations\Taulukon tietueet**. 
-17. Valitse **Lisää juuri**. 
-18. Kirjoita **Nimi**-kenttään Intrastat. 
-19. Valitse **Intrastat**-taulukkotietueet. 
-20. Valitse **OK**. 
+10.    Valitse **Ulkomaankaupan metatiedot** -määritys. 
+11.    Valitse **Tallenna**. 
+12.    Ulkomaankaupan metatiedot -määrityksen versioon 1 lisättiin viite. Tämän konfiguraation sovelluksen metatiedot ovat käytettävissä, kun mallin yhdistämistä suunnitellaan. 
+13.    Sulje sivu. 
+14.    Valitse **Suunnittelutoiminto**. 
+15.    Valitse **Suunnittelutoiminto**. 
+16.    Valitse puussa **Dynamics 365 for Operations\Taulukon tietueet**. 
+17.    Valitse **Lisää juuri**. 
+18.    Kirjoita **Nimi**-kenttään Intrastat. 
+19.    Valitse **Intrastat**-taulukkotietueet. 
+20.    Valitse **OK**. 
 
 > [!NOTE]
 > Valittavana on vain kaksi taulukkoa, sillä tällä hetkellä käytössä olevaan metatietosarjaan lisättiin vain kaksi taulukkoa. 
 
-21. Valitse **Sido**. 
-22. Laajenna puussa **Intrastat**. 
-23. Valitse puussa **Intrastat\AmountMST**. 
-24. Laajenna puussa **Tapahtuma = Intrastat**. 
-25. Valitse puussa **Tapahtuma = Intrastat\Laskutettu summa**. 
-26. Valitse **Sido**. 
-27. Valitse puussa **Intrastat\TransDate**. 
-28. Valitse puussa **Tapahtuma = Intrastat\Date**. 
-29. Valitse **Sido**. 
-30. Laajenna puussa **Intrastat\>Suhteet**. 
-31. Laajenna puussa **Intrastat\>Relations\IntrastatCommodity**. 
-32. Valitse puussa **Intrastat\>Relations\IntrastatCommodity\Code**. 
-33. Valitse puussa **Tapahtuma = Intrastat\Kauppatavarakoodi**. 
-34. Valitse **Sido**. 
-35. Valitse **Vahvista**. 
+21.    Valitse **Sido**. 
+22.    Laajenna puussa **Intrastat**. 
+23.    Valitse puussa **Intrastat\AmountMST**. 
+24.    Laajenna puussa **Tapahtuma = Intrastat**. 
+25.    Valitse puussa **Tapahtuma = Intrastat\Laskutettu summa**. 
+26.    Valitse **Sido**. 
+27.    Valitse puussa **Intrastat\TransDate**. 
+28.    Valitse puussa **Tapahtuma = Intrastat\Date**. 
+29.    Valitse **Sido**. 
+30.    Laajenna puussa **Intrastat\>Suhteet**. 
+31.    Laajenna puussa **Intrastat\>Relations\IntrastatCommodity**. 
+32.    Valitse puussa **Intrastat\>Relations\IntrastatCommodity\Code**. 
+33.    Valitse puussa **Tapahtuma = Intrastat\Kauppatavarakoodi**. 
+34.    Valitse **Sido**. 
+35.    Valitse **Vahvista**. 
 
 > [!NOTE]
 > Tietomallin elementtien ja kuvattujen nimikkeiden tietolähteiden sitominen onnistui käyttämällä sovelluksen tietoja viitatuista ER-metatietokonfiguraatiosta. 
-36. Valitse **Tallenna**. 
-37. Sulje sivu. 
-38. Sulje sivu. 
-39. Laajenna aiemmin luotu metatietojoukko tarvittaessa ja vie sitten uusi ER-metatietomäärityksen valmis versio. Voit sitten tuoda sen RCS:hen ja päivittää sellaisen määritetyn mallin yhdistämäärityksen edellytykset, jotka viittaavat tuodun metatietomäärityksen uuteen versioon. 
+36.    Valitse **Tallenna**. 
+37.    Sulje sivu. 
+38.    Sulje sivu. 
+39.    Laajenna aiemmin luotu metatietojoukko tarvittaessa ja vie sitten uusi ER-metatietomäärityksen valmis versio. Voit sitten tuoda sen RCS:hen ja päivittää sellaisen määritetyn mallin yhdistämäärityksen edellytykset, jotka viittaavat tuodun metatietomäärityksen uuteen versioon. 
 
 > [!NOTE]
 > Tietojen hankkiminen sovelluksen metatiedoista tällä tavoin on käytettävissä vain paikallisesti käyttöönotetuissa sovelluksissa (kun liiketoimintatietojen paikallista (LBD) käyttöönottomallia käytetään).

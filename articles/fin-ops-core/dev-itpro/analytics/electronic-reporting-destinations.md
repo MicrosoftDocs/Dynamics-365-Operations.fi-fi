@@ -3,7 +3,7 @@ title: Sähköisen raportoinnin (ER) kohteet
 description: Tässä ohjeessa esitetään tietoja sähköisen raportoinnin (ER) kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
 author: nselin
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2e4c6951afbff367dc93072d20395c3a37fffbcb
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030770"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150812"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -114,7 +114,7 @@ Kun olet suorittanut tämän määrityksen, **Suorita luonnos** -vaihtoehto on k
 
 [![Suorita luonnos -vaihtoehto](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
-## <a name="DestinationFailure"></a>Kohdevirheiden käsittely
+## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Kohdevirheiden käsittely
 
 Yleensä ER-muoto suoritetaan tietyn liiketoimintaprosessin puitteissa. ER-muodon suorittamisen aikana luotavan lähtevän asiakirjan toimitus on kuitenkin joskus katsottava osaksi kyseistä liiketoimintaprosessia. Tässä tapauksessa, jos luodun lähtevän tiedoston toimittaminen määritetylle kohteelle epäonnistuu, liiketoimintaprosessin suorittaminen on peruttava. Jos haluat määrittää oikean ER-kohteen, valitse **Lopeta käsittely virheestä** -vaihtoehto.
 
@@ -124,7 +124,7 @@ Voit esimerkiksi määrittää toimittajan maksukäsittelyn siten, että ER-muot
 
 Jos tyhjennät **Lopeta käsittely virheestä** -valintaruudun **CoveringLetter**-komponentin osalta kohteessa, maksu katsotaan onnistuneesti käsitellyksi, vaikka lähetekirjettä ei toimitettaisi onnistuneesti sähköpostin kautta. Maksun tila muuttuu tilasta **Ei mitään** tilaksi **Lähetetty**, vaikka lähetekirjettä ei voida lähettää johtuen esimerkiksi puuttuvasta tai virheellisestä vastaanottajan tai lähettäjän sähköpostiosoitteesta.
 
-## <a name="OutputConversionToPDF"></a>Tuloksen muuntaminen PDF-muotoon
+## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Tuloksen muuntaminen PDF-muotoon
 
 Voit käyttää PDF-muunnosasetuksen muuntaaksesi tuloksen Microsoft Office -muodosta (Excel/Word) PDF-muotoon.
 
@@ -157,6 +157,19 @@ PDF-muunnon asetus voidaan ottaa käyttöön vain sellaisten tiedostokomponentti
 Ota PDF-muunnos käyttöön tiedostokohteen osalta valitsemalla **Muunna PDF-muotoon** -valintaruutu.
 
 [![PDF-muunnoksen käyttöönotto tiedostokohteen osalta](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+
+### <a name=""></a><a name="SelectPdfPageOrientation">Sivun suunnan valitseminen PDF-muunnosta varten</a>
+
+Jos luot Excel-muodossa ER-konfiguraation ja haluat muuntaa sen PDF-muotoon, voit määrittää PDF-tiedoston sivun suunnan. Kun valitset **Muunna PDF -muotoon** -valintaruudun ja otat PDF-muunnoksen käyttöön tiedostokohteelle, joka tuottaa tulostetiedoston Excel-muodossa, **Sivun suunta** -kenttä on käytettävissä **PDF-muunnosasetukset** -pikavälilehdessä. Valitse **Sivun suunta** -kentästä haluamasi suunta.
+
+[![Sivun suunnan valitseminen PDF-muunnosta varten](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+> [!NOTE]
+> Jos haluat valita PDF-sivun suunnan, sinun on asennettava Microsoft Dynamics 365 Finance -versio 10.0.10 (toukokuu 2020) tai uudempi.
+>
+> Valittua sivun suuntaa käytetään kaikissa Excel-muodossa luoduissa ER-kokoonpanoissa ja muunnetaan sitten PDF-muotoon.
+>
+> Jos muunnettu PDF luodaan Word-muodon ER-konfiguraatiosta, PDF-tiedoston sivun suunta otetaan Word-asiakirjasta.
 
 ## <a name="security-considerations"></a>Tietojen suojaamisesta
 
