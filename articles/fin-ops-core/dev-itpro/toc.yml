@@ -14,7 +14,9 @@
               items:
                 - name: Platform update -päivitysten aloitussivun uudet ominaisuudet ja muutokset
                   href: get-started/whats-new-home-page.md
-                - name: Platform update 34 (toukokuu 2020)
+                - name: Platform update -päivitykset 10.0.11 (heinäkuu 2020)
+                  href: get-started/whats-new-platform-update-35.md
+                - name: Platform update -päivitykset 10.0.10 (toukokuu 2020)
                   href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (huhtikuu 2020)
                   href: get-started/whats-new-platform-update-33.md
@@ -324,8 +326,6 @@
                       href: data-entities/configuration-data-packages.md
                     - name: Konfigurointitietopaketit (vain heinäkuun 2017 versio)
                       href: data-entities/configuration-data-packages.md
-                    - name: Määritä yksikkösäilö saataville Data Lake -säilönä
-                      href: data-entities/entity-store-data-lake.md
                 - name: Konfigurointitietomallit
                   href: data-entities/configuration-data-templates.md
                 - name: Muutosten seuranta yksikköön
@@ -384,6 +384,14 @@
               href: user-interface/data-validation-workspace.md
             - name: Tietojenhallintavirheiden kuvaukset
               href: data-entities/dm-error-descriptions.md
+        - name: Azure Data Lake
+          items:
+            - name: Azure Data Lake -yleiskuvaus
+              href: data-entities/azure-data-lake-overview.md
+            - name: Finance and Operations -sovellukset Azure Data Lakessa
+              href: data-entities/finance-data-azure-data-lake.md
+            - name: Yksikkösäilön määrittäminen saataville Data Lake -säilönä
+              href: data-entities/entity-store-data-lake.md
         - name: Tietokannan siirtotoiminnot
           items:
             - name: Yleiskatsaus
@@ -482,38 +490,46 @@
               items:
                 - name: Paikallisen käyttöönoton aloitussivu
                   href: deployment/on-premises-deployment-landing-page.md
-                - name: Paikallinen käyttöönotto – yleiskatsaus
-                  href: deployment/on-premises-overview.md
-                - name: Paikallisten käyttöönottojen suunnittelu ja valmistelu
-                  href: deployment/plan-onprem-deployment.md
-                - name: Laitteiston kokovaatimukset
-                  href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                - name: Paikallisten projektien määrittäminen
-                  href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                - name: Paikallisten käyttöönottojen valmisteleminen
+                  items:
+                    - name: Paikallinen käyttöönotto – yleiskatsaus
+                      href: deployment/on-premises-overview.md
+                    - name: Paikallisten käyttöönottojen suunnittelu ja valmistelu
+                      href: deployment/plan-onprem-deployment.md
+                    - name: Laitteiston kokovaatimukset
+                      href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                 - name: Paikallisten ympäristöjen asennus ja käyttöönotto
                   items:
-                    - name: Paikallisten ympäristöjen asennus ja käyttöönotto – aloitussivu
-                      href: deployment/setup-deploy-on-premises-environments.md
-                    - name: Paikallisten ympäristöjen käyttöönotto (Platform update 12 ja uudemmat)
+                    - name: 'Paikallisten projektien määrittäminen LCS:ssä'
+                      href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                    - name: Paikallisten ympäristöjen asennus ja käyttöönotto
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Paikallisten ympäristöjen käyttöönotto (Platform update 8 ja 11)
-                      href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: Vähittäismyyntikanavan komponenttien asennusohjeet paikallisessa ympäristössä
                       href: deployment/deploy-retail-onprem.md
+                    - name: Mukautettujen mallien kehitys ja käyttöönotto paikallisissa ympäristöissä
+                      href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: Ympäristön ylläpito
+                  items:
+                    - name: Päivitysten käyttöönotto paikallisessa ympäristössä
+                      href: deployment/apply-updates-on-premises.md
+                    - name: Varmenteiden kierrättäminen
+                      href: deployment/certificate-rotation-on-prem.md
+                    - name: Asiakasohjelman Internet-yhteys
+                      href: user-interface/client-disconnected.md
+                    - name: Välityspalvelimien määrittäminen paikallisiin ympäristöihin
+                      href: deployment/onprem-reverseproxy.md
+                    - name: Paikallisten ympäristöjen diagnostiikka
+                      href: deployment/on-premises-diagnostics.md
+                    - name: PowerBI.com-integrointi paikallisiin ympäristöihin
+                      href: analytics/entity-store-on-prem.md
+                    - name: Ympäristöjen uudelleenmääritys
+                      href: lifecycle-services/reconfigure-environment.md
+                    - name: Paikallisten ympäristöjen uudelleenasennus
+                      href: deployment/redeploy-on-prem.md
+                    - name: AOS-solmun poistaminen ja asentaminen uudelleen
+                      href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Saman AD FS -esiintymän käyttäminen uudelleen useissa ympäristöissä
                       href: deployment/onprem-reuseadfs.md
-                - name: Mukautettujen mallien kehitys ja käyttöönotto paikallisissa ympäristöissä
-                  href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: PowerBI.com-integrointi paikallisiin ympäristöihin
-                  href: analytics/entity-store-on-prem.md
-                - name: Välityspalvelimien määrittäminen paikallisiin ympäristöihin
-                  href: deployment/onprem-reverseproxy.md
-                - name: Päivitysten käyttöönotto paikallisessa ympäristössä
-                  href: deployment/apply-updates-on-premises.md
-                - name: Paikallisten ympäristöjen diagnostiikka
-                  href: deployment/on-premises-diagnostics.md
-                - name: Paikallisten ympäristöjen uudelleenasennus
-                  href: deployment/redeploy-on-prem.md
                 - name: Paikallinen edustaja
                   items:
                     - name: AD FS Office 365 -yhteensopivuus
@@ -522,16 +538,12 @@
                       href: lifecycle-services/pre-post-scripts.md
                     - name: Paikallisen edustajan päivittäminen
                       href: lifecycle-services/update-local-agent.md
-                - name: Ympäristöjen uudelleenmääritys
-                  href: lifecycle-services/reconfigure-environment.md
-                - name: Asiakasohjelman Internet-yhteys
-                  href: user-interface/client-disconnected.md
-                - name: Paikallisten ympäristöjen vianmääritys
-                  href: deployment/troubleshoot-on-prem.md
-                - name: 'Komentosarjat, joilla voidaan ratkaista paikallisten ympäristöjen ongelmia'
-                  href: deployment/onprem-tsg-implementations.md
-                - name: Varmenteiden kierrättäminen
-                  href: deployment/certificate-rotation-on-prem.md
+                - name: Vianmääritys
+                  items:
+                    - name: Paikallisten ympäristöjen vianmääritys
+                      href: deployment/troubleshoot-on-prem.md
+                    - name: 'Komentosarjat, joilla voidaan ratkaista paikallisten ympäristöjen ongelmia'
+                      href: deployment/onprem-tsg-implementations.md
             - name: Mukautetun koodin käyttöönotto
               items:
                 - name: Käyttöönotettavien pakettien luominen malleista
@@ -926,13 +938,15 @@
                       href: extensibility/extensible-tables.md
                     - name: Menetelmien laajennettavuusmääritteet
                       href: extensibility/extensibility-attributes.md
-                    - name: Tärkeimmät muutokset.
+                    - name: Tärkeimmät muutokset
                       href: extensibility/breaking-changes.md
-            - name: Suorituskyky
+                    - name: Yhteensopivuuden tarkistustyökalu
+                      href: extensibility/compatibility-checker-tool.md
+            - name: Suoritustaso
               items:
                 - name: Jäljittäminen jäljityksen jäsentimen avulla
                   href: perf-test/trace-trace-tutorial.md
-                - name: 'Yhden käyttäjän testaus tehtävän tallennustoiminnon ja suorituskyvyn SDK:n avulla'
+                - name: 'Yhden käyttäjän testaus tehtävien tallennustoiminnon ja suorituskyvyn SDK:n avulla'
                   href: perf-test/single-user-test-perf-sdk.md
                 - name: 'Usean käyttäjän testaus suorituskyvyn SDK:n ja paikallisen testauksen valvojan avulla'
                   href: perf-test/multi-user-testing-local-test-controller.md
@@ -1442,6 +1456,8 @@
               href: sysadmin/configure-manage-database-log.md
             - name: 'OData-metatietovälimuistin luominen AOS:n käynnistyessä'
               href: sysadmin/odata-warmup.md
+            - name: Azure Key Vault -asiakassovelluksen määrittäminen
+              href: ../../finance/localizations/setting-up-azure-key-vault-client.md
         - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset'
           items:
             - name: 'Versiopäivitykset, ohjelmistopäivitykset ja hotfix-korjaukset – resurssit'
@@ -1542,7 +1558,7 @@
                   href: deployment/apply-updates-on-premises.md
                 - name: Paikallisen ympäristön uudelleenasennus
                   href: deployment/redeploy-on-prem.md
-                - name: 'Suora paikallisen 7.x:n päivittäminen 8.1:een'
+                - name: Paikallisten ympäristöjen paikallinen päivitysprosessi
                   href: migration-upgrade/on-prem-upgrade.md
             - name: Hotfix-korjaukset
               items:
