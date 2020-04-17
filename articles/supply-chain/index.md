@@ -2,14 +2,14 @@
 title: Supply Chain Managementin ohjeresurssit
 description: Tällä sivulla on luettelo Supply Chain Managementin toimintoja koskevista ohjeaiheista ja muista resursseista.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 11/26/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b5f82d76f2e285b6318d900d41919aae14ec71a
-ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
+ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "2853985"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201522"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Supply Chain Managementin ohjeresurssit
 
@@ -40,8 +40,8 @@ Saat lisätietoja valitsemalla ominaisuusalueen.
 
 - [Resurssien hallinta](asset-management/index.md)
 - [Kustannuslaskenta](../finance/cost-accounting/cost-accounting-home-page.md)
-- [Kustannushintojen hallinta](cost-management/cost-management-home-page.md)  
-- [Varastoinninhallinta](inventory/inventory-home-page.md)
+- [Kustannusten hallinta](cost-management/cost-management-home-page.md)  
+- [Varastonhallinta](inventory/inventory-home-page.md)
 - [Pääsuunnittelu](master-planning/master-planning-home-page.md)
 - [Hankinta](procurement/procurement-sourcing-overview.md)
 - [Tuotetietojen hallinta](pim/product-information.md)
@@ -57,9 +57,9 @@ Lisätietoja Dynamics 365 Financesta on [Taloushallinnon aloitussivulla](../fina
 
 ## <a name="videos"></a>Videot
 
-Nämä lyhyet videot antavat tietoja Microsoft Dynamics 365 for Finance and Operations -version 8.0 (huhtikuu 2018) uusista ominaisuuksista.
+Nämä lyhyet videot antavat tietoja Microsoft Dynamics 365 for Finance and Operations -sovelluksen version 8.0 (huhtikuu 2018) uusista ominaisuuksista.
 
-- [Työtilauksen synkronointi Field Servicen ja Finance and Operationsin välillä](https://youtu.be/hAB4TDVMjxU)
+- [Työtilauksen synkronointi Field Servicen ja Finance and Operations välillä](https://youtu.be/hAB4TDVMjxU)
 
 Nämä lyhyet videot antavat tietoja Microsoft Dynamics 365 for Finance and Operations -ohjelman Enterprise edition 7.3 (joulukuu 2017) -version uusista ominaisuuksista.
 
@@ -75,11 +75,11 @@ Nämä lyhyet videot antavat tietoja Microsoft Dynamics 365 for Finance and Oper
 -  [Ostotilausten hyväksyminen mobiililaitteella](https://youtu.be/gZ-gOlJe7H8)
 -  [Visuaalinen ajoitus tuotanto- ja erätilausten Gantt-kaavion avulla](https://youtu.be/BtbuShkGj4I)
 
-Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -sovelluksen edellisen version ominaisuuksia, mutta samoja käsitteitä käytetään yhä. Myös menettelyt ovat samanlaisia nykyisessä versiossa. 
+Nämä teknisen konferenssin tallenteet käsittelevät Finance and Operations -sovelluksen edellisen version tuoteominaisuuksia, mutta samoja käsitteitä käytetään yhä. Myös menettelyt ovat samanlaisia nykyisessä versiossa. 
 
 **Kustannusten hallinta**
 
--  [Kustannushintojen hallinnan yhteenveto](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+-  [Kustannusten hallinnan yhteenveto](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
 
 **Pääsuunnittelu**
 

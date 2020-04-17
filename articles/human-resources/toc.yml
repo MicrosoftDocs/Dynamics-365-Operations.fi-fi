@@ -5,6 +5,12 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 13. huhtikuuta 2020
+          href: hr-whats-new-2020-04-13.md
+        - name: 3. huhtikuuta 2020
+          href: hr-whats-new-2020-04-03.md
+        - name: 24. maaliskuuta 2020
+          href: hr-whats-new-2020-03-24.md
         - name: 19. maaliskuuta 2020
           href: hr-whats-new-2020-03-19.md
         - name: 10. maaliskuuta 2020
@@ -401,7 +407,7 @@
               href: hr-compensation-process.md
         - name: Etujen hallinta
           items:
-            - name: 'Esiversio-ominaisuus: Etujen hallinta'
+            - name: Etujen hallinta
               items:
                 - name: Etujen hallinnan yleiskatsaus
                   href: hr-benefits-management-overview.md
@@ -445,12 +451,8 @@
                   items:
                     - name: Etusuunnitelmien määrittäminen
                       href: hr-benefits-plans-setup.md
-                    - name: Työntekijän etusuunnitelmien luominen
-                      href: hr-benefits-plans-worker.md
                     - name: Liukumahyvitysohjelmien määrittäminen
                       href: hr-benefits-plans-flex-credit-programs.md
-                    - name: Tulevien elämäntapahtumien määrittäminen
-                      href: hr-benefits-plans-future-life-events.md
                 - name: Etusuunnitelmien käsittely
                   items:
                     - name: Rekisteröitymiskelpoisuuksien käsittely
@@ -499,6 +501,8 @@
               href: hr-leave-and-absence-enroll.md
             - name: Loma- ja poissaolosuunnitelmien jaksottaminen
               href: hr-leave-and-absence-accrue.md
+            - name: Loman keskeyttäminen
+              href: hr-leave-and-absence-suspend-leave.md
             - name: Loma- ja poissaoloanalyysien tarkasteleminen
               href: hr-leave-and-absence-analytics.md
             - name: Loma- ja poissaolopyyntöjen hallinta
