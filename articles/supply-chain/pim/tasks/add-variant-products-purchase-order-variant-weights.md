@@ -2,7 +2,7 @@
 title: Lisää tuotevariantteja ostotilauksiin käyttämällä muuttuvia painotuksia
 description: Tässä menettelyssä kerrotaan, miten kunkin tuotevariantin ostotilausrivit täytetään automaattisesti variantin painojen avulla.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
@@ -10,41 +10,41 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae45dc0ed5332242a12efbb7f8ca37f97a244cce
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 0199f4b05c23eec5c03c770c37111a6ee6d13efe
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3147983"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208383"
 ---
-# <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a><span data-ttu-id="7fbcd-103">Lisää tuotevariantteja ostotilauksiin käyttämällä muuttuvia painotuksia</span><span class="sxs-lookup"><span data-stu-id="7fbcd-103">Add variant products to purchase orders using variant weights</span></span>
+# <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a><span data-ttu-id="d030a-103">Lisää tuotevariantteja ostotilauksiin käyttämällä muuttuvia painotuksia</span><span class="sxs-lookup"><span data-stu-id="d030a-103">Add variant products to purchase orders using variant weights</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="7fbcd-104">Tässä menettelyssä kerrotaan, miten kunkin tuotevariantin ostotilausrivit täytetään automaattisesti variantin painojen avulla.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-104">This procedure walks through the steps for using variant weights to auto populate purchase order lines for each variant of a product.</span></span> <span data-ttu-id="7fbcd-105">Kun ostettavan tuotteen määrä on valittu, kaikille tuotevarianteille luodaan ostotilausrivit. Ne sisältävät ehdotetut määrät tuotevariantille määritettyjen painojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-105">When you select the quantity of the product you want to purchase, purchase order lines are created for all the variants of the product with suggested quantities based on the weights configured on the product variants.</span></span> <span data-ttu-id="7fbcd-106">Tämä menettely ei sisällä tuotedimensioiden ja tuotevarianttien painoarvojen määrityksen vaiheita.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-106">This procedure doesn't include steps to configure weight values on product dimensions and product variants.</span></span> <span data-ttu-id="7fbcd-107">Menettely käyttää esittelytietojen USRT-yritystä.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-107">This procedure uses the USRT company in demo data.</span></span>
+<span data-ttu-id="d030a-104">Tässä menettelyssä kerrotaan, miten kunkin tuotevariantin ostotilausrivit täytetään automaattisesti variantin painojen avulla.</span><span class="sxs-lookup"><span data-stu-id="d030a-104">This procedure walks through the steps for using variant weights to auto populate purchase order lines for each variant of a product.</span></span> <span data-ttu-id="d030a-105">Kun ostettavan tuotteen määrä on valittu, kaikille tuotevarianteille luodaan ostotilausrivit. Ne sisältävät ehdotetut määrät tuotevariantille määritettyjen painojen perusteella.</span><span class="sxs-lookup"><span data-stu-id="d030a-105">When you select the quantity of the product you want to purchase, purchase order lines are created for all the variants of the product with suggested quantities based on the weights configured on the product variants.</span></span> <span data-ttu-id="d030a-106">Tämä menettely ei sisällä tuotedimensioiden ja tuotevarianttien painoarvojen määrityksen vaiheita.</span><span class="sxs-lookup"><span data-stu-id="d030a-106">This procedure doesn't include steps to configure weight values on product dimensions and product variants.</span></span> <span data-ttu-id="d030a-107">Menettely käyttää esittelytietojen USRT-yritystä.</span><span class="sxs-lookup"><span data-stu-id="d030a-107">This procedure uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="7fbcd-108">Valitse Ostoreskontra > Ostotilaukset > Kaikki ostotilaukset.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-108">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="7fbcd-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-109">Click New.</span></span>
-3. <span data-ttu-id="7fbcd-110">Avaa haku valitsemalla Toimittajan tili -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-110">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="7fbcd-111">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-111">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="7fbcd-112">Ota käyttöön Yleinen-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-112">Toggle the expansion of the General section.</span></span>
-6. <span data-ttu-id="7fbcd-113">Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-113">In the Site field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="7fbcd-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-114">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="7fbcd-115">Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-115">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="7fbcd-116">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-116">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="7fbcd-117">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-117">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="7fbcd-118">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-118">Click OK.</span></span>
-12. <span data-ttu-id="7fbcd-119">Ota käyttöön Rivitiedot-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-119">Toggle the expansion of the Line details section.</span></span>
-13. <span data-ttu-id="7fbcd-120">Valitse Variantit-välilehti.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-120">Click the Variants tab.</span></span>
-14. <span data-ttu-id="7fbcd-121">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-121">Click Add line.</span></span>
-15. <span data-ttu-id="7fbcd-122">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-122">In the list, mark the selected row.</span></span>
-16. <span data-ttu-id="7fbcd-123">Kirjoita Nimiketunnus-kenttään 0140.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-123">In the Item number field, type '0140'.</span></span>
-17. <span data-ttu-id="7fbcd-124">Valitse määräksi 1000.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-124">Set Quantity to '1000'.</span></span>
-18. <span data-ttu-id="7fbcd-125">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="7fbcd-125">Click Save.</span></span>
+1. <span data-ttu-id="d030a-108">Valitse Ostoreskontra > Ostotilaukset > Kaikki ostotilaukset.</span><span class="sxs-lookup"><span data-stu-id="d030a-108">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="d030a-109">Valitse Uusi.</span><span class="sxs-lookup"><span data-stu-id="d030a-109">Click New.</span></span>
+3. <span data-ttu-id="d030a-110">Avaa haku valitsemalla Toimittajan tili -kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="d030a-110">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="d030a-111">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="d030a-111">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="d030a-112">Ota käyttöön Yleinen-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="d030a-112">Toggle the expansion of the General section.</span></span>
+6. <span data-ttu-id="d030a-113">Avaa haku napsauttamalla Toimipaikka-kentässä avattavan valikon painiketta.</span><span class="sxs-lookup"><span data-stu-id="d030a-113">In the Site field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="d030a-114">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="d030a-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="d030a-115">Avaa haku valitsemalla Varasto-kentässä avattavan valikon painike.</span><span class="sxs-lookup"><span data-stu-id="d030a-115">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="d030a-116">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="d030a-116">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="d030a-117">Napsauta luettelossa valitulla rivillä olevaa linkkiä.</span><span class="sxs-lookup"><span data-stu-id="d030a-117">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="d030a-118">Valitse OK.</span><span class="sxs-lookup"><span data-stu-id="d030a-118">Click OK.</span></span>
+12. <span data-ttu-id="d030a-119">Ota käyttöön Rivitiedot-osan laajennus.</span><span class="sxs-lookup"><span data-stu-id="d030a-119">Toggle the expansion of the Line details section.</span></span>
+13. <span data-ttu-id="d030a-120">Valitse Variantit-välilehti.</span><span class="sxs-lookup"><span data-stu-id="d030a-120">Click the Variants tab.</span></span>
+14. <span data-ttu-id="d030a-121">Valitse Lisää rivi.</span><span class="sxs-lookup"><span data-stu-id="d030a-121">Click Add line.</span></span>
+15. <span data-ttu-id="d030a-122">Merkitse valittu rivi luettelossa.</span><span class="sxs-lookup"><span data-stu-id="d030a-122">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="d030a-123">Kirjoita Nimiketunnus-kenttään 0140.</span><span class="sxs-lookup"><span data-stu-id="d030a-123">In the Item number field, type '0140'.</span></span>
+17. <span data-ttu-id="d030a-124">Valitse määräksi 1000.</span><span class="sxs-lookup"><span data-stu-id="d030a-124">Set Quantity to '1000'.</span></span>
+18. <span data-ttu-id="d030a-125">Valitse Tallenna.</span><span class="sxs-lookup"><span data-stu-id="d030a-125">Click Save.</span></span>
 

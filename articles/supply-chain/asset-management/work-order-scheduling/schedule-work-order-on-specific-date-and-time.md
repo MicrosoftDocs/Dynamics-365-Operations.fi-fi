@@ -2,7 +2,7 @@
 title: Työtilauksen ajoittaminen tiettyyn päivämäärään ja aikaan
 description: Tässä ohjeaiheessa selitetään, kuinka voit ajoittaa työtilauksen tiettyyn päivämäärään ja kellonaikaan käyttöomaisuuden hallinnassa.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 634bbb4326d560848d36f579a1179187d8369087
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: e81ea13a3463965c6e4785dac32f536d2e94a7ba
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652031"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215260"
 ---
-# <a name="schedule-work-order-on-specific-date-and-time"></a><span data-ttu-id="810b4-103">Työtilauksen ajoittaminen tiettyyn päivämäärään ja aikaan</span><span class="sxs-lookup"><span data-stu-id="810b4-103">Schedule work order on specific date and time</span></span>
+# <a name="schedule-work-order-on-specific-date-and-time"></a><span data-ttu-id="48ba6-103">Työtilauksen ajoittaminen tiettyyn päivämäärään ja aikaan</span><span class="sxs-lookup"><span data-stu-id="48ba6-103">Schedule work order on specific date and time</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="810b4-104">Jos työtilaus pitää ajoittaa tiettynä päivämääränä *ja* kellonaikana, voit ohittaa vakioajoitusprosessin käyttöomaisuuden hallinnassa ja luoda työtilaukselle erityisen aikataulun.</span><span class="sxs-lookup"><span data-stu-id="810b4-104">If a work order must be scheduled on a specific date *and* time, you can override the standard scheduling process in Asset Management and create a specific schedule for a work order.</span></span>
+<span data-ttu-id="48ba6-104">Jos työtilaus pitää ajoittaa tiettynä päivämääränä *ja* kellonaikana, voit ohittaa vakioajoitusprosessin käyttöomaisuuden hallinnassa ja luoda työtilaukselle erityisen aikataulun.</span><span class="sxs-lookup"><span data-stu-id="48ba6-104">If a work order must be scheduled on a specific date *and* time, you can override the standard scheduling process in Asset Management and create a specific schedule for a work order.</span></span>
 
-1. <span data-ttu-id="810b4-105">Valitse **Resurssien hallinta** >  **yhteiset** >  **työtilaukset** >  **kaikki työtilaukset** tai **Aktiiviset työtilaukset**.</span><span class="sxs-lookup"><span data-stu-id="810b4-105">Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.</span></span>
+1. <span data-ttu-id="48ba6-105">Valitse **Resurssien hallinta** >  **yhteiset** >  **työtilaukset** >  **kaikki työtilaukset** tai **Aktiiviset työtilaukset**.</span><span class="sxs-lookup"><span data-stu-id="48ba6-105">Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.</span></span>
 
-2. <span data-ttu-id="810b4-106">Napsauta työtilausluettelossa **Työtilaus**- sarakkeessa olevaa työtilauksen tunnusta.</span><span class="sxs-lookup"><span data-stu-id="810b4-106">In the work order list, click on the Work order ID in the **Work order** column.</span></span>
+2. <span data-ttu-id="48ba6-106">Napsauta työtilausluettelossa **Työtilaus**- sarakkeessa olevaa työtilauksen tunnusta.</span><span class="sxs-lookup"><span data-stu-id="48ba6-106">In the work order list, click on the Work order ID in the **Work order** column.</span></span>
 
-3. <span data-ttu-id="810b4-107">Valitse **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="810b4-107">Click **Edit**.</span></span>
+3. <span data-ttu-id="48ba6-107">Valitse **Muokkaa**.</span><span class="sxs-lookup"><span data-stu-id="48ba6-107">Click **Edit**.</span></span>
 
-4. <span data-ttu-id="810b4-108">Lisää **Työtilauksen otsikko** -pikavälilehdellä alkamis- ja päättymispäivämäärät ja -ajat **Odotettu alkamispäivämäärä** -ja **Odotettu loppupäivämäärä** -kenttiin.</span><span class="sxs-lookup"><span data-stu-id="810b4-108">On the **Work order header** FastTab, insert start and end dates and times in the **Expected start** and **Expected end** fields.</span></span>
+4. <span data-ttu-id="48ba6-108">Lisää **Työtilauksen otsikko** -pikavälilehdellä alkamis- ja päättymispäivämäärät ja -ajat **Odotettu alkamispäivämäärä** -ja **Odotettu loppupäivämäärä** -kenttiin.</span><span class="sxs-lookup"><span data-stu-id="48ba6-108">On the **Work order header** FastTab, insert start and end dates and times in the **Expected start** and **Expected end** fields.</span></span>
 
     ![Kuva 1](media/05-work-order-scheduling.png)
 
-5. <span data-ttu-id="810b4-110">Valitse **Yleiset**-välilehdessä **Ajoitus**, jos haluat käyttää vakioajoitusprosessia, tai valitse **Resursoi**, jos aiot kohdentaa työtilauksen tietylle työntekijälle.</span><span class="sxs-lookup"><span data-stu-id="810b4-110">On the **General** tab, click **Schedule** to use the standard scheduling process, or click **Dispatch** if you want to assign the work order to a specific worker.</span></span>
+5. <span data-ttu-id="48ba6-110">Valitse **Yleiset**-välilehdessä **Ajoitus**, jos haluat käyttää vakioajoitusprosessia, tai valitse **Resursoi**, jos aiot kohdentaa työtilauksen tietylle työntekijälle.</span><span class="sxs-lookup"><span data-stu-id="48ba6-110">On the **General** tab, click **Schedule** to use the standard scheduling process, or click **Dispatch** if you want to assign the work order to a specific worker.</span></span>
 
-6. <span data-ttu-id="810b4-111">Jos haluat ohittaa kaikki olemassa olevat kapasiteettivaraukset ja varmistaa, että työtilaus ajoitetaan odotettuun ajanjaksoon, tee valinnat alla olevan kuvan mukaan **Ajoita työtilaus** -valintaikkunan **Rajallinen kapasiteetti** -osassa.</span><span class="sxs-lookup"><span data-stu-id="810b4-111">In order to override any existing capacity reservations to ensure that the work order is scheduled in the expected period, make the selections as shown in the figure below in the **Schedule work order** dialog > **Finite capacity** section.</span></span> <span data-ttu-id="810b4-112">Tämä tarkoittaa, että ajoittaminen ohittaa olemassa olevat kapasiteettivaraukset, koska työtilauksen täytyy alkaa odotetusta alkamisajasta.</span><span class="sxs-lookup"><span data-stu-id="810b4-112">This means that the scheduling process will ignore existing capacity reservations because the work order must start on the expected start time.</span></span>
+6. <span data-ttu-id="48ba6-111">Jos haluat ohittaa kaikki olemassa olevat kapasiteettivaraukset ja varmistaa, että työtilaus ajoitetaan odotettuun ajanjaksoon, tee valinnat alla olevan kuvan mukaan **Ajoita työtilaus** -valintaikkunan **Rajallinen kapasiteetti** -osassa.</span><span class="sxs-lookup"><span data-stu-id="48ba6-111">In order to override any existing capacity reservations to ensure that the work order is scheduled in the expected period, make the selections as shown in the figure below in the **Schedule work order** dialog > **Finite capacity** section.</span></span> <span data-ttu-id="48ba6-112">Tämä tarkoittaa, että ajoittaminen ohittaa olemassa olevat kapasiteettivaraukset, koska työtilauksen täytyy alkaa odotetusta alkamisajasta.</span><span class="sxs-lookup"><span data-stu-id="48ba6-112">This means that the scheduling process will ignore existing capacity reservations because the work order must start on the expected start time.</span></span>
 
     ![Kuva 2](media/06-work-order-scheduling.png)
 
-7. <span data-ttu-id="810b4-114">Aloita ajoitus valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="810b4-114">Click **OK** to start scheduling.</span></span>
+7. <span data-ttu-id="48ba6-114">Aloita ajoitus valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="48ba6-114">Click **OK** to start scheduling.</span></span>
 
-8. <span data-ttu-id="810b4-115">Jos ajoittaminen aiheuttaa kaksinkertaisia varauksia, näytössä näkyy sanoma ja siihen liittyviä työtilauksia voi muuttaa.</span><span class="sxs-lookup"><span data-stu-id="810b4-115">If the scheduling process results in double bookings, you will see a message on the screen, and you can adjust the related work orders.</span></span>
+8. <span data-ttu-id="48ba6-115">Jos ajoittaminen aiheuttaa kaksinkertaisia varauksia, näytössä näkyy sanoma ja siihen liittyviä työtilauksia voi muuttaa.</span><span class="sxs-lookup"><span data-stu-id="48ba6-115">If the scheduling process results in double bookings, you will see a message on the screen, and you can adjust the related work orders.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="810b4-116">Jotta huoltotyöntekijä voidaan ajoittaa työtilauksen, kyseisen huoltotyöntekijän on oltava käytettävissä odotettuna alkamispäivänä ja aikana.</span><span class="sxs-lookup"><span data-stu-id="810b4-116">In order to schedule a maintenance worker for the work order, that maintenance worker must be available at the expected start date and time.</span></span> <span data-ttu-id="810b4-117">Työntekijän käytettävyys määritetään [Työntekijän kalenterissa](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md).</span><span class="sxs-lookup"><span data-stu-id="810b4-117">Worker availability is set up in the [worker calendar](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md).</span></span> 
+><span data-ttu-id="48ba6-116">Jotta huoltotyöntekijä voidaan ajoittaa työtilauksen, kyseisen huoltotyöntekijän on oltava käytettävissä odotettuna alkamispäivänä ja aikana.</span><span class="sxs-lookup"><span data-stu-id="48ba6-116">In order to schedule a maintenance worker for the work order, that maintenance worker must be available at the expected start date and time.</span></span> <span data-ttu-id="48ba6-117">Työntekijän käytettävyys määritetään [Työntekijän kalenterissa](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md).</span><span class="sxs-lookup"><span data-stu-id="48ba6-117">Worker availability is set up in the [worker calendar](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md).</span></span> 
 

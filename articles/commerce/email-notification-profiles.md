@@ -3,7 +3,7 @@ title: Sähköpostin ilmoitusprofiilin määrittäminen
 description: Tässä ohjeaiheessa käsitellään sähköpostin ilmoitusprofiilin luontia Microsoft Dynamics 365 Commercessa.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,77 +17,82 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9e5d90eaf1815bbe54b0bea40d92a0a993a23b75
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: c0ab56c15a37313d0a88b1174d5bcf51d391dcec
+ms.sourcegitcommit: 17ffdcbf4b1801bd6ee9c9ddc18622d5d04b8a98
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113802"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3180192"
 ---
-# <a name="set-up-an-email-notification-profile"></a><span data-ttu-id="1d716-103">Sähköpostin ilmoitusprofiilin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="1d716-103">Set up an email notification profile</span></span>
+# <a name="set-up-an-email-notification-profile"></a><span data-ttu-id="9f2df-103">Sähköpostin ilmoitusprofiilin määrittäminen</span><span class="sxs-lookup"><span data-stu-id="9f2df-103">Set up an email notification profile</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="1d716-104">Tässä ohjeaiheessa käsitellään sähköpostin ilmoitusprofiilin luontia Microsoft Dynamics 365 Commercessa.</span><span class="sxs-lookup"><span data-stu-id="1d716-104">This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="9f2df-104">Tässä ohjeaiheessa käsitellään sähköpostin ilmoitusprofiilin luontia Microsoft Dynamics 365 Commercessa.</span><span class="sxs-lookup"><span data-stu-id="9f2df-104">This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="1d716-105">Yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="1d716-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="9f2df-105">Yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="9f2df-105">Overview</span></span>
 
-<span data-ttu-id="1d716-106">Ennen kanavien luomista kannattaa määrittää profiili sen varmistamiseksi, että sähköposti-ilmoituksia voidaan lähettää eri tapahtumia, kuten tilausten luomista, tilauksen lähetystilaa ja epäonnistuneita maksuja varten.</span><span class="sxs-lookup"><span data-stu-id="1d716-106">Before creating channels, you'll want to set up a profile to ensure that email notifications can be sent out for various events, such as order creation, order shipping status, and payment failure.</span></span>
+<span data-ttu-id="9f2df-106">Ennen kanavien luomista kannattaa määrittää profiili sen varmistamiseksi, että sähköposti-ilmoituksia voidaan lähettää eri tapahtumia, kuten tilausten luomista, tilauksen lähetystilaa ja epäonnistuneita maksuja varten.</span><span class="sxs-lookup"><span data-stu-id="9f2df-106">Before creating channels, you'll want to set up a profile to ensure that email notifications can be sent out for various events, such as order creation, order shipping status, and payment failure.</span></span>
 
-<span data-ttu-id="1d716-107">Lisätietoja sähköpostin määrittämisestä on kohdassa [Sähköpostiviestin määrittäminen ja lähettäminen](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).</span><span class="sxs-lookup"><span data-stu-id="1d716-107">For additional email configuration information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).</span></span>
+<span data-ttu-id="9f2df-107">Lisätietoja sähköpostin määrittämisestä on kohdassa [Sähköpostiviestin määrittäminen ja lähettäminen](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).</span><span class="sxs-lookup"><span data-stu-id="9f2df-107">For additional email configuration information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).</span></span>
 
-## <a name="create-an-email-notification-profile"></a><span data-ttu-id="1d716-108">Sähköpostin ilmoitusprofiilin luominen</span><span class="sxs-lookup"><span data-stu-id="1d716-108">Create an email notification profile</span></span>
+## <a name="create-an-email-notification-profile"></a><span data-ttu-id="9f2df-108">Sähköpostin ilmoitusprofiilin luominen</span><span class="sxs-lookup"><span data-stu-id="9f2df-108">Create an email notification profile</span></span>
 
-<span data-ttu-id="1d716-109">Luo sähköposti-ilmoitusprofiili noudattamalla seuraavia ohjeita.</span><span class="sxs-lookup"><span data-stu-id="1d716-109">To create an email notification profile, follow these steps.</span></span>
+<span data-ttu-id="9f2df-109">Luo sähköposti-ilmoitusprofiili noudattamalla seuraavia ohjeita.</span><span class="sxs-lookup"><span data-stu-id="9f2df-109">To create an email notification profile, follow these steps.</span></span>
 
-1. <span data-ttu-id="1d716-110">Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Kaupan sähköposti-ilmoitusprofiili**.</span><span class="sxs-lookup"><span data-stu-id="1d716-110">In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.</span></span>
-1. <span data-ttu-id="1d716-111">Napsauta Toimintoruudussa **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="1d716-111">On the action pane, click **New**.</span></span>
-1. <span data-ttu-id="1d716-112">Anna **Sähköposti-ilmoitusprofiili**-kentässä profiilille nimi.</span><span class="sxs-lookup"><span data-stu-id="1d716-112">In the **Email notification profile** field, enter a name to identify the profile.</span></span>
-1. <span data-ttu-id="1d716-113">Syötä **Kuvaus**-kenttään asianmukainen kuvaus.</span><span class="sxs-lookup"><span data-stu-id="1d716-113">In the **Description** field, enter a relevant description.</span></span>
-1. <span data-ttu-id="1d716-114">Aseta **Aktiivinen**-kytkin asentoon **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="1d716-114">Set the **Active** switch to **Yes**.</span></span>
+1. <span data-ttu-id="9f2df-110">Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Kaupan sähköposti-ilmoitusprofiili**.</span><span class="sxs-lookup"><span data-stu-id="9f2df-110">In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.</span></span>
+1. <span data-ttu-id="9f2df-111">Napsauta Toimintoruudussa **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="9f2df-111">On the action pane, click **New**.</span></span>
+1. <span data-ttu-id="9f2df-112">Anna **Sähköposti-ilmoitusprofiili**-kentässä profiilille nimi.</span><span class="sxs-lookup"><span data-stu-id="9f2df-112">In the **Email notification profile** field, enter a name to identify the profile.</span></span>
+1. <span data-ttu-id="9f2df-113">Syötä **Kuvaus**-kenttään asianmukainen kuvaus.</span><span class="sxs-lookup"><span data-stu-id="9f2df-113">In the **Description** field, enter a relevant description.</span></span>
+1. <span data-ttu-id="9f2df-114">Aseta **Aktiivinen**-kytkin asentoon **Kyllä**.</span><span class="sxs-lookup"><span data-stu-id="9f2df-114">Set the **Active** switch to **Yes**.</span></span>
 
-### <a name="create-an-email-template"></a><span data-ttu-id="1d716-115">Luo sähköpostimalli</span><span class="sxs-lookup"><span data-stu-id="1d716-115">Create an email template</span></span>
+### <a name="create-an-email-template"></a><span data-ttu-id="9f2df-115">Luo sähköpostimalli</span><span class="sxs-lookup"><span data-stu-id="9f2df-115">Create an email template</span></span>
 
-<span data-ttu-id="1d716-116">Ennen kuin sähköposti-ilmoitus voidaan luoda, sinun on luotava organisaation sähköpostimalli, joka sisältää lähettäjän sähköpostitiedot ja sähköpostimallin.</span><span class="sxs-lookup"><span data-stu-id="1d716-116">Before an email notification can be created, you must create an organization email template which contains the senders email information and the email template.</span></span>
+<span data-ttu-id="9f2df-116">Ennen kuin sähköposti-ilmoitus voidaan luoda, sinun on luotava organisaation sähköpostimalli, joka sisältää lähettäjän sähköpostitiedot ja sähköpostimallin.</span><span class="sxs-lookup"><span data-stu-id="9f2df-116">Before an email notification can be created, you must create an organization email template which contains the senders email information and the email template.</span></span>
 
-<span data-ttu-id="1d716-117">Voit luoda sähköpostimallin seuraavien ohjeiden avulla.</span><span class="sxs-lookup"><span data-stu-id="1d716-117">To create an email template, follow these steps.</span></span>
+<span data-ttu-id="9f2df-117">Voit luoda sähköpostimallin seuraavien ohjeiden avulla.</span><span class="sxs-lookup"><span data-stu-id="9f2df-117">To create an email template, follow these steps.</span></span>
 
-1. <span data-ttu-id="1d716-118">Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Parametrit \> Organisaation sähköpostimallit**.</span><span class="sxs-lookup"><span data-stu-id="1d716-118">In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Parameters \> Organization email templates**.</span></span>
-1. <span data-ttu-id="1d716-119">Valitse toimintoruudussa **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="1d716-119">On the action pane, select **New**.</span></span>
-1. <span data-ttu-id="1d716-120">Anna **Sähköpostitunnus** kentässä tunnus auttamaan tämän mallin tunnistamisessa.</span><span class="sxs-lookup"><span data-stu-id="1d716-120">In the **Email ID** field, enter an ID to help identify this template.</span></span>
-1. <span data-ttu-id="1d716-121">Kirjoita **Lähettäjän nimi**-kenttään lähettäjän nimi.</span><span class="sxs-lookup"><span data-stu-id="1d716-121">In the **Sends name** field, enter the senders name.</span></span>
-1. <span data-ttu-id="1d716-122">Syötä **Sähköpostin kuvaus**-kenttään asianmukainen kuvaus.</span><span class="sxs-lookup"><span data-stu-id="1d716-122">In the **Email Description**, enter a meaningful description.</span></span>
-1. <span data-ttu-id="1d716-123">Kirjoita **Lähettäjän sähköpostiosoite** -kenttään lähettäjän sähköpostiosoite.</span><span class="sxs-lookup"><span data-stu-id="1d716-123">In the **Sender email**, enter the senders email address.</span></span>
-1. <span data-ttu-id="1d716-124">Täytä **Yleiset** -osaan kaikki tarvittavat valinnaiset tiedot (kuten sähköpostin prioriteetti).</span><span class="sxs-lookup"><span data-stu-id="1d716-124">In the **General** section, fill out any optional information needed (such as the email priority).</span></span>
-1. <span data-ttu-id="1d716-125">Laajenna **Sähköpostiviestin sisältö** -osa ja valitse **Uusi**, kun haluat luoda mallin sisällön.</span><span class="sxs-lookup"><span data-stu-id="1d716-125">Expand the **Email message content** section and select **New** to create the template content.</span></span> <span data-ttu-id="1d716-126">Valitse kunkin sisällön kohteen osalta kieli ja sähköpostiviestin aiherivi.</span><span class="sxs-lookup"><span data-stu-id="1d716-126">For each content item, select the language and provide the email subject line.</span></span> <span data-ttu-id="1d716-127">Jos sähköpostiin tulee teksti, varmista, että **Leipäteksti on** -ruutu on valittuna.</span><span class="sxs-lookup"><span data-stu-id="1d716-127">If the email will have a body, ensure that the **Has body** box is checked.</span></span>
-1. <span data-ttu-id="1d716-128">Valitse toimintoruudussa **Sähköpostiviesti** määrittääksesi sähköpostin leipätekstimallin.</span><span class="sxs-lookup"><span data-stu-id="1d716-128">On the action pane, select **Email message** to provide an email body template.</span></span>
+1. <span data-ttu-id="9f2df-118">Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Parametrit \> Organisaation sähköpostimallit**.</span><span class="sxs-lookup"><span data-stu-id="9f2df-118">In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Parameters \> Organization email templates**.</span></span>
+1. <span data-ttu-id="9f2df-119">Valitse toimintoruudussa **Uusi**.</span><span class="sxs-lookup"><span data-stu-id="9f2df-119">On the action pane, select **New**.</span></span>
+1. <span data-ttu-id="9f2df-120">Anna **Sähköpostitunnus** kentässä tunnus auttamaan tämän mallin tunnistamisessa.</span><span class="sxs-lookup"><span data-stu-id="9f2df-120">In the **Email ID** field, enter an ID to help identify this template.</span></span>
+1. <span data-ttu-id="9f2df-121">Kirjoita **Lähettäjän nimi**-kenttään lähettäjän nimi.</span><span class="sxs-lookup"><span data-stu-id="9f2df-121">In the **Sends name** field, enter the senders name.</span></span>
+1. <span data-ttu-id="9f2df-122">Syötä **Sähköpostin kuvaus**-kenttään asianmukainen kuvaus.</span><span class="sxs-lookup"><span data-stu-id="9f2df-122">In the **Email Description**, enter a meaningful description.</span></span>
+1. <span data-ttu-id="9f2df-123">Kirjoita **Lähettäjän sähköpostiosoite** -kenttään lähettäjän sähköpostiosoite.</span><span class="sxs-lookup"><span data-stu-id="9f2df-123">In the **Sender email**, enter the senders email address.</span></span>
+1. <span data-ttu-id="9f2df-124">Täytä **Yleiset** -osaan kaikki tarvittavat valinnaiset tiedot (kuten sähköpostin prioriteetti).</span><span class="sxs-lookup"><span data-stu-id="9f2df-124">In the **General** section, fill out any optional information needed (such as the email priority).</span></span>
+1. <span data-ttu-id="9f2df-125">Laajenna **Sähköpostiviestin sisältö** -osa ja valitse **Uusi**, kun haluat luoda mallin sisällön.</span><span class="sxs-lookup"><span data-stu-id="9f2df-125">Expand the **Email message content** section and select **New** to create the template content.</span></span> <span data-ttu-id="9f2df-126">Valitse kunkin sisällön kohteen osalta kieli ja sähköpostiviestin aiherivi.</span><span class="sxs-lookup"><span data-stu-id="9f2df-126">For each content item, select the language and provide the email subject line.</span></span> <span data-ttu-id="9f2df-127">Jos sähköpostiin tulee teksti, varmista, että **Leipäteksti on** -ruutu on valittuna.</span><span class="sxs-lookup"><span data-stu-id="9f2df-127">If the email will have a body, ensure that the **Has body** box is checked.</span></span>
+1. <span data-ttu-id="9f2df-128">Valitse toimintoruudussa **Sähköpostiviesti** määrittääksesi sähköpostin leipätekstimallin.</span><span class="sxs-lookup"><span data-stu-id="9f2df-128">On the action pane, select **Email message** to provide an email body template.</span></span>
 
-<span data-ttu-id="1d716-129">Seuraavassa kuvassa näkyy esimerkkejä sähköpostimallin asetuksista.</span><span class="sxs-lookup"><span data-stu-id="1d716-129">The following image shows some example email template settings.</span></span>
+<span data-ttu-id="9f2df-129">Seuraavassa kuvassa näkyy esimerkkejä sähköpostimallin asetuksista.</span><span class="sxs-lookup"><span data-stu-id="9f2df-129">The following image shows some example email template settings.</span></span>
 
 ![Sähköpostimallin asetukset](media/email-template.png)
 
-### <a name="create-an-email-event"></a><span data-ttu-id="1d716-131">Luo sähköpostitapahtuma</span><span class="sxs-lookup"><span data-stu-id="1d716-131">Create an email event</span></span>
+### <a name="create-an-email-event"></a><span data-ttu-id="9f2df-131">Luo sähköpostitapahtuma</span><span class="sxs-lookup"><span data-stu-id="9f2df-131">Create an email event</span></span>
 
-<span data-ttu-id="1d716-132">Voit luoda sähköpostitapahtuman seuraavien ohjeiden avulla.</span><span class="sxs-lookup"><span data-stu-id="1d716-132">To create an email event, follow these steps.</span></span>
+<span data-ttu-id="9f2df-132">Voit luoda sähköpostitapahtuman seuraavien ohjeiden avulla.</span><span class="sxs-lookup"><span data-stu-id="9f2df-132">To create an email event, follow these steps.</span></span>
 
-1. <span data-ttu-id="1d716-133">Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Kaupan sähköposti-ilmoitusprofiili**.</span><span class="sxs-lookup"><span data-stu-id="1d716-133">In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.</span></span>
-1. <span data-ttu-id="1d716-134">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="1d716-134">In the list, find and select the desired record.</span></span> 
-1. <span data-ttu-id="1d716-135">Valitse sähköpostimalliryhmän avattavasta **Sähköpostitunnus**-luettelosta.</span><span class="sxs-lookup"><span data-stu-id="1d716-135">Select the email template from the **Email ID** drop-down list.</span></span>
-1. <span data-ttu-id="1d716-136">Valitse avattavasta luettelosta asianmukainen **Sähköposti-ilmoitustyyppi**.</span><span class="sxs-lookup"><span data-stu-id="1d716-136">Select the appropriate **Email notification type** from the drop-down list.</span></span>
-1. <span data-ttu-id="1d716-137">Valitse **Käytössä**-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="1d716-137">Select the **Active** check box.</span></span>
-1. <span data-ttu-id="1d716-138">Valitse toimintoruudussa **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="1d716-138">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="9f2df-133">Siirry siirtymisruudussa kohtaan **Moduulit \> Vähittäismyynti ja kauppa \> Pääkonttorin asetukset \> Kaupan sähköposti-ilmoitusprofiili**.</span><span class="sxs-lookup"><span data-stu-id="9f2df-133">In the navigation pane, go to **Modules \> Retail and commerce \> Headquarters setup \> Commerce email notification profile**.</span></span>
+1. <span data-ttu-id="9f2df-134">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="9f2df-134">In the list, find and select the desired record.</span></span> 
+1. <span data-ttu-id="9f2df-135">Valitse sähköpostimalliryhmän avattavasta **Sähköpostitunnus**-luettelosta.</span><span class="sxs-lookup"><span data-stu-id="9f2df-135">Select the email template from the **Email ID** drop-down list.</span></span>
+1. <span data-ttu-id="9f2df-136">Valitse avattavasta luettelosta asianmukainen **Sähköposti-ilmoitustyyppi**.</span><span class="sxs-lookup"><span data-stu-id="9f2df-136">Select the appropriate **Email notification type** from the drop-down list.</span></span>
+1. <span data-ttu-id="9f2df-137">Valitse **Käytössä**-valintaruutu.</span><span class="sxs-lookup"><span data-stu-id="9f2df-137">Select the **Active** check box.</span></span>
+1. <span data-ttu-id="9f2df-138">Valitse toimintoruudussa **Tallenna**.</span><span class="sxs-lookup"><span data-stu-id="9f2df-138">On the action pane, select **Save**.</span></span>
 
-<span data-ttu-id="1d716-139">Seuraavassa kuvassa näkyy esimerkkejä tapahtuman ilmoitusasetuksista.</span><span class="sxs-lookup"><span data-stu-id="1d716-139">The following image shows some example event notification settings.</span></span>
+<span data-ttu-id="9f2df-139">Seuraavassa kuvassa näkyy esimerkkejä tapahtuman ilmoitusasetuksista.</span><span class="sxs-lookup"><span data-stu-id="9f2df-139">The following image shows some example event notification settings.</span></span>
 
 ![Tapahtuman ilmoitusasetukset](media/email-notification-profile.png)
 
-## <a name="additional-resources"></a><span data-ttu-id="1d716-141">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="1d716-141">Additional resources</span></span>
+### <a name="next-steps"></a><span data-ttu-id="9f2df-141">Seuraavat vaiheet</span><span class="sxs-lookup"><span data-stu-id="9f2df-141">Next steps</span></span>
 
-[<span data-ttu-id="1d716-142">Sähköpostiviestin määrittäminen ja lähettäminen</span><span class="sxs-lookup"><span data-stu-id="1d716-142">Configure and send email</span></span>](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json)
+<span data-ttu-id="9f2df-142">Ennen kuin voit lähettää viestejä, sinun on määritettävä lähtevä postipalvelu ja määritettävä erätyö.</span><span class="sxs-lookup"><span data-stu-id="9f2df-142">Before you can send mails, you must configure your outgoing mail service and set up a batch job.</span></span> <span data-ttu-id="9f2df-143">Lisätietoja on kohdassa [Sähköpostin lähettäminen ja määrittäminen](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).</span><span class="sxs-lookup"><span data-stu-id="9f2df-143">For more information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).</span></span>
 
-[<span data-ttu-id="1d716-143">Kanavien yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="1d716-143">Channels overview</span></span>](channels-overview.md)
 
-[<span data-ttu-id="1d716-144">Kanava-asetusten edellytykset</span><span class="sxs-lookup"><span data-stu-id="1d716-144">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+## <a name="additional-resources"></a><span data-ttu-id="9f2df-144">Lisäresurssit</span><span class="sxs-lookup"><span data-stu-id="9f2df-144">Additional resources</span></span>
 
-[<span data-ttu-id="1d716-145">Organisaatiot ja organisaatiohierarkiat – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="1d716-145">Organizations and organizational hierarchies overview</span></span>](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+[<span data-ttu-id="9f2df-145">Sähköpostiviestin määrittäminen ja lähettäminen</span><span class="sxs-lookup"><span data-stu-id="9f2df-145">Configure and send email</span></span>](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json)
+
+[<span data-ttu-id="9f2df-146">Kanavien yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="9f2df-146">Channels overview</span></span>](channels-overview.md)
+
+[<span data-ttu-id="9f2df-147">Kanava-asetusten edellytykset</span><span class="sxs-lookup"><span data-stu-id="9f2df-147">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+
+[<span data-ttu-id="9f2df-148">Organisaatiot ja organisaatiohierarkiat – yleiskatsaus</span><span class="sxs-lookup"><span data-stu-id="9f2df-148">Organizations and organizational hierarchies overview</span></span>](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
