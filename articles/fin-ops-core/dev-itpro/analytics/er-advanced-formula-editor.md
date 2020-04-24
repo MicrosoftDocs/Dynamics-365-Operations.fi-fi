@@ -3,7 +3,7 @@ title: Sähköisen raportoinnin kehittynyt kaavaeditori
 description: Tässä ohjeaiheessa esitellään, miten kehittynyttä kaavaeditoria voidaan käyttää lausekkeiden määrittämiseen sähköisen raportoinnin (ER) mallin yhdistämismäärityksessä ja muotokomponenteissa.
 author: NickSelin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: df402bc20753d2ba14295592f4b40e20f9fdc7bf
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.openlocfilehash: d9911c858d6832aa70378d37e0fd5cf7d7831b1b
+ms.sourcegitcommit: dce8c5d3b2fc4a752d676cf9ba91e0dea2fa80d8
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138895"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "3257058"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Sähköisen raportoinnin kehittynyt kaavaeditori
 
@@ -156,6 +156,16 @@ Tällä hetkellä eri värejä käytetään korostamaan seuraavia lausekkeiden o
 - Kaksoissulkeissa oleva teksti, joka voi edustaa tekstivakion etikettitunnusta.
 
 [![ER-kaavaeditori](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
+
+## <a name="limitations"></a>Rajoitukset
+
+Editoria tuetaan tällä hetkellä seuraavissa selaimissa:
+
+- Chrome
+- Edge
+- Firefox
+- Opera
+- Safari
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -3,7 +3,7 @@ title: Luo etusuunnitelma
 description: Etuussuunnitelmine määrittäminen Dynamics 365 Human Resourcesissa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 97c3acf1294b7a8c2496f23a32918152f50a9e5e
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6e3822a1071023898e459a82c14ff648d8cdebed
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008898"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230105"
 ---
 # <a name="create-a-benefits-plan"></a>Luo etusuunnitelma
-
-[!include [banner](includes/preview-feature.md)]
 
 Tässä artikkelissa kerrotaan, miten etuussuunnitelmia määritetään Dynamics 365 Human Resourcesissa.
 
@@ -39,16 +37,16 @@ Tässä artikkelissa kerrotaan, miten etuussuunnitelmia määritetään Dynamics
 
    | Kenttä | Kuvaus |
    | --- | --- |
-   | Suunnitelma | Suunnitelman yksilöllinen tunnus. |
-   | Kuvaus | Suunnitelman kuvaus. |
-   | Suunnitelman tyyppi | Kun luot uuden suunnitelman, sinun on määritettävä suunnitelman tyyppi. Suunnitelmatyyppi on tietynlaisten etuuksien ylätason ryhmittely. Kukin suunnitelmatyyppi määrittää, voiko työntekijä rekisteröityä useisiin kyseisen tyypin suunnitelmiin, ovatko yhteyshenkilöt edunsaajia vai huollettavia sekä määrittää kattavuusasetukset. Voit luoda uusia mukautettuja suunnitelmatyyppejä, jotka vastaavat etuusvalikoimasi vaatimuksia. Etuussuunnitelmien päätyypit ovat: <ul><li>Lisäeläkemaksut (Yhdysvalloissa 401K)</li><li>ADD</li><li>Hammashoito</li><li>Kunto</li><li>FSA</li><li>Elämä</li><li>LTD</li><li>Lääkintä</li><li>PTO</li><li>STD</li><li>Näöntarkastus</li></ul> |
-   | Suunnitelman tyypin koodi | Suunnitelmatyypin suunnitelmatyyppikoodi. |
-   | Ohjelma | Määrittää ohjelman, jolle suunnitelma osoitetaan vaihtoehtoisesti. |
-   | Nippu | Määrittää nipun, jolle suunnitelma osoitetaan vaihtoehtoisesti. |
-   | Päärahtikirja | Määrittää, onko suunnitelma pääsuunnitelma, johon on liitetty nippu. |
-   | Tila | Määrittää etuussuunnitelman kulloisenkin tilan. Oletusarvo on Aktiivinen. Jos muutat tilaksi passiivinen, suunnitelma ei ole valittavissa rekisteröinnin yhteydessä. |
-   | Voimaantulopäivämäärä ja -aika | Suunnitelman alkamispäivä ja -aika. Oletusarvo on nykyinen järjestelmän päivämäärä. |
-   | Voimassaolon päättymispäivämäärä ja -aika | Suunnitelman päättymispäivä ja -aika (kun tilaksi asetetaan passiivinen). Oletusarvona on 12/31/2154, joka tarkoittaa ei koskaan. |
+   | **Suunnitelma** | Suunnitelman yksilöllinen tunnus. |
+   | **Kuvaus** | Suunnitelman kuvaus. |
+   | **Suunnitelman tyyppi** | Kun luot uuden suunnitelman, sinun on määritettävä suunnitelman tyyppi. Suunnitelmatyyppi on tietynlaisten etuuksien ylätason ryhmittely. Kukin suunnitelmatyyppi määrittää, voiko työntekijä rekisteröityä useisiin kyseisen tyypin suunnitelmiin, ovatko yhteyshenkilöt edunsaajia vai huollettavia sekä määrittää kattavuusasetukset. Voit luoda uusia mukautettuja suunnitelmatyyppejä, jotka vastaavat etuusvalikoimasi vaatimuksia. Etuussuunnitelmien päätyypit ovat: <ul><li>Lisäeläkemaksut (Yhdysvalloissa 401K)</li><li>ADD</li><li>Hammashoito</li><li>Kunto</li><li>FSA</li><li>Elämä</li><li>LTD</li><li>Lääkintä</li><li>PTO</li><li>STD</li><li>Näöntarkastus</li></ul> |
+   | **Suunnitelman tyypin koodi** | Suunnitelmatyypin suunnitelmatyyppikoodi. |
+   | **Ohjelma** | Määrittää ohjelman, jolle suunnitelma osoitetaan vaihtoehtoisesti. |
+   | **Nippu** | Määrittää nipun, jolle suunnitelma osoitetaan vaihtoehtoisesti. |
+   | **Päärahtikirja** | Määrittää, onko suunnitelma pääsuunnitelma, johon on liitetty nippu. |
+   | **Tila** | Määrittää etuussuunnitelman kulloisenkin tilan. Oletusarvo on Aktiivinen. Jos muutat tilaksi passiivinen, suunnitelma ei ole valittavissa rekisteröinnin yhteydessä. |
+   | **Voimaantulopäivämäärä ja -aika** | Suunnitelman alkamispäivä ja -aika. Oletusarvo on nykyinen järjestelmän päivämäärä. |
+   | **Voimassaolon päättymispäivämäärä ja -aika** | Suunnitelman päättymispäivä ja -aika (kun tilaksi asetetaan passiivinen). Oletusarvona on 12/31/2154, joka tarkoittaa ei koskaan. |
 
 4. Määritä **Määritys**-välilehdessä seuraavien kenttien arvot luotavan suunnitelman tyypin mukaan:
 
@@ -77,42 +75,42 @@ Tässä artikkelissa kerrotaan, miten etuussuunnitelmia määritetään Dynamics
 
    | Kenttä | Kuvaus |
    | --- | --- |
-   | Salli rekisteröinti tai jatka sitä | Määrittää, voivatko työntekijät rekisteröityä suunnitelmaan, jos he täyttävät kelpoisuusvaatimukset.</br></br>Jos arvoksi on määritetty Ei, suunnitelma ei ole työntekijöiden käytettävissä, kun kelpoisuus käsitellään. |
-   | Rekisteröi automaattisesti edellisestä vuodesta | Määrittää, voiko kelvollisen työntekijän rekisteröidä automaattisesti suunnitelmaan, jos työntekijä on rekisteröity edellisen vuoden aikana. |
-   | Automaattinen rekisteröinti oletusarvoisesti | Määrittää, valitaanko suunnitelma oletusarvoiseen rekisteröintiin. Suunnitelma ei ole pakollinen, joten työntekijä voi muuttaa oletusvalintaa. |
-   | Suljettu, ei uusia rekisteröintejä | Määrittää, rajoittuuko suunnitelma vain kelpoisiin työntekijöihin, jotka olivat rekisteröityneet suunnitelmaan edellisenä vuonna. |
-   | Pakollinen suunnitelma | Määrittää, rekisteröidäänkö työntekijät automaattisesti suunnitelmaan. Työntekijät eivät voi muuttaa rekisteröitymisvalintaa. |
-   | Aloituspäivämäärä | Päivämäärä, jona suunnitelma on luotu yrityksessä. |
-   | Toimittajatili (edun toimittaja) | Toimittaja, jolle yritys maksaa suunnitelman maksut. |
-   | Nimi (edun toimittaja) | Toimittajan nimi. |
-   | Toimittajaviite (edun toimittaja) | Toimittajan viite suunnitelmalle. Esimerkiksi yrityksen ryhmäsuunnitelmanumero. |
-   | Vaihtoehtoinen viite (edun toimittaja) | Toimittajan vaihtoehtoinen viite suunnitelmalle. Esimerkiksi yrityksen tilinumero. |
-   | Valuutta (edun toimittaja) | Valuutta, jota käytetään maksujen suorittamisessa toimittajalle. |
-   | Kulutili (edun toimittaja) | yleinen kirjanpitotili, jota käytetään suunnitelman maksujen kulutilinä. |
-   | Toimittajatili (edun ylläpitäjä) | Toimittaja, jolle yritys maksaa suunnitelman ylläpitämisestä. Jos suunnitelmaa ylläpidetään itse, jätä tämä kenttä tyhjäksi. |
-   | Nimi (edun ylläpitäjä) | Edut ylläpidon toimittajan nimi. |
-   | Toimittajaviite (edun ylläpitäjä) | Ylläpidon toimittajan viite suunnitelmalle. |
-   | Vaihtoehtoinen viite (edun ylläpitäjä) | Ylläpidon toimittajan vaihtoehtoinen viite suunnitelmalle. |
-   | Valuutta (edun ylläpitäjä) | Valuutta, jota käytetään etujen ylläpitäjälle maksamiseen. |
-   | Kulutili (edun ylläpitäjä) | Yleinen kirjanpitotili, jota käytetään suunnitelman ylläpitoon liittyvien kulujen kulutilinä. |
+   | **Salli rekisteröinti tai jatka sitä** | Määrittää, voivatko työntekijät rekisteröityä suunnitelmaan, jos he täyttävät kelpoisuusvaatimukset.</br></br>Jos arvoksi on määritetty Ei, suunnitelma ei ole työntekijöiden käytettävissä, kun kelpoisuus käsitellään. |
+   | **Rekisteröi automaattisesti edellisestä vuodesta** | Määrittää, voiko kelvollisen työntekijän rekisteröidä automaattisesti suunnitelmaan, jos työntekijä on rekisteröity edellisen vuoden aikana. |
+   | **Automaattinen rekisteröinti oletusarvoisesti** | Määrittää, valitaanko suunnitelma oletusarvoiseen rekisteröintiin. Suunnitelma ei ole pakollinen, joten työntekijä voi muuttaa oletusvalintaa. |
+   | **Suljettu, ei uusia rekisteröintejä** | Määrittää, rajoittuuko suunnitelma vain kelpoisiin työntekijöihin, jotka olivat rekisteröityneet suunnitelmaan edellisenä vuonna. |
+   | **Pakollinen suunnitelma** | Määrittää, rekisteröidäänkö työntekijät automaattisesti suunnitelmaan. Työntekijät eivät voi muuttaa rekisteröitymisvalintaa. |
+   | **Aloituspäivämäärä** | Päivämäärä, jona suunnitelma on luotu yrityksessä. |
+   | **Toimittajatili** (edun toimittaja) | Toimittaja, jolle yritys maksaa suunnitelman maksut. |
+   | **Nimi** (edun toimittaja) | Toimittajan nimi. |
+   | **Toimittajaviite** (edun toimittaja) | Toimittajan viite suunnitelmalle. Esimerkiksi yrityksen ryhmäsuunnitelmanumero. |
+   | **Vaihtoehtoinen viite** (edun toimittaja) | Toimittajan vaihtoehtoinen viite suunnitelmalle. Esimerkiksi yrityksen tilinumero. |
+   | **Valuutta** (edun toimittaja) | Valuutta, jota käytetään maksujen suorittamisessa toimittajalle. |
+   | **Kulutili** (edun toimittaja) | yleinen kirjanpitotili, jota käytetään suunnitelman maksujen kulutilinä. |
+   | **Toimittajatili** (edun ylläpitäjä) | Toimittaja, jolle yritys maksaa suunnitelman ylläpitämisestä. Jos suunnitelmaa ylläpidetään itse, jätä tämä kenttä tyhjäksi. |
+   | **Nimi** (edun ylläpitäjä) | Edut ylläpidon toimittajan nimi. |
+   | **Toimittajaviite** (edun ylläpitäjä) | Ylläpidon toimittajan viite suunnitelmalle. |
+   | **Vaihtoehtoinen viite** (edun ylläpitäjä) | Ylläpidon toimittajan vaihtoehtoinen viite suunnitelmalle. |
+   | **Valuutta** (edun ylläpitäjä) | Valuutta, jota käytetään etujen ylläpitäjälle maksamiseen. |
+   | **Kulutili** (edun ylläpitäjä) | Yleinen kirjanpitotili, jota käytetään suunnitelman ylläpitoon liittyvien kulujen kulutilinä. |
 
 6. Tarvittaessa **Suodattimet**-välilehdessä. Voit suodattaa seuraavien kenttien perusteella:
 
-   - Liiketoimintayksikkö
-   - Osasto
-   - Oikeushenkilö
-   - Toimipaikka
-   - Sijainti
+   - **Liiketoimintayksikkö**
+   - **Osasto**
+   - **Oikeushenkilö**
+   - **Toimipaikka**
+   - **Sijainti**
 
 7. Määritä **Kelpoisuussäännöt**-välilehdelle seuraavien kenttien arvot:
 
    | Kenttä | Kuvaus |
    | --- | --- |
-   | Rivinumero | Kelpoisuussäännön rivinumero. |
-   | Kelpoisuussääntö | Etuussuunnitelmaan sovellettava kelpoisuussääntö. Tätä kelpoisuussääntöä sovelletaan vastaavaan toimintotyyppiin ja kohdistetaan määritettyihin kattavuuden odotusaikaan ja vähennyksiin. |
-   | Toimenpidetyyppi | Toiminto, johon kelpoisuussääntöä sovelletaan: etuuksiin rekisteröityminen vai etuuksien vanheneminen. |
-   | Kattavuuden odotusaika | Arvo odotusjaksojen lomakkeesta. Kattavuuden odotusaika määrittää, kuinka monta päivää tai kuukautta työntekijä odottaa etuuden kattavuutta tai edun vanhentumista kelpoisuussäännön kriteereiden ja toimintotyypin mukaan. |
-   | Vähennyksen odotusaika | Arvo odotusjaksojen lomakkeesta. Vähennyksen odotusaika määrittää, kuinka monta päivää tai kuukautta työntekijä odottaa etuuden vähennysten tekemistä palkastaan kelpoisuussäännön kriteereiden ja toimintotyypin mukaan. |
+   | **Rivinumero** | Kelpoisuussäännön rivinumero. |
+   | **Kelpoisuussääntö** | Etuussuunnitelmaan sovellettava kelpoisuussääntö. Tätä kelpoisuussääntöä sovelletaan vastaavaan toimintotyyppiin ja kohdistetaan määritettyihin kattavuuden odotusaikaan ja vähennyksiin. |
+   | **Toimenpidetyyppi** | Toiminto, johon kelpoisuussääntöä sovelletaan: etuuksiin rekisteröityminen vai etuuksien vanheneminen. |
+   | **Kattavuuden odotusaika** | Arvo odotusjaksojen lomakkeesta. Kattavuuden odotusaika määrittää, kuinka monta päivää tai kuukautta työntekijä odottaa etuuden kattavuutta tai edun vanhentumista kelpoisuussäännön kriteereiden ja toimintotyypin mukaan. |
+   | **Vähennyksen odotusaika** | Arvo odotusjaksojen lomakkeesta. Vähennyksen odotusaika määrittää, kuinka monta päivää tai kuukautta työntekijä odottaa etuuden vähennysten tekemistä palkastaan kelpoisuussäännön kriteereiden ja toimintotyypin mukaan. |
 
 8. Valitse **Tallenna**.
 

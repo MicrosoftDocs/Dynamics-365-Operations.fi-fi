@@ -3,7 +3,7 @@ title: Odotuspäivien määrittäminen
 description: Microsoft Dynamics 365 Human Resources -ohjelmassa odotuspäivät muodostavat kuukausittaisen tavoitteen, jota käytetään etuussuunnitelmissa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a46f296722317f4815bf6b2cb8960455cecee110
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: d85dafefb3b71c368dc3114bbf2524aee6196634
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092430"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229606"
 ---
 # <a name="configure-waiting-days"></a>Odotuspäivien määrittäminen
-
-[!include [banner](includes/preview-feature.md)]
 
 Microsoft Dynamics 365 Human Resources -ohjelmassa odotuspäivät muodostavat kuukausittaisen tavoitteen, jota käytetään etuussuunnitelmissa. Esimerkiksi odotuspäivä 15 vastaa kunkin kuukauden 15. päivää. 
 
@@ -39,8 +37,8 @@ Microsoft Dynamics 365 Human Resources -ohjelmassa odotuspäivät muodostavat ku
 
    | Kenttä | Kuvaus |
    | --- | --- |
-   | Odotuspäivä | Odotuspäivän yksilöivä tunniste. |
-   | Kuvaus | Odotuspäivän kuvaus. |
-   | Päivä | Kuukauden päivä, jolloin järjestelmä määrittää odotusajan päivämääräksi. |
+   | **Odotuspäivä** | Odotuspäivän yksilöivä tunniste. |
+   | **Kuvaus** | Odotuspäivän kuvaus. |
+   | **Päivä** | Kuukauden päivä, jolloin järjestelmä määrittää odotusajan päivämääräksi. |
    
 4. Valitse **Tallenna**.

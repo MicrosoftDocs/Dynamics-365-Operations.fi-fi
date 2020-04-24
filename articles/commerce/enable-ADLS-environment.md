@@ -3,7 +3,7 @@ title: ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä
 description: Tässä ohjeaiheessa selitetään, miten voit ottaa Azure Data Lake Storagen (ADLS:n) käyttöön Dynamics 365 Commerce -ympäristöä varten. Tämä on edellytys tuotesuositusten käyttöönotolle.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c037f5603af5af84917084eefa1edd508891c0d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154433"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259745"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>ADLS:n käyttöönotto Dynamics 365 Commerce -ympäristössä
 
@@ -48,7 +48,8 @@ Lisätietoja ADLS:stä on kohdassa [ADLS:n virallinen dokumentaatio](https://azu
   
 ## <a name="configuration-steps"></a>Määritysvaiheet
 
-Tässä osassa käsitellään ADLS:n ympäristössä käyttöön ottamisen edellyttämät määritysvaiheet.
+Tämä osa sisältää määritysvaiheet, jotka ovat tarpeen, jotta ADLS voidaan ottaa käyttöön ympäristössä, joka liittyy tuotesuosituksiin.
+Lisätietoja ADLS-lisäosan käyttöön tarvittavista vaiheista on ohjeaiheessa [Määritä yksikkösäilö käytettäväksi Data Lakessa](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-adls-in-the-environment"></a>ADLS:n käyttöönotto ympäristössä
 
@@ -91,9 +92,11 @@ Jos et ole vielä suorittanut niitä, suorita ympäristön [tuotesuositusten ja 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
+[Yksikkösäilön määrittäminen saataville Data Lake -säilönä](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
+
 [Tuotesuositusten yleiskatsaus](product-recommendations.md)
 
-[Ota tuotesuositukset käyttöön](enable-product-recommendations.md)
+[Tuotesuositusten ottaminen käyttöön](enable-product-recommendations.md)
 
 [Kohdennettujen suositusten ottaminen käyttöön](personalized-recommendations.md)
 
@@ -110,5 +113,3 @@ Jos et ole vielä suorittanut niitä, suorita ympäristön [tuotesuositusten ja 
 [Suositusten luominen esittelytietojen avulla](product-recommendations-demo-data.md)
 
 [Tuotesuositukset – usein kysytyt kysymykset](faq-recommendations.md)
-
-

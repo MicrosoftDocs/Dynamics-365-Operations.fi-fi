@@ -3,7 +3,7 @@ title: Loma- ja poissaoloparametrien määrittäminen
 description: Määritä henkilöstöhallinnon parametrit lomaa ja poissaoloa varten Dynamics 365 Human Resourcesissa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2acb8502ebcab122a0a1ff21e9f5e23931026327
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: eb992cbfbed33f88e125d3a8b721f8815414599a
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008865"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197978"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Loma- ja poissaoloparametrien määrittäminen
 
@@ -50,18 +50,25 @@ Ennen kuin määrität loma- ja poissaolosuunnitelmat Dynamics 365 Human Resourc
 
 7. Valitse **Tallenna**.
 
-## <a name="configure-calendar-parameters"></a>Määritä kalenteriparametrit
-
-Jos olet ottanut loma- ja poissaolokalenterin esikatselutoiminnon käyttöön, sinun on määritettävä lisäparametrit. 
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-> [!NOTE]
-> Helmikuun 3. 2020 -versiossa vain **Odottavat lomapyynnöt** ovat käytössä.
+## <a name="view-and-change-leave-and-absence-parameters"></a>Loma- ja poissaoloparametrien tarkasteleminen ja muuttaminen
 
 1. Valitse **Lomat ja poissaolot** -sivulla **Linkit**-välilehti.
 
-2. Valitse **Määritys**-kohdasta **Henkilöstöparametrit**.
+2. Valitse **Asetukset**-kohdasta **Loma- ja poissaoloparametrit**.
+
+3. Määritä **Yleiset**-välilehdessä seuraavat parametrit:
+ 
+    - Määritä **Loma-ja poissaoloyksikkö** joko tunteina tai päivinä. Jos valinta on päivät, voit valita **Ota käyttöön puolipäiväiset määritykset**, jolloin työntekijät voivat valita joko ensimmäisen tai toisen puolen päivästä lomapyynnöille. 
+
+    - Valitse **Palvelukuukausien voimaantulopäivä**, kun haluat määrittää, milloin jaksotusprosentit tulevat voimaan palvelukuukausien avulla.
+
+    - Valitse **Saldon laskeminen**, kun haluat näyttää saldojen näyttämisen tänään tai jaksotuskauden mukaan. Jos valitset **Saldo tänään** -vaihtoehdon, saldo näyttää kaikkien kertymien, oikaisujen ja pyyntöjen kokonaissumman tänään. Jos valitset **Saldo jaksotuskaudelta**, saldo näyttää kaikkien jaksotusten, oikaisujen ja pyyntöjen kokonaissumman niiden jaksotuskauden mukaan, jotka on määritetty lomasuunnitelman frekvenssin mukaan. 
+
+## <a name="configure-calendar-parameters"></a>Määritä kalenteriparametrit
+
+1. Valitse **Lomat ja poissaolot** -sivulla **Linkit**-välilehti.
+
+2. Valitse **Asetukset**-kohdasta **Loma- ja poissaoloparametrit**.
 
 3. Muuta **Kalenteri**-välilehdessä asetukset tarvittaessa.
 

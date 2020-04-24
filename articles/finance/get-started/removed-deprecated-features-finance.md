@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ec13076e6a05c3402af566487f7921f6971da215
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127974"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175105"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
 
@@ -47,6 +47,18 @@ Tämän luettelon avulla voit ottaa huomioon nämä poistuneet ja vanhentuneet o
 | **Tuotealueet, joihin vaikutetaan**         | Sovellus |
 | **Käytön asetukset**              | Kaikki |
 | **Tila**                         | Vanhentunut: 1.7.2021 jälkeen emme enää tue SSRS-raportteja: **Maksettavan veron rekisteri, vähennettävän veron rekisteri, EU-yhteenveto, ALV-rekisteri – toimintojen viite PL-00014**. Excel-muodon esimerkki vakiomuotoista tarkistustiedostoa varten ALV-ilmoituksessa (JPK_VDEK) otetaan sen sijaan käyttöön. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Financen version 10.0.11 poistetut tai vanhentuneet ominaisuudet
+
+### <a name="norwegian-standard-main-accounts"></a>Norjan vakiopäätilit
+
+|   |  |
+|------------|--------------------|
+| **Poiston tai vanhentumisen syy** | Uudelleensuunnittelu  |
+| **Onko toinen ominaisuus korvannut?**   | Kyllä (sovelluskohtaiset parametrit korvattu ER-muodolla) |
+| **Tuotealueet, joihin vaikutetaan**         | Sovellus |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: 1. huhtikuuta 2021 mennessä emme enää tue vakiopäätileihin liittyviä toimintoja: viitekenttä, liittyvä taulu, tietoyksikkö. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Financen version 10.0.7 poistetut tai vanhentuneet ominaisuudet
 

@@ -1,9 +1,9 @@
 ---
 title: Suositusten luominen esittelytietojen avulla
-description: Tämän asiakirja antaa ohjeita monikanavan tuotesuositusten käyttämiseen tason 1 yhden ruudun ympäristöissä käyttämällä valmiiksi täytettyjä ja mukautettavia esittelytietoja.
+description: Tämä aihe antaa ohjeita monikanavan tuotesuositusten käyttämiseen tason 1 yhden ruudun ympäristöissä käyttämällä valmiiksi täytettyjä ja mukautettavia esittelytietoja.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 03/30/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 59cb5e5c9b59ff2127149e3e47b6c30c9c938a27
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ec23461352abc53b90b6af539a3dd1764e4b5460
+ms.sourcegitcommit: 67cf9e2cf0f75e90526cae6bf176a40156c62a53
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154246"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175546"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Suositusten luominen esittelytietojen avulla
 
 [!include [banner](includes/banner.md)]
 
-Tämän asiakirja antaa ohjeita monikanavan tuotesuositusten käyttämiseen tason 1 yhden ruudun ympäristöissä käyttämällä valmiiksi täytettyjä ja mukautettavia esittelytietoja.
+Tämä aihe antaa ohjeita monikanavan tuotesuositusten käyttämiseen tason 1 yhden ruudun ympäristöissä käyttämällä valmiiksi täytettyjä ja mukautettavia esittelytietoja.
 
 Monikanavan tuotesuositukset tarjoavat joukon manuaalisesti koottuja tai ohjelmallisesti luotuja tuoteluetteloita. Näitä luetteloita voidaan käyttää useissa skenaarioissa liiketoimintatarpeiden mukaan. Lisätietoja tuotesuositusten luetteloista on kohdassa [Tuotesuositusten yleiskatsaus](product-recommendations.md).
 
@@ -46,16 +46,17 @@ Jokaisessa Onebox-tyyppisessä ympäristössä on valmiita tuotesuositusten demo
 
 Tiedot on järjestetty seuraaviin sarakkeisiin.
 
-| Sarakkeen nimi         | Pakollinen          | Kuvaus                                                                                                                                 | Mahdolliset arvot                                                              |
+| Sarakkeen nimi         | Pakollinen          | kuvaus                                                                                                                                 | Mahdolliset arvot                                                              |
 |---------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | RecoList            | :heavy_check_mark: | Tuotesuosituksen tietty luettelotyyppi, jonka esittelytietojen piste luo.                                                    | <ul><li>RecoBestSelling</li><li>RecoNew</li><li>RecoTrending</li><li>RecoCart</li><li>RecoPeopleAlsoBuy</li></ul> |
 | OperatingUnitNumber | :heavy_check_mark: | Tietty toimintayksikön numero, jossa tuotesuositusten odotetaan näkyvän.                                        |                                                                              |
 | Luokka            |                    |    Luokka, jolle määritetty luettelo tulisi palauttaa. Jos luokkaa ei ole määritetty, luettelo koskee vain siirtymishierarkian ylätasoa.    |                                                                              |
 | SeedItemId          |                    |    Jos luettelo edellyttää alkuarvoa (RecoPeopleAlsoBuy ja RecoCart), tuote, jolle näiden luetteloiden tulisi näyttää lisätuotteita.            |                                                                              |
+| Asiakastunnus          |                    |    Luettelo, joka edellyttää asiakastunnusta (RecoPicks).  Oletusarvo 0 koskee kaikkia asiakkaita.          |                                                                              |
 | ItemIds             | :heavy_check_mark: | Yksi tai useampi tuloksena palautettava tuote, erotettu toisistaan ‘;’-merkillä.                                                                  |                                                                              |
 
 ## <a name="customize-demo-data"></a>Mukauta demotietoja
-Voit muokata oletusarvoisia esittelytietoja HQ:ssa määritettyjen tuote- ja luokkatietojen avulla. Kun .csv on päivitetty, asiakkaille palautetut tuotesuositukset päivitetään heti muutosten mukaisesti.
+Voit muokata oletusarvoisia esittelytietoja HQ:ssa määritettyjen tuote- ja luokkatietojen avulla. Sen jälkeen, kun .csv on päivitetty, asiakkaille palautetut tuotesuositukset päivitetään heti muutosten mukaisesti.
 
 Laajennus sisältää datatiedoston nimeltään RecoMockDataset.csv. Sen avulla asiakas voi hallita tietojoukkoa, jota käytetään suositusten esimerkkitulosten luomiseen. Tiedoston nimeä voidaan hallita laajennuksen kokoonpanon kautta käyttämällä **ext.Recommendations.DemoFilePath**-asetusta. Näin käytettävissä voi olla useita tietojoukkoja, joita voidaan vaihtaa helposti kokoonpanon kautta.
 

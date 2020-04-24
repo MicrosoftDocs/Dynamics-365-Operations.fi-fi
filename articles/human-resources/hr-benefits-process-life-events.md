@@ -3,7 +3,7 @@ title: Elämäntapahtumien käsittely
 description: Microsoft Dynamics 365 Human Resourcesin työntekijäelinkaaren aikana kukin työntekijä voi kohdata erilaisia elämäntapahtumamuutoksia.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 91812432ead4b0afccfba30f8023f014e216236a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ba8d21482a18c6baa93437fc65c165907bdb515d
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008894"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229923"
 ---
 # <a name="process-life-events"></a>Elämäntapahtumien käsittely
-
-[!include [banner](includes/preview-feature.md)]
 
 Microsoft Dynamics 365 Human Resourcesin työntekijäelinkaaren aikana kukin työntekijä voi kohdata erilaisia elämäntapahtumamuutoksia. Esimerkiksi avioliitto, muutos työsuhteessa tai huollettavan/edunsaajan muutos. Jos haluat käyttää elämäntapahtumia, sinun on otettava elämäntapahtumat käyttöön etuusparametrien lomakkeessa, määritettävä elämäntapahtumatyyppejä ja määritettävä elämäntapahtuma-asetuksia suunnitelmatyypeille.
 
@@ -43,10 +41,10 @@ Jos esimerkiksi tänään on 1. helmikuuta ja työntekijä Joe Smithin on tarkoi
 
    | Kenttä | Kuvaus |
    | --- | --- |
-   | Rekisteröitymiskausi | Rekisteröintijakso, jonka elämäntapahtumat käsitellään. |
-   | Oikeushenkilö | Yritys, jonka elämäntapahtumat käsitellään. |
-   | Elinkaaritapahtuman päivämäärä | Järjestelmä käsittelee kaikki rekisteröintijakson aikana tähän päivämäärään mennessä toteutuneet tapahtumat. |
-   | Työntekijä | Työntekijä, jonka elämäntapahtumat käsitellään. Jos jätät tämän kentän tyhjäksi, käsitellään kaikkien työntekijöiden elämäntapahtumat. |
+   | **Rekisteröitymiskausi** | Rekisteröintijakso, jonka elämäntapahtumat käsitellään. |
+   | **Oikeushenkilö** | Yritys, jonka elämäntapahtumat käsitellään. |
+   | **Elinkaaritapahtuman päivämäärä** | Järjestelmä käsittelee kaikki rekisteröintijakson aikana tähän päivämäärään mennessä toteutuneet tapahtumat. |
+   | **Työntekijä** | Työntekijä, jonka elämäntapahtumat käsitellään. Jos jätät tämän kentän tyhjäksi, käsitellään kaikkien työntekijöiden elämäntapahtumat. |
 
 3. Jos haluat suorittaa prosessin taustalla, valitse **Suorita taustalla** ja tee seuraavat tehtävät:
 

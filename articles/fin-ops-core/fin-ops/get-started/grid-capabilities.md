@@ -3,7 +3,7 @@ title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uudella ruudukkotoiminnolla on oltava käyttöoikeus näihin ominaisuuksiin.
 author: jasongre
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7136edba828bf97b6e0c8d2a698b884640d680e5
-ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
+ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036262"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260457"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -90,4 +90,23 @@ Voit kumota ruudukon ryhmittelyn napsauttamalla ryhmittelysaraketta hiiren kakko
 ## <a name="evaluating-math-expressions"></a>Matemaattisten lausekkeiden arviointi
 Tuottavuutta tehostaakseen käyttäjät voivat antaa matemaattisia kaavoja ruudukon numeerisiin soluihin. Heidän ei tarvitse tehdä laskelmia järjestelmän ulkopuolisissa sovelluksissa. Jos esimerkiksi syötät **=15\*4** ja painat sitten **sarkainnäppäintä** ja siirryt pois kentästä, järjestelmä arvioi lausekkeen ja tallentaa kentän arvoksi **60**.
 
-Jos haluat, että järjestelmä tunnistaa arvon lausekkeena, aloita arvo yhtäsuuruusmerkillä (**=**). Lisä tietoja tuetuista operaattoreista ja syntaksista on kohdassa [Tuetut matemaattiset symbolit](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).  
+Jos haluat, että järjestelmä tunnistaa arvon lausekkeena, aloita arvo yhtäsuuruusmerkillä (**=**). Lisätietoja tuetuista operaattoreista ja syntaksista on kohdassa [Tuetut matemaattiset symbolit](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
+
+## <a name="frequently-asked-questions"></a>Usein kysytyt kysymykset
+### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Miten otan uuden ruudukonhallinnan käyttöön omassa ympäristössäni? 
+
+**10.0.9/Platform-päivitys 33 ja** uudemmat **Uusi ruudukonhallinta** -toiminto on käytettävissä suoraan ominaisuuksienhallinnassa missä tahansa ympäristössä. Kuten muutkin julkiset esikatseluominaisuudet, tämän toiminnon ottaminen käyttöön tuotannossa edellyttää [Lisäkäyttöehdot-sopimusta](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8/Platform-päivitys 32 ja 10.0.7/Platform-päivitys 31** aiemmat **Uusi ruudukonhallinta** -ominaisuus voidaan ottaa käyttöön Tier 1 (Dev/Test)- ja Tier 2 (eristysympäristö) -ympäristöissä, jotta voit tarjota lisätestejä ja rakennemuutoksia noudattamalla seuraavia ohjeita.
+
+1.  **Ota pikapäivitys käyttöön**: Suorita seuraava SQL-lause: 
+
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
+
+2. **Palauta IIS** tyhjentääksesi staattisen välimuistin. 
+
+3.  **Etsi ominaisuus**: Siirry **Ominaisuuksien hallinta** -työtilaan. Jos **Uusi ruudukonhallinta** -ohjausobjekti ei näy kaikkien ominaisuuksien luettelossa, valitse **Tarkista päivitykset**.   
+
+4.  **Ota ominaisuus käyttöön**: Etsi **Uusi ruudukonhallinta** -ominaisuus ominaisuuksien luettelosta ja napsauta **Ota käyttöön nyt** tietoruudussa. Huomaa, että selaimen päivitys on pakollinen. 
+
+Kaikki myöhemmät käyttäjäistunnot alkavat, kun uusi ruudukonhallinta on käytössä.

@@ -2,7 +2,7 @@
 title: Laadunhallinnan yleiskuvaus
 description: Tässä ohjeaiheessa kerrotaan, miten Dynamics 365 Supply Chain Managementin laadunhallinnan avulla voidaan parantaa toimitusketjun tuotteiden laatua.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2d51c659d9d06f075458359d81de978e7a6d14b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
+ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814395"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3224906"
 ---
 # <a name="quality-management-overview"></a>Laadunhallinnan yleiskuvaus
 
@@ -303,123 +303,7 @@ Jos asetat ostoissa **Tapahtumatyyppi**-kentän arvoksi **Tuotteen vastaanotto**
 - Jos **Päivitettyä määrää kohden** -asetuksen arvoksi määritetään **Kyllä**, laatutilaus luodaan jokaista vastaanottoa varten ostotilauksen perusteella, jolloin otetaan huomioon vastaanotettu määrä sekä nimikeotannan asetukset. Joka kerta, kun määrä vastaanotetaan ostotilauksen perusteella, luodaaan uusia laatutilauksia juuri saadun määrän perusteella.
 - Jos **Päivitettyä määrää kohden** -asetuksen arvoksi määritetään **Ei**, laatutilaus luodaan ensimmäistä vastaanottoa varten ostotilauksen perusteella, jolloin otetaan huomioon vastaanotettu määrä. Lisäksi jäljelle jäävän määrän perusteella luodaan seurantadimensioiden mukaan vähintään yksi laatutilaus. Laatutilauksia ei luoda ostotilauksen perusteella seuraavien vastaanottojen osalta.
 
-<table>
-<tbody>
-<tr>
-<th>Laatumääritys</th>
-<th>Päivitettyä määrää kohden</th>
-<th>Seurantadimension mukaan</th>
-<th>Tulos</th>
-</tr>
-<tr>
-<td>Prosenttiosuus: 10 %</td>
-<td>Kyllä</td>
-<td>
-<p>Eränumero: Ei</p>
-<p>Sarjanumero: Ei</p>
-</td>
-<td>
-<p>Tilausmäärä: 100</p>
-<ol>
-<li>Ilmoita valmiiksi 30:n osalta
-<ul>
-<li>Laatutilaus #1 määrälle 3 (10 prosenttia 30:stä)</li>
-</ul>
-</li>
-<li>Ilmoita valmiiksi 70:n osalta
-<ul>
-<li>Laatutilaus #2 määrälle 7 (10 % jäljellä olevasta tilausmäärästä eli 70:stä)</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Kiinteä määrä: 1</td>
-<td>Ei</td>
-<td>
-<p>Eränumero: Ei</p>
-<p>Sarjanumero: Ei</p>
-</td>
-<td>Tilausmäärä: 100
-<ol>
-<li>Ilmoita valmiiksi 30:n osalta
-<ul>
-<li>Laatutilaus #1 luodaan määrälle 1 (ensimmäiselle valmiiksi ilmoitetulle määrälle, jolla on kiinteä arvo 1).</li>
-<li>Jäljelle jäävää määrää varten ei luoda enempää laatutilauksia.</li>
-</ul>
-</li>
-<li>Ilmoita valmiiksi 10:n osalta
-<ul>
-<li>Laatutilauksia ei luota.</li>
-</ul>
-</li>
-<li>Ilmoita valmiiksi 60:n osalta
-<ul>
-<li>Laatutilauksia ei luota.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Kiinteä määrä: 1</td>
-<td>Kyllä</td>
-<td>
-<p>Eränumero: Kyllä</p>
-<p>Sarjanumero: Kyllä</p>
-</td>
-<td>
-<p>Tilausmäärä: 10</p>
-<ol>
-<li>Ilmoita valmiiksi 3:n osalta
-<ul>
-<li>Laatutilaus #1 määrälle 1 erästä #b1, sarjanumero #s1</li>
-<li>Laatutilaus #2 määrälle 1 erästä #b2, sarjanumero #s2</li>
-<li>Laatutilaus #3 määrälle 1 erästä #b3, sarjanumero #s3</li>
-</ul>
-</li>
-<li>Ilmoita valmiiksi 2:n osalta
-<ul>
-<li>Laatutilaus #4 määrälle 1 erästä #b4, sarjanumero #s4</li>
-<li>Laatutilaus #5 määrälle 1 erästä #b5, sarjanumero #s5</li>
-</ul>
-</li>
-</ol>
-<p><strong>Huomautus:</strong> Erää voidaan käyttää uudelleen.</p>
-</td>
-</tr>
-<tr>
-<td>Kiinteä määrä: 2</td>
-<td>Ei</td>
-<td>
-<p>Eränumero: Kyllä</p>
-<p>Sarjanumero: Kyllä</p>
-</td>
-<td>
-<p>Tilausmäärä: 10</p>
-<ol>
-<li>Ilmoita valmiiksi 4:n osalta
-<ul>
-<li>Laatutilaus #1 määrälle 1 erästä #b1, sarjanumero #s1.</li>
-<li>Laatutilaus #2 määrälle 1 erästä #b2, sarjanumero #s2.</li>
-<li>Laatutilaus #3 määrälle 1 erästä #b3, sarjanumero #s3.</li>
-<li>Laatutilaus #4 määrälle 1 erästä #b4, sarjanumero #s4.</li>
-<li>Jäljelle jäävää määrää varten ei luoda enempää laatutilauksia.</li>
-</ul>
-</li>
-<li>Ilmoita valmiiksi 6:n osalta
-<ul>
-<li>Laatutilauksia ei luota.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
-
-### <a name="production"></a>Tuotanto
+### <a name="production"></a>Tuotantoympäristö
 
 Jos asetat tuotannossa **Tapahtumatyyppi**-kentän arvoksi **Ilmoita valmiiksi** ja **Suoritus**-kentän arvoksi **Jälkeen** **Laatuliitokset**-sivulla, saat seuraavat tulokset:
 

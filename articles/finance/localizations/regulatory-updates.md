@@ -3,7 +3,7 @@ title: Pakolliset päivitykset
 description: Tässä ohjeaiheessa on luettelo Microsoft Dynamics 365 Financelle suunnitelluista ja julkaistuista pakollisista päivityksistä.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f35ab4b3ad49edfd0b68f906f44b8a2b04787f1a
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: 6e403e3d18aec616d0c569b16ba77eaefdf4b0ea
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3161802"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262623"
 ---
 # <a name="regulatory-updates"></a>Pakolliset päivitykset
 
@@ -51,8 +51,11 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 |      Brasilia         |   2020. tammikuuta       | 10.0.8      |   Täydentäviä tietoja kohteesta ICMS-ST    |
 |      Brasilia         |   Tammikuu 2020 - maaliskuu 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal-asettelu 014 |
 |      Brasilia         |   Tammikuu 2020 - maaliskuu 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Määräys SEF Nº 343DR   |
+|      Brasilia         |   Toukokuu 2020 - maaliskuu 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD -asettelu 8   |
+|      Brasilia         |   Toukokuu 2020 - huhtikuu 2020      | 10.0.11, 10.0.10HF, 10.0.9HF, 10.0.8HF      |   Tekninen huomautus NT2019.001 v1.40   |
 |      Ranska         |   Huhtikuun 2020.       | 10.0.10      |   Itsenäisten ammatinharjoittajien oikeudellisten palkkioiden ilmoitus veroviranomaisille (DAS2)    |
 |      Ranska         |   Maaliskuun 2020.       | 10.0.9      |   Ranskan lokalisointi: ISO 20022 -muoto kansainväliseen maksuun ja kassasiirtoon    |
+|      Unkari         |   Toukokuu 2020 - maaliskuu 2020       | 10.0.11, 10.0.9HF, 10.0.8HF     |   Online-laskutusjärjestelmä v.2.0 Finance and Operationsissa    |
 |      Intia         |   Maaliskuun 2020.      | 10.0.9      |   Uusi GSTR (ANX-1 & ANX-2) Palauta offline-työkalu    |
 |      Italia         |   2020. tammikuuta      | 10.0.8      |   Arvonlisäveron hallinnan muutokset D.L.:n toimesta 119/23 loka 2018: Vuosittainen veroviestintä    |
 |      Italia         |   Maaliskuun 2020.      | 10.0.9, 10.0.8HF      |   Retail – Asiakastietojen hallinta POS:ssä |
@@ -68,6 +71,9 @@ Seuraavassa taulukossa on uusimpien säännöspäivitysten suunnitelmat.
 |      Puola          |   Tammikuu 2020 - maaliskuu 2020     | 10.0.9, 10.0.8HF     |   Retail – Asiakastietojen tulostus verokuittiin |
 |      Puola          |   Tammikuu 2020 - maaliskuu 2020     | 10.0.9, 10.0.8     |   SAF laskut (JPK_FA) v. 3 alkaen 2. joulukuuta 2019 |
 |      Puola          |   Huhtikuu 2020 – tammikuu 2020     | 10.0.10, 10.0.9, 10.0.8     |   JPK_VDEK korvaa kohteen JPK_VAT (SAF ALV) |
+|      Puola          |   Toukokuun 2020.     | 10.0.11     |   Jaa AP/AR toteutunut kurssierotussumma laskun nettoarvon ja ALV-määrän kurssierotuksena  |
+|      Puola          |   Toukokuun 2020.     | 10.0.11     |   SAF kirjanpitokirjat - Kerrosten suodatusparannusten lähettäminen |
+|      Puola          |   Toukokuun 2020.     | 10.0.11     |   JPK_VDEK täydennetty pakkaus I |
 |      Venäjä          |   Maaliskuun 2020.     | 10.0.9     |   Ominaisuusveroilmoituksen muoto 2019 raportointia varten |
 |      Venäjä          |   Maaliskuun 2020.     | 10.0.9     |   Liikevoittoveroilmoituksen muodon päivitykset |
 |      Singapore           |   2020. tammikuuta     | 10.0.8      |   GST-palautusraportit |

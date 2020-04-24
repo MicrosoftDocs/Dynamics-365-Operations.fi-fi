@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a37436eb15ee4c561d5d0c15c90e37815cb80860
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: aa61a70e14b7997258376beaf389129a4ad2fa73
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897922"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197264"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Dynamics 365 Talent -sovelluksen uudet tai muuttuneet ominaisuudet (huhtikuun 16, 2019)
 
@@ -46,10 +46,6 @@ Tässä osassa kuvatut muutokset koskevat koontiversiota 8.1.2239. Suluissa olev
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Kompensaatioalue, kompensaatiotaso, edunvaihtoehto ja osaamisaluetyypin Common Data Service -entiteetit, jotka on päivitetty sisältämään asiakaskentän tuen
 
 Tässä julkaisussa nämä Common Data Service -entiteetit on päivitetty sisältämään mahdollisuuden sisällyttää mukautettu kenttä, joka on lisätty Talent: Core HR:n kautta.
-
-### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Uusi Common Data Service -entiteetin tuki: kompensaation hyvityssäännöt, kompensaation muuttujasuunnitelma, muuttuva kompensaatio
-
-Tässä versiossa kompensaation hyvityssäännöt, kompensaation muuttujasuunnitelma ja muuttuvat kompensaatioentiteetit on lisätty Common Data Serviceen. Nämä entiteetit tukevat myös Talent: Core HR:n kautta lisättyjä mukautettuja kenttiä.
 
 ### <a name="powerbi-refresh-issues-314342"></a>PowerBI-päivitysongelmat (314342)
 
@@ -93,6 +89,6 @@ Tällä muutoksella tunnistetaan duplikaatit, kun syötät nimikenttiä, ja tila
 
 ### <a name="email-support-for-alerts"></a>Sähköpostituki hälytyksille
 
-Finance and Operations -käyttöympäristöpäivitys 25:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköposti-ilmoituksia yhteyshenkilöille, kun tapahtuma käynnistyy.
+Finance and Operationsin Platform update 25:n avulla käyttäjät voivat luoda hälytyssääntöjä, jotka lähettävät automaattisesti sähköpostiviestejä yhteystietoihin, kun tapahtuma käynnistyy.
 
 

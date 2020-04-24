@@ -3,7 +3,7 @@ title: Tilikauden lopetus
 description: Tässä aiheessa kuvataan kirjanpidon tilivuoden sulkemisprosessissa tarvittavat asetukset ja ohjeet.
 author: kweekley
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3071365640eb6c012cb9af5461e885bb3f135143
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f5b81ed788536a8b81ca53d6b6f12200836b6f5
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175394"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259768"
 ---
 # <a name="year-end-close"></a>Tilikauden lopetus
 
@@ -74,7 +74,7 @@ Kun yritykset on lisätty, määritä kertyneiden tuottojen päätilit kullekin 
 Tilivuoden päätösprosessi ei noudata tilirakenteita. Tämä johtuu siitä, että tilirakenteet voivat muuttua tilivuoden aikana, eikä asiaankuuluvaa tilirakennetta ei välttämättä voi tunnistaa näiden muutosten vuoksi.  Kun avaustapahtumat luodaan, saldot siirretään edelleen taloushallinnon dimensioiden kanssa tilivuoden lopetusmallin määrityksen mukaisesti. Alkusaldotapahtumat voivat sisältää taloushallinnon dimensioita, jotka eivät sisälly enää nykyiseen tilirakenne- ja segmenttiyhdistelmiin, jotka eivät ole enää kelvollisia nykyisessä tilirakenteessa. Jos organisaatiosi haluaa jättää taloushallinnon dimension pois kertyneiden voittojen alkusaldosta, aseta taloushallinnon dimension asetukseksi **Sulje yksittäinen** ja jätä dimensioarvo tyhjäksi.
 
 ## <a name="run-the-year-end-close-process"></a>Tilivuoden sulkemisprosessin suorittaminen
-Kun tilivuoden sulkemismallit on luotu, sulkemisprosessi aloitetaan valitsemalla toimintoruudusta **Suorita tilivuosi**. Valitse kaikki mallin yritykset tai niiden osajoukko, joille tilikauden lopetus suoritetaan. Kun suoritat tilivuoden sulkemisen tilivuodelle ensimmäisen kerran, valitset luultavasti kaikki yritykset, jotta voit luoda kaikille yrityksille alkusaldot. Jos suoritat tilivuoden sulkemisprosessin uudelleen, voit suorittaa prosessin ainoastaan yrityksille, joille on kirjattu korjaustapahtumia. 
+Kun tilivuoden sulkemismallit on luotu, sulkemisprosessi aloitetaan valitsemalla toimintoruudusta **Suorita tilikauden lopetus**. Valitse kaikki mallin yritykset tai niiden osajoukko, joille tilikauden lopetus suoritetaan. Kun suoritat tilivuoden sulkemisen tilivuodelle ensimmäisen kerran, valitset luultavasti kaikki yritykset, jotta voit luoda kaikille yrityksille alkusaldot. Jos suoritat tilivuoden sulkemisprosessin uudelleen, voit suorittaa prosessin ainoastaan yrityksille, joille on kirjattu korjaustapahtumia. 
 
 Valitse tilivuosi, jolle haluat suorittaa tilivuoden sulkemisprosessin. Jos tilivuoden viimeisellä kaudella on useampi sulkemisjakso, **Jakson nimi** -kentässä voi valita, mihin sulkemisjaksoon sulkemistapahtuma kirjataan, jos sulkemistapahtuman luominen on määritetty. 
 
