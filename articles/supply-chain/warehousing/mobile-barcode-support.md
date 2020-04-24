@@ -2,7 +2,7 @@
 title: Mobiililaitteiden viivakoodien tuki
 description: Tässä ohjeaiheessa kerrotaan, miten varaston mobiiliskannaussovellusta käytetään Android-yhteensopivissa laitteissa.
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
@@ -10,28 +10,28 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BarcodeSetup
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f4f61da42e02bfbf648bd5f6f5fe60c97abf532
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: cbaed4da3ccd17d83c002994f01829f76db0d36a
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552183"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3215743"
 ---
-# <a name="mobile-barcode-support"></a><span data-ttu-id="76c03-103">Mobiililaitteiden viivakoodituki</span><span class="sxs-lookup"><span data-stu-id="76c03-103">Mobile barcode support</span></span>
+# <a name="mobile-barcode-support"></a><span data-ttu-id="e3755-103">Mobiililaitteiden viivakoodituki</span><span class="sxs-lookup"><span data-stu-id="e3755-103">Mobile barcode support</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="76c03-104">Koska Android on avoimen lähdekoodin projekti, kuka tahansa varaston viivakoodilukijoiden laitteistovalmistaja voi tehdä Android-käyttöjärjestelmää käyttävän laitteen.</span><span class="sxs-lookup"><span data-stu-id="76c03-104">Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system.</span></span> <span data-ttu-id="76c03-105">Laite on Android-yhteensopiva vain, jos siinä voidaan suorittaa Android-suoritusympäristölle luotuja sovelluksia.</span><span class="sxs-lookup"><span data-stu-id="76c03-105">A device is only Android-compatible if it can run apps that are written for the Android execution environment.</span></span>
-<span data-ttu-id="76c03-106">Laitteiston toimittaja voi kuitenkin muokata Android-versiota ja luoda siihen kerroksia niin, että versio toimii laitteistossa.</span><span class="sxs-lookup"><span data-stu-id="76c03-106">However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware.</span></span> <span data-ttu-id="76c03-107">Microsoft ei vastaa siitä, että Android-laitteen mobiililaitteen viivakoodin skannaussovellus on yhteensopiva valmistajan viivakoodilukulaitteiston kanssa tai että Android-versio toimii laitteessa.</span><span class="sxs-lookup"><span data-stu-id="76c03-107">Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it.</span></span> 
+<span data-ttu-id="e3755-104">Koska Android on avoimen lähdekoodin projekti, kuka tahansa varaston viivakoodilukijoiden laitteistovalmistaja voi tehdä Android-käyttöjärjestelmää käyttävän laitteen.</span><span class="sxs-lookup"><span data-stu-id="e3755-104">Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system.</span></span> <span data-ttu-id="e3755-105">Laite on Android-yhteensopiva vain, jos siinä voidaan suorittaa Android-suoritusympäristölle luotuja sovelluksia.</span><span class="sxs-lookup"><span data-stu-id="e3755-105">A device is only Android-compatible if it can run apps that are written for the Android execution environment.</span></span>
+<span data-ttu-id="e3755-106">Laitteiston toimittaja voi kuitenkin muokata Android-versiota ja luoda siihen kerroksia niin, että versio toimii laitteistossa.</span><span class="sxs-lookup"><span data-stu-id="e3755-106">However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware.</span></span> <span data-ttu-id="e3755-107">Microsoft ei vastaa siitä, että Android-laitteen mobiililaitteen viivakoodin skannaussovellus on yhteensopiva valmistajan viivakoodilukulaitteiston kanssa tai että Android-versio toimii laitteessa.</span><span class="sxs-lookup"><span data-stu-id="e3755-107">Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it.</span></span> 
 
-<span data-ttu-id="76c03-108">Dynamics 365 Supply Chain Managementin varastointisovellusta on testattu erilaisissa Android-laitteissa viivakoodinlukuominaisuuksien varalta.</span><span class="sxs-lookup"><span data-stu-id="76c03-108">The Dynamics 365 Supply Chain Management - Warehousing app has been tested with a selection of Android powered devices for bar code scanning.</span></span> <span data-ttu-id="76c03-109">Testeissä oli mukana vain osa markkinoilla olevista laitteista.</span><span class="sxs-lookup"><span data-stu-id="76c03-109">These tests only cover a sample of the devices that are available on the market.</span></span>
+<span data-ttu-id="e3755-108">Dynamics 365 Supply Chain Managementin varastointisovellusta on testattu erilaisissa Android-laitteissa viivakoodinlukuominaisuuksien varalta.</span><span class="sxs-lookup"><span data-stu-id="e3755-108">The Dynamics 365 Supply Chain Management - Warehousing app has been tested with a selection of Android powered devices for bar code scanning.</span></span> <span data-ttu-id="e3755-109">Testeissä oli mukana vain osa markkinoilla olevista laitteista.</span><span class="sxs-lookup"><span data-stu-id="e3755-109">These tests only cover a sample of the devices that are available on the market.</span></span>
 
-<span data-ttu-id="76c03-110">Suosittelemme varaston mobiililaitteen skannaussovelluksen testaamista laitteistossa, ennen kuin laitteiston ostopäätös tehdään.</span><span class="sxs-lookup"><span data-stu-id="76c03-110">As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.</span></span>
+<span data-ttu-id="e3755-110">Suosittelemme varaston mobiililaitteen skannaussovelluksen testaamista laitteistossa, ennen kuin laitteiston ostopäätös tehdään.</span><span class="sxs-lookup"><span data-stu-id="e3755-110">As a customer, we recommend that you test the Warehouse mobile scanning app on selected hardware before you decide on the hardware that you want to buy.</span></span>
 

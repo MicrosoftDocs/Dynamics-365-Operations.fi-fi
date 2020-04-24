@@ -2,7 +2,7 @@
 title: Peruuta huoltotilaukset
 description: Voit peruuttaa huoltotilauksen tai huoltotilausrivin suoraan huoltotilauksesta tai peruuttaa useita huoltotilauksia suorittamalla kausittaisen työn.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,61 +18,61 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1495fa139ea2c3cb7f2450b402126822f5549f60
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b60d5cf5ebae2386e7d9dc3d25833524044672d0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546591"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3202971"
 ---
-# <a name="cancel-service-orders"></a><span data-ttu-id="46a5a-103">Peruuta huoltotilaukset</span><span class="sxs-lookup"><span data-stu-id="46a5a-103">Cancel service orders</span></span>   
+# <a name="cancel-service-orders"></a><span data-ttu-id="a2b9d-103">Peruuta huoltotilaukset</span><span class="sxs-lookup"><span data-stu-id="a2b9d-103">Cancel service orders</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="46a5a-104">Voit peruuttaa huoltotilauksen tai huoltotilausrivin suoraan huoltotilauksesta tai peruuttaa useita huoltotilauksia suorittamalla kausittaisen työn.</span><span class="sxs-lookup"><span data-stu-id="46a5a-104">You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.</span></span>
+<span data-ttu-id="a2b9d-104">Voit peruuttaa huoltotilauksen tai huoltotilausrivin suoraan huoltotilauksesta tai peruuttaa useita huoltotilauksia suorittamalla kausittaisen työn.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-104">You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="46a5a-105">Huoltotilauksia ei voi peruuttaa, jos huoltotilauksen tila ei salli peruuttamista, jos huoltotilauksella on nimiketarpeita tai jos huoltotilaus on jo kirjattu.</span><span class="sxs-lookup"><span data-stu-id="46a5a-105">Service orders cannot be canceled if the stage of the service order does not allow cancelation, if the service order has item requirements, or if the service order has already been posted.</span></span></P>
+> <P><span data-ttu-id="a2b9d-105">Huoltotilauksia ei voi peruuttaa, jos huoltotilauksen tila ei salli peruuttamista, jos huoltotilauksella on nimiketarpeita tai jos huoltotilaus on jo kirjattu.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-105">Service orders cannot be canceled if the stage of the service order does not allow cancelation, if the service order has item requirements, or if the service order has already been posted.</span></span></P>
 
 
-## <a name="cancel-a-service-order-in-the-service-orders-form"></a><span data-ttu-id="46a5a-106">Huoltotilauksen peruuttaminen Huoltotilaukset-lomakkeessa</span><span class="sxs-lookup"><span data-stu-id="46a5a-106">Cancel a service order in the Service orders form</span></span>
+## <a name="cancel-a-service-order-in-the-service-orders-form"></a><span data-ttu-id="a2b9d-106">Huoltotilauksen peruuttaminen Huoltotilaukset-lomakkeessa</span><span class="sxs-lookup"><span data-stu-id="a2b9d-106">Cancel a service order in the Service orders form</span></span>
 
-1.  <span data-ttu-id="46a5a-107">Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.</span><span class="sxs-lookup"><span data-stu-id="46a5a-107">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="46a5a-108">Valitse huoltotilaus ja valitse sitten **Peruuta tilaus** toimintoruudusta.</span><span class="sxs-lookup"><span data-stu-id="46a5a-108">Select the service order, and on the Action Pane, click **Cancel order**.</span></span>
+1.  <span data-ttu-id="a2b9d-107">Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-107">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="a2b9d-108">Valitse huoltotilaus ja valitse sitten **Peruuta tilaus** toimintoruudusta.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-108">Select the service order, and on the Action Pane, click **Cancel order**.</span></span>
 
-## <a name="cancel-a-service-order-line"></a><span data-ttu-id="46a5a-109">Huoltotilausrivin peruuttaminen</span><span class="sxs-lookup"><span data-stu-id="46a5a-109">Cancel a service order line</span></span>
+## <a name="cancel-a-service-order-line"></a><span data-ttu-id="a2b9d-109">Huoltotilausrivin peruuttaminen</span><span class="sxs-lookup"><span data-stu-id="a2b9d-109">Cancel a service order line</span></span>
 
-1.  <span data-ttu-id="46a5a-110">Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.</span><span class="sxs-lookup"><span data-stu-id="46a5a-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="46a5a-111">Kaksoisnapsauta huoltotilausta, joka sisältää peruutettavan rivin.</span><span class="sxs-lookup"><span data-stu-id="46a5a-111">Double-click the service order that contains the line you want to cancel.</span></span>
+1.  <span data-ttu-id="a2b9d-110">Valitse **Huoltohallinta** \> **Yleinen** \> **Huoltotilaukset** \> **Huoltotilaukset**.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="a2b9d-111">Kaksoisnapsauta huoltotilausta, joka sisältää peruutettavan rivin.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-111">Double-click the service order that contains the line you want to cancel.</span></span>
 
-2.  <span data-ttu-id="46a5a-112">Valitse huoltotilausrivi, jonka haluat peruuttaa ja valitse sitten **Peruuta tilausrivi**, niin rivin tilaksi muuttuu **Peruutettu**.</span><span class="sxs-lookup"><span data-stu-id="46a5a-112">Select the service order line that you want to cancel, and then click **Cancel order line** to change the status of the line to **Canceled**.</span></span>
+2.  <span data-ttu-id="a2b9d-112">Valitse huoltotilausrivi, jonka haluat peruuttaa ja valitse sitten **Peruuta tilausrivi**, niin rivin tilaksi muuttuu **Peruutettu**.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-112">Select the service order line that you want to cancel, and then click **Cancel order line** to change the status of the line to **Canceled**.</span></span>
 
 
 > [!TIP]
-> <P><span data-ttu-id="46a5a-113">Voit kumota huoltotilausrivin peruutuksen ja muuttaa tilan takaisin <STRONG>Luotu</STRONG>-tilaan valitsemalla <STRONG>Kumoa peruutus</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="46a5a-113">To reverse the cancellation of a service order line and change the status back to <STRONG>Created</STRONG>, click <STRONG>Revoke cancel</STRONG>.</span></span></P>
+> <P><span data-ttu-id="a2b9d-113">Voit kumota huoltotilausrivin peruutuksen ja muuttaa tilan takaisin <STRONG>Luotu</STRONG>-tilaan valitsemalla <STRONG>Kumoa peruutus</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-113">To reverse the cancellation of a service order line and change the status back to <STRONG>Created</STRONG>, click <STRONG>Revoke cancel</STRONG>.</span></span></P>
 
 
-## <a name="cancel-multiple-service-orders"></a><span data-ttu-id="46a5a-114">Useiden huoltotilausten peruuttaminen</span><span class="sxs-lookup"><span data-stu-id="46a5a-114">Cancel multiple service orders</span></span>
+## <a name="cancel-multiple-service-orders"></a><span data-ttu-id="a2b9d-114">Useiden huoltotilausten peruuttaminen</span><span class="sxs-lookup"><span data-stu-id="a2b9d-114">Cancel multiple service orders</span></span>
 
-1.  <span data-ttu-id="46a5a-115">Valitse **Huoltohallinta** \> **Kausittainen** \> **Huoltotilaukset** \> **Peuuta huoltotilaukset**</span><span class="sxs-lookup"><span data-stu-id="46a5a-115">Click **Service management** \> **Periodic** \> **Service orders** \> **Cancel service orders**.</span></span>
+1.  <span data-ttu-id="a2b9d-115">Valitse **Huoltohallinta** \> **Kausittainen** \> **Huoltotilaukset** \> **Peuuta huoltotilaukset**</span><span class="sxs-lookup"><span data-stu-id="a2b9d-115">Click **Service management** \> **Periodic** \> **Service orders** \> **Cancel service orders**.</span></span>
 
-2.  <span data-ttu-id="46a5a-116">Napsauta **Valitse**-painiketta.</span><span class="sxs-lookup"><span data-stu-id="46a5a-116">Click the **Select** button.</span></span>
+2.  <span data-ttu-id="a2b9d-116">Napsauta **Valitse**-painiketta.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-116">Click the **Select** button.</span></span>
 
-3.  <span data-ttu-id="46a5a-117">Valitse peruutettavat huoltotilaukset **Kysely**-lomakkeen **Ehdot**-sarakkeessa.</span><span class="sxs-lookup"><span data-stu-id="46a5a-117">In the **Inquiry** form, in the **Criteria** column, select the service orders that you want to cancel.</span></span>
+3.  <span data-ttu-id="a2b9d-117">Valitse peruutettavat huoltotilaukset **Kysely**-lomakkeen **Ehdot**-sarakkeessa.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-117">In the **Inquiry** form, in the **Criteria** column, select the service orders that you want to cancel.</span></span>
 
-4.  <span data-ttu-id="46a5a-118">Sulje **Kysely**-lomake valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="46a5a-118">Click **OK** to close the **Inquiry** form.</span></span>
+4.  <span data-ttu-id="a2b9d-118">Sulje **Kysely**-lomake valitsemalla **OK**.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-118">Click **OK** to close the **Inquiry** form.</span></span>
 
-5.  <span data-ttu-id="46a5a-119">Valitse **Näytä infoloki** -valintaruutu, jos haluat luoda infolokin, jossa näkyvät peruutetut huoltotilaukset.</span><span class="sxs-lookup"><span data-stu-id="46a5a-119">Select the **Show Infolog** check box to generate an Infolog that lists the canceled service orders.</span></span>
+5.  <span data-ttu-id="a2b9d-119">Valitse **Näytä infoloki** -valintaruutu, jos haluat luoda infolokin, jossa näkyvät peruutetut huoltotilaukset.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-119">Select the **Show Infolog** check box to generate an Infolog that lists the canceled service orders.</span></span>
 
-6.  <span data-ttu-id="46a5a-120">Valitse **Kumoa peruutus** -valintaruutu, jos haluat peruuttaa huoltotilauksen **Peruutettu**-tilan.</span><span class="sxs-lookup"><span data-stu-id="46a5a-120">Select the **Revoke cancel** check box if you want to reverse the **Canceled** status of a service order.</span></span>
+6.  <span data-ttu-id="a2b9d-120">Valitse **Kumoa peruutus** -valintaruutu, jos haluat peruuttaa huoltotilauksen **Peruutettu**-tilan.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-120">Select the **Revoke cancel** check box if you want to reverse the **Canceled** status of a service order.</span></span>
 
-7.  <span data-ttu-id="46a5a-121">Napsauta **OK**.</span><span class="sxs-lookup"><span data-stu-id="46a5a-121">Click **OK**.</span></span>
+7.  <span data-ttu-id="a2b9d-121">Napsauta **OK**.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-121">Click **OK**.</span></span>
 
-<span data-ttu-id="46a5a-122">Valitut huoltotilaukset on joko peruutettu tai niiden **Peruutettu**-tila on palautettu tilaksi **Käsittelyssä**.</span><span class="sxs-lookup"><span data-stu-id="46a5a-122">The selected service orders are either canceled or their progress status of **Canceled** has been reversed to **In process**.</span></span>
+<span data-ttu-id="a2b9d-122">Valitut huoltotilaukset on joko peruutettu tai niiden **Peruutettu**-tila on palautettu tilaksi **Käsittelyssä**.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-122">The selected service orders are either canceled or their progress status of **Canceled** has been reversed to **In process**.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="46a5a-123">Jos valitset <STRONG>Kumoa peruutus</STRONG> -valintaruudun, tilassa <STRONG>Peruutettu</STRONG> olevat huoltotilaukset palautetaan, eikä <STRONG>Käsittelyssä</STRONG>-tilassa olevia huoltotilauksia peruuteta.</span><span class="sxs-lookup"><span data-stu-id="46a5a-123">If you select the <STRONG>Revoke cancel</STRONG> check box, service orders with a progress status of <STRONG>Canceled</STRONG> are reversed and service orders with a progress status of <STRONG>In process</STRONG> are not canceled.</span></span></P>
+> <P><span data-ttu-id="a2b9d-123">Jos valitset <STRONG>Kumoa peruutus</STRONG> -valintaruudun, tilassa <STRONG>Peruutettu</STRONG> olevat huoltotilaukset palautetaan, eikä <STRONG>Käsittelyssä</STRONG>-tilassa olevia huoltotilauksia peruuteta.</span><span class="sxs-lookup"><span data-stu-id="a2b9d-123">If you select the <STRONG>Revoke cancel</STRONG> check box, service orders with a progress status of <STRONG>Canceled</STRONG> are reversed and service orders with a progress status of <STRONG>In process</STRONG> are not canceled.</span></span></P>
 
 
   

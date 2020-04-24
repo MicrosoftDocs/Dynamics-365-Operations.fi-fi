@@ -2,7 +2,7 @@
 title: Tietojen siirtäminen tuotemalleja varten
 description: Tuotemääritysmallin tietojen vieminen edellyttää, että ainakin yksi tuotemalli on käytettävissä.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,30 +10,30 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cd2ac37fd1885a199e1af2ea74748650c2589b25
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 029f51466add340aead56aaad12afc3e1da374f2
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3147523"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3213006"
 ---
-# <a name="transfer-data-for-product-models"></a><span data-ttu-id="ce1d1-103">Tietojen siirtäminen tuotemalleja varten</span><span class="sxs-lookup"><span data-stu-id="ce1d1-103">Transfer data for product models</span></span>
+# <a name="transfer-data-for-product-models"></a><span data-ttu-id="3bd4e-103">Tietojen siirtäminen tuotemalleja varten</span><span class="sxs-lookup"><span data-stu-id="3bd4e-103">Transfer data for product models</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ce1d1-104">Tuotemääritysmallin tietojen vieminen edellyttää, että ainakin yksi tuotemalli on käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="ce1d1-104">Exporting data for a product configuration model requires that you have at least one product model available.</span></span> <span data-ttu-id="ce1d1-105">Tässä menettelyssä käytetään USMF-demoyrityksen korkealaatuista kaiutinmallia näyttämään, miten mallin tiedot viedään.</span><span class="sxs-lookup"><span data-stu-id="ce1d1-105">This procedure uses the High end speaker model in the demo company USMF to show you how to export data for this model.</span></span>
+<span data-ttu-id="3bd4e-104">Tuotemääritysmallin tietojen vieminen edellyttää, että ainakin yksi tuotemalli on käytettävissä.</span><span class="sxs-lookup"><span data-stu-id="3bd4e-104">Exporting data for a product configuration model requires that you have at least one product model available.</span></span> <span data-ttu-id="3bd4e-105">Tässä menettelyssä käytetään USMF-demoyrityksen korkealaatuista kaiutinmallia näyttämään, miten mallin tiedot viedään.</span><span class="sxs-lookup"><span data-stu-id="3bd4e-105">This procedure uses the High end speaker model in the demo company USMF to show you how to export data for this model.</span></span>
 
-1. <span data-ttu-id="ce1d1-106">Valitse Tuotevarianttimallin määritys.</span><span class="sxs-lookup"><span data-stu-id="ce1d1-106">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="ce1d1-107">Valitse Tuotekonfiguraation mallit.</span><span class="sxs-lookup"><span data-stu-id="ce1d1-107">Click Product configuration models.</span></span>
-3. <span data-ttu-id="ce1d1-108">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="ce1d1-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ce1d1-109">Valitse tähän menettelyyn Korkealaatuinen kaiutinmalli.</span><span class="sxs-lookup"><span data-stu-id="ce1d1-109">Select the High end speaker model for this procedure.</span></span>  
-4. <span data-ttu-id="ce1d1-110">Valitse toimintoruudussa Malli.</span><span class="sxs-lookup"><span data-stu-id="ce1d1-110">On the Action Pane, click Model.</span></span>
-5. <span data-ttu-id="ce1d1-111">Valitse Vie tuotemalli.</span><span class="sxs-lookup"><span data-stu-id="ce1d1-111">Click Export product model.</span></span>
-    * <span data-ttu-id="ce1d1-112">Lataustoiminto vaihtelee selaimen ja määritettyjen suojausasetusten mukaan.</span><span class="sxs-lookup"><span data-stu-id="ce1d1-112">The download behavior varies from browser to browser depending on how the security settings are set up.</span></span>  
+1. <span data-ttu-id="3bd4e-106">Valitse Tuotevarianttimallin määritys.</span><span class="sxs-lookup"><span data-stu-id="3bd4e-106">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="3bd4e-107">Valitse Tuotekonfiguraation mallit.</span><span class="sxs-lookup"><span data-stu-id="3bd4e-107">Click Product configuration models.</span></span>
+3. <span data-ttu-id="3bd4e-108">Etsi haluamasi tietue luettelosta ja valitse se.</span><span class="sxs-lookup"><span data-stu-id="3bd4e-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="3bd4e-109">Valitse tähän menettelyyn Korkealaatuinen kaiutinmalli.</span><span class="sxs-lookup"><span data-stu-id="3bd4e-109">Select the High end speaker model for this procedure.</span></span>  
+4. <span data-ttu-id="3bd4e-110">Valitse toimintoruudussa Malli.</span><span class="sxs-lookup"><span data-stu-id="3bd4e-110">On the Action Pane, click Model.</span></span>
+5. <span data-ttu-id="3bd4e-111">Valitse Vie tuotemalli.</span><span class="sxs-lookup"><span data-stu-id="3bd4e-111">Click Export product model.</span></span>
+    * <span data-ttu-id="3bd4e-112">Lataustoiminto vaihtelee selaimen ja määritettyjen suojausasetusten mukaan.</span><span class="sxs-lookup"><span data-stu-id="3bd4e-112">The download behavior varies from browser to browser depending on how the security settings are set up.</span></span>  
 
