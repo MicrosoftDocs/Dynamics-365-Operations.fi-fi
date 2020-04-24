@@ -16,16 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 42fcbeaadf0e8156cd72bee4328ca612c1abbaff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 058102b369ec7ed79874017e50a06d265b96b424
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008937"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198763"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Kompensaatioprosessin määrittäminen ja tulosten laskeminen
-
-
 
 Kompensaatioprosesseja käytetään määrittämään kiinteisiin ja muuttuviin kompensaatiosuunnitelmiin rekisteröityjen työntekijöiden uudet kompensaatiosummat ja palkkiot. Suorittamalla kompensaatioprosessit useita kertoja voidaan tehdä entä–jos-analyysi. Tällä tavoin voidaan tarkistaa, että kaikki muutokset ja asetukset ovat oikein. Tällä menettelyllä luodaan kompensaatioprosessi, suoritetaan se ja tarkastellaan tuloksia. Tämän menettelyn luomisessa käytetty esittely-yritys on USMF.
 

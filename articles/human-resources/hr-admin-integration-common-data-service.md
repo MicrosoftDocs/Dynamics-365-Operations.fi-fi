@@ -1,9 +1,9 @@
 ---
-title: Common Data Service-integroinnin määritys
-description: Voit ottaa integroinnin Common Data Servicen ja Microsoft Dynamics 365 Human Resourcesin välillä käyttöön tai poistaa sen käytöstä. Voit myös tarkastella synkronointitietoja, tyhjentää seurantatiedot ja synkronoida yksikön uudelleen, mikä helpottaa näiden kahden ympäristön välisten tieto-ongelmien vianmääritystä.
+title: Määritä Common Data Service -integraatio
+description: Voit ottaa integroinnin Common Data Servicen ja Dynamics 365 Human Resourcesin välillä käyttöön tai poistaa sen käytöstä. Voit myös tarkastella synkronointitietoja, tyhjentää seurantatiedot ja synkronoida yksikön uudelleen, mikä helpottaa näiden kahden ympäristön välisten tieto-ongelmien vianmääritystä.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,31 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 042daf3fdf7a906086af726472da050467d217e3
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 04280aa0908ed6dab86ef87b6c1843e4b4348e08
+ms.sourcegitcommit: c9657b44adb9c1a77c7c2f6ab63a58cc848974ea
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008856"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198419"
 ---
-# <a name="configure-common-data-service-integration"></a>Common Data Service-integroinnin määritys
+# <a name="configure-common-data-service-integration"></a>Määritä Common Data Service -integraatio
 
-Voit ottaa integroinnin Common Data Servicen ja Microsoft Dynamics 365 Human Resourcesin välillä käyttöön tai poistaa sen käytöstä. Voit myös tarkastella synkronointitietoja, tyhjentää seurantatiedot ja synkronoida yksikön uudelleen, mikä helpottaa näiden kahden ympäristön välisten tieto-ongelmien vianmääritystä.
+Voit ottaa integroinnin Common Data Servicen ja Dynamics 365 Human Resourcesin välillä käyttöön tai poistaa sen käytöstä. Voit myös tarkastella synkronointitietoja, tyhjentää seurantatiedot ja synkronoida yksikön uudelleen, mikä helpottaa näiden kahden ympäristön välisten tieto-ongelmien vianmääritystä.
 
 Kun poistat integroinnin käytöstä, käyttäjät voivat tehdä muutoksia Human Resourcesissa tai Common Data Servicessä, mutta näitä muutoksia ei synkronoida näiden kahden ympäristön välillä.
 
-Oletusarvoisesti integrointi Human Resourcesin ja Common Data Servicen välillä on joko käytössä tai pois käytöstä sen mukaan, onko ympäristössä demotietoja:
-
-- **Pois** sellaisten uusien ympäristöjen osalta, joissa ei ole demotietoja
-- **Käytössä** sellaisten uusien ympäristöjen osalta, joissa on demotietoja
-
-Uudet ympäristöt, joissa on demotietoja, alkavat synkronoida tietoja, kun ne valmistellaan.
+Oletusarvoisesti Human Resourcesin ja Common Data Servicen tietojen integrointi on poistettu käytöstä.
 
 Integrointi voi kannattaa poistaa käytöstä seuraavissa tilanteissa:
 
 - Olet täyttämässä dataa tietojen hallintakehyksen kautta ja sinun on tuotava tiedot useita kertoja, jotta saat ne oikeaan tilaan.
 
-- Tietoihin liittyy ongelmia joko Human Resourcesissa tai Common Data Servicessä. Jos poistat integroinnin käytöstä, voit poistaa tietueen yhdestä ympäristöstä poistamatta sitä toisessa ympäristössä. Kun otat integroinnin takaisin käyttöön, sen ympäristön tietue, jossa sitä ei poistettu, synkronoidaan takaisin siihen ympäristöön, jossa se poistettiin. Synkronointi alkaa seuraavan kerran, kun **Common Data Servicen integroinnin toteutumattoman pyynnön synkronointi** -erätyö suoritetaan.
+- Tietoihin liittyy ongelmia joko Human Resourcesissa tai Common Data Servicessä. Jos poistat integroinnin käytöstä, voit poistaa tietueen yhdestä ympäristöstä poistamatta sitä toisessa ympäristössä. Kun otat integroinnin takaisin käyttöön, sen ympäristön tietue, josta sitä ei poistettu, synkronoidaan siihen ympäristöön, josta se poistettiin. Synkronointi alkaa seuraavan kerran, kun **Common Data Servicen integroinnin toteutumattoman pyynnön synkronointi** -erätyö suoritetaan.
 
 > [!WARNING]
 > Kun poistat tietojen integroinnin käytöstä, varmista, ettet muokkaa samaa tietuetta molemmissa ympäristöissä. Kun otat integroinnin takaisin käyttöön, viimeksi muokattu tietue synkronoidaan. Näin ollen, jos et tehnyt samoja muutoksia tietueeseen molemmissa ympäristöissä, tietoja voidaan menettää.
@@ -103,9 +98,17 @@ Katso seuraava menettely, jos haluat suorittaa yksikölle täydellisen synkronoi
 
 ## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Synkronoi yksikkö Human Resourcesin ja Common Data Servicen välillä
 
-Käytä tätä menettelyä, jos Common Data Servicestä peräisin olevien muutosten näkyminen Human Resourcesissa kestää liian kauan tai jaos sinun on päivitettävä seurantataulukko seurannan tyhjentämisen jälkeen.
+Käytä tätä menetelmää seuraavissa tilanteissa:
 
-- Suorittaaksesi yksikölle täydellisen synkronoinnin Human Resourcesin ja Common Data Servicen välillä valitse yksikkö **CDS-yksikön nimi** -kentässä ja valitse sitten **Synkronoi nyt**.
+- Common Data Servicen muutokset näkyvät liian hitaasti henkilöstöhallinnossa.
+
+- Seurantataulukko on päivitettävä seurannan poistamisen jälkeen.
+
+Voit suorittaa täyden synkronoinnin yksikölle henkilöstöhallinnon ja Common Data Servicen välillä:
+
+1. Valitse yksikkö **CDS-yksikkönimi** -kentässä.
+
+2. Valitse **Synkronoi nyt**.
 
 [![Täyden synkronoinnin suoritus](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 

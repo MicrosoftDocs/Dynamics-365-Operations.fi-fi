@@ -2,7 +2,7 @@
 title: Hankintaluettelojen yleiskatsaus
 description: Tässä artikkelissa kuvataan, kuinka ostajat voivat määrittää ja ylläpitää tuotteiden hankintaluetteloita. Hankintaluettelot määrittävät nimikkeet ja palvelut, joita yrityksen työntekijät voivat tilata sisäiseen käyttöön.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0059c152d2ac498a12095d636d0dc0bbf045995
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: c32d0ce688fd29791cd75645250b161a34ff2bbf
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813474"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207091"
 ---
 # <a name="procurement-catalogs-overview"></a>Hankintaluettelojen yleiskatsaus
 

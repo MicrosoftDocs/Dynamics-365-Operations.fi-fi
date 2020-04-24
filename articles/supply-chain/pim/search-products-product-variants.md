@@ -2,7 +2,7 @@
 title: Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana
 description: Käytä **Nimiketunnus** kenttää tuote- ja tuotevarianttihakuun luodessasi manuaalisesti ostotilausrivin tai myyntitilausrivin. Näin löydät nopeasti tuotevariantit, kun käytettävissä on vain konfiguraation merkkijono tai jokin tuotedimensioista.
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 248534
 ms.assetid: 99dd5ce1-0029-4f06-90e7-865e6d46d86e
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0e6bc6c60fda3c3e4772d26d94c4c87fb2a3102c
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 15a6439595174978e379aaf248cd565bdf636428
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570722"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3209410"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Tuotteiden ja tuotevarianttien haku tilaustenkäsittelyn aikana
 

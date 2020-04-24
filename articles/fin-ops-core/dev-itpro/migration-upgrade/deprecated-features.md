@@ -3,7 +3,7 @@ title: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 description: Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka on aiotaan poistaa Dynamics 365 for Finance and Operations -sovelluksesta ja tuotteen aiemmista versioista.
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124563"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225125"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
@@ -263,11 +263,11 @@ Kehittäjä voi mallintaa upotetut tunnusluvut Visual Studiossa, ja loppukäytt�
 
 |   |  |
 |------------|--------------------|
-| **Poiston tai vanhentumisen syy** | Taulun metatietomääritelmissä voi olla virheellisiä kenttäviittauksia sisältäviä kenttäryhmiä. Tämä ongelma on luokiteltu tällä hetkellä *kääntäjän varoitukseksi* eikä *virheeksi*, minkä vuoksi käyttöönotettavan paketin luonti ja käyttöönotto voi jatkua ongelmaa korjaamatta. Käyttöönotettuna tämä ongelma voi aiheuttaa suorituksenaikaisia virheitä talousraportoinnissa ja SQL Server Reporting Servicesissa (SSRS). Ongelman korjaaminen:<br><br>1. Poista virheellinen kenttäviite taulun kenttäryhmämääritelmästä.<br><br>2. Käännä uudelleen.<br><br>3. Varmista, että kaikki varoitukset tai virheet käsitellään. |
-| **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan jatkossa käännösvirheellä.  |
-| **Tuotealueet, joihin vaikutetaan**         | Visual Studion kehitystyökalut. |
-| **Käytön asetukset**              | Kaikki. |
-| **Tila**                         | Vanhentunut: Varoituksesta tulee jatkossa käännöksenaikainen virhe. Tällä hetkellä tavoitteena on Platform update 30. |
+| **Poiston tai vanhentumisen syy** | Taulun metatietomääritelmissä voi olla virheellisiä kenttäviittauksia sisältäviä kenttäryhmiä. Käyttöönotettuna tämä ongelma voi aiheuttaa suorituksenaikaisia virheitä talousraportoinnissa ja SQL Server Reporting Servicesissa (SSRS). Tämä ongelma on luokiteltu tällä hetkellä *kääntäjän varoitukseksi* eikä *virheeksi*, minkä vuoksi käyttöönotettavan paketin luonti ja käyttöönotto voi jatkua ongelmaa korjaamatta. Ongelman korjaaminen:<br><br>1. Poista virheellinen kenttäviite taulun kenttäryhmämääritelmästä.<br><br>2. Käännä uudelleen.<br><br>3. Varmista, että kaikki varoitukset tai virheet käsitellään. |
+| **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan jatkossa käännösvirheellä. |
+| **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
+| **Käytön asetukset**              | Kaikki |
+| **Tila**                         | Vanhentunut: Varoituksesta tulee jatkossa käännöksenaikainen virhe. Tämä muutos kohdistuu Finance and Operations -sovellusten versioon 10.0.11. |
 
 #### <a name="complete-list"></a>Täydellinen luettelo
 Täydellinen vanhentumassa olevien ohjelmointirajapintojen luettelo on kohdassa [Menetelmien ja metatietojen elementtien poisto](deprecation-deletion-apis.md).

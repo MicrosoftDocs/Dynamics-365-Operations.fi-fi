@@ -2,7 +2,7 @@
 title: Toimittajayhteistyö ulkoisten toimittajien kanssa
 description: Tässä aiheessa selitetään, miten ostoedustajat voivat tehdä yhteistyötä ulkoisten toimittajien kanssa sekä vaihtaa ostotilauksia ja tavaralähetysvarastoa koskevia tietoja.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 733ecc7cfb4fee325560f5a6fe11612bb8ba57ef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b4b3120001ecd5340c063f80ad7471050b437fd2
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815292"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203434"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Toimittajayhteistyö ulkoisten toimittajien kanssa
 
@@ -115,7 +115,7 @@ Toimittajalle lähetetyn ostotilauksen, jonka tila on <strong>Ulkoisessa tarkist
 <li>Korvaa nimike.</li>
 </ul>
 Toimittaja ei voi muuttaa hintatietoja ja kuluja. Toimittajan voi kuitenkin ehdottaa niiden muuttamista käyttämällä huomautuksia.</td>
-<td>Toimittajan vastaukseksi tallennetaan <strong>Hyväksytty muutosten kera</strong> ja ostotilaus jää <strong>Ulkoisessa tarkistuksessa</strong> -tilaan. Tilat näyttävät millaisia muutoksia toimittaja on ehdottanut. Lisätietoja muutosten automaattisesta käytöstä on jäljempänä tämän aiheen kohdassa Ostotilauksen päivittäminen toimittajan ehdottaessa muutoksia. </td>
+<td>Toimittajan vastaukseksi tallennetaan <strong>Hyväksytty muutosten kera</strong> ja ostotilaus jää <strong>Ulkoisessa tarkistuksessa</strong> -tilaan. Tilat näyttävät millaisia muutoksia toimittaja on ehdottanut. Lisätietoja muutosten automaattisesta käytöstä on jäljempänä tämän aiheen kohdassa &quot;Ostotilauksen päivittäminen toimittajan ehdottaessa muutoksia&quot;. </td>
 </tr>
 </tbody>
 </table>

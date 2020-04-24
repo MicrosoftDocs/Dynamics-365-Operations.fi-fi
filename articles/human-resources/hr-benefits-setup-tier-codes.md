@@ -3,7 +3,7 @@ title: Määritä tasokoodit
 description: Dynamics 365 Human Resources käyttää tasokoodeja, joiden etuhinnat ovat työntekijöiden ja työnantajan maksamia.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15b6d84876b6f3907b052f6b297ab52bbd182a0f
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 26ff5459fc387dcb4192f0b558174700d081fecc
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092440"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229607"
 ---
 # <a name="set-up-tier-codes"></a>Määritä tasokoodit
-
-[!include [banner](includes/preview-feature.md)]
 
 Dynamics 365 Human Resources käyttää tasokoodeja, joiden etuhinnat ovat työntekijöiden ja työnantajan maksamia. Voit määrittää rajoittamattoman määrän tasokoodeja ja määrittää hintalaskelmia yrityksesi tarpeiden mukaan.
 
@@ -39,7 +37,7 @@ Dynamics 365 Human Resources käyttää tasokoodeja, joiden etuhinnat ovat työn
 
    | Kenttä | Kuvaus |
    | --- | --- |
-   | Tasokoodi | Yksilöivä etutasokoodi tai -numero, jonka avulla tasokoodi tunnistetaan. |
-   | Kuvaus | Etutasokoodin lyhyt kuvaus. |
+   | **Tasokoodi** | Yksilöivä etutasokoodi tai -numero, jonka avulla tasokoodi tunnistetaan. |
+   | **Kuvaus** | Etutasokoodin lyhyt kuvaus. |
 
 4. Valitse **Tallenna**. 
