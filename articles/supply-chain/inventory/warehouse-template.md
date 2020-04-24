@@ -2,7 +2,7 @@
 title: Varaston määrittäminen varaston konfigurointimallin avulla
 description: Tässä aiheessa käsitellään varaston määrittämistä varaston konfigurointimallin avulla.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3a6645bc55dfd4f03ce9872ff5017f1659b1f11c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 66fdc26b0b967a04a3c6a6e3444e00b1372dc504
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017594"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204007"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Varaston määrittäminen varaston konfigurointimallin avulla
 
@@ -93,7 +93,7 @@ Voit ladata tietopaketin zip-tiedoston. Tämä tiedosto sisältää kaikki tiedo
 
 **Näytä suoritusloki** sisältää tarkkoja tietoja jokaisesta tuotavasta tietoyksiköstä. Pääset nopeasti kohdetietoihin väliaikaisen tallennuksen tiedoista. Näet tällä tavoin, miltä tuodut tiedot näyttävät sovelluksen sivuilla. Oletustietomalleja käytettäessä kunkin tietoyksikön tuontijakso toimii ennalta määritetyllä tavalla. Tämä auttaa varmistamaan, että kaikki riippuvat tiedot tuodaan ensimmäiseksi. Jos projektissa on mukautettuja tietoyksiköitä, varmista, että oikea järjestys on määritetty. Lisätietoja on kohdassa [Konfigurointitietomallit](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Jos haluat lisätietoja tavasta, jolla varastomääritys voidaan kopioida varastomallin avulla yrityksen varastosta uuteen yritykseen samassa esiintymässä, katso tämä 3 minuuttia kestävä YouTube-video, joka käsittelee [Finance ja Operationsin määritysten kopiointia varastomallilla](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Kolme minuuttia kestävässä YouTube-videossa on lisätietoja tavasta, jolla varastomääritys voidaan kopioida varastomallin avulla yhdestä yrityksestä uuteen yritykseen samassa esiintymässä: [Ohje määrityksen kopioinnista varastomallin avulla Finance and Operationsiin](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Liittyvä aihe
 

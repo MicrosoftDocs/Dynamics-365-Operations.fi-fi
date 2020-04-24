@@ -3,7 +3,7 @@ title: Työsuhdetyyppien luominen
 description: Työsuhdetyypit voidaan määrittää Dynamics 365 Human Resources -sovelluksessa vastaamaan työntekijöitä.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 89a6045bebbb67251ee4a65dab71ce5771acc2af
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: dc9e9c2c948d654904041faa72110cc245308e64
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092611"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229714"
 ---
 # <a name="set-up-employment-types"></a>Työsuhdetyyppien luominen
 
-[!include [banner](includes/preview-feature.md)]
-
 Määritä työntekijöitä vastaavat tyypit Dynamics 365 Human Resourcesissa.
 
-1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Työsuhdetyypit**.
+1. Valitse **Henkilöstön hallinta** -työtilassa **Asetukset**-kohdasta **Työsuhdetyypit**.
 
 2. Valitse **Uusi**.
 
@@ -39,7 +37,7 @@ Määritä työntekijöitä vastaavat tyypit Dynamics 365 Human Resourcesissa.
 
    | Kenttä | Kuvaus |
    | --- | --- |
-   | Työsuhteen tyyppi | Työtyypin yksilöivä tunnus. |
-   | Kuvaus | Työtyypin kuvaus. |
+   | **Työsuhteen tyyppi** | Työtyypin yksilöivä tunnus. |
+   | **Kuvaus** | Työtyypin kuvaus. |
 
 4. Valitse **Tallenna**. 

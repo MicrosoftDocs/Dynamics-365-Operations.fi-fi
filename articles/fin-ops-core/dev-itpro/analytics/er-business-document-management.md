@@ -3,7 +3,7 @@ title: Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 description: Tässä ohjeaiheessa on tietoja ER-kehyksen liiketoiminnan asiakirjojen hallintatoiminnon käyttämisestä.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117334"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258554"
 ---
 # <a name="business-document-management-overview"></a>Liiketoiminta-asiakirjojen hallinta – yleiskatsaus
 
@@ -46,7 +46,7 @@ Yritystiedostojen hallinnan käyttäminen mallien muokkaamiseen Excel- tai Word-
 
 ## <a name="business-document-availability"></a>Yritysasiakirjojen käytettävyys
 
-Seuraavat Excel-pohjaisten mallien raportit ovat käytettävissä julkisen esikatselun julkaisemisen yhteydessä:
+Seuraavat Excel-pohjaisten mallien raportit tulevat käytettäviksi julkisen esikatselun julkaisemisen yhteydessä:
 
 **Myyntireskontra** (elokuu 2019)
 
@@ -248,9 +248,18 @@ Seuraavia ohjeita noudattamalla voit muokata vapaatekstilaskun malleja yritysasi
 1. Kirjaudu sisään käyttäjänä, jolla on Liiketoiminta-asiakirjan hallintatyötilan käyttöoikeus.
 2. Avaa liiketoiminta-asiakirjojen hallinnan työtila.
 
+Kun työasiakirjan hallintatoiminnon **Yrityksen asiakirjanhallinnan Officen kaltainen käyttökokemus** on poistettu käytöstä **Ominaisuuksien hallinta** -työtilassa, **Yrityksen asiakirjanhallinnan** työtilan pääruudukkona näkyvät seuraavat mallit:
+
+- Mallit, joiden omistaja on ER-määrityksen toimittaja (eli toimittaja, joka on tällä hetkellä merkitty aktiiviseksi **Sähköinen raportointi** -työtilassa). Kun olet valinnut jonkin näistä malleista, voit aloittaa tai jatkaa muokkaamista valitsemalla**Muokkaa mallia**.
+- Muiden ER-määritysten toimittajien omistamat mallit. Kun olet valinnut jonkin näistä malleista, voit valita **Uuden tiedoston** ja luoda siitä kopion, jonka omistaa ER-määrityspalvelu, ja aloittaa sitten kopion muokkaamisen.
+
 ![Liiketoiminta-asiakirjojen hallinnan työtilan sivu](./media/BDM-Overview-EditingTemplate1.png)
 
 **Malli** -välilehdessä näkyy valitun mallin sisältö. Valitse **Tiedot**-välilehti, jossa voit tarkastella valitun mallin tietoja sekä sen ER-muotokonfiguraation tietoja, jossa tämä malli sijaitsee. Huomaa, että kaikkien mallien tila on **Julkaistu**, eivätkä ne sisällä tietoja **Tarkistusversio**-sarakkeessa. Tämä tarkoittaa, että näitä malleja ei tällä hetkellä muokata.
+
+Kun **Työasiakirjan hallinta -toiminnon toimiston kaltainen käyttöliittymä** on otettu käyttöön **Ominaisuuksien hallinta** -työtilassa, **yrityksen asiakirjanhallinnan** työtilan pääruudukko näyttää ne mallit, jotka ovat ER-määrityksen toimittajan omistamia (eli palvelu, joka on tällä hetkellä merkitty aktiiviseksi **sähköisen raportoinnin** työtilassa). Kun olet valinnut jonkin näistä malleista, voit aloittaa tai jatkaa muokkaamista valitsemalla**Muokkaa mallia**.
+
+Jos haluat käsitellä muiden ER-määrityksen toimittajien omistamia malleja, valitse **Uusi asiakirja** luodaksesi kopion ER-toimittajan omistamasta mallista. Voit sitten aloittaa kopion muokkaamisen. Katso lisätietoja kohdasta [Uuden asiakirjan käyttöliittymä liiketoiminta-asiakirjan hallinnassa](er-business-document-management-new-template-ui.md).
 
 ### <a name="initiate-editing-templates-owned-by-your-configuration-provider"></a>Konfigurointipalvelun omistamien mallien muokkauksen aloittaminen
 

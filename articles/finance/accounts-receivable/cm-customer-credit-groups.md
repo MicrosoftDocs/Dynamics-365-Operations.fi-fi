@@ -3,7 +3,7 @@ title: Asiakasluottoryhmät
 description: Tässä ohjeaiheessa on tietoja asiakasluottoryhmistä
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7121b78f3318bae9f82b2f0f951bc7bfe6c4358
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 90d75493b928bfa4edafeef7730bc272c9146192
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015206"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261254"
 ---
 # <a name="customer-credit-groups"></a>Asiakasluottoryhmät
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Voit määrittää asiakasryhmiä, joilla on sama luottoraja. Lisäksi otetaan huomioon myyntilaskutilille määritetty yksittäinen luottoraja.
+Voit määrittää asiakasryhmiä, joilla on jaettu luottoraja. Lisäksi otetaan huomioon myyntilaskutilille määritetty yksittäinen luottoraja.
 
 Asiakasluottoryhmään voidaan valita jäseniä eri yrityksistä. Kun lisäät asiakkaan asiakasluottoryhmän asiakasluetteloon, kunkin asiakkaan luottorajan vanhentumispäivä muutetaan ryhmälle määritetyksi vanhentumispäiväksi.
 

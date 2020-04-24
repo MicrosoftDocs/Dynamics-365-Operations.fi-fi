@@ -3,7 +3,7 @@ title: Ota tuotesuositukset käyttöön
 description: Tässä ohjeaiheessa kerrotaa, miten tekoälyn koneoppimiseen perustuvia tuotesuosituksia voidaan tehdä Microsoft Dynamics 365 Commerce -asiakkaiden käyttöä varten.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d8a579be5df3c5e7718a6fb4720341f3bd01a64c
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154410"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259791"
 ---
 # <a name="enable-product-recommendations"></a>Ota tuotesuositukset käyttöön
 
@@ -36,10 +36,30 @@ Tässä ohjeaiheessa kerrotaa, miten tekoälyn koneoppimiseen perustuvia tuotesu
 
 Ota huomioon ennen käyttöönottoa, että tuotesuosituksia tuetaan vain Commerce-asiakkaille, jotka ovat siirtäneet tallennustilansa Azure Data Lake Storagea (ADLS:ää) käyttäen. 
 
-Katso ADLS:n käyttöönoton vaiheet kohdasta [ADLS:n käyttöönotto Dynamics 365 -ympäristössä](enable-ADLS-environment.md).
+Seuraavat kokoonpanot on otettava käyttöön taustajärjestelmässä ennen suositusten käyttöönottoa:
 
-Varmista myös, että RetailSale-mittarit on otettu käyttöön. Lisätietoja tästä määritysprosessista on [täällä.](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)
+1. Varmista, että ADLS on ostettu ja todennettu onnistuneesti ympäristössä. Katso lisätietoja kohdasta [Varmista, että ADLS on ostettu ja todennettu onnistuneesti ympäristössä](enable-ADLS-environment.md).
+2. Varmista, että yksikkösäilön päivitys on automatisoitu. Lisätietoja on kohdassa [Varmista, että yksikkösäilön päivitys on automatisoitu](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+3. Vahvista, että Azure AD -käyttäjätietojen määritys sisältää suositusten merkinnän. Lisätietoja tästä toiminnosta alla.
 
+Varmista myös, että RetailSale-mittarit on otettu käyttöön. Lisätietoja tästä määritysprosessista on kohdassa [Mittayksiköiden käsitteleminen](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+
+## <a name="azure-ad-identity-configuration"></a>Azure AD -tunnisteen konfiguraatio
+
+Tämä vaihe on pakollinen kaikille asiakkaille, jotka käyttävät infrastruktuuria palvelun (IaaS) määrityksenä. Jos asiakas käyttää Service fabric (SF) -palvelua, tämän vaiheen tulisi olla automaattinen ja suosittelemme, että asetus määritetään odotetulla tavalla.
+
+### <a name="setup"></a>Määritys
+
+1. Etsi taustaohjelmistosta **Azure Active Directory -sovellukset** -sivu.
+2. Tarkista, onko "RecommendationSystemApplication-1"-merkintää olemassa.
+
+Jos tapahtumaa ei ole olemassa, lisää uusi tietue, jossa on seuraavat tiedot:
+
+- **Asiakastunnus** - d37b07e8-dd1c-4514-835d-8b918e6f9727
+- **Nimi** - RecommendationSystemApplication-1
+- **Käyttäjätunnus** - RetailServiceAccount
+
+Tallenna ja sulje sivu. 
 
 ## <a name="turn-on-recommendations"></a>Suositusten ottaminen käyttöön
 
@@ -49,7 +69,7 @@ Voit ottaa tuotesuositukset käyttöön noudattamalla seuraavia ohjeita.
 1. Valitse jaettujen parametrien luettelossa **Suositusluettelot**.
 1. Määritä **Ota suositukset käyttöön** -asetukseksi **Kyllä**.
 
-![ota tuotesuositukset käyttöön](./media/enableproductrecommendations.png)
+![Suositusten ottaminen käyttöön](./media/enablepersonalization.png)
 
 > [!NOTE]
 > Tämä menettely käynnistää tuotesuositusluetteloiden luontiprosessin. Luetteloiden luominen, niiden saaminen käyttöön ja näkyminen myyntipisteessä tai Dynamics 365 Commerce -sovelluksessa voi kestää useita tunteja.
@@ -62,9 +82,11 @@ Oletusarvoisesti tekoälyyn perustuva tuotesuositusluettelo sisältää ehdotetu
 
 Kun suositukset on otettu käyttöön Commercen taustatoiminnossa, suosituspaneeli on lisättävä ohjausobjektin myyntipistenäyttöön asettelutyökalun avulla. Lisä tietoja tästä prosessista on kohdassa [Suositusten ohjausobjektin lisääminen myyntipisteen laitteen tapahtumaruudulle](add-recommendations-control-pos-screen.md). 
 
-## <a name="enable-personalized-recommendations"></a>Ota käyttöön kohdennetut tuotesuositukset
+## <a name="enable-personalized-recommendations"></a>Kohdennettujen suositusten ottaminen käyttöön
 
-Lisätietoja mukautettujen suositusten vastaanottamisesta on kohdassa [Mukautettujen suositusten ottaminen käyttöön](personalized-recommendations.md).
+Dynamics 365 Commerce -ohjelmassa jälleenmyyjät voivat tehdä mukautettuja tuotesuosituksia (eli personointeja). Näin henkilökohtaiset suositukset voidaan sisällyttää asiakaskokemukseen verkossa ja myyntipisteessä. Kun mukautustoiminto on käytössä, järjestelmä voi liittää käyttäjän osto- ja tuotetiedot ja luoda yksilöllisiä tuotesuosituksia.
+
+Lisätietoja mukautetuista suosituksista on kohdassa [Mukautettujen suositusten ottaminen käyttöön](personalized-recommendations.md).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

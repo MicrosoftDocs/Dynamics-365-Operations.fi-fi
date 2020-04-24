@@ -3,7 +3,7 @@ title: Loma- ja poissaolosuunnitelman luominen
 description: Luo lomasuunnitelmat erilaisille lomatyypeille Dynamics 365 Human Resourcesissa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: 532d9b276692858c77e4de41018775e9520f1882
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087297"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197356"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Loma- ja poissaolosuunnitelman luominen
 
@@ -42,6 +42,11 @@ Voit myös luoda sijaintiin perustuvia lomaetuja, kuten vain johdon etuuden tunn
 1. Valitse **Loma- ja poissaolo**-sivulla **Luo uusi suunnitelma**.
 
 2. Kirjoita **Tiedot**-kohtaan suunnitelman **Nimi**, **Alkamispäivämäärä**, **Kuvaus** ja **Loman tyyppi**.
+
+Jos toiminto **Määrittää useita lomatyyppejä yksittäiselle loma- ja poissaolosuunnitelmalle**, lomatyypit määritetään **Kertymäaikataulussa** **Yksityiskohtien**sijaan. Voit määrittää kullekin jaksotusaikataulutaulukon tietueelle lomatyypin.
+
+ > [!IMPORTANT]
+   > Kun olet ottanut tämän ominaisuuden käyttöön, sitä ei voi poistaa käytöstä.
 
 3. Määritä jaksotukset **Jaksotukset** -välilehdessä. Jaksotukset määrittävät, milloin ja kuinka usein työntekijä palkitaan. Tässä vaiheessa määritetään, milloin jaksotuksia on tarkoitus myöntää ja miten lomaetuja jaetaan.
 
@@ -95,8 +100,8 @@ Voit myös luoda sijaintiin perustuvia lomaetuja, kuten vain johdon etuuden tunn
    Voit luoda tasoja myöntääksesi vapaa-aikaa palkkiona eri perustein.
 
    Jos sinulla on tuntihinnalla työskenteleviä työntekijöitä, voit myöntää poissaoloja työtuntien mukaan virkaiän sijasta organisaatiossasi. Työtuntitiedot tallennetaan yleensä aika- ja läsnäolojärjestelmään. Voit tuoda aika- ja läsnäolojärjestelmästä tehdyt säännölliset ja ylityötunnit sekä käyttää niitä työntekijän palkkion perustana.
-
-   1. Valitse vaihtoehto **Jaksotustyyppi**-pudotusvalikosta:
+   
+    1. Valitse vaihtoehto **Jaksotustyyppi**-pudotusvalikosta:
 
       - **Kuukauden palvelu** -perustaa jaksotussuunnitelman kuukausien palvelun.
 
@@ -117,6 +122,13 @@ Voit myös luoda sijaintiin perustuvia lomaetuja, kuten vain johdon etuuden tunn
       - **Suurin siirrettävä** - Kertymäprosessi oikaisee enimmäissiirtokirjauksen saldon ylittävät lomasaldot aloituspäivämäärän vuosipäivänä.
 
       - **Myönnetty summa** - Työntekijöille aluksi myönnetty tuntien tai päivien määrä, kun rekisteröityvät lomasuunnitelmaan ensimmäisen kerran. Summaa ei jaksoteta kullekin kertymäkaudelle.
+      
+Jos toiminto **Määritä useita lomatyyppejä yksittäiselle loma- ja poissaolosuunnitelmalle** on käytössä, valitse vaihtoehto **Lomatyyppi**-kohdasta. 
+
+   > [!IMPORTANT]
+   > Kun olet ottanut tämän ominaisuuden käyttöön, sitä ei voi poistaa käytöstä.
+
+Jos **Käytä kokopäiväistä vastaavuutta** -toiminto on käytössä, henkilöstöhallinnossa käytetään kokopäiväistä vastaavuutta (FTE), joka on määritetty toimipaikan työntekijän kertymän jaksottamisen yhteydessä. Jos esimerkiksi FTE on 0,5 ja jaksotussumma on 10, työntekijän jaksotus on 5. Voit käyttää tätä toimintoa vain, jos otat käyttöön useita lomatyyppejä.  
 
 5. Valitse **Tallenna**.
 
@@ -358,21 +370,8 @@ Ennustettu saldo (30) = kertynyt määrä (10 × 1) + nykyinen saldo (40) – si
 | Jeannette Nicholson | 0,00              | 6/1/2018        | 6/1/2018   | 1,00           | 9/1/2018        | 3.00    |
 | Jay Norman          | 0,00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
 
-## <a name="configure-preview-features"></a>Esikatseluominaisuuksien määrittäminen
-
-Jos olet ottanut käyttöön loman ja poissaolon esikatseluominaisuudet, sinun on määritettävä myös niiden asetukset.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. **Esikatselu-ominaisuus: Määritä useita lomatyyppejä yksittäiselle loma- ja poissaolosuunnitelmalle**. Voit määrittää kullekin jaksotusaikataulutaulukon tietueelle lomatyypin.
-
-   > [!IMPORTANT]
-   > Kun olet ottanut tämän ominaisuuden käyttöön, sitä ei voi poistaa käytöstä.
-
-2. **Esikatselu-ominaisuus: Käytä kokoaikaista vastaavuutta**. Jos otat tämän esikatselutoiminnon käyttöön, henkilöstöhallinnossa käytetään kokopäiväistä vastaavuutta (FTE), joka on määritetty toimipaikan työntekijän kertymän jaksottamisen yhteydessä. Jos esimerkiksi FTE on 0,5 ja jaksotussumma on 10, työntekijän jaksotus on 5. Voit käyttää tätä toimintoa vain, jos otat käyttöön useita lomatyyppejä.
-
 ## <a name="see-also"></a>Lisätietoja
 
 - [Lomien ja poissaolojen yhteenveto](hr-leave-and-absence-overview.md)
-- [Määritä loman ja poissaolon tyypit](hr-leave-and-absence-types.md)
+- [Loma- ja poissaolotyyppien määrittäminen](hr-leave-and-absence-types.md)
 - [Jaksota loma- ja poissaolosuunnitelmia](hr-leave-and-absence-accrue.md)

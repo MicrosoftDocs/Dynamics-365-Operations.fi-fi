@@ -1,9 +1,9 @@
 ---
 title: Kattavuusasetusten luominen
-description: Microsoft Dynamics 365 Human Resourcesin kattavuusasetukset ovat osallistujan valitsemia kattavuustasoja etuussuunnitelmassa tai -ohjelmassa, kuten Vain työntekijä terveydenhoitosuunnitelman osalta tai 2 x palkka henkivakuutussuunnitelman osalta.
+description: Microsoft Dynamics 365 Human Resources -ohjelman kattavuustasot osallistujan valitsemiselle etuussuunnitelmassa tai -ohjelmassa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0af2b6ae0853b4c7f64c4d4f04299c87089d622b
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 021fea7604af2fff833ddc6868d55a316ef70aae
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092703"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230174"
 ---
 # <a name="create-coverage-options"></a>Kattavuusasetusten luominen
 
-[!include [banner](includes/preview-feature.md)]
+Microsoft Dynamics 365 Human Resources -ohjelman kattavuustasot osallistujan valitsemiselle etuussuunnitelmassa tai -ohjelmassa. Kattavuusvaihtoehdot voivat olla esimerkiksi **Vain työntekijä** lääketieteellisessä suunnitelmassa tai **2 x palkka** henkivakuutussuunnitelmaa varten. Voit käyttää kattavuusasetuksia uudelleen hyödyksi, kun ne on määritetty. Voit liittää vaihtoehdon yhteen tai useaan suunnitelmaan.
 
-Microsoft Dynamics 365 Human Resourcesin kattavuusasetukset ovat osallistujan valitsemia kattavuustasoja etuussuunnitelmassa tai -ohjelmassa, kuten Vain työntekijä terveydenhoitosuunnitelman osalta tai 2 x palkka henkivakuutussuunnitelman osalta. Kun etujen kattavuusasetukset on määritetty, niitä voidaan käyttää uudelleen, ja voit kohdistaa astuksen yhdelle tai useammalle suunnitelmalle.
-
-Kun kattavuus setukset on määritetty, liitä kattavuusasetukset etuussuunnitelmatyyppiin. Tämän jälkeen suunnitelmatyyppi yhdistetään etuussuunnitelmaan tai -ohjelmaan. Suunnitelmatyyppiin yhdistetyt kattavuusasetukset ovat käytettävissä kaikissa suunnitelmissa, jotka luodaan kyseisellä suunnitelmatyypillä. 
+Kun kattavuusasetukset on määritetty, liitä kattavuusasetukset etuussuunnitelmatyyppiin. Tämän jälkeen suunnitelmatyyppi yhdistetään etuussuunnitelmaan tai -ohjelmaan. Suunnitelmatyyppiin yhdistetyt kattavuusasetukset ovat käytettävissä kaikissa suunnitelmissa, jotka luodaan kyseisellä suunnitelmatyypillä. 
 
 1. Valitse **Etujen hallinta** -työtilassa **Asetukset**-kohdasta **Kattavuusasetukset**.
 

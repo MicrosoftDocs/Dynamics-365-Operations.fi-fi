@@ -3,7 +3,7 @@ title: Asiakirjan tilat ja elinkaari
 description: Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen sivuelementtien eri asiakirjatiloista.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b4f1c462f734b2d58843308f0f877fe18a4d9af7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4a00f1c363e5ecb0e3e64637a8f487c48df2df72
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002978"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261510"
 ---
 # <a name="document-states-and-lifecycle"></a>Asiakirjan tilat ja elinkaari
 
@@ -37,13 +37,13 @@ Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Commercen sivuelementtien 
 
 Seuraavassa taulukossa esitetään sivuelementtien mahdolliset asiakirjojen tilat Commercessa.
 
-| Asiakirjan tila | Kuvaus |
-|---|---|
-| Kuitattu ulos | Kun CMS-nimike on kuitattu ulos sinulle, mikään muu todennettu järjestelmäkäyttäjä ei voi muokata sitä. Kaikki nimikkeeseen tekemäsi muutokset näkyvät vain sinulle. |
-| Kuitattu sisään | Kun CMS-nimike kuitataan sisään, kaikki muutokset näkyvät muille todennetuille järjestelmäkäyttäjille. Käyttäjät voivat kuitata nimikkeen ulos ja muokata sitä. Jokainen sisäänkuittaus luo asiakirjaversiotietueen nimikkeen historiaan. |
-| Julkaistu | Kun CMS-nimike julkaistaan, se siirretään live-sivustoon. Todentamattomat ulkoiset käyttäjät voivat löytää sen verkossa. Nimikkeet voidaan julkaista vain, jos ne on kuitattu sisään. |
-| Tallennettu | Uloskuitattuun CMS-nimikkeeseen tehdyt muutokset voidaan tallentaa CMS:ään ennen kuin nimike kuitataan sisään tai julkaistaan. Nämä tallennetut muutokset eivät näy muille todennetuille järjestelmäkäyttäjille ennen kuin nimike kuitataan sisään. Ulkoiset käyttäjät eivät näe niitä, ennen kuin nimike on julkaistu. |
-| Hylätty uloskuittaus | Kun uloskuitattu CMS-nimike hylätään, kaikki tallennetut muutokset poistetaan ja nimike palautuu viimeksi sisäänkuitattuun versioon. |
+| Asiakirjan tila      | Sivustonmuodostimen toiminta        | kuvaus                                                  |
+| ------------------- | -------------------------- | ------------------------------------------------------------ |
+| Kuitattu ulos         | Valitse **Muokkaa**.           | Asiakirja kuitataan ulos. Kun asiakirja on tässä tilassa, muut todennetut järjestelmän käyttäjät eivät voi muuttaa sitä, ja kaikki tiedostoon tekemäsi muutokset näkyvät vain sinulle. |
+| Tallennettu               | Valitse **Tallenna**.           | Uloskuitattuun tiedostoon tehdyt muutokset tallennetaan tietokantaan, mutta asiakirjaa ei ole vielä kuitattu sisään tai julkaistu. Tallennetut muutokset eivät näy muille todennetuille järjestelmäkäyttäjille ennen kuin laatija valitsee **Lopeta muokkaaminen**. Ulkoiset käyttäjät eivät näe niitä, ennen kuin nimike on julkaistu. |
+| Hylätty uloskuittaus | Valitse **Hylkää muokkaukset**.  | Kaikki uloskuitattuun tiedostoon tehdyt muutokset hylätään, ja nimike palautuu viimeksi kuitattuun versioon. |
+| Kuitattu sisään          | Valitse **Viimeistele muokkaus**. | Muokattu asiakirja kuitataan sisään. Kaikki muutokset näkyvät muille todennetuille järjestelmän käyttäjille, ja käyttäjät voivat muokata tiedostoa. Jokainen sisäänkuittaus luo asiakirjaversiotietueen nimikkeen historiaan. |
+| Julkaistu           | Valitse **Julkaise**.        | Tiedosto julkaistaan, ja muutokset siirretään Live-sivustoon ja ulkoiset käyttäjät voivat löytää ne. Nimikkeet voidaan julkaista vain, jos ne on ensin kuitattu sisään valitsemalla **Lopeta muokkaaminen**. |
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

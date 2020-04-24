@@ -2,8 +2,8 @@
 title: Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet 10.0.10. (toukokuu 2020)
 description: Tässä ohjeaiheessa käsitellään Dynamics 365 Supply Chain Managementin version 10.0.10 uusia tai muuttuneita ominaisuuksia.
 author: kamaybac
-manager: AnnBe
-ms.date: 03/21/2020
+manager: tfehr
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: afab27ef8a60e9d7e8749e94d3738ee7e6d53d12
-ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
+ms.openlocfilehash: 8297daa0d802b0b821b43aebe7a841011c70fd55
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3164790"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261185"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Dynamics 365 Supply Chain Managementin uudet tai muuttuneet ominaisuudet 10.0.10. (toukokuu 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Managementin esikatseluversion 10.0.10 uusia tai muuttuneita ominaisuuksia. Tämän version koontinumero on 10.0.420. Se on käytettävissä seuraavasti:
+Tässä ohjeaiheessa kerrotaan Microsoft Dynamics 365 Supply Chain Managementin version 10.0.10 uudet tai muuttuneet ominaisuudet. Tämän version koontinumero on 10.0.420. Se on käytettävissä seuraavasti:
 
 - **Ennakkoesitys:** Maaliskuu 2020
 - **Yleinen saatavuus (oma päivitys):** Huhtikuu 2020
@@ -40,20 +39,21 @@ Tässä ohjeaiheessa käsitellään Microsoft Dynamics 365 Supply Chain Manageme
 Tämä julkaisu sisältää seuraavat toiminnot. Toiminnon otsikoiden linkki lisätietoihin [Julkaisusuunnitelmat](https://docs.microsoft.com/dynamics365/release-plans/)-sivustossa. Lisälinkit osoittavat lisädokumentaatioon tai videoihin, jotka toiminnosta ovat tällä hetkellä saatavilla. Useimmat näistä toiminnoista on otettava käyttöön [Toimintojen hallinta](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) -kohdassa ennen niiden käyttämistä.
 
 - [Olemassa olevien todellisen painon tunnisteiden käyttäminen varaston hallinnassa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
-- [Saapuvien kuormituksen hallinnan parannukset varaston hallinnassa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)
+- [Saapuvien kuormien hallinnan parannukset varastonhallinnassa](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) - Lisätietoja on kohdassa [Ostotilausten saapuvien kuormien varastokäsittely](../warehousing/inbound-load-handling.md).
+- [Tarratulostuksen parannukset varastonhallintaan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management) - Lisätietoja on ohjeaiheessa [rekisterikilpien asiakirjan reitityksen asettelu](../warehousing/document-routing-layout-for-license-plates.md).
 - [Pääsuunnittelu sisältää nimikkeet, joilla on käytettävissä oleva varasto, kun esikäsittelyn suodattimet ovat käytössä](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 - [Tuotantoalueen uudet tietoyksiköt](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Laadunhallinta varastoprosesseja varten](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
-### <a name="platform-update-34"></a>Ympäristön update 34 -päivitys
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Ympäristön päivitykset Finance and Operations -sovelluksille
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.10 sisältää Platform update 34:n. Lisätietoja on kohdassa [Ympäristön päivitys 34:n esikatselutoiminnot](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md)
+Dynamics 365 Supply Chain Management 10.0.10 sisältää alustan päivitykset. Lisätietoja on kohdassa [Finance and Operations -sovellusten käyttöympäristön päivitysversio 10.0.10](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
 ### <a name="bug-fixes"></a>Ohjelmavirhekorjaukset
 
-Saat lisätietoja version 10.0.10 virheenkorjauksista päivityksissä kirjautumalla sisään Lifecycle Services (LCS) -sovellukseen ja tarkastelemalla [Knowledge Base -artikkelia](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
+Saat lisätietoja tähän päivitykseen liittyvistä virheenkorjauksista kirjautumalla sisään Lifecycle Services (LCS) -sovellukseen ja tarkastelemalla [Knowledge Base -artikkelia](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 ### <a name="dynamics-365-2020-release-wave-1-plan"></a>Dynamics 365: vuoden 2020 julkaisuaallon 1 suunnitelma
 

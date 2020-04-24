@@ -1,9 +1,9 @@
 ---
-title: Näytön asettelut myyntipisteeseen (POS)
+title: Myyntipistekäyttöliittymän visuaaliset kokoonpanot
 description: Tässä aiheessa on tietoja Dynamics 365 Commerce POS -käyttöliittymistä.
-author: jblucher
-manager: AnnBe
-ms.date: 05/20/2019
+author: boycezhu
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,23 +16,22 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5bf7b3d20ff0b42eb9eaedf584b2a508c1307707
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022440"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261464"
 ---
-# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Näytön asettelut myyntipisteeseen (POS)
+# <a name="pos-user-interface-visual-configurations"></a>Myyntipistekäyttöliittymän visuaaliset kokoonpanot
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Tässä aiheessa on tietoja Dynamics 365 Commerce POS -käyttöliittymistä.
-
-POS:n käyttöliittymät (UI) voidaan määrittää käyttäen visuaalisten profiilien ja näyttöasettelujen yhdistelmää, jotka on määritetty myymälöille, kassakoneille ja/tai käyttäjille.
+Microsoft Dynamics 365 Commerce -myyntipistekäyttöliittymät (POS) voidaan määrittää käyttäen visuaalisten profiilien ja näyttöasettelujen yhdistelmää, jotka on määritetty myymälöille, kassakoneille ja/tai käyttäjille. Tämä ohjeaihe sisältää tietoja niistä järjestelmän konfigurointivaihtoehdoista.
 
 Seuraava kuva esittää eri yksiköiden suhteita, jotka muodostavat määriteltäviä aspekteja POS-käyttöliittymien välillä.
 
@@ -40,7 +39,7 @@ Seuraava kuva esittää eri yksiköiden suhteita, jotka muodostavat määritelt�
 
 ## <a name="visual-profile"></a>Visuaalinen profiili
 
-Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään määrittämään visuaalisia elementtejä, jotka ovat kassakonekohtaisia ja kaikille työntekijöille jaettuja. Jokainen käyttäjä, joka kirjautuu kassakoneeseen, näkee samat teemat, värit ja kuvat.
+Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään määrittämään visuaalisia elementtejä, jotka ovat kassakonekohtaisia ja kaikille työntekijöille jaettuja. Jokainen käyttäjä, joka kirjautuu kassakoneeseen, näkee samat teemat, asettelun, värit ja kuvat.
 
 ![Myyntipisteen (POS) vaalea Tervetuloa-teema](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
@@ -48,16 +47,24 @@ Visuaaliset profiilit määritetään kassakoneisiin ja niitä käytetään mä�
 
 - **Profiilinumero** – profiilinumero on visuaalisen profiilin yksilöivä tunnus.
 - **Kuvaus** – kuvauksen avulla voit määrittää kuvaavan nimen, joka auttaa tunnistamaan oikean profiilin tilanteen mukaan.
-- **Teema** – käyttäjät voivat valita vaalean tai tumman sovellusteeman. Teema vaikuttaa koko sovelluksen fontin ja taustan väreihin.
+- **Teema** – Käyttäjät voivat valita **vaalean** tai **tumman** sovellusteeman. Teema vaikuttaa koko sovelluksen fontin ja taustan väreihin.
 - **Korostuksen väri** – korostuksen värejä käytetään koko myyntipisteessä erottamaan tai korostamaan tiettyjä visuaalisia elementtejä, kuten ruutuja, painikkeita tai hyperlinkkejä. Nämä elementit ovat yleensä toimintoja.
-- **Otsikon väri** – voit määrittää sivun ylätunnisteen värin jälleenmyyjän brändivaatimusten täyttämiseksi. Tämä ominaisuus on saatavana vain Retailin versiossa 1611.
-- **Näytä päivämäärä/aika** – Kun käytössä, kuluva päivämäärä ja kellonaika tulevat näkyviin POS-otsikkoon.
-- **Kirjautumisen tausta** – käyttäjät voivat määrittää kirjautumisnäytön taustakuvan. Taustakuvan tiedostokoko on pidettävä mahdollisimman pienenä, koska suurien tiedostojen tallentaminen ja lataaminen voivat vaikuttaa sovelluksen toimintaan ja suorituskykyyn.
-- **Sovelluksen tausta** – Käyttäjät voivat määrittää myös yhtenäisen taustakuvan käytettäväksi koko sovelluksessa yhtenäisen teemavärin sijaan. Sisäänkirjautumisen taustat tulisi pitää mahdollisimman pieninä.
+- **Otsikon väri** – voit määrittää sivun ylätunnisteen värin jälleenmyyjän brändivaatimusten täyttämiseksi.
+- **Fonttimalli** – Voit valita **Vakio**- ja **Suurikokoiset** -fonttimallit. Fonttimalli vaikuttaa koko sovelluksen fonttikokoon. Oletusvalinta on **Vakio**.
+- **Näytä aina sovelluspalkin otsikot** – Kun tämä asetus on käytössä, seliteteksti näkyy aina sovelluspalkin painikkeiden alla.
+- **Asettelu** – Voit valita **Keskitetyn** ja **Oikean** asettelun väliltä. Asettelu vaikuttaa kirjautumisnäytön sisäänkirjautumisruudun tasaukseen. Oletusvalinta on **Keskitetty**.
+- **Näytä päivämäärä/aika** – Kun tämä asetus on käytössä, päivämäärä ja kellonaika näkyvät myyntipisteen otsikossa ja kirjautumisnäytössä.
+- **Näppäimistö** – Voit valita **Oletus-OS-näppäimistön** ja **Näytä numeronäppäimistön** väliltä määritelläksesi oletusnäppäimistön, jota käytetään kirjautumisnäytössä. Numeronäppäimistö on virtuaalinen näppäimistö, jota käytetään ensisijaisesti kosketuspohjaisissa laitteissa. Oletusvalinta on **Oletus-OS-näppäimistö**.
+- **Logon kuva** – Voit määrittää logon kuvan, joka näkyy kirjautumisnäytössä. On suositeltavaa käyttää kuvaa, jonka tausta on läpinäkyvä. Tiedostokoko on pidettävä mahdollisimman pienenä, koska suurien tiedostojen tallentaminen ja lataaminen voivat vaikuttaa sovelluksen toimintaan ja suorituskykyyn.
+- **Kirjautumisen tausta** – käyttäjät voivat määrittää kirjautumisnäytön taustakuvan. Taustakuvien tiedostokoot tulisi pitää mahdollisimman pieninä.
+- **Tausta** – Käyttäjät voivat määrittää myös yhtenäisen taustakuvan käytettäväksi koko sovelluksessa yhtenäisen teemavärin sijaan. Kirjautumisnäytön taustakuvien osalta tiedoston koko on pidettävä mahdollisimman pienenä.
 
-## <a name="screen-layouts"></a>Näytön asettelut
+> [!NOTE]
+> **Oikea** asettelu ja päivämäärän/ajan näyttö eivät koske kirjautumisnäyttöä suppeassa näkymässä.
 
-Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien toiminnot, sisällön ja sijoittelut myyntipisteen Tervetuloa-näytössä ja **tapahtuma**-näytössä.
+## <a name="screen-layouts"></a>Näyttöasettelut
+
+Näytön asettelun kokoonpano määrittää käyttöliittymän ohjausobjektien toiminnot, sisällön ja sijoittelut myyntipisteen **Tervetuloa**-näytössä ja **Tapahtuma**-näytössä.
 
 ![Myyntipisteen näytön asettelun näkymä](../commerce/media/POS-Screen-Layout-View.png)
 
