@@ -3,7 +3,7 @@ title: Aseta etujenhallinnan parametrit
 description: Määritä etujen hallinnan parametrit Microsoft Dynamics 365 Human Resourcesissa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab9b1fc78ce42479d9265b80337adf899cec3866
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9d6d463df08b9ae68047f09316f19e98740a8441
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008891"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229760"
 ---
-# <a name="set-benefits-management-parameters"></a>Aseta etujenhallinnan parametrit
+# <a name="set-benefits-management-parameters"></a>Etujen hallinnan parametrien määrittäminen
 
-[!include [banner](includes/preview-feature.md)]
-
-Ennen kuin voit määrittää lomasuunnitelmia Microsoft Dynamics 365 Human Resourcesissa, sinun on määritettävä etujen hallintaparametrit. Nämä parametrit määrittävät oletusarvot, syykoodit ja muut asetukset.
+Ennen kuin voit määrittää lomasuunnitelmia Microsoft Dynamics 365 Human Resourcesissa, sinun täytyy määrittää etujen hallintaparametrit. Nämä parametrit määrittävät oletusarvot, syykoodit ja muut asetukset.
 
 ## <a name="configure-general-parameters"></a>Konfiguroi yleiset parametrit
 
@@ -47,7 +45,6 @@ Ennen kuin voit määrittää lomasuunnitelmia Microsoft Dynamics 365 Human Reso
    | **Asteen muutoksen syykoodi** | Syykoodi, jota käytetään, kun työsuhde-etuussuunnitelma peruutetaan ja avataan uudelleen hinnan muutoksen päivitysprosessin aikana. Se ilmaisee, mitä tietuetta hinnan muutoksen päivitysprosessi on muuttanut. |
    | **Uusi työntekijä on sallittu** | Määrittää, ovatko uudet työntekijät kelvollisia. |
    | **Uuden työntekijän rekisteröintikausi** | Ajanjakso, jolloin uusi osamaksu on sallittu.</br></br>**Huomautus**: Tämä asetus ohittaa uuden suunnitelman oikeutussääntöön määrittämäsi työhönottoajan jakson. | 
-   | **Vuosipalkan lisäys** | Määrittää, lasketaanko **vuotuisen etuuspalkan** summa automaattisesti **työsuhteen lisätiedot** -kohdassa. Se perustuu työntekijän **Kiinteän kompensaatiotaksan**, **Keskituntien** ja **Maksutiheyden** mukaan.</br></br>**Keskimääräinen työaika** x **kiinteä taksa** x **maksutiheys** (# maksukaudet) = **vuotuinen etuuspalkka** </br></br>Jos joku **Keskimääräiset tunnit**-, **kiinteä kompensaatiotaksa**- tai **maksutiheys** -kenttien arvo muuttuu, järjestelmä laskee työntekijän **vuotuisen etuuspalkan** automaattisesti uudelleen muuttuneiden arvojen perusteella. Järjestelmä luo **päivämäärän voimaantulo** -tietueen, joka määrittää muutoksen tarkan päivämäärän ja ajan. Voit tarvittaessa muokata **vuotuisen etuuspalkan** määrää manuaalisesti. |
    | **Elinkaaritapahtumat ovat käytössä** | Mahdollistaa elinkaaritapahtumat. |
    | **Piilota vanhat etulomakkeet** | Sallii vanhojen etuuslomakkeiden piilottamisen. |
 

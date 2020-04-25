@@ -3,7 +3,7 @@ title: Työaikakalenterin luominen
 description: Määritä työaikakalenteri, vapaapäivät ja muut kuin työajat Dynamics 365 Human Resources -järjestelmässä.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 641f66c75875cfba51af3753223a070d7cb7dc50
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: dc209b62836011b18362f78b63cdd3fcda884dc3
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008921"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198024"
 ---
 # <a name="create-a-working-time-calendar"></a>Työaikakalenterin luominen
 
@@ -68,10 +68,6 @@ Voit lisätä tai muuttaa muita kuin työaikoja erillään työaikakalenterista.
 1. Valitse **Organisaation hallinto** -sivulta **Muu kuin työaika**.
 
 2. Valitse **Uusi** ja kirjoita vapaa-ajan nimi ja aika-alue.
-
-## <a name="leave-and-absence-preview-feature"></a>Lomien ja poissaolojen esikatseluominaisuus
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
 
 Jos olet ottanut loma- ja poissaolopäivän korjausten esikatselutoiminnon käyttöön, henkilöstöhallinto käyttää loma- ja sulkemispäiviä määrittääkseen päivien määrän, jota mukautetaan kalenteriin ilmoitettujen työntekijöiden osalta.
 

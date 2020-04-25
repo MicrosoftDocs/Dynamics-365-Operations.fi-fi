@@ -3,7 +3,7 @@ title: Luettelo tekstiluokan ER-funktioista
 description: Tässä ohjeaiheessa on tietoja sähköisen raportoinnin (ER) tukemista tekstifunktioista.
 author: NickSelin
 manager: kfend
-ms.date: 12/05/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f519d242fe74196b0d12bdc9df4f1b4b0e585752
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bd4dd7e9a3e1aa448adea5abd0c21b8133f34e3b
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916611"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201086"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Luettelo tekstiluokan ER-funktioista
 
@@ -52,7 +52,7 @@ Sähköisen raportoinnin (ER) tekstifunktioiden avulla voidaan suorittaa toimint
 | [Korvaa](er-functions-text-replace.md) | Tämä funktio palauttaa määritetyn tekstimerkkijonon *merkkijonona*, kun se kokonaan tai osa siitä on korvattu toisella merkkijonolla. |
 | [Oikealle](er-functions-text-right.md) | Tämä funktio palauttaa määritetystä luettelosta *merkkijono*-arvon, joka esittää määritetyn määrän merkkejä määritetyn merkkijonon lopusta. |
 | [Teksti](er-functions-text-text.md) | Tämä funktio palauttaa määritetyn *merkkijono*-arvon sen jälkeen, kun se on muunnettu tekstimerkkijonoksi, joka on alustettu nykyisen sovellusesiintymän palvelimen sijaintiasetusten mukaisesti. |
-| [Käännä](er-functions-text-translate.md) | Tämä funktio palauttaa määritetyn tekstimerkkijonon *merkkijonona*, kun se kokonaan tai osa siitä on korvattu toisella merkkijonolla. |
+| [Käännä](er-functions-text-translate.md) | Tämä funktio palauttaa *Merkkijonon* arvon, joka sisältää korvaavan määritetyn tekstin merkkeinä toisen annetun merkkijoukon merkeissä. |
 | [Trim](er-functions-text-trim.md) | Tämä funktio palauttaa määritetyn tekstimerkkijonon *Merkkijono*-arvona sen jälkeen, kun edeltävät ja lopussa olevat välilyönnit on poistettu ja sanojen välissä olevat moninkertaiset välilyönnit on poistettu. |
 | [Upper](er-functions-text-upper.md) | Tämä funktio palauttaa määritetyn tekstimerkkijonon *Merkkijono*-arvona sen jälkeen, kun se on muunnettu isoiksi kirjaimiksi. |
 

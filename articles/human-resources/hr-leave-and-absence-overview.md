@@ -1,9 +1,9 @@
 ---
 title: Yleiskuvaus
-description: Dynamics 365 Human Resourcesissa **Loma ja poissaolo** -työtila tarjoaa joustavan kehyksen uusien lomasuunnitelmien luomiseen, pyyntöjen hallinnan työnkulkuja sekä intuitiivisen itsepalvelusivun, jonka avulla työntekijät voivat pyytää lomaa.
+description: Dynamics 365 Human Resourcesissa Loma ja poissaolo -työtila tarjoaa joustavan kehyksen uusien lomasuunnitelmien luomiseen, pyyntöjen hallinnan työnkulkuja sekä intuitiivisen itsepalvelusivun, jonka avulla työntekijät voivat pyytää lomaa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 493bc3abe82103541125914896252b2eae596b38
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
+ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091745"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226227"
 ---
 # <a name="overview"></a>Yleiskuvaus
 
@@ -31,7 +31,7 @@ Dynamics 365 Human Resources auttaa sinua tarjoamaan hienoja lomaetuuksia työnt
 
 ## <a name="set-up-leave-and-absence"></a>Loman ja poissaolon määrittäminen
 
-Ennen kuin voit luoda lomasuunnitelmia työntekijöillesi, sinun on tehtävä muutama asetusvaihe:
+Ennen lomasuunnitelmien luomista työntekijöillesi, sinun on tehtävä muutama asetusvaihe:
 
 - [Loma- ja poissaoloparametrien määrittäminen](hr-leave-and-absence-parameters.md)
 - [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md)
@@ -51,31 +51,35 @@ Ennen kuin luot lomasuunnitelmia työntekijöille, sinun on luotava loma- ja poi
 
 Työntekijät voivat lähettää lomapyyntöjä ja hallita niitä **Työntekijän itsepalvelu** -työtilassa.
 
-- [Pyydä poissaoloaikaa](hr-employee-self-service-request-time-off.md)
-- [Virkavapaan ja poissaolopyyntöjen hallinta](hr-employee-self-service-manage-requests.md)
+- [Pyydä vapaata](hr-employee-self-service-request-time-off.md)
+- [Loma- ja poissaolopyyntöjen hallinta](hr-employee-self-service-manage-requests.md)
+
+## <a name="leave-and-absence-known-issues"></a>Lomien ja poissaolojen tunnetut ongelmat
+
+### <a name="rounding-precision"></a>Pyöristystarkkuus
+
+**Pyöristystarkkuutta** ei voi määrittää, kun määrität **Pyöristystyypin**. Voit määrittää **Pyöristystarkkuuden** vain **Loma- ja poissaolotyyppi** -yksikön avulla. 
+
+1. Avaa **Loma- ja poissaolotyyppi** -yksikkö valitsemalla **Avaa Excelissä** avataksesi **Loma- ja poissaolotyyppi** -yksikön.
+
+2. Kun tiedosto avautuu ja on käytössä, valitse **Suunnittelu**.
+
+3. Valitse **Loma- ja poissaolotyyppi** -taulukosta muokattava kynäasetus.
+
+4. Valitse **pyöristystarkkuus** ja **pyöristystyyppi** ja lisää sitten kenttä luetteloon valitsemalla **Lisää**.
+
+5. Valitse **Päivitä** ja valitse sitten **Valmis**.
+
+6. Kirjoita tai valitse **Pyöristystyyppi** kullekin lomatyypille, jos niitä ei ole vielä määritetty. 
+
+7. Syötä **Pyöristystarkkuus** asianmukaisille tyypeille.
+
+8. Valitse **Julkaise**, jos haluat työntää muutokset henkilöstöhallintoon.
 
 ## <a name="leave-and-absence-preview-features"></a>Lomien ja poissaolojen esikatseluominaisuudet
 
 Voit kokeilla uusia loman ja poissaolon esikatselutoimintoja **Eristys**-ympäristössä. Lisätietoja esikatseluominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md). Esikatselutoimintoja ovat esimerkiksi seuraavat:
 
-- **Loma- ja poissaolokalenteri** – Loma- ja poissaoloparametrit siirtyvät kohdasta **Henkilöhallinnon parametrit** uuteen näyttöön nimeltään **Loma- ja poissaoloparametrit**. Uudessa näytössä on uusi **Kalenteri**-välilehti. Tämä esikatselu mahdollistaa vain parametrien osajoukon. Voit käyttää uutta näyttöä **Lomat ja poissaolot** -työtilan **Linkit**-välilehdestä. Kalentereja ovat esimerkiksi:
-  - **Yrityksen kalenteri** – Näyttää kaikki työntekijöiden vapaa-aikapyynnöt. Henkilöt, joilla on **Henkilöstöhallinto**-rooli voivat käyttää tätä **Linkit**-välilehdessä **Lomat ja poissaolot** -työtilassa.
-  - **Johtajaryhmän kalenteri** – Näyttää kaikkien suorien alaisten vapaa-aikapyynnöt. Johtajat voivat käyttää kalenteria työntekijän itsepalvelun **Lomat ja poissaolot** -kohdan **Oma ryhmä** -välilehdessä. 
+- **Loman keskeytys** - Voit keskeyttää työntekijän loman ja poissaolon henkilöstöhallinnossa. Loman keskeyttäminen pysäyttää valittujen lomatyyppien lomajaksotukset. Jos keskeytys tapahtuu jaksotusprosessien jälkeen, loman keskeyttäminen luo suhteutetun oikaisun työntekijän lomasaldoon. 
 
-- **Lomien ja poissaolojen vapaakalenterit** – Lomatyyppeihin kuuluu nyt **Loma**-vaihtoehto, jota käytetään yhdessä työaikakalenterin kanssa. Lomiksi ja kiinnioloajoiksi määritettyjä päivä kutsutaan nyt työpäivä luotaessa nimellä **Loma**. Kun jaksotuksia käsitellään, työntekijöille, joille kalenteri on määritetty, tehdään muutoksia, jotta otetaan huomiot työpäiville osuvat lomat.
-
-- **Lomien jaksotusten valvonta** – Uuden näytön avulla voit tarkistaa, milloin jaksotukset on käsitelty ja poistettu sekä kaikkien työntekijöiden että yksittäisten työntekijöiden osalta. Voit käyttää tätä uutta näyttöä **Lomat ja poissaolot** -työtilan **Linkit**-välilehdestä.
-
-- **Loman jaksotuksen poisto** – Voit nyt poistaa tiettyjen lomasuunnitelmien jaksotustietueita. Voit käyttää tätä uutta valintaa **Lomat ja poissaolot** -työtilan **Linkit**-välilehdestä. Yksittäisten työntekijöiden osalta tämä valinta näkyy työntekijän profiilin **Lomat ja poissaolot** -ryhmittelyssä. 
-
-- **Lomien jaksotuksen pyöristys** – Uudet **Lomatyypin**asetukset määrittävät, millaista pyöristystä jaksotuksessa käytetään sekä pyöristyksen desimaalitarkkuuden jaksotusprosessin aikana. Kun jaksotuksia käsitellään, pyöristystä ja tarkkuutta sovelletaan jaksotustietueisiin. 
-
-- **Määritä useita lomatyyppejä yksittäisessä lomasuunnitelmassa** – Uudessa lomatyyppien sarakkeessa loman jaksotusaikataulussa voit määrittää loma- ja poissaolosuunnitelmalle useita lomatyyppejä eri jaksotusaikatauluineen. Aiempi **Lomatyyppi**-kenttä poistetaan. Työntekijöiden rekisteröitymisessä lomatyyppien saldot esitetään nyt taulukossa ruudun yläreunan sijaan.
-
-  > [!IMPORTANT]
-  > Tätä ominaisuutta ei voi poistaa käytöstä sen jälkeen, kun se on otettu käyttöön.
-
-- **Käytä työntekijän laskennallista kokopäiväisyyttä (FTE) jaksotuksessa** – Uusi loman jaksotusaikataulun sarake, joka mahdollistaa FTE-arvon käytön jaksotuksessa. Kun jaksotuksia käsitellään, sovellus käyttää työntekijän ensisijaista asemaa ja määritettyä FTE-arvoa määrittääkseen suhteellisen jaksotusmäärän.
-
-  > [!NOTE]
-  > Tämä ominaisuus on käytössä vain, kun **Määritä useita lomatyyppejä lomasuunnitelmaa kohden** on käytössä. 
+- **Siirtosäännöt** - Voit määrittää siirrettäville saldoille siirtosäännön, johon on siirto-oikaisut siirretään. Jos työntekijä esimerkiksi siirtää vapaata kymmenen päivää eteenpäin, voit valita eri lomatyypin näiksi 10 päiväksi. 

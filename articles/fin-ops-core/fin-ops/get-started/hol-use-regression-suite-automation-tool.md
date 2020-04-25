@@ -1,7 +1,7 @@
 ---
 title: Regression Suite Automation Tool -oppaan käyttäminen
 description: Tässä ohjeaiheessa käsitellään Regression Suite Automation Tool (RSAT) -työkalun käyttämistä. Siinä käsitellään erilaisia toimintoja ja annetaan esimerkkejä edistyneestä komentosarjojen käytöstä.
-author: kfend
+author: robinarh
 manager: AnnBe
 ms.date: 06/09/2019
 ms.topic: article
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: kfend
+ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
+ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070817"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248733"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool -oppaan käyttäminen
 
@@ -30,79 +30,13 @@ ms.locfileid: "3070817"
 > [!NOTE]
 > Lataa ja tallenna tämä ohje selaimen työkaluilla PDF-tiedostona. 
 
-Tässä oppaassa käsitellään yksityiskohtaisesti Regression Suite Automation Tool (RSAT) -työkalun lisätoimintoja. Se sisältää myös demon määrityksen ja siinä käsitellään strategiaa ja keskeisiä opittavia asioita.
+Tässä oppaassa käsitellään yksityiskohtaisesti Regression Suite Automation Tool (RSAT) -työkalun lisätoimintoja. Se sisältää myös demon määrityksen ja siinä käsitellään strategiaa ja keskeisiä opittavia asioita. 
 
-## <a name="features-of-rsattask-recorder"></a>RSAT-työkalun ja tehtävän tallennustoiminnon toiminnot
+## <a name="notable-features-of-rsat-and-task-recorder"></a>RSAT:in ja tehtävien tallennustoiminnon merkittävimmät ominaisuudet
 
 ### <a name="validate-a-field-value"></a>Kentän arvon tarkistaminen
 
-Lisätietoja tästä toiminnosta on kohdassa [Uuden tarkistustoiminnon sisältävän tehtävätallenteen luominen](./hol-set-up-regression-suite-automation-tool.md#create-a-new-task-recording-that-has-a-validate-function).
-
-### <a name="saved-variable"></a>Tallennettu muuttuja
-
-Lisätietoja tästä toiminnosta on kohdassa [Tallennetun muuttujan luominen muokkaamalla aiemmin luotua tehtävätallennetta](./hol-set-up-regression-suite-automation-tool.md#modify-an-existing-task-recording-to-create-a-saved-variable).
-
-### <a name="derived-test-case"></a>Johdettu testitapaus
-
-1. Avaa Regression Suite Automation Tool (RSAT) ja valitse molemmat kohdassa [Regression Suite Automation Tool -opetusohjelman määrittäminen ja asentaminen](./hol-set-up-regression-suite-automation-tool.md) luodut testitapaukset.
-2. Valitse **Uusi \> Luo johdettu testitapaus**.
-
-    ![Luo johdettu testitapaus -komento Uusi-valikossa](./media/use_rsa_tool_01.png)
-
-3. Näyttöön avautuva sanoma ilmoittaa, että jokaiselle nykyisessä testisarjassa valitulle testitapauksella luodaan johdettu testitapaus ja että jokaisella johdetulla testitapauksella on oma Excelin parametritiedoston kopio. Valitse **OK**.
-
-    > [!NOTE]
-    > Suoritettava testitapaus käyttää päätestitapauksen tehtävätallennetta ja omaa Excelin parametritiedoston kopioita. Tällä tavoin voit suorittaa saman testi eri parametreilla käyttämällä samaa tehtävätallennetta. Johdetun testitapauksen ei tarvitse kuulua samaan testisarjaan kuin sen päätestitapaus.
-
-    ![Viestiruutu](./media/use_rsa_tool_02.png)
-
-    Kaksi muuta johdettua testitapausta luodaan ja niille valitaan **Johdettu?** -valintaruutu.
-
-    ![Luodut johdetut testitapaukset](./media/use_rsa_tool_03.png)
-
-    Johdettu testitapaus luodaan automaattisesti Azure DevOpsissa. Se on **Luo uusi tuote** -testitapauksen alinimike ja siihen merkitään erityinen avainsana: **RSAT:DerivedTestSteps**. Lisäksi nämä testitapaukset lisätään automaattisesti testisuunnitelmaan Azure DevOpsissa.
-
-    ![RSAT: DerivedTestSteps-avainsana](./media/use_rsa_tool_04.png)
-
-    > [!NOTE]
-    > Jos luodut johdetut testitapaukset eivät jostain syytä ole oikeassa järjestyksessä, siirry Azure DevOps ja järjestä testisarjan testitapaukset uudelleen, jotta RSAT voi suorittaa ne oikeassa järjestyksessä.
-
-4. Valitse ensin johdetut testitapaukset ja avaa sitten vastaavat Excelin parametritiedostot valitsemalla **Muokkaa**.
-5. Muokkaa näitä Excelin parametritiedostoja samalla tavalla kuin muokkasit päätiedostoja. Toisen sanoen varmista, että tuotetunnus on määritetty automaattisesti luotavaksi. Varmista myös, että tallennettu muuttuja kopioidaan soveltuviin kenttiin.
-6. Päivitä Excelin parametritiedoston **Yleiset**-välilehdessä **Yritys**-kentän arvoksi **USSI**. Tällä tavoin johdetut testitapaukset suoritetaan eri yrityksen perusteella kuin päätestitapaus. Jos haluat suorittaa testitapauksia tietyn käyttäjän (tai tiettyyn käyttäjään liitetyn roolin) osalta, voit päivittää **Testikäyttäjä**-kentän arvon.
-7. Valitse **Suorita** ja tarkista, että tuote on luotu sekä USMF-yrityksessä että USSI-yrityksessä.
-
-### <a name="validate-notifications"></a>Ilmoitusten tarkistaminen
-
-Tällä toiminnolla tarkistetaan, tapahtuiko toiminto. Kun esimerkiksi tuotantotilaus luodaan, arvioidaan ja aloitetaan, sovellus ilmoittaa Tuotanto - käynnistys -sanomalla, että tuotantotilaus on aloitettu.
-
-![Tuotanto - käynnistys -ilmoitus](./media/use_rsa_tool_05.png)
-
-Voit tarkistaa tämän sanoman RSAT-työkalussa etsimällä kyseisen tallenteen antamalla sanoman tekstin Excelin parametritiedoston **Viestin tarkistus**-välilehdessä.
-
-![Viestin tarkistus -välilehti](./media/use_rsa_tool_06.png)
-
-Kun testitapaus on suoritettu, Excelin parametritiedostoa verrataan näytettävään sanomaan. Jos sanomat eivät vastaa toisiaan, testitapaus epäonnistuu.
-
-> [!NOTE]
-> Voit antaa Excelin parametritiedoston **Viestitarkistus**-välilehdessä useita sanomia. Sanomat voivat myös olla virhe- tai varoitussanomia ilmoitussanomien sijaan.
-
-### <a name="validate-values-by-using-operators"></a>Arvojen tarkistaminen operaattorien avulla
-
-RSAT-työkalun edellisissä versioissa arvot voitiin vahvistaa vain, jos tarkistusarvo ja odotettu arvo olivat samat. Uudella toiminnolla voi tarkistaa, että muuttuja ei ole yhtä suuri kuin tai on pienempi tai suurempi kuin määritetty arvo.
-
-- Avaa tällä toiminnolla **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config**-tiedosto RSAT-asennuskansiossa (esimerkiksi kansiossa **C:\\Program Files (x86)\\Regression Suite Automation Tool**) ja muuta seuraavan elementin arvo **epätosi** arvoksi **tosi**.
-
-    ```xml
-    <add key="AddOperatorFieldsToExcelValidation" value="false" />
-    ```
-
-    Uusi **Operaattori**-kenttä tulee näkyviin Excelin parametritiedostossa.
-
-    > [!NOTE]
-    > Jos olet käyttänyt vanhaa RSAT-versiota, uudet Excelin parametritiedostot on luotava.
-
-    ![Operaattorikenttä](./media/use_rsa_tool_07.png)
+RSAT-toiminnon avulla voit sisällyttää odotettuihin arvoihin oikeellisuustarkistusvaiheet. Lisätietoja tästä ominaisuudesta on artikkelissa [Tarkista odotetut arvot](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md).
 
 Seuraava esimerkki osoittaa, miten tällä toiminnolla tarkistetaan, onko varastosaldo suurempi kuin 0 (nolla).
 
@@ -115,7 +49,7 @@ Seuraava esimerkki osoittaa, miten tällä toiminnolla tarkistetaan, onko varast
     5. Merkitse valittu rivi luettelossa.
     6. Tarkista, että **Yhteensä käytettävissä** -kentän arvo on **411,0000000000000000**.
 
-2. Tallenna tehtävätallenne LCS:n BPM-kirjastoon ja synkronoi se Azure DevOpsiin.
+2. Tallenna tehtävätallenne ja liitä se testitapaukseen Azure DevOps -ohjelmassa.
 3. Lisää testitapaus testisuunnitelmaan ja lataa testitapaus RSAT-työkaluun.
 4. Avaa Excelin parametritiedosto. **Inventonhandimitem**-välilehdessä on **Tarkista InventOnhandItem** -osa, jossa on **Operaattori**-kenttä.
 
@@ -130,28 +64,32 @@ Seuraava esimerkki osoittaa, miten tällä toiminnolla tarkistetaan, onko varast
 
 Huomaa, että jos tietyn nimikkeen **Yhteensä käytettävissä** -kentän arvo varastossa on suurempi kuin 0 (nolla), testi hyväksytään todellisen varastosaldon arvosta riippumatta.
 
-### <a name="generator-logs"></a>Generaattorin lokit
+### <a name="saved-variables-and-chaining-of-test-cases"></a>Testitapausten tallennetut muuttujat ja ketjutus
 
-Tämä toiminto luo kansion, joka sisältää suoritettujen testitapausten lokit.
+Yksi RSAT-työkalun keskeisistä ominaisuuksista on testitapausten ketjuttaminen, eli ominaisuus, jolla testi voi siirtää muuttujat toisiin testeihin. Lisätietoja on artikkelissa [Kopioi muuttujat ketjutestitapauksiin](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md).
 
-- Avaa tällä toiminnolla **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config**-tiedosto RSAT-asennuskansiossa (esimerkiksi kansiossa **C:\\Program Files (x86)\\Regression Suite Automation Tool**) ja muuta seuraavan elementin arvo **epätosi** arvoksi **tosi**.
+### <a name="derived-test-case"></a>Johdettu testitapaus
 
-    ```xml
-    <add key="LogGeneration" value="false" />
-    ```
+RSAT-toiminnon avulla voit käyttää samaa tehtävätallennetta useissa testitapauksissa, jolloin tehtävä voidaan suorittaa eri tietokonfiguraatioiden avulla. Lisätietoja on artikkelissa [Johdetut testitapaukset](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md).
 
-Suoritettujen testitapausten lokitiedostot sijaitsevat kansiossa **C:\\Käyttäjät\\\<Käyttäjänimi\>\\AppData\\Roaming\\regressionTool\\generatorLogs**.
+### <a name="validate-notifications-and-messages"></a>Ilmoitusten ja sanomien vahvistaminen
 
-![GeneratorLogs-kansio](./media/use_rsa_tool_10.png)
+Tällä toiminnolla tarkistetaan, tapahtuiko toiminto. Kun esimerkiksi tuotantotilaus luodaan, arvioidaan ja aloitetaan, sovellus ilmoittaa Tuotanto - käynnistys -sanomalla, että tuotantotilaus on aloitettu.
+
+![Tuotanto - käynnistys -ilmoitus](./media/use_rsa_tool_05.png)
+
+Voit tarkistaa tämän sanoman RSAT-työkalussa etsimällä kyseisen tallenteen antamalla sanoman tekstin Excelin parametritiedoston **Viestin tarkistus**-välilehdessä.
+
+![Viestin tarkistus -välilehti](./media/use_rsa_tool_06.png)
+
+Kun testitapaus on suoritettu, Excelin parametritiedostoa verrataan näytettävään sanomaan. Jos sanomat eivät vastaa toisiaan, testitapaus epäonnistuu.
 
 > [!NOTE]
-> Jos testitapauksia oli luotu ennen .config-tiedoston arvon muuttamista, kyseisten testitapausten lokeja ei luoda, ennen kuin uudet testin suoritustiedostot luodaan.
-> 
-> ![Uusi-valikon Luo vain testin suoritustiedostot -komento](./media/use_rsa_tool_11.png)
+> Voit antaa Excelin parametritiedoston **Viestitarkistus**-välilehdessä useita sanomia. Sanomat voivat myös olla virhe- tai varoitussanomia ilmoitussanomien sijaan.
 
 ### <a name="snapshot"></a>Tilannevedos
 
-Tämä toiminto ottaa näyttökuvat tehtävätallenteen aikana suoritetuista vaiheista.
+Tämä toiminto ottaa näyttökuvat tehtävätallenteen aikana suoritetuista vaiheista. Se on hyödyllinen tarkistus- tai virheenkorjaustarkoituksiin.
 
 - Avaa tällä toiminnolla **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config**-tiedosto RSAT-asennuskansiossa (esimerkiksi kansiossa **C:\\Program Files (x86)\\Regression Suite Automation Tool**) ja muuta seuraavan elementin arvo **epätosi** arvoksi **tosi**.
 
@@ -159,15 +97,9 @@ Tämä toiminto ottaa näyttökuvat tehtävätallenteen aikana suoritetuista vai
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Jokaiselle suoritettavalle testitapaukselle luodaan erillinen kansio kohdassa **C:\\Käyttäjät\\\<Käyttäjänimi\>\\AppData\\Roaming\\regressionTool\\playback**.
+Kun ajat testitapauksen, RSAT luo tilannevedoksia (kuvia) vaiheista, jotka näytetään työskentelyhakemistossa olevien testitapausten toistokansiossa. Jos käytät vanhaa RSAT-versiota, kuvat tallennetaan kohteeseen **C:\\Käyttäjät\\\<Käyttäjätunnus\>\\AppData\\verkkovierailu\\regressiontool\\toisto**, erillinen kansio luodaan kullekin testitapaukselle, joka suoritetaan.
 
-![Testitapauksen tilannevedoskansio](./media/use_rsa_tool_12.png)
-
-Kussakin näistä kansioista on tilannevedoksia testitapausten suorittamisen aikana suoritetuista vaiheista.
-
-![Tilannevedostiedostot](./media/use_rsa_tool_13.png)
-
-## <a name="assignment"></a>Määritys
+## <a name="assignment"></a>Toimeksianto
 
 ### <a name="scenario"></a>Skenaario
 
@@ -183,7 +115,7 @@ Seuraavassa kuvassa on tämän skenaarion työnkulku.
 
 ![Demoskenaarion työnkulku](./media/use_rsa_tool_14.png)
 
-Seuraavassa kuvassa on tämän skenaarion liiketoimintaprosessit RSAT-työkalussa.
+Seuraavassa kuvassa näkyy tämän skenaarion liiketoimintaprosessien hierarkia LCS-liiketoimintaprosessin mallintajassa.
 
 ![Demoskenaarion liiketoimintaprosessit](./media/use_rsa_tool_15.png)
 
@@ -377,7 +309,7 @@ Voit käyttää ``listtestsuitenames``-komentoa kaikkien käytettävissä olevie
 
 
 #### <a name="help"></a>ohje
-Sama kuin [?](####?) komento
+Sama kuin [?](#section) komento
 
 
 #### <a name="list"></a>luettelo
@@ -512,6 +444,8 @@ Näyttää kaksi tapaa, joilla tätä sovellusta voi kutsua: toisessa käytetä�
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell -esimerkkejä
 
+[!IMPORTANT] Alla olevat esimerkkikomentosarjat on tarkoitettu havainnollistamiseen, eikä Microsoft tue niitä.
+
 #### <a name="run-a-test-case-in-a-loop"></a>Testitapauksen suorittaminen silmukkana
 
 Sinulla on uuden asiakkaan luova testikomentosarja. Tämä testisarja voidaan suorittaa komentosarjojen avulla silmukkana muodostamalla seuraavat tiedot satunnaisesti ennen kunkin iteraation suorittamista:
@@ -551,7 +485,7 @@ function RunTestCase
     $cmd = $cmd + $filename
     cmd /c $cmd
 }
-$excelFilename = "full path to excel file parameter file"
+$excelFilename = "full path to Excel parameter file"
 l$sheetName = "DirPartyQuickCreateForm"
 for ($i = $start; $i -lt $start + $nr; $i++ )
 {

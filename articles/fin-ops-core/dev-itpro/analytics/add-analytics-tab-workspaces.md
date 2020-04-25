@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 442557a01b25e13b76074c865dfe5468bbc9fde0
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025851"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259629"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
 
@@ -84,7 +84,7 @@ Laajenna **Varausten hallinta** -työtilan lomakemääritystä seuraavien ohjeid
 8. Napsauta hiiren kakkospainikkeella ja valitse sitten **Uusi välilehtisivu**.
 9. Anna välilehtisivulla uusi merkityksellinen nimi, kuten **Analytiikka**.
 10. Valitse lomakkeen suunnittelutilassa **Analytiikka (välilehtisivu)**.
-11. Määritä **Otsikko**-ominaisuudeksi **Analytiikka**.
+11. Määritä **Kuvaus**-ominaisuuden arvoksi **Analytiikka** ja määritä **Automaattinen ilmoitus** -ominaisuuden arvoksi **Kyllä**.
 12. Napsauta ohjausobjektia hiiren kakkospainikkeella ja lisää sitten uusi lomakeryhmän ohjausobjekti valitsemalla **Uusi** \> **Ryhmä**.
 13. Anna lomakeryhmälle uusi merkityksellinen nimi, kuten **powerBIReportGroup**.
 14. Valitse lomakkeen suunnittelutilassa **PanoramaBody (välilehti)** ja vedä ohjausobjekti sitten **Työtila**-välilehteen.

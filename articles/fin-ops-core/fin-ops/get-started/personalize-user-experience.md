@@ -3,7 +3,7 @@ title: Käyttäjäkokemuksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit mukauttaa sovellusta.
 author: jasongre
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029359"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260503"
 ---
 # <a name="personalize-the-user-experience"></a>Käyttäjäkokemuksen mukauttaminen
 
@@ -80,7 +80,7 @@ Tietyt tavallisimmat ja tärkeimmät sivulle tehtävät muutokset ovat käytett�
 
 Lisäksi eksplisiittisen mukauttamisen yleisimmät tyypit saa käyttöön napsauttamalla elementtiä hiiren kakkospainikkeella ja valitsemalla **Mukauta**. (Huomaa, että kaikkia sivun elementtejä ei voida mukauttaa.). Kun valitset tämän mukauttamistavan, elementin ominaisuusikkuna tulee näkyviin.
 
-![Elementin ominaisuuksien mukauttaminen](./media/personalization-element-properties.png)
+![Elementin ominaisuuksien mukauttaminen](./media/cli-element-property-window.png)
 
 Voit mukauttaa elementtiä ominaisuusikkunassa seuraavilla tavoilla:
 
@@ -89,6 +89,7 @@ Voit mukauttaa elementtiä ominaisuusikkunassa seuraavilla tavoilla:
 - Pikavälilehden yhteenveto-osan tietojen sisällyttäminen (jos elementti on pikavälilehdessä).
 - Ohita kenttä, jotta siihen ei koskaan kohdisteta, kun siirryt sivun läpi sarkaimella.
 - Estä kentän tietojen muokkaaminen (mikä tahansa tietue).
+- Määritä kenttä, joka vaaditaan tietojen syöttämistä varten. Jos tähän kenttään ei ole syötetty arvoa, siinä näkyy punainen reunus ja tähti, jotka ilmaisevat tämän tilan. Tämä vaihtoehto on käytettävissä vain versiosta 10.0.11 alkaen, kun [Tallennetut näkymät](saved-views.md) ja **Määritä kentät tarpeen mukaan mukautuksen avulla** -ominaisuudet on otettu käyttöön.
 
 Ominaisuusikkunassa voi olla elementin mukaan myös muita mukauttamisominaisuuksia. Ruudun ominaisuusikkunassa voi esimerkiksi olla mahdollista viedä kyseisen ruutu ylös koontinäyttöön, kun taas koontinäytön ominaisuusikkuna voi mahdollistaa uuden työtilan luonnin kyseissä koontinäytössä.
 
@@ -116,6 +117,7 @@ Kun **Mukautus**-työkalurivi on auki, taustalla oleva sivu on vain luku -muodos
 - Voit siirtää elementin **Siirrä**-työkalulla toiseen sijaintiin nykyisen elementtiryhmän sisällä. Ota huomioon, ettet voi siirtää elementtiä sen pääryhmän ulkopuolelle. Voit käyttää tätä työkalua valitsemalla työkalurivin **Siirrä**-painikkeen ja valitsemalla siirrettävän elementin. Kun valitset elementin, sovellus määrittää sijainnit, joihin elementti voidaan siirtää. Näitä sijainteja kutsutaan *pudotusalueiksi*. Kun vedät elementtiä valitussa ryhmässa, värillinen lihavoitu viiva osoittaa pudotusalueen, johon elementti voidaan pudottaa.
 - Voit poistaa elementin nykyisen sivun näppäimistön sarkaimella tehtävistä valinnoista **Ohita**-työkalulla. Kun valitset työkalurivin **Ohita**-painikkeen, kaikki tällä hetkellä ohitettavat elementit näkyvät varjostetussa säilössä. Voit lisätä kenttiä sarkainjärjestykseen ja poistaa niitä vuorovaikutteisesti.
 - Voit lisätä kentän pikavälilehtien yhteenveto-osaan käyttämällä **Näytä otsikossa**-työkalua. Kun valitset työkalurivin **Näytä otsikossa**-painikkeen, kaikki yhteenvetokentiksi valitut kentät näkyvät varjostetussa säilössä. Voit lisätä kenttiä vuorovaikutteisesti pikavälilehden yhteenvetoon ja poistaa niitä siitä valitsemalla kenttiä.
+- Määritä **Vaadi**-työkalulla elementti, joka tarvitaan tietojen syöttämiseen. Kun valitset työkalurivin **Vaadi**-painikkeen, kaikki tarvittavat yksilöidyt elementit näkyvät varjostetussa säilössä. Voit sitten määrittää ne takaisin ei vaadittaviksi. Tämä vaihtoehto on käytettävissä tulevasta versiosta alkaen, kun [Tallennetut näkymät](saved-views.md) ja **Määritä kentät tarpeen mukaan mukautuksen avulla** -ominaisuudet on otettu käyttöön.
 - **Lukitse**-työkalulla voit merkitä, onko elementti muokattavaissa vai ei. Kun valitset työkalurivin **Lukitse**-painikkeen, kaikki elementit, jotka eivät tällä hetkellä ole muokattavissa, näkyvät varjostetussa säilössä. Voit sitten määrittää ne takaisin muokattaviksi. Huomaa, että jotkut kentät ovat pakollisia, eikä niiden muokkausta voi estää. Näiden kenttien vieressä on lukkokuvake.
 - Käytä **Lisää sovellus Power Appsista** -painikkeella upottaaksesi sivulle sovelluksen, joka on luotu Microsoft Power Appsilla. Lisätietoja Power Apps -sovelluksen upottamisesta sivulle on kohdassa [Power Apps -sovellusten upottaminen](embed-power-apps.md). Tämä vaihtoehto on käytettävissä vain, kun [Tallennetut näkymät](saved-views.md) -toiminto on poistettu käytöstä.  
 - Käytä **Lisää sovellus** -painiketta upottaaksesi sivulle sovelluksen, joka on joko Microsoft Power Appsin tai kolmannen osapuolen luoma. Tämä vaihtoehto on käytettävissä vain, kun [Tallennetut näkymät](saved-views.md) -toiminto on otettu käyttöön. 

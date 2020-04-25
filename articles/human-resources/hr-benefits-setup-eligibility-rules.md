@@ -3,7 +3,7 @@ title: Oikeutussääntöjen ja -asetusten määrittäminen
 description: Määritä oikeutussäännöt ja -vaihtoehdot Microsoftin Dynamics 365 Human Resourcesin etujen hallinnassa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 448156a2428e99d8b95de547cb6f1621d49b1c7b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 07dd8a6ca7edb460769f761950dc0c143112f708
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008945"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229898"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Oikeutussääntöjen ja -asetusten määrittäminen
-
-[!include [banner](includes/preview-feature.md)]
 
 Kun olet määrittänyt Microsoft Dynamics 365 Human Resourcesin etujen hallinnan edellyttämät parametrit, voit luoda oikeutussääntöjä, nippuja, kausia ja ohjelmia, jotka liität hyötysuunnitelmiisi.
 
@@ -45,7 +43,7 @@ Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jo
 
    | Kenttä | Kuvaus |
    | --- | --- |
-   | **Eligibility rule** | Kelpoisuussäännön yksilöivä tunniste. |
+   | **Kelpoisuussääntö** | Kelpoisuussäännön yksilöivä tunniste. |
    | **Kuvaus** | Kelpoisuussäännön kuvaus. |
    | **Voimaantulopäivämäärä ja -aika** | Kelpoisuussäännön aloituspäivämäärä. | 
    | **Voimassaolon päättymispäivämäärä ja -aika** | Kelpoisuussäännön lopetuspäivämäärä. |
@@ -57,6 +55,7 @@ Avoimessa rekisteröinnissä työntekijät voivat valita etuusjärjestelyjä. Jo
    | **Työsuhdeluokka** | Työntekijän työsuhdeluokka, jos **Käytä työsuhdetta** -luokan vaihtoasetus on **Kyllä**. |
    | **Käytä uutta työhönottosääntöä** | Määrittää, käytetäänkö uuden vuokrauksen uutta työhönottokauden arvoa osana etuuksien oikeutussääntöä. |
    | **Rekisteröitymiskausi** | Ajanjakso, jolloin uusi työhönottoilmoitus on sallittu. Jos määrität tämän myös parametreissa, parametrien asetus ohittaa tämän asetuksen. |
+   | **Käytä aiempaa työsuhteen tilaa** | Määrittää, käytetäänkö työntekijän edellistä työllisyysarvoa osana etujen oikeutussääntöä. Voit esimerkiksi määrittää oikeutussäännön, joka luopuu kattavuusodotusjaksosta kaikkien niiden työntekijöiden kohdalla, jotka ovat siirtyneet **Lomautus**-tilasta **Työssä**-tilaan 90 päivän kuluessa edellisen työsuhteen päättymisestä. |
 
 4. Valitse **Lisäehdot**-kohdasta seuraavat vaihtoehdot ja lisää tarvittavat tiedot:
 

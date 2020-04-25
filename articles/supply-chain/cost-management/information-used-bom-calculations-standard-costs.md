@@ -2,7 +2,7 @@
 title: Standardikustannuksia sisältävissä tuoterakennelaskelmissa käytettävät tiedot
 description: Tuoterakennelaskelmissa käytetään tietoja useista lähteistä valmistetun nimikkeen standardikustannusten laskemista varten. Näissä lähteissä on tietoja nimikkeistä, tuoterakenteiden reitityksistä, epäsuorien kustannusten laskentakaavoista sekä kustannuslaskelmaversiosta.
 author: AndersGirke
-manager: AnnBe
+manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcGroup, BOMCalcTable, ProdParmBOMCalc
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 65571
 ms.assetid: ca17e6dd-b16a-4bbc-8682-b16345ab9906
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ec6ffe41d6dae10693b1a1ebd6e5012c32bc2e6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8ae34b2d00ba41b25f886d37cb7a9098af275398
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557613"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201706"
 ---
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>Standardikustannuksia sisältävissä tuoterakennelaskelmissa käytettävät tiedot
 

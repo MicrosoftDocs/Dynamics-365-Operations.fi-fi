@@ -3,7 +3,7 @@ title: Luettelo ER-funktioista luetteloluokassa
 description: Tässä ohjeaiheessa on tietoja sähköisen raportoinnin (ER) tukemista luettelofunktioista.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9461d0afd75f421cf03ddefed5dac379f1369ec7
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: dcf1b755959c7ae25928e3f44e988f800027786a
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917761"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201040"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Luettelo ER-funktioista luetteloluokassa
 
@@ -46,6 +46,7 @@ Sähköisen raportoinnin (ER) luettelofunktioiden avulla voidaan poimia tietoja 
 | [Index](er-functions-list-index.md)                       | Tämä funktio palauttaa *Säilö (tietue)*-arvon, joka on valittu määritetyn numeroindeksin avulla määritetyssä luettelossa. Jos hakemisto on määritellyn luettelon tietueiden ulkopuolella, tämä toiminto antaa poikkeuksen. |
 | [IsEmpty](er-functions-list-isempty.md)                   | Tämä funktio palauttaa *totuusarvon* **TOSI**, jos määritetty luettelo ei sisällä tietueita. Muussa tapauksessa se palauttaa *totuusarvon* **EPÄTOSI**. |
 | [Luettelo](er-functions-list-list.md)                         | Tämä funktio palauttaa *Tietueluettelon* arvon, joka sisältää uuden luettelon, joka luodaan määritetyistä argumenteista.|
+| [ListJoin](er-functions-list-listjoin.md)                 | Tämä funktio palauttaa *Tietueluettelon* arvon, joka edustaa uutta liitettyä luetteloa, joka luodaan määritetyistä argumenteista.|
 | [ListOfFields](er-functions-list-listoffields.md)         | Tämä funktio palauttaa *Tietueluettelon* arvon, joka luodaan *luettelointi*- tai *säilö (tietue)* -tyypin määritetyn argumentin rakenteen perusteella. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Tämä funktio palauttaa uuden *Tietueluettelon* arvon, joka koostuu vain määritetyn luettelon ensimmäisestä tietueesta.|
 | [OrderBy](er-functions-list-orderby.md)                   | Tämä funktio palauttaa määritetyn luettelon *Tietueluettelon* arvoksi sen jälkeen, kun se on lajiteltu määritettyjen argumenttien mukaan. Nämä argumentit voivaan määrittää lausekkeina. |

@@ -2,7 +2,7 @@
 title: Varaston työkäytännöt – yleiskatsaus
 description: Varaston työkäytännöt määrittävät, onko varastotyö luotu varastoprosessia varten valmistuksessa työtilaustyypin, varaston sijainnin ja tuotteen perusteella.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 196561
 ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 7476cf797685feb4c50e3cefef4c53ca37b82dff
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3fe22a92b445abbf6d1dcc67ead878db3f80d532
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251405"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204559"
 ---
 # <a name="warehouse-work-policies-overview"></a>Varaston työkäytännöt – yleiskatsaus
 
@@ -125,7 +125,7 @@ STEPS (25)
 <tr>
 <td></td>
 <td>2.</td>
-<td>Valitse luettelosta resurssiryhmä 5102.</td>
+<td>Valitse luettelosta resurssiryhmä &#39;5102&#39;.</td>
 </tr>
 <tr>
 <td></td>
@@ -135,12 +135,12 @@ STEPS (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Kirjoita Tulostusvarasto-kenttään arvo 51.</td>
+<td>Kirjoita Tulostusvarasto-kenttään arvo &#39;51&#39;.</td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td>Kirjoita Tulostussijainti-kenttään arvo 001.</td>
+<td>Kirjoita Tulostussijainti-kenttään arvo &#39;001&#39;.</td>
 </tr>
 <tr>
 <td></td>
@@ -168,7 +168,7 @@ STEPS (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Kirjoita Nimiketunnus-kenttään arvo L0101.</td>
+<td>Kirjoita Nimiketunnus-kenttään arvo &#39;L0101&#39;.</td>
 </tr>
 <tr>
 <td></td>
@@ -203,7 +203,7 @@ STEPS (25)
 <tr>
 <td></td>
 <td>11.</td>
-<td>Valitse Automaattinen tuoterakennekulutus -kentässä Ei koskaan.</td>
+<td>Valitse Automaattinen tuoterakennekulutus -kentässä &#39;Ei koskaan&#39;.</td>
 </tr>
 <tr>
 <td></td>

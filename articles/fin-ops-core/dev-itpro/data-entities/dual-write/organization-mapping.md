@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fbf7cc33d12fb54d2ff02acc46ba2e284b2a2b3f
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: fc5db8d04a2860df0c917816e2910c6fbda941ff
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019758"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173151"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Organisaatiohierarkia Common Data Servicessa
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 Koska Dynamics 365 Finance on talousjärjestelmä, *organisaatio* on keskeinen käsite ja järjestelmän asennusohjelma alkaa organisaatiohierarkian konfiguraatiosta. Yrityksen taloustietoja voidaan sitten seurata organisaatiotasolla ja millä tahansa organisaatiohierarkian tasolla.
 
@@ -50,7 +50,7 @@ Organisaatiohierarkian entiteettien yhdistämismääritykset ovat käytettäviss
 
 Tuotetiedot sisältävät kaiken tuotteeseen liittyvät tiedot ja tuotteen määrityksen, kuten tuotedimensiot tai seuranta- ja varastodimensiot. Seuraava taulukko osoittaa, miten yksikkökarttakokoelma luodaan synkronoimaan tuotteita ja liittyviä tietoja.
 
-Finance and Operations | Muut Dynamics 365 -sovellukset | Kuvaus
+Finance and Operations -sovellukset | Muut Dynamics 365 -sovellukset | kuvaus
 -----------------------|--------------------------------|---
 Organisaatiohierarkian tarkoitukset | msdyn_internalorganizationhierarchypurposes | Tässä mallissa on yksisuuntainen Organisaatiohierarkian tarkoitus -yksikön synkronointi.
 Organisaatiohierarkian tyyppi | msdyn_internalorganizationhierarchytypes | Tässä mallissa on yksisuuntainen Organisaatiohierarkiatyyppi-yksikön synkronointi.

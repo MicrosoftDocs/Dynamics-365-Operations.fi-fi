@@ -2,15 +2,15 @@
 title: Ennusteen vähennysavaimet
 description: Tämä aihe sisältää esimerkkejä, jotka kuvaavat vähennysavaimen määrittämistä. Artikkelissa kuvataan erilaisia vähennysavaimen asetuksia ja kunkin asetuksen tuloksia. Vähennysavaimen avulla voit määrittää, kuinka ennustevaatimuksia voidaan vähentää.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 07/09/2019
+manager: tfehr
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11d5613f23805993b2a83d007c818c80de6a4b9b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 25cdde073878ed090a4d981eff75a337a79b37af
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814280"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225102"
 ---
 # <a name="forecast-reduction-keys"></a>Ennusteen vähennysavaimet
 
@@ -34,7 +34,7 @@ Tässä ohjeaiheessa on tietoja eri menetelmistä, joiden avulla ennustetarpeita
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Ennustevaatimusten vähentämiseen käytetyt menetelmät
 
-Kun lisäät ennusteen pääsuunnitelman, voit valita kuinka ennusteen tarpeita vähennetään, kun todellinen kysyntä sisällytetään.
+Kun lisäät ennusteen pääsuunnitelman, voit valita kuinka ennusteen tarpeita vähennetään, kun todellinen kysyntä sisällytetään. Huomaa, että pääsuunnittelu sulkee pois aiempien ennusteiden tarpeet, mikä tarkoittaa kaikkia ennustetarpeita ennen kuluvan päivän päivämäärää.
 
 Voit sisällyttää ennusteen pääsuunnitelmaan ja valita menetelmän, jolla voit pienentää ennustetarpeita siirtymällä kohtaan **Pääsuunnittelu \> Määritys \> Suunnitelmat \> Pääsuunnitelmat**. Valitse **Ennustemalli** -kentästä ennustemalli. Valitse **Ennustevaatimusten vähentämiseen käytetty menetelmä** -kentästä menetelmä. Käytettävissä ovat seuraavat asetukset:
 

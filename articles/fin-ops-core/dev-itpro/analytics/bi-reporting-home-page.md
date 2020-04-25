@@ -1,5 +1,5 @@
 ---
-title: Yritystietojen ja raportoinnin aloitussivu
+title: Raportointi ja analysointi Power BI -aloitussivulla
 description: Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja käytettävissä olevista yritystieto- ja raportointityökaluista.
 author: sericks007
 manager: AnnBe
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 424da665f91820f3fe42c98b352a646dd3db72c5
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771561"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258577"
 ---
-# <a name="business-intelligence-bi-and-reporting-home-page"></a>Yritystietojen ja raportoinnin aloitussivu
+# <a name="reporting-and-analytics-with-power-bi-home-page"></a>Raportointi ja analysointi Power BI -aloitussivulla
 
 [!include [banner](../includes/banner.md)]
 
-Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja käytettävissä olevista yritystieto- ja raportointityökaluista.
+Tässä ohjeaiheessa viitataan resursseihin, joissa on lisätietoja käytettävissä olevista yritystieto (BI)- ja raportointityökaluista.
 
 ## <a name="get-started"></a>Aloittaminen
 - [Tietojen käyttö ja raportointi](information-access-reporting.md)
 - [Teknisiä tietoja: Raportointivaihtoehdot](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Power BI Analysointi- ja raportointipalveluiden blogi](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogi)
+- [Finance and Operations: Power BI:n analysointi- ja raportointipalveluiden blogi](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogi)
 
 ## <a name="analytical-workspaces"></a>Analyysityötilat
 Työtiloissa voidaan käyttää monipuolisesti Microsoft Power BI:n tukemia infograafeja ja visuaalisia elementtejä. Näissä infograafeissa ja visuaalisissa elementeissä käytetään monenlaisia kolmansien osapuolien toimittamia ohjausobjekteja. Työtiloista voikin tämän vuoksi muodostaa käyttäjille erittäin visuaalisen ja vuorovaikutteisen kokemuksen.
@@ -62,7 +62,7 @@ Lisätietoja on seuraavissa ohjeaiheissa:
 - [Verkkotulostuksen käyttöönotto asentamalla asiakirjan reititysagentti](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Sähköinen raportointi
-Sähköisellä raportointityökalulla (ER-työkalulla) voi määrittää sähköisten asiakirjojen muodot eri maiden tai alueiden lakisääteisten vaatimusten mukaisiksi. Sähköisiä raportointisovelluksia käytetään esimerkiksi tilintarkastuksessa, veroraportoinnissa ja sähköisessä laskutuksessa.
+Sähköisellä raportointityökalulla (sähköisen raportoinnin työkalulla) voi määrittää sähköisten asiakirjojen muodot eri maiden tai alueiden lakisääteisten vaatimusten mukaisiksi. Sähköisiä raportointisovelluksia käytetään esimerkiksi tilintarkastuksessa, veroraportoinnissa ja sähköisessä laskutuksessa.
 
 [![Esimerkki sähköisestä raportoinnista](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 

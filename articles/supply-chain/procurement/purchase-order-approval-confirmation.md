@@ -1,30 +1,30 @@
 ---
 title: Ostotilausten hyväksyminen ja vahvistaminen
 description: Tässä ohjeaiheessa käsitellään ostotilauksen tilat, jotka se läpäisee luonnin jälkeen, ja muutoksenhallinnan käyttöönoton vaikutuksen ostotilauksiin.
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+author: mkirknel
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813428"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207991"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Ostotilausten hyväksyminen ja vahvistaminen
 
@@ -69,9 +69,10 @@ Joissakin tilanteissa ostotilausta on muutettava, ennen kuin sen hyväksynnän t
 
 Jos ostotilaus luotiin muutoksenhallintaprosessilla, voit tehdä muutoksia peruuttamalla tilauksen tai, jos tilaus on jo hyväksytty, **Pyydä muutosta** -toiminnolla. Tässä tapauksessa hyväksynnän tilaksi vaihdetaan **Luonnos**, ja voit sitten muokata tilausta. Kun muutokset ovat valmiina, ostotilaus on ehkä lähetettävä uudelleenhyväksyttäväksi. Voit määrittää uudelleenhyväksyntää edellyttävät muutostyypit käyttämällä **Ostotilausten uudelleenhyväksymissääntö** -käytäntösääntöä **Ostokäytännöt**-sivulla.
 
-Jos osa ostotilausrivin tilatusta määrästä on toimitettu, tilattua määrää ei tarvitse muuttaa. Voit kuitenkin muuttaa rivin **Jäljellä oleva määrä** -määrää. Voit sitten peruuttaa rivit ja estää lisäkäsittelyn **Viimeistele**-toiminnolla. 
+Jos osa ostotilausrivin tilatusta määrästä on toimitettu, tilattua määrää ei voi muuttaa, kun ostotilaus on **Luonnos**-tilassa. Voit kuitenkin muuttaa **toimituksen jäännös** -määrää ostotilauksen rivillä, joka on **luonnos**-tilassa.
 
-Kun tilaus on vahvistettu, et voi enää poistaa sitä. Voit kuitenkin peruuttaa tilauksen koko määrän tai minkä tahansa jäljellä olevan määrän, kunhan määrää ei ole vastaanotettu tai laskutettu.
+Kun tilaus on vahvistettu, et voi enää poistaa sitä. Voit kuitenkin peruuttaa tilauksen koko määrän tai minkä tahansa jäljellä olevan määrän, kunhan määrää ei ole vastaanotettu tai laskutettu. Voit sitten estää lisäkäsittelyn **Viimeistele**-toiminnolla. 
+
 
 ## <a name="canceling-purchase-orders"></a>Ostotilausten peruuttaminen
 

@@ -3,7 +3,7 @@ title: Ostoruutumoduuli
 description: Tässä ohjeaiheessa on tietoja ostoruutumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154060"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261395"
 ---
 # <a name="buy-box-module"></a>Ostoruutumoduuli
 
@@ -46,7 +46,7 @@ Ostoruutu jaetaan tuotetietosivulla kahteen alueeseen: media-alue vasemmalla ja 
 Ostoruutumoduuli hahmontaa tuotteen otsikon, kuvauksen, hinnan ja luokitukset. Lisäksi asiakkaat voivat valita sen avulla tuotevariantit, joilla on eri tuotemääritteet, kuten koko, tyyli ja väri. Kun tuotevariantti on valittuna, muut ostoruudun ominaisuudet (esimerkiksi tuotteen kuvaus ja kuvat) päivitetään muuttujan tietojen mukaisiksi. 
 
 Asiakkaat voivat määrittää annetun määrävalitsimen avulla ostettavien nimikkeiden määrän. Sivuston asetuksissa voidaan määrittää suurin sallittu ostomäärä.
- 
+
 Asiakkaat voivat suorittaa ostoruudussa myös muita toimintoja, kuten lisätä tuotteen ostoskoriin tai toivelistalle ja valita noutosijainnin. Nämä toiminnot voidaan tehdä tuotteen tai tuotevariantin kohdalla. Jos asiakas haluaa lisätä tuotteen toivelistaan, hänen on oltava kirjautuneena sisään.
 
 Teemojen avulla voidaan poistaa ostoruudun tuoteominaisuuksien ja toimintojen ohjausobjekteja tai muuttaa niiden järjestystä. 
@@ -65,7 +65,8 @@ Teemojen avulla voidaan poistaa ostoruudun tuoteominaisuuksien ja toimintojen oh
 Ostoruutumoduulissa on kolme asetusta, jotka voidaan määrittää valitsemalla **Sivuston asetukset \> Laajennukset**:
 
 - **Maksimimäärä** – Tätä ominaisuutta käytetään määrittämään kunkin ostoskoriin lisättävän nimikkeen enimmäismäärä. Jälleenmyyjä voi esimerkiksi päättää, että yhdessä tapahtumassa voidaan myydä vain 10 kappaletta kutakin tuotetta.
-- **Varaston tarkistus** – Kun arvoksi on asetettu **Tosi**, nimike lisätään ostoskoriin vasta, kun ostoruutumoduuli varmistaa, että nimikettä on varastossa. Tämä varaston tarkistus tehdään sekä skenaarioissa, joissa nimike toimitetaan, että skenaarioissa, joissa se noudetaan myymälästä. Jos arvoksi on määritetty **Epätosi**, varaston tarkistus tehdään vasta, kun nimike on lisätty ostoskoriin ja tilaus on tehty.
+- **Varaston tarkistus** – Kun arvoksi on asetettu **Tosi**, nimike lisätään ostoskoriin vasta, kun ostoruutumoduuli varmistaa, että nimikettä on varastossa. Tämä varaston tarkistus tehdään skenaarioissa, joissa nimike toimitetaan, että skenaarioissa, joissa se noudetaan myymälästä. Jos arvoksi on määritetty **Epätosi**, varaston tarkistus tehdään vasta, kun nimike on lisätty ostoskoriin ja tilaus on tehty. Lisätietoja varastoasetusten määrittämisestä taustaohjelmassa on kohdassa [Varaston käytettävyyden laskeminen vähittäismyyntikanaville](calculated-inventory-retail-channels.md).
+
 - **Varaston puskuri** – Tällä ominaisuudella määritetään varaston puskurimäärä. Varastoa ylläpidetään reaaliaikaisesti. Jos useat asiakkaat tekevät tilauksia, todellisen varastomäärän ylläpitäminen voi olla vaikeaa. Kun varaston tarkistus tehdään ja varasto on pienempi kuin puskurisumma, tuotetta käsitellään kuin se olisi loppunut varastosta. Kun myynti tapahtuu nopeasti useiden kanavien kautta eikä varastomäärä ole täysin synkronoitu, on pienempi riski siitä, että nimikettä ei ole varastossa myynnin hetkellä.
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit -käyttö
@@ -93,11 +94,13 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 
 [Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
 
-[Myymälän valintamoduuli](store-selector.md)
+[Myymälän valitsinmoduuli](store-selector.md)
 
 [Konttimoduuli](add-container-module.md)
 
 [Ostoskorimoduuli](add-cart-module.md)
+
+[Ostoskorikuvakemoduuli](cart-icon-module.md)
 
 [Kassamoduuli](add-checkout-module.md)
 
@@ -106,3 +109,5 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 [Ylätunnistemoduuli](author-header-module.md)
 
 [Alatunnistemoduuli](author-footer-module.md)
+
+[Vähittäismyyntikanavien varaston käytettävyyden laskeminen](calculated-inventory-retail-channels.md)

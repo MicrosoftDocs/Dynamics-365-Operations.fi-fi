@@ -3,7 +3,7 @@ title: Määritä loman ja poissaolon tyypit
 description: Määritä Dynamics 365 Human Resourcesissa lomatyypit, joita työntekijät voivat valita.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1748ec2a888a50af9b9260720dfd439adc4686f9
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008922"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198047"
 ---
 # <a name="configure-leave-and-absence-types"></a>Määritä loman ja poissaolon tyypit
 
@@ -58,17 +58,21 @@ Lomatyypit Dynamics 365 Human Resourcesissa määrittävät erilaiset poissaolot
 
 9. Valitse **Tallenna**.
 
-## <a name="configure-preview-features"></a>Esikatseluominaisuuksien määrittäminen
-
-Jos olet ottanut käyttöön loman ja poissaolon esikatseluominaisuudet, sinun on määritettävä myös niiden asetukset.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
+## <a name="configure-leave-type-rules"></a>Lomatyypin sääntöjen määrittäminen
 
 1. Määritä lomatyypin pyöristysasetukset. Vaihtoehtoja ovat **Ei mitään**, **Ylös**, **Alas** ja **Lähin**. Voit myös määrittää lomatyypin pyöristystarkkuuden.
 
 2. Määritä lomatyypin **Lomakorjaukset**. Kun valitset tämän vaihtoehdon, henkilöstöhallinto käyttää työpäivään kuuluvien lomien määrää määrittääkseen, miten lomatyypille voidaan jaksottaa aikaa. Jos esimerkiksi joulupäivä osuu maanantaihin, henkilöstöhallinto vähentää yhden päivän lomatyypistä jaksotusten käsittelyn yhteydessä.
 
    Voit määrittää lomat työaikakalenteriin. Lisätietoja on ohjeaiheessa [Työaikakalenterin luominen](hr-leave-and-absence-working-time-calendar.md)
+   
+## <a name="configure-preview-features"></a>Esikatseluominaisuuksien määrittäminen
+
+Jos olet ottanut käyttöön loman ja poissaolon esikatseluominaisuudet, sinun on määritettävä myös niiden asetukset.
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+1. Valitse lomatyyppi, johon siirrettävät saldot siirretään. Voit myös luoda uuden lomatyypin siirtokirjauksen. 
 
 ## <a name="see-also"></a>Lisätietoja
 

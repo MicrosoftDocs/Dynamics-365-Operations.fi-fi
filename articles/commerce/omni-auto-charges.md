@@ -3,7 +3,7 @@ title: Monikanavaiset edistyneet automaattiset kulut
 description: Tässä ohjeaiheessa käsitellään Commerce-kanavan tilausten lisäkulujen hallintaa edistyneiden automaattisten kuluominaisuuksien avulla.
 author: hhaines
 manager: annbe
-ms.date: 03/08/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: fd02a81f35b40e5075ccfe5c9a617d7de4e8250d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022453"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175151"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Omnikanavan automaattiset etukäteisveloitukset
 
 [!include [banner](includes/banner.md)]
 
-Tässä ohjeaiheessa on tietoja edistyneiden automaattisten kulujen määrittämisestä ja käyttöönottamisesta. Tämä ominaisuus on käytössä Dynamics 365 for Retailin versiossa 10.0.
+Tässä ohjeaiheessa on tietoja edistyneiden automaattisten kulujen määrittämisestä ja käyttöönottamisesta. Nämä ominaisuudet ovat käytössä Dynamics 365 for Retailin versiossa 10.0.
 
 Kun edistyneet automaattiset kuluominaisuudet on otettu käyttöön, missä tahansa tuetussa Commerce-kanavassa (POS, puhelinkeskus tai online) luoduissa tilauksissa voi käyttää [automaattisten kulujen](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) määrityksiä, jotka on määritetty ERP-sovelluksessa otsikko- ja rivitason kuluille.
 
@@ -215,3 +215,10 @@ Jotkin organisaatiot haluavat ehkä odottaa, että käyttäjä on lisännyt kaik
 ### <a name="charges-override-reports"></a>Kulujen ohitusraportit
 
 Jos käyttäjät ohittavat lasketut kulut manuaalisesti tai lisäävät manuaalisen kulun tapahtumaan, nämä tiedot ovat käytettävissä tarkistusta varten **Kulujen ohituksen historia** -raportissa. Raportin voi saada valitsemalla **Retail ja Commerce \> Kyselyt ja raportit \> Kulun ohituksen historia**. On tärkeää huomata, että tähän raporttiin tarvittavat tiedot tuodaan kanavatietokannata HQ-sovellukseen P-jakeluaikataulutöinä. Tämän vuoksi tiedot juuri myyntipisteessä tehdyistä ohituksista eivät ehkä ole heti käytettävissä tässä raportissa, vaan tämän työn on ladattava myymälän tapahtumatiedot ensin HQ-sovellukseen.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Automaattisten veloitusten käyttöönotto ja määritys kanavan mukaan](auto-charges-by-channel.md)
+
+[Otsikon kulujen suhteellinen jakaminen vastaaville myyntiriveille](pro-rate-charges-matching-lines.md)
+

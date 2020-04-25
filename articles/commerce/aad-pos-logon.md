@@ -3,7 +3,7 @@ title: Azure Active Directory -todennuksen käyttöönotto myyntipisteen sisää
 description: Tässä ohjeaiheessa kerrotaan, miten Microsoft Dynamics 365 Commercen myyntipisteen sisäänkirjauskokemus määritetään käyttämään Azure Active Directory -todennusta.
 author: boycezhu
 manager: annbe
-ms.date: 03/04/2020
+ms.date: 03/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,16 +15,16 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: f030e8382627191dd32d855e15432fc85dca4bbd
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: dfc49585434383385b6b993893d93b95ef888384
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100377"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248937"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Azure Active Directory -todennuksen käyttöönotto myyntipisteen sisäänkirjauksessa
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Useat Microsoft Dynamics 365 Commercea käyttävät asiakkaat käyttävät myös muita Microsoftin pilvipalveluita. He voivat hallita näiden palveluiden käyttäjän tunnistetietoja Azure Active Directoryn (Azure AD) avulla. Näissä tapauksissa asiakkaat saattavat haluta käyttää samaa Azure AD -tiliä kaikissa sovelluksissa. Tässä ohjeaiheessa kerrotaan, miten Commercen myyntipisteen sisäänkirjauskokemus määritetään käyttämään Azure AD -todennusta.
 

@@ -3,7 +3,7 @@ title: Otsikon kulujen jakaminen suhteellisesti vastaaville myyntiriveille
 description: Tässä ohjeaiheessa käsitellään Commerce-kanavan tilausten automaattisten kulujen laskemisen ja kohdistamisen lisäominaisuuksia käyttämällä automaattista etukäteisveloitustoimintoa.
 author: hhaines
 manager: annbe
-ms.date: 04/23/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 5c03b1a1db11098058022a6916dc5bddf5518f9b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022435"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175128"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Otsikon kulujen jakaminen suhteellisesti vastaaville myyntiriveille
 
@@ -37,7 +37,7 @@ Tämä toiminto on käytettävissä vain, jos [automaattiset etukäteisveloituks
 
 Tämän uuden toiminnon avulla organisaatiot voivat laskea ja kohdistaa otsikkotason automaattiset kulut entistä joustavammin myyntitapahtumiin.
 
-Versiota 10.0.1 edeltävissä sovellusversioissa otsikkotason automaattiset kulut, joilla on tietty toimitustapasuhde, laskettiin vain, kun myyntitilauksen otsikossa oli vastaava toimitustapa.
+Versiota 10.0.1 edeltävissä sovelluksen versioissa otsikkotason automaattiset kulut, joilla on tietty toimitustapasuhde, laskettiin vain, kun myyntitilauksen otsikossa oli vastaava toimitustapa.
 
 Esimerkki: Otsikkotason automaattiset kulut on määritetty toimitustavoille **99** ja **11**. Myyntitilaus luodaan, ja tilauksessa otsikossa toimitustavaksi on määritetty **99**. Osa myyntiriveistä on kuitenkin määritetty siten, että niiden toimitukseen käytetään toimitustapaa **11**. Tässä tapauksessa vain toimitustapaan **99** linkitetyt otsikkotason kulut otetaan huomioon ja kohdistetaan myyntitilaukseen.
 
@@ -169,3 +169,9 @@ Tämän vuoksi tässä esimerkissä nimikkeelle 81334 määritetään rahtikuluk
 ![Nimikkeen 81334 myyntirivin suhteellisesti jaetut kulut](media/proratedlinecharge.png)
 
 Kun tätä laskentamenetelmää käytetään osittaisen palautuksen skenaariossa, jossa kulukoodi on palautettavissa, vain osa kyseiselle riville kohdistetusta kulusta palautetaan nimikkeen palautuksen yhteydessä.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[Omnikanavan automaattiset etukäteisveloitukset](omni-auto-charges.md)
+
+[Automaattisten veloitusten käyttöönotto ja määritys kanavan mukaan](auto-charges-by-channel.md)
