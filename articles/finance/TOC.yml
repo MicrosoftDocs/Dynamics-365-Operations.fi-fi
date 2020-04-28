@@ -70,12 +70,12 @@
                   items:
                     - name: Financen aloitussivun uudet ominaisuudet ja muutokset
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.11 (heinäkuu 2020)
+                      href: get-started/whats-new-changed-10-0-11.md
                     - name: Finance 10.0.10 (toukokuu 2020)
                       href: get-started/whats-new-changed-10-0-10.md
                     - name: Finance 10.0.9 (huhtikuu 2020)
                       href: get-started/whats-new-changed-10-0-9.md
-                    - name: Finance 10.0.8 (helmikuu 2020)
-                      href: get-started/whats-new-changed-10-0-8.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet Dynamics 365 Finance -ominaisuudet
@@ -978,12 +978,16 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: Määritä työn ja kulujen vakiokustannukset
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: Maksettaessa maksettavien toimittajan maksujen määrittäminen ja käyttäminen
+              href: project-management/setup-manage-vendor-payments.md
             - name: Projektikustannusten jaksotus ostokuiteissa
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: Projektin laskutus
               href: accounts-payable/project-invoicing.md
             - name: Projektisopimukset
               href: project-management/project-contracts.md
+            - name: Tilaan perustuvien edistyksellisten laskutussopimusten luominen
+              href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: Projektiennusteet ja -budjetit
               href: project-management/project-forecasts-budgets.md
             - name: Projektibudjettien siirtäminen tilikauden lopussa
@@ -1014,6 +1018,8 @@
                   href: project-management/mobile-timesheets.md
                 - name: Mukautettujen kenttien toteuttaminen Project Timesheet -mobiilisovelluksessa
                   href: project-management/custom-fields-mobile.md
+            - name: Projektimäärärahat
+              href: project-management/project-grants.md
         - name: Julkinen sektori
           items:
             - name: Julkisen sektorin aloitussivu
@@ -2016,6 +2022,8 @@
                   href: localizations/emea-ita-exil-unique-certification.md
                 - name: Vekselin protestin tuonti
                   href: localizations/emea-ita-exil-protest-boe.md
+                - name: Enimmäisvero
+                  href: localizations/emea-ita-exil-tax-plafond.md
             - name: Japani
               items:
                 - name: Japani – yleiskatsaus
