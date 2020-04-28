@@ -70,12 +70,12 @@
                   items:
                     - name: Supply Chain Managementin aloitussivun uudet ja muuttuneet ominaisuudet
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.11 (heinäkuu 2020)
+                      href: get-started/whats-new-scm-10-0-11.md
                     - name: Supply Chain Management 10.0.10 (toukokuu 2020)
                       href: get-started/whats-new-scm-10-0-10.md
                     - name: Supply Chain Management 10.0.9 (huhtikuu 2020)
                       href: get-started/whats-new-scm-10-0-9.md
-                    - name: Supply Chain Management 10.0.8 (helmikuu 2020)
-                      href: get-started/whats-new-scm-10-0-8.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Dynamics 365 Supply Chain Management -ominaisuudet
@@ -349,6 +349,8 @@
               items:
                 - name: 'Ennusteet, työtilaukset ja projektit'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: Resurssien hallinnan integraatio käyttöomaisuuteen
+              href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Ennaltaehkäisevä ja reaktiivinen ylläpito
               items:
                 - name: Ennaltaehkäisevä ylläpito – yleiskatsaus
@@ -565,6 +567,8 @@
                   href: cost-management/lifo-physical-value-marking.md
                 - name: Liukuva keskiarvo
                   href: cost-management/moving-average.md
+                - name: 'Liukuva keskiarvo, varalla oleva kustannusjärjestys'
+                  href: cost-management/moving-average-fallback.md
                 - name: Fyysiset ja kirjanpidolliset päivitykset
                   href: cost-management/physical-financial-updates.md
                 - name: Juokseva keskimääräinen kustannushinta
@@ -579,7 +583,9 @@
                   href: cost-management/inventory-close.md
                 - name: Käytettävissä olevan varaston kustannusarvojen oikaiseminen
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Varaston erääntymisraportti
+                - name: Varaston arvon varastoraportti
+                  href: cost-management/inventory-value-report-storage.md
+                - name: Varaston erääntymisraportin tallennus
                   href: cost-management/inventory-aging-report-storage.md
             - name: Valmistuksen kirjanpito
               items:
@@ -697,7 +703,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Taloushallinnon dimensioiden lisääminen koottuihin mittoihin
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Analyysiraporttien luominen Power BI Desktopin avulla
+                - name: Analyysiraporttien luominen PowerBI Desktopin avulla
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1223,6 +1229,8 @@
                   href: inventory/enable-quality-management.md
                 - name: Laadunhallintaprosessit
                   href: inventory/quality-management-processes.md
+                - name: Laadunhallinta varastoprosesseja varten
+                  href: inventory/quality-management-for-warehouses-processes.md
                 - name: Määrityksistä poikkeamisen hallinta
                   href: inventory/enable-nonconformance-management.md
                 - name: Määritä hallinnan esivaatimukset
@@ -2549,6 +2557,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                 - name: Järjestelmän ryhmittely avoimessa työluettelossa
                   href: warehousing/system-group-on-open-work-list.md
+                - name: Rekisterikilven otsikoiden asiakirjareitityksen asettelu
+                  href: warehousing/document-routing-layout-for-license-plates.md
                 - name: Skannaa viivakoodeja kameran avulla Dynamics 365 for Finance and Operationsissa
                   href: warehousing/scan-bar-codes-using-a-camera.md
                 - name: Mobiililaitteiden viivakoodituki
@@ -2653,6 +2663,8 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Varastotyön mobiililaitteiden määrittäminen
                   href: warehousing/configure-mobile-devices-warehouse.md
+                - name: Rekisterikilven vastaanotto varastoinnin mobiilisovelluksella
+                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
                   href: warehousing/tasks/set-up-mobile-device-menu.md
                 - name: Määritä mobiililaitteen valikkokohde vastaanotettujen nimikkeiden rekisteröinnille
@@ -2669,10 +2681,12 @@
                   href: warehousing/process-guide-framework.md
             - name: Päivitys ja siirto
               items:
-                - name: Päivitä varastonhallintaprosessit Microsoft DynamicsAX 2012 -versiosta Finance and Operationsiin
+                - name: Päivitä varastonhallintaprosessit Microsoft Dynamics AX 2012 -versiosta Finance and Operationsiin
                   href: warehousing/upgrade-migration-warehouse-management-processes.md
             - name: Rekisteröintien ja poispanojen vastaanotot
               items:
+                - name: Ostotilausten saapuvien kuormien varastokäsittely
+                  href: warehousing/inbound-load-handling.md
                 - name: Rekisteröi nimikkeet erikoisvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Rekisteröi nimikkeet perusvarastointikäyttöön tarkoitetuksi nimikkeiksi käyttäen nimikkeen saapumisen kirjauskansiota
@@ -2682,6 +2696,7 @@
                 - name: Sijaintidirektiivin määrittäminen ostotilauksen poispanolle
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Työmallin määrittäminen ostotilauksia varten
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Toimitusketjun hallinnan kehittäminen
           items:
             - name: Gantt-ohjausobjektin kehitysopas

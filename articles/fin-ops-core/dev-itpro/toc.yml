@@ -22,32 +22,6 @@
                   href: get-started/whats-new-platform-update-33.md
                 - name: Platform update 32 (helmikuu 2020)
                   href: get-started/whats-new-platform-update-32.md
-                - name: Platform update 31 (tammikuu 2020)
-                  href: get-started/whats-new-platform-update-31.md
-                - name: Platform update 30 (marraskuu 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-30.md
-                - name: Platform update 29 (lokakuu 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-29.md
-                - name: Platform update 28 (heinäkuu 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-28.md
-                - name: Platform update 27 (kesäkuu 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-27.md
-                - name: Platform update 26 (toukokuu 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-26.md
-                - name: Platform update 25 (huhtikuu 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-25.md
-                - name: Platform update 24 (maaliskuu 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-24.md
-                - name: Platform update 23 (tammikuu 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-23.md
-                - name: Platform update 22 (joulukuu 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-22.md
-                - name: Platform update 21 (marraskuu 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-21.md
-                - name: Platform update 20 (syyskuu 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-20.md
-                - name: Platform update 15 (maaliskuu 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet Platform-ominaisuudet
@@ -104,6 +78,8 @@
               href: dev-tools/exclude-test-packages.md
             - name: Kolmannen osapuolen mallien ja suorituspalvelupakettien hallinta lähteenhallinnan avulla
               href: dev-tools/manage-runtime-packages.md
+            - name: Monipuoliset käyttöönotettavat paketit
+              href: dev-tools/aio-deployable-packages.md
             - name: Automatisoidun koontiversion malliversioiden päivittäminen
               href: dev-tools/version-models-build.md
         - name: Tietojen integrointi
@@ -526,7 +502,7 @@
                       href: lifecycle-services/reconfigure-environment.md
                     - name: Paikallisten ympäristöjen uudelleenasennus
                       href: deployment/redeploy-on-prem.md
-                    - name: AOS-solmun poistaminen ja asentaminen uudelleen
+                    - name: 'AOS-solmun poistaminen, asentaminen uudelleen tai lisääminen'
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Saman AD FS -esiintymän käyttäminen uudelleen useissa ympäristöissä
                       href: deployment/onprem-reuseadfs.md
