@@ -1,9 +1,9 @@
 ---
 title: Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
 description: Tässä ohjeaiheessa on vihjeitä tietojen tuomisesta kirjauskansioon käyttämällä kirjauskansioyksikköä.
-author: ShylaThompson
+author: rcarlson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 13ea54a6fc4ccdfbcc917b533fe9896d57bcb347
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769607"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281483"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Parhaat käytännöt kirjauskansioyksikön avulla tapahtuvaan tositteiden tuontiin
 
@@ -30,9 +30,9 @@ ms.locfileid: "2769607"
 
 Tässä ohjeaiheessa on vihjeitä tietojen tuomisesta kirjauskansioon käyttämällä kirjauskansioyksikköä.
 
-Voit tuoda kirjauskansioyksiköllä vain tositteita, joiden tili- tai vastatilityyppinä on **Kirjanpito, Asiakas, Toimittaja tai Pankki**. Tosite voidaan lisätä yhtenä rivinä, käyttäen sekä **Tili**- että **Vastatili**-kenttiä, tai monirivisenä tositteena, jossa käytetään vain **Tili**-kenttää (**Vastatili**-kenttä jätetään tyhjäksi jokaisella rivillä). Kirjauskansioyksikkö ei tue kaikkia tilityyppejä. Sen sijaan on olemassa muita yksiköitä sellaisiin tilanteisiin, joissa on käytettävä tilityyppien yhdistelmiä. Jos haluat esimerkiksi tuoda projektitapahtuman, voit käyttää projektin kulukirjausyksikköä. Kukin yksikkö on suunniteltu tukemaan tiettyjä tilanteita, joka tarkoittaa, että kyseisiä tilanteita varten luoduissa yksiköissä voi olla lisäkenttiä, joita ei ole muita tilanteita koskevissa yksiköissä.
+Voit tuoda kirjauskansioyksiköllä vain tositteita, joiden tili- tai vastatilityyppinä on **Kirjanpito**, **Asiakas**, **Toimittaja** tai **Pankki**. Tosite voidaan lisätä yhtenä rivinä, käyttäen sekä **Tili**- että **Vastatili**-kenttiä, tai monirivisenä tositteena, jossa käytetään vain **Tili**-kenttää (**Vastatili**-kenttä jätetään tyhjäksi jokaisella rivillä). Kirjauskansioyksikkö ei tue kaikkia tilityyppejä. Sen sijaan on olemassa muita yksiköitä sellaisiin tilanteisiin, joissa on käytettävä tilityyppien yhdistelmiä. Jos haluat esimerkiksi tuoda projektitapahtuman, voit käyttää projektin kulukirjausyksikköä. Kukin yksikkö on suunniteltu tukemaan tiettyjä skenaarioita. Tämä tarkoittaa, että näissä skenaarioissa voi olla käytettävissä lisäkenttiä. Muissa skenaarioissa ei kuitenkaan ehkä ole käytettävissä muita kenttiä.
 
-## <a name="setup"></a>Luo perustiedot
+## <a name="setup"></a>Määritys
 Tarkista ennen kirjauskansioyksikköä käyttävää tuontia seuraavat asetukset:
 
 - **Kirjauskansion eränumeron numerosarja-asetukset** – Kun käytät tuontiin kirjanpitoyksikköä, kirjauskansion eränumero käyttää oletusarvoisesti kirjanpitoparametreissa määritettyä numerosarjaa. Jos määrität kirjauskansion eränumeron numerosarjaksi **Manuaalinen**, oletusnumeroa ei käytetä. Tätä asetusta ei tueta.
@@ -44,7 +44,7 @@ Kaksi tietojen hallinnan asetusta vaikuttaa siihen, miten oletuskirjauskansion e
 - **Joukkoon perustuva käsittely** (tietoyksikössä)
 - **Luotu automaattisesti** (kentän yhdistämismäärityksessä)
 
-Seuraavissa osissa käsitellään näiden asetusten vaikutusta ja selvitetään, miten kirjauskansion eränumerot ja tositenumerot luodaan.
+Seuraavissa osissa kuvataan näiden asetusten vaikutusta. Ne selittävät myös, miten järjestelmä luo eränumerot kirjauskansioille ja tositenumeroille.
 
 ### <a name="journal-batch-number"></a>Kirjauskansion eränumero
 
@@ -57,10 +57,10 @@ Seuraavissa osissa käsitellään näiden asetusten vaikutusta ja selvitetään,
 
 ### <a name="voucher-number"></a>Tositenumero
 
-- Kun käytät kirjauskansioyksikössä **Joukkoon perustuva käsittely** -asetusta, tuodun tiedoston on annettava tositenumero. Jokaiselle kirjauskansion tapahtumalle määritetään tuodusta tiedostosta saatu tositenumero, vaikka tositetta ei olisi täsmäytetty. Jos haluat käyttää joukkoon perustuvaa käsittelyä mutta haluat käyttää myös tositenumeroille määritettyä numerosarjaa, helmikuun 2016 versiossa on tätä varten hotfix-korjaus. Hotfix-korjauksen numero on 3170316, ja sen voi ladata Lifecycle Services (LCS) -palvelusta. Lisätietoja on kohdassa [Päivitysten lataaminen Lifecycle Servicesistä (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+- Kun käytät kirjauskansioyksikössä **Joukkoon perustuva käsittely** -asetusta, tuodun tiedoston on annettava tositenumero. Jokaiselle kirjauskansion tapahtumalle määritetään tuodusta tiedostosta saatu tositenumero, vaikka tositetta ei olisi täsmäytetty. Huomaa seuraavat seikat, jos haluat käyttää joukkoon perustuvaa käsittelyä mutta haluat käyttää myös tositenumeroille määritettyä numerosarjaa.
 
     - Voit ottaa tämän toiminnon käyttöön valitsemalla siinä kirjauskansiossa, jota käytetään tuontiin, **Numeroiden kohdistus kirjauksen yhteydessä** -asetukseksi **Kyllä**.
-    - Tositenumero on määritettävä edelleen tuodussa tiedostossa. Tämä numero on kuitenkin väliaikainen ja tositenumero korvaa sen, kun kirjauskansio kirjataan. Varmista, että väliaikainen tositenumero ryhmittää kirjauskansion rivit oikein. Kirjauksen aikana havaitaan esimerkiksi kolme riviä, joilla on väliaikainen tositenumero 1. Kaikkien kolmen rivin väliaikeinen tositenumero korvataan numerosarjan seuraavalla numerolla. Jos nämä kolme riviä eivät ole täsmätty vienti, tositetta ei kirjata. Jos seuraavaksi havaitaan rivejä, joiden väliaikainen tositenumero on 2, tämä numero korvataan seuraavalla numerosarjan tositenumerolla ja niin edelleen.
+    - Tositenumero on määritettävä edelleen tuodussa tiedostossa. Tämä numero on kuitenkin väliaikainen ja tositenumero korvaa sen, kun kirjauskansio kirjataan. Varmista, että väliaikainen tositenumero ryhmittää kirjauskansion rivit oikein. Kirjauksen aikana havaitaan esimerkiksi kolme riviä, joilla on väliaikainen tositenumero 1. Kaikkien kolmen rivin väliaikeinen tositenumero korvataan numerosarjan seuraavalla numerolla. Jos nämä kolme riviä eivät ole täsmätty vienti, tositetta ei kirjata. Jos seuraavaksi havaitaan rivejä, joiden väliaikainen tositenumero on 2, tämä numero korvataan seuraavalla sarjan tositenumerolla ja niin edelleen.
 
 - Jos et käytä kirjauskansioyksikössä **Joukkoon perustuva käsittely** -asetusta, tuodussa tiedostossa ei tarvitse antaa tositenumeroa. Tositenumerot luodaan tuonnin aikana kirjauskansion asetusten mukaan (**Vain yksi tosite**, **Kun tosite täsmää** ja niin edelleen). Jos kirjauskansion asetukseksi on esimerkiksi määritetty **Kun tosite täsmää**, ensimmäinen rivi saa uuden oletusarvoisen tositenumeron. Järjestelmä sitten arvioi rivin ja määrittää, vastaavatko debet-arvot kredit-arvoja. Jos rivillä on vastatili, seuraava tuotavarivi saa uuden tositenumeron. Jos vastatiliä ei ole, järjestelmä arvioi, vastaavatko debet-arvot kredit-arvoja uutta riviä tuotaessa.
 - Jos **Tositenumero**-kentän arvoksi on valittu **Luotu automaattisesti**, tuonti epäonnistuu. **Tositenumero**-kentän **Luotu automaattisesti** -asetusta ei tueta.

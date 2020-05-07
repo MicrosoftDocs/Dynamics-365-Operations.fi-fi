@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59384d8e8d043eb14231a471c7218ced2dddf739
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172874"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275461"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Finance and Operations -sovellusten päivityksiin liittyvien ongelmien vianmääritys
 
@@ -85,9 +85,8 @@ Jos ongelma ei vieläkään korjaannu, toimi seuraavasti.
 > Näiden vaiheiden avulla voit poistaa yksikön ja lisätä sen sitten uudelleen. Voit välttää ongelmat noudattamalla tarkasti ohjeita.
 
 1. Siirry Finance and Operations -sovelluksessa kohtaan **Työtilat \> Tietojen hallinta** ja valitse **Tietoyksiköt**--ruutu.
-2. Etsi yksikkö, josta puuttuu kenttä. Kirjoita kohdeyksikön, valmistelutaulun, yksikön nimen ja muiden sarakearvojen huomautus.
-3. Jos jokin käsittelyryhmä on riippuvainen tästä yksiköstä, tee tarvittavat toimenpiteet käsittelyryhmille ennen yksikön poistamista.
-4. Poista yksikkö, josta puuttuu kenttä.
-5. Valitse **Uusi** ja lisää yksikkö takaisin. Määritä arvot, joista teit huomautuksen vaiheessa 2.
-6. Avaa **Yksikön yhdistämismääritys** -sivu **Kaksoiskirjoitussivulta** Finance and Operations -sovelluksessa.
-7. Valitse **Päivitä yksikköluettelo**, jos haluat täyttää entiteettien yhdistämismääritysten kentät automaattisesti.
+2. Etsi yksikkö, josta puuttuu määrite. Valitse työkaluriviltä **Muokkaa kohteen yhdistämismääritystä**.
+3. Valitse **Yhdistä väliaikainen alue kohteeseen** -ruudusta **Luo yhdistämismääritys**.
+4. Avaa **Yksikön yhdistämismääritys** -sivu **Kaksoiskirjoitussivulta** Finance and Operations -sovelluksessa.
+5. Jos määritettä ei täytetä automaattisesti kartalla, lisää se manuaalisesti valitsemalla **Lisää määrite** -painike ja valitsemalla sitten **Tallenna**. 
+6. Valitse kartta ja valitse **Suorita**.

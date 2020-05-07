@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 79b4640a23d4fc78ade4de57e4071abe6c9ecb56
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042708"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284353"
 ---
 # <a name="electronic-reporting-formula-language"></a>Sähköisen raportoinnin kaavakieli
 
 [!include [banner](../includes/banner.md)]
 
-Sähköinen raportointi (ER) tarjoaa tehokkaan tietojenmuunnoskokemuksen. Kieli, jota käytetään ilmaisemaan vaaditut tietojen manipuloinnit ER -kaavojen suunnittelutoiminnossa muistuttaa kaavan kieltä Microsoft Excelissä.
+Sähköinen raportointi (ER) tarjoaa tehokkaan tietojenmuunnoskokemuksen. Kieli, jota käytetään ilmaisemaan vaaditut tietojen manipuloinnit [ER -kaavojen suunnittelutoiminnossa](general-electronic-reporting-formula-designer.md) muistuttaa kaavan kieltä Microsoft Excelissä.
 
 ## <a name="basic-syntax"></a>Perussyntaksi
 
@@ -41,13 +41,13 @@ ER-lausekkeet voivat sisältää joitakin seuraavia elementtejä tai kaikki seur
 - [Polut](#Paths)
 - [Toiminnot](#Functions)
 
-## <a name="Constants">Vakiot</a>
+## <a name=""></a><a name="Constants">Vakiot</a>
 
 Voit käyttää lausekkeiden suunnittelussa tekstivakioita ja numeerisia vakioita (arvoja, joita ei lasketa). Esimerkiksi lauseke `VALUE ("100") + 20` käyttää numeerista vakiota **20** ja merkkijonovakiota **"100"** ja se palauttaa numeerisen arvon **120**.
 
 ER-kaavojen suunnittelutoimintoa tukee ohjausjaksoja. Niinpä voitkin määrittää lausekkeen merkkijonosta, jota on käsiteltävä eri tavalla. Lauseke `"Leo Tolstoy ""War and Peace"" Volume 1"` palauttaa esimerkiksi tekstimerkkijonon **Leo Tolstoy "War and Peace" Volume 1**.
 
-## <a name="Operators">Operaattorit</a>
+## <a name=""></a><a name="Operators">Operaattorit</a>
 
 Seuraavassa taulukossa on aritmeettisia operaattoreita, joita voi käyttää matemaattisten perusoperaattoreiden, kuten lisäyksen, vähennyksen sekä kerto- ja jakolaskun suorittamiseen.
 
@@ -91,7 +91,7 @@ Järjestys, jossa yhdistelmälausekkeen osat lasketaan, on tärkeä. Esimerkiksi
 
 Jos lausekkeessa on useita peräkkäisiä operaattoreita, joilla on sama tärkeysjärjestys, kyseiset operaattorit suoritetaan vasemmalta oikealle. Esimerkiksi lauseke `1 + 6 / 2 \* 3 > 5` palauttaa arvon **tosi**. Käyttämällä sulkeita lausekkeiden haluttu laskentajärjestys voidaan ilmaista selkeästi, mikä myös helpottaa lausekkeiden lukemista ja ylläpitämistä.
 
-## <a name="References">Viitteet</a>
+## <a name=""></a><a name="References">Viitteet</a>
 
 Kaikkia nykyisen ER-komponentin tietolähteitä, jotka ovat käytettävissä lausekkeen suunnittelun yhteydessä, voidaan käyttää nimettyinä viitteinä. Nykyinen ER-osa voi olla mallin yhdistämismääritys tai muoto. Esimerkiksi nykyinen ER-mallin määritys sisältää **ReportingDate**-tietolähteen, joka palauttaa *DateTime*-tietotyypin arvon. Jotta kyseinen arvo saadaan muotoiltua oikein luotavassa asiakirjassa, siihen voidaan viitata lausekkeessa seuraavasti: `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
@@ -112,7 +112,7 @@ Voit rajoittaa tapaa, jolla arvot siirretään tämän tyyppisen menetelmän par
 - Vain vakioita voi siirtää tämän tyyppisiin menetelmiin. Vakioiden arvot määritetään suunnitteluvaiheessa.
 - Tämän tyypin parametrit tukevat alkeellisia (perus) tietotyyppejä. Alkukantaisia tietotyyppejä ovat esimerkiksi *kokonaisluku*, *reaaliluku*, *totuusarvo* ja *merkkijono*.
 
-## <a name="Paths">Polut</a>
+## <a name=""></a><a name="Paths">Polut</a>
 
 Kun lauseke viittaa rakenteelliseen tietolähteeseen, polun määritettä voidaan käyttää valittaessa tietolähteen tietty primitiivinen elementti. Piste (.) -merkkiä käytetään erottamaan rakenteisen tietolähteen yksittäiset elementit. Esimerkiksi nykyinen ER-mallin määritys sisältää **InvoiceTransactions**-tietolähteen, joka palauttaa tietueluettelon. **InvoiceTransactions**-tietuerakenne sisältää **AmountDebit**- ja **AmountCredit**-kentät, joista kumpikin palautta numeerisia arvoja. Tämän vuoksi voit suunnitella seuraavan lausekkeen laskutettavan summan laskemista varten: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. `InvoiceTransactions.AmountDebit`-rakenne tässä lausekkeessa on polku, jota käytetään **AmountDebit**-kentän **InvoiceTransactions**-tietolähteen *tietueluettelo*-tyyppiin pääsemiseksi.
 
@@ -130,7 +130,7 @@ Jäljellä oleva osa absoluuttisesta polusta näkyy myös [ER kaavaeditorissa](g
 
 ![ER-kaavan suunnittelijasivun absoluuttisen polun jäljellä oleva osa](./media/ER-FormulaLanguage-RelativePath2.png)
 
-## <a name="Functions">Toiminnot</a>
+## <a name=""></a><a name="Functions">Toiminnot</a>
 
 ER:n sisäänrakennettuja funktioita voidaan käyttää ER-lausekkeissa. Kaikkia lausekekontekstin (kuten nykyinen ER-mallin määritys tai ER-muoto) tietolähteitä voidaan käyttää kutsufunktioiden parametreina kutsufunktioargumenttien luettelon mukaisesti. Myös vakioita voidaan käyttää kutsufunktioiden parametreina. Esimerkiksi nykyinen ER-mallin määritys sisältää **InvoiceTransactions**-tietolähteen, joka palauttaa tietueluettelon. **InvoiceTransactions**-tietuerakenne sisältää **AmountDebit**- ja **AmountCredit**-kentät, joista kumpikin palautta numeerisia arvoja. Voit siis laskea laskutetun määrän suunnittelemalla seuraavan lausekkeen, jossa käytetään sisäänrakennettua ER-pyöristystoimintoa: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 

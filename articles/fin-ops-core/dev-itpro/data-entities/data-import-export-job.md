@@ -3,7 +3,7 @@ title: Tietojen tuonti- ja vientityöt – yleiskatsaus
 description: Tietojenhallinnan työtilan avulla voit luoda ja hallita tietojen tuonti- ja vientitehtäviä.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124609"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278895"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Tietojen tuonti- ja vientityöt – yleiskatsaus
 
@@ -151,6 +151,18 @@ Suorituksen tiedoissa näkyy kunkin työn käsittelemän tietoyksikön tila. Nä
 Voit ladata vientitöiden väliaikaiset tiedot tiedostona, tai voit ladata ne pakettina tuonti- ja vientitöitä varten.
 
 Voit avata suoritustiedoista suorituslokin.
+
+## <a name="parallel-imports"></a>Rinnakkaistuonnit
+Voit nopeuttaa tietojen tuontia, jolloin tiedoston tuonnin rinnakkaiskäsittely voidaan ottaa käyttöön, jos yksikkö tukee rinnakkaistuontia. Jos haluat määrittää entiteetin rinnakkaistuonnin, seuraavia vaiheita on noudatettava.
+
+1. Valitse **Järjestelmänhallinta \> Työtilat \> Tietojen hallinta**.
+2. Avaa **Tietojen tuonti- ja vientikehyksen parametrit** -sivu valitsemalla **Tuonti-/vienti**-osasta **Framework-parametri** -ruutu.
+3. Avaa **Entiteetin tuonnin suoritus parametrit** -sivu valitsemalla **Entiteetin asetukset** -välilehdestä **Määritä yksikön suoritus parametrit**.
+4. Määritä kohteen rinnakkaistuonti määrittämällä seuraavat kentät:
+
+    - Valitse yksikkö **Yksikkö**-kentässä.
+    - Kirjoita **Tuonnin kynnystietueiden määrä** -kenttään tuonnin kynnystietueiden määrä. Tämä määrittää, mitä tietuemäärää säie käsittelee. Jos tiedostossa on 10 000 tietuetta, tietueiden määrä on 2 500 ja tehtävän määrä 4 merkitsee, että kukin säie käsittelee 2 500 tietuetta.
+    - Syötä **Tuontitehtävien määrä** -kenttään tuontitehtävien määrä. Tämä ei saa ylittää eräkäsittelyn enimmäiseräsäikeitä **Järjestelmänhallinnan \>Palvelinmäärityksissä**.
 
 ## <a name="clean-up-the-staging-tables"></a>Tyhjennä väliaikaiset taulut
 Platform update 29 -versiosta alkaen tämä toiminto on vanhentunut. Tämä korvataan uudella versiolla, joka on kuvattu alla olevassa työhistorian puhdistustoiminnoissa.

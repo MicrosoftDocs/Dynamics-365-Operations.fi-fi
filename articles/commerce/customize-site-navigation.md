@@ -3,7 +3,7 @@ title: Sivuston selauksen mukauttaminen
 description: Tässä ohjeaiheessa kerrotaan, miten luodaan mukautettu online-siirtymishierarkia, jonka avulla tuotteita voidaan järjestellä Microsoft Dynamics 365 Commerce -sivuston selaamista varten.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ae7696dcb5cdd99cd46b89ed1de1b03c16146e2d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001826"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269656"
 ---
 # <a name="customize-site-navigation"></a>Sivuston selauksen mukauttaminen
 
@@ -93,7 +93,7 @@ Voit lisätä siirtymisvalikkoon mukautettuja siirtymisvaihtoehtoja seuraavasti.
 1. Valitse ominaisuusruudun **Tiedot**-välilehdessä **Lisää nimike**, jos haluat luoda uuden sisällönhallintajärjestelmän (CMS) siirtymisnimikkeen.
 1. Anna linkin teksti ja URL-osoite.
 1. Toista vaiheet 2 ja 3 ja lisää mukautettuja siirtymisvaihtoehtoja.
-1. Kun olet valmis, tallenna malli tai osa ja kuittaa se sisään.
+1. Kun olet valmis, tallenna malli tai osa valitsemalla **Tallenna** ja tarkista se sitten valitsemalla **Viimeistele muokkaus**.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

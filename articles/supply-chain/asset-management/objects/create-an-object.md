@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f734def69ff50549acae1506015ce9b23a1b8a93
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5c77f32caad5e2e79cbc0e21f72a3daa79acecb
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209901"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274162"
 ---
 # <a name="create-an-asset"></a>Luo resurssi
 
@@ -38,13 +38,13 @@ Tässä ohjeaiheessa kerrotaan, miten resurssi luodaan resurssien hallinnassa.
 3. Lisää **Luo resursseja** -valintaikkunaan tiedot koskien **resurssia** (resurssin tunnus) ja resurssin nimeä. Valitse resurssille päivämäärä ja aika **Voimassa**-kentässä. Kyseisestä päivästä eteenpäin voit asentaa resurssin toiminnalliseen sijaintipaikkaan sekä siirtää ja korvata resurssin resurssirakenteessa.
 4. Valitse **resurssityyppi** -kentässä resurssin tyyppi (pakollinen kenttä). Valitse tarvittaessa **resurssin valmistaja** ja **resurssin malli**. Jos vain yksi tuote on määritetty, kyseinen tuote valitaan automaattisesti **resurssin valmistaja** -kentässä. **Resurssin valmistaja**- ja **Resurssin malli** -kentissä käytettävissä olevat valinnat määräytyvät [resurssin valmistajien ja mallien](../setup-for-objects/product-and-model.md) asetusten mukaan.
 5. **Ylätason resurssi** -ryhmässä **Resurssi**-kenttä on tyhjä oletusarvona. Voit tarvittaessa valita ylätason resurssin ja täyttää kaikki **Ylätason resurssi** -ryhmän kentät automaattisesti.
->[!NOTE]  
->Kun valitset ylätason resurssin, käytettävissä on kaksi tai kolme välilehteä: **Omat resurssit** -väliehti sisältää resurssit, jotka liittyvät toiminnallisiin sijainteihin, joihin sinut voidaan (järjestelmään kirjautuneena kunnossapitotyöntekijänä) kohdistaa. Jos [Ylläpitotyöntekijät ja työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md) -lomakkeessa ei ole määritetty toiminnallisia sijainteja ylläpitotyöntekijälle, **Omat resurssit** -välilehti ei ole näkyvissä. **Aktiiviset resurssit** -välilehti sisältää luettelon kaikista resursseista, joiden elinkaaritila on Aktiivinen. **Resurssinäkymä** -väli ehdessä näkyy puunäkymä toiminnallisista sijainneista ja näihin sijainteihin asennetuista resursseista.
+    >[!NOTE]  
+    >Kun valitset ylätason resurssin, käytettävissä on kaksi tai kolme välilehteä: **Omat resurssit** -väliehti sisältää resurssit, jotka liittyvät toiminnallisiin sijainteihin, joihin sinut voidaan (järjestelmään kirjautuneena kunnossapitotyöntekijänä) kohdistaa. Jos [Ylläpitotyöntekijät ja työntekijäryhmät](../setup-for-objects/workers-and-worker-groups.md) -lomakkeessa ei ole määritetty toiminnallisia sijainteja ylläpitotyöntekijälle, **Omat resurssit** -välilehti ei ole näkyvissä. **Aktiiviset resurssit** -välilehti sisältää luettelon kaikista resursseista, joiden elinkaaritila on Aktiivinen. **Resurssinäkymä** -väli ehdessä näkyy puunäkymä toiminnallisista sijainneista ja näihin sijainteihin asennetuista resursseista.
 
 6. Määritetty toiminnallinen oletussijainti on ehdotettu resurssille  **Resurssi**-ryhmän **Toiminnallinen sijainti** -kentässä. Valitse tarvittaessa toinen toiminnallinen sijainti.
 
->[!NOTE]
->Kun olet luonut resurssin, voit asentaa sen toiseen toimintosijaintiin tarvittaessa. Vain ylimmän tason resurssit (resurssit, joilla ei ole tällä hetkellä pääresurssia) voidaan asentaa toiminnallisessa sijainnissa. Tämä tarkoittaa, että asennat valittuun toimintosijaintiin ylimmän tason sekä mahdolliset aliresurssit. Lisätietoja resurssien asentamisesta toiminnallisiin sijainteihin on kohdassa [Toiminnallisten sijaintien esittely](../functional-locations/introduction-to-functional-locations.md).
+    >[!NOTE]
+    >Kun olet luonut resurssin, voit asentaa sen toiseen toimintosijaintiin tarvittaessa. Vain ylimmän tason resurssit (resurssit, joilla ei ole tällä hetkellä pääresurssia) voidaan asentaa toiminnallisessa sijainnissa. Tämä tarkoittaa, että asennat valittuun toimintosijaintiin ylimmän tason sekä mahdolliset aliresurssit. Lisätietoja resurssien asentamisesta toiminnallisiin sijainteihin on kohdassa [Toiminnallisten sijaintien esittely](../functional-locations/introduction-to-functional-locations.md).
 
 7. Valitse **OK**.
 8. Valitse resurssi **Kaikki resurssit** -luettelosta ja valitse **Muokkaa** -painike lisätäksesi lisätietoja resurssiin.

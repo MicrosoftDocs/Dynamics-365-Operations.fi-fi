@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a09b90c19d8d4fe5d08abc892ed0c42d9d4592d8
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a594bacb1fcf53ae4a278dbb26f1de174e22288c
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211718"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275599"
 ---
 # <a name="schedule-work-orders"></a>Ajoita työtilauksia
 
@@ -102,14 +102,14 @@ Jos palvelutason pisteet nostetaan lukuun 100 5:n sijasta, ajoitusjärjestys on:
 
 Työtilausten työntekijöiden laskennassa käytettävät luokituspisteet määritetään luvuiksi, jotka lisätään kuhunkin huoltotyön tekijän laskentaan työtilauksen ajoituksessa. Työtilauksessa valitaan huoltotyöntekijä, jolla on korkein pistemäärä. Seuraavassa on lyhyt kuvaus kunnossapitotyöntekijän tuloksista:
 
-| Ylläpitotyöntekijän pistemäärä       | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vastaava työntekijä | Jos kunnossapitotyöntekijä on valittu työtilauksen vastuulliseksi työntekijäksi, tulos lisätään.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Vastuullinen ylläpitotyöntekijöiden ryhmä | Jos kunnossapitotyöntekijä on valittu osaksi työtilauksen vastuullista työntekijäryhmää, tulos lisätään.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Ensisijainen ylläpitotyöntekijä         | Jos työntekijä on valittu resurssin ensisijaiseksi työntekijäksi, tulos lisätään.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Ensisijainen ylläpitotyöntekijöiden ryhmä   | Jos työntekijä on valittu osaksi resurssin ensisijaista työntekijäryhmää, tulos lisätään.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Toimipaikka                 | Jos yrityksessä käytetään toiminnallisia sijainteja, ylläpitotyöntekijät saavat täydet pisteet, jos ne sijaitsevat resurssiin liittyvässä toiminnallisessa sijainnissa. Jos resurssin toiminnallisella sijainnilla on pääsijainti, kyseisen toimintasijainnin ylläpitotyöntekijät saavat puolet pisteistä. Jos kyseisessä sijainnissa on myös ylätaso, kyseisessä sijainnissa olevat ylläpitotyöntekijät saavat 1/3 pisteistä. Jos kyseisessä sijainnissa on myös ylätaso, kyseisessä sijainnissa olevat ylläpitotyöntekijät saavat 1/4 pisteistä jne. Jos yrityksessä käytetään resurssin sijaintia, jota ei suositella, sijaisntipisteet lasketaan sijainnin, alueen ja vyöhykkeen mukaan. Työntekijät saavat täydet pisteet, jos ne sijaitsevat resurssiin liittyvässä sijainnissa ja alueella sekä vyöhykkeellä. Jos työntekijän sijainti vastaa vain sijaintia ja aluetta, ylläpitotyöntekijän luokituspisteet ovat 2/3 täysistä pisteistä. Jos ylläpitotyöntekijän sijainti vastaa vain sijaintia, ylläpitotyöntekijän luokituspisteet ovat 1/3 täysistä pisteistä. |
-| Työntekijän aloituspäivämäärä               | Jokaiselle päivälle, jonka suunniteltu alkamispäivämäärä on myöhempi kuin odotettu alkamispäivämäärä, tulos vähennetään.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Ylläpitotyöntekijän pistemäärä| Kuvaus |
+|---|---|
+| Vastaava työntekijä | Jos kunnossapitotyöntekijä on valittu työtilauksen vastuulliseksi työntekijäksi, tulos lisätään. |
+| Vastuullinen ylläpitotyöntekijöiden ryhmä | Jos kunnossapitotyöntekijä on valittu osaksi työtilauksen vastuullista työntekijäryhmää, tulos lisätään. |
+| Ensisijainen ylläpitotyöntekijä         | Jos työntekijä on valittu resurssin ensisijaiseksi työntekijäksi, tulos lisätään. |
+| Ensisijainen ylläpitotyöntekijöiden ryhmä   | Jos työntekijä on valittu osaksi resurssin ensisijaista työntekijäryhmää, tulos lisätään.  |
+| Toimipaikka  | Jos yrityksessä käytetään toiminnallisia sijainteja, ylläpitotyöntekijät saavat täydet pisteet, jos ne sijaitsevat resurssiin liittyvässä toiminnallisessa sijainnissa. Jos resurssin toiminnallisella sijainnilla on pääsijainti, kyseisen toimintasijainnin ylläpitotyöntekijät saavat puolet pisteistä. Jos kyseisessä sijainnissa on myös ylätaso, kyseisessä sijainnissa olevat ylläpitotyöntekijät saavat 1/3 pisteistä. Jos kyseisessä sijainnissa on myös ylätaso, kyseisessä sijainnissa olevat ylläpitotyöntekijät saavat 1/4 pisteistä jne. Jos yrityksessä käytetään resurssin sijaintia, jota ei suositella, sijaisntipisteet lasketaan sijainnin, alueen ja vyöhykkeen mukaan. Työntekijät saavat täydet pisteet, jos ne sijaitsevat resurssiin liittyvässä sijainnissa ja alueella sekä vyöhykkeellä. Jos työntekijän sijainti vastaa vain sijaintia ja aluetta, ylläpitotyöntekijän luokituspisteet ovat 2/3 täysistä pisteistä. Jos ylläpitotyöntekijän sijainti vastaa vain sijaintia, ylläpitotyöntekijän luokituspisteet ovat 1/3 täysistä pisteistä. |
+| Työntekijän aloituspäivämäärä  | Jokaiselle päivälle, jonka suunniteltu alkamispäivämäärä on myöhempi kuin odotettu alkamispäivämäärä, tulos vähennetään.  |
 
 >[!NOTE]
 >Jos tulokseksi määrityetään 0, tätä pistettä ei lasketa. Tästä on hyötyä esimerkiksi silloin, kun et halua sisällyttää aikataulutukseen vastaavaa työntekijää.
@@ -120,3 +120,21 @@ Osaamisalueiden ja sertifikaattien vaatimukset voidaan määrittää ylläpitoty
 
 Kunnossapitotöiden tyypit ja kunnossapitotöiden toimialat valitaan työtilaustöille. Jos osaamislaueet tai sertifikaatit on valittu kunnossapitotöiden tyypille tai kunnossapitotöiden toimialalle ja jos kyseistä kunnossapitotyön tyyppiä tai kunnossapitotyön toimialaa on käytetty työtilaustyössä, vain osaamisalueissa ja sertifikaateissa vastaavat huoltotyö tekijät on ajoitetaan työskentelemään työtilaukselle.
 
+<a name="gantt"></a>
+
+## <a name="work-with-scheduled-work-orders-using-a-gantt-chart"></a>Ajoitettujen työtilausten käsitteleminen Gantt-kaavion avulla
+
+**Ajoitetut työtilaukset Gantt-kaaviossa** tarjoaa graafisen käyttöliittymän, jossa voit tarkastella ja ajoittaa työtilauksia uudelleen.
+
+Gantt-kaavion tarkasteleminen ja käsitteleminen:
+
+1. Siirry kohtaan **Käyttöomaisuuden hallinta > työtilaukset > ajoitettujen työtilausten Gantt-kaavio**.
+
+1. **Asetukset**-osan avattavien luetteloiden ja kenttien avulla voit määrittää Gantt-kaaviossa näytettävän toimintosijainnin, aikavälin ja aika-asteikon.
+
+1. Valitse **Käytä**.
+
+    - Gantt-kaavio päivittyy siten, että se näyttää asetuksia vastaavat ajoitetut työtilaukset. Kutakin työtilausta edustaa sininen suorakulmio.
+    - Jos haluat ajoittaa näytössä olevan työtilauksen uudelleen, valitse ja vedä se sitten sopivaan uuteen päivämäärään ja kellonaikaan.
+
+1. Jos teit muutoksia, tallenna ne valitsemalla toimintoruudussa **Tallenna**.

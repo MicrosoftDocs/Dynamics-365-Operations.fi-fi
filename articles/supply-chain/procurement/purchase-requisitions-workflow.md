@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3d0b6c4ef9e6f21e1542bece9046e98edcab6b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5cbf313666e03c0006bee985bcf622a20ce4e51
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207830"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281506"
 ---
 # <a name="purchase-requisition-workflow"></a>ostoehdotuksen työnkulku
 
@@ -85,6 +85,9 @@ Tässä esimerkissä hankintapyyntölinjojen työnkulkuprosessi sisältää seur
 3.  Pyytäjän esimies tarkistaa ja hyväksyy hankintapyyntörivit. Hyväksyntä voidaan reitittää pyytäjän esimiehelle, jos esimerkiksi ostoehdotusrivin summa ylittää pyytäjän ostoehdotusrivejä koskevan kulutusrajan. Esimies voi hyväksyä tai hylätä yhden tai molemmat hankintapyyntörivit.
 4.  Markkinointiosaston johtaja tarkistaa sekä julisteita että T-paitoja koskevat ostoehdotusrivit. Myyntiosaston osastonjohtaja tarkistaa hankintapyyntörivin ainoastaan julisteille, koska se on ainoa meno johon veloitetaan myyntiosastolta.
 5.  Ryhmän esimies tarkistaa ja hyväksyy T-paitojen ostoehdotusrivin vain, jos hänen hyväksyntänsä tarvitaan esimerkiksi siksi, että ostoehdotusrivin summa ylittää osastopäällikön hyväksymisrajan. Ryhmän esimiehen ei tarvitse hyväksyä hankintapyyntöriviä julisteille.
+
+> [!NOTE]
+> Järjestelmävaluutta on määritettävä, jos ostoehdotuksen otsikon työnkulku edellyttää allekirjoitusrajoihin liittyviä hyväksyntöjä.
 
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Ostoehdotusten työnkulun määrittäminen
 Lähettääksesi hankintapyynnön tarkistettavaksi, sinun tulee määrittää hankintapyynnön työnkulkuprosessi. Määrittelemäsi työnkulkuprosessi ohjaa vuorovaikutusta käyttäjän, joka pyysi artikkeleita (pyytäjä) ja työnkulun tarkastajan sekä hyväksyjän välillä. Ostoehdotuksen reititys riippuu työnkulun konfiguraatiossa määritetyistä ehdoista. Nämä ehdot määrittävät esimerkiksi, milloin ostoehdotus määritetään, reitityksen kohteena olevan käyttäjän tai roolin sekä toiminnot, joita käyttäjät voivat suorittaa.  

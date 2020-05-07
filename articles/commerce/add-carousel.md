@@ -3,7 +3,7 @@ title: Karusellimoduuli
 description: Tässä ohjeaiheessa on tietoja karusellimoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f279d7db0a92df9e64b1d3f6ca01c65ca1478d79
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: f399e4c5618b65b781fdd3ec835e841614579313
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025778"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269725"
 ---
 # <a name="carousel-module"></a>Karusellimoduuli
 
@@ -58,9 +58,10 @@ Voit lisätä sisältölohkomoduuleja karusellimoduulin sisälle. Karusellimoduu
 
 Voit lisätä karusellimoduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Luo sivumalli, jonka nimi on **Karusellimalli**.
+1. Luo sivumalli valitsemalla **Uusi**.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **Karusellimalli** ja valitse sitten **OK**.
 1. Lisää **Teksti**-paikkaan **Oletussivu**-moduuli.
-1. Kirjaa malli sisään ja julkaise se. 
+1. Valitse **Lopeta muokkaus** tallentaaksesi mallin ja valitse sitten **Julkaise** julkaistaksesi sen.  
 1. Käytä juuri luotua karusellimallia, kun haluat luoda sivun nimeltä **Karusellisivu**.
 1. Lisää säilömoduuli uuden sivun **pääpaikkaan**. 
 1. Määritä oikeassa ruudussa **Leveys**-arvoksi **Täytä näyttö**.
@@ -68,14 +69,14 @@ Voit lisätä karusellimoduulin uudelle sivulle ja määrittää pakolliset omin
 1. Lisää sisältölohko karusellimoduuliin. Määritä sisältölohkomoduuliin ominaisuudet antamalla **Otsikko**-, **Linkki**-, **Asettelu**- ja muut ominaisuudet.
 1. Lisää ja määritä toinen sisältölohkomoduuli.
 1. Määritä karusellimoduulin lisäominaisuudet tarpeen mukaan.
-1. Tallenna ja esikatsele sivu. Sivulla pitäisi näkyä karuselli, jonka sisällä on kaksi moduulia (hero- ja ominaisuusmoduuli). Voit muuttaa karuselli-, hero- ja ominaisuusmoduulien lisäominaisuuksia halutun vaikutuksen aikaansaamiseksi.
-1. Kun sivun muokkaus on valmis, julkaise se.
+1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Sivulla pitäisi näkyä karuselli, jonka sisällä on kaksi moduulia (hero- ja ominaisuusmoduuli). Voit muuttaa karuselli-, hero- ja ominaisuusmoduulien lisäominaisuuksia halutun vaikutuksen aikaansaamiseksi.
+1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
 
-[Kampanjabannerimoduuli](add-alert.md)
+[Promopalkkimoduuli](add-alert.md)
 
 [Tekstilohkomoduuli](add-content-rich-block.md)
 

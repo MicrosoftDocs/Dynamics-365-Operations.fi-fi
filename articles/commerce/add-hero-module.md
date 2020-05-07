@@ -3,7 +3,7 @@ title: Sisältölohkomoduuli
 description: Tässä ohjeaiheessa on tietoja sisältölohkomoduuleista ja niiden lisäämisestä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f91de93ce5ed4813f9f2adbe7678229189b5af2f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: daf9193a7fdc3b57defbb3250ae902f6eb6ee6c4
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025755"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269679"
 ---
 # <a name="content-block-module"></a>Sisältölohkomoduuli
 
@@ -79,10 +79,10 @@ Seuraavassa kuvassa on esimerkki ominaisuusasettelua käyttävästä sisältölo
 
 Voit lisätä hero-moduulin uudelle sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Valitse **Mallit**ja luo sivumalli, jonka nimi on **sisältölohkomalli**.
+1. Valitse **Mallit**ja luo sivumalli, jonka nimi on **Sisältölohkomalli**.
 1. Lisää hero-moduuli oletussivun **pääpaikkaan**.
-1. Kirjaa malli sisään ja julkaise se.
-1. Luo **sisältölohkosivu**-niminen sivu käyttämällä juuri luotua hero-mallia.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
+1. Luo **Sisältölohkosivu**-niminen sivu käyttämällä juuri luotua hero-mallia.
 1. Valitse oletussivulla **pääpaikka**. Valitse kolmen pisteen painike (**...**) ja valitse sitten **Lisää moduuli**.
 1. Valitse **Lisää moduuli** -valintaikkunan **Valitse moduulit** -kohdassa hero-moduuli ja valitse sitten **OK**.
 1. Valitse vasemmanpuoleisen jäsennyspuun sisältölohkomoduuli.
@@ -93,14 +93,14 @@ Voit lisätä hero-moduulin uudelle sivulle ja määrittää pakolliset ominaisu
 1. Valitse **Lisää linkki**.
 1. Lisää **Linkki**-valintaikkunaan linkin teksti, linkin URL-osoite ja linkin ARIA-otsikko. Valitse sitten **OK**.
 1. Valitse **Hero**-asettelu.
-1. Tallenna sivu ja esikatsele muutokset.
-1. Kirjaa sivu sisään ja julkaise se.
+1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**.
+1. Valitse **Lopeta muokkaus** tallentaaksesi mallin ja valitse sitten **Julkaise** julkaistaksesi sen. 
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
 [Aloituspakkauksen yleiskatsaus](starter-kit-overview.md)
 
-[Kampanjabannerimoduuli](add-alert.md)
+[Promopalkkimoduuli](add-alert.md)
 
 [Karusellimoduuli](add-carousel.md)
 

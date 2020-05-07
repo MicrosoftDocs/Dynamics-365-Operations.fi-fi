@@ -3,7 +3,7 @@ title: Sivun tallentaminen, esikatseleminen ja julkaiseminen
 description: Tässä ohjeaiheessa kerrotaan, miten sivu tallennetaan, miten sitä esikatsellaan ja miten se julkaistaan Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 04200264fabca265484b5e66426810efe8028a50
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002807"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269978"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Sivun tallentaminen, esikatseleminen ja julkaiseminen
-
 
 [!include [banner](includes/banner.md)]
 
@@ -33,7 +32,7 @@ Tässä ohjeaiheessa kerrotaan, miten sivu tallennetaan, miten sitä esikatsella
 
 ## <a name="save-a-page"></a>Sivun tallentaminen
 
-Jos haluat tallentaa sivun, se on kuitattava ulos käyttäjälle ja avattava sivueditorissa. Tallenna sivu heti muokkaamisen jälkeen, jotta voit varmistaa, että tekemäsi muutokset tallennetaan.
+Jos haluat tallentaa sivun, se on kuitattava ulos käyttäjälle ja avattava sivueditorissa. Kuittaa tiedosto ulos valitsemalla komentopalkissa **Muokkaa**. Kun olet muokannut sivua, sinun tulee tallentaa se välittömästi, että tekemäsi muutokset tallennetaan.
 
 Kun tallennat sivun, muutokset näkyvät vain sinulle. Tallennustoiminto on tarkoitettu ensisijaisesti muutosten tallentamista varten silloin, kun sivu ei ole vielä valmis kuitattavaksi sisään. Kun sivun muokkaaminen on tehty, se kannattaa kirjata sisään. Tällöin muutokset näkyvät myös muille. Tässä vaiheessa myös muut käyttäjät voivat kirjata sivun ulos, jos heidän on muokattava sitä.
 
@@ -50,7 +49,7 @@ Kun sivun muokkaaminen on tehty, haluat ehkä esikatsella sen ja nähdä, millai
 
 ## <a name="publish-a-page"></a>Sivun julkaiseminen
 
-Kun sivu on valmis, seuraava vaihe on julkaista se. Tämän jälkeen ulkoiset käyttäjät voivat tarkastella sisältöä. Ennen kuin voit julkaista sivun, se on kirjattava sisään.
+Kun sivu on valmis, seuraava vaihe on julkaista se. Tämän jälkeen ulkoiset käyttäjät voivat tarkastella sisältöä. Ennen kuin voit julkaista sivun, sinun on tarkistettava se valitsemalla komentopalkissa **Lopeta muokkaus**.
 
 Voit julkaista sivun ja peruuttaa sen julkaisun sivun tarkistusohjelmassa tai sivueditorissa. Sivun tarkistusohjelmassa on sivuluettelo. Se mahdollistaa joukkotoiminnot. Sivueditoria voi käyttää vain yhden sellaisen sivun julkaisemisessa tai sivun julkaisun peruuttamisessa, joka on auki editorissa.
 
@@ -70,9 +69,9 @@ Voit tallentaa, esikatsella ja julkaista aloitussivun noudattamalla seuraavia oh
 1. Valitse **Sivustot**-kohdassa **Fabrikam** (tai sivuston nimi).
 1. Valitse vasemmanpuoleisessa siirtymisruudussa **Sivut**.
 1. Etsi ja valitse aloitussivu, joka avataan sivueditorissa.
-1. Valitse **Kirjaa ulos**.
+1. Valitse **Muokkaa**.
 1. Muokkaa sivua tarpeen mukaan.
-1. Valitse ensin **Tallenna** ja sitten **Kirjaa sisään**.
+1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
 1. Kirjoita **Kommentit**-kenttään tekemäsi muutosten huomautukset ja valitse **OK**.
 1. Esikatsele sivua valitsemalla **Esikatsele**. Kun olet valmis, palaa muokkaustyökaluun sulkemalla Esikatselu-välilehti.
 1. Valitse **Julkaise**.

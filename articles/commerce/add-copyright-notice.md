@@ -3,7 +3,7 @@ title: Copyright-ilmoituksen lisääminen
 description: Tässä ohjeaiheessa kerrotaan, miten voit lisätä sähköisen kaupankäynnin sivustoon copyright-ilmoituksen.
 author: psimolin
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: a2ed52dbd19508e07fcced92a7fad831180b1d1d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025479"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269587"
 ---
 # <a name="add-a-copyright-notice"></a>Copyright-ilmoituksen lisääminen
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,12 +50,12 @@ Voit lisätä copyright-ilmoituksen jokaisen tiettyä mallia käyttävän sivun 
 1. Valitse valintaikkunassa **Tekstilohko** ja valitse sitten **OK**.
 1. Valitse siirtymisruudussa **Tekstilohko**.
 1. Lisää oikealla olevassa ominaisuusruudussa **Kappale**-kenttään copyright-sanoma. Syötä esimerkiksi teksti **(C) Fabrikam 2019**.
-1. Valitse **Tallenna**. Valitse **Kirjaa sisään** ja valitse sitten **Julkaise**.
-1. Siirry **Mallit**-kohtaan, valitse malli ja valitse sitten **Kirjaa ulos**.
+1. Valitse **Tallenna**. Valitse **Lopeta muokkaus** ja valitse sitten **Julkaise**.
+1. Siirry **Mallit**-kohtaan, valitse malli ja valitse sitten **Muokkaa**.
 1. Laajenna **Sivun jäsennys** -kohdassa **Tekstiosa** ja laajenna sitten **Oletussivu**-kohta.
 1. Valitse **Ylätunnistepaikka**-kohdan vieressä oleva kolmen pisteen painike ja valitse sitten **Lisää osa**.
 1. Valitse aiemmin luomasi osa ja valitse sitten **Valitse**.
-1. Kirjaa malli sisään ja julkaise se.
+1. Valitse **Lopeta muokkaus** tallentaaksesi mallin ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 Copyright-ilmoituksen sisältävä alatunniste näkyy automaattisesti kaikkien valittua mallia käyttävien sivujen alaosassa.
 

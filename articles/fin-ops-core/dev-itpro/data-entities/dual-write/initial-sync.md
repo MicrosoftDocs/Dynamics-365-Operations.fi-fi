@@ -19,22 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 4adb2c8d57ad8f67346b8d34212b7a4b0bd052ab
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 9ae14703941b97308bca5845eeac3eb9b181ae75
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173128"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275484"
 ---
 # <a name="entity-dependency-chain-synchronization-order"></a>Yksikön riippuvuusketju (synkronointijärjestys)
 
 [!include [banner](../../includes/banner.md)]
 
-
-
-Seuraavissa tauluissa yksiköt ovat siinä järjestyksessä, missä ne on otettava käyttöön. Kun otat käyttöön kartan ensimmäistä synkronointia varten, kaksoiskirjoitus havaitsee automaattisesti muut käytössä olevat kartat. Finance and Operations -sovellusten **Kaksoiskirjoitussivun** avulla voit valita tai peruuttaa yksiköiden valinnan alkuperäisen synkronoinnin aikana.
-
-Kaksoiskirjoituksen uusimmassa versiossa voit ottaa käyttöön vain joitakin yksiköitä, ja riippuvuudet käsitellään puolestasi.
+Tämä ohjeaihe määrittää synkronoinnin järjestyksen, jota on noudatettava, kun alkutiedot luodaan, jos et käytä **alkuperäinen synkronointi** -toiminnon määrittämiä yksikköriippuvuuksia. Jos et käytä **alkuperäinen synkronointi** -vaihtoehtoa, sinun on suoritettava kukin yksikön yhdistämistoiminto yksitellen.
 
 ## <a name="dynamics-365-supply-chain-management-entities"></a>Dynamics 365 Supply Chain Management -yksiköt
 

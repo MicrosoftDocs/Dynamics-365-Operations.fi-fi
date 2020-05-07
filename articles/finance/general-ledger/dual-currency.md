@@ -3,7 +3,7 @@ title: Kaksoisvaluutta
 description: Tässä ohjeaiheessa käsitellään kaksoisvaluuttaa eli tilannetta, jossa raportointivaluuttaa käytetään Microsoft Dynamics 365 Financen toisena kirjanpitovaluuttana.
 author: kweekley
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249008"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270309"
 ---
 # <a name="dual-currency"></a>Kaksoisvaluutta
 
@@ -174,10 +174,10 @@ Myös poistoprosessiin on tehty merkittäviä muutoksia. Nämä muutokset edelly
 
         | Käyttöomaisuus | Kirja      | Tapahtumalaji | Tapahtuman päivämäärä | Valuutta | Summa tapahtuman valuuttana | Määrä  | Vaihtokurssi | Raportointivaluuttasumma |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
-        | BUIL-00001  | 200\_SLLT | Hankinta      | 6/3/2016         | DKK      | 1 000 000                      | 500,000 | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Poisto     | 6/3/2016         | DKK      | 50 000                         | 50 000  | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Poisto     | 6/3/2016         | DKK      | 50 000                         | 50 000  | 2,5       | 250,000                   |
-        | BUIL-00001  | 200\_SLLT | Poisto     | 6/3/2016         | DKK      | 50 000                         | 50 000  | 2,5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Hankinta      | 6/3/2016         | DKK      | 1 000 000                      | 500,000 | 2.5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Poisto     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Poisto     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Poisto     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
 
     - Monet asiakkaat seuraavat käyttöomaisuustapahtuman tietoja laskentataulukoissa. Näitä tietoja ovat esimerkiksi vaihtokurssit ja summat. Jos nämä tiedot ovat laskentataulukossa, voit luoda mukautetun valuuttakurssin tyypin ja päivittää sen laskentataulukon vaihtokursseilla. Tämän vaihtokurssin tyypin avulla kirjataan sitten hankintapäivän oletusvaihtokurssi ja lasketaan raportointivaluuttasumma. Jos vaihtokurssin tyyppiä ei ole valittu, ohjattu toiminto käyttää kirjanpidossa määritettyä vaihtokurssin tyyppiä.
     - Vaihtokurssia ja raportointivaluutan summia voi muuttaa. Jos vaihtokurssia muutetaan, raportointivaluutan summa lasketaan uudelleen uuden kurssin perusteella.

@@ -3,7 +3,7 @@ title: Esimääritettyjen asettelujen käyttö
 description: Tässä ohjeaiheessa käsitellään esimääritettyjen asettelujen käsittelemistä Microsoft Dynamics 365 Commercessa.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c8149c6e443c77dabfa641a698c931176bedbc98
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002633"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269886"
 ---
 # <a name="work-with-preset-layouts"></a>Esimääritettyjen asettelujen käyttö
 
@@ -44,7 +44,7 @@ Esimääritetty asettelu voidaan luoda kahdella eri tavalla. Voit tallentaa aiem
 Voit luoda esimääritetyn asettelun aiemmin luodusta mukautetusta asettelusta seuraavasti.
 
 1. Avaa aiemmin luotu sivu, joka ei tällä hetkellä käytä esimääritettyä asettelua ja jonka moduulirakennetta haluat käyttää muilla sivuston sivuilla.
-1. Valitse **Kirjaa ulos**.
+1. Valitse **Muokkaa** tarkistaaksesi sivun.
 1. Valitse **Tallenna uutena asetteluna**. **Tallenna uutena asetteluna** -valintaikkuna tulee näkyviin.
 1. Kirjoita esimääritetyn asettelun nimi ja kuvaus. Syöttämäsi arvot näkyvät muille tekijöille, kun ne luovat uusia sivuja asettelusta tai siirtyvät siihen. Anna sen vuoksi arvoja, joista on hyötyä sivujen tekijöille.
 1. Valitse **OK**.
@@ -91,14 +91,14 @@ Seuraavalla tavalla voit määrittää kaikkien niiden alisivujen teeman, jotka 
 Voit tallentaa esimääritetyn asettelun ja kirjata sen sisään seuraavasti.
 
 1. Valitse **Tallenna** asettelueditorin yläosassa. Tallennetut muutokset eivät vaikuta verkosta tietoja lataaviin sivuihin, ennen kuin ne on kuitattu sisään.
-1. Valitse **Kirjaa sisään**. Tekemäsi muutokset ovat nyt verkosta tietoja lataavien työnkulkujen löydettävissä.
+1. Valitse **Viimeistele muokkaus**. Tekemäsi muutokset ovat nyt verkosta tietoja lataavien työnkulkujen löydettävissä.
 
 Voit esikatsella muutoksia avaamalla olemassa olevan esimääritettyä asettelua käyttävän sivun tai luomalla uuden sivun asettelusta.
 
 Kun olet esikatsellut esimääritettyyn asetteluun tehdyt muutokset, julkaise asettelu live-sivustossa jonkin seuraavan vaiheen avulla.
 
 * Siirry **Asettelut**-kohtaan, valitse asettelu ja valitse sitten **Julkaise**.
-* Valitse asettelueditorissa **Julkaise**.
+* Valitse asettelun nimi avataksesi asettelueditorin ja valitse sitten **Julkaise**.
 * Julkaise sivu, joka viittaa julkaisemattomaan asetteluun. Asettelu julkaistaan automaattisesti.
 
 > [!WARNING]

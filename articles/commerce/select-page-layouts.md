@@ -3,7 +3,7 @@ title: Sivun asettelujen valitseminen
 description: Tässä ohjeaiheessa käsitellään sivun asetteluiden luomista ja valitsemista Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a3e8efcdc236911ac79007c606d5d1da56f6c424
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0cbcba7ce4f40298e0f2665fa811b125f11e9490
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002771"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269909"
 ---
 # <a name="select-page-layouts"></a>Sivun asettelujen valitseminen
 
@@ -39,7 +39,7 @@ Tässä ohjeaiheessa käsitellään sivun asetteluiden luomista ja valitsemista 
 Voit luoda asetteluita aiemmin luodulle sivulle seuraavasti.
 
 1. Siirry **Sivut**-kohtaan ja etsi luettelosta aiemmin luotu sivu. Käytä hakutoimintoa tarpeen mukaan.
-1. Valitse sivu, kuittaa se ulos ja avaa se valitsemalla se. Kirjoita moduulijärjestys muistiin.
+1. Valitse sivu, valitse **Muokkaa** tarkistaaksesi sen ja avaa sivu valitsemalla sen nimen. Kirjoita moduulijärjestys muistiin.
 1. Valitse **Tallenna uutena asetteluna**.
 1. Kirjoita asettelun nimi ja valitse **OK**.
 1. Valitse **Muunna upotetuksi asetteluksi**.
@@ -47,6 +47,7 @@ Voit luoda asetteluita aiemmin luodulle sivulle seuraavasti.
 1. Valitse **Tallenna uutena asetteluna**.
 1. Kirjoita asettelun nimi ja valitse **OK**.
 1. Valitse **Muuta asettelua**. Valitse ensimmäinen luomasi asettelu ja valitse sitten **OK**. Kirjoita moduulijärjestys muistiin. Muuta sitä niin, että se vastaa asettelun kanssa tallennettua moduulijärjestystä.
+1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen. 
 
 ## <a name="select-a-different-layout-for-an-existing-page"></a>Valitse olemassa olevalle sivulle toinen asettelu
 
@@ -56,9 +57,10 @@ Voit luoda asetteluita aiemmin luodulle sivulle seuraavasti.
 Voit valita toisen asettelun aiemmin määritetylle sivulle seuraavasti.
 
 1. Siirry **Sivut**-kohtaan ja etsi luettelosta aiemmin luotu sivu. Käytä hakutoimintoa tarpeen mukaan.
-1. Valitse sivu, kuittaa se ulos ja avaa se valitsemalla se.
+1. Valitse sivu, valitse **Muokkaa** tarkistaaksesi sen ja avaa sivu valitsemalla sen nimen.
 1. Valitse **Muuta asettelua**.
 1. Valitse sivun uusi asettelu ja valitse sitten **OK**. Sivueditori päivittyy ja näkyvissä on uusi asettelu.
+1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

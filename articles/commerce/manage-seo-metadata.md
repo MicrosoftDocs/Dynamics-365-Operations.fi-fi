@@ -3,7 +3,7 @@ title: SEO-metatietojen hallinta
 description: Tässä ohjeaiheessa kerrotaan, miten hakukoneoptimoinnin metatietoja hallitaan Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e7da7bf5c473746413e92babfa943f546b7724d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003461"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270047"
 ---
 # <a name="manage-seo-metadata"></a>SEO-metatietojen hallinta
 
@@ -72,13 +72,10 @@ Voit muokata sivun metatietoja seuraavasti.
 1. Valitse **Sivustot**-kohdassa **Fabrikam** (tai sivuston nimi).
 1. Valitse vasemmanpuoleisessa siirtymisruudussa **Sivut**.
 1. Valitse aloitussivu, joka avataan sivueditorissa.
-1. Valitse toimintoruudussa **Kuittaa ulos**.
+1. Valitse komentopalkissa **Muokkaa**.
 1. Laajenna oikeanpuoleisessa ominaisuusruudussa **Oletusmetatunnukset**-kohta.
-1. Jos haluat lisätä uuden metatunnuksen, valitse **Lisää**ja kirjoita sitten tunnus kenttään.
-
-    Jos haluat poistaa olemassa olevan metatunnuksen, valitse sen oikealla puolella oleva roskakorisymboli.
-
-1. Valitse ensin **Tallenna** ja sitten **Kirjaa sisään**.
+1. Jos haluat lisätä uuden metatunnuksen, valitse **Lisää**ja kirjoita sitten tunnus kenttään. Jos haluat poistaa olemassa olevan metatunnuksen, valitse sen oikealla puolella oleva roskakorisymboli.
+1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
 1. Syötä **Kommentit**-kenttään **Päivitetyt metatunnukset** ja valitse **OK**.
 1. Esikatsele sivua valitsemalla **Esikatsele**. Kun olet valmis, palaa muokkaustyökaluun sulkemalla Esikatselu-välilehti.
 1. Valitse **Julkaise**.

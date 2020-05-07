@@ -3,7 +3,7 @@ title: Arvonlisäveromaksut ja pyöristyssäännöt
 description: Tässä artikkelissa kerrotaan, miten ALV-viranomaisten pyöristyssäännön määrittäminen toimii, ja miten arvonlisäverosaldo pyöristetään arvonlisäverotyön arvonlisäveron selvityksen ja kirjauksen aikana.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771749"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275671"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Arvonlisäveromaksut ja pyöristyssäännöt
 
@@ -43,26 +43,26 @@ Kauden arvonlisävero näyttää hyvityssaldoksi -98 765,43. Yritys on perinyt a
 
 Yritys haluaa käyttää pyöristysmenetelmää, joka pyöristää saldon lähimpään 1,00 euroon. Alv-kirjanpidosta vastaava käyttäjä tekee seuraavat toimet:
 
-1.  Valitse Vero &gt; Välilliset verot &gt; Arvonlisävero &gt; Alv-viranomaiset.
-2.  Valitse Yleinen-pikavälilehdessä Pyöristystapa-kentästä Normaali.
-3.  Syötä Pyöristys-kenttään arvoksi 1,00.
-4.  Kun arvonlisävero täytyy maksaa, avaa Tilitä ja kirjaa arvonlisävero -sivu. (Valitse Vero &gt; Ilmoitukset &gt; Arvonlisävero &gt; Tilitä ja kirjaa arvonlisävero.)
-5.  Arvonlisäveron maksutilillä oleva alv-velka (98 765,43) pyöristetään arvoon 98 765.
+1. Valitse **Vero** > **Välilliset verot** > **Arvonlisävero** > **Alv-viranomaiset**.
+2. Valitse **Yleinen**-pikavälilehdessä **Pyöristystapa**-kentästä **Normaali**.
+3. Syötä **Pyöristys**-kenttään arvoksi 1,00.
+4. Kun arvonlisävero täytyy maksaa veroviranomaisille, avaa **Verot** > **Ilmoitukset** > **arvonlisävero** > **Vahvista ja kirjaa arvonlisävero**. Voit nähdä, että arvonlisäveron maksutilillä oleva alv-velka **98 765,43** pyöristetään arvoon **98 765**.
 
-Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään käyttämällä kutakin Alv-viranomaiset-sivulla Pyöristystapa-kentästä valittavissa olevaa pyöristysmenetelmää.
+Seuraavassa taulukossa on esitetty, miten summa 98 765,43 summa pyöristetään käyttämällä kutakin **Alv-viranomaiset**-sivulla **Pyöristystapa**-kentästä valittavissa olevaa pyöristysmenetelmää.
 
-| Pyöristystapavaihtoehto                | Pyöristysarvo = 0,01 | Pyöristysarvo = 0,10 | Pyöristysarvo = 1,00 | Pyöristysarvo = 100,00 |
-|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|
-| Normaali                              | 98 765,43              | 98 765,40              | 98 765,00              | 98 800,00                |
-| Alaspäin                            | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Pyöristys                         | 98 765,43              | 98 765,50              | 98 766,00              | 98 800,00                |
-| Oma etu, maksettavien saldo | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Oma etu, saatavien saldo  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
+> [!NOTE]                                                                                  
+> Jos pyöristysarvo on määritetty arvoon 0,00, toimi seuraavasti:
+>
+> - Pyöristyksessä pyöristyskäyttäytyminen on sama kuin **pyöristyksessä = 0,01**.
+> - **Pyöristyslomakkeen vaihtoehdot**, **alaspäin**, **pyöristäminen** ja **oma etu**, käyttäytyvät samoin kuin **pyöristys = 1,00**.
 
-
-### <a name="no-rounding-at-all-since-the-round-off-is-000"></a>Ei pyöristystä, koska pyöristys on 0,00
-
-round(1.0151, 0.00) = 1.0151 round(1.0149, 0.00) = 1.0149
+| Pyöristystapavaihtoehto                | Pyöristysarvo = 0,01 | Pyöristysarvo = 0,10 | Pyöristysarvo = 1,00 | Pyöristysarvo = 100,00 | Pyöristysarvo = 0,00   |
+|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| Normaali                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
+| Alaspäin                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Pyöristys                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+| Oma etu, maksettavien saldo | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Oma etu, saatavien saldo  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normaali pyöristys ja pyöristyksen tarkkuus on 0,01
 

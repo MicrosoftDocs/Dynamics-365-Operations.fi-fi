@@ -3,7 +3,7 @@ title: Helppokäyttöisyyden toiminnot ja ominaisuudet
 description: Tässä ohjeaiheessa tietoja helppokäyttöominaisuuksista ja -toiminnoista Microsoft Dynamics 365 Commercein eri versioissa.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3edc6250dd5438be31d80a9d6b0f3b730438ca53
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001757"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274185"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Helppokäyttöisyyden toiminnot ja ominaisuudet
 
@@ -57,7 +57,7 @@ Dynamics 365 Commercen digitaalisten resurssien hallintajärjestelmä tukee usei
 
 ### <a name="configure-video-accessibility-elements"></a>Videon helppokäyttötoimintojen määrittäminen
 
-Dynamics 365 Commerce -sivuston **Resurssit**-osiossa voit ladata videoresursseja, joissa on erilliset tiedostot, kuten tekstitys, tavallinen ääni ja kuvaava ääni. Tekstitys voidaan luoda myös automaattisesti, kun videoresurssi ladataan.
+Commerce-sivuston **Mediakirjasto**-osiossa voit ladata videoresursseja, joissa on erilliset tiedostot, kuten tekstitys, tavallinen ääni ja kuvaava ääni. Tekstitys voidaan luoda myös automaattisesti, kun videoresurssi ladataan.
 
 #### <a name="generate-or-upload-closed-caption-files-during-video-asset-upload"></a>Luo tai lataa suljettuja tekstitystiedostoja videoresurssien lataamisen aikana
 
@@ -72,7 +72,7 @@ Seuraa tätä vaihetta, jos haluat ladata tekstitystiedoston manuaalisesti, kun 
 Jos haluat ladata videolle tavallisia ääni- tai kuvaavia äänitiedostoja, käytä **Resurssien lataaminen** -valintaikkunassa olevaa tiedoston valitsinta.
 
 > [!NOTE]
-> Tekstitys, tavallinen ääni ja kuvaileva äänisisältö voidaan lisätä myös videoresurssin lataamisen jälkeen. Siirry **Resurssit**-kohtaan, valitse videosisältö ja tarkista se ja lataa sitten videoresurssin ominaisuudet -ruudussa lisäresurssit.
+> Tekstitys, tavallinen ääni ja kuvaileva äänisisältö voidaan lisätä myös videoresurssin lataamisen jälkeen. Siirry **Mediakirjasto**-kohtaan, valitse **Muokkaa** tarkistaaksesi sen. Lataa sitten videoresurssin ominaisuudet -ruudussa lisäresurssit.
 
 #### <a name="edit-cc-and-audio-transcript-files"></a>Muokkaa tekstitys- ja äänitallennetiedostoja
 
@@ -80,10 +80,10 @@ Tekstitys- ja äänitallennetiedostoja voi muokata suoraan sisällönluontityök
 
 Voit muokata tekstitys- ja äänitallennetiedostoja seuraavasti.
 
-1. Siirry **Resurssit**-kohtaan, valitse videoresurssi ja valitse sitten **Muokkaa tekstitystä/tallennetta**. Näyttöön tulee tekstityksen ja tallenteen sisältöeditori.
-1. Valitse **Kirjaa ulos**.
+1. Siirry kohtaan **Mediakirjasto**ja valitse videoresurssin tiedostonimi. Näyttöön tulee tekstityksen ja tallenteen sisältöeditori.
+1. Valitse **Muokkaa**.
 1. Muokkaa tekstitystä tai tallennetekstiä.
-1. Kun olet valmis, valitse **Tallenna** ja valitse sitten **Kuittaa sisään**.
+1. Kun olet valmis, valitse **Tallenna** ja valitse sitten **Lopeta muokkaus**.
 1. Kun olet valmis julkaisemaan, valitse **Julkaise**.
 
 #### <a name="set-the-minimum-age-attribute"></a>Vähimmäisikämääritteen määrittäminen
@@ -92,8 +92,8 @@ Voit muokata tekstitys- ja äänitallennetiedostoja seuraavasti.
 
 Voit määrittää videoresurssin **Vähimmäisikä**-määritteen noudattamalla seuraavia ohjeita.
 
-1. Siirry **Resurssit**-kohtaan ja valitse videosisältö.
-1. Valitse **Kirjaa ulos**.
+1. Siirry **Mediakirjasto**-kohtaan ja valitse videosisältö.
+1. Valitse **Muokkaa**.
 1. Määritä **Vähimmäisikämäärite** videoresurssin ominaisuudet-ruudussa.
 
 > [!NOTE]
@@ -112,3 +112,5 @@ Voit määrittää videoresurssin **Vähimmäisikä**-määritteen noudattamalla
 [Evästeen yhteensopivuus](cookie-compliance.md)
 
 [Lisää tietosuojakäytäntösivu](add-privacy-page.md)
+
+[Seurattuihin sisällönmuutoksiin liittyvien käyttäjätunnusten korvaaminen](replace-IDs-tracked-changes.md)

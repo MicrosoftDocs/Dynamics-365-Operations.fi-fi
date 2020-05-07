@@ -3,7 +3,7 @@ title: Kampanjabannerimoduuli
 description: Tässä ohjeaiheessa käsitellään kampanjabannerimoduuleja ja niiden lisäämistä sivuston sivuille Microsoft Dynamics 365 Commercessa.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: da5e220e4578d1064eb7b627b441d3f585b3c095
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 12cabbf0b8d9f337f15a8cd6cb1f2a85100b75f7
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025617"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269771"
 ---
 # <a name="promo-banner-module"></a>Kampanjabannerimoduuli
 
@@ -64,16 +64,17 @@ Alennusmyynnit ennen koulujen alkamista. Osta nyt.
 
 Voit lisätä kampanjabannerimoduulin sivulle ja määrittää pakolliset ominaisuudet seuraavasti.
 
-1. Luo sivumalli, jonka nimi on **Kampanjabannerimalli**.
+1. Luo sivumalli valitsemalla **Uusi**.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **Mainosnauhan malli** ja valitse sitten **OK**.
 1. Lisää **Oletussivu**-moduuli **Tekstiosa**-paikkaan **Sivun jäsennys** -kohdassa. 
-1. Kirjaa malli sisään ja julkaise se. 
+1. Valitse **Lopeta muokkaus** tallentaaksesi mallin ja valitse sitten **Julkaise** julkaistaksesi sen. 
 1. Luo **Kampanjabannerisivu**-niminen sivu käyttämällä juuri luotua mallia. 
 1. Lisää säilömoduuli uuden sivun **pääpaikkaan**. 
 1. Määritä oikeassa ruudussa **Leveys**-arvoksi **Täytä säilö**.
 1. Lisää kampanjabannerimoduuli säilömoduuliin **Sivun jäsennys** -kohdassa.
 1. Lisää vähintään yksi bannerisanoma bannerimoduulin asetuksissa. Kussakin sanomassa voi olla tekstiä ja linkki. Voit mukauttaa moduulia entisestään muokkaamalla muita ominaisuuksia.
-1. Tallenna ja esikatsele sivu. Sivun yläosassa pitäisi nyt olla hälytys, joka näyttää lisäämäsi tekstin.
-1. Kun sivun muokkaus on valmis, julkaise se. 
+1. Valitse **Tallenna**ja esikatsele sitten sivua valitsemalla **Esikatselu**. Sivun yläosassa pitäisi nyt olla hälytys, joka näyttää lisäämäsi tekstin.
+1. Valitse **Lopeta muokkaus** tallentaaksesi sivun ja valitse sitten **Julkaise** julkaistaksesi sen. 
 
 > [!NOTE]
 > Kampanjabanneria käytetään yleensä sivun ylätunniste- ja alaotsikkopaikassa.

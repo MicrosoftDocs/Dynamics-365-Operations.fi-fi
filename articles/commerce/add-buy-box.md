@@ -3,7 +3,7 @@ title: Ostoruutumoduuli
 description: Tässä ohjeaiheessa on tietoja ostoruutumoduuleista ja niiden lisäämisestä Microsoft Dynamics 365 Commercen sivuston sivuille.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261395"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269748"
 ---
 # <a name="buy-box-module"></a>Ostoruutumoduuli
 
@@ -80,15 +80,15 @@ Voit lisätä ostoruutumoduulin uudelle sivulle ja määrittää pakolliset omin
 1. Luo osa nimeltä **Ostoruutuosa** ja lisää siihen ostoruutumoduuli.
 1. Lisää ostoruutumoduuliin **Media**-paikkaan mediavalikoimamoduuli.
 1. Lisää myymälän valitsinmoduuli ostoruutumoduulin **Myymälän valitsin** -paikkaan.
-1. Kirjaa sivu sisään ja julkaise se.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
 1. Luo tuotetietosivulla malli ja anna sen nimeksi **PDP-malli**.
 1. Lisää oletussivu.
 1. Lisää ostoruutuosa oletussivun **pääpaikkaan**.
-1. Tallenna malli, lopeta sen muokkaus ja julkaise se.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 1. Käytä juuri luotua mallia, kun haluat luoda sivun nimeltä **PDP-sivu**.
 1. Lisää ostoruutuosa uuden sivun **pääpaikkaan**.
 1. Tallenna ja esikatsele sivu. Lisää **?productid=&lt;tuotteen tunnus&gt;** -kyselymerkkijonoparametri esikatselusivun URL-osoitteeseen. Näin tuotekontekstia käytetään esikatselusivun lataamiseen ja käsittelemiseen.
-1. Tallenna sivu, lopeta sen muokkaus ja julkaise se. Tuotetietosivulla näkyy ostoruutu.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**. Tuotetietosivulla näkyy ostoruutu.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 
