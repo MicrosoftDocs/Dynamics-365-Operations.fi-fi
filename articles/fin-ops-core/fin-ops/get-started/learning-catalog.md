@@ -3,20 +3,20 @@ title: Finance and Operationsin oppimisluettelo
 description: Etsi kaikki Finance and Operationsin koulutusvaihtoehdot.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 04/17/2020
 ms.author: v-lshann
-audience: Application User
+audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 ms.search.region: Global
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 751e0ec649d962af084f992957f0e4821ea9509d
-ms.sourcegitcommit: 41950e3b5e4d1d0014bef308ac017cb4c2b8e134
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 32b67cfd4c007ddc590cd0ee95255d6f3fbc1d17
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3077990"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278974"
 ---
 # <a name="learning-catalog-for-finance-and-operations"></a>Finance and Operationsin oppimisluettelo
 
@@ -33,6 +33,10 @@ Etsi oikea online-koulutus, henkilötyöpajat ja tapahtumat roolillesi Finance a
     Onko sinun päätettävä investoitko uusiin teknologioihin? 
 
     [Liiketoiminnan ja teknisten toimintojen päätöksentekijöiden oppimisresurssit](learning-catalog-bdm.md#)
+
+    [Aloittaminen](learning-catalog-bdm.md#get-started)
+
+    [Tentti](learning-catalog-bdm.md#exam)
 
         :::column-end:::
     :::column:::
@@ -53,12 +57,14 @@ Etsi oikea online-koulutus, henkilötyöpajat ja tapahtumat roolillesi Finance a
 
     [Taloushallinto](learning-catalog-business-user.md#financial-management)
 
+    [Tentti](learning-catalog-business-user.md#exam)
+
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-        ### <a name="implementation-project-managers"></a>Käyttöönottoprojektin vastuuhenkilöt
+    ### <a name="implementation-project-managers"></a>Käyttöönottoprojektin vastuuhenkilöt
 
     Oletko vastuussa yrityksesi toteutuksen sujuvuuden varmistuksesta?
 
@@ -73,6 +79,9 @@ Etsi oikea online-koulutus, henkilötyöpajat ja tapahtumat roolillesi Finance a
     [Valmistus](learning-catalog-project-manager.md#manufacturing)
 
     [Toimitusketjun hallinta](learning-catalog-project-manager.md#supply-chain-management)
+
+    [Tentit](learning-catalog-project-manager.md#exams)
+
         :::column-end:::
     :::column:::
 
@@ -86,11 +95,15 @@ Etsi oikea online-koulutus, henkilötyöpajat ja tapahtumat roolillesi Finance a
 
     [Ympäristöä koskevat perustiedot](learning-catalog-administrator.md#core-platform-knowledge)
 
+    [Peruskehitys](learning-catalog-administrator.md#core-development)
+
     [Siirto ja päivitys](learning-catalog-administrator.md#migration-and-upgrade)
 
     [Ylläpito](learning-catalog-administrator.md#servicing)
 
     [Testataan](learning-catalog-administrator.md#testing)
+
+    [Tentti](learning-catalog-administrator.md#exam)
 
   :::column-end:::
 :::row-end:::
@@ -131,6 +144,8 @@ Etsi oikea online-koulutus, henkilötyöpajat ja tapahtumat roolillesi Finance a
 
     [Toimitusketjun hallinta](learning-catalog-functional-consultant.md#supply-chain-management)
 
+    [Tentit](learning-catalog-functional-consultant.md#exams)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,6 +156,10 @@ Etsi oikea online-koulutus, henkilötyöpajat ja tapahtumat roolillesi Finance a
     Oletko vastuussa siitä, että autat asiakkaitasi ostamaan oikean ratkaisun? 
 
     [Microsoft-kumppaneiden Sales- ja Marketing-oppimisresurssit](learning-catalog-partner-sales.md)
+
+    [Aloittaminen](learning-catalog-partner-sales.md#get-started)
+
+    [Tentti](learning-catalog-partner-sales.md#exam)
 
         :::column-end:::
     :::column:::

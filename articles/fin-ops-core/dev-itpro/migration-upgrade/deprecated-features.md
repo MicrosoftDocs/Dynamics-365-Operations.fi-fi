@@ -3,7 +3,7 @@ title: Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 description: Tässä ohjeaiheessa kuvataan toiminnot, jotka on poistettu tai jotka on aiotaan poistaa Dynamics 365 for Finance and Operations -sovelluksesta ja tuotteen aiemmista versioista.
 author: sericks007
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225125"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284011"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Aiempien versioiden poistetut tai vanhentuneet ominaisuudet
 
@@ -230,7 +230,7 @@ Niiden projektiin perustuvien myyntitilausten tuki, joissa projektisopimuksella 
 | **Onko toinen ominaisuus korvannut?**   | Nro |
 | **Tuotealueet, joihin vaikutetaan**         | Tuotetietojen hallinta |
 | **Käytön asetukset**              | Kaikki  |
-| **Tila**                         | Poistettu Finance and Operationsista versiosta 10.0.0 Platform update 24 alkaen. (Jos ja vain jos sinun on korjattava tietojen vioittumista, joka aiheutui julkaistun tuotteen ensisijaisen avaimen aiemmasta uudelleennimeämisestä, ota yhteyttä Microsoft-tukeen ja pyydä tämän rajoituksen väliaikaista poistoa.) |
+| **Tila**                         | Poistettu Finance and Operationsista versiosta 10.0.0 Platform update 24 alkaen.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 ja Platform update 23
@@ -267,7 +267,7 @@ Kehittäjä voi mallintaa upotetut tunnusluvut Visual Studiossa, ja loppukäytt�
 | **Onko toinen ominaisuus korvannut?**   | Tämä varoitus korvataan jatkossa käännösvirheellä. |
 | **Tuotealueet, joihin vaikutetaan**         | Visual Studio -sovelluksen kehitystyökalut |
 | **Käytön asetukset**              | Kaikki |
-| **Tila**                         | Vanhentunut: Varoituksesta tulee jatkossa käännöksenaikainen virhe. Tämä muutos kohdistuu Finance and Operations -sovellusten versioon 10.0.11. |
+| **Tila**                         | Vanhentunut: Varoitus on nyt kääntäjän virhe Finance and Operations -sovellusalustan päivityksille versiossa 10.0.11. |
 
 #### <a name="complete-list"></a>Täydellinen luettelo
 Täydellinen vanhentumassa olevien ohjelmointirajapintojen luettelo on kohdassa [Menetelmien ja metatietojen elementtien poisto](deprecation-deletion-apis.md).

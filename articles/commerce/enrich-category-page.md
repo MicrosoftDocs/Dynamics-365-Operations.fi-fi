@@ -3,7 +3,7 @@ title: Luokan saapumissivun täydentäminen
 description: Tässä ohjeaiheessa kerrotaan luokkasivujen täydentämisestä Dynamics 365 Commerce -sovelluksessa.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71348efba9fc1374b9e6599eb23f198d3851036e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003047"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269840"
 ---
 # <a name="enrich-a-category-landing-page"></a>Luokan saapumissivun täydentäminen
 
@@ -39,18 +39,16 @@ Oletusluokkasivun sijaan voidaan käyttää luokan täydennettyä saapumissivua.
 
 ![Täydennetty luokan saapumissivu](./media/CategoryLandingPages.png)
 
-Muokkaustyökalun **Tuote**-sivulla on luokkaluettelo kanavista, jotka on määritetty sivustoon. Jos luokkasivulle on valittu **Täydennetty**-tila, luokkasivua on täydennetty. Muussa tapauksessa luokassa käytetään oletusluokkasivua ja -sisältöä. Voit esikatsella sekä täydennettyjä että muita kuin täydennettyjä luokkasivuja luokassa valitsemalla luokan nimen.
+Kaupan luontityökalun **Tuoteet**-sivulla on luokkaluettelo kanavista, jotka on määritetty sivustoon. Jos luokkasivulle on valittu **Täydennetty**-tila, luokkasivua on täydennetty. Muussa tapauksessa luokassa käytetään oletusluokkasivua ja -sisältöä. Voit esikatsella sekä täydennettyjä että muita kuin täydennettyjä luokkasivuja luokassa valitsemalla luokan nimen.
 
 Voit täydentää luokkasivua seuraavasti:
 
-1. Valitse **Tuotteet**-sivulla sen luokan nimi, jonka luokkasivun haluat täydentää. Valitun luokan oletusluokkasivu avautuu sivueditoriin.
+1. Valitse **Tuotteet**-sivulla sen luokan nimi, jota haluat täydentää luokkasivulla. Valitun luokan oletusluokkasivu avautuu sivueditoriin.
 2. Valitse **Täydennä luokkasivua**.
 3. Valitse täydennetyn luokkasivun malli. Jos teet vain vähäisiä muutoksia, voit valita oletusluokkasivun. Vaihtoehtoisesti voit valita tietyn luokkasivunmallin. Kun valitset mallin, sivueditori avataan ja valitun mallin avulla luodaan uusi luokkasivu valitulle luokalle. Sivu kuitataan ulos sinulle. Nyt voit tehdä muutoksia.
 
 > [!NOTE]
-> Moduulit, joissa käytetään luokan määritystietoja, käyttävät valitun luokan tietoja.
->
-> Valitsemasi mallin asetukset määrittävät muutokset, jotka voit tehdä.
+> Moduulit, joissa käytetään luokan määritystietoja, käyttävät valitun luokan tietoja. Valitsemasi mallin asetukset määrittävät muutokset, jotka voit tehdä.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172688"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275647"
 ---
 # <a name="general-troubleshooting"></a>Yleinen vianmääritys
 
@@ -70,14 +70,12 @@ Jäljitysloki otetaan käyttöön seuraavasti.
 Jäljitysloki näytetään seuraavasti.
 
 1. Kirjaudu Finance and Operations -sovellukseen, avaa **Asetukset**-sivu ja valitse sitten **Mukautus**-kohdasta **Laajennuksen jäljitysloki**.
-2. Etsi jäljityslokit, joiden **Tyyppinimi**-kentän arvoksi on määritetty **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+2. Etsi jäljityslokit, joiden **Tyyppinimi**-kentän arvoksi on määritetty **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Voit tarkastella koko lokia kaksoisnapsauttamalla kohdetta ja tarkistaa sitten **Suoritus**-pikavälilehdessä **Sanomalohko**-tekstin.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Virheenkorjaustilan käyttöönotto Finance and Operations -sovellusten live-synkronointiongelmien vianmäärityksessä
 
-**Virheiden tarkastelemiseen tarvittava rooli:** Järjestelmänvalvoja
-
-Sovellukseen perustuvat kaksoiskirjoitusvirheet Common Data Servicessä voivat näkyä Finance and Operations -sovelluksessa. Joissakin tapauksissa virhesanoman koko teksti ei ole käytettävissä, koska sanoma on liian pitkä tai sisältää henkilökohtaisia tunnistetietoja (PII). Noudattamalla seuraavia ohjeita voit ottaa käyttöön sanallisen kirjaamisen.
+**Virheiden tarkastelemiseen tarvittava rooli:** Järjestelmänvalvojan kaksoiskirjoitusvirheet, jotka ovat peräisin Common Data Servicestä voivat näkyä Finance and Operations -sovelluksessa. Joissakin tapauksissa virhesanoman koko teksti ei ole käytettävissä, koska sanoma on liian pitkä tai sisältää henkilökohtaisia tunnistetietoja (PII). Noudattamalla seuraavia ohjeita voit ottaa käyttöön sanallisen kirjaamisen.
 
 1. Kaikilla Finance and Operations -sovellusten projektikokoonpanoilla on **IsDebugMode**-ominaisuus **DualWriteProjectConfiguration**-yksikössä. Avaa **DualWriteProjectConfiguration**-yksikkö käyttämällä Excel-lisäosaa.
 
@@ -104,7 +102,7 @@ Sovellukseen perustuvat kaksoiskirjoitusvirheet Common Data Servicessä voivat n
 
 ## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Toisen Common Data Service -ympäristön linkityksen poistaminen Finance and Operations -sovelluksesta
 
-**Ympäristön linkityksen edellyttämät tunnistetiedot:** Azure AD -vuokralaisten hallinta
+**Ympäristön linkityksen poistamiseen vaadittu rooli:** Joko Finance and Operations -sovelluksen tai Common Data Service -ohjelman järjestelmänvalvoja.
 
 1. Kirjautuminen Finance and Operations -sovellukseen.
 2. Siirry kohtaan **Työtilat \> Tietojen hallinta** ja valitse **Kaksoiskirjoitus**-ruutu.
@@ -113,3 +111,13 @@ Sovellukseen perustuvat kaksoiskirjoitusvirheet Common Data Servicessä voivat n
 5. Vahvista toiminto valitsemalla **Kyllä**.
 
 Nyt voit linkittää uuden ympäristön.
+
+## <a name="unable-to-view-the-sales-order-line-information-form"></a>Myyntitilausrivin tietolomaketta ei voi tarkastella 
+
+Kun luot myyntitilauksen Dynamics 365 Salesissa, **+ Lisää tuotteet** -vaihtoehdon napsauttaminen saattaa ohjata sinut Dynamics 365 Project Operationsin tilausrivilomakkeeseen. Kyseisessä lomakkeessa ei ole mitään tapaa tarkastella myyntitilausrivin **Tieto**-lomaketta. **Tietoja**-vaihtoehto ei näy **Uuden tilausrivin** alla olevassa avattavassa valikossa. Näin tapahtuu, koska Project Operations on asennettu ympäristöösi.
+
+Voit ottaa **Tieto**-lomakevaihtoehdon uudelleen käyttöön seuraavasti:
+1. Siirry **Tilausrivi**-yksikköön.
+2. Etsi **Tieto**-lomake lomakkeet-solmussa. 
+3. Valitse **Tieto**-lomake ja valitse **Ota käyttöön käyttöoikeusroolit**. 
+4. Muuta suojausasetukseksi **Näytä kaikille**.

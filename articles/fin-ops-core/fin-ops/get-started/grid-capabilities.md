@@ -3,7 +3,7 @@ title: Ruudukon ominaisuudet
 description: Tässä aiheessa kuvataan useita ruudukon ohjausobjektin tehokkaita ominaisuuksia. Uudella ruudukkotoiminnolla on oltava käyttöoikeus näihin ominaisuuksiin.
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: fd45f71fc15e467c461433682310ab7b7cc0158a
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260457"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284401"
 ---
 # <a name="grid-capabilities"></a>Ruudukon ominaisuudet
 
@@ -86,6 +86,23 @@ Jos valitset **Ryhmittele tämän sarakkeen perusteella** jossakin muussa sarakk
 
 Voit kumota ruudukon ryhmittelyn napsauttamalla ryhmittelysaraketta hiiren kakkospainikkeella ja valitsemalla **Pura ryhmittely**.  
 
+## <a name="typing-ahead-of-the-system"></a>Järjestelmän ennakoiva kirjoitus
+Monissa liiketoimintaskenaarioissa tietojen nopea syöttäminen järjestelmään on erittäin tärkeää. Aiemmin käyttäjät voivat muuttaa tietoja vain nykyisellä rivillä, ennen kuin uusi ruudukko-ohjausobjekti otettiin käyttöön. Ennen kuin he voivat luoda uuden rivin tai vaihtaa toiselle riville, heidän oli pakko odottaa, että järjestelmä tarkisti mahdolliset muutokset onnistuneesti. Kun yritetään lyhentää aikaa, jonka käyttäjät odottavat näiden vahvistusten valmistumista, ja parantaa käyttäjien tuottavuutta, uusi ruudukko säätää nämä vahvistukset niin, että ne ovat asynkronisia. Tämän vuoksi käyttäjä voi siirtyä muihin riveihin ja tehdä muutoksia, kun edellisen rivin oikeellisuustarkistus odottaa. 
+
+Tämän uuden toiminnon tukemiseksi ruudukon yläosaan on lisätty uusi rivitilan sarake, kun ruudukko on muokkaustilassa. Tämä sarake ilmaisee jonkin seuraavista tiloista:
+
+- **Tyhjä** – Ei tilaa kuvaa ilmaisee, että järjestelmä on tallentanut rivin onnistuneesti.
+- **Käsittely odottaa** – Tämä tila ilmaisee, että palvelin ei ole vielä tallentanut rivin muutoksia, vaan ne ovat käsiteltävien muutosten jonossa. Ennen kuin suoritat toimenpiteitä ruudukon ulkopuolella, sinun on odotettava kaikkien odottavien muutosten käsittelemistä. Lisäksi näiden rivien teksti on kursivoitu rivien tallentamattoman tilan ilmaisemiseksi. 
+- **Oikeellisuustarkistusvaroitus** – Tämä tila ilmaisee, että järjestelmä ei voi tallentaa rivin muutoksia joidenkin oikeellisuustarkistusongelman vuoksi. Vanhassa ruudukossa joutui palaamaan riville korjaamaan ongelman heti. Uusi ruudukko kuitenkin ilmoittaa, että vahvistusongelma ilmeni, mutta voit päättää, milloin haluat korjata kaikki rivin ongelmat. Kun olet valmis korjaamaan ongelman, voit siirtää kohdistuksen manuaalisesti takaisin riville. Vaihtoehtoisesti voit valita **Korjaa tämä ongelma** -toiminnon. Tämä toimenpide siirtää kohdistuksen välittömästi riville, jolla on ongelma, ja voit tehdä muokkauksia ruudukon sisä- tai ulkopuolelle. Huomaa, että seuraavien odottavien rivien käsittely pysäytetään, kunnes tämä vahvistusvaroitus on ratkaistu. 
+- **Keskeytetty** – Tämä tila ilmaisee, että palvelimen käsittely keskeytetään, koska rivin oikeellisuustarkistus käynnistää ponnahdusikkunan, joka edellyttää käyttäjän toimia. Koska käyttäjä saattaa kirjoittaa tietoja toiselle riville, ponnahdusikkuna ei tule heti näkyviin kyseiselle käyttäjälle. Sen sijaan se esitetään, kun käyttäjä päättää jatkaa käsittelyä. Tähän tilaan liittyy ilmoitus, joka kertoo käyttäjälle tilanteesta. Ilmoitus sisältää **Jatka käsittelyä** -toiminnon, joka käynnistää ponnahdusikkunan.  
+    
+Kun käyttäjät syöttävät tietoja ennen palvelimen käsittelemisen paikkaa, he voivat odottaa, että tietojen syöttämisessä ilmenee joitakin heikentymistä, kuten hakujen puuttumista, ohjaustason tarkistamista ja oletusarvojen syöttämistä. Käyttäjiä, jotka tarvitsevat avattavan luettelon löytääkseen arvon, kehotetaan odottamaan, että palvelin on kiinni nykyiselle riville. Ohjaustason oikeellisuustarkistus ja oletusarvojen määritys tapahtuvat myös, kun palvelin käsittelee rivin.   
+
+### <a name="pasting-from-excel"></a>Liittäminen Excelistä
+Käyttäjät ovat aina voineet viedä tietoja Finance and Operations -sovellusten ruuduista Exceliin käyttämällä **Vie Exceliin** -mekanismia. Mahdollisuus syöttää tietoja ennen järjestelmää mahdollistaa kuitenkin sen, että uusi ruudukko tukee taulujen kopioimista Excelistä ja liittämistä suoraan Finance and Operations -sovellusten ruudukkoihin. Ruudukon solu, josta liittämistoiminto käynnistetään, määrittää, mihin kopioitu taulukko alkaa liittää. Kopioidun taulun sisältö korvaa ruudukon sisällön lukuun ottamatta kahta tapausta:
+
+- Jos kopioidun taulukon sarakkeiden määrä ylittää ruudukon jäljellä olevien sarakkeiden määrän, alkaen liittämissijainnista, käyttäjälle ilmoitetaan, että ylimääräiset sarakkeet on ohitettu. 
+- Jos kopioidun taulukon rivien määrä ylittää ruudukon rivien määrän alkaen liittämissijainnista, aiemmin luodut solut korvataan liitetystä sisällöstä ja kopioidun taulukon ylimääräiset rivit lisätään uusina riveinä ruudukon alaosaan. 
 
 ## <a name="evaluating-math-expressions"></a>Matemaattisten lausekkeiden arviointi
 Tuottavuutta tehostaakseen käyttäjät voivat antaa matemaattisia kaavoja ruudukon numeerisiin soluihin. Heidän ei tarvitse tehdä laskelmia järjestelmän ulkopuolisissa sovelluksissa. Jos esimerkiksi syötät **=15\*4** ja painat sitten **sarkainnäppäintä** ja siirryt pois kentästä, järjestelmä arvioi lausekkeen ja tallentaa kentän arvoksi **60**.
@@ -110,3 +127,64 @@ Jos haluat, että järjestelmä tunnistaa arvon lausekkeena, aloita arvo yhtäsu
 4.  **Ota ominaisuus käyttöön**: Etsi **Uusi ruudukonhallinta** -ominaisuus ominaisuuksien luettelosta ja napsauta **Ota käyttöön nyt** tietoruudussa. Huomaa, että selaimen päivitys on pakollinen. 
 
 Kaikki myöhemmät käyttäjäistunnot alkavat, kun uusi ruudukonhallinta on käytössä.
+
+## <a name="known-issues"></a>Tunnetut ongelmat
+Tässä osassa ylläpidetään luetteloa uuden ruudukon ohjausobjektin tunnetuista ongelmista, kun ominaisuus on esikatselutilassa.  
+
+### <a name="open-issues"></a>Avoimet asiat
+
+- Useita sarakkeita käyttävät korttiluettelot muodostetaan nyt yhtenä sarakkeena.
+- Ryhmiteltyjä luetteloita ei muodosteta ryhminä tai erillisinä sarakkeina.
+- Kuvia ei näytetä työkaluvihjeissä.
+- Ruudukkonäyttö ei toimi kaikissa kenttätyypeissä.
+- Ajoittain et voi napsauttaa ruudukon ulkopuolella, kun olet valinnut useita rivejä.
+- **Vahvista**- ja **Kopioi**- tehtävän tallennusasetukset eivät ole käytettävissä päivämäärä- ja numero-ohjausobjekteissa.
+
+### <a name="fixed-as-part-of-10012"></a>Määrätty osana versiota 10.0.12
+
+> [!Note]
+> Seuraavat tiedot annetaan, jotta voit tehdä suunnitelman sen mukaisesti. Lisätietoja kohdistetuista version 10.0.12 julkaisuaikatauluista on kohdassa [Palvelupäivitysten saatavuus](../../fin-ops/get-started/public-preview-releases.md).
+
+- [Ongelma 429126] Ruudukon ulkopuoliset ohjausobjektit eivät päivity viimeisen tietueen poistamisen jälkeen.
+- [Ongelma 430575] Tauluohjausobjektit eivät päivitä näytettävien kohteiden sisältöä.
+- [KB 4558570] Kohteet näkyvät edelleen sivulla, kun tietue on poistettu.
+- [KB 4558584] Negatiivisia lukuja ei hahmonneta oikein.
+- [KB 4558575] Kenttiä ei päivitetä, kun rivin muutos tai ruudukon käsittely jumiutuu rivin poiston jälkeen.
+- [Ongelma 436980] Luettelopaneeliin liittyvää muotoilua **ExtendedStyle** ei käytetä.
+- [KB 4558573] Oikeellisuustarkistusvirheitä ei voi korjata, kun tarvittava muutos on ruudukon ulkopuolella.
+    
+### <a name="quality-update-for-10011"></a>Laatupäivitys 10.0.11
+
+- [KB 4558381] Negatiiviset luvut eivät näy oikein/käyttäjät ovat joskus jumiutuneet oikeellisuustarkistusongelmien jälkeen.
+
+### <a name="fixed-as-part-of-10011"></a>Määrätty osana versiota 10.0.11
+
+- [KB 4558374] Polymorfisen valitsimen valintaikkunaa edellyttäviä tietoja ei voi luoda.
+- [KB 4558382] Odottamattomia asiakasvirheitä ilmenee.
+- [KB 4558375] Ohjeteksti ei näy uuden ruudukon sarakkeissa.
+- [KB 4558376] Luetteloruudun ruudukoita ei hahmonneta oikeassa korkeudessa Internet Explorerissa.
+- [KB 4558377] Yhdistelmäruudun sarakkeita, joiden käytettävissä olevaa leveyttä **SizeToAvailable** ei hahmonneta joillakin sivuilla.
+- [KB 4549711] Maksuja koskevan ehdotuksen rivejä ei voi poistaa oikein, kun uusi ruudukko-ohjausobjekti on otettu käyttöön.
+- [KB 4558378] Porautuminen avaa joskus väärän tietueen.
+- [KB 4558379] Tapahtuu virhe, kun haut avataan, kun **ReplaceOnLookup**=**Ei**.
+- [KB 4558380] Ruudukon käytettävissä oleva tila ei ole täytetty heti, kun osa sivusta on kutistettu.
+- [Ongelma 432458] Tyhjät tai päällekkäiset rivit näkyvät joidenkin alikokoelmien alussa.
+- [KB 4558587] Viiteryhmät, joissa on yhdistelmäruutuja korvaaville kentille, eivät näytä arvoja.
+
+### <a name="fixed-as-part-of-10010"></a>Määrätty osana versiota 10.0.10
+
+- [Ongelma 414301] Jotkin aiempien rivien tiedot häviävät, kun uusia rivejä luodaan.
+- [KB 4550367] Aika-arvoja ei ole muotoiltu oikein.
+- [KB 4549734] Aktiivisia rivejä ei käsitellä merkittyinä, jos merkintäsarake on piilotettu.
+- [Bug 417044] Luettelotyylisissä ruudukoissa ei ole tyhjiä ruudukkosanomia.
+- [KB 4558367] Tekstivalinta on epäjohdonmukainen, kun rivejä muutetaan.
+- [KB 4558372] Uusi ruudukko jumiutuu käsittelytilaan, jos liitettävän sisällön sarakkeiden määrä ylittää ruudukon jäljellä olevien sarakkeiden määrän.
+- [KB 4558368] Monivalinta näppäimistön avulla on sallittua yksittäisen valinnan skenaarioissa.
+- [KB 4539058] Joitakin ruudukoita (yleensä pikavälilehtien) ei toisinaan muodosteta (mutta ne muodostetaan, jos loitonnat näkymää).
+- [KB 4558369] Tilakuvat katoavat hierarkkisessa ruudukossa.
+- [KB 4558370] Uutta riviä ei ole vieritetty näkymään.
+- [KB 4549796] Arvoja ei voi muokata ruudukossa, kun se on näyttötilassa.
+
+### <a name="quality-update-for-1009platform-update-33"></a>Laatupäivitys 10.0.9/Ympäristön päivitys 33
+
+- [KB 4550367] Aika-arvoja ei ole muotoiltu oikein.

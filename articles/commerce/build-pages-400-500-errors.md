@@ -3,7 +3,7 @@ title: Mukautettujen vastaussivujen luominen 4xx-/5xx-tilakoodien virheille
 description: Tässä ohjeaiheessa kerrotaan, miten mukautetut vastaussivut luodaan 4xx- ja 5xx-tilakoodivirheille käyttämällä Microsoft Dynamics 365 Commercen muokkaustyökaluja.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4477a0a43971b5322c6acd6971cba2e79e2dc8c6
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 060f5e5616624279711f61f582e6a898c7eb7785
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001120"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269541"
 ---
 # <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Mukautettujen vastaussivujen luominen 4xx-/5xx-tilakoodien virheille
 
@@ -46,19 +46,21 @@ Voit luoda tilakoodivirheen vastaussivun seuraavasti.
 
 Voit luoda tilakoodivirheen vastaussivun mallin seuraavasti.
 
-1. Siirry kohtaan **Mallit \> Uusi malli**.
-1. Anna uudelle mallille nimi.
+1. Valitse **Mallit**.
+1. Luo sivumalli valitsemalla **Uusi**.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan uuden mallin nimi ja valitse sitten **OK**.
 1. Luo malli sen rakenteen perusteella, jonka haluat määrittää tilakoodivirheen vastaussivulle.
-1. Kirjaa malli sisään ja julkaise se.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**. 
 
 ### <a name="build-the-status-code-error-response-page"></a>Tilakoodivirheen vastaussivun luominen
 
 Voit luoda tilakoodivirheen vastaussivun seuraavasti.
 
-1. Siirry kohtaan **Sivut \> Uusi sivu**.
-1. Anna tilakoodivirheen vastaussivulle nimi, mutta **älä** määritä **URL-osoite**-kentän arvoa.
+1. Siirry kohtaan **Sivut**.
+1. Luo sivu valitsemalla **Uusi**.
+1. Valitse malli **Valitse malli** -valinta ikkunassa ja kirjoita sitten **Sivun nimi** -kohtaan tilakoodin virhevastaussivun nimi. Jätä **Sivun URL-osoite** -kenttä tyhjäksi.
 1. Luo sivu.
-1. Kirjaa sivu sisään ja julkaise se.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
 
 > [!NOTE]
 > Voit luoda erilliset tilakoodivirheen vastaussivut 4xx- ja 5xx-tilakoodivirheille. Halutessasi voit käyttää samaa yleistä tilakoodivirheen vastaussivua molemmissa virheluokissa.

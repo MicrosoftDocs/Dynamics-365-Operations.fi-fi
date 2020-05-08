@@ -1,36 +1,40 @@
 ---
 title: Microsoft-kumppaneiden Sales- ja Marketing-oppimisresurssit
-description: ''
-author: margoc
-manager: AnnBe
-ms.date: 05/03/2019
+description: Etsi kaikki Finance and Operationsin koulutusvaihtoehdot.
+author: loreleishannonmsft
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
+ms.date: 04/17/2020
+ms.author: v-lshann
+audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 ms.search.region: Global
-ms.author: margoc
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7419ecae20ec4bc7579ad6c525092e6642254db9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: d2c029f6e5654f0da399ee7fc26ead6d787e59f5
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191014"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278976"
 ---
 # <a name="microsoft-partner-sales-and-marketing-learning-catalog"></a>Microsoft-kumppaneiden Sales- ja Marketing-oppimisresurssit
 
-Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin ja helpoimmista kehittyneimpiin. Jos sisältöä on useissa muodoissa, se on mainittu, jotta voit valita tarpeitasi parhaiten vastaavan koulutusmuodon. Lisätietoja on kohdassa Koulutuksen sisällön muodot. 
+Oletko vastuussa siitä, että autat asiakkaitasi ostamaan oikean ratkaisun? 
 
-## <a name="get-started"></a>Aloittaminen
-| Sisältö                                                                                                                                   | Kuvaus                                                                                                                                                                                                                                                                                                                                                                                                              | Muoto                                                                         | Pituus    | 
+Seuraava luettelo on järjestetty perustietämyksestä tiettyihin toimialueisiin ja helpoimmista kehittyneimpiin. Jos sisältöä on useissa muodoissa, se on mainittu, jotta voit valita tarpeitasi parhaiten vastaavan koulutusmuodon. 
+
+
+## <a name="get-started"></a>Aloittaminen<a name="get-started"></a>
+| Sisältö  | kuvaus  | Muoto  | Pituus    | 
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](https://docs.microsoft.com/en-us/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Tämä oppimiskokemus vie sinut matkalle, joka alkaa näyttämällä, miten digitaalinen muutos ja liiketoimintasovellusten teho voivat muuttaa liiketoimintaasi. Me katsomme, miten Dynamics 365 ja Power Platform auttavat sinua tekemään perusteltuja päätöksiä, jotka perustuvat organisaation tarpeisiin ja tavoitteisiin, digitaalisen muutoksen neljän rakennuspalikan kautta – moderni, yhtenäinen, älykäs ja mukautuva.   | Maksuton, omaan tahtiin etenevä verkko-oppimispolku                                          | 6.5 tuntia |
-| [Dynamics 365:n ja Power Platformin perusteet](https://docs.microsoft.com/en-us/learn/paths/dyn-power-plat-bus-app-fundamentals/)                                                  | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön.                                                                                                                                                                                              | Maksuton, omaan tahtiin etenevä verkko-oppimispolku                                          | 5.5 tuntia |
-| [Dynamics 365 for Finance and Operationsin käytön aloittaminen](https://docs.microsoft.com/en-us/learn/paths/get-started-with-dynamics-365-for-finance-and-ops/)                        | Katso, miten Microsoft Dynamics 365 for Finance and Operations tukee yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat Finance and Operationsin kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku                                          | 1.5 tuntia |
-| [Kurssi MB-900T01-A: Dynamics 365:n perusteet](https://www.microsoft.com/en-us/learning/course.aspx?cid=MB-900T01)                                                                | Kurssi tutustuttaa oppijan Dynamics 365:n toimintoihin ja liiketoiminta-arvoon. Kurssi kattaa Dynamics 365 -sovellukset, Power Platformin, pilvipalvelun käsitteet, suojausmallin sekä lisensointinäkökohdat.                                                                                                                                                                                      | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä     |
-| [Dynamics 365:n perusteet](https://www.microsoft.com/en-us/learning/d365-fundamentals.aspx)                                                                                       | Todista, että ymmärrät Microsoft Dynamics 365:n: Power Platformin; pilvikonseptit; lisensointivaihtoehdot; sekä käyttöönotto- ja jukaisuvaihtoehdot.                                                                                                                                                                                                                                                                             | Tentti; kustannukset vaihtelevat alueittain                                                    |           |
+| [Microsoft Dynamics 365:n ja Power Platformin liiketoiminta-arvo](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Oletko kiinnostunut oppimaan yrityssovelluksista? Ehkä et tiedä, mistä aloittaa Microsoft Dynamics 365:n ja Power Platform -sovellusten kanssa? Lue tietoja siitä, miten yrityssovellusten teho voi auttaa liiketoiminnan muuntamisessa.  | Maksuton, omaan tahtiin etenevä verkko-oppimispolku                                          | 7 tuntia |
+| [Dynamics 365:n ja Power Platformin perusteet](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/)  | Oletko kiinnostunut oppimaan yrityssovelluksista? Aloita tällä oppimispolulla, niin näet, miten Dynamics 365 -sovelluksia käytetään. Lue lisätietoja pilvikonsepteista, Power Platformista ja siitä, miten voit aloittaa Dynamics 365 -sovellusten käytön. | 5.5 tuntia |
+| [Finance and Operations -sovellusten käytön aloittaminen](https://docs.microsoft.com/learn/paths/get-started-with-dynamics-365-for-finance-and-ops/)  | Katso, miten Finance and Operations -sovellukset tukevat yrityksiä, jotta ne voivat hallita maailmanlaajuisia rahoitusjärjestelmiään, operatiivisia liiketoimintaprosesseja ja virtaviivaistaa toimitusketjuja, jotta he voivat tehdä nopeita ja tietoon perustuvia päätöksiä. Kun aloitat Finance and Operations -sovellusten kanssa työskentelyn, sinun on tutustuttava sen ominaisuuksiin ja toimintoihin riippumatta roolistasi. | Maksuton, omaan tahtiin etenevä verkko-oppimispolku   | 2 tuntia |
+| [Kurssi MB-900T01-A: Dynamics 365:n perusteet](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01)  | Kurssi tutustuttaa oppijan Dynamics 365:n toimintoihin ja liiketoiminta-arvoon. Kurssi kattaa Dynamics 365 -sovellukset, Power Platformin, pilvipalvelun käsitteet, suojausmallin sekä lisensointinäkökohdat.  | Kouluttajan johtama henkilökohtainen tai verkkokoulutus; kustannukset vaihtelevat alueittain ja yhteistyökumppanin mukaan | 1 päivä     |
+
+
+## <a name="exam"></a>Tentti<a name="exam"></a>
+| Sisältö  | kuvaus  | Muoto | Pituus    | 
+|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
+| [Dynamics 365:n perusteet](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)                                                                                       | Todista, että ymmärrät Microsoft Dynamics 365:n: Power Platformin; pilvikonseptit; lisensointivaihtoehdot; sekä käyttöönotto- ja jukaisuvaihtoehdot.  | Tentti; kustannukset vaihtelevat alueittain                                                    |           |

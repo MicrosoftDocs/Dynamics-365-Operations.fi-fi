@@ -3,7 +3,7 @@ title: Ylläpitopyynnön elinkaaren tilat
 description: Tässä ohjeaiheessa kuvataan, kuinka ylläpitopitopyynnön elinkaaren tilat määritetään resurssien hallinnassa.
 author: josaw1
 manager: tfehr
-ms.date: 07/26/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d1e4412af0619b57467b5bcba75ea7259604d1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 08c45742b064f3a13a0ea2704f8873b9c53aad4e
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209004"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275623"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Ylläpitopyynnön elinkaaritilat
 
@@ -47,7 +47,7 @@ Huoltopyynnön elinkaaritilat määrittävät vaiheet, jotka pyyntö voi käydä
 6. Määritä, **Määritä todellinen lopetus** -asetukseksi **Kyllä**, jos todellinen päättymispäivä ja-aika tulee automaattisesti syöttää ylläpitopyyntöön, joka on tässä elinkaaren tilassa.
 7. Määritä **luo työtilaus** -asetukseksi **Kyllä**, jos työtilauksen voi luoda ylläpitopyynnöstä, joka on tässä elinkaaren tilassa.
 8. Määritä **Poista**-asetukseksi **Kyllä**, jos ylläpitopyyntö voidaan poistaa, kun se on tässä elinkaaren tilassa.
-9. **Päivitys**-pikavälilehden **Resurssi**-osan **Saapuva**- ja **Lähtevä**-asetukset ovat merkityksellisiä, jos käytät varastokorjausta. Määritä sopiva vaihtoehto arvoon **kyllä**, jos kunnossapitopyynnössä valittujen resurssien elinkaaren tilaksi päivitetään automaattisesti **Saapuva** tai **Lähtevä**, kun huoltopyynnön elinkaaren tilaksi on määritetty **Saapuva** tai **Lähtevä**.
+9. **Päivitä**-pikavälilehdessä **käyttöomaisuus**-osan **saapuvat** ja **lähtevät** asetukset ovat olennaisia, jos käytät varaston korjausta. Määritä sopiva vaihtoehto **Kyllä**, jos ylläpitopyynnössä valittujen käyttöomaisuuserien elinkaaren tila päivitetään automaattisesti **saapuvaan** tai **lähtevään** tilaan, kun ylläpitopyynnön elinkaaritilaksi määritetään **saapuva** tai **lähtevä**.
 
 Seuraavassa kuvassa on esimerkki **Ylläpitopyynnön elinkaaren tilat** -sivusta.
 

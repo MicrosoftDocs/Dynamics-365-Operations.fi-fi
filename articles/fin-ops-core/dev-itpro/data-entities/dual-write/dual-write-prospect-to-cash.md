@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172805"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270285"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospektista käteiseksi -kaksoiskirjoitus
 
@@ -66,6 +66,14 @@ Myyntitarjoukset luodaan Salesissa tai Supply Chain Managementissa. Jos luot tar
 + Voit lisätä tarjouksen tuotteeseen alennuksen. Tässä tapauksessa alennus synkronoidaan Supply Chain Managementiin. Otsikon **Alennus**-, **Veloitukset**- ja **Vero**-kenttien hallinta perustuu Supply Chain Managementin määrityksiin. Tämä määritys ei tue integrointimääritystä. Sen sijaan **Hinta**-, **Alennus**-, **Veloitus**- ja **Vero**-kenttiä ylläpidetään ja käsitellään Supply Chain Managementissa.
 + Myyntitarjouksen otsikon vain luku -kenttiä ovat **Alennusprosentti**, **Alennus** ja **Rahdin summa**.
 + **Kuljetusehdot**-, **Toimitusehdot**-, **Toimitustapa**- ja **Toimitustila**-kentät eivät sisälly oletusarvoisiin yhdistämismäärityksiin. Näiden kenttien määrittämistä varten on määritettävä arvomääritys, joka koskee vain niiden organisaatioiden tietoja, joiden välillä yksikkö synkronoidaan.
+
+Jos käytät myös Field Service -ratkaisua, muista ottaa **Tarjousrivin pikakäynnistys** -parametri uudelleen käyttöön. Kun parametri otetaan uudelleen käyttöön, voit jatkaa tarjousrivien luomista pikaluontitoiminnon avulla.
+1. Siirry Dynamics 365 Sales -sovellukseen.
+2. Valitse yläreunan siirtymispalkista Asetukset-kuvake.
+3. Valitse **Lisäasetukset**.
+4. Valitse **Mukauta järjestelmä** -vaihtoehto.
+5. Valitse **Tarjousrivi**-valikkovaihtoehto.
+6. Siirry **Tietopalvelut**-osioon ja valitse **Salli pikaluonti** -valintaruutu.
 
 ## <a name="sales-orders"></a>Myyntitilaukset
 

@@ -3,7 +3,7 @@ title: Lisää tietosuojakäytäntösivu
 description: Tässä ohjeaiheessa kerrotaan, miten tietosuojakäytäntösivu lisätään sivustollesi Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: v-chgri
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ee9a68f46c91299065732e5f65479906f9e06079
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001320"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274208"
 ---
 # <a name="add-a-privacy-policy-page"></a>Lisää tietosuojakäytäntösivu
 
@@ -54,23 +54,20 @@ Kun haluat aloittaa, siirry sisällönluontityökaluihin sivustossa, johon halua
 
 Voit luoda mallin seuraavien vaiheiden avulla.
 
-1. Siirry kohtaan **Mallit \> Uusi malli**.
-1. Kirjoita mallin nimi ja valitse **OK**.
-1. Lisää tarvittavat moduulit malliin vaadittavien sivupaikkojen kohdalle. Jos haluat ohjeita, vie hiiri punaisen huutomerkin päälle.
-
-    Esimerkiksi **HTML-head-paikka** saattaa vaatia **ulkoisen oletuskomentosarjamoduulin**.
-
+1. Siirry kohtaan **Mallit** ja luo sivumalli valitsemalla **Uusi**.
+1. Kirjoita **Uusi malli** -valintaikkunan **Mallin nimi** -kohtaan **Mainosnauhan malli** ja valitse sitten **OK**.
+1. Lisää tarvittavat moduulit malliin vaadittavien sivupaikkojen kohdalle. Jos haluat ohjeita, vie hiiri punaisen huutomerkin päälle. (Esimerkiksi **HTML-head-paikka** saattaa vaatia **ulkoisen oletuskomentosarjamoduulin**.)
 1. Lisää **Tekstipaikkaan** **Oletussivumoduuli**.
 1. Lisää **Sisällöntäyteinen lohkomoduuli** **Oletussivun** **Pääpaikkaan**.
 1. Lisää **Sisällöntäyteiseen lohkomoduuliin** **Sisällöntäyteinen lohkonimikemoduuli**.
-1. Kirjaa malli sisään ja julkaise se.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi mallin, ja julkaise se valitsemalla **Julkaise**.
 
 ### <a name="build-a-privacy-policy-page"></a>Luo tietosuojakäytäntösivu
 
 Voit luoda tietosuojakäytäntösivun noudattamalla seuraavia ohjeita.
 
-1. Siirry kohtaan **Sivut \> Uusi sivu**.
-1. Valitse tietosuojakäytäntösivun malli.
+1. Siirry kohtaan **Sivut** ja sitten **Uusi** luodaksesi uuden sivun.
+1. Valitse **Valitse malli** -valintaikkunan tietosuojakäytäntösivun malli.
 1. Kirjoita sivun nimi ja URL-osoite ja valitse **OK**. 
 1. Lisää **Sisällöntäyteinen lohkomoduuli** sivun **Pääpaikkaan**.
 1. Lisää **Sisällöntäyteiseen lohkomoduuliin** **Sisällöntäyteinen lohkonimikemoduuli**.
@@ -78,12 +75,12 @@ Voit luoda tietosuojakäytäntösivun noudattamalla seuraavia ohjeita.
 1. Kirjoita RTF-editorissa tietosuojakäytäntösivun sisältö. Laajenna Rich Text -editori tarvittaessa koko näytön tilaan.
 1. Kun olet lopettanut sisällön kirjoittamisen, esikatsele sivua verkkoselaimessa valitsemalla **Esikatselu**.
 1. Täydennä kaikki sivun ja moduulin ominaisuuksien jäljellä olevat lisäykset.
-1. Kirjaa tietosuojakäytäntösivu sisään ja julkaise se.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi sivun, ja julkaise se valitsemalla **Julkaise**.
 
 Voit julkaista tietosuojakäytäntösivun URL-osoitteen seuraavasti.
 
 1. Siirry **URL-osoitteisiin** ja valitse tietosuojakäytäntösivun URL-osoite.
-1. Julkaise valitut URL-osoitteet.
+1. Julkaise valittu URL-osoite valitsemalla **Julkaise**.
 
 ### <a name="create-a-link-to-the-privacy-policy-page-in-a-footer"></a>Luo linkki tietosuojakäytäntösivun alatunnisteeseen
 
@@ -91,15 +88,14 @@ Voit lisätä linkin tietosuojakäytäntösivun osaan. Tällä tavoin voit jakaa
 
 Voit lisätä linkin alatunnisteosaan seuraavasti.
 
-1. Siirry kohtaan **Sivun osat \> Uusi sivun osa**.
-1. Valitse **Alatunniste**-moduuli ja kirjoita sitten nimi **Sivun osan nimi** -kenttään.
+1. Siirry kohtaan **Sivun osat** ja **Uusi** luodaksesi sivun osan.
+1. Valitse **Uusi sivun osa** -valintaikkunassa **Alatunniste**-moduuli.
+1. Kirjoita **Sivun osan nimi** -kohtaan osan nimi ja valitse sitten **OK**.
 1. Lisää **Alatunnisteluokka**-paikkaan **Alatunnisteen nimike** -moduuli.
 1. Valitse oikeanpuoleisessa ominaisuusruudussa **Linkitä teksti**.
 1. Kirjoita **Linkitä teksti** -valintaikkunassa tietosuojakäytäntösivun linkkiteksti ja linkkikohde ja valitse sitten **OK**.
-
-    Jos haluat saada tietosuojakäytäntösivun URL-osoitteen, siirry kohtaan **Sivut**, siirry tietosuojakäytäntösivulle ja kopioi URL-osoite Ominaisuudet-ruudusta.
-
-1. Tallenna osa, kirjaa se sisään ja julkaise se.
+1. Jos haluat saada tietosuojakäytäntösivun URL-osoitteen, siirry kohtaan **Sivut**, siirry tietosuojakäytäntösivulle ja kopioi URL-osoite Ominaisuudet-ruudusta.
+1. Valitse **Tallenna**, valitse **Viimeistele muokkaus** tarkistaaksesi osan, ja julkaise se valitsemalla **Julkaise**.
 1. Esikatsele osa ja testaa linkki tietosuojakäytäntösivulle.
 
 Osaan voidaan nyt viitata muiden sivuston sivujen mallissa. Kun tähän osaan viitataan mallin **Alatunniste**-moduulissa, linkkiviittaus näkyy kaikilla sivuilla, jotka on rakennettu kyseisen mallin avulla.
@@ -111,3 +107,5 @@ Osaan voidaan nyt viitata muiden sivuston sivujen mallissa. Kun tähän osaan vi
 [Helppokäyttöisyyden toiminnot ja ominaisuudet](accessibility.md)
 
 [Evästeen yhteensopivuus](cookie-compliance.md)
+
+[Seurattuihin sisällönmuutoksiin liittyvien käyttäjätunnusten korvaaminen](replace-IDs-tracked-changes.md)

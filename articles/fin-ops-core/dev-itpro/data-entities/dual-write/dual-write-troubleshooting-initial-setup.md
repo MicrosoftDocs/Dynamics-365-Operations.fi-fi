@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e20c9c5e1250c8e65b5642a7c45d7ae859315697
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172665"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275438"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Ongelmien vianmääritys alkumäärityksen aikana
 
@@ -39,7 +39,7 @@ Tässä artikkelissa on vianetsintätietoja kaksoiskirjoituksen integroinnista F
 
 ## <a name="you-cant-link-a-finance-and-operations-app-to-common-data-service"></a>Et voi linkittää Finance and Operations -sovellusta Common Data Serviceen
 
-**Kaksoiskirjoituksen asetusten edellyttämät tunnistetiedot:** Azure AD -vuokralaisten hallinta
+**Kaksoiskirjoituksen asettamiseen vaadittava rooli:** Järjestelmän ylläpitäjä Finance and Operations -sovelluksissa ja Common Data Servicessä.
 
 **Asennuslinkki Common Data Serviceen** -sivulla olevat virheet johtuvat yleensä puutteellisista määritys- tai käyttöoikeusongelmista. Varmista, että koko terveystarkistus siirtyy **Asennuslinkillä Common Data Serviceen**, kuten seuraavasta kuvasta käy ilmi. Kaksoiskirjoittamista ei voi linkittää, ellei koko terveystarkistus ole ohi.
 

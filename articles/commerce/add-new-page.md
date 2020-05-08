@@ -3,7 +3,7 @@ title: Uuden sivuston sivun lisääminen
 description: Tässä ohjeaiheessa kerrotaan, miten uusi sivu lisätään Microsoft Dynamics 365 Commerce -sovelluksessa.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68461f1f0be46f979a67e1806e03c02200cf61db
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001343"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269955"
 ---
 # <a name="add-a-new-site-page"></a>Uuden sivuston sivun lisääminen
 
@@ -67,7 +67,7 @@ Voit lisätä sivustoon uuden sivuston sivun seuraavasti.
 1. Valitse **Sisällöntäyteinen lohko**. Valitse kolmen pisteen painike ja valitse sitten **Lisää moduuli**.
 1. Valitse **Sisällöntäyteinen lohkonimike** ja valitse sitten **OK**.
 1. Valitse oikeanpuoleisessa ominaisuusruudussa **Kappale** ja kirjoita kenttään **Oma tekstiteksti**.
-1. Valitse ensin **Tallenna** ja sitten **Kirjaa sisään**.
+1. Valitse ensin **Tallenna** ja sitten **Lopeta muokkaus**.
 1. Syötä **Kommentit**-kenttään **Lisätty uusi sivu** ja valitse **OK**.
 1. Esikatsele sivua valitsemalla **Esikatsele**. Kun olet valmis, palaa muokkaustyökaluun sulkemalla Esikatselu-välilehti.
 1. Valitse **Julkaise**.

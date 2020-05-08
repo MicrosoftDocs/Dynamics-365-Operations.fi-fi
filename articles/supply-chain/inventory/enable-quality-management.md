@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
-ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
+ms.openlocfilehash: e1d7828e6bb9a3684c1d76e2cfac96174a8dfbf4
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3224906"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268813"
 ---
 # <a name="quality-management-overview"></a>Laadunhallinnan yleiskuvaus
 
@@ -43,7 +43,11 @@ Laadunhallinta on joustavaa ja se voidaan toteuttaa eri tavoin vastaamaan toimit
 
 -   Laadunvalvontaprosessin käynnistäminen automaattisesti ennaltamääritettyjen ehtojen perusteella (kun tietyn toimittajan ostotilaus rekisteröidään varastossa).
 -   Varaston esto tarkastuksen aikana, jotta varastoa, jota ei ole hyväksytty, ei käytetä (ostotilausmäärien täysi esto).
--   Nimikeotannan käyttö laatuliitoksen osana määritettäessä tarkastettavan fyysisen varaston tämän hetkistä määrää. Otanta voi perustua kiinteisiin määriin tai prosenttiosuuteen.
+-   Nimikeotannan käyttö laatuliitoksen osana määritettäessä tarkastettavan fyysisen varaston tämän hetkistä määrää. Otanta voi perustua kiinteisiin määriin, prosenttiosuuteen tai täyteen rekisterikilpeen.
+
+> [!NOTE]
+> _Varastoprosessien laadunhallinta_ -ominaisuus laajentaa laadunhallinnan ominaisuuksia. Jos käytät tätä toimintoa, katso kohdasta [Varaston prosessien laadunhallinta](quality-management-for-warehouses-processes.md) esimerkkejä siitä, miten laadunhallinta toimii, kun se otetaan käyttöön.
+
 -   Luo laatutilaukset osittaisille vastaanotoille. Tilauksen mukana fyysisesti vastaanotettuun määrään perustuva laatutilaus luodaan valitsemalla **Päivitettyä määrää kohden** -valintaruutu **Nimikeotanta**-lomakkeessa.
 -   Testin pienimmän, suurimman ja tavoiteltavan arvon sisältävien testityyppien luominen sekä sellaisen määrää ja laatua vertailevan testin suorittaminen, jolla on ennalta määritetyt tarkistustulokset.
 -   Hyväksyttävän laadun tason määrittäminen laadun mittaustoleranssien hallintaa varten.
@@ -428,6 +432,9 @@ Jos asetat tuotannossa **Tapahtumatyyppi**-kentän arvoksi **Ilmoita valmiiksi**
 </tbody>
 </table>
 
+> [!NOTE]
+> *Varastoprosessien laadunhallinta* -ominaisuus lisää laatutilausten käsittelytoiminnot tuotannoille, joiden **Tapahtumatyyppi** on *Ilmoita valmiiksi* ja **Suorittamiseksi** on määritetty *Jälkeen*, sekä ostoille, joiden **Tapahtumatyyppi** on määritetty *Rekisteröimiseksi*. Lue lisätietoja kohdasta [Laadunhallinta varastoprosesseja varten](quality-management-for-warehouses-processes.md).
+
 ## <a name="quality-management-pages"></a>Laadunhallinnan sivut
 <table>
 <colgroup>
@@ -438,7 +445,7 @@ Jos asetat tuotannossa **Tapahtumatyyppi**-kentän arvoksi **Ilmoita valmiiksi**
 <thead>
 <tr class="header">
 <th>Sivu</th>
-<th>Kuvaus</th>
+<th>kuvaus</th>
 <th>Esimerkki</th>
 </tr>
 </thead>
@@ -495,3 +502,5 @@ Laatuliitos on määritettävä kutakin sellaista liiketoimintaprosessin muutost
 [Laadunhallintaprosessit](quality-management-processes.md)
 
 [Määrityksistä poikkeamisen hallinta](enable-nonconformance-management.md)
+
+[Laadunhallinta varastoprosesseja varten](quality-management-for-warehouses-processes.md)

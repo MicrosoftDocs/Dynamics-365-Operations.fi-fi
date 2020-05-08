@@ -1,9 +1,9 @@
 ---
 title: Luvatut tilaukset
-description: Tässä artikkelissa on tietoja tilaustenkäsittelyn lupauksista. Tilauksen lupausten avulla voit luvata toimituspäivämäärät asiakkaillesi luotettavasti ja antaa sinulle joustavuuden, jonka avulla voit toteuttaa lupauksesi.
+description: Tässä ohjeaiheessa on tietoja tilaustenkäsittelyn lupauksista. Tilauksen lupausten avulla voit luvata toimituspäivämäärät asiakkaillesi luotettavasti ja antaa sinulle joustavuuden, jonka avulla voit toteuttaa lupauksesi.
 author: ShylaThompson
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78b81431d44ea5f85676b6999eece1330d3101a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ccb7ef432553c0516eb49013eaad68dd21bf752c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210048"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270024"
 ---
 # <a name="order-promising"></a>Luvatut tilaukset
 
 [!include [banner](../includes/banner.md)]
 
-Tässä artikkelissa on tietoja tilaustenkäsittelyn lupauksista. Tilauksen lupausten avulla voit luvata toimituspäivämäärät asiakkaillesi luotettavasti ja antaa sinulle joustavuuden, jonka avulla voit toteuttaa lupauksesi.
+Tässä ohjeaiheessa on tietoja tilaustenkäsittelyn lupauksista. Tilauksen lupausten avulla voit luvata toimituspäivämäärät asiakkaillesi luotettavasti ja antaa sinulle joustavuuden, jonka avulla voit toteuttaa lupauksesi.
 
 Luvatuissa tilauksissa lasketaan, mikä on aikaisin lähetys- ja vastaanottopäivä toimituspäivän valvontapäivän ja kuljetuspäivien perusteella. Valittavana on neljä toimituspäivän valvontamenetelmää:
 
@@ -47,11 +47,13 @@ ATP-määrä lasketaan seuraavaa kaavaa käyttäen:
 
 ATP = edeltävän kauden ATP + nykyisen kauden vastaanotot – nykyisen kauden varasto-otot – jokaisen tulevan kauden varasto-ottojen nettosumma siihen kauteen saakka, jonka kohdalla kaikkien tulevien kausien vastaanottojen summa kyseinen tuleva kausi mukaan lukien on suurempi kuin varasto-ottojen summa kyseinen tuleva kausi mukaan lukien.  
 
+Huomaa, että ATP-laskennassa ei ole tietoja erääntymispäivästä eikä ATP-aikarajan jälkeisistä tiedoista, joita järjestelmä odottaa, kun mitään määrää voidaan luvata.
+
 Kun huomioitavia varasto-ottoja tai vastaanottoja ei enää ole, seuraavien päivämäärien ATP-määrä on sama kuin viimeinen laskettu ATP-määrä.  
 
 Jos kaikkia nimikkeessä käytettäviä dimensioita ei anneta, kun ATP-tarkistus on valmis, ne voidaan silti määrittää varasto-ottoon ja vastaanottoihin. Tässä tilanteessa ATP-laskenta edellyttää, että vastaanotot ja varasto-otot on koottava valmiisiin dimensioihin, jotta ATP-laskennassa käytettävien vastaanotto- ja varasto-ottorivien määrää voidaan vähentää.  
 
-Näytettävä ATP-määrä on aina suurempi tai yhtä suuri kuin 0 (nolla). Jos laskutoimituksen tulos on negatiivinen ATP-määrä (jos aiemmin luvattu määrä on esimerkiksi suurempi kuin käytettävissä oleva määrä), ohjelma määrittää määräksi automaattisesti **0**.
+Näytettävä ATP-määrä on aina suurempi tai yhtä suuri kuin 0 (nolla). Jos laskutoimituksen tulos on negatiivinen ATP-määrä (jos aiemmin luvattu määrä on esimerkiksi suurempi kuin käytettävissä oleva määrä), määräksi määritetään automaattisesti 0.
 
 ### <a name="example"></a>Esimerkki
 

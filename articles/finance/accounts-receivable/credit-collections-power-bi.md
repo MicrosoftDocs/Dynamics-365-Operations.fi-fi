@@ -3,7 +3,7 @@ title: Luotonvalvonnan hallinnan Power BI-sisältö
 description: Tässä ohjeaiheessa kerrotaan, mitä luotonvalvonnan hallinnan Power BI -sisältö sisältää. Siinä selitetään, miten sisältyvät Power BI -raportit avataan, sekä kerrotaan sisällön muodostamisessa käytettävistä tietomallista ja yksiköistä.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5ac47ee086569cdaaa3c30f76435432e64f8fac6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5c4a2289d7fa0f062735c93cf26cba9ac29ab94e
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189105"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278871"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Luotonvalvonnan hallinnan Power BI-sisältö
 
@@ -49,7 +49,7 @@ Seuraavat asetukset on tehtävä, jotta tiedot näkyisivät Power BI -visualisoi
 1. Voit määrittää **järjestelmän valuutan** ja **järjestelmän vaihtokurssin** valitsemalla **Järjestelmän hallinta > Asetukset > Järjestelmän parametrit**.
 2. Määritä **Kirjanpitovaluutta** ja **Vaihtokurssin tyyppi** valitsemalla **Kirjanpito > Asetukset > Kirjanpito**.
 3. Määritä tapahtuma- ja kirjanpitovaluuttojen sekä kirjanpito- ja järjestelmävaluutan välillä. Tee se valitsemalla **Kirjanpito > Valuutat > Valuutan vaihtokurssit**.
-4. Päivitä **CustCollectionsBIMeasurements**-koostemitta valitsemalla **Järjestelmän hallinta > Asetukset > Yksikkösäilö**.
+4. Päivitä **CustCollectionsBIMeasurementsV2**-koostemitta valitsemalla **Järjestelmän hallinta > Asetukset > Yksikkösäilö**.
 
 ## <a name="accessing-the-power-bi-content"></a>Power BI -sisällön käyttäminen
 

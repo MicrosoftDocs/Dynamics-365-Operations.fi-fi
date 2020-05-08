@@ -19,17 +19,16 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 54201de6b242f8100c19a78468476a6308b1b18a
-ms.sourcegitcommit: 5554b3abb4365666992efad692ae28e943faebd4
+ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
+ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3116553"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265577"
 ---
 # <a name="show-discounts-in-pos"></a>Alennusten näyttäminen myyntipisteessä
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Kampanjat ovat tärkeä osa ostopäätöksiä tekevien asiakkaiden motivoinnissa. Esimerkiksi lomat voivat tuottaa vähittäismyyjille suurimman myyntimäärän, koska vähittäismyyntimarkkinat ovat täynnä houkuttelevia kampanjoita ja alennuksia. Jos myyjät tietävät käytettävissä olevista kampanjoista ja ymmärtävät niitä, he voivat helposti hyödyntää niitä ristiin- ja lisämyynnissä. Tässä ohjeaiheessa kerrotaan, miten myyjät saavat Microsoft Dynamics 365 Commercesta tietoja kampanjoista ja niiden käyttämisestä ristiinmyynti- ja lisämahdollisuuksista.
 

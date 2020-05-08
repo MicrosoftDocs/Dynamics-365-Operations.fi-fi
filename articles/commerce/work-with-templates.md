@@ -3,7 +3,7 @@ title: Mallien käyttö
 description: Tässä ohjeaiheessa käsitellään mallien käsittelemistä Microsoft Dynamics 365 Commercessa.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 815565dd203925fa0acca9336c4ddc56db8c4058
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002564"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269863"
 ---
 # <a name="work-with-templates"></a>Mallien käyttö
 
@@ -132,14 +132,14 @@ Voit lisätä malliin komentosarjan seuraavasti:
 Voit tallentaa mallin ja kirjata sen sisään seuraavasti.
 
 1. Valitse **Tallenna** mallieditorin yläosassa. Tallennetut muutokset eivät vaikuta verkosta tietoja lataaviin sivuihin, ennen kuin ne on kuitattu sisään.
-1. Valitse **Kirjaa sisään**. Tekemäsi muutokset ovat nyt verkosta tietoja lataavien työnkulkujen löydettävissä.
+1. Valitse **Viimeistele muokkaus**. Tekemäsi muutokset ovat nyt verkosta tietoja lataavien työnkulkujen löydettävissä.
 
 Voit esikatsella muutoksia avaamalla olemassa olevan mallia käyttävän sivun tai luomalla uuden sivun mallista.
 
 Kun olet esikatsellut malliin tehdyt muutokset, julkaise malli live-sivustossa jonkin seuraavan vaiheen avulla.
 
 * Siirry **Mallit**-kohtaan, valitse malli ja valitse sitten **Julkaise**.
-* Valitse mallieditorissa **Julkaise**.
+* Valitse asettelun nimi avataksesi asettelueditorin ja valitse sitten **Julkaise**.
 * Julkaise sivu, joka viittaa julkaisemattomaan malliin. Malli julkaistaan automaattisesti.
 
 > [!WARNING]
