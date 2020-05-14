@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (huhtikuu 2020)
                   href: get-started/whats-new-platform-update-33.md
-                - name: Platform update 32 (helmikuu 2020)
-                  href: get-started/whats-new-platform-update-32.md
             - name: Poistetut tai vanhentuneet ominaisuudet
               items:
                 - name: Poistetut tai vanhentuneet Platform-ominaisuudet
@@ -140,8 +138,6 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Kaksoiskirjoituksen asetukset Lifecycle Servicesistä
                               href: data-entities/dual-write/lcs-setup.md
-                            - name: Ensimmäinen synkronointi
-                              href: data-entities/dual-write/initial-sync.md
                             - name: Ota kaksoiskirjoitus käyttöön nykyisissä Finance and Operations -sovelluksissa
                               items:
                                 - name: Ota kaksoiskirjoitus käyttöön nykyisissä Finance and Operations -sovelluksissa
@@ -556,6 +552,16 @@
                   href: dev-tools/development-system-requirements.md
             - name: 'Versionhallinta, metatietojen haku ja siirtyminen'
               href: dev-tools/version-control-metadata-navigation.md
+            - name: Koontiversioiden luonnin automatisointi Azuren avulla
+              items:
+                - name: Koontiversioiden luonnin automatisointi Microsoftin isännöimien edustajien ja Azure Pipelinesin avulla
+                  href: dev-tools/hosted-build-automation.md
+                - name: Käyttöoikeustiedostojen lisääminen käyttöönotettavaan pakettiin Azure Pipelinesissa
+                  href: dev-tools/pipeline-add-license-package.md
+                - name: Käyttöönotettavien pakettien luominen Azure Pipelinesissa
+                  href: dev-tools/pipeline-create-deployable-package.md
+                - name: X++-malliversiointi Azure Pipelinesissa
+                  href: dev-tools/pipeline-model-version.md
             - name: Kuljetuskaluston hallinnan esimerkkisovellus
               items:
                 - name: Kuljetuskaluston hallinnan esimerkkisovelluksen kattava skenaario
@@ -1396,6 +1402,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Käyttäjien liittäminen käyttöoikeusrooleihin
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Tehtävätallenteiden suojausdiagnostiikka
+                  href: sysadmin/tasks/security-diagstics-task-recordings.md
             - name: Eräkäsittely
               items:
                 - name: Eräkäsittelyn yleiskatsaus

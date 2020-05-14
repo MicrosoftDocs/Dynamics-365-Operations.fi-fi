@@ -423,8 +423,10 @@
                   href: asset-management/controlling-and-reporting/asset-kpis.md
                 - name: 'Nimike, jossa käytetty'
                   href: asset-management/controlling-and-reporting/item-where-used.md
-                - name: Ylläpitotila
+                - name: Ylläpidon tila
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Resurssien hallinnan integraatio Dynamics 365 Guidesin kanssa
+              href: asset-management/asset-management-guides-integration.md
             - name: Resurssien hallinnan mobiilityötila
               href: asset-management/asset-management-mobile-workspace.md
         - name: Tietojen hallinta
@@ -703,7 +705,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Taloushallinnon dimensioiden lisääminen koottuihin mittoihin
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Analyysiraporttien luominen PowerBI Desktopin avulla
+                - name: Analyysiraporttien luonti Power BI Desktopilla
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1055,13 +1057,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
             - name: Sähköisen raportoinnin muotojen suunnitteleminen laskennan ja yhteenlaskujen suorittamiseksi luotujen tietojen perusteella
               items:
-                - name: Muotojen luominen laskennan ja yhteenlaskujen suorittamista varten
+                - name: Muotojen luominen laskentaa ja summien tuottamista varten
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Muodon konfigurointi laskennan ja yhteenlaskujen suorittamista varten
+                - name: Muodon konfigurointi laskentaa ja summien tuottamista varten
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Laskutoimitusten käyttäminen laskentaan ja yhteenlaskuihin
+                - name: Laskutoimitusten käyttäminen laskentaan ja summien tuottamiseen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Muotojen suorittaminen laskutoimien ja yhteenlaskujen suorittamiseksi
+                - name: Muotojen suorittaminen laskentaa ja summien tuottamista varten
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
             - name: Sarakkeiden lisääminen Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
               items:
@@ -1135,7 +1137,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
             - name: Oppaat
               items:
-                - name: Useiden sovellustaulujen tietojen hakeminen tietolähteiden JOIN-liitostoiminnolla
+                - name: Useiden sovellustaulujen tietojen hakeminen tietolähteiden LIITÄ-määrityksen avulla
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
@@ -1319,7 +1321,7 @@
               items:
                 - name: Suunnittelun optimoinnin yleiskatsaus
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Negatiivista varastosaldoa käsitellään nollamääräisenä varastosaldona
+                - name: Suunnittelu negatiivisilla käytettävissä olevalla määrillä
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Suunnittelun optimoinnin aloittaminen
                   href: master-planning/planning-optimization/get-started.md
@@ -2651,10 +2653,8 @@
                   href: warehousing/immediate-replenishment.md
                 - name: Täydennys ja otto-kanbanit
                   href: warehousing/material-replenishment-withdrawal-kanban.md
-                - name: Vähimmäis-/enimmäistäydennysprosessin määrittäminen
+                - name: Määritä minimi-/maksimitäydennysprosessi
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
-                - name: Työmallin määrittäminen ostotilauksia varten
-                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
             - name: Varastointisovelluksen asentaminen ja määrittäminen
               items:
                 - name: Asentaminen ja määrittäminen – yleiskatsaus
@@ -2663,7 +2663,7 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Varastotyön mobiililaitteiden määrittäminen
                   href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Rekisterikilven vastaanotto varastoinnin mobiilisovelluksella
+                - name: Rekisterikilven vastaanotto varastointisovelluksella
                   href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Valikkokohteen määrittäminen mobiililaitteelle ostotilauksen työn suoritusta varten
                   href: warehousing/tasks/set-up-mobile-device-menu.md
