@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: ERSolutionTable , ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
+ms.search.form: ERSolutionTable, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2940d99243ac52ee0d56a1c4423c4f0250f42f57
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: c08e81b6e2983a8f16104698944820e93ba3852d
+ms.sourcegitcommit: 139c8007e68d279d7ca9aa302598217522abb8cb
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091769"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331321"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Suhteellisen polun käyttäminen ER-mallien ja-muotojen tietojen sidonnoissa
 
@@ -29,10 +29,10 @@ ms.locfileid: "3091769"
 
 Sähköisellä raportointityökalun (ER) avulla käyttäjät voivat määrittää sähköisen muodon rakenteita ja kuvailla sitten, miten kyseiset rakenteet täytetään sovelluksessa olevilla tiedoilla ja algoritmeilla. Lisätietoja on kohdassa [Sähköisen raportoinnin konfiguraatioiden luominen](electronic-reporting-configuration.md) Voit määrittää Finance and Operations -tietojen noutamiseen tarvittavan tietovirran ja sen avulla luotavan sähköisen asiakirjan seuraavasti:
 
-- Sido määritetyt tietolähteet suunnitellun toimialuekohtaisen tietomallin elementteihin. Mallin rakenne ja valitut tietolähteet voivat olla osa monimutkaista hierarkkista rakennetta. Tämän vuoksi lopulliset sidonnat voivat olla suuria ja niissä voi olla useita erityyppisiä elementtejä (kuten suhteita, tauluja ja menetelmiä). Sidontojen luettavuus heikkenee ja niiden tarkistaminen ja ymmärtäminen voi olla hankalaa etenkin muille kuin omistajille. 
-- Sitomalla tietomallin elementit muodon osiin voit määrittää, mitkä tiedot täytetään tietomallista luodun muodon tulokseen.
+- Sido määritetyt tietolähteet suunnitellun toimialuekohtaisen [tietomallin](general-electronic-reporting.md#data-model-and-model-mapping-components) elementteihin. Mallin rakenne ja valitut tietolähteet voivat olla osa monimutkaista hierarkkista rakennetta. Tämän vuoksi lopulliset sidonnat voivat olla suuria ja niissä voi olla useita erityyppisiä elementtejä (kuten suhteita, tauluja ja menetelmiä). Sidontojen luettavuus heikkenee ja niiden tarkistaminen ja ymmärtäminen voi olla hankalaa etenkin muille kuin omistajille. 
+- Sitomalla tietomallin elementit [muodon](general-electronic-reporting.md#FormatComponentOutbound) osiin voit määrittää, mitkä tiedot täytetään tietomallista luodun muodon tulokseen.
 
-ER-yhdistämismääritysten suunnitteluohjelmien käytettävyyttä parantamaan on julkaistu suhteellisen polun ominaisuus. Suhteellisen polun esitysvaihtoehto on oletusarvoisesti otettu käyttöön sovelluksen kaikissa uusissa esiintymissä, joissa ER-suunnittelukokemus on otettu käyttöön (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Suhteellisen polun parametri on toteutettu, jotta käyttäjät voivat jatkaa täydellisen polun käyttämistä, kun he käsittelevät ER-sidontojen tätä esitystä.
+ER-yhdistämismääritysten suunnitteluohjelmien käytettävyyttä parantamaan on julkaistu [suhteellisen polun](er-formula-language.md#relative-path) ominaisuus. Suhteellisen polun esitysvaihtoehto on oletusarvoisesti otettu käyttöön sovelluksen kaikissa uusissa esiintymissä, joissa ER-suunnittelukokemus on otettu käyttöön (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Suhteellisen polun parametri on toteutettu, jotta käyttäjät voivat jatkaa täydellisen polun käyttämistä, kun he käsittelevät ER-sidontojen tätä esitystä.
 
 [![Käyttäjän parametrit](./media/relative-path-01.png)](./media/relative-path-01.png)
 
@@ -54,3 +54,7 @@ Tämä toiminto ei katkaise ER-kehyksen yhteensopivuutta aiempien versioiden kan
 
 > [!NOTE]
 > Kaikki muutokset, jotka otettiin käyttöön mallin yhdistämismääritysten sisäkkäisten elementtien sidontojen joukkomuokkauksella, tallennetaan oikein määrityksen muutostiedostoon (muutosten seurantaan). Tällä tavoin asiakkaat voivat pohjustaa mallin yhdistämismääritysten johdetut versiot sen mihin tahansa uuteen perusversioon, jota on muokattu tällä uudella toiminnolla.
+
+## <a name="additional-resources"></a>Lisäresurssit
+
+[ER-kaavan kieli](er-formula-language.md)

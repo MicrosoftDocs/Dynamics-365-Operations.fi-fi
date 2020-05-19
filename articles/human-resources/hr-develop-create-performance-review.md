@@ -1,9 +1,9 @@
 ---
 title: Työsuorituksen arviointien luominen
-description: Tässä artikkelissa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus.
+description: Tässä aiheessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/06/2019
+ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 50ef3f305756f1ab0db895854cd7e1c71237cb48
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 22f3e82e7a1ebba689c1aa1ebbe75603a5c09188
+ms.sourcegitcommit: f06e48c7d487299aa4e2cff3e8f60cb8be0790df
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3008882"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3334680"
 ---
 # <a name="create-performance-reviews"></a>Työsuorituksen arviointien luominen
 
 
-
-Tässä artikkelissa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus. Tämä menettelyn luomisessa käytettiin USMF-yrityksen demotietoja.
+Tässä aiheessa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan arvioinnin eri osien tarkoitus. Tämä menettelyn luomisessa käytettiin USMF-yrityksen demotietoja.
 
 1. Valitse aloitussivulla **Työntekijän itsepalvelu** -työtila.
 2. Luo arviointi napsauttamalla **Uusi arviointi**.
@@ -37,7 +36,7 @@ Tässä artikkelissa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan a
 6. Valitse **OK**. Voit luoda arvioinnin myös mallista. Tämä on paras tapa luoda arviointi, koska jokainen osa sisältää tiedot, jotka tarvitaan arvioinnin aloittamiseen.  
 7. Voit näyttää tai piilottaa välilehdet, kuten Liitteet-välilehden:
 
-    1. Avaa pudotusvalikkoikkuna valitsemalla toimintoruudussa **Näytä osat**.
+    1. Valitse pudotusvalikkoikkunassa **Näytä osat** avataksesi valikkoikkunan.
     1. Näytä tai piilota Liitteet-välilehti valitsemalla **Näytä liitteet**-kentässä **kyllä** tai **ei**.
     1. Valitse **Tallenna**.
 
@@ -51,7 +50,7 @@ Tässä artikkelissa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan a
 15. Valitse **Lisää kommentti**.
 16. Valitse **Kirjaa**.
 17. Valitse **Mittaukset**-välilehti.
-18. Avaa valintaikkuna valitsemalla **Lisää mitta**.
+18. Valitse **Lisää mitta** avataksesi valintaikkunan.
 19. Syötä tai valitse arvo kentässä **Mitta**.
 26. Syötä **Tavoitemäärä** -kenttään haluamasi luku.
 20. Valitse **OK**.
@@ -67,13 +66,13 @@ Tässä artikkelissa opastetaan suorituskykyarvioinnin luonti sekä kuvaillaan a
 30. Valitse **Luokitukset**-välilehti.  
 
     - Työntekijät ja esimiehet voivat tehdä luokituksen nopeasti **Luokituksen lisätiedot** -pikavälilehdellä. Jos painotukset ovat käytössä, pisteiden painotettu arvo lasketaan automaattisesti.  
-    - Jotta näet tämän osan, ota käyttöön työntekijän luokitukset näyttävä parametriasetus.  
+    - Jotta voit tarkastella tätä osaa, ota käyttöön työntekijän luokitukset näyttävä parametriasetus.  
 
 31. Valitse **Kuittaukset**-välilehti. Jos arvioinnissa käytetään työnkulkua, hyväksynnät näkyvät vasta, kun työnkulku on valmis. Jos työnkulku ei ole käytössä, sekä työntekijä että esimies näytetään tässä. Pakollinen-valintaruutu on valittuna arviointityypin perusteella.  
 32. Valitse **Yleinen**-välilehti.
 
     - Suorituskaudelle luodaan oletuksena aloitus- ja päättymispäivämäärät. Päivämäärät ovat muokattavissa.  
-    - Tiloilla hallitaan arvioinnin käyttöoikeutta. **Ei alkanut** -tila sallii kaikkien käyttäjien muokata arviointia. **Käsittelyssä**-tilassa olevaa arviointia voi tarkastella ja muokata vain työntekijä. Valmis tarkistettavaksi -tilassa olevaa arviointia voi tarkastella ja muokata vain esimies. Lopullinen arviointi -tila mahdollistaa sekä työntekijälle että esimiehelle arvioinnin tarkastelun. Muokkaaminen on mahdollista, jos se on otettu käyttöön arviointityypissä. Tilat **Valmis**, **Peruutettu** ja **Hylätty** asettavat arvioinnin vain luku -tilaan.  
+    - Tiloilla hallitaan arvioinnin käyttöoikeutta. **Ei alkanut** -tila sallii kaikkien käyttäjien muokata arviointia. **Käsittelyssä**-tilassa olevaa arviointia voi tarkastella ja muokata vain työntekijä. **Valmis tarkistettavaksi** -tilassa olevaa arviointia voi tarkastella ja muokata vain esimies. **Lopullinen arviointi** -tila mahdollistaa sekä työntekijälle että esimiehelle arvioinnin tarkastelun. Muokkaaminen on mahdollista, jos se on otettu käyttöön arviointityypissä. Tilat **Valmis** ja **Peruutettu** asettavat arvioinnin vain luku -tilaan. Jos tarkistus on **Hylätty** ja lähetetään takaisin työntekijälle, sekä työntekijä että esimies voivat tehdä tarvittavat muokkaukset, jotta työntekijä voi lähettää sen uudelleen.
 
 33. Kirjoita arvo kenttään **Yhteenveto**.
 34. Valitse **Arviointi**-välilehti. Arvioinnin tilan vaihtuessa työntekijä ja esimies voivat lisätä kommentteja kullekin tavoitteelle tai osaamisalueelle.  

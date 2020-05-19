@@ -3,7 +3,7 @@ title: ER-mallien varmuuskopion tallennustila
 description: Tässä ohjeaiheessa käsitellään tapaa, jolla malleja voi palauttaa sähköisen raportoinnin (ER) varmuuskopion tallennustilan avulla.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2e399290153c2c63ac1c02f0f9cdb956ff5031e5
+ms.sourcegitcommit: 5de75c61c33e57c813944f1ab6100aceb020d432
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771418"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "3321663"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER-mallien varmuuskopion tallennustila
 
@@ -33,7 +33,7 @@ Yrityskäyttäjät voivat määrittää [sähköisen raportoinnin (ER) yleiskats
 
 Kukin määritetty muoto voidaan julkaista ER-ratkaisun osana. Kukin ER-ratkaisu voidaan viedä yhdestä Finance and Operationsin esiintymästä ja tuoda toiseen esiintymään.
 
-ER-kehys säilyttää nykyisen Finance and Operations -esiintymän pakolliset mallit [tiedostojen hallinnan määrityksen](../../fin-ops/organization-administration/configure-document-management.md) avulla. ER-kehyksen asetusten perusteella Microsoft Azure Blob Storage tai Microsoft SharePoint -kansio voidaan valita mallien ensisijaiseksi fyysiseksi tallennussijainniksi. (Lisätietoja on kohdassa [Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md).) DocuValue-taulu sisältää kunkin mallin yksittäisen tietueen. Kunkin tietueen **AccessInformation**-kenttä sisältää määritetyssä tallennussijainnissa sijaitsevan mallitiedoston polun.
+ER-kehys säilyttää nykyisen Finance and Operations -esiintymän pakolliset mallit [Tiedostojen hallinnan määrityksen](../../fin-ops/organization-administration/configure-document-management.md) avulla. ER-kehyksen asetusten perusteella Microsoft Azure Blob Storage tai Microsoft SharePoint -kansio voidaan valita mallien ensisijaiseksi fyysiseksi tallennussijainniksi. (Lisätietoja on kohdassa [Sähköisen raportoinnin (ER) kehyksen määrittäminen](electronic-reporting-er-configure-parameters.md).) DocuValue-taulu sisältää kunkin mallin yksittäisen tietueen. Kunkin tietueen **AccessInformation**-kenttä sisältää määritetyssä tallennussijainnissa sijaitsevan mallitiedoston polun.
 
 Finance and Operations -esiintymiä hallittaessa nykyinen esiintymä voidaan päättää siirtää toiseen sijaintiin. Voit esimerkiksi siirtää tuotantoesiintymän uuteen eristysympäristöön. Jos määrität ER-kehyksen tallentamaan mallit Blob-objektisäilöön, uuden eritysympäristön DocuValue-taulu viittaa tuotantoympäristön Blob-objektisäilöön. Tätä esiintymää ei kuitenkaan voi käyttää eristysympäristössä, koska siirtoprosessi ei tue artefaktien siirtoa Blob-objektisäilössä. Jos sitten yrität luoda liiketoiminta-asiakirjoja suorittamalla mallia käyttävän ER-muodon, tapahtuukin poikkeus ja saat ilmoituksen puuttuvasta mallista. Sinut myös ohjataan käyttämään ER-poistotyökalua sekä poistamaan ja tuomaan uudelleen mallin sisältävä ER-muodon määritys. Koska ER-muodon määrityksiä voi olla useita, tämä prosessi voi kestää kauan.
 
@@ -41,6 +41,8 @@ ER-mallien varmuuskopion tallennustilatoiminnon avulla voi olla mahdollista luod
 
 > [!NOTE]
 > Tätä toimintoa voi käyttää vain, jos Blob-objektisäilö on valittu ER-mallien fyysiseksi tallennussijainniksi.
+
+## <a name="automated-recovery-and-notification"></a>Automatisoitu palautus ja ilmoitus
 
 Tätä toimintoa varten jokainen nykyisen ympäristön uusi ER-muodon määritys tallennetaan automaattisesti mallien varmuuskopion tallennussijaintiin (ERDocuDatabaseStorage-tietokantataulu) seuraavien tapahtumien yhteydessä:
 
@@ -59,7 +61,7 @@ Jos ER-muodon malli tarvitaan esimerkiksi lähtevien asiakirjojen luontiin ja to
 
 Määritä **Suorita rikkoutuneiden mallien palautusmenettely automaattisesi eränä** -parametri seuraavasti:
 
-1. Avaa Finance and Operationsissa **Organisaation hallinto \> Sähköinen raportointi \> Konfiguroinnit-sivu**.
+1. Avaa Finance and Operationsissa kohta **Organisaation hallinto \> Sähköinen raportointi \> Konfiguraatiot-sivu**.
 2. Valitse **Määritykset**-sivun toimintoruudun **Määritykset**-välilehden **Lisämääritykset**-ryhmässä **Käyttäjäparametrit**.
 3. Määritä **Käyttäjän parametrit** -valintaikkunassa tarvittava **Suorita rikkoutuneiden mallien palautusmenettely automaattisesi eränä** -parametrin arvo.
 
@@ -87,6 +89,10 @@ Jos määrität **Lopeta mallien varmuuskopiointi** -asetukseksi **Kyllä** etk�
 Jos päivität ympäristön Finance and Operationsin versioon 10.0.5 (lokakuu 2019) ja haluat siirtyä uuteen suoritettavia ER-muodon määrityksiä sisältävään ympäristöön, valitse **Täytä varmuuskopioinnin tallennustila** **Sähköisen raportoinnin parametrit** -sivulla ennen kuin siirto tehdään. Tämä painike aloittaa prosessin, jolla kaikki käytettävissä olevat mallit varmuuskopioidaan, jotta ne voidaan tallentaa mallien ER-varmuuskopioinnin tallennussijaintiin.
 
 ![Sähköisen raportoinnin parametrit -sivu](./media/GER-BackupTemplates-5.png)
+
+## <a name="manual-recovery"></a>Manuaalinen palautus
+
+Siirry kohtaan **Organisaation hallinta** \> **Sähköinen raportointi** \> **Palauta rikkinäiset mallit** -toiminto, joka käynnistää manuaalisesti ER-mallien palautusprosessin varmuuskopion tallennuspaikasta ensisijaiselle tallennuspaikalle. Ennen tämän prosessin aloittamista **Palauta rikkinäiset mallit** -sivulla voit määrittää, suoritetaanko se vuorovaikutteisesti vai ajoitetaanko eräkäsittely.
 
 ## <a name="supported-deployments"></a>Tuetut käyttöönotot
 

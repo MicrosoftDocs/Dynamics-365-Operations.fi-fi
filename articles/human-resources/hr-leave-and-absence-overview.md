@@ -3,7 +3,7 @@ title: Yleiskuvaus
 description: Dynamics 365 Human Resourcesissa Loma ja poissaolo -työtila tarjoaa joustavan kehyksen uusien lomasuunnitelmien luomiseen, pyyntöjen hallinnan työnkulkuja sekä intuitiivisen itsepalvelusivun, jonka avulla työntekijät voivat pyytää lomaa.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
-ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
+ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
+ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "3226227"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325762"
 ---
 # <a name="overview"></a>Yleiskuvaus
 
@@ -78,8 +78,16 @@ Työntekijät voivat lähettää lomapyyntöjä ja hallita niitä **Työntekijä
 
 ## <a name="leave-and-absence-preview-features"></a>Lomien ja poissaolojen esikatseluominaisuudet
 
-Voit kokeilla uusia loman ja poissaolon esikatselutoimintoja **Eristys**-ympäristössä. Lisätietoja esikatseluominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md). Esikatselutoimintoja ovat esimerkiksi seuraavat:
+Voit kokeilla uusia loman ja poissaolon esikatselutoimintoja **Eristys**-ympäristössä. Lisätietoja esikatseluominaisuuksien ottamisesta käyttöön on kohdassa [Ominaisuuksien hallinta](hr-admin-manage-features.md). 
 
-- **Loman keskeytys** - Voit keskeyttää työntekijän loman ja poissaolon henkilöstöhallinnossa. Loman keskeyttäminen pysäyttää valittujen lomatyyppien lomajaksotukset. Jos keskeytys tapahtuu jaksotusprosessien jälkeen, loman keskeyttäminen luo suhteutetun oikaisun työntekijän lomasaldoon. 
+[!include [banner](includes/preview-feature.md)]
+
+Esikatselutoimintoja ovat esimerkiksi seuraavat:
+
+- **Loman keskeytys** - Voit keskeyttää työntekijän loman ja poissaolon henkilöstöhallinnossa. Loman keskeyttäminen pysäyttää valittujen lomatyyppien lomajaksotukset. Jos keskeytys tapahtuu jaksotusprosessien jälkeen, loman keskeyttäminen luo suhteutetun oikaisun työntekijän lomasaldoon. Voit myös sisällyttää syykoodit, kun keskeytät työntekijän loman. Käyttökokemus on päivitetty osoittamaan keskeytystä. 
 
 - **Siirtosäännöt** - Voit määrittää siirrettäville saldoille siirtosäännön, johon on siirto-oikaisut siirretään. Jos työntekijä esimerkiksi siirtää vapaata kymmenen päivää eteenpäin, voit valita eri lomatyypin näiksi 10 päiväksi. 
+
+- **Sisällytä syykoodit ja kommentit oikaisuihin** - Voit sisällyttää syykoodin ja kommentin, kun teet oikaisun työntekijän lomasaldoon. 
+
+- **Siirtymä loma- ja poissaoloparametreihin** - Voit nyt käyttää vain loma- ja poissaoloparametreja henkilöstöhallinnon parametrien käyttämisen asemesta. 

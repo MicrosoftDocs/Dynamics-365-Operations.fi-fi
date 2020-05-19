@@ -3,7 +3,7 @@ title: Sähköisen raportoinnin (ER) kohteet
 description: Tässä ohjeessa esitetään tietoja sähköisen raportoinnin (ER) kohteista, tuetuista kohdetyypeistä ja turvallisuusnäkökohdista.
 author: nselin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: 1bad9e5094f0daa260f66ecd429233f20a2545a5
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150812"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323689"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Sähköisen raportoinnin (ER) kohteet
 
@@ -52,7 +52,36 @@ On myös olemassa [Tuloste](er-destination-type-print.md)-kohdetyyppi. Sen käyt
 
 ## <a name="overview"></a>Yleiskatsaus
 
-Voit määrittää kohteet vain kulloiseenkin Finance-esiintymään [tuoduissa](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) ER-määrityksissä ja voit käyttää vain **Sähköisen raportoinnin konfiguraatiot** -sivulla olevia muotoja. ER-kohdehallinnan toiminto on käytettävissä kohdassa **Organisaation hallinto** \> **Sähköinen raportointi** \> **Sähköisen raportoinnin kohde**. **Sähköisen raportoinnin kohde** -sivulla voit ohittaa määrityksen oletusarvoisen toiminnan. Tuotuja määrityksiä ei näytetä tällä sivulla, ennen kuin valitset **Uusi** ja valitset sitten **Viittaus**-kentässä määrityksen, jolle kohdeasetukset luodaan.
+Voit määrittää kohteet vain kulloiseenkin Finance-esiintymään [tuoduissa](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) ER-määrityksissä ja voit käyttää vain **Sähköisen raportoinnin konfiguraatiot** -sivulla olevia muotoja. ER-kohdehallinnan toiminto on käytettävissä kohdassa **Organisaation hallinto** \> **Sähköinen raportointi** \> **Sähköisen raportoinnin kohde**.
+
+### <a name="default-behavior"></a>Oletusarvoinen käyttäytyminen
+
+ER-muodon konfiguroinnin oletustoiminta määräytyy sen mukaan, mikä suoritustyyppi määritetään, kun ER-muoto alkaa.
+
+Jos määrität **Eräkäsittely**-asetuksen arvoksi **Ei**, **Intrastat-raportti**-valintaikkunan **Suorita taustalla** -pikavälilehdessä voit käyttää ER-muotoa heti vuorovaikutteisessa tilassa. Kun tämä suoritus on suoritettu onnistuneesti, luotu lähtevä asiakirja on ladattavissa.
+
+Jos määrität **Eräkäsittely**-asetukseksi **Kyllä**, ER-muoto suoritetaan [erä](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview)-tilassa. Luodaan oikea erätyö, joka perustuu parametreihin, jotka määrität **Suorita taustalla**-välilehdellä **ER-parametrit**-valintaikkunassa.
+
+> [!NOTE]
+> Työn kuvaus aloitetaan siten, että siinä ilmoitetaan ER-muotomäärityksen suoritus. Lisäksi se sisältää suoritettavan ER-osan nimen.
+
+[![ER-muodon käyttö](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+
+Tietoja tästä työstä on useissa paikoissa:
+
+- Siirry kohtaan **Yleiset** \> **Kyselyt** \> **Erätyöt** \> **Omat erätyöt** tarkistaaksesi ajoitetun työn tilan.
+- Siirry kohtaan **Organisaation hallinta** \> **Sähköinen raportointi** \> **sähköisen raportoinnin työt** tarkistaaksesi ajoitetun työn tilan ja valmiin työn suoritustulokset. Kun työn suorittaminen on suoritettu onnistuneesti, hae luotu lähtevä asiakirja valitsemalla **sähköisen raportoinnin työt**-sivulta **Näytä tiedostot**.
+
+    > [!NOTE]
+    > Tämä tiedosto tallennetaan nykyisen työtietueen liitteenä, ja sitä hallitaan [tiedostonhallinta](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) -kehyksellä. [Tiedostotyyppi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), jota käytetään tämäntyyppisten artefakteja varten, määritetään [ER-parametreissa](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+
+- Valitse **Sähköisen raportoinnin työt** -sivulla **Näytä tiedostot**, jos haluat nähdä luettelon töiden suorituksen aikana luoduista virheistä ja varoituksista.
+
+    [![ER-töiden luettelon tarkasteleminen](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+
+### <a name="user-configured-behavior"></a>Käyttäjän määrittämä toiminta
+
+**Sähköisen raportoinnin kohde** -sivulla voit ohittaa määrityksen oletusarvoisen toiminnan. Tuotuja määrityksiä ei näytetä tällä sivulla, ennen kuin valitset **Uusi** ja valitset sitten **Viittaus**-kentässä määrityksen, jolle kohdeasetukset luodaan.
 
 [![Määrityksen valitseminen viitekenttään](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
@@ -148,7 +177,7 @@ PDF-muunnon asetus voidaan ottaa käyttöön vain sellaisten tiedostokomponentti
 >
 > Tuloksena olevan PDF-tiedoston enimmäispituus on 300 sivua.
 >
-> Tällä hetkellä Excel-tuloksesta luotavassa PDF-asiakirjassa tuetaan vain vaakasuuntaista asettelua.
+> Microsoft Dynamics 365 Finance -version 10.0.9 (Huhtikuu 2020) Excel-tuloksesta luotavassa PDF-asiakirjassa tuetaan vain vaakasuuntaista asettelua. Dynamics 365 Financen version 10.0.10 (toukokuu 2020) julkaisun avulla voit [määrittää sivun suunnan](#SelectPdfPageOrientation) PDF-tiedostossa, joka tuotetaan Excelin tulosteesta samalla, kun määrität ER-kohteen.
 >
 > Sellaisten tulosten muuntamisessa, jotka eivät sisällä upotettuja fontteja, käytetään vain Windows-käyttöjärjestelmän yleisiä järjestelmäfontteja.
 

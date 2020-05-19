@@ -18,14 +18,15 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 35b8e2a87708c88b12c5c7605a7977712a35a0f4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 608d2b57bb4d5ab80d75b22ed5c8a4df5263e5f3
+ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207368"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3338305"
 ---
 # <a name="import-vendor-catalogs"></a>Tuo toimittajan tuoteluettelot
+
 [!include[banner](../includes/banner.md)]
 
 ## <a name="vendor-catalogs-import"></a>Toimittajan tuoteluetteloiden tuonti
@@ -35,35 +36,36 @@ Oston asiantuntijat voivat luoda ja ylläpitää Dynamics 365 Supply Chain Manag
 Voit ladata toimittajan lähettämät luettelotiedot Microsoft Dynamics 365 -asiakasohjelmasta.
 
 Toimittajan sinulle CMR-tiedostona eli luettelon ylläpitopyyntönä lähettämien tuotetietojen tiedostomuodon on oltava XML. CMR-tiedostossa on oltava toimittajan yritykselle toimittamien tuotteiden tiedot.
-''''
+
 ## <a name="import-vendor-catalog-data"></a>Toimittajan tuoteluettelon tietojen tuominen
-'' Jos haluat tuoda toimittajan tuoteluettelon tietoja, sinun on suoritettava seuraavat tehtävät:
 
-1.  Määritä projekti siinä Tietojen hallinta -työtilassa, jossa olet määrittänyt tietojen yhdistämissäännöt. Valitse ensin **Tietojen hallinta** ja sitten **Määritä tietoprojektien roolit**. 
-    ''
-2.  Määritä hankintaluokkahierarkia ja määritä toimittajat hankintaluokkiin. Jos käytät kauppatavarakoodeja, lisää nämä koodit hankintaluokkiin. Lisätietoja hankintaluokkahierarkian määrittämisestä on kohdassa [Hankintaluokkahierarkian määrittäminen](../procurement/tasks/set-up-procurement-category-hierarchy.md).
-    ''
-3.  Konfiguroi toimittaja luettelon tuontia varten Valitse ensin toimittaja ja sitten **Hankinta** > **Asetukset** > **Konfiguroi toimittaja luettelon tuontia varten**.
-''''
-4.  Määritä luettelon tuonnin työnkulku. Luo CMR-tiedostomalli ja jaa se toimittajan kanssa.
+Jos haluat tuoda toimittajan tuoteluettelon tietoja, sinun on suoritettava seuraavat tehtävät:
 
-5.  Luo toimittajan tuoteluettelot valitsemalla **Hankinta** \> **Yleinen** \> **Luettelot** \> **Toimittajan tuoteluettelot**. Toimittajalta vastaanotetut CMR-tiedostot eli luettelon ylläpitopyynnöt ryhmitetään tässä luettelossa. 
+1. Määritä projekti siinä Tietojen hallinta -työtilassa, jossa olet määrittänyt tietojen yhdistämissäännöt. Valitse ensin **Tietojen hallinta** ja sitten **Määritä tietoprojektien roolit**.
 
-6.  Lataa CMR-tiedosto palvelimeen.
+2. Määritä hankintaluokkahierarkia ja määritä toimittajat hankintaluokkiin. Jos käytät kauppatavarakoodeja, lisää nämä koodit hankintaluokkiin. Lisätietoja hankintaluokkahierarkian määrittämisestä on kohdassa [Hankintaluokkahierarkian määrittäminen](../procurement/tasks/set-up-procurement-category-hierarchy.md).
 
-7.  Arvioi, hyväksy tai hylkää toimittajan tuoteluettelon tuotteet. Tuotteet yhdistetään automaattisesti hankintaluokkiin. 
-    
+3. Konfiguroi toimittaja luettelon tuontia varten Valitse ensin toimittaja ja sitten **Hankinta** > **Asetukset** > **Konfiguroi toimittaja luettelon tuontia varten**.
+
+4. Määritä luettelon tuonnin työnkulku. Luo CMR-tiedostomalli ja jaa se toimittajan kanssa.
+
+5. Luo toimittajan tuoteluettelot valitsemalla **Hankinta** \> **Yleinen** \> **Luettelot** \> **Toimittajan tuoteluettelot**. Toimittajalta vastaanotetut CMR-tiedostot eli luettelon ylläpitopyynnöt ryhmitetään tässä luettelossa. 
+
+6. Lataa CMR-tiedosto palvelimeen.
+
+7. Arvioi, hyväksy tai hylkää toimittajan tuoteluettelon tuotteet. Tuotteet yhdistetään automaattisesti hankintaluokkiin. 
+
 Hyväksytyt tuotteet lisätään päätuotteeseen ja vapautetaan valituille oikeushenkilöille. Vain hyväksytyt tuotteen voidaan lisätä hankintaluetteloon.
 
 ## <a name="generate-a-catalog-import-file-template"></a>Luettelon tuontitiedostomallin luominen
 
 Luettelon tuontitiedostomalli on XSD-tiedosto, jonka avulla voit luoda CMR-tiedoston toimittajan tuotteille. Voit käyttää CMR-tiedostoa uuden luettelon luomiseen, aiemmin luodun luettelon korvaamiseen tai olemassa olevan luettelon muokkaamiseen.
 
-1.  Valitse **Hankinta** \> **Luettelot** \> **Toimittajan tuoteluettelot** ja kaksoisnapsauta käsiteltävää luetteloa.
+1. Valitse **Hankinta** \> **Luettelot** \> **Toimittajan tuoteluettelot** ja kaksoisnapsauta käsiteltävää luetteloa.
 
-2.  Lataa nykyisen luettelon tuontimalli (XSD-tiedosto). Valitse **Päivitä luettelo** -sivun **toimintoruudun** **Luettelot**-välilehden **Aiheeseen liittyviä tietoja** -ryhmässä ensin **Luo luettelomalli** ja sitten **Hankintamalli**.
+2. Lataa nykyisen luettelon tuontimalli (XSD-tiedosto). Valitse **Päivitä luettelo** -sivun **toimintoruudun** **Luettelot**-välilehden **Aiheeseen liittyviä tietoja** -ryhmässä ensin **Luo luettelomalli** ja sitten **Hankintamalli**.
 
-    -   Voit luoda **Hankintaluokka**-asetuksella luettelomallin, jonka sisältämissä hankintaluokissa toimittaja saa tarjota tuotteita.
+    - Voit luoda **Hankintaluokka**-asetuksella luettelomallin, jonka sisältämissä hankintaluokissa toimittaja saa tarjota tuotteita.
 
 3. Valitse **Tallenna nimellä** -valintaruudussa sijainti, johon haluat tallentaa luettelotiedostomallin, ja tallenna tiedosto.
 

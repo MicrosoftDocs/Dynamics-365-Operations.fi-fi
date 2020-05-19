@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 5bfa8a1f025c2884f31b9fcb817e008a007ac010
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 81c26b8a99f86d663d91ac4f549987262c0541ad
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209740"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323528"
 ---
 # <a name="auto-firming-with-planning-optimization"></a>Automaattinen vahvistus ja suunnittelun optimointi
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Automaattisen vahvistuksen avulla voit vahvistaa (eli vapauttaa) suunnitellut tilaukset pääsuunnitteluprosessin osana. Kun suunnitellut tilaukset vahvistetaan, ne muunnetaan varsinaisiksi osto-, siirto- tai tuotantotilauksiksi. Kun suunnittelun optimointia käytetään, suunnitellut tilaukset vahvistetaan pääsuunnitteluajon aikana silloin, kun tilauspäivä (eli aloituspäivä) on vahvistuksen aikarajan sisällä.

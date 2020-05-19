@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0fe9ed9f2bebe8683f3b8bb37b33e8a63b9521f6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205664"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346465"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Joustava varastotason dimensionvarauskäytäntö
 
@@ -233,7 +233,7 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 <td>Kyllä</td>
 <td>
 <ol>
-<li>Valitse valikkovaihtoehto <strong>Ohita sijainti</strong> varaston mobiilisovelluksessa (WMA), kun aloitat keräilytyön.</li>
+<li>Valitse valikkovaihtoehto <strong>Ohita sijainti</strong> varastointisovelluksessa, kun aloitat keräilytyön.</li>
 <li>Valitse <strong>Ehdota</strong>.</li>
 <li>Vahvista uusi sijainti, jota ehdotetaan erämäärän käytettävyyden perusteella.</li>
 </ol>
@@ -247,10 +247,10 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 <td>Ei käytettävissä</td>
 </tr>
 <tr>
-<td>Ei</td>
+<td>Nro</td>
 <td>
 <ol>
-<li>Valitse valikkovaihtoehto <strong>Ohita sijainti</strong> varaston WMA:ssa, kun aloitat keräilytyön.</li>
+<li>Valitse valikkovaihtoehto <strong>Ohita sijainti</strong> varastointisovelluksessa, kun aloitat keräilytyön.</li>
 <li>Määritä sijainti manuaalisesti.</li>
 </ol>
 </td>
@@ -278,7 +278,7 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 <td>Ei käytettävissä</td>
 <td>
 <ol>
-<li>Valitse valikkovaihtoehto <strong>Täysi</strong> varaston WMA:ssa, kun käsittelet keräilytyötä.</li>
+<li>Valitse valikkovaihtoehto <strong>Täysi</strong> varastointisovelluksessa, kun käsittelet keräilytyötä.</li>
 <li>Syötä <strong>Keräilymäärä</strong>-kenttään tarvittavan keräilyn osamäärä ilmaisemaan täyttä kapasiteettia.</li>
 </ol>
 </td>
@@ -353,7 +353,7 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 <td>Kyllä</td>
 <td>
 <ol>
-<li>Aloita siirto WMA:lla.</li>
+<li>Aloita siirto varastointisovelluksella.</li>
 <li>Anna kohteesta- ja kohteeseen-sijainnit.</li>
 </ol></td>
 <td>
@@ -469,7 +469,7 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 <td>Kyllä</td>
 <td>
 <ol>
-<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varaston WMA:ssa, kun suoritat keräilytyötä.</li>
+<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varastointisovelluksessa, kun käsittelet keräilytyötä.</li>
 <li>Kirjoita <strong>Keräilymäärä</strong>-kenttään <strong>0</strong> (nolla).</li>
 <li>Kirjoita <strong>Syy</strong>-kenttään <strong>Ei uudelleenosoitusta</strong>.</li>
 </ol>
@@ -498,7 +498,7 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 <td>Kyllä</td>
 <td>
 <ol>
-<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varaston WMA:ssa, kun suoritat keräilytyötä.</li>
+<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varastointisovelluksessa, kun käsittelet keräilytyötä.</li>
 <li>Kirjoita <strong>Keräilymäärä</strong>-kenttään <strong>0</strong> (nolla).</li>
 <li>Kirjoita <strong>Syy</strong>-kenttään <strong>Ei uudelleenosoitusta</strong>.</li>
 </ol>
@@ -522,7 +522,7 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 <td>Kyllä</td>
 <td>
 <ol>
-<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varaston WMA:ssa, kun suoritat keräilytyötä.</li>
+<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varastointisovelluksessa, kun käsittelet keräilytyötä.</li>
 <li>Kirjoita <strong>Lyhyesti keräiltävä määrä</strong>-kenttään <strong>0</strong> (nolla).</li>
 <li>Valitse <strong>Syy</strong>-kentässä <strong>Lyhytkeräily ja manuaalinen uudelleenkohdistus</strong>.</li>
 <li>Valitsee sijainti/rekisterikilpi luettelosta.</li>
@@ -545,10 +545,10 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 </tr>
 <tr>
 <td>Määritetään <strong>Lyhyt keräily</strong> -tyypin poikkeus, jossa <strong>Nimikkeen uudelleenosoitus</strong> = <strong>Manuaalinen</strong>, <strong>Varaston oikaisu</strong> = <strong>Kyllä</strong> ja <strong>Poista varaukset</strong> = <strong>Ei</strong>. Lisäksi <strong>Salli manuaalinen nimikkeiden uudelleenkohdistus</strong> -asetus on käytössä työn tekijän kohdalla.</td>
-<td>Ei</td>
+<td>Nro</td>
 <td>
 <ol>
-<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varaston WMA:ssa, kun suoritat keräilytyötä.</li>
+<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varastointisovelluksessa, kun käsittelet keräilytyötä.</li>
 <li>Kirjoita <strong>Lyhyesti keräiltävä määrä</strong>-kenttään <strong>0</strong> (nolla).</li>
 <li>Valitse <strong>Syy</strong>-kentässä <strong>Lyhytkeräily ja manuaalinen uudelleenkohdistus</strong>.</li>
 </ol>
@@ -558,10 +558,10 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 </tr>
 <tr>
 <td>Määritetään <strong>Lyhyt keräily</strong> -tyypin poikkeus, jossa <strong>Nimikkeen uudelleenosoitus</strong> = <strong>Manuaalinen</strong>, <strong>Varaston oikaisu</strong> = <strong>Kyllä</strong> ja <strong>Poista varaukset</strong> = <strong>Kyllä</strong>. Lisäksi <strong>Salli manuaalinen nimikkeiden uudelleenkohdistus</strong> -asetus on käytössä työn tekijän kohdalla.</td>
-<td>Ei</td>
+<td>Nro</td>
 <td>
 <ol>
-<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varaston WMA:ssa, kun suoritat keräilytyötä.</li>
+<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varastointisovelluksessa, kun käsittelet keräilytyötä.</li>
 <li>Kirjoita <strong>Lyhyesti keräiltävä määrä</strong>-kenttään <strong>0</strong> (nolla).</li>
 <li>Valitse <strong>Syy</strong>-kentässä <strong>Lyhytkeräily ja manuaalinen uudelleenkohdistus</strong>.</li>
 <li>Valitsee sijainti/rekisterikilpi luettelosta.</li>
@@ -585,7 +585,7 @@ Seuraavissa taulukoissa on yhteenveto siitä, miten järjestelmä käsittelee ti
 <td>Ei käytettävissä</td>
 <td>
 <ol>
-<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varaston WMA:ssa, kun suoritat keräilytyötä.</li>
+<li>Valitse valikkovaihtoehto <strong>Lyhyt keräily</strong> varastointisovelluksessa, kun käsittelet keräilytyötä.</li>
 <li>Kirjoita <strong>Lyhyesti keräiltävä määrä</strong>-kenttään <strong>0</strong> (nolla).</li>
 <li>Valitse <strong>Syy</strong>-kentässä <strong>Lyhytkeräily ja automaattinen uudelleenkohdistus</strong>.</li>
 </ol>
