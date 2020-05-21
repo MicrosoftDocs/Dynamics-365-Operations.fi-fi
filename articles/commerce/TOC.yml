@@ -94,12 +94,12 @@
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9 (huhtikuu 2020)
                       href: get-started/whats-new-10-0-9.md
-                    - name: Commerce 10.0.8 (helmikuu 2020)
-                      href: get-started/whats-new-10-0-8.md
                 - name: Poistetut tai vanhentuneet ominaisuudet
                   items:
                     - name: Poistetut tai vanhentuneet Finance and Operations -ominaisuudet
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                    - name: Poistetut tai vanhentuneet Dynamics 365 Commerce -ominaisuudet
+                      href: get-started/removed-deprecated-features-commerce.md
                 - name: 'AX 2012 -ominaisuudet, joita on lykätty'
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Ominaisuudet, joita ei ole otettu käyttöön paikallisissa ympäristöissä'
@@ -416,7 +416,7 @@
                           href: extended-logon.md
                         - name: Aktivointitilien hallinta ja laitteiden vahvistaminen
                           href: set-up-activation-accounts-validate-devices-hq.md
-                    - name: Taloushallinnon dimensioiden luominen myyntipisteen kassapäätteille ja dimensioarvojen määrittäminen kassapäätteillä
+                    - name: Taloushallinnon dimensioiden luominen myyntipisteen kassakoneille ja dimensioarvojen määrittäminen kassakoneilla
                       href: tasks/create-financial-dimensions-pos.md
                     - name: Myyntipisteen käyttöoikeusryhmän luominen
                       href: tasks/create-pos-permission-groups.md
@@ -644,6 +644,8 @@
                       href: work-with-store-inventory.md
                     - name: Sarjoitettujen nimikkeiden käyttäminen
                       href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Sarjoitettujen nimikkeiden käyttäminen myyntipisteessä
+                      href: pos-serialized-items.md
                     - name: Tuotteiden siirto jakelukeskuksesta myymälään käyttäen ostotarjontaa
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Sääntöjen ja parametrien määrittäminen cross-dockingille ja ostotarjonnalle
@@ -1002,7 +1004,7 @@
               href: store-performance-information.md
             - name: 'RFM-analyysin (äskettäisyys, toistuvuus ja rahallinen arvo) määrittäminen'
               href: set-up-rfm-analysis.md
-        - name: Lokalisointi- ja säädösominaisuudet
+        - name: Maailmanlaajuinen toiminta
           items:
             - name: Commerce-kanavan kirjanpidon integroinnin yleiskatsaus
               href: localizations/fiscal-integration-for-retail-channel.md
@@ -1014,29 +1016,37 @@
                   href: localizations/emea-aut-fi-sample.md
             - name: Itä-Eurooppa
               items:
-                - name: Commerce-ennakkolaskut Itä-Eurooppaa varten
-                  href: localizations/emea-eeu-advance-invoices-for-retail.md
-                - name: Commerce-käteisvarojen hallinta Itä-Eurooppaa varten
-                  href: localizations/emea-eeu-petty-cash-for-retail.md
-                - name: Myyntilaskut ja palautuksen myyntitilaukset Itä-Euroopan maissa
-                  href: localizations/emea-eeu-retail-invoices.md
-                - name: 'Kassapäätteiden käyttöönotto-ohjeet Tšekin tasavallassa, Unkarissa ja Puolassa'
-                  href: localizations/emea-eeu-deployment.md
-                - name: Näyte verotusta varten olevan tulostimen integroinnista Puolassa
-                  href: localizations/emea-pol-fpi-sample.md
-                - name: Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli
-                  href: localizations/emea-cze-fi-sample.md
+                - name: Yleinen
+                  items:
+                    - name: Commerce-ennakkolaskut Itä-Eurooppaa varten
+                      href: localizations/emea-eeu-advance-invoices-for-retail.md
+                    - name: Commerce-käteisvarojen hallinta Itä-Eurooppaa varten
+                      href: localizations/emea-eeu-petty-cash-for-retail.md
+                    - name: Myyntilaskut ja palautuksen myyntitilaukset Itä-Euroopan maissa
+                      href: localizations/emea-eeu-retail-invoices.md
+                    - name: 'Kassakoneiden käyttöönotto-ohjeet Tšekin tasavallassa, Unkarissa ja Puolassa'
+                      href: localizations/emea-eeu-deployment.md
+                - name: Tšekin tasavalta
+                  items:
+                    - name: Tšekin tasavallan tilikausirekisteröintipalvelun integroinnin malli
+                      href: localizations/emea-cze-fi-sample.md
+                - name: Puola
+                  items:
+                    - name: Näyte verotusta varten olevan tulostimen integroinnista Puolassa
+                      href: localizations/emea-pol-fpi-sample.md
+                    - name: Puolan asiakastietojen hallinta
+                      href: localizations/emea-pol-customer-information.md
             - name: Ranska
               items:
                 - name: Kassakoneen toiminnot
                   href: localizations/emea-fra-cash-registers.md
-                - name: Käyttöönotto-ohjeet kassapäätteille
+                - name: Käyttöönotto-ohjeet kassakoneille
                   href: localizations/emea-fra-deployment.md
             - name: Intia
               items:
-                - name: Arvonlisäveron (GST) integrointi kassapäätteisiin
+                - name: Arvonlisäveron (GST) integrointi kassakoneisiin
                   href: localizations/apac-ind-cash-registers.md
-                - name: Käyttöönotto-ohjeet kassapäätteille
+                - name: Käyttöönotto-ohjeet kassakoneille
                   href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: "Päivitys- ja\_N-1-tuki Intiaa varten"
                   href: localizations/apac-ind-n-1-for-india.md
@@ -1044,6 +1054,8 @@
               items:
                 - name: Näyte verotusta varten olevan tulostimen integroinnista Italiassa
                   href: localizations/emea-ita-fpi-sample.md
+                - name: Italian asiakastietojen hallinta
+                  href: localizations/emea-ita-customer-information.md
             - name: Meksiko
               items:
                 - name: Meksikon globaalit CFDI-laskut
@@ -1052,13 +1064,15 @@
               items:
                 - name: Kassakoneen toiminnot
                   href: localizations/emea-nor-cash-registers.md
-                - name: Käyttöönotto-ohjeet kassapäätteille
+                - name: Käyttöönotto-ohjeet kassakoneille
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Ruotsi
               items:
                 - name: Kassakoneen toiminnot
                   href: localizations/emea-swe-cash-registers.md
-                - name: 'POS-integrointimalli, jossa on tarkistusyksiköt'
+                - name: Tarkistusyksikön integrointimalli – Ruotsi
+                  href: localizations/emea-swe-fi-sample.md
+                - name: 'Retail POS -integrointimalli, jossa on tarkistusyksiköt (vanha)'
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Raportointi ja Power BI -integroinnit
           items:
@@ -1138,7 +1152,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Taloushallinnon dimensioiden lisääminen koottuihin mittoihin
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Analyysiraporttien luominen Power BI Desktopin avulla
+                - name: Analyysiraporttien luonti Power BI Desktopilla
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Analytiikan lisääminen työtiloihin Power BI Embeddedin avulla
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -1490,13 +1504,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
             - name: Sähköisen raportoinnin muotojen suunnitteleminen laskennan ja yhteenlaskujen suorittamiseksi luotujen tietojen perusteella
               items:
-                - name: Muotojen luominen laskennan ja yhteenlaskujen suorittamista varten
+                - name: Muotojen luominen laskennan ja summien tuottamista varten
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
-                - name: Muodon konfigurointi laskennan ja yhteenlaskujen suorittamista varten
+                - name: Muodon konfigurointi laskennan ja summien tuottamista varten
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/commerce/toc.json
-                - name: Laskutoimitusten käyttäminen laskentaan ja yhteenlaskuihin
+                - name: Laskutoimitusten käyttäminen laskentaan ja summien tuottamiseen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/commerce/toc.json
-                - name: Muotojen suorittaminen laskutoimien ja yhteenlaskujen suorittamiseksi
+                - name: Muotojen suorittaminen laskentaa ja summien tuottamista varten
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/commerce/toc.json
             - name: Sarakkeiden lisääminen Excel-raportteihin dynaamisesti vaakasuuntaisesti laajennettavina alueina
               items:
@@ -1570,7 +1584,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
             - name: Oppaat
               items:
-                - name: Useiden sovellustaulujen tietojen hakeminen tietolähteiden JOIN-liitostoiminnolla
+                - name: Useiden sovellustaulujen tietojen hakeminen tietolähteiden LIITÄ-määrityksen avulla
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Maakontekstista riippuvaisten sähköisen raportoinnin mallimääritysten määrittäminen
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json

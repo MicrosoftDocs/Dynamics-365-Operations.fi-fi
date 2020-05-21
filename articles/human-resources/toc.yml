@@ -5,6 +5,8 @@
       items:
         - name: Human Resourcesin uudet ja muuttuneet ominaisuudet
           href: hr-admin-whats-new.md
+        - name: 1. toukokuuta 2020
+          href: hr-whats-new-2020-05-01.md
         - name: 13. huhtikuuta 2020
           href: hr-whats-new-2020-04-13.md
         - name: 3. huhtikuuta 2020
@@ -503,6 +505,8 @@
               href: hr-leave-and-absence-accrue.md
             - name: Loman keskeyttäminen
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Työntekijän loman hallinta
+              href: hr-leave-and-absence-manage-employee-leave.md
             - name: Loma- ja poissaoloanalyysien tarkasteleminen
               href: hr-leave-and-absence-analytics.md
             - name: Loma- ja poissaolopyyntöjen hallinta

@@ -3,7 +3,7 @@ title: Suunnittelun optimoinnin aloittaminen
 description: Tässä ohjeaiheessa käsitellään suunnittelun optimointitoiminnon käytön aloittamisesta.
 author: ChristianRytt
 manager: tfehr
-ms.date: 02/10/2020
+ms.date: 05/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4f9124e824a0b6d5035b2567cb19c2c494390d55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ce1bbb18e9a448e84d001a4195421d2b0e4af5be
+ms.sourcegitcommit: c0d37fdd70f3dec4605fdee6f981f84a49be9b9e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213512"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3339875"
 ---
 # <a name="get-started-with-planning-optimization"></a>Suunnittelun optimoinnin aloittaminen
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Suunnittelun optimointitoiminto ei tällä hetkellä tue kaikki niitä toimintoja, joita on Microsoft Dynamics 365 Supply Chain Managementin sisäisessä suunnittelumoduulissa. Tämän vuoksi on tärkeää arvioida, vastaako suunnittelun optimoinnissa tällä hetkellä käytössä oleva toimintojoukko tarpeitasi. Suunnittelun optimointitoimintoa ei ole oletusarvoisesti otettu käyttöön Dynamics Lifecycle Servicesissa (LCS). Niinpä arvioinnin voi tehdä, ennen kuin toiminto otetaan käyttöön.
@@ -36,6 +35,11 @@ Suunnittelun optimointitoiminto ei tällä hetkellä tue kaikki niitä toimintoj
 Suunnittelun optimointi tulee jossain vaiheessa korvaamaan nykyisen Supply Chain Managementin sisäisen suunnittelumoduulin.
 
 Ennen suunnittelun optimoinnin ottamista käyttöön on syytä arvioida suunnittelun optimoinnin sopivuusanalyysin tulokset. Lisätietoja on kohdassa [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md).
+
+### <a name="availability"></a>Saatavuus
+Suunnittelun optimointi on tällä hetkellä käytettävissä seuraavilla Azure-maantieteellisillä alueilla: Yhdysvallat, Kanada, Eurooppa, Iso-Britannia ja Australia. Jos yrität asentaa apuohjelman toiselta maantieteelliseltä alueelta, LCS näyttää sanoman, jonka mukaan tätä maantieteellistä aluetta ei tueta.
+
+Huomaa, että suunnittelun optimointi ei tue Dynamics 365 Supply Chain Management -järjestelmän paikallisia käyttöönottoja.
 
 ### <a name="licensing"></a>Käyttöoikeudet
 
@@ -46,7 +50,7 @@ Jos voit suorittaa pääsuunnittelua nykyisellä käyttöoikeudella, suunnittelu
 Suunnittelun optimoinnin käyttöä varten on asennettava Dynamics 365 Supply Chain Managementin suunnittelun optimoinnin lisäosa. Voit käyttää lisäosaa LCS-projektista ja ottaa suunnittelun optimointitoiminnon käyttöön Supply Chain Management -käyttöliittymässä.
 
 > [!NOTE]
-> Suunnittelun optimoinnin vaatimus on korkean käytettävyyden ympäristö, jossa LCS on käytössä (ei OneBox-ympäristö). Käytössä on Dynamics 365 Supply Chain Management -sovelluksen versio 10.0.7 tai uudempi versio.
+> Suunnittelun optimoinnin vaatimus on korkean käytettävyyden ympäristö, jossa LCS on käytössä, taso 2 tai korkeampi (ei OneBox-ympäristö). Käytössä on Dynamics 365 Supply Chain Management -sovelluksen versio 10.0.7 tai uudempi versio. Jos yrität asentaa apuohjelman OneBox-ympäristöön, asennus ei ole valmis ja sinun on peruutettava asennus.
 
 1. Kirjaudu sisään LCS:ään ja avaa sopiva ympäristö.
 1. Valitse **Kaikki tiedot**.
@@ -88,11 +92,11 @@ Yhteyden tila ilmaisee Supply Chain Managementin ja suunnittelun optimointipalve
 
 Jos suunnittelun optimoinnin esiversio on otettu käyttöön, suunnittelun optimoinnin lisäosaa käytetään pääsuunnittelussa. Tällä on vaikutusta pääsuunnittelun tuloksiin ja toimintoihin.
 
-## <a name="related-resources"></a>Liittyvät resurssit
+## <a name="additional-resources"></a>Lisäresurssit
 
 [Esiversion ehdot](https://go.microsoft.com/fwlink/?linkid=2015274)
 
-[Suunnittelun optimoinnin yleiskuvaus](planning-optimization-overview.md)
+[Suunnittelun optimoinnin yleiskatsaus](planning-optimization-overview.md)
 
 [Suunnittelun optimoinnin sopivuusanalyysi](planning-optimization-fit-analysis.md)
 

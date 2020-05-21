@@ -3,7 +3,7 @@ title: Käytä ER-mallimäärityksissä JOIN-tietolähteitä saadaksesi tietoja 
 description: Tässä ohjeaiheessa kerrotaan JOIN-tietolähteiden käytöstä sähköisessä raportoinnissa (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 224acc19ee5dda430cd9471aa50e9d870a4f8c60
-ms.sourcegitcommit: 564aa8eec89defdbe2abaf38d0ebc4cca3e28109
+ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
+ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2667951"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3332319"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Käytä sähköisen raportoinnin (ER) mallimäärityksissä JOIN-tietolähteitä saadaksesi tietoja useista sovellustaulukoista
 
@@ -140,7 +140,7 @@ Tarkista ER-mallimäärityskomponentin asetukset. Komponentti on määritetty k�
 
 7.  Sulje sivu.
 
-### <a name="review"></a> ER-mallimäärityksen tarkistus (osa 2)
+### <a name="review-er-model-mapping-part-2"></a><a name="review"></a> ER-mallimäärityksen tarkistus (osa 2)
 
 Tarkista ER-mallimäärityskomponentin asetukset. Komponentti on määritetty käyttämään ER-konfiguraatioiden mallien tietoja, konfiguraatioiden ja konfiguraatiolähteiden tietoja käyttäen **Liitä**-tyypin tietolähdettä.
 
@@ -185,7 +185,7 @@ Tarkista ER-mallimäärityskomponentin asetukset. Komponentti on määritetty k�
 9.  Sulje sivu.
 10. Valitse **Peruuta**.
 
-### <a name="executeERformat"></a> Suorita ER-muoto
+### <a name="execute-er-format"></a><a name="executeERformat"></a> Suorita ER-muoto
 
 1.  Access Finance tai RCS on verkkoselaimesi toinen istunto, jossa käytetään samoja tunnistetietoja ja yritystä kuin ensimmäisessä istunnossa.
 2.  Siirry kohtaan **Organisaation hallinto \> Sähköinen raportointi \> Konfiguraatiot**.
@@ -240,7 +240,7 @@ Tarkista ER-mallimäärityskomponentin asetukset. Komponentti on määritetty k�
 
     ![ER käyttäjän valintaikkunasivu](./media/GER-JoinDS-Set2Run.PNG)
 
-#### <a name="analyze"></a> ER-muodon suorituksen jäljityksen analysointi
+#### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> ER-muodon suorituksen jäljityksen analysointi
 
 1.  Valitse Financen tai RCS:n ensimmäisessä istunnussa **Suunnittelutoiminto**.
 2.  Valitse **Suorituskyvyn jäljitys**.
@@ -256,6 +256,33 @@ Tarkista ER-mallimäärityskomponentin asetukset. Komponentti on määritetty k�
     - Sovellustietokantaa on kutsuttu kerran konfiguraatioversioiden laskemiseksi käyttämällä liitoksia, jotka konfiguroitiin **Tiedot**-tietolähteessä.
 
     ![ER-mallimäärityksen suunnittelun sivu](./media/GER-JoinDS-Set2Run3.PNG)
+
+## <a name="limitations"></a>Rajoitukset
+
+Kuten tämän ohjeaiheen esimerkistä voi nähdä, **LIITOS**-tietolähde voidaan muodostaa useista tietolähteistä, jotka kuvaavat niitä tietueissa olevia tietoja, jotka on lopulta yhdistettävä. Voit määrittää nämä tietolähteet valmiin ER-[SUODATIN](er-functions-list-filter.md)-toiminnon avulla. Kun määrität tietolähteen niin, että sitä kutsutaan **LIITOS**-tietolähteen ulkopuolelle, voit käyttää yrityksen alueita tietojen valinnan ehdon osana. **LIITOS**-tietolähteen ensimmäinen toteutus ei tue tämäntyyppisiä tietolähteitä. Jos esimerkiksi soitat [SUODATIN](er-functions-list-filter.md)-perusteisen tietolähteen suoritusalueella olevaan suodattimeen perustuvaan tietolähteeseen, näyttöön tulee poikkeus, **LIITOS**-tietolähde, jos kutsuttu tietolähde sisältää yritysalueita osana tietojen valitsemisen ehtoa.
+
+Microsoft Dynamics 365 Finance -version 10.0.12 (elokuu 2020) avulla voit käyttää yrityksen alueita, kun haluat määrittää tietojen valitsemisen ehdoksi [SUODATUKSEEN](er-functions-list-filter.md) perustuvissa tietolähteissä, joita kutsutaan **LIITOS**-tietolähteen suoritusalueella. Sovellus [kysely](../dev-ref/xpp-library-objects.md#query-object-model)-muodostimen rajoitusten vuoksi yritysalueita tuetaan vain **LIITOS**-tietolähteen ensimmäisellä tietolähteellä.
+
+### <a name="example"></a>Esimerkki
+
+Sinun on esimerkiksi tehtävä sovellustietokantaan yksi puhelu, jotta saat luettelon useiden yritysten ulkomaankauppatapahtumista sekä kyseisissä tapahtumissa viitattavan varastonimikkeen yksityiskohdista.
+
+Tässä tapauksessa voit määrittää seuraavat artefaktit ER-mallikartoitukseen:
+
+- **Intrastat**-juuritietolähde, joka edustaa **Intrastat**-taulua.
+- **Nimikkeet**-juuritietolähde, joka edustaa **InventTable**-taulua.
+- **Yritykset**-juuritietolähde, joka palauttaa yritysten luettelon (tässä esimerkissä **DEMF** ja **GBSI**), jossa tapahtumia on käytettävä. Yrityskoodi on käytettävissä **Companies.Code**-kentässä.
+- **X1**-juuritietolähde, jolla on lauseke `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))`. Tämä lauseke sisältää yritysalueiden määritelmän osana tietojen valitsemisen ehtoa `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)`.
+- **X2**-tietolähde **X1**-tietolähteen sisäkkäisenä nimikkeenä. Se sisältää lausekkeen `FILTER (Items, Items.ItemId = X1.ItemId)`.
+
+Lopuksi voit määrittää **LIITOS**-tietolähteen, jossa **X1** on ensimmäinen tietolähde, ja **X2** on toinen tietolähde. Voit määrittää **Kyselyn** **Suorita**-vaihtoehdoksi, jos haluat suorittaa tämän tietolähteen tietokantatasolla suorana SQL-kutsuna.
+
+Kun konfiguroitu tietolähde suoritetaan, kun ER -suoritus [jäljitetään](trace-execution-er-troubleshoot-perf.md), seuraava ilmoitus näkyy ER-mallin kartoituksen suunnittelussa osana ER-suorituskykyjälkeä.
+
+`SELECT ... FROM INTRASTAT T1 CROSS JOIN INVENTTABLE T2 WHERE ((T1.PARTITION=?) AND (T1.DATAAREAID IN (N'DEMF',N'GBSI') )) AND ((T2.PARTITION=?) AND (T2.ITEMID=T1.ITEMID AND (T2.DATAAREAID = T1.DATAAREAID) AND (T2.PARTITION = T1.PARTITION))) ORDER BY T1.DISPATCHID,T1.SEQNUM`
+
+> [!NOTE]
+> Virhe ilmenee, jos suoritat **LIITOS**-tietolähteen, joka on määritetty siten, että se sisältää tietojenvalintaehtoja, joiden tietolähteiden **LIITOS**-tietolähteitä on suoritettu.
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

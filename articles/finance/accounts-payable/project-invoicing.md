@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
+ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658617"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331369"
 ---
 # <a name="project-invoicing"></a>Projektiin laskutus
 
@@ -112,6 +112,9 @@ Kun tilaat nimikkeen toimittajalta ja määrität nimikkeen projektiin, kyseisen
 
 -   Projektin asiakasta laskutetaan nimikkeestä: määritä nimikkeen riviominaisuus veloitettavalle arvolle ostotilauksessa ja laskuta sitten asiakasta oikealla projektilaskutustavalla.
 -   Projektin asiakasta ei laskuteta nimikkeestä: Älä valitse nimikkeen ostotilausrivin **Veloitettava**-riviominaisuutta. Voit sitten laskuttaa ostotilauksen eikä muita toimintoja tarvita.
+
+> [!NOTE] 
+> Vapautuksen säilytysrivit eivät oletusarvoisesti ole veloitettavissa. Tämä tarkoittaa, että vapautetun säilytyksen laskuehdotuksen luontimahdollisuus ei ole käytössä.
 
 ## <a name="credit-notes"></a>Hyvityslaskut
 Kun myyntilaskun summana on negatiivinen arvo, lasku luokitellaan hyvityslaskuksi. Kun asiakirja tulostetaan, sen otsikkona on Hyvityslasku. 

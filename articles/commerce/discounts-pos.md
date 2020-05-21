@@ -3,7 +3,7 @@ title: Alennusten näyttäminen myyntipisteessä
 description: Tässä ohjeaiheessa kerrotaan, miten myyjät saavat Microsoft Dynamics 365 Commercesta tietoja kampanjoista ja niiden käyttämisestä ristiinmyynti- ja lisämahdollisuuksista.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/06/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
+ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265577"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3334705"
 ---
 # <a name="show-discounts-in-pos"></a>Alennusten näyttäminen myyntipisteessä
 
@@ -54,9 +54,9 @@ Kun **Käytä ilman kuponkikoodia** -asetus on käytössä, käytettävissä on 
 
 Monirivialennukset, kuten määräalennukset, yhdistelmäalennukset ja raja-arvoalennukset, ovat erinomainen tapa motivoida asiakkaita ostamaan enemmän tuotteita suurempien alennusten saamiseksi. Näin ne auttavat myös kasvattamaan asiakkaan ostoskoria ja vähittäismyyjän tuottoa. Näitä alennuksia voi julkaista sähköisen kaupankäynnin sivustoilla, yhteisöpalveluissa ja myymälän bannereissa.
 
-Vaikka näitä kaikkia julkisuusmenetelmiä käytettäisiin, asiakkaat eivät välttämättä huomaa käyttää kampanjoita hyväkseen. Myyjät voivat helposti huomata, mitkä kampanjat ovat käytettävissä valitulla rivillä tai jopa koko ostoskorissa, jos vähittäismyyjät lisäävät Näytä kaikki alennukset -toiminnon painikkeen mihin tahansa painikeruudukkoon myyntipisteessä. Suosittelemme, että painike lisätään **Tapahtuma**-sivun painikeruudukkoon. Näin myyjät voivat valita tapahtumarivin ja valita sitten painikkeen, joka näyttää kaikki valitulla rivillä käytettävissä olevat alennukset. Myyjä voi myös valita toisen välilehden, jolla näytetään koko tapahtuman alennukset.
+Vaikka näitä kaikkia julkisuusmenetelmiä käytettäisiin, asiakkaat eivät välttämättä huomaa käyttää kampanjoita hyväkseen. Myyjät voivat helposti huomata, mitkä kampanjat ovat käytettävissä valitulla rivillä tai jopa koko ostoskorissa, jos vähittäismyyjät lisäävät Näytä saatavilla olevat alennukset -toiminnon painikkeen mihin tahansa painikeruudukkoon **Transaktio**-sivulla. Tällä tavoin myyjät voivat valita tapahtumarivin ja valita sitten painikkeen, joka näyttää kaikki valitulla rivillä käytettävissä olevat alennukset. Myyjä voi myös valita toisen välilehden, jolla näytetään koko tapahtuman alennukset.
 
-Aiemmin mainittu **Kaikki alennukset** -sivu näyttää vain alennukset, jotka eivät kilpaile minkään kohdistetun alennuksen kanssa. Näin varmistetaan, että jos myyjä kertoo asiakkaalle alennuksesta ja asiakas tekee vaaditun toiminnon (esimerkiksi ostaa yhden lisänimikkeen ja saa 10 prosenttia alennusta), alennus kohdistetaan tapahtumaan. Kuten aiemmin mainittiin, kuponkiin perustuvat alennukset näytetään vain, jos **Käytä ilman kuponkikoodia** -vaihtoehto on otettu käyttöön.
+**Kaikki alennukset** -sivu näyttää vain alennukset, jotka eivät kilpaile minkään kohdistetun alennuksen kanssa. Näin varmistetaan, että jos myyjä kertoo asiakkaalle alennuksesta ja asiakas tekee vaaditun toiminnon (esimerkiksi ostaa yhden lisänimikkeen ja saa 10 prosenttia alennusta), alennus kohdistetaan tapahtumaan. Kuponkiin perustuvat alennukset näytetään vain, jos **Käytä ilman kuponkikoodia** -vaihtoehto on otettu käyttöön.
 
 Yksinkertaisessa skenaariossa, jossa kaikilla alennuksilla on sama prioriteetti, alennuksen samanaikaisuustila on **Yhdistetty** ja alennuksen samanaikaisuuden ohjausobjektiksi on määritetty **Paras hinta ja yhdistelmä prioriteetin mukaan, ei koskaan yhdistelmää prioriteettien kesken**, **Kaikki alennukset** -sivulla näkyvät tuotteen käytettävissä olevat alennukset, koska kaikki alennukset ovat yhdistelmiä eivätkä kilpaile keskenään.
 

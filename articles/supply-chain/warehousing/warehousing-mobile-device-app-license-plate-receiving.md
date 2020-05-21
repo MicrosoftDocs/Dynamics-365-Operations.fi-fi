@@ -1,6 +1,6 @@
 ---
-title: Rekisterikilpi, joka vastaanottaa Warehousing mobile appin kautta
-description: Tässä ohjeaiheessa selitetään, kuinka Warehousing Mobile App määritetään tukemaan rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
+title: Rekisterikilven vastaanotto varastointisovelluksen kautta
+description: Tässä ohjeaiheessa selitetään, kuinka varastointisovellus määritetään tukemaan rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
 author: perlynne
 manager: tfehr
 ms.date: 03/31/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 98cd608edea1d5365d0d3532244f1fcdb6293d3c
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261326"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346373"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-mobile-app"></a>Rekisterikilpi, joka vastaanottaa Warehousing mobile appin kautta
+# <a name="license-plate-receiving-via-the-warehousing-app"></a>Rekisterikilven vastaanotto varastointisovelluksen kautta
 
-Tässä ohjeaiheessa selitetään, kuinka Warehousing Mobile App määritetään niin ,että se tukee rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
+Tässä ohjeaiheessa selitetään, kuinka varastointisovellus määritetään niin, että se tukee rekisterikilven vastaanottoprosessin käyttöä fyysisen varaston vastaanottamiseen.
 
 Tämän toiminnon avulla voit nopeasti kirjata saapuvaa varastoa koskevan vastaanoton, joka liittyy ennakkoilmoitukseen (ASN). Järjestelmä luo automaattisesti ASN-arvon, kun siirtotilauksen lähetys suoritetaan varastoinnin hallintaprosessien avulla. Ostotilausprosessin aikana ASN voidaan tallentaa manuaalisesti, tai se voidaan tuoda automaattisesti käyttämällä saapuvan ASN-tietoyksikkö prosessia.
 

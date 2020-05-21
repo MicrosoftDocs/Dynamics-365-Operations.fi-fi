@@ -3,7 +3,7 @@ title: SUMIF ER-funktio
 description: Tässä ohjeaiheessa on tietoja siitä, miten sähköisen raportoinnin (ER) SUMIF-funktiota käytetään.
 author: NickSelin
 manager: kfend
-ms.date: 12/04/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 374569d3bbe59f1b96eee9c789b97b7b2a6004bf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 9df7be0825203f91434d348385c1ee358ae555ea
+ms.sourcegitcommit: ef6fd78c817f93610771cfb2477f52f16b882164
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042478"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "3290197"
 ---
-# <a name="SUMIF">SUMIF ER-funktio</a>
+# <a name=""></a><a name="SUMIF">SUMIF ER-funktio</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,6 +62,8 @@ Tämä funktio palauttaa **0** (nolla)-arvon, kun **Kerää tuotos tiedot** -vai
 ## <a name="example"></a>Esimerkki
 
 Lisätietoja tämän toiminnon käytöstä on tehtäväoppaassa [ER Käytä tulostusmuotoa laskennassa ja summauksessa](tasks/er-format-counting-summing-1.md), joka on osa **IT-palvelujen ja -ratkaisujen komponenttien hankkiminen ja kehittäminen** -liiketoimintaprosessia.
+
+Lisätietoja ja esimerkkejä tämän toiminnon käyttämisestä on kohdassa [Sekvenssielementtien suorituksen lykkääminen ER-muodoissa](er-defer-sequence-element.md#Example) sekä [XML-elementtien suorituksen siirtäminen ER-muodoissa](er-defer-xml-element.md#Example).
 
 ## <a name="additional-resources"></a>Lisäresurssit
 

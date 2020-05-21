@@ -3,7 +3,7 @@ title: B2C-vuokraajan määrittäminen Commercessa
 description: Tässä ohjeaiheessa kerrotaan, miten Azure Active Directoryn (Azure AD) kuluttajakaupan (B2C) vuokraajat määritetään Dynamics 365 Commercen käyttäjän sivuston todennusta varten.
 author: BrianShook
 manager: annbe
-ms.date: 04/17 /2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
-ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
+ms.openlocfilehash: 22d62419c703c64470723cf82864a4782306ea8a
+ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
 ms.translationtype: HT
 ms.contentlocale: fi-FI
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270207"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295266"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-vuokraajan määrittäminen Commercessa
 
@@ -87,7 +87,7 @@ Luo B2C-sovellus seuraavasti.
 
 ### <a name="reply-urls"></a>Vastauksen URL-osoitteet
 
-Vastauksen URL-osoitteet ovat tärkeitä, koska ne mahdollistavat sallitut palautustoimialueet, kun sivusto kutsuu Azure AD B2C -ratkaisua käyttäjän todentamista varten. Näin voit palauttaa todennetun käyttäjän takaisin toimialueelle, jolta nämä kirjautuvat (oman sivuston toimialue). 
+Vastauksen URL-osoitteet ovat tärkeitä, koska ne tarjoavat sallitut palautustoimialueet, kun sivusto kutsuu Azure AD B2C -ratkaisua käyttäjän todentamista varten. Toiminto sallii todennetun käyttäjän paluun takaisin toimialueelle, jolta nämä kirjautuvat (oman sivuston toimialue). 
 
 Lisää **Vastauksen URL-osoite** -ruudun **Azure AD B2C - sovellukset \> Uusi sovellus** -näytössä erilliset rivit sivuston toimialueelle ja (ympäristön valmistelun jälkeen) Commercen luomalle URL-osoitteelle. Näissä URL-osoitteissa on aina käytettävä sallittua URL-osoitteen muotoa. Niiden on aina oltava perus-URL-osoitteita (ei lopussa olevia vinoviivoja tai polkuja). Merkkijono ``/_msdyn365/authresp`` on siis liitettävä perus-URL-osoitteisiin seuraavien esimerkkien mukaisesti.
 
@@ -121,9 +121,9 @@ Voit luoda rekisteröitymisen ja sisäänkirjauksen käyttäjän työnkulkukäyt
 
     | **Keräilymäärite** | **Palautusvaatimus** |
     | ---------------------- | ----------------- |
-    |                        | Sähköpostiosoitteet   |
+    | Sähköpostiosoite          | Sähköpostiosoitteet   |
     | Etunimi             | Etunimi        |
-    |                        | Tunnistetietojen tarjoaja |
+    |                        | Tunnistetietojen toimittaja |
     | Sukunimi                | Sukunimi           |
     |                        | Käyttäjän objektin tunnus  |
 
@@ -246,10 +246,6 @@ Voit päivittää pääkonttorin uusilla Azure AD B2C -tiedoilla seuraavasti.
     1. Kirjoita **Tyyppi**-ruutuun **Julkinen**.
     1. Kirjoita **Käyttäjätyyppi**-ruutuun **Asiakas**.
 1. Valitse toimintoruudussa **Tallenna**.
-1. Etsi Commerce-hakuruudussa **numerosarjat** (Organisaation hallinta > Numerosarjat).
-1. Valitse toimintoruudun alla **Muokkaa**. Se on **Ylläpidä**-kohdassa.
-1. Valitse **Yleinen**-pikavälilehdessä **Ei** **Manuaalinen**-kohdan arvoksi.
-1. Valitse toimintoruudussa **Tallenna**. 
 1. Hae Commerce-hakuruudussa **Jakeluaikataulu**
 1. Valitse **Jakeluaikataulut**-sivun vasemmanpuoleisessa valikossa **1110 Yleinen määritys** -työ.
 1. Valitse toimintoruudussa **Suorita nyt**.
@@ -304,13 +300,14 @@ Voit lisätä AAD B2C -vuokraajan sovelluksen tiedot Commerceen seuraavasti.
 1. Anna seuraavat pakolliset nimikkeet näkyvissä olevassa muodossa käyttämällä B2C-vuokraajan ja sovelluksen arvoja. Kentät, jotka eivät ole pakollisia (joissa ei ole tähteä), voidaan jättää tyhjäksi.
 
     - **Sovelluksen nimi**: B2C-sovelluksen nimi, esimerkiksi FABRIKAM B2C.
-    - **Vuokraajan nimi** B2C-vuokraajan nimi, esimerkiksi Fabrikam.
+    - **Vuokralaisen nimi**: B2C-vuokralaisen nimi (Käytä esimerkiksi fabrikam-nimeä, jos toimialue näkyy muodossa "fabrikam.onmicrosoft.com" B2C-vuokralaiselle). 
     - **Unohdetun salasanan käytännön tunnus**: Unohdetun salasanan käyttäjän työnkulkukäytännön tunnus, esimerkiksi B2C_1_PasswordReset.
     - **SignUp SignIn -käytännön tunnus**: Rekisteröitymisen ja sisäänkirjauksen käyttäjän työnkulkukäytännön tunnus, esimerkiksi B2C_1_signup_signin.
     - **Asiakasohjelman GUID**: B2C-sovelluksen tunnus, esimerkiksi 22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6.
     - **Profiilin muokkauskäytännön tunnus**: Profiilin muokkaamisen käyttäjän työnkulkukäytännön tunnus, esimerkiksi B2C_1A_ProfileEdit.
 
 1. Valitse **OK**. B2C-sovelluksen nimi tulee nyt näkyviin luetteloon.
+1. Tallenna muutokset valitsemalla **Tallenna**.
 
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>B2C-sovelluksen liittäminen sivustoon ja kanavaan
 
